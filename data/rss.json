@@ -1,0 +1,22 @@
+[
+  {
+    "title": "精选文章 (BestBlogs)",
+    "rss": "https://www.bestblogs.dev/feeds/rss?type=article&sort=hot&limit=20"
+  },
+  {
+    "title": "技术视频 (Tech Videos)",
+    "rss": "https://www.bestblogs.dev/feeds/rss?type=video&sort=new&limit=20"
+  },
+  {
+    "title": "深度播客 (Podcasts)",
+    "rss": "https://www.bestblogs.dev/feeds/rss?type=podcast&limit=20"
+  },
+  {
+    "title": "AI 动态 (AI News)",
+    "rss": "https://www.bestblogs.dev/feeds/rss?tag=AI&sort=new"
+  },
+  {
+    "title": "独立开发 (Indie Hacker)",
+    "rss": "https://www.bestblogs.dev/feeds/rss?tag=IndieHacker"
+  }
+]
