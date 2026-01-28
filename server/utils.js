@@ -133,16 +133,16 @@ module.exports = {
       const octokit = new Octokit({
         auth: process.env.GITHUB_TOKEN
       })
-      const res = await octokit.request('GET /repos/izoa-fun/alchemy', {
-        owner: 'izoa-fun',
-        repo: 'alchemy'
+      const res = await octokit.request('GET /repos/life-is-blue/alchemy-rss', {
+        owner: 'life-is-blue',
+        repo: 'alchemy-rss'
       })
       if (res && res.data && res.data.homepage) {
         return res.data.homepage
       }
     } catch (e) {
     }
-    return 'https://alchemy.izoa.fun'
+    return '/'
   },
   // 筛选出技能类别
   filterBySkill(items) {

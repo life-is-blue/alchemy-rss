@@ -25,7 +25,7 @@ async function createFeed(linksJson){
     author: {
       name: 'Alchemy Lab',
       email: 'contact@izoa.fun',
-      link: 'https://github.com/izoa-fun/alchemy'
+      link: 'https://github.com/life-is-blue/alchemy-rss'
     }
   })
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://fed.chanceyu.com/atom.xml</id>
+    <id>https://alchemy-rss.vercel.app/atom.xml</id>
     <title>前端技术文章 - front-end-rss | by ChanceYu</title>
     <updated>2026-01-28T16:50:16.563Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
@@ -9,9 +9,9 @@
         <email>i.fish@foxmail.com</email>
         <uri>https://github.com/ChanceYu/front-end-rss</uri>
     </author>
-    <link rel="alternate" href="https://fed.chanceyu.com/atom.xml"/>
-    <link rel="self" href="https://fed.chanceyu.com/atom.xml"/>
+    <link rel="alternate" href="https://alchemy-rss.vercel.app/atom.xml"/>
+    <link rel="self" href="https://alchemy-rss.vercel.app/atom.xml"/>
     <subtitle>订阅最新热门前端技术文章</subtitle>
-    <icon>https://fed.chanceyu.com/static/favicon.ico</icon>
+    <icon>https://alchemy-rss.vercel.app/static/favicon.ico</icon>
     <rights>All rights reserved 2026 by ChaneYu</rights>
 </feed>

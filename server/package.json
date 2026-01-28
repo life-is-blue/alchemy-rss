@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/izoa-fun/alchemy.git"
+    "url": "git://github.com/life-is-blue/alchemy-rss.git"
   },
   "bugs": {
-    "url": "https://github.com/izoa-fun/alchemy/issues"
+    "url": "https://github.com/life-is-blue/alchemy-rss/issues"
   },
   "author": "Alchemy Lab",
   "license": "MIT",
-  "homepage": "https://github.com/izoa-fun/alchemy#readme"
+  "homepage": "https://github.com/life-is-blue/alchemy-rss#readme"
 }
