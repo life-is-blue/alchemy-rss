@@ -1,5 +1,7 @@
-<div align="center"><img width="100" src="/assets/rss.gif" /><h1>Front-End RSS</h1>
-每天定时更新前端技术文章，并推送到 GitHub 方便查看
+<div align="center">
+  <img width="120" src="/assets/rss.svg" />
+  <h1>Alchemy</h1>
+  <p>数据炼金平台：将信息原矿提炼为知识纯金</p>
 </div>
 
 ## 
@@ -7,8 +9,6 @@
 在线浏览：[<%= obj.homePage %>](<%= obj.homePage %>)
 
 订阅地址：[<%= obj.feedUrl %>](<%= obj.feedUrl %>) 
-
-备用地址：[https://front-end-rss.surge.sh](https://front-end-rss.surge.sh)
 
 ##
 
@@ -19,18 +19,3 @@
 ## 文章来源
 <% _.each(obj.linksJson, function(e){ var rssTitle = obj.formatTitle(e.title); %>
 - [<%= rssTitle %>](#<%= rssTitle.toLowerCase() %>)<% if (e.title in obj.newData.rss){ %>![](/assets/dot.png) <% } %>  <% }) %>
-
-## 文章链接
-<% _.each(obj.linksJson, function(e){ var rssTitle = obj.formatTitle(e.title); %>
-<details open>
-<summary id="<%= rssTitle.toLowerCase() %>">
- <%= rssTitle %>
-</summary>
-
-<% _.each(e.items.slice(0,20), function(item, index){ var itemTitle = obj.formatTitle(item.title); %>
-- [<%= item.date %>-<%= itemTitle %>](<%= item.link %>) <% if (e.title in obj.newData.rss && item.link in obj.newData.links){ %>![](/assets/new.png) <% } %> <% }) %>
-- [查看更多 >](/details/<%= e.title %>.md)
-
-<div align="right"><a href="#文章来源">⬆&nbsp;返回顶部</a></div>
-</details>
-<% }) %>

@@ -1,6 +1,7 @@
-<div align="center"><img width="100" src="/assets/rss.gif" /><h1>Alchemy</h1>
-<h3>数据炼金平台：将信息原矿提炼为知识纯金</h3>
-<p>作为 <a href="https://www.izoa.fun/docs/zh/insights/vision">Alchemy Lab</a> 的一部分，本项目致力于构建高质量的信息获取与结构化管道，为人类阅读和 LLM 训练提供经过“炼金”处理的高价值数据。</p>
+<div align="center">
+  <img width="120" src="/assets/rss.svg" />
+  <h1>Alchemy</h1>
+  <p>数据炼金平台：将信息原矿提炼为知识纯金</p>
 </div>
 
 ## 
@@ -8,8 +9,6 @@
 在线浏览：[https://fed.chanceyu.com](https://fed.chanceyu.com)
 
 订阅地址：[https://fed.chanceyu.com/atom.xml](https://fed.chanceyu.com/atom.xml) 
-
-备用地址：[https://front-end-rss.surge.sh](https://front-end-rss.surge.sh)
 
 ##
 
@@ -23,40 +22,7 @@
 - [技术视频-Tech-Videos](#技术视频-tech-videos)![](/assets/dot.png)   
 - [深度播客-Podcasts](#深度播客-podcasts)![](/assets/dot.png)   
 - [AI-动态-AI-News](#ai-动态-ai-news)![](/assets/dot.png)   
-- [独立开发-Indie-Hacker](#独立开发-indie-hacker)![](/assets/dot.png)   
-
-## 文章链接
-
-<details open>
-<summary id="精选文章-bestblogs">
- 精选文章-BestBlogs
-</summary>
-
-
-- [2026-01-29-Swift-跨平台框架-Skip-现已完全开源](https://www.bestblogs.dev/article/1628d64a) ![](/assets/new.png)  
-- [2026-01-29-DeepAgents-的上下文管理](https://www.bestblogs.dev/article/2a3e3f6e) ![](/assets/new.png)  
-- [2026-01-29-最强开源模型易主？Kimi-发布-k2.5-用-Agent-集群解决长文本+视觉生成](https://www.bestblogs.dev/article/a2a89b98) ![](/assets/new.png)  
-- [2026-01-29-逆天！机器人终于学会了刷完，还能用胯胯轴关抽屉](https://www.bestblogs.dev/article/26c89614) ![](/assets/new.png)  
-- [2026-01-29-想用-Clawdbot-何必抢-Mac-mini，手把手教你打造最强本地-Agent，立省-200-美元-|-附保姆级教程](https://www.bestblogs.dev/article/cb92a480) ![](/assets/new.png)  
-- [2026-01-29-实测苹果博主十件套：每月-¥38-，能替代剪映和-PS-吗？](https://www.bestblogs.dev/article/ea89c6b2) ![](/assets/new.png)  
-- [2026-01-28-Claude-Code-浏览器自动化方案，怎么选？](https://www.bestblogs.dev/article/67cf1d54) ![](/assets/new.png)  
-- [2026-01-28-强化学习最难的不是算法，是写环境！](https://www.bestblogs.dev/article/dffe1631) ![](/assets/new.png)  
-- [2026-01-28-Z-Image-标准版来了！专为微调而生的全能基座，兼顾真实与艺术！](https://www.bestblogs.dev/article/d053b6b4) ![](/assets/new.png)  
-- [2026-01-28-Google-如何通过-Zanzibar-管理万亿级授权](https://www.bestblogs.dev/article/0455dc42) ![](/assets/new.png)  
-- [2026-01-28-一人一智能体：从零开始构建浏览器](https://www.bestblogs.dev/article/082c3f7a) ![](/assets/new.png)  
-- [2026-01-28-UniRG-旨在利用强化学习提升医学影像报告质量](https://www.bestblogs.dev/article/be129128) ![](/assets/new.png)  
-- [2026-01-28-如何使用-Next.js、Supabase-和-OpenAI-构建-AI-驱动的-RAG-搜索应用](https://www.bestblogs.dev/article/f667a232) ![](/assets/new.png)  
-- [2026-01-28-Flutter-中的工厂模式与抽象工厂设计模式详解](https://www.bestblogs.dev/article/bdc9866b) ![](/assets/new.png)  
-- [2026-01-28-Gemini-3-Flash-推出智能体视觉功能](https://www.bestblogs.dev/article/4fbbbc72) ![](/assets/new.png)  
-- [2026-01-28-聊天框装不下的野心，被百度文心-APP-塞进了-AI-群聊里](https://www.bestblogs.dev/article/ff5db01c) ![](/assets/new.png)  
-- [2026-01-28-Extended-Bluetooth-Advertising-在-AOSP-中是如何工作的？](https://www.bestblogs.dev/article/d52bdd31) ![](/assets/new.png)  
-- [2026-01-28-定位-bug-花一天？8-年程序员竟还不会打日志？！要不要辞退……](https://www.bestblogs.dev/article/7e3d8c75) ![](/assets/new.png)  
-- [2026-01-28-Nemotron-Personas-Singapore：为主权-AI-共同设计的合成数据](https://www.bestblogs.dev/article/40d242e6) ![](/assets/new.png)  
-- [2026-01-28-《HelloGitHub》第-118-期](https://www.bestblogs.dev/article/a99b2819) ![](/assets/new.png)  
-- [查看更多 >](/details/精选文章 (BestBlogs).md)
-
-<div align="right"><a href="#文章来源">⬆&nbsp;返回顶部</a></div>
-</details>
+- [独立开发-Indie-Hacker](#独立开发-indie-hacker)![](/assets/dot.png)
 
 <details open>
 <summary id="技术视频-tech-videos">
