@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alchemy-rss.vercel.app/atom.xml</id>
-    <title>前端技术文章 - Alchemy - 数据炼金平台</title>
-    <updated>2026-01-28T16:50:16.563Z</updated>
+    <title>Alchemy - 数据炼金平台</title>
+    <updated>2026-01-28T20:07:35.136Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Alchemy Lab</name>
@@ -11,7 +11,7 @@
     </author>
     <link rel="alternate" href="https://alchemy-rss.vercel.app/atom.xml"/>
     <link rel="self" href="https://alchemy-rss.vercel.app/atom.xml"/>
-    <subtitle>订阅最新热门前端技术文章</subtitle>
+    <subtitle>将信息原矿提炼为知识纯金 (Inspired by ChanceYu/front-end-rss)</subtitle>
     <icon>https://alchemy-rss.vercel.app/static/favicon.ico</icon>
-    <rights>All rights reserved 2026 by Alchemy Lab (Inspired by ChanceYu)</rights>
+    <rights>All rights reserved 2026 by Alchemy Lab</rights>
 </feed>
