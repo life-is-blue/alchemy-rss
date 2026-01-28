@@ -1,46 +1,29 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "site/api/*.js",
-      "use": "@vercel/node"
+      "source": "/u/:id",
+      "destination": "/api/u?id=:id"
     },
     {
-      "src": "site/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/u/(?<id>[^/]*)",
-      "dest": "site/api/index.js?id=$id"
+      "source": "/atom.xml",
+      "destination": "/atom.xml"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "source": "/details/:path*",
+      "destination": "/details/:path*"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
     },
     {
-      "src": "/details/(.*)",
-      "dest": "/details/$1"
+      "source": "/static/:path*",
+      "destination": "/static/:path*"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/atom.xml",
-      "dest": "/atom.xml"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

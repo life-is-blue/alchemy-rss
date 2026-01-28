@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-const links = require('../../data/links.json');
+const links = require('../data/links.json');
 
 let linksMap = {};
 
@@ -13,12 +13,21 @@ links.forEach((item) => {
 });
 
 module.exports = (req, res) => {
-  const { id } = req.query;
+
+  const id = Array.isArray(req.query.id) ? req.query.id[0] : req.query.id;
+
   let link = '/';
 
+
+
   if(id && (id in linksMap)){
+
     link = linksMap[id];
+
   }
 
-  res.redirect(301, link || '/');
+
+
+  res.redirect(301, link);
+
 }

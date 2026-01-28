@@ -1,0 +1,9 @@
+{
+  "name": "alchemy-rss-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "vercel-install": "cd site && (pnpm install || yarn install || npm install)",
+    "build": "cd site && node build/build.js"
+  }
+}
