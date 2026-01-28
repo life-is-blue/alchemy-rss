@@ -96,7 +96,9 @@
         >
           <van-cell is-link>
             <div slot="icon" class="item-order">{{index+1}}、</div>
-            <div slot="label">{{item.date}}<span class="item-from">{{item.rssTitle}}</span> </div>
+            <div slot="label">{{item.date}}<span class="item-from">{{item.rssTitle}}</span> 
+              <div v-if="item.summary" class="item-summary">{{item.summary}}</div>
+            </div>
             <div slot="title" class="item-title" v-html="item.sotitle || item.title"></div>
           </van-cell>
         </a>
@@ -593,6 +595,18 @@ export default {
 .result-box .item-from {
     display: inline-block;
     margin-left: .75rem
+}
+
+.result-box .item-summary {
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+    color: #666;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
 }
 
 .result-box .red {

@@ -7,4 +7,7 @@
 <% } %>
 
 <% _.each(obj.items, function(item){ var itemTitle = obj.formatTitle(item.title); %>
-- [<%= item.date %>-<%= itemTitle %>](<%= item.link %>) <% }) %>
+- **[<%= item.date %>-<%= itemTitle %>](<%= item.link %>)**
+<% if(item.summary){ %>  > <%= item.summary.replace(/\n/g, ' ') %>
+<% } %>
+<% }) %>

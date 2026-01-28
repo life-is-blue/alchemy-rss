@@ -72,10 +72,21 @@ function handleFeed() {
           newData.rss[rssItem.title] = true
           newData.links[curr.link] = true
 
+          // 提取并清洗摘要：移除 HTML，还原实体，截取前 200 字
+          let summary = curr.contentSnippet || curr.content || ''
+          summary = summary.replace(/<[^>]+>/g, '')
+            .replace(/&nbsp;/g, ' ')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&')
+            .replace(/&quot;/g, '"')
+            .replace(/\s+/g, ' ').slice(0, 200).trim()
+
           return [...prev, {
             title: curr.title,
             link: curr.link,
-            date
+            date,
+            summary: summary || undefined // 仅当有摘要时存入
           }]
         }
       }, [])
@@ -85,9 +96,11 @@ function handleFeed() {
         utils.logSuccess('更新 RSS: ' + rssItem.title)
         newData.titles.push(rssItem.title)
         newData.length += newItems.length
+        
+        // 合并新旧数据，并对超过 100 条的数据进行“脱水”（移除摘要）处理
         allItems = newItems.concat(items).sort(function (a, b) {
           return a.date < b.date ? 1 : -1
-        })
+        }).map((item, index) => (index < 100 ? item : { ...item, summary: undefined }))
       }
       linksJson[rssIndex] = {
         title: rssItem.title,
