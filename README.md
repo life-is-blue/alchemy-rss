@@ -6,7 +6,7 @@
 
 ## 
 
-[![](https://github.com/ChanceYu/front-end-rss/actions/workflows/server.yml/badge.svg)](https://github.com/ChanceYu/front-end-rss/actions/workflows/server.yml)
+[![](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml/badge.svg)](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml)
 
 :alarm_clock: 更新时间: 2026-01-29 00:50:15，:rocket: 更新条数: +500， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
 

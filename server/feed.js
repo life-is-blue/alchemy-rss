@@ -11,7 +11,7 @@ async function createFeed(linksJson){
 
   const feed = new Feed({
     title: 'Alchemy - 数据炼金平台',
-    description: '将信息原矿提炼为知识纯金',
+    description: '将信息原矿提炼为知识纯金 (Inspired by ChanceYu/front-end-rss)',
     id: feedUrl,
     link: feedUrl,
     image: '',
