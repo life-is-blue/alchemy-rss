@@ -120,8 +120,18 @@ const webpackConfig = merge(baseWebpackConfig, {
       }
     ]),
 
-    // copy feed xml
+    // copy assets, details and feed xml
     new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../../assets'),
+        to: path.join(config.build.assetsRoot, 'assets'),
+        ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../../details'),
+        to: path.join(config.build.assetsRoot, 'details'),
+        ignore: ['.*']
+      },
       {
         from: path.resolve(__dirname, '../../data/atom.xml'),
         to: config.build.assetsRoot,

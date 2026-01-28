@@ -17,5 +17,5 @@
 :alarm_clock: 更新时间: <%= obj.currentDate %>，:rocket: 更新条数: +<%= obj.newData.length %>， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
 
 ## 文章来源
-<% _.each(obj.linksJson, function(e){ var rssTitle = obj.formatTitle(e.title); %>
-- [<%= rssTitle %>](#<%= rssTitle.toLowerCase() %>)<% if (e.title in obj.newData.rss){ %>![](/assets/dot.png) <% } %>  <% }) %>
+<% _.each(obj.linksJson, function(e){ var rssTitle = obj.formatTitle(e.title); var filename = e.title.replace(/[\\\/]/g, '') + '.md'; %>
+- [<%= rssTitle %>](/details/<%= filename %>)<% if (e.title in obj.newData.rss){ %>![](/assets/dot.png) <% } %>  <% }) %>

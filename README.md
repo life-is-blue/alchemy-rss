@@ -18,11 +18,11 @@
 
 ## 文章来源
 
-- [精选文章-BestBlogs](#精选文章-bestblogs)![](/assets/dot.png)   
-- [技术视频-Tech-Videos](#技术视频-tech-videos)![](/assets/dot.png)   
-- [深度播客-Podcasts](#深度播客-podcasts)![](/assets/dot.png)   
-- [AI-动态-AI-News](#ai-动态-ai-news)![](/assets/dot.png)   
-- [独立开发-Indie-Hacker](#独立开发-indie-hacker)![](/assets/dot.png)
+- [精选文章-BestBlogs](/details/精选文章 (BestBlogs).md)![](/assets/dot.png)   
+- [技术视频-Tech-Videos](/details/技术视频 (Tech Videos).md)![](/assets/dot.png)   
+- [深度播客-Podcasts](/details/深度播客 (Podcasts).md)![](/assets/dot.png)   
+- [AI-动态-AI-News](/details/AI 动态 (AI News).md)![](/assets/dot.png)   
+- [独立开发-Indie-Hacker](/details/独立开发 (Indie Hacker).md)![](/assets/dot.png)
 
 <details open>
 <summary id="技术视频-tech-videos">
