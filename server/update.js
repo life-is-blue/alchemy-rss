@@ -35,7 +35,6 @@ function handleCommit() {
     .push(['-u', 'origin', 'master'], () => utils.logSuccess('完成抓取和上传！'))
 }
 
-// 简单的并发控制函数
 async function mapLimit(items, limit, asyncFn) {
   const results = []
   const executing = []
@@ -70,98 +69,94 @@ function handleFeed() {
         const feed = await fetch(rssItem)
         const items = linksExist.find((el) => el.title === rssItem.title)?.items || []
         
-        const newFeedItems = (feed?.items || []).filter(curr => !items.find(el => utils.isSameLink(el.link, curr.link)))
-        
-        // 使用自定义并发控制替代旧版 Async.mapLimit
-        console.log(`[DEBUG] Processing ${newFeedItems.length} new items for ${rssItem.title}`)
-        const processedNewItems = await mapLimit(newFeedItems, 3, async (curr) => {
-          let date = utils.getNowDate('YYYY-MM-DD')
-          try {
-            date = utils.formatDate(curr.isoDate, 'YYYY-MM-DD')
-          } catch (e) {}
+        // 识别“需要处理”的文章：新文章 OR 已存在但未归档的文章
+        const itemsToProcess = (feed?.items || []).map(curr => {
+          const exist = items.find(el => utils.isSameLink(el.link, curr.link))
+          if (!exist) return { curr, isNew: true }
+          if (!exist.archive_path && curr.link.includes('bestblogs.dev')) return { curr, isNew: false, oldData: exist }
+          return null
+        }).filter(Boolean)
 
-          newData.rss[rssItem.title] = true
-          newData.links[curr.link] = true
+        if (itemsToProcess.length > 0) {
+          const processedItems = await mapLimit(itemsToProcess, 3, async ({ curr, isNew, oldData }) => {
+            let date = isNew ? utils.getNowDate('YYYY-MM-DD') : oldData.date
+            try {
+              if (isNew) date = utils.formatDate(curr.isoDate, 'YYYY-MM-DD')
+            } catch (e) {}
 
-          const archiveMeta = await archiver.archive(curr.link, date)
-          
-          if (archiveMeta) {
-            return {
-              title: archiveMeta.title || curr.title,
-              link: archiveMeta.link,
-              date,
-              summary: archiveMeta.ai_summary,
-              archive_path: archiveMeta.archive_path,
-              tags: archiveMeta.tags,
-              read_time: archiveMeta.read_time
+            if (isNew) {
+              newData.rss[rssItem.title] = true
+              newData.links[curr.link] = true
             }
-          } else {
-            let summary = curr.contentSnippet || curr.content || ''
-            summary = summary.replace(/<[^>]+>/g, '')
-              .replace(/&nbsp;/g, ' ')
-              .replace(/&lt;/g, '<')
-              .replace(/&gt;/g, '>')
-              .replace(/&amp;/g, '&')
-              .replace(/&quot;/g, '"')
-              .replace(/\s+/g, ' ').slice(0, 200).trim()
 
-            return {
-              title: curr.title,
-              link: curr.link,
-              date,
-              summary: summary || undefined
+            const archiveMeta = await archiver.archive(curr.link, date)
+            
+            if (archiveMeta) {
+              return {
+                title: archiveMeta.title || curr.title,
+                link: archiveMeta.link,
+                date,
+                summary: archiveMeta.ai_summary,
+                archive_path: archiveMeta.archive_path,
+                tags: archiveMeta.tags,
+                read_time: archiveMeta.read_time
+              }
+            } else if (isNew) {
+              // 仅对新文章执行降级清洗，老文章如果归档失败就保持原样
+              let summary = curr.contentSnippet || curr.content || ''
+              summary = summary.replace(/<[^>]+>/g, '').slice(0, 200).trim()
+              return { title: curr.title, link: curr.link, date, summary }
+            } else {
+              return oldData
             }
-          }
-        })
-
-        let allItems = items
-        console.log(`[DEBUG] processedNewItems type: ${typeof processedNewItems}, isArray: ${Array.isArray(processedNewItems)}`)
-        if (processedNewItems && processedNewItems.length) {
-          utils.logSuccess('更新 RSS: ' + rssItem.title + ` (+${processedNewItems.length})`)
-          newData.titles.push(rssItem.title)
-          newData.length += processedNewItems.length
-          
-          allItems = processedNewItems.concat(items).sort(function (a, b) {
-            return a.date < b.date ? 1 : -1
-          }).map((item, index) => {
-            if (index < 100) return item
-            const { summary, ai_summary, ...rest } = item
-            return rest
           })
-        }
-        linksJson[rssIndex] = {
-          title: rssItem.title,
-          items: allItems
+
+          // 更新 items 列表
+          let allItems = items
+          processedItems.forEach(pi => {
+            const idx = allItems.findIndex(el => utils.isSameLink(el.link, pi.link))
+            if (idx > -1) {
+              allItems[idx] = pi // 更新老文章
+            } else {
+              allItems.unshift(pi) // 插入新文章
+              newData.length++
+            }
+          })
+
+          if (newData.length > 0) newData.titles.push(rssItem.title)
+          
+          // 脱水处理
+          allItems = allItems.sort((a, b) => a.date < b.date ? 1 : -1)
+            .map((item, index) => {
+              if (index < 100) return item
+              const { summary, ai_summary, ...rest } = item
+              return rest
+            })
+          
+          linksJson[rssIndex] = { title: rssItem.title, items: allItems }
+          if (processedItems.length > 0) utils.logSuccess(`处理 ${rssItem.title}: +${processedItems.length}`)
+        } else {
+          linksJson[rssIndex] = { title: rssItem.title, items }
         }
       } catch (err) {
         console.error(`Error processing feed ${rssItem.title}:`, err)
-        linksJson[rssIndex] = {
-          title: rssItem.title,
-          items: linksExist.find((el) => el.title === rssItem.title)?.items || []
-        }
+        linksJson[rssIndex] = { title: rssItem.title, items: linksExist.find((el) => el.title === rssItem.title)?.items || [] }
       }
       callback(null)
     })())
   }))
 
   Async.parallelLimit(tasks, 2, async () => {
-    if (newData.length) {
+    if (newData.length || linksJson.some((l, i) => JSON.stringify(l) !== JSON.stringify(linksExist[i]))) {
       fs.outputJsonSync(LINKS_PATH, linksJson)
       await writemd(newData, linksJson)
       await createFeed(linksJson)
-      utils.log('完成抓取，即将上传')
-      if (!utils.WORKFLOW) {
-        handleCommit()
-      }
+      utils.log('更新完成')
+      if (!utils.WORKFLOW) handleCommit()
     } else {
       utils.logSuccess('无需更新')
     }
-    rssJson = null
-    linksJson = null
-    newData = null
-    if (utils.WORKFLOW) {
-      process.exit(0)
-    }
+    if (utils.WORKFLOW) process.exit(0)
   })
 }
 
