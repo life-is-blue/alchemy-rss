@@ -9,16 +9,34 @@ export default defineEventHandler((event) => {
     resolve(process.cwd(), '../../data/links.json'),
   ]
 
-  for (const filePath of possiblePaths) {
-    if (existsSync(filePath)) {
-      try {
-        const data = readFileSync(filePath, 'utf-8')
-        return JSON.parse(data)
-      } catch (error) {
-        console.error('API Parse Error at:', filePath, error)
-      }
-    }
-  }
+    for (const filePath of possiblePaths) {
 
-  return { error: 'Failed to find articles data', checked: possiblePaths }
-})
+      // console.log('Checking path:', filePath)
+
+      if (existsSync(filePath)) {
+
+        try {
+
+          const data = readFileSync(filePath, 'utf-8')
+
+          return JSON.parse(data)
+
+        } catch (error) {
+
+          console.error('API Parse Error at:', filePath, error)
+
+        }
+
+      }
+
+    }
+
+    
+
+    console.warn('❌ [API] links.json not found in:', possiblePaths)
+
+    return { error: 'Failed to find articles data', checked: possiblePaths }
+
+  })
+
+  

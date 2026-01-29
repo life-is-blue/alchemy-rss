@@ -34,5 +34,12 @@ defineProps({
     required: true
   }
 })
-defineEmits(['click', 'action'])
+
+const formatDate = (dateStr) => {
+  if (!dateStr) return ''
+  return new Date(dateStr).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric'
+  })
+}
 </script>

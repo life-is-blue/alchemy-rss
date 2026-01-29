@@ -49,12 +49,26 @@ export const useArticles = () => {
     loading.value = true
     try {
       let data;
+      let rss;
+      
       try {
-        data = await $fetch('/api/articles')
+        // 并行加载文章和源数据
+        const [articlesResp, rssResp] = await Promise.all([
+          $fetch('/api/articles').catch(() => $fetch('/data/links.json')),
+          $fetch('/data/rss.json').catch(() => [])
+        ])
+        data = articlesResp
+        rss = rssResp
       } catch (e) {
-        data = await $fetch('/data/links.json')
+        console.error('Data fetch failed', e)
+        return
       }
       
+      if (!Array.isArray(data)) {
+        console.warn('⚠️ Invalid articles data format:', data)
+        return
+      }
+
       articles.value = data.reduce((prev, curr) => {
         return [...prev, ...curr.items.map(item => ({ 
           ...item, 
@@ -62,7 +76,8 @@ export const useArticles = () => {
         }))]
       }, []).sort((a, b) => a.date < b.date ? 1 : -1)
       
-      rssData.value = data.map(d => ({ title: d.title, rss: d.rss }))
+      // 直接使用 rss.json 的原始数据
+      rssData.value = rss || []
     } catch (e) {
       console.error('Failed to load articles', e)
     } finally {
