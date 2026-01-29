@@ -2,6 +2,10 @@ const { JSDOM } = require('jsdom');
 const { Readability } = require('@mozilla/readability');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
+// 正则常量
+const REGEX_BESTBLOGS_ID = /\/(article|status)\/([a-zA-Z0-9]+)/;
+const REGEX_NEXTJS_TEXT = /"text":"(.*?)(?<!\\)"/g;
+
 module.exports = async (req, res) => {
   const { url } = req.query;
 
@@ -9,75 +13,63 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'URL is required' });
   }
 
-  // 开启 Vercel CDN 缓存：s-maxage=86400 (CDN 缓存 1 天), stale-while-revalidate=604800 (过期后 1 周内仍可服务旧数据)
   res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate=604800');
 
   const apiKey = process.env.BESTBLOGS_API_KEY;
   
-  // 1. 尝试 BestBlogs API 路径
+  // 1. 优先尝试 BestBlogs API
   if (apiKey && url.includes('bestblogs.dev')) {
     try {
-      // 从 URL 提取 ID (例如: https://www.bestblogs.dev/article/1628d64a -> 1628d64a)
-      // 同时也支持原始 ID 格式如果存在
-      const idMatch = url.match(/\/article\/([a-zA-Z0-9]+)/) || url.match(/\/status\/([0-9]+)/);
-      
-      if (idMatch) {
-        const resourceId = idMatch[1];
-        // 有些 ID 是纯数字 (status)，有些是哈希 (article)。API 可能需要特定前缀？
-        // 根据文档，article id 通常是 "RAW_..." 或直接使用。先尝试直接用 ID。
-        // 为了稳健，我们先尝试 meta 接口，因为它能确认 ID 是否有效
+      console.log('🔍 [Reader] Trying BestBlogs API for:', url);
+      const idMatch = url.match(REGEX_BESTBLOGS_ID);
+      const resourceId = idMatch ? idMatch[2] : null;
+
+      if (resourceId) {
+        console.log('🚀 [Reader] Attempting direct fetch by ID:', resourceId);
         
-        // 由于我们拿到的可能是短 ID，而 API 需要长 ID (如 RAW_...),
-        // 或者反过来。如果 URL 里的 ID 能直接用最好。
-        // 假设 URL 里的 ID 可以直接用于 API (或者我们需要先 search 一下？)
-        // 既然文档没说 URL ID 和 API ID 的映射，我们先假设 URL 里的 ID 就是 API ID 或者可以通过 search 搜到。
-        // 但为了简单，先保留"正则暴力破解"作为兜底，这里先尝试用 scraping 模式，
-        // 因为我们暂时无法确定 URL ID 到 API ID 的映射关系 (除非 URL 里的 ID 就是 API ID)。
-        
-        // 修正策略：BestBlogs 的 URL ID (如 1628d64a) 可能不是 API 需要的 ID (如 RAW_xxxx)。
-        // 我们可以尝试用 list 接口搜索 url 来反查 ID。
-        
-        const searchResp = await fetch('https://api.bestblogs.dev/openapi/v1/resource/list', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'X-API-KEY': apiKey
-          },
-          body: JSON.stringify({
-            pageSize: 1,
-            keyword: url // 尝试用 URL 搜索
-          })
+        // 路径 A: 优先直连 ID (并发获取 Content 和 Meta)
+        const [contentResp, metaResp] = await Promise.all([
+          callBestBlogsAPI(`/openapi/v1/resource/content?id=${resourceId}`, apiKey, null, 'GET'),
+          callBestBlogsAPI(`/openapi/v1/resource/meta?id=${resourceId}`, apiKey, null, 'GET')
+        ]);
+
+        if (contentResp?.success && contentResp.data) {
+          console.log('✅ [Reader] Direct fetch success! Length:', contentResp.data.displayDocument?.length);
+          const meta = metaResp?.success ? metaResp.data : { id: resourceId };
+          return res.status(200).json(buildArticleResponse(contentResp.data, meta));
+        }
+
+        // 路径 B: 搜索反查 (兜底)
+        console.log('⚠️ [Reader] Direct fetch failed, falling back to Search API...');
+        let searchResp = await callBestBlogsAPI('/openapi/v1/resource/list', apiKey, {
+          pageSize: 1,
+          keyword: resourceId
         });
-        
-        const searchData = await searchResp.json();
-        
-        if (searchData.success && searchData.data.dataList.length > 0) {
-          const meta = searchData.data.dataList[0].resourceMeta || searchData.data.dataList[0];
-          const realId = meta.id;
-          
-          // 拿到 Real ID 后，获取全文
-          const contentResp = await fetch(`https://api.bestblogs.dev/openapi/v1/resource/content?id=${realId}`, {
-             headers: { 'X-API-KEY': apiKey }
-          });
-          const contentData = await contentResp.json();
-          
-          if (contentData.success && contentData.data) {
-             return res.status(200).json({
-               title: meta.title,
-               content: contentData.data.displayDocument || meta.summary, // 优先用清洗后的 HTML
-               excerpt: meta.summary,
-               siteName: 'BestBlogs',
-               byline: (meta.authors || []).join(', ')
-             });
+
+        if (!searchResp?.success || !searchResp.data?.dataList?.length) {
+           searchResp = await callBestBlogsAPI('/openapi/v1/resource/list', apiKey, {
+             pageSize: 1,
+             keyword: url
+           });
+        }
+
+        if (searchResp?.success && searchResp.data?.dataList?.length > 0) {
+          const item = searchResp.data.dataList[0];
+          const meta = item.resourceMeta || item;
+          console.log('✅ [Reader] Found ID via Search:', meta.id);
+
+          const retryContentResp = await callBestBlogsAPI(`/openapi/v1/resource/content?id=${meta.id}`, apiKey, null, 'GET');
+          if (retryContentResp?.success && retryContentResp.data) {
+            return res.status(200).json(buildArticleResponse(retryContentResp.data, meta));
           }
         }
       }
     } catch (e) {
-      console.warn('BestBlogs API failed, falling back to scraper:', e);
+      console.warn('⚠️ [Reader] BestBlogs API logic failed, falling back to scraper', e);
     }
   }
 
-  // 2. 通用爬虫路径 (Fallback)
+  // 2. 降级到通用爬虫
   try {
     const response = await fetch(url, {
       headers: {
@@ -86,9 +78,8 @@ module.exports = async (req, res) => {
     });
     const html = await response.text();
 
-    // --- BestBlogs.dev 专用正则兜底 (针对 Next.js Hydration Data) ---
     if (url.includes('bestblogs.dev')) {
-      const textMatches = html.match(///"text":"(.*?)(?<!\\)"///g);
+      const textMatches = html.match(REGEX_NEXTJS_TEXT);
       if (textMatches && textMatches.length > 0) {
         const content = textMatches
           .map(m => {
@@ -106,14 +97,13 @@ module.exports = async (req, res) => {
 
         if (content.length > 100) {
           return res.status(200).json({
-            title: 'Alchemy 精选 (API Fallback)',
+            title: 'Alchemy 精选 (Regex Fallback)',
             content: `<div style="font-family: sans-serif; line-height: 1.8; color: #333;">${content}</div>`,
             siteName: 'BestBlogs'
           });
         }
       }
     }
-    // ---------------------------------
 
     const dom = new JSDOM(html, { url });
     const reader = new Readability(dom.window.document);
@@ -127,7 +117,36 @@ module.exports = async (req, res) => {
       byline: article?.byline
     });
   } catch (error) {
-    console.error('Reader API Error:', error);
+    console.error('❌ [Reader] Scraper Error:', error);
     res.status(500).json({ error: 'Failed to process article content' });
   }
 };
+
+function buildArticleResponse(contentData, meta) {
+  return {
+    title: meta.title || contentData.title || 'Alchemy Refined',
+    content: contentData.displayDocument || meta.summary,
+    siteName: 'BestBlogs (API)',
+    byline: (meta.authors || []).join(', '),
+    aiSummary: meta.oneSentenceSummary,
+    mainPoints: meta.mainPoints,
+    tags: meta.tags,
+    readTime: meta.readTime,
+    score: meta.score,
+    wordCount: meta.wordCount
+  };
+}
+
+async function callBestBlogsAPI(endpoint, apiKey, body, method = 'POST') {
+  try {
+    const resp = await fetch(`https://api.bestblogs.dev${endpoint}`, {
+      method,
+      headers: { 'Content-Type': 'application/json', 'X-API-KEY': apiKey },
+      body: method === 'POST' ? JSON.stringify(body) : undefined
+    });
+    return await resp.json();
+  } catch (e) {
+    console.error(`❌ [Reader] BestBlogs API Error (${endpoint}):`, e);
+    return null;
+  }
+}
