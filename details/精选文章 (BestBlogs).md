@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 14:11:35。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 16:07:28。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
@@ -93,12 +93,24 @@
   > 📌 一句话摘要 Notion CEO Ivan Zhao 通过钢铁与蒸汽机的历史隐喻，阐述了人工智能将如何作为“无限智能”重塑个体效率、组织架构及知识经济形态。 📝 详细摘要 本文由 Notion 创始人 Ivan Zhao 撰写，核心观点认为 AI 是继钢铁和蒸汽之后的新型“奇迹材料”。文章从三个维度展开：在个体层面，AI 将知识工作者从“自行车”时代推向“汽车”时代，但需解决语境碎片化和可
 
 
+- **[2026-01-29-我们不需要-100-万台“跳舞机器人”](https://www.bestblogs.dev/article/a04c1556)**
+  > 📌 一句话摘要 本文深度剖析了中国人形机器人产业在出货量激增背后的现实困境，指出行业正处于从“耍宝跳舞”向“实质生产力”转型的关键阵痛期。 📝 详细摘要 文章以宇树科技、智元机器人等头部企业的出货量数据争议为切入点，探讨了人形机器人行业的现状。虽然 2025 年国内头部企业出货量实现同比大幅增长，但行业仍面临“耍宝有余、干活不足”的质疑。核心痛点在于硬件稳定性差、二次开发门槛高以及基础模型不够
+
+
 - **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
   > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
 
 
 - **[2026-01-29-Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)**
   > 📌 一句话摘要 Moltbot（原 Clawdbot）作者 Peter Steinberger 详述了该项目的爆火历程、开发理念及未来规划，并指出 MiniMax M2.1 是目前最优秀的开源模型。 📝 详细摘要 本文是对爆火 AI 智能体项目 Moltbot（原名 Clawdbot）作者 Peter Steinberger 的深度访谈综述。Peter 分享了他从“退休摆烂”到被 Claude
+
+
+- **[2026-01-29-喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)**
+  > 📌 一句话摘要 a16z 掌门人 Ben Horowitz 探讨了 AI 时代下风投机构的管理哲学、垂直化战略及投资趋势，指出 AI 应用层的复杂性正超越基础设施，并迎来多重赢家时代。 📝 详细摘要 本文编译自 a16z 掌门人 Ben Horowitz 的访谈，深度剖析了顶级风投机构在 AI 浪潮下的管理与投资逻辑。Ben 强调，卓越公司的核心在于鼓励创造性冒险并建立清晰的决策机制。在组织架
+
+
+- **[2026-01-29-Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)**
+  > 📌 一句话摘要 Google DeepMind 推出了 ATLAS，这是一套针对多语言语言模型的缩放法则，正式定义了 400 多种语言中模型规模、数据量和语言混合之间的相互作用。 📝 详细摘要 Google DeepMind 的研究人员开发了 ATLAS，这是一个为多语言语言模型建立实用缩放法则的框架。与专注于纯英语环境的传统缩放法则不同，ATLAS 利用 774 次受控训练运行（10M 到
 
 
 - **[2026-01-28-7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)**
@@ -348,9 +360,6 @@
 
 
 - **[2026-01-28-马斯克的“太空光伏梦”，离不开中国供应链](https://www.bestblogs.dev/article/67c820be)**
-
-
-- **[2026-01-28-帮助-AI-智能体使用-API-的两种方法（以及为什么你需要两者兼顾）](https://www.bestblogs.dev/article/c112be3e)**
 
 
 - **[2026-01-27-从零开始构建流水线并行](https://www.bestblogs.dev/article/95c6f2de)**

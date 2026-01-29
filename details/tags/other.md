@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 14:11:35。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 16:07:28。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 其他
 
@@ -62,6 +62,14 @@
 
 - **[2026-01-29-当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)**
   > 📌 一句话摘要 Notion CEO Ivan Zhao 通过钢铁与蒸汽机的历史隐喻，阐述了人工智能将如何作为“无限智能”重塑个体效率、组织架构及知识经济形态。 📝 详细摘要 本文由 Notion 创始人 Ivan Zhao 撰写，核心观点认为 AI 是继钢铁和蒸汽之后的新型“奇迹材料”。文章从三个维度展开：在个体层面，AI 将知识工作者从“自行车”时代推向“汽车”时代，但需解决语境碎片化和可
+
+
+- **[2026-01-29-我们不需要-100-万台“跳舞机器人”](https://www.bestblogs.dev/article/a04c1556)**
+  > 📌 一句话摘要 本文深度剖析了中国人形机器人产业在出货量激增背后的现实困境，指出行业正处于从“耍宝跳舞”向“实质生产力”转型的关键阵痛期。 📝 详细摘要 文章以宇树科技、智元机器人等头部企业的出货量数据争议为切入点，探讨了人形机器人行业的现状。虽然 2025 年国内头部企业出货量实现同比大幅增长，但行业仍面临“耍宝有余、干活不足”的质疑。核心痛点在于硬件稳定性差、二次开发门槛高以及基础模型不够
+
+
+- **[2026-01-29-Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)**
+  > 📌 一句话摘要 Google DeepMind 推出了 ATLAS，这是一套针对多语言语言模型的缩放法则，正式定义了 400 多种语言中模型规模、数据量和语言混合之间的相互作用。 📝 详细摘要 Google DeepMind 的研究人员开发了 ATLAS，这是一个为多语言语言模型建立实用缩放法则的框架。与专注于纯英语环境的传统缩放法则不同，ATLAS 利用 774 次受控训练运行（10M 到
 
 
 - **[2026-01-28-7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)**
@@ -369,46 +377,50 @@
 - **[2026-01-16-未来已至，却出人意料地愚蠢](https://www.bestblogs.dev/video/561325b)**
 
 
-- **[2026-01-28-No.187-🚘️-比亚迪发家史：造车之前那些事](https://www.bestblogs.dev/podcast/817fc2e)**
-
-
-- **[2026-01-28-Bonus｜AEO/GEO-线下讨论：流量逻辑在变，内容价值如何被重新定义？](https://www.bestblogs.dev/podcast/7dd68d3)**
+- **[2026-01-29-#408.Clawd-的创造者："我发布我不读的代码"](https://www.bestblogs.dev/podcast/6d275ea)**
+  > 📌 一句话摘要 传奇开发者 Peter Steinberger 分享如何利用 AI Agent 重塑软件工程，实现从“读代码”向“架构设计”与“闭环验证”的范式转移。 📝 详细摘要 本期播客对话了 PSPDFKit 创始人 Peter Steinberger。他分享了从传统软件工程向 AI 辅助开发转型的深刻洞察。核心观点在于：在 AI 时代，开发者应从繁琐的业务代码编写中解放，转而关注系统架
 
 
 - **[2026-01-28-#407.拆解华为算力真相与中芯困局：前白宫官员深度复盘芯片出口管制的“流言与事实”](https://www.bestblogs.dev/podcast/13251d4)**
 
 
-- **[2026-01-27-89-好女孩综合征｜停止用你的“懂事”，兑换别人的“喜爱”](https://www.bestblogs.dev/podcast/e1f9a2b)**
+- **[2026-01-28-Bonus｜AEO/GEO-线下讨论：流量逻辑在变，内容价值如何被重新定义？](https://www.bestblogs.dev/podcast/7dd68d3)**
 
 
-- **[2026-01-27-No.216-手机热点如果够用，我们为什么还需要随身-WiFi？](https://www.bestblogs.dev/podcast/1db6beb)**
+- **[2026-01-28-No.187-🚘️-比亚迪发家史：造车之前那些事](https://www.bestblogs.dev/podcast/817fc2e)**
 
 
 - **[2026-01-27-E143.-我们该如何与无尽的疲劳相处？和前-ICU-医生聊聊过劳-ft.-糖医生-Lesley](https://www.bestblogs.dev/podcast/2cfc4d2)**
 
 
-- **[2026-01-26-131.-印奇出任阶跃星辰董事长的首次访谈：聪明人的诱惑、残酷的淘汰赛、赌注和超多元方程](https://www.bestblogs.dev/podcast/f2f8aca)**
+- **[2026-01-27-No.216-手机热点如果够用，我们为什么还需要随身-WiFi？](https://www.bestblogs.dev/podcast/1db6beb)**
 
 
-- **[2026-01-26-E222｜紧身裤消失，谁在定义时尚潮流？](https://www.bestblogs.dev/podcast/0033b0d)**
-
-
-- **[2026-01-26-149:-具身模型哪家强？与范浩强、高阳聊具身模型的测评、RoboChallenge，26-年具身展望](https://www.bestblogs.dev/podcast/d974f7e)**
+- **[2026-01-27-89-好女孩综合征｜停止用你的“懂事”，兑换别人的“喜爱”](https://www.bestblogs.dev/podcast/e1f9a2b)**
 
 
 - **[2026-01-26-#406.追求卓越的终极对话：Spotify-创始人-Daniel-Ek-的影响力法则与精力管理心法](https://www.bestblogs.dev/podcast/cc1ea37)**
 
 
-- **[2026-01-25-#404.-英伟达三十年生死博弈：从濒临破产到万亿算力帝国的进化全记录](https://www.bestblogs.dev/podcast/81c49cd)**
+- **[2026-01-26-149:-具身模型哪家强？与范浩强、高阳聊具身模型的测评、RoboChallenge，26-年具身展望](https://www.bestblogs.dev/podcast/d974f7e)**
+
+
+- **[2026-01-26-E222｜紧身裤消失，谁在定义时尚潮流？](https://www.bestblogs.dev/podcast/0033b0d)**
+
+
+- **[2026-01-26-131.-印奇出任阶跃星辰董事长的首次访谈：聪明人的诱惑、残酷的淘汰赛、赌注和超多元方程](https://www.bestblogs.dev/podcast/f2f8aca)**
 
 
 - **[2026-01-25-#403.赵婷对话《哈姆奈特》：在爱与丧失的“中阴身”里，找回创作的原始力量](https://www.bestblogs.dev/podcast/b235b0e)**
 
 
-- **[2026-01-23-E221-对话张潇雨：生活太重要，以至于不能太认真](https://www.bestblogs.dev/podcast/2e41182)**
+- **[2026-01-25-#404.-英伟达三十年生死博弈：从濒临破产到万亿算力帝国的进化全记录](https://www.bestblogs.dev/podcast/81c49cd)**
 
 
 - **[2026-01-23-Vol.254｜大明神木记：巨木北运背后的帝国欲望与山川之痛｜嘉宾：龚静染](https://www.bestblogs.dev/podcast/200c79d)**
+
+
+- **[2026-01-23-E221-对话张潇雨：生活太重要，以至于不能太认真](https://www.bestblogs.dev/podcast/2e41182)**
 
 
 - **[2026-01-22-#401.变革规模是工业革命的-100-倍：Demis-Hassabis-预判-AGI-时代与人类未来](https://www.bestblogs.dev/podcast/14ed02b)**
@@ -417,100 +429,100 @@
 - **[2026-01-21-No.186-📰-张一鸣与今日头条：创造没有编辑的时代-|-中国互联网故事-14](https://www.bestblogs.dev/podcast/dae92c0)**
 
 
-- **[2026-01-20-88-卷王的年度书单+新年规划｜掏心掏肺地活着，掷地有声地渴望](https://www.bestblogs.dev/podcast/4aa2108)**
-
-
-- **[2026-01-20-No.215-「雄鸡一唱天下白」之后，该如何重新理解品牌？](https://www.bestblogs.dev/podcast/abf6569)**
+- **[2026-01-20-E221｜聊聊-CES-与中国品牌出海：我们真的需要人形机器人吗？](https://www.bestblogs.dev/podcast/cf840cd)**
 
 
 - **[2026-01-20-#399.顶尖创始人的思考课：对话-Shopify-CEO-，如何“生活在别人的相对未来里”](https://www.bestblogs.dev/podcast/60e12a3)**
 
 
-- **[2026-01-20-E221｜聊聊-CES-与中国品牌出海：我们真的需要人形机器人吗？](https://www.bestblogs.dev/podcast/cf840cd)**
+- **[2026-01-20-No.215-「雄鸡一唱天下白」之后，该如何重新理解品牌？](https://www.bestblogs.dev/podcast/abf6569)**
+
+
+- **[2026-01-20-88-卷王的年度书单+新年规划｜掏心掏肺地活着，掷地有声地渴望](https://www.bestblogs.dev/podcast/4aa2108)**
 
 
 - **[2026-01-19-Vol.-159-科技快乐星球-43:-Cowork-上桌，Siri-与-Gemini-合作](https://www.bestblogs.dev/podcast/8d4ed44)**
 
 
-- **[2026-01-16-E220-对话聂辉华：都说宇宙的尽头是考公，但体制内到底是什么样？](https://www.bestblogs.dev/podcast/778596f)**
-
-
-- **[2026-01-16-Vol.253｜MAGA-媒体帝国：争议可以变现，立场是门生意｜嘉宾：汤景泰](https://www.bestblogs.dev/podcast/e04d6be)**
+- **[2026-01-16-#396-重塑大脑：Huberman-教授教你如何在碎片化时代找回专注、深度睡眠与内心平静](https://www.bestblogs.dev/podcast/747b688)**
 
 
 - **[2026-01-16-148:-访谈它石创始人陈亦伦：具身的三道曙光和第一道关卡](https://www.bestblogs.dev/podcast/7a8b0a2)**
 
 
-- **[2026-01-16-#396-重塑大脑：Huberman-教授教你如何在碎片化时代找回专注、深度睡眠与内心平静](https://www.bestblogs.dev/podcast/747b688)**
+- **[2026-01-16-Vol.253｜MAGA-媒体帝国：争议可以变现，立场是门生意｜嘉宾：汤景泰](https://www.bestblogs.dev/podcast/e04d6be)**
 
 
-- **[2026-01-15-#394.科学养成好习惯：对话《原子习惯》作者，揭秘重塑自我的底层逻辑](https://www.bestblogs.dev/podcast/3b69f78)**
-
-
-- **[2026-01-15-【正片】刘震云×罗永浩！有些玩笑含着泪也要开完](https://www.bestblogs.dev/podcast/dd3bac5)**
+- **[2026-01-16-E220-对话聂辉华：都说宇宙的尽头是考公，但体制内到底是什么样？](https://www.bestblogs.dev/podcast/778596f)**
 
 
 - **[2026-01-15-新年直播-2：特斯拉-FSD-以及自动驾驶的商业战争](https://www.bestblogs.dev/podcast/d0024a6)**
 
 
-- **[2026-01-14-No.185-🚘️-从“皮卡之王”到“中国-SUV-教父”：“保定车神”魏建军和他的长城帝国](https://www.bestblogs.dev/podcast/8aabf1c)**
+- **[2026-01-15-【正片】刘震云×罗永浩！有些玩笑含着泪也要开完](https://www.bestblogs.dev/podcast/dd3bac5)**
+
+
+- **[2026-01-15-#394.科学养成好习惯：对话《原子习惯》作者，揭秘重塑自我的底层逻辑](https://www.bestblogs.dev/podcast/3b69f78)**
 
 
 - **[2026-01-14-Bonus｜2026-CES-现场观察：技术趋势已明晰，产品仍在路上](https://www.bestblogs.dev/podcast/90a47ef)**
 
 
-- **[2026-01-13-vol.43-有问必答系列-摆脱内耗-才是成年人最奢侈的自由](https://www.bestblogs.dev/podcast/1fbd00f)**
+- **[2026-01-14-No.185-🚘️-从“皮卡之王”到“中国-SUV-教父”：“保定车神”魏建军和他的长城帝国](https://www.bestblogs.dev/podcast/8aabf1c)**
 
 
 - **[2026-01-13-E142.-500-天后，我们都将拥有外置大脑？和雷鸟-CEO-李宏伟聊-AR-发展到什么程度了](https://www.bestblogs.dev/podcast/10aac54)**
 
 
+- **[2026-01-13-vol.43-有问必答系列-摆脱内耗-才是成年人最奢侈的自由](https://www.bestblogs.dev/podcast/1fbd00f)**
+
+
 - **[2026-01-12-258.对话光帆科技董红光：当耳机长出眼睛，-“说一下”开始取代“点十下”](https://www.bestblogs.dev/podcast/5c860ad)**
-
-
-- **[2026-01-09-#386.应对极端不确定性：塔勒布与华尔街资深记者聊风险、危机与生存](https://www.bestblogs.dev/podcast/c9199c4)**
-
-
-- **[2026-01-09-E219-2025-年的最后一页，我选择这样写下｜小酒馆故事会🍻](https://www.bestblogs.dev/podcast/02cd7d0)**
-
-
-- **[2026-01-09-Vol.252｜闪电抓捕马杜罗：普世主义退场，唐罗主义破窗｜嘉宾：施展](https://www.bestblogs.dev/podcast/9e22597)**
-
-
-- **[2026-01-09-Lovart-创始人陈冕×罗永浩！且让我大闹一场，然后悄然离去](https://www.bestblogs.dev/podcast/c73a372)**
 
 
 - **[2026-01-09-61.Minimax-上市，与大模型牌局的三年演进｜对话云启陈昱](https://www.bestblogs.dev/podcast/b0ba09c)**
 
 
-- **[2026-01-08-番外-12-：钟馗说，我一个状元的底子，怎么就成驱魔大神了？|-完整版请转至故事篇](https://www.bestblogs.dev/podcast/f098280)**
+- **[2026-01-09-Lovart-创始人陈冕×罗永浩！且让我大闹一场，然后悄然离去](https://www.bestblogs.dev/podcast/c73a372)**
+
+
+- **[2026-01-09-Vol.252｜闪电抓捕马杜罗：普世主义退场，唐罗主义破窗｜嘉宾：施展](https://www.bestblogs.dev/podcast/9e22597)**
+
+
+- **[2026-01-09-E219-2025-年的最后一页，我选择这样写下｜小酒馆故事会🍻](https://www.bestblogs.dev/podcast/02cd7d0)**
+
+
+- **[2026-01-09-#386.应对极端不确定性：塔勒布与华尔街资深记者聊风险、危机与生存](https://www.bestblogs.dev/podcast/c9199c4)**
 
 
 - **[2026-01-08-129.-全球大模型第一股的上市访谈，和智谱-CEO-张鹏聊：敢问路在何方？](https://www.bestblogs.dev/podcast/5e7dec7)**
 
 
-- **[2026-01-07-87-卷王的年终复盘｜站上起跑线，让自己颤抖，让自己失手](https://www.bestblogs.dev/podcast/7696999)**
+- **[2026-01-08-番外-12-：钟馗说，我一个状元的底子，怎么就成驱魔大神了？|-完整版请转至故事篇](https://www.bestblogs.dev/podcast/f098280)**
 
 
 - **[2026-01-07-张利东与万亿广告机器:-学习-Facebook，超越-Meta｜字节跳动-第-3-集](https://www.bestblogs.dev/podcast/f33b3cb)**
 
 
-- **[2026-01-06-E44-李晓波对话孟岩：这次，就这样吧？](https://www.bestblogs.dev/podcast/c413f81)**
-
-
-- **[2026-01-06-No.184-💣-2025-年终企划「震楼机」新闻盘点-|-x-半拿铁·周刊](https://www.bestblogs.dev/podcast/0a725c5)**
-
-
-- **[2026-01-06-#383.重新定义学习：大多数学习工具失败的原因](https://www.bestblogs.dev/podcast/f96623b)**
+- **[2026-01-07-87-卷王的年终复盘｜站上起跑线，让自己颤抖，让自己失手](https://www.bestblogs.dev/podcast/7696999)**
 
 
 - **[2026-01-06-E141.-为什么科技越发达，我们越不自由?-ft.银河奖获奖科幻作家-陈楸帆](https://www.bestblogs.dev/podcast/89c5d6c)**
 
 
-- **[2026-01-05-#382.巴菲特深度访谈：除了财富，我更想聊聊那些让我“富有”的人生准则](https://www.bestblogs.dev/podcast/49a7452)**
+- **[2026-01-06-#383.重新定义学习：大多数学习工具失败的原因](https://www.bestblogs.dev/podcast/f96623b)**
+
+
+- **[2026-01-06-No.184-💣-2025-年终企划「震楼机」新闻盘点-|-x-半拿铁·周刊](https://www.bestblogs.dev/podcast/0a725c5)**
+
+
+- **[2026-01-06-E44-李晓波对话孟岩：这次，就这样吧？](https://www.bestblogs.dev/podcast/c413f81)**
 
 
 - **[2026-01-05-番外-11：互联网如何重塑我们的生活与钱包](https://www.bestblogs.dev/podcast/26404dd)**
+
+
+- **[2026-01-05-#382.巴菲特深度访谈：除了财富，我更想聊聊那些让我“富有”的人生准则](https://www.bestblogs.dev/podcast/49a7452)**
 
 
 - **[2026-01-02-#379.数学、悖论与无穷的本质：Math-Overflow-传奇哈姆金斯的数学多元宇宙](https://www.bestblogs.dev/podcast/c59fc93)**
