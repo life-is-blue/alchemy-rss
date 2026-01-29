@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 13:14:46。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 14:11:35。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
@@ -89,8 +89,16 @@
   > 📌 一句话摘要 昆仑万维发布 Mureka V8 音乐大模型，通过 MusiCoT 技术实现从“音频片段”到“可发布歌曲”的跨越，并联合太合音乐构建 AI 音乐产业链闭环。 📝 详细摘要 文章详细介绍了昆仑万维新发布的音乐大模型 Mureka V8。该模型在演唱表达力、音乐完整度和音质水准上表现出色，在多项指标上超越了硅谷顶尖模型 Suno V5。技术核心在于引入了 MusiCoT（音乐思维链
 
 
+- **[2026-01-29-当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)**
+  > 📌 一句话摘要 Notion CEO Ivan Zhao 通过钢铁与蒸汽机的历史隐喻，阐述了人工智能将如何作为“无限智能”重塑个体效率、组织架构及知识经济形态。 📝 详细摘要 本文由 Notion 创始人 Ivan Zhao 撰写，核心观点认为 AI 是继钢铁和蒸汽之后的新型“奇迹材料”。文章从三个维度展开：在个体层面，AI 将知识工作者从“自行车”时代推向“汽车”时代，但需解决语境碎片化和可
+
+
 - **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
   > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
+
+
+- **[2026-01-29-Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)**
+  > 📌 一句话摘要 Moltbot（原 Clawdbot）作者 Peter Steinberger 详述了该项目的爆火历程、开发理念及未来规划，并指出 MiniMax M2.1 是目前最优秀的开源模型。 📝 详细摘要 本文是对爆火 AI 智能体项目 Moltbot（原名 Clawdbot）作者 Peter Steinberger 的深度访谈综述。Peter 分享了他从“退休摆烂”到被 Claude
 
 
 - **[2026-01-28-7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)**
@@ -340,6 +348,9 @@
 
 
 - **[2026-01-28-马斯克的“太空光伏梦”，离不开中国供应链](https://www.bestblogs.dev/article/67c820be)**
+
+
+- **[2026-01-28-帮助-AI-智能体使用-API-的两种方法（以及为什么你需要两者兼顾）](https://www.bestblogs.dev/article/c112be3e)**
 
 
 - **[2026-01-27-从零开始构建流水线并行](https://www.bestblogs.dev/article/95c6f2de)**

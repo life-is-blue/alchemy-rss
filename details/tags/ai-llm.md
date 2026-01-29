@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 13:14:46。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 14:11:35。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -38,6 +38,10 @@
 
 - **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
   > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
+
+
+- **[2026-01-29-Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)**
+  > 📌 一句话摘要 Moltbot（原 Clawdbot）作者 Peter Steinberger 详述了该项目的爆火历程、开发理念及未来规划，并指出 MiniMax M2.1 是目前最优秀的开源模型。 📝 详细摘要 本文是对爆火 AI 智能体项目 Moltbot（原名 Clawdbot）作者 Peter Steinberger 的深度访谈综述。Peter 分享了他从“退休摆烂”到被 Claude
 
 
 - **[2026-01-28-AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)**
@@ -143,6 +147,9 @@
 
 
 - **[2026-01-28-ACP-智能体注册表正式上线：在-JetBrains-IDE-中发现并连接-AI-编程智能体-|-JetBrains-AI-博客](https://www.bestblogs.dev/article/b1681683)**
+
+
+- **[2026-01-28-帮助-AI-智能体使用-API-的两种方法（以及为什么你需要两者兼顾）](https://www.bestblogs.dev/article/c112be3e)**
 
 
 - **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**
