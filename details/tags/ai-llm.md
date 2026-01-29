@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 06:07:53。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 08:23:20。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -7,156 +7,156 @@
 
 
 
-- **[2026-01-29-DeepAgents-的上下文管理](https://www.bestblogs.dev/article/2a3e3f6e)**
-
-
-- **[2026-01-29-最强开源模型易主？Kimi-发布-k2.5-用-Agent-集群解决长文本+视觉生成](https://www.bestblogs.dev/article/a2a89b98)**
+- **[2026-01-29-即将到来的-AI-for-Science-大爆发](https://www.bestblogs.dev/article/45e86e06)**
+  > 📌 一句话摘要 本文宣布推出全新的“AI for Science”播客，同时强调了前沿 AI 实验室和风险投资正大规模转向生物、材料和数学领域的科学发现自动化。 📝 详细摘要 本文是“AI for Science”运动的宣言，认为将 AI 工程应用于硬科学是本世纪最重要的使命。文章指出，业内人士的兴奋与公众认知之间存在巨大鸿沟。OpenAI、Anthropic 和 DeepMind 等顶级 A
 
 
 - **[2026-01-29-想用-Clawdbot-何必抢-Mac-mini，手把手教你打造最强本地-Agent，立省-200-美元-|-附保姆级教程](https://www.bestblogs.dev/article/cb92a480)**
 
 
-- **[2026-01-29-即将到来的-AI-for-Science-大爆发](https://www.bestblogs.dev/article/45e86e06)**
-  > 📌 一句话摘要 本文宣布推出全新的“AI for Science”播客，同时强调了前沿 AI 实验室和风险投资正大规模转向生物、材料和数学领域的科学发现自动化。 📝 详细摘要 本文是“AI for Science”运动的宣言，认为将 AI 工程应用于硬科学是本世纪最重要的使命。文章指出，业内人士的兴奋与公众认知之间存在巨大鸿沟。OpenAI、Anthropic 和 DeepMind 等顶级 A
+- **[2026-01-29-最强开源模型易主？Kimi-发布-k2.5-用-Agent-集群解决长文本+视觉生成](https://www.bestblogs.dev/article/a2a89b98)**
 
 
-- **[2026-01-28-ACP-智能体注册表正式上线：在-JetBrains-IDE-中发现并连接-AI-编程智能体-|-JetBrains-AI-博客](https://www.bestblogs.dev/article/b1681683)**
-
-
-- **[2026-01-28-AAAI-2026｜基于思维链与强化学习的可解释多模态广告审核护栏](https://www.bestblogs.dev/article/526a4791)**
-
-
-- **[2026-01-28-LiteRT：端侧-AI-的通用框架](https://www.bestblogs.dev/article/78c163ff)**
-
-
-- **[2026-01-28-Spring-AI-支持-Anthropic-智能体技能](https://www.bestblogs.dev/article/46e8912e)**
-
-
-- **[2026-01-28-Sam-Altman-与开发者的一小时：GPT-5-的坦白、招聘放缓、以及-2026-年最担心的事](https://www.bestblogs.dev/article/6678e1d0)**
-
-
-- **[2026-01-28-Claude-Code-浏览器自动化方案，怎么选？](https://www.bestblogs.dev/article/67cf1d54)**
-
-
-- **[2026-01-28-如何使用-Next.js、Supabase-和-OpenAI-构建-AI-驱动的-RAG-搜索应用](https://www.bestblogs.dev/article/f667a232)**
-
-
-- **[2026-01-28-聊天框装不下的野心，被百度文心-APP-塞进了-AI-群聊里](https://www.bestblogs.dev/article/ff5db01c)**
-
-
-- **[2026-01-28-Nemotron-Personas-Singapore：为主权-AI-共同设计的合成数据](https://www.bestblogs.dev/article/40d242e6)**
-
-
-- **[2026-01-28-模型训练篇｜多阶段-ToolRL-打造更可靠的-AI-导购助手](https://www.bestblogs.dev/article/a90e7ea1)**
-
-
-- **[2026-01-28-Nemotron-Personas-Brazil：为主权-AI-共同设计的协作数据](https://www.bestblogs.dev/article/8456a657)**
-
-
-- **[2026-01-28-【第-3649-期】把-AI-当同事用：Rules、Commands、Skills-的清晰分工](https://www.bestblogs.dev/article/15a83d06)**
-
-
-- **[2026-01-28-Reddit-创始人豪掷-840-万美元，这家-AI-翻译公司凭什么让硅谷大佬疯抢？](https://www.bestblogs.dev/article/ba1f1ccb)**
-
-
-- **[2026-01-28-一夜爆火，Clawdbot-是否才是真正的-AI-入口产品？](https://www.bestblogs.dev/article/bbc0265c)**
-
-
-- **[2026-01-28-OpenAI-的最强对手，离「AI-Windows」又近了一步](https://www.bestblogs.dev/article/5c3f5dd4)**
-
-
-- **[2026-01-28-AI-加入群聊这事，可能还是得腾讯来做](https://www.bestblogs.dev/article/0d9762db)**
-
-
-- **[2026-01-28-告别固定扫描：DeepSeek-OCR-2-用“视觉因果流”，重构多模态阅读方式](https://www.bestblogs.dev/article/f4a28982)**
-
-
-- **[2026-01-28-速递｜高通-800-万美元投资-AI-合同审阅平台-SpotDraft，可完全离线处理数据，半年内估值翻倍](https://www.bestblogs.dev/article/83dc59bf)**
-
-
-- **[2026-01-28-奥特曼：OpenAI-会持续招程序员，内部已实现近乎无限运行智能体；幼儿园应远离-AI；曝内部两条模型优化曲线；已准备好让-AI-看遍自己网上生活](https://www.bestblogs.dev/article/7c822872)**
-
-
-- **[2026-01-28-AAAI-2026-Oral-|-SplatSSC：解耦深度引导的高斯泼溅，开启单目语义场景补全高效新范式](https://www.bestblogs.dev/article/ac1a48d9)**
-
-
-- **[2026-01-28-AINews-Moonshot-Kimi-K2.5-发布---成本减半性能超越-Sonnet-3.5，SOTA-开源模型，首个原生图像+视频支持，100-并行智能体集群管理](https://www.bestblogs.dev/article/8d8374ed)**
-
-
-- **[2026-01-28-DeepSeek-开源全新-OCR-模型！弃用-CLIP-改用-Qwen-轻量小模型，性能媲美-Gemini-3-Pro](https://www.bestblogs.dev/article/2c9d8b3e)**
-
-
-- **[2026-01-28-AI-Agent-是长期运行的“风险系统”，如果你还只在防-Prompt-Injection，说明已经落后一代了](https://www.bestblogs.dev/article/9dd7d863)**
-
-
-- **[2026-01-28-Kimi-玩了把大的，Agent-团战的时代要来了。](https://www.bestblogs.dev/article/49c17d0b)**
-
-
-- **[2026-01-28-BAI、高瓴领投，ThetaWave-李文轩：我们想成为下一代年轻人默认的知识获取入口](https://www.bestblogs.dev/article/776196d9)**
-
-
-- **[2026-01-28-黄仁勋预言落地，物理-AI-开年第一枪竟是中国公司打响](https://www.bestblogs.dev/article/b14e5d74)**
-
-
-- **[2026-01-28-早报｜OpenAI-推出科研写作工具-Prism/Kimi-推出最强开源-Agent-模型/AI-承诺内容有误赔-10-万，首例-AI-幻觉案宣判](https://www.bestblogs.dev/article/2c91e197)**
-
-
-- **[2026-01-28-Agentic-Coding-场景下基于职责分离的上下文管理思路分享](https://www.bestblogs.dev/article/15dd211f)**
-
-
-- **[2026-01-28-曦望，死磕-AI-推理成本｜甲子光年](https://www.bestblogs.dev/article/90c837be)**
-
-
-- **[2026-01-28-奥特曼亲口承认-GPT-5.2-搞砸了，这是-OpenAI-CEO-最特别的一次直播](https://www.bestblogs.dev/article/5571aca4)**
-
-
-- **[2026-01-28-64-笔超-1-亿美元融资！从这-16-家“新晋-AI-顶流”，看懂硅谷的新逻辑](https://www.bestblogs.dev/article/0a923eb7)**
-
-
-- **[2026-01-28-DeepSeek-今年的两个重大更新，一篇详细的总结来了！](https://www.bestblogs.dev/article/26c0433a)**
-
-
-- **[2026-01-28-AI-编程智能体引入-Bug-和事故是不可避免的吗？](https://www.bestblogs.dev/article/57f11ad8)**
+- **[2026-01-29-DeepAgents-的上下文管理](https://www.bestblogs.dev/article/2a3e3f6e)**
 
 
 - **[2026-01-28-vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)**
   > 📌 一句话摘要 本文详细介绍了 vivo 在大规模 GPU 容器集群与 AI 训练平台方面的实践，重点涵盖稳定性建设、GPU 虚拟化、弹性扩缩容及训推潮汐部署等降本提效方案。 📝 详细摘要 文章系统性地分享了 vivo 构建高效 GPU 算力底座的经验。在容器平台层，针对大规模集群核心组件（Apiserver， etcd， CoreDNS）进行架构优化，并通过自动化运维与故障演练实现 99.9
 
 
-- **[2026-01-27-豆包、ChatGPT、Gemini-同台-PK，谁才是博物馆最强逛展搭子？](https://www.bestblogs.dev/article/54d6ec79)**
+- **[2026-01-28-AI-编程智能体引入-Bug-和事故是不可避免的吗？](https://www.bestblogs.dev/article/57f11ad8)**
 
 
-- **[2026-01-27-红杉对话-LangChain-创始人：2026-年-AI-告别对话框，步入-Long-Horizon-Agents-元年](https://www.bestblogs.dev/article/cd1452bf)**
+- **[2026-01-28-DeepSeek-今年的两个重大更新，一篇详细的总结来了！](https://www.bestblogs.dev/article/26c0433a)**
 
 
-- **[2026-01-27-分享一下我的技术转型之路从纯前端到-AI-全栈-😍😍😍](https://www.bestblogs.dev/article/bf02c7cd)**
+- **[2026-01-28-64-笔超-1-亿美元融资！从这-16-家“新晋-AI-顶流”，看懂硅谷的新逻辑](https://www.bestblogs.dev/article/0a923eb7)**
 
 
-- **[2026-01-27-AGENTS.md-在我们的智能体评估中表现优于-Skills---Vercel](https://www.bestblogs.dev/article/91ef04c0)**
+- **[2026-01-28-奥特曼亲口承认-GPT-5.2-搞砸了，这是-OpenAI-CEO-最特别的一次直播](https://www.bestblogs.dev/article/5571aca4)**
 
 
-- **[2026-01-27-DeepSeek-又又又又发新论文了！这一次，他们重构了-AI-看图的方式](https://www.bestblogs.dev/article/73837957)**
+- **[2026-01-28-曦望，死磕-AI-推理成本｜甲子光年](https://www.bestblogs.dev/article/90c837be)**
 
 
-- **[2026-01-27-元宝派、文心、UC…为什么-BAT-都急着给-AI-拉群？｜甲子光年](https://www.bestblogs.dev/article/8f7a84d8)**
+- **[2026-01-28-Agentic-Coding-场景下基于职责分离的上下文管理思路分享](https://www.bestblogs.dev/article/15dd211f)**
 
 
-- **[2026-01-27-模型之外，AI-正在打开的新机会丨-a16z](https://www.bestblogs.dev/article/b15e4d66)**
+- **[2026-01-28-早报｜OpenAI-推出科研写作工具-Prism/Kimi-推出最强开源-Agent-模型/AI-承诺内容有误赔-10-万，首例-AI-幻觉案宣判](https://www.bestblogs.dev/article/2c91e197)**
 
 
-- **[2026-01-27-8B-端侧写作智能体-AgentCPM-Report-开源，DeepResearch-终于本地化](https://www.bestblogs.dev/article/b93eee00)**
+- **[2026-01-28-黄仁勋预言落地，物理-AI-开年第一枪竟是中国公司打响](https://www.bestblogs.dev/article/b14e5d74)**
 
 
-- **[2026-01-27-数据土壤，决胜-AI-下半场：一场关于企业-Data+AI-战略的炉边思辨](https://www.bestblogs.dev/article/e3a4da62)**
+- **[2026-01-28-BAI、高瓴领投，ThetaWave-李文轩：我们想成为下一代年轻人默认的知识获取入口](https://www.bestblogs.dev/article/776196d9)**
 
 
-- **[2026-01-27-AI-驱动的智能异常处置：从异常发现到根因定位](https://www.bestblogs.dev/article/0ad02ff3)**
+- **[2026-01-28-Kimi-玩了把大的，Agent-团战的时代要来了。](https://www.bestblogs.dev/article/49c17d0b)**
+
+
+- **[2026-01-28-AI-Agent-是长期运行的“风险系统”，如果你还只在防-Prompt-Injection，说明已经落后一代了](https://www.bestblogs.dev/article/9dd7d863)**
+
+
+- **[2026-01-28-DeepSeek-开源全新-OCR-模型！弃用-CLIP-改用-Qwen-轻量小模型，性能媲美-Gemini-3-Pro](https://www.bestblogs.dev/article/2c9d8b3e)**
+
+
+- **[2026-01-28-AINews-Moonshot-Kimi-K2.5-发布---成本减半性能超越-Sonnet-3.5，SOTA-开源模型，首个原生图像+视频支持，100-并行智能体集群管理](https://www.bestblogs.dev/article/8d8374ed)**
+
+
+- **[2026-01-28-AAAI-2026-Oral-|-SplatSSC：解耦深度引导的高斯泼溅，开启单目语义场景补全高效新范式](https://www.bestblogs.dev/article/ac1a48d9)**
+
+
+- **[2026-01-28-奥特曼：OpenAI-会持续招程序员，内部已实现近乎无限运行智能体；幼儿园应远离-AI；曝内部两条模型优化曲线；已准备好让-AI-看遍自己网上生活](https://www.bestblogs.dev/article/7c822872)**
+
+
+- **[2026-01-28-速递｜高通-800-万美元投资-AI-合同审阅平台-SpotDraft，可完全离线处理数据，半年内估值翻倍](https://www.bestblogs.dev/article/83dc59bf)**
+
+
+- **[2026-01-28-告别固定扫描：DeepSeek-OCR-2-用“视觉因果流”，重构多模态阅读方式](https://www.bestblogs.dev/article/f4a28982)**
+
+
+- **[2026-01-28-AI-加入群聊这事，可能还是得腾讯来做](https://www.bestblogs.dev/article/0d9762db)**
+
+
+- **[2026-01-28-OpenAI-的最强对手，离「AI-Windows」又近了一步](https://www.bestblogs.dev/article/5c3f5dd4)**
+
+
+- **[2026-01-28-一夜爆火，Clawdbot-是否才是真正的-AI-入口产品？](https://www.bestblogs.dev/article/bbc0265c)**
+
+
+- **[2026-01-28-Reddit-创始人豪掷-840-万美元，这家-AI-翻译公司凭什么让硅谷大佬疯抢？](https://www.bestblogs.dev/article/ba1f1ccb)**
+
+
+- **[2026-01-28-【第-3649-期】把-AI-当同事用：Rules、Commands、Skills-的清晰分工](https://www.bestblogs.dev/article/15a83d06)**
+
+
+- **[2026-01-28-Nemotron-Personas-Brazil：为主权-AI-共同设计的协作数据](https://www.bestblogs.dev/article/8456a657)**
+
+
+- **[2026-01-28-模型训练篇｜多阶段-ToolRL-打造更可靠的-AI-导购助手](https://www.bestblogs.dev/article/a90e7ea1)**
+
+
+- **[2026-01-28-Nemotron-Personas-Singapore：为主权-AI-共同设计的合成数据](https://www.bestblogs.dev/article/40d242e6)**
+
+
+- **[2026-01-28-聊天框装不下的野心，被百度文心-APP-塞进了-AI-群聊里](https://www.bestblogs.dev/article/ff5db01c)**
+
+
+- **[2026-01-28-如何使用-Next.js、Supabase-和-OpenAI-构建-AI-驱动的-RAG-搜索应用](https://www.bestblogs.dev/article/f667a232)**
+
+
+- **[2026-01-28-Claude-Code-浏览器自动化方案，怎么选？](https://www.bestblogs.dev/article/67cf1d54)**
+
+
+- **[2026-01-28-Sam-Altman-与开发者的一小时：GPT-5-的坦白、招聘放缓、以及-2026-年最担心的事](https://www.bestblogs.dev/article/6678e1d0)**
+
+
+- **[2026-01-28-Spring-AI-支持-Anthropic-智能体技能](https://www.bestblogs.dev/article/46e8912e)**
+
+
+- **[2026-01-28-LiteRT：端侧-AI-的通用框架](https://www.bestblogs.dev/article/78c163ff)**
+
+
+- **[2026-01-28-AAAI-2026｜基于思维链与强化学习的可解释多模态广告审核护栏](https://www.bestblogs.dev/article/526a4791)**
+
+
+- **[2026-01-28-ACP-智能体注册表正式上线：在-JetBrains-IDE-中发现并连接-AI-编程智能体-|-JetBrains-AI-博客](https://www.bestblogs.dev/article/b1681683)**
+
+
+- **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**
 
 
 - **[2026-01-27-前端同事看走眼了，这个“游戏网页”其实全是-AI-写的!](https://www.bestblogs.dev/article/58740dae)**
 
 
-- **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**
+- **[2026-01-27-AI-驱动的智能异常处置：从异常发现到根因定位](https://www.bestblogs.dev/article/0ad02ff3)**
+
+
+- **[2026-01-27-数据土壤，决胜-AI-下半场：一场关于企业-Data+AI-战略的炉边思辨](https://www.bestblogs.dev/article/e3a4da62)**
+
+
+- **[2026-01-27-8B-端侧写作智能体-AgentCPM-Report-开源，DeepResearch-终于本地化](https://www.bestblogs.dev/article/b93eee00)**
+
+
+- **[2026-01-27-模型之外，AI-正在打开的新机会丨-a16z](https://www.bestblogs.dev/article/b15e4d66)**
+
+
+- **[2026-01-27-元宝派、文心、UC…为什么-BAT-都急着给-AI-拉群？｜甲子光年](https://www.bestblogs.dev/article/8f7a84d8)**
+
+
+- **[2026-01-27-DeepSeek-又又又又发新论文了！这一次，他们重构了-AI-看图的方式](https://www.bestblogs.dev/article/73837957)**
+
+
+- **[2026-01-27-AGENTS.md-在我们的智能体评估中表现优于-Skills---Vercel](https://www.bestblogs.dev/article/91ef04c0)**
+
+
+- **[2026-01-27-分享一下我的技术转型之路从纯前端到-AI-全栈-😍😍😍](https://www.bestblogs.dev/article/bf02c7cd)**
+
+
+- **[2026-01-27-红杉对话-LangChain-创始人：2026-年-AI-告别对话框，步入-Long-Horizon-Agents-元年](https://www.bestblogs.dev/article/cd1452bf)**
+
+
+- **[2026-01-27-豆包、ChatGPT、Gemini-同台-PK，谁才是博物馆最强逛展搭子？](https://www.bestblogs.dev/article/54d6ec79)**
 
 
 - **[2026-01-28-面对危机星球，我们需要精神智慧-|-Tariq-Al-Olaimy](https://www.bestblogs.dev/video/dcf7fad)**
