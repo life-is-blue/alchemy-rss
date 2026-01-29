@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 20:06:08。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 22:13:36。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 其他
 
@@ -377,6 +377,10 @@
   > 📌 一句话摘要 传奇开发者 Peter Steinberger 分享如何利用 AI Agent 重塑软件工程，实现从“读代码”向“架构设计”与“闭环验证”的范式转移。 📝 详细摘要 本期播客对话了 PSPDFKit 创始人 Peter Steinberger。他分享了从传统软件工程向 AI 辅助开发转型的深刻洞察。核心观点在于：在 AI 时代，开发者应从繁琐的业务代码编写中解放，转而关注系统架
 
 
+- **[2026-01-29-#409.Facebook-前副总裁-Julie-Zhuo：以创造自信构建产品](https://www.bestblogs.dev/podcast/7bba223)**
+  > 📌 一句话摘要 前 Facebook 副总裁 Julie Zhuo 分享了以“定义痛点、验证问题、设定成功”为核心的产品思考框架。 📝 详细摘要 本期播客由前 Facebook 产品设计副总裁 Julie Zhuo 主讲，深度剖析了她在硅谷多年积累的产品实战心法。朱莉指出，许多产品的失败源于团队过度迷恋“绝妙主意”而非真实问题。她提出了一套简洁的三个问题框架：首先，明确我们要解决什么人的、什么
+
+
 - **[2026-01-28-#407.拆解华为算力真相与中芯困局：前白宫官员深度复盘芯片出口管制的“流言与事实”](https://www.bestblogs.dev/podcast/13251d4)**
 
 
@@ -652,6 +656,30 @@
   > 📌 一句话摘要 作者详细介绍了其开源“视频包装 Skills”的工作原理，该系统通过智能分析字幕生成配置，利用浏览器逐帧渲染特效图层，最终合成视频。 📝 详细摘要 这条推文是作者对其前一天开源项目“视频包装 Skills”的技术原理进行深度解析。系统工作流程为：输入视频和字幕后，首先通过 `content_analyzer.py` 智能分析字幕内容（识别人物、金句、数据等），生成特效建议并形成
 
 
+- **[2026-01-29-当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)**
+  > 📌 一句话摘要 Notion CEO Ivan Zhao 通过钢铁与蒸汽机的历史隐喻，阐述了人工智能将如何作为“无限智能”重塑个体效率、组织架构及知识经济形态。 📝 详细摘要 本文由 Notion 创始人 Ivan Zhao 撰写，核心观点认为 AI 是继钢铁和蒸汽之后的新型“奇迹材料”。文章从三个维度展开：在个体层面，AI 将知识工作者从“自行车”时代推向“汽车”时代，但需解决语境碎片化和可
+
+
+- **[2026-01-29-AlphaGenome-在全球实现超过-100-万次-API-调用](https://www.bestblogs.dev/status/2016745374430703765)**
+  > 📌 一句话摘要 桑达尔·皮查伊强调了谷歌 AlphaGenome AI 在全球范围内的快速普及：其 API 调用量已突破 100 万次，覆盖 160 个国家，旨在助力加速科学发现。 📝 详细摘要 这条来自谷歌和 Alphabet 首席执行官桑达尔·皮查伊的推文宣布了 AlphaGenome AI 项目的一个重要里程碑。他表达了对这项工作的自豪，透露该 API 已经收到来自 160 个国家的研究
+
+
+- **[2026-01-29-Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)**
+  > 📌 一句话摘要 Google DeepMind 推出了 ATLAS，这是一套针对多语言语言模型的缩放法则，正式定义了 400 多种语言中模型规模、数据量和语言混合之间的相互作用。 📝 详细摘要 Google DeepMind 的研究人员开发了 ATLAS，这是一个为多语言语言模型建立实用缩放法则的框架。与专注于纯英语环境的传统缩放法则不同，ATLAS 利用 774 次受控训练运行（10M 到
+
+
+- **[2026-01-29-AlphaGenome：Google-DeepMind-最新基因组学模型荣登《自然》杂志](https://www.bestblogs.dev/status/2016763919646478403)**
+  > 📌 一句话摘要 Demis Hassabis 宣布 Google DeepMind 研发的最先进基因组学模型 AlphaGenome 在《自然》杂志发表，并向学术界开放了模型权重。 📝 详细摘要 Google DeepMind 首席执行官 Demis Hassabis 宣布，其团队研发的最新基因组学模型 AlphaGenome 已在顶级期刊《自然》(Nature) 上发表。该模型的一大亮点是向
+
+
+- **[2026-01-29-#408.Clawd-的创造者："我发布我不读的代码"](https://www.bestblogs.dev/podcast/6d275ea)**
+  > 📌 一句话摘要 传奇开发者 Peter Steinberger 分享如何利用 AI Agent 重塑软件工程，实现从“读代码”向“架构设计”与“闭环验证”的范式转移。 📝 详细摘要 本期播客对话了 PSPDFKit 创始人 Peter Steinberger。他分享了从传统软件工程向 AI 辅助开发转型的深刻洞察。核心观点在于：在 AI 时代，开发者应从繁琐的业务代码编写中解放，转而关注系统架
+
+
+- **[2026-01-29-Clawdbot-安装报错及“command-not-found”解决方法](https://www.bestblogs.dev/status/2016765106466746859)**
+  > 📌 一句话摘要 针对 Clawdbot 安装过程中出现的 moltbot 命令未找到报错，提供了更新安装包的具体解决指令。 📝 详细摘要 傅盛针对用户在安装 Clawdbot 时遇到的 `zsh: command not found: moltbot` 报错给出了技术指导。该问题主要是由于新旧版本安装包更名（从 moltbot 变为 clawdbot）导致的。推文提供了完整的卸载旧版、安装最新
+
+
 - **[2026-01-29-早报｜曝苹果希望-iPhone-18「尽可能不涨价」/首款中国车型小米-SU7-Ultra-加入《GT-赛车》/Clawdbot-被迫改名，卷入千万美元诈骗](https://www.bestblogs.dev/article/ed30b40c)**
   > 📌 一句话摘要 爱范儿早报汇总了 iPhone 18 定价策略、Moltbot 安全风波、小米 SU7 Ultra 入驻《GT 赛车》及具身智能机器人最新进展等科技资讯。 📝 详细摘要 本篇早报涵盖了科技与商业领域的多个热点。硬件方面，郭明錤透露苹果 iPhone 18 将采取不涨价策略以应对内存成本上涨并抢占市场；小米智能眼镜支持语音缴纳停车费。AI 领域，开源 Agent 项目 Moltb
 
@@ -793,15 +821,6 @@
 
 
 - **[2026-01-28-徕卡-10-亿欧元卖身，为什么小米一定不能买？](https://www.bestblogs.dev/article/9f6fa850)**
-
-
-- **[2026-01-28-从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://www.bestblogs.dev/article/74ca2b2c)**
-
-
-- **[2026-01-28-马斯克的“太空光伏梦”，离不开中国供应链](https://www.bestblogs.dev/article/67c820be)**
-
-
-- **[2026-01-28-Clawdbot-爆火以后，这条硬件赛道成了最大受益者](https://www.bestblogs.dev/article/4a388035)**
 
 
 - **[2026-01-28-算力通胀终结者！凭一招把大模型-Token-成本砍到-1/2](https://www.bestblogs.dev/article/efb5ee31)**
@@ -947,6 +966,30 @@
   > 📌 一句话摘要 作者详细介绍了其开源“视频包装 Skills”的工作原理，该系统通过智能分析字幕生成配置，利用浏览器逐帧渲染特效图层，最终合成视频。 📝 详细摘要 这条推文是作者对其前一天开源项目“视频包装 Skills”的技术原理进行深度解析。系统工作流程为：输入视频和字幕后，首先通过 `content_analyzer.py` 智能分析字幕内容（识别人物、金句、数据等），生成特效建议并形成
 
 
+- **[2026-01-29-当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)**
+  > 📌 一句话摘要 Notion CEO Ivan Zhao 通过钢铁与蒸汽机的历史隐喻，阐述了人工智能将如何作为“无限智能”重塑个体效率、组织架构及知识经济形态。 📝 详细摘要 本文由 Notion 创始人 Ivan Zhao 撰写，核心观点认为 AI 是继钢铁和蒸汽之后的新型“奇迹材料”。文章从三个维度展开：在个体层面，AI 将知识工作者从“自行车”时代推向“汽车”时代，但需解决语境碎片化和可
+
+
+- **[2026-01-29-AlphaGenome-在全球实现超过-100-万次-API-调用](https://www.bestblogs.dev/status/2016745374430703765)**
+  > 📌 一句话摘要 桑达尔·皮查伊强调了谷歌 AlphaGenome AI 在全球范围内的快速普及：其 API 调用量已突破 100 万次，覆盖 160 个国家，旨在助力加速科学发现。 📝 详细摘要 这条来自谷歌和 Alphabet 首席执行官桑达尔·皮查伊的推文宣布了 AlphaGenome AI 项目的一个重要里程碑。他表达了对这项工作的自豪，透露该 API 已经收到来自 160 个国家的研究
+
+
+- **[2026-01-29-Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)**
+  > 📌 一句话摘要 Google DeepMind 推出了 ATLAS，这是一套针对多语言语言模型的缩放法则，正式定义了 400 多种语言中模型规模、数据量和语言混合之间的相互作用。 📝 详细摘要 Google DeepMind 的研究人员开发了 ATLAS，这是一个为多语言语言模型建立实用缩放法则的框架。与专注于纯英语环境的传统缩放法则不同，ATLAS 利用 774 次受控训练运行（10M 到
+
+
+- **[2026-01-29-AlphaGenome：Google-DeepMind-最新基因组学模型荣登《自然》杂志](https://www.bestblogs.dev/status/2016763919646478403)**
+  > 📌 一句话摘要 Demis Hassabis 宣布 Google DeepMind 研发的最先进基因组学模型 AlphaGenome 在《自然》杂志发表，并向学术界开放了模型权重。 📝 详细摘要 Google DeepMind 首席执行官 Demis Hassabis 宣布，其团队研发的最新基因组学模型 AlphaGenome 已在顶级期刊《自然》(Nature) 上发表。该模型的一大亮点是向
+
+
+- **[2026-01-29-#408.Clawd-的创造者："我发布我不读的代码"](https://www.bestblogs.dev/podcast/6d275ea)**
+  > 📌 一句话摘要 传奇开发者 Peter Steinberger 分享如何利用 AI Agent 重塑软件工程，实现从“读代码”向“架构设计”与“闭环验证”的范式转移。 📝 详细摘要 本期播客对话了 PSPDFKit 创始人 Peter Steinberger。他分享了从传统软件工程向 AI 辅助开发转型的深刻洞察。核心观点在于：在 AI 时代，开发者应从繁琐的业务代码编写中解放，转而关注系统架
+
+
+- **[2026-01-29-Clawdbot-安装报错及“command-not-found”解决方法](https://www.bestblogs.dev/status/2016765106466746859)**
+  > 📌 一句话摘要 针对 Clawdbot 安装过程中出现的 moltbot 命令未找到报错，提供了更新安装包的具体解决指令。 📝 详细摘要 傅盛针对用户在安装 Clawdbot 时遇到的 `zsh: command not found: moltbot` 报错给出了技术指导。该问题主要是由于新旧版本安装包更名（从 moltbot 变为 clawdbot）导致的。推文提供了完整的卸载旧版、安装最新
+
+
 - **[2026-01-29-早报｜曝苹果希望-iPhone-18「尽可能不涨价」/首款中国车型小米-SU7-Ultra-加入《GT-赛车》/Clawdbot-被迫改名，卷入千万美元诈骗](https://www.bestblogs.dev/article/ed30b40c)**
   > 📌 一句话摘要 爱范儿早报汇总了 iPhone 18 定价策略、Moltbot 安全风波、小米 SU7 Ultra 入驻《GT 赛车》及具身智能机器人最新进展等科技资讯。 📝 详细摘要 本篇早报涵盖了科技与商业领域的多个热点。硬件方面，郭明錤透露苹果 iPhone 18 将采取不涨价策略以应对内存成本上涨并抢占市场；小米智能眼镜支持语音缴纳停车费。AI 领域，开源 Agent 项目 Moltb
 
@@ -1088,15 +1131,6 @@
 
 
 - **[2026-01-28-徕卡-10-亿欧元卖身，为什么小米一定不能买？](https://www.bestblogs.dev/article/9f6fa850)**
-
-
-- **[2026-01-28-从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://www.bestblogs.dev/article/74ca2b2c)**
-
-
-- **[2026-01-28-马斯克的“太空光伏梦”，离不开中国供应链](https://www.bestblogs.dev/article/67c820be)**
-
-
-- **[2026-01-28-Clawdbot-爆火以后，这条硬件赛道成了最大受益者](https://www.bestblogs.dev/article/4a388035)**
 
 
 - **[2026-01-28-算力通胀终结者！凭一招把大模型-Token-成本砍到-1/2](https://www.bestblogs.dev/article/efb5ee31)**

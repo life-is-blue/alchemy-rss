@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 20:06:08。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 22:13:36。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 深度播客 (Podcasts)
 
@@ -11,6 +11,10 @@
 
 - **[2026-01-29-#408.Clawd-的创造者："我发布我不读的代码"](https://www.bestblogs.dev/podcast/6d275ea)**
   > 📌 一句话摘要 传奇开发者 Peter Steinberger 分享如何利用 AI Agent 重塑软件工程，实现从“读代码”向“架构设计”与“闭环验证”的范式转移。 📝 详细摘要 本期播客对话了 PSPDFKit 创始人 Peter Steinberger。他分享了从传统软件工程向 AI 辅助开发转型的深刻洞察。核心观点在于：在 AI 时代，开发者应从繁琐的业务代码编写中解放，转而关注系统架
+
+
+- **[2026-01-29-#409.Facebook-前副总裁-Julie-Zhuo：以创造自信构建产品](https://www.bestblogs.dev/podcast/7bba223)**
+  > 📌 一句话摘要 前 Facebook 副总裁 Julie Zhuo 分享了以“定义痛点、验证问题、设定成功”为核心的产品思考框架。 📝 详细摘要 本期播客由前 Facebook 产品设计副总裁 Julie Zhuo 主讲，深度剖析了她在硅谷多年积累的产品实战心法。朱莉指出，许多产品的失败源于团队过度迷恋“绝妙主意”而非真实问题。她提出了一套简洁的三个问题框架：首先，明确我们要解决什么人的、什么
 
 
 - **[2026-01-28-#408.纯文科生的逆袭：Meta-产品经理如何用-AI-零代码开发赚钱产品](https://www.bestblogs.dev/podcast/0c64be3)**

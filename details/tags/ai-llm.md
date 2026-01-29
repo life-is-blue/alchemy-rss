@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 20:06:08。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 22:13:36。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -548,6 +548,10 @@
   > 📌 一句话摘要 Google 已在全球范围内上线 Gemini 3 模型，用于支持搜索中的 AI 概览功能。 📝 详细摘要 此推文发布了 Google 的一项重大产品更新。据 Google DeepMind 开发者体验负责人 Philipp Schmid 透露，Google 搜索中的 AI 概览功能现已在全球范围内全面接入 Gemini 3 模型。这标志着 Google 核心产品的重大后端升级
 
 
+- **[2026-01-29-NVIDIA-VibeTensor：由-AI-智能体构建的深度学习框架](https://www.bestblogs.dev/status/2016570992039252068)**
+  > 📌 一句话摘要 NVIDIA 研究人员推出了 VibeTensor，这是一个在人类指导下，完全由 LLM 驱动的代码智能体生成的开源深度学习栈。 📝 详细摘要 本研究展示了 VibeTensor，这是一个 PyTorch 风格的深度学习框架，其整个代码库（从高层 Python API 到底层 CUDA 内存管理）均由 AI 智能体生成。该项目产出了超过 63，000 行 C++/CUDA 代码
+
+
 - **[2026-01-29-LlamaIndex-发布-LlamaAgents-Builder：用自然语言构建可部署的智能体工作流](https://www.bestblogs.dev/status/2016574612717580772)**
   > 📌 一句话摘要 LlamaIndex 推出 LlamaAgents Builder，用户只需通过自然语言描述需求，即可自动生成可定制的 Python 文档处理智能体代码。 📝 详细摘要 LlamaIndex 正式发布 LlamaAgents Builder，旨在简化文档处理智能体的开发。该工具填补了僵化的无代码工具与繁琐的手动编码之间的空白：用户只需用自然语言描述任务（如发票分类、简历解析），
 
@@ -642,6 +646,46 @@
 
 - **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
   > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
+
+
+- **[2026-01-29-Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)**
+  > 📌 一句话摘要 Moltbot（原 Clawdbot）作者 Peter Steinberger 详述了该项目的爆火历程、开发理念及未来规划，并指出 MiniMax M2.1 是目前最优秀的开源模型。 📝 详细摘要 本文是对爆火 AI 智能体项目 Moltbot（原名 Clawdbot）作者 Peter Steinberger 的深度访谈综述。Peter 分享了他从“退休摆烂”到被 Claude
+
+
+- **[2026-01-29-喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)**
+  > 📌 一句话摘要 a16z 掌门人 Ben Horowitz 探讨了 AI 时代下风投机构的管理哲学、垂直化战略及投资趋势，指出 AI 应用层的复杂性正超越基础设施，并迎来多重赢家时代。 📝 详细摘要 本文编译自 a16z 掌门人 Ben Horowitz 的访谈，深度剖析了顶级风投机构在 AI 浪潮下的管理与投资逻辑。Ben 强调，卓越公司的核心在于鼓励创造性冒险并建立清晰的决策机制。在组织架
+
+
+- **[2026-01-29-微博《2025-热点趋势报告》解读：AI-从科幻到生活，内容价值标准迎来-AI-权重时代](https://www.bestblogs.dev/status/2016752439743877529)**
+  > 📌 一句话摘要 博主解读微博《2025 热点趋势报告》，指出 AI 已从尝鲜工具变为生活刚需，用户信息获取方式转向 AI 智搜，内容价值将面临“人类流量”与“AI 知识图谱权重”的双重评价体系。 📝 详细摘要 这篇推文是对微博《2025 热点趋势报告》的深度解读。博主提炼了三个核心趋势：一、AI 发展从 2023 年的“尝鲜试探期”、2024 年的“伦理焦虑期”进入 2025 年的“落地深耕期
+
+
+- **[2026-01-29-Vercel-实验结论：AGENTS.md-模式在-AI-Coding-Agent-中优于-Skills-模式](https://www.bestblogs.dev/status/2016766349629145128)**
+  > 📌 一句话摘要 Vercel 团队实验证明，为 AI Agent 提供被动的上下文文件（AGENTS.md）比主动调用的工具包（Skills）更稳定且高效，通过率可达 100%。 📝 详细摘要 该推文深度解析了 Vercel 团队关于 AI Coding Agent 获取框架知识的实验。实验对比了两种模式：一是需要 Agent 主动判断并调用的 'Skills' 工具包，二是放置在根目录作为持
+
+
+- **[2026-01-29-AI-动画短片首映圣丹斯电影节：Veo-与-Imagen-的杰作](https://www.bestblogs.dev/status/2016768723152146716)**
+  > 📌 一句话摘要 由皮克斯前员工等 45 人团队利用 Google DeepMind 模型打造的 AI 短片在圣丹斯首映。 📝 详细摘要 推文报道了 AI 在影视行业的重大进展：一部由 45 人专业团队（含皮克斯前员工、奥斯卡得主）制作的 AI 动画短片在圣丹斯电影节首映。该片通过精调 Google DeepMind 的 Veo 和 Imagen 模型完成，展示了生成式 AI 在高端影视制作中的
+
+
+- **[2026-01-29-DeepMind-AI-短片：用电影语言探讨-AI-可控性](https://www.bestblogs.dev/status/2016768734778753086)**
+  > 📌 一句话摘要 Google DeepMind 通过短片《Dear Upstairs Neighbors》展示生成式 AI 的可控性突破。 📝 详细摘要 推文深入探讨了 DeepMind 短片背后的技术意义，即解决生成式 AI 的“可控性问题”。通过电影化的表达方式，展示了专业团队如何克服 AI 创作中的随机性，实现精准的视觉输出控制。 📊 文章信息 AI 评分：86 来源：AI Will(
+
+
+- **[2026-01-29-AI-Agent-自我进化案例：Clawdbot-自主构建语音与功能](https://www.bestblogs.dev/status/2016785679997685843)**
+  > 📌 一句话摘要 转发展示了 AI 助手 Henry 如何在无指令情况下自主编写语音功能并实现夜间自我迭代。 📝 详细摘要 此推文转发了 Alex Finn 关于其 AI 助手 Henry (基于 Clawdbot) 的惊人进展。Henry 能够利用 ChatGPT API 自主编写代码为自己增加语音提醒功能，并能在夜间自主执行任务以优化工作流。这展示了 AI Agent 从“被动工具”向“主动
+
+
+- **[2026-01-29-OpenAI-发布科研利器-Prism：论文写作与协作的新范式](https://www.bestblogs.dev/status/2016837558702133526)**
+  > 📌 一句话摘要 傅盛介绍 OpenAI 推出的免费科研协作工具 Prism，具备深度理解论文逻辑、草图转矢量图及文献管理等核心功能。 📝 详细摘要 推文详细介绍了 OpenAI 最新发布的科研工具 Prism。该工具被形容为 Overleaf 与高级 AI 模型的结合体，能够深度解析论文的公式、参考文献和逻辑结构。其亮点功能包括将手绘草图转换为 TikZ 专业矢量图、自动检索管理引用文献，且支
+
+
+- **[2026-01-29-案例研究：基于-Qdrant-混合搜索的-Kakao-Corp-AI-服务台](https://www.bestblogs.dev/status/2016841848292045064)**
+  > 📌 一句话摘要 Kakao Corp 利用 Qdrant 的混合搜索和 RRF 技术构建了高性能内部 RAG 系统，显著优化了员工支持和技术查询效率。 📝 详细摘要 本推文介绍了 Kakao Corp 构建内部 AI 服务台（Service Desk）的案例。为了处理从概念性问题到特定错误代码的各类复杂查询，该团队利用 Qdrant 的混合搜索功能，将稠密（Dense）与稀疏（Sparse）检
+
+
+- **[2026-01-29-Google-为独立开发者重塑-AI-Pro-和-Ultra-订阅计划](https://www.bestblogs.dev/status/2016852058087829921)**
+  > 📌 一句话摘要 Google 推出了全新的 AI Pro（20 美元/月）和 Ultra（249.99 美元/月）订阅等级，专为独立开发者量身定制，集成了先进的 AI 工具、云积分及智能体功能。 📝 详细摘要 Philipp Schmid 披露了 Google 将其 AI 订阅计划重组为“独立开发者 (Solo Builder)”方案。Pro 计划（20 美元/月）和 Ultra 计划（249
 
 
 - **[2026-01-28-Happycapy：首个面向普通用户的-Claude-Code-开箱即用平台](https://www.bestblogs.dev/status/2016180208265789724)**
@@ -789,9 +833,6 @@
 
 
 - **[2026-01-28-Kimi-K2.5-终结-AI-PPT/DOC-赛道：通用生成能力抽走“呈现层”溢价](https://www.bestblogs.dev/status/2016497048120648158)**
-
-
-- **[2026-01-28-AAAI-2026｜基于思维链与强化学习的可解释多模态广告审核护栏](https://www.bestblogs.dev/article/526a4791)**
 
 
 - **[2026-01-28-vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)**
@@ -840,6 +881,10 @@
   > 📌 一句话摘要 Google 已在全球范围内上线 Gemini 3 模型，用于支持搜索中的 AI 概览功能。 📝 详细摘要 此推文发布了 Google 的一项重大产品更新。据 Google DeepMind 开发者体验负责人 Philipp Schmid 透露，Google 搜索中的 AI 概览功能现已在全球范围内全面接入 Gemini 3 模型。这标志着 Google 核心产品的重大后端升级
 
 
+- **[2026-01-29-NVIDIA-VibeTensor：由-AI-智能体构建的深度学习框架](https://www.bestblogs.dev/status/2016570992039252068)**
+  > 📌 一句话摘要 NVIDIA 研究人员推出了 VibeTensor，这是一个在人类指导下，完全由 LLM 驱动的代码智能体生成的开源深度学习栈。 📝 详细摘要 本研究展示了 VibeTensor，这是一个 PyTorch 风格的深度学习框架，其整个代码库（从高层 Python API 到底层 CUDA 内存管理）均由 AI 智能体生成。该项目产出了超过 63，000 行 C++/CUDA 代码
+
+
 - **[2026-01-29-LlamaIndex-发布-LlamaAgents-Builder：用自然语言构建可部署的智能体工作流](https://www.bestblogs.dev/status/2016574612717580772)**
   > 📌 一句话摘要 LlamaIndex 推出 LlamaAgents Builder，用户只需通过自然语言描述需求，即可自动生成可定制的 Python 文档处理智能体代码。 📝 详细摘要 LlamaIndex 正式发布 LlamaAgents Builder，旨在简化文档处理智能体的开发。该工具填补了僵化的无代码工具与繁琐的手动编码之间的空白：用户只需用自然语言描述任务（如发票分类、简历解析），
 
@@ -934,6 +979,46 @@
 
 - **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
   > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
+
+
+- **[2026-01-29-Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)**
+  > 📌 一句话摘要 Moltbot（原 Clawdbot）作者 Peter Steinberger 详述了该项目的爆火历程、开发理念及未来规划，并指出 MiniMax M2.1 是目前最优秀的开源模型。 📝 详细摘要 本文是对爆火 AI 智能体项目 Moltbot（原名 Clawdbot）作者 Peter Steinberger 的深度访谈综述。Peter 分享了他从“退休摆烂”到被 Claude
+
+
+- **[2026-01-29-喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)**
+  > 📌 一句话摘要 a16z 掌门人 Ben Horowitz 探讨了 AI 时代下风投机构的管理哲学、垂直化战略及投资趋势，指出 AI 应用层的复杂性正超越基础设施，并迎来多重赢家时代。 📝 详细摘要 本文编译自 a16z 掌门人 Ben Horowitz 的访谈，深度剖析了顶级风投机构在 AI 浪潮下的管理与投资逻辑。Ben 强调，卓越公司的核心在于鼓励创造性冒险并建立清晰的决策机制。在组织架
+
+
+- **[2026-01-29-微博《2025-热点趋势报告》解读：AI-从科幻到生活，内容价值标准迎来-AI-权重时代](https://www.bestblogs.dev/status/2016752439743877529)**
+  > 📌 一句话摘要 博主解读微博《2025 热点趋势报告》，指出 AI 已从尝鲜工具变为生活刚需，用户信息获取方式转向 AI 智搜，内容价值将面临“人类流量”与“AI 知识图谱权重”的双重评价体系。 📝 详细摘要 这篇推文是对微博《2025 热点趋势报告》的深度解读。博主提炼了三个核心趋势：一、AI 发展从 2023 年的“尝鲜试探期”、2024 年的“伦理焦虑期”进入 2025 年的“落地深耕期
+
+
+- **[2026-01-29-Vercel-实验结论：AGENTS.md-模式在-AI-Coding-Agent-中优于-Skills-模式](https://www.bestblogs.dev/status/2016766349629145128)**
+  > 📌 一句话摘要 Vercel 团队实验证明，为 AI Agent 提供被动的上下文文件（AGENTS.md）比主动调用的工具包（Skills）更稳定且高效，通过率可达 100%。 📝 详细摘要 该推文深度解析了 Vercel 团队关于 AI Coding Agent 获取框架知识的实验。实验对比了两种模式：一是需要 Agent 主动判断并调用的 'Skills' 工具包，二是放置在根目录作为持
+
+
+- **[2026-01-29-AI-动画短片首映圣丹斯电影节：Veo-与-Imagen-的杰作](https://www.bestblogs.dev/status/2016768723152146716)**
+  > 📌 一句话摘要 由皮克斯前员工等 45 人团队利用 Google DeepMind 模型打造的 AI 短片在圣丹斯首映。 📝 详细摘要 推文报道了 AI 在影视行业的重大进展：一部由 45 人专业团队（含皮克斯前员工、奥斯卡得主）制作的 AI 动画短片在圣丹斯电影节首映。该片通过精调 Google DeepMind 的 Veo 和 Imagen 模型完成，展示了生成式 AI 在高端影视制作中的
+
+
+- **[2026-01-29-DeepMind-AI-短片：用电影语言探讨-AI-可控性](https://www.bestblogs.dev/status/2016768734778753086)**
+  > 📌 一句话摘要 Google DeepMind 通过短片《Dear Upstairs Neighbors》展示生成式 AI 的可控性突破。 📝 详细摘要 推文深入探讨了 DeepMind 短片背后的技术意义，即解决生成式 AI 的“可控性问题”。通过电影化的表达方式，展示了专业团队如何克服 AI 创作中的随机性，实现精准的视觉输出控制。 📊 文章信息 AI 评分：86 来源：AI Will(
+
+
+- **[2026-01-29-AI-Agent-自我进化案例：Clawdbot-自主构建语音与功能](https://www.bestblogs.dev/status/2016785679997685843)**
+  > 📌 一句话摘要 转发展示了 AI 助手 Henry 如何在无指令情况下自主编写语音功能并实现夜间自我迭代。 📝 详细摘要 此推文转发了 Alex Finn 关于其 AI 助手 Henry (基于 Clawdbot) 的惊人进展。Henry 能够利用 ChatGPT API 自主编写代码为自己增加语音提醒功能，并能在夜间自主执行任务以优化工作流。这展示了 AI Agent 从“被动工具”向“主动
+
+
+- **[2026-01-29-OpenAI-发布科研利器-Prism：论文写作与协作的新范式](https://www.bestblogs.dev/status/2016837558702133526)**
+  > 📌 一句话摘要 傅盛介绍 OpenAI 推出的免费科研协作工具 Prism，具备深度理解论文逻辑、草图转矢量图及文献管理等核心功能。 📝 详细摘要 推文详细介绍了 OpenAI 最新发布的科研工具 Prism。该工具被形容为 Overleaf 与高级 AI 模型的结合体，能够深度解析论文的公式、参考文献和逻辑结构。其亮点功能包括将手绘草图转换为 TikZ 专业矢量图、自动检索管理引用文献，且支
+
+
+- **[2026-01-29-案例研究：基于-Qdrant-混合搜索的-Kakao-Corp-AI-服务台](https://www.bestblogs.dev/status/2016841848292045064)**
+  > 📌 一句话摘要 Kakao Corp 利用 Qdrant 的混合搜索和 RRF 技术构建了高性能内部 RAG 系统，显著优化了员工支持和技术查询效率。 📝 详细摘要 本推文介绍了 Kakao Corp 构建内部 AI 服务台（Service Desk）的案例。为了处理从概念性问题到特定错误代码的各类复杂查询，该团队利用 Qdrant 的混合搜索功能，将稠密（Dense）与稀疏（Sparse）检
+
+
+- **[2026-01-29-Google-为独立开发者重塑-AI-Pro-和-Ultra-订阅计划](https://www.bestblogs.dev/status/2016852058087829921)**
+  > 📌 一句话摘要 Google 推出了全新的 AI Pro（20 美元/月）和 Ultra（249.99 美元/月）订阅等级，专为独立开发者量身定制，集成了先进的 AI 工具、云积分及智能体功能。 📝 详细摘要 Philipp Schmid 披露了 Google 将其 AI 订阅计划重组为“独立开发者 (Solo Builder)”方案。Pro 计划（20 美元/月）和 Ultra 计划（249
 
 
 - **[2026-01-28-Happycapy：首个面向普通用户的-Claude-Code-开箱即用平台](https://www.bestblogs.dev/status/2016180208265789724)**
@@ -1081,9 +1166,6 @@
 
 
 - **[2026-01-28-Kimi-K2.5-终结-AI-PPT/DOC-赛道：通用生成能力抽走“呈现层”溢价](https://www.bestblogs.dev/status/2016497048120648158)**
-
-
-- **[2026-01-28-AAAI-2026｜基于思维链与强化学习的可解释多模态广告审核护栏](https://www.bestblogs.dev/article/526a4791)**
 
 
 - **[2026-01-28-vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)**

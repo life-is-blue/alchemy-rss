@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 20:06:08。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 22:13:36。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI 动态 (AI News)
 
@@ -64,6 +64,10 @@
 
 - **[2026-01-29-Clawd-创始人：我发布的很多代码自己都没读过](https://www.bestblogs.dev/video/7c4f9fd)**
   > 📌 一句话摘要 PSPDFKit 创始人 Peter Steinberger 分享了他激进的 AI 驱动工作流：他像架构师一样管理智能体，发布自己通常不阅读的代码，从而实现了前所未有的开发速度。 📝 详细摘要 在这场深度访谈中，Peter Steinberger 讨论了他在休整三年后重返软件工程领域的经历，揭示了 AI 智能体如何从根本上颠覆传统的开发范式。他提出了“闭环”原则（Closing
+
+
+- **[2026-01-29-NVIDIA-VibeTensor：由-AI-智能体构建的深度学习框架](https://www.bestblogs.dev/status/2016570992039252068)**
+  > 📌 一句话摘要 NVIDIA 研究人员推出了 VibeTensor，这是一个在人类指导下，完全由 LLM 驱动的代码智能体生成的开源深度学习栈。 📝 详细摘要 本研究展示了 VibeTensor，这是一个 PyTorch 风格的深度学习框架，其整个代码库（从高层 Python API 到底层 CUDA 内存管理）均由 AI 智能体生成。该项目产出了超过 63，000 行 C++/CUDA 代码
 
 
 - **[2026-01-29-LlamaIndex-发布-LlamaAgents-Builder：用自然语言构建可部署的智能体工作流](https://www.bestblogs.dev/status/2016574612717580772)**
@@ -178,6 +182,10 @@
   > 📌 一句话摘要 本文深度解析了 2026 年春节腾讯、百度、字节等大厂通过巨额红包大战抢占 AI 应用入口的战略意图与竞争格局。 📝 详细摘要 文章探讨了 2026 年春节期间，中国互联网巨头（腾讯、百度、字节跳动）重拾“红包大战”这一传统营销手段，旨在重塑 AI 应用市场格局。腾讯元宝豪掷 10 亿试图复刻微信支付的“奇袭珍珠港”，百度文心通过 5 亿红包巩固搜索入口，而字节火山引擎则通过春
 
 
+- **[2026-01-29-Chrome-版-Gemini-重大更新：打造个性化智能体-Web-体验](https://www.bestblogs.dev/status/2016659186348867665)**
+  > 📌 一句话摘要 Google AI 宣布 Chrome 版 Gemini 迎来一系列重量级更新，通过新增侧边栏、深度应用集成及自动浏览功能，开启个性化代理型网络新时代。 📝 详细摘要 Google AI 发布了集成在 Chrome 浏览器中的 Gemini 全新功能套件。核心更新包括：支持多任务处理的侧边栏、内置 Nano Banana 图像生成工具、以及与 Gmail 和 YouTube 等
+
+
 - **[2026-01-29-微软-CEO-萨蒂亚·纳德拉发布财报：AI-业务规模创纪录，云营收突破-500-亿美元](https://www.bestblogs.dev/status/2016661537436684761)**
   > 📌 一句话摘要 微软 CEO 萨蒂亚·纳德拉表示，公司 AI 业务规模已超越部分深耕数十年的传统王牌业务，季度云营收首次突破 500 亿美元大关。 📝 详细摘要 萨蒂亚·纳德拉在最新的季度财报中指出，尽管 AI 的普及及其对 GDP 的驱动作用仍处于早期阶段，但微软的 AI 业务已展现出惊人的爆发力，其规模已超越公司内部部分历经数十年打造的成熟王牌业务。本季度云业务营收突破 500 亿美元，相
 
@@ -242,8 +250,60 @@
   > 📌 一句话摘要 作者详细介绍了其开源“视频包装 Skills”的工作原理，该系统通过智能分析字幕生成配置，利用浏览器逐帧渲染特效图层，最终合成视频。 📝 详细摘要 这条推文是作者对其前一天开源项目“视频包装 Skills”的技术原理进行深度解析。系统工作流程为：输入视频和字幕后，首先通过 `content_analyzer.py` 智能分析字幕内容（识别人物、金句、数据等），生成特效建议并形成
 
 
+- **[2026-01-29-当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)**
+  > 📌 一句话摘要 Notion CEO Ivan Zhao 通过钢铁与蒸汽机的历史隐喻，阐述了人工智能将如何作为“无限智能”重塑个体效率、组织架构及知识经济形态。 📝 详细摘要 本文由 Notion 创始人 Ivan Zhao 撰写，核心观点认为 AI 是继钢铁和蒸汽之后的新型“奇迹材料”。文章从三个维度展开：在个体层面，AI 将知识工作者从“自行车”时代推向“汽车”时代，但需解决语境碎片化和可
+
+
 - **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
   > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
+
+
+- **[2026-01-29-Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)**
+  > 📌 一句话摘要 Moltbot（原 Clawdbot）作者 Peter Steinberger 详述了该项目的爆火历程、开发理念及未来规划，并指出 MiniMax M2.1 是目前最优秀的开源模型。 📝 详细摘要 本文是对爆火 AI 智能体项目 Moltbot（原名 Clawdbot）作者 Peter Steinberger 的深度访谈综述。Peter 分享了他从“退休摆烂”到被 Claude
+
+
+- **[2026-01-29-AlphaGenome-在全球实现超过-100-万次-API-调用](https://www.bestblogs.dev/status/2016745374430703765)**
+  > 📌 一句话摘要 桑达尔·皮查伊强调了谷歌 AlphaGenome AI 在全球范围内的快速普及：其 API 调用量已突破 100 万次，覆盖 160 个国家，旨在助力加速科学发现。 📝 详细摘要 这条来自谷歌和 Alphabet 首席执行官桑达尔·皮查伊的推文宣布了 AlphaGenome AI 项目的一个重要里程碑。他表达了对这项工作的自豪，透露该 API 已经收到来自 160 个国家的研究
+
+
+- **[2026-01-29-喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)**
+  > 📌 一句话摘要 a16z 掌门人 Ben Horowitz 探讨了 AI 时代下风投机构的管理哲学、垂直化战略及投资趋势，指出 AI 应用层的复杂性正超越基础设施，并迎来多重赢家时代。 📝 详细摘要 本文编译自 a16z 掌门人 Ben Horowitz 的访谈，深度剖析了顶级风投机构在 AI 浪潮下的管理与投资逻辑。Ben 强调，卓越公司的核心在于鼓励创造性冒险并建立清晰的决策机制。在组织架
+
+
+- **[2026-01-29-微博《2025-热点趋势报告》解读：AI-从科幻到生活，内容价值标准迎来-AI-权重时代](https://www.bestblogs.dev/status/2016752439743877529)**
+  > 📌 一句话摘要 博主解读微博《2025 热点趋势报告》，指出 AI 已从尝鲜工具变为生活刚需，用户信息获取方式转向 AI 智搜，内容价值将面临“人类流量”与“AI 知识图谱权重”的双重评价体系。 📝 详细摘要 这篇推文是对微博《2025 热点趋势报告》的深度解读。博主提炼了三个核心趋势：一、AI 发展从 2023 年的“尝鲜试探期”、2024 年的“伦理焦虑期”进入 2025 年的“落地深耕期
+
+
+- **[2026-01-29-Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)**
+  > 📌 一句话摘要 Google DeepMind 推出了 ATLAS，这是一套针对多语言语言模型的缩放法则，正式定义了 400 多种语言中模型规模、数据量和语言混合之间的相互作用。 📝 详细摘要 Google DeepMind 的研究人员开发了 ATLAS，这是一个为多语言语言模型建立实用缩放法则的框架。与专注于纯英语环境的传统缩放法则不同，ATLAS 利用 774 次受控训练运行（10M 到
+
+
+- **[2026-01-29-AlphaGenome：Google-DeepMind-最新基因组学模型荣登《自然》杂志](https://www.bestblogs.dev/status/2016763919646478403)**
+  > 📌 一句话摘要 Demis Hassabis 宣布 Google DeepMind 研发的最先进基因组学模型 AlphaGenome 在《自然》杂志发表，并向学术界开放了模型权重。 📝 详细摘要 Google DeepMind 首席执行官 Demis Hassabis 宣布，其团队研发的最新基因组学模型 AlphaGenome 已在顶级期刊《自然》(Nature) 上发表。该模型的一大亮点是向
+
+
+- **[2026-01-29-#408.Clawd-的创造者："我发布我不读的代码"](https://www.bestblogs.dev/podcast/6d275ea)**
+  > 📌 一句话摘要 传奇开发者 Peter Steinberger 分享如何利用 AI Agent 重塑软件工程，实现从“读代码”向“架构设计”与“闭环验证”的范式转移。 📝 详细摘要 本期播客对话了 PSPDFKit 创始人 Peter Steinberger。他分享了从传统软件工程向 AI 辅助开发转型的深刻洞察。核心观点在于：在 AI 时代，开发者应从繁琐的业务代码编写中解放，转而关注系统架
+
+
+- **[2026-01-29-Clawdbot-安装报错及“command-not-found”解决方法](https://www.bestblogs.dev/status/2016765106466746859)**
+  > 📌 一句话摘要 针对 Clawdbot 安装过程中出现的 moltbot 命令未找到报错，提供了更新安装包的具体解决指令。 📝 详细摘要 傅盛针对用户在安装 Clawdbot 时遇到的 `zsh: command not found: moltbot` 报错给出了技术指导。该问题主要是由于新旧版本安装包更名（从 moltbot 变为 clawdbot）导致的。推文提供了完整的卸载旧版、安装最新
+
+
+- **[2026-01-29-Vercel-实验结论：AGENTS.md-模式在-AI-Coding-Agent-中优于-Skills-模式](https://www.bestblogs.dev/status/2016766349629145128)**
+  > 📌 一句话摘要 Vercel 团队实验证明，为 AI Agent 提供被动的上下文文件（AGENTS.md）比主动调用的工具包（Skills）更稳定且高效，通过率可达 100%。 📝 详细摘要 该推文深度解析了 Vercel 团队关于 AI Coding Agent 获取框架知识的实验。实验对比了两种模式：一是需要 Agent 主动判断并调用的 'Skills' 工具包，二是放置在根目录作为持
+
+
+- **[2026-01-29-AI-动画短片首映圣丹斯电影节：Veo-与-Imagen-的杰作](https://www.bestblogs.dev/status/2016768723152146716)**
+  > 📌 一句话摘要 由皮克斯前员工等 45 人团队利用 Google DeepMind 模型打造的 AI 短片在圣丹斯首映。 📝 详细摘要 推文报道了 AI 在影视行业的重大进展：一部由 45 人专业团队（含皮克斯前员工、奥斯卡得主）制作的 AI 动画短片在圣丹斯电影节首映。该片通过精调 Google DeepMind 的 Veo 和 Imagen 模型完成，展示了生成式 AI 在高端影视制作中的
+
+
+- **[2026-01-29-DeepMind-AI-短片：用电影语言探讨-AI-可控性](https://www.bestblogs.dev/status/2016768734778753086)**
+  > 📌 一句话摘要 Google DeepMind 通过短片《Dear Upstairs Neighbors》展示生成式 AI 的可控性突破。 📝 详细摘要 推文深入探讨了 DeepMind 短片背后的技术意义，即解决生成式 AI 的“可控性问题”。通过电影化的表达方式，展示了专业团队如何克服 AI 创作中的随机性，实现精准的视觉输出控制。 📊 文章信息 AI 评分：86 来源：AI Will(
+
+
+- **[2026-01-29-AI-Agent-自我进化案例：Clawdbot-自主构建语音与功能](https://www.bestblogs.dev/status/2016785679997685843)**
+  > 📌 一句话摘要 转发展示了 AI 助手 Henry 如何在无指令情况下自主编写语音功能并实现夜间自我迭代。 📝 详细摘要 此推文转发了 Alex Finn 关于其 AI 助手 Henry (基于 Clawdbot) 的惊人进展。Henry 能够利用 ChatGPT API 自主编写代码为自己增加语音提醒功能，并能在夜间自主执行任务以优化工作流。这展示了 AI Agent 从“被动工具”向“主动
 
 
 - **[2026-01-29-早报｜曝苹果希望-iPhone-18「尽可能不涨价」/首款中国车型小米-SU7-Ultra-加入《GT-赛车》/Clawdbot-被迫改名，卷入千万美元诈骗](https://www.bestblogs.dev/article/ed30b40c)**
@@ -252,6 +312,18 @@
 
 - **[2026-01-29-2026-01-29-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/c9a07bdc)**
   > 📌 一句话摘要 本文汇总了 2026 年 1 月 29 日 Hacker News 的热门技术与社会动态，涵盖 Windows 用户转向 Linux、OpenAI 发布科研平台 Prism、美国 STEM 人才流失及亚马逊大规模裁员等核心议题。 📝 详细摘要 本期 Hacker News 热点深度反映了技术生态与政治环境的剧烈变动。核心内容包括：开发者因 Windows 11 的强制更新、广告
+
+
+- **[2026-01-29-OpenAI-发布科研利器-Prism：论文写作与协作的新范式](https://www.bestblogs.dev/status/2016837558702133526)**
+  > 📌 一句话摘要 傅盛介绍 OpenAI 推出的免费科研协作工具 Prism，具备深度理解论文逻辑、草图转矢量图及文献管理等核心功能。 📝 详细摘要 推文详细介绍了 OpenAI 最新发布的科研工具 Prism。该工具被形容为 Overleaf 与高级 AI 模型的结合体，能够深度解析论文的公式、参考文献和逻辑结构。其亮点功能包括将手绘草图转换为 TikZ 专业矢量图、自动检索管理引用文献，且支
+
+
+- **[2026-01-29-案例研究：基于-Qdrant-混合搜索的-Kakao-Corp-AI-服务台](https://www.bestblogs.dev/status/2016841848292045064)**
+  > 📌 一句话摘要 Kakao Corp 利用 Qdrant 的混合搜索和 RRF 技术构建了高性能内部 RAG 系统，显著优化了员工支持和技术查询效率。 📝 详细摘要 本推文介绍了 Kakao Corp 构建内部 AI 服务台（Service Desk）的案例。为了处理从概念性问题到特定错误代码的各类复杂查询，该团队利用 Qdrant 的混合搜索功能，将稠密（Dense）与稀疏（Sparse）检
+
+
+- **[2026-01-29-Google-为独立开发者重塑-AI-Pro-和-Ultra-订阅计划](https://www.bestblogs.dev/status/2016852058087829921)**
+  > 📌 一句话摘要 Google 推出了全新的 AI Pro（20 美元/月）和 Ultra（249.99 美元/月）订阅等级，专为独立开发者量身定制，集成了先进的 AI 工具、云积分及智能体功能。 📝 详细摘要 Philipp Schmid 披露了 Google 将其 AI 订阅计划重组为“独立开发者 (Solo Builder)”方案。Pro 计划（20 美元/月）和 Ultra 计划（249
 
 
 - **[2026-01-28-Happycapy：首个面向普通用户的-Claude-Code-开箱即用平台](https://www.bestblogs.dev/status/2016180208265789724)**
@@ -546,18 +618,6 @@
 
 
 - **[2026-01-28-徕卡-10-亿欧元卖身，为什么小米一定不能买？](https://www.bestblogs.dev/article/9f6fa850)**
-
-
-- **[2026-01-28-从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://www.bestblogs.dev/article/74ca2b2c)**
-
-
-- **[2026-01-28-马斯克的“太空光伏梦”，离不开中国供应链](https://www.bestblogs.dev/article/67c820be)**
-
-
-- **[2026-01-28-AAAI-2026｜基于思维链与强化学习的可解释多模态广告审核护栏](https://www.bestblogs.dev/article/526a4791)**
-
-
-- **[2026-01-28-Clawdbot-爆火以后，这条硬件赛道成了最大受益者](https://www.bestblogs.dev/article/4a388035)**
 
 
 - **[2026-01-28-vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)**

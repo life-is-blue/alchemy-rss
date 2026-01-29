@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-29 20:06:08。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-29 22:13:36。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -81,11 +81,13 @@
 - [【技术视频 (Tech Videos)】16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)
 - [【技术视频 (Tech Videos)】Anders-Hejlsberg-谈-C#-与-TypeScript-的前世今生](https://www.bestblogs.dev/video/77e3d6e)
 - [【AI 动态 (AI News)】16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)
+- [【AI 动态 (AI News)】Chrome-版-Gemini-重大更新：打造个性化智能体-Web-体验](https://www.bestblogs.dev/status/2016659186348867665)
 - [【AI 动态 (AI News)】Anders-Hejlsberg-谈-C#-与-TypeScript-的前世今生](https://www.bestblogs.dev/video/77e3d6e)
 - [【AI 动态 (AI News)】从博客文章到框架：Vercel-如何沉淀-React-Native-开发工艺](https://www.bestblogs.dev/status/2016239778904342701)
 - [【AI 动态 (AI News)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
 - [【AI 动态 (AI News)】HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)
 - [【独立开发 (Indie Hacker)】16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)
+- [【独立开发 (Indie Hacker)】Chrome-版-Gemini-重大更新：打造个性化智能体-Web-体验](https://www.bestblogs.dev/status/2016659186348867665)
 - [【独立开发 (Indie Hacker)】Anders-Hejlsberg-谈-C#-与-TypeScript-的前世今生](https://www.bestblogs.dev/video/77e3d6e)
 - [【独立开发 (Indie Hacker)】从博客文章到框架：Vercel-如何沉淀-React-Native-开发工艺](https://www.bestblogs.dev/status/2016239778904342701)
 - [【独立开发 (Indie Hacker)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
