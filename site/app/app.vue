@@ -22,17 +22,17 @@
         </nav>
       </div>
       
-      <div class="flex items-center gap-4">
-        <div class="relative hidden sm:block">
+      <div class="flex items-center gap-4 flex-1 justify-end max-w-xl ml-auto">
+        <div class="relative w-full max-w-md hidden sm:block group">
           <input 
             v-model="searchValue"
             type="text" 
-            placeholder="搜索书架..." 
-            class="w-48 h-8 bg-black/5 rounded-full px-8 text-[12px] focus:outline-none focus:w-64 transition-all duration-500"
+            placeholder="搜索..." 
+            class="w-full h-10 bg-black/[0.04] rounded-lg px-10 text-[14px] text-text-main focus:bg-white focus:shadow-md focus:outline-none transition-all duration-300 border border-transparent focus:border-outline/10 placeholder:text-text-sub/50"
           />
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3 top-2.5 text-text-sub"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3.5 top-3 text-text-sub group-focus-within:text-primary transition-colors"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </div>
-        <div class="w-8 h-8 rounded-full bg-outline overflow-hidden border border-white shadow-sm">
+        <div class="w-9 h-9 rounded-full bg-outline overflow-hidden border border-white shadow-sm shrink-0">
           <img src="/favicon.svg" class="w-full h-full object-cover" alt="User" />
         </div>
       </div>
@@ -43,26 +43,20 @@
       <!-- The Unified Book Container -->
       <div class="w-full max-w-[1200px] book-card flex bg-white overflow-hidden relative">
         
-        <!-- Refined Sidebar (Now perfectly integrated into the white page) -->
+        <!-- Refined Sidebar -->
         <aside class="hidden lg:flex w-56 flex-col p-10 pr-0 gap-8 shrink-0 overflow-y-auto">
           <div>
-            <p class="text-[10px] font-black text-text-sub/40 uppercase tracking-[0.2em] mb-6 px-3">Contents</p>
+            <p class="text-[10px] font-black text-text-sub/40 uppercase tracking-[0.2em] mb-6 px-3">Topics</p>
             <div class="flex flex-col gap-1.5">
               <button 
-                @click="selectTab('全部')"
-                class="text-left py-2 px-3 rounded-lg text-[14px] transition-all"
-                :class="currentTab === '全部' ? 'text-primary font-black scale-105 origin-left' : 'text-text-sub hover:text-text-main'"
+                v-for="cat in categories" 
+                :key="cat.name"
+                @click="selectTab(cat.name)"
+                class="flex items-center justify-between text-left py-2 px-3 rounded-lg text-[14px] transition-all group"
+                :class="currentTab === cat.name ? 'text-primary font-black scale-105 origin-left' : 'text-text-sub hover:text-text-main'"
               >
-                全部内容
-              </button>
-              <button 
-                v-for="tab in rssData" 
-                :key="tab.title"
-                @click="selectTab(tab.title)"
-                class="text-left py-2 px-3 rounded-lg text-[14px] transition-all truncate"
-                :class="currentTab === tab.title ? 'text-primary font-black scale-105 origin-left' : 'text-text-sub hover:text-text-main'"
-              >
-                {{ tab.title }}
+                <span>{{ cat.name }}</span>
+                <span class="text-[10px] font-bold opacity-40 group-hover:opacity-100 transition-opacity">{{ cat.count }}</span>
               </button>
             </div>
           </div>
@@ -191,6 +185,7 @@ const {
   loading, 
   currentTab, 
   searchValue, 
+  categories,
   rssData, 
   loadData, 
   filteredArticles,

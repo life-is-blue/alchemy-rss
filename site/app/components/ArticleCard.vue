@@ -1,39 +1,28 @@
 <template>
   <div 
-    class="group py-8 px-2 border-b border-outline last:border-0 cursor-pointer flex flex-col gap-3 transition-all active:opacity-60"
-    @click="$emit('click')"
+    class="group relative bg-surface rounded-xl p-4 sm:p-5 border border-outline/10 hover:shadow-lg transition-all duration-300 cursor-pointer active:scale-[0.99] mb-4"
   >
-    <div class="flex items-center gap-3">
-      <span class="text-[11px] font-medium tracking-widest text-text-sub uppercase">{{ article.rssTitle }}</span>
-      <div class="w-1 h-1 rounded-full bg-outline"></div>
-      <span class="text-[11px] font-medium text-text-sub">{{ article.date }}</span>
-    </div>
+    <div class="flex justify-between items-start gap-4">
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-2 text-[11px] font-bold text-text-sub uppercase tracking-wider">
+          <span class="text-primary">{{ article.rssTitle || 'RSS' }}</span>
+          <span class="w-0.5 h-0.5 bg-current rounded-full opacity-50"></span>
+          <span>{{ formatDate(article.date) }}</span>
+        </div>
+        
+        <h3 class="text-[17px] font-bold text-text-main leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2">
+          {{ article.title }}
+        </h3>
+        
+        <p v-if="article.summary" class="text-[13px] text-text-sub leading-relaxed line-clamp-2 opacity-90">
+          {{ article.summary.replace(/<[^>]+>/g, '') }}
+        </p>
+      </div>
 
-    <div class="space-y-3">
-      <h3 class="text-[20px] font-bold leading-tight text-text-main group-hover:text-primary transition-colors duration-300">
-        {{ article.title }}
-      </h3>
-      <p v-if="article.summary" class="text-text-sub text-[15px] leading-[1.8] line-clamp-3 font-light">
-        {{ article.summary }}
-      </p>
-    </div>
-
-    <div class="flex items-center gap-6 pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-      <a 
-        :href="article.link" 
-        target="_blank" 
-        @click.stop
-        class="text-xs font-bold text-primary flex items-center gap-1"
-      >
-        阅读原文
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </a>
-      <button 
-        @click.stop="$emit('action', 'save')"
-        class="text-xs font-bold text-text-sub hover:text-text-main transition-colors"
-      >
-        加入书架
-      </button>
+      <!-- Action Indicator (Hidden by default, visible on hover) -->
+      <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute right-4 top-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
     </div>
   </div>
 </template>

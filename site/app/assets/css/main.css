@@ -2,8 +2,8 @@
 
 @theme {
   --color-primary: #3377FF;
-  --color-text-main: #1A1A1A;
-  --color-text-sub: #8A8A8A;
+  --color-text-main: #202124; /* Google Grey 900 */
+  --color-text-sub: #5F6368;  /* Google Grey 700 - Much darker for readability */
   
   --color-surface: #FFFFFF;
   --color-background: #EDF0F2;
