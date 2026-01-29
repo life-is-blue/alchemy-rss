@@ -14,7 +14,7 @@
 
 [![](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml/badge.svg)](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml)
 
-:alarm_clock: 更新时间: 2026-01-29 11:45:21，:rocket: 更新条数: +1， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 12:30:20，:rocket: 更新条数: +3， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
 
 ## 文章来源
 

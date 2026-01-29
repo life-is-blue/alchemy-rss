@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 11:45:21。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 12:30:20。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
@@ -79,6 +79,14 @@
 
 - **[2026-01-29-阿里重磅开源！OpenSandbox：专为-AI-Agent-打造的下一代沙箱](https://www.bestblogs.dev/article/b7ca6be0)**
   > 📌 一句话摘要 阿里巴巴开源 OpenSandbox，这是一款专为 AI Agent 场景设计的通用沙箱平台，提供安全、可靠的代码执行与资源隔离环境。 📝 详细摘要 文章详细介绍了阿里巴巴最新开源的 OpenSandbox 项目。针对 AI Agent 在执行生成代码时可能带来的安全风险（如路径偏移、恶意扫描等），OpenSandbox 提供了一套完整的沙箱基础设施。该平台支持 Python、
+
+
+- **[2026-01-29-蚂蚁深夜开源比肩-Genie-3-的世界模型，我也看到了具身智能的未来。](https://www.bestblogs.dev/article/16d9db27)**
+  > 📌 一句话摘要 蚂蚁集团旗下灵波科技开源了比肩 Google Genie 3 的实时交互世界模型 LingBot-World，具备长时记忆稳定、风格泛化性强及自主动作代理等核心优势。 📝 详细摘要 本文深度解析了蚂蚁集团（灵波科技）最新开源的世界模型 LingBot-World。该模型能够根据用户的实时按键指令动态生成视频场景，实现“边探索边生成”的交互体验。文章重点介绍了其三大技术突破：一是
+
+
+- **[2026-01-29-AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)**
+  > 📌 一句话摘要 本期 AINews 重点介绍了 Sam Altman 关于“AI 思想伙伴”以提升人类创意质量的愿景，同时涵盖了 Kimi K2.5 的发布以及 Google Gemini 3 生态系统的重大更新。 📝 详细摘要 本文涵盖了一系列重大的 AI 进展，首先是 OpenAI 内部会议上 Sam Altman 讨论了 AI 作为“思想伙伴”（特别是“Paul Graham 机器人”）
 
 
 - **[2026-01-28-7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)**
