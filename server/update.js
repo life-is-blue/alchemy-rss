@@ -73,6 +73,7 @@ function handleFeed() {
         const newFeedItems = (feed?.items || []).filter(curr => !items.find(el => utils.isSameLink(el.link, curr.link)))
         
         // 使用自定义并发控制替代旧版 Async.mapLimit
+        console.log(`[DEBUG] Processing ${newFeedItems.length} new items for ${rssItem.title}`)
         const processedNewItems = await mapLimit(newFeedItems, 3, async (curr) => {
           let date = utils.getNowDate('YYYY-MM-DD')
           try {
@@ -114,6 +115,7 @@ function handleFeed() {
         })
 
         let allItems = items
+        console.log(`[DEBUG] processedNewItems type: ${typeof processedNewItems}, isArray: ${Array.isArray(processedNewItems)}`)
         if (processedNewItems && processedNewItems.length) {
           utils.logSuccess('更新 RSS: ' + rssItem.title + ` (+${processedNewItems.length})`)
           newData.titles.push(rssItem.title)

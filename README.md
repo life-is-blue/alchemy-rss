@@ -14,12 +14,12 @@
 
 [![](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml/badge.svg)](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml)
 
-:alarm_clock: 更新时间: 2026-01-30 04:56:42，:rocket: 更新条数: +202， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 04:59:27，:rocket: 更新条数: +8， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
 
 ## 文章来源
 
-- [精选文章-BestBlogs](/details/精选文章 (BestBlogs).md)![](/assets/dot.png)   
+- [精选文章-BestBlogs](/details/精选文章 (BestBlogs).md)  
 - [技术视频-Tech-Videos](/details/技术视频 (Tech Videos).md)  
-- [深度播客-Podcasts](/details/深度播客 (Podcasts).md)![](/assets/dot.png)   
-- [AI-动态-AI-News](/details/AI 动态 (AI News).md)![](/assets/dot.png)   
+- [深度播客-Podcasts](/details/深度播客 (Podcasts).md)  
+- [AI-动态-AI-News](/details/AI 动态 (AI News).md)  
 - [独立开发-Indie-Hacker](/details/独立开发 (Indie Hacker).md)![](/assets/dot.png)   
