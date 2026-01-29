@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install": "cd site && pnpm install",
+    "vercel-install": "cd site && npm install --include=optional",
     "build": "cd site && npx nuxi generate"
   }
 }

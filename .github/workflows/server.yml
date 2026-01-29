@@ -87,10 +87,10 @@ jobs:
       if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       working-directory: ./site
       run: |
-        # 彻底解决 oxc-parser 等原生绑定在 CI 环境失效的问题
-        rm -rf node_modules
-        pnpm install --no-frozen-lockfile
-        pnpm run generate
+        # 使用 npm 强制拉取所有平台的原生绑定，绕过 pnpm 的跨平台兼容性 Bug
+        rm -rf node_modules package-lock.json
+        npm install --include=optional
+        npm run generate
 
     - name: Prepare Deployment Folder
       run: |
