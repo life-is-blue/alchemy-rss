@@ -90,6 +90,10 @@ jobs:
         # 升级到 Node 20 后，pnpm 能够正确处理 Nuxt 4 的原生绑定
         rm -rf node_modules
         pnpm install --no-frozen-lockfile
+        
+        # 将 data 目录拷贝到 public，使其在构建后可直接访问
+        cp -r ../data ./public/
+        
         pnpm run generate
 
     - name: Prepare Deployment Folder
