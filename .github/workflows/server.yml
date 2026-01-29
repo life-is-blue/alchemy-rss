@@ -51,17 +51,35 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pnpm-202412-
 
-    - name: Install and run
+    - name: Install and run crawler
       working-directory: ./server
       env:
         WORKFLOW: true
         RSS_CONFIG: ${{ secrets.RSS_CONFIG }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         pnpm install
         pnpm run once
 
-    - name: Commit all changed files
-      id: auto-commit-action
-      uses: stefanzweifel/git-auto-commit-action@v5
+    - name: Build Frontend
+      working-directory: ./site
+      run: |
+        pnpm install
+        pnpm run build
+
+    - name: Prepare Deployment Folder
+      run: |
+        mkdir deploy
+        cp -r site/dist/* deploy/
+        cp -r data deploy/
+        cp -r details deploy/
+        cp README.md deploy/
+        cp TAGS.md deploy/
+
+    - name: Deploy to Data Branch
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        commit_message: update by action runner https://github.com/life-is-blue/alchemy-rss/actions/runs/${{ github.run_id }}
+        folder: deploy
+        branch: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: "data: alchemy refinement update"

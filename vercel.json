@@ -6,20 +6,8 @@
       "destination": "/api/u?id=:id"
     },
     {
-      "source": "/atom.xml",
-      "destination": "/atom.xml"
-    },
-    {
-      "source": "/details/:path*",
-      "destination": "/details/:path*"
-    },
-    {
-      "source": "/assets/:path*",
-      "destination": "/assets/:path*"
-    },
-    {
-      "source": "/static/:path*",
-      "destination": "/static/:path*"
+      "source": "/(.*)",
+      "destination": "/$1"
     },
     {
       "source": "/(.*)",

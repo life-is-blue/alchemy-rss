@@ -26,3 +26,12 @@ node_modules
 .vercel
 dist
 server/.env
+
+# Generated Alchemy Data (Moved to gh-pages branch)
+/data/links.json
+/data/atom.xml
+/data/tags.json
+/details/
+/README.md
+/TAGS.md
+/deploy/
