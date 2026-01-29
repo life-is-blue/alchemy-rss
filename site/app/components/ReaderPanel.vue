@@ -29,6 +29,34 @@
         <div class="w-12 h-1 bg-primary/10 rounded-full mx-auto lg:mx-0"></div>
       </header>
 
+      <!-- AI Insight Card -->
+      <div v-if="article.aiSummary || article.mainPoints" class="mb-12 p-8 rounded-2xl shadow-sm transition-colors duration-500" style="background-color: var(--color-card-bg); border: 1px solid var(--color-card-border);">
+        <div class="flex items-center gap-2 mb-4 text-primary font-bold text-xs uppercase tracking-widest">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 1 8 8c0 3.2-2.3 5.9-5.4 7.2-.6.2-1 .8-1 1.4v.4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.4c0-.6-.4-1.2-1-1.4C4.3 15.9 2 13.2 2 10a8 8 0 0 1 8-8z"/><path d="M9 22h6"/></svg>
+          Alchemy Insight
+        </div>
+        
+        <p v-if="article.aiSummary" class="text-lg font-medium text-[#444] leading-relaxed mb-6 italic">
+          “{{ article.aiSummary }}”
+        </p>
+
+        <ul v-if="article.mainPoints && article.mainPoints.length" class="space-y-3">
+          <li v-for="(point, idx) in article.mainPoints" :key="idx" class="flex gap-3 text-sm text-[#555] leading-relaxed">
+            <span class="font-bold text-primary shrink-0">{{ idx + 1 }}.</span>
+            <span>
+              <strong class="text-text-main block mb-0.5">{{ point.point }}</strong>
+              {{ point.explanation }}
+            </span>
+          </li>
+        </ul>
+
+        <div class="mt-6 pt-6 border-t border-black/[0.05] flex flex-wrap gap-4 text-xs font-bold text-text-sub uppercase tracking-wider">
+          <span v-if="article.readTime">⏱️ {{ article.readTime }} min read</span>
+          <span v-if="article.score">🔥 Score: {{ article.score }}</span>
+          <span v-if="article.wordCount">📝 {{ article.wordCount }} words</span>
+        </div>
+      </div>
+
       <article 
         class="prose prose-lg max-w-[750px] mx-auto text-[#333] leading-[1.9] font-normal article-body" 
         :style="{ fontSize: fontSize + 'px' }"
@@ -138,14 +166,30 @@ watch(() => props.url, async (newUrl) => {
 }
 
 /* Themes */
-.theme-white { background-color: #FFFFFF; color: #333; }
-.theme-sepia { background-color: #F4ECD8; color: #5B4636; }
+.theme-white { 
+  background-color: #FFFFFF; 
+  color: #333; 
+  --color-card-bg: #FBFBF9;
+  --color-card-border: rgba(0, 0, 0, 0.03);
+}
+.theme-sepia { 
+  background-color: #F4ECD8; 
+  color: #5B4636; 
+  --color-card-bg: rgba(0, 0, 0, 0.02);
+  --color-card-border: rgba(91, 70, 54, 0.1);
+}
 .theme-parchment { 
   background-color: #FAF9F6; 
   background-image: url("https://www.transparenttextures.com/patterns/papyrus-dark.png");
   color: #444; 
+  --color-card-bg: rgba(0, 0, 0, 0.02);
 }
-.theme-night { background-color: #1A1B1E; color: #A0A0A0; }
+.theme-night { 
+  background-color: #1A1B1E; 
+  color: #A0A0A0; 
+  --color-card-bg: rgba(255, 255, 255, 0.03);
+  --color-card-border: rgba(255, 255, 255, 0.05);
+}
 
 .theme-night .article-body h1, 
 .theme-night .article-body h2, 

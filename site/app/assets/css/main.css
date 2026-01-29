@@ -17,6 +17,10 @@
   /* 黄金布局变量 */
   --content-max-width: 850px;
   --standard-padding: 3rem; /* 48px */
+
+  /* 卡片主题变量 */
+  --color-card-bg: #FBFBF9;
+  --color-card-border: rgba(0, 0, 0, 0.03);
 }
 
 :root {
