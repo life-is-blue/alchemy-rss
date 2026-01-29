@@ -6,7 +6,11 @@
       "destination": "/api/u?id=:id"
     },
     {
-      "source": "/(.*)",
+      "source": "/(data|details|assets|static)/:path*",
+      "destination": "/$1/:path*"
+    },
+    {
+      "source": "/(favicon.ico|favicon.svg|atom.xml)",
       "destination": "/$1"
     },
     {

@@ -52,6 +52,7 @@ jobs:
           ${{ runner.os }}-pnpm-202412-
 
     - name: Install and run crawler
+      id: crawler
       working-directory: ./server
       env:
         WORKFLOW: true
@@ -61,15 +62,27 @@ jobs:
         pnpm install
         pnpm run once
 
+    - name: Check for changes
+      id: git-check
+      run: |
+        git add .
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
     - name: Build Frontend
+      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       working-directory: ./site
       run: |
         pnpm install
         pnpm run build
 
     - name: Prepare Deployment Folder
+      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       run: |
-        mkdir deploy
+        mkdir -p deploy
         cp -r site/dist/* deploy/
         cp -r data deploy/
         cp -r details deploy/
@@ -77,6 +90,7 @@ jobs:
         cp TAGS.md deploy/
 
     - name: Deploy to Data Branch
+      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: deploy
