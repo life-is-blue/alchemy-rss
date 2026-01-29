@@ -12,8 +12,14 @@ export const useArticles = () => {
   const loadData = async () => {
     loading.value = true
     try {
-      // 直接请求 public 目录下的静态 JSON
-      const data = await $fetch('/data/links.json')
+      // 策略：优先请求 API（本地开发），失败则回退到静态路径（生产环境）
+      let data;
+      try {
+        data = await $fetch('/api/articles')
+      } catch (e) {
+        data = await $fetch('/data/links.json')
+      }
+      
       articles.value = data.reduce((prev, curr) => {
         return [...prev, ...curr.items.map(item => ({ ...item, rssTitle: curr.title }))]
       }, []).sort((a, b) => a.date < b.date ? 1 : -1)
