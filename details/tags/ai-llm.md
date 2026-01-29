@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 22:13:36。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 00:08:51。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -1021,6 +1021,14 @@
   > 📌 一句话摘要 Google 推出了全新的 AI Pro（20 美元/月）和 Ultra（249.99 美元/月）订阅等级，专为独立开发者量身定制，集成了先进的 AI 工具、云积分及智能体功能。 📝 详细摘要 Philipp Schmid 披露了 Google 将其 AI 订阅计划重组为“独立开发者 (Solo Builder)”方案。Pro 计划（20 美元/月）和 Ultra 计划（249
 
 
+- **[2026-01-29-DeeplearningAI-x-LandingAI：从-OCR-到智能体文档提取新课程](https://www.bestblogs.dev/status/2016859143647440922)**
+  > 📌 一句话摘要 介绍 DeeplearningAI 与 LandingAI 合作推出的免费课程，重点讲解如何利用 Agentic Doc Extraction (ADE) 技术处理复杂文档。 📝 详细摘要 该推文详细介绍了由 DeeplearningAI 和 LandingAI 联合推出的《Document AI: From OCR to Agentic Doc Extraction》课程。内
+
+
+- **[2026-01-29-Google-AI-Pro/Ultra-云端抵扣金现已支持-Google-AI-Studio](https://www.bestblogs.dev/status/2016866473306665155)**
+  > 📌 一句话摘要 Google AI Pro 和 Ultra 的活跃订阅用户现在可以在 Google AI Studio 中使用其每月云端抵扣金，为开发项目提供动力。 📝 详细摘要 Google DeepMind 的 AI 开发者体验专家 Philipp Schmid 明确指出，新公布的 Google AI Pro 和 Ultra 订阅方案中包含的云端抵扣金可用于 Google AI Studi
+
+
 - **[2026-01-28-Happycapy：首个面向普通用户的-Claude-Code-开箱即用平台](https://www.bestblogs.dev/status/2016180208265789724)**
 
 
@@ -1166,18 +1174,6 @@
 
 
 - **[2026-01-28-Kimi-K2.5-终结-AI-PPT/DOC-赛道：通用生成能力抽走“呈现层”溢价](https://www.bestblogs.dev/status/2016497048120648158)**
-
-
-- **[2026-01-28-vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)**
-
-
-- **[2026-01-28-AI-创业下半场，新的营销三板斧是什么？|-对话易点天下-CEO-朱鹤](https://www.bestblogs.dev/podcast/01f80ee)**
-
-
-- **[2026-01-28-AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)**
-
-
-- **[2026-01-28-我让-Claudebot-现为-Moltbot-访问了我的电脑、日历和邮件：这是发生的一切](https://www.bestblogs.dev/video/3ce1971)**
 
 
 - **[2026-01-28-DeepSeek-今年的两个重大更新，一篇详细的总结来了！](https://www.bestblogs.dev/article/26c0433a)**
