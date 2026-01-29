@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
     try {
       // 从 URL 提取 ID (例如: https://www.bestblogs.dev/article/1628d64a -> 1628d64a)
       // 同时也支持原始 ID 格式如果存在
-      const idMatch = url.match(///article/([a-zA-Z0-9]+)/) || url.match(///status/([0-9]+)/);
+      const idMatch = url.match(/\/article\/([a-zA-Z0-9]+)/) || url.match(/\/status\/([0-9]+)/);
       
       if (idMatch) {
         const resourceId = idMatch[1];
