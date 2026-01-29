@@ -6,70 +6,35 @@
       <div class="action-top" @click="toTop" title="返回顶部"><van-icon name="arrow-up" /></div>
     </div>
 
-    <van-popup v-model="showCate" position="left" class="search-modal">
-      <van-cell-group class="tag-group">
-        <div class="filter-row">
-          <div class="filter-cell">
-            <van-switch v-model="matchSkill" size="14" />
-            <div class="lbl" @click="changeSkill">
-              只展示技术相关<span class="desc">仅根据标题内容匹配</span>
-            </div>
-          </div>
-        </div>
-      </van-cell-group>
-      <van-cell-group class="tag-group">
-        <div slot="title" class="title-box"><van-icon name="hot-o" />热门搜索</div>
-        <van-tag
-          v-for="(item, index) in hotwords"
-          :key="index"
-          @click="handlerCate(item)"
+    <div class="header-box">
+      <div class="search-wrapper">
+        <van-search
+          v-model="searchValue"
+          placeholder="搜索知识情报"
+          show-action
+          @search="onSearch"
+          @clear="onClear"
+          class="search-box-md3"
         >
-        {{item}}
-        </van-tag>
-      </van-cell-group>
-      <van-cell-group>
-        <div slot="title" class="title-box"><van-icon name="underway-o" />发布时间</div>
-        <van-cell
-          v-for="(item, index) in ranges"
-          :key="index"
-          :title="item.title"
-          is-link
-          @click="handlerCate(item)"
-        />
-      </van-cell-group>
-      <van-cell-group title="内容来源">
-        <div slot="title" class="title-box"><van-icon name="records" />内容来源</div>
-        <van-cell
-          v-for="(item, index) in rss"
-          :key="index"
-          :title="item.title"
-          is-link
-          @click="handlerCate(item)"
-        />
-      </van-cell-group>
-      <van-cell-group title="知识分类">
-        <div slot="title" class="title-box"><van-icon name="bar-chart-o" />知识分类</div>
-        <van-cell
-          v-for="(item, index) in tags"
-          :key="index"
-          :title="item.tag"
-          is-link
-          @click="handlerCate(item)"
-        />
-      </van-cell-group>
-    </van-popup>
+          <div slot="action" class="action-btn" @click="onSearch">搜索</div>
+        </van-search>
+      </div>
 
-    <van-search
-      v-model="searchValue"
-      placeholder="搜索知识情报"
-      show-action
-      @search="onSearch"
-      @clear="onClear"
-      class="search-box"
-    >
-      <div slot="label" class="action-cate" @click="showCate = true"><van-icon name="bars" /><span class="lbl">筛选</span></div>
-      <div slot="action" class="action-btn" @click="onSearch">搜索</div>
-    </van-search>
+      <div class="tabs-container">
+        <div 
+          class="tab-item" 
+          :class="{ active: currentTab === '全部' }"
+          @click="selectTab('全部')"
+        >全部</div>
+        <div 
+          v-for="item in rss" 
+          :key="item.title"
+          class="tab-item"
+          :class="{ active: currentTab === item.title }"
+          @click="selectTab(item.title)"
+        >{{item.title}}</div>
+      </div>
+    </div>
 
      <div
       class="result-box"
@@ -161,6 +126,7 @@ export default {
     return {
       searchValue: '',
       showCate: false,
+      currentTab: '全部',
       // 默认只展示技能相关文章
       matchSkill: !!localStorage.getItem('matchSkill'),
       hotwords,
@@ -185,6 +151,15 @@ export default {
   methods: {
     toTop () {
       window.scrollTo(0, 0)
+    },
+    selectTab (title) {
+      this.currentTab = title
+      if (title === '全部') {
+        this.searchValue = ''
+      } else {
+        this.searchValue = '[来源] ' + title
+      }
+      this.handlerSearch()
     },
     initLoadData (clear = true, list = window.LIST_DATA) {
       if (clear) {
@@ -395,9 +370,81 @@ export default {
 </script>
 
 <style>
+:root {
+  --md-sys-color-primary: #f57c00;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdec1;
+  --md-sys-color-on-primary-container: #331100;
+  --md-sys-color-surface: #fef8f4;
+  --md-sys-color-on-surface: #1f1b16;
+  --md-sys-color-surface-variant: #f0e0d6;
+  --md-sys-color-on-surface-variant: #4f4539;
+  --md-sys-color-outline: #817567;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1f1b16;
+}
+
 .container {
     width: 50%;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: var(--md-sys-color-background);
+}
+
+.header-box {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    z-index: 10;
+    background-color: var(--md-sys-color-surface);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.search-wrapper {
+    padding: 8px 16px 0;
+}
+
+.search-box-md3 {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.search-box-md3 .van-search__content {
+    background-color: var(--md-sys-color-surface-variant) !important;
+    border-radius: 28px !important;
+}
+
+.tabs-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 12px 16px;
+    gap: 8px;
+    scrollbar-width: none; /* Firefox */
+}
+
+.tabs-container::-webkit-scrollbar {
+    display: none; /* Safari/Chrome */
+}
+
+.tab-item {
+    white-space: nowrap;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--md-sys-color-on-surface-variant);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid var(--md-sys-color-outline);
+}
+
+.tab-item.active {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border-color: var(--md-sys-color-primary);
+}
+
+.tab-item:hover {
+    background-color: var(--md-sys-color-surface-variant);
 }
 
 .fixed-box {
@@ -530,8 +577,8 @@ export default {
 }
 
 .result-box {
-    padding: 4.375rem 0 .375rem;
-    background: #fff;
+    padding: 120px 0 .375rem;
+    background: var(--md-sys-color-background);
     min-height: 100vh;
     box-sizing: border-box;
     position: relative
@@ -644,13 +691,8 @@ export default {
     margin: 1.25rem
 }
 
-.search-box {
-    position: fixed;
-    width: 50%;
-    z-index: 9;
+.search-box-md3 {
     margin: 0 auto;
-    padding: .625rem;
-    box-shadow: 0 .125rem .625rem 0 #f0f0f0
 }
 
 .search-box .van-cell {
@@ -722,7 +764,7 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-    .container,.search-box {
+    .container,.header-box {
         width:70%
     }
 
@@ -732,9 +774,13 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
-    .container {
+    .container,.header-box {
         width:100%;
         margin: 0 auto
+    }
+
+    .result-box {
+        padding-top: 110px;
     }
 
     .fixed-box {
