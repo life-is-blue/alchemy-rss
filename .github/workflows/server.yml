@@ -66,7 +66,18 @@ jobs:
       id: git-check
       run: |
         git add .
-        if [ -n "$(git status --porcelain)" ]; then
+        # 1. 检查抓取产生的数据变动
+        DATA_CHANGED=$(git status --porcelain)
+        
+        # 2. 安全检查代码变动：判断是否存在父提交
+        if git rev-parse --verify HEAD^ >/dev/null 2>&1; then
+          CODE_CHANGED=$(git diff --name-only HEAD^ HEAD | grep -E "^site/|^server/|^vercel\.json|^package\.json" || true)
+        else
+          # 如果是首次提交，强行标记为已变动
+          CODE_CHANGED="initial-setup"
+        fi
+        
+        if [ -n "$DATA_CHANGED" ] || [ -n "$CODE_CHANGED" ]; then
           echo "changed=true" >> $GITHUB_OUTPUT
         else
           echo "changed=false" >> $GITHUB_OUTPUT
