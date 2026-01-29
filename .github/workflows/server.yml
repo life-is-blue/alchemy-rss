@@ -91,9 +91,18 @@ jobs:
 
     - name: Prepare Deployment Folder
       run: |
+        # 诊断：看看构建到底产出了什么
+        ls -la site/
+        ls -R site/.output/public || ls -R site/dist || echo "No output found!"
+        
         mkdir -p deploy
-        # Nuxt 4 static output is in .output/public
-        cp -r site/.output/public/* deploy/
+        # 尝试从 Nuxt 4 默认路径拷贝，如果不存在则尝试 site/dist
+        if [ -d "site/.output/public" ]; then
+          cp -r site/.output/public/* deploy/
+        elif [ -d "site/dist" ]; then
+          cp -r site/dist/* deploy/
+        fi
+        
         cp -r data deploy/ || true
         cp -r details deploy/ || true
         cp README.md deploy/ || true
