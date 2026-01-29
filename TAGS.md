@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-29 12:30:20。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-29 13:09:33。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -31,6 +31,7 @@
 - [【精选文章 (BestBlogs)】最强开源模型易主？Kimi-发布-k2.5-用-Agent-集群解决长文本+视觉生成](https://www.bestblogs.dev/article/a2a89b98)
 - [【精选文章 (BestBlogs)】DeepAgents-的上下文管理](https://www.bestblogs.dev/article/2a3e3f6e)
 - [【精选文章 (BestBlogs)】阿里重磅开源！OpenSandbox：专为-AI-Agent-打造的下一代沙箱](https://www.bestblogs.dev/article/b7ca6be0)
+- [【精选文章 (BestBlogs)】全球最强-AI-音乐模型，现在来自中国！高晓松也来围观了](https://www.bestblogs.dev/article/78fbd3ed)
 - [【精选文章 (BestBlogs)】AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)
 - [【精选文章 (BestBlogs)】AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)
 - [【精选文章 (BestBlogs)】vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)
@@ -43,7 +44,6 @@
 - [【精选文章 (BestBlogs)】早报｜OpenAI-推出科研写作工具-Prism/Kimi-推出最强开源-Agent-模型/AI-承诺内容有误赔-10-万，首例-AI-幻觉案宣判](https://www.bestblogs.dev/article/2c91e197)
 - [【精选文章 (BestBlogs)】黄仁勋预言落地，物理-AI-开年第一枪竟是中国公司打响](https://www.bestblogs.dev/article/b14e5d74)
 - [【精选文章 (BestBlogs)】BAI、高瓴领投，ThetaWave-李文轩：我们想成为下一代年轻人默认的知识获取入口](https://www.bestblogs.dev/article/776196d9)
-- [【精选文章 (BestBlogs)】Kimi-玩了把大的，Agent-团战的时代要来了。](https://www.bestblogs.dev/article/49c17d0b)
 - [查看更多 >](/details/tags/ai-llm.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
@@ -80,14 +80,16 @@
 - [【精选文章 (BestBlogs)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
 - [【技术视频 (Tech Videos)】16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)
 - [【技术视频 (Tech Videos)】Anders-Hejlsberg-谈-C#-与-TypeScript-的前世今生](https://www.bestblogs.dev/video/77e3d6e)
-- [【AI 动态 (AI News)】HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)
-- [【AI 动态 (AI News)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
-- [【AI 动态 (AI News)】从博客文章到框架：Vercel-如何沉淀-React-Native-开发工艺](https://www.bestblogs.dev/status/2016239778904342701)
+- [【AI 动态 (AI News)】16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)
 - [【AI 动态 (AI News)】Anders-Hejlsberg-谈-C#-与-TypeScript-的前世今生](https://www.bestblogs.dev/video/77e3d6e)
-- [【独立开发 (Indie Hacker)】HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)
-- [【独立开发 (Indie Hacker)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
-- [【独立开发 (Indie Hacker)】从博客文章到框架：Vercel-如何沉淀-React-Native-开发工艺](https://www.bestblogs.dev/status/2016239778904342701)
+- [【AI 动态 (AI News)】从博客文章到框架：Vercel-如何沉淀-React-Native-开发工艺](https://www.bestblogs.dev/status/2016239778904342701)
+- [【AI 动态 (AI News)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
+- [【AI 动态 (AI News)】HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)
+- [【独立开发 (Indie Hacker)】16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)
 - [【独立开发 (Indie Hacker)】Anders-Hejlsberg-谈-C#-与-TypeScript-的前世今生](https://www.bestblogs.dev/video/77e3d6e)
+- [【独立开发 (Indie Hacker)】从博客文章到框架：Vercel-如何沉淀-React-Native-开发工艺](https://www.bestblogs.dev/status/2016239778904342701)
+- [【独立开发 (Indie Hacker)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
+- [【独立开发 (Indie Hacker)】HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)
 - [查看更多 >](/details/tags/frontend-fullstack.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
