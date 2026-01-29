@@ -73,25 +73,28 @@ jobs:
         fi
 
     - name: Build Frontend
-      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       working-directory: ./site
       run: |
         pnpm install
         pnpm run build
 
     - name: Prepare Deployment Folder
-      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       run: |
         mkdir -p deploy
         cp -r site/dist/* deploy/
-        cp -r data deploy/
-        cp -r details deploy/
-        cp README.md deploy/
-        cp TAGS.md deploy/
+        cp -r data deploy/ || true
+        cp -r details deploy/ || true
+        cp README.md deploy/ || true
+        cp TAGS.md deploy/ || true
 
     - name: Deploy to Data Branch
-      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: deploy
+        branch: gh-pages
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit_message: "arch: initial data branch setup"
+        single-commit: false
       with:
         folder: deploy
         branch: gh-pages
