@@ -100,16 +100,35 @@
               <!-- Sources View -->
               <SourceGrid v-else-if="currentView === 'sources' && !selectedUrl" key="sources" :sources="rssData" />
 
-              <!-- Detail View -->
-              <div v-else-if="selectedUrl" key="detail" class="relative">
-                <header class="h-12 flex items-center mb-12">
-                  <button @click="selectedUrl = ''" class="flex items-center gap-2 text-text-sub hover:text-text-main transition-all font-bold text-sm active-press">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                    返回目录
-                  </button>
-                </header>
-                <ReaderPanel :url="selectedUrl" @scroll-top="scrollToTop" />
-              </div>
+                          <!-- Detail View -->
+
+                          <div v-else-if="selectedUrl" key="detail" class="relative">
+
+                            <header class="h-12 flex items-center mb-12">
+
+                              <button @click="selectedUrl = ''" class="flex items-center gap-2 text-text-sub hover:text-text-main transition-all font-bold text-sm active-press">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+
+                                返回目录
+
+                              </button>
+
+                            </header>
+
+                            <ReaderPanel 
+
+                              :url="selectedUrl" 
+
+                              :articleData="filteredArticles.find(a => a.link === selectedUrl)"
+
+                              @scroll-top="scrollToTop" 
+
+                            />
+
+                          </div>
+
+              
             </transition>
           </div>
         </section>

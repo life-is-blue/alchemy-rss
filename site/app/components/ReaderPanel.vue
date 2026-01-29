@@ -104,7 +104,8 @@
 
 <script setup>
 const props = defineProps({
-  url: String
+  url: String,
+  articleData: Object // 传入原始条目，以便获取 archive_path
 })
 
 const emit = defineEmits(['scroll-top'])
@@ -126,6 +127,20 @@ watch(() => props.url, async (newUrl) => {
 
   loading.value = true
   try {
+    // 策略：优先从静态归档加载
+    if (props.articleData?.archive_path) {
+      console.log('📦 Loading from static archive:', props.articleData.archive_path)
+      try {
+        const data = await $fetch(`/${props.articleData.archive_path}`)
+        article.value = data
+        loading.value = false
+        return
+      } catch (e) {
+        console.warn('⚠️ Static archive missing, falling back to API...')
+      }
+    }
+
+    // 兜底：请求在线 API
     const data = await $fetch('/api/reader', {
       query: { url: newUrl }
     })
