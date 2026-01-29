@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 16:07:28。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-29 18:10:33。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -151,6 +151,9 @@
 
 
 - **[2026-01-28-ACP-智能体注册表正式上线：在-JetBrains-IDE-中发现并连接-AI-编程智能体-|-JetBrains-AI-博客](https://www.bestblogs.dev/article/b1681683)**
+
+
+- **[2026-01-28-帮助-AI-智能体使用-API-的两种方法（以及为什么你需要两者兼顾）](https://www.bestblogs.dev/article/c112be3e)**
 
 
 - **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**

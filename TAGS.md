@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-29 16:07:28。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-29 18:10:33。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -153,9 +153,9 @@
 - [【精选文章 (BestBlogs)】为强缓存网站添加动态功能](https://www.bestblogs.dev/article/a9a7c725)
 - [【精选文章 (BestBlogs)】蚂蚁深夜开源比肩-Genie-3-的世界模型，我也看到了具身智能的未来。](https://www.bestblogs.dev/article/16d9db27)
 - [【精选文章 (BestBlogs)】当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)
-- [【精选文章 (BestBlogs)】我们不需要-100-万台“跳舞机器人”](https://www.bestblogs.dev/article/a04c1556)
 - [【精选文章 (BestBlogs)】Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)
 - [【精选文章 (BestBlogs)】7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)
+- [【精选文章 (BestBlogs)】从“Siri-的困局”到“手机里的贾维斯”：Clawdbot-给我们上的产品必修课](https://www.bestblogs.dev/article/e96216d3)
 - [查看更多 >](/details/tags/other.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
