@@ -32,7 +32,7 @@ jobs:
     - name: Use node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 18.x
+        node-version: 20.x
         cache: pnpm
         cache-dependency-path: server/pnpm-lock.yaml
     
@@ -87,10 +87,10 @@ jobs:
       if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       working-directory: ./site
       run: |
-        # 使用 npm 强制拉取所有平台的原生绑定，绕过 pnpm 的跨平台兼容性 Bug
-        rm -rf node_modules package-lock.json
-        npm install --include=optional
-        npm run generate
+        # 升级到 Node 20 后，pnpm 能够正确处理 Nuxt 4 的原生绑定
+        rm -rf node_modules
+        pnpm install --no-frozen-lockfile
+        pnpm run generate
 
     - name: Prepare Deployment Folder
       run: |
