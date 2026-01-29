@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://alchemy-rss.vercel.app/atom.xml</id>
+    <title>Alchemy - 数据炼金平台</title>
+    <updated>2026-01-29T03:45:22.117Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Alchemy Lab</name>
+        <email>contact@izoa.fun</email>
+        <uri>https://github.com/life-is-blue/alchemy-rss</uri>
+    </author>
+    <link rel="alternate" href="https://alchemy-rss.vercel.app/atom.xml"/>
+    <link rel="self" href="https://alchemy-rss.vercel.app/atom.xml"/>
+    <subtitle>将信息原矿提炼为知识纯金 (Inspired by ChanceYu/front-end-rss)</subtitle>
+    <icon>https://alchemy-rss.vercel.app/static/favicon.ico</icon>
+    <rights>All rights reserved 2026 by Alchemy Lab</rights>
+</feed>
