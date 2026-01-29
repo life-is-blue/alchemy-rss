@@ -49,8 +49,9 @@ watch(() => props.url, async (newUrl) => {
 
   loading.value = true
   try {
+    // 明确请求全局 API，避免被 Nuxt 内部代理拦截
     const data = await $fetch('/api/reader', {
-      params: { url: newUrl }
+      query: { url: newUrl }
     })
     article.value = data
   } catch (e) {

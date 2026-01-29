@@ -2,6 +2,10 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/api/reader",
+      "destination": "/api/reader"
+    },
+    {
       "source": "/u/:id",
       "destination": "/api/u?id=:id"
     },

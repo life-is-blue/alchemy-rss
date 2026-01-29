@@ -110,6 +110,9 @@ jobs:
           cp -r site/dist/* deploy/
         fi
         
+        # 拷贝后端 Serverless API
+        cp -r api deploy/
+        
         cp -r data deploy/ || true
         cp -r details deploy/ || true
         cp README.md deploy/ || true
