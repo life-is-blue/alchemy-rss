@@ -95,8 +95,3 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit_message: "arch: initial data branch setup"
         single-commit: false
-      with:
-        folder: deploy
-        branch: gh-pages
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit_message: "data: alchemy refinement update"
