@@ -8,7 +8,15 @@
           <span>Alchemy RSS</span>
         </div>
         <nav class="hidden md:flex items-center gap-6 text-[13px] text-text-sub">
-          <button @click="selectTab('全部')" :class="{ 'text-text-main font-bold': currentTab === '全部' }">首页</button>
+          <button 
+            @click="currentView = 'reader'; currentTab = '全部'; selectedUrl = ''" 
+            :class="{ 'text-text-main font-bold': currentView === 'reader' }"
+          >首页</button>
+          <button 
+            @click="currentView = 'sources'"
+            :class="{ 'text-text-main font-bold': currentView === 'sources' }"
+            class="hover:text-text-main transition-colors"
+          >RSS 源</button>
           <button class="hover:text-text-main transition-colors">我的书架</button>
         </nav>
       </div>
@@ -31,11 +39,11 @@
 
     <!-- Main Content Area -->
     <main class="flex-1 flex justify-center py-8 px-4 overflow-hidden relative">
-      <!-- Centered Book Card -->
+      <!-- Centered Unified Container -->
       <div class="w-full max-w-[1200px] book-card flex overflow-hidden relative">
         
         <!-- Left Sidebar (Integrated) -->
-        <aside class="hidden lg:flex w-64 flex-col border-r border-outline/5 p-8 gap-6 overflow-y-auto">
+        <aside class="hidden lg:flex w-64 flex-col border-r border-outline/5 p-8 gap-6 overflow-y-auto shrink-0 bg-white/50">
           <div>
             <p class="text-[11px] font-bold text-text-sub uppercase tracking-widest mb-4">内容来源</p>
             <div class="flex flex-col gap-1">
@@ -52,56 +60,87 @@
           </div>
         </aside>
 
-        <!-- Main Stream -->
-        <section class="flex-1 overflow-y-auto p-10 lg:p-16 bg-white custom-scrollbar">
-          <div class="max-w-[700px] mx-auto">
-            <h2 class="text-3xl font-black mb-12 tracking-tight">{{ currentTab === '全部' ? '精选提炼' : currentTab }}</h2>
+        <!-- Main Stream & Sources View (Stable Scrollbar) -->
+        <section class="flex-1 overflow-y-scroll bg-white custom-scrollbar transition-colors duration-500" :class="[selectedUrl ? `theme-${theme}` : '']" style="scrollbar-gutter: stable;">
+          <div class="max-w-[850px] mx-auto p-10 lg:px-16 lg:py-12">
             
-            <div v-if="loading" class="space-y-12">
-              <div v-for="i in 3" :key="i" class="space-y-4">
-                <div class="h-8 bg-black/5 rounded-lg w-3/4"></div>
-                <div class="h-4 bg-black/5 rounded-lg w-full"></div>
-                <div class="h-4 bg-black/5 rounded-lg w-5/6"></div>
+            <!-- Articles View -->
+            <div v-if="currentView === 'reader' && !selectedUrl">
+              <h2 class="text-3xl font-black mb-12 tracking-tight">{{ currentTab === '全部' ? '精选提炼' : currentTab }}</h2>
+              
+              <div v-if="loading" class="space-y-12">
+                <div v-for="i in 3" :key="i" class="space-y-4">
+                  <div class="h-8 bg-black/5 rounded-lg w-3/4"></div>
+                  <div class="h-4 bg-black/5 rounded-lg w-full"></div>
+                  <div class="h-4 bg-black/5 rounded-lg w-5/6"></div>
+                </div>
               </div>
+              
+              <template v-else>
+                <ArticleCard 
+                  v-for="article in filteredArticles" 
+                  :key="article.link"
+                  :article="article"
+                  @click="selectedUrl = article.link"
+                />
+              </template>
             </div>
-            
-            <template v-else>
-              <ArticleCard 
-                v-for="article in filteredArticles" 
-                :key="article.link"
-                :article="article"
-                @click="selectedUrl = article.link"
-              />
-            </template>
-          </div>
-        </section>
 
-        <!-- Detail Panel (Reader Mode) -->
-        <aside 
-          class="absolute inset-0 z-20 bg-white transition-all duration-500 transform"
-          :class="selectedUrl ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0 pointer-events-none'"
-        >
-          <div class="h-full flex flex-col max-w-[900px] mx-auto relative">
-            <header class="h-16 px-8 flex items-center border-b border-outline/5">
-              <button @click="selectedUrl = ''" class="flex items-center gap-2 text-text-sub hover:text-text-main transition-colors font-bold text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                返回目录
-              </button>
-            </header>
-            <div class="flex-1 overflow-y-auto p-10 lg:p-20 custom-scrollbar">
+            <!-- Sources View -->
+            <SourceGrid v-else-if="currentView === 'sources' && !selectedUrl" :sources="rssData" />
+
+            <!-- Detail View -->
+            <div v-if="selectedUrl" class="relative">
+              <header class="h-12 flex items-center mb-10">
+                <button @click="selectedUrl = ''" class="flex items-center gap-2 text-text-sub hover:text-text-main transition-colors font-bold text-sm">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                  返回目录
+                </button>
+              </header>
               <ReaderPanel :url="selectedUrl" />
             </div>
           </div>
-        </aside>
+        </section>
       </div>
 
-      <!-- Right Floating Action Bar -->
+      <!-- Right Floating Action Bar (Restored Sizes) -->
       <div class="hidden xl:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-4 z-30">
-        <button class="floating-action" title="目录"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="3" y1="6" y2="6"/><line x1="21" x2="9" y1="12" y2="12"/><line x1="21" x2="7" y1="18" y2="18"/></svg></button>
-        <button class="floating-action" title="字体"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg></button>
-        <button class="floating-action" title="想法"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
-        <div class="h-px w-6 bg-outline mx-auto my-2"></div>
-        <button class="floating-action" title="深色模式"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button 
+          @click="selectedUrl = ''" 
+          class="floating-action !w-[48px] !h-[48px]" 
+          title="目录"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="3" y1="6" y2="6"/><line x1="21" x2="9" y1="12" y2="12"/><line x1="21" x2="7" y1="18" y2="18"/></svg>
+        </button>
+        
+        <div class="group relative">
+          <button class="floating-action !w-[48px] !h-[48px]" title="字体">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
+          </button>
+          <div class="absolute right-full pr-4 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+            <div class="bg-white shadow-wechat rounded-2xl p-4 flex items-center gap-4 border border-outline/5 min-w-[140px]">
+              <button @click="decreaseFont" class="w-10 h-10 rounded-lg hover:bg-black/5 font-bold text-lg">-</button>
+              <span class="text-sm font-bold w-8 text-center">{{ fontSize }}</span>
+              <button @click="increaseFont" class="w-10 h-10 rounded-lg hover:bg-black/5 font-bold text-lg">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <button class="floating-action !w-[48px] !h-[48px]" title="背景">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </button>
+          <div class="absolute right-full pr-4 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+            <div class="bg-white shadow-wechat rounded-2xl p-3 flex items-center gap-3 border border-outline/5">
+              <button @click="theme = 'white'" class="w-8 h-8 rounded-full border border-outline bg-white active:scale-90 transition-transform" title="白色"></button>
+              <button @click="theme = 'sepia'" class="w-8 h-8 rounded-full border border-outline bg-[#F4ECD8] active:scale-90 transition-transform" title="护眼"></button>
+              <button @click="theme = 'parchment'" class="w-8 h-8 rounded-full border border-outline bg-[#FAF9F6] active:scale-90 transition-transform" title="纸张"></button>
+              <button @click="theme = 'night'" class="w-8 h-8 rounded-full border border-outline bg-[#1A1B1E] active:scale-90 transition-transform" title="深色"></button>
+            </div>
+          </div>
+        </div>
+
+        <button class="floating-action !w-[48px] !h-[48px]" title="想法"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
       </div>
     </main>
 
@@ -130,7 +169,15 @@ const {
   selectTab 
 } = useArticles()
 
+const {
+  fontSize,
+  theme,
+  increaseFont,
+  decreaseFont
+} = useReadingSettings()
+
 const selectedUrl = ref('')
+const currentView = ref('reader') // reader, sources
 
 onMounted(() => {
   loadData()

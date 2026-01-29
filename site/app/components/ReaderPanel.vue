@@ -1,7 +1,7 @@
 <template>
   <div class="h-full flex flex-col bg-white overflow-hidden">
     <!-- Loading State -->
-    <div v-if="loading" class="p-10 lg:p-20 space-y-10 animate-pulse">
+    <div v-if="loading" class="space-y-10 animate-pulse">
       <div class="h-10 bg-black/[0.03] rounded-lg w-4/5"></div>
       <div class="h-4 bg-black/[0.03] rounded-lg w-1/4"></div>
       <div class="space-y-4 pt-10">
@@ -12,8 +12,12 @@
     </div>
 
     <!-- Article Content -->
-    <div v-else-if="article" class="flex-1 overflow-y-auto p-10 lg:p-20 custom-content selection:bg-primary/10">
-      <header class="mb-16 max-w-[750px] mx-auto text-center lg:text-left">
+    <div 
+      v-else-if="article" 
+      class="flex-1 overflow-y-auto custom-content selection:bg-primary/10 transition-colors duration-500"
+      :class="[`theme-${theme}`]"
+    >
+      <header class="mb-16 text-center lg:text-left">
         <div class="flex items-center justify-center lg:justify-start gap-2 text-[11px] font-bold text-[#B2B2B2] uppercase tracking-[0.2em] mb-6">
           <span>{{ article.siteName || 'Alchemy Archive' }}</span>
           <span v-if="article.byline" class="opacity-30">/</span>
@@ -25,7 +29,11 @@
         <div class="w-12 h-1 bg-primary/10 rounded-full mx-auto lg:mx-0"></div>
       </header>
 
-      <article class="prose prose-lg max-w-[750px] mx-auto text-[#333] leading-[1.9] text-[18px] font-normal article-body" v-html="article.content"></article>
+      <article 
+        class="prose prose-lg max-w-[750px] mx-auto text-[#333] leading-[1.9] font-normal article-body" 
+        :style="{ fontSize: fontSize + 'px' }"
+        v-html="article.content"
+      ></article>
       
       <footer class="mt-20 mb-10 max-w-[750px] mx-auto border-t border-outline/10 pt-10 text-center">
         <div class="text-[11px] font-bold text-text-sub uppercase tracking-widest mb-8">End of Content</div>
@@ -54,6 +62,8 @@
 const props = defineProps({
   url: String
 })
+
+const { fontSize, theme } = useReadingSettings()
 
 const article = ref(null)
 const loading = ref(false)
@@ -125,5 +135,22 @@ watch(() => props.url, async (newUrl) => {
   text-decoration: underline;
   text-underline-offset: 4px;
   font-weight: 600;
+}
+
+/* Themes */
+.theme-white { background-color: #FFFFFF; color: #333; }
+.theme-sepia { background-color: #F4ECD8; color: #5B4636; }
+.theme-parchment { 
+  background-color: #FAF9F6; 
+  background-image: url("https://www.transparenttextures.com/patterns/papyrus-dark.png");
+  color: #444; 
+}
+.theme-night { background-color: #1A1B1E; color: #A0A0A0; }
+
+.theme-night .article-body h1, 
+.theme-night .article-body h2, 
+.theme-night .article-body h3,
+.theme-night h1 {
+  color: #E0E0E0;
 }
 </style>
