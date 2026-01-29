@@ -87,12 +87,13 @@ jobs:
       working-directory: ./site
       run: |
         pnpm install
-        pnpm run build
+        pnpm run generate
 
     - name: Prepare Deployment Folder
       run: |
         mkdir -p deploy
-        cp -r site/dist/* deploy/
+        # Nuxt 4 static output is in .output/public
+        cp -r site/.output/public/* deploy/
         cp -r data deploy/ || true
         cp -r details deploy/ || true
         cp README.md deploy/ || true
