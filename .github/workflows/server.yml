@@ -84,9 +84,12 @@ jobs:
         fi
 
     - name: Build Frontend
+      if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
       working-directory: ./site
       run: |
-        pnpm install
+        # 彻底解决 oxc-parser 等原生绑定在 CI 环境失效的问题
+        rm -rf node_modules
+        pnpm install --no-frozen-lockfile
         pnpm run generate
 
     - name: Prepare Deployment Folder
