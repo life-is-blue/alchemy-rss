@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full flex flex-col bg-white overflow-hidden">
+  <div class="bg-white">
     <!-- Loading State -->
     <div v-if="loading" class="space-y-10 animate-pulse">
       <div class="h-10 bg-black/[0.03] rounded-lg w-4/5"></div>
@@ -14,7 +14,7 @@
     <!-- Article Content -->
     <div 
       v-else-if="article" 
-      class="flex-1 overflow-y-auto custom-content selection:bg-primary/10 transition-colors duration-500"
+      class="custom-content selection:bg-primary/10 transition-colors duration-500"
       :class="[`theme-${theme}`]"
     >
       <header class="mb-16 text-center lg:text-left">
@@ -50,10 +50,19 @@
           </li>
         </ul>
 
-        <div class="mt-6 pt-6 border-t border-black/[0.05] flex flex-wrap gap-4 text-xs font-bold text-text-sub uppercase tracking-wider">
-          <span v-if="article.readTime">⏱️ {{ article.readTime }} min read</span>
-          <span v-if="article.score">🔥 Score: {{ article.score }}</span>
-          <span v-if="article.wordCount">📝 {{ article.wordCount }} words</span>
+        <div class="mt-6 pt-6 border-t border-black/[0.05] flex flex-wrap gap-6 text-xs font-bold text-text-sub uppercase tracking-wider items-center">
+          <span v-if="article.readTime" class="flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {{ article.readTime }} MIN READ
+          </span>
+          <span v-if="article.score" class="flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            SCORE: {{ article.score }}
+          </span>
+          <span v-if="article.wordCount" class="flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+            {{ article.wordCount }} WORDS
+          </span>
         </div>
       </div>
 
@@ -64,7 +73,14 @@
       ></article>
       
       <footer class="mt-20 mb-10 max-w-[750px] mx-auto border-t border-outline/10 pt-10 text-center">
-        <div class="text-[11px] font-bold text-text-sub uppercase tracking-widest mb-8">End of Content</div>
+        <button 
+          @click="scrollToTop"
+          class="flex items-center gap-2 mx-auto mb-8 text-xs font-bold text-text-sub uppercase tracking-widest hover:text-primary transition-colors group"
+        >
+          <span>End of Content</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:-translate-y-1 transition-transform"><path d="m18 15-6-6-6 6"/></svg>
+        </button>
+        
         <div class="flex justify-center gap-4">
           <button class="px-8 py-3 rounded-full border border-outline text-sm font-bold text-text-sub hover:text-text-main hover:border-text-main transition-all">
             分享想法
@@ -77,7 +93,7 @@
     </div>
 
     <!-- Empty State -->
-    <div v-else class="h-full flex flex-col items-center justify-center text-text-sub/30 text-center gap-6 p-10">
+    <div v-else class="flex flex-col items-center justify-center text-text-sub/30 text-center gap-6 p-10 min-h-[50vh]">
       <div class="w-20 h-20 rounded-full bg-black/[0.02] flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/><path d="M8 15h6"/></svg>
       </div>
@@ -91,10 +107,16 @@ const props = defineProps({
   url: String
 })
 
+const emit = defineEmits(['scroll-top'])
+
 const { fontSize, theme } = useReadingSettings()
 
 const article = ref(null)
 const loading = ref(false)
+
+const scrollToTop = () => {
+  emit('scroll-top')
+}
 
 watch(() => props.url, async (newUrl) => {
   if (!newUrl) {

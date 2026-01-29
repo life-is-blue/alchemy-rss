@@ -70,6 +70,7 @@
 
         <!-- Main Stream & Content -->
         <section 
+          ref="mainContent"
           class="flex-1 overflow-y-scroll custom-scrollbar transition-colors duration-500" 
           :class="[selectedUrl ? `theme-${theme}` : 'bg-white']" 
           style="scrollbar-gutter: stable;"
@@ -113,7 +114,7 @@
                     返回目录
                   </button>
                 </header>
-                <ReaderPanel :url="selectedUrl" />
+                <ReaderPanel :url="selectedUrl" @scroll-top="scrollToTop" />
               </div>
             </transition>
           </div>
@@ -158,6 +159,16 @@
         </div>
 
         <button class="floating-action active-press shadow-lg" title="想法"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+        
+        <div class="h-px w-8 bg-black/5 mx-auto my-1"></div>
+
+        <button 
+          @click="scrollToTop" 
+          class="floating-action active-press shadow-lg" 
+          title="回到顶部"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        </button>
       </div>
     </main>
 
@@ -195,6 +206,20 @@ const {
 
 const selectedUrl = ref('')
 const currentView = ref('reader') // reader, sources
+const mainContent = ref(null)
+
+const scrollToTop = () => {
+  // 1. Ref 优先
+  if (mainContent.value) {
+    mainContent.value.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+  // 2. 广撒网：抓取所有可能的滚动容器
+  document.querySelectorAll('.overflow-y-scroll, .overflow-y-auto').forEach(el => {
+    el.scrollTo({ top: 0, behavior: 'smooth' })
+  })
+  // 3. 兜底 Window
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
 onMounted(() => {
   loadData()
