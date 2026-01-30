@@ -1,12 +1,24 @@
-:alarm_clock: 更新时间: 2026-01-31 00:08:09。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 02:07:52。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
 
 
 
+- **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
+  > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
+
+
 - **[2026-01-31-2026-年，手机厂商是时候拥抱公有快充协议了](https://www.bestblogs.dev/article/6262f25b)**
   > 📌 一句话摘要              本文分析了 2026 年手机快充行业的转折点，指出公有协议（PPS）在功率上已能比肩私有协议，标志着私有快充割据时代的终结。 📝 详细摘要              文章探讨了 2026 年手机快充领域的核心变革：公有快充协议（如 PPS、UFCS）正迎来与私有协议的分水岭。以小米 17 系列支持 100W PPS 为标杆，文章详细解析了 PPS（可编
+
+
+- **[2026-01-31-Google-的-AI-优势：为什么爬虫分离是通往公平互联网的唯一路径](https://www.bestblogs.dev/article/6014d5f9)**
+  > 📌 一句话摘要              Cloudflare 认为英国 CMA 必须强制要求 Google 分离其搜索和 AI 爬虫，以防止 Google 利用其搜索垄断地位在生成式 AI 市场获得不公平优势。 📝 详细摘要              本文讨论了英国竞争与市场管理局（CMA）关于 Google “战略市场地位”及其对数字出版影响的咨询。Cloudflare 认为 Google
+
+
+- **[2026-01-31-Moltbook-是目前互联网上最有趣的地方](https://www.bestblogs.dev/article/a7ddb1f2)**
+  > 📌 一句话摘要              本文探讨了基于 OpenClaw 生态系统的 AI 智能体社交网络 Moltbook，重点介绍了自主助手的快速普及及其带来的严重安全风险。 📝 详细摘要              本文探讨了开源数字个人助手框架 OpenClaw（原名 Clawdbot）及其配套社交网络 Moltbook 的兴起。Moltbook 允许 AI 智能体自主发布、评论和分享
 
 
 - **[2026-01-30-开源版-Claude-Code-来了，48-小时的深度使用教程](https://www.bestblogs.dev/article/340a76ad)**
@@ -37,12 +49,12 @@
   > 📌 一句话摘要              文章深度解析了 Richard Socher 创办 Recursive 探索 AI 自我进化机制，并提出从“提示工程”转向“奖励工程”的 AI 演进核心观。 📝 详细摘要              本文围绕 AI 领域连续创业者 Richard Socher 的职业路径，重点介绍了其新公司 Recursive 的前沿愿景：构建能够递归自我改进、不依赖人
 
 
-- **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
-  > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
-
-
 - **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
   > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
+
+
+- **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
+  > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
 
 
 - **[2026-01-30-OpenAI-关键九问：2026-AI-战局升级后迎来叙事反转](https://www.bestblogs.dev/article/0217aec7)**
@@ -95,6 +107,10 @@
 
 - **[2026-01-30-智能体开启购物模式，重新定义智能，更出色的图片文字渲染，以及更多内容……](https://www.bestblogs.dev/article/8a584b9b)**
   > 📌 一句话摘要              本期 The Batch 探讨了主权 AI 的兴起、Google 新推出的智能体商业协议、智谱 AI 在图像文字渲染方面的突破，以及 AI 基准测试的演进。 📝 详细摘要              本文多维度更新了全球 AI 领域的动态。首先是吴恩达（Andrew Ng）关于“主权 AI”的社论，他认为美国的出口管制和地缘政治紧张局势正促使各国通过开源
+
+
+- **[2026-01-30-从“破墙”到“握手”：手机终端智能体的技术原理与产业实践](https://www.bestblogs.dev/article/30eecbed)**
+  > 📌 一句话摘要              本文深度剖析了手机智能体（Agent）的两大技术路线：高风险但易落地的“GUI 模拟”与安全合规但依赖生态的“API 协同”，并倡导通过意图框架构建产业共生新范式。 📝 详细摘要              文章探讨了人工智能从“思考”向“执行”进阶过程中，手机终端智能体面临的技术路径选择。重点对比了以字节跳动“豆包”为代表的“GUI 模拟”路线和以阿里
 
 
 - **[2026-01-30-AINews-SpaceXai-Grok-Imagine-API-——-排名第一的视频模型，拥有最优价格与延迟](https://www.bestblogs.dev/article/49af5d75)**
@@ -369,28 +385,24 @@
   > 📌 一句话摘要              文章深度解析了围绕 Claude Code 形成的“套壳 2.0”生态，探讨了社区工具如何通过补齐官方产品的场景化短板，系统性地重塑 AI Agent 的用户预期。 📝 详细摘要              本文以 Clawdbot（现更名为 Moltbot）的爆红为切入点，提出了“套壳 2.0”的概念。不同于早期仅提供 UI 包装的套壳，2.0 时代的
 
 
-- **[2026-01-29-世界模型-LingBot-World，正式开源！](https://www.bestblogs.dev/article/ee793d96)**
-  > 📌 一句话摘要              蚂蚁灵波团队开源了交互式世界模型 LingBot-World，支持 10 分钟长视频生成与毫秒级实时交互，为具身智能提供高保真“数字演练场”。 📝 详细摘要              本文介绍了蚂蚁灵波团队正式开源的交互式世界模型框架 LingBot-World。该模型旨在解决具身智能训练中真实世界数据获取成本高、不确定性大的核心痛点。LingBot-
-
-
 - **[2026-01-29-LingBot-VLA-具身大模型全面开源](https://www.bestblogs.dev/article/652a6eda)**
   > 📌 一句话摘要              蚂蚁灵波科技开源具身大模型 LingBot-VLA，通过 2 万小时真机数据预训练和深度信息对齐机制，实现了卓越的跨本体泛化能力与高效的后训练性能。 📝 详细摘要              文章详细介绍了蚂蚁灵波科技推出的具身大模型 LingBot-VLA。该模型旨在解决具身智能在不同硬件本体和任务环境下的泛化难题，提出了“一脑多机”的解决方案。通过对
 
 
+- **[2026-01-29-世界模型-LingBot-World，正式开源！](https://www.bestblogs.dev/article/ee793d96)**
+  > 📌 一句话摘要              蚂蚁灵波团队开源了交互式世界模型 LingBot-World，支持 10 分钟长视频生成与毫秒级实时交互，为具身智能提供高保真“数字演练场”。 📝 详细摘要              本文介绍了蚂蚁灵波团队正式开源的交互式世界模型框架 LingBot-World。该模型旨在解决具身智能训练中真实世界数据获取成本高、不确定性大的核心痛点。LingBot-
+
+
 - **[2026-01-29-视频界的-Skills-来了，好用到爆炸](https://www.bestblogs.dev/article/cd5b38ec)**
-  > 📌 一句话摘要              文章解析了 Vidu AI 视频新推出的“主体社区”功能，将其类比为视频领域的 Skills，通过封装专业运镜与风格预设降低创作门槛。 📝 详细摘要              本文详细介绍了国内 AI 视频产品 Vidu 推出的“主体社区”功能。作者将其核心逻辑类比为近期流行的“Skills”，认为这是对视频创作中 Workflow 和专业经验的封装。
 
 
 - **[2026-01-29-xAI-Grok-Imagine-API---排名第一的视频模型，最佳价格与延迟---以及与-SpaceX-的合并](https://www.bestblogs.dev/article/c8a9691f)**
-  > 📌 一句话摘要              这份全面的 AI 新闻综述重点介绍了 xAI Grok Imagine API 的发布、Google 的 Genie 3 世界模拟器，以及 Kimi K2.5 作为主导开源模型的崛起。 📝 详细摘要              本文对 2026 年 1 月下旬的 AI 发展进行了高密度综合。重点关注 xAI 的 Grok Imagine API，该 AP
 
 
 - **[2026-01-29-我的-Clawdbot-和你的一样，只不过你多花了-4000-元](https://www.bestblogs.dev/article/4001140b)**
-  > 📌 一句话摘要              本文探讨了利用廉价 Linux VPS 替代昂贵硬件（如 Mac Mini）部署 Claude Code (Clawdbot) 的实战方案，并展示了其在代码审计、市场调研及自动化提醒等场景的应用。 📝 详细摘要              作者针对近期因 Claude Code 走红而引发的 Mac Mini 抢购潮提出异议，指出 Mac 系统本质是 U
 
 
 - **[2026-01-29-估值-390-亿美金，全球最贵的人形机器人公司在研究用脚关洗碗机](https://www.bestblogs.dev/article/7e1a243b)**
-  > 📌 一句话摘要              Figure 发布 Helix 02 模型，通过端到端神经网络实现了人形机器人运动与操控的深度统一，标志着具身智能从模块化控制向全身自主进化的重要里程碑。 📝 详细摘要              本文详细报道了全球估值最高的人形机器人公司 Figure 发布的最新模型 Helix 02。该模型的核心突破在于实现了“移动操控”的统一，即机器人能像人类一样
 
 
 - **[2026-01-29-周亚辉为什么把时间花在“写歌”上？|-实测-Mureka-V8](https://www.bestblogs.dev/article/ea4baebd)**
@@ -418,12 +430,6 @@
 
 
 - **[2026-01-29-Clawdbot-创作者-Peter-Steinberger-首次公开亮相，讲述-AI-失控、被迫更名和拒绝-VC-的疯狂一周](https://www.bestblogs.dev/article/caddd8bd)**
-
-
-- **[2026-01-29-周亚辉想做-AI-版-Spotify：日活冲到-1-个亿，就不怕大厂“偷袭”](https://www.bestblogs.dev/article/c82ad711)**
-
-
-- **[2026-01-29-MiniMax-Music-2.5:-格莱美级创作，不再需要录音棚](https://www.bestblogs.dev/article/9f58d1db)**
 
 
 - **[2026-01-28-7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)**
