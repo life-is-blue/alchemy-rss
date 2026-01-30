@@ -1,10 +1,22 @@
-:alarm_clock: 更新时间: 2026-01-30 18:08:04。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 20:05:18。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
 
 > 关键字：`AI`、`GPT`、`LLM`、`Agent`、`RAG`、`Transformer`、`Diffusion`、`DeepSeek`、`OpenAI`、`Claude`、`Llama`、`Model`、`Artificial Intelligence`、`Machine Learning`
 
+
+
+- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
+  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
+
+
+- **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
+  > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
+
+
+- **[2026-01-30-【淘宝直播数字人互动-LLM】告别-AI-感：基于真人-ASR-数据的拟人化探索](https://www.bestblogs.dev/article/88cd2f23)**
+  > 📌 一句话摘要              本文介绍了淘宝直播如何利用真人 ASR 数据，通过构建改写模型和引入 GRPO 强化学习框架，解决数字人直播中 LLM 回复过于书面化、缺乏真实感的问题。 📝 详细摘要              文章针对数字人直播中 LLM 生成内容“AI 感”过强、书面化严重的痛点，提出了一套基于真人直播 ASR（语音识别）数据的拟人化训练方案。核心思路是利用真人直
 
 
 - **[2026-01-30-早报｜iPhone-销量创历史新高，库克：全球所有地区均刷新纪录/曝阿里字节春节前后齐发旗舰模型/特斯拉宣布停产-Model-S/X](https://www.bestblogs.dev/article/1b1e7782)**
@@ -25,6 +37,10 @@
 
 - **[2026-01-30-我宣布，这就是现在人声最真实的-AI-音乐模型。](https://www.bestblogs.dev/article/7d86e5ae)**
   > 📌 一句话摘要              本文深度评测了 MiniMax 新发布的 Music 2.5 音乐模型，重点解析其在人声真实感、多语言咬字及方言适配上的突破，并分享了结合提示词工具的实战创作流。 📝 详细摘要              文章对 MiniMax 最新发布的音乐大模型 Music 2.5 进行了详尽的实战评测。作者指出，该模型在人声表现力上实现了质的飞跃，能够模拟人类嗓音
+
+
+- **[2026-01-30-视频剪辑的「Cursor-时刻」来了？｜对谈-ChatCut-创始人李凯文：从金马导演到-AI-创业](https://www.bestblogs.dev/article/50fb5b80)**
+  > 📌 一句话摘要              对谈 ChatCut 创始人李凯文，探讨如何通过 AI 重塑视频剪辑工作流，强调“不生成像素”而聚焦于“剪辑助理”逻辑的差异化产品哲学。 📝 详细摘要              本文是针对 ChatCut 创始人李凯文的深度访谈。李凯文结合其金马奖入围导演及纪录片拍摄背景，提出了视频剪辑的“Cursor 时刻”概念。他认为 AI 在视频领域的真正价值不
 
 
 - **[2026-01-30-用-AI-做深度用户访谈，获蓝驰、高瓴、王慧文投资](https://www.bestblogs.dev/article/1706b025)**
@@ -96,6 +112,10 @@
   > 📌 一句话摘要              Cloudflare 推出了 Moltworker，这是一个概念验证项目，它将开源的 Moltbot AI 智能体适配到 Cloudflare 的无服务器基础设施上运行，而非依赖本地硬件。 📝 详细摘要              本文探讨了将 Moltbot（一种通常在 Mac mini 上运行的流行自托管 AI 智能体）迁移到使用 Cloudflar
 
 
+- **[2026-01-29-图解全文|-Clawdbot-创始人揭秘背后的“闭环原则”:-一天-600-次提交，-不读代码-;-从-10-亿设备-PDF-大神到-AI“编织者”-|-3.5w-全文+视频](https://www.bestblogs.dev/article/99175b56)**
+  > 📌 一句话摘要              资深开发者 Peter Stringberger 揭秘如何通过“闭环原则”利用 AI 智能体实现极速开发，将开发者角色从代码编写者转变为系统架构师。 📝 详细摘要              本文是 Clawdbot 创始人 Peter Stringberger 的深度访谈综述。他分享了从开发 10 亿设备量级的 PSPDFKit 到利用 AI 智能体构
+
+
 - **[2026-01-29-凭借-27-万小时真机数据，Generalist-可能是最接近“GPT-1-时刻”的顶级机器人团队](https://www.bestblogs.dev/article/952dbaa7)**
   > 📌 一句话摘要              本文深度解析了机器人初创公司 Generalist 如何通过 27 万小时真机数据率先验证机器人领域的 Scaling Law，并探讨其在灵巧操作与模型架构上的核心竞争力。 📝 详细摘要              文章详细介绍了具身智能领域的新锐公司 Generalist。该公司由来自 Google DeepMind 和 Boston Dynamics
 
@@ -110,6 +130,10 @@
 
 - **[2026-01-29-Context-Is-All-You-Need：快手后端-AI-Coding-的实践与思考](https://www.bestblogs.dev/article/319a8fd8)**
   > 📌 一句话摘要              本文深入探讨了快手如何通过构建“码图”框架和 Multi-Agent 架构，解决 Java 后端 AI Coding 中上下文缺失与可控性差的难题，实现从“猜需求”到“按计划执行”的研发范式转型。 📝 详细摘要              文章针对 Java 后端 AI Coding 面临的核心挑战——PRD 与工程事实之间的信息断层，提出了快手的解决方
+
+
+- **[2026-01-29-谷歌-AI-掌门人、诺奖得主-Demis：AGI-需要打破“金鱼记忆”，而谷歌无论泡沫破裂与否都将是赢家](https://www.bestblogs.dev/article/c3ebb5aa)**
+  > 📌 一句话摘要              Google DeepMind CEO Demis Hassabis 探讨了 AGI 的科学定义、当前 AI 的“金鱼记忆”局限、智能眼镜的硬件趋势以及将宇宙视为信息系统的哲学观。 📝 详细摘要              本文是 Google DeepMind 负责人 Demis Hassabis 的深度专访综述。Hassabis 驳斥了“大模型撞墙论
 
 
 - **[2026-01-29-比-OpenAI-更-Manus，实测-Kimi-新上线多核-Agent-集群](https://www.bestblogs.dev/article/7202f908)**
@@ -266,15 +290,6 @@
 
 
 - **[2026-01-28-帮助-AI-智能体使用-API-的两种方法（以及为什么你需要两者兼顾）](https://www.bestblogs.dev/article/c112be3e)**
-
-
-- **[2026-01-28-我做出了给长视频-AI-配乐的-Claude-Code-Skills，Mureka-V8-新模型上大分](https://www.bestblogs.dev/article/1acaf4a2)**
-
-
-- **[2026-01-28-DeepSeek-之后：中国开源人工智能生态的架构选择](https://www.bestblogs.dev/article/f17a255d)**
-
-
-- **[2026-01-28-MiniMax-M2-her：我们做出了更懂你的-AI](https://www.bestblogs.dev/article/f781df9a)**
 
 
 - **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**

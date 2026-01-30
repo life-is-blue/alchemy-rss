@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-30 18:08:04。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-30 20:05:18。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -24,11 +24,15 @@
 
 
 
+- [【精选文章 (BestBlogs)】50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)
+- [【精选文章 (BestBlogs)】OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)
+- [【精选文章 (BestBlogs)】【淘宝直播数字人互动-LLM】告别-AI-感：基于真人-ASR-数据的拟人化探索](https://www.bestblogs.dev/article/88cd2f23)
 - [【精选文章 (BestBlogs)】早报｜iPhone-销量创历史新高，库克：全球所有地区均刷新纪录/曝阿里字节春节前后齐发旗舰模型/特斯拉宣布停产-Model-S/X](https://www.bestblogs.dev/article/1b1e7782)
 - [【精选文章 (BestBlogs)】OpenAI-前研究员：模型能自行突破困难才叫-AGI，最大问题是泛化；最重要技能是“管理初级工程师”，机器人出现“ChatGPT-时刻”只需两到三年](https://www.bestblogs.dev/article/92f68efa)
 - [【精选文章 (BestBlogs)】AINews-SpaceXai-Grok-Imagine-API-——-排名第一的视频模型，拥有最优价格与延迟](https://www.bestblogs.dev/article/49af5d75)
 - [【精选文章 (BestBlogs)】GenAI-系统的隐性技术债](https://www.bestblogs.dev/article/9f6aae88)
 - [【精选文章 (BestBlogs)】我宣布，这就是现在人声最真实的-AI-音乐模型。](https://www.bestblogs.dev/article/7d86e5ae)
+- [【精选文章 (BestBlogs)】视频剪辑的「Cursor-时刻」来了？｜对谈-ChatCut-创始人李凯文：从金马导演到-AI-创业](https://www.bestblogs.dev/article/50fb5b80)
 - [【精选文章 (BestBlogs)】用-AI-做深度用户访谈，获蓝驰、高瓴、王慧文投资](https://www.bestblogs.dev/article/1706b025)
 - [【精选文章 (BestBlogs)】AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://www.bestblogs.dev/article/0b0fa790)
 - [【精选文章 (BestBlogs)】科技爱好者周刊（第-383-期）：你是第几级-AI-编程](https://www.bestblogs.dev/article/a59fad1b)
@@ -40,10 +44,6 @@
 - [【精选文章 (BestBlogs)】即将到来的-AI-for-Science-大爆发](https://www.bestblogs.dev/article/45e86e06)
 - [【精选文章 (BestBlogs)】想用-Clawdbot-何必抢-Mac-mini，手把手教你打造最强本地-Agent，立省-200-美元-|-附保姆级教程](https://www.bestblogs.dev/article/cb92a480)
 - [【精选文章 (BestBlogs)】最强开源模型易主？Kimi-发布-k2.5-用-Agent-集群解决长文本+视觉生成](https://www.bestblogs.dev/article/a2a89b98)
-- [【精选文章 (BestBlogs)】DeepAgents-的上下文管理](https://www.bestblogs.dev/article/2a3e3f6e)
-- [【精选文章 (BestBlogs)】阿里重磅开源！OpenSandbox：专为-AI-Agent-打造的下一代沙箱](https://www.bestblogs.dev/article/b7ca6be0)
-- [【精选文章 (BestBlogs)】全球最强-AI-音乐模型，现在来自中国！高晓松也来围观了](https://www.bestblogs.dev/article/78fbd3ed)
-- [【精选文章 (BestBlogs)】AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)
 - [查看更多 >](/details/tags/ai-llm.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
@@ -141,11 +141,14 @@
 
 
 
+- [【精选文章 (BestBlogs)】2026-年，手机厂商是时候拥抱公有快充协议了](https://www.bestblogs.dev/article/6262f25b)
 - [【精选文章 (BestBlogs)】WASM-组件是-FaaS-的最佳拍档](https://www.bestblogs.dev/article/82d010c4)
+- [【精选文章 (BestBlogs)】大模型思维链推理速度倍增！——RoT-新框架把思维链「画」进隐空间](https://www.bestblogs.dev/article/390f20ab)
 - [【精选文章 (BestBlogs)】自主大数据优化：利用多智能体强化学习实现-Apache-Spark-的自动调优](https://www.bestblogs.dev/article/6c661043)
-- [【精选文章 (BestBlogs)】大模型的第一性原理：（二）信号处理篇](https://www.bestblogs.dev/article/e5acc4da)
 - [【精选文章 (BestBlogs)】揭秘！RLVR/GRPO-中那些长期被忽略的关键缺陷](https://www.bestblogs.dev/article/19cc6340)
+- [【精选文章 (BestBlogs)】大模型的第一性原理：（二）信号处理篇](https://www.bestblogs.dev/article/e5acc4da)
 - [【精选文章 (BestBlogs)】2026-01-30-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/2c5b3eaa)
+- [【精选文章 (BestBlogs)】2026-前沿科技趋势：塑造自己的下一个版本](https://www.bestblogs.dev/article/d768a01c)
 - [【精选文章 (BestBlogs)】实测-Genie：各位，传说中的世界模型被-Google-做出来了](https://www.bestblogs.dev/article/3b29f77e)
 - [【精选文章 (BestBlogs)】全球首个大模型在轨部署：中国太空算力解锁“软硬一体”](https://www.bestblogs.dev/article/4d452809)
 - [【精选文章 (BestBlogs)】【第-3651-期】vivo-互联网全链路多版本环境落地实践](https://www.bestblogs.dev/article/c15661b3)
@@ -158,9 +161,6 @@
 - [【精选文章 (BestBlogs)】五个级别：从高级自动补全到黑暗工厂](https://www.bestblogs.dev/article/238cb7b8)
 - [【精选文章 (BestBlogs)】实测苹果博主十件套：每月-¥38-，能替代剪映和-PS-吗？](https://www.bestblogs.dev/article/ea89c6b2)
 - [【精选文章 (BestBlogs)】逆天！机器人终于学会了刷完，还能用胯胯轴关抽屉](https://www.bestblogs.dev/article/26c89614)
-- [【精选文章 (BestBlogs)】Swift-跨平台框架-Skip-现已完全开源](https://www.bestblogs.dev/article/1628d64a)
-- [【精选文章 (BestBlogs)】如何编写高性能代码](https://www.bestblogs.dev/article/f940a947)
-- [【精选文章 (BestBlogs)】如何在-Python-中使用建造者模式：开发者实用指南](https://www.bestblogs.dev/article/77a6480e)
 - [查看更多 >](/details/tags/other.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
