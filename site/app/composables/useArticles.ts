@@ -32,17 +32,16 @@ export const useArticles = () => {
           found = true
         }
       }
-
-      // 兜底：如果没匹配到，看 rssTitle
-      if (!found && article.rssTitle) {
-        const title = article.rssTitle
-        counts[title] = (counts[title] || 0) + 1
-      }
+      // 不再将 RSS Source 作为侧边栏分类，保持侧边栏纯净
     })
 
     return Object.entries(counts)
       .map(([name, count]) => ({ name, count }))
-      .sort((a, b) => b.count - a.count)
+      .filter(c => c.name === '全部' || Object.values(CATEGORY_MAP).includes(c.name)) // 严格白名单过滤
+      .sort((a, b) => {
+        if (a.name === '全部') return -1
+        return b.count - a.count
+      })
   })
 
   const loadData = async () => {
@@ -92,7 +91,12 @@ export const useArticles = () => {
       list = list.filter(a => {
         const tags = a.tags || []
         const mappedCat = Object.keys(CATEGORY_MAP).find(k => CATEGORY_MAP[k] === currentTab.value)
-        return a.rssTitle === currentTab.value || tags.includes(currentTab.value) || (mappedCat && tags.includes(mappedCat))
+        
+        // 匹配规则：1. 标签匹配 2. 映射分类匹配 3. 来源标题简化后匹配
+        const isTagMatch = tags.includes(currentTab.value) || (mappedCat && tags.includes(mappedCat))
+        const isTitleMatch = a.rssTitle && a.rssTitle.split('(')[0].trim() === currentTab.value
+        
+        return isTagMatch || isTitleMatch
       })
     }
 
