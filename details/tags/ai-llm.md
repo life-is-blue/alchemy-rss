@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 02:07:52。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 04:03:55。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -41,6 +41,10 @@
 
 - **[2026-01-30-OpenAI-关键九问：2026-AI-战局升级后迎来叙事反转](https://www.bestblogs.dev/article/0217aec7)**
   > 📌 一句话摘要              本文深度剖析了 OpenAI 在 2026 年面临的竞争格局，预测其将通过 Memory、主动智能体及电商广告闭环实现从“逆风局”到叙事反转的战略路径。 📝 详细摘要              文章针对 2026 年初 OpenAI 面临 Google Gemini 与 Anthropic 夹击的现状进行了深度复盘。作者认为，尽管 Google 在模型
+
+
+- **[2026-01-30-使用基于-Amazon-S3-的模板通过-Amazon-SageMaker-AI-项目简化-ModelOps-|-Amazon-Web-Services](https://www.bestblogs.dev/article/20de8c3c)**
+  > 📌 一句话摘要              AWS 为 SageMaker AI 项目推出了基于 S3 的模板，通过将复杂的 Service Catalog 配置替换为存储在 S3 中的版本化 CloudFormation 模板，简化了 ModelOps。 📝 详细摘要              本文介绍了 Amazon SageMaker AI 项目的一项重大更新：支持使用基于 Amazon
 
 
 - **[2026-01-30-【淘宝直播数字人互动-LLM】告别-AI-感：基于真人-ASR-数据的拟人化探索](https://www.bestblogs.dev/article/88cd2f23)**

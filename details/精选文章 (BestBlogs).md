@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 02:07:52。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 04:03:55。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
@@ -63,6 +63,10 @@
 
 - **[2026-01-30-WASM-组件是-FaaS-的最佳拍档](https://www.bestblogs.dev/article/82d010c4)**
   > 📌 一句话摘要              本文探讨了为什么 WebAssembly (Wasm) 组件是函数即服务 (FaaS) 的理想运行时，并重点介绍了 Wasm 组件模型和 wasmCloud 框架。 📝 详细摘要              Couchbase 开发者关系总监 Laurent Doguin 讨论了函数即服务 (FaaS) 的演进以及对完美运行时的探索。他对比了传统的执行模
+
+
+- **[2026-01-30-使用基于-Amazon-S3-的模板通过-Amazon-SageMaker-AI-项目简化-ModelOps-|-Amazon-Web-Services](https://www.bestblogs.dev/article/20de8c3c)**
+  > 📌 一句话摘要              AWS 为 SageMaker AI 项目推出了基于 S3 的模板，通过将复杂的 Service Catalog 配置替换为存储在 S3 中的版本化 CloudFormation 模板，简化了 ModelOps。 📝 详细摘要              本文介绍了 Amazon SageMaker AI 项目的一项重大更新：支持使用基于 Amazon
 
 
 - **[2026-01-30-【淘宝直播数字人互动-LLM】告别-AI-感：基于真人-ASR-数据的拟人化探索](https://www.bestblogs.dev/article/88cd2f23)**
@@ -369,16 +373,16 @@
   > 📌 一句话摘要              本文评述了 Kimi K2.5 发布的“模型+Agent”一体化策略，并通过“视觉编程”实测验证了其在网页还原等复杂任务中的卓越表现。 📝 详细摘要              文章深入探讨了 Kimi K2.5 发布的战略意义，指出其核心亮点在于将底层大模型与上层 Agent 深度融合的“一体化”模式。作者通过对比 Manus 的“分层开发”模式（即在
 
 
+- **[2026-01-29-新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://www.bestblogs.dev/article/86b0affe)**
+  > 📌 一句话摘要              本文深度探讨了 AI 时代操作系统从“以 CPU 为中心”向“AI 原生”架构的范式跃迁，涵盖内核重构、异构算力适配及 Agent 生态布局。 📝 详细摘要              文章基于阿里云与中科院专家的深度对话，系统分析了智算时代操作系统的进化路径。核心观点认为，OS 的 AI 进化并非简单的功能叠加，而是底层逻辑的重构：从传统的资源隔离管理
+
+
 - **[2026-01-29-不跟英伟达走老路，这家-GPU-公司的技术架构藏着哪些关键解？](https://www.bestblogs.dev/article/13005643)**
   > 📌 一句话摘要              天数智芯发布未来三代 GPU 架构路线图，通过 TPC 广播、动态 Warp 调度等微架构创新，旨在实现超越英伟达的高质量、可预期算力。 📝 详细摘要              本文深入探讨了国产 GPU 厂商天数智芯的技术战略与架构演进。文章披露了天数智芯从 2025 年到 2027 年的四代架构（天枢、天璇、天玑、天权）路线图，明确提出在 Deep
 
 
 - **[2026-01-29-昇腾-MindSpeed：分布式训练加速库的创新实践与突破](https://www.bestblogs.dev/article/f84c4c94)**
   > 📌 一句话摘要              华为昇腾 MindSpeed 通过在通信、显存、计算和并行四个维度的底层工程优化，为大模型分布式训练提供了高效的国产化加速方案。 📝 详细摘要              本文是华为高级工程师郑加利在 QCon 大会上的演讲实录，重点介绍了昇腾 MindSpeed 分布式训练加速库的技术突破。针对大模型训练中算力需求激增与显存瓶颈，MindSpeed 提
-
-
-- **[2026-01-29-新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://www.bestblogs.dev/article/86b0affe)**
-  > 📌 一句话摘要              本文深度探讨了 AI 时代操作系统从“以 CPU 为中心”向“AI 原生”架构的范式跃迁，涵盖内核重构、异构算力适配及 Agent 生态布局。 📝 详细摘要              文章基于阿里云与中科院专家的深度对话，系统分析了智算时代操作系统的进化路径。核心观点认为，OS 的 AI 进化并非简单的功能叠加，而是底层逻辑的重构：从传统的资源隔离管理
 
 
 - **[2026-01-29-Claude-Code-发现-Clawdbot-们套着它的壳就要把它替代了](https://www.bestblogs.dev/article/7e66b55d)**
@@ -390,7 +394,6 @@
 
 
 - **[2026-01-29-世界模型-LingBot-World，正式开源！](https://www.bestblogs.dev/article/ee793d96)**
-  > 📌 一句话摘要              蚂蚁灵波团队开源了交互式世界模型 LingBot-World，支持 10 分钟长视频生成与毫秒级实时交互，为具身智能提供高保真“数字演练场”。 📝 详细摘要              本文介绍了蚂蚁灵波团队正式开源的交互式世界模型框架 LingBot-World。该模型旨在解决具身智能训练中真实世界数据获取成本高、不确定性大的核心痛点。LingBot-
 
 
 - **[2026-01-29-视频界的-Skills-来了，好用到爆炸](https://www.bestblogs.dev/article/cd5b38ec)**

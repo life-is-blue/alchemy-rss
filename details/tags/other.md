@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 02:07:52。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 04:03:55。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 其他
 
@@ -213,7 +213,6 @@
 
 
 - **[2026-01-29-世界模型-LingBot-World，正式开源！](https://www.bestblogs.dev/article/ee793d96)**
-  > 📌 一句话摘要              蚂蚁灵波团队开源了交互式世界模型 LingBot-World，支持 10 分钟长视频生成与毫秒级实时交互，为具身智能提供高保真“数字演练场”。 📝 详细摘要              本文介绍了蚂蚁灵波团队正式开源的交互式世界模型框架 LingBot-World。该模型旨在解决具身智能训练中真实世界数据获取成本高、不确定性大的核心痛点。LingBot-
 
 
 - **[2026-01-29-视频界的-Skills-来了，好用到爆炸](https://www.bestblogs.dev/article/cd5b38ec)**
