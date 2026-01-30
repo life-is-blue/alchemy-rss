@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-29 10:57:41。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 08:09:18。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 技术视频 (Tech Videos)
 
@@ -15,6 +15,18 @@
 
 - **[2026-01-29-16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)**
   > 📌 一句话摘要 本文演示了如何使用 Vibe Code 的 “Vibe Coding” 工作流，在 16 分钟内无需编写代码，利用自主 AI 智能体构建一个 Web 和原生移动端同步的 Instagram 克隆版。 📝 详细摘要 文章详细记录了一次高速开发过程，Riley Brown 与嘉宾 An 利用 AI 驱动的开发平台 Vibe Code 创建了一个名为 “Instagramly” 的社
+
+
+- **[2026-01-29-我在-10-分钟内构建并发布了一款移动应用（无代码）](https://www.bestblogs.dev/video/499a553)**
+  > 📌 一句话摘要              Siraj Raval 演示了如何使用 Manus AI 编排器在 10 分钟内构建并部署一款移动应用，强调了多智能体协作将成为未来的核心技能。 📝 详细摘要              本文详细介绍了一种使用 Manus 的快速应用开发流程。Manus 是一款旨在管理多个子智能体以处理复杂任务的 AI “编排器”。作者展示了 “Bill Sniper”
+
+
+- **[2026-01-29-Kimi-K2.5-全免费编程助手（无限制）：力压-Claude-4.5-Opus！免费编程的最佳选择！](https://www.bestblogs.dev/video/0742782)**
+  > 📌 一句话摘要              Kimi K2.5 是一款万亿参数的多模态 MoE 模型，目前在 Kilo 平台提供为期一周的免费试用，以极低的成本展现了高性能的 AI 编程能力。 📝 详细摘要              本报告重点介绍了 Kimi K2.5 模型在 Kilo 工程平台上的限时免费活动。Kimi K2.5 是一款采用混合专家（MoE）架构的模型，具备原生多模态能力，能
+
+
+- **[2026-01-29-KIMI-K2.5-智能体集群表现惊人](https://www.bestblogs.dev/video/3126793)**
+  > 📌 一句话摘要              Kimi K2.5 是来自 Moonshot AI 的一款突破性开源模型，拥有庞大的“智能体集群”架构，在编程、视觉和情商方面具有行业领先的性能。 📝 详细摘要              本文评测了 Moonshot AI 推出的全新开源模型 Kimi K2.5。其核心亮点是“智能体集群”架构，支持多达 100 个子智能体并行工作，显著提升了任务执行速
 
 
 - **[2026-01-28-AlphaGenome-作者圆桌会议](https://www.bestblogs.dev/video/4c34bbf)**
