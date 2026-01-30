@@ -52,11 +52,11 @@
                 v-for="cat in categories" 
                 :key="cat.name"
                 @click="selectTab(cat.name)"
-                class="flex items-center justify-between text-left py-2 px-3 rounded-lg text-[14px] transition-all group"
-                :class="currentTab === cat.name ? 'text-primary font-black scale-105 origin-left' : 'text-text-sub hover:text-text-main'"
+                class="flex items-center gap-3 text-left py-2 px-3 rounded-lg text-[14px] transition-all group"
+                :class="currentTab === cat.name ? 'bg-primary/5 text-primary font-bold' : 'text-text-sub hover:text-text-main hover:bg-black/5'"
               >
-                <span>{{ cat.name }}</span>
-                <span class="text-[10px] font-bold opacity-40 group-hover:opacity-100 transition-opacity">{{ cat.count }}</span>
+                <span class="flex-1 truncate">{{ cat.name }}</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full transition-colors" :class="currentTab === cat.name ? 'bg-primary/10 text-primary' : 'bg-black/5 text-text-sub/60'">{{ cat.count }}</span>
               </button>
             </div>
           </div>
@@ -74,26 +74,29 @@
             <transition name="fade" mode="out-in">
               <!-- Articles View -->
               <div v-if="currentView === 'reader' && !selectedUrl" key="articles">
-                <div class="flex items-end justify-between mb-16">
-                  <h2 class="text-4xl font-black tracking-tighter">{{ currentTab === '全部' ? '精选提炼' : currentTab }}</h2>
-                  <div class="text-[11px] font-bold text-text-sub/40 uppercase tracking-widest pb-1">Alchemy Refined</div>
+                <div class="flex items-end justify-between mb-8 border-b border-black/5 pb-4">
+                  <h2 class="text-2xl font-black tracking-tight text-text-main">{{ currentTab === '全部' ? '精选提炼' : currentTab }}</h2>
+                  <div class="flex items-center gap-4">
+                    <span class="text-[10px] font-bold text-text-sub/60 bg-black/5 px-2 py-1 rounded">UPDATED TODAY</span>
+                  </div>
                 </div>
                 
-                <div v-if="loading" class="space-y-12">
+                <div v-if="loading" class="space-y-4">
                   <div v-for="i in 3" :key="i" class="space-y-4">
                     <div class="h-8 bg-black/[0.02] rounded-lg w-3/4"></div>
                     <div class="h-4 bg-black/[0.02] rounded-lg w-full"></div>
-                    <div class="h-4 bg-black/[0.02] rounded-lg w-5/6"></div>
                   </div>
                 </div>
                 
                 <template v-else>
-                  <ArticleCard 
-                    v-for="article in filteredArticles" 
-                    :key="article.link"
-                    :article="article"
-                    @click="selectedUrl = article.link"
-                  />
+                  <div class="grid grid-cols-1 gap-y-2">
+                    <ArticleCard 
+                      v-for="article in filteredArticles" 
+                      :key="article.link"
+                      :article="article"
+                      @click="selectedUrl = article.link"
+                    />
+                  </div>
                 </template>
               </div>
 

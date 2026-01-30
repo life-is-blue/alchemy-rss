@@ -32,14 +32,22 @@ export const useArticles = () => {
           found = true
         }
       }
-      // 不再将 RSS Source 作为侧边栏分类，保持侧边栏纯净
+      // 兜底：如果没匹配到，看 rssTitle
+      if (!found && article.rssTitle) {
+        const simplifiedTitle = article.rssTitle.split('(')[0].trim()
+        counts[simplifiedTitle] = (counts[simplifiedTitle] || 0) + 1
+      }
     })
 
     return Object.entries(counts)
       .map(([name, count]) => ({ name, count }))
-      .filter(c => c.name === '全部' || Object.values(CATEGORY_MAP).includes(c.name)) // 严格白名单过滤
       .sort((a, b) => {
         if (a.name === '全部') return -1
+        // 优先显示 CATEGORY_MAP 里的分类
+        const isAInMap = Object.values(CATEGORY_MAP).includes(a.name)
+        const isBInMap = Object.values(CATEGORY_MAP).includes(b.name)
+        if (isAInMap && !isBInMap) return -1
+        if (!isAInMap && isBInMap) return 1
         return b.count - a.count
       })
   })
