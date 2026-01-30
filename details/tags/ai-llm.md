@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 04:03:55。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 06:03:12。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -61,6 +61,10 @@
 
 - **[2026-01-30-AINews-SpaceXai-Grok-Imagine-API-——-排名第一的视频模型，拥有最优价格与延迟](https://www.bestblogs.dev/article/49af5d75)**
   > 📌 一句话摘要              本期 AINews 重点介绍了 xAI 的 Grok Imagine 视频 API 发布、Google 的 Genie 3 世界模型，以及 Kimi K2.5 作为主导性开源前沿模型的崛起。 📝 详细摘要              本文全面更新了截至 2026 年 1 月底的 AI 领域动态。核心焦点是 xAI 的 Grok Imagine，它凭借高性
+
+
+- **[2026-01-30-AI-视频的“1-毛钱战争”与“万亿生意”](https://www.bestblogs.dev/article/385037e0)**
+  > 📌 一句话摘要              本文深度对比了字节跳动（即梦 AI）与快手（可灵 AI）在 AI 视频领域的战略分歧：字节凭借巨额算力投入豪赌大众市场的“未来入口”，而快手则通过务实的产品创新聚焦专业市场的“即时收益”。 📝 详细摘要              文章详细剖析了中国 AI 视频双雄的竞争格局。技术上，字节即梦采用 Seedance 多模态大模型及 DiT 架构，追求极速
 
 
 - **[2026-01-30-GenAI-系统的隐性技术债](https://www.bestblogs.dev/article/9f6aae88)**
@@ -199,9 +203,6 @@
 
 
 - **[2026-01-29-管理：AI-时代的超能力](https://www.bestblogs.dev/article/9188d4ca)**
-
-
-- **[2026-01-29-Clawdbot-创作者-Peter-Steinberger-首次公开亮相，讲述-AI-失控、被迫更名和拒绝-VC-的疯狂一周](https://www.bestblogs.dev/article/caddd8bd)**
 
 
 - **[2026-01-28-AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)**
