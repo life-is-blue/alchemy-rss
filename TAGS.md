@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-30 12:30:37。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-30 14:11:52。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -28,6 +28,7 @@
 - [【精选文章 (BestBlogs)】GenAI-系统的隐性技术债](https://www.bestblogs.dev/article/9f6aae88)
 - [【精选文章 (BestBlogs)】我宣布，这就是现在人声最真实的-AI-音乐模型。](https://www.bestblogs.dev/article/7d86e5ae)
 - [【精选文章 (BestBlogs)】AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://www.bestblogs.dev/article/0b0fa790)
+- [【精选文章 (BestBlogs)】科技爱好者周刊（第-383-期）：你是第几级-AI-编程](https://www.bestblogs.dev/article/a59fad1b)
 - [【精选文章 (BestBlogs)】一文读懂-AI-Search：从-RAG-到-DeepSearch](https://www.bestblogs.dev/article/4c309230)
 - [【精选文章 (BestBlogs)】规模化企业级-AI：来自-IBM-的治理与运营模式经验](https://www.bestblogs.dev/article/69f8f385)
 - [【精选文章 (BestBlogs)】自建一个-Agent-很难吗？一语道破，万语难明](https://www.bestblogs.dev/article/673b5211)
@@ -43,7 +44,6 @@
 - [【精选文章 (BestBlogs)】喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)
 - [【精选文章 (BestBlogs)】介绍-Moltworker：一个自托管的个人-AI-智能体，告别-Mac-mini](https://www.bestblogs.dev/article/ce0a7dcf)
 - [【精选文章 (BestBlogs)】凭借-27-万小时真机数据，Generalist-可能是最接近“GPT-1-时刻”的顶级机器人团队](https://www.bestblogs.dev/article/952dbaa7)
-- [【精选文章 (BestBlogs)】为了让-AI-干活儿，我竭尽所能——我的-Vibe-Coding-认知升级之路](https://www.bestblogs.dev/article/c7fd13c7)
 - [查看更多 >](/details/tags/ai-llm.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
@@ -143,6 +143,7 @@
 
 - [【精选文章 (BestBlogs)】2026-01-30-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/2c5b3eaa)
 - [【精选文章 (BestBlogs)】【第-3651-期】vivo-互联网全链路多版本环境落地实践](https://www.bestblogs.dev/article/c15661b3)
+- [【精选文章 (BestBlogs)】产品经理如何进行优先级排序-——-产品优先级框架详解](https://www.bestblogs.dev/article/d7eda518)
 - [【精选文章 (BestBlogs)】推出用于高级机器人控制的-NVIDIA-Cosmos-Policy](https://www.bestblogs.dev/article/2aa99ddf)
 - [【精选文章 (BestBlogs)】2026-01-29-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/c9a07bdc)
 - [【精选文章 (BestBlogs)】早报｜曝苹果希望-iPhone-18「尽可能不涨价」/首款中国车型小米-SU7-Ultra-加入《GT-赛车》/Clawdbot-被迫改名，卷入千万美元诈骗](https://www.bestblogs.dev/article/ed30b40c)
@@ -160,7 +161,6 @@
 - [【精选文章 (BestBlogs)】2025-年的-Spanner](https://www.bestblogs.dev/article/5925978d)
 - [【精选文章 (BestBlogs)】为强缓存网站添加动态功能](https://www.bestblogs.dev/article/a9a7c725)
 - [【精选文章 (BestBlogs)】蚂蚁深夜开源比肩-Genie-3-的世界模型，我也看到了具身智能的未来。](https://www.bestblogs.dev/article/16d9db27)
-- [【精选文章 (BestBlogs)】当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)
 - [查看更多 >](/details/tags/other.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
