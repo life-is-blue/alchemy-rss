@@ -1,8 +1,20 @@
-:alarm_clock: 更新时间: 2026-01-30 08:09:18。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 10:54:09。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 技术视频 (Tech Videos)
 
 
+
+
+- **[2026-01-30-全新-ChatGPT-应用商店：如何使用-OpenAI-的最新更新（完整指南）](https://www.bestblogs.dev/video/2570d4d)**
+  > 📌 一句话摘要              一份关于 OpenAI 全新应用目录的全面指南，解释了模型上下文协议 (MCP) 如何将 ChatGPT 转变为一个能够直接进行应用交互和工作流自动化的数字操作系统。 📝 详细摘要              本文详细介绍了 OpenAI 的重大更新：ChatGPT 应用目录。在模型上下文协议 (MCP) 的支持下，该功能使 ChatGPT 能够成为 C
+
+
+- **[2026-01-30-我如何利用-Claudebot-全天候运行我的业务和生活](https://www.bestblogs.dev/video/56a5b51)**
+  > 📌 一句话摘要              本文探讨了 Kitsay 如何通过 Discord 使用 Claudebot 构建 “个人操作系统”，通过具有 Shell 访问权限和自定义人格的专业 AI 智能体来管理生活和业务。 📝 详细摘要              文章详细介绍了 Greg Isenberg 与技术专家 Kitsay 之间关于 AI 智能体（特别是 Claudebot / Cl
+
+
+- **[2026-01-30-孩子们应该如何利用-AI-学习-|-Priya-Lakhani](https://www.bestblogs.dev/video/555aaf1)**
+  > 📌 一句话摘要              Priya Lakhani 认为，教育中的 AI 应该旨在通过基于神经科学的学习技术来培养“富有成效的挣扎”，而不是提供会产生“能力错觉”的捷径。 📝 详细摘要              文章探讨了 AI 在教育中的双重性质，警告要警惕学生利用 AI 绕过学习过程而产生的“能力错觉”。Lakhani 指出了教育领域的两大危机：“一刀切”的教学模式以及行
 
 
 - **[2026-01-29-Clawd-创始人：我发布的很多代码自己都没读过](https://www.bestblogs.dev/video/7c4f9fd)**
@@ -15,6 +27,22 @@
 
 - **[2026-01-29-16-分钟零代码构建-Web-+-移动端同步应用](https://www.bestblogs.dev/video/3590211)**
   > 📌 一句话摘要 本文演示了如何使用 Vibe Code 的 “Vibe Coding” 工作流，在 16 分钟内无需编写代码，利用自主 AI 智能体构建一个 Web 和原生移动端同步的 Instagram 克隆版。 📝 详细摘要 文章详细记录了一次高速开发过程，Riley Brown 与嘉宾 An 利用 AI 驱动的开发平台 Vibe Code 创建了一个名为 “Instagramly” 的社
+
+
+- **[2026-01-29-Framer-CEO-评测初创公司网站](https://www.bestblogs.dev/video/e706597)**
+  > 📌 一句话摘要              Framer CEO Jorn van Dijk 对五个 AI 初创公司的落地页进行了专业的 UI/UX 评测，强调了展示真实产品截图、减少动画干扰以及创造即时 “Aha! moments” 的重要性。 📝 详细摘要              本文总结了一场设计评审活动，Framer CEO Jorn van Dijk 在会上评估了在其平台上构建的五个
+
+
+- **[2026-01-29-我如何在-12-个月内实现从-0-到-100-万美元的突破（分步指南）](https://www.bestblogs.dev/video/2fc7a42)**
+  > 📌 一句话摘要              Beehiiv 首席执行官 Tyler Denk 拆解了通过创始人与市场匹配、手动外推和产品快速迭代，将其 SaaS 平台从零扩展到 100 万美元 ARR 的战术路线图。 📝 详细摘要              在本期《My First Million》节目中，Beehiiv 联合创始人 Tyler Denk 分享了公司快速增长的“秘密配方”。他强调
+
+
+- **[2026-01-29-Marc-Andreessen：这是科技史上最重要的时代（以及背后的原因）](https://www.bestblogs.dev/video/535bf6f)**
+  > 📌 一句话摘要              Marc Andreessen 认为，AI 作为“点金石”出现在关键的历史关头，有望抵消全球人口下降的影响，并将职业角色转变为“超级赋能”的跨学科专家。 📝 详细摘要              在这次深度访谈中，Marc Andreessen 将当前时代描述为可与柏林墙倒塌相提并论的历史转折点。他认为 AI 是我们时代的“点金石”，能够将硅转化为智能。
+
+
+- **[2026-01-29-LST-Vlad-Tenev](https://www.bestblogs.dev/video/34056c1)**
+  > 📌 一句话摘要              Robinhood 首席执行官 Vlad Tenev 分享了关于应对高风险危机、保持“战时”心态以及在高速增长期间平衡速度与质量的领导力见解。 📝 详细摘要              在这次与红杉资本（Sequoia Capital）的访谈中，Robinhood 首席执行官 Vlad Tenev 回顾了在极端波动时期的领导经历，包括 GameStop
 
 
 - **[2026-01-29-我在-10-分钟内构建并发布了一款移动应用（无代码）](https://www.bestblogs.dev/video/499a553)**

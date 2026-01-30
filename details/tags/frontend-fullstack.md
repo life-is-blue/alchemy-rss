@@ -1,10 +1,14 @@
-:alarm_clock: 更新时间: 2026-01-30 08:09:18。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 10:54:09。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 前端与全栈
 
 
 > 关键字：`Frontend`、`Fullstack`、`React`、`Vue`、`Node`、`Next`、`Nuxt`、`Svelte`、`Angular`、`TypeScript`、`JavaScript`、`CSS`、`HTML`、`Web`、`Browser`、`Server`、`Deno`、`Bun`
 
+
+
+- **[2026-01-29-使用多智能体工作流扩展内容审核运营-|-Amazon-Web-Services](https://www.bestblogs.dev/article/2ec03267)**
+  > 📌 一句话摘要              本文详细介绍了如何使用 Amazon Bedrock 和 Strands Agents 构建多智能体工作流，以实现大规模企业内容的自动扫描、验证和更新。 📝 详细摘要              本文针对维护准确的企业文档这一日益严峻的挑战，提出了一种技术解决方案。该方案建议采用三阶段多智能体架构：用于提取技术声明的内容扫描智能体（Content Sca
 
 
 - **[2026-01-28-HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)**

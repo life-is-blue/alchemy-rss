@@ -1,10 +1,22 @@
-:alarm_clock: 更新时间: 2026-01-30 08:09:18。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 10:54:09。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
 
 > 关键字：`AI`、`GPT`、`LLM`、`Agent`、`RAG`、`Transformer`、`Diffusion`、`DeepSeek`、`OpenAI`、`Claude`、`Llama`、`Model`、`Artificial Intelligence`、`Machine Learning`
 
+
+
+- **[2026-01-30-早报｜iPhone-销量创历史新高，库克：全球所有地区均刷新纪录/曝阿里字节春节前后齐发旗舰模型/特斯拉宣布停产-Model-S/X](https://www.bestblogs.dev/article/1b1e7782)**
+  > 📌 一句话摘要              本文汇总了 2026 年初全球科技巨头的重大动态，涵盖苹果创纪录财报、特斯拉战略转型、大模型春节“混战”及 OpenAI 巨额融资等核心资讯。 📝 详细摘要              文章全面梳理了近期科技领域的关键动态。苹果公司凭借 iPhone 17 在大中华区的强劲表现，创下 1438 亿美元的历史最佳季度营收；特斯拉宣布停产 Model S/X
+
+
+- **[2026-01-30-AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://www.bestblogs.dev/article/0b0fa790)**
+  > 📌 一句话摘要              本文深度解析了 AI Agent 记忆系统的分层架构，涵盖短期记忆的上下文工程策略、长期记忆的 Record/Retrieve 机制及主流框架的实践对比。 📝 详细摘要              文章系统性地探讨了构建实用 AI Agent 记忆系统的核心技术。首先明确了会话级（短期）与跨会话级（长期）记忆的定义，并对比了 Google ADK、Lan
+
+
+- **[2026-01-30-一文读懂-AI-Search：从-RAG-到-DeepSearch](https://www.bestblogs.dev/article/4c309230)**
+  > 📌 一句话摘要              本文深度解析了 AI Search 从传统 RAG 到自主 DeepSearch 的演进历程，探讨了推理模型如何通过强化学习突破知识与能力边界。 📝 详细摘要              文章系统性地回顾了检索增强生成（RAG）技术的发展。首先分析了 LLM 因训练数据时效性和私域限制导致的内在知识有限性。随后详述了 RAG 演进的三个阶段：从固定的“检
 
 
 - **[2026-01-30-规模化企业级-AI：来自-IBM-的治理与运营模式经验](https://www.bestblogs.dev/article/69f8f385)**
@@ -68,10 +80,6 @@
   > 📌 一句话摘要              深度复盘字节、阿里、腾讯在 DeepSeek 冲击后的 AI 战略转折，揭示巨头在算力、人才、产品入口及组织架构上的全面博弈。 📝 详细摘要              本文详尽记录了中国互联网三大巨头（字节跳动、阿里巴巴、腾讯）在 AI 领域的竞争态势。文章指出，DeepSeek 的出现打破了原有的节奏，迫使巨头进入“中途岛时刻”。腾讯通过重组团队和引
 
 
-- **[2026-01-29-「迄今为止最伟大的-AI-应用」的-Clawdbot，或许并不适合你](https://www.bestblogs.dev/article/f653eb9d)**
-  > 📌 一句话摘要              Clawdbot 是一款具备高执行权限的本地 AI Agent，通过聊天软件远程操控电脑，虽展现了“AI 员工”的未来形态，但其巨大的安全风险使其目前仍属于极客玩具。 📝 详细摘要              本文深度评测了近期爆火的开源 AI 项目 Clawdbot。该项目通过集成浏览器控制、Shell 脚本、文件读写等工具，并接入 Slack、iMe
-
-
 - **[2026-01-29-Context-Is-All-You-Need：快手后端-AI-Coding-的实践与思考](https://www.bestblogs.dev/article/319a8fd8)**
   > 📌 一句话摘要              本文深入探讨了快手如何通过构建“码图”框架和 Multi-Agent 架构，解决 Java 后端 AI Coding 中上下文缺失与可控性差的难题，实现从“猜需求”到“按计划执行”的研发范式转型。 📝 详细摘要              文章针对 Java 后端 AI Coding 面临的核心挑战——PRD 与工程事实之间的信息断层，提出了快手的解决方
 
@@ -82,6 +90,10 @@
 
 - **[2026-01-29-新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://www.bestblogs.dev/article/86b0affe)**
   > 📌 一句话摘要              本文深度探讨了 AI 时代操作系统从“以 CPU 为中心”向“AI 原生”架构的范式跃迁，涵盖内核重构、异构算力适配及 Agent 生态布局。 📝 详细摘要              文章基于阿里云与中科院专家的深度对话，系统分析了智算时代操作系统的进化路径。核心观点认为，OS 的 AI 进化并非简单的功能叠加，而是底层逻辑的重构：从传统的资源隔离管理
+
+
+- **[2026-01-29-让-Agent-画思维导图稳固长期记忆：新框架实现稳定长期学习，准确率提升-38%](https://www.bestblogs.dev/article/28f4b94f)**
+  > 📌 一句话摘要              中国电信人工智能研究院推出 TeleMem 框架，通过有向无环图（DAG）重构 Agent 记忆系统，解决传统 RAG 的碎片化问题，实现长程对话准确率提升 38%。 📝 详细摘要              文章深入探讨了 AI Agent 在长期学习中面临的记忆瓶颈，指出传统 RAG 架构因缺乏时间与因果结构，难以支撑跨月甚至跨年的持续运行。为此，T
 
 
 - **[2026-01-29-超越聊天机器人：可信-AI-蓝图](https://www.bestblogs.dev/article/ea29b583)**
@@ -268,6 +280,18 @@
 
 
 - **[2026-01-27-豆包、ChatGPT、Gemini-同台-PK，谁才是博物馆最强逛展搭子？](https://www.bestblogs.dev/article/54d6ec79)**
+
+
+- **[2026-01-30-全新-ChatGPT-应用商店：如何使用-OpenAI-的最新更新（完整指南）](https://www.bestblogs.dev/video/2570d4d)**
+  > 📌 一句话摘要              一份关于 OpenAI 全新应用目录的全面指南，解释了模型上下文协议 (MCP) 如何将 ChatGPT 转变为一个能够直接进行应用交互和工作流自动化的数字操作系统。 📝 详细摘要              本文详细介绍了 OpenAI 的重大更新：ChatGPT 应用目录。在模型上下文协议 (MCP) 的支持下，该功能使 ChatGPT 能够成为 C
+
+
+- **[2026-01-30-我如何利用-Claudebot-全天候运行我的业务和生活](https://www.bestblogs.dev/video/56a5b51)**
+  > 📌 一句话摘要              本文探讨了 Kitsay 如何通过 Discord 使用 Claudebot 构建 “个人操作系统”，通过具有 Shell 访问权限和自定义人格的专业 AI 智能体来管理生活和业务。 📝 详细摘要              文章详细介绍了 Greg Isenberg 与技术专家 Kitsay 之间关于 AI 智能体（特别是 Claudebot / Cl
+
+
+- **[2026-01-30-孩子们应该如何利用-AI-学习-|-Priya-Lakhani](https://www.bestblogs.dev/video/555aaf1)**
+  > 📌 一句话摘要              Priya Lakhani 认为，教育中的 AI 应该旨在通过基于神经科学的学习技术来培养“富有成效的挣扎”，而不是提供会产生“能力错觉”的捷径。 📝 详细摘要              文章探讨了 AI 在教育中的双重性质，警告要警惕学生利用 AI 绕过学习过程而产生的“能力错觉”。Lakhani 指出了教育领域的两大危机：“一刀切”的教学模式以及行
 
 
 - **[2026-01-29-AI-基准测试在欺骗你（我的深度调查）](https://www.bestblogs.dev/video/eee91fb)**
@@ -464,34 +488,34 @@
   > 📌 一句话摘要 小冰之父李笛分享新创业项目“明日星辰”，提出 AI 发展的核心将从知识推理跃迁至基于异构群体的“认知智能”。 📝 详细摘要 本期播客由极客公园创始人张鹏对话微软小冰前负责人李笛。李笛详细阐述了其新公司“明日星辰（Nextie）”的核心理念：AI 的下一波浪潮并非仅仅是卷多模态或 Scaling Law，而是实现从单纯的“知识/推理”向“认知”的跨越。他认为当前的思维链（CoT）
 
 
-- **[2026-01-28-AI-创业下半场，新的营销三板斧是什么？|-对话易点天下-CEO-朱鹤](https://www.bestblogs.dev/podcast/01f80ee)**
-
-
-- **[2026-01-28-259.从互联网医疗到-AI-健康：一场新供给革命](https://www.bestblogs.dev/podcast/34061a3)**
+- **[2026-01-28-#408.纯文科生的逆袭：Meta-产品经理如何用-AI-零代码开发赚钱产品](https://www.bestblogs.dev/podcast/0c64be3)**
 
 
 - **[2026-01-28-62.年终复盘-AI-笔记：中美逾-30-位从业者访谈中，有哪些发现？](https://www.bestblogs.dev/podcast/10d2560)**
 
 
-- **[2026-01-28-#408.纯文科生的逆袭：Meta-产品经理如何用-AI-零代码开发赚钱产品](https://www.bestblogs.dev/podcast/0c64be3)**
+- **[2026-01-28-259.从互联网医疗到-AI-健康：一场新供给革命](https://www.bestblogs.dev/podcast/34061a3)**
 
 
-- **[2026-01-26-Vol.85-写在-DeepSeek-发布一年之后，也写在元宝要发-10-亿红包之后---串台厚雪长坡](https://www.bestblogs.dev/podcast/ae335a7)**
-
-
-- **[2026-01-26-大模型下半场，有人先走物理-AI-这条路！｜揭秘阶跃星辰-50-亿融资背后在下一盘什么大棋？](https://www.bestblogs.dev/podcast/4d65f29)**
+- **[2026-01-28-AI-创业下半场，新的营销三板斧是什么？|-对话易点天下-CEO-朱鹤](https://www.bestblogs.dev/podcast/01f80ee)**
 
 
 - **[2026-01-26-视频剪辑的「Cursor-时刻」来了？｜对谈-ChatCut-创始人李凯文：从金马导演到-AI-创业](https://www.bestblogs.dev/podcast/dddf985)**
 
 
+- **[2026-01-26-大模型下半场，有人先走物理-AI-这条路！｜揭秘阶跃星辰-50-亿融资背后在下一盘什么大棋？](https://www.bestblogs.dev/podcast/4d65f29)**
+
+
+- **[2026-01-26-Vol.85-写在-DeepSeek-发布一年之后，也写在元宝要发-10-亿红包之后---串台厚雪长坡](https://www.bestblogs.dev/podcast/ae335a7)**
+
+
 - **[2026-01-23-#147.-圆桌：AI-如何改变了-IT-公司的工作方式](https://www.bestblogs.dev/podcast/e4c78f7)**
 
 
-- **[2026-01-22-#402.AI-时代的“大空头”：对话-Gary-Marcus，拆解大模型背后的逻辑陷阱与投资泡沫](https://www.bestblogs.dev/podcast/3b1c7d7)**
-
-
 - **[2026-01-22-130.-张月光创业两年首次访谈：妙鸭不是-AI-Native-产品、流程到上下文设计、One-Way-Door-和乙女游戏](https://www.bestblogs.dev/podcast/66185eb)**
+
+
+- **[2026-01-22-#402.AI-时代的“大空头”：对话-Gary-Marcus，拆解大模型背后的逻辑陷阱与投资泡沫](https://www.bestblogs.dev/podcast/3b1c7d7)**
 
 
 - **[2026-01-21-Vol.84-数据不再是“后台的沉默基石”：OceanBase-与-00-后开发者眼中的-AI-变局](https://www.bestblogs.dev/podcast/daba11c)**
@@ -509,82 +533,82 @@
 - **[2026-01-16-#397.从濒临倒闭到年入一亿美金：Ladder-创始人的-TikTok-增长密码与-AI-进化论](https://www.bestblogs.dev/podcast/baa8515)**
 
 
-- **[2026-01-15-AI-Coding-言出法随，未来什么还会值钱？](https://www.bestblogs.dev/podcast/c916d1d)**
-
-
-- **[2026-01-15-#395.为什么大多数-AI-产品会失败？来自-OpenAI-与谷歌专家的-50-个项目实战复盘](https://www.bestblogs.dev/podcast/b49ba9c)**
-
-
-- **[2026-01-15-新年直播-3：华尔街视角下的-AI-泡沫、芯片及黑天鹅](https://www.bestblogs.dev/podcast/8a1d520)**
+- **[2026-01-15-新年直播-1：AI-的-2025-与-2026，技术领域的共识与非共识](https://www.bestblogs.dev/podcast/08f9912)**
 
 
 - **[2026-01-15-Vol.-158-科技快乐星球-42:-AI-战局更新-Gemini-崛起、Sora-退潮与-Agent-时代](https://www.bestblogs.dev/podcast/fb1fb6b)**
 
 
-- **[2026-01-15-新年直播-1：AI-的-2025-与-2026，技术领域的共识与非共识](https://www.bestblogs.dev/podcast/08f9912)**
+- **[2026-01-15-新年直播-3：华尔街视角下的-AI-泡沫、芯片及黑天鹅](https://www.bestblogs.dev/podcast/8a1d520)**
 
 
-- **[2026-01-14-#393.AI-时代的校园：“拐杖”还是“阶梯”？学霸的真实-AI-生存指南](https://www.bestblogs.dev/podcast/b389328)**
+- **[2026-01-15-#395.为什么大多数-AI-产品会失败？来自-OpenAI-与谷歌专家的-50-个项目实战复盘](https://www.bestblogs.dev/podcast/b49ba9c)**
 
 
-- **[2026-01-14-#392.2026-全球大预测：硅谷“四巨头”眼中的政治变局、AI-红利与经济繁荣](https://www.bestblogs.dev/podcast/2a55e64)**
-
-
-- **[2026-01-14-#391.对话埃隆·马斯克：身处奇点时刻，AI、机器人与人类的丰饶未来](https://www.bestblogs.dev/podcast/48b2023)**
-
-
-- **[2026-01-14-Vol.97｜对话-DeepWisdom-吴承霖：未来不是人被-AI-取代，而是「没想法的人」被淘汰](https://www.bestblogs.dev/podcast/efc4d5f)**
-
-
-- **[2026-01-14-Claude-Cowork、Antigravity、Manus｜为了买数字奴隶这件事，我们吵起来了!](https://www.bestblogs.dev/podcast/c87bd0c)**
-
-
-- **[2026-01-14-#390.AI-教父的忏悔：我们离失控还有多远？约书亚·本希奥谈生存风险与人类未来](https://www.bestblogs.dev/podcast/1276669)**
+- **[2026-01-15-AI-Coding-言出法随，未来什么还会值钱？](https://www.bestblogs.dev/podcast/c916d1d)**
 
 
 - **[2026-01-14-EP120-从-Prompt-到-Agent-Skills，论-Anthropic-的野心与大模型应用的终极抽象](https://www.bestblogs.dev/podcast/4672e15)**
 
 
-- **[2026-01-11-#389.Tailwind-CSS-创始人的至暗时刻：从风靡全球到裁员-75%，开源商业化的残酷真相](https://www.bestblogs.dev/podcast/932deb7)**
+- **[2026-01-14-#390.AI-教父的忏悔：我们离失控还有多远？约书亚·本希奥谈生存风险与人类未来](https://www.bestblogs.dev/podcast/1276669)**
+
+
+- **[2026-01-14-Claude-Cowork、Antigravity、Manus｜为了买数字奴隶这件事，我们吵起来了!](https://www.bestblogs.dev/podcast/c87bd0c)**
+
+
+- **[2026-01-14-Vol.97｜对话-DeepWisdom-吴承霖：未来不是人被-AI-取代，而是「没想法的人」被淘汰](https://www.bestblogs.dev/podcast/efc4d5f)**
+
+
+- **[2026-01-14-#391.对话埃隆·马斯克：身处奇点时刻，AI、机器人与人类的丰饶未来](https://www.bestblogs.dev/podcast/48b2023)**
+
+
+- **[2026-01-14-#392.2026-全球大预测：硅谷“四巨头”眼中的政治变局、AI-红利与经济繁荣](https://www.bestblogs.dev/podcast/2a55e64)**
+
+
+- **[2026-01-14-#393.AI-时代的校园：“拐杖”还是“阶梯”？学霸的真实-AI-生存指南](https://www.bestblogs.dev/podcast/b389328)**
 
 
 - **[2026-01-11-Vol.83-25-页-PPT-记录一场中国-AI“全明星赛”](https://www.bestblogs.dev/podcast/51db511)**
 
 
-- **[2026-01-10-All-in-AI-的第一个三年｜对谈绿洲资本合伙人张津剑](https://www.bestblogs.dev/podcast/8cab64e)**
-
-
-- **[2026-01-10-#388.对话黄仁勋：AI-时代的“五层蛋糕”、Token-经济学与被误解的泡沫](https://www.bestblogs.dev/podcast/aa32530)**
-
-
-- **[2026-01-10-#387.AI-时代的沟通艺术：揭秘如何通过叙事建立不可替代的影响力](https://www.bestblogs.dev/podcast/bbb2886)**
+- **[2026-01-11-#389.Tailwind-CSS-创始人的至暗时刻：从风靡全球到裁员-75%，开源商业化的残酷真相](https://www.bestblogs.dev/podcast/932deb7)**
 
 
 - **[2026-01-10-Vol.96｜和-CES-2026-展商聊聊：AI-硬件热潮之下，创业者关于创造、困境与未来的真心话](https://www.bestblogs.dev/podcast/a17505d)**
 
 
-- **[2026-01-08-#385.告别-RAG-幻觉：为什么-AI-的未来记忆在“权重”里？](https://www.bestblogs.dev/podcast/64dd340)**
+- **[2026-01-10-#387.AI-时代的沟通艺术：揭秘如何通过叙事建立不可替代的影响力](https://www.bestblogs.dev/podcast/bbb2886)**
 
 
-- **[2026-01-08-AI-养蛊，我的-AI-分身开始自己写日记了！|-对话-AI-野生布道师余一](https://www.bestblogs.dev/podcast/08c1322)**
+- **[2026-01-10-#388.对话黄仁勋：AI-时代的“五层蛋糕”、Token-经济学与被误解的泡沫](https://www.bestblogs.dev/podcast/aa32530)**
+
+
+- **[2026-01-10-All-in-AI-的第一个三年｜对谈绿洲资本合伙人张津剑](https://www.bestblogs.dev/podcast/8cab64e)**
 
 
 - **[2026-01-08-Vol.95｜对话王小川：专注-AI-医疗后，我的内心越来越平静](https://www.bestblogs.dev/podcast/90bc26b)**
 
 
-- **[2026-01-07-年终总结-3：2025-职场水温报告：AI-浪潮下的人才流动与岗位重构-|-S9E44](https://www.bestblogs.dev/podcast/0b8938b)**
+- **[2026-01-08-AI-养蛊，我的-AI-分身开始自己写日记了！|-对话-AI-野生布道师余一](https://www.bestblogs.dev/podcast/08c1322)**
 
 
-- **[2026-01-07-2026，AI-视频「大年」将至｜对谈-OiiOii-创始人闹闹：亲历微信与字节后，如何抓住下一波机会？](https://www.bestblogs.dev/podcast/feb3190)**
+- **[2026-01-08-#385.告别-RAG-幻觉：为什么-AI-的未来记忆在“权重”里？](https://www.bestblogs.dev/podcast/64dd340)**
 
 
 - **[2026-01-07-147:-访谈-OiiOii-闹闹：“先抖音后剪映”-不再成立，AI-时代的创作工具和内容社区](https://www.bestblogs.dev/podcast/f42a9bd)**
 
 
-- **[2026-01-06-#384.揭秘-Anthropic-的-Agent-哲学：为什么-Bash-和文件系统才是-AI-的终极武器？](https://www.bestblogs.dev/podcast/35e79f1)**
+- **[2026-01-07-2026，AI-视频「大年」将至｜对谈-OiiOii-创始人闹闹：亲历微信与字节后，如何抓住下一波机会？](https://www.bestblogs.dev/podcast/feb3190)**
+
+
+- **[2026-01-07-年终总结-3：2025-职场水温报告：AI-浪潮下的人才流动与岗位重构-|-S9E44](https://www.bestblogs.dev/podcast/0b8938b)**
 
 
 - **[2026-01-06-2026-AI-上岸の姿势：大厂收购、国产上市、硬件风口谁能领跑?｜对谈进击的沈帅波](https://www.bestblogs.dev/podcast/5b77319)**
+
+
+- **[2026-01-06-#384.揭秘-Anthropic-的-Agent-哲学：为什么-Bash-和文件系统才是-AI-的终极武器？](https://www.bestblogs.dev/podcast/35e79f1)**
 
 
 - **[2026-01-05-AI-时代是谁的黄金时代？｜和张咋啦聊：文科生、积极行动、爆款的规律、普通人也能赢](https://www.bestblogs.dev/podcast/9b9b77c)**
@@ -593,19 +617,19 @@
 - **[2026-01-03-#380.揭秘-Manus：从“对话”到“行动”，构建通用-AI-智能体的未来工作流](https://www.bestblogs.dev/podcast/3dce5d7)**
 
 
-- **[2025-12-31-年终总结-2:-与真格基金戴雨森聊模型发展、AI-商业化与美股-M7-展望-｜硅谷徐老师-S9E43](https://www.bestblogs.dev/podcast/e60b12c)**
+- **[2025-12-31-【2025-年终盘点】从模型红利到-Agent-闭环的实战复盘-|-徐文浩-x-任鑫](https://www.bestblogs.dev/podcast/a464b5b)**
 
 
 - **[2025-12-31-#378.破解大脑的“损失函数”：为什么-AI-喂了万亿数据，还是不如三岁小孩？](https://www.bestblogs.dev/podcast/39f1359)**
 
 
-- **[2025-12-31-【2025-年终盘点】从模型红利到-Agent-闭环的实战复盘-|-徐文浩-x-任鑫](https://www.bestblogs.dev/podcast/a464b5b)**
-
-
-- **[2025-12-30-#377.法律界的-AI-革命：Harvey-如何重塑法律市场](https://www.bestblogs.dev/podcast/b3ec1cb)**
+- **[2025-12-31-年终总结-2:-与真格基金戴雨森聊模型发展、AI-商业化与美股-M7-展望-｜硅谷徐老师-S9E43](https://www.bestblogs.dev/podcast/e60b12c)**
 
 
 - **[2025-12-30-257.半佛怕爆款，三表拒-AI，冰汝谢川普：我们为什么坚守图文？](https://www.bestblogs.dev/podcast/67e97b9)**
+
+
+- **[2025-12-30-#377.法律界的-AI-革命：Harvey-如何重塑法律市场](https://www.bestblogs.dev/podcast/b3ec1cb)**
 
 
 - **[2026-01-29-DeeplearningAI-x-LandingAI：从-OCR-到智能体文档提取新课程](https://www.bestblogs.dev/status/2016859143647440922)**
