@@ -28,7 +28,7 @@
             v-model="searchValue"
             type="text" 
             placeholder="搜索..." 
-            class="w-full h-10 bg-black/[0.04] rounded-lg px-10 text-[14px] text-text-main focus:bg-white focus:shadow-md focus:outline-none transition-all duration-300 border border-transparent focus:border-outline/10 placeholder:text-text-sub/50"
+            class="w-full h-10 bg-black/[0.04] rounded-lg px-10 text-[14px] text-text-main focus:bg-white focus:shadow-md focus:outline-none focus:ring-2 focus:ring-primary/10 transition-all duration-300 border border-transparent focus:border-primary/20 placeholder:text-text-sub/50"
           />
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3.5 top-3 text-text-sub group-focus-within:text-primary transition-colors"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </div>
@@ -46,7 +46,7 @@
         <!-- Refined Sidebar -->
         <aside class="hidden lg:flex w-56 flex-col p-10 pr-0 gap-8 shrink-0 overflow-y-auto">
           <div>
-            <p class="text-[10px] font-black text-text-sub/40 uppercase tracking-[0.2em] mb-6 px-3">Topics</p>
+            <p class="text-[10px] font-bold text-text-sub/40 uppercase tracking-[0.2em] mb-3 px-3">Topics</p>
             <div class="flex flex-col gap-1.5">
               <button 
                 v-for="cat in categories" 
@@ -91,11 +91,21 @@
                 <template v-else>
                   <div class="grid grid-cols-1 gap-y-2">
                     <ArticleCard 
-                      v-for="article in filteredArticles" 
+                      v-for="article in displayedArticles" 
                       :key="article.link"
                       :article="article"
                       @click="selectedUrl = article.link"
                     />
+                  </div>
+
+                  <!-- Load More -->
+                  <div v-if="hasMore" class="mt-12 text-center pb-10">
+                    <button 
+                      @click="loadMore"
+                      class="px-8 py-3 rounded-full border border-outline text-sm font-bold text-text-sub hover:text-text-main hover:border-text-main transition-all active:scale-95"
+                    >
+                      加载更多内容
+                    </button>
                   </div>
                 </template>
               </div>
@@ -209,8 +219,11 @@ const {
   searchValue, 
   categories,
   rssData, 
-  loadData, 
   filteredArticles,
+  displayedArticles,
+  hasMore,
+  loadData, 
+  loadMore,
   selectTab 
 } = useArticles()
 

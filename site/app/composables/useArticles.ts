@@ -6,8 +6,11 @@ export const useArticles = () => {
   const loading = ref(true)
   const currentTab = ref('全部')
   const searchValue = ref('')
+  
+  // 分页状态
+  const pageSize = 40
+  const currentPage = ref(1)
 
-  // 1. 定义分类映射 (把后端可能的英文标签/分类转为优雅的中文)
   const CATEGORY_MAP: Record<string, string> = {
     'Artificial_Intelligence': '人工智能',
     'Programming_Technology': '软件工程',
@@ -16,34 +19,26 @@ export const useArticles = () => {
     'Deep_Dive': '深度探索'
   }
 
-  // 2. 动态提取分类
   const categories = computed(() => {
     const counts: Record<string, number> = { '全部': articles.value.length }
-    
     articles.value.forEach(article => {
-      // 优先从 tags 里找分类 (如果 tags 里包含分类名)
       let found = false
       const tags = article.tags || []
-      
-      // 简单的关键词匹配或映射
       for (const [key, label] of Object.entries(CATEGORY_MAP)) {
         if (tags.includes(key) || tags.includes(label)) {
           counts[label] = (counts[label] || 0) + 1
           found = true
         }
       }
-      // 兜底：如果没匹配到，看 rssTitle
       if (!found && article.rssTitle) {
         const simplifiedTitle = article.rssTitle.split('(')[0].trim()
         counts[simplifiedTitle] = (counts[simplifiedTitle] || 0) + 1
       }
     })
-
     return Object.entries(counts)
       .map(([name, count]) => ({ name, count }))
       .sort((a, b) => {
         if (a.name === '全部') return -1
-        // 优先显示 CATEGORY_MAP 里的分类
         const isAInMap = Object.values(CATEGORY_MAP).includes(a.name)
         const isBInMap = Object.values(CATEGORY_MAP).includes(b.name)
         if (isAInMap && !isBInMap) return -1
@@ -55,59 +50,36 @@ export const useArticles = () => {
   const loadData = async () => {
     loading.value = true
     try {
-      let data;
-      let rss;
+      const [articlesResp, rssResp] = await Promise.all([
+        $fetch('/api/articles').catch(() => $fetch('/data/links.json')),
+        $fetch('/data/rss.json').catch(() => [])
+      ])
       
-      try {
-        // 并行加载文章和源数据
-        const [articlesResp, rssResp] = await Promise.all([
-          $fetch('/api/articles').catch(() => $fetch('/data/links.json')),
-          $fetch('/data/rss.json').catch(() => [])
-        ])
-        data = articlesResp
-        rss = rssResp
-      } catch (e) {
-        console.error('Data fetch failed', e)
-        return
+      if (Array.isArray(articlesResp)) {
+        articles.value = articlesResp.reduce((prev, curr) => {
+          return [...prev, ...curr.items.map(item => ({ ...item, rssTitle: curr.title }))]
+        }, []).sort((a, b) => a.date < b.date ? 1 : -1)
       }
-      
-      if (!Array.isArray(data)) {
-        console.warn('⚠️ Invalid articles data format:', data)
-        return
-      }
-
-      articles.value = data.reduce((prev, curr) => {
-        return [...prev, ...curr.items.map(item => ({ 
-          ...item, 
-          rssTitle: curr.title 
-        }))]
-      }, []).sort((a, b) => a.date < b.date ? 1 : -1)
-      
-      // 直接使用 rss.json 的原始数据
-      rssData.value = rss || []
+      rssData.value = rssResp || []
     } catch (e) {
-      console.error('Failed to load articles', e)
+      console.error('Failed to load data', e)
     } finally {
       loading.value = false
     }
   }
 
+  // 基础过滤后的全量列表
   const filteredArticles = computed(() => {
     let list = articles.value
-
     if (currentTab.value !== '全部') {
       list = list.filter(a => {
         const tags = a.tags || []
         const mappedCat = Object.keys(CATEGORY_MAP).find(k => CATEGORY_MAP[k] === currentTab.value)
-        
-        // 匹配规则：1. 标签匹配 2. 映射分类匹配 3. 来源标题简化后匹配
         const isTagMatch = tags.includes(currentTab.value) || (mappedCat && tags.includes(mappedCat))
         const isTitleMatch = a.rssTitle && a.rssTitle.split('(')[0].trim() === currentTab.value
-        
         return isTagMatch || isTitleMatch
       })
     }
-
     if (searchValue.value) {
       const search = searchValue.value.toLowerCase()
       list = list.filter(a => 
@@ -115,12 +87,27 @@ export const useArticles = () => {
         (a.summary && a.summary.toLowerCase().includes(search))
       )
     }
-
     return list
   })
 
+  // 最终显示的切片列表
+  const displayedArticles = computed(() => {
+    return filteredArticles.value.slice(0, currentPage.value * pageSize)
+  })
+
+  const hasMore = computed(() => {
+    return displayedArticles.value.length < filteredArticles.value.length
+  })
+
+  const loadMore = () => {
+    if (hasMore.value) {
+      currentPage.value++
+    }
+  }
+
   const selectTab = (title) => {
     currentTab.value = title
+    currentPage.value = 1 // 切换分类重置页码
     if (process.client) {
       const container = document.querySelector('.overflow-y-scroll')
       if (container) container.scrollTo({ top: 0, behavior: 'smooth' })
@@ -134,8 +121,11 @@ export const useArticles = () => {
     loading,
     currentTab,
     searchValue,
-    loadData,
+    displayedArticles,
     filteredArticles,
+    hasMore,
+    loadData,
+    loadMore,
     selectTab
   }
 }

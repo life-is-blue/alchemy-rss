@@ -14,7 +14,7 @@
           {{ article.title }}
         </h3>
         
-        <p v-if="article.summary" class="text-[13px] text-text-sub leading-snug line-clamp-2 opacity-80">
+        <p v-if="article.summary" class="text-[13px] text-gray-600 leading-relaxed line-clamp-2">
           {{ article.summary.replace(/<[^>]+>/g, '') }}
         </p>
       </div>
