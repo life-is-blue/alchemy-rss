@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-30 10:54:09。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-30 12:30:37。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -25,6 +25,8 @@
 
 
 - [【精选文章 (BestBlogs)】早报｜iPhone-销量创历史新高，库克：全球所有地区均刷新纪录/曝阿里字节春节前后齐发旗舰模型/特斯拉宣布停产-Model-S/X](https://www.bestblogs.dev/article/1b1e7782)
+- [【精选文章 (BestBlogs)】GenAI-系统的隐性技术债](https://www.bestblogs.dev/article/9f6aae88)
+- [【精选文章 (BestBlogs)】我宣布，这就是现在人声最真实的-AI-音乐模型。](https://www.bestblogs.dev/article/7d86e5ae)
 - [【精选文章 (BestBlogs)】AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://www.bestblogs.dev/article/0b0fa790)
 - [【精选文章 (BestBlogs)】一文读懂-AI-Search：从-RAG-到-DeepSearch](https://www.bestblogs.dev/article/4c309230)
 - [【精选文章 (BestBlogs)】规模化企业级-AI：来自-IBM-的治理与运营模式经验](https://www.bestblogs.dev/article/69f8f385)
@@ -42,8 +44,6 @@
 - [【精选文章 (BestBlogs)】介绍-Moltworker：一个自托管的个人-AI-智能体，告别-Mac-mini](https://www.bestblogs.dev/article/ce0a7dcf)
 - [【精选文章 (BestBlogs)】凭借-27-万小时真机数据，Generalist-可能是最接近“GPT-1-时刻”的顶级机器人团队](https://www.bestblogs.dev/article/952dbaa7)
 - [【精选文章 (BestBlogs)】为了让-AI-干活儿，我竭尽所能——我的-Vibe-Coding-认知升级之路](https://www.bestblogs.dev/article/c7fd13c7)
-- [【精选文章 (BestBlogs)】字节、阿里、腾讯-AI-大战全记录：一场影响命运的战争](https://www.bestblogs.dev/article/b57db689)
-- [【精选文章 (BestBlogs)】Context-Is-All-You-Need：快手后端-AI-Coding-的实践与思考](https://www.bestblogs.dev/article/319a8fd8)
 - [查看更多 >](/details/tags/ai-llm.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>

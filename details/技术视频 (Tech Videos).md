@@ -1,8 +1,12 @@
-:alarm_clock: 更新时间: 2026-01-30 10:54:09。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 12:30:37。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 技术视频 (Tech Videos)
 
 
+
+
+- **[2026-01-30-Google-DeepMind-刚刚发布了-Genie-3……（太震撼了）](https://www.bestblogs.dev/video/99b4bf4)**
+  > 📌 一句话摘要              本文对 Google DeepMind 的 Genie 3 进行了实测评估，这是一款能够根据文本和图像提示词生成可交互 3D 环境的交互式世界模型。 📝 详细摘要              本文探讨了 Google DeepMind 的前沿“世界模型”项目 Genie 3。与生成静态文本或图像的传统生成式 AI 不同，Genie 3 可以创建用户能够实
 
 
 - **[2026-01-30-全新-ChatGPT-应用商店：如何使用-OpenAI-的最新更新（完整指南）](https://www.bestblogs.dev/video/2570d4d)**
@@ -11,6 +15,10 @@
 
 - **[2026-01-30-我如何利用-Claudebot-全天候运行我的业务和生活](https://www.bestblogs.dev/video/56a5b51)**
   > 📌 一句话摘要              本文探讨了 Kitsay 如何通过 Discord 使用 Claudebot 构建 “个人操作系统”，通过具有 Shell 访问权限和自定义人格的专业 AI 智能体来管理生活和业务。 📝 详细摘要              文章详细介绍了 Greg Isenberg 与技术专家 Kitsay 之间关于 AI 智能体（特别是 Claudebot / Cl
+
+
+- **[2026-01-30-橡皮鸭星期四！今天让我们来构建一些酷炫的东西！](https://www.bestblogs.dev/video/cfb1301)**
+  > 📌 一句话摘要              一份使用 Node.js 构建 GitHub Copilot 扩展的实用指南，演示了如何将 AI 聊天与 GitHub Issues 等外部 API 连接起来。 📝 详细摘要              本文总结了 GitHub 开发者倡导者 Rizel Scarlett 关于 GitHub Copilot 扩展开发的直播编程课程。文章解释了其底层架构，
 
 
 - **[2026-01-30-孩子们应该如何利用-AI-学习-|-Priya-Lakhani](https://www.bestblogs.dev/video/555aaf1)**
