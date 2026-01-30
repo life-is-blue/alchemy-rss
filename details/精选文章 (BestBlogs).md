@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-30 14:11:52。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 16:07:26。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
@@ -11,6 +11,18 @@
 
 - **[2026-01-30-早报｜iPhone-销量创历史新高，库克：全球所有地区均刷新纪录/曝阿里字节春节前后齐发旗舰模型/特斯拉宣布停产-Model-S/X](https://www.bestblogs.dev/article/1b1e7782)**
   > 📌 一句话摘要              本文汇总了 2026 年初全球科技巨头的重大动态，涵盖苹果创纪录财报、特斯拉战略转型、大模型春节“混战”及 OpenAI 巨额融资等核心资讯。 📝 详细摘要              文章全面梳理了近期科技领域的关键动态。苹果公司凭借 iPhone 17 在大中华区的强劲表现，创下 1438 亿美元的历史最佳季度营收；特斯拉宣布停产 Model S/X
+
+
+- **[2026-01-30-AINews-SpaceXai-Grok-Imagine-API-——-排名第一的视频模型，拥有最优价格与延迟](https://www.bestblogs.dev/article/49af5d75)**
+  > 📌 一句话摘要              本期 AINews 重点介绍了 xAI 的 Grok Imagine 视频 API 发布、Google 的 Genie 3 世界模型，以及 Kimi K2.5 作为主导性开源前沿模型的崛起。 📝 详细摘要              本文全面更新了截至 2026 年 1 月底的 AI 领域动态。核心焦点是 xAI 的 Grok Imagine，它凭借高性
+
+
+- **[2026-01-30-全球首个大模型在轨部署：中国太空算力解锁“软硬一体”](https://www.bestblogs.dev/article/4d452809)**
+  > 📌 一句话摘要              中国成功实现全球首个大模型（Qwen3）在轨实时部署，标志着太空算力从硬件预装向“软硬一体、动态迭代”的产业化阶段跨越。 📝 详细摘要              文章深入报道了国星宇航成功将千问大模型 Qwen3 部署于在轨卫星的突破性进展。核心技术在于通过“分块传输、星上重组”方案，克服了星地通信带宽与窗口期的严苛限制，实现了模型的远程注入与校验。文
+
+
+- **[2026-01-30-实测-Genie：各位，传说中的世界模型被-Google-做出来了](https://www.bestblogs.dev/article/3b29f77e)**
+  > 📌 一句话摘要              Google DeepMind 发布的 Project Genie 实验原型，标志着可交互世界模型从理论走向实践，重点在于维持空间一致性与物理自洽性。 📝 详细摘要              文章详细评测了 Google DeepMind 最新开放的 Project Genie（Genie 3 实验原型）。该模型允许用户通过文字或图片生成可交互的 3D
 
 
 - **[2026-01-30-GenAI-系统的隐性技术债](https://www.bestblogs.dev/article/9f6aae88)**
@@ -35,6 +47,10 @@
 
 - **[2026-01-30-科技爱好者周刊（第-383-期）：你是第几级-AI-编程](https://www.bestblogs.dev/article/a59fad1b)**
   > 📌 一句话摘要              本期周刊探讨了 AI 编程从插件辅助到全自动任务编排的八个演进等级，并汇集了近期科技动态、实用开发工具及 AI 辅助编程的深层思考。 📝 详细摘要              阮一峰在第 383 期周刊中重点介绍了著名程序员 Steve Yegge 提出的“AI 编程 8 等级”理论。该理论描绘了开发者从初识 AI 插件到完全依赖 AI 任务编排器（如
+
+
+- **[2026-01-30-Clawdbot-目前没有商业价值，但给“鸡肋”的-AI-PC-们上了一课](https://www.bestblogs.dev/article/a5e33e0d)**
+  > 📌 一句话摘要              本文深度剖析了开源项目 Clawdbot（Moltbot）爆火背后的技术逻辑、安全隐患及其对 AI PC 行业的范式冲击，指出其真正的价值在于对智能体经济的启发而非直接商业利益。 📝 详细摘要              文章围绕近期在 GitHub 爆火的开源智能体项目 Clawdbot 展开。技术上，Clawdbot 通过递归式技能进化机制（SKIL
 
 
 - **[2026-01-30-一文读懂-AI-Search：从-RAG-到-DeepSearch](https://www.bestblogs.dev/article/4c309230)**
@@ -213,16 +229,20 @@
   > 📌 一句话摘要              本文评述了 Kimi K2.5 发布的“模型+Agent”一体化策略，并通过“视觉编程”实测验证了其在网页还原等复杂任务中的卓越表现。 📝 详细摘要              文章深入探讨了 Kimi K2.5 发布的战略意义，指出其核心亮点在于将底层大模型与上层 Agent 深度融合的“一体化”模式。作者通过对比 Manus 的“分层开发”模式（即在
 
 
-- **[2026-01-29-新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://www.bestblogs.dev/article/86b0affe)**
-  > 📌 一句话摘要              本文深度探讨了 AI 时代操作系统从“以 CPU 为中心”向“AI 原生”架构的范式跃迁，涵盖内核重构、异构算力适配及 Agent 生态布局。 📝 详细摘要              文章基于阿里云与中科院专家的深度对话，系统分析了智算时代操作系统的进化路径。核心观点认为，OS 的 AI 进化并非简单的功能叠加，而是底层逻辑的重构：从传统的资源隔离管理
+- **[2026-01-29-不跟英伟达走老路，这家-GPU-公司的技术架构藏着哪些关键解？](https://www.bestblogs.dev/article/13005643)**
+  > 📌 一句话摘要              天数智芯发布未来三代 GPU 架构路线图，通过 TPC 广播、动态 Warp 调度等微架构创新，旨在实现超越英伟达的高质量、可预期算力。 📝 详细摘要              本文深入探讨了国产 GPU 厂商天数智芯的技术战略与架构演进。文章披露了天数智芯从 2025 年到 2027 年的四代架构（天枢、天璇、天玑、天权）路线图，明确提出在 Deep
 
 
 - **[2026-01-29-昇腾-MindSpeed：分布式训练加速库的创新实践与突破](https://www.bestblogs.dev/article/f84c4c94)**
   > 📌 一句话摘要              华为昇腾 MindSpeed 通过在通信、显存、计算和并行四个维度的底层工程优化，为大模型分布式训练提供了高效的国产化加速方案。 📝 详细摘要              本文是华为高级工程师郑加利在 QCon 大会上的演讲实录，重点介绍了昇腾 MindSpeed 分布式训练加速库的技术突破。针对大模型训练中算力需求激增与显存瓶颈，MindSpeed 提
 
 
-- **[2026-01-29-不跟英伟达走老路，这家-GPU-公司的技术架构藏着哪些关键解？](https://www.bestblogs.dev/article/13005643)**
-  > 📌 一句话摘要              天数智芯发布未来三代 GPU 架构路线图，通过 TPC 广播、动态 Warp 调度等微架构创新，旨在实现超越英伟达的高质量、可预期算力。 📝 详细摘要              本文深入探讨了国产 GPU 厂商天数智芯的技术战略与架构演进。文章披露了天数智芯从 2025 年到 2027 年的四代架构（天枢、天璇、天玑、天权）路线图，明确提出在 Deep
+- **[2026-01-29-新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://www.bestblogs.dev/article/86b0affe)**
+  > 📌 一句话摘要              本文深度探讨了 AI 时代操作系统从“以 CPU 为中心”向“AI 原生”架构的范式跃迁，涵盖内核重构、异构算力适配及 Agent 生态布局。 📝 详细摘要              文章基于阿里云与中科院专家的深度对话，系统分析了智算时代操作系统的进化路径。核心观点认为，OS 的 AI 进化并非简单的功能叠加，而是底层逻辑的重构：从传统的资源隔离管理
+
+
+- **[2026-01-29-Claude-Code-发现-Clawdbot-们套着它的壳就要把它替代了](https://www.bestblogs.dev/article/7e66b55d)**
+  > 📌 一句话摘要              文章深度解析了围绕 Claude Code 形成的“套壳 2.0”生态，探讨了社区工具如何通过补齐官方产品的场景化短板，系统性地重塑 AI Agent 的用户预期。 📝 详细摘要              本文以 Clawdbot（现更名为 Moltbot）的爆红为切入点，提出了“套壳 2.0”的概念。不同于早期仅提供 UI 包装的套壳，2.0 时代的
 
 
 - **[2026-01-29-世界模型-LingBot-World，正式开源！](https://www.bestblogs.dev/article/ee793d96)**
@@ -235,6 +255,10 @@
 
 - **[2026-01-29-视频界的-Skills-来了，好用到爆炸](https://www.bestblogs.dev/article/cd5b38ec)**
   > 📌 一句话摘要              文章解析了 Vidu AI 视频新推出的“主体社区”功能，将其类比为视频领域的 Skills，通过封装专业运镜与风格预设降低创作门槛。 📝 详细摘要              本文详细介绍了国内 AI 视频产品 Vidu 推出的“主体社区”功能。作者将其核心逻辑类比为近期流行的“Skills”，认为这是对视频创作中 Workflow 和专业经验的封装。
+
+
+- **[2026-01-29-xAI-Grok-Imagine-API---排名第一的视频模型，最佳价格与延迟---以及与-SpaceX-的合并](https://www.bestblogs.dev/article/c8a9691f)**
+  > 📌 一句话摘要              这份全面的 AI 新闻综述重点介绍了 xAI Grok Imagine API 的发布、Google 的 Genie 3 世界模拟器，以及 Kimi K2.5 作为主导开源模型的崛起。 📝 详细摘要              本文对 2026 年 1 月下旬的 AI 发展进行了高密度综合。重点关注 xAI 的 Grok Imagine API，该 AP
 
 
 - **[2026-01-29-我的-Clawdbot-和你的一样，只不过你多花了-4000-元](https://www.bestblogs.dev/article/4001140b)**
@@ -261,16 +285,16 @@
   > 📌 一句话摘要              中国电信人工智能研究院推出 TeleMem 框架，通过有向无环图（DAG）重构 Agent 记忆系统，解决传统 RAG 的碎片化问题，实现长程对话准确率提升 38%。 📝 详细摘要              文章深入探讨了 AI Agent 在长期学习中面临的记忆瓶颈，指出传统 RAG 架构因缺乏时间与因果结构，难以支撑跨月甚至跨年的持续运行。为此，T
 
 
+- **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
+  > 📌 一句话摘要              本文介绍了 Agent2Agent (A2A) 协议与 Spring AI 的集成，为构建具有互操作性的跨平台 AI 智能体生态系统提供了一个标准化框架。 📝 详细摘要              本文详细介绍了 Spring AI A2A 项目，该项目将 A2A Java SDK 与 Spring AI 集成，实现了不同底层实现的 AI 智能体之间的无
+
+
 - **[2026-01-29-超越聊天机器人：可信-AI-蓝图](https://www.bestblogs.dev/article/ea29b583)**
   > 📌 一句话摘要              Google 展示了如何利用 Antigravity 框架和“裂脑”架构构建可信、实时的智能体 AI 蓝图，提供毫秒级精度的赛车指导。 📝 详细摘要              本文详细介绍了在 Thunderhill 赛道进行的一项高速实地测试，Google 开发者专家 (GDE) 利用全新的 Antigravity (AGY) 框架构建了实时 AI
 
 
 - **[2026-01-29-介绍适用于-.NET-的-Google-Cloud-Vertex-AI-扩展](https://www.bestblogs.dev/article/0e27519b)**
   > 📌 一句话摘要              Google 推出了 Google.Cloud.VertexAI.Extensions 库，这是 Microsoft AI 抽象的 .NET 实现，旨在将 Gemini 模型无缝集成到多供应商的 .NET 应用程序中。 📝 详细摘要              本文宣布了 Google.Cloud.VertexAI.Extensions 库的 Beta
-
-
-- **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
-  > 📌 一句话摘要              本文介绍了 Agent2Agent (A2A) 协议与 Spring AI 的集成，为构建具有互操作性的跨平台 AI 智能体生态系统提供了一个标准化框架。 📝 详细摘要              本文详细介绍了 Spring AI A2A 项目，该项目将 A2A Java SDK 与 Spring AI 集成，实现了不同底层实现的 AI 智能体之间的无
 
 
 - **[2026-01-29-管理：AI-时代的超能力](https://www.bestblogs.dev/article/9188d4ca)**
