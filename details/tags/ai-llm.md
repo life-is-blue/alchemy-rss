@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-30 22:11:14。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 00:08:09。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -7,20 +7,28 @@
 
 
 
+- **[2026-01-30-开源版-Claude-Code-来了，48-小时的深度使用教程](https://www.bestblogs.dev/article/340a76ad)**
+  > 📌 一句话摘要              本文深度评测了 Kimi K2.5 及其配套工具 Kimi Code，重点展示了其视频驱动的代码生成能力与多 Agent 蜂群协作机制的实战表现。 📝 详细摘要              文章对月之暗面发布的 Kimi K2.5 模型及 Kimi Code 进行了为期 48 小时的深度实测。内容涵盖了从环境配置到多维度实战演练：首先通过视频录制成功复刻
+
+
 - **[2026-01-30-5-秒出-4-张-2K-大图！阿里提出-2-步生成方案，拉爆-AI-生图进度条](https://www.bestblogs.dev/article/41b8ff20)**
   > 📌 一句话摘要              阿里智能引擎团队通过结合概率空间蒸馏、PCM 热启动与 GAN 对抗学习，将 Qwen-Image 模型生图步数压缩至 2 步，实现 5 秒生成 4 张 2K 大图的 40 倍加速。 📝 详细摘要              本文介绍了阿里智能引擎团队在扩散模型加速领域的最新突破。针对主流模型生成速度慢的痛点，团队提出了一种综合蒸馏方案，将 Qwen-I
+
+
+- **[2026-01-30-a16z-联合创始人：真正的-AI-浪潮还没开始丨-Lenny's-Podcast](https://www.bestblogs.dev/article/67955085)**
+  > 📌 一句话摘要              a16z 创始人 Marc Andreessen 指出 AI 是应对人口结构崩溃与生产力停滞的救命稻草，并重新定义了 AI 时代的教育、职业路径与人才竞争核心。 📝 详细摘要              本文深度总结了 a16z 联合创始人 Marc Andreessen 在 Lenny's Podcast 中的核心观点。Marc 认为，在全球面临人口老
 
 
 - **[2026-01-30-连续创立-2-家-AI-独角兽！这个大佬，这次要让-AI-自己进化](https://www.bestblogs.dev/article/4e49f936)**
   > 📌 一句话摘要              文章深度解析了 Richard Socher 创办 Recursive 探索 AI 自我进化机制，并提出从“提示工程”转向“奖励工程”的 AI 演进核心观。 📝 详细摘要              本文围绕 AI 领域连续创业者 Richard Socher 的职业路径，重点介绍了其新公司 Recursive 的前沿愿景：构建能够递归自我改进、不依赖人
 
 
-- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
-  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
-
-
 - **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
   > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
+
+
+- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
+  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
 
 
 - **[2026-01-30-OpenAI-关键九问：2026-AI-战局升级后迎来叙事反转](https://www.bestblogs.dev/article/0217aec7)**
@@ -165,19 +173,15 @@
 
 
 - **[2026-01-29-实测-Prism：OpenAI-的论文写作工具，完全免费](https://www.bestblogs.dev/article/4d32f216)**
-  > 📌 一句话摘要              本文介绍了 OpenAI 推出的免费云端 LaTeX 写作工具 Prism，分析了其核心功能、隐私风险以及在 AI for Science 领域的战略布局。 📝 详细摘要              文章详细实测了 OpenAI 最新发布的科研写作工具 Prism。该产品基于收购的 Crixet 编辑器并集成 GPT-5.2，定位为 AI 协作而非单纯代
 
 
 - **[2026-01-29-让-Agent-画思维导图稳固长期记忆：新框架实现稳定长期学习，准确率提升-38%](https://www.bestblogs.dev/article/28f4b94f)**
-  > 📌 一句话摘要              中国电信人工智能研究院推出 TeleMem 框架，通过有向无环图（DAG）重构 Agent 记忆系统，解决传统 RAG 的碎片化问题，实现长程对话准确率提升 38%。 📝 详细摘要              文章深入探讨了 AI Agent 在长期学习中面临的记忆瓶颈，指出传统 RAG 架构因缺乏时间与因果结构，难以支撑跨月甚至跨年的持续运行。为此，T
 
 
 - **[2026-01-29-超越聊天机器人：可信-AI-蓝图](https://www.bestblogs.dev/article/ea29b583)**
-  > 📌 一句话摘要              Google 展示了如何利用 Antigravity 框架和“裂脑”架构构建可信、实时的智能体 AI 蓝图，提供毫秒级精度的赛车指导。 📝 详细摘要              本文详细介绍了在 Thunderhill 赛道进行的一项高速实地测试，Google 开发者专家 (GDE) 利用全新的 Antigravity (AGY) 框架构建了实时 AI
 
 
 - **[2026-01-29-介绍适用于-.NET-的-Google-Cloud-Vertex-AI-扩展](https://www.bestblogs.dev/article/0e27519b)**
-  > 📌 一句话摘要              Google 推出了 Google.Cloud.VertexAI.Extensions 库，这是 Microsoft AI 抽象的 .NET 实现，旨在将 Gemini 模型无缝集成到多供应商的 .NET 应用程序中。 📝 详细摘要              本文宣布了 Google.Cloud.VertexAI.Extensions 库的 Beta
 
 
 - **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
@@ -536,6 +540,10 @@
 
 
 - **[2026-01-16-Claude-Code（全新延迟加载-MCP）：他们终于修复了-Claude-Code-的最大问题！](https://www.bestblogs.dev/video/f9e1e76)**
+
+
+- **[2026-01-30-Vol.86-同一代技术，两个系统，181-页-PPT-全记录-AI-行业的-2025](https://www.bestblogs.dev/podcast/acd4481)**
+  > 📌 一句话摘要              深度复盘 2025 年全球 AI 行业，详述中美在同一代技术背景下，由实验室向产业系统化展开的竞争格局与 2026 趋势。 📝 详细摘要              本期播客由资深投资人庄明浩通过 181 页 PPT 详尽梳理了 2025 年 AI 行业的全貌。核心观点为：中美虽处于同一代大模型技术约束下，但正演变为两个截然不同的系统。美国侧重从模型向产
 
 
 - **[2026-01-29-Vol.98｜小冰之父李笛谈新-AI-项目：AI-这门生意的终极模式，不是只卖-Token](https://www.bestblogs.dev/podcast/c753d69)**
