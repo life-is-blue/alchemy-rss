@@ -1,6 +1,6 @@
 > 提示：只是根据文章标题简单匹配分类
 
-:alarm_clock: 更新时间: 2026-01-30 16:07:26。[文章来源](/README.md)
+:alarm_clock: 更新时间: 2026-01-30 18:08:04。[文章来源](/README.md)
 
 ## 文章分类
 
@@ -25,9 +25,11 @@
 
 
 - [【精选文章 (BestBlogs)】早报｜iPhone-销量创历史新高，库克：全球所有地区均刷新纪录/曝阿里字节春节前后齐发旗舰模型/特斯拉宣布停产-Model-S/X](https://www.bestblogs.dev/article/1b1e7782)
+- [【精选文章 (BestBlogs)】OpenAI-前研究员：模型能自行突破困难才叫-AGI，最大问题是泛化；最重要技能是“管理初级工程师”，机器人出现“ChatGPT-时刻”只需两到三年](https://www.bestblogs.dev/article/92f68efa)
 - [【精选文章 (BestBlogs)】AINews-SpaceXai-Grok-Imagine-API-——-排名第一的视频模型，拥有最优价格与延迟](https://www.bestblogs.dev/article/49af5d75)
 - [【精选文章 (BestBlogs)】GenAI-系统的隐性技术债](https://www.bestblogs.dev/article/9f6aae88)
 - [【精选文章 (BestBlogs)】我宣布，这就是现在人声最真实的-AI-音乐模型。](https://www.bestblogs.dev/article/7d86e5ae)
+- [【精选文章 (BestBlogs)】用-AI-做深度用户访谈，获蓝驰、高瓴、王慧文投资](https://www.bestblogs.dev/article/1706b025)
 - [【精选文章 (BestBlogs)】AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://www.bestblogs.dev/article/0b0fa790)
 - [【精选文章 (BestBlogs)】科技爱好者周刊（第-383-期）：你是第几级-AI-编程](https://www.bestblogs.dev/article/a59fad1b)
 - [【精选文章 (BestBlogs)】Clawdbot-目前没有商业价值，但给“鸡肋”的-AI-PC-们上了一课](https://www.bestblogs.dev/article/a5e33e0d)
@@ -42,8 +44,6 @@
 - [【精选文章 (BestBlogs)】阿里重磅开源！OpenSandbox：专为-AI-Agent-打造的下一代沙箱](https://www.bestblogs.dev/article/b7ca6be0)
 - [【精选文章 (BestBlogs)】全球最强-AI-音乐模型，现在来自中国！高晓松也来围观了](https://www.bestblogs.dev/article/78fbd3ed)
 - [【精选文章 (BestBlogs)】AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)
-- [【精选文章 (BestBlogs)】Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)
-- [【精选文章 (BestBlogs)】喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)
 - [查看更多 >](/details/tags/ai-llm.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
@@ -141,9 +141,13 @@
 
 
 
+- [【精选文章 (BestBlogs)】WASM-组件是-FaaS-的最佳拍档](https://www.bestblogs.dev/article/82d010c4)
+- [【精选文章 (BestBlogs)】自主大数据优化：利用多智能体强化学习实现-Apache-Spark-的自动调优](https://www.bestblogs.dev/article/6c661043)
+- [【精选文章 (BestBlogs)】大模型的第一性原理：（二）信号处理篇](https://www.bestblogs.dev/article/e5acc4da)
+- [【精选文章 (BestBlogs)】揭秘！RLVR/GRPO-中那些长期被忽略的关键缺陷](https://www.bestblogs.dev/article/19cc6340)
 - [【精选文章 (BestBlogs)】2026-01-30-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/2c5b3eaa)
-- [【精选文章 (BestBlogs)】全球首个大模型在轨部署：中国太空算力解锁“软硬一体”](https://www.bestblogs.dev/article/4d452809)
 - [【精选文章 (BestBlogs)】实测-Genie：各位，传说中的世界模型被-Google-做出来了](https://www.bestblogs.dev/article/3b29f77e)
+- [【精选文章 (BestBlogs)】全球首个大模型在轨部署：中国太空算力解锁“软硬一体”](https://www.bestblogs.dev/article/4d452809)
 - [【精选文章 (BestBlogs)】【第-3651-期】vivo-互联网全链路多版本环境落地实践](https://www.bestblogs.dev/article/c15661b3)
 - [【精选文章 (BestBlogs)】产品经理如何进行优先级排序-——-产品优先级框架详解](https://www.bestblogs.dev/article/d7eda518)
 - [【精选文章 (BestBlogs)】推出用于高级机器人控制的-NVIDIA-Cosmos-Policy](https://www.bestblogs.dev/article/2aa99ddf)
@@ -157,10 +161,6 @@
 - [【精选文章 (BestBlogs)】Swift-跨平台框架-Skip-现已完全开源](https://www.bestblogs.dev/article/1628d64a)
 - [【精选文章 (BestBlogs)】如何编写高性能代码](https://www.bestblogs.dev/article/f940a947)
 - [【精选文章 (BestBlogs)】如何在-Python-中使用建造者模式：开发者实用指南](https://www.bestblogs.dev/article/77a6480e)
-- [【精选文章 (BestBlogs)】排序基础模型：挑战、成功与经验教训](https://www.bestblogs.dev/article/c1da9cd4)
-- [【精选文章 (BestBlogs)】智能体编程中的-80%-问题](https://www.bestblogs.dev/article/21d6d37f)
-- [【精选文章 (BestBlogs)】更快的-GKE-节点池自动创建](https://www.bestblogs.dev/article/2835cdfa)
-- [【精选文章 (BestBlogs)】2025-年的-Spanner](https://www.bestblogs.dev/article/5925978d)
 - [查看更多 >](/details/tags/other.md)
 
 <div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>

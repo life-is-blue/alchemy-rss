@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-30 16:07:26。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-30 18:08:04。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11,6 +11,10 @@
   > 📌 一句话摘要              本文汇总了 2026 年初全球科技巨头的重大动态，涵盖苹果创纪录财报、特斯拉战略转型、大模型春节“混战”及 OpenAI 巨额融资等核心资讯。 📝 详细摘要              文章全面梳理了近期科技领域的关键动态。苹果公司凭借 iPhone 17 在大中华区的强劲表现，创下 1438 亿美元的历史最佳季度营收；特斯拉宣布停产 Model S/X
 
 
+- **[2026-01-30-OpenAI-前研究员：模型能自行突破困难才叫-AGI，最大问题是泛化；最重要技能是“管理初级工程师”，机器人出现“ChatGPT-时刻”只需两到三年](https://www.bestblogs.dev/article/92f68efa)**
+  > 📌 一句话摘要              OpenAI 前核心架构师 Jerry Tworek 深度解析 AGI 路径，强调泛化能力与持续学习是突破静态模型局限、实现 AGI 的核心，并预测机器人领域将在两三年内迎来爆发。 📝 详细摘要              本文整理自对 OpenAI 前推理模型（o1、o3）关键架构师 Jerry Tworek 的深度访谈。Jerry 结合其在 Open
+
+
 - **[2026-01-30-AINews-SpaceXai-Grok-Imagine-API-——-排名第一的视频模型，拥有最优价格与延迟](https://www.bestblogs.dev/article/49af5d75)**
   > 📌 一句话摘要              本期 AINews 重点介绍了 xAI 的 Grok Imagine 视频 API 发布、Google 的 Genie 3 世界模型，以及 Kimi K2.5 作为主导性开源前沿模型的崛起。 📝 详细摘要              本文全面更新了截至 2026 年 1 月底的 AI 领域动态。核心焦点是 xAI 的 Grok Imagine，它凭借高性
 
@@ -21,6 +25,10 @@
 
 - **[2026-01-30-我宣布，这就是现在人声最真实的-AI-音乐模型。](https://www.bestblogs.dev/article/7d86e5ae)**
   > 📌 一句话摘要              本文深度评测了 MiniMax 新发布的 Music 2.5 音乐模型，重点解析其在人声真实感、多语言咬字及方言适配上的突破，并分享了结合提示词工具的实战创作流。 📝 详细摘要              文章对 MiniMax 最新发布的音乐大模型 Music 2.5 进行了详尽的实战评测。作者指出，该模型在人声表现力上实现了质的飞跃，能够模拟人类嗓音
+
+
+- **[2026-01-30-用-AI-做深度用户访谈，获蓝驰、高瓴、王慧文投资](https://www.bestblogs.dev/article/1706b025)**
+  > 📌 一句话摘要              Trooly.AI 是一家利用多模态 AI 语音 Agent 进行深度定性用户访谈的初创公司，旨在通过降低社交压力获取真实用户故事，解决产品决策中的信息不对称问题。 📝 详细摘要              本文介绍了 AI 原生用户研究平台 Trooly.AI 的创业故事与产品理念。该公司由前 Zulution AI 核心成员创立，近期获得蓝驰、高瓴及
 
 
 - **[2026-01-30-AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://www.bestblogs.dev/article/0b0fa790)**
@@ -128,16 +136,16 @@
   > 📌 一句话摘要              中国电信人工智能研究院推出 TeleMem 框架，通过有向无环图（DAG）重构 Agent 记忆系统，解决传统 RAG 的碎片化问题，实现长程对话准确率提升 38%。 📝 详细摘要              文章深入探讨了 AI Agent 在长期学习中面临的记忆瓶颈，指出传统 RAG 架构因缺乏时间与因果结构，难以支撑跨月甚至跨年的持续运行。为此，T
 
 
-- **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
-  > 📌 一句话摘要              本文介绍了 Agent2Agent (A2A) 协议与 Spring AI 的集成，为构建具有互操作性的跨平台 AI 智能体生态系统提供了一个标准化框架。 📝 详细摘要              本文详细介绍了 Spring AI A2A 项目，该项目将 A2A Java SDK 与 Spring AI 集成，实现了不同底层实现的 AI 智能体之间的无
-
-
 - **[2026-01-29-超越聊天机器人：可信-AI-蓝图](https://www.bestblogs.dev/article/ea29b583)**
   > 📌 一句话摘要              Google 展示了如何利用 Antigravity 框架和“裂脑”架构构建可信、实时的智能体 AI 蓝图，提供毫秒级精度的赛车指导。 📝 详细摘要              本文详细介绍了在 Thunderhill 赛道进行的一项高速实地测试，Google 开发者专家 (GDE) 利用全新的 Antigravity (AGY) 框架构建了实时 AI
 
 
 - **[2026-01-29-介绍适用于-.NET-的-Google-Cloud-Vertex-AI-扩展](https://www.bestblogs.dev/article/0e27519b)**
   > 📌 一句话摘要              Google 推出了 Google.Cloud.VertexAI.Extensions 库，这是 Microsoft AI 抽象的 .NET 实现，旨在将 Gemini 模型无缝集成到多供应商的 .NET 应用程序中。 📝 详细摘要              本文宣布了 Google.Cloud.VertexAI.Extensions 库的 Beta
+
+
+- **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
+  > 📌 一句话摘要              本文介绍了 Agent2Agent (A2A) 协议与 Spring AI 的集成，为构建具有互操作性的跨平台 AI 智能体生态系统提供了一个标准化框架。 📝 详细摘要              本文详细介绍了 Spring AI A2A 项目，该项目将 A2A Java SDK 与 Spring AI 集成，实现了不同底层实现的 AI 智能体之间的无
 
 
 - **[2026-01-29-管理：AI-时代的超能力](https://www.bestblogs.dev/article/9188d4ca)**
@@ -267,12 +275,6 @@
 
 
 - **[2026-01-28-MiniMax-M2-her：我们做出了更懂你的-AI](https://www.bestblogs.dev/article/f781df9a)**
-
-
-- **[2026-01-28-AI-记忆革命爆发！Clawdbot-如何像大脑般记住一切](https://www.bestblogs.dev/article/04b497f6)**
-
-
-- **[2026-01-28-一行-Rust-没写过！仅-1-个月，他用-Claude-迁移了-10-万行-JavaScript-代码](https://www.bestblogs.dev/article/74f3b9ac)**
 
 
 - **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**
