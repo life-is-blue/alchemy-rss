@@ -1,35 +1,95 @@
 [
   {
-    "title": "精选文章 (BestBlogs)",
+    "title": "精选文章 - AI",
+    "type": "ARTICLE",
     "category": "Artificial_Intelligence",
+    "qualifiedFilter": "true",
     "sortType": "score_desc",
     "timeFilter": "3d",
-    "qualifiedFilter": "true",
     "limit": 50
   },
   {
-    "title": "软件编程 (Programming)",
+    "title": "精选文章 - 编程",
+    "type": "ARTICLE",
     "category": "Programming_Technology",
+    "qualifiedFilter": "true",
     "sortType": "score_desc",
     "timeFilter": "3d",
-    "qualifiedFilter": "true",
     "limit": 50
   },
   {
-    "title": "商业科技 (Business)",
+    "title": "精选文章 - 商业",
+    "type": "ARTICLE",
     "category": "Business_Tech",
+    "qualifiedFilter": "true",
     "sortType": "score_desc",
     "timeFilter": "1w",
-    "qualifiedFilter": "true",
     "limit": 30
   },
   {
-    "title": "产品设计 (Product)",
+    "title": "精选文章 - 产品",
+    "type": "ARTICLE",
     "category": "Product_Development",
+    "qualifiedFilter": "true",
     "sortType": "score_desc",
     "timeFilter": "1w",
-    "qualifiedFilter": "true",
     "limit": 30
+  },
+  {
+    "title": "精选文章 - Agent 专题",
+    "type": "ARTICLE",
+    "keyword": "Agent",
+    "qualifiedFilter": "true",
+    "timeFilter": "1w",
+    "limit": 20
+  },
+  {
+    "title": "技术视频 - 编程",
+    "type": "VIDEO",
+    "category": "Programming_Technology",
+    "qualifiedFilter": "true",
+    "timeFilter": "1w",
+    "limit": 20
+  },
+  {
+    "title": "技术视频 - AI",
+    "type": "VIDEO",
+    "category": "Artificial_Intelligence",
+    "qualifiedFilter": "true",
+    "timeFilter": "1w",
+    "limit": 15
+  },
+  {
+    "title": "深度播客 - AI",
+    "type": "PODCAST",
+    "category": "Artificial_Intelligence",
+    "qualifiedFilter": "true",
+    "timeFilter": "1w",
+    "limit": 15
+  },
+  {
+    "title": "深度播客 - 商业",
+    "type": "PODCAST",
+    "category": "Business_Tech",
+    "qualifiedFilter": "true",
+    "timeFilter": "1w",
+    "limit": 10
+  },
+  {
+    "title": "AI 动态",
+    "type": "TWITTER",
+    "category": "Artificial_Intelligence",
+    "lowerTotalScore": 80,
+    "timeFilter": "3d",
+    "limit": 30
+  },
+  {
+    "title": "编程动态",
+    "type": "TWITTER",
+    "category": "Programming_Technology",
+    "lowerTotalScore": 75,
+    "timeFilter": "3d",
+    "limit": 20
   },
   {
     "title": "宝玉的分享",
