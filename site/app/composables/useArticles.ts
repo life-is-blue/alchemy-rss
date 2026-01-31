@@ -78,10 +78,18 @@ export const useArticles = () => {
         $fetch('/data/rss.json').catch(() => [])
       ])
 
+      // 预计算优化结构
+      const optimizedSources: { title: string; baseTitle: string; config: any }[] = []
+
       // 建立源配置映射
       if (Array.isArray(rssResp)) {
         rssResp.forEach(source => {
           sourcesMap.value.set(source.title, source)
+          optimizedSources.push({
+            title: source.title,
+            baseTitle: source.title.split('-')[0]?.trim(),
+            config: source
+          })
         })
       }
 
@@ -95,10 +103,10 @@ export const useArticles = () => {
         // 2. 模糊匹配：处理 "精选文章 (BestBlogs)" -> "精选文章 - AI" 等情况
         const normalizedTitle = title.replace(/\s*\([^)]*\)/, '').trim() // 移除括号部分
 
-        for (const [configTitle, config] of sourcesMap.value.entries()) {
+        for (const item of optimizedSources) {
           // 检查是否包含相同的关键词
-          if (configTitle.includes(normalizedTitle) || normalizedTitle.includes(configTitle.split('-')[0]?.trim())) {
-            return config
+          if (item.title.includes(normalizedTitle) || normalizedTitle.includes(item.baseTitle)) {
+            return item.config
           }
         }
 
@@ -107,20 +115,17 @@ export const useArticles = () => {
 
       // 合并文章时添加源元数据
       if (Array.isArray(articlesResp)) {
-        articles.value = articlesResp.reduce((prev, curr) => {
+        articles.value = articlesResp.flatMap(curr => {
           const sourceConfig = findSourceConfig(curr.title)
 
-          return [
-            ...prev,
-            ...curr.items.map(item => ({
-              ...item,
-              rssTitle: curr.title,
-              // 新增字段：内容类型和源分类
-              contentType: sourceConfig?.type || 'ARTICLE',
-              sourceCategory: sourceConfig?.category,
-            }))
-          ]
-        }, []).sort((a, b) => a.date < b.date ? 1 : -1)
+          return curr.items.map(item => ({
+            ...item,
+            rssTitle: curr.title,
+            // 新增字段：内容类型和源分类
+            contentType: sourceConfig?.type || 'ARTICLE',
+            sourceCategory: sourceConfig?.category,
+          }))
+        }).sort((a, b) => a.date < b.date ? 1 : -1)
       }
       rssData.value = rssResp || []
     } catch (e) {
