@@ -1,16 +1,8 @@
-> **更新时间**: 2026-02-01 01:02:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-01 01:52:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek, OpenAI, Claude
-
-
-
-### [智能体编程中的-80%-问题](https://addyo.substack.com/p/the-80-problem-in-agentic-coding)
-
-2026-01-28 17:20:53 | 标签: Agentic Coding, 软件工程, LLM, 理解债, 生产力悖论
-
-> 本文探讨了从手动编程到智能体编排的转变，强调了“理解债”的兴起以及代码量增加导致评审瓶颈的生产力悖论。
 
 
 
@@ -219,14 +211,6 @@
 2026-01-29 12:59:21 | 标签: Qwen3-ASR, 语音识别, 开源, 阿里巴巴 Qwen, ASR
 
 > 阿里巴巴 Qwen 团队开源了 Qwen3-ASR 和 Qwen3-ForcedAligner，这两款生产级语音模型支持 52 种语言，并能处理复杂的真实场景音频。
-
-
-
-### [重磅新课：与-Anthropic-联手打造智能体技能](https://x.com/AndrewYNg/status/2016564878098780245)
-
-2026-01-28 17:31:47 | 标签: AI 智能体, Anthropic, Claude, AI 技能, AI 开发
-
-> 吴恩达宣布推出与 Anthropic 合作的全新短课程，教授如何为 Claude 等 AI 智能体创建并部署标准化的“技能 (Skills)”。
 
 
 
