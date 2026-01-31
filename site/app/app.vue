@@ -46,7 +46,7 @@
         <!-- Refined Sidebar -->
         <aside class="hidden lg:flex w-56 flex-col p-10 pr-0 gap-8 shrink-0 overflow-y-auto">
           <div>
-            <p class="text-[10px] font-bold text-text-sub/40 uppercase tracking-[0.2em] mb-3 px-3">Topics</p>
+            <p class="text-[10px] font-bold text-text-sub/40 uppercase tracking-[0.2em] mb-3 px-3">分类</p>
             <div class="flex flex-col gap-1.5">
               <button 
                 v-for="cat in categories" 

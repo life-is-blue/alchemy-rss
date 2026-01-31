@@ -38,39 +38,35 @@ export const useArticles = () => {
   const pageSize = 40
   const currentPage = ref(1)
 
-  const CATEGORY_MAP: Record<string, string> = {
-    'Artificial_Intelligence': '人工智能',
-    'Programming_Technology': '软件工程',
-    'Business_Tech': '商业科技',
-    'Product_Development': '产品设计',
-    'Deep_Dive': '深度探索'
-  }
-
   const categories = computed(() => {
+    // 初始化计数
     const counts: Record<string, number> = { '全部': articles.value.length }
 
+    // 初始化所有类型的计数为 0
+    Object.values(CONTENT_TYPE_LABELS).forEach(label => {
+      counts[label] = 0
+    })
+
+    // 统计每种类型的文章数量
     articles.value.forEach(article => {
-      // 1. 优先使用源配置的 category
-      if (article.sourceCategory && CATEGORY_MAP[article.sourceCategory]) {
-        const label = CATEGORY_MAP[article.sourceCategory]
+      const type = article.contentType
+      if (type && CONTENT_TYPE_LABELS[type as keyof typeof CONTENT_TYPE_LABELS]) {
+        const label = CONTENT_TYPE_LABELS[type as keyof typeof CONTENT_TYPE_LABELS]
         counts[label] = (counts[label] || 0) + 1
-      }
-      // 2. 回退到 rssTitle（外部 RSS 源或关键词源）
-      else if (article.rssTitle) {
-        const simplifiedTitle = article.rssTitle.split('-')[1]?.trim() || article.rssTitle.split('(')[0].trim()
-        counts[simplifiedTitle] = (counts[simplifiedTitle] || 0) + 1
       }
     })
 
+    // 定义固定的排序顺序
+    const sortOrder = ['全部', '文章', '视频', '播客', '动态', '外部订阅']
+
     return Object.entries(counts)
       .map(([name, count]) => ({ name, count }))
+      .filter(item => item.count > 0 || item.name === '全部') // 仅显示有内容的分类（全部除外）
       .sort((a, b) => {
-        if (a.name === '全部') return -1
-        const isAInMap = Object.values(CATEGORY_MAP).includes(a.name)
-        const isBInMap = Object.values(CATEGORY_MAP).includes(b.name)
-        if (isAInMap && !isBInMap) return -1
-        if (!isAInMap && isBInMap) return 1
-        return b.count - a.count
+        const indexA = sortOrder.indexOf(a.name)
+        const indexB = sortOrder.indexOf(b.name)
+        // 如果不在排序列表中，放到最后
+        return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB)
       })
   })
 
@@ -138,21 +134,15 @@ export const useArticles = () => {
   const filteredArticles = computed(() => {
     let list = articles.value
 
-    // 1. 主题过滤
+    // 1. 类型过滤 (根据 contentType)
     if (currentTab.value !== '全部') {
-      list = list.filter(a => {
-        // 基于源配置的分类匹配
-        const mappedCat = Object.keys(CATEGORY_MAP).find(k => CATEGORY_MAP[k] === currentTab.value)
-        const isCategoryMatch = a.sourceCategory === mappedCat
+      // 根据当前选中的标签名称找到对应的 CONTENT_TYPE key
+      const targetTypeEntry = Object.entries(CONTENT_TYPE_LABELS).find(([_, label]) => label === currentTab.value)
 
-        // 回退到标题匹配（外部 RSS 源）
-        const isTitleMatch = a.rssTitle && (
-          a.rssTitle.split('-')[1]?.trim() === currentTab.value ||
-          a.rssTitle.split('(')[0].trim() === currentTab.value
-        )
-
-        return isCategoryMatch || isTitleMatch
-      })
+      if (targetTypeEntry) {
+        const targetType = targetTypeEntry[0]
+        list = list.filter(a => a.contentType === targetType)
+      }
     }
 
     // 2. 搜索过滤
