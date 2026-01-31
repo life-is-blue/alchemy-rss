@@ -165,12 +165,15 @@ async function processSource(sourceConfig, existingItems) {
       // RSS 源不支持归档，直接返回索引数据
       if (isRss) {
         if (isNew) newCount++
+        const tags = apiItem.tags
         return {
           title: apiItem.title,
           link: apiItem.link,
           date: apiItem.date || utils.getNowDate('YYYY-MM-DD'),
           summary: apiItem.summary,
           sourceName: apiItem.sourceName,
+          tags: tags,
+          categoryTag: classifyTags(tags),
           _source: 'rss'
         }
       }

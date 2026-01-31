@@ -1,27 +1,24 @@
-> 提示：只是根据文章标题简单匹配分类
+> 基于文章标签自动分类
 
-:alarm_clock: 更新时间: <%= obj.currentDate %>。[文章来源](/README.md)
+**更新时间**: <%= obj.currentDate %> | [返回首页](/README.md)
 
-## 文章分类
+---
+
+## 分类导航
+
+<% _.each(obj.tags, function(e){ if(e.items.length > 0){ %>- [<%= e.tag %>](#<%= e.filename %>) (<%= e.items.length %>)
+<% }}); %>
+
+---
+
 <% _.each(obj.tags, function(e){ %>
-- [<%= e.tag %>](#<%= e.tag.toLowerCase() %>) <% }) %>
+## <a id="<%= e.filename %>"></a><%= e.tag %>
 
-## 文章链接
-<% _.each(obj.tags, function(e){ %>
-<details open>
-<summary id="<%= e.tag.toLowerCase() %>">
- <%= e.tag %>
-</summary>
-<p></p>
-
-<% if(e.keywords){ %>
-> 关键字：`<%= e.keywords.replace(/(\?)|([：])/g, '').split('|').join('`、`') %>`
+<% if(e.keywords){ %>> 关键词: <%= e.keywords.replace(/(\?)|([：])/g, '').split('|').slice(0, 8).join(', ') %>
 <% } %>
-
 <% _.each(e.items.slice(0,20), function(item){ var itemTitle = obj.formatTitle(item.title); %>
-- [【<%= item.rssTitle %>】<%= itemTitle %>](<%= item.link %>)<% }) %>
-- [查看更多 >](/details/tags/<%= e.filename %>.md)
+- [<%= itemTitle %>](<%= item.link %>) - <%= item.rssTitle %><% }); %>
+<% if(e.items.length > 20){ %>
+- [查看全部 <%= e.items.length %> 篇...](/details/tags/<%= e.filename %>.md)<% } %>
 
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
-<% }) %>
+<% }); %>

@@ -38,6 +38,7 @@ async function handleREADME(newData, linksJson) {
 
 /**
  * 渲染 TAGS.md 文件
+ * 使用 categoryTag 字段进行分类（由 tag-classifier.js 在爬虫时计算）
  */
 function handleTags(newData, linksJson) {
   const currentDate = utils.getNowDate()
@@ -48,8 +49,11 @@ function handleTags(newData, linksJson) {
 
     linksJson.forEach((o) => {
       o.items.forEach((item) => {
-        if (!item.rssTitle && (new RegExp(tag.keywords, 'gi')).test(item.title)) {
-          item.rssTitle = o.title
+        // 使用 categoryTag 字段进行分类（新逻辑）
+        if (item.categoryTag === tag.filename) {
+          if (!item.rssTitle) {
+            item.rssTitle = o.title
+          }
           tags[i].items.push(item)
         }
       })
