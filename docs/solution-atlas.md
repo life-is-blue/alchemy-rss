@@ -1,7 +1,7 @@
 # Alchemy Atlas 方案设计
 
-> **版本**: v0.2.0
-> **更新时间**: 2026-01-31 18:30 (UTC+8)
+> **版本**: v0.3.0
+> **更新时间**: 2026-01-31 19:30 (UTC+8)
 > **状态**: Draft
 > **作者**: Alchemy Team
 
@@ -11,16 +11,14 @@
 
 1. [项目背景与定位](#1-项目背景与定位)
 2. [现状诊断](#2-现状诊断)
-3. [核心架构设计](#3-核心架构设计)
-4. [分库架构设计](#4-分库架构设计)
+3. [核心使用场景](#3-核心使用场景)
+4. [MVP 架构设计](#4-mvp-架构设计)
 5. [数据模型设计](#5-数据模型设计)
-6. [产出物设计](#6-产出物设计)
-7. [应用场景](#7-应用场景)
-8. [技术选型](#8-技术选型)
-9. [实施路径](#9-实施路径)
-10. [成本估算](#10-成本估算)
-11. [风险与应对](#11-风险与应对)
-12. [附录](#附录)
+6. [技术选型](#6-技术选型)
+7. [实施路径](#7-实施路径)
+8. [成本估算](#8-成本估算)
+9. [风险与应对](#9-风险与应对)
+10. [附录](#附录)
 
 ---
 
@@ -47,25 +45,22 @@ Alchemy   = 个人炼金厂 (精炼 + 铸造 + 永久储备)
 
 **一句话定位**：把 BestBlogs 的流水内容，炼成个人永久知识资产 + AI 可用语料。
 
-### 1.3 与 BestBlogs 的关系
+### 1.3 设计原则（MVP 导向）
 
-| 维度 | BestBlogs | Alchemy |
-|------|-----------|---------|
-| 角色 | 内容供应商 | 个人镜像+增强层 |
-| 数据 | 实时查询 | 永久归档 |
-| 控制 | 平台规则 | 完全自主 |
-| 扩展 | 受限于 API | 无限自定义 |
+| 原则 | 说明 |
+|------|------|
+| **个人维护优先** | 方案简洁，避免过度工程 |
+| **静态优先** | 数据可导出为静态文件，Git 友好 |
+| **增量演进** | 先跑通基础，再逐步增强 |
+| **复用现有设施** | 最大化利用 BestBlogs API、GitHub Actions、Vercel |
 
-**核心原则**：不重复 BestBlogs 的功能，而是利用其高质量元数据做个人化的内容重组与知识沉淀。
+### 1.4 数据规模预期
 
-### 1.4 独特价值定位
-
-| 维度 | BestBlogs 提供 | Alchemy 增值 |
-|------|---------------|-------------|
-| 时间维度 | 当前内容 | 历史归档 + 版本演进 |
-| 空间维度 | 单篇文章 | 知识图谱 + 概念网络 |
-| 个人维度 | 通用推荐 | 个人标注 + 阅读轨迹 |
-| AI 维度 | 原始文本 | 结构化语料 + 微调数据 |
+| 指标 | 当前 | 预期 |
+|------|------|------|
+| 日增量 | ~20 篇 | ~100 篇（可通过 minScore 过滤控制） |
+| 总量 | 758 篇 | 数万篇（长期） |
+| links.json | 300KB | 可接受，暂不拆分 |
 
 ---
 
@@ -76,7 +71,7 @@ Alchemy   = 个人炼金厂 (精炼 + 铸造 + 永久储备)
 | 模块 | 状态 | 说明 |
 |------|------|------|
 | `server/fetch.js` | ✅ 完善 | API-First 混合抓取策略 |
-| `server/archiver.js` | ✅ 完善 | 支持 `articles/YYYY/MM/{id}.json` 归档 |
+| `server/archiver.js` | ⚠️ 代码完善但未生效 | 归档逻辑存在但 articles/ 无数据 |
 | `site/` 前端 | ✅ 完善 | Nuxt 4 + Tailwind，阅读体验良好 |
 | GitHub Actions | ✅ 运行中 | 每 2 小时定时抓取 |
 
@@ -84,50 +79,192 @@ Alchemy   = 个人炼金厂 (精炼 + 铸造 + 永久储备)
 
 | 数据 | 现状 | 问题 |
 |------|------|------|
-| `links.json` | 212KB, 758 篇 | 单文件，按源分组，未扁平化 |
-| `articles/` | **不在 master 分支** | 可能在 gh-pages 或未生成 |
+| `links.json` | 300KB, 758 篇 | 按源分组，结构可用 |
+| `articles/` | **gh-pages 分支无数据** | 归档逻辑未正确运行，需修复 |
 | `rss.json` | 5 个源 | 配置正常 |
 | `tags.json` | 6 个分类 | 关键词规则，可扩展 |
 
-### 2.3 数据结构问题
+### 2.3 关键问题：归档未生效
 
-**当前 links.json 结构**：
-```json
-[
-  {
-    "title": "精选文章 (BestBlogs)",
-    "items": [
-      {"title": "...", "link": "...", "date": "...", "summary": "..."},
-      ...
-    ]
-  },
-  {
-    "title": "技术视频 (Tech Videos)",
-    "items": [...]
-  }
-]
+**archiver.js 代码分析**：
+
+```javascript
+// 路径策略: data/articles/YYYY/MM/<id>.json
+const relPath = `${year}/${month}/${resourceId}.json`;
+const absPath = path.join(this.articlesDir, relPath);
 ```
 
-**问题**：
-1. ❌ 嵌套结构，不利于全局检索
-2. ❌ 单文件膨胀，Git diff 不友好
-3. ❌ 无分库概念，混合存储
-4. ❌ 缺少 `archive_path` 字段（archiver.js 已支持，但未启用）
+**可能原因**：
+1. `update.js` 未正确调用 archiver
+2. GitHub Actions 工作流未触发归档步骤
+3. 归档结果未正确提交到 gh-pages
 
-### 2.4 archiver.js 归档的数据结构
+**需要修复**：这是 Phase 0 的核心任务。
+
+---
+
+## 3. 核心使用场景
+
+### 3.1 场景优先级
+
+| 优先级 | 场景 | 描述 | 数据需求 |
+|--------|------|------|---------|
+| **P0** | AI 编程案例库 | 编程遇到问题时，查询案例获得思路启发 | 归档 + 语义检索 |
+| **P1** | 研究报告引用 | 写报告时引用具体文章，减少幻觉 | 归档 + 全文检索 |
+| **P2** | 个人笔记整合 | 整合方法论、心得、总结 | 个人数据层 |
+
+### 3.2 场景详解
+
+#### 场景 1: AI 编程案例库 (P0)
+
+```
+使用流程:
+1. Claude Code 遇到架构/设计问题
+2. 并行查询: Context7 (官方文档) + Alchemy (案例库)
+3. 获得:
+   - Context7: 标准用法、API 文档
+   - Alchemy: 实战案例、方法论、心得、踩坑经验
+
+价值: 突破"标准答案"，获得创新思路和实战智慧
+```
+
+**所需能力**:
+- 文章全文归档 ✓ (archiver.js 已支持)
+- 语义检索 (需实现)
+- MCP Server 接口 (可选，后期)
+
+#### 场景 2: 研究报告引用 (P1)
+
+```
+使用流程:
+1. 写研究报告时提问: "MCP 协议的最新进展"
+2. 系统返回:
+   - 相关文章列表 (按时间/相关性排序)
+   - 每篇文章的 AI 摘要 + 要点
+   - 可直接引用的链接
+3. 写入报告，附带来源
+
+价值: 有据可查，减少 AI 幻觉
+```
+
+**所需能力**:
+- 文章全文归档 ✓
+- 时间线检索 (links.json 已支持)
+- 语义检索 (需实现)
+
+#### 场景 3: 个人笔记整合 (P2)
+
+```
+使用流程:
+1. 将个人方法论笔记导入系统
+2. 与 BestBlogs 文章关联
+3. 形成个人知识体系
+
+价值: 构建个人"第二大脑"
+```
+
+**所需能力**:
+- 个人数据存储 (后期实现)
+- 关联机制 (后期实现)
+
+---
+
+## 4. MVP 架构设计
+
+### 4.1 简化的两层架构
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     Layer 1: 检索层                             │
+│                  (语义检索 + 案例查询)                           │
+├─────────────────────────────────────────────────────────────────┤
+│  • 向量化 Embedding (语义检索)                                  │
+│  • 全文检索 (关键词匹配)                                        │
+│  • 时间线检索 (按日期筛选)                                      │
+└────────────────────────────┬────────────────────────────────────┘
+                             │
+┌────────────────────────────▼────────────────────────────────────┐
+│                     Layer 0: 存档层                             │
+│                  (BestBlogs 原料 + 永久归档)                     │
+├─────────────────────────────────────────────────────────────────┤
+│  • 文章全文归档 (articles/YYYY/MM/{id}.json)                    │
+│  • 索引文件 (links.json)                                        │
+│  • AI 摘要 + 要点 (来自 BestBlogs)                              │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**MVP 精简决策**：
+- ❌ 暂不做分库（links.json 300KB 可接受）
+- ❌ 暂不做知识图谱（复杂度高，收益不明确）
+- ❌ 暂不做个人标注（后期再加）
+- ✅ 聚焦：归档 + 语义检索
+
+### 4.2 数据流（MVP）
+
+```
+BestBlogs API
+     │
+     ▼
+┌─────────────┐    ┌─────────────┐
+│   Fetcher   │ → │  Archiver   │
+│  (fetch.js) │    │(archiver.js)│
+└─────────────┘    └──────┬──────┘
+                          │
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+   ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+   │ links.json  │ │  articles/  │ │  vectors/   │
+   │   (索引)    │ │  (全文归档)  │ │  (向量库)   │
+   └─────────────┘ └─────────────┘ └─────────────┘
+          │               │               │
+          └───────────────┼───────────────┘
+                          ▼
+                   ┌─────────────┐
+                   │  检索 API   │
+                   │ /api/search │
+                   └─────────────┘
+```
+
+### 4.3 目录结构（MVP）
+
+```
+data/
+├── links.json              # 主索引（保持现有结构）
+├── rss.json                # RSS 源配置
+├── tags.json               # 分类配置
+├── articles/               # 文章归档【需修复】
+│   └── {YYYY}/{MM}/{id}.json
+└── vectors/                # 向量存储【新增】
+    └── index.db            # SQLite-vec 索引
+```
+
+**简化说明**：
+- 保持 `links.json` 现有结构，不拆分
+- `articles/` 修复归档逻辑
+- `vectors/` 仅一个全局索引文件
+
+---
+
+## 5. 数据模型设计
+
+### 5.1 文章归档 Schema（已有，由 archiver.js 生成）
 
 ```json
 // data/articles/YYYY/MM/{id}.json
 {
   "id": "e65e0b56",
   "title": "文章标题",
-  "url": "原文链接",
+  "url": "https://www.bestblogs.dev/article/e65e0b56",
   "date": "2026-01-29",
   "author": "作者",
   "siteName": "来源名称",
-  "content": "清洗后的 HTML",
+
+  // 核心内容
+  "content": "清洗后的 HTML 全文",
+
+  // BestBlogs AI 产出
   "aiSummary": "AI 一句话摘要",
-  "mainPoints": ["要点1", "要点2"],
+  "mainPoints": ["要点1", "要点2", "要点3"],
   "tags": ["标签1", "标签2"],
   "readTime": 9,
   "score": 92,
@@ -137,594 +274,234 @@ Alchemy   = 个人炼金厂 (精炼 + 铸造 + 永久储备)
 }
 ```
 
-**优点**：BestBlogs API 数据已经足够丰富，可直接作为 Layer 1 基础。
+**说明**：archiver.js 已实现此结构，无需修改 Schema。
 
----
+### 5.2 索引 Schema（现有 links.json）
 
-## 3. 核心架构设计
-
-### 3.1 四层知识炼金架构
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     Layer 3: 产出层                             │
-│                  (面向 AI 的结构化语料)                          │
-├─────────────────────────────────────────────────────────────────┤
-│  • 问答对数据集 (RAG 检索用)                                    │
-│  • 案例库 (问题→方案→结果)                                      │
-│  • 技术写作微调数据                                             │
-│  • 知识图谱 (实体+关系网络)                                     │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│                     Layer 2: 加工层                             │
-│                  (Alchemy 增值处理)                              │
-├─────────────────────────────────────────────────────────────────┤
-│  • 向量化 Embedding (语义检索)                                  │
-│  • 实体抽取 (技术/概念/人物/公司)                               │
-│  • 跨文章关联 (主题聚类)                                        │
-│  • 个人标注 (高亮/笔记/评分/阅读状态)                           │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│                     Layer 1: 存档层                             │
-│                  (BestBlogs 原料 + 永久归档)                     │
-├─────────────────────────────────────────────────────────────────┤
-│  • 文章/播客/视频/推文 (按类型分库)                             │
-│  • AI 摘要 + 要点 + 引用                                        │
-│  • 质量评分 + 分类标签                                          │
-│  • Git 版本控制 (时间快照)                                      │
-└────────────────────────────┬────────────────────────────────────┘
-                             │
-┌────────────────────────────▼────────────────────────────────────┐
-│                     Layer 0: 基石层 (新增)                       │
-│                  (数据治理 + 分库管理)                           │
-├─────────────────────────────────────────────────────────────────┤
-│  • 索引拆分 (master.json + 分库索引)                            │
-│  • 目录规范 (libraries/ + articles/)                            │
-│  • Schema 版本控制                                              │
-│  • 数据迁移工具                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### 3.2 数据流设计
-
-```
-BestBlogs API
-     │
-     ▼
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Fetcher   │ → │  Archiver   │ → │  Indexer    │
-│  (fetch.js) │    │(archiver.js)│    │   (新增)    │
-└─────────────┘    └─────────────┘    └──────┬──────┘
-                                              │
-                          ┌───────────────────┼───────────────────┐
-                          ▼                   ▼                   ▼
-                   ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-                   │  libraries/ │     │  articles/  │     │   index/    │
-                   │  (分库配置)  │     │  (实际存储)  │     │  (多级索引)  │
-                   └─────────────┘     └─────────────┘     └─────────────┘
-                                              │
-                   ┌──────────────────────────┼──────────────────────────┐
-                   ▼                          ▼                          ▼
-            ┌─────────────┐           ┌─────────────┐           ┌─────────────┐
-            │  Embedding  │           │  Entities   │           │   Graph     │
-            │  Generator  │           │  Extractor  │           │  Builder    │
-            └─────────────┘           └─────────────┘           └─────────────┘
-                   │                          │                          │
-                   ▼                          ▼                          ▼
-            ┌─────────────┐           ┌─────────────┐           ┌─────────────┐
-            │  vectors/   │           │  entities/  │           │   graph/    │
-            └─────────────┘           └─────────────┘           └─────────────┘
-                   │                          │                          │
-                   └──────────────────────────┼──────────────────────────┘
-                                              ▼
-                                      ┌─────────────┐
-                                      │   Corpus    │
-                                      │  Generator  │
-                                      └─────────────┘
-                                              │
-                                              ▼
-                                      ┌─────────────┐
-                                      │   corpus/   │
-                                      │ (qa, cases) │
-                                      └─────────────┘
-```
-
----
-
-## 4. 分库架构设计
-
-### 4.1 设计理念（借鉴 Context7）
-
-Context7 的核心理念：
-- 按 **库/项目** 分隔（如 `/mongodb/docs`、`/vercel/next.js`）
-- 每个库独立维护、独立检索
-- 支持精确查询特定库
-
-**Alchemy 的分库维度**：
-
-| 维度 | 分库方式 | 检索场景 |
-|------|---------|---------|
-| **按来源 (source)** | articles / videos / podcasts / tweets | "播客中关于 AI 的内容" |
-| **按领域 (domain)** | ai-llm / architecture / frontend / devops | "AI 领域的所有内容" |
-
-### 4.2 分库目录结构
-
-```
-data/
-├── index/                              # 索引层
-│   ├── master.json                     # 主索引 (id → 路径映射，轻量)
-│   ├── by-source/                      # 按来源分索引
-│   │   ├── articles.json               # 文章索引
-│   │   ├── videos.json                 # 视频索引
-│   │   ├── podcasts.json               # 播客索引
-│   │   └── tweets.json                 # 推文索引
-│   └── by-domain/                      # 按领域分索引 (虚拟，引用)
-│       ├── ai-llm.json
-│       ├── architecture.json
-│       ├── frontend.json
-│       ├── devops.json
-│       └── product.json
-│
-├── libraries/                          # 分库配置
-│   ├── manifest.json                   # 全局库清单
-│   └── {library}/                      # 每个库的元信息
-│       └── manifest.json
-│
-├── articles/                           # 文章存储 (实际数据)
-│   └── {YYYY}/{MM}/{id}.json
-│
-├── vectors/                            # 向量存储
-│   ├── global.db                       # 全局向量索引 (SQLite-vec)
-│   └── by-library/                     # 分库向量 (可选，提升检索精度)
-│       ├── articles.db
-│       └── podcasts.db
-│
-├── graph/                              # 知识图谱
-│   ├── nodes.json
-│   ├── edges.json
-│   └── clusters.json
-│
-├── corpus/                             # AI 语料产出
-│   ├── qa.jsonl
-│   └── cases.jsonl
-│
-└── personal/                           # 个人数据 (可选独立 Git 仓库)
-    ├── reading-history.json
-    ├── highlights.json
-    └── notes.json
-```
-
-### 4.3 索引文件设计
-
-#### 4.3.1 主索引 (index/master.json)
-
-```jsonc
-{
-  "version": "1.0.0",
-  "updatedAt": "2026-01-31T12:00:00Z",
-  "totalCount": 758,
-  "articles": {
-    "e65e0b56": {
-      "path": "articles/2026/01/e65e0b56.json",
-      "source": "articles",
-      "domain": "ai-llm",
-      "date": "2026-01-29"
-    }
-    // ... 仅存路径映射，不存内容
-  }
-}
-```
-
-#### 4.3.2 分库索引 (index/by-source/articles.json)
-
-```jsonc
-{
-  "library": "articles",
-  "displayName": "精选文章",
-  "description": "BestBlogs 精选高质量技术文章",
-  "count": 137,
-  "updatedAt": "2026-01-31T12:00:00Z",
-  "items": [
-    {
-      "id": "e65e0b56",
-      "title": "Google DeepMind 推出 ATLAS 缩放法则",
-      "date": "2026-01-29",
-      "score": 92,
-      "domain": "ai-llm",
-      "tags": ["LLM", "多语言"],
-      "summary": "一句话摘要...",
-      "path": "articles/2026/01/e65e0b56.json",
-      // Layer 2 状态
-      "hasEmbedding": true,
-      "hasEntities": true,
-      "cluster": "LLM-训练优化",
-      // 个人状态
-      "personal": {
-        "status": "read",
-        "rating": 5,
-        "starred": true
+```json
+[
+  {
+    "title": "精选文章 (BestBlogs)",
+    "items": [
+      {
+        "title": "文章标题",
+        "link": "https://www.bestblogs.dev/article/xxx",
+        "date": "2026-01-29",
+        "summary": "RSS 摘要...",
+        // 新增字段（archiver.js 已支持）
+        "id": "xxx",
+        "archive_path": "data/articles/2026/01/xxx.json",
+        "ai_summary": "AI 一句话摘要",
+        "tags": ["标签"],
+        "read_time": 9
       }
-    }
-  ]
-}
-```
-
-#### 4.3.3 领域索引 (index/by-domain/ai-llm.json)
-
-```jsonc
-{
-  "domain": "ai-llm",
-  "displayName": "AI & 大模型",
-  "keywords": ["AI", "GPT", "LLM", "Agent", "RAG"],
-  "count": 245,
-  "updatedAt": "2026-01-31T12:00:00Z",
-  "items": [
-    // 引用，结构同上
-    {"id": "e65e0b56", "source": "articles", "path": "..."},
-    {"id": "xyz123", "source": "podcasts", "path": "..."}
-  ]
-}
-```
-
-### 4.4 分库检索策略
-
-```
-查询: "在 AI 领域的播客中，有哪些关于 RAG 的内容？"
-
-步骤:
-1. 解析意图 → source=podcasts, domain=ai-llm, keyword=RAG
-2. 加载索引 → index/by-source/podcasts.json ∩ index/by-domain/ai-llm.json
-3. 向量检索 → vectors/by-library/podcasts.db (如有) 或 vectors/global.db
-4. 返回结果 → Top-K 相关播客
-
-查询: "所有关于 MCP 协议的内容"
-
-步骤:
-1. 解析意图 → keyword=MCP, source=all
-2. 加载索引 → index/master.json (全局)
-3. 向量检索 → vectors/global.db
-4. 返回结果 → 跨库 Top-K
-```
-
----
-
-## 5. 数据模型设计
-
-### 5.1 文章完整 Schema (Layer 1 + Layer 2)
-
-```jsonc
-// data/articles/{YYYY}/{MM}/{id}.json
-{
-  // ===== Layer 1: BestBlogs 原始数据 =====
-  "id": "e65e0b56",
-  "title": "Google DeepMind 推出 ATLAS 缩放法则",
-  "url": "https://www.bestblogs.dev/article/e65e0b56",
-  "originalUrl": "https://...",
-  "date": "2026-01-29",
-  "author": "作者名",
-  "siteName": "机器之心",
-  "domain": "bestblogs.dev",
-  "category": "ai",
-
-  // 内容
-  "content": "清洗后的全文 HTML...",
-
-  // BestBlogs AI 产出
-  "aiSummary": "AI 一句话摘要...",
-  "mainPoints": ["要点1", "要点2", "要点3"],
-  "tags": ["LLM", "多语言", "DeepMind"],
-  "readTime": 9,
-  "score": 92,
-  "wordCount": 2076,
-
-  // ===== Layer 2: Alchemy 加工 =====
-  "alchemy": {
-    "embedding": {
-      "status": "completed",       // pending | processing | completed | failed
-      "model": "text-embedding-3-small",
-      "dimensions": 1536,
-      "updatedAt": "2026-01-30T10:00:00Z"
-      // 注意：向量本身存在 vectors/global.db，不内嵌
-    },
-
-    "entities": [
-      {"name": "DeepMind", "type": "company", "confidence": 0.98},
-      {"name": "ATLAS", "type": "technology", "confidence": 0.95},
-      {"name": "缩放法则", "type": "concept", "confidence": 0.90}
-    ],
-
-    "relations": [
-      {"from": "ATLAS", "to": "DeepMind", "type": "created_by"},
-      {"from": "ATLAS", "to": "缩放法则", "type": "is_a"}
-    ],
-
-    "similar": ["article_id_1", "article_id_2"],
-    "cluster": "LLM-训练优化",
-
-    "corpus": {
-      "qaGenerated": true,
-      "qaCount": 3,
-      "caseExtracted": false,
-      "lastProcessed": "2026-01-30T12:00:00Z"
-    }
-  },
-
-  // ===== 个人数据 =====
-  "personal": {
-    "status": "read",           // unread | reading | read
-    "rating": 5,                // 1-5，null 表示未评
-    "readAt": "2026-01-30T10:00:00Z",
-    "readDuration": 480,        // 秒
-    "highlights": [
-      {"text": "重要段落...", "note": "我的批注", "createdAt": "..."}
-    ],
-    "notes": "整体思考...",
-    "tags": ["必读", "面试准备"],
-    "starred": true
-  },
-
-  // ===== 元信息 =====
-  "meta": {
-    "source": "articles",       // 所属库
-    "archivedAt": "2026-01-29T08:00:00Z",
-    "updatedAt": "2026-01-30T12:00:00Z",
-    "schemaVersion": "1.0.0"
+    ]
   }
-}
+]
 ```
 
-### 5.2 实体类型定义
+**需要确认**：当前 links.json 是否包含 `archive_path` 字段。
 
-```typescript
-type EntityType =
-  | 'person'      // 人物：Sam Altman, 李飞飞, Yann LeCun
-  | 'company'     // 公司：OpenAI, Anthropic, Google DeepMind
-  | 'technology'  // 技术：RAG, LoRA, MCP, Transformer
-  | 'product'     // 产品：GPT-4, Claude, Gemini
-  | 'concept';    // 概念：向量数据库, 微调, 缩放法则
+### 5.3 向量索引（新增）
 
-type RelationType =
-  | 'created_by'    // GPT-4 → created_by → OpenAI
-  | 'uses'          // RAG → uses → Vector Embedding
-  | 'competes'      // Claude → competes → GPT-4
-  | 'depends_on'    // RAG → depends_on → LLM
-  | 'evolved_from'  // GPT-4 → evolved_from → GPT-3
-  | 'is_a';         // ATLAS → is_a → 缩放法则
-```
+使用 SQLite-vec，存储结构：
 
----
+```sql
+CREATE TABLE articles (
+  id TEXT PRIMARY KEY,
+  title TEXT,
+  summary TEXT,
+  embedding BLOB,  -- 1536 维向量
+  date TEXT,
+  score INTEGER,
+  category TEXT
+);
 
-## 6. 产出物设计
-
-### 6.1 问答对数据集
-
-**文件**: `data/corpus/qa.jsonl`
-
-```jsonc
-{
-  "id": "qa_001",
-  "question": "什么是 ATLAS 缩放法则？",
-  "answer": "ATLAS 是 Google DeepMind 提出的多语言语言模型缩放框架...",
-  "sources": ["e65e0b56"],
-  "domain": "ai-llm",
-  "difficulty": "intermediate",
-  "generatedAt": "2026-01-30T12:00:00Z",
-  "model": "claude-3-haiku"
-}
-```
-
-**生成策略**:
-- 从 `mainPoints` 生成 What/Why/How 问题
-- 从文章对比生成 vs 类问题
-- 跨文章生成综合性问题
-
-### 6.2 案例库
-
-**文件**: `data/corpus/cases.jsonl`
-
-```jsonc
-{
-  "id": "case_001",
-  "title": "多语言模型训练资源优化",
-  "problem": "多语言模型训练时，400+ 语言的资源分配不均衡",
-  "context": "计算资源有限，需要在模型规模和语言覆盖之间权衡",
-  "solution": "使用 ATLAS 框架定义语言混合比例的缩放法则",
-  "approach": ["进行 774 次受控训练运行", "测量不同语言混合比例的效果"],
-  "result": "成功建立了可预测的多语言缩放法则",
-  "technologies": ["LLM", "多语言NLP"],
-  "sources": ["e65e0b56"],
-  "domain": "ai-llm/training"
-}
-```
-
-### 6.3 知识图谱
-
-**节点**: `data/graph/nodes.json`
-**边**: `data/graph/edges.json`
-**聚类**: `data/graph/clusters.json`
-
-（详细格式见附录）
-
----
-
-## 7. 应用场景
-
-### 7.1 场景矩阵
-
-| 场景 | 数据来源 | 分库利用 | 输出 |
-|------|---------|---------|------|
-| **语义搜索** | vectors/ | 可指定库 | Top-K 相关文章 |
-| **知识问答** | corpus/qa + RAG | 全局或指定域 | 带引用的回答 |
-| **趋势分析** | index/ + 时间线 | 按领域聚合 | 趋势报告 |
-| **案例查询** | corpus/cases | 按技术栈筛选 | 相似案例 |
-| **关系探索** | graph/ | 实体跨库关联 | 关联图谱 |
-| **个人周刊** | personal + mainPoints | 已读筛选 | 精华汇总 |
-| **播客笔记** | by-source/podcasts | 仅播客库 | 可搜索笔记库 |
-
-### 7.2 分库检索示例
-
-```
-场景 1: "AI 领域的播客中有什么关于 Agent 的讨论？"
-→ source: podcasts
-→ domain: ai-llm
-→ keyword: Agent
-→ 结果: 播客库 + AI领域 交集的语义搜索
-
-场景 2: "最近一周的热门技术视频"
-→ source: videos
-→ timeFilter: 1w
-→ sort: score desc
-→ 结果: 视频库的时间筛选 + 评分排序
-
-场景 3: "独立开发者关于变现的经验"
-→ source: articles
-→ domain: product
-→ keyword: 变现, monetization
-→ 结果: 文章库 + 产品领域 的案例检索
+CREATE INDEX idx_date ON articles(date);
+CREATE INDEX idx_score ON articles(score);
 ```
 
 ---
 
-## 8. 技术选型
+## 6. 技术选型
 
-### 8.1 选型矩阵
+### 6.1 MVP 选型
 
-| 组件 | 方案 | 备选 | 选择理由 |
-|------|------|------|---------|
-| **Embedding** | OpenAI `text-embedding-3-small` | 智谱 GLM | 便宜、中英文质量好 |
-| **向量存储** | SQLite + `sqlite-vec` | ChromaDB | 单文件、Git 友好 |
-| **实体抽取** | Claude Haiku | DeepSeek | 便宜、中文优化 |
-| **问答生成** | Claude Sonnet | GPT-4o | 质量高 |
-| **图谱存储** | JSON 文件 | Neo4j | 简单、静态优先 |
+| 组件 | 方案 | 理由 |
+|------|------|------|
+| **Embedding** | OpenAI `text-embedding-3-small` | 便宜、效果好 |
+| **向量存储** | SQLite + `sqlite-vec` | 单文件、零运维 |
+| **检索 API** | Nuxt Server API | 复用现有架构 |
+| **部署** | Vercel + gh-pages | 现有设施 |
 
-### 8.2 架构约束
+### 6.2 暂不引入
 
-- 保持"静态优先"：所有数据可导出为静态文件
-- 单仓库原则：所有数据在一个 Git 仓库（向量除外）
-- 向量外置：SQLite-vec 文件不提交 Git，通过构建生成
+| 组件 | 原因 |
+|------|------|
+| ChromaDB/Pinecone | 增加复杂度，SQLite 够用 |
+| 实体抽取/图谱 | MVP 不需要，后期再加 |
+| 分库架构 | 数据量不大，暂不需要 |
 
 ---
 
-## 9. 实施路径
+## 7. 实施路径
 
-### 9.1 阶段规划
+### 7.1 阶段规划（精简版）
 
 ```
-Phase 0 (v0.2)              Phase 1 (v0.3)             Phase 2 (v0.4)             Phase 3 (v0.5)
-数据基石                     个人能力                    智能能力                    AI 产出
-1-2 周                       2-3 周                      3-4 周                      4-6 周
-─────────────────          ─────────────────         ─────────────────         ─────────────────
-□ 确认 articles/ 存在       □ personal 字段            □ Embedding 生成          □ QA 自动生成
-□ 索引拆分 (links→分库)     □ 阅读状态追踪             □ 语义搜索 API            □ 案例库抽取
-□ 目录规范化                □ 个人评分组件             □ 实体抽取管道            □ 知识图谱构建
-□ Schema 版本化             □ 高亮标注功能             □ 主题聚类                □ 图谱可视化
-□ 数据迁移脚本              □ 个人标签系统             □ 相似推荐                □ RAG 问答
+Phase 0 (v0.2)              Phase 1 (v0.3)             Phase 2 (v0.4)
+归档修复                     语义检索                    增强能力
+1 周                         2 周                        持续
+─────────────────          ─────────────────         ─────────────────
+■ 诊断归档失效原因          □ Embedding 生成          □ MCP Server 接口
+■ 修复 archiver 调用链     □ SQLite-vec 集成         □ 个人笔记整合
+■ 验证归档数据生成          □ /api/search 实现        □ 高级检索过滤
+■ 补跑历史文章归档          □ 前端搜索界面            □ 分库（如需要）
 ```
 
-### 9.2 Phase 0 详细任务（数据基石）
+### 7.2 Phase 0 详细任务（归档修复）
 
-**目标**: 夯实数据存储基础，解决当前结构问题
+**目标**: 确保 articles/ 正确生成并持久化
 
 | 任务 | 描述 | 优先级 |
 |------|------|--------|
-| P0-1 | 确认 gh-pages 分支的 articles/ 数据 | P0 |
-| P0-2 | 设计并实现索引拆分脚本 (links.json → 分库索引) | P0 |
-| P0-3 | 创建 index/master.json 主索引 | P0 |
-| P0-4 | 创建 index/by-source/*.json 分库索引 | P0 |
-| P0-5 | 创建 index/by-domain/*.json 领域索引 | P1 |
-| P0-6 | 更新 archiver.js 写入新目录结构 | P0 |
-| P0-7 | 更新前端读取新索引 | P0 |
-| P0-8 | Schema 版本化，添加迁移工具 | P1 |
+| P0-1 | 分析 update.js，确认 archiver 调用链 | P0 |
+| P0-2 | 检查 GitHub Actions 工作流 | P0 |
+| P0-3 | 本地测试归档流程 | P0 |
+| P0-4 | 修复问题（可能需要重构） | P0 |
+| P0-5 | 补跑历史 758 篇文章归档 | P0 |
+| P0-6 | 验证 gh-pages 分支数据 | P0 |
 
-### 9.3 Phase 1-3 任务
+### 7.3 Phase 1 详细任务（语义检索）
 
-（保持原有规划，见前文）
+**目标**: 实现基于语义的文章检索
+
+| 任务 | 描述 | 优先级 |
+|------|------|--------|
+| P1-1 | Embedding 生成脚本 (`server/embedding.js`) | P0 |
+| P1-2 | SQLite-vec 集成 (`server/vectordb.js`) | P0 |
+| P1-3 | 批量处理现有文章 | P0 |
+| P1-4 | 检索 API (`site/server/api/search.ts`) | P0 |
+| P1-5 | 前端搜索界面 | P1 |
+| P1-6 | 增量更新机制（新文章自动向量化） | P1 |
+
+### 7.4 Phase 2 任务（增强能力）
+
+**目标**: 扩展使用场景
+
+| 任务 | 描述 | 优先级 |
+|------|------|--------|
+| P2-1 | MCP Server 接口（供 Claude Code 调用） | P1 |
+| P2-2 | 个人笔记整合 | P2 |
+| P2-3 | 高级检索过滤（按来源、时间、评分） | P1 |
+| P2-4 | 分库架构（如数据量增长需要） | P2 |
 
 ---
 
-## 10. 成本估算
+## 8. 成本估算
 
-### 10.1 一次性成本 (~758 篇)
+### 8.1 一次性成本（~758 篇）
 
 | 项目 | 单价 | 用量 | 费用 |
 |------|------|------|------|
 | Embedding | $0.02/1M tokens | ~1.5M | ~$0.03 |
-| 实体抽取 | $0.25/1M tokens | ~0.8M | ~$0.20 |
-| QA 生成 | $3/1M tokens | ~0.4M | ~$1.20 |
-| **合计** | | | **~$1.5** |
+| **合计** | | | **~$0.03** |
 
-### 10.2 增量成本 (每日 ~20 篇)
+### 8.2 增量成本（每日 ~100 篇）
 
 | 项目 | 日费用 | 月费用 |
 |------|--------|--------|
-| Embedding | ~$0.001 | ~$0.03 |
-| 实体抽取 | ~$0.005 | ~$0.15 |
-| QA 生成 | ~$0.03 | ~$0.90 |
-| **合计** | ~$0.04 | **~$1.1** |
+| Embedding | ~$0.002 | ~$0.06 |
+| **合计** | ~$0.002 | **~$0.06** |
+
+### 8.3 基础设施
+
+| 项目 | 费用 |
+|------|------|
+| Vercel | 免费 |
+| GitHub Actions | 免费 |
+| **合计** | **免费** |
+
+**结论**: MVP 阶段成本可忽略不计。
 
 ---
 
-## 11. 风险与应对
+## 9. 风险与应对
 
-### 11.1 技术风险
-
-| 风险 | 影响 | 应对 |
-|------|------|------|
-| BestBlogs API 变更 | 中 | 保持抽象层 |
-| 向量模型升级 | 低 | 支持增量重建 |
-| 分库过多性能问题 | 低 | 延迟加载 + 缓存 |
-
-### 11.2 数据风险
+### 9.1 技术风险
 
 | 风险 | 影响 | 应对 |
 |------|------|------|
-| 索引不一致 | 中 | 定期校验脚本 |
-| Git 仓库膨胀 | 中 | 向量不入 Git |
-| Schema 演进 | 中 | 版本化 + 迁移工具 |
+| 归档修复复杂 | 中 | 如必要可重构 update.js |
+| SQLite-vec 学习曲线 | 低 | 文档完善，示例充分 |
+| Vercel 函数限制 | 低 | 向量库可本地构建后部署 |
+
+### 9.2 数据风险
+
+| 风险 | 影响 | 应对 |
+|------|------|------|
+| BestBlogs API 变更 | 中 | archiver.js 已有抽象层 |
+| 文章删除/下架 | 低 | 本地归档不受影响 |
 
 ---
 
 ## 附录
 
-### A. Beta 方案评价与整合
+### A. 关键文件说明
 
-**solution-beta.md 的优点**：
-- ✅ 三层架构清晰
-- ✅ Schema 设计详细
-- ✅ TypeScript 类型定义专业
-- ✅ 成本估算准确
-
-**整合到本方案的部分**：
-- 实体/关系的 TypeScript 类型定义
-- Phase 划分思路
-- 成本估算数据
-
-**本方案增加的部分**：
-- Layer 0 数据基石层
-- 分库架构设计（借鉴 Context7）
-- 现状诊断与问题分析
-- 索引拆分方案
+| 文件 | 作用 | 状态 |
+|------|------|------|
+| `server/fetch.js` | RSS/API 抓取 | ✅ 正常 |
+| `server/archiver.js` | 文章归档 | ⚠️ 代码完善，调用链待验证 |
+| `server/update.js` | 主流程编排 | ⚠️ 待检查 archiver 调用 |
+| `.github/workflows/server.yml` | CI/CD | ⚠️ 待检查归档步骤 |
 
 ### B. BestBlogs API 能力
 
-（同前文）
+**RSS 参数**（用于控制输入量）：
+- `minScore`: 0-100，建议 85+ 过滤低质量
+- `category`: ai, programming, product, business
+- `timeFilter`: 1d, 3d, 1w, 1m, 3m
+- `type`: article, podcast, video, twitter
+
+**OpenAPI 端点**：
+- `GET /resource/meta` - 元数据
+- `GET /resource/content` - 全文内容
 
 ### C. 参考资源
 
-- [Context7 MCP Server](https://github.com/upstash/context7) - 分库管理理念
 - [BestBlogs RSS 文档](https://github.com/ginobefun/BestBlogs/blob/main/BestBlogs_RSS_Doc.md)
 - [BestBlogs OpenAPI 文档](https://github.com/ginobefun/BestBlogs/blob/main/BestBlogs_OpenAPI_Doc.md)
 - [sqlite-vec](https://github.com/asg017/sqlite-vec)
+- [Context7 MCP Server](https://github.com/upstash/context7)
 
 ### D. 版本历史
 
 | 版本 | 日期 | 变更说明 |
 |------|------|---------|
 | v0.1.0 | 2026-01-31 17:00 | 初始版本 |
-| v0.2.0 | 2026-01-31 18:30 | 增加 Phase 0、分库架构、现状诊断、Beta 整合 |
+| v0.2.0 | 2026-01-31 18:30 | 增加 Phase 0、分库架构、现状诊断 |
+| v0.3.0 | 2026-01-31 19:30 | **MVP 精简版**：聚焦归档修复+语义检索，移除分库/图谱等复杂设计 |
 
 ---
 
-*本文档持续更新中，如有问题请联系 Alchemy Team*
+### E. 与 v0.2.0 的主要变更
+
+| 项目 | v0.2.0 | v0.3.0 (MVP) |
+|------|--------|-------------|
+| 架构层级 | 四层 (L0-L3) | 两层 (存档+检索) |
+| 分库 | 详细设计 | 暂不实现 |
+| 知识图谱 | 详细设计 | 暂不实现 |
+| 个人标注 | 详细设计 | 暂不实现 |
+| 核心聚焦 | 全面规划 | 归档修复 + 语义检索 |
+| Phase 数量 | 4 个 | 3 个 |
+
+**精简原因**：
+1. 个人维护，避免过度工程
+2. 先跑通基础，验证价值
+3. 数据量可控，暂不需要分库
+4. 知识图谱收益不明确，后期再评估
+
+---
+
+*本文档为 MVP 精简版，后续根据实际使用反馈迭代*
