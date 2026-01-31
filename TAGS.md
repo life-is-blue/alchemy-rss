@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-01 00:03:04 | [返回首页](/README.md)
+**更新时间**: 2026-02-01 01:02:19 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (29)
+- [AI & 大模型](#ai-llm) (28)
 - [其他](#other) (5)
 
 
@@ -19,7 +19,6 @@
 
 
 - [智能体编程中的-80%-问题](https://addyo.substack.com/p/the-80-problem-in-agentic-coding) - 精选文章 - AI
-- [DeepAgents-的上下文管理](https://www.blog.langchain.com/context-management-for-deepagents/) - 精选文章 - AI
 - [AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558130&idx=1&sn=c88706eec46d802425ea5197389b0bb5) - 精选文章 - 编程
 - [介绍-Moltworker：一个自托管的个人-AI-智能体，告别-Mac-mini](https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/) - 精选文章 - 编程
 - [Context-Is-All-You-Need：快手后端-AI-Coding-的实践与思考](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247499146&idx=1&sn=a5a9f6f8f39f01dfa67e4bae14c5658a) - 精选文章 - 编程
@@ -38,8 +37,9 @@
 - [Agent-真正的护城河，正在从工具转向记忆资产](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522477&idx=1&sn=84191842ab39ae2e0ceff7599f5ecfbc) - 精选文章 - Agent 专题
 - [Kimi-发布并开源-K2.5-模型，带来全新视觉理解、代码和-Agent-集群能力](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488099&idx=1&sn=395f832d3311cf5c8cf9e96f6b84cdcf) - 精选文章 - Agent 专题
 - [从-ReAct-到-Ralph-Loop：AI-Agent-的持续迭代范式](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247557988&idx=1&sn=b70b03f87eedda96f43a8dc7ec05047b) - 精选文章 - Agent 专题
+- [Spring-AI-智能体模式（第四部分）：子智能体编排](https://spring.io/blog/2026/01/27/spring-ai-agentic-patterns-4-task-subagents) - 精选文章 - Agent 专题
 
-- [查看全部 29 篇...](/details/tags/ai-llm.md)
+- [查看全部 28 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
