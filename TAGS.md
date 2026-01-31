@@ -1,151 +1,86 @@
-> 提示：只是根据文章标题简单匹配分类
+> 基于文章标签自动分类
 
-:alarm_clock: 更新时间: 2026-01-31 20:53:14。[文章来源](/README.md)
+**更新时间**: 2026-01-31 21:49:23 | [返回首页](/README.md)
 
-## 文章分类
+---
 
-- [AI & 大模型](#ai & 大模型) 
-- [软件架构](#软件架构) 
-- [前端与全栈](#前端与全栈) 
-- [DevOps](#devops) 
-- [产品与商业](#产品与商业) 
-- [其他](#其他) 
+## 分类导航
 
-## 文章链接
-
-<details open>
-<summary id="ai & 大模型">
- AI & 大模型
-</summary>
-<p></p>
+- [AI & 大模型](#ai-llm) (17)
+- [产品与商业](#product-business) (1)
+- [其他](#other) (5)
 
 
-> 关键字：`AI`、`GPT`、`LLM`、`Agent`、`RAG`、`Transformer`、`Diffusion`、`DeepSeek`、`OpenAI`、`Claude`、`Llama`、`Model`、`Artificial Intelligence`、`Machine Learning`
+---
 
 
+## <a id="ai-llm"></a>AI & 大模型
 
-- [【精选文章 (BestBlogs)】Vol.86-同一代技术，两个系统，181-页-PPT-全记录-AI-行业的-2025](https://www.xiaoyuzhoufm.com/episode/697cbc24b4be4c149b4b6931)
-- [【精选文章 (BestBlogs)】自建一个-Agent-很难吗？一语道破，万语难明](https://www.bestblogs.dev/article/673b5211)
-- [【精选文章 (BestBlogs)】春节红包，大厂-AI“斩杀线”](https://www.bestblogs.dev/article/92dbe3a9)
-- [【精选文章 (BestBlogs)】即将到来的-AI-for-Science-大爆发](https://www.bestblogs.dev/article/45e86e06)
-- [【精选文章 (BestBlogs)】想用-Clawdbot-何必抢-Mac-mini，手把手教你打造最强本地-Agent，立省-200-美元-|-附保姆级教程](https://www.bestblogs.dev/article/cb92a480)
-- [【精选文章 (BestBlogs)】最强开源模型易主？Kimi-发布-k2.5-用-Agent-集群解决长文本+视觉生成](https://www.bestblogs.dev/article/a2a89b98)
-- [【精选文章 (BestBlogs)】DeepAgents-的上下文管理](https://www.bestblogs.dev/article/2a3e3f6e)
-- [【精选文章 (BestBlogs)】阿里重磅开源！OpenSandbox：专为-AI-Agent-打造的下一代沙箱](https://www.bestblogs.dev/article/b7ca6be0)
-- [【精选文章 (BestBlogs)】全球最强-AI-音乐模型，现在来自中国！高晓松也来围观了](https://www.bestblogs.dev/article/78fbd3ed)
-- [【精选文章 (BestBlogs)】AINews-Sam-Altman-的-AI-组合器](https://www.bestblogs.dev/article/ac704b08)
-- [【精选文章 (BestBlogs)】Moltbot-作者被-Claude-刁难后：MiniMax-M2.1-是最优秀的开源模型](https://www.bestblogs.dev/article/78eca0be)
-- [【精选文章 (BestBlogs)】喝点-VC｜a16z-掌门人谈-AI-投资：我们正迎来史无前例的多重赢家时代](https://www.bestblogs.dev/article/49755c69)
-- [【精选文章 (BestBlogs)】DeepAgents-的上下文管理](https://www.blog.langchain.com/context-management-for-deepagents/)
-- [【精选文章 (BestBlogs)】AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)
-- [【精选文章 (BestBlogs)】vivo-GPU-容器与-AI-训练平台探索与实践](https://www.bestblogs.dev/article/4cc1e67a)
-- [【精选文章 (BestBlogs)】AI-编程智能体引入-Bug-和事故是不可避免的吗？](https://www.bestblogs.dev/article/57f11ad8)
-- [【精选文章 (BestBlogs)】DeepSeek-今年的两个重大更新，一篇详细的总结来了！](https://www.bestblogs.dev/article/26c0433a)
-- [【精选文章 (BestBlogs)】64-笔超-1-亿美元融资！从这-16-家“新晋-AI-顶流”，看懂硅谷的新逻辑](https://www.bestblogs.dev/article/0a923eb7)
-- [【精选文章 (BestBlogs)】奥特曼亲口承认-GPT-5.2-搞砸了，这是-OpenAI-CEO-最特别的一次直播](https://www.bestblogs.dev/article/5571aca4)
-- [【精选文章 (BestBlogs)】曦望，死磕-AI-推理成本｜甲子光年](https://www.bestblogs.dev/article/90c837be)
-- [查看更多 >](/details/tags/ai-llm.md)
-
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
-
-<details open>
-<summary id="软件架构">
- 软件架构
-</summary>
-<p></p>
+> 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
-> 关键字：`Architecture`、`System Design`、`Microservices`、`Distributed`、`High Performance`、`Scalability`、`DDD`、`Clean Architecture`、`Patterns`、`Refactoring`
+- [Vol.86-同一代技术，两个系统，181-页-PPT-全记录-AI-行业的-2025](https://www.xiaoyuzhoufm.com/episode/697cbc24b4be4c149b4b6931) - 精选文章 (BestBlogs)
+- [Google-DeepMind-发布-Project-Genie：先进的世界模型](https://x.com/demishassabis/status/2016925155277361423) - 精选文章 (BestBlogs)
+- [阿里巴巴-Qwen-发布开源语音模型-Qwen3-ASR-与-Qwen3-ForcedAligner](https://x.com/Alibaba_Qwen/status/2016858705917075645) - 精选文章 (BestBlogs)
+- [重磅新课：与-Anthropic-联手打造智能体技能](https://x.com/AndrewYNg/status/2016564878098780245) - 精选文章 (BestBlogs)
+- [智能体编程中的-80%-问题](https://addyo.substack.com/p/the-80-problem-in-agentic-coding) - 精选文章 (BestBlogs)
+- [DeepAgents-的上下文管理](https://www.blog.langchain.com/context-management-for-deepagents/) - 精选文章 (BestBlogs)
+- [AI-Agent-记忆系统：从短期到长期的技术架构与实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558130&idx=1&sn=c88706eec46d802425ea5197389b0bb5) - 软件编程 (Programming)
+- [介绍-Moltworker：一个自托管的个人-AI-智能体，告别-Mac-mini](https://blog.cloudflare.com/moltworker-self-hosted-ai-agent/) - 软件编程 (Programming)
+- [Context-Is-All-You-Need：快手后端-AI-Coding-的实践与思考](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247499146&idx=1&sn=a5a9f6f8f39f01dfa67e4bae14c5658a) - 软件编程 (Programming)
+- [Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://spring.io/blog/2026/01/29/spring-ai-agentic-patterns-a2a-integration) - 软件编程 (Programming)
+- [Clawd-创始人：我发布的很多代码自己都没读过](https://www.youtube.com/watch?v=8lF7HmQ_RgY) - 软件编程 (Programming)
+- [Clawdbot/Moltbot-深度解析（及使用指南）](https://www.youtube.com/watch?v=U8kXfk8enrY) - 商业科技 (Business)
+- [Agent-真正的护城河，正在从工具转向记忆资产](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247522477&idx=1&sn=84191842ab39ae2e0ceff7599f5ecfbc) - 商业科技 (Business)
+- [ClawdBot-正在失控](https://www.youtube.com/watch?v=7fltOAg8ZGI) - 商业科技 (Business)
+- [CES-2026-挑战：探展-50-个-AI-项目背后的泡沫与非共识](https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247496383&idx=1&sn=944a469764b2e4bb6680e7a55a99cd28) - 商业科技 (Business)
+- [AI-会带来经济爆发，但引线很长｜Hao-好聊论文](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691564018&idx=1&sn=eab2b22dd6613c10485897c9ba45eedf) - 商业科技 (Business)
+- [Marc-Andreessen：这是科技史上最重要的时代（以及背后的原因）](https://www.youtube.com/watch?v=87Pm0SGTtN8) - 产品设计 (Product)
 
 
 
-- [查看更多 >](/details/tags/architecture.md)
+## <a id="architecture"></a>软件架构
 
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
-
-<details open>
-<summary id="前端与全栈">
- 前端与全栈
-</summary>
-<p></p>
-
-
-> 关键字：`Frontend`、`Fullstack`、`React`、`Vue`、`Node`、`Next`、`Nuxt`、`Svelte`、`Angular`、`TypeScript`、`JavaScript`、`CSS`、`HTML`、`Web`、`Browser`、`Server`、`Deno`、`Bun`
-
-
-
-- [【精选文章 (BestBlogs)】HTML-Invoker-Commands-在所有主流浏览器中实现基准支持](https://www.bestblogs.dev/article/ca453414)
-- [【精选文章 (BestBlogs)】JavaScript-中文周刊-#221---LibPDF：TypeScript-里的-PDF-解析与生成](https://www.bestblogs.dev/article/dd0e46f2)
-- [查看更多 >](/details/tags/frontend-fullstack.md)
-
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
-
-<details open>
-<summary id="devops">
- DevOps
-</summary>
-<p></p>
-
-
-> 关键字：`DevOps`、`Docker`、`Kubernetes`、`K8s`、`CI/CD`、`Jenkins`、`GitHub Actions`、`Cloud`、`AWS`、`Azure`、`GCP`、`Linux`、`Nginx`、`Serverless`、`Terraform`
-
-
-
-- [查看更多 >](/details/tags/devops.md)
-
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
-
-<details open>
-<summary id="产品与商业">
- 产品与商业
-</summary>
-<p></p>
-
-
-> 关键字：`Product`、`Startup`、`SaaS`、`Business`、`Growth`、`Marketing`、`Management`、`Indie Hacker`、`Monetization`、`VC`、`Entrepreneurship`
-
-
-
-- [查看更多 >](/details/tags/product-business.md)
-
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
-
-<details open>
-<summary id="其他">
- 其他
-</summary>
-<p></p>
+> 关键词: Architecture, System Design, Microservices, Distributed, High Performance, Scalability, DDD, Clean Architecture
 
 
 
 
-- [【精选文章 (BestBlogs)】Google-DeepMind-发布-Project-Genie：先进的世界模型](https://x.com/demishassabis/status/2016925155277361423)
-- [【精选文章 (BestBlogs)】阿里巴巴-Qwen-发布开源语音模型-Qwen3-ASR-与-Qwen3-ForcedAligner](https://x.com/Alibaba_Qwen/status/2016858705917075645)
-- [【精选文章 (BestBlogs)】2026-01-29-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/c9a07bdc)
-- [【精选文章 (BestBlogs)】早报｜曝苹果希望-iPhone-18「尽可能不涨价」/首款中国车型小米-SU7-Ultra-加入《GT-赛车》/Clawdbot-被迫改名，卷入千万美元诈骗](https://www.bestblogs.dev/article/ed30b40c)
-- [【精选文章 (BestBlogs)】【第-3650-期】从-.env-到动态配置：前端工程的一次升级](https://www.bestblogs.dev/article/ba8ca19d)
-- [【精选文章 (BestBlogs)】互联网-P0-故障频发背后：云架构的-15-个致命陷阱](https://www.bestblogs.dev/article/f55af745)
-- [【精选文章 (BestBlogs)】五个级别：从高级自动补全到黑暗工厂](https://www.bestblogs.dev/article/238cb7b8)
-- [【精选文章 (BestBlogs)】实测苹果博主十件套：每月-¥38-，能替代剪映和-PS-吗？](https://www.bestblogs.dev/article/ea89c6b2)
-- [【精选文章 (BestBlogs)】逆天！机器人终于学会了刷完，还能用胯胯轴关抽屉](https://www.bestblogs.dev/article/26c89614)
-- [【精选文章 (BestBlogs)】Swift-跨平台框架-Skip-现已完全开源](https://www.bestblogs.dev/article/1628d64a)
-- [【精选文章 (BestBlogs)】如何编写高性能代码](https://www.bestblogs.dev/article/f940a947)
-- [【精选文章 (BestBlogs)】如何在-Python-中使用建造者模式：开发者实用指南](https://www.bestblogs.dev/article/77a6480e)
-- [【精选文章 (BestBlogs)】排序基础模型：挑战、成功与经验教训](https://www.bestblogs.dev/article/c1da9cd4)
-- [【精选文章 (BestBlogs)】智能体编程中的-80%-问题](https://www.bestblogs.dev/article/21d6d37f)
-- [【精选文章 (BestBlogs)】更快的-GKE-节点池自动创建](https://www.bestblogs.dev/article/2835cdfa)
-- [【精选文章 (BestBlogs)】2025-年的-Spanner](https://www.bestblogs.dev/article/5925978d)
-- [【精选文章 (BestBlogs)】为强缓存网站添加动态功能](https://www.bestblogs.dev/article/a9a7c725)
-- [【精选文章 (BestBlogs)】蚂蚁深夜开源比肩-Genie-3-的世界模型，我也看到了具身智能的未来。](https://www.bestblogs.dev/article/16d9db27)
-- [【精选文章 (BestBlogs)】当机器学会“思考”：蒸汽、钢铁与无尽心智-|【经纬低调分享】](https://www.bestblogs.dev/article/aeea0708)
-- [【精选文章 (BestBlogs)】Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)
-- [查看更多 >](/details/tags/other.md)
 
-<div align="right"><a href="#文章分类">⬆&nbsp;返回顶部</a></div>
-</details>
+## <a id="frontend-fullstack"></a>前端与全栈
+
+> 关键词: Frontend, Fullstack, React, Vue, Node, Next, Nuxt, Svelte
+
+
+
+
+
+## <a id="devops"></a>DevOps
+
+> 关键词: DevOps, Docker, Kubernetes, K8s, CI/CD, Jenkins, GitHub Actions, Cloud
+
+
+
+
+
+## <a id="product-business"></a>产品与商业
+
+> 关键词: Product, Startup, SaaS, Business, Growth, Marketing, Management, Indie Hacker
+
+
+- [当你的产品停止增长时，请问自己这-5-个问题-|-Jason-Cohen](https://www.youtube.com/watch?v=8xLquwfx6p0) - 产品设计 (Product)
+
+
+
+## <a id="other"></a>其他
+
+
+
+- [Java-再升级！JDK21-+-虚拟线程技术大规模落地方案解密](https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg==&mid=2247494592&idx=1&sn=44a989f070adddaa5c9d72d7061e83f0) - 软件编程 (Programming)
+- [Vol.98｜小冰之父李笛谈新-AI-项目：AI-这门生意的终极模式，不是只卖-Token](https://www.xiaoyuzhoufm.com/episode/6979eb8efed1b9fd8d62556c) - 商业科技 (Business)
+- [131.-印奇出任阶跃星辰董事长的首次访谈：聪明人的诱惑、残酷的淘汰赛、赌注和超多元方程](https://www.xiaoyuzhoufm.com/episode/6976bdf0ef1cf272a76fa9f3) - 商业科技 (Business)
+- [#406.追求卓越的终极对话：Spotify-创始人-Daniel-Ek-的影响力法则与精力管理心法](https://www.xiaoyuzhoufm.com/episode/69763f8cef1cf272a767087d) - 商业科技 (Business)
+- [Vibe-Coding-方法论：不会编程的人如何用-AI-写出能跑的代码](https://baoyu.io/blog/vibe-coding-ai-code-for-non-programmers) - 宝玉的分享
+
+
 
