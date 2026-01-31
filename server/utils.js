@@ -5,7 +5,6 @@ const moment = require('moment-timezone')
 const chalk = require('chalk')
 const pathToRegexp = require('path-to-regexp')
 const queryString = require('query-string')
-const { Octokit } = require('@octokit/core')
 
 // 仅在非 WORKFLOW 模式下加载 .env，避免覆盖 CI 环境变量
 if (!process.env.WORKFLOW) {
@@ -131,21 +130,8 @@ module.exports = {
     }
     return link === compare
   },
-  async getHomePage() {
-    try {
-      const octokit = new Octokit({
-        auth: process.env.GITHUB_TOKEN
-      })
-      const res = await octokit.request('GET /repos/life-is-blue/alchemy-rss', {
-        owner: 'life-is-blue',
-        repo: 'alchemy-rss'
-      })
-      if (res && res.data && res.data.homepage) {
-        return res.data.homepage
-      }
-    } catch (e) {
-    }
-    return '/'
+  getHomePage() {
+    return 'https://alchemy.csslab.app'
   },
   // 筛选出技能类别
   filterBySkill(items) {
