@@ -5,8 +5,8 @@
     "category": "Artificial_Intelligence",
     "qualifiedFilter": "true",
     "sortType": "score_desc",
-    "timeFilter": "1w",
-    "limit": 100
+    "timeFilter": "1d",
+    "limit": 30
   },
   {
     "title": "精选文章 - 编程",
@@ -14,8 +14,8 @@
     "category": "Programming_Technology",
     "qualifiedFilter": "true",
     "sortType": "score_desc",
-    "timeFilter": "1w",
-    "limit": 100
+    "timeFilter": "1d",
+    "limit": 30
   },
   {
     "title": "精选文章 - 商业",
@@ -23,8 +23,8 @@
     "category": "Business_Tech",
     "qualifiedFilter": "true",
     "sortType": "score_desc",
-    "timeFilter": "1w",
-    "limit": 100
+    "timeFilter": "1d",
+    "limit": 30
   },
   {
     "title": "精选文章 - 产品",
@@ -32,8 +32,44 @@
     "category": "Product_Development",
     "qualifiedFilter": "true",
     "sortType": "score_desc",
-    "timeFilter": "1w",
-    "limit": 100
+    "timeFilter": "1d",
+    "limit": 30
+  },
+  {
+    "title": "更多文章 - AI",
+    "type": "ARTICLE",
+    "category": "Artificial_Intelligence",
+    "qualifiedFilter": "false",
+    "sortType": "time_desc",
+    "timeFilter": "1d",
+    "limit": 30
+  },
+  {
+    "title": "更多文章 - 编程",
+    "type": "ARTICLE",
+    "category": "Programming_Technology",
+    "qualifiedFilter": "false",
+    "sortType": "time_desc",
+    "timeFilter": "1d",
+    "limit": 30
+  },
+  {
+    "title": "更多文章 - 商业",
+    "type": "ARTICLE",
+    "category": "Business_Tech",
+    "qualifiedFilter": "false",
+    "sortType": "time_desc",
+    "timeFilter": "1d",
+    "limit": 30
+  },
+  {
+    "title": "更多文章 - 产品",
+    "type": "ARTICLE",
+    "category": "Product_Development",
+    "qualifiedFilter": "false",
+    "sortType": "time_desc",
+    "timeFilter": "1d",
+    "limit": 30
   },
   {
     "title": "技术视频 - 编程",
