@@ -36,12 +36,7 @@ let newData = null
  * 主入口
  */
 async function handleUpdate() {
-  // 确保在执行前加载 .env（本地开发时）
-  if (!process.env.WORKFLOW) {
-    require('dotenv').config({ multiline: true, override: false })
-  }
-
-  // 检查 API Key
+  // 检查 API Key (环境变量由 utils.js 统一加载)
   const apiKey = apiFetcher.getApiKey()
   if (!apiKey) {
     utils.logWarn('警告: BESTBLOGS_API_KEY 未配置，将跳过 API 抓取')
