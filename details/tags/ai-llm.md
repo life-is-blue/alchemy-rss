@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 08:08:55。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 10:50:39。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -7,12 +7,20 @@
 
 
 
-- **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
-  > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
+- **[2026-01-31-AINews-Moltbook-——-首个-AI-智能体社交网络-Clawdbots/OpenClaw-机器人](https://www.bestblogs.dev/article/dd31040d)**
+  > 📌 一句话摘要              本期 AINews 重点介绍了 AI 智能体社交网络 Moltbook 的兴起，以及 Moonshot 的 Kimi K2.5 技术报告，还有关于 AI 辅助编程和模型量化的关键研究。 📝 详细摘要              本报告涵盖了智能体 AI 的一个重要里程碑：Moltbook 的发布。这是一个基于 OpenClaw 的智能体自主交互平台，引发
+
+
+- **[2026-01-31-Uber-通过云原生架构重组，为网络可观测性引入-AI-做好准备](https://www.bestblogs.dev/article/2f31904c)**
+  > 📌 一句话摘要              Uber 重构了其网络可观测性系统，用模块化、云原生且开源的平台取代了传统的单体系统，旨在支持自动化和未来的 AI 驱动运营。 📝 详细摘要              Uber 已将其网络监控从僵化、手动的本地堆栈转型为可编程的云原生可观测性平台。新架构包含灵活的数据摄取流水线、中央告警系统以及一个通过 API 自动在全区范围内分配工作负载的 “Dyn
 
 
 - **[2026-01-31-AI-如何影响技能形成？](https://www.bestblogs.dev/article/0ff43910)**
   > 📌 一句话摘要              本文评述了一篇关于 AI 对技能形成影响的研究论文，认为在正确使用的情况下，AI 能显著提升生产力，尽管在单项任务的深度学习方面可能存在权衡。 📝 详细摘要              作者分析了 Anthropic Fellows 最近发表的一篇题为《AI 如何影响技能形成》的论文，该论文声称 AI 使用者在技能保留方面表现较差，且工作速度并未加快。作
+
+
+- **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
+  > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
 
 
 - **[2026-01-31-Google-的-AI-优势：为什么爬虫分离是通往公平互联网的唯一路径](https://www.bestblogs.dev/article/6014d5f9)**
@@ -35,12 +43,12 @@
   > 📌 一句话摘要              文章深度解析了 Richard Socher 创办 Recursive 探索 AI 自我进化机制，并提出从“提示工程”转向“奖励工程”的 AI 演进核心观。 📝 详细摘要              本文围绕 AI 领域连续创业者 Richard Socher 的职业路径，重点介绍了其新公司 Recursive 的前沿愿景：构建能够递归自我改进、不依赖人
 
 
-- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
-  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
-
-
 - **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
   > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
+
+
+- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
+  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
 
 
 - **[2026-01-30-OpenAI-关键九问：2026-AI-战局升级后迎来叙事反转](https://www.bestblogs.dev/article/0217aec7)**
@@ -177,11 +185,9 @@
 
 
 - **[2026-01-29-比-OpenAI-更-Manus，实测-Kimi-新上线多核-Agent-集群](https://www.bestblogs.dev/article/7202f908)**
-  > 📌 一句话摘要              本文深度实测了 Kimi K2.5 新发布的“多核 Agent 集群”，展示其通过动态分工的专家团队模式，在处理复杂任务时实现的高效协作与生产力突破。 📝 详细摘要              文章详细评测了 Kimi K2.5 及其核心特性“Agent 集群”。作者通过对比 OpenAI Deep Research（深度钻研型）和 Manus Wide
 
 
 - **[2026-01-29-新瓶旧酒-or-涅槃重生？操作系统的-AI-进化终将走向何方？](https://www.bestblogs.dev/article/86b0affe)**
-  > 📌 一句话摘要              本文深度探讨了 AI 时代操作系统从“以 CPU 为中心”向“AI 原生”架构的范式跃迁，涵盖内核重构、异构算力适配及 Agent 生态布局。 📝 详细摘要              文章基于阿里云与中科院专家的深度对话，系统分析了智算时代操作系统的进化路径。核心观点认为，OS 的 AI 进化并非简单的功能叠加，而是底层逻辑的重构：从传统的资源隔离管理
 
 
 - **[2026-01-29-Claude-Code-发现-Clawdbot-们套着它的壳就要把它替代了](https://www.bestblogs.dev/article/7e66b55d)**
@@ -194,15 +200,6 @@
 
 
 - **[2026-01-29-让-Agent-画思维导图稳固长期记忆：新框架实现稳定长期学习，准确率提升-38%](https://www.bestblogs.dev/article/28f4b94f)**
-
-
-- **[2026-01-29-超越聊天机器人：可信-AI-蓝图](https://www.bestblogs.dev/article/ea29b583)**
-
-
-- **[2026-01-29-介绍适用于-.NET-的-Google-Cloud-Vertex-AI-扩展](https://www.bestblogs.dev/article/0e27519b)**
-
-
-- **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
 
 
 - **[2026-01-28-AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)**
