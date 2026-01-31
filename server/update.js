@@ -89,7 +89,7 @@ function handleFeed() {
               newData.links[curr.link] = true
             }
 
-            const archiveMeta = await archiver.archive(curr.link, date)
+            const archiveMeta = await archiver.archive(curr.link, date, curr.id)
             
             if (archiveMeta) {
               return {

@@ -22,16 +22,17 @@ class Archiver {
    * 尝试归档一篇文章
    * @param {string} url 文章原始链接
    * @param {string} rssDate 文章发布时间
+   * @param {string} [explicitId] 可选：直接传入 ID，跳过 URL 解析
    * @returns {Promise<object|null>} 返回精简的索引元数据，失败返回 null
    */
-  async archive(url, rssDate) {
+  async archive(url, rssDate, explicitId = null) {
     if (!API_KEY) {
       console.warn('⚠️ No API Key, skipping archive for:', url);
       return null;
     }
 
-    // 1. 生成 ID (优先从 URL 提取，提取不到则用 URL Hash)
-    const resourceId = this.extractId(url);
+    // 1. 生成 ID (优先使用显式 ID，否则从 URL 提取)
+    const resourceId = explicitId || this.extractId(url);
     if (!resourceId) {
       console.warn('⚠️ Could not extract BestBlogs ID:', url);
       return null; // 非 BestBlogs 文章暂时跳过归档
@@ -68,7 +69,8 @@ class Archiver {
   }
 
   extractId(url) {
-    const match = url.match(/\/(article|status)\/([a-zA-Z0-9]+)/);
+    // 支持 article, status, video, podcast 等多种资源类型
+    const match = url.match(/\/(article|status|video|podcast)\/([a-zA-Z0-9]+)/);
     return match ? match[2] : null;
   }
 
