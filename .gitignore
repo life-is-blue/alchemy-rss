@@ -34,4 +34,4 @@ server/.env
 /details/
 /README.md
 /TAGS.md
-/deploy/
+/deploy/.worktrees/
