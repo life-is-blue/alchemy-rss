@@ -58,6 +58,7 @@ jobs:
         WORKFLOW: true
         RSS_CONFIG: ${{ secrets.RSS_CONFIG }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BESTBLOGS_API_KEY: ${{ secrets.BESTBLOGS_API_KEY }}
       run: |
         pnpm install
         pnpm run once
