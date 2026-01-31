@@ -44,6 +44,7 @@ pnpm run build        # 构建前端 (cd site && npx nuxi generate)
 │   ├── update.js     # 主爬虫编排
 │   ├── fetch.js      # RSS 抓取 (API优先策略)
 │   ├── archiver.js   # 内容归档 (BestBlogs API)
+│   ├── tag-classifier.js  # 标签分类器
 │   └── writemd.js    # Markdown 生成
 ├── site/             # Nuxt 4 前端
 │   ├── app/
@@ -86,6 +87,15 @@ pnpm run build        # 构建前端 (cd site && npx nuxi generate)
 - 遇到限速错误自动重试 (最多 3 次)
 - 退避时间: 1s, 2s, 4s + 随机抖动 (0-1s)
 - 可重试错误: "请求过于频繁"、429、5xx
+
+### Tag Classification System
+双层标签架构：
+- **Layer 1 (tags)**: API 返回的细粒度标签，用于搜索和标签云
+- **Layer 2 (categoryTag)**: 构建时计算的分类标签，用于导航分类
+
+关键文件：
+- `server/tag-classifier.js` - 标签分类器 (关键词匹配 + 权重计算)
+- `data/tags.json` - 分类关键词配置
 
 ## Environment Variables
 
