@@ -106,10 +106,19 @@ async function processSource(sourceConfig, existingItems) {
   // 1. 根据源类型获取文章列表
   let apiItems = []
 
-  if (sourceConfig.type === 'rss' && sourceConfig.xmlUrl) {
+  // 判断源类型
+  const isRssSource = sourceConfig.type === 'rss' && sourceConfig.xmlUrl
+  const isApiSource = !isRssSource && (
+    sourceConfig.category ||   // 分类源
+    sourceConfig.keyword ||    // 关键词源
+    sourceConfig.sourceId ||   // 订阅源聚合
+    sourceConfig.type          // 类型过滤源（ARTICLE/VIDEO/PODCAST/TWITTER）
+  )
+
+  if (isRssSource) {
     // 标准 RSS 源
     apiItems = await rssFetcher.fetchRSS(sourceConfig.xmlUrl, sourceConfig.limit || 20)
-  } else if (sourceConfig.category) {
+  } else if (isApiSource) {
     // BestBlogs API 源
     apiItems = await apiFetcher.fetchSource(sourceConfig)
   } else {
@@ -278,9 +287,18 @@ async function handleFeed() {
     const existingItems = linksExist.find(el => el.title === config.title)?.items || []
     const sourceInfo = { config, index, existingItems }
 
-    if (config.type === 'rss' && config.xmlUrl) {
+    // 判断源类型
+    const isRssSource = config.type === 'rss' && config.xmlUrl
+    const isApiSource = !isRssSource && (
+      config.category ||   // 分类源
+      config.keyword ||    // 关键词源
+      config.sourceId ||   // 订阅源聚合
+      config.type          // 类型过滤源（ARTICLE/VIDEO/PODCAST/TWITTER）
+    )
+
+    if (isRssSource) {
       rssSources.push(sourceInfo)
-    } else if (config.category) {
+    } else if (isApiSource) {
       apiSources.push(sourceInfo)
     } else {
       // 无效配置，保留原数据

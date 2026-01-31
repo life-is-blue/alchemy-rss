@@ -109,6 +109,13 @@ async function callAPI(endpoint, method = 'POST', body = null) {
  * @param {string} options.qualifiedFilter - 精选过滤: true | false | ALL
  * @param {number} options.pageSize - 每页数量
  * @param {string} options.userLanguage - 语言偏好: zh_CN | en_US
+ * @param {string} options.keyword - 关键词搜索
+ * @param {string} options.type - 资源类型: ARTICLE | PODCAST | VIDEO | TWITTER
+ * @param {string} options.sourceId - 订阅源 ID
+ * @param {string} options.language - 内容语言: zh_CN | en_US
+ * @param {number} options.lowerTotalScore - 最低评分（推文）
+ * @param {number} options.upperTotalScore - 最高评分（推文）
+ * @param {string} options.mainDomainFilter - 主领域过滤
  */
 async function fetchResourceList(options = {}) {
   const body = {
@@ -118,7 +125,16 @@ async function fetchResourceList(options = {}) {
     sortType: options.sortType || 'score_desc',
     timeFilter: options.timeFilter || '1w',
     qualifiedFilter: options.qualifiedFilter || 'true',
-    userLanguage: options.userLanguage || 'zh_CN'
+    userLanguage: options.userLanguage || 'zh_CN',
+
+    // 新增参数
+    keyword: options.keyword,
+    type: options.type,
+    sourceId: options.sourceId,
+    language: options.language,
+    lowerTotalScore: options.lowerTotalScore,
+    upperTotalScore: options.upperTotalScore,
+    mainDomainFilter: options.mainDomainFilter
   }
 
   // 移除 undefined 字段
@@ -194,6 +210,13 @@ async function fetchFullResource(id) {
  * @param {string} sourceConfig.timeFilter - 时间范围
  * @param {string} sourceConfig.qualifiedFilter - 精选过滤
  * @param {number} sourceConfig.limit - 数量限制
+ * @param {string} sourceConfig.keyword - 关键词搜索
+ * @param {string} sourceConfig.type - 资源类型
+ * @param {string} sourceConfig.sourceId - 订阅源 ID
+ * @param {string} sourceConfig.language - 内容语言
+ * @param {number} sourceConfig.lowerTotalScore - 最低评分
+ * @param {number} sourceConfig.upperTotalScore - 最高评分
+ * @param {string} sourceConfig.mainDomainFilter - 主领域过滤
  */
 async function fetchSource(sourceConfig) {
   const options = {
@@ -202,7 +225,16 @@ async function fetchSource(sourceConfig) {
     timeFilter: sourceConfig.timeFilter || '1w',
     qualifiedFilter: sourceConfig.qualifiedFilter || 'true',
     pageSize: sourceConfig.limit || 50,
-    userLanguage: sourceConfig.userLanguage || 'zh_CN'
+    userLanguage: sourceConfig.userLanguage || 'zh_CN',
+
+    // 新增参数映射
+    keyword: sourceConfig.keyword,
+    type: sourceConfig.type,
+    sourceId: sourceConfig.sourceId,
+    language: sourceConfig.language,
+    lowerTotalScore: sourceConfig.lowerTotalScore,
+    upperTotalScore: sourceConfig.upperTotalScore,
+    mainDomainFilter: sourceConfig.mainDomainFilter
   }
 
   try {
