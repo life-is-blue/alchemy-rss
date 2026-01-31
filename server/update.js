@@ -143,7 +143,6 @@ async function processSource(sourceConfig, existingItems) {
 
   // 3. 识别需要处理的文章
   const toProcess = []
-  const isRssSource = sourceConfig.type === 'rss'
 
   for (const apiItem of apiItems) {
     // RSS 源使用 URL 去重，API 源使用 ID 去重
