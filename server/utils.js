@@ -131,7 +131,7 @@ module.exports = {
     return link === compare
   },
   getHomePage() {
-    return 'https://alchemy.csslab.app'
+    return 'https://rss.izoa.fun/'
   },
   // 筛选出技能类别
   filterBySkill(items) {
