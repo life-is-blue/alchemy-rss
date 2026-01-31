@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 06:03:12。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 08:08:55。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -9,6 +9,10 @@
 
 - **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
   > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
+
+
+- **[2026-01-31-AI-如何影响技能形成？](https://www.bestblogs.dev/article/0ff43910)**
+  > 📌 一句话摘要              本文评述了一篇关于 AI 对技能形成影响的研究论文，认为在正确使用的情况下，AI 能显著提升生产力，尽管在单项任务的深度学习方面可能存在权衡。 📝 详细摘要              作者分析了 Anthropic Fellows 最近发表的一篇题为《AI 如何影响技能形成》的论文，该论文声称 AI 使用者在技能保留方面表现较差，且工作速度并未加快。作
 
 
 - **[2026-01-31-Google-的-AI-优势：为什么爬虫分离是通往公平互联网的唯一路径](https://www.bestblogs.dev/article/6014d5f9)**
@@ -181,7 +185,6 @@
 
 
 - **[2026-01-29-Claude-Code-发现-Clawdbot-们套着它的壳就要把它替代了](https://www.bestblogs.dev/article/7e66b55d)**
-  > 📌 一句话摘要              文章深度解析了围绕 Claude Code 形成的“套壳 2.0”生态，探讨了社区工具如何通过补齐官方产品的场景化短板，系统性地重塑 AI Agent 的用户预期。 📝 详细摘要              本文以 Clawdbot（现更名为 Moltbot）的爆红为切入点，提出了“套壳 2.0”的概念。不同于早期仅提供 UI 包装的套壳，2.0 时代的
 
 
 - **[2026-01-29-xAI-Grok-Imagine-API---排名第一的视频模型，最佳价格与延迟---以及与-SpaceX-的合并](https://www.bestblogs.dev/article/c8a9691f)**
@@ -200,9 +203,6 @@
 
 
 - **[2026-01-29-Spring-AI-智能体模式（第五部分）：利用-Agent2Agent-A2A-协议构建互操作智能体](https://www.bestblogs.dev/article/9dc4d4ec)**
-
-
-- **[2026-01-29-管理：AI-时代的超能力](https://www.bestblogs.dev/article/9188d4ca)**
 
 
 - **[2026-01-28-AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)**
