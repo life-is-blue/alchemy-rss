@@ -1,12 +1,16 @@
 const fs = require('fs-extra');
 const path = require('path');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const crypto = require('crypto');
 const moment = require('moment');
 
-// 环境变量
-const API_KEY = process.env.BESTBLOGS_API_KEY;
 const API_BASE = 'https://api.bestblogs.dev';
+
+/**
+ * 获取 API Key（延迟读取，确保环境变量已加载）
+ */
+function getApiKey() {
+  return process.env.BESTBLOGS_API_KEY;
+}
 
 /**
  * 核心归档器：抓取 -> 清洗 -> 存储
@@ -26,7 +30,8 @@ class Archiver {
    * @returns {Promise<object|null>} 返回精简的索引元数据，失败返回 null
    */
   async archive(url, rssDate, explicitId = null) {
-    if (!API_KEY) {
+    const apiKey = getApiKey();
+    if (!apiKey) {
       console.warn('⚠️ No API Key, skipping archive for:', url);
       return null;
     }
@@ -121,12 +126,13 @@ class Archiver {
   }
 
   async callAPI(endpoint, method = 'POST', body) {
+    const apiKey = getApiKey();
     try {
       const resp = await fetch(`${API_BASE}${endpoint}`, {
         method,
-        headers: { 
-          'Content-Type': 'application/json', 
-          'X-API-KEY': API_KEY 
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-KEY': apiKey
         },
         body: body ? JSON.stringify(body) : undefined
       });

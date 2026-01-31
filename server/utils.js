@@ -7,7 +7,10 @@ const pathToRegexp = require('path-to-regexp')
 const queryString = require('query-string')
 const { Octokit } = require('@octokit/core')
 
-require('dotenv').config({ multiline: true })
+// 仅在非 WORKFLOW 模式下加载 .env，避免覆盖 CI 环境变量
+if (!process.env.WORKFLOW) {
+  require('dotenv').config({ multiline: true, override: false })
+}
 
 const RESP_PATH              = path.join(__dirname, '../')
 const RSS_PATH               = path.join(RESP_PATH + '/data/rss.json')

@@ -7,6 +7,7 @@ const utils = require('./utils')
 
 /**
  * 尝试通过 BestBlogs API 获取数据
+ * @deprecated 已被 api-fetcher.js 替代，保留作为回退
  */
 async function fetchBestBlogsAPI(rssUrl) {
   const apiKey = process.env.BESTBLOGS_API_KEY
@@ -96,7 +97,10 @@ async function fetchFeed(rss) {
 }
 
 async function initFetch(rssItem, onFinish) {
-  require('dotenv').config({ multiline: true, override: true })
+  // 仅在本地开发时加载 .env，且不覆盖已有环境变量
+  if (!process.env.WORKFLOW) {
+    require('dotenv').config({ multiline: true, override: false })
+  }
   
   let rssConfig = {}
   try {

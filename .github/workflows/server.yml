@@ -60,8 +60,14 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BESTBLOGS_API_KEY: ${{ secrets.BESTBLOGS_API_KEY }}
       run: |
-        echo "DEBUG: API Key length = ${#BESTBLOGS_API_KEY}"
-        echo "DEBUG: API Key prefix = ${BESTBLOGS_API_KEY:0:15}..."
+        echo "=== Environment Check ==="
+        echo "WORKFLOW: $WORKFLOW"
+        echo "API Key configured: $([ -n \"$BESTBLOGS_API_KEY\" ] && echo 'YES' || echo 'NO')"
+        echo "API Key length: ${#BESTBLOGS_API_KEY}"
+        if [ -n "$BESTBLOGS_API_KEY" ]; then
+          echo "API Key prefix: ${BESTBLOGS_API_KEY:0:10}..."
+        fi
+        echo "========================="
         pnpm install
         pnpm run once
 
