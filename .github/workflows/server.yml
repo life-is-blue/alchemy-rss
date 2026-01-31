@@ -60,6 +60,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BESTBLOGS_API_KEY: ${{ secrets.BESTBLOGS_API_KEY }}
       run: |
+        echo "DEBUG: API Key length = ${#BESTBLOGS_API_KEY}"
+        echo "DEBUG: API Key prefix = ${BESTBLOGS_API_KEY:0:15}..."
         pnpm install
         pnpm run once
 
