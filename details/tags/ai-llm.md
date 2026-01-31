@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 12:29:26。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 14:07:34。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -7,20 +7,28 @@
 
 
 
+- **[2026-01-31-狂飙的-AI-漫剧，正在批量养成赛博抽卡师](https://www.bestblogs.dev/article/4007dd66)**
+  > 📌 一句话摘要              本文深度剖析了 AI 漫剧如何通过爆改网文 IP 形成百亿级市场，并揭示了其背后依赖大量“赛博抽卡师”进行随机化生产的工业现状。 📝 详细摘要              文章探讨了 2025 年爆发的 AI 漫剧产业。这种以网文为核心、利用 AIGC 工具（如可灵、即梦）生成的 2 分钟短剧，已成为规模近 200 亿元的流量生意。相比传统动画，AI 漫
+
+
 - **[2026-01-31-AINews-Moltbook-——-首个-AI-智能体社交网络-Clawdbots/OpenClaw-机器人](https://www.bestblogs.dev/article/dd31040d)**
   > 📌 一句话摘要              本期 AINews 重点介绍了 AI 智能体社交网络 Moltbook 的兴起，以及 Moonshot 的 Kimi K2.5 技术报告，还有关于 AI 辅助编程和模型量化的关键研究。 📝 详细摘要              本报告涵盖了智能体 AI 的一个重要里程碑：Moltbook 的发布。这是一个基于 OpenClaw 的智能体自主交互平台，引发
+
+
+- **[2026-01-31-为什么微信不直接在群里加-AI？](https://www.bestblogs.dev/article/3250b473)**
+  > 📌 一句话摘要              本文深度解析了腾讯推出 AI 原生社交产品「元宝派」的背后逻辑，探讨了微信在 AI 社交化上的克制原因及 AI 场景化社交的新路径。 📝 详细摘要              文章以 2026 年春节互联网大厂 AI 战局为背景，聚焦腾讯推出的 AI 原生社交试验场「元宝派」。作者深入分析了为何腾讯不直接在微信群集成 AI，而是选择「体外循环」：一是为保
 
 
 - **[2026-01-31-Uber-通过云原生架构重组，为网络可观测性引入-AI-做好准备](https://www.bestblogs.dev/article/2f31904c)**
   > 📌 一句话摘要              Uber 重构了其网络可观测性系统，用模块化、云原生且开源的平台取代了传统的单体系统，旨在支持自动化和未来的 AI 驱动运营。 📝 详细摘要              Uber 已将其网络监控从僵化、手动的本地堆栈转型为可编程的云原生可观测性平台。新架构包含灵活的数据摄取流水线、中央告警系统以及一个通过 API 自动在全区范围内分配工作负载的 “Dyn
 
 
-- **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
-  > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
-
-
 - **[2026-01-31-AI-如何影响技能形成？](https://www.bestblogs.dev/article/0ff43910)**
   > 📌 一句话摘要              本文评述了一篇关于 AI 对技能形成影响的研究论文，认为在正确使用的情况下，AI 能显著提升生产力，尽管在单项任务的深度学习方面可能存在权衡。 📝 详细摘要              作者分析了 Anthropic Fellows 最近发表的一篇题为《AI 如何影响技能形成》的论文，该论文声称 AI 使用者在技能保留方面表现较差，且工作速度并未加快。作
+
+
+- **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
+  > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
 
 
 - **[2026-01-31-Google-的-AI-优势：为什么爬虫分离是通往公平互联网的唯一路径](https://www.bestblogs.dev/article/6014d5f9)**
@@ -43,12 +51,12 @@
   > 📌 一句话摘要              文章深度解析了 Richard Socher 创办 Recursive 探索 AI 自我进化机制，并提出从“提示工程”转向“奖励工程”的 AI 演进核心观。 📝 详细摘要              本文围绕 AI 领域连续创业者 Richard Socher 的职业路径，重点介绍了其新公司 Recursive 的前沿愿景：构建能够递归自我改进、不依赖人
 
 
-- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
-  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
-
-
 - **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
   > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
+
+
+- **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
+  > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
 
 
 - **[2026-01-30-OpenAI-关键九问：2026-AI-战局升级后迎来叙事反转](https://www.bestblogs.dev/article/0217aec7)**
@@ -177,7 +185,6 @@
 
 
 - **[2026-01-29-Context-Is-All-You-Need：快手后端-AI-Coding-的实践与思考](https://www.bestblogs.dev/article/319a8fd8)**
-  > 📌 一句话摘要              本文深入探讨了快手如何通过构建“码图”框架和 Multi-Agent 架构，解决 Java 后端 AI Coding 中上下文缺失与可控性差的难题，实现从“猜需求”到“按计划执行”的研发范式转型。 📝 详细摘要              文章针对 Java 后端 AI Coding 面临的核心挑战——PRD 与工程事实之间的信息断层，提出了快手的解决方
 
 
 - **[2026-01-29-谷歌-AI-掌门人、诺奖得主-Demis：AGI-需要打破“金鱼记忆”，而谷歌无论泡沫破裂与否都将是赢家](https://www.bestblogs.dev/article/c3ebb5aa)**
@@ -196,9 +203,6 @@
 
 
 - **[2026-01-29-实测-Prism：OpenAI-的论文写作工具，完全免费](https://www.bestblogs.dev/article/4d32f216)**
-
-
-- **[2026-01-29-让-Agent-画思维导图稳固长期记忆：新框架实现稳定长期学习，准确率提升-38%](https://www.bestblogs.dev/article/28f4b94f)**
 
 
 - **[2026-01-28-AI-时代空降入口，或许是个伪命题](https://www.bestblogs.dev/article/71c46459)**
