@@ -1,0 +1,601 @@
+                           
+
+⏺ 我看到问题了。日志显示：
+
+  API Key configured: YES
+  API Key length: 0
+
+  这说明 Secret 名字存在但值为空。GitHub Actions 的 ${{ 
+  secrets.BESTBLOGS_API_KEY }} 返回空字符串。
+
+  让我先修复这个问题，然后系统性审视后端架构。
+
+⏺ Read 1 file (ctrl+o to expand)
+
+⏺ 问题定位
+
+  日志关键行：
+  API Key configured: YES    # [ -n "$VAR" ] 返回 true（变量存在）
+  API Key length: 0          # 但长度为 0（值为空）
+
+  这是 GitHub Secrets 配置问题：Secret BESTBLOGS_API_KEY 存在但值为空字符串。
+
+  ---
+  现在回答你的三个问题：
+
+  1. 后端抓取方案审视
+
+⏺ Explore(Analyze crawler architecture)
+  ⎿  Done (13 tool uses · 0 tokens · 3m 13s)
+
+⏺ 2. Boris/Google 视角的设计优化
+
+  基于探索结果，让我从工程最佳实践角度给出建议：
+
+  当前架构问题总结
+
+  ┌─────────────────────────────────────────────────────────────────┐
+  │  once.js → update.js → api-fetcher.js → BestBlogs API          │
+  │                    ↘                                            │
+  │                      writemd.js / feed.js                      │
+  │                                                                 │
+  │  ⚠️ 死代码: archiver.js, fetch.js, cos.js (未使用但存在)        │
+  │  ⚠️ 重复代码: callAPI 实现两份, dotenv 加载三处                 │
+  │  ⚠️ 配置分散: 环境变量 + rss.json + 硬编码混合                  │
+  └─────────────────────────────────────────────────────────────────┘
+
+  Boris/Google 会怎么设计
+
+  理想架构 (Clean Architecture 原则):
+
+  ┌────────────────────────────────────────────────────────────────────────┐
+  │                          Entry Layer                                   │
+  │  ┌──────────┐  ┌──────────┐  ┌──────────┐                             │
+  │  │  CLI     │  │  Cron    │  │  HTTP    │  ← 多入口统一接口            │
+  │  └────┬─────┘  └────┬─────┘  └────┬─────┘                             │
+  │       └─────────────┴──────────────┘                                  │
+  │                      │                                                 │
+  ├──────────────────────┼─────────────────────────────────────────────────┤
+  │                      ▼                                                 │
+  │              ┌───────────────┐                                         │
+  │              │   Orchestrator │  ← 编排层 (无业务逻辑，只协调)         │
+  │              └───────┬───────┘                                         │
+  │                      │                                                 │
+  ├──────────────────────┼─────────────────────────────────────────────────┤
+  │          ┌───────────┼───────────┐                                     │
+  │          ▼           ▼           ▼                                     │
+  │    ┌──────────┐ ┌──────────┐ ┌──────────┐                             │
+  │    │ Fetcher  │ │ Archiver │ │ Publisher│  ← 服务层 (单一职责)        │
+  │    └────┬─────┘ └────┬─────┘ └────┬─────┘                             │
+  │         │            │            │                                    │
+  ├─────────┼────────────┼────────────┼────────────────────────────────────┤
+  │         ▼            ▼            ▼                                    │
+  │    ┌──────────────────────────────────────┐                           │
+  │    │         Infrastructure Layer          │  ← 基础设施层             │
+  │    │  • API Client (封装 HTTP)             │                           │
+  │    │  • Storage (JSON 文件操作)            │                           │
+  │    │  • Config (统一配置管理)              │                           │
+  │    │  • Logger (统一日志)                  │                           │
+  │    └──────────────────────────────────────┘                           │
+  └────────────────────────────────────────────────────────────────────────┘
+
+  立即可做的重构
+
+⏺ Bash(cd /Users/blue/Coding/projects/active/alchemy-rss/server && ls -la *.js)
+  ⎿  -rw-r--r--@ 1 blue  staff  5207 Jan 31 19:52 api-fetcher.js
+     -rw-r--r--@ 1 blue  staff   385 Jan 31 16:39 app.js
+     -rw-r--r--@ 1 blue  staff  4966 Jan 31 19:47 archiver.js
+     … +8 lines (ctrl+o to expand)
+
+⏺ 3. 回到当前问题：Secret 配置
+
+  先解决眼前问题。日志显示：
+
+  API Key configured: YES   # 变量名存在
+  API Key length: 0         # 但值为空！
+
+  根因: GitHub 仓库的 Secrets 中 BESTBLOGS_API_KEY 要么：
+  1. 没有设置值
+  2. 值是空字符串
+  3. 名字打错了（大小写、下划线）
+
+  请检查 GitHub Secrets 配置
+
+  1. 打开 https://github.com/life-is-blue/alchemy-rss/settings/secrets/actions
+  2. 确认 BESTBLOGS_API_KEY 存在且有值
+  3. 重新输入 API Key（删除旧的再添加）
+
+  ---
+  建议的重构方案
+
+  基于分析，我建议分两步走：
+
+  Phase 1: 快速修复 (今天)
+
+  1. 修复 GitHub Secret 配置
+  2. 删除死代码 (archiver.js, fetch.js, cos.js)
+  3. 统一 dotenv 加载（只在 utils.js 加载一次）
+
+  Phase 2: 架构优化 (后续)
+
+  1. 抽取 config.js 统一配置管理
+  2. 抽取 api-client.js 作为纯 HTTP 封装
+  3. 让 api-fetcher.js 成为业务层，只负责数据转换
+
+  是否现在执行 Phase 1 的清理？
+
+✻ Cooked for 4m 49s
+
+❯  同意执行. 补充 GitHub 的提示:Environment secrets                         
+  Secrets are encrypted environment variables. They are accessible only by  
+  GitHub Actions in the context of this environment by using the secret     
+  context. 详见:https://docs.github.com/en/actions/reference/workflows-and- 
+  actions/contexts                                                          
+
+⏺ 明白了。GitHub Secrets 配置正确，问题在于 Environment secrets vs Repository 
+  secrets。
+
+  让我先检查 workflow 配置，然后执行 Phase 1 清理。
+
+⏺ Read 1 file (ctrl+o to expand)
+
+⏺ 问题找到了！你的 Secret 是 Environment Secret，但 workflow 没有指定
+  environment。
+
+  问题根因
+
+  # 当前配置 - 使用 Repository Secrets
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      # ❌ 缺少 environment 声明
+
+  如果 BESTBLOGS_API_KEY 是 Environment Secret（比如在 production
+  环境下），需要声明：
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      environment: production  # ✅ 需要添加这行
+
+  ---
+  执行 Phase 1
+
+⏺ User answered Claude's questions:
+  ⎿  · 你的 BESTBLOGS_API_KEY 是在哪个 Environment 下配置的？ → production
+
+⏺ 明白了，Secret 在 production 环境下。需要在 workflow 中声明 environment。
+
+⏺ Update(.github/workflows/server.yml)
+  ⎿  Added 1 line
+      16  jobs:                                                          
+      17    build:                                                       
+      18      runs-on: ubuntu-latest                                     
+      19 +    environment: production                                    
+      20                                                                 
+      21      permissions:                                               
+      22        contents: write                                          
+
+⏺ Bash(rm -f archiver.js fetch.js cos.js && ls *.js)
+  ⎿  api-fetcher.js
+     app.js
+     feed.js
+     … +5 lines (ctrl+o to expand)
+
+⏺ Update(server/update.js)
+  ⎿  Added 1 line, removed 6 lines
+      36   * 主入口                                                         
+
+      37   */                                                            
+      38  async function handleUpdate() {                                
+      39 -  // 确保在执行前加载 .env（本地开发时）                          
+                 
+
+      40 -  if (!process.env.WORKFLOW) {                                 
+      41 -    require('dotenv').config({ multiline: true, override:      
+         -false })                                                       
+      42 -  }                                                            
+      43 -                                                               
+      44 -  // 检查 API Key                                                
+      39 +  // 检查 API Key (环境变量由 utils.js 统一加载)                  
+             
+
+      40    const apiKey = apiFetcher.getApiKey()                        
+      41    if (!apiKey) {                                               
+      42      utils.logWarn('警告: BESTBLOGS_API_KEY 未配置，将跳过 API     
+           
+
+          抓取')                                                           
+
+⏺ 现在提交所有变更：
+
+⏺ Bash(cd /Users/blue/Coding/projects/active/alchemy-rss && git status
+      --porcelain)
+  ⎿   M .github/workflows/server.yml
+      D server/archiver.js
+      D server/cos.js
+     … +2 lines (ctrl+o to expand)
+
+⏺ Bash(git add -A && git commit -m "fix: 修复 GitHub Actions 无法访问
+      Environment Secrets 问题…)
+  ⎿  [master 22dd14b] fix: 修复 GitHub Actions 无法访问 Environment Secrets
+     问题
+      5 files changed, 2 insertions(+), 370 deletions(-)
+     … +3 lines (ctrl+o to expand)
+
+⏺ Bash(git log --oneline -3)
+  ⎿  22dd14b fix: 修复 GitHub Actions 无法访问 Environment Secrets 问题
+     80c09a5 docs: 更新方案文档至 v0.3.0 MVP 版本
+     6c18793 feat: 重构为 API-First 架构，修复 GitHub Actions 环境变量问题
+
+⏺ Phase 1 完成 ✓
+
+  变更摘要
+  ┌──────────────────────────────┬──────┬──────────────────────────────────────┐
+  │             文件             │ 操作 │                 说明                 │
+  ├──────────────────────────────┼──────┼──────────────────────────────────────┤
+  │ .github/workflows/server.yml │ 修改 │ 添加 environment: production         │
+  ├──────────────────────────────┼──────┼──────────────────────────────────────┤
+  │ server/archiver.js           │ 删除 │ 未使用，功能已被 api-fetcher.js 替代 │
+  ├──────────────────────────────┼──────┼──────────────────────────────────────┤
+  │ server/fetch.js              │ 删除 │ 废弃的 RSS 解析器                    │
+  ├──────────────────────────────┼──────┼──────────────────────────────────────┤
+  │ server/cos.js                │ 删除 │ 未使用的 COS 模块                    │
+  ├──────────────────────────────┼──────┼──────────────────────────────────────┤
+  │ server/update.js             │ 修改 │ 移除重复的 dotenv 加载               │
+  └──────────────────────────────┴──────┴──────────────────────────────────────┘
+  当前 server/ 结构 (精简后)
+
+  server/
+  ├── once.js          # 入口: 单次运行
+  ├── app.js           # 入口: 定时任务
+  ├── update.js        # 核心: 编排层
+  ├── api-fetcher.js   # 核心: API 通信层
+  ├── utils.js         # 工具: 路径/日志/日期
+  ├── writemd.js       # 输出: Markdown 生成
+  ├── feed.js          # 输出: Atom Feed 生成
+  └── test-api.js      # 测试: API 验证脚本
+
+  下一步
+
+  请 push 并触发 GitHub Actions，验证 Secret 是否能正确读取：
+
+  git push
+
+  预期日志应该显示：
+  API Key configured: YES
+  API Key length: 32  # 或其他非零值
+  API Key prefix: xxxxxxxxxx...
+
+✻ Crunched for 4m 30s
+
+❯ 讨论: 1.原有的 rss 抓取逻辑还在吗, 能否添加<outline text="宝玉的分享"     
+  title="宝玉的分享" type="rss" xmlUrl="https://baoyu.io/feed.xml"/>        
+  作为验证; 2.架构文档应该更新了 @docs/architecture.md                      
+  ⎿  Read docs/architecture.md (69 lines)
+
+⏺ 好的，我来分析这两个问题。
+
+  1. RSS 抓取逻辑分析
+
+  根据 Phase 1 清理，我们删除了 fetch.js（原 RSS
+  解析器）。让我确认当前的抓取能力：
+
+⏺ Read 3 files (ctrl+o to expand)
+
+⏺ 分析结论
+
+  1. RSS 抓取能力现状
+
+  当前状态: ❌ 原有 RSS 抓取逻辑已被完全移除
+
+  - fetch.js 已删除（Phase 1 清理）
+  - 当前 update.js 只调用 api-fetcher.js
+  - api-fetcher.js 只支持 BestBlogs API，不支持标准 RSS
+
+  无法直接添加 https://baoyu.io/feed.xml，因为：
+  1. 这是标准 RSS Feed，不是 BestBlogs API
+  2. 没有 rss-parser 解析器了
+
+  2. 架构文档需要更新
+
+  docs/architecture.md 描述的架构与当前实现不符：
+  - 文档提到 "Archiver" 模块 → 已删除
+  - 文档提到 "静态优先 + API 回退" → 现在是 "纯 API"
+  - 缺少对纯 BestBlogs API 模式的说明
+
+  ---
+  现在我来创建计划文件：
+
+⏺ Updated plan
+  ⎿  /plan to preview
+
+⏺ 计划文件已创建。让我确认一下你的需求：
+
+⏺ User answered Claude's questions:
+  ⎿  · 是否需要恢复标准 RSS 抓取能力，以支持 baoyu.io 等外部源？ → 混合架构 
+     (推荐)
+
+
+⏺ 好的，确认采用混合架构。计划已完成，现在请求审批：
+
+⏺ User approved Claude's plan
+  ⎿  Plan saved to: ~/.claude-internal/plans/snuggly-petting-jellyfish.md · 
+     /plan to edit
+
+     计划：恢复 RSS 抓取能力 + 更新架构文档
+
+     背景
+
+     当前系统只支持 BestBlogs API，Phase 1 清理删除了 fetch.js（RSS
+     解析器）。
+     用户需要添加外部 RSS 源（如 baoyu.io/feed.xml），需要恢复 RSS 能力。
+
+     方案：混合数据源架构
+
+     rss.json 配置支持两种源类型:
+
+     1. BestBlogs API 源 (现有)
+        { "title": "...", "category": "...", "sortType": "..." }
+
+     2. 标准 RSS 源 (新增)
+        { "title": "...", "type": "rss", "xmlUrl": "https://..." }
+
+     实现步骤
+
+     Step 1: 新增 RSS Fetcher 模块
+
+     文件: server/rss-fetcher.js
+
+     // 精简的 RSS 解析器，使用 rss-parser 库
+     const Parser = require('rss-parser')
+
+     async function fetchRSS(xmlUrl) {
+       const parser = new Parser()
+       const feed = await parser.parseURL(xmlUrl)
+       return feed.items.map(item => ({
+         title: item.title,
+         link: item.link,
+         date: item.isoDate || item.pubDate,
+         summary: item.contentSnippet || item.content?.substring(0, 200)
+       }))
+     }
+
+     module.exports = { fetchRSS }
+
+     Step 2: 修改 update.js 支持混合源
+
+     文件: server/update.js
+
+     在 processSource() 中添加分支：
+     async function processSource(sourceConfig, existingItems) {
+       let apiItems = []
+
+       if (sourceConfig.type === 'rss' && sourceConfig.xmlUrl) {
+         // RSS 源
+         apiItems = await rssFetcher.fetchRSS(sourceConfig.xmlUrl)
+       } else if (sourceConfig.category) {
+         // BestBlogs API 源
+         apiItems = await apiFetcher.fetchSource(sourceConfig)
+       }
+
+       // ... 后续处理逻辑不变
+     }
+
+     Step 3: 更新 rss.json 配置
+
+     文件: data/rss.json
+
+     添加宝玉分享作为测试源：
+     {
+       "title": "宝玉的分享",
+       "type": "rss",
+       "xmlUrl": "https://baoyu.io/feed.xml",
+       "limit": 20
+     }
+
+     Step 4: 更新架构文档
+
+     文件: docs/architecture.md
+
+     更新内容：
+     1. 数据流向：说明混合源架构
+     2. 移除对已删除模块的引用 (Archiver)
+     3. 添加源类型说明表格
+     4. 更新里程碑列表
+
+     关键文件
+     ┌───────────────────────┬───────────────────────┐
+     │         文件          │         操作          │
+     ├───────────────────────┼───────────────────────┤
+     │ server/rss-fetcher.js │ 新建                  │
+     ├───────────────────────┼───────────────────────┤
+     │ server/update.js      │ 修改 (添加源类型判断) │
+     ├───────────────────────┼───────────────────────┤
+     │ data/rss.json         │ 修改 (添加宝玉分享)   │
+     ├───────────────────────┼───────────────────────┤
+     │ docs/architecture.md  │ 重写                  │
+     └───────────────────────┴───────────────────────┘
+     验证方法
+
+     1. 本地测试：
+     cd server
+     node once.js
+     2. 检查输出：
+       - 确认 "宝玉的分享" 源有数据返回
+       - 确认 BestBlogs 源正常工作
+       - 检查 links.json 包含新源
+     3. GitHub Actions：
+       - Push 后验证 workflow 成功
+       - 检查 gh-pages 分支更新
+
+     注意事项
+
+     - RSS 源没有 id，去重使用 URL
+     - RSS 源没有 AI 摘要和评分，这些字段为空
+     - 保持向后兼容：现有 BestBlogs 源配置不变
+
+⏺ 开始执行计划。
+
+⏺ Write(server/rss-fetcher.js)
+  ⎿  Wrote 58 lines to server/rss-fetcher.js
+     /**
+      * RSS Fetcher - 标准 RSS/Atom 源解析器
+      *
+      * 用于抓取非 BestBlogs 的外部 RSS 源
+      * 如: baoyu.io, ruanyifeng.com 等独立博客
+      */
+
+     const Parser = require('rss-parser')
+     const utils = require('./utils')
+
+     … +48 lines (ctrl+o to expand)
+
+⏺ Update(server/update.js)
+  ⎿  Added 1 line
+      16  const writemd = require('./writemd')                           
+      17  const createFeed = require('./feed')                           
+      18  const apiFetcher = require('./api-fetcher')                    
+      19 +const rssFetcher = require('./rss-fetcher')                    
+      20                                                                 
+      21  const {                                                        
+      22    RESP_PATH,                                                   
+
+⏺ Update(server/update.js)
+  ⎿  Added 13 lines, removed 2 lines
+      103  async function processSource(sourceConfig, existingItems) {   
+      104    utils.log(`开始处理: ${sourceConfig.title}`)                   
+      
+
+      105                                                                
+      106 -  // 1. 从 API 获取文章列表                                      
+         
+
+      107 -  const apiItems = await apiFetcher.fetchSource(sourceConfig) 
+      106 +  // 1. 根据源类型获取文章列表                                   
+             
+
+      107 +  let apiItems = []                                           
+      108                                                                
+      109 +  if (sourceConfig.type === 'rss' && sourceConfig.xmlUrl) {   
+      110 +    // 标准 RSS 源                                               
+
+      111 +    apiItems = await rssFetcher.fetchRSS(sourceConfig.xmlUrl, 
+          + sourceConfig.limit || 20)                                    
+      112 +  } else if (sourceConfig.category) {                         
+      113 +    // BestBlogs API 源                                        
+      114 +    apiItems = await apiFetcher.fetchSource(sourceConfig)     
+      115 +  } else {                                                    
+      116 +    utils.logWarn(`源 ${sourceConfig.title} 配置无效，跳过`)     
+          
+
+      117 +    return { items: existingItems, newCount: 0 }              
+      118 +  }                                                           
+      119 +                                                              
+      120    if (apiItems.length === 0) {                                
+      121      utils.logWarn(`源 ${sourceConfig.title} 无数据`)             
+      
+
+      122      return { items: existingItems, newCount: 0 }              
+
+⏺ Update(server/update.js)
+  ⎿  Added 9 lines, removed 6 lines
+      134                                                                
+      135    // 3. 识别需要处理的文章                                       
+           
+
+      136    const toProcess = []                                        
+      137 +  const isRssSource = sourceConfig.type === 'rss'             
+      138 +                                                              
+      139    for (const apiItem of apiItems) {                           
+      140 -    const existById = existingById.get(apiItem.id)            
+      141 -    const existByUrl = existingByUrl.get(apiItem.url)         
+      140 +    // RSS 源使用 URL 去重，API 源使用 ID 去重                   
+             
+
+      141 +    const existById = apiItem.id ?                            
+          +existingById.get(apiItem.id) : null                           
+      142 +    const existByUrl = apiItem.link ?                         
+          +existingByUrl.get(apiItem.link) : null                        
+      143      const exist = existById || existByUrl                     
+      144                                                                
+      145      if (!exist) {                                             
+      146        // 新文章                                                  
+
+      147 -      toProcess.push({ apiItem, isNew: true })                
+      148 -    } else if (!exist.archive_path) {                         
+      149 -      // 已存在但未归档                                          
+         
+
+      150 -      toProcess.push({ apiItem, isNew: false, oldData: exist  
+          -})                                                            
+      147 +      toProcess.push({ apiItem, isNew: true,                  
+          +isRss: isRssSource })                                         
+      148 +    } else if (!exist.archive_path && !isRssSource) {         
+      149 +      // 已存在但未归档 (仅 API 源支持归档)                      
+               
+
+      150 +      toProcess.push({ apiItem, isNew: false, oldData: exist, 
+          +isRss: false })                                               
+      151      }                                                         
+      152    }                                                           
+      153                                                                
+
+⏺ Update(server/update.js)
+  ⎿  Added 15 lines, removed 2 lines
+      160                                                                
+      161    // 4. 并发获取完整内容并归档                                   
+             
+
+      162    let newCount = 0                                            
+      163 -  const processedItems = await mapLimit(toProcess, 3, async ({
+          - apiItem, isNew, oldData }) => {                              
+      163 +  const processedItems = await mapLimit(toProcess, 3, async ({
+          + apiItem, isNew, oldData, isRss }) => {                       
+      164      try {                                                     
+      165 -      // 获取完整内容                                            
+        
+
+      165 +      // RSS 源不支持归档，直接返回索引数据                      
+                 
+
+      166 +      if (isRss) {                                            
+      167 +        if (isNew) newCount++                                 
+      168 +        return {                                              
+      169 +          title: apiItem.title,                               
+      170 +          link: apiItem.link,                                 
+      171 +          date: apiItem.date ||                               
+          +utils.getNowDate('YYYY-MM-DD'),                               
+      172 +          summary: apiItem.summary,                           
+      173 +          sourceName: apiItem.sourceName,                     
+      174 +          _source: 'rss'                                      
+      175 +        }                                                     
+      176 +      }                                                       
+      177 +                                                              
+      178 +      // BestBlogs API 源：获取完整内容并归档                    
+             
+
+      179        const fullData = await                                  
+           apiFetcher.fetchFullResource(apiItem.id)                      
+      180                                                                
+      181        if (fullData) {                                         
+
+⏺ Update(data/rss.json)
+  ⎿  Added 6 lines
+      30      "timeFilter": "1w",                                        
+      31      "qualifiedFilter": "true",                                 
+      32      "limit": 30                                                
+      33 +  },                                                           
+      34 +  {                                                            
+      35 +    "title": "宝玉的分享",                                        
+       
+
+      36 +    "type": "rss",                                             
+      37 +    "xmlUrl": "https://baoyu.io/feed.xml",                     
+      38 +    "limit": 20                                                
+      39    }                                                            
+      40  ]                                                              
+  ⎿ API Error: 400 {"error":{"type":"ApiError","message":"本周额度已用尽，可切换
+    至其他高性能的内部部署模型继续使用~"}}
+
+✻ Cogitated for 2m 59s

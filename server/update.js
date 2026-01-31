@@ -16,6 +16,7 @@ const utils = require('./utils')
 const writemd = require('./writemd')
 const createFeed = require('./feed')
 const apiFetcher = require('./api-fetcher')
+const rssFetcher = require('./rss-fetcher')
 
 const {
   RESP_PATH,
@@ -102,8 +103,19 @@ async function saveArticle(article, date) {
 async function processSource(sourceConfig, existingItems) {
   utils.log(`开始处理: ${sourceConfig.title}`)
 
-  // 1. 从 API 获取文章列表
-  const apiItems = await apiFetcher.fetchSource(sourceConfig)
+  // 1. 根据源类型获取文章列表
+  let apiItems = []
+
+  if (sourceConfig.type === 'rss' && sourceConfig.xmlUrl) {
+    // 标准 RSS 源
+    apiItems = await rssFetcher.fetchRSS(sourceConfig.xmlUrl, sourceConfig.limit || 20)
+  } else if (sourceConfig.category) {
+    // BestBlogs API 源
+    apiItems = await apiFetcher.fetchSource(sourceConfig)
+  } else {
+    utils.logWarn(`源 ${sourceConfig.title} 配置无效，跳过`)
+    return { items: existingItems, newCount: 0 }
+  }
 
   if (apiItems.length === 0) {
     utils.logWarn(`源 ${sourceConfig.title} 无数据`)
@@ -122,17 +134,20 @@ async function processSource(sourceConfig, existingItems) {
 
   // 3. 识别需要处理的文章
   const toProcess = []
+  const isRssSource = sourceConfig.type === 'rss'
+
   for (const apiItem of apiItems) {
-    const existById = existingById.get(apiItem.id)
-    const existByUrl = existingByUrl.get(apiItem.url)
+    // RSS 源使用 URL 去重，API 源使用 ID 去重
+    const existById = apiItem.id ? existingById.get(apiItem.id) : null
+    const existByUrl = apiItem.link ? existingByUrl.get(apiItem.link) : null
     const exist = existById || existByUrl
 
     if (!exist) {
       // 新文章
-      toProcess.push({ apiItem, isNew: true })
-    } else if (!exist.archive_path) {
-      // 已存在但未归档
-      toProcess.push({ apiItem, isNew: false, oldData: exist })
+      toProcess.push({ apiItem, isNew: true, isRss: isRssSource })
+    } else if (!exist.archive_path && !isRssSource) {
+      // 已存在但未归档 (仅 API 源支持归档)
+      toProcess.push({ apiItem, isNew: false, oldData: exist, isRss: false })
     }
   }
 
@@ -145,9 +160,22 @@ async function processSource(sourceConfig, existingItems) {
 
   // 4. 并发获取完整内容并归档
   let newCount = 0
-  const processedItems = await mapLimit(toProcess, 3, async ({ apiItem, isNew, oldData }) => {
+  const processedItems = await mapLimit(toProcess, 3, async ({ apiItem, isNew, oldData, isRss }) => {
     try {
-      // 获取完整内容
+      // RSS 源不支持归档，直接返回索引数据
+      if (isRss) {
+        if (isNew) newCount++
+        return {
+          title: apiItem.title,
+          link: apiItem.link,
+          date: apiItem.date || utils.getNowDate('YYYY-MM-DD'),
+          summary: apiItem.summary,
+          sourceName: apiItem.sourceName,
+          _source: 'rss'
+        }
+      }
+
+      // BestBlogs API 源：获取完整内容并归档
       const fullData = await apiFetcher.fetchFullResource(apiItem.id)
 
       if (fullData) {
