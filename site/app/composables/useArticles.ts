@@ -32,11 +32,37 @@ export const useArticles = () => {
   const sourcesMap = ref(new Map()) // 源配置映射
   const loading = ref(true)
   const currentTab = ref('全部')
+  const currentCategory = ref('全部') // 分类标签筛选
   const searchValue = ref('')
 
   // 分页状态
   const pageSize = 40
   const currentPage = ref(1)
+
+  // 基于 categoryTag 的分类统计
+  const categoryTags = computed(() => {
+    const counts: Record<string, number> = { '全部': articles.value.length }
+
+    articles.value.forEach(article => {
+      const cat = article.categoryTag
+      if (cat) {
+        const catName = Array.isArray(cat) ? cat[0] : cat
+        if (catName) {
+          counts[catName] = (counts[catName] || 0) + 1
+        }
+      }
+    })
+
+    return Object.entries(counts)
+      .map(([name, count]) => ({ name, count }))
+      .filter(item => item.count > 0)
+      .sort((a, b) => {
+        if (a.name === '全部') return -1
+        if (b.name === '全部') return 1
+        return b.count - a.count
+      })
+      .slice(0, 10) // 限制显示数量
+  })
 
   const categories = computed(() => {
     // 初始化计数
@@ -150,7 +176,17 @@ export const useArticles = () => {
       }
     }
 
-    // 2. 搜索过滤
+    // 2. 分类标签过滤 (根据 categoryTag)
+    if (currentCategory.value !== '全部') {
+      list = list.filter(a => {
+        const cat = a.categoryTag
+        if (!cat) return false
+        const catName = Array.isArray(cat) ? cat[0] : cat
+        return catName === currentCategory.value
+      })
+    }
+
+    // 3. 搜索过滤
     if (searchValue.value) {
       const search = searchValue.value.toLowerCase()
       list = list.filter(a =>
@@ -186,18 +222,30 @@ export const useArticles = () => {
     }
   }
 
+  const selectCategory = (category: string) => {
+    currentCategory.value = category
+    currentPage.value = 1 // 切换分类重置页码
+    if (process.client) {
+      const container = document.querySelector('.overflow-y-scroll')
+      if (container) container.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
+
   return {
     articles,
     categories,
+    categoryTags,
     rssData,
     loading,
     currentTab,
+    currentCategory,
     searchValue,
     displayedArticles,
     filteredArticles,
     hasMore,
     loadData,
     loadMore,
-    selectTab
+    selectTab,
+    selectCategory
   }
 }

@@ -223,9 +223,12 @@ const {
   filteredArticles,
   displayedArticles,
   hasMore,
+  categoryTags,
+  currentCategory,
   loadData,
   loadMore,
-  selectTab
+  selectTab,
+  selectCategory
 } = useArticles()
 
 const {
@@ -236,7 +239,6 @@ const selectedUrl = ref('')
 const currentView = ref('reader') // reader, sources
 const mainContent = ref(null)
 const currentContentType = ref('全部')
-const currentCategory = ref('全部')
 
 // Content type tabs for top navigation
 const contentTypeTabs = computed(() => [
@@ -247,35 +249,13 @@ const contentTypeTabs = computed(() => [
   { label: '动态', value: 'TWITTER' }
 ])
 
-// Category filters (based on categoryTag)
-const categoryFilters = computed(() => {
-  const counts = { '全部': filteredArticles.value.length }
-
-  filteredArticles.value.forEach(article => {
-    const cat = article.categoryTag
-    if (cat) {
-      const catName = Array.isArray(cat) ? cat[0] : cat
-      if (catName) {
-        counts[catName] = (counts[catName] || 0) + 1
-      }
-    }
-  })
-
-  return Object.entries(counts)
-    .map(([name, count]) => ({ name, count }))
-    .filter(item => item.count > 0)
-    .sort((a, b) => {
-      if (a.name === '全部') return -1
-      if (b.name === '全部') return 1
-      return b.count - a.count
-    })
-    .slice(0, 8) // Limit to 8 categories
-})
+// Category filters - use categoryTags from useArticles (based on all articles, not filtered)
+// This ensures category counts remain stable when a category is selected
+const categoryFilters = computed(() => categoryTags.value)
 
 // Select content type (top tabs)
 const selectContentType = (type) => {
   currentContentType.value = type
-  currentCategory.value = '全部'
   currentView.value = 'reader'
   selectedUrl.value = ''
 
@@ -288,14 +268,6 @@ const selectContentType = (type) => {
       selectTab(label)
     }
   }
-  scrollToTop()
-}
-
-// Select category (secondary filter)
-const selectCategory = (category) => {
-  currentCategory.value = category
-  // For now, category filtering would need additional logic in useArticles
-  // This is a UI placeholder - the actual filtering uses the existing selectTab
   scrollToTop()
 }
 
