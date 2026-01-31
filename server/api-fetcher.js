@@ -20,7 +20,50 @@ function getApiKey() {
 }
 
 /**
- * 调用 BestBlogs API
+ * 延迟函数
+ */
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+/**
+ * 判断错误是否可重试
+ */
+function isRetryable(error) {
+  const msg = error.message || ''
+  return msg.includes('频繁') ||
+         msg.includes('rate') ||
+         msg.includes('Too Many') ||
+         msg.includes('429') ||
+         /\b5\d{2}\b/.test(msg)  // 5xx errors (500, 502, 503, etc.)
+}
+
+/**
+ * 带指数退避的重试包装器
+ * @param {Function} fn - 异步函数
+ * @param {number} maxRetries - 最大重试次数
+ */
+async function callWithRetry(fn, maxRetries = 3) {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      return await fn()
+    } catch (e) {
+      if (attempt === maxRetries || !isRetryable(e)) {
+        throw e
+      }
+
+      // 指数退避: 1s, 2s, 4s + 随机抖动 (0-1s)
+      const baseDelay = Math.pow(2, attempt) * 1000
+      const jitter = Math.random() * 1000
+      const totalDelay = baseDelay + jitter
+      utils.logWarn(`API 限速，${(totalDelay / 1000).toFixed(1)}s 后重试 (${attempt + 1}/${maxRetries})`)
+      await delay(totalDelay)
+    }
+  }
+}
+
+/**
+ * 调用 BestBlogs API（带自动重试）
  */
 async function callAPI(endpoint, method = 'POST', body = null) {
   const apiKey = getApiKey()
@@ -44,14 +87,16 @@ async function callAPI(endpoint, method = 'POST', body = null) {
     ? `${API_BASE}${endpoint}?${new URLSearchParams(body)}`
     : `${API_BASE}${endpoint}`
 
-  const resp = await fetch(url, options)
-  const json = await resp.json()
+  return callWithRetry(async () => {
+    const resp = await fetch(url, options)
+    const json = await resp.json()
 
-  if (!json.success) {
-    throw new Error(`API Error: ${json.message || 'Unknown error'}`)
-  }
+    if (!json.success) {
+      throw new Error(`API Error: ${json.message || 'Unknown error'}`)
+    }
 
-  return json.data
+    return json.data
+  })
 }
 
 /**
@@ -104,8 +149,10 @@ async function fetchFullResource(id) {
   try {
     const [meta, content] = await Promise.all([
       fetchResourceMeta(id),
-      fetchResourceContent(id)
+      fetchResourceContent(id).catch(() => null)  // content 失败不阻塞
     ])
+
+    if (!meta) return null
 
     return {
       id: meta.id,
@@ -115,8 +162,8 @@ async function fetchFullResource(id) {
       author: (meta.authors || []).join(', '),
       siteName: meta.sourceName,
 
-      // 内容
-      content: content.displayDocument,
+      // 内容 (安全访问)
+      content: content?.displayDocument || null,
 
       // AI 元数据
       aiSummary: meta.oneSentenceSummary,

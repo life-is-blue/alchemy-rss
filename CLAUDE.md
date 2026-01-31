@@ -69,6 +69,24 @@ pnpm run build        # 构建前端 (cd site && npx nuxi generate)
 4. Regex 抓取 (Next.js 静态内容)
 5. Mozilla Readability (jsdom)
 
+### Crawler Architecture
+爬虫采用分组并行处理架构：
+
+```
+┌─ RSS 组 (完全并行) ────────────┐
+│  宝玉分享、其他 RSS 源...      │
+└───────────────────────────────┘
+         ↓ 同时执行
+┌─ API 组 (限速并发, limit=2) ──┐
+│  精选文章、软件编程、商业科技  │
+└───────────────────────────────┘
+```
+
+**API 限速策略**: 指数退避 + 抖动 (Exponential Backoff with Jitter)
+- 遇到限速错误自动重试 (最多 3 次)
+- 退避时间: 1s, 2s, 4s + 随机抖动 (0-1s)
+- 可重试错误: "请求过于频繁"、429、5xx
+
 ## Environment Variables
 
 - `BESTBLOGS_API_KEY` - BestBlogs API 密钥 (爬虫必需)

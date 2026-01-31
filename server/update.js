@@ -8,7 +8,6 @@
  */
 
 const fs = require('fs-extra')
-const Async = require('async')
 const moment = require('moment')
 const simpleGit = require('simple-git')
 
@@ -255,7 +254,7 @@ async function handleFeed() {
 
   sourcesConfig = fs.readJsonSync(RSS_PATH)
   const linksExist = fs.readJsonSync(LINKS_PATH)
-  linksJson = []
+  linksJson = new Array(sourcesConfig.length)
   newData = {
     length: 0,
     titles: [],
@@ -263,25 +262,51 @@ async function handleFeed() {
     links: {}
   }
 
-  // 逐个处理源（可以改为并发，但为了稳定先串行）
-  for (let i = 0; i < sourcesConfig.length; i++) {
-    const sourceConfig = sourcesConfig[i]
-    const existingItems = linksExist.find(el => el.title === sourceConfig.title)?.items || []
+  // 分组: RSS 源 vs API 源
+  const rssSources = []
+  const apiSources = []
 
+  sourcesConfig.forEach((config, index) => {
+    const existingItems = linksExist.find(el => el.title === config.title)?.items || []
+    const sourceInfo = { config, index, existingItems }
+
+    if (config.type === 'rss' && config.xmlUrl) {
+      rssSources.push(sourceInfo)
+    } else if (config.category) {
+      apiSources.push(sourceInfo)
+    } else {
+      // 无效配置，保留原数据
+      linksJson[index] = { title: config.title, items: existingItems }
+    }
+  })
+
+  utils.log(`源分组: ${rssSources.length} 个 RSS 源, ${apiSources.length} 个 API 源`)
+
+  // 处理单个源的辅助函数
+  async function processSingleSource({ config, index, existingItems }) {
     try {
-      const { items, newCount } = await processSource(sourceConfig, existingItems)
-      linksJson[i] = { title: sourceConfig.title, items }
+      const { items, newCount } = await processSource(config, existingItems)
+      linksJson[index] = { title: config.title, items }
 
       if (newCount > 0) {
         newData.length += newCount
-        newData.titles.push(sourceConfig.title)
-        newData.rss[sourceConfig.title] = true
+        newData.titles.push(config.title)
+        newData.rss[config.title] = true
       }
     } catch (err) {
-      console.error(`Error processing ${sourceConfig.title}:`, err)
-      linksJson[i] = { title: sourceConfig.title, items: existingItems }
+      console.error(`Error processing ${config.title}:`, err)
+      linksJson[index] = { title: config.title, items: existingItems }
     }
   }
+
+  // 并行处理: RSS 组完全并行, API 组带限速并发
+  await Promise.all([
+    // RSS 组: 完全并行 (各源独立，无共享限速)
+    Promise.all(rssSources.map(processSingleSource)),
+
+    // API 组: 限速并发 (共享 BestBlogs API)
+    mapLimit(apiSources, 2, processSingleSource)
+  ])
 
   // 保存结果
   const hasChanges = newData.length > 0 ||
