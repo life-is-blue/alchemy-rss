@@ -1,18 +1,34 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #3377FF;
-  --color-text-main: #202124; /* Google Grey 900 */
-  --color-text-sub: #5F6368;  /* Google Grey 700 - Much darker for readability */
-  
+  /* 主色调 - 温暖的蓝色 */
+  --color-primary: #1e88e5;
+  --color-primary-light: #e3f2fd;
+
+  /* 精选标记色 - 橙色系 */
+  --color-qualified: #ff9800;
+  --color-qualified-light: #fff3e0;
+
+  /* 文字层次 */
+  --color-text-main: #212121;
+  --color-text-sub: #757575;
+  --color-text-disabled: #bdbdbd;
+
+  /* 背景 */
   --color-surface: #FFFFFF;
-  --color-background: #EDF0F2;
+  --color-background: #fafafa;
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #f5f5f5;
   --color-outline: rgba(0, 0, 0, 0.05);
 
   --shadow-wechat: 0 12px 40px rgba(0, 0, 0, 0.04);
-  
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.08);
+
   --radius-xl: 24px;
   --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
 
   /* 黄金布局变量 */
   --content-max-width: 850px;
@@ -21,6 +37,22 @@
   /* 卡片主题变量 */
   --color-card-bg: #FBFBF9;
   --color-card-border: rgba(0, 0, 0, 0.03);
+
+  /* 阅读主题 - 白色 */
+  --theme-white-bg: #ffffff;
+  --theme-white-text: #262626;
+
+  /* 阅读主题 - 米黄护眼 */
+  --theme-sepia-bg: #f5e6c8;
+  --theme-sepia-text: #5c4b37;
+
+  /* 阅读主题 - 绿色护眼 */
+  --theme-green-bg: #cce8cf;
+  --theme-green-text: #3d5c3f;
+
+  /* 阅读主题 - 夜间 */
+  --theme-night-bg: #1a1a1a;
+  --theme-night-text: #999999;
 }
 
 :root {
@@ -78,4 +110,111 @@
 }
 .active-press:active {
   transform: scale(0.92);
+}
+
+/* 阅读器页面切换动画 */
+.reader-enter-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.reader-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.reader-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.reader-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Tab 切换下划线动画 */
+.tab-indicator {
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 卡片悬停效果 */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* 工具栏显隐动画 */
+.toolbar-fade-enter-active,
+.toolbar-fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.toolbar-fade-enter-from,
+.toolbar-fade-leave-to {
+  opacity: 0;
+}
+
+/* 阅读进度条 */
+.reading-progress {
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  transition: width 0.1s ease-out;
+}
+
+/* 精选文章左边框 */
+.qualified-border {
+  border-left: 3px solid var(--color-qualified);
+}
+
+/* 标签芯片样式 */
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.04);
+  color: var(--color-text-sub);
+  transition: background-color 0.15s ease;
+}
+.tag-chip:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* 阅读主题类 */
+.theme-white {
+  background-color: var(--theme-white-bg);
+  color: var(--theme-white-text);
+  --color-card-bg: #FBFBF9;
+  --color-card-border: rgba(0, 0, 0, 0.03);
+}
+.theme-sepia {
+  background-color: var(--theme-sepia-bg);
+  color: var(--theme-sepia-text);
+  --color-card-bg: rgba(0, 0, 0, 0.02);
+  --color-card-border: rgba(91, 70, 54, 0.1);
+}
+.theme-green {
+  background-color: var(--theme-green-bg);
+  color: var(--theme-green-text);
+  --color-card-bg: rgba(0, 0, 0, 0.02);
+  --color-card-border: rgba(61, 92, 63, 0.1);
+}
+.theme-night {
+  background-color: var(--theme-night-bg);
+  color: var(--theme-night-text);
+  --color-card-bg: rgba(255, 255, 255, 0.03);
+  --color-card-border: rgba(255, 255, 255, 0.05);
+}
+.theme-night h1,
+.theme-night h2,
+.theme-night h3 {
+  color: #E0E0E0;
+}
+
+/* 已读文章样式 */
+.article-read {
+  opacity: 0.6;
+}
+.article-read .article-title {
+  color: var(--color-text-sub);
 }
