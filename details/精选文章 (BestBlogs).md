@@ -1,4 +1,4 @@
-:alarm_clock: 更新时间: 2026-01-31 10:50:39。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 12:29:26。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
@@ -17,12 +17,12 @@
   > 📌 一句话摘要              Uber 重构了其网络可观测性系统，用模块化、云原生且开源的平台取代了传统的单体系统，旨在支持自动化和未来的 AI 驱动运营。 📝 详细摘要              Uber 已将其网络监控从僵化、手动的本地堆栈转型为可编程的云原生可观测性平台。新架构包含灵活的数据摄取流水线、中央告警系统以及一个通过 API 自动在全区范围内分配工作负载的 “Dyn
 
 
-- **[2026-01-31-AI-如何影响技能形成？](https://www.bestblogs.dev/article/0ff43910)**
-  > 📌 一句话摘要              本文评述了一篇关于 AI 对技能形成影响的研究论文，认为在正确使用的情况下，AI 能显著提升生产力，尽管在单项任务的深度学习方面可能存在权衡。 📝 详细摘要              作者分析了 Anthropic Fellows 最近发表的一篇题为《AI 如何影响技能形成》的论文，该论文声称 AI 使用者在技能保留方面表现较差，且工作速度并未加快。作
-
-
 - **[2026-01-31-Google-Cloud-本月-AI-发布汇总及其对您的帮助](https://www.bestblogs.dev/article/0aee6cd0)**
   > 📌 一句话摘要              Google Cloud AI 里程碑的全面月度回顾，详细介绍了 Gemini 3 的发布、全新的智能体商业协议以及下一代 TPU 基础设施。 📝 详细摘要              本文按时间顺序概述了 2025 年底至 2026 年初 Google Cloud 的重大 AI 发布。重点介绍了通过引入通用商业协议 (UCP) 和智能体支付协议 (AP
+
+
+- **[2026-01-31-AI-如何影响技能形成？](https://www.bestblogs.dev/article/0ff43910)**
+  > 📌 一句话摘要              本文评述了一篇关于 AI 对技能形成影响的研究论文，认为在正确使用的情况下，AI 能显著提升生产力，尽管在单项任务的深度学习方面可能存在权衡。 📝 详细摘要              作者分析了 Anthropic Fellows 最近发表的一篇题为《AI 如何影响技能形成》的论文，该论文声称 AI 使用者在技能保留方面表现较差，且工作速度并未加快。作
 
 
 - **[2026-01-31-苹果史上第二大收购案，目标却不是手机｜硬哲学](https://www.bestblogs.dev/article/d30e3bb5)**
@@ -73,12 +73,12 @@
   > 📌 一句话摘要              文章深度解析了 Richard Socher 创办 Recursive 探索 AI 自我进化机制，并提出从“提示工程”转向“奖励工程”的 AI 演进核心观。 📝 详细摘要              本文围绕 AI 领域连续创业者 Richard Socher 的职业路径，重点介绍了其新公司 Recursive 的前沿愿景：构建能够递归自我改进、不依赖人
 
 
-- **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
-  > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
-
-
 - **[2026-01-30-50-万行代码不敢交给-AI？TypeScript-之父直言：它就像是个“高级复读机”](https://www.bestblogs.dev/article/58a2cdbd)**
   > 📌 一句话摘要              TypeScript 之父 Anders Hejlsberg 深度解析 TS 7.0 原生编译器演进逻辑，并直言 AI 本质是“高级复读机”，主张以生成辅助工具而非直接翻译的方式应用 AI。 📝 详细摘要              本文报道了 TypeScript 发明者 Anders Hejlsberg 关于技术演进与 AI 编程的最新深度见解。核心
+
+
+- **[2026-01-30-OpenAI-CFO-摊牌：算力即营收，而-90%-的企业正被卷死在“能力鸿沟”里](https://www.bestblogs.dev/article/a14c9b9f)**
+  > 📌 一句话摘要              本文通过对话 OpenAI CFO Sarah Friar 与顶级投资人 Vinod Khosla，揭示了 AI 算力与营收的强相关性，并指出当前行业核心矛盾在于工具的极速进化与人类应用能力滞后之间的“能力鸿沟”。 📝 详细摘要              文章整理自 OpenAI 播客，探讨了 2026 年 AI 行业的战略走向。核心观点认为，算力投入
 
 
 - **[2026-01-30-OpenAI-关键九问：2026-AI-战局升级后迎来叙事反转](https://www.bestblogs.dev/article/0217aec7)**
@@ -109,12 +109,12 @@
   > 📌 一句话摘要              本文展示了 Q-learning 强化学习智能体如何自主优化 Apache Spark 配置，在结合自适应查询执行（AQE）时，性能提升最高可达 68%。 📝 详细摘要              本文探讨了 Apache Spark 中静态和手动调优的局限性，这些局限在动态大数据环境中往往导致资源浪费或性能瓶颈。文章提出了一种使用 Q-learning
 
 
-- **[2026-01-30-大模型的第一性原理：（二）信号处理篇](https://www.bestblogs.dev/article/e5acc4da)**
-  > 📌 一句话摘要              本文从信号处理与信息论视角，深度解析了大模型语义向量化的数学本质，并论证了 Transformer 作为非线性时变向量自回归时间序列的物理特性。 📝 详细摘要              文章由华为 2012 实验室理论研究部主任白铂博士撰写，是《大模型的第一性原理》系列之二。核心观点认为大模型的本质是将自然语言处理转化为信号处理问题。文章首先探讨了语义
-
-
 - **[2026-01-30-揭秘！RLVR/GRPO-中那些长期被忽略的关键缺陷](https://www.bestblogs.dev/article/19cc6340)**
   > 📌 一句话摘要              本文揭示了 GRPO 等组内优势估计机制在统计学上的系统性偏差，即低估难题、高估简单题，并提出了自适应校正方案 HA-DW。 📝 详细摘要              文章深入探讨了大模型强化学习（RLVR）中核心算法 GRPO 的内在统计缺陷。研究指出，目前广泛采用的组内相对优势估计（Group-relative Advantage）并非无偏估计，而是
+
+
+- **[2026-01-30-大模型的第一性原理：（二）信号处理篇](https://www.bestblogs.dev/article/e5acc4da)**
+  > 📌 一句话摘要              本文从信号处理与信息论视角，深度解析了大模型语义向量化的数学本质，并论证了 Transformer 作为非线性时变向量自回归时间序列的物理特性。 📝 详细摘要              文章由华为 2012 实验室理论研究部主任白铂博士撰写，是《大模型的第一性原理》系列之二。核心观点认为大模型的本质是将自然语言处理转化为信号处理问题。文章首先探讨了语义
 
 
 - **[2026-01-30-2026-01-30-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/2c5b3eaa)**
@@ -151,6 +151,10 @@
 
 - **[2026-01-30-AMemGym-实测：我们可能一直在用错误的方式评估长期记忆](https://www.bestblogs.dev/article/6161cafc)**
   > 📌 一句话摘要              本文介绍了 AMemGym，首个面向长对话助手的交互式、在线策略 (On-Policy) 记忆评测框架，揭示了传统静态评测中的“重用偏差”，并强调长期记忆本质上是动态的状态建模而非简单的存储检索。 📝 详细摘要              文章深入探讨了 AI 助手在长期交互中普遍存在的“记忆失效”问题，指出其根源在于主流 Benchmark 采用静态（
+
+
+- **[2026-01-30-MoltBook-占领时间线](https://www.bestblogs.dev/article/4a9e82d8)**
+  > 📌 一句话摘要              这份全面的 AI 新闻摘要涵盖了智能体社交网络的兴起、Kimi K2.5 的技术发布，以及 AI 辅助编程工作流中不断演进的标准与权衡。 📝 详细摘要              本文综合了 2026 年 1 月下旬来自 Twitter、Reddit 和 Discord 的海量 AI 动态。核心焦点是 MoltBook/OpenClaw，这是一个新兴生态
 
 
 - **[2026-01-30-实测-Genie：各位，传说中的世界模型被-Google-做出来了](https://www.bestblogs.dev/article/3b29f77e)**
@@ -193,12 +197,12 @@
   > 📌 一句话摘要              本期周刊探讨了 AI 编程从插件辅助到全自动任务编排的八个演进等级，并汇集了近期科技动态、实用开发工具及 AI 辅助编程的深层思考。 📝 详细摘要              阮一峰在第 383 期周刊中重点介绍了著名程序员 Steve Yegge 提出的“AI 编程 8 等级”理论。该理论描绘了开发者从初识 AI 插件到完全依赖 AI 任务编排器（如
 
 
-- **[2026-01-30-追踪-ShinyHunters-品牌化-SaaS-数据窃取行为的扩张](https://www.bestblogs.dev/article/d1963f8d)**
-  > 📌 一句话摘要              Mandiant 详细介绍了 ShinyHunters 品牌化勒索行动的扩张，该行动利用复杂的语音钓鱼（vishing）和凭据收割手段，入侵了 Okta、Salesforce 和 SharePoint 等 SaaS 平台。 📝 详细摘要              这份来自 Mandiant（Google Cloud）的威胁情报报告分析了威胁集群 UNC
-
-
 - **[2026-01-30-针对面向-SaaS-的-ShinyHunters-品牌化数据窃取的主动防御](https://www.bestblogs.dev/article/4c7a37e8)**
   > 📌 一句话摘要              这份 Mandiant 报告提供了一个针对 ShinyHunters 品牌化 SaaS 数据窃取的全面防御框架，重点关注防语音钓鱼的身份控制、严格的服务台协议以及深度的 SaaS 原生日志记录。 📝 详细摘要              该文章详细介绍了应对 ShinyHunters 品牌化勒索活动的战略响应，这些活动主要通过复杂的社会工程学而非技术漏洞
+
+
+- **[2026-01-30-追踪-ShinyHunters-品牌化-SaaS-数据窃取行为的扩张](https://www.bestblogs.dev/article/d1963f8d)**
+  > 📌 一句话摘要              Mandiant 详细介绍了 ShinyHunters 品牌化勒索行动的扩张，该行动利用复杂的语音钓鱼（vishing）和凭据收割手段，入侵了 Okta、Salesforce 和 SharePoint 等 SaaS 平台。 📝 详细摘要              这份来自 Mandiant（Google Cloud）的威胁情报报告分析了威胁集群 UNC
 
 
 - **[2026-01-30-Clawdbot-目前没有商业价值，但给“鸡肋”的-AI-PC-们上了一课](https://www.bestblogs.dev/article/a5e33e0d)**
@@ -390,7 +394,6 @@
 
 
 - **[2026-01-29-谷歌-AI-掌门人、诺奖得主-Demis：AGI-需要打破“金鱼记忆”，而谷歌无论泡沫破裂与否都将是赢家](https://www.bestblogs.dev/article/c3ebb5aa)**
-  > 📌 一句话摘要              Google DeepMind CEO Demis Hassabis 探讨了 AGI 的科学定义、当前 AI 的“金鱼记忆”局限、智能眼镜的硬件趋势以及将宇宙视为信息系统的哲学观。 📝 详细摘要              本文是 Google DeepMind 负责人 Demis Hassabis 的深度专访综述。Hassabis 驳斥了“大模型撞墙论
 
 
 - **[2026-01-29-比-OpenAI-更-Manus，实测-Kimi-新上线多核-Agent-集群](https://www.bestblogs.dev/article/7202f908)**
