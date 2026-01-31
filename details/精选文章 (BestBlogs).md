@@ -1,8 +1,20 @@
-:alarm_clock: 更新时间: 2026-01-30 04:56:43。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 20:53:14。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## 精选文章 (BestBlogs)
 
 
+
+
+- **[2026-01-30 14:56:05-Vol.86-同一代技术，两个系统，181-页-PPT-全记录-AI-行业的-2025](https://www.xiaoyuzhoufm.com/episode/697cbc24b4be4c149b4b6931)**
+  > 深度复盘 2025 年全球 AI 行业，详述中美在同一代技术背景下，由实验室向产业系统化展开的竞争格局与 2026 趋势。
+
+
+- **[2026-01-29 17:23:24-Google-DeepMind-发布-Project-Genie：先进的世界模型](https://x.com/demishassabis/status/2016925155277361423)**
+  > 德米斯·哈萨比斯宣布推出 Project Genie，这是一个能根据简单文本提示生成可交互世界的实验性原型。
+
+
+- **[2026-01-29 12:59:21-阿里巴巴-Qwen-发布开源语音模型-Qwen3-ASR-与-Qwen3-ForcedAligner](https://x.com/Alibaba_Qwen/status/2016858705917075645)**
+  > 阿里巴巴 Qwen 团队开源了 Qwen3-ASR 和 Qwen3-ForcedAligner，这两款生产级语音模型支持 52 种语言，并能处理复杂的真实场景音频。
 
 
 - **[2026-01-29-2026-01-29-Hacker-News-Top-Stories-#](https://www.bestblogs.dev/article/c9a07bdc)**
@@ -107,6 +119,18 @@
 
 - **[2026-01-29-Google-DeepMind-推出针对多语言语言模型的-ATLAS-缩放法则](https://www.bestblogs.dev/article/e65e0b56)**
   > 📌 一句话摘要 Google DeepMind 推出了 ATLAS，这是一套针对多语言语言模型的缩放法则，正式定义了 400 多种语言中模型规模、数据量和语言混合之间的相互作用。 📝 详细摘要 Google DeepMind 的研究人员开发了 ATLAS，这是一个为多语言语言模型建立实用缩放法则的框架。与专注于纯英语环境的传统缩放法则不同，ATLAS 利用 774 次受控训练运行（10M 到
+
+
+- **[2026-01-28 17:31:47-重磅新课：与-Anthropic-联手打造智能体技能](https://x.com/AndrewYNg/status/2016564878098780245)**
+  > 吴恩达宣布推出与 Anthropic 合作的全新短课程，教授如何为 Claude 等 AI 智能体创建并部署标准化的“技能 (Skills)”。
+
+
+- **[2026-01-28 17:20:53-智能体编程中的-80%-问题](https://addyo.substack.com/p/the-80-problem-in-agentic-coding)**
+  > 本文探讨了从手动编程到智能体编排的转变，强调了“理解债”的兴起以及代码量增加导致评审瓶颈的生产力悖论。
+
+
+- **[2026-01-28 16:11:29-DeepAgents-的上下文管理](https://www.blog.langchain.com/context-management-for-deepagents/)**
+  > Deep Agents SDK 引入了一套分层上下文管理系统——通过将大型工具数据卸载到文件系统并使用结构化摘要，使 AI 智能体能够在不超出上下文限制的情况下处理长期运行的任务。
 
 
 - **[2026-01-28-7-位亿万级创始人的共同答案：2026-年真正能成功的策略是什么？丨-Silicon-Valley-Girl](https://www.bestblogs.dev/article/cc1b80eb)**
