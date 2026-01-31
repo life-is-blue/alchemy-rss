@@ -16,6 +16,7 @@ const writemd = require('./writemd')
 const createFeed = require('./feed')
 const apiFetcher = require('./api-fetcher')
 const rssFetcher = require('./rss-fetcher')
+const { classifyTags } = require('./tag-classifier')
 
 const {
   RESP_PATH,
@@ -185,6 +186,7 @@ async function processSource(sourceConfig, existingItems) {
         if (isNew) newCount++
 
         // 返回索引数据
+        const tags = fullData.tags || apiItem.tags
         return {
           id: apiItem.id,
           title: fullData.title || apiItem.title,
@@ -192,20 +194,23 @@ async function processSource(sourceConfig, existingItems) {
           date: date,
           summary: fullData.aiSummary || apiItem.summary,
           archive_path: archivePath,
-          tags: fullData.tags || apiItem.tags,
+          tags: tags,
+          categoryTag: classifyTags(tags),
           read_time: fullData.readTime || apiItem.readTime,
           score: fullData.score || apiItem.score
         }
       } else {
         // API 获取失败，使用列表数据
         if (isNew) newCount++
+        const tags = apiItem.tags
         return {
           id: apiItem.id,
           title: apiItem.title,
           link: apiItem.url,
           date: apiItem.date || utils.getNowDate('YYYY-MM-DD'),
           summary: apiItem.summary,
-          tags: apiItem.tags,
+          tags: tags,
+          categoryTag: classifyTags(tags),
           read_time: apiItem.readTime,
           score: apiItem.score
         }

@@ -6,15 +6,15 @@
 
 ## 
 
-在线浏览：[https://alchemy-rss.vercel.app](https://alchemy-rss.vercel.app)
+在线浏览：[https://rss.izoa.fun/](https://rss.izoa.fun/)
 
-订阅地址：[https://alchemy-rss.vercel.app/atom.xml](https://alchemy-rss.vercel.app/atom.xml) 
+订阅地址：[https://rss.izoa.fun//atom.xml](https://rss.izoa.fun//atom.xml) 
 
 ##
 
 [![](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml/badge.svg)](https://github.com/life-is-blue/alchemy-rss/actions/workflows/server.yml)
 
-:alarm_clock: 更新时间: 2026-01-31 20:39:56，:rocket: 更新条数: +20， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 21:27:18，:rocket: 更新条数: +19， ![](/assets/dot.png) 表示有更新，[文章分类](/TAGS.md)
 
 ## 文章来源
 

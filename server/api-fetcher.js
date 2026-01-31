@@ -169,6 +169,7 @@ async function fetchFullResource(id) {
       aiSummary: meta.oneSentenceSummary,
       mainPoints: meta.mainPoints,
       tags: meta.tags,
+      categoryTag: null,  // 由调用方填充
       readTime: meta.readTime,
       score: meta.score,
       wordCount: meta.wordCount,

@@ -1,9 +1,9 @@
-:alarm_clock: 更新时间: 2026-01-31 20:39:57。[文章来源](/README.md)、[文章分类](/TAGS.md)
+:alarm_clock: 更新时间: 2026-01-31 21:27:18。[文章来源](/README.md)、[文章分类](/TAGS.md)
 
 ## AI & 大模型
 
 
-> 关键字：`AI`、`GPT`、`LLM`、`Agent`、`RAG`、`Transformer`、`Diffusion`、`DeepSeek`、`OpenAI`、`Claude`、`Llama`、`Model`、`Artificial Intelligence`、`Machine Learning`
+> 关键字：`AI`、`GPT`、`LLM`、`Agent`、`RAG`、`Transformer`、`Diffusion`、`DeepSeek`、`OpenAI`、`Claude`、`Llama`、`Model`、`Artificial Intelligence`、`Machine Learning`、`Anthropic`、`Gemini`、`Mistral`、`Qwen`、`Copilot`、`ChatGPT`、`Neural`、`Deep Learning`
 
 
 
@@ -57,6 +57,9 @@
 - **[2026-01-28-AAAI-2026｜基于思维链与强化学习的可解释多模态广告审核护栏](https://www.bestblogs.dev/article/526a4791)**
 
 
+- **[2026-01-28-从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://www.bestblogs.dev/article/74ca2b2c)**
+
+
 - **[2026-01-28-LiteRT：端侧-AI-的通用框架](https://www.bestblogs.dev/article/78c163ff)**
 
 
@@ -70,6 +73,9 @@
 
 
 - **[2026-01-28-如何使用-Next.js、Supabase-和-OpenAI-构建-AI-驱动的-RAG-搜索应用](https://www.bestblogs.dev/article/f667a232)**
+
+
+- **[2026-01-28-Gemini-3-Flash-推出智能体视觉功能](https://www.bestblogs.dev/article/4fbbbc72)**
 
 
 - **[2026-01-28-聊天框装不下的野心，被百度文心-APP-塞进了-AI-群聊里](https://www.bestblogs.dev/article/ff5db01c)**
@@ -94,6 +100,9 @@
 
 
 - **[2026-01-28-OpenAI-的最强对手，离「AI-Windows」又近了一步](https://www.bestblogs.dev/article/5c3f5dd4)**
+
+
+- **[2026-01-28-千问版-Gemini3，来了](https://www.bestblogs.dev/article/58cba316)**
 
 
 - **[2026-01-28-AI-加入群聊这事，可能还是得腾讯来做](https://www.bestblogs.dev/article/0d9762db)**
@@ -190,9 +199,5 @@
 
 
 - **[2026-01-27-中国开源-AI-生态的架构选择：超越-DeepSeek-的建设之路](https://www.bestblogs.dev/article/9110b22a)**
-
-
-- **[2026-01-10T05:48:22.000Z-Vibe-Coding-方法论：不会编程的人如何用-AI-写出能跑的代码](https://baoyu.io/blog/vibe-coding-ai-code-for-non-programmers)**
-  > 前几天看到一篇文章《how to vibe code w/ claude code》，作者 Elena 是一位 AI 研究员，每天读论文、测模型、写报告，理解 AI 的工作原理，却从没自己写过代码。直到有一天她用自然语言向 Claude 描述了一个需求，45 秒后拿到一段 Python 脚本，运行，成功。原本要花 6 小时手动清理的 4000 行数据，一分钟搞定。
 
 
