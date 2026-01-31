@@ -44,6 +44,8 @@ function handleTags(newData, linksJson) {
   const currentDate = utils.getNowDate()
   let tags = fs.readJsonSync(TAGS_PATH)
 
+  fs.ensureDirSync(path.join(RESP_PATH, 'details/tags'))
+
   tags.forEach((tag, i) => {
     tags[i].items = []
 
@@ -95,6 +97,8 @@ function handleDetails(newData, linksJson) {
   const currentDate = utils.getNowDate()
   let content = fs.readFileSync(DETAILS_TEMPLATE_PATH).toString()
   let compiled = _.template(content)
+
+  fs.ensureDirSync(path.join(RESP_PATH, 'details'))
 
   linksJson.forEach((source) => {
     if (source.title in newData.rss) {
