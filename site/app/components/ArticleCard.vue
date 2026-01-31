@@ -82,14 +82,20 @@ const props = defineProps({
   }
 })
 
-// 判断是否为精选文章
+// 判断是否为精选文章（根据 rssTitle 判断）
 const isQualified = computed(() => {
-  return props.article.qualified === true || props.article.score >= 80
+  const article = props.article
+  // 方式1: 原有字段
+  if (article.qualified === true || article.score >= 80) return true
+  // 方式2: RSS 源标题包含 "精选"
+  if (article.rssTitle && article.rssTitle.includes('精选')) return true
+  return false
 })
 
-// 获取显示的摘要（优先 oneSentenceSummary）
+// 获取显示的摘要（从 summary 中提取一句话摘要）
 const displaySummary = computed(() => {
   const article = props.article
+  // 优先使用专门的一句话摘要字段
   if (article.oneSentenceSummary) {
     return article.oneSentenceSummary
   }
@@ -97,17 +103,41 @@ const displaySummary = computed(() => {
     return article.aiSummary
   }
   if (article.summary) {
-    return article.summary.replace(/<[^>]+>/g, '')
+    // 从 summary 中提取一句话摘要
+    // 格式: "📌 一句话摘要 xxx 📝 详细摘要 yyy"
+    const summary = article.summary.replace(/<[^>]+>/g, '')
+    const oneSentenceMatch = summary.match(/一句话摘要\s*(.+?)(?:📝|详细摘要|$)/)
+    if (oneSentenceMatch && oneSentenceMatch[1]) {
+      return oneSentenceMatch[1].trim()
+    }
+    // 如果没有匹配到格式，返回前100个字符
+    return summary.slice(0, 100)
   }
   return ''
 })
 
-// 获取显示的标签（最多3个）
+// 获取显示的标签（从 rssTitle 提取分类）
 const displayTags = computed(() => {
   const article = props.article
-  const tags = article.tags || article.categoryTag || []
-  const tagList = Array.isArray(tags) ? tags : [tags]
-  return tagList.slice(0, 3).filter(Boolean)
+  // 优先使用 tags 或 categoryTag 字段
+  if (article.tags && article.tags.length) {
+    const tagList = Array.isArray(article.tags) ? article.tags : [article.tags]
+    return tagList.slice(0, 3).filter(Boolean)
+  }
+  if (article.categoryTag) {
+    const tagList = Array.isArray(article.categoryTag) ? article.categoryTag : [article.categoryTag]
+    return tagList.slice(0, 3).filter(Boolean)
+  }
+  // 从 rssTitle 提取分类标签
+  const rssTitle = article.rssTitle || ''
+  const tags = []
+  if (rssTitle.includes('精选')) tags.push('精选')
+  if (rssTitle.includes('编程') || rssTitle.includes('Programming')) tags.push('编程')
+  if (rssTitle.includes('商业') || rssTitle.includes('Business')) tags.push('商业')
+  if (rssTitle.includes('产品') || rssTitle.includes('Product')) tags.push('产品')
+  if (rssTitle.includes('AI') || rssTitle.includes('人工智能')) tags.push('AI')
+  if (rssTitle.includes('宝玉')) tags.push('宝玉分享')
+  return tags.slice(0, 3)
 })
 
 const getContentTypeIcon = (type) => {
