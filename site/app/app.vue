@@ -39,7 +39,7 @@
         <!-- Nav Links -->
         <button
           @click="currentView = 'sources'; selectedUrl = ''"
-          class="hidden md:flex items-center gap-1.5 text-[13px] font-medium px-3 py-1.5 rounded-lg transition-all"
+          class="hidden md:flex items-center gap-1.5 text-[13px] font-medium px-3 py-1.5 rounded-lg transition-all whitespace-nowrap shrink-0"
           :class="currentView === 'sources' ? 'text-primary bg-primary/5' : 'text-text-sub hover:text-text-main'"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
@@ -52,20 +52,27 @@
       </div>
     </header>
 
-    <!-- Category Filter Bar -->
-    <div v-if="currentView === 'reader' && !selectedUrl" class="bg-white border-b border-outline/5 px-4 md:px-8 py-2 sticky top-14 z-40">
-      <div class="max-w-[1200px] mx-auto flex items-center gap-2 overflow-x-auto hide-scrollbar">
+    <!-- Category Filter Bar (Refined: Text-only style) -->
+    <!-- Hide on XL screens where sidebar is visible -->
+    <div v-if="currentView === 'reader' && !selectedUrl" class="bg-white/80 backdrop-blur-md border-b border-outline/5 px-4 md:px-8 sticky top-14 z-40 xl:hidden">
+      <div class="max-w-[1200px] mx-auto flex items-center gap-6 overflow-x-auto hide-scrollbar h-12">
         <button
           v-for="cat in categoryFilters"
           :key="cat.name"
           @click="selectCategory(cat.name)"
-          class="px-3 py-1.5 text-[12px] font-medium rounded-full whitespace-nowrap transition-all shrink-0"
+          class="relative h-full flex items-center gap-1 text-[13px] font-medium transition-all hover:text-text-main shrink-0"
           :class="currentCategory === cat.name
-            ? 'bg-primary text-white'
-            : 'bg-black/5 text-text-sub hover:bg-black/10'"
+            ? 'text-primary font-bold'
+            : 'text-text-sub'"
         >
           {{ cat.name }}
-          <span v-if="cat.count" class="ml-1 opacity-70">{{ cat.count }}</span>
+          <span class="text-[10px] opacity-40 font-normal transform -translate-y-0.5">{{ cat.count }}</span>
+
+          <!-- Active Indicator -->
+          <div
+            v-if="currentCategory === cat.name"
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
+          ></div>
         </button>
       </div>
     </div>
@@ -180,55 +187,12 @@
         </section>
       </div>
 
-      <!-- Right Floating Action Bar (when reading) -->
-      <transition name="toolbar-fade">
-        <div v-if="selectedUrl" class="hidden xl:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-4 z-[100]">
-          <button
-            @click="closeReader"
-            class="floating-action active-press"
-            title="返回列表"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="3" y1="6" y2="6"/><line x1="21" x2="9" y1="12" y2="12"/><line x1="21" x2="7" y1="18" y2="18"/></svg>
-          </button>
-
-          <div class="group relative">
-            <button class="floating-action active-press" title="字号">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
-            </button>
-            <div class="absolute right-full pr-4 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-x-2 group-hover:translate-x-0">
-              <div class="bg-white/95 backdrop-blur-xl shadow-wechat rounded-2xl p-4 flex items-center gap-4 border border-outline/10">
-                <button @click="decreaseFont" class="w-9 h-9 rounded-full bg-black/5 hover:bg-black/10 active:scale-90 transition-all font-bold text-base">-</button>
-                <span class="text-sm font-bold w-6 text-center">{{ fontSize }}</span>
-                <button @click="increaseFont" class="w-9 h-9 rounded-full bg-black/5 hover:bg-black/10 active:scale-90 transition-all font-bold text-base">+</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="group relative">
-            <button class="floating-action active-press" title="主题">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-            </button>
-            <div class="absolute right-full pr-4 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-x-2 group-hover:translate-x-0">
-              <div class="bg-white/95 backdrop-blur-xl shadow-wechat rounded-2xl p-3 flex items-center gap-3 border border-outline/10">
-                <button @click="theme = 'white'" class="w-8 h-8 rounded-full border-2 transition-all active:scale-90" :class="theme === 'white' ? 'border-primary' : 'border-outline/20'" style="background-color: #FFFFFF;" title="白色"></button>
-                <button @click="theme = 'sepia'" class="w-8 h-8 rounded-full border-2 transition-all active:scale-90" :class="theme === 'sepia' ? 'border-primary' : 'border-outline/20'" style="background-color: #f5e6c8;" title="护眼"></button>
-                <button @click="theme = 'green'" class="w-8 h-8 rounded-full border-2 transition-all active:scale-90" :class="theme === 'green' ? 'border-primary' : 'border-outline/20'" style="background-color: #cce8cf;" title="绿色"></button>
-                <button @click="theme = 'night'" class="w-8 h-8 rounded-full border-2 transition-all active:scale-90" :class="theme === 'night' ? 'border-primary' : 'border-outline/20'" style="background-color: #1A1A1A;" title="夜间"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="h-px w-6 bg-black/5 mx-auto my-1"></div>
-
-          <button
-            @click="scrollToTop"
-            class="floating-action active-press"
-            title="回到顶部"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-        </div>
-      </transition>
+      <!-- Right Floating Action Bar -->
+      <FloatingToolbar
+        :mode="selectedUrl ? 'reader' : 'list'"
+        @back="closeReader"
+        @scroll-top="scrollToTop"
+      />
     </main>
 
     <!-- Mobile Navigation -->
@@ -254,9 +218,7 @@ import { CONTENT_TYPE_LABELS } from '~/composables/useArticles'
 
 const {
   loading,
-  currentTab,
   searchValue,
-  categories,
   rssData,
   filteredArticles,
   displayedArticles,
@@ -267,10 +229,7 @@ const {
 } = useArticles()
 
 const {
-  fontSize,
-  theme,
-  increaseFont,
-  decreaseFont
+  theme
 } = useReadingSettings()
 
 const selectedUrl = ref('')

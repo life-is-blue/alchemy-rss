@@ -5,9 +5,9 @@
   --color-primary: #1e88e5;
   --color-primary-light: #e3f2fd;
 
-  /* 精选标记色 - 橙色系 */
-  --color-qualified: #ff9800;
-  --color-qualified-light: #fff3e0;
+  /* 精选标记色 - 调整为低饱和度的姜黄色/杏色 (Apricot/Ginger) */
+  --color-qualified: #D4A373; /* Muted Apricot/Gold */
+  --color-qualified-light: #FAEDCD; /* Very light cream */
 
   /* 文字层次 */
   --color-text-main: #212121;

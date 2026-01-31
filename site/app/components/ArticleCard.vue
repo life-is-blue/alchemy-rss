@@ -1,7 +1,10 @@
 <template>
   <div
     class="group relative bg-white rounded-lg p-4 border border-black/5 hover:border-primary/20 card-hover cursor-pointer active:scale-[0.995]"
-    :class="{ 'qualified-border bg-qualified-light/30': isQualified }"
+    :class="{
+      'qualified-border bg-qualified-light/30': isQualified,
+      'article-read': isRead(article.link)
+    }"
   >
     <!-- 顶部：精选徽章 + 时间 -->
     <div class="flex items-center justify-between mb-2">
@@ -74,6 +77,9 @@
 
 <script setup>
 import { CONTENT_TYPE_ICONS } from '~/composables/useArticles'
+import { useReadingProgress } from '~/composables/useReadingProgress'
+
+const { isRead } = useReadingProgress()
 
 const props = defineProps({
   article: {

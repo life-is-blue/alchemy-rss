@@ -219,6 +219,8 @@
 </template>
 
 <script setup>
+import { useReadingProgress } from '~/composables/useReadingProgress'
+
 const props = defineProps({
   url: String,
   articleData: Object
@@ -227,6 +229,7 @@ const props = defineProps({
 const emit = defineEmits(['scroll-top'])
 
 const { fontSize, theme, increaseFont, decreaseFont } = useReadingSettings()
+const { updateProgress } = useReadingProgress()
 
 const article = ref(null)
 const loading = ref(false)
@@ -277,17 +280,11 @@ const updateReadingProgress = () => {
 
   if (scrollHeight > 0) {
     readingProgress.value = Math.min(100, Math.round((scrollTop / scrollHeight) * 100))
-  }
 
-  // Save progress to localStorage
-  if (props.url && readingProgress.value > 0) {
-    const progress = JSON.parse(localStorage.getItem('reading-progress') || '{}')
-    progress[props.url] = {
-      progress: readingProgress.value,
-      read: readingProgress.value > 90,
-      lastReadAt: new Date().toISOString()
+    // Update global state and localStorage via composable
+    if (props.url) {
+      updateProgress(props.url, readingProgress.value)
     }
-    localStorage.setItem('reading-progress', JSON.stringify(progress))
   }
 }
 
