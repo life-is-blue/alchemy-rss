@@ -22,17 +22,20 @@ Angular 直接通过 `/data/links.json` 访问数据，无需复制。
 | **Framework Preset** | `Other` | Angular 非官方预设 |
 | **Build Command** | `cd read-rss && npm install && npm run build` | 进入子目录构建 |
 | **Output Directory** | `read-rss/dist` | Angular 输出目录 |
-| **Install Command** | `npm install` | 根目录安装 (可选) |
 
 ## Rewrites 配置
 
-在 Settings → Rewrites 中添加以下规则实现 SPA 路由：
+SPA 路由已通过 `vercel.json` 配置，无需在 Dashboard 额外设置：
 
-| Source | Destination |
-|--------|-------------|
-| `/((?!data\|api\|assets).*)` | `/index.html` |
-
-此规则将所有非 `/data`、`/api`、`/assets` 开头的请求重写到 `index.html`，支持 Angular 客户端路由。
+```json
+{
+  "rewrites": [
+    { "source": "/api/reader", "destination": "/api/reader" },
+    { "source": "/(data|details|assets|static)/:path*", "destination": "/$1/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
 
 ## 本地开发
 
