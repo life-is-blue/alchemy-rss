@@ -70,9 +70,10 @@ export class RssService {
   async loadAlchemyData() {
     this.loading.set(true);
     try {
-      const bust = `?t=${new Date().getTime()}`;
+      // Remove cache busting to allow CDN caching
+      // const bust = `?t=${new Date().getTime()}`;
       const groups = await firstValueFrom(
-        this.http.get<AlchemyLinkGroup[]>(this.INDEX_URL + bust).pipe(
+        this.http.get<AlchemyLinkGroup[]>(this.INDEX_URL).pipe(
           catchError(err => {
             console.warn("Alchemy index not found, using empty state.", err);
             return of([]); 
