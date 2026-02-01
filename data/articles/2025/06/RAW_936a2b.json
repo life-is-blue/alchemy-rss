@@ -1,0 +1,55 @@
+{
+  "id": "RAW_936a2b",
+  "title": "GPT-4o 连验证码都解不了？？SOTA 模型成功率仅 40%",
+  "url": "https://www.qbitai.com/2025/06/290771.html",
+  "date": "2025-06-04 09:04:02",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"2 1 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"62\">MetaAgentX团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"63\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">当前最强多模态Agent连验证码都解不了？</p>\n  <p data-track=\"3\"><strong>MetaAgentX团队</strong>推出首个专注于“多模态交互智能体×CAPTCHA（人机验证）问题”的开放式研究平台——<strong>Open CaptchaWorld</strong>。</p>\n  <p data-track=\"4\">该平台专门用于测试Agent解验证码的能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-4o连验证码都解不了？？SOTA模型成功率仅40%\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6251d9ff-f17c-49e0-6db9-111b30905900/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"558\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">实测结果显示：人类平均成功率达<strong>93.3%</strong>，SOTA多模态模型平均仅<strong>5%-40%</strong>不等。</p>\n  <p data-track=\"6\">连<strong>GPT-4o</strong>都被难住了。</p>\n  <p data-track=\"8\">在真实网页场景中部署多模态Agent，你是否也被人机验证（CAPTCHA）卡住过？</p>\n  <p data-track=\"9\">项目团队发现，不少大型Benchmarks（包括AgentBench、VisualWebArena等）在构建过程中都<strong>刻意跳过了含验证码的网页</strong>，仿佛这道拦路虎根本不存在。</p>\n  <p data-track=\"10\">但现实很骨感：<strong>验证码从不是“特例”，而是任何实际任务中不可回避的存在</strong>，尤其在电商、登录、票务等高价值网页中更是常见。</p>\n  <p data-track=\"11\">于是，Open CaptchaWorld这个测试平台以及Benchmark应运而生：一个针对多模态大模型Agent的CAPTCHA解题平台与评估基准——专为视觉-语言-动作交互任务设计。</p>\n  <p data-track=\"12\">无论是OpenAI的o3、Anthropic的Claude‑3.7-sonnet、还是Gemini‑2.5-pro，这些最新的多模态大模型Agent尽管在静态感知任务（如图文问答、UI理解）中表现出色，但在真实交互环境中常常卡在了CAPTCHA环节：</p>\n  <ul>\n   <li data-track=\"13\">WebAgent在执行end-to-end任务时，常因验证码而被“卡死”；</li>\n   <li data-track=\"14\">AgentBench、VisualWebArena等主流评估集普遍<strong>过滤掉</strong>含CAPTCHA的网页；</li>\n   <li data-track=\"15\">过去的验证码研究（如reCAPTCHA、DeepCAPTCHA）更聚焦静态识别，对<strong>交互、多步规划与状态跟踪能力评估严重不足</strong>。</li>\n  </ul>\n  <p data-track=\"16\">为了系统性地评估Agent在验证码中的真实表现，研究团队设计了一个全新的开放基准与平台——<strong>Open CaptchaWorld</strong>。</p>\n  <p data-track=\"17\">这个平台不仅包含最新的现代验证码而且类型丰富（20种），全部在真实 Web 浏览环境中进行操作，真正复现 Agent 实际遇到的挑战：</p>\n  <blockquote>\n   <p data-track=\"18\">“解图+理解规则+计划操作+逐步交互” = Agent能力的真实考验。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-4o连验证码都解不了？？SOTA模型成功率仅40%\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85be4363-db05-45a0-a859-886239527200/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"842\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">1、 大规模、多样性以及覆盖全面：研究团队创作了商用的最新的<strong>20类</strong>现代验证码，累计225个样例；类型涵盖点击顺序、滑块对齐、图像选择、数字计数、拖拽匹配等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-4o连验证码都解不了？？SOTA模型成功率仅40%\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e393fedb-8e3c-4994-d45a-e9aefaccd900/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"468\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">2、 交互真实：所有验证码均部署在网页环境中，Agent必须通过观察截图、点击、拖动等方式完成操作，模拟真实用户交互流程。</p>\n  <p data-track=\"23\">3、 提出新评估指标<strong>CAPTCHA Reasoning Depth</strong>：用于量化一个验证码背后需要多少步“视觉理解+认知计划+动作控制”的过程；是对传统“静态图像分类”评价方式的重要补充，更贴近Agent真实解题难度。</p>\n  <p data-track=\"24\">4、 对比分析详尽：对OpenAI-o3、GPT-4o、Claude-3.7、Gemini2.5-Pro等模型进行系统评估；人类解题成功率高达93.3%，<strong>最强模型OpenAI-o3仅为40.0%</strong>；并从策略偏差、视觉错误、执行失败等维度剖析失败原因。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-4o连验证码都解不了？？SOTA模型成功率仅40%\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/af18339e-9a9c-47e6-ebf9-96a91e3fd000/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"457\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">Open CaptchaWorld的数据集构建遵循四阶段流程，旨在生成多样化、高质量、可交互的CAPTCHA样本，用于评估多模态智能体在真实网页场景下的表现。</p>\n  <p data-track=\"27\"><strong>第一步：图像素材构建</strong>（Type Related CAPTCHA Image Curation）</p>\n  <p data-track=\"28\">根据每类CAPTCHA的设计需求，由人类设计师或者GPT-4o生成具有变化性的图像素材。</p>\n  <p data-track=\"29\">包括目标位置、观察角度、对象排布、数字与元素分布等多种视觉因素的系统调整，确保每类任务在结构上具有足够的多样性与泛化性。</p>\n  <p data-track=\"30\"><strong>第二步：验证码生成</strong>（CAPTCHA Generation）</p>\n  <p data-track=\"31\">围绕构造好的图像素材，为每个实例配套生成自然语言指令，任务描述由人类设计或由大模型辅助生成，确保语言表达清晰，易于Agent理解。</p>\n  <p data-track=\"32\">指令内容涵盖点击、滑动、拖动、计数、比对等典型交互操作，结合网页前端组件实现真实交互逻辑。</p>\n  <p data-track=\"33\"><strong>第三步：推理深度估计</strong>（Reasoning Depth Estimation）</p>\n  <p data-track=\"34\">为精确刻画每道CAPTCHA的解题复杂度，引入“CAPTCHA Reasoning Depth”指标。</p>\n  <p data-track=\"35\">该指标通过人工注释者对解题过程的逐步分解，记录人类在完成任务时涉及的视觉识别、逻辑判断、记忆操作与交互控制等原子推理步骤，并据此评估任务的综合认知深度。</p>\n  <p data-track=\"36\"><strong>第四步：标准注释生成</strong>（Annotation）</p>\n  <p data-track=\"37\">最终由标注人员确认每个CAPTCHA实例的标准答案，包括操作路径、点击位置或数值输入结果。</p>\n  <p data-track=\"38\">所有任务均保证为人类易解（成功率高），同时具备统一的判定逻辑和网页反馈接口，为模型训练与评估提供稳定可靠的标签支撑。</p>\n  <p data-track=\"40\">该团队发现，多数先进Agent在CAPTCHA面前显得手足无措，不仅成功率低，而且解题行为远不如人类高效。</p>\n  <p data-track=\"41\">例如在“序列点击”任务中：人类通常只需识别图案 → 记住顺序 → 一次性点击完成；</p>\n  <p data-track=\"42\">模型（如OpenAI-o3）往往会把操作细化为十余步，比如“记住第一个图标”、“确认当前状态”、“点击后等待反馈”…… 这种“过度分解任务”的现象。不仅拖慢操作流程，还增加了出错概率。</p>\n  <p data-track=\"43\">这类现象反映出当前Agent在高交互、高动态场景下的显著劣势：缺乏人类式的抽象、泛化与控制能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-4o连验证码都解不了？？SOTA模型成功率仅40%\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/424e6ace-fdb1-4f4f-8386-b831e6df9000/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"768\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"44\">除此之外研究团队还展示了当前主流多模态大模型Agent在Open CaptchaWorld上的<strong>成本-性能权衡关系</strong>。</p>\n  <p data-track=\"45\">从下图所示，横轴为评估成本（以对数刻度表示），纵轴为CAPTCHA解题任务中的Pass@1成功率（百分比）。每个点代表一个具体模型的运行结果。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-4o连验证码都解不了？？SOTA模型成功率仅40%\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/84e0b5b0-6cdf-42bf-a96a-a63529f88400/public\" data-ic=\"false\" data-width=\"950\" data-height=\"596\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"46\">从图中可以看出，OpenAI-o3虽然在成功率方面显著领先（达40.0%），但同时也是成本最高的模型，显示出较强的能力但较差的性价比。</p>\n  <p data-track=\"47\">而Gemini2.5-Pro和GPT-4.1等模型在保持相对较高成功率（约25%）的同时，成本控制更为合理，展现出较好的“单位预算表现”。</p>\n  <p data-track=\"48\">相比之下，Claude-3.5-Sonnet、GPT-4o与OpenAI-o1等模型尽管评估开销中等或偏高，但解题成功率较低，显示出在当前CAPTCHA场景下的适配能力仍较弱。</p>\n  <p data-track=\"49\">DeepSeek-V3和Claude-3.5-Haiku成本较低，成功率保持在15%~20%区间，体现出更优的成本效率平衡，适合作为轻量级基线。</p>\n  <p data-track=\"50\">总体来看，该图揭示了多模态 Agent 在真实交互任务中并不总是“越贵越强”，也突出了Open CaptchaWorld平台在分析Agent实用性、可部署性方面的重要价值。</p>\n  <p data-track=\"51\">未来的模型设计应更加关注效率与性能之间的协同优化。</p>\n  <p data-track=\"52\">Open CaptchaWorld平台为Agent开发者、基准设计者提供了新的思路。</p>\n  <p data-track=\"53\">也揭示了——</p>\n  <ul>\n   <li data-track=\"54\">当前Agent的真实“短板”——长序列任务动态交互和规划交互能力；</li>\n   <li data-track=\"55\">现有Benchmark评估的盲区——大量省略了真实部署中不可或缺的“人机验证”环节；</li>\n   <li data-track=\"56\">新模型设计方向——如何提升Agent在现实网页任务中的自动化与鲁棒性。</li>\n   <li data-track=\"57\">Agent时代下的新型Captcha设计——目前的Captcha迟早会被Agent能力增长而攻破，我们也需要实时更新设计新的Captcha来顺应技术的发展。</li>\n  </ul>\n  <p data-track=\"58\">Open CaptchaWorld的提出旨在鼓励研究者在训练和评估Agent时，不再回避CAPTCHA问题，而是勇敢面对它，因为在现实世界中，如果连验证码都通过不了，这个Agent就无法落地。</p>\n  <p data-track=\"59\">更多细节欢迎阅读原文。</p>\n  <p data-track=\"60\">论文链接：https://arxiv.org/abs/2505.24878<br>\n    Huggingface Spaces：https://huggingface.co/spaces/YaxinLuo/Open_CaptchaWorld<br>\n    代码库 &amp; 数据链接： https://github.com/MetaAgentX/OpenCaptchaWorld</p>\n  <p data-track=\"61\">— 完 —</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Open CaptchaWorld 平台揭示 SOTA 多模态 Agent 在真实网页验证码任务上成功率低，远低于人类水平。",
+  "oneSentenceSummary": "Open CaptchaWorld 平台揭示 SOTA 多模态 Agent 在真实网页验证码任务上成功率低，远低于人类水平。",
+  "summary": "文章介绍了 MetaAgentX 团队构建的 Open CaptchaWorld 平台，这是首个专注于测试多模态 Agent 解决网页人机验证（CAPTCHA）能力的开放研究平台。研究发现，尽管当前 SOTA 多模态模型在静态感知任务表现出色，但在真实网页交互场景下，如解决 20 类现代验证码，其平均成功率仅为 5%-40%（GPT-4o 也被难住），远低于人类的 93.3%。文章指出，现有主流 Agent 评估基准普遍回避含验证码的网页，忽略了实际任务中的关键障碍。Open CaptchaWorld 通过真实交互、多样化验证码样本和引入“CAPTCHA Reasoning Depth”新指标，系统评估 Agent 的视觉理解、认知规划和动作控制能力。研究还分析了 Agent 失败原因（如过度分解任务）并提供了成本-性能权衡分析，强调未来 Agent 需提升长序列任务动态交互能力，并呼吁研究界正视 CAPTCHA 挑战。",
+  "mainPoints": [
+    {
+      "point": "当前 SOTA 多模态 Agent 在真实网页验证码任务上面临严重挑战",
+      "explanation": "通过 Open CaptchaWorld 平台的实测显示，最新模型的成功率显著低于人类，表明 Agent 在复杂交互和多步规划方面存在明显短板。"
+    },
+    {
+      "point": "现有主流 Agent 评估基准普遍忽略了验证码这一现实障碍",
+      "explanation": "许多 Benchmarks 刻意跳过含验证码的网页，未能真实反映 Agent 在实际网页环境中部署时遇到的普遍问题。"
+    },
+    {
+      "point": "Open CaptchaWorld 提供系统性评估工具和新指标",
+      "explanation": "该平台包含多样化、交互真实的验证码，并引入推理深度指标，为全面评估 Agent 解决复杂交互任务的能力提供有效手段。"
+    }
+  ],
+  "keyQuotes": [
+    "当前最强多模态 Agent 连验证码都解不了？",
+    "实测结果显示：人类平均成功率达 93.3% ，SOTA 多模态模型平均仅 5%-40%不等。",
+    "验证码从不是'特例'，而是任何实际任务中不可回避的存在...",
+    "过去（的验证码研究）更聚焦静态识别，对交互、多步规划与状态跟踪能力评估严重不足。",
+    "当前 Agent 的真实'短板'------长序列任务动态交互和规划交互能力；"
+  ],
+  "tags": [
+    "AI Agent",
+    "CAPTCHA",
+    "多模态模型",
+    "Benchmark",
+    "AI评估"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 90,
+  "wordCount": 2952,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749027842000,
+  "publishDateStr": "2025-06-04",
+  "publishDateTimeStr": "2025-06-04 09:04:02"
+}

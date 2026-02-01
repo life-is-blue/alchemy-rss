@@ -1,0 +1,55 @@
+{
+  "id": "RAW_eaf54e",
+  "title": "智能创作，卓越代码：AI 赋能谷歌云开发者体验",
+  "url": "https://cloud.google.com/blog/topics/developers-practitioners/smarter-authoring-better-code-how-ai-is-reshaping-google-clouds-developer-experience/",
+  "date": "2025-08-13 00:00:00",
+  "author": "Helen Slattery, Matt Thompson",
+  "siteName": "Google Cloud Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" class=\" \">\n    <p>The mission of the Google Cloud Developer Experience team is simple: to help developers get from learning to launching as quickly and effectively as possible. Two of our primary tools for this are the robust hands-on documentation and the ready-to-use code samples embedded directly within it, which developers rely on every day. As Google Cloud's services expand and evolve at a rapid pace, maintaining the quality, accuracy, and coverage of these tightly integrated resources presents a monumental challenge. Modern developers expect instant, accurate, and idiomatic guidance, and anything less ends up being a barrier to adoption.</p>\n    <p>To meet this challenge, we are strategically leveraging Generative AI, powered by Gemini, in the core of our content workflows. This isn't about replacing human expertise. It's about using technology to enhance our ability to deliver value to developers faster and on a larger scale. Here’s how we are applying AI to create high quality documentation and more comprehensive, integrated code samples (at scale and pace).</p>\n    <h2>AI-Powered Documentation: Increasing Velocity and Ensuring Accuracy</h2>\n    <p>For our technical writing teams, the velocity of Google Cloud's development presents two core problems: how do we keep pace with documenting new features and capabilities, and how do we ensure the existing documentation remains accurate?</p>\n    <p>To accelerate the creation process, we have integrated Gemini directly into our writers' authoring environments. This acts as a productivity multiplier, streamlining common tasks like generating formatted tables from unstructured content, translating between markup languages, and applying complex style guides with a single click. More significantly, the adoption of AI solutions enables writers to focus their time on strategic documentation solutions and ensure high quality content.&nbsp;</p>\n    <p>Just as important as creation is validation. For years, automated regression testing has been a staple for catching bugs in code. We are now bringing that same discipline to documentation—a goal that was long considered a dream due to the ambiguity of natural language. For our quickstarts, we use Gemini to read the procedural steps and automatically generate web orchestration scripts (using frameworks like Playwright). These scripts then execute the steps in a real Google Cloud environment, automatically verifying that our documentation accurately reflects the product's behavior. We run over 100 of these tests daily, ensuring our quickstarts are continuously validated and that you can trust the steps you're following.</p>\n    <h2>Scaling In-Doc Code Samples with an Agentic AI System</h2>\n    <p>The code samples embedded within our documentation present a similar, if not more complex, set of challenges: ensuring broad language coverage, maintaining freshness as APIs and best practices evolve, and optimizing the use of our engineering resources. Manually creating and maintaining tens of thousands of idiomatic samples for use across all our documentation—including for the long tail of specialized APIs—is not scalable.</p>\n    <p>Our solution is an agentic system that automates the entire lifecycle of a code sample destined for our documentation. This workflow is anchored to the ultimate source of truth for Google APIs: the Protobuf (proto) definitions hosted in the public googleapis repositories. This ensures our samples are always aligned with the API's actual implementation, preventing factual drift.</p>\n    <p>The system works in a multi-step process:</p>\n    <ol>\n     <li>\n      <p><strong>Prompt Assembly</strong>: An agent prepares a highly detailed prompt by analyzing the target API method and combining a \"one-shot\" code template with the specific method names, parameters, and documentation from its official Protobuf definition. This structured, data-driven approach is key; it constrains the model, preventing hallucination and ensuring the prompt is grounded in factual API details from the start.</p>\n     </li>\n     <li>\n      <p><strong>Generation and Refinement</strong>: The prompt is passed to Gemini to generate a first draft. A separate 'evaluator' agent then scores the sample against a rigorous rubric. If it falls short, specific feedback is sent back to the generator for an improved version. This automated \"dialogue\" between agents mimics a software peer review process, but at a speed and scale impossible to implement manually.</p>\n     </li>\n     <li>\n      <p><strong>Automated Testing</strong>: Once approved, the sample is deployed to a containerized environment where it undergoes a final battery of tests: build/compile, linting, and execution to confirm it runs correctly. This gives us high confidence to publish at scale across our documentation.</p>\n     </li>\n    </ol>\n    <p>A cornerstone of this strategy is our AI-powered auditing agent. It acts as an exacting code reviewer, validating every API call against official documentation using Gemini grounded with Google Search. This forces it to verify every detail against our public-facing documentation, ensuring a consistent quality bar for every sample, whether human-written or AI-generated.</p>\n    <h2>The Future is Augmented: Quality and Expertise at Scale</h2>\n    <p>As we scale, this level of automation allows our human experts to evolve their roles. They now focus on improving the AI systems themselves—investigating statistical anomalies, performing audit sampling to validate the AI judges, and refining the generation models. This new approach elevates their work and ensures quality at a scale that humans working on their own cannot achieve.</p>\n    <p>By automating the creation of foundational documentation and the code within it, we are freeing our teams to focus on what developers need most: detailed, solution-oriented content that solves complex, real-world problems. This strategic partnership between human experts and AI agents is the core of our approach. It allows us to build a more comprehensive, accurate, and responsive developer experience, ensuring that no matter what you're building on Google Cloud, you have the integrated documentation and code you need to succeed.</p>\n    <p>&nbsp;</p>\n    <hr>\n    <p><em>We would like to thank the expert contributions to this post made by Lisa Johnson, Mark Ryan, and Joe Shirey.</em></p>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "谷歌 云利用 Gemini 驱动的生成式 AI，显著提升开发者文档和代码示例的质量、准确性和可扩展性。",
+  "oneSentenceSummary": "谷歌 云利用 Gemini 驱动的生成式 AI，显著提升开发者文档和代码示例的质量、准确性和可扩展性。",
+  "summary": "为应对服务快速迭代带来的挑战，谷歌 云开发者体验团队正战略性地采用生成式 AI (Gemini)，以维护高质量的文档和代码示例。对于技术文档，Gemini 被集成到创作环境中，提高作者在格式化和翻译等任务中的生产力，并实现自动化验证。 这种验证包括 Gemini 生成 Web 编排脚本（例如，使用 Playwright）以在真实的谷歌 云环境中执行快速入门步骤，从而根据产品行为验证文档的准确性，每天运行超过 100 个测试。 对于文档中的代码示例，一个代理式 AI 系统自动化了整个生命周期，从基于规范的 Protobuf 定义的提示构建到由评估代理进行的迭代生成和改进，然后是自动化测试（构建、代码检查、执行）。 一个 AI 驱动的审计代理通过对照官方文档验证 API 调用，进一步确保一致性和质量。 这种方法增强了人类专家的能力，使他们能够专注于改进 AI 系统，并开发更具战略性、面向解决方案的内容。 最终，以规模化的方式提供更全面、准确和快速响应的开发者体验。",
+  "mainPoints": [
+    {
+      "point": "谷歌 云使用生成式 AI 自动化文档验证和创建。",
+      "explanation": "Gemini 生成脚本以在真实环境中测试快速入门指南，确保文档的准确性，并使人类作者能够专注于战略内容开发。"
+    },
+    {
+      "point": "一个代理式 AI 系统简化了文档中代码示例的整个生命周期。",
+      "explanation": "该系统自动化代码示例的生成、改进和测试，以 Protobuf 为基础，确保了准确性、广泛的语言覆盖范围以及与 API 定义的一致性。"
+    },
+    {
+      "point": "AI 增强了人类专家的能力，从而实现了可扩展的质量和增强的内容交付。",
+      "explanation": "通过自动化基础任务，AI 使人类团队能够专注于改进 AI 系统并创建复杂的、面向解决方案的内容，从而带来更全面和快速响应的开发者体验。"
+    }
+  ],
+  "keyQuotes": [
+    "这不仅仅是取代人类的专业知识。 更重要的是，利用技术增强我们更快、更大规模地为开发者提供价值的能力。",
+    "对于我们的快速入门，我们使用 Gemini 来读取程序步骤，并自动生成 Web 编排脚本（使用像 Playwright 这样的框架）。 然后，这些脚本在真实的谷歌 云环境中执行这些步骤，自动验证我们的文档是否准确地反映了产品的行为。",
+    "我们的解决方案是一个代理式系统，能够自动化文档中代码示例的整个生命周期。 此工作流程锚定到谷歌 API 的最终事实来源：托管在公共 googleapis 存储库中的 Protobuf (proto) 定义。",
+    "该策略的基石是我们 AI 驱动的审计代理。 它充当严格的代码审查员，使用以谷歌搜索为基础的 Gemini，对照官方文档验证每个 API 调用。",
+    "通过自动化基础文档和其中代码的创建，我们使我们的团队能够专注于开发者最需要的东西：详细的、面向解决方案的内容，这些内容可以解决复杂的、现实世界的问题。"
+  ],
+  "tags": [
+    "生成式 AI",
+    "谷歌 云",
+    "开发者体验",
+    "文档自动化",
+    "代码生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 901,
+  "domain": "cloud.google.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_bc3236",
+  "sourceName": "Google Cloud Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1755043200000,
+  "publishDateStr": "2025-08-13",
+  "publishDateTimeStr": "2025-08-13 00:00:00"
+}

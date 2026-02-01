@@ -1,0 +1,54 @@
+{
+  "id": "RAW_3203bc",
+  "title": "Veo 3 Fast 及新增图像到视频功能",
+  "url": "https://developers.googleblog.com/en/veo-3-fast-image-to-video-capabilities-now-available-gemini-api/",
+  "date": "2025-07-31 00:00:00",
+  "author": "Alisa Fortin, Seth Odoom",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Veo_3_in_the_Gemini_API.original.png\" alt=\"Build with Veo 3 Fast and new image-to-video capabilities, now available in the Gemini API\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"z566b\">Building on the <a href=\"https://developers.googleblog.com/en/veo-3-now-available-gemini-api/\">recent launch</a> of Veo 3, we’re now introducing Veo 3 Fast – a model optimized for speed and price, allowing developers to iterate faster while producing high quality outputs efficiently.</p>\n    <p data-block-key=\"b2df5\">We’re also bringing image-to-video capabilities to both Veo 3 and Veo 3 Fast, making it possible to transform still images into clips that maintain consistency. Both models, with image-to-video capabilities, are available in paid preview via the <a href=\"https://ai.google.dev/gemini-api/docs/video\">Gemini API</a>.</p>\n   </div>\n   <div class=\"inner-block-content yt-video\">\n    <div class=\"glue-video\">\n     <div class=\"glue-video__container glue-video__container--inline\" data-glue-yt-video-vid=\"vK2h_dzDI5A\" id=\"youtube-player-768339\">\n      <iframe frameborder=\"0\" allowfullscreen allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/vK2h_dzDI5A?enablejsapi=1&amp;origin=https%3A%2F%2Fdevelopers.googleblog.com&amp;widgetid=1&amp;forigin=https%3A%2F%2Fdevelopers.googleblog.com%2Fen%2Fveo-3-fast-image-to-video-capabilities-now-available-gemini-api%2F&amp;aoriginsup=1&amp;vf=1\" id=\"widget2\" data-gtm-yt-inspected-10=\"true\"></iframe>\n     </div>\n     <div class=\"glue-video__nojs\">\n      <p><a href=\"https://www.youtube.com/watch?v=vK2h_dzDI5A\">Link to Youtube Video</a> (visible only when JS is disabled)</p>\n     </div>\n    </div>\n    <div class=\"video-description\">\n     Prompt in footnote (1)\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"j4p14\" id=\"a-faster-more-efficient-model\">A faster, more efficient model</h2>\n    <p data-block-key=\"7g545\"><b>Veo 3 Fast</b> is a quicker and more cost effective version of Veo 3, allowing developers to create videos with sound while maintaining high quality and optimizing for speed and business use cases. Veo 3 Fast offers both <b>text-to-video</b> and <b>image-to-video</b> modalities.</p>\n    <p data-block-key=\"5cq6e\">It is the ideal choice for:</p>\n    <p data-block-key=\"dkpn7\"></p>\n    <ul>\n     <li data-block-key=\"cjv1a\"><b>Programmatic advertising:</b> Powering backend services that automatically generate ad creatives.</li>\n    </ul>\n    <p data-block-key=\"2gfah\"></p>\n    <ul>\n     <li data-block-key=\"cifg6\"><b>Rapid prototyping:</b> Enabling quick A/B testing of different creative concepts.</li>\n    </ul>\n    <p data-block-key=\"81h38\"></p>\n    <ul>\n     <li data-block-key=\"1cchc\"><b>Content creation at scale:</b> Building apps that need to quickly produce social media content.</li>\n    </ul>\n    <p data-block-key=\"9ahv6\"><br>\n      Veo 3 Fast will be: $0.40 / second with audio.</p>\n    <p data-block-key=\"11pmm\">Developers can now use Veo 3 and Veo 3 Fast to generate high-quality video content (with sound) from input images. This new capability allows for the creation of dynamic video sequences that can maintain the consistency in the first image. Just provide an image alongside your text prompt, and you can guide the model to achieve your desired motion, narrative, and audio. Outputs generated with image-to-video will be priced the same as text-to-video outputs.</p>\n   </div>\n   <div class=\"inner-block-content yt-video\">\n    <div class=\"glue-video\">\n     <div class=\"glue-video__container glue-video__container--inline\" data-glue-yt-video-vid=\"nhTMGsytGGA\" id=\"youtube-player-627716\">\n      <iframe frameborder=\"0\" allowfullscreen allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/nhTMGsytGGA?enablejsapi=1&amp;origin=https%3A%2F%2Fdevelopers.googleblog.com&amp;widgetid=3&amp;forigin=https%3A%2F%2Fdevelopers.googleblog.com%2Fen%2Fveo-3-fast-image-to-video-capabilities-now-available-gemini-api%2F&amp;aoriginsup=1&amp;vf=1\" id=\"widget4\" data-gtm-yt-inspected-10=\"true\"></iframe>\n     </div>\n     <div class=\"glue-video__nojs\">\n      <p><a href=\"https://www.youtube.com/watch?v=nhTMGsytGGA\">Link to Youtube Video</a> (visible only when JS is disabled)</p>\n     </div>\n    </div>\n    <div class=\"video-description\">\n     Prompt in footnote (2)\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"z566b\"><b>Image-to-video</b> is designed to give you more creative control and flexibility:</p>\n    <p data-block-key=\"98trq\"></p>\n    <ul>\n     <li data-block-key=\"bsagm\"><b>High-quality video generation:</b> Create fluid, cinematic-quality videos from a single image, maintaining stylistic consistency and detail – all with audio.</li>\n    </ul>\n    <p data-block-key=\"atjev\"></p>\n    <ul>\n     <li data-block-key=\"d0v27\"><b>Precise prompting:</b> Combine image inputs with descriptive text prompts to direct the action, style, and evolution of your video content.</li>\n    </ul>\n    <p data-block-key=\"a02gf\"></p>\n    <ul>\n     <li data-block-key=\"589si\"><b>Seamless API integration:</b> Access this powerful new feature through the same intuitive Gemini API, making it easy to integrate into your existing workflows and applications.</li>\n    </ul>\n    <p data-block-key=\"8gplb\"></p>\n    <p data-block-key=\"bq5h\">Remains $0.75 / second with audio.</p>\n   </div>\n   <div class=\"inner-block-content video-block\">\n    <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/wagtailvideo-u_84efeo_thumb.jpg\">\n     <source src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/OpusClip_AI_B-Roll_by_Veo_3.mp4\" type=\"video/mp4\">\n     <p>Sorry, your browser doesn't support playback for this video</p>\n    </video>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <blockquote data-block-key=\"5m80j\">\n     <b><i><sub>At OpusClip, we use Veo 3 to enhance our customers' video editing experience and generate B-roll videos through its image-to-video capability. Veo 3 takes a static image as the first frame and brings it to life by generating smooth, cinematic motion. This helps creators get engaging video content with minimal effort.</sub></i></b>\n    </blockquote>\n    <h2 data-block-key=\"vnbnc\" id=\"start-building-the-future-of-video-today\"><br>\n      Start building the future of video today</h2>\n    <p data-block-key=\"c8ej2\">We're incredibly excited to see what developers will create with Veo 3, Veo 3 Fast, and image-to-video capabilities via the Gemini API.</p>\n    <p data-block-key=\"c6l17\">Explore the <a href=\"https://ai.google.dev/gemini-api/docs/video\">Gemini API documentation for video generation</a> or the <a href=\"https://github.com/google-gemini/cookbook/blob/main/quickstarts/Get_started_Veo.ipynb\">Veo cookbook</a> and start building today!</p>\n    <p data-block-key=\"83rnc\"><br></p>\n    <hr>\n    <h3 data-block-key=\"zh7d4\" id=\"prompts\"><b>Prompts</b></h3>\n    <p data-block-key=\"c5dto\"><b><i><sup>1:</sup></i></b><i><sup> The sneaker on the billboard suddenly springs to life, its laces tying themselves. It leaps off the screen, landing on the rooftop below with a soft thud, and sprints out of frame. Audio: The sound of tying laces, a digital whoosh, a soft landing sound.</sup></i></p>\n    <p data-block-key=\"fc1n9\"><b><i><sup>2:</sup></i></b><i><sup> The mountain logo on the tote bag subtly animates. The sun in the logo rises along the mountain peak, and tiny birds fly out from it. Audio: A gentle whoosh and a soft bird chirp sound effect.</sup></i></p>\n    <p data-block-key=\"3icgh\"></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 推出 Veo 3 Fast，实现更快、更经济高效的视频生成。Gemini API 为 Veo 3 和 Veo 3 Fast 增加了图像到视频功能。",
+  "oneSentenceSummary": "Google 推出 Veo 3 Fast，实现更快、更经济高效的视频生成。Gemini API 为 Veo 3 和 Veo 3 Fast 增加了图像到视频功能。",
+  "summary": "本文宣布了 Google 的 Veo 视频生成模型的两项重大更新：Veo 3 Fast 及新增图像到视频功能。Veo 3 Fast 是 Veo 3 的优化版本，它优先考虑速度和成本效率，同时保持高质量输出。这使其成为程序化广告、快速原型设计和大规模内容创作的理想选择。Veo 3 和 Veo 3 Fast 现在都支持图像到视频生成。开发者可以通过将图像输入与文本提示相结合，将静态图像转换为一致且动态的视频片段，从而实现精确的创意控制。开发者可以通过 Gemini API 访问这些功能，从而简化其与现有工作流程的集成。本文重点介绍了这两种模型的定价，并包含了 OpusClip 关于实际应用的用例分析。",
+  "mainPoints": [
+    {
+      "point": "Veo 3 Fast 为视频生成提供优化的速度和成本效率。",
+      "explanation": "这种新模型提供了比 Veo 3 更经济、更快速的替代方案，使其适用于大规模、高容量或需要快速迭代的场景，例如广告和社交媒体内容制作。"
+    },
+    {
+      "point": "图像到视频功能增强了创意控制和一致性。",
+      "explanation": "通过允许静态图像作为文本提示的输入，开发者可以精确控制视频内容，确保风格一致性，并从静态视觉效果中生成动态序列。"
+    },
+    {
+      "point": "新功能通过 Gemini API 无缝集成。",
+      "explanation": "通过已建立的 Gemini API 进行访问降低了开发者的使用难度，从而可以轻松地将高级视频生成集成到他们的应用程序和工作流程中。"
+    }
+  ],
+  "keyQuotes": [
+    "Veo 3 Fast 是 Veo 3 的更快、更经济高效的版本，允许开发者在保持高质量的同时创建带有声音的视频，并针对速度和商业应用进行优化。",
+    "我们还将图像到视频功能引入 Veo 3 和 Veo 3 Fast，这使得将静态图像转换为保持一致性的视频片段成为可能。",
+    "只需提供图像以及文本提示，您就可以引导模型实现所需的运动、故事和音频。",
+    "无缝 API 集成：通过相同的直观 Gemini API 访问此强大的新功能，从而可以轻松地集成到您现有的工作流程和应用程序中。"
+  ],
+  "tags": [
+    "视频生成",
+    "AI 模型",
+    "文本到视频",
+    "图像到视频",
+    "生成式 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 543,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753920000000,
+  "publishDateStr": "2025-07-31",
+  "publishDateTimeStr": "2025-07-31 00:00:00"
+}

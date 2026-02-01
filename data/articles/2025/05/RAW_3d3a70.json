@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3d3a70",
+  "title": "被问 tsconfig.json 和 tsconfig.node.json 有什么作用，我懵了……",
+  "url": "https://juejin.cn/post/7500130421608579112",
+  "date": "2025-05-05 14:50:16",
+  "author": "快乐就是哈哈哈",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body></body>\n</html>",
+  "aiSummary": "本文解读了 TypeScript 项目中 tsconfig.json 和 tsconfig.node.json 的作用和区别，尤其是在 Vite 项目中的配置。",
+  "oneSentenceSummary": "本文解读了 TypeScript 项目中 tsconfig.json 和 tsconfig.node.json 的作用和区别，尤其是在 Vite 项目中的配置。",
+  "summary": "文章深入浅出地讲解了 TypeScript 项目中 tsconfig.json 和 tsconfig.node.json 两个配置文件的作用。tsconfig.json 主要用于配置浏览器环境下的 TypeScript 代码，影响代码编译、编辑器智能提示、类型检查严格程度和团队代码规范一致性。tsconfig.node.json 则用于配置 Node.js 环境下的 TypeScript 代码，例如构建脚本和配置文件，可以区分业务代码和 Node 代码的职责。通过拆分 tsconfig.json 和 tsconfig.node.json，可以更好地管理不同运行环境下的 TypeScript 代码，提高项目的可维护性。文章还对比了两个配置文件的目标环境、类型声明支持、使用场景和典型依赖项等方面的区别，并给出了在 Vite 项目中的配置建议，有助于读者更好地理解和使用这两个配置文件。",
+  "mainPoints": [
+    {
+      "point": "tsconfig.json 影响 TypeScript 代码的编译和检查",
+      "explanation": "tsconfig.json 通过配置 compilerOptions 影响代码编译结果、编辑器智能提示、类型检查严格程度和团队代码规范一致性。"
+    },
+    {
+      "point": "tsconfig.json 和 tsconfig.node.json 在目标环境和类型声明支持等方面存在区别",
+      "explanation": "tsconfig.json 面向浏览器环境，通常不包含 node 类型声明，而 tsconfig.node.json 面向 Node.js 环境，显式包含 node 类型声明。"
+    },
+    {
+      "point": "tsconfig.node.json 用于配置 Node.js 环境下的 TypeScript 代码",
+      "explanation": "tsconfig.node.json 用于配置运行在 Node.js 环境下的 TypeScript 代码，例如 vite.config.ts 和 scripts/*.ts，区分业务代码和 Node 代码的职责。"
+    }
+  ],
+  "keyQuotes": [
+    "tsconfig.json 就是 告诉 TypeScript：我要用哪些规则来\"看懂\"和\"检查\"我写的代码。",
+    "tsconfig.node.json 并不是 TypeScript 官方强制的命名，而是一种 **社区约定俗成** 的分离配置方式。",
+    "如果不写 tsconfig.node.json，会出现以下问题：比如你写了一个脚本：`scripts/generate-sitemap.ts`，其中用到了 `fs`、`path`、`url` 等 Node 原生模块，但主 `tsconfig.json` 是为浏览器服务的"
+  ],
+  "tags": [
+    "TypeScript",
+    "TypeScript配置",
+    "tsconfig.json",
+    "Node.js",
+    "Vite"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 4,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746456616000,
+  "publishDateStr": "2025-05-05",
+  "publishDateTimeStr": "2025-05-05 14:50:16"
+}

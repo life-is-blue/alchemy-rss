@@ -1,0 +1,58 @@
+{
+  "id": "RAW_56ba18c7",
+  "title": "Meta 的 React 编译器 1.0 为生产环境带来了自动记忆化",
+  "url": "https://www.infoq.com/news/2025/12/react-compiler-meta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-15 09:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://react.dev\">React</a>, the widely adopted JavaScript library for building user interfaces, has reached a&nbsp;milestone with the stable release of React Compiler 1.0, built on top of nearly a decade of engineering work and compiler learnings&nbsp;that transforms how developers optimize React applications.</p>\n   <p>React Compiler 1.0 is a build-time tool that optimizes React apps through automatic memoization, working on both React and React Native without requiring code rewrites. The compiler has been battle tested on major applications at <a href=\"https://www.meta.com/\">Meta</a> and is now fully production ready. The tool analyzes component data flow and mutability to eliminate unnecessary renders, covering conditional paths that manual <code>useMemo</code> and <code>useCallback</code> implementations cannot handle.</p>\n   <p>The compiler ships with integrated diagnostics in <code>eslint-plugin-react-hooks</code> through the recommended preset, alongside first-party templates for <a href=\"https://expo.dev/\">Expo</a>, <a href=\"https://vite.dev/\">Vite</a>, and <a href=\"https://nextjs.org/\">Next.js</a>. Expo SDK 54 enables the compiler out of the box, while Vite and Next.js offer compiler-enabled starters for new applications. Next.js 16 lists React Compiler support as stable, with the team recommending Next.js version 15.3.1 or later when enabling the compiler.</p>\n   <p>Performance improvements have been substantial in production environments. Meta reports up to 12 percent faster initial loads and more than 2.5 times faster interactions in the Meta Quest Store, though results vary by application. Real-world <a href=\"https://github.com/reactwg/react-compiler/discussions/33\">case studies from Sanity Studio</a> and <a href=\"https://github.com/reactwg/react-compiler/discussions/52\">Wakelet</a> demonstrate measurable performance gains after compiler adoption, with developers reporting noticeable improvements in component rendering efficiency.</p>\n   <p>Additional real-world metrics provide detailed insights into the compiler's impact. Sanity Studio reported significant gains after precompiling their packages with React Compiler, as documented in their <a href=\"https://www.sanity.io/docs/changelog/839f4b18-788b-4e83-b5d9-8cb838a5be9e\">November 2024 changelog</a>:</p>\n   <blockquote>\n    <p>So far, 1,231 out of 1,411 components have been compiled, resulting in a 20 to 30 percent overall reduction in render time and latency. We anticipate even greater improvements as we refactor the remaining 180 components to support auto-memoization.</p>\n   </blockquote>\n   <p>Wakelet shared comprehensive production metrics in their <a href=\"https://github.com/reactwg/react-compiler/discussions/52\">case study</a> after rolling the compiler to 100 percent of users:</p>\n   <blockquote>\n    <p>Overall, our LCP improved by 10 percent (2.6s to 2.4s), and our INP improved by about 15 percent (275ms to 240ms). Doing more granular testing, we saw the biggest gains in elements that were pure React (such as Radix dropdowns), where the INP speedup was closer to 30 percent.</p>\n   </blockquote>\n   <p>Independent testing by developer Nadia Makarevich on a real application of approximately 15,000 lines of code revealed <a href=\"https://developerway.com/posts/how-react-compiler-performs-on-real-code\">mixed results</a>. Initial load performance showed minimal impact, with Lighthouse scores remaining virtually identical before and after enabling the compiler. However, interaction performance improvements varied significantly by use case. In one test measuring a theme toggle interaction, total blocking time dropped from 280ms to zero. In another test involving a checkbox filter interaction, blocking time decreased from 130ms to 90ms, though the compiler failed to eliminate all re-renders due to non-memoized object references from an external library.</p>\n   <p>The compiler's development history traces back to the React team's first exploration into compilers with <a href=\"https://prepack.io/\">Prepack</a> in 2017. While that project was eventually discontinued, the learnings informed the design of Hooks, which were created with a future compiler in mind. In 2021, the first iteration of the current compiler approach was demonstrated, leading to the experimental release at React Conf 2024 and subsequent beta releases throughout the year.</p>\n   <p>Compatibility questions remain with popular libraries. <a href=\"https://github.com/orgs/react-hook-form/discussions/12524\">GitHub discussions</a> reveal that <a href=\"https://react-hook-form.com/\">react-hook-form</a> users report certain functions including useWatch and getValues may encounter issues under the compiler.&nbsp;</p>\n   <p>The React team officially supports the compiler for applications on React 17 and later through an optional <a href=\"https://www.npmjs.com/package/react-compiler-runtime\">react-compiler-runtime</a> package, enabling incremental adoption for teams not ready to upgrade to React 19. Developers currently using earlier versions are encouraged to check compatibility using the <a href=\"https://www.npmjs.com/package/react-compiler-healthcheck/\">react-compiler-healthcheck</a> tool and review the <a href=\"https://react.dev/learn/react-compiler/incremental-adoption\">incremental adoption guide</a> published alongside the 1.0 release. The <a href=\"https://react.dev/blog/2024/04/25/react-19-upgrade-guide\">migration documentation</a> recommends starting with React 18.3, which includes warnings for deprecated APIs needed for React 19 compatibility.</p>\n   <p>React Compiler brings optimization to the existing React ecosystem without requiring framework changes, it&nbsp;adds this capability to React's runtime-focused architecture. The compiler represents a shift in React performance optimization philosophy, moving from manual developer intervention to automated build-time analysis, though the team recommends keeping <code>useMemo</code> and <code>useCallback</code> as escape hatches where effect dependencies demand precise control.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta's React Compiler 1.0 Brings Automatic Memoization to Production\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/react-compiler-meta/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765789200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 的 React 编译器 1.0 已发布，为生产环境的 React 和 React Native 应用带来了自动记忆化功能，显著优化了性能，无需手动修改代码。",
+  "oneSentenceSummary": "Meta 的 React 编译器 1.0 已发布，为生产环境的 React 和 React Native 应用带来了自动记忆化功能，显著优化了性能，无需手动修改代码。",
+  "summary": "Meta 发布了 React 编译器 1.0，这是一个旨在通过记忆化自动优化 React 和 React Native 应用的构建时工具。这款编译器基于多年的工程实践，通过分析组件的数据流和可变性来防止不必要的重新渲染，它能覆盖手动 useMemo 和 useCallback 无法处理的复杂条件路径。该编译器已在 Meta 的应用上进行了广泛测试，并显示出显著的性能提升，例如在 Meta Quest 商店中，初始加载速度提高了 12%，交互速度加快了 2.5 倍。它与 eslint-plugin-react-hooks 集成，并支持 Expo、Vite 和 Next.js 等流行框架。虽然通常能提升性能，但实际案例研究显示结果各异，一些库仍存在兼容性挑战。该编译器通过可选的运行时包支持 React 17+ 及更高版本，标志着从手动优化向自动化构建时分析的转变，尽管手动记忆化仍可作为备用方案。",
+  "mainPoints": [
+    {
+      "point": "React 编译器 1.0 通过记忆化实现了性能优化的自动化。",
+      "explanation": "这个构建时工具通过自动分析组件的数据流和可变性，消除了手动使用 `useMemo` 和 `useCallback` 的需求，从而防止了不必要的重新渲染。"
+    },
+    {
+      "point": "该编译器已在生产环境中展示了显著的性能改进。",
+      "explanation": "Meta 报告称，Meta Quest 商店的初始加载速度提高了 12%，交互速度加快了 2.5 倍，外部案例研究也证实了渲染时间和交互性能方面的显著提升。"
+    },
+    {
+      "point": "它与现有的 React 生态系统和流行框架良好集成。",
+      "explanation": "该编译器内置了集成诊断工具，为 Expo、Vite 和 Next.js 提供了官方模板，并通过可选的运行时包支持 React 17+ 及更高版本，从而促进了其采用。"
+    },
+    {
+      "point": "该编译器代表了 React 性能优化理念上的转变。",
+      "explanation": "它从依赖开发人员手动干预转向自动化构建时分析，旨在减轻开发者负担，同时仍允许手动“备用方案”以进行细粒度控制。"
+    }
+  ],
+  "keyQuotes": [
+    "React 编译器 1.0 是一个构建时工具，它通过自动记忆化优化 React 应用，无需代码重写即可在 React 和 React Native 上运行。",
+    "Meta 报告称，在 Meta Quest 商店中，初始加载速度提高了 12%，交互速度加快了 2.5 倍以上，尽管结果因应用而异。",
+    "迄今为止，1411 个组件中有 1231 个已被编译，总体渲染时间和延迟减少了 20% 到 30%。",
+    "总体而言，我们的 LCP 改善了 10%（从 2.6 秒到 2.4 秒），INP 改善了约 15%（从 275 毫秒到 240 毫秒）。"
+  ],
+  "tags": [
+    "React",
+    "React 编译器",
+    "性能优化",
+    "记忆化",
+    "构建工具"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 680,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765789200000,
+  "publishDateStr": "2025-12-15",
+  "publishDateTimeStr": "2025-12-15 09:00:00"
+}

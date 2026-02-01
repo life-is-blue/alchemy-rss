@@ -1,0 +1,53 @@
+{
+  "id": "RAW_7f434a",
+  "title": "Science 新登，David Baker 团队用 AI 从头设计栩栩如生的酶，比同类设计好 6 万倍",
+  "url": "https://www.jiqizhixin.com/articles/2025-02-14-8",
+  "date": "2025-02-14 08:43:54",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img alt=\"Structure of a computationally designed serine hydrolases enzyme.\" data-imgfileid=\"100021816\" data-ratio=\"0.5619295958279009\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cba22bb7-f435-4b71-544a-2b41ff42dd00/public\" data-type=\"jpeg\" data-w=\"767\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/c6d99b98-e432-4c82-8110-0192db430ad6/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>编辑 | 萝卜皮</p>\n  <p>科学家使用人工智能（AI）从头设计酶的研究往往收效甚微，产生的酶通常在反应的第一步后就会停止。设计具有复杂活性位点并介导多步反应的酶仍然是一项艰巨的挑战。</p>\n  <p>以丝氨酸水解酶为模型系统，华盛顿大学 David Baker 团队将&nbsp;RFdiffusion 的生成能力与用于评估活性位点预组织的集成生成方法相结合，从最小活性位点描述开始设计酶。</p>\n  <p>实验表征表明催化效率（kcat/Km）高达 2.2x10^5 M^−1 s^−1，晶体结构与设计模型非常吻合（Cα RMSDs &lt; 1 Å）。</p>\n  <p>通过选择反应坐标中的结构兼容性，可以在低通量筛选中识别出具有五种不同折叠的新催化剂，这些折叠与天然丝氨酸水解酶的折叠不同。</p>\n  <p>他们设计的酶加速了四步化学反应，而这一反应对许多生物和工业过程至关重要，包括塑料回收。</p>\n  <p>伊利诺伊大学香槟分校合成生物学家 Huimin Zhao 表示：「这是酶工程的一个里程碑。这表明，现在我们有可能设计出具有天然活性的酶，从而使它们具有实用价值。」</p>\n  <p>该研究以「<em>Computational design of serine hydrolases</em>」为题，于 2025 年 2 月 13 日发布在《<em>Science</em>》。</p>\n  <p><img data-height=\"331\" data-imgfileid=\"100021808\" data-ratio=\"0.27314814814814814\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/963a88b3-c1f4-4373-7ee9-4fc91e2b8200/public\" data-type=\"png\" data-w=\"1080\" data-width=\"1213\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/196825bc-ba0e-4e93-949b-b5704c51f2cc/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>迄今为止，关于设计丝氨酸水解酶缺陷的一个假设是，复杂的水解酶活性位点与之前使用的固定蛋白质支架库之间存在潜在的几何不兼容性。</p>\n  <p>「这就像去旧货店买一套西装，而这套西装可能并不完全适合你。当我们尝试以这种方式设计酶时就会发生这种情况。」论文作者之一、西雅图华盛顿大学的蛋白质设计师 Anna Lauko 说。</p>\n  <p>Baker 团队研究了增加支架多样性是否有助于识别更准确地重建所需活性位点的主链，并进行了初步设计活动，在基于核转运因子 2 (NTF2) 折叠的大型支架库中寻找丝氨酸水解酶活性位点的位置。</p>\n  <p>与之前的研究一样，对所得设计的实验表征表明，尽管实验结构与设计结构非常接近，但丝氨酸被激活，但没有对酯类底物进行催化转换。他们怀疑，是由于无法将关键催化特征（例如所有丝氨酸水解酶共有的骨架氧阴离子孔接触）安装到 NTF2 中，所以限制了这些设计的功能。</p>\n  <p>研究人员推断，深度学习在蛋白质设计方面的进步可以使从头开始设计蛋白质，直接搭建丝氨酸水解酶活性位点，并评估整个多步催化循环的设计兼容性。</p>\n  <p>使用 RFdiffusion 搭建功能位点的最新论文表明，该方法可以在一系列设计任务中提高计算机和实验成功率；在这里，Baker 团队旨在使用相同的方法从活性位点的几何描述开始生成丝氨酸水解酶。</p>\n  <p><img data-height=\"1033\" data-imgfileid=\"100021810\" data-ratio=\"1.015732546705998\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/57c799c4-a484-48a8-2b57-6848d1337800/public\" data-type=\"png\" data-w=\"1017\" data-width=\"1017\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/c20975b2-382c-414e-849b-435ba502fcc3/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <section>\n   图示：设计方法。（来源：论文）\n  </section>\n  <p>简单讲，研究人员首先使用一种名为 RFdiffusion 从头生成新酶结构。然后，他们创建了一个名为 PLACER 的深度神经网络，通过模拟酶中原子的位置以及它在反应的每个步骤中与之结合的分子来改进结构设计。</p>\n  <p>研究人员表示，这种 AI 就像一个「过滤器」：它检查酶的活性位点（与分子相互作用的部分）是否兼容且排列正确，以进行反应的每个步骤。Huimin Zhao 表示，这是「非常创新的应用」。</p>\n  <p><strong>实验结果</strong></p>\n  <p>实验表明，该团队的设计具有显著的催化效率、活性位点的复杂性和原子精度，代表了计算酶设计的重大进步。</p>\n  <p>丝氨酸催化三联体加氧阴离子空穴机制涉及复杂的机制，这种机制难以搭建（例如，与 Kemp 消除酶相比，后者在疏水环境中只需要一般碱基），需要对丝氨酸进行化学活化，并通过复杂的多步骤机制进行，该机制贯穿化学稳定的 AEI。</p>\n  <p><img data-height=\"969\" data-imgfileid=\"100021812\" data-ratio=\"0.9380445304937076\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e181c12-d3bb-43cc-40fb-65884c23b700/public\" data-type=\"png\" data-w=\"1033\" data-width=\"1033\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/d8d3d54d-c8ca-41db-8334-c47507ca8735/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>图示：设计的丝氨酸水解酶的功能表征。（来源：论文）</p>\n  <p>这里所设计的丝氨酸水解酶效率高达 2.2x10^5 M^−1 s^−1，对于计算设计的酶而言，这是功能上的重大进步。</p>\n  <p>例如，之前设计的酯酶 OE1 的 kcat/Km = 210 M^−1 s^−1，经过四轮定向进化和超过 12,000 个克隆的筛选后，尽管使用了活性更高的 Nδ-甲基组氨酸亲核试剂，其效率仍达到 3190 M^−1 s^−1。</p>\n  <p>就机制而言，最接近的从头设计研究是将基于半胱氨酸的催化三联体突变为基于肽的螺旋桶，再通过活性更高的硫酯中间体进行，其 kcat/Km 为 3.7 M^−1 s^−1 和 kcat 为 0.0005 s^−1，比这里描述的最高效设计 (momi120-103) 和最高周转设计 (momi120) 分别低 60000 倍和慢 400 倍。</p>\n  <p><img data-height=\"607\" data-imgfileid=\"100021809\" data-ratio=\"0.5775451950523312\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb0d05ec-ebb2-4ea8-2c28-859de7bd7a00/public\" data-type=\"png\" data-w=\"1051\" data-width=\"1051\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/654f87a9-4d52-4737-8fe8-a24a3ea84cb9/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>图示：设计的丝氨酸水解酶的结构表征。（来源：论文）</p>\n  <p>加速化学稳定的酰基酶中间体的水解的能力一直是酶设计领域数十年来的挑战。为了近似计算脱酰速率的提高，研究人员将未催化的乙酸乙酯水解速率[ (2.5–5.0)x10^−10 s^–1]与 momi 脱酰速率常数的下限 (kcat，0.076 s^−1，pH 7.0，25°C) 进行了比较，估计速率提高了 10^8 以上。</p>\n  <p><img data-height=\"966\" data-imgfileid=\"100021811\" data-ratio=\"0.8986046511627906\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ea65f42-04e1-42d2-86a3-3357ba619900/public\" data-type=\"png\" data-w=\"1075\" data-width=\"1075\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/be6bb390-b013-4511-b800-7d1a46477177/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>图示：计算重新设计和更复杂的折叠改善了催化作用。（来源：论文）</p>\n  <p>总体来讲，丝氨酸水解酶的设计跨越了天然酯酶中未曾有过的五倍提升，活性比以前设计的酯酶有显著提高，脱酰作用也加速了，这代表了酶设计的关键进展。</p>\n  <p><strong>讨论与评价</strong></p>\n  <p>在这里，研究人员使用 RFdiffusion 结合 PLACER 集成分析的从头构建方法确保设计的准确性和预组织，这使他们能够通过直接构建来检验这些假设，这应该可以补充基于结构检查、计算分析和定向进化等实验方法优化的更多传统方法。</p>\n  <p><img data-height=\"544\" data-imgfileid=\"100021813\" data-ratio=\"0.525096525096525\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ae3f4a2d-edf0-49e6-0109-f115f2392800/public\" data-type=\"png\" data-w=\"1036\" data-width=\"1036\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/35b76316-c0d9-4fb6-a2dc-0404df820018/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>图示：PLACER 集合揭示了催化的几何决定因素。（来源：论文）</p>\n  <p>以前基于催化三联体的设计未能实现多次周转；在某些情况下，例如该团队基于 NTF2 的初步设计，由于支架限制，主链酰胺氧阴离子空穴无法实现，而在其他基于天然支架的设计中，组氨酸的几何形状难以控制，这可能限制了离去基团和水的活化。</p>\n  <p>利用 RFdiffusion 从特定活性位点向外构建骨架的从头生成方法克服了这些限制，因为它能够生成几乎任何所需的催化几何结构。</p>\n  <p>研究人员进一步表明，深度神经网络 PLACER 可以快速生成一系列反应中间体的集合，以预测预组织，并提供否则需要劳动密集型结构研究的见解。</p>\n  <p>例如，PLACER 揭示了酰基酶中间体中普遍存在的脱靶构象变化，从而为设计缺陷提供反馈，而这些缺陷在仅考虑催化循环中的单一状态时会被忽略。</p>\n  <p>这种方法的价值在于，在使用 PLACER 进行过滤后，实验成功率显著提高，这表明这种集合生成将有利于酶设计的发展。</p>\n  <p>虽然本文描述的设计确实使用了已知机制，但所取样的几何形状和支撑它们的折叠与天然蛋白质中发现的几何形状和折叠不同，PLACER 对这些几何形状提供的见解表明，该方法对于评估没有天然先例的催化几何形状应该很有价值。</p>\n  <p>研究人员表示，使用 RFdiffusion 精确定位多个催化基团以及使用 PLACER 评估整个复杂反应周期中活性位点组织的能力，应该能够在不久的将来设计出各种新型催化剂，例如 PETase、酰胺酶和连接酶。</p>\n  <p>论文链接：<em>https://www.science.org/doi/10.1126/science.adu2454</em></p>\n  <section>\n   相关报道：<em>https://www.nature.com/articles/d41586-025-00488-3 &nbsp;</em>\n  </section>\n </body>\n</html>",
+  "aiSummary": "David Baker 团队利用 AI，从头设计出高效丝氨酸水解酶，催化效率显著提升，为酶工程带来重大进展。",
+  "oneSentenceSummary": "David Baker 团队利用 AI，从头设计出高效丝氨酸水解酶，催化效率显著提升，为酶工程带来重大进展。",
+  "summary": "华盛顿大学 David Baker 团队在《Science》发表论文，展示了使用人工智能从头设计酶的突破性成果。他们结合 RFdiffusion 的生成能力与 PLACER 深度神经网络，从活性位点描述开始设计丝氨酸水解酶，解决了传统酶设计方法在活性位点复杂性和支架兼容性方面的局限性。实验结果表明，该设计具有高达 2.2x10^5 M^-1 s^-1 的催化效率，晶体结构与设计模型高度吻合。通过选择反应坐标中的结构兼容性，研究人员识别出具有五种不同折叠的新催化剂。这种 AI 设计方法加速了四步化学反应，对塑料回收等生物和工业过程至关重要。该研究代表了计算酶设计的重大进步，为设计具有实用价值的天然活性酶开辟了新途径。",
+  "mainPoints": [
+    {
+      "point": "RFdiffusion 与 PLACER 结合，实现从头酶结构设计。",
+      "explanation": "RFdiffusion 负责生成新酶结构，PLACER 深度神经网络模拟酶活性位点与反应分子相互作用，优化结构设计。"
+    },
+    {
+      "point": "AI 设计丝氨酸水解酶，催化效率显著提升。",
+      "explanation": "新设计酶的催化效率高达 2.2x10^5 M^-1 s^-1，超越以往设计，为计算酶设计带来关键进展。"
+    },
+    {
+      "point": "AI 从头设计方法克服了传统酶设计的局限性，为新型催化剂设计开辟了新途径。",
+      "explanation": "传统酶设计在活性位点复杂性和支架兼容性方面存在局限，该研究通过从头设计克服了这些限制。"
+    }
+  ],
+  "keyQuotes": [
+    "这是酶工程的一个里程碑。这表明，现在我们有可能设计出具有天然活性的酶，从而使它们具有实用价值。",
+    "这就像去旧货店买一套西装，而这套西装可能并不完全适合你。当我们尝试以这种方式设计酶时就会发生这种情况。",
+    "利用 RFdiffusion 从特定活性位点向外构建骨架的从头生成方法克服了这些限制，因为它能够生成几乎任何所需的催化几何结构。"
+  ],
+  "tags": [
+    "AI模型",
+    "酶设计",
+    "计算酶设计",
+    "蛋白质设计",
+    "RFdiffusion"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2506,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739522634000,
+  "publishDateStr": "2025-02-14",
+  "publishDateTimeStr": "2025-02-14 08:43:54"
+}

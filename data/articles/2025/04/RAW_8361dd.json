@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8361dd",
+  "title": "阶跃星辰发布图像编辑模型 Step1X-Edit，性能开源最佳 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-04-27-6",
+  "date": "2025-04-27 09:08:00",
+  "author": "新闻助手",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>今日，阶跃星辰发布通用图像编辑模型 Step1X-Edit ，提供人人可用的多模态改图能力，可以帮用户完成日常工作和生活中最高频的 11 类图像编辑任务：包括替换图片中的文字、为人物做美化修图、对画面进行风格迁移和材质变换等。用户在阶跃 AI App 和网页端（stepfun.com）可以免费使用。网友评价，这款改图工具能够“听得懂、改得准、保得住”。</p>\n  <p>Step1X-Edit 模型的总参数量为 19B ，具备语义精准解析、身份一致性保持、高精度区域级控制三项关键能力。为了让模型测试最大程度贴近市场产品需求，阶跃星辰自研了基准测试集 GEdit-Bench，评测数据来源于社区真实编辑请求。根据 GEdit-Bench 的评测结果，Step1X-Edit 在三项核心指标中均大幅领先现有开源模型，达到开源 SOTA（State of the Art，即“当前最佳技术”）水平，在语言理解与图像重构之间实现理想平衡。<img src=\"https://image.jiqizhixin.com/uploads/editor/2284c129-0859-4a67-817c-8cb4ffcb790e/1745744754369.png\" style=\"width: 100%;\" class=\"fr-fic fr-dib\"></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; GEdit-Bench 量化评测结果对比</sup></p>\n  <p>值得一提的是，Step1X-Edit 上线即开源，目前开发者已经可以在 GitHub、HuggingFace、ModelScope 等技术社区调用。</p>\n  <p>根据统计，这是最近一个月阶跃星辰上新的第三款多模态模型，此前还陆续推出了图生视频开源模型和多模态推理模型<strong>。</strong>据统计发现，目前阶跃星辰 Step 系列基座模型矩阵中，多模态模型的占比已经达 7 成。</p>\n </body>\n</html>",
+  "aiSummary": "阶跃星辰发布开源通用图像编辑模型 Step1X-Edit，参数量 19B，在 GEdit-Bench 测试中性能领先，提供 11 类图像编辑功能，并已开源。",
+  "oneSentenceSummary": "阶跃星辰发布开源通用图像编辑模型 Step1X-Edit，参数量 19B，在 GEdit-Bench 测试中性能领先，提供 11 类图像编辑功能，并已开源。",
+  "summary": "阶跃星辰发布了通用图像编辑模型 Step1X-Edit，该模型拥有 19B 参数，旨在为用户提供易于使用的多模态图像编辑能力，涵盖替换文字、美化修图、风格迁移等 11 类常见任务，满足日常工作和生活中的需求。Step1X-Edit 具备语义精准解析、身份一致性保持和高精度区域级控制等关键能力。通过自研基准测试集 GEdit-Bench 的评测，Step1X-Edit 在多项核心指标上超越现有开源模型，达到开源 SOTA 水平。该模型已在 GitHub、HuggingFace、ModelScope 等社区开源。",
+  "mainPoints": [
+    {
+      "point": "Step1X-Edit 在多项指标上达到开源 SOTA 水平",
+      "explanation": "在 GEdit-Bench 的评测中，Step1X-Edit 在语义理解和图像重构之间实现了理想的平衡，性能大幅领先现有开源模型。"
+    },
+    {
+      "point": "Step1X-Edit 模型提供 11 类图像编辑功能",
+      "explanation": "该模型支持替换文字、美化修图、风格迁移等多种图像编辑任务，满足用户在工作和生活中的高频需求。"
+    },
+    {
+      "point": "GEdit-Bench 基准测试集保证评测贴近市场需求",
+      "explanation": "阶跃星辰自研的 GEdit-Bench 评测数据来源于社区真实编辑请求，使得模型测试结果更具实际参考价值。"
+    }
+  ],
+  "keyQuotes": [
+    "这款改图工具能够 \"听得懂、改得准、保得住\"",
+    "Step1X-Edit 模型的总参数量为 19B ，具备语义精准解析、身份一致性保持、高精度区域级控制三项关键能力。",
+    "根据 GEdit-Bench 的评测结果，Step1X-Edit 在三项核心指标中均大幅领先现有开源模型，达到开源 SOTA 水平，在语言理解与图像重构之间实现理想平衡。"
+  ],
+  "tags": [
+    "图像编辑",
+    "图像生成",
+    "多模态模型",
+    "开源模型",
+    "Step1X-Edit"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 484,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745744880000,
+  "publishDateStr": "2025-04-27",
+  "publishDateTimeStr": "2025-04-27 09:08:00"
+}

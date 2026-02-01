@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ddf7a3",
+  "title": "Llama 4 发布：我看到了 DeepSeek 的影子",
+  "url": "https://mp.weixin.qq.com/s/4BldfU5gu6BmZe2t2OuZqA",
+  "date": "2025-04-06 05:33:48",
+  "author": "金色传说大聪明",
+  "siteName": "赛博禅心",
+  "content": null,
+  "aiSummary": "Meta 发布 Llama 4，采用 MoE 架构和原生多模态，通过 Behemoth 模型优化 Scout 和 Maverick 性能，标志着 Meta 在 AI 模型发展路线上的一次重要调整。",
+  "oneSentenceSummary": "Meta 发布 Llama 4，采用 MoE 架构和原生多模态，通过 Behemoth 模型优化 Scout 和 Maverick 性能，标志着 Meta 在 AI 模型发展路线上的一次重要调整。",
+  "summary": "文章分析了 Meta 最新发布的 Llama 4 模型，与 Llama 3 相比，Llama 4 采用了 MoE 架构，并引入原生多模态，图像直接作为 token 输入，参与语言上下文建模。Llama 4 包含三款模型：Scout、Maverick 和 Behemoth。Scout 适用于文档分析、多轮对话和代码等任务，Maverick 对标 GPT-4o，推理成本仅为其十分之一，Behemoth 不对外开放，用于为 Scout 和 Maverick 生成训练数据。文章还提到 DeepSeek 在 R1 和 V3 中也采用了类似 MoE 的架构。Llama 4 的发布标志着 Meta 从追求单一最强模型转向构建完整 AI 生态系统，也预示着 AI 模型发展的新方向，Meta 将更多资源投入到训练系统本身，而不是执着于最强模型上线。",
+  "mainPoints": [
+    {
+      "point": "Llama 4 采用 MoE 架构，提升模型能力密度",
+      "explanation": "通过可控的计算开销，实现模型能力密度的提升，但 MoE 架构存在调度复杂、专家平衡等训练难题。"
+    },
+    {
+      "point": "原生多模态架构使图文在训练中一体建模",
+      "explanation": "与 Llama 3 相比，Llama 4 图像直接作为 token 输入，参与语言上下文建模，提升了在 DocVQA 和 ChartQA 等任务上的表现。"
+    },
+    {
+      "point": "Meta 战略性地使用 Behemoth 模型生成训练数据，优化 Scout 和 Maverick，标志着训练范式的转变",
+      "explanation": "Meta 不再执着于最强模型上线，而是选择把最大资源投入到训练系统本身，通过 Behemoth 为 Scout 和 Maverick 提供能力示范。"
+    }
+  ],
+  "keyQuotes": [
+    "一个用、一主力、一教学，不卷彼此，也不试图通吃所有任务。",
+    "图文不是模型之后拼出来的，而是在训练中就一体建模的语境单位。",
+    "Scout 是部署，Maverick 是交付，Behemoth 是理解力的源头"
+  ],
+  "tags": [
+    "大语言模型",
+    "MoE",
+    "多模态",
+    "Llama 4",
+    "Meta"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1154,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e02139",
+  "sourceName": "赛博禅心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743917628000,
+  "publishDateStr": "2025-04-06",
+  "publishDateTimeStr": "2025-04-06 05:33:48"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ac3301d7",
+  "title": "Salesforce 将 1，000 多个 EKS 集群迁移至 Karpenter，提升扩缩容速度与效率",
+  "url": "https://www.infoq.com/news/2026/01/salesforce-eks-karpenter/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-20 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.salesforce.com/eu/?ir=1\">Salesforce</a> has <a href=\"https://aws.amazon.com/blogs/architecture/how-salesforce-migrated-from-cluster-autoscaler-to-karpenter-across-their-fleet-of-1000-eks-clusters/\">completed a phased migration</a> of more than 1,000 Amazon <a href=\"https://aws.amazon.com/eks/\">Elastic Kubernetes Service</a> (EKS) clusters from the Kubernetes Cluster Autoscaler to <a href=\"https://karpenter.sh/\">Karpenter</a>, AWS’s open-source node-provisioning and autoscaling solution. The large-scale transition aimed to reduce scaling latency, simplify operations, cut costs, and enable more flexible, self-service infrastructure for internal developers across the company's extensive Kubernetes fleet.</p>\n   <p dir=\"ltr\">Facing limitations with Auto Scaling group-based autoscaling and the Cluster Autoscaler, including slow scale-up times, poor utilization across availability zones, and a proliferation of thousands of node groups, Salesforce’s platform team built custom tooling to automate and manage the migration safely and reliably. This approach combined carefully orchestrated node transitions with automation that respected <a href=\"https://www.cloudbolt.io/kubernetes-pod-scheduling/pod-disruption-budgets/\">Pod Disruption Budgets</a> (PDBs), supported rollback paths, and integrated with the company’s CI/CD provisioning pipelines.</p>\n   <p dir=\"ltr\">The migration journey began in mid-2025 with lower-risk environments and progressed through testing and validation phases before production adoption in early 2026. Salesforce’s engineers developed an in-house Karpenter transition tool and patching checks that handled node rotation, <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html\">Amazon Machine Image</a> (AMI) validation, and graceful pod eviction, enabling repeatable and consistent conversion across diverse node pool configurations.</p>\n   <p dir=\"ltr\">Through this transition, the team resolved operational challenges such as misconfigured PDBs that blocked node replacements, <a href=\"https://kubernetes.io/\">Kubernetes</a> label length constraints that caused automation failures, and workload patterns where Karpenter’s efficient bin-packing needed adjustments to prevent disruptions for single-replica applications. These insights led to refined practices, including proactive policy validation and workload-aware disruption strategies.</p>\n   <p dir=\"ltr\">Salesforce <a href=\"https://www.linkedin.com/posts/mahdi-sajjadpour-4866494_how-salesforce-migrated-from-cluster-autoscaler-activity-7416878063562502145-xWiC\">reported </a>measurable operational and cost improvements following the migration. By adopting Karpenter's dynamic provisioning model, cluster scaling latency decreased from minutes to seconds, node utilization improved through smarter bin-packing, and reliance on static Auto Scaling groups was significantly reduced.</p>\n   <p dir=\"ltr\">Operational overhead decreased by approximately 80%, as automated processes replaced manual node group management, enabling developers to declare node pool configurations themselves. This acceleration of onboarding reduced dependency on central platform teams. Additionally, initial results showed cost savings of about 5% in FY2026, with an anticipated further 5–10% reduction in FY2027 as Karpenter's bin-packing and spot instance utilization continue to optimize resources.</p>\n   <p dir=\"ltr\">Salesforce's migration highlights broader trends in large-scale Kubernetes operations, where traditional autoscaling mechanisms struggle to keep pace with dynamic workloads and heterogeneous infrastructure demands. Karpenter's real-time decision-making, support for heterogeneous instance types (including GPU and ARM), and tighter integration with cloud APIs enable faster responsiveness and more efficient node usage compared to Cluster Autoscaler.</p>\n   <p dir=\"ltr\">Other organizations undertaking large-scale transitions from traditional Kubernetes autoscaling to more dynamic solutions like Karpenter have faced many of the same structural challenges that Salesforce documented. For example, <a href=\"https://reinvent.awsevents.com/content/dam/reinvent/2024/slides/pro/PRO303_Scaling-to-new-heights-Coinbase-migrates-to-Amazon-EKS-and-scales-10x.pdf\">Coinbase </a>has publicly described its move toward Karpenter to handle complex mixed-workload clusters with variable demand patterns, citing improvements in scale-up latency and resource efficiency while reducing operational friction caused by static node groups. In a similar vein, <a href=\"https://aws.amazon.com/blogs/industries/transforming-the-bmw-connected-vehicle-backend-with-karpenter/\">BMW Group </a>shared how adopting Karpenter across its automotive platforms allowed better use of spot instances and workload-aware scheduling, enabling faster developer feedback loops and reduced infrastructure cost volatility. These cases echo Salesforce's observation that Cluster Autoscaler's reliance on predefined Auto Scaling groups and slower decision paths can hinder responsiveness in environments with diverse and bursty workloads.</p>\n   <p dir=\"ltr\">What sets Salesforce's migration apart is its scale and automation tooling: transitioning over 1,000 distinct EKS clusters required bespoke tooling to handle policy validation, Pod Disruption Budget constraints, Kubernetes label limits, and incremental rollout automation at a fleet level. Other companies have reported benefits from Karpenter in individual clusters or smaller fleets, but Salesforce's approach emphasizes repeatable, automated conversion at enterprise scale with integrated rollback and compliance safeguards. In practice, this meant not just replacing autoscaling logic, but also harmonizing workload patterns, governance controls, and developer self-service expectations across a global platform. While the end goals: faster scaling, better utilization, and reduced manual overhead, are shared across these migrations, Salesforce's blueprint highlights the operational discipline and custom automation required to bring such benefits to large, production-critical environments.</p>\n   <p dir=\"ltr\">As enterprises increasingly adopt Kubernetes for mission-critical services, Salesforce's experience offers a blueprint for other organizations weighing similar transitions, demonstrating that automated, federated autoscaling can lead to substantial gains in performance, cost efficiency, and developer velocity - provided that careful planning and tooling support underpin the change.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Salesforce Migrates 1,000+ EKS Clusters to Karpenter to Improve Scaling Speed and Efficiency\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/salesforce-eks-karpenter/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768910400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Salesforce 成功将 1，000 多个 EKS 集群迁移至 AWS Karpenter，实现了运维开销降低 80%，并在扩缩容速度和成本效率方面取得了显著提升。",
+  "oneSentenceSummary": "Salesforce 成功将 1，000 多个 EKS 集群迁移至 AWS Karpenter，实现了运维开销降低 80%，并在扩缩容速度和成本效率方面取得了显著提升。",
+  "summary": "本文详细介绍了 Salesforce 将其 1，000 多个 EKS 集群从传统的 Kubernetes Cluster Autoscaler 大规模迁移到 AWS Karpenter 的过程。面对扩缩容缓慢和资源利用率低等局限，Salesforce 开发了定制的自动化工具来处理节点轮转、AMI 验证和 Pod 优雅驱逐。这一转变将基础设施从静态的 Auto Scaling Groups 转向了动态的、感知工作负载的配置模型。核心成果包括：扩缩容延迟从分钟级降至秒级，通过开发人员自服务使运维开销降低了 80%，并预计到 2027 财年可节省高达 15% 的成本。报告还强调了遇到的技术挑战，如 PDB 配置错误和标签限制，为企业级 Kubernetes 优化提供了蓝图。",
+  "mainPoints": [
+    {
+      "point": "迁移至 Karpenter 实现了亚分钟级扩缩容和卓越的资源装箱（Bin-packing）能力。",
+      "explanation": "通过摆脱 EC2 Auto Scaling Groups，Salesforce 将扩缩容延迟从分钟级缩短至秒级，并通过 Karpenter 基于工作负载的实时配置提高了节点利用率。"
+    },
+    {
+      "point": "定制自动化对于企业级规模的全量集群迁移至关重要。",
+      "explanation": "Salesforce 构建了内部工具来管理 1，000 多个集群，确保迁移过程遵循 Pod 中断预算（PDB），并处理了诸如标签长度限制等 Kubernetes 特有的约束。"
+    },
+    {
+      "point": "去中心化的基础设施管理将运维开销降低了 80%。",
+      "explanation": "此次转型允许内部开发人员声明自己的节点池配置，显著减少了对中央平台团队的依赖，并加速了业务接入过程。"
+    },
+    {
+      "point": "通过动态配置和抢占式实例实现了显著的成本节约。",
+      "explanation": "通过改进装箱算法和更好地利用抢占式实例（Spot Instances），初始成本降低了 5%，预计随着系统成熟将达到 10-15%。"
+    }
+  ],
+  "keyQuotes": [
+    "通过采用 Karpenter 的动态配置模型，集群扩缩容延迟从分钟级降低到了秒级。",
+    "随着自动化流程取代了手动节点组管理，运维开销降低了约 80%。",
+    "Salesforce 迁移的独特之处在于其规模和自动化工具：迁移超过 1，000 个独立的 EKS 集群需要定制化的工具支持。",
+    "与 Cluster Autoscaler 相比，Karpenter 的实时决策能力……实现了更快的响应速度和更高效的节点利用率。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "AWS EKS",
+    "Karpenter",
+    "云基础设施",
+    "自动扩缩容"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 687,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768910400000,
+  "publishDateStr": "01-20",
+  "publishDateTimeStr": "2026-01-20 12:00:00"
+}

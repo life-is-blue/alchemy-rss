@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c94545d5",
+  "title": "LLM 评估：最佳实践与方法",
+  "url": "https://www.databricks.com/blog/best-practices-and-methods-llm-evaluation",
+  "date": "2025-10-28 17:20:18",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <h2>Understanding LLM Evaluation</h2>\n  <p>As more companies lean into the technology and promise of <a data-external-link=\"true\" href=\"https://www.databricks.com/product/artificial-intelligence\">artificial intelligence</a> (AI) systems to drive their businesses, many are implementing <a data-external-link=\"true\" href=\"https://www.databricks.com/product/machine-learning/large-language-models\">large language models</a> (LLMs) to process and produce text for various applications. LLMs are trained on vast amounts of text data to understand and generate human-like language, and they can be deployed in systems such as chatbots, content generation and coding assistance.</p>\n  <p>LLMs like Open AI’s GPT-4.1, Anthropic’s Claude, and open-source models such as Meta’s Llama leverage deep learning techniques to process and produce text. But these are still nascent technologies, making it crucial to frequently evaluate their performance for reliability, efficiency and ethical considerations prior to – and throughout – their deployment. In fact, regular evaluation of LLMs can:</p>\n  <ol>\n   <li>Ensure that models generate accurate, coherent and contextually relevant responses.</li>\n   <li>Allow researchers and developers to continually compare models and identify areas for improvement.</li>\n   <li>Prevent any biases, misinformation or harmful content.</li>\n  </ol>\n  <p>Nearly every industry – from healthcare and finance, to education and electronics – are relying on LLMs to give them a competitive edge, and robust evaluation procedures are critical to maintaining high standards in <a data-external-link=\"true\" href=\"https://www.databricks.com/glossary/llmops\">LLM development</a>. In fact, as enterprises increasingly deploy LLMs into customer-facing and high-stakes domains, robust evaluation is the linchpin for safe, reliable and <a data-external-link=\"true\" href=\"https://www.databricks.com/discover/generative-ai\">cost-effective GenAI</a> adoption.</p>\n  <p>LLM evaluation involves three fundamental pieces:</p>\n  <p><strong>Evaluation metrics:</strong> These metrics are used to assess a model’s performance based on predefined criteria, such as accuracy, coherence or bias.</p>\n  <p><strong>Datasets:</strong> This is the data against which the LLM's outputs are compared. High-quality <a data-external-link=\"true\" href=\"https://www.databricks.com/spark/getting-started-with-apache-spark/datasets\">datasets</a> help provide an objective ground truth for evaluation.</p>\n  <p><strong>Evaluation frameworks:</strong> Structured methodologies and tools help facilitate the assessment process, which ensures the results are consistent and reliable.</p>\n  <h2>Exploring LLM Evaluation Metrics</h2>\n  <p>There are numerous methods by which LLMs can be evaluated, but they can broadly be classified as either quantitative or qualitative. Quantitative metrics rely on numerical scores derived from automated assessments and provide objective and scalable insights. Qualitative metrics involve human judgment, assessing aspects like fluency, coherence and ethical considerations.</p>\n  <p><a data-external-link=\"true\" href=\"https://www.databricks.com/blog/LLM-auto-eval-best-practices-RAG\">LLM evaluation</a> metrics can also be categorized based on their dependency on reference outputs:</p>\n  <p><strong>Reference-based metrics:</strong> These compare model outputs to a set of predefined correct responses. Some examples of reference-based metrics include:</p>\n  <ul>\n   <li><strong>The Bilingual Evaluation Understudy (BLEU):</strong> Originally designed for machine translation, BLEU measures n-gram overlap between machine-generated and reference text, focusing on precision.</li>\n   <li><strong>The Recall-Oriented Understudy for Gisting Evaluation (ROUGE):</strong> Commonly used in summarization, ROUGE assesses how much of the reference content is captured in the model output.</li>\n  </ul>\n  <p><strong>Reference-free metrics</strong> assess outputs without requiring a reference answer, and instead focus on the intrinsic qualities of a generated text. They are useful for evaluating open-ended text generation tasks, where a single \"correct\" reference may not exist or be appropriate, such as dialogue systems, creative writing or reasoning-based outputs.</p>\n  <p>Some examples of reference-free metrics include:</p>\n  <ul>\n   <li><strong>Perplexity:</strong> This approach measures how well a model predicts the next word in a sequence. Lower perplexity implies better predictive capability, though it doesn’t always correlate with generation quality in real-world tasks.</li>\n   <li><strong>Toxicity and bias:</strong> Users must ensure LLM outputs avoid issues like bias, harmful content, disinformation, misinformation or hallucination. Tools like RealToxicityPrompts provide benchmark prompts to test for toxic degeneration in LLM outputs.</li>\n   <li><strong>Coherence:</strong> This refers to the ability of a model to stay focused on a specific theme or idea. Coherence scores evaluate things like linguistic structure, semantic consistency and logical progression within the text itself.</li>\n  </ul>\n  <p>Aside from reference-based and reference-free metrics, there are other benchmarks researchers can use to evaluate the quality of an LLM’s output.</p>\n  <ol>\n   <li><strong>Massive Multitask Language Understanding (MMLU):</strong> This benchmark evaluates a model’s performance across multiple domains, testing its general knowledge and reasoning abilities.</li>\n   <li><strong>Recall-Oriented Tasks:</strong> These include metrics like ROUGE, which assess how well a model retrieves and synthesizes information.</li>\n   <li><strong>BERTScore:</strong> Evaluates text generation by comparing the similarity between model-generated text and a reference using contextual embeddings from the Bidirectional Encoder Representations from Transformers (BERT). This is a reference-based metric using contextual embeddings from BERT to measure semantic similarity between generated and reference text.</li>\n  </ol>\n  <p>The first step in evaluating an LLM is to use a dataset that is diverse, representative and unbiased. It should include real-world scenarios to assess the model’s performance in practical applications.</p>\n  <p>Additionally, by curating datasets from various sources, you can ensure coverage across multiple domains and incorporate opposing examples to enhance the evaluation process.</p>\n  <p>One technique for evaluating outputs is the LLM-as-a-Judge, where an <a data-external-link=\"true\" href=\"https://www.databricks.com/glossary/ai-models\">AI model</a> is used to evaluate another AI model according to predefined criteria. This solution can be scalable and efficient and is ideal for text-based products such as chatbots, Q&amp;A systems or agents. The success of these LLM judges hinges on the quality of the prompt, model and complexity of the task.</p>\n  <p>While automated metrics provide consistency and scalability, real humans are essential for assessing nuances in generated text, such as coherence, readability and ethical implications. Crowdsourced annotators or subject matter experts can provide qualitative assessments on quality and accuracy of an LLM’s outputs.</p>\n  <p>It is important to determine what factors will guide an evaluation, as each context requires a tailored evaluation approach. For example, LLMs used in customer service must be assessed for accuracy and sentiment alignment, while those used in creative writing should be evaluated for originality and coherence.</p>\n </body>\n</html>",
+  "aiSummary": "本文总结了 LLM 评估的最佳实践与方法，包括 AI 部署所需的关键指标、数据集与框架。",
+  "oneSentenceSummary": "本文总结了 LLM 评估的最佳实践与方法，包括 AI 部署所需的关键指标、数据集与框架。",
+  "summary": "本文强调了对大型语言模型(LLM)进行稳健评估的重要性，尤其是在聊天机器人和内容生成等应用中。评估有助于确保准确性，发现改进点，并防止偏差或有害内容。它围绕三个基本组成部分构建 LLM 评估：评估标准、数据集和评估框架。然后，讨论将指标分为定量（自动、客观）和定性（基于人类判断）两种。定量指标包括 BLEU 和 ROUGE 等基于参考的指标，用于比较输出与预定义答案。定性指标包括困惑度、毒性和连贯性等无参考指标，用于评估内在质量。它还提到了 MMLU 和 BERTScore 等基准。文章强调了多样化和无偏见的数据集的必要性，介绍了“LLM-as-a-Judge”等用于可扩展评估的先进技术，并强调了人类评估员对于深入评估的不可替代的作用。最终，它提倡一种根据具体应用要求量身定制的评估方法。",
+  "mainPoints": [
+    {
+      "point": "LLM 评估对于确保准确性、可靠性和伦理部署至关重要，尤其是在企业应用程序中。",
+      "explanation": "定期评估有助于识别改进领域，防止有害内容，并作为在各个行业安全且具有成本效益地采用 GenAI 的关键。"
+    },
+    {
+      "point": "LLM 评估包括指标(评估性能)、数据集(对比基准)和框架(结构化方法)。",
+      "explanation": "这三个基本要素提供了一种全面的方法来系统地衡量和改进 LLM 性能，从而确保一致且可靠的结果。"
+    },
+    {
+      "point": "结合自动化指标(BLEU、ROUGE、困惑度)与人工审核，可有效评估客观性能与主观质量(连贯性、可读性、伦理影响等)。",
+      "explanation": "自动化指标（BLEU、ROUGE、困惑度）和人工审核的结合对于评估客观性能和主观质量（如连贯性、可读性和伦理影响）至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "事实上，随着企业越来越多地将 LLM 部署到面向客户和高风险领域，强大的评估是安全、可靠且具有成本效益地采用 GenAI 的关键。",
+    "LLM 评估涉及三个基本要素：评估标准、数据集、评估框架。",
+    "无参考指标评估生成文本的内在质量，无需参考答案。",
+    "评估 LLM 的第一步是使用多样化、具有代表性和无偏见的数据集。",
+    "虽然自动化指标提供了一致性和可扩展性，但真正的人对于评估生成文本中的细微差别（如连贯性、可读性和伦理影响）至关重要。"
+  ],
+  "tags": [
+    "LLM 评估",
+    "机器学习",
+    "AI 模型",
+    "评估标准",
+    "GenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 877,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761672018000,
+  "publishDateStr": "2025-10-28",
+  "publishDateTimeStr": "2025-10-28 17:20:18"
+}

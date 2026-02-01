@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d2a8f3",
+  "title": "文生图进入 R1 时代：港中文发布 T2I-R1，让 AI 绘画\"先推理再下笔\"",
+  "url": "https://www.qbitai.com/2025/05/282916.html",
+  "date": "2025-05-14 08:38:33",
+  "author": "鱼羊",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"55\">港中文MMLab团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"61\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">“先推理、再作答”，语言大模型的Thinking模式，现在已经被拓展到了图片领域。</p>\n  <p data-track=\"3\">近日，港中文MMLab团队发布了第一个基于强化学习的推理增强文生图模型：T2I-R1。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ff26c294-31ef-4e38-0b16-f67c18dd2d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ff26c294-31ef-4e38-0b16-f67c18dd2d00/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"4\">△文生图进入R1时刻：港中文MMLab发布T2I-R1</p>\n  <p data-track=\"5\">大家都知道，OpenAI o1和DeepSeek-R1这类的大语言模型（LLMs），已经在解数学题和写代码这些需要“动脑筋”的事情上面展现出了较高的水平。</p>\n  <p data-track=\"6\">这些模型通过强化学习（RL），先使用全面的思维链（CoT）逐步分析问题，推理后再提供答案。</p>\n  <p data-track=\"7\">这种方法大大提高了答案的准确性，很适合用于处理一些复杂问题。</p>\n  <p data-track=\"8\">同理，如果能把强化学习应用在图片理解的多模态大模型中（LMMs），像是图片理解或者文生图这样的任务就能解决得更加出色。</p>\n  <p data-track=\"9\">想法是好的，但在实际操作中总会碰到一些问题：</p>\n  <p data-track=\"10\">比如，该如何将语义和生成结合起来，让语义理解服务于图像生成？</p>\n  <p data-track=\"11\">又比如，如何对图像生成的结果进行质量评估，让模型在生成中学习？</p>\n  <p data-track=\"12\">目前<strong>CoT推理策略如何应用于自回归的图片生成</strong>领域仍然处于探索阶段，港中文MMLab之前的工作Image Generation with CoT（链接见文末）对这一领域就有过首次初步的尝试：通过关注多种推理技术，找到了有效适应图像生成的推理方法，并提出了专门用于自回归图像生成的评估奖励模型。</p>\n  <p data-track=\"13\">而T2I-R1在此基础上首次提出了<strong>双层级的CoT推理框架</strong>和<strong>BiCoT-GRPO强化学习方法</strong>。</p>\n  <p data-track=\"14\">无需额外模型，即可实现文本到图像生成的推理应用。</p>\n  <p data-track=\"16\">与图片理解不同，图片生成任务需要跨模态的文本与图片的对齐以及细粒度的视觉细节的生成。</p>\n  <p data-track=\"17\">传统的推理方法很难同时兼顾两种能力，而现有的自回归生成模型（如VAR）缺乏显式的语义级推理能力。</p>\n  <p data-track=\"18\">为此，港中文团队提出了<strong>适用于图片生成的两个不同层次的CoT推理</strong>：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4693eb73-226b-4c72-5521-d700e0266100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4693eb73-226b-4c72-5521-d700e0266100/public\">\n  </div>\n  <p data-track=\"19\"><strong>Semantic-level CoT</strong></p>\n  <ul>\n   <li data-track=\"20\">Semantic-level CoT 是对于要生成的图像的文本推理，在图像生成之前进行。</li>\n   <li data-track=\"21\">负责<strong>设计图像的全局结构</strong>，例如每个对象的外观和位置。</li>\n   <li data-track=\"22\">优化Semantic-level CoT可以在图片Token的生成之前显式地对于Prompt进行规划和推理，使生成更容易。</li>\n  </ul>\n  <p data-track=\"23\"><strong>Token-level CoT</strong></p>\n  <ul>\n   <li data-track=\"24\">Token-level CoT是图片Token的逐块的生成过程。这个过程可以被视为一种CoT形式，因为它同样是在离散空间中基于所有先前的Token输出后续的Token，与文本CoT类似。</li>\n   <li data-track=\"25\">Token-level CoT<strong>更专注于底层的细节</strong>，比如像素的生成和维持相邻Patch之间的视觉连贯性。</li>\n   <li data-track=\"26\">优化Token-level CoT可以提高生成图片的质量以及Prompt与生成图片之间的对齐。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d1ff5a14-dd7f-498f-4a2e-f6600bc06b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d1ff5a14-dd7f-498f-4a2e-f6600bc06b00/public\">\n  </div>\n  <p data-track=\"28\">然而，尽管认识到这两个层次的CoT，一个关键问题仍然存在：<strong>我们怎么协调与融合它们？</strong></p>\n  <p data-track=\"29\">当前主流的自回归图片生成模型，如VAR，完全基于生成目标进行训练，缺乏Semantic-level CoT推理所需的显式文本理解。</p>\n  <p data-track=\"30\">虽然引入一个专门用于提示解释的独立模型（例如LLM）在技术上是可行的，但这种方法会显著增加计算成本、复杂性和部署的困难。</p>\n  <p data-track=\"31\">最近也出现了一种将视觉理解和生成合并到单一模型中的趋势：在LMMs的基础上，这些结合了视觉理解和生成的统一LMMs（ULMs）不仅可以理解视觉输入，还可以根据文本提示生成图像。</p>\n  <p data-track=\"32\">可是，它们的两种能力仍然是分开的，通常在两个独立阶段进行预训练。还没有明确的证据表明，理解能力可以使生成受益。</p>\n  <p data-track=\"33\">鉴于这些潜力和问题，团队<strong>从一个ULM（Janus-Pro）开始，增强它以将Semantic-level CoT以及Token-level CoT统一到一个框架</strong>中用于文本生成图像：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9e1defe9-d2c6-4e5f-0672-0d3759221d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9e1defe9-d2c6-4e5f-0672-0d3759221d00/public\">\n  </div>\n  <p data-track=\"35\">在双层级CoT框架的理论基础上，团队提出了<strong>BiCoT-GRPO</strong>，一种使用强化学习的方法来联合优化ULM的两个层次的CoT：</p>\n  <p data-track=\"36\">首先，指示ULM基于Image Prompt来想象和规划图像，获得Semantic-level CoT。</p>\n  <p data-track=\"37\">然后，将Image Prompt和Semantic-level CoT重新输入ULM来生成图片以获得Token-level CoT。</p>\n  <p data-track=\"38\">这样便能对一个Image Prompt生成多组Semantic-level CoT和Token-level CoT，又对得到的图像计算组内的相对奖励，从而更新GRPO，在一个训练迭代内同时优化两个层次的CoT。</p>\n  <p data-track=\"39\">BiCoT-GRPO方法首次在单一RL步骤中协同优化语义规划与像素生成，相比起分阶段训练效率更高、计算成本更低。</p>\n  <p data-track=\"41\">与图片的理解任务不同，理解任务有明确定义的奖励规则，而图像生成中不存在这样的标准化的规则。</p>\n  <p data-track=\"42\">为此，港中文团队提出使用多个不同的视觉专家模型的集成来作为奖励模型。这种奖励设计有两个关键的目的：</p>\n  <ol start=\"1\">\n   <li data-track=\"43\">它从多个维度评估生成的图像以确保可靠的质量评估。</li>\n   <li data-track=\"44\">它作为一种正则化方法来防止ULM过拟合到某个单一的奖励模型。</li>\n  </ol>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c3199b9b-243b-4d4d-968f-d1d7b2b25c00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c3199b9b-243b-4d4d-968f-d1d7b2b25c00/public\">\n  </div>\n  <p data-track=\"45\">根据上述方法，该团队获得了<strong>T2I-R1</strong>——这是第一个基于强化学习的推理增强的文生图模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4b34493-23c3-4e96-39e9-48f1c0c1cd00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4b34493-23c3-4e96-39e9-48f1c0c1cd00/public\">\n  </div>\n  <p data-track=\"46\">根据T2I-R1生成的图片，团队发现模型能够<strong>通过推理Image Prompt背后的真实意图来生成更符合人类期望的结果，并在处理不寻常场景时展现出增强的鲁棒性</strong>。</p>\n  <p data-track=\"47\">同时，下面的可视化结果表明，<strong>Semantic-level CoT</strong>明显有助于猜测出用户的真实想法。</p>\n  <p data-track=\"48\">比如右上角的例子，加入了Semantic-level CoT的模型猜到了prompt指的是故宫；而Token-level CoT则负责得到更美观的图像。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c54fed6e-f3cf-47fa-5968-c203ca124900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c54fed6e-f3cf-47fa-5968-c203ca124900/public\">\n  </div>\n  <p data-track=\"49\">定量的实验结果也表明了该方法的有效性：</p>\n  <p data-track=\"50\">T2I-R1在T2I-CompBench和WISE在Benchmark上分别比baseline模型提高了13%和19%的性能，在多个子任务上甚至超越了之前最先进的模型FLUX.1。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4dbcd8b-2e36-4de0-a74e-aa7ae7adf400/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4dbcd8b-2e36-4de0-a74e-aa7ae7adf400/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"文生图进入R1时代：港中文发布T2I-R1，让AI绘画“先推理再下笔”\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d97d4714-31ab-4e0a-7784-edf006d47200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d97d4714-31ab-4e0a-7784-edf006d47200/public\">\n  </div>\n  <p data-track=\"51\">综上所述，T2I-R1的出现证明了CoT在图像生成中的有效性，实现了高效可拓展的生成架构，为多模态生成任务提供了新的推理增强范式。</p>\n  <p data-track=\"52\">在未来，T2I-R1的框架或能进一步拓展至视频生成、3D内容合成等复杂序列生成任务，推动生成式AI向”能思考、会创作”的通用智能体演进。</p>\n  <p data-track=\"53\"><em>前序工作（Image Generation with CoT）：</em></p>\n  <p data-track=\"54\"><em><br>\n     https://github.com/ZiyuGuo99/Image-Generation-CoT</em><em><br></em><em>论文：<br>\n     https://arxiv.org/pdf/2505.00703</em><em><br></em><em>代码：<br>\n     https://github.com/CaraJ7/T2I-R1</em></p>\n  <p data-track=\"60\">— 完 —</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "港中文发布首个基于强化学习的推理增强文生图模型 T2I-R1，通过双层级 CoT 推理和强化学习，显著提升文生图的质量和用户意图理解。",
+  "oneSentenceSummary": "港中文发布首个基于强化学习的推理增强文生图模型 T2I-R1，通过双层级 CoT 推理和强化学习，显著提升文生图的质量和用户意图理解。",
+  "summary": "港中文 MMLab 团队发布了 T2I-R1，一个基于强化学习的推理增强文生图模型，解决了现有文生图模型在语义理解和细节生成方面难以兼顾的问题。该模型引入了双层级 CoT 推理框架，包含 Semantic-level CoT (图像全局结构设计) 和 Token-level CoT (底层细节优化)，并提出了 BiCoT-GRPO 强化学习方法，使用多个视觉专家模型的集成作为奖励模型，用于联合优化 ULM 的两个层次的 CoT。实验结果表明，T2I-R1 能更准确地理解用户意图，生成更符合期望的图像，并在不寻常场景中表现出更强的鲁棒性，在多个 benchmark 上超越了现有模型。",
+  "mainPoints": [
+    {
+      "point": "双层级 CoT 推理框架显著增强了文生图的推理能力和生成质量",
+      "explanation": "Semantic-level CoT 负责全局结构设计，Token-level CoT 专注于底层细节优化，二者结合使模型能生成更符合用户意图的图像。"
+    },
+    {
+      "point": "BiCoT-GRPO 方法有效优化了 ULM 的两个层次 CoT",
+      "explanation": "通过在单一 RL 步骤中协同优化语义规划与像素生成，BiCoT-GRPO 相比分阶段训练效率更高，计算成本更低。"
+    },
+    {
+      "point": "T2I-R1 在多个 benchmark 上超越现有模型",
+      "explanation": "实验结果表明，T2I-R1 在 T2I-CompBench 和 WISE 在 Benchmark 上分别比 baseline 模型提高了 13% 和 19% 的性能。"
+    }
+  ],
+  "keyQuotes": [
+    "T2I-R1 的出现证明了 CoT 在图像生成中的有效性，实现了高效可拓展的生成架构，为多模态生成任务提供了新的推理增强范式。",
+    "Semantic-level CoT 明显有助于猜测出用户的真实想法；而 Token-level CoT 则负责得到更美观的图像。",
+    "BiCoT-GRPO 方法首次在单一 RL 步骤中协同优化语义规划与像素生成，相比起分阶段训练效率更高、计算成本更低。",
+    "在未来，T2I-R1 的框架或能进一步拓展至视频生成、3D 内容合成等复杂序列生成任务，推动生成式 AI 向\"能思考、会创作\"的通用智能体演进。"
+  ],
+  "tags": [
+    "文生图",
+    "强化学习",
+    "推理增强",
+    "T2I-R1",
+    "CoT"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2409,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747211913000,
+  "publishDateStr": "2025-05-14",
+  "publishDateTimeStr": "2025-05-14 08:38:33"
+}

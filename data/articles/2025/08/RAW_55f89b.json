@@ -1,0 +1,59 @@
+{
+  "id": "RAW_55f89b",
+  "title": "Cursor 为 Blackwell 从零构建 MXFP8 内核，MoE 层提速 3.5 倍，端到端训练提速 1.5 倍 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-22-5",
+  "date": "2025-08-22 06:00:55",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p data-pm-slice=\"0 0 []\">在构建更强大的 AI 模型的这场竞赛中，传统路径很简单：升级到最新最强大的硬件。但 Cursor 发现释放下一代 GPU 的真正潜力远非即插即用那么简单。</p>\n  <section>\n   <img data-backh=\"461\" data-backw=\"562\" data-imgfileid=\"503502922\" data-ratio=\"0.8209959623149394\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250822091555_8534ec\" data-type=\"png\" data-w=\"743\" type=\"block\" data-original-style=\"width:100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/2f9849a6-1bd4-4c48-b2a5-c1bf27fb83c1/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>在从 NVIDIA 的 Hopper H100s 升级到新旗舰 Blackwell B200s 后，该团队遇到了一个「升级陷阱」：硬件性能翻倍，但实际训练速度却被 MoE 层的效率拖慢，新架构的设计反而放大了数据搬运和量化的开销。</p>\n  <p>这就像给一辆赛车换上了动力翻倍的新引擎，却发现原有的轮胎完全无法承载这股力量，导致速度反而下降。</p>\n  <p>他们的解决方案是回归基础，自己定制「赛车胎」：在 GPU 内核级别从零开始重写整个混合专家（MoE）训练层。</p>\n  <p>Cursor 不仅解决了瓶颈问题，还<strong>彻底释放了 Blackwell 架构的潜能</strong>。通过抛弃对现有 CUDA 库的依赖，他们能够：</p>\n  <ul>\n   <li>\n    <p>直接针对 <strong>TMEM 的新特性设计</strong>数据流管线，避免无谓的寄存器搬运开销；</p>\n   </li>\n   <li>\n    <p>将<strong>量化与反量化逻辑</strong>融入内核计算流程，大幅压缩了内存带宽占用；</p>\n   </li>\n   <li>\n    <p>优化 <strong>MXFP8 的 microscaling 实现</strong>，在保证训练收敛质量的同时，把性能推到极限。</p>\n   </li>\n  </ul>\n  <p>最终效果是：MoE 层在前向和反向传播中都实现了 <strong>3.5 倍</strong>提速，端到端训练速度在 Blackwell 上快了 <strong>1.5 倍</strong>，相比最初的 Hopper GPU 方案实现了 <strong>2 </strong>倍的加速。</p>\n  <p><img data-src=\"https://image.jido.dev/20250822091555_9e1528\" alt=\"飞书文档 - 图片\" data-ratio=\"0.6453703703703704\" data-type=\"png\" data-w=\"1080\" data-backw=\"562\" data-backh=\"362\" data-imgfileid=\"503502912\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/da83f0c9-c09f-4540-80f1-eb03dad657f3/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; 与 BF16 相比，MXFP8 MoE 的相对加速（归一化为 1.0）。</sup></p>\n  <p>Cursor 团队在博客中详细介绍了相关技术细节，并分享了他们的工程经验和性能数据。</p>\n  <ul>\n   <li>\n    <p>博客地址：https://cursor.com/en/blog/kernels</p>\n   </li>\n  </ul>\n  <p><strong>为什么现有 MoE 内核在 Blackwell 上失效？</strong></p>\n  <p>为了降低计算成本，模型训练普遍采用低精度数据格式（如 FP8）。但简单地将高精度数字（如 0.0001）转换为 FP8 会导致其被四舍五入为零，丢失信息。</p>\n  <p><strong>微缩放（MX）</strong>通过将张量（Tensor）分割成许多小数据块（例如每 32 个元素一块），并为每个块计算一个独立的缩放因子（scale factor）来解决这个问题。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250822091555_54cd13\" data-ratio=\"0.44166666666666665\" data-type=\"png\" data-w=\"1080\" data-width=\"1600\" data-height=\"707\" data-backw=\"578\" data-backh=\"255\" data-imgfileid=\"503502913\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/abe1a1d7-5bc7-467c-aa2a-f0d979657740/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; MXFP8 量化示例：每个 1x32 块共享一个缩放因子。</sup></p>\n  <p>这样，每个块内的数据都能被有效缩放到 FP8 的可表示范围内，从而在保留精度的同时享受低精度计算带来的性能优势。Cursor 使用的 <strong>MXFP8 </strong>就是这样一种格式。</p>\n  <p><strong>张量内存（TMEM）瓶颈</strong></p>\n  <p>在 Hopper (H100) 架构上，张量核心的计算结果直接累积在寄存器中，后续的「反量化」等操作可以流畅地进行。</p>\n  <p>然而，Blackwell (B200) 引入了新的张量内存（TMEM）来存储累加结果。这意味着任何自定义的算术操作都必须经历一次低效的数据往返：TMEM → 寄存器 → CUDA 核心处理 → TMEM。</p>\n  <p>这种异步数据传输会在张量核心的计算管线中产生「气泡」，大幅降低执行效率。更关键的是，尽管 Blackwell 的 FP8 张量核心吞吐量翻倍，其 CUDA 核心性能仅提升了约 33%，导致反量化速度严重滞后于计算速度。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250822091555_4c47f2\" data-ratio=\"1.0702875399361023\" data-type=\"png\" data-w=\"626\" data-width=\"626\" data-height=\"670\" data-backw=\"578\" data-backh=\"619\" data-imgfileid=\"503502914\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/0422b8f4-a257-44b9-a564-cfdae0e63d3f/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p><sup>该甘特图截取自我们定制的 Blackwell 注意力核。第一行显示了张量核心（QKT）的活动情况；第二行显示了 CUDA 核心的活动情况（数据从 TMEM 加载至寄存器，然后执行 softmax）。从 TMEM 到寄存器的加载延迟，导致了张量核心出现流水线气泡。</sup></p>\n  <p>数据显示，在特定配置下，Blackwell 上的反量化耗时是矩阵乘法本身的 1.76 倍，远高于 Hopper 上的 1.03 倍。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250822091555_0b9cac\" data-ratio=\"0.2881745120551091\" data-type=\"png\" data-w=\"871\" data-width=\"871\" data-height=\"251\" data-backw=\"578\" data-backh=\"167\" data-imgfileid=\"503502915\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/0ec216f2-24a1-4e92-a271-9cbf6da273f3/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; Hopper 与 Blackwell 上的相对反量化成本。</sup></p>\n  <p><strong>被忽视的「量化税」</strong></p>\n  <p>除了 TMEM 瓶颈，数据「量化」过程本身也成了性能杀手。</p>\n  <p>以一个典型的 MoE 矩阵乘法为例，计算本身可能仅需 1.16 毫秒，但将输入矩阵量化为 MXFP8 格式并写回内存就需要搬运近 2.9 GB 的数据，耗时约 0.44 毫秒，占到计算时间的近 40%。</p>\n  <p>在反向传播中，这个开销因需要转置-量化而翻倍，达到 0.88 毫秒，占比高达<strong> 76%</strong>。这意味着，如果优化不当，<strong>MXFP8 带来的性能提升可能被完全抵消</strong>。</p>\n  <p>此外，现有的开源量化内核不仅带宽利用率低，其生成的缩放因子（scale factor）布局还与 Blackwell 的硬件指令不兼容，需要额外的、拖慢性能的重塑操作。</p>\n  <p><strong>Cursor 如何从零重写<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">MoE 层</span>？</strong></p>\n  <p>面对这些挑战，并发现现有的开源库（如 NVIDIA 的 TransformerEngine）并非最佳选择，Cursor 团队选择放弃高层依赖，使用纯 CUDA 和 PTX 汇编语言亲自编写 MoE 层的 GPU 代码。</p>\n  <p><strong>优化策略</strong></p>\n  <ul>\n   <li>\n    <p>拥抱原生硬件指令</p>\n   </li>\n  </ul>\n  <p>他们没有与 TMEM 架构对抗，而是围绕原生的 <code>tcgen05.mma</code> 指令构建内核。这使得 GPU 硬件自身能够处理 MXFP8 所需的缩放，完全消除了 TMEM 和 CUDA 核心之间低效的数据移动。</p>\n  <ul>\n   <li>\n    <p>设计高效的数据流水线</p>\n   </li>\n  </ul>\n  <p>他们实现了一个复杂的流水线，采用了诸如「Warp 专精」（将特定任务分配给不同的线程组）和 2-CTA（协同线程阵列）模式等技术。</p>\n  <p>Warp 专精将特定的任务分配给不同的线程组（Warp）。例如，Warp 0 负责从主内存加载数据到共享内存，Warp 1 负责加载缩放因子，Warp 2 负责将缩放因子从共享内存移至 TMEM，而 Warp 3 则专门负责启动矩阵乘法计算。这使得各个环节可以高度并行。</p>\n  <p>2-CTA 模式允许两个 GPU 流式多处理器（SM）协同完成单个矩阵乘法，通过共享 B 矩阵来减少内存流量，带来了 15-20% 的性能提升。</p>\n  <ul>\n   <li>\n    <p>针对 MoE 工作负载进行优化</p>\n   </li>\n  </ul>\n  <p>对于 MoE 训练中特有的分组矩阵乘法，他们应用了一种名为「<strong>专家级超分组</strong>」的 L2 缓存优化启发式算法。这确保了内存访问模式保持高效，将标准矩阵乘法与分组矩阵乘法之间的性能下降限制在仅 4%。</p>\n  <p><strong>「秘密武器」：量化内核与低精度配方</strong></p>\n  <p>该团队开发了一个自定义的 MXFP8 量化内核，他们称这是目前用于 MoE 训练的最快内核。微基准测试显示，其内核持续的<strong>内存带宽超过 6.2 TB/s</strong>，相比他们从现有开源工具测得的约 4.5 TB/s 有了显著提升。</p>\n  <p>至关重要的是，他们的内核输出的数据内存布局与 <code>tcgen05.mma</code> 指令所要求的完全一致，避免了其他工具所必需的、耗时的额外「重塑」步骤。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250822091555_b83289\" data-ratio=\"0.21624713958810068\" data-type=\"png\" data-w=\"874\" data-width=\"874\" data-height=\"189\" data-backw=\"578\" data-backh=\"125\" data-imgfileid=\"503502917\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/6c095739-0fad-40f8-bc1e-8ad5a4674f71/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 基于内存带宽利用率的 MXFP8 量化内核比较（E4M3，32 块大小的缩放）。</sup></p>\n  <p>团队还确定了一种特定的低精度「配方」，能够在不影响训练质量的情况下提供最高速度。通过使用元素类型为 FP8E4M3、块大小为 32 的 MXFP8 格式，他们能够使训练损失的收敛情况与速度慢得多的 BF16 格式几乎完全匹配。</p>\n  <p>团队公布的训练损失曲线显示，两种方法几乎没有区别，证明了性能的提升并未以牺牲准确性为代价。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250822091555_0caea4\" data-ratio=\"0.47314814814814815\" data-type=\"png\" data-w=\"1080\" data-width=\"1162\" data-height=\"550\" data-backw=\"578\" data-backh=\"274\" data-imgfileid=\"503502921\" data-original-style=\"width: 100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/99746f52-0314-4892-90e7-daa914cbd332/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; BF16 与 MXFP8 训练损失超过 10k 步：几乎无法区分。</sup></p>\n  <p>更多技术细节请阅读原博客。</p>\n </body>\n</html>",
+  "aiSummary": "Cursor 团队为 NVIDIA Blackwell GPU 从零构建 MXFP8 MoE 层内核，成功克服硬件瓶颈，实现 MoE 层 3.5 倍、端到端训练 1.5 倍加速，且不影响模型精度。",
+  "oneSentenceSummary": "Cursor 团队为 NVIDIA Blackwell GPU 从零构建 MXFP8 MoE 层内核，成功克服硬件瓶颈，实现 MoE 层 3.5 倍、端到端训练 1.5 倍加速，且不影响模型精度。",
+  "summary": "文章深入剖析了在 AI 模型训练从 NVIDIA Hopper H100 升级至 Blackwell B200 时遇到的“升级陷阱”。尽管 Blackwell 的 FP8 张量核心吞吐量翻倍，但因其新引入的张量内存（TMEM）架构导致数据低效往返，以及 MXFP8 量化/反量化过程的巨大开销，MoE 层的实际训练效率被严重拖慢。Cursor 团队针对此瓶颈，放弃对现有 CUDA 库的依赖，从零开始重写 MoE 训练层 GPU 内核，围绕 Blackwell 原生硬件指令（tcgen05.mma）设计数据流管线，从而规避 TMEM 低效数据往返问题，并将量化与反量化逻辑融入内核计算流程，优化 MXFP8 的微缩放实现。此举彻底释放了 Blackwell 架构的潜能，使 MoE 层在前向和反向传播中均实现 3.5 倍提速，端到端训练速度在 Blackwell 上快了 1.5 倍（相较 Hopper 方案总计加速 2 倍），并且训练收敛质量与 BF16 格式几乎一致，未牺牲准确性。",
+  "mainPoints": [
+    {
+      "point": "Blackwell 架构的 TMEM 与 MXFP8 量化过程成为 MoE 层训练效率瓶颈。",
+      "explanation": "Blackwell 引入的 TMEM 导致自定义算术操作产生低效数据往返，且 MXFP8 量化/反量化本身带来高昂的内存带宽占用和计算开销，拖累了 MoE 层性能。"
+    },
+    {
+      "point": "Cursor 通过定制化 GPU 内核重写 MoE 层，释放 Blackwell 硬件潜力。",
+      "explanation": "团队放弃通用库，采用纯 CUDA 和 PTX 汇编，围绕原生 tcgen05.mma 指令构建内核，直接处理 MXFP8 缩放，消除 TMEM 与 CUDA 核心间低效数据移动。"
+    },
+    {
+      "point": "创新的内核优化策略显著提升 MoE 层和端到端训练速度。",
+      "explanation": "通过 Warp 专精、2-CTA 模式及“专家级超分组”L2 缓存优化，MoE 层提速 3.5 倍，端到端训练提速 1.5 倍，且不影响模型收敛精度。"
+    },
+    {
+      "point": "开发自定义 MXFP8 量化内核，实现高带宽利用率并与硬件指令兼容。",
+      "explanation": "定制内核持续内存带宽超 6.2 TB/s，且输出数据内存布局与 Blackwell 原生指令完全一致，避免了耗时的额外“重塑”步骤。"
+    }
+  ],
+  "keyQuotes": [
+    "Cursor 发现释放下一代 GPU 的真正潜力远非即插即用那么简单。",
+    "Blackwell (B200) 引入了新的张量内存（TMEM）来存储累加结果。这意味着任何自定义的算术操作都必须经历一次低效的数据往返：TMEM → 寄存器 → CUDA 核心处理 → TMEM。",
+    "拥抱原生硬件指令...这使得 GPU 硬件自身能够处理 MXFP8 所需的缩放，完全消除了 TMEM 和 CUDA 核心之间低效的数据移动。",
+    "该团队开发了一个自定义的 MXFP8 量化内核，他们称这是目前用于 MoE 训练的最快内核。",
+    "团队公布的训练损失曲线显示，两种方法几乎没有区别，证明了性能的提升并未以牺牲准确性为代价。"
+  ],
+  "tags": [
+    "MoE",
+    "Blackwell",
+    "GPU 优化",
+    "MXFP8",
+    "深度学习训练"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2301,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755842455000,
+  "publishDateStr": "2025-08-22",
+  "publishDateTimeStr": "2025-08-22 06:00:55"
+}

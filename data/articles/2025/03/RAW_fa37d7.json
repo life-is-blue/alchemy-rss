@@ -1,0 +1,57 @@
+{
+  "id": "RAW_fa37d7",
+  "title": "DeepSeek 前实习生魔改 MoE，用迭代机制把内存需求砍了 42%，团队：\"免费午餐\"优化方法",
+  "url": "https://www.qbitai.com/2025/03/261516.html",
+  "date": "2025-03-04 07:49:06",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"41\">西风 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"42\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">DeepSeek MoE“变体”来了，200美元以内，内存需求减少17.6-42%！</p>\n  <p data-track=\"3\">名叫<strong>CoE</strong>（Chain-of-Experts），被认为是一种“免费午餐”优化方法，突破了MoE并行独立处理token、整体参数数量较大需要大量内存资源的局限。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5a24af10-e39c-470e-0db9-602bbdf6de00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1060\" data-height=\"1314\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">与并行处理不同，CoE使<strong>专家能在单层内串行通信，形成一种迭代机制</strong>，即专家能“沟通”，在其它专家输出之上处理token。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1c2d1ebf-c1f4-4502-4115-67de8891cb00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"516\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">研究团队在实验中发现，经过2次迭代的CoE，在相同的计算预算下将数学任务的验证损失从1.20降低至1.12，仅仅通过重构信息流就获得了性能提升。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8c9b4ad4-2104-44c1-a258-70085eb46200/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"680\" data-height=\"390\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">通过<strong>扩展CoE的迭代次数</strong>，在性能相当的情况下，内存使用比通过增加模型层数或扩展专家选择数量的方法降低了17.6-42%。</p>\n  <p data-track=\"7\">另外，在专家组合自由度、专家使用效率等其它方面，CoE也都具有显著优势，专家组合增加823倍。</p>\n  <p data-track=\"8\">目前，研究团队晒出了CoE技术Blog（完整论文即将发布），引起不少网友围观。</p>\n  <p data-track=\"9\">翻看作者主页，还发现作者Zihan Wang真曾在DeepSeek实习过😯</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/71801e7c-bc00-44dc-8cd6-b18c9878bd00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1064\" data-height=\"582\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">有网友看过这项研究表示：</p>\n  <blockquote>\n   <p data-track=\"11\">MoEs中的IsoFLOP层迭代设计，非常奈斯。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8ec786e4-da4a-4126-f5e8-f2a915c72300/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1056\" data-height=\"160\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">还有网友已经开始预测下一代架构了。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a3f96326-cc5f-4259-ba74-b9b77a77e900/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1054\" data-height=\"160\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f5d30aae-30be-4358-b270-b0dcb1542a00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1038\" data-height=\"156\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">CoE究竟长啥样？以下是团队发布的Notion Blog介绍。</p>\n  <p data-track=\"15\">CoE关键创新在于<strong>建立沟通性处理机制</strong>，改变了稀疏神经网络的信息处理方式。</p>\n  <p data-track=\"16\">具体来说，是通过在单个层的迭代中将MoE输出反馈为多次迭代的输入来实现的。</p>\n  <p data-track=\"17\">CoE迭代处理机制可以形式化表示为下面这个样婶儿：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3ca83a60-1592-4a29-91ef-ab60a6ca3e00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"408\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">参考DeepSeek-V2的实现，研究团队定义门控机制为如下：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/732e5e20-13e3-49b9-8200-38aa4c646700/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"336\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"19\">团队介绍，这种设计的好处在于每次迭代的专家选择由前一次迭代的输出决定，形成<strong>专家间的依赖关系和更动态的路由机制</strong>。</p>\n  <p data-track=\"20\">而且串行信息可以在<strong>迭代过程中累积</strong>，实现专家间的直接通信。</p>\n  <p data-track=\"21\">实验采取DeepSeek V2架构，在参数规模为500M的MoE模型上使用32K Tok的batch size训练1000步，以此来验证CoE的有效性。</p>\n  <p data-track=\"22\">结果CoE在性能、扩展策略、资源效率优化、专家组合自由度、专家使用效率方面具有显著优势。</p>\n  <p data-track=\"23\">除了开头所展示的在相似的算力和内存要求下，CoE将loss从1.20下降至1.12，且有更陡峭的下降趋势。</p>\n  <p data-track=\"24\">团队进一步在“dense”（专家8选8）模型上也进行了测试，结果证明了串行处理在Sparse MoE上相比Dense模型更有效，<strong>CoE是一种专为</strong>（细粒度）<strong>稀疏混合专家模型</strong>（Sparse MoE）<strong>设计的方法</strong>。</p>\n  <p data-track=\"25\">采取2次序列化处理并不能显著提升Dense模型性能。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c9b394b4-2ef2-44da-36da-39c581512c00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"943\" data-height=\"541\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">另外，在计算量和效果相似的情况下，CoE可以减小对内存的要求。如下，CoE-2（4/48）的效果与MoE（8/64）相近，但使用更少的总专家数量。loss match的情况下减小了17.6%的内存需求。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c848ce49-492f-4ab2-0578-3bd2ce826b00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"415\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\">团队还对比了在预算相似的情况下，扩展CoE迭代次数和扩展模型层数、扩展专家选择个数的效果，结果扩展CoE迭代次数更优。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94002406-9012-4118-ca82-888a93626500/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"414\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"28\">CoE-2（8/64）,4层 vs MoE（8/64）,8层/12层，8层MoE和CoE效果几乎相同，但是对内存要求高72%，即CoE相对节省了42%内存。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb394647-781d-42b8-86be-8adb96fee200/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"953\" data-height=\"543\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">团队强调，<strong>独立门控机制</strong>和<strong>内残差连接</strong>是CoE的关键架构创新，消融研究表明，移除任何组件都会显著降低性能。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d74786a1-bc26-4365-7f3b-8aca3f756c00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"618\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">更多细节，感兴趣的童鞋可以查看技术报告原文～</p>\n  <p data-track=\"32\">CoE由一个5人组成的团队提出。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fe3857cc-2cfc-4904-772e-9dd2561df600/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"452\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">Zihan Wang是美国西北大学计算机科学专业博士生，本科毕业于中国人民大学高瓴人工智能学院，研究聚焦于基础模型的自主性、效率以及长上下文理解。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/95a8a360-34c6-4b19-c97f-85a5fac7d800/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"331\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"34\">Zihan Wang曾在DeepSeek工作过，是ESFT（Expert-Specialized Fine-Tuning）的论文一作。</p>\n  <p data-track=\"35\">ESFT通过仅调整与任务相关的部分高效地定制采用MoE，从而在减少资源和存储使用的同时提升效率和性能。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/80abdc37-d4e0-4338-9c11-03b0ed2a0200/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"318\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">CoE不是Zihan Wang第一次针对DeepSeek搞的“变体”。</p>\n  <p data-track=\"37\">之前他还曾基于verl复现了DeepSeek-R1（-Zero）框架——RAGEN （Reinforcement learning AGENt），在GitHub揽星近1k：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/93f8b357-d7a1-4f3d-fd20-d9cc09e5a500/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"435\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">Zihan Wang师从Manling Li。Manling Li是西北大学计算机科学系助理教授，此前曾在吴佳俊教授的指导下工作，并得到李飞飞教授的指导。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a8b9c066-6049-4c0e-6608-e8873ce1e900/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"431\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"39\">RAGEN的贡献者名单中也有Manling Li、吴佳俊、李飞飞的身影。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e850a59f-14c9-4b22-4c76-d830333edd00/public\" alt=\"DeepSeek前实习生魔改MoE，用迭代机制把内存需求砍了42%，团队：“免费午餐”优化方法\" data-ic=\"false\" data-width=\"1080\" data-height=\"191\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"40\">CoE技术报告：http://sandy-server-87f.notion.site/Chain-of-Experts-Unlocking-the-Communication-Power-of-MoEs-1ab9bb750b7980048d43e6aab3537cea<br>\n    CoE GitHub链接：https://github.com/ZihanWang314/coe<br>\n    参考链接：<br>\n    [1]https://x.com/wzihanw/status/1896601518612021709<br>\n    [2]https://github.com/ZihanWang314/RAGEN?tab=readme-ov-file<br>\n    [3]https://github.com/deepseek-ai/ESFT</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "CoE，一种 MoE 变体，通过专家迭代机制显著降低内存需求，优化稀疏混合专家模型。",
+  "oneSentenceSummary": "CoE，一种 MoE 变体，通过专家迭代机制显著降低内存需求，优化稀疏混合专家模型。",
+  "summary": "本文介绍了 DeepSeek 前实习生提出的 CoE (Chain-of-Experts) 模型，作为 MoE (Mixture of Experts) 的一种变体，CoE 通过在 MoE 中引入专家间的串行通信和迭代机制，实现了在计算预算相当的情况下，显著降低内存需求的目的。CoE 的关键创新在于建立了专家间的依赖关系和更动态的路由机制，允许专家在单层内串行通信，并在其他专家的输出上处理 token。实验结果表明，CoE 在数学任务中能有效降低验证损失，并且在性能相当的情况下，比增加模型层数或扩展专家选择数量的方法降低了 17.6%-42% 的内存使用。此外，CoE 还提高了专家组合的自由度和使用效率，是一种专为稀疏混合专家模型设计的方法。CoE 的提出为未来 MoE 模型在资源受限场景下的应用提供了新的可能性。",
+  "mainPoints": [
+    {
+      "point": "CoE 通过专家间的串行通信和迭代机制，有效降低了内存需求。",
+      "explanation": "CoE 改变了 MoE 并行处理 token 的方式，通过迭代机制使专家能在单层内串行通信，在其他专家输出之上处理 token，从而降低内存需求。"
+    },
+    {
+      "point": "CoE 在性能相当的情况下，比传统 MoE 模型更节省内存。",
+      "explanation": "实验结果表明，CoE 在相同的计算预算下，能够降低验证损失，并且在性能相似的情况下，内存使用比传统 MoE 模型降低了 17.6%-42%。"
+    },
+    {
+      "point": "CoE 的关键在于其独特的门控机制和残差连接设计。",
+      "explanation": "消融研究表明，移除 CoE 的独立门控机制和内残差连接组件，都会显著降低模型性能，说明这两个组件是 CoE 架构的关键。"
+    },
+    {
+      "point": "CoE 通过扩展迭代次数而非模型层数/专家数量，在性能相当的情况下实现了更优的内存效率。",
+      "explanation": "实验表明，在预算相似的情况下，扩展 CoE 的迭代次数比扩展模型层数或专家数量能获得更好的性能和内存效率。"
+    }
+  ],
+  "keyQuotes": [
+    "CoE 使专家能在单层内串行通信，形成一种迭代机制，即专家能 \"沟通\"，在其它专家输出之上处理 token。",
+    "CoE 是一种专为 （细粒度）稀疏混合专家模型 （Sparse MoE）设计的方法。",
+    "独立门控机制 和内残差连接是 CoE 的关键架构创新，消融研究表明，移除任何组件都会显著降低性能。"
+  ],
+  "tags": [
+    "MoE",
+    "Chain-of-Experts",
+    "CoE",
+    "模型压缩",
+    "效率优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1918,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741074546000,
+  "publishDateStr": "2025-03-04",
+  "publishDateTimeStr": "2025-03-04 07:49:06"
+}

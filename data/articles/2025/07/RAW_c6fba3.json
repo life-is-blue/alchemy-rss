@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c6fba3",
+  "title": "Arm SME2 即将登陆 Android，加速设备端 AI",
+  "url": "https://www.infoq.com/news/2025/07/arm-sme2-android/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-13 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Available in the <a href=\"https://www.arm.com/architecture/cpu/a-profile/armv9\">Armv9-A architecture</a>, Arm Scalable Matrix Extension 2 (SME2) is a set of advanced CPU instructions designed to accelerate matrix heavy computation. The new Arm technology aims to help mobile developers to <a href=\"https://newsroom.arm.com/blog/arm-sme2-android-mobile-apps\">run advanced AI models directly on CPU</a> with improved performance and efficiency, without requiring any changes to their apps.</p>\n   <p>SME2 <a href=\"https://developer.arm.com/documentation/109246/0100/SME-Overview/SME-and-SME2?lang=en\">builds on the previously available SME extension</a>, which introduced matrix operations and streaming vectors, by adding acceleration and support for multi-vector data-processing instructions, load to and store from multi-vectors, and a multi-vector predication mechanism.</p>\n   <p>While the performance benefits of SME2 are already available on the <a href=\"https://learn.arm.com/learning-paths/cross-platform/multiplying-matrices-with-sme2/1-get-started#devices\">latest iOS devices and Apple M4-series chips</a>, they will soon reach Android devices as well, says Alex Spinelli, Arm’s VP of AI and Developer Platforms and Services.</p>\n   <p>Matrix workflows are key for real-time mobile inference tasks such as image and language processing and voice generation. In particular, comparisons between SME2-enabled and non-SME2-enabled workflows shows a significant improvement, says Arm:</p>\n   <blockquote>\n    <p>On SME2-enabled hardware, Google’s Gemma 3 model delivers 6x faster chat responses, and can start summarizing up to 800 words in under a second on a single CPU core.</p>\n   </blockquote>\n   <p>Likewise, a <a href=\"https://newsroom.arm.com/news/powering-next-generation-ai-smartphones-mediatek-vivo\">2.6x speed up has been measured</a> for prompt processing on a vivo X200 Pro flagship smartphone running a 3.8B parameter Phi-3 Mini model.</p>\n   <p>To help developers take advantage of SME2, Arm provides a library called <a href=\"https://gitlab.arm.com/kleidi/kleidiai\">KleidiAI</a>, which is integrated in Google’s XNNPACK. XNNPACK powers several machine learning and AI frameworks, including Alibaba’s MNN, Google’s LiteRT, Microsoft’s ONNX Runtime, and llama.cpp.</p>\n   <blockquote>\n    <p>When SME2 is enabled and compatible, XNNPACK automatically routes the matrix heavy operations to SME2 via KleidiAI, so developers directly benefit with no changes needed in application logic or infrastructure.</p>\n   </blockquote>\n   <p>KleidiAI is designed to be integrated easily into C and C++ codebases thanks to its <a href=\"https://gitlab.arm.com/kleidi/kleidiai/-/tree/main/kai/ukernels/matmul\">micro-kernel</a> based architecture.</p>\n   <p>A micro-kernel, in Arm's parlance, refers to the \"near-minimum amount of software to accelerate a given ML operator with high performance\", such as for example, packing or matrix multiplication. A key detail to explain why a micro-kernel is not simply a function, is that each micro-kernel processes only a portion of the output tensor, enabling the full operation to be dispatched across multiple threads.</p>\n   <p>In addition, KleidiAI has other features that will be welcome to developers, including it not relying on external dependencies, not using dynamic memory or requiring memory management, and a highly modular design where each micro-kernel is a stand-alone library consisting only of <code>.c</code> and <code>.h</code> files.</p>\n   <p>To help developers take advantage of SME2, Arm has released additional <a href=\"https://developer.arm.com/mobile-graphics-and-gaming/ai-mobile#start\">resources showcasing real-world examples</a> of LLM-based apps using LiteRT, MNN, PyTorch and other supported frameworks.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Arm Scalable Matrix Extension 2 Coming to Android To Accelerate On-Device AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/arm-sme2-android/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1752397200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Arm 新的 SME2 即将登陆 Android 设备，有望显著加速设备端 AI 模型（如 LLM），它将利用 KleidiAI 和 XNNPACK 等工具。",
+  "oneSentenceSummary": "Arm 新的 SME2 即将登陆 Android 设备，有望显著加速设备端 AI 模型（如 LLM），它将利用 KleidiAI 和 XNNPACK 等工具。",
+  "summary": "本文宣布 Arm 的 SME2，Armv9-A 架构中的高级 CPU 指令集，即将在 Android 设备上可用。SME2 旨在加速矩阵密集型计算，通过多向量数据处理和预测，在原始 SME 扩展的基础上构建，显著提高直接在移动 CPU 上运行高级 AI 模型的性能和效率。虽然 iOS 设备已经受益，但 SME2 登陆 Android 预计将为图像和语言处理等实时移动推理任务带来显著加速。Arm 强调了令人印象深刻的收益：Google 的 Gemma 3 模型聊天响应速度提高 6 倍；在特定旗舰设备上，Phi-3 Mini 提示处理速度提高 2.6 倍。为了方便开发者采用，Arm 提供了 KleidiAI 库，该库与 Google 的 XNNPACK 集成，可自动将矩阵运算路由到 SME2，无需更改应用程序逻辑。KleidiAI 的微内核架构、最小依赖性和模块化设计旨在简化集成到 C/C++ 代码库中。Arm 还提供其他资源，其中包含基于 LLM 的应用程序的真实示例。",
+  "mainPoints": [
+    {
+      "point": "Arm SME2 显著提升了移动应用程序的设备端 AI 性能。",
+      "explanation": "SME2 是一种高级 CPU 指令集，可加速对 AI 模型至关重要的矩阵计算，从而显著提高性能。例如，在移动 CPU 上，Gemma 3 的聊天响应速度提高了 6 倍。"
+    },
+    {
+      "point": "SME2 的功能正在扩展到 Android，从而扩大其对移动 AI 生态系统的影响。",
+      "explanation": "SME2 以前在 iOS 上可用，即将集成到 Android 设备中，将把其性能优势扩展到更广泛的智能手机，从而增强跨平台的设备端 AI 功能。"
+    },
+    {
+      "point": "KleidiAI 和 XNNPACK 简化了开发人员对 SME2 的采用。",
+      "explanation": "这些工具自动利用 SME2 进行矩阵运算，而无需更改应用程序代码，从而使开发人员可以更轻松地集成并从新的硬件加速中受益。"
+    }
+  ],
+  "keyQuotes": [
+    "在支持 SME2 的硬件上，Google 的 Gemma 3 模型可提供快 6 倍的聊天响应速度，并且可以在单个 CPU 核心上在不到一秒的时间内开始总结多达 800 个单词。",
+    "启用 SME2 并且兼容时，XNNPACK 会通过 KleidiAI 自动将矩阵繁重的运算路由到 SME2，因此开发人员可以直接受益，而无需更改应用程序逻辑或基础设施。",
+    "Arm SME2 是一组高级 CPU 指令，旨在加速矩阵繁重的计算。"
+  ],
+  "tags": [
+    "设备端 AI",
+    "AI 加速",
+    "Arm SME2",
+    "CPU 架构",
+    "机器学习推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 433,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1752364800000,
+  "publishDateStr": "2025-07-13",
+  "publishDateTimeStr": "2025-07-13 00:00:00"
+}

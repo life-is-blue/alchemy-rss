@@ -1,0 +1,63 @@
+{
+  "id": "RAW_5f7166",
+  "title": "伯克利&Meta 面向具身智能的世界模型：让 AI 通过全身动作「看见」未来 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-01-4",
+  "date": "2025-07-01 04:39:05",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p><strong>本文基于 Yutong Bai、Danny Tran、Amir Bar、Yann LeCun、Trevor Darrell 和 Jitendra Malik 等人的研究工作。</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8c84ac4a-8e90-4622-e8cb-f7ec01f91c00/public\" data-ratio=\"0.4222222222222222\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493155\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/aca8ba15-34e1-4e50-9629-c98f03bd4573/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：Whole-Body Conditioned Egocentric Video Prediction</p></li>\n   <li>\n    <p>论文地址：<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">https://arxiv.org/pdf/2506.21552</span></p></li>\n   <li>\n    <p>项目地址：https://dannytran123.github.io/PEVA/</p></li>\n   <li>\n    <p>参考阅读链接：https://x.com/YutongBAI1002/status/1938442251866411281</p></li>\n  </ul>\n  <p>几十年来，人工智能领域一直在思考一个看似简单但非常根本的问题：</p>\n  <p>如果一个智能体要在真实世界中行动、规划，并且和环境互动，它需要一个怎样的「世界模型」？</p>\n  <p>在很多早期研究中，世界模型就是一个预测引擎：只要给它一个抽象的控制指令，比如「向前走一米」或者「向左转 30 度」，它就能模拟出未来的图像。这类方式在实验室环境里已经发挥过很大作用，但一旦放到真正复杂的人类生活环境，就常常捉襟见肘。</p>\n  <p>毕竟，人并不是一个漂浮在空中的摄像头。人有四肢、有关节、有骨骼，也有着非常具体的物理限制：</p>\n  <ul>\n   <li>\n    <p>关节的活动范围</p></li>\n   <li>\n    <p>躯干的稳定性和平衡</p></li>\n   <li>\n    <p>肌肉力量的极限</p></li>\n  </ul>\n  <p>这些物理约束决定了：并不是所有动作都能被执行，很多计划只能在可达、可平衡、可承受的范围内完成。而正是这样的物理性，才塑造了人类真实的动作方式，也塑造了我们能够看到的和不能看到的信息。</p>\n  <p>举一些例子：</p>\n  <ul>\n   <li>\n    <p>你想看到身后的情况，就必须转头或者转身</p></li>\n   <li>\n    <p>你想看清桌下的东西，就必须弯腰蹲下</p></li>\n   <li>\n    <p>你想拿到高处的杯子，就必须抬起手臂并伸展身体</p></li>\n  </ul>\n  <p>这些都不是凭空的，而是被身体结构和运动学约束的行为。所以如果 AI 也要像人一样预测未来，就得学会：预测自己的身体能做到什么动作，以及由此产生的视觉后果。</p>\n  <p><strong>为什么说视觉就是规划的一部分？</strong></p>\n  <p>从心理学、神经科学到行为学，人们早就发现一个规律：在执行动作之前，人会先预演接下来会看到什么。</p>\n  <p>例如：</p>\n  <ul>\n   <li>\n    <p>走向水杯时，脑子里会提前预测水杯什么时候出现</p></li>\n   <li>\n    <p>转过一个拐角前，会猜测即将出现的景象</p></li>\n   <li>\n    <p>伸手的时候，会想象手臂何时进入视野</p></li>\n  </ul>\n  <p>这种「预演」能力让人类能及时修正动作并避免失误。也就是说，我们并不是光靠看到的画面做出决策，而是一直在用大脑里的「想象」，预测动作的结果。</p>\n  <p>如果未来的 AI 想在真实环境中做到和人一样自然地计划，就需要拥有同样的预测机制：「我如果这样动，接下来会看到什么？」</p>\n  <p><strong>世界模型的老思路和新思路</strong></p>\n  <p>世界模型并不新鲜，从 1943 年 Craik 提出「小规模大脑模型」的概念开始，到 Kalman 滤波器、LQR 等控制理论的出现，再到近年用深度学习做视觉预测，大家都在试图回答：「我采取一个动作，未来会怎样？」</p>\n  <p>但是这些方法往往只考虑了低维度的控制：像「前进」、「转向」这类参数。相比人类的全身动作，它们显得非常简陋。因为人类的动作：</p>\n  <ul>\n   <li>\n    <p>有几十个自由度的关节</p></li>\n   <li>\n    <p>有清晰的分层控制结构</p></li>\n   <li>\n    <p>动作对视觉的结果会随着环境不断改变</p></li>\n  </ul>\n  <p>如果一个世界模型不能考虑身体动作如何塑造视觉信息，它很难在现实世界里生存下来。</p>\n  <p><strong>PEVA 的小尝试</strong></p>\n  <p>基于这样的背景，来自加州大学伯克利分校、Meta的研究者们提出了一个看起来简单但非常自然的问题：「如果我真的做了一个完整的人体动作，那接下来从我的眼睛会看到什么？」</p>\n  <p>相比传统模型只用「速度 + 方向」做预测，PEVA 把整个人的 3D 姿态（包括关节位置和旋转）一并喂进模型，和历史的视频帧一起输入，从而让 AI 学会：身体的动作，会如何重新组织我们能看到的世界。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b2f8ce12-0fa9-4820-9a08-a0b8a885c200/public\" data-ratio=\"0.33425925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493212\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/c97439ef-d25c-4eb9-b6ad-55e53402aac1/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>举一些例子：</p>\n  <ul>\n   <li>\n    <p>手臂抬起 → 遮挡部分物体，同时也可能露出新的区域</p></li>\n   <li>\n    <p>蹲下 → 视角高度变化，地面特征出现</p></li>\n   <li>\n    <p>转头 → 原本背后的信息重新进入可见范围</p></li>\n  </ul>\n  <p>这就是 PEVA 的核心：预测未来，不只是预测像素，而是预测身体驱动下的视觉后果。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/414198b5-1a8c-4273-52b1-a757fc2d2800/public\" data-ratio=\"0.5583333333333333\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493207\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/e746e6ed-6c7f-480b-a756-39cd0ef5733f/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>PEVA 的功能</strong></p>\n  <p>PEVA 目前能做的事情包括：</p>\n  <ul>\n   <li>\n    <p>给定未来的 3D 全身动作，预测连续的第一视角视频。</p></li>\n   <li>\n    <p>分解复杂行为成「原子动作」，例如只控制左手或者头部旋转。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25e57b58-b99f-4770-df59-aa8c1693ce00/public\" data-ratio=\"1.5953703703703703\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492998\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/a08a84a7-989b-496c-baa9-70336ee62fef/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>不仅做单次预测，还能生成最长 16 秒的视觉流。<a href=\"https://mp.weixin.qq.com/s/id_ISbf7wVvk3pl2GCIgWA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/5986c2ab-45b3-4c26-9b46-e2894044666c/1751344556634.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>支持「反事实」推断：如果做另一个动作，会看到什么？</p>\n  <p>在多条动作序列之间做规划，通过视觉相似度挑出更优方案。<a href=\"https://mp.weixin.qq.com/s/id_ISbf7wVvk3pl2GCIgWA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/e325d0fb-3154-4c84-aa4a-4e1bf2cfda65/1751344567872.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/id_ISbf7wVvk3pl2GCIgWA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/fe9f0d0e-4234-45bc-bff1-35047820e77c/1751344581286.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>在多样化的日常环境中学习，避免过拟合在简单场景。</p>\n  <p>一句话总结，PEVA 就像一个「身体驱动的可视化模拟器」，让 AI 获得更接近人类的想象方式。</p>\n  <p><strong>技术细节</strong></p>\n  <p>PEVA 的技术很简单直接，主要包括：</p>\n  <ul>\n   <li>\n    <p>全身动作输入（48 维度的三维姿态）</p></li>\n   <li>\n    <p>条件扩散模型 + Transformer，兼顾视觉生成和时间逻辑</p></li>\n   <li>\n    <p>在真实同步的视频 + 动作（Nymeria 数据集）上训练</p></li>\n   <li>\n    <p>用时间跳跃策略预测到 16 秒</p></li>\n   <li>\n    <p>做一个可行的多方案规划：在若干个动作轨迹中，用视觉相似度挑一个最可能达成目标的方案。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/91a03759-1329-4b35-2659-57c96f33d700/public\" data-ratio=\"0.31203703703703706\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493085\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/46a81dbb-280c-41e9-8409-a33e4e2f4aa5/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>研究者在文章中也用大篇幅讨论了局限和展望：例如只做了单臂或部分身体的规划，目标意图还比较粗糙，没法像人那样用语言描述目标，这些都值得后续慢慢补齐。</p>\n  <p><strong>能力小结</strong></p>\n  <p>从评估看，PEVA 在几个方面算是一个可行的探索：</p>\n  <ul>\n   <li>\n    <p>短期视觉预测，与动作对齐度高。</p></li>\n   <li>\n    <p>长期可达 16 秒的视频，仍保持较好连贯性。</p></li>\n   <li>\n    <p>原子动作的控制能力，比如只预测手部动作、只预测转身。</p></li>\n   <li>\n    <p>规划：尝试多动作模拟，挑选最接近目标的一条。</p></li>\n  </ul>\n  <p>这些能力至少证明了一个方向：用身体驱动未来的视觉预测，是走向具身智能的一种合理切入点。</p>\n  <p><strong>展望</strong></p>\n  <p>后续还值得探索的方向包括：</p>\n  <ul>\n   <li>\n    <p>语言目标和多模态输入</p></li>\n   <li>\n    <p>真实交互中的闭环控制</p></li>\n   <li>\n    <p>对更复杂任务的可解释规划</p></li>\n  </ul>\n  <p>当 AI 试着像人一样行动时，也许它同样需要先学会：如果我这么动，接下来会看到什么。</p>\n  <p><strong>结语</strong></p>\n  <p>或许可以这样说：「人类之所以能看见未来，是因为身体在动，视觉随之更新。」</p>\n  <p>PEVA 只是一个很小的尝试，但希望为未来可解释、可信任的具身智能，提供一点点启发。</p>\n \n",
+  "aiSummary": "伯克利与 Meta 合作提出 PEVA 模型，通过 3D 全身姿态预测未来视觉场景，为具身智能提供身体驱动的新思路",
+  "oneSentenceSummary": "伯克利与 Meta 合作提出 PEVA 模型，通过 3D 全身姿态预测未来视觉场景，为具身智能提供身体驱动的新思路",
+  "summary": "文章介绍了加州大学伯克利分校和 Meta 的研究团队提出的 PEVA 模型，该模型通过结合 3D 全身姿态和视觉输入，预测未来第一视角视频。PEVA 突破了传统世界模型仅使用低维度控制参数的局限，将人体动作的物理约束纳入考虑，实现了更接近人类行为的视觉预测。模型基于 Nymeria 数据集训练，采用条件扩散模型+Transformer 架构，能够分解复杂动作为原子动作，支持 16 秒的连续视频预测，并能在多条动作序列中进行规划选择。研究也指出了当前模型的局限性，如目标意图表达较粗糙等。这一身体驱动的研究为具身智能的发展提供了新方向，使 AI 能够像人类一样通过身体动作来预测未来视觉场景。",
+  "mainPoints": [
+    {
+      "point": "PEVA 模型通过 3D 全身姿态预测未来视觉场景",
+      "explanation": "将 3D 全身姿态与历史视频帧结合输入，预测身体动作如何改变视觉信息，突破了传统低维度控制预测的局限，体现了身体驱动的核心创新点"
+    },
+    {
+      "point": "模型支持 16 秒连续视频预测和多方案规划",
+      "explanation": "采用时间跳跃策略，能够生成长期连贯的视觉流，并在多条动作序列中通过视觉相似度选择最优方案，支持反事实推断，增强了实用性"
+    },
+    {
+      "point": "物理约束塑造视觉信息",
+      "explanation": "模型考虑了人体关节活动范围、平衡等物理限制，这些约束决定了可执行的动作范围，进而影响可获得的视觉信息"
+    },
+    {
+      "point": "研究为具身智能提供了新的发展方向",
+      "explanation": "通过模拟人类基于身体动作的视觉预测机制，使 AI 更接近人类的行为和决策方式，为可解释、可信任的具身智能奠定基础"
+    },
+    {
+      "point": "模型可分解复杂动作为原子动作",
+      "explanation": "支持单独预测手部、头部等局部动作，提高了预测的精细度和灵活性，体现了分层控制的思想"
+    }
+  ],
+  "keyQuotes": [
+    "如果一个智能体要在真实世界中行动、规划，并且和环境互动，它需要一个怎样的「世界模型」？",
+    "PEVA 的核心：预测未来，不只是预测像素，而是预测身体驱动下的视觉后果",
+    "人类之所以能看见未来，是因为身体在动，视觉随之更新",
+    "当 AI 试着像人一样行动时，也许它同样需要先学会：如果我这么动，接下来会看到什么",
+    "PEVA 就像一个「身体驱动的可视化模拟器」，让 AI 获得更接近人类的想象方式"
+  ],
+  "tags": [
+    "具身智能",
+    "世界模型",
+    "视频预测",
+    "3D姿态预测",
+    "计算机视觉"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2163,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751344745000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 04:39:05"
+}

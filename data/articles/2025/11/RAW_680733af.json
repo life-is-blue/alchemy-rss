@@ -1,0 +1,55 @@
+{
+  "id": "RAW_680733af",
+  "title": "Stripe 零停机数据迁移平台：毫秒级切换助力 PB 级数据迁移",
+  "url": "https://www.infoq.com/news/2025/11/stripe-zero-downtime-date-move/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-24 08:30:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At QCon San Francisco 2025, <a href=\"https://www.linkedin.com/in/jimmy-morzaria-3849a150/\">Jimmy Morzaria</a>, Staff Software Engineer at Stripe, presented the company's <a href=\"https://qconsf.com/presentation/nov2025/stripes-docdb-how-zero-downtime-data-movement-powers-trillion-dollar-payment\">Zero-Downtime Data Movement Platform</a>, a system enabling petabyte-scale database migrations with traffic cutovers&nbsp;that typically complete in milliseconds. The platform supports Stripe's infrastructure, handling 5 million database queries per second across 2,000-plus MongoDB-based shards while maintaining 99.9995% reliability for $1.4 trillion in annual transactions.</p>\n   <p>The platform's migration process follows a six-phase blueprint designed around three principles: maintaining data consistency with downtime shorter than node failover events, minimizing performance impact on live queries, and accommodating shards ranging from small datasets to tens of terabytes.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/11/stripe-zero-downtime-date-move/news/2025/11/stripe-zero-downtime-date-move/en/resources/1Stripe-DocDB-Blueprint-Crop-1763704321893.jpeg\" style=\"width:100%;height:3046px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/stripe-zero-downtime-date-move/en/resources/1Stripe-DocDB-Blueprint-Crop-1763704321893.jpeg\" rel=\"share\">\n    <br>\n    <em>Stripe's DocDB zero-downtime data movement stages</em></p>\n   <p>A data migration starts with a \"migration registration\" step that updates the routing metadata service to register new target shards and their key ranges. This step establishes the intended destination for data before any movement occurs.\n    <br>\n    The bulk data import phase then transfers the primary dataset using an optimized service that achieves tenfold performance improvements over standard imports. Morzaria explained that the team reordered inserts to align with MongoDB's B-tree storage engine, sorting items by the most-used indexes in each shard to improve write performance by 10x.</p>\n   <p>Next, during async replication, a dedicated replication service maintains bidirectional synchronization between source and target shards. This crucial phase captures ongoing changes to source data while simultaneously replicating modifications back to source shards. The bidirectional approach enables complete migration rollbacks if issues emerge, providing a critical safety mechanism for financial data.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/11/stripe-zero-downtime-date-move/news/2025/11/stripe-zero-downtime-date-move/en/resources/2Stripe-DocDB-Async-Replication-Crop-1763704321893.jpeg\" style=\"width:100%;height:2924px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/stripe-zero-downtime-date-move/en/resources/2Stripe-DocDB-Async-Replication-Crop-1763704321893.jpeg\" rel=\"share\">\n    <br>\n    <em>Architecture overview of the Async Replication step in the zero-downtime migration</em></p>\n   <p>Following replication, a validation service performs comprehensive correctness checks comparing data between source and target shards before proceeding to traffic switching. This verification ensures data integrity across the migration boundary.</p>\n   <p>The actual traffic switch (or cutover) step represents the platform's most technically sophisticated phase. Based on what Morzaria termed \"versioned gating,\" the mechanism coordinates version updates across the database proxy service, coordinator, routing service, and replication service.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/11/stripe-zero-downtime-date-move/news/2025/11/stripe-zero-downtime-date-move/en/resources/1Stripe-DocDB-Traffic-Switch-1763704321893.jpeg\" style=\"width:100%;height:2975px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/stripe-zero-downtime-date-move/en/resources/1Stripe-DocDB-Traffic-Switch-1763704321893.jpeg\" rel=\"share\">\n    <br>\n    <em>The traffic switch stage is based on \"versioned gating\", allowing minimal downtime</em></p>\n   <p>The process begins with the client application querying through the proxy at version one, which routes to the source database. The coordinator then sets version two and verifies replication synchronization. Once confirmed, the proxy fetches new routes and begins querying with version two, directing traffic to the target database while the source shard receives updates to maintain rollback capability. The entire coordination completes in milliseconds to 2 seconds at most, keeping customer disruption imperceptible.</p>\n   <p>Migration deregistration concludes the process by cleaning up metadata and decommissioning the migration infrastructure.\n    <br>\n    Beyond horizontal scaling, Stripe uses the platform for shard merging, MongoDB version upgrades across multiple major releases, and tenancy model transitions. Morzaria noted that substantial foundational investments enable tools to serve a range of scenarios beyond their original designs.</p>\n   <p>Stripe built its DocDB platform internally rather than using managed services due to requirements around security policy enforcement, predictable performance, and multi-tenancy support with enforced quotas. As individual shards reached tens of terabytes by 2020, the company needed a systematic approach to data movement. Morzaria emphasized that 40% of customers abandon transactions after payment denials, making zero-downtime migrations essential rather than optional. Consequently, the build-versus-buy decision made sense for Stripe given strategic importance, differentiated requirements, and security needs.\n    <br>\n    &nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Stripe's Zero-Downtime Data Movement Platform Migrates Petabytes with Millisecond Traffic Switches\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/stripe-zero-downtime-date-move/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763973000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Stripe 零停机数据迁移平台实现跨两千多个 MongoDB 分片的 PB 级数据迁移，可靠性高达 99.9995%。",
+  "oneSentenceSummary": "Stripe 零停机数据迁移平台实现跨两千多个 MongoDB 分片的 PB 级数据迁移，可靠性高达 99.9995%。",
+  "summary": "本文详细介绍了 Stripe 的零停机数据迁移平台，该平台在 QCon 旧金山 2025 大会上进行了展示。该平台为 Stripe 的基础设施提供 PB 级数据库迁移，该基础设施每秒处理 500 万个数据库查询，年交易额达 1.4 万亿美元。它基于以下原则运行：以最小的停机时间保持数据一致性，最大限度地减少对性能的影响，并适应各种分片大小。迁移过程包括六个阶段：迁移注册、批量数据导入（通过 B 树对齐优化，性能提升 10 倍）、用于可靠回滚的双向异步复制、全面验证、在几毫秒内完成的技术上复杂的“版本控制闸门”流量切换以及完成注销。除了迁移之外，该平台还支持水平扩展、分片合并和 MongoDB 版本升级。Stripe 选择内部构建该系统，因为其在安全性、可预测的性能和多租户方面有严格要求。此外，零停机对于金融运营具有战略重要性，因为 40% 的客户在支付被拒绝后会放弃交易。",
+  "mainPoints": [
+    {
+      "point": "Stripe 平台支持 PB 级数据库迁移，并实现毫秒级流量切换，零停机特性对高可用金融服务至关重要。",
+      "explanation": "该方案展示了在高吞吐、低延迟环境下解决复杂数据迁移挑战的有效方法。"
+    },
+    {
+      "point": "迁移过程采用六阶段蓝图，包括双向异步复制和“版本控制闸门”，以实现强大的安全性和最小的停机时间。",
+      "explanation": "这些机制确保数据一致性并允许立即回滚。通过协调流量切换，可以避免对用户造成明显中断，这对于保证金融数据的完整性至关重要。"
+    },
+    {
+      "point": "Stripe 决定在内部构建，是由于其独特的安全性、性能和多租户要求，突显了该平台的战略重要性。",
+      "explanation": "当现有方案无法满足严格的企业需求（尤其是在交易放弃会带来重大业务风险时），定制化解决方案就变得非常必要。"
+    }
+  ],
+  "keyQuotes": [
+    "该平台支持 Stripe 的基础设施，每秒处理 500 万个数据库查询，横跨 2，000 多个基于 MongoDB 的分片，同时保持 99.9995% 的可靠性，每年处理 1.4 万亿美元的交易。",
+    "如果出现问题，双向方法可以实现完整的迁移回滚，为金融数据提供关键的安全机制。",
+    "整个协调过程最多在几毫秒到 2 秒内完成，使客户中断难以察觉。",
+    "Morzaria 强调，40% 的客户会在支付被拒绝后放弃交易，因此零停机迁移是必选项，而非可选项。",
+    "大量的基本投资使工具能够服务于超出其原始设计范围的各种场景。"
+  ],
+  "tags": [
+    "分布式系统",
+    "数据库迁移",
+    "零停机",
+    "Stripe",
+    "MongoDB"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 537,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763973000000,
+  "publishDateStr": "2025-11-24",
+  "publishDateTimeStr": "2025-11-24 08:30:00"
+}

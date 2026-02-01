@@ -1,0 +1,55 @@
+{
+  "id": "RAW_310e03",
+  "title": "全球机器翻译比赛拿下 30 个语种第 1 名，腾讯混元翻译模型开源 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-02",
+  "date": "2025-09-02 01:54:15",
+  "author": "新闻助手",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>9月1日，腾讯混元宣布将旗下刚刚获得国际翻译比赛冠军的模型开源，供开发者免费下载部署。这一模型命名为Hunyuan-MT-7B，总参数量仅7B，支持33个语种、5种民汉语言/方言互译，是一个能力全面的轻量级翻译模型。&nbsp;</p>\n  <p><img width=\"424\" src=\"https://image.jiqizhixin.com/uploads/editor/2d6d9b7a-8411-4aa8-be8a-4c5c8c7a6d74/1756777983598.png\" alt=\"descript\" style=\"width: 92.26%;\" class=\"fr-fic fr-dib\"></p>\n  <p>同时开源的还有一个翻译集成模型 Hunyuan-MT-Chimera-7B （奇美拉），是业界首个翻译集成模型，它能够根据原文和多个翻译模型给出的不同内容，再生成一个更优的翻译结果，不仅原生支持Hunyuan-MT-7B，也支持接入 Deepseek 等模型，对于一些有专业翻译需求的用户和场景，可以提供更加准确的回复。</p>\n  <p><img width=\"454\" src=\"https://image.jiqizhixin.com/uploads/editor/fd9895ec-d28a-49b3-b7ac-5e7cc8609c18/1756777983603.png\" alt=\"descript\" style=\"width: 92.26%;\" class=\"fr-fic fr-dib\"></p>\n  <p>图：翻译集成模型的优势在于可以综合多个模型的结果，给出更加符合需求的翻译结果</p>\n  <p>在8月底结束的国际计算语言学协会（ACL）WMT2025比赛中，腾讯混元Hunyuan-MT-7B（Shy-hunyuan-MT）拿下了全部&nbsp;31个语种比赛中的30个第1名，处于绝对领先地位，这&nbsp;31个语种除了中文、英语、日语等常见语种，也包含捷克语、马拉地语、爱沙尼亚语、冰岛语等小语种。</p>\n  <p><img width=\"323\" src=\"https://image.jiqizhixin.com/uploads/editor/fd844c1a-3cd8-4bb2-b771-9ca89c6b2b52/1756777983608.png\" alt=\"descript\" style=\"width: 92.26%;\" class=\"fr-fic fr-dib\"></p>\n  <p>图：在WMT2025官方提供的成绩报告中，腾讯混元“shy-hunyuan-MT”即Hunyuan-MT-7B模型拿下了全部31个语种比赛中30个第1名，以上是英语-简体中文翻译的得分情况。</p>\n  <p>WMT25竞赛对参赛模型的参数规模有明确限制，要求系统满足开源要求，并且只能使用公开数据进行训练，在这样的环境下，Hunyuan-MT-7B击败了众多参数更大的模型。</p>\n  <p><img width=\"454\" src=\"https://image.jiqizhixin.com/uploads/editor/cb56a294-64fa-48c1-8759-c3e63371e4b2/1756777983613.png\" alt=\"descript\" style=\"width: 92.26%;\" class=\"fr-fic fr-dib\"></p>\n  <p>图：同尺寸模型下，Hunyuan-MT-7B效果领先于业界顶尖模型</p>\n  <p><img width=\"454\" src=\"https://image.jiqizhixin.com/uploads/editor/79a3a768-86d0-472d-a796-99d6198a3a3d/1756777983621.png\" alt=\"descript\" style=\"width: 92.26%;\" class=\"fr-fic fr-dib\"></p>\n  <p>图：Hunyuan-MT-7B效果与超大尺寸模型效果对比也不逊色</p>\n  <p>在业界常用的翻译能力测评数据集 Flores200上，腾讯混元Hunyuan-MT-7B模型也有卓越的效果表现，明显领先于同尺寸模型，与超大尺寸模型效果对比也不逊色。</p>\n  <p>取得全面领先的成绩，离不开技术上的全面突破，针对翻译场景，腾讯混元提出了一个完整的翻译模型训练范式，覆盖从预训练、到CPT再到监督调参、翻译强化和集成强化全链条，使得模型的翻译效果达到业界最优。</p>\n  <p><img width=\"422\" src=\"https://image.jiqizhixin.com/uploads/editor/654e7821-aa46-405b-b417-1b20cb3c1eeb/1756777983625.png\" alt=\"descript\" style=\"width: 92.26%;\" class=\"fr-fic fr-dib\"></p>\n  <p>Hunyuan-MT-7B的特点在于仅用少量的参数，就达到甚至超过了更大规模模型的效果，这也为模型的应用带来了众多优势。</p>\n  <p>首先是计算效率，7B模型的推理速度明显快于大型模型，在相同硬件条件下能够处理更多的翻译请求，并且，基于腾讯自研的AngelSlim大模型压缩工具对Hunyuan-MT-7B进行FP8量化压缩，推理性能进一步提升30%。其次是部署友好性，Hunyuan-MT-7B能够在更多样化的硬件环境中部署，从高端服务器到边缘设备都能良好运行，并且模型的部署成本、运行成本和维护成本都相对更低，在保证翻译质量的前提下，为企业和开发者提供了更具吸引力的解决方案。</p>\n  <p>相比传统的机器翻译，基于大模型的翻译对于对话背景、上下文内容以及综合的翻译需求有更深度的了解，进而能够提供更加准确和“信达雅”的翻译，这也为翻译模型的落地应用打下了基础。目前，腾讯混元翻译模型已经接入腾讯多个业务，包括腾讯会议、企业微信、QQ浏览器、翻译君翻译、腾讯海外客服翻译等，助力产品体验提升。</p>\n  <p>自2023年亮相以来，腾讯混元积极拥抱开源，通过开放自研技术，推动大模型技术的共享和突破，在推出翻译模型之前，已经陆续开源了业界领先的文生文、文生图、视频生成和3D生成能力和相关工具集插件，提供商业模型性能的模型服务，相关模型多次登顶开源社区热度榜榜首。未来，腾讯混元还将开放更多模型和技术，和社区携手，共建开放大模型生态。</p>\n  <p>Hunyuan-MT-7B 模型已在腾讯混元官网上线体验入口，并在Huggingface和Github等开源社区提供下载，对应的技术报告和论文也已经在开源社区公开，欢迎体验和下载。</p>\n  <p>\n   <br>\n  </p>\n  <ul>\n   <li>体验地址：https://hunyuan.tencent.com/modelSquare/home/list</li>\n   <li>Github: https://github.com/Tencent-Hunyuan/Hunyuan-MT/</li>\n   <li>HugginFace:&nbsp;<a href=\"https://huggingface.co/collections/tencent/hunyuan-mt-68b42f76d473f82798882597\" target=\"dkey\">https://huggingface.co/collections/tencent/hunyuan-mt-68b42f76d473f82798882597</a></li>\n   <li>AngelSlim压缩工具：https://github.com/Tencent/AngelSlim</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "腾讯混元开源其在国际机器翻译比赛 WMT2025 中斩获 30 项冠军的 Hunyuan-MT-7B 轻量级翻译模型，并发布业界首个翻译集成模型 Hunyuan-MT-Chimera-7B。",
+  "oneSentenceSummary": "腾讯混元开源其在国际机器翻译比赛 WMT2025 中斩获 30 项冠军的 Hunyuan-MT-7B 轻量级翻译模型，并发布业界首个翻译集成模型 Hunyuan-MT-Chimera-7B。",
+  "summary": "文章宣布腾讯混元正式开源其高性能轻量级机器翻译模型 Hunyuan-MT-7B，该模型参数量仅 7B，支持 33 个语种及 5 种民汉语言/方言互译。Hunyuan-MT-7B 在国际计算语言学协会 WMT2025 比赛中，于 31 个语种中取得 30 个第一名，表现卓越，尤其在小语种翻译上展现出强大实力，超越了许多更大规模的模型。同时开源的还有业界首个翻译集成模型 Hunyuan-MT-Chimera-7B，能够整合多模型结果以生成更优翻译。文章强调了 Hunyuan-MT-7B 在计算效率（推理速度快，经 FP8 量化压缩性能提升 30%）和部署友好性（兼容多硬件，成本低）方面的显著优势，并介绍了其背后完整的翻译模型训练范式。目前，该模型已应用于腾讯会议、企业微信等多个内部业务。腾讯混元持续拥抱开源，旨在推动大模型技术共享与生态共建，并提供了模型的体验地址、GitHub 和 Hugging Face 下载链接。",
+  "mainPoints": [
+    {
+      "point": "腾讯混元 Hunyuan-MT-7B 在国际机器翻译大赛 WMT2025 中表现卓越。",
+      "explanation": "该 7B 参数模型在 31 个语种比赛中夺得 30 个第一，证明了其在多语种、特别是小语种翻译上的领先能力，超越了许多更大规模的模型。"
+    },
+    {
+      "point": "Hunyuan-MT-7B 模型实现了高性能与轻量化的有效结合。",
+      "explanation": "仅 7B 参数却达到甚至超越更大模型效果，具备高计算效率（推理速度快，经 FP8 量化压缩性能提升 30%）和部署友好性，显著降低了应用成本。"
+    },
+    {
+      "point": "腾讯混元开源翻译模型，推动大模型技术共享与生态共建。",
+      "explanation": "开源 Hunyuan-MT-7B 及创新集成模型 Hunyuan-MT-Chimera-7B，并提供下载与体验入口，体现了腾讯在 AI 领域积极拥抱开源的战略，利于开发者利用先进技术。"
+    }
+  ],
+  "keyQuotes": [
+    "Hunyuan-MT-7B，总参数量仅 7B，支持 33 个语种、5 种民汉语言/方言互译，是一个能力全面的轻量级翻译模型。",
+    "Hunyuan-MT-Chimera-7B （奇美拉），是业界首个翻译集成模型，它能够根据原文和多个翻译模型给出的不同内容，再生成一个更优的翻译结果。",
+    "在 WMT2025 比赛中，腾讯混元 Hunyuan-MT-7B（Shy-hunyuan-MT）拿下了全部 31 个语种比赛中的 30 个第 1 名，处于绝对领先地位。",
+    "Hunyuan-MT-7B 的特点在于仅用少量的参数，就达到甚至超过了更大规模模型的效果，这也为模型的应用带来了众多优势。",
+    "相比传统的机器翻译，基于大模型的翻译对于对话背景、上下文内容以及综合的翻译需求有更深度的了解，进而能够提供更加准确和“信达雅”的翻译。"
+  ],
+  "tags": [
+    "机器翻译",
+    "腾讯混元",
+    "Hunyuan-MT-7B",
+    "模型开源",
+    "大语言模型"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1620,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756778055000,
+  "publishDateStr": "2025-09-02",
+  "publishDateTimeStr": "2025-09-02 01:54:15"
+}

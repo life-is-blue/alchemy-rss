@@ -1,0 +1,55 @@
+{
+  "id": "RAW_8dd96b",
+  "title": "谢赛宁团队新作打破\"多语言诅咒\"！MetaCLIP 2 支持 300 多种语言，英语性能反倒提升了",
+  "url": "https://www.qbitai.com/2025/07/316168.html",
+  "date": "2025-07-31 06:54:28",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">谢赛宁团队新作正在引起热议！</p>\n  <p data-track=\"2\">一直以来，作为文生图基石的CLIP模型主要基于英文数据训练，但实际上，全球互联网仍有<strong>超过50%</strong>的非英文数据。</p>\n  <p data-track=\"3\">为了将CLIP模型进一步扩展，研究人员需要搞定两大“拦路虎”：</p>\n  <ul>\n   <li data-track=\"4\">缺乏处理非英语数据的筛选方法；</li>\n   <li data-track=\"5\">现有多语言CLIP的英语性能比纯英语版本差<em>（即所谓的“多语言诅咒”）</em>。</li>\n  </ul>\n  <p data-track=\"6\">而谢赛宁团队正是在这两方面取得突破。他们提出了首个基于全球数据从头训练的CLIP——<strong>MetaCLIP 2</strong>，通过扩展元数据、优化筛选和提升模型容量，斩获了以下成果：</p>\n  <ol start=\"1\">\n   <li data-track=\"7\"><strong>搭建了能处理300多种语言的CLIP数据整理流程。</strong></li>\n   <li data-track=\"8\"><strong>打破了“多语言诅咒”，不仅没有影响英语任务的表现，而且反倒还提升了。</strong></li>\n  </ol>\n  <p data-track=\"9\">论文一作Yung-Sung Chuang<em>（MIT博士生、现Meta实习生）</em>激动表示：</p>\n  <blockquote>\n   <p data-track=\"10\">是时候告别语言过滤器了！</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ddf20273-fd14-4b9e-b58a-6daa259a2900/public\" alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ddf20273-fd14-4b9e-b58a-6daa259a2900/public\">\n  </div>\n  <p data-track=\"11\">刚被小扎从OpenAI挖走的Lucas Beyer也出来对这一观点表示认同，顺带还感谢了论文中的引用：</p>\n  <blockquote>\n   <p data-track=\"12\">很高兴看到我们提出并始终倡导的<strong>“NoFilter”理念</strong>能在MetaCLIP 2中得到应用。</p>\n   <p data-track=\"13\">这就是正确的道路！</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1da7a5f3-f696-4b66-670a-ca064e919400/public\" alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1da7a5f3-f696-4b66-670a-ca064e919400/public\">\n  </div>\n  <p data-track=\"14\">这也引来了谢赛宁本人的回应：</p>\n  <blockquote>\n   <p data-track=\"15\">早在MetaCLIP中，团队的目标也是NoFilter<em>（与其搞复杂过滤，不如相信原始数据的价值）</em>。</p>\n   <p data-track=\"16\"><strong>我也认为NoFilter才是正道。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6451748a-5b96-42a5-d48d-a7a57b268300/public\" alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6451748a-5b96-42a5-d48d-a7a57b268300/public\">\n  </div>\n  <p data-track=\"17\">下面详细来看MetaCLIP 2所采用的方法。</p>\n  <p data-track=\"19\">概括而言，为了让CLIP模型能从全球数据中学习，MetaCLIP 2采用了三大关键创新：</p>\n  <ul>\n   <li data-track=\"20\">构建全球元数据</li>\n   <li data-track=\"21\">实施全球筛选算法</li>\n   <li data-track=\"22\">构建全球模型的训练框架</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ca0aecd3-8783-4771-441b-cb4752e60b00/public\" alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ca0aecd3-8783-4771-441b-cb4752e60b00/public\">\n  </div>\n  <p data-track=\"23\">开始之前，论文先回顾了<strong>原始MetaCLIP</strong>所采用的思路。</p>\n  <p data-track=\"24\">简单说，其筛选逻辑主要分三步：</p>\n  <ol start=\"1\">\n   <li data-track=\"25\">从英语WordNet、维基百科提取50万个 “视觉概念”，组成元数据列表M；</li>\n   <li data-track=\"26\">用这些概念匹配图像-文本对的描述文字<em>（逐个检查文本里的内容，看能否匹配到M里的词条）</em>；</li>\n   <li data-track=\"27\">设定一个阈值t，通过 “平衡机制”<em>（控制头部/尾部概念的比例）</em>筛选数据，确保“猫”“狗”这类常见概念和“深海生物”“小众建筑”这类少见概念分布合理。</li>\n  </ol>\n  <p data-track=\"28\">顺便一提，OpenAI CLIP将t设置为20k，而MetaCLIP为了适配十亿级英语数据，把t调高到170k ，让平衡策略更适合大规模数据。</p>\n  <p data-track=\"29\"><strong>而MetaCLIP 2，正是在英文MetaCLIP的基础上，进一步优化了架构和流程。</strong></p>\n  <p data-track=\"30\">这第一步非常简单，无非是将之前的元数据扩展到<strong>300多种语言</strong>。</p>\n  <p data-track=\"31\">具体而言，它现在包含了多语言的WordNet和各国维基百科的词汇，有点像给每种语言都编了一套 “视觉概念词典”。</p>\n  <p data-track=\"32\"><strong>然后用算法给每种语言“量身筛数据”。</strong></p>\n  <p data-track=\"33\">先是识别文字是哪种语言，再用对应语言的“字典”去匹配图像-文字对。</p>\n  <p data-track=\"34\">同时给每种语言设立单独的筛选标准<em>（比如控制“常见概念”和“少见概念”的比例）</em>，确保每种语言的数据分布合理，不会出现某类内容过多的情况。</p>\n  <p data-track=\"35\">下图为MetaCLIP 2筛选全球多语言图像-文本对的伪代码<em>（用Python/NumPy风格编写）</em>：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c15a7d33-dd8b-4909-ee09-90982ba31000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c15a7d33-dd8b-4909-ee09-90982ba31000/public\">\n  </div>\n  <p data-track=\"36\"><strong>最后再调整训练策略，避免“顾此失彼”。</strong></p>\n  <p data-track=\"37\">一方面，鉴于全球数据变多了，所以团队按比例增加了训练时“见过的样本量”（比如扩大2.3倍），保证英语样本量不减少。</p>\n  <p data-track=\"38\">另一方面，团队发现模型大小很关键——小一点的模型<em>（如ViT-L/14）</em>还会受“多语言诅咒”，但大一点的ViT-H/14能打破诅咒，让英语和非英语能力一起提升。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6da8d8fe-395e-4a5d-00fa-3c43ea382800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6da8d8fe-395e-4a5d-00fa-3c43ea382800/public\">\n  </div>\n  <p data-track=\"39\"><em>p.s. 大语言模型中的“多语言诅咒”是指，当模型在多语言数据上进行训练时，出现某些特定语言（尤其是原本表现较好的语言，如英语 ）性能下降的现象。</em></p>\n  <p data-track=\"40\">采用以上数据筛选方法，MetaCLIP 2与NoFilter理念形成了深度协同——筛选逻辑的本质从“语言过滤”<em>（如直接排除非英语数据）</em>转向“概念平衡”，从“排除数据”<em>（如用单一标准排除数据）</em>转向“优化分布”。</p>\n  <p data-track=\"42\">为了验证方法的有效性，团队基于全网公开数据<em>（英语占44%，非英语占56%）</em>进行了实验。</p>\n  <p data-track=\"43\">训练配置上，团队基本沿用OpenAI CLIP/MetaCLIP的参数，仅调整样本量<em>（如ViT-H/14用290亿样本）</em>和模型容量。</p>\n  <p data-track=\"44\">实验结果显示，<strong>MetaCLIP 2在多项测试中表现亮眼</strong>：</p>\n  <p data-track=\"45\">首先，它打破了大语言模型领域存在的“多语言诅咒”，证明学了非英语数据后，英语能力不仅没有下降，甚至反而变强了。</p>\n  <p data-track=\"46\">例如，它在ImageNet识别日常物品上准确率达到<strong>81.3%</strong>，超过纯英语CLIP的<strong>80.5%</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/10d0f00f-bdb6-4a3c-280a-abac94357900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/10d0f00f-bdb6-4a3c-280a-abac94357900/public\">\n  </div>\n  <p data-track=\"47\">其次，它在多语言测试中<em>（如用280种语言给图片分类、跨36种语言搜图）</em>，成绩远超之前的mSigLIP、SigLIP 2等模型。</p>\n  <p data-track=\"48\">还是上面这张图，它在Babel-ImageNet多语言图像分类任务里，取得了50.2%的准确率；在XM3600图像到文本检索任务中，检索匹配的准确率达到64.3%。</p>\n  <p data-track=\"49\">更有意思的是，MetaCLIP 2<strong>不仅更懂“文化多样性”，而且嵌入质量也更优。</strong></p>\n  <p data-track=\"50\">一方面，它在文化多样性任务<em>（如地理定位）</em>上表现更优，如在Dollar Street、GLDv2等数据集上，全球数据训练的模型准确率显著高于纯英语或纯非英语模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/929fd186-26ba-4f70-454a-e35fc20eb100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/929fd186-26ba-4f70-454a-e35fc20eb100/public\">\n  </div>\n  <p data-track=\"51\">另一方面，它在对齐性<em>（图像-文本相关性）</em>和均匀性<em>（视觉嵌入分布）</em>上的得分同样更优。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁团队新作打破“多语言诅咒”！MetaCLIP 2支持300多种语言，英语性能反倒提升了\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2bba3fe5-e535-4c60-a47d-a0bdda3d8000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2bba3fe5-e535-4c60-a47d-a0bdda3d8000/public\">\n  </div>\n  <p data-track=\"52\">划重点，目前相关数据和代码均已<strong>开源</strong>了~</p>\n  <p data-track=\"53\">论文：<br>\n    https://arxiv.org/abs/2507.22062<br>\n    代码地址：<br>\n    https://github.com/facebookresearch/MetaCLIP</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谢赛宁团队 MetaCLIP 2 打破“多语言诅咒”，支持 300+语言并提升英语性能。",
+  "oneSentenceSummary": "谢赛宁团队 MetaCLIP 2 打破“多语言诅咒”，支持 300+语言并提升英语性能。",
+  "summary": "文章详细介绍了谢赛宁团队在多语言 CLIP 模型方面的最新突破——MetaCLIP 2。针对现有 CLIP 模型主要依赖英文数据、缺乏非英文数据筛选方法以及多语言训练导致“多语言诅咒”（即英语性能下降）的挑战，MetaCLIP 2 秉持并践行“NoFilter”理念（相信原始数据价值而非复杂过滤），提出了创新解决方案。其核心创新包括：构建支持 300 多种语言的全球元数据，实施能为每种语言“量身定制”的全球筛选算法，以及通过增加训练样本量和使用更大模型（如 ViT-H/14）来优化训练策略。通过这些方法，MetaCLIP 2 不仅能有效处理全球超过 50%的非英文数据，更重要的是，它成功打破了“多语言诅咒”，在显著提升多语言能力的同时，ImageNet 等英语任务的准确率甚至有所提高。文章展示了 MetaCLIP 2 在多语言分类、跨语言检索和文化多样性理解等方面的卓越表现，相关数据和代码已开源，为多语言 AI 模型的发展提供了重要方向。",
+  "mainPoints": [
+    {
+      "point": "成功打破“多语言诅咒”并逆向提升英语性能",
+      "explanation": "MetaCLIP 2 首次实现多语言模型在处理 300 多种语言的同时，反而在英语任务上取得性能提升，解决了长期困扰多语言 AI 模型的“多语言诅咒”核心难题，展现了多语言训练的巨大潜力。"
+    },
+    {
+      "point": "构建创新的多语言数据筛选与模型训练框架",
+      "explanation": "通过扩展多语言元数据、设计语言定制化筛选算法，并结合大模型容量（如 ViT-H/14）和充足样本量，MetaCLIP 2 有效解决了非英语数据处理难题，并从根本上规避了“多语言诅咒”，实现了全球数据的有效利用。"
+    },
+    {
+      "point": "遵循“NoFilter”理念并开源贡献",
+      "explanation": "MetaCLIP 2 践行“NoFilter”理念，相信原始数据价值，并通过优化分布而非简单过滤来处理数据，其开源的数据和代码为全球研究人员提供了宝贵资源，加速了多语言、跨文化 AI 模型的研发和应用。"
+    }
+  ],
+  "keyQuotes": [
+    "是时候告别语言过滤器了！",
+    "很高兴看到我们提出并始终倡导的'NoFilter'理念能在 MetaCLIP 2 中得到应用。这就是正确的道路！",
+    "我也认为 NoFilter 才是正道。",
+    "MetaCLIP 2 在多项测试中表现亮眼：首先，它打破了大语言模型领域存在的'多语言诅咒'，证明学了非英语数据后，英语能力不仅没有下降，甚至反而变强了。",
+    "MetaCLIP 2 不仅更懂'文化多样性'，而且嵌入质量也更优。"
+  ],
+  "tags": [
+    "CLIP",
+    "多语言模型",
+    "图像理解",
+    "多模态AI",
+    "模型训练"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2067,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753944868000,
+  "publishDateStr": "2025-07-31",
+  "publishDateTimeStr": "2025-07-31 06:54:28"
+}

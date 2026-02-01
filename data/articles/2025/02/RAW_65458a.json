@@ -1,0 +1,53 @@
+{
+  "id": "RAW_65458a",
+  "title": "从锁机制、负载饱和到 CDN 故障： Canva 宕机事故复盘",
+  "url": "https://mp.weixin.qq.com/s/Bs1QKzzN9tuxqqQ7bL1xvw",
+  "date": "2025-02-24 10:26:02",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "\n \n \n  <p style=\"text-align: center;margin-bottom: 16px;\"><br></p>\n  <section style=\"color: rgb(63, 63, 63);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\">\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    作者 &nbsp;| Renato Losio\n   </section>\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    翻译审校 | InfoQ 编辑部\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Canva 工程团队最近发布了对去年 11 月宕机事件的事后分析报告，详细说明了 API 网关故障的情况以及在这次事件中汲取的教训。Canva 的首席技术官 Brendan Humphreys 承认：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"182\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “2024 年 11 月 12 日，Canva 遭遇了一次严重的宕机事故，影响了 canva.com 的正常访问。从 UTC 时间上午 9 点 08 分至大约 10 点，canva.com 都无法访问。此次事故是由我们的 API 网关集群故障导致的，多个因素共同作用引发了这一故障，包括 Canva 编辑器的一次软件部署、锁机制问题，以及我们的内容分发网络（CDN）提供商 Cloudflare 的网络问题。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Canva 的编辑器是一个单页应用程序，每天会多次部署。客户端设备通过 Cloudflare 的分层缓存系统获取新资源。然而，CDN 提供商内部的一个路由问题扰乱了两个区域之间的流量。因此，当资源在 CDN 上可用时，所有客户端同时开始下载。这导致了流量的突然激增，超过 27 万个待处理请求同时进行。Humphreys 解释道：</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">“通常情况下，错误数量增加会使我们的金丝雀测试系统中止部署。但在这次事件中，由于请求没有完成，所以没有记录到错误。结果，超过 27 万用户对 JavaScript 文件的请求都在同一缓存流中等待。”</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: center;\"><img alt=\"image.png\" class=\"rich_pages wxw-img\" data-imgfileid=\"503752901\" data-ratio=\"0.562962962962963\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb0002bf-17b0-46c7-829e-8dc66b251300/public\" data-type=\"png\" data-w=\"1080\" style=\"width: 100%;\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb0002bf-17b0-46c7-829e-8dc66b251300/public\"></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: center;\"><span style=\"color: rgb(136, 136, 136);font-size: 14px;\">图注：Canva API 网关架构，来源：Canva 工程博客</span></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">爱彼迎（Airbnb）的软件工程师 Lorin Hochstein，同时也是《冲浪复杂性》（Surfing Complexity）博客的作者，将这次宕机事件描述为一个关于负载饱和和系统弹性的故事。Hochstein 强调：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"105\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “这次事件并非由新版本代码中的漏洞引发，甚至也不是由该版本代码中某些意外的突发行为导致的。虽然这次事件是由一次部署引发的，但与前一版本的代码变更并无关联。实际上，是客户端下载新版本后出现的系统行为导致了宕机。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">突然间，所有等待中的设备同时加载新的对象面板，导致 API 网关每秒收到超过 150 万个请求，流量激增幅度约为典型峰值负载的三倍。这股巨大的流量浪潮使负载均衡器变成了 “过载均衡器”，将原本健康的节点拖垮。Hochstein 补充道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"55\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “这是一个典型的正反馈循环例子：出现故障的任务越多，健康节点接收的流量就越大，这些任务也就越有可能出现故障。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">由于自动缩放机制未能跟上流量变化，API 网关任务因内存耗尽开始出现故障，最终导致整个系统完全崩溃。为解决这一问题，Canva 团队试图手动增加容量，同时降低节点负载，但效果参差不齐。当在 CDN 层完全阻断流量后，情况才终于得到缓解。Humphreys 详细说道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"135\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “UTC 时间上午 9 点 29 分，我们在 Cloudflare 上添加了一条临时防火墙规则，在 CDN 层阻断了所有流量。这阻止了任何流量到达 API 网关，使新任务能够启动，而不会被涌入的请求压垮。随后，我们将 canva.com 重定向到状态页面，以便让用户清楚地了解我们正在遭遇故障。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">接着 Canva 的工程师们逐步增加流量，大约 20 分钟后完全恢复了服务。在 HackerNews 热门讨论帖中，John Nagle 评论道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"78\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “这个问题类似于电力公司所说的‘负载吸收’。停电后恢复供电时，许多设备在启动时会消耗更多电力。（……）因此，恢复电网供电要分区进行，而不是一次性全部恢复。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">虽然系统最初满足了所有功能需求，但自动化系统却加剧了问题的严重性。Hochstein 指出：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"83\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “这就需要事故响应人员调整系统行为，改变其运行方式，使系统恢复到正常状态。（……）这是系统弹性的一个经典案例，即在系统进入非设计运行状态时，采取行动重新配置其行为。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Humphreys 在领英（LinkedIn）上总结道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"97\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      “在 Cloudflare 能力出众且乐于助人的合作伙伴协作下，我们花了一些时间才弄清楚事件全貌。（……）这是一个引人入胜的故事，涉及数据包丢失、缓存动态变化、流量激增、线程争用和任务余量等问题。”\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">为最大程度降低未来发生类似事件的可能性，该团队着重改进了事故响应流程，包括制定流量阻断和恢复的操作手册，以及增强 API 网关的弹性。</p>\n   <section style=\"color: rgb(63, 63, 63);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\">\n    <section style=\"text-align: left;margin-top: 30px;margin-left: 8px;color: rgb(0, 179, 138);\">\n     <span style=\"display: inline-block;width: 15px;height: 15px;background-image: url(&quot;https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/617ae074-f926-45ca-f252-c83a0cb47700/public&quot;);background-position: center center;background-repeat: no-repeat;background-attachment: initial;background-origin: initial;background-clip: initial;background-size: 100% 100%;margin-right: 10px;\"></span> 关于作者\n    </section>\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\"><strong>Renato Losio</strong>，Renato 作为云架构师、技术主管和云服务专家，拥有丰富的经验。目前，他居住在柏林，担任首席云架构师开展远程工作。他主要感兴趣的领域包括云服务和关系型数据库。他是 InfoQ 的编辑，也是经过认证的 AWS Data Hero。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\"><strong><span style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></strong></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\"><span style=\"font-size: 14px;color: rgb(136, 136, 136);\">https://www.infoq.com/news/2025/02/canva-incident-report/</span></p><section style=\"padding-top:23px;color:rgb(74, 74, 74);visibility:visible;white-space:pre-line;padding-left:8px;letter-spacing:0.544px;font-size:16px;line-height:27px;-webkit-tap-highlight-color:transparent;outline:0px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom:0px;padding-right:8px;text-align:center;\">\n   </section>\n  </section>\n  <p style=\"display: none;\"><mp-style-type data-value=\"10000\"></mp-style-type></p>\n \n",
+  "aiSummary": "Canva 宕机是突发流量、锁机制、CDN 故障等多重因素耦合导致，暴露了系统在负载饱和和弹性方面的挑战，以及自动化系统潜在的风险。",
+  "oneSentenceSummary": "Canva 宕机是突发流量、锁机制、CDN 故障等多重因素耦合导致，暴露了系统在负载饱和和弹性方面的挑战，以及自动化系统潜在的风险。",
+  "summary": "Canva 在 2024 年 11 月遭遇了一次严重的宕机事故，影响了 canva.com 的正常访问。事故的直接原因是 API 网关集群故障，由 Canva 编辑器的一次软件部署、锁机制问题以及 CDN 提供商 Cloudflare 的网络问题共同作用引发。大量客户端同时下载新资源导致 API 网关每秒收到超过 150 万个请求，远超正常峰值负载的三倍，使负载均衡器失效。自动缩放机制未能及时响应，导致 API 网关任务因内存耗尽而崩溃。Canva 团队通过在 CDN 层阻断流量并逐步恢复服务，最终解决了问题。Canva 团队通过制定流量阻断和恢复的操作手册，并增强 API 网关的弹性来改进事故响应流程。本次事故为高流量、高并发系统设计提供了宝贵的经验，强调了系统弹性和自动化风险的重要性。",
+  "mainPoints": [
+    {
+      "point": "CDN 故障引发的突发流量是 Canva 宕机的直接诱因",
+      "explanation": "CDN 故障导致大量客户端同时请求资源，API 网关接收到远超正常水平的流量，触发系统过载保护机制。"
+    },
+    {
+      "point": "不合理的自动化策略可能会放大系统风险",
+      "explanation": "自动缩放机制未能及时响应流量变化，导致 API 网关任务因内存耗尽而崩溃，加剧了宕机的影响。"
+    },
+    {
+      "point": "提升系统弹性需要在设计和运维两方面同时发力",
+      "explanation": "事故响应人员需要能够调整系统行为，改变其运行方式，使系统恢复到正常状态。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个引人入胜的故事，涉及数据包丢失、缓存动态变化、流量激增、线程争用和任务余量等问题。",
+    "这就需要事故响应人员调整系统行为，改变其运行方式，使系统恢复到正常状态。（......）这是系统弹性的一个经典案例，即在系统进入非设计运行状态时，采取行动重新配置其行为。",
+    "在 Cloudflare 能力出众且乐于助人的合作伙伴协作下，我们花了一些时间才弄清楚事件全貌。（......）"
+  ],
+  "tags": [
+    "故障分析",
+    "API 网关",
+    "CDN",
+    "CDN 缓存",
+    "负载均衡"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1616,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740392762000,
+  "publishDateStr": "2025-02-24",
+  "publishDateTimeStr": "2025-02-24 10:26:02"
+}

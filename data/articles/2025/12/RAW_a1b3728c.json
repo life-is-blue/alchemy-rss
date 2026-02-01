@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a1b3728c",
+  "title": "AlphaEvolve 入驻 Google Cloud，作为算法优化的智能体系统",
+  "url": "https://www.infoq.com/news/2025/12/alphaevolve-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-15 12:30:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud announced the <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/alphaevolve-on-google-cloud/\">private preview of AlphaEvolve</a>, a Gemini-powered coding agent designed to discover and optimize algorithms for complex engineering and scientific problems. The system is now available through an early access program on Google Cloud, targeting use cases where traditional brute-force or manual optimization methods struggle due to vast search spaces.</p>\n   <p><a href=\"https://www.infoq.com/news/2025/05/google-alpha-evolve/\">AlphaEvolve</a> is built around a feedback-driven evolutionary loop. Users define a concrete problem specification, an evaluation function that serves as ground truth, and an initial seed program that already solves the task, even if inefficiently. Gemini models then generate variations of this code, which are automatically evaluated. Higher-performing variants are selected, combined, and further mutated over successive iterations. Over time, this process evolves the original implementation into significantly more efficient algorithms.</p>\n   <p>Technically, the system combines multiple Gemini models with different roles. Faster models are used to explore large numbers of candidate mutations, while more capable models focus on deeper reasoning and refinement. The evaluation layer is fully user-defined, allowing AlphaEvolve to optimize for measurable objectives such as runtime, memory usage, numerical accuracy, or domain-specific constraints. This separation between generation and verification is central to making the approach reliable for production-grade workloads.</p>\n   <p>Google has indicated that AlphaEvolve has achieved notable results in several areas. In data center operations, it identified scheduling strategies that resulted in an average recovery of 0.7% of global compute capacity. In the realm of model training, it optimized a key component of the Gemini architecture, leading to a 23% reduction in execution time and a decrease in overall training time by approximately 1%. Additionally, the system has been utilized in hardware design to identify more efficient arithmetic circuits for future TPU generations.</p>\n   <p>The release has sparked discussion in the community. Sergio Vargas, a cloud and infrastructure specialist, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7404266972655558657?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7404266972655558657%2C7404478422518956032%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287404478422518956032%2Curn%3Ali%3Aactivity%3A7404266972655558657%29\">highlighted</a> the broader implications of the approach:</p>\n   <blockquote>\n    <p>The concept of a feedback loop where the LLM proposes modifications and then evaluates their impact is fascinating. It feels like moving from a static code assistant to a true algorithmic research partner. I'm particularly curious about the types of efficiency gains you're seeing in the preview—are they more often in time complexity, memory usage, or perhaps parallelization?</p>\n   </blockquote>\n   <p>Others have focused on the system architecture itself. Sathyanarayanan Vittal <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7404266972655558657?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7404266972655558657%2C7404314335117852674%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287404314335117852674%2Curn%3Ali%3Aactivity%3A7404266972655558657%29\">asked</a> which models are used in AlphaEvolve’s ensemble, prompting <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7404266972655558657?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7404266972655558657%2C7404314335117852674%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7404266972655558657%2C7404360247525548032%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287404314335117852674%2Curn%3Ali%3Aactivity%3A7404266972655558657%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287404360247525548032%2Curn%3Ali%3Aactivity%3A7404266972655558657%29\">speculation</a> that multiple Gemini 3 instances may be running in parallel to explore the solution space more effectively.</p>\n   <p>AlphaEvolve is currently accessible via an early access API on Google Cloud. Google has also published a technical paper detailing the underlying methods and internal results, offering deeper insight for teams evaluating the system for advanced optimization workloads.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AlphaEvolve Enters Google Cloud as an Agentic System for Algorithm Optimization\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/alphaevolve-google-cloud/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765801800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Cloud 推出了 AlphaEvolve，一个由 Gemini 提供支持的 AI 智能体系统，旨在通过进化式反馈循环自动发现和优化复杂工程和科学问题的算法。",
+  "oneSentenceSummary": "Google Cloud 推出了 AlphaEvolve，一个由 Gemini 提供支持的 AI 智能体系统，旨在通过进化式反馈循环自动发现和优化复杂工程和科学问题的算法。",
+  "summary": "Google Cloud 宣布非公开预览 AlphaEvolve，这是一个利用 Gemini 模型发现和优化复杂算法的 AI 编程智能体。AlphaEvolve 通过反馈驱动的进化循环进行操作：用户提供问题规范、评估函数和初始代码；Gemini 模型随后生成并评估代码变体。性能更优的变体在连续迭代中被选中、组合和变异，从而演变为明显更高效的算法。该系统集成了多个 Gemini 模型，使用速度更快的模型探索变异，并利用能力更强的模型进行更深层次的推理。用户可以定义评估层，以优化如运行时、内存使用或数值精度等目标。AlphaEvolve 已在数据中心调度、优化 Gemini 架构组件以及设计未来 TPU 硬件方面取得了显著成果。此次发布引发了社区对其作为“算法研究伙伴”的潜力及其架构细节的讨论。目前，该系统可通过抢先体验 API 获取。",
+  "mainPoints": [
+    {
+      "point": "AlphaEvolve 利用 Gemini 驱动的进化搜索自主优化复杂算法，超越了传统手动方法。",
+      "explanation": "该系统通过反馈循环持续生成、评估和选择高性能代码变体。这对于具有广阔搜索空间的工程和科学问题特别有效，能显著提高算法效率并减少人工干预。"
+    },
+    {
+      "point": "用户可以自定义评估标准，使 AlphaEvolve 能够针对特定业务目标进行多维度优化。",
+      "explanation": "该系统的灵活性是一个关键优势，允许针对运行时、内存使用或数值精度等特定指标进行优化，确保优化结果与实际应用需求紧密结合。"
+    },
+    {
+      "point": "AlphaEvolve 在实际生产环境中展示了显著的优化结果和实际应用潜力。",
+      "explanation": "在数据中心调度、AI 模型训练和硬件设计等领域取得了积极成果，证实了其在解决关键业务和技术挑战方面的有效性和价值。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM (大型语言模型) 提出修改并评估其影响的反馈循环概念引人入胜。这感觉像是从一个静态的代码助手转向一个真正的算法研究伙伴。",
+    "性能更优的变体被选中、组合，并在后续的迭代中不断变异。随着时间的推移，这个过程使原始实现演变为明显更高效的算法。",
+    "生成和验证之间的这种分离，是使该方法可以在生产级工作负载中可靠运行的核心。"
+  ],
+  "tags": [
+    "AlphaEvolve",
+    "Google Cloud",
+    "Gemini",
+    "算法优化",
+    "进化式AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 433,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765801800000,
+  "publishDateStr": "2025-12-15",
+  "publishDateTimeStr": "2025-12-15 12:30:00"
+}

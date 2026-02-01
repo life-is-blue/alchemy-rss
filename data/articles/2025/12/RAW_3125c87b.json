@@ -1,0 +1,56 @@
+{
+  "id": "RAW_3125c87b",
+  "title": "Lyft 采用 AWS SageMaker 与 Kubernetes 混合模式重构机器学习平台",
+  "url": "https://www.infoq.com/news/2025/12/lyft-ml-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-16 10:30:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Lyft has rearchitected its machine learning platform LyftLearn into a hybrid system, <a href=\"https://eng.lyft.com/lyftlearn-evolution-rethinking-ml-platform-architecture-547de6c950e1\">moving offline workloads to AWS SageMaker while retaining Kubernetes for online model serving</a>. Its decision to choose managed services where operational complexity was highest, while maintaining custom infrastructure where control mattered most, offers a pragmatic alternative to unified platform strategies.</p>\n   <p>Lyft's engineers migrated LyftLearn Compute, which manages training and batch processing, to <a href=\"https://docs.aws.amazon.com/next-generation-sagemaker/latest/userguide/what-is-sagemaker.html\">AWS SageMaker</a>, eliminating background watcher services, cluster autoscaling challenges, and eventually-consistent state management, which had consumed significant engineering effort. LyftLearn Serving, which handles real-time inference, remained on <a href=\"https://kubernetes.io/\">Kubernetes</a>, where Lyft's existing architecture already delivered the required performance and integrated tightly with internal tooling.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/lyft-ml-platform/news/2025/12/lyft-ml-platform/en/resources/1Lyft-LyftLearn-Architecture-1765711434001.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/lyft-ml-platform/en/resources/1Lyft-LyftLearn-Architecture-1765711434001.png\" rel=\"share\">\n    <br>\n    <em>LyftLearn Hybrid High-Level Architecture (<a href=\"https://eng.lyft.com/lyftlearn-evolution-rethinking-ml-platform-architecture-547de6c950e1\">source</a>)</em></p>\n   <p>The author, <a href=\"https://www.linkedin.com/in/yaroslav-yatsiuk-945931160/\">Yaroslav Yatsiuk</a>, explains the main reasoning behind this decision:</p>\n   <blockquote>\n    <p>We adopted SageMaker for training because managing custom batch compute infrastructure was consuming engineering capacity better spent on ML platform capabilities. We kept our serving infrastructure custom-built because it delivered the cost efficiency and control we needed.</p>\n   </blockquote>\n   <p>LyftLearn supports hundreds of millions of daily predictions across dispatch optimization, pricing, and fraud detection, with thousands of training jobs per day serving hundreds of data scientists and ML engineers. Originally built entirely on Kubernetes, the system's operational complexity grew with scale. Each new ML capability required custom orchestration logic, and synchronizing Kubernetes state with the platform's database required multiple watcher services to handle out-of-order events and container status transitions.</p>\n   <p>For offline workloads, SageMaker's managed infrastructure directly addressed these pain points. <a href=\"https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html\">AWS EventBridge</a> and <a href=\"https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html\">SQS</a> replaced the watcher architecture with event-driven state management, while on-demand provisioning eliminated idle cluster capacity costs. However, the migration required maintaining complete compatibility with existing ML code.</p>\n   <p>Lyft built cross-platform Docker images that replicate the Kubernetes runtime environment in SageMaker, transparently handling credential injection, metrics collection, and configuration management. For latency-sensitive workloads retraining every 15 minutes, the team adopted <a href=\"https://www.infoq.com/news/2023/08/fargate-fast-startup-soci/\">Seekable OCI</a> (SOCI)&nbsp;indexes for notebooks and SageMaker warm pools for training jobs, achieving Kubernetes-comparable startup times.</p>\n   <p>The most complex challenge involved <a href=\"https://spark.apache.org/\">Spark</a>'s bidirectional communication requirements across SageMaker Studio and EKS clusters. Default SageMaker networking blocked the inbound connections Spark executors needed to reach notebook drivers. Lyft partnered with AWS to enable custom networking configurations in their Studio Domains, resolving the issue without performance impact.</p>\n   <p>The migration was deployed repository by repository, with both infrastructures running in parallel, requiring only minimal configuration changes. The compatibility layer ensured the same Docker image used for SageMaker training would serve models in Kubernetes, eliminating train-serve inconsistencies. Lyft reports reduced infrastructure incidents and freed engineering capacity for platform capabilities following the migration. Yatsiuk concluded:</p>\n   <blockquote>\n    <p>The best platform engineering isn't about the technology stack you run—it's about the complexity you hide and the velocity you unlock.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Lyft Rearchitects ML Platform with Hybrid AWS SageMaker-Kubernetes Approach\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/lyft-ml-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765881000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Lyft 成功地将其机器学习平台 LyftLearn 重构为一个混合系统，利用 AWS SageMaker 处理离线工作负载，并借助 Kubernetes 进行在线模型服务，显著降低了运营复杂性。",
+  "oneSentenceSummary": "Lyft 成功地将其机器学习平台 LyftLearn 重构为一个混合系统，利用 AWS SageMaker 处理离线工作负载，并借助 Kubernetes 进行在线模型服务，显著降低了运营复杂性。",
+  "summary": "Lyft 将其机器学习平台 LyftLearn 重构为混合架构，旨在简化运营并提升开发者效率。复杂的离线训练和批处理工作负载已迁移至 AWS SageMaker，解决了以往消耗大量工程投入的集群自动扩缩容和状态管理等难题。对于延迟敏感的在线模型服务，Lyft 保留了其现有的 Kubernetes 基础设施，充分利用其既有的卓越性能和与内部工具的紧密集成。这种务实的方法使 Lyft 能够将高复杂度的运营负担转移给托管服务，同时为关键的在线服务保持精细控制和成本效益。此次迁移涉及构建跨平台 Docker 镜像，并克服了 Spark 在混合环境中的网络要求等挑战，最终显著减少了基础设施事故，并提升了工程团队专注于核心机器学习平台功能的投入能力。",
+  "mainPoints": [
+    {
+      "point": "采用混合机器学习平台模式可降低运营开销，同时保持控制。",
+      "explanation": "Lyft 将复杂且耗费精力的离线机器学习工作负载迁移至托管的 AWS SageMaker，有效将工程师从基础设施管理中解放出来；同时，为满足特定的性能和控制需求，将实时服务保留在 Kubernetes 上。"
+    },
+    {
+      "point": "跨平台兼容性对于无缝混合云迁移至关重要。",
+      "explanation": "Lyft 开发了通用的 Docker 镜像，确保 SageMaker 和 Kubernetes 之间运行时环境的一致性，从而最大程度地减少训练-服务差异并简化迁移过程。"
+    },
+    {
+      "point": "战略性地使用托管服务使工程团队能够专注于核心创新。",
+      "explanation": "通过将非差异化的繁重工作卸载给 SageMaker，Lyft 使其工程师能够重新聚焦于构建新的机器学习平台功能，而非基础设施调试。"
+    },
+    {
+      "point": "复杂的网络挑战需要在混合环境中采用协作解决方案。",
+      "explanation": "Lyft 与 AWS 合作解决了 SageMaker Studio 和 EKS 之间 Spark 的双向通信问题，这凸显了在高级混合设置中供应商协作的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "我们选择 SageMaker 进行训练，因为管理自定义批处理计算基础设施耗费的工程能力本应更好地用于开发机器学习平台功能。我们保留了自建的服务基础设施，因为它提供了我们所需的成本效益和控制。",
+    "最好的平台工程并非关乎你所用的技术栈，而是关于你所隐藏的复杂性和你所提升的研发效率。"
+  ],
+  "tags": [
+    "机器学习平台",
+    "混合架构",
+    "AWS SageMaker",
+    "Kubernetes",
+    "MLOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 445,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765881000000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 10:30:00"
+}

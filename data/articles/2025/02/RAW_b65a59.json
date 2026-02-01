@@ -1,0 +1,62 @@
+{
+  "id": "RAW_b65a59",
+  "title": "使用 Next.js 和 Strapi 构建全栈应用程序",
+  "url": "https://www.freecodecamp.org/news/build-a-full-stack-app-with-nextjs-and-strapi/",
+  "date": "2025-02-05 05:00:00",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Building modern, dynamic websites requires a combination of powerful front-end frameworks and flexible content management systems. Whether you're a developer looking to enhance your skills or a beginner wanting to create your first web project, learning how to integrate Next.js with a headless CMS like Strapi can give you the tools to build scalable and maintainable applications.</p>\n  <p>We just published a course on the <a target=\"_blank\" href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you how to build a <strong>fully functional summer camp website using Next.js 15 and Strapi 5</strong>. This project-based course walks you through the entire process, from setting up the project to implementing complex features like dynamic content loading, search functionality, and form submissions. By the end of the course, you will have a professional-quality website that is both developer-friendly and easy for clients to manage. Paul Bratslavsky developed this course.</p>\n  <h3 id=\"heading-what-youll-learn-in-this-course\">What You’ll Learn in This Course</h3>\n  <p>By completing this course, you will gain hands-on experience with:</p>\n  <ul>\n   <li>\n    <p><strong>Next.js 15</strong> – Understanding server and client components, dynamic routing, and data fetching</p></li>\n   <li>\n    <p><strong>Strapi 5</strong> – Setting up and using a headless CMS to manage content efficiently</p></li>\n   <li>\n    <p><strong>Full-stack development</strong> – Integrating front-end and back-end technologies seamlessly</p></li>\n   <li>\n    <p><strong>User-friendly navigation</strong> – Building top navigation, footers, and internal links</p></li>\n   <li>\n    <p><strong>Blog and event management</strong> – Creating structured content with search and pagination</p></li>\n   <li>\n    <p><strong>Form handling</strong> – Implementing form submissions with server actions</p></li>\n  </ul>\n  <h3 id=\"heading-course-breakdown\">Course Breakdown</h3>\n  <p>This course is designed to take you step by step through the development of a real-world website. Here are some key sections:</p>\n  <ul>\n   <li>\n    <p>Setting up the <strong>Next.js 15</strong> project and understanding its core features</p></li>\n   <li>\n    <p>Configuring <strong>Strapi 5</strong> as a headless CMS for dynamic content management</p></li>\n   <li>\n    <p>Building pages including the <strong>homepage, experience page, blog page, and events page</strong></p></li>\n   <li>\n    <p>Implementing <strong>navigation and layout components</strong> for a smooth user experience</p></li>\n   <li>\n    <p>Adding <strong>form submission functionality</strong> to collect user input</p></li>\n   <li>\n    <p>Enhancing user experience with <strong>search and pagination</strong></p></li>\n   <li>\n    <p>Structuring and loading <strong>custom content</strong> dynamically</p></li>\n   <li>\n    <p>Using <strong>Figma for developers</strong> to understand design implementation</p></li>\n  </ul>\n  <p>This course is perfect for developers looking to improve their <strong>Next.js and Strapi skills</strong> while building a practical project. Whether you are a front-end developer wanting to explore full-stack development or a beginner eager to learn modern web technologies, this course will provide you with valuable knowledge and experience.</p>\n  <p>Watch the full course now on the <a target=\"_blank\" href=\"https://youtu.be/Q-cPtlYG1cY\">freeCodeCamp.org YouTube channel</a>, and start building your own content-rich, dynamic website.</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Q-cPtlYG1cY\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "这是一门全面且以项目驱动为核心的课程，使用 Next.js 15 和 Strapi 5 构建全栈夏令营网站，适合初学者和有经验的开发者，涵盖动态内容、搜索、表单、设计实现和用户体验优化。",
+  "oneSentenceSummary": "这是一门全面且以项目驱动为核心的课程，使用 Next.js 15 和 Strapi 5 构建全栈夏令营网站，适合初学者和有经验的开发者，涵盖动态内容、搜索、表单、设计实现和用户体验优化。",
+  "summary": "本文介绍了一门由 freeCodeCamp.org YouTube 频道提供的动手实践课程。该课程教开发者如何使用 Next.js 15 和 Strapi 5 构建功能齐全的夏令营网站，涵盖了现代 Web 开发技术，例如服务端和客户端组件、无头 CMS 的内容管理以及动态路由、搜索功能、分页、表单提交和用户友好的导航等功能。此外，课程还强调了 Figma 在设计理解中的应用，帮助创建视觉吸引力强且内容丰富的动态网站。无论你是初学者还是有经验的开发者，都可以通过本课程提升全栈开发技能，并构建专业品质、易于维护的 Web 应用程序。",
+  "mainPoints": [
+    {
+      "point": "Next.js 15 功能的动手学习",
+      "explanation": "涵盖服务端和客户端组件、动态路由和数据获取，使前端开发更具扩展性。"
+    },
+    {
+      "point": "Strapi 5 作为无头 CMS",
+      "explanation": "教授高效的内容管理和动态内容结构化，这对现代 Web 应用至关重要。"
+    },
+    {
+      "point": "全栈开发技术",
+      "explanation": "展示前后端系统之间的无缝连接，提高应用的可维护性。"
+    },
+    {
+      "point": "用户体验优化",
+      "explanation": "包括导航、布局组件、搜索功能和分页，确保流畅的交互体验。"
+    },
+    {
+      "point": "基于项目的实践方法",
+      "explanation": "真实的夏令营网站项目确保学习者获得实用的技能和经验。"
+    }
+  ],
+  "keyQuotes": [
+    "通过本课程，你将能够构建一个专业级别的网站，既便于开发者操作，又方便客户管理。",
+    "这个基于项目的课程将带你完成整个过程，从项目设置到实现复杂功能，如动态内容展示、搜索功能和表单提交。",
+    "无论你是想探索全栈开发的前端开发者，还是渴望学习现代 Web 技术的初学者，本课程都将为你提供宝贵的知识和经验。",
+    "使用 Figma 帮助开发者理解设计实现，增强将视觉概念转化为用户界面的能力。"
+  ],
+  "tags": [
+    "Next.js",
+    "Strapi",
+    "全栈开发",
+    "无头CMS",
+    "动态内容"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 387,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738731600000,
+  "publishDateStr": "2025-02-05",
+  "publishDateTimeStr": "2025-02-05 05:00:00"
+}

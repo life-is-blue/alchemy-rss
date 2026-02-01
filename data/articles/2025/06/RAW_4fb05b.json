@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4fb05b",
+  "title": "claude-trace",
+  "url": "https://simonwillison.net/2025/Jun/2/claude-trace/#atom-everything",
+  "date": "2025-06-02 17:57:32",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://github.com/badlogic/lemmy/tree/main/apps/claude-trace\">claude-trace</a></strong> (<a href=\"https://twitter.com/badlogicgames/status/1929312803799576757\" title=\"@badlogicgames\">via</a>) I've been thinking for a while it would be interesting to run some kind of HTTP proxy against the Claude Code CLI app and take a peek at how it works.</p>\n   <p>Mario Zechner just published a really nice version of that. It works by monkey-patching <a href=\"https://github.com/badlogic/lemmy/blob/a19ef3b472701559df4f9d70766b97f5ed876535/apps/claude-trace/src/interceptor.ts#L152-L240\">global.fetch</a> and the <a href=\"https://github.com/badlogic/lemmy/blob/a19ef3b472701559df4f9d70766b97f5ed876535/apps/claude-trace/src/interceptor.ts#L242-L286\">Node HTTP library</a> and then running Claude Code <a href=\"https://github.com/badlogic/lemmy/blob/a19ef3b472701559df4f9d70766b97f5ed876535/apps/claude-trace/src/cli.ts#L136-L153\">using Node</a> with an extra <code>--require interceptor-loader.js</code> option to inject the patches.</p>\n   <p>Provided you have Claude Code installed and configured already, an easy way to run it is via npx like this:</p>\n   <pre><code>npx @mariozechner/claude-trace --include-all-requests\n</code></pre>\n   <p>I tried it just now and it logs request/response pairs to a <code>.claude-trace</code> folder, as both <code>jsonl</code> files and HTML.</p>\n   <p>The HTML interface is <em>really nice</em>. Here's <a href=\"https://static.simonwillison.net/static/2025/log-2025-06-02-17-10-25.html\">an example trace</a> - I started everything running in my <a href=\"https://github.com/simonw/llm\">llm checkout</a> and asked Claude to \"tell me about this software\" and then \"Use your agent tool to figure out where the code for storing API keys lives\".</p>\n   <p><img alt=\"Web-based debug log interface showing a conversation trace where USER asks &quot;Use your agent tool to figure out where the code for storing API keys lives&quot;, followed by ASSISTANT invoking dispatch_agent with a search prompt, then a Tool Result showing partial text about API key management functionality locations, and a Raw Tool Call section displaying the full JSON request with tool_use details including id, name, input prompt, and cache_control settings. The assistant concludes that key functionality is in cli.py with keys stored securely in keys.json in the user directory, manageable via commands like llm keys set openai and llm keys list.\" src=\"https://static.simonwillison.net/static/2025/claude-code-trace.jpg\"></p>\n   <p>I specifically requested the \"agent\" tool here because I noticed in the tool definitions a tool called <strong>dispatch_agent</strong> with this tool definition (emphasis mine):</p>\n   <blockquote>\n    <p>Launch a new agent that has access to the following tools: GlobTool, GrepTool, LS, View, ReadNotebook. When you are searching for a keyword or file and are not confident that you will find the right match on the first try, <strong>use the Agent tool to perform the search for you</strong>. For example:</p>\n    <ul>\n     <li>If you are searching for a keyword like \"config\" or \"logger\", the Agent tool is appropriate</li>\n     <li>If you want to read a specific file path, use the View or GlobTool tool instead of the Agent tool, to find the match more quickly</li>\n     <li>If you are searching for a specific class definition like \"class Foo\", use the GlobTool tool instead, to find the match more quickly</li>\n    </ul>\n    <p>Usage notes:</p>\n    <ol>\n     <li><strong>Launch multiple agents concurrently whenever possible</strong>, to maximize performance; to do that, use a single message with multiple tool uses</li>\n     <li>When the agent is done, it will return a single message back to you. The result returned by the agent is not visible to the user. To show the user the result, you should send a text message back to the user with a concise summary of the result.</li>\n     <li><strong>Each agent invocation is stateless. You will not be able to send additional messages to the agent, nor will the agent be able to communicate with you outside of its final report</strong>. Therefore, your prompt should contain a highly detailed task description for the agent to perform autonomously and you should specify exactly what information the agent should return back to you in its final and only message to you.</li>\n     <li><strong>The agent's outputs should generally be trusted</strong></li>\n     <li>IMPORTANT: The agent can not use Bash, Replace, Edit, NotebookEditCell, so can not modify files. If you want to use these tools, use them directly instead of going through the agent.</li>\n    </ol>\n   </blockquote>\n   <p>I'd heard that Claude Code uses the LLMs-calling-other-LLMs pattern - one of the reason it can burn through tokens so fast! It was interesting to see how this works under the hood - it's a tool call which is designed to be used concurrently (by triggering multiple tool uses at once).</p>\n   <p>Anthropic have deliberately chosen not to publish any of the prompts used by Claude Code. As with <a href=\"https://simonwillison.net/2025/May/25/claude-4-system-prompt/#the-missing-prompts-for-tools\">other hidden system prompts</a>, the prompts themselves mainly act as a missing manual for understanding exactly what these tools can do for you and how they work.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/8727/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "该工具拦截 Claude Code 命令行界面 (CLI) 的网络调用，以揭示其内部代理的使用方式。",
+  "oneSentenceSummary": "该工具拦截 Claude Code 命令行界面 (CLI) 的网络调用，以揭示其内部代理的使用方式。",
+  "summary": "本文介绍了 Mario Zechner 开发的新工具 claude-trace，该工具拦截 Claude Code 命令行界面发出的 HTTP 请求。通过对 Node 的 `fetch` 和 HTTP 库进行 monkey-patching （动态替换） ，该工具捕获请求/响应对，并将请求/响应数据记录至文件以及用户友好的 HTML 界面。作者使用该工具来分析 Claude Code 如何利用其 `dispatch_agent`（任务分发代理）工具，确认了 LLM 相互调用的模式，并揭示了有关代理的能力、限制和无状态性质的详细信息。该分析突出了追踪工具如何暴露专有 AI 工具的内部运作和隐藏提示词 (prompt)，为开发人员提供深入的技术洞察。",
+  "mainPoints": [
+    {
+      "point": "claude-trace 拦截 Claude Code API 调用以进行调试。",
+      "explanation": "该工具使用 monkey-patching 来记录来自 Claude Code 命令行界面的网络请求和响应，从而提供对其操作的可观测性。"
+    },
+    {
+      "point": "Claude Code 使用一个隐藏的 `dispatch_agent`（任务分发代理）工具来执行复杂的任务。",
+      "explanation": "追踪揭示了一个内部的无状态代理工具，该工具可以运行并发任务，从而提供了对 Claude 处理策略的见解。"
+    },
+    {
+      "point": "追踪工具帮助揭示专有 AI 工具的机制和提示词 (prompt)。",
+      "explanation": "通过观察 API 交互，开发人员可以了解 AI 工具在内部是如何运作的，在缺乏官方文档的情况下，提供了对内部运作的理解。"
+    }
+  ],
+  "keyQuotes": [
+    "我一直在考虑，针对 Claude Code 命令行界面应用程序运行某种 HTTP 代理并查看其工作方式会很有趣。",
+    "它通过 monkey-patching global.fetch 和 Node  HTTP 库来工作...",
+    "HTML 界面非常出色。",
+    "Anthropic 有意选择不发布 Claude Code 使用的任何提示词 (prompt)。",
+    "与其他隐藏的系统提示词 (prompt) 一样，这些提示词 (prompt) 主要充当缺失的手册，用于理解这些工具可以为您做什么以及它们如何工作。"
+  ],
+  "tags": [
+    "AI 工具",
+    "Claude Code",
+    "调试",
+    "工具使用",
+    "代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 573,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748887052000,
+  "publishDateStr": "2025-06-02",
+  "publishDateTimeStr": "2025-06-02 17:57:32"
+}

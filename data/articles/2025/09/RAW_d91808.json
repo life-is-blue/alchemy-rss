@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d91808",
+  "title": "首个开源实现 100%可复现的稳定 RL 训练框架来了！2 次结果完全重合",
+  "url": "https://www.qbitai.com/2025/09/337185.html",
+  "date": "2025-09-27 03:30:07",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"52\">SGLang团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"53\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">开源框架实现100%可复现的稳定RL训练！</p>\n  <p data-track=\"3\">下图是基于Qwen3-8B进行的重复实验。<strong>两次运行，一条曲线，实现了结果的完美重合，为需要高精度复现的实验场景提供了可靠保障</strong>。</p>\n  <p data-track=\"4\">这就是<strong>SGLang团队联合slime团队</strong>的最新开源成果。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个开源实现100%可复现的稳定RL训练框架来了！2次结果完全重合\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250927054208_ab0cb5fa9d001e3e1b3df9dd0baa4d1c.png\" data-src=\"https://image.jido.dev/20250927054208_ab0cb5fa9d001e3e1b3df9dd0baa4d1c.png\">\n  </div>\n  <p data-track=\"5\">近期，Thinking Machines Lab (由 OpenAI 前 CTO Mira Murati 创立) 发布了一篇文章——《克服LLM推理中的不确定性》，指出问题的核心在于<strong>缺乏批次不变性</strong>&nbsp;(batch invariance)。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个开源实现100%可复现的稳定RL训练框架来了！2次结果完全重合\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250927054208_321647f3ef87831351f2df8c7ea58045.png\" data-src=\"https://image.jido.dev/20250927054208_321647f3ef87831351f2df8c7ea58045.png\">\n  </div>\n  <p data-track=\"6\">自从这篇博客发布后，业界反响热烈，一直期待开源推理引擎能实现稳定可用的确定性推理，或者更进一步，实现完全可复现的RL训练。而现在，SGLang和slime一起给出了答案。</p>\n  <p data-track=\"7\">SGLang团队在Thinking Machines Lab发布的批次不变算子基础之上，通过定制一系列注意力算子和采样逻辑，<strong>实现了完全确定性推理</strong>。该实现同时保持与<strong>分块预填充 (chunked prefill)、CUDA Graph、Radix Cache 和非贪婪采样 (non-greedy sampling)&nbsp;</strong>等关键功能的兼容性。</p>\n  <p data-track=\"8\">利用CUDA Graph，SGLang可以实现<strong>2.8倍</strong>的加速。与 Thinking Machines Lab博客中报告的61.5%性能下降相比，SGLang在FlashInfer和FlashAttention 3后端<strong>平均仅有34.35%的性能下降</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个开源实现100%可复现的稳定RL训练框架来了！2次结果完全重合\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250927054208_6d38d43ce262c2b48b230b2d18170f3e.png\" data-src=\"https://image.jido.dev/20250927054208_6d38d43ce262c2b48b230b2d18170f3e.png\">\n  </div>\n  <p data-track=\"9\">在此基础上，SGLang团队联合slime团队一起，以极少代码实现了完全可复现的稳定RL训练，具体细节现在全面公开。</p>\n  <p data-track=\"11\">从大语言模型(LLM)推理中获得一致输出的能力越来越重要。例如，推理结果的不确定性可能会隐式地将在线策略强化学习(RL)转换为离线策略RL。然而，即使将温度降到0，由于使用了动态批处理(Dynamic Batching) 和基数缓存(Radix Cache)，采样仍然不是确定性的。</p>\n  <p data-track=\"12\">Thinking Machines Lab的研究发现，<strong>不确定性的最大来源是变化的批次大小：</strong>即使用户重复提交相同的提示，输出也可能在不同的运行中有所变化，因为请求可能与其他用户的请求一起批处理，批次大小的差异导致不确定的推理结果。</p>\n  <p data-track=\"13\">更具体地说，不同的批次大小会影响内核的归约（reduction）分割过程。这导致每个归约块的顺序和大小变化，由于浮点运算的非结合性，可能导致不确定的输出。为了解决这个问题，他们实现了批次不变(batch invariant) 的归约算子（RMSNorm、Matmul）。这些算子也作为配套库发布供外部集成。</p>\n  <p data-track=\"14\">在Thinking Machines Lab工作的基础上，SGLang提供了<strong>强大、高吞吐量的确定性 LLM 推理解决方案</strong>，将<strong>批次不变(batch invariant)算子、CUDA 图、基数缓存和分块预填充</strong>与高效性能相结合。通过全面的测试和强化学习训练实验，其确定性得到了充分验证。</p>\n  <p data-track=\"15\">主要增强功能包括：</p>\n  <ul>\n   <li data-track=\"16\">集成Thinking Machines Lab的批次不变(batch invariant)算子。</li>\n   <li data-track=\"17\">实现固定KV分割大小的批次不变注意力算子。支持多种后端，包括 FlashInfer、FlashAttention 3和Triton。</li>\n   <li data-track=\"18\">与关键推理性能相关功能完全兼容，例如分块预填充、CUDA图、基数缓存等，当启用确定性推理时，所有这些功能都仍受支持。</li>\n   <li data-track=\"19\">支持按请求设置采样种子(per-request sampling seed)，即使在temperature&gt;0的非贪婪采样模式下也能实现确定性推理。</li>\n  </ul>\n  <p data-track=\"22\">引入了<strong>一个确定性测试</strong>，以验证推理结果在不同批处理条件下是否保持一致。该测试包含三个子测试，难度循序渐进：</p>\n  <ul>\n   <li data-track=\"23\">单一（Single）：在不同批次大小下运行相同的提示，检查输出是否保持一致。</li>\n   <li data-track=\"24\">混合（Mixed）：在同一批次中混合不同类型的提示（短提示和长提示），并验证一致性。</li>\n   <li data-track=\"25\">前缀（Prefix）：使用来自同一长文本但前缀长度不同的提示，随机进行批处理，并测试结果在不同运行中是否可复现。</li>\n  </ul>\n  <p data-track=\"26\">以下是50次采样试验的结果。数字表示每个子测试观察到的独特输出数量（数值越低，确定性越高）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个开源实现100%可复现的稳定RL训练框架来了！2次结果完全重合\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250927054208_0780353cca40c3fade08e4fba7fc304a.png\" data-src=\"https://image.jido.dev/20250927054208_0780353cca40c3fade08e4fba7fc304a.png\">\n  </div>\n  <p data-track=\"28\">使用三种常见的RL推理工作负载（<strong>256</strong>个输入/输出长度不同的请求）来衡量非确定性模式和确定性模式的端到端延迟。</p>\n  <p data-track=\"29\">测试结果显示，确定性推理具有良好的可用性，大部分性能下降控制在25%到45%之间，其中FlashInfer和FlashAttention 3后端的平均性能下降为<strong>34.35%</strong>。大部分开销来自未经优化的基于Triton编写的批次不变算子，这表明性能仍有很大的提升空间。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个开源实现100%可复现的稳定RL训练框架来了！2次结果完全重合\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250927054208_a634aadf3e4f17b8140fe44347e7cc64.png\" data-src=\"https://image.jido.dev/20250927054208_a634aadf3e4f17b8140fe44347e7cc64.png\">\n  </div>\n  <p data-track=\"30\">团队确实观察到确定性推理比正常模式要慢。因此建议主要将其用于<strong>调试和复现性</strong>。SGLang团队未来的工作之一将专注于加速确定性推理，目标是将性能差距缩小到20%以内，或理想情况下达到与正常模式持平。</p>\n  <pre class=\"syl-page-code hljs sql\"><code><span class=\"hljs-comment\"># 使用最新的主分支</span>\r\ngit&nbsp;clone&nbsp;https://github.com/sgl-project/sglang.git\r\ncd&nbsp;sglang\r\n<span class=\"hljs-comment\"># 安装 Python 依赖</span>\r\npip <span class=\"hljs-keyword\">install</span> <span class=\"hljs-comment\">--upgrade pip</span>\r\npip <span class=\"hljs-keyword\">install</span> -e&nbsp;<span class=\"hljs-string\">\"python[all]\"</span></code></pre>\n  <p data-track=\"34\"><strong>启动SGLang Server：</strong></p>\n  <p data-track=\"35\">SGLang支持多种模型的确定性推理。例如，对于Qwen3-8B，您只需在启动服务器时添加—enable-deterministic-inference参数：</p>\n  <pre class=\"syl-page-code hljs lua\"><code>python3&nbsp;-m sglang.launch_server \r\n&nbsp; &nbsp;&nbsp;<span class=\"hljs-comment\">--model-path Qwen/Qwen3-8B </span>\r\n&nbsp; &nbsp;&nbsp;<span class=\"hljs-comment\">--attention-backend &lt;flashinfer|fa3|triton&gt; </span>\r\n&nbsp; &nbsp;&nbsp;<span class=\"hljs-comment\">--enable-deterministic-inference</span></code></pre>\n  <p data-track=\"38\">团队未来的努力将集中在以下领域，以增强确定性推理的性能和可用性：</p>\n  <ul>\n   <li data-track=\"39\">更快的批次不变算子：批次不变算子是性能瓶颈，因此将努力优化其配置并可能重写它们以提升性能。这对于提高 RL 推理的速度也至关重要。</li>\n   <li data-track=\"40\">支持 MoE 模型：目前只支持像 QWen3-8B 或 LLaMa-3.1-8B 这样的Dense模型的确定性推理。未来计划将支持扩展到像Qwen3-30B-A3B或DeepSeek-V3这样的混合专家模型。</li>\n   <li data-track=\"41\">增强基数缓存功能：将改进基数树，使其与更广泛的注意力算子兼容，超越目前对FlashAttention 3后端的限制。</li>\n   <li data-track=\"42\">张量并行（Tensor Parallelism）：观察到TP1和TP2是确定性的，可能因为不涉及浮点加法的结合率。将尝试扩展到更大的 TP size， 可能包括修改归约算子以实现确定性。</li>\n   <li data-track=\"43\">FlexAttention集成：除了目前支持的注意力后端，计划未来将确定性推理的支持扩展到FlexAttention。</li>\n  </ul>\n  <p data-track=\"44\">SGLang的确定性推理和slime的可复现训练功能目前正在积极完善中，团队诚挚欢迎广大用户和开发者积极试用，并提供宝贵的反馈意见。您的使用体验和建议将推动这一重要功能的进一步优化，推动确定性推理技术的发展。</p>\n  <p data-track=\"45\">参考链接：</p>\n  <p data-track=\"46\">[1]https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/</p>\n  <p data-track=\"47\">[2]https://lmsys.org/blog/2025-09-22-sglang-deterministic/</p>\n  <p data-track=\"48\">[3]https://github.com/sgl-project/sglang/issues/10278</p>\n  <p data-track=\"49\">[4]https://thudm.github.io/slime/_examples_synced/reproducibility/README.html#reproducibility</p>\n  <p data-track=\"50\">[5]https://github.com/THUDM/slime/pull/370</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "SGLang 团队发布了首个开源实现 100%可复现的稳定 RL 训练框架，通过批次不变算子解决了 LLM 推理中的不确定性问题，并保持了高效性能。",
+  "oneSentenceSummary": "SGLang 团队发布了首个开源实现 100%可复现的稳定 RL 训练框架，通过批次不变算子解决了 LLM 推理中的不确定性问题，并保持了高效性能。",
+  "summary": "本文详细介绍了 SGLang 团队联合 slime 团队开发的开源框架，该框架首次实现了大语言模型（LLM）推理的 100%确定性，从而为强化学习（RL）训练提供了稳定可复现的环境。文章首先指出，LLM 推理中即使温度设为 0，由于动态批处理等因素，仍存在不确定性，这会影响在线策略 RL 的稳定性。SGLang 团队基于 Thinking Machines Lab 提出的“批次不变性”概念，通过定制注意力算子和采样逻辑，实现了完全确定性推理，并与分块预填充、CUDA Graph、Radix Cache 等关键性能优化功能完全兼容。在性能方面，SGLang 利用 CUDA Graph 实现了 2.8 倍加速，确定性推理模式下的平均性能下降控制在 34.35%，远优于其他方案。框架还引入了全面的确定性测试，并规划了未来在加速算子、支持 MoE 模型、增强基数缓存和张量并行等方面的优化方向。该成果对需要高精度复现的 LLM 和 RL 实验具有重要意义。",
+  "mainPoints": [
+    {
+      "point": "SGLang 团队实现了首个 100%可复现的 LLM 确定性推理框架，解决了核心难题",
+      "explanation": "通过定制批次不变算子和采样逻辑，成功克服了 LLM 推理中因动态批处理导致的不确定性问题，为需要高精度复现的强化学习训练提供了可靠保障。"
+    },
+    {
+      "point": "该框架在保证确定性的同时，与关键推理性能优化功能兼容且性能优异",
+      "explanation": "SGLang 与 CUDA Graph、分块预填充、Radix Cache 等技术兼容，并实现了 2.8 倍加速，确定性推理的性能下降控制在可接受范围（平均 34.35%）。"
+    },
+    {
+      "point": "SGLang 提供了全面的确定性测试方法，并规划了未来的优化路线图",
+      "explanation": "引入了单一、混合、前缀三种测试验证确定性，并承诺未来将持续优化批次不变算子、支持 MoE 模型、增强基数缓存等，以提升性能和可用性。"
+    }
+  ],
+  "keyQuotes": [
+    "两次运行，一条曲线，实现了结果的完美重合，为需要高精度复现的实验场景提供了可靠保障。",
+    "不确定性的最大来源是变化的批次大小：即使用户重复提交相同的提示，输出也可能在不同的运行中有所变化，因为请求可能与其他用户的请求一起批处理，批次大小的差异导致不确定的推理结果。",
+    "SGLang 提供了强大、高吞吐量的确定性 LLM 推理解决方案，将批次不变(batch invariant)算子、CUDA 图、基数缓存和分块预填充与高效性能相结合。",
+    "团队确实观察到确定性推理比正常模式要慢。因此建议主要将其用于调试和复现性。"
+  ],
+  "tags": [
+    "LLM推理",
+    "确定性推理",
+    "强化学习",
+    "开源框架",
+    "批次不变性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 89,
+  "wordCount": 2374,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758943807000,
+  "publishDateStr": "2025-09-27",
+  "publishDateTimeStr": "2025-09-27 03:30:07"
+}

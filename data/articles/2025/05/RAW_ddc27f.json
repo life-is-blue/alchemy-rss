@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ddc27f",
+  "title": "刚刚，Gemini 2.5 Pro 升级，成编程模型新王",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-07-2",
+  "date": "2025-05-07 02:21:53",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>你的默认编程模型是什么？或许可以换一换了。</p>\n  <p>刚刚，Google DeepMind 发布了 Gemini 2.5 Pro 的最新更新版本：Gemini 2.5 Pro (I/O edition)。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b28821c7-5c06-4a5b-96e1-84393379d700/public\" data-ratio=\"0.7122940430925222\" data-s=\"300,640\" data-type=\"png\" data-w=\"789\" type=\"block\" data-imgfileid=\"503484206\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/c5d6192a-bd6d-41bc-8722-105edc50c98b/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>其最大的进步是编程能力大幅提升，不仅在 LMArena 编程排行榜上名列第一，同时也在 WebDev Arena 排行榜上更是以显著优势超过了昔日霸主 Claude 3.7 Sonnet (20250219)！</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c681e27a-dbae-427c-1a16-4e1f7cd9d300/public\" data-ratio=\"0.8527777777777777\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503484204\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/652d88c7-c4de-47dc-95e7-7e26778f0345/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3aa6ab8d-86a2-421d-2a54-ee868125d200/public\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503484203\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/ea3119f3-98d1-45b7-a3d2-aafca21fb0fc/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>不仅如此，现在用户只需使用一个提示词即可构建 Web 应用、游戏和模拟程序等，甚至用户仅需提供一张手绘草图 + 功能描述，就能得到一个带有自己设计的 UI 的功能完备的应用。</p>\n  <p>此外，下面的视频还展示了 Gemini 2.5 Pro (I/O edition) 的另一项能力，可以根据自然图像生成代码，而这些代码可以动态表示自然图像中内容。<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/92376e79-aa55-4603-ba9e-68a52fa0b1c2/1746584069970.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>自家模型更新，谷歌的多位大佬也纷纷出来站台。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f563e5b0-f5f4-4f9d-6c5c-819efd92d700/public\" data-ratio=\"0.8975672215108835\" data-s=\"300,640\" data-type=\"png\" data-w=\"781\" type=\"block\" data-imgfileid=\"503484208\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/61f39863-0c0d-4e65-8158-12ce29156fd6/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>诺贝尔奖得主、DeepMind CEO Demis Hassabis 表示 Gemini 2.5 Pro (I/O edition) 已经在 Gemini APP、Vertex AI 和 Google AI Studio 中开放，并且其尤其擅长构建交互式 Web 应用，下面的演示展示了该模型根据草图构建应用的能力。<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/2711369f-29c6-4986-826b-cca565024ee5/1746584098392.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>可以看到，只需一张描述画板应用的简单草图加上一句简单的提示词，Gemini 2.5 Pro (I/O edition) 就创建出了一个功能完备的 Web 应用。</p>\n  <p>另外，谷歌母公司 Alphabet CEO、Google AI 负责人 Jeff Dean 也都各自发布了宣传推文。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43c083f1-3e35-4a79-0629-1974e90a4700/public\" data-ratio=\"0.2878980891719745\" data-s=\"300,640\" data-type=\"png\" data-w=\"785\" type=\"block\" data-imgfileid=\"503484207\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/a560f162-b0bb-4bbd-8207-422f977340a0/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/56776177-fa2d-418a-e78c-f6f00b438300/public\" data-ratio=\"0.3109987357774968\" data-s=\"300,640\" data-type=\"png\" data-w=\"791\" type=\"block\" data-imgfileid=\"503484209\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/092c763b-19d2-45c6-8e83-15a30edc3c71/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>谷歌博客表示，他们原计划在几周后的 Google I/O 大会上发布 Gemini 2.5 Pro Preview (I/O edition)，「但由于大家对这一模型的热情高涨，我们希望尽快将其交付到大家手中，以便人们能够立即开始构建。」</p>\n  <p>「Gemini 2.5 Pro 的编程和多模态推理功能获得了广泛好评，此次更新正是基于此。除了专注于 UI 的开发之外，这些提升还扩展到了其他编程任务，例如代码转换、代码编辑和开发复杂的智能体工作流。」</p>\n  <p>这些增强能力让 Gemini 2.5 Pro 在 WebDev Arena 中的 Elo 分数大幅提升：比上一版本高出 147 分！WebDev Arena 排行榜衡量的是人类对模型构建美观且功能强大的 Web 应用能力的偏好。</p>\n  <p>此外，新版 Gemini 2.5 Pro 在原生多模态和长上下文方面依然强势；它在视频理解方面表现一流 —— 在 VideoMME 基准测试中获得了 84.8% 的分数。</p>\n  <p>以下视频展示了 Gemini 2.5 Pro 根据单条 YouTube 视频生成交互式学习应用的示例，同时还给出了新旧 Gemini 2.5 Pro 的对比。<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/902969e5-7cbf-4475-ad95-c16c55152897/1746584125153.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>网友实测，新版 Gemini 2.5 Pro 真的行</p>\n  <p>既然是编程模型新王，网友们的测试热情可以说被瞬间激发。随便检索一下互联网，我们就能找到大量网友们分享的测试案例。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a6ea7447-ce7b-42ae-8a6b-f697a908c800/public\" data-ratio=\"0.984375\" data-type=\"gif\" data-w=\"640\" type=\"block\" data-imgfileid=\"503484210\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/d945c7f4-21fe-4f57-9b45-c8a9a1639c68/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>比如网友 @thenomadevel 让 Gemini 2.5 Pro Preview (I/O edition) 用 p5.js 编写了一个直接可玩的记忆配对游戏。<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/703a1bfb-12f6-41dc-ab7f-1bb4e180cb55/1746584151202.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>https://x.com/thenomadevel/status/1919823630143213715</p>\n  <p>DeepMind 产品设计师 Tim Bettridge 则 Vibe Code（氛围编程）了好几个不同的游戏和应用，比如这个看起来相当不错的星球飞行游戏：<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/b838fd6b-8e94-4f47-86ec-8f87582d3aa0/1746584174736.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>https://x.com/TimBettridge/status/1919847724645789721</p>\n  <p>又比如这个功能完备的书架应用：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4e1392e3-8872-4243-d89b-34615710ad00/public\" data-ratio=\"1.233502538071066\" data-type=\"gif\" data-w=\"788\" type=\"block\" data-imgfileid=\"503484211\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/7036dce3-dfc3-481e-a285-98dab469e106/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>还有一个支持 3D 浏览的虚拟版芝加哥艺术博物馆。<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/26b72519-f489-4d76-a597-638ed24674a8/1746584207006.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a>更有网友用不到 20 分钟的时间构建了一个完整的城市交通模拟器。&nbsp;<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/54b1150d-56d1-4730-b588-fab84dd225c8/1746584224819.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>https://x.com/WesRothMoney/status/1919887823257108941</p>\n  <p>机器之心也做了简单的尝试，将我们手绘的一张动物图片变成了一个简单的电子宠物游戏：<a href=\"https://mp.weixin.qq.com/s/6wv6tUVYsJPfaN-7HxUjoQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/acd81748-61c7-4726-90f8-7b52f9292599/1746584242509.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>看起来，Vibe Coder 们又有新选择了。</p>\n  <p><sup>参考链接</sup></p>\n  <p><sup>https://blog.google/products/gemini/gemini-2-5-pro-updates/</sup></p>\n </body>\n</html>",
+  "aiSummary": "Gemini 2.5 Pro 升级，凭借强大的编程能力和简易的应用生成功能，成为编程模型新王。",
+  "oneSentenceSummary": "Gemini 2.5 Pro 升级，凭借强大的编程能力和简易的应用生成功能，成为编程模型新王。",
+  "summary": "文章报道了 Google DeepMind 发布的 Gemini 2.5 Pro (I/O edition) 的最新进展，该模型在编程能力上取得了显著提升，不仅在 LMArena 编程排行榜上名列第一，还在 WebDev Arena 排行榜上超越了 Claude 3.7 Sonnet。Gemini 2.5 Pro (I/O edition) 能够根据用户提供的手绘草图和功能描述，生成功能完备的 Web 应用，简化 Web 应用开发，降低编程门槛，并且可以根据自然图像生成代码。许多用户分享了使用 Gemini 2.5 Pro 构建 Web 应用、游戏和模拟程序的案例，展示了其强大的编程能力。",
+  "mainPoints": [
+    {
+      "point": "Gemini 2.5 Pro 在编程能力上大幅提升，成为新的编程模型王者",
+      "explanation": "在 LMArena 和 WebDev Arena 排行榜上均取得领先地位，超越了之前的领先模型，表明其在代码生成和 Web 应用构建方面的卓越性能。"
+    },
+    {
+      "point": "Gemini 2.5 Pro 创新性地支持通过草图和自然图像生成应用和代码，极大地降低了应用开发的门槛",
+      "explanation": "用户只需提供手绘草图或自然图像，加上功能描述，Gemini 2.5 Pro 就能生成功能完备的应用和可动态表示图像内容的代码，极大地简化了开发流程。"
+    },
+    {
+      "point": "用户测试案例表明 Gemini 2.5 Pro 具有广泛的应用潜力",
+      "explanation": "用户利用 Gemini 2.5 Pro 构建了各种应用，如记忆配对游戏、星球飞行游戏、书架应用、3D 博物馆以及城市交通模拟器，展示了其在不同领域的应用潜力。"
+    }
+  ],
+  "keyQuotes": [
+    "Gemini 2.5 Pro 的编程和多模态推理功能获得了广泛好评，此次更新正是基于此。",
+    "除了专注于 UI 的开发之外，这些提升还扩展到了其他编程任务，例如代码转换、代码编辑和开发复杂的智能体工作流。",
+    "新版 Gemini 2.5 Pro 在原生多模态和长上下文方面依然强势；它在视频理解方面表现一流 ------ 在 VideoMME 基准测试中获得了 84.8% 的分数。"
+  ],
+  "tags": [
+    "大语言模型",
+    "编程模型",
+    "Gemini 2.5 Pro",
+    "Google DeepMind",
+    "WebDev Arena"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 93,
+  "wordCount": 1056,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746584513000,
+  "publishDateStr": "2025-05-07",
+  "publishDateTimeStr": "2025-05-07 02:21:53"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_02cd396f",
+  "title": "Prisma 7：无 Rust 架构与性能飞跃",
+  "url": "https://www.infoq.com/news/2026/01/prisma-7-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-20 08:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.prisma.io/\">Prisma</a>, the widely-adopted <a href=\"https://www.typescriptlang.org/\">TypeScript</a>-first ORM for Node.js, has released Prisma ORM 7.0, delivering performance improvements, a dramatically smaller footprint, and enhanced developer experience through a complete architectural shift away from Rust.</p>\n   <p>Prisma ORM 7.0 introduces several transformative changes, including a <a href=\"https://rust-lang.org/\">Rust</a>-free client runtime built entirely in TypeScript, generated code moved out of <code>node_modules</code>, a new dynamic configuration file, and significantly faster type generation. The release also brings improvements to <a href=\"https://www.prisma.io/postgres\">Prisma Postgres</a>, their managed database offering, which now supports standard Postgres connection protocols.</p>\n   <p>One of the most significant changes in Prisma 7 is the complete <a href=\"https://www.prisma.io/blog/announcing-prisma-orm-7-0-0#moving-away-from-rust\">removal of the Rust-based query engine</a> in favor of a TypeScript&nbsp;implementation. While this might seem counterintuitive given Rust's performance reputation, the Prisma team found that the communication layer between Rust and the JavaScript runtime created bottlenecks. The new architecture delivers 90% smaller bundle sizes, 3x faster query execution, and lower CPU and memory utilization. The changes also enable simpler deployments for edge runtimes like Vercel Edge and Cloudflare Workers, where binary dependencies previously caused complications.</p>\n   <p>The syntax for adopting the new client is straightforward. Developers simply need to update their schema provider from <code>prisma-client-js</code> to <code>prisma-client</code>:</p>\n   <pre>\r\n<code class=\"language-nolanguage\">generator client {\r\n     provider = \"prisma-client\"\r\n}\r\n</code>\r\n</pre>\n   <p>Community response to the Rust removal has been mixed but largely positive. One <a href=\"https://www.reddit.com/r/nextjs/comments/1pjwifq/has_anybody_upgraded_to_prisma7_in_production_and/\">Reddit user noted</a> they <q>tested it myself on a smaller project locally and clearly felt it was much faster than the previous Prisma 6.</q> However, some developers have raised concerns, with <a href=\"https://github.com/prisma/prisma/issues/28845\">GitHub issues</a> questioning whether the advertised 3x performance improvement holds true across all workloads. The Prisma team have posted an article as a response to these concerns with a <a href=\"https://www.prisma.io/blog/prisma-7-performance-benchmarks\">detailed benchmark methodology</a> and acknowledged they are continuing to refine measurements based on community feedback. They also mention they will be <q>Optimizing the parts of Prisma 7 that these benchmarks stress</q>.</p>\n   <p>Prisma 7 also addresses a long-standing pain point by <a href=\"https://www.prisma.io/blog/announcing-prisma-orm-7-0-0#generated-code-out-of-node_modules-and-a-new-config-file\">moving generated artifacts</a> out of <code>node_modules</code> and into the project source code by default. This change means that when developers run <code>prisma generate</code> after schema modifications, file watchers and build tools can react immediately without requiring application restarts. Additionally, the new config file separates project configuration from data schema, allowing dynamic configuration using JavaScript or TypeScript.</p>\n   <p>Type generation has seen <a href=\"https://www.prisma.io/blog/announcing-prisma-orm-7-0-0#faster-and-fewer-types\">huge improvements</a> through collaboration with David Blass, creator of <a href=\"http://arktype.io/\">ArkType</a>. Prisma now requires 98% fewer types to evaluate a schema and is 70% faster when performing full type checks compared to previous versions. This <a href=\"https://www.prisma.io/blog/why-prisma-orm-checks-types-faster-than-drizzle\">puts Prisma ahead</a> of competing ORMs like <a href=\"https://orm.drizzle.team/\">Drizzle</a>&nbsp;in type evaluation performance.</p>\n   <p>For developers migrating from earlier versions, Prisma provides an <a href=\"https://www.prisma.io/docs/orm/more/upgrade-guides/upgrading-versions/upgrading-to-prisma-7\">upgrade guide</a> covering breaking changes, including the removal of the <a href=\"https://www.prisma.io/docs/orm/more/upgrade-guides/upgrading-versions/upgrading-to-prisma-7#metrics-has-been-removed-from-the-client-extensions\">deprecated Metrics preview feature</a> and updates to minimum Node.js and TypeScript versions. The team has also made <a href=\"https://www.prisma.io/docs/ai/prompts/prisma-7\">migration tooling available</a> through AI coding assistants to streamline the upgrade process.</p>\n   <p>Prisma is an open-source ORM developed and maintained by Prisma Data, designed to simplify database workflows in TypeScript and JavaScript applications. It competes with alternatives like Drizzle, Kysely, and TypeORM, offering end-to-end type safety from database to application code. Prisma supports PostgreSQL, MySQL, SQLite, MongoDB, SQL Server, and CockroachDB.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Prisma 7: Rust-Free Architecture and Performance Gains\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/prisma-7-performance/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768896000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Prisma 7 引入了重大的架构变革，通过原生 TypeScript 实现替换了原有的 Rust 引擎，显著缩小了包体积并提升了性能。",
+  "oneSentenceSummary": "Prisma 7 引入了重大的架构变革，通过原生 TypeScript 实现替换了原有的 Rust 引擎，显著缩小了包体积并提升了性能。",
+  "summary": "Prisma ORM 7.0 标志着这一流行 TypeScript ORM 的关键转型，最显著的变化是弃用了基于 Rust 的查询引擎，转而采用纯 TypeScript 架构。这一改变解决了 Rust 与 JavaScript 之间通信层导致的性能瓶颈，使包体积减小了 90%，查询执行速度提升了 3 倍。除了引擎更迭，此次更新还将生成的代码移出 node_modules 以优化开发工作流，引入了动态配置文件，并通过优化的类型生成将类型检查速度提升了 70%。该版本还增强了对 Edge Runtime 的支持，并通过移除二进制依赖简化了部署流程。",
+  "mainPoints": [
+    {
+      "point": "Prisma 7 用原生 TypeScript 实现替换了 Rust 查询引擎，以消除运行时开销。",
+      "explanation": "团队发现 Rust 与 JS 之间的 FFI/通信层是性能瓶颈；新架构将包体积减少了 90% 并提升了查询速度。"
+    },
+    {
+      "point": "生成的产物默认从 node_modules 移动到项目源代码中。",
+      "explanation": "这一变化允许文件监听器和构建工具立即检测到 Schema 变更，提升了开发体验并消除了重启应用的必要。"
+    },
+    {
+      "point": "类型生成性能得到大幅优化，所需类型数量减少了 98%。",
+      "explanation": "通过与 ArkType 创始人的合作，Prisma 7 的全量类型检查速度提升了 70%，使其在类型评估性能上领先于 Drizzle 等竞争对手。"
+    },
+    {
+      "point": "移除二进制依赖实现了在 Edge Runtime 上的无缝部署。",
+      "explanation": "通过实现“无 Rust 化”，Prisma 解决了以往在 Vercel Edge 和 Cloudflare Workers 等平台上运行二进制引擎带来的复杂问题。"
+    }
+  ],
+  "keyQuotes": [
+    "新架构带来了体积缩小 90% 的安装包、快 3 倍的查询执行速度，以及更低的 CPU 和内存占用。",
+    "与之前的版本相比，Prisma 现在评估 Schema 所需的类型减少了 98%，全量类型检查速度提升了 70%。",
+    "Prisma 团队发现 Rust 与 JavaScript 运行时之间的通信层造成了性能瓶颈。",
+    "这一变化意味着当开发者在修改 Schema 后运行 `prisma generate` 时，文件监听器和构建工具可以立即响应，无需重启应用。"
+  ],
+  "tags": [
+    "Prisma",
+    "TypeScript",
+    "ORM",
+    "Node.js",
+    "软件架构"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 514,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768896000000,
+  "publishDateStr": "01-20",
+  "publishDateTimeStr": "2026-01-20 08:00:00"
+}

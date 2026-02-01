@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a0c613",
+  "title": "Kubernetes 1.33 “Octarine” 发布：原生边车（Sidecar）和原地 Pod 资源调整",
+  "url": "https://www.infoq.com/news/2025/04/kubernetes-octarine-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-30 00:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Kubernetes v1.33, codenamed \"Octarine\" in homage to Terry Pratchett’s Discworld, <a href=\"https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/\">was released</a> on April 23, 2025. This milestone introduces 64 enhancements (18 stable, 20 beta, and 24 alpha) reflecting the project's ongoing commitment to scalability, security, and developer experience.</p>\n   <p>One of the most anticipated features in Kubernetes 1.33 is the promotion of <a href=\"https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/\">sidecar containers</a> to stable status. Sidecar containers provide a native way to deploy companion processes alongside application containers within the same Pod. This pattern has been widely used in service mesh implementations, logging solutions, and other scenarios where auxiliary functionality needs to be tightly coupled with the main application.</p>\n   <p>An <a href=\"https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/#sidecar-example\">example</a> of how to implement sidecar containers is the following:</p>\n   <pre>\r\n<code class=\"language-nolanguage\">apiVersion: apps/v1\r\nkind: Deployment\r\nmetadata:\r\n  name: myapp\r\n  labels:\r\n    app: myapp\r\nspec:\r\n  replicas: 1\r\n  selector:\r\n    matchLabels:\r\n      app: myapp\r\n  template:\r\n    metadata:\r\n      labels:\r\n        app: myapp\r\n    spec:\r\n      containers:\r\n        - name: myapp\r\n          image: alpine:latest\r\n          command: ['sh', '-c', 'while true; do echo \"logging\" &gt;&gt; /opt/logs.txt; sleep 1; done']\r\n          volumeMounts:\r\n            - name: data\r\n              mountPath: /opt\r\n      initContainers:\r\n        - name: logshipper\r\n          image: alpine:latest\r\n          restartPolicy: Always\r\n          command: ['sh', '-c', 'tail -F /opt/logs.txt']\r\n          volumeMounts:\r\n            - name: data\r\n              mountPath: /opt\r\n      volumes:\r\n        - name: data\r\n          emptyDir: {}</code></pre>\n   <p>With the stable implementation, sidecar containers can now be properly managed in their lifecycle, with Kubernetes ensuring they start before and terminate after the main application containers, addressing previous challenges with pod initialization and graceful shutdowns.</p>\n   <p>Kubernetes 1.33 also promotes <a href=\"https://github.com/kubernetes/enhancements/issues/1287\">in-place resource resizing</a> for vertical scaling of Pods to beta status, addressing a long-standing limitation in the platform. Traditionally, changing resource allocations (CPU and memory) for running workloads required pod recreation, causing application disruption.</p>\n   <p>With this feature, administrators can now adjust resource allocations without disrupting the running application, enabling more flexible resource management in response to changing application demands. This capability is particularly valuable for stateful applications and databases where pod recreation introduces significant operational overhead.</p>\n   <p>The release brings enhanced support for <a href=\"https://github.com/kubernetes/enhancements/issues/4193\">service account tokens</a>, with \"bound service account token volumes\" now reaching a stable status. This feature ensures API authentication uses industry-standard JWT tokens with proper audience and time bindings, significantly improving the security posture of Kubernetes deployments.</p>\n   <p>Kubernetes 1.33 now features a redesigned allocation system for Service IPs. Every type: <code>ClusterIP</code> Service requires a unique IP address cluster-wide, with duplicate allocation attempts being rejected.</p>\n   <p>The <a href=\"https://github.com/kubernetes/enhancements/blob/master/keps/sig-network/1880-multiple-service-cidrs/README.md\">enhanced allocator</a> leverages two GA-status APIs: <code>ServiceCIDR</code> and <code>IPAddress</code>. This implementation enables cluster administrators to dynamically expand the IP address pool available for type: <code>ClusterIP</code> Services by simply creating additional <code>ServiceCIDR</code> objects.</p>\n   <p>Storage capabilities receive <a href=\"https://github.com/kubernetes/enhancements/issues/1495\">attention</a> in this release with Container Storage Interface (CSI) migration reaching stable status for more volume plugins, simplifying the transition from in-tree storage drivers to the more flexible CSI architecture.</p>\n   <p>On the networking front, IPv4/IPv6 dual-stack networking continues to mature with additional configuration options and improved performance. Network policy logging moves to beta status, providing better visibility into network traffic controls.</p>\n   <p>Some old features are also deprecated or removed:</p>\n   <ul>\n    <li>Endpoints API: <a href=\"https://kep.k8s.io/4974\">Deprecated</a> in favor of EndpointSlices, which offer better scalability and support for modern features .</li>\n    <li>gitRepo Volume Type: <a href=\"https://github.com/kubernetes/enhancements/issues/5040\">Removed</a> due to security concerns; users should migrate to alternatives like initContainers with git clone operations .</li>\n    <li>Host Networking for Windows Pods: <a href=\"https://github.com/kubernetes/enhancements/issues/3503\">Support withdrawn</a> due to technical challenges .</li>\n   </ul>\n   <p>Kubernetes v1.33 \"Octarine\" emphasizes stability, security, and operational efficiency. With features like native sidecar support, in-place pod resizing, and enhanced job management, it empowers developers and operators to build and manage robust, scalable applications. As Kubernetes continues to mature, these enhancements reflect the community's dedication to addressing challenges in cloud-native environments.</p>\n   <p>For a comprehensive list of changes, refer to the<a href=\"https://kubernetes.io/blog/2025/04/23/kubernetes-v1-33-release/\"> official release notes</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Kubernetes 1.33 “Octarine” Released: Native Sidecars and In-Place Pod Resizing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/kubernetes-octarine-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1746010800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Kubernetes 1.33 “Octarine” 发布，通过原生边车（Sidecar）、原地 Pod 资源调整等功能，显著提升云原生应用的开发效率、资源利用率和安全性。",
+  "oneSentenceSummary": "Kubernetes 1.33 “Octarine” 发布，通过原生边车（Sidecar）、原地 Pod 资源调整等功能，显著提升云原生应用的开发效率、资源利用率和安全性。",
+  "summary": "Kubernetes v1.33 “Octarine” 版本正式发布，带来了 64 项增强功能，旨在提升云原生应用的稳定性、可扩展性和安全性。重点包括将边车（Sidecar）容器提升为稳定状态，大幅简化服务网格和日志解决方案的部署，降低运维复杂度。原地资源调整功能也升级为 Beta 状态，允许管理员在不中断应用的情况下调整 Pod 的 CPU 和内存分配，提升资源利用率。此外，Service Account Tokens 的安全性得到增强，Service IP 地址分配系统经过优化设计，存储功能通过 CSI 迁移得到改进，IPv4/IPv6 双栈网络持续成熟，同时一些旧功能被弃用或移除。这些更新共同提升了 Kubernetes 的稳定性、安全性和操作效率，降低了开发和运维的复杂性。",
+  "mainPoints": [
+    {
+      "point": "原生边车（Sidecar）容器的稳定化大幅简化了服务网格和日志等场景的部署，降低了运维复杂度",
+      "explanation": "边车（Sidecar）容器与主应用容器共享 Pod 的生命周期，适用于服务网格、日志等场景，解决了 Pod 初始化和优雅关闭的挑战。"
+    },
+    {
+      "point": "原地资源调整提升了资源管理的灵活性和资源利用率",
+      "explanation": "管理员可以在不重启 Pod 的情况下调整 CPU 和内存分配，适用于有状态应用和数据库，减少了操作开销，提升资源利用率。"
+    },
+    {
+      "point": "增强的 Service Account Tokens 提升了 Kubernetes 部署的安全性",
+      "explanation": "使用符合行业标准的 JWT Tokens 进行 API 身份验证，确保了 Kubernetes 部署的安全性。"
+    },
+    {
+      "point": "重新设计的 Service IP 地址分配系统提升了集群的可扩展性",
+      "explanation": "通过 ServiceCIDR 和 IPAddress API，集群管理员可以动态扩展 Service IP 地址池，从而支持更大规模的集群部署。"
+    }
+  ],
+  "keyQuotes": [
+    "Kubernetes v1.33 \"Octarine\" 版本着重提升了稳定性、安全性和操作效率。",
+    "Kubernetes 1.33 中最令人期待的特性之一是将 [sidecar containers](https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/) 边车容器提升至稳定状态。",
+    "Kubernetes 1.33 还将 Pod 的垂直扩展的 [in-place resource resizing](https://github.com/kubernetes/enhancements/issues/1287/) 原地资源调整功能提升到 Beta 状态，解决了平台中长期存在的限制。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "容器化",
+    "Sidecar",
+    "Pod",
+    "云原生"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 589,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745971200000,
+  "publishDateStr": "2025-04-30",
+  "publishDateTimeStr": "2025-04-30 00:00:00"
+}

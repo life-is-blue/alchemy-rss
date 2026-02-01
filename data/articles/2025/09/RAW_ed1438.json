@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ed1438",
+  "title": "Meta 开源 MobileLLM-R1 模型，不到 1B 参数，用 1/10 的训练就超越了 Qwen3 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-13-4",
+  "date": "2025-09-13 10:23:46",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-pm-slice=\"0 0 []\">与其他全开源模型相比，性能提升2-5倍。</p>\n  </blockquote>\n  <p>小参数模型也进入了 R1 时代，这次开源出新技术的是 Meta。</p>\n  <p>本周五，Meta AI 团队正式发布了 MobileLLM-R1。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_c7d49d\" data-ratio=\"0.8018518518518518\" data-type=\"png\" data-w=\"1080\" data-width=\"1389\" data-height=\"1114\" data-backw=\"578\" data-backh=\"464\" data-imgfileid=\"503506744\" data-original-style=\"width:100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/8a4705bd-db9d-47dd-9a18-6cadf821f0cd/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>HuggingFace 链接：https://huggingface.co/collections/facebook/mobilellm-r1-68c4597b104fac45f28f448e</p>\n   </li>\n   <li>\n    <p>试用链接：https://huggingface.co/spaces/akhaliq/MobileLLM-R1-950M</p>\n   </li>\n  </ul>\n  <p>这是 MobileLLM 的全新高效推理模型系列，<strong>包含两类模型</strong>：基础模型 MobileLLM-R1-140M-base、MobileLLM-R1-360M-base、MobileLLM-R1-950M-base 和它们相应的最终模型版。</p>\n  <p>它们不是通用的聊天模型，而是监督微调 (SFT) 模型，专门针对数学、编程（Python、C++）和科学问题进行训练。</p>\n  <p>除了模型本身之外，Meta 还发布了完整的训练方案和数据源，以确保可重复性并支持进一步的研究。</p>\n  <p>值得注意的是，该系列参数最大的 MobileLLM-R1 950M 模型<strong>仅使用约 2T 高质量 token 进行预训练，总训练 token 量少于 5T</strong>，但在 MATH、GSM8K、MMLU 和 LiveCodeBench 基准测试中，其性能与使用 36T token 进行训练的 Qwen3 0.6B 相当或更佳。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_f0456e\" data-ratio=\"0.775\" data-type=\"png\" data-w=\"1080\" data-width=\"1521\" data-height=\"1179\" data-backw=\"578\" data-backh=\"448\" data-imgfileid=\"503506745\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/5ae230b3-d992-4e08-a0ff-c3772bb572eb/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>与现有的完全开源模型相比，尽管参数规模明显更小，MobileLLM-R1 950M 模型在 MATH 基准上的准确率也比 Olmo 1.24B 模型<strong>高出约五倍</strong>，比 SmolLM2 1.7B 模型<strong>高出约两倍</strong>。此外，MobileLLM-R1 950M 在编码基准测试中的表现远超 Olmo 1.24B 和 SmolLM2 1.7B ，在完全开源模型中创下了新的最高水平。</p>\n  <p>Token 效率的比较如下：</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_e35487\" data-ratio=\"0.3972222222222222\" data-type=\"png\" data-w=\"1080\" data-width=\"1988\" data-height=\"790\" data-backw=\"578\" data-backh=\"230\" data-imgfileid=\"503506746\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a8a24fff-7956-4e96-8dd6-c81166911ffe/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>后训练比较：</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_2a3d69\" data-ratio=\"0.42777777777777776\" data-type=\"png\" data-w=\"1080\" data-width=\"1521\" data-height=\"651\" data-backw=\"578\" data-backh=\"247\" data-imgfileid=\"503506747\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/22c75f66-3894-484b-97b8-ffb0ca67a3ff/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>模型架构：</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_302173\" data-ratio=\"0.27526467757459094\" data-type=\"png\" data-w=\"1039\" data-width=\"1039\" data-height=\"286\" data-backw=\"578\" data-backh=\"159\" data-imgfileid=\"503506748\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/65570ece-46d9-4d98-acb8-0089e07d21e1/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_d18728\" data-ratio=\"0.5694444444444444\" data-type=\"png\" data-w=\"1080\" data-width=\"1169\" data-height=\"666\" data-backw=\"578\" data-backh=\"329\" data-imgfileid=\"503506749\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/ce687fda-3c9b-4e82-8130-86470a0d89cb/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>MobileLLM-R1 的发布引起了机器学习社区的讨论。人们欢迎通义、Meta 等顶尖大模型团队基于小体量模型的探索。这一方向的训练成本较为低廉，可以更加方便尝试各类最新论文提出的技术，更重要的是，模型体量的下降也意味着它可以覆盖更多端侧设备，实现更大面积的落地。</p>\n  <p>随着训练成本普遍下降，我们将会得到更好的模型。</p>\n  <p><strong>背后三位华人作者</strong></p>\n  <p>在 MobileLLM-R1 系列发布的同时，背后的作者们也正式亮相，他们表示，该工作的研发时间有一年之久。该项目由华人领衔。</p>\n  <p><strong>Zechun Liu</strong></p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_a8719f\" data-ratio=\"0.95703125\" data-type=\"png\" data-w=\"256\" data-width=\"256\" data-height=\"245\" data-imgfileid=\"503506750\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/1d997315-0564-43f2-91c7-662757ac5c3d/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>Zechun Liu 是 Meta AI 的研究科学家，专注于大模型和基础模型的高效部署与优化。</p>\n  <p>她的研究涉及大语言模型的预训练与后训练，神经网络架构设计与搜索，量化、剪枝与稀疏性，知识蒸馏以及高效的视觉 - 语言模型等，目标是在计算资源有限的环境中实现高性能模型的推理和部署。</p>\n  <p>2016 年，她在复旦大学获得本科学位，2019 年至 2021 年在卡内基梅隆大学担任访问学者，导师为 Marios Savvides 教授和 Eric Xing（邢波）教授。2021 年 6 月获得香港科技大学的博士学位，师从 Kwang-Ting Tim CHENG 教授。</p>\n  <p>Zechun Liu 在顶级会议和期刊上发表了 20 多篇论文，其论文引用量达到了数千次。</p>\n  <p><strong>Ernie Chang</strong></p>\n  <p>Ernie Chang 是 Meta AI 的研究科学家，专注于自然语言处理、多模态学习和高效模型部署等领域。</p>\n  <p><img data-src=\"https://image.jido.dev/20250913113744_f9ea58\" data-ratio=\"0.2064814814814815\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"562\" data-backh=\"116\" data-imgfileid=\"503506756\" data-original-style=\"width: 100%;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/9f75bb59-086e-470e-a354-efd240774bfd/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>他于 2023 年 2 月加入 Meta，参与了多个前沿项目的研究和开发。</p>\n  <p>在他的研究中，Ernie Chang 参与了多个重要的项目和论文。例如，他是《Agent-as-a-Judge: Evaluate Agents with Agents》一文的共同作者，该论文提出了一种新的评估方法，通过代理模型对其他代理模型进行评估，从而提高评估效率和准确性。</p>\n  <p>此外，他还参与了《MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases》的研究，该研究致力于优化小语言模型，以适应移动设备上的应用需求。</p>\n  <p>Ernie Chang 的研究兴趣包括多语言处理、多模态系统等。</p>\n  <p><strong>Changsheng Zhao（赵常盛）</strong></p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_cc0ef7\" data-ratio=\"1\" data-type=\"png\" data-w=\"256\" data-width=\"256\" data-height=\"256\" data-imgfileid=\"503506751\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/ff4c6699-727e-444a-baf7-4c1a2837530e/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>Changsheng Zhao 是 Meta AI 的研究科学家，专注于自然语言处理、深度学习和大语言模型的高效部署与优化。</p>\n  <p>他本科毕业于北京大学，后在哥伦比亚大学攻读硕士学位，毕业后去了三星美国研究员担任研究员，2021 年加入 Meta。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-src=\"https://image.jido.dev/20250913113744_ed8bf0\" data-ratio=\"0.18518518518518517\" data-type=\"png\" data-w=\"1080\" data-width=\"1616\" data-height=\"300\" data-backw=\"578\" data-backh=\"107\" data-imgfileid=\"503506752\" data-original-style=\"width: 100%;\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/7d2e4b84-abb2-4860-82a9-328ce479f48d/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在 Meta，Changsheng Zhao 参与了多个前沿研究项目，主要集中在模型量化、神经网络架构和多模态系统等领域。 部分代表性工作包括：</p>\n  <ul>\n   <li>\n    <p>ParetoQ: Scaling Laws in Extremely Low-bit LLM Quantization：探讨极低比特量化在大语言模型中的缩放定律，帮助平衡模型大小与准确率。</p>\n   </li>\n   <li>\n    <p>Llama Guard 3-1B-INT4：参与开发 Meta 的开源 Llama Guard 模型变体，这是一个紧凑高效的 1B 参数 INT4 量化版本，于 2024 年 Meta Connect 活动中开源，用于 AI 安全和内容过滤。</p>\n   </li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Meta 开源 MobileLLM-R1 系列模型，参数小于 1B，以 1/10 训练成本在数学、编程、科学领域性能超越 Qwen3，具备端侧部署潜力。",
+  "oneSentenceSummary": "Meta 开源 MobileLLM-R1 系列模型，参数小于 1B，以 1/10 训练成本在数学、编程、科学领域性能超越 Qwen3，具备端侧部署潜力。",
+  "summary": "Meta AI 团队近日发布了 MobileLLM-R1 系列高效推理模型，包含基础模型和最终模型版，参数量均小于 1B。该系列模型并非通用聊天模型，而是专门针对数学、编程（Python、C++）和科学问题进行监督微调（SFT）训练。值得注意的是，其最大模型 MobileLLM-R1 950M 仅使用约 2T 高质量 token 进行预训练，总训练 token 量少于 5T，但性能在 MATH、GSM8K、MMLU 和 LiveCodeBench 等基准测试中与使用 36T token 训练的 Qwen3 0.6B 相当或更优。与现有开源模型相比，MobileLLM-R1 950M 在 MATH 基准上准确率高出 Olmo 1.24B 约五倍，比 SmolLM2 1.7B 高出约两倍，并在编码基准测试中创下新高。Meta 同时开源了完整的训练方案和数据源。该模型低成本、高效率的特性使其在端侧设备部署方面具有巨大潜力，促进了小体量模型的探索与落地。文章还介绍了背后的三位华人主要作者及其研究背景。",
+  "mainPoints": [
+    {
+      "point": "MobileLLM-R1 以极低训练成本实现卓越性能。",
+      "explanation": "该模型在远少于竞品的训练 token 量下，在数学、编程等领域超越或持平现有开源大模型，展示了极高的训练效率和模型潜力。"
+    },
+    {
+      "point": "专门优化的小参数模型具备端侧部署巨大潜力。",
+      "explanation": "MobileLLM-R1 参数量小于 1B，显著降低了模型部署所需的计算资源，使其更适合在移动设备和边缘计算场景落地。"
+    },
+    {
+      "point": "Meta 开源了模型及训练方案，促进社区研究。",
+      "explanation": "Meta 不仅发布了模型，还提供了完整的训练方案和数据源，有助于社区复现、深入研究和进一步优化小参数模型。"
+    }
+  ],
+  "keyQuotes": [
+    "与现有完全开源模型相比，尽管参数规模明显更小，MobileLLM-R1 950M 模型在 MATH 基准上的准确率也比 Olmo 1.24B 模型高出约五倍 ，比 SmolLM2 1.7B 模型高出约两倍。",
+    "值得注意的是，该系列参数最大的 MobileLLM-R1 950M 模型仅使用约 2T 高质量 token 进行预训练，总训练 token 量少于 5T，但在 MATH、GSM8K、MMLU 和 LiveCodeBench 基准测试中，其性能与使用 36T token 进行训练的 Qwen3 0.6B 相当或更佳。",
+    "模型体量的下降也意味着它可以覆盖更多端侧设备，实现更大面积的落地。",
+    "除了模型本身之外，Meta 还发布了完整的训练方案和数据源，以确保可重复性并支持进一步的研究。"
+  ],
+  "tags": [
+    "LLM",
+    "小参数模型",
+    "模型优化",
+    "高效训练",
+    "端侧AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1553,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757759026000,
+  "publishDateStr": "2025-09-13",
+  "publishDateTimeStr": "2025-09-13 10:23:46"
+}

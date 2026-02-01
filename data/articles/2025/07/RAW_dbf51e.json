@@ -1,0 +1,67 @@
+{
+  "id": "RAW_dbf51e",
+  "title": "大模型时代，通用视觉模型将何去何从？ ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-02",
+  "date": "2025-07-02 02:32:25",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p data-pm-slice=\"0 0 []\"><br></p>\n  <p data-pm-slice=\"0 0 []\">过去几年，<strong>通用视觉模型</strong>（Vision Generalist Model，简称 VGM）曾是计算机视觉领域的研究热点。它们试图构建统一的架构，能够处理图像、点云、视频等多种视觉模态输入，以及分类、检测、分割等多样的下游任务，向着「视觉模型大一统」的目标迈进。</p>\n  <p data-pm-slice=\"0 0 []\">然而，随着大语言模型 LLM 的迅猛发展，研究热点已经悄然发生转移。如今，多模态大模型兴起，视觉被看作是语言模型众多输入模态中的一种，视觉模态数据被离散化为 Token，与文本一起被统一建模，视觉的「独立性」正在被重新定义。</p>\n  <p>在这种趋势下，传统意义上以视觉任务为核心、以视觉范式为驱动的通用视觉模型研究，似乎正在逐渐被边缘化。然而，我们认为视觉领域仍应保有自己的特色和研究重点。与语言数据相比，视觉数据具有结构化强、空间信息丰富等天然优势，但也存在视觉模态间差异大、难替代的挑战。例如：如何统一处理 2D 图像、3D 点云和视频流等异质输入？如何设计统一的输出表示来同时支持像素级分割和目标检测等不同任务？这些问题在当前的多模态范式中并未被充分解决。</p>\n  <p>正因如此，在这个多模态模型席卷科研与工业的新时代，回顾并总结纯视觉范式下的通用视觉模型研究仍然是一件十分有意义的事情。<strong>清华大学自动化系鲁继文团队</strong>最近发表于 IJCV 的综述论文系统梳理了该方向的研究进展，涵盖输入统一方法、任务通用策略、模型框架设计、模型评测应用等内容，希望能为未来视觉模型的发展提供参考与启发。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6b5e7f0b-95dc-45c2-049a-fbe47480d100/public\" data-ratio=\"0.35555555555555557\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"206\" data-imgfileid=\"503493389\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/602b99c3-a07e-4a8f-b9fa-44e84bcdbca9/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify; margin-left: 8px; margin-right: 8px; line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">Vision Generalist Model: A Survey</span></p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2506.09954</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9e0b1e02-a18e-4861-5287-72959af23400/public\" data-ratio=\"0.4527777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"262\" data-imgfileid=\"503493383\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/fa80e13c-c815-4bdb-9247-d7e489219102/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>VGM 到底解决了什么问题？</strong></p>\n  <p>通用视觉模型是一种能够处理多种视觉任务和模态输入的模型框架。类似于大语言模型在自然语言处理中的成功，VGM 旨在通过构建一个统一的架构来解决各种计算机视觉任务。传统的视觉模型通常针对特定任务（如图像分类、目标检测、语义分割等）设计，而 VGM 通过广泛的预训练和共享表示，能够在不同的视觉任务之间实现零样本（Zero-shot）迁移，从而无需为每个任务进行专门的调整。</p>\n  <p>VGM 的关键能力之一是其<strong>多模态输入的统一处理能力</strong>。不同于传统模型只处理单一类型的视觉数据，VGM 能够同时处理来自多个模态的数据，如图像、点云、视频等，并通过统一的表示方法将它们映射到共享的特征空间。</p>\n  <p>此外，VGM 还具备强大的多任务学习能力，能够在同一个模型中处理多个视觉任务，从图像识别到视频分析，所有任务都可以在一个通用框架下并行处理。</p>\n  <p><strong>综述涵盖了哪些核心内容？</strong></p>\n  <p><strong>数据 + 任务 + 评测：为通用建模打基础</strong></p>\n  <p>VGM 通常使用大规模、多样化的数据集进行训练和评估。为了支持多模态学习，VGM 使用的训练数据集涵盖了图像、视频、点云等多种类型，本综述列举并介绍了一些常见的多模态数据集。</p>\n  <p>任务方面，本综述将视觉任务分为四类：图像任务、几何任务、时间序列任务以及其他视觉相关任务。评测方面，主要通过多个综合基准来衡量其在多种任务和数据集上的表现。与传统的单一任务评测不同，现代评测方法更注重模型的跨任务泛化和多模态处理能力。本综述也对现有通用视觉模型的评测基准做了充分的调研与总结。</p>\n  <p><strong>模型设计范式与技术补充</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/387f621a-8a70-43be-d27e-8bb17589cf00/public\" data-ratio=\"0.26944444444444443\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"562\" data-backh=\"151\" data-imgfileid=\"503493384\" data-original-style=\"width:100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/8e9ec83a-0e6b-4783-b698-ffc217f28147/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>现有通用视觉模型的设计范式主要集中在如何统一处理不同视觉模态输入和多样化任务输出，大致可以分为两种类型：编码式框架和序列到序列框架。</p>\n  <p><strong>编码式框架</strong>（Encoding-based Framework）旨在通过构建一个共享的特征空间来统一不同的输入模态，并使用 Transformer 等模型进行编码。这类框架通常包括领域特定的编码器来处理不同类型的数据，如图像、文本和音频，然后通过共享的 Transformer 结构进行进一步处理，最终生成统一的输出。</p>\n  <p>而序列到序列框架（Sequence-to-Sequence Framework）则借鉴了自然语言处理中的序列建模方法，将输入数据转换为固定长度的表示，然后通过解码器生成相应的输出。这些框架特别适合处理具有可变长度输入输出的任务，如图像生成和视频分析。</p>\n  <p>尽管有一些工作并不能被定义为通用视觉模型，但它们在联合多模态数据输入、模型架构设计、协同处理多任务输出等方面做出了卓越的技术贡献。本综述也对这些技术进行了详尽的讨论分析。一些相关领域的内容，如多任务学习、视觉-语言学习、开放词汇，也被用来扩充通用视觉模型领域的知识边界。</p>\n  <p>此外，作为一个 case study，本综述对比了收录了多个主流 VGM 模型在 22 个基准数据集上的评测结果：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f452c4de-5e6e-41d0-8a96-802184b95900/public\" data-ratio=\"1.0039370078740157\" data-s=\"300,640\" data-type=\"png\" data-w=\"1016\" type=\"block\" data-imgfileid=\"503493385\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/51a5790e-10ca-41c1-b7cb-a0bbaefa3744/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>VGM 的未来在哪里？</strong></p>\n  <p>最后，本综述总结了 VGM 的当前研究进展和面临的挑战，还强调了其在实际应用中的潜力和未来发展方向。</p>\n  <p>现有 VGM 在多个任务和多模态输入的统一处理方面已经取得了显著的进展，但仍面临着如何优化统一框架设计、提高训练效率和应对大规模数据等挑战。数据获取和标注仍然是 VGM 发展的瓶颈。</p>\n  <p>为了解决这一问题，自动化标注技术以及大规模无监督学习方法的研究将成为未来的研究重点。然而，随着模型规模的扩大，VGM 也面临着伦理问题和偏见的挑战。大量未标注的数据中可能包含潜在的偏见，如何确保模型的公平性、透明性和安全性，仍是未来研究中的重要课题。</p>\n  <p>尽管如此，现有的 VGM 在实际应用中展示了广泛的潜力。它不仅可以用于传统的视觉任务，如图像分类、目标检测和语义分割，还能扩展到更复杂的多模态任务，如视觉问答、图像-文本检索、视频理解等。这些应用涵盖了智能监控、自动驾驶、机器人等多个领域，推动了 VGM 在实际场景中的广泛部署。</p>\n  <p>希望这篇文章能给研究中的你一些启发。</p>\n \n",
+  "aiSummary": "清华大学团队综述探讨通用视觉模型在多模态大模型时代的定位与发展方向",
+  "oneSentenceSummary": "清华大学团队综述探讨通用视觉模型在多模态大模型时代的定位与发展方向",
+  "summary": "文章分析了通用视觉模型(VGM)在当前多模态大模型兴起背景下的发展现状与挑战。首先介绍了 VGM 的概念和目标，即构建统一架构处理多种视觉模态和任务。文章特别强调了视觉数据相比语言数据具有结构化强、空间信息丰富等特有优势。然后讨论了多模态大模型对传统视觉研究的冲击，以及视觉模态间差异大等挑战。文章重点介绍了清华大学团队关于 VGM 的综述论文，包括 VGM 解决的问题、核心内容(数据、任务、评测)、两种主要模型设计范式(编码式框架构建共享特征空间和序列到序列框架借鉴 NLP 方法)以及未来发展方向。最后指出了 VGM 面临的挑战和应用潜力。",
+  "mainPoints": [
+    {
+      "point": "VGM 旨在构建统一架构处理多种视觉模态和任务",
+      "explanation": "通过共享表示和预训练，实现不同视觉任务间的零样本迁移，避免针对每个任务单独调整模型"
+    },
+    {
+      "point": "视觉数据相比语言数据具有结构化强、空间信息丰富等特有优势",
+      "explanation": "视觉数据的这些特性使其在多模态学习中保持独特价值，不应完全被语言模型范式所取代"
+    },
+    {
+      "point": "多模态大模型兴起对传统视觉研究范式带来挑战",
+      "explanation": "视觉被看作语言模型的输入模态之一，视觉的独立性被重新定义，但视觉数据特有的结构化优势仍需重视"
+    },
+    {
+      "point": "VGM 设计主要有编码式和序列到序列两种范式",
+      "explanation": "编码式框架构建共享特征空间，序列到序列框架借鉴 NLP 方法处理可变长度输入输出"
+    },
+    {
+      "point": "数据获取和标注仍是 VGM 发展的主要瓶颈",
+      "explanation": "自动化标注技术和大规模无监督学习将是未来研究重点，同时需关注模型伦理和偏见问题"
+    },
+    {
+      "point": "VGM 在多个领域展示广泛应用潜力",
+      "explanation": "从传统视觉任务扩展到复杂多模态应用，如智能监控、自动驾驶和机器人等领域"
+    }
+  ],
+  "keyQuotes": [
+    "通用视觉模型(Vision Generalist Model，简称 VGM)曾是计算机视觉领域的研究热点。它们试图构建统一的架构，能够处理图像、点云、视频等多种视觉模态输入，以及分类、检测、分割等多样的下游任务",
+    "与语言数据相比，视觉数据具有结构化强、空间信息丰富等天然优势，但也存在视觉模态间差异大、难替代的挑战",
+    "VGM 通过广泛的预训练和共享表示，能够在不同的视觉任务之间实现零样本(Zero-shot)迁移，从而无需为每个任务进行专门的调整",
+    "数据获取和标注仍然是 VGM 发展的瓶颈。为了解决这一问题，自动化标注技术以及大规模无监督学习方法的研究将成为未来的研究重点",
+    "现有的 VGM 在实际应用中展示了广泛的潜力。它不仅可以用于传统的视觉任务，还能扩展到更复杂的多模态任务"
+  ],
+  "tags": [
+    "计算机视觉",
+    "通用视觉模型",
+    "多模态学习",
+    "清华大学",
+    "IJCV"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2173,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751423545000,
+  "publishDateStr": "2025-07-02",
+  "publishDateTimeStr": "2025-07-02 02:32:25"
+}

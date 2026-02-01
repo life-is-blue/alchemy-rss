@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d62f16",
+  "title": "8 小时处理 300 万细胞数据，复旦&上交研发双分支架构模型，登 Nature 子刊 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-10-12",
+  "date": "2025-07-10 06:30:00",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d4ccc72f-fb5d-42af-d99d-7129ae231800/public\" data-ratio=\"0.4908741594620557\" data-s=\"300,640\" data-type=\"png\" data-w=\"1041\" type=\"block\" data-backw=\"578\" data-backh=\"284\" data-imgfileid=\"100024582\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/faec8416-ada3-444a-95ba-2774df77daa9/640.png\" alt=\"图片\" data-before-load-time=\"1752128989050\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>编辑丨%</p>\n  <p>在组织切片的微观世界里，基因表达的空间分布藏着解开生物奥秘的钥匙 —— 胚胎如何发育出肝脏、癌细胞为何侵袭转移，答案往往藏在基因「在哪里表达」的动态变化中。</p>\n  <p>但传统空间组学方法只能捕捉单一切片的基因表达量，却无法识别不同条件下基因空间位置变化的关键信号。（如&nbsp;Sepal&nbsp;算法对差异空间表达模式基因的 F1 分数仅 41%）</p>\n  <p>针对这些问题，复旦大学与上海交通大学的团队提出了 River 框架，通过双分支预测架构和事后归因策略，根据基因（或者其他特征）对条件差异的贡献进行排名。</p>\n  <p>该研究以「<em>Prioritizing perturbation-responsive gene patterns using interpretable deep learning</em>」为题，于 2025 年 7 月 2 日刊登在《<em>Nature Communications</em>》。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fc7aed21-1f1e-4428-0b82-d30f61e0e000/public\" data-ratio=\"0.3311036789297659\" data-type=\"png\" data-w=\"897\" data-width=\"897\" data-height=\"297\" data-backw=\"546\" data-backh=\"181\" data-imgfileid=\"100024575\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/38090432-345c-4fa3-aca0-e822de5fd6ef/640.png\" alt=\"图片\" data-before-load-time=\"1752129014393\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>论文链接：https://www.nature.com/articles/s41467-025-61476-9</strong></p>\n  <p><strong>为何基因的「位置变化」难以捕捉</strong></p>\n  <p>在了解 River 框架相较于现在的模型的提升之前，我们首先要知道，对于传统组学，它们所面临的实验困境都有哪些。</p>\n  <p>随着实验技术的发展，诸如空间分辨转录组学这类技术使得实验数据得到了爆炸性的增长，而面对这种等级的数据量，急切需要一种大规模基因复杂空间表达模式的计算方法。</p>\n  <p>现有方法，例如空间可变基因 （SVG）方法和非空间方法，都无法识别差异空间表达模式（DSEP）基因。于是团队开发了 River，希望它能克服这些限制。</p>\n  <p>River 是一种基于深度学习的可解释方法，基于以下假设：只有跨切片具有显著 DSEP 的基因才能有助于切片或条件标签的预测。</p>\n  <p>通俗点来说，River 的过程可以归纳为以下步骤：</p>\n  <p>1.设计预测模型以充分利用多切片和多条件数据集中的空间感知基因表达特征；</p>\n  <p>2.量化每个基因对预测模型的贡献；</p>\n  <p>3.集成不同的深度学习归因方法，确定基因模式的优先级。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/342cb981-b336-46a3-197b-47d4359fff00/public\" data-ratio=\"0.5372262773722628\" data-type=\"png\" data-w=\"685\" data-width=\"685\" data-height=\"368\" data-backw=\"546\" data-backh=\"293\" data-imgfileid=\"100024577\" data-original-style=\"width:100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/4d55d0f9-8739-4310-8509-d5a4a970e736/640.png\" alt=\"图片\" data-before-load-time=\"1752129015129\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图 1：River 的工作流程。</p>\n  <p>前文中所提到的「双分支预测架构」，包括一个位置编码器（用于从空间信息中提取特征）和一个基因表达编码器（用于从基因表达中提取特征），分别独立提取特征并将其融合到潜在空间中。</p>\n  <p>在训练阶段之后，River 采用多种深度学习归因策略来获得细胞水平基因贡献分数，然后将这些分数汇总以得出最终的全局分数。</p>\n  <p>团队强调：SVG、差异表达基因（DEG）和 DSEP 方法之间的主要区别对于理解 River 的独特贡献至关重要，因 DSEP 更侧重于空间分布模式在不同条件下发生显著变化的基因，而这恰恰是空间组学中的生物学重要性所在。</p>\n  <p><strong>让基因「位置变化」显形</strong></p>\n  <p>当然，一个模型的具体性能如何，还是需要与现有的其他模型进行比对。在模拟的数据集中，已知被扰动的基因被标记为阳性（DSEP 基因），其余基因则标记为阴性（背景或非 DSEP 基因），方便研究者对各类方法进行评估。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0dac03f7-1c6e-42b6-bca6-13946b8b7700/public\" data-ratio=\"1.0671532846715328\" data-type=\"png\" data-w=\"685\" data-width=\"685\" data-height=\"731\" data-backw=\"546\" data-backh=\"583\" data-imgfileid=\"100024580\" data-original-style=\"width:100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/dee5b70e-8dae-4271-aa86-e60c2a28e2d1/640.png\" alt=\"图片\" data-before-load-time=\"1752129015729\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图 2：模拟基准测试。</p>\n  <p>River 和 16 种竞争方法（这些方法为了能识别不同切片之间的 DSEP 基因已经过修改）在六个数据集上的性能对比显示，River 在 F1 分数上显著优于所有其他方法（p 值&lt;0.05），中位 F1 分数约为 0.59，位居第一。</p>\n  <p>排名第二和第三的方法 Sepal 和 SpatialDE 的中位分数分别为约 0.41 和 0.32，其余接近零。</p>\n  <p>River 的归因模块可以为每个基因输出有意义的分数，优先考虑那些具有差异空间表达模式的基因。在对此模块的评分能力的验证中，River 始终为 DSEP 基因分配了更高的分数，且真正的 DSEP 基因与背景基因的分数差异显著。</p>\n  <p><strong>寻找基因的「时间变化」</strong></p>\n  <p>现有研究通常关注同一切片内的基因空间模式，而忽视了随时间变化的空间基因表达模式的变化。</p>\n  <p>研究团队应用 River 分析了跨越八个发育阶段的小鼠胚胎的 Stereo-seq 数据集。在这种情况下，River 识别出的差异基因可能既包括由发育引起的空间变化，也包括非空间变化。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2c142d36-2072-44b2-4df1-cacbc33f8f00/public\" data-ratio=\"0.9138686131386862\" data-type=\"png\" data-w=\"685\" data-width=\"685\" data-height=\"626\" data-backw=\"546\" data-backh=\"499\" data-imgfileid=\"100024576\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/e1b1bb60-9a06-419f-bdc1-1b6cf18b5c45/640.png\" alt=\"图片\" data-before-load-time=\"1752129016927\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图 3：8 个发育阶段小鼠胚胎 Stereo-seq 数据集的分析。</p>\n  <p>可视化结果证实，River 识别出的优先基因在其发育轴上的时空变化中得到了确认。</p>\n  <p>团队在实验中发现，嵌入空间有效地将不同阶段的细胞区分开来，其区分效果优于使用 2000 个高变基因。相比之下，使用 River 选择的低优先级基因完全无法区分阶段。</p>\n  <p>在 River 优先基因集中，时间点越接近的基因表现出更相似的成对轮廓得分模式，并且聚类效果更好。</p>\n  <p>上述的分析展示了 River 捕捉发育过程中非空间差异的能力。此外，该模型在实战中也有不错的表现。</p>\n  <p><strong>实战演示</strong></p>\n  <p>在真实生物场景的演示中，River 也同样展示出自己的强大性能。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5b9772f9-4a6f-4e6d-ea87-8f47a2cd6600/public\" data-ratio=\"0.8087591240875912\" data-type=\"png\" data-w=\"685\" data-width=\"685\" data-height=\"554\" data-backw=\"546\" data-backh=\"442\" data-imgfileid=\"100024578\" data-original-style=\"width: 100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/3854d3ea-7739-4f7b-bce2-cd39861922f5/640.png\" alt=\"图片\" data-before-load-time=\"1752129017627\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图 4：在 slide-seq 数据集上的应用。</p>\n  <p>River 可以识别糖尿病引起的生精过程中的 DSEP 基因，也同样能识别出此前被证明与糖尿病睾丸中，胚胎干细胞或精子丢失有关的 Prm1 和 Prm2 基因。</p>\n  <p>River 在除空间转录组学之外的其他平台上也具备相当的泛化能力。其在&nbsp;MERSCOPE&nbsp;测量的脑空间转录组学数据集进行了演示，在约 7 分钟之内处理了包含超过 70,000 个细胞的切片，并以此表现完成了三次重复。</p>\n  <p>River 能够在 5 小时内成功处理 300 万细胞，运行时间与输入细胞数量几乎呈线性关系。随着图谱级数据集的规模和复杂性不断增加，River 的大规模处理性能，将会成为研究人员的强大计算工具。</p>\n  <p><strong>向上一层的进步</strong></p>\n  <p>团队的测试结果表明，River 不仅是一种简单的差异基因表达或 SVG 识别方法，而是专门设计用于在不局限于单切片和细胞独立假设的情况下识别 DSEPs。</p>\n  <p>River 框架的诞生，带来了差异空间表达模式识别问题的新解决观点。它能带领空间组学分析从「静态差异表达识别」迈向「动态空间模式解析」。</p>\n  <p>River 的结果可能会受到外部对齐算法的影响，但幸运的是，大多数应用情况下并不会出现此类问题。并且 River 可以无缝地与高级对齐方法结合使用，通过更好的方法提高性能。</p>\n  <p>后续的研究里，可以引入对比模块来强化框架。团队强调，批次效应仍是一个躲不开的困难。</p>\n </body>\n</html>",
+  "aiSummary": "复旦与上交团队研发的 River 框架，通过双分支深度学习架构，高效识别大规模空间组学数据中的差异空间表达模式（DSEP），并登 Nature 子刊。",
+  "oneSentenceSummary": "复旦与上交团队研发的 River 框架，通过双分支深度学习架构，高效识别大规模空间组学数据中的差异空间表达模式（DSEP），并登 Nature 子刊。",
+  "summary": "文章详细介绍了复旦大学与上海交通大学团队提出的 River 框架，旨在解决传统空间组学方法无法有效识别基因空间位置动态变化（差异空间表达模式，DSEP）的问题。River 采用双分支预测架构（位置编码器和基因表达编码器），结合事后归因策略，能够根据基因对条件差异的贡献进行排名。该模型在模拟数据集上表现出显著优于其他 16 种竞争方法的 F1 分数，并在小鼠胚胎发育和糖尿病研究等真实场景中成功识别关键 DSEP 基因。此外，River 展现出卓越的大规模数据处理能力，能在短时间内处理数百万细胞数据，为生物医学研究提供了强大的计算工具，推动空间组学分析从静态识别迈向动态解析。",
+  "mainPoints": [
+    {
+      "point": "River 框架创新性地解决了传统空间组学无法识别差异空间表达模式（DSEP）的问题。",
+      "explanation": "通过双分支预测架构和事后归因策略，River 能够准确捕捉基因在不同条件下的空间位置变化，弥补了现有方法的不足，实现了从静态到动态的分析飞跃。"
+    },
+    {
+      "point": "River 在性能和可解释性方面显著优于现有模型。",
+      "explanation": "在多项基准测试中，River 的 F1 分数远超其他竞争方法，并能输出有意义的基因贡献分数，增强了模型的可信度和生物学洞察力。"
+    },
+    {
+      "point": "River 展现出强大的泛化能力和大规模数据处理能力。",
+      "explanation": "该框架不仅适用于多种空间组学平台，还能在数小时内处理数百万细胞数据，为未来的图谱级生物数据分析提供了高效且可扩展的工具。"
+    }
+  ],
+  "keyQuotes": [
+    "在组织切片的微观世界里，基因表达的空间分布藏着解开生物奥秘的钥匙。",
+    "River 是一种基于深度学习的可解释方法，基于以下假设：只有跨切片具有显著 DSEP 的基因才能有助于切片或条件标签的预测。",
+    "River 在 F1 分数上显著优于所有其他方法（p 值<0.05），中位 F1 分数约为 0.59，位居第一。",
+    "River 能够在 5 小时内成功处理 300 万细胞，运行时间与输入细胞数量几乎呈线性关系。",
+    "River 框架的诞生，带来了差异空间表达模式识别问题的新解决观点。它能带领空间组学分析从「静态差异表达识别」迈向「动态空间模式解析」。"
+  ],
+  "tags": [
+    "空间组学",
+    "深度学习",
+    "基因表达",
+    "生物信息学",
+    "AI模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2167,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752129000000,
+  "publishDateStr": "2025-07-10",
+  "publishDateTimeStr": "2025-07-10 06:30:00"
+}

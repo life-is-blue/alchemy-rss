@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c7e0f644",
+  "title": "Gemini 3 Flash 可能是 Google 最狠的一步棋",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247511275&idx=1&sn=beb60ff71aba28319dcf200799c69818",
+  "date": "2025-12-17 18:21:00",
+  "author": "AI寒武纪",
+  "siteName": "AI寒武纪",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"mp_profile_iframe_wrp\" style=\"letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;\">\n   <p style=\"text-align: center;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-imgfileid=\"100027610\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"webp\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=6e022d07&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FICgnAptln0U0DlzibzicMpOW1I53HrdiaUvuicPViblPtxibPu7cfh2lhpauULrXjAfgjN5CksrVaQABuc1TtQKUmHDA%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n   <div style=\"font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;font-size: 15px;line-height: 1.75;text-align: left;\">\n    <p style=\"margin-left:8px;letter-spacing:0.1em;margin-top:0px !important;margin-bottom:1.5em;margin-right:8px;text-align:justify;\"><span leaf=\"\">刚刚谷歌正式推出了Gemini 3 Flash，这可能是 Google 这几年最重要的一次模型发布</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">如果只看名字，Gemini 3 Flash 很容易被误解成一个阉割版，快但不聪明的模型。但实际情况恰恰相反——它可能是 Google 到目前为止，战略意义最大的一次模型选择</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">一句话先给结论：</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">Gemini 3 Flash =前沿大模型智商 + 闪电级速度 + 超低成本的组合拳。</span><span leaf=\"\"> \n      <br> \n     </span><span leaf=\"\">它不是缩水版，而是把快和强第一次真正合在了一起</span></p>\n    <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-imgfileid=\"100027608\" data-ratio=\"1.1472222222222221\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=d2e15608&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FICgnAptln0U0DlzibzicMpOW1I53HrdiaUvoUFtM6AEia2P7fhGeWz10ZazvHaye4a2KeyIIy5jibLbzAcAibekAAUicQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">不知道谷歌是怎么训练的，在复杂推理测试ARC-AGI-2和衡量真实编程能力测试</span><span style=\"letter-spacing: 0.1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: transparent;\"><span leaf=\"\">SWE-bench Verified 基准中，</span><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;class&quot;:&quot;mp_profile_iframe_wrp&quot;,&quot;style&quot;:&quot;letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;font-size: 15px;line-height: 1.75;text-align: left;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin: 1.5em 8px;letter-spacing: 0.1em;color: rgb(63, 63, 63);text-align: justify;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">Gemini 3 Flash都超过了</span><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;class&quot;:&quot;mp_profile_iframe_wrp&quot;,&quot;style&quot;:&quot;letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;font-size: 15px;line-height: 1.75;text-align: left;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin: 1.5em 8px;letter-spacing: 0.1em;color: rgb(63, 63, 63);text-align: justify;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">Gemini 3 pro</span></span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span style=\"letter-spacing: 0.1em;font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;background-color: transparent;\"><span leaf=\"\">过去两年，大模型世界里一直有一道隐形分界线：一边是能力最强、但又慢又贵的旗舰模型，另一边是响应快、成本低，但明显没那么聪明的轻量模型</span></span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">Gemini 3 Flash 做的事情，就是把这条分界线直接抹掉了</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">它在多个博士级推理和多模态基准上，已经逼近甚至追平 Gemini 3 Pro 这样的重型选手，却同时保留了 Flash 系列最核心的特性——极低延迟和极高吞吐。更关键的是，在真实使用场景中，它平均比上一代 2.5 Pro 少用 30% 的 token，却把正确率做得更高</span></p>\n    <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-imgfileid=\"100027609\" data-ratio=\"0.562\" data-s=\"300,640\" data-type=\"webp\" data-w=\"1000\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7533f8d0&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FICgnAptln0U0DlzibzicMpOW1I53HrdiaUvjtMR4d7ucBslHTzeaKPQm6C3icxTWCD1C5Zx3vLStlhRxyqn0Ckaxtg%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">这件事对开发者的冲击尤其明显</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">在 Agent、自动编程、高频交互系统里，真正的瓶颈从来不是模型能不能想明白，而是想明白要不要等三秒。Gemini 3 Flash 在 SWE-bench 这类面向代码 Agent 的评测中，甚至跑赢了 Gemini 3 Pro，本质原因只有一个：它足够聪明，同时也足够快，快到可以被反复调用</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">而当这种能力开始变便宜，事情的性质就变了</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">Gemini 3 Flash 的定价已经低到一个明确的信号：它不是拿来偶尔用一次的，而是拿来当基础设施用的</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">Google 直接把它设成了 Gemini App 的默认模型，全球用户免费使用；同时，它也开始成为搜索里 AI Mode 的核心大脑。你在搜索里问一个复杂问题，它不只是给你答案，而是能拆解问题结构、结合实时信息，再给你一个可以立刻行动的方案，而这一切几乎和传统搜索一样快</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">这一步，其实比参数更重要</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">如果说前两年的竞争重点是谁的模型更像人类博士，那么 Gemini 3 Flash 代表的，是下一阶段的方向，谁能让这种水平的智能，真正跑在每一次点击、每一次调用、每一次搜索里</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">从这个角度看，Gemini 3 Flash 并不是一个Flash 模型，而是 Google 对 AI 规模化落地的一次明确表态：智能本身已经不是稀缺资源了，稀缺的是能被高频使用的智能</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">不得说谷歌TPU+强悍的研发能力已经成为事实上领先者了，Sam 昨天紧急推出的图像模型追Nano Banana Pro，接下里要追的可能就多了，这在几个月前甚至都不能想象</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 最新发布的 Gemini 3 Flash 模型融合了前沿大模型的高智商、闪电级速度和超低成本，成功抹平了性能与效率分界线，预示着 AI 规模化落地的新方向。",
+  "oneSentenceSummary": "Google 最新发布的 Gemini 3 Flash 模型融合了前沿大模型的高智商、闪电级速度和超低成本，成功抹平了性能与效率分界线，预示着 AI 规模化落地的新方向。",
+  "summary": "文章深入分析了 Google 新发布的 Gemini 3 Flash 模型，指出其并非传统意义上的\"阉割版\"，而是 Google 在 AI 战略上的关键一步。Gemini 3 Flash 通过结合前沿大模型的推理能力、极低的延迟和超高吞吐量，成功打破了过去大模型领域中 \"强但慢且贵\" 与 \"快但不够智能\" 的二元对立。该模型在复杂推理测试 ARC-AGI-2 和编程基准 SWE-bench Verified 中表现出色，甚至在某些 Agent 评测中超越了 Gemini 3 Pro，同时显著降低了 token 使用量和成本。文章强调，Gemini 3 Flash 的战略意义在于，它将高性能 AI 普及化，使其成为可被高频使用的基础设施，如作为 Gemini App 的默认模型和搜索 AI Mode 的核心大脑，从而推动 AI 在搜索、Agent 等场景中的大规模落地，使得智能不再是稀缺资源，而转向稀缺的是能被高频使用的智能。",
+  "mainPoints": [
+    {
+      "point": "Gemini 3 Flash 融合了顶级智能、极速响应和超低成本。",
+      "explanation": "该模型打破了传统大模型的性能与效率瓶颈，在保持高智商的同时实现了低延迟和高吞吐，使其成为 AI 普及化的关键，而非缩水版。"
+    },
+    {
+      "point": "Gemini 3 Flash 在特定场景（如代码 Agent 评测）下超越 Pro 版，并显著降低资源消耗。",
+      "explanation": "在 SWE-bench 等面向代码 Agent 的评测中表现出色，且平均比上一代 2.5 Pro 少用 30%的 token，同时提升了正确率，这极大地提升了实际应用的效率和成本效益。"
+    },
+    {
+      "point": "该模型代表了 AI 从“稀缺智能”到“高频可用智能”的范式转变，成为 AI 基础设施。",
+      "explanation": "通过将高性能 AI 转变为可被高频使用的基础设施，如作为 Gemini App 默认模型和搜索 AI Mode 的大脑，Gemini 3 Flash 加速了 AI 在日常应用中的规模化落地，重新定义了 AI 竞争的焦点。"
+    }
+  ],
+  "keyQuotes": [
+    "Gemini 3 Flash =前沿大模型智商 + 闪电级速度 + 超低成本的组合拳。",
+    "它在多个博士级推理和多模态基准上，已经逼近甚至追平 Gemini 3 Pro 这样的重型选手，却同时保留了 Flash 系列最核心的特性——极低延迟和极高吞吐。",
+    "Google 直接把它设成了 Gemini App 的默认模型，全球用户免费使用；同时，它也开始成为搜索里 AI Mode 的核心大脑。",
+    "如果说前两年的竞争重点是谁的模型更像人类博士，那么 Gemini 3 Flash 代表的，是下一阶段的方向，谁能让这种水平的智能，真正跑在每一次点击、每一次调用、每一次搜索里。",
+    "智能本身已经不是稀缺资源了，稀缺的是能被高频使用的智能。"
+  ],
+  "tags": [
+    "Gemini 3 Flash",
+    "Google",
+    "大模型",
+    "AI模型评测",
+    "AI应用落地"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 978,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_03cf5e",
+  "sourceName": "AI寒武纪",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765995660000,
+  "publishDateStr": "2025-12-17",
+  "publishDateTimeStr": "2025-12-17 18:21:00"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_061e91",
+  "title": "Gemini CLI 登陆 Zed：AI 赋能代码编辑新体验",
+  "url": "https://developers.googleblog.com/en/gemini-cli-is-now-integrated-into-zed/",
+  "date": "2025-08-27 00:00:00",
+  "author": "Ryan J. Salva",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/CLI-Wagtial_RD2-V01.original.jpg\" alt=\"Gemini CLI is now integrated into Zed, bringing AI directly to your code editor\">\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"ysvww\" id=\"gemini-cli-is-now-integrated-into-zed-bringing-ai-directly-to-your-code-editor\"><b>Gemini CLI is now integrated into Zed, bringing AI directly to your code editor</b></h2>\n    <p data-block-key=\"jhd2\">\n     <br>\n     Gemini CLI was built to be <b>extensible by default</b> through emerging standards like <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md\">MCP</a>, <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/memory.md\">markdown-based instructions</a>, <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/themes.md\">color themes</a>, <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/extension.md\">custom extensions</a>, <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/core/tools-api.md\">custom tools</a>, <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/configuration.md\">custom configurations</a>, and <a href=\"https://github.com/google-gemini/gemini-cli/blob/main/docs/telemetry.md\">Open Telemetry</a>. Because we built Gemini CLI as a lightweight orchestrator capable of integrating with any toolchain, the number of community contributions, integrations, and extensions has exploded. In fact, in the eight weeks since Gemini CLI launched, the community has <a href=\"https://github.com/google-gemini/gemini-cli/pulls?q=is%3Apr+is%3Amerged\">merged 1K pull requests</a> expanding Gemini CLI’s capabilities. Combined with a growing ecosystem of extensions, Gemini CLI is quickly becoming the critical part of many engineering systems –&nbsp;including Google’s own.\n    </p>\n    <p data-block-key=\"7l7t1\">We're always looking to integrate with tools developers love, and <a href=\"https://zed.dev/download\">Zed</a> is a natural fit. Because Zed's high-performance, open source code editor is already a popular choice within the Gemini CLI team, we reached out to the creators to explore a deeper collaboration. Starting today, <a href=\"https://github.com/google-gemini/gemini-cli\">Gemini CLI</a> is integrated with Zed, bringing Gemini's models directly into Zed’s Rust-based environment. Developers can now tap into an AI experience that’s as fast and responsive as the editor itself.</p>\n    <p data-block-key=\"8td5p\">The integration marries two essential tools – the terminal and IDE –&nbsp;to help you tackle common tasks with speed and precision. For example, you can:</p>\n    <p data-block-key=\"amtpf\"></p>\n    <ul>\n     <li data-block-key=\"5avdn\"><b><i>Generate and refactor code in-place:</i></b> Write a comment, hit a hotkey, and get a function generated instantly.</li>\n    </ul>\n    <p data-block-key=\"fh7j8\"></p>\n    <ul>\n     <li data-block-key=\"7oo1l\"><b><i>Get instant answers:</i></b> Highlight confusing code or an error message to get an immediate explanation.</li>\n    </ul>\n    <p data-block-key=\"slhs\"></p>\n    <ul>\n     <li data-block-key=\"bpc5h\"><b><i>Chat naturally in your terminal:</i></b> Use the gemini command in Zed's integrated terminal for broader questions, just like you’re used to.</li>\n    </ul>\n    <h2 data-block-key=\"wnmeh\" id=\"a-new-kind-of-collaboration\">\n     <br>\n     A new kind of collaboration\n    </h2>\n    <p data-block-key=\"3b7lt\">Of course, this integration is about more than just features; it's a better way to collaborate with an AI agent. This new workflow keeps you in the driver’s seat. Here’s what makes it special:</p>\n    <p data-block-key=\"d3l34\"></p>\n    <ul>\n     <li data-block-key=\"99atl\"><b><i>Follow the agent in real time:</i></b> While Gemini is working, you aren't flying blind. You can follow along live as it makes changes across multiple files, giving you a clear view of its execution.</li>\n    </ul>\n    <p data-block-key=\"3gfjc\"></p>\n    <ul>\n     <li data-block-key=\"45al\"><b><i>Review code like a pull request:</i></b> Once the agent completes its work, Zed presents the changes in a robust review interface. You get a clear diff for every proposed edit, allowing you to review, accept, or modify the changes with the same control you'd have in a code review.</li>\n    </ul>\n    <p data-block-key=\"7h8id\"></p>\n    <ul>\n     <li data-block-key=\"4qlq3\"><b><i>Enjoy a seamless handoff:</i></b> There’s no awkward copy-pasting. The moment you're done reviewing, you can jump right back into your code, keeping you in the flow.</li>\n    </ul>\n    <p data-block-key=\"6mor4\"></p>\n    <ul>\n     <li data-block-key=\"73tc\"><b><i>Provide context beyond your filesystem:</i></b> You can give the agent more than just your local files. Point it to a URL with documentation or an API spec to give it the context it needs to solve tougher problems.</li>\n    </ul>\n   </div>\n   <div class=\"inner-block-content video-block\">\n    <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/wagtailvideo-yjd1f8y2_thumb.jpg\">\n     <source src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/Gemini_CLI_-_Zed_integration.mp4\" type=\"video/mp4\">\n     <p>Sorry, your browser doesn't support playback for this video</p>\n    </video>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"wn97g\" id=\"ready-to-build\">Ready to build?</h2>\n    <p data-block-key=\"1hqgm\">We’re delighted to announce this collaboration together. Read the mirror announcement on the <a href=\"https://zed-dev-git-acp-launch-zed-industries.vercel.app/blog/extensible-agent-support-in-zed\">Zed blog</a>.</p>\n    <p data-block-key=\"9on3r\">It’s easy to get started with Gemini CLI and Zed. We're excited to see what you build. As always, Gemini CLI is open source. <a href=\"https://github.com/google-gemini/gemini-cli\">Join us on GitHub</a> where you can ask for help, inspect our source code, raise issues, and contribute code to make the project better for everyone.</p>\n    <p data-block-key=\"4lcdj\">Happy coding!</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Gemini CLI 集成 Zed，将 AI 驱动的可扩展开发体验带入 IDE，实现原位代码生成、实时代理等功能。",
+  "oneSentenceSummary": "Gemini CLI 集成 Zed，将 AI 驱动的可扩展开发体验带入 IDE，实现原位代码生成、实时代理等功能。",
+  "summary": "文章宣布 Google Gemini CLI 与 Zed 高性能开源编辑器强强联合。Gemini CLI 是一款可扩展的轻量级协调器，凭借快速的社区采纳，可与各种工具链灵活集成。集成将 Gemini AI 模型引入 Zed 的 Rust 环境，为开发者带来快速响应的 AI 体验。主要功能包括原位代码生成、代码重构、代码即时解释以及终端内的自然语言聊天。此外，合作引入创新工作流，开发者可实时追踪 AI 代理变更，像审查拉取请求般审核编辑建议，并提供文件外的外部上下文，促进无缝人机 AI 开发循环。",
+  "mainPoints": [
+    {
+      "point": "Gemini CLI 旨在实现可扩展性和快速的社区驱动开发。",
+      "explanation": "Gemini CLI 基于 MCP 等新兴标准构建，支持自定义扩展，作为轻量级协调器，拥有庞大社区，功能扩展迅速，已成为工程系统的关键组成部分。"
+    },
+    {
+      "point": "该集成将 Gemini 的 AI 直接带入 Zed 编辑器，以增强编码任务。",
+      "explanation": "开发者可利用 AI 在 Zed 的 Rust 环境中进行原位代码生成、代码重构，并获得代码或错误信息的即时解释。"
+    },
+    {
+      "point": "新颖的 AI 协作工作流实现实时代理交互和高效代码审查。",
+      "explanation": "通过集成，开发者可实时跟踪 AI 跨文件变更，使用类似拉取请求的差异界面审查 AI 生成代码，并提供丰富的上下文（包括 URL）以解决复杂问题。"
+    }
+  ],
+  "keyQuotes": [
+    "Gemini CLI was built to be **extensible by default** through emerging standards like MCP， markdown-based instructions， color themes， custom extensions， custom tools， custom configurations， and Open Telemetry.  (Gemini CLI 的设计目标是**默认可扩展**，它通过 MCP 等新兴标准、基于 Markdown 的指令、颜色主题、自定义扩展、自定义工具、自定义配置和开放遥测技术实现。)",
+    "Starting today， Gemini CLI is integrated with Zed， bringing Gemini's models directly into Zed's Rust-based environment. Developers can now tap into an AI experience that's as fast and responsive as the editor itself. (从今天开始，Gemini CLI 已与 Zed 集成，将 Gemini 的模型直接引入 Zed 的 Rust 环境。开发者现在可以体验到与编辑器本身一样快速且响应迅速的 AI 体验。)",
+    "You can follow along live as it makes changes across multiple files， giving you a clear view of its execution. (您可以实时跟踪它在多个文件中进行的更改，从而清楚地了解其执行过程。)",
+    "Once the agent completes its work， Zed presents the changes in a robust review interface. You get a clear diff for every proposed edit， allowing you to review， accept， or modify the changes with the same control you'd have in a code review. (一旦代理完成其工作，Zed 会在一个强大的审查界面中展示这些更改。您可以获得每个建议编辑的清晰差异，从而像在代码审查中一样，审查、接受或修改这些更改。)"
+  ],
+  "tags": [
+    "AI 开发工具",
+    "Gemini CLI",
+    "Zed 编辑器",
+    "代码生成",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 530,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756252800000,
+  "publishDateStr": "2025-08-27",
+  "publishDateTimeStr": "2025-08-27 00:00:00"
+}

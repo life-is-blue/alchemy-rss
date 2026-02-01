@@ -1,0 +1,59 @@
+{
+  "id": "RAW_30a114a1",
+  "title": "你的依赖项并不关心你的 FIPS 配置",
+  "url": "https://www.docker.com/blog/fips-dependencies-and-prebuilt-binaries/",
+  "date": "2026-01-22 06:00:04",
+  "author": "Jin Kim",
+  "siteName": "Docker",
+  "content": "<html>\n <head></head>\n <body>\n  <p>FIPS compliance is a great idea that makes the entire software supply chain safer. But teams adopting FIPS-enabled container images are running into strange errors that can be challenging to debug. What they are learning is that correctness at the base image layer does not guarantee compatibility across the ecosystem. Change is complicated, and changing complicated systems with intricate dependency webs often yields surprises. We are in the early adaptation phase of FIPS, and that actually provides interesting opportunities to optimize how things work. Teams that recognize this will rethink how they build FIPS and get ahead of the game.</p>\n  <h2 class=\"wp-block-heading\" id=\"fips-in-practice\"><strong>FIPS in practice</strong></h2>\n  <p>FIPS is a U.S. government standard for cryptography. In simple terms, if you say a system is “FIPS compliant,” that means the cryptographic operations like TLS, hashing, signatures, and random number generation are performed using a specific, validated crypto module in an approved mode. That sounds straightforward until you remember that modern software is built not as one compiled program, but as a web of dependencies that carry their own baggage and quirks.</p>\n  <h2 class=\"wp-block-heading\" id=\"the-fips-crypto-error-that-caught-us-off-guard\"><strong>The FIPS crypto error that caught us off guard</strong></h2>\n  <p>We got a ticket recently for a Rails application in a FIPS-enabled container image. On the surface, everything looked right. Ruby was built to use OpenSSL 3.x with the FIPS provider. The OpenSSL configuration was correct. FIPS mode was active.</p>\n  <p>However, the application started throwing cryptography module errors from the Postgres Rubygem module. Even more confusing, a minimal reproducer of a basic Ruby app and a stock postgres did not reproduce the error and a connection was successfully established. The issue only manifested when using ActiveRecord.</p>\n  <p>The difference came down to code paths. A basic Ruby script using the pg gem directly exercises a simpler set of operations. ActiveRecord triggers additional functionality that exercises different parts of libpq. The non-FIPS crypto was there all along, but only certain operations exposed it.</p>\n  <p>Your container image can be carefully configured for FIPS, and your application can still end up using non-FIPS crypto because a dependency brought its own crypto along for the ride. In this case, the culprit was a precompiled native artifact associated with the database stack. When you install pg, Bundler may choose to download a prebuilt binary dependency such as libpq.</p>\n  <p>Unfortunately those prebuilt binaries are usually built with assumptions that cause problems. They may be linked against a different OpenSSL than the one in your image. They may contain statically embedded crypto code. They may load crypto at runtime in a way that is not obvious.</p>\n  <p>This is the core challenge with FIPS adoption. Your base image can do everything right, but prebuilt dependencies can silently bypass your carefully configured crypto boundary.</p>\n  <h2 class=\"wp-block-heading\" id=\"why-we-cannot-just-fix-it-in-the-base-image-yet\"><strong>Why we cannot just fix it in the base image yet</strong></h2>\n  <p>The practical fix for the Ruby case was adding this to your Gemfile.</p>\n  <div class=\"wp-block-syntaxhighlighter-code \">\n   <div>\n    <div id=\"highlighter_934045\" class=\"syntaxhighlighter  xml\">\n     <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n      <tbody>\n       <tr>\n        <td class=\"gutter\">\n         <div class=\"line number1 index0 alt2\">1</div>\n        </td>\n        <td class=\"code\">\n         <div class=\"container\">\n          <div class=\"line number1 index0 alt2\">\n           <code class=\"xml plain\">gem \"pg\", \"~&gt; 1.1\", force_ruby_platform: true</code>\n          </div>\n         </div>\n        </td>\n       </tr>\n      </tbody>\n     </table>\n    </div>\n   </div>\n  </div>\n  <p>You also need to install libpq-dev to allow compiling from source. This forces Bundler to build the gem from source on your system instead of using a prebuilt binary. When you compile from source inside your controlled build environment, the resulting native extension is linked against the OpenSSL that is actually in your FIPS image.</p>\n  <p>Bundler also supports an environment/config knob for the same idea called <code>BUNDLE_FORCE_RUBY_PLATFORM</code>. The exact mechanism matters less than the underlying strategy of avoiding prebuilt native artifacts when you are trying to enforce a crypto boundary.</p>\n  <p>You might reasonably ask why we do not just add <code>BUNDLE_FORCE_RUBY_PLATFORM</code> to the Ruby FIPS image by default. We discussed this internally, and the answer illustrates why FIPS complexity cascades.</p>\n  <p>Setting that flag globally is not enough on its own. You also need a C compiler and the relevant libraries and headers in the build stage. And not every gem needs this treatment. If you flip the switch globally, you end up compiling every native gem from source, which drags in additional headers and system libraries that you now need to provide. The “simple fix” creates a new dependency management problem.</p>\n  <p>Teams adopt FIPS images to satisfy compliance. Then they have to add back build complexity to make the crypto boundary real and verify that every dependency respects it. This is not a flaw in FIPS or in the tooling. It is an inherent consequence of retrofitting a strict cryptographic boundary onto an ecosystem built around convenience and precompiled artifacts.</p>\n  <p>The patterns we are documenting today will become the defaults tomorrow. The tooling will catch up. Prebuilt packages will get better. Build systems will learn to handle the edge cases. But right now, teams need to understand where the pitfalls are.</p>\n  <h2 class=\"wp-block-heading\" id=\"what-to-do-if-you-are-starting-a-fips-journey\"><strong>What to do if you are starting a FIPS journey</strong></h2>\n  <p>You do not need to become a crypto expert to avoid the obvious traps. You only need a checklist mindset. The teams working through these problems now are building real expertise that will be valuable as FIPS requirements expand across industries.</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Treat prebuilt native dependencies as suspect.</strong> If a dependency includes compiled code, assume it might carry its own crypto linkage until you verify otherwise. You can use ldd on Linux to inspect dynamic linking and confirm that binaries link against your system OpenSSL rather than a bundled alternative.</li>\n   <li><strong>Use a multi-stage build and compile where it matters.</strong> Keep your runtime image slim, but allow a builder stage with the compiler and headers needed to compile the few native pieces that must align with your FIPS OpenSSL.</li>\n   <li><strong>Test the real execution path, not just “it starts.”</strong> For Rails, that means running a query, not only booting the app or opening a connection. The failures we saw appeared when using the ORM, not on first connection.</li>\n   <li><strong>Budget for supply-chain debugging.</strong> The hard part is not turning on FIPS mode. The hard part is making sure all the moving parts actually respect it. Expect to spend time tracing crypto usage through your dependency graph.</li>\n  </ul>\n  <h2 class=\"wp-block-heading\" id=\"why-this-matters-beyond-government-contracts\"><strong>Why this matters beyond government contracts</strong></h2>\n  <p>FIPS compliance has traditionally been seen as a checkbox for federal sales. That is changing. As supply chain security becomes a board-level concern across industries, validated cryptography is moving from “nice to have” to “expected.” The skills teams build solving FIPS problems today translate directly to broader supply chain security challenges.</p>\n  <p>Think about what you learn when you debug a FIPS failure. You learn to trace crypto usage through your dependency graph, to question prebuilt artifacts, to verify that your security boundaries are actually enforced at runtime. Those skills matter whether you are chasing a FedRAMP certification or just trying to answer your CISO’s questions about software provenance.</p>\n  <h2 class=\"wp-block-heading\" id=\"the-opportunity-in-the-complexity\"><strong>The opportunity in the complexity</strong></h2>\n  <p>FIPS is not “just a switch” you flip in a base image. View FIPS instead as a new layer of complexity that you might have to debug across your dependency graph. That can sound like bad news, but switch the framing and it becomes an opportunity to get ahead of where the industry is going.</p>\n  <p>The ecosystem will adapt and the tooling will improve. The teams investing in understanding these problems now will be the ones who can move fastest when FIPS or something like it becomes table stakes.</p>\n  <p>If you are planning a FIPS rollout, start by controlling the prebuilt native artifacts that quietly bypass the crypto module you thought you were using. Recognize that every problem you solve is building institutional knowledge that compounds over time. This is not just compliance work. It is an investment in your team’s security engineering capability.</p>\n  <p></p>\n </body>\n</html>",
+  "aiSummary": "本文探讨了容器化环境中 FIPS 合规性的隐藏复杂性，特别是预构建的原生依赖项如何静默绕过加密边界。",
+  "oneSentenceSummary": "本文探讨了容器化环境中 FIPS 合规性的隐藏复杂性，特别是预构建的原生依赖项如何静默绕过加密边界。",
+  "summary": "文章探讨了软件供应链安全中的一个关键挑战：如何在容器镜像中实现 FIPS 合规。虽然基础镜像可能已正确配置 FIPS，但预构建的原生二进制文件（如 Ruby gems 或数据库驱动程序）通常会捆绑其自身不合规的加密库，或链接到不兼容的 OpenSSL 版本。通过对 Rails 应用程序和 'pg' gem 的案例研究，作者证明了这些问题通常只在特定的执行路径中才会显现。解决方案包括在受控环境中强制从源代码进行本地编译，以确保与系统的 FIPS 验证 OpenSSL 链接。文章得出结论，FIPS 不是一个简单的“开关”，而是一个复杂的工程挑战，需要严格的依赖管理和测试。",
+  "mainPoints": [
+    {
+      "point": "正确的基础镜像配置并不能保证整个应用栈的 FIPS 合规性。",
+      "explanation": "现代软件依赖于复杂的依赖网络，其中预构建的原生制品可能携带自己的静态或动态加密链接，从而绕过宿主机的 FIPS 验证模块。"
+    },
+    {
+      "point": "预构建二进制文件是容器化环境中“静默” FIPS 失败的主要来源。",
+      "explanation": "在构建期间下载的制品通常会对环境做出假设，链接到非 FIPS 库或嵌入忽略系统安全策略的加密代码。"
+    },
+    {
+      "point": "强制从源码编译是强制执行加密边界最可靠的方法。",
+      "explanation": "通过使用类似 'force_ruby_platform' 的标志，开发人员可以确保原生扩展是针对受控构建阶段中存在的特定 FIPS 启用库进行构建的。"
+    },
+    {
+      "point": "FIPS 测试必须运行真实的业务代码路径，而不仅仅是简单的连通性检查。",
+      "explanation": "加密错误在基础初始化期间可能保持休眠状态，只有当特定的库函数或 ORM 特性触发依赖项二进制文件的不同部分时才会显现。"
+    }
+  ],
+  "keyQuotes": [
+    "基础镜像层的正确性并不能保证整个生态系统的兼容性。",
+    "你的容器镜像可以为 FIPS 进行精心配置，但你的应用程序最终仍可能使用非 FIPS 加密，因为某个依赖项在运行过程中自带了加密库。",
+    "这是将严格的加密边界追溯应用到基于便利性和预编译制品构建的生态系统中的必然结果。",
+    "将预构建的原生依赖项视为可疑对象。如果一个依赖项包含已编译的代码，请假设它可能携带自己的加密链接，直到你验证并非如此。",
+    "FIPS 不仅仅是你在基础镜像中翻转的一个“开关”。相反，应将 FIPS 视为一层新的复杂性，你可能需要在整个依赖图中对其进行调试。"
+  ],
+  "tags": [
+    "FIPS 合规",
+    "Docker",
+    "供应链安全",
+    "依赖管理",
+    "OpenSSL"
+  ],
+  "topicTag": "devops",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1246,
+  "domain": "docker.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": null,
+  "sourceId": "SOURCE_8de690",
+  "sourceName": "Docker",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769061604000,
+  "publishDateStr": "01-22",
+  "publishDateTimeStr": "2026-01-22 06:00:04"
+}

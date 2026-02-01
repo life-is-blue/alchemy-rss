@@ -1,0 +1,63 @@
+{
+  "id": "RAW_bad85918",
+  "title": "美团发布 LongCat-Image 图像生成模型，编辑能力登顶开源 SOTA",
+  "url": "https://tech.meituan.com/2025/12/09/longcat-image-model.html",
+  "date": "2025-12-09 00:00:00",
+  "author": "作者: 美团技术团队",
+  "siteName": "美团技术团队",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content\">\n   <p>当前 AI 图像生成技术需求旺盛，但行业陷入 “两难困境”：闭源大模型性能强劲但无法自行部署或二次定制开发，开源方案普遍存在轻量化与模型性能难以兼顾、面向商用专项能力不足的痛点，制约商业创作与技术普惠。为此，美团 LongCat 团队正式发布并开源 LongCat-Image 模型，通过高性能模型架构设计、系统性的训练策略和数据工程，以6B参数规模，成功在文生图和图像编辑的核心能力维度上逼近更大尺寸模型效果，为开发者社区与产业界提供了 “高性能、低门槛、全开放” 的全新选择。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/91ca581eaf8a39ea4bbf9cbd88da8b90144837.jpg\" alt></p>\n   <h2 id=\"技术亮点\">技术亮点</h2>\n   <p>LongCat-Image 采用文生图与图像编辑同源的架构设计，并结合渐进式学习策略，在仅 6B 的紧凑参数规模下，实现了指令遵循精准度、生图质量与文字渲染能力的高效协同提升。尤其在<strong>单图编辑的可控性和文字生成的汉字覆盖度</strong>方面独具优势。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/8afb1cda0519f373147d9a23562ec386640369.png\" alt=\"模型架构\"></p>\n   <h3 id=\"亮点一-图像编辑高度可控\">亮点一：图像编辑高度可控</h3>\n   <p><strong>LongCat-Image 在图像编辑领域的多个重要基准测试中（如GEdit-Bench、ImgEdit-Bench）均达到开源SOTA水平</strong>，实现性能突破的背后在于一套紧密协同的训练范式和数据策略。为有效继承文生图模型的知识和美感，同时避免文生图后训练阶段收窄的状态空间对编辑指令多样性的限制，基于文生图Mid-training阶段模型进行初始化，并采用指令编辑与文生图多任务联合学习机制，深化对复杂多样化指令的理解。此外通过预训练阶段的多源数据及指令改写策略，以及SFT阶段引入人工精标数据，最终实现了指令遵循精准度、泛化性和编辑前后视觉一致性的共同提升。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/a13533c16a61cbcc319db55dc3e40aeb1693080.png\" alt=\"风格迁移与属性编辑能力对比\"></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/0e92857bebe0b1fc616308899902f6aa1736627.png\" alt></p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/1c092aadc8bfe7c1da70f23f2c334a633324881.png\" alt=\"结构编辑与构图编辑的能力对比\"></p>\n   <h3 id=\"亮点二-中文文字生成精准覆盖\">亮点二：中文文字生成精准覆盖</h3>\n   <p>针对中文文本渲染这一行业痛点，<strong>LongCat-Image 通过课程学习策略来提升字符覆盖度和渲染精准度</strong>：预训练阶段基于千万量级合成数据学习字形，覆盖通用规范汉字表的8105个汉字；SFT 阶段引入真实世界文本图像数据，提升在字体、排版布局上的泛化能力；RL 阶段融入 OCR 与美学双奖励模型，进一步提升文本准确性与背景融合自然度。此外通过对 prompt 中指定渲染的文本采用字符级编码，大幅降低模型记忆负担，实现文字生成学习效率的跨越式提升。通过该项能力加持，<strong>有效支持海报设计、商业广告作图场景中复杂笔画结构汉字的渲染，以及古诗词插图、对联、门店招牌、文字Logo等设计场景的生僻字渲染</strong>。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/b35d61f1c3cbc785500fb7382ccdf2151706161.png\" alt></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/3cd37c80d212ab0daf63860bc98a8bee2471720.png\" alt=\"文字生成能力对比\"></p>\n   <p>此外，LongCat-Image通过系统性的数据筛选与对抗训练框架，实现了出图纹理细节和真实感的提升。预训练和中期训练阶段严格过滤AIGC数据，避免陷入“塑料感”纹理的局部最优；在SFT阶段，所有数据均经过人工精筛来对齐大众审美；在RL阶段，创新性地<strong>引入AIGC内容检测器作为奖励模型，利用其对抗信号逆向引导模型学习真实世界的物理纹理、光影和质感。</strong></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/3c80e5421b36e095198623796db40b642389851.png\" alt=\"图像生成综合能力对比\"></p>\n   <h2 id=\"性能验证\">性能验证</h2>\n   <h3 id=\"客观基准评测\">客观基准评测</h3>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/2bb68a331e9579314dcf8c7099bc1f9a362654.png\" alt=\"客观基准测试性能对比\"></p>\n   <p>全面的客观基准测试充分验证了 LongCat-Image 的核心竞争力：图像编辑任务中，ImgEdit-Bench（4.50分）、 GEdit-Bench 中英文得分（7.<sup>60</sup>⁄<sub>7</sub>.64分）分别达到开源SOTA水平，且逼近头部闭源模型水平；文字渲染方面，ChineseWord 评测以 90.7 分的成绩大幅领先所有参评模型，实现常用字、生僻字的全量精准覆盖；文生图任务上，GenEval 0.87 分、DPG-Bench 86.8 分的表现，使其在生图基础能力上相比头部开源与闭源模型依然具备强竞争力。</p>\n   <h3 id=\"综合主观评测\">综合主观评测</h3>\n   <p>在衡量模型的通用能力时，我们始终将用户的真实体验放在首位。为此，我们采用业界公认的主观评价方法，对LongCat-Image在“文生图”与“图像编辑”两大核心场景下的表现进行了系统评估。</p>\n   <p>在文生图方面采用大规模的人工主观评分（MOS）方法，核心覆盖 文本-图像对齐、视觉合理度、视觉真实度、美学质量4个维度，LongCat-Image 的真实度相比主流开闭源模型表现出色，同时在文本-图像对齐与合理度上也达到开源SOTA水平。在图像编辑方面采用严格的并列对比评估（Side-by-Side, SBS）方法，聚焦于综合编辑质量、视觉一致性这两个用户体验的维度，评测结果表明，LongCat-Image 虽然与 Nano Banana、Seedream 4.0 等商业模型存在一定差距，但显著超越了其他开源方案。</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/b72f9085a16cbff1d00be9b3367320f5302353.png\" alt></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/11d7d7fd545933547e9fc7adf8c72fcc136689.png\" alt=\"人类主观评分（MOS）对比&amp; 并列对比评估胜率（SBS）\"></p>\n   <h2 id=\"开源开放\">开源开放</h2>\n   <p>为了构建一个更透明、开放、协作的开源生态系统，我们全面开源文生图的多阶段模型（Mid-training、Post-training）和图像编辑模型，旨在无缝支持从前沿研究到商业应用的全流程。我们坚信，真正的技术进步源于社区的集体智慧。诚邀广大开发者体验模型、参与共建，让我们共同基于这个高效能模型，探索视觉生成的更多可能。</p>\n   <p>🔗 资源链接：</p>\n   <p>| Hugging Face: <a href=\"https://huggingface.co/meituan-longcat/LongCat-Image\">https://huggingface.co/meituan-longcat/LongCat-Image</a></p>\n   <p>| GitHub: <a href=\"https://github.com/meituan-longcat/LongCat-Image\">https://github.com/meituan-longcat/LongCat-Image</a></p>\n   <h2 id=\"零门槛解锁-ai-创作新可能\">零门槛解锁 AI 创作新可能</h2>\n   <h3 id=\"longcat-app-一键生成专业级图像\">LongCat APP：一键生成专业级图像</h3>\n   <p>继文生图功能上线后，「LongCat APP」全新升级图生图能力！上传任意素材（风景照、自拍照、草稿线稿均可），模型将精准捕捉核心元素，按需求生成全新图像。同步上线 24 个零门槛图片玩法模板，涵盖海报设计、人像精修、场景改造等多重场景，点击 “AI 创作” 直接套用，彻底告别 “提示词焦虑”，小白也能快速产出专业级作品。</p>\n   <h3 id=\"longcat-ai-网页端高效创作入口\">LongCat.ai：网页端高效创作入口</h3>\n   <p>进入<a href=\"https://longcat.ai/\">https://longcat.ai/</a>点击「图片生成」，可上传参考图、自由调整比例、选择心仪风格，无需复杂配置即可快速获得高质量生成结果。无论是商业设计初稿、社交媒体素材，还是个性化创意创作，都能高效完成。</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/70cfaf95cc301239607d80e1f7be24682617965.png\" alt></p>\n   <p>扫描下方二维码即可体验 Web 端及下载 LongCat APP 安卓版本（iOS 用户可直接在 APP Store 中搜索“LongCat”）</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/13abc9a9c11683b58658337a8bdab10984181.jpg\" alt></p>\n   <p>快翻出相册里压箱底的素材，即刻使用 LongCat-Image 解锁图片创作的无限可能～</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美团发布并开源了 6B 参数的 LongCat-Image 图像生成模型，该模型在文生图和图像编辑特别是中文文字渲染方面达到开源 SOTA 水平，为商业创作和技术普惠提供高性能、低门槛的解决方案。",
+  "oneSentenceSummary": "美团发布并开源了 6B 参数的 LongCat-Image 图像生成模型，该模型在文生图和图像编辑特别是中文文字渲染方面达到开源 SOTA 水平，为商业创作和技术普惠提供高性能、低门槛的解决方案。",
+  "summary": "美团 LongCat 团队发布并开源了 LongCat-Image 图像生成模型，旨在解决 AI 图像生成领域闭源模型性能强但难以定制，开源模型性能与轻量化难以兼顾的行业痛点。该模型采用 6B 参数规模，通过高性能架构、系统训练策略和数据工程，在文生图和图像编辑核心能力上逼近更大尺寸模型。其技术亮点包括在单图编辑可控性方面达到开源 SOTA，以及在中文文字生成方面实现精准覆盖和高效学习。模型通过客观基准测试和主观评测验证了其卓越性能，尤其在中文文字渲染和图像编辑方面表现突出。美团还提供了 LongCat App 和 LongCat.ai 网页端，降低用户 AI 创作门槛。LongCat-Image 的开源旨在促进社区协作，推动视觉生成技术发展。",
+  "mainPoints": [
+    {
+      "point": "LongCat-Image 模型以 6B 参数规模实现高性能图像生成和编辑",
+      "explanation": "通过优化的模型架构、训练策略和数据工程，使模型在轻量化的同时，在文生图和图像编辑能力上逼近甚至超越更大尺寸闭源模型，解决了开源方案的性能和轻量化兼顾难题。"
+    },
+    {
+      "point": "图像编辑能力达到开源 SOTA，尤其在可控性方面表现突出",
+      "explanation": "模型在 GEdit-Bench、ImgEdit-Bench 等基准测试中取得 SOTA 成绩，通过联合学习机制、多源数据和精标数据，提升了指令遵循精准度、泛化性和视觉一致性，能进行复杂的风格迁移、属性和结构编辑。"
+    },
+    {
+      "point": "解决了中文文字生成这一行业痛点，实现精准覆盖和高效渲染",
+      "explanation": "采用课程学习策略和字符级编码，大幅提升了模型的中文汉字覆盖率（8105 个汉字）和渲染精准度，有效支持海报、广告、古诗词、招牌等场景的复杂中文文本生成。"
+    },
+    {
+      "point": "通过数据筛选和对抗训练提升图像真实感与纹理细节",
+      "explanation": "在预训练、SFT 和 RL 阶段严格过滤 AIGC 数据，引入 AIGC 内容检测器作为奖励模型，引导模型学习真实世界的物理纹理、光影和质感，解决了 AIGC 常见的“塑料感”问题。"
+    },
+    {
+      "point": "模型全面开源，并提供易用的应用端工具以降低 AI 创作门槛",
+      "explanation": "美团开源了 LongCat-Image 的多阶段模型，并推出了 LongCat APP 和 LongCat.ai 网页端，提供丰富模板和便捷操作，赋能开发者和普通用户进行高效 AI 图像创作。"
+    }
+  ],
+  "keyQuotes": [
+    "美团 LongCat 团队正式发布并开源 LongCat-Image 模型，通过高性能模型架构设计、系统性的训练策略和数据工程，以 6B 参数规模，成功在文生图和图像编辑的核心能力维度上逼近更大尺寸模型效果，为开发者社区与产业界提供了 \"高性能、低门槛、全开放\" 的全新选择。",
+    "LongCat-Image 通过课程学习策略来提升字符覆盖度和渲染精准度：预训练阶段基于千万量级合成数据学习字形，覆盖通用规范汉字表的 8105 个汉字；SFT 阶段引入真实世界文本图像数据，提升在字体、排版布局上的泛化能力；RL 阶段融入 OCR 与美学双奖励模型，进一步提升文本准确性与背景融合自然度。",
+    "在图像编辑任务中，ImgEdit-Bench（4.50 分）、 GEdit-Bench 中英文得分（7.60/7.64 分）分别达到开源 SOTA 水平，且逼近头部闭源模型水平；文字渲染方面，ChineseWord 评测以 90.7 分的成绩大幅领先所有参评模型，实现常用字、生僻字的全量精准覆盖。",
+    "我们全面开源文生图的多阶段模型（Mid-training、Post-training）和图像编辑模型，旨在无缝支持从前沿研究到商业应用的全流程。我们坚信，真正的技术进步源于社区的集体智慧。",
+    "同步上线 24 个零门槛图片玩法模板，涵盖海报设计、人像精修、场景改造等多重场景，点击 \"AI 创作\" 直接套用，彻底告别 \"提示词焦虑\"，小白也能快速产出专业级作品。"
+  ],
+  "tags": [
+    "图像生成",
+    "美团",
+    "LongCat-Image",
+    "图像编辑",
+    "中文文字渲染"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 92,
+  "wordCount": 2174,
+  "domain": "tech.meituan.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f18ad4",
+  "sourceName": "美团技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765238400000,
+  "publishDateStr": "2025-12-09",
+  "publishDateTimeStr": "2025-12-09 00:00:00"
+}

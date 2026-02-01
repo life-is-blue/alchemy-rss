@@ -1,0 +1,54 @@
+{
+  "id": "RAW_84f97f",
+  "title": "Instacart 将搜索基础设施统一到 PostgreSQL 上，逐步淘汰 Elasticsearch",
+  "url": "https://www.infoq.com/news/2025/08/instacart-elasticsearch-postgres/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-25 17:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Instacart has<a href=\"https://tech.instacart.com/how-instacart-built-a-modern-search-infrastructure-on-postgres-c528fa601d54\"> redesigned its search infrastructure by replacing Elasticsearch with PostgreSQL</a>, combining keyword and embedding-based retrieval in a single system. By consolidating catalog and search data into Postgres, the company aimed to simplify operations, reduce synchronization overhead, and improve precision and recall in search results.</p>\n   <p>A key part of the redesign was improving how results are retrieved. Traditional keyword search excels at matching exact product attributes, for example, a query like <em>\"pesto pasta sauce 8oz\"</em> benefits from precise lexical matching. But broader intent-driven queries, such as <em>\"healthy foods\"</em>, are better handled through semantic retrieval, which understands relationships between terms and concepts. By combining both approaches in Postgres, Instacart can balance precision (returning only relevant results) with recall (capturing as many relevant items as possible), ensuring that customers see both the exact products they’re looking for and meaningful options for discovery.</p>\n   <p>According to the Instacart engineering team, the migration improved development velocity by removing the need to reconcile data between systems. The hybrid infrastructure also provided greater flexibility in handling dynamic inventory and complex user preferences, enabling the platform to process millions of search requests daily. Real-time updates to prices, availability, and discounts are reflected instantly, supporting a more efficient and personalized shopping experience for customers.</p>\n   <p>As <a href=\"https://www.linkedin.com/in/ankitml/\">Ankit Mittal</a>, an engineer at Instacart, remarked:</p>\n   <blockquote>\n    <p>A normalized data model allowed us to achieve a 10x reduction in write workload compared to the denormalized data model we used in Elasticsearch. This resulted in nearly 80% savings on storage and indexing costs, reduced dead-end searches, and improved the overall customer experience.</p>\n   </blockquote>\n   <p>Previously, Elasticsearch handled full-text queries while transactional data was stored in Postgres. Maintaining two separate databases introduced synchronization challenges and higher operational costs. To add semantic search capabilities, the team initially implemented<a href=\"https://github.com/facebookresearch/faiss\"> FAISS</a> before transitioning to a hybrid model using the<a href=\"https://github.com/pgvector/pgvector\"> pgvector</a> extension in Postgres. This approach allows both lexical and embedding-based retrieval to run in a single system, reducing data duplication and complexity.</p>\n   <p id=\"gdcalert1\"><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/08/instacart-elasticsearch-postgres/news/2025/08/instacart-elasticsearch-postgres/en/resources/2previousarchitecture-1756072485575.png\" style=\"width: 669px; height: 800px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/instacart-elasticsearch-postgres/en/resources/2previousarchitecture-1756072485575.png\" rel=\"share\"></p>\n   <p><em>Previous retrieval architecture with FAISS and Postgres (Source<strong>:<a href=\"https://tech.instacart.com/how-instacart-built-a-modern-search-infrastructure-on-postgres-c528fa601d54\"> Instacart Engineering Blog</a></strong>)</em></p>\n   <p>The redesigned architecture uses sharded Postgres instances with a normalized data model to scale horizontally. Each shard contains catalog and search indexes, and queries are routed through a service layer to the appropriate shard. According to Instacart engineers, leveraging Postgres <a href=\"https://www.postgresql.org/docs/current/gin.html\">GIN</a> indexes and a modified <a href=\"https://www.postgresql.org/docs/current/textsearch-controls.html#TEXTSEARCH-RANKING\">ts_rank</a> function achieved high-performance text matching, while the relational model allowed ML features and model coefficients to be stored in separate tables. Normalization reduced write workloads by tenfold compared to Elasticsearch, cutting storage and indexing costs, while supporting hundreds of gigabytes of ML feature data for more advanced retrieval models.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/08/instacart-elasticsearch-postgres/news/2025/08/instacart-elasticsearch-postgres/en/resources/2currenthybridarch-1756072485575.png\" style=\"width: 632px; height: 800px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/instacart-elasticsearch-postgres/en/resources/2currenthybridarch-1756072485575.png\" rel=\"share\"></p>\n   <p><em>Hybrid retrieval architecture with pgvector and Postgres (Source<strong>:<a href=\"https://tech.instacart.com/how-instacart-built-a-modern-search-infrastructure-on-postgres-c528fa601d54\"> Instacart Engineering Blog</a></strong>)</em></p>\n   <p>Postgres extensions were central to the redesign. Features such as <a href=\"https://www.postgresql.org/docs/current/pgtrgm.html\">pg_trgm</a> for trigram-based text search and <a href=\"https://github.com/pgvector/pgvector\">pgvector</a> for embedding-based search allow the database to handle both traditional keyword and semantic search. Queries pass through a routing layer to shards containing the necessary indexes, returning results efficiently without cross-system synchronization.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Instacart Consolidates Search Infrastructure on Postgresql, Phasing Out Elasticsearch\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/instacart-elasticsearch-postgres/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756141200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Instacart 将其搜索基础设施从 Elasticsearch 整合到一个分片的 PostgreSQL 系统，集成了混合关键词和基于嵌入的检索，以简化操作、降低成本并提升搜索性能。",
+  "oneSentenceSummary": "Instacart 将其搜索基础设施从 Elasticsearch 整合到一个分片的 PostgreSQL 系统，集成了混合关键词和基于嵌入的检索，以简化操作、降低成本并提升搜索性能。",
+  "summary": "Instacart 通过从双系统设置（Elasticsearch 用于全文搜索，PostgreSQL 用于事务数据）迁移到统一的分片 PostgreSQL 环境，成功地重新设计了其搜索基础设施。这项战略整合旨在简化操作，消除数据同步挑战，并显著降低运营成本。其核心创新在于将传统的基于关键词的搜索和现代的基于嵌入的语义检索直接集成到 PostgreSQL 中，利用诸如 `pgvector` 进行向量搜索、`GIN` 索引进行高性能文本匹配以及 `pg_trgm` 进行基于 trigram 的文本搜索等扩展。这种混合方法使 Instacart 能够有效地平衡精确性和召回率。它既能满足精确的产品查询，也能满足更广泛的意图驱动搜索。此次迁移带来了显著的效益，包括写入工作负载减少 10 倍，存储和索引成本节省 80%，开发速度提高，以及增强了实时库存更新和复杂用户偏好的灵活性。这种统一的架构有效地支持了数百万次的每日搜索请求，在展示 PostgreSQL 在大规模复杂搜索需求方面的多功能性的同时，提供了更高效和个性化的购物体验。",
+  "mainPoints": [
+    {
+      "point": "Instacart 将其搜索基础设施从双数据库设置迁移到统一的分片 PostgreSQL 系统。",
+      "explanation": "此次整合解决了之前诸如数据同步和高运营成本等挑战，将整个搜索管道简化为单个、可扩展的数据库。"
+    },
+    {
+      "point": "新的架构在 PostgreSQL 中集成了关键词（词汇）和语义（基于嵌入）的搜索能力。",
+      "explanation": "通过利用诸如 `pgvector` 和 `GIN` 索引等扩展，Instacart 可以处理各种查询类型，从而提高特定搜索的精确性和意图驱动发现的召回率。"
+    },
+    {
+      "point": "此次迁移产生了显著的运营和成本效益，包括存储和索引成本降低 80%。",
+      "explanation": "PostgreSQL 中规范化的数据模型大幅减少了写入工作负载，并允许更灵活地处理动态数据。这直接改善了客户体验和开发速度。"
+    }
+  ],
+  "keyQuotes": [
+    "与我们在 Elasticsearch 中使用的非规范化数据模型相比，规范化的数据模型使我们的写入工作负载减少了 10 倍。这使得存储和索引成本节省了近 80%，减少了无效搜索，并改善了整体客户体验。",
+    "通过将目录和搜索数据整合到 PostgreSQL 中，该公司旨在简化操作，减少同步开销，并提高搜索结果的精确性和召回率。",
+    "通过在 PostgreSQL 中结合这两种方法，Instacart 可以在精确性（仅返回相关结果）和召回率（捕获尽可能多的相关项目）之间取得平衡，确保客户既能看到他们正在寻找的确切产品，也能看到有意义的发现选项。",
+    "这种方法允许词汇和基于嵌入的检索在单个系统中运行，从而减少数据重复和复杂性。"
+  ],
+  "tags": [
+    "搜索基础设施",
+    "PostgreSQL",
+    "Elasticsearch",
+    "数据库迁移",
+    "向量搜索"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 487,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756141200000,
+  "publishDateStr": "2025-08-25",
+  "publishDateTimeStr": "2025-08-25 17:00:00"
+}

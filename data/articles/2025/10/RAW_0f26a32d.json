@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0f26a32d",
+  "title": "simonw/claude-skills (Claude 技能揭秘)",
+  "url": "https://simonwillison.net/2025/Oct/10/claude-skills/#atom-everything",
+  "date": "2025-10-10 23:57:19",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://github.com/simonw/claude-skills\">simonw/claude-skills</a></strong>. One of the tips I picked up from <a href=\"\">Jesse Vincent's Claude Code Superpowers post</a> (<a href=\"https://simonwillison.net/2025/Oct/10/superpowers/\">previously</a>) was this:</p>\n   <blockquote>\n    <p>Skills are what give your agents Superpowers.</p>\n    <p>The first time they really popped up on my radar was a few weeks ago when Anthropic rolled out improved Office document creation. When the feature rolled out, I went poking around a bit -- I asked Claude to tell me all about its new skills. And it was <a href=\"https://claude.ai/share/0fe5a9c0-4e5a-42a1-9df7-c5b7636dad92\">only too happy to dish</a>.</p>\n   </blockquote>\n   <p>In that transcript Jesse asks how the skill system works and Claude replies:</p>\n   <blockquote>\n    <p>Looking at the skills system, here's how it works:</p>\n    <p><strong>Current Skills</strong> (in <code>/mnt/skills/public/</code>):</p>\n    <ul>\n     <li><strong>docx</strong> - Word document handling</li>\n     <li><strong>pdf</strong> - PDF processing and form filling</li>\n     <li><strong>pptx</strong> - PowerPoint presentations</li>\n     <li><strong>xlsx</strong> - Excel spreadsheets</li>\n    </ul>\n   </blockquote>\n   <p>This looks like it's part of Claude's brand new Code Interpreter feature! I <a href=\"https://simonwillison.net/2025/Sep/9/claude-code-interpreter/\">wrote about that extensively</a> last month, but I missed that there was a <code>/mnt/skills/public/</code> folder full of fascinating implementation details.</p>\n   <p>So I fired up a fresh Claude instance (fun fact: Code Interpreter also works in the Claude iOS app now, which it didn't when they first launched) and prompted:</p>\n   <blockquote>\n    <p><code>Create a zip file of everything in your /mnt/skills folder</code></p>\n   </blockquote>\n   <p>This worked, and gave me a <code>.zip</code> to download. You can <a href=\"https://claude.ai/new?q=Create%20a%20zip%20file%20of%20everything%20in%20your%20%2Fmnt%2Fskills%20folder\">run the prompt yourself here</a>, though you'll need to <a href=\"https://simonwillison.net/2025/Sep/9/claude-code-interpreter/#switching-it-on-in-settings-features\">enable the new feature first</a>.</p>\n   <p>I've pushed the contents of that zip to my <a href=\"https://github.com/simonw/claude-skills\">new simonw/claude-skills GitHub repo</a>.</p>\n   <p>So now you can see the prompts Anthropic wrote to enable the creation and manipulation of the following files in their Claude consumer applications:</p>\n   <ul>\n    <li><a href=\"https://github.com/simonw/claude-skills/blob/initial/mnt/skills/public/pdf/SKILL.md\">pdf</a> - PDF files</li>\n    <li><a href=\"https://github.com/simonw/claude-skills/blob/initial/mnt/skills/public/docx/SKILL.md\">docx</a> - Microsoft Word</li>\n    <li><a href=\"https://github.com/simonw/claude-skills/blob/initial/mnt/skills/public/pptx/SKILL.md\">pptx</a> - Microsoft PowerPoint decks</li>\n    <li><a href=\"https://github.com/simonw/claude-skills/blob/initial/mnt/skills/public/xlsx/SKILL.md\">xlsx</a> - Microsoft Excel</li>\n   </ul>\n   <p>In each case the prompts spell out detailed instructions for manipulating those file types using Python, using libraries that come pre-installed on Claude's containers.</p>\n   <p>Skills are more than just prompts though: the repository also includes dozens of pre-written Python scripts for performing common operations.</p>\n   <p><a href=\"https://github.com/simonw/claude-skills/blob/initial/mnt/skills/public/pdf/scripts/fill_fillable_fields.py\">pdf/scripts/fill_fillable_fields.py</a> for example is a custom CLI tool that uses <a href=\"https://pypi.org/project/pypdf/\">pypdf</a> to find and then fill in a bunch of PDF form fields, specified as JSON, then render out the resulting combined PDF.</p>\n   <p>This is a really sophisticated set of tools for document manipulation, and I love that Anthropic have made those visible - presumably deliberately - to users of Claude who know how to ask for them.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9048/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 通过从 Claude 的代码解释器功能中提取提示和 Python 脚本，揭示了 Claude 内部文档操作的能力。",
+  "oneSentenceSummary": "Simon Willison 通过从 Claude 的代码解释器功能中提取提示和 Python 脚本，揭示了 Claude 内部文档操作的能力。",
+  "summary": "本文详细介绍了 Simon Willison 对 Claude 精密的“技能”系统的发现，该系统使人工智能可以处理和操作各种文档类型，如 PDF、Word、Excel 和 PowerPoint 文件。受到 Jesse Vincent 观察的启发后，Willison 使用 Claude 的代码解释器功能来提取其 `/mnt/skills` 文件夹的内容。这项调查揭示了 Anthropic 用于实现这些操作的详细内部提示和预先编写的 Python 脚本。`simonw/claude-skills` 存储库公开展示了这些脚本，演示了如何利用 `pypdf` 等库来执行诸如填写 PDF 表单等复杂任务。Willison 赞扬了 Anthropic 的透明度，强调这些高级实现细节对于擅长探测系统的用户来说是可以访问的，从而为大语言模型工具的集成提供了宝贵的见解。",
+  "mainPoints": [
+    {
+      "point": "Claude 的文档操作“技能”由内部提示和预先编写的 Python 脚本提供支持。",
+      "explanation": "这揭示了一种复杂的方法。在这种方法中，大语言模型通过集成结构化工具的使用和代码执行来执行特定任务，从而将功能扩展到纯语言生成之外。"
+    },
+    {
+      "point": "这些底层实现细节可以通过 Claude 的代码解释器供用户发现和访问。",
+      "explanation": "这种透明性为高级人工智能功能的工程设计方式提供了宝贵的见解，从而促进了理解，并有可能激发新的开发方法，以将人工智能与外部工具集成。"
+    },
+    {
+      "point": "这些“技能”利用外部 Python 库（例如，`pypdf`）进行复杂的操作，从而展示了高级的工具协调。",
+      "explanation": "这突出了大语言模型如何利用专用库来协调代码执行以执行复杂的任务，从而从简单的 API 调用转向更复杂的多步骤过程。"
+    }
+  ],
+  "keyQuotes": [
+    "技能是赋予你的代理超能力的东西。",
+    "这看起来像是 Claude 全新的代码解释器功能的一部分！",
+    "我已经将该 zip 文件的内容推送到我的新 simonw/claude-skills (Claude 技能揭秘) GitHub 存储库中。",
+    "技能不仅仅是提示：该存储库还包括数十个用于执行常见操作的预先编写的 Python 脚本。",
+    "这是一套非常复杂的文档操作工具，我很高兴 Anthropic 已经将这些工具公开 - 可能是故意地 - 提供给知道如何向 Claude 询问它们的用户。"
+  ],
+  "tags": [
+    "Claude",
+    "代码解释器",
+    "大语言模型",
+    "工具使用",
+    "文档处理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 388,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760140639000,
+  "publishDateStr": "2025-10-10",
+  "publishDateTimeStr": "2025-10-10 23:57:19"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f5e96b",
+  "title": "Git 诞生 20 周年！大佬 Linus 十天写出的项目，彻底变革全球软件开发",
+  "url": "https://www.qbitai.com/2025/04/271845.html",
+  "date": "2025-04-08 06:43:47",
+  "author": "明敏",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"72\">明敏 发自 凹非寺</p>\n   <p data-track=\"73\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">转眼间<strong>Git诞生20周年</strong>了！</p>\n  <p>为了给Git庆生，如今鲜少公开露面的Linus罕见接受采访，更多幕后故事被更进一步展开。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fc0093a0-2ebd-4257-0d87-4b056aecda00/public\" alt=\"Git诞生20周年！大佬Linus十天写出的项目，彻底变革全球软件开发\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fc0093a0-2ebd-4257-0d87-4b056aecda00/public\">\n  </div>\n  <p>2005年4月7日，Linux之父Linus Torvalds，提交了Git的首个版本。</p>\n  <p data-track=\"5\">凭借开源、分布式、本地可控等特点，Git快速从一个小型的个人项目发展成为目前全球最广泛使用的版本控制系统。</p>\n  <p data-track=\"6\">后续随着GitHub、GitLab等平台共同推动，Git彻底改变了世界构建软件的方式，<strong>如今已经成为“开源的默认语言”</strong>。</p>\n  <p data-track=\"7\">在AI爆发的时代，Git也是AI开发不可或缺的一部分。几乎所有知名的AI库和模型都在GitHub上维护。</p>\n  <p data-track=\"8\"><strong>不过鲜为人知的是，这个影响全球的系统，最初版本的开发，仅用了10天时间——</strong></p>\n  <p data-track=\"9\">当时Linux社区使用的BitKeeper由于授权被取消，不再免费提供给开源社区。</p>\n  <p data-track=\"10\">于是，创建了Linux的传奇大佬Linus Torvalds再次出马，Git由此而来。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/175e88ab-33c3-4054-2cf7-789059005600/public\" alt=\"Git诞生20周年！大佬Linus十天写出的项目，彻底变革全球软件开发\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/175e88ab-33c3-4054-2cf7-789059005600/public\">\n  </div>\n  <p data-track=\"12\">对于Linus本人而言，“10天开发Git”这个传说其实有点夸张。</p>\n  <p data-track=\"13\"><strong>10天只是最后写代码的时间，构思Git最初的框架实际用了4个月。</strong></p>\n  <p data-track=\"14\">当时，Linux开发社区使用的商业软件BitKeeper在授权上出现了一些问题，将不再免费提供给开源社区使用。</p>\n  <p data-track=\"15\">为了解决自用问题，Linus开始想打造一个同类的工具。</p>\n  <p data-track=\"16\">实际上，想要复刻一个BitKeeper并不难，比如澳大利亚的Tridge基本是对BitKeeper的逆向，但这违反其规定。</p>\n  <p data-track=\"17\">从2004年底，Linus开始思考如何做出一个比BitKeeper更好、但实现方式不同的工具。</p>\n  <p data-track=\"18\"><strong>它最初的设计目标完全参考Linus个人的开发需求，专为处理Linux内核这样大规模项目设计。</strong></p>\n  <blockquote>\n   <p data-track=\"76\">我会做一些对我有用的东西，不关心其他人。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ebb37b42-9999-464c-93a1-c7b538c3d700/public\" alt=\"Git诞生20周年！大佬Linus十天写出的项目，彻底变革全球软件开发\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ebb37b42-9999-464c-93a1-c7b538c3d700/public\">\n  </div>\n  <p data-track=\"20\">首个版本最核心关注点如下：</p>\n  <ul>\n   <li data-track=\"21\">性能至上</li>\n   <li data-track=\"22\">分布式架构</li>\n   <li data-track=\"23\">数据完整</li>\n  </ul>\n  <p data-track=\"24\">首先在性能上，Linus的一个目标是Git能在半分钟内应用大量补丁，50、100个那种。</p>\n  <p data-track=\"25\">他认为速度是生产力的关键。一方面，要确保常见操作几乎实时完成，另一方面如果操作是即时的，发现错误时就要立即看到结果并继续修复。</p>\n  <p data-track=\"26\">其次，它采用分布式架构。</p>\n  <blockquote>\n   <p data-track=\"77\">完全分布式的特性最终使得很多事情变得非常容易，这是Git与之前几乎所有SCM（源代码管理）的区别之一。</p>\n  </blockquote>\n  <p data-track=\"28\">在设计上，每个存储库都是相同且平等的，可以完全本地工作、不依赖网络连接，并简化了项目分享和协作。</p>\n  <p data-track=\"29\">最后，Linus引入了SHA-1哈希用于检测数据损坏、确保内容可靠性。</p>\n  <blockquote>\n   <p data-track=\"79\">尽管人们觉得使用SHA-1哈希是一个巨大的错误，但是对我来说，SHA-1哈希从来都不是关于安全性，而是被用于发现数据损坏的。</p>\n  </blockquote>\n  <p data-track=\"31\">正是这两三个核心设计理念，促成了Git的诞生，也解释了为什么Git的底层实际上相当简单。</p>\n  <blockquote>\n   <p data-track=\"80\">我把它比作Unix。Unix的一个核心理念就是：一切都是一个过程、一切都是一个文件，you pipe things。</p>\n  </blockquote>\n  <p data-track=\"33\">而在执行方面，Linus的做法也很值得大家参考：</p>\n  <blockquote>\n   <p data-track=\"81\">最初阶段有一个清晰的想法，先不管之后是否能具体实现。</p>\n  </blockquote>\n  <p data-track=\"35\"><strong>Git的首个版本，只有大约一万行代码，“甚至可以一口气读完”</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/61d5f8f7-3ca9-461b-fc3c-83284d85d900/public\" alt=\"Git诞生20周年！大佬Linus十天写出的项目，彻底变革全球软件开发\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/61d5f8f7-3ca9-461b-fc3c-83284d85d900/public\">\n  </div>\n  <p data-track=\"36\">最初几年，Git也面临一些体验上的争议。它一开始仅仅是plumbing，根本没有用户界面。需要手动运行commit-tree命令、手动将生成的SHA-1哈希写入head文件、没有git commit这样用户友好的命令。</p>\n  <p data-track=\"37\">毕竟Linus在最初设计时也没care这些使用体验方面的问题。</p>\n  <p data-track=\"38\">Junio Hamano是改善Git使用体验的核心人物。</p>\n  <p>在初版本发布4个月后，Linus就将项目转交给他维护。采访中Linus也表示，Junio的“品味”和长期奉献是Git能够成功的关键。</p>\n  <blockquote>\n   <p data-track=\"84\">我做Git完全是出于自己的原因。在这20年中，我只花了4个月时间在上面。真正的功劳属于Junio和所有其他参与Git的人，他们现在做的比我多得多。</p>\n  </blockquote>\n  <p data-track=\"41\">大概从2007年-2010年，Git逐渐获得越来越多人认可，特别是当时的新一代开发者，都会将Git作为首选工具。</p>\n  <p data-track=\"42\">Linus认为，让Git真正流行的关键原因是Ruby on Rails社区的采用。后面随着GitHub平台出现，进一步利用Ruby on Rails社区的用户基础、简化Git使用体验、添加社交属性，让Git的影响进一步扩大。</p>\n  <p data-track=\"43\">由此，Git从一个个人小众工具，逐步发展为影响全行业的核心范式。</p>\n  <p data-track=\"45\">最后，再来简单回顾下Linus Torvalds的传奇人生。</p>\n  <p data-track=\"46\">他1969年出生于芬兰，现在已经56岁了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b51cd53f-59ba-4eae-ca5d-16b674b33a00/public\" alt=\"Git诞生20周年！大佬Linus十天写出的项目，彻底变革全球软件开发\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b51cd53f-59ba-4eae-ca5d-16b674b33a00/public\">\n  </div>\n  <p data-track=\"47\">他一个人写出了两个改变世界的项目：Linux和Git。它们几乎影响了整个IT和软件产业的基础架构。</p>\n  <p data-track=\"48\">而且过程都非常相似：</p>\n  <p data-track=\"49\"><strong>不满于当前系统→自己手搓一个开源免费版本→不断扩展功能受到更多开发者关注→最终在全球产生广泛影响。</strong></p>\n  <p data-track=\"50\">1991年初，当时还是赫尔辛基大学学生的Linus开始对操作系统产生兴趣。他使用的是基于UNIX的Minix系统，但对其功能限制感到不满。他想要一个能够充分利用他的新Intel 386电脑的操作系统。</p>\n  <p data-track=\"51\">1991年8月25日，Linus在comp.os.minix新闻组发布了一条著名的消息：“我正在做一个（免费的）操作系统（只是个爱好，不会像GNU那样庞大专业）……”这被认为是Linux项目的正式诞生。</p>\n  <p data-track=\"52\">最初Linux只是一个终端模拟器，Linus用它来访问大学的UNIX服务器。随着时间推移，他不断扩展其功能，添加了文件系统支持和设备驱动程序。</p>\n  <p data-track=\"53\">关键转折点是Linus决定采用GNU通用公共许可证(GPL)发布Linux。这使得Linux成为一个真正的自由软件，允许任何人查看、修改和分发代码，只要他们同样以GPL方式分享修改。</p>\n  <p data-track=\"54\">1992年，Linux与GNU项目的工具结合，形成了完整的操作系统。这种结合有时被称为GNU/Linux。</p>\n  <p data-track=\"55\">随着互联网的普及，世界各地的开发者开始为Linux贡献代码。Linus采用了分散式开发模式，审核并整合来自全球的贡献。</p>\n  <p data-track=\"56\">从1994年开始，Linux版本0.95发布，商业公司如Red Hat开始围绕Linux创建商业产品和服务。</p>\n  <p data-track=\"57\">今天，Linux已成为互联网基础设施的核心，为大多数网站服务器、Android智能手机和超级计算机提供动力。尽管项目规模已经庞大，Linus仍然担任最终决策者，管理着Linux内核的开发方向。</p>\n  <p data-track=\"58\"><strong>不过，除了技术和项目风靡全球，Linus的臭脾气也是在技术圈广为人知。</strong></p>\n  <p data-track=\"59\">此前在有一次公开演讲中，因对NVIDIA拒绝为Linux提供良好驱动支持的态度表示不满，Linus直接对着摄像机竖起中指说：</p>\n  <blockquote>\n   <p class=\"syl-line-pure-english\" data-track=\"85\">NVIDIA，f**k you！</p>\n  </blockquote>\n  <p data-track=\"61\">这一幕如今也成为了技术界的经典场景。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7f96a905-cef1-4d01-1ac8-c742bfe6ed00/public\" alt=\"Git诞生20周年！大佬Linus十天写出的项目，彻底变革全球软件开发\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7f96a905-cef1-4d01-1ac8-c742bfe6ed00/public\">\n  </div>\n  <p data-track=\"62\">此外，他本人也相当毒舌。</p>\n  <p data-track=\"63\">看到不好的代码就直接在代码评审中开喷。</p>\n  <blockquote>\n   <p data-track=\"86\">这不仅是垃圾，而且是有史以来最蠢的垃圾。<br>\n     你的代码很烂，如果我是你，我就躲到角落里去哭，然后考虑转行。</p>\n  </blockquote>\n  <p data-track=\"65\">对C++颇有微词：C++是一种可怕的语言。它在设计上有着根本性的缺陷…那些宣称C++比C好十倍的人是在撒谎。</p>\n  <p data-track=\"66\">以及Git在俚语中的意思是“讨厌鬼”。</p>\n  <p data-track=\"67\">如此种种，非常多，就不列举了。</p>\n  <p data-track=\"68\">不过在2018年，Linus公开道歉，表示要洗心革面，调整自己的沟通方式。</p>\n  <p data-track=\"69\">所以近年来，他脾气愈加温和：仍旧直率但是明显减少了个人攻击和侮辱性语言。</p>\n  <p data-track=\"70\">好是好，就是大家能看的乐子也少了（bushi）。</p>\n  <p data-track=\"71\">参考链接：<br>\n    https://github.blog/open-source/git/git-turns-20-a-qa-with-linus-torvalds/</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文讲述了 Git 诞生 20 周年的故事，回顾了 Linus Torvalds 创建 Git 的初衷、过程，以及 Git 如何彻底变革全球软件开发，成为现代软件开发的基石。",
+  "oneSentenceSummary": "本文讲述了 Git 诞生 20 周年的故事，回顾了 Linus Torvalds 创建 Git 的初衷、过程，以及 Git 如何彻底变革全球软件开发，成为现代软件开发的基石。",
+  "summary": "本文以 Git 诞生 20 周年为契机，回顾了 Linus Torvalds 创建 Git 的背景和过程。最初因 Linux 社区使用的 BitKeeper 不再免费提供，Linus 用 10 天时间完成了 Git 的最初版本。Git 的设计目标是高性能、分布式架构和数据完整性，其完全分布式的特性极大地简化了项目分享和协作，促进了开源社区的发展。文章还介绍了 Junio Hamano 在改善 Git 用户体验方面的贡献，以及 GitHub 等平台对 Git 普及的推动作用。如今，Git 已成为 AI 开发不可或缺的一部分。同时，文章也回顾了 Linus Torvalds 的传奇人生，他以创新精神和开源理念深刻影响了软件产业。",
+  "mainPoints": [
+    {
+      "point": "Git 最初的设计目标是高性能、分布式和数据完整性",
+      "explanation": "Linus Torvalds 在设计 Git 时，优先考虑性能，采用分布式架构，并使用 SHA-1 哈希确保数据完整性。"
+    },
+    {
+      "point": "Git 的成功离不开 Junio Hamano 等贡献者的持续改进和 GitHub 等平台的推动",
+      "explanation": "Junio Hamano 改善了 Git 的用户体验，GitHub 等平台简化了 Git 的使用，并添加了社交属性，进一步扩大了 Git 的影响力。"
+    },
+    {
+      "point": "Linus Torvalds 的创新精神和开源理念，通过 Linux 和 Git 两大项目，深刻影响了软件产业",
+      "explanation": "Linus Torvalds 通过创建 Linux 和 Git，改变了软件开发的方式，推动了开源运动的发展。"
+    }
+  ],
+  "keyQuotes": [
+    "完全分布式的特性最终使得很多事情变得非常容易，这是 Git 与之前几乎所有 SCM（源代码管理）的区别之一。",
+    "尽管人们觉得使用 SHA-1 哈希是一个巨大的错误，但是对我来说，SHA-1 哈希从来都不是关于安全性，而是被用于发现数据损坏的。",
+    "我会做一些对我有用的东西，不关心其他人。",
+    "最初阶段有一个清晰的想法，先不管之后是否能具体实现。"
+  ],
+  "tags": [
+    "Git",
+    "版本控制系统",
+    "版本控制",
+    "开发者工具",
+    "Linus Torvalds"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 89,
+  "wordCount": 2898,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1744094627000,
+  "publishDateStr": "2025-04-08",
+  "publishDateTimeStr": "2025-04-08 06:43:47"
+}

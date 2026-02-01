@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d6312d27",
+  "title": "Claude Opus 4.5 炸场：编程碾压人类考生，还学会“钻空子”解决问题",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247492095&idx=1&sn=8dde92fa54902396cd13298bf855d5a9",
+  "date": "2025-11-25 04:13:49",
+  "author": "乌鸦智能说",
+  "siteName": "乌鸦智能说",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"background-color: inherit; font-size: 1rem;\">Anthropic周一推出其旗舰AI模型的最新版本Claude Opus 4.5，称该模型在软件工程方面比以往版本更强，能更好地执行自动化编程和办公任务。</span></p>\n  <p>在自家高难度编程入职测试中，这个新模型得分超过了所有人类求职者。没错，在2小时的严格时限内，AI首次在纯技术能力上实现了对人类的超越。</p>\n  <p>【更聪明，还更省钱】除了能力跃升，Opus 4.5还带来一个惊喜：API价格仅为每百万token 25美元，直接降到前代的三分之一。</p>\n  <p>更妙的是，它引入了“努力程度”控制。开发者现在可以根据任务需求，在速度、成本和性能间自由调节：</p>\n  <p>中等努力：在SWE-bench Verified榜单上达到Sonnet 4.5的最高分，但输出token减少76%</p>\n  <p>最高努力：性能超出Sonnet 4.5达4.3个百分点，token消耗仍减少48%</p>\n  <p>这意味着，用更少的钱，能办更多的事。</p>\n  <p>【AI学会“钻空子”】</p>\n  <p>在测试AI自主解决问题能力的τ-bench中，Opus 4.5展现出了令人惊讶的“变通”能力。</p>\n  <p>测试场景是：作为航空公司客服，帮助一位焦虑的客户修改不可退改的基础经济舱机票。大多数模型会选择直接拒绝，但Opus 4.5找到了一条合规路径：先帮客户升舱，然后再修改航班。</p>\n  <p>【三大新功能：让AI像人类一样灵活用工具】</p>\n  <p>1. 工具搜索：随用随取，不占内存</p>\n  <p>以前AI工具越多，“说明书”越占内存，连5个服务器就能占5.5万字空间。现在AI一开始只带个“搜索功能”（仅500字），需要时再按关键词查找工具，内存占用从7.7万降至8.7万，省下85%内存的同时保留95%可用空间。</p>\n  <p>2. 程序化调用：写脚本批量操作</p>\n  <p>传统方式中，AI查10MB日志或2000条记录时，所有数据都会塞爆“短期记忆”。现在AI学会了自己写Python脚本在沙箱中运行。比如查“谁超了差旅预算”，AI不再需要记住2000条数据，而是直接输出的最终结果。</p>\n  <p>3. 使用示例：看样学样，避免用错</p>\n  <p>工具说明书只告诉AI“格式要对”，但没教具体怎么用。现在直接在说明书里加入3-5个真实例子，复杂参数的正确率从72%提升到90%。</p>\n  <p>这三个功能最好搭配使用：工具多时先用搜索，数据量大时用程序化调用，参数复杂时加使用示例。如此，AI就能从“一次用一把扳手”进化成“智能指挥家”，轻松处理跨几十个工具、大数据量的真实工作。</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=9c364278&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHnzpIOFN1eH9SEjYuJWXRe7KgG6dic6DeJEgWZ3twZ1OxjHicIpkPFnmgQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=c967eb20&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHn5iaZ7kdS5iaNjhFqdLPdfFvicbBUJZktW5gY22uFKoibGtaNFq4XxA98XQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=f6c6ecf8&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHnDmbib7NGTCRJLiaMMIXbGMoVYyHaiaxDick8mfZkp1dhcLT1O7icO6aAQ4g%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=771e299a&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHn4cib8jDqicNEtW6jhxdcGciaWiaAoDXSiaVqsdr5AWEyic0ibjzAs9hicVTiarA%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=70d255ee&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHn3WV70Fyd46bM78lHb1shaIEUmKfoXhvfoXWBlwfffPjkYiaOL0ZQVWQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=6df740e2&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHnuqzzB0oQhyq55xcsvrjVSCCVxBVCEYo2ibactx3F7Mo0hW1icapG32CA%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=160a3b8d&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHnYhycwE21bBA9XnC9XBPDueGWrHfdicWXBDHb4FdnKqmaT9uDuFlB5Xw%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=883c8950&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F9VjWVBpa4sxCeia0vVY6MC6r9lt4RlJHnCmicwZERnwO35BQUImGBD812ibRvaShy940YlicvJpm5ibibD8oicNcaGq1g%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "Claude Opus 4.5 在编程和复杂任务处理上超越人类，并以更低成本和智能工具使用提升了 AI 的实用性和灵活性。",
+  "oneSentenceSummary": "Claude Opus 4.5 在编程和复杂任务处理上超越人类，并以更低成本和智能工具使用提升了 AI 的实用性和灵活性。",
+  "summary": "文章详细介绍了 Anthropic 最新旗舰 AI 模型 Claude Opus 4.5 的突破性进展。该模型在软件工程能力上表现卓越，编程入职测试得分首次超越人类求职者。同时，Opus 4.5 的 API 价格大幅降低，并引入了“努力程度”控制，允许开发者在速度、成本和性能间灵活调节，显著提升了成本效益。更引人注目的是，它通过工具搜索、程序化调用和使用示例三大创新功能，极大地增强了 AI 的工具使用能力，使其能像人类一样灵活变通地处理跨多个工具和大数据量的复杂任务，甚至学会了“钻空子”解决问题。",
+  "mainPoints": [
+    {
+      "point": "Claude Opus 4.5 在编程能力上超越人类，具备更强的自动化编程和办公任务执行能力",
+      "explanation": "在 Anthropic 高难度编程入职测试中，Opus 4.5 的得分首次超过所有人类求职者，标志着 AI 在纯技术能力上的重大突破，能更好地执行自动化编程和办公任务。"
+    },
+    {
+      "point": "模型 API 价格大幅降低并引入“努力程度”控制，提升了 AI 的成本效益和灵活性",
+      "explanation": "API 价格降至前代三分之一，且允许开发者根据任务需求调节速度、成本和性能，使得用更少的钱能办更多的事，极大优化了资源利用效率。"
+    },
+    {
+      "point": "Opus 4.5 通过三大新功能显著增强了 AI 的工具使用能力，使其更像人类智能体",
+      "explanation": "引入工具搜索减少内存占用，程序化调用处理大数据量，使用示例提升复杂参数正确率，使 AI 能智能协调处理跨几十个工具的真实工作。"
+    },
+    {
+      "point": "模型展现出“钻空子”的变通能力，能够灵活寻找合规路径解决复杂问题",
+      "explanation": "在客服场景中，Opus 4.5 能通过升舱再修改航班的策略解决不可退改机票问题，体现了其在自主解决问题上的高级智能和灵活性。"
+    }
+  ],
+  "keyQuotes": [
+    "在自家高难度编程入职测试中，这个新模型得分超过了所有人类求职者。",
+    "API 价格仅为每百万 token 25 美元，直接降到前代的三分之一。",
+    "Opus 4.5 展现出了令人惊讶的'变通'能力。",
+    "AI 就能从'一次用一把扳手'进化成'智能指挥家'，轻松处理跨几十个工具、大数据量的真实工作。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Anthropic",
+    "Claude Opus 4.5",
+    "AI 能力提升",
+    "编程能力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 943,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_05541f",
+  "sourceName": "乌鸦智能说",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764044029000,
+  "publishDateStr": "2025-11-25",
+  "publishDateTimeStr": "2025-11-25 04:13:49"
+}

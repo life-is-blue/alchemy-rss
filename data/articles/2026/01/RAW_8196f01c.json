@@ -1,0 +1,58 @@
+{
+  "id": "RAW_8196f01c",
+  "title": "MinIO GitHub 存储库的维护模式：开源对象存储的下一步是什么？",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270044&idx=3&sn=7ff7313c0778a81dee6f7ba4564bfbc9",
+  "date": "2026-01-04 04:47:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Renato Losio </span></p>\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 刘雅梦 </span></p>\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">策划 | 丁晓昀</span></p>\n   </div>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在一次有争议的许可证变更和从控制台中移除管理员功能之后，支持流行的开源对象存储服务器&nbsp;Minio&nbsp;的公司最近宣布该项目将进入维护模式。这一变化在社区引发了关于分叉的必要性、开源项目的挑战以及 Garage、SeaweedFS 和其他替代方案的可行性的讨论。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">根据 GitHub 公共存储库中的最新提交，MinIO 社区版将不再接受新功能、增强功能或拉取请求，关键的安全修复将根据具体情况进行评估。现有的问题和拉取请求将不会被积极审查，社区支持将继续在 Slack 上以尽力而为的方式进行，公司鼓励用户迁移到 Minio 企业版。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">MinIO 在十多年前启动，由于其与 Amazon S3 API 的完全兼容性而在开发人员中广受欢迎，这些 API 是对象存储的事实标准。开发人员可以使用现有的 S3 SDK、工具和库，轻松地从 AWS S3 或多云设置中迁移。与其他解决方案相比，包括 Ceph 和传统的 SAN/NAS，Minio 以其简单性而闻名，因为它作为一个单一的二进制文件运行，依赖性最小。此外，Minio 还集成了 Terraform、Spark、Kafka 和 Velero 等工具以及流行的 ML 框架。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">如今，MinIO 运行在许多 Kubernetes 集群、SaaS 平台和数据湖的背后，Aquila I 的软件工程师 Mangla Ram Choudhary 总结道：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">一个无声的 README 更新刚刚结束了 Minio 作为默认开源 S3 引擎的时代 (...) 没有公告。没有迁移指导。只是关闭了 (...) 问题的原因：不符合 SOC2/ISO/PCI/HIPAA 的安全性，存储层的架构风险，零社区贡献路径，被迫转向商业许可或迁移。这是一个重大的开源基础设施事件，而不仅仅是项目新闻。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">随着 MinIO 开源的终结，LinkedIn&nbsp;和&nbsp;Reddit&nbsp;上已经有许多关于替代方案和“现在谁将接管开源 S3 兼容存储的桂冠”的讨论。在“MinIO 之后的生活：社区洞察与迁移策略”这篇文章中，Rulauda 的高级 DevOps 工程师 Alexey Minin 强调了开源软件的一个常见问题：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">在 2025 年，“开源”是不够的。我们需要寻找开放治理。由基金会（CNCF、Apache、Linux Foundation）托管的项目不受这些干扰。单一供应商项目则不然。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">流行的对象存储替代品包括&nbsp;RustFS、SeaweedFS&nbsp;和&nbsp;Garage，其中 Garage 在 AGPLv3 许可下发布，而 SeaweedFS 和 RustFS 在 Apache 2.0 许可下发布。为了强调可持续发展和企业许可的重要性，用户 victormy 在&nbsp;Hacker News&nbsp;上评论道：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">非常感谢 MinIO、RustFS 和 Garage 的贡献。话虽如此，Minio 如此突然地关闭开源的大门无疑吓坏了社区。但老实说，对他们来说，这是公平的——开源项目最终需要一条盈利之路 (...) 随着 MinIO 实际上退出了 OSS 竞赛，我认为 RustFS 会领先。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">虽然 Garage 专注于成为小型、自托管、地理分布式部署的 S3 兼容对象存储，但 RustFS 则专注于数据湖、AI 和大数据工作负载的原始性能和优化。根据文档，RustFS 支持与 MinIO 和 Ceph 等其他 S3 兼容平台的迁移和共存。用 Go 编写的 SeaweedFS 是一个用于 blob、对象、文件和数据湖的分布式存储系统。Altinity 的首席执行官 Robert Hodges 提出了一个“开源之谜”并质疑：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">对于几乎所有主要的数据库类型，都有易于部署的开源构建，但没有 S3 兼容的对象存储。难道不应该有一个 S3 的 PostgreSQL 吗？</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">到目前为止，MinIO 社区版的分叉还没有获得关注。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><strong style=\"font-size: 16px;font-weight: bold;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/12/minio-s3-api-alternatives/\" target=\"_blank\">https://www.infoq.com/news/2025/12/minio-s3-api-alternatives/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "MinIO 开源项目进入维护模式引发社区对开源可持续性及替代方案（如 Garage、SeaweedFS、RustFS）的广泛讨论，并对未来 S3 兼容对象存储的发展提出思考。",
+  "oneSentenceSummary": "MinIO 开源项目进入维护模式引发社区对开源可持续性及替代方案（如 Garage、SeaweedFS、RustFS）的广泛讨论，并对未来 S3 兼容对象存储的发展提出思考。",
+  "summary": "文章重点探讨了流行开源对象存储服务器 MinIO 公司宣布其 GitHub 存储库进入维护模式的事件。这一决定引发了社区对 MinIO 许可证变更、移除管理员功能、开源项目可持续性以及替代方案的广泛讨论。MinIO 因其与 Amazon S3 API 的完全兼容性而受到开发人员的广泛欢迎，但其突然转变促使社区寻求 Garage、SeaweedFS 和 RustFS 等替代品。文章强调了开源项目在寻求盈利模式时的挑战，并指出由基金会托管的项目在治理上的优势。同时，文章也对非盈利性 S3 兼容对象存储的现状和未来发展提出了疑问。",
+  "mainPoints": [
+    {
+      "point": "MinIO 开源项目突然进入维护模式，引发社区强烈反响和对其未来走向的担忧。",
+      "explanation": "MinIO 公司未发布正式公告，仅通过 GitHub README 更新宣布社区版不再接受新功能，只处理关键安全修复，并鼓励用户迁移至企业版，这导致了社区对其商业决策和开源精神的质疑。"
+    },
+    {
+      "point": "开源项目的可持续性和治理模式成为讨论焦点，基金会托管模式被认为是更稳健的选择。",
+      "explanation": "文章引用专家观点，指出“开放治理”而非简单的“开源”是关键。由 CNCF、Apache 等基金会托管的项目因其开放的治理结构，能有效规避单一供应商决策带来的风险。"
+    },
+    {
+      "point": "社区积极寻求 MinIO 的替代方案，Garage、SeaweedFS 和 RustFS 等项目受到关注。",
+      "explanation": "随着 MinIO 退出开源竞争，市场需要新的 S3 兼容对象存储解决方案。Garage 专注于小型分布式部署，RustFS 侧重数据湖和大数据性能，SeaweedFS 则是通用的分布式存储系统，它们分别提供了不同侧重的功能以填补市场空白。"
+    },
+    {
+      "point": "开源盈利模式的挑战凸显，商业化与社区贡献之间的平衡是核心问题。",
+      "explanation": "文章承认开源项目最终需要盈利路径，这解释了 MinIO 走向商业化的动因，但也暴露出商业决策可能对社区造成的冲击，引发了对开源软件商业模式的深层思考。"
+    }
+  ],
+  "keyQuotes": [
+    "一个无声的 README 更新刚刚结束了 Minio 作为默认开源 S3 引擎的时代 (...) 没有公告。没有迁移指导。只是关闭了。",
+    "在 2025 年，'开源'是不够的。我们需要寻找开放治理。由基金会（CNCF、Apache、Linux Foundation）托管的项目不受这些干扰。单一供应商项目则不然。",
+    "非常感谢 MinIO、RustFS 和 Garage 的贡献。话虽如此，Minio 如此突然地关闭开源的大门无疑吓坏了社区。但老实说，对他们来说，这是公平的------开源项目最终需要一条盈利之路。",
+    "对于几乎所有主要的数据库类型，都有易于部署的开源构建，但没有 S3 兼容的对象存储。难道不应该有一个 S3 的 PostgreSQL 吗？"
+  ],
+  "tags": [
+    "MinIO",
+    "开源治理",
+    "对象存储",
+    "S3兼容",
+    "软件架构"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1169,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767502020000,
+  "publishDateStr": "01-04",
+  "publishDateTimeStr": "2026-01-04 04:47:00"
+}

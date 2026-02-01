@@ -1,0 +1,54 @@
+{
+  "id": "RAW_18665c",
+  "title": "重磅发布 | 复旦《大规模语言模型：从理论到实践（第 2 版）》全新升级，聚焦 AI 前沿 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-04-28-2",
+  "date": "2025-04-28 02:22:49",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>《大规模语言模型：从理论到实践（第2版）》<strong>是一本理论与实践并重的专业</strong><strong>技术书</strong><strong>，更是AI时代不可或缺的知识工具书。</strong><strong>任何人</strong><strong>都能在本书中找到属于自己的成长路径。</strong></p>\n  <section>\n   <img data-imgfileid=\"503483284\" data-ratio=\"0.7493333333333333\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7aaf8b48-1d0b-4e1b-75af-344973196800/public\" data-type=\"jpeg\" data-w=\"750\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/faff4610-de7b-4b32-a694-786939ddc216/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p data-pm-slice=\"0 0 []\">在人工智能浪潮席卷全球的今天，大语言模型正以前所未有的速度推动着科技进步和产业变革。从 ChatGPT 到各类行业应用，LLM 不仅重塑了人机交互的方式，更成为推动学术研究与产业创新的关键技术。</p>\n  <p>面对这一飞速演进的技术体系，如何系统理解其理论基础、掌握核心算法与工程实践，已成为每一位 AI 从业者、研究者、高校学子的必修课。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/38c4646f-5a5a-4f24-aa79-739f19c54000/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"999\" type=\"block\" data-imgfileid=\"503483285\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/4a60be1b-9cce-4094-bd9b-e99351a00b57/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>2023 年 9 月，复旦大学张奇、桂韬、郑锐、黄萱菁研究团队面向全球学术界与产业界正式发布了《大规模语言模型：从理论到实践》。短短两年，大语言模型在理论研究、预训练方法、后训练技术及解释性等方面取得了重要进展。业界对大语言模型的研究更加深入，逐渐揭示出许多与传统深度学习和自然语言处理范式不同的特点。例如，<strong>大语言模型仅需 60 条数据就能学习并展现出强大的问题回答能力，显示了其惊人的泛化性</strong>。然而，本书作者们也发现大语言模型存在一定的脆弱性。例如，<strong>在一个拥有 130 亿个参数的模型中，仅修改一个特定参数，就可能导致模型完全丧失生成有意义信息的能力。</strong></p>\n  <p>这些发现促使本书的作者<strong>「复旦大学 NLP 团队」张奇、桂韬、郑锐、黄萱菁</strong>几位老师<strong>对本书第 1 版进行大幅修订升级（增加内容超过 40%），系统整合 AI 领域最新研究成果与技术进展，为广大读者带来更前沿、更实用的知识体系与工程实践指导</strong>。无论你是渴望深入理解 LLM 原理的学者，还是希望将 AI 能力融入产品的工程师，亦或是对人工智能充满兴趣的学习者，这本书都将为你提供系统、权威且极具实操价值的知识指引。</p>\n  <p><strong>第二版核心升级</strong></p>\n  <section>\n   <strong>聚焦前沿技术</strong>\n  </section>\n  <section>\n   深度剖析 MoE（混合专家模型）、强化学习、多模态、智能体、RAG（检索增强生成）、效率优化等技术趋势，紧跟 AI 最新发展。\n  </section>\n  <section>\n   <strong>重构知识体系</strong>\n  </section>\n  <section>\n   覆盖预训练、微调、强化学习、应用开发、效率优化等全流程，体系更加完善，逻辑更清晰。\n  </section>\n  <section>\n   <strong>提升实践价值</strong>\n  </section>\n  <section>\n   新增逾 40% 的前沿研究成果与技术案例，增设工程实践指南与评估体系模块，助力理论落地。\n  </section>\n  <section>\n   <strong>扩展章节内容</strong>\n  </section>\n  <section>\n   新增多模态大语言模型、智能体、RAG、大模型效率优化等实用章节，并对指令微调和强化学习部分进行了大幅修改。\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b202822f-684d-479d-e288-5a77027bc200/public\" data-ratio=\"0.86875\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"800\" type=\"block\" data-imgfileid=\"503483301\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a9b05284-43e6-45b2-8449-a29c659f7f2c/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>本书架构</strong></p>\n  <p>围绕 <strong>LLM 理论基础、预训练、指令理解、大模型增强、大模型</strong>应用五大部分展开。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2cc3ca94-a8d8-48fd-1e0b-f1cdf2c67400/public\" data-ratio=\"1.14125\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"800\" type=\"block\" data-imgfileid=\"503483302\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/9f252171-e626-4251-b2e8-d3a38cfc5a4c/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>第 1 部分介绍<strong>大语言模型的基础理论</strong>：包括语言模型的定义、Transformer 结构、大语言模型框架、混合专家模型等内容，并以 LLaMA 使用的模型结构为例介绍代码实例。</p>\n  <p>第 2 部分介绍<strong>大语言模型的预训练，包括大语言模型预训练数据和分布式训练</strong>。该部分介绍了预训练需要使用的数据分布和数据预处理方法。除此之外，还介绍模型分布式训练中需要掌握的数据并行、流水线并行、张量并行及 ZeRO 系列优化方法。并以 DeepSpeed 为例介绍如何进行大语言模型预训练。</p>\n  <p>第 3 部分介绍<strong>大语言模型如何理解并服从人类指令，包括指令微调和强化学习</strong>。重点介绍模型微调技术、指令微调数据的构造策略，以及高效微调方法，如 LoRA、Delta Tuning 等方法。强化学习章节重点讲解其基础理论、策略梯度方法（REINFORCE 算法、广义优势估计、PPO 算法、PLOO 算法、GRPO 算法），推理模型的强化学习（以 DeepSeek-R1 和 Kimi k1.5 为例），RLHF 等，并结合实际案例，以 DeepSpeed-Chat 和 verl 框架为例，详细说明如何训练类 ChatGPT 系统。</p>\n  <p>第 4 部分围绕<strong>提升大语言模型的能力展开详细探讨，内容涵盖多模态大语言模型、大模型智能体和检索增强生成</strong>。多模态大语言模型章节重点介绍其基础理论、架构设计与训练策略，并探讨其在实际场景中的应用实践。智能体章节聚焦其发展历程与大语言模型智能体的架构设计，深入分析智能体的实现原理，并以 LangChain 和 Coze 为例详细阐述具体实践。RAG 章节介绍其核心思想与实现方式，涵盖检索增强框架的设计、检索模块与生成模块的协作机制，以及其在具体任务场景中的应用方法与实践。</p>\n  <p>第 5 部分围绕<strong>如何应用大语言模型展开讨论，内容涵盖大语言模型效率优化、大语言模型评估，以及大语言模型典型应用的开发与部署</strong>。效率优化章节重点介绍模型压缩与优化、训练效率优化和推理效率优化等提升模型效率的关键技术。大语言模型评估章节探讨其基本概念和难点，阐述评估体系的构建、评估方法的设计及实际评估的实施。大语言模型应用章节介绍典型的大语言模型应用场景，详细介绍其开发流程、开发工具及本地部署的实践方法。</p>\n  <p><strong>新增章节亮点</strong></p>\n  <ul>\n   <li>\n    <section>\n     多模态大语言模型：介绍典型架构及其与 LLM 的融合方法、多模态训练策略。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     大模型智能体：剖析涵盖感知、规划、记忆机制及工具调用能力的核心架构，训练与实践方法。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     检索增强生成（RAG）：解析系统设计模式、训练优化策略、评估体系全流程。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     大模型效率优化：围绕模型压缩、低精度训练、高效推理框架（如 vLLM）等全链路技术实践展开。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     大语言模型基础：新增混合专家模型（MoE）相关内容。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     强化学习：新增对「The Bitter Lesson」的理解、长思维链、推理模型的强化学习等内容。\n    </section></li>\n  </ul>\n  <p><strong>作者团队简介</strong></p>\n  <p>本书作者团队由<strong>来自复</strong><strong>旦大学的张奇、桂韬、郑锐、黄萱菁</strong>等多位人工智能领域的优秀学者组成。团队长期专注于自然语言处理、大规模预训练模型、智能体、多模态学习等前沿方向，具备丰富的理论研究与工程实践经验。</p>\n  <p>张奇，复旦大学计算机科学技术学院教授、博士生导师。兼任上海市智能信息处理重点实验室副主任，中国中文信息学会理事、CCF 大模型论坛常务委员，CIPS 信息检索专委会常务委员、CIPS 大模型专委会委员。近年来在国际重要学术期刊和会议上发表论文 200 余篇。获得 WSDM 2014 最佳论文提名奖、COLING 2018 领域主席推荐奖、NLPCC 2019 杰出论文奖、COLING 2022 杰出论文奖。</p>\n  <p>桂韬，复旦大学副研究员。研究领域为预训练模型、类人对齐和智能体交互。在国际重要学术期刊和会议上发表论文 50 余篇，主持国家自然科学基金计算机学会和人工智能学会的多个人才项目。获得钱伟长中文信息处理科学技术一等奖、NeurIPS 2023 大模型对齐 Track 最佳论文奖，入选第七届「中国科协青年人才托举工程」、上海市启明星计划。</p>\n  <p>郑锐，博士毕业于复旦大学计算机科学技术学院，师从张奇教授。曾任字节跳动豆包大模型团队算法工程师，现就职于某前沿科技公司，研究方向为大模型对齐、复杂推理能力提升。获得 NeurIPS Workshop on Instruction Following 2024 最佳论文奖。在 ICLR、ICML、NeurIPS、ACL 等国际会议上发表多篇论文。</p>\n  <p>黄萱菁，复旦大学特聘教授、博士生导师。主要从事人工智能、自然语言处理和大语言模型研究。兼任中国计算机学会理事、自然语言处理专委会主任、中国中文信息学会理事、计算语言学学会亚太分会主席。在国际重要学术期刊和会议上发表论文 200 余篇，获优秀论文奖 8 项。获得钱伟长中文信息处理科学技术一等奖、上海市育才奖，以及人工智能全球女性学者、福布斯中国科技女性等多项荣誉。</p>\n  <p><strong>专家点评</strong></p>\n  <p>自《大规模语言模型：从理论到实践》首版问世以来，便受到了学术界与产业界的广泛关注。此次全新升级的第二版，内容更加丰富、体系更加完善，得到了多位人工智能领域权威专家的高度认可（按姓氏拼音排序）：</p>\n  <p>「随着 ChatGPT 的问世，大语言模型展现出巨大潜力，对人工智能发展产生了深远影响。面对这一迅速发展的技术，如何快速理解其理论并参与实践是我们必须要面对的挑战。本书在第 1 版的基础上增加了多模态、智能体、RAG 等章节，并对指令微调和强化学习部分进行了大幅修改，旨在帮助读者深入理解大语言模型的原理，提供实操指导，值得阅读。」</p>\n  <p><strong> ——柴洪峰 中国工程院院士</strong></p>\n  <p>「本书深入解析了大语言模型的基本原理，分析了当前几种有代表性的大语言模型的学理特点，分享了作者在这一领域的实践经验。本书的出版恰逢其时，是学术界和产业界不可多得的读物，将助力读者进一步探索和应用大语言模型。」</p>\n  <p><strong> ——蒋昌俊 中国工程院院士</strong></p>\n  <p>「本书全面解析了大语言模型的发展历程、理论基础与实践方法，对大语言模型预训练、指令微调、强化学习、多模态、智能体、RAG 等前沿领域的研究进展有较好的覆盖。此外，本书深入探讨了大语言模型的实际应用场景与评价方法，为研究者提供了系统的理论指导与实践经验。相信本书对从事相关研究的学者和大语言模型开发者具有重要的参考价值。」&nbsp;</p>\n  <p><strong>——周伯文 上海人工智能实验室主任、首席科学家、清华大学惠妍讲席教授</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/aa1294ae-8e59-49b4-80d1-8510d41d8c00/public\" data-ratio=\"2.0733333333333333\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"750\" type=\"block\" data-imgfileid=\"503483303\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/a2d1d5df-c389-44f6-aa8b-19cb788bf1e0/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>《大规模语言模型：从理论到实践（第 2 版）》的出版上市，希望可以让读者快速掌握大语言模型的研究与应用，更好地应对相关技术挑战，为推动这一领域的进步贡献力量。</p>\n </body>\n</html>",
+  "aiSummary": "复旦大学《大规模语言模型：从理论到实践（第 2 版）》全新升级，为 AI 从业者提供 LLM 理论、实践与应用指导，聚焦 AI 前沿技术。",
+  "oneSentenceSummary": "复旦大学《大规模语言模型：从理论到实践（第 2 版）》全新升级，为 AI 从业者提供 LLM 理论、实践与应用指导，聚焦 AI 前沿技术。",
+  "summary": "《大规模语言模型：从理论到实践（第 2 版）》由复旦大学权威 NLP 团队编写，是对第一版的重大升级，增加了超过 40% 的内容。本书系统地整合了 AI 领域的最新研究成果和技术进展，涵盖了 LLM 的理论基础、预训练、指令理解、大模型增强和应用等五个核心部分。新版重点聚焦 MoE 、强化学习、多模态、智能体、 RAG 和效率优化等前沿技术，并新增了多模态大语言模型、智能体、 RAG 和大模型效率优化等实用章节。本书旨在为学者、工程师和 AI 爱好者提供系统、权威且具有实操价值的知识，助力读者快速掌握大语言模型的研究与应用。",
+  "mainPoints": [
+    {
+      "point": "新版聚焦前沿技术，紧跟 AI 最新发展",
+      "explanation": "深度剖析 MoE、强化学习、多模态、智能体、RAG、效率优化等技术趋势，确保内容的前沿性和实用性。"
+    },
+    {
+      "point": "重构知识体系，覆盖 LLM 全流程",
+      "explanation": "覆盖预训练、微调、强化学习、应用开发、效率优化等全流程，体系更加完善，逻辑更清晰，提升学习效率。"
+    },
+    {
+      "point": "提升实践价值，助力理论落地",
+      "explanation": "新增逾 40% 的前沿研究成果与技术案例，增设工程实践指南与评估体系模块，加强理论与实践的结合。"
+    }
+  ],
+  "keyQuotes": [
+    "大语言模型仅需 60 条数据就能学习并展现出强大的问题回答能力，显示了其惊人的泛化性",
+    "在一个拥有 130 亿个参数的模型中，仅修改一个特定参数，就可能导致模型完全丧失生成有意义信息的能力。",
+    "本书全面解析了大语言模型的发展历程、理论基础与实践方法，对大语言模型预训练、指令微调、强化学习、多模态、智能体、RAG 等前沿领域的研究进展有较好的覆盖。",
+    "大模型效率优化：围绕模型压缩、低精度训练、高效推理框架（如 vLLM ）等全链路技术实践展开。"
+  ],
+  "tags": [
+    "大语言模型",
+    "理论实践",
+    "书籍推荐",
+    "前沿技术",
+    "复旦大学"
+  ],
+  "topicTag": "other",
+  "readTime": 14,
+  "score": 89,
+  "wordCount": 3349,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745806969000,
+  "publishDateStr": "2025-04-28",
+  "publishDateTimeStr": "2025-04-28 02:22:49"
+}

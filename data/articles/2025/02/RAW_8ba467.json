@@ -1,0 +1,57 @@
+{
+  "id": "RAW_8ba467",
+  "title": "快速开始使用 OpenEvals 评估 LLM",
+  "url": "https://blog.langchain.dev/evaluating-llms-with-openevals/",
+  "date": "2025-02-26 18:35:25",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Evaluations (evals) are important for bringing reliable LLM powered applications or agents to production, but it can be hard to know where to start when building evaluations from scratch. Our new packages—<a href=\"https://github.com/langchain-ai/openevals?ref=blog.langchain.dev\">openevals</a> and <a href=\"https://github.com/langchain-ai/agentevals?ref=blog.langchain.dev\">agentevals</a>—provide a set of evaluators and a common framework that you can easily get started with.</p>\n  <h2 id=\"what-are-evals\">What are evals?</h2>\n  <p>Evals provide systematic ways to judge LLM output quality based on criteria that's important for your application. There are two components of evals: the <strong>data that you’re evaluating over</strong> and the <strong>metric that you’re evaluating on</strong>.</p>\n  <p>The quality and diversity of the data you’re evaluating over directly influences how well the evaluation reflects real-world usage. Before you create an evaluation, spend some time curating a dataset for your specific use case— you only need a handful of high quality data points to get started. Read more about dataset curation <a href=\"https://docs.smith.langchain.com/evaluation/concepts?ref=blog.langchain.dev#dataset-curation\">here</a>.</p>\n  <p>The metrics you're evaluating are also often custom depending on the goals of your application, however, we see common trends in the kinds of evaluations that are used. This is why we built <a href=\"https://github.com/langchain-ai/openevals?ref=blog.langchain.dev\">openevals</a> and <a href=\"https://github.com/langchain-ai/agentevals?ref=blog.langchain.dev\">agentevals</a> — to share prebuilt solutions that show common evaluation trends and best practices to help you get started.</p>\n  <h2 id=\"common-evaluation-types-and-best-practices\">Common Evaluation Types and Best Practices</h2>\n  <p>There are many types of evaluations, but to start, we’ve focused on releasing eval techniques that we’ve seen are the most commonly used and practically useful. We’re approaching this in two ways:</p>\n  <ol>\n   <li><strong>Making broadly applicable evaluators easy to customize:</strong> LLM-as-a-judge evals are the most broadly applicable evaluators. <code>openevals</code> makes it easy to take pre-built examples and customize them specific to your use case.</li>\n   <li><strong>Making evaluators for specific use cases</strong>: There are an endless number of use cases, but we’ll be building off-the-shelf evaluation for the most common ones. To start, <code>openevals</code> and <code>angentevals</code> cover cases in an application where you’re extracting structured content from documents, managing tool calls and agent trajectories. We plan to expand the libraries to include more specific techniques depending on application type (eg. evals specific to RAG applications or multi-agent architectures).</li>\n  </ol>\n  <p><strong><u>LLM-as-a-judge evals</u></strong></p>\n  <p>LLM-as-judge evaluators use LLMs to score your application's output. These are the most common types of evaluators we see since they’re primarily used when evaluating natural language outputs.</p>\n  <p><strong>Use When Evaluating:</strong></p>\n  <ul>\n   <li>Conversational quality of chatbot responses</li>\n   <li>To test for hallucination in summarization or question-answering systems</li>\n   <li>Writing quality and coherence</li>\n  </ul>\n  <p>Importantly, LLM-as-judge evaluations can be reference free, allowing you to judge responses objectively without requiring ground truth answers.</p>\n  <p><strong>How <code>openevals</code> Helps:</strong></p>\n  <ul>\n   <li>Pre-built starter prompts that you can easily customize</li>\n   <li>Incorporate few-shot examples to better align with human preferences</li>\n   <li>Simplifies the process of setting up a scoring schema for consistent evaluation</li>\n   <li>Generates reasoning comments for why a particular score was given, adding transparency to the evaluation process</li>\n  </ul>\n  <p>View examples and get started with LLM-as-a-judge evaluators <a href=\"https://github.com/langchain-ai/openevals?tab=readme-ov-file&amp;ref=blog.langchain.dev#llm-as-judge\">here</a>.</p>\n  <p><strong><u>Structured Data Evals</u></strong></p>\n  <p>Many LLM applications involve extracting structured output from documents or generating structured output for tool calling. For these cases, it’s important that the model’s output conforms to a predefined format.</p>\n  <p><strong>Use When Evaluating:</strong></p>\n  <ul>\n   <li>Structured information extracted from PDFs, images or other documents</li>\n   <li>Consistently formatted JSON or other structured outputs</li>\n   <li>Validating parameters for tool calls (eg. API calls)</li>\n   <li>Ensuring outputs match specific formats or fall within a category</li>\n  </ul>\n  <p><strong>How <code>openevals</code> Helps:</strong></p>\n  <ul>\n   <li><code>openevals</code> provides the ability configure exact match or use LLM-as-a-judge to validate the structured output</li>\n   <li>Optionally, aggregate scores across feedback keys for a high level view of evaluator performance</li>\n  </ul>\n  <p>View examples and get started with structured data evaluators <a href=\"https://github.com/langchain-ai/openevals?tab=readme-ov-file&amp;ref=blog.langchain.dev#extraction-and-tool-calls\">here</a>.</p>\n  <p><strong><u>Agent evaluations: Trajectory evaluations</u></strong></p>\n  <p>When building an agent, you’re often interested in more than just the final output—you want to understand how the agent reached that result. Trajectory evaluation assesses the sequence of actions an agent takes to complete a task.</p>\n  <p><strong>Use When Evaluating:</strong></p>\n  <ul>\n   <li>Tools or sequence of tools selection</li>\n   <li>The trajectory of a <a href=\"https://langchain-ai.github.io/langgraph/?ref=blog.langchain.dev\">LangGraph</a> application</li>\n  </ul>\n  <p><strong>How <code>agentevals</code> Helps:</strong></p>\n  <ul>\n   <li><a href=\"https://github.com/langchain-ai/agentevals?tab=readme-ov-file&amp;ref=blog.langchain.dev#agent-trajectory\">Agent Trajectory</a> allows you to check that your agent is calling the right tools (optionally with a strict order) or use LLM-as-a-judge to evaluate the trajectory</li>\n   <li>If you’re using <a href=\"https://langchain-ai.github.io/langgraph/?ref=blog.langchain.dev\">LangGraph</a> you can use <a href=\"https://github.com/langchain-ai/agentevals?tab=readme-ov-file&amp;ref=blog.langchain.dev#graph-trajectory\">Graph Trajectory</a> to ensure that your agent is calling the right nodes</li>\n  </ul>\n  <p>View examples and get started with agent evaluations <a href=\"https://github.com/langchain-ai/agentevals?ref=blog.langchain.dev\">here</a>.</p>\n  <h3 id=\"track-results-over-time-with-langsmith\">Track results over time with LangSmith</h3>\n  <p>For tracking evaluations over time and sharing them with a team, we recommend logging results to&nbsp;<a href=\"https://smith.langchain.com/?ref=blog.langchain.dev\">LangSmith</a>. Companies like <a href=\"https://www.elastic.co/blog/elastic-security-generative-ai-features?ref=blog.langchain.dev\">Elastic</a>, <a href=\"https://blog.langchain.dev/customers-klarna/\">Klarna</a>, and <a href=\"https://blog.langchain.dev/customers-podium/\" rel=\"noreferrer\">Podium</a> use LangSmith to evaluate their GenAI applications.</p>\n  <p>LangSmith includes tracing, evaluation, and experimentation tools to help you build production-grade LLM applications. Visit our guides on how to integrate <a href=\"https://github.com/langchain-ai/openevals?tab=readme-ov-file&amp;ref=blog.langchain.dev#langsmith-integration\">openevals</a> or <a href=\"https://github.com/langchain-ai/agentevals?tab=readme-ov-file&amp;ref=blog.langchain.dev#langsmith-integration\">agentevals</a> with LangSmith.</p>\n  <h3 id=\"more-coming-soon\">More coming soon!</h3>\n  <p>This is just the beginning of our ongoing effort to codify best practices for evaluating different types of applications. In the coming weeks, we’ll be adding more specific evaluators for common use cases, and more evaluators for testing agents.</p>\n  <p>Have ideas for evaluators you'd like to see? Open an issue on our GitHub repositories (<a href=\"https://github.com/langchain-ai/openevals?ref=blog.langchain.dev\">openevals</a> and <a href=\"https://github.com/langchain-ai/agentevals?ref=blog.langchain.dev\">agentevals</a>). If you've developed evaluators that have worked well for your applications, we welcome pull requests to share them with the community.</p>\n </body>\n</html>",
+  "aiSummary": "OpenEvals 和 AgentEvals 提供了预构建的评估器和通用框架，旨在简化 LLM 应用和代理的评估。",
+  "oneSentenceSummary": "OpenEvals 和 AgentEvals 提供了预构建的评估器和通用框架，旨在简化 LLM 应用和代理的评估。",
+  "summary": "本文介绍 OpenEvals 和 AgentEvals，旨在解决 LLM 应用评估的复杂性以及从头构建评估的难度。这些软件包提供了预构建的评估器和一个通用框架，以简化评估过程。本文详细介绍了评估的组成部分，包括评估数据和指标，强调了数据质量和多样性的重要性。Evals 提供了一种系统的方法来根据对您的应用程序很重要的标准来判断 LLM 输出质量。它还涵盖了常见的评估类型，例如 LLM 作为评判者的评估器、结构化数据评估和 Agent 轨迹评估。本文还建议使用 LangSmith 来跟踪评估结果，并鼓励社区贡献。未来的开发将包括更多针对常见用例的特定评估器，以及更多用于测试代理的评估器。",
+  "mainPoints": [
+    {
+      "point": "OpenEvals 和 AgentEvals 通过提供预构建的评估器和通用框架，降低了 LLM 应用评估的门槛。",
+      "explanation": "这些软件包使开发人员能够快速开始评估 LLM 应用和代理，而无需从头开始构建评估。"
+    },
+    {
+      "point": "LLM 作为评判者的评估器适用于评估自然语言输出的质量。",
+      "explanation": "这些评估器使用 LLM 来对应用程序输出进行评分，从而可以客观地评估聊天机器人的对话质量、摘要幻觉或问答系统，而无需参考答案。"
+    },
+    {
+      "point": "Agent 轨迹评估有助于理解代理完成任务的流程。",
+      "explanation": "通过评估代理所采取的一系列操作，可以验证代理是否调用了正确的工具或以正确的顺序调用了它们。"
+    },
+    {
+      "point": "LangSmith 有助于跟踪评估结果并实现团队协作。",
+      "explanation": "LangSmith 提供了用于跟踪、评估和试验 LLM 应用的工具。这使得跟踪一段时间内的结果并与团队共享变得更加容易。"
+    }
+  ],
+  "keyQuotes": [
+    "评估提供了一种系统的方法，可以根据对您的应用重要的标准来判断 LLM 输出质量。",
+    "LLM 作为评判者的评估可以免参考，使您可以客观地判断响应，而无需基本事实答案。",
+    "轨迹评估用于评估代理完成任务所采取的一系列操作。"
+  ],
+  "tags": [
+    "LLM",
+    "LLM 评估",
+    "评估框架",
+    "OpenEvals",
+    "AgentEvals"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 831,
+  "domain": "blog.langchain.dev",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1740594925000,
+  "publishDateStr": "2025-02-26",
+  "publishDateTimeStr": "2025-02-26 18:35:25"
+}

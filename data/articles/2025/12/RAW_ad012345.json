@@ -1,0 +1,63 @@
+{
+  "id": "RAW_ad012345",
+  "title": "2025 年后端开发团队如何使用 Kotlin：来自认证讲师的见解 | Kotlin 博客",
+  "url": "https://blog.jetbrains.com/kotlin/2025/12/how-backend-development-teams-use-kotlin-in-2025/",
+  "date": "2025-12-09 23:52:47",
+  "author": "Ksenia Shneyveys",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>This is the first guest post in a two-part series from José Luis González. José Luis has a PhD in software development and is a JetBrains-certified Kotlin Trainer, who works with developers and engineering teams to deepen their Kotlin skills and apply the language effectively in real projects. At Hyperskill, he runs <a href=\"https://bootcamps.hyperskill.org/kotlin-bootcamp-for-engineering-teams\" target=\"_blank\" rel=\"noopener\">Kotlin instructor-led training for teams at Hyperskill</a> that focus on advanced topics and practical problem-solving rather than theory.</em></p>\n  <p><strong>1. What are the top 3 Kotlin anti-patterns from self-taught teams, and how do you fix each one?</strong></p>\n  <p>This is a good question. The basic anti-pattern I see in self-taught Kotlin teams is that they still design hierarchies of abstract classes, factories, and deep inheritance trees because that’s how they learned Java. But Kotlin thrives on data-oriented, sealed, and expression-based designs. Overusing inheritance leads to fragile hierarchies, bloated APIs, and code that fights Kotlin’s strengths.</p>\n  <p>The simplest improvement is to flatten your design. Use sealed classes, data classes, and <code>when</code> expressions to model domain state declaratively instead of relying on polymorphism. Prefer composition and smart constructors over inheritance.</p>\n  <p>Moving to what’s catching my attention in the last 2 years, I see subtler issues from teams that already “know Kotlin,” but haven’t kept up with how the language evolved.&nbsp;</p>\n  <p>A major issue I still see is the use of ambient singletons: things like global <code>object</code> repositories or custom service locators. They make code look simpler at first, but in reality they hide dependencies and make testing much harder.&nbsp;</p>\n  <p>Context parameters would fix it: the successor to context receivers, so functions <em>declare</em> the services they need and callers supply them, no globals required:</p>\n  <pre class=\"EnlighterJSRAW\">interface Clock { \n  fun now(): Instant\n}\n\ncontext(_: Clock) \nfun stamp() = now()\n\nwith(object: Clock{ override fun now() = Clock.System.now() }) { \n  stamp() \n}</pre>\n  <p>This is Beta in Kotlin 2.2 and replaces context receivers with IDE-assisted migration.</p>\n  <p>Another common trap is the illusion of type safety through <code>typealias</code>.</p>\n  <p><code>typealias UserId = String </code>doesn’t create a new type as it’s only an alias, so <code>UserId</code> and <code>String</code> are fully interchangeable. In 2025, the idiomatic solution is to use value classes (inline classes), which introduce true domain types while remaining allocation-free at runtime.</p>\n  <pre class=\"EnlighterJSRAW\">@JvmInline \nvalue class UserId(\n  val v: String\n)\n\nfun load(u: UserId) {}\n\n// load(\"abc\")    // not good\n\nload(UserId(\"abc\")) // better</pre>\n  <p>A more subtle anti-pattern I still see is treating coroutines as ‘threads with nicer syntax.’ The telltale signs are <code>GlobalScope.launch</code>, random <code>runBlocking</code> calls in production, and code that ignores structured concurrency entirely. The modern fix: stop launching in <code>GlobalScope</code>, tie every coroutine to a real scope or lifecycle, keep <code>runBlocking</code> in <code>main()</code> or tests, and use <code>coroutineScope/supervisorScope</code> to compose concurrent work instead of escaping it.</p>\n  <pre class=\"EnlighterJSRAW\">suspend fun load() = supervisorScope {\n  val a = async { repo.a() }; \n  val b = async { repo.b() }; \n  a.await() to b.await()\n}</pre>\n  <p><code>GlobalScope</code> is a <code>@DelicateCoroutinesApi</code> escape hatch, and official guidance frames <code>runBlocking</code> as a bridge for tests and entry points, not production call paths.</p>\n  <p><em>(Author’s remark: since Kotlin 2.0, K2 is the default compiler across JVM/Native/JS/Wasm: lean on these features confidently in KMP codebases.)</em></p>\n  <p><strong>2. When teams ask you about testing async Kotlin code, what’s the exact testing pattern you show them that works reliably in CI/CD?</strong></p>\n  <p>&nbsp;I show them one reliable pattern that scales and never flakes. The key is to inject dispatchers, not hardcode <code>Dispatchers.IO</code>, and test with <code>runTest</code> plus a <code>StandardTestDispatcher</code> (or <code>MainDispatcherRule</code> on Android). This lets you control <em>virtual time</em> deterministically using<code> advanceTimeBy()</code> or <code>advanceUntilIdle()</code>, so no real delays or sleeps are needed. Always assert both results and cancellation: tests should prove that <code>CancellationException</code> propagates and does not get swallowed.</p>\n  <p>Here’s the compact pattern:</p>\n  <pre class=\"EnlighterJSRAW\">@OptIn(ExperimentalCoroutinesApi::class)\n@Test fun flow_is_deterministic() = runTest {\n    val testDispatcher = StandardTestDispatcher(testScheduler)\n    val repo = Repo(svc = FakeSvc(), dispatchers = object : AppDispatchers {\n        override val io = testDispatcher; override val default = testDispatcher\n    })\n\n    val job = launch { assertEquals(\"A\" to \"B\", repo.load()) }\n    advanceUntilIdle()              // run coroutines deterministically\n    assertTrue(job.isCompleted)     // also test job.cancel() + advanceUntilIdle()\n}</pre>\n  <p>If you’re testing a <code>Flow</code>, use Turbine instead of <code>assertEquals</code>:</p>\n  <pre class=\"EnlighterJSRAW\">flow.test {\n    assertEquals(\"A\", awaitItem())\n    cancelAndIgnoreRemainingEvents()\n}</pre>\n  <p>This pattern works consistently in CI/CD because it avoids timing flakiness, doesn’t rely on real delays, and enforces proper structured concurrency.</p>\n  <p><strong>3. A team just deployed their first Kotlin microservice and it’s using 3x more memory than expected. What’s your diagnostic checklist, and what are the most likely culprits?</strong></p>\n  <p>If a new Kotlin microservice suddenly uses three times more memory than expected, I start by checking whether it’s really a Kotlin issue or just how the JVM behaves under load. The first thing is to see what kind of memory grows.</p>\n  <p>If the heap is flat but RSS keeps rising, it’s usually thread stacks or direct buffers. Each thread costs around 1-2 MB, and Dispatchers.IO can easily spin up hundreds under blocking I/O. Limit it:</p>\n  <pre class=\"EnlighterJSRAW\"> val io = Dispatchers.IO.limitedParallelism(64)</pre>\n  <p>❗ And make sure you’re not using raw threads where coroutines would do. That’s a common “Java habit” that quietly kills memory efficiency.</p>\n  <p>Next, if the heap itself grows, look for unbounded coroutines or collections: things like <code>Channel.UNLIMITED, flow.buffer()</code> without limits, or caches that never evict. Backpressure fixes most of these:</p>\n  <pre class=\"EnlighterJSRAW\">flow.buffer(256, onBufferOverflow = BufferOverflow.DROP_OLDEST)</pre>\n  <p>Then check the HTTP layer. Frameworks like Ktor with CIO or Netty may buffer entire requests in memory. Stream instead of aggregating:</p>\n  <pre class=\"EnlighterJSRAW\">call.receiveChannel().copyTo(File(\"upload.bin\").outputStream())</pre>\n  <p>On the JVM side, always set explicit container limits so it doesn’t grab all available RAM:</p>\n  <pre class=\"EnlighterJSRAW\">-XX:MaxRAMPercentage=60 -XX:MaxMetaspaceSize=128m -XX:MaxDirectMemorySize=128m</pre>\n  <p>Finally, profile before guessing. I usually attach an async-profiler or JDK Flight Recorder to see where allocations come from, and combine that with <code>jcmd VM.native_memory</code> summary for off-heap diagnostics.</p>\n  <p>In short: use real coroutines, not threads; set memory caps; limit dispatcher parallelism; bound every buffer; and verify with profiling. That’s how you fix 90 % of “why is our Kotlin service eating all the RAM?” cases.</p>\n  <div class=\"about-author \">\n   <div class=\"about-author__box\">\n    <div class=\"row\">\n     <div class=\"about-author__box-img\">\n      <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/12/1604594047817.jpeg\" alt=\"José Luis González\" loading=\"lazy\">\n     </div>\n     <div class=\"about-author__box-text\">\n      <h4>José Luis González</h4>\n      <p><span style=\"font-weight: 400;\">José Luis González, PhD, is a JetBrains-certified Kotlin Trainer who teaches Kotlin and advanced techniques to development teams. If your team has more questions about Kotlin anti-patterns, idiomatic design, or wants to learn how to write more maintainable Kotlin code, explore his </span><a href=\"https://bootcamps.hyperskill.org/kotlin-bootcamp-for-engineering-teams\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">instructor-led Kotlin workshops</span></a><span style=\"font-weight: 400;\"> at Hyperskill.</span></p>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/kotlin/2025/12/kubernetes-made-simple-a-guide-for-jvm-developers/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Kubernetes Made Simple: A Guide for JVM Developers</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文由一位认证讲师撰写，深入探讨了后端开发团队常见的 Kotlin 反模式、解决方案以及适应 CI/CD 的可靠异步测试策略。",
+  "oneSentenceSummary": "本文由一位认证讲师撰写，深入探讨了后端开发团队常见的 Kotlin 反模式、解决方案以及适应 CI/CD 的可靠异步测试策略。",
+  "summary": "这篇分两部分的客座文章由 JetBrains 认证的 Kotlin 培训师 José Luis González 撰写，旨在解决有效的 Kotlin 后端开发中的关键方面。文章首先指出了三个主要反模式：过度依赖 Java 风格的继承、滥用全局单例以及将协程视为“更好用的线程”。针对每个反模式，文章提供了现代 Kotlin 惯用解决方案，如密封类、数据类、上下文参数、值类和结构化并发。接着，文章详细介绍了一种在 CI/CD 环境中测试异步 Kotlin 代码的稳健模式，强调了调度器注入、`runTest`、`StandardTestDispatcher` 和确定性时间控制。最后，文章提供了一个诊断 Kotlin 微服务中意外内存消耗的核对清单，重点提到了诸如过多线程栈、无界协程/集合和 HTTP 层缓冲等问题，并给出了 `limitedParallelism`、背压和显式 JVM 内存限制等解决方案。内容侧重于实际问题解决和现代 Kotlin 最佳实践。",
+  "mainPoints": [
+    {
+      "point": "自学成才的团队常在 Kotlin 中滥用 Java 风格的继承，导致设计脆弱。",
+      "explanation": "通过运用 Kotlin 的优势来纠正这个问题：使用密封类、数据类和 `when` 表达式来扁平化设计，并优先选择组合而非深度继承，以获得更清晰、更易维护的代码。"
+    },
+    {
+      "point": "全局单例和滥用 `typealias` 来实现类型安全是有害的反模式。",
+      "explanation": "现代 Kotlin 使用上下文参数来显式声明依赖，而不是使用全局单例。虽然 `typealias` 有其有效用途，但当它被误用于实现*真正的领域类型安全*时，则构成一种有害的反模式，因为值类是创建不同类型的正确惯用且零分配的解决方案。"
+    },
+    {
+      "point": "对协程的误解可能导致像 `GlobalScope.launch` 和生产环境中的 `runBlocking` 这样的反模式。",
+      "explanation": "始终使用结构化并发，将协程绑定到适当的作用域，将 `runBlocking` 限制在测试或主函数中，并使用 `coroutineScope/supervisorScope` 来组合并发工作，以防止资源泄漏并提高可测试性。"
+    },
+    {
+      "point": "CI/CD 中可靠的异步 Kotlin 测试需要调度器注入和确定性时间控制。",
+      "explanation": "使用 `StandardTestDispatcher` 与 `runTest` 以及 `advanceUntilIdle()` 等方法来消除时间上的不稳定性，确保测试快速、确定性，并验证结果和取消传播。"
+    },
+    {
+      "point": "Kotlin 微服务中的高内存使用通常源于线程相关问题、无界结构或 HTTP 缓冲。",
+      "explanation": "通过分析本机内存和堆来诊断。解决方案包括限制 `Dispatchers.IO` 并行度，对流/通道应用背压，流式传输 HTTP 请求，以及设置显式 JVM 内存限制以优化资源消耗。"
+    }
+  ],
+  "keyQuotes": [
+    "我发现自学 Kotlin 的团队存在一个基本反模式：他们依旧设计抽象类、工厂和深层继承树的层级结构，因为这是他们学习 Java 时养成的习惯。",
+    "上下文参数可以解决这个问题：它作为上下文接收器的后续方案，让函数能够*声明*其所需的服务，并由调用方提供，无需使用全局变量。",
+    "`GlobalScope` 是一个带有 `@DelicateCoroutinesApi` 注解的应急方案，官方指南将 `runBlocking` 定位为测试和入口点之间的桥梁（或阻塞运行入口点），而非生产环境的调用路径。",
+    "关键是注入调度器，而不是硬编码 `Dispatchers.IO`，并使用 `runTest` 和 `StandardTestDispatcher`（或 Android 上的 `MainDispatcherRule`）进行测试。",
+    "并确保你没有在使用原始线程，而协程却可以胜任。这是一种常见的“Java 习惯”，悄悄地扼杀了内存效率。"
+  ],
+  "tags": [
+    "Kotlin",
+    "后端开发",
+    "微服务",
+    "协程",
+    "测试"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1033,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765324367000,
+  "publishDateStr": "2025-12-09",
+  "publishDateTimeStr": "2025-12-09 23:52:47"
+}

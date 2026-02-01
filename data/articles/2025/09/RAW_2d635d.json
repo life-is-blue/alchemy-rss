@@ -1,0 +1,55 @@
+{
+  "id": "RAW_2d635d",
+  "title": "攻克强化学习「最慢一环」！交大字节联手，RL 训练速度飙升 2.6 倍",
+  "url": "https://www.qbitai.com/2025/09/331008.html",
+  "date": "2025-09-13 08:45:23",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"97\">允中 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"98\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"50\"><strong>强化学习的训练效率，实在是太低了！</strong></p>\n  <p data-track=\"51\">随着DeepSeek、GPT-4o、Gemini等模型的激烈角逐，大模型“深度思考”能力的背后，强化学习<em>（RL）</em>无疑是那把最关键的密钥。</p>\n  <p data-track=\"52\">然而，这场竞赛的背后，一个巨大的瓶颈正悄然限制着所有玩家的速度——相较于预训练和推理，RL训练更像一个效率低下的“手工作坊”，<strong>投入巨大但产出缓慢</strong>。</p>\n  <p data-track=\"53\">其中，占据超过80%时间的Rollout<em>（响应生成）</em>阶段，由于其内存带宽限制和自回归特性，成为了整个AI基础设施中公认的阿喀琉斯之踵。</p>\n  <p data-track=\"54\">如何攻克这块AI基建的最后高地？现在，上海交通大学与字节跳动研究团队给出了一个全新的答案。</p>\n  <p data-track=\"55\">该团队联手推出的<strong>RhymeRL</strong>，从一个被忽视的现象入手，巧妙地将历史数据变废为宝，在不牺牲精度的前提下，<strong>将RL训练吞吐量提升了2.6倍</strong>。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"56\">模型生成的答案存在两大“历史相似性”</h2>\n  <p data-track=\"57\">该研究团队深入分析了大量RL训练过程，发现在相邻的两个训练周期中，尽管模型权重已经更新，但对于同一个问题<em>（Prompt）</em>，模型生成的答案<em>（Rollout）</em>存在两大“历史相似性”：</p>\n  <p data-track=\"58\"><strong>第一，序列相似性</strong>。</p>\n  <p data-track=\"59\">新答案“继承”了旧答案的思路，高达95%的历史Token都可以直接复用。</p>\n  <p data-track=\"60\"><strong>第二，长度分布相似性</strong>。</p>\n  <p data-track=\"61\">上一轮里，哪些问题让模型“思来想去”，这一轮大概率依旧如此。响应长度的排序惊人地稳定。</p>\n  <p data-track=\"62\">该研究团队认为，这种相似性，主要源于PPO/GRPO等主流RL算法为了保证训练稳定而采用的梯度裁剪（Clipping）机制，它让模型的进化变得平滑而有迹可循。</p>\n  <p data-track=\"63\">这就好比一个学生，虽然每天都在进步，但他解决同一类型问题的思考路径和草稿篇幅，在短期内是高度相似的。</p>\n  <p data-track=\"64\">既然如此，历史的旧草稿能否成为新一轮学习的模版？</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"65\">针对Rollout阶段的低效现状，提出新框架RhymeRL</h2>\n  <p data-track=\"66\">基于这一洞察，<strong>RhymeRL框架应运而生</strong>。</p>\n  <p data-track=\"67\">针对Rollout阶段的低效现状，它包含两大核心利器：</p>\n  <p data-track=\"68\"><strong>HistoSpec</strong>和<strong>HistoPipe</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"攻克强化学习「最慢一环」！交大字节联手，RL训练速度飙升2.6倍\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250913100737_ea54e7b410b38505179439827f93ea58.png\" data-src=\"https://image.jido.dev/20250913100737_ea54e7b410b38505179439827f93ea58.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\">RhymeRL的核心设计示意图</p>\n  </div>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"70\">HistoSpec</h3>\n  <p data-track=\"71\">传统的Rollout，是一个Token一个Token往外蹦的自回归过程，速度慢且GPU利用率较低。</p>\n  <p data-track=\"72\">而HistoSpec独创性地将<strong>投机解码</strong>（Speculative Decoding）技术引入RL，它不再需要一个额外的小模型来“猜”草稿，而是直接<strong>把上一轮的历史响应作为“最佳剧本”</strong>。</p>\n  <p data-track=\"73\">这就像开卷考试，你提前拿到了去年的标准答案作为参考。</p>\n  <ol start=\"1\">\n   <li data-track=\"74\"><strong>起草</strong>（Draft）：直接从历史响应中巧妙地总结出树状草稿。</li>\n   <li data-track=\"75\"><strong>验证</strong>（Verify）：将整段草稿一次性扔给大模型，通过单次前向传播，并行验证所有Token的正确性，然后“接收”所有匹配的部分。</li>\n  </ol>\n  <p data-track=\"76\">由于历史序列的超高相似性，草稿的接受率极高。</p>\n  <p data-track=\"77\">这使得计算过程从逐字生成变成了“批量验证”，计算密度飙升，<strong>打破了内存带宽的枷锁</strong>，让单个响应的生成速度实现了质的飞跃。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"攻克强化学习「最慢一环」！交大字节联手，RL训练速度飙升2.6倍\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250913100737_86829ca27f481da4866410ef4cf81dba.png\" data-src=\"https://image.jido.dev/20250913100737_86829ca27f481da4866410ef4cf81dba.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\">HistoSpec采用的基于树的历史响应管理，实现了草稿的高速、准确生成</p>\n  </div>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"80\">HistoPipe</h3>\n  <p data-track=\"81\">仅仅让单个响应变快还不够。</p>\n  <p data-track=\"82\">在批处理中，不同任务的响应长度不一，短任务总要等待长任务，导致大量GPU资源被闲置，产生了巨大的“空泡”<em>（Bubble）</em>。</p>\n  <p data-track=\"83\"><strong>HistoPipe</strong>是一位具有前瞻性的调度大师，它的目标是：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"84\">榨干每一滴GPU算力，实现无空泡的完美流水线。</p>\n  </blockquote>\n  <p data-track=\"85\">基于“长度分布相似性”的洞察，HistoPipe不再强求单一步内实现负载均衡，而是玩起了“跨步互补”——<strong>在奇数步，</strong>让所有GPU由短到长处理任务；<strong>在偶数步，</strong>则反过来，由长到短处理。</p>\n  <p data-track=\"86\">这样一来，上一步因为处理长任务而拖慢的GPU，在下一步会优先处理短任务，完美填补了时间差。</p>\n  <p data-track=\"87\">通过这种巧妙的削峰填谷，<strong>HistoPipe将整个集群的资源浪费降至最低</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"攻克强化学习「最慢一环」！交大字节联手，RL训练速度飙升2.6倍\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250913100737_948ab5c8c07a59e7149bdf943bf9e049.png\" data-src=\"https://image.jido.dev/20250913100737_948ab5c8c07a59e7149bdf943bf9e049.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\">HistoPipe的流水线设计，通过跨步互补调度实现了无空泡调度</p>\n  </div>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"90\">2.6倍加速，精度无损</h3>\n  <p data-track=\"91\">当模板HistoSpec遇上调度大师HistoPipe，产生反应是惊人的——实验结果表明，在数学、代码等任务上，RhymeRL相比于基础系统取得了大幅性能提升，<strong>端到端训练吞吐量提升高达2.61倍</strong>。</p>\n  <p data-track=\"92\">这意味着，研究者和企业可以用更少的资源、在更短的时间内，完成更强大的模型训练，极大地加速了AI技术迭代的步伐。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"攻克强化学习「最慢一环」！交大字节联手，RL训练速度飙升2.6倍\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250913100737_60882ddd184eec0291abfed194131544.png\" data-src=\"https://image.jido.dev/20250913100737_60882ddd184eec0291abfed194131544.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\">RhymeRL在不同模型大小和不同响应长度下都取得了显著加速效果</p>\n  </div>\n  <p data-track=\"94\">RhymeRL的重要意义在于，它提出了一种新的强化学习范式——基于历史信息来端到端地加速强化学习效率。</p>\n  <p data-track=\"95\">强化学习不是简单的推理与训练的拼接，通过深入剖析其任务特性，RhymeRL能够充分发挥系统统筹调度能力与底层硬件的算力资源，同时无损地适配各种已有的训练算法。</p>\n  <p data-track=\"96\">arXiv链接：\n   <br>\n   https://www.arxiv.org/abs/2508.18588</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "交大与字节跳动团队推出 RhymeRL 框架，通过利用历史数据相似性，将强化学习训练吞吐量提升 2.6 倍且不牺牲精度。",
+  "oneSentenceSummary": "交大与字节跳动团队推出 RhymeRL 框架，通过利用历史数据相似性，将强化学习训练吞吐量提升 2.6 倍且不牺牲精度。",
+  "summary": "文章深入探讨了强化学习（RL）训练中 Rollout 阶段效率低下的核心问题，指出其占据 80%以上时间，并受内存带宽和自回归特性限制。针对此瓶颈，上海交通大学与字节跳动研究团队联合提出了 RhymeRL 框架。该框架基于对模型生成答案“历史相似性”（序列相似性和长度分布相似性）的洞察，设计了两大核心组件：HistoSpec 和 HistoPipe。HistoSpec 将投机解码引入 RL，利用历史响应作为草稿进行并行验证，大幅提升单个响应生成速度；HistoPipe 则通过跨步互补调度策略，有效消除批处理中的 GPU 空泡，最大化集群资源利用率。实验结果表明，RhymeRL 在数学、代码等任务上实现了端到端训练吞吐量高达 2.61 倍的提升，且精度无损，为加速 AI 技术迭代提供了重要途径。",
+  "mainPoints": [
+    {
+      "point": "RL 训练中 Rollout 阶段是效率瓶颈，占据 80%以上时间。",
+      "explanation": "Rollout 阶段因内存带宽限制和自回归特性，导致计算效率低下，严重制约了大语言模型等深度思考能力的强化学习训练速度。"
+    },
+    {
+      "point": "模型生成答案存在“历史相似性”，可被有效利用。",
+      "explanation": "研究发现，相邻训练周期中模型生成的答案在序列和长度分布上高度相似，这为基于历史数据加速训练提供了理论基础。"
+    },
+    {
+      "point": "RhymeRL 框架通过 HistoSpec 和 HistoPipe 实现端到端加速。",
+      "explanation": "HistoSpec 利用历史响应进行投机解码，加速单个响应生成；HistoPipe 通过跨步互补调度优化批处理效率，两者结合实现训练吞吐量显著提升。"
+    }
+  ],
+  "keyQuotes": [
+    "其中，占据超过 80%时间的 Rollout（响应生成）阶段，由于其内存带宽限制和自回归特性，成为了整个 AI 基础设施中公认的阿喀琉斯之踵。",
+    "该团队联手推出的 RhymeRL ，从一个被忽视的现象入手，巧妙地将历史数据变废为宝，在不牺牲精度的前提下，将 RL 训练吞吐量提升了 2.6 倍。",
+    "HistoSpec 独创性地将投机解码（Speculative Decoding）技术引入 RL，它不再需要一个额外的小模型来'猜'草稿，而是直接把上一轮的历史响应作为'最佳剧本'。",
+    "HistoPipe 是一位具有前瞻性的调度大师，它的目标是：榨干每一滴 GPU 算力，实现无空泡的完美流水线。",
+    "端到端训练吞吐量提升高达 2.61 倍。"
+  ],
+  "tags": [
+    "强化学习",
+    "训练优化",
+    "大语言模型",
+    "Rollout",
+    "投机解码"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 1862,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757753123000,
+  "publishDateStr": "2025-09-13",
+  "publishDateTimeStr": "2025-09-13 08:45:23"
+}

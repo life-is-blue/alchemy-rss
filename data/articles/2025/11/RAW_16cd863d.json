@@ -1,0 +1,53 @@
+{
+  "id": "RAW_16cd863d",
+  "title": "对话周光：特斯拉路线能 Scaling Law，Waymo 到今天也在发展",
+  "url": "https://www.qbitai.com/2025/11/354283.html",
+  "date": "2025-11-19 12:14:44",
+  "author": "一凡",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"2\">“软硬结合量产辅助驾驶，会对自身造成阻碍”。</p>\n  <p data-track=\"3\">“Waymo从2019年就在凤凰城开跑，但今天也在发展”。</p>\n  <p data-track=\"4\">“后改装结合高精地图路线，短期会有优势”。</p>\n  <p data-track=\"5\">“但只有通过量产（辅助驾驶），才能享受到Scaling Law的红利。”</p>\n  <p data-track=\"6\">“以Mobileye为代表的上一代自动驾驶玩家，因为功能受限，逐渐被市场淘汰了。”</p>\n  <p data-track=\"7\">“模仿学习都没做好，谈什么强化学习。强化学习追求的是后面几个点（的增长）”。</p>\n  <p data-track=\"8\">这就是元戎启行CEO<strong>周光</strong>，以自身商业化进展为起点，最新分享的行业认知。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012153_a26508b0278fec62ce9bac9dc6295502.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"706\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">据周光透露，目前元戎方案已累计量产上车20万台，10月拿下了<strong>40%</strong>的城区NOA第三方供应商市场份额，明年将冲刺<strong>交付100万台</strong>，全部都是<strong>城区NOA车型</strong>，不做“纯高速NOA”方案。</p>\n  <p data-track=\"10\">量产辅助驾驶快速上量，也推动着元戎重启Robotaxi，基于量产乘用车，甩开高精地图，明年一年的时间，在国内跑通从0到1，实现车端无人收费运营，出海首站瞄准中东。</p>\n  <p data-track=\"11\">周光明确表示，自己走的正是“特斯拉路线”，即从L2向L4渐进式升维，<strong>“只有这样才能享受到Scaling Law的技术红利”</strong>。</p>\n  <p data-track=\"12\">而与之相对的，另一条并行的路线是“Waymo路线”，直奔Robotaxi终局。</p>\n  <p data-track=\"13\">通过元戎启行的最新分享，我们也能看到整个自动驾驶行业的<strong>热辣滚烫</strong>——<strong>玩家发声热辣，市场行情滚烫。</strong></p>\n  <p data-track=\"15\">实际上，这并不是元戎首次开展Robotaxi业务。据周光回忆，实际上在2020年初，元戎启行就在深圳福田部署了几十台无人车，但后来不做了，<strong>决定换一条路线</strong>。</p>\n  <p data-track=\"16\">这条路线就是<strong>数据驱动路线</strong>，也是所谓<strong>“特斯拉路线”</strong>：</p>\n  <p data-track=\"17\">先通过量产辅助驾驶，把模型落地到百万级车辆上，从而获取海量数据，反哺模型达到Scaling Law(规模法则)，让模型具有强大的泛化性，最终实现Robotaxi大规模部署。<strong>这也是元戎心目中“唯一的路径”。</strong></p>\n  <p data-track=\"18\">现在这条路径迎来关键里程碑，周光认为Robotaxi已经来到了规模化阶段。不过这一次，元戎落地Robotaxi的方式和上一次不太一样。</p>\n  <p data-track=\"19\"><strong>软件方面</strong>，Robotaxi和量产车共用一套VLA(Vision-Language-Action Model)技术架构，不用高精地图。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012153_5292417c84a20c8160113c35531990aa.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"647\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\"><strong>硬件方面</strong>，Robotaxi运营车辆基于量产乘用车打造，车辆本体很接近咱们在门店买到的车。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012153_8c86570f4c400d7f054d555623232d07.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"630\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\"><strong>运营方面</strong>，从副驾有人开始，一年实现车端无人和收费运营，出海首站瞄准中东。</p>\n  <p data-track=\"22\">总得来看，这和特斯拉今年的落地模式几乎一样，背后的原因也趋同。在周光看来，现在入局Robotaxi的时间刚刚好，因为积累的数据已经到了一定的阶段，可以开始了。</p>\n  <p data-track=\"23\">据周光透露，目前元戎方案已量产累计交付<strong>20万台</strong>，2026年冲刺全年交付<strong>100万台</strong>，<strong>100万台全都是城区NOA方案</strong>。</p>\n  <p data-track=\"24\">这是不是太快了？</p>\n  <p data-track=\"26\">元戎的量产之路始于去年，相比很多玩家开展得比较晚，与端到端范式同步兴起。到去年年底，元戎方案交付不过2万多台。</p>\n  <p data-track=\"27\">短短一年时间，元戎交付量就翻了10倍，尤其在近期爆发增长，9月交付超3万台，10月第三方机构的结果显示，<strong>元戎拿下了40%城市NOA第三方供应商市场份额</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012156_739189adc894442bd75f7177f3b2e784.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"578\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"28\">今年增势迅猛，明年势头不减，为什么能这么快？</p>\n  <p data-track=\"29\">元戎明年的底气主要来自于最新斩获的项目：</p>\n  <p data-track=\"30\">一家头部新能源车企的<strong>全系定点</strong>，这家车企的中型SUV产品是赛道销冠。你觉得是哪家呢？欢迎把答案分享在评论区。</p>\n  <p data-track=\"31\">元戎同时还分享了双方达成合作的背后故事。据周光透露，元戎团队曾先后在杭州、深圳、上海和慕尼黑等地展现元戎的技术。其中最难忘的一次是在深圳，客户因故<strong>凌晨4点</strong>才到深圳，惊喜地看到了元戎团队，被元戎打动，接受邀请试车。</p>\n  <p data-track=\"32\">多次试车后，最终在今年9月，VLA的推理能力和防御性驾驶惊艳了这个客户，最终确定了合作。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012153_ca77f559a56f64f69c63704f41c482db.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"602\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">一叶知秋，从这背后也能看出元戎实现快速增长的秘诀：</p>\n  <p data-track=\"34\"><strong>技术的前瞻和商业的专注。</strong></p>\n  <p data-track=\"35\">技术上，元戎去年在供应商中率先转向端到端范式，今年第一个对外供应VLA方案。商业选择上，元戎“不广撒网”，而是专注于少量客户的核心车型，携手制造爆款，用少量车型撬动多数市场。</p>\n  <p data-track=\"36\">这实际上类似于消费电子产业的<strong>爆品逻辑</strong>，比如苹果仅仅靠一款iPhone，不搞机海战术，就能拿下全球巨大的市场份额。</p>\n  <p data-track=\"37\">在周光看来，汽车行业也正在呈现相同的趋势，“以后可能就没那么多车型了，少数的车型拿多数的销量”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012154_b8b3465bd8d09702c2c7b2d3fd28bba7.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"420\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">但<strong>做爆品，并不意味着要去获取所有的市场</strong>，比如元戎不考虑提供<strong>“纯高速NOA”</strong>方案。</p>\n  <p data-track=\"39\">众所周知，现在行业具有城区NOA量产能力的玩家，基本都会提供一套纯高速NOA方案，下探到更大的市场。但在元戎看来，做高速NOA对获取数据并没有帮助。</p>\n  <p data-track=\"40\">据元戎透露，<strong>市面上大量的高速NOA车型，实际上并没有数据回传的能力</strong>，这里面有一个成本的问题，你要想有数据回传能力，需要在车端部署硬件，加上传输数据的网费，几乎赚不到钱。</p>\n  <p data-track=\"41\">不过<strong>成本也不是元戎考虑的全部</strong>，比如很多玩家都在走的软硬结合路线，元戎坦承，这确实在外供方案时更有成本优势。</p>\n  <p data-track=\"42\">但是一方面这会在量产辅助驾驶时，对自身选择更好的芯片造成阻碍。另一方面，从终局考虑，落地Robotaxi其实首要考虑的也不是芯片成本。</p>\n  <p data-track=\"43\">而以终为始，元戎会继续以量产辅助驾驶为基石，获取数据和工程化经验，服务<strong>Robotaxi</strong>和<strong>RoadAGI</strong>业务。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012153_bd187b408967102582e1b00d97fc6cb7.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"499\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"44\">RoadAGI是元戎启行今年推出的一项新战略，主要服务于“最后100米”的配送。</p>\n  <p data-track=\"45\">技术范式是基于VLA和VLN(Vision-Language-Navigation)，所谓VLN就是自己根据环境感知，不需要靠扫图，实现点到点的运输。在周光看来，这也和当前火热的无人配送的技术路线有所不同。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"对话周光：特斯拉路线能Scaling Law，Waymo到今天也在发展\" src=\"https://image.jido.dev/20251120012154_46fe3d5ad4d152eed2b7617371eda754.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"736\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"46\">周光表示，<strong>“我们走这条路的根本原因，其实就是GPT的出现，是Scaling Law的技术红利，只有通过量产（辅助驾驶）才能享受到这个红利，依赖高精地图的传统方式，是无法享受到的”。</strong></p>\n  <p data-track=\"47\">总体来看，元戎的分享还挺全面的，但是总觉得又少了点什么。</p>\n  <p data-track=\"48\">少了什么呢？</p>\n  <p data-track=\"50\">从辅助驾驶聊到自动驾驶，周光本人并没有主动提及L3。当面对相关提问时，周光认为L3确实有助于消费者购买，但<strong>这和落地Robotaxi是两回事</strong>：</p>\n  <blockquote>\n   <p data-track=\"51\">特斯拉就没有做L3，直接进军L4，底层逻辑不一样，既是技术问题，也是商业问题。</p>\n   <p data-track=\"52\">L3是规则写得越详细，团队规模越大越牛。但想做Robotaxi的服务，需要一个泛化性足够好的模型。我觉得L3跟L4有冲突。</p>\n  </blockquote>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "元戎启行 CEO 周光分享其“特斯拉路线”下的自动驾驶商业化进展与战略，强调量产辅助驾驶对实现 Scaling Law 和 Robotaxi 的关键作用。",
+  "oneSentenceSummary": "元戎启行 CEO 周光分享其“特斯拉路线”下的自动驾驶商业化进展与战略，强调量产辅助驾驶对实现 Scaling Law 和 Robotaxi 的关键作用。",
+  "summary": "元戎启行 CEO 周光在访谈中阐述了公司在自动驾驶领域的“特斯拉路线”战略，即通过量产辅助驾驶获取海量数据，反哺 AI 模型实现 Scaling Law，进而规模化部署 Robotaxi。他强调“软硬结合量产辅助驾驶”可能阻碍芯片选择，并批评 Mobileye 等旧玩家因功能受限、无法享受 Scaling Law 红利而被市场淘汰。文章明确表示，元戎走的是“特斯拉路线”，即从 L2 向 L4 渐进式升维，与直奔 Robotaxi 终局的“Waymo 路线”形成对比。文章透露元戎方案已量产上车 20 万台，目标明年交付 100 万台城区 NOA 车型，并基于量产乘用车重启 Robotaxi，放弃高精地图，计划一年内实现国内无人收费运营并出海中东。周光还介绍了元戎的技术前瞻性（率先转向端到端、VLA 方案）和商业专注（爆品逻辑），并解释了不提供纯高速 NOA 及不追逐 L3 的原因，最后提及为“最后 100 米”配送服务的 RoadAGI 战略。",
+  "mainPoints": [
+    {
+      "point": "量产辅助驾驶是实现自动驾驶 Scaling Law 的关键路径",
+      "explanation": "通过大规模量产辅助驾驶获取海量真实数据，反哺 AI 模型训练，使其具备强大的泛化能力，是实现 L4 Robotaxi 规模化部署的唯一有效途径。"
+    },
+    {
+      "point": "元戎启行坚守数据驱动的“特斯拉路线”并取得显著进展",
+      "explanation": "元戎已累计量产上车 20 万台，明年目标 100 万台城区 NOA，并以此为基础重启 Robotaxi，证明了该路线在商业化和技术发展上的可行性。"
+    },
+    {
+      "point": "L3 与 L4 Robotaxi 存在底层逻辑冲突，应聚焦泛化性模型",
+      "explanation": "周光认为 L3 强调详细规则，与 L4 所需的高度泛化模型相悖，特斯拉直接进军 L4 的策略更符合 Scaling Law 的红利，是技术与商业的共同选择。"
+    }
+  ],
+  "keyQuotes": [
+    "但只有通过量产（辅助驾驶），才能享受到 Scaling Law 的红利。",
+    "我们走这条路的根本原因，其实就是 GPT 的出现，是 Scaling Law 的技术红利，只有通过量产（辅助驾驶）才能享受到这个红利，依赖高精地图的传统方式，是无法享受到的。",
+    "特斯拉就没有做 L3，直接进军 L4，底层逻辑不一样，既是技术问题，也是商业问题。L3 是规则写得越详细，团队规模越大越牛。但想做 Robotaxi 的服务，需要一个泛化性足够好的模型。我觉得 L3 跟 L4 有冲突。"
+  ],
+  "tags": [
+    "自动驾驶",
+    "特斯拉路线",
+    "Robotaxi",
+    "Scaling Law",
+    "量产辅助驾驶"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 86,
+  "wordCount": 2508,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763554484000,
+  "publishDateStr": "2025-11-19",
+  "publishDateTimeStr": "2025-11-19 12:14:44"
+}

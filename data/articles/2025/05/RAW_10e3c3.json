@@ -1,0 +1,57 @@
+{
+  "id": "RAW_10e3c3",
+  "title": "Django 零基础速成教程",
+  "url": "https://www.freecodecamp.org/news/django-crash-course-for-beginners/",
+  "date": "2025-05-01 16:58:11",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Django is a high-level web framework built with Python that encourages rapid development and clean, pragmatic design. Django handles much of the heavy lifting involved in web development, so you can focus more on writing your app and less on reinventing the wheel. Whether you want to build a blog, an e-commerce platform, or a custom web service, Django provides the structure and tools to help you get the job done efficiently.</p>\n  <p>What makes Django especially powerful is its “batteries-included” philosophy. This means it comes with a wide range of features out of the box, including an ORM (Object-Relational Mapper) for interacting with databases, a templating engine for rendering dynamic HTML pages, robust form handling, user authentication, an admin interface, and much more. Django is also built with security in mind, offering protection against common web vulnerabilities like SQL injection, cross-site scripting, and cross-site request forgery. Plus, Django’s active community and extensive documentation make it one of the most accessible frameworks for beginners.</p>\n  <p>We just published a course on the <a target=\"_blank\" href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you all about getting started with Django. Taught by Abel Gideon, this Django crash course for beginners offers a step-by-step introduction to the framework and its core components. You’ll begin with setting up your development environment and understanding how to use essential tools like <code>django-admin</code> and <a target=\"_blank\" href=\"http://manage.py\"><code>manage.py</code></a>. From there, the course introduces the fundamental concepts of Django’s architecture, particularly the Model-View-Template (MVT) pattern, which separates data handling, logic, and presentation.</p>\n  <p>The course covers things like how to create Django apps, define views and handle requests, work with models and databases, and design user-facing pages using Django’s template system. You’ll also explore how forms work in Django, how to use the Django Admin panel for content management, and how to integrate a MySQL database into your project. The course culminates in building a complete Django project, giving you a real-world example of how everything fits together.</p>\n  <p>By the end of the course, you’ll have a clear understanding of how Django works and how to use it to create your own dynamic web applications. Whether you’re looking to build a personal website, a data-driven dashboard, or the backend for a mobile app, this course will give you the foundation you need to move forward confidently in Django development.</p>\n  <p>Watch the full course on <a target=\"_blank\" href=\"https://youtu.be/0roB7wZMLqI\">the freeCodeCamp.org YouTube channel</a> (1-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/0roB7wZMLqI\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Django 零基础速成教程：掌握 Django Web 开发核心概念，构建动态 Web 应用。",
+  "oneSentenceSummary": "Django 零基础速成教程：掌握 Django Web 开发核心概念，构建动态 Web 应用。",
+  "summary": "本文为初学者提供 Django 框架的快速入门指导，强调其 “batteries-included” 的特性，简化数据库操作、模板渲染等 Web 开发环节，使开发者能够更专注于业务逻辑。文章还介绍了 Django 的 MVT 架构及其安全机制，并通过推荐 freeCodeCamp.org 上的速成课程，一步一步地指导读者从环境搭建到项目构建，最终能够运用 Django 构建动态 Web 应用。",
+  "mainPoints": [
+    {
+      "point": "Django “batteries-included” 简化 Web 开发",
+      "explanation": "Django 自带多种功能，开发者无需重复造轮子，正如文章金句所说，可以更专注于业务逻辑实现。"
+    },
+    {
+      "point": "MVT 架构使 Django 代码结构更清晰，易于维护",
+      "explanation": "MVT 模式将数据处理、业务逻辑和用户界面分离，提高了代码可维护性和可扩展性。"
+    },
+    {
+      "point": "Django 提供强大的安全特性",
+      "explanation": "内置的安全机制能够有效防御 SQL 注入、XSS 和 CSRF 等常见 Web 安全威胁，保障应用安全。"
+    },
+    {
+      "point": "通过构建完整的 Django 项目，学习者可以获得实践经验",
+      "explanation": "该教程通过实际项目案例，帮助学习者理解如何将各个组件整合在一起，提升解决实际问题的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "Django is a high-level web framework built with Python that encourages rapid development and clean， pragmatic design. （Django 是一个使用 Python 构建的高级 Web 框架，鼓励快速开发和简洁实用的设计。）",
+    "What makes Django especially powerful is its \"batteries-included\" philosophy. （Django 最强大的地方在于其 “batteries-included” 的理念。）",
+    "The course introduces the fundamental concepts of Django's architecture， particularly the Model-View-Template (MVT) pattern， which separates data handling， logic， and presentation. （本课程介绍了 Django 架构的基本概念，特别是模型-视图-模板 (MVT) 模式，它分离了数据处理、逻辑和表示。）"
+  ],
+  "tags": [
+    "Web框架",
+    "Django",
+    "Python",
+    "MVT架构",
+    "ORM"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 393,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1746118691000,
+  "publishDateStr": "2025-05-01",
+  "publishDateTimeStr": "2025-05-01 16:58:11"
+}

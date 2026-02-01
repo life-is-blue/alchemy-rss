@@ -1,0 +1,59 @@
+{
+  "id": "RAW_25d05c14",
+  "title": "谷歌 Gemini 3 把 GPT-5.1 打成计量单位！马斯克奥特曼都服了",
+  "url": "https://www.qbitai.com/2025/11/354072.html",
+  "date": "2025-11-19 01:41:40",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"37\">梦晨 闻乐 发自 凹非寺</p>\n   <p data-track=\"38\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">不得了。</p>\n  <p data-track=\"3\">谷歌Gemini 3 Pro进步太大了，与<strong>上一代2.5 Pro之间差出一个GPT-5.1</strong>（狗头）。</p>\n  <p data-track=\"4\">新模型在几乎所有基准测试中超过GPT-5.1和Claude4.5，包括<strong>人类最后的考试、ARC-AGI-2</strong>这些专为AGI准备的测试，<strong>数学的AIME 2025</strong>带工具拿满分，还刷新了之前让大模型全员得0分的<strong>LiveCodeBench Pro</strong>纪录。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_67330a3795ca800d494fa32f84bd7f4d.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"987\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">用户投票的大模型竞技场也是一样，马斯克的Grok4.1昨天才刷完榜，今天就被反超了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_1b45c7c51bd576c128d192d49b0a085d.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"420\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">这下奥特曼和马斯克也不得不佩服了，前后脚出来点赞祝贺。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_8bb5a5abf40a222b18428ceed2f390b4.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"194\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_27c38c2867053f3ec30b20bfcd8ad852.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"168\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">测试期间看Gemini 3模拟Windows、Mac、Linux三大操作系统界面，还以为它只擅长设计前端呢，原来设计出的程序他真能用啊。</p>\n  <p data-track=\"8\">设计一个乐高编辑器，<strong>一次尝试</strong>就完成了界面+负责空间逻辑和所有编辑器功能。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://www.qbitai.com/wp-content/uploads/replace/8b21577d4e121cde6952d88d473b8886.gif\" data-ic=\"false\" data-width=\"900\" data-height=\"541\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">谷歌官方用Gemini 3 Pro设计的游戏更是发布在了油管上可以直接玩，纯靠AI都能搭起一个4399小游戏网了你敢信？</p>\n  <p data-track=\"10\">在智能体任务上，Gemini 3 Pro不光擅长编程，还强化了现实生活任务的长期规划能力，模拟管理自动售货机一年赚了5000美元，取得所有模型中最高的收入。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_f52296540f4ebb29331042963f9dfc0a.png\" data-ic=\"false\" data-width=\"1000\" data-height=\"677\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">从今天起，谷歌宣布“以整个公司的体量”发布Gemini 3系列模型，包括首次在发布当天就将Gemini整合进搜索，上线独立APP，还推出全新的智能体开发平台。</p>\n  <p data-track=\"12\">还有一个更强Gemini 3 Deep Think深度思考模式，正在路上。</p>\n  <p data-track=\"13\">至于这么大的能力飞跃如何实现的，只有研究VP Oriol Vinyals透露了一点：<strong>预训练还没结束</strong>，后训练也还有很大改进空间。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_b60619eecc0373e9174893bbb106b44c.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"748\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">回看Gemini系列这几年的演进，有点像打怪升级了，每一代都在补上一代的短板，然后在下一代里又把所有能力都打磨一遍。</p>\n  <p data-track=\"16\"><strong>1代</strong>奠定根基，把<strong>多模态能力和超长上下文</strong>打通，Gemini成为第一个能够处理百万级tokens上下文的大模型。</p>\n  <p data-track=\"17\"><strong>2代</strong>就开始变得有行动力，在1代的基础上记住大量信息后，它就整合海量信息进行决策和规划，这也为<strong>智能体能力</strong>铺了路。</p>\n  <p data-track=\"18\">到了<strong>Gemini 2.5</strong>，谷歌则开始认真搞<strong>思考和推理</strong>，给它加了思考引擎，让它能做更深入的推理、链式思考，甚至模仿人类分步解决问题。</p>\n  <p data-track=\"19\">现在的3代更是能力的集大成者，不是简单堆料，而是深度融合，多模态、推理、Agent能力这些特性一起进化，主打“你敢想，我实现”。</p>\n  <p data-track=\"20\">而且，Gemini 3更明显的变化是<strong>更懂人话</strong>了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_bffe837b665f95278417ae074c8553a2.jpeg\" data-ic=\"false\" data-width=\"456\" data-height=\"448\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">不用纠结提示词是否写得“有水平”，只要把需求一丢，再长的提示词它也能抓住语境、明白意图，然后回你一句更简洁又直接的答案，没有彩虹屁的那种（doge）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://www.qbitai.com/wp-content/uploads/replace/f7364ccb1e73a0d1f52a133c1afa0372.gif\" data-ic=\"false\" data-width=\"800\" data-height=\"425\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">多模态方面更是开挂，文本、图像、视频、音频和代码一股脑地无缝理解。</p>\n  <p data-track=\"23\">比如说，给它看一段球赛的长视频，它就能总结打法，把球员技巧整理出来，然后顺便教你复现动作。</p>\n  <p data-track=\"24\">怎么感觉，上传自己的训练视频，就可以直接让Gemini 3当教练了……</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://www.qbitai.com/wp-content/uploads/replace/0e695ebbe893cf9203e184268823519f.gif\" data-ic=\"false\" data-width=\"800\" data-height=\"425\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">在搜索场景里，Gemini 3也不是直接扔给你一堆链接，而是把即时查询的信息组织成你真正能用的东西，生成可交互式的内容。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌Gemini 3把GPT-5.1打成计量单位！马斯克奥特曼都服了\" src=\"https://image.jido.dev/20251119040742_0423dc18cf709f731e9eb15f44061d32.png\" data-ic=\"false\" data-width=\"1062\" data-height=\"680\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\">这次与旗舰模型Gemini 3 Pro同步推出的，还有<strong>Google Antigravity（反重力）</strong>实验性智能体开发平台。</p>\n  <p data-track=\"28\">其核心理念是构建一个“智能体优先”（agent-first）的开发环境，将开发者从繁琐的编码工作中解放出来，转向更高层次、面向任务的架构师角色。</p>\n  <p data-track=\"29\">官方展示了如何用1分钟开发一个航班追踪程序。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251119040742_755d5be7f0c21a374060c947281de4c3.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"613\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">与Cursor为代表的AI IDE相比，Google Antigravity的智能体已被提升到一个独立的界面，并可直接访问编辑器、终端和浏览器。智能体可以代表用户自主规划和执行复杂的端到端软件任务，同时验证自身的代码。</p>\n  <p data-track=\"31\">全新的管理器视图旨在同时控制多个智能体，使每个智能体都能更加自主地工作。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251119040742_80a53a7950b59c06791f9e0c8bea4106.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"680\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"32\">谷歌对这款开发工具的野心很大，他不仅支持Gemini系列模型，也允许使用GPT-OSS、Claude第三方模型。</p>\n  <p data-track=\"33\">Antigravity目前以公共预览版的形式免费提供，并承诺为Gemini 3 Pro的使用提供“慷慨的速率限制”，一发布就吸引了大量开发者来“薅羊毛”。</p>\n  <p data-track=\"34\">目前Claude Code收入占Anthropic总营收约21%，OpenAI也在不断围绕Codex做文章。</p>\n  <p data-track=\"35\">AI编程工具，看来是下一个必争之地了。</p>\n  <p data-track=\"36\">参考链接：\n   <br>\n   [1]https://blog.google/products/gemini/gemini-3/#learn-anything</p>\n  <p data-track=\"39\">— 完 —</p>\n  <p data-track=\"40\">量子位 QbitAI · 头条号签约</p>\n  <p data-track=\"41\">关注我们，第一时间获知前沿科技动态</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谷歌 Gemini 3 Pro 模型在多项基准测试中超越现有顶级模型，展现出强大的多模态、智能体和推理能力，并推出创新性的智能体开发平台 Antigravity。",
+  "oneSentenceSummary": "谷歌 Gemini 3 Pro 模型在多项基准测试中超越现有顶级模型，展现出强大的多模态、智能体和推理能力，并推出创新性的智能体开发平台 Antigravity。",
+  "summary": "文章详细报道了谷歌最新发布的 Gemini 3 Pro 模型，强调其在性能上取得的巨大飞跃，在包括 AGI、数学（AIME 2025 带工具满分）和代码生成（刷新 LiveCodeBench Pro 纪录）等多项基准测试中超越了 GPT-5.1 和 Claude 4.5。Gemini 3 Pro 不仅在编程能力上表现卓越，如一次性设计乐高编辑器和开发可玩游戏，还在智能体任务的长期规划能力上取得显著进展。谷歌宣布将 Gemini 3 系列模型全面整合进搜索、独立 APP，并推出实验性智能体开发平台 Antigravity，旨在构建一个“智能体优先”的开发环境，解放开发者。文章还回顾了 Gemini 系列模型的演进，指出 Gemini 3 是多模态、推理和智能体能力的深度融合，并显著提升了对人类自然语言的理解力。Antigravity 平台支持多模型，预示着 AI 编程工具将成为技术竞争的下一个焦点。",
+  "mainPoints": [
+    {
+      "point": "Gemini 3 Pro 在多项基准测试中超越现有顶级模型，树立新标杆。",
+      "explanation": "新模型在 AGI、数学和代码生成等测试中表现卓越，尤其在 LiveCodeBench Pro 上取得突破，显示出其强大的综合能力和领先地位。"
+    },
+    {
+      "point": "Gemini 3 Pro 显著增强了多模态理解与智能体行动能力。",
+      "explanation": "它能无缝处理文本、图像、视频、音频和代码，并具备长期的现实任务规划和执行能力，可实现复杂应用开发和商业模拟。"
+    },
+    {
+      "point": "谷歌推出“Antigravity”智能体开发平台，推动 AI 编程范式变革。",
+      "explanation": "该平台旨在将开发者从繁琐编码中解放，转向高层次任务架构，支持多模型，预示 AI 编程工具将成为新的竞争焦点。"
+    },
+    {
+      "point": "Gemini 3 系列模型通过深度融合实现能力飞跃，更懂用户意图。",
+      "explanation": "模型不再是简单堆叠功能，而是多模态、推理、Agent 能力的深度融合，大幅提升了对复杂提示词的理解力，使交互更自然高效。"
+    }
+  ],
+  "keyQuotes": [
+    "谷歌 Gemini 3 Pro 进步太大了，与上一代 2.5 Pro 之间差出一个 GPT-5.1（狗头）。",
+    "新模型在几乎所有基准测试中超过 GPT-5.1 和 Claude 4.5，包括人类最后的考试、ARC-AGI-2 这些专为 AGI 准备的测试。",
+    "现在的 3 代更是能力的集大成者，不是简单堆料，而是深度融合，多模态、推理、Agent 能力这些特性一起进化，主打“你敢想，我实现”。",
+    "不用纠结提示词是否写得“有水平”，只要把需求一丢，再长的提示词它也能抓住语境、明白意图，然后回你一句更简洁又直接的答案，没有彩虹屁的那种（doge）。",
+    "AI 编程工具，看来是下一个必争之地了。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Gemini 3",
+    "多模态",
+    "智能体",
+    "AI 编程工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 92,
+  "wordCount": 1755,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763516500000,
+  "publishDateStr": "2025-11-19",
+  "publishDateTimeStr": "2025-11-19 01:41:40"
+}

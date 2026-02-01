@@ -1,0 +1,54 @@
+{
+  "id": "RAW_0afa8d54",
+  "title": "今年我试了十几款 AI 编程工具，最终只留下这 3 个",
+  "url": "https://juejin.cn/post/7583912899389325355",
+  "date": "2025-12-15 13:52:30",
+  "author": "飞哥数智谈",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>今年一年，尝试并分享了 N 多的 AI 开发工具，今天就给大家分享下个人目前稳定的 <strong>AI 开发工具集</strong>。</p>\n   <p>最近没有引入什么新开发工具（包括<code>AntiGravity</code>），主力主要是以下3个：</p>\n   <ul>\n    <li>TRAE</li>\n    <li>Cursor</li>\n    <li>Claude Code（GLM-4.5）</li>\n   </ul>\n   <p><strong>TRAE</strong></p>\n   <p>TRAE 主要有三类场景：</p>\n   <ul>\n    <li>SOLO 模式。这个真的极其推荐，<strong>小项目</strong>的一把梭哈就不说了，环境部署、物联网开发等强依赖<strong>终端调试</strong>的场景，SOLO 也能完美适配。 <img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/6cddc870845842788acb20704ea0bdc9~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6aOe5ZOl5pWw5pm66LCI:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766411550&amp;x-signature=tXKEphmnMCXTsNguazMve4PLvhw%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>原来的 <code>Claude 4</code>（现已不能使用），现在的 <code>Gemini 3 Pro</code>。面对特定场景，只能他们来攻克难题。而 TRAE 不需要魔法就能直接使用，这个应该是国产竞品中比较良心的了。</li>\n    <li>非编程场景，比如文章优化、项目文档编写等，通过<strong>自定义智能体</strong>的方式，灵活且直观。</li>\n   </ul>\n   <p>好像有很多人还不知道：<code>TRAE</code> 国内版，有 <code>SOLO</code>，还免费。</p>\n   <p><strong>Cursor</strong></p>\n   <p>针对一些复杂项目，尤其是需要手动编写部分代码的，我会选择 <code>Cursor</code>。</p>\n   <p>上下文的抽取和需求的理解，<code>Cursor</code> 还是顶级的，其次就是手动编写代码时，<code>Cursor</code> 的 <code>Tab</code> 用起来真的享受。</p>\n   <p>举一个小例子，<code>MyBatis</code> 中原本 <code>select</code> 了一个单表，需求变动为关联查询，此时需要在 <code>select</code> 的字段前面增加别名。<code>Cursor</code> 下真的只需要录入一个别名，就会把剩下字段全部的别名加上。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/55c0ceb002e241c6b2249615f45c8586~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6aOe5ZOl5pWw5pm66LCI:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766411550&amp;x-signature=eMl8THZT03LdfiyXh5T5YHuO1Hw%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><strong>Claude Code</strong></p>\n   <p><code>Claude Code</code> 的应用场景则更加明确。</p>\n   <p>就是嵌入到我们内部的自动化研发流程中，逐步替代人工研发，长远目标就是搭建一套完整的 AI 研发团队。</p>\n   <p>好了今天就介绍到这里吧，如果这几个工具你有什么更好的场景或者疑问，欢迎交流~</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "作者分享了其在 AI 编程工具实践中，经过多款工具尝试后最终选择并留下三款主力工具：TRAE、Cursor 和 Claude Code，并介绍了它们的核心使用场景和优势。",
+  "oneSentenceSummary": "作者分享了其在 AI 编程工具实践中，经过多款工具尝试后最终选择并留下三款主力工具：TRAE、Cursor 和 Claude Code，并介绍了它们的核心使用场景和优势。",
+  "summary": "文章总结了作者在 2024 年尝试多款 AI 编程工具后，最终筛选出的三款主力工具：TRAE、Cursor 和 Claude Code。TRAE 因其 SOLO 模式在小型项目和终端调试场景下的优秀表现，以及对特定难题的攻克能力和自定义智能体功能受到推荐。同时，文章强调了 TRAE 在国内版具备 SOLO 模式且免费的特点。Cursor 在处理复杂项目和理解上下文方面表现出色，并简化了开发中手动编写代码的繁琐任务，如 MyBatis 关联查询中的字段别名添加。最后，Claude Code 被主要应用于内部自动化研发流程，以逐步替代人工研发，构建 AI 研发团队为长远目标。文章旨在为读者提供 AI 编程工具的实践经验和选择参考。",
+  "mainPoints": [
+    {
+      "point": "TRAE 适用于小项目开发、终端调试及非编程场景，且国内版免费提供 SOLO 模式。",
+      "explanation": "TRAE 的 SOLO 模式在环境部署、物联网开发等需要终端调试的场景表现优异，并通过自定义智能体支持文章优化、文档编写等非编程任务，其在国内的免费可用性是重要优势。"
+    },
+    {
+      "point": "Cursor 在复杂项目代码编写和上下文理解方面具有独特优势，能大幅提升编码效率。",
+      "explanation": "Cursor 在面对复杂项目时，其对代码上下文的精准理解以及智能补全功能（如 MyBatis 字段别名），显著提升了手动编写代码的效率和体验。"
+    },
+    {
+      "point": "Claude Code 主要用于企业内部自动化研发流程，以实现 AI 研发团队的构建。",
+      "explanation": "Claude Code 的定位是作为企业内部研发流程自动化的核心工具，旨在逐步替代重复性人工研发工作，推动实现 AI 辅助的研发模式。"
+    }
+  ],
+  "keyQuotes": [
+    "SOLO 模式。这个真的极其推荐，小项目 的一把梭哈就不说了，环境部署、物联网开发等强依赖终端调试 的场景，SOLO 也能完美适配。",
+    "面对特定场景，只能他们来攻克难题。而 TRAE 不需要魔法就能直接使用，这个应该是国产竞品中比较良心的了。",
+    "上下文的抽取和需求的理解，Cursor 还是顶级的，其次就是手动编写代码时，Cursor 的 Tab 用起来真的享受。",
+    "Claude Code 的应用场景则更加明确。就是嵌入到我们内部的自动化研发流程中，逐步替代人工研发，长远目标就是搭建一套完整的 AI 研发团队。"
+  ],
+  "tags": [
+    "AI编程工具",
+    "编程工具",
+    "TRAE",
+    "Cursor",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 561,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765806750000,
+  "publishDateStr": "2025-12-15",
+  "publishDateTimeStr": "2025-12-15 13:52:30"
+}

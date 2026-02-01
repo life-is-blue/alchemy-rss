@@ -1,0 +1,57 @@
+{
+  "id": "RAW_80d285",
+  "title": "OpenAI 推出 GPT‑4.1 系列，增强性能和长文本支持",
+  "url": "https://www.infoq.com/news/2025/05/openai-gpt-4-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-12 00:00:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>OpenAI has released a <a href=\"https://openai.com/index/gpt-4-1/\">new family of language models</a>—GPT‑4.1, GPT‑4.1 mini, and GPT‑4.1 nano—available via its API. The models improve on GPT‑4o and GPT‑4.5 across several technical benchmarks and introduce support for up to 1 million tokens of context.</p>\n   <p>According to OpenAI, GPT‑4.1 improves coding capabilities, instruction following, and long-context comprehension. On the <a href=\"https://www.swebench.com/\">SWE-bench Verified benchmark</a>, which measures real-world software engineering tasks, GPT‑4.1 achieves 54.6% accuracy. This is a 21-point increase over GPT‑4o (33.2%) and 26.6 points higher than GPT‑4.5. The model also shows a 10.5-point improvement over GPT‑4o on<a href=\"https://scale.com/research/multichallenge\"> Scale’s MultiChallenge instruction benchmark</a>.</p>\n   <p>\n    <meta charset=\"utf-8\"><b id=\"docs-internal-guid-7af52c7c-7fff-c670-aa42-bbeec71446ec\"><img alt=\"swe-bench verified accuracy\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXco2tkmeQ6pJWiWT4m-0qzv5N6RgrCh_btEmolsyTbYIgZq5_wU2RxvQFmJq2hKmxM3nrfVTkKh7TalRHdYJX9KnOgD7s6wLreqSmDPrzxc51eKNNRqickPmpWgFBo9fwxjKhivEg?key=3jSVEOTs9k_GANIwEy1XoA\" style=\"width: 602px; height: 353px;\" rel=\"share\"></b><br><em>Source: OpenAI Blog</em></p>\n   <p>OpenAI also tested the model’s ability to process extended inputs. All models in the GPT‑4.1 family can handle up to 1 million tokens. Internal evaluations, including <a href=\"https://huggingface.co/datasets/openai/mrcr\">OpenAI-MRCR</a> and <a href=\"https://huggingface.co/datasets/openai/graphwalks\">Graphwalks</a>, indicate that GPT‑4.1 performs reliably across long-context tasks, such as retrieving and reasoning over dispersed information. For example, GPT‑4.1 scored 61.7% on Graphwalks, a benchmark for multi-hop reasoning, compared to 42% for GPT‑4o.</p>\n   <p>\n    <meta charset=\"utf-8\"><b id=\"docs-internal-guid-c93dbc8f-7fff-e2d4-ccd5-276d08b02e99\"><img alt=\"openai-mrcr accuracy \" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXdISxzvOu4VqSssWDBfh50fTh4WJKjz3SJHKRxuDhFDLTSHgyIFamdiHOSMGfQQprAff_XclArGNvvxTvnzlxYXY1B6O71WiJUpy0XvecaLvs_Sid2p3GiZfOSkSY6q0sOn3QYu?key=3jSVEOTs9k_GANIwEy1XoA\" style=\"width: 602px; height: 575px;\" rel=\"share\"></b><br><em>Source: OpenAI Blog</em></p>\n   <p>In addition to the main model, GPT‑4.1 mini offers similar performance at lower latency and cost. OpenAI says it matches or exceeds GPT‑4o on most intelligence evaluations while reducing cost by 83%. GPT‑4.1 nano is the smallest and fastest in the series. It is designed for simpler tasks like classification and autocomplete, but still posts high scores, such as 80.1% on <a href=\"https://zilliz.com/glossary/mmlu-benchmark\">MMLU</a> and 50.3% on <a href=\"https://arxiv.org/abs/2311.12022\">GPQA</a>.</p>\n   <p>The company also emphasized improvements in code editing. In <a href=\"https://aider.chat/docs/leaderboards/\">Aider’s polyglot benchmark</a>, which tests the ability to generate diffs rather than full-file rewrites, GPT‑4.1 outperforms all previous models, including GPT‑4.5. The model produces fewer unnecessary edits, decreasing from 9% in GPT‑4o to 2% in GPT‑4.1.</p>\n   <p>OpenAI confirmed that <a href=\"https://openai.com/index/introducing-gpt-4-5/\">GPT‑4.5 Preview</a> will be deprecated on July 14, 2025. The company cited cost and performance improvements in GPT‑4.1 as reasons for the transition. This aligns with speculation in the community about the temporary nature of GPT‑4.5. One Reddit user <a href=\"https://www.reddit.com/r/OpenAI/comments/1jzbplj/comment/mn5vbmk/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">commented</a>:</p>\n   <blockquote>\n    <p>GPT-4.5 was just a preview, not even a 'public beta.' It was just to see what they were (or are) doing regarding new models. Since it is not an official version, it could be said that GPT-4.5 'never' existed, and that is why the new version is GPT-4.1… During the period in which it was available, OpenAI was collecting data… to make, perhaps, a more capable and not so expensive distilled model, which ended up being GPT-4.1.</p>\n   </blockquote>\n   <p>Pricing has also been adjusted. GPT‑4.1 is around 26% cheaper than GPT‑4o for typical queries. Prompt caching discounts have been raised to 75%, and long-context usage no longer incurs additional charges beyond standard per-token costs.<br><br>\n     The GPT‑4.1 family is now accessible via the OpenAI API. It is not yet available in ChatGPT, where updates to GPT‑4o are ongoing.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI Introduces GPT‑4.1 Family With Enhanced Performance and Long-Context Support\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/openai-gpt-4-1/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1747071600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 GPT‑4.1 系列，显著增强性能、长文本支持并降低成本，可通过 API 使用。",
+  "oneSentenceSummary": "OpenAI 发布 GPT‑4.1 系列，显著增强性能、长文本支持并降低成本，可通过 API 使用。",
+  "summary": "OpenAI 发布了 GPT‑4.1 系列模型，包括 GPT‑4.1、GPT‑4.1 mini 和 GPT‑4.1 nano，可通过其 API 访问。GPT‑4.1 在多个基准测试中优于 GPT‑4o 和 GPT‑4.5，支持高达 100 万令牌（tokens）的上下文，并在编码等复杂任务中表现出改进。GPT‑4.1 mini 以更低的成本提供类似的性能，而 GPT‑4.1 nano 专为更简单、更快速的任务而设计。GPT‑4.1 的发布也意味着 GPT‑4.5 Preview 将于 2025 年 7 月 14 日停止提供。GPT‑4.1 的定价大约比 GPT‑4o 便宜 26%。",
+  "mainPoints": [
+    {
+      "point": "GPT‑4.1 增强了代码编写效率和长文本语义理解能力",
+      "explanation": "GPT‑4.1 在 SWE-bench 和 OpenAI-MRCR 等基准测试中表现出色，代码生成和长文本处理能力得到提升。"
+    },
+    {
+      "point": "GPT‑4.1 mini 以更低的成本提供类似的性能",
+      "explanation": "GPT‑4.1 mini 在大多数智能评估中与 GPT‑4o 相匹配或超过 GPT‑4o，同时降低了 83% 的成本，提供了更好的成本效益。"
+    },
+    {
+      "point": "GPT‑4.1 改进了代码编辑",
+      "explanation": "GPT‑4.1 在 Aider 的 polyglot 基准测试中优于之前的模型，减少了不必要的编辑。"
+    },
+    {
+      "point": "GPT‑4.1 系列可通过 API 使用，但 ChatGPT 目前仍在更新 GPT‑4o",
+      "explanation": "GPT‑4.1 模型可以通过 OpenAI API 访问。同时，ChatGPT 中的 GPT‑4o 也在不断进行更新。"
+    }
+  ],
+  "keyQuotes": [
+    "GPT‑4.1 提高了编码能力、指令遵循能力和长文本理解能力。",
+    "GPT‑4.1 的典型查询比 GPT‑4o 便宜约 26%。",
+    "GPT‑4.5 只是一个预览版，甚至还未达到“公开测试版”的阶段。它的推出更多是为了探索新模型的开发方向。"
+  ],
+  "tags": [
+    "大语言模型",
+    "GPT‑4.1",
+    "GPT‑4.5",
+    "OpenAI",
+    "API"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 451,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1747008000000,
+  "publishDateStr": "2025-05-12",
+  "publishDateTimeStr": "2025-05-12 00:00:00"
+}

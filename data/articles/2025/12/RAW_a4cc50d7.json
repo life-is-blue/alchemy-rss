@@ -1,0 +1,69 @@
+{
+  "id": "RAW_a4cc50d7",
+  "title": "Andrej Karpathy 年度总结：Nano Banana 最为震撼， 指向下一代 AI GUI 的雏形",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247511334&idx=1&sn=fae51e489878d09d1dd15a13dced2ccb",
+  "date": "2025-12-20 01:06:00",
+  "author": "AI寒武纪",
+  "siteName": "AI寒武纪",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"mp_profile_iframe_wrp\" style=\"letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;\">\n   <div style=\"font-family: -apple-system-font, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;font-size: 15px;line-height: 1.75;text-align: justify;\">\n    <p style=\"margin-left:8px;letter-spacing:0.1em;margin-top:0px !important;margin-bottom:1.5em;margin-right:8px;text-align:justify;\"><span leaf=\"\">AK的年终总结来了，这是不可错过的好文，全文分享给大家</span></p>\n    <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-imgfileid=\"100027679\" data-ratio=\"0.6194444444444445\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" style=\"height: auto !important;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=8fcf0cff&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FICgnAptln0VKickzyamYrciczNLIFMseVHYMkOdyMzPpzdrhchDogQfEHf4x3qeN3YGeAliacWW3j2cCEVQLd3m4g%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">2025 年是大型语言模型（LLM）领域蓬勃发展、大事频发的一年。以下是我个人认为最值得关注且略感意外的“范式转变”清单——这些变化改变了行业格局，并在理念上让我深受触动</span></p>\n    <h3 data-heading=\"true\" style=\"margin:2em 8px 0.75em 0px;border-left:3px solid rgb(183, 110, 121);font-weight:bold;padding-left:8px;font-size:16.5px;line-height:1.2;text-align:justify;\"><span leaf=\"\">1. 基于可验证奖励的强化学习（RLVR）</span></h3>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">在 2025 年初，各大实验室的 LLM 生产流程大体如下：</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">预训练</span></strong><span leaf=\"\">（Pretraining，约 2020 年的 GPT-2/3）</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">指令微调</span></strong><span leaf=\"\">（Supervised Finetuning，约 2022 年的 InstructGPT）</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">基于人类反馈的强化学习</span></strong><span leaf=\"\">（RLHF，约 2022 年）</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">长期以来，这一直是训练生产级 LLM 的成熟稳定配方。而到了 2025 年，</span><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">基于可验证奖励的强化学习（RLVR）</span></strong><span leaf=\"\">&nbsp;成了这一组合中事实上的新成员。通过针对一系列可自动验证奖励的环境（例如数学题或代码谜题）进行训练，LLM 会自发地演化出在人类看来类似于“推理”的策略——它们学会了将问题拆解为中间计算步骤，并学会了多种来回尝试、推导解决问题的策略（参见 DeepSeek R1 论文中的示例）。在之前的范式中，这些策略很难实现，因为人类并不清楚 LLM 最优的推理路径和纠错过程应该是怎样的——模型必须通过针对奖励的优化，自己找到行之有效的方法。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">与 SFT 和 RLHF 这类计算量较小的“轻量级”微调阶段不同，RLVR 针对的是客观（不可作弊）的奖励函数，这使得进行更长周期的优化成为可能。事实证明，运行 RLVR 具有极高的“能力/成本比”，它吞噬了原本计划用于预训练的算力。因此，2025 年的大部分能力提升，都源于各大实验室在消化这一新阶段带来的“算力积压”，总体上我们看到的模型参数规模变动不大，但 RL 运行的时间要长得多。同样，这一新阶段还带了一个全新的调节旋钮（以及相关的缩放定律）：我们可以通过生成更长的推理路径、增加“思考时间”，来控制模型在推理时的能力表现。OpenAI 的 o1（2024 年底）是 RLVR 模型的首次展示，但 o3 的发布（2025 年初）才是明显的拐点，让你能直观感受到这种差异。</span></p>\n    <h3 data-heading=\"true\" style=\"margin:2em 8px 0.75em 0px;border-left:3px solid rgb(183, 110, 121);font-weight:bold;padding-left:8px;font-size:16.5px;line-height:1.2;text-align:justify;\"><span leaf=\"\">2. 幽灵 vs. 动物 / 锯齿状智能</span></h3>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">2025 年，我（以及我认为整个行业也是如此）开始从直觉上内化 LLM 智能的“形态”。我们并不是在“进化或培养动物”，而是在“召唤幽灵”。LLM 技术栈的一切（神经架构、训练数据、训练算法，尤其是优化压力）都完全不同，因此产生出完全不同于生物智能的实体也就不足为奇了，用观察动物的视角来看待它们是不恰当的。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">从监督信息的比特位来看，人类神经网络是为了在丛林部落中生存而优化的；而 LLM 神经网络是为了模仿人类文本、在数学题中获取奖励、以及在 LM Arena 榜单上获得人类点赞而优化的。随着可验证领域的出现，RLVR 使得 LLM 在这些领域附近的能力出现“激增”，整体表现出一种有趣的**“锯齿状”性能特征**：它们既是博学的天才，又像是个思维混乱、有认知障碍的小学生，前一秒还在解难题，后一秒就可能被简单的提示词破解（Jailbreak）从而泄露你的数据。</span></p>\n    <p style=\"text-align: center;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-imgfileid=\"100027683\" data-s=\"300,640\" data-type=\"jpeg\" type=\"block\" style=\"height: auto !important;\" data-w=\"1080\" data-ratio=\"0.2833333333333333\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7edd0df6&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FICgnAptln0VKickzyamYrciczNLIFMseVHvsiaNp4HzGZJhj9pGdUO7w1lB3hoc1njL2uKKbnVktJfMkviapsTwibpg%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">与此相关的是，我在 2025 年对各种基准测试（Benchmarks）产生了普遍的审美疲劳和信任危机。核心问题在于，基准测试从定义上几乎就是“可验证环境”，因此极易受到 RLVR 或更弱形式的合成数据生成的攻击。在典型的“刷榜（benchmaxxing）”过程中，实验室团队不可避免地在测试集周围构建环境，长出“锯齿”来覆盖这些区域。</span><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">“面向测试集训练”已经成了一种新的艺术形式。</span></strong></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">如果一个模型刷爆了所有榜单，却依然没能实现通用人工智能（AGI），那会是怎样的景象？</span></p>\n    <h3 data-heading=\"true\" style=\"margin:2em 8px 0.75em 0px;border-left:3px solid rgb(183, 110, 121);font-weight:bold;padding-left:8px;font-size:16.5px;line-height:1.2;text-align:justify;\"><span leaf=\"\">3. Cursor / 新一代 LLM 应用层</span></h3>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">关于 Cursor，最令我触目的（除了它今年的彗星般崛起）是它令人信服地揭示了“LLM 应用”的新层级——人们开始讨论各行各业的“Cursor 版”。正如我在今年的 Y Combinator 演讲中所强调的，像 Cursor 这样的 LLM 应用为特定垂直领域封装并编排了 LLM 调用：</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">它们处理“上下文工程”</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">它们在底层编排多个 LLM 调用，将其串联成日益复杂的有向无环图（DAG），精细平衡性能和成本</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">它们为人类参与提供特定应用的图形界面（GUI）。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">它们提供了一个“自主程度调节滑块”</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">2025 年有很多关于这个新应用层究竟会有多“厚”的讨论。LLM 实验室会通吃所有应用，还是会给垂直应用留下肥沃的草原？我个人怀疑，LLM 实验室倾向于培养出能力全面的“大学生”，而 LLM 应用则会通过提供私有数据、传感器、执行器和反馈闭环，来组织、微调并真正驱动这些“大学生”团队，使之成为特定领域的专业从业者。</span></p>\n    <h3 data-heading=\"true\" style=\"margin:2em 8px 0.75em 0px;border-left:3px solid rgb(183, 110, 121);font-weight:bold;padding-left:8px;font-size:16.5px;line-height:1.2;text-align:justify;\"><span leaf=\"\">4. Claude Code / 住在你电脑里的 AI</span></h3>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">Claude Code (CC) 的出现，是 LLM 智能体（Agent）的第一次令人信服的展示——它能以循环往复的方式串联工具调用和推理，进行长时间的问题解决。此外，CC 令我关注的一点是，它运行在你的电脑上，使用你的私有环境、数据和上下文。我认为 OpenAI 在这方面走偏了，因为他们把 Codex/智能体的重心放在了云端容器，通过 ChatGPT 编排，而不是放在&nbsp;</span><code style=\"font-size: 90%;color: rgb(221, 17, 68);background: rgba(27, 31, 35, 0.05);padding: 3px 5px;border-radius: 4px;\"><span leaf=\"\">localhost</span></code><span leaf=\"\">（本地）。虽然云端运行的智能体集群感觉像是“AGI 的终局”，但我们生活在一个能力参差不齐、技术缓慢起步的过渡世界，直接在电脑上运行智能体，与开发者及其具体配置手拉手工作，反而更有意义。CC 抓住了这个优先顺序，并将其打包成一个精美、极简、令人信服的命令行（CLI）形态，改变了 AI 的样貌——它不再是一个像 Google 那样你主动访问的网站，而是一个“住”在你电脑里的灵体/幽灵。这是一种全新的、独特的 AI 交互范式</span></p>\n    <h3 data-heading=\"true\" style=\"margin:2em 8px 0.75em 0px;border-left:3px solid rgb(183, 110, 121);font-weight:bold;padding-left:8px;font-size:16.5px;line-height:1.2;text-align:justify;\"><span leaf=\"\">5. Vibe coding</span></h3>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">2025 年，AI 跨越了一个能力阈值，使得人们仅凭英语就能构建各种令人惊叹的程序，甚至完全忘记了代码的存在。有趣的是，“Vibe coding”这个词是我在一条淋浴时的胡思乱想推文里偶然创造的，完全没料到它会流传这么广。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">有了Vibe coding，编程不再是受过高度训练的专业人士的专利，而是任何人都能做的事。在这方面，它再次印证了我之前在《权力归于人民》中所写的：LLM 如何反转了技术扩散的脚本——与以往所有技术不同，普通人从 LLM 中获益远多于专业人士、企业和政府。不仅普通人能尝试编程，受过训练的专业人士也能写出更多（氛围编码产生的）原本根本不会去写的软件。在开发 nanochat 时，我用 Rust 氛围编码了我自己的高效 BPE 分词器，而不需要去寻找现有库或在那个深度学习 Rust。今年我氛围编码了许多项目，作为我想要存在的东西的快速 Demo。我甚至为了找一个 Bug 氛围编码了整个临时应用——因为代码突然变得免费、瞬时、可塑，用完即弃。氛围编码将重塑软件生态，并改变职业定义。</span></p>\n    <h3 data-heading=\"true\" style=\"margin:2em 8px 0.75em 0px;border-left:3px solid rgb(183, 110, 121);font-weight:bold;padding-left:8px;font-size:16.5px;line-height:1.2;text-align:justify;\"><span leaf=\"\">6. Nano Banana / LLM 图形界面</span></h3>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">Google Gemini Nano Banana 是 2025 年最令人震撼、最具范式转移意义的模型之一。在我的世界观里，LLM 是继 1970、80 年代计算机之后的下一次重大计算范式。因此，我们将看到基于类似逻辑的类似创新：我们将看到个人计算的等价物、微控制器的等价物（认知核心）、互联网的等价物（智能体网络）等等。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">特别是在 UI/UX 方面，与 LLM 对话有点像在 80 年代向电脑控制台输入命令。文本是计算机（和 LLM）偏好的原始数据表示，但它并不是人类偏好的格式，尤其是在输入端。人类其实不喜欢读长篇大论——这很慢且费劲。相反，人类喜欢以视觉和空间方式消耗信息，这就是传统计算中 GUI 被发明的原因。同理，LLM 也应该以我们偏好的格式与我们交流——通过图像、信息图、幻灯片、白板、动画/视频、网页应用等。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">这种模式的早期和现状当然是 Emoji 和 Markdown，它们是装饰和排版文本的方式。但谁来真正构建“LLM GUI”呢？在这种视角下，Nano Banana 是这种可能性的早期雏形。重要的是，它的显著特征不仅在于图像生成本身，而在于由文本生成、图像生成和世界知识在模型权重中交织而成的</span><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">联合能力</span></strong><span leaf=\"\">。</span></p>\n    <hr style=\"border-style: solid;border-width: 2px 0px 0px;border-color: rgba(0, 0, 0, 0.1);transform-origin: 0px 0px;transform: scale(1, 0.5);height: 0.4em;margin: 1.5em 0px;\">\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><strong style=\"color: rgb(183, 110, 121);font-weight: bold;font-size: inherit;\"><span leaf=\"\">简而言之：</span></strong><span leaf=\"\">&nbsp;2025 年是 LLM 领域激动人心且略带意外的一年。LLM 正在演变成一种新型智能，它比我预期的要聪明得多，同时也比我预期的要笨得多。无论如何，它们都极其有用，我认为即便以目前的能力，整个行业实现出的潜力还不到 10%。与此同时，还有太多的想法值得尝试，从概念上讲，这个领域依然大有可为。正如我今年早些时候在 Dwarkesh 的播客中所说：我同时相信（表面上看似矛盾）我们会看到持续且飞速的进展，但依然有大量艰苦的工作等待完成。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">坐稳了，好戏才刚开始。</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\">source：</span></p>\n    <p style=\"margin:1.5em 8px;letter-spacing:0.1em;text-align:justify;\"><span leaf=\"\"><a href=\"https://x.com/karpathy/status/2002118205729562949\" target=\"_blank\">https://x.com/karpathy/status/2002118205729562949</a></span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Andrej Karpathy 在其年度总结中展望了 2025 年 LLM 领域的六大“范式转变”，特别强调了 RLVR、LLM 智能形态、新一代 LLM 应用层、本地 AI 智能体、Vibe coding 以及指向下一代 AI GUI 的 Nano Banana。",
+  "oneSentenceSummary": "Andrej Karpathy 在其年度总结中展望了 2025 年 LLM 领域的六大“范式转变”，特别强调了 RLVR、LLM 智能形态、新一代 LLM 应用层、本地 AI 智能体、Vibe coding 以及指向下一代 AI GUI 的 Nano Banana。",
+  "summary": "文章是 Andrej Karpathy 对 2025 年大型语言模型（LLM）领域的年度总结。他提出了六个“范式转变”，包括：基于可验证奖励的强化学习（RLVR）如何改变 LLM 的训练范式并提升效能；LLM 智能的“幽灵”与“动物”辨析以及“锯齿状智能”特征；Cursor 类应用如何代表新一代 LLM 应用层，封装和编排 LLM 调用；Claude Code 作为首个令人信服的本地运行 AI 智能体，改变了与 AI 的交互模式；“Vibe coding”使编程大众化，改变了软件开发生态；以及 Google Gemini Nano Banana 作为 LLM 图形界面（GUI）的早期雏形，预示了人机交互的未来。文章整体肯定了 LLM 的巨大潜力，但也指出仍有大量工作待完成。",
+  "mainPoints": [
+    {
+      "point": "基于可验证奖励的强化学习（RLVR）成为 2025 年 LLM 训练的新范式。",
+      "explanation": "RLVR 通过利用可自动验证的奖励函数，使 LLM 在数学、代码等领域自主演化出推理策略，极大地提升了模型的“能力/成本比”，并消耗了大量原用于预训练的算力。"
+    },
+    {
+      "point": "LLM 智能呈现“幽灵”而非“动物”的形态，具有“锯齿状”性能特征。",
+      "explanation": "LLM 的训练和优化方式与生物智能完全不同，导致其智能表现为博学与认知障碍并存的“锯齿状”特点，并引发对基准测试的信任危机。"
+    },
+    {
+      "point": "Cursor 类应用代表了新一代 LLM 应用层，封装和编排 LLM 功能，赋能垂直领域。",
+      "explanation": "这类应用通过处理上下文、编排多 LLM 调用和提供特定 GUI，将 LLM 能力垂直化，使其成为特定领域的专业工具而非泛用“大学生”。"
+    },
+    {
+      "point": "Claude Code 通过本地化运行，成为首个令人信服的 AI 智能体，改变了 AI 交互模式。",
+      "explanation": "CC 在用户本地环境中运行，直接与开发者及其配置协作，以命令行形式呈现，将 AI 从云端网站变为“住在”电脑里的灵体，开创了新的 AI 交互范式。"
+    },
+    {
+      "point": "“Vibe coding”使编程大众化，彻底改变了软件开发生态和职业定义。",
+      "explanation": "AI 的赋能让非专业人士仅凭自然语言即可构建程序，专业人士也能更高效地进行快速原型开发和一次性工具编写，使代码变得“免费、瞬时、可塑，用完即弃”。"
+    },
+    {
+      "point": "Google Gemini Nano Banana 为 LLM 图形界面（GUI）的雏形，预示未来人机交互方式。",
+      "explanation": "作为 LLM GUI 的早期探索，Nano Banana 的创新在于文本生成、图像生成与世界知识的联合能力，旨在让 LLM 以人类更偏好的视觉空间方式进行信息交互，而非纯文本。"
+    }
+  ],
+  "keyQuotes": [
+    "2025 年的大部分能力提升，都源于各大实验室在消化这一新阶段带来的\"算力积压\"，总体上我们看到的模型参数规模变动不大，但 RL 运行的时间要长得多。",
+    "我们并不是在\"进化或培养动物\"，而是在\"召唤幽灵\"。",
+    "\"面向测试集训练\"已经成了一种新的艺术形式。",
+    "LLM 实验室倾向于培养出能力全面的\"大学生\"，而 LLM 应用则会通过提供私有数据、传感器、执行器和反馈闭环，来组织、微调并真正驱动这些\"大学生\"团队，使之成为特定领域的专业从业者。",
+    "AI 的样貌------它不再是一个像 Google 那样你主动访问的网站，而是一个\"住\"在你电脑里的灵体/幽灵。这是一种全新的、独特的 AI 交互范式",
+    "普通人从 LLM 中获益远多于专业人士、企业和政府。",
+    "LLM 也应该以我们偏好的格式与我们交流------通过图像、信息图、幻灯片、白板、动画/视频、网页应用等。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Andrej Karpathy",
+    "RLVR",
+    "LLM应用",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 90,
+  "wordCount": 3180,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_03cf5e",
+  "sourceName": "AI寒武纪",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766192760000,
+  "publishDateStr": "2025-12-20",
+  "publishDateTimeStr": "2025-12-20 01:06:00"
+}

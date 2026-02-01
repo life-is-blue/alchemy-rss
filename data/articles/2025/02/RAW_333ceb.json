@@ -1,0 +1,53 @@
+{
+  "id": "RAW_333ceb",
+  "title": "ClickHouse 迁移至 AWS ARM 实例，性能提升 25%",
+  "url": "https://www.infoq.com/news/2025/02/clickhouse-arm-graviton/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-15 00:00:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "\n \n \n  <div class=\"actions__left actions__sidebar article__actions\">\n   <div id=\"audio-overlay\" role=\"button\" tabindex=\"0\" aria-label=\"Click to open audio player\" class=\"audio-overlay-main\"><br></div><div class=\"bookmarkReading\">\n    <div id=\"toastContainer\" class=\"toast-none toast-hide\">\n     <div class=\"toast\">\n      <span></span>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"article__data\">\n   <p>ClickHouse recently shared its<a href=\"https://clickhouse.com/blog/graviton-boosts-clickhouse-cloud-performance\"> migration strategy to AWS Graviton</a> over the past six months, reporting a 25% performance improvement for end users. The engineering team outlines the steps taken to establish a performance baseline and transition the managed ClickHouse Cloud service to the new ARM deployment while handling large-scale production workloads.</p>\n   <p>Starting with a deployment primarily on x86-based instances like M5 and R5, ClickHouse highlights the challenges of migrating data-intensive applications and the performance and cost benefits of adopting Graviton instances.</p>\n   <p>Summarizing the compatibility assessment, benchmarking strategy, and risk analysis and mitigation, <a href=\"https://www.linkedin.com/in/kaushikiska/\">Kaushik Iska</a>, engineering manager at ClickHouse, and <a href=\"https://www.linkedin.com/in/francesco-ciocchetti-70522a2/\">Francesco Ciocchetti</a>, senior cloud infrastructure engineer, write:</p>\n   <blockquote>\n    <p>We had to migrate some instances that were relying on intel only codecs such as deflate_qpl and zstd_qat. (...) To accurately measure the impact of the migration, we used a ClickBench \"like\" benchmark to test performance across both arm64 and amd64.</p>\n   </blockquote>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/02/clickhouse-arm-graviton/news/2025/02/clickhouse-arm-graviton/en/resources/11_graviton_1071f52532-1739450042437.png\" style=\"width:100%;height:597px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/02/clickhouse-arm-graviton/en/resources/11_graviton_1071f52532-1739450042437.png\" rel=\"share\"></p>\n   <p><em>Source: ClickHouse blog</em></p>\n   <p>Released in 2016 under an Apache 2.0 license, <a href=\"https://clickhouse.com/\">ClickHouse</a> is a popular open-source, column-oriented database for real-time workloads, with ClickHouse Cloud as its managed cloud-based offering.</p>\n   <p>Due to limitations in the availability of larger Graviton instances, the ClickHouse team adopted a mixed-instance strategy, combining Graviton2 and Graviton3 general-purpose instances with local NVMe-based SSD block storage (m7gd and m6gd). All Graviton instances were managed using AWS Auto Scaling Groups and a custom ClickHouse autoscaler. Iska and Ciocchetti explain:</p>\n   <blockquote>\n    <p>To ensure smooth autoscaling with mixed instance types, we adjusted memory allocation on m6gd instances to match m7gd, preventing unschedulable pods. We also implemented dynamic pod allocation, directing those under 236Gi to ARM instances using a webhook with node selection changes. Furthermore, we overprovisioned capacity and optimized autoscaler logic to manage the \"architecture jump\" where pods might initially be scheduled on larger x86 instances and then potentially downsized to smaller ARM instances.</p>\n   </blockquote>\n   <p>Since its debut in 2018, AWS Graviton has evolved from the early Graviton1 instances with 16 Cortex-A72 cores to the latest Graviton4, which features 96 Neoverse-V2 cores and 12 channels of DDR5-5600 memory, providing significantly improved throughput and reduced latency. Reflecting on ClickHouse's article, Corey Quinn, chief cloud economist at The Duckbill Group, <a href=\"https://www.lastweekinaws.com/\">writes</a>:</p>\n   <blockquote>\n    <p>Graviton is interesting, because for a while AWS was pushing it so hard that you just by default assumed that anyone talking about it was being required to do so by some contractual term or other. The reality is that it's insanely cost effective and you should be using it.</p>\n   </blockquote>\n   <p>Analyzing three different testing scenarios, the benchmarking plan demonstrated an overall 25% performance improvement across a wide range of queries. While performance gains on the CI logs cluster were modest, primarily due to being network-bound when reading from S3, <a href=\"https://benchmark.clickhouse.com/hardware\">ClickBench</a>, a standardized benchmark simulating analytics workloads, showed more <a href=\"https://pastila.nl/?000b1ba6/c224ddf960900f4f2d0d9e100cef5445.html\">significant improvements</a>, particularly in the Graviton4 scenario (r8g instances).</p>\n   <p>According to the article, nearly 80% of ClickHouse's production vCPUs now run on Graviton3 general-purpose (m7gd or m7g) and memory-intensive (r7g and r7gd) instances. Meanwhile, AMD instances have declined to 17.32%.</p>\n   <p>&nbsp;</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"ClickHouse Reports 25% Performance Gain After Migrating Cloud Workloads to AWS ARM Instances\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/clickhouse-arm-graviton/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1739600940000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n \n",
+  "aiSummary": "ClickHouse 迁移至 AWS Graviton ARM 实例后性能提升 25%，得益于混合实例部署策略。",
+  "oneSentenceSummary": "ClickHouse 迁移至 AWS Graviton ARM 实例后性能提升 25%，得益于混合实例部署策略。",
+  "summary": "ClickHouse 将其云工作负载迁移到 AWS Graviton 实例，实现了 25% 的性能提升。迁移策略包括评估兼容性、对 x86 和 ARM 架构进行基准测试以及降低风险。由于 Graviton 实例的可用性限制，采用了混合实例策略，结合了 Graviton2 实例和 Graviton3 实例。调整了内存分配以确保平稳的自动伸缩，并且动态 Pod 分配将较小的 Pod 指向 ARM 实例。基准测试表明整体性能有所提高，尤其是 Graviton4 实例。现在，近 80% 的 ClickHouse 生产 vCPU 在 Graviton 实例上运行。",
+  "mainPoints": [
+    {
+      "point": "迁移到 AWS Graviton 实例可带来显著的性能提升。",
+      "explanation": "ClickHouse 观察到迁移到 AWS Graviton 后性能提升 25%，验证了基于 ARM 的实例在云工作负载上的优势。"
+    },
+    {
+      "point": "混合实例策略解决了 Graviton 实例的可用性限制。",
+      "explanation": "通过结合 Graviton2 实例和 Graviton3 实例，ClickHouse 有效地管理了资源约束，同时最大限度地提高了 ARM 架构的优势。"
+    },
+    {
+      "point": "使用 ClickBench 进行基准测试对于评估架构迁移的影响至关重要。",
+      "explanation": "ClickHouse 使用类似 ClickBench 的基准来准确衡量 x86 和 ARM 之间的性能差异，从而为迁移决策提供依据。"
+    }
+  ],
+  "keyQuotes": [
+    "我们不得不迁移一些依赖于英特尔专用编解码器的实例，例如 deflate_qpl 和 zstd_qat。",
+    "为了准确衡量迁移的影响，我们使用了类似 ClickBench 的基准测试来测试 arm64 和 amd64 的性能。",
+    "为了确保混合实例类型的平稳自动伸缩，我们调整了 m6gd 实例上的内存分配以匹配 m7gd，从而防止无法调度的 Pod。"
+  ],
+  "tags": [
+    "云计算",
+    "数据库",
+    "ClickHouse",
+    "AWS Graviton",
+    "ARM"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 491,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739577600000,
+  "publishDateStr": "2025-02-15",
+  "publishDateTimeStr": "2025-02-15 00:00:00"
+}

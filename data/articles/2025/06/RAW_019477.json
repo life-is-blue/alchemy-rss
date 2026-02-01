@@ -1,0 +1,53 @@
+{
+  "id": "RAW_019477",
+  "title": "新鲜出炉！斯坦福 2025 CS336 课程全公开：从零开始搓大模型 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-23-6",
+  "date": "2025-06-23 04:44:52",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>斯坦福大学 2025 年春季的 <strong>CS336 </strong>课程「<strong>从头开始创造语言模型（Language Models from Scratch）</strong>」相关课程和材料现已在网上全面发布！</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ac8f1d0e-deff-493f-6e53-3c49afd5d700/public\" data-ratio=\"0.47314814814814815\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503491643\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/359912ac-7b04-47a9-b010-88586f3cd935/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>课程视频：https://www.youtube.com/watch?v=SQ3fZ1sAqXI&amp;list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_</p></li>\n   <li>\n    <p>课程主页：https://stanford-cs336.github.io/spring2025/</p></li>\n  </ul>\n  <p>这是该课程的教职工阵容：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/77c70eb2-1148-4761-1ded-8f1c455b2500/public\" data-ratio=\"0.28055555555555556\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503491602\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/ed9ef005-f503-45fe-a4f2-cc040238a13a/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>其中，讲师 Tatsunori Hashimoto 现为斯坦福大学计算机科学系助理教授。此前，他是斯坦福大学 John C. Duchi 和 Percy Liang 的博士后，研究机器学习模型平均性能和最差性能之间的权衡。在博士后研究之前，他在麻省理工学院攻读研究生，导师是 Tommi Jaakkola 和 David Gifford。他本科在哈佛大学学习统计学和数学，导师是 Edoardo Airoldi。他的研究成果已总计获得了超 3 万引用。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c2efabc6-2c51-42cb-0fc4-9c3cbf6bdf00/public\" data-ratio=\"0.4083333333333333\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503491603\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/1380f15f-62b1-4e70-ad72-9c90094da085/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>另一位讲师 Percy Liang 是斯坦福大学计算机科学系副教授，同时也是基础模型研究中心（CRFM）主任，同时也有参与以人类为中心的人工智能（HAI）、人工智能实验室、自然语言处理研究组和机器学习研究组等的研究工作。他本科毕业于 MIT，之后在该校获得工程学硕士学位，导师是 Michael Collins；之后，他在伯克利获得博士学位，导师是 Michael Jordan 和 Dan Klein；后来他进入谷歌从事博士后研究。Percy Liang 是一位引用量超过 10 万的研究大牛，我们此前也曾多次报道他的研究成果。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/175ab55c-199a-4a19-bb25-79da64187100/public\" data-ratio=\"0.5185185185185185\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503491604\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/2df023ff-5929-4569-8885-104b932e0553/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>CS336 课程简介</strong></p>\n  <p>CS336 课程的目标是「引导学生完成开发自己的语言模型的整个过程，从而帮助他们全面理解语言模型。」该课程借鉴了操作系统课程中从零开始创建完整操作系统的教学方法，引导学生完成语言模型创建的各个环节，包括预训练的数据收集和清理、Transformer 模型的构建、模型训练以及部署前的评估。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/992bb3d7-5970-4411-445f-31eb15f4ae00/public\" data-ratio=\"0.49290060851926976\" data-s=\"300,640\" data-type=\"png\" data-w=\"986\" type=\"block\" data-imgfileid=\"503491605\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/76d0ccdd-4552-4771-8985-88904467c5c0/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>该课程包含 5 个单元，分别是基础、系统、扩展、数据、对齐和推理强化学习。</p>\n  <p>该课程也非常注重实践操作，因此也需要相当多的学习和开发时间。Percy Liang 也在 𝕏 上简单分享了学生需要实践的内容，包括：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/992bb3d7-5970-4411-445f-31eb15f4ae00/public\" data-ratio=\"0.49290060851926976\" data-s=\"300,640\" data-type=\"png\" data-w=\"986\" type=\"block\" data-imgfileid=\"503491605\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/305c5f51-920f-4507-a8bb-23ab28106527/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><strong>作业 1（使基本流程正常运行）</strong>：实现 BPE 分词器、Transformer 架构、Adam 优化器，并在 TinyStories 和 OpenWebText 上训练模型。只允许使用 PyTorch 原语（不能直接调用 torch. nn. Transformer 或 torch. nn. Linear）。</p></li>\n   <li>\n    <p><strong>作业 2（让 GPU 运行起来）</strong>：在 Triton 中实现 Flash Attention 2、分布式数据并行 + 优化器分片。</p></li>\n   <li>\n    <p><strong>作业 3（Scaling Law）</strong>：使用 IsoFLOP 拟合 Scaling Law。为了模拟训练运行的高风险，学生会获得一个训练 API [超参数→损失] 和一个固定的计算预算，并且必须选择提交哪些运行来收集数据点。在后台，训练 API 是通过在一系列预先计算的运行之间进行插值来支持的。</p></li>\n   <li>\n    <p><strong>作业 4（数据）</strong>：将 Common Crawl HTML 转换为文本，过滤（质量、有害内容、PII），删除重复数据。这是一项苦差事，却没有得到足够的重视。</p></li>\n   <li>\n    <p><strong>作业 5（对齐）</strong>：实现监督微调、专家迭代、GRPO 和变体，在 Qwen 2.5 Math 1.5B 上运行 RL 以提升在 MATH 上的指标。我们也曾考虑过让学生自己实现推理（inference），但决定（可能是明智的）让人们使用 vllm。</p></li>\n  </ul>\n  <p>更具体来说，CS336 课程的 5 个单元包含 19 门课。这里简单总结了该课程的目录，你可以在课程主页下载相应的材料：</p>\n  <ul>\n   <li>\n    <p>课程概述和 token 化</p></li>\n   <li>\n    <p>PyTorch 和资源（包括内存和计算资源）</p></li>\n   <li>\n    <p>架构与超参数</p></li>\n   <li>\n    <p>混合专家（MoE）</p></li>\n   <li>\n    <p>GPU</p></li>\n   <li>\n    <p>Kernel，Triton</p></li>\n   <li>\n    <p>并行化</p></li>\n   <li>\n    <p>并行化</p></li>\n   <li>\n    <p>Scaling Law</p></li>\n   <li>\n    <p>推理</p></li>\n   <li>\n    <p>Scaling Law</p></li>\n   <li>\n    <p>评估</p></li>\n   <li>\n    <p>数据</p></li>\n   <li>\n    <p>数据</p></li>\n   <li>\n    <p>对齐 ——SFT/RLHF</p></li>\n   <li>\n    <p>对齐 —— 强化学习</p></li>\n   <li>\n    <p>对齐 —— 强化学习</p></li>\n   <li>\n    <p>客座讲座：阿里巴巴达摩院研究员、Qwen 团队技术负责人 Junyang Lin（林俊旸）</p></li>\n   <li>\n    <p>客座讲座：Facebook AI 研究科学家、Llama 3 预训练负责人 Mike Lewis</p></li>\n  </ul>\n  <p>另外，在考虑学习这门课程之前，你应该先具备以下能力：</p>\n  <ul>\n   <li>\n    <p><strong>熟练掌握 Python</strong>：大部分课程作业将使用 Python 完成。与大多数其他 AI 课程不同，本课程只会给学生提供极少的脚手架。你编写的代码量将至少比其他课程多一个数量级。因此，熟练掌握 Python 和软件工程至关重要。</p></li>\n   <li>\n    <p><strong>有深度学习和系统优化经验</strong>：本课程的很大一部分内容是关于如何使神经语言模型在多台机器的 GPU 上快速高效地运行。我们希望学生能够熟练掌握 PyTorch，并了解内存层次结构等基本系统概念。</p></li>\n   <li>\n    <p><strong>大学微积分、线性代数</strong>（例如 MATH 51、CME 100）：你应该能够轻松理解矩阵 / 向量符号和运算。</p></li>\n   <li>\n    <p><strong>基础概率与统计</strong>（例如 CS 109 或同等课程）：你应该了解概率、高斯分布、均值、标准差等基础知识。</p></li>\n   <li>\n    <p><strong>机器学习</strong>（例如 CS221、CS229、CS230、CS124、CS224N）：你应该熟悉机器学习和深度学习的基础知识。</p></li>\n  </ul>\n  <p>顺带一提，CS336 课程还为完成课程的学生赠送了纪念 T 恤，有如下 4 种图案。你觉得如何呢？</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f724d5d9-dbf0-4d64-c4a2-92cb2a48e000/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503491607\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/ebbf1667-0797-4622-b8a1-14838a172dc2/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n </body>\n</html>",
+  "aiSummary": "斯坦福大学开源 2025 年 CS336 课程《从头开始创造语言模型》，涵盖模型构建全流程。",
+  "oneSentenceSummary": "斯坦福大学开源 2025 年 CS336 课程《从头开始创造语言模型》，涵盖模型构建全流程。",
+  "summary": "文章宣布斯坦福大学 2025 年春季 CS336 课程“从头开始创造语言模型”材料全面公开。该课程目标是引导学生完整开发自己的语言模型，从而全面理解其工作原理。课程借鉴操作系统课程模式，结构严谨，涵盖预训练数据处理、Transformer 构建、模型训练及评估等核心环节。共分为基础、系统、扩展、数据、对齐和推理强化学习等五个单元、十九门课。课程高度侧重实践，要求学生从零实现核心组件，并解决现代大模型开发中的实际工程挑战，如高性能计算（GPU 优化、并行化）、Scaling Law 研究、大规模数据清洗与处理以及模型对齐等。课程对 Python 编程、深度学习和系统优化能力要求较高。两位知名讲师也增强了课程的吸引力。",
+  "mainPoints": [
+    {
+      "point": "斯坦福 CS336 课程开源，提供完整 LM 构建指南",
+      "explanation": "课程材料和视频公开，使得全球技术人员有机会系统学习如何从底层构建和理解语言模型，降低了高阶 AI 学习门槛。"
+    },
+    {
+      "point": "课程强调从零实现核心组件，而非使用高级库",
+      "explanation": "学生需要亲手实现分词、架构、优化器等，深刻理解模型内部机制和原理，培养解决实际问题的能力。"
+    },
+    {
+      "point": "实践作业覆盖性能优化、分布式训练、数据处理等关键挑战",
+      "explanation": "课程作业紧密结合现代大模型开发中的实际难题，如 GPU 加速、并行计算、数据质量控制等，具有极高的实践价值。"
+    }
+  ],
+  "keyQuotes": [
+    "CS336 课程的目标是「引导学生完成开发自己的语言模型的整个过程，从而帮助他们全面理解语言模型。」",
+    "你编写的代码量将至少比其他课程多一个数量级。因此，熟练掌握 Python 和软件工程至关重要。",
+    "本课程的很大一部分内容是关于如何使神经语言模型在多台机器的 GPU 上快速高效地运行。"
+  ],
+  "tags": [
+    "大语言模型",
+    "斯坦福大学",
+    "在线课程",
+    "模型训练",
+    "模型对齐"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1787,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750653892000,
+  "publishDateStr": "2025-06-23",
+  "publishDateTimeStr": "2025-06-23 04:44:52"
+}

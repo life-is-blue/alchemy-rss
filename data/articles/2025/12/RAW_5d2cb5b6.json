@@ -1,0 +1,58 @@
+{
+  "id": "RAW_5d2cb5b6",
+  "title": "OpenAI 在 QCon AI 纽约：企业微调实践",
+  "url": "https://www.infoq.com/news/2025/12/qcon-openai-rft/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-17 19:25:00",
+  "author": "Andrew Hoblitzell",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://ai.qconferences.com\">QCon AI NYC 2025</a>, <a href=\"https://ai.qconferences.com/speakers/willhang\">Will Hang</a> from <a href=\"https://openai.com\">OpenAI</a> presented an overview of Agent RFT, a reinforcement fine-tuning approach intended to improve the performance of tool-using agents.</p>\n   <p>Hang described a pragmatic improvement path that starts with prompt and task optimization before changing model weights. Examples included simplifying requirements, adding guardrails to prevent tool misuse, improving tool descriptions, and improving tool outputs so the agent can make better downstream decisions. He argued that these measures are often high leverage but can plateau on tasks that require consistent multi-step reasoning across tool interactions.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/qcon-openai-rft/news/2025/12/qcon-openai-rft/en/resources/1ss1-1765913625940.jpeg\" style=\"width: 500px; height: 375px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/qcon-openai-rft/en/resources/1ss1-1765913625940.jpeg\" rel=\"share\"></p>\n   <p>He positioned fine-tuning options as a spectrum. Supervised fine-tuning was described as effective when there is a predictable mapping from input to output and the goal is to imitate a consistent style or structure. <a href=\"https://arxiv.org/abs/2305.18290\">Preference optimization</a> was described as a method for shifting outputs toward preferred responses using paired comparisons, and OpenAI’s Direct Preference Optimization <a href=\"https://platform.openai.com/docs/guides/direct-preference-optimization\">guide</a> describes it as fine-tuning by comparing model outputs and notes it is currently limited to text inputs and outputs. Reinforcement fine-tuning was emphasized as a better fit for tasks where the model needs to discover strategies over longer trajectories rather than reproduce a single demonstrated completion pattern.</p>\n   <blockquote>\n    <p>Beware of reward hacking! Resolve any edge cases in your grader. Continuous rewards work better than binary rewards. - Will Hang, OpenAI</p>\n   </blockquote>\n   <p><a href=\"https://platform.openai.com/docs/guides/reinforcement-fine-tuning\">Agent RFT</a> was presented as reinforcement fine-tuning adapted to tool-using agents, where the model explores different strategies during training rollouts and receives a learning signal from a grader. OpenAI’s documentation describes the loop as sampling candidate responses, scoring them with a grader you define, and updating the model based on those scores. Hang emphasized credit assignment across the full trajectory so earlier decisions, including tool selection and tool-call structure, can be reinforced or discouraged based on downstream outcomes. He described an agent as a system that can interact with the outside world through tools, not only respond to a user prompt.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/qcon-openai-rft/news/2025/12/qcon-openai-rft/en/resources/1ss2-1765913625940.jpeg\" style=\"width: 500px; height: 375px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/qcon-openai-rft/en/resources/1ss2-1765913625940.jpeg\" rel=\"share\"></p>\n   <p>Hang described tool examples including terminals for coding agents, internal business systems for customer support, and document search or retrieval endpoints. He emphasized that tool outputs flow back into the same context window, so tool calls, tool outputs, reasoning tokens, and the final response form a single multi-step trajectory. He also said that graders become a core artifact in the workflow. The session described multiple <a href=\"https://platform.openai.com/docs/guides/graders\">grading</a> styles, including simple matchers, model-based judges, code-based graders, endpoint graders, and combinations of graders to jointly optimize accuracy and latency.</p>\n   <p>The session also focused on operational properties that are not captured by answer accuracy alone. Hang described using Agent RFT to reduce unnecessary tool calls, enforce tool-call budgets, and reduce the long tail of very long trajectories that can create unpredictable latency and degraded user experience. Slides referenced training traces where reasoning tokens and tool calls decreased over training, consistent with the idea that the agent can learn to use fewer steps to reach similar or better task outcomes.</p>\n   <p><a href=\"https://ai.qconferences.com/speakers/wenjiezi\">Wenjie Zi</a> then picked up the latter part of the presentation with use case presentations and platform setup details, including a finance-oriented example where a model must locate relevant content across a large document corpus under a constrained tool-call budget. In that setup, the agent uses search, listing, and file-reading tools exposed behind endpoints, then a grader scores the final answer. She highlighted using a model-based grader even for numeric answers to reduce false negatives caused by superficial formatting differences, units, or small variations.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/qcon-openai-rft/news/2025/12/qcon-openai-rft/en/resources/1ss3-1765913625940.jpeg\" style=\"width: 500px; height: 375px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/qcon-openai-rft/en/resources/1ss3-1765913625940.jpeg\" rel=\"share\"></p>\n   <p>Zi also described broader examples across agentic coding and other domains, focusing on environments with many tools, isolated execution contexts, and reward designs that balance correctness with process and efficiency. Reported outcomes emphasized improved planning, reduced long trajectory tails, and in some cases a shift toward parallel tool calls to reduce sequential turns.</p>\n   <p>Developers who want to learn more can review OpenAI’s reinforcement fine-tuning and model optimization documentation and watch <a href=\"https://infoq.com\">infoq.com</a> in the coming weeks for video of the presentation to become available.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI at QCon AI NYC: Fine Tuning the Enterprise\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Andrew Hoblitzell\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/qcon-openai-rft/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765999500000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "在 QCon AI 纽约 2025 大会上，OpenAI 推出了 Agent RFT（强化微调）方法，这是一种先进技术，通过学习更高效、更可靠的多步策略来优化工具使用型代理。",
+  "oneSentenceSummary": "在 QCon AI 纽约 2025 大会上，OpenAI 推出了 Agent RFT（强化微调）方法，这是一种先进技术，通过学习更高效、更可靠的多步策略来优化工具使用型代理。",
+  "summary": "在 QCon AI 纽约 2025 大会上，OpenAI 的 Will Hang 介绍了 Agent RFT（强化微调）方法，旨在提升工具使用型代理的性能。Hang 强调，在不需要修改模型权重的情况下，可以通过提示词和任务优化（例如简化要求、添加防护措施、完善工具描述）来初步提升性能。他将微调方法置于一个连续谱中，区分了监督微调和偏好优化，并强调强化微调特别适用于需要发现长轨迹中策略的任务。Agent RFT 将强化微调应用于工具使用型代理，其核心在于模型在训练过程中探索各种策略，并从预定义的评分器接收学习信号。Hang 指出，对整个轨迹进行信用分配至关重要，以便根据下游结果强化或抑制早期决策（如工具选择）。Wenjie Zi 进一步阐释了 Agent RFT 的应用，其中包括一个金融行业的案例——一个代理在预算限制下使用搜索和文件读取工具来定位相关内容，展示了该方法在改进规划、减少冗长轨迹以及提升效率和用户体验方面的显著优势。",
+  "mainPoints": [
+    {
+      "point": "Agent RFT 是一种专门用于优化工具使用型代理的强化微调方法。",
+      "explanation": "通过让模型能够探索策略并从评分器信号中学习，Agent RFT 帮助代理有效地处理复杂的、多步骤的工具交互，从而克服了简单提示词优化的局限性。"
+    },
+    {
+      "point": "该方法利用信用分配机制优化代理在整个运行轨迹中的决策。",
+      "explanation": "Agent RFT 根据早期决策（如工具选择）对下游结果的最终影响，对其进行奖励或惩罚，从而促使代理形成更有效的长期策略。"
+    },
+    {
+      "point": "Agent RFT 显著提升了智能代理的运行性能和用户体验。",
+      "explanation": "通过减少不必要的工具调用、强制遵守预算约束以及缩短冗长且不可预测的轨迹，Agent RFT 显著提高了智能代理的效率、可靠性，并缩短了响应时间。"
+    },
+    {
+      "point": "有效的评分机制对于 Agent RFT 在各种应用中的成功至关重要。",
+      "explanation": "Agent RFT 在多种应用中取得成功的关键在于有效的评分机制，例如采用基于模型的裁判和端点评分器，对代理的输出和行为进行评估，从而确保在金融和编程等不同领域的准确性、效率和适应性。"
+    }
+  ],
+  "keyQuotes": [
+    "警惕奖励欺骗！务必解决评分器中的所有边缘情况。相较于二元奖励，连续奖励的效果更佳。——Will Hang， OpenAI",
+    "Agent RFT 被介绍为一种应用于工具使用型代理的强化微调方法，其中模型在训练运行中探索不同的策略，并从评分器接收学习信号。",
+    "他将代理描述为一个能够通过工具与外部世界互动，而不仅仅是对用户提示做出响应的系统。",
+    "报告的结果强调了改进的规划、缩短的冗长轨迹末端，以及在某些情况下转向并行工具调用以减少顺序执行轮次。"
+  ],
+  "tags": [
+    "OpenAI",
+    "Agent RFT",
+    "强化学习",
+    "微调",
+    "工具使用型代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 649,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765999500000,
+  "publishDateStr": "2025-12-17",
+  "publishDateTimeStr": "2025-12-17 19:25:00"
+}

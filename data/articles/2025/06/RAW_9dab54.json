@@ -1,0 +1,67 @@
+{
+  "id": "RAW_9dab54",
+  "title": "腾讯混元推出首款开源混合推理模型，擅长 Agent 工具调用和长文理解",
+  "url": "https://www.qbitai.com/2025/06/302762.html",
+  "date": "2025-06-27 08:40:33",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>6月27日，腾讯混元宣布开源首个混合推理MoE模型 Hunyuan-A13B，总参数80B，激活参数仅13B，效果比肩同等架构领先开源模型，但是推理速度更快，性价比更高。这意味着，开发者可以用更低门槛的方式获得更好的模型能力。</p>\n  <p>即日起，模型已经在 Github 和 Huggingface 等开源社区上线，同时模型API也在腾讯云官网正式上线，支持快速接入部署。</p>\n  <p>这是业界首个13B级别的MoE开源混合推理模型，基于先进的模型架构，Hunyuan-A13B表现出强大的通用能力，在多个业内权威数据测试集上获得好成绩，并且在Agent工具调用和长文能力上有突出表现。</p>\n  <p><img alt=\"腾讯混元推出首款开源混合推理模型，擅长Agent工具调用和长文理解\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c985ec62-818e-4391-cede-74639a20fd00/public\"><br>\n    *加粗为最高分，下划线表示第二名，数据来源于模型各个公开的测试数据集得分</p>\n  <p>对于时下热门的大模型Agent能力，腾讯混元建设了一套多Agent数据合成框架，接入了MCP、沙箱、大语言模型模拟等多样的环境，并且通过强化学习让Agent在多种环境里进行自主探索与学习，进一步提升了Hunyuan-A13B的效果。</p>\n  <p>在长文方面，Hunyuan-A13B支持256K原生上下文窗口，在多个长文数据集中取得了优异的成绩。</p>\n  <p><img alt=\"腾讯混元推出首款开源混合推理模型，擅长Agent工具调用和长文理解\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fed36bab-6422-423a-c9ff-608a46d92100/public\"><br><img alt=\"腾讯混元推出首款开源混合推理模型，擅长Agent工具调用和长文理解\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9f9dc09-0be6-4d34-0271-18b771e95b00/public\"></p>\n  <p>在实际使用场景中，Hunyuan-A13B模型可以根据需要选择思考模式，快思考模式提供简洁、高效的输出，适合追求速度和最小计算开销的简单任务；慢思考涉及更深、更全面的推理步骤，如反思和回溯。这种融合推理模式优化了计算资源分配，使用户能够通过加think/no_think切换思考模式，在效率和特定任务准确性之间取得平衡。</p>\n  <p><img alt=\"腾讯混元推出首款开源混合推理模型，擅长Agent工具调用和长文理解\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dc829e78-6a42-4c65-37fe-a563804e8800/public\"></p>\n  <p>Hunyuan-A13B模型对个人开发者较为友好，在严格条件下，只需要1张中低端GPU卡即可部署。目前，Hunyuan-A13B已经融入开源主流推理框架生态，无损支持多种量化格式，在相同输入输出规模上，整体吞吐是前沿开源模型的2倍以上。</p>\n  <p>Hunyuan-A13B 集合了腾讯混元在模型预训练、后训练等多个环节的创新技术，这些技术共同增强了其推理性能、灵活性和推理效率。</p>\n  <p>预训练环节，Hunyuan-A13B 训练了20T tokens的语料，覆盖了多个领域。高质量的语料显著提升了模型通用能力。此外，在模型架构上，腾讯混元团队通过系统性分析，建模与验证，构建了适用于 MoE 架构的 Scaling Law 联合公式。这一发现完善了MoE 架构的 Scaling Law 理论体系，并为 MoE 架构设计提供了可量化的工程化指导，也极大的提升了模型预训练的效果。</p>\n  <p>后训练环节，Hunyuan-A13B采用了多阶段的训练方式，提升了模型的推理能力，同时兼顾了模型创作、理解、Agent等通用能力。</p>\n  <p><img alt=\"腾讯混元推出首款开源混合推理模型，擅长Agent工具调用和长文理解\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e1296296-acb4-457a-2613-d0b5d6c4de00/public\"><br>\n    图：Hunyuan-A13B后训练四个步骤</p>\n  <p>为更好的提升大语言模型能力，腾讯混元也开源了两个新的数据集，以填补行业内相关评估标准的空白。其中，ArtifactsBench用于弥合大语言模型代码生成评估中的视觉与交互鸿沟，构建了一个包含 1825个任务的新基准，涵盖了从网页开发、数据可视化到交互式游戏等九大领域，并按难度分级以全面评估模型的能力；C3-Bench针对Agent场景模型面临的三个关键挑战：规划复杂的工具关系、处理关键的隐藏信息以及动态路径决策，设计了1024条测试数据，以发现模型能力的不足。</p>\n  <p>Hunyuan-A13B模型是腾讯内部应用和调用量最大的大语言模型之一，有超过 400+ 业务用于精调或者直接调用，日均请求超1.3亿。本次进行升级更新并对外开源 ，是继混元large后混元大语言模型推出的又一重要开源模型，参数更小，但是性能和效果实现了大幅的提升。接下来，腾讯混元也将推出更多尺寸、更多特色的模型，将更多实践技术与社区共享，促进大模型开源生态的繁荣。</p>\n  <p>腾讯混元坚定拥抱开源，持续推进多尺寸、多场景的全系模型开源，旗下图像、视频、3D、文本等多种模态基础模型已全面开源。未来，混元计划推出多尺寸混合推理模型，从0.5B到32B的dense模型，以及激活13B的MoE模型，适配企业与端侧不同需求，混元图像、视频、3D等多模态基础模型及配套插件模型也将持续开源。</p>\n  <p><img alt=\"腾讯混元推出首款开源混合推理模型，擅长Agent工具调用和长文理解\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a7ec8d6-79ea-4c02-f7fd-ab30eaccc600/public\"></p>\n  <p>附项目相关链接</p>\n  <p>体验入口：<a href=\"https://hunyuan.tencent.com/\">https://hunyuan.tencent.com/</a></p>\n  <p>API地址：<a href=\"https://cloud.tencent.com/product/tclm\">https://cloud.tencent.com/product/tclm</a></p>\n  <p>Github ：<a href=\"https://github.com/Tencent-Hunyuan\">https://github.com/Tencent-Hunyuan</a></p>\n  <p>HuggingFace：<a href=\"https://huggingface.co/tencent\">https://huggingface.co/tencent</a></p>\n  <p>C3-Bench：<a href=\"https://github.com/Tencent-Hunyuan/C3-Benchmark\">https://github.com/Tencent-Hunyuan/C3-Benchmark</a></p>\n  <p>ArtifactsBench：<a href=\"https://github.com/Tencent-Hunyuan/ArtifactsBenchmark\">https://github.com/Tencent-Hunyuan/ArtifactsBenchmark</a></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "腾讯混元开源首个 13B 级别混合推理 MoE 模型 Hunyuan-A13B，擅长 Agent 工具调用和长文理解，性能优异且部署门槛低，同时开源两个新数据集推动 AI 生态发展。",
+  "oneSentenceSummary": "腾讯混元开源首个 13B 级别混合推理 MoE 模型 Hunyuan-A13B，擅长 Agent 工具调用和长文理解，性能优异且部署门槛低，同时开源两个新数据集推动 AI 生态发展。",
+  "summary": "腾讯混元宣布开源首个混合推理 MoE 模型 Hunyuan-A13B，总参数 80B，激活参数仅 13B，性能比肩同类领先开源模型，但推理速度更快、性价比更高。该模型在预训练环节创新性地构建了适用于 MoE 架构的 Scaling Law 联合公式，训练了 20T tokens 的高质量语料；后训练采用多阶段方式提升推理能力。在 Agent 工具调用和长文理解方面表现突出，支持 256K 原生上下文窗口，并提供快思考和慢思考两种模式以适应不同任务需求。Hunyuan-A13B 对个人开发者友好，仅需 1 张中低端 GPU 卡即可部署，且融入主流开源推理框架生态。腾讯还开源了 ArtifactsBench 和 C3-Bench 两个新数据集，分别针对代码生成评估和 Agent 场景的关键挑战。腾讯混元表示将持续推进多尺寸、多场景的全系模型开源，促进大模型开源生态繁荣。",
+  "mainPoints": [
+    {
+      "point": "Hunyuan-A13B 是首个 13B 级别的 MoE 开源混合推理模型",
+      "explanation": "该模型总参数 80B，激活参数仅 13B，性能优异且推理速度更快，性价比高，降低了开发者使用门槛。模型在预训练环节创新性地构建了适用于 MoE 架构的 Scaling Law 联合公式，完善了理论体系并提升训练效果。"
+    },
+    {
+      "point": "在 Agent 工具调用和长文理解方面表现突出",
+      "explanation": "通过多 Agent 数据合成框架和强化学习提升 Agent 能力，支持 256K 原生上下文窗口，在长文数据集中成绩优异。模型已应用于腾讯内部 400+业务，日均请求超 1.3 亿次。"
+    },
+    {
+      "point": "提供快思考和慢思考两种推理模式",
+      "explanation": "快思考模式适合简单任务，慢思考模式涉及更深层推理，优化了计算资源分配，平衡效率与准确性。后训练采用多阶段方式，兼顾创作、理解和 Agent 等通用能力。"
+    },
+    {
+      "point": "对个人开发者友好，部署门槛低",
+      "explanation": "仅需 1 张中低端 GPU 卡即可部署，支持多种量化格式，整体吞吐是前沿开源模型的 2 倍以上，已融入主流开源推理框架生态。"
+    },
+    {
+      "point": "开源两个新数据集填补行业评估空白",
+      "explanation": "ArtifactsBench 针对代码生成评估的视觉与交互鸿沟，包含 1825 个任务；C3-Bench 针对 Agent 场景的三大关键挑战，含 1024 条测试数据，为行业提供全面评估基准。"
+    },
+    {
+      "point": "腾讯持续推进全系模型开源战略",
+      "explanation": "除 Hunyuan-A13B 外，腾讯计划推出从 0.5B 到 32B 的多尺寸模型，图像、视频、3D 等多模态基础模型及插件模型也将持续开源，促进大模型生态繁荣。"
+    }
+  ],
+  "keyQuotes": [
+    "Hunyuan-A13B 表现出强大的通用能力，在多个业内权威数据测试集上获得好成绩，并且在 Agent 工具调用和长文能力上有突出表现。",
+    "这种融合推理模式优化了计算资源分配，使用户能够通过加 think/no_think 切换思考模式，在效率和特定任务准确性之间取得平衡。",
+    "Hunyuan-A13B 模型对个人开发者较为友好，在严格条件下，只需要 1 张中低端 GPU 卡即可部署。",
+    "腾讯混元坚定拥抱开源，持续推进多尺寸、多场景的全系模型开源，旗下图像、视频、3D、文本等多种模态基础模型已全面开源。",
+    "通过系统性分析，建模与验证，构建了适用于 MoE 架构的 Scaling Law 联合公式，完善了 MoE 架构的 Scaling Law 理论体系。"
+  ],
+  "tags": [
+    "大语言模型",
+    "MoE架构",
+    "Agent工具调用",
+    "长文理解",
+    "腾讯混元"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1693,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751013633000,
+  "publishDateStr": "2025-06-27",
+  "publishDateTimeStr": "2025-06-27 08:40:33"
+}

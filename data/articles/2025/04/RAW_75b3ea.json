@@ -1,0 +1,54 @@
+{
+  "id": "RAW_75b3ea",
+  "title": "QCon 伦敦：管理开源风险的三步蓝图",
+  "url": "https://www.infoq.com/news/2025/04/qcon-london-johnson-matthey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-08 00:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/\">QCon London 2025</a>, <a href=\"https://matthey.com/\">Johnson Matthey</a>'s Vulnerability Manager, Celine Pypaert, discussed managing open-source dependency risks while maintaining momentum in innovation. She described a three-part blueprint for handling the security challenges that arise with the now widespread use of open-source dependencies.</p>\n   <p>Pypaert explained that open-source components are present in 96% of commercial codebases, according to a <a href=\"https://www.blackduck.com/blog/zombie-dead-code.html\">2024 report from Black Duck</a>. She said how people can misplace trust in familiar software used both personally on our devices and by enterprises. She spoke about some recent security incidents, such as the <a href=\"https://www.infoq.com/news/2024/04/xz-backdoor/\">XZ Utils backdoor</a>, where a rogue contributor gained trust from the sole maintainer of the project by committing valuable code before eventually inserting malicious code, and the <a href=\"https://www.infoq.com/news/2016/03/npm/\">Left-pad incident</a>, where a single vital component's deletion from <a href=\"https://www.npmjs.com/\">npm</a> caused React-based applications to break.</p>\n   <blockquote>\n    <p>There's an implicit trust in things that people use every day - so we embed these components into our code</p>\n   </blockquote>\n   <p>The main element of Pypaert's talk was a three-part blueprint for managing open-source dependencies. Pypaert begins by identifying and prioritising vulnerabilities. She recommends organisations implement <a href=\"https://www.geeksforgeeks.org/sca-software-composition-analysis/\">SCA (Software Composition Analysis)</a> tools to find and audit open-source dependencies and also suggests doing this even in test environments to catch any vulnerabilities early.</p>\n   <p>Pypaert suggests a structured tactical approach to triaging and prioritising fixes to deal with the possibly overwhelming number of vulnerabilities when embarking on a project like this. \"Don't just look at the criticality - draw a Venn diagram and cross-check with what is easy to fix and what is likely to happen,\" she advised. She suggests picking the top five or so issues with critical or high impact, tackling them directly with priority, and then making a phased, longer-term approach to the lower priority issues. These lower-priority issues can be harder to shift - but now is the time to influence budget-holders to commit time and resources to fixing these over the medium term.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/qcon-london-johnson-matthey/news/2025/04/qcon-london-johnson-matthey/en/resources/120250408_121216-1744135250352.jpg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/qcon-london-johnson-matthey/en/resources/120250408_121216-1744135250352.jpg\" rel=\"share\"></p>\n   <p>Ownership and accountability are the second part of Pypaert's blueprint. With open-source libraries often introduced passively, she spoke of circular conversations trying to find owners for these. Pypaert described how developers should seek assistance from security teams to help bridge gaps. She also suggests using a risk register to get executive attention. She explained how developers can show how seemingly low-level technical risks can feed into the broader organisational risk - and leveraging the possibilities that a cyber incident could cause a business to fail to gain focus on intractable issues. This helps the organisation understand how software supply chain issues can feed into enterprise risk.</p>\n   <blockquote>\n    <p>It's funny how quickly things can happen when someone's name appears next to a risk</p>\n   </blockquote>\n   <p>Pypaert explained how building a risk profile helps an organisation to join the dots between business continuity and vulnerability management and eventually leads to reducing and eliminating technical debt. With basic policies and standards in place, training developer teams to work responsibly within them.</p>\n   <blockquote>\n    <p>Make sure people understand that when they're doing a PR or push to production that they have ticked the boxes</p>\n   </blockquote>\n   <p>The final part of the blueprint focuses on moving security fixes from reactive to proactive. Pypaert strongly advocates automating security tasks wherever possible, giving an example of feeding a vulnerability detection from a tool such as GitHub's Dependabot directly into a project management tool such as Jira. Using automation to automatically assign security tickets to the correct group of people with automatic alert routing also reduces friction and helps teams incorporate security tasks into their sprints.</p>\n   <p>Pypaert closed off her talk by assigning \"homework\" to the attendees - encouraging those who are only at the \"crawling\" stage of implementing a process such as this to get started with some basic detection, assignment and policy drafting. She suggested that attendees then start to involve other teams - perhaps by looking at compensating controls to temporarily hide vulnerabilities from the public internet with techniques such as WAFs (web application firewalls) and rate-limiting.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London: A Three-Step Blueprint for Managing Open Source Risk\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/qcon-london-johnson-matthey/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1744136100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Celine Pypaert 在 2025 年 QCon 伦敦大会上展示了在保持创新速度的同时管理开源风险的三步蓝图。",
+  "oneSentenceSummary": "Celine Pypaert 在 2025 年 QCon 伦敦大会上展示了在保持创新速度的同时管理开源风险的三步蓝图。",
+  "summary": "Celine Pypaert 在 2025 年 QCon 伦敦大会上分享了一个管理开源依赖风险的三步蓝图。她强调了商业代码库中开源组件的广泛存在。同时，她强调了使用软件成分分析 (SCA) 工具识别漏洞并确定优先级，并采取结构化方法进行修复的重要性。该蓝图包括识别漏洞、分配所有权和主动安全措施。她还强调了所有权和责任的重要性，建议开发人员与安全团队合作，并使用风险登记册来获得管理层的关注。最后，她提倡自动化安全任务，并鼓励与会者实施基本的检测、分配和策略起草，逐步与其他团队合作并采用诸如 Web 应用防火墙 (WAF) 之类的技术来暂时隐藏漏洞。通过实施这个三步蓝图，公司可以更有效地管理开源风险并确保软件供应链安全。",
+  "mainPoints": [
+    {
+      "point": "识别漏洞并确定优先级对于管理开源风险至关重要",
+      "explanation": "使用软件成分分析 (SCA) 工具尽早发现和审计开源依赖项，并根据严重程度、易于修复和发生可能性确定优先级。"
+    },
+    {
+      "point": "建立所有权和责任制以促进跨团队协作",
+      "explanation": "开发人员应与安全团队合作，并使用风险登记册来提高管理层的意识。通过将技术风险与业务连续性联系起来，可以减少技术债务。"
+    },
+    {
+      "point": "自动化安全任务以提前在开发周期中进行安全检查（左移）",
+      "explanation": "利用自动化工具将漏洞检测结果直接导入到像 Jira 这样的项目管理工具中（通过像 GitHub 的 Dependabot 这样的工具），自动分配安全任务，减少摩擦，并将安全性集成到开发过程中。"
+    }
+  ],
+  "keyQuotes": [
+    "人们每天都在使用这些东西，所以存在一种隐式信任——因此我们将这些组件嵌入到我们的代码中",
+    "不要只关注关键性——绘制一个维恩图，并与易于修复和可能发生的事情进行交叉检查",
+    "当某人的名字出现在风险旁边时，事情发生的速度是多么快，这很有趣",
+    "确保人们明白，当他们进行 Pull Request 或推送到生产环境时，他们已经完成所有必要的检查"
+  ],
+  "tags": [
+    "开源安全",
+    "软件供应链安全",
+    "信息安全",
+    "漏洞管理",
+    "软件成分分析 (SCA)"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 650,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744070400000,
+  "publishDateStr": "2025-04-08",
+  "publishDateTimeStr": "2025-04-08 00:00:00"
+}

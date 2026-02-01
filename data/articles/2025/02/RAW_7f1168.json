@@ -1,0 +1,53 @@
+{
+  "id": "RAW_7f1168",
+  "title": "苹果发现模型蒸馏 Scaling Law！教师模型并非越强越好",
+  "url": "https://www.qbitai.com/2025/02/254051.html",
+  "date": "2025-02-14 08:16:06",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>克雷西 发自 凹非寺<br>\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>大模型蒸馏也有Scaling Law了！</p>\n  <p>苹果最新研究，发现了蒸馏过程中学生模型和教师模型能力之间的幂律关系。</p>\n  <p>值得关注的是，蒸馏过程当中的<strong>教师模型，并不是越强越好</strong>。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/24d51d89-5cb9-46cc-9817-c20bbbbe2200/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293714\" data-ratio=\"0.7403474903474904\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6244b3c9-b82c-4a97-f89b-d2ade9584100/public\" data-type=\"png\" data-w=\"1036\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"1\" data-fail=\"0\"></p>\n  <p>他们发现，学生模型的损失随教师模型损失降低<strong>整体呈下降趋势，但如果教师模型能力过强，学生模型性能反而会恶化</strong>。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6b681a88-617f-44f7-046e-a5d12d043400/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293712\" data-ratio=\"1\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/92c73692-fa50-4975-0fac-5b61a0148c00/public\" data-type=\"png\" data-w=\"240\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"2\" data-fail=\"0\"></p>\n  <p>并且存在一个学生模型相对教师模型学习能力的转折点，在其两侧分别呈现出了不同的幂律关系。</p>\n  <p>基于一系列发现，作者还针对模型蒸馏过程中的计算资源分配给出建议，帮助根据学生模型的规模、可用资源等因素选择效果更好的分配方式。</p>\n  <p>通过对不同参数量、蒸馏数据量以及不同能力的学生模型（以监督训练时的损失衡量）和教师模型进行实验和数据拟合，作者发现蒸馏时的Scaling Law。</p>\n  <p>整体来看，<strong>学生模型的交叉熵损失L<sub>S</sub>由教师模型的交叉熵损失L<sub>T</sub>和学生模型的模仿能力决定</strong>。</p>\n  <p>而学生模型的模仿能力由三部分相乘得到，分别与教师模型损失、教师学生模型之间的能力比值（带波浪线的L<sub>S</sub>表示通过监督方式训练的学生模型损失）和数据规模N<sub>S</sub>、蒸馏数据量D<sub>S</sub>相关。</p>\n  <p>至于公式中的c0、c1、d1、f1、α′、β′和γ′，则都是需要根据实验结果拟合的参数（均为正数）。</p>\n  <p>也就是说，如果参数量和蒸馏数据量固定，对于同一个学生模型而言，影响因素就剩下教师模型了。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d5540e44-7f60-4008-6bc0-27408d910600/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293711\" data-ratio=\"0.391025641025641\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bb5279b4-1b45-4a80-b8b2-ffaef7d18c00/public\" data-type=\"png\" data-w=\"936\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"3\" data-fail=\"0\"></p>\n  <p>直观上看，学生模型损失L<sub>S</sub>总体上随着教师模型损失L<sub>T</sub>的降低而降低。</p>\n  <p><strong>但当教师模型能力远超学生模型时，继续提升教师性能的边际效用递减，学生模型性能可能反而变差</strong>。</p>\n  <p>式中的d1就是其中的转折点，在其两侧分别服从不同形式的幂律——</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>当比值小于d1时，L<sub>S</sub>主要取决于自身规模N<sub>S</sub>和数据量D<sub>S</sub>；</li>\n   <li>比值大于d1时，L<sub>S</sub>主要取决于L<sub>T</sub>。</li>\n  </ul>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9dd1072b-ddc3-46d8-2563-8b1f2be9bb00/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293710\" data-ratio=\"0.9651162790697675\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cbbf7ae4-fc3d-46b4-d56c-8beebe21c500/public\" data-type=\"png\" data-w=\"688\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"4\" data-fail=\"0\"></p>\n  <p>而当<strong>学生模型参数量N<sub>S</sub>和蒸馏数据量D<sub>S</sub>同时趋于无穷大时，知识蒸馏能让学生模型性能最终逼近教师模型</strong>。</p>\n  <h2>蒸馏计算资源怎么分</h2>\n  <p>基于以上发现，作者在论文中针对不同的蒸馏情况，给出了高效的计算资源分配建议。</p>\n  <p>其中主要是资源在教师模型训练、教师模型推理和学生模型训练之间的分配，除了可用资源量之外，主要影响因素是<strong>学生模型的大小</strong>。</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>当总预算较小（≲10^21 FLOPs）时，大部分资源应分配给教师模型的训练；</li>\n   <li>当预算较大时（≳10^25 FLOPs），资源应在三个部分间平均分配；</li>\n   <li>对于规模较小的学生模型（≲3B参数），大部分资源应分配给教师模型；</li>\n   <li>而对于规模较大的学生模型（≳10B），更多资源应分给学生模型本身的训练。</li>\n  </ul>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/86df6931-5ec1-4149-b1b3-4243ab5bb500/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293713\" data-ratio=\"0.4425925925925926\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8361bbda-fd2b-4eb6-ae8d-864ccb6a6300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"5\" data-fail=\"0\"></p>\n  <p>另外，如果教师模型需要从头训练且只用于蒸馏单个学生模型，直接用所有资源监督训练学生模型，会比蒸馏的效果更好。</p>\n  <p>以训练1.82B参数的学生模型为例，当可用数据量超过1T token时，监督学习的学生模型损失比最理想情况下的知识蒸馏更低（下图左）。</p>\n  <p>只有当总数据量/计算量低于一个随学生模型规模增大而增大的阈值，且教师模型已经存在或将被重复使用多次时，知识蒸馏才更有效（下图右）。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83a34bb5-0e41-4e25-d785-6eb67fa7ba00/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293717\" data-ratio=\"0.5027777777777778\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dd9d0ef1-33b0-4f0e-75c3-9a6d5d8d6900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"6\" data-fail=\"0\"></p>\n  <h2>作者简介</h2>\n  <p>这篇论文的作者主要来自苹果位于英国剑桥的实验室。</p>\n  <p>第一兼通信作者是苹果ML工程师Dan Busbridge，在校期间读的是物理，拥有理论粒子物理学博士学位。</p>\n  <p>但从第一份工作开始，Dan的工作就和计算机相关，先是在一家英国公司担任数据科学家，2016年开始研究机器学习，2020年加入苹果。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8caa7cd7-ed39-4b4d-5115-40d25640e100/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293718\" data-ratio=\"0.512962962962963\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/60a07256-3c3d-4fac-ae66-bdf41203b900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"7\" data-fail=\"0\"></p>\n  <p>第二位作者是实习生Amitis Shidani，正在牛津大学读博，专业是统计与机器学习。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7251885b-fb58-4a6f-8850-496986a80200/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293716\" data-ratio=\"0.49074074074074076\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ec617348-610f-4673-7487-938fafe21700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"8\" data-fail=\"0\"></p>\n  <p>第三位Floris Weers，来自庞若鸣在AIML中领导的基础模型团队。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9c315e44-df74-46a4-25ab-98145d348e00/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293720\" data-ratio=\"0.4564814814814815\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d562ce3d-8516-433f-9907-b38f2905b900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"9\" data-fail=\"0\"></p>\n  <p>还有Jason Ramapuram和Etai Littwin，都是2017年就加入苹果的资深工程师。</p>\n  <p>资历最老的是Russ Webb，是苹果的高级ML研究经理，早在2010年就已经加入苹果团队。</p>\n  <p>苹果在剑桥的实验室成立时，就是由Russ出任研究主管。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9d364a75-ceb9-4142-5854-a7a82ad85200/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293715\" data-ratio=\"0.5520581113801453\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9df9a17b-53ca-43f7-415f-3bb1c150c800/public\" data-type=\"png\" data-w=\"826\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"10\" data-fail=\"0\"></p>\n  <p>整体上研究是由Dan来负责，各作者所负责的具体工作，在附录中也有介绍。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ffa33fee-bb20-4781-f84a-862f57d36400/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100293721\" data-ratio=\"0.7018518518518518\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a89753f6-2f66-42f2-397e-029a6aec7900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"11\" data-fail=\"0\"></p>\n  <p>论文地址：<br>\n    https://arxiv.org/abs/2502.08606</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "苹果研究发现模型蒸馏存在 Scaling Law，指出教师模型并非越强越好，存在最优能力值，并据此提出计算资源分配建议。",
+  "oneSentenceSummary": "苹果研究发现模型蒸馏存在 Scaling Law，指出教师模型并非越强越好，存在最优能力值，并据此提出计算资源分配建议。",
+  "summary": "苹果最新研究揭示了大模型蒸馏过程中的 Scaling Law，发现学生模型的损失随教师模型损失降低整体呈下降趋势，但教师模型能力过强反而会导致学生模型性能恶化。研究表明，存在一个学生模型相对教师模型学习能力的转折点，两侧呈现不同的幂律关系。基于此，作者针对模型蒸馏过程中的计算资源分配给出建议，包括资源在教师模型训练、教师模型推理和学生模型训练之间的分配策略，并强调学生模型规模是关键影响因素。此外，研究还指出，在特定条件下，直接用所有资源监督训练学生模型可能比蒸馏更有效。该研究成果有助于优化模型蒸馏策略，提高资源利用效率，加速大模型在边缘设备上的部署。",
+  "mainPoints": [
+    {
+      "point": "特定条件下，直接监督训练学生模型比知识蒸馏更有效",
+      "explanation": "当可用数据量超过一定阈值，或教师模型需要从头训练且仅用于蒸馏单个学生模型时，直接监督训练学生模型效果更佳。"
+    },
+    {
+      "point": "教师模型并非越强越好，存在学生模型学习能力的转折点。",
+      "explanation": "学生模型损失随教师模型损失降低而降低，但当教师模型能力远超学生模型时，继续提升教师性能的边际效用递减，学生模型性能可能变差。"
+    },
+    {
+      "point": "总预算和学生模型大小影响蒸馏计算资源的分配策略。",
+      "explanation": "总预算较小时，资源应分配给教师模型训练；预算较大时，资源应平均分配；小规模学生模型应分配更多资源给教师模型，大规模学生模型则反之。"
+    }
+  ],
+  "keyQuotes": [
+    "学生模型的损失随教师模型损失降低整体呈下降趋势，但如果教师模型能力过强，学生模型性能反而会恶化。",
+    "当学生模型参数量和蒸馏数据量同时趋于无穷大时，知识蒸馏能让学生模型性能最终逼近教师模型。",
+    "如果教师模型需要从头训练且只用于蒸馏单个学生模型，直接用所有资源监督训练学生模型，会比蒸馏的效果更好。"
+  ],
+  "tags": [
+    "模型蒸馏",
+    "模型压缩",
+    "Scaling Law",
+    "大语言模型",
+    "教师模型"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1569,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739520966000,
+  "publishDateStr": "2025-02-14",
+  "publishDateTimeStr": "2025-02-14 08:16:06"
+}

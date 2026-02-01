@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c28e5ad7",
+  "title": "精通代码审查，方能驾驭 AI 代理",
+  "url": "https://seangoedecke.com/ai-agents-and-code-review/",
+  "date": "2025-09-20 00:00:00",
+  "author": "Sean Goedecke",
+  "siteName": "Sean Goedecke",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <p>Using AI agents correctly is a process of <em>reviewing code</em>. If you’re good at reviewing code, you’ll be good at using tools like Claude Code, Codex, or the Copilot coding agent.</p>\n   <p>Why is that? Large language models are good at producing a lot of code, but they don’t yet have the depth of judgement of a competent software engineer. Left unsupervised, they will spend a lot of time committing to bad design decisions.</p>\n   <h3>AI agents and bad design</h3>\n   <p>Last week I built <a href=\"https://github.com/sgoedecke/vicflora-offline\">VicFlora Offline</a>: an offline-friendly PWA that hosts some of the VicFlora data for keying out plants, so you can still use the keys if you’re in the field somewhere with bad internet reception. Codex spent a <em>lot</em> of effort trying to reverse-engineer the VicFlora frontend code for the <a href=\"https://simple.wikipedia.org/wiki/Dichotomous_key\">dichotomous key</a>. It was honestly pretty impressive to watch! But I figured there had to be some easier way to access the raw data, and <a href=\"https://keybase.rbg.vic.gov.au/projects/show/10\">I was right</a>. This happens over and over again when I use AI coding agents: about once an hour I notice that the agent is doing something that looks suspicious, and when I dig deeper I’m able to set it on the right track and save hours of wasted effort.</p>\n   <p>I’m also working on an app that helps me learn things with AI - think of it as an infinite, automatically-adjusting spaced-repetition feed. When I want to do things in parallel (e.g. generating a learning plan in the background), both Codex and Claude Code really want to build a full background job infrastructure: with job entities, result polling, and so on. I like background jobs, but for ordinary short-lived parallel work they are very obviously overkill. Just make a non-blocking request from the frontend! If I weren’t consistently pushing for simplicity, my codebase would be much more complex to reason about.</p>\n   <p>Incidentally, this is why I think pure “vibe coding” hasn’t produced an explosion of useful apps. If you don’t have the technical ability to spot when the LLM is going down the wrong track, you’ll rapidly end up stuck. Trying to make a badly-designed solution work costs time, tokens, and codebase complexity. All of these things cut into the agent’s ability to actually solve the problem. Once two or three of them pile up, the app is no longer tractable for the agent and the whole thing grinds to a halt.</p>\n   <h3>Code review</h3>\n   <p>These examples should be familiar to anyone who’s spent enough time working on an engineering team with enthusiastic juniors. Diving right in to an early idea and making it work with sheer effort is a very common mistake. It’s the job of the rest of the team to rein that in. Working with AI agents is like working with enthusiastic juniors who never develop the judgement over time that a real human would<sup id=\"fnref-1\"><a href=\"#fn-1\" class=\"footnote-ref\">1</a></sup>.</p>\n   <p>This is a good opportunity to talk about what I think is the biggest mistake engineers make in code review: <strong>only thinking about the code that was written, not the code that <em>could have been</em> written</strong>. I’ve seen even experienced engineers give code reviews that go through the diff with a fine-toothed comb, while spending approximately zero seconds asking if this is even the right place for the code at all.</p>\n   <p>In my view, the best code review is <em>structural</em>. It brings in context from parts of the codebase that the diff didn’t mention. Ideally, that context makes the diff shorter and more elegant: for instance, instead of building out a new system for operation X, we can reuse a system that already exists. Instead of building a fragile scraping pipeline that pulls dichotomous key IDs from the frontend SPA code, let’s just download the dichotomous keys from this other place where they’re explicitly made available. Instead of building out an entire background job system, let’s just do our parallel work on the client, using all the existing machinery that websites have for doing two things at the same time.</p>\n   <p>If you’re a nitpicky code reviewer, I think you will struggle to use AI tooling effectively. You’ll be forever tweaking individual lines of code, asking for a <code class=\"language-text\">.reduce</code> instead of a <code class=\"language-text\">.map.filter</code>, bikeshedding function names, and so on. At the same time, you’ll miss the opportunity to guide the AI away from architectural dead ends.</p>\n   <p>Likewise, if you’re a rubber-stamp code reviewer, you’re probably going to put too much trust in the AI tooling. That approach works with competent colleagues, but it doesn’t work well when you’re onboarding junior engineers, and it doesn’t work well when you’re working with AI coding agents.</p>\n   <h3>Final thoughts</h3>\n   <p>What does it mean to be “good at AI”? Being good at a normal tool like git is straightforward: if you have a grasp of the basic tree-structure of a git repository, and you’re familiar with the majority of git operations, you’re good at git. But the basic structure of AI is an impenetrable mass of model weights, and the “operations” it can perform are “basically anything you can do with a computer”. There are no software engineering tools like it.</p>\n   <p>The most optimistic AI proponents think that “being good at AI” is about maximally adopting AI tooling in every aspect of your life. The argument here is that AI plays something like the role of Jeff Bezos’ staff. Using a hyper-resourced, hyper-competent staff doesn’t require a lot of <em>skill</em>: you simply ask for what you want, and an enormous amount of other people’s effort will be devoted to providing it. But Bezos certainly uses his staff more effectively than I would, if I were to be teleported into his position today. I wouldn’t even consider asking for half the things I wanted - it just wouldn’t occur to me that I could get a hot <a href=\"https://lunecroissanterie.com/\">Lune croissant</a> waiting for me when I step off my private jet, for instance, even if I really would enjoy it. AI believers think AI tooling is kind of like this. According to them, when you genuinely internalize that you can ask your personal AI assistant to vibe code any program you want, or sort through any amount of data, or draft all of your emails, you will begin using AI much more frequently, to your benefit.</p>\n   <p>I don’t think we’re there yet. I use agentic coding tools a lot: GitHub Copilot at and for work, and both Codex and Claude Code for my personal projects<sup id=\"fnref-2\"><a href=\"#fn-2\" class=\"footnote-ref\">2</a></sup>. While they can do a surprising number of tasks on their own, they do require fairly close supervision. The dominant programming model is something like <a href=\"https://en.wikipedia.org/wiki/Advanced_chess\">“centaur chess”</a>, where a skilled human is paired with a computer assistant. The better you are at code review - at assessing whether a particular software approach is a sensible one - the better you’ll be at using agentic AI tooling.</p>\n   <p>edit: this post got some attention on <a href=\"https://news.ycombinator.com/item?id=45310529\">Hacker News</a>. Most of the comments are retreading the “do AI agents work” question, which is not very interesting to me (my view is “of course they do on some codebases, but there are other codebases where they’ll be completely useless”). I don’t think good code review can somehow make it possible for AI agents to make substantial contributions to the Linux kernel, for instance. There were a <a href=\"https://news.ycombinator.com/item?id=45311422\">couple</a> of <a href=\"https://news.ycombinator.com/item?id=45312278\">comments</a> defending “code smell and function naming” styles of code review, and suggesting that if you’re discussing design in the code review you’ve failed to adequately plan out the feature ahead of time. I disagree pretty strongly with that view and will at some point write up a blog post about it.</p>\n   <div class=\"footnotes\">\n    <hr>\n    <ol>\n     <li id=\"fn-1\">\n      <p>Every time I see this point made, I wonder - if you started using AI coding tooling with early Copilot in 2022, and you’re still using cutting-edge AI tooling in 2025, doesn’t it kind of feel like the tooling has grown at the same rate a human would? If you described early Copilot as a brand-new grad and current Claude Code (or whatever) as an engineer with three years of experience, would that be too far off? In another three years, will working with AI tooling be like working with a engineer with six years under their belt?</p>\n     </li>\n     <li id=\"fn-2\">\n      <p>Using Codex and Claude Code doesn’t indicate that I think they’re better than Copilot. In my view, it’s part of my job to use a variety of AI tooling.</p>\n     </li>\n    </ol>\n   </div>\n  </section>\n  <hr style=\"margin-bottom:1.75rem\">\n </body>\n</html>",
+  "aiSummary": "有效利用 AI 编码代理，需具备强大的结构化代码审查能力，如同引导初级开发者规避不良设计。",
+  "oneSentenceSummary": "有效利用 AI 编码代理，需具备强大的结构化代码审查能力，如同引导初级开发者规避不良设计。",
+  "summary": "作者认为，AI 编码代理的使用效率与结构性代码审查能力密切相关。他通过详细说明 AI 代理虽然具备代码生成能力，但通常缺乏经验丰富的工程师的细致判断，导致其追求效率低下、过于复杂或架构上不健全的解决方案来阐述这一点。例如，AI 尝试在可以直接进行数据访问时对 API 进行反向工程，或者为简单的并行任务提出繁重的后台作业基础设施。本文警告说，不要在没有严格监督的情况下进行缺乏严谨设计的随意编码，这会由于设计缺陷的积累而迅速使项目变得难以处理。文章区分了无效的代码审查风格（挑剔或走过场式）和结构性代码审查，后者强调架构背景、简化和利用现有系统。最终，作者得出结论，使用 AI 代理的真正技能涉及一种“半人马象棋”方法，即熟练的人类积极指导和监督 AI，从而使强大的代码审查技能对于开发中成功的人机协作必不可少。",
+  "mainPoints": [
+    {
+      "point": "有效的 AI 代理利用反映了结构性代码审查，需要人为判断来避免糟糕的设计。",
+      "explanation": "AI 代理能大量生成代码，但缺乏深入判断力，需人为干预，避免过度复杂和低效。"
+    },
+    {
+      "point": "结构性代码审查侧重于架构背景和更简单的解决方案，对于指导 AI 代理至关重要。",
+      "explanation": "结构性审查优于挑剔或走过场式的审查，能识别重用和简化的机会，避免 AI 产生架构死胡同，提高效率。"
+    },
+    {
+      "point": "精通编码中的 AI 体现了一种“半人马象棋”模型，其中人类专业知识指导 AI 的能力。",
+      "explanation": "这并非盲目地最大限度地采用，而是关于熟练的人类与 AI 助手协作并监督它，以实现最佳、精心设计的软件成果。"
+    }
+  ],
+  "keyQuotes": [
+    "正确使用 AI 代理，关键在于 *代码审查*。",
+    "大型语言模型擅长生成大量代码，但它们尚未具备称职的软件工程师的深度判断力。",
+    "与 AI 代理合作就像与充满热情的初级人员合作，他们永远不会随着时间的推移而形成真正的人会拥有的判断力。",
+    "最好的代码审查是 *结构性的*。它从差异未提及的代码库部分引入了上下文。",
+    "代码审查能力越强（能有效评估软件方法是否合理），就越能高效利用 AI 代理工具。"
+  ],
+  "tags": [
+    "AI 代理",
+    "代码审查",
+    "软件工程",
+    "编程中的人工智能",
+    "软件架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1390,
+  "domain": "seangoedecke.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_acd612",
+  "sourceName": "Sean Goedecke",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758326400000,
+  "publishDateStr": "2025-09-20",
+  "publishDateTimeStr": "2025-09-20 00:00:00"
+}

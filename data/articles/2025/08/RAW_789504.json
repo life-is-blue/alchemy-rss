@@ -1,0 +1,59 @@
+{
+  "id": "RAW_789504",
+  "title": "字节突然开源 Seed-OSS，512K 上下文主流 4 倍长度，推理能力刷纪录",
+  "url": "https://www.qbitai.com/2025/08/324571.html",
+  "date": "2025-08-21 05:59:22",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"37\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">字节跳动突发开源大模型，一出手就是<strong>360亿参数</strong>的Seed-OSS-36B。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/f16a613018a948f5831e4eadc642af5d~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=2r9cgPQV6Ra7WZzgpZ4OyzrVBIE%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/f16a613018a948f5831e4eadc642af5d~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=2r9cgPQV6Ra7WZzgpZ4OyzrVBIE%3D\">\n  </div>\n  <p data-track=\"3\">这个Seed-OSS的命名方式，明显是在呼应OpenAI此前发布的<strong>GPT-OSS</strong>系列。</p>\n  <p data-track=\"4\">与OpenAI的开源策略也是一样，并没有直接开源核心商业模型豆包（Doubao），而是基于内部技术打造了一个专门面向开源社区的版本。</p>\n  <p data-track=\"5\">字节跳动Seed团队正式在Hugging Face和GitHub上发布了这个系列模型，采用<strong>Apache-2.0开源协议</strong>，可以免费用于学术研究和商业部署。</p>\n  <p data-track=\"7\">要说Seed-OSS最让人眼前一亮的特性，那必须是原生512K的超长上下文。</p>\n  <p data-track=\"8\">目前主流的开源模型，比如DeepSeek V3.1的上下文窗口是128K，而Seed-OSS直接翻了4倍。</p>\n  <p data-track=\"9\">而且这个512K是在预训练阶段就构建好的，不是后期通过插值等方法硬撑上去的。</p>\n  <p data-track=\"10\">这意味着法律文档审查、长篇报告分析、复杂代码库理解等需要处理海量信息的专业场景，Seed-OSS都能轻松拿下。</p>\n  <p data-track=\"11\">此外，Seed-OSS还引入了<strong>“思考预算”（Thinking Budget）</strong>机制。</p>\n  <p data-track=\"12\">通过设定一个token数量，你就能控制模型思考的深度。比如你设置512个token的预算，模型在推理过程中会这样工作：\n   <br class=\"sysbr\">\n   复制</p>\n  <p data-track=\"13\">好的，让我一步步来解决这个问题。题目说的是… 我已经使用了129个token，还剩383个token可用。 使用幂法则，我们可以… 我已经使用了258个token，还剩254个token可用。 另外，记住… 我已经耗尽了token预算，现在开始给出答案。</p>\n  <p data-track=\"14\">对于简单任务，可以设置较小的预算让模型快速响应；对于复杂的数学推理或代码生成，你可以给更多预算让它深思熟虑。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/cf7f3d7af5a7446f9fd8f9010fce6e32~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=am2AVTAYSGpDOWkSK92GYu2NfAM%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/cf7f3d7af5a7446f9fd8f9010fce6e32~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=am2AVTAYSGpDOWkSK92GYu2NfAM%3D\">\n  </div>\n  <p data-track=\"15\">字节跳动建议使用512的整数倍（比如512、1K、2K、4K、8K或16K），因为模型在这些区间上经过了大量训练。</p>\n  <p data-track=\"16\">模型架构方面，Seed-OSS采用了成熟稳定的设计：</p>\n  <p data-track=\"17\">360亿参数的稠密模型（不是MoE），使用了RoPE位置编码、GQA注意力机制、RMSNorm归一化和SwiGLU激活函数。整个模型有64层，隐藏层维度5120，词汇表大小155K。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/27bf67be1a5749dc8028a3dae617ff0e~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=1JjB8NPx%2FpMMzNMpQk%2FgE71ZmPw%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/27bf67be1a5749dc8028a3dae617ff0e~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=1JjB8NPx%2FpMMzNMpQk%2FgE71ZmPw%3D\">\n  </div>\n  <p data-track=\"18\">考虑到合成指令数据可能影响后训练研究，字节Seed团队提供了两个版本的基座模型，\n   <br class=\"sysbr\">\n   一个包含合成指令数据（性能更强），一个不包含（更纯净），为研究社区提供更多选择。</p>\n  <p data-track=\"20\">那么这个模型的实际表现如何呢？</p>\n  <p data-track=\"21\">在知识理解方面，Seed-OSS-36B-Base在MMLU-Pro上达到了65.1分，超过了同等规模的Qwen2.5-32B-Base的58.5分。在TriviaQA上更是拿下了82.1的高分。</p>\n  <p data-track=\"22\">推理能力的BBH基准测试得分87.7，直接刷新了开源模型的记录。在数学能力上，GSM8K达到90.8分，MATH的81.7分。</p>\n  <p data-track=\"23\">Seed-OSS代码能力同样不俗，HumanEval得分76.8，MBPP达到80.6。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/adfa8db532f540248264a2019ef5af43~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=OkIgoimc3tMUTAUSnI6mvKyW8PA%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/adfa8db532f540248264a2019ef5af43~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=OkIgoimc3tMUTAUSnI6mvKyW8PA%3D\">\n  </div>\n  <p data-track=\"24\">指令微调版本Seed-OSS-36B-Instruct在AIME24数学竞赛题上达到了91.7分的成绩，仅次于OpenAI的OSS-20B。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p26-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/37b36f9377e74c3691bc8144917809a3~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=Kb92sSYbdTzZhwE3bnRzBgFo%2Fqw%3D\" data-src=\"https://p26-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/37b36f9377e74c3691bc8144917809a3~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=Kb92sSYbdTzZhwE3bnRzBgFo%2Fqw%3D\">\n  </div>\n  <p data-track=\"25\">并且这些成绩是用仅12T token训练出来的，相比之下，很多同规模模型的训练数据量都在15T以上。</p>\n  <p data-track=\"27\">字节Seed团队成立于2023年，定位是“打造业界最先进的AI基础模型”，研究方向覆盖大语言模型、多模态、AI基础设施等多个前沿领域。</p>\n  <p data-track=\"28\">过去一年多时间里，已经陆续开源了多个有影响力的项目，只不过多是细分领域模型，而不是受关注的基座语言模型。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/fdac9a704211417e91cea7959664929c~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=vt77DxFvHYyYtuadse03T8YG0ek%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/fdac9a704211417e91cea7959664929c~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025082112274880E11C659D3659B395EB&amp;x-expires=2147483647&amp;x-signature=vt77DxFvHYyYtuadse03T8YG0ek%3D\">\n  </div>\n  <p data-track=\"29\">今年5月，他们发布了<strong>Seed-Coder</strong>，一个8B规模的代码生成模型，最大的创新是让LLM自己管理和筛选训练数据，大幅提升了代码生成能力。</p>\n  <p data-track=\"30\">紧接着，他们又推出了<strong>BAGEL</strong>，一个能同时处理文本、图像和视频的统一多模态模型，真正实现了”万物皆可输入输出”。</p>\n  <p data-track=\"31\">更早之前，他们还发布<strong>了Seed Diffusion</strong>，这是一个基于离散状态扩散技术的实验性语言模型，在代码生成任务上实现了极高的推理速度。</p>\n  <p data-track=\"32\">为了支撑这些模型的训练，团队还开源了<strong>VeOmni</strong>，一个PyTorch原生的全模态分布式训练框架。</p>\n  <p data-track=\"33\">最近他们还搞了个<strong>Seed LiveInterpret</strong>端到端的同声传译模型，不仅翻译准确率高，延迟低，还能复刻说话人的声音特征。</p>\n  <p data-track=\"34\">随着Seed-OSS的开源，国产开源Base模型又添一员猛将。</p>\n  <p data-track=\"35\">GitHub：\n   <br>\n   https://github.com/ByteDance-Seed/seed-oss</p>\n  <p data-track=\"36\">HuggingFace：\n   <br>\n   https://huggingface.co/collections/ByteDance-Seed/seed-oss-68a609f4201e788db05b5dcd</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "字节跳动开源 360 亿参数大模型 Seed-OSS，原生支持 512K 超长上下文，并引入“思考预算”机制，在多项基准测试中刷新开源模型推理能力纪录。",
+  "oneSentenceSummary": "字节跳动开源 360 亿参数大模型 Seed-OSS，原生支持 512K 超长上下文，并引入“思考预算”机制，在多项基准测试中刷新开源模型推理能力纪录。",
+  "summary": "字节跳动突发开源其 360 亿参数大模型 Seed-OSS-36B，采用 Apache-2.0 协议，可免费用于学术和商业。该模型最显著的特点是原生支持 512K 超长上下文，是当前主流开源模型的 4 倍，且在预训练阶段构建，而非后期插值。此外，Seed-OSS 引入了独特的“思考预算”机制，允许用户通过设定 token 数量控制模型推理深度。模型架构稳定，采用 RoPE、GQA 等技术。在 MMLU-Pro、BBH、GSM8K、MATH 和 HumanEval 等基准测试中，Seed-OSS-36B 的知识理解、推理和代码能力均表现出色，尤其在 BBH 推理能力上刷新了开源模型记录。文章还提及字节 Seed 团队的其他开源项目，如 Seed-Coder、BAGEL、Seed Diffusion 等，展示了其在基础模型和 AI 基础设施方面的实力。Seed-OSS 的开源为国产大模型生态增添了一员猛将。",
+  "mainPoints": [
+    {
+      "point": "原生 512K 超长上下文大幅提升模型处理复杂信息能力",
+      "explanation": "Seed-OSS 在预训练阶段即构建 512K 上下文，远超主流模型，使其能轻松处理法律文档、长篇报告和复杂代码库等海量信息场景，拓宽了应用边界。"
+    },
+    {
+      "point": "“思考预算”机制优化模型推理效率和深度",
+      "explanation": "通过设定 token 数量，用户可控制模型推理过程中的思考深度，平衡响应速度与任务复杂性，提升了模型在不同场景下的实用性和灵活性。"
+    },
+    {
+      "point": "Seed-OSS 在多项基准测试中展现卓越性能",
+      "explanation": "模型在 MMLU-Pro、BBH、GSM8K 等知识理解和推理任务上均取得高分，尤其刷新了 BBH 推理能力的开源模型记录，证明了其强大的综合能力。"
+    },
+    {
+      "point": "字节跳动持续贡献高质量开源基础模型",
+      "explanation": "Seed-OSS 的开源是字节跳动在基础模型领域持续投入的体现，结合此前发布的 Seed-Coder、BAGEL 等项目，共同推动了 AI 技术生态的发展。"
+    }
+  ],
+  "keyQuotes": [
+    "字节跳动突发开源大模型，一出手就是 360 亿参数的 Seed-OSS-36B。",
+    "要说 Seed-OSS 最让人眼前一亮的特性，那必须是原生 512K 的超长上下文。",
+    "此外，Seed-OSS 还引入了\"思考预算\"（Thinking Budget）机制。",
+    "推理能力的 BBH 基准测试得分 87.7，直接刷新了开源模型的记录。",
+    "随着 Seed-OSS 的开源，国产开源 Base 模型又添一员猛将。"
+  ],
+  "tags": [
+    "大语言模型",
+    "字节跳动",
+    "Seed-OSS",
+    "开源模型",
+    "长上下文"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 93,
+  "wordCount": 1745,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755755962000,
+  "publishDateStr": "2025-08-21",
+  "publishDateTimeStr": "2025-08-21 05:59:22"
+}

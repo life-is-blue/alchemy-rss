@@ -1,0 +1,59 @@
+{
+  "id": "RAW_bfa9a8",
+  "title": "GitHub 工程师如何学习新代码库",
+  "url": "https://github.blog/developer-skills/application-development/how-github-engineers-learn-new-codebases/",
+  "date": "2025-03-13 16:00:19",
+  "author": "Brittany Ellich",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>No matter where you are in your coding career, you will likely come across a new codebase or problem domain that is completely unfamiliar to you. Because codebases can be filled with many layers of design patterns, bugfixes, and temporary workarounds, learning a new one can be a time-consuming and frustrating process.</p>\n  <p>Last year, I moved to a new team at GitHub. During my transition, I collected insights from colleagues about how they approach learning new technical spaces. A fascinating collection of strategies emerged, and I’m excited to share them!</p>\n  <p>Below are the most effective methods I gathered, organized by approach. Whether you’re a seasoned engineer switching teams or a newcomer to the field, these strategies can help make your next codebase onboarding a little bit easier.</p>\n  <h2 id=\"hands-on-code-exploration\">Hands-on code exploration<a href=\"#hands-on-code-exploration\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Hands-on code exploration\"></a></h2>\n  <p>One of the best ways to get started is working directly with the code itself:</p>\n  <ul>\n   <li><strong>Start with “Good First Issues”</strong>: Begin your journey by tackling smaller, well-defined tasks. These issues are often carefully selected by the team that owns the codebase to help newcomers understand key components without becoming overwhelmed. They provide natural entry points into the system, while delivering immediate value to the team.</li>\n   <li><strong>Learn with GitHub Copilot</strong>: Open up your Copilot Chat window next to the codebase as you’re exploring it. You can ask Copilot Chat your questions, and then use the <code>/explain</code> functionality for things that are difficult to understand. <a href=\"https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/asking-github-copilot-questions-in-your-ide\">Learn more about using Copilot Chat in your development environment here</a>. Here are some example queries that I have used with GitHub Copilot to enhance my understanding of a codebase: \n    <ul>\n     <li>What will this function return if I give it X?</li>\n     <li>Summarize what this method is made to do</li>\n     <li>What are some potential gaps in the existing tests for this method?</li>\n    </ul></li>\n   <li><strong>Analyze telemetry and metrics</strong>: Modern applications generate vast amounts of performance and usage data. Study these metrics to understand how the system behaves in production, what patterns emerge during peak usage, and which components require the most attention. This data-driven approach provides invaluable context about the application’s real-world behavior.</li>\n   <li><strong>Explore through testing</strong>: Make deliberate modifications to the code and observe their effects. Write new tests to verify your understanding, and intentionally break things (in development) to see how the system fails. This helps build an intuitive understanding of the application’s boundaries and failure modes.</li>\n  </ul>\n  <h2 id=\"collaborative-learning\">Collaborative learning<a href=\"#collaborative-learning\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Collaborative learning\"></a></h2>\n  <p>Knowledge sharing is often the fastest path to understanding:</p>\n  <ul>\n   <li><strong>Pair program</strong>: Don’t just observe—actively participate in pairing sessions with experienced team members. Ask questions about their workflow, note which files they frequently access, and get to know their debugging strategies. Even if you’re mainly watching, you’ll absorb valuable context about how different pieces fit together.</li>\n   <li><strong>Understand the “why”</strong>: When assigned tasks, dig deep into the motivation behind them. Understanding the business context and technical rationale helps you make better architectural decisions and aids in future problem solving. Don’t be afraid to ask seemingly basic questions. They often lead to important insights.</li>\n   <li><strong>Monitor team communications</strong>: Stay active in team chat channels and incident response discussions. Pay special attention to production alerts and how the team responds to them. This exposure helps you understand common failure patterns and builds muscle memory for handling incidents.</li>\n  </ul>\n  <h2 id=\"documentation-and-knowledge-management\">Documentation and knowledge management<a href=\"#documentation-and-knowledge-management\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Documentation and knowledge management\"></a></h2>\n  <p>Writing and organizing information helps solidify understanding:</p>\n  <ul>\n   <li><strong>Create personal documentation</strong>: Maintain a living document of your discoveries, questions, and insights. Document important code paths, architectural decisions, and system interfaces as you encounter them. This will become an invaluable reference and help identify gaps in your understanding.</li>\n   <li><strong>Build technical maps</strong>: Create diagrams of system architecture, data flows, and entity relationships. Start with high-level “black boxes” and gradually fill in the details as your understanding grows. Visual representations often reveal patterns and relationships that aren’t obvious in the code. One tool that I use for this is Figma. I start with adding the basic blocks that I understand about a system and how they interact, and then continuously zoom in and out on different parts of the system to add to the map as I learn.</li>\n   <li><strong>Maintain a command cheat sheet</strong>: Keep track of useful commands, scripts, and workflows you discover. Include context about when and why to use them. This becomes especially valuable when working with complex build systems or deployment pipelines. Here’s <a href=\"https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax\">an example of a command cheat sheet that I often refer to for markdown syntax</a>.</li>\n   <li><strong>Gather information on the domain</strong>: One key to managing your knowledge of a codebase is to have a deep understanding of the domain. This can be gained from product owners, customer insights, or from industry best practices if the domain is generalizable enough. Deeply understanding the domain and what customers in that space find the most critical are key to learning a new codebase.</li>\n  </ul>\n  <h2 id=\"learn-by-teaching\">Learn by teaching<a href=\"#learn-by-teaching\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Learn by teaching\"></a></h2>\n  <p>One great way to verify your understanding of a topic is the ability to accurately explain it to others. If you created personal documentation, as recommended in the previous section, you can formalize it into guides and official documentation for future new members of your team:</p>\n  <ul>\n   <li><strong>Write internal guides</strong>: Once you learn something new, document it for the next person. This forces you to organize what you’ve learned and often reveals areas where your understanding isn’t as complete as you thought.</li>\n   <li><strong>Contribute to official documentation</strong>: When you find gaps in the existing documentation, take the initiative to improve it. This not only helps future team members but also validates your understanding with current experts. Learn more about writing documentation for your GitHub repository from <a href=\"https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/about-writing-and-formatting-on-github\">our GitHub-flavored markdown guide</a>.</li>\n   <li>Regularly reflect on your learning by answering these key questions: \n    <ul>\n     <li>Can you describe the system in a few concise sentences?</li>\n     <li>How does it interact with adjacent systems?</li>\n     <li>What surprised you most during the learning process?</li>\n     <li>What aspects remain unclear?</li>\n    </ul></li>\n  </ul>\n  <p>After all of these recommendations, I’ve found that my favorite way to learn a new codebase is through documenting it, and turning that documentation into something that others can use in the future. Writing things down forces me to structure my thoughts and identify gaps in my understanding.</p>\n  <p><a href=\"https://gist.github.com/brittanyellich/262d8d94d8b80cfd9ec5dad677d2fef8\">Here is a markdown template I developed for learning new codebases</a>, which I use in conjunction with these methods to systematically build my knowledge.</p>\n  <blockquote>\n   <p>No matter how you learn, getting familiar with a new codebase can take some time. If you find that you need to brush up on your GitHub skills for any of these areas, check out <a href=\"https://www.youtube.com/playlist?list=PL0lo9MOBetEFcp4SCWinBdpml9B2U25-f\">this GitHub for Beginners video</a>. <br>\n     Happy learning!</p>\n  </blockquote>\n  <div class=\"mt-8 mb-8 mb-md-0\">\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文总结了 GitHub 工程师学习新代码库的实践探索、协作学习、文档构建和教学分享等多种有效策略。",
+  "oneSentenceSummary": "本文总结了 GitHub 工程师学习新代码库的实践探索、协作学习、文档构建和教学分享等多种有效策略。",
+  "summary": "文章分享了 GitHub 工程师学习新代码库的经验和方法。主要分为四个方面：一是通过实践探索，例如从 “新手友好问题” 入手，利用 GitHub Copilot 的 `/explain` 功能（解释命令）进行代码解释和问题解答，分析遥测数据（用于监控系统性能和使用情况的数据），并通过测试来加深理解；二是通过协作学习，包括结对编程、理解任务的 “为什么” 以及监控团队沟通；三是通过文档和知识管理，包括创建个人文档、构建技术地图、维护命令速查表以及深入理解领域知识；四是通过教学来巩固学习成果，例如编写内部指南和贡献官方文档。文章强调，学习新代码库需要时间和耐心，并推荐使用 Markdown 模板来系统地构建知识。",
+  "mainPoints": [
+    {
+      "point": "实践探索是快速理解代码库的关键方法",
+      "explanation": "通过处理小任务、使用 Copilot、分析指标和进行测试，可以快速了解代码库的关键组件和行为模式。"
+    },
+    {
+      "point": "协作学习加速知识传递和问题解决",
+      "explanation": "结对编程、理解任务背景和参与团队沟通，能够有效获取上下文信息，并学习解决问题的策略。"
+    },
+    {
+      "point": "文档构建和知识管理有助于巩固理解",
+      "explanation": "创建个人文档、构建技术地图和维护命令速查表，能够系统地组织知识，并识别理解中的盲点。"
+    },
+    {
+      "point": "通过输出和分享来验证和深化理解",
+      "explanation": "编写内部指南和贡献官方文档，能够迫使自己组织知识，并发现理解不完整的地方。"
+    }
+  ],
+  "keyQuotes": [
+    "无论您处于编码生涯的哪个阶段，都可能会遇到完全陌生的新代码库或问题域。",
+    "直接上手实践是最佳入门方式之一",
+    "知识共享通常是理解的最快途径",
+    "编写和组织信息有助于巩固理解",
+    "验证对某个主题理解程度的有效方法是能否准确地向他人解释它。"
+  ],
+  "tags": [
+    "代码库",
+    "代码学习",
+    "代码理解",
+    "学习方法论",
+    "学习方法"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1070,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741881619000,
+  "publishDateStr": "2025-03-13",
+  "publishDateTimeStr": "2025-03-13 16:00:19"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_66d1a4",
+  "title": "AI 会加速工程师的无能",
+  "url": "https://baoyu.io/translations/accelerated-incompetence",
+  "date": "2025-05-29 03:48:16",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.slater.dev/accelerated-incompetence/\">AI: Accelerated Incompetence</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"538pq6iv07\"><em>在软件工程中，对大语言模型（LLM）的过度依赖，会加速工程师的无能。大语言模型无法取代人类的批判性思维。</em></p>\n   <p data-id=\"d5it4hevlx\"><em>本文内容未使用任何AI生成。</em></p><img src=\"https://www.slater.dev/llm_dependence.jpg\" data-width=\"100%\" data-align=\"center\" alt=\"一张图表展示了对LLM依赖程度和智商之间推测的反比关系\">\n   <p data-id=\"0y3a8fdbv8\">2022年底以来，AI和大语言模型（LLM）的浪潮席卷全球。作为一名资深的软件工程师，我想谈谈我观察到的两个令人担忧的观点。</p>\n   <h2 data-id=\"gnbiobgw6j\" id=\"gnbiobgw6j\" data-toc-id=\"gnbiobgw6j\">“LLM是我的朋友”</h2>\n   <p data-id=\"fdl7nne9o2\">当然，没有人真的会把一个程序当作朋友，但这句话的潜台词是：大语言模型对使用者有巨大帮助。</p>\n   <p data-id=\"zn4dtqnaax\">那些将LLM视为盟友的工程师往往会特别强调速度，或者因为环境压力而被迫追求快速交付。对他们来说，生产速度比深度思考更加重要。的确，LLM能够快速生成大量代码，但同时也带来了巨大的风险。</p>\n   <h2 data-id=\"gd3er33ahr\" id=\"gd3er33ahr\" data-toc-id=\"gd3er33ahr\">使用LLM的风险</h2>\n   <ul>\n    <li>\n     <p data-id=\"fjobi9ykoc\"><strong>输出风险</strong>。LLM可能给出明显错误的代码，比如无法编译；更严重的风险是，它们可能生成看似正确但实际存在逻辑错误的代码，且难以发现。如果使用者没有足够能力评估输出（例如让项目经理来请求代码），风险会进一步加剧。</p></li>\n    <li>\n     <p data-id=\"9x8tufkhh2\"><strong>输入风险</strong>。LLM不会质疑带有误导性或假设有误的提问。例如，一个工程师问：“请给我提供一个线程安全的C#列表实现”，LLM可能会返回200行完美的代码，但其实正确的问题应该是：“如何让现有的代码线程安全？”，正确的答案只需一行代码（<code>System.Collections.Concurrent</code>）。LLM无法识别这种经典的XY问题。</p></li>\n    <li>\n     <p data-id=\"f3g1rex31j\"><strong>未来开发速度</strong>。这就是典型的“技术债务”问题，但更加紧迫。AI可能迅速降低代码质量。想象一下一个囤积狂的家，外表可能看起来正常，但内部肮脏凌乱、功能瘫痪。如果没有有效的管理，由LLM生成的代码库就像这样，表面正常而内部混乱。</p></li>\n    <li>\n     <p data-id=\"yacvth37t1\"><strong>用户的技能退化</strong>。当个人和组织把思考和问题解决完全外包给LLM时，人才的灭绝就会发生：</p>\n     <ul>\n      <li>\n       <p data-id=\"nmz4s7j1rj\">资深工程师失去通过克服困难成长的机会，他们原本的技能逐渐退化：</p>\n       <ul>\n        <li>\n         <p data-id=\"mnw5pqoxze\">微软研究发现，AI带来的自信往往是以牺牲批判性思维为代价的。</p></li>\n        <li>\n         <p data-id=\"lp5ml2m7bo\">在追求“条件反射式AI使用”的时代，我们应当更谨慎、更有意识地与AI合作，保护代码创作的本质。</p></li>\n        <li>\n         <p data-id=\"3ouaryu6yv\">LLM给我提供的是现成的观点，精致且令人信服，但剥夺了自己探索、成长的机会。</p></li>\n       </ul></li>\n      <li>\n       <p data-id=\"5fzcn9n8e7\">初级工程师无法培养出这些能力，未来也无法指导下一代工程师。</p></li>\n     </ul></li>\n    <li>\n     <p data-id=\"tf1wjuqciz\"><strong>失去创造的乐趣</strong>。很多开发者发现，使用AI之后，失去了进入“心流”状态和创造的快乐。AI生成的代码通常难以阅读和维护，令人感到沮丧。</p></li>\n   </ul>\n   <h2 data-id=\"v5c94moexa\" id=\"v5c94moexa\" data-toc-id=\"v5c94moexa\">“我会变得多余吗？”</h2>\n   <p data-id=\"cwpz4m28ne\">不，你不会。但你确实需要一些方法，让自己更好地与LLM区别开来。具体的方法，我会在后续文章再做介绍。</p>\n   <p data-id=\"mcabe075ho\">有两个编程的核心能力，是LLM无法提供的：<strong>程序理论（Program Theory）</strong> 和 <strong>程序熵（Program Entropy）</strong>。</p>\n   <h2 data-id=\"jy3x7xb9wg\" id=\"jy3x7xb9wg\" data-toc-id=\"jy3x7xb9wg\">程序理论（Program Theory）</h2>\n   <blockquote data-id=\"vxsjvxuxrp\">\n    <p data-id=\"4tqypp78s9\">……程序设计本质上是一种建立或达成特定理解（理论）的活动。</p>\n   </blockquote>\n   <p data-id=\"6352etofrh\">—— Peter Naur，《程序设计即理论构建》（1985）</p>\n   <p data-id=\"itb607bat4\">Naur是计算机历史上的重要人物，他提出，一个程序并不是代码本身，而是人类头脑中共同构建的一种理论或设计。这种理论远比代码本身更有价值。</p>\n   <p data-id=\"7j5uadijay\">我们来进行一个思维实验，说明程序理论与代码文本之间的区别：</p>\n   <p data-id=\"td6qw3xkum\">假设有两个实力相当的开发团队A和B，被隔离在不同房间。团队A负责从零开发一个简单的终端棋类游戏，团队B则等待或玩真实的棋类游戏。等A团队开发完毕后，把代码交给B团队，并同时要求两个团队给游戏增加一个新功能，比如电脑自动对弈功能。</p>\n   <p data-id=\"qtd94pvqzp\"><strong>问题</strong>：哪个团队的表现更好？</p>\n   <p data-id=\"w7wmy89h6o\"><strong>答案</strong>：团队A更好，因为他们刚刚构建了对程序的清晰理解，而团队B并没有。</p>\n   <p data-id=\"e96b0tiof2\">Naur强调，这种理论至关重要，因为<strong>程序最终总需要被维护。如果你只有代码，而缺乏对设计的理解，维护成本就会极高。</strong> 相信每个程序员都有过类似经历：<strong>第一次接触一个庞大的代码库时，生产力几乎为零，直到逐渐构建出对程序的内部理解。</strong></p>\n   <h3 data-id=\"o4olq9zh4j\" id=\"o4olq9zh4j\" data-toc-id=\"o4olq9zh4j\">LLM与程序理论</h3>\n   <p data-id=\"50edmejhdu\">当前的LLM无法掌握理论或设计，因为它们缺乏长期记忆。只有人类才能获得并保留程序理论。</p>\n   <h2 data-id=\"sjm1uw7u6u\" id=\"sjm1uw7u6u\" data-toc-id=\"sjm1uw7u6u\">程序熵（Program Entropy）</h2>\n   <p data-id=\"27odlc38jc\"><strong>复杂性是程序设计中最根本的阻力，它与熵相关。</strong></p>\n   <blockquote data-id=\"uqod4q4evc\">\n    <p data-id=\"veazzfzp8r\"><strong>程序构建是一个降低熵的过程，而程序维护则是熵增的过程。</strong> 即便是最高效的维护，也只能延缓系统滑向无法修复的过时状态。</p>\n    <p data-id=\"ysswuoljah\">—— Fred Brooks，《人月神话》（1975）</p>\n   </blockquote>\n   <p data-id=\"m6ec8yth02\">Brooks也是计算机领域的传奇人物，他指出程序在初次开发后，每次修改只会让代码变得更复杂。如果修改符合原始设计，则复杂性的增加速度会稍慢。</p>\n   <h3 data-id=\"8hwtx1wii1\" id=\"8hwtx1wii1\" data-toc-id=\"8hwtx1wii1\">LLM与程序熵</h3>\n   <p data-id=\"bh2pmk3xut\">LLM本质是一个文本预测器，仅仅在文本层面工作，不具备概念层面的推理能力。它无法理解想法、图示或需求规范。当你用大段代码提示LLM时，它往往会生成一些莫名其妙的变化，随着对话持续，代码越来越偏离初始意图。</p>\n   <p data-id=\"zs6a1095e4\"><strong>你几乎不可能见到LLM降低代码复杂性。只有人类才能主动降低或抵抗复杂性。</strong></p>\n   <h2 data-id=\"etvwgjn391\" id=\"etvwgjn391\" data-toc-id=\"etvwgjn391\">结语</h2>\n   <p data-id=\"ggxj3t8ls7\">我们通过回顾两位软件工程先驱的智慧，获得了适用于LLM时代的洞见：</p>\n   <ul>\n    <li>\n     <p data-id=\"ejj8yvawdv\">如果你期待AI能迅速提升你的工程事业，小心适得其反。<strong>LLM可能加速你的无能。</strong></p></li>\n    <li>\n     <p data-id=\"0pzgm9l2u3\">如果你是一名经验丰富的工程师，担心AI取代你的工作，放心吧，<strong>LLM无法取代人类工程师。</strong></p></li>\n   </ul>\n   <p data-id=\"xhrn8th6ea\">AI带来的商业吸引力是降低成本，但就像外包工程师一样，AI的应用也存在巨大风险。AI的热潮终将降温，滥用AI的公司将面临长期成本，不是转型就是消失。人类工程技能的长期价值始终如一，世界依旧需要深厚的技术能力和深入的思考。</p>\n   <p data-id=\"r0p19r8eof\">AI不会消失，但请把它当成工具，而不是拐杖。持续投资于真正有价值的工程技能。</p>\n   <h2 data-id=\"jx8agj32mb\" id=\"jx8agj32mb\" data-toc-id=\"jx8agj32mb\">参考文献</h2>\n   <ol>\n    <li>\n     <p data-id=\"nk6to6tv3w\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://en.wikipedia.org/wiki/Leading_question\">Leading Question</a></p></li>\n    <li>\n     <p data-id=\"qme1cfscxp\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://en.wikipedia.org/wiki/XY_problem\">The XY Problem</a></p></li>\n    <li>\n     <p data-id=\"jro1kz5hxt\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.thoughtworks.com/content/dam/thoughtworks/documents/radar/2025/04/tr_technology_radar_vol_32_en.pdf\">ThoughtWorks Technology Radar Volume 32</a></p></li>\n    <li>\n     <p data-id=\"owbg8qx00o\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://cekrem.github.io/posts/coding-as-craft-going-back-to-the-old-gym/\">Coding as Craft: Going Back to the Old Gym</a></p></li>\n    <li>\n     <p data-id=\"4dcwwdjqbb\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://dcurt.is/thinking\">Thoughts on Thinking</a></p></li>\n    <li>\n     <p data-id=\"qtgslh6ogw\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/\">The Hidden Cost of AI Coding</a></p></li>\n    <li>\n     <p data-id=\"9smdspaph9\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.reddit.com/r/ExperiencedDevs/comments/1h3xpke/dont_know_if_the_right_place_how_to_work_on/\">\"I wonder if I'll become redundant\"</a></p></li>\n    <li>\n     <p data-id=\"o9mry1th0m\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://pablo.rauzy.name/dev/naur1985programming.pdf\">Programming as Theory Building</a></p></li>\n    <li>\n     <p data-id=\"45zg3ph527\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://grugbrain.dev/#grug-on-complexity\">Grug on Complexity</a></p></li>\n    <li>\n     <p data-id=\"nk6zejqp49\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://en.wikipedia.org/wiki/Gartner_hype_cycle\">Gartner Hype Cycle</a></p></li></ol></div>\n \n",
+  "aiSummary": "警示过度依赖 AI 将加速工程师无能，强调程序理论和程序熵是人类工程师不可取代的核心能力。",
+  "oneSentenceSummary": "警示过度依赖 AI 将加速工程师无能，强调程序理论和程序熵是人类工程师不可取代的核心能力。",
+  "summary": "文章深入分析了软件工程师过度依赖大型语言模型（LLM）的潜在风险。作者指出，虽然 LLM 能提高代码生成速度，但也可能导致输出错误代码、无法识别和解决复杂问题（如 XY 问题）、快速积累技术债务，并严重加速工程师技能退化，失去批判性思维和创造乐趣。通过引用计算机科学先驱 Naur 和 Brooks 的理论，文章强调了人类独有的“程序理论”（对系统设计的理解）和“程序熵”（降低复杂性的能力）是 LLM 无法掌握的核心竞争力。文章结论是，AI 不会取代人类工程师，但工程师需将 AI 视为工具而非拐杖，持续投资于深层的工程技能，以应对 AI 带来的挑战。",
+  "mainPoints": [
+    {
+      "point": "过度依赖 LLM 会导致输出错误及技术债务累积风险",
+      "explanation": "LLM 可能生成有逻辑错误或难以维护的代码，且无法识别问题的根本原因，长期看会严重损害代码库健康。"
+    },
+    {
+      "point": "AI 使用加速工程师技能退化并削弱批判性思维",
+      "explanation": "将思考外包给 LLM 使工程师失去解决难题、学习成长的机会，长期下去导致经验和能力的衰退。"
+    },
+    {
+      "point": "程序理论与程序熵是人类工程师独有且不可取代的能力",
+      "explanation": "LLM 缺乏对程序设计深层理论的理解和主动管理、降低代码复杂性的能力，这是人类工程师的核心价值所在。"
+    }
+  ],
+  "keyQuotes": [
+    "在软件工程中，对大语言模型（LLM）的过度依赖，会加速工程师的无能。",
+    "那些将 LLM 视为盟友的工程师往往会特别强调速度，或者因为环境压力而被迫追求快速交付。",
+    "LLM 给我提供的是现成的观点，精致且令人信服，但剥夺了自己探索、成长的机会。",
+    "当前的 LLM 无法掌握理论或设计，因为它们缺乏长期记忆。只有人类才能获得并保留程序理论。",
+    "你几乎不可能见到 LLM 降低代码复杂性。只有人类才能主动降低或抵抗复杂性。"
+  ],
+  "tags": [
+    "软件工程",
+    "AI对开发者影响",
+    "大语言模型",
+    "程序理论",
+    "程序熵"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2180,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748490496000,
+  "publishDateStr": "2025-05-29",
+  "publishDateTimeStr": "2025-05-29 03:48:16"
+}

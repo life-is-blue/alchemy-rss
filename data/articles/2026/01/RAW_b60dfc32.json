@@ -1,0 +1,58 @@
+{
+  "id": "RAW_b60dfc32",
+  "title": "首个智能体商业信任协议来了！支付宝携手千问 App、淘宝闪购等发布 AI 商业协议 ACT",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271949&idx=4&sn=3a43ad877457a6ae7639f7aebfb8b7cb",
+  "date": "2026-01-16 04:16:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | 李冬梅 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">1 月 16 日，支付宝联合千问 App、淘宝闪购、Rokid、大麦、阿里云百炼等伙伴，正式发布 ACT 协议（Agentic Commerce Trust Protocol，智能体商业信任协议）。这是中国首个面向 Agent 商业需求设计的开放技术协议框架，为 AI 与电商、外卖等服务平台的协同打造一套 “通用语言”，让跨终端、跨系统、跨平台的 AI 任务执行，变得更便捷、更高效。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503788290\" data-ratio=\"0.37265625\" style=\"width: 100%;\" data-type=\"png\" data-w=\"1280\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=beca4af9&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VNLwTRs1Yato17AZ5VBsNz6HnWlgWcptwv0CkpMBkE8VbOjOVFS3h3oJUCV4ic5aWQKOiaU1RcOqGhQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">以千问 App 为例，依托 ACT 协议 ，千问 App 成功打通淘宝闪购与支付宝 AI 付：用户只需向千问发出指令 “帮我点杯珍珠奶茶”，千问基于用户地理位置，智能推荐附近符合需求的商品，同步完成比价与优惠券自动核销。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">用户仅需点击 “选它”，确认支付宝付款，即可一键完成结账。整个购物流程以对话式、自动化、不跳端的方式推进，千问化身专属 “购物助手”，包办繁琐操作。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">当 AI 的能力边界不断拓展，从“聊天对话”延伸至购物付款等“办事时代”，新的问题也随之浮现：AI 操作是否获得用户明确授权？资金交易过程是否足够安全？更换设备或应用后，服务体验能否保持连贯？</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">ACT 协议的诞生正是为破解这些问题而来。支付宝为其搭建了 “委托授权域”“商业交互域”“支付服务域”“信任服务域” 四大核心基础设施标准，实现 AI 操作全流程可追溯、可验证，让人更放心；支持自动化交易流程，减少不必要的人工干预，提升服务效率；统一多平台服务标准，避免体验的割裂。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503788291\" data-ratio=\"0.5911330049261084\" style=\"width: 100%;\" data-type=\"png\" data-w=\"1218\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=5033dd7d&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VNLwTRs1Yato17AZ5VBsNz6gXkEjeZHWiasCWv15mic183cFibLA6aa867dExy2JPiccwbvmP7mSLEjJQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">与传统付款模式不同，在 ACT 协议的规则框架下，AI 仅承担下单操作的执行角色，付款环节始终由用户主导或自主授权。在保障资金安全的前提下，为用户大幅节省时间成本。而对商家而言，未来接入 AI 原生应用时，只需按照协议标准配置统一接口，即可对接全渠道入口，无需单独进行复杂的 API 开发，大幅降低对接成本。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">目前，ACT 协议可使用在 AI 代买、企业自动化采购等多元场景，并提供两种付款模式：一是即时付款，用户与 AI 实时对话，基于推荐列表自主决策，确认后完成付款授权与身份验证，适用于 AI 点外卖、日常购物等高频场景；二是委托授权，用户可提前设定时间窗口、金额上限、商家范围等条件，即便离线无指令，AI 也能自动监测商品动态并完成下单结算，适用于机票、酒店预订等场景。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该协议最大限度遵循兼容性、隐私性、开放性三大原则，全面适配现有商业与支付系统，并将伴随 AI 行业技术发展持续优化。支付宝同时表示，正积极推动更多支付服务商、商家与平台、AI 开发者、智能终端生态厂商加入，共同完善协议内容，共建 AI 商业信任新生态。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">随着 AI 原生应用能力的持续升级，“AI 代办” 服务日渐普及，支付作为其中特殊且关键的环节，正成为全球科技企业的布局焦点。此前，OpenAI 联合 Stripe 推出协议以支持 ChatGPT 结账功能；近期，谷歌也发布 AI 购物全流程通用商务协议（Universal Commerce Protocol，简称 UCP），将实现用户在 Gemini 内直接下单。</span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "支付宝发布中国首个智能体商业信任协议 ACT，旨在构建 AI 商业化场景下的信任体系和支付标准，提升跨平台协同效率与用户体验，并确保交易安全和用户授权。",
+  "oneSentenceSummary": "支付宝发布中国首个智能体商业信任协议 ACT，旨在构建 AI 商业化场景下的信任体系和支付标准，提升跨平台协同效率与用户体验，并确保交易安全和用户授权。",
+  "summary": "支付宝联合千问 App、淘宝闪购等伙伴，正式发布智能体商业信任协议 ACT（Agentic Commerce Trust Protocol），这是中国首个面向 Agent 商业需求设计的开放技术协议框架。该协议旨在为 AI 与电商、外卖等服务平台提供一套“通用语言”，实现跨终端、跨系统、跨平台的 AI 任务便捷高效执行。ACT 协议通过“委托授权域”“商业交互域”“支付服务域”“信任服务域”四大核心基础设施标准，解决 AI 操作授权、资金安全和多平台体验连贯性等问题，确保 AI 操作可追溯、可验证，并支持自动化交易流程。该协议提供即时付款和委托授权两种模式，适用于 AI 代买、企业自动化采购等多元场景，并遵循兼容性、隐私性和开放性原则。文章提及 OpenAI 与 Stripe、谷歌推出类似协议，凸显 AI 代办和支付在全球的布局焦点。",
+  "mainPoints": [
+    {
+      "point": "ACT 协议是中国首个面向 Agent 商业需求设计的开放技术协议框架。",
+      "explanation": "旨在为 AI 与电商、外卖等服务平台提供“通用语言”，解决跨终端、跨系统、跨平台的 AI 任务执行效率和体验连贯性问题。"
+    },
+    {
+      "point": "协议通过四大核心基础设施标准保障 AI 商业操作的信任和安全。",
+      "explanation": "包括“委托授权域”、“商业交互域”、“支付服务域”和“信任服务域”，确保 AI 操作全流程可追溯、可验证，提升用户放心程度并支持自动化交易。"
+    },
+    {
+      "point": "ACT 协议优化了用户支付体验，同时降低商家接入成本。",
+      "explanation": "在保障资金安全的前提下，通过 AI 仅承担下单角色，用户主导付款，大大节省时间；商家只需按协议标准配置统一接口即可对接全渠道入口。"
+    },
+    {
+      "point": "协议支持即时付款和委托授权两种模式，适用于多元商业场景。",
+      "explanation": "即时付款适用于高频日常购物，委托授权则适用于机票、酒店预订等需提前设定的场景，满足不同 AI 代买需求。"
+    }
+  ],
+  "keyQuotes": [
+    "这是中国首个面向 Agent 商业需求设计的开放技术协议框架，为 AI 与电商、外卖等服务平台的协同打造一套\"通用语言\"。",
+    "ACT 协议的诞生正是为破解这些问题而来。支付宝为其搭建了\"委托授权域\"\"商业交互域\"\"支付服务域\"\"信任服务域\"四大核心基础设施标准。",
+    "在 ACT 协议的规则框架下，AI 仅承担下单操作的执行角色，付款环节始终由用户主导或自主授权。",
+    "该协议最大限度遵循兼容性、隐私性、开放性三大原则，全面适配现有商业与支付系统，并将伴随 AI 行业技术发展持续优化。"
+  ],
+  "tags": [
+    "AI Agent",
+    "商业信任协议",
+    "智能支付",
+    "跨平台协同",
+    "AI应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1130,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768536960000,
+  "publishDateStr": "01-16",
+  "publishDateTimeStr": "2026-01-16 04:16:00"
+}

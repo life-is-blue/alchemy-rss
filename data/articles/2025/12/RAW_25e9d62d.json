@@ -1,0 +1,55 @@
+{
+  "id": "RAW_25e9d62d",
+  "title": "Spring 工具 5：为 AI 做好准备",
+  "url": "https://spring.io/blog/2025/12/04/towards-spring-tools-5-part3",
+  "date": "2025-12-04 00:00:00",
+  "author": "martinlippert",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>There is no doubt that AI-based coding assistants are already or will be widely used by developers and within organizations. While the overall outlook is pretty certain, the exact way when and how to use those tools might vary, ranging from extensions for existing IDEs (e.g. Copilot for Visual Studio Code) to entirely AI-focused environments (e.g. Cursor) or pure command-line interfaces (e.g. Claude Code).</p>\n  <p>The upcoming new major version 5 of the Spring Tools is ready for this new era in two different dimensions:</p>\n  <ul>\n   <li>we make sure that you can install and use the Spring Tools in as many AI-extended or AI-focused environments as possible, enhancing your AI-powered developer experience with the traditional Spring support that the Spring Tools bring to the table (ranging from specific validations, quick fixes, quick navigation and understanding, and more).</li>\n   <li>we integrate the Spring Tools with the surrounding AI-powered environment to improve the AI coding experience itself.</li>\n  </ul>\n  <h2 id=\"spring-tools-in-ai-coding-environments\"><a href=\"#spring-tools-in-ai-coding-environments\" aria-label=\"spring tools in ai coding environments permalink\" class=\"anchor before\"></a>Spring Tools in AI coding environments</h2>\n  <p>How do we integrate the Spring Tools with the surrounding AI assistant? The first things that will jump to your eye are very specific, carefully crafted, and AI-backed actions showing up in the code. Those actions use predefined prompts, mix them with the code at hand, and allow you to quickly hand them over to the AI assistant.</p>\n  <p>For example, when you use database query statements in your Spring Data query annotations, a codelens enables you to quickly let the AI assistant explain the query statement in all the details. The same appears in code for SpEL expressions or pointcut expressions. They all can be quickly handed over to the AI assistant for a detailed explanation.</p>\n  <p><img src=\"https://static.spring.io/blog/mlippert/20251204/01-explain-query-with-ai.png\" alt=\"Explain Query SQL statement with AI\" width=\"517\"></p>\n  <p>Another example of a pre-defined AI action appears when you use static methods to define web routes in a functional style. The codelens then allows you to switch to the newer builder pattern to define those routes by asking the AI assistant to create the necessary changes for you.</p>\n  <p><img src=\"https://static.spring.io/blog/mlippert/20251204/02-convert-to-builder-pattern-with-ai.png\" alt=\"Convert webflux route definition to builder pattern with AI\" width=\"797\"></p>\n  <h2 id=\"support-for-agentic-coding\"><a href=\"#support-for-agentic-coding\" aria-label=\"support for agentic coding permalink\" class=\"anchor before\"></a>Support for agentic coding</h2>\n  <p>Pre-defined actions are - of course - nice and handy, but also limited and very specific. If you are all in on agentic coding in your AI-powered environment, the Spring Tools help you with that as well.</p>\n  <p>Spring Tools 5 comes with an embedded MCP server that you can connect to your coding agent (like a typical MCP server). Once the embedded MCP server is connected, it will provide the coding agent with additional information about the projects in your workspace, including the resolved classpath, the version of Spring Boot that each project uses, detailed information about the beans you defined in your source code and their dependencies, the defined components together with their stereotypes, and more.</p>\n  <p>All these Spring insights will help the coding agent to work on your Spring projects in a more precise and efficient way.</p>\n  <h2 id=\"configuration\"><a href=\"#configuration\" aria-label=\"configuration permalink\" class=\"anchor before\"></a>Configuration</h2>\n  <p>The embedded MCP server is an experimental feature at the moment, so you have to enable it explicitly in the preferences (in the “AI” section of the Spring Tools preferences). Once you enable it (and restart your IDE or editor), you can configure your AI coding assistant to use the MCP server. The exact mechanics of this configuration depends on the AI coding assistant that you use, do please refer to the documentaton and help for your environment here. Usually, it boils down to add an entry to some MCP json configuration file. If so, you can use this snippet for the Spring Tools MCP server:</p>\n  <pre><code class=\"language-json\">\"spring-tools-mcp\": {\n    \"url\": \"http://localhost:50627/sse\",\n    \"type\": \"http\"\n}\n</code></pre>\n  <p>Unlike other MCP servers, the Spring Tools MCP server is not started on demand by the AI assistant, but runs inside of the Spring Tools language server process, so that AI assistants can connect to the running MCP server using HTTP.</p>\n  <h2 id=\"supported-ai-assistants\"><a href=\"#supported-ai-assistants\" aria-label=\"supported ai assistants permalink\" class=\"anchor before\"></a>Supported AI assistants</h2>\n  <p>As a starting point, the Spring Tools will recognize and automatically use one of these AI coding assistants and environments:</p>\n  <ul>\n   <li>Cursor</li>\n   <li>GitHub Copilot for Visual Studio Code</li>\n   <li>GitHub Copilot for Eclipse</li>\n  </ul>\n  <p>Following our overall strategy to make you as productive as possible when working on Spring applications in the coding environment of your choice, we do not require you to use a specific AI coding assistant. You should choose the environment that fits best your needs, and add the Spring Tools to it to make your coding environment even more powerful.</p>\n  <p>In case you prefer a CLI-based AI assistant, you can configure that to use the MCP server of the Spring Tools as well. But you need to keep in mind that the Spring Tools MCP server runs inside of the Spring Tools and gets its information from the surrounding IDE. This means that you can’t use the Spring Tools MCP server in an isolated way. You have to have your project opened in your Spring Tools powered IDE in parallel in order to use the embedded MCP server together with your CLI based AI assistant - or use the CLI based AI assistant from the terminal right inside your IDE.</p>\n  <p>One note to avoid confusion: The Spring Tools project does not ship its own large language model and does not require you to authenticate against a specific LLM provider. The integration happens purely via the existing AI coding assistants that you have configured in one of the above mentioned environments.</p>\n  <h2 id=\"we-are-looking-for-your-feedback\"><a href=\"#we-are-looking-for-your-feedback\" aria-label=\"we are looking for your feedback permalink\" class=\"anchor before\"></a>We are looking for your feedback</h2>\n  <p>This landscape is an extremely fast changing environment. New AI-powered coding tools emerge almost on a daily basis and the Spring Tools integration with AI tools is just the starting point. Let us know if you find this useful, whether you are missing a specific environment from this list of supported AI tools above, how you use AI-powered tools to boost your experience implementing Spring applications, and let us know if you have any feedback and/or suggestions in this space. Your feedback is more than welcome.</p>\n  <h2 id=\"looking-forward\"><a href=\"#looking-forward\" aria-label=\"looking forward permalink\" class=\"anchor before\"></a>Looking forward</h2>\n  <p>If you want to try the latest release candidates of Spring Tools 5, please go to the <a href=\"https://spring.io/tools5\">tools preview page</a> or switch to the pre-releases of the extensions in Visual Studio Code.</p>\n  <p>This wraps up the three part series around the upcoming Spring Tools 5 release:</p>\n  <ul>\n   <li><a href=\"https://spring.io/blog/2025/11/24/towards-spring-tools-5-part1\">Towards Spring Tools 5 - Ready for Boot 4 and Framework 7</a></li>\n   <li><a href=\"https://spring.io/blog/2025/11/28/towards-spring-tools-5-part2\">Towards Spring Tools 5 - Stereotypes and a new Structural View</a></li>\n   <li><a href=\"https://spring.io/blog/2025/12/04/towards-spring-tools-5-part3\">Towards Spring Tools 5 - Ready for AI</a></li>\n  </ul>\n  <p>Next up is the release of the Spring Tools version 5.0.0 GA on Dec 10. See you there.</p>\n </body>\n</html>",
+  "aiSummary": "Spring 工具 5 集成了预定义操作和嵌入式 MCP 服务器，以增强 Spring 应用的开发者体验。它与 AI 编码助手协同工作，提升开发效率。",
+  "oneSentenceSummary": "Spring 工具 5 集成了预定义操作和嵌入式 MCP 服务器，以增强 Spring 应用的开发者体验。它与 AI 编码助手协同工作，提升开发效率。",
+  "summary": "本文介绍 Spring 工具 5，重点介绍其对 AI 编码助手的支持。它概述了两个关键的集成维度：通过传统的 Spring 支持 (如验证、快速修复和导航) 增强 AI 驱动的开发者体验，以及改进 AI 编码体验本身。这些工具为诸如解释 SQL 查询或转换 WebFlux 路由等任务提供了特定的人工智能支持的操作。此外，Spring 工具 5 还包括一个实验性的嵌入式 MCP 服务器，该服务器为编码代理提供丰富的 Spring 特定的项目信息（类路径、Spring Boot 版本、bean 定义），从而实现更精确高效的 AI 辅助。该集成支持各种 AI 助手，如 Cursor 和 GitHub Copilot，强调灵活性，不依赖特定 LLM。",
+  "mainPoints": [
+    {
+      "point": "Spring 工具 5 通过传统 Spring 支持，增强 AI 驱动的开发者体验。",
+      "explanation": "它将特定的验证、快速修复和导航功能集成到人工智能扩展的环境中，确保开发人员在使用人工智能工具时保留 Spring 特定的辅助功能。"
+    },
+    {
+      "point": "预定义的 AI 支持操作简化了常见的 Spring 开发任务。",
+      "explanation": "诸如解释 Spring Data 查询或将 WebFlux 路由转换为构建器模式之类的示例，演示了 Spring 工具 5 如何直接在代码中提供上下文人工智能辅助。"
+    },
+    {
+      "point": "嵌入式 MCP 服务器为代理式编码提供深入的 Spring 项目信息。",
+      "explanation": "这个实验性功能为编码代理提供了关于项目类路径、Spring Boot 版本、bean 定义和组件类型的详细信息，从而实现更精确和高效的人工智能辅助。"
+    }
+  ],
+  "keyQuotes": [
+    "我们确保您可以在各种 AI 扩展或 AI 聚焦的环境中安装和使用 Spring 工具。通过 Spring 工具提供的传统 Spring 支持，增强您的 AI 驱动的开发者体验。",
+    "您首先会注意到的是代码中显示的，经过精心设计且由 AI 支持的各种特定操作。",
+    "所有这些 Spring 信息将帮助编码代理更精确高效地处理您的 Spring 项目。",
+    "为了让您在选择的编码环境中高效处理 Spring 应用，我们不要求您使用特定 AI 编码助手。这是我们的总体战略。",
+    "Spring 工具项目不自带大型语言模型，也不要求您对特定 LLM 提供商进行身份验证。"
+  ],
+  "tags": [
+    "人工智能驱动的开发",
+    "Spring 工具",
+    "代理式编码",
+    "MCP 服务器",
+    "编码助手"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1064,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764806400000,
+  "publishDateStr": "2025-12-04",
+  "publishDateTimeStr": "2025-12-04 00:00:00"
+}

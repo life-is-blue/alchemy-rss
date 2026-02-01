@@ -1,0 +1,59 @@
+{
+  "id": "RAW_54b786",
+  "title": "每秒生成超 30 帧视频，支持实时交互！自回归视频生成新框架刷新生成效率",
+  "url": "https://www.qbitai.com/2025/06/293399.html",
+  "date": "2025-06-12 06:05:23",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"51\">NFD团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"52\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">在A100上用310M模型，实现<strong>每秒超30帧</strong>自回归视频生成，同时画面还保持高质量！</p>\n  <p data-track=\"3\">视频生成现在都快这个程度了？</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/28d236d0e8715dbad33419d75dcd6fd0.gif\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"480\" data-height=\"274\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">最近，来自微软研究院的团队与北大联合发布新框架——<strong>Next-Frame Diffusion (NFD)</strong>。</p>\n  <p data-track=\"5\">通过实现帧内并行采样，帧间自回归的方式，NFD让视频生成在保持较高生成质量的同时，生成效率大幅提升。</p>\n  <p data-track=\"6\">或许不久之后的游戏，就是玩家直接跟模型交互打游戏了，无需通过传统的游戏引擎。</p>\n  <p data-track=\"7\">比如在《我的世界》中，下面每个视频在NVIDIA A100 GPU上生成<strong>只需约0.48秒</strong>。</p>\n  <p data-track=\"8\">玩家在黑暗的走廊中不断前进：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dbc4e411-ccd1-44bb-b648-6278f7e39200/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"640\" data-height=\"373\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">玩家在攻击小动物后转动视角：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/34fa578e-1411-4480-c33f-b66fd06bb400/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"640\" data-height=\"373\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">玩家跳跃后放置木块：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f408c553-38cc-4e2f-c36a-15b80c9d9000/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"640\" data-height=\"373\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">玩家跳上草地：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a37a076-8026-4533-f861-39f8b77fdd00/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"640\" data-height=\"373\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">玩家不停地放置石块：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb9344ed-0832-4731-6ef3-12f6d897a900/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"640\" data-height=\"373\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">值得一提的是，前段时间在X上火了的一款基于Minecraft的交互式自回归世界模型——<strong>MineWorld</strong>，也是这个微软研究院的团队做的。</p>\n  <p data-track=\"14\">它能够以每秒4-7帧的速度和模型进行交互。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/076a77ed-7b8d-42b7-42ae-b40008954000/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"882\" data-height=\"656\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">如今，NFD让生成速度又快了几倍。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c5bc78d-92a7-43a7-16c2-53e1f8c7a200/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"1080\" data-height=\"440\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">那么具体是如何做到的？</p>\n  <p data-track=\"18\">当前多数的自回归视频生成模型如VideoPoet采用类似于Language Model的方式，将视频编码成离散视频Token，并逐个生成Token。</p>\n  <p data-track=\"19\">然而这种方式在生成的时候既没法利用GPU并行计算的能力，也破坏了帧内的相关性。</p>\n  <p data-track=\"20\">因此，研究人员采用了<strong>Next-Frame Diffusion</strong>&nbsp;(NFD)的方式来建模视频，其使用<strong>帧内双向注意力，帧间因果注意力机制</strong>的方式来建模视频，并采用扩散模型多步迭代生成连续Token。</p>\n  <p data-track=\"21\">这样做的好处是可以在生成的时候逐帧采样来流式生成视频，并在帧内并行生成以提高推理效率。</p>\n  <p data-track=\"22\">为进一步提高生成效率，研究人员进一步通过以下技术来减少推理时的总采样次数：</p>\n  <ul>\n   <li data-track=\"23\"><strong>将一致性蒸馏扩展到视频领域，并专门针对视频模型优化</strong>，从而少量采样步骤，实现高效推理；</li>\n   <li data-track=\"24\"><strong>提出了投机采样方法</strong>。由于相邻帧常常动作输入相同，模型使用当前动作输入生成多个后续帧，若输入动作发生变化，则丢弃投机生成的帧，以充分利用并行计算能力。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/07b35c19-f8de-460e-5c3d-cd036463c500/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"1080\" data-height=\"250\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">具体来说，NFD的架构包含一个将原始视觉信号转换为Token的<strong>Tokenizer</strong>，以及生成这些Token的<strong>基于扩散的Transformer模型</strong>。在Transformer内，研究人员使用了<strong>块状因果注意力机制</strong>，结合帧内的双向注意力和帧间的因果依赖，高效建模时空依赖性。</p>\n  <p data-track=\"27\">相比计算密集的3D全注意力，该方法将整体成本减少50%，支持高效地并行预测下一帧所有Token。</p>\n  <p data-track=\"29\">研究人员基于Flow Matching构建训练流程，追求简单和稳定性。对于视频帧xi，分配一个独立时间步t，并通过线性插值生成加噪版本：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/aec45a77-54fd-47c8-f20e-c965b6940800/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"832\" data-height=\"96\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">训练通过最小化<strong>Flow Matching损失</strong>来进行：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/109892ea-8713-48a8-ebe6-a62998053300/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"1080\" data-height=\"124\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\">在采样阶段，研究人员采用<strong>DPM-Solver++</strong>，通过以下公式对同一帧的所有Token去噪：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/38a5deb9-8f23-4e12-e08a-b1b4c9152d00/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"998\" data-height=\"130\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">虽然NFD在推理阶段支持并行Token采样，受限于扩散模型的多步采样，实现实时视频生成仍具挑战性。</p>\n  <p data-track=\"34\">因此，研究人员首先将一致性蒸馏扩展到视频领域，通过数学变换将流匹配模型转换TrigFlow模型，从而简化了连续时间一致性模型的训练，并针对视频数据的特性进行调整。</p>\n  <p data-track=\"35\">具体的训练目标为：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/69852983-67e5-4525-a9b9-d6e39dae2000/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"1080\" data-height=\"102\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"37\">与此同时，研究人员观察到，用户输入的游戏动作在很多时候是可预测的。</p>\n  <p data-track=\"38\">例如，用户执行前进命令的时候往往会持续多帧。</p>\n  <p data-track=\"39\">鉴于这个发现，研究人员进一步提出了一种投机采样技术，通过并行预测多个未来帧加速推理。</p>\n  <p data-track=\"40\">在投机生成后，将预测动作与实际后续动作输入进行比较。一旦检测到预测与真实动作不一致，丢弃之后的所有投机帧，<strong>并从最后验证的帧重新开始生成</strong>。</p>\n  <p data-track=\"42\">下表从视频内容的生成效率和视觉质量两个角度对比了本工作的方法和当前最先进方法。</p>\n  <p data-track=\"43\">其中，NFD指使用Flow Matching目标训练并通过DPM-Solver++进行18次采样的模型；NFD+为加速版本，通过一致性蒸馏实现4步采样，并结合了投机采样技术。</p>\n  <p data-track=\"44\">NFD和NFD+方法与先前模型的生成效率、质量的对比：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a76967f1-bb25-425c-0035-900ea8d72100/public\" alt=\"每秒生成超30帧视频，支持实时交互！自回归视频生成新框架刷新生成效率\" data-ic=\"false\" data-width=\"1041\" data-height=\"470\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"45\">结果表明，NFD在多项指标上优于先前的自回归模型。</p>\n  <p data-track=\"46\">具体而言，NFD（310M）<strong>在FVD上达到212，PSNR为16.46</strong>，优于MineWorld（1.2B）的FVD 227和PSNR 15.69，同时运行速度达6.15FPS，快超过2倍。</p>\n  <p data-track=\"47\"><strong>NFD+通过高效采样策略显著加速</strong>：130M和310M模型<strong>分别达到42.46FPS和31.14FPS</strong>，远超所有基线。</p>\n  <p data-track=\"48\">即使速度提升，NFD+仍保持竞争力的视觉质量，310M模型在PSNR上达到16.83，FVD为227，与更大的MineWorld模型表现相当。</p>\n  <p data-track=\"49\">最后总结来说，团队认为当下视频生成模型在各个领域百花齐放，有诞生像Sora、可灵、Veo3这样的产品，也有Genie、MineWorld这样的游戏世界模拟器，为未来世界模型的实现提供了巨大意义。随着视频模型广泛的应用，更灵活、更高效的生成范式变得越来越重要。</p>\n  <p data-track=\"50\"><em>论文地址：https://arxiv.org/pdf/2506.01380</em>\n   <br>\n   <em>项目主页：https://nextframed.github.io/</em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "NFD 视频生成框架在 A100 上实现超 30 帧/秒，支持实时交互，刷新生成效率。",
+  "oneSentenceSummary": "NFD 视频生成框架在 A100 上实现超 30 帧/秒，支持实时交互，刷新生成效率。",
+  "summary": "微软研究院与北大联合发布 Next-Frame Diffusion (NFD) 视频生成框架，旨在解决自回归视频生成效率低下的问题。NFD 采用帧内并行采样与帧间自回归结合的方式，通过基于扩散的 Transformer 模型建模视频，使用块状因果注意力机制提高效率。为进一步提升生成速度，研究人员将一致性蒸馏技术扩展到视频领域并进行优化，并提出了利用用户输入可预测性的投机采样技术。实验表明，NFD+加速版本在保持竞争力的视觉质量下，生成速度高达 31.14-42.46 FPS，显著超越**现有自回归方法（如 MineWorld）**，有望赋能实时交互应用，如游戏世界模拟器。",
+  "mainPoints": [
+    {
+      "point": "NFD 框架大幅提升视频生成效率，实现实时帧率",
+      "explanation": "通过帧内并行采样和帧间自回归，NFD 在 A100 GPU 上实现了超过 30 帧/秒的生成速度，远超现有自回归方法，满足实时交互需求。"
+    },
+    {
+      "point": "采用基于扩散的 Transformer 与改进注意力机制",
+      "explanation": "模型核心使用 Transformer 和扩散模型，结合块状因果注意力机制高效处理时空依赖，为高速生成提供基础。"
+    },
+    {
+      "point": "引入一致性蒸馏和投机采样加速推理",
+      "explanation": "将一致性蒸馏应用于视频模型并优化，结合预测用户输入的投机采样，有效减少采样步骤，进一步提高生成速度。"
+    },
+    {
+      "point": "在游戏世界模拟等场景展现巨大潜力",
+      "explanation": "NFD 的高速生成能力使其特别适用于需要快速响应的交互式应用，如模拟《我的世界》这类游戏环境。"
+    }
+  ],
+  "keyQuotes": [
+    "在 A100 上用 310M 模型，实现每秒超 30 帧自回归视频生成，同时画面还保持高质量！",
+    "通过实现帧内并行采样，帧间自回归的方式，NFD 让视频生成在保持较高生成质量的同时，生成效率大幅提升。",
+    "其使用帧内双向注意力，帧间因果注意力机制的方式来建模视频，并采用扩散模型多步迭代生成连续 Token。",
+    "研究人员首先将一致性蒸馏扩展到视频领域，并专门针对视频模型优化，从而少量采样步骤，实现高效推理；提出了投机采样方法。",
+    "NFD+通过高效采样策略显著加速：130M 和 310M 模型分别达到 42.46FPS 和 31.14FPS，远超所有基线。"
+  ],
+  "tags": [
+    "视频生成",
+    "自回归模型",
+    "扩散模型",
+    "高效生成",
+    "一致性蒸馏"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2019,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749708323000,
+  "publishDateStr": "2025-06-12",
+  "publishDateTimeStr": "2025-06-12 06:05:23"
+}

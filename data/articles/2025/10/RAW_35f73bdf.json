@@ -1,0 +1,55 @@
+{
+  "id": "RAW_35f73bdf",
+  "title": "Meta 如何利用人工智能来标准化和改进碳排放估算",
+  "url": "https://www.infoq.com/news/2025/10/meta-carbon-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-31 08:00:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://engineering.fb.com/2025/10/14/data-center-engineering/how-meta-is-leveraging-ai-to-improve-the-quality-of-scope-3-emission-estimates-for-it-hardware/\">Meta has developed</a> an AI-based approach to improve the quality of <a href=\"https://www.epa.gov/climateleadership/scope-3-inventory-guidance\">Scope 3 emissions</a> estimates across its IT hardware supply chain. The method combines machine learning and generative models to classify hardware components and infer missing product carbon footprint (PCF) data.</p>\n   <p><a href=\"https://www.youtube.com/watch?v=rTfPdI31VIE\">Presented</a> at the 2025 Open Compute Project summit in May, the work contributes to broader efforts to standardize emissions reporting and improve the quality of data used in procurement and decarbonization planning. It also reflects a growing focus on applying AI techniques not only to measure environmental impact, but to help manage and reduce it across digital infrastructure.</p>\n   <p>At the heart of Meta’s approach is a hybrid AI pipeline designed to improve data coverage and consistency. The system uses machine learning to estimate PCFs (Product Carbon Footprint) by identifying components with similar specifications. In parallel, a generative AI model classifies hardware into a shared taxonomy for Scope 3 reporting.</p>\n   <p>The taxonomy model addresses a key friction in Scope 3 reporting: inconsistent naming and categorization of components across suppliers. By using generative AI to interpret part descriptions and unify them under a shared schema, Meta enables more consistent PCF assignment and reduces redundant disclosures for similar hardware.&nbsp;</p>\n   <p>The result is a more complete and standardized dataset across Meta’s fleet. The methodology supports open standards efforts through the <a href=\"https://climateaccord.org/about/objectives/\">iMasons Climate Accord</a> and the <a href=\"https://www.opencompute.org/blog/open-compute-project-foundation-and-imasons-develop-taxonomy-for-carbon-disclosure\">Open Compute Project</a>, and forms part of Meta’s roadmap toward net-zero emissions by 2030. Meta has also open-sourced the taxonomy model used in this process, aiming to encourage adoption across the supply chain and reduce duplication in emissions disclosures.</p>\n   <p>While Meta’s work focuses on upstream emissions data, AI is certainly not new inside infrastructure performance optimization. <a href=\"https://deepmind.google/discover/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-by-40/\">Google’s early work with DeepMind</a> showed how reinforcement learning could reduce data center cooling demand. More recently, the company <a href=\"https://sustainability.google/\">reported a 12% drop</a> in data center emissions in 2024, citing ongoing AI-driven optimizations in cooling, workload distribution, and hardware utilization.</p>\n   <p><a href=\"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Accelerating-Sustainability-with-AI-2025.pdf\">Microsoft</a> has also positioned AI as a core part of its sustainability strategy, applying machine learning to areas like power forecasting, grid-aware workload scheduling, and emissions monitoring across Azure data centers.</p>\n   <p>In contrast to these large-scale, AI-driven systems, earlier efforts have often relied on open source tools to surface emissions data in a more static or advisory capacity. Projects like the <a href=\"https://carbon-aware-sdk.greensoftware.foundation/\">Carbon Aware SDK </a>and <a href=\"https://www.cloudcarbonfootprint.org/\">Cloud Carbon Footprint</a> enable developers to estimate energy use and schedule workloads based on grid carbon intensity. However, the tools depend on predefined rules rather than adaptive learning. The shift underway is from passive visibility to active discovery and optimization, where AI systems make continuous decisions in response to real-world environmental signals.</p>\n   <p>Whether applied to hardware or software, these approaches depend on access to high-quality, machine-readable emissions data. The Open Compute Project’s <a href=\"https://www.opencompute.org/blog/open-compute-project-foundation-and-imasons-develop-taxonomy-for-carbon-disclosure\">new schema </a>for reporting product carbon footprints is one example, aimed at standardizing how vendors disclose hardware emissions across the supply chain. Meta’s work feeds directly into this framework, providing a mechanism to classify and infer missing data points at scale.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Meta Is Using AI to Standardize and Cut Carbon Emissions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/meta-carbon-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761897600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 通过结合机器学习和生成式模型的混合人工智能管线，标准化并优化 IT 硬件供应链中的范围 3 碳排放估算。",
+  "oneSentenceSummary": "Meta 通过结合机器学习和生成式模型的混合人工智能管线，标准化并优化 IT 硬件供应链中的范围 3 碳排放估算。",
+  "summary": "本文详细介绍了 Meta 创新的、人工智能驱动的战略，旨在提高其 IT 硬件供应链中范围 3 碳排放估算的准确性和一致性。该方法在 2025 年开放计算项目峰会上展示。它整合了机器学习技术，通过识别具有相似规格的组件来估算产品碳足迹 (PCFs)。同时，使用生成式 AI 模型将硬件分类为统一的分类法，用于排放报告。该系统有效地解决了不同供应商在组件命名和分类方面的不一致性，从而实现了更标准化的 PCF 分配，并减少了报告的冗余。Meta 的倡议与更广泛的行业努力方向一致，旨在建立排放报告的开放标准。iMasons 气候协议和开放计算项目等组织为此提供了支持。该倡议也有助于 Meta 实现到 2030 年实现净零排放的目标。该公司还开源了其分类模型，以鼓励更广泛的采用。文章对比了这种主动的、人工智能驱动的优化方法与早期较为静态的开源工具。这种转变强调了从被动响应到主动适应环境信号的决策模式的转变。谷歌和微软也在可持续性方面有类似的人工智能应用。",
+  "mainPoints": [
+    {
+      "point": "Meta 开发了一种混合人工智能管线，用于标准化范围 3 碳排放估算。",
+      "explanation": "该系统利用机器学习估算产品碳足迹 (PCFs)，并使用生成式人工智能将硬件分类到共享分类法中，从而显著提高 IT 硬件供应链的数据一致性。"
+    },
+    {
+      "point": "人工智能方法解决了供应商数据中的不一致问题，简化了报告并支持开放标准。",
+      "explanation": "生成式人工智能将各种零件描述统一到通用模式下，从而实现了更一致的产品碳足迹 (PCFs) 分配，并与行业范围内的碳披露计划保持一致。"
+    },
+    {
+      "point": "该计划标志着整个行业正在转向积极的人工智能驱动的环境影响优化。",
+      "explanation": "与静态的、基于规则的工具不同，Meta 的系统与谷歌和微软的做法类似，展示了人工智能在增强可持续性管理方面的作用，尤其是在持续和自适应决策方面。"
+    }
+  ],
+  "keyQuotes": [
+    "Meta 已经开发了一种基于人工智能的方法来提高其 IT 硬件供应链中范围 3 排放估算的质量。",
+    "Meta 方法的核心是混合人工智能管线，旨在提高数据覆盖率和一致性。",
+    "通过使用生成式人工智能解释零件描述，并在共享模式下统一它们，Meta 能够实现更一致的产品碳足迹 (PCFs) 分配，并减少类似硬件的重复披露。",
+    "Meta 还开源了此过程中使用的分类模型，旨在鼓励整个供应链的采用并减少排放披露中的重复。",
+    "目前的转变是从被动可见性转向主动发现和优化，人工智能系统可以根据真实世界的环境信号做出持续决策。"
+  ],
+  "tags": [
+    "可持续性",
+    "碳排放",
+    "范围 3 碳排放",
+    "环境影响",
+    "人工智能应用实践"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 496,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761897600000,
+  "publishDateStr": "2025-10-31",
+  "publishDateTimeStr": "2025-10-31 08:00:00"
+}

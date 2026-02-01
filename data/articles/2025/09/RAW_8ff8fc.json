@@ -1,0 +1,59 @@
+{
+  "id": "RAW_8ff8fc",
+  "title": "从「对口型」到「会表演」，刚进化的可灵 AI 数字人，技术公开了 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-15-7",
+  "date": "2025-09-15 12:49:53",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>让数字人的口型随着声音一开一合早已不是新鲜事。更令人期待的，是当明快的旋律响起，它会自然扬起嘴角，眼神含笑；当进入说唱段落，它会随着鼓点起伏，肩膀与手臂有节奏地带动气氛。观众看到的不再只是嘴在动，而是整个人在表演。这种表现不仅限于几个片段，而是能够稳定地延续到分钟级长视频中，在整段时间里保持动作自然、镜头流畅。</p>\n  <p>近日，快手可灵团队把这一构想带到了现实。全新数字人功能已在可灵平台开启公测，<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: left;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">目前逐步放量中。</span>技术报告 Kling-Avatar 与项目主页也已同步发布。报告系统解析了可灵数字人背后的技术路径，<strong>阐明如何让一个只能跟着声音对口型的模型，进化为能够按照用户意图进行生动表达的解决方案。</strong></p>\n  <p><img alt=\"null\" data-imgfileid=\"503507011\" data-ratio=\"0.5231481481481481\" data-src=\"https://image.jido.dev/20250915145300_87a0b1\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/285d1edd-b0b5-4fdb-976f-ee021b0bf238/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; 可灵数字人产品界面。网址：https://app.klingai.com/cn/ai-human/image/new</sup></p>\n  <p><img alt=\"null\" data-imgfileid=\"503507014\" data-ratio=\"0.6231481481481481\" data-src=\"https://image.jido.dev/20250915145300_2feb48\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/45ff7284-452d-4738-b498-4bcd5f5be3bb/640.png\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><img alt=\"null\" data-imgfileid=\"503507013\" data-ratio=\"0.29259259259259257\" data-src=\"https://image.jido.dev/20250915145300_b52063\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/b02df0cc-c5df-4044-8e45-d3ff0b8a5d91/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <ul>\n   <li>\n    <p>论文地址：https://arxiv.org/abs/2509.09595</p>\n   </li>\n   <li>\n    <p>项目主页：https://klingavatar.github.io/</p>\n   </li>\n  </ul>\n  <p>首先看一些效果：<a href=\"https://mp.weixin.qq.com/s/IaFZy46DxSzcy2q2l10ojA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/36185a2e-c136-49c6-ab99-5b6ebe044231/1757940292303.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/IaFZy46DxSzcy2q2l10ojA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/63c135fb-5d88-4f25-8665-5d9915ddf2ae/1757940303524.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/IaFZy46DxSzcy2q2l10ojA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/b5b469ab-c356-4b2f-8895-8e6aecb27e1b/1757940314673.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>实现这些惊艳效果的背后，是快手可灵团队精心设计的一套多模态大语言模型赋能的两阶段生成框架。</p>\n  <p><strong>多模态理解，让指令变成可执行的故事线</strong></p>\n  <p>借助多模态大语言模型在生成与理解一体化上的能力，Kling-Avatar 设计了一个多模态导演模块（MLLM Director），把三类输入组织成一条清晰的故事线： 从音频中提取语音内容与情感轨迹；从图像中识别人像特征与场景元素；将用户的文字提示融入动作方式、镜头语言、情绪变化等要素。导演模块产出的结构化剧情描述，通过文本跨注意力层注入到视频扩散模型中，生成一段全局一致的蓝图视频，明确整段内容的节奏、风格与关键表达节点。\n   <br>\n   <img alt=\"null\" data-imgfileid=\"503507017\" data-ratio=\"0.3194444444444444\" data-src=\"https://image.jido.dev/20250915145300_aef94d\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/0b977b5f-dcb1-4c54-9e08-354fe4b1d577/640.png\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>Kling-Avatar 方案框架。由多模态大语言模型 (MLLMs) 赋能的 MLLM Director 首先将多模态指令解释为全局语义和连贯的故事线，基于该全局规划生成一个蓝图视频，然后从蓝图视频中提取首尾帧作为条件控制，并行生成子段视频。</sup></p>\n  <p><strong>两阶段级联生成的长视频生成框架</strong></p>\n  <p>蓝图视频生成后，系统在视频流中根据身份一致性、动作多样性、避免遮挡、表情清晰等条件，自动挑选若干高质量关键帧。每相邻两帧作为<strong>首尾帧条件</strong>，用于生成一个子段落。所有子段落根据各自的首尾帧并行合成，最后拼接得到完整视频。为避免首尾帧处画面与实际音频节拍的错位，方法还引入<strong>音频对齐插帧策略</strong>，保证口型与声学节奏的帧级同步。</p>\n  <p>此外，团队还精心设计了一系列训练和推理策略，保证视频生成过程中音频与口型的对齐和身份一致性：</p>\n  <ul>\n   <li>\n    <p><strong>口型对齐</strong>：将音频切分成与帧片段对齐的子段，通过滑窗方式注入音频特征；自动检测嘴部区域加权去噪损失；通过对视频帧做手动扩展，增强画面中人脸占比较小情况下的对齐效果，进一步提升口型对齐任务在远景场景下的适应能力。</p>\n   </li>\n   <li>\n    <p><strong>文本可控性</strong>：冻结文本跨注意力层参数，避免基座视频生成模型在专门数据上过拟合而弱化文本控制。</p>\n   </li>\n   <li>\n    <p><strong>身份一致性</strong>：在推理阶段对参考图像构造 “退化负样本”，作为负向 CFG，抑制纹理拉花、饱和度漂移等身份漂移模式。</p>\n   </li>\n  </ul>\n  <p><strong>训练与测评数据管线</strong></p>\n  <p>为了获得多样高质量的训练数据，团队从演讲、对话、歌唱等高质量语料库中收集数千小时视频，并训练多种专家模型用于从<strong>嘴部清晰度、镜头切换、音画同步与美学质量</strong>等多个维度检测数据的可靠性。对专家模型筛选出的视频，再进行一遍人工复核，得到数百小时高质量训练数据集。</p>\n  <p>为了验证方法的有效性，团队制作了一个包含 <strong>375&nbsp;</strong>个 “参考图–音频–文本提示” 的测评基准，该测评基准包含了丰富的输入样例，图片涵盖真人 / AI 生成图像、不同人种、以及开放情境中的非真人数据；音频涵盖中 / 英 / 日 / 韩等多种语言，包含不同语速和情感的台词；文本提示包含多种多样的镜头、人物动作、表达情绪控制。该测评基准为现有方法提供了极具挑战性的测试场景，能够充分评估数字人像视频生成方法在多模态指令跟随方面的能力，将在未来开源。</p>\n  <p><strong>实验结果对比</strong></p>\n  <p>在定量验证方面，团队精心设计了一套基于用户偏好的<strong>&nbsp;GSB（Good/Same/Bad）</strong>测评体系。对每个样本，由三名评测者将 Kling-Avatar 与对比方法逐一比较，给出 “更好”（G)，“一样”(S)，“更差”(B) 的判断。最终汇报 (G+S)/(B+S) 作为指标，用以衡量 “更好或不差” 的占比。同时在四个维度给出分项结果：总体效果、口型同步、画面质量、指令响应、身份一致。对比方法选择最先进的 OmniHuman-1、HeyGen 等产品。\n   <br>\n   <br></p>\n  <p><img alt=\"null\" data-imgfileid=\"503507019\" data-ratio=\"0.3388888888888889\" data-src=\"https://image.jido.dev/20250915145300_0d0d11\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/96727208-c04e-44c9-9309-e2820632bfe9/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><img alt=\"null\" data-imgfileid=\"503507020\" data-ratio=\"0.39166666666666666\" data-src=\"https://image.jido.dev/20250915145300_873495\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/c9292ac6-15f8-4b9b-8e73-6017c425c400/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><sup>在构建的测评基准上与 OmniHuman-1 和 HeyGen 的 GSB 可视化对比。Kling-Avatar 在绝大多数维度上取得领先。 \n    <br> \n    <img alt=\"null\" data-imgfileid=\"503507021\" data-ratio=\"0.2537037037037037\" data-src=\"https://image.jido.dev/20250915145300_24eeff\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/5842fdd4-707e-4113-bd1a-5a4af6c7a080/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></sup></p>\n  <p><sup>在全部 Benchmark 和各个子测评集的 GSB 指标对比。Kling-Avatar 全面超过 OmniHuman-1，并在绝大部分指标上超过 HeyGen。</sup></p>\n  <p>在多种场景的对比测试中，Kling-Avatar 所生成的唇形不仅在时序和形态上与音频高度一致，面部表情也随着语音的起伏变化而更显自然。即使在发音难度较高的音节（如 “truth”，其标准发音为 [truːθ]，[u:] 要求双唇前突、口型小而紧）或高频语音中的短暂静音段落，Kling-Avatar 均能够准确还原相应的口型状态。\n   <br>\n   <img alt=\"null\" data-imgfileid=\"503507022\" data-ratio=\"0.9064814814814814\" data-src=\"https://image.jido.dev/20250915145300_4596ca\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/e2081bac-76df-48c2-aa56-6f6e32511aa9/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>在 “情绪、动作、镜头” 三类控制上，Kling-Avatar 能够更准确地体现文本提示中的意图，在歌唱、演讲等复杂场景下的动作与镜头调度更加贴合语义。下图展示了 Kling-Avatar 生成的一些视频示例，其中包含了人物的情绪控制如 “兴奋”，镜头控制如 “镜头缓慢上移”，生成结果均有良好的响应。</p>\n  <p><img alt=\"null\" data-imgfileid=\"503507023\" data-ratio=\"1.425\" data-src=\"https://image.jido.dev/20250915145300_58fcb2\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/5d0e39f5-128b-4ded-bcc3-db3bdac8be87/640.png\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Kling-Avatar 的另一大优势是长时视频生成。因为采用两阶段生成 + 级联并行生成的框架，因此在首先获得蓝图视频后，可以从蓝图视频中选择任意多数量的首尾帧，并行生成每个子段视频，最后再完整拼接在一起，总生成时间理论上与一段生成时间相当，因此可以快速稳定的生成长视频。下图展示了 1 分钟长视频生成的例子，生成结果在动态性，身份一致性保持，口型等各方面都获得了令人满意的结果。\n   <br>\n   <img alt=\"null\" data-imgfileid=\"503507024\" data-ratio=\"0.41388888888888886\" data-src=\"https://image.jido.dev/20250915145300_a1f2ba\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/754a9b40-e88e-48a2-a1db-9ef6da2970d0/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>总结</strong></p>\n  <p>从 “对口型” 迈向 “会表演”，快手可灵团队探索出一条全新的数字人生成范式，实现了在分钟级长视频中生动细腻、情绪饱满、身份一致的影视级演绎。Kling-Avatar 现已集成到可灵平台，欢迎移步可灵平台体验新版数字人应用，看看你的声音和想法如何被一镜到底地演绎出来。</p>\n  <p>近年来，快手可灵团队持续深耕多模态指令控制与理解的数字人视频生成解决方案。除了 Kling-Avatar，团队前不久还提出实时多模态交互控制的<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650990407&amp;idx=3&amp;sn=c56af18dc7d9940026ccfceb2f27c62b&amp;scene=21#wechat_redirect\" target=\"_blank\">数字人生成框架 MIDAS</a>，二者分别在 “表达深度” 与 “响应速度” 上实现了重要突破。未来，团队将持续推进高分辨率、精细动作控制、复杂多轮指令理解等方向的前沿探索，致力于让数字人的每一次表达，都拥有真实而动人的灵魂。</p>\n </body>\n</html>",
+  "aiSummary": "快手可灵团队公开了其数字人技术 Kling-Avatar，通过多模态大语言模型和两阶段生成框架，实现了从“对口型”到“会表演”的分钟级长视频生动演绎。",
+  "oneSentenceSummary": "快手可灵团队公开了其数字人技术 Kling-Avatar，通过多模态大语言模型和两阶段生成框架，实现了从“对口型”到“会表演”的分钟级长视频生动演绎。",
+  "summary": "文章详细介绍了快手可灵团队最新发布的数字人技术 Kling-Avatar，该技术旨在将数字人从简单的语音对口型提升到能够根据用户意图进行生动表演的水平。Kling-Avatar 的核心是一个由多模态大语言模型赋能的两阶段生成框架。首先，一个多模态导演模块（MLLM Director）将音频、图像和文本提示整合为结构化的故事线，生成一段全局一致的蓝图视频。其次，基于蓝图视频的关键帧，系统采用并行合成的级联生成方式，结合音频对齐插帧策略，高效生成分钟级长视频，确保口型同步和身份一致性。文章还详细阐述了口型对齐、文本可控性、身份一致性等训练与推理策略，并介绍了高质量训练数据管线和包含 375 个样本的测评基准。实验结果显示，Kling-Avatar 在总体效果、口型同步、画面质量、指令响应和身份一致性等多个维度上均超越了现有先进产品如 OmniHuman-1 和 HeyGen，尤其在复杂发音和长时视频生成方面表现出色。目前该功能已在可灵平台开启公测，标志着数字人技术在表达深度上的重要突破。",
+  "mainPoints": [
+    {
+      "point": "Kling-Avatar 通过多模态大语言模型实现数字人从“对口型”到“会表演”的进化。",
+      "explanation": "核心技术在于 MLLM Director 模块，它能将音频、图像和文本提示整合为结构化故事线，使数字人能够根据复杂指令进行生动、有情感的表演。"
+    },
+    {
+      "point": "创新的两阶段级联生成框架支持高效且高质量的分钟级长视频生成。",
+      "explanation": "通过先生成全局蓝图视频，再并行合成子段视频并拼接，解决了长视频生成中的一致性难题，同时引入音频对齐插帧策略确保口型同步。"
+    },
+    {
+      "point": "系统设计了多项精细策略确保口型对齐、文本可控性及身份一致性。",
+      "explanation": "这些策略包括滑窗音频特征注入、嘴部区域加权去噪、冻结文本跨注意力层参数、以及负向 CFG 抑制身份漂移，保障了生成视频的专业级质量。"
+    },
+    {
+      "point": "经过严格的训练与测评，Kling-Avatar 在多项指标上优于现有先进产品。",
+      "explanation": "团队构建了高质量数据集和包含丰富输入样例的测评基准，并通过 GSB 测评体系验证，证明了其在唇形同步、表情自然度、指令响应和长时视频一致性上的领先性。"
+    }
+  ],
+  "keyQuotes": [
+    "阐明如何让一个只能跟着声音对口型的模型，进化为能够按照用户意图进行生动表达的解决方案。",
+    "由多模态大语言模型 (MLLMs) 赋能的 MLLM Director 首先将多模态指令解释为全局语义和连贯的故事线，基于该全局规划生成一个蓝图视频，然后从蓝图视频中提取首尾帧作为条件控制，并行生成子段视频。",
+    "Kling-Avatar 所生成的唇形不仅在时序和形态上与音频高度一致，面部表情也随着语音的起伏变化而更显自然。",
+    "Kling-Avatar 能够更准确地体现文本提示中的意图，在歌唱、演讲等复杂场景下的动作与镜头调度更加贴合语义。",
+    "从 '对口型' 迈向 '会表演'，快手可灵团队探索出一条全新的数字人生成范式，实现了在分钟级长视频中生动细腻、情绪饱满、身份一致的影视级演绎。"
+  ],
+  "tags": [
+    "数字人",
+    "Kling-Avatar",
+    "多模态大语言模型",
+    "视频生成",
+    "快手"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 93,
+  "wordCount": 2596,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757940593000,
+  "publishDateStr": "2025-09-15",
+  "publishDateTimeStr": "2025-09-15 12:49:53"
+}

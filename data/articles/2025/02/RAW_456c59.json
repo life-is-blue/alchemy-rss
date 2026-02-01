@@ -1,0 +1,59 @@
+{
+  "id": "RAW_456c59",
+  "title": "DeepSeek 开源 DeepSeek-R1 大语言模型，性能媲美 OpenAI 的 o1 模型",
+  "url": "https://www.infoq.com/news/2025/02/deepseek-r1-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-04 00:00:00",
+  "author": "Anthony Alford",
+  "siteName": "InfoQ",
+  "content": "\n \n \n  <div class=\"actions__left actions__sidebar article__actions\"><br><div class=\"bookmarkReading\"><div class=\"my-0 button__dropdown dropdown reading_list dropdown__center\" id=\"showBookmarks\"><div class=\"dropdown__holder\"><div class=\"dropdown__content\"><ul class=\"no-style dropdown__nav\">\n       </ul>\n      </div>\n     </div>\n    </div>\n    <div id=\"toastContainer\" class=\"toast-none toast-hide\">\n     <div class=\"toast\">\n      <span></span>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.deepseek.com/\">DeepSeek</a> open-sourced <a href=\"https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf\">DeepSeek-R1</a>, an LLM fine-tuned with reinforcement learning (RL) to improve reasoning capability. DeepSeek-R1 achieves results on par with OpenAI's o1 model on <a href=\"https://github.com/deepseek-ai/DeepSeek-R1/?tab=readme-ov-file#4-evaluation-results\">several benchmarks</a>, including MATH-500 and SWE-bench.&nbsp;</p>\n   <p>DeepSeek-R1 is based on <a href=\"https://www.infoq.com/news/2025/01/deepseek-v3-llm/\">DeepSeek-V3</a>, a mixture of experts (MoE) model recently open-sourced by DeepSeek. This base model is fine-tuned using <a href=\"https://arxiv.org/abs/2402.03300\">Group Relative Policy Optimization</a> (GRPO), a reasoning-oriented variant of RL. The research team also performed knowledge distillation from DeepSeek-R1 to open-source Qwen and Llama models and released several versions of each; these models outperform larger models, including GPT-4, on math and coding benchmarks.&nbsp;</p>\n   <blockquote>\n    <p>[DeepSeek-R1 is] the first step toward improving language model reasoning capabilities using pure reinforcement learning (RL). Our goal is to explore the potential of LLMs to develop reasoning capabilities without any supervised data, focusing on their self-evolution through a pure RL process...DeepSeek-R1...excels in a wide range of tasks, including creative writing, general question answering, editing, summarization, and more. Additionally, DeepSeek-R1 demonstrates outstanding performance on tasks requiring long-context understanding, substantially outperforming DeepSeek-V3 on long-context benchmarks.</p>\n   </blockquote>\n   <p>To develop the model, DeepSeek started with DeepSeek-V3 as a base. They first tried fine-tuning it only with RL, and without any supervised fine-tuning (SFT), producing a model called DeepSeek-R1-Zero, which they have also released. This model exhibits strong reasoning performance, but \" powerful reasoning behaviors, it faces several issues. For instance, DeepSeek-R1-Zero struggles with challenges like poor readability and language mixing.\"</p>\n   <p>To address this, the team used a short stage&nbsp;of SFT to prevent the \"cold start\" problem of RL. They collected several thousand examples of chain-of-thought reasoning to use in SFT of DeepSeek-V3 before running RL. After the RL process converged, they then collected more SFT data using rejection sampling, resulting in a dataset of 800k samples. This dataset was used for further fine-tuning and to produce the distilled models from Llama and Qwen.</p>\n   <p>DeepSeek evaluated their model on a variety of reasoning, math, and coding benchmarks and compared it to other models, including Claude-3.5-Sonnet, GPT-4o, and o1. DeepSeek-R1 outperformed all of them on several of the benchmarks, including AIME 2024 and MATH-500.</p>\n   <p><img alt=\"DeepSeek-R1 Performance\" data-src=\"https://www.infoq.com/news/2025/02/deepseek-r1-release/news/2025/02/deepseek-r1-release/en/resources/2deepseek-performance-1737903794569.png\" style=\"width:100%;height:731px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/02/deepseek-r1-release/en/resources/2deepseek-performance-1737903794569.png\" rel=\"share\"></p>\n   <p><em>DeepSeek-R1 Performance. Image Source: <a href=\"https://github.com/deepseek-ai/DeepSeek-R1/\">DeepSeek-R1 Technical Report</a></em></p>\n   <p>Within a few days of its release, the <a href=\"https://x.com/lmarena_ai/status/1882749951924715578\">LMArena announced</a> that DeepSeek-R1 was ranked #3 overall in the arena and #1 in coding and math. It was also tied for #1 with o1 in \"Hard Prompt with Style Control\" category.</p>\n   <p>Django framework co-creator Simon Willison <a href=\"https://simonwillison.net/2025/Jan/20/deepseek-r1/\">wrote about his experiments</a> with one of the DeepSeek distilled Llama models on his blog:</p>\n   <blockquote>\n    <p>Each response starts with a &lt;think&gt;...&lt;/think&gt; pseudo-XML tag containing the chain of thought used to help generate the response. [Given the prompt] \"a joke about a pelican and a walrus who run a tea room together\"...It then thought for 20 paragraphs before outputting the joke!...[T]he joke is awful. But the process of getting there was such an interesting insight into how these new models work.</p>\n   </blockquote>\n   <p>Andrew Ng's newsletter The Batch <a href=\"https://www.deeplearning.ai/the-batch/issue-285/\">wrote about DeepSeek-R1</a>:</p>\n   <blockquote>\n    <p>DeepSeek is rapidly emerging as a strong builder of open models. Not only are these models great performers, but their license permits use of their outputs for distillation, potentially pushing forward the state of the art for language models (and multimodal models) of all sizes.</p>\n   </blockquote>\n   <p>The <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-R1\">DeepSeek-R1 models</a> are available on HuggingFace.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DeepSeek Open-Sources DeepSeek-R1 LLM with Performance Comparable to OpenAI's o1 Model\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Anthony Alford\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/deepseek-r1-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1738677600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n \n",
+  "aiSummary": "DeepSeek 开源了 DeepSeek-R1，这是一款基于群体相对策略优化算法（GRPO）进行微调的大语言模型，显著提升了推理能力，在包括数学和编程任务在内的多个基准测试中超越了 OpenAI 的 o1 模型。",
+  "oneSentenceSummary": "DeepSeek 开源了 DeepSeek-R1，这是一款基于群体相对策略优化算法（GRPO）进行微调的大语言模型，显著提升了推理能力，在包括数学和编程任务在内的多个基准测试中超越了 OpenAI 的 o1 模型。",
+  "summary": "DeepSeek 发布了 DeepSeek-R1，这是一款基于强化学习（RL）特别是群体相对策略优化算法（GRPO）进行微调的先进大语言模型（LLM），旨在提升推理能力。DeepSeek-R1 基于 DeepSeek-V3 专家混合模型（MoE）构建，在多个基准测试中表现出色，包括 MATH-500 和 SWE-bench，超越了 OpenAI 的 o1 模型。该模型在创意写作、摘要生成和长上下文理解等任务中表现优异，同时在编程和数学等实际应用中也展示了其潜力。研究团队还将 DeepSeek-R1 蒸馏为更小的模型，如 Qwen 和 Llama，供开源使用，进一步推动了 AI 性能的前沿发展。DeepSeek-R1 的成功展示了使用纯强化学习进行模型训练的前景，提供了一种不依赖监督数据来提升推理能力的新方法。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek-R1 在关键基准测试中超越了多个模型。",
+      "explanation": "DeepSeek-R1 在 MATH-500 和 SWE-bench 等基准测试中表现优异，超越了 OpenAI 的 o1、GPT-4 和 Claude-3.5-Sonnet，在数学和编程任务中展现出强大的竞争力，使其成为一款极具竞争力的 AI 模型。"
+    },
+    {
+      "point": "群体相对策略优化算法（GRPO）显著增强了 DeepSeek-R1 的推理能力。",
+      "explanation": "该模型通过群体相对策略优化算法（GRPO）进行微调，这是一种强化学习方法，使其具备更强的推理能力，这与主要依赖监督数据训练的传统模型有所不同。"
+    },
+    {
+      "point": "将 DeepSeek-R1 蒸馏为更小的模型加速了 AI 的进步。",
+      "explanation": "DeepSeek-R1 已被蒸馏为更小的模型，如 Qwen 和 Llama，使其可供开源使用，并展示了模型蒸馏在提升特定任务性能方面的强大能力。"
+    },
+    {
+      "point": "不依赖监督数据的强化学习标志着语言模型进化的新一步。",
+      "explanation": "DeepSeek-R1 通过纯强化学习进行训练，不依赖监督数据，为大语言模型设定了新的基准，展示了模型的自我进化和对标注数据集的独立性。"
+    }
+  ],
+  "keyQuotes": [
+    "DeepSeek-R1 在广泛的任务中表现出色，包括创意写作、通用问答、编辑、摘要生成等。",
+    "DeepSeek-R1 是使用纯强化学习（RL）提升语言模型推理能力的第一步。",
+    "DeepSeek 正在迅速崛起为开源模型的强大构建者。这些模型不仅表现出色，而且其许可证允许将其输出用于蒸馏，有可能推动语言模型的技术前沿。",
+    "每个响应都以 <think>...</think> 伪 XML 标签开头，其中包含用于生成响应的思维链。",
+    "实现这一目标的过程为我们提供了关于这些新模型如何工作的有趣洞察。"
+  ],
+  "tags": [
+    "DeepSeek-R1",
+    "群体相对策略优化算法",
+    "大语言模型",
+    "强化学习",
+    "DeepSeek-V3"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 535,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738627200000,
+  "publishDateStr": "2025-02-04",
+  "publishDateTimeStr": "2025-02-04 00:00:00"
+}

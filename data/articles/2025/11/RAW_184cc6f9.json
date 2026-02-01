@@ -1,0 +1,54 @@
+{
+  "id": "RAW_184cc6f9",
+  "title": "谢赛宁李飞飞 LeCun 搞的寒武纪，究竟是个啥？",
+  "url": "https://www.qbitai.com/2025/11/355728.html",
+  "date": "2025-11-24 06:29:42",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"53\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"54\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">“寒武纪”这个名字在AI圈里火得发烫。</p>\n  <p data-track=\"3\">由谢赛宁牵头，李飞飞和Yann LeCun站台搞的“寒武纪”，大获好评。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_317884edd12d81fb8cfcae4e0076e5db.png\" data-ic=\"false\" data-width=\"1060\" data-height=\"738\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">此寒武纪究竟是什么？</p>\n  <p data-track=\"5\"><strong>Cambrian-S</strong>（寒武纪-S），不造硅基芯片，而是专注于解决AI领域一个更核心的问题：<strong>让人工智能真正学会感知世界</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_9f08dc163347df07d9a9719d440cb402.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"887\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">它的具体成果，是一款主打<strong>空间感知</strong>的多模态视频大模型，还兼顾了通用视频、图像理解能力，在短视频空间推理中拿下了SOTA。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_0eedf612b75a6f4173cd70908a60caf3.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"674\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">更厉害的是，加了预测感知模块后，连超长视频的空间任务都能扛下来——要知道，这可是很多主流模型的软肋。</p>\n  <p data-track=\"8\">这个李飞飞和LeCun都关注的空间智能领域的新模型，到底有哪些突破？</p>\n  <p data-track=\"10\">先从它的发展历程说起。</p>\n  <p data-track=\"11\">2024年6月，团队先推出了<strong>Cambrian-1</strong>，这是针对图像多模态模型的一次开放性探索。</p>\n  <p data-track=\"12\">在这次尝试中，他们从5个方面方向进行了突破。</p>\n  <p data-track=\"13\">一是系统测评了20多种视觉编码器及组合，明确不同类型模型（语言监督、自监督等）的适配场景与优势；</p>\n  <p data-track=\"14\">二是设计了空间视觉聚合器SVA，以更少视觉token高效整合多源视觉特征，兼顾高清处理与计算效率；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_cd27249b81d63c496b70af2e768e84b8.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"467\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">三是构建并优化视觉指令训练数据集，从1000万条原始数据筛选出700万条高质量数据，平衡类别分布并通过系统提示提升模型交互能力；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_5e0616e66be939a602215375c2ae60e4.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"350\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">四是推出了CV-Bench基准测试，聚焦2D/3D视觉理解核心任务，弥补现有测评对视觉能力考核的不足；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_f20a74244e4c8faf9bfb5546f80d0103.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"334\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">五是总结了最优训练方案，证实两阶段训练、解冻视觉编码器等策略能显著提升模型性能。</p>\n  <p data-track=\"18\">按常理，下一步工作该是扩大规模搞Cambrian-2、Cambrian-3，跟主流模型拼参数、拼数据量。</p>\n  <p data-track=\"19\">但团队并没有这么做，而是停下来反思<strong>“什么是真正的多模态智能”</strong>。</p>\n  <p data-track=\"20\">在他们看来，现在很多多模态模型，看似能看图说话，实则只是把图像信息转换成文字，再用语言模型处理——就像人只看了照片的文字说明，没真正看到照片里的场景。</p>\n  <p data-track=\"21\">于是，他们提出了<strong>超感知</strong>的概念。</p>\n  <p data-track=\"22\">超感知并不是换个更高级的摄像头、加个更灵敏的传感器那么简单。</p>\n  <p data-track=\"23\">谢赛宁一句话点透核心：</p>\n  <blockquote>\n   <p data-track=\"24\">这关乎数字生命如何真正体验世界，吸收输入流并学习的能力。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_fbf4db5cea415d3eda0f161c6f3d7161.png\" data-ic=\"false\" data-width=\"970\" data-height=\"306\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">简单说，就是让 AI 不止能看到物体，还能记住物体的位置、理解物体间的关系，甚至预判物体接下来的变化。</p>\n  <p data-track=\"26\">他还补了句更关键的：</p>\n  <blockquote>\n   <p data-track=\"27\">在构建出超感知之前，不可能真正构建出超级智能。</p>\n  </blockquote>\n  <p data-track=\"28\">顺着这个思路，团队又把目标聚焦到<strong>视频</strong>上，毕竟人感知世界，靠的不是一张张孤立的照片，而是连续的生活片段。</p>\n  <p data-track=\"29\">于是，<strong>视频空间超感知</strong>又成了核心方向：让AI能从视频里读懂空间关系，比如“人从门口走到沙发旁，拿起桌上的书”，不只是识别人、沙发、书，还要懂“门口到沙发的位置距离”、“书在桌上的具体方位”。</p>\n  <p data-track=\"31\">有了方向，团队没急着先做模型，而是先解决了两个关键问题：</p>\n  <ul>\n   <li data-track=\"32\">怎么判断AI有没有空间感知能力？</li>\n   <li data-track=\"33\">用什么数据教AI学空间感知？</li>\n  </ul>\n  <p data-track=\"34\">带着这两个问题，他们先搞了个叫<strong>VSI-SUPER</strong>的基准测试，专门考AI的空间感知。</p>\n  <p data-track=\"35\">里面有两个看似简单的任务：一个是长时程空间记忆（VSR），让AI看几小时的室内漫游视频，之后回忆出视频里不寻常物体的位置；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_9d1bd13bc47c2e4d86c5841511ba6116.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"397\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">另一个是持续计数（VSC），让AI在长视频里数清楚特定物体的总数。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_557b783961803cdb35b94de485731bd1.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"252\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"37\">现在市面上的模型一经测试，结果挺打脸，像Gemini-Live、GPT-Realtime这些号称能处理实时视觉输入的商业模型，在10分钟视频上的平均准确率还不到15%，视频拉长到120分钟，基本就 记不住了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_00e5ad027c7514d177a6ee56dba89b23.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"109\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">这也证明，主流模型的空间感知能力，确实没跟上。</p>\n  <p data-track=\"39\">解决了“怎么考”，再解决“怎么教”。</p>\n  <p data-track=\"40\">团队建了个<strong>VSI-590K</strong>数据集，里面有59万条训练样本，既有真实场景的视频，也有模拟的空间场景，重点标了物体位置、动态变化这些关键信息，就相当于给AI准备了一套空间感知教材。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_b587401aebcb8ee1244b62b2fb746b7b.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"232\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"41\">有了测试标准和训练数据，<strong>Cambrian-S</strong>模型家族才算正式登场。</p>\n  <p data-track=\"42\">参数规模从0.5B到7B，不算特别大，但针对性极强。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_7260ae673d58968072d7fa9ca13f0c29.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"889\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"43\">核心训练逻辑是，通过<strong>预测下一帧</strong>的训练机制，让模型在推理时用意外度识别关键信息，最终实现对超长视频的空间理解和任务处理。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_3ab8098f8bd53efd593949fb02cd722e.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"600\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"44\">成绩也很亮眼，在短视频空间推理任务里拿了SOTA；面对VSI-SUPER 基准测试，比开源模型的空间记忆准确率提升了30%以上，部分任务甚至超过了一些商业模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁李飞飞LeCun搞的寒武纪，究竟是个啥？\" src=\"https://image.jido.dev/20251124083939_f8ee3727097467831f2f9698b6793a11.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"674\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"45\">更关键的是它的预测感知模块，模型会主动预判视频下一帧的内容，不仅让处理超长视频时更高效，还能控制GPU内存消耗，不用靠堆硬件来撑性能。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251124083939_7d3e88e5104799b5bbedf53573c43e6a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"320\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\">除了谢赛宁牵头，李飞飞和LeCun两位大佬站台，寒武纪项目还有其他几位核心贡献成员。</p>\n  <p data-track=\"48\">纽约大学的博士生Shusheng Yang领导了该项目，他曾经还参与了Qwen模型的开发，也在腾讯实习过。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251124083939_1360a9e97766f4aec3450b8b81a09c2d.jpeg\" data-ic=\"false\" data-width=\"400\" data-height=\"400\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"49\">Jihan Yang，本科毕业于中山大学，后在香港大学拿到博士学位，现为纽约大学柯朗数学科学研究所的博士后研究员，研究专注于推理、智能体、长视频、空间智能、统一模型等多模态大语言模型。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251124083939_83556564fd33298751e669ceb56f108c.png\" data-ic=\"false\" data-width=\"762\" data-height=\"496\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"50\">黄品志，是纽约大学的一名本科生，曾在Google Gemini实习。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251124083939_13d18213f4ca04348a8c48acd6c50953.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"1080\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"51\">Ellis Brown，本科就读于范德堡大学，主修计算机科学和数学，曾在斯坦福大学、哥伦比亚大学攻读非学位研究生课程，后获得卡内基梅隆大学硕士学位，目前为纽约大学库朗数学研究所计算机科学博士生。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251124083939_744ec478af401f17b7cef46fe82c06e6.png\" data-ic=\"false\" data-width=\"848\" data-height=\"831\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"52\">参考链接：\n   <br>\n   [1]https://cambrian-mllm.github.io/\n   <br>\n   [2]https://x.com/sainingxie/status/1986685063367434557</p>\n  <p data-track=\"55\">— 完 —</p>\n  <p data-track=\"57\"><!--版权声明--></p>\n </body>\n</html>",
+  "aiSummary": "文章详细介绍了谢赛宁团队在李飞飞和 Yann LeCun 支持下推出的多模态视频大模型 Cambrian-S，专注于解决 AI 空间感知和超长视频理解问题。",
+  "oneSentenceSummary": "文章详细介绍了谢赛宁团队在李飞飞和 Yann LeCun 支持下推出的多模态视频大模型 Cambrian-S，专注于解决 AI 空间感知和超长视频理解问题。",
+  "summary": "量子位报道了由谢赛宁牵头，李飞飞和 Yann LeCun 支持的“寒武纪”项目，其核心成果是 Cambrian-S 多模态视频大模型。该模型不关注硬件，而是致力于让人工智能真正学会感知世界，尤其在空间感知方面取得突破，并在短视频空间推理中达到 SOTA。文章追溯了团队从 Cambrian-1 对图像多模态的探索，到提出“超感知”概念并聚焦视频空间超感知的发展历程。为解决评估和训练问题，团队开发了 VSI-SUPER 基准测试和 VSI-590K 数据集。Cambrian-S 模型通过预测感知模块，高效处理超长视频的空间任务，并有效控制 GPU 内存消耗。文章还介绍了项目的主要贡献者。",
+  "mainPoints": [
+    {
+      "point": "Cambrian-S 专注于空间感知，旨在解决 AI 真正感知世界的关键问题。",
+      "explanation": "区别于现有模型仅将图像转文字，Cambrian-S 通过多模态视频大模型，使 AI 理解物体位置、关系及变化，实现对超长视频的空间推理。"
+    },
+    {
+      "point": "团队创建 VSI-SUPER 基准测试和 VSI-590K 数据集，弥补现有模型在空间感知评估与训练上的不足。",
+      "explanation": "VSI-SUPER 专门评估 AI 的长时程空间记忆和持续计数能力，揭示主流模型软肋；VSI-590K 数据集则为 AI 提供了学习空间感知的“教材”。"
+    },
+    {
+      "point": "Cambrian-S 模型引入预测感知模块，高效处理超长视频空间任务并优化资源消耗。",
+      "explanation": "通过预测下一帧内容，模型能主动识别关键信息，有效理解超长视频，同时控制 GPU 内存消耗，提升性能而不依赖硬件堆叠。"
+    }
+  ],
+  "keyQuotes": [
+    "Cambrian-S （寒武纪-S），不造硅基芯片，而是专注于解决 AI 领域一个更核心的问题：让人工智能真正学会感知世界。",
+    "在他们看来，现在很多多模态模型，看似能看图说话，实则只是把图像信息转换成文字，再用语言模型处理——就像人只看了照片的文字说明，没真正看到照片里的场景。",
+    "在构建出超感知之前，不可能真正构建出超级智能。",
+    "视频空间超感知又成了核心方向：让 AI 能从视频里读懂空间关系，比如“人从门口走到沙发旁，拿起桌上的书”，不只是识别人、沙发、书，还要懂“门口到沙发的位置距离”、“书在桌上的具体方位”。"
+  ],
+  "tags": [
+    "多模态AI",
+    "视频理解",
+    "空间感知",
+    "大模型",
+    "基准测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2084,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763965782000,
+  "publishDateStr": "2025-11-24",
+  "publishDateTimeStr": "2025-11-24 06:29:42"
+}

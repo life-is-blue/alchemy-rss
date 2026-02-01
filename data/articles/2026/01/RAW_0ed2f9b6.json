@@ -1,0 +1,54 @@
+{
+  "id": "RAW_0ed2f9b6",
+  "title": "DoorDash 利用多臂老虎机（MAB）优化 A/B 测试实践",
+  "url": "https://www.infoq.com/news/2026/01/multi-armed-bandits-doordash/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-25 13:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>While experimentation is essential, traditional A/B testing can be excessively slow and expensive, according to DoorDash engineers Caixia Huang and Alex Weinstein. To address these limitations, they adopted a <a href=\"https://careersatdoordash.com/blog/experimentation-at-doordash-with-a-multi-armed-bandit-platform/\">\"multi-armed bandits\" (MAB) approach to optimize their experiments</a>.</p>\n   <p>When running experiments, organizations aim to minimize the opportunity cost, or regret, caused by serving the less effective variants to a subset of the user base. Traditional A/B testing relies on fixed traffic splits and predetermined sample sizes that remain unchanged throughout the experiment. As a result, even if a clear <em>winner</em> emerges early, the experiment continues until it reaches its predetermined stopping condition. To make things worse, opportunity cost compounds as the number of concurrent experiments increases, encouraging teams to run experiments sequentially to reduce regret, but at the expense of significantly slower iterations.</p>\n   <p>The multi-armed bandits approach offers a way to adaptively allocate traffic based on performance, accelerating learning while reducing waste. It does so by repeatedly selecting among multiple choices whose properties are only partially known and refining those selections as the experiment progresses and more evidence is gathered:</p>\n   <blockquote>\n    <p>For our purposes, this strategy allocates experimental traffic toward better-performing variants based on ongoing feedback collected during the experiment. The core idea is that an automated MAB agent continuously selects from a pool of actions, or arms, to maximize a defined reward, while simultaneously learning from user feedback in subsequent iterations.</p>\n   </blockquote>\n   <p>This strategy enables a balance between <em>exploration</em>, i.e., learning about all candidate options, and <em>exploitation</em>, i.e., prioritizing the best‑performing options as they emerge, until the experiment converges on the best option.</p>\n   <p>According to Huang and Weinstein, MAB helps reduce the cost of experimentation enough to make it possible to evaluate many distinct ideas quickly.</p>\n   <p>At the core of DoorDash's MAB approach is Thompson sampling, a Bayesian algorithm known for its strong performance and robustness to delayed feedback. In extreme synthesis, the algorithm samples from <em>posterior</em> reward distributions (that is, after a decision cycle) to decide allocations and updates reward expectations as new data comes in to prepare for the next decision cycle. At each decision cycle, the expected reward is used to determine choice allocation.</p>\n   <p>Adopting MAB is not without challenges, say DoorDash engineers. In particular, it makes inference on metrics not included in the reward function much harder, which in turn encourages teams to choose more complex reward metrics to capture as much insight as possible. By contrast, traditional A/B testing allows post-experiment analysis of any metric once the experiment concludes.</p>\n   <p>Moreover, because MAB adjusts allocations more aggressively, it can potentially lead to inconsistent user experiences when the same user interacts with a feature multiple times. DoorDash plans to address these limitations by adopting <em>contextual bandits</em>, leveraging Bayesian optimization, and implementing <em>sticky</em> user assignment to enhance overall user experience. ￼</p>\n   <p>The concept of a <em>multi‑armed bandit</em> comes from probability theory and machine learning. It describes a problem using a slot machine analogy: a gambler is facing multiple slot machines (which are sometimes called “one‑armed bandits”) and must which to play, how often, in what order, and when to try a different machine.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Enhancing A/B Testing at DoorDash with Multi-Armed Bandits\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/multi-armed-bandits-doordash/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1769346000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DoorDash 工程师通过 Thompson 采样实现多臂老虎机（MAB）算法，通过自适应地将流量分配给表现优异的变体，减少了机会成本并加速了实验迭代周期。",
+  "oneSentenceSummary": "DoorDash 工程师通过 Thompson 采样实现多臂老虎机（MAB）算法，通过自适应地将流量分配给表现优异的变体，减少了机会成本并加速了实验迭代周期。",
+  "summary": "本文探讨了 DoorDash 如何从传统的 A/B 测试转向多臂老虎机（MAB）方法，以解决固定流量分配和迭代速度慢带来的低效问题。通过利用贝叶斯算法 Thompson 采样，DoorDash 能够动态平衡探索与利用，实时将更多流量引导至胜出的变体。虽然这降低了提供次优体验带来的“悔值”（Regret）或机会成本，但也带来了非奖励指标的事后推断困难以及潜在的用户体验不一致等挑战。为了缓解这些问题，DoorDash 正在向上下文老虎机（Contextual Bandits）和粘性用户分配方向演进。",
+  "mainPoints": [
+    {
+      "point": "多臂老虎机降低了传统 A/B 测试中固有的机会成本（悔值）。",
+      "explanation": "与运行至预定样本量且流量分配固定的 A/B 测试不同，MAB 在证据出现时立即自适应地将流量转移到表现更好的变体，从而最大限度地减少用户接触劣质选项的机会。"
+    },
+    {
+      "point": "Thompson 采样为 DoorDash 的 MAB 实现提供了稳健的贝叶斯基础。",
+      "explanation": "该算法通过对后验奖励分布进行采样来确定分配比例，事实证明在处理延迟反馈和随着新数据到达而更新预期方面非常有效。"
+    },
+    {
+      "point": "MAB 在指标推断和用户体验一致性方面引入了复杂性。",
+      "explanation": "由于流量向胜出者倾斜，分析次要指标在统计上变得更加困难，而且如果用户在不同会话中看到不同的变体，激进的重新分配可能会导致用户体验的“闪烁”现象。"
+    }
+  ],
+  "keyQuotes": [
+    "传统的 A/B 测试依赖于固定的流量分配和预定的样本量，这些在整个实验过程中保持不变。",
+    "核心思想是自动化的 MAB 智能体不断从一组动作（或称为臂）中进行选择，以最大化定义的奖励，同时从用户反馈中学习。",
+    "MAB 有助于显著降低实验成本，从而使快速评估许多不同的想法成为可能。",
+    "它使得对未包含在奖励函数中的指标进行推断变得更加困难，这反过来又促使团队选择更复杂的奖励指标。"
+  ],
+  "tags": [
+    "Multi-Armed Bandits",
+    "A/B Testing",
+    "Thompson Sampling",
+    "实验平台",
+    "贝叶斯优化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 513,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769346000000,
+  "publishDateStr": "01-25",
+  "publishDateTimeStr": "2026-01-25 13:00:00"
+}

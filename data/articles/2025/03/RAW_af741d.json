@@ -1,0 +1,57 @@
+{
+  "id": "RAW_af741d",
+  "title": "Meta 通过数据日志增强“下载你的信息”功能",
+  "url": "https://www.infoq.com/news/2025/03/meta-suports-data-logs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-03 00:00:00",
+  "author": "Aditya Kulkarni",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Meta has recently introduced data logs as part of their Download Your Information (DYI) tool, enabling users to access additional data about their product usage. This development was aimed at enhancing transparency and user control over personal data.</p>\n   <p>A blog post on Meta’s engineering blog <a href=\"https://engineering.fb.com/2025/02/04/security/data-logs-the-latest-evolution-in-metas-access-tools/\">summarised the journey</a>. The implementation of data logs presented challenges due to the scale of Meta's operations and the limitations of their data warehouse system, Hive. The primary challenge was the inefficiency of querying Hive tables, which are partitioned by date and time, requiring a scan of every row in every partition to retrieve data for a specific user. With over 3 billion monthly active users, this approach would process a humongous amount of irrelevant data for each query.</p>\n   <p>Meta developed a system that amortizes the cost of expensive full table scans by batching individual users' requests into a single scan. This method provides sufficiently predictable performance characteristics to make the feature feasible with some levy of processing irrelevant data.</p>\n   <p>The current design utilizes Meta's internal task-scheduling service to organize recent requests for users' data logs into batches. These batches are submitted to a system built on the <a href=\"https://atscaleconference.com/workflowsfacebook-powering-developer-productivity-and-automation-at-facebook-scale/\">Core Workflow Service</a> (CWS), which ensures reliable execution of long-running tasks. The process involves copying user IDs into a new Hive table, initiating worker tasks for each data logs table, and executing jobs in <a href=\"https://www.youtube.com/watch?v=4T-MCYWrrOw&amp;themeRefresh=1\">Dataswarm</a>, Meta's data pipeline system.</p>\n   <p>The jobs perform an INNER JOIN between the table containing requesters' IDs and the column identifying the data owner in each table. This operation produces an intermediate Hive table containing combined data logs for all users in the current batch. PySpark then processes this output to split it into individual files for each user's data in a given partition.</p>\n   <p>The resulting raw data logs are further processed using <a href=\"https://engineering.fb.com/2014/03/20/developer-tools/hack-a-new-programming-language-for-hhvm/\">Meta's Hack language</a> to apply privacy rules and filters, rendering the data into meaningful, well-explained HTML files. Finally, the results are aggregated into a ZIP file and made available through the DYI tool.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/meta-suports-data-logs/news/2025/03/meta-suports-data-logs/en/resources/1meta-data-logs-1740983320121.webp\" style=\"width: 800px; height: 336px;\" src=\"https://res.infoq.com/news/2025/03/meta-suports-data-logs/en/resources/1meta-data-logs-1740983320121.webp\" rel=\"share\"></p>\n   <p><em>Source:&nbsp;<a href=\"https://engineering.fb.com/2025/02/04/security/data-logs-the-latest-evolution-in-metas-access-tools/\">Data logs: The latest evolution in Meta’s access tools</a></em></p>\n   <p>Throughout the development process, Meta learned some important lessons. They found it important to implement robust checkpointing mechanisms to enable incremental progress and resilience against errors and temporary failures. This leads to increasing overall system throughput by allowing work to resume piecemeal in case of issues like job timeouts or memory-related failures.</p>\n   <p>When ensuring data correctness, Meta encountered a Spark concurrency bug that could have led to data being returned to the wrong user. To address this, they implemented a verification step in the post-processing stage to ensure that the user ID in the data matches the identifier of the user whose logs are being generated.</p>\n   <p>The complexity of the data workflows required advanced tools and the ability to iterate on code changes quickly. Meta then built an experimentation platform that allows for running modified versions of workflows and independently executing phases of the process to create faster cycles of testing and development.</p>\n   <p>Hardik Khandelwal, Software Engineer III at Google <a href=\"https://www.linkedin.com/posts/hardik-khandelwal_data-logs-the-latest-evolution-in-metas-activity-7297610572768915456-Nl-J/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAA1pAyoBT2cbjslZinfR7Oc8w4UPs6Kk0wU\">appreciated the engineering principles behind data logs</a>, mentioning,</p>\n   <blockquote>\n    <p>What stands out to me is how solid software engineering principles enabled this at scale:</p>\n    <p>- Batching requests to efficiently query massive datasets.</p>\n    <p>- Checkpointing to ensure incremental progress and fault tolerance.</p>\n    <p>- Security checks to enforce privacy rules and prevent data leakage.</p>\n    <p>This system was a massive engineering challenge—querying petabytes of data from Hive without overwhelming infrastructure.</p>\n   </blockquote>\n   <p>Meta was also in the news recently as it announced the <a href=\"https://www.infoq.com/news/2025/02/meta-ach-tool/\">Automated Compliance Hardening (ACH) tool</a>, and <a href=\"https://www.infoq.com/news/2025/01/meta-large-concept-model/\">open-sourced Large Concept Model</a> (LCM). ACH tool is a mutation-guided, LLM-based test generation system. LCM is a language model designed to operate at a higher abstraction level than tokens.</p>\n   <p>Meta also emphasized the importance of making the data consistently understandable and explainable to end-users. This involves collaboration between access experts and specialist teams to review data tables, ensuring that sensitive information is not exposed and that internal technical jargon is translated into user-friendly terms.</p>\n   <p>Finally, the processed content is implemented in code using renderers that transform raw values into user-friendly representations. This includes converting numeric IDs into meaningful entity references, converting enum values into descriptive text, and removing technical terms.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta Enhances Download Your Information Tool with Data Logs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Aditya Kulkarni\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/meta-suports-data-logs/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1740994200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 通过优化数据处理流程，使用户能够更便捷地访问和理解其产品使用数据日志。",
+  "oneSentenceSummary": "Meta 通过优化数据处理流程，使用户能够更便捷地访问和理解其产品使用数据日志。",
+  "summary": "Meta 在“下载你的信息”工具中引入数据日志，旨在提高用户对个人数据的透明度和控制，并增强数据安全和隐私保护。为了应对 Meta 规模带来的挑战，他们通过批量处理用户请求，并利用核心工作流服务 Core Workflow Service 和 Dataswarm 等内部系统，高效查询 Hive 数据仓库。数据日志包含用户产品使用相关的数据。数据经过隐私规则过滤和格式转换，最终以用户友好的 HTML 文件呈现，帮助用户更好地了解自己的数据，并提高对平台的信任度。Meta 强调了数据一致性和可解释性的重要性，并实施了严格的检查机制，以确保数据准确性和安全性。此外，Meta 还构建了实验平台，加速开发迭代。",
+  "mainPoints": [
+    {
+      "point": "批量处理有效降低了查询海量数据的成本",
+      "explanation": "通过将多个用户请求合并到单个扫描中，分摊了昂贵的完整表扫描成本，提高了查询效率，使该功能在大规模应用中可行。"
+    },
+    {
+      "point": "多级数据转换保证了数据可理解性",
+      "explanation": "原始数据经过隐私规则过滤和格式转换，包括将数字 ID numeric IDs 转换为有意义的实体引用 entity references，将枚举值 enum values 转换为描述性文本，并移除技术术语，最终以用户友好的 HTML 文件呈现，确保用户能够轻松理解其数据。"
+    },
+    {
+      "point": "严格的数据验证机制确保了数据准确性",
+      "explanation": "在后处理阶段实施验证步骤，确保数据中的用户 ID 与生成日志的用户标识符匹配，防止数据泄露。"
+    },
+    {
+      "point": "Meta 强调了数据一致性和可解释性的重要性",
+      "explanation": "通过访问专家和专业团队之间的协作，审核数据表，确保敏感信息不被泄露。同时，将内部技术术语翻译成用户友好的术语，使用户能够更好地理解自己的数据。"
+    }
+  ],
+  "keyQuotes": [
+    "What stands out to me is how solid software engineering principles enabled this at scale: Batching requests to efficiently query massive datasets. Checkpointing to ensure incremental progress and fault tolerance. Security checks to enforce privacy rules and prevent data leakage.",
+    "This system was a massive engineering challenge---querying petabytes of data from Hive without overwhelming infrastructure.",
+    "Meta also emphasized the importance of making the data consistently understandable and explainable to end-users."
+  ],
+  "tags": [
+    "数据日志",
+    "数据透明度",
+    "用户隐私",
+    "数据合规",
+    "数据安全"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 696,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1740960000000,
+  "publishDateStr": "2025-03-03",
+  "publishDateTimeStr": "2025-03-03 00:00:00"
+}

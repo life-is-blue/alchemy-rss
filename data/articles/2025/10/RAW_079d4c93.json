@@ -1,0 +1,55 @@
+{
+  "id": "RAW_079d4c93",
+  "title": "TrustGraph 如何利用 Qdrant 构建企业级自主 AI",
+  "url": "https://qdrant.tech/blog/case-study-trustgraph/",
+  "date": "2025-10-10 00:00:00",
+  "author": "Daniel Azoulai",
+  "siteName": "Qdrant",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"qdrant-post__header\">\n   <div class=\"qdrant-post__about\">\n    <p>\n     <br>\n    </p>\n   </div>\n   <picture class=\"qdrant-post__preview\"><img src=\"https://image.jido.dev/20251012051925_social_preview_partnership-trustgraph.jpg\" alt=\"How TrustGraph built enterprise-grade agentic AI with Qdrant\" loading=\"lazy\"></picture>\n  </div>\n  <div class=\"row qdrant-post__breadcrumbs\"></div>\n  <div class=\"qdrant-post__body\">\n   <div class=\"table-of-contents\">\n    <p class=\"table-of-contents__head\">On this page:</p>\n    <nav id=\"TableOfContents\">\n     <ul>\n      <li><a href=\"#trustgraph--qdrant-a-technical-deep-dive\">TrustGraph + Qdrant: A Technical Deep Dive</a>\n       <ul>\n        <li><a href=\"#building-for-production-not-demos\">Building for Production, Not Demos</a></li>\n        <li><a href=\"#from-documents-to-knowledge\">From Documents to Knowledge</a></li>\n        <li><a href=\"#retrieval-that-goes-beyond-rag\">Retrieval That Goes Beyond RAG</a></li>\n        <li><a href=\"#agentic-ai-at-scale\">Agentic AI at Scale</a></li>\n        <li><a href=\"#outcomes-that-matter-in-production\">Outcomes That Matter in Production</a></li>\n        <li><a href=\"#from-demos-to-durable-infrastructure\">From Demos to Durable Infrastructure</a></li>\n       </ul></li>\n     </ul>\n    </nav>\n   </div>\n   <div class=\"qdrant-post__content\">\n    <p><img src=\"https://image.jido.dev/20251012051925_trustgraph-bento-box-dark.jpg\" alt=\"TrustGraph Overview\"></p>\n    <p>When teams first experiment with agentic AI, the journey often starts with a slick demo: a few APIs stitched together, a large language model answering questions, and just enough smoke and mirrors to impress stakeholders.</p>\n    <p>But as soon as those demos face enterprise requirements (constant data ingestion, compliance, thousands of users, 24×7 uptime), the illusion breaks. Services stall at the first failure, query reliability plummets, and regulatory guardrails are nowhere to be found. What worked in a five-minute demo becomes impossible to maintain in production.</p>\n    <p><img src=\"https://image.jido.dev/20251012051925_failure-map-poc-to-production-2.png\" alt=\"Failure mode map — “From POC to production\"> <em>Failure mode map: “From POC to production.”</em></p>\n    <p>This is exactly the gap <a href=\"https://trustgraph.ai/\" target=\"_blank\">TrustGraph</a> set out to close. From day one, they designed their platform for availability, determinism, and scale with <a href=\"https://Qdrant.tech\" target=\"_blank\" rel=\"noopener nofollow\">Qdrant</a> as a core piece of the architecture.</p>\n    <h2 id=\"building-for-production-not-demos\">Building for Production, Not Demos</h2>\n    <p>TrustGraph’s architecture is fully containerized, modular, and deployable across cloud, virtualized, or bare-metal environments.</p>\n    <p>At its core are three pillars:</p>\n    <ul>\n     <li>\n      <p>A streaming spine with Apache Pulsar. Persistent queues, schema evolution, and replayability provide resilience. If a process fails, it automatically restarts and resumes without data loss.</p>\n     </li>\n     <li>\n      <p>Graph-native semantics. Knowledge is modeled in Resource Description Framework (RDF), with SPARQL templates guiding retrieval. This reduces dependence on brittle, model-generated queries and ensures answers are precise and auditable.</p>\n     </li>\n     <li>\n      <p>Qdrant vector search. Entities are embedded and stored in Qdrant, enabling fast, reliable similarity search that integrates into the graph-driven workflow.</p>\n     </li>\n    </ul>\n    <p><img src=\"https://image.jido.dev/20251012051925_architecture-overview.png\" alt=\"Architecture overview\"> <em>Architecture overview</em></p>\n    <h2 id=\"from-documents-to-knowledge\">From Documents to Knowledge</h2>\n    <p>Instead of breaking documents into chunks, TrustGraph extracts facts. An LLM identifies entities and relationships, assembling them into a knowledge graph. In parallel, embeddings of entities are stored in Qdrant.</p>\n    <p>This dual representation allows queries to ground themselves in both semantic similarity and graph structure. For example, asking “Tell me about Alice” retrieves the “Alice” entity via Qdrant and maps it to her connections in the graph, rather than just surfacing sentences that happen to contain her name.</p>\n    <p><img src=\"https://image.jido.dev/20251012051925_ingestion-process.png\" alt=\"Ingestion process\"> <em>Ingestion process</em></p>\n    <h2 id=\"retrieval-that-goes-beyond-rag\">Retrieval That Goes Beyond RAG</h2>\n    <p>When a query enters the system, it follows a deterministic path:</p>\n    <ol>\n     <li>\n      <p>The query is embedded into vectors.</p>\n     </li>\n     <li>\n      <p>Qdrant retrieves the nearest entities.</p>\n     </li>\n     <li>\n      <p>Those entities expand into a subgraph of related facts.</p>\n     </li>\n     <li>\n      <p>The subgraph is passed to the LLM, which answers strictly from that curated context.</p>\n     </li>\n    </ol>\n    <p>This approach surpasses traditional RAG, which stops at semantically similar chunks. Graph-anchored retrieval allows TrustGraph to surface causal or related knowledge. For example, “Why did the engine fail?” doesn’t just find mentions of “engine” and “failure”, it also uncovers related causes like <em>metal fatigue</em> or <em>coolant leaks</em> through graph connections.</p>\n    <p><img src=\"https://image.jido.dev/20251012051925_query-process.png\" alt=\"Query process\"> <em>Query process</em></p>\n    <h2 id=\"agentic-ai-at-scale\">Agentic AI at Scale</h2>\n    <p>TrustGraph’s retrieval capabilities sit within a broader agentic AI framework. Developers can orchestrate pipelines that combine:</p>\n    <ul>\n     <li>\n      <p>GraphRAG for structured fact retrieval</p>\n     </li>\n     <li>\n      <p>Template-driven queries for determinism</p>\n     </li>\n     <li>\n      <p>MCP tool invocation for external actions</p>\n     </li>\n     <li>\n      <p>NLPR - Natural Language Precision Retrieval (experimental), which uses ontologies to drive specialized extraction</p>\n     </li>\n    </ul>\n    <p>This enables enterprises to build retrieval pipelines that integrate internal knowledge graphs with external data sources, while maintaining reliability and control.</p>\n    <p><img src=\"https://image.jido.dev/20251012051925_ingestion-querying-process.png\" alt=\"Ingestion + querying process\"> <em>Ingestion &amp; querying process</em></p>\n    <h2 id=\"outcomes-that-matter-in-production\">Outcomes That Matter in Production</h2>\n    <p>By combining a resilient streaming backbone, graph-native semantics, and Qdrant-powered retrieval, TrustGraph delivers production-grade architectural outcomes:</p>\n    <ul>\n     <li>\n      <p>Determinism — Template-driven SPARQL and Qdrant similarity search eliminate fragile query synthesis.</p>\n     </li>\n     <li>\n      <p>Resilience — Pulsar pipelines replay and recover automatically, keeping systems responsive during failures or rolling updates.</p>\n     </li>\n     <li>\n      <p>Scalability &amp; Sovereignty — The platform runs on diverse hardware stacks, including non-NVIDIA GPUs, and supports strict European data sovereignty requirements.</p>\n     </li>\n     <li>\n      <p>Developer Simplicity — Qdrant’s open-source, containerized design makes scaling straightforward and reduces operational friction.</p>\n     </li>\n    </ul>\n    <p><em>“We haven’t had a reason to revisit alternatives. Qdrant checks the boxes for speed, reliability, and simplicity—and it keeps doing so.”</em>\n     <br>\n     — <em>Daniel Davis, Co-founder, TrustGraph</em></p>\n    <h2 id=\"from-demos-to-durable-infrastructure\">From Demos to Durable Infrastructure</h2>\n    <p>TrustGraph shows how agentic AI can evolve from flashy demos into mission-critical enterprise software. By grounding retrieval in graph semantics and Qdrant’s vector engine, they push non-determinism to the edges while maintaining uptime, auditability, and sovereignty.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "TrustGraph 通过结合 Apache Pulsar、知识图谱和 Qdrant 的高弹性架构，构建了可扩展、确定性的企业级自主 AI。",
+  "oneSentenceSummary": "TrustGraph 通过结合 Apache Pulsar、知识图谱和 Qdrant 的高弹性架构，构建了可扩展、确定性的企业级自主 AI。",
+  "summary": "本文详细阐述了 TrustGraph 如何开发一个生产级自主 AI 平台，以应对将 AI 演示扩展至企业级应用时常见的挑战。TrustGraph 的架构基于三大支柱：使用 Apache Pulsar 实现弹性流式数据摄取，使用 RDF 和 SPARQL 实现结构化知识表示的图原生语义，以及使用 Qdrant 向量搜索实现快速可靠的实体检索。与传统 RAG 不同，TrustGraph 将事实提取到知识图谱中，并基于语义相似性和图结构构建查询。这种“图锚定检索”方法实现了可预测的查询路径，使 LLM 能够严格从精选的子图中获取答案，从而发现因果关系和相关知识。该系统支持复杂的自主 AI 管道，集成了内部知识图谱和外部数据源，同时确保确定性、弹性、可扩展性、数据主权和开发者易用性。Qdrant 在实现高效的实体向量搜索方面至关重要，显著提升了平台的可靠性和性能。",
+  "mainPoints": [
+    {
+      "point": "企业级自主 AI 需要强大的生产级基础设施，而不仅仅是简单的演示。",
+      "explanation": "许多 AI 演示在规模化时会失败，原因在于缺乏可用性、确定性和合规性。这突显了在实际企业部署中，需要高弹性且可扩展的架构。"
+    },
+    {
+      "point": "TrustGraph 的架构结合了流式传输、知识图谱和向量搜索，以实现可靠的确定性检索。",
+      "explanation": "通过集成 Apache Pulsar 以实现弹性，RDF/SPARQL 以实现结构化知识，以及 Qdrant 以实现向量搜索，TrustGraph 实现了强大、可审计和上下文感知的的信息检索。"
+    },
+    {
+      "point": "图锚定检索通过揭示因果和相关知识超越了传统的 RAG。",
+      "explanation": "通过将检索到的实体扩展到子图中，而非仅仅是语义上相似的块，LLM 能够访问更深入的信息，这些信息在因果上是相关的，从而提高答案的准确性和完整性。"
+    }
+  ],
+  "keyQuotes": [
+    "在五分钟演示中有效的方法在生产环境中变得难以维护。",
+    "这正是 TrustGraph 致力于弥合的差距。从第一天起，他们就将可用性、确定性和可扩展性作为平台的设计目标，并将 Qdrant 作为架构的核心组成部分。",
+    "这种方法超越了传统的 RAG，后者仅限于语义上相似的块。图锚定检索使 TrustGraph 能够揭示因果或相关知识。",
+    "通过结合弹性的流式骨干、图原生语义和 Qdrant 驱动的检索，TrustGraph 实现了生产级的架构成果。",
+    "“我们没有理由重新考虑其他方案。Qdrant 在速度、可靠性和简易性方面都满足了我们的需求，并且一直如此。”"
+  ],
+  "tags": [
+    "自主型人工智能",
+    "企业级人工智能",
+    "知识图谱",
+    "向量数据库",
+    "Qdrant"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 675,
+  "domain": "qdrant.tech",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_a88b15",
+  "sourceName": "Qdrant",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760054400000,
+  "publishDateStr": "2025-10-10",
+  "publishDateTimeStr": "2025-10-10 00:00:00"
+}

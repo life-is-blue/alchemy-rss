@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c57576b",
+  "title": "117. 开源一段论文探索之旅：模型范式、Infra 和数据、语言、多模态的完整变迁史",
+  "url": "https://www.xiaoyuzhoufm.com/episode/68ff9d1b083a71a4eb86c52c",
+  "date": "2025-10-28 02:33:03",
+  "author": "张小珺",
+  "siteName": "张小珺Jùn｜商业访谈录",
+  "content": "<html>\n <head></head>\n <body>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/Flo18nNUSP7OUNlTf8UgCdHxio6O.jpg\">\n  </figure>\n  <p><span>今天的嘉宾是谢青池，他是美团光年之外的产品负责人。</span></p>\n  <p><span>一个月前，青池找到我，说他用了一年多的时间一篇一篇地啃完了200多篇AI论文，从开始全然不得要领，到后来逐渐地入门——</span><strong><span>而他希望将他的论文探索之旅开源给大家。</span></strong></p>\n  <p><span>就这样，我们有了今天这集特别的节目。</span></p>\n  <p><span>他从200多篇论文中精选了36篇经典，4小时讲解，带你穿越AI变迁史。</span></p>\n  <p><span>他说，</span><strong><span>读论文是“给你打开一扇门”，让你能直接“与这个世界最聪明的头脑对话”。</span></strong></p>\n  <p><span>2025年，期待我们和AI共同进步！</span></p>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/Fm2F9n8vMm_n-xafqMi98xs3T3K8.png\">\n  </figure>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FlXrk-ijMq1TpE6D2peK8gcRwPwy.png\">\n  </figure>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FvV-R5FBydYHGZAMyXAV1K1A9iJT.png\">\n  </figure>\n  <p><span><a class=\"timestamp\" data-timestamp=\"90\">01:30</a> 探索的缘起</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"445\">07:25</a> 怎么读论文？（用AI学AI）</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"620\">10:20</a> 辅助小工具和路书</span></p>\n  <p><strong><span>论文讲解的主干：</span></strong></p>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FlD9g0se44VT3UAGU8lzaGGev8Ik.png\">\n  </figure>\n  <blockquote>\n   <p><strong><span><a class=\"timestamp\" data-timestamp=\"1175\">19:35</a> Part 1：模型的范式变迁</span></strong></p>\n  </blockquote>\n  <p><span>故事要从1999年的第一颗GPU开始讲起</span></p>\n  <p><span>Brook: 用GPU进行计算 （2004.08）</span></p>\n  <p><span>AlexNet: 深度学习的开端（2012.10）</span></p>\n  <p><span>对序列建模：seq2seq和Attention的引入（2014.09）</span></p>\n  <p><span>蒸馏：模型能被学习吗？（2015.03）</span></p>\n  <p><span>ResNet: 比深更深（2015.12）</span></p>\n  <p><span>Transformer来了！拉开一个时代的序幕（2017.06）</span></p>\n  <p><span>AlphaGo Zero: 强化学习的突破（2017.10）</span></p>\n  <p><span>现代MoE的开端（2017.01）</span></p>\n  <p><span>CoT: Prompt Engineering的奠基之作（2022.01）</span></p>\n  <p><span>LoRA: 那个我们每天都在用的东西（2021.06）</span></p>\n  <p><span>ReAct: Agent从理论到落地（2022.10）</span></p>\n  <p><span>The Bitter Lesson: 过去70年的教训（2018.08）</span></p>\n  <blockquote>\n   <p><strong><span><a class=\"timestamp\" data-timestamp=\"6778\">01:52:58</a> Part 2：Infra与数据的变迁</span></strong></p>\n  </blockquote>\n  <p><span>ZeRO: 大规模的GPU并行计算（2019.10）</span></p>\n  <p><span>Scaling Law &amp; Chinchilla: 上帝的指挥棒（2020.01 2022.03）</span></p>\n  <p><span>LAION-5B: 开源社区的英雄主义（2022.10）</span></p>\n  <p><span>The RefinedWeb: 互联网的数据也很够用（2023.06）</span></p>\n  <p><span>MegaScale: 万卡GPU集群的训练（2024.02）</span></p>\n  <blockquote>\n   <p><strong><span><a class=\"timestamp\" data-timestamp=\"8489\">02:21:29</a> Part 3：语言模型的发展</span></strong></p>\n  </blockquote>\n  <p><span>Word2Vec: 用机器学习将单词向量化（2013.01）</span></p>\n  <p><span>Google Translate: 神经网络的大规模线上部署（2016.09）</span></p>\n  <p><span>GPT-1，它来了（2018.06）</span></p>\n  <p><span>BERT: 曾经的王（2018.10）</span></p>\n  <p><span>GPT-2: 是时候告别微调了（2019.02）</span></p>\n  <p><span>GPT-3: ChatGPT来临前夜（2020.05）</span></p>\n  <p><span>InstructGPT: 给LLM以文明（2022.03）</span></p>\n  <p><span>Tulu 3: 后训练的开源（2024.11）</span></p>\n  <blockquote>\n   <p><strong><span><a class=\"timestamp\" data-timestamp=\"11288\">03:08:08</a> Part 4：多模态模型的发展</span></strong></p>\n  </blockquote>\n  <p><span>DeepVideo: 深度学习进入视频领域，Andrej 初出茅庐（2014.06）</span></p>\n  <p><span>双流网络: Karén和学术重镇牛津登场（2014.06）</span></p>\n  <p><span>图像生成的序章: GAN来了（2014.06）</span></p>\n  <p><span>Diffusion: 在GAN的阴影下，悄然成长（2015.03）</span></p>\n  <p><span>DDPM: Diffusion重回图像舞台的中央（2020.06）</span></p>\n  <p><span>ViT: 当图像遇到Transformer（2020.10）</span></p>\n  <p><span>CLIP: 文生图的奠基石（2021.03）</span></p>\n  <p><span>Stable Diffusion，它来了（2021.12）</span></p>\n  <p><span>DiT: 人们期待一个融合的未来（2022.12）</span></p>\n  <blockquote>\n   <p><strong><span><a class=\"timestamp\" data-timestamp=\"14198\">03:56:38</a> 最后的聊天</span></strong></p>\n  </blockquote>\n  <p><span>架构抱住了硬件的大腿</span></p>\n  <p><span>今天技术的边界到达了哪？</span></p>\n  <p><span>给“站在AI世界门外张望的人”和“已经在体系中工作多年的人”的建议</span></p>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FvVbUNblF7FHIjfdp3MmmbAdLZ8G.png\">\n  </figure>\n  <p><span>【技术之美】系列：</span></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/67a1b697247d51713c868367\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/67a1b697247d51713c868367\"><span>逐句讲解DeepSeek-R1、Kimi K1.5、OpenAI o1技术报告——“最优美的算法最干净”</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/67aacd6b247d51713cedbeda\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/67aacd6b247d51713cedbeda\"><span>逐篇讲解DeepSeek关键9篇论文及创新点——“勇敢者的游戏”</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/67bb3696606e5c5940533ef4\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/67bb3696606e5c5940533ef4\"><span>逐篇讲解DeepSeek、Kimi、MiniMax注意力机制新论文——“硬件上的暴力美学”</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/67f28c6e0decaeb0943fb14a\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/67f28c6e0decaeb0943fb14a\"><span>逐篇讲解机器人基座模型和VLA经典论文——“人就是最智能的VLA”</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/6889da698e06fe8de77116a9\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/6889da698e06fe8de77116a9\"><span>逐段讲解Kimi K2报告并对照ChatGPT Agent、Qwen3-Coder等：“系统工程的力量”</span></a></p>\n  <p><span>【更多信息】</span></p>\n  <p><span>本集的投屏视频版已经同步发布于Bilibili（张小珺商业访谈录）：<a data-url=\"https://www.bilibili.com/video/BV1pkyqBxEdB/?spm_id_from=333.1365.list.card_archive.click&amp;vd_source=aa7c66a3d015be4b5bfcd520784f2790\" href=\"https://www.bilibili.com/video/BV1pkyqBxEdB/?spm_id_from=333.1365.list.card_archive.click&amp;vd_source=aa7c66a3d015be4b5bfcd520784f2790\">www.bilibili.com</a></span></p>\n  <p><span>50页完整PPT开源地址（所有论文链接附在PPT上）：<a data-url=\"https://w7py8ou4dk.feishu.cn/wiki/KacewdlmSiSGC9kUOKDch9gwnKf?from=from_copylink\" href=\"https://w7py8ou4dk.feishu.cn/wiki/KacewdlmSiSGC9kUOKDch9gwnKf?from=from_copylink\">w7py8ou4dk.feishu.cn</a></span></p>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/Fn7o36NtUYpCM_rQiFj1LW-TIwk8.JPG\">\n  </figure>\n </body>\n</html>",
+  "aiSummary": "美团产品负责人谢青池分享其一年多研读 200 余篇 AI 论文的旅程，系统梳理了 AI 模型范式、基础设施、数据、语言及多模态模型的完整变迁史，并提供了高效学习策略。",
+  "oneSentenceSummary": "美团产品负责人谢青池分享其一年多研读 200 余篇 AI 论文的旅程，系统梳理了 AI 模型范式、基础设施、数据、语言及多模态模型的完整变迁史，并提供了高效学习策略。",
+  "summary": "本期播客特邀美团光年之外产品负责人谢青池，分享他作为非技术背景产品经理，通过一年多时间研读数百篇 AI 论文，深入理解 AI 技术边界的经验。节目以其独特的视角，将 AI 发展史划分为模型范式变迁、基础设施与数据、语言模型和多模态模型四大核心部分，详细解读了从 1999 年 GPU 诞生到 2024 年最新进展中的 36 篇关键论文。内容涵盖了深度学习的开端 AlexNet、Transformer 架构的革命性影响、强化学习的突破（如 AlphaGo Zero）、LoRA 等高效微调技术、以及 Scaling Law、LAION-5B 等数据与算力发展里程碑。同时，播客也探讨了 Word2Vec、GPT 系列、InstructGPT 等语言模型演进，以及 GAN、Diffusion、CLIP、Stable Diffusion 等多模态模型的创新。谢青池还分享了如何利用 AI 工具辅助论文阅读、推荐了体系化的学习资源，并强调了在 AI 早期阶段，产品经理深入理解技术原理对产品创新和职业发展的重要性。整个分享旨在帮助技术从业者和 AI 爱好者构建对 AI 宏观发展脉络的深刻理解。",
+  "mainPoints": [
+    {
+      "point": "深入阅读 AI 论文是理解技术边界、推动产品创新的关键路径",
+      "explanation": "对于产品经理而言，尤其在 AI 技术早期阶段，通过研读核心论文可以掌握技术原理、了解发展趋势，从而更好地定义产品方向和实现创新变革。"
+    },
+    {
+      "point": "AI 技术发展是模型范式、基础设施、数据和算法协同演进的结果",
+      "explanation": "从 GPU 的出现、深度学习的兴起、Transformer 的革命，到 Scaling Law 指导下的数据与算力扩展，AI 的进步是多方面要素相互促进的复杂过程。"
+    },
+    {
+      "point": "高效的 AI 学习应充分利用 AI 工具，结合体系化资源和历史视角",
+      "explanation": "推荐使用 AI 翻译、AI 问答、可视化工具辅助理解，并结合吴恩达、李沐等专家的视频课程和经典书籍，从历史脉络和范式变迁角度深入学习。"
+    }
+  ],
+  "keyQuotes": [
+    "读论文是'给你打开一扇门'，让你能直接'与这个世界最聪明的头脑对话'。",
+    "对我来说，读论文是探索边界的一个方式和方法。所以大概从 2022 年二三年开始，我就开始想去把论文系统的读一遍。",
+    "我后来找到一个工具，叫做沉浸式翻译，很多人也用过。我用到它以后，最后就是本质上我现在看的论文都是 AI 帮我翻译过的。",
+    "Alice net 这篇文章是那个时代第一篇，它同时 scale 了数据，同时 scale 了计算量，也同时 scale 了模型规模的这么一个工作。",
+    "Transformer 论文的标题叫做 attention is all you need。我们连 encoder 都不要了。我们就只要注意力和 decoder。我们现在的模主流模型也都是 decoder only 的。"
+  ],
+  "tags": [
+    "AI发展史",
+    "深度学习",
+    "大型语言模型",
+    "Transformer架构",
+    "模型范式变迁"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 93,
+  "wordCount": 1413,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_31d080",
+  "sourceName": "张小珺Jùn｜商业访谈录",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761618783000,
+  "publishDateStr": "2025-10-28",
+  "publishDateTimeStr": "2025-10-28 02:33:03"
+}

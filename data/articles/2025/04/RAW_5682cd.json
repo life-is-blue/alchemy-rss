@@ -1,0 +1,57 @@
+{
+  "id": "RAW_5682cd",
+  "title": "如何提升 Node.js API 的安全性 - 安全最佳实践",
+  "url": "https://www.freecodecamp.org/news/how-to-harden-your-nodejs-apis-security-best-practices/",
+  "date": "2025-04-25 16:05:07",
+  "author": "Manish Shivanandhan",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>If you’ve built an API with Node.js, chances are you’ve thought about security – at least a little.</p>\n  <p>Maybe you’ve heard about SQL injection, brute force attacks, or data leaks.</p>\n  <p>But here’s the thing: it’s not just about big hacks. Even small gaps in your API can lead to big problems. And no one wants to get that “your data’s been exposed” message.</p>\n  <p>In this article, I’ll walk you through seven ways to harden your Node.js API.</p>\n  <p>These are practical tips you can apply right away. I’ll keep the code examples simple and the language even simpler. Let’s get into it.</p>\n  <h2 id=\"heading-1-use-environment-variables\"><strong>1. Use Environment Variables</strong></h2>\n  <p>Storing sensitive data like database credentials, API keys, or JWT secrets directly in your code is risky. If your code ends up in the wrong hands, so does everything else.</p>\n  <p>Instead, store this data in a <code>.env</code> file and use the <code>dotenv</code> package to access it:</p>\n  <pre><code class=\"lang-plaintext\">require('dotenv').config();\n</code></pre>\n  <pre><code class=\"lang-plaintext\">const dbPassword = process.env.DB_PASSWORD;\n</code></pre>\n  <p>Make sure you <strong>never</strong> commit your <code>.env</code> file. Add it to your <code>.gitignore</code> file to keep it private.</p>\n  <h2 id=\"heading-2-validate-all-input\"><strong>2. Validate All Input</strong></h2>\n  <p>Attackers love user input.</p>\n  <p>If you don’t check what comes into your API, they’ll sneak in commands, inject code, or crash your app.</p>\n  <p>The best way to stop them is by validating every piece of input. Use a package like <code>Joi</code> or <code>zod</code> to define what your API expects:</p>\n  <pre><code class=\"lang-plaintext\">const Joi = require('joi');\n\nconst schema = Joi.object({\n  username: Joi.string().alphanum().min(3).max(30).required(),\n  password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{6,30}$')).required()\n});\nconst { error } = schema.validate(req.body);\nif (error) {\n  return res.status(400).send(error.details[0].message);\n}\n</code></pre>\n  <p>In the above code, we have defined the exact data type the schema expects. This way, wrong data gets blocked before it reaches your logic or database.</p>\n  <h2 id=\"heading-3-rate-limit-your-endpoints\"><strong>3. Rate Limit Your Endpoints</strong></h2>\n  <p>Bots and brute force attacks work by flooding your server with requests. Once your server reaches it limit, your API will crash.</p>\n  <p>Set a limit on how often a user can hit your API using middleware like <code>express-rate-limit</code> Here is an example.</p>\n  <pre><code class=\"lang-plaintext\">const rateLimit = require('express-rate-limit');\n\nconst limiter = rateLimit({\n  windowMs: 15 * 60 * 1000, // 15 minutes\n  max: 100 // limit each IP to 100 requests per windowMs\n});\napp.use('/api/', limiter);\n</code></pre>\n  <p>The above code restricts API requests coming from an IP address to 100 per 15 minutes. This is like putting a speed bump in front of a runaway car.</p>\n  <h2 id=\"heading-4-always-use-https\"><strong>4. Always Use HTTPS</strong></h2>\n  <p>HTTP sends data in plain text. That means anyone between your server and the user can read it. HTTPS encrypts everything. It’s not optional anymore.</p>\n  <p>If you’re using a platform like Heroku or Vercel, HTTPS is automatic. If you’re self-hosting, you can set it up with services like Let’s Encrypt.</p>\n  <p>Also, force HTTPS on all incoming traffic. You can use middleware like this:</p>\n  <pre><code class=\"lang-plaintext\">app.use((req, res, next) =&gt; {\n  if (req.headers['x-forwarded-proto'] !== 'https') {\n    return res.redirect('https://' + req.headers.host + req.url);\n  }\n  next();\n});\n</code></pre>\n  <p>Encrypt the ride. Always.</p>\n  <h2 id=\"heading-5-use-helmet-to-secure-http-headers\"><strong>5. Use Helmet to Secure HTTP Headers</strong></h2>\n  <p>HTTP headers are key-value pairs sent in requests and responses over the web. They give extra information about what’s being sent – like who’s sending it, what type it is, how it should be handled, and more.</p>\n  <p>HTTP headers are small, but they can be powerful tools to protect your app. <code>Helmet</code> is a Node.js middleware that sets secure headers for you.</p>\n  <pre><code class=\"lang-plaintext\">const helmet = require('helmet');\napp.use(helmet());\n</code></pre>\n  <p>Helmet helps prevent attacks like cross-site scripting (XSS), clickjacking, and others just by setting the right headers.</p>\n  <p>One line of code, a big step up in security.</p>\n  <h2 id=\"heading-6-sanitize-data-to-prevent-injection-attacks\"><strong>6. Sanitize Data to Prevent Injection Attacks</strong></h2>\n  <p>Injection attacks happen when you blindly trust input and plug it into a command or query.</p>\n  <p>For example, an attacker might submit a piece of text that turns into a command in your database.</p>\n  <p>You should sanitize data before it gets to any sensitive function. Libraries like <code>express-mongo-sanitize</code> or <code>xss-clean</code> help clean up malicious input.</p>\n  <pre><code class=\"lang-plaintext\">const mongoSanitize = require('express-mongo-sanitize');\nconst xss = require('xss-clean');\n\napp.use(mongoSanitize());\napp.use(xss());\n</code></pre>\n  <p>This strips out dangerous characters and scripts that could do real damage.</p>\n  <h2 id=\"heading-7-use-strong-authentication-and-authorisation\"><strong>7. Use Strong Authentication and Authorisation</strong></h2>\n  <p>Authentication is about knowing who the user is, and authorisation is about what they can do. You need both, and you need them to be strong.</p>\n  <p>Use JWT (JSON Web Tokens) or sessions to manage logged-in users. Here’s a quick JWT example:</p>\n  <pre><code class=\"lang-plaintext\">const jwt = require('jsonwebtoken');\n\nconst token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {\n  expiresIn: '1h'\n});\n</code></pre>\n  <p>Always verify the token before letting a user access protected routes:</p>\n  <pre><code class=\"lang-plaintext\">const decoded = jwt.verify(token, process.env.JWT_SECRET);\n</code></pre>\n  <p>And don’t forget roles. A user who can view data shouldn’t be able to delete it unless they’re supposed to.</p>\n  <h2 id=\"heading-final-thoughts\"><strong>Final Thoughts</strong></h2>\n  <p>Security isn’t just a feature – it’s a habit. You can’t do everything all at once, but you can start with a few key changes.</p>\n  <p>Use environment variables. Validate your inputs. Add rate limiting. Move to HTTPS. Install Helmet. Sanitize everything. Lock down your authentication.</p>\n  <p>Each of these steps is a small lock on a big door. The more you add, the harder it is for someone to break in. So take a little time now. Your future self and your users will thank you.</p>\n  <p><em>For more cybersecurity tutorials,</em> <a target=\"_blank\" href=\"https://newsletter.stealthsecurity.sh/\"><strong><em>join our newsletter</em></strong></a><em>. To learn the basics of Offensive Cybersecurity, check out our</em> <a target=\"_blank\" href=\"https://start.stealthsecurity.sh/\"><strong><em>Security Starter Course</em></strong></a><em>.</em></p>\n </body>\n</html>",
+  "aiSummary": "本文提供七个实用技巧，旨在增强 Node.js API 的安全性，有效防范潜在攻击。",
+  "oneSentenceSummary": "本文提供七个实用技巧，旨在增强 Node.js API 的安全性，有效防范潜在攻击。",
+  "summary": "文章强调，安全是一种习惯，通过逐步实施这些措施，可以显著提高 API 的安全性。本文提供了七个立即可用的实用技巧，以加强 Node.js API 的安全性。文章强调了在 Node.js API 安全中需要注意的几个关键点，包括使用环境变量存储敏感数据，验证所有输入以防止代码注入，通过速率限制来防御暴力攻击，强制使用 HTTPS 加密数据传输，使用 Helmet 设置安全 HTTP 标头，清理数据以避免注入攻击，以及实施强大的身份验证和授权机制。",
+  "mainPoints": [
+    {
+      "point": "安全存储敏感信息",
+      "explanation": "避免将数据库密码或 API 密钥等敏感数据直接存储在代码中，而是使用 .env 文件和 dotenv 包。"
+    },
+    {
+      "point": "输入验证，防止注入",
+      "explanation": "使用 Joi 或 Zod 等库定义 API 期望的数据类型，并在数据到达数据库之前阻止错误的数据。"
+    },
+    {
+      "point": "速率限制，防御暴力攻击",
+      "explanation": "使用 express-rate-limit 等中间件限制用户可以访问 API 的频率，例如，限制来自 IP 地址的 API 请求在 15 分钟内最多 100 次。"
+    },
+    {
+      "point": "Helmet 加强响应头",
+      "explanation": "通过设置合适的 HTTP 响应头，可以有效防御如 XSS 和点击劫持等多种 Web 攻击。"
+    }
+  ],
+  "keyQuotes": [
+    "安全不仅是功能，更是一种习惯。",
+    "防护越多，入侵越难。",
+    "HTTP 以明文传输，易被窃取。HTTPS 加密传输，安全必备。"
+  ],
+  "tags": [
+    "安全",
+    "Node.js",
+    "API",
+    "环境变量",
+    "HTTPS"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 869,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745597107000,
+  "publishDateStr": "2025-04-25",
+  "publishDateTimeStr": "2025-04-25 16:05:07"
+}

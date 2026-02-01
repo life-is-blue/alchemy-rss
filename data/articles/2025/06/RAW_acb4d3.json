@@ -1,0 +1,54 @@
+{
+  "id": "RAW_acb4d3",
+  "title": "Day 3/5：MiniMax Agent，最大的智慧是“靠谱”",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkzMTUxOTY1Mw==&mid=2247487361&idx=1&sn=b9554a19e42fbf7b4e99e6bf89d142b4",
+  "date": "2025-06-19 01:11:00",
+  "author": "MiniMax",
+  "siteName": "MiniMax 稀宇科技",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"weui-msg\">\n   <div class=\"weui-msg__icon-area\">\n    <i class=\"weui-icon-info-circle weui-icon_msg\"></i>\n   </div>\n   <div class=\"weui-msg__text-area pc-area\">\n    <h2 class=\"weui-msg__title\">环境异常</h2>\n    <p class=\"weui-msg__desc\">当前环境异常，完成验证后即可继续访问。</p>\n   </div>\n   <div class=\"weui-msg__opr-area\">\n    <p class=\"weui-btn-area\"><a class=\"weui-btn weui-btn_primary\" id=\"js_verify\">去验证</a></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "MiniMax 发布能完成长程复杂任务的通用 Agent，强调\"靠谱\"的设计理念并展示多样化应用。",
+  "oneSentenceSummary": "MiniMax 发布能完成长程复杂任务的通用 Agent，强调\"靠谱\"的设计理念并展示多样化应用。",
+  "summary": "文章介绍了 MiniMax 推出的通用智能体 MiniMax Agent，定位为一个能完成长程复杂任务、进行多步规划、拆解和执行子任务的智能体。该 Agent 已在 MiniMax 内部使用了近 60 天，超过 50%的员工日常使用，并展示了生成讨论材料、学习教程、前端动画等多样化应用案例。文章阐述了按照\"靠谱的人\"标准设计 Agent 的理念，体现在增强的编程能力、多模态理解与生成能力，以及集成常用工具的 MCP 扩展能力。作者提到当前实现使用了多个模型，存在成本问题，但正在努力优化。文章通过引用\"Talk is cheap， show me the code\"到\"Code is cheap，show me the requirement\"的转变，暗示了 Agent 在提升生产力方面的潜力，并提及 AI 对全球 GDP 增长的预测。",
+  "mainPoints": [
+    {
+      "point": "MiniMax Agent 被设计为能处理长程复杂任务的通用智能体",
+      "explanation": "该 Agent 具备多步规划、任务拆解和子任务执行能力，旨在解决传统 AI 难以完成的复杂、多环节工作流程。"
+    },
+    {
+      "point": "以\"靠谱\"为核心理念，Agent 在编程、多模态和 MCP 扩展方面增强能力",
+      "explanation": "Agent 被要求像靠谱的人一样，注重代码质量、全面测试、良好用户体验，并具备多模态处理和工具集成能力。"
+    },
+    {
+      "point": "MiniMax Agent 已在内部得到广泛应用并展现多样化潜力",
+      "explanation": "内部超过半数员工日常使用，成功应用于生成文档、教程、前端代码等不同场景，验证了其通用性和实用性。"
+    }
+  ],
+  "keyQuotes": [
+    "MiniMax Agent，一个能完成长程（Long Horizon）复杂任务的通用智能体，也就是能多步规划出专家级解决方案、能灵活拆解任务需求、并能执行多个子任务从而交付最终结果。",
+    "MiniMax Agent 在公司内部已经使用了近 60 天，逐渐成为内部超过 50%的同学日常使用的产品。",
+    "在研发过程中，我们按照\"靠谱的人\"的标准来设计和要求 Agent",
+    "Code is cheap，show me the requirement."
+  ],
+  "tags": [
+    "AI Agent",
+    "通用智能体",
+    "AI产品",
+    "长程任务",
+    "多模态AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 90,
+  "wordCount": 56,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_39cbd7",
+  "sourceName": "MiniMax 稀宇科技",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750295460000,
+  "publishDateStr": "2025-06-19",
+  "publishDateTimeStr": "2025-06-19 01:11:00"
+}

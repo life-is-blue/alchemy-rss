@@ -1,0 +1,63 @@
+{
+  "id": "RAW_2e3b9a",
+  "title": "MariaDB LTS 年度发布集成了向量搜索",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249612&idx=4&sn=fcac6bfd9115e6b809215e6da2fd74e4",
+  "date": "2025-06-30 04:01:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "\n \n \n  <section style=\"text-align: center;\" nodeleaf=\"\">\n   <br>\n  </section>\n  <section style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <section style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\">\n    <span leaf=\"\">作者 | Renato Losio </span>\n   </section>\n   <section style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\">\n    <span leaf=\"\">译者 | 刘雅梦 </span>\n   </section>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">MariaDB 最近发布了 MariaDB Community Server 11.8，作为 2025 年的年度长期支持（LTS）版本，现已普遍可用。新版本引入了集成的向量搜索功能，适用于 AI 驱动和相似性搜索应用程序，增强了 JSON 功能，并提供了用于数据历史和审计的时态表。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">新的向量数据类型允许更复杂的数据存储和检索，特别适用于机器学习和数据科学应用，在这些应用中数据的向量表示很常见。虽然在早期版本中已经添加了向量支持，如之前在 InfoQ 上报道的，这是第一个允许开发人员存储嵌入并与传统关系数据一起查询的 LTS 版本。MariaDB 基金会的首席执行官 Kaj Arnö 写道：</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">这无疑是 MariaDB 11.8 LTS 最显著的亮点：全面支持 MariaDB Vector(......) 向量搜索能力对于 RAG 和其他现代 AI 和机器学习应用至关重要，可以在大型数据集上进行相似性搜索。MariaDB Vector 现在以 LTS 形式得到全面支持，为你提供未来几年的稳定性和可预测性。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">MariaDB Vector 包括一个原生的向量数据类型，用于最近邻搜索的索引，用于计算向量相似度的函数（VEC_DISTANCE_EUCLIDEAN、VEC_DISTANCE_COSINE 和 VEC_DISTANCE），以及用于将二进制向量转换为其文本表示和返回的函数（VEC_FromText 和 VEC_ToText）。此外，该特性为 Intel（AVX2 和 AVX512）、ARM 和 IBM Power10 CPU 提供了 SIMD 硬件优化。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">新功能允许针对流行的用例在高维数据上进行相似性搜索，如语义搜索、推荐引擎和异常检测的用例。今年早些时候，数据库专家 Mark Callaghan 进行了基准测试，比较了 MariaDB、Qdrant 和 Postgres（pgvector）在大型数据集上的表现。他得出结论：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">如果你已经在运行 MariaDB 或 Postgres 了，那么我建议你也使用它们进行向量索引 (...…) 我有偏见。我对部署一个新的 DBMS 来支持仅一种数据类型（向量）持怀疑态度，除非你在生产环境中没有其他 DBMS，或者你的生产 DBMS 不支持向量索引。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Vettabase 的创始人 Federico Razzoli 在这一版本进行了深入的审查，他强调了一些他最喜欢的改进，包括并行转储、PARSEC 身份验证和新的 SQL 语法，以及遗漏的内容，如目录。关于向量搜索，他写道：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">根据 Mark Callaghan 的基准测试，MariaDB 向量比 pgvector 更快。但这里有一些注意事项。如果我们只关心性能，最大的问题是 MariaDB 显然决定永不使用 SQL 以外的语言来实现存储过程。这意味着嵌入过程必须发生在 MariaDB 之外，通常是在另一个服务器上，即使原始数据在 MariaDB 中。使用 PostgreSQL，你可以在 Postgres 内完成所有操作。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">向量搜索是 MariaDB 版本的主要功能，但不是唯一的功能：像其他开源关系数据库一样，MariaDB 现在已经将 Unicode 作为默认字符集，以使其完全兼容当今的多语言和全球应用，并将时间戳范围从 2038 年扩展到 2106 年。Arnö写道：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">像大多数开源项目一样，我们已经解决了著名的 2038 年问题。但与许多其他项目不同，MariaDB 不需要任何数据转换就可以实现了这一点——前提是你没有使用系统版本的表。这意味着在时间戳溢出时，现有数据保持不变，同时可以获得 80 年的缓期。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">该版本改进了对数据历史记录和审计的时态表的支持：维护数据修改的完整历史有助于时间点恢复场景、合规性和安全性。MariaDB plc 的产品经理 Ralf Gebhardt写道：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">时态表最初在 MariaDB 10.3 中引入，现在有了一些增强，它可以自动管理数据的历史记录，并简化了需要沿袭数据的应用程序的开发和维护。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">根据 文档，可以从 MariaDB 11.4（之前的 LTS）或任何旧版本升级到 MariaDB 11.8，回溯到 MariaDB Server 10.0 或更早的版本，包括 MySQL Server 的大多数版本。MariaDB 发布了另一篇文章，介绍如何使用 MariaDB Vector Store 框架构建 AI 应用程序。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">主要的云服务提供商尚未在他们的托管服务上支持最新的 GA 版本，AWS 目前只在 数据库预览环境中支持 11.8。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">MariaDB 11.8 在 GPLv2 许可下发布，可在 GitHub 上获得。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">https://www.infoq.com/news/2025/06/mariadb-vector-search/</span></span></p><p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a9333c0f-27bb-410a-f87b-97dbdf0eef00/public\" class=\"rich_pages wxw-img\" data-ratio=\"1.1515625\" data-type=\"gif\" data-w=\"640\" type=\"block\" data-imgfileid=\"503539379\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a9333c0f-27bb-410a-f87b-97dbdf0eef00/public\"></span></p>\n  </section>\n  <p style=\"display: none;\"><mp-style-type data-value=\"3\"></mp-style-type></p>\n \n",
+  "aiSummary": "MariaDB 11.8 LTS 作为 2025 年长期支持版本，引入向量搜索功能并增强 JSON 和时态表支持，适用于 AI 和数据科学应用。",
+  "oneSentenceSummary": "MariaDB 11.8 LTS 作为 2025 年长期支持版本，引入向量搜索功能并增强 JSON 和时态表支持，适用于 AI 和数据科学应用。",
+  "summary": "MariaDB Community Server 11.8 作为 2025 年的长期支持版本，引入了集成的向量搜索功能，适用于 AI 驱动和相似性搜索应用。新版本包括向量数据类型、相似度计算函数和针对 Intel、ARM 和 IBM Power10 CPU 的 SIMD 硬件优化，支持语义搜索、推荐引擎等高维数据搜索场景。此外，版本增强了 JSON 功能、时态表支持，将 Unicode 设为默认字符集，并解决了 2038 年时间戳问题。MariaDB Vector Store 框架支持开发者构建 AI 应用程序，但主要云服务商尚未全面支持该版本。基准测试显示 MariaDB 向量搜索性能优于 pgvector。",
+  "mainPoints": [
+    {
+      "point": "MariaDB 11.8 引入向量搜索功能，支持 AI 和数据科学应用",
+      "explanation": "新增向量数据类型、相似度计算函数和硬件优化，适用于语义搜索、推荐引擎等高维数据搜索场景，基准测试显示优于 pgvector。"
+    },
+    {
+      "point": "增强 JSON 功能和时态表支持，提升数据管理和审计能力",
+      "explanation": "改进的 JSON 功能和时态表支持简化了数据历史记录管理，适用于合规性和安全性需求。"
+    },
+    {
+      "point": "解决 2038 年时间戳问题并扩展 Unicode 支持",
+      "explanation": "无需数据转换即可解决时间戳溢出问题，将 Unicode 设为默认字符集以支持多语言全球应用。"
+    },
+    {
+      "point": "新增并行转储和 PARSEC 身份验证等性能优化",
+      "explanation": "这些改进提升了数据库管理效率和安全性，虽然存储过程仍需外部处理。"
+    },
+    {
+      "point": "MariaDB Vector Store 框架支持构建 AI 应用程序",
+      "explanation": "开发者可以利用新框架构建 AI 驱动的应用程序，尽管云服务商支持尚不全面。"
+    }
+  ],
+  "keyQuotes": [
+    "这无疑是 MariaDB 11.8 LTS 最显著的亮点：全面支持 MariaDB Vector(......) 向量搜索能力对于 RAG 和其他现代 AI 和机器学习应用至关重要，可以在大型数据集上进行相似性搜索。",
+    "如果你已经在运行 MariaDB 或 Postgres 了，那么我建议你也使用它们进行向量索引 (......) 我有偏见。我对部署一个新的 DBMS 来支持仅一种数据类型（向量）持怀疑态度，除非你在生产环境中没有其他 DBMS，或者你的生产 DBMS 不支持向量索引。",
+    "根据 Mark Callaghan 的基准测试，MariaDB 向量比 pgvector 更快。但这里有一些注意事项。如果我们只关心性能，最大的问题是 MariaDB 显然决定永不使用 SQL 以外的语言来实现存储过程。",
+    "像大多数开源项目一样，我们已经解决了著名的 2038 年问题。但与许多其他项目不同，MariaDB 不需要任何数据转换就可以实现了这一点------前提是你没有使用系统版本的表。",
+    "时态表最初在 MariaDB 10.3 中引入，现在有了一些增强，它可以自动管理数据的历史记录，并简化了需要沿袭数据的应用程序的开发和维护。"
+  ],
+  "tags": [
+    "数据库",
+    "MariaDB",
+    "向量搜索",
+    "AI应用",
+    "数据科学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1458,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751256060000,
+  "publishDateStr": "2025-06-30",
+  "publishDateTimeStr": "2025-06-30 04:01:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_6fb28988",
+  "title": "阿里开源全新图像模型 Qwen-Image-Layered，可实现 PS 级图层精准编辑生成",
+  "url": "https://www.qbitai.com/2025/12/363681.html",
+  "date": "2025-12-22 07:48:00",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"3\">12月22日，<strong>阿里开源全新图像生成模型Qwen-Image-Layered，首次在模型内实现PS级的图层理解与图像生成</strong>。</p>\n  <p data-track=\"4\">千问新模型采用自研创新架构，可将图片“拆解”成多个图层，就像个专业设计师用Photoshop分层作图修图，可实现几乎“零漂移”的AI图像精准编辑，彻底解决AI生图的一致性难题，加速大模型在专业设计领域的现实落地。</p>\n  <p data-track=\"5\">Qwen-Image-Layered打破了主流视觉大模型的“扁平式思维”，模型通过“分层”和“补全”建立起对现实世界更准确的“物理式理解”，让AI从平面的“看图说话”迈向真实的“空间重构”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20251223075652_b192761612a01dda68797dffd8fb693f.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">在当前的视觉大模型领域，图像一致性编辑始终是一个核心挑战。AI生图有创意但难编辑，主要是因为大模型对图片的理解是扁平的，是一堆像素点紧密耦合在一起，而不能像人一样感知出图中物体的远近、遮挡等物理关系。</p>\n  <p data-track=\"8\">因此，让大模型生图和编辑就像抽卡“开盲盒”：比如你想把画里的猫往左挪10厘米，但AI完全不知道猫左挪后空出来的背景会有什么，只能再重新生成一次，猫和背景全都变了样。</p>\n  <p data-track=\"15\">这种“牵一发而动全身”的随机性，让AI绘图在追求极致精准的商业广告设计、UI界面设计、影视后期处理等专业领域，始终只能作为一种参考，而无法真正取代专业工具。</p>\n  <p data-track=\"11\"><strong>Qwen-Image-Layered 的出现，意味着视觉大模型从“像素预测”转向“结构重组”。</strong></p>\n  <p data-track=\"12\">千问团队自研了一种全新的RGBA-VAE编码，在传统的RGB图像中引入代表透明度图层的“Alpha通道”，让模型有了图层的概念；同时新模型采用了创新的VLD-MMDiT架构，配合独特的“图层级3D位置编码”，让AI自动“脑补”被遮挡部分的背景纹理，实现对图层和空间的更深入理解和生成。</p>\n  <p data-track=\"14\">据了解，为训练这种能力，千问团队从海量的专业Photoshop（PSD）文件中提取真实图层逻辑，让AI从出生起就拥有专业设计师的“分层思维”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20251223075650_51f0fd0d4182d7266040d98499e7eb6c.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>Qwen-Image-Layered模型架构图</p>\n  <p>业内人士指出，千问新模型将为创意产业带来实质性变革。AI生图不再是死板一块，而成为一个活生生的、可无限调整的素材库；图片编辑也不再需要复杂精细的人工抠图，而是AI原生地实现了“内在可编辑性”，设计师、动画和影视制作人员可在保持背景或主体完全不变的前提下，对特定图层的构件进行位移、缩放或重绘，显著提升数字内容创作的生产效率。</p>\n  <p>据了解，Qwen-Image-Layered已在魔搭社区和HuggingFace开源，开发者和企业可免费下载商用。截至目前，阿里已开源近400个千问模型，全球下载量突破7亿次，衍生模型数超18万个，是全球第一的开源模型。通义大模型已服务超100万家客户，在中国企业级大模型调用市场中通义位居第一，是中国企业选择最多的大模型。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阿里开源了全新的 Qwen-Image-Layered 图像模型，首次实现 PS 级图层精准编辑生成，彻底解决 AI 生图一致性难题。",
+  "oneSentenceSummary": "阿里开源了全新的 Qwen-Image-Layered 图像模型，首次实现 PS 级图层精准编辑生成，彻底解决 AI 生图一致性难题。",
+  "summary": "文章介绍了阿里巴巴最新开源的图像模型 Qwen-Image-Layered，其核心创新在于实现了 PS（Photoshop）级别的图层理解与图像生成。该模型采用自研的创新架构，能够将图片“拆解”成多个图层，从而实现几乎“零漂移”的 AI 图像精准编辑，有效解决了 AI 生图长期存在的一致性难题。这一突破性进展意味着视觉大模型从“像素预测”转向“结构重组”，通过引入 RGBA-VAE 编码（一种在传统 RGB 图像中加入透明度通道的技术）和“图层级 3D 位置编码”等新架构，让 AI 对图层和空间有了更深入的理解，甚至能“脑补”被遮挡的背景纹理。文章指出，这一模型将革命性地提升创意产业的生产效率，开发者已可在魔搭社区和 HuggingFace 免费获取并商用。",
+  "mainPoints": [
+    {
+      "point": "Qwen-Image-Layered 首次在模型内实现了 PS 级的图层理解与图像生成。",
+      "explanation": "通过将图片“拆解”成多个图层，模型可进行精准编辑，有效解决 AI 生图一致性问题，实现“零漂移”的图像修改。"
+    },
+    {
+      "point": "模型采用自研创新架构，打破了传统视觉大模型的“扁平式思维”。",
+      "explanation": "引入 RGBA-VAE 编码（为图像增加透明度通道）和“图层级 3D 位置编码”等技术，让 AI 拥有图层概念，并能“脑补”被遮挡背景，实现深层空间理解。"
+    },
+    {
+      "point": "该模型拥有“内在可编辑性”，将大幅提升专业设计领域的效率。",
+      "explanation": "设计师可对特定图层进行位移、缩放或重绘，无需复杂抠图，在保持背景主体不变的前提下，显著提升数字内容创作效率。"
+    }
+  ],
+  "keyQuotes": [
+    "阿里开源全新图像生成模型 Qwen-Image-Layered，首次在模型内实现 PS 级的图层理解与图像生成。",
+    "Qwen-Image-Layered 打破了主流视觉大模型的“扁平式思维”，模型通过“分层”和“补全”建立起对现实世界更准确的“物理式理解”，让 AI 从平面的“看图说话”迈向真实的“空间重构”。",
+    "Qwen-Image-Layered 的出现，意味着视觉大模型从“像素预测”转向“结构重组”。"
+  ],
+  "tags": [
+    "图像生成",
+    "图层编辑",
+    "Qwen-Image-Layered",
+    "多模态AI",
+    "计算机视觉"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 92,
+  "wordCount": 1110,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766389680000,
+  "publishDateStr": "2025-12-22",
+  "publishDateTimeStr": "2025-12-22 07:48:00"
+}

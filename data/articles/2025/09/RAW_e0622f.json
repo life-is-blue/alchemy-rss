@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e0622f",
+  "title": "全新 MoE 架构！阿里开源 Qwen3-Next，训练成本直降 9 成 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-12-2",
+  "date": "2025-09-12 02:45:25",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-pm-slice=\"0 0 []\">训练、推理性价比创新高。</p>\n  </blockquote>\n  <p>大语言模型（LLM），正在进入 Next Level。</p>\n  <p>周五凌晨，阿里通义团队正式发布、开源了下一代基础模型架构 Qwen3-Next。总参数 80B 的模型仅激活 3B ，性能就可媲美千问 3 旗舰版 235B 模型，也超越了 Gemini-2.5-Flash-Thinking，实现了模型计算效率的重大突破。</p>\n  <section>\n   <img data-imgfileid=\"503506562\" data-ratio=\"0.7785310734463277\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250912030741_b60286\" data-type=\"png\" data-w=\"885\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/1cc1caac-90d0-401b-9a3c-fbe21e447e0a/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>新模型立即在 Qwen.ai 上线，并上传了 HuggingFace。</p>\n  <ul>\n   <li>\n    <p>新模型网页版：https://chat.qwen.ai/</p>\n   </li>\n   <li>\n    <p>HuggingFace：https://huggingface.co/collections/Qwen/qwen3-next-68c25fd6838e585db8eeea9d</p>\n   </li>\n   <li>\n    <p>Kaggle：https://www.kaggle.com/models/qwen-lm/qwen3-next-80b</p>\n   </li>\n  </ul>\n  <p>Qwen3-Next 针对大模型在上下文长度扩展（Context Length Scaling）和参数量扩展（Total Parameter Scaling）的未来趋势而设计。通义团队表示，其模型结构相较 4 月底推出的 Qwen3 的 MoE 模型新增了多种技术并进行了核心改进，包括混合注意力机制、高稀疏度 MoE 结构、一系列提升训练稳定性的优化，以及提升推理效率的多 token 预测（MTP）机制等。</p>\n  <p>模型结构示意图：</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250912030741_16ed1a\" data-ratio=\"1.0648148148148149\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503506563\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/db07b3fd-6b8d-4125-a3a3-d062ccacf7b6/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>通义团队介绍了新架构使用的一些机制。</p>\n  <ul>\n   <li>\n    <p><strong>混合架构：Gated DeltaNet + Gated Attention</strong></p>\n   </li>\n  </ul>\n  <p>线性注意力打破了标准注意力的二次复杂度，在处理长上下文时有着更高的效率。通义团队发现，单纯使用线性注意力或标准注意力均存在局限：前者在长序列建模上效率高但召回能力弱，后者计算开销大、推理不友好。</p>\n  <p>通过系统实验，人们发现 Gated DeltaNet 相比常用的滑动窗口注意力（Sliding Window Attention）和 Mamba2 有更强的上下文学习（in-context learning）能力，并在 3:1 的混合比例（即 75% 层使用 Gated DeltaNet，25% 层保留标准注意力）下能一致超过超越单一架构，实现性能与效率的双重优化。</p>\n  <p>在保留的标准注意力中，通义进一步引入多项增强设计：</p>\n  <p>（1）沿用先前工作中的输出门控机制，缓解注意力中的低秩问题；</p>\n  <p>（2）将单个注意力头维度从 128 扩展至 256；</p>\n  <p>（3）仅对注意力头前 25% 的位置维度添加旋转位置编码，提高长度外推效果。</p>\n  <ul>\n   <li>\n    <p><strong>极致稀疏 MoE：仅激活 3.7% 参数</strong></p>\n   </li>\n  </ul>\n  <p>Qwen3-Next 采用了高稀疏度的 Mixture-of-Experts (MoE) 架构，总参数量达 80B，每次推理仅激活约 3B 参数。实验表明，在使用全局负载均衡后，当激活专家固定时，持续增加专家总参数可带来训练 loss 的稳定下降。</p>\n  <p>相比 Qwen3 MoE 的 128 个总专家和 8 个路由专家，Qwen3-Next 扩展到了 512 总专家，10 路由专家与 1 共享专家的组合，在不牺牲效果的前提下最大化资源利用率。</p>\n  <ul>\n   <li>\n    <p><strong>训练稳定性友好设计</strong></p>\n   </li>\n  </ul>\n  <p>通义团队发现， 注意力输出门控机制能消除注意力池与极大激活等现象，保证模型各部分的数值稳定。Qwen3 采用了 QK-Norm，部分层的 norm weight 值会出现异常高的情况。为缓解这一现象，进一步提高模型的稳定性，通义在 Qwen3-Next 中采用了 Zero-Centered RMSNorm，并在此基础上对 norm weight 施加 weight decay，以避免权重无界增长。</p>\n  <p>通义还在初始化时归一化了 MoE router 的参数，确保每个 expert 在训练早期都能被无偏地选中，减小初始化对实验结果的扰动。</p>\n  <ul>\n   <li>\n    <p><strong>Multi-Token Prediction</strong></p>\n   </li>\n  </ul>\n  <p>Qwen3-Next 引入原生 Multi-Token Prediction (MTP) 机制，既得到了 Speculative Decoding 接受率较高的 MTP 模块，又提升了主干本身的综合性能。Qwen3-Next 还特别优化了 MTP 多步推理性能，通过训练推理一致的多步训练，进一步提高了实用场景下的 Speculative Decoding 接受率。</p>\n  <p>通义千问大模型负责人林俊旸在 X 上分享了新一代模型开发的细节。他表示团队已经在混合模型和线性注意力机制上进行了大约一年的实验。新的解决方案应该足够稳定可靠，能够应对超长上下文。</p>\n  <p>Gated DeltaNet 加混合是经过大量尝试和错误才实现的，而 Gated Attention 的实现就像是免费的午餐，可以获得额外好处。</p>\n  <section>\n   <img data-imgfileid=\"503506564\" data-ratio=\"0.36574074074074076\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250912030741_391d9d\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/cf261b80-015a-4d15-bc9d-a7ea97efb2f0/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>得益于创新的混合模型架构，Qwen3-Next 在推理效率方面表现出显著优势。与 Qwen3-32B 相比，Qwen3-Next-80B-A3B 在预填充（prefill）阶段展现出卓越的吞吐能力：在 4k tokens 的上下文长度下，吞吐量接近前者的七倍；当上下文长度超过 32k 时，吞吐提升更是达到十倍以上。</p>\n  <p>在解码（decode）阶段，该模型同样表现优异 —— 在 4k 上下文下实现近四倍的吞吐提升，而在超过 32k 的长上下文场景中，仍能保持十倍以上的吞吐优势。</p>\n  <section>\n   <img data-imgfileid=\"503506565\" data-ratio=\"0.6\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250912030741_ef254c\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/e29d9d3f-9495-4bc5-bac1-30cd48147667/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250912030741_3cbab3\" data-ratio=\"0.6\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503506566\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/358f1487-1718-4bd1-b7d4-8d705de93458/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>基于 Qwen3-Next 的模型结构，通义团队训练了 Qwen3-Next-80B-A3B-Base 模型，该模型拥有 800 亿参数（仅激活 30 亿参数），实现了与 Qwen3-32B dense 模型相近甚至略好的性能，同时训练成本（GPU hours) 仅为 Qwen3-32B 的十分之一不到，在 32k 以上的上下文下的推理吞吐则是 Qwen3-32B 的十倍以上，实现了极致的训练和推理性价比。</p>\n  <p>通义团队开源了 Qwen3-Next-80B-A3B 的指令（Insctruct）模型和推理（Thinking）两款模型。新模型解决了混合注意力机制 + 高稀疏度 MoE 架构在强化学习训练中长期存在的稳定性与效率难题，实现了 RL 训练效率与最终效果的双重提升。</p>\n  <p>在编程（LiveCodeBench v6）、人类偏好对齐 (Arena-Hard v2) 以及综合性能力 (LiveBench) 评测中，Qwen3-Next-Instruct 表现甚至超过了千问的开源旗舰模型，并在包含通用知识（SuperGPQA）、数学推理（AIME25）等核心测评中全面超越了 SOTA 密集模型 Qwen3-32B；Qwen3-Next-Thinking 则全面超越了 Gemini2.5-Flash-Thinking，在数学推理 AIME25 评测中获得了 87.8 分。而达到如此高水平的模型性能，仅需激活 Qwen3-Next 总参数 80B 中的 3B。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250912030741_af7bcb\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503506567\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/fdae8f5d-2225-4998-94a0-da6685bb6763/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250912030741_861e39\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503506568\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/b9d01a71-ff27-42fa-9f39-7bf057b71701/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>目前，Qwen3-Next 模型也已经在很多第三方平台中上线。</p>\n  <p>使用新模型在 anycoder 中的 vibe coding 示例：</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250912030741_75fcff\" data-ratio=\"0.612037037037037\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503506569\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/77ef272b-580a-409b-ae5c-fdf54a67750e/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n </body>\n</html>",
+  "aiSummary": "阿里开源 Qwen3-Next，采用全新 MoE 架构和混合注意力机制，显著降低训练成本，提升推理效率，性能媲美旗舰模型。",
+  "oneSentenceSummary": "阿里开源 Qwen3-Next，采用全新 MoE 架构和混合注意力机制，显著降低训练成本，提升推理效率，性能媲美旗舰模型。",
+  "summary": "文章详细介绍了阿里通义团队开源的下一代大语言模型架构 Qwen3-Next。该模型总参数 80B，但仅激活 3B 参数，实现了训练成本直降 9 成、推理吞吐提升 10 倍以上的突破。其核心创新包括：结合 Gated DeltaNet 和 Gated Attention 的混合注意力机制，旨在优化长上下文处理；采用 512 个专家、10 个路由专家和 1 个共享专家的极致稀疏 MoE 结构，仅激活 3.7%参数；多项训练稳定性友好设计（如 Zero-Centered RMSNorm）；以及原生 Multi-Token Prediction（MTP）机制以提升推理效率。Qwen3-Next-80B-A3B 模型在性能上媲美 Qwen3 旗舰版，并在多项评测中超越 SOTA 密集模型，展示了极高的训练和推理性价比。模型已开源并上线 HuggingFace 等平台，为大模型未来趋势（上下文长度和参数量扩展）提供了高效解决方案。",
+  "mainPoints": [
+    {
+      "point": "Qwen3-Next 采用混合注意力机制和高稀疏度 MoE 架构实现计算效率突破",
+      "explanation": "新模型结合 Gated DeltaNet 和 Gated Attention，优化长上下文处理能力；MoE 结构仅激活 3.7%参数，大幅降低训练和推理成本，同时保持高性能。"
+    },
+    {
+      "point": "模型通过多项技术创新显著提升训练稳定性与推理性能",
+      "explanation": "引入 Zero-Centered RMSNorm、MoE router 参数归一化等确保训练稳定；原生 MTP 机制优化多步推理，提升 Speculative Decoding 接受率和实用场景性能。"
+    },
+    {
+      "point": "Qwen3-Next 在多项评测中展现 SOTA 性能，且训练/推理性价比极高",
+      "explanation": "80B 总参数仅激活 3B，训练成本直降 9 成，推理吞吐提升 10 倍以上，性能超越 Qwen3-32B 及 Gemini2.5-Flash-Thinking，具备强大竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "总参数 80B 的模型仅激活 3B ，性能就可媲美千问 3 旗舰版 235B 模型，也超越了 Gemini-2.5-Flash-Thinking，实现了模型计算效率的重大突破。",
+    "Qwen3-Next 针对大模型在上下文长度扩展（Context Length Scaling）和参数量扩展（Total Parameter Scaling）的未来趋势而设计。",
+    "通过系统实验，人们发现 Gated DeltaNet 相比常用的滑动窗口注意力（Sliding Window Attention）和 Mamba2 有更强的上下文学习（in-context learning）能力，并在 3:1 的混合比例（即 75% 层使用 Gated DeltaNet，25% 层保留标准注意力）下能一致超过超越单一架构，实现性能与效率的双重优化。",
+    "相比 Qwen3 MoE 的 128 个总专家和 8 个路由专家，Qwen3-Next 扩展到了 512 总专家，10 路由专家与 1 共享专家的组合，在不牺牲效果的前提下最大化资源利用率。",
+    "基于 Qwen3-Next 的模型结构，通义团队训练了 Qwen3-Next-80B-A3B-Base 模型，该模型拥有 800 亿参数（仅激活 30 亿参数），实现了与 Qwen3-32B dense 模型相近甚至略好的性能，同时训练成本（GPU hours) 仅为 Qwen3-32B 的十分之一不到，在 32k 以上的上下文下的推理吞吐则是 Qwen3-32B 的十倍以上，实现了极致的训练和推理性价比。"
+  ],
+  "tags": [
+    "大语言模型",
+    "MoE架构",
+    "混合注意力机制",
+    "长上下文",
+    "模型训练优化"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 93,
+  "wordCount": 1980,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757645125000,
+  "publishDateStr": "2025-09-12",
+  "publishDateTimeStr": "2025-09-12 02:45:25"
+}

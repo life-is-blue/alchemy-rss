@@ -1,0 +1,59 @@
+{
+  "id": "RAW_86395c",
+  "title": "超越 DeepSeek-R1，数学形式化准确率飙升至 84% | 字节&南大开源",
+  "url": "https://www.qbitai.com/2025/07/315838.html",
+  "date": "2025-07-31 00:21:32",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"105\">CriticLean 团队 投稿<br class=\"sysbr\">\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"43\">当人工智能已经能下围棋、写代码，如何让机器理解并证明数学定理，仍是横亘在科研界的重大难题。</p>\n  <p data-track=\"44\"><strong>字节跳动Seed团队与南京大学</strong>联合发布<strong>CriticLean</strong>框架，一举将<strong>数学自然语言到Lean 4代码的形式化准确率从38%提升至84%。</strong></p>\n  <p data-track=\"45\">该框架创新性地将评估模型置于核心位置。通过强化学习训练的CriticLeanGPT模型，能像数学专家一样精准判断形式化代码是否贴合原始语义，配合迭代优化机制，让生成的定理证明既符合语法规范，又忠实于数学逻辑。</p>\n  <p data-track=\"46\">⽬前论⽂和数据代码仓库均已对外公开，欢迎开源使用。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cee5d24d-48d9-4311-33fd-99df75ccba00/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cee5d24d-48d9-4311-33fd-99df75ccba00/public\">\n  </div>\n  <p data-track=\"48\">将自然语言描述的数学命题转化为机器可验证的形式化代码（如Lean 4定理），是自动化定理证明领域的基础性难题，其核心挑战不仅在于语法层面的准确转换，更在于对数学语义的深度理解与忠实还原。</p>\n  <p data-track=\"49\">尽管现有研究在生成模型与编译有效性上取得一定进展，但在复杂问题的语义对齐上仍存在显著瓶颈，具体体现在以下三方面：</p>\n  <ul>\n   <li data-track=\"50\"><strong>语义鸿沟：</strong></li>\n   <li data-track=\"51\">自然语言数学命题的隐含条件等难精准映射为形式逻辑，易出现前提翻译偏差等问题，过往方法因缺语义一致性校验，导致大量逻辑错误的形式化结果。</li>\n   <li data-track=\"52\"><strong>评价缺位：</strong></li>\n   <li data-track=\"53\">对形式化结果的评价依赖编译检查或 LLM 简单判断，存在错误类型覆盖不全、评价可靠性不足的问题，难以识别逻辑矛盾等。</li>\n   <li data-track=\"54\"><strong>数据瓶颈：</strong></li>\n   <li data-track=\"55\">现有数学形式化数据集规模和多样性不足、难度分布单一、语义校验缺失，制约了模型应对复杂数学命题的能力。</li>\n  </ul>\n  <p data-track=\"57\">上述挑战的核心在于：形式化流程中“评价”与“生成”的割裂。</p>\n  <p data-track=\"58\">CriticLean框架将引入强化学习的 Critic 模型，通过训练专门的语义评价模型（CriticLeanGPT）、结合 Lean 4 编译器反馈进行迭代生成。系统性解决语义对齐、评价可靠性与数据质量问题，为数学自动化形式化提供了全新范式。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37ef824b-e2ea-4f06-da00-961319359900/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37ef824b-e2ea-4f06-da00-961319359900/public\">\n  </div>\n  <p data-track=\"59\">图1：CriticLean框架通过编译器与评估器的双重反馈，实现数学形式化的迭代优化</p>\n  <p data-track=\"61\">团队基于Qwen2.5和Qwen3系列模型，通过两步训练打造专业评估器：</p>\n  <ul>\n   <li data-track=\"62\"><strong>有监督微调（SFT）</strong></li>\n   <li data-track=\"63\">：在4.8万条包含：数学、代码以及<strong>数学语句-形式化代码对一致性相关的Critic数据</strong>CriticLeanInstruct数据集上训练，增强其针对语义判断的评估能力。</li>\n   <li data-track=\"64\"><strong>强化学习优化（RL）</strong></li>\n   <li data-track=\"65\">：采用GRPO算法，以“判断是否准确”和“输出格式是否规范”作为奖励信号，让模型学会在评估中迭代提升。</li>\n  </ul>\n  <p data-track=\"66\">该模型能识别12类常见错误，包括类型错误（占比24.9%）、数学表示错误（23.8%）等，能够发现“代码编译通过但逻辑偏离原题”的隐性问题。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/280375e6-90b1-4bef-7e8f-6e9af04e2f00/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/280375e6-90b1-4bef-7e8f-6e9af04e2f00/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\">△图2：不同类型错误的分布</p>\n  <p data-track=\"69\"><strong>CriticLeanBench</strong>是用于评估模型在数学形式化任务中关键推理能力的基准测试，旨在全面衡量模型将自然语言数学陈述转化为经形式验证的定理声明等方面的表现.</p>\n  <p data-track=\"70\">其构建和实现过程如下：</p>\n  <p data-track=\"71\">CriticLeanBench 在数据收集阶段，从多个数据来源选取数学陈述及对应的Lean 4 陈述，提交Lean 4陈述到编译器。1）对于编译失败的语句，随机采样保留编译器反馈信息。2）对于编译成功的部分，通过使用 DeepSeek R1 结合专家校验的方式保留正确和错误的样本（错误的样本保留错误信息）。</p>\n  <ul>\n   <li data-track=\"72\"><strong>数据来源多样：</strong></li>\n   <li data-track=\"73\">数学陈述选取了Omni-MATH、AIME、U-MATH等多个数据源，这些数据源涵盖了不同难度层次和数学领域的问题。有助于更全面准确地评估模型在不同数学内容上的表现。</li>\n   <li data-track=\"74\"><strong>覆盖多种错误类型：</strong></li>\n   <li data-track=\"75\">CriticLeanBench 覆盖语法错误、语义错误、逻辑错误等多种问题，全面考察模型能力。</li>\n   <li data-track=\"76\"><strong>确保评估可靠有效：</strong></li>\n   <li data-track=\"77\">通过专家审查和大模型验证相结合的方式来保证评估基准的可靠性和有效性。在不同类别中选取具有代表性的样本，确保涵盖各种错误类型，从而使评估结果更可靠。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43fc6436-8145-4b8a-9beb-cacff73da100/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43fc6436-8145-4b8a-9beb-cacff73da100/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"78\">△图3: CriticLeanBench 构建的概览</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/243d3cd2-2d8d-48b6-2e6e-e9a267823c00/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/243d3cd2-2d8d-48b6-2e6e-e9a267823c00/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"79\">△表1：CriticLeanBench 数据集统计信息与各类代码基准数据集的对比</p>\n  <p data-track=\"80\">在包含500组测试样本的CriticLeanBench基准中，CriticLeanGPT的准确率达到87%，远超GPT-4o（67.8%）和Claude 3.5（74.2%），甚至超过DeepSeek-R1（84%）的表现。</p>\n  <ul>\n   <li data-track=\"81\"><strong>核心指标：</strong></li>\n   <li data-track=\"82\">Qwen3-32B-RL版本准确率达87%，true negative rate（正确识别错误样本）达85.6%，远超GPT-4o的40.0%。</li>\n   <li data-track=\"83\"><strong>对比优势：</strong></li>\n   <li data-track=\"84\">在相同模型规模下，经CriticLean训练的Qwen2.5-32B模型准确率（78.6%）较基础版（73.0%）提升5.6%，且对错误样本的识别能力提升明显。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1453c723-5be8-4047-ca26-a4670c63a900/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1453c723-5be8-4047-ca26-a4670c63a900/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"85\">△表2：在 CriticLeanBench 上的性能表现</p>\n  <p data-track=\"86\">模型大小的Scaling分析表明，模型性能随规模提升稳步增强。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c9367235-4351-4fb5-75a0-8891d2f5e500/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c9367235-4351-4fb5-75a0-8891d2f5e500/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"87\">△图4: 大语言模型在 CriticLeanBench 上的扩展性分析(ˆ 表示闭源的大语言模型)</p>\n  <p data-track=\"89\">依托CriticLean框架，团队构建了目前规模最大、质量最高的数学形式化数据集之一：</p>\n  <ul>\n   <li data-track=\"90\"><strong>规模与多样性：</strong></li>\n   <li data-track=\"91\">包含285,957条样本，覆盖从高中奥数到大学数学的16个领域，其中高难度子集（Diamond）含36,033条问题。</li>\n   <li data-track=\"92\"><strong>质量保障：</strong></li>\n   <li data-track=\"93\">每条样本均通过编译器语法检查与CriticLeanGPT语义验证，人工抽检准确率达84%以上。</li>\n   <li data-track=\"94\"><strong>结构优势：</strong></li>\n   <li data-track=\"95\">相比LeanWorkbook，其难度分布更均衡（多峰分布），领域覆盖更全面（如解析几何样本量提升300%）。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/19ade65d-1062-434e-9164-f103333b3400/public\" alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/19ade65d-1062-434e-9164-f103333b3400/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"96\">△表3：FineLeanCorpus 的不同来源及数据集统计信息</p>\n  <p data-track=\"97\">与高度偏斜的 Lean-Workbook 相比，FineLeanCorpus 提供了更透明的批判过程、更高比例的顶级问题，以及更加平衡和多样化的主题分布</p>\n  <div class=\"pgc-img\">\n   <img alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c835f68e-0017-4e49-d197-aa993852e200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c835f68e-0017-4e49-d197-aa993852e200/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"98\">△表4：数据集统计信息的对比</p>\n  <p data-track=\"99\">与高度偏斜的 Lean-Workbook 相比，FineLeanCorpus 提供了更透明的批判过程、更高比例的顶级问题，以及更加平衡和多样化的主题分布</p>\n  <div class=\"pgc-img\">\n   <img alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a9f21a82-f87e-440f-fd60-e5e2e5d1d900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a9f21a82-f87e-440f-fd60-e5e2e5d1d900/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"100\">△图5：数据集统计信息的对比()</p>\n  <p data-track=\"102\">将该框架应用于自动形式化流程，配合Kimina-Autoformalizer-7B生成器，准确率从38%（单轮生成）提升至84%（多轮迭代优化），其中语义评估环节贡献了30个百分点的提升。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"超越DeepSeek-R1，数学形式化准确率飙升至84% | 字节&amp;南大开源\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d4dcd632-8a84-45a0-d565-9a748ae97d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d4dcd632-8a84-45a0-d565-9a748ae97d00/public\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"103\">△表5：自动化形式化性能的人类评估准确率结果</p>\n  <p data-track=\"104\">论文链接：https://arxiv.org/pdf/2507.06181<br>\n    项目链接：https://github.com/multimodal-art-projection/CriticLean</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "字节跳动与南京大学联合发布 CriticLean 框架，通过引入强化学习评估模型，将数学自然语言到 Lean 4 代码的形式化准确率从 38%大幅提升至 84%，并开源了相关模型和数据集。",
+  "oneSentenceSummary": "字节跳动与南京大学联合发布 CriticLean 框架，通过引入强化学习评估模型，将数学自然语言到 Lean 4 代码的形式化准确率从 38%大幅提升至 84%，并开源了相关模型和数据集。",
+  "summary": "文章详细介绍了字节跳动 Seed 团队与南京大学联合开发的 CriticLean 框架，旨在解决数学自然语言到形式化代码（如 Lean 4）转换中的语义鸿沟、评价缺失和数据瓶颈问题。该框架创新性地将强化学习训练的评估模型 CriticLeanGPT 置于核心，使其能精准判断形式化代码与原始语义的一致性，并通过编译器反馈实现迭代优化。团队还构建了 CriticLeanBench 基准测试和 FineLeanCorpus 数据集，前者用于全面评估模型推理能力，后者是目前规模最大、质量最高的数学形式化数据集之一。实验结果显示，CriticLean 框架将自动形式化准确率从 38%提升至 84%，并在 CriticLeanBench 上超越了 GPT-4o 和 DeepSeek-R1 等主流模型，展现了其在自动化定理证明领域的显著突破和应用潜力。",
+  "mainPoints": [
+    {
+      "point": "CriticLean 框架创新性地引入评估模型解决形式化难题",
+      "explanation": "通过将强化学习训练的 Critic 模型置于核心，弥补了传统“生成”与“评价”割裂的缺陷，显著提升了数学语义理解和形式化代码的准确性。"
+    },
+    {
+      "point": "CriticLeanGPT 模型能精准识别多种形式化错误",
+      "explanation": "该模型通过监督微调和强化学习优化，能够识别 12 类常见错误，特别是编译通过但逻辑偏离原题的隐性问题，确保了形式化结果的语义准确性。"
+    },
+    {
+      "point": "构建了高质量的评估基准和大规模数据集",
+      "explanation": "CriticLeanBench 和 FineLeanCorpus 的发布，为数学形式化领域提供了多样化、高覆盖、高可靠性的评估工具和训练资源，推动了领域发展。"
+    },
+    {
+      "point": "框架显著提升数学形式化准确率至 84%",
+      "explanation": "通过多轮迭代优化，CriticLean 框架将自然语言到 Lean 4 代码的形式化准确率从 38%提升至 84%，并在多个基准测试中超越了现有顶级模型。"
+    }
+  ],
+  "keyQuotes": [
+    "CriticLean 框架，一举将数学自然语言到 Lean 4 代码的形式化准确率从 38%提升至 84%。",
+    "CriticLean 框架将引入强化学习的 Critic 模型，通过训练专门的语义评价模型（CriticLeanGPT）、结合 Lean 4 编译器反馈进行迭代生成。",
+    "CriticLeanBench 是用于评估模型在数学形式化任务中关键推理能力的基准测试，旨在全面衡量模型将自然语言数学陈述转化为经形式验证的定理声明等方面的表现。",
+    "在包含 500 组测试样本的 CriticLeanBench 基准中，CriticLeanGPT 的准确率达到 87%，远超 GPT-4o（67.8%）和 Claude 3.5（74.2%），甚至超过 DeepSeek-R1（84%）的表现。",
+    "依托 CriticLean 框架，团队构建了目前规模最大、质量最高的数学形式化数据集之一：FineLeanCorpus。"
+  ],
+  "tags": [
+    "数学形式化",
+    "Lean 4",
+    "强化学习",
+    "大语言模型",
+    "自动化定理证明"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2472,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753921292000,
+  "publishDateStr": "2025-07-31",
+  "publishDateTimeStr": "2025-07-31 00:21:32"
+}

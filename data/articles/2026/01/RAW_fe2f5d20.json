@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fe2f5d20",
+  "title": "英伟达发布了跨 AI、机器人和自动驾驶的开放模型、数据集和工具",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=4&sn=4be0052c6198c797b7682e98e470324b",
+  "date": "2026-01-13 00:46:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:14px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;text-align:center;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 作者 | Robert Krzaczyński </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 译者 | 刘雅梦 </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 策划 | 丁晓昀 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">英伟达（NVIDIA）发布&nbsp;了一套涵盖语言、智能体系统、机器人技术、自动驾驶和生物医学研究的开放模型、数据集和开发工具。此次更新扩展了多个现有的 NVIDIA 模型家族，并通过 GitHub、Hugging Face 和 NVIDIA 的开发者平台提供了相应的训练数据和参考实现。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在代理式 AI 领域，NVIDIA 扩展了 Nemotron 模型家族，为语音识别、检索增强生成和安全提供了新的组件。Nemotron Speech 包括针对低延迟、实时用例优化的自动语音识别模型。Nemotron RAG 引入了用于多模态文档搜索和检索流程的嵌入和重排视觉语言模型。Nemotron Safety 增加了用于内容过滤和敏感或个人身份信息检测的更新模型。NVIDIA 还发布了用于选定 Nemotron 模型的数据集和训练代码，包括在公共基准上评估的嵌入模型。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">对于机器人技术和物理 AI，NVIDIA 引入了新的 Cosmos 世界基础模型，这些模型支持在真实环境中的感知、推理和合成数据生成。Cosmos Reason 2 是一个多模态推理模型，旨在增强智能体在物理环境中操作的场景理解。Cosmos Transfer 2.5 和 Cosmos Predict 2.5 专注于在不同环境和条件下生成合成视频数据，支持仿真和数据增强工作流程。基于 Cosmos，NVIDIA 发布了 Isaac GR00T N1.6，这是一个用于人形机器人的开放视觉 - 语言 - 动作模型，支持全身控制并将视觉感知与动作规划集成。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">公告的一个组成部分是 NVIDIA Alpamayo，一个用于基于推理的自动驾驶的新开放模型家族。Alpamayo 结合了感知、规划和可解释性，采用视觉 - 语言 - 动作架构，并与仿真工具和大规模驾驶数据集相匹配。NVIDIA 还引入了 AlpaSim，这是一个用于自动驾驶汽车模型闭环评估的开源仿真框架。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">据 NVIDIA 汽车部门负责人吴信洲&nbsp;表示，Alpamayo 和相关工具反映了跨研究、模拟、数据工程、安全和集成团队多年的开发努力。吴指出，这项工作涉及广泛的道路测试、使用 Cosmos 等平台进行持续的大规模模拟，以及与包括梅赛德斯 - 奔驰在内的汽车合作伙伴的紧密合作，计划在即将推出的量产车辆中进行初步部署。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">医疗保健和生命科学更新通过新的 NVIDIA Clara 模型提供。这些包括用于原子级蛋白质设计的 La-Proteina，用于合成感知药物设计的 ReaSyn v2，用于早期安全和相互作用预测的 KERMT，以及用于 RNA 结构建模的 RNAPro。NVIDIA 还发布了一个包含 45.5 万个合成蛋白质结构的数据集，以支持该领域的训练和评估。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">所有模型和数据集均在开放许可下发布，可通过 GitHub 和 Hugging Face 访问。NVIDIA 表示，许多模型还被打包为 NIM 微服务，以便在从本地推理环境到云基础设施的 NVIDIA 加速系统上部署。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><strong style=\"font-size: 16px;font-weight: bold;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://www.infoq.com/news/2026/01/nvidia-open-models/\" target=\"_blank\">https://www.infoq.com/news/2026/01/nvidia-open-models/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "英伟达发布了一系列跨语言、智能体、机器人、自动驾驶和生物医学领域的开放 AI 模型、数据集和开发工具，旨在推动多行业的 AI 应用与创新。",
+  "oneSentenceSummary": "英伟达发布了一系列跨语言、智能体、机器人、自动驾驶和生物医学领域的开放 AI 模型、数据集和开发工具，旨在推动多行业的 AI 应用与创新。",
+  "summary": "英伟达发布了一套全面的开放模型、数据集和开发工具，涵盖了语言、智能体系统、机器人技术、自动驾驶和生物医学研究等多个前沿领域。主要更新包括：在代理式 AI 领域，扩展了 Nemotron 模型家族，新增了 Nemotron Speech（语音识别）、Nemotron RAG（多模态文档检索）和 Nemotron Safety（内容过滤）组件，并发布了相关数据集和训练代码。在机器人技术和物理 AI 方面，引入了 Cosmos 世界基础模型，支持感知、推理和合成数据生成，并发布了用于人形机器人的 Isaac GR00T N1.6 视觉-语言-动作模型。针对自动驾驶，发布了 Alpamayo 开放模型家族以及开源仿真框架 AlpaSim。同时，医疗保健和生命科学领域也通过新的 NVIDIA Clara 模型得到了更新。所有模型和数据集均在开放许可下发布，可通过 GitHub、Hugging Face 和 NIM 微服务获得。",
+  "mainPoints": [
+    {
+      "point": "英伟达致力于通过开放模型和工具推动多领域的 AI 发展。",
+      "explanation": "此次发布涵盖了从语言 AI 到生物医学研究的广泛应用，提供开放许可的模型、数据集和开发工具，降低了 AI 技术在各行业落地的门槛。"
+    },
+    {
+      "point": "AI 代理系统（Agent System）是英伟达本次 AI 发展的重要方向。",
+      "explanation": "Nemotron 模型家族的扩展表明英伟达在语音识别、多模态检索增强生成和内容安全过滤等 AI 代理核心能力的持续投入和创新。"
+    },
+    {
+      "point": "机器人和自动驾驶领域的物理 AI 是英伟达的重点布局。",
+      "explanation": "Cosmos 世界基础模型、Isaac GR00T N1.6 和 Alpamayo 模型家族的发布，预示着英伟达在构建能够理解和操作物理世界的 AI 系统方面的雄心。"
+    },
+    {
+      "point": "英伟达为医疗健康和生命科学领域提供了专业的 AI 支持。",
+      "explanation": "NVIDIA Clara 模型家族的更新，包括蛋白质设计、药物设计和 RNA 结构建模工具，展示了 AI 在加速生物医学研究和开发方面的巨大潜力。"
+    }
+  ],
+  "keyQuotes": [
+    "英伟达（NVIDIA）发布了一套涵盖语言、智能体系统、机器人技术、自动驾驶和生物医学研究的开放模型、数据集和开发工具。",
+    "NVIDIA 扩展了 Nemotron 模型家族，为语音识别、检索增强生成和安全提供了新的组件。",
+    "NVIDIA 引入了新的 Cosmos 世界基础模型，这些模型支持在真实环境中的感知、推理和合成数据生成。",
+    "NVIDIA Alpamayo，一个用于基于推理的自动驾驶的新开放模型家族。",
+    "所有模型和数据集均在开放许可下发布，可通过 GitHub 和 Hugging Face 访问。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1009,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768265160000,
+  "publishDateStr": "01-13",
+  "publishDateTimeStr": "2026-01-13 00:46:00"
+}

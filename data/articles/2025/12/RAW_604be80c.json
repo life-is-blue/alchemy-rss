@@ -1,0 +1,53 @@
+{
+  "id": "RAW_604be80c",
+  "title": "JustHTML：一场生动的“氛围工程”实践",
+  "url": "https://simonwillison.net/2025/Dec/14/justhtml/#atom-everything",
+  "date": "2025-12-14 15:59:23",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2025/Dec/14/justhtml/\">\n    <p class=\"mobile-date\"><span style=\"background-color: inherit; font-size: 1rem;\">I recently came across </span><a href=\"https://github.com/EmilStenstrom/justhtml\" style=\"background-color: inherit; font-size: 1rem;\">JustHTML</a><span style=\"background-color: inherit; font-size: 1rem;\">, a new Python library for parsing HTML released by Emil Stenström. It’s a very interesting piece of software, both as a useful library and as a case study in sophisticated AI-assisted programming.</span></p>\n    <h4 id=\"first-impressions-of-justhtml\">First impressions of JustHTML</h4>\n    <p>I didn’t initially know that JustHTML had been written with AI assistance at all. The README caught my eye due to some attractive characteristics:</p>\n    <ul>\n     <li>It’s pure Python. I like libraries that are pure Python (no C extensions or similar) because it makes them easy to use in less conventional Python environments, including Pyodide.</li>\n     <li>\"Passes all 9,200+ tests in the official <a href=\"https://github.com/html5lib/html5lib-tests\">html5lib-tests</a> suite (used by browser vendors)\"—this instantly caught my attention! HTML5 is a big, complicated but meticulously written specification.</li>\n     <li>100% test coverage. That’s not something you see every day.</li>\n     <li>CSS selector queries as a feature. I built a Python library for this <a href=\"https://github.com/simonw/soupselect\">many years ago</a> and I’m always interested in seeing new implementations of that pattern.</li>\n     <li>html5lib has been <a href=\"https://github.com/mozilla/bleach/issues/698\">inconsistently maintained</a> over the last few years, leaving me interested in potential alternatives.</li>\n     <li>It’s only 3,000 lines of implementation code (and another ~11,000 of tests.)</li>\n    </ul>\n    <p>I was out and about without a laptop so I decided to put JustHTML through its paces on my phone. I <a href=\"https://github.com/simonw/tools/pull/156#issue-3726212220\">prompted Claude Code for web</a> on my phone and had it build <a href=\"https://tools.simonwillison.net/justhtml\">this Pyodide-powered HTML tool</a> for trying it out:</p>\n    <p style=\"text-align: center; margin-top: 1em\"><img src=\"https://image.jido.dev/20251215003554_justhtml.jpeg\" style=\"width:80%;\" alt=\"Screenshot of a web app interface titled &quot;Playground Mode&quot; with buttons labeled &quot;CSS Selector Query&quot; (purple, selected), &quot;Pretty Print HTML&quot;, &quot;Tree Structure&quot;, &quot;Stream Events&quot;, &quot;Extract Text&quot;, and &quot;To Markdown&quot; (all gray). Below is a text field labeled &quot;CSS Selector:&quot; containing &quot;p&quot; and a green &quot;Run Query&quot; button. An &quot;Output&quot; section with dark background shows 3 matches in a green badge and displays HTML code\"></p>\n    <p>This was enough for me to convince myself that the core functionality worked as advertised. It’s a neat piece of code!</p>\n    <h4 id=\"turns-out-it-was-almost-all-built-by-llms\">Turns out it was almost all built by LLMs</h4>\n    <p>At this point I went looking for some more background information on the library and found Emil’s blog entry about it: <a href=\"https://friendlybit.com/python/writing-justhtml-with-coding-agents/\">How I wrote JustHTML using coding agents</a>:</p>\n    <blockquote>\n     <p>Writing a full HTML5 parser is not a short one-shot problem. I have been working on this project for a couple of months on off-hours.</p>\n     <p>Tooling: I used plain VS Code with Github Copilot in Agent mode. I enabled automatic approval of all commands, and then added a blacklist of commands that I always wanted to approve manually. I wrote an <a href=\"https://github.com/EmilStenstrom/justhtml/blob/main/.github/copilot-instructions.md\">agent instruction</a> that told it to keep working, and don’t stop to ask questions. Worked well!</p>\n    </blockquote>\n    <p>Emil used several different models—an advantage of working in VS Code Agent mode rather than a provider-locked coding agent like Claude Code or Codex CLI. Claude Sonnet 3.7, Gemini 3 Pro and Claude Opus all get a mention.</p>\n    <h4 id=\"vibe-engineering-not-vibe-coding\">Vibe engineering, not vibe coding</h4>\n    <p>What’s most interesting about Emil’s 17 step account covering those several months of work is how much software engineering was involved, independent of typing out the actual code.</p>\n    <p>I wrote about <a href=\"https://simonwillison.net/2025/Oct/7/vibe-engineering/\">vibe engineering</a> a while ago as an alternative to vibe coding.</p>\n    <p>Vibe coding is when you have an LLM knock out code without any semblance of code review—great for prototypes and toy projects, definitely not an approach to use for serious libraries or production code.</p>\n    <p>I proposed “vibe engineering” as the grown up version of vibe coding, where expert programmers use coding agents in a professional and responsible way to produce high quality, reliable results.</p>\n    <p>You should absolutely read Emil’s account in full. A few highlights:</p>\n    <ol>\n     <li>He hooked in the 9,200 test <a href=\"https://github.com/html5lib/html5lib-tests\">html5lib-tests</a> conformance suite almost from the start. There’s no better way to construct a new HTML5 parser than using the test suite that the browsers themselves use.</li>\n     <li>He picked the core API design himself—a TagHandler base class with handle_start() etc. methods—and told the model to implement that.</li>\n     <li>He added a comparative benchmark to track performance compared to existing libraries like html5lib, then experimented with a Rust optimization based on those initial numbers.</li>\n     <li>He threw the original code away and started from scratch as a rough port of Servo’s excellent <a href=\"https://github.com/servo/html5ever\">html5ever</a> Rust library.</li>\n     <li>He built a custom profiler and new benchmark and let Gemini 3 Pro loose on it, finally achieving micro-optimizations to beat the existing Pure Python libraries.</li>\n     <li>He used coverage to identify and remove unnecessary code.</li>\n     <li>He had his agent build a <a href=\"https://github.com/EmilStenstrom/justhtml/blob/main/benchmarks/fuzz.py\">custom fuzzer</a> to generate vast numbers of invalid HTML documents and harden the parser against them.</li>\n    </ol>\n    <p>This represents a lot of sophisticated development practices, tapping into Emil’s deep experience as a software engineer. As described, this feels to me more like a lead architect role than a hands-on coder.</p>\n    <p>It perfectly fits what I was thinking about when I described <strong>vibe engineering</strong>.</p>\n    <p>Setting the coding agent up with the html5lib-tests suite is also a great example of <a href=\"https://simonwillison.net/2025/Sep/30/designing-agentic-loops/\">designing an agentic loop</a>.</p>\n    <h4 id=\"-the-agent-did-the-typing-\">“The agent did the typing”</h4>\n    <p>Emil concluded his article like this:</p>\n    <blockquote>\n     <p>JustHTML is about 3,000 lines of Python with 8,500+ tests passing. I couldn’t have written it this quickly without the agent.</p>\n     <p>But “quickly” doesn’t mean “without thinking.” I spent a lot of time reviewing code, making design decisions, and steering the agent in the right direction. The agent did the typing; I did the thinking.</p>\n     <p>That’s probably the right division of labor.</p>\n    </blockquote>\n    <p>I couldn’t agree more. Coding agents replace the part of my job that involves typing the code into a computer. I find what’s left to be a much more valuable use of my time.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9092/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文以 JustHTML（一个 Python HTML 解析库）为例，阐述了“氛围工程”（vibe engineering）：一种先进的 AI 辅助编程方法，其中人类工程师指导大型语言模型进行代码生成，以产出高质量成果。",
+  "oneSentenceSummary": "本文以 JustHTML（一个 Python HTML 解析库）为例，阐述了“氛围工程”（vibe engineering）：一种先进的 AI 辅助编程方法，其中人类工程师指导大型语言模型进行代码生成，以产出高质量成果。",
+  "summary": "本文介绍了 JustHTML 这个全新的 Python HTML 解析库，并将其定位为“氛围工程”（vibe engineering）的典范。作者最初被 JustHTML 吸引，源于其诸多出色特性：纯 Python 实现、100%测试覆盖率、通过全部 9，200 多项 html5lib 测试，以及对 CSS 选择器的支持。深入研究后发现，该库几乎完全是在多种大型语言模型（包括 Claude Code、Claude Sonnet 3.7、Gemini 3 Pro 和 Claude Opus）的协助下构建的，所有这些都在工程师 Emil Stenström 的精心指导下完成。作者将这种方法与“氛围编码”（vibe coding）区分开来，强调“氛围工程”涉及专家程序员在专业监督下有效利用 AI 编码代理。Stenström 有条不紊的流程包括：早期集成全面的测试套件、自主设计的 API、性能基准测试、迭代优化、代码重构、自定义性能分析和模糊测试——所有这些都展示了精密的软件工程实践，尽管具体“敲代码”的工作由 LLM 完成。文章总结认为，这种劳动分工模式，即人类工程师提供“思考”和方向，代表了一种更有价值且高效的时间利用方式。",
+  "mainPoints": [
+    {
+      "point": "JustHTML 是“氛围工程”的典范，这是一种精细化的 AI 辅助软件开发方法。",
+      "explanation": "这种方法与“氛围编码”形成对比，它通过专家级的人工监督、严格测试以及对生成式 AI 模型（如 Claude Code、Claude Sonnet 3.7、Gemini 3 Pro 和 Claude Opus）的战略指导，从而产出高质量、可用于生产环境的代码。"
+    },
+    {
+      "point": "即使在大型语言模型生成大部分代码时，精密的软件工程实践依然至关重要。",
+      "explanation": "Emil Stenström 为 JustHTML 制定的流程涵盖了关键的设计决策、广泛的测试、性能优化及代码重构，凸显了人类专业知识在现代开发工作流中不可或缺的核心作用。"
+    },
+    {
+      "point": "在开发生命周期早期集成全面的测试套件和基准测试对于 AI 辅助项目至关重要。",
+      "explanation": "在开发初期就集成如 html5lib 测试套件和定制基准测试，能为大型语言模型提供必要的约束机制和反馈，确保所生成代码符合严格的质量和性能标准。"
+    }
+  ],
+  "keyQuotes": [
+    "编码代理负责敲代码；我负责思考。",
+    "我提出“氛围工程”是“氛围编码”的进阶版本，其中专家程序员以专业且负责任的方式使用编码代理，以产出高质量、可靠的成果。",
+    "用 html5lib 测试套件来设置编码代理，也是设计一个有效的代理循环（agentic loop）的绝佳范例。"
+  ],
+  "tags": [
+    "AI辅助编程",
+    "软件工程",
+    "HTML解析",
+    "Python库",
+    "神韵工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 93,
+  "wordCount": 848,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765727963000,
+  "publishDateStr": "2025-12-14",
+  "publishDateTimeStr": "2025-12-14 15:59:23"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b3945c",
+  "title": "Claude Opus 4.1 火速发布！坐稳编程之王，官方：马上还有大更新",
+  "url": "https://www.qbitai.com/2025/08/319253.html",
+  "date": "2025-08-06 02:41:24",
+  "author": "明敏",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"31\">明敏 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"32\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">还是Claude痛快，<strong>Claude Opus 4.1</strong>前脚曝光，今天这就正式发了。</p>\n  <p data-track=\"3\"><strong>编程性能</strong>再次突破天花板，超越Claude Opus 4，拿下SOTA。</p>\n  <p data-track=\"4\">此外在Agent任务和推理方面进一步升级。</p>\n  <p data-track=\"5\">但加量不加价，<strong>定价和Claude Opus 4一样</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude Opus 4.1火速发布！坐稳编程之王，官方：马上还有大更新\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5edd8e1-008c-4a76-6df9-59d97ffdd900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5edd8e1-008c-4a76-6df9-59d97ffdd900/public\">\n  </div>\n  <p data-track=\"6\">官方说计划在<strong>未来几周对模型进行更大规模升级与改进</strong>，看来真就只是一次小更新，替代Opus 4。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude Opus 4.1火速发布！坐稳编程之王，官方：马上还有大更新\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/02753896-da00-42e2-6a34-ea27cfde9f00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/02753896-da00-42e2-6a34-ea27cfde9f00/public\">\n  </div>\n  <p data-track=\"7\">实测用它做一个俄罗斯方块小游戏，提示词是“build the tetris game”，表现很稳。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude Opus 4.1火速发布！坐稳编程之王，官方：马上还有大更新\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b6eed52-86e4-4969-eedf-4ca3fb6cfb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b6eed52-86e4-4969-eedf-4ca3fb6cfb00/public\">\n  </div>\n  <p data-track=\"8\">有人觉得，Anthropic可能本来不想发模型，但是奈何GPT-5/Gemini-3的消息太多，为了保持市场竞争力所以先更新一波。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d351fe20-07a2-4bb4-12dd-d94fa6f54e00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d351fe20-07a2-4bb4-12dd-d94fa6f54e00/public\">\n  </div>\n  <p data-track=\"9\">值得一提的是，Claude Opus 4.1这篇发布blog虽然简短，但是里面的心机可不老少——秀性能提升、秀客户关系、还变相证明自家模型真实好用。</p>\n  <p data-track=\"10\">现在的硅谷AI圈，真有意思哇。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e638142-af20-4367-ef50-215f16ba0e00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e638142-af20-4367-ef50-215f16ba0e00/public\">\n  </div>\n  <p data-track=\"12\">Anthropic首先晒了大家最关心的模型编程能力。</p>\n  <p data-track=\"13\">在SWE-bench上，Opus 4.1超越Opus 4、Gemini 2.5 Pro、o3，将性能提升至74.5%，拿下新SOTA。</p>\n  <p data-track=\"14\">同时还提升了深度研究和数据分析的技能，特别是在细节追踪和Agent检索方面。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/834d288f-f685-4269-4913-2dfe66845800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/834d288f-f685-4269-4913-2dfe66845800/public\">\n  </div>\n  <p data-track=\"15\">其次，他们还找来客户做背书，邀请他们分享了内测中觉得Opus 4.1印象深刻的能力。既能体现自家模型在<strong>真实场景</strong>中好用，也暗暗秀了一把自己的客户订单。</p>\n  <p data-track=\"16\">根据<strong>GitHub</strong>给出的三方结果，Opus 4.1各个方面都较Opus 4有所改进，特别是在跨文件重构代码上，提升明显。</p>\n  <p data-track=\"17\"><strong>Rakuten Group</strong>（日本乐天株式会社）表示，Opus 4.1很擅长在大型代码库中精准定位、修复bug，且不需要进行不必要的调整、也不会产生新的bug，他们团队很喜欢在日常任务中使用这一功能。</p>\n  <p data-track=\"18\"><strong>Windsurf</strong>则表示，在初级开发基准测试中，Opus4到Opus 4.1的提升，和此前Sonnet 3.7到Sonnet 4的提升一样大。</p>\n  <p data-track=\"19\">这里插一句，因为亚历山大·王带团跳槽Meta，Windsurf剩余团队去向不明期间，<strong>Anthropic还断供了Windsurf一段时间</strong>，这应该是因为当时OpenAI要收购Windsurf。</p>\n  <p data-track=\"20\">如今随着Windsurf被Cognition收购，这种封锁已经解除，借着此次模型升级，Anthropic也算是亮明“大家还是好伙伴”的态度。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32ee369d-3298-465e-6716-f5a4dc226400/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32ee369d-3298-465e-6716-f5a4dc226400/public\">\n  </div>\n  <p data-track=\"21\">至于为啥找这么多客户来背书……前段时间GPT-5被泄露可不只有ChatGPT这边，还包括Cursor等合作平台，是故意的还是不小心不知道，但是OpenAI和谁合作大家都清楚了。Anthropic也想晒客户关系，也很正常。</p>\n  <p data-track=\"22\">最后，这篇Blog很简短，官方也明说就是小升级。</p>\n  <p data-track=\"23\"><strong>这种文风更受开发者们喜爱，</strong>毕竟隔壁的大忽悠实在是emmm……太能拉高大家预期了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ace4b906-6f51-4079-1376-a20ec3e9e100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ace4b906-6f51-4079-1376-a20ec3e9e100/public\">\n  </div>\n  <p data-track=\"24\">不管是有意还是无意，Anthropic都和最近一直炒GPT-5热度的OpenAI形成鲜明对比，谁现在更加技术本色，大家想必也心中有选择。</p>\n  <p data-track=\"25\">以及Opus 4.1的System Card也一同发布，其中表明Opus 4.1是对Opus 4的进一步调整，<strong>模型的核心尺寸或训练方法都没有变化</strong>。</p>\n  <p data-track=\"26\">同时Anthropic也公布了Opus 4.1的更多相关指标。</p>\n  <p data-track=\"27\">比如Opus 4.1的无害回复回应率更高，如果开启推理，指标已经能达到99.06%。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/416d6f73-2735-4901-fe3f-9a1733a8c600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/416d6f73-2735-4901-fe3f-9a1733a8c600/public\">\n  </div>\n  <p data-track=\"28\">更多内容大家可在System Card中进一步查看。</p>\n  <p data-track=\"29\">最后，Claude Opus 4.1已面向所有付费用户开放，包括Claude Code；也可以通过API、Amazon Bedrock和Vertex AI上使用，定价和Claude Opus 4一样。</p>\n  <p data-track=\"30\">Blog：https://www.anthropic.com/news/claude-opus-4-1<br>\n    System Card：https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "量子位报道 Claude Opus 4.1 火速发布，其编程性能再创新高，超越 Claude Opus 4 成为 SOTA，并维持原价，同时预告未来将有更大更新。",
+  "oneSentenceSummary": "量子位报道 Claude Opus 4.1 火速发布，其编程性能再创新高，超越 Claude Opus 4 成为 SOTA，并维持原价，同时预告未来将有更大更新。",
+  "summary": "文章详细介绍了 Anthropic 公司最新发布的 Claude Opus 4.1 模型。该模型在编程性能上取得了显著突破，在 SWE-bench 基准测试中得分高达 74.5%，超越了包括 Claude Opus 4 和 Gemini 2.5 Pro 在内的多款现有模型，确立了其在编程领域的 SOTA 地位。此外，Opus 4.1 在 Agent 任务和推理能力方面也得到了进一步提升，并在无害回复回应率上表现更高（推理模式下可达 99.06%），获得了 GitHub、乐天等客户在真实场景应用中的积极反馈。文章指出，尽管 System Card 表明 Opus 4.1 仅是对 Opus 4 的进一步调整，模型核心尺寸或训练方法均未变化，属于小版本更新，但 Anthropic 通过保持原价、简洁务实的发布文风以及客户背书等策略，巧妙地在激烈的 AI 市场竞争中展示了其模型的强大实力和对开发者的友好态度。该模型已面向所有付费用户开放，可通过 API、Amazon Bedrock 和 Vertex AI 使用。",
+  "mainPoints": [
+    {
+      "point": "Claude Opus 4.1 编程性能显著提升，SWE-bench 分数达 74.5%并夺 SOTA。",
+      "explanation": "模型在代码生成、修复和跨文件重构方面表现突出，超越前代和竞品，为开发者提供了更强大的编程辅助能力。"
+    },
+    {
+      "point": "模型在 Agent 任务和推理方面全面升级，并获客户在真实场景中验证。",
+      "explanation": "Opus 4.1 不仅专注于编程，还在复杂任务处理和逻辑推理上表现更优，并通过 GitHub、乐天等客户的实际反馈，证明了其在企业级应用中的可靠性和实用性。"
+    },
+    {
+      "point": "Anthropic 采取“加量不加价”策略，并以务实风格发布，提升市场竞争力。",
+      "explanation": "在模型性能提升的同时保持原价，以及简洁明了的发布文风，有助于吸引开发者，并在与竞争对手的对比中，彰显其技术本色和对用户价值的承诺。"
+    }
+  ],
+  "keyQuotes": [
+    "编程性能再次突破天花板，超越 Claude Opus 4，拿下 SOTA。",
+    "在 SWE-bench 上，Opus 4.1 超越 Opus 4、Gemini 2.5 Pro、o3，将性能提升至 74.5%，拿下新 SOTA。",
+    "Opus 4.1 很擅长在大型代码库中精准定位、修复 bug，且不需要进行不必要的调整、也不会产生新的 bug，他们团队很喜欢在日常任务中使用这一功能。",
+    "这种文风更受开发者们喜爱，毕竟隔壁的大忽悠实在是 emmm......太能拉高大家预期了。",
+    "Opus 4.1 是对 Opus 4 的进一步调整，模型的核心尺寸或训练方法都没有变化。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Claude Opus",
+    "Anthropic",
+    "编程能力",
+    "SOTA"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 93,
+  "wordCount": 1421,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1754448084000,
+  "publishDateStr": "2025-08-06",
+  "publishDateTimeStr": "2025-08-06 02:41:24"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d36ff1",
+  "title": "WebSailor：探索 WebAgent 的超人类推理能力",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247496670&idx=1&sn=311141d25e9a1218ad23dd472c04fafd",
+  "date": "2025-07-07 09:09:00",
+  "author": "通义大模型",
+  "siteName": "通义大模型",
+  "content": "<html>\n <head></head>\n <body>\n  <p><br></p>\n  <p>📄 在互联网信息检索任务中，即使是很强的LLM，有时也会陷入“信息迷雾”之中，通义实验室最新提出的方案WebSailor通过一整套创新的post-training方法，大幅提升了开源模型在复杂网页推理任务上的表现。</p>\n  <p></p>\n  <p>💡 WebSailor 的技术方案涵盖从数据到训练的全流程创新：</p>\n  <p>1️⃣ 大规模合成具有高不确定性（uncertainty）的复杂任务数据（称为 SailorFog-QA）；</p>\n  <p>2️⃣ 借助开源reasoning model获得多轮工具调用轨迹再重构推理过程，并基于Qwen-2.5-instruct（3B、7B、32B、72B）进行 RFT 冷启动训练；</p>\n  <p>3️⃣ 引入高效的强化学习算法 DUPO 进一步提升模型的决策能力。</p>\n  <p></p>\n  <p>📈 从实验结果来看：我们采用此方法训练的 WebSailor-72B 模型，其性能显著优于现有的开源 WebAgent，在 BrowseComp-en 上获得了 12 分，在 BrowseComp-zh 上获得了 30.1 分。我们在SimpleQA的子集上评估了泛化性能，WebSailor即使在简单任务上也展现出极强的兼容性和有效性。</p>\n  <p></p>\n  <p>论文：https://arxiv.org/abs/2507.02592</p>\n  <p>技术主页：https://github.com/Alibaba-NLP/WebAgent</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=5e9b7c09&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbfn1gBibk0zGHIbZwXQic3n9zXTC3Qwiawibk6u5rlsFTT45K2pfyrsLKWwg%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <div id=\"js_image_content\" class=\"image_content \">\n   <h1 class=\"rich_media_title \">WebSailor：探索 WebAgent的超人类推理能力</h1>\n   <p id=\"js_image_desc\" class=\"share_notice js_underline_content \"></p><!----> <!----> <!----> <!----> <!----> <!---->\n   <div id=\"js_end_poi_area\" class=\"end_poi_area \"></div><!----> <!---->\n   <div class=\"rich_media_tool \">\n    <div class=\"rich_media_info weui-flex policy_tips js_ad_policy_tips tips_global_primary \">\n     <!---->\n    </div>\n   </div>\n  </div>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7fa27851&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbfIx8I8qDLuyVYFDk69GsNQNUcKRVxRMUJmuvUiae4HpqWX9ZKgrN9qeg%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=a4d749ce&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbfWtyibMxec3cusDoVXnt6H58fpvJjiar4exEUwNc0XAKnULG5tUFwQibYQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=dcb77aa3&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbfMtzSWyVvLd2RxPaG3kYk2aLCphTQUiciaYJriaL3uEJtxiatq0ryxKNnibw%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=f4d47a5f&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbfuT9XS95jnPkMh6X5uyR0h4GHHCiaHIZ8LhVt1n6Ish287y5H26GJrww%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=3e1a7034&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbfneUprmZUMFmc7xxFZURWGuG7oiaiczhNBlD3KV3icfT0eCVUnQUDeLIPQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=bdc15bd7&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbf8ov06ISDiasaiavQ2v8ObKElKkeTicOSnU7fJlXHg8OOaUvy3TIQlTv0g%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=01f7130a&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNrickfNfoTia7kFfk1BWjZbflZicNCpiamN8rEoODoibt8B868VNXHz2FncVtv4od5rZsAiahX38ndeJYg%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "通义实验室提出 WebSailor 方案，通过创新的后训练方法大幅提升开源模型在复杂网页推理任务上的表现，实现超人类推理能力。",
+  "oneSentenceSummary": "通义实验室提出 WebSailor 方案，通过创新的后训练方法大幅提升开源模型在复杂网页推理任务上的表现，实现超人类推理能力。",
+  "summary": "WebSailor 是通义实验室针对大语言模型在互联网信息检索任务中遇到的“信息迷雾”问题，提出的一套创新型 WebAgent 方案。该方案采用全流程创新技术，首先大规模合成高不确定性的复杂任务数据（SailorFog-QA），为模型训练提供高质量输入。其次，借助开源推理模型获取多轮工具调用轨迹，重构推理过程，并基于 Qwen-2.5-instruct 系列模型进行 RFT 冷启动训练。最后，引入高效的强化学习算法 DUPO，进一步提升模型的决策能力。实验结果表明，WebSailor-72B 模型在 BrowseComp-en 和 BrowseComp-zh 等基准测试上显著优于现有开源 WebAgent，即使在简单任务上也展现出强大的泛化性能。文章提供了论文链接和 GitHub 主页，方便读者深入了解其技术细节和代码实现。",
+  "mainPoints": [
+    {
+      "point": "WebSailor 通过创新后训练方法显著提升 WebAgent 在复杂网页推理能力。",
+      "explanation": "针对 LLM 在互联网信息检索中的“信息迷雾”问题，WebSailor 引入数据合成、模型训练和强化学习等创新方法，大幅优化了开源模型在复杂网页任务上的表现。"
+    },
+    {
+      "point": "WebSailor 技术方案涵盖数据、训练和算法的全流程创新。",
+      "explanation": "该方案包括合成高不确定性任务数据(SailorFog-QA)、基于 Qwen-2.5-instruct 进行 RFT 冷启动训练，以及引入高效的 DUPO 强化学习算法。"
+    },
+    {
+      "point": "WebSailor-72B 模型在多语言基准测试中性能超越现有开源 WebAgent。",
+      "explanation": "实验数据表明，WebSailor-72B 在 BrowseComp-en 和 BrowseComp-zh 上取得显著优势，并展现出在简单任务上的良好泛化兼容性。"
+    }
+  ],
+  "keyQuotes": [
+    "在互联网信息检索任务中，即使是很强的 LLM，有时也会陷入“信息迷雾”之中",
+    "WebSailor 的技术方案涵盖从数据到训练的全流程创新",
+    "WebSailor-72B 模型，其性能显著优于现有的开源 WebAgent，在 BrowseComp-en 上获得了 12 分，在 BrowseComp-zh 上获得了 30.1 分。"
+  ],
+  "tags": [
+    "WebAgent",
+    "大语言模型",
+    "推理能力",
+    "强化学习",
+    "模型训练"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 496,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_2ce88a",
+  "sourceName": "通义大模型",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751879340000,
+  "publishDateStr": "2025-07-07",
+  "publishDateTimeStr": "2025-07-07 09:09:00"
+}

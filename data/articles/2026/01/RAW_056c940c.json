@@ -1,0 +1,59 @@
+{
+  "id": "RAW_056c940c",
+  "title": "Databricks 的高可用特性标志系统",
+  "url": "https://www.databricks.com/blog/high-availability-feature-flagging-databricks",
+  "date": "2026-01-21 20:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Shipping software quickly while maintaining reliability is a constant tension. As Databricks has grown, so has the complexity of safely rolling out changes across hundreds of services, multiple clouds, and thousands of customer workloads. Feature flags help us manage this complexity by separating the decision to deploy code from the decision to enable it. This separation allows engineers to isolate failures and mitigate incidents faster, without sacrificing shipping velocity.</p>\n  <p>One of the key components of Databricks' stability posture is our in-house feature flagging and experimentation platform, called \"SAFE\". Databricks engineers use SAFE on a daily basis to rollout features, control service behavior dynamically, and measure the effectiveness of their features with A/B experiments.</p>\n  <h2>Background</h2>\n  <p>SAFE was started with the \"north star\" goal of fully decoupling service binary releases from feature enablement, allowing teams to roll out features independently from their binary deployment. This allows for many side-benefits, like the ability to reliably ramp-up a feature to progressively larger populations of users, and quickly mitigate incidents caused by a rollout.</p>\n  <p>At Databricks' scale, serving thousands of enterprise customers across multiple clouds with a rapidly growing product surface area, we needed a feature flagging system that could meet our unique requirements:</p>\n  <ul>\n   <li>High standards for safety and change management. The main value proposition for SAFE was to improve the stability and operational posture of Databricks, so nearly all of the other requirements flowed from this.</li>\n   <li>Multi-cloud, seamless global delivery across Azure, AWS, and GCP, with sub-millisecond flag evaluation latency to support high-throughput and latency-sensitive production services.</li>\n   <li>Transparent support for all places where Databricks engineers write code, including our control plane, the Databricks UI, <a data-external-link=\"true\" href=\"https://docs.databricks.com/aws/en/release-notes/runtime/\" target=\"_blank\" rel=\"noopener noreferrer\">Databricks Runtime Environment</a>, and Databricks' <a data-external-link=\"true\" href=\"https://www.databricks.com/glossary/serverless-computing\">Serverless</a> data plane.</li>\n   <li>An interface that was opinionated enough about Databricks' release practices to make common flag releases \"safe by default\", yet flexible enough to support a large set of more esoteric use cases.</li>\n   <li>Extremely rigorous availability requirements, as services cannot safely launch without flag definitions loaded.</li>\n  </ul>\n  <p>After carefully considering these requirements, we ultimately opted to build a custom in-house feature flagging system. We needed a solution that could evolve alongside our architecture, and which would provide the governance controls required to safely manage flags across hundreds of services and thousands of engineers. Achieving our scaling and safety goals successfully required deep integration with our infrastructure data model, service frameworks, and CI systems.</p>\n  <p>As of late 2025, SAFE has approximately 25k active flags, with 4k weekly flag flips. At peak, SAFE runs over 300M evaluations per second, all while maintaining a p95 latency of ~10μs for flag evaluations.</p>\n  <p>This post explores how we built SAFE to meet these requirements and the learnings we've encountered along the way.</p>\n  <h2>Feature Flags in Action</h2>\n  <p>To start, we will discuss a typical user journey for a SAFE flag. At its core, a feature flag is a variable that can be accessed in a service's control flow which can take different values depending on conditions controlled from an external config. One extremely common use case for feature flags is to gradually enable a new code path in a controlled fashion, first starting with a small portion of traffic and gradually enabling globally.</p>\n  <p>SAFE users first start by defining their flag in their service code, and use it as a conditional gate to the new feature's logic:</p>\n  <!--$-->\n  <!--/$-->\n  <p>The user then goes to the internal SAFE UI and registers this flag and selects a template to roll out their flag. This template defines a gradual rampup plan consisting of a list of ordered stages. Each stage is ramped up slowly by percentages. The user is presented with a UI that looks like this once the flag has been created:</p>\n  <p><!--$--></p>\n  <!--/$-->\n  <p></p>\n  <p>From here, the user can either manually roll out their flag one stage at a time, or set up a schedule to have the flag flips be created on their behalf. Internally, the source of truth for the flag configuration is a <a data-external-link=\"true\" href=\"https://www.databricks.com/blog/2017/06/26/declarative-infrastructure-jsonnet-templating-language.html\">jsonnet</a> file checked in to the Databricks monorepo, that uses a lightweight domain-specific language (DSL) to manage the flag config:</p>\n  <!--$-->\n  <!--/$-->\n  <p>When users change a flag from the UI, the output of that change is a Pull Request that needs to be reviewed by at least one other engineer. SAFE also runs a variety of pre-merge checks to guard against unsafe or unintended changes. Once the change is merged, the user's service will pick up the change and start emitting the new value within 2-5 minutes of the PR being merged.</p>\n  <h3>Use cases</h3>\n  <p>Aside from the use case described above for feature rollout, SAFE is also used for other aspects of dynamic service configuration, such as: long-lived dynamic configurations (e.g. timeouts or rate limits), state machine control for infrastructure migrations, or to deliver small configuration blobs (e.g. targeted logging policies).</p>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 Databricks 内部的特性标志平台 SAFE，解释了它如何在庞大的多云架构中实现高可用性和亚毫秒级延迟。",
+  "oneSentenceSummary": "本文详细介绍了 Databricks 内部的特性标志平台 SAFE，解释了它如何在庞大的多云架构中实现高可用性和亚毫秒级延迟。",
+  "summary": "文章探讨了 SAFE，这是 Databricks 自研的特性标志和实验平台，旨在将代码部署与功能启用解耦。面对在 AWS、Azure 和 GCP 上管理 25，000 个活跃标志的挑战，Databricks 构建了 SAFE，以提供亚毫秒级的评估延迟（p95 约 10μs）并处理每秒超过 3 亿次的评估。该系统与基础设施深度集成，采用基于 Jsonnet 的配置模型和 GitOps 工作流，标志变更需要经过同行评审的 Pull Request。这通过结构化模板和自动化放量计划确保了“默认安全”的发布，使工程师能够快速缓解故障并在快速扩展的同时保持高度的服务稳定性。",
+  "mainPoints": [
+    {
+      "point": "将二进制版本发布与功能启用解耦对运维稳定性至关重要。",
+      "explanation": "通过将部署与激活分离，团队可以进行渐进式发布和即时回滚，而无需重新部署代码，从而显著减小故障的影响范围。"
+    },
+    {
+      "point": "SAFE 实现了极致性能，在每秒 3 亿次评估下达到 10μs 的 p95 延迟。",
+      "explanation": "为了支持多云环境下对延迟敏感的生产服务，系统必须在本地近乎瞬时地评估标志，以避免成为请求路径中的瓶颈。"
+    },
+    {
+      "point": "基于 GitOps 的工作流和同行评审确保了标志管理的治理与安全。",
+      "explanation": "标志配置以 Jsonnet 文件形式存储在单体仓库中；通过 UI 进行的更改会生成 Pull Request，在应用任何动态配置之前强制执行人工监督和自动化检查。"
+    },
+    {
+      "point": "规范化的模板为工程师提供了“默认安全”的常规功能发布流程。",
+      "explanation": "该平台提供结构化的放量计划和阶段，减轻了开发者的认知负担，并防止从内部测试到全球发布过程中的常见错误。"
+    }
+  ],
+  "keyQuotes": [
+    "SAFE 的核心价值主张是提高 Databricks 的稳定性和运维态势，因此几乎所有其他需求都源于此。",
+    "在峰值时，SAFE 每秒运行超过 3 亿次评估，同时保持约 10μs 的标志评估 p95 延迟。",
+    "SAFE 启动时的“北极星”目标是实现服务二进制发布与功能启用的完全解耦。",
+    "当用户从 UI 更改标志时，该更改的输出是一个需要至少由另一名工程师评审的 Pull Request。",
+    "成功实现我们的扩展和安全目标，需要与我们的基础设施数据模型、服务框架和 CI 系统进行深度集成。"
+  ],
+  "tags": [
+    "特性标志",
+    "高可用性",
+    "分布式系统",
+    "GitOps",
+    "Databricks"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 788,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": null,
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769025600000,
+  "publishDateStr": "01-21",
+  "publishDateTimeStr": "2026-01-21 20:00:00"
+}

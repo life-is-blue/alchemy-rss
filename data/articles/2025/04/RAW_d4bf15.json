@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d4bf15",
+  "title": "大模型何以擅长小样本学习？ICLR 2025 这项研究给出详细分析 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-04-25-9",
+  "date": "2025-04-25 10:05:00",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <br>\n  </section>\n  <p>近年来，大语言模型（LLM）在人工智能领域取得了突破性进展，成为推动自然语言处理技术发展与通用人工智能实现的核心力量。上下文学习能力（In-Context Learning, ICL）是 LLM 最显著且重要的能力之一，它允许 LLM 在给定包含输入输出示例的提示（prompt）后，直接生成新输入的输出，这一过程仅通过前向传播而无需调整模型权重。这种能力使得 LLM 能够基于上下文中的示例快速理解并适应新任务，展现出强大的小样本学习和泛化能力。理解 LLM 是如何实现 ICL 的，对于提高模型性能与效率、提升模型可解释性与 AI 安全、推广大模型应用与改进小样本学习算法具有重要意义，也是近来机器学习研究热点之一。有以下关键问题需要回答：</p>\n  <p>1.LLM 能够学到哪些学习算法，例如梯度下降、比较近邻等？</p>\n  <p>2. 在具体问题的 ICL 过程中在执行哪一种学习算法？</p>\n  <p>3. 如何进一步提升 LLM 的 ICL 能力？</p>\n  <p>ICL 通常建模为将多个已知样例与预测目标输入一起，拼接成序列输入 LLM 中的 transformer 模型，输出对目标的预测（图 1 左）。现有工作已证明 ICL 在不同模型和数据分布条件下，能够分别实现如线性回归和梯度下降等具体的学习算法，从已知样例中学习到任务对应输入输出映射，并作用于目标输入上产生预测输出。而这种学习算法是 transformer 模型通过预训练过程得到的，现实中 LLM 的预训练涉及海量的文本数据，含有复杂的语义信息，难以用单一的数学分布建模。现有工作对 ICL 实现小样本学习算法的解释难以泛化到真实世界场景或实际 LLM。为了对 ICL 的小样本学习能力有更直观的认识，在近期发表于 ICLR2025 的工作 “Why In-Context Learning Models are Good Few-Shot Learners?” 中我们对 ICL 模型作为元学习器的本质进行了建模与研究，以对上面三个问题进行了回答。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/68a6ea01-d75c-43ab-04f9-126eceddca00/public\" data-ratio=\"0.4388888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482988\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/baa69573-ec3b-443a-9e22-3e0efa601036/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文链接：https://openreview.net/pdf?id=iLUcsecZJp&nbsp;</p></li>\n   <li>\n    <p>代码链接：https://github.com/ovo67/Uni_ICL</p></li>\n  </ul>\n  <p><strong>1. 将 LLM 建模为元学习器覆盖学习算法空间</strong></p>\n  <p>ICL 模型可以学到所有传统元学习器学到的算法。元学习（Meta-Learning）是一种 “学习如何学习” 的方法，可通过设计模型使其能够快速适应新任务应用于小样本学习。它通过在多个相关任务上进行训练，学习到一种通用的学习策略或算法，从而在面对新任务时能够快速调整自身参数或结构，实现快速优化和泛化。借助元学习领域成熟的理论基础与方法经验，理论证明了作为实现学习算法的模型，基于 transformer 的 ICL 模型与传统的元学习器相比具有更强的表达能力（图 1 右）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9f680717-4376-4705-f2ea-3bb99c2c5500/public\" data-ratio=\"0.3425925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482989\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/42631b25-cc7b-45bb-bbfe-977e9c2f4491/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"><sup>图 1 大语言模型的上下文学习示例，以及上下文学习模型在学习算法空间中与传统元学习模型的关系。</sup>\n  </section>\n  <section>\n   <strong>2. ICL 模型学到并执行在预训练分布上最优的算法</strong>\n  </section>\n  <p>ICL 算法的学习是通过对预训练数据分布的拟合。在预训练充足的情况下，ICL 模型能够学习到在预训练任务集上最优（在与训练数据分布上最小化损失）的学习算法，从而在仅有少量样本的情况下实现快速适应。我们构建三类已知最优算法（Pair-wise metric-based/Class-prototype metric-based/Amortization-based 三种任务的最优算法分别可由元学习器 MatchNet/ProtoNet/CNPs 学习得到，图 3a）的任务。首先分别在单一种类任务集上训练，测试表明 ICL 性能与该预训练数据下能学到的最优算法表现相当（图 2 上）。然后再混合三种任务集上训练，三种传统元学习器的性能都有所下降，而 ICL 的性能依然与单一种类任务训练得到的最优性能一致（图 2 下）。以上结果说明 ICL 模型能够学习到预训练任务集上最优的学习算法，并且与传统的元学习器相比 ICL 模型具有更强的表达能力，因为它们不仅能够学习到已知的最优学习算法，还能够根据数据的分布特性表达出传统视野之外的学习算法，这使得 ICL 模型在处理多样化任务时具有显著优势。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/734bafed-6962-4fa4-306c-3042c524a300/public\" data-ratio=\"0.28888888888888886\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482990\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/7cd7089f-cbf7-4559-95aa-8f23b009c011/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/324d9022-a443-449b-2801-3d631d855500/public\" data-ratio=\"0.2833333333333333\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482991\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/a04388f9-ea9c-4a98-b217-d6eec8e50d75/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"><sup>图 2（上）分别在三种任务集上训练并对应测试的测试表现；（下）在混合任务集上训练并分别测试三种任务的性能表现。</sup>\n  </section>\n  <section>\n   我们还对 ICL 模型学习到的算法的泛化性进行了实验研究。展示出了其作为深度神经网络受数据分布影响的特性：其预训练过程本质上是在拟合以特定结构输入的训练任务集的数据分布，而无法保证学习到显式的基于规则的学习算法，这一发现纠正了现有工作将 ICL 解释为算法选择（Algorithm Selection）的过程。这将导致 ICL 模型在预训练数据受限或测试数据分布有偏移时性能表现不及预期（图 3）。\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fdf676f3-b2c9-4c20-e362-e6796c991400/public\" data-ratio=\"0.26020892687559355\" data-s=\"300,640\" data-type=\"png\" data-w=\"1053\" type=\"block\" data-imgfileid=\"503482992\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/a8d1a0ed-a697-4dc9-ae90-09b7fa8d23fd/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/50806f78-635a-42d2-5ab4-e571c41c2600/public\" data-ratio=\"0.37813211845102507\" data-s=\"300,640\" data-type=\"png\" data-w=\"878\" type=\"block\" data-imgfileid=\"503482993\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/dab4c998-50b2-4f18-89cc-c2f5075d13a2/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>图 3 ICL 与 “算法选择” 行为的比较（a）两种模型在三类已知最优算法的任务上训练，在未知最优算法任务上测试；（b）对于测试任务 ICL 可以处理而 “算法选择” 无法处理；（b）ICL 对测试数据分布敏感而 “算法选择” 不敏感。</sup></p>\n  <p><strong>3. 将传统深度网络的相关方法迁移到元学习层面以提升 ICL 性能</strong></p>\n  <p>基于上述对 ICL 模型作为学习算法强表达、难泛化的认识，可以将 ICL 模型对特性与传统深度神经网络的特性进行类比。我们提出通过 “样本 - 任务” 的概念映射将传统深度学习技巧迁移到元学习层面以优化 ICL 模型。例如实现了基于任务难度的元课程学习提升 ICL 模型预训练过程的收敛速度：图 4 展示了对于线性回归任务以递增非零维度数量作为课程的效果，元 - 课程学习能有效加速 ICL 模型的收敛，但不一定提升其最终性能。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1dd19f8e-a5da-41de-4cb5-8961fd19d300/public\" data-ratio=\"0.23703703703703705\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482994\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/e74a19ac-3731-465d-8475-b50e6a81d251/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"><sup>图 4 元 - 课程学习（左）训练过程 loss 变化；（中）200000 episodes 时的测试结果；（右）500000 episodes 时的测试结果。</sup>\n  </section>\n  <section>\n   又例如实现了基于领域划分的元 - 元学习，即将训练数据划分为多个领域，每个领域含有一个训练任务集和验证任务集，即可将以单个任务为输入的 ICL 模型作为待适应网络，构建元 - 元学习器在每个领域上利用训练任务集进行适应。实验效果如图 5 所示，提升了 ICL 模型的有限垂域数据高效适应能力。\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9b49d96c-ee4c-439f-c96c-72540eb3b200/public\" data-ratio=\"0.2851851851851852\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482995\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/4a5709b1-751a-47f0-9fed-c86d6a1d1946/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"><sup>图 5 采用元 - 元学习的 ICL 模型分别在给定每领域 64/256/1024 个任务时的适应表现。</sup>\n  </section>\n  <section>\n   <strong>4. 总结</strong>\n  </section>\n  <p>本文通过将 ICL 模型建模为元学习器，证明了 ICL 模型具有超过已有元学习器的表达学习算法的能力；ICL 执行在预训练数据分布上最优的算法，而不一定具有可泛化的规则；可以将传统深度网络有关技术迁移到元学习层面用以提升 ICL，如元 - 课程学习加速预训练收敛，元 - 元学习提升少数据领域微调快速适应能力。</p>\n  <p><strong>作者介绍</strong></p>\n  <p>吴世光，清华大学电子工程系博士研究生，本科毕业于清华大学电子工程系。当前主要研究方向包括元学习与大语言模型。</p>\n  <p>王雅晴，现任北京雁栖湖应用数学研究院（BIMSA）副研究员，长期从事机器学习、人工智能和科学智能的研究，致力于构建高效、低成本的智能算法，以精准匹配海量数据的科学解释并解决现实问题。她在 NeurIPS、ICML、ICLR、KDD、WWW、SIGIR、TPAMI、JMLR、TIP 等国际顶级会议和期刊上发表 27 篇论文，总被引用 4500 次。2024 年，她入选全球前 2% 顶尖科学家榜单。</p>\n  <p>姚权铭，现任清华大学电子工程系助理教授，研究方向为机器学习和深度学习。共发表文章 100 + 篇，涵盖机器学习领域顶级期刊 JMLR、IEEE TPAMI 和顶级会议 ICML、NeurIPS、ICLR 等，累计引用超 1.2 万余次。担任 ICML、NeurIPS、ICLR 等会议领域主席，NN、TMLR、MLJ 等期刊（资深）编委。获首届蚂蚁 In Tech 科技奖、国际人工智能学会（AAAI）学术新星、国际神经网络学会（INNS）青年研究员奖、吴文俊人工智能学会优秀青年奖，同时入选全球 Top 50 华人 AI 青年学者榜和福布斯 30under30 精英榜。</p>\n </body>\n</html>",
+  "aiSummary": "ICLR 2025 研究揭示大语言模型通过元学习在预训练数据分布上学习最优算法，从而实现小样本学习，并提出通过迁移深度学习技巧加速 ICL 收敛和提升微调能力。",
+  "oneSentenceSummary": "ICLR 2025 研究揭示大语言模型通过元学习在预训练数据分布上学习最优算法，从而实现小样本学习，并提出通过迁移深度学习技巧加速 ICL 收敛和提升微调能力。",
+  "summary": "该文章深入探讨了大语言模型（LLM）擅长小样本学习的原因，重点分析了其上下文学习能力（ICL），并回答了 LLM 如何学习算法、ICL 过程中执行何种算法以及如何提升 ICL 能力这三个关键问题。研究将 ICL 建模为元学习过程，证明 ICL 模型能够学习到预训练数据分布上最优的学习算法，并且超越了传统元学习器的表达能力。通过实验，文章揭示了 ICL 模型的泛化能力受预训练数据分布的影响，并提出了将传统深度学习技巧迁移到元学习层面以优化 ICL 性能的方法，例如元课程学习加速了 ICL 模型预训练过程的收敛速度，元元学习提升了 ICL 模型在有限垂域数据上的高效适应能力。这些发现对于理解和提升 LLM 的小样本学习能力具有重要意义。",
+  "mainPoints": [
+    {
+      "point": "ICL 模型具有超越传统元学习器的算法表达能力",
+      "explanation": "ICL 模型能够学习到预训练数据分布上最优的学习算法，并能根据数据特性表达传统视野之外的学习算法。"
+    },
+    {
+      "point": "ICL 泛化性受限于预训练数据分布",
+      "explanation": "ICL 模型本质上拟合特定结构输入的数据分布，而非显式的规则，因此在数据分布偏移时性能下降。"
+    },
+    {
+      "point": "迁移传统深度学习技巧可有效提升 ICL 性能",
+      "explanation": "通过元课程学习加速预训练收敛，元元学习提升少数据领域微调的快速适应能力。"
+    }
+  ],
+  "keyQuotes": [
+    "ICL 模型可以学到所有传统元学习器学到的算法。",
+    "ICL 算法的学习是通过对预训练数据分布的拟合。",
+    "可以将传统深度网络有关技术迁移到元学习层面用以提升 ICL。",
+    "ICL 模型执行在预训练数据分布上最优的算法，而不一定具有可泛化的规则"
+  ],
+  "tags": [
+    "大语言模型",
+    "小样本学习",
+    "元学习",
+    "上下文学习",
+    "ICL"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2736,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745575500000,
+  "publishDateStr": "2025-04-25",
+  "publishDateTimeStr": "2025-04-25 10:05:00"
+}

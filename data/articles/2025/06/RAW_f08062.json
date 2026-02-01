@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f08062",
+  "title": "AWS 创新沙箱：临时环境的资源调配与管理",
+  "url": "https://www.infoq.com/news/2025/06/aws-innovation-sandbox/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-20 00:00:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has recently introduced <a href=\"https://aws.amazon.com/solutions/implementations/innovation-sandbox-on-aws/\">Innovation Sandbox on AWS</a>, a new open source solution for managing AWS sandbox environments through a web user interface. This solution enables developers to provision and manage secure, cost-effective, and recyclable temporary sandbox environments.</p>\n   <p>By automating the implementation of security and governance policies, spend management mechanisms, and account recycling processes, Innovation Sandbox on AWS minimizes the overhead typically associated with managing sandbox environments at scale. The solution uses CloudFormation templates and stacks to automate its deployment.</p>\n   <p><img class=\"zoom-image\" alt=\"Innovation Sandbox on AWS - Architecture\" data-src=\"https://www.infoq.com/news/2025/06/aws-innovation-sandbox/news/2025/06/aws-innovation-sandbox/en/resources/1innovation_sandbox_on_aws_architecture_diagram.d7e3eadcb3497483cd1892b80762063c7bfd1236-1749191741865.png\" style=\"width:100%;height:514px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/06/aws-innovation-sandbox/en/resources/1innovation_sandbox_on_aws_architecture_diagram.d7e3eadcb3497483cd1892b80762063c7bfd1236-1749191741865.png\" rel=\"share\"></p>\n   <p><em>Source: AWS documentation</em></p>\n   <p><a href=\"https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/solution-overview.html\">According to the documentation</a>, the solution allows developers to set up short-lived sandbox environments by automating the deployment of a sandbox organizational unit (OU) structure with nested OUs that guide the sandbox account lifecycle and adhere to workload isolation best practices.</p>\n   <p>While it enables account recycling by providing the ability to use accounts for a predefined duration or spend threshold and cleaning up the account at the end of its sandbox use, it does not create new or close existing AWS accounts, instead recycling accounts to promote reuse.</p>\n   <p>The open source template supports instant account provisioning, automated cost monitoring, pre-configured security best practices, and automated account cleanup for seamless operations. While Innovation Sandbox on AWS sends warnings to users when a specific percentage of the AWS Budget or allocated time has been used, the solution is a wrapper of existing services and does not allow setting hard caps on spending.</p>\n   <p>The ability to set up temporary environments has been a <a href=\"https://www.reddit.com/r/AWSCertifications/comments/1ag66mp/aws_sandbox_environments/\">long-standing request</a> from the AWS community, with practitioners discussing various ideas for <a href=\"https://www.reddit.com/r/aws/comments/qmebbd/automated_aws_sandbox_setup/\">automated sandbox setups</a> in the past. Ndimofor Ateh Rosius, CTO of Educloud, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7333552314055598081?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7333552314055598081%2C7333846448171610114%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287333846448171610114%2Curn%3Ali%3Aactivity%3A7333552314055598081%29\">comments</a>:</p>\n   <blockquote>\n    <p>This is amazing. Most students can’t take hands on workshops on Educloud Academy because they don’t have AWS accounts and it was always a headache to provision ephemeral accounts for them.</p>\n   </blockquote>\n   <p>Radek Antoniuk, fractional CTO, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7333552314055598081?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7333552314055598081%2C7335237740625555457%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287335237740625555457%2Curn%3Ali%3Aactivity%3A7333552314055598081%29\">adds</a>:</p>\n   <blockquote>\n    <p>Amazing! I feel like this should’ve been there since the start of AWS so I’m even more excited!</p>\n   </blockquote>\n   <p>Managing sandbox environments is a challenge that various cloud providers try to address in different ways. Microsoft offers <a href=\"https://learn.microsoft.com/en-us/azure/architecture/guide/azure-sandbox/azure-sandbox\">Azure Sandbox</a>, a collection of interdependent configurations for implementing common Azure services on a single subscription, providing a sandbox environment for experimenting with Azure services and capabilities. Google Cloud provides <a href=\"https://cloud.google.com/free/docs/free-cloud-features#free-trial\">free trial accounts</a>, where all resources created are stopped at the end of the trial without charges unless the customer activates a full paid account.</p>\n   <p>The <a href=\"https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/cost.html\">cost for running Innovation Sandbox on AWS</a> depends on the deployment configuration: for example, managing 50 accounts, with 30 leases per month and 10 lease templates, will cost approximately $36 in the cheapest AWS region, excluding costs incurred by sandbox account usage. Most of the solution's costs are associated with the usage of AWS WAF, the managed web application firewall, and AWS CodeBuild, the managed continuous integration service.</p>\n   <p>The source code is <a href=\"https://github.com/aws-solutions/innovation-sandbox-on-aws/\">available on GitHub</a> under an Apache 2.0 license.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Innovation Sandbox on AWS: Provisioning and Managing Temporary Environments\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/aws-innovation-sandbox/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750400640000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出开源解决方案，用于管理临时云沙箱环境。",
+  "oneSentenceSummary": "AWS 推出开源解决方案，用于管理临时云沙箱环境。",
+  "summary": "AWS 推出了 AWS 创新沙箱（Innovation Sandbox on AWS），这是一个新的开源解决方案，旨在简化安全、经济高效的临时 AWS 沙箱环境的资源调配和管理。通过自动化安全策略、成本管理和账户回收流程，该解决方案解决了开发人员和组织面临的常见挑战。该解决方案利用 CloudFormation 和 Web UI，提供了即时账户调配、自动化成本监控（带有成本警告，但无硬性上限）、预配置安全最佳实践以及自动化账户清理等功能。它通过根据预定义时长或支出阈值回收账户来促进重用，而不是创建或关闭新账户。此次发布满足了社区对更易于使用的临时环境的长期请求，与以前的手动方法或竞争对手产品（如 Azure Sandbox 和 Google Cloud Free Trial）相比，提供了一种结构化的方法。",
+  "mainPoints": [
+    {
+      "point": "该解决方案自动化安全、经济高效的临时 AWS 环境。",
+      "explanation": "AWS 创新沙箱 通过自动化策略执行、成本跟踪和账户回收，简化了大规模场景下对生命周期短的安全开发/测试沙箱的管理，减少了手动开销。"
+    },
+    {
+      "point": "它满足了社区对易于调配的临时 AWS 环境的长期请求。",
+      "explanation": "该解决方案提供的结构化、自动化方法，满足了 AWS 实践者、教育工作者和学生对随时可用的临时环境进行学习和实验的广泛需求。"
+    },
+    {
+      "point": "它使用账户回收来提高效率，而不是创建新账户。",
+      "explanation": "该系统根据时长或支出在清理后回收现有账户，避免了创建和关闭新 AWS 账户所带来的额外开销，这可能实现更快速的资源调配和简化的账户管理。"
+    },
+    {
+      "point": "该解决方案是开源的，允许透明度和定制。",
+      "explanation": "在 Apache 2.0 许可协议下在 GitHub 上可用，使用户和组织能够检查代码、贡献改进，或根据他们的特定需求进行调整并集成到现有工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "该解决方案使开发人员能够调配和管理安全、经济高效且可回收的临时沙箱环境。",
+    "该解决方案通过提供根据预定义时长或支出阈值使用账户并在沙箱使用结束时自动清理账户的能力，从而实现账户回收。但它并不创建新账户或关闭现有 AWS 账户，而是通过回收现有账户来促进重用。",
+    "虽然 AWS 创新沙箱 在使用了 AWS Budgets 或分配时间的特定百分比时会向用户发送警告，但该解决方案是现有服务的封装，不允许设置支出硬性上限。",
+    "这太棒了。大多数学生无法参加 Educloud Academy 的实践研讨会，因为他们没有 AWS 账户，而且为他们调配临时账户总是很麻烦。"
+  ],
+  "tags": [
+    "云服务",
+    "AWS",
+    "云管理",
+    "环境管理",
+    "沙箱"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 476,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750377600000,
+  "publishDateStr": "2025-06-20",
+  "publishDateTimeStr": "2025-06-20 00:00:00"
+}

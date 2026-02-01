@@ -1,0 +1,53 @@
+{
+  "id": "RAW_03360d83",
+  "title": "Query Console 即将回归 | DataGrip 博客",
+  "url": "https://blog.jetbrains.com/datagrip/2025/12/18/query-consoles-are-coming-back/",
+  "date": "2025-12-18 15:35:20",
+  "author": "Dmitry Romanov",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hi DataGrip and Database Tools community,</p>\n  <p>Shortly after the <strong>2025.3 release</strong>, your feedback made it clear that the <a href=\"https://blog.jetbrains.com/datagrip/2025/09/16/a-farewell-to-consoles/\">redesigned workflow for query files and query consoles</a> introduced issues in several important scenarios, especially when working with <a href=\"https://www.jetbrains.com/help/datagrip/managing-data-sources.html#share-data-sources-between-different-projects\" target=\"_blank\" rel=\"noopener\">global data sources</a>.</p>\n  <p>After reviewing the impact, we’ve decided that the best course of action is to <strong>revert this change </strong>in both DataGrip and the Database Tools plugin for JetBrains IDEs, rather than attempt incremental fixes while more users continue to update and encounter problems.</p>\n  <p>The rollback will be included in the upcoming <strong>2025.3.1 </strong>release arriving later this week.</p>\n  <p>This affects only those who updated to <strong>2025.3</strong>. If you haven’t updated yet, your workflow remains unchanged. If you have, we recommend updating to <strong>2025.3.1</strong> as soon as it becomes available to minimize the gap between the previous and restored behavior.</p>\n  <h2 class=\"wp-block-heading\">What’s changing:</h2>\n  <ul>\n   <li>Query consoles return as the default workflow, working exactly as they did before 2025.3.</li>\n   <li>Query consoles saved before the migration will appear in the same locations as before.</li>\n   <li>Query files created during or after the migration will remain available. You can handle them in several ways:\n    <ul>\n     <li><strong>Delete</strong> query files you don’t need. In DataGrip, their default location is the /queries folder in the <a href=\"https://www.jetbrains.com/help/datagrip/files-tool-window.html\" target=\"_blank\" rel=\"noopener\"><em>Files </em>tool window</a>. In other IDEs, their default location is the /.idea/queries mvb directory in the <a href=\"https://www.jetbrains.com/help/idea/project-tool-window.html\" target=\"_blank\" rel=\"noopener\"><em>Project </em>tool window</a>.</li>\n     <li><strong>Convert</strong> query files you want to keep into query consoles. To do so, move them to the appropriate data source node under <em>Scratches and Consoles | Database Consoles</em> (in the <a href=\"https://www.jetbrains.com/help/datagrip/files-tool-window.html\" target=\"_blank\" rel=\"noopener\"><em>Files </em>tool window</a> in DataGrip or in the <a href=\"https://www.jetbrains.com/help/idea/project-tool-window.html\" target=\"_blank\" rel=\"noopener\"><em>Project </em>tool window</a> in other IDEs).</li>\n     <li><strong>Keep</strong> your query files for now. We plan to bring back an improved query file workflow <strong>early next year</strong> so it can work alongside query consoles in a more intuitive and flexible way.</li>\n    </ul></li>\n  </ul>\n  <h2 class=\"wp-block-heading\">A note from the team</h2>\n  <p>We apologize for the inconvenience and disruption caused by this change. We hold ourselves to a zero-regression standard, and this release did not meet it. That responsibility is on us, and our focus now is on minimizing the impact and restoring your workflow as quickly as possible. <strong>Your trust means a lot, and we’ll continue doing our best to earn it.</strong></p>\n  <p>Although we are reverting this change for now, our long-term goal remains unchanged: to improve this core workflow and make it more intuitive for both new and experienced users. We will move forward more carefully, and future updates will be more flexible and less disruptive, even if that requires more time and effort on our side.</p>\n  <p>If you have any comments or encounter any issues, please contact us through <a href=\"https://youtrack.jetbrains.com/issues/DBE\" target=\"_blank\" rel=\"noopener\">our issue tracker</a> or <a href=\"https://intellij-support.jetbrains.com/hc/en-us/requests/new?ticket_form_id=66731&amp;product=DataGrip\" target=\"_blank\" rel=\"noopener\">support channels</a>.</p>\n  <p>Best regards,\n   <br>\n   The DataGrip team</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/datagrip/2025/12/16/datagrip-turns-10-hidden-gems-of-datagrip/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> DataGrip turns 10. Hidden gems of DataGrip.</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DataGrip 团队因收到大量用户反馈，正在回滚 2025.3 版本中引入的查询文件和 Query Console 的工作流重新设计，并恢复之前的工作流。",
+  "oneSentenceSummary": "DataGrip 团队因收到大量用户反馈，正在回滚 2025.3 版本中引入的查询文件和 Query Console 的工作流重新设计，并恢复之前的工作流。",
+  "summary": "DataGrip 团队已决定撤销在 2025.3 版本中引入的查询文件和 Query Console 的重新设计工作流，此前大量用户反馈指出存在问题，尤其是在全局数据源方面。此次回滚将在即将发布的 2025.3.1 更新中实施，以防止进一步的用户问题。回滚后，Query Console 将作为默认工作流回归，操作方式与 2025.3 版本之前相同。在迁移期间或之后创建的查询文件可以删除、转换回 Query Console，或保留以待计划于明年初改进的工作流。团队对造成的不便表示歉意，并强调其对“零回归”标准（即不引入新缺陷或破坏现有功能的标准）的承诺以及用户信任的重要性。尽管此次是临时回滚，但改进此核心工作流的长期目标不变，并承诺未来的更新将更加谨慎和灵活。",
+  "mainPoints": [
+    {
+      "point": "DataGrip 及其 Database Tools 插件将回滚 2025.3 版本的工作流更改。",
+      "explanation": "此次回滚直接回应了用户关于新工作流问题的反馈，特别是关于全局数据源的问题，并将包含在 2025.3.1 版本中。"
+    },
+    {
+      "point": "回滚后，用户可以灵活地管理现有查询文件。",
+      "explanation": "Query Console 将恢复为默认设置。用户可以删除不必要的查询文件，将需要的查询文件转换回 Query Console，或者保留它们，因为团队计划在明年初改进查询文件工作流。"
+    },
+    {
+      "point": "DataGrip 团队对造成的不便表示歉意，并保证将以更谨慎的方式进行未来的产品改进。",
+      "explanation": "团队承认未能达到其零回归标准，将优先恢复用户工作流，并承诺以更灵活、更少干扰的更新方式，追求其直观核心工作流的长期目标。"
+    }
+  ],
+  "keyQuotes": [
+    "在评估了影响之后，我们决定最好的做法是在 DataGrip 和 JetBrains IDEs 的 Database Tools 插件中都撤销这项更改，而不是在更多用户继续更新并遇到问题时尝试增量修复。",
+    "对于此次更改造成的不便和中断，我们深表歉意。我们秉持零回归标准，而此版本未能达到。这是我们的责任，我们现在的重点是尽可能减少影响并尽快恢复您的工作流。",
+    "尽管我们暂时撤销了这项更改，但我们的长期目标保持不变：改进此核心工作流，使其对新用户和有经验的用户都更加直观。"
+  ],
+  "tags": [
+    "DataGrip",
+    "JetBrains",
+    "数据库工具",
+    "产品更新",
+    "用户反馈"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 452,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766072120000,
+  "publishDateStr": "2025-12-18",
+  "publishDateTimeStr": "2025-12-18 15:35:20"
+}

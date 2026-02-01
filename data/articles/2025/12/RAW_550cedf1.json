@@ -1,0 +1,58 @@
+{
+  "id": "RAW_550cedf1",
+  "title": "Meta 的优化平台 Ax 1.0 简化 LLM 和系统优化",
+  "url": "https://www.infoq.com/news/2025/12/ax-hyperparameter-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-16 11:30:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Now stable, Ax is an <a href=\"https://github.com/facebook/Ax/\">open-source platform</a> from Meta designed to help researchers and engineers apply machine learning to <a href=\"https://engineering.fb.com/2025/11/18/open-source/efficient-optimization-ax-open-platform-adaptive-experimentation/\">complex, resource-intensive experimentation</a>. Over the past several years, Meta has used Ax to improve AI models, accelerate machine learning research, tune production infrastructure, and more.</p>\n   <p>Ax is especially oriented to researchers who need to understand and optimize AI models or other systems with complex configuration. In such cases, the sheer number of possible configurations makes it nearly impossible to evaluate all of them efficiently in a linear way, say Meta researchers. The solution comes in the form of <em>adaptive experimentation</em>, which automatically evaluates configurations in a sequential way, using the insights from previous evaluations to guide exploration of the solution space.</p>\n   <blockquote>\n    <p>Adaptive experiments are incredibly useful, but can be challenging to run. Not only do these experiments require the use of sophisticated machine learning methods to drive the optimization, they also demand specialized infrastructure for managing experiment state, automating orchestration, providing useful analysis and diagnostics, and more.</p>\n   </blockquote>\n   <p>Examples of problems for which Meta used Ax internally include hyperparameter optimization and architecture search in machine learning, discovering optimal data mixtures to train AI models, tuning infrastructure, optimizing compiler flags, and more.</p>\n   <p>One particularly interesting application of Ax is in optimizing LLMs. Meta researchers have provided a <a href=\"https://github.com/ax-llm/ax/blob/main/docs/OPTIMIZE.md\">comprehensive introduction</a> to it, demonstrating how Ax can be used to write better prompts, select the most effective examples the AI should follow, and more.</p>\n   <p>An additional challenge in optimization arises because researchers often aim to improve multiple objective metrics subject to constraints and guardrails. Meta researchers describe how they used Ax for \"multi-objective optimization to simultaneously improve a machine learning model’s accuracy while minimizing its resource usage.\"</p>\n   <p>Besides experimentation, Meta researchers note that Ax is an effective tool to gain deeper understanding of the system being optimized:</p>\n   <blockquote>\n    <p>Ax provides a suite of analyses (plots, tables, etc) which helps its users understand how the optimization is progressing over time, tradeoffs between different metrics via a Pareto frontier, visualize the effect of one or two parameters across the input space, and explain how much each input parameter contributes to the results (via sensitivity analysis).</p>\n   </blockquote>\n   <p>Ax uses Bayesian optimization, via PyTorch and <a href=\"https://botorch.org\">BoTorch</a>, to iteratively test candidate configurations. It employs a surrogate model to identify the most promising configuration to evaluate next, repeating the process iteratively until the desired goal has been reached or the allowed compute budget consumed. The typical surrogate model is a Gaussian process, used for its ability to make predictions with quantified uncertainty based on very few data points.</p>\n   <p>Meta researchers emphasize Ax's expressive API, which enables exploring complex search spaces, as well as handling multiple objectives, constraints, and noisy observations. Ax can also evaluate distinct configurations in parallel and halt evaluation at any time. A key benefit of Ax is that it provides sensible defaults allowing practitioners to leverage advanced techniques without needing to be optimization experts.</p>\n   <p>Ax is not the only black-box open-source adaptive optimization platform available. <a href=\"https://openreview.net/pdf?id=U1f6wHtG1g\">Alternatives</a> include <a href=\"https://arxiv.org/abs/2109.09831\">SMAC</a>, <a href=\"https://facebookresearch.github.io/nevergrad/\">Nevergrad</a>, <a href=\"https://optuna.org\">Optuna</a>, <a href=\"https://github.com/dragonfly/dragonfly-experiments\">Dragonfly</a>, and others. Meta researches claim that Ax provides a broader range of capabilities, including the ability to impose constraints on parameters and outcomes, as well as handle noise measurements. Ax and many of its alternatives can be also used with orchestration frameworks like <a href=\"https://docs.ray.io/en/latest/tune/index.html\">Ray Tune</a> and <a href=\"https://hydra.cc\">Hydra</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta's Optimization Platform Ax 1.0 Streamlines LLM and System Optimization\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/ax-hyperparameter-optimization/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765884600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 的开源平台 Ax 1.0 提供了一个高效的自适应实验框架，通过利用贝叶斯优化和全面的方法，优化包括大型语言模型（LLM）在内的复杂 AI 模型和系统。",
+  "oneSentenceSummary": "Meta 的开源平台 Ax 1.0 提供了一个高效的自适应实验框架，通过利用贝叶斯优化和全面的方法，优化包括大型语言模型（LLM）在内的复杂 AI 模型和系统。",
+  "summary": "Meta 发布了 Ax 1.0，这是一个开源平台，旨在通过自适应实验优化复杂的、资源密集型系统，特别是 AI 模型和大型语言模型（LLM）。Ax 通过顺序评估配置来解决优化具有庞大配置空间的系统所面临的挑战，它利用前期评估的洞察力，以更高效地指导探索过程。主要应用包括超参数优化、架构搜索、AI 模型的数据混合发现以及基础设施调优。对于大型语言模型（LLM），Ax 可以优化提示词（prompts）和示例选择。它支持带有约束的多目标优化，并提供分析工具以深入理解系统。Ax 利用 PyTorch 和 BoTorch 进行贝叶斯优化，迭代地优化配置，并为复杂的搜索空间、噪声观测和并行评估提供功能丰富的 API。虽然存在其他替代方案，但 Meta 强调了 Ax 在处理约束和噪声测量方面的更广泛能力，这使得即使是非专家也能进行高级优化。",
+  "mainPoints": [
+    {
+      "point": "Ax 1.0 通过自适应实验简化了复杂的 AI 和系统优化。",
+      "explanation": "该平台自动化配置的顺序评估，使用机器学习来指导探索和加速优化，这对于 AI 领域中庞大的搜索空间尤为关键。"
+    },
+    {
+      "point": "Ax 支持带有约束的多目标优化，在遵守资源限制的同时提高模型性能。",
+      "explanation": "它允许研究人员在特定的安全边界（guardrails）下，同时优化相互冲突的指标，如准确性和资源使用，这对于实际应用至关重要。"
+    },
+    {
+      "point": "该平台提供强大的 API 和分析工具，用于深入理解系统。",
+      "explanation": "Ax 提供各种分析工具（图表、表格、敏感性分析），帮助用户理解优化进度、通过帕累托前沿（Pareto frontiers）了解不同指标间的权衡，以及参数的贡献，从而促进迭代改进。"
+    },
+    {
+      "point": "Ax 使没有深厚专业知识的实践者也能使用高级优化技术。",
+      "explanation": "其合理的默认设置和用户友好的设计使非优化专家也能利用贝叶斯优化等复杂方法，扩大了其应用范围。"
+    }
+  ],
+  "keyQuotes": [
+    "自适应实验非常有用，但运行起来可能具有挑战性。这些实验不仅需要使用复杂的机器学习方法来驱动优化，还需要专门的基础设施来管理实验状态、自动化工作流编排、提供有用的分析与诊断工具等。",
+    "Meta 研究人员描述了他们如何使用 Ax 进行“多目标优化，以在提高机器学习模型准确性的同时，最大限度地减少其资源使用。”",
+    "Ax 提供了一套分析工具（图表、表格等），帮助用户了解优化过程如何随时间进展，通过帕累托前沿（Pareto frontier）了解不同指标之间的权衡，可视化一个或两个参数在输入空间中的效果，并解释每个输入参数对结果的贡献程度（通过敏感性分析）。",
+    "Ax 的一个关键优势是它提供了合理的默认设置，允许实践者在无需成为优化专家的情况下利用先进技术。"
+  ],
+  "tags": [
+    "优化",
+    "机器学习",
+    "LLM",
+    "超参数调优",
+    "Meta"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 548,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765884600000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 11:30:00"
+}

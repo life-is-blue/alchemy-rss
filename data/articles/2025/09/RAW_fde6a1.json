@@ -1,0 +1,55 @@
+{
+  "id": "RAW_fde6a1",
+  "title": "提升 npm 供应链安全的方案",
+  "url": "https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/",
+  "date": "2025-09-22 17:29:50",
+  "author": "Xavier René-Corail",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Open source software is the bedrock of the modern software industry. Its collaborative nature and vast ecosystem empower developers worldwide, driving efficiency and progress at an unprecedented scale. This scale also presents unique vulnerabilities that are continually tested and under attack by malicious actors, making the security of open source a critical concern for all.&nbsp;</p>\n  <p>Transparency is central to maintaining community trust. Today, we’re sharing details of recent npm registry incidents, the actions we took towards remediation, and how we’re continuing to invest in npm security.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-recent-attacks-on-the-open-source-ecosystem\">Recent attacks on the open source ecosystem</h2>\n  <p>The software industry has faced a recent surge in damaging account takeovers on package registries, including npm. These ongoing attacks have allowed malicious actors to gain unauthorized access to maintainer accounts and subsequently distribute malicious software through well-known, trusted packages.&nbsp;</p>\n  <p>On September 14, 2025, we were notified of the <a href=\"https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages\">Shai-Hulud attack</a>, a self-replicating worm that infiltrated the npm ecosystem via compromised maintainer accounts by injecting malicious post-install scripts into popular JavaScript packages. By combining self-replication with the capability to steal multiple types of secrets (and not just npm tokens), this worm could have enabled an endless stream of attacks had it not been for timely action from GitHub and open source maintainers.&nbsp;</p>\n  <p>In direct response to this incident, GitHub has taken swift and decisive action including:&nbsp;</p>\n  <ul class=\"wp-block-list\">\n   <li>Immediate removal of 500+ compromised packages from the npm registry to prevent further propagation of malicious software.</li>\n   <li>npm blocking the upload of new packages containing the malware’s IoCs (Indicators of Compromise), cutting off the self-replicating pattern.</li>\n  </ul>\n  <p>Such breaches erode trust in the open source ecosystem and pose a direct threat to the integrity and security of the entire software supply chain. They also highlight why raising the bar on authentication and secure publishing practices is essential to strengthening the npm ecosystem against future attacks.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-npm-s-roadmap-for-hardening-package-publication\">npm’s roadmap for hardening package publication</h2>\n  <p>GitHub is committed to investigating these threats and mitigating the risks that they pose to the open source community. To address token abuse and self-replicating malware, we will be changing authentication and publishing options in the near future to only include:</p>\n  <ol class=\"wp-block-list\">\n   <li>Local publishing with <a href=\"https://docs.npmjs.com/requiring-2fa-for-package-publishing-and-settings-modification\">required two-factor authentication</a> (2FA).</li>\n   <li><a href=\"https://docs.npmjs.com/about-access-tokens#about-granular-access-tokens\">Granular tokens</a> which will have a limited lifetime of seven days.</li>\n   <li><a href=\"https://repos.openssf.org/trusted-publishers-for-all-package-repositories\">Trusted publishing</a>.</li>\n  </ol>\n  <p>To support these changes and further improve the security of the npm ecosystem, we will:</p>\n  <ul class=\"wp-block-list\">\n   <li>Deprecate legacy classic tokens.</li>\n   <li>Deprecate time-based one-time password (TOTP) 2FA, migrating users to FIDO-based 2FA.</li>\n   <li>Limit granular tokens with publishing permissions to a shorter expiration.</li>\n   <li>Set publishing access to disallow tokens by default, encouraging usage of trusted publishers or 2FA enforced local publishing.</li>\n   <li>Remove the option to bypass 2FA for local package publishing.</li>\n   <li>Expand eligible providers for trusted publishing.</li>\n  </ul>\n  <p>We recognize that some of the security changes we are making may require updates to your workflows. We are going to roll these changes out gradually to ensure we minimize disruption while strengthening the security posture of npm. We’re committed to supporting you through this transition and will provide future updates with clear timelines, documentation, migration guides, and support channels.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-strengthening-the-ecosystem-with-trusted-publishing\">Strengthening the ecosystem with trusted publishing</h2>\n  <p><a href=\"https://repos.openssf.org/trusted-publishers-for-all-package-repositories\">Trusted publishing </a>is a recommended security capability by the OpenSSF Securing Software Repositories Working Group as it removes the need to securely manage an API token in the build system. It was pioneered by PyPI in <a href=\"https://blog.pypi.org/posts/2023-04-20-introducing-trusted-publishers/\">April 2023</a> as a way to get API tokens out of build pipelines. Since then, trusted publishing has been added to RubyGems (<a href=\"https://blog.rubygems.org/2023/12/14/trusted-publishing.html\">December 2023</a>), crates.io (<a href=\"https://blog.rust-lang.org/2025/07/11/crates-io-development-update-2025-07/\">July 2025</a>), npm (also <a href=\"https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/\">July 2025</a>), and most recently NuGet (<a href=\"https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing\">September 2025</a>), as well as other package repositories.&nbsp;</p>\n  <p>When npm released support for trusted publishing, it was our intention to let adoption of this new feature grow organically. However, attackers have shown us that they are not waiting. We strongly encourage projects to adopt trusted publishing as soon as possible, for all supported package managers.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-actions-that-npm-maintainers-can-take-today\">Actions that npm maintainers can take today</h2>\n  <p>These efforts, from GitHub and the broader software community, underscore our global commitment to fortifying the security of the software supply chain. The security of the ecosystem is a shared responsibility, and we’re grateful for the vigilance and collaboration of the open source community.&nbsp;</p>\n  <p><strong>Here are the actions npm maintainers can take now:</strong></p>\n  <ul class=\"wp-block-list\">\n   <li>Use npm <a href=\"https://docs.npmjs.com/trusted-publishers\">trusted publishing</a> instead of tokens.</li>\n   <li>Strengthen <a href=\"https://docs.npmjs.com/requiring-2fa-for-package-publishing-and-settings-modification\">publishing settings</a> on accounts, orgs, and packages to require 2FA for any writes and publishing actions.</li>\n   <li>When <a href=\"https://docs.npmjs.com/configuring-two-factor-authentication\">configuring two-factor authentication</a>, use WebAuthn instead of TOTP.</li>\n  </ul>\n  <p>True resilience requires the active participation and vigilance of everyone in the software industry. By adopting robust security practices, leveraging available tools, and contributing to these collective efforts, we can collectively build a more secure and trustworthy open source ecosystem for all.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 详细介绍了近期 npm 供应链攻击事件，并阐述了通过强化身份验证、细粒度访问令牌（granular tokens）和可信发布来增强安全性的路线图。",
+  "oneSentenceSummary": "GitHub 详细介绍了近期 npm 供应链攻击事件，并阐述了通过强化身份验证、细粒度访问令牌（granular tokens）和可信发布来增强安全性的路线图。",
+  "summary": "本文来自 GitHub，旨在解决开源软件供应链安全这一关键问题。起因是近期 npm 生态系统中出现具有破坏性的账户接管事件和类似“Shai-Hulud 蠕虫”的攻击。文中详细阐述了 GitHub 的快速响应，包括立即移除被入侵的软件包并封锁恶意 IoC (Indicators of Compromise) 指标。文章重点在于 GitHub 为加强 npm 软件包发布而制定的全面路线图。关键措施包括：强制本地发布执行双因素认证 (2FA)；引入具有有限生命周期的细粒度访问令牌；推广采用可信发布。支持性变更包括弃用旧版经典令牌，将 2FA 迁移到基于 FIDO 的双因素认证（FIDO-based 2FA），以及默认禁止令牌进行发布访问。文章强调了可信发布的优势，其他主流包管理器已经采用该优势，无需在构建系统中管理 API 令牌。最后，文章为 npm 维护者提供了清晰且可执行的步骤，以立即加强其安全态势，例如：采用可信发布；对所有发布操作强制执行 2FA；使用 WebAuthn 而不是 TOTP。",
+  "mainPoints": [
+    {
+      "point": "近期复杂攻击突显了 npm 供应链中的关键漏洞。",
+      "explanation": "“Shai-Hulud 蠕虫”事件表明，被入侵的维护者帐户可能散布自我复制的恶意软件，从而对开源生态系统的完整性构成严重威胁。"
+    },
+    {
+      "point": "GitHub 正在实施一项全面的路线图，以加强 npm 软件包发布流程。",
+      "explanation": "这包括强制本地发布执行 2FA，引入具有有限生命周期的细粒度访问令牌，并推广可信发布，从而显著降低令牌滥用和恶意软件传播的风险。"
+    },
+    {
+      "point": "可信发布是一项关键的安全功能，无需在构建系统中管理 API 令牌。",
+      "explanation": "通过从构建管道中删除敏感凭据，可信发布显著降低了令牌被盗用的风险，与主流软件包仓库采用的最佳实践一致。"
+    }
+  ],
+  "keyQuotes": [
+    "近期，软件行业的软件包注册表面临大量账户入侵事件，npm 也在其中。",
+    "此类漏洞会削弱对开源生态系统的信任，并对整个软件供应链的完整性和安全性构成直接威胁。",
+    "为了解决令牌滥用和自我复制恶意软件的问题，我们将在不久的将来更改身份验证和发布选项，使其仅包括：1. 需要双因素认证 (2FA) 的本地发布。2. 具有七天有限生命周期的细粒度令牌。3. 可信发布。",
+    "可信发布是 OpenSSF 软件仓库安全工作组推荐的安全功能，因为它无需在构建系统中安全地管理 API 令牌。",
+    "生态系统的安全是共同的责任，我们感谢开源社区的警惕和协作。"
+  ],
+  "tags": [
+    "供应链安全",
+    "npm",
+    "开源安全",
+    "身份验证",
+    "2FA"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 771,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758562190000,
+  "publishDateStr": "2025-09-22",
+  "publishDateTimeStr": "2025-09-22 17:29:50"
+}

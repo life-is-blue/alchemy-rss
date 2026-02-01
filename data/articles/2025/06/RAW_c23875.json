@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c23875",
+  "title": "Gemini 2.5：我们的思维模型系列更新",
+  "url": "https://deepmind.google/discover/blog/gemini-25-updates-to-our-family-of-thinking-models/",
+  "date": "2025-06-17 00:00:00",
+  "author": "Shrestha Basu Mallick, Logan Kilpatrick",
+  "siteName": "Google DeepMind Blog",
+  "content": "<!-- Google Tag Manager (noscript) --><!-- End Google Tag Manager (noscript) --><!-- HTML -->\n\n \n \n  <header class=\"dgc-header\">\n   <div class=\"dgc-header-inner\">\n    <button class=\"hamburger\" aria-haspopup=\"true\" aria-expanded=\"false\" aria-label=\"Open Menu\"></button>\n    <div class=\"product-name-wrapper\"><span style=\"background-color: inherit; font-size: 1rem;\">Today we are excited to share updates across the board to our Gemini 2.5 model family:</span></div></div></header><div class=\"blog-detail-container\"><section class=\"blocks-container glue-page glue-spacer-3-top\"><div class=\"block\"><div class=\"inner-block-content rich-content\">\n      <p data-block-key=\"357i9\"></p>\n      <ul>\n       <li data-block-key=\"fcp0r\">Gemini 2.5 Pro is generally available and stable (no changes from the 06-05 preview)</li>\n      </ul>\n      <p data-block-key=\"upur\"></p>\n      <ul>\n       <li data-block-key=\"3rae5\">Gemini 2.5 Flash is generally available and stable (no changes from the 05-20 preview, see pricing updates below)</li>\n      </ul>\n      <p data-block-key=\"eut4l\"></p>\n      <ul>\n       <li data-block-key=\"6gaul\">Gemini 2.5 Flash-Lite is now available in preview</li>\n      </ul>\n      <p data-block-key=\"aue8u\"></p>\n      <p data-block-key=\"1584o\">Gemini 2.5 models are thinking models, capable of reasoning through their thoughts before responding, resulting in enhanced performance and improved accuracy. Each model has control over the thinking budget, giving developers the ability to choose when and how much the model “thinks” before generating a response.</p>\n     </div>\n     <div class=\"inner-block-content\">\n      <div class=\"image-wrapper\">\n       <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini_2-5_family_1-1__dark_dev.original.png\" alt=\"Overview of our family of Gemini 2.5 thinking models\">\n       <div class=\"regular-image-description\">\n        Overview of our family of Gemini 2.5 thinking models\n       </div>\n      </div>\n     </div>\n     <div class=\"inner-block-content rich-content\">\n      <h2 data-block-key=\"0letq\" id=\"introducing-gemini-2.5-flash-lite\">Introducing Gemini 2.5 Flash-Lite</h2>\n      <p data-block-key=\"15upq\">Today, we’re introducing 2.5 Flash-Lite in preview with the lowest latency and cost in the 2.5 model family. It’s designed as a cost-effective upgrade from our previous 1.5 and 2.0 Flash models. It also offers better performance across most evals, and lower time to first token while also achieving higher tokens per second decode. This model is great for high throughput tasks like classification or summarization at scale.</p>\n      <p data-block-key=\"2ulma\">Gemini 2.5 Flash-Lite is a reasoning model, which allows for dynamic control of the thinking budget with an API parameter. Because Flash-Lite is optimized for cost and speed, “thinking” is off by default, unlike our other models. 2.5 Flash-Lite also supports all of our native tools like Grounding with Google Search, Code Execution, and URL Context in addition to function calling.</p>\n     </div>\n     <div class=\"inner-block-content\">\n      <div class=\"image-wrapper\">\n       <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini_2-5_flash-lite2-0_flash_benchmarks_margi.original.png\" alt=\"Benchmarks for Gemini 2.5 Flash-Lite\">\n       <div class=\"regular-image-description\">\n        Benchmarks for Gemini 2.5 Flash-Lite\n       </div>\n      </div>\n     </div>\n     <div class=\"inner-block-content rich-content\">\n      <h2 data-block-key=\"emfdi\" id=\"updates-to-gemini-2.5-flash-and-pricing\">Updates to Gemini 2.5 Flash and pricing</h2>\n      <p data-block-key=\"e458m\">Over the last year, our research teams have continued to push the pareto frontier with our Flash model series. When 2.5 Flash was initially announced, we had not yet finalized the capabilities for 2.5 Flash-Lite. We also launched with a “thinking” and “non-thinking price”, which led to developer confusion.<br><br>\n        With the stable version of Gemini 2.5 Flash rolling out (which is the same 05-20 model preview we made available at Google I/O), and the incredible performance of 2.5 Flash, we are updating the pricing for 2.5 Flash:</p>\n      <p data-block-key=\"a61gm\"></p>\n      <ul>\n       <li data-block-key=\"7c1ic\">$0.30 / 1M input tokens (*up from $0.15 input)</li>\n      </ul>\n      <p data-block-key=\"di1tt\"></p>\n      <ul>\n       <li data-block-key=\"90g8e\">$2.50 / 1M output tokens (*down from $3.50 output)</li>\n      </ul>\n      <p data-block-key=\"39qeo\"></p>\n      <ul>\n       <li data-block-key=\"14q0v\">We removed the thinking vs. non-thinking price difference</li>\n      </ul>\n      <p data-block-key=\"9pa4j\"></p>\n      <ul>\n       <li data-block-key=\"3fqv\">We kept a single price tier regardless of input token size</li>\n      </ul>\n      <p data-block-key=\"c4aeu\"></p>\n      <p data-block-key=\"d7o8h\">While we strive to maintain consistent pricing between preview and stable releases to minimize disruption, this is a specific adjustment reflecting Flash’s exceptional value, still offering the best cost-per-intelligence available.</p>\n      <p data-block-key=\"9jnjh\">And with Gemini 2.5 Flash-Lite, we now have an even lower cost option (with or without thinking) for cost and latency sensitive use cases that require less model intelligence.</p>\n     </div>\n     <div class=\"inner-block-content\">\n      <div class=\"image-wrapper\">\n       <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini_2-5_flash-lite_pricing_margin_dark.original.png\" alt=\"Pricing updates for our Gemini Flash family\">\n       <div class=\"regular-image-description\">\n        Pricing updates for our Gemini Flash family\n       </div>\n      </div>\n     </div>\n     <div class=\"inner-block-content rich-content\">\n      <p data-block-key=\"3oksh\">If you are using the Gemini 2.5 Flash Preview 04-17 , the existing preview pricing will remain in effect until its planned deprecation on July 15, 2025, at which point that model endpoint will be turned off. You can transition to the generally available model “gemini-2.5-flash”, or switch to 2.5 Flash-Lite Preview as a lower cost option.</p>\n      <h2 data-block-key=\"n8tg0\" id=\"continued-growth-of-gemini-2.5-pro\"><b><br></b>Continued growth of Gemini 2.5 Pro</h2>\n      <p data-block-key=\"7op3j\">The growth and demand for Gemini 2.5 Pro continues to be the steepest of any of our models we have ever seen. To allow more customers to build on this model in production, we are making the 06-05 version of the model stable, with the same pareto frontier price point as before.</p>\n      <p data-block-key=\"e0bm2\">We expect that cases where you need the highest intelligence and most capabilities are where you will see Pro shine, like coding and agentic tasks. Gemini 2.5 Pro is at the heart of many of the most loved developer tools.</p>\n     </div>\n     <div class=\"inner-block-content\">\n      <div class=\"image-wrapper\">\n       <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini-2-5-pro-top-developer-tools.original.png\" alt=\"Top developer tools using Gemini 2.5 Pro, featuring Cursor, Bolt, Cline, Cognition, Windsurf, GitHub, Lovable, Replit, and Zed Industries\">\n       <div class=\"regular-image-description\">\n        Top developer tools using Gemini 2.5 Pro\n       </div>\n      </div>\n     </div>\n     <div class=\"inner-block-content rich-content\">\n      <p data-block-key=\"3oksh\">If you are using 2.5 Pro Preview 05-06, the model will remain available until June 19, 2025 and then will be turned off. If you are using 2.5 Pro Preview 06-05, you can simply update your model string to “gemini-2.5-pro”.</p>\n      <p data-block-key=\"bja1o\">We can’t wait to see even more domains benefit from the intelligence of 2.5 Pro and look forward to sharing more about scaling beyond Pro in the near future.</p></div></div></section></div><div class=\"footer-utility__wrapper\"><div><nav class=\"footer-utility-links\">\n    </nav>\n   </div>\n  </div>\n \n",
+  "aiSummary": "Google 宣布 Gemini 2.5 Pro 和 Flash 已全面可用，推出了成本更低的 Flash-Lite，并更新了 Flash 的定价。",
+  "oneSentenceSummary": "Google 宣布 Gemini 2.5 Pro 和 Flash 已全面可用，推出了成本更低的 Flash-Lite，并更新了 Flash 的定价。",
+  "summary": "本文详细介绍了 Google Gemini 2.5 模型系列的最新更新。文章宣布 Gemini 2.5 Pro 和 Gemini 2.5 Flash 已全面可用且稳定，并指出与最近的预览版相比没有变化。新模型 Gemini 2.5 Flash-Lite 以预览版形式推出，提供最低延迟和成本，专为分类和摘要等高吞吐量任务设计。文章解释了将 Gemini 2.5 模型视为具有可调思维预算的“思维模型”的概念。文章还概述了 Gemini 2.5 Flash 的更新定价，并强调了 Gemini 2.5 Pro 的巨大需求和使用量，特别是在编码和智能体任务方面，展示了其与流行开发者工具的集成。文章提供了较旧预览模型的弃用日期，以指导用户迁移。",
+  "mainPoints": [
+    {
+      "point": "Gemini 2.5 Pro 和 Flash 现已全面可用。",
+      "explanation": "Gemini 2.5 Pro 和 Flash 的稳定版已发布供生产环境使用，表明其对开发者而言已成熟且可靠。"
+    },
+    {
+      "point": "推出 Gemini 2.5 Flash-Lite 适用于低成本任务。",
+      "explanation": "一个新的、性价比更高的、低延迟的模型 Flash-Lite 已以预览版形式推出，适用于摘要等高吞吐量应用。"
+    },
+    {
+      "point": "Gemini 2.5 Flash 的更新定价更具竞争力。",
+      "explanation": "Flash 的定价调整旨在提供最佳的智能成本效益，并取消了令人困惑的‘思维’定价层级。"
+    }
+  ],
+  "keyQuotes": [
+    "今天我们很高兴分享我们 Gemini 2.5 模型系列的全面更新",
+    "Gemini 2.5 模型是思维模型，能够在回应之前通过思考进行推理，从而实现性能增强和准确性提升。",
+    "今天，我们推出了 2.5 Flash-Lite 的预览版，它在 2.5 模型系列中具有最低延迟和成本。",
+    "随着 Gemini 2.5 Flash 稳定版的推出……我们正在更新 2.5 Flash 的定价",
+    "Gemini 2.5 Pro 的增长和需求仍然是我们见过的所有模型中最快的。"
+  ],
+  "tags": [
+    "Gemini 2.5",
+    "AI 模型",
+    "LLM",
+    "Google",
+    "AI 开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 94,
+  "wordCount": 677,
+  "domain": "deepmind.google",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_cca1dc",
+  "sourceName": "Google DeepMind Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750118400000,
+  "publishDateStr": "2025-06-17",
+  "publishDateTimeStr": "2025-06-17 00:00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_df590726",
+  "title": "前端没死，AI APP 正在返祖",
+  "url": "https://www.qbitai.com/2025/12/358085.html",
+  "date": "2025-12-02 05:51:55",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"89\">金磊 发自 凹非寺</p>\n   <p data-track=\"90\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">不用“噫吁嚱”——<strong>前端没被AI杀死，终端且得狂飙。</strong></p>\n  <p data-track=\"3\">在许多人高呼“AI正在颠覆一切”的当下，这样的一句判断，竟显得如此反直觉。</p>\n  <p data-track=\"4\">但别急，看完下面的一张图，或许就能让众多迷茫的前端程序员瞬间醍醐灌顶：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_f923187b0f1b6f6b2c91d90695af35c8.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_f923187b0f1b6f6b2c91d90695af35c8.jpeg\">\n  </div>\n  <p data-track=\"5\">在这张图中，我们看到的是三个跨时代的手机：2000年的诺基亚3310、2007年的初代iPhone，以及今年的iPhone 17 Pro。</p>\n  <p data-track=\"6\">三者并排放在一起，一个非常直观的感受就是，电路板变得<strong>越来越复杂</strong>；3310的主板，可能只是iPhone 17 Pro的一个小传感器。</p>\n  <p data-track=\"7\">很多人以为AI是对传统开发的降维打击、是一场彻底的革命，但当你拆开技术的“后盖”，盯着那些密密麻麻的线路时，你会发现，<strong>复杂度从未消失</strong>，它只是换了一种形式存在——</p>\n  <p data-track=\"8\">从电路板的物理堆叠，迁移到了模型、接口、网络、算力共同构成的数字堆叠。</p>\n  <p data-track=\"9\">这就是<strong>蚂蚁集团</strong>终端技术委员会负责人<strong>翁欣旦</strong>在SEE Conf大会中抛出的观点。</p>\n  <p data-track=\"10\">更进一步的，他还给出了一个非常发人深省的结论：</p>\n  <blockquote>\n   <p data-track=\"11\"><strong>前端程序员的宿命从未改变，永远在对抗熵增（复杂系统）。</strong></p>\n   <p data-track=\"12\"><strong>但在AI时代，是时候要清算一下技术债了。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_eb79d29306507398d66a7052f2d974d1.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_eb79d29306507398d66a7052f2d974d1.jpeg\"></p>\n   <p class=\"pgc-img-caption\">△蚂蚁集团终端技术委员会负责人，翁欣旦</p>\n  </div>\n  <p data-track=\"15\">一言蔽之，技术的浪潮更像是一个巨大的轮回，只是规模在放大，节奏在加快，体验在被不断刷新。</p>\n  <p data-track=\"17\">我们不妨先从最为直观的终端前端的效果开始讲起。</p>\n  <p data-track=\"18\">例如打开现在最火的AI应用，无论是OpenAI的ChatGPT，还是蚂蚁发布的AQ、灵光，你都会产生一种强烈的既视感：</p>\n  <p data-track=\"19\"><strong>它们太简单了。</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_73471ad2cf825824b3931f458ad8da5c.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_73471ad2cf825824b3931f458ad8da5c.jpeg\">\n  </div>\n  <p data-track=\"20\">一个输入框，一个对话流，一行行简洁排布的回答；没有复杂的导航、没有丰富的层级，也没有堆满屏幕的信息分发。</p>\n  <p data-track=\"21\">这个简洁的界面让人不禁回想起20年前的WAP网页，或者是那个功能单一、界面朴素的支付宝1.0时代。</p>\n  <p data-track=\"22\">这看似是一种倒退，毕竟移动互联网在经历了十几年雕花般的UI进化，把APP做得像精装修的豪宅之后，AI APP突然一夜回到毛坯房。</p>\n  <p data-track=\"23\">这背后是极简美学的回归吗？</p>\n  <p data-track=\"24\">在翁欣旦看来，我们正在经历两个技术上的轮回式的返祖。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_08d33c94f9594974bd73c5e3c24f25c5.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_08d33c94f9594974bd73c5e3c24f25c5.jpeg\">\n  </div>\n  <p data-track=\"25\">首先是<strong>交互的轮回</strong>。</p>\n  <p data-track=\"26\">计算机的发展史，可以说是一部从DOS（命令行界面）走向GUI（图形用户界面）的历史。</p>\n  <p data-track=\"27\">DOS时代的黑底白字，被Windows和Mac的窗口图标取代，因为点击比输入指令更符合直觉。</p>\n  <p data-track=\"28\">而现在的AI，似乎正试图把我们拉回CUI时代——用自然语言对话来解决一切。</p>\n  <p data-track=\"29\">但这真的高效吗？</p>\n  <p data-track=\"30\">翁欣旦在现场提出了一个非常务实的质疑：</p>\n  <blockquote>\n   <p data-track=\"31\">如果小手轻轻一点就能办妥的事，用户为什么要打开一个Agent，跟它絮絮叨叨讲上一分钟？</p>\n  </blockquote>\n  <p data-track=\"32\">Rabbit R1和AI Pin等纯AI硬件的翻车，已经给出了市场反馈。当用户必须对着一个没有屏幕或屏幕极小的设备说话，且无法通过视觉反馈确认操作状态时，沟通成本反而大幅上升。</p>\n  <p data-track=\"33\">单纯依赖CUI，在处理复杂任务时效率极低；交互的未来，注定不是CUI杀死GUI，而是两者的共生。</p>\n  <p data-track=\"34\">更明确一些来说，是让GUI负责高频、确定性的操作，CUI则是负责长尾、复杂的意图理解。</p>\n  <p data-track=\"35\">现在的AI APP界面之所以如此简陋，恰恰是因为这种“GUI+CUI”的深度融合范式尚未成熟，行业还在摸着石头过河。</p>\n  <p data-track=\"36\">其次是<strong>架构的轮回</strong>。</p>\n  <p data-track=\"37\">在移动互联网爆发初期，API网关是一个里程碑式的存在，为了应对海量的APP请求，为了业务的灵活性，开发者们曾热衷于把接口做得很宽。</p>\n  <p data-track=\"38\">就像翁欣旦提到的那个血淋淋的例子：为了省事，很多核心业务逻辑被塞进了一个名为“extend_info”的字段里。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_e71542cc5433b03257eea9fc8b79b92a.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_e71542cc5433b03257eea9fc8b79b92a.jpeg\">\n  </div>\n  <p data-track=\"39\">这种做法在当年是为了管好接口，给业务留足后路；但到了AI时代，这笔技术债开始爆雷了。</p>\n  <p data-track=\"40\">当我们试图让大模型去理解、去调用这些接口时，模型懵了：它读不懂那个黑盒一样的“extend_info”里到底藏了什么。</p>\n  <p data-track=\"41\">即便把几百行相关代码喂给模型，缺乏上下文的它依然无法理解其中的业务含义。</p>\n  <p data-track=\"42\">以前做API网关，是为了让以前的程序能跑通；现在做架构，是为了让大模型能看懂。</p>\n  <p data-track=\"43\">为了实现这一点，我们不得不重新定义接口，重新去把那些为了灵活性而牺牲的语义补回来。</p>\n  <p data-track=\"44\">这哪里是AI杀死了前端？这分明是AI逼着前端工程师把以前偷懒没做好的作业，重新做一遍。</p>\n  <p data-track=\"45\">AI原生应用看似全新，实则仍在解决<strong>老问题</strong>：</p>\n  <p data-track=\"46\">如何在复杂性与可用性之间取得平衡，如何在开放与管控之间找到边界，如何在创新与工程之间保持节奏。</p>\n  <p data-track=\"48\">除了软件形态的返祖，另一种流行的焦虑是<strong>云端万能论</strong>。</p>\n  <p data-track=\"49\">因为有不少人会认为，既然大模型都在云端运行，终端是不是只需要做一个显示器就好了？</p>\n  <p data-track=\"50\">这种想法忽略了两个最硬核的物理限制：<strong>网络</strong>和<strong>算力</strong>。</p>\n  <p data-track=\"51\">想象这样一个场景：你正兴致勃勃地跟AI聊得火热，突然走进电梯，或者经过一个信号盲区，屏幕上的文字戛然而止，那个原本流畅吐字的Token流断了。</p>\n  <p data-track=\"52\">这一刻的体验是灾难性的。无论云端的模型有多智能，无论流式传输技术吹得有多神，在物理网络缺失的那一秒，一切归零。</p>\n  <p data-track=\"53\">这就是终端存在的意义。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_fdbc0a0027b8def075029ee341869edf.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_fdbc0a0027b8def075029ee341869edf.jpeg\">\n  </div>\n  <p data-track=\"54\">对此，翁欣旦将网络和算力放到了一个更大的三维坐标系来分析。</p>\n  <p data-track=\"55\">在X轴的<strong>网络维度</strong>看，通信技术的进步确实解放了交互模态：从GSM时代的纯文本WAP，到3G时代的图片，4G时代的视频，再到5G时代的3D和XR。</p>\n  <p data-track=\"56\">但物理世界的网络覆盖永远存在盲区，5G再快，也没法消灭信号死角。</p>\n  <p data-track=\"57\">从Y轴的<strong>算力维度</strong>看，终端设备正在经历一场悄无声息的服务器化。</p>\n  <p data-track=\"58\">回看2007年的初代iPhone，412MHz的CPU，128MB的内存。</p>\n  <p data-track=\"59\">那时的开发者如果听说只有这点资源，恐怕连个像样的Demo都跑不起来。</p>\n  <p data-track=\"60\">而今天的iPhone 17 Pro，拥有4.29GHz的多核CPU和12GB内存，堪比一个随身携带的小型服务器了。</p>\n  <p data-track=\"61\">随着端侧算力的暴涨，未来的手机将成为一个<strong>边缘计算</strong>（Edge Computing）的强力节点。</p>\n  <p data-track=\"62\">翁欣旦做了一个极具画面感的假设：</p>\n  <blockquote>\n   <p data-track=\"63\">如果我们在会场搞一个彩蛋，让现场几百人同时拿出手机，用AI功能生成一个特效。如果完全依赖云端推理，这一瞬间的并发请求，足以把后端的推理算力打爆。</p>\n   <p data-track=\"64\">如果连一个彩蛋特效都能把几百人的推理算力打爆，那云端永远无法承载亿级用户的实时AI互动。</p>\n  </blockquote>\n  <p data-track=\"65\">未来的AI体验，一定是<strong>“云侧训练 + 端侧推理”</strong>的混合模式。</p>\n  <p data-track=\"66\">云端负责这一代模型的智力上限，而终端负责让这份智力随时随地、无延迟地服务于人。</p>\n  <p data-track=\"67\">在这个架构下，终端开发者的价值非但没有被稀释，反而因为要承载模型推理、保障隐私安全、处理极端场景而变得更加核心。</p>\n  <p data-track=\"69\">最后，我们还需要讨论一个问题：</p>\n  <p data-track=\"70\">既然前端没死，终端依然重要，那程序员的焦虑到底来自哪里？</p>\n  <p data-track=\"71\">很多时候，焦虑或许源于对新技术的误解，我们往往高估了技术的短期爆发力，而低估了它的长期渗透力。</p>\n  <p data-track=\"72\">翁欣旦讲了一个关于<strong>多点触控</strong>的故事。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_0d5ce3b4e577c2812ef54ab3eea065a3.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_0d5ce3b4e577c2812ef54ab3eea065a3.jpeg\">\n  </div>\n  <p data-track=\"73\">当乔布斯在2007年的发布会上，用两根手指放大一张照片，全场惊呼“Apple invented Multi-touch”时，事实并非如此。</p>\n  <p data-track=\"74\">早在1970年代，多点触控的原型就已经在实验室里诞生；1999年，Fingerworks公司就开始将这项技术商业化。</p>\n  <p data-track=\"75\">苹果在2005年收购了这家公司，经过两年的打磨，才把它变成了iPhone上那个改变世界的交互。</p>\n  <p data-track=\"76\">从技术原型到产品爆发，中间隔了<strong>整整37年</strong>。</p>\n  <p data-track=\"77\">AI亦是如此。</p>\n  <p data-track=\"78\">Transformer架构虽然是2017年才提出，但神经网络的理论基础早在1980年就已经成熟。</p>\n  <p data-track=\"79\">为什么当年没火？因为那是局域网时代，没有海量的数据去喂养它。是互联网这30年积累的浩如烟海的文本、图片、视频数据，才让Transformer在今天有了用武之地。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_dbbf2d8a283a7d5cebd90f3d7e807c1c.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_dbbf2d8a283a7d5cebd90f3d7e807c1c.jpeg\">\n  </div>\n  <p data-track=\"80\">技术本身可能早已就位，缺的是应用体验的临门一脚，这正是前端和终端程序员的机会所在。</p>\n  <p data-track=\"81\">现在的AI技术，就像是一把刚刚铸好且性能强悍的锤子。但到底要钉什么钉子？钉多深？钉完之后是不是歪的？这需要人来把控。</p>\n  <p data-track=\"82\">用翁欣旦的话来说就是，<strong>应用是新技术的量尺，体验是C端应用的灵魂。</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251202063738_84a102b062d24eba4827833330f1b857.jpeg\" alt=\"前端没死，AI APP正在返祖\" data-src=\"https://image.jido.dev/20251202063738_84a102b062d24eba4827833330f1b857.jpeg\">\n  </div>\n  <p data-track=\"83\">大模型给出了概率性的预测，但用户需要的是确定性的服务：</p>\n  <p data-track=\"84\">大模型能生成一段代码，但它无法理解这段代码在复杂业务场景下的副作用；大模型能画出一张图，但它不知道这张图在弱网环境下该如何优雅地加载。</p>\n  <p data-track=\"85\">“不要因为AI来了，就急着丢掉手里的螺丝刀。”</p>\n  <p data-track=\"86\">那些看似枯燥的工程能力——</p>\n  <p data-track=\"87\">如何优化首屏加载时间，如何处理内存泄漏，如何在高并发下保证稳定性，如何在复杂的手机碎片化环境中保证UI一致性，这些对抗熵增的经验，才是AI无法替代的护城河。</p>\n  <p data-track=\"88\">一言蔽之，机器学不会的对体验的极致敏感度，正是优秀的前端工程师的价值所在。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章深度剖析 AI 时代前端和终端开发面临的挑战与机遇，强调复杂度转移、交互返祖与端侧算力核心价值，重塑前端工程师定位。",
+  "oneSentenceSummary": "文章深度剖析 AI 时代前端和终端开发面临的挑战与机遇，强调复杂度转移、交互返祖与端侧算力核心价值，重塑前端工程师定位。",
+  "summary": "文章引用蚂蚁集团终端技术委员会负责人翁欣旦的观点，指出 AI 并未杀死前端，而是将技术复杂度从物理堆叠迁移至数字堆叠。AI 应用界面看似“返祖”的极简背后，是交互模式从 CUI 到 GUI 再到 CUI 与 GUI 共生的轮回，以及架构从宽泛 API 到语义化 API 的演进，这实则是在“清算技术债”。文章进一步强调，云端万能论忽略了网络和算力的物理限制，未来 AI 体验将是“云侧训练 + 端侧推理”的混合模式，使终端成为边缘计算强节点。最终，文章指出前端工程师的价值在于对体验的极致敏感度和对抗熵增的工程能力，这些是 AI 无法替代的护城河，为前端从业者指明了方向。",
+  "mainPoints": [
+    {
+      "point": "AI 并未消除复杂度，而是将其从物理硬件转移到数字堆叠，前端需清算技术债。",
+      "explanation": "复杂度以模型、接口、网络、算力等形式存在，AI 时代促使开发者重新审视并优化过去为灵活性牺牲的架构和语义，以适应大模型理解与调用。"
+    },
+    {
+      "point": "AI 应用的交互模式正经历“返祖”，未来是 CUI 与 GUI 的深度融合。",
+      "explanation": "AI 应用界面趋于极简，但纯 CUI 效率低下，未来的交互将是 GUI 处理高频确定性操作，CUI 负责长尾复杂意图理解的共生模式。"
+    },
+    {
+      "point": "云端万能论忽略物理限制，终端将成为“云侧训练+端侧推理”的核心节点。",
+      "explanation": "网络和算力是云端 AI 的硬性限制，终端设备算力暴涨使其成为边缘计算强节点，保障 AI 体验的实时性和可用性。"
+    },
+    {
+      "point": "前端工程师的工程能力和对体验的极致敏感度是 AI 无法替代的核心价值。",
+      "explanation": "优化加载、处理内存、保证稳定性、UI 一致性等对抗熵增的工程经验，以及对 C 端用户体验的深刻理解，是前端在 AI 时代的护城河。"
+    }
+  ],
+  "keyQuotes": [
+    "前端程序员的宿命从未改变，永远在对抗熵增（复杂系统）。但在 AI 时代，是时候要清算一下技术债了。",
+    "如果小手轻轻一点就能办妥的事，用户为什么要打开一个 Agent，跟它絮絮叨叨讲上一分钟？",
+    "未来的 AI 体验，一定是'云侧训练 + 端侧推理'的混合模式。",
+    "应用是新技术的量尺，体验是 C 端应用的灵魂。",
+    "不要因为 AI 来了，就急着丢掉手里的螺丝刀。"
+  ],
+  "tags": [
+    "前端开发",
+    "AI应用",
+    "终端技术",
+    "软件架构",
+    "边缘计算"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 92,
+  "wordCount": 3322,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764654715000,
+  "publishDateStr": "2025-12-02",
+  "publishDateTimeStr": "2025-12-02 05:51:55"
+}

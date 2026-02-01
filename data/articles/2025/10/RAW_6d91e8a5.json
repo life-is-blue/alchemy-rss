@@ -1,0 +1,54 @@
+{
+  "id": "RAW_6d91e8a5",
+  "title": "优步凭借 CacheFront 的改进实现每秒 1.5 亿次的读取操作",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651259312&idx=4&sn=bcf786dad988dce4ba13e5f04fa59b43",
+  "date": "2025-10-19 02:16:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 张卫滨 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">优步的工程师更新了 CacheFront 的架构，以满足每秒钟 1.5 亿次的读取操作，同时确保了更强的一致性。这次更新解决了延迟敏感的服务中陈旧数据的读取问题，并通过引入新的写入一致性协议、与 Docstore 的更紧密协作以及对优步 Flux 流系统进行改进，支持了不断增长的需求。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在早期的 CacheFront 设计中，通过消除请求重复并将频繁访问的键缓存在靠近应用服务的地方，实现了每秒 4000 万次读取的高吞吐量。虽然这种模型在可扩展性方面非常有效，但它缺乏强大的端到端一致性，这对于需要最新数据的工作负载来说是无法满足需求的。缓存失效依赖于生存时间（time-to-live，TTL）和变更数据捕获（change data capture，CDC），这实现了最终一致性并延迟了更新的可见性。这会造成特定的问题：在读取 - 拥有 - 写入（read-own-write）不一致性中，一条被读取、缓存然后更新的数据行可能会继续提供陈旧的值，直到它无效或过期。负缓存（存储“未找到”的结果）即使在行被插入后也可能返回错误的未命中结果，这可能会破坏读取 - 拥有 - 插入（read-own-insert）不一致性中的服务逻辑。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img data-imgfileid=\"503775618\" class=\"rich_pages wxw-img\" data-ratio=\"0.4\" data-type=\"png\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=ff528207&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VPNOHaF11YA8iariazKxdvhNAQseYoT1bA1hJub5VAWF1EOeTt4RibDGiaJBHkbsLVfrg7ZNTo67Y4uIQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">CacheFront 以前的读写失效路径（图片来源：Uber Engineering 的博客文章）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">新的实现引入了写入一致性协议以及位于查询引擎和 Flux（优步的流更新系统）之间的去重层。现在每个 CacheFront 节点在提供响应之前都会与 Docstore 验证数据的新鲜度。存储引擎层包括用于已删除行的墓碑标记和用于 MySQL 会话分配的严格单调时间戳。这些机制允许系统在提交前高效地识别和读取所有修改过的键，包括删除操作，确保即使在高负载下也不会提供陈旧的数据。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img data-imgfileid=\"503775619\" class=\"rich_pages wxw-img\" data-ratio=\"0.4\" data-type=\"png\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=ff528207&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VPNOHaF11YA8iariazKxdvhNAQseYoT1bA1hJub5VAWF1EOeTt4RibDGiaJBHkbsLVfrg7ZNTo67Y4uIQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">改进后的 CacheFront 写路径与失效（图片来源：Uber Engineering 的博客文章）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">当事务完成时，存储引擎会返回提交时间戳和受影响行键的集合。在这些响应上注册的回调会立即通过写入失效标记来使 Redis 中先前缓存的条目失效。Flux 继续尾随 MySQL binlogs 并执行异步缓存填充。这三种缓存填充机制：直接查询引擎更新、失效标记和 TTL 过期，结合 Flux 尾随，协同工作以便在支持极高读取吞吐量的同时保持强一致性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">优步的工程师 Preetham Narayanareddy 和 Eli Pozniansky 解释了改进背后的动机：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">对更高的缓存命中率和更强的一致性保证的需求在不断增加。使用 TTL 和 CDC 进行缓存失效的最终一致性在某些用例中成为了限制因素。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">通过这次集成，优步的工程师还能够弃用并移除之前引入的专用 API，减少了运维复杂性并简化了系统。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">优步工程师增强了遥测和可观测性仪表板，以监控缓存健康和实时 binlog 尾随。缓存分片被重新组织以均匀分配负载。Cache Inspector 工具构建在与 Flux 相同的 CDC 管道上，它会将 binlog 事件与缓存中存储的条目进行比较。这些更新允许将表的 TTL 延长至 24 小时，将缓存命中率提高到 99.9% 以上，同时保持低延迟。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Uber Achieves 150M Reads per Second with CacheFront Improvements（<a href=\"https://www.infoq.com/news/2025/10/uber-cachefront-150m-reads/）\" target=\"_blank\">https://www.infoq.com/news/2025/10/uber-cachefront-150m-reads/）</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "优步通过改进 CacheFront 架构，引入写入一致性协议和与 Docstore 协作，实现了每秒 1.5 亿次读取并确保强一致性。",
+  "oneSentenceSummary": "优步通过改进 CacheFront 架构，引入写入一致性协议和与 Docstore 协作，实现了每秒 1.5 亿次读取并确保强一致性。",
+  "summary": "文章深入介绍了优步如何通过对 CacheFront 缓存系统的架构升级，成功将读取操作从每秒 4000 万次提升至 1.5 亿次，同时解决了早期设计中因最终一致性导致的陈旧数据问题。新架构的核心在于引入了写入一致性协议，与 Docstore 存储系统紧密协作以验证数据新鲜度，并在查询引擎和优步的 Flux 流系统之间增加了去重层。为确保数据强一致性，存储引擎层引入了已删除行的墓碑标记和 MySQL 会话的严格单调时间戳。事务完成后，系统会立即通过写入失效标记使 Redis 中先前缓存的条目失效，并结合 Flux 异步填充缓存。这些机制协同工作，确保了即使在高并发下也能提供最新且强一致的数据。此外，优步工程师还弃用了冗余 API，增强了遥测和可观测性，并通过 Cache Inspector 工具提升了系统稳定性，最终实现了 99.9% 以上的缓存命中率和低延迟。",
+  "mainPoints": [
+    {
+      "point": "引入写入一致性协议和与 Docstore 协作，解决了陈旧数据问题",
+      "explanation": "通过在提供响应前与 Docstore 验证数据新鲜度，并在事务完成后立即失效缓存，确保了即使在高并发下也能提供强一致的最新数据，避免了“读-写-拥有”不一致性。"
+    },
+    {
+      "point": "结合多种缓存填充与失效机制，实现了高吞吐量与强一致性的平衡",
+      "explanation": "通过直接查询引擎更新、写入失效标记、TTL 过期与 Flux 尾随相结合，在支持每秒 1.5 亿次读取的同时，有效保持了数据的新鲜度和一致性。"
+    },
+    {
+      "point": "系统优化降低了运维复杂性并显著提升了可观测性",
+      "explanation": "弃用并移除专用 API 简化了系统，同时增强遥测、可观测性仪表板和 Cache Inspector 工具，使得缓存健康和实时 binlog 尾随监控更高效，提升了系统稳定性。"
+    }
+  ],
+  "keyQuotes": [
+    "对更高的缓存命中率和更强的一致性保证的需求在不断增加。",
+    "使用 TTL 和 CDC 进行缓存失效的最终一致性在某些用例中成为了限制因素。",
+    "这些机制允许系统在提交前高效地识别和读取所有修改过的键，包括删除操作，确保即使在高负载下也不会提供陈旧的数据。",
+    "这三种缓存填充机制：直接查询引擎更新、失效标记和 TTL 过期，结合 Flux 尾随，协同工作以便在支持极高读取吞吐量的同时保持强一致性。"
+  ],
+  "tags": [
+    "架构设计",
+    "分布式缓存",
+    "一致性模型",
+    "高并发",
+    "流处理"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1103,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760840160000,
+  "publishDateStr": "2025-10-19",
+  "publishDateTimeStr": "2025-10-19 02:16:00"
+}

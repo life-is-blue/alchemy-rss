@@ -1,0 +1,54 @@
+{
+  "id": "RAW_b93eee00",
+  "title": "8B 端侧写作智能体 AgentCPM-Report 开源，DeepResearch 终于本地化",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651273321&idx=4&sn=f6d6f9065928d26ae8a7cb7c442f8a8d",
+  "date": "2026-01-27 14:28:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 作者 | 褚杏娟 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">1 月 20 日，由清华大学自然语言处理实验室、中国人民大学、面壁智能与 OpenBMB 开源社区联合研发的 8B 端侧写作智能体 AgentCPM-Report 正式开源。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在当前深度研究场景中，企业与科研人员常面临两难抉择：依赖云端大模型虽能获得顶级调研能力，却需承担核心数据泄密风险；选择断网或本地小模型保障安全，又往往因性能局限导致报告逻辑浅薄、实用性不足。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为此，AgentCPM-Report 以端侧模型为核心，来实现本地化部署与 SOTA 性能的双重突破，力求无需昂贵算力集群，也无需上传任何信息，即可在本地构建专家级调研助手。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">据悉，该智能体的核心亮点集中在两大维度。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">第一，极致效能与“以小博大”的突破：通过平均 40 轮深度检索与近 100 轮思维链推演，AgentCPM-Report 以仅 8B 的参数规模，实现了对复杂信息的全方位挖掘与重组，能够产出逻辑严密、洞察深刻的万字长文，在深度调研任务上性能对标顶级闭源系统。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">第二，物理隔绝的本地安全保障：专为高隐私场景设计，支持完全离线的敏捷部署，彻底杜绝云端泄密风险；依托开源的 UltraRAG 框架，可高效挂载并理解本地私有知识库，让核心机密数据在\"不出域\"的前提下，转化为高价值的专业决策报告。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 DeepResearch Bench、Deep Consult、DeepResearch Gym 三大主流深度调研评测基准中，其综合评分达到甚至超越顶级闭源系统：在最考验核心能力的洞察性指标上排名第一，全面性指标位居第一梯队，仅次于基于 Claude 的复杂写作框架。其中在 DeepResearch Gym 评测中，AgentCPM-Report 以 98.48 的综合得分领跑，在深度、广度、洞察力等关键维度均斩获满分。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503789638\" style=\"width: 100%;\" data-type=\"png\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=6cc4fb55&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VP1jDT4SLdQkm2vicf53PDzx4DWiaibg36RibuWfo7rSiaYkJcViblXJMSCQFfia0bOgzSBNqLjiaJE6jsRCg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">官方展示的实战场景中，该智能体可基于《三体》原文知识库，完成从线索挖掘、大纲规划到万字长文撰写的全流程，精准生成\"面壁计划\"深度调查报告。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">部署便捷性方面，AgentCPM-Report 支持 Docker 一键启动，无需编写代码即可通过拖拽方式将 PDF、TXT 等本地文档导入后台，系统自动完成切片与向量化索引，用户输入研究课题后，即可生成结构化、带引用的专业报告，实现沉浸式深度调研体验。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">技术层面，两大创新支撑其“以弱胜强”的表现：一是“写作即推理”模式，通过“起草 - 深化”两阶段循环与渐进式优化，将长篇写作拆解为微小目标，避免小模型逻辑崩塌；二是“多阶段智能体学习”，拆解智能检索、流畅写作、科学规划、精准决策四大核心能力，通过有监督微调、原子能力强化、全流程优化三阶段训练，实现端到端全链路能力提升。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">目前，AgentCPM-Report 已在 GitHub、HuggingFace、ModelScope、GitCode、魔乐社区等多个平台开源，UltraRAG 框架也同步开放获取。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">UltralRAG 框架开源地址：</span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://github.com/OpenBMB/UltraRAG\" target=\"_blank\">https://github.com/OpenBMB/UltraRAG</a></span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">GitHub：</span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://github.com/OpenBMB/AgentCPM\" target=\"_blank\">https://github.com/OpenBMB/AgentCPM</a></span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">HuggingFace：</span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://huggingface.co/openbmb/AgentCPM-Report\" target=\"_blank\">https://huggingface.co/openbmb/AgentCPM-Report</a></span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">ModelScope：</span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://modelscope.cn/models/OpenBMB/AgentCPM-\" target=\"_blank\">https://modelscope.cn/models/OpenBMB/AgentCPM-</a></span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">Report</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">GitCode：</span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://gitcode.com/OpenBMB/AgentCPM\" target=\"_blank\">https://gitcode.com/OpenBMB/AgentCPM</a></span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">魔乐社区：</span><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\"><a href=\"https://modelers.cn/models/OpenBMB/AgentCPM-Report\" target=\"_blank\">https://modelers.cn/models/OpenBMB/AgentCPM-Report</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "清华、面壁智能等联合开源 8B 端侧写作智能体 AgentCPM-Report，通过“写作即推理”模式在本地实现 SOTA 级的深度调研与长文撰写能力。",
+  "oneSentenceSummary": "清华、面壁智能等联合开源 8B 端侧写作智能体 AgentCPM-Report，通过“写作即推理”模式在本地实现 SOTA 级的深度调研与长文撰写能力。",
+  "summary": "本文介绍了由清华大学、中国人民大学及面壁智能联合研发的开源端侧写作智能体 AgentCPM-Report。该模型仅 8B 参数，却能通过平均 40 轮深度检索与近 100 轮思维链推演，在本地环境下产出逻辑严密的万字调研报告。其核心优势在于“物理隔绝”的安全性，解决了企业深度研究中核心数据泄密的风险。技术上，它采用“写作即推理”模式，将长篇写作拆解为微小目标，并通过多阶段智能体学习强化检索、写作、规划与决策能力。在 DeepResearch 等主流评测中，其洞察性指标位居第一，展现了端侧模型“以小博大”的潜力。",
+  "mainPoints": [
+    {
+      "point": "AgentCPM-Report 实现了端侧模型在深度调研场景下的“以小博大”。",
+      "explanation": "凭借 8B 参数规模，通过高频次的深度检索与思维链推演，在洞察力等关键指标上对标甚至超越顶级闭源云端系统。"
+    },
+    {
+      "point": "“写作即推理”模式有效解决了小模型在长文写作中的逻辑崩塌问题。",
+      "explanation": "通过“起草-深化”两阶段循环与渐进式优化，将复杂的长篇写作任务拆解为可控的微小目标，确保逻辑严密性。"
+    },
+    {
+      "point": "物理隔绝的本地化部署为高隐私场景提供了安全保障。",
+      "explanation": "支持完全离线运行，依托 UltraRAG 框架挂载本地知识库，确保核心机密数据在“不出域”的前提下转化为决策报告。"
+    }
+  ],
+  "keyQuotes": [
+    "写作即推理",
+    "AgentCPM-Report 以仅 8B 的参数规模，实现了对复杂信息的全方位挖掘与重组，能够产出逻辑严密、洞察深刻的万字长文。",
+    "在最考验核心能力的洞察性指标上排名第一，全面性指标位居第一梯队。",
+    "让核心机密数据在'不出域'的前提下，转化为高价值的专业决策报告。"
+  ],
+  "tags": [
+    "AgentCPM-Report",
+    "端侧大模型",
+    "Deep Research",
+    "面壁智能",
+    "UltraRAG"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1147,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1769524080000,
+  "publishDateStr": "01-27",
+  "publishDateTimeStr": "2026-01-27 14:28:00"
+}

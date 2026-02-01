@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b70779",
+  "title": "GitHub Copilot 现已支持在 Windows 终端中运行",
+  "url": "https://www.infoq.com/news/2025/03/github-copilot-windows-terminal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-27 00:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub Copilot's integration into Windows Terminal Canary introduces an AI-driven feature called Terminal Chat, enabling users to receive command suggestions and explanations directly within the terminal environment. This integration is accessible to all GitHub Copilot subscribers, including Individual, Business, and Enterprise users.</p>\n   <p><br>\n     Terminal Chat allows users to interact with an AI service to obtain intelligent suggestions relevant to their terminal context. This feature does not include its own large-language model but can be managed through Group Policy settings. To utilize this feature, users need a subscription to GitHub Copilot and the latest build of Windows Terminal Canary. After authenticating their GitHub account within the Terminal Chat settings, users can engage with GitHub Copilot directly in the terminal. ​</p>\n   <p><br>\n     The integration of GitHub Copilot into Windows Terminal is important because it brings AI-powered assistance directly into a traditionally manual environment, enabling developers to receive real-time command suggestions and explanations without leaving the terminal. This reduces context-switching, accelerates learning, and helps prevent errors, particularly for users working with complex or unfamiliar command-line tasks. By leveraging the user’s current context, the feature provides tailored guidance that supports more efficient workflows in areas like development, system administration, and DevOps. &nbsp;​</p>\n   <p>Moreover, the feature demonstrates how AI services can be contextually aware within specialized environments. Unlike general-purpose AI tools, Terminal Chat leverages the user’s current working context to provide tailored suggestions, aligning with the specific tasks or challenges at hand. It also highlights the trend of integrating AI capabilities not as standalone tools, but as embedded components within existing developer workflows.</p>\n   <p><br>\n     Christopher Nguyen, Product Manager II for Windows Terminal, <a href=\"https://devblogs.microsoft.com/commandline/github-copilot-in-windows-terminal/\">noted in the article that</a>, \"GitHub Copilot users can now use the power of GitHub Copilot to get command suggestions and explanations without leaving the terminal with Terminal Chat in Windows Terminal Canary.\" ​This underscores the focus on reducing friction in development environments, making support tools more accessible exactly where they are needed.</p>\n   <p data-end=\"2104\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"1779\">In a broader context, this feature illustrates how developer tools are evolving to incorporate intelligent systems that adapt to user needs. It aligns with ongoing efforts to make software development more efficient and less error-prone, especially as the complexity of systems and the speed of delivery continue to increase.</p>\n   <p data-end=\"2104\" data-is-last-node=\"\" data-is-only-node=\"\" data-start=\"1779\"><br>\n     By incorporating AI assistance directly into the terminal, developers can streamline their workflows, reduce context-switching, and focus more on problem-solving and collaboration. This integration exemplifies the evolving landscape of development environments, where AI tools are becoming integral components in enhancing coding efficiency and developer experience.<br>\n     &nbsp;</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Copilot Can Now Run in Windows Terminal\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/github-copilot-windows-terminal/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1743084000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub Copilot 通过 Windows 终端 Canary 版本的终端助手功能，为开发者在终端内提供 AI 命令建议和解释。",
+  "oneSentenceSummary": "GitHub Copilot 通过 Windows 终端 Canary 版本的终端助手功能，为开发者在终端内提供 AI 命令建议和解释。",
+  "summary": "GitHub Copilot 通过终端助手集成到 Windows 终端 Canary 版本中，为开发者提供 AI 驱动的命令建议和解释。所有 GitHub Copilot 用户，包括个人版、商业版和企业版用户，都可以使用终端助手与 AI 服务交互，获取与终端上下文相关的智能建议，从而提高效率并减少错误。这项功能体现了 AI 服务在特定环境中的上下文感知能力，能够有效提升开发效率，减少错误。",
+  "mainPoints": [
+    {
+      "point": "GitHub Copilot 集成到 Windows 终端中，显著提升了开发效率，减少了错误。",
+      "explanation": "开发人员无需离开终端即可获得实时的命令建议和解释，减少环境切换，加速学习过程，并有助于避免错误。"
+    },
+    {
+      "point": "终端助手利用用户的当前工作环境来提供高度定制化的建议。",
+      "explanation": "与通用的 AI 工具不同，终端助手能够根据用户当前面临的特定任务或挑战，提供量身定制的帮助。"
+    },
+    {
+      "point": "终端助手的集成体现了 AI 辅助开发工具的发展趋势，即与现有工作流程的深度融合。",
+      "explanation": "通过将 AI 助手直接整合到终端中，开发人员可以简化工作流程，减少环境切换，更专注于解决问题和协作。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub Copilot 用户现在可以通过 Windows 终端 Canary 版本中的终端助手功能，直接在终端内获取 GitHub Copilot 提供的命令建议和解释。",
+    "所有 GitHub Copilot 订阅者，包括个人版、商业版和企业版用户，均可使用此集成功能。",
+    "通过将 AI 助手直接整合到终端中，开发人员可以简化其工作流程，减少环境切换，更专注于解决问题和协作。"
+  ],
+  "tags": [
+    "AI辅助开发",
+    "AI辅助编码",
+    "GitHub Copilot",
+    "Windows 终端",
+    "终端助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 409,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1743033600000,
+  "publishDateStr": "2025-03-27",
+  "publishDateTimeStr": "2025-03-27 00:00:00"
+}

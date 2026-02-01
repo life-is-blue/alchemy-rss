@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c2a25792",
+  "title": "字节 Seed：大概念模型来了，推理的何必是下一个 token",
+  "url": "https://www.qbitai.com/2026/01/366544.html",
+  "date": "2026-01-05 04:52:04",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"65\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"66\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">LLM的下一个推理单位，何必是Token？</p>\n  <p data-track=\"4\">刚刚，字节Seed团队发布最新研究——</p>\n  <p data-track=\"5\"><strong>DLCM（Dynamic Large Concept Models）</strong>将大模型的推理单位从token（词） 动态且自适应地推到了concept（概念）层级。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=YWE5YjM2N2MyNjM0NzYwNjYzMTg0YjVkMGM0YTU3YmUsMTc2NzU4ODE2ODExMQ==\" data-ic=\"false\" data-width=\"1080\" data-height=\"475\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">DLCM通过<strong>端到端地方式学习语义边界，动态地将Token序列分割成概念，在压缩后的概念空间中进行深度推理，并借助因果交叉注意力将概念级推理结果重构为Token级预测</strong>。</p>\n  <p data-track=\"7\">由此，传统LLM中基于均匀、冗余Token信息密度的计算分配，被转化为面向概念的动态推理与自适应算力分配。</p>\n  <p data-track=\"8\">在以推理为主的基准任务上，DLCM在将推理阶段FLOPs降低<strong>34%</strong>的同时，还将平均准确率提升了<strong>2.69%</strong>。</p>\n  <p data-track=\"9\">这也意味着，大模型的推理效率并不必然依赖更密集的Token级计算，而可以通过更高层级的语义组织来获得。</p>\n  <p data-track=\"10\">接下来，我们具体来看。</p>\n  <p data-track=\"12\">如上所说，DLCM的核心在于学习动态的Token-概念映射，实现了计算资源的自适应分配。</p>\n  <p data-track=\"13\">之所以这样做主要有两方面原因：</p>\n  <p data-track=\"14\">一方面，在自然语言中，信息的分布并不是均匀的，而是集中在集中在少数语义转换的节点上。</p>\n  <p data-track=\"15\">然而，在当前的LLM中，所有token被统一处理，信息密度不均匀的自然语言消耗了同样的计算量，造成了大量的冗余与模型容量的错配。</p>\n  <p data-track=\"16\">另一方面，此前基于潜在推理的框架，如大型概念模型（Large Concept Model, LCM）等，不仅需要单独训练编码器和解码器，还依赖人为划分的固定的、句子级别的粒度，缺乏拓展性与自适应性。</p>\n  <p data-track=\"17\">针对这些问题，DLCM通过一种分层的下一token预测框架，将计算重心转移到压缩后的语义空间，实现了更高效的深度推理。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=N2E1ZGFmMWM0NWRlMjgxMGE2ZjUzZjllZGU3YmU1OTMsMTc2NzU4ODE2ODExMQ==\" data-ic=\"false\" data-width=\"1080\" data-height=\"399\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">具体来说，这一框架包含四个阶段：</p>\n  <p data-track=\"19\">首先，在<strong>编码阶段</strong>，DLCM通过一个编码器，提取细粒度的Token级表示，捕获局部上下文信息，作为边界检测和最终Token级解码的基础。</p>\n  <p data-track=\"20\">接下来，在<strong>动态分割</strong>阶段，模型基于Token级表示，计算相邻Token之间在潜在空间中的局部不相似性（使用余弦距离），当不相似度超过阈值时，模型判断为一个语义断点（概念边界）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=ZDcxZjI2MmFiYmNmYTkxNGQxOGZmZmM0MjRhNWUzZTQsMTc2NzU4ODE2ODExMQ==\" data-ic=\"false\" data-width=\"884\" data-height=\"114\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">与固定句子长度不同，DLCM端到端地学习这些边界，实现内容自适应的分割。</p>\n  <p data-track=\"22\">它将同一片段内（即同一概念内）的所有Token表示进行均值池化（Mean Pooling），然后投影到更高维度的概念维度上，最终形成一个长度大大压缩的概念序列 。</p>\n  <p data-track=\"23\">然后，在<strong>概念级推理</strong>阶段，模型将上面得到的概念序列在压缩空间中进行深度的、高容量的推理，得到经过深度推理和信息整合后的概念表示。</p>\n  <p data-track=\"24\">最后，在<strong>Token级解码阶段</strong>，DLCM利用经过推理的概念表示，重构并预测下一个token。</p>\n  <p data-track=\"25\">由此，DLCM通过以上四个步骤，成功地将计算分配从低效的Token-Token交互，转移到高效的Token-概念-Token 交互，实现了计算资源的自适应、结构化利用。</p>\n  <p data-track=\"27\">虽然DLCM架构在设计上实现了Token级和概念级模块的异构，但同时也引入了新的工程和训练挑战。</p>\n  <p data-track=\"29\">DLCM 的核心优势在于它能够根据信息密度动态地划分概念。</p>\n  <p data-track=\"30\">例如，对于信息冗余度高的代码或简单文本，可以激进地压缩；对于语义复杂的转折点，则保持较低压缩比。</p>\n  <p data-track=\"31\">为实现这一点，研究引入了<strong>全局解析器（Global Parser）</strong>和辅助损失函数。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=Y2I4ZmM1YmIzM2E4ZDdlZTUyMzZhNDg2MDIzYjczN2QsMTc2NzU4ODE2ODExMQ==\" data-ic=\"false\" data-width=\"1080\" data-height=\"119\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"32\">这个机制的关键在于：它不要求单个序列严格遵循目标压缩比 ，而是在整个Batch层面约束平均边界生成率。</p>\n  <p data-track=\"33\">这使得DLCM在共享全局压缩比例目标的前提下，实现了随领域变化、随内容波动的自适应分段，从而将计算资源精准地分配到语义最关键的区域。</p>\n  <p data-track=\"35\">在解码阶段，Token需要通过因果交叉注意力关注其所属的概念。</p>\n  <p data-track=\"36\">由于每个概念包含的Token数量是变化的，如果直接实现，会严重依赖效率低下的动态掩码和不规则的内存访问。</p>\n  <p data-track=\"37\">针对这一问题，研究引入<strong>概念复制（Concept Replication）</strong>策略。它将概念特征沿着序列维度复制扩展，使其长度与原始Token序列对齐。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=MzU5MDQ3NWM3ZTEwMDkyNzNkOWQ2ZmJlNzhlZGRhYTQsMTc2NzU4ODE2ODExMQ==\" data-ic=\"false\" data-width=\"1080\" data-height=\"677\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">由此，研究将复杂的可变长交叉注意力问题转换为长度对齐、局部恒定的注意力问题，并使其能够利用高度优化的Flash Attention Varlen内核，获得了1.26倍到1.73倍的显著加速。</p>\n  <p data-track=\"40\">由于DLCM 的Token级组件和概念级骨干网络的宽度不一致，通过上投影连接，无法共享单一有效学习率。</p>\n  <p data-track=\"41\">为解决这一问题，研究采用解耦的最大更新参数化，为Token模块和概念模块分配了独立的宽度缩放因子，并发现各组件的有效学习率应与其宽度的倒数成比例缩放。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=MWUyZTQ4YjllMjRlYTUzZWQyYTVjZTdkYTg5MWEyMjUsMTc2NzU4ODE2ODExMQ==\" data-ic=\"false\" data-width=\"1080\" data-height=\"329\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"42\">由此，研究成功地稳定了这种不等宽架构的训练，并实现了零样本超参数迁移，即小型代理模型上找到的最佳学习率可以直接用于训练更大的DLCM模型。</p>\n  <p data-track=\"44\">除上述优化外，研究还进一步基于scaling law探究了token级处理与概念级推理之间的最优分配。</p>\n  <p data-track=\"45\">研究发现，在固定压缩比下，架构效率在中等概念主干占比处达到峰值，而非随概念容量单调提升。</p>\n  <p data-track=\"46\">更重要的是，这一最优配置在规模增大时优势愈发明显：随着基线模型变大，在性能对齐的前提下，DLCM可实现越来越显著的FLOPs节省。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=YWU2NTNlZTE1Y2U1MmU1NjZiYTFiMDE4OGNkNDI3ZjksMTc2NzU4ODE2ODExMg==\" data-ic=\"false\" data-width=\"1080\" data-height=\"935\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\">在实验阶段，研究采用了与LLaMA论文中报告的相同的全局批次大小、学习率和序列长度，让每个模型都在1T Token上进行训练。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=OTI0Y2IxYjkwNmU2Y2VjZmRiYTdjNjM5Zjc2Yjg0MzAsMTc2NzU4ODE2ODExMg==\" data-ic=\"false\" data-width=\"644\" data-height=\"632\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"48\">其中，DLCM实现了43.92%的平均准确率，超过了基线模型41.23%的分数，提升了2.69%。</p>\n  <p data-track=\"50\">这篇论文的一作来自英国曼彻斯特大学的在读博士生<strong>Qu Xingwei</strong>，师从<strong>Chenghua Lin</strong>教授。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=ZDc1NzE2M2ExOTUyZjJkNTUyMmYxM2E5NWQzZDJlZGQsMTc2NzU4ODE2ODExMg==\" data-ic=\"false\" data-width=\"800\" data-height=\"800\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"51\">他的研究方向聚焦于大语言模型（LLMs），主要包括预训练、微调、专家混合（Mixture of Experts）以及System-2大语言模型。</p>\n  <p data-track=\"52\">在教育背景方面，他本科毕业于北京航空航天大学，导师为<strong>段海滨</strong>教授；硕士就读于获慕尼黑工业大学，导师为<strong>Daniel Cremers</strong>教授。</p>\n  <p data-track=\"53\">在读博前，他曾在字节跳动和小鹏汽车担任研究工程师。</p>\n  <p data-track=\"54\">参考链接</p>\n  <p data-track=\"55\">[1]https://x.com/GeZhang86038849</p>\n  <p data-track=\"56\">[2]https://arxiv.org/abs/2512.24617</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "字节 Seed 团队提出的 DLCM 模型将大模型的推理单位从 Token 层级动态推至概念（Concept）层级，显著提升推理效率并提高准确率。",
+  "oneSentenceSummary": "字节 Seed 团队提出的 DLCM 模型将大模型的推理单位从 Token 层级动态推至概念（Concept）层级，显著提升推理效率并提高准确率。",
+  "summary": "字节 Seed 团队最新发布的 DLCM（Dynamic Large Concept Models）研究，提出了一种将大模型推理单位从传统 token 层级动态自适应推向 concept（概念）层级的新方法。DLCM 通过端到端地学习语义边界，将 Token 序列分割成概念，在压缩后的概念空间中进行深度推理，并通过因果交叉注意力将概念级推理结果重构为 Token 级预测。这项技术的核心优势在于能根据信息密度动态分配计算资源，实现高效深度推理。实验结果显示，DLCM 在推理阶段 FLOPs 可降低 34%，同时平均准确率提升 2.69%。文章详细介绍了 DLCM 的四阶段框架（编码、动态分割、概念级推理、Token 级解码）及其优化策略，如全局解析器、概念复制和解耦的最大更新参数化，旨在解决传统 LLM 中信息密度不均匀导致的计算冗余和效率低下问题。",
+  "mainPoints": [
+    {
+      "point": "DLCM 将大模型的推理单位从 Token 动态调整到 Concept 层级。",
+      "explanation": "传统 LLM 以 Token 为单位进行推理，导致计算资源在信息密度不均的文本中分配冗余。DLCM 通过学习语义边界，将 Token 序列动态分割成概念，在更高维度的概念空间进行推理，从而避免了低效的 Token 级计算。"
+    },
+    {
+      "point": "四阶段框架实现动态概念分割与高效推理。",
+      "explanation": "DLCM 包含编码、动态分割、概念级推理和 Token 级解码四个阶段。它通过计算 Token 间不相似性来识别语义断点，形成自适应长度的概念序列，在压缩的概念空间中进行深度推理，最终解码回 Token 级预测。"
+    },
+    {
+      "point": "DLCM 显著提升了推理效率和模型准确率。",
+      "explanation": "实验结果表明，DLCM 在推理 FLOPs 上降低了 34%，同时平均准确率提升了 2.69%。这证明了通过高层级语义组织进行推理，可以在保持甚至提高性能的同时大幅减少计算量。"
+    },
+    {
+      "point": "采用多项优化策略应对异构架构挑战。",
+      "explanation": "为解决 Token 级和概念级模块宽度不一致、动态掩码效率低等问题，DLCM 引入了全局解析器、概念复制策略和解耦的最大更新参数化，确保了模型训练的稳定性和推理效率。"
+    }
+  ],
+  "keyQuotes": [
+    "DLCM（Dynamic Large Concept Models）将大模型的推理单位从 token（词） 动态且自适应地推到了 concept（概念）层级。",
+    "DLCM 通过端到端地学习语义边界，动态地将 Token 序列分割成概念，在压缩后的概念空间中进行深度推理，并借助因果交叉注意力将概念级推理结果重构为 Token 级预测。",
+    "在以推理为主的基准任务上，DLCM 在将推理阶段 FLOPs 降低 34% 的同时，还将平均准确率提升了 2.69%。",
+    "信息密度不均匀的自然语言消耗了同样的计算量，造成了大量的冗余与模型容量的错配。",
+    "DLCM 的核心优势在于它能够根据信息密度动态地划分概念。"
+  ],
+  "tags": [
+    "大模型",
+    "推理优化",
+    "Transformer",
+    "字节跳动",
+    "DLCM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2336,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767588724000,
+  "publishDateStr": "01-05",
+  "publishDateTimeStr": "2026-01-05 04:52:04"
+}

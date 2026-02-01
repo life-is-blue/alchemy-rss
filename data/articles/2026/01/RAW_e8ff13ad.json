@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e8ff13ad",
+  "title": "毕玄：公司不再按技术栈，划分技术岗位",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg5Mjc3MjIyMA==&mid=2247579535&idx=1&sn=99360d246ac2f7396cf7f724f1a6e67c",
+  "date": "2026-01-24 10:47:00",
+  "author": "阿颖",
+  "siteName": "AI产品阿颖",
+  "content": "<html>\n <head></head>\n <body>\n  <p style=\"margin-left: 8px;margin-right: 8px;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-height=\"809\" data-imgfileid=\"100095883\" data-ratio=\"0.562037037037037\" data-width=\"1440\" data-type=\"png\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=90b452b3&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FvHicVZXtcAzDYppsx5759icaLauyicCh3Peic5TicI5prXBX1dsys1p6jzzicArDm8PMpm6BNjY2fIwyYtibXAibvfD3uw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">他现在在创业，截图里说：</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">公司决定以后不再按技术栈划分技术岗位，所有工程师统一称为 Agent 工程师。任务分配也不再基于你是前端、后端还是算法，而是基于产品目标和项目结果。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">我去，看到这个消息，我非常震惊。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">我们公司也准备这么做。因为我判断，毕玄说的这种协同方式会成为新常态。大厂可能还不会这么激进，但像我们这样的小创业公司应该尽早切到这种模式上。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">在没有 AI 的时代，软件开发的瓶颈主要在人的熟练度。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">不同技术栈的学习曲线差异很大。前端要懂浏览器机制、交互和渲染。后端要懂数据库、并发、接口设计。每一块、每一门语言都很深，一个人的精力有限，不可能全都精通。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">所以前端、后端、运维，包括 Java、Go、Python、Android、iOS，这些都是泾渭分明的工种。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">当技能是稀缺资源时，最有效率的组织方式就是专业分工。让一个人长期深耕某一个技术栈，这样可以形成知识沉淀和效率优势。公司也能通过分工降低培养成本，明确责任边界。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">这背后其实是工业时代的管理逻辑。像流水线一样，把复杂任务拆成模块，每个人负责一段。模块清晰，接口清晰，风险可控。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">这套模式运转了很多年，没什么问题。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">AI Coding 的发展确实已经到了一个临界点。技术栈的边界正在被打破。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">现在有了 AI Coding，一个前端工程师想写后端接口，不需要先花三个月系统学习。他只需要知道我要实现什么功能，然后让 AI 来写，自己 review、调试、迭代。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">学习成本被大幅压缩了。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">以前需要先学会某个技术栈再干活，现在可以不了解细节，不了解语法，直接让 AI 生成。这一点都不夸张，用过 Claude Code 或者 Cursor 的人都知道。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">琢磨下，之前我们学编程语言，很多时候就是在学语法，记语法细节。学框架，也是在学习框架的规则。现在，这些可以省略。作为工程师，我们更重要的是理解他们是怎么回事，理解逻辑。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">以前一个需求下来，产品经理要拆任务，分给前端、后端、运维，然后各方排期、对接口、联调、互相等。中间但凡有一个环节卡住，整个链条都要等。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">现在如果一个人能从头到尾把事情做完，协调环节直接省掉了。不用开会对齐，不用等别人，不用反复沟通你那边好了没。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">还有信息损耗的问题。需求从产品到前端到后端，每传递一次就损耗一次。前端理解的和后端理解的可能不一样，最后拼起来发现对不上，又要返工。一个人端到端负责，脑子里的上下文是完整的，不需要反复同步。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">本质上就是：分工是有成本的，只不过以前这个成本比\"让一个人学会所有技术\"的成本低，所以分工划算。现在 AI 把学习成本打下来了，分工的成本反而显得高了。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">毕玄用的是 Agent 工程师，而不是全栈工程师。这个命名很有意思。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">全栈工程师的定义是：你要精通所有技术栈。但 Agent 工程师不是这个意思。它的核心是：我们不需要精通所有技术，而是要会通过 AI 来完成任务。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">AI 负责具体执行，工程师负责指挥和判断。本质上，工程师的角色正在从执行者变成指挥者。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">Anthropic 内部的实践是一个很好的例子。据他们 CEO Dario Amodei 说，Anthropic 内部已经有 90%的代码是由 Claude 自动编写的，人类的角色更像是编辑或监督者。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">他还举了一个具体的例子：当他们最近发布一个模型时，集群出现了一个 bug，工程师们找了好几天都排查不出原因。后来让 Claude 去排查，它竟然发现了一个所有人都漏掉的隐藏问题。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">这已经不是 AI 按指令做事，而是 AI 能自己判断、执行、修复，完成整个闭环。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">一年前我们想都不敢想，但这就是正在发生的事。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">我看到一个清晰的趋势：任务的分配逻辑接下来一定会变。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">作为工程师，我们千万别再守着自己的一亩三分地，然后说我是前端，后端的事我碰不了。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">不是这样的。我们是工程师，工程师是用来创造的，是用来 build something 的。没必要再纠结于工种，而是要盯着问题，盯着我们想做什么事。目标驱动，而不是技能驱动。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">可以预见，未来几年公司对工程师的能力要求也会变。从语言熟练度、框架熟练度、工程经验，变成问题抽象能力、判断力、AI 调度能力。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">行业对人才的要求，正在从单点深耕转向 T 型或者 π 型结构。T 型是指至少拥有一项专长，同时具备多端能力；π型则是多项专长与多领域经验的结合。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;margin-bottom: 0px;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 16px;\">2026 年才刚开始。马斯克同志下午转发 X 说，今年可能是近几个世纪以来最重要的一年。</span></span></p>\n </body>\n</html>",
+  "aiSummary": "前阿里 P10 毕玄提出取消技术栈岗位划分，推行以产品目标为导向的“Agent 工程师”模式，标志着 AI 驱动下研发组织架构的根本性变革。",
+  "oneSentenceSummary": "前阿里 P10 毕玄提出取消技术栈岗位划分，推行以产品目标为导向的“Agent 工程师”模式，标志着 AI 驱动下研发组织架构的根本性变革。",
+  "summary": "本文由毕玄的创业实践出发，探讨了 AI Coding 时代下软件开发组织模式的剧变。文章指出，传统按前端、后端、算法划分岗位的逻辑源于工业时代的专业分工，旨在降低学习成本和管理风险。然而，随着 AI 显著压缩了跨技术栈的学习曲线，分工带来的沟通与协调成本已超过其收益。作者认为，“Agent 工程师”不同于传统全栈工程师，其核心在于利用 AI 作为执行主体，而人类转变为指挥者与判断者。这种模式能实现端到端的任务闭环，减少信息损耗，预示着未来工程师的评价标准将从“技能驱动”转向“目标驱动”，侧重于问题抽象能力与 AI 调度能力。",
+  "mainPoints": [
+    {
+      "point": "技术岗位的划分逻辑正从“技术栈驱动”转向“产品目标驱动”。",
+      "explanation": "AI 降低了掌握新技术的门槛，使得工程师能跨越前后端边界，围绕最终项目结果而非特定工具链进行协作，从而消除部门墙。"
+    },
+    {
+      "point": "“Agent 工程师”的核心是作为 AI 的指挥者而非单纯的执行者。",
+      "explanation": "不同于要求样样精通的全栈工程师，Agent 工程师侧重于利用 AI 完成具体编码，人类则负责定义问题、review 代码及决策判断。"
+    },
+    {
+      "point": "分工成本与学习成本的博弈关系因 AI 发生了逆转。",
+      "explanation": "过去分工是为了应对高昂的学习成本，现在 AI 把学习成本打下来了，传统分工产生的沟通、对齐和信息损耗反而成了效率瓶颈。"
+    },
+    {
+      "point": "工程师的能力模型正从语言熟练度转向问题抽象与判断力。",
+      "explanation": "未来人才需求将向 T 型或 π 型结构演进，重点考察工程师对业务逻辑的理解、AI 调度能力以及对复杂问题的闭环处理能力。"
+    }
+  ],
+  "keyQuotes": [
+    "公司决定以后不再按技术栈划分技术岗位，所有工程师统一称为 Agent 工程师。",
+    "分工是有成本的，只不过以前这个成本比'让一个人学会所有技术'的成本低，所以分工划算。现在 AI 把学习成本打下来了，分工的成本反而显得高了。",
+    "Agent 工程师的核心是：我们不需要精通所有技术，而是要会通过 AI 来完成任务。",
+    "作为工程师，我们更重要的是理解他们是怎么回事，理解逻辑。",
+    "目标驱动，而不是技能驱动。"
+  ],
+  "tags": [
+    "Agent 工程师",
+    "AI Coding",
+    "组织架构",
+    "软件工程",
+    "毕玄"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1660,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_aac4a1a4",
+  "sourceName": "AI产品阿颖",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1769251620000,
+  "publishDateStr": "01-24",
+  "publishDateTimeStr": "2026-01-24 10:47:00"
+}

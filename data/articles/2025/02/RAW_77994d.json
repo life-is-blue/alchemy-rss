@@ -1,0 +1,54 @@
+{
+  "id": "RAW_77994d",
+  "title": "DeepSeek 缝合 Claude，比单用 R1/o1 效果都好！GitHub 揽星 3k",
+  "url": "https://www.qbitai.com/2025/02/253938.html",
+  "date": "2025-02-14 06:15:23",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"40\">梦晨 西风 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"41\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">让<strong>思考</strong>，缝合怪玩法火了。</p>\n  <p data-track=\"3\">原因无它：比单独使用DeepSeek R1、Claude Sonnet 3.5、OpenAI o1模型的<strong>效果更好</strong>。</p>\n  <p data-track=\"4\">先来看一段VCR：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f47d1792-d44b-465c-ef94-785d94972900/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"undefined\" data-width=\"1338\" data-height=\"744\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"39\">视频链接：https://mp.weixin.qq.com/s/vhv4Eb5XoA2d4LKRqVRQag?token=1656933192&amp;lang=zh_CN</p>\n  <p data-track=\"6\">再来看一个测评结果：</p>\n  <p data-track=\"7\">在<strong>代码编辑基准</strong>Polyglot Benchmark上，缝合模型效果小超o1-high和R1一头。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/72eacc27-7211-4bd3-5189-e474dc556e00/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"766\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"8\">在这个测试中，<strong>R1扮演架构师</strong>，描述如何解决代码问题。</p>\n  <p data-track=\"9\">而<strong>Claude扮演程序员</strong>，按要求生成特定的代码编辑指令，以便把改动应用到源文件中。</p>\n  <p data-track=\"10\">除此之外，实验过程中还得出还有几个有意思的结论：</p>\n  <ul>\n   <li data-track=\"11\"><strong>o1与Claude Sonnet搭配</strong>效果并不如单独使用o1。</li>\n   <li data-track=\"12\">使用R1或o1当架构师，<strong>Claude之外的其他模型当程序员</strong>，效果都不如单独使用R1或o1。</li>\n   <li data-track=\"13\">但<strong>o1-preview和o1-mini当架构师</strong>，使用很多不同的模型当程序员都能提高组合的成绩。</li>\n   <li data-track=\"14\">使用R1的推理过程token效果<strong>不如使用R1的最终输出token。</strong></li>\n  </ul>\n  <p data-track=\"15\">这样看来，R1和Claude Sonnet还真是一对绝配啊～</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/348ccfab-de08-426e-fe10-4c4d8d958400/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"223\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">DeepClaude应用本身100%免费且开源，在GitHub上已揽获3k星星（当然API要用自己的）。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/60d7adfc-1424-4747-3e0f-a07cc4574400/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"234\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">网友测试后总结到：Claude擅长撰写清晰、结构良好的文本和代码，因此它能将DeepSeek-R1的想法转化为精炼的回复。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/48fa754c-50e4-40d1-906d-724110a31500/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"108\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">DeepClaude作者之一对此有感而发：</p>\n  <blockquote>\n   <p data-track=\"19\">AI智能体和智能体应用正在展示出一种“数字世界优先”的范式转变，智能系统正在成为主动的合作者，而不仅仅是被动的工具。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/54fee8af-63e1-4fef-f807-532be8091300/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"275\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">具体来说，DeepClaude是一个LLM推理API，通过Rust编写。</p>\n  <p data-track=\"22\">它提供了一个统一的接口，将DeepSeek R1的CoT逻辑推理能力和Claude的回复<strong>在单一流中无缝衔接</strong>。</p>\n  <p data-track=\"23\">开发者可以通过这个API同时调用两种模型的功能，还能完全掌控自己的API密钥和数据。</p>\n  <p data-track=\"24\">打造它的团队名为<strong>Asterisk</strong>，团队成员具有安全研究&amp;CTF（Capture The Flag）背景，致力于利用AI让检查代码安全这事儿变得更加高效。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd55966a-12bd-4159-7b34-68da95b37e00/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"944\" data-height=\"1364\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">团队认为，DeepSeek R1的CoT深度推理甚至达到了LLM具有反省认知（metacognition）的程度，它能够自我纠正、思考不常见/极端/特殊的情况，并在自然语言中进行类似蒙特卡洛树搜索（MCTS）的推理。</p>\n  <p data-track=\"26\">不过R1在代码生成、创造力和对话技巧方面有所欠缺，Claude 3.5 Sonnet在这些方面表现出色，刚好可以作补充。</p>\n  <blockquote>\n   <p data-track=\"27\">何不将两者结合起来？取两者之长，打造出DeepClaude～</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9b8c5cec-c9c0-4b7c-c55c-e86980081b00/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"108\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"28\">对话中，Claude回应之前，系统会显示“&lt;thinking&gt;”这样的预填充文本。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5764d484-5bff-4d91-702d-1f0f92910300/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"944\" data-height=\"414\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">DeepClaude结合了这两种模型，具有以下特性：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9d399081-f2b5-4400-b089-4ceec5e38e00/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"742\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">托管API完全免费，允许用户使用自己的密钥，并将DeepSeek和Claude的流式API整合在一起，提供计算组合使用量和价格等便利功能。</p>\n  <p data-track=\"31\">代码是开源的，用户可以自由托管、修改和重新分发。团队表示它已经在Asterisk的生产环境中大规模使用，每天处理数百万token，至今尚未出现故障，只要不滥用就行。</p>\n  <p data-track=\"33\">你以为两个模型缝合就是极限了吗？</p>\n  <p data-track=\"34\">No no no</p>\n  <p data-track=\"35\">还有网友开发出了<strong>三缝合玩法</strong>，将DeepSeek-R1和Gemini 2.0 Flash的思考结果组合起来，在让Claude Sonnet去回答问题。</p>\n  <p data-track=\"36\">在GPQA测试（谷歌搜不到的理化生博士级选择题）中也取得了好成绩。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9cfda8d5-79fd-40ba-d7cf-19b5a3dd4900/public\" alt=\"DeepSeek缝合Claude，比单用R1/o1效果都好！GitHub揽星3k\" data-ic=\"false\" data-width=\"1080\" data-height=\"1246\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"37\">Github地址：https://github.com/getasterisk/deepclaude</p>\n  <p data-track=\"38\">参考链接：<br>\n    [1]https://aider.chat/2025/01/24/r1-sonnet.html<br>\n    [2]https://x.com/deepclaude_/status/1886911416478642279<br>\n    [3]https://x.com/omercelik/status/1883510797193937278<br>\n    [4]https://x.com/mufeedvh/status/1883620781583901011</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DeepClaude 通过缝合 DeepSeek R1 的推理能力和 Claude 的文本生成能力，实现了优于单一模型的效果，并已开源。",
+  "oneSentenceSummary": "DeepClaude 通过缝合 DeepSeek R1 的推理能力和 Claude 的文本生成能力，实现了优于单一模型的效果，并已开源。",
+  "summary": "本文介绍了 DeepClaude 这一创新项目，它通过 Rust 语言开发，将 DeepSeek R1 的 CoT 逻辑推理能力与 Claude 的文本生成能力无缝衔接，形成一个统一的 LLM 推理 API。实验结果表明，DeepClaude 在代码编辑基准测试中表现优异，甚至超越了单独使用 o1-high 和 R1 模型。该项目 100% 免费且开源，已在 GitHub 上获得 3k 星， 尤其适用于代码安全检查。DeepClaude 的作者认为，这种 AI 智能体组合的方式代表了一种“数字世界优先”的范式转变，将智能系统转变为主动的合作者。有网友进一步开发了三缝合玩法，将 DeepSeek-R1 和 Gemini 2.0 Flash 的思考结果与 Claude Sonnet 结合，在特定测试中取得了更好成绩。",
+  "mainPoints": [
+    {
+      "point": "DeepClaude 整合 DeepSeek R1 和 Claude，提升模型效果",
+      "explanation": "DeepClaude 通过将 DeepSeek R1 的推理能力与 Claude 的文本生成能力结合，在代码编辑等任务中实现了优于单一模型的效果。"
+    },
+    {
+      "point": "DeepClaude 采用 Rust 编写，提供统一的 API 接口",
+      "explanation": "DeepClaude 使用 Rust 语言开发，提供了一个统一的 API 接口，方便开发者同时调用两种模型的功能，并掌控 API 密钥和数据。"
+    },
+    {
+      "point": "AI 模型组合是提升性能和拓展应用的重要方向",
+      "explanation": "通过组合不同模型的优势，可以显著提升 AI 系统的性能，并拓展其应用领域。"
+    }
+  ],
+  "keyQuotes": [
+    "比单独使用 DeepSeek R1、Claude Sonnet 3.5、OpenAI o1 模型的效果更好。",
+    "AI 智能体和智能体应用正在展示出一种\"数字世界优先\"的范式转变，智能系统正在成为主动的合作者，而不仅仅是被动的工具。",
+    "Claude 擅长撰写清晰、结构良好的文本和代码，因此它能将 DeepSeek-R1 的想法转化为精炼的回复。",
+    "DeepSeek R1 的 CoT 深度推理甚至达到了 LLM 具有反省认知（metacognition）的程度，它能够自我纠正、思考不常见 / 极端 / 特殊的情况，并在自然语言中进行类似蒙特卡洛树搜索（MCTS）的推理。"
+  ],
+  "tags": [
+    "大语言模型",
+    "模型组合",
+    "DeepSeek",
+    "Claude",
+    "Rust"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1468,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739513723000,
+  "publishDateStr": "2025-02-14",
+  "publishDateTimeStr": "2025-02-14 06:15:23"
+}

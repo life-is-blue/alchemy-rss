@@ -1,0 +1,55 @@
+{
+  "id": "RAW_f2ff58cd",
+  "title": "Flipkart 通过分层联邦将 Prometheus 扩展至 8000 万指标",
+  "url": "https://www.infoq.com/news/2025/10/flipkart-prometheus-80million/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-18 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.flipkart.com/\">Flipkart </a>engineers recently <a href=\"https://kapillamba4.medium.com/hierarchical-federation-in-prometheus-managing-millions-of-metrics-cleanly-8d8bac940ff3\">published a detailed case study</a> describing how they overcame severe scalability limits in monitoring by adopting a hierarchical federation design in <a href=\"https://prometheus.io/\">Prometheus</a>. The migration was driven by their API Gateway layer, where approximately 2,000 instances each emitted roughly 40,000 metrics, resulting in a staggering 80 million time-series data points being produced simultaneously.</p>\n   <p dir=\"ltr\">Initially, Flipkart used <a href=\"https://www.datadoghq.com/blog/statsd/\">StatsD</a> for metrics aggregation, but they found it failed to scale. Queries over longer durations choked storage and made historical analytics impractical. To address this, they transitioned to Prometheus, which better supports high-dimensional queries and integrates well with Kubernetes and exporter ecosystems.</p>\n   <p dir=\"ltr\">The heart of their scaling solution lies in hierarchical federation: local Prometheus servers ingest metrics from services, apply recording rules to drop <a href=\"https://www.tigerdata.com/blog/what-is-high-cardinality\">high-cardinality</a> instance labels, and expose aggregated series via /federate endpoints. <a href=\"https://en.wikipedia.org/wiki/Federated_architecture\">Federated servers</a> then scrape selected aggregated metrics upward, writing them to long-term storage and dashboards. This tiered design dramatically reduces metric cardinality and load on central servers.</p>\n   <p dir=\"ltr\">To reduce cardinality further, Flipkart adopted strategies such as dropping the instance label for stable dimensions like service or cluster. For latency metrics (p95, p99), they published summary statistics (average, max, min) rather than per-instance series. This approach collapsed 80 million raw series into tens of thousands of cluster-level metrics.</p>\n   <p dir=\"ltr\">The authors also caution about tradeoffs: hierarchical federation is less useful when you need to debug per-instance anomalies across clusters or when working with small deployments where a single Prometheus instance suffices. They advise against blindly mirroring raw metrics upward and instead emphasize filtering and selective federation.</p>\n   <p dir=\"ltr\">Flipkart's experience underscores the limits of flat monitoring architectures at scale and illustrates how federation, aggregation rules, and label pruning can make high-scale observability manageable. Their approach offers a practical blueprint for organizations facing explosive metric growth in cloud-native environments.</p>\n   <p dir=\"ltr\">While Flipkart's hierarchical federation approach offers simplicity and strong alignment with native Prometheus, other organizations facing similar scaling challenges have turned to distributed systems like Thanos, Cortex/Mimir, or VictoriaMetrics, each tackling scale and retention in different ways.</p>\n   <p dir=\"ltr\"><a href=\"https://thanos.io/\">Thanos</a>, for example, extends Prometheus with long-term storage and global querying capabilities. Rather than relying on <a href=\"https://en.wikipedia.org/wiki/Multitier_architecture\">multi-tier federation</a>, Thanos attaches sidecar components to each Prometheus instance, which then upload metrics to object storage (e.g., S3 or GCS). A centralized Querier can query across clusters, offering a unified view without the need to aggregate or drop labels. This eliminates manual federation setup but introduces additional components and operational overhead. Compared to Flipkart's hierarchical model, Thanos offers stronger global query visibility but requires managing more infrastructure and storage.</p>\n   <p dir=\"ltr\"><a href=\"https://www.cortex.io/\">Cortex</a> (and its modern fork, <a href=\"https://grafana.com/oss/mimir/\">Grafana Mimir</a>) takes a more cloud-native, horizontally scalable approach. Metrics are stored in a multi-tenant distributed time-series database built on microservices like distributors, ingesters, and queriers. Unlike Flipkart's hierarchical federation, Cortex and Mimir use consistent hashing and object stores to shard data automatically, enabling massive scale and durability with less manual configuration. The trade-off is complexity - deploying and tuning Cortex or Mimir requires expertise in distributed systems, while Flipkart's approach can be implemented with native Prometheus tools.</p>\n   <p dir=\"ltr\"><a href=\"https://victoriametrics.com/\">VictoriaMetrics</a>, on the other hand, takes a middle ground. It supports Prometheus remote write and read APIs but emphasizes performance and compression efficiency. Its single-binary setup makes it operationally lightweight, yet it can still handle tens of millions of metrics. For teams prioritizing ease of deployment and efficient long-term retention, VictoriaMetrics often provides a simpler alternative to both federation and Thanos-style architectures.</p>\n   <p dir=\"ltr\">Flipkart's choice to rely on hierarchical federation rather than these distributed backends reflects a balance between control, simplicity, and incremental scalability. It keeps Prometheus largely stateless, avoids external dependencies like object storage, and maintains native query semantics - critical in large, multi-cluster Kubernetes environments. However, as the organization scales further, adopting hybrid architectures that pair federation with long-term backends (like Thanos or VictoriaMetrics) could further enhance retention, cross-cluster querying, and resilience.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Flipkart Scales Prometheus to 80 Million Metrics Using Hierarchical Federation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/flipkart-prometheus-80million/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760788800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Flipkart 采用分层联邦设计将 Prometheus 扩展到 8000 万个指标，有效降低了云原生环境大规模监控的基数和负载。",
+  "oneSentenceSummary": "Flipkart 采用分层联邦设计将 Prometheus 扩展到 8000 万个指标，有效降低了云原生环境大规模监控的基数和负载。",
+  "summary": "本文详细介绍了 Flipkart 如何通过实施分层联邦架构成功地扩展 Prometheus 以处理 8000 万个指标。由于 2，000 个 API 网关实例生成的高基数指标带来的严重可扩展性限制，Flipkart 从 StatsD 转型到 Prometheus。他们的解决方案包括本地 Prometheus 服务器接收指标，应用记录规则以删除高基数标签，并公开聚合序列以供联邦服务器抓取。这种分层设计，结合实例标签修剪和延迟指标的摘要统计等策略，显著降低了指标基数和中心服务器负载。文章还将 Flipkart 的方法与 Thanos、Cortex/Mimir 和 VictoriaMetrics 等其他分布式监控系统进行了对比，突出了复杂性、全局可见性和运营开销方面的权衡。Flipkart 的选择优先考虑简单性、控制和增量可扩展性，为管理爆炸性指标增长的组织提供了一个实用的蓝图。",
+  "mainPoints": [
+    {
+      "point": "Flipkart 通过分层联邦和积极的基数降低将 Prometheus 扩展到 8000 万个指标。",
+      "explanation": "本地 Prometheus 服务器聚合指标，使用记录规则删除高基数标签，并将聚合数据向上联合，从而显著降低了中央监控系统的负载，并实现了高规模的可观测性。"
+    },
+    {
+      "point": "有效的基数降低包括删除实例标签和发布高容量指标的摘要统计信息。",
+      "explanation": "这种方法将数百万个原始序列转换为数千个集群级指标，这对于管理数据量、提高查询性能以及使生产环境中大规模的可观测性可管理至关重要。"
+    },
+    {
+      "point": "分层联邦提供了简单性和原生的 Prometheus 对齐，与更复杂的分布式监控解决方案形成对比。",
+      "explanation": "虽然 Thanos、Cortex/Mimir 和 VictoriaMetrics 等替代方案提供全局查询或大规模扩展，但 Flipkart 优先考虑控制、简单性和增量可扩展性，使 Prometheus 在很大程度上是无状态的，并避免了外部依赖性。"
+    }
+  ],
+  "keyQuotes": [
+    "此次迁移是由他们的 API 网关层驱动的，其中大约 2，000 个实例每个发出大约 40，000 个指标，导致同时产生惊人的 8000 万个时序数据点。",
+    "他们扩展解决方案的核心在于分层联邦：本地 Prometheus 服务器从服务中获取指标，应用记录规则以删除高基数实例标签，并通过 /federate 端点公开聚合序列。",
+    "这种分层设计显著降低了指标基数和中央服务器的负载。",
+    "Flipkart 的经验强调了平面监控架构在规模上的限制，并说明了联邦、聚合规则和标签修剪如何使大规模的可观测性变得可管理。",
+    "Flipkart 选择依赖分层联邦而不是这些分布式后端，反映了控制、简单性和增量可扩展性之间的平衡。"
+  ],
+  "tags": [
+    "监控",
+    "可观测性",
+    "Prometheus",
+    "联邦",
+    "可扩展性"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 635,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760788800000,
+  "publishDateStr": "2025-10-18",
+  "publishDateTimeStr": "2025-10-18 12:00:00"
+}

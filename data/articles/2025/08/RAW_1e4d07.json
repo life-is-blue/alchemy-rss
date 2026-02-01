@@ -1,0 +1,55 @@
+{
+  "id": "RAW_1e4d07",
+  "title": "我给团队做分享：不聊学什么，而是聊可以不学什么",
+  "url": "https://juejin.cn/post/7537238517697822771",
+  "date": "2025-08-12 03:36:37",
+  "author": "ErpanOmer",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/01a683f643ea491ea3c1fd598a1d202f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgRXJwYW5PbWVy:q75.awebp?rk3s=f64ab15b&amp;x-expires=1756179122&amp;x-signature=TX55Vj%2BK9x3YqLlJwcJvJAv7%2BJk%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>上周，我看到我们组一个很努力的新人，午休时间还在看一篇关于“<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fblog.logrocket.com%2Funderstanding-astro-islands-architecture%2F\" target=\"_blank\" title=\"https://blog.logrocket.com/understanding-astro-islands-architecture/\" ref=\"nofollow noopener noreferrer\">Astro Island Architecture</a>”的文章，眉头紧锁。</p>\n   <p>我走过去问他，最近在研究这个吗？</p>\n   <p>他说：“不是，就是看社区里大家都在聊，感觉再不学就跟不上了。唉，要学的东西太多了，每天都有新东西出来，根本学不完，很焦虑。”</p>\n   <p>这句话触动了我。我发现，我们这个行业，无论是技术文章、社区分享，还是培训课程，都在疯狂地告诉大家“<strong>要学什么</strong>”，却很少有人告诉大家“<strong>可以不学什么</strong>”。</p>\n   <p>新的技术探索倒是挺好的，可以接触到不一样的东西，但是咱们的时间和精力是有限的。</p>\n   <p>所以，我在上周的团队分享会上，做了一次特别的分享，主题就是这个：<strong>作为业务团队的前端工程师，我们应该如何做减法，聊聊那些我们可以暂时不学的东西。</strong></p>\n   <hr>\n   <h4 data-id=\"heading-0\">我们为什么会如此焦虑？</h4>\n   <p>在聊“不学什么”之前，我们得先想明白，我们的焦虑是从哪来的？</p>\n   <ul>\n    <li><strong>社区的炒作</strong> ：新技术需要热度，布道者需要影响力，培训机构需要生意。他们会不断地告诉你，某个技术是未来，不学就会被淘汰。</li>\n    <li><strong>简历驱动</strong>：我们害怕自己的简历上，技术栈不如别人那么“时髦”，所以不管用不用得上，先学了写上去再说。</li>\n    <li><strong>同行的压力</strong>：看到同事在聊微前端，在聊WASM，自己完全插不上嘴，那种感觉确实不好受。</li>\n   </ul>\n   <p>这些都是真实存在的压力。但作为过来人，我想说的是，一个工程师的价值，并不取决于他知道多少个技术名词。</p>\n   <hr>\n   <h4 data-id=\"heading-1\">我的可以不学清单</h4>\n   <p>下面这份清单，是我结合我们团队的业务现状，给大家开的一份“学习降噪”指南。它不代表这些技术不好，只是说，在现阶段，你<strong>可以</strong>把它们从你的学习列表里移出去，等真正需要的时候再说。</p>\n   <p><strong>1. 可以不学：有些类库和框架</strong></p>\n   <ul>\n    <li>\n     <p><strong>比如</strong>：微前端（Qiankun, Micro-app）、WebAssembly(Wasm)、WebRTC、复杂的图形学（Three.js, WebGL）等。</p>\n    </li>\n    <li>\n     <p><strong>我的看法</strong>：这些技术非常强大，但它们是为了解决特定领域里，那5%的极端复杂问题而生的。比如，微前端是为了解决“多个团队、多个技术栈、共同开发一个巨石应用”的协同问题。你先问问自己，你的项目有这么复杂吗？</p>\n     <p>对于我们95%的日常业务开发来说，它们就是一无是处。不仅没用，还会让你对自己的能力产生怀疑。</p>\n    </li>\n   </ul>\n   <p><strong>2. 可以不学：每周都在冒出来的新轮子</strong></p>\n   <ul>\n    <li><strong>比如</strong>：又一个新的状态管理器、又一个新的CSS-in-JS方案、又一个新的请求库。</li>\n    <li><strong>我的看法</strong>：前端社区在 <strong>状态管理</strong> 和 <strong>CSS</strong> 方案这两个领域，有点内卷。大部分新轮子，只是对现有成熟方案（比如Zustand, Pinia, Tailwind CSS）的某个点，做了些微创新，或者换了一种写法。它们能解决的问题，大概率我们现有的工具也能解决。</li>\n   </ul>\n   <p><strong>3. 可以不学：过于底层的源码细节</strong></p>\n   <ul>\n    <li><strong>比如</strong>：逐行去研究React Fiber节点的具体结构、V8引擎的JIT编译过程、Webpack的Tapable事件流架构。</li>\n    <li><strong>我的看法</strong>：这可能是最有争议的一点。我承认，理解源码对个人成长有益。但作为团队的Leader，我更关心<strong>投入产出比（ROI）</strong> 。理解React的虚拟DOM和<code>key</code>的作用，非常重要，这能让你写出更高性能的代码。但你需不需要去逐行阅读React的源码，搞懂Fiber节点的每一个属性？对于绝大多数业务开发者来说，不需要。</li>\n   </ul>\n   <hr>\n   <h4 data-id=\"heading-2\"><strong>那我们应该把精力放在哪？</strong></h4>\n   <p>做完了减法，我们再来做加法＋。我认为，对业务团队的工程师来说，最宝贵的精力，应该投入在这三件事上：</p>\n   <p><strong>1. 你能吃饭的技术</strong></p>\n   <p>就是你团队当前正在用的核心技术栈，比如我们团队的React + TypeScript + Next.js。</p>\n   <p>把它玩到精通。不是会用API就行，而是要懂它的设计哲学、性能瓶颈、最佳实践，以及围绕它的一整套生态。这是你解决日常工作中80%问题的根本。</p>\n   <p><strong>2. 永远不会过时的内功</strong></p>\n   <ul>\n    <li><strong>语言基础</strong>：JavaScript（异步、原型链、事件循环）、CSS（布局、层叠上下文）。</li>\n    <li><strong>计算机基础</strong>：网络（HTTP协议、浏览器缓存）、浏览器（渲染原理、安全）。</li>\n   </ul>\n   <p>这些东西，可能不像新框架那么酷，但它们是“心法”。无论上层框架怎么变，这些基础十年后也依然是前端的基石。</p>\n   <p><strong>3. 解决当前问题的技术</strong></p>\n   <p>这是我最推崇的学习方式： <strong>问题驱动式学习</strong> 。</p>\n   <p>当你的项目真的遇到了一个靠现有技术无法解决的问题时——比如，你需要做一个复杂的在线文档，遇到了协同编辑的难题——这个时候，你再去有针对性地学习WebRTC或者CRDTs。</p>\n   <p>这种带着问题去学习的方式，目的性极强，效率是最高的，记忆也是最深刻的。</p>\n   <hr>\n   <h4 data-id=\"heading-3\">写在最后</h4>\n   <p>我做这次分享，不是想让大家躺平，而是希望大家能从被动焦虑中解脱出来，变成一个主动学习者。</p>\n   <p>一个程序员的价值，最终体现在他<strong>解决问题的能力</strong>上，而不是他知道多少个技术名词。</p>\n   <p>所以，放轻松。你不需要学所有东西。把基础打牢，把手头的业务做好，想清楚你遇到的下一个问题是什么，然后去找解决它的最好工具。</p>\n   <p>你们怎么看？</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章探讨了前端工程师如何应对技术焦虑，提出在业务开发中应聚焦核心技术、基础内功和问题驱动学习，而非盲目追逐所有新框架和底层细节。",
+  "oneSentenceSummary": "文章探讨了前端工程师如何应对技术焦虑，提出在业务开发中应聚焦核心技术、基础内功和问题驱动学习，而非盲目追逐所有新框架和底层细节。",
+  "summary": "文章深入剖析了技术从业者普遍存在的学习焦虑，指出其主要来源于社区炒作、简历驱动和同行压力。作者作为团队领导，反其道而行之，提出“减法”学习理念，即明确可以暂时不学什么。他列举了三类可“减”的技术：针对特定极端问题的复杂框架（如微前端、WebAssembly）、对现有成熟方案微创新的新轮子，以及对于多数业务开发者而言投入产出比不高的过于底层源码细节。在此基础上，文章强调工程师应将精力投入到三方面：精通团队当前核心技术栈、扎实掌握永不过时的语言与计算机基础内功，以及践行最高效的“问题驱动式学习”。文章旨在帮助开发者摆脱被动焦虑，成为主动学习者，强调解决问题能力才是工程师的最终价值。",
+  "mainPoints": [
+    {
+      "point": "开发者焦虑源于社区炒作、简历驱动和同行压力",
+      "explanation": "技术社区的过度宣传、对简历“时髦度”的担忧以及同行的技术交流，共同构成了开发者盲目追新、产生学习焦虑的根源。"
+    },
+    {
+      "point": "业务团队可暂时不学特定领域复杂技术和过于底层的源码细节",
+      "explanation": "微前端、WebAssembly 等技术针对特定极端问题，新涌现的“轮子”多为微创新，而深入源码细节对多数业务开发者 ROI 不高，可暂时搁置。"
+    },
+    {
+      "point": "工程师应将精力聚焦于核心技术栈、永不过时的内功和问题驱动学习",
+      "explanation": "精通团队核心技术、扎实掌握语言和计算机基础，并以解决实际问题为导向学习新知，是提升效率和价值的关键途径。"
+    }
+  ],
+  "keyQuotes": [
+    "我发现，我们这个行业，无论是技术文章、社区分享，还是培训课程，都在疯狂地告诉大家“要学什么”，却很少有人告诉大家“可以不学什么”。",
+    "一个工程师的价值，并不取决于他知道多少个技术名词。",
+    "对于我们 95%的日常业务开发来说，它们就是一无是处。不仅没用，还会让你对自己的能力产生怀疑。",
+    "理解 React 的虚拟 DOM 和`key`的作用，非常重要，这能让你写出更高性能的代码。但你需不需要去逐行阅读 React 的源码，搞懂 Fiber 节点的每一个属性？对于绝大多数业务开发者来说，不需要。",
+    "这是我最推崇的学习方式： 问题驱动式学习。"
+  ],
+  "tags": [
+    "技术学习",
+    "职业发展",
+    "前端开发",
+    "学习方法",
+    "业务开发"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1896,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1754969797000,
+  "publishDateStr": "2025-08-12",
+  "publishDateTimeStr": "2025-08-12 03:36:37"
+}

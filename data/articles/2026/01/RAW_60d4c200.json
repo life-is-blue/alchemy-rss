@@ -1,0 +1,59 @@
+{
+  "id": "RAW_60d4c200",
+  "title": "iPhone 获得小米徕卡的影调，真的很简单！",
+  "url": "https://www.ifanr.com/1650532?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2026-01-04 16:28:16",
+  "author": "周奕旨",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>如果说今年手机圈有什么东西最吸引人，小米 17 Ultra 徕卡版绝对算一个。</p>\n  <p>独占的「徕卡一瞬」模式，尤其是里面的 Leica M9 滤镜，像钩子一样勾着无数摄影爱好者的心——仿佛来自 CCD 传感器的浓郁色彩、像琥珀一样凝固的油润感，确实很上头。</p>\n  <p>但冷静下来想一想：为了一个滤镜，我们就得掏空钱包换新机，或者把自己手里还能打的旧旗舰淘汰掉吗？</p>\n  <p><img class=\"alignnone size-full wp-image-1650535\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/025-12-31-15.39.03.jpeg!720\" alt=\"\" width=\"4080\" height=\"2254\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/025-12-31-15.39.03.jpeg!720 4080w, https://s3.ifanr.com/wp-content/uploads/2025/12/025-12-31-15.39.03-360x199.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/025-12-31-15.39.03-768x424.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/025-12-31-15.39.03-1024x566.jpeg 1024w\" sizes=\"(max-width: 4080px) 100vw, 4080px\"></p>\n  <p>其实完全没必要。</p>\n  <p>我们花了两天时间，拆解了 M9 模式的成像逻辑，发现所谓的「德味玄学」，其实并非不可复制，只要掌握了它的底层公式，只需两步，你手里的旧小米，甚至是 iPhone，都能复刻出 90% 的效果。</p>\n  <h3>为什么我们如此迷恋徕卡 M9？</h3>\n  <p>在开始「破解」之前，我们得先搞清楚，我们到底在迷恋什么。</p>\n  <p>在 Leica M8 的探索后，Leica M9 于 2009 年发布，成为徕卡第一台全画幅数码旁轴相机，在这一代机身上，它延续了前代 M8 上来自柯达的 CCD 传感器，而更重要的是，这块传感器在 M9 上扩张了尺寸，来到了全画幅大小。</p>\n  <p><img class=\"alignnone size-full wp-image-1650540\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/maxresdefault-2.jpeg!720\" alt=\"\" width=\"1280\" height=\"720\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/maxresdefault-2.jpeg!720 1280w, https://s3.ifanr.com/wp-content/uploads/2025/12/maxresdefault-2-360x203.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/maxresdefault-2-768x432.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/maxresdefault-2-1024x576.jpeg 1024w\" sizes=\"(max-width: 1280px) 100vw, 1280px\"></p>\n  <p>如果从今天回头看，受制于工艺和技术，这台相机其实并不完美——高感极其拉胯，ISO 超过 800 画质就惨不忍睹，处理速度慢，甚至屏幕分辨率低得令人发指，传感器还有难以避免的脱膜问题。</p>\n  <p>但在光线充足的时候，它就是神。</p>\n  <p>CCD 独特的感光特性，让它对红、蓝色的表现异常敏感且浓郁，与现代 CMOS 不同，在同一场景下，这块 CCD 的成像和色彩都流露着一种油润的厚重感。</p>\n  <p><img class=\"alignnone size-full wp-image-1650539\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/leica-rangefinder-camera-m9-m9-p-review-digital-ccd-sensor-photography-thoughts-italy-venice-travel-blue-alpa-macro-switar-50mm-50-f1.9-1.9.jpeg!720\" alt=\"\" width=\"1400\" height=\"933\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/leica-rangefinder-camera-m9-m9-p-review-digital-ccd-sensor-photography-thoughts-italy-venice-travel-blue-alpa-macro-switar-50mm-50-f1.9-1.9.jpeg!720 1400w, https://s3.ifanr.com/wp-content/uploads/2025/12/leica-rangefinder-camera-m9-m9-p-review-digital-ccd-sensor-photography-thoughts-italy-venice-travel-blue-alpa-macro-switar-50mm-50-f1.9-1.9-360x240.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/leica-rangefinder-camera-m9-m9-p-review-digital-ccd-sensor-photography-thoughts-italy-venice-travel-blue-alpa-macro-switar-50mm-50-f1.9-1.9-768x512.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/leica-rangefinder-camera-m9-m9-p-review-digital-ccd-sensor-photography-thoughts-italy-venice-travel-blue-alpa-macro-switar-50mm-50-f1.9-1.9-1024x682.jpeg 1024w\" sizes=\"(max-width: 1400px) 100vw, 1400px\"></p>\n  <div class=\"editor-image-source\">\n   <p>▲ Shot on Leica M9</p>\n  </div>\n  <p>小米 17 Ultra by Leica 的 M9 模式，本质上就是用 AI 大模型，去模拟当年那块柯达 CCD 的「脾气」。</p>\n  <p>既然知道了是「脾气」，我们就可以手动模仿。</p>\n  <h3>德味配方大拆解</h3>\n  <p>小米 17 Ultra by Leica 的 M9 模式之所以看着有味道，秘诀在于它的「不智能」。</p>\n  <p>智能手机太聪明了，遇到黄光就压黄，遇到蓝光就补暖，力求把白色还原成白色，但小米搭载的 M9 模式不一样，它的白平衡策略非常固定——死盯着日光白平衡，按照常理来说，这种策略会在夜晚带来明显偏色，但正是这种偏色，组成了德味的必要条件。</p>\n  <p>所以，复刻德味的第一步，就是固定白平衡。</p>\n  <p><strong>第一阶段：前期拍摄</strong></p>\n  <p>拿起你的手机（建议 13 Ultra 及以上机型，效果更佳），切到专业模式，色彩风格选择「徕卡经典」。</p>\n  <p>手动将白平衡固定在 4800K – 5500K 左右，模拟日光白平衡，不让算法强行平衡冷暖氛围，同时稍微加一点点，模拟 CCD 的浓郁发色。</p>\n  <p>按下快门，你会发现，底片的基调已经有了。</p>\n  <p><img class=\"alignnone size-full wp-image-1650533\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/12-4.jpeg!720\" alt=\"\" width=\"2308\" height=\"1430\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/12-4.jpeg!720 2308w, https://s3.ifanr.com/wp-content/uploads/2025/12/12-4-360x223.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/12-4-768x476.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/12-4-1024x634.jpeg 1024w\" sizes=\"(max-width: 2308px) 100vw, 2308px\"></p>\n  <p><strong>第二阶段：后期调色</strong></p>\n  <p>Leica M9 模式的特点是影调沉稳且高光油润，而我们直接拍摄的原片通常会因为算法显得太亮、太刺眼。此时，我们就需要进入相册编辑，做后期工作：</p>\n  <p>亮度降低 50，对比度增加 20，这一步是为了还原较为自然的亮度曲线，把氛围压住；\n   <br>\n   光感降低 25，白色色阶降低 20，让高光不再刺眼，变得油润；\n   <br>\n   黑色色阶提升 15 让暗部透气，再根据画面在 0-30 间微调色调和色温，模拟轻微偏色，最后加 15 的褪色和 -15 的晕影。</p>\n  <p>这一套组合拳打完，你会惊讶地发现原本普普通通的照片，也有了点儿德味。</p>\n  <p><img class=\"alignnone size-full wp-image-1650534\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/23-1.jpeg!720\" alt=\"\" width=\"2308\" height=\"1430\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/23-1.jpeg!720 2308w, https://s3.ifanr.com/wp-content/uploads/2025/12/23-1-360x223.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/23-1-768x476.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/23-1-1024x634.jpeg 1024w\" sizes=\"(max-width: 2308px) 100vw, 2308px\"></p>\n  <p>不过，徕卡一瞬背后是一套数十万张徕卡 M9 照片喂养出的大模型，我们这是逆向破解的「死规矩」，光线一变，很容易翻车。</p>\n  <p>要想以不变应万变，记住德味四要素就够了：克制的影调、浓郁的色彩、一点点偏色，外加一圈暗角。</p>\n  <p>刚才那一通操作，无非就是为了凑齐这四样，只要抓住这个配方去微调，管你用小米还是华为，管它顺光逆光，都能获得一定的德味。</p>\n  <h3>iPhone，也能德味</h3>\n  <p>看到这里，iPhone 用户可能要问了：只有小米或者有专业模式的 Android 手机才能获得这样的效果吗？</p>\n  <p>当然不是，手持 iPhone 16 及以上机型的朋友们，手里其实握着一个更强大的工具。</p>\n  <p>苹果近年更新的摄影风格底层逻辑大改，对后期管线重新构建，打造出更直观也更方便的调色盘，我们调试了一套参数，亲测能把 iPhone 的白开水风格，也调出些许德味。</p>\n  <p>选中调色盘中的「自然」风格，将手指滑向右下角，具体参数为色调 -90，颜色 55，调色盘 100；\n   <br>\n   进入调整，鲜明度 -50，还原更自然的影调，亮度稍微降低 10，让画面更扎实，自然饱和度增加 10-20，模仿浓郁的色彩；\n   <br>\n   色调同样根据画面在 0-30 间调整，带来轻微的偏色，最后晕影 +15，营造暗角。</p>\n  <p>只要这一套参数下去，即便是 iPhone，也能还原出德味质感，虽然系统不同，但这背后的光学原理和审美逻辑，其实殊途同归。</p>\n  <p><img class=\"alignnone size-full wp-image-1650536\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/34.jpeg!720\" alt=\"\" width=\"2208\" height=\"1352\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/34.jpeg!720 2208w, https://s3.ifanr.com/wp-content/uploads/2025/12/34-360x220.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/34-768x470.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/34-1024x627.jpeg 1024w\" sizes=\"(max-width: 2208px) 100vw, 2208px\"></p>\n  <p>看着这一串复杂的操作，你可能会问：我们折腾这一大圈，到底是为了什么？</p>\n  <p>表面上，我们是在省那 8000 块钱，但往深了说，这是一次方法论总结。</p>\n  <p>一直以来，「德味」都被传得神乎其神，仿佛是一种不可复制的玄学，但在徕卡官方亲自下场，用 AI 把 M9 的风格量化成模型之后，这层窗户纸其实就被捅破了——它从玄学，具象成了一场关于色温、对比度、亮度曲线的数学游戏。</p>\n  <p>既然是数学游戏，就有解，就有近似值。</p>\n  <p>理解了这一点，你就掌握了一把通用的钥匙。无论是胶片模拟还是大师滤镜，本质上都是对光影参数的特定排列组合，我们希望你通过这套参数尝到甜头，但更希望你掌握这套逆向推导的思维。</p>\n  <p><img class=\"alignnone size-full wp-image-1650537\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/DSC05742.jpeg!720\" alt=\"\" width=\"3627\" height=\"2418\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/DSC05742.jpeg!720 3627w, https://s3.ifanr.com/wp-content/uploads/2025/12/DSC05742-360x240.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/DSC05742-768x512.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/DSC05742-1024x683.jpeg 1024w\" sizes=\"(max-width: 3627px) 100vw, 3627px\"></p>\n  <p>毕竟，参数是死的，思路是活的，不被厂商定义的「风格」所束缚，开始尝试用自己的理解去拆解和重构画面时，你手中的设备才真正从「消费品」变成了「创作工具」。</p>\n  <p>换句话说，决定性的瞬间，从来不取决于你手里拿的是什么，而永远取决于取景器背后，那颗愿意观察和思考的脑袋。</p>\n </body>\n</html>",
+  "aiSummary": "本文揭示了小米徕卡 M9 影调的背后原理和参数设置，并提供了在小米和 iPhone 上复刻 \"德味\" 风格的详细调色教程与方法论指导，鼓励用户不被预设风格束缚，掌握创作主动权。",
+  "oneSentenceSummary": "本文揭示了小米徕卡 M9 影调的背后原理和参数设置，并提供了在小米和 iPhone 上复刻 \"德味\" 风格的详细调色教程与方法论指导，鼓励用户不被预设风格束缚，掌握创作主动权。",
+  "summary": "文章深入探讨了小米手机徕卡影调中 \"Leica M9\" 模式的奥秘，指出其流行源于 M9 相机特有的 CCD 传感器在光线充足时对红蓝色浓郁的表现和油润的厚重感。作者通过逆向工程，揭示了 \"M9 模式\" 的本质是 AI 模拟该 CCD 传感器的特性，并通过固定白平衡、降低亮度、增加对比度、调整色阶等后期调色技巧，成功在旧小米甚至 iPhone 上复刻出高达 90% 的 \"德味\" 效果。文章不仅提供了详细的参数调色指南，还强调了理解这些调色背后光学原理和审美逻辑的重要性，鼓励读者掌握逆向推导思维，不被厂商定义的风格束缚，将手机从消费品变为创作工具。",
+  "mainPoints": [
+    {
+      "point": "徕卡 M9 影调的魅力源于其独特的 CCD 传感器特性，而非不可复制的玄学。",
+      "explanation": "Leica M9 相机中的柯达 CCD 传感器对红蓝色表现异常浓郁，并呈现油润感，这种特性是其独特美学的基础，小米的 M9 模式也是基于 AI 模拟这种 \"脾气\"。"
+    },
+    {
+      "point": "通过标准化参数设置，可在不同手机上复刻 \"德味\" 影调。",
+      "explanation": "文章详细拆解了小米 M9 模式的调色逻辑，提供了固定白平衡、调整亮度、对比度、色阶等相机和后期参数，无论是旧小米还是 iPhone 都能实现类似效果。"
+    },
+    {
+      "point": "掌握 \"德味\" 四要素及其背后的光学原理是实现风格复刻的关键。",
+      "explanation": "克制的影调、浓郁的色彩、轻微偏色和暗角是 \"德味\" 的核心特征。理解这些要素以及它们在色温、对比度、亮度曲线中的体现，能让用户在不同光线和设备下灵活调整。"
+    },
+    {
+      "point": "重要的是掌握逆向推导思维，将手机作为创作工具而非消费品。",
+      "explanation": "文章不仅提供具体参数，更强调从 \"玄学\" 到 \"数学游戏\" 的思维转变。鼓励读者不被厂商定义的风格束缚，通过自己的理解去拆解和重构画面，实现个性化创作。"
+    }
+  ],
+  "keyQuotes": [
+    "但冷静下来想一想：为了一个滤镜，我们就得掏空钱包换新机，或者把自己手里还能打的旧旗舰淘汰掉吗？",
+    "小米 17 Ultra by Leica 的 M9 模式，本质上就是用 AI 大模型，去模拟当年那块柯达 CCD 的「脾气」。",
+    "要想以不变应万变，记住德味四要素就够了：克制的影调、浓郁的色彩、一点点偏色，外加一圈暗角。",
+    "表面上，我们是在省那 8000 块钱，但往深了说，这是一次方法论总结。",
+    "决定性的瞬间，从来不取决于你手里拿的是什么，而永远取决于取景器背后，那颗愿意观察和思考的脑袋。"
+  ],
+  "tags": [
+    "手机摄影",
+    "徕卡影调",
+    "图像处理",
+    "摄影调色",
+    "后期修图"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 85,
+  "wordCount": 2040,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767544096000,
+  "publishDateStr": "01-04",
+  "publishDateTimeStr": "2026-01-04 16:28:16"
+}

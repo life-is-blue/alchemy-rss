@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0e16aaa0",
+  "title": "刚刚，DeepSeek 又发新模型，小而美玩出新高度",
+  "url": "https://www.ifanr.com/1641505?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-10-20 18:14:24",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>就在刚刚，DeepSeek 开源了一个 3B 模型 DeepSeek-OCR。虽然 3B 体量不大，但模型思路创新的力度着实不小。</p>\n  <p>众所周知，当前所有 LLM 处理长文本时都面临一个绕不开的困境：计算复杂度是平方级增长的。序列越长，算力烧得越狠。</p>\n  <p>于是，DeepSeek 团队想到了一个好办法。既然一张图能包含大量文字信息，而且用的 Token 还少，那不如直接把文本转成图像？这就是所谓的「光学压缩」——用视觉模态来给文本信息「瘦身」。</p>\n  <p><img class=\"alignnone size-full wp-image-1641517\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/34-1.png!720\" alt=\"\" width=\"2568\" height=\"1376\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/34-1.png!720 2568w, https://s3.ifanr.com/wp-content/uploads/2025/10/34-1-360x193.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/34-1-768x412.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/34-1-1024x549.png 1024w\" sizes=\"(max-width: 2568px) 100vw, 2568px\"></p>\n  <p>而 OCR 正好天然适合验证这个思路，因为它本身就是在做「视觉→文本」的转换，而且效果还能量化评估。</p>\n  <p><img class=\"alignnone size-full wp-image-1641512\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/121-2.png!720\" alt=\"\" width=\"2108\" height=\"948\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/121-2.png!720 2108w, https://s3.ifanr.com/wp-content/uploads/2025/10/121-2-360x162.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/121-2-768x345.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/121-2-1024x461.png 1024w\" sizes=\"(max-width: 2108px) 100vw, 2108px\"></p>\n  <p>论文显示，DeepSeek-OCR 的压缩率能达到 10 倍，OCR 准确率还能保持在 97% 以上。</p>\n  <p>啥意思呢？就是说，原本需要 1000 个文本 Token 才能表达的内容，现在只用 100 个视觉 Token 就搞定了。即使压缩率拉到 20 倍，准确率也还有 60% 左右，整体效果相当能打。</p>\n  <p>OmniDocBench 基准测试结果显示：</p>\n  <ul>\n   <li>只用 100 个视觉 Token，就超过了 GOT-OCR2.0（每页 256 个 Token）的表现</li>\n   <li>用不到 800 个视觉 Token，干翻了 MinerU2.0（平均每页超过 6000 个 Token）</li>\n  </ul>\n  <p>在实际生产中，一块 A100-40G 显卡就能每天生成超过 20 万页的 LLM/VLM 训练数据。20 个节点（160 块 A100）直接飙到每天 3300 万页。</p>\n  <p><img class=\"alignnone size-full wp-image-1641513\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/122-1.png!720\" alt=\"\" width=\"956\" height=\"288\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/122-1.png!720 956w, https://s3.ifanr.com/wp-content/uploads/2025/10/122-1-360x108.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/122-1-768x231.png 768w\" sizes=\"(max-width: 956px) 100vw, 956px\"></p>\n  <p>DeepSeek-OCR 由两个核心组件组成：</p>\n  <ul>\n   <li>DeepEncoder（编码器）：负责图像特征提取和压缩</li>\n   <li>DeepSeek3B-MoE（解码器）：负责从压缩后的视觉 Token 中重建文本</li>\n  </ul>\n  <p>让我们来重点说说 DeepEncoder 这个引擎。</p>\n  <p>它的架构很巧妙，通过把 SAM-base（8000 万参数）和 CLIP-large（3 亿参数）串联起来，前者负责「窗口注意力」提取视觉特征，后者负责「全局注意力」理解整体信息。</p>\n  <p>中间还加了个 16×卷积压缩器，在进入全局注意力层之前把 Token 数量大幅砍掉。</p>\n  <p>举例而言，一张 1024×1024 的图像，会被切成 4096 个 patch token。但经过压缩器处理后，进入全局注意力层的 Token 数量会大幅减少。</p>\n  <p>这样的好处是，既保证了处理高分辨率输入的能力，又控制住了激活内存的开销。</p>\n  <p>而且 DeepEncoder 还支持多分辨率输入，从 512×512 的 Tiny 模式（64 个 Token）到 1280×1280 的 Large 模式（400 个 Token），一个模型全搞定。</p>\n  <p>目前开源版本支持的模式包括原生分辨率的 Tiny、Small、Base、Large 四档，还有动态分辨率的 Gundam 模式，灵活性拉满。</p>\n  <p><img class=\"alignnone size-full wp-image-1641515\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/124-1.png!720\" alt=\"\" width=\"820\" height=\"206\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/124-1.png!720 820w, https://s3.ifanr.com/wp-content/uploads/2025/10/124-1-360x90.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/124-1-768x193.png 768w\" sizes=\"(max-width: 820px) 100vw, 820px\"></p>\n  <p>解码器用的是 DeepSeek-3B-MoE 架构。</p>\n  <p>别看只有 3B 参数，但采用了 MoE（混合专家）设计——64 个专家中激活 6 个，再加 2 个共享专家，实际激活参数约 5.7 亿。这也让模型既有 30 亿参数模型的表达能力，又保持了 5 亿参数模型的推理效率。</p>\n  <p>解码器的任务就是从压缩后的视觉 Token 中重建出原始文本，这个过程可以通过 OCR 风格的训练被紧凑型语言模型有效学习。</p>\n  <p>数据方面，DeepSeek 团队也是下了血本。</p>\n  <p>从互联网收集了 3000 万页多语言 PDF 数据，涵盖约 100 种语言，其中中英文占 2500 万页。</p>\n  <p>数据分两类：粗标注直接用 fitz 从 PDF 提取，主要训练少数语言的识别能力；精标注用 PP-DocLayout、MinerU、GOT-OCR2.0 等模型生成，包含检测与识别交织的高质量数据。</p>\n  <p>对于少数语言，团队还搞了个「模型飞轮」机制——先用有跨语言泛化能力的版面分析模型做检测，再用 fitz 生成的数据训练 GOT-OCR2.0，然后用训练好的模型反过来标注更多数据，循环往复最终生成了 60 万条样本。</p>\n  <p>此外还有 300 万条 Word 文档数据，主要提升公式识别和 HTML 表格解析能力。</p>\n  <p>场景 OCR 方面，从 LAION 和 Wukong 数据集收集图像，用 PaddleOCR 标注，中英文各 1000 万条样本。</p>\n  <p><img class=\"alignnone size-full wp-image-1641516\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/125.jpg!720\" alt=\"\" width=\"1031\" height=\"1171\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/125.jpg!720 1031w, https://s3.ifanr.com/wp-content/uploads/2025/10/125-360x409.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/125-768x872.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/125-902x1024.jpg 902w\" sizes=\"(max-width: 1031px) 100vw, 1031px\"></p>\n  <p>DeepSeek-OCR 不仅能识别文字，还具备「深度解析」能力，只需一个统一的提示词，就能对各种复杂图像进行结构化提取：</p>\n  <ul>\n   <li>图表：金融研究报告中的图表可以直接提取为结构化数据</li>\n   <li>化学结构式：识别并转换为 SMILES 格式</li>\n   <li>几何图形：对平面几何图形进行复制和结构化解析</li>\n   <li>自然图像：生成密集描述（dense captions）</li>\n  </ul>\n  <p>这在 STEM 领域的应用潜力巨大，尤其是化学、物理、数学等需要处理大量符号和图形的场景。</p>\n  <p>这里就不得不提 DeepSeek 团队提出的一个脑洞大开的想法——用光学压缩模拟人类的遗忘机制。</p>\n  <p>人类的记忆会随时间衰退，越久远的事情记得越模糊。DeepSeek 团队想，那能不能让 AI 也这样？于是，他们的方案是：</p>\n  <ol>\n   <li>把超过第 k 轮的历史对话内容渲染成图像</li>\n   <li>初步压缩，实现约 10 倍的 Token 减少</li>\n   <li>对于更久远的上下文，继续缩小图像尺寸</li>\n   <li>随着图像越来越小，内容也越来越模糊，最终达到「文本遗忘」的效果</li>\n  </ol>\n  <p>这就很像人类记忆的衰退曲线，近期信息保持高保真度，久远记忆自然淡化。</p>\n  <p>虽然这还是个早期研究方向，但如果真能实现，对于处理超长上下文将是个巨大突破——近期上下文保持高分辨率，历史上下文占用更少计算资源，理论上可以支撑「无限上下文」。</p>\n  <p>简言之，DeepSeek-OCR 表面上是个 OCR 模型，但实际上是在探索一个更宏大的命题：能否用视觉模态作为 LLM 文本信息处理的高效压缩媒介？</p>\n  <p>初步答案是肯定的，7-20 倍的 Token 压缩能力已经展现出来了。</p>\n  <p><img class=\"alignnone size-full wp-image-1641517\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/34-1.png!720\" alt=\"\" width=\"2568\" height=\"1376\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/34-1.png!720 2568w, https://s3.ifanr.com/wp-content/uploads/2025/10/34-1-360x193.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/34-1-768x412.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/34-1-1024x549.png 1024w\" sizes=\"(max-width: 2568px) 100vw, 2568px\"></p>\n  <p>当然，团队也承认这只是个开始。单纯的 OCR 还不足以完全验证「上下文光学压缩」，后续还计划开展数字–光学文本交替预训练、「大海捞针」式测试，以及其他系统性评估。</p>\n  <p>不过不管怎么说，这在 VLM 和 LLM 的进化路上，又多了一条新赛道。</p>\n  <p>去年这个时候，大家还在卷想着怎么让模型「记得更多」。</p>\n  <p>今年 DeepSeek 直接反其道行之：不如让模型学会「忘掉一些」？确然，AI 的进化，有时候不是做加法，而是做减法。小而美，也能玩出大花样，DeepSeek-OCR 这个 3B 小模型就是最好的证明。</p>\n  <p>GitHub 主页：\n   <br>\n   http://github.com/deepseek-ai/DeepSeek-OCR\n   <br>\n   论文：\n   <br>\n   https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf\n   <br>\n   模型下载：\n   <br>\n   https://huggingface.co/deepseek-ai/DeepSeek-OCR</p>\n </body>\n</html>",
+  "aiSummary": "DeepSeek 开源了 DeepSeek-OCR 模型，创新性地提出“光学压缩”思路，利用视觉模态高效压缩文本信息，为解决 LLM 长文本处理困境提供了新途径。",
+  "oneSentenceSummary": "DeepSeek 开源了 DeepSeek-OCR 模型，创新性地提出“光学压缩”思路，利用视觉模态高效压缩文本信息，为解决 LLM 长文本处理困境提供了新途径。",
+  "summary": "文章详细介绍了 DeepSeek 团队最新开源的 3B 参数模型 DeepSeek-OCR，其核心创新在于“光学压缩”理念，即通过将文本转化为图像，再利用视觉模态进行信息压缩，有效缓解了大型语言模型（LLM）处理长文本时计算复杂度平方级增长的难题。DeepSeek-OCR 在 OmniDocBench 基准测试中展现出高达 10 倍的压缩率和 97%以上的 OCR 准确率，在生产环境中能显著提升训练数据生成效率。模型由 DeepEncoder（负责图像特征提取和压缩）和 DeepSeek3B-MoE（负责从视觉 Token 重建文本）组成，其中 DeepEncoder 巧妙结合 SAM 和 CLIP，并通过卷积压缩器控制 Token 数量，DeepSeek3B-MoE 则通过混合专家设计兼顾性能与效率。文章还介绍了模型丰富的数据训练策略，并探讨了其在图表、化学结构式、几何图形等复杂图像深度解析上的应用，以及未来“模拟人类遗忘机制”处理超长上下文的巨大潜力。这标志着 VLM 和 LLM 在长文本处理方面迈出了重要一步。",
+  "mainPoints": [
+    {
+      "point": "提出“光学压缩”创新思路，利用视觉模态高效压缩文本信息",
+      "explanation": "通过将长文本信息转化为图像并进行视觉压缩，DeepSeek-OCR 实现了 7-20 倍的 Token 压缩率，有效缓解了 LLM 处理长文本的计算复杂度问题，为超长上下文处理提供了全新范式。"
+    },
+    {
+      "point": "DeepSeek-OCR 采用双组件架构，兼顾性能与效率",
+      "explanation": "DeepEncoder 结合 SAM 和 CLIP 进行高效视觉特征提取与压缩，DeepSeek3B-MoE 解码器通过混合专家设计，在仅 3B 参数下实现 30B 模型级别的表达能力和 5 亿参数模型的推理效率。"
+    },
+    {
+      "point": "模型具备深度解析能力，并在探索模拟人类遗忘机制",
+      "explanation": "DeepSeek-OCR 不仅能识别文字，还能对复杂图表、化学结构式等进行结构化提取。其探索的“光学压缩”模拟人类遗忘机制，有望实现对“无限上下文”的高效处理。"
+    }
+  ],
+  "keyQuotes": [
+    "既然一张图能包含大量文字信息，而且用的 Token 还少，那不如直接把文本转成图像？这就是所谓的「光学压缩」------用视觉模态来给文本信息「瘦身」。",
+    "就是说，原本需要 1000 个文本 Token 才能表达的内容，现在只用 100 个视觉 Token 就搞定了。",
+    "别看只有 3B 参数，但采用了 MoE（混合专家）设计------64 个专家中激活 6 个，再加 2 个共享专家，实际激活参数约 5.7 亿。这也让模型既有 30 亿参数模型的表达能力，又保持了 5 亿参数模型的推理效率。",
+    "DeepSeek-OCR 表面上是个 OCR 模型，但实际上是在探索一个更宏大的命题：能否用视觉模态作为 LLM 文本信息处理的高效压缩媒介？",
+    "AI 的进化，有时候不是做加法，而是做减法。小而美，也能玩出大花样，DeepSeek-OCR 这个 3B 小模型就是最好的证明。"
+  ],
+  "tags": [
+    "大语言模型",
+    "多模态",
+    "OCR",
+    "模型压缩",
+    "长文本处理"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2082,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760984064000,
+  "publishDateStr": "2025-10-20",
+  "publishDateTimeStr": "2025-10-20 18:14:24"
+}

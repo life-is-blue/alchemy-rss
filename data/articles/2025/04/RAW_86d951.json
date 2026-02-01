@@ -1,0 +1,58 @@
+{
+  "id": "RAW_86d951",
+  "title": "何恺明的 ResNet，成为 21 世纪被引量最多论文，Nature 最新统计",
+  "url": "https://www.jiqizhixin.com/articles/2025-04-16-8",
+  "date": "2025-04-16 09:38:47",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>《自然》杂志统计了 5 个数据库，给出了论文引用 Top 25 名单。</p>\n  </blockquote>\n  <p>21 世纪被引用最多的论文有哪些？</p>\n  <p>大家不用去统计了，《自然》给出了一个最新 Top 25 排名。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b015ca9-d6c5-4706-1f18-ba54f3434d00/public\" alt=\"image.png\" data-ratio=\"0.6704331450094162\" data-type=\"png\" data-w=\"1062\" data-imgfileid=\"503481422\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/d88fb9f7-f4d4-4c6c-94a9-654ac9bd565f/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>完整排名地址：https://www.nature.com/magazine-assets/d41586-025-01125-9/50860378</p>\n  <p><strong>排名第一的是微软在 2016 年发布的 ResNets 研究</strong>，这是一篇计算机视觉领域的经典论文。</p>\n  <p>ResNets 作为一种人工神经网络，是深度学习以及后续 AI 进步的基础。这项工作最初于 2015 年底以预印本形式发布，作者包括何恺明、张祥雨、任少卿和孙剑。ResNet<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify;line-height: 1.75em;margin-left: 8px;margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">s 原始论文在 2016 就获得了 CVPR 最佳论文奖。</span></p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/471920f5-4d08-47f2-124d-588a20e97400/public\" alt=\"image.png\" data-ratio=\"0.27579162410623087\" data-type=\"png\" data-w=\"979\" data-imgfileid=\"503481423\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/3c48c958-1761-443b-9622-6f1d1f83ab3f/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>论文地址：https://arxiv.org/pdf/1512.03385</p>\n  <p>后来 AI 领域重大进展，都深受 ResNets 的影响，包括围棋 AI（AlphaGo）、蛋白质结构预测（AlphaFold）到后来的语言模型（ChatGPT）等。</p>\n  <p>此外，「随机森林（Random forests (2001)）」，「Attention is all you need (2017)」、「ImageNet classification with deep convolutional neural networks (2017)」也位居 top 10 榜单。</p>\n  <p>值得注意的是，以上结论是《自然》团队选取了 <strong>5 个数据库</strong>（Web of Science、Scopus、OpenAlex、Dimensions、Google Scholar）的统计结果，这些数据库涵盖了 21 世纪发表的<strong>数千万篇论文</strong>：ResNets 在其中两个数据库中引用量最高，在另外两个中排名第二，最后一个位列第三 —— 综合来看，其引用次数的中位数排名在五个数据库中位居榜首。</p>\n  <p>如果从单一指标来看，ResNets 并非在所有数据库中都是引用量最高的。根据谷歌学术（Google Scholar）的数据（其团队向《自然》提供了高引论文榜单），该论文以 25.4 万次引用位居第二。而在美国科睿唯安公司旗下的 Web of Science 数据库中（该库收录的期刊范围较窄），它仅以 10 万余次引用排名第三。因而，大家需要相对来看待这次排名。</p>\n  <p>不过，21 世纪的重大突破不只是 AI 领域，希格斯玻色子的发现、引力波的首次测量等都称得上巨大的进步，然而，这些突破性成果在 2000 年以来被引用量最高的论文中却无一上榜。</p>\n  <p>原因为何？</p>\n  <p>接下来，Nature 这篇文章介绍了其他top 25论文以及它们成为「引用巨头」的原因。</p>\n  <p><strong>AI 成为二十一世纪被引用次数最多的论文</strong></p>\n  <p>AI 教父 Geoffrey Hinton 指出，<strong>AI 论文在引用方面具有天然优势，AI 领域与众多领域相关联</strong>，21 世纪以来见证了快速的技术进步和大量学术论文的涌现。</p>\n  <p>Hinton 因在 AI 领域的贡献，去年获得了诺贝尔物理学奖。</p>\n  <p>许多人认为，深度学习的革命性发展，特别是多层人工神经网络的广泛实用性，得益于 Hinton 在 2012 年共同撰写的论文《ImageNet classification with deep convolutional neural networks》。这篇论文介绍了后来被命名为 AlexNet 的网络，其在图像识别和标记竞赛中表现优于其他方法，成为 21 世纪引用次数第 8 高的论文。</p>\n  <p>论文地址：https://dl.acm.org/doi/pdf/10.1145/3065386</p>\n  <p>此外，Hinton 及其合著者撰写的关于深度学习的综述论文排名第 16。</p>\n  <p>而 2009 年李飞飞的论文《ImageNet: A Large-Scale Hierarchical Image Database》作为训练数据集根基，排名第 24。</p>\n  <p>论文地址：https://ieeexplore.ieee.org/document/5206848</p>\n  <p>三年后，一篇对 AlexNet 架构进行修改的论文描绘了一种称为 U-net 的新网络，其在图像处理上更高效，现排名第 12，当时该论文差点因缺乏新意而被会议拒绝。共同作者 Olaf Ronneberger 因这一工作而加入 DeepMind，他表示，U-net 仍然是许多扩散模型中图像生成的主要基础。</p>\n  <p>论文地址：https://arxiv.org/abs/1505.04597</p>\n  <p>2017 年，谷歌研究团队推出题为《Attention is all you need》的论文，介绍了 Transformer 神经网络架构。Transformer 通过高效实现自注意力机制，使网络学习时能优先处理相关信息，并成为推动类似 ChatGPT 的大型语言模型发展的关键。该论文是本世纪引用次数第 7 高的。</p>\n  <p>论文地址：https://arxiv.org/pdf/1706.03762</p>\n  <p>开源技术在机器学习的早期推动了其引用率的提升。《Random forests》是第 6 高引用的论文，介绍了一种优化的机器学习算法。犹他州立大学统计学家 Adele Cutler 与已故美国统计学家 Leo Breiman 共同扩展了这一方法。Cutler 表示，该论文受欢迎的原因在于其开源、免费并易于使用，且功能卓越，无需大量定制即可执行。</p>\n  <p>论文地址：https://link.springer.com/article/10.1023/A:1010933404324</p>\n  <p>许多<strong> AI 论文常在同行评审前以预印本形式发布，导致引用统计复杂化</strong>。商业数据库通常不跟踪预印本引用，或未能将其与正式发表文章的引用合并，致使实际引用量被低估。荷兰莱顿大学退休科学计量学专家 Paul Wouters 指出，随着预印本引用日益普及，数据库亟需开发新方法整合这类引用数据。</p>\n  <p>据非营利学术服务公司 OurResearch 的 Jason Priem 所述，OpenAlex 数据库（《自然》文章的一个来源）尝试通过合并预印本和最终版本来整合引用。而 Google Scholar 则试图对所有版本进行分组，汇总其引用。</p>\n  <p><strong>研究软件</strong></p>\n  <p><strong>有些论文的高引用并非偶然，而是有意识为研究人员提供可引用的对象</strong>。例如，约 25 年前，药学科学家 Thomas Schmittgen 撰写了一篇关于定量 PCR（聚合酶链式反应）技术的论文。该技术用于定量分析样本中的 DNA 含量。Schmittgen 原本引用了技术手册中的公式分析数据，但审稿人反馈称用户手册不可作为引用来源。因此，他联系了公式的创作者，共同发表了一篇具有引用性质的论文。</p>\n  <p>根据 Web of Science 数据，这篇论文获得了超过 162000 次引用，使其跻身历史引用次数最多的前十名。这篇论文因简化了生物学家计算基因在不同条件（如药物处理前后）下活性变化的方法而受欢迎。DESeq2 是一个可以使用该论文描述的 RNA 测序数据进行基因活性变化计算的软件程序，其相关论文在引用榜单上排名第 18。</p>\n  <p>另一个在榜单中被高度引用的软件论文（排名第五）由已故英国化学家 George Sheldrick 撰写。Sheldrick 于今年二月去世，他创建了 SHELX 计算机程序套件，用于分析 X 射线通过分子晶体后的散射图案，从而揭示分子的原子结构。在 2008 年，Sheldrick 撰写了一篇评论文章，建议在使用 SHELX 程序时引用此文；该文章的引用次数约为 70000 至 90000 次，具体数值因数据库而异。</p>\n  <p><strong>统计软件</strong></p>\n  <p><strong>统计软件领域中的高被引论文通常与特定的统计或编程软件相关</strong>。例如，一篇关于 scikit-learn 的论文获得了显著关注。scikit-learn 是一个免费开源的机器学习库，专为 Python 编程语言用户设计，包含丰富的预编码函数和技术。这篇论文的引用次数超过 50000 次，根据 Google Scholar 的数据可能高达 100000 次，在引用榜单中排名第 15。</p>\n  <p>另一篇被大量引用的论文来自 2015 年，探讨了 lme4 软件包。lme4 是一个使用 R 编程语言开发的免费软件包，用于分析特定统计模型的数据，其排名略高于前述 scikit-learn 的论文。此外，还有关于 G*Power 的论文，该软件是一个免费工具，为生物学家提供计算实验规模以获得统计显著性结果的便捷方法，也是高被引的。</p>\n  <p>然而，尽管 R 编程软件被科学界广泛使用和引用，它并未出现在这些高被引榜单中。OpenAlex 记录显示，描述 R 的「研究工作」获得了超过 300000 次引用，但其他数据库没有相关记录。这可能是因为 R 的开发者建议用户引用软件所在的存储库网站（www.r-project.org），而未针对其撰写过正式的研究论文。OpenAlex 错误地将这些引用视作研究论文，导致该「研究工作」在 OpenAlex 引文记录中排名靠前，却在其他数据库中缺席。</p>\n  <p>就引文文化和记录的变幻无常，这个例子说明了问题。德国科学计量学家 Robin Haunschild 为《自然》杂志的分析提供了建议。他指出：「<strong>第一课：如果你编写了一个有影响力的程序 —— 请为它撰写一篇论文。</strong>」</p>\n  <p><sup>参考链接：https://www.nature.com/articles/d41586-025-01125-9</sup></p>\n </body>\n</html>",
+  "aiSummary": "《自然》杂志统计显示，何恺明团队的 ResNet 成为 21 世纪被引量最高的论文。",
+  "oneSentenceSummary": "《自然》杂志统计显示，何恺明团队的 ResNet 成为 21 世纪被引量最高的论文。",
+  "summary": "《自然》杂志发布了 21 世纪被引用最多的论文 Top 25 排名，微软 2016 年发布的 ResNet 研究位居榜首。ResNet 作为一种人工神经网络，是深度学习和后续 AI 进步的基础，对 AlphaGo、AlphaFold、ChatGPT 等重大进展影响深远。文章还分析了其他高引用论文，如 Transformer、AlexNet 等，并探讨了 AI 论文在引用方面的优势，以及开源技术和研究软件对引用率的提升作用。文章还分析了研究软件和统计软件因其易用性和广泛应用而获得高引用。文章还指出了预印本引用统计的复杂性，并建议研究人员为有影响力的程序撰写论文，以提高其引用率。",
+  "mainPoints": [
+    {
+      "point": "ResNet 是 21 世纪被引量最多的论文，奠定了深度学习基础",
+      "explanation": "ResNet 解决了深度神经网络的退化问题，使得训练更深的网络成为可能，为后续 AI 发展提供了重要支撑。"
+    },
+    {
+      "point": "AI 论文在引用方面具有天然优势，与众多领域相关联",
+      "explanation": "AI 领域的快速发展和广泛应用，使得相关论文更容易被其他领域的研究者引用，从而提升引用量。"
+    },
+    {
+      "point": "开源技术和研究软件的论文更容易获得高引用",
+      "explanation": "开源和免费的工具降低了使用门槛，促进了技术的传播和应用，从而增加了相关论文的引用次数。"
+    },
+    {
+      "point": "研究软件和统计软件的论文更容易获得高引用",
+      "explanation": "研究软件和统计软件通常具有易用性和广泛的应用场景，方便研究人员直接引用和使用。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 论文在引用方面具有天然优势，AI 领域与众多领域相关联",
+    "第一课：如果你编写了一个有影响力的程序 ------ 请为它撰写一篇论文。",
+    "ResNets 作为一种人工神经网络，是深度学习以及后续 AI 进步的基础。",
+    "有些论文的高引用并非偶然，而是有意识为研究人员提供可引用的对象。"
+  ],
+  "tags": [
+    "ResNet",
+    "深度学习",
+    "论文引用",
+    "引文分析",
+    "计算机视觉"
+  ],
+  "topicTag": "other",
+  "readTime": 13,
+  "score": 91,
+  "wordCount": 3066,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1744796327000,
+  "publishDateStr": "2025-04-16",
+  "publishDateTimeStr": "2025-04-16 09:38:47"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c7e706f3",
+  "title": "Anthropic 收购 Bun",
+  "url": "https://simonwillison.net/2025/Dec/2/anthropic-acquires-bun/#atom-everything",
+  "date": "2025-12-02 18:40:05",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone\">Anthropic acquires Bun</a></strong>. Anthropic just acquired the company behind the <a href=\"https://bun.com/\">Bun JavaScript runtime</a>, which they adopted for Claude Code back <a href=\"https://x.com/jarredsumner/status/1943492457506697482\">in July</a>. Their announcement includes an impressive revenue update on Claude Code:</p>\n   <blockquote>\n    <p>In November, Claude Code achieved a significant milestone: just six months after becoming available to the public, it reached $1 billion in run-rate revenue.</p>\n   </blockquote>\n   <p>Here \"run-rate revenue\" means that their current monthly revenue would add up to $1bn/year.</p>\n   <p>I've been watching Anthropic's published revenue figures with interest: their annual revenue run rate was $1 billion in January 2025 and had grown to $5 billion <a href=\"https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation\">by August 2025</a> and to $7 billion <a href=\"https://www.anthropic.com/news/statement-dario-amodei-american-ai-leadership\">by October</a>.</p>\n   <p>I had suspected that a large chunk of this was down to Claude Code - given that $1bn figure I guess a large chunk of the rest of the revenue comes from their API customers, since Claude Sonnet/Opus are extremely popular models for coding assistant startups.</p>\n   <p>Bun founder Jarred Sumner <a href=\"https://bun.com/blog/bun-joins-anthropic\">explains the acquisition here</a>. They still had plenty of runway after their $26m raise but did not yet have any revenue yet:</p>\n   <blockquote>\n    <p>Instead of putting our users &amp; community through \"Bun, the VC-backed startups tries to figure out monetization\" – thanks to Anthropic, we can skip that chapter entirely and focus on building the best JavaScript tooling. [...] When people ask \"will Bun still be around in five or ten years?\", answering with \"we raised $26 million\" isn't a great answer. [...]</p>\n    <p>Anthropic is investing in Bun as the infrastructure powering Claude Code, Claude Agent SDK, and future AI coding products. Our job is to make Bun the best place to build, run, and test AI-driven software — while continuing to be a great general-purpose JavaScript runtime, bundler, package manager, and test runner.</p>\n   </blockquote>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9175/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 收购 JavaScript 运行时 Bun，并将其用于 Claude Code，后者在短短六个月内实现了 10 亿美元的显著年化收入里程碑。",
+  "oneSentenceSummary": "Anthropic 收购 JavaScript 运行时 Bun，并将其用于 Claude Code，后者在短短六个月内实现了 10 亿美元的显著年化收入里程碑。",
+  "summary": "Anthropic 收购了高性能 JavaScript 运行时 Bun，他们之前已将其用于其 AI 编程助手 Claude Code。此次收购之前，Claude Code 在公开后的六个月内实现了 10 亿美元的年度化收入，表现出色。Bun 的创始人 Jarred Sumner 解释说，加入 Anthropic 使 Bun 能够避免作为风投支持的初创公司在商业化道路上通常会遇到的挑战，转而专注于开发最好的 JavaScript 工具，特别是为 AI 驱动的软件，如 Claude Code 和未来的 AI 编码产品。此举巩固了 Bun 作为 Anthropic 不断增长的 AI 生态系统的关键基础设施的角色，并确保其在没有直接收入压力的情况下继续发展。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 收购 Bun 增强了其 AI 编码基础设施。",
+      "explanation": "通过收购 Bun，Anthropic 获得了为 Claude Code 提供支持的核心技术，从而能够更深入地集成和优化其 AI 驱动的软件开发工具的性能。"
+    },
+    {
+      "point": "Claude Code 迅速实现了 10 亿美元的年度化收入里程碑。",
+      "explanation": "这一显著的财务成功突显了市场对 AI 驱动的编码助手的强劲需求和商业可行性，使 Claude Code 成为开发者工具领域的主要参与者。"
+    },
+    {
+      "point": "此次收购使 Bun 能够纯粹专注于产品开发。",
+      "explanation": "Bun 的创始人表示，加入 Anthropic 提供了财务稳定性，使团队摆脱了直接的商业化压力，并使他们能够专注于增强用于 AI 和通用用途的 JavaScript 运行时。"
+    }
+  ],
+  "keyQuotes": [
+    "11 月，Claude Code 实现了重要的里程碑：在向公众开放仅仅六个月后，它的年度化收入就达到了 10 亿美元。",
+    "有了 Anthropic 的支持，我们可以直接跳过 'Bun 作为一家风投支持的初创公司，努力寻找商业化模式' 这一阶段，专注于构建最好的 JavaScript 工具，而无需让我们的用户和社区经历这些。",
+    "Anthropic 正在投资 Bun，将其作为 Claude Code、Claude Agent SDK 和未来 AI 编码产品的基础设施。"
+  ],
+  "tags": [
+    "AI 收购",
+    "Anthropic",
+    "Bun",
+    "JavaScript 运行时",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 288,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764700805000,
+  "publishDateStr": "2025-12-02",
+  "publishDateTimeStr": "2025-12-02 18:40:05"
+}

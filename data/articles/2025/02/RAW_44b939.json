@@ -1,0 +1,57 @@
+{
+  "id": "RAW_44b939",
+  "title": "Meta 发布 LLM 赋能的软件测试工具",
+  "url": "https://www.infoq.com/news/2025/02/meta-ach-tool/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-19 00:00:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Meta has unveiled the <a href=\"https://engineering.fb.com/2025/02/05/security/revolutionizing-software-testing-llm-powered-bug-catchers-meta-ach/\">Automated Compliance Hardening (ACH) tool</a>, a mutation-guided, LLM-based test generation system. Designed to enhance software reliability and security, ACH generates faults in source code and subsequently creates tests to detect and address these issues.<br><br>\n     Traditional automated test generation methods have primarily concentrated on increasing code coverage. However, this focus does not always result in effective fault detection. ACH represents a shift from this approach by targeting specific faults rather than simply attempting to cover more code. This system enables engineers to define the types of issues they want to address using plain text descriptions, even if those descriptions are incomplete or contradictory. ACH then automatically generates faults (mutants) and corresponding tests that are designed to&nbsp;identify the specified faults.<br><br>\n     Mutation testing involves intentionally introducing controlled faults to evaluate the effectiveness of a testing framework. However, creating realistic faults and corresponding tests has been challenging. ACH simplifies this process by utilizing LLMs to:</p>\n   <ol>\n    <li>Interpret engineers’ descriptions of potential faults.</li>\n    <li>Generate realistic faults based on these descriptions.</li>\n    <li>Automatically create tests to identify and address these faults.</li>\n   </ol>\n   <p>The ACH system follows a structured workflow to generate and validate faults efficiently. It starts by processing a free-form text description of an issue, which can come from various sources, such as previous development faults, user requirements, technical constraints, regulatory compliance needs, or engineering concerns. The system then employs three key LLM-based agents:</p>\n   <ol>\n    <li><strong>Fault Generator</strong>: This agent introduces simulated faults into the code based on the provided issue description.</li>\n    <li><strong>Equivalence Detector</strong>: To prevent redundant fault generation, this agent determines whether a newly introduced fault is semantically different from the original code.</li>\n    <li><strong>Test Generator</strong>: This agent creates test cases specifically designed to catch the introduced faults.</li>\n   </ol>\n   <p><img alt=\"ach architecture\" style=\"width:100%;height:406px;\" data-src=\"https://www.infoq.com/news/2025/02/meta-ach-tool/news/2025/02/meta-ach-tool/en/resources/1Screenshot 2025-02-19 182611-1739986812835.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/02/meta-ach-tool/en/resources/1Screenshot 2025-02-19 182611-1739986812835.png\" rel=\"share\"></p>\n   <p><em>Source: https://arxiv.org/pdf/2501.12862</em><br><br>\n     Meta has implemented ACH across several platforms, including Facebook Feed, Instagram, Messenger, and WhatsApp. Initial findings indicate that ACH assists engineers in hardening code against specific concerns while also providing broader benefits by optimizing test generation processes.<br><br>\n     Rajkumar S, a senior developer at SAP Labs India, <a href=\"https://www.linkedin.com/posts/raajkumar-s_revolutionizing-software-testing-introducing-activity-7296150146457743360-Ol7B?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACX5yoEBhsg1xPtc5iaJXHCu_Rv298CmfZA\">highlighted</a> ACH’s impact, stating:</p>\n   <blockquote>\n    <p>Automated Compliance Hardening (ACH) tool uses LLMs to revolutionize software testing by automatically generating both code mutations and the tests to catch them. A real game-changer for improving code reliability and efficiency. Test cases are not just for code coverage.</p>\n   </blockquote>\n   <p>Meta aims to expand ACH’s deployment, refine methods for measuring mutant relevance, and improve fault detection mechanisms. By integrating LLM-powered test and fault generation into large-scale industrial systems, ACH represents a significant step forward in automated software testing, potentially influencing industry-wide practices in compliance and quality assurance.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta Introduces LLM-Powered Tool for Software Testing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/meta-ach-tool/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1739987700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 发布基于 LLM 的自动化合规加固工具 ACH，旨在增强软件可靠性和安全性。",
+  "oneSentenceSummary": "Meta 发布基于 LLM 的自动化合规加固工具 ACH，旨在增强软件可靠性和安全性。",
+  "summary": "Meta 推出了自动化合规加固（ACH）工具，这是一种基于 LLM 的测试生成系统，旨在通过生成源代码中的缺陷并创建测试来检测和解决这些问题，从而提高软件的可靠性和安全性。ACH 的创新之处在于利用 LLM 自动生成缺陷和测试。这与传统自动化测试生成方法不同，后者主要集中于提高代码覆盖率。该系统允许工程师使用纯文本描述定义他们想要解决的问题类型，即使这些描述不完整或矛盾。然后，ACH 自动生成缺陷（变异体）和相应的测试，这些测试旨在识别指定的缺陷。Meta 已经在 Facebook Feed、Instagram、Messenger 和 WhatsApp 等多个平台上实施了 ACH，并计划扩展其部署。初步调查结果表明，ACH 有助于工程师加强代码以应对特定问题，同时通过优化测试用例生成流程提供更广泛的效益。",
+  "mainPoints": [
+    {
+      "point": "ACH 通过 LLM 自动生成缺陷和测试，解决了传统测试方法的局限性，提高了测试效率和代码可靠性。",
+      "explanation": "ACH 使用 LLM 解释工程师的缺陷描述，生成实际缺陷，并自动创建测试来识别和解决这些缺陷，从而简化了测试流程并提高了效率。"
+    },
+    {
+      "point": "ACH 采用结构化工作流程，通过三个 LLM 代理高效生成和验证缺陷。",
+      "explanation": "ACH 系统使用缺陷生成器、等效性检测器和测试用例生成器，确保生成的缺陷具有实际意义且测试能够有效捕获这些缺陷。"
+    },
+    {
+      "point": "Meta 在多个平台实施 ACH，初步结果表明其在代码加固和测试优化方面具有显著效果。",
+      "explanation": "ACH 的实施不仅帮助工程师解决了特定问题，还通过优化测试用例生成过程，带来了更广泛的效益，提高了整体软件质量。"
+    },
+    {
+      "point": "ACH 代表了自动化软件测试的重大进步，可能影响行业范围内的合规性和质量保证实践。",
+      "explanation": "通过集成 LLM 驱动的测试和缺陷生成到大型工业系统中，ACH 有潜力改变软件测试的行业标准。"
+    }
+  ],
+  "keyQuotes": [
+    "Automated Compliance Hardening (ACH) tool uses LLMs to revolutionize software testing by automatically generating both code mutations and the tests to catch them. （自动化合规加固 (ACH) 工具利用 LLM 通过自动生成代码突变和测试来彻底改变软件测试。）",
+    "A real game-changer for improving code reliability and efficiency. （一个真正改变游戏规则的工具，可以提高代码的可靠性和效率。）",
+    "Test cases are not just for code coverage. （测试用例不仅仅是为了代码覆盖率。）"
+  ],
+  "tags": [
+    "软件测试",
+    "LLM",
+    "自动化测试",
+    "代码安全",
+    "缺陷生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 422,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739923200000,
+  "publishDateStr": "2025-02-19",
+  "publishDateTimeStr": "2025-02-19 00:00:00"
+}

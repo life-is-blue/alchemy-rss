@@ -1,0 +1,54 @@
+{
+  "id": "RAW_348870",
+  "title": "Figma 每日 30 万美元 AWS 账单：云依赖的代价与风险",
+  "url": "https://www.infoq.com/news/2025/07/figma-aws-300k-daily-bill/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-09 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Figma recently revealed its cloud computing costs in its initial <a href=\"https://www.sec.gov/Archives/edgar/data/1579878/000162828025033742/figma-sx1.htm\">public offering (IPO) filing</a>, revealing a daily expenditure of around $300,000 on Amazon Web Services (AWS). As a result, the company allocates approximately $100 million each year, which accounts for about 12% of its reported revenue of $821 million.</p>\n   <p><a href=\"https://www.figma.com/\">Figma</a>, a widely used interface design tool, relies entirely on AWS for its \"computing, storage capabilities, bandwidth, and other services.\" The S-1 filing further details a renewed hosting agreement with AWS, signed on May 31, 2025, which commits Figma to a minimum spend of $545 million in cloud hosting services over the next five years. However, the filing doesn't break down how these costs are allocated across specific services, such as storage, compute, or bandwidth.</p>\n   <p>In addition to a substantial financial investment, Figma's filing emphasizes the risks associated with extensive cloud integration. The company acknowledges its complete reliance on AWS's performance, which makes it vulnerable to potential outages. Furthermore, AWS has the authority to change and interpret its <a href=\"https://aws.amazon.com/service-terms/\">terms of service</a> and other policies, including during contract renewals, which could negatively affect Figma's business operations. If AWS were to cancel the contract entirely, it would create significant challenges for Figma, as its cloud service infrastructure is specifically designed to operate within the AWS ecosystem.</p>\n   <p>Per Borgen, a CEO at Scrimba, <a href=\"https://www.linkedin.com/posts/per-harald-borgen_figma-just-revealed-theyre-spending-300k-activity-7346863113247297536-I7E5\">posted</a> on LinkedIn:</p>\n   <blockquote>\n    <p>For comparison, at Scrimba, we spend far less than 1% of our revenue on infrastructure. This is because we skipped the cloud and run on dedicated servers instead. But it's not just about cost. Figma’s infra is tightly coupled to AWS. If Amazon changes terms or pulls the plug, they’re in trouble. And it's all by their own admission. So the question isn’t just \"Is it expensive?\" &nbsp;It’s also \"How much control are you giving up?\"</p>\n   </blockquote>\n   <p>The deep entanglement of Figma with a cloud provider goes far beyond simply using virtual machines. As one insightful commenter on Hacker News, nevon, <a href=\"https://news.ycombinator.com/item?id=44462016\">explained</a>:</p>\n   <blockquote>\n    <p>A common misconception about moving off the cloud is viewing it solely as a VM provider. In reality, the cloud integrates deeply into your systems. Your permissions rely on cloud identities, firewalls use security group references, and cross-region connectivity depends on cloud networking. You manage secrets with cloud tools, monitor metrics through cloud observability, and often utilize whitelisted IP ranges provided by the provider. Additionally, database upgrades, VM images, and auditing are tied to the cloud services. Even your applications may depend on cloud-managed containers and event buses, while disaster recovery plans hinge on the provider's backup and failover capabilities.</p>\n   </blockquote>\n   <p>The explanation of nevon clarifies why migrating from a cloud platform, even for a large company like Figma, is not a quick or simple task.</p>\n   <p>Figma's revelation adds to the ongoing industry discussion about the escalating costs of cloud computing as companies scale. This has led some organizations exploring&nbsp;the repatriation of specific workloads or data from the public cloud to on-premises or co-located infrastructure. A prominent example is <a href=\"https://en.wikipedia.org/wiki/37signals\">37signals</a>, whose CTO, <a href=\"https://en.wikipedia.org/wiki/David_Heinemeier_Hansson\">David Heinemeier Hansson</a>, has been a vocal advocate for exiting the cloud. They <a href=\"https://world.hey.com/dhh/why-we-re-leaving-the-cloud-654b47e0\">initiated</a> their repatriation efforts in 2022, when their annual cloud bill exceeded $3.2 million. By October 2024, 37signals <a href=\"https://world.hey.com/dhh/our-cloud-exit-savings-will-now-top-ten-million-over-five-years-c7d9b5bd\">estimated</a> a $2 million savings that year by moving away from cloud services. Their <a href=\"https://www.linkedin.com/posts/david-heinemeier-hansson-374b18221_after-over-a-decade-on-aws-s3-its-finally-activity-7325882069325152256-qt8S/\">latest phase</a> involves exiting AWS's S3 storage service, which Heinemeier Hansson anticipates will save the company around $1.3 million annually.</p>\n   <p>Ultimately, Figma's substantial cloud bill serves as a stark reminder of the core dilemma facing modern tech companies: the trade-off between the agility and convenience offered by hyperscale cloud providers versus the escalating costs and the inherent risks of deep vendor lock-in.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Figma's $300,000 Daily AWS Bill Highlights Cloud Dependency Risks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/figma-aws-300k-daily-bill/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1752055200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Figma 每日 30 万美元 AWS 支出揭示云依赖高成本与厂商锁定风险，大型科技公司应警惕云服务深度依赖。",
+  "oneSentenceSummary": "Figma 每日 30 万美元 AWS 支出揭示云依赖高成本与厂商锁定风险，大型科技公司应警惕云服务深度依赖。",
+  "summary": "本文报道了 Figma 近期提交的 IPO 文件，显示其在亚马逊云服务 (AWS) 上的每日支出约为 30 万美元，每年总计约 1 亿美元，占其收入的 12%。Figma 对 AWS 基础设施的完全依赖使其容易受到性能漏洞和潜在的服务条款变更的影响，深度集成也增加了迁移难度。文章引用了 Scrimba 的 Per Borgen 和 Hacker News 评论员的观点，他们分别提倡使用专用服务器和强调云依赖的复杂性。Figma 的情况加剧了当前行业关于云成本上涨的争论，促使一些公司（如 37signals）探索云回迁策略，从而实现了可观的节省。文章最后将 Figma 的云账单视为一个鲜明的提醒：云的敏捷性与成本上升和厂商锁定风险之间需要权衡。",
+  "mainPoints": [
+    {
+      "point": "Figma 的高额 AWS 支出反映了超大规模云服务成本上涨趋势。",
+      "explanation": "Figma 每天在 AWS 上花费 30 万美元，表明云成本已成为主要的运营支出，影响公司的财务健康和战略决策。"
+    },
+    {
+      "point": "深度云集成会带来巨大的厂商锁定和运营风险。",
+      "explanation": "除了基本服务，依赖云特定的身份、网络和灾难恢复工具增加了迁移的复杂性，同时也使公司面临提供商条款变更和潜在服务中断的风险。"
+    },
+    {
+      "point": "随着公司寻求成本节约和更大的控制权，云回迁的趋势正在增强。",
+      "explanation": "像 37signals 成功退出云的例子表明，将工作负载迁移到本地部署可以显著降低成本并减轻厂商依赖风险。"
+    }
+  ],
+  "keyQuotes": [
+    "Figma 是一款广泛使用的界面设计工具，它完全依赖 AWS 提供计算、存储、带宽等服务。",
+    "如果 AWS 完全取消合同，将给 Figma 带来重大挑战，因为其云服务基础设施专门设计用于在 AWS 生态系统中运行。",
+    "一个常见的误解是把云迁移简单地看作是更换虚拟机供应商。实际上，云服务已经深度集成到你的系统中。",
+    "最终，Figma 巨额的云账单是对现代科技公司所面临的核心困境的鲜明提醒：超大规模云提供商提供的敏捷性和便利性与不断上涨的成本以及深度厂商锁定的内在风险之间的权衡。"
+  ],
+  "tags": [
+    "云计算",
+    "AWS",
+    "厂商锁定",
+    "云回迁",
+    "基础设施成本"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 602,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1752019200000,
+  "publishDateStr": "2025-07-09",
+  "publishDateTimeStr": "2025-07-09 00:00:00"
+}

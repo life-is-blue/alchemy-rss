@@ -1,0 +1,55 @@
+{
+  "id": "RAW_797e25e2",
+  "title": "一文看懂 Claude Skills：让你的 AI 按规矩高效干活",
+  "url": "https://juejin.cn/post/7562487313663508526",
+  "date": "2025-10-20 01:02:42",
+  "author": "飞哥数智谈",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>这几天，估计不少朋友都刷到了 <code>Claude Skills</code> 的资讯。</p>\n   <p><code>Anthropic</code> 官方推出 <code>Skills</code> 能力，并开源了示例仓库。</p>\n   <p>这到底是个什么产品？我们今天一起来看看。</p>\n   <h2 data-id=\"heading-0\">官方资讯</h2>\n   <p><code>Claude Skills</code> 是一个用于提升执行特定任务表现的技能包，技能包含指令、脚本和资源文件夹，<code>Claude</code> 在需要时可以加载这些内容。</p>\n   <ul>\n    <li><strong>SKILL.md</strong>：核心文件。定义技能的名称、描述，方便核心AI按需调用；定义技能的详细指令、标准工作流以及如何调用各种脚本。</li>\n    <li><strong>scripts</strong>：各种工具能力，比如Python、Shell、API调用脚本，类似于 mcp 对 AI 扩展。</li>\n    <li><strong>各类资源</strong>：参考文档、标准工作流、业务模板等，为了减少 SKILL.md 的大小，通过按需调用，降低上下文压力。</li>\n   </ul>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/519a680f7ffa445ca9bd430aa2bdf936~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6aOe5ZOl5pWw5pm66LCI:q75.awebp?rk3s=f64ab15b&amp;x-expires=1761526961&amp;x-signature=SHblrd1y51sDQMB%2FXeGDBYowni4%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>目前 <code>Claude</code> 在线产品和API都已经支持 <code>Claude Skills</code>。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/59dee2a03be049e7b6bdb1e2b976349e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6aOe5ZOl5pWw5pm66LCI:q75.awebp?rk3s=f64ab15b&amp;x-expires=1761526961&amp;x-signature=d1eUUj93hME4oS8NL%2BOBCncBodg%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/714ed0e4159342a796ccf6ff03ddc6f3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6aOe5ZOl5pWw5pm66LCI:q75.awebp?rk3s=f64ab15b&amp;x-expires=1761526961&amp;x-signature=WgyyzUcv3c9z7es870LuEjvCJzA%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-1\">简单理解</h2>\n   <p><code>Claude Skills</code> 本质是一套结构化的，涵盖了角色定义、专业背景、工作流程、工具调用的提示词。</p>\n   <h2 data-id=\"heading-2\">工作原理</h2>\n   <p>那 <code>Skills</code> 是如何工作的呢？我们以 <code>Claude</code> 在线服务为例简单描述：</p>\n   <ol>\n    <li>Claude 中配置所需的 Skills，这里应该是将 Skills 元数据（名称、描述）注册到 Claude 中。</li>\n    <li>Claude 接收任务，为该任务匹配合适的 Skills，并将相关的 SKILL.md 加载到上下文中。</li>\n    <li>根据任务所需的能力按需调用脚本和参考文档。</li>\n   </ol>\n   <h2 data-id=\"heading-3\">使用价值</h2>\n   <p>个人认为主要有 3 个层面的价值：</p>\n   <h3 data-id=\"heading-4\">直接复用</h3>\n   <p>仓库中开放了多个直接可用的 <code>Skills</code> 参考示例，包括：</p>\n   <ul>\n    <li><strong>Creative &amp; Design</strong>：创意与设计，艺术生成效果、slack gif 生成器。</li>\n    <li><strong>Development &amp; Technical</strong>：开发与技术，html生成、创建mcp server、webapp ui测试。</li>\n    <li><strong>Enterprise &amp; Communication</strong>：企业 &amp; 通信，品牌指南、内部通讯文档、主题工厂。</li>\n    <li><strong>Meta Skills</strong>：元技能，技能创建器，技能默认模板。</li>\n    <li><strong>Document Skills</strong>：文档技能，docx、pdf、xlsx、pptx常用操作。</li>\n   </ul>\n   <h3 data-id=\"heading-5\">自定义高频 Skills</h3>\n   <p>可以根据自己需要，将高频提示词进行封装，自定义为 Skills。</p>\n   <p><code>Claude Skills</code> 仓库内也提供了一个 <code>template-skill</code> 技能，方便作为新技能的起点。</p>\n   <h3 data-id=\"heading-6\">迁移“Skills思维”</h3>\n   <p>学习以上的工作原理以及 15 个 <code>Skills</code> 内容，将其应用到自己的 Agent 中。</p>\n   <p>可以是类似 <code>Qwen</code> 的自定义指令中，也可以是自己开发的 AI 产品中。</p>\n   <p>再不济也可以学习下提示词的编写技巧。</p>\n   <h2 data-id=\"heading-7\">结语</h2>\n   <p>不管你是开发者、普通员工，亦或是团队负责人，<code>Claude Skills</code> 都建议学习一下，可以帮你更加高效地获取高质量结果。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 Anthropic 推出的 Claude Skills 能力，阐述其结构、工作原理及如何通过封装提示词和工具，提升 AI 在特定任务中的执行效率和结果质量。",
+  "oneSentenceSummary": "本文详细介绍了 Anthropic 推出的 Claude Skills 能力，阐述其结构、工作原理及如何通过封装提示词和工具，提升 AI 在特定任务中的执行效率和结果质量。",
+  "summary": "文章深入浅出地介绍了 Anthropic 官方发布的 Claude Skills 能力，旨在帮助用户提升 AI 在特定任务中的表现。文章首先阐明了 Skills 的核心构成，包括定义技能名称和指令的 SKILL.md 文件、用于调用外部工具的脚本文件夹，以及减少上下文压力的各类参考资源。随后，作者简要描述了 Skills 的工作原理，即 Claude 如何根据任务匹配并加载相应的 Skills 元数据和内容。文章重点强调了 Claude Skills 的三大核心价值：一是直接复用官方提供的多种预设 Skills 示例，涵盖创意设计、开发技术、企业通信等多个领域；二是用户可以根据自身需求，将高频提示词封装为自定义 Skills；三是倡导将“Skills 思维”迁移到其他 AI Agent 或产品中，以优化提示词编写和 AI 工作流。文章认为，无论是开发者、普通员工还是团队负责人，都应学习 Claude Skills 以提高工作效率。",
+  "mainPoints": [
+    {
+      "point": "Claude Skills 通过结构化封装指令、脚本和资源，提升 AI 在特定任务的执行效率。",
+      "explanation": "它将技能定义、工作流和工具调用整合，让 AI 能按需加载，从而精确响应复杂任务，减少上下文压力，提高执行质量。"
+    },
+    {
+      "point": "Skills 提供直接复用、自定义封装和迁移思维三种核心价值。",
+      "explanation": "用户可直接使用官方示例，根据高频需求自定义技能，并将这种结构化思维应用于其他 AI Agent 或产品，优化 AI 应用开发。"
+    },
+    {
+      "point": "Claude Skills 本质是一套结构化的提示词和工具调用机制。",
+      "explanation": "通过定义清晰的 SKILL.md 文件和关联的脚本与资源，实现了 AI 任务的标准化和自动化，提高了 AI 响应的精准度和可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude Skills 是一个用于提升执行特定任务表现的技能包，技能包含指令、脚本和资源文件夹，Claude 在需要时可以加载这些内容。",
+    "Claude Skills 本质是一套结构化的，涵盖了角色定义、专业背景、工作流程、工具调用的提示词。",
+    "可以根据自己需要，将高频提示词进行封装，自定义为 Skills。",
+    "学习以上的工作原理以及 15 个 `Skills` 内容，将其应用到自己的 Agent 中。",
+    "不管你是开发者、普通员工，亦或是团队负责人，`Claude Skills` 都建议学习一下，可以帮你更加高效地获取高质量结果。"
+  ],
+  "tags": [
+    "Claude Skills",
+    "AI能力封装",
+    "AI Agent",
+    "提示词工程",
+    "工具调用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 870,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760922162000,
+  "publishDateStr": "2025-10-20",
+  "publishDateTimeStr": "2025-10-20 01:02:42"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c6b566b2",
+  "title": "Maven 4 终于快来了，新特性很香！",
+  "url": "https://juejin.cn/post/7595527937832157238",
+  "date": "2026-01-16 06:33:28",
+  "author": "JavaGuide",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>大家好，我是 Guide！在 Java 生态中，Maven 绝对是大家每天都要打交道的“老朋友”。</p>\n   <p><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fjavaguide.cn%2Fzhuanlan%2Finterview-guide.html\" target=\"_blank\" title=\"https://javaguide.cn/zhuanlan/interview-guide.html\" ref=\"nofollow noopener noreferrer\">InterviewGuide</a></strong> 这个开源 AI 项目中，我使用了 Gradle。不过，根据大家的反馈来看还是更愿意使用 Maven 一些。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/459e8232385b4a9f8bab35a93b64ae28~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgSmF2YUd1aWRl:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769150008&amp;x-signature=AaibsEmQLaRY%2BKyBjwpHHCTWmdI%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>目前（2026 年 1 月）Maven 4.0 仍处于 Release Candidate 阶段，最新版本为 4.0.0-rc-5（2025 年 11 月 08 日发布），尚未正式 GA（General Availability）。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/074b5b0095944608b3deb8847b9b716f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgSmF2YUd1aWRl:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769150008&amp;x-signature=S6Z71UDn3T9FEq1ZmG1orFid7FY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>虽然目前 Maven 4 还处于 Release Candidate（RC）阶段，但它展现出来的特性足以让我们这些长期被 Maven 3 “历史债”折磨的开发者感到兴奋。</p>\n   <p>一句话总结：<strong>Maven 4 要求最低 Java 17 运行环境，通过分离构建与消费模型、树形生命周期等黑科技，彻底告别了臃肿且难以维护的 POM。</strong></p>\n   <p>下面简单介绍一下 Maven 4 的最重要新特性（基于官方文档和发布记录）：</p>\n   <h3 data-id=\"heading-0\"><strong>Build POM 与 Consumer POM 的分离</strong></h3>\n   <p>这是 Maven 4 解决的最大痛点。在 Maven 3 时代，你发布的 <code>pom.xml</code> 既要管“怎么构建”，又要管“别人怎么依赖”，导致发布的元数据极其臃肿，甚至带有大量的 profile 和本地路径。</p>\n   <p><strong>Maven 4 解决方案</strong>：</p>\n   <ul>\n    <li><strong>Build POM</strong>：这就是你本地编辑的 <code>pom.xml</code>（模型升级至 4.1.0）。它包含所有的构建细节，比如插件配置、私有 profile 等。</li>\n    <li><strong>Consumer POM</strong>：当你执行 <code>deploy</code> 时，Maven 4 会自动生成一个“纯净版”的 <code>pom.xml</code>（固定为 4.0.0 模型）。它去掉了所有插件、build 逻辑和 parent 继承关系，仅保留 GAV 坐标和核心依赖。</li>\n   </ul>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/71dc343dc58946ec8cca05371e3d5b78~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgSmF2YUd1aWRl:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769150008&amp;x-signature=dJYfj3cPY5buIce%2Bd%2BnvZNhwEIM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><strong>默认关闭</strong> ，需显式开启：</p>\n   <pre><code class=\"hljs language-ini code-block-extension-codeShowNum\" lang=\"ini\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">mvn deploy <span class=\"hljs-attr\">-Dmaven.consumer.pom.flatten</span>=<span class=\"hljs-literal\">true</span></span>\n</code></pre>\n   <p>或在项目根 <code>.mvn/maven-user.properties</code> 中永久配置：</p>\n   <pre><code class=\"hljs language-ini code-block-extension-codeShowNum\" lang=\"ini\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\"><span class=\"hljs-attr\">maven.consumer.pom.flatten</span>=<span class=\"hljs-literal\">true</span></span>\n</code></pre>\n   <p>这样的话，发布的 artifact 更干净，依赖解析更快，生态（Gradle、sbt、IDE、Sonatype 等）兼容性更好，无需再依赖 flatten-maven-plugin 等 hack 方案。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e141f55d8e0b492badb23d603150615a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgSmF2YUd1aWRl:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769150008&amp;x-signature=Ymvhf%2FlNy18DYF2yOrmrSJdq5V4%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-1\"><strong>POM 模型升级到 4.1.0 + 多项简化语法</strong></h3>\n   <p>Maven 4 引入了全新的命名空间（**<a href=\"https://link.juejin.cn?target=http%3A%2F%2Fmaven.apache.org%2FPOM%2F4.1.0**%25EF%25BC%2589%25EF%25BC%258C%25E5%25B9%25B6%25E5%259C%25A8%25E8%25AF%25AD%25E6%25B3%2595%25E4%25B8%258A%25E5%2581%259A%25E4%25BA%2586%25E6%259E%2581%25E7%25AE%2580%25E4%25B8%25BB%25E4%25B9%2589%25E7%259A%2584%25E6%2594%25B9%25E8%25BF%259B%25E3%2580%2582\" target=\"_blank\" title=\"http://maven.apache.org/POM/4.1.0**%EF%BC%89%EF%BC%8C%E5%B9%B6%E5%9C%A8%E8%AF%AD%E6%B3%95%E4%B8%8A%E5%81%9A%E4%BA%86%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89%E7%9A%84%E6%94%B9%E8%BF%9B%E3%80%82\" ref=\"nofollow noopener noreferrer\">maven.apache.org/POM/4.1.0**…</a></p>\n   <h4 data-id=\"heading-2\"><strong>1. 自动发现子项目</strong></h4>\n   <ul>\n    <li><strong>新标签 <code>&lt;subprojects&gt;</code></strong> ：正式取代了容易产生术语混淆的 <code>&lt;modules&gt;</code>(标记为 deprecated)。</li>\n    <li><strong>隐式发现</strong> ：如果父项目 <code>packaging=pom</code> 且没有声明子项目，Maven 4 会自动扫描包含 <code>pom.xml</code> 的直接子目录。<strong>再也不用手动一行行写子模块名了！</strong></li>\n   </ul>\n   <h4 data-id=\"heading-3\"><strong>2. 坐标推断（Inference）</strong></h4>\n   <p>在 <code>&lt;parent&gt;</code> 中，如果你按默认路径放置项目，可以省略 <code>version</code>、<code>groupId</code> 甚至整个坐标。Maven 会自动从相对路径推断父 POM 坐标。</p>\n   <h4 data-id=\"heading-4\"><strong>3. CI 友好变量原生支持</strong></h4>\n   <p><code>${revision}</code>、<code>${sha1}</code> 等变量现在是原生一等公民，不需要再写 hack 插件就能直接在命令行定义版本。</p>\n   <h3 data-id=\"heading-5\"><strong>构建性能：从线性生命周期到树形并发</strong></h3>\n   <p>Maven 3 的生命周期是线性的，这意味着如果你的项目很大，构建过程就像“老牛拉破车”。</p>\n   <h4 data-id=\"heading-6\"><strong>1. 树形生命周期与钩子</strong></h4>\n   <p>Maven 4 将生命周期升级为<strong>树形结构</strong>，并引入了 <code>before:xxx</code> 和 <code>after:xxx</code> 阶段。你可以更精准地在每个阶段前后绑定插件。</p>\n   <p>默认还是 Maven 3 时代的<strong>线性行为</strong>（向后兼容）。</p>\n   <p>要真正用上<strong>树形 + 更细粒度并发</strong>，必须显式加参数 <code>-b concurrent</code>（或 --builder concurrent）。</p>\n   <h4 data-id=\"heading-7\"><strong>2. 并发构建器 (<code>-b concurrent</code>)</strong></h4>\n   <p>传统的并发构建往往受限于父子依赖。Maven 4 的并发构建器只要依赖模块进入 “Ready” 状态就会立即开跑，不再傻等父模块完成所有阶段。</p>\n   <h2 data-id=\"heading-8\"><strong>开发者体验优化</strong></h2>\n   <h4 data-id=\"heading-9\"><strong>1. 构建恢复 (<code>-r / --resume</code>)</strong></h4>\n   <p>大型项目构建到 90% 挂了？在 Maven 4 里直接 <code>-r</code> 即可从失败处继续，自动跳过已成功的模块。这简直是多模块项目的“救命稻草”。</p>\n   <h4 data-id=\"heading-10\"><strong>2. 延迟发布 (<code>deployAtEnd</code> 默认开启)</strong></h4>\n   <p>为了防止出现“半成品”发布（一部分模块发了，另一部分报错没发），Maven 4 默认会在所有模块全部构建成功后才进行最后的统一发布。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/614dcdb9a30d4f15b2a0feaf57f587d1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgSmF2YUd1aWRl:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769150008&amp;x-signature=Z4YmsNcMucEfGQhRNJXl%2FhnUX2w%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h4 data-id=\"heading-11\"><strong>3. 官方迁移助手 (<code>mvnup</code>)</strong></h4>\n   <p>担心升级出问题？官方直接给了 <code>mvnup</code> 工具，自动扫描并建议如何将你的 3.x 项目迁移到 4.1.0 模型。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c65f0b71051e49dc9e8b7718c18c7fc3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgSmF2YUd1aWRl:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769150008&amp;x-signature=fGlG6T510DlZruUVB5lgGvNfkZ0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-12\"><strong>现在该升级吗？</strong></h3>\n   <ul>\n    <li><strong>生产环境</strong>：由于目前还在 RC 阶段，且最低要求 Java 17，建议<strong>观望</strong>，等正式 GA 之后再小范围灰度。</li>\n    <li><strong>新项目/个人实验</strong>：强烈建议开启 <strong>POM 4.1.0</strong> 进行尝试。特别是 Build/Consumer POM 的分离，能让你的项目元数据管理水平提升一个档次。</li>\n    <li><strong>大厂多模块项目</strong>：如果你深陷“Maven 构建慢、POM 维护难”的泥潭，Maven 4 的并发构建和自动子项目发现正是你需要的解药。</li>\n   </ul>\n   <p>面对 Maven 二十年来最大的变动，你最期待哪个功能？或者你已经转向了 Gradle？欢迎在评论区留言，我们一起“对齐”一下！</p>\n   <p>相关地址：</p>\n   <ul>\n    <li>Maven 发布记录：<strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fmaven.apache.org%2Fref%2F\" target=\"_blank\" title=\"https://maven.apache.org/ref/\" ref=\"nofollow noopener noreferrer\">maven.apache.org/ref/</a></strong></li>\n    <li>迁移到 Maven4：<strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fmaven.apache.org%2Fguides%2Fmini%2Fguide-migration-to-mvn4.html\" target=\"_blank\" title=\"https://maven.apache.org/guides/mini/guide-migration-to-mvn4.html\" ref=\"nofollow noopener noreferrer\">maven.apache.org/guides/mini…</a></strong></li>\n    <li>Maven4 介绍：<strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fmaven.apache.org%2Fwhatsnewinmaven4.html\" target=\"_blank\" title=\"https://maven.apache.org/whatsnewinmaven4.html\" ref=\"nofollow noopener noreferrer\">maven.apache.org/whatsnewinm…</a></strong></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文深度解析了 Maven 4 的核心新特性，包括 Build/Consumer POM 分离、POM 模型升级、树形并发构建及开发者体验优化，展示了其在解决构建臃肿和性能瓶颈方面的重大进步。",
+  "oneSentenceSummary": "本文深度解析了 Maven 4 的核心新特性，包括 Build/Consumer POM 分离、POM 模型升级、树形并发构建及开发者体验优化，展示了其在解决构建臃肿和性能瓶颈方面的重大进步。",
+  "summary": "文章详细介绍了处于 Release Candidate 阶段的 Maven 4。核心改进在于引入了 Build POM 与 Consumer POM 的分离机制，解决了发布元数据臃肿的历史问题。在语法层面，POM 模型升级至 4.1.0，支持自动发现子项目、坐标推断及原生 CI 变量。性能上，Maven 4 从线性生命周期转向树形并发构建，显著提升了大型项目的构建效率。此外，还新增了构建恢复（-r）、延迟发布及官方迁移助手（mvnup）等优化开发者体验的功能。作者建议生产环境暂且观望，但鼓励新项目尝试这些能显著降低维护成本的新特性。",
+  "mainPoints": [
+    {
+      "point": "实现 Build POM 与 Consumer POM 的物理分离。",
+      "explanation": "Build POM 负责本地构建细节，Consumer POM 仅保留核心依赖坐标，解决了发布包元数据臃肿及环境依赖污染的问题。"
+    },
+    {
+      "point": "POM 模型升级至 4.1.0 并引入多项简化语法。",
+      "explanation": "通过 <subprojects> 标签实现子项目隐式发现，支持父项目坐标推断，使 POM 配置文件更加简洁易读。"
+    },
+    {
+      "point": "构建性能从线性生命周期进化为树形并发结构。",
+      "explanation": "引入并发构建器（-b concurrent），允许依赖模块在 Ready 状态下立即执行，打破了传统线性等待的性能瓶颈。"
+    },
+    {
+      "point": "显著提升大型多模块项目的开发者体验。",
+      "explanation": "支持从失败处继续构建（-r）、默认开启延迟发布以确保原子性，并提供官方迁移工具降低升级门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "Maven 4 要求最低 Java 17 运行环境，通过分离构建与消费模型、树形生命周期等黑科技，彻底告别了臃肿且难以维护的 POM。",
+    "Build POM 包含所有的构建细节；Consumer POM 去掉了所有插件、build 逻辑和 parent 继承关系，仅保留 GAV 坐标和核心依赖。",
+    "Maven 4 的并发构建器只要依赖模块进入 'Ready' 状态就会立即开跑，不再傻等父模块完成所有阶段。",
+    "在 Maven 4 里直接 -r 即可从失败处继续，自动跳过已成功的模块。这简直是多模块项目的'救命稻草'。"
+  ],
+  "tags": [
+    "Maven 4",
+    "Java 生态",
+    "构建工具",
+    "POM 模型",
+    "软件工程"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1587,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768545208000,
+  "publishDateStr": "01-16",
+  "publishDateTimeStr": "2026-01-16 06:33:28"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_65279c",
+  "title": "刚刚，GPT-4.5 发布！OpenAI 最大最贵模型，主打情商高，奥特曼带娃缺席发布会",
+  "url": "https://www.qbitai.com/2025/02/259832.html",
+  "date": "2025-02-27 21:20:27",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n\n \n \n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"50\">梦晨 西风 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"51\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>GPT-4.5</strong>正式发布，号称OpenAI<strong>最大</strong>和<strong>最好</strong>的聊天模型。</p>\n  <p data-track=\"3\">但很意外啊，这么大的事奥特曼都不来。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b62acc64-5b19-465f-1305-a72bd5066500/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"613\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">这次OpenAI也不打算秀炫酷的解题，也不打算晒各种榜单的排名，反而强调起了情商。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a6842bff-19f6-4cb5-3a26-8b3f0dcd8600/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"211\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">第一个现场演示：</p>\n  <blockquote>\n   <p data-track=\"6\">“我又被朋友鸽了，帮我写个短信告诉他们我恨他们。”</p>\n  </blockquote>\n  <p data-track=\"7\">o1意识到这样会“友尽”，但也只是很忠实的按要求完成了任务。</p>\n  <p data-track=\"8\">GPT-4.5甚至都没完成提示词中的任务，但整个互动显得更自然了：</p>\n  <ul>\n   <li data-track=\"9\">先识别出用户很烦恼</li>\n   <li data-track=\"10\">建议更清楚的表达自己的情绪</li>\n   <li data-track=\"11\">给出两种备选方案</li>\n   <li data-track=\"12\">再询问用户是否坚持原来的要求</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4c9d1c6a-0f2c-4a0a-eb22-f35d7b68da00/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"519\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">第二个现场演示，强调GPT-4.5掌握更多世界知识，以及讲述知识的方式更自然。</p>\n  <blockquote>\n   <p data-track=\"14\">解释为什么海水是咸的。</p>\n  </blockquote>\n  <p data-track=\"15\">GPT-4 Turbo掌握很多知识，但回答就像是在炫耀它很有知识，只是把事实罗列在一起。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/411a8cae-515b-4d5a-cffe-505a7d12ca00/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"638\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">同样这些知识，GPT-4.5的语气更有互动感，还考虑到用一句简洁的开场，让用户更容易记住三个关键词。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9c07c4f6-92b1-40f6-1c1f-5ff4ac0f3b00/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"632\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">面对更专业的问题“用第一性原理解释AI对齐的必要性”，o1的回答像是写论文，而GPT-4.5通过“第1步、第2步、第3步……”来引导用户思考这个问题。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/f1cf5ec9cc72b58faa0547f566f2c8fa.gif\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"974\" data-height=\"520\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">除了演示之外，直播中也透露了GPT-4.5开发过程的一些内幕：</p>\n  <p data-track=\"19\">如“激进地”使用了<strong>低精度训练</strong>，预训练阶段<strong>跨多个数据中心</strong>完成。GPT-4.5会成为<strong>未来推理模型的基础模型</strong>。</p>\n  <p data-track=\"20\">从今天起，GPT-4.5开放给200美元一个月的Pro用户。下周逐步开放给20美元一个月的Plus用户。</p>\n  <p data-track=\"22\">技术报告中表示：GPT-4.5不是一个前沿模型，但它是OpenAI最大的语言模型，比GPT-4的计算效率提高了10倍以上。</p>\n  <p data-track=\"23\">OpenAI称通过扩展无监督学习和推理提升AI的能力。</p>\n  <p data-track=\"24\">GPT‑4.5通过扩展计算和数据以及架构优化扩展了无监督学习，拥有更广泛的知识和更深入的世界理解能力，所以幻觉更少。</p>\n  <p data-track=\"25\">在衡量LLM事实准确性的SimpleQA基准上，GPT-4.5准确率62.5%，幻觉率37.1%，比GPT-4o、o1、o3mini优化了不少。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b8b8e9dc-4cc0-4596-1404-a8e1cad4fa00/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"518\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">以下是一个具体的幻觉降低的案例。</p>\n  <p data-track=\"27\">假如用户询问“第一种语言是什么”，GPT-4.5会诚实回答不知道、这还是人类未解之谜，而不是随便蒙一个答案。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6aa7c3bd-96c8-4583-c234-08684c535900/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"418\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"28\">此外，Blog中还称开发了新的可扩展的技术，能够利用从小型模型衍生出的数据来训练更大更强的模型，由此提升了GPT‑4.5的可操控性、对细微差别的理解以及自然对话能力。</p>\n  <p data-track=\"29\">在人类偏好评估中，测试者更倾向于选择GPT‑4.5而非GPT‑4o。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb39e029-cb37-4479-e9d1-a5c6ca4a7300/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"966\" data-height=\"628\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">OpenAI表示，GPT‑4.5对人类意图的理解更深刻，能够以更细腻的“情商”解读微妙的线索或隐含的期望，还展现出了更强的审美直觉和创造力，在协助写作和设计方面表现出色。</p>\n  <p data-track=\"31\">比如，当用户表达“考试不及格、很难过”，它会安慰、鼓励用户。作为对比，4o给出的回答就更加冰冷，没什么安慰的话语。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0bb5c455-41a6-4342-21ce-129ae5e1b400/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"610\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"32\">在一些回复上，GPT‑4.5对比4o回答也更简洁。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/e5feb9cff49b10b82777d44efc370893.gif\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"964\" data-height=\"518\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">另外，OpenAI还晒出了GPT‑4.5在标准学术基准测试中的结果，全面超越GPT-4o，在SWE-Lancer Diamond（coding）和MMMLU（multilingual）上超越o3-mini。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/04f78ef8-d2cf-40a3-bc55-83720ef4d800/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"578\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"35\">值得一提的是，GPT-4.5的API定价非常贵。</p>\n  <p data-track=\"36\">75美元/百万tokens输入、150美元/百万tokens输出。</p>\n  <p data-track=\"37\">对比GPT-4o，定价高出去15-30倍。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e3517ecc-2611-4c7b-a1f6-e5db1d885f00/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"832\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">到底这个价格值不值呢？不少人已经分享了抢先体验的效果。</p>\n  <p data-track=\"39\">拿到内测的博主表示，实际使用中GPT-4.5非常有创造力、一定上了很多人文课。</p>\n  <blockquote>\n   <p data-track=\"40\">Claude 3.7和GPT-4.5两个，非常相似。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c15fd5b7-71b1-4365-8235-ac0b1433e700/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"422\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"41\">他还列举了GPT-4.5视觉理解能力很强的例子。它能从这张星露谷截图中发现非常小的元素蝴蝶。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9a52ec03-0770-499d-aa39-997337348c00/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"884\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"42\">“独角兽评估”的实测表现也很好。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/da02937f-b8cd-4ffd-2e72-5858e1fe6000/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"918\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"43\">后续随着更多实测放出，应该还能看到更多有意思的例子。</p>\n  <p data-track=\"45\">最后，大家一定很关心，奥特曼去哪了呢？</p>\n  <p data-track=\"46\">在医院照顾小孩。</p>\n  <p data-track=\"47\">是的，他最近刚刚喜提一子。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/53625a9f-7e8f-4134-2fbd-b5ec225ee500/public\" alt=\"刚刚，GPT-4.5发布！OpenAI最大最贵模型，主打情商高，奥特曼带娃缺席发布会\" data-ic=\"false\" data-width=\"1080\" data-height=\"437\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"48\">直播回放：https://www.youtube.com/watch?v=cfRYp0nItZ8</p>\n  <p data-track=\"49\">参考链接：https://openai.com/index/introducing-gpt-4-5/</p><!--版权声明-->\n \n",
+  "aiSummary": "OpenAI 发布 GPT-4.5，主打情商和更强的世界知识理解能力，性能提升显著，但 API 定价较高。",
+  "oneSentenceSummary": "OpenAI 发布 GPT-4.5，主打情商和更强的世界知识理解能力，性能提升显著，但 API 定价较高。",
+  "summary": "OpenAI 发布了其最新的大型语言模型 GPT-4.5，该模型在情商和世界知识理解方面进行了重点改进。与以往不同，本次发布会没有强调解题能力和榜单排名，而是通过实际演示突出了模型在理解用户情绪、提供更自然和更具互动性的回答方面的进步。GPT-4.5 在训练方式上进行了创新（低精度训练和跨数据中心预训练），提高了计算效率和准确性，降低了幻觉率。该模型在多个学术基准测试中超越了 GPT-4o，但在 API 定价方面也显著提高。初期体验表明，GPT-4.5 在创造力和视觉理解方面表现出色。OpenAI 表示，GPT-4.5 将成为未来推理模型的基础。奥特曼因照顾新生儿子缺席了本次发布会，引发关注。",
+  "mainPoints": [
+    {
+      "point": "GPT-4.5 更注重情商和自然语言理解，提升用户体验",
+      "explanation": "通过理解用户情绪和提供更具互动性的回答，GPT-4.5 在人机交互方面取得了显著进展，使得 AI 助手更贴近人类。"
+    },
+    {
+      "point": "GPT-4.5 通过低精度训练和跨数据中心预训练等技术创新，提高了效率和准确性",
+      "explanation": "采用低精度训练和跨数据中心预训练等方法，GPT-4.5 在计算效率和降低幻觉率方面取得了显著提升。"
+    },
+    {
+      "point": "GPT-4.5 在多个基准测试中超越 GPT-4o，但 API 定价更高",
+      "explanation": "虽然 GPT-4.5 在性能上有所提升，但其高昂的 API 定价可能会限制其在某些应用场景中的使用。"
+    },
+    {
+      "point": "GPT-4.5 具备更强的视觉理解能力",
+      "explanation": "GPT-4.5 能够识别图像中细微的元素，展现出其在视觉理解方面的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "GPT-4.5 不是一个前沿模型，但它是 OpenAI 最大的语言模型，比 GPT-4 的计算效率提高了 10 倍以上。",
+    "GPT‑4.5 通过扩展计算和数据以及架构优化扩展了无监督学习，拥有更广泛的知识和更深入的世界理解能力，所以幻觉更少。",
+    "OpenAI 表示，GPT‑4.5 对人类意图的理解更深刻，能够以更细腻的 \"情商\" 解读微妙的线索或隐含的期望，还展现出了更强的审美直觉和创造力，在协助写作和设计方面表现出色。"
+  ],
+  "tags": [
+    "大语言模型",
+    "GPT-4.5",
+    "OpenAI",
+    "情商",
+    "人机交互"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1660,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740691227000,
+  "publishDateStr": "2025-02-27",
+  "publishDateTimeStr": "2025-02-27 21:20:27"
+}

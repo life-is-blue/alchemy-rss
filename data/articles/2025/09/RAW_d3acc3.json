@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d3acc3",
+  "title": "Qwen3-Next-80B-A3B：谁说企鹅和火烈鸟不需要腿？！🐧🦩",
+  "url": "https://simonwillison.net/2025/Sep/12/qwen3-next/#atom-everything",
+  "date": "2025-09-12 04:07:32",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://x.com/Alibaba_Qwen/status/1966197643904000262\">Qwen3-Next-80B-A3B</a></strong>. Qwen announced two new models via their Twitter account (nothing on <a href=\"https://qwenlm.github.io/blog/\">their blog</a> yet): <a href=\"https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct\">Qwen3-Next-80B-A3B-Instruct</a> and <a href=\"https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking\">Qwen3-Next-80B-A3B-Thinking</a>.</p>\n   <p>They make some big claims on performance:</p>\n   <blockquote>\n    <ul>\n     <li>Qwen3-Next-80B-A3B-Instruct approaches our 235B flagship.</li>\n     <li>Qwen3-Next-80B-A3B-Thinking outperforms Gemini-2.5-Flash-Thinking.</li>\n    </ul>\n   </blockquote>\n   <p>The name \"80B-A3B\" indicates 80 billion parameters of which only 3 billion are active at a time. You still need to have enough GPU-accessible RAM to hold all 80 billion in memory at once but only 3 billion will be used for each round of inference, which provides a <em>significant</em> speedup in responding to prompts.</p>\n   <p>More details from their tweet:</p>\n   <blockquote>\n    <ul>\n     <li>80B params, but only 3B activated per token → 10x cheaper training, 10x faster inference than Qwen3-32B.(esp. @ 32K+ context!)</li>\n     <li>Hybrid Architecture: Gated DeltaNet + Gated Attention → best of speed &amp; recall</li>\n     <li>Ultra-sparse MoE: 512 experts, 10 routed + 1 shared</li>\n     <li>Multi-Token Prediction → turbo-charged speculative decoding</li>\n     <li>Beats Qwen3-32B in perf, rivals Qwen3-235B in reasoning &amp; long-context</li>\n    </ul>\n   </blockquote>\n   <p>The models on Hugging Face are around 150GB each so I decided to try them out via <a href=\"https://openrouter.ai/\">OpenRouter</a> rather than on my own laptop (<a href=\"https://openrouter.ai/qwen/qwen3-next-80b-a3b-thinking\">Thinking</a>, <a href=\"https://openrouter.ai/qwen/qwen3-next-80b-a3b-instruct\">Instruct</a>).</p>\n   <p>I'm used my <a href=\"https://github.com/simonw/llm-openrouter\">llm-openrouter</a> plugin. I installed it like this:</p>\n   <pre><code>llm install llm-openrouter\nllm keys set openrouter\n# paste key here\n</code></pre>\n   <p>Then found the model IDs with this command:</p>\n   <pre><code>llm models -q next\n</code></pre>\n   <p>Which output:</p>\n   <pre><code>OpenRouter: openrouter/qwen/qwen3-next-80b-a3b-thinking\nOpenRouter: openrouter/qwen/qwen3-next-80b-a3b-instruct\n</code></pre>\n   <p>I have an LLM <a href=\"https://llm.datasette.io/en/stable/templates.html\">prompt template</a> saved called <code>pelican-svg</code> which I created like this:</p>\n   <pre><code>llm \"Generate an SVG of a pelican riding a bicycle\" --save pelican-svg\n</code></pre>\n   <p>This means I can run <a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\">my pelican benchmark</a> like this:</p>\n   <pre><code>llm -t pelican-svg -m openrouter/qwen/qwen3-next-80b-a3b-thinking\n</code></pre>\n   <p>Or like this:</p>\n   <pre><code>llm -t pelican-svg -m openrouter/qwen/qwen3-next-80b-a3b-instruct\n</code></pre>\n   <p>Here's the <a href=\"https://gist.github.com/simonw/d1a0d0ff719d609bc6fad2e133e7cbe9\">thinking model output</a> (exported with <code>llm logs -c | pbcopy</code> after I ran the prompt):</p>\n   <p><img alt=\"The bicycle is too simple and way too wide. The pelican is two circles, two orange triangular feed and a big triangle for the beak.\" src=\"https://static.simonwillison.net/static/2025/qwen3-next-80b-a3b-thinking.png\"></p>\n   <p>I enjoyed the \"Whimsical style with smooth curves and friendly proportions (no anatomical accuracy needed for bicycle riding!)\" note in <a href=\"https://gist.github.com/simonw/d1a0d0ff719d609bc6fad2e133e7cbe9#prompt\">the transcript</a>.</p>\n   <p>The instruct (non-reasoning) model <a href=\"https://gist.github.com/simonw/cc740a45beed5655faffa69da1e999f5\">gave me this</a>:</p>\n   <p><img alt=\"Blue background, brown ground, bicycle looks more like a wheelchair, pelican is actually quite good though - has thin grey wings and a perky yellow long triangular beak. Above the pelican is the caption Who needs legs?! with an emoji sequence of penguin then flamingo.\" src=\"https://static.simonwillison.net/static/2025/qwen3-next-80b-a3b-instruct.png\"></p>\n   <p>\"Who needs legs!?\" indeed! I like the penguin-flamingo emoji sequence it's decided on for pelicans.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9009/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍阿里巴巴 Qwen3-Next-80B-A3B 模型，着重介绍其稀疏 MoE 架构在高效 LLM 推理中的应用与能力。",
+  "oneSentenceSummary": "本文介绍阿里巴巴 Qwen3-Next-80B-A3B 模型，着重介绍其稀疏 MoE 架构在高效 LLM 推理中的应用与能力。",
+  "summary": "本文介绍了阿里巴巴最近发布的 Qwen3-Next-80B-A3B 大型语言模型，包含 Instruct 和 Thinking 两种版本。Qwen3-Next-80B-A3B 的性能目标远大，旨在与更大的 Qwen3-235B 旗舰模型相媲美，并超越 Gemini-2.5-Flash-Thinking。讨论的一个关键创新是“80B-A3B”架构，它表示 800 亿参数，但每个 Token 只有 30 亿激活。这种稀疏混合专家（MoE）设计据称能有效降低成本并提升速度。与 Qwen3-32B 相比，训练成本降低了 10 倍，推理速度提高了 10 倍，尤其是在处理长上下文时。本文还详细介绍了先进的架构组件，如混合架构（门控 DeltaNet + 门控注意力）、具有 512 个专家的超稀疏 MoE 以及用于推测解码的多 Token 预测。为了展示它们的能力，作者描述了如何使用`llm-openrouter`插件通过 OpenRouter 访问这些大型模型，展示了它们在创意 SVG 生成任务中的性能。实际示例展示了模型高质量的输出，以及生成引人入胜、上下文相关内容的能力。",
+  "mainPoints": [
+    {
+      "point": "Qwen3-Next 模型以显着降低的计算成本提供旗舰级性能。",
+      "explanation": "“80B-A3B”架构可在 800 亿参数中仅激活 30 亿参数，从而实现更快的推理速度和更低的训练成本。这使得高性能 LLM 更易于访问。"
+    },
+    {
+      "point": "这些模型结合了先进的架构功能，以增强效率和能力。",
+      "explanation": "混合架构、多专家超稀疏 MoE 和多 Token 预测共同提升了模型在速度、召回率、推理和长上下文处理方面的性能。"
+    },
+    {
+      "point": "像`llm-openrouter`这样的实用工具简化了对大型、尖端 LLM 的访问和评估。",
+      "explanation": "本文展示了开发者如何利用 OpenRouter 等平台轻松体验 Qwen3-Next 等强大模型，降低了高级 AI 的准入门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "Qwen3-Next-80B-A3B-Instruct 接近我们的 235B 旗舰模型。",
+    "80B 参数，但每个 token 仅激活 3B，因此训练成本降低 10 倍，推理速度比 Qwen3-32B 快 10 倍（尤其是在 32K+ 上下文时）！",
+    "混合架构：门控 DeltaNet + 门控注意力，从而实现了速度和召回率的最佳结合。",
+    "您仍然需要有足够的 GPU 可访问 RAM 来一次容纳所有 800 亿个参数，但每次推理只使用 30 亿个参数，这在响应提示时提供了**显着的**加速。",
+    "谁需要腿！？"
+  ],
+  "tags": [
+    "大型语言模型",
+    "Qwen3-Next",
+    "稀疏MoE",
+    "LLM架构",
+    "推理优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 326,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1757650052000,
+  "publishDateStr": "2025-09-12",
+  "publishDateTimeStr": "2025-09-12 04:07:32"
+}

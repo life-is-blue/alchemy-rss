@@ -1,0 +1,54 @@
+{
+  "id": "RAW_8fd2a802",
+  "title": "Cloudflare 推出零数据出口费用数据平台",
+  "url": "https://www.infoq.com/news/2025/11/cloudflare-data-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-01 10:57:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has recently <a href=\"https://blog.cloudflare.com/cloudflare-data-platform/\">announced the open beta of Cloudflare Data Platform</a>, a managed solution for ingesting, storing, and querying analytical data tables using open standards such as Apache Iceberg.</p>\n   <p>Earlier this year, Cloudflare announced the public beta of R2 Data Catalog, a managed Apache Iceberg catalog built on top of R2 object storage. Recently, the company combined Cloudflare Pipelines, R2 Data Catalog, and R2 SQL to form the Cloudflare Data Platform. <a href=\"https://www.linkedin.com/in/wylde/\">Micah Wylde</a>, principal engineer at Cloudflare, <a href=\"https://www.linkedin.com/in/n-alexander-graham\">Alex Graham</a>, senior systems engineer at Cloudflare, and <a href=\"https://www.linkedin.com/in/jeromeschneider/\">Jérôme Schneider</a>, staff software engineer at Cloudflare, explain:</p>\n   <blockquote>\n    <p>Analytical data is critical for modern companies. It allows you to understand your users’ behavior, your company’s performance, and alerts you to issues. But traditional data infrastructure is expensive and hard to operate, requiring fixed cloud infrastructure and in-house expertise. We built the Cloudflare Data Platform to be easy enough for anyone to use with affordable, usage-based pricing.</p>\n   </blockquote>\n   <p><img alt=\"Cloudflare Data Platform\" data-src=\"https://www.infoq.com/news/2025/11/cloudflare-data-platform/news/2025/11/cloudflare-data-platform/en/resources/1unnamed__33_-1760101473016.jpg\" style=\"width:100%;height:409px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/cloudflare-data-platform/en/resources/1unnamed__33_-1760101473016.jpg\" rel=\"share\"></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p><a href=\"https://developers.cloudflare.com/pipelines/\">Cloudflare Pipelines</a> collects events sent through Workers or HTTP, processes them using SQL, and stores them either in Iceberg tables or as files on R2. <a href=\"https://developers.cloudflare.com/r2/data-catalog/\">R2 Data Catalog</a> tracks the Iceberg metadata and now also handles regular maintenance tasks, such as compaction, to make queries faster. <a href=\"https://developers.cloudflare.com/r2-sql/\">R2 SQL</a> is a distributed serverless query engine for petabyte-scale datasets in R2. Micah Wylde, formerly co-founder and CEO of Arroyo, <a href=\"https://www.linkedin.com/posts/wylde_six-months-ago-arroyo-was-acquired-by-cloudflare-activity-7377001365878976513-h82O\">adds on LinkedIn</a>:</p>\n   <blockquote>\n    <p>Six months ago, Arroyo was acquired by Cloudflare. This provoked some confusion at the time — what did Cloudflare want with a stream processing engine? The answer: we're building a data platform (...) The Cloudflare Developer Platform has enabled millions of developers to build, operate, and scale their apps by providing fully serverless infrastructure. The Cloudflare Data Platform takes the same approach to make analytical data infra available to everyone.</p>\n   </blockquote>\n   <p>While SQL transformations are powerful for use cases such as schematizing and normalizing data or redacting sensitive information before storage, Pipelines currently supports only stateless transformations. In the future, Cloudflare plans to leverage more of Arroyo's stateful processing capabilities to support aggregations, incrementally updated materialized views, and joins. Jamie Lord, solution architect at CDS UK, <a href=\"https://www.linkedin.com/posts/jamie-lord-3564472a4_dataengineering-cloudcomputing-apacheiceberg-activity-7377349803334348800-8pFx?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">highlights</a> one of the main advantages of the new platform, the standard Cloudflare \"no egress fees\" to access data:</p>\n   <blockquote>\n    <p>Zero egress fees fundamentally changes the economics of data warehousing. Cloudflare's new Data Platform leverages this advantage to challenge AWS and Google's stranglehold on analytical workloads. The platform addresses a simple truth: companies are bleeding money on data transfer costs. A petabyte-scale operation might spend millions annually just moving data between regions for analysis. Cloudflare eliminates that entirely.</p>\n   </blockquote>\n   <p>Joel Hatmaker, director of engineering at McGaw.io, <a href=\"https://www.linkedin.com/posts/joelhatmaker_cloudflare-activity-7377311834049138688-Ldpr\">comments</a>:</p>\n   <blockquote>\n    <p>If you’re already using Cloudflare for its performance and security features, the Cloudflare Data Platform starts to look really attractive.</p>\n   </blockquote>\n   <p>Cloudflare claims that integration with Logpush, user-defined functions via Workers, and aggregations and joins in R2 SQL will follow in the first half of 2026.</p>\n   <p>A <a href=\"https://developers.cloudflare.com/pipelines/getting-started/\">tutorial</a> is available to create an end-to-end analytical data system using Pipelines, R2 Data Catalog, and R2 SQL. Pipelines, R2 Data Catalog, and R2 SQL are not billed during the open beta, but storage and operations incurred by queries are charged at standard rates.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Introduces Data Platform with Zero Egress Fees\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/cloudflare-data-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761994620000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 全新数据平台提供零数据出口费用和诸如 Apache Iceberg 等开放标准的托管式分析数据服务。",
+  "oneSentenceSummary": "Cloudflare 全新数据平台提供零数据出口费用和诸如 Apache Iceberg 等开放标准的托管式分析数据服务。",
+  "summary": "Cloudflare 现已启动数据平台的公开测试版。这是一个托管解决方案，旨在帮助用户轻松摄取、存储和查询分析数据表。该平台集成了 Cloudflare Pipelines，用于事件收集和 SQL 处理；R2 数据目录，用于 Apache Iceberg 元数据管理和维护；以及 R2 SQL，一个分布式无服务器查询引擎，用于处理 Petabyte 级别的数据集。其主要目标是简化传统数据基础设施，并降低其运营成本，因为传统数据基础设施通常既昂贵又复杂。Cloudflare 的一个关键优势是其“零数据出口费用”政策。这从根本上改变了数据仓库的经济模式，Cloudflare 旨在挑战主要云提供商在数据传输成本方面的优势，大规模运营每年可能节省数百万美元。该平台利用了对 Arroyo 流处理引擎的收购，最初支持无状态 SQL 转换，未来计划支持有状态处理能力，例如聚合和增量更新的物化视图。与 Logpush (日志推送服务) 的集成以及通过 Workers (无服务器函数) 的用户自定义函数也计划在 2026 年初推出。此产品对现有的 Cloudflare 用户极具吸引力，因为它充分利用了 Cloudflare 的性能和安全功能。在公开测试版期间，核心平台组件不收费，但存储和查询操作会产生标准的 R2 费用。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 数据平台提供了一种使用开放标准的托管式分析数据解决方案。",
+      "explanation": "该平台集成了 Pipelines、R2 数据目录和 R2 SQL，从而简化了数据摄取、存储和查询流程，同时降低了分析工作负载的运营复杂性和成本。"
+    },
+    {
+      "point": "该平台的零数据出口费用从根本上改变了数据仓库的经济模式。",
+      "explanation": "通过消除数据传输成本，Cloudflare 直接挑战了现有的云提供商，为 Petabyte 级别的运营提供了显著的成本节约，并提高了可负担性。"
+    },
+    {
+      "point": "Cloudflare 旨在通过无服务器、基于使用量的模式来实现分析数据基础设施的民主化。",
+      "explanation": "在收购 Arroyo 的基础上，该平台将 Cloudflare 的无服务器开发者平台理念扩展到数据领域，使每个人都能访问和负担得起强大的分析功能。"
+    }
+  ],
+  "keyQuotes": [
+    "分析数据对于现代公司至关重要。它使您能够了解用户的行为、公司的表现，并及时发现潜在问题。然而，传统的数据基础设施既昂贵又难以运营，需要固定的云基础设施和内部专业知识。（英文原文：Analytical data is critical for modern companies. It allows you to understand your users' behavior， your company's performance， and alerts you to issues. But traditional data infrastructure is expensive and hard to operate， requiring fixed cloud infrastructure and in-house expertise.）",
+    "Cloudflare 开发者平台已使数百万开发者能够通过提供完全无服务器的基础设施来构建、运营和扩展他们的应用程序。Cloudflare 数据平台采用相同的方法，使每个人都可以使用分析数据基础设施。（英文原文：The Cloudflare Developer Platform has enabled millions of developers to build， operate， and scale their apps by providing fully serverless infrastructure. The Cloudflare Data Platform takes the same approach to make analytical data infra available to everyone.）",
+    "零数据出口费用从根本上改变了数据仓库的经济模式。Cloudflare 的新数据平台利用这一优势来挑战 AWS 和 Google 对分析工作负载的控制。（英文原文：Zero egress fees fundamentally changes the economics of data warehousing. Cloudflare's new Data Platform leverages this advantage to challenge AWS and Google's stranglehold on analytical workloads.）",
+    "如果您已经在使用 Cloudflare 的性能和安全功能，那么 Cloudflare 数据平台将变得极具吸引力。（英文原文：If you're already using Cloudflare for its performance and security features， the Cloudflare Data Platform starts to look really attractive.）"
+  ],
+  "tags": [
+    "Cloudflare",
+    "数据平台",
+    "云计算",
+    "Apache Iceberg",
+    "零数据出口费用"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 524,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761994620000,
+  "publishDateStr": "2025-11-01",
+  "publishDateTimeStr": "2025-11-01 10:57:00"
+}

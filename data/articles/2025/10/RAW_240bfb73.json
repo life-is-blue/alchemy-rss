@@ -1,0 +1,53 @@
+{
+  "id": "RAW_240bfb73",
+  "title": "竟然被 element-plus 背刺了",
+  "url": "https://juejin.cn/post/7558339664354672649",
+  "date": "2025-10-08 12:30:29",
+  "author": "我的写法有点潮",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <h2 data-id=\"heading-0\">引言</h2>\n   <p>闲来无事，在 GitHub 上找了一个开源项目玩玩。结果一打开就看傻了眼：引入了一堆库，用到的功能却屈指可数。\n    <br>\n    于是我顺手做了“减肥手术”——把没用的库都砍了。砍着砍着问题就来了：有个库删掉之后，项目居然报错，提示需要 Element Plus 2.3.7 版本。升级之后倒是能跑了，但我发现里面连基础组件封装都没有。</p>\n   <p>按照我一贯的习惯，我就重新封装了 <code>Dialog &gt; Form</code> 这一层级的表单组件，让弹窗表单写起来更轻量、更一致。\n    <br>\n    不过，意外出现了一个老熟人：<strong><code>resetFields</code> 重置不生效</strong>。</p>\n   <hr>\n   <h2 data-id=\"heading-1\">问题1 resetFields 不重置初始值</h2>\n   <p>在 <code>el-dialog &gt; el-form</code> 中使用 <code>resetFields()</code> 理论上会把表单重置为“初始值”，即组件 <code>model</code> 初始化时的值。</p>\n   <pre><code class=\"hljs language-vue3 code-block-extension-codeShowNum\" lang=\"vue3\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">const form = reactive({</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">  name: '',</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">  age: '',</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\">})</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\"></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"6\">const reset = () =&gt; {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"7\">  ruleFormRef.value?.resetFields()</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"8\">}</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"9\"></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"10\">const openDialog = (row) =&gt; {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"11\">    Object.assign(form, row)</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"12\">    visible.value = true</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"13\">}</span>\n</code></pre>\n   <p>问题是</p>\n   <ul>\n    <li>初次新增调用openDialog，row为空，正常</li>\n    <li>初次编辑调用openDialog，row为正常表单数据，显示正常</li>\n    <li>关闭编辑后，再打开新增，数据未被清除</li>\n   </ul>\n   <pre><code class=\"hljs language-vue3 code-block-extension-codeShowNum\" lang=\"vue3\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">form = reactive({})</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">ruleFormRef.value?.resetFields()</span>\n</code></pre>\n   <hr>\n   <h2 data-id=\"heading-2\">问题2 使用ref声明model，二次打开触发校验</h2>\n   <p>在以上问题点出现后，使用<code>ref声明model</code>，在新增时，将model重新赋值为空对象</p>\n   <pre><code class=\"hljs language-ini code-block-extension-codeShowNum\" lang=\"ini\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">const <span class=\"hljs-attr\">form</span> = ref({</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">  name: '',</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">  age: '',</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\">})</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\"></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"6\">const <span class=\"hljs-attr\">reset</span> = () =&gt; {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"7\">  ruleFormRef.value?.resetFields()</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"8\">}</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"9\"></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"10\">const <span class=\"hljs-attr\">openDialog</span> = (type, row) =&gt; {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"11\">    <span class=\"hljs-attr\">form.value</span> = row</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"12\">    if (<span class=\"hljs-attr\">type</span> === <span class=\"hljs-string\">'add'</span>) form.value = {}</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"13\">    <span class=\"hljs-attr\">visible.value</span> = <span class=\"hljs-literal\">true</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"14\">}</span>\n</code></pre>\n   <h2 data-id=\"heading-3\">原因分析</h2>\n   <ul>\n    <li>restFields 有一个依赖初始值，不是在挂载，也不是在声明时，需要和代码书写分开。它是指第一次打开dialog声明的form，也就是visible=true的值</li>\n    <li>那为什么触发校验呢，ref引用变了，触发了form中的校验，推荐使用Object.assign</li>\n   </ul>\n   <h2 data-id=\"heading-4\">解决方案</h2>\n   <ul>\n    <li>手动删除model中的属性值</li>\n    <li>在Dialog上加上destroy-on-close或者使用v-if来让每次的初始值基于声明的值</li>\n    <li>在新增的时候传递一个初始对象，覆盖原值</li>\n    <li>在弹窗打开之后再做赋值操作</li>\n   </ul>\n   <pre><code class=\"hljs language-vue3 code-block-extension-codeShowNum\" lang=\"vue3\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">  dialogVisible.value = true</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">  Object.assign(form, row || {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">    toolTypeName: \"\",</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\">    toolTypeId: 0</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\">  })</span>\n</code></pre>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章深度剖析了 Element Plus 中`el-dialog`嵌套`el-form`时`resetFields`不生效及二次校验的问题，并提供了详细的解决方案。",
+  "oneSentenceSummary": "文章深度剖析了 Element Plus 中`el-dialog`嵌套`el-form`时`resetFields`不生效及二次校验的问题，并提供了详细的解决方案。",
+  "summary": "本文从作者在优化开源项目时遇到的实际问题出发，详细探讨了在使用 Element Plus 框架时，开发者在`el-dialog`中封装`el-form`时常遇到的两个核心问题。首先是`resetFields`方法无法如预期地将表单重置到初始状态，尤其是在通过`Object.assign`进行数据赋值后，导致在“编辑-关闭-新增”流程中表单数据未能正确清除。作者深入分析指出，`resetFields`依赖的是`dialog`首次`visible=true`时`form`的初始值。其次，文章揭示了使用`ref`声明`model`并在新增时直接赋值为空对象可能导致二次打开弹窗时触发不必要的校验。针对这些问题，文章提供了多项实用解决方案，包括手动清空`model`属性、利用`destroy-on-close`或`v-if`销毁`dialog`、在新增时传递初始对象，以及在弹窗打开后再进行赋值操作等，旨在帮助开发者有效地解决这些实际开发中的“背刺”痛点。",
+  "mainPoints": [
+    {
+      "point": "Element Plus 的`resetFields`方法在`el-dialog`中重置不生效，因为它依赖`dialog`首次打开时的`form`初始值。",
+      "explanation": "这导致在编辑后关闭再打开新增时，表单数据未能被正确清除，与开发者预期不符，是实际开发中常见的困扰。"
+    },
+    {
+      "point": "使用`ref`声明`model`并在新增时重新赋值为空对象，可能导致二次打开弹窗时触发不必要的校验。",
+      "explanation": "`ref`引用变化会触发`form`的校验机制，文章推荐使用`Object.assign`来避免此问题，保持校验的预期行为。"
+    },
+    {
+      "point": "针对`resetFields`不生效问题，可采用多种策略解决，如手动清空、销毁`dialog`或延迟赋值。",
+      "explanation": "这些解决方案提供了灵活性，允许开发者根据具体场景选择最合适的实践，确保表单行为符合预期，提升用户体验。"
+    }
+  ],
+  "keyQuotes": [
+    "resetFields 有一个依赖初始值，不是在挂载，也不是在声明时，需要和代码书写分开。它是指第一次打开 dialog 声明的 form，也就是 visible=true 的值",
+    "那为什么触发校验呢，ref 引用变了，触发了 form 中的校验，推荐使用 Object.assign",
+    "在 Dialog 上加上 destroy-on-close 或者使用 v-if 来让每次的初始值基于声明的值"
+  ],
+  "tags": [
+    "前端开发",
+    "Vue.js",
+    "Element Plus",
+    "表单重置",
+    "组件封装"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 706,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759926629000,
+  "publishDateStr": "2025-10-08",
+  "publishDateTimeStr": "2025-10-08 12:30:29"
+}

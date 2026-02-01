@@ -1,0 +1,57 @@
+{
+  "id": "RAW_b92c3c",
+  "title": "Hugging Face 和 JFrog 合作，提升 AI 安全的透明度",
+  "url": "https://huggingface.co/blog/jfrog",
+  "date": "2025-03-04 00:00:00",
+  "author": "Luc Georges, Shachar M",
+  "siteName": "Hugging Face Blog",
+  "content": "<!-- HTML_TAG_START -->\n<html>\n <head></head>\n <body>\n  <p></p>We are pleased to announce our partnership with <a href=\"https://jfrog.com\">JFrog</a>, creators of the JFrog Software Supply Chain Platform, as part of our <a href=\"https://huggingface.co/blog/2024-security-features\">long-standing commitment</a> to provide a safe and reliable platform for the ML community. \n  <p></p>\n  <p>We have decided to add JFrog's scanner to our platform to continue improving security on the Hugging Face Hub. JFrog's scanner brings new functionality to scanning, aimed at reducing false positives on the Hub. Indeed, what we currently observe is that model weights can contain code that is executed upon deserialization and sometimes at inference time, depending on the format. This code is oftentimes a non harmful practicality for the developer. As our picklescan scanner only performs pattern matching on module names, we cannot always confirm that usage of a given function or module is malicious. JFrog goes a step deeper and will parse and analyze code it finds in models weights to check for potential malicious usage.</p>\n  <blockquote class=\"tip\">\n   <p>Interested in joining our security partnership / providing scanning information on the Hub? Please get in touch with us over at <a href=\"mailto:security@huggingface.co\">security@huggingface.co</a>.</p>\n  </blockquote><img class=\"block\" src=\"https://speedmedia.jfrog.com/08612fe1-9391-4cf3-ac1a-6dd49c36b276/media.jfrog.com/wp-content/uploads/2025/03/03154424/JFrog-and-Hugging-Face-join-forces_863x300.png\">\n  <h2 class=\"relative group flex items-center\"><a id=\"model-security-refresher\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#model-security-refresher\"> <span class=\"header-link\"></span> </a> <span> Model security refresher </span></h2>\n  <p>To share models, we serialize weights, configs and other data structures we use to interact with the models, in order to facilitate storage and transport. Some serialization formats are vulnerable to nasty exploits, such as arbitrary code execution (looking at you pickle), making shared models that use those formats potentially dangerous.</p>\n  <p>As Hugging Face has become a popular platform for model sharing, we’d like to help protect the community from this, hence why we have developed tools like <a href=\"https://github.com/mmaitre314/picklescan\">picklescan</a> and why we are integrating JFrog in our scanner suite.</p>\n  <p>Pickle is not the only exploitable format out there, <a href=\"https://github.com/Azure/counterfit/wiki/Abusing-ML-model-file-formats-to-create-malware-on-AI-systems:-A-proof-of-concept\">see for reference</a> how one can exploit Keras Lambda layers to achieve arbitrary code execution. The good news is that JFrog catches both of these exploits and more in additional file formats – see their <a href=\"https://research.jfrog.com/model-threats/\">Model Threats</a> page for up to date scanner information.</p>\n  <blockquote class=\"tip\">\n   <p>Read all our documentation on security here: <a href=\"https://huggingface.co/docs/hub/security\">https://huggingface.co/docs/hub/security</a> 🔥</p>\n  </blockquote>\n  <h2 class=\"relative group flex items-center\"><a id=\"integration\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#integration\"> <span class=\"header-link\"></span> </a> <span> Integration </span></h2>\n  <p>There's nothing you have to do to benefit from this! All public model repositories will be scanned by JFrog automatically as soon as you push your files to the Hub. Here is an example repository you can check out to see the feature in action: <a href=\"https://huggingface.co/mcpotato/42-eicar-street\">mcpotato/42-eicar-street</a>.</p><img class=\"block\" src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/hub/third-party-scans-list-with-jfrog.png\"> <em>`mcpotato/42-eicar-street`'s' `danger.dat` scan results</em>\n  <p>Note that you might not see a scan for your model as of today, as we have millions of model repos. It may take us some time to catch up 😅.</p>\n  <p>In total, we have already scanned hundreds of millions of files, because we believe that empowering the community to share models in a safe and frictionless manner will lead to growth for the whole field.</p><!-- HTML_TAG_END -->\n </body>\n</html>",
+  "aiSummary": "Hugging Face 与 JFrog 合作，集成 JFrog 扫描器，旨在提高 AI 模型安全性并降低风险，为 ML 社区提供更安全的平台。",
+  "oneSentenceSummary": "Hugging Face 与 JFrog 合作，集成 JFrog 扫描器，旨在提高 AI 模型安全性并降低风险，为 ML 社区提供更安全的平台。",
+  "summary": "Hugging Face 宣布与 JFrog 合作，将 JFrog 的扫描器集成到 Hugging Face Hub 平台，旨在提升 AI 模型的安全性。JFrog 的扫描器通过解析和分析模型权重中的代码，检测潜在的恶意使用，从而减少误报，提供更精确的恶意代码检测能力。Hugging Face 一直致力于保护社区免受恶意模型的侵害，此前已开发了 picklescan 等工具。此次合作将进一步加强 Hugging Face Hub 的安全防护能力，所有公共模型仓库在上传时都将自动接受 JFrog 的扫描。Hugging Face 已经扫描了数亿个文件，致力于以安全和无摩擦的方式赋能社区共享模型。",
+  "mainPoints": [
+    {
+      "point": "JFrog 扫描器能更深入地分析模型权重中的代码，减少误报",
+      "explanation": "JFrog 的扫描器不仅进行模式匹配，还会解析代码，检查潜在的恶意使用，提高了安全检测的准确性。"
+    },
+    {
+      "point": "多种序列化格式存在安全漏洞，可能导致任意代码执行",
+      "explanation": "Pickle 和 Keras Lambda layers 等格式都可能被利用执行恶意代码，Hugging Face 通过集成 JFrog 来防范这些风险。"
+    },
+    {
+      "point": "Hugging Face Hub 上的所有公共模型仓库都将自动接受 JFrog 的扫描",
+      "explanation": "用户无需额外操作即可受益于此安全增强功能，Hugging Face 致力于为社区提供安全可靠的平台。"
+    },
+    {
+      "point": "Hugging Face 致力于为社区提供安全可靠的平台",
+      "explanation": "Hugging Face 长期以来一直重视模型安全，通过合作和技术创新，不断提升平台的安全性和可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "We are pleased to announce our partnership with [JFrog](https://jfrog.com)， creators of the JFrog Software Supply Chain Platform， as part of our [long-standing commitment](https://huggingface.co/blog/2024-security-features) to provide a safe and reliable platform for the ML community.",
+    "JFrog goes a step deeper and will parse and analyze code it finds in models weights to check for potential malicious usage.",
+    "All public model repositories will be scanned by JFrog automatically as soon as you push your files to the Hub."
+  ],
+  "tags": [
+    "AI 安全",
+    "模型安全",
+    "软件供应链安全",
+    "Hugging Face",
+    "JFrog"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 445,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741046400000,
+  "publishDateStr": "2025-03-04",
+  "publishDateTimeStr": "2025-03-04 00:00:00"
+}

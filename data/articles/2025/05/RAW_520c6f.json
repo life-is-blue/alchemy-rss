@@ -1,0 +1,55 @@
+{
+  "id": "RAW_520c6f",
+  "title": "多模态大模型不会画辅助线？最新评估得分：o3 仅 25.8%，远低于人类 82.3% | 清华腾讯斯坦福联合",
+  "url": "https://www.qbitai.com/2025/05/288716.html",
+  "date": "2025-05-28 04:38:46",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"33\">不圆 整理自 凹非寺</p>\n   <p data-track=\"34\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">多模态时代应如何评估模型的视觉输出能力？</p>\n  <p data-track=\"3\">来自清华大学、腾讯混元、斯坦福大学、卡耐基梅隆大学等顶尖机构的研究团队联合发布了<strong>RBench-V</strong>：一款针对大模型的视觉推理能力的新型基准测试。</p>\n  <p data-track=\"4\">过去的评估基准主要集中于评估多模态输入和纯文本推理过程。</p>\n  <p data-track=\"5\">而RBench-V系统性评估了当前主流大模型基于“画图”的视觉推理能力：</p>\n  <p data-track=\"6\">比如在图中画出辅助线、描点连线、绘制光线路径、标注目标区域，等等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"多模态大模型不会画辅助线？最新评估得分：o3仅25.8%，远低于人类82.3% | 清华腾讯斯坦福联合\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/719a5184-2e93-4175-7e15-1950c013a900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/719a5184-2e93-4175-7e15-1950c013a900/public\">\n  </div>\n  <p data-track=\"7\">结果发现，即使是表现最好的模型o3，在RBench-V上的准确率也只有25.8%，远低于人类的82.3%。</p>\n  <p data-track=\"8\">这篇论文在reddit machine learning社区引发了讨论，有网友评价：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"9\">有趣的现象，视觉推理连小孩都能做到，GPT-4o却做不到。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"多模态大模型不会画辅助线？最新评估得分：o3仅25.8%，远低于人类82.3% | 清华腾讯斯坦福联合\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f85693ad-fda9-47a1-82b1-8381ec6c3800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f85693ad-fda9-47a1-82b1-8381ec6c3800/public\">\n  </div>\n  <p data-track=\"11\">为了评估模型的跨模态推理能力，RBench-V精心设计并筛选了共计803道题目，涵盖几何与图论（数学）、力学与电磁学（物理）、多目标识别（计数）以及路径规划与图形联想（图形游戏）等多个领域。</p>\n  <p data-track=\"12\">与以往仅要求文字回答的多模态评测不同，RBench-V的每一道题都明确要求模型<strong>生成或修改图像内容</strong>来支持推理过程：</p>\n  <p data-track=\"13\">简单地说，就是让大模型像人类专家一样，通过绘制辅助线、观察图形结构等可视化方式进行思考。</p>\n  <p data-track=\"14\">这种对“画出图以辅助思考”过程的强调，对模型的视觉理解和图文协同推理能力提出了全新的要求。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"多模态大模型不会画辅助线？最新评估得分：o3仅25.8%，远低于人类82.3% | 清华腾讯斯坦福联合\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/49a03196-3e39-40a6-286e-438783796200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/49a03196-3e39-40a6-286e-438783796200/public\">\n  </div>\n  <p data-track=\"15\">评测发现，尽管GPT-4o、Gemini、o3等新一代大模型标榜具备“多模态理解与生成”能力，它们在<strong>真正需要图像输出参与推理</strong>的问题上仍显得力不从心。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"多模态大模型不会画辅助线？最新评估得分：o3仅25.8%，远低于人类82.3% | 清华腾讯斯坦福联合\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/865d593d-bb3d-4aef-472e-f455da43f500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/865d593d-bb3d-4aef-472e-f455da43f500/public\">\n  </div>\n  <p data-track=\"17\">在RBench-V的评测中，即便是当前业界最强的闭源模型，也远远比不上人类视觉推理能力。</p>\n  <p data-track=\"18\">OpenAI发布的旗舰模型o3以25.8%的整体准确率排名首位，Google最新推出的Gemini2.5紧随其后，得分为20.2%。</p>\n  <p data-track=\"19\">但这两者的表现与人类专家高达82.3%的平均准确率相比，依然很不够看，说明了现有模型在复杂多模态推理任务中认知能力的严重不足。</p>\n  <p data-track=\"20\">在开源模型阵营中，主流代表如Qwen2.5VL、InternVL、LLaVA-OneVision等模型的准确率普遍徘徊在8%至10%之间，甚至在某些任务维度上接近“随机作答”的水平——</p>\n  <p data-track=\"21\">所谓“把答题卡放地上踩一脚”的水平。</p>\n  <p data-track=\"22\">这种悬殊的表现不仅揭示了当前开源生态在多模态输出生成上的技术瓶颈，也反映出大模型从“看懂图”到“画出图以辅助思考”的能力缺失。</p>\n  <p data-track=\"23\">当前，大模型对于视觉推理尚处于早期探索阶段。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"多模态大模型不会画辅助线？最新评估得分：o3仅25.8%，远低于人类82.3% | 清华腾讯斯坦福联合\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0162344e-ed4e-4621-dd69-71b379373a00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0162344e-ed4e-4621-dd69-71b379373a00/public\">\n  </div>\n  <p data-track=\"24\">此外，通过比较不同模型的得分，可以看到：<strong>仅靠扩大模型参数规模、引入图像输入通道，或在文字层面堆叠长链条思维（Chain-of-Thought,CoT）并不能有效提升模型的视觉推理能力。</strong></p>\n  <p data-track=\"26\">RBench-V的研究揭示了一个关键问题：当前的大模型在处理需要空间直觉和图像操作的几何类问题时，往往选择“走捷径”。</p>\n  <p data-track=\"27\">与人类专家倾向于通过直观的可视化方法进行思考不同，大多数模型更习惯于将图形问题抽象为坐标系下的代数表达，并采用文本推理路径完成解题。</p>\n  <p data-track=\"28\">这种“用文字绕过图形”的策略虽然在某些场景下能够给出正确答案，但实际上掩盖了其<strong>对图像信息的深层理解缺失</strong>，也暴露出它们“表面聪明，实则薄弱”的多模态推理能力。</p>\n  <p data-track=\"29\">RBench-V的实验结果显示，即便是采用长文本推理路径或具备“看图说话”能力的模型，在面对需要图像输出的复杂问题时，仍然束手无策。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"多模态大模型不会画辅助线？最新评估得分：o3仅25.8%，远低于人类82.3% | 清华腾讯斯坦福联合\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9eb59cd8-1fb8-4489-e146-177372316800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9eb59cd8-1fb8-4489-e146-177372316800/public\">\n  </div>\n  <p data-track=\"30\">RBench-V团队指出，真正推动大模型迈向“类人智能”的突破口，在于构建<strong>能够在推理过程中主动生成图像、构图辅助思考</strong>的认知框架。</p>\n  <p data-track=\"31\">这其中，多模态思维链（Multi-modal Chain-of-Thought,M-CoT）机制、智能体推理（Agent-based Reasoning）范式等新兴方法，可能成为人工智能通往未来的重要路径。</p>\n  <p data-track=\"32\"><em>论文、代码、数据均可在项目主页找到：</em><em><br></em><em>https://evalmodels.github.io/rbenchv/</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "清华等机构发布 RBench-V 基准，揭示多模态大模型在需要图像输出的视觉推理任务中表现远逊于人类。",
+  "oneSentenceSummary": "清华等机构发布 RBench-V 基准，揭示多模态大模型在需要图像输出的视觉推理任务中表现远逊于人类。",
+  "summary": "清华大学、腾讯混元、斯坦福大学等机构联合推出 RBench-V，这是一个专门评估大模型基于“画图”进行视觉推理能力的新基准。不同于以往侧重文本回答的评估，RBench-V 要求模型通过生成或修改图像（如画辅助线）来辅助推理过程。测试涵盖几何与图论、力学与电磁学、多目标识别、路径规划与图形联想等领域。测试结果显示，即使是 GPT-4o、Gemini 等顶级闭源模型，其准确率最高也仅为 25.8%，与人类专家 82.3%的表现差距巨大。开源模型的表现更差。研究指出，模型当前倾向于将图形问题转化为代数或文本，回避深层图像理解和操作，仅靠扩大规模或 CoT 难以弥补此短板。文章强调，构建能在推理中主动生成图像以辅助思考的认知框架是 AI 迈向“类人智能”的关键突破口。",
+  "mainPoints": [
+    {
+      "point": "RBench-V 基准专注评估模型通过生成图像辅助视觉推理的能力",
+      "explanation": "该基准填补了现有评估体系的空白，要求模型像人类一样通过画图辅助思考，更全面地测试模型的深层视觉理解和图文协同能力。"
+    },
+    {
+      "point": "当前多模态大模型在“画图辅助思考”的视觉推理上能力严重不足",
+      "explanation": "即使是顶级的闭源模型，得分也远低于人类水平，表明现有模型在处理需要空间直觉和图像操作的复杂推理任务时存在明显短板。"
+    },
+    {
+      "point": "模型倾向于文本推理而非图像操作，掩盖了深层图像理解缺失",
+      "explanation": "研究发现，模型常将图形问题抽象为代数表达，用文字绕过对图像的深层理解和操作，这限制了其在复杂视觉推理任务中的表现。"
+    }
+  ],
+  "keyQuotes": [
+    "多模态时代应如何评估模型的视觉输出能力？",
+    "即使是表现最好的模型 o3，在 RBench-V 上的准确率也只有 25.8%，远低于人类的 82.3%。",
+    "与以往仅要求文字回答的多模态评测不同，RBench-V 的每一道题都明确要求模型生成或修改图像内容来支持推理过程",
+    "与人类专家倾向于通过直观的可视化方法进行思考不同，大多数模型更习惯于将图形问题抽象为坐标系下的代数表达，并采用文本推理路径完成解题。",
+    "真正推动大模型迈向'类人智能'的突破口，在于构建能够在推理过程中主动生成图像、构图辅助思考的认知框架。"
+  ],
+  "tags": [
+    "多模态AI",
+    "视觉推理",
+    "基准测试",
+    "大模型",
+    "AI评测"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1547,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748407126000,
+  "publishDateStr": "2025-05-28",
+  "publishDateTimeStr": "2025-05-28 04:38:46"
+}

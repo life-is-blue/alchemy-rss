@@ -1,0 +1,53 @@
+{
+  "id": "RAW_7d48c4",
+  "title": "Meta 开源 LlamaFirewall，增强 AI 智能体的综合安全防护",
+  "url": "https://www.infoq.com/news/2025/05/llamafirewall-agent-protection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-13 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.arxiv.org/abs/2505.03574\">LlamaFirewall is a security framework aimed at safeguarding AI agents</a> against prompt injection, goal misalignment, and insecure code generation. It achieved over 90% efficacy in reducing attack success rates when evaluated on the AgentDojo benchmark. Additionally, developers can update its behavior by adding new security guardrails.</p>\n   <p>LlamaFirewall is a real-time guardrail monitor designed to serve as a final layer of defense against security risks associated with AI Agents. It includes three protection layers: PromptGuard 2, a universal jailbreak protector; Agent Alignment Checks, a chain-of-thought auditor that inspects agent reasoning for prompt injection and goal misalignment; and CodeShield, an online static analysis engine aimed at preventing the generation of insecure or dangerous code by coding agents.</p>\n   <p>PromptGuard 2 is a fine-tuned BERT-style model designed to detect jailbreak attempts that analyzes both user prompts and untrusted data sources in real time. It specifically addresses jailbreak tactics such as instruction overrides and token injection.</p>\n   <blockquote>\n    <p>These techniques are often explicit, repetitive, and pattern-rich, making them more amenable to pattern-based detection approaches. Compared to goal hijacking attacks, jailbreaks exhibit higher lexical regularity and structural predictability. This characteristic also makes them a common entry point for novice attackers or automated adversarial tools.</p>\n   </blockquote>\n   <p>In comparison with its previous generation, PromptGuard 2 brings performance improvements to the 86M parameter variation and lower latency to the lightweight 22M parameter variant.</p>\n   <p>AlignmentCheck is an experimental chain-of-thought auditor that inspects an agent’s reasoning to identify signs of goal hijacking or misalignment.</p>\n   <blockquote>\n    <p>Instead of inspecting individual messages, it reasons over the entire execution trace, flagging deviations that suggest covert prompt injection, misleading tool output, or other forms of goal hijacking.</p>\n   </blockquote>\n   <p>According to Meta's researchers, it is the first open source guardrail capable of auditing the chain-of-thought of a large language model in real time, specifically designed for injection defense.</p>\n   <p>CodeShield is an online static analysis engine for LLM-generated code that supports both Semgrep and regex-based rules. Designed for extensibility, it enables syntax-aware pattern matching across eight programming languages to detect potential risks. Originally released as part of the Llama 3 launch, CodeShield is now integrated into LlamaFirewall.</p>\n   <blockquote>\n    <p>Although CodeShield is effective in identifying a wide range of insecure code patterns, it is not comprehensive and may miss nuanced or context-dependent vulnerabilities. Its detection efficacy was evaluated in CyberSecEval3. [It] achieved a precision of 96% and a recall of 79% in identifying insecure code.</p>\n   </blockquote>\n   <p>The combined use of PromptGuard and AlignmentCheck improves performance on the AgentDojo benchmark. Moreover, Meta’s researchers suggest that this combination could yield even better results in more diverse or generalized adversarial scenarios beyond those covered by AgentDojo.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 110px;\" data-src=\"https://www.infoq.com/news/2025/05/llamafirewall-agent-protection/news/2025/05/llamafirewall-agent-protection/en/resources/1llamafirewall-1747159739487.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/05/llamafirewall-agent-protection/en/resources/1llamafirewall-1747159739487.jpg\" rel=\"share\"></p>\n   <p>Meta's researchers describe two workflows showcasing how LlamaFirewall can be integrated into agentic systems. In the first scenario, a travel planning agent uses PromptGuard to scan web content (such as travel reviews) for jailbreak-style phrasing and discards any suspicious pages. At the same time, AlignmentCheck monitors the agent’s token stream to detect if the goal shifts away from travel planning, in which case it halts execution.</p>\n   <p>In the second scenario, a coding agent generates SQL code based on developers' input. The agent retrieves examples from the Web and checks it using CodeShield until it finds a correct solution.</p>\n   <p>Work on LlamaFirewall will continue in several directions, including support for multimodal agents, reduced latency, expanded threat coverage, and more realistic benchmarking.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta Open Sources LlamaFirewall for AI Agent Combined Protection\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/llamafirewall-agent-protection/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1747162800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 开源 LlamaFirewall，用于保护 AI 智能体免受 prompt 注入等风险的安全框架。",
+  "oneSentenceSummary": "Meta 开源 LlamaFirewall，用于保护 AI 智能体免受 prompt 注入等风险的安全框架。",
+  "summary": "Meta 发布了 LlamaFirewall，这是一个旨在保护 AI 智能体免受安全风险的安全框架，是 AI 智能体安全的最后一道防线。它包含 PromptGuard 2 用于防御 jailbreak 攻击，AlignmentCheck 用于检查智能体推理中是否存在 prompt 注入和目标错位，以及 CodeShield 用于防止生成不安全代码。该框架在 AgentDojo 基准测试中取得了超过 90% 的攻击成功率降低，并且可以通过添加新的安全护栏来更新其行为。LlamaFirewall 通过实时监控和多层防御，进一步巩固 AI 智能体的安全。",
+  "mainPoints": [
+    {
+      "point": "LlamaFirewall 通过多层防御机制保护 AI 智能体安全",
+      "explanation": "PromptGuard 2 检测 jailbreak 攻击，AlignmentCheck 检查目标错位，CodeShield 防止不安全代码生成，多层防御提高安全性。"
+    },
+    {
+      "point": "AlignmentCheck 是首个开源的大语言模型推理链审计工具",
+      "explanation": "AlignmentCheck 能够实时审核 LLM 的推理过程，专门设计用于防御 prompt 注入攻击，提高 AI 智能体的安全性。"
+    },
+    {
+      "point": "CodeShield 通过静态分析引擎检测 LLM 生成的代码中的安全风险",
+      "explanation": "CodeShield 支持多种编程语言的语法感知模式匹配，检测潜在风险，但不能保证完全覆盖所有漏洞。"
+    }
+  ],
+  "keyQuotes": [
+    "LlamaFirewall is a security framework aimed at safeguarding AI agents against prompt injection， goal misalignment， and insecure code generation.",
+    "PromptGuard 2 is a fine-tuned BERT-style model designed to detect jailbreak attempts that analyzes both user prompts and untrusted data sources in real time.",
+    "AlignmentCheck is an experimental chain-of-thought auditor that inspects an agent's reasoning to identify signs of goal hijacking or misalignment."
+  ],
+  "tags": [
+    "AI 安全",
+    "AI 安全框架",
+    "AI 智能体",
+    "Prompt 注入",
+    "LlamaFirewall"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 548,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1747094400000,
+  "publishDateStr": "2025-05-13",
+  "publishDateTimeStr": "2025-05-13 00:00:00"
+}

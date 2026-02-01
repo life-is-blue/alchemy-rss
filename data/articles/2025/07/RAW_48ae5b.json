@@ -1,0 +1,63 @@
+{
+  "id": "RAW_48ae5b",
+  "title": "Agent RL 和智能体自我进化的关键一步: TaskCraft 实现复杂智能体任务的自动生成 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-04-3",
+  "date": "2025-07-04 02:50:39",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section data-pm-slice=\"1 2 []\">\n   <br>\n  </section>\n  <p>近年来，基于智能体的强化学习（Agent + RL）与智能体优化（Agent Optimization）在学术界引发了广泛关注。然而，实现具备工具调用能力的端到端智能体训练，首要瓶颈在于<strong>高质量任务数据的极度稀缺</strong>。当前如 GAIA 与 BrowserComp 等主流数据集在构建过程中高度依赖人工标注，因而在规模与任务复杂性方面均存在明显限制——BrowserComp 仅涵盖约 1300 个搜索任务，GAIA 则仅提供约 500 条多工具协同任务样本。与基础大模型训练中动辄万级以上的指令数据相比，差距十分显著。</p>\n  <p>尽管在基础模型阶段，像&nbsp;self-instruct 这样的自监督方法已经借助大语言模型（LLM）成功构建了大规模的指令型数据，有效提升了模型的通用性和泛化能力，但在智能体（Agent）场景下，这类静态指令数据却难以满足实际需求。原因在于，复杂的智能体任务通常需要<strong>模型与环境进行持续的动态交互，同时涉及多工具的协同操作和多步骤推理</strong>。而传统的指令数据缺乏这种交互性和操作性，导致其在智能体训练中迁移性差、适用性有限。</p>\n  <p>为应对上述挑战，OPPO 研究院的研究者提出了 TaskCraft，一个面向智能体任务的自动化生成框架，旨在高效构建具备可扩展难度、多工具协同与可验证执行路径的智能体任务实例。TaskCraft 通过统一的流程化建构机制，摆脱了对人工标注的依赖，能够系统性地产生覆盖多种工具（如 URL、PDF、HTML、Image 等）的复杂任务场景，并支持任务目标的自动验证，确保数据质量与执行闭环。 基于该框架，研究团队构建并开源了一个包含约 41,000 条智能体任务的合成数据集，显著扩展了现有 Agent 数据资源的规模与多样性，为后续通用智能体的训练与评估提供了有力支撑。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ae443f9-3091-4e77-5b21-27293a817800/public\" data-ratio=\"0.8342592592592593\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"482\" data-imgfileid=\"503493809\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/6810f555-5df2-4dd7-8b8c-19a54029912e/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：TaskCraft: Automated Generation of Agentic Tasks</p></li>\n   <li>\n    <p>论文地址：https://arxiv.org/abs/2506.10055</p></li>\n   <li>\n    <p>Github：https://github.com/OPPO-PersonalAI/TaskCraft</p></li>\n   <li>\n    <p>数据集：https://huggingface.co/datasets/PersonalAILab/TaskCraft</p></li>\n  </ul>\n  <p><strong>数据生成</strong></p>\n  <p>生成过程主要分为两大部分：<strong>第一部分</strong> 生成简单且可验证的原子任务；<strong>第二部</strong><strong>分</strong> 通过深度拓展和宽度拓展，不断构建新的原子任务，使复杂性逐步提升。</p>\n  <p><strong>原子任务的生成</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67eb1ea7-cfc6-463d-bca8-7881e5251300/public\" data-ratio=\"0.4527777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493763\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/51516540-5308-4fe9-b1ea-21036b7d56b0/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 原子结构生成示意图</sup></p>\n  <p>可以简单理解为，从原始数据中提取核心问题，然后确保问题必须通过特定工具来解决。整个流程包含以下四个关键步骤：</p>\n  <p>1.<strong>收集信息</strong>：系统从多种来源（网页、PDF、图片等）提取信息。例如，企业财报、一张统计图或一篇新闻文章。</p>\n  <p>2.<strong>识别关键内容</strong><strong>:</strong> 利用LLM从这些文档中提<strong>取候选结论，比如：2025 年苹果公司总收入为&nbsp;</strong><strong><i><strong>383.3 亿美元</strong></i></strong></p>\n  <p>3.<strong>生成问题</strong><strong>：</strong>LLM需要将这些候选结论转换为工具回答的问题。例如：“<em>在财务报告《</em><em>Apple 2025 年度报告》中，2025 年的总收入是多少？”</em>（答案：383.3 亿美元）</p>\n  <p>4.<strong>验证任务</strong>：每个原子任务被保留必须满足以下两个条件：</p>\n  <ul>\n   <li>\n    <p>必须依赖工具才能解答（ LLM 无法直接推导答案）。</p></li>\n   <li>\n    <p>必须经过 Agent 验证，确保能够顺利执行任务。</p></li>\n  </ul>\n  <p><strong>任务</strong><strong>拓展</strong></p>\n  <p>任务拓展旨在将一个简单任务逐步演化为更具层次和挑战性的复杂任务，使&nbsp;Agent 必须通过多个步骤才能完成任务。拓展方式主要包括<strong>深度拓展</strong><strong>与</strong><strong>宽度拓展</strong>。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ed5e95d6-8474-49ee-6ac0-bbfe16442a00/public\" data-ratio=\"0.5101851851851852\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"295\" data-imgfileid=\"503493766\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/76cf8058-1927-4abf-9965-65b0074cd714/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 深度拓展示意图</sup></p>\n  <p>其中，<strong>深度拓展</strong>的目标是为了构建可被拆解为一系列相互依赖的任务。每一步都依赖前一步的结果，从而构建出一条多步推理链。其主要包括以下四步：</p>\n  <p>1.<strong>确认主任务与拓展标识符</strong>：拓展标识符一般是具有强特殊性的文本，往往作为获取工具上下文的输入关键字。例如对于任务：“<em>电影《星际穿越》的导演是谁？”</em>（答案：克里斯托弗·诺兰），其中的拓展标识符是:《星际穿越》。</p>\n  <p>2.<strong>执行Agent搜索，构造新的辅助原子任务</strong>：Search&nbsp;Agent以拓展标识符为线索执行搜索，并从搜索结果中构造一个新的原子任务，其答案即为该拓展标识符。例如：“哪部<em>美国著名</em><em>科幻电影是在&nbsp;2014 年 11 月 7 日上映的？”</em>（答案：《星际穿越》）</p>\n  <p>3.<strong>合并辅助原子任务，更新主任务</strong>：将辅助原子任务与原主任务进行融合，构建一个逻辑连贯的复合任务。例如：“<em>2014 年 11 月 7 日上映的</em><em>美国著名</em><em>科幻电影</em><em>，它</em><em>的导演是谁？</em><em>“</em>（答案：克里斯托弗·诺兰）</p>\n  <p>4.<strong>验证任务合理性</strong>：为了规避对合并问题的整体验证，研究者采用了多种规则对合并后的主任务进行语义验证，包括：超集验证、关系验证、信息泄露验证、替换合理性验证等。</p>\n  <p>而宽度拓展则是通过选择两个（或多个）结构兼容的原子任务，这些任务应来自同一信息源（如同一篇网页或&nbsp;PDF），且答案之间不存在因果依赖。使用&nbsp;LLM 将多个任务的语义合并成一个<strong>自然、流畅且具备完整性的新</strong><strong>任务</strong>。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9cba129e-24d8-41f8-dc4b-f397c31d0400/public\" data-ratio=\"0.362962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"210\" data-imgfileid=\"503493768\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/4894b1da-4a39-4187-b216-9f271b0688ca/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 宽度拓展示意图</sup></p>\n  <p><strong>通过&nbsp;Prompt</strong><strong>&nbsp;</strong><strong>Learning 提升任务生成效率</strong></p>\n  <p>在 TaskCraft 的任务构建流程中，Prompt 的设计起到了至关重要的作用。研究团队采用了自举式 few-shot 提示优化机制，基于生成的任务数据对提示进行了迭代优化，从而实现了提示模板的自我进化。如表1，实验结果显示，原子任务的生成通过率从初始的 54.9% 提高至 68.1%，同时平均生成时间减少了近 20%。在深度拓展任务中，6 轮任务扩展的成功率由 41% 提升至 51.2%，进一步验证了生成数据在提升任务构建质量与效率方面的显著效果。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/298390a3-f827-4f6c-d953-ad55cf3df000/public\" data-ratio=\"0.19444444444444445\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"112\" data-imgfileid=\"503493769\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/de452669-c79f-47d5-8da3-e20ff7571ae8/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 表1 Prompt Learning实验结果</sup></p>\n  <p><strong>对智能体基础模型进行S</strong><strong>FT</strong><strong>训练</strong></p>\n  <p>其次，研究团队进一步评估了 TaskCraft 所生成任务数据在提升大模型能力方面的实际效果。以 Qwen2.5-3B 系列为基础，研究者基于三个典型的多跳问答数据集（HotpotQA、Musique 和 Bamboogle）的训练集，生成了约32k条多跳任务以及轨迹，并利用这些生成数据对模型进行监督微调（SFT）。如表2，实验结果表明，经过微调后，Base 模型的平均性能提升了 14%，Instruct 模型提升了 6%，说明 TaskCraft 生成的数据在增强大模型的推理能力与工具调用表现方面具有显著成效。此外，当这些微调模型与强化学习方法 Search-R1 相结合时，模型性能进一步提升，进一步证明 TaskCraft 所生成的任务数据不仅能用于监督学习，也可作为强化学习的优质训练起点。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0df265cf-5625-4626-129e-e573a7f35f00/public\" data-ratio=\"0.39822134387351776\" data-s=\"300,640\" data-type=\"png\" data-w=\"1012\" type=\"block\" data-backw=\"578\" data-backh=\"230\" data-imgfileid=\"503493771\" data-original-style=\"width: 100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/7354fff4-c6ad-44ce-8a33-81616f3d61b6/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 表2 监督微调效果</sup></p>\n  <p>此外，你可能会好奇：引入搜索 Agent 是否真的有必要？为此，研究团队设计了一项对比实验，比较了两种任务构建方式的效果：一是直接使用 GPT-4.1 基于某个结论生成任务，另一种则是借助基于 GPT-4.1 的 Search Agent 自动生成任务。结果如表 3 所示，TaskCraft 构建范式在多项指标上表现更优。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/816095b9-03a4-4e95-54c7-0ac2a9349800/public\" data-ratio=\"0.21934758155230596\" data-s=\"300,640\" data-type=\"png\" data-w=\"889\" type=\"block\" data-backw=\"578\" data-backh=\"127\" data-imgfileid=\"503493772\" data-original-style=\"width: 100%;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/362028fe-8ea1-4d6b-ada4-fdc30117b7d9/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p data-pm-slice=\"3 3 []\"><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 表3任务构建范式的有效性分析</sup></p>\n  <p>相比之下，TaskCraft 生成的任务具有显著更高的通过率，验证时间更短，且工具使用次数更符合“原子任务”的定义（理论最优为：一次输入索引 + 一次目标工具调用）。此外，任务的工具调用次数也更稳定，方差更小，反映出 TaskCraft 在保持原子任务难度的一致性方面具备更强的优势。&nbsp;</p>\n  <section>\n   <img data-backh=\"570\" data-backw=\"574\" data-imgfileid=\"503493773\" data-ratio=\"0.9930313588850174\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0096f6c2-2f39-4142-15c7-89075c859800/public\" data-type=\"png\" data-w=\"574\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/5cd34b89-fcd8-4412-bb2f-965e44f31933/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 原子数据域分布</sup></p>\n  <p>基于 TaskCraft，研究者构建了一个包含约 41,000 个 agentic 任务的大规模数据集，为 AI 智能体的系统化调优与评估提供了坚实的基础。该数据集覆盖多个工具使用场景，包括网页搜索、PDF 阅读、图像理解等，任务结构层次丰富，难度可控，支持原子级任务和多跳复杂任务。由于所有任务都附带了真实的执行轨迹，不仅可以进行监督式微调（SFT），还能为强化学习（RL）提供高质量的训练数据起点。这使得该数据集可广泛应用于智能体基础模型的能力增强、Agent 推理策略的评估，以及多工具调用环境下的泛化能力测试。</p>\n \n",
+  "aiSummary": "OPPO 研究院提出 TaskCraft 框架并开源 41，000 条智能体任务数据集，通过自动化生成解决高质量任务数据稀缺问题",
+  "oneSentenceSummary": "OPPO 研究院提出 TaskCraft 框架并开源 41，000 条智能体任务数据集，通过自动化生成解决高质量任务数据稀缺问题",
+  "summary": "文章介绍了 OPPO 研究院提出的 TaskCraft 框架，该框架通过自动化方法生成复杂智能体任务数据，解决了当前智能体训练中高质量任务数据稀缺的问题。TaskCraft 通过原子任务生成（包含收集信息、识别关键内容、生成问题和验证任务四个步骤）和任务拓展（深度拓展构建多步推理链，宽度拓展合并多个原子任务）构建复杂的任务场景，并利用 Prompt Learning 提升任务生成效率。研究团队基于该框架构建并开源了一个包含 41，000 条智能体任务的数据集，覆盖多种工具使用场景。实验表明，使用 TaskCraft 生成的数据进行监督微调，能显著提升模型的推理能力和工具调用表现。与 GPT-4.1 直接生成任务相比，TaskCraft 构建范式在通过率、验证时间和工具使用次数等指标上表现更优。",
+  "mainPoints": [
+    {
+      "point": "TaskCraft 框架自动生成复杂智能体任务数据并开源大规模数据集",
+      "explanation": "通过原子任务生成和任务拓展，构建复杂的任务场景，解决高质量任务数据稀缺问题；开源 41，000 条任务数据集，为智能体训练提供重要资源"
+    },
+    {
+      "point": "深度拓展与宽度拓展构建多层次任务",
+      "explanation": "深度拓展构建多步推理链（通过拓展标识符和 Agent 搜索），宽度拓展合并多个原子任务，形成自然流畅的复杂任务，增强任务多样性"
+    },
+    {
+      "point": "原子任务验证确保数据质量",
+      "explanation": "每个原子任务必须满足两个条件：必须依赖工具才能解答，必须经过 Agent 验证确保能够顺利执行，保证数据的可靠性和实用性"
+    },
+    {
+      "point": "Prompt Learning 提升任务生成效率",
+      "explanation": "通过自举式 few-shot 提示优化机制，原子任务生成通过率提升至 68.1%，生成时间减少 20%，显著提高效率"
+    },
+    {
+      "point": "生成数据显著提升模型性能",
+      "explanation": "监督微调实验显示，Base 模型平均性能提升 14%，Instruct 模型提升 6%；与 GPT-4.1 直接生成任务相比，TaskCraft 在通过率、验证时间等指标上表现更优"
+    }
+  ],
+  "keyQuotes": [
+    "实现具备工具调用能力的端到端智能体训练，首要瓶颈在于高质量任务数据的极度稀缺",
+    "TaskCraft 通过统一的流程化建构机制，摆脱了对人工标注的依赖，能够系统性地产生覆盖多种工具的复杂任务场景",
+    "每个原子任务被保留必须满足以下两个条件：必须依赖工具才能解答（LLM 无法直接推导答案）；必须经过 Agent 验证，确保能够顺利执行任务",
+    "在深度拓展任务中，6 轮任务扩展的成功率由 41%提升至 51.2%，进一步验证了生成数据在提升任务构建质量与效率方面的显著效果",
+    "经过微调后，Base 模型的平均性能提升了 14%，Instruct 模型提升了 6%，说明 TaskCraft 生成的数据在增强大模型的推理能力与工具调用表现方面具有显著成效"
+  ],
+  "tags": [
+    "智能体",
+    "强化学习",
+    "任务生成",
+    "OPPO",
+    "TaskCraft"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 92,
+  "wordCount": 2856,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751597439000,
+  "publishDateStr": "2025-07-04",
+  "publishDateTimeStr": "2025-07-04 02:50:39"
+}

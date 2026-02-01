@@ -1,0 +1,54 @@
+{
+  "id": "RAW_c9d5ce2a",
+  "title": "忍不住推荐 ： AI 时代 ，桌面端真的可以考虑一下 Go+Wails 的组合",
+  "url": "https://juejin.cn/post/7583226204036186153",
+  "date": "2025-12-14 13:43:20",
+  "author": "志字辈小蚂蚁",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <h2 data-id=\"heading-0\">一. 前言</h2>\n   <p>之前有过关注的小伙伴 ，一定知道我之前主要的桌面端是 : <strong>PyQT</strong> + <strong>Python</strong> 的组合。 这个组合整体来说很成熟也很强大。</p>\n   <p><strong>基于脚手架</strong> ❗❗❗ ，简单的小工具能轻松解决，<strong>复杂的也能做一个十几个页面，近10万行的复杂项目</strong>， 整体还能保证一定的流畅性。</p>\n   <p>但是 ，随着对精细功能的逐步提高 ，以及更多多样化的定制需求，代码量的增加 ，这一套有点吃力了。并且<strong>AI在其中的作用越来越低</strong>。</p>\n   <h2 data-id=\"heading-1\">二. 一次心血来潮的尝试</h2>\n   <p><code>代码逻辑越简单 ，流程越精简，AI是越擅长的</code>。</p>\n   <p>直到我无意中了解到 Go 也有自己的桌面端方案 ，并且社区活跃度还相当不错 ：</p>\n   <p>@ <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fwailsapp%2Fwails\" target=\"_blank\" title=\"https://github.com/wailsapp/wails\" ref=\"nofollow noopener noreferrer\">github.com/wailsapp/wa…</a></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/2c80bcded4664f7f8d4e4847bb68668d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5b-X5a2X6L6I5bCP6JqC6JqB:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766324599&amp;x-signature=uE1Z1cbpgehjGToKVKGom2xnBnc%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>于是我周末花了大概小半天时间让AI写了一个小应用 ，期间我还开了两把游戏 ，哇 ，这效果真的不错。</p>\n   <p>然后我就很简单的得到了这样一个应用 ：</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/591f963fa38e4b76838fdc513163ed04~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5b-X5a2X6L6I5bCP6JqC6JqB:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766324599&amp;x-signature=kSZu5GUF4%2FxNSht07%2FY8hM0Usjg%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/1bc289a3c98747db8c7ad2cca87487e4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5b-X5a2X6L6I5bCP6JqC6JqB:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766324599&amp;x-signature=dxwZkLCKqqmJjK6A3WcS0aSxyEg%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/ccbb78a9d86148fc830371b8c046b0c2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5b-X5a2X6L6I5bCP6JqC6JqB:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766324599&amp;x-signature=v3yUqr7Cev1D8wtIXVK216AC%2BAI%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-2\">三. 做一个小总结</h2>\n   <p>但是这里可能会让很多小伙伴想到这样一个架构 ： Node.js + Electron. 这也是一个很多人都知道的热门组合，我之前也多次使用过他开发小工具 ，效果也不错。</p>\n   <p>但是我<strong>觉得 GO-Wails 比他更适合AI时代</strong> ： 这里让AI做了一个很清晰的总结 ，关于 GO 和 Electron 的选择 ：</p>\n   <table>\n    <thead>\n     <tr>\n      <th>维度</th>\n      <th>Go+Wails</th>\n      <th>Electron</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><strong>性能</strong></td>\n      <td>⭐⭐⭐⭐⭐ 飞快</td>\n      <td>⭐⭐ 慢</td>\n     </tr>\n     <tr>\n      <td><strong>体积</strong></td>\n      <td>⭐⭐⭐⭐⭐ 苗条</td>\n      <td>⭐⭐ 臃肿</td>\n     </tr>\n     <tr>\n      <td><strong>开发效率</strong></td>\n      <td>⭐⭐⭐ 需学Go</td>\n      <td>⭐⭐⭐⭐⭐ 前端直接上手</td>\n     </tr>\n     <tr>\n      <td><strong>生态/插件</strong></td>\n      <td>⭐⭐⭐ 发展中</td>\n      <td>⭐⭐⭐⭐⭐ npm应有尽有</td>\n     </tr>\n     <tr>\n      <td><strong>调试体验</strong></td>\n      <td>⭐⭐⭐ 够用</td>\n      <td>⭐⭐⭐⭐⭐ DevTools真香</td>\n     </tr>\n     <tr>\n      <td><strong>系统集成</strong></td>\n      <td>⭐⭐⭐⭐⭐ 直接调C/系统API</td>\n      <td>⭐⭐⭐ 需要绕路</td>\n     </tr>\n     <tr>\n      <td><strong>跨平台一致性</strong></td>\n      <td>⭐⭐⭐ WebView有差异</td>\n      <td>⭐⭐⭐⭐⭐ 自带浏览器，表现统一</td>\n     </tr>\n     <tr>\n      <td><strong>安全性</strong></td>\n      <td>⭐⭐⭐⭐ 攻击面小</td>\n      <td>⭐⭐⭐ Node+前端=风险大</td>\n     </tr>\n    </tbody>\n   </table>\n   <p>针对我来说 ，我主要有两个目的 ：</p>\n   <ul>\n    <li>我更倾向于带<strong>传统后端能力</strong>的结构，要<strong>具有传统后端的复杂逻辑处理能力和优秀的性能</strong></li>\n    <li>我需要一个<strong>美观的 APP 样式</strong> ，在样式层面 ，没有什么语言比 JavaScript 更强了</li>\n    <li>我需要<strong>更小的应用体积</strong> ，方便转发</li>\n    <li>我需要更接近脚本的<strong>简单语法</strong> ，逻辑更简单 ，代码更轻松 , 0 基础就可以通过AI实现</li>\n   </ul>\n   <p>结合这些 ，Go + Wails 真的是一个完美的选择。</p>\n   <p>Wails = <strong>Go后端</strong> + <strong>Web前端</strong> + 系统WebView，打包成一个轻量原生桌面应用.</p>\n   <blockquote>\n    <p>Wails 具体干了三件事</p>\n   </blockquote>\n   <p><strong>第一件：嵌入一个浏览器窗口</strong></p>\n   <p><strong>Wails 不会自带浏览器内核，而是借用操作系统已有的</strong>。Windows 上用 WebView2（就是 Edge 的内核），macOS 上用 WebKit（Safari 的内核），Linux 上用 WebKitGTK。你的前端代码（HTML、CSS、JS）就在这个窗口里渲染，和在浏览器里打开网页没什么区别。</p>\n   <p><strong>第二件：搭一座桥让 JS 和 Go 互相调用</strong></p>\n   <p>这是 Wails 最核心的能力。正常情况下，前端想调用后端需要发 HTTP 请求。但 <strong>Wails 生成了一层绑定代码，让你在 JS 里可以直接调用 Go 函数</strong>，就像调用本地函数一样，不需要自己写接口、处理请求响应。Go 函数的返回值会直接传回给 JS。反过来，Go 也可以向前端发送事件，前端监听就行。</p>\n   <p><strong>第三件：把所有东西打包成一个文件</strong></p>\n   <p>打包时，Wails 会<strong>把前端的 HTML、CSS、JS 全部嵌入到 Go 的二进制文件里</strong>。最终产物就是一个可执行文件，用户双击就能运行，不需要额外安装任何东西。</p>\n   <p><em>这一篇不是教程文档 ，这东西 AI 一查一大把 ，这里就不细说了。</em></p>\n   <h2 data-id=\"heading-4\">五. 上代码</h2>\n   <p>@ <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgitee.com%2Fantblack%2Fant_go_wails_scaffold\" target=\"_blank\" title=\"https://gitee.com/antblack/ant_go_wails_scaffold\" ref=\"nofollow noopener noreferrer\">gitee.com/antblack/an…</a></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/30918d869b024ebcb5e3a77fd3e054a3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5b-X5a2X6L6I5bCP6JqC6JqB:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766324599&amp;x-signature=8WuhUTy5%2F6b9cMenQvur3olTR1Q%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>打包后的大小（PS ：这里我没有试过分发后能不能开箱就用，哈哈哈）</p>\n   </blockquote>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/fcf34c28be8345e6bcf9a8646267488a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5b-X5a2X6L6I5bCP6JqC6JqB:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766324599&amp;x-signature=J%2BAHml%2FkEpHZ4wm2esnu4%2BtHU3g%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-5\">总结</h2>\n   <p>能在这么短的时间构建出这么好的一个项目 ，并且<strong>打包只需要小小的15M</strong> . 启动还是秒开，我觉得未来我的大部分项目应该都会基于这个项目实现。</p>\n   <p>如果你现在想找到一个好用的桌面端框架体系 ，可以考虑这个。</p>\n   <p><strong>0基础 + AI 就可以轻松的实现复杂的功能 ，真的太适合AI了</strong>。</p>\n   <h2 data-id=\"heading-6\">最后的最后 ❤️❤️❤️👇👇👇</h2>\n   <ul>\n    <li>👈 <strong>欢迎关注</strong> ，超200篇优质文章，未来持续高质量输出 🎉🎉</li>\n    <li><a href=\"https://juejin.cn/post/6941642435189538824\" target=\"_blank\" title=\"https://juejin.cn/post/6941642435189538824\">🔥🔥🔥 系列文章集合，高并发，源码应有尽有 👍👍 </a></li>\n    <li>走过路过不要错过 ，知识无价还不收钱 ❗❗</li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文推荐 Go+Wails 组合作为桌面端开发新选择，强调其在 AI 时代下的性能、体积优势及开发便利性，尤其适合需要传统后端能力和美观前端界面的应用。",
+  "oneSentenceSummary": "本文推荐 Go+Wails 组合作为桌面端开发新选择，强调其在 AI 时代下的性能、体积优势及开发便利性，尤其适合需要传统后端能力和美观前端界面的应用。",
+  "summary": "作者从其原有 PyQT+Python 桌面端开发经验出发，指出其在处理复杂功能时遇到的瓶颈，进而引出对 Go+Wails 组合的尝试。文章通过对比 Go+Wails 与 Electron，详细阐述了 Go+Wails 在性能、体积、系统集成和安全性方面的显著优势，并指出了其适合 AI 时代桌面端开发的理由：结合 Go 后端能力、Web 前端美观、小应用体积以及 Go 简单语法易于 AI 辅助开发。文章还深入解析了 Wails 如何通过嵌入系统 WebView、构建 JS 与 Go 互调桥梁及一体化打包实现轻量级原生桌面应用。最终展示了一个由 AI 辅助快速构建的示例应用，证明了 Go+Wails 在效率和成果上的优越性。",
+  "mainPoints": [
+    {
+      "point": "Go+Wails 组合在性能和应用体积上显著优于 Electron。",
+      "explanation": "Wails 利用系统 WebView 而非自带浏览器内核，结合 Go 语言的高效特性，使得打包后的应用体积小巧、启动迅速、运行流畅，解决了 Electron 应用臃肿和性能低下的问题。"
+    },
+    {
+      "point": "Wails 通过核心机制实现 Go 后端与 Web 前端的无缝集成和高效通信。",
+      "explanation": "Wails 嵌入系统 WebView 渲染前端，生成 JS 和 Go 的绑定代码，允许前端直接调用 Go 函数，并能将所有代码打包成单一可执行文件，极大地简化了桌面应用开发和部署流程。"
+    },
+    {
+      "point": "Go+Wails 方案尤其适合 AI 时代需要兼顾传统后端能力与美观前端界面的桌面应用开发，并可通过 AI 实现高效辅助。",
+      "explanation": "该组合利用 Go 语言强大的后端处理能力和 Web 技术丰富的界面表现力，同时结合 AI 辅助编程，能以较低的学习成本和开发效率快速构建高性能、小体积的桌面应用，文章强调“0 基础 + AI 就可以轻松的实现复杂的功能，真的太适合 AI 了”。"
+    }
+  ],
+  "keyQuotes": [
+    "我觉得 GO-Wails 比他更适合 AI 时代",
+    "Wails = Go 后端 + Web 前端 + 系统 WebView，打包成一个轻量原生桌面应用.",
+    "Wails 不会自带浏览器内核，而是借用操作系统已有的。",
+    "Wails 生成了一层绑定代码，让你在 JS 里可以直接调用 Go 函数，就像调用本地函数一样"
+  ],
+  "tags": [
+    "桌面应用开发",
+    "Go",
+    "Wails",
+    "Electron",
+    "GoLang"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 87,
+  "wordCount": 1370,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765719800000,
+  "publishDateStr": "2025-12-14",
+  "publishDateTimeStr": "2025-12-14 13:43:20"
+}

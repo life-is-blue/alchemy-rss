@@ -1,0 +1,58 @@
+{
+  "id": "RAW_25c8d861",
+  "title": "Coding Agent 的舒适区",
+  "url": "https://baoyu.io/blog/coding-agents-comfort-zone",
+  "date": "2025-12-19 02:41:10",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"4jsyern2uj\">Simon Willison（Django 框架的联合创始人）。他一边陪家人装饰圣诞树、看电影，一边用 Codex CLI + GPT-5.2，把 Emil Stenström 的 JustHTML（纯 Python、通过 html5lib-tests）迁移成了一个纯 JS、零依赖的库，跑过了 9200+ 个 html5lib-tests 用例，最终产出大约 9000 行代码、43 次提交。</p>\n   <img src=\"https://baoyu.io/uploads/2025-12-19/Gemini_Generated_Image_afpv8safpv8safpv.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"o930qckny9\">整个过程他自己只发了 8 条左右的提示词。</p>\n   <p data-id=\"xbsrbce3g0\">当然我不是来吹 Coding Agent 或者说 GPT-5.2 多牛逼的，只是正好我发现这案例本身完美命中了 Coding Agent 的舒适区。</p>\n   <p data-id=\"33guipd5w4\">什么是 Coding Agent 的舒适区呢？</p>\n   <ol>\n    <li>\n     <p data-id=\"w4xihjhz5z\">从一种语言“翻译”到另一种语言</p>\n    </li>\n   </ol>\n   <p data-id=\"ligqvq9hwp\">大语言模型最擅长的事情之一就是“照葫芦画瓢”，或者说“翻译”，无论是自然语言还是编程语言，都能做到又快又好。</p>\n   <p data-id=\"ees5ymzzxl\">所以像这个案例中从 Python 翻译成 JS，相对就很轻松了</p>\n   <ol>\n    <li>\n     <p data-id=\"mlqpspdqw4\">有完整的测试集合</p>\n    </li>\n   </ol>\n   <p data-id=\"z3mh98zsva\">想想我们日常写代码，写完都需要测试一遍，如果不对再修改，如果这个过程需要人工介入，比如一些 UI 测试，就会很低效，但是如果 Agent 能自己测试，那么它可以从测试中收集反馈不断调整不断修复，直到把问题解决。</p>\n   <p data-id=\"pnchk7n9m1\">这个 HTML5 标准有一套名为 html5lib-tests 的测试集。这是一套与语言无关的测试数据（输入是 HTML，输出是正确的解析树结构）。</p>\n   <p data-id=\"jrzdaoav65\">这就好比你让 AI 做数学题，你虽然不懂解法，但你手里有一本带标准答案的习题册。你不需要盯着 AI 写的每一行代码（过程），你只需要看它算出的结果对不对（结果）。</p>\n   <ol>\n    <li>\n     <p data-id=\"nkdjromj0r\">已经设计好了架构，Agent 只需要“填空”</p>\n    </li>\n   </ol>\n   <p data-id=\"8v6iucqtc6\">Agent 由于受上下文窗口长度限制，每次任务是没办法太长的上下文，复杂一点的项目你没法整个代码库扔过去，所以我们通常要基于架构设计将 Agent 的任务拆分成小一点的任务让它刚好在上下文窗口内完成。</p>\n   <p data-id=\"5xvo19eqkh\">所以架构设计无论对于真人的项目还是 Coding 的项目都非常重要。</p>\n   <p data-id=\"45m8tgk798\">Simon 这个项目他不需要凭空设计，直接让 Agent 参考那个 Python 项目的 API 设计。这意味着架构是现成的，AI 只需要基于现有架构去“翻译”。</p>\n   <ol>\n    <li>\n     <p data-id=\"xp8vruj21w\">高手来操作</p>\n    </li>\n   </ol>\n   <p data-id=\"5kkownjle8\">武侠小说里面，同样一把剑，在高手手里能发出更大的威力，毫无疑问 Simon 是高手中的高手。</p>\n   <p data-id=\"1qvlydw96g\">看 Simon 的操作流程： 1). 制定规范 (Spec First)： 第一条提示词不是求代码，而是扔给 AI 现有的 Python 代码，让它写一份 JavaScript 版本的设计文档（Spec）。</p>\n   <ol>\n    <li>\n     <p data-id=\"p4req6a3rf\">冒烟测试 (Smoke Test)： 让 AI 先跑通一个最简单的“Hello World”级别的 HTML 解析，确保链路是通的。</p>\n    </li>\n   </ol>\n   <ol>\n    <li>\n     <p data-id=\"tj5zgvzfpb\">死循环测试 (The Loop)：Simon 配置好 GitHub Actions，每提交一次代码就自动运行那 9000 多个测试用例。</p>\n    </li>\n   </ol>\n   <ul>\n    <li>\n     <p data-id=\"9eyvo5u3q6\">AI 写代码 -&gt; 跑测试 -&gt; 报错 -&gt; AI 读错误日志 -&gt; 修正代码 -&gt; 再跑测试。</p>\n    </li>\n    <li>\n     <p data-id=\"yq5nnxr0fr\">结果：AI 像个不知疲倦的程序员，用了 140 万个 Token，提交了 43 次，直到所有绿灯亮起。</p>\n    </li>\n   </ul>\n   <p data-id=\"f4ii2r802r\">Simon 把这个过程称为 “设计智能体闭环” (Designing the Agentic Loop)。</p>\n   <p data-id=\"53yap71m69\">这就是为什么这项目对于 Agent 来说做起来很成功。</p>\n   <hr>\n   <p data-id=\"dhwkedqiqk\">既然我们知道 Coding Agent 的舒适区或者说强项在哪里，其实我们在开发时也可以充分发挥它的强项，比如说：</p>\n   <ol>\n    <li>\n     <p data-id=\"lq1u1on0rd\">不要着急实现，先看看有没有“葫芦”可以照着画“瓢”</p>\n    </li>\n    <li>\n     <p data-id=\"h8s556ebf2\">尽量让 Agent 自己去验证需求，为 Agent 提供验证必须的工具，比如Chrome Dev Tool MCP、Lint、自动化测试等等</p>\n    </li>\n    <li>\n     <p data-id=\"ra6m5kzmgm\">先设计好再去实现</p>\n    </li>\n   </ol>\n   <p data-id=\"pl3uwxi0gx\">《I ported JustHTML from Python to JavaScript with Codex CLI and GPT-5.2 in 4.5 hours》<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://simonwillison.net/2025/Dec/15/porting-justhtml/\"><span style=\"font-size: 15px; font-family: sans-serif; color: rgb(99, 99, 99);\">https://simonwillison.net/2025/Dec/15/porting-justhtml/</span></a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文通过 Simon Willison 将 Python 项目 JustHTML 迁移到 JavaScript 的案例，深入剖析了 Coding Agent 在代码翻译、测试驱动开发、架构遵循及高手操作下的“舒适区”。",
+  "oneSentenceSummary": "本文通过 Simon Willison 将 Python 项目 JustHTML 迁移到 JavaScript 的案例，深入剖析了 Coding Agent 在代码翻译、测试驱动开发、架构遵循及高手操作下的“舒适区”。",
+  "summary": "文章以 Simon Willison 运用 AI Agent (Codex CLI + GPT-5.2) 将 Python 库 JustHTML 翻译为纯 JavaScript 库的成功案例为引，详细阐述了 Coding Agent 的四大“舒适区”。这包括：从一种语言“翻译”到另一种语言的能力，拥有完整的测试集进行反馈修正、在既定架构下进行“填空式”开发，以及由高手操作下的 Spec First、冒烟测试和 Agentic Loop 设计。文章强调，AI Agent 在这些场景下表现出色，并以此为基础，为开发者提供了如何充分发挥 Coding Agent 优势的实践建议，如先寻找“葫芦”参考、为 Agent 提供验证工具、以及先设计再实现。",
+  "mainPoints": [
+    {
+      "point": "大语言模型擅长代码语言间的“翻译”，能高效完成跨语言迁移任务。",
+      "explanation": "Agent 能够将现有代码从一种编程语言转换为另一种，如 Python 到 JavaScript，其核心是“照葫芦画瓢”的能力，显著提升迁移效率和准确性。"
+    },
+    {
+      "point": "完整的测试集是 Agent 有效迭代和自我修正的关键。",
+      "explanation": "当有自动化测试（如 html5lib-tests）时，Agent 可以从测试结果中获取反馈，进入“编写-测试-修正”的闭环，实现自主修复问题，大幅提高开发质量和效率。"
+    },
+    {
+      "point": "既定架构能够显著降低 Agent 的任务复杂度，使其专注于实现细节。",
+      "explanation": "在现有架构和 API 设计的基础上，Agent 无需从零开始设计，只需进行“填空式”开发，这避开了上下文窗口限制，并能有效利用其强大的代码生成能力。"
+    },
+    {
+      "point": "高手指导下的 Agent 使用能够制定规范和设计“智能体闭环”。",
+      "explanation": "Simon Willison 这样的高手能够通过“Spec First”制定规范、进行冒烟测试，并设计让 Agent 自主迭代的“Agentic Loop”，从而最大化发挥 Agent 的潜力。"
+    }
+  ],
+  "keyQuotes": [
+    "大语言模型最擅长的事情之一就是\"照葫芦画瓢\"，或者说\"翻译\"，无论是自然语言还是编程语言，都能做到又快又好。",
+    "这就好比你让 AI 做数学题，你虽然不懂解法，但你手里有一本带标准答案的习题册。你不需要盯着 AI 写的每一行代码（过程），你只需要看它算出的结果对不对（结果）。",
+    "Agent 由于受上下文窗口长度限制，每次任务是没办法太长的上下文，复杂一点的项目你没法整个代码库扔过去，所以我们通常要基于架构设计将 Agent 的任务拆分成小一点的任务让它刚好在上下文窗口内完成。",
+    "AI 写代码 -> 跑测试 -> 报错 -> AI 读错误日志 -> 修正代码 -> 再跑测试。结果：AI 像个不知疲倦的程序员，用了 140 万个 Token，提交了 43 次，直到所有绿灯亮起。"
+  ],
+  "tags": [
+    "Coding Agent",
+    "代码迁移",
+    "大语言模型",
+    "GPT",
+    "开发效率"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1156,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766112070000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 02:41:10"
+}

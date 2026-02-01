@@ -1,0 +1,62 @@
+{
+  "id": "RAW_367882",
+  "title": "谷歌 A2A 协议加入 Linux 基金会",
+  "url": "https://www.infoq.com/news/2025/07/agent2agent-linux-foundation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-01 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.infoq.com/news/2025/04/google-agentic-a2a/\">Recently open-sourced by Google</a>, the <a href=\"https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/\">Agent2Agent protocol is now part of the Linux Foundation</a>, along with its accompanying SDKs and developer tools.</p>\n   <p>The Agent2Agent protocol will be the cornerstone of a wider Agent2Agent project formed by Google, AWS, Cisco, Microsoft, and others. The project aims to foster interoperability for AI agents and break down the silos that are limiting collaboration between them, says the company.</p>\n   <blockquote>\n    <p>By providing a common language for AI agents to discover each other’s capabilities, securely exchange information, and coordinate complex tasks, the A2A protocol is paving the way for a new era of more powerful, collaborative, and innovative AI applications.</p>\n   </blockquote>\n   <p>Using the Agent2Agent protocol, agents can discover each other's capabilities, negotiate how to interact, and collaborate securely on long-running tasks. The protocol is particularly focused on preserving each agent's internal state, including its prompt.</p>\n   <p>The protocol is based on JSON-RPC 2.0 over HTTP and uses server-sent events for real-time streaming between agents. Agents know about each other through \"agent cards\" that describe agent capabilities and provide connection info. In the future, agent cards will include also authorization schemes and optional credentials. Other areas of future development include client-initiated interactions and dynamic UX negotiation within tasks, such as adding audio/video formats after the initial negotiation phase, i.e. after the agents have started their conversation.</p>\n   <p>According to Google, the Agent2Agent protocol has seen significant adoption, with over 100 companies supporting it. Since its original announcement, the protocol has raised some controversy due to its overlap with Anthropic's Model Context Protocol (MCP).</p>\n   <p>Reddit commenter <code>Impressive-Owl3830</code> expressed concern that this overlap might <a href=\"https://www.reddit.com/r/A2AProtocol/comments/1liwnku/comment/mzfd4sy/\">prevent the two protocols from coexisting</a>, with MCP already having \"taken off\". Another redditor, <code>Specialist_Apricot74</code>, noted this announcement \"<a href=\"https://www.reddit.com/r/A2AProtocol/comments/1liwnku/comment/mzfck5p/\">puts to rest the threat of the triple E threat</a> (Embrace, Extend, Extinguish)\" and could help Agent2Agent to <a href=\"https://www.reddit.com/r/A2AProtocol/comments/1liwnku/comment/mzflrqq/\">differentiate itself</a> from MCP by reducing its overlap and specializing in at least one task that MCP cannot do.</p>\n   <p>Google says <a href=\"https://github.com/a2aproject/a2a-samples/blob/main/notebooks/a2a_quickstart.ipynb\">Agent2Agent is ideal</a> when agents are developed and deployed independently, come from different teams, require dynamic discovery and composition, and need to support third-party integration or frequent changes, such as adding or removing agents at any time.</p>\n   <p>If you are interested in Agent2Agent, a great starting point is Google's <a href=\"https://github.com/a2aproject/a2a-samples/blob/main/notebooks/a2a_quickstart.ipynb\">unofficial Python Notebook</a>, which illustrates how you can set up a system with three agents, one searching the web for current trending topics, another performing deep analysis, and the last orchestrating the first two to provide insights.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google's Agent2Agent Protocol Enters the Linux Foundation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/agent2agent-linux-foundation/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1751392800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌与 AWS、思科和微软联合开发的开源 A2A 协议（智能体间协议）现已加入 Linux 基金会，该协议基于 JSON-RPC 2.0 实现，旨在提升 AI 智能体间的互操作性。",
+  "oneSentenceSummary": "谷歌与 AWS、思科和微软联合开发的开源 A2A 协议（智能体间协议）现已加入 Linux 基金会，该协议基于 JSON-RPC 2.0 实现，旨在提升 AI 智能体间的互操作性。",
+  "summary": "谷歌的智能体间协议（A2A）现已成为 Linux 基金会项目，通过与 AWS、思科、微软等科技巨头的合作，致力于显著提升 AI 智能体的互操作性。这一开源协议提供了标准化框架，支持智能体发现、安全信息交换和任务协调，其技术实现基于 HTTP 协议的 JSON-RPC 2.0，并通过服务器推送事件（Server-Sent Events）实现实时数据流。开发者可通过谷歌提供的 Python Notebook 示例（展示了一个包含网页搜索、数据分析和任务编排的三智能体系统）快速上手。协议核心特性包括：用于描述智能体能力的'智能体功能卡'，以及规划中的客户端发起交互和交互界面动态协商功能。目前已有超 100 家企业采用该协议，但其与 Anthropic 模型上下文协议（MCP）的功能重叠引发了行业关于差异化发展策略的热议。",
+  "mainPoints": [
+    {
+      "point": "A2A 协议通过行业协作提升 AI 智能体互操作性",
+      "explanation": "该协议由谷歌联合 AWS、思科和微软共同开发，提供了智能体发现和安全协作的标准化框架，有效解决了 AI 系统间的数据隔离问题。"
+    },
+    {
+      "point": "核心技术基于 JSON-RPC 2.0 和服务器推送事件",
+      "explanation": "采用 JSON-RPC 2.0 作为通信协议，配合服务器推送事件实现实时数据交互，完整保留智能体内部状态。未来版本计划支持交互界面动态协商和客户端主动交互功能。"
+    },
+    {
+      "point": "智能体功能卡支持能力描述与功能扩展",
+      "explanation": "智能体功能卡不仅描述核心能力，未来还将集成授权机制，为智能体间的发现与交互提供灵活解决方案。"
+    },
+    {
+      "point": "Python Notebook 演示实际应用场景",
+      "explanation": "谷歌提供的三智能体系统示例（集成网页搜索、数据分析和任务编排功能）为开发者提供了最佳实践参考。"
+    },
+    {
+      "point": "行业采用现状及与 MCP 的差异化策略",
+      "explanation": "虽然 A2A 协议已获得百余家企业支持，但其与 Anthropic MCP 协议的功能重叠促使行业探讨差异化发展策略，以确保技术生态的良性共存。"
+    }
+  ],
+  "keyQuotes": [
+    "A2A 协议为 AI 智能体提供了发现彼此能力、安全交换信息和协同处理复杂任务的标准化通信方案，为开发更强大、更具协作性的创新型 AI 应用奠定了技术基础。",
+    "协议实现采用基于 HTTP 的 JSON-RPC 2.0 规范，通过服务器推送事件支持智能体间的实时数据交互，同时确保各智能体内部状态的完整性。",
+    "当智能体需要满足以下条件时，A2A 协议是最佳选择：独立开发部署、跨团队协作、支持动态发现与组合调用，以及需要兼容第三方集成或频繁功能迭代。",
+    "此次加入 Linux 基金会的举措有效缓解了业界对'拥抱、扩展、消灭'（Embrace， Extend， Extinguish）策略的疑虑，A2A 协议可通过聚焦 MCP 无法实现的特定场景来确立差异化优势。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "多智能体系统",
+    "互操作性",
+    "行业标准",
+    "谷歌"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 405,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1751328000000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 00:00:00"
+}

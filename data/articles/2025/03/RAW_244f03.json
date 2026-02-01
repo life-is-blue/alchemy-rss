@@ -1,0 +1,53 @@
+{
+  "id": "RAW_244f03",
+  "title": "Meta 统一 Facebook 视频分发系统，覆盖移动和 Web 应用",
+  "url": "https://www.infoq.com/news/2025/03/facebook-video-delivery-unifed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-17 00:00:00",
+  "author": "Rafal Gancarz",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Meta finalized efforts to consolidate Facebook’s video delivery system by migrating video experiences from older Watch product to more recent Reels product, which became the basis of the unified system. The unification process required changes across mobile UI, server backend, and ranking systems while ensuring a seamless transition for billions of users.</p>\n   <p>Due to organic evolution and changing user preferences, Facebook operated two separate video delivery products: Facebook Watch and Reels on Facebook. The fragmentation of the video delivery functionality caused extra work for the engineering teams, who supported different layers of respective systems. Two separate products also forced content authors and advertisers to double the effort required to publish their content and set up marketing campaigns.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/facebook-video-delivery-unifed/news/2025/03/facebook-video-delivery-unifed/en/resources/1meta-video-stacks-1742222418558.jpeg\" style=\"width: 600px; height: 338px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/facebook-video-delivery-unifed/en/resources/1meta-video-stacks-1742222418558.jpeg\" rel=\"share\"></p>\n   <p><em>Fragmented Video Delivery Platform (Source: <a href=\"https://engineering.fb.com/2024/12/10/video-engineering/inside-facebooks-video-delivery-system/\">Meta Engineering Blog</a>)</em></p>\n   <p>As a first phase in the unification journey, the engineers concentrated on consolidating data models between the server side and two main mobile clients while avoiding changes to the user experience. The unification process required much care to ensure a seamless experience for billions of users, and the engineering team relied heavily on the observability layer, which was also evolving to offer consistent logging and metrics.</p>\n   <p>The next phase of the unification process involved migrating Watch users to the Reels UI. It required many product integrations to ensure the resulting user experience could serve short-form and long-form videos equally well. Engineers have conducted hundreds of user experience tests to optimize the final feature set.</p>\n   <p>After that, Meta engineers moved to consolidate the ranking system to cater to shorter and longer videos. The team unified the data, infrastructure and algorithmic foundations, and subsequently created a unified content pool combining videos of different lengths. These changes were supported by optimizations to the recommendation machine learning (ML) models to remove the video length bias.</p>\n   <p>Further improvements to the video delivery platform included dynamic pagination. <a href=\"https://engineering.fb.com/author/colin-smith/\">Colin Smith</a>, software engineer at Meta, explains the motivation behind adopting this new approach:</p>\n   <blockquote>\n    <p>In a typical delivery scenario, everyone on Facebook receives a page of videos with a fixed size from ranking to client. However, this approach can be limiting for a large user base where we need to optimize capacity costs on demand. User characteristics vary widely, ranging from those who never swipe down on a video to those who consume many videos in a single session. Someone could be completely new to our video experience or someone who visits the Facebook app multiple times a day. To accommodate both ends of the user-consumption spectrum, we developed a new and dynamic pagination framework.</p>\n   </blockquote>\n   <p>The dynamic approach to content pagination allows the ranking service to adjust the amount of content served based on the confidence score, conserving platform capacity and improving content quality for regular users.&nbsp;</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/facebook-video-delivery-unifed/news/2025/03/facebook-video-delivery-unifed/en/resources/1meta-videa-pagination-1742222418558.jpeg\" style=\"width: 600px; height: 337px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/facebook-video-delivery-unifed/en/resources/1meta-videa-pagination-1742222418558.jpeg\" rel=\"share\"></p>\n   <p><em>Dynamic Pagination (Source: <a href=\"https://engineering.fb.com/2024/12/10/video-engineering/inside-facebooks-video-delivery-system/\">Meta Engineering Blog</a>)</em></p>\n   <p>In addition to dynamic pagination, Meta also moved to real-time ranking, an approach that adjusts content ranking based on user engagement signals, such as video view times, likes, etc. Ranking content in real-time enhances convent diversification and new topic exploration by providing more personalized and responsive experience.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta Unifies Facebook’s Video Delivery System Across Mobile and Web Apps\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Rafal Gancarz\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/facebook-video-delivery-unifed/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1742180400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 通过整合 Facebook 视频分发系统，统一 Watch 和 Reels，显著提升用户体验和运营效率。",
+  "oneSentenceSummary": "Meta 通过整合 Facebook 视频分发系统，统一 Watch 和 Reels，显著提升用户体验和运营效率。",
+  "summary": "Meta 通过将 Facebook Watch 迁移到 Reels，实现了视频分发系统的统一，提升了用户体验和运营效率。这一过程涉及移动 UI、服务器后端和排序系统的全面整合。统一化的目的是为了解决原有 Watch 和 Reels 两个独立系统带来的工程维护负担和内容发布成本，例如避免重复开发和简化内容发布流程。整合过程中，Meta 首先统一了服务器端和移动客户端的数据模型，然后将 Watch 用户迁移到 Reels UI，并通过数百次用户体验测试优化功能集。随后，Meta 统一了排序系统，消除了视频长度偏差。同时，引入了动态分页和实时排序。动态分页根据用户行为调整内容数量，节省平台资源。实时排序则根据用户互动信号调整内容排序，提高个性化推荐质量，并提升内容多样性。",
+  "mainPoints": [
+    {
+      "point": "统一视频分发系统可有效降低工程和运营成本",
+      "explanation": "通过整合 Watch 和 Reels，避免重复开发和维护，简化内容发布流程，提高资源利用率和团队协作效率。"
+    },
+    {
+      "point": "动态分页和实时排序显著提升用户体验和平台效率",
+      "explanation": "动态分页根据用户行为调整内容数量，节省平台资源；实时排序根据用户互动信号调整内容排序，提高个性化推荐质量，并提升了内容多样性。"
+    },
+    {
+      "point": "统一底层架构是实现系统整合的关键步骤",
+      "explanation": "统一的基础设施、数据模型和算法为后续的 UI 迁移和排序系统整合奠定基础。这保证了数据一致性和系统稳定性。"
+    }
+  ],
+  "keyQuotes": [
+    "在一个典型的分发场景中，Facebook 上的每个人都会从排序系统接收到一个固定大小的视频页面。然而，对于需要按需优化容量成本的大量用户群来说，这种方法可能会受到限制。",
+    "为了适应用户消费范围的两端，我们开发了一种新的动态分页框架。",
+    "通过提供更加个性化和响应式的体验，实时排序内容可以增强内容的多元化和新主题的探索。"
+  ],
+  "tags": [
+    "架构设计",
+    "视频分发",
+    "Facebook",
+    "Reels",
+    "Watch"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 506,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1742169600000,
+  "publishDateStr": "2025-03-17",
+  "publishDateTimeStr": "2025-03-17 00:00:00"
+}

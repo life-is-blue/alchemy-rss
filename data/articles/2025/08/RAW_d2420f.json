@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d2420f",
+  "title": "前端需要掌握多少 Node.js？昨天下午，来了个刚毕业的学弟，很认真地跑过来问我：“哥，我看网上好多人都说前端要学 Nod - 掘金",
+  "url": "https://juejin.cn/post/7542379658521690139",
+  "date": "2025-08-26 02:25:08",
+  "author": "ErpanOmer",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body></body>\n</html>",
+  "aiSummary": "阐述前端工程师学习 Node.js 应以解决实际问题为导向，从基础工具到进阶应用分阶段掌握。",
+  "oneSentenceSummary": "阐述前端工程师学习 Node.js 应以解决实际问题为导向，从基础工具到进阶应用分阶段掌握。",
+  "summary": "文章针对前端工程师学习 Node.js 的深度问题，通过一个学弟的提问展开讨论。作者基于八年经验，强调前端学习 Node.js 的核心目的是解决问题，而非抢占后端职责。文章将 Node.js 知识划分为三个层次：首先是作为现代前端工程师必须掌握的基础（如`package.json`、模块化、`path`、`fs`、`process.env`），这是理解前端工具链的地基；其次是解决实际开发中遇到的进阶问题（如跨域代理、理解全栈框架的服务器端运行机制、开发提效 CLI 工具）；最高层级则是作为前端驱动的全栈工程师构建 BFF 层。文章最终建议前端开发者应以解决具体问题为导向，按需学习 Node.js，避免盲目焦虑。",
+  "mainPoints": [
+    {
+      "point": "Node.js 是现代前端工程化工具链的基石，基础知识不可或缺",
+      "explanation": "理解`package.json`、CommonJS 与 ESM 模块化、`path`模块等 Node.js 基础，是掌握 Webpack、Vite 等构建工具和解决其报错的前提。"
+    },
+    {
+      "point": "进阶 Node.js 能力体现在解决实际开发问题和驾驭全栈框架",
+      "explanation": "掌握 Node.js 代理解决跨域、理解 Next.js 等元框架的服务器端运行机制，以及开发 CLI 工具能显著提升开发效率和能力边界。"
+    },
+    {
+      "point": "学习 Node.js 应以解决具体问题为导向，而非为学而学",
+      "explanation": "盲目追求 Node.js 技术栈深度不如在遇到实际工程化、全栈开发问题时，按需学习并应用 Node.js 知识，这样效率更高且更有价值。"
+    }
+  ],
+  "keyQuotes": [
+    "我们前端学 Node，目的不是为了去抢后端同学的饭碗。",
+    "我们学它，是因为我们整个前端的体系------你用的 Webpack， Vite， ESLint， Babel， pnpm------全都是建立在 Node.js 这个地基上的。",
+    "不要为了学 Node.js 而学 Node.js。你的目的，不是为了在简历上多写一行熟悉 Node.js 全家桶，而是为了解决一个更完整的问题。",
+    "解决问题，永远是最好的老师。"
+  ],
+  "tags": [
+    "前端开发",
+    "Node.js",
+    "工程化",
+    "职业发展",
+    "技术选型"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 0,
+  "score": 89,
+  "wordCount": null,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756175108000,
+  "publishDateStr": "2025-08-26",
+  "publishDateTimeStr": "2025-08-26 02:25:08"
+}

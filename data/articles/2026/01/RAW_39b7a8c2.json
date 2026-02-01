@@ -1,0 +1,67 @@
+{
+  "id": "RAW_39b7a8c2",
+  "title": "AAAI 2026 | 美团技术团队学术论文精选",
+  "url": "https://tech.meituan.com/2026/01/12/aaai-2026.html",
+  "date": "2026-01-12 00:00:00",
+  "author": "作者: 美团技术团队",
+  "siteName": "美团技术团队",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content\">\n   <p><a href=\"https://aaai.org/\">AAAI</a>&nbsp;是人工智能领域顶级的国际学术会议，本文精选了美团技术团队被收录的 8 篇学术论文（附下载链接），覆盖大模型推理、&nbsp;退火策略、过程奖励模型、强化学习、视觉文本渲染等多个技术领域，希望这些论文能对大家有所帮助或启发。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/24f65f2cf23e8c530d7594a75d535c09484746.jpg\" alt></p>\n   <h2 id=\"01-promoting-efficient-reasoning-with-verifiable-stepwise-reward\">01 Promoting Efficient Reasoning with Verifiable Stepwise Reward</h2>\n   <p><strong>论文类型</strong>：Poster</p>\n   <p><strong>论文下载</strong>：<a href=\"https://arxiv.org/pdf/2508.10293\">PDF</a></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/422836c771ad34fbce3a0031ea4bbedd210886.png\" alt></p>\n   <p><strong>论文简介</strong>：大推理模型通过强化学习提升了链式推理能力，但输出冗长，导致推理开销增大和用户体验下降，即「过度思考」问题。针对这一现象，本文提出了可验证的过程奖励机制（VSRM），通过奖励有效步骤、惩戒无效步骤，优化模型推理过程。VSRM 首先通过特殊 token 划分推理步骤，并结合三条规则保证每个步骤的内容可读性。各步骤通过插入 token 生成子轨迹，模型根据每步前后正确率变化分配步骤级奖励。为避免奖励信号稀疏，引入前瞻窗口机制，通过折扣因子传播未来正确率变化，使奖励更密集。</p>\n   <p>实验表明，VSRM 能大幅缩减输出长度，且在多种数学 benchmark 和不同模型、算法下保持甚至提升性能。消融实验证明前瞻窗口机制有效，显式长度惩罚对 VSRM 无益。VSRM 机制可与各类强化学习算法无缝结合，有效抑制无效步骤，鼓励有效推理，是解决过度思考问题、提升模型推理效率的有效方法。</p>\n   <h2 id=\"02-scaling-and-transferability-of-annealing-strategies-in-large-language-model-training\">02 Scaling and Transferability of Annealing Strategies in Large Language Model Training</h2>\n   <p><strong>论文类型</strong>：Long Paper</p>\n   <p><strong>论文下载</strong>：<a href=\"https://arxiv.org/pdf/2505.17652\">PDF</a></p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/b65f8b0e203e0c7d48faeef79579d0b7699432.png\" alt></p>\n   <p><strong>论文简介</strong>：本文深入研究了大型语言模型训练过程中退火策略（Annealing Strategies）对模型性能的影响，提出了一个新的缩放法则公式来预测不同训练配置下的损失曲线。研究发现，即使在相同的训练 token 数量和模型规模下，不同的批次大小（batch size）和学习率调度器也会导致显著不同的训练曲线。为此，作者提出了一个改进的缩放法则公式：</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/762ac5333f45e3d6d0575b14f11448a210204.webp\" alt></p>\n   <p>其中 S 表示学习率对训练步数的积分（前向效应），M 表示动量对训练步数的积分（退火动量项），N 代表模型规模。</p>\n   <p>论文的核心贡献包括：(1) 证明在特定情况下，训练步数比训练 token 数更适合作为追踪损失曲线的指标；(2) 发现最优退火比率（Ropt）随总训练步数增加而减小，遵循幂律关系；(3) 验证了最优退火比率在训练集和验证集上保持一致；(4) 通过在 Dense 模型和 MoE（Mixture-of-Experts）模型上的大量实验，证明小模型可以作为优化大模型训练动态的可靠代理。该研究为大规模语言模型的训练提供了更精确的理论指导，有助于优化训练效率和模型性能。</p>\n   <h2 id=\"03-from-mathematical-reasoning-to-code-generalization-of-process-reward-models-in-test-time-scaling\">03 From Mathematical Reasoning to Code: Generalization of Process Reward Models in Test-Time Scaling</h2>\n   <p><strong>论文类型</strong>：Long Paper （Oral）</p>\n   <p><strong>论文下载</strong>：<a href=\"https://arxiv.org/pdf/2506.00027\">PDF</a></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/5f7d1bd48431cfd8b8650c6812265951123604.png\" alt></p>\n   <p><strong>论文简介</strong>：本文系统研究了过程奖励模型（Process Reward Models, PRMs）在提升大型语言模型推理能力方面的作用，特别关注其从数学推理到代码生成任务的跨域泛化能力。研究从训练方法、可扩展性和泛化能力等多个维度对 PRMs 进行了深入分析。</p>\n   <p>论文的核心发现包括： - <strong>训练计算资源的影响</strong>：研究发现随着 PRM 模型规模的增大，性能提升呈现边际递减效应，强调了在模型规模和计算成本之间寻找平衡的重要性。同时，训练数据集的多样性显著影响 PRM 性能，作者提出的 ASLAF（自动步骤级标注与过滤）方法在多个基准测试中表现优异。 - <strong>测试时扩展策略</strong>：论文评估了 Best-of-N 采样、束搜索、蒙特卡洛树搜索（MCTS）和多数投票等多种搜索策略。结果表明，在计算资源充足时 MCTS 效果最佳，而在资源受限情况下 Best-of-N 采样是实用的替代方案。 - <strong>跨域泛化能力</strong>：令人惊讶的是，在数学数据集上训练的 PRMs 在代码生成任务上的表现与专门针对代码训练的模型相当，展现出强大的跨域适应能力。通过梯度分析，研究还发现 PRMs 倾向于选择具有相似底层推理模式的响应，这为理解其优化机制提供了新视角。该研究为优化大规模语言模型的训练和部署提供了重要的理论指导和实践参考。</p>\n   <h2 id=\"04-rethinking-the-sampling-criteria-in-reinforcement-learning-for-llm-reasoning-a-competence-difficulty-alignment-perspective\">04 Rethinking the Sampling Criteria in Reinforcement Learning for LLM Reasoning: A Competence-Difficulty Alignment Perspective</h2>\n   <p><strong>论文类型</strong>：Poster</p>\n   <p><strong>论文下载</strong>：<a href=\"https://arxiv.org/pdf/2505.17652\">PDF</a></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/7b31159e57c1578f90ac15b24f6b65d4486715.png\" alt></p>\n   <p><strong>论文简介</strong>：本文对强化学习（RL）中的问题采样策略进行了系统性研究，当前主流采样策略大多直接依赖单步通过率（Pass Rate） 作为问题难度指标，存在 1）对问题难度的估计不够稳定；2）无法有效捕捉模型能力与问题难度的对齐关系的问题。</p>\n   <p>针对这些问题，本文提出了 CDAS（Competence-Difficulty Alignment Sampling）：一种将模型能力与问题难度显式建模并对齐的动态采样方法。CDAS 不依赖单步通过率，而是通过累积历史表现差异来构建更稳定的难度估计；同时定义模型能力，并以不动点系统确保两者在训练过程中共同收敛。基于能力—难度差值构建对齐指标，再通过对称采样策略，选取最匹配模型当前能力的问题，从而提升有效梯度比例与训练效率。CDAS 在数学推理和代码生成场景中均通过 RL 训练 验证，结果显示 CDAS 显著提升了采样效率与模型性能，击败了多种主流采样策略。</p>\n   <h2 id=\"05-vitype-high-fidelity-visual-text-rendering-via-glyph-aware-multimodal-diffusion\">05 ViType: High-Fidelity Visual Text Rendering via Glyph-Aware Multimodal Diffusion</h2>\n   <p><strong>论文类型</strong>：Oral</p>\n   <p><strong>论文下载</strong>：<a href=\"https://s3plus.meituan.net/ddfile/ViType__High_Fidelity_Visual_Text_Rendering_via_Glyph_Aware_Multimodal.pdf\">PDF</a></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/e009fa83f816057c787bf2c6d7434b13951370.png\" alt></p>\n   <p><strong>论文简介</strong>：随着文生图模型在电商营销等领域的广泛应用，视觉文本渲染的准确性已成为制约生成质量的核心瓶颈。现有模型因缺乏字形级理解能力，难以精确刻画多语言字符结构，导致海报、商品图等商业场景中文字乱码、字形失真等问题频发，严重阻碍了 AIGC 在智能设计中的实际落地。</p>\n   <p>针对这一关键挑战，我们提出 ViType 三阶段对齐增强框架：首先通过视觉问答机制实现文本-字形显式对齐，将字符视觉结构注入大语言模型语义空间；其次创新性地将预对齐字形嵌入与文本 token 同步输入多模态扩散 Transformer，通过联合训练建立跨模态特征协同；最后基于高质量图文对进行美学精调，确保生成图像的版式和谐与视觉美感。该框架使字符准确率提升 15%以上，为电商海报、营销物料等高精度视觉内容创作提供了可靠的技术支撑。</p>\n   <h2 id=\"06-dscf-dual-source-counterfactual-fusion-for-high-dimensional-combinatorial-interventions\">06 DSCF: Dual-Source Counterfactual Fusion for High-Dimensional Combinatorial Interventions</h2>\n   <p><strong>论文类型</strong>：Poster</p>\n   <p><strong>论文下载</strong>：<a href=\"https://s3plus.meituan.net/ddfile/%E3%80%90AAAI%E3%80%91DSCF.pdf\">PDF</a></p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/337dcdbde03c4ce98125ed62e3f9dc74519823.png\" alt></p>\n   <p><strong>论文简介</strong>：在个性化推荐、数字营销和医疗健康等领域，基于观测数据预测反事实结果对科学决策至关重要。在这些应用场景中，决策过程往往涉及高维组合干预策略，例如多渠道资源捆绑投放或产品组合推荐。面向这类场景，无论是历史策略的效果评估还是新策略的优化，都需要模型能够对历史数据中很少出现甚至从未出现过的策略组合效果进行准确预测。此外，观测数据中源于历史分配策略和倾向性投放的选择偏差会进一步加剧数据稀疏问题，从而影响反事实推断的准确性。</p>\n   <p>为此，本文提出双源反事实融合模型（Dual-Source Counterfactual Fusion，DSCF），该可扩展框架通过双专家混合架构联合建模观测数据和代理反事实样本，并采用领域引导融合机制，在有效平衡偏差消除与信息多样性的同时，还能自适应地泛化到反事实输入场景。在合成和半合成数据集上的大量实验表明，DSCF 框架能够显著提升高维组合干预场景下的预测准确性，并在不同情境下展现出优异的鲁棒性表现。</p>\n   <h2 id=\"07-compress-then-rank-faster-and-better-listwise-reranking-with-large-language-models-via-ranking-aware-passage-compression\">07 Compress-then-Rank: Faster and Better Listwise Reranking with Large Language Models via Ranking-Aware Passage Compression</h2>\n   <p><strong>论文类型</strong>：Poster</p>\n   <p><strong>论文下载</strong>：<a href=\"https://s3plus.meituan.net/ddfile/AAAI2026_C2R(1).pdf\">PDF</a></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/bc949b96f280b3ad84b895743b3fb025499590.png\" alt></p>\n   <p><strong>论文简介</strong>：基于大型语言模型（LLMs）的列表重排序（listwise reranking）已经成为最先进的方法，在段落重排序任务中不断创下新的性能基准。然而，其实际应用面临两个关键挑战：处理长序列时高昂的计算开销和高延迟，以及由于“迷失在中间”等现象导致的长上下文性能下降。</p>\n   <p>为了解决这些问题，我们提出了一种高效的框架压缩后排序（Compress-then-Rank, C2R），该框架不是直接对原始段落进行列表重排序，而是对其紧凑的多向量代理进行操作。这些代理可以预先计算并缓存，适用于语料库中的所有段落。C2R 的有效性依赖于三项关键创新。首先，压缩模型通过结合文本恢复和文本延续目标进行预训练，生成高保真的压缩向量序列，从而减轻了单向量方法中常见的语义损失问题。其次，一种新颖的输入方案将每个序数索引的嵌入添加到其对应的压缩向量序列前，这不仅划定了段落边界，还引导重排序 LLM 生成排序列表。最后，压缩模型和重排序模型通过联合优化，使压缩过程对排序目标具有排序感知能力。在主要重排序基准上的广泛实验表明，C2R 在提供显著加速的同时，能够实现与全文重排序方法相当甚至更优的排序性能。</p>\n   <h2 id=\"08-multi-aspect-cross-modal-quantization-for-generative-recommendation\">08 Multi-Aspect Cross-modal Quantization for Generative Recommendation</h2>\n   <p><strong>论文类型</strong>：Oral</p>\n   <p><strong>论文下载</strong>：<a href=\"https://arxiv.org/pdf/2511.15122\">PDF</a></p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/1b1c6cec83ec54a5eb5be1c1d10df6b5685304.png\" alt></p>\n   <p><strong>论文简介</strong>：本文提出一种基于多模态融合的生成式推荐框架（MACRec），旨在解决现有生成式推荐方法因模态信息利用不足和跨模态交互缺失导致的性能瓶颈。</p>\n   <p>针对文本与视觉模态的量化难题，MACRec 引入跨模态量化与多角度对齐机制，通过两阶段技术路线实现优化：1）跨模态残差量化：将对比学习融入分层量化过程，生成兼具语义层次性与模态兼容性的物品标识符，显著降低多模态表征冲突；2）跨模态协同对齐：通过显式-隐式协同对齐策略，分别建模文本与视觉模态的共享特征和互补特征，增强生成式推荐的多模态理解能力。在亚马逊电商推荐数据集上的实验结果表明，MACRec 相较基准模型在推荐性能上有显著提升；各模态的码本分布更均衡、利用率更低，充分验证了跨模态量化与对齐机制在提升生成式推荐有效性方面的优势。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美团技术团队在 AAAI 2026 上发表了 8 篇涵盖 LLM 推理、训练、多模态渲染、反事实推断和生成式推荐等前沿领域的学术论文精选。",
+  "oneSentenceSummary": "美团技术团队在 AAAI 2026 上发表了 8 篇涵盖 LLM 推理、训练、多模态渲染、反事实推断和生成式推荐等前沿领域的学术论文精选。",
+  "summary": "本文精选并概述了美团技术团队在 AAAI 2026 上发表的 8 篇学术论文，涵盖了大型语言模型（LLM）的多个前沿研究方向。具体包括通过可验证过程奖励解决 LLM 过度思考问题、LLM 训练中的退火策略及其可扩展性、过程奖励模型（PRMs）在数学推理和代码生成中的泛化能力、强化学习问题采样策略的优化、高保真视觉文本渲染技术 ViType、高维组合干预的反事实推断框架 DSCF、基于 LLM 的列表重排序优化策略 C2R，以及多模态生成式推荐框架 MACRec。这些论文不仅深入探讨了 LLM 的效率、训练、推理和应用等核心问题，也触及了多模态融合、反事实推断和推荐系统等交叉领域，为相关技术的发展提供了理论指导和实践探索。",
+  "mainPoints": [
+    {
+      "point": "提出可验证过程奖励机制（VSRM），解决大模型“过度思考”导致的冗长输出问题。",
+      "explanation": "VSRM 通过奖励有效步骤、惩戒无效步骤，能大幅缩减 LLM 输出长度，并在多种任务中保持甚至提升性能，提高推理效率。"
+    },
+    {
+      "point": "研究大语言模型训练中的退火策略，并通过缩放法则提高训练效率。",
+      "explanation": "论文提出了改进的缩放法则，发现最优退火比率的幂律关系，并证明小模型可作为大模型训练的可靠代理，为优化 LLM 训练提供理论指导。"
+    },
+    {
+      "point": "系统研究过程奖励模型（PRMs）在跨域泛化能力，特别是在数学推理到代码生成。",
+      "explanation": "研究揭示了 PRMs 的训练计算资源影响、测试时扩展策略，并发现数学领域训练的 PRMs 在代码生成任务上表现出色，展现了强大泛化能力。"
+    },
+    {
+      "point": "引入 CDAS（Competence-Difficulty Alignment Sampling）优化强化学习中的问题采样策略。",
+      "explanation": "CDAS 通过显式建模模型能力与问题难度，动态调整采样策略，在数学推理和代码生成任务中显著提升了 RL 训练效率和模型性能。"
+    },
+    {
+      "point": "提出 ViType 框架，通过字形感知多模态扩散实现高保真视觉文本渲染。",
+      "explanation": "ViType 解决了文生图模型中文字乱码和字形失真问题，通过三阶段对齐增强框架，提升字符准确率，为商业设计提供技术支撑。"
+    },
+    {
+      "point": "设计 C2R（Compress-then-Rank）框架，优化大型语言模型在列表重排序任务中的效率和性能。",
+      "explanation": "C2R 通过排序感知段落压缩，将长序列重排序转换为紧凑代理操作，显著加速重排序过程，并保持或提升性能，解决了高计算开销和长上下文性能下降问题。"
+    }
+  ],
+  "keyQuotes": [
+    "VSRM 机制可与各类强化学习算法无缝结合，有效抑制无效步骤，鼓励有效推理，是解决过度思考问题、提升模型推理效率的有效方法。",
+    "小模型可以作为优化大模型训练动态的可靠代理，为大规模语言模型的训练提供了更精确的理论指导，有助于优化训练效率和模型性能。",
+    "令人惊讶的是，在数学数据集上训练的 PRMs 在代码生成任务上的表现与专门针对代码训练的模型相当，展现出强大的跨域适应能力。",
+    "CDAS 在数学推理和代码生成场景中均通过 RL 训练 验证，结果显示 CDAS 显著提升了采样效率与模型性能，击败了多种主流采样策略。",
+    "C2R 在提供显著加速的同时，能够实现与全文重排序方法相当甚至更优的排序性能。"
+  ],
+  "tags": [
+    "AAAI",
+    "美团技术",
+    "人工智能",
+    "大语言模型",
+    "强化学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 85,
+  "wordCount": 3507,
+  "domain": "tech.meituan.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f18ad4",
+  "sourceName": "美团技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768176000000,
+  "publishDateStr": "01-12",
+  "publishDateTimeStr": "2026-01-12 00:00:00"
+}

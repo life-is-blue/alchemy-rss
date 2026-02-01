@@ -1,0 +1,54 @@
+{
+  "id": "RAW_468d99",
+  "title": "刚刚，ChatGPT 的深度研究可以连接 GitHub 了！网友：这是真·RAG",
+  "url": "https://www.qbitai.com/2025/05/281102.html",
+  "date": "2025-05-09 00:30:05",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"39\">金磊 发自 凹非寺</p>\n   <p data-track=\"40\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">ChatGPT在深夜又更新了一波大的——</p>\n  <p data-track=\"3\"><strong>深度研究</strong>（Deep Research）功能，现在可以直接<strong>连接到GitHub</strong>了！</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/79b00496-c227-4b29-4cad-4be98c832b00/public\" alt=\"刚刚，ChatGPT的深度研究可以连接GitHub了！网友：这是真·RAG\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/79b00496-c227-4b29-4cad-4be98c832b00/public\">\n  </div>\n  <p data-track=\"4\">那么效果又是怎样的呢？</p>\n  <p data-track=\"5\">例如我们在点击“深度研究”的同时，提出一个需求：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"6\">我最近加入了团队，并接到一项任务要求熟悉我们的GitHub代码库。请提供一份简要报告，内容包括：项目目的与架构、关键模块、技术栈、值得关注的开源问题/合并请求，以及两项可执行的代码质量改进建议。</p>\n  </blockquote>\n  <p data-track=\"7\">在发送问题之后，输入框底部就会出现<strong>“GitHub”</strong>的选项；之后我们可以在“Search repos”框中输入想要的内容，例如“codex”：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/19c2c8f8-b0c9-4824-25d3-52264b72b300/public\" alt=\"刚刚，ChatGPT的深度研究可以连接GitHub了！网友：这是真·RAG\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/19c2c8f8-b0c9-4824-25d3-52264b72b300/public\">\n  </div>\n  <p data-track=\"8\">然后，ChatGPT就会直接连接到GitHub中的18个相关repos，基于此来生成答案：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/89c5efcc-a8f5-4f44-20e8-2b55d9608b00/public\" alt=\"刚刚，ChatGPT的深度研究可以连接GitHub了！网友：这是真·RAG\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/89c5efcc-a8f5-4f44-20e8-2b55d9608b00/public\">\n  </div>\n  <p data-track=\"9\">网友们看罢，纷纷认为这是利好开发者的一次功能更新，更有人直呼：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"10\"><strong>这是真·RAG。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85889270-ef98-481e-8d3e-012979c88e00/public\" alt=\"刚刚，ChatGPT的深度研究可以连接GitHub了！网友：这是真·RAG\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85889270-ef98-481e-8d3e-012979c88e00/public\">\n  </div>\n  <p data-track=\"11\">据了解，目前这个功能仍旧处于测试阶段，全球范围内的<strong>Team用户可用</strong>，并将陆续对Plus、Pro用户开放。</p>\n  <p data-track=\"13\">对于这个新功能，也有网友提出了不少问题。</p>\n  <p data-track=\"14\">而OpenAI也同步上线了一个Q&amp;A文档，详细地回答了ChatGPT具体是如何与GitHub联动的。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/174fefbd-5947-408b-7bdb-4eee5c9a0d00/public\" alt=\"刚刚，ChatGPT的深度研究可以连接GitHub了！网友：这是真·RAG\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/174fefbd-5947-408b-7bdb-4eee5c9a0d00/public\">\n  </div>\n  <p data-track=\"15\">在使用方面，正如我们刚才所展示的，当你把GitHub和深度研究连接后，ChatGPT就能直接从你的代码库（包括代码、README文件和其他文档）中获取实时数据，并即时分析处理。</p>\n  <p data-track=\"16\">你只需要完成连接，提出问题，深度研究就会自动读取、分析你的GitHub内容，并直接引用相关片段来解答。</p>\n  <p data-track=\"17\">而除了像刚才的操作方式之外，你也可以进入ChatGPT设置，选择“已连接应用”（Connected apps），找到“连接器”（Connectors）选项，然后点击GitHub旁边的“连接”按钮。</p>\n  <p data-track=\"18\">如果之后需要调整该连接器能访问的代码库范围，只需在设置中点击GitHub旁边的齿轮图标，即可跳转至GitHub连接器的配置页面。</p>\n  <p data-track=\"19\">当你在已连接的GitHub代码库中提问时，ChatGPT会根据你的问题自动生成搜索关键词来查找相关内容。</p>\n  <p data-track=\"20\">比如你问：“能告诉我后端处理文件上传的代码在哪里吗？”</p>\n  <p data-track=\"21\">ChatGPT可能会用“file upload handler backend”这样的关键词进行搜索。</p>\n  <p data-track=\"22\">如果有需要，它还会尝试多种不同的搜索方式，确保找到最相关的代码或文件。</p>\n  <p data-track=\"23\">除此之外，网友问得比较多的一个问题就是：<strong>OpenAI会使用GitHub的内容来训练其模型吗？</strong></p>\n  <p data-track=\"24\">对此，OpenAI的回答是：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"25\">对于企业级产品（如ChatGPT Team、Enterprise、Edu和API服务），默认情况下用户发送的内容不会用于改进我们的模型。</p>\n   <p data-track=\"26\">若您使用的是个人版服务（如ChatGPT免费版、Plus和Pro版），当开启“为所有人改进模型”选项时，<strong>我们可能会使用您的内容来训练模型</strong>。</p>\n  </blockquote>\n  <p data-track=\"27\">最后，还有几个注意事项：</p>\n  <ul>\n   <li data-track=\"28\">代码库需要约5分钟时间才会出现在深度研究的GitHub连接器中</li>\n   <li data-track=\"29\">只能搜索GitHub仓库的名称，不支持搜索特定的文件名</li>\n  </ul>\n  <p data-track=\"31\">而除了“GitHub连接器”之外，OpenAI在凌晨还发布了一个新功能——</p>\n  <p data-track=\"32\"><strong>强化微调（Reinforcement fine-tuning，RFT）</strong>。</p>\n  <p data-track=\"33\">没错，正是OpenAI在去年12月预览过的那个功能，今天它可以正式在o4-mini中使用了！</p>\n  <p data-track=\"34\">具体来说，RFT使用思维链推理和任务特定评分来提高模型性能，特别适用于复杂领域。</p>\n  <p data-track=\"35\">以AccordanceAI这家公司为例，它便使用RFT微调了一个在税务和会计方面达到顶尖水平的模型，具体效果如下：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bce821f4-34c5-4bf4-2441-54b00b668800/public\" alt=\"刚刚，ChatGPT的深度研究可以连接GitHub了！网友：这是真·RAG\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bce821f4-34c5-4bf4-2441-54b00b668800/public\">\n  </div>\n  <p data-track=\"41\">视频地址：<br>\n    https://mp.weixin.qq.com/s/5V4lbj25QuX3qmQHsN-a1Q</p>\n  <p data-track=\"37\">那么对于OpenAI上新的这两个功能，你有什么看法呢？欢迎在评论区留言讨论~</p>\n  <p data-track=\"38\">参考链接：<br>\n    [1]https://x.com/OpenAIDevs/status/1920556386083102844<br>\n    [2]https://x.com/TheRealAdamG/status/1920577066455740850<br>\n    [3]https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt-deep-research<br>\n    [4]https://x.com/OpenAIDevs/status/1920531856426143825</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "ChatGPT 推出深度研究新功能，通过连接 GitHub 代码库实现真 · RAG，帮助开发者快速熟悉项目，并上线强化微调功能。",
+  "oneSentenceSummary": "ChatGPT 推出深度研究新功能，通过连接 GitHub 代码库实现真 · RAG，帮助开发者快速熟悉项目，并上线强化微调功能。",
+  "summary": "该文章报道了 ChatGPT 的最新功能更新，包括深度研究功能与 GitHub 的连接，旨在解决开发者快速熟悉代码库，提高信息检索效率的问题，实现了真 · RAG。深度研究功能允许用户通过 ChatGPT 直接访问和分析 GitHub 代码库，从而快速了解项目架构、关键模块和代码质量。用户可以通过提出问题，让 ChatGPT 自动搜索并引用 GitHub 内容来解答。此外，OpenAI 还发布了强化微调（RFT）功能，该功能通过思维链推理和任务特定评分来提高模型性能，尤其适用于税务和会计等复杂领域。文章还提到了 OpenAI 对于用户数据使用的声明，强调企业级产品默认不使用用户内容训练模型，而个人版服务则可以选择是否开启此选项。",
+  "mainPoints": [
+    {
+      "point": "ChatGPT 深度研究功能现可连接 GitHub，实现真 · RAG，利于代码库分析",
+      "explanation": "开发者可以通过该功能快速熟悉新的代码库，了解项目架构、技术栈和潜在问题，提高工作效率。"
+    },
+    {
+      "point": "强化微调 (RFT) 正式发布，提升模型在复杂领域的性能",
+      "explanation": "RFT 通过思维链推理和任务特定评分，使模型在税务、会计等复杂领域达到顶尖水平，提高模型的专业性。"
+    },
+    {
+      "point": "OpenAI 声明企业级产品默认不使用用户数据训练模型",
+      "explanation": "OpenAI 强调对用户数据的保护，企业级用户无需担心数据被用于模型训练，个人用户可选择是否参与模型改进。"
+    }
+  ],
+  "keyQuotes": [
+    "这是真 · RAG。",
+    "我最近加入了团队，并接到一项任务要求熟悉我们的 GitHub 代码库。请提供一份简要报告，内容包括：项目目的与架构、关键模块、技术栈、值得关注的开源问题/合并请求，以及两项可执行的代码质量改进建议。",
+    "对于企业级产品（如 ChatGPT Team、Enterprise、Edu 和 API 服务），默认情况下用户发送的内容不会用于改进我们的模型。",
+    "若您使用的是个人版服务（如 ChatGPT 免费版、Plus 和 Pro 版），当开启“为所有人改进模型”选项时，我们可能会使用您的内容来训练模型。"
+  ],
+  "tags": [
+    "ChatGPT",
+    "GitHub",
+    "深度研究",
+    "强化微调",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1449,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746750605000,
+  "publishDateStr": "2025-05-09",
+  "publishDateTimeStr": "2025-05-09 00:30:05"
+}

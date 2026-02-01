@@ -1,0 +1,57 @@
+{
+  "id": "RAW_693c34c9",
+  "title": "Noi Agent 初步探索",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491325&idx=1&sn=f026a98173d25a9a81cc427277428fe9",
+  "date": "2026-01-12 12:20:00",
+  "author": "浮之静",
+  "siteName": "浮之静",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a class=\"normal_text_link\" target=\"_blank\" href=\"https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&amp;mid=2247491287&amp;idx=1&amp;sn=56c1976d0f641a5acdeab3c9797639fa&amp;scene=21#wechat_redirect\" textvalue=\"Noi v1.0.0 正式发布\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\" style=\"background-color: inherit; font-size: 15px;\"><span textstyle=\"\" style=\"font-style: italic; text-decoration-line: underline;\">Noi v1.0.0 正式发布</span></a><span style=\"background-color: inherit; font-size: 15px;\">&nbsp;后，我曾有那么一瞬间小茫然。明知接下来要搞 AI 相关功能，却有点无从下手，准确来说是没找到一个适合 Noi 的切入点（区别于主流 agent 浏览器、chatbot 的切入点）。所以最近除了修 bug，就一直在思考此问题。现在总算有点眉目了，Noi 作为浏览器，加载网页/资源是核心，但 NSH（终端）的集成让一些不明所以的人感到困惑（不三不四，奇怪的组合）。但这绝对是无比正确的架构，因为一些能力正在基于 NSH 生长出来。</span></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0px;margin-bottom: 16px;text-align: left;\"><span leaf=\"\">下面这张图是我这几天实现的 noi 命令，它可以操作 Noi Tab，滚动，截图，点击也都可以封装成类似命令。如果只是单纯的命令行那肯定是无趣的（正常人谁通过命令去拿这些数据，纯属脱裤子放屁），但想想 Skill（不了解的看这里：<a class=\"normal_text_link\" target=\"_blank\" style=\"\" href=\"https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&amp;mid=2247491129&amp;idx=1&amp;sn=451107b90247a2f8ae5aaacca3804328&amp;scene=21#wechat_redirect\" textvalue=\"从 Prompt Engineering 到 Context Engineering\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\"><span textstyle=\"\" style=\"font-style: italic;text-decoration: underline;\">从 Prompt Engineering 到 Context Engineering</span></a>），如果将命令拼装成 Skills，让 Codex、Claude Code 之类的工具来调用，是不是就有点 Agent 的感觉了...</span></p>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-aistatus=\"1\" data-backh=\"374\" data-backw=\"578\" data-imgfileid=\"100007674\" data-ratio=\"0.6464258262874711\" data-s=\"300,640\" type=\"block\" data-type=\"png\" data-w=\"2602\" style=\"width:100%;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=2bc368f8&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F90Kxd0FAJJcGtSUv4ia7l1PRfXLRxWqZkiaCFf6tnibR4k4AnCFe1HBzrNuVAJMkI3Mu50O857pW5c5QHT1JWd2uQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0px;margin-bottom: 0px;text-align: left;\"><span leaf=\"\">这个架构设想让我有点兴奋，但鉴于技术实现的不确定性，应该有不少坑在等着我踩，就先不画饼了。已经开始幻想：Noi 生态除了插件，还可能是各种 Skills...</span></p>\n </body>\n</html>",
+  "aiSummary": "Noi 浏览器作者探索将浏览器操作封装为命令和技能，并结合大模型调用，构建独特的 AI Agent 架构。",
+  "oneSentenceSummary": "Noi 浏览器作者探索将浏览器操作封装为命令和技能，并结合大模型调用，构建独特的 AI Agent 架构。",
+  "summary": "本文介绍了 Noi 浏览器作者在集成 AI Agent 功能时的初步探索和架构设想。作者在 Noi V1.0.0 发布后，思考如何在现有浏览器与集成终端 (NSH) 的基础上，找到一个独特的 AI Agent 切入点。通过将 Noi 的核心操作（如 Tab 操作、滚动、截图、点击）封装成命令行命令，并进一步将这些命令组合成“技能”（Skills），设想让大型语言模型（如 Codex、Claude Code）调用这些技能，从而实现类似 Agent 的功能。这种架构不仅利用了 Noi 作为浏览器核心的能力，也突出了 NSH 作为扩展集成点的价值，为 Noi 生态系统除了插件之外引入了新的可能性，即基于 Skills 的 Agent 体系。",
+  "mainPoints": [
+    {
+      "point": "将 Noi 浏览器的核心操作 (Tab、滚动、截图、点击) 封装成可由终端执行的命令。",
+      "explanation": "作者将浏览器的功能转化为标准化的命令，为后续被 AI 模型调用提供了基础接口，强调了 NSH 作为关键扩展点的价值。"
+    },
+    {
+      "point": "设想将这些命令组合成“技能”（Skills），并由大型语言模型（LLM）进行调用，实现 Agent 功能。",
+      "explanation": "这是文章的核心创新点，通过构建一组可被程序化调用的 Skills，LLM 可以像人类一样与浏览器进行交互，执行复杂任务，从而实现 Agent 的概念。"
+    },
+    {
+      "point": "强调 Noi 的独特架构，即浏览器与内置终端 (NSH) 的结合，是实现 Agent 功能的关键优势。",
+      "explanation": "作者认为 NSH 的集成并非多余，而是为构建基于命令的 AI Agent 架构奠定了基础，使其区别于其他主流 Agent 产品。"
+    },
+    {
+      "point": "展望 Noi 生态未来可能扩展到插件和 Skills 并存的模式。",
+      "explanation": "除了传统的浏览器插件，未来 Noi 可能通过提供丰富的 Skills API，吸引开发者构建更多 AI 驱动的自动化和智能应用。"
+    }
+  ],
+  "keyQuotes": [
+    "Noi 作为浏览器，加载网页/资源是核心，但 NSH（终端）的集成让一些不明所以的人感到困惑（不三不四，奇怪的组合）。但这绝对是无比正确的架构，因为一些能力正在基于 NSH 生长出来。",
+    "如果将命令拼装成 Skills，让 Codex、Claude Code 之类的工具来调用，是不是就有点 Agent 的感觉了...",
+    "Noi 生态除了插件，还可能是各种 Skills..."
+  ],
+  "tags": [
+    "AI Agent",
+    "浏览器",
+    "终端",
+    "LLM",
+    "技能封装"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 433,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_557f42",
+  "sourceName": "浮之静",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768220400000,
+  "publishDateStr": "01-12",
+  "publishDateTimeStr": "2026-01-12 12:20:00"
+}

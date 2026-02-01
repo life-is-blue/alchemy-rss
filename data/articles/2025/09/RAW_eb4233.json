@@ -1,0 +1,55 @@
+{
+  "id": "RAW_eb4233",
+  "title": "ARMO 研究揭示：io_uring Rootkit 技术绕过 Linux 安全工具",
+  "url": "https://www.infoq.com/news/2025/09/linux-security-rootkit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-16 10:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Security researchers at ARMO have <a href=\"https://www.armosec.io/blog/io_uring-rootkit-bypasses-linux-security/\">uncovered</a> a significant vulnerability in Linux runtime security tools that stems from the <a href=\"https://man7.org/linux/man-pages/man7/io_uring.7.html\">io_uring</a> interface, an asynchronous I/O mechanism that can completely bypass traditional system call monitoring. The research demonstrates how attackers can exploit this blind spot to operate undetected by most existing security solutions.</p>\n   <p>The team developed a proof-of-concept rootkit called \"<a href=\"https://github.com/armosec/curing\">Curing</a>\" that operates entirely through io_uring operations, successfully evading detection by major security tool, including <a href=\"https://falco.org/\">Falco</a>, <a href=\"https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-endpoint-linux\">Microsoft Defender for Endpoint on Linux</a>, and requiring specialized configuration for tools like Tetragon. The rootkit demonstrates full command-and-control functionality without making any traditional system calls that security tools typically monitor.</p>\n   <blockquote>\n    <p>we presented our research on how to effectively bypass Linux runtime detection tools. This research is relevant to any Linux environment, especially in the modern cloud-native environments</p>\n   </blockquote>\n   <p>The io_uring interface, introduced in <a href=\"https://kernelnewbies.org/Linux_5.1\">Linux kernel 5.1</a>, was designed to provide high-performance asynchronous I/O through shared ring buffers between user space and kernel space. Unlike traditional Unix I/O operations that rely on system calls, io_uring uses these ring buffers as the primary communication mechanism, effectively creating an alternative pathway that bypasses conventional monitoring approaches.</p>\n   <p>The research builds upon earlier <a href=\"https://www.form3.tech/blog/engineering/bypassing-ebpf-tools\">work</a> by Daniel Teixeira, who first demonstrated the evasion potential of io_uring in 2022, but ARMO's team has now created the first fully functional rootkit to prove the practical threat. The io_uring interface currently supports 61 different operations, including critical network and file system functions that would typically trigger security alerts.</p>\n   <p>Testing revealed widespread vulnerabilities across both open-source and commercial security solutions. Falco, a CNCF graduated project widely used for runtime security monitoring, proved completely ineffective against io_uring-based operations due to its reliance on system call hooking. The Falco maintainers have acknowledged the issue and are working on LSM-based plugins to address the gap. Microsoft Defender for Endpoint on Linux showed similar blind spots, failing to detect various malicious activities, including sensitive file access, malware deployment, and cryptocurrency mining operations when executed through io_uring. The researchers noted that only the File Integrity Monitoring module, which likely uses Fanotify hooks, provided any detection capability.</p>\n   <p>The research exposes fundamental limitations in current <a href=\"https://www.upwind.io/glossary/what-is-ebpf-security\">eBPF-based security approaches</a> that many vendors have adopted. While eBPF offers performance and safety advantages for building security agents, its verifier constraints often push vendors toward the simplest implementation approach of hooking directly into system calls.</p>\n   <p>This straightforward method provides quick visibility but assumes system calls will always be invoked for security-relevant operations. The io_uring bypass demonstrates that this assumption is increasingly unreliable as kernel interfaces evolve. The researchers emphasize that security vendors need to move beyond simple syscall monitoring to remain effective against modern evasion techniques.</p>\n   <p>ARMO's research identifies several approaches for detecting io_uring-based attacks. The most promising long-term solution involves implementing KRSI (<a href=\"https://lwn.net/Articles/798157/\">Kernel Runtime Security Instrumentation</a>), which builds on the Linux Security Module framework to provide more reliable coverage through LSM hooks rather than syscall monitoring.</p>\n   <p>Alternative detection strategies include monitoring for anomalous io_uring usage patterns, since most legitimate applications don't typically use this interface. However, this approach requires careful implementation to avoid false positives in dynamic environments. Security teams can also identify alternative hook points across the kernel stack, though this requires deeper kernel internals expertise. The researchers also suggest following the Windows security model, where Microsoft moved away from unreliable SSDT hooking toward structured notification routines that guarantee callback execution. Linux's KRSI represents a similar evolution, providing more consistent security event coverage that's harder to bypass through creative syscall avoidance.</p>\n   <p>This vulnerability has particular significance for cloud-native environments where Linux forms the foundation of containerized infrastructure. The widespread deployment of container orchestration platforms and microservices architectures means that a single security blind spot can have cascading effects across entire deployments. The research underscores the need for security solutions to be forward-compatible with evolving kernel features rather than relying on legacy monitoring approaches. As kernel interfaces continue to expand with new asynchronous mechanisms and performance optimizations, security tools that fail to adapt will leave increasingly large gaps in protection.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Linux Security Tools Bypassed by io_uring Rootkit Technique, ARMO Research Reveals\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/linux-security-rootkit/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1758016800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "ARMO 研究揭示了一个关键的 Linux 漏洞，概念验证 Rootkit 能够绕过主要安全工具的检测，利用 io_uring 绕过传统系统调用监控。",
+  "oneSentenceSummary": "ARMO 研究揭示了一个关键的 Linux 漏洞，概念验证 Rootkit 能够绕过主要安全工具的检测，利用 io_uring 绕过传统系统调用监控。",
+  "summary": "ARMO 安全研究人员发现 Linux 运行时安全工具中的一个重大漏洞。该漏洞演示了如何利用 `io_uring` 异步 I/O 接口绕过传统的系统调用监控。他们开发了 \"Curing\"，这是一个完全通过 `io_uring` 操作运行的概念验证 Rootkit，成功逃避了 Falco 和 Linux 版 Microsoft Defender for Endpoint 等主要解决方案的检测。这种绕过利用了 `io_uring` 的共享环形缓冲区，这些缓冲区创建了一个替代通信路径。通常情况下，基于 eBPF 的安全代理不会监控此路径。该研究强调了当前仅依赖系统调用钩子的安全方法存在根本局限性，暴露了开源和商业工具中的广泛漏洞。文章提出了检测策略，包括内核运行时安全检测（KRSI），以实现更全面的安全防护，监控异常的 `io_uring` 使用情况，并识别替代内核钩子点，借鉴了 Windows 安全模型从不可靠的 SSDT 钩子转向结构化通知例程的演变思路。对于云原生环境而言，此漏洞尤为关键，强调了安全解决方案需要适应不断发展的内核接口。",
+  "mainPoints": [
+    {
+      "point": "io_uring 接口使得一种新型 Rootkit 技术能够绕过传统的 Linux 安全工具。",
+      "explanation": "io_uring 机制专为高性能 I/O 而设计，它通过使用共享环形缓冲区进行内核 - 用户通信来创建一个盲点，从而规避了标准系统调用监控。"
+    },
+    {
+      "point": "由于现有安全解决方案主要依赖以系统调用为中心的监控，因此基于 eBPF 的方案在很大程度上无法有效防御 io_uring 绕过。",
+      "explanation": "许多安全供应商依赖于钩取系统调用进行检测，但 io_uring 操作不会调用这些系统调用，从而在 Falco 和 Microsoft Defender for Endpoint 等工具的保护中留下了一个关键缺口。"
+    },
+    {
+      "point": "解决 io_uring Rootkit 需要超越系统调用监控，转向更深入的内核集成，如 KRSI。",
+      "explanation": "长期检测策略涉及内核运行时安全检测（KRSI），以实现更强大的基于 LSM 的钩子，或监控异常的 io_uring 使用模式以适应不断发展的内核接口。"
+    }
+  ],
+  "keyQuotes": [
+    "我们介绍了关于如何有效绕过 Linux 运行时检测工具的研究。这项研究与任何 Linux 环境相关，尤其是在现代云原生环境中",
+    "io_uring 绕过表明，随着内核接口的发展，这种假设越来越不可靠。",
+    "研究人员强调，安全供应商需要超越简单的系统调用监控，以保持对现代规避技术的有效性。",
+    "此漏洞对于 Linux 构成容器化基础架构基础的云原生环境具有特殊意义。",
+    "随着内核接口继续通过新的异步机制和性能优化进行扩展，未能适应的安全工具将留下越来越大的保护缺口。"
+  ],
+  "tags": [
+    "Linux 安全",
+    "io_uring",
+    "Rootkit",
+    "内核安全",
+    "eBPF"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 663,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758016800000,
+  "publishDateStr": "2025-09-16",
+  "publishDateTimeStr": "2025-09-16 10:00:00"
+}

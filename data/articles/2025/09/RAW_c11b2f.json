@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c11b2f",
+  "title": "英伟达 50 亿美元入股英特尔，将发布 CPU+GPU 合体芯片，大结局来了？ ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-19-2",
+  "date": "2025-09-19 02:14:30",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>他们共同宣布，要把电脑上的 CPU 和 GPU 合成为超级 SoC。</p>\n  </blockquote>\n  <p>周四晚间，英伟达收购 50 亿美元英特尔股份的新闻引爆了科技圈。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250919040957_880296\" data-ratio=\"0.8453703703703703\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507978\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/cf5c8fb6-3367-489f-a744-648dfbc76512/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>两家公司在 9 月 18 日同时发布公告，宣布达成长期战略合作。英伟达将投资 50 亿美元购买英特尔普通股，基于全新合作，两家公司将共同开发多代定制数据中心和 PC 产品。</p>\n  <p>在具体内容上，两家公司将专注于利用 NVIDIA NVLink 无缝连接 NVIDIA 和 Intel 架构 —— 将英伟达的 AI 和加速计算优势与英特尔领先的 CPU、x86 生态系统相结合，为客户提供顶尖解决方案。</p>\n  <p>对于数据中心，英特尔将构建英伟达定制版 x86 CPU，英伟达会将其集成到其 AI 基础设施平台中并提供给市场。</p>\n  <p>在个人计算领域，英特尔将打造并向市场推出集成 RTX GPU 芯片组的 x86 系统级芯片 (SoC)。这些全新的 x86 RTX SoC 将为各种需要集成世界一流 CPU 和 GPU 的 PC 提供支持。</p>\n  <p>英伟达计划将以每股 23.28 美元的价格向英特尔普通股投资 50 亿美元（相当于 5% 股份）。不过，此项投资仍需满足惯例成交条件，包括必要的监管批准。</p>\n  <p>受此消息刺激，在随后开始的交易时段两家公司的股票立即上涨。截至收盘，英伟达上涨了 3.49%，英特尔更是直接暴涨了 22.77%。</p>\n  <section>\n   <img data-imgfileid=\"503507979\" data-ratio=\"1.0333333333333334\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250919040957_c346a9\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/7b8dbf2a-e38a-4647-80ac-50c5658bd5a6/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>显然，现在人们对于英特尔的前景一致看好。</p>\n  <p>昨天宣布的投资发生后，率先受益的可能是前 OpenAI 超级对齐团队研究员，成立对冲基金的 <a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650988439&amp;idx=1&amp;sn=db5154549b07490a8d3862bc1708cbe0&amp;scene=21#wechat_redirect\" target=\"_blank\">Leopold Aschenbrenner</a>。他的态势感知基金重仓英特尔股票（第二季度结算占比 20%），据说一天盈利了 10 亿美元以上。</p>\n  <section>\n   <img data-imgfileid=\"503507981\" data-ratio=\"1.2088535754824064\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250919040957_f62b85\" data-type=\"png\" data-w=\"881\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0cf3c3b8-3312-441d-aa8a-ff6735c9887b/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>此前，美国政府已持有这家芯片制造巨头约 10% 的股权（价格是 20.47 美元），软银还以每股 23 美元的价格购买了价值 20 亿美元的英特尔首次发行股票。</p>\n  <p>在昨天晚间的电话会议上，英伟达创始人、CEO 黄仁勋强调，这笔交易将使英伟达能够扩展其架构系统，将 72 块 GPU 与定制 CPU 相结合。</p>\n  <p>黄仁勋还表示，与英特尔合作意味着英伟达可以在个人设备市场占据更大的份额：「每年笔记本电脑的销量为 1.5 亿台…… 我们现在正在开发一款系统级芯片，将 CPU、GPU 融合成一个巨大的 SoC，这将成为世界上前所未有的新型集成笔记本电脑。」</p>\n  <p>黄仁勋估计，这笔交易意味着「每年 250 亿至 500 亿美元的商机」。他表示，谈判已持续近一年，美国政府完全没有参与这项合作，不过「他们当然会非常支持」。</p>\n  <p>英特尔 CEO 陈立武在 X 上发出了自己和黄仁勋的合影，并表示很高兴能与自己的好朋友合作开发多代定制数据中心和 PC 产品。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250919040957_9fb4a9\" data-ratio=\"1.337837837837838\" data-s=\"300,640\" data-type=\"png\" data-w=\"888\" type=\"block\" data-imgfileid=\"503507980\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/33a67c51-90bc-49ba-906a-66df0d717cb7/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>不过在公司层面上，英伟达和英特尔在过去曾有过漫长的竞争历史。在 2005 年，英特尔曾考虑以 200 亿美元的价格收购英伟达。2006 年，英特尔收回了给英伟达的 x86 交叉授权、总线授权。英伟达因此把英特尔告上法庭，最终以英特尔花费 15 亿美元专利费和解作为了结。</p>\n  <p>在本次合作中，成为重要股东的英伟达将再次获得多年来梦寐以求的 x86 授权。</p>\n  <p>人们猜测，除了声明中宣布的内容，英伟达应该也希望能够使用英特尔的先进制程芯片代工业务。目前，英伟达的 GPU 生产基本依赖于台积电。</p>\n  <p>不过在电话会议中，黄仁勋和陈立武都没有直接回答这个问题。陈立武表示，此次合作的宣布更像是一个「产品合作声明」，并指出英特尔将继续推进自身芯片的研发，两家公司将在稍后决定英特尔是否向英伟达提供这些服务。黄仁勋则强调了英伟达与台积电的合作关系。</p>\n  <p>对于人们感兴趣的超级 SoC 芯片，黄仁勋表示：「我们将打造革命性的产品，此前从未有过类似的产品。我们所有参与研发的人都对此非常兴奋，参与研发的架构师也同样如此。我们期待着随着时间的推移，向大家分享更多相关信息。」</p>\n  <p><sup>参考内容：</sup></p>\n  <p><sup>https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products</sup></p>\n  <p><sup>https://newsroom.intel.com/artificial-intelligence/intel-and-nvidia-to-jointly-develop-ai-infrastructure-and-personal-computing-products</sup></p>\n  <p><sup>https://www.tomshardware.com/pc-components/cpus/nvidia-and-intel-announce-jointly-developed-intel-x86-rtx-socs-for-pcs-with-nvidia-graphics-also-custom-nvidia-data-center-x86-processors-nvidia-buys-usd5-billion-in-intel-stock-in-seismic-deal</sup></p>\n </body>\n</html>",
+  "aiSummary": "英伟达 50 亿美元入股英特尔，双方将战略合作开发定制数据中心 CPU 及 PC 端 CPU+GPU 集成 SoC。",
+  "oneSentenceSummary": "英伟达 50 亿美元入股英特尔，双方将战略合作开发定制数据中心 CPU 及 PC 端 CPU+GPU 集成 SoC。",
+  "summary": "本文详细报道了英伟达斥资 50 亿美元入股英特尔并达成长期战略合作的消息。双方将共同开发多代定制数据中心和 PC 产品，旨在结合英伟达的 AI 和加速计算优势与英特尔的 CPU 及 x86 生态系统，并通过 NVIDIA NVLink 实现架构连接。具体而言，英特尔将为英伟达的 AI 基础设施平台定制 x86 CPU，并在个人计算领域推出集成 NVIDIA RTX GPU 芯片组的 x86 系统级芯片（SoC）。受此消息影响，两公司股价均大幅上涨。英伟达 CEO 黄仁勋强调，此举将带来每年 250 亿至 500 亿美元的商机，并有望在个人设备市场占据更大份额。文章还提及了两公司过往的竞争历史以及对英特尔代工服务的猜测，但该问题未获直接回应。",
+  "mainPoints": [
+    {
+      "point": "英伟达与英特尔达成战略合作，共同开发定制芯片产品。",
+      "explanation": "双方将结合英伟达的 AI 计算优势与英特尔的 x86 生态，通过 NVLink 技术，为数据中心和 PC 市场提供顶尖的定制化解决方案。"
+    },
+    {
+      "point": "英特尔将推出集成 CPU 与 NVIDIA RTX GPU 的 x86 系统级芯片（SoC）。",
+      "explanation": "这款创新的 SoC 瞄准个人计算市场，有望显著提升笔记本电脑等设备的集成性能和市场竞争力，为英伟达带来巨大商机。"
+    },
+    {
+      "point": "英特尔将为英伟达 AI 基础设施平台定制 x86 CPU。",
+      "explanation": "此举旨在优化英伟达 AI 计算架构，通过深度集成定制 CPU，提升数据中心 AI 解决方案的整体性能和效率。"
+    },
+    {
+      "point": "此次合作有望带来每年 250 亿至 500 亿美元的巨大商机。",
+      "explanation": "黄仁勋认为，通过扩展架构和占据个人设备市场更大份额，此次合作将显著提升两公司的市场潜力和营收。"
+    }
+  ],
+  "keyQuotes": [
+    "他们共同宣布，要把电脑上的 CPU 和 GPU 合成为超级 SoC。",
+    "我们现在正在开发一款系统级芯片，将 CPU、GPU 融合成一个巨大的 SoC，这将成为世界上前所未有的新型集成笔记本电脑。",
+    "黄仁勋估计，这笔交易意味着「每年 250 亿至 500 亿美元的商机」。",
+    "我们将打造革命性的产品，此前从未有过类似的产品。"
+  ],
+  "tags": [
+    "芯片产业",
+    "战略合作",
+    "商业投资",
+    "CPU",
+    "GPU"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1351,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758248070000,
+  "publishDateStr": "2025-09-19",
+  "publishDateTimeStr": "2025-09-19 02:14:30"
+}

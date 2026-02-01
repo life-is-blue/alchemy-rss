@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4450e9",
+  "title": "ICCV 2025 | HERMES：首个统一 3D 场景理解与生成的世界模型 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-14-4",
+  "date": "2025-08-14 05:13:45",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cc19a1f2-ecf8-4509-5cbd-53dcbb57f000/public\" data-ratio=\"0.5703703703703704\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503474619\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/aecba765-0793-46e1-8d86-d97c2e49d8d5/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>本文第一作者周鑫、共同第一作者梁定康，均为华中科技大学博士生，导师为白翔教授。合作者包括华中科技大学涂思凡，旷视科技丁宜康，迈驰智行陈习武、谭飞杨，香港大学赵恒爽助理教授。</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250814060944_ad8f3e\" data-ratio=\"0.8870192307692307\" data-s=\"300,640\" data-type=\"png\" data-w=\"832\" type=\"block\" data-imgfileid=\"503501392\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/688f3624-d1c0-4468-b78e-e75ad9dc1c3c/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在复杂的城市场景中，HERMES 不仅能准确预测未来三秒的车辆与环境动态（如红圈中标注的货车），还能对当前场景进行深度理解和问答（如准确识别出 “星巴克” 并描述路况）。</p>\n  <section data-pm-slice=\"1 4 []\">\n   <img data-src=\"https://image.jido.dev/20250814060944_d438dd\" data-ratio=\"0.25240384615384615\" data-s=\"300,640\" data-type=\"png\" data-w=\"832\" type=\"block\" data-imgfileid=\"503501394\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0003651f-cac0-4e2b-8b71-1e8727cd1cce/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation&nbsp;</p>\n   </li>\n   <li>\n    <p>论文地址：https://arxiv.org/abs/2501.14729</p>\n   </li>\n   <li>\n    <p>代码地址：https://github.com/LMD0311/HERMES&nbsp;</p>\n   </li>\n   <li>\n    <p>项目主页：https://LMD0311.github.io/HERMES/</p>\n   </li>\n  </ul>\n  <p><strong>研究背景与动机</strong></p>\n  <p>近年来，自动驾驶技术取得了令人瞩目的进展。要让智能汽车安全高效地行驶在复杂的真实道路上，车辆必须具备两大核心能力：<strong>对当前环境的深刻理解</strong>（例如识别交通参与者、理解交通规则、推理场景语义）以及<strong>对未来场景的准确预测</strong>（如预测行人、车辆的运动，提前规避风险）。</p>\n  <p>目前，学术界和工业界的主流方案往往将 “理解” 和 “生成” 分开处理：</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250814060944_536915\" data-ratio=\"0.34134615384615385\" data-s=\"300,640\" data-type=\"png\" data-w=\"832\" type=\"block\" data-imgfileid=\"503501393\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/1c304f76-be83-4e2e-8e45-a0c1547d828d/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><strong>世界模型</strong>（Driving World Model, DWM）侧重于未来场景的生成与预测，但缺乏对当前环境的细致语义理解，难以回答 “现在是什么情况？”、“驾驶员该如何决策？” 等问题。</p>\n   </li>\n   <li>\n    <p><strong>大语言模型</strong>（LLM）及<strong>视觉 - 语言模型</strong>（VLM）则在场景理解、问答和描述方面表现优异，但通常只能 “看懂”，却难以 “想象” 未来场景的演化。</p>\n   </li>\n  </ul>\n  <p>然而，现实中的自动驾驶决策，恰恰需要这两种能力的深度融合。例如，车辆不仅要能描述 “前方有行人正在通过斑马线”，还要能预测 “3 秒后这位行人将到达路中央，需提前减速”。&nbsp;</p>\n  <p>构建这样一个统一的模型面临着诸多挑战：</p>\n  <p>首先，如何将多达六路的高分辨率环视图像高效地输入给有 token 长度限制的 LLM，并保持空间信息不失真？</p>\n  <p>其次，如何在一个模型内，让 “理解” 和 “生成” 这两个看似独立的任务能够相互促进，而非相互干扰？如何将强大的世界知识与前瞻性的场景预测无缝集成到一个统一的框架中，成为亟需突破的难点。</p>\n  <p><strong>方法：HERMES 的统一框架</strong></p>\n  <p>面对上述挑战，HERMES 提出了一个统一框架，其核心设计思想是通过一个共享的 LLM，同时驱动理解与生成两大任务。</p>\n  <p><strong>HERMES 的核心设计</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250814060944_702af0\" data-ratio=\"0.6111111111111112\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503501398\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/de73e505-2577-4fad-b3e1-b2062581801d/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>鸟瞰图（BEV）特征统一空间</strong></p>\n  <p>HERMES 采用 Bird’s-Eye View（BEV，鸟瞰图）作为统一的场景表达。它首先通过一个 BEV Tokenizer 将六路环视图像高效地编码并投影到一个紧凑的俯视视角表征中。这种做法不仅有效解决了 LLM 输入长度的限制，更重要的是保留了多视图图像之间的精确空间几何关系和丰富的语义细节。无论后续任务是理解还是生成，模型都能在同一套高质量的 BEV 特征空间中自由切换，为后续的统一处理奠定了坚实基础。</p>\n  <p><strong>世界查询与 “当前 - 未来” 连接</strong></p>\n  <p>为了打破理解与生成之间的壁垒，HERMES 引入了世界查询（World Queries）机制。这是一组从 BEV 特征中通过自适应采样（如最大池化）提取出的、代表场景核心信息的可学习 Token。其工作流程如下：</p>\n  <p><strong>1. 知识注入</strong>：将 BEV 特征通过自适应采样（如最大池化）转化为一组表达世界知识的查询向量，再把世界查询与 BEV 特征、用户文本指令一同被送入 LLM。在 LLM 处理语言理解任务（如回答问题）的过程中，世界查询通过因果注意力机制（causal attention）吸收和编码了关于当前场景的丰富世界知识和上下文信息。</p>\n  <p><strong>2. 知识传递</strong>：经过 LLM 处理后，这些富含知识的世界查询被一个 “当前 - 未来” 连接模块（Current to Future Link）所使用。该模块通过交叉注意力将世界查询中蕴含的 “理解” 成果，有效地注入到对未来场景的预测中，引导模型生成未来多帧的 BEV 特征。</p>\n  <p><strong>3. 统一输出</strong>：最终，一个共享的渲染器（Shared Render）将当前和未来的 BEV 特征解码为 3D 点云序列，同时完成对当前场景的理解和对未来场景的生成。</p>\n  <p><strong>联合训练与优化</strong></p>\n  <p>HERMES 的训练过程同样体现了其统一性。模型通过两个目标进行联合优化：</p>\n  <p><strong>1. 语言建模损失</strong>：采用标准的 Next Token Prediction 损失函数，优化模型在场景理解、问答和描述任务上的能力。</p>\n  <p><strong>2. 点云生成损失</strong>：采用 L1 损失函数，监督模型生成的当前及未来点云与真实点云之间的差异，优化生成精度。</p>\n  <p>通过这种端到端的联合训练，HERMES 得以在两个任务之间找到最佳平衡点，实现性能的协同提升。</p>\n  <p><strong>实验结果与可视化分析</strong></p>\n  <p><strong>多任务对比实验</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250814060944_f9fa13\" data-ratio=\"0.4212962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503501399\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/1a1e24be-a564-4c51-8415-265299c93f6b/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>HERMES 在 nuScenes、OmniDrive-nuScenes 数据集上，评测了场景理解和未来生成两大任务。</p>\n  <ul>\n   <li>\n    <p>在未来生成任务上，Chamfer Distance 显著优于 ViDAR，3 秒未来点云误差降低 32.4%，仅用当前帧即可实现更高精度的未来预测。与同类模型相比，HERMES 无需历史序列，推理更高效，泛化能力更强。</p>\n   </li>\n   <li>\n    <p>在场景描述、视觉问答等理解任务上，HERMES 在 CIDEr、METEOR、ROUGE 等主流自然语言生成指标上超越了 OmniDrive 等理解专用模型，CIDEr 提升 8%。</p>\n   </li>\n   <li>\n    <p>HERMES 与 “分离式理解 + 生成” 模型（即简单共享特征，但理解和生成模块独立）对比，生成精度提升显著，理解能力无损，充分验证了统一建模的有效性与优越性。</p>\n   </li>\n  </ul>\n  <p><strong>可视化</strong></p>\n  <p>HERMES 不仅能够生成时序连贯且几何精确的未来点云，还能对驾驶场景的细节进行精准描述。无论是预测动态物体的移动，还是识别路边的商家，HERMES 都展现出强大的综合能力。更多可视化结果请访问项目主页。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250814060944_d69956\" data-ratio=\"0.5527777777777778\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503501400\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/437274b9-a985-4849-8074-5d9b523667fd/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>总结与未来展望</strong></p>\n  <p>HERMES 为自动驾驶世界模型提供了一个简洁、有效且统一的新范式。它通过利用 BEV 表征和世界查询，成功弥合了 3D 场景理解与未来生成之间的鸿沟，为开发更智能、更可靠的自动驾驶系统迈出了坚实的一步。</p>\n  <p>未来，期望在此框架下进一步探索更复杂的感知任务，向着能够全面认知物理世界的通用驾驶大模型的目标不断迈进。</p>\n </body>\n</html>",
+  "aiSummary": "HERMES 是首个统一 3D 场景理解与未来生成能力的自动驾驶世界模型，通过 BEV 和世界查询实现多任务协同。",
+  "oneSentenceSummary": "HERMES 是首个统一 3D 场景理解与未来生成能力的自动驾驶世界模型，通过 BEV 和世界查询实现多任务协同。",
+  "summary": "文章详细介绍了 HERMES，一个旨在统一自动驾驶中 3D 场景理解与未来场景生成的 AI 世界模型。现有方案通常将理解与生成分开处理，导致难以应对复杂决策需求。HERMES 通过共享的大语言模型、统一的鸟瞰图（BEV）特征空间和创新的世界查询机制，实现了对当前环境的深度理解和对未来三秒动态的准确预测。模型采用联合训练，结合语言建模和点云生成损失，在多任务对比实验中表现优异，尤其在未来生成任务上显著超越现有模型，并在场景描述和视觉问答上有所提升。该研究为构建更智能、更可靠的自动驾驶系统提供了简洁、有效且统一的新范式。",
+  "mainPoints": [
+    {
+      "point": "HERMES 首次统一了自动驾驶中的 3D 场景理解与未来生成任务",
+      "explanation": "打破了传统理解与生成分离的范式，通过单一模型同时实现对当前环境的深度认知和对未来动态的准确预测，更符合真实驾驶决策需求。"
+    },
+    {
+      "point": "采用 BEV 特征空间和世界查询机制高效处理多路环视图像",
+      "explanation": "BEV 解决了 LLM 输入长度限制并保留空间几何信息；世界查询机制将场景知识注入 LLM，并通过“当前-未来”连接模块引导未来预测，实现理解与生成的协同。"
+    },
+    {
+      "point": "通过联合训练优化模型在理解与生成任务上的协同性能",
+      "explanation": "结合语言建模损失和点云生成损失进行端到端训练，使得模型在未来预测精度和场景描述能力上均超越了专用模型，验证了统一建模的优越性。"
+    }
+  ],
+  "keyQuotes": [
+    "目前，学术界和工业界的主流方案往往将 \"理解\" 和 \"生成\" 分开处理：",
+    "HERMES 提出了一个统一框架，其核心设计思想是通过一个共享的 LLM，同时驱动理解与生成两大任务。",
+    "HERMES 采用 Bird's-Eye View（BEV，鸟瞰图）作为统一的场景表达。",
+    "HERMES 在 nuScenes、OmniDrive-nuScenes 数据集上，评测了场景理解和未来生成两大任务。",
+    "HERMES 为自动驾驶世界模型提供了一个简洁、有效且统一的新范式。"
+  ],
+  "tags": [
+    "自动驾驶",
+    "世界模型",
+    "3D场景理解",
+    "未来预测",
+    "大语言模型"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2236,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755148425000,
+  "publishDateStr": "2025-08-14",
+  "publishDateTimeStr": "2025-08-14 05:13:45"
+}

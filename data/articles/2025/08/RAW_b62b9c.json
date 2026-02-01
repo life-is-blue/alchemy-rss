@@ -1,0 +1,54 @@
+{
+  "id": "RAW_b62b9c",
+  "title": "Qwen 团队开源顶尖图像模型 Qwen-Image",
+  "url": "https://www.infoq.com/news/2025/08/qwen-image-model/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-26 13:00:00",
+  "author": "Anthony Alford",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://qwenlm.github.io/\">Qwen Team</a> recently open sourced <a href=\"https://qwenlm.github.io/blog/qwen-image/\">Qwen-Image</a>, an image foundation model. Qwen-Image supports text-to-image (T2I) generation and text-image-to-image (TI2I) editing tasks, and outperforms other models on a variety of benchmarks.</p>\n   <p>Qwen-Image uses a <a href=\"https://github.com/QwenLM/Qwen2.5-VL\">Qwen2.5-VL</a> for text inputs, a Variational AutoEncoder (VAE) for image inputs, and a Multimodal Diffusion Transformer (MMDiT) for image generation. The combined model \"excels\" at text rendering, including both English and Chinese text. Qwen evaluated the model on a suite of T2I and TI2I benchmarks, including <a href=\"https://arxiv.org/abs/2403.05135\">DPG</a>, <a href=\"https://github.com/djghosh13/geneval\">GenEval</a>, <a href=\"https://huggingface.co/datasets/stepfun-ai/GEdit-Bench\">GEdit</a> and <a href=\"https://arxiv.org/abs/2505.20275\">ImgEdit</a>, where it achieved the highest overall score. On image understanding tasks, while not as good as specially trained models, Qwen-Image has performance \"remarkably close\" to theirs. In addition, Qwen created <a href=\"https://aiarena.alibaba-inc.com/\">AI Arena</a>, a comparison site where human evaluators can rate pairs of generated images. Qwen-Image currently ranks third, in competition with five high quality closed models including GPT Image 1. According to Qwen:</p>\n   <blockquote>\n    <p>Qwen-Image is more than a state-of-the-art image generation model—it represents a paradigm shift in how we conceptualize and build multimodal foundation models. Its contributions extend beyond technical benchmarks, challenging the community to rethink the roles of generative models in perception, interface design, and cognitive modeling...As we continue to scale and refine such systems, the boundary between visual understanding and generation will blur further, paving the way for truly interactive, intuitive, and intelligent multimodal agents.</p>\n   </blockquote>\n   <p>To create the model's training dataset, the Qwen Team \"collected and annotated billions of image-text pairs\" with images from four main categories: nature, design, people, and \"synthetic data.\" Nature images are about 55% of the data. Design, which includes images of paintings, posters, and GUIs, is about 27% of the data and includes many images with \"rich textual elements.\" This initial dataset was heavily filtered to remove low-quality images. They also designed an annotation framework to generate detailed captions and metadata for each image.&nbsp;</p>\n   <p><img alt=\"Qwen-Image Model Architecture\" style=\"width:100%;height:582px;\" data-src=\"https://www.infoq.com/news/2025/08/qwen-image-model/news/2025/08/qwen-image-model/en/resources/1qwen-image-architecture-1755955475018.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/qwen-image-model/en/resources/1qwen-image-architecture-1755955475018.png\" rel=\"share\"></p>\n   <p><em>Qwen-Image Model Architecture. Image Source: <a href=\"https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf\">Qwen-Image Tech Report</a></em></p>\n   <p>The Qwen Team designed a pre-training curriculum with multiple strategies that progressively improved the model's output. The first strategy involved upscaling images from 256x256 to 640x640 then to 1328x1328 pixels. The other strategies involved introducing images containing rendered text, images with a more varied distribution of domains and resolution, and synthetic images with \"surrealistic styles or...extensive textual content.\"</p>\n   <p>Finally the model was post-trained in two stages. First was supervised fine-tuning (SFT) on a dataset with \"meticulous human annotation\" to produce detailed and realistic images. Next was reinforcement learning (RL) using two different policy optimization strategies, where the model produced multiple images for a prompt and human judges picked the best and worst.</p>\n   <p>Hacker News users generally praised the model's performance, comparing it to gpt-image-1. One user said of the release, \"this seems huge.\" Another wrote:</p>\n   <blockquote>\n    <p>Besides style transfer, object additions and removals, text editing, manipulation of human poses, it also supports object detection, semantic segmentation, depth/edge estimation, super-resolution and novel view synthesis (NVS) i.e. synthesizing new perspectives from a base image. It’s quite a smorgasbord! Early results indicate to me that gpt-image-1 has a bit better sharpness and clarity but I’m honestly not sure if OpenAI doesn’t simply do some basic unsharp mask or something as a post-processing step?</p>\n   </blockquote>\n   <p>The <a href=\"https://github.com/QwenLM/Qwen-Image\">Qwen-Image code</a> is available on GitHub and <a href=\"https://huggingface.co/Qwen/Qwen-Image\">model files</a> can be downloaded from Huggingface.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Qwen Team Open Sources State-of-the-Art Image Model Qwen-Image\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Anthony Alford\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/qwen-image-model/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756213200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Qwen 团队开源 Qwen-Image，一款在文本到图像生成、文本图像到图像编辑和多模态理解方面表现卓越的顶尖图像基础模型。",
+  "oneSentenceSummary": "Qwen 团队开源 Qwen-Image，一款在文本到图像生成、文本图像到图像编辑和多模态理解方面表现卓越的顶尖图像基础模型。",
+  "summary": "Qwen 团队已经开源了 Qwen-Image，这是一个先进的图像基础模型，代表了多模态 AI 领域的突破性进展。它支持文本到图像生成 (T2I) 和文本图像到图像编辑 (TI2I)，并在 DPG、GenEval、GEdit 和 ImgEdit 等多个基准测试中展现出先进水平的性能。除了图像生成，它还在目标检测、语义分割和新视角合成等多种图像理解任务中表现出强大的能力。该模型集成了用于文本的 Qwen2.5-VL、用于图像的 VAE 和用于生成的多模态扩散 Transformer (MMDiT)，尤其擅长文本生成效果。其训练过程涉及数十亿个经过精心标注的图像-文本对，并采用了多阶段课程，包括渐进式放大、监督微调和强化学习。Qwen-Image 在人工评估的 AI 竞技场中名列前茅，是对不断发展的多模态 AI 格局的重大贡献。",
+  "mainPoints": [
+    {
+      "point": "Qwen-Image 在文本到图像生成和文本图像到图像编辑方面均达到顶尖水平。",
+      "explanation": "该模型在多个基准测试中超越了竞争对手，并在人工评估中名列前茅，展示了其在根据文本提示生成和编辑图像方面的卓越能力。"
+    },
+    {
+      "point": "该模型采用了复杂的多模态架构和多阶段训练流程。",
+      "explanation": "通过结合 Qwen2.5-VL、VAE 和 MMDiT，以及包含数十亿带注释图像的数据集和渐进式预训练，Qwen-Image 实现了先进的功能和强大的性能。"
+    },
+    {
+      "point": "Qwen-Image 是开源的，从而促进了 AI 社区更广泛的创新和应用。",
+      "explanation": "在 GitHub 和 Hugging Face 上的可用性简化了开发人员和研究人员利用、构建和集成高级图像生成和编辑功能的流程。"
+    }
+  ],
+  "keyQuotes": [
+    "Qwen-Image 支持文本到图像生成 (T2I) 和文本图像到图像编辑 (TI2I) 任务，并在各种基准测试中优于其他模型。",
+    "Qwen-Image 不仅仅是一个顶尖的图像生成模型，它代表了我们在概念化和构建多模态基础模型方面的一次范式转变。",
+    "随着我们不断扩展和完善这些系统，视觉理解和生成之间的界限将进一步模糊，为真正互动、直观和智能的多模态代理铺平道路。",
+    "除了风格迁移、对象添加和移除、文本编辑、人体姿势操作之外，它还支持目标检测、语义分割、深度 / 边缘估计、超分辨率和新视角合成 (NVS)，即从基础图像合成新视角。"
+  ],
+  "tags": [
+    "图像生成",
+    "图像编辑",
+    "多模态 AI",
+    "计算机视觉",
+    "Qwen-Image"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 536,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756213200000,
+  "publishDateStr": "2025-08-26",
+  "publishDateTimeStr": "2025-08-26 13:00:00"
+}

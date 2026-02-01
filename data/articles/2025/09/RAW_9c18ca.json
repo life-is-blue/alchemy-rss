@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9c18ca",
+  "title": "我们正式发布：Qwen3-Next-80B-A3B 双模型！",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247498180&idx=1&sn=572b3e6a81322c4f9f822545c9fc8e24",
+  "date": "2025-09-11 17:51:00",
+  "author": "通义大模型",
+  "siteName": "通义大模型",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"background-color: inherit; font-size: 1rem;\">📢 如果你用大模型时总在纠结“效果好但太贵” or “便宜但太卡”…</span><span></span></p>\n  <p>可以试试我们刚发布的 Qwen3-Next-80B-A3B，包含两个版本：</p>\n  <p>🔹 Qwen3-Next-80B-A3B-Instruct —— 更擅长理解和执行指令</p>\n  <p>🔹 Qwen3-Next-80B-A3B-Thinking —— 更擅长多步推理和深度思考</p>\n  <p>⚡️ 核心技术创新</p>\n  <p>1️⃣ 【混合动力引擎】75%高效 + 25%精准 = 长文处理更稳更快</p>\n  <p>经过多次实验，我们发现这个比例在速度和效果之间找到了一个比较好的平衡点。</p>\n  <p>🔹 75%，用Gated DeltaNet（线性注意力）：处理32K、64K、甚至256K的超长文本时，速度飞快，内存占用线性增长，绝不“越长越卡”。</p>\n  <p>🔹 25%，用Gated Attention（门控注意力）：负责精准召回关键信息，确保模型“记得住重点”，不会在长文中迷失。</p>\n  <p>2️⃣ 【极致省钱架构】80B总参，推理时只用约3B</p>\n  <p>我们希望大家在享受大模型能力的同时，无需为用不到的算力买单。</p>\n  <p>为了让大模型在推理时更“轻便”，我们调整了MoE结构：</p>\n  <p>🔹 总共准备了 512个专家，覆盖各种知识和技能。</p>\n  <p>🔹 但每次处理请求时，只会动态选择最相关的10个专家 + 1个共享专家 来工作。</p>\n  <p>🔹 虽然模型总参数是80B，但实际参与计算的只有大约3B，算力利用率大约是3.7%。</p>\n  <p>3️⃣ 【预训练加速机制】一次多猜几个字，长文生成更快</p>\n  <p>我们做了一个小改动：在模型预训练阶段，就教它一次预测多个token，这个技术叫 MTP。</p>\n  <p>🔹 不是外挂的加速工具，而是模型“天生”就会的技能。</p>\n  <p>🔹 在生成长文本（比如32K以上）时，显著减少推理步数，实测吞吐量比Qwen3-32B提升了10倍+。</p>\n  <p>🎯 适合场景</p>\n  <p>🔹 要处理很长的输入文本（KV Cache固定，不会爆显存）</p>\n  <p>🔹 对推理速度和稳定性要求高（MTP加速 + 高接受率）</p>\n  <p>🔹 希望用大模型容量，但不想每次推理都“全功率运行”（80B总参，3B激活）</p>\n  <p>🔹 需要指令响应 or 深度推理能力（双版本针对性优化）</p>\n  <p>支持多端体验（链接见评论区）</p>\n  <p>🔹 阿里云百炼（API调用）</p>\n  <p>🔹 GitHub / 魔搭 / Hugging Face（开源模型）</p>\n  <p>🔹 QwenChat 网页版（在线即用）</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=be3215ce&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FkfTykfMJicWNoUu6159TCRMepxB79yltagbicjibnOibd5YDTpvJQLVbQJPPpwibITdIlILFVC9Mvck31xtibZG1NfrA%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <div id=\"js_image_content\" class=\"image_content \">\n   <h1 class=\"rich_media_title \">我们正式发布：Qwen3-Next-80B-A3B 双模型！</h1>\n   <p id=\"js_image_desc\" class=\"share_notice js_underline_content \"></p>\n   <div id=\"js_shoptag_area\" class=\"wx_shoptag_area \"></div>\n   <div id=\"js_shopprofile_area\" class=\"wx_shopprofile_area \"></div>\n   <!---->\n   <div id=\"js_article_area\" class=\"wx_live_area \"></div>\n   <!---->\n   <!---->\n   <!---->\n   <!---->\n   <!---->\n   <!---->\n   <!---->\n   <!---->\n   <!---->\n   <div class=\"rich_media_tool \">\n    <div class=\"rich_media_info weui-flex policy_tips js_ad_policy_tips tips_global_primary claim_source_block \">\n     <!---->\n     <!---->\n    </div>\n   </div>\n   <div id=\"js_end_poi_area\" class=\"end_poi_area \"></div>\n   <div id=\"js_publish_source\" class=\"publish_source \"></div>\n  </div>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=193dca98&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNoUu6159TCRMepxB79yltaDUl3NOoN8hfYVyv2luIHPSiaEXmyYI21PiaIAibPSZ55EwDkn2USRycqw%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=0f4601d3&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPZb1vKxdnT9qnWIlpwUJibVPpMoTmpjlb11Q3FyUfoE5IAC9L0r745kibcK1YCz1mjVZPAfgnBBSQA%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=fb225987&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPZb1vKxdnT9qnWIlpwUJibVibPHGfeYIzq3TAISdrJy19dxHSiaNRLXzfAZApNNPp7m3Jod4Wt7KZYw%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7c0f4c06&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNoUu6159TCRMepxB79ylta2pSNTtTwAjs8rDfXSkhKwiboxsW0fdRiaaPMzwfER16ibeRNr5RHicJEsQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=d73416dc&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWNoUu6159TCRMepxB79yltaRYXt16IlibNlT4rBe4oDuIjupTAJmwbTKagkLqu4ZHqA1EO9d4X8HSQ%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "通义大模型发布 Qwen3-Next-80B-A3B 双模型，通过创新架构提升长文本处理效率和推理成本效益。",
+  "oneSentenceSummary": "通义大模型发布 Qwen3-Next-80B-A3B 双模型，通过创新架构提升长文本处理效率和推理成本效益。",
+  "summary": "文章宣布了通义大模型 Qwen3-Next-80B-A3B 双模型的正式发布，包括指令理解型和多步推理型两个版本。核心技术创新包括：采用 Gated DeltaNet 与 Gated Attention 结合的“混合动力引擎”，实现长文本处理的速度与精度平衡，确保在超长文本中不失焦；通过调整 MoE 结构实现“极致省钱架构”，即 80B 总参数模型在推理时仅动态激活约 3B 参数，大幅降低算力成本；以及“预训练加速机制”（MTP），在预训练阶段使模型一次预测多个 token，显著提升长文本生成吞吐量。这些创新使得模型特别适用于长文本处理、高推理速度和成本效益敏感的场景。文章最后提供了阿里云百炼、GitHub、魔搭、Hugging Face 及 QwenChat 网页版等多种体验和获取方式。",
+  "mainPoints": [
+    {
+      "point": "混合动力引擎优化长文本处理效率与精度",
+      "explanation": "通过结合线性注意力（Gated DeltaNet）和门控注意力（Gated Attention），模型在处理超长文本时能保持高速和低内存占用，同时确保关键信息精准召回。"
+    },
+    {
+      "point": "极致省钱 MoE 架构实现推理成本大幅降低",
+      "explanation": "模型总参数 80B，但在推理时仅动态激活约 3B 参数，显著提升算力利用率，降低用户使用成本，同时保持大模型能力。"
+    },
+    {
+      "point": "预训练加速机制（MTP）显著提升长文本生成速度",
+      "explanation": "在模型预训练阶段引入多 token 预测技术，使模型“天生”具备一次生成多个 token 的能力，实测长文本吞吐量提升 10 倍以上。"
+    }
+  ],
+  "keyQuotes": [
+    "75%，用 Gated DeltaNet（线性注意力）：处理 32K、64K、甚至 256K 的超长文本时，速度飞快，内存占用线性增长，绝不\"越长越卡\"。",
+    "25%，用 Gated Attention（门控注意力）：负责精准召回关键信息，确保模型\"记得住重点\"，不会在长文中迷失。",
+    "虽然模型总参数是 80B，但实际参与计算的只有大约 3B，算力利用率大约是 3.7%。",
+    "在模型预训练阶段，就教它一次预测多个 token，这个技术叫 MTP。",
+    "在生成长文本（比如 32K 以上）时，显著减少推理步数，实测吞吐量比 Qwen3-32B 提升了 10 倍+。"
+  ],
+  "tags": [
+    "大语言模型",
+    "通义千问",
+    "模型架构",
+    "长文本处理",
+    "MoE"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 821,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_2ce88a",
+  "sourceName": "通义大模型",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757613060000,
+  "publishDateStr": "2025-09-11",
+  "publishDateTimeStr": "2025-09-11 17:51:00"
+}

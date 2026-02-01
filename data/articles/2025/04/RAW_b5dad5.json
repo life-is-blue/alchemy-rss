@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b5dad5",
+  "title": "Mezzalira 在 QCon 伦敦的演讲：微前端的设计、组织优势与部署",
+  "url": "https://www.infoq.com/news/2025/04/microfrontend-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-30 00:00:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p style=\"text-align: justify;\">During his <a href=\"https://qconlondon.com/presentation/apr2025/ideal-micro-frontends-platform\">QCon London presentation</a>, <a href=\"https://uk.linkedin.com/in/lucamezzalira\">Luca Mezzalira</a>, principal architect at AWS, shared his experience in building the ideal micro frontend platform. He disclosed the recipe for determining if micro frontends are right for your company, as well as the core principles of creating the perfect architecture for your use case, and also provided deployment strategies for distributed architectures.</p>\n   <p>He began his presentation by recalling how he first conceptualised micro-frontends while working on a sports streaming service, emphasising the developer’s reluctance (<em>\"Does this guy know what he’s talking about?\"</em>) when he presented them with the definition:</p>\n   <blockquote>\n    <p><strong>Mezzalira</strong>: Micro-frontends are the technical representation of a business subdomain. They allow independent implementation with the same or different technology.</p>\n    <p>Finally, they should minimise the code shared and owned by other subdomains owned by a single team.</p>\n   </blockquote>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/microfrontend-best-practices/news/2025/04/microfrontend-best-practices/en/resources/11image3-1745990263430.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/microfrontend-best-practices/en/resources/11image3-1745990263430.png\" rel=\"share\">Next, he introduced a set of heuristics to ensure that developers remain in the microfrontends frame and to differentiate it from a component. While components expose numerous properties for reuse and are controlled by their container, microfrontends encapsulate their domain knowledge and state, offering a minimal API to optimise for team autonomy rather than reusability.</p>\n   <blockquote>\n    <p><strong>Neil Ford</strong>: <em>Reuse is a form of coupling</em></p>\n   </blockquote>\n   <p>Heuristics:</p>\n   <ol>\n    <li>Reduce APIs that are exposed to the container (typically having 1-2 APIs or properties maximum)</li>\n    <li>Microfrontends are context-aware (the state lives inside the microfrontend, not outside it)</li>\n    <li>Don't optimise for reusability at all costs (the goal is fast flow, not reusability)</li>\n    <li>They are more coarse-grained than components (<em>\"if you have 25 runtime microfrontends, you're likely dealing with a distributed monolith\"</em>)</li>\n   </ol>\n   <p style=\"text-align: justify;\">He emphasised that microfrontends evolve with the business itself ( \"<em>… [microfrontend] boundaries are not forever\")</em>, adapting to the structural changes. Mezzalira pointed to <a href=\"https://en.wikipedia.org/wiki/Conway%27s_law\">Conway’s Law</a> and <a href=\"https://teamtopologies.com/\">team topologies</a> to underscore the changes occurring in organisations, transitioning from hierarchical to more distributed and autonomous units. The organisational benefits of a well-implemented microfrontend include incremental upgrades, faster feedback loops for critical features, reduced team cognitive load, and the ability to scale both technology and organisation in harmony.</p>\n   <p>To guide the developers' design decisions, he presented his decision framework:</p>\n   <ol>\n    <li><strong>Identify</strong>: How to split the frontend - choosing between horizontal split (by UI sections like header, product details) or vertical split (by pages or groups of pages)</li>\n    <li><strong>Compose</strong>: Deciding between client-side composition (using an application shell) or server-side composition (composing rendered fragments)</li>\n    <li><strong>Routing</strong>: Determining how routing will work - typically handled by the application shell</li>\n    <li><strong>Communicate</strong>: Choosing how microfrontends will communicate with each other (event emitter, custom events, or reactive streams, with event emitter being recommended)</li>\n   </ol>\n   <p style=\"text-align: justify;\">He underscored that these four points are always present in any microfrontend architecture, regardless of whether it uses server-side, client-side, or edge-side rendering. Every team implementing microfrontends must make decisions about these four aspects. However, as we also need to implement them, Mezzalira advised: <em>\"Don't start with technology selection\"</em>—first understand what your architecture needs to express and your specific context constraints. The framework choice should align with your requirements, not dictate them. To further emphasise the importance of choosing technologies wisely, he referred to the <a href=\"https://www.thoughtworks.com/radar/techniques/micro-frontend-anarchy\">microfrontend anarchy antipattern</a> coined by Thoughtworks in their Technology Radar.</p>\n   <blockquote>\n    <p><strong>Mezzalira</strong>: <em>\"It's not the framework that you need to select, it's the context that you need to understand.\"</em></p>\n   </blockquote>\n   <p style=\"text-align: justify;\">The platform team should own the app shell and keep it as vanilla as possible. It should remain context-aware, expose only initial configuration, and handle routing and composition while staying incredibly lightweight. Changes to microfrontends should never require modifications to the shell, as this indicates poorly defined boundaries where domain knowledge is leaking.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/microfrontend-best-practices/news/2025/04/microfrontend-best-practices/en/resources/14image1-1745990263430.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/microfrontend-best-practices/en/resources/14image1-1745990263430.png\" rel=\"share\"></p>\n   <p style=\"text-align: justify;\">Deployments are one of the most crucial aspects to consider when designing a distributed system. Microfrontend deployments should be incremental, frequent, and independent, leveraging discovery services with version management to enable seamless canary releases, targeted rollouts, and instant rollbacks without rebuilding—putting deployment control directly in teams' hands while maintaining user experience consistency. To standardise this approach, he worked together with the owners of the most adopted microfrontend frameworks. The result of their working group was the <a href=\"https://github.com/awslabs/frontend-discovery\">front-end discovery schema</a>, as well as a <a href=\"https://github.com/awslabs/frontend-discovery-service\">front-end discovery service</a>, which enables the use of any continuous integration tool to deploy microfrontends.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/microfrontend-best-practices/news/2025/04/microfrontend-best-practices/en/resources/14image2-1745990263430.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/microfrontend-best-practices/en/resources/14image2-1745990263430.png\" rel=\"share\"></p>\n   <p style=\"text-align: justify;\">Successful microfrontend implementation requires a clear understanding of team ownership boundaries, platform responsibilities, value stream ownership, fast feedback loops, and a decentralised mindset—addressing these aspects prevents the common failures seen even in mature teams attempting this architecture. To conclude, Mezzalira recommended shifting left from the continuous integration pipeline to a place where developers can iterate quickly. Aspects such as performance, footprint, and even security need to be addressed as early as possible.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Mezzalira at QCon London: Micro-Frontends From Design to Organisational Benefits and Deployments\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/microfrontend-best-practices/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1745993160000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 首席架构师 Luca Mezzalira 分享了微前端在架构、组织和部署策略上的最佳实践，以实现独立部署和团队自治。",
+  "oneSentenceSummary": "AWS 首席架构师 Luca Mezzalira 分享了微前端在架构、组织和部署策略上的最佳实践，以实现独立部署和团队自治。",
+  "summary": "本文总结了 AWS 首席架构师 Luca Mezzalira 在 QCon 伦敦关于微前端最佳实践的演讲。文章指出微前端是业务子域的技术体现，旨在实现团队自治。文章概述了一个决策框架，涵盖识别、编排、路由和通信。文章强调增量、频繁和独立的部署，归功于 Mezzalira 率先提出的前端发现模式和服务，该模式和服务有助于实现独立部署和版本管理。文章强调了团队所有权、平台责任和快速反馈环对于成功实施微前端的重要性。",
+  "mainPoints": [
+    {
+      "point": "微前端是业务子域的技术体现，旨在实现团队自治。",
+      "explanation": "微前端架构应反映业务领域划分，每个团队负责独立的子域，减少团队间依赖，从而提高开发效率。"
+    },
+    {
+      "point": "微前端架构设计需要关注四个关键方面：识别、编排、路由和通信。",
+      "explanation": "在设计微前端时，有必要明确前端如何拆分、编排、路由，以及微前端之间如何通信。这些决策直接影响系统可维护性和可扩展性。"
+    },
+    {
+      "point": "微前端部署应该是增量的、频繁的和独立的，支持版本管理和快速回滚，强调自动化和持续交付。",
+      "explanation": "通过使用服务发现和版本控制，微前端可以独立部署和更新，而无需重新构建整个应用程序，从而实现更快的迭代速度和更高的系统可用性。"
+    }
+  ],
+  "keyQuotes": [
+    "微前端是业务子域的技术体现。它们允许使用相同或不同的技术进行独立实现。",
+    "复用是一种耦合形式",
+    "重要的是理解上下文，而非选择哪个框架。"
+  ],
+  "tags": [
+    "微前端",
+    "前端架构",
+    "架构设计",
+    "分布式系统",
+    "团队组织"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 755,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745971200000,
+  "publishDateStr": "2025-04-30",
+  "publishDateTimeStr": "2025-04-30 00:00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_92ceed",
+  "title": "一粒「扣子」，开启了 Agent 的全生命周期进化 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-13-12",
+  "date": "2025-06-13 09:34:35",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>2025 年被很多人称为 Agent 爆发元年，它们可以极大地具像化大模型的能力，并改变 PC、移动等端侧人机交互的范式，尤其是跨场景的多任务自动执行显著提升了操作的便捷性和智能化程度。</p>\n  <p>自年初首个通用 Agent 产品 Manus 出现以来，Agent 受到了前所未有的关注，互联网大厂和大模型初创企业将它作为竞逐的 AI 重心之一，并利用 MCP、A2A 等协议扩展 Agent 的能力边界以及赋能的应用场景。</p>\n  <p>昨日，在火山引擎 Force 2025 大会上，除了最新版本的豆包大模型 1.6 系列之外，Agent 成为另一个焦点。</p>\n  <p>大会开发者主论坛以「基于 AI 云原生的 Agent 开发新范式」为主题，展示了全面升级的「扣子」如何利用 Agent 来重塑生产力。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/44688a57-1933-4d47-95c3-e4b261b24500/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" data-croporisrc=\"https://mmbiz.qpic.cn/sz_mmbiz_jpg/KmXPKA19gWic9azdeeuXskgMJmSdcFrs8uctaRB68EzfIshgjuia9exOCIiczjqLuBYom8PznBfNA75uRtRRQT4Ww/0?wx_fmt=jpeg&amp;from=appmsg\" data-cropselx2=\"578\" data-cropsely2=\"385\" data-imgfileid=\"503489947\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/6623d51b-c2ca-4a5b-aeb7-5ecfcfef8cf1/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 扣子罗盘技术负责人王新盟</sup></p>\n  <p>全新升级后的扣子已经<strong>由原来的 Agent 开发平台进化为了一个「全生命周期平台」</strong>，覆盖了以下四大组成部分：</p>\n  <ul>\n   <li>\n    <p>扣子开发平台，低代码 Agent 开发；</p></li>\n   <li>\n    <p>Eino 框架，开源的大模型应用开发框架，全代码开发；</p></li>\n   <li>\n    <p>扣子罗盘，Agent 效果调优；</p></li>\n   <li>\n    <p>扣子空间，Agent 协作。</p></li>\n  </ul>\n  <p>可以说，更完备的扣子产品矩阵进一步适应大模型时代多样化的 Agent 开发、调优需求，最大可能地提供智能化的体验。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/89a39c92-a6c0-41f1-a9f5-5189996e9500/public\" data-ratio=\"0.4185185185185185\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489948\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/92d0ef90-dcc0-4ca7-8e0c-2376e7245fcd/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>我们接下来一一来看。</p>\n  <p><strong>Agent 终于有了「全生命周期」平台</strong></p>\n  <p>首先是<strong>扣子开发平台</strong>，作为新一代 AI 应用开发平台，旨在让没有任何代码开发经验的人也能快速、低门槛地构建基于大模型的 Agent 或应用，并支持一键发布到飞书、微信公众号、豆包等渠道。</p>\n  <p>总结一波，扣子开发平台从<strong>智能体 IDE、应用 IDE、丰富的插件和工作流模板以及企业级安全能力</strong>四大方面来赋能 Agent 开发体验。</p>\n  <p>其中智能体 IDE 方便开发者高效地开发、调试 Chatbot 类的 Agent，还提供上千个插件供开发者使用，支持搭建工作流并利用基于火山引擎搭建的知识库；同时基于火山方舟平台，支持了业界大多数模型；打通主流发布渠道，尤其是 C 端，比如豆包、飞书、微信、抖音、小程序等渠道，让用户更方便地使用基于扣子搭建出的 Agent。</p>\n  <p>此外，一些开发者仍然希望通过拖拉拽的方式搭建 GUI 形态的应用，针对这种特定的开发需求，2024 年上线的应用 IDE 赋予了大模型的能力。企业级安全与数据保护能力支持私网连接客户的 VPC（虚拟私有云），避免了公网访问带来的一些潜在风险。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4524c71-efd0-43d7-533c-091ae0733900/public\" data-ratio=\"0.75\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489949\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/9ee2fc0a-1c9a-4054-9f0f-0402ce944c13/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>不仅如此，为了达到低门槛、零门槛构建 Agent 的目的，预置的大量 Agent 模板让开发者可以一键复制，快速构建一个成熟可用的 Agent，比如智能客服助手模板、文章转博客模板、智能助教模板，实现了开箱即用。</p>\n  <p>扣子开发平台让零基础开发 Agent 成为了可能，而面对更习惯写代码的开发者，同样推出了一个 <strong>Agent 构建框架 ——Eino，并进行开源</strong>。</p>\n  <p>作为一个用 Go 语言编写的 LLM 应用开发框架，Eino 既从 LangChain 和 LlamaIndex 等开源社区的优秀框架中汲取灵感，又借鉴了实际应用，兼顾简洁性、可扩展性、可靠性与有效性。</p>\n  <p>Eino 的亮点之一在于将 Agent 开发的一些核心模块，比如 Chat Template、Document 解析、Embedding 模型、Retriever 检索等提炼成了一些标准化组件。这样一来，无论是对于开源或闭源模型，还是在代码中处理文档或者向量数据，都可以通过抽象好的统一接口进行调用。</p>\n  <p>同时面对复杂任务拆解和多工具协同，Eino 提供了灵活的编排能力，通过可视化拖拽或者代码开发的方式来轻松编排一个 Agent 流程。此外还支持完善的流处理功能，并提供了极强的工具链。</p>\n  <p>目前，字节内部基于 Eino 开发的系统数量已经超过了 300，在 GitHub 上的星标数量达到了 4.3k，这表明越来越多的内外部开发者都开始对使用该框架开发 Agent 产生了兴趣。以抖音电商为例，基于 Eino 搭建的智能客服工作流程可以让 Agent 代替人工客服，整体效率提升了 50% 以上。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/15b20620-5caa-4f28-51e8-40740da48900/public\" data-ratio=\"0.39537037037037037\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489950\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/7886a45c-6d1a-4b79-b626-df6e7ce54ed3/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>GitHub 地址：https://github.com/cloudwego/eino</p>\n  <p>上面这些内容都是关于 Agent 的搭建，但搭建成功只是完成了第一步，还需要持续的优化迭代以及全生命周期的运用。火山引擎<strong>通过扣子罗盘构建了 Agent 全生命周期体系，贯穿 Agent 开发、效果评测、线上观测和效果优化等四个阶段。</strong></p>\n  <p>其中开发阶段主要涉及撰写和调试 Prompt、搭建工作流（知识库、MCP）， 可以选择以低代码或全代码方式完成；接着进入评测阶段，通过 Agent 的效果量化来判断是否达到了准出标准；在发布上线之后进入第三个阶段 —— 观测，通过实时收集和分析线上运行的数据，让 Agent 从黑盒运行变成透明决策；最后到了线上调优阶段，针对暴露出的每一个问题进行精准的分析与解决。</p>\n  <p>当然，并不是到调优阶段就停止了，相反优化后的 Agent 会重新进入到新一轮的开发、效果评测、线上观测以及效果优化，如此循环往复，达到用户满意为止。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cd854186-b616-4a04-a5f5-77402172be00/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489951\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/bbcd766f-8f23-4b7b-8e5e-d2db8929c0dd/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>再具体到<strong>效果评测</strong>阶段，扣子罗盘在评测流程方面做到了以下四点：</p>\n  <ul>\n   <li>\n    <p>灵活的评测集版本管理，让开发者方便地管理和生成评测集。未来也会预置更多评测集，并开箱即用；</p></li>\n   <li>\n    <p>评测对象支持 Prompt、扣子 Agent，未来还将基于 A2A 协议支持自定义 Agent；</p></li>\n   <li>\n    <p>预置大量开箱即用的评估器，覆盖通用 Agent 评测的各个方面，包括任务完成度评估、正确性评估、工具选择评估以及轨迹评估等，并成为国内首家支持 Agent 轨迹评估的线上商业化平台；</p></li>\n   <li>\n    <p>丰富的评测报告以供直观的查看与分析。</p></li>\n  </ul>\n  <p>到了<strong>线上观测</strong>阶段，则需要一整套的观测体系来洞察 Agent 的运行情况，包括运行性能（token 消耗、请求量和能力）、运行效果以及用户的问题以及分类。综合下来，开发者可以更有针对性地根据用户兴趣来调整 Agent。对于一些细节问题，比如针对线上运行的一些 Bad case，进行问题点定位并展开定向优化。</p>\n  <p>为此，扣子罗盘提供了一整套的 AI Agent 观测功能。在数据上报方面，针对扣子的 Agent 进行提前预置，系统可以自动上报数据，因而可以在罗盘上查看这些 Agent 的所有数据。另外针对全代码开发者自定义的 Agent，同样提供了 SDK，供他们按照协议上报数据。同时针对开发者用得比较多的其他框架（比如 LongChain）也进行适配，支持一键将数据上报至扣子罗盘。</p>\n  <p>不仅如此，火山引擎认为线上运行数据的价值远不止用来观测。在扣子罗盘上，开发者可以根据线上用户的 query 分析与分组，获得用户行为的分析报告；也可以将线上的 query 进行自动评测以获得线上效果的报告。这样一来，开发者可以实时掌握 Agent 线上运行效果的优劣变化，并通过多种方式（比如用户的点踩）来识别 Bad case。</p>\n  <p>当然这些 Bad case 也可以基于预置的评估器来识别，过程中构建 Agent 的 Bad case 集，这些集在经过系统预置的人工标注之后可以沉淀为评测集，为后续的例行迭代和评测提供支持。</p>\n  <p>此外，扣子罗盘还将与火山方舟的 Prompt 优化能力和模型微调能力贯通。王新盟表示，以上这些功能已在本周正式发布上线，并开启了企业灰度测试。总之，有了扣子罗盘，Agent 的迭代与调优进入到了透明可视化时代，告别了「盲人摸象」。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9dd2a502-c28c-42e4-7733-6a4d4a083a00/public\" data-ratio=\"0.3824074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489952\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/b95c14a5-fe4c-4dcc-ad8e-141571005e44/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>最后是<strong>扣子空间</strong>，它是一个通用 AI Agent 平台，今年 4 月首次上线，并拿下了当月国内 AI 产品增速榜的第一。扣子空间并不是一个 Agent，而是一群高质量 Agent 的协同办公场所，集中了精通各项技能的通用实习生以及各行各业的领域专家。在各种 Agent 的协作下，用户可以更高效地解决实际工作任务。</p>\n  <p>利用扣子空间，用户可以分析市场调研报告、选择高考院校和专业，还能够获得专家能力的深度支持。此外通过 MCP 协议来不断地扩展能力边界，比如联动高德生成旅游攻略、联动飞书进行文档撰写等。接下来，火山引擎还将上线更多高质量、覆盖各行各业的专家 Agent。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8b34e7e1-a092-44e6-a6ce-5516a430d000/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489953\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/246d6464-73c2-4e76-96ee-acdcddf64d4c/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>可以预见，未来更加完善的扣子平台将成为大模型时代 Agent 发展的「基础设施」。</p>\n </body>\n</html>",
+  "aiSummary": "火山引擎升级扣子平台，打造 Agent 全生命周期开发与调优体系",
+  "oneSentenceSummary": "火山引擎升级扣子平台，打造 Agent 全生命周期开发与调优体系",
+  "summary": "文章详细介绍了火山引擎在 Force 2025 大会上发布的全新升级「扣子」平台。该平台已从 Agent 开发工具进化为覆盖全生命周期的综合性平台，包括低代码开发平台、开源全代码框架 Eino、效果调优工具扣子罗盘以及 Agent 协作空间。扣子开发平台提供智能体/应用 IDE、插件和模板，降低 Agent 构建门槛；Eino 开源框架面向代码开发者，提供标准化组件和灵活编排能力；扣子罗盘则贯穿 Agent 开发、评测、观测和优化，首次在国内支持 Agent 轨迹评估，实现透明化迭代；扣子空间则提供高质量 Agent 协作环境。升级后的扣子旨在成为大模型时代 Agent 发展的关键基础设施。",
+  "mainPoints": [
+    {
+      "point": "扣子升级为 Agent 全生命周期平台",
+      "explanation": "整合开发、开源框架、效果调优和协作空间，覆盖 Agent 从构建到迭代优化的完整流程，提升开发效率和效果。"
+    },
+    {
+      "point": "推出开源框架 Eino 满足代码开发需求",
+      "explanation": "针对习惯编程的开发者，提供灵活的 Agent 构建框架，借鉴社区优秀经验，实现标准化组件和编排能力。"
+    },
+    {
+      "point": "扣子罗盘实现 Agent 效果透明化迭代",
+      "explanation": "通过效果评测、线上观测和 Bad case 分析，帮助开发者精准优化 Agent，告别“盲人摸象”式的调优。"
+    }
+  ],
+  "keyQuotes": [
+    "全新升级后的扣子已经由原来的 Agent 开发平台进化为了一个「全生命周期平台」",
+    "不仅如此，为了达到低门槛、零门槛构建 Agent 的目的，预置的大量 Agent 模板让开发者可以一键复制，快速构建一个成熟可用的 Agent，比如智能客服助手模板、文章转博客模板、智能助教模板，实现了开箱即用。",
+    "火山引擎通过扣子罗盘构建了 Agent 全生命周期体系，贯穿 Agent 开发、效果评测、线上观测和效果优化等四个阶段。",
+    "有了扣子罗盘，Agent 的迭代与调优进入到了透明可视化时代，告别了「盲人摸象」。",
+    "可以预见，未来更加完善的扣子平台将成为大模型时代 Agent 发展的「基础设施」。"
+  ],
+  "tags": [
+    "AI Agent",
+    "开发平台",
+    "火山引擎",
+    "扣子",
+    "Eino"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 89,
+  "wordCount": 2879,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749807275000,
+  "publishDateStr": "2025-06-13",
+  "publishDateTimeStr": "2025-06-13 09:34:35"
+}

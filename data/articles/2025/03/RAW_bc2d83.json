@@ -1,0 +1,53 @@
+{
+  "id": "RAW_bc2d83",
+  "title": "Uber 通过 Go 语言的基于配置文件的优化 (PGO) 提升性能",
+  "url": "https://www.infoq.com/news/2025/03/uber-performance-golang/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-19 00:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Profile-guided optimization (PGO) has emerged as a powerful technique for improving application performance by using runtime data to inform compiler decisions. In a recent implementation, Uber collaborated with Google to <a href=\"https://www.uber.com/en-AU/blog/automating-efficiency-of-go-programs-with-pgo/\">integrate PGO</a> into Golang, resulting in significant performance improvements and resource savings across their service fleet.</p>\n   <p>PGO takes advantage of actual runtime behavior to make smarter compiler decisions compared to traditional static analysis. By collecting execution profiles during representative runs, PGO identifies hot code paths and optimizes them accordingly through techniques such as:</p>\n   <ul>\n    <li>Intelligent function inlining based on call frequency</li>\n    <li>Improved code and data layout for better locality</li>\n    <li>Enhanced register allocation and instruction scheduling</li>\n    <li>Basic block reordering to optimize execution paths</li>\n   </ul>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/uber-performance-golang/news/2025/03/uber-performance-golang/en/resources/1figure2-17418224827152-1742378497746.jpg\" style=\"width:100%;height:499px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/uber-performance-golang/en/resources/1figure2-17418224827152-1742378497746.jpg\" rel=\"share\">\n   </center>\n   <p style=\"text-align: center\"><small>Uber profiling infrastructure for Go</small></p>\n   <p>The implementation of PGO at Uber encompasses several key phases: profiling, analysis, and recompilation. Initially, runtime profiling data is collected during representative executions of applications. This data is then analyzed to identify optimization opportunities, which are subsequently applied during the recompilation process to produce optimized binaries. While languages like C++, Rust, Java, and Swift have long supported PGO, its integration into Go is relatively recent. Uber collaborated with Google to introduce PGO support in Go, with PGO-driven inlining introduced in version 1.20 and devirtualization optimizations added in version 1.21.</p>\n   <p>To seamlessly incorporate PGO into its continuous optimization framework, Uber established a systematic process:</p>\n   <ol>\n    <li><strong>Daily Profile Collection</strong>: Continuous profiling data is gathered from multiple instances to create representative profiles.</li>\n    <li><strong>Service-Specific Enrollment</strong>: A configuration system enrols specific services for PGO, ensuring targeted optimizations.</li>\n    <li><strong>Continuous Integration (CI) Testing</strong>: The PGO Software Development Kit (SDK) undergoes CI tests to validate changes and maintain stability.</li>\n    <li><strong>Deployment</strong>: Post-validation, PGO-optimized services are deployed into the production environment.</li>\n    <li><strong>Performance Monitoring</strong>: A performance dashboard monitors the impact of PGO on services, facilitating ongoing assessment.</li>\n   </ol>\n   <p>A significant challenge encountered during PGO implementation was the increase in build times, with some services experiencing delays of up to eight times. This was primarily due to the extensive time required to parse profiling data during compilation. To address this, Uber developed a profile preprocessing tool that extracts runtime profiling data, constructs call graphs, and caches this information for use during compilation. This preprocessing significantly reduced build times, making PGO integration more practical for developers.</p>\n   <p>The performance impact of PGO was evaluated using synthetic benchmarks and real-world service assessments. In the case of the widely used third-party JSON library in Go, known as <code>go-json</code>, benchmarks demonstrated that:</p>\n   <ul>\n    <li><strong>30% reduction in instruction Translation Lookaside Buffer (iTLB) misses</strong> for Go’s go-json library.</li>\n    <li><strong>4% performance improvement</strong> through optimized inlining.</li>\n    <li><strong>24,000 fewer CPU cores</strong>&nbsp;are required across Uber’s top services, leading to significant cost savings.</li>\n   </ul>\n   <p>Several other technology companies have embraced Profile-Guided Optimization (PGO) to enhance the performance of their Go applications. <strong><a href=\"https://blog.cloudflare.com/reclaiming-cpu-for-free-with-pgo/\">Cloudflare</a></strong> has integrated PGO into its Go-based services, collecting CPU profiles from production environments to guide compiler optimizations, resulting in reduced CPU usage and improved performance. Similarly, <strong><a href=\"https://docs.datadoghq.com/profiler/guide/save-cpu-in-production-with-go-pgo/?utm_source=chatgpt.com\">Datadog</a></strong> employs PGO to optimize Go applications, achieving up to 14% CPU savings in production environments by leveraging profiling data to inform the Go compiler's optimization decisions. <strong><a href=\"https://grafana.com/blog/2024/03/11/how-to-use-pgo-and-grafana-pyroscope-to-optimize-go-applications/\">Grafana Labs</a></strong> utilizes PGO in conjunction with Grafana Pyroscope, an open-source continuous profiling platform, to optimize Go applications. This integration provides real-time performance analysis, enabling developers to identify inefficiencies and optimize code execution for peak performance.</p>\n   <p>In summary, Uber's integration of Profile-Guided Optimization into its Go programming environment has yielded substantial performance improvements. By systematically collecting profiling data, preprocessing it to reduce build times, and applying targeted compiler optimizations, Uber has enhanced the efficiency of its services. This initiative not only demonstrates the potential of PGO in optimizing resource utilization but also highlights the benefits of collaboration and innovation in software performance engineering.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber Boosted Performance with Go's Profile-Guided Optimization\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/uber-performance-golang/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1742382000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 与 Google 合作，在 Go 语言中实施基于配置文件的优化 (PGO)，显著提升了服务性能，并节省了 24，000 个 CPU 核心。",
+  "oneSentenceSummary": "Uber 与 Google 合作，在 Go 语言中实施基于配置文件的优化 (PGO)，显著提升了服务性能，并节省了 24，000 个 CPU 核心。",
+  "summary": "Uber 与 Google 合作，将基于配置文件的优化 (PGO) 集成到 Go 语言中，显著提升了服务性能并节省了资源。PGO 利用运行时数据来指导编译器决策，采用诸如智能函数内联和优化代码布局等技术。Uber 的 PGO 实施包括性能分析、分析和重新编译阶段。为了解决构建时间增加的问题，Uber 开发了一个 Profile 预处理工具。基准测试表明，PGO 将 Go 语言的 go-json 库的 iTLB 缺失减少了 30%，并在 Uber 的各项服务中节省了 24，000 个 CPU 核心。Cloudflare 和 Datadog 等公司也使用 PGO 来优化 Go 应用。虽然 PGO 提供了显著的优势，但在复杂场景和冷启动应用中仍然存在挑战。",
+  "mainPoints": [
+    {
+      "point": "PGO 通过利用运行时数据进行编译器优化，显著提升性能并节省资源，Uber 节省 24，000 个 CPU 核心的案例充分证明了这一点。",
+      "explanation": "PGO 使用实际的运行时行为，通过智能函数内联和改进的代码/数据布局等技术来优化热代码路径。然而，在复杂场景和冷启动应用中，其有效性可能会受到限制。"
+    },
+    {
+      "point": "Uber 系统地将 PGO 集成到其持续优化框架中。",
+      "explanation": "Uber 建立了每日性能分析收集、特定服务注册、CI 测试和性能监控流程，以确保 PGO 的稳定性和有效性。"
+    },
+    {
+      "point": "Uber 的 Profile 预处理工具有效地减少了 PGO 引起的构建时间增加。",
+      "explanation": "该工具提取运行时性能分析数据，构建调用图，并缓存信息，从而显著减少编译时间，使 PGO 集成更具实用性。"
+    }
+  ],
+  "keyQuotes": [
+    "Uber 的顶级服务所需的 CPU 核心减少了 24，000 个，从而显著节省了成本。",
+    "基于配置文件的优化 (PGO) 已经成为一种强大的技术，通过使用运行时数据来告知编译器决策，从而提高应用程序性能。",
+    "在 PGO 实施过程中遇到的一个重大挑战是构建时间的增加，某些服务的延迟增加了多达八倍。"
+  ],
+  "tags": [
+    "性能优化",
+    "Go 语言",
+    "基于配置文件的优化 (PGO)",
+    "编译优化",
+    "运行时性能分析"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 607,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1742342400000,
+  "publishDateStr": "2025-03-19",
+  "publishDateTimeStr": "2025-03-19 00:00:00"
+}

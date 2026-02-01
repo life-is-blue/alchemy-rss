@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9474f00d",
+  "title": "将你自己的 AI 代理引入 JetBrains IDEs | The JetBrains AI Blog",
+  "url": "https://blog.jetbrains.com/ai/2025/12/bring-your-own-ai-agent-to-jetbrains-ides/",
+  "date": "2025-12-05 12:40:45",
+  "author": "Sergey Ignatov",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hey!</p>\n  <p>Here at JetBrains, we’re always happy to bring our users the best and most popular tools available on the market. This has been true for decades with conventional dev tooling: compilers, debuggers, build tools, etc; in the past several years, we’ve shipped all the newest LLMs in the same manner, and we want the same to happen for AI agents. That’s why this fall we <a href=\"https://blog.jetbrains.com/ai/2025/10/jetbrains-zed-open-interoperability-for-ai-coding-agents-in-your-ide/\">started working</a> on the <a href=\"https://agentclientprotocol.com/\" target=\"_blank\" rel=\"noopener\">Agent Client Protocol</a> (ACP). Today, I’m excited to show a beta version of its support in the <a href=\"https://www.jetbrains.com/idea/nextversion/\" target=\"_blank\" rel=\"noopener\">latest release-candidate versions</a> of our IDEs.</p>\n  <h2 class=\"wp-block-heading\">What is ACP?</h2>\n  <p>The Agent Client Protocol standardizes communication between code IDEs and coding agents, much like LSP did for language servers. Users can choose any agent in the IDE they love, agent developers focus on core features instead of integrations, and IDE authors get new capabilities faster.</p>\n  <p>We believe that a common standard between coding agents and editors is actually a very natural point of separation. Humans and AI are working together in the same environment solving the same problems, so it makes sense for both parties to speak a shared language. Editor vendors and AI-agent developers have different strengths and areas of expertise, and a common standard helps them meet in the middle without getting in each other’s way. Such a protocol provides the core foundation, makes access predictable and streamlining the distribution, that lets everyone move faster.</p>\n  <h2 class=\"wp-block-heading\">Demo</h2>\n  <p>The latest 25.3 release candidate brings the betas ACP support to our unified AI chat. Feel free to use <a href=\"https://agentclientprotocol.com/overview/agents\" target=\"_blank\" rel=\"noopener\">any ACP-compatible agent</a> of your choice in our IDEs. While we’re in beta, we assume that you’ve already logged in to your CLI agent before adding it to the IDE. After that, you just need to adjust a configuration file and you’re good to go.</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <iframe title=\"ACP support in JetBrains IDEs\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/AqGmnmkN2Mc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n   </div>\n  </figure>\n  <p>Read the <a href=\"https://www.jetbrains.com/help/ai-assistant/acp.html\" target=\"_blank\" rel=\"noopener\">documentation</a> to learn more about ACP in our IDEs.</p>\n  <h2 class=\"wp-block-heading\">Current status</h2>\n  <p>We’re shipping the beta version of ACP support in our IDEs and we’ll be happy to hear your feedback. If you’re an agent developer, feel free to join our community and share your ideas about the protocol. We hope to see more agents in our list.</p>\n  <p>Note: AI Chat currently requires you to register and verify your account. We are working to simplify this flow. Within about a month, you should be able to access ACP agents with an option to skip JetBrains AI registration.</p>\n  <h2 class=\"wp-block-heading\">What’s next?</h2>\n  <p>Here are the key directions we’re focusing on next. First, regarding the product’s UX: while applying standards, we are trading off some tailor-made features, and we want to bring some of them back into the protocol. Second, we are beginning work on agent distribution and aim to build a curated registry of ACP-capable agents. Third, we want to reuse the same standard for agents running on remote servers, not only on the local machine. And finally, we want to offer the MCP toolchain we have in IDEs, thereby improving the agents themselves.</p>\n  <h2 class=\"wp-block-heading\">Behind the closed doors</h2>\n  <p>Before we wrap up, I want to share a bit of behind-the-scenes context on how JetBrains came to ACP. Real life is a bit different, and I think it’s always nice to pull back the curtain and show you how it works from the inside. So, here we go.</p>\n  <p>This summer we started working on bringing Junie (it’s a coding agent developed by JetBrains) into the same UI that we had for the AI chat. After some debates, we built a protocol that allowed us to communicate between IDE and local and remote versions of Junie. We were about to publish that work to the internet, but almost at the same time, <a href=\"https://zed.dev/\" target=\"_blank\" rel=\"noopener\">Zed</a> announced its own protocol. We chatted with lovely Zed people and agreed that instead of bringing two competitive standards to the market, we’d join our efforts on building a single one.</p>\n  <p>And so far we are really happy with our choice. From the user perspective, we see plenty of ACP-capable agents now and more to come. Technically, the protocol <a href=\"https://x.com/amateurhuman/status/1986570283684356408\" target=\"_blank\">is easy to implement</a> while providing powerful and flexible UX in the product. From a business standpoint, we now have good relationships with multiple partners. And not the least, personally, I’m really happy to work together with passionate people, it’s always encouraging.</p>\n  <h2 class=\"wp-block-heading\">What our partners are saying</h2>\n  <blockquote class=\"wp-block-quote\">\n   <p>“Developers should be able to use the best AI agent in the workflow that suits them, and ACP makes that possible. Setup was easy and Auggie just works, exactly what every developer wants. ACP is a win for developer choice and a big step toward a more open, agent-driven ecosystem.”</p>\n   <cite>– Chris Kelly, Product, Augment Code</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote\">\n   <p>“In AI coding agents, openness will win when developers can choose the tools that work best for them instead of being locked into a single vendor’s ecosystem. That’s why open protocols like ACP matter. Personally, I have been using PyCharm for over a decade, and at Block we have long been part of the JetBrains community through our Kotlin adoption and ecosystem contributions. ACP lets goose integrate into IntelliJ seamlessly. Developers can bring their own LLM and log in directly without extra authorization overhead. When open source tools like goose and ACP work together, developers get the freedom to choose, and we get to focus on making our agent smarter instead of maintaining IDE-specific code.”</p>\n   <cite>– Douwe Osinga, goose Open Source Lead, Block</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote\">\n   <p>“At Zed, we believe the best things are built together. Collaborating with JetBrains on ACP has felt like we were one team from day one. Driven by a shared commitment to deliver the best experience for our users, we’ve made it possible for developers to use the agents they know and love in their favorite editor. This release brings ACP to an entirely new audience, and I’m excited to see the response as we shape the roadmap together.”</p>\n   <cite>– Ben Brandt, Rust Engineer, Zed Industries</cite>\n  </blockquote>\n  <blockquote class=\"wp-block-quote\">\n   <p>“At Moonshot AI, we’ve always believed that the future of coding agents belongs to developers, not vendors. By integrating with JetBrains via the open ACP protocol, Kimi CLI can now run natively in the IDEs that hundreds of millions of developers already love and trust. No lock-in, no extra authentication dance, no compromise on model choice. This is exactly the kind of open, composable agent ecosystem we want to see win.”</p>\n   <cite>— Richard Chien, Kimi CLI Maintainer, Moonshot AI</cite>\n  </blockquote>\n  <h2 class=\"wp-block-heading\">Thanks</h2>\n  <p>None of this would have been possible without lots of people. Special thanks to Alexey Stukalov, Anna Zhdan, Artem Bukhonov, Ben Brandt, Denis Shiryaev, Franciska Dethlefsen, Stas Erokhin, and all others for their contributions. It’s been a nice journey, and I hope it’s only the beginning.</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/ai/2025/12/grok-models-come-to-the-ai-chat-in-jetbrains-ides/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Grok Models Come to the AI Chat in JetBrains IDEs</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains IDEs 现已支持开放的代理客户端协议 (ACP)，用于标准化 AI 编码代理集成，从而推动开放生态系统的发展。",
+  "oneSentenceSummary": "JetBrains IDEs 现已支持开放的代理客户端协议 (ACP)，用于标准化 AI 编码代理集成，从而推动开放生态系统的发展。",
+  "summary": "JetBrains 宣布在其 IDEs 中对代理客户端协议 (ACP) 提供 Beta 支持，旨在标准化 IDEs 和 AI 编码代理之间的通信。与语言服务器协议 (LSP) 类似，ACP 允许用户集成任何兼容的 AI 代理，使代理开发者能够专注于核心功能，而不是特定于 IDE 的集成。此举措旨在为 AI 编码代理构建一个开放且可互操作的生态系统，为开发者提供更多选择，并加速创新。文章详细介绍了该协议的优势、当前的 Beta 状态、未来的发展方向（如代理分发和远程服务器支持），以及与 Zed 合作建立单一开放标准的历程。合作伙伴的评价强调了开发者自由和开放代理生态系统的重要性。",
+  "mainPoints": [
+    {
+      "point": "ACP 标准化了 IDEs 和 AI 编码代理之间的通信。",
+      "explanation": "该协议允许将各种 AI 代理无缝集成到 JetBrains IDEs 中，类似于 LSP 统一语言服务器的方式，进而促进开放和灵活的开发者生态发展。"
+    },
+    {
+      "point": "JetBrains 和 Zed 之间的合作建立了单一的开放标准。",
+      "explanation": "通过在 ACP 上的共同努力，而不是相互竞争的协议，为整个开发者社区提供了一个统一的基础，从而促进更广泛的采用和创新。"
+    },
+    {
+      "point": "ACP 增强了开发者的选择，并简化了 AI 代理的开发。",
+      "explanation": "用户可以自由选择他们喜欢的代理，而代理开发者可以专注于代理智能，而不是复杂的、特定于 IDE 的集成，从而加速了功能交付。"
+    }
+  ],
+  "keyQuotes": [
+    "代理客户端协议标准化了代码 IDEs 和编码代理之间的通信，就像 LSP 对语言服务器所做的那样。",
+    "我们与 Zed 团队进行了友好的交流，并一致认为，与其将两个相互竞争的标准推向市场，不如共同努力构建一个单一的标准。",
+    "开发者应该能够在适合他们的工作流程中使用最好的 AI 代理，而 ACP 使之成为可能。",
+    "在 AI 编码代理中，当开发者可以选择最适合他们的工具，而不是被锁定在单一供应商的生态系统中时，开放性将获胜。",
+    "通过经由开放的 ACP 协议与 JetBrains 集成，Kimi CLI (命令行界面) 现在可以在数百万开发者已经喜爱和信任的 IDEs 中原生运行。没有锁定，无需额外的身份验证流程，也没有对模型选择的妥协。"
+  ],
+  "tags": [
+    "AI 代理",
+    "互操作性",
+    "JetBrains IDEs",
+    "代理客户端协议 (ACP)",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1115,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764938445000,
+  "publishDateStr": "2025-12-05",
+  "publishDateTimeStr": "2025-12-05 12:40:45"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_19f0971e",
+  "title": "Agent Skills",
+  "url": "https://simonwillison.net/2025/Dec/19/agent-skills/#atom-everything",
+  "date": "2025-12-19 01:09:18",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://agentskills.io/\">Agent Skills</a></strong>. Anthropic have turned their <a href=\"https://simonwillison.net/tags/skills/\">skills mechanism</a> into an \"open standard\", which I guess means it lives in an independent <a href=\"https://github.com/agentskills/agentskills\">agentskills/agentskills</a> GitHub repository now? I wouldn't be surprised to see this end up <a href=\"https://simonwillison.net/2025/Dec/9/agentic-ai-foundation/\">in the AAIF</a>, recently the new home of the MCP specification.</p>\n   <p>The specification itself lives at <a href=\"https://agentskills.io/specification\">agentskills.io/specification</a>, published from <a href=\"https://github.com/agentskills/agentskills/blob/main/docs/specification.mdx\">docs/specification.mdx</a> in the repo.</p>\n   <p>It is a deliciously tiny specification - you can read the entire thing in just a few minutes. It's also quite heavily under-specified - for example, there's a <code>metadata</code> field described like this:</p>\n   <blockquote>\n    <p>Clients can use this to store additional properties not defined by the Agent Skills spec</p>\n    <p>We recommend making your key names reasonably unique to avoid accidental conflicts</p>\n   </blockquote>\n   <p>And an <code>allowed-skills</code> field:</p>\n   <blockquote>\n    <p>Experimental. Support for this field may vary between agent implementations</p>\n    <p>Example:</p>\n    <pre><code>allowed-tools: Bash(git:*) Bash(jq:*) Read\n</code></pre>\n   </blockquote>\n   <p>The Agent Skills homepage promotes adoption by OpenCode, Cursor,Amp, Letta, goose, GitHub, and VS Code. Notably absent is OpenID, who are <a href=\"https://simonwillison.net/2025/Dec/12/openai-skills/\">quietly tinkering with skills</a> but don't appear to have formally announced their support just yet.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9203/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 已将其内部的“技能机制”转变为开放标准“Agent Skills”，旨在增强 AI 代理的互操作性。",
+  "oneSentenceSummary": "Anthropic 已将其内部的“技能机制”转变为开放标准“Agent Skills”，旨在增强 AI 代理的互操作性。",
+  "summary": "本文介绍了 Anthropic 将其内部 AI 代理“技能机制”开源并命名为“Agent Skills”这一独立标准的举措。它指出，这一新标准最终可能会被纳入 AAIF (Agentic AI Foundation)。Agent Skills 规范被强调为极其简洁且易于阅读，但它在某些“规范不完善”的字段上存在不足，例如 `metadata` 和 `allowed-skills`，这些字段可以通过更清晰的定义来改进。文章指出，包括 OpenCode、Cursor、Amp、Letta、Goose、GitHub 和 VS Code 在内的多家公司已经采用了该标准。然而，它明显遗漏了 OpenAI，尽管 OpenAI 已知在秘密研究类似技术，但尚未正式宣布支持。在这种背景下，Agent Skills 被定位为定义 AI 代理能力的基础性、可互操作的框架。",
+  "mainPoints": [
+    {
+      "point": "Agent Skills 是 Anthropic 针对其内部“技能机制”推出的独立开放标准。",
+      "explanation": "这项举措旨在标准化 AI 代理技能定义和互操作性，有可能建立一个通用的行业协议。从内部机制转向开放标准，标志着在 AI 代理生态系统内推动更广泛的采用和协作开发。"
+    },
+    {
+      "point": "Agent Skills 规范简洁，但包含某些定义不明确的字段。",
+      "explanation": "虽然其简洁性有助于快速理解和采用，但 `metadata` 和 `allowed-skills` 等字段缺乏精确定义，可能在实施和生态系统开发过程中导致歧义或兼容性问题。简化性与清晰度之间的平衡对于广泛接受至关重要。"
+    },
+    {
+      "point": "该标准已获得多家公司的支持，促进了一个互联互通的 AI 代理生态系统。",
+      "explanation": "OpenCode、GitHub 和 VS Code 等实体的广泛采用对于 Agent Skills 成为通用行业标准至关重要。这可能会降低开发障碍，加速 AI 代理领域的创新和应用程序开发，从而促进一个更具凝聚力和功能性的生态系统。"
+    }
+  ],
+  "keyQuotes": [
+    "Anthropic 已将其技能机制转变为“开放标准”",
+    "它是一个极其简洁的规范——你只需几分钟就能通读全文。",
+    "Agent Skills 的主页展示了 OpenCode、Cursor、Amp、Letta、Goose、GitHub 和 VS Code 对其的采用。"
+  ],
+  "tags": [
+    "Agent Skills",
+    "Anthropic",
+    "AI Agents",
+    "Open Standard",
+    "Interoperability"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 90,
+  "wordCount": 172,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766106558000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 01:09:18"
+}

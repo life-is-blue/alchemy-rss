@@ -1,0 +1,59 @@
+{
+  "id": "RAW_958185b7",
+  "title": "最新英伟达经济学：每美元性能是 AMD 的 15 倍，“买越多省越多”是真的",
+  "url": "https://www.qbitai.com/2026/01/366378.html",
+  "date": "2026-01-01 04:49:00",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"43\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">为什么AI算力霸主永远是英伟达？</p>\n  <p data-track=\"3\">不算不知道，一算吓一跳：<strong>在英伟达平台每花一美元，获得的性能是AMD的15倍</strong>。</p>\n  <p data-track=\"4\">尽管英伟达卖的更贵，但只要买齐一套，就更省钱。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_3bd27201fef43df9230e068253ddfd59.webp\" data-src=\"https://image.jido.dev/20260101060253_3bd27201fef43df9230e068253ddfd59.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"5\">来自<strong>Signal65</strong>的一份最新详尽报告揭示了这个现实，一定条件下生成同样数量的token，英伟达的成本只有AMD的十五分之一。</p>\n  <p data-track=\"6\">这份报告基于SemiAnalysis Inference MAX的公开基准测试数据，时间跨度从2025年10月到12月，覆盖了从密集模型到前沿MoE推理模型的全场景测试。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_be1a8a572d75d8b0f84ed319b23c513e.webp\" data-src=\"https://image.jido.dev/20260101060253_be1a8a572d75d8b0f84ed319b23c513e.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">黄仁勋的“买的越多，省的越多”原来是真的。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_7a9dbda7754add70ab981005993eef78.webp\" data-src=\"https://image.jido.dev/20260101060253_7a9dbda7754add70ab981005993eef78.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"9\">AI模型正在经历一场架构革命，打开Artificial Analysis排行榜就会发现，智能度排名前十的开源模型清一色都是MoE（Mixture of Experts，专家混合）推理模型。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_57ed308f7a5b75f21f6fadb949f000b4.webp\" data-src=\"https://image.jido.dev/20260101060253_57ed308f7a5b75f21f6fadb949f000b4.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"10\">另一项来自OpenRouter的数据显示，超过50%的token流量正在被路由到推理模型上。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_ef0dcdc95d9a55ff28e568e87fd6bdaf.webp\" data-src=\"https://image.jido.dev/20260101060253_ef0dcdc95d9a55ff28e568e87fd6bdaf.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"11\">MoE架构的核心思路是把模型参数拆分成多个专门化的“专家”子网络，每个token只激活其中一小部分。</p>\n  <p data-track=\"12\">以经典的DeepSeek-R1为例，它拥有6710亿总参数，但每个token只激活370亿——这让它能以更低的计算成本提供前沿级别的智能。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_fe8c8eb4153a9f4f8b83b466fcbf7c53.jpeg\" data-src=\"https://image.jido.dev/20260101060253_fe8c8eb4153a9f4f8b83b466fcbf7c53.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\">问题随之而来。当专家分布在多块GPU上时，GPU之间的通信延迟会导致计算单元空闲等待数据，这些空闲时间直接转化为服务商的成本。</p>\n  <p data-track=\"14\">报告指出，无论是英伟达B200还是AMD MI355X，所有8卡系统在超出单节点规模后都会撞上“扩展天花板”（scaling ceiling）。</p>\n  <p data-track=\"15\">英伟达GB200 NVL72的解法是把72块GPU通过NVLink连接成一个单一域，提供130 TB/s的互联带宽。</p>\n  <p data-track=\"16\">在软件层面，整个系统就像一块巨型GPU一样运作。配合英伟达Dynamo推理框架的分离式预填充-解码调度和动态KV缓存路由，这套架构能够有效突破8卡系统的通信瓶颈。</p>\n  <p data-track=\"18\">报告测试了三类典型模型：模型越复杂，英伟达的优势越明显。</p>\n  <p data-track=\"19\">在密集模型Llama 3.3 70B上，英伟达B200对比AMD MI355X的领先幅度相对温和。</p>\n  <p data-track=\"20\">在基线交互性（30 tokens/sec/user）下，B200的性能约为MI355X的1.8倍；当交互性要求提升到110 tokens/sec/user时，这一差距扩大到6倍以上。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_9aa4bb0597b9dfceb73ce37c87b48f21.webp\" data-src=\"https://image.jido.dev/20260101060253_9aa4bb0597b9dfceb73ce37c87b48f21.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">中等规模的MoE模型GPT-OSS-120B开始让差距变得更加显著。</p>\n  <p data-track=\"22\">这款OpenAI开源模型拥有1170亿总参数，但每个token只激活约51亿参数。在2025年12月的测试数据中，100 tokens/sec/user交互性下B200的性能接近MI355X的3倍。</p>\n  <p data-track=\"23\">在更符合推理模型需求的250 tokens/sec/user条件下，差距扩大到6.6倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_2d362db8f3077c57df37216eb7cf22bd.webp\" data-src=\"https://image.jido.dev/20260101060253_2d362db8f3077c57df37216eb7cf22bd.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\">两个平台的绝对性能相比10月都有显著提升，英伟达的峰值吞吐从约7000 tokens/sec跃升至14000以上，AMD则从约6000提升到8500左右，但相对差距反而拉大了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_3aeffcf426af5d84a83b18e966775ae4.webp\" data-src=\"https://image.jido.dev/20260101060253_3aeffcf426af5d84a83b18e966775ae4.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"25\">真正的分水岭出现在前沿推理模型DeepSeek-R1上。</p>\n  <p data-track=\"26\">这款模型集MoE路由、大参数规模和高强度推理生成于一身，对基础设施的要求极为苛刻。</p>\n  <p data-track=\"27\">测试结果显示：在25 tokens/sec/user交互性下，GB200 NVL72的每GPU性能是H200的10倍、MI325X的16倍；在60 tokens/sec/user下，相比H200的优势扩大到24倍，相比MI355X达到11.5倍；在75 tokens/sec/user下，GB200 NVL72的性能是B200单节点配置的6.5倍，是MI355X的28倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_581112f9297917c8db061f74beac62d6.webp\" data-src=\"https://image.jido.dev/20260101060253_581112f9297917c8db061f74beac62d6.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"28\">更关键的是，GB200 NVL72能够达到竞争平台根本无法企及的水平，在28卡配置下可以输出超过275 tokens/sec/user，而MI355X在相当吞吐水平下的峰值只有75 tokens/sec/user。</p>\n  <p data-track=\"30\">直觉上，性能更强的平台应该更贵。事实也确实如此：根据Oracle Cloud的公开定价，GB200 NVL72的每GPU每小时价格为16美元，MI355X为8.60美元，前者是后者的1.86倍。</p>\n  <p data-track=\"31\">如果参照CoreWeave的定价，GB200 NVL72相比上一代H200的价格也贵了约1.67倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_3ac2ea5bf1e08b17fa4950cc5acde5cb.webp\" data-src=\"https://image.jido.dev/20260101060253_3ac2ea5bf1e08b17fa4950cc5acde5cb.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\">但报告的计算揭示了一个反直觉的结论：</p>\n  <p data-track=\"33\">在25 tokens/sec/user交互性下，GB200 NVL72的性能优势为5.85倍，除以1.86倍的价格溢价，每美元性能仍是MI355X的3.1倍。</p>\n  <p data-track=\"34\">在75 tokens/sec/user交互性下，28倍的性能优势除以1.86倍的价格，每美元性能达到MI355X的15倍，这意味着生成同等数量的token，英伟达平台的成本只有AMD的十五分之一。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_1e4d6da1528274755095d95dd72f3844.webp\" data-src=\"https://image.jido.dev/20260101060253_1e4d6da1528274755095d95dd72f3844.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"35\">与上一代产品的对比同样惊人。</p>\n  <p data-track=\"36\">报告估算在DeepSeek-R1的典型工作负载下，GB200 NVL72相比H200的性能提升约20倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_bc7653b8373859fb5691fce0e374d573.webp\" data-src=\"https://image.jido.dev/20260101060253_bc7653b8373859fb5691fce0e374d573.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"37\">而GB200 NVL72价格仅上涨1.67倍，换算下来每美元性能提升约12倍，单token成本降至H200的十二分之一。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260101060253_4555bfb3aacc395f075f9d17f146330e.webp\" data-src=\"https://image.jido.dev/20260101060253_4555bfb3aacc395f075f9d17f146330e.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"38\">MoE推理让网络成为推理成本的瓶颈，而机柜级的GB200 NVL72恰好解决了这个问题。价值的衡量标准正在从单纯的算力转向“每美元能产出多少智能”。</p>\n  <p data-track=\"39\">报告在结论中指出，AMD的竞争力并未被完全否定——在密集模型和容量驱动的场景下，MI325X和MI355X仍有用武之地。</p>\n  <p data-track=\"40\">AMD的机柜级解决方案Helios也在开发中，可能在未来12个月内缩小差距。</p>\n  <p data-track=\"41\">但就当前的前沿推理模型而言，从芯片到互联到软件的端到端平台设计，已经成为成本效益的决定性因素。</p>\n  <p data-track=\"42\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://signal65.com/research/ai/from-dense-to-mixture-of-experts-the-new-economics-of-ai-inference/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Signal65 报告揭示，在处理 MoE 等复杂 AI 推理模型时，英伟达 GPU 平台尽管价格更高，但在每美元性能上可达 AMD 的 15 倍，实现“买得越多省得越多”的经济效应。",
+  "oneSentenceSummary": "Signal65 报告揭示，在处理 MoE 等复杂 AI 推理模型时，英伟达 GPU 平台尽管价格更高，但在每美元性能上可达 AMD 的 15 倍，实现“买得越多省得越多”的经济效应。",
+  "summary": "量子位援引 Signal65 最新报告指出，英伟达在 AI 算力市场的主导地位，主要得益于其更高的“每美元性能”，尤其是在处理 MoE（专家混合）等前沿推理模型时。报告基于 SemiAnalysis Inference MAX 基准测试数据，显示生成相同数量 Token，英伟达的成本仅为 AMD 的十五分之一。文章解释了 MoE 架构通过激活部分参数实现低成本高性能，但在多 GPU 部署时会遭遇通信延迟瓶颈。英伟达 GB200 NVL72 通过 NVLink 互联 72 块 GPU 形成单一域，配合 Dynamo 推理框架，有效解决了这一瓶颈。测试数据表明，模型越复杂，英伟达的性能优势越显著，特别是在 DeepSeek-R1 这类前沿 MoE 模型上，GB200 NVL72 的每美元性能是 AMD MI355X 的 15 倍，相比 H200 提升 12 倍。文章最后也指出 AMD 在某些场景仍有其价值，并正努力开发机柜级解决方案以追赶。",
+  "mainPoints": [
+    {
+      "point": "英伟达平台在每美元性能上远超 AMD，尤其在处理 MoE 推理模型时。",
+      "explanation": "Signal65 报告通过基准测试发现，在 AI 推理场景下，英伟达平台（如 GB200 NVL72）的单位成本性能，相较于 AMD（如 MI355X）可高出 15 倍之多，使得总体成本更低。"
+    },
+    {
+      "point": "MoE 模型架构的崛起，将 GPU 间通信网络变为 AI 推理成本的瓶颈。",
+      "explanation": "MoE 模型通过稀疏激活实现高效推理，但其专家子网络分布在多 GPU 时，高延迟通信会导致 GPU 空闲，增加服务成本。"
+    },
+    {
+      "point": "英伟达 GB200 NVL72 通过集成互联和优化软件栈，有效解决 MoE 模型扩展瓶颈。",
+      "explanation": "GB200 NVL72 将 72 块 GPU 通过 NVLink 连接成一个单一域，提供超高带宽互联，并配合 Dynamo 推理框架，从硬件与软件双层面优化，突破多 GPU 通信限制。"
+    },
+    {
+      "point": "模型复杂度和交互性要求越高，英伟达对比 AMD 的性能优势越明显。",
+      "explanation": "从 Llama 3.3 70B 到 GPT-OSS-120B，再到 DeepSeek-R1，英伟达 GPU 的性能领先幅度逐渐扩大，尤其在高交互性负载下优势显著。"
+    }
+  ],
+  "keyQuotes": [
+    "在英伟达平台每花一美元，获得的性能是 AMD 的 15 倍。",
+    "这份报告基于 SemiAnalysis Inference MAX 的公开基准测试数据，时间跨度从 2025 年 10 月到 12 月，覆盖了从密集模型到前沿 MoE 推理模型的全场景测试。",
+    "MoE 架构的核心思路是把模型参数拆分成多个专门化的'专家'子网络，每个 token 只激活其中一小部分。",
+    "真正的分水岭出现在前沿推理模型 DeepSeek-R1 上。",
+    "价值的衡量标准正在从单纯的算力转向'每美元能产出多少智能'。"
+  ],
+  "tags": [
+    "英伟达",
+    "AMD",
+    "AI推理",
+    "MoE模型",
+    "GPU性能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2214,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767242940000,
+  "publishDateStr": "01-01",
+  "publishDateTimeStr": "2026-01-01 04:49:00"
+}

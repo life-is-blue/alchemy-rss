@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c7740ef3",
+  "title": "SharePoint 框架 1.22 发布：引入基于 Heft 的构建工具链并更新项目基线",
+  "url": "https://www.infoq.com/news/2025/12/spfx-1-22-heft/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-29 08:00:00",
+  "author": "Edin Kapić",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Microsoft has announced the general availability of <a href=\"https://devblogs.microsoft.com/microsoft365dev/general-availability-of-sharepoint-framework-1-22-a-major-refresh-of-the-build-tooling-experience/\">SharePoint Framework (SPFx) version 1.22</a>, a release centred on modernising the build and tooling experience for SPFx developers. This shift marks a foundational update to how SPFx solutions are built, aimed at addressing technical debt, improving extensibility, and aligning with broader Microsoft toolchain standards.</p>\n   <p>Prior to this release, SPFx projects leveraged a <a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/sharepoint-framework-toolchain\">Gulp‑based build toolchain</a><strong> </strong>to orchestrate tasks such as compilation, bundling, and packaging. While familiar, this model has long been considered dated relative to modern JavaScript and TypeScript workflows. At the same time, older SPFx templates and generator outputs triggered <code>npm audit</code> vulnerabilities and lagged behind current dependency expectations. Version 1.22 addresses both concerns by transitioning to a new toolchain and cleaning up scaffolded solution vulnerabilities.</p>\n   <p>At the heart of the SPFx 1.22 update is the transition from a Gulp‑based to a <a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/sharepoint-framework-toolchain-rushstack-heft\">Heft‑based build toolchain</a>. <a href=\"https://heft.rushstack.io/\">Heft (a config-driven build orchestrator from the Rush Stack ecosystem)</a> now manages build tasks for new SPFx projects, while underlying bundling continues to use Webpack. This shift aligns SPFx development with contemporary build ecosystems, enabling better extensibility, clearer configuration surfaces, and alignment with other Microsoft 365 toolchains. Existing projects upgraded to 1.22 can continue using the legacy Gulp workflows if needed, but new projects generated with Yeoman default to Heft.</p>\n   <p>Heft's introduction addresses long-standing developer concerns about the SPFx toolchain being a ‘black box.’ According to Microsoft, Heft’s opinionated and plugin-capable design allows for more transparent, maintainable builds and facilitates future tooling enhancements. It supports shared configurations (<code>rig.json</code>), streamlined TypeScript settings, and native Webpack configuration options. However, migrating away from custom <code>gulpfile.js</code> implementations will require significant adjustments, particularly for teams using bespoke build steps.</p>\n   <p>Another important modernisation in this release is the resolution of all known <code>npm audit</code> reported vulnerabilities in both the SPFx Yeoman generator and the scaffolded project outputs. After scaffolding a new project with the latest generator, developers should no longer see high‑severity issues reported by <code>npm audit</code>, improving security baseline confidence out of the box. Microsoft also reset the default TypeScript version to 5.8 in scaffolded templates, giving developers access to more recent language features and improved tooling support.<a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/spfx/release-1.22\"> </a></p>\n   <p><img alt=\"SharePoint Framework npm install screenshot, showing 0 vulnerabilities\" style=\"width: 777px; height: 430px;\" data-src=\"https://www.infoq.com/news/2025/12/spfx-1-22-heft/news/2025/12/spfx-1-22-heft/en/resources/1spfx-no-issues-1766849368051.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/spfx-1-22-heft/en/resources/1spfx-no-issues-1766849368051.png\" rel=\"share\"></p>\n   <p>The release <a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/spfx/release-1.22\">doesn’t introduce any deprecations</a> for previously supported APIs. However, Microsoft notes that only critical fixes will be applied to the legacy Gulp system going forward. In SPFx 1.23, new projects will use Heft exclusively (pending CLI readiness), and by SPFx 1.24, the Gulp-based pipeline will become officially unsupported.</p>\n   <p>Community response across social channels underscores both excitement and caution. On LinkedIn, members of the Microsoft 365 Developer community highlighted the significance of the build system change, noting that this <a href=\"https://www.linkedin.com/posts/juliemturner_sneak-peek-episode-019-sharepoint-framework-activity-7396599407124631555-vxo8/\">\"e;is not one of those simple updates\"e;</a> despite the semantic version number, especially because of the gulp‑to‑Heft shift. Some developers are already <a href=\"https://donkirkham.com/blog/spfx-heft/\">sharing walkthroughs and resources</a> to help others adapt to the new Heft workflows.<a href=\"https://www.linkedin.com/posts/juliemturner_sneak-peek-episode-019-sharepoint-framework-activity-7396599407124631555-vxo8?utm_source=chatgpt.com\"> </a>Others have mentioned that <a href=\"https://www.linkedin.com/posts/andrewconnell_microsoft-365-fullstack-devs-office-hours-activity-7396881289489833984-n5Fj/\">transitioning established projects represents a non‑trivial effor</a>t, particularly for teams with custom Gulp tasks or extensions, and are <a href=\"https://www.linkedin.com/posts/stfbauer_aidriven-spfx-122-upgrade-a-reproducible-activity-7406639228228517888-Q76C/\">discussing strategies for incremental migration</a>.</p>\n   <p>Looking forward, SPFx’s roadmap includes further CLI decoupling, open-sourcing templates, and deeper integration with Rush Stack tooling. Developers are encouraged to explore Heft now to ease future transitions and align with Microsoft’s direction.</p>\n   <p>For full release notes and Heft migration guidance, see<a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/spfx/release-1.22\"> SPFx 1.22 release notes</a> and<a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/sharepoint-framework-toolchain-rushstack-heft\"> toolchain documentation</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"SharePoint Framework 1.22 Ships with Heft-Based Build Toolchain and Refreshed Project Baseline\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Edin Kapić\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/spfx-1-22-heft/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766995200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "SharePoint 框架 1.22 引入了现代化的基于 Heft 的构建工具链，增强了安全性与可扩展性，并与现代 JavaScript/TypeScript 工作流对齐，同时弃用了遗留的 Gulp 系统。",
+  "oneSentenceSummary": "SharePoint 框架 1.22 引入了现代化的基于 Heft 的构建工具链，增强了安全性与可扩展性，并与现代 JavaScript/TypeScript 工作流对齐，同时弃用了遗留的 Gulp 系统。",
+  "summary": "微软发布了 SharePoint 框架（SPFx）1.22 版，这是一次重大更新，旨在彻底改进开发人员的构建和工具体验。核心变化是从过时的基于 Gulp 的工具链过渡到更现代、基于命令行的 Heft 构建协调器，它是 Rush Stack 生态系统的一部分。这一转变旨在减少技术债、提高可扩展性，并使 SPFx 与当前的 JavaScript 和 TypeScript 开发实践保持一致。除了新的构建系统，SPFx 1.22 还解决了项目模板中大量的 npm 审计漏洞，并将默认的 TypeScript 版本更新到 5.8，从而提高了安全性和开发效率。虽然现有项目目前仍可使用 Gulp，但新项目将默认使用 Heft，Gulp 支持将在 SPFx 1.24 版本中完全淘汰。社区对此反应不一，对现代化感到兴奋的同时，也对迁移现有项目（尤其是那些具有自定义 Gulp 工作流的项目）所需的工作量表示担忧。",
+  "mainPoints": [
+    {
+      "point": "SPFx 1.22 从 Gulp 过渡到基于 Heft 的构建工具链。",
+      "explanation": "此次根本性更新使 SPFx 构建过程现代化，并借助 Rush Stack 的 Heft 协调器，使其与当代 JavaScript 生态系统保持一致，以实现更好的可扩展性和可维护性。"
+    },
+    {
+      "point": "安全性与开发基线得到显著改进。",
+      "explanation": "该版本解决了脚手架中所有已知的 npm 审计漏洞，并将 TypeScript 更新到 5.8，默认便提供了一个更安全、功能更丰富的开发环境。"
+    },
+    {
+      "point": "遗留 Gulp 工具链正在逐步淘汰，计划完全弃用。",
+      "explanation": "虽然现有项目可以暂时使用 Gulp，但新项目将默认使用 Heft，并且 Gulp 支持将在 SPFx 1.24 中正式移除，开发人员需要规划迁移。"
+    },
+    {
+      "point": "迁移到 Heft 可能需要现有项目付出巨大努力。",
+      "explanation": "开发人员预计，对于具有自定义 Gulp 任务的项目而言，过渡将需要付出巨大努力，这突出了谨慎规划和探索迁移策略的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "这一转变标志着 SPFx 解决方案构建方式的根本性更新，旨在解决技术债、提高可扩展性，并与更广泛的微软工具链标准保持一致。",
+    "Heft 的引入解决了开发人员长期以来对 SPFx 工具链是‘黑盒’的担忧。",
+    "使用最新生成器搭建新项目后，开发人员应不再看到 `npm audit` 报告的高危漏洞，从而提高了默认的安全基线置信度。",
+    "微软指出，未来只会对遗留 Gulp 系统应用关键修复。",
+    "过渡现有项目需要付出巨大努力，特别是对于拥有自定义 Gulp 任务或扩展的团队而言。"
+  ],
+  "tags": [
+    "SharePoint 框架",
+    "SPFx",
+    "构建工具",
+    "Heft",
+    "Gulp"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 544,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766995200000,
+  "publishDateStr": "2025-12-29",
+  "publishDateTimeStr": "2025-12-29 08:00:00"
+}

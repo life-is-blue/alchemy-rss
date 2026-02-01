@@ -1,0 +1,55 @@
+{
+  "id": "RAW_14c94234",
+  "title": "华尔街尬捧 TPU 学术界懵了：何恺明 5 年前就是 TPU 编程高手，多新鲜",
+  "url": "https://www.qbitai.com/2025/11/357440.html",
+  "date": "2025-11-30 02:15:09",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"39\">克雷西 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">学术界看不下去了，直接戳破：<strong>华尔街在尬吹谷歌TPU</strong>！</p>\n  <p data-track=\"3\">起因是Meta被曝要和谷歌签订数十亿美元的TPU订单，消息曝出后英伟达盘中最大跌幅达到了7%，按照现在的市值计算，一举蒸发了超3000亿美元。</p>\n  <p data-track=\"4\">反观谷歌，在盘中情绪最热烈时涨幅一度达4%，换算成市值相当于增加了约1500亿美元，合人民币超1万亿。</p>\n  <p data-track=\"5\">《华尔街日报》将其视为谷歌向英伟达的市场主导地位发起冲击的信号。</p>\n  <p data-track=\"6\">但在从业人士看来，华尔街对此举的看法实在是外行了：Meta、xAI在内的大公司和学术界多年一直在用TPU，市场突然就拿他当成算力救世主了？</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251130033741_c2bfda95b4f7db71a176a64e98d0788d.jpeg\" alt=\"华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜\" data-src=\"https://image.jido.dev/20251130033741_c2bfda95b4f7db71a176a64e98d0788d.jpeg\">\n  </div>\n  <p data-track=\"8\">OpenAI技术人员<strong>Clive Chan</strong>表示，不仅谷歌自己的Gemini一直在TPU上训练，像Claude、生图模型MidJourney、Ilya的SSI，也全都用过TPU。</p>\n  <p data-track=\"9\">所以在他看来，Meta和谷歌签TPU订单不是什么奇怪的事，如果Meta没用过的话，反而会更让他惊讶。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251130033741_270b850da1d888037d7e2190dc96a6b6.jpeg\" alt=\"华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜\" data-src=\"https://image.jido.dev/20251130033741_270b850da1d888037d7e2190dc96a6b6.jpeg\">\n  </div>\n  <p data-track=\"10\">Clive对Meta的看法也被现实验证——没过多久谢赛宁就亲口证实，<strong>Meta早在2020年就已经开始使用TPU了</strong>。</p>\n  <p data-track=\"11\">谢赛宁介绍，当时何恺明领导了TF和JAX代码库的初步开发，MAE、MoCo v3、ConvNeXt v2和DiT等研究项目都是完全在TPU上开发的。</p>\n  <p data-track=\"12\">同时，谢赛宁团队在纽约大学的许多研究工作，也都用到了TPU。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251130033744_413be82fda7f25adcb8ba5af19775858.jpeg\" alt=\"华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜\" data-src=\"https://image.jido.dev/20251130033744_413be82fda7f25adcb8ba5af19775858.jpeg\">\n  </div>\n  <p data-track=\"13\">在Meta的新订单被曝光之后，英伟达这边也对谷歌表示了祝贺。</p>\n  <p data-track=\"14\">但立马话锋一转表示自家产品依然遥遥领先，是唯一能够运行所有AI模型并应用于所有计算场景的平台。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251130033742_6c9481c7a193837de97a9b993fc9de38.jpeg\" alt=\"华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜\" data-src=\"https://image.jido.dev/20251130033742_6c9481c7a193837de97a9b993fc9de38.jpeg\">\n  </div>\n  <p data-track=\"15\">有意思的是，这则推文三句话就用了两个长破折号，网友们一度怀疑是不是AI写的。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251130033742_3bd72d145649afb526d40bcf10e12ebf.jpeg\" alt=\"华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜\" data-src=\"https://image.jido.dev/20251130033742_3bd72d145649afb526d40bcf10e12ebf.jpeg\">\n  </div>\n  <p data-track=\"16\">不过在Clive看来，<strong>所谓的“英伟达护城河”，其实也是十分薄弱的</strong>。</p>\n  <p data-track=\"17\">比如OpenAI就专门开发了Triton来绕过CUDA，并且只需25行Python代码就能达到cuBLAS的性能。</p>\n  <p data-track=\"18\">总之，从技术角度看，对于谷歌、Meta、OpenAI这样的巨兽来说，至少其自身绕开英伟达不是什么难事。</p>\n  <p data-track=\"19\">当然了，除了CUDA之外，还有一个需要考虑的因素，那就是使用成本。</p>\n  <p data-track=\"20\">Artificial Analysis用Llama 3.3对多款英伟达芯片、AMD的MI300X以及谷歌TPUv6e来了波性价比横评，结果从H100到B200，每1美元带来的Token收益是TPU v6e的5倍。</p>\n  <p data-track=\"21\">具体来说，用30Tokens每秒的速度跑Llama 3.3，输入输出各100万个Tokens，在H100上只需1.06美元，而在TPU v6e上需要5.13美元。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251130033741_7a28bcba56fbfa03d729fd3acef68d2f.jpeg\" alt=\"华尔街尬捧TPU学术界懵了：何恺明5年前就是TPU编程高手，多新鲜\" data-src=\"https://image.jido.dev/20251130033741_7a28bcba56fbfa03d729fd3acef68d2f.jpeg\">\n  </div>\n  <p data-track=\"22\">而谷歌最新的TPU v7成本核算下来，也和B200差不多。</p>\n  <p data-track=\"23\">TPUv7的FP8运算速度为4.6PFLOP/s，功耗约为1000瓦，GB200的FP8运算速度为5PFLOP/s，功耗约为1200瓦。</p>\n  <p data-track=\"24\">总之，综合来看，不管是技术还是成本，英伟达和谷歌都没有形成强有力的护城河。</p>\n  <p data-track=\"25\">但也有分析指出，谷歌选择出售GPU，本来也不是为了赚钱，瞄准的目标也不是英伟达。</p>\n  <p data-track=\"27\">Artificial Intuition作者Carlos E. Perez分析指出，大家都把Meta与谷歌的TPU交易看作是Meta对冲NVIDIA风险的一种手段，但事实并非如此。</p>\n  <p data-track=\"28\">Perez认为，Meta在这笔交易当中也在被谷歌利用，用出货量换取排产和价格优惠，从而<strong>对冲来自芯片代工厂的风险</strong>。</p>\n  <p data-track=\"29\">代工厂需要获得切实有效的多年期合约，才会启动新的2纳米生产线，这种“安全感”是初创公司无法给予的。</p>\n  <p data-track=\"30\">Perez想象了这样一个场景：</p>\n  <blockquote>\n   <p data-track=\"31\">谷歌走进代工厂，说道：\n    <br class=\"sysbr\">\n    “我和Meta以及苹果都签了六年云服务合同，不管他们愿不愿意，他们每年都会消耗20万个TPU。把你们N2容量的 25%按成本价给我。”\n    <br class=\"sysbr\">\n    而代工厂垂涎三尺，欣然应允。</p>\n  </blockquote>\n  <p data-track=\"32\">现在任何一家小型芯片公司（Groq、Cerebras、Tenstorrent等等）都可以进来索要同样的晶圆。</p>\n  <p data-track=\"33\">Perez继续畅想，当这些小公司走进代工厂时，得到的回应就会变成“抱歉，未来24个月的房源都已经卖给了谷歌。剩下的零碎货，您只能按原价购买。”</p>\n  <p data-track=\"34\">他们正在利用Meta和苹果的资本支出作为抵押，预购了未来的尖端芯片供应。这和苹果当年在iPhone显示屏上用的伎俩如出一辙。</p>\n  <p data-track=\"35\">当时苹果用巨额预付款锁定所有优质面板 ，导致其他厂商多年来只能使用二流屏幕。</p>\n  <p data-track=\"36\">当然谷歌一个巴掌自然是拍不响，但Meta和苹果也都乐于签署这些协议，因为目前谷歌的TPU是唯一可以批量获得的芯片。</p>\n  <p data-track=\"37\">这样做的结果就是，在代工厂那里，能和谷歌相抗衡的，也就只有英伟达了。</p>\n  <p data-track=\"38\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/itsclivetime/status/1993869419337142772\n   <br class=\"sysbr\">\n   [2]https://x.com/ArtificialAnlys/status/1993878037226557519\n   <br class=\"sysbr\">\n   [3]https://x.com/IntuitMachine/status/1993117888140439943</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "华尔街对 Meta 的 TPU 订单反应过度，学术界指出 TPU 早已被广泛使用，且谷歌的真正战略是利用大客户订单锁定代工厂产能而非直接与英伟达竞争。",
+  "oneSentenceSummary": "华尔街对 Meta 的 TPU 订单反应过度，学术界指出 TPU 早已被广泛使用，且谷歌的真正战略是利用大客户订单锁定代工厂产能而非直接与英伟达竞争。",
+  "summary": "文章揭示了华尔街对 Meta 与谷歌签订数十亿美元 TPU 订单的过度解读。消息一出，英伟达股价大跌，谷歌股价上涨，被《华尔街日报》视为谷歌挑战英伟达市场主导地位的信号。然而，多位业内专家指出，TPU 在学术界和大型科技公司（如 Meta、OpenAI、xAI 等）中早已被广泛用于训练 AI 模型，并非新鲜事。例如，何恺明团队早在 2020 年就已在 TPU 上开发了 MAE、MoCo v3 等项目。文章进一步分析了英伟达“护城河”的薄弱性，如 OpenAI 开发 Triton 绕过 CUDA。尽管在单位 Token 成本上，英伟达 H100 仍优于 TPUv6e，但谷歌的 TPUv7 在性能功耗比上已接近英伟达 B200。文章核心观点在于，谷歌出售 TPU 的真正目的并非直接与英伟达竞争，而是利用 Meta 和苹果等大客户的长期订单，作为筹码锁定代工厂未来的尖端芯片产能，从而限制小型竞争对手的芯片供应，复制了苹果当年在 iPhone 显示屏上的供应链策略。",
+  "mainPoints": [
+    {
+      "point": "华尔街对 Meta 的 TPU 订单反应过度，TPU 在学术界和大型科技公司中早已广泛应用。",
+      "explanation": "Meta、OpenAI 等公司多年来一直在研究和生产中使用 TPU，并非新鲜事，华尔街将其视为谷歌对英伟达的突然冲击是误读。"
+    },
+    {
+      "point": "英伟达的“护城河”并非不可逾越，但在特定成本效益上其 GPU 仍有优势。",
+      "explanation": "OpenAI 开发 Triton 绕过 CUDA 表明技术上存在替代方案；然而，Llama 3.3 测试显示英伟达 GPU 在单位 Token 成本上仍优于 TPUv6e。"
+    },
+    {
+      "point": "谷歌与 Meta 的 TPU 交易更深层次的战略是锁定代工厂未来尖端芯片产能。",
+      "explanation": "谷歌利用大客户的多年期合约作为筹码，与代工厂谈判，提前预购未来芯片供应，从而限制小型竞争对手的获取，复制了苹果的供应链策略。"
+    }
+  ],
+  "keyQuotes": [
+    "学术界看不下去了，直接戳破：华尔街在尬吹谷歌 TPU！",
+    "Meta 早在 2020 年就已经开始使用 TPU 了。",
+    "所谓的\"英伟达护城河\"，其实也是十分薄弱的。",
+    "谷歌选择出售 GPU，本来也不是为了赚钱，瞄准的目标也不是英伟达。",
+    "谷歌走进代工厂，说道：'我和 Meta 以及苹果都签了六年云服务合同，不管他们愿不愿意，他们每年都会消耗 20 万个 TPU。把你们 N2 容量的 25%按成本价给我。' 而代工厂垂涎三尺，欣然应允。"
+  ],
+  "tags": [
+    "AI硬件",
+    "TPU",
+    "GPU",
+    "市场竞争",
+    "Google"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 87,
+  "wordCount": 1796,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764468909000,
+  "publishDateStr": "2025-11-30",
+  "publishDateTimeStr": "2025-11-30 02:15:09"
+}

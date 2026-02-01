@@ -1,0 +1,50 @@
+{
+  "id": "RAW_54bd668c",
+  "title": "LangGrant 推出 LEDGE MCP 服务器 实现企业数据库上的智能体 AI",
+  "url": "https://www.infoq.com/news/2026/01/langgrant-ledge-mcp-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-13 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.langgrant.ai/\">LangGrant</a> has launched the LEDGE MCP Server, a new enterprise platform designed to let large language models reason across complex database environments without directly accessing or exposing underlying data. The release aims to remove some of the biggest barriers organizations face when applying agentic AI to governed, production data, namely, security restrictions, runaway token costs, and unreliable analytics results.</p>\n   <p dir=\"ltr\">The company says the LEDGE MCP Server allows LLMs to generate accurate, executable multi-step analytics plans across databases such as <a href=\"https://www.oracle.com/\">Oracle</a>, <a href=\"https://www.microsoft.com/en-us/sql-server\">SQL Server</a>, <a href=\"https://www.postgresql.org/\">Postgres</a>, and <a href=\"https://www.snowflake.com/en/\">Snowflake</a>, while keeping data fully within enterprise boundaries. By relying on schema, metadata, and relationships rather than raw records, the platform eliminates the need to push large datasets into LLMs, dramatically reducing token usage and preventing sensitive data leakage. According to LangGrant, tasks that typically take weeks of manual query writing and validation can now be completed in minutes with full human review and auditability.</p>\n   <p dir=\"ltr\">\"The LEDGE MCP Server removes the friction between LLMs and enterprise data,\" said <a href=\"https://www.linkedin.com/in/rameshpar/\">Ramesh Parameswaran</a>, CEO, CTO, and co-founder of LangGrant. He noted that enterprises can now apply agentic AI directly to existing database ecosystems securely and cost-effectively, without compromising governance or oversight.</p>\n   <p dir=\"ltr\">The launch comes as context engineering and agentic AI move from experimentation into production environments in many organizations. Many enterprises have embraced AI assistants, but adoption has stalled when it comes to operational databases. Security policies often prohibit direct LLM access, token and compute costs balloon when raw data is analyzed, and both developers and business users struggle with the scale and complexity of enterprise schemas. Even with AI-assisted coding tools, engineers frequently spend weeks manually feeding partial context to models to produce usable queries and pipelines.</p>\n   <p dir=\"ltr\">LangGrant positions LEDGE as an orchestration and governance layer that addresses these issues holistically. The MCP server governs how LLMs interact with enterprise data, ensuring compliance with access controls and policies. Analytics and reasoning are performed using database context rather than data payloads to lower costs and reduce hallucination risk. The platform also automates the creation of multi-stage analytics plans that can be inspected, approved, and executed by human teams.</p>\n   <p dir=\"ltr\">In addition, LEDGE supports on-demand cloning and containerization of production-like databases, giving agent developers safe, isolated environments for building and testing AI workflows. By automatically mapping schemas and relationships across heterogeneous systems, the platform enables LLMs to reason across multiple databases as a unified landscape, without ever reading the underlying data itself.</p>\n   <p dir=\"ltr\">With the LEDGE MCP Server, LangGrant is betting that enterprise adoption of agentic AI will depend less on ever-larger models and more on secure orchestration, governance, and cost control. The company argues that by keeping data in place while giving LLMs comprehensive contextual understanding, enterprises can finally apply AI to their most valuable data assets, accurately, safely, and at scale.</p>\n   <p dir=\"ltr\">Many companies are adopting MCP-style servers to give AI agents a safe, structured context without exposing raw data, but their focus areas differ. <a href=\"https://www.infoq.com/news/2025/04/github-mcp-server-public-preview/\"> GitHub's MCP server</a> centers on developer workflows, allowing LLMs to reason over repositories, issues, pull requests, and CI metadata while enforcing access controls. Similarly, <a href=\"https://www.infoq.com/news/2025/07/azure-devops-mcp-server/\"> Microsoft's Azure DevOps MCP</a> exposes structured project and pipeline context to AI agents to support planning, troubleshooting, and delivery automation, rather than deep analytical data processing.</p>\n   <p dir=\"ltr\">Beyond developer platforms, MCP concepts are emerging in infrastructure and operations. Service mesh projects such as <a href=\"https://www.infoq.com/news/2025/11/buoyant-linkerd-mcp-support/\">Linkerd </a>are exploring MCP integrations to provide AI agents with secure visibility into service traffic, telemetry, and policy enforcement. Cloud providers also offer MCP-like context layers through their AI services, such as <a href=\"https://aws.amazon.com/\">AWS </a>and <a href=\"https://cloud.google.com/?hl=en\">Google Cloud</a>, which let agents query infrastructure metadata and operational signals without passing sensitive data directly into models. These approaches focus on operational awareness rather than data analytics.</p>\n   <p>Compared to these offerings, LangGrant's LEDGE MCP Server stands out by focusing on enterprise databases and analytics. Together, these platforms show how MCP is becoming a foundational pattern, with each implementation tailored to a specific layer of the enterprise stack.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"LangGrant Unveils LEDGE MCP Server to Enable Agentic AI on Enterprise Databases\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/langgrant-ledge-mcp-server/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768305600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LangGrant 的 LEDGE MCP 服务器通过基于元数据而非原始数据进行推理，实现安全且经济高效的智能体 AI 与企业数据库交互，解决了关键的安全和成本障碍。",
+  "oneSentenceSummary": "LangGrant 的 LEDGE MCP 服务器通过基于元数据而非原始数据进行推理，实现安全且经济高效的智能体 AI 与企业数据库交互，解决了关键的安全和成本障碍。",
+  "summary": "LangGrant 宣布推出 LEDGE MCP 服务器，这是一个企业级平台，使大语言模型（LLM）能够在无需直接访问数据的情况下对复杂数据库环境进行推理。该解决方案解决了将智能体 AI 应用于生产数据时的关键挑战，如安全限制、高昂的 token 成本和不可靠的分析。LEDGE MCP 服务器通过利用模式和元数据，让 LLM 能够为各种数据库（Oracle、SQL Server、Postgres、Snowflake）生成可执行的分析计划，从而减少 token 使用并防止数据泄露。它自动化了分析计划的创建，允许人工审查，并支持按需克隆数据库以安全地开发 AI 工作流。LangGrant 的方法通过专注于企业数据库和分析，与其他 MCP 产品形成对比，表明安全编排、治理和成本控制对于企业 AI 采用至关重要。",
+  "mainPoints": [
+    {
+      "point": "LEDGE MCP 服务器将 LLM 与企业原始数据隔离，提高了安全性和成本效益。",
+      "explanation": "该平台通过基于数据库模式、元数据和关系进行推理，而不是要求直接访问敏感数据，使 LLM 能够执行复杂的分析，从而降低安全风险并减少 token 成本。"
+    },
+    {
+      "point": "它解决了在受监管的企业环境中采用智能体 AI 的关键障碍。",
+      "explanation": "通过解决安全合规性、token 成本爆炸式增长以及大型企业模式的复杂性等问题，LangGrant 促进了 AI 智能体更广泛、更安全地集成到生产数据库工作流中。"
+    },
+    {
+      "point": "该服务器通过人工监督和可审计性来编排多步骤分析计划。",
+      "explanation": "LEDGE 自动化生成复杂的分析计划，然后可以由人工团队检查、批准和执行，确保可靠性和可维护性。"
+    },
+    {
+      "point": "它专门针对企业数据库和分析，与其他 MCP 解决方案形成差异化。",
+      "explanation": "与 GitHub 或 Microsoft 专注于开发人员工作流或运营感知的 MCP 服务器不同，LangGrant 专注于实现对多样化数据库系统的深度分析处理，突出了 MCP 模式的专门应用。"
+    }
+  ],
+  "keyQuotes": [
+    "LEDGE MCP 服务器消除了 LLM 与企业数据之间的摩擦。",
+    "企业现在可以安全且经济高效地将智能体数据库上下文而非数据负载来执行分析和推理，以降低成本并减少"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 652,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768305600000,
+  "publishDateStr": "01-13",
+  "publishDateTimeStr": "2026-01-13 12:00:00"
+}

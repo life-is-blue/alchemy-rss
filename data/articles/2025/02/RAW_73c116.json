@@ -1,0 +1,54 @@
+{
+  "id": "RAW_73c116",
+  "title": "Grok 3 发布：20 万 GPU 训练的新一代模型",
+  "url": "https://ginonotes.com/posts/xai-release-grok3",
+  "date": "2025-02-18 00:00:00",
+  "author": "Gino",
+  "siteName": "Gino Notes",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-content prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-h2:text-2xl lg:prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl lg:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-base lg:prose-p:text-lg prose-p:leading-7 lg:prose-p:leading-8 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-a:text-blue-500 prose-a:no-underline hover:prose-a:text-blue-600 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-blue-500 dark:prose-code:text-blue-400 prose-code:text-sm lg:prose-code:text-base prose-pre:bg-gray-900 prose-pre:rounded-lg prose-img:rounded-lg prose-img:shadow-lg prose-blockquote:border-l-4 prose-blockquote:border-gray-200 dark:prose-blockquote:border-gray-800 prose-blockquote:pl-4 prose-blockquote:italic\">\n   <h2 id=\"xai-发布-grok-3-系列模型\"><a class=\"anchor\" href=\"#xai-发布-grok-3-系列模型\"><span class=\"icon icon-link\"></span></a>xAI 发布 Grok 3 系列模型</h2>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/release-start.jpeg\" alt=\"模型系列\"></p>\n   <p>xAI 发布 Grok 3 系列模型，包括 Grok 3 (Beta)、Grok 3 mini、Grok 3 Reasoning (Beta)、Grok 3 mini Reasoning，以及智能体 DeepSearch，被马斯克称为“地表最强的 AI”。</p>\n   <p>马斯克介绍 Grok 的名字来自小说《异乡异客》，主角是在火星上长大的人类，Grok 也是一个“火星词”，代表充分而深刻地理解事物。</p>\n   <h2 id=\"性能大幅提升\"><a class=\"anchor\" href=\"#性能大幅提升\"><span class=\"icon icon-link\"></span></a>性能大幅提升</h2>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/xai-benchmarks.webp\" alt=\"性能对比\"></p>\n   <p>Grok 3 在多个基准测试中超越现有主流模型。</p>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/xai-benchmarks2.webp\" alt=\"推理模型性能对比\"></p>\n   <p>Reasoning 版本在推理能力上表现突出，超越 o3-mini 和 DeepSeek-R1，另外 Grok 3 允许模型在测试时进行更长时间的思考和推理，提高准确性。</p>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/lmarena-level.jpeg\" alt=\"登顶竞技榜\"></p>\n   <p>Grok 3 在数学、科学、编码等多个基准测试中超越了包括 GPT-4o、Claude 3.5 Sonnet、DeepSeek-V3 和 Gemini-2 Pro 在内的现有模型。在 AIME 2025 考试中，Grok 3 Reasoning 和 mini Reasoning 分别获得了 93 分和 90 分的优异成绩。另外在 LMSYS Arena 评测中首次突破 1400 分，成功登顶，较 Grok 2（1280分）提升约 10%。</p>\n   <h2 id=\"超大规模算力支持\"><a class=\"anchor\" href=\"#超大规模算力支持\"><span class=\"icon icon-link\"></span></a>超大规模算力支持</h2>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/cluster.webp\" alt=\"超大规模算力支持\"></p>\n   <p>Grok 3 的训练使用了 20 万块 NVIDIA H100 GPU 的超算集群 Colossus，计算量是 Grok 2 的 10 倍。超算中心分两个阶段建设完成，第一阶段 122 天建成 10 万卡集群，第二阶段 92 天扩建至 20 万卡规模，总耗电量达到 1/4 吉瓦。</p>\n   <h2 id=\"think-和-big-brain-模式\"><a class=\"anchor\" href=\"#think-和-big-brain-模式\"><span class=\"icon icon-link\"></span></a>Think 和 Big Brain 模式</h2>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/think-big-brain.webp\" alt=\"Think 和 Big Brain 模式\"></p>\n   <p>用户界面提供两种模式：Think 可以让模型进行较为仔细的思考与自我检验，Big Brain 适合更复杂的问题，模型会调用更强的推理流程与内部逻辑来给出更缜密、深入的结果。</p>\n   <h2 id=\"推出-deepsearch-智能体\"><a class=\"anchor\" href=\"#推出-deepsearch-智能体\"><span class=\"icon icon-link\"></span></a>推出 DeepSearch 智能体</h2>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/deepsearch.webp\" alt=\"DeepSearch 智能体\"></p>\n   <p>这是一个基于 Grok 3 的深度搜索工具，能够进行更深入的网络搜索，分析信息并提供详细、合理的答案，同时过程更透明。支持 X 平台实时数据，用户可以控制信息源选择。</p>\n   <h2 id=\"新的订阅模式\"><a class=\"anchor\" href=\"#新的订阅模式\"><span class=\"icon icon-link\"></span></a>新的订阅模式</h2>\n   <p><img src=\"https://media.ginonotes.com/images/20250218_xai_release_grok3/subscription.webp\" alt=\"订阅模式\"></p>\n   <p>X Premium+ 用户可优先体验 Grok 3，xAI 还推出了 SuperGrok 订阅计划（$30/月或年付 $300），提供完整推理能力、DeepSearch 高级功能和无限量图像生成等特性。</p>\n   <h2 id=\"未来计划\"><a class=\"anchor\" href=\"#未来计划\"><span class=\"icon icon-link\"></span></a>未来计划</h2>\n   <p>一周内上线所有功能（包括语音模式），几周内对企业用户推出 API，几个月后开源 Grok 2。语音模式将支持语音理解和生成，API 将包含推理和深度搜索功能。</p>\n   <p>xAI 还承诺将持续优化模型性能，保持每日更新迭代。</p>\n   <h2 id=\"点评\"><a class=\"anchor\" href=\"#点评\"><span class=\"icon icon-link\"></span></a>点评</h2>\n   <ol>\n    <li>\n     <p><strong>算力驱动创新</strong>：xAI 通过 20 万张 H100 GPU 的投入，在短短一年内就达到了业界领先水平，再次证明了在当前阶段，算力资源对 AI 发展的关键作用。这也提醒我们需要关注算力分配的普惠性问题。</p></li>\n    <li>\n     <p><strong>性能领先但竞争激烈</strong>：虽然 Grok 3 在多个基准测试中展现出领先优势，但考虑到 Claude 4 和 GPT 4.5 即将发布，AI 领域的竞争格局可能很快会发生变化。</p></li>\n    <li>\n     <p><strong>社交平台协同有待加强</strong>：作为 X 平台背景的模型，Grok 3 与平台的深度整合还有提升空间。相比之下，微信与 DeepSeek 的结合展示了更多社交场景下的 AI 应用可能性。</p></li>\n    <li>\n     <p><strong>使用门槛与普惠性</strong>：目前 Grok 3 仅向 Premium+ 和 SuperGrok 会员开放，API 也将优先面向企业客户。这种策略虽然合理，但与开源社区的期待存在一定差距。期待在稳定性验证后能更快地向更广泛的用户群体开放。</p></li>\n   </ol>\n  </div>\n </body>\n</html>",
+  "aiSummary": "xAI 发布 Grok 3 系列模型，性能超越现有主流模型，并推出 DeepSearch 智能体。",
+  "oneSentenceSummary": "xAI 发布 Grok 3 系列模型，性能超越现有主流模型，并推出 DeepSearch 智能体。",
+  "summary": "xAI 发布 Grok 3 系列模型，该模型在多个基准测试中超越 GPT-4o、Claude 3.5 Sonnet 等现有模型，并在 LMSYS Arena 评测中成功登顶。Grok 3 的训练使用了 20 万块 NVIDIA H100 GPU 的超算集群 Colossus。DeepSearch 智能体能够进行更深入的网络搜索。X Premium+ 用户可优先体验，xAI 还推出了 SuperGrok 订阅计划。未来计划一周内上线所有功能，几个月后开源 Grok 2。",
+  "mainPoints": [
+    {
+      "point": "Grok 3 在性能上取得显著突破，超越多个主流模型。",
+      "explanation": "Grok 3 在数学、科学、编码等多个基准测试中超越了 GPT-4o、Claude 3.5 Sonnet 等模型，并在 LMSYS Arena 评测中成功登顶。"
+    },
+    {
+      "point": "Grok 3 的训练使用了超大规模算力支持。",
+      "explanation": "Grok 3 的训练使用了 20 万块 NVIDIA H100 GPU 的超算集群 Colossus，计算量是 Grok 2 的 10 倍，总耗电量达到 1/4 吉瓦。这再次证明了在当前阶段，算力资源对 AI 发展的关键作用。"
+    },
+    {
+      "point": "DeepSearch 智能体能够进行更深入的网络搜索。",
+      "explanation": "DeepSearch 是基于 Grok 3 的深度搜索工具，能够进行更深入的网络搜索，分析信息并提供详细、合理的答案，同时过程更透明。"
+    }
+  ],
+  "keyQuotes": [
+    "马斯克介绍 Grok 的名字来自小说《异乡异客》，主角是在火星上长大的人类，Grok 也是一个\"火星词\"，代表充分而深刻地理解事物。",
+    "Grok 3 允许模型在测试时进行更长时间的思考和推理，提高准确性。",
+    "xAI 通过 20 万张 H100 GPU 的投入，在短短一年内就达到了业界领先水平，再次证明了在当前阶段，算力资源对 AI 发展的关键作用。",
+    "这是一个基于 Grok 3 的深度搜索工具，能够进行更深入的网络搜索，分析信息并提供详细、合理的答案，同时过程更透明。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Grok 3",
+    "xAI",
+    "AI模型评测",
+    "DeepSearch"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1068,
+  "domain": "ginonotes.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7e580d",
+  "sourceName": "Gino Notes",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739836800000,
+  "publishDateStr": "2025-02-18",
+  "publishDateTimeStr": "2025-02-18 00:00:00"
+}

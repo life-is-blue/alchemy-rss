@@ -1,0 +1,54 @@
+{
+  "id": "RAW_3ec3c941",
+  "title": "如何构建数字孪生以提升运营效率",
+  "url": "https://www.databricks.com/blog/how-build-digital-twins-operational-efficiency",
+  "date": "2025-10-30 15:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Across manufacturing and industrial operations, organizations are adopting <strong>Digital Twins</strong> to improve efficiency, predict equipment failures, and optimize production in real-time.&nbsp;</p>\n  <p>This new <strong>Digital Twin Solution Accelerator</strong> provides an end-to-end framework for building, visualizing, and analyzing these systems using AI and real-time analytics, helping teams reduce downtime, improve product quality, and drive smarter decision-making. You can deploy scalable Digital Twin solutions on Databricks using <a href=\"https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview\" target=\"_blank\"><strong>Zerobus Ingest</strong></a>, part of <a href=\"https://www.databricks.com/product/data-engineering/lakeflow-connect\"><strong>Lakeflow Connect</strong></a>, a managed service that pushes event data directly to the lakehouse, you can deploy your own Digital Twin solution at scale with Databricks.&nbsp;</p>\n  <h2>What Are Digital Twins?</h2>\n  <p>In our implementation, a Digital Twin combines two key ingredients:</p>\n  <ol>\n   <li>A virtual representation of a physical asset, system, or process</li>\n   <li>Real-time, contextual data from sensors and other sources</li>\n  </ol>\n  <p>With this live digital replica, we can monitor physical equipment or abstract processes in real time, simulate and validate changes, and perform advanced predictive maintenance without changing the system itself.</p>\n  <p>In the context of manufacturing, Digital Twins are central to driving the Industry 4.0 revolution. By integrating IoT, AI, and real-time analytics, they not only reduce downtime and boost productivity but also enable continuous safety.</p>\n  <p>These concepts also show great promise in other areas, such as <a data-external-link=\"true\" href=\"https://www.databricks.com/blog/ai-conduit-management-cybernetics\">modeling organizational dynamics</a> and understanding the processes that drive decision-making. In this blog, we will focus on the manufacturing application of Digital Twins.</p>\n  <h2>Example scenario: Ball Bearing Manufacturing</h2>\n  <p>Our example scenario is a simplified ball bearing manufacturing process.&nbsp;</p>\n  <p><a data-external-link=\"true\" href=\"https://en.wikipedia.org/wiki/Ball_bearing\" target=\"_blank\" rel=\"noopener noreferrer\">Ball bearings</a> are mechanical components that minimize friction between moving parts using steel or ceramic balls positioned between two rings (outer and inner). They are essential to the efficient operation of engines, motors, and industrial machinery and are therefore fundamental to much of the technology we use every day.</p>\n  <p>The manufacturing process (<a data-external-link=\"true\" href=\"https://www.youtube.com/watch?v=41Z5v4NybWA\" target=\"_blank\" rel=\"noopener noreferrer\">see video</a>) starts with shaping and heat treating the inner and outer rings, shaping and polishing them for strength and precision and assembling them with a retainer that maintains even spacing. Each stage, machining, heat treatment, and assembly, relies on precisely tuned equipment and continuous monitoring to meet strict quality standards.&nbsp;</p>\n  <p>In high-volume, low-margin industries like ball bearing manufacturing, continuously optimizing machine performance, predicting maintenance needs, and ensuring consistent quality are essential. Digital Twins, fueled by real-time sensor data from multiple machines and production lines, are a key enabler for these goals.</p>\n  <p><img src=\"https://www.databricks.com/sites/default/files/inline-images/manu-assembly.png\" data-entity-uuid=\"bb845710-c2cc-467f-bb64-d71ad8e7dc46\" data-entity-type=\"file\" alt=\"Ball bearing manufacturing process\" width=\"2532\" height=\"1344\" loading=\"lazy\" data-ot-ignore=\"1\"></p>\n  <p>This Digital Twin will capture the details of all of these steps in a structured yet flexible way.</p>\n  <h2>An end-to-end Databricks solution</h2>\n  <p>The Digital Twin has two main components:</p>\n  <ol>\n   <li>The <strong>twin model</strong>, which specifies the entities in the system and how they relate to each other</li>\n   <li>The <strong>twin graph</strong>, which hydrates the model by adding real-time data related to the entities (for example, sensor data or relevant predictions from ML models)</li>\n  </ol>\n  <p>The twin model is created using <a data-external-link=\"true\" href=\"https://en.wikipedia.org/wiki/Semantic_triple\" target=\"_blank\" rel=\"noopener noreferrer\">RDF</a>, an open and widely adopted standard for defining knowledge graphs and ontologies. We provide a selection of built-in predicates that you can extend to describe the relationships and dependencies between different parts of the system. Each entity in the twin model has an <a data-external-link=\"true\" href=\"https://datatracker.ietf.org/doc/rfc3987/\" target=\"_blank\" rel=\"noopener noreferrer\">IRI</a>, a namespaced identifier that uniquely identifies the entity and connects it to the telemetry data in the twin graph.\n   <br>\n   &nbsp;</p>\n  <p class=\"b6\"><img src=\"https://www.databricks.com/sites/default/files/inline-images/digital-twin-app-overview.png\" data-entity-uuid=\"923d3487-3d6c-4e19-9f30-2b2648a4d9c9\" data-entity-type=\"file\" alt=\"Screenshot of the Digital Twins Solutions Accelerator\" width=\"928\" height=\"869\" loading=\"lazy\" data-ot-ignore=\"1\">\n   <br>\n   <strong>Digital Twins Solution Accelerator</strong></p>\n  <p>Although this Solution Accelerator focuses on a specific manufacturing scenario, our approach is flexible and can model almost any kind of system. The main building blocks are depicted in the diagram below:</p>\n  <ol>\n   <li>Data ingestion</li>\n   <li>Data mapping</li>\n   <li>Data serving</li>\n   <li>Digital Twin App</li>\n  </ol>\n  <p class=\"b6\"><img src=\"https://www.databricks.com/sites/default/files/inline-images/SA-building-blocks-diagram-v3.png\" data-entity-uuid=\"555ae78d-247b-4110-be88-4f4f445c03e6\" data-entity-type=\"file\" alt=\"Architectural diagram of Digital Twins Solution Accelerator\" width=\"2438\" height=\"884\" loading=\"lazy\" data-ot-ignore=\"1\">\n   <br>\n   <strong>Digital Twins Solution Accelerator architectural diagram</strong></p>\n  <p>The subsequent sections will provide a detailed explanation of these steps.</p>\n  <h2>Step 1: Data ingestion</h2>\n  <p>To populate the twin graph with real-time data, we begin by ingesting data through <a href=\"https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/zerobus-overview\" target=\"_blank\"><strong>Zerobus Ingest</strong></a>, an innovative approach for pushing event data directly to the lakehouse without a single-sink message bus like Kafka. Zerobus Ingest provides high-throughput direct writes with low latency. It supports record-by-record ingestion at any scale and operates in a serverless environment.</p>\n  <img data-entity-uuid=\"d87604e3-2690-4a9b-ae9c-bc281b37d042\" data-entity-type=\"file\" src=\"https://www.databricks.com/sites/default/files/inline-images/Sol_Acc_before-after.png\" width=\"1113\" height=\"384\" alt=\"Before and after implementing Zerobus Ingest API into our architecture.\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p>This ensures an efficient, scalable flow of manufacturing data, supporting experimentation, robust analytics, and deployment to live operations before moving to connected hardware.</p>\n  <p>In our scenario, telemetry data is continuously generated to simulate data ingestion from production line sensors. The raw data is then stored as a table in the lakehouse in Delta format using Zerobus Ingest.</p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 Databricks 数字孪生 解决方案加速器，这是一个端到端框架，利用 AI 和 实时分析来构建、可视化和分析数字孪生，以提高运营效率...",
+  "oneSentenceSummary": "本文介绍了 Databricks 数字孪生 解决方案加速器，这是一个端到端框架，利用 AI 和 实时分析来构建、可视化和分析数字孪生，以提高运营效率...",
+  "summary": "本文详细介绍了制造业和工业运营中的组织如何采用数字孪生来提高效率、预测设备故障和优化生产。它介绍了 Databricks 数字孪生 解决方案加速器，这是一个端到端框架，利用 AI 和 实时分析来构建、可视化和分析这些系统，旨在减少停机时间、提高产品质量并实现更智能的决策。数字孪生在此处被实现为物理资产或流程的虚拟表示，并结合了实时、上下文传感器数据。这种实时数字副本允许实时监控、模拟和预测性维护，符合工业 4.0 原则。该解决方案通过简化的滚珠轴承制造场景进行演示，突出了在高产量行业中持续优化和质量控制的需求。Databricks 解决方案由两个主要组件组成：孪生模型（使用 RDF 知识图谱指定实体和关系）和孪生图（使用实时传感器数据和 ML 预测来填充模型）。关键的架构构建块包括通过 Zerobus Ingest 进行的 数据摄取、数据映射、数据服务和数字孪生 应用。Zerobus Ingest 强调其高吞吐量、低延迟、无服务器方法，可将事件数据直接推送到湖仓一体 (Lakehouse)，从而确保可扩展且高效的 数据流，以实现强大的分析。",
+  "mainPoints": [
+    {
+      "point": "数字孪生将虚拟模型与实时数据集成，以优化生产运营。",
+      "explanation": "它们创建物理资产或流程的实时数字副本，无需改变物理系统即可实现实时监控、预测性维护和模拟，这对于工业 4.0 至关重要。"
+    },
+    {
+      "point": "Databricks 提供了一个端到端的 解决方案加速器，用于可扩展的 数字孪生实施。",
+      "explanation": "该框架包括孪生模型（RDF 知识图谱）和孪生图（实时传感器/ML 数据），并通过 Zerobus Ingest 有效地将数据导入到湖仓一体架构中。"
+    },
+    {
+      "point": "Zerobus Ingest 提供高吞吐量、低延迟的 数据摄取，直接进入湖仓一体。",
+      "explanation": "这种创新的无服务器方法绕过了传统的消息总线，确保了高效且可扩展的实时数据流。这使得在数字孪生 解决方案中实现强大的分析和运营部署成为可能。"
+    }
+  ],
+  "keyQuotes": [
+    "在我们的实现中，数字孪生结合了两个关键要素：物理资产、系统或流程的虚拟表示；来自传感器和其他来源的实时、上下文数据。",
+    "在高产量、低利润的行业（如滚珠轴承制造）中，持续优化机器性能、预测维护需求和确保一致的质量至关重要。",
+    "孪生模型是使用 RDF 创建的，RDF 是一种开放且广泛采用的用于定义知识图谱和本体的标准。",
+    "为了将实时数据整合到孪生图中，我们首先通过 Zerobus Ingest 摄取数据，这是一种创新的方法，用于将事件数据直接推送到湖仓一体，而无需像 Kafka 这样的单接收器消息总线。"
+  ],
+  "tags": [
+    "数字孪生",
+    "解决方案加速器",
+    "实时分析",
+    "数据工程",
+    "湖仓一体"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 703,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761836400000,
+  "publishDateStr": "2025-10-30",
+  "publishDateTimeStr": "2025-10-30 15:00:00"
+}

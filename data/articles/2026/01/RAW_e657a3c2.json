@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e657a3c2",
+  "title": "升维公式",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMzc1NzM1Mw==&mid=2247484983&idx=1&sn=b35db02503724738cbc51c8f506703ea",
+  "date": "2026-01-09 01:48:19",
+  "author": "李继刚",
+  "siteName": "李继刚",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"background-color: inherit; font-size: 1rem;\">;; ━━━━━━━━━━━━━━━━━</span></p>\n  <p>;; 作者: 李继刚</p>\n  <p>;; 剑名: 升维公式</p>\n  <p>;; 剑意: 通过寻找“新变量”实现认知的范式转移</p>\n  <p>;; 日期: 2026-01-03</p>\n  <p>;;━━━━━━━━━━━━━━━━━━</p>\n  <p>(defun 执行进步计算 (User_Input)</p>\n  <p>\"执行深度的认知升维计算\"</p>\n  <p>(let* (</p>\n  <p>;; 1. 维度崩塌</p>\n  <p>(Thesis (提炼用户观点的核心逻辑))</p>\n  <p>(Antithesis (找到完全相反但同样成立的逻辑))</p>\n  <p></p>\n  <p>;; 2. 寻找公因式</p>\n  <p>;; 追问：正题和反题虽然对立，但它们都在试图解决什么共同的终极问题？</p>\n  <p>(Common_Goal (挖掘两者背后的“元目标”))</p>\n  <p>;; 3. 引入新变量</p>\n  <p>;; 追问：为了实现 Common_Goal，旧维度(正/反)都忽略了哪个关键变量？</p>\n  <p>;; 这是一个“正交”于原维度的变量。</p>\n  <p>(New_Variable (发现被忽略的关键维度))</p>\n  <p>;; 4. 系统重构</p>\n  <p>;; 基于 New_Variable，构建一个新系统，使正反题不再对立，而是各安其位。</p>\n  <p>(Synthesis (基于新变量重构的新模型))</p>\n  <p>;; 5. 阻力与行动</p>\n  <p>(Ego_Trap (剖析为什么之前看不见这个新变量))</p>\n  <p>(Scenario (定义新系统的测试场景))</p>\n  <p>(Algorithm (基于新变量的行动策略)))</p>\n  <p>;; 输出 Markdown 报告</p>\n  <p>(Markdown-Output Thesis Antithesis Common_Goal New_Variable Synthesis Ego_Trap Scenario Algorithm)))</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=6af7d0f9&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Ftc9Zic7wWc9BziaCXtAVG3Gw2ZDVWHCNHprBq6K7g3Ju56qsNZLgWTPLkpD5I06RlpNNIC3ZXh5Mj927A9teJlRA%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "李继刚的“升维公式”提出一套 Lisp 风格的认知计算框架，通过“维度崩塌”发现对立观点，继而通过“寻找公因式”和“引入新变量”实现认知的范式转移及系统重构。",
+  "oneSentenceSummary": "李继刚的“升维公式”提出一套 Lisp 风格的认知计算框架，通过“维度崩塌”发现对立观点，继而通过“寻找公因式”和“引入新变量”实现认知的范式转移及系统重构。",
+  "summary": "本文介绍了作者李继刚提出的“升维公式”，旨在通过寻找“新变量”实现认知的范式转移。该公式是一个 Lisp 风格的函数，名为 `执行进步计算`，其核心步骤包括：首先进行“维度崩塌”，即提炼核心观点（Thesis）并找到其完全相反但同样成立的逻辑（Antithesis）；其次是“寻找公因式”，挖掘正反命题背后共同的“元目标”（Common_Goal）；然后是“引入新变量”，发现被旧维度忽略的关键变量（New_Variable），该变量正交于原维度；最后是“系统重构”，基于新变量构建新模型（Synthesis），使正反命题不再对立，而是各安其位。文章还探讨了阻力与行动，即剖析为何之前看不见新变量（Ego_Trap），并定义了新系统的测试场景（Scenario）与相应的行动策略（Algorithm）。",
+  "mainPoints": [
+    {
+      "point": "“升维公式”旨在通过发现被忽视的“新变量”来超越二元对立的认知困境。",
+      "explanation": "公式核心在于识别并引入一个正交于原有对立维度的关键变量，从而在更高维度上重新整合看似冲突的观点。"
+    },
+    {
+      "point": "认知升维过程分为“维度崩塌”、“寻找公因式”、“引入新变量”和“系统重构”四个主要阶段。",
+      "explanation": "先识别观点的正反两面，再探究其共同的深层目标，进而找到此前未被考虑或整合的新要素，最终构建一个更全面的认知框架。"
+    },
+    {
+      "point": "该公式以函数形式呈现，将抽象的认知方法具象化为可执行的计算步骤。",
+      "explanation": "借鉴 Lisp 语言的结构，将认知流程定义为一系列输入、处理和输出的函数调用，赋予其计算与工程的思维模式。"
+    },
+    {
+      "point": "识别心理阻碍（Ego_Trap）是实现认知升维的关键一环。",
+      "explanation": "公式中明确提出要剖析为何个体之前未能发现新变量，强调自我反省在认知突破中的作用。"
+    }
+  ],
+  "keyQuotes": [
+    "剑意: 通过寻找\"新变量\"实现认知的范式转移",
+    "维度崩塌：提炼用户观点的核心逻辑，找到完全相反但同样成立的逻辑。",
+    "寻找公因式：追问：正题和反题虽然对立，但它们都在试图解决什么共同的终极问题？",
+    "引入新变量：追问：为了实现 Common_Goal，旧维度(正/反)都忽略了哪个关键变量？ 这是一个\"正交\"于原维度的变量。",
+    "系统重构：基于 New_Variable，构建一个新系统，使正反题不再对立，而是各安其位。"
+  ],
+  "tags": [
+    "认知升级",
+    "思维模型",
+    "方法论",
+    "范式转移",
+    "个人成长"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 371,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_8ebfe0",
+  "sourceName": "李继刚",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767923299000,
+  "publishDateStr": "01-09",
+  "publishDateTimeStr": "2026-01-09 01:48:19"
+}

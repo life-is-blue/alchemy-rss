@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0394eb8e",
+  "title": "Claude「最香」模型发布，速度翻倍价格大砍，编程能力直逼 GPT-5",
+  "url": "https://www.ifanr.com/1641081?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-10-16 09:39:24",
+  "author": "张子豪",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>就在刚刚，Anthropic 发布了 Claude Haiku 4.5。</p>\n  <p>先简单科普一下，Claude 家族有三个不同参数量级的模型：Claude Opus（大杯）、Sonnet（中杯）和 Haiku（小杯）。</p>\n  <p>这次更新最大的看点是，<strong>小杯 Claude Haiku 4.5 在模型性能保持高水准的同时，速度更快、价格更便宜了</strong>。</p>\n  <p>五个月前，Claude Sonnet 4 还是最先进的模型之一。现在新出的 Haiku 4.5 在编码性能上几乎和它打平手，但价格只要三分之一，速度还翻了两倍多。</p>\n  <p><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04ac28c17f.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641082 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04ac28c17f.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04ac28c17f.png!720 1206w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04ac28c17f-360x193.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04ac28c17f-768x411.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04ac28c17f-1024x549.png 1024w\" sizes=\"(max-width: 1206px) 100vw, 1206px\"></a></p>\n  <div class=\"editor-image-source\">\n   <p>▲Chart comparing frontier models on SWE-bench Verified which measures performance on real-world coding tasks</p>\n  </div>\n  <p>具体来说，在用于衡量 AI 编码能力的测试集 SWE-bench Verified 上，Haiku 4.5 取得了 73% 的成绩，<strong>什么概念？直接跟 Claude Sonnet 4 以及 OpenAI 最新的 GPT-5 站在同一水平线上。</strong></p>\n  <p>在某些任务比如操控电脑方面，Haiku 4.5 甚至反杀了老大哥 Sonnet 4。</p>\n  <p>对于需要 AI 处理实时、低延迟任务的场景——比如聊天助手、客服代理或结对编程助手，Haiku 4.5 兼具高智能和出色速度，能带来更好的体验。</p>\n  <p>使用 Claude Code 的开发者也会发现，Haiku 4.5 让整个编程过程——从多智能体协作到快速原型开发——都变得更灵敏高效。</p>\n  <p id=\"WFNtUHw\"><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b1d5308c.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641083 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b1d5308c.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b1d5308c.png!720 1080w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b1d5308c-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b1d5308c-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b1d5308c-1024x576.png 1024w\" sizes=\"(max-width: 1080px) 100vw, 1080px\"></a></p>\n  <p>当然，两周前发的 Sonnet 4.5 依然是 Anthropic 的旗舰模型，归属全球编程模型第一档次。但 Haiku 4.5 提供了另一个选项：性能接近顶配，价格却亲民得多。</p>\n  <p><strong>而且模型玩法更野了，Sonnet 4.5 可以把复杂问题拆成 N 个小任务，然后指挥一堆 Haiku 4.5 并行开工，这配合相当默契。</strong></p>\n  <p>Anthropic 对 Haiku 4.5 进行了详细的安全性和对齐性测试。</p>\n  <p>结果显示，该模型的不良行为发生率较低，且比前代 Haiku 3.5 的对齐性显著提高。在自动化对齐评估中，Haiku 4.5 的总体偏离行为比 Sonnet 4.5 和 Opus 4.1 都更少。</p>\n  <p><strong>也就是说，它目前是 Anthropic 家最安全的模型。</strong></p>\n  <p><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b50725ae.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641084 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b50725ae.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b50725ae.png!720 1268w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b50725ae-360x274.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b50725ae-768x585.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b50725ae-1024x780.png 1024w\" sizes=\"(max-width: 1268px) 100vw, 1268px\"></a></p>\n  <div class=\"editor-image-source\">\n   <p>▲Comparison table of frontier models across popular benchmarks</p>\n  </div>\n  <p>至于价格嘛…Haiku 4.5 的定价为：每百万输入 token 1 美元，每百万输出 token 5 美元。</p>\n  <p>对比来看，GPT-5 mini 约为每百万输入 0.25 美元、输出 2.5 美元，Google 的 Gemini 2.5 Flash 价格差不多。也就是说，Haiku 4.5 的价格大约是 GPT-5 mini 或 Flash 的 4 倍。</p>\n  <p>不过跟 Sonnet 4.5 比，它便宜了约三倍，性能却几乎没差，这对开发者来说算是降本增效了。</p>\n  <p><strong>但有一说一，数学不是它的强项。</strong></p>\n  <p><strong>知名博主 Dan Shipper 试用后发现，Haiku 在算术上有点… 迷糊。</strong></p>\n  <p>比如在测试 Uber 账单的例子里，Haiku 虽然完美找出了所有相关邮件，但算总额时直接翻车。更尴尬的是，指出错误后它承认了——然后转头又犯了同样的错</p>\n  <p>Dan Shipper 给出的中肯评价是：</p>\n  <blockquote>\n   <p>如果你是开发者或创业者，正在用 Sonnet 4.5 构建复杂的智能代理应用，现在可以考虑切换到 Haiku。你能节省大量成本，而性能损失几乎可以忽略。</p>\n   <p>&nbsp;</p>\n   <p>如果你目前使用的是 Gemini 2.5 Flash 或 GPT-5 mini，建议试试 Haiku。虽然价格更高一些，但在需要调用工具和保持自主性的场景中，它的表现更好。</p>\n  </blockquote>\n  <p><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b9ef1a68.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641085 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b9ef1a68.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b9ef1a68.png!720 1322w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b9ef1a68-360x291.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b9ef1a68-768x622.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04b9ef1a68-1024x829.png 1024w\" sizes=\"(max-width: 1322px) 100vw, 1322px\"></a></p>\n  <div class=\"editor-image-source\">\n   <p>▲附上博客地址：\n    <br>\n    https://every.to/vibe-check/vibe-check-claude-haiku-4-5-anthropic-cooked</p>\n  </div>\n  <p>目前，Claude Haiku 4.5 现已在 Claude Code 和各类应用中上线了。</p>\n  <p>开发者可以通过 Claude API、Amazon Bedrock 和 Google Cloud 的 Vertex AI 使用 Haiku 4.5，直接替代 Haiku 3.5 和 Sonnet 4，而且价格是 Anthropic 最香的那档。</p>\n  <p id=\"SmzstCz\"><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bd21f285.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641086 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bd21f285.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bd21f285.png!720 1260w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bd21f285-360x191.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bd21f285-768x408.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bd21f285-1024x545.png 1024w\" sizes=\"(max-width: 1260px) 100vw, 1260px\"></a></p>\n  <p>我们参考@zb1992 的提示词，<strong>让 Claude 4.5 Haiku 跑了一个钟表 Demo，整体体验下来，代码生成速度确实更快了，最终成品也令人满意。</strong></p>\n  <p>在下文这个经典的推理计算题， Claude 4.5 Haiku 响应速度优势就更明显了，当然，这也正是轻量级模型在实际应用中的核心竞争力所在。</p>\n  <p id=\"jsxxEGW\"><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bff1a9c9.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641087 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bff1a9c9.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bff1a9c9.png!720 1288w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bff1a9c9-360x190.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bff1a9c9-768x404.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04bff1a9c9-1024x539.png 1024w\" sizes=\"(max-width: 1288px) 100vw, 1288px\"></a></p>\n  <p>另外，据 The Information 报道，估值高达 1700 亿美元的 Anthropic 近几周已告诉投行顾问，计划通过收购引入更多技术人才，同时拓展除编程助手之外的能力——毕竟目前编程这块还是营收大头。</p>\n  <p id=\"tHMOXxz\"><a href=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04c0ec8a23.png!720\" rel=\"lightbox[1641081]\"><img class=\"alignnone size-full wp-image-1641088 \" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04c0ec8a23.png!720\" alt=\"\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04c0ec8a23.png!720 1272w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04c0ec8a23-360x195.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04c0ec8a23-768x415.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/img_68f04c0ec8a23-1024x554.png 1024w\" sizes=\"(max-width: 1272px) 100vw, 1272px\"></a></p>\n  <p>知情人士表示，鉴于 Anthropic 在向开发者提供编程类 AI 产品方面取得的成功，公司下一步可能会扩展至其他开发者常用的软件工具，比如自动测试代码漏洞的工具，或辅助软件设计的工具。</p>\n  <p>另有消息称，Anthropic 也可能通过收购开发面向特定行业的产品，例如金融服务、医疗保健或网络安全，不过他们更倾向于交易金额在 5 亿美元以下的小型收购项目。</p>\n  <p>目前看起来，在提升模型能力的同时，Anthropic 也在积极布局生态。AI 圈的你追我赶，最终受益的还是开发者和用户——更强的模型、更低的价格、更多的选择。</p>\n  <p>作者：莫崇宇</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 发布 Claude Haiku 4.5 模型，以接近顶级的编程性能、更快的速度和更亲民的价格，成为开发者在实时、低延迟任务和多智能体协作场景下的高性价比新选择。",
+  "oneSentenceSummary": "Anthropic 发布 Claude Haiku 4.5 模型，以接近顶级的编程性能、更快的速度和更亲民的价格，成为开发者在实时、低延迟任务和多智能体协作场景下的高性价比新选择。",
+  "summary": "文章详细介绍了 Anthropic 公司最新发布的 Claude Haiku 4.5 模型。该模型在性能上表现出色，尤其在编码能力（SWE-bench Verified 测试集 73%）方面，已与 Claude Sonnet 4 和 OpenAI 的 GPT-5 处于同一水平线。Haiku 4.5 的核心亮点在于其显著提升的速度和大幅降低的价格，仅为 Sonnet 4.5 的三分之一，速度提升两倍多。这使其成为聊天助手、客服代理和结对编程等需要实时、低延迟任务场景的理想选择。此外，Haiku 4.5 在安全性方面也达到 Anthropic 家族模型的最高水平。尽管其数学能力是弱项，但对于寻求成本效益的开发者，Haiku 4.5 通过 Claude API、Amazon Bedrock 和 Google Cloud 的 Vertex AI 提供了一个极具吸引力的替代方案。文章最后还提及 Anthropic 未来可能通过收购拓展编程助手之外的能力，以布局更广泛的生态。",
+  "mainPoints": [
+    {
+      "point": "Claude Haiku 4.5 以高性价比提供接近顶级模型的编程能力。",
+      "explanation": "Haiku 4.5 在编码性能上接近 Sonnet 4 和 GPT-5，但价格仅为 Sonnet 4.5 的三分之一，速度翻倍，为开发者提供了显著的成本优势和高性能体验。"
+    },
+    {
+      "point": "Haiku 4.5 在速度和安全性方面表现突出，适合低延迟应用和多智能体协作。",
+      "explanation": "模型速度更快且是 Anthropic 最安全的模型，使其在实时交互、客服代理及复杂的多智能体任务中展现出卓越的潜力和可靠性。"
+    },
+    {
+      "point": "尽管数学能力是其弱项，Haiku 4.5 为开发者提供了成本效益高的替代方案。",
+      "explanation": "虽然在算术方面存在不足，但其在编程和自主性方面的优势，使其成为 Sonnet 4.5、Gemini 2.5 Flash 或 GPT-5 mini 用户的有力替代品，实现了性能与成本的平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "小杯 Claude Haiku 4.5 在模型性能保持高水准的同时，速度更快、价格更便宜了。",
+    "Haiku 4.5 取得了 73% 的成绩，什么概念？直接跟 Claude Sonnet 4 以及 OpenAI 最新的 GPT-5 站在同一水平线上。",
+    "它目前是 Anthropic 家最安全的模型。",
+    "如果你是开发者或创业者，正在用 Sonnet 4.5 构建复杂的智能代理应用，现在可以考虑切换到 Haiku。你能节省大量成本，而性能损失几乎可以忽略。",
+    "AI 圈的你追我赶，最终受益的还是开发者和用户------更强的模型、更低的价格、更多的选择。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Claude Haiku",
+    "Anthropic",
+    "编程能力",
+    "成本效益"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1552,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760607564000,
+  "publishDateStr": "2025-10-16",
+  "publishDateTimeStr": "2025-10-16 09:39:24"
+}

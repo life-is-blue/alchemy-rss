@@ -1,0 +1,57 @@
+{
+  "id": "RAW_9e9ccb",
+  "title": "Klarna AI 助手:赋能 8500 万用户，重新定义大规模客户支持",
+  "url": "https://blog.langchain.dev/customers-klarna/",
+  "date": "2025-02-12 15:00:55",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Klarna has reshaped global commerce with its consumer-centric, AI-powered payment and shopping solutions. With over 85 million active users and 2.5 million daily transactions on its platform, Klarna is a fintech leader that simplifies shopping while empowering consumers with smarter, more flexible financial solutions.</p>\n  <p>Klarna’s flagship AI Assistant is revolutionizing the shopping and payments experience. Built on LangGraph and powered by LangSmith, the AI Assistant handles tasks ranging from customer payments, to refunds, to other payment escalations.</p>\n  <p>With 2.5 million conversations to date, the AI Assistant is more than just a chatbot; it’s a transformative agent that performs the work equivalent of 700 full-time staff, delivering results quickly and improving company efficiency.</p>\n  <h2 id=\"the-challenge-scaling-customer-support-handling-escalations\"><strong>The Challenge: Scaling Customer Support &amp; Handling Escalations</strong></h2>\n  <h3 id=\"overcoming-escalation-overload\"><strong>Overcoming escalation overload</strong></h3>\n  <p>Klarna faced growing challenges in managing multi-departmental escalations. To meet rising consumer expectations, Klarna needed a solution that could combine speed, accuracy, and accessibility while scaling across global markets.</p>\n  <blockquote>\n   <em>\"LangChain has been a great partner in helping us realize our vision for an AI-powered assistant, scaling support and delivering superior customer experiences across the globe.\"</em>— <strong>Sebastian Siemiatkowski</strong>, CEO and Co-Founder, Klarna\n  </blockquote>\n  <h2 id=\"the-solution-powered-by-langgraph-and-langsmith\"><strong>The Solution: Powered by LangGraph and LangSmith</strong></h2>\n  <h3 id=\"a-partnership-driving-precision-and-performance\"><strong>A partnership driving precision and performance</strong></h3>\n  <p>Klarna turned to LangGraph and LangSmith to evolve their AI Assistant into a reliable, scalable multi-agent system. Key improvements included:</p>\n  <ol>\n   <li><strong>Controllable agent architecture</strong>: Klarna’s AI assistant routed requests and handled different tasks using the LangGraph framework. &nbsp; This helped decrease latency, improve reliability, and cut operational costs.</li>\n   <li><strong>Context-aware intelligence</strong>: By dynamically tailoring prompts to specific scenarios, Klarna ensured that their AI assistant consistently delivered relevant, context-aware responses while reducing token costs and latency.&nbsp;</li>\n   <li><strong>Test-driven development</strong>: With LangSmith, Klarna could pinpoint what issues arose by seeing step-by-step how their AI assistant behaved. Leveraging LangSmith, Klarna rigorously tested critical use cases for their AI assistant, then validated and refined agent performance with LLM evaluations and prompt iteration.&nbsp;</li>\n   <li><strong>Prompt optimization: </strong>Klarna’s insights in turn improved LangSmith’s prompt engineering features – notably, Klarna helped inspire and design advanced capabilities like meta-prompting. Meta-prompting allows users to suggest specific improvements to the prompts,<em> by prompting them</em> and&nbsp; seeing how the optimized prompt impacted response quality.</li>\n  </ol>\n  <h2 id=\"the-impact\"><strong>The Impact</strong></h2>\n  <p>Built with LangGraph and refined with LangSmith, Klarna’s AI assistant has empowered their teams to handle customer escalations more effectively. They’ve achieved the following results in the past 9 months:</p>\n  <ul>\n   <li><strong>Faster resolutions</strong>: Reduced average customer query resolution time by 80%, enabling faster responses to user queries and saving analysts and engineers hours a week of investigation time.</li>\n   <li><strong>Increased AI automation for chat handling</strong>: Automated ~70% of repetitive support tasks, freeing up customer service agents to handle complex, high-value interactions&nbsp;</li>\n   <li><strong>Improved accuracy</strong>: Improved root cause identification for rejection, leading to a significant reduction in customer escalations.&nbsp;</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Klarna 利用 LangGraph 和 LangSmith 构建 AI 助手，显著提升客户支持效率，查询响应时间缩短 80%，大幅提升自动化水平。",
+  "oneSentenceSummary": "Klarna 利用 LangGraph 和 LangSmith 构建 AI 助手，显著提升客户支持效率，查询响应时间缩短 80%，大幅提升自动化水平。",
+  "summary": "Klarna 通过引入 AI 助手，并结合 LangGraph 和 LangSmith，革新了其客户支持系统，尤其是在解决“升级请求过载”问题上。该 AI 助手能够处理包括支付、退款等多种任务，相当于 700 名全职员工的工作量。通过技术优化，Klarna 显著提高了问题解决速度、自动化水平和准确性。在过去 9 个月中，客户查询解决时间缩短了 80%，70% 的重复性支持任务实现自动化，并有效减少了客户问题升级。此外，Klarna 的实践也推动了 LangSmith Prompt 工程功能的进步。",
+  "mainPoints": [
+    {
+      "point": "利用 LangGraph 框架大幅提升 AI 助手性能并降低成本",
+      "explanation": "Klarna 使用 LangGraph 路由请求和处理任务，降低了延迟，提高了可靠性，并削减了运营成本。"
+    },
+    {
+      "point": "上下文感知智能确保 AI 响应的相关性和准确性",
+      "explanation": "通过动态调整 Prompt，Klarna 的 AI 助手能够始终如一地提供相关的、上下文感知的响应，同时降低 token 成本和延迟。"
+    },
+    {
+      "point": "测试驱动开发和 Prompt 优化提升 AI 助手表现",
+      "explanation": "利用 LangSmith，Klarna 严格测试关键用例，并通过 LLM 评估和 Prompt 迭代来验证和改进 agent 性能。"
+    },
+    {
+      "point": "Klarna 的实践经验推动了 LangSmith Prompt 工程功能的进步",
+      "explanation": "Klarna 的见解改进了 LangSmith 的 Prompt 工程功能，例如 Meta-prompting。"
+    }
+  ],
+  "keyQuotes": [
+    "LangChain 是我们实现 AI 驱动助手愿景的卓越伙伴，助力我们扩展支持，并在全球范围内提供卓越的客户体验。",
+    "更快的解决:客户查询平均解决时间缩短了 80%，从而能够更快地响应用户查询，并为分析师和工程师每周节省数小时的调查时间。",
+    "提高 AI 自动化聊天处理:自动化了约 70% 的重复性支持任务，从而解放了客户服务人员，使其能够处理复杂、高价值的互动"
+  ],
+  "tags": [
+    "AI 助手",
+    "客户支持",
+    "LangGraph",
+    "LangSmith",
+    "自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 452,
+  "domain": "blog.langchain.dev",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739372455000,
+  "publishDateStr": "2025-02-12",
+  "publishDateTimeStr": "2025-02-12 15:00:55"
+}

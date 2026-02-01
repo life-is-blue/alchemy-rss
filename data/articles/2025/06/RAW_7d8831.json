@@ -1,0 +1,63 @@
+{
+  "id": "RAW_7d8831",
+  "title": "微软推出深度视频探索智能体，登顶多个长视频理解基准 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-30-2",
+  "date": "2025-06-30 03:38:29",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p><br></p>\n  <p>尽管大型语言模型（LLMs）和大型视觉 - 语言模型（VLMs）在视频分析和长语境处理方面取得了显著进展，但它们在处理信息密集的数小时长视频时仍显示出局限性。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d27abbe5-c2d9-4aa1-6787-d092fc09a900/public\" data-ratio=\"0.44537037037037036\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492730\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/4e150792-2464-415c-9011-b8fa7076084f/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify; margin-bottom: 0px; margin-left: 8px; margin-right: 8px; line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">论文标题：</span>Deep Video Discovery : Agentic Search with Tool Use for Long-form Video Understanding</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/pdf/2505.18079</p></li>\n  </ul>\n  <p>本文提出了一种新颖的智能体 Deep Video Discovery (DVD)，通过将长视频分割为更短的片段并将其视作环境，利用 LLM 先进的推理能力来思考问题并自主规划，选择具有适当参数的工具来从环境中逐步获取信息，最终回答问题。在最新的推理模型 OpenAI o3 的帮助下， DVD 以这一简洁有效的 agentic 框架在非常具有挑战性的 LVBench 上以 74.2% 的准确率大幅超越了之前的工作。这一工作将以 MCP Server 的形式开源。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/de302d77-4dfb-4166-79d1-621b62a70400/public\" data-ratio=\"0.4027777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492873\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/90553220-81bb-4e1b-8655-05e0c8a4ad8b/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section data-pm-slice=\"1 2 []\">\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5574ae48-c0f8-4578-d593-1d2c2a329c00/public\" data-ratio=\"0.37222222222222223\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492726\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/7de608e8-c5d3-4553-a7b3-dc66d995bd0b/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 图 1：左：DeepVideoDiscovery 的流程示意图。右：LVBench 上的性能比较。</sup></p>\n  <p>不同于之前的视频智能体框架依赖于手动设计的固定工作流程，DVD 强调其作为智能体的自主性，即通过自主规划，决策和行动来解决问题。</p>\n  <p>为了充分利用这一自主性，我们将原始的长视频转换为多粒度视频数据库，并提供了一套以搜索为中心的工具使得智能体在不同阶段搜集不同粒度的信息。具体来说该系统主要由三个核心组件构成：多粒度视频数据库、以搜索为中心的工具集以及作为智能体协调器的 LLM。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c25d38a-3039-415d-517d-388a7dee5600/public\" data-ratio=\"0.38055555555555554\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492727\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/15b0bd5f-65e8-4978-af0f-1265133ba18c/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>图 2：DeepVideoDiscovery 分为两个 stage，首先将长视频转化为多粒度的视频数据库，然后通过自主搜索和工具使用对用户的问题生成回答。</sup></p>\n  <p>在 “多粒度视频数据库构建” 阶段，系统将超长视频转换为一个结构化数据库，通过统一将视频分割成短片段（例如 5 秒），并提取全局、片段和帧级别的多粒度信息，包括主题中心化摘要、片段字幕及其嵌入向量，以及原始解码帧...。</p>\n  <p>随后在 “智能体搜索和回答” 阶段，DVD 智能体配备了三个核心工具：</p>\n  <p>(1)&nbsp;全局浏览（Global Browse），用于获取高层上下文信息和视频内容的全局摘要（包括视频物体和事件摘要）。</p>\n  <p>(2) 片段搜索（Clip Search）工具，实现通过片段描述 Embedding 对视频内容进行高效语义检索，并返回排名靠前的相关视频片段及其字幕和时间范围。</p>\n  <p>(3) 帧检查（Frame Inspect），用于从指定时间范围内的像素级信息中提取细粒度细节，并提供开放格式的视觉问答（VQA）响应。</p>\n  <p>LLM 作为核心认知驱动器，在迭代的 “观察 - 推理 - 行动” 循环中，根据累积的知识和推理证据采取行动，从而赋予智能体自主、证据引导和灵活的行动机制，有效地将原始查询分解为逐步细化的子查询来解答问题。</p>\n  <section>\n   <img data-imgfileid=\"503492728\" data-ratio=\"0.8092592592592592\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0a873d8f-f314-40fd-f6e7-1151222ce100/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/eeebb7a1-3359-43a1-bde7-b6d57814a03e/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 表 1：本文提出的 Deep Video Discovery 在 LVBench 上以较大的幅度领先已有的工作。</sup></p>\n  <p>该系统在多个长视频基准测试上进行了全面评估，展现了其卓越的效率和强大的性能。在极具挑战性的 LVBench 数据集上，DVD 智能体取得了 74.2% 的最新准确率，大幅超越了所有现有工作，包括先前的最先进模型 MR. Video（13.4% 的提升）和 VCA（32.9% 的提升）。在辅助转录的帮助下，准确率进一步提高到 76.0%。在 LongVideoBench、Video MME Long 子集和 EgoSchema 等其他长视频基准测试中，DVD 也持续超越了先前的最先进性能。</p>\n  <section>\n   <img data-imgfileid=\"503492729\" data-ratio=\"0.4398148148148148\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/05430015-9ca4-4866-961f-c2adf0082000/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/4ea36bf3-840f-4a15-862d-417559167dac/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>图 3：不同基础模型在智能体中的行为分析。图中可以明显看出不同基础模型表现出显著的行为模式差异，不具有推理能力 GPT-4o 表现出非常单一的行为模型。</sup></p>\n  <p>消融研究证实了工具设计的有效性，并强调了推理模型在整个智能体系统中的关键作用：更换推理模型（如使用 OpenAI o4-mini 或 GPT-4o）会导致性能下降，这表明 LLM 推理能力的缺失会导致智能体行为崩溃。对智能体推理行为的分析也揭示了不同模型在工具调用模式、推理深度和准确性之间的关联，例如 GPT-4o 表现出过度自信和行为崩溃，倾向于过早结束推理。这些行为模式的分析进一步为未来的智能体设计以及基础语言模型的发展提供了实践参考。</p>\n \n",
+  "aiSummary": "微软推出 Deep Video Discovery 智能体，通过自主规划和工具使用在长视频理解任务中以 74.2%准确率大幅超越现有方法。",
+  "oneSentenceSummary": "微软推出 Deep Video Discovery 智能体，通过自主规划和工具使用在长视频理解任务中以 74.2%准确率大幅超越现有方法。",
+  "summary": "文章介绍了微软提出的 Deep Video Discovery (DVD)智能体，该智能体通过将长视频分割为短片段并构建多粒度视频数据库，利用 LLM 的推理能力自主规划和使用工具来理解长视频内容。DVD 在极具挑战性的 LVBench 上以 74.2%的准确率(辅助转录下可达 76.0%)大幅超越现有方法 13.4%-32.9%。系统采用两阶段处理流程：首先构建多粒度视频数据库，然后通过 LLM 协调器使用全局浏览、片段搜索和帧检查三种工具实现高效信息检索。实验表明 DVD 在 LongVideoBench 等多个基准测试中持续领先，同时行为分析揭示了不同基础模型在智能体行为上的显著差异，为未来设计提供重要参考。该系统将以 MCP Server 形式开源。",
+  "mainPoints": [
+    {
+      "point": "DVD 智能体通过两阶段处理和自主规划显著提升长视频理解性能",
+      "explanation": "先将长视频转换为多粒度数据库，再通过 LLM 自主选择工具获取信息，在 LVBench 上达到 74.2%准确率(辅助转录下 76.0%)，大幅超越现有方法 13.4%-32.9%"
+    },
+    {
+      "point": "多粒度视频数据库和搜索工具集是 DVD 的核心创新",
+      "explanation": "系统采用两阶段设计，先构建包含全局、片段和帧级别信息的结构化数据库，再提供全局浏览、片段搜索和帧检查三种工具实现不同粒度信息检索"
+    },
+    {
+      "point": "LLM 推理能力对智能体性能至关重要",
+      "explanation": "消融研究表明更换推理模型会导致性能下降，缺乏推理能力的模型(如 GPT-4o)会出现行为崩溃和过早结束推理"
+    },
+    {
+      "point": "DVD 在多个长视频基准测试中全面超越现有方法",
+      "explanation": "不仅在 LVBench 表现优异，在 LongVideoBench、Video MME Long 和 EgoSchema 等基准测试中也持续领先现有技术"
+    },
+    {
+      "point": "智能体行为分析为未来设计提供重要参考",
+      "explanation": "研究揭示了不同模型在工具调用模式、推理深度和准确性之间的关联，对智能体系统设计和基础模型发展具有指导意义"
+    }
+  ],
+  "keyQuotes": [
+    "DVD 以这一简洁有效的 agentic 框架在非常具有挑战性的 LVBench 上以 74.2% 的准确率大幅超越了之前的工作",
+    "不同于之前的视频智能体框架依赖于手动设计的固定工作流程，DVD 强调其作为智能体的自主性，即通过自主规划，决策和行动来解决问题",
+    "消融研究证实了工具设计的有效性，并强调了推理模型在整个智能体系统中的关键作用",
+    "对智能体推理行为的分析也揭示了不同模型在工具调用模式、推理深度和准确性之间的关联，例如 GPT-4o 表现出过度自信和行为崩溃",
+    "这些行为模式的分析进一步为未来的智能体设计以及基础语言模型的发展提供了实践参考"
+  ],
+  "tags": [
+    "视频理解",
+    "智能体",
+    "长视频处理",
+    "微软",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1457,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751254709000,
+  "publishDateStr": "2025-06-30",
+  "publishDateTimeStr": "2025-06-30 03:38:29"
+}

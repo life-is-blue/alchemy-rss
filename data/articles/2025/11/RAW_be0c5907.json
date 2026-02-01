@@ -1,0 +1,54 @@
+{
+  "id": "RAW_be0c5907",
+  "title": "大幅提升人工智能模型构建：使用 Ray 和 Databricks 的数据和任务并行",
+  "url": "https://www.databricks.com/blog/supercharging-ai-model-building-data-and-task-parallelism-ray-and-databricks",
+  "date": "2025-11-06 19:50:54",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <h2>Optimal Infrastructure, Maximum Impact: Why Parallelism Matters for AI in Retail</h2>\n  <p>Accurate sales forecasts enhance customer satisfaction across all industries, including the travel and retail sectors. Pilot Company operates more than 900 locations, with business operations that depend on fast and reliable predictions to serve our guests. Legacy bottlenecks — such as underutilized compute and lengthy model cycles — could lead to outdated forecasts, which may negatively impact our guest experience.</p>\n  <p>Pilot Company needed an AI pipeline that empowered frequent, granular forecasting — without escalating infrastructure spend. Traditional batch or manual retraining methods could not keep up.</p>\n  <p>To address these challenges, Pilot Company leveraged:</p>\n  <ul>\n   <li><strong>Databricks Spark clusters (Runtime 16.4)</strong> for Extract, Transform, Load (ETL), big data prep and partitioning</li>\n   <li><strong>Lakehouse architecture</strong> for unified, governed storage and seamless access</li>\n   <li><strong>Databricks Unity Catalog</strong> for secure team data sharing</li>\n   <li><strong>Managed MLflow</strong> for experiment tracking and reproducibility</li>\n  </ul>\n  <p>Layering in Ray for task parallelism on top of Spark’s data parallelism enables Pilot Company to streamline end-to-end model building. Models now retrain as soon as new data becomes available, translating infrastructure efficiency into tangible business benefits.</p>\n  <h2>Parallelism in Action: From Data Prep to Model Tuning</h2>\n  <p>Building a high-accuracy forecasting model for retail sales involves several steps:</p>\n  <div class=\"rich-text-body\">\n   <ol>\n    <li><strong>Data Collection and Preparation:</strong> Gathering and cleansing large-scale, multi-source sales data.</li>\n    <li><strong>Feature Engineering:</strong> Transforming and extracting new predictors that improve model performance.</li>\n    <li><strong>Model Training:</strong> Adjusting parameters and minimizing loss functions for the best fit.</li>\n    <li><strong>Model Validation and Tuning:</strong> Evaluating accuracy, adjusting hyperparameters and selecting the best models.</li>\n    <li><strong>Deployment and Evaluation:</strong> Final effectiveness checks before going live.\n     <ol class=\"alpha-list\">\n      <li><strong>Spark excels at big data tasks</strong> — steps 1 and 2 — using data parallelism. Massive datasets are split into partitions, processed concurrently and efficiently managed across a cluster.</li>\n      <li><strong>Steps 3-6</strong> (training, tuning and evaluation) benefit from task parallelism. Here, the challenge is to maximize utilization for compute-intensive, long-running processes — enter Ray.</li>\n     </ol></li>\n   </ol>\n  </div>\n  <p><!--$--></p>\n  <!--/$-->\n  <p></p>\n  <p>In Spark, data is divided into partitions. Each executor processes these in parallel using higher-order and lambda functions (e.g., map, filter) across RDDs or DataFrames. This allows seamless scaling for ETL, batch processes and feature engineering, slashing time for data prep and transformation.</p>\n  <h2>Task Parallelism with Ray — On Top of Databricks</h2>\n  <p>Ray enables thousands of model training or hyperparameter tuning jobs to run simultaneously, assigning optimal CPU or GPU fractions per task — maximizing cluster utilization. For example, Ray can fine-tune more than 1,400 time series models at once across a 52-core cluster, matching compute supply to job demand.</p>\n  <p>Integration with Databricks enables in-memory transfer via Apache Arrow, shifting from Spark’s data environment into Ray-driven ML tasks with zero I/O bottlenecks.</p>\n  <p>Task parallelism is crucial in model training and tuning, particularly when optimizing thousands of individual models — such as forecasting demand for every item at every store across an entire retail network. Ray excels at this layer, orchestrating workloads so that each model training or hyperparameter optimization task runs independently and simultaneously.</p>\n  <p>What sets Ray apart is its resource efficiency: not only can it manage thousands of concurrent tasks, but it dynamically allocates the right amount of compute resources — assigning specific numbers or even fractional shares of CPU and GPU cores to each task based on complexity. For example, Ray can assign as little as 0.25, 0.5, or 1 full CPU core (or combinations like 1 CPU and 0.5 GPU) to different jobs, maximizing overall cluster utilization.</p>\n  <p>In our benchmark, this fine-grained parallelism enabled us to train and tune more than 1,400 time series models concurrently across a 52-core cluster, resulting in a reduction of total processing time from nearly 3 hours (using only Spark) to under 30 minutes with Ray on Databricks. This not only means engineers can do more, faster, but it also ensures that every ounce of available hardware is fully leveraged for business value.</p>\n  <p><strong>Key benefit:</strong> Ray’s integration with Databricks enables in-memory data transfer with Apache Arrow, allowing ML workloads to switch from Spark’s data prep environment directly into Ray-powered experiments — without cumbersome file I/O.</p>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 Pilot 公司如何利用 Databricks 和 Ray 结合数据和任务并行，显著加速零售销售预测的 AI 模型构建。",
+  "oneSentenceSummary": "本文详细介绍了 Pilot 公司如何利用 Databricks 和 Ray 结合数据和任务并行，显著加速零售销售预测的 AI 模型构建。",
+  "summary": "本文探讨了 Pilot 公司如何通过在 Databricks 上实施一个由 Ray 增强的强大 pipeline，克服了销售预测中 AI 模型构建的瓶颈。它强调了并行性的关键作用：Spark 擅长用于大规模 ETL 和特征工程的数据并行，而 Ray 为高效的、并发的模型训练和超参数调优提供任务并行。这种集成通过 Apache Arrow 实现的内存数据传输实现，使得 Pilot 公司能够将超过 1400 个时间序列模型的处理时间从近 3 小时减少到 30 分钟以下。该解决方案确保了频繁的、细粒度的预测，而不会增加基础设施支出，从而转化为切实的业务效益，例如通过准确预测改善客户体验。",
+  "mainPoints": [
+    {
+      "point": "将 Spark 的数据并行与 Ray 的任务并行相结合，优化了端到端的人工智能模型构建。",
+      "explanation": "这种混合方法有效地处理了大规模数据准备（Spark）和计算密集型模型训练/调优（Ray），从而显著加速了零售预测等应用的 AI 流程。"
+    },
+    {
+      "point": "Ray 有效地协调了数千个并发的模型训练和超参数调优任务。",
+      "explanation": "Ray 通过为每个任务动态分配精确的 CPU/GPU 比例来最大化集群利用率，从而能够对细粒度模型（如单店单品需求预测）进行快速迭代和优化。"
+    },
+    {
+      "point": "通过 Apache Arrow 实现的内存数据传输消除了 Spark 和 Ray 工作负载之间的 I/O 瓶颈。",
+      "explanation": "这种无缝的数据交换允许从数据准备到机器学习任务的无缝过渡，从而大大减少了处理时间并提高了整体效率和模型的新鲜度。"
+    }
+  ],
+  "keyQuotes": [
+    "通过 Ray 的任务并行增强 Spark 的数据并行能力，使 Pilot 公司能够简化端到端的模型构建。",
+    "Ray 能够同时运行数千个模型训练或超参数调优作业，为每个任务分配最佳的 CPU 或 GPU 比例，从而最大程度地利用集群。",
+    "在我们的基准测试中，这种细粒度的并行性使我们能够在 52 核集群上同时训练和调整 1400 多个时间序列模型，从而将总处理时间从近 3 小时（仅使用 Spark）减少到在 Databricks 上使用 Ray 的 30 分钟以下。",
+    "Ray 与 Databricks 的集成通过 Apache Arrow 实现了内存数据传输，从而使机器学习工作负载可以直接从 Spark 的数据准备环境切换到 Ray 驱动的实验中，而无需繁琐的文件 I/O。"
+  ],
+  "tags": [
+    "AI 模型开发",
+    "并行计算",
+    "分布式系统",
+    "机器学习",
+    "Databricks"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 662,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762458654000,
+  "publishDateStr": "2025-11-06",
+  "publishDateTimeStr": "2025-11-06 19:50:54"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_e34a63",
+  "title": "ICML 2025 Spotlight | 谁导致了多智能体系统的失败？首个「自动化失败归因」研究出炉 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-30-2",
+  "date": "2025-05-30 03:43:13",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p>想象这样一个场景：你开发了一个由多个大型语言模型 Agent 组成的智能团队，它们协作完成复杂任务，比如一个 Agent 负责检索，一个负责决策。然而任务失败了，结果不对。</p>\n  <p>问题来了：到底是哪个 Agent 出了错？又是在对话流程的哪一环节？调试这样的多智能体系统如同大海捞针，需要翻阅大量复杂日志，极其耗时。</p>\n  <p>这并非虚构。在多智能体 LLM 系统中，失败常见但难以诊断。随着这类系统愈加普及，我们急需新方法快速定位错误。正因如此，ICML 2025 的一篇 Spotlight 论文提出了「自动化失败归因（Automated Failure Attribution）」的新研究方向，目标是让 AI 自动回答：是谁、在哪一步导致了失败。</p>\n  <p>该工作由 Penn State、Duke、UW、Goolge DeepMind 等机构的多位研究人员合作完成。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/95576162-e55e-418d-e82d-aa6e3ff7c000/public\" data-ratio=\"0.2462962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503487679\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/ff8dd413-6225-4682-9436-6bade2b8c38a/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</p></li>\n   <li>\n    <p>arXiv 地址：https://arxiv.org/pdf/2505.00212</p></li>\n   <li>\n    <p>代码地址：https://github.com/mingyin1/Agents_Failure_Attribution</p></li>\n  </ul>\n  <p><strong>背景挑战</strong></p>\n  <p>LLM 驱动的多智能体系统在诸多领域展现出巨大潜力，从自动化助手协同办公到多 Agent 合作完成 Web 复杂操作等。然而，这些系统<strong>脆弱性</strong>也逐渐显现：多个 Agent 之间的误解、信息传递错误或决策不当，都可能导致整体任务失败。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/93085c09-d3c1-476f-3950-ea3ac80c7200/public\" data-ratio=\"0.5907407407407408\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503487683\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/2b68deae-feb1-40fd-8681-9b731d83b48e/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>对于开发者来说，一个失败案例往往意味着必须手动审阅长长的对话日志，试图找出哪个 Agent 在哪一步出了差错。这种调试过程既<strong>费时费力</strong>，也需要调试者对整个任务逻辑非常熟悉。更大的挑战在于，<strong>缺乏系统化的方法</strong>来定位失败原因 —— 传统评估只关注任务成功与否，但很少深入到「失败责任」这一层面上。</p>\n  <p>结果就是，多智能体系统一旦出错，我们往往只能知道「出了问题」却无法快速知道「问题出在哪、因何而起」。这种局面严重限制了多智能体系统的改进和可信度。如果无法自动归因失败，我们就难以针对性地加强某个 Agent 的能力或优化协作策略。换言之，<strong>失败归因是连接评估与改进的缺失环节</strong>。</p>\n  <p><strong>研究内容</strong></p>\n  <p>针对上述挑战，这篇 ICML 2025 Spotlight 论文率先提出并 formalize 了<strong> LLM 多智能体系统的自动化失败归因</strong>这一新任务。</p>\n  <p>研究的核心目标：<strong>给定一个多 Agent 协作任务的失败日志，自动确定导致失败的罪魁祸首是哪个 Agent（「Who」），以及决定性错误发生在交互的哪一步（「When」）。</strong></p>\n  <p>为推动这一方向，作者构建了首个用于失败归因研究的基准数据集 ——<strong>「Who&amp;When」</strong>。该数据集精心收集了 <strong>127 个多智能体系统的失败日志</strong>，涵盖了多个公开基准（如 GAIA、AssistantBench 等）中的复杂任务，具有相当的多样性。更重要的是，作者为每条失败日志都提供了<strong>细粒度的人工标注</strong>：</p>\n  <ul>\n   <li>\n    <p>标记出导致任务失败的<strong>责任 Agent</strong>（即「Who」，哪个智能体犯了错）</p></li>\n   <li>\n    <p>标记出导致失败的<strong>关键错误步骤</strong>（即「When」，在整个对话 / 操作序列中的第几步出了错）</p></li>\n   <li>\n    <p>以及相应的<strong>自然语言解释</strong>（即「Why」，为什么这个错误会导致失败）</p></li>\n  </ul>\n  <p>基准数据集地址：https://huggingface.co/datasets/Kevin355/Who_and_When</p>\n  <p>这种标注使得数据集既可用于训练模型自动定位「谁」和「何时」出错，也方便人类分析失败的原因。数据集中「Who」和「When」标注的引入填补了以往多智能体评测中对失败原因关注的空白。可以说，Who&amp;When 数据集为自动失败归因任务提供了<strong>首个标准测试床</strong>，让研究者能够在统一语境下探索让 AI 自动当「故障侦探」的可能性。</p>\n  <p><strong>技术细节</strong></p>\n  <p>有了数据集，接下来作者设计了三种用于自动失败归因的初步方法，并对它们进行了系统比较：</p>\n  <ul>\n   <li>\n    <p><strong>All-at-Once 方法</strong>：将完整的多 Agent 日志一次性交给 LLM，让其整体判断 「哪个 Agent 在哪一步出错」。优点是调用少、成本低，擅长宏观归因；缺点是信息量大，易错过细节。</p></li>\n   <li>\n    <p><strong>Step-by-Step 方法</strong>：模拟人工调试，让 LLM 逐轮分析每一步交互，逐步定位错误。优点是粒度细、定位准；缺点是调用频繁、成本高，且误判可能累积。</p></li>\n   <li>\n    <p><strong>Binary Search 方法</strong>：对日志进行二分，逐步缩小范围，最终锁定出错步骤。在调用次数和定位精度之间取得平衡，适合长日志。缺点是需要多轮交互，复杂度居中。值得注意的是，每种方法在<strong>准确性、成本和粒度</strong>上各有权衡，没有一种方法能在所有指标上全面胜出。这三种方案共同构成了自动失败归因任务的初步解法库，探索了从「一步到位」到「循序渐进」再到「折中求解」的不同思路。作者在论文中详细讨论了它们各自的优劣。</p></li>\n  </ul>\n  <p><strong>实验结果</strong></p>\n  <p>作者在 Who&amp;When 数据集上对上述方法进行了系统评估，带来了许多<strong>发人深省的发现</strong>：</p>\n  <ul>\n   <li>\n    <p><strong>整体表现有限</strong>：当前方法效果仍较差。最佳模型在识别出错 Agent 上准确率仅约 53.5%，而准确定位错误步骤的准确率更低，仅 14.2%，几乎接近瞎猜。一些方法甚至表现不如随机，显示任务本身极具挑战性。</p></li>\n   <li>\n    <p><strong>各有所长</strong>：不同方法擅长不同子任务。All-at-Once 更擅长识别「谁」出错，Step-by-Step 更适合找出「何时」出错，而 Binary Search 表现居中，平衡调用成本和定位精度。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f1002803-1474-4c4a-6910-2ea41a704900/public\" data-ratio=\"0.35648148148148145\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503487689\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/af072caa-0eec-4b0c-8bf0-0af54dfe239c/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><strong>混合策略更优但代价高</strong>：将多种方法结合（如先用 All-at-Once 找嫌疑 Agent，再用 Step-by-Step 精查）确实提升了准确率，验证了方法间的互补性。但计算成本显著增加，需在效果与资源之间权衡。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b00c40db-c2e2-4177-f666-c711eea7a100/public\" data-ratio=\"0.3509259259259259\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503487690\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/a9d07886-500b-448d-a54a-0d0100fd11c8/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><strong>现有 SOTA 模型乏力</strong>： OpenAI o1 或者 DeepSeek R1，表现仍不理想，远未达到实用水平。可见，失败归因任务对 AI 推理与理解能力的要求，远超当前模型在常规任务中的表现，凸显了其挑战性和研究价值。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/10541215-31d4-41cc-6bfa-d16e38c56600/public\" data-ratio=\"0.16944444444444445\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503487691\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/1c8fd566-00ef-4fa0-89a8-8e3ebf0e912b/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>结论</strong></p>\n  <p>自动化失败归因有望成为多智能体 AI 系统开发中的重要一环，它将帮助我们更深入地<strong>理解 AI 代理的失败模式</strong>，将「哪里出错、谁之过」从令人头疼的谜题变成可量化分析的问题。因此，我们可以在评估与改进之间架起桥梁，打造更可靠、更智能的多 Agent 协作系统。</p>\n \n",
+  "aiSummary": "ICML 2025 研究提出多智能体系统自动化失败归因，并构建首个数据集揭示当前 AI 归因能力不足。",
+  "oneSentenceSummary": "ICML 2025 研究提出多智能体系统自动化失败归因，并构建首个数据集揭示当前 AI 归因能力不足。",
+  "summary": "文章深入探讨了大型语言模型驱动的多智能体系统在调试中面临的挑战，指出当前定位任务失败原因费时费力，缺乏系统化方法。基于此，一篇 ICML 2025 Spotlight 论文提出了“自动化失败归因”这一新研究方向，旨在自动确定导致系统失败的智能体（Who）及出错步骤（When）。为推动该研究，作者构建了首个“Who&When”基准数据集，包含 127 个失败日志及人工标注的 Who/When/Why 信息。文章介绍了三种初步归因方法（All-at-Once、Step-by-Step、Binary Search）并评估发现，当前最佳模型在识别 Who 和 When 上的准确率较低（分别为 53.5% 和 14.2%），显示该任务极具挑战性。研究认为，自动化失败归因是连接系统评估与改进的关键环节，对提升多智能体系统可靠性至关重要，但也提示该领域尚处于早期阶段，需要更多研究。",
+  "mainPoints": [
+    {
+      "point": "多智能体 LLM 系统失败调试困难且效率低下",
+      "explanation": "系统失败后，开发者需手动审查冗长日志定位错误 Agent 和步骤，过程耗时且缺乏系统性，限制了系统改进。"
+    },
+    {
+      "point": "研究提出自动化失败归因新任务",
+      "explanation": "目标是让 AI 自动识别多 Agent 系统任务失败的责任 Agent（Who）和关键错误步骤（When）。"
+    },
+    {
+      "point": "构建首个失败归因基准数据集 Who&When",
+      "explanation": "包含 127 个失败日志及人工标注的 Who/When/Why 信息，为自动失败归因研究提供了标准测试床。"
+    },
+    {
+      "point": "初步方法测试显示当前 AI 归因能力有限",
+      "explanation": "现有方法在 Who&When 数据集上准确率较低，远未达实用水平，凸显了任务的挑战性及研究必要性。"
+    },
+    {
+      "point": "失败归因是连接评估与改进的关键",
+      "explanation": "自动化归因有助于理解 AI 代理失败模式，实现可量化分析，从而针对性优化系统可靠性和智能性。"
+    }
+  ],
+  "keyQuotes": [
+    "调试这样的多智能体系统如同大海捞针，需要翻阅大量复杂日志，极其耗时。",
+    "自动化失败归因（Automated Failure Attribution）的新研究方向，目标是让 AI 自动回答：是谁、在哪一步导致了失败。",
+    "失败归因是连接评估与改进的缺失环节。",
+    "整体表现有限：当前方法效果仍较差。",
+    "可见，失败归因任务对 AI 推理与理解能力的要求，远超当前模型在常规任务中的表现，凸显了其挑战性和研究价值。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "失败归因",
+    "大语言模型",
+    "模型评估",
+    "Who&When 数据集"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2206,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748576593000,
+  "publishDateStr": "2025-05-30",
+  "publishDateTimeStr": "2025-05-30 03:43:13"
+}

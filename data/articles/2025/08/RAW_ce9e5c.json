@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ce9e5c",
+  "title": "OpenAI 发布 gpt-oss-120b 和 gpt-oss-20b：用于本地部署的开源权重语言模型",
+  "url": "https://www.infoq.com/news/2025/08/openai-gpt-oss/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-08 05:00:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>OpenAI has <a href=\"https://openai.com/index/introducing-gpt-oss/\">released</a> gpt-oss-120b and gpt-oss-20b, two open-weight language models designed for high-performance reasoning, tool use, and efficient deployment. These are the company’s first fully open-weight language models since GPT-2, and are available under the permissive Apache 2.0 license.\n    <br>\n    <br>\n    The gpt-oss-120b model activates 5.1 billion parameters per token using a mixture-of-experts architecture. It matches or surpasses the proprietary o4-mini on core reasoning benchmarks, while running efficiently on a single 80 GB GPU. The smaller gpt-oss-20b model activates 3.6 billion of its 21 billion parameters and can run on consumer-grade hardware with just 16 GB of memory, making it suitable for on-device inference or rapid iteration without reliance on cloud infrastructure.\n    <br>\n    <br>\n    Both models support advanced use cases, including chain-of-thought reasoning, tool use, and structured outputs. Developers can configure the model to apply varying levels of reasoning effort, striking a balance between speed and accuracy.\n    <br>\n    <br>\n    Trained using techniques adapted from OpenAI’s internal o-series models, gpt-oss models use rotary positional embeddings, grouped multi-query attention, and support 128k context lengths. They were evaluated on coding, health, math, and agentic benchmarks, including MMLU, HealthBench, Codeforces, and TauBench, showing strong performance even compared to closed models like o4-mini and GPT-4o.</p>\n   <p>\n    <meta charset=\"utf-8\">\n    <b id=\"docs-internal-guid-80b4982e-7fff-3d3c-94d8-ca05e08c353c\"><img height=\"409\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXfe3a-XdbbvRGfDGWbJJ36FmNWtzIpColhYfcou_0fwFr5Cvya2sEf0v_CDkwFnJb1Uk8k30d_K9ntfjbW3mSq-TiGIU9J_xh94WtAlDesN1AtjDcQpov9mW4D2qY0iRjsBSfzsng?key=iD86fmVhpklnGPMJfN2vNg\" width=\"602\" rel=\"share\"></b>\n    <br>\n    <meta charset=\"utf-8\">\n    <b id=\"docs-internal-guid-847c7cce-7fff-4f0f-c76c-b8c99cd12103\"><img height=\"317\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXeOtn9qcDJ0uG8RedItyrqNHSes8GJR5QP-8H1J_N9KI6etUrUE7FautHoDYem4K3M876iAgF-YxtHTBCXgEGp56KiQpnqwaM7xvWoseP8EfBvjPHMoYHz3YrrOoJu_c0KjgQVR?key=iD86fmVhpklnGPMJfN2vNg\" width=\"602\" rel=\"share\"></b>\n    <br>\n    <em>Source: Open AI Blog</em>\n    <br>\n    <br>\n    OpenAI released the models without applying direct supervision to their chain-of-thought (CoT) reasoning, enabling researchers to study reasoning traces for potential issues such as bias or misuse.\n    <br>\n    <br>\n    To assess risk, OpenAI performed worst-case scenario fine-tuning on the models using adversarial data in biology and cybersecurity. Even with strong fine-tuning efforts, the models did not reach high-risk capability levels according to OpenAI’s Preparedness Framework. Findings from external expert reviewers informed the final release. The company has also launched a red teaming challenge with a $500,000 prize pool to evaluate the models in real-world conditions further.\n    <br>\n    <br>\n    The models are available on <a href=\"https://huggingface.co/openai/gpt-oss-120b\">Hugging Face</a> and several deployment platforms. The 20B model can be run locally with just 16 GB of RAM. As one Reddit user <a href=\"https://www.reddit.com/r/OpenAI/comments/1miermc/comment/n746xuk/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">asked</a>:\n   </p>\n   <blockquote>\n    <p>Can this model be used on a computer without connecting to the internet locally? What is the lowest-powered computer (Altman says ‘high end’) that can run this model?</p>\n   </blockquote>\n   <p>Another user clarified:</p>\n   <blockquote>\n    <p>After downloading, you don't need the internet to run it. As for specs: you’ll need something with at least 16GB of RAM (VRAM or system) for the 20B to ‘run’ properly. A MacBook Air with 16GB can run this at tens of tokens per second. A modern GPU hits hundreds+.</p>\n   </blockquote>\n   <p>Microsoft is also bringing GPU-optimized versions of the 20B model to Windows via ONNX Runtime, making it available through Foundry Local and the AI Toolkit for VS Code.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI Releases gpt-oss-120b and gpt-oss-20b, Open-Weight Language Models for Local Deployment\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/openai-gpt-oss/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1754629200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布了 gpt-oss-120b 和 gpt-oss-20b，这是自 GPT-2 以来首个开源权重语言模型，专为高性能推理和在各种硬件上高效本地部署而设计。",
+  "oneSentenceSummary": "OpenAI 发布了 gpt-oss-120b 和 gpt-oss-20b，这是自 GPT-2 以来首个开源权重语言模型，专为高性能推理和在各种硬件上高效本地部署而设计。",
+  "summary": "OpenAI 发布了 gpt-oss-120b 和 gpt-oss-20b，这是自 GPT-2 以来首个完全开源权重的语言模型，现在以宽松的 Apache 2.0 许可提供。这些模型专为高性能推理、高效的工具调用和高效的本地部署而设计。较大的 gpt-oss-120b 采用混合专家架构 (MoE)，每个 token 激活 51 亿个参数，其性能与 o4-mini 等专有模型媲美或更优，同时在单个 80 GB GPU 上高效运行。更紧凑的 gpt-oss-20b 针对消费级硬件进行了优化，仅需要 16 GB 内存，使其适用于端侧推理和无需云依赖的快速迭代。这两种模型都支持高级用例，如思维链推理和结构化输出，利用了 OpenAI 的 o 系列模型中的技术，并支持 128k 上下文长度，在编码、健康、数学和代理基准测试中表现出强大的性能。OpenAI 还进行了广泛的风险评估，包括对抗性微调和红队演练，确认这些模型未达到高风险能力水平。这些模型可在 Hugging Face 和各种部署平台上获得，微软还通过 ONNX Runtime 将 20B 模型集成到 Windows 中。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 发布了自 GPT-2 以来首个开源权重 LLM，以 Apache 2.0 提供。",
+      "explanation": "此次发布标志着 OpenAI 增加了对开源贡献的承诺，从而在先进 AI 模型开发中促进了更广泛的可访问性、社区创新和透明度。"
+    },
+    {
+      "point": "gpt-oss 模型针对在各种硬件配置上高效本地部署进行了优化。",
+      "explanation": "gpt-oss-120b 在单个 80 GB GPU 上运行，gpt-oss-20b 在 16 GB 消费级硬件上运行，从而促进了端侧推理，并减少了许多应用程序对云基础设施的依赖。"
+    },
+    {
+      "point": "这些模型表现出强大的推理能力，并经过了严格的安全评估。",
+      "explanation": "它们在关键基准测试中与封闭模型相匹配或超过，并已使用对抗性数据进行了测试，确认它们未达到高风险能力水平，符合负责任的 AI 开发实践。"
+    }
+  ],
+  "keyQuotes": [
+    "这些是该公司自 GPT-2 以来首个完全开源权重的语言模型，并以宽松的 Apache 2.0 许可提供。",
+    "gpt-oss-120b 模型使用混合专家架构 (MoE) 激活每个 token 51 亿个参数。它在核心推理基准测试中与专有的 o4-mini 相匹配或超过，同时在单个 80 GB GPU 上高效运行。",
+    "较小的 gpt-oss-20b 模型激活其 210 亿个参数中的 36 亿个，并且可以在仅具有 16 GB 内存的消费级硬件上运行，使其适用于端侧推理或无需依赖云基础设施的快速迭代。",
+    "为了评估风险，OpenAI 使用生物学和网络安全中的对抗性数据对模型进行了最坏情况的场景微调。即使经过强大的微调，根据 OpenAI 的准备框架，这些模型也没有达到高风险能力水平。"
+  ],
+  "tags": [
+    "开源权重 LLM",
+    "本地部署",
+    "OpenAI",
+    "混合专家模型",
+    "端侧 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 430,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1754629200000,
+  "publishDateStr": "2025-08-08",
+  "publishDateTimeStr": "2025-08-08 05:00:00"
+}

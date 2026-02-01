@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2357ae",
+  "title": "LLMstxt.new 发布：第三期发布周 - 第 4 天",
+  "url": "https://www.firecrawl.dev/blog/launch-week-iii-day-4-announcing-llmstxt-new",
+  "date": "2025-04-17 19:05:02",
+  "author": "eric",
+  "siteName": "FireCrawl Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><strong>Welcome to Launch Week III, Day 4!</strong> Today we’re excited to launch <a href=\"http://llmstxt.new\"><strong>llmstxt.new</strong></a> — the fastest way to turn any website into a clean, consolidated text file for LLMs.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"meet-llmstxt.new:-text-extraction-made-effortless\" class=\"absolute -top-[120px]\"></span>\n   <h3>Meet llmstxt.new: Text Extraction Made Effortless</h3>\n  </div>\n  <p><img src=\"https://www.firecrawl.dev/launch-week/lw3-d4-2.webp\" alt=\"llmstxt.new Preview\"></p>\n  <p>With llmstxt.new, you can instantly transform any webpage into a .txt file that’s optimized for large language models. No clutter, no boilerplate — just the content that matters.</p>\n  <p>Just add <code>llmstxt.new/</code> in front of any URL and get back clean, structured text ready for use in training or inference.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"key-features\" class=\"absolute -top-[120px]\"></span>\n   <h3>Key Features</h3>\n  </div>\n  <ul>\n   <li><strong>Instant Usage</strong>: Add <code>llmstxt.new/</code> before any URL.<!-- -->\n    <ul>\n     <li>Example: <code>llmstxt.new/https://firecrawl.dev</code></li>\n    </ul></li>\n   <li><strong>Two Outputs</strong>:<!-- -->\n    <ul>\n     <li><code>llms.txt</code> – a concise, structured summary.</li>\n     <li><code>llms-full.txt</code> – the complete page content.</li>\n    </ul></li>\n   <li><strong>API Friendly</strong>: Use it via <code>http://llmstxt.new/{YOUR_URL}</code> or integrate with your Firecrawl API key for full control.</li>\n   <li><strong>LLM-Ready Format</strong>: Built for modern LLM pipelines, both training and inference.</li>\n  </ul>\n  <div class=\"blog-heading relative\">\n   <span id=\"built-on-firecrawl\" class=\"absolute -top-[120px]\"></span>\n   <h3>Built on Firecrawl</h3>\n  </div>\n  <p>llmstxt.new is powered by Firecrawl’s extraction engine, ensuring reliable parsing, smart content filtering, and high-quality text generation from any web source.</p>\n  <p>Whether you’re prepping datasets, building LLM apps, or feeding prompts — this tool gets you to usable text faster than ever.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"try-it-now\" class=\"absolute -top-[120px]\"></span>\n   <h3>Try it Now</h3>\n  </div>\n  <ul>\n   <li><strong>Get started:</strong> <a href=\"http://llmstxt.new\">llmstxt.new</a></li>\n   <li><strong>Need help?</strong> Join the <a href=\"https://discord.gg/S7Enyh9Abh\">Discord</a> or reach out via <a href=\"mailto:help@firecrawl.com\">help@firecrawl.com</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "llmstxt.new 是一个将任何网站转换为干净、精简的文本文件的工具，该文件针对大型语言模型 (LLM) 进行了优化。",
+  "oneSentenceSummary": "llmstxt.new 是一个将任何网站转换为干净、精简的文本文件的工具，该文件针对大型语言模型 (LLM) 进行了优化。",
+  "summary": "llmstxt.new 是一款旨在简化从网站提取文本并格式化，以便用于大型语言模型 (LLM) 的工具。它解决了从网页获取 LLM 可用数据的难题。只需在 URL 前添加 'llmstxt.new/'，用户即可获得包含网页关键内容的 .txt 文件，该文件经过优化，可用于训练和推理，从而显著提高数据准备效率。llmstxt.new 提供两种输出选项：'llms.txt' 提供简洁摘要，'llms-full.txt' 提供完整页面内容。用户可以直接通过 URL 使用该工具，也可以将其与 Firecrawl API 集成以获得更多控制。",
+  "mainPoints": [
+    {
+      "point": "大型语言模型文本提取",
+      "explanation": "llmstxt.new 简化了将任何网站转换为干净的、适用于大型语言模型的文本文件的过程，从而简化了训练和推理的数据准备。"
+    },
+    {
+      "point": "URL 修改，即时使用",
+      "explanation": "通过在任何 URL 前添加 `llmstxt.new/`，用户可以立即访问结构化文本，无需复杂的爬取设置。"
+    },
+    {
+      "point": "基于 Firecrawl 的强大技术",
+      "explanation": "llmstxt.new 构建于 Firecrawl 之上，可确保可靠的解析、智能内容过滤以及来自各种 Web 源的高质量文本生成。"
+    }
+  ],
+  "keyQuotes": [
+    "llmstxt.new --- 将任何网站转换为干净、精简的文本文件以供大型语言模型使用的最快方法。",
+    "只需在任何 URL 前面添加 `llmstxt.new/`，即可获得干净、结构化的文本，可用于训练或推理。",
+    "专为现代大型语言模型管道构建，包括训练和推理。"
+  ],
+  "tags": [
+    "大型语言模型",
+    "文本提取",
+    "Firecrawl",
+    "网络爬取",
+    "数据准备"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 90,
+  "wordCount": 197,
+  "domain": "firecrawl.dev",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_629b1d",
+  "sourceName": "FireCrawl Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744916702000,
+  "publishDateStr": "2025-04-17",
+  "publishDateTimeStr": "2025-04-17 19:05:02"
+}

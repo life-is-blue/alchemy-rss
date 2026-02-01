@@ -1,0 +1,54 @@
+{
+  "id": "RAW_462c7206",
+  "title": "OpenAI 自研芯片内幕曝光！18 个月前开始用 AI 优化芯片设计",
+  "url": "https://www.qbitai.com/2025/10/341421.html",
+  "date": "2025-10-14 06:23:19",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">“用模型优化芯片设计，比人类工程师更快。”</p>\n  <p data-track=\"2\">“合作水到渠成，相关项目已经持续了约18个月……”</p>\n  <p data-track=\"3\">好家伙，就在OpenAI博通官宣完合作之后，双方头头儿开始齐聚一堂亲口爆料了！</p>\n  <p data-track=\"4\">OpenAI这边派出了CEO奥特曼（右2）和总裁Greg Brockman（右1），博通则派出了总裁兼CEO Hock Tan（C位）以及半导体解决方案事业群总裁Charlie Kawwas（左2）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091005_29990cd2db3e5871b66ee43551b6301a.png\" data-src=\"https://image.jido.dev/20251014091005_29990cd2db3e5871b66ee43551b6301a.png\">\n  </div>\n  <p data-track=\"5\">人一多之后，什么合作契机、合作细节等等，几乎全都被抢着透了个干净。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091006_a659e6966940d5be336f8b6981526767.jpeg\" data-src=\"https://image.jido.dev/20251014091006_a659e6966940d5be336f8b6981526767.jpeg\">\n  </div>\n  <p data-track=\"6\">不过在这之前，还是先来回顾一下双方刚刚达成的合作内容吧。</p>\n  <p data-track=\"8\">根据公告，OpenAI与半导体巨头博通达成的合作如下——</p>\n  <p data-track=\"9\">双方将共同部署由OpenAI设计的<strong>10GW规模</strong>的AI加速器。预计博通会从<strong>2026年下半年开始</strong>部署配备AI加速器和网络系统的机架，并于<strong>2029年底前</strong>完成全部部署。</p>\n  <blockquote>\n   <p data-track=\"10\">OpenAI将负责设计这些加速器与系统，而博通则与其合作开发并投入部署。</p>\n   <p data-track=\"11\">通过设计自己的芯片与系统，OpenAI可将其在前沿模型与产品开发中所获得的经验“直接内嵌”于硬件之中，解锁新的能力与智慧水平。</p>\n   <p data-track=\"12\">这些机架将完全采用博通的以太网及其他互联解决方案，用以满足全球对AI的激增需求，并在OpenAI的设施以及合作伙伴的数据中心内部署。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091005_ed40c2aa001a4f9c90669b322a3b8085.png\" data-src=\"https://image.jido.dev/20251014091005_ed40c2aa001a4f9c90669b322a3b8085.png\">\n  </div>\n  <p data-track=\"13\">10GW规模啥概念？</p>\n  <p data-track=\"14\">通常而言，传统超算中心的功率大概在几百MW（兆瓦），而10GW=10000MW。</p>\n  <p data-track=\"15\">更大白话一点，10GW的电力足以同时点亮约1亿个100瓦灯泡。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091007_c9e38c00958304a330c042358b98b3ec.jpeg\" data-src=\"https://image.jido.dev/20251014091007_c9e38c00958304a330c042358b98b3ec.jpeg\">\n  </div>\n  <p data-track=\"16\"><strong>OpenAI CEO奥特曼</strong>在公告中表示，“与博通的合作是构建解锁AI潜能所需基础设施的关键一步，有助于为人类与企业带来真正的益处”。</p>\n  <p data-track=\"17\"><strong>博通总裁兼CEO Hock Tan</strong>则认为，“博通与OpenAI的合作标志着在追求通用人工智能道路上的一个关键时刻。OpenAI自ChatGPT问世以来一直处于AI革命的前沿，我们非常高兴能与其共同开发并部署10GW的下一代加速器与网络系统，为AI的未来奠定基础”。</p>\n  <p data-track=\"18\"><strong>OpenAI总裁Greg Brockman</strong>强调道，“通过制造我们自己的芯片，我们可以将创造前沿模型与产品的经验直接嵌入硬件，从而解锁新的能力与智能水平”。</p>\n  <p data-track=\"19\"><strong>博通半导体解决方案事业群总裁Charlie Kawwas</strong>宣称，“我们与OpenAI的合作将推动AI突破，并使其潜力更快实现。定制加速器非常适合与标准化以太网的扩展互联解决方案结合应用，以在成本和性能上优化下一代AI基础设施。机架系统将包括博通全套以太网、PCIe和光互联连接方案，重申我们在AI基建领域的方案领导地位”。</p>\n  <p data-track=\"20\">总之，对博通而言，这次合作进一步凸显了定制加速器的重要性，以及以太网作为AI数据中心中纵向与横向扩展网络核心技术的战略地位。</p>\n  <p data-track=\"21\">而对OpenAI来说，则有助于进一步缓解算力紧张问题，毕竟ChatGPT每周有近8亿活跃用户。</p>\n  <p data-track=\"22\">按网友的话来说就是，找老黄买卡还要排队，心急的OpenAI这是决定自己下场了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091006_f792b3397a9395d50315d9eeab6cb092.png\" data-src=\"https://image.jido.dev/20251014091006_f792b3397a9395d50315d9eeab6cb092.png\">\n  </div>\n  <p data-track=\"24\">OK，听完了各方场面话，咱们再来从几位的聊天中扒扒细节。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091008_a5e32a5b118a3576a4713c61940c68b7.jpeg\" data-src=\"https://image.jido.dev/20251014091008_a5e32a5b118a3576a4713c61940c68b7.jpeg\">\n  </div>\n  <p data-track=\"25\">过程中主持人化身嘴替，问出了两个关键问题：</p>\n  <ul>\n   <li data-track=\"26\">为什么OpenAI要现在自研芯片？</li>\n   <li data-track=\"27\">自研芯片之后会发生什么？</li>\n  </ul>\n  <p data-track=\"28\">对于问题一，OpenAI总裁Greg Brockman总结了这样几点理由：<strong>1） 对工作负载的深刻理解以及垂直整合的必要性；2）规模带来的历史发现；3）外部合作受挫与实现愿景的必要性。</strong></p>\n  <p data-track=\"29\">具体而言，Greg透露其实双方已经合作了约18个月，而且进展很快。之所以决定自研芯片，一大理由是他们对工作负载（workload）有了深刻理解。</p>\n  <blockquote>\n   <p data-track=\"30\">我们与生态系统中的众多合作伙伴紧密协作。市场上有众多出色的芯片，每款芯片都有其独特的优势。因此，我们一直在寻找那些我们认为尚未得到充分服务的特定工作负载。</p>\n   <p data-track=\"31\">我们思考如何构建能够加速这些可能性的解决方案。所以，我认为我们拥有的这种能力——即能够为我们预见到但难以通过其他合作伙伴实现的需求进行完整的垂直整合——是一个非常明确的项目应用场景。</p>\n  </blockquote>\n  <p data-track=\"32\">划重点，通过垂直整合来满足现有芯片无法覆盖到的特定计算任务或工作负载。</p>\n  <p data-track=\"33\">这也是奥特曼最近一再强调的点。他在a16z的一场个人采访中表示，<strong>曾经自己一直反对垂直整合，但现在认为自己错了</strong>。</p>\n  <p data-track=\"34\">当时他解释说，虽然经济理论倾向于公司只做一件事，但在OpenAI的案例中，为了实现使命，他们必须做比原先想象中更多的事情。</p>\n  <p data-track=\"35\">他还引用了iPhone的例子，称其是科技行业最令人难以置信的产品，并指出它是极其垂直整合的。</p>\n  <p data-track=\"36\">而自研芯片，无疑也是让OpenAI走向垂直整合的关键一环。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091005_db6add5980724cffdfeecfbf0770e7bb.png\" data-src=\"https://image.jido.dev/20251014091005_db6add5980724cffdfeecfbf0770e7bb.png\">\n  </div>\n  <p data-track=\"37\">此外，Greg还谈到了规模的效力。</p>\n  <blockquote>\n   <p data-track=\"38\">当我们创立OpenAI时，并没有把太多精力放在计算上。因为当时认为通往AGI的道路主要在于想法，主要在于尝试和其他东西……不过大约两年后，在2017年，我们发现从规模中获得了最好的结果。</p>\n  </blockquote>\n  <p data-track=\"39\">当时他们正尝试在视频游戏《Dota 2》背景下扩展强化学习，结果无意中发现了规模扩展的巨大作用，于是开始将其作用于整个AI系统。</p>\n  <p data-track=\"40\">所以，自研芯片也是实现算力不断扩展的重要举措。</p>\n  <p data-track=\"41\"><strong>而且从以往经历来看，没有芯片就没有话语权</strong>。Greg透露一路遇到了很多芯片公司，当他们反馈“这是我们认为事情将要发展的方向、模型需要是这种形状的”，结果根本没人听。</p>\n  <blockquote>\n   <p data-track=\"42\">处于这样一种境地非常令人沮丧，所以未来走向很明确了。</p>\n  </blockquote>\n  <p data-track=\"43\">至于自研芯片后会发生什么，奥特曼认为通过优化整个堆栈，他们将能够实现巨大的效率提升，并能够<strong>从每瓦特中榨取出更多的智能</strong>。</p>\n  <p data-track=\"44\">这种效率提升将直接转化为更好的性能、更快的模型、更便宜的模型。</p>\n  <p data-track=\"45\">这里他还有一个和老黄不谋而合的观点——人们总是想要更多，你只需要给他就行。</p>\n  <p data-track=\"46\">另外值得一提的是，Greg也爆料称，AI在自研芯片过程中发挥了大作用——<strong>已经在用模型优化芯片设计，而且比人类工程师更快</strong>（连用了“非常有趣”这样的表述）。</p>\n  <blockquote>\n   <p data-track=\"47\">你拿出人类已经优化过的组件，然后投入计算，模型就会提出自己的优化方案，这非常有趣。</p>\n   <p data-track=\"48\">我们现在处于这样一个阶段，我不认为我们拥有的任何优化方案是人类设计师想不到的。</p>\n   <p data-track=\"49\">通常我们的专家稍后会看一眼，然后说，‘是的，这在我的清单上’，但这可能是‘20件事之一，他们需要再花一个月才能实现’。这确实非常、非常有趣。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091006_2f946a98f9e66629bcdbbd06ff8328b0.png\" data-src=\"https://image.jido.dev/20251014091006_2f946a98f9e66629bcdbbd06ff8328b0.png\">\n  </div>\n  <p data-track=\"51\">其实上个月中旬，OpenAI也和英伟达达成了类似合作。</p>\n  <p data-track=\"52\">规模也是一样，采用英伟达系统，OpenAI将部署至少10GW的AI集群（大约数百万块英伟达GPU），时间大约也是在2026年下半年开始。</p>\n  <p data-track=\"53\">为支持该计划，英伟达还计划向OpenAI投资高达1000亿美元。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091006_a7fb873391c679a21dda5aa4261dc4f5.png\" data-src=\"https://image.jido.dev/20251014091006_a7fb873391c679a21dda5aa4261dc4f5.png\">\n  </div>\n  <p data-track=\"54\">再后来，OpenAI还拉上了AMD，规模大约6GW。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091005_80b03aa1257aca0c049e6626df17cbd8.png\" data-src=\"https://image.jido.dev/20251014091005_80b03aa1257aca0c049e6626df17cbd8.png\">\n  </div>\n  <p data-track=\"55\">直到今天，博通也加入了OpenAI的这一“朋友圈”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091007_cc99d90c24a542b633b0b07b7b6b828a.png\" data-src=\"https://image.jido.dev/20251014091007_cc99d90c24a542b633b0b07b7b6b828a.png\">\n  </div>\n  <p data-track=\"56\">总之，为了突破算力瓶颈，OpenAI走“自研+合作”的路线已经相当明确了。而且比想象中更早，OpenAI其实已经潜心布局了近两年。</p>\n  <p data-track=\"57\">据OpenAI芯片设计方面的员工透露，<strong>OpenAI过去18个月一直在研发芯片，并且自o1开启模型推理浪潮后，他们从几个月前也开始专门设计一款推理芯片。</strong></p>\n  <blockquote>\n   <p data-track=\"58\">现在，距离我认为的任何首次推出的芯片中，最快、最大规模量产的还有9个月。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI自研芯片内幕曝光！18个月前开始用AI优化芯片设计\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014091007_052c6ab8b671d6b0df0f58bc21ef5046.png\" data-src=\"https://image.jido.dev/20251014091007_052c6ab8b671d6b0df0f58bc21ef5046.png\">\n  </div>\n  <p data-track=\"59\">不知道OpenAI第一款自研量产芯片表现如何？一把子期待住了~</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenAI 与博通合作部署 10GW AI 加速器，并揭示其自研芯片战略及利用 AI 优化芯片设计，以应对算力瓶颈并实现垂直整合。",
+  "oneSentenceSummary": "OpenAI 与博通合作部署 10GW AI 加速器，并揭示其自研芯片战略及利用 AI 优化芯片设计，以应对算力瓶颈并实现垂直整合。",
+  "summary": "文章深入报道了 OpenAI 与半导体巨头博通达成的重要合作，双方将共同部署由 OpenAI 设计的 10GW 规模 AI 加速器。博通计划于 2026 年下半年开始部署，并于 2029 年底前完成全部部署。此次合作旨在通过定制硬件将 OpenAI 在前沿模型开发中的经验直接嵌入，以满足 AI 对算力激增的需求。OpenAI 高层，包括 CEO 奥特曼和总裁 Greg Brockman，详细阐述了自研芯片的战略考量，主要包括对特定工作负载的深刻理解、实现垂直整合的必要性（奥特曼曾反对垂直整合但现已改变看法）、规模化效应的重要性，以及外部合作中遇到的局限性（芯片公司不愿采纳其建议）。文章还披露了 OpenAI 已利用 AI 模型优化芯片设计达 18 个月，且效率高于人类工程师。此外，文章提及 OpenAI 此前已与英伟达和 AMD 达成类似合作，这表明其通过“自研+合作”模式缓解算力瓶颈的明确战略已潜心布局近两年，并预计首款自研量产芯片将在 9 个月内推出。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 与博通合作部署大规模 AI 加速器，旨在缓解算力瓶颈并实现垂直整合。",
+      "explanation": "双方将部署 10GW 规模 AI 加速器，OpenAI 负责设计，博通部署，旨在将模型开发经验内嵌硬件，满足 AI 算力需求，并走向奥特曼强调的垂直整合模式。"
+    },
+    {
+      "point": "OpenAI 自研芯片是基于对工作负载的深刻理解和外部合作受挫的战略选择。",
+      "explanation": "OpenAI 通过 18 个月的合作积累了对特定工作负载的理解，发现现有芯片无法满足需求，且外部供应商不听取反馈，促使其决定自研芯片。"
+    },
+    {
+      "point": "OpenAI 已利用 AI 模型优化芯片设计，实现比人类工程师更快的效率提升。",
+      "explanation": "文章透露 OpenAI 已用 AI 模型优化芯片设计 18 个月，能快速提出优化方案，虽非人类想不到，但能显著加速设计进程，提高效率。"
+    }
+  ],
+  "keyQuotes": [
+    "用模型优化芯片设计，比人类工程师更快。",
+    "通过设计自己的芯片与系统，OpenAI 可将其在前沿模型与产品开发中所获得的经验“直接内嵌”于硬件之中，解锁新的能力与智慧水平。",
+    "曾经自己一直反对垂直整合，但现在认为自己错了。",
+    "我们现在处于这样一个阶段，我不认为我们拥有的任何优化方案是人类设计师想不到的。通常我们的专家稍后会看一眼，然后说，'是的，这在我的清单上'，但这可能是'20 件事之一，他们需要再花一个月才能实现'。这确实非常、非常有趣。"
+  ],
+  "tags": [
+    "AI芯片",
+    "OpenAI",
+    "博通",
+    "算力基础设施",
+    "垂直整合"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 91,
+  "wordCount": 2838,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760422999000,
+  "publishDateStr": "2025-10-14",
+  "publishDateTimeStr": "2025-10-14 06:23:19"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_23a053",
+  "title": "Last Week in AI #317 - 美国人工智能行动计划，欧盟人工智能指南：谷歌签署，Meta 拒绝，科技巨头现分歧，ChatGPT 学习模式",
+  "url": "https://lastweekin.ai/p/last-week-in-ai-317-us-ai-action",
+  "date": "2025-07-30 20:05:52",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <h3 class=\"header-anchor-post\">Top News</h3>\n  <h4 class=\"header-anchor-post\"><a href=\"https://gamesbeat.com/astrocade-rolls-out-ai-agent-powered-game-creation-experience-so-anyone-can-create-games/\" rel>Astrocade rolls out AI agent-powered game creation experience so anyone can create games</a><span>*</span></h4>\n </body>\n</html>",
+  "aiSummary": "本文总结了人工智能行业的每周关键进展，包括政策、产品、商业和研究。",
+  "oneSentenceSummary": "本文总结了人工智能行业的每周关键进展，包括政策、产品、商业和研究。",
+  "summary": "本文是对人工智能生态中重大事件的每周总结，分为头条新闻、工具、商业、研究和政策几类。主要亮点包括 Astrocade 的人工智能驱动游戏创建平台发布、白宫为保持美国领导地位而制定的全面人工智能行动计划，以及谷歌和 Meta 在欧盟人工智能指南上的分歧。OpenAI 在 ChatGPT 中推出了“学习模式”，旨在促进批判性思维。“工具”部分重点介绍了来自 GitHub、Anthropic、NVIDIA、智谱 AI、微软、Figma、Runway、谷歌和 Adobe 等公司的更新，展示了人工智能辅助开发、模型发布和创意应用方面的进展。“商业”新闻包括 OpenAI 与 Oracle 扩大数据中心交易、谷歌的 AI 概览用户增长、Meta 新的人工智能超级智能首席科学家，以及人工智能教育和芯片初创公司的融资新闻。“研究”部分简要介绍了新的基准、模型架构发现、风险管理框架和扩展假设。最后，“政策”指出人们对美国人工智能监管监督减少的担忧。本摘要旨在帮助读者快速了解人工智能的创新进展及其广泛影响。",
+  "mainPoints": [
+    {
+      "point": "各国政府正积极通过政策法规影响人工智能的开发和应用。",
+      "explanation": "白宫的人工智能行动计划旨在加速创新并保持美国领导地位，而欧盟的人工智能指南突显了科技巨头在监管方法上的分歧，表明人们越来越关注人工智能治理。"
+    },
+    {
+      "point": "人工智能正越来越多地集成到各种应用中，从游戏创建到教育工具和创意软件。",
+      "explanation": "Astrocade 的人工智能驱动游戏创建、ChatGPT 的学习模式以及 Photoshop 和 Google 相册等应用中人工智能增强的功能，展示了人工智能日益广泛的实际应用。"
+    },
+    {
+      "point": "主要科技公司继续在人工智能基础设施、人才和模型开发方面投入巨资。",
+      "explanation": "OpenAI 扩大数据中心交易、Meta 任命人工智能超级智能首席科学家以及 NVIDIA 和智谱 AI 发布新模型，都凸显了人工智能领域领先地位的持续竞争。"
+    },
+    {
+      "point": "人工智能研究正在代码优化、模型架构发现和风险管理等领域突破界限。",
+      "explanation": "SWE-Perf 等新基准和 ASI-Arch 等理论进展，均致力于提高人工智能能力，并解决高级模型相关的潜在风险。"
+    }
+  ],
+  "keyQuotes": [
+    "Astrocade 发布了其人工智能驱动的社交游戏平台。该平台经过重新设计，让用户可以通过 AI 引导的头脑风暴、定制编辑器和深度混音功能，在几分钟内轻松创作和混合游戏。",
+    "白宫发布了一项名为“赢得人工智能竞赛：美国人工智能行动计划”的人工智能行动计划，以保持美国在人工智能领域的领导地位。",
+    "谷歌宣布计划签署欧盟人工智能指南，与担心限制人工智能创新而拒绝签署的 Meta 形成对比。",
+    "OpenAI 在其人工智能工具 ChatGPT 中推出了一项名为“学习模式”的新功能，旨在培养学生的批判性思维能力。",
+    "特朗普政府近期试图减少联邦贸易委员会对人工智能公司的监管。此举可能加速人工智能部署，但也引发了对未经审核的准确性、公平性和消费者保护的担忧。"
+  ],
+  "tags": [
+    "人工智能政策",
+    "人工智能监管",
+    "人工智能工具",
+    "人工智能模型",
+    "人工智能商业"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 90,
+  "wordCount": 1673,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753905952000,
+  "publishDateStr": "2025-07-30",
+  "publishDateTimeStr": "2025-07-30 20:05:52"
+}

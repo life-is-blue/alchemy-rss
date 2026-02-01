@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b139cd",
+  "title": "Pinterest 通过 PinConsole 平台整合工程工具",
+  "url": "https://www.infoq.com/news/2025/09/pinterest-pinconsole-unified-idp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-15 14:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Pinterest has introduced <a href=\"https://medium.com/pinterest-engineering/developer-experience-at-pinterest-the-journey-to-pinconsole-b34ac9e3bdd9\">PinConsole, a unified internal developer platform(IDP)</a> to centralize engineering workflows into a single interface. PinConsole was built to address the fragmented developer experience caused by multiple disconnected deployment, monitoring, and service management tools. By providing a consistent abstraction layer, PinConsole enables engineers to focus on business logic instead of navigating infrastructure complexity.</p>\n   <p>PinConsole integrates common developer workflows such as continuous deployment pipelines, monitoring dashboards, alerting, and ownership metadata. Engineers can use the console to manage releases, access logs and metrics, and investigate incidents without switching between separate tools. By providing a shared abstraction layer, Pinterest states that this helped to standardize engineering practices across teams and simplify the developer experience.</p>\n   <p>PinConsole is designed with an IDP model in mind, drawing inspiration from <a href=\"https://github.com/backstage/backstage\">Backstage</a>, <a href=\"https://kubernetes.io/\">Kubernetes</a>, and <a href=\"https://grpc.io/\">gRPC</a>. By providing a consistent interface and standard workflows, PinConsole promotes reuse and helps make engineering practices more uniform across different teams.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/09/pinterest-pinconsole-unified-idp/news/2025/09/pinterest-pinconsole-unified-idp/en/resources/1Screen Shot 2025-09-03 at 5.58.19 PM-1756947570833.png\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/pinterest-pinconsole-unified-idp/en/resources/1Screen Shot 2025-09-03 at 5.58.19 PM-1756947570833.png\" rel=\"share\"></p>\n   <p><em>PinConsole unified developer platform(Source: <a href=\"https://medium.com/pinterest-engineering/developer-experience-at-pinterest-the-journey-to-pinconsole-b34ac9e3bdd9\">Pinterest Engineering Blog</a>)</em></p>\n   <p>To support this unified platform, Pinterest also built an entity data model that syncs every 60 minutes with its LDAP directory via Backstage’s ldapOrg provider. This ensures user and group information is always current, enabling accurate ownership tracking, team-based views, and fine-grained access control across the platform.</p>\n   <p>Under the hood, PinConsole uses <a href=\"https://www.postgresql.org/\">PostgreSQL</a> databases on AWS RDS for both production and staging. Pinconsole interface is customized with Pinterest’s <a href=\"https://gestalt.pinterest.systems/home\">Gestalt design system</a> instead of Backstage’s default components. A core feature of PinConsole is the PinCompute plugin, which provides a unified interface for managing Kubernetes workloads. Pinterest’s PinCompute environment introduces custom resources such as PinApps and PinScalers, supported by a custom Kubernetes plugin. The platform also supports multi-tenancy, access control, and integrates with Pinterest’s security systems, service registry, and artifact repositories</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/09/pinterest-pinconsole-unified-idp/news/2025/09/pinterest-pinconsole-unified-idp/en/resources/1Screen Shot 2025-09-03 at 5.59.11 PM-1756947570833.png\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/pinterest-pinconsole-unified-idp/en/resources/1Screen Shot 2025-09-03 at 5.59.11 PM-1756947570833.png\" rel=\"share\"></p>\n   <p><em>PinCompute plugin internal (Source: <a href=\"https://medium.com/pinterest-engineering/developer-experience-at-pinterest-the-journey-to-pinconsole-b34ac9e3bdd9\">Pinterest Engineering Blog</a>)</em></p>\n   <p>Pinterest team detailed that, to ensure scalability optimizations were applied across multiple layers. <a href=\"https://www.apollographql.com/docs/react\">Apollo Client’s</a> cache policies proactively prefetch commonly accessed data, while <a href=\"https://github.com/Merri/react-lazy\">React.lazy</a> and <a href=\"https://github.com/kentcdodds/react-suspense\">Suspense</a> enable code splitting. Critical pages are server-side rendered to improve time-to-first-meaningful-paint, and a multi-level caching strategy—covering <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/CDN\">CDN</a> assets and API gateway responses—reduces latency and enhances perceived performance.</p>\n   <p>According to Pinterest engineers, PinConsole was designed to be extensible, allowing teams to contribute plugins and workflows that can be shared across the platform. This model enables deployment processes that were previously maintained separately to be standardized while still allowing customization. The engineering team noted that shared plugins also allow improvements from one team to be adopted more broadly across the organization.</p>\n   <p>Engineers at Pinterest highlighted that, since launch, PinConsole has reached over 700 daily active users, with around 30% of Pinterest engineers using the tool monthly. The team reported a Net Promoter Score above 70. Pinterest engineers also highlighted that consistent workflows, discoverable services, and extensible plugin architecture were key factors in the adoption of PinConsole.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinterest Unifies Engineering Tools with New Pinconsole Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/pinterest-pinconsole-unified-idp/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1757944800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 推出 PinConsole 平台，这是一个统一的内部开发者平台 (IDP)，旨在集中工程工作流并提升开发者体验，其设计灵感来源于 Backstage 和 Kubernetes。",
+  "oneSentenceSummary": "Pinterest 推出 PinConsole 平台，这是一个统一的内部开发者平台 (IDP)，旨在集中工程工作流并提升开发者体验，其设计灵感来源于 Backstage 和 Kubernetes。",
+  "summary": "Pinterest 推出了统一的内部开发者平台 (IDP) PinConsole，旨在解决因部署、监控和服务管理等分散的工程工具所导致的效率问题。PinConsole 将这些工作流整合到一个统一的界面中，提供一致的抽象层，使工程师能够专注于业务逻辑，而无需关注基础设施的复杂性。该平台集成了持续部署、监控、告警和所有权元数据，并借鉴了 Backstage、Kubernetes 和 gRPC 等行业标准。在内部，PinConsole 利用构建于 AWS RDS 上的 PostgreSQL、Pinterest 的 Gestalt 设计系统，以及自定义的 PinCompute 插件来管理具有自定义资源的 Kubernetes 工作负载。可扩展性优化包括 Apollo 客户端缓存、React 代码分割、服务端渲染和多级缓存。PinConsole 具有良好的扩展性，允许团队贡献和共享插件，从而在标准化流程的同时实现自定义。自推出以来，PinConsole 已在 Pinterest 内部得到广泛应用，显著提升了开发者体验和效率。",
+  "mainPoints": [
+    {
+      "point": "PinConsole 统一了分散的工程工具，从而提升开发者体验和效率。",
+      "explanation": "通过将部署、监控和服务管理整合到一个界面中，PinConsole 减少了工程师在不同工具和任务之间切换的频率，使他们能够专注于核心业务逻辑，从而提高生产力。"
+    },
+    {
+      "point": "该平台的架构整合了行业最佳实践和自定义解决方案，以实现规模化和高效的工作负载管理。",
+      "explanation": "PinConsole 的设计灵感来源于 Backstage 和 Kubernetes，它利用 PostgreSQL、Pinterest 的设计系统以及自定义的 PinCompute 插件来实现高效的 Kubernetes 工作负载管理和多租户。"
+    },
+    {
+      "point": "PinConsole 的可扩展性和标准化促进了共享工程实践和广泛应用。",
+      "explanation": "其插件架构允许团队贡献和共享工作流，在标准化整个组织的流程的同时保持自定义，从而实现更高的用户采纳率和满意度。"
+    }
+  ],
+  "keyQuotes": [
+    "PinConsole 的构建旨在解决由于多个分离的部署、监控和服务管理工具导致的分散式开发者体验问题。",
+    "通过提供一致的抽象层，PinConsole 使工程师能够专注于业务逻辑，而无需耗费精力处理基础设施的复杂性。",
+    "PinConsole 的设计遵循 IDP 模型，并借鉴了 Backstage、Kubernetes 和 gRPC。",
+    "PinConsole 的一个核心功能是 PinCompute 插件，它为管理 Kubernetes 工作负载提供了一个统一的界面。",
+    "Pinterest 的工程师强调，自发布以来，PinConsole 的日活跃用户已超过 700 人，约 30% 的 Pinterest 工程师每月都在使用它。"
+  ],
+  "tags": [
+    "内部开发者平台",
+    "开发者体验",
+    "平台工程",
+    "Kubernetes",
+    "Backstage"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 463,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1757944800000,
+  "publishDateStr": "2025-09-15",
+  "publishDateTimeStr": "2025-09-15 14:00:00"
+}

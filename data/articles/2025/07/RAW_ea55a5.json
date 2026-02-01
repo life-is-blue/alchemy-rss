@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ea55a5",
+  "title": "为什么代理基础设施至关重要",
+  "url": "https://blog.langchain.com/why-agent-infrastructure/",
+  "date": "2025-07-28 05:24:29",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Over the past year, we’ve seen the rise of agentic applications, from workflow copilots to codegen assistants to deep researchers. These agentic apps often combine tool use, memory, and reasoning to complete complex, multi-step tasks — moving beyond retrieval and chat to action-taking.</p>\n  <p>Agents are altering how we think of applications. Apps are no longer just a series of requests and responses — reduced to input forms, buttons, visuals, or chat interfaces. Instead, agents remember, reason, and act. They work in the background off of events and information. They not only <em>act</em> but also ask for help, show their work, reason through problems, and collaborate in groups. And while stateless, serverless compute remains a north star for distributed systems, it falls short for agent-based applications. This new style of application requires new infrastructure.</p>\n  <p>Agents often are:</p>\n  <ul>\n   <li><strong>Long-running</strong> — reasoning and executing on a task for minutes, not milliseconds.</li>\n   <li><strong>Stateful</strong> — carrying memory and persisting context across steps or from past interactions</li>\n   <li><strong>Bursty</strong> — especially in scheduled or user-triggered scenarios.</li>\n  </ul>\n  <p>Trying to shoehorn an agent with these characteristics into existing serverless or microservice architectures often leads to brittle, fault-prone systems.</p>\n  <h2 id=\"why-agent-infrastructure-is-needed\">Why agent infrastructure is needed</h2>\n  <p>Agentic workloads demand new primitives — ones that neither web backends nor traditional distributed systems provide. A new layer to the agent stack is emerging: <strong>agent infrastructure</strong>. It sits between your agent logic and raw compute, providing structure, control, and reliability.</p>\n  <p><strong>Agent infrastructure is</strong> infrastructure purpose-built to support durable execution, complex state management, human-in-the-loop coordination, streaming and more — without requiring you to stitch everything together yourself. That's why we built <a href=\"https://www.langchain.com/langgraph-platform?ref=blog.langchain.com\" rel=\"noreferrer\"><strong>LangGraph Platform</strong></a> to be the best place to deploy and run your LangGraph applications with scalable, reliable agent infrastructure.</p>\n  <h3 id=\"durable-execution-agent-runs-take-time\">Durable execution: Agent runs take time</h3>\n  <p>Most serverless environments are optimized for short-lived tasks. But agents — from research assistants to workflow copilots — can run for at least several seconds, and often minutes, or even hours in extremes. They might pause to call tools, wait on APIs, or receive human-in-the-loop feedback.</p>\n  <p>In <a href=\"https://langchain-ai.github.io/langgraph/?ref=blog.langchain.com\">LangGraph</a>, these agents are suspended and safely resumed later, but many systems can’t handle these long or unpredictable pauses. Without the right runtime, long-running agents risk timing out, crashing, or losing progress.</p>\n  <p>Agent infrastructure provides:</p>\n  <ul>\n   <li><strong>Background execution</strong> so agents can run independently of the initial request</li>\n   <li><strong>Heartbeat signals</strong> to prevent timeouts by signaling ongoing progress</li>\n   <li><strong>Resumable runs</strong> to restore from checkpoints after crashes or pauses</li>\n  </ul>\n  <p>This durability is essential for building reliable, production-grade agents that work through to successful completion of the task no matter how long it takes.</p>\n  <h3 id=\"state-management-agents-need-more-than-message-buffers\">State management: Agents need more than message buffers</h3>\n  <p>An agent’s “state” can include intermediate results, tool outputs, embedded documents, or multi-turn context. Traditional infra doesn't give you a structured way to store, resume, or edit this state mid-run. An agent infrastructure can provide the storage and checkpointing needed OOTB to persist state across steps, failures, or user interventions.</p>\n  <h3 id=\"human-in-the-loop-agents-need-to-wait-pause-and-resume\">Human-in-the-loop: Agents need to wait, pause, and resume</h3>\n  <p>Agents frequently rely on human feedback for approval or clarification before continuing. That means you can’t just fire off a request and forget it. You need resumable state and support for arbitrarily long delays between steps.</p>\n  <p>Agent infrastructure lets you use APIs to pause or resume without wiring together queues, caches, and polling endpoints manually.</p>\n  <h3 id=\"bursty-concurrency-agents-must-absorb-spikes-in-traffic\">Bursty concurrency: Agents must absorb spikes in traffic</h3>\n  <p>Real-world agentic apps can face unpredictable surges — whether it’s millions of users querying an AI search app at once, or a scheduled deep research assistant running its end-of-the-day job for entire teams. These spikes can lead to request traffic jams, dropped requests, or degraded performance.</p>\n  <p>An agent infrastructure like LangGraph Platform is designed to absorb these bursts with:</p>\n  <ul>\n   <li><strong>Task queues</strong>, which buffer and schedule incoming runs effectively (even under heavy load)</li>\n   <li><strong>Horizontal auto-scaling</strong>, where new workers and queue instances can be added dynamically to ensure each run is processed just once</li>\n  </ul>\n  <p>This thus eliminates the need for custom load balancing logic and helps your agent remain stable even under high-throughput or unpredictable workloads.</p>\n  <h3 id=\"streaming-see-what-your-agents-are-thinking\">Streaming: See what your agents are thinking</h3>\n  <p>Agents don’t just return a final result — they think, act, and refine their response over time.</p>\n  <p>Good agent infrastructure makes their intermediate output (e.g. thoughts, tool calls, partial completions) visible to enhance user experience and developer visibility. For example, LangGraph Platform enables:</p>\n  <ul>\n   <li><strong>Token-level streaming,</strong> which lets you stream LLM output token-by-token from any node, subgraph, tool, or task in <a href=\"https://langchain-ai.github.io/langgraph/?ref=blog.langchain.com\">LangGraph</a>.</li>\n   <li><strong>Custom data streaming,</strong> which emits structured, user-defined data at any point in the graph using custom stream mode, enabling flexible communication beyond standard text responses</li>\n   <li><a href=\"https://langchain-ai.github.io/langgraph/cloud/how-tos/generative_ui_react/?ref=blog.langchain.com\"><strong>Streaming generative UI</strong></a>, which renders dynamic components for rich user interfaces.</li>\n  </ul>\n  <p>Since all streaming modes contain metadata context, you can trace every output back to its origin — making it easier to debug and monitor your agent behavior too.</p>\n  <h2 id=\"how-langgraph-platform-helps\">How LangGraph Platform helps</h2>\n  <p>LangGraph Platform gives you the infrastructure needed to run agentic workloads in production without building it yourself. You can deploy agents directly from GitHub with 1-click, and the runtime handles long-running execution, checkpointing, retries, memory, streaming, and traffic spikes out-of-the-box.</p>\n  <p>If you’re building agents that are stateful, action taking, or need to pause and resume — LangGraph Platform takes care of the hard parts so you can focus on agent logic and behavior, not infrastructure. <a href=\"https://langchain-ai.github.io/langgraph/concepts/langgraph_platform/?ref=blog.langchain.com\">See the docs to learn more</a>.</p>\n  <h2 id=\"the-future-is-agentic-%E2%80%94-so-build-on-a-solid-foundation\">The future is agentic — so build on a solid foundation</h2>\n  <p>Agentic apps are here to stay. But like every shift in software — whether from monoliths to microservices, or from on-prem to cloud— the transition requires new tools.</p>\n  <p><strong>Agent infrastructure is the missing layer.</strong> And if you're building anything beyond a stateless prompt, it's time to think seriously about what supports your agents behind the scenes.</p>\n  <p><a href=\"https://www.langchain.com/langgraph-platform?ref=blog.langchain.com\">Get started with LangGraph Platform</a> to learn more.</p>\n </body>\n</html>",
+  "aiSummary": "本文阐述了对专门构建的代理基础设施的迫切需求，以支持长期运行、有状态和突发性的 AI 代理应用的独特特性，并强调需要超越传统的无服务器或微服务架构，构建新的基础设施层。",
+  "oneSentenceSummary": "本文阐述了对专门构建的代理基础设施的迫切需求，以支持长期运行、有状态和突发性的 AI 代理应用的独特特性，并强调需要超越传统的无服务器或微服务架构，构建新的基础设施层。",
+  "summary": "本文提出，具有长期运行、有状态和突发性特点的智能代理应用的兴起，需要一种新型的基础设施：代理基础设施。与为短时、无状态操作优化的传统无服务器或微服务架构不同，代理基础设施为持久执行（处理长期运行、暂停和崩溃）、强大的状态管理（持久化上下文和中间结果）、人在环中协调（允许在步骤之间有任意时长的延迟以获取反馈）、突发并发（应对流量峰值）和增强的流式传输能力（使代理的思考过程可视化）提供基本要素。文章重点介绍了 LangChain 的 LangGraph 平台等基础设施如何抽象化复杂性，使开发人员能够专注于代理逻辑，而不是底层运营挑战。结论是，代理基础设施是构建可靠的、生产级智能代理应用的关键缺失层。",
+  "mainPoints": [
+    {
+      "point": "由于其独特的特性，智能代理应用需要新的基础设施。",
+      "explanation": "与传统应用程序不同，智能代理具有长期运行、有状态和突发性的特点，这使得现有的无服务器或微服务架构不足以支持可靠的生产级部署。"
+    },
+    {
+      "point": "代理基础设施为持久执行和复杂的状态管理提供关键要素。",
+      "explanation": "代理基础设施使智能代理能够可靠地长时间运行，暂停以进行人工交互，并在发生故障或用户干预时保持其内部状态，从而确保任务完成。"
+    },
+    {
+      "point": "专门的基础设施简化了突发流量的处理并增强了代理的可观察性。",
+      "explanation": "代理基础设施包括任务队列和自动缩放等功能，以管理不可预测的负载，以及流式传输功能，以提供对代理推理过程的实时可见性。"
+    }
+  ],
+  "keyQuotes": [
+    "这种新的应用程序形态需要新的基础设施。",
+    "代理基础设施是专门构建的基础设施，旨在支持持久执行、复杂的状态管理、人在环中协调、流式传输等，而无需您自己将所有内容拼接在一起。",
+    "如果没有合适的运行时环境，长期运行的代理可能会超时、崩溃或丢失进度。",
+    "代理基础设施使您可以使用 API (应用程序编程接口) 暂停或恢复，而无需手动连接队列、缓存和轮询端点。",
+    "代理基础设施是缺失的一层。"
+  ],
+  "tags": [
+    "AI 代理",
+    "代理基础设施",
+    "分布式系统",
+    "状态管理",
+    "持久执行"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 961,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753680269000,
+  "publishDateStr": "2025-07-28",
+  "publishDateTimeStr": "2025-07-28 05:24:29"
+}

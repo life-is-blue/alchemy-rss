@@ -1,0 +1,59 @@
+{
+  "id": "RAW_f9863b58",
+  "title": "你未知的决策：QCon 主题演讲探讨工程中的隐性决策",
+  "url": "https://www.infoq.com/news/2025/11/hidden-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-19 11:20:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Engineering teams make their most consequential decisions not in architecture reviews or sprint planning, but through invisible choices embedded in metrics, defaults, and everyday behaviors. In their QCon San Francisco 2025 keynote, <a href=\"https://www.linkedin.com/in/shawnamartell/\">Shawna Martell</a> and <a href=\"https://www.linkedin.com/in/danfike/\">Dan Fike</a> challenged the industry's focus on documented decision-making while the <a href=\"https://qconsf.com/keynote/nov2025/hidden-decisions-you-dont-know-youre-making\">decisions that truly shape systems and culture go unrecognized</a>.</p>\n   <p>The talk invited engineering leaders to ask uncomfortable questions: What behaviors do our CI/CD pipeline speeds actually incentivize? Which defaults have we inherited without examination? What are we measuring, and what behaviors does that measurement reward? For organizations struggling with poor outcomes or culture issues that seem disconnected from technical choices, the hidden decision analysis offers a new lens.</p>\n   <p>Rather than prescribing solutions, the speakers offered a diagnostic framework for recognizing hidden decisions. Their approach echoes broader industry conversations about <a href=\"https://www.infoq.com/podcasts/facilitating-software-architecture/\" target=\"_blank\">Architecture Decision Records</a>. The key insight: hidden decisions can be named and examined once teams learn to identify them.</p>\n   <p><img alt=\"\" style=\"width:100%;height:3024px;\" data-src=\"https://www.infoq.com/news/2025/11/hidden-decisions/news/2025/11/hidden-decisions/en/resources/1Hidden-Decisions-Under-the-Surface-1763520205738.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/hidden-decisions/en/resources/1Hidden-Decisions-Under-the-Surface-1763520205738.jpg\" rel=\"share\">\n    <br>\n    <em>Hidden behaviors and choices have a broad impact on the engineering work we eventually see</em></p>\n   <p>\"Sometimes, as engineers, the right decision for us is not to build,\" they said. The hidden decision to build implicitly accepts the costs and risks of building and maintaining something new. As developers, we often love to solve problems with code. But we never stop to ask ourselves, \"Is this the correct solution?\" when, many times, it isn't.</p>\n   <p>The problem, they explain, is that engineering organizations measure outcomes such as features shipped or system uptime but rarely examine the decision quality that produced those results. This phenomenon creates a dangerous blind spot where teams optimize for the wrong things without realizing it.</p>\n   <p><img alt=\"\" style=\"width:100%;height:3024px;\" data-src=\"https://www.infoq.com/news/2025/11/hidden-decisions/news/2025/11/hidden-decisions/en/resources/1Hidden-Decisions-Metrics-1763520205738.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/hidden-decisions/en/resources/1Hidden-Decisions-Metrics-1763520205738.jpg\" rel=\"share\">\n    <br>\n    <em>Examples of metrics that, when measured, can drive the wrong behavior</em></p>\n   <p>The speakers illustrated their thesis with CI/CD pipelines. When pipelines run slowly, engineers aren't just waiting longer for builds to complete. They start exhibiting behaviours like bundling PRs together. As a result, instead of having small, manageable PRs, we have massive changes that are harder to review, rubber-stamped approvals, and deteriorating quality.</p>\n   <p>Per the speakers, we should ask ourselves, \"What behaviours do we want to incentivise, and how can our tooling support that?\".</p>\n   <p>The speakers then termed \"the default trap.\" Teams accept defaults and act on them whether they consciously accept them or not. They cited an example of a team that decided to build its own platform instead of using an existing one within the organization, even though the existing one already solved a similar problem, simply because the default in that organization was for every team to own its own stack. In this case, team ownership became the \"default\" and was not challenged until Martell explicitly called it out. \"We need to name the defaults to be able to explicitly accept or reject them as required\".</p>\n   <p>The most insidious hidden decisions emerge from metric selection. The speakers described how, during an architectural change, measuring events sent to Kafka led to massive unnecessary traffic because teams optimized for the metric rather than the underlying need. \"Most events were not even required,\" they explained.</p>\n   <p>Similarly, measuring career progress through title changes obscures the real decision about career strategy—whether engineers are actually making progress in a direction that makes sense for them. Engineers build skills that lead to specialization, which builds their reputation and the value they provide, which in turn determines their roles, until changing direction becomes risky. \"Once you're building that view of yourself, deciding to change is risky,\" and so identifying&nbsp;these hidden decisions in real time is even more crucial.</p>\n   <p><img alt=\"\" style=\"width:100%;height:3024px;\" data-src=\"https://www.infoq.com/news/2025/11/hidden-decisions/news/2025/11/hidden-decisions/en/resources/1Hidden-Decisions-Career-Cycle-1763520205738.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/hidden-decisions/en/resources/1Hidden-Decisions-Career-Cycle-1763520205738.jpg\" rel=\"share\">\n    <br>\n    <em>Career cycles are affected by hidden choices that are harder to change as we progress</em></p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"The Decisions You Don't Know You're Making: QCon Keynote Explores Hidden Choices in Engineering\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/hidden-decisions/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763551200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本次 QCon 主题演讲探讨了工程团队最具影响力的决策通常如何作为隐性决策体现在指标 (Metrics)、默认设置 (Defaults) 和日常行为中，从而在潜移默化中塑造系统和文化。",
+  "oneSentenceSummary": "本次 QCon 主题演讲探讨了工程团队最具影响力的决策通常如何作为隐性决策体现在指标 (Metrics)、默认设置 (Defaults) 和日常行为中，从而在潜移默化中塑造系统和文化。",
+  "summary": "本文总结了 Shawna Martell 和 Dan Fike 在 QCon 旧金山 2025 上的主题演讲，强调关键的工程决策通常是通过嵌入在指标 (Metrics)、系统默认设置 (Defaults) 和日常团队行为中的“隐性决策”做出的，而不是在正式的架构评审中。这些未被识别的决策深刻地影响着系统设计、团队文化和整体结果。演讲者提出了一个诊断框架，以帮助工程领导者识别这些隐性决策，敦促他们质疑 CI/CD 管道速度、继承的默认设置和特定测量所奖励的行为所带来的影响。例如，缓慢的 CI/CD 导致捆绑的 PR（Pull Requests，拉取请求）并降低质量，“默认设置陷阱”导致团队构建冗余平台，以及指标选择（例如，Kafka 事件（消息））导致意外的流量。本文还涉及职业发展指标如何掩盖真正的战略选择。核心信息是，通过命名和检查这些隐含的决策，团队可以培养更好的行为并实现更理想的工程结果。",
+  "mainPoints": [
+    {
+      "point": "重要的工程决策通常隐藏在日常实践、指标 (Metrics) 和默认设置 (Defaults) 中。",
+      "explanation": "除了正式的评审之外，团队的运作方式、他们衡量的指标 (Metrics) 以及他们采用的默认设置 (Defaults) 中的隐含选择，对系统架构和组织文化产生深刻的、通常未被认可的影响。"
+    },
+    {
+      "point": "未经检查的默认设置 (Defaults) 和指标 (Metrics) 选择会激励适得其反的行为。",
+      "explanation": "例如，缓慢的 CI/CD 管道导致大型 PR（Pull Requests，拉取请求），测量 Kafka 事件（消息）导致不必要的流量。这些例子表明，隐性决策可能导致为错误的目标进行优化，从而降低质量和效率。"
+    },
+    {
+      "point": "“默认设置陷阱”鼓励对实践进行不加批判的采用，从而阻碍创新和效率。",
+      "explanation": "团队经常不加质疑地接受现有的默认设置 (Defaults)，例如构建新平台而不是利用现有平台，从而导致冗余的工作和错失优化机会。"
+    },
+    {
+      "point": "识别并明确命名隐藏的决策对于积极的改变至关重要。",
+      "explanation": "通过揭示这些隐含的选择，工程领导者可以有意识地接受、拒绝或修改它们，从而塑造期望的行为并改善工程结果和文化。"
+    }
+  ],
+  "keyQuotes": [
+    "真正塑造系统和文化的决策没有被认可。",
+    "有时，作为工程师，对我们来说正确的决定是不构建。",
+    "他们解释说，问题在于工程组织只衡量交付的功能或系统正常运行时间等结果，却很少检查产生这些结果的决策质量。",
+    "我们需要命名默认设置 (Defaults)，以便能够根据需要明确接受或拒绝它们。",
+    "一旦你建立了对自己的这种看法，决定改变是有风险的。"
+  ],
+  "tags": [
+    "工程管理",
+    "组织行为",
+    "决策",
+    "软件工程",
+    "指标"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 600,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763551200000,
+  "publishDateStr": "2025-11-19",
+  "publishDateTimeStr": "2025-11-19 11:20:00"
+}

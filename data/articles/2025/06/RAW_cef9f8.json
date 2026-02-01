@@ -1,0 +1,54 @@
+{
+  "id": "RAW_cef9f8",
+  "title": "我用 AI 创造的第一个开源库",
+  "url": "https://simonwillison.net/2025/Jun/21/my-first-open-source-ai-generated-library/#atom-everything",
+  "date": "2025-06-21 23:22:45",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://lucumr.pocoo.org/2025/6/21/my-first-ai-library/\">My First Open Source AI Generated Library</a></strong> (<a href=\"https://bsky.app/profile/mitsuhiko.at/post/3ls4ov5fk7c2l\" title=\"@mitsuhiko.at\">via</a>) Armin Ronacher had Claude and Claude Code do almost <em>all of the work</em> in building, testing, packaging and publishing a new Python library based on his design:</p>\n   <blockquote>\n    <ul>\n     <li>It wrote ~1100 lines of code for the parser</li>\n     <li>It wrote ~1000 lines of tests</li>\n     <li>It configured the entire Python package, CI, PyPI publishing</li>\n     <li>Generated a README, drafted a changelog, designed a logo, made it theme-aware</li>\n     <li>Did multiple refactorings to make me happier</li>\n    </ul>\n   </blockquote>\n   <p>The project? <a href=\"https://github.com/mitsuhiko/sloppy-xml-py\">sloppy-xml-py</a>, a lax XML parser (and violation of everything the XML Working Group hold sacred) which ironically is necessary because LLMs themselves frequently output \"XML\" that includes validation errors.</p>\n   <p>Claude's SVG logo design is actually pretty decent, turns out it can draw <a href=\"https://simonwillison.net/2025/May/22/code-with-claude-live-blog/#live-update-357\">more than just bad pelicans</a>!</p>\n   <p></p>\n   <center>\n    <img alt=\"Hand drawn style, orange rough rectangly containing < { s } > - then the text Sloppy XML below in black\" src=\"https://static.simonwillison.net/static/2025/sloppy-xml.jpg\">\n   </center>\n   <p></p>\n   <p>I think experiments like this are a really valuable way to explore the capabilities of these models. Armin's conclusion:</p>\n   <blockquote>\n    <p>This was an experiment to see how far I could get with minimal manual effort, and to unstick myself from an annoying blocker. The result is good enough for my immediate use case and I also felt good enough to publish it to PyPI in case someone else has the same problem.</p>\n    <p>Treat it as a curious side project which says more about what's possible today than what's necessarily advisable.</p>\n   </blockquote>\n   <p>I'd like to present a slightly different conclusion here. The most interesting thing about this project is that <strong>the code is good</strong>.</p>\n   <p>My criteria for good code these days is the following:</p>\n   <ol>\n    <li>Solves a defined problem, well enough that I'm not tempted to solve it in a different way</li>\n    <li>Uses minimal dependencies</li>\n    <li>Clear and easy to understand</li>\n    <li>Well tested, with tests prove that the code does what it's meant to do</li>\n    <li>Comprehensive documentation</li>\n    <li>Packaged and published in a way that makes it convenient for me to use</li>\n    <li>Designed to be easy to maintain and make changes in the future</li>\n   </ol>\n   <p><code>sloppy-xml-py</code> fits all of those criteria. It's useful, well defined, <a href=\"https://github.com/mitsuhiko/sloppy-xml-py/blob/main/sloppy_xml.py\">the code is readable</a> with just about the right level of comments, everything is tested, the documentation explains everything I need to know, and it's been shipped to PyPI.</p>\n   <p>I'd be proud to have written this myself.</p>\n   <p>This example is <em>not</em> an argument for replacing programmers with LLMs. The code is good because Armin is an expert programmer who stayed in full control throughout the process. As I wrote the other day, <a href=\"https://simonwillison.net/2025/Jun/18/coding-agents/\">a skilled individual with both deep domain understanding and deep understanding of the capabilities of the agent</a>.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "分析 AI (Claude/Claude Code) 全面生成的 Python 库，及其对代码质量的意义。",
+  "oneSentenceSummary": "分析 AI (Claude/Claude Code) 全面生成的 Python 库，及其对代码质量的意义。",
+  "summary": "本文探讨了 Armin Ronacher 的一项实验，他利用 AI 模型（Claude 和 Claude Code）构建了一个完整的 Python 库 `sloppy-xml-py`。AI 完成了代码编写、测试、打包配置、文档生成，甚至还设计了 Logo。这个库旨在解析宽松的 XML 格式，这通常是 LLMs 的输出难题。作者 Simon Willison 以其“优秀代码”的标准评估了该 AI 生成库，发现它满足这些标准。他总结道，虽然结果令人印象深刻，但这次实验表明，AI 是精通领域知识的资深程序员的强大助手，而非替代者。",
+  "mainPoints": [
+    {
+      "point": "AI 能够生成包括代码和测试在内的完整、可用的软件库。",
+      "explanation": "实验成功利用 Claude/Claude Code 从设计到实现构建了一个 Python 库，展现了 AI 在软件开发生命周期各阶段的潜力。"
+    },
+    {
+      "point": "AI 生成的代码能够达到高质量、高可读性和高测试覆盖率的标准。",
+      "explanation": "根据清晰度、测试覆盖、文档质量和可维护性等标准，`sloppy-xml-py` 库被评定为“优秀代码”。"
+    },
+    {
+      "point": "AI 是技术精湛的程序员的得力助手，而非直接替代。",
+      "explanation": "AI 代码生成能否成功，很大程度上取决于人类专家的指导以及对领域知识和 AI 能力的深刻理解。"
+    }
+  ],
+  "keyQuotes": [
+    "Armin Ronacher 让 Claude 和 Claude Code 几乎完成了*所有*工作，包括构建、测试、打包和发布这个基于他的设计的新 Python 库。",
+    "这个项目最有趣的地方在于，**代码质量很高**。",
+    "这个例子*并非*要用 LLMs 替代程序员。",
+    "代码质量之所以高，是因为 Armin 是一位资深程序员，并且在整个过程中保持了完全的掌控。"
+  ],
+  "tags": [
+    "AI 代码生成",
+    "软件开发",
+    "Python",
+    "大型语言模型",
+    "代码质量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 414,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750548165000,
+  "publishDateStr": "2025-06-21",
+  "publishDateTimeStr": "2025-06-21 23:22:45"
+}

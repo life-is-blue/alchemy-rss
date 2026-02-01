@@ -1,0 +1,54 @@
+{
+  "id": "RAW_98f8b079",
+  "title": "突发｜ChatGPT 版应用商店正式上线",
+  "url": "https://www.ifanr.com/1648893?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-12-18 10:58:49",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img class=\"alignnone size-full wp-image-1648903\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/43.png!720\" alt=\"\" width=\"1278\" height=\"706\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/43.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2025/12/43-360x199.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/43-768x424.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/43-1024x566.png 1024w\" sizes=\"(max-width: 1278px) 100vw, 1278px\"></p>\n  <p>就在刚刚，ChatGPT 应用商店已经正式推出。</p>\n  <p>在 ChatGPT 里的「应用（BETA）」页面里，我们可以看到 OpenAI 按「精选 / 生活方式 / 工作效率」等分类列出多款应用，如 Adobe Photoshop、Apple Music、Canva、Figma、Booking.com 等，点开即可查看或使用对应能力。</p>\n  <p>当然，用户也可以直接访问 chatgpt.com/apps 浏览精选应用。</p>\n  <p><img class=\"alignnone size-full wp-image-1648897\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/31-4.png!720\" alt=\"\" width=\"1286\" height=\"686\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/31-4.png!720 1286w, https://s3.ifanr.com/wp-content/uploads/2025/12/31-4-360x192.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/31-4-768x410.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/31-4-1024x546.png 1024w\" sizes=\"(max-width: 1286px) 100vw, 1286px\"></p>\n  <p>这些应用能够为 ChatGPT 对话带来新的上下文，让用户在聊天中执行各种实际操作——订购、将大纲转化为幻灯片、搜索酒店公寓等等。</p>\n  <p>用户连接应用后，可以通过「@ 应用名」直接触发，或从应用栏中选择。更智能的是，ChatGPT 还会根据对话上下文、使用习惯和用户偏好，自动推荐相关应用。</p>\n  <p><img class=\"alignnone size-full wp-image-1648898\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/32-4.png!720\" alt=\"\" width=\"1294\" height=\"848\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/32-4.png!720 1294w, https://s3.ifanr.com/wp-content/uploads/2025/12/32-4-360x236.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/32-4-768x503.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/32-4-1024x671.png 1024w\" sizes=\"(max-width: 1294px) 100vw, 1294px\"></p>\n  <p>实际体验下来发现，可能由于仍处于 Beta 阶段，连接速度相对较慢，且首次使用时需要登录对应账号。</p>\n  <p><img class=\"alignnone size-full wp-image-1648899\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/33-4.png!720\" alt=\"\" width=\"1352\" height=\"842\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/33-4.png!720 1352w, https://s3.ifanr.com/wp-content/uploads/2025/12/33-4-360x224.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/33-4-768x478.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/33-4-1024x638.png 1024w\" sizes=\"(max-width: 1352px) 100vw, 1352px\"></p>\n  <p>而根据 OpenAI 昨天发布的官方博客，开发者已经可以正式向 ChatGPT 提交应用进行审核和发布。这标志着 OpenAI 在构建 AI 生态系统上迈出了关键一步。</p>\n  <p>为了帮助开发者打造高质量应用，OpenAI 提供了完整的资源体系：</p>\n  <p>最佳实践指南、开源示例应用、专门的 UI 库，以及处于测试阶段的 Apps SDK。开发者可以在 OpenAI 开发者平台提交应用，内容包括 MCP 连接详情、测试说明、目录元数据等等。</p>\n  <p><img class=\"alignnone size-full wp-image-1648900\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/34-2.png!720\" alt=\"\" width=\"1286\" height=\"818\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/34-2.png!720 1286w, https://s3.ifanr.com/wp-content/uploads/2025/12/34-2-360x229.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/34-2-768x489.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/34-2-1024x651.png 1024w\" sizes=\"(max-width: 1286px) 100vw, 1286px\"></p>\n  <p>首批通过审核的应用将陆续上线。符合质量与安全标准的应用会被收录至应用目录，而深受用户喜爱的应用可能会被重点推荐，或由 ChatGPT 在对话中主动提示。</p>\n  <p>在早期阶段，开发者可将 ChatGPT 应用与其网站或原生应用相连，用于完成实体商品的交易。OpenAI 还在探索更多变现方式，包括数字商品，并会根据反馈持续更新。</p>\n  <p>所有应用必须遵守严格的安全和隐私规定：需符合 OpenAI 使用政策、提供清晰的隐私政策、仅请求实现功能所需的必要信息。用户始终掌握主动权——可随时断开应用连接，一旦断开，该应用将立即失去访问权限。</p>\n  <p><img class=\"alignnone size-full wp-image-1648901\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/41-1.png!720\" alt=\"\" width=\"1278\" height=\"720\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/41-1.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2025/12/41-1-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/41-1-768x433.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/41-1-1024x577.png 1024w\" sizes=\"(max-width: 1278px) 100vw, 1278px\"></p>\n  <p>OpenAI 并不是第一次尝试做类似平台。</p>\n  <p>之前那个 GPT Store，上线之初讨论声不小，但热度下滑得也很快。即使是 OpenAI 的死忠粉也不得不承认，GPTs Store 更像是 prompt 的集散地，而非真正的商业护城河。</p>\n  <p>OpenAI 大概也很清楚，于是这次干脆推倒重做。</p>\n  <p>今天亮相的应用商店，形态明显更接近我们熟悉的苹果应用商店。不是简单把一个个 GPT 名字挂在列表里，而是把复杂能力封装成可以被点击、被订阅、被组合的「应用」。</p>\n  <p>一旦这种封装方式成熟，ChatGPT 那个看似普通的对话框，就会逐渐变成一个总入口。前台是聊天，后台接着的，却是一整片由第三方应用支撑的能力网络。</p>\n  <p>那个曾在 2008 年登上苹果年度开发者大会，用 App Store 给自己应用做推介的奥特曼，大概没想到多年后的自己，会试图在 AI 时代复刻当年苹果的玩法。</p>\n  <p>只不过这回，他不再是被平台挑选的开发者，而是那个要亲手搭出下一个「App Store」的人。从过往的操作来看，ChatGPT 不满足于做浏览器里的一个 Chatbot，而是想要向 OS 靠拢，把自己变成 AI 时代的基础层。</p>\n  <p><img class=\"alignnone size-full wp-image-1648902\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/42-1.png!720\" alt=\"\" width=\"1244\" height=\"718\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/42-1.png!720 1244w, https://s3.ifanr.com/wp-content/uploads/2025/12/42-1-360x208.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/42-1-768x443.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/42-1-1024x591.png 1024w\" sizes=\"(max-width: 1244px) 100vw, 1244px\"></p>\n  <p>历史的子弹像是绕了一大圈，最终还是对准了他自己的眉心。</p>\n  <p>模型能力可以被追平，生态惯性却一旦形成，就很难被轻易迁移。这也正是 Google 多年来最大的底牌之一： 它有完整的操作系统、有浏览器入口、有开发工具链，还有一个已经运转多年的应用体系。</p>\n  <p>为了在这场生态之战中获得优势，OpenAI 正在寻求更多资本支持。</p>\n  <p>今天凌晨，The Information 报道，OpenAI 已与部分投资者进行了初步洽谈，计划以大约 7500 亿美元的估值筹集新一轮资金。根据知情人士的说法，OpenAI 可能筹集数百亿美元，最高可能达到 1000 亿美元。目前谈判仍处于早期阶段，尚未有任何最终决定。</p>\n  <p><img class=\"alignnone size-full wp-image-1648903\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/12/43.png!720\" alt=\"\" width=\"1278\" height=\"706\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/12/43.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2025/12/43-360x199.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/12/43-768x424.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/12/43-1024x566.png 1024w\" sizes=\"(max-width: 1278px) 100vw, 1278px\"></p>\n  <p>对厂商而言，这是一次极具诱惑力也同样危险的选项。</p>\n  <p>一方面，挂靠在 OpenAI 的生态之上，意味着你可以更快接触到全球范围的用户;另一方面，你对平台的依赖度也会逐步加深，一旦分发规则或抽成模式发生变化，整个商业规则都要重新计算。</p>\n  <p>而当 AI 成为默认入口，未来的我们或许也会慢慢形成一种新习惯： 不是先打开浏览器找网址，而是先打开任何一个 AI 工具，说一句「帮我找一个能做某件事的应用」，然后在对话中完成查找、试用、付费和调用。</p>\n  <p>这种交互方式一旦普及，传统的搜索引擎和应用商店，可能都要被重新定义。OpenAI 显然也看到了这个机会，所以才会在应用商店这件事上下这么大的功夫。</p>\n  <p>模型是起点，生态是终点。</p>\n  <p>面对来自 Google 的持续竞争，OpenAI 的故事还远未结束，但它需要在接下来的几个月里证明，自己不仅能做出好的模型，还能搭建起一个让开发者和用户都愿意留下的生态系统。</p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 正式推出 ChatGPT 应用商店，旨在将其从聊天机器人升级为 AI 时代的操作系统，构建一个由第三方应用支撑的生态网络。",
+  "oneSentenceSummary": "OpenAI 正式推出 ChatGPT 应用商店，旨在将其从聊天机器人升级为 AI 时代的操作系统，构建一个由第三方应用支撑的生态网络。",
+  "summary": "文章详细报道了 Open AI 最新上线的 ChatGPT 应用商店，该商店在 ChatGPT 的“应用（BETA）”页面中，按类别展示了多款应用，如 Adobe Photoshop、Apple Music 等，用户可直接在对话中触发或使用。与 GPT Store 不同，新应用商店更类似于 Apple App Store，将复杂能力封装成可点击、订阅、组合的“应用”。OpenAI 为开发者提供了完善的资源和审核机制，并探索数字商品变现方式。文章指出，OpenAI 此举意在通过生态系统构建对抗 Google 的竞争优势，并可能重新定义未来的应用使用习惯和商业模式，从模型向生态的转型是其战略核心。",
+  "mainPoints": [
+    {
+      "point": "ChatGPT 应用商店正式上线，将第三方应用能力整合到对话界面。",
+      "explanation": "此次应用商店上线，是 OpenAI 将 ChatGPT 从单一聊天机器人向平台级应用转型的关键一步，用户可在对话中直接调用各类应用功能，提升了 ChatGPT 的实用性。"
+    },
+    {
+      "point": "新应用商店采取类似 Apple App Store 的模式，旨在构建 AI 时代的生态系统。",
+      "explanation": "OpenAI 推倒重做，通过封装复杂能力为“应用”的形式，构建一个由第三方应用支撑的能力网络，以期在 AI 时代复刻苹果的应用商店成功模式，形成生态护城河。"
+    },
+    {
+      "point": "OpenAI 旨在通过生态系统转变，对抗 Google 等巨头的竞争。",
+      "explanation": "面对模型能力可能被追平的风险，OpenAI 试图通过构建强大的应用生态系统来巩固其市场地位，形成竞争壁垒，争取在 AI 时代的基础层优势。"
+    }
+  ],
+  "keyQuotes": [
+    "历史的子弹像是绕了一大圈，最终还是对准了他自己的眉心。",
+    "模型能力可以被追平，生态惯性却一旦形成，就很难被轻易迁移。",
+    "只不过这回，他不再是被平台挑选的开发者，而是那个要亲手搭出下一个「App Store」的人。",
+    "模型是起点，生态是终点。"
+  ],
+  "tags": [
+    "ChatGPT",
+    "应用商店",
+    "OpenAI",
+    "生态系统",
+    "商业模式"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1722,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766055529000,
+  "publishDateStr": "2025-12-18",
+  "publishDateTimeStr": "2025-12-18 10:58:49"
+}

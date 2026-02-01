@@ -1,0 +1,61 @@
+{
+  "id": "RAW_47c0914f",
+  "title": "QCon AI 纽约 2025：领英的 AI 平台规模化实践",
+  "url": "https://www.infoq.com/news/2025/12/qcon-ai-linkedin/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-19 15:17:00",
+  "author": "Andrew Hoblitzell",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://ai.qconferences.com\">QCon AI NY 2025</a>, LinkedIn engineers <a href=\"https://www.infoq.com/profile/Prince-Valluri/#allActivity\">Prince Valluri</a> and <a href=\"https://www.infoq.com/profile/Karthik-Ramgopal/#allActivity\">Karthik Ramgopal</a> described how the company is building an internal platform to support AI agents at scale. The talk focused on treating AI agents not as isolated tools, but as participants in a governed execution environment designed for large, long-lived engineering organizations.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/qcon-ai-linkedin/news/2025/12/qcon-ai-linkedin/en/resources/1IMG_4668-1766072076516.jpeg\" style=\"width: 500px; height: 375px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/qcon-ai-linkedin/en/resources/1IMG_4668-1766072076516.jpeg\" rel=\"share\"></p>\n   <p>The presenters framed the core challenge as one of execution rather than intelligence. <a href=\"http://linkedin.com\">LinkedIn’s</a> approach separates human intent from machine execution, using structured specifications instead of free-form prompts. These specifications define what should happen, which tools may be used, how success is evaluated, and which actions are explicitly disallowed, reducing ambiguity that often leads to inconsistent or unsafe agent behavior.</p>\n   <blockquote>\n    <p>\n     <meta charset=\"UTF-8\">\n     “A spec is how we translate the developer's intent into something the agent can reliably execute.” &nbsp;- Prince Valluri\n    </p>\n   </blockquote>\n   <p>A central component of the system is an <a href=\"https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns\">orchestration layer</a> that manages agent execution end to end. Rather than running agents as single-shot interactions, the orchestrator decomposes work into steps, provisions isolated sandboxes, injects scoped context, invokes tools, and records detailed traces of every action taken. The presenters illustrated this with an example of upgrading a shared library across multiple repositories.</p>\n   <p>The talk emphasized that orchestration enables determinism and repeatability in otherwise probabilistic systems. By standardizing how tools are invoked and how failures are handled, LinkedIn avoids a proliferation of bespoke, fragile agent implementations across teams. This shared execution model also makes agents observable and interoperable, allowing platform teams to evolve capabilities centrally while product teams benefit from reuse.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/qcon-ai-linkedin/news/2025/12/qcon-ai-linkedin/en/resources/1IMG_4673-1766072076516.jpeg\" style=\"width: 500px; height: 375px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/qcon-ai-linkedin/en/resources/1IMG_4673-1766072076516.jpeg\" rel=\"share\"></p>\n   <p>Another theme was the distinction between autonomy and authority. Agents are allowed to act freely within bounded environments, such as reading and modifying code. Actions with irreversible consequences, including deployments or merges to main branches, remain gated by humans. According to the presenters, this design preserves human accountability while allowing agents to make meaningful progress without constant supervision.</p>\n   <p><a href=\"https://docs.langchain.com/oss/python/langchain/human-in-the-loop\">Human involvement</a> is integrated into the system as explicit checkpoints rather than continuous oversight. Agents can pause execution when approvals or decisions are required, resume once input is provided, and learn from outcomes over time. Feedback from reviews, failures, and prior executions is captured as institutional memory, which is then reintroduced as context for future tasks. The presenters argued that many agent failures stem from missing or stale context, making context engineering a more critical investment than model selection.</p>\n   <blockquote>\n    <p>\n     <meta charset=\"UTF-8\">\n     “We need a unified open-ended platform so that teams focus on their domain problems and we focus on the system and infrastructure problems” - Karthik Ramgopal\n    </p>\n   </blockquote>\n   <p>The talk also addressed model choice, cautioning against defaulting to custom-trained models. The presenters suggested first determining whether reasoning is required at all, and if so, whether commercial hosted models can meet quality, scale, and latency needs when paired with retrieval and context augmentation. Custom models and <a href=\"https://www.ibm.com/think/topics/fine-tuning\">fine-tuning</a> were presented as options of last resort due to their operational overhead.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/qcon-ai-linkedin/news/2025/12/qcon-ai-linkedin/en/resources/1IMG_4676-1766072076516.jpeg\" style=\"width: 500px; height: 375px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/qcon-ai-linkedin/en/resources/1IMG_4676-1766072076516.jpeg\" rel=\"share\"></p>\n   <p>Several production agents built on this platform were discussed, including background coding agents that translate specifications into pull requests asynchronously, and analytics agents that allow engineers and business users to query data and generate analyses without direct involvement from data scientists.</p>\n   <p>Developers wanting to learn more can listen to the InfoQ podcast “<a href=\"https://www.infoq.com/podcasts/platform-engineering-scaling-agents/\">Platform Engineering: Scaling Agents and MCP at LinkedIn</a>,” which expands on the architectural decisions discussed in the session. They can also watch InfoQ.com for video of the presentation soon.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon AI New York 2025: AI Platform Scaling at LinkedIn\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Andrew Hoblitzell\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/qcon-ai-linkedin/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766157420000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "领英工程师讨论了他们为规模化 AI 智能体而构建的内部平台，重点介绍了受治理的执行环境、结构化规范、智能编排以及“人在回路”机制。",
+  "oneSentenceSummary": "领英工程师讨论了他们为规模化 AI 智能体而构建的内部平台，重点介绍了受治理的执行环境、结构化规范、智能编排以及“人在回路”机制。",
+  "summary": "本文总结了领英工程师在 QCon AI 纽约 2025 大会上关于其大规模 AI 智能体平台的演讲内容。他们强调将 AI 智能体视为执行环境中的受治理参与者，而非孤立的工具，并利用结构化规范明确定义智能体的行为、可用工具、成功标准和禁止事项。平台的一个关键组件是编排层，它负责管理智能体执行、任务分解、提供沙盒环境，并记录操作日志以确保确定性和可重复性。该系统区分了智能体自主性（限于有边界的环境）和人类权限（针对不可逆操作），并在明确的检查点集成人类参与。作者还建议优先选择经过上下文增强的商业托管模型，而非默认使用定制模型，并将微调视为最后手段。生产环境中的案例包括后台代码生成智能体和分析智能体，展示了该平台如何在大型工程组织中实现高效、安全的 AI 集成。",
+  "mainPoints": [
+    {
+      "point": "领英采用结构化规范，将开发者意图转化为可靠的 AI 智能体执行。",
+      "explanation": "这种方法通过规范化智能体任务、允许使用的工具、成功指标和不允许的操作，从而避免了自由形式提示的局限性，减少了模糊性和不一致行为。"
+    },
+    {
+      "point": "编排层确保 AI 智能体操作的确定性、可重复性和可观测性。",
+      "explanation": "通过管理执行步骤、提供隔离的沙盒环境并记录跟踪日志，编排器确保了智能体行为的一致性，并简化了平台团队的治理和演进。"
+    },
+    {
+      "point": "该平台平衡了 AI 智能体的自主性与人类权限，为关键操作设置了明确的人工检查点。",
+      "explanation": "智能体可在限定环境中自主执行可逆任务，而人类则对部署等不可逆决策保留控制权，以维护问责制和安全性。"
+    },
+    {
+      "point": "上下文工程被认为比模型选择对智能体成功更关键。",
+      "explanation": "许多智能体故障源于缺失或过时的上下文。将反馈和过往执行作为组织记忆捕获，并将其重新引入作为未来任务的上下文至关重要。"
+    },
+    {
+      "point": "优先选择经过上下文增强的商业托管模型，而非为 AI 智能体定制训练模型。",
+      "explanation": "定制模型和微调会带来显著的运维成本。建议首先评估是否需要推理能力，如果需要，再确定商业模型在结合检索和上下文增强后，能否满足质量、规模和延迟的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "规范是我们如何将开发者的意图转化为智能体能够可靠执行的东西。",
+    "我们需要一个统一的开放式平台，以便团队专注于他们的领域问题，而我们专注于系统和基础设施问题。",
+    "许多智能体故障源于缺失或过时的上下文，这使得上下文工程成为比模型选择更关键的投资。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "平台工程",
+    "编排",
+    "人在回路",
+    "AI 规模化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 554,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766157420000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 15:17:00"
+}

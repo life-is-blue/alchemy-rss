@@ -1,0 +1,59 @@
+{
+  "id": "RAW_1c1a59",
+  "title": "梁文锋署名 DeepSeek 新论文：公开 V3 大模型降本方法",
+  "url": "https://www.qbitai.com/2025/05/283660.html",
+  "date": "2025-05-15 08:48:05",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"72\">金磊 不圆 发自 凹非寺</p>\n   <p data-track=\"73\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>梁文锋</strong>亲自参与的<strong>DeepSeek最新论文</strong>，来了！</p>\n  <p data-track=\"3\">这一次，团队把DeepSeek-V3在训练和推理过程中，如何解决<strong>“硬件瓶颈”</strong>的方法公布了出来。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"梁文锋署名DeepSeek新论文：公开V3大模型降本方法\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/91c8fbe4-56e1-4ad5-81e3-4e50ea32bf00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/91c8fbe4-56e1-4ad5-81e3-4e50ea32bf00/public\">\n  </div>\n  <p data-track=\"4\">具体而言，DeepSeek-V3之所以可以只用2048块H800，就能达到超大规模集群（如数万块GPU）相当的训练效果，核心在于<strong>四项创新技术</strong>：</p>\n  <ul>\n   <li data-track=\"5\"><strong>内存优化</strong></li>\n   <li data-track=\"6\">多头潜在注意力（MLA）</li>\n   <li data-track=\"7\"><strong>计算优化</strong></li>\n   <li data-track=\"8\">混合专家模型（MoE）与FP8低精度训练</li>\n   <li data-track=\"9\"><strong>通信优化</strong></li>\n   <li data-track=\"10\">多层网络拓扑与低延迟设计</li>\n   <li data-track=\"11\"><strong>推理加速</strong></li>\n   <li data-track=\"12\">多token预测（MTP）</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"梁文锋署名DeepSeek新论文：公开V3大模型降本方法\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/822e0650-6ce5-4cc9-2755-e82ff10a7e00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/822e0650-6ce5-4cc9-2755-e82ff10a7e00/public\">\n  </div>\n  <p data-track=\"13\">那么这四项优化具体又是如何起到作用的，我们继续往下看。</p>\n  <p data-track=\"15\">在训练大模型这条路上，可以说一直有“三座大山”在占道。</p>\n  <p data-track=\"16\">首先就是<strong>内存不够用</strong>。</p>\n  <p data-track=\"17\">现在的大语言模型（比如GPT、Llama）变得越来越庞大，需要的存储空间激增。特别是它们使用的“注意力机制”会产生大量临时数据（KV Cache），占用大量显卡内存。</p>\n  <p data-track=\"18\">但高性能显存的容量增长太慢了，每年才增加不到50%，远远跟不上需求。</p>\n  <p data-track=\"19\">其次是<strong>计算效率低</strong>。</p>\n  <p data-track=\"20\">训练超大规模模型需要海量计算资源，传统 “稠密模型”（如 Llama-3）每次计算都要激活所有参数，导致计算成本极高。</p>\n  <p data-track=\"21\">而 “混合专家模型”（MoE）虽然更高效，但需要复杂的通信机制（如专家间数据传输），对网络带宽要求极高。</p>\n  <p data-track=\"22\">最后就是<strong>通信速度慢</strong>。</p>\n  <p data-track=\"23\">当使用多个GPU一起训练时，它们之间需要不断交换数据，这个过程会产生延迟。即使用了高速网络（如InfiniBand），这种延迟仍然会拖慢整体训练速度，尤其是处理长文本或需要实时响应时更明显。</p>\n  <p data-track=\"24\">而这篇论文所要解决的，正是上述的这些老大难的问题。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"梁文锋署名DeepSeek新论文：公开V3大模型降本方法\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e929869b-f383-45b5-beeb-988bbc61fb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e929869b-f383-45b5-beeb-988bbc61fb00/public\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△DeepSeek-V3的基本架构</p>\n  </div>\n  <p data-track=\"26\">DeepSeek团队首先是对<strong>内存进行了优化</strong>，所采用的方法则是多头潜在注意力（MLA），为的就是减少 “键值缓存”（KV Cache）的内存占用。</p>\n  <p data-track=\"27\">传统模型每个注意力头都需要独立缓存键值对，而MLA通过投影矩阵将所有头的键值对压缩成一个更小的 “潜在向量”，只需缓存这一向量。</p>\n  <p data-track=\"28\">相比其他模型（如LLaMA-3、Qwen-2.5），DeepSeek-V3的KV缓存大小<strong>每token仅需70 KB</strong>，是传统方法的1/7到1/4，大幅降低显存压力，尤其适合长文本处理。</p>\n  <p data-track=\"29\">在<strong>计算优化</strong>方面，DeepSeek-V3所采用的方法，则是<strong>MoE</strong>和<strong>FP8低精度训练</strong>。</p>\n  <p data-track=\"30\">MoE，即将模型参数分成多个 “专家”，每次只激活部分专家处理输入，显著减少实际计算量。</p>\n  <p data-track=\"31\">DeepSeek-V3采用类似的思路，其总参数虽然是6710亿，但每次仅激活370亿参数，训练成本仅为同规模稠密模型的1/10（如Llama-3.1的训练成本是其近10倍）。</p>\n  <p data-track=\"32\">也正因推理时激活参数少，DeepSeek-V3可在消费级GPU（如售价1万美元的显卡）上运行，每秒生成近20个token，适合个人或中小型企业使用。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"梁文锋署名DeepSeek新论文：公开V3大模型降本方法\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/35a8b739-d453-4647-ad0a-bd6d21fbc300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/35a8b739-d453-4647-ad0a-bd6d21fbc300/public\">\n  </div>\n  <p data-track=\"33\">至于FP8低精度训练，不同于传统训练使用BF16（16 位浮点），可将内存占用和计算量减半，同时通过 “精细量化”（如分块压缩）保持精度。</p>\n  <p data-track=\"34\">而DeepSeek-V3是首次在开源大模型中成功应用FP8训练，训练成本降低50%，且精度损失小于0.25%。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"梁文锋署名DeepSeek新论文：公开V3大模型降本方法\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6d56eaa0-a523-4ad9-5bcb-f43b45e6ba00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6d56eaa0-a523-4ad9-5bcb-f43b45e6ba00/public\">\n  </div>\n  <p data-track=\"35\">除此之外，DeepSeek-V3在<strong>通信方面</strong>也做了相应的优化。</p>\n  <p data-track=\"36\">例如<strong>多层胖树网络（Multi-Plane Fat-Tree）</strong>，将集群网络分为多个 “平面”，每个GPU连接到独立的网络平面，避免不同任务的流量冲突（如训练与存储通信分离）。</p>\n  <p data-track=\"37\">相比传统三层网络，两层结构成本降低40%，延迟减少30%，支持上万GPU扩展。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"梁文锋署名DeepSeek新论文：公开V3大模型降本方法\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85f1c969-5813-4e96-79f9-fa69e64d2c00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85f1c969-5813-4e96-79f9-fa69e64d2c00/public\">\n  </div>\n  <p data-track=\"38\">DeepSeek-V3在做推理时，还将 “注意力计算” 与 “专家间通信” 分阶段执行，利用流水线并行（DualPipe）让GPU在计算时同时传输数据，避免空闲等待，吞吐量提升近1倍。</p>\n  <p data-track=\"39\">最后，在<strong>推理加速</strong>方面，DeepSeek-V3采用的是<strong>多token预测（MTP）</strong>的方法。</p>\n  <p data-track=\"40\">传统模型每次只能生成1个token，而MTP通过轻量级子模型并行预测多个候选token（如一次预测2-3个），验证后选择最优结果。</p>\n  <p data-track=\"41\">从实验效果来看，生成速度提升1.8倍，例如每秒生成 oken数从10个增至18个，同时保持准确率在80%-90%。</p>\n  <p data-track=\"42\">以上就是DeepSeek-V3通过硬件与模型的协同设计，在有限资源下可以实现高效训练和推理的关键技术了。</p>\n  <p data-track=\"43\">不过除此之外，这篇论文还对未来的工作有着一定的启发作用。</p>\n  <p data-track=\"45\">既然已经知道了当前AI在硬件上的瓶颈，就可以提出对下一代AI硬件的期待。</p>\n  <p data-track=\"46\">DeepSeek团队从五大维度做出了展望，希望在这一方面能够从过去的“被动适配”逐步过渡到“主动设计”。</p>\n  <p data-track=\"47\"><strong>1、低精度计算支持</strong></p>\n  <p data-track=\"48\">针对计算效率低的问题，下一代的AI硬件需要提高累积寄存器的精度，支持FP32累加，或可配置精度（如训练用FP32，推理用FP16）。这样才能在不同的模型训练和推理需求中实现性能和准确性的平衡。</p>\n  <p data-track=\"49\">硬件还需要支持本地的细粒度量化，使张量核心能够直接接收<strong>缩放因子（scaling factors）</strong>，在计算单元内部完成量化和反量化，减少数据搬运。</p>\n  <p data-track=\"50\">此外，建议支持<strong>LogFMT（对数浮点格式）</strong>，在相同比特宽度下提供更高精度，并提高编解码的速度。</p>\n  <p data-track=\"51\"><strong>2、扩展与扩展融合</strong></p>\n  <p data-track=\"52\">针对传输速度慢的问题，建议未来的硬件将节点内（纵向扩展）和节点间（横向扩展）的通信整合到一个统一的框架中，通过集成专门用于网络流量管理的协处理器。</p>\n  <p data-track=\"53\">这样的设计可以降低软件复杂性并最大化带宽利用率，包括以下内容：</p>\n  <ul>\n   <li data-track=\"54\">统一网络适配器：设计连接到统一扩展和缩减网络的NIC（网络接口卡）或I/O芯片，让网卡直接支持所有通信需求。</li>\n   <li data-track=\"55\">专用通信协处理器：将数据搬运、Reduce、类型转换等任务卸载到专用硬件，释放GPU SM资源。</li>\n   <li data-track=\"56\">增加智能传输功能：自动转发数据，支持广播和汇总操作，并自动处理数据顺序问题。</li>\n   <li data-track=\"57\">动态带宽分配：支持流量优先级调度（如EP通信&gt;KV缓存传输）。</li>\n   <li data-track=\"58\">CPU-FPU高速互联：用NVLink连接CPU与GPU，进一步优化节点内通讯。</li>\n  </ul>\n  <p data-track=\"59\"><strong>3、网络拓扑优化</strong></p>\n  <p data-track=\"60\">针对网络卡顿的问题，建议以太网供应商开发专门针对RDMA工作负载进行优化的RoCE交换机，移除不必要的以太网功能。</p>\n  <p data-track=\"61\">还需要优化路由策略，支持<strong>自适应路由（Adaptive Routing，AR）</strong>通过动态向多个路径发送数据包，即可显著提高网络性能。</p>\n  <p data-track=\"62\">或者可以通过<strong>虚拟输出队列（VOQ）</strong>改进流量隔离或拥塞控制机制，隔离不同流量，避免拥塞。</p>\n  <p data-track=\"63\"><strong>4、内存系统优化</strong></p>\n  <p data-track=\"64\">针对AI模型记性越来越差，聊天时难以记住上下文的问题，可以通过3D堆叠DRAM的方法，把内存芯片像三明治一样叠在计算芯片上。</p>\n  <p data-track=\"65\">或者学习Cerebras，直接在晶圆上进行集成工程，最大化内存带宽和计算密度，让硬件能记得更多。</p>\n  <p data-track=\"66\">又或者，在硬件存储层部署<strong>稀疏注意力加速器</strong>，让硬件直接帮忙整理记忆，只记重点。</p>\n  <p data-track=\"67\"><strong>5、鲁棒性与容错</strong></p>\n  <p data-track=\"68\">针对大规模训练中网络闪断、GPU故障会导致任务失败的问题，期待下一代硬件能够支持<strong>链路层重试</strong>和<strong>快速故障切换</strong>，在闪断后能够立刻自己找备用路线。</p>\n  <p data-track=\"69\">还可以增加基于信用的流控（CBFC）+&nbsp;<strong>智能拥塞控制算法</strong>（如RTT-CC），避免网络集体卡死。</p>\n  <p data-track=\"70\">简单来说，下一代AI硬件要向算数快（低精度计算+本地细粒度量化）、传话快（直连网络+智能路由）、记性好（3D内存+近存计算）、不宕机（自愈网络）的方向改进，才能更好地应用于大模型训练，实现高效扩展。</p>\n  <p data-track=\"71\"><em>论文地址：https://arxiv.org/pdf/2505.09343</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DeepSeek 新论文公开 DeepSeek-V3 大模型通过四项创新技术大幅降低训练和推理成本的方法。",
+  "oneSentenceSummary": "DeepSeek 新论文公开 DeepSeek-V3 大模型通过四项创新技术大幅降低训练和推理成本的方法。",
+  "summary": "文章深入解读了 DeepSeek-V3 大模型在训练和推理效率方面的突破性进展，重点介绍了其解决硬件瓶颈的四项核心创新技术。首先分析了当前大模型面临的内存、计算和通信三大挑战。随后详细阐述了 DeepSeek-V3 如何利用多头潜在注意力（MLA）优化内存占用，采用混合专家模型（MoE）与 FP8 低精度训练提升计算效率并降低成本，通过多层网络拓扑与 DualPipe 流水线并行优化通信性能，以及使用多 token 预测（MTP）加速推理过程。文章在详细阐述 DeepSeek-V3 的技术创新后，基于其在解决硬件瓶颈方面的实践经验，对下一代 AI 硬件的发展方向提出了前瞻性展望。这些技术协同作用，使得 DeepSeek-V3 在有限硬件资源下实现了高效的大规模模型训练和推理。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek-V3 通过四项核心技术解决大模型硬件瓶颈。",
+      "explanation": "文章详细介绍了 MLA、MoE+FP8、多层网络通信优化及 MTP 四项技术，协同克服内存、计算和通信挑战，提升效率。"
+    },
+    {
+      "point": "MLA 和 MoE+FP8 显著优化内存和计算效率。",
+      "explanation": "MLA 通过潜在向量压缩 KV Cache，大幅减少内存占用；MoE+FP8 减少实际计算量和内存，显著降低训练成本。"
+    },
+    {
+      "point": "网络通信优化和多 token 预测提升训练推理速度。",
+      "explanation": "多层网络和 DualPipe 减少通信延迟和空闲等待；MTP 使模型能一次预测多个 token，大幅提升生成速度。"
+    },
+    {
+      "point": "文章基于实践经验对未来 AI 硬件提出前瞻性建议。",
+      "explanation": "从计算、通信、内存和鲁棒性等维度，对下一代 AI 硬件的设计方向进行展望，指导行业发展。"
+    }
+  ],
+  "keyQuotes": [
+    "DeepSeek-V3 之所以可以只用 2048 块 H800，就能达到超大规模集群（如数万块 GPU）相当的训练效果，核心在于**四项创新技术**：",
+    "相比其他模型（如 LLaMA-3、Qwen-2.5），DeepSeek-V3 的 KV 缓存大小**每 token 仅需 70 KB**，是传统方法的 1/7 到 1/4，大幅降低显存压力，尤其适合长文本处理。",
+    "DeepSeek-V3 是首次在开源大模型中成功应用 FP8 训练，训练成本降低 50%，且精度损失小于 0.25%。",
+    "相比传统三层网络，两层结构成本降低 40%，延迟减少 30%，支持上万 GPU 扩展。",
+    "从实验效果来看，生成速度提升 1.8 倍，例如每秒生成 oken 数从 10 个增至 18 个，同时保持准确率在 80%-90%。"
+  ],
+  "tags": [
+    "大语言模型",
+    "模型训练",
+    "MoE",
+    "FP8",
+    "多头潜在注意力"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 91,
+  "wordCount": 2971,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747298885000,
+  "publishDateStr": "2025-05-15",
+  "publishDateTimeStr": "2025-05-15 08:48:05"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_24b755ae",
+  "title": "Claude Code 的创始人揭秘工作流程：开 5 个智能体“玩编程游戏”，不看的程序员就落后了？",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271024&idx=2&sn=61b4efd1840b05f1c657d0a72e5a27b5",
+  "date": "2026-01-10 04:04:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:14px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;text-align:center;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 整理 | 华卫 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">过去一周，工程界正反复剖析 Boris Cherny 在社交平台 X 上发布的一系列推文。Boris Cherny 是 Anthropic 公司 Claude Code 的创始人兼负责人，起初他只是随手分享个人终端配置，这条内容却演变成了一篇引爆行业的软件开发未来宣言，业内人士称其为这家初创公司发展历程中的 “分水岭时刻”。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">开发者社区知名人士 Jeff Tang 写道：“作为程序员，若你还没研读这位 Claude Code 缔造者亲授的最佳实践，就已经落后了。” 另一位行业观察人士 Kyle McNease 则更进一步表示，凭借 Cherny 这次 “颠覆游戏规则的更新”，Anthropic 正 “火力全开”，或将迎来属于自己的 “ChatGPT 时刻”。</span></p>\n   <p data-cacheurl=\"\" data-remoteid=\"\" style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 20px;color: #00b38b;text-align: left;line-height: 35px;margin: 40px 8px 0 8px;background: none no-repeat left 28px;background-size: 100% 6px;background-image: url(&quot;https://image.jido.dev/20260110090459_c5c22ba6&quot;);\"><span style=\"display: block;font-size: 32px;margin-bottom: 10px;padding-left: 22px;\"><span leaf=\"\">1</span></span><span leaf=\"\">&nbsp;同时开 5 个智能体，把编程玩成了战略游戏 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这份狂热源于一个看似矛盾的事实：Cherny 这套工作流异常简洁，却能让一名工程师发挥出小型工程团队的产出效能。有用户在 X 平台分享了实践这套工作流的感受，称其体验 “更像玩《星际争霸》”，而非传统编程。核心变化在于，开发者从敲代码语法转变为指挥自主协作的智能单元。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Cherny 的分享中，最令人震撼的一点在于：他从不采用线性模式编程。传统开发的 “核心循环” 流程是程序员编写一个函数、完成测试，再推进下一项任务。而 Cherny 却扮演着一支舰队指挥官的角色。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">“我在终端里并行运行五个 Claude 智能体，把标签页按 1 到 5 编号，借助系统通知来判断哪个 Claude 需要输入指令。”Cherny 写道。通过调用 iTerm2 系统通知功能，Cherny 得以高效管理五条并行的工作流：一个智能体运行测试套件，另一个重构遗留模块，第三个则撰写文档。他还会在浏览器的 claude.ai 平台上同时运行 “5 到 10 个 Claude 智能体”，并通过 “传送” 指令，在网页端与本地设备之间切换任务会话。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cherny 的另一个选择也出人意料：在这个极度追求低延迟的行业，他只使用 Anthropic 体量最大、运行速度最慢的模型 Opus 4.5。“我做任何任务都用开启思考模式的 Opus 4.5，它是我用过的最好用的编程模型。尽管它比 Sonnet 模型体积更大、速度更慢，但因为你需要对它的干预更少，而且它的工具调用能力更强，最终整体效率几乎总是比使用小型模型更高。”他解释道。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">此外，Cherny 还详细介绍了他的团队如何解决 AI 的 “健忘症” 问题。标准的大语言模型在不同任务会话之间，无法 “记住” 某家公司特定的编程风格或架构决策。为解决这一难题，Cherny 的团队在代码仓库中维护着一个名为 CLAUDE.md 的共享文件。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">“每当我们发现 Claude 执行任务出错，就把问题记录到 CLAUDE.md 里，这样 Claude 下次就不会再犯同样的错误了。” 他写道。这一做法让整个代码库变成了一个能够自我修正的有机体。当人类开发者审核代码合并请求、发现错误时，他们不仅会修正代码，还会标记相关问题，让 AI 更新自身的执行指令。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">“每一次失误都能转化为一条规则。” 分析这一系列推文的产品负责人 Aakash Gupta 如此评价。</span></p>\n   <p data-cacheurl=\"\" data-remoteid=\"\" style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 20px;color: #00b38b;text-align: left;line-height: 35px;margin: 40px 8px 0 8px;background: none no-repeat left 28px;background-size: 100% 6px;background-image: url(&quot;https://image.jido.dev/20260110090459_c5c22ba6&quot;);\"><span style=\"display: block;font-size: 32px;margin-bottom: 10px;padding-left: 22px;\"><span leaf=\"\">2</span></span><span leaf=\"\">&nbsp;Cherny 公开工作流：极致自动化改造重复性任务 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">业界对 Cherny 推文的热烈反响，标志着开发者对自身工作的认知正在发生关键性转变。长久以来，“AI 编程” 的定位不过是文本编辑器里的自动补全功能。而 Cherny 的实践证明，如今的 AI 已经可以成为驱动整个工作流程的 “操作系统”。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">“我向 claude.ai/code 提交的每一处修改，都会通过 Claude 浏览器扩展程序完成自动测试。它会自动打开浏览器、测试用户界面，并反复迭代优化，直到代码正常运行，且用户体验达到预期标准。”Cherny 认为，无论是通过浏览器自动化、运行 Shell 命令，还是执行测试套件，赋予 AI 自主验证工作成果的能力能将最终产出质量提升 2~3 倍。智能体不只是编写代码，更能主动验证代码的有效性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cherny 借助斜杠指令（即已纳入项目代码库的自定义快捷指令），只需一次按键就能触发复杂操作流程。他重点介绍了一条名为 /commit-push-pr 的指令，这条指令他每天要调用数十次。无需手动输入 Git 命令、撰写提交说明、发起代码合并请求，智能体便能自主完成版本控制中的各项繁琐流程。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cherny 还部署了子智能体来负责开发生命周期中的特定阶段。在核心开发工作完成后，他会启用代码简化智能体来优化架构；在正式发布任何内容之前，则会调用应用验证智能体执行端到端测试。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">“如果你已是一名工程师，且渴望获得更强大的工作效能，一定要读读这篇分享。”Jeff Tang 在社交平台 X 上如此总结。还有观察人士盛赞，这套 “原生” 工作流的核心优势，在于将重复性任务进行了极致的自动化改造。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">参考链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are\" target=\"_blank\">https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文揭示了 Anthropic Claude Code 创始人 Boris Cherny 如何通过并行运行多个 AI 智能体、采用慢速大模型以及维护共享知识库等创新实践，将编程转变为高效的战略游戏，大幅提升个人工程师的产出效能。",
+  "oneSentenceSummary": "本文揭示了 Anthropic Claude Code 创始人 Boris Cherny 如何通过并行运行多个 AI 智能体、采用慢速大模型以及维护共享知识库等创新实践，将编程转变为高效的战略游戏，大幅提升个人工程师的产出效能。",
+  "summary": "Anthropic Claude Code 创始人 Boris Cherny 分享了一套颠覆性的 AI 辅助编程工作流，它能让一名工程师发挥出小型工程团队的产出效能。该工作流的核心是同时并行运行多达五个 Claude 智能体，将编程视为战略游戏，开发者从编写代码转变为指挥智能单元。Cherny 意外地选择使用 Anthropic 体量最大、速度最慢的 Opus 4.5 模型，因为其更高的干预效率和工具调用能力能带来整体效率提升。为解决 AI“健忘症”，他的团队维护一个 CLAUDE.md 文件，将 AI 的错误记录下来，通过这种方式让代码库成为一个自我修正的有机体。此外，Cherny 的工作流还实现了极致的自动化，通过浏览器扩展、Shell 命令和自定义斜杠指令，使 AI 能自主验证工作成果，并执行版本控制等重复性任务，显著提升了开发效率和代码质量。",
+  "mainPoints": [
+    {
+      "point": "并行使用多个 AI 智能体，将编程变为战略指挥而非线性编码。",
+      "explanation": "Cherny 同时并行管理五个 Claude 智能体处理测试、重构、文档等多任务流，显著提升了个人工程师的综合产出效率，类似指挥舰队。"
+    },
+    {
+      "point": "选择性能更强但速度较慢的 AI 大模型，以减少干预和提高整体效率。",
+      "explanation": "尽管 Opus 4.5 模型速度较慢，但其工具调用能力和较低的干预需求使其在长期维度上比小型模型更高效，能产生更高质量的代码。"
+    },
+    {
+      "point": "通过构建共享知识库 CLAUDE.md 解决 AI 的“健忘症”，实现模型的自我修正。",
+      "explanation": "将 Claude 在特定任务中发生的错误记录到 CLAUDE.md 文件中，使得 AI 能够学习并避免重复犯错，将每一次失误转化为提升规则，形成自我优化的代码库。"
+    },
+    {
+      "point": "极致自动化重复性任务，赋予 AI 自主验证和版本控制能力。",
+      "explanation": "利用浏览器自动化、运行 Shell 命令和自定义斜杠指令，实现了代码自动测试、UI 验证和 Git 提交/PR 等操作，将 AI 打造为驱动整个工作流程的“操作系统”，大幅提升代码质量和开发效率。"
+    }
+  ],
+  "keyQuotes": [
+    "我在终端里并行运行五个 Claude 智能体，把标签页按 1 到 5 编号，借助系统通知来判断哪个 Claude 需要输入指令。",
+    "我做任何任务都用开启思考模式的 Opus 4.5，它是我用过的最好用的编程模型。尽管它比 Sonnet 模型体积更大、速度更慢，但因为你需要对它的干预更少，而且它的工具调用能力更强，最终整体效率几乎总是比使用小型模型更高。",
+    "每当我们发现 Claude 执行任务出错，就把问题记录到 CLAUDE.md 里，这样 Claude 下次就不会再犯同样的错误了。",
+    "人工智能不只是编写代码，更能主动验证代码的有效性。",
+    "将重复性任务进行了极致的自动化改造。"
+  ],
+  "tags": [
+    "AI编程",
+    "大型语言模型",
+    "工作流优化",
+    "智能体",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 88,
+  "wordCount": 1679,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768017840000,
+  "publishDateStr": "01-10",
+  "publishDateTimeStr": "2026-01-10 04:04:00"
+}

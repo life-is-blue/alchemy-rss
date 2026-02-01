@@ -1,0 +1,59 @@
+{
+  "id": "RAW_175ea8",
+  "title": "如何对齐 DNN 与人类看世界的方式？像素还是概念？ ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-01-7",
+  "date": "2025-07-01 06:19:01",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/59de6bd0-c31c-47cb-45f9-abc558f93c00/public\" data-ratio=\"0.6673003802281369\" data-s=\"300,640\" data-type=\"png\" data-w=\"1052\" type=\"block\" data-backw=\"578\" data-backh=\"386\" data-imgfileid=\"100024361\" data-original-style=\"width: 100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/07a09cd6-ef03-46b8-b850-a9dde8c61c36/640.png\" data-sec-load-status=\"2\" data-report-img-idx=\"1\" alt=\"图片\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p data-pm-slice=\"0 0 []\">编辑丨%</p>\n  <p>人类专注于物体的含义，而人工智能则专注于视觉特征。</p>\n  <p>在过去的许多研究中，比较人类和 AI 中的表征的工作都依赖于全局标量度量来量化它们的一致性。但若无明确的假设，这些衡量标准也只是说明对齐的程度，而非决定因素。</p>\n  <p>这就带来了一个很值得思考的问题：<strong>「AI 眼中的『相似图像』和人类大脑的判断逻辑到底有多像？」</strong></p>\n  <p>来自德国普朗克研究所（Max Planck Institute）与荷兰奈梅亨达彭丁研究所（Nijmegen）的几位研究者提出了一种通用框架，用以比较人类与 AI 的表征。</p>\n  <p>该研究以「Dimensions underlying the representational alignment of deep neural networks with humans」为题，于 2025 年 6 月 23 日刊登于《Nature Machine Intelligence》。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c7f933c3-fdd1-4b11-1323-c807035a0d00/public\" data-ratio=\"0.3530106257378985\" data-type=\"png\" data-w=\"847\" data-width=\"847\" data-height=\"299\" data-backw=\"546\" data-backh=\"193\" data-imgfileid=\"100024358\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/8488b045-2dd2-4cb6-b529-88d9ef809afa/640.png\" alt=\"图片\" data-before-load-time=\"1751350680243\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>论文链接：https://www.nature.com/articles/s42256-025-01041-7</p>\n  <p><strong>让 AI 和人类「玩找不同」</strong></p>\n  <p>此前的许多种对比实验中，大都聚焦于两种系统的行为策略（例如，分类），揭示了 DNN 在泛化性能上的局限性。</p>\n  <p>目前常采用的相关系数或解释方差等总结统计量虽然在比较表征对齐方面有所吸引力，但在未明确假设潜在的对其偏差原因下，这些指标对主要决定属性的解释能力有限。</p>\n  <p>团队此次开发的框架受到近期认知科学研究的启发，揭示了多个可解释的 DNN 维度，这些维度似乎反映了视觉和语义图像属性，并且与人类表现得相当一致。</p>\n  <p>作为任务，人类参与者和 DNN（VGG-16）需要从展示的 3 张图像（如猫、狗、笼子）中选出「最不相似」的一张，该任务近似人类对任意视觉和语义类别的分类行为，适合比较人类和 DNN 的对象表示。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/96fbf0d6-aa4b-4f7a-f59d-9a94cb7b6900/public\" data-ratio=\"0.30364963503649633\" data-type=\"png\" data-w=\"685\" data-width=\"685\" data-height=\"208\" data-imgfileid=\"100024357\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/93ea4d4d-99cd-4d63-9b60-219eb8de1372/640.png\" alt=\"图片\" data-before-load-time=\"1751350680645\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图 1：通过模拟奇偶项任务中的行为决策来捕捉类人 DNN 对象表示的计算框架。</p>\n  <p>接下来，该框架会分析 470 万次人类判断和 2.4 万张图像的 AI 响应，用变分嵌入技术（VICE）提取「思维维度」：人类得到 68 维「语义脑回路」，AI 生成 70 维「视觉编码」。</p>\n  <p>在这些维度中，DNN 嵌入捕获了图像间相似性总变异的 84.03%，而人类嵌入捕获了总变异的 82.85%，以及给定数据集经验噪声天花板的 91.20%可解释变异。</p>\n  <p><strong>维度差异</strong></p>\n  <p>接下来团队请参与者为每个维度提供标签用以验证观察结果。与其类似的是 DNN 进行描述时嵌入的可解释维度，似乎反映了对象的语义和视觉属性（语义分类、知识相关、视觉感知等）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ae887091-fccc-4781-4d2b-b8ab98546900/public\" data-ratio=\"0.8087591240875912\" data-type=\"png\" data-w=\"685\" data-width=\"685\" data-height=\"554\" data-imgfileid=\"100024360\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/a40a336f-dade-42a3-89ac-e00d9d2f1fff/640.png\" alt=\"图片\" data-before-load-time=\"1751350681077\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图 2：从人类和 DNN 行为推断出的表征嵌入。</p>\n  <p>从结果上看，DNN 的维度不如人类的维度可解释，因其在归类图像上与人类存在全局性差异。人类主要是由语义维度主导，只有少量混合维度。相比之下 DNN 主要由视觉信息占据。</p>\n  <p>为了更进一步探索 DNN 中包含的可解释且可与人类发现的维度相比较的维度，团队使用了&nbsp;Grad-CAM&nbsp;生成热图，揭示哪些图像区域驱动了 DNN 嵌入中的维度。</p>\n  <p>虽然 Grad-CAM 能定位 AI 关注的图像区域，但本质上仍是「视觉特征拼凑」，与人类基于抽象概念的「语义编码」完全不同。例如，人类的「动物」维度对所有动物图像响应一致，而 AI 的「动物」维度会因背景出现响应波动。</p>\n  <p><strong>小结</strong></p>\n  <p>与人类的直接比较显示， DNN 达到这些表示的方式存在很大差异：人类的表示主要由语义维度主导，但 DNN 则表现出对视觉或混合视觉-语义维度的明显偏好。</p>\n  <p>DNN 仅近似了人类的语义表示，相似的行为结果也是基于不同的嵌入维度推导出来的。</p>\n  <p>那么这项研究的用处究竟在哪？</p>\n  <p>团队强调，他们的工作有助于理解人类和 DNN 在表示和行为上的差异，还有助于指导未来的工作，确定人类与 AI 对齐的差距，给予更准确的指导（比如智能识别训练）。</p>\n </body>\n</html>",
+  "aiSummary": "研究使用变分嵌入技术(VICE)比较人类与 DNN 的表征差异，揭示人类依赖语义维度而 AI 关注视觉特征的根本不同",
+  "oneSentenceSummary": "研究使用变分嵌入技术(VICE)比较人类与 DNN 的表征差异，揭示人类依赖语义维度而 AI 关注视觉特征的根本不同",
+  "summary": "德国普朗克研究所与荷兰奈梅亨达彭丁研究所的研究者开发了一个基于变分嵌入技术(VICE)的通用框架，用于比较人类与深度神经网络(DNN)的表征方式。研究通过分析 470 万次人类判断和 2.4 万张图像的 AI 响应，让人类参与者和 VGG-16 模型进行图像相似性判断任务。研究发现人类主要依赖 68 维'语义脑回路'进行判断，而 DNN 则形成 70 维'视觉编码'，虽然两者分别能解释 82.85%和 84.03%的图像相似性变异(达到经验噪声天花板的 91.20%)，但维度性质差异显著。使用 Grad-CAM 技术分析显示，人类的'动物'维度对所有动物图像响应一致，而 AI 的响应会因背景波动。这项研究揭示了人类与 AI 认知的根本差异，为未来 AI 与人类对齐提供指导。",
+  "mainPoints": [
+    {
+      "point": "人类与 DNN 的表征方式存在根本差异",
+      "explanation": "人类主要依赖语义维度判断图像相似性，而 DNN 更关注视觉特征，如人类的'动物'维度对所有动物图像响应一致，而 AI 会因背景出现响应波动"
+    },
+    {
+      "point": "变分嵌入技术(VICE)能有效比较人类与 AI 的表征",
+      "explanation": "该技术提取的人类 68 维'语义脑回路'和 AI70 维'视觉编码'可解释 82.85%-84.03%的图像相似性变异，达到经验噪声天花板的 91.20%"
+    },
+    {
+      "point": "DNN 的表征可解释性较差且依赖视觉特征",
+      "explanation": "Grad-CAM 分析显示 DNN 关注的是'视觉特征拼凑'，而非人类式的抽象语义编码，其维度受背景影响大，可解释性不如人类"
+    },
+    {
+      "point": "研究为 AI 与人类认知对齐提供新方向",
+      "explanation": "这些发现有助于指导未来的 AI 训练，特别是在智能识别等需要类人认知能力的领域"
+    }
+  ],
+  "keyQuotes": [
+    "人类专注于物体的含义，而人工智能则专注于视觉特征",
+    "人类的表示主要由语义维度主导，但 DNN 则表现出对视觉或混合视觉-语义维度的明显偏好",
+    "DNN 仅近似了人类的语义表示，相似的行为结果也是基于不同的嵌入维度推导出来的",
+    "Grad-CAM 能定位 AI 关注的图像区域，但本质上仍是'视觉特征拼凑'，与人类基于抽象概念的'语义编码'完全不同",
+    "人类'动物'维度对所有动物图像响应一致，而 AI 的'动物'维度会因背景出现响应波动"
+  ],
+  "tags": [
+    "认知科学",
+    "认知神经科学",
+    "表征对齐",
+    "DNN",
+    "人类认知"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1351,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751350741000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 06:19:01"
+}

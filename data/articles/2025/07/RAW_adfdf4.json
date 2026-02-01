@@ -1,0 +1,55 @@
+{
+  "id": "RAW_adfdf4",
+  "title": "Gemini 2.5 Flash-Lite 已稳定发布",
+  "url": "https://developers.googleblog.com/en/gemini-25-flash-lite-is-now-stable-and-generally-available/",
+  "date": "2025-07-22 00:00:00",
+  "author": "Logan Kilpatrick, Zach Gleicher",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/2.5_flash_lite_ga_banner_1600x476.original.png\" alt=\"Gemini 2.5 Flash-Lite is now stable and generally available\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"japh5\">Today, we’re releasing the stable version of Gemini 2.5 Flash-Lite, our fastest and lowest cost ($0.10 input per 1M, $0.40 output per 1M) model in the Gemini 2.5 model family. We built 2.5 Flash-Lite to push the frontier of intelligence per dollar, with native reasoning capabilities that can be optionally toggled on for more demanding use cases. Building on the momentum of 2.5 Pro and 2.5 Flash, this model rounds out our set of 2.5 models that are ready for scaled production use.</p>\n    <h2 data-block-key=\"7opvf\" id=\"our-most-cost-efficient-and-fastest-2.5-model-yet\"><b><br></b>Our most cost-efficient and fastest 2.5 model yet</h2>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini_2-5_ga_family_1-1__dark.original.png\" alt=\"Comparative table showing capabilities of Gemini 2.5 Flash-Lite, 2.5 Flash, and 2.5 Pro\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"51ouz\">Gemini 2.5 Flash-Lite strikes a balance between performance and cost, without compromising on quality, particularly for latency-sensitive tasks like translation and classification.</p>\n    <p data-block-key=\"f4kjc\">Here’s what makes it stand out:</p>\n    <p data-block-key=\"cvfvr\"></p>\n    <ul>\n     <li data-block-key=\"3vhka\"><b>Best in-class speed:</b> Gemini 2.5 Flash-Lite has lower latency than both 2.0 Flash-Lite and 2.0 Flash on a broad sample of prompts.</li>\n    </ul>\n    <p data-block-key=\"222a9\"></p>\n    <ul>\n     <li data-block-key=\"6s3hj\"><b>Cost-efficiency:</b> It’s our lowest-cost 2.5 model yet, priced at $0.10 / 1M input tokens and $0.40 output tokens, allowing you to handle large volumes of requests affordably. We have also reduced audio input pricing by 40% from the preview launch.</li>\n    </ul>\n    <p data-block-key=\"4gb33\"></p>\n    <ul>\n     <li data-block-key=\"c1697\"><b>Smart and small:</b> It demonstrates all-around higher quality than 2.0 Flash-Lite across a wide range of benchmarks, including coding, math, science, reasoning, and multimodal understanding.</li>\n    </ul>\n    <p data-block-key=\"3g7ro\"></p>\n    <ul>\n     <li data-block-key=\"27fat\"><b>Fully featured:</b> When you build with 2.5 Flash-Lite, you get access to a 1 million-token context window, controllable thinking budgets, and support for native tools like Grounding with Google Search, Code Execution, and URL Context.</li>\n    </ul>\n    <h2 data-block-key=\"6rlgz\" id=\"gemini-2.5-flash-lite-in-action\"><b><br></b>Gemini 2.5 Flash-Lite in action</h2>\n    <p data-block-key=\"8tp07\">Since the launch of 2.5 Flash-Lite, we have already seen some incredibly successful deployments, here are some of our favorites:</p>\n    <p data-block-key=\"8o99p\"></p>\n    <ul>\n     <li data-block-key=\"3b4ub\"><a href=\"https://satlyt.ai/\"><b>Satlyt</b></a> is building a decentralized space computing platform that will transform how satellite data is processed and utilized for real-time summarization of in-orbit telemetry, autonomous task management, and satellite-to-satellite communication parsing. <b>2.5 Flash-Lite’s speed has enabled a 45% reduction in latency</b> for critical onboard diagnostics and a <b>30% decrease in power consumption</b> compared to their baseline models.</li>\n    </ul>\n    <p data-block-key=\"drepb\"></p>\n    <ul>\n     <li data-block-key=\"csgq2\"><a href=\"https://www.heygen.com/?sid=rewardful&amp;via=heycok&amp;gad_source=1&amp;gad_campaignid=22741203521&amp;gclid=Cj0KCQjwyvfDBhDYARIsAItzbZGTS1VpQAHrPymGNk7IWHZqfL4StqUECwxsAby79OH2xuCg4D_fGuEaArY9EALw_wcB\"><b>HeyGen</b></a> uses AI to create avatars for video content and leverages Gemini 2.5 Flash-Lite to automate video planning, analyze and optimize content, and <b>translate videos into over 180 languages</b>. This allows them to provide global, personalized experiences for their users.</li>\n    </ul>\n    <p data-block-key=\"7hav4\"></p>\n    <ul>\n     <li data-block-key=\"68kuh\"><a href=\"https://docshound.com/\"><b>DocsHound</b></a> turns product demos into documentation by using Gemini 2.5 Flash-Lite to <b>process long videos and extract thousands of screenshots</b> with low latency. This transforms footage into comprehensive documentation and training data for AI agents much faster than traditional methods.</li>\n    </ul>\n    <p data-block-key=\"cl6u6\"></p>\n    <ul>\n     <li data-block-key=\"cb25r\"><a href=\"https://www.evertune.ai/\"><b>Evertune</b></a> helps brands understand how they are represented across AI models. Gemini 2.5 Flash-Lite is a game-changer for them, dramatically speeding up analysis and report generation. Its fast performance allows them to quickly scan and synthesize large volumes of model output to provide clients with <b>dynamic, timely insights</b>.</li>\n    </ul>\n    <p data-block-key=\"5gelf\"><br>\n      You can start using 2.5 Flash-Lite by specifying “gemini-2.5-flash-lite” in your code. If you are using the preview version, you can switch to “gemini-2.5-flash-lite” which is the same underlying model. We plan to remove the preview alias of Flash-Lite on August 25th.</p>\n    <p data-block-key=\"1als9\"><br>\n      Ready to start building? Try the stable version of Gemini 2.5 Flash-Lite now in <a href=\"https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-lite\">Google AI Studio</a> and <a href=\"https://console.cloud.google.com/vertex-ai/studio/multimodal?model=gemini-2.5-flash-lite\">Vertex AI</a>.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 的 Gemini 2.5 Flash-Lite 已稳定发布，是 2.5 系列中最快、最具成本效益的 AI 模型，针对延迟敏感型任务优化，应用范围广泛。",
+  "oneSentenceSummary": "Google 的 Gemini 2.5 Flash-Lite 已稳定发布，是 2.5 系列中最快、最具成本效益的 AI 模型，针对延迟敏感型任务优化，应用范围广泛。",
+  "summary": "本文宣布 Gemini 2.5 Flash-Lite 的稳定版本正式发布，这是 Google Gemini 2.5 系列中性价比最高、速度最快的模型。其定价极具竞争力，输入 token 为每百万 0.10 美元，输出 token 为每百万 0.40 美元，旨在通过可选的原生推理能力，最大限度地提高单位成本下的智能水平。该模型在性能和成本之间实现了极佳的平衡，尤其擅长翻译和分类等延迟敏感型任务。与 2.0 前代产品相比，它在各种基准测试中表现出卓越的质量。它提供高达 100 万 token 的上下文窗口，并支持 Grounding (基于 Google 搜索)、代码执行和 URL 上下文等原生工具。文章重点介绍了成功的实际部署案例，包括 Satlyt 的卫星数据处理（延迟降低 45%，功耗降低 30%）、HeyGen 的视频自动化和翻译、DocsHound 从视频高效生成文档，以及 Evertune 在各种 AI 模型中快速进行品牌分析。开发者可以通过 Google AI Studio 和 Vertex AI 立即访问 Gemini 2.5 Flash-Lite。",
+  "mainPoints": [
+    {
+      "point": "Gemini 2.5 Flash-Lite 为 AI 应用提供速度、成本效益和质量的最佳平衡。",
+      "explanation": "它在 Gemini 2.5 系列中提供一流的速度和最低的成本，并在各种基准测试中保持高质量，因此非常适合处理高并发、对延迟要求高的任务。"
+    },
+    {
+      "point": "该模型提供高级功能和大型上下文窗口，以满足多样化的开发需求。",
+      "explanation": "凭借 100 万 token 的上下文窗口和原生工具支持（Grounding、代码执行、URL 上下文），它使开发人员能够构建复杂且具有理解上下文能力的人工智能解决方案。"
+    },
+    {
+      "point": "实际部署证明了其在各行业具有显著效益。",
+      "explanation": "来自 Satlyt、HeyGen、DocsHound 和 Evertune 的案例研究表明，该模型如何在实际场景中减少延迟、降低成本、自动化流程并加速数据分析。"
+    }
+  ],
+  "keyQuotes": [
+    "今天，我们发布了 Gemini 2.5 Flash-Lite 的稳定版本，这是我们在 Gemini 2.5 模型系列中速度最快且成本最低（每 1M 输入 0.10 美元，每 1M 输出 0.40 美元）的模型。",
+    "Gemini 2.5 Flash-Lite 在性能和成本之间取得了平衡，而不会影响质量，尤其是在翻译和分类等延迟敏感型任务方面。",
+    "当您使用 2.5 Flash-Lite 构建时，您可以访问 100 万 token 的上下文窗口、可控的思维预算，并支持 Grounding (基于 Google 搜索)、代码执行和 URL 上下文等原生工具。",
+    "与他们的基线模型相比，2.5 Flash-Lite 的速度使关键车载诊断的延迟降低了 45%，功耗降低了 30%。",
+    "您可以通过在代码中指定 \"gemini-2.5-flash-lite\" 来开始使用 2.5 Flash-Lite。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Google Gemini",
+    "模型优化",
+    "成本效益",
+    "低延迟"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 93,
+  "wordCount": 513,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753142400000,
+  "publishDateStr": "2025-07-22",
+  "publishDateTimeStr": "2025-07-22 00:00:00"
+}

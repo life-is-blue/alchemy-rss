@@ -1,0 +1,63 @@
+{
+  "id": "RAW_70eb4f",
+  "title": "一句话生成任务专属 LoRA！Transformer 作者创业公司颠覆 LLM 微调",
+  "url": "https://www.qbitai.com/2025/06/294428.html",
+  "date": "2025-06-13 09:28:39",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"51\">鹭羽 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"52\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">告别繁琐微调，一句话就能生成LoRA？！</p>\n  <p data-track=\"3\">由Transformer作者之一Llion Jones联合创立的明星AI公司<strong>SakanaAI</strong>，近期推出<strong>Text-to-LoRA</strong> <em>（T2L）</em>，彻底简化了模型适配流程：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/cffda3ea82484857592797cd834556ec.gif\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/cffda3ea82484857592797cd834556ec.gif\">\n  </div>\n  <p data-track=\"4\">现在，微调大模型时<strong>动辄数周</strong>的数据集准备、反复调整超参数的复杂流程，可以省了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7020973a-cfda-4065-afb4-3863694df300/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7020973a-cfda-4065-afb4-3863694df300/public\">\n  </div>\n  <p data-track=\"5\">使用T2L生成的LoRA在参数压缩率上可达<strong>80%</strong>却仅降<strong>1.2%</strong>准确率，零样本场景下更以<strong>78.3%</strong>的平均准确率超越现有SOTA方法。</p>\n  <p data-track=\"6\">可以说，<strong>“一句话定制模型”</strong>的时代正在开启，非技术用户不再需要学习复杂的微调知识，直接用通俗易懂的自然语言就可以完成相应工作。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d181e64f-312b-44a0-abfe-dbb2bc9a1400/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d181e64f-312b-44a0-abfe-dbb2bc9a1400/public\">\n  </div>\n  <p data-track=\"7\">有网友甚至把它比喻为LLM的一个只有文字描述的私人教练，将会彻底改变游戏规则。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/28316341-955c-4b5d-31b2-8a9fc69d0700/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/28316341-955c-4b5d-31b2-8a9fc69d0700/public\">\n  </div>\n  <p data-track=\"8\">目前该论文已被ICML2025收录。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fd47bb70-1082-422e-79f7-c40cab415800/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fd47bb70-1082-422e-79f7-c40cab415800/public\">\n  </div>\n  <p data-track=\"9\">详细内容如下：</p>\n  <p data-track=\"11\">LLM在执行特定任务前，都需要先进行适配的LoRA微调，为每个任务单独训练低秩矩阵，往往耗费大量计算资源和时间。</p>\n  <p data-track=\"12\">研究团队从<strong>人类视觉系统</strong>中汲取灵感，即在有限的感官线索下可以实现环境快速适应，并由此构建了能够动态调制大模型的超网络架构Text-to-LoRA<em>（T2L）</em>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/92d472a3-b8e7-404d-5b8c-744a1fcb2400/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/92d472a3-b8e7-404d-5b8c-744a1fcb2400/public\">\n  </div>\n  <p data-track=\"13\">T2L包含3种架构变体，它们在输出空间和参数规模上各有不同，具体为：</p>\n  <ul>\n   <li data-track=\"14\"><strong>T2L-L：</strong></li>\n  </ul>\n  <p data-track=\"15\">为每个目标模块<em>（如注意力层、MLP 层）</em>和网络层生成完整的 LoRA 权重矩阵。</p>\n  <p data-track=\"16\">该架构的参数规模最大，但能灵活适配不同层的特性，适用于需要精细控制每层适配的场景。</p>\n  <ul>\n   <li data-track=\"17\"><strong>T2L-M：</strong></li>\n  </ul>\n  <p data-track=\"18\">按模块类型<em>（而非具体层）</em>共享输出空间。对于同一类型的模块，超网络仅生成一组共享的LoRA矩阵，并应用于该类型下的所有层。</p>\n  <p data-track=\"19\">该架构通过参数共享减少了模型规模，同时保留了模块类型级别的适配能力，在参数效率和性能之间取得平衡。</p>\n  <ul>\n   <li data-track=\"20\"><strong>T2L-S：</strong></li>\n  </ul>\n  <p data-track=\"21\">为整个模型生成统一的LoRA适配器，不区分模块类型和层索引。</p>\n  <p data-track=\"22\">该架构参数规模最小，适用于计算资源有限或任务需求较通用的场景，通过全局适配实现快速部署。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/78d449d6-8726-4387-c005-61b46f37bf00/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/78d449d6-8726-4387-c005-61b46f37bf00/public\">\n  </div>\n  <p data-track=\"23\">为了训练T2L模型，可以采用两种训练模式，分别是<strong>基于LoRA的重建</strong>和跨多个任务的<strong>监督微调</strong> <em>（SFT）</em>。</p>\n  <p data-track=\"24\"><strong>LoRA重建</strong>的核心思想是让T2L从任务的文本描述中，生成与真实LoRA适配器效果相近的参数，从而最大限度地减少生成适配器和目标适配器之间的重建损失。</p>\n  <p data-track=\"25\">这种方法避免了传统方法中对大量任务数据的依赖，转而利用已有的LoRA适配器和文本描述构建监督信号，压缩了现有的LoRAs，但难以进行零镜头泛化。</p>\n  <p data-track=\"26\">而<strong>监督微调</strong>则是使用任务描述，在任务数据集上直接端到端训练T2L。这改进了对未知任务的泛化，并能够根据文本描述生成具有可引导行为的适配器。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1676e7d9-7fb4-48d8-4332-048669f8d900/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1676e7d9-7fb4-48d8-4332-048669f8d900/public\">\n  </div>\n  <p data-track=\"27\">针对T2L的<strong>适配器压缩</strong>性能，团队进行了实验验证。</p>\n  <p data-track=\"28\">通过设置9个不同的NLP任务，将一一对应的LoRA适配器参数压缩为文本描述的嵌入向量，并通过3种T2L变体分别重建LoRA参数。</p>\n  <p data-track=\"29\">实验发现，重建LoRA与原始LoRA相比，参数规模从15.8M下降为3.2M，压缩率达<strong>80%</strong>，但在任务的平均准确率上仅下降了<strong>1.2%</strong>，证明了压缩过程中的知识保留能力。</p>\n  <p data-track=\"30\">其中，T2L-L在压缩后性能最接近原始LoRA，而T2L-S压缩率最高。</p>\n  <p data-track=\"31\">T2L能够实现高效的参数压缩，可以极大地减少存储需求，帮助LLM在资源受限环境中进行部署。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b0489300-1f77-4336-2f76-627244aa7d00/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b0489300-1f77-4336-2f76-627244aa7d00/public\">\n  </div>\n  <p data-track=\"32\">团队还进一步验证了T2L在<strong>零样本场景</strong>下生成LoRA适配器的能力。</p>\n  <p data-track=\"33\">构建了12个全新的NLP任务并各自提供自然语言描述，使用T2L生成的对应LoRA适配器直接应用于基础模型，测试其在标注数据集上的性能。</p>\n  <p data-track=\"34\">结果表明，T2L的平均准确率达到了<strong>78.3%</strong>，显著高于多任务LoRA的65.1%，和目前最先进的零样本LoRA路由方法Arrow Routing的72.4%。</p>\n  <p data-track=\"35\">其中T2L-L因为能够为不同层定制参数，在复杂任务中表现最佳，而T2L-S在简单任务上效率更高，参数规模仅为T2L-L的五分之一，但性能仅下降<strong>3.2%</strong>。</p>\n  <p data-track=\"36\">源于超网络对 “文本语义 – 参数空间” 映射的显式学习，T2L实现了真正的文本驱动，无需任务数据即可通过自然语言描述生成有效LoRA，这为模型快速适应长尾任务提供了可能。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"37\">Transformer作者创业公司</h2>\n  <p data-track=\"38\">背后的公司Sakana AI，由前谷歌研究人员<strong>Llion Jones</strong>于2023年7月共同创立。</p>\n  <p data-track=\"39\">Llion Jones是著名论文<strong>《Attention Is All You Need》</strong>的8位核心作者之一，论文中首次提出了<strong>Transformer架构</strong>，为现代LLM架构奠定了基石。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/86b32a5f-6c43-4e32-d427-c0293c861700/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/86b32a5f-6c43-4e32-d427-c0293c861700/public\">\n  </div>\n  <p data-track=\"40\">在谷歌工作期间，他还深度参与NLP、模型架构创新等众多核心AI项目，例如Prot Trans、Tensor2Tensor等。</p>\n  <p data-track=\"41\">而创办Sakana AI后，他也始终致力于探索超越和补充当前Transformer范式的新路径，例如他们在去年底推出了用于Transformer的新型神经记忆系统<strong>NAMM</strong>，今年1月提出的<strong>Transformer²</strong>可以针对各种任务动态调整权重。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c481f29-bbda-4cbc-9da1-649d3ee43600/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c481f29-bbda-4cbc-9da1-649d3ee43600/public\">\n  </div>\n  <p data-track=\"42\">目前公司专注利用自然启发的方法<em>（如进化计算和集体智能）</em>来开发基础模型，例如在今年5月他们根据达尔文进化论提出了<strong>达尔文哥德尔机</strong> <em>（DGM）</em>，可以让AI通过读取和修改自身代码来提升编码性能。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e5af862-5b91-4008-b69b-3892f6d0da00/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e5af862-5b91-4008-b69b-3892f6d0da00/public\">\n  </div>\n  <p data-track=\"43\">而本篇论文则由Rujikorn Charakorn、Edoardo Cetin、Yujin Tang、Robert T. Lange共同完成。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/71aed1db-6242-418f-a05c-663a53b1df00/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/71aed1db-6242-418f-a05c-663a53b1df00/public\">\n  </div>\n  <p data-track=\"44\">Rujikorn Charakorn曾在朱拉隆功大学就读，目前在VISTEC研究所攻读博士学位，主要研究方向是深度强化学习、多智能体学习和元学习。</p>\n  <p data-track=\"45\">Edoardo Cetin于2023年获得伦敦国王学院的博士学位，目前是Sakana AI的研究科学家，此前还曾在推特的Cortex团队、丰田和高盛实习。</p>\n  <p data-track=\"46\">而Yujin Tang则博士毕业于东京大学，曾在谷歌工作长达5年，后来于2024年加入Sakana AI。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f56cbd3b-3d26-4db0-1c82-66e545e5bd00/public\" alt=\"一句话生成任务专属LoRA！Transformer作者创业公司颠覆LLM微调\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f56cbd3b-3d26-4db0-1c82-66e545e5bd00/public\">\n  </div>\n  <p data-track=\"47\">Robert T. Lange是Sakana AI的研究科学家和创始成员之一，致力于用基础模型来增强和自动化科学发现过程。</p>\n  <p data-track=\"48\">他还主导参与了首个独立生成学术论文的<strong>“AI科学家”</strong>项目，还曾在社区引起广泛热议。</p>\n  <p data-track=\"49\"><em>论文链接：https://arxiv.org/abs/2506.06105</em><br><em>代码链接：https://github.com/SakanaAI/Text-to-Lora</em></p>\n  <p data-track=\"50\"><em>参考链接：</em><em><br></em><em>[1]https://x.com/RobertTLange/status/1933074366603919638</em><em><br></em><em>[2]https://huggingface.co/SakanaAI/text-to-lora/tree/main</em><em><br></em><em>[3]https://x.com/tan51616/status/1932987022907670591</em><em><br></em><em>[4]https://x.com/SakanaAILabs/status/1932972420522230214</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Sakana AI 推出 Text-to-LoRA 技术，通过自然语言描述一句话生成 LLM 任务专属 LoRA，简化微调并提升零样本性能。",
+  "oneSentenceSummary": "Sakana AI 推出 Text-to-LoRA 技术，通过自然语言描述一句话生成 LLM 任务专属 LoRA，简化微调并提升零样本性能。",
+  "summary": "文章详细介绍了由 Transformer 作者联合创立的 Sakana AI 公司最新研发的 Text-to-LoRA (T2L) 技术。该技术颠覆了传统的 LLM 微调流程，允许用户仅通过一句话的文本描述，就能自动生成针对特定任务的 LoRA 适配器。T2L 采用超网络架构，并提供 L/M/S 三种变体以适应不同需求。实验结果表明，T2L 不仅能将 LoRA 参数压缩高达 80%而准确率仅下降 1.2%，还在零样本场景下实现了 78.3%的平均准确率，超越了现有 SOTA 方法，极大地提高了模型适配效率和灵活性。这项创新有望让非技术用户也能轻松定制模型，开启“一句话定制模型”的新时代。",
+  "mainPoints": [
+    {
+      "point": "Text-to-LoRA（T2L）技术实现了“一句话生成 LoRA”",
+      "explanation": "通过自然语言描述直接生成任务专属 LoRA 适配器，大幅简化并加速了 LLM 微调过程，降低技术门槛。"
+    },
+    {
+      "point": "T2L 在零样本任务上表现超越现有先进方法",
+      "explanation": "无需任务数据，仅凭文本描述生成的 LoRA 在全新任务上的平均准确率达到 78.3%，泛化能力强。"
+    },
+    {
+      "point": "T2L 实现了 LoRA 参数的高效压缩",
+      "explanation": "通过超网络重建，可将 LoRA 参数压缩 80%且性能下降极小，利于在资源受限环境中部署大型模型。"
+    },
+    {
+      "point": "提供多种架构变体以适应不同应用场景",
+      "explanation": "T2L-L、T2L-M、T2L-S 三种变体在参数规模和适配粒度上有所不同，满足从精细控制到极致效率的需求。"
+    },
+    {
+      "point": "技术灵感来源于人类视觉系统的快速适应能力",
+      "explanation": "T2L 借鉴生物智能机制，构建动态调制模型参数的超网络，实现对任务的快速响应和适配。"
+    }
+  ],
+  "keyQuotes": [
+    "告别繁琐微调，一句话就能生成 LoRA？!",
+    "现在，微调大模型时**动辄数周**的数据集准备、反复调整超参数的复杂流程，可以省了。",
+    "使用 T2L 生成的 LoRA 在参数压缩率上可达**80%** 却仅降**1.2%** 准确率，零样本场景下更以**78.3%**的平均准确率超越现有 SOTA 方法。",
+    "可以说，**'一句话定制模型'**的时代正在开启，非技术用户不再需要学习复杂的微调知识，直接用通俗易懂的自然语言就可以完成相应工作。",
+    "研究团队从**人类视觉系统** 中汲取灵感，即在有限的感官线索下可以实现环境快速适应，并由此构建了能够动态调制大模型的超网络架构 Text-to-LoRA*（T2L）*。"
+  ],
+  "tags": [
+    "LLM微调",
+    "LoRA",
+    "Text-to-LoRA",
+    "超网络",
+    "零样本学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2422,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749806919000,
+  "publishDateStr": "2025-06-13",
+  "publishDateTimeStr": "2025-06-13 09:28:39"
+}

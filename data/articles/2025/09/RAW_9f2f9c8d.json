@@ -1,0 +1,54 @@
+{
+  "id": "RAW_9f2f9c8d",
+  "title": "Claude 4.5 刚刚发布，能连肝 30 多个小时，史上最卷 AI 诞生",
+  "url": "https://www.ifanr.com/1639684?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-09-30 08:16:29",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>论卷编程，还得看 Claude。</p>\n  <p>就在刚刚，Anthropic 正式发布&nbsp;Claude Sonnet 4.5。</p>\n  <p><img class=\"alignnone size-full wp-image-1639700\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12123.png!720\" alt=\"\" width=\"1322\" height=\"590\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12123.png!720 1322w, https://s3.ifanr.com/wp-content/uploads/2025/09/12123-360x161.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/12123-768x343.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/12123-1024x457.png 1024w\" sizes=\"(max-width: 1322px) 100vw, 1322px\"></p>\n  <p>先说 Claude Sonnet 4.5 交出的成绩单，在考察真实编程水平的 SWE-bench Verified 测试里，Claude Sonnet 4.5 直接登顶业界第一。</p>\n  <p><img class=\"alignnone size-full wp-image-1639701\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12124.png!720\" alt=\"\" width=\"1266\" height=\"722\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12124.png!720 1266w, https://s3.ifanr.com/wp-content/uploads/2025/09/12124-360x205.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/12124-768x438.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/12124-1024x584.png 1024w\" sizes=\"(max-width: 1266px) 100vw, 1266px\"></p>\n  <p>更离谱的是，它能连续专注干活超过 30 小时。</p>\n  <p>好好好，AI 取代人类的优势又 +1 了。</p>\n  <p>比如让它写个类似 Slack 或 Teams 的聊天应用，它能一口气敲出大约 1.1 万行代码。相比之下，之前的 Claude Opus 4 和 Codex，最多也就能独立工作七小时。</p>\n  <p>用 Anthropic 的话来说，Claude Sonnet 4.5 现在就是全球最强编程模型——构建复杂智能体、操作电脑、推理和数学，各项能力都狠狠提升了一波。</p>\n  <p><img class=\"alignnone size-full wp-image-1639703\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12126.png!720\" alt=\"\" width=\"1294\" height=\"1042\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12126.png!720 1294w, https://s3.ifanr.com/wp-content/uploads/2025/09/12126-360x290.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/12126-768x618.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/12126-1024x825.png 1024w\" sizes=\"(max-width: 1294px) 100vw, 1294px\"></p>\n  <p>比方说，在 OSWorld 这个专门测试真实计算机任务的基准里，它拿下了 61.4% 的成绩，直接第一。要知道，四个月前 Sonnet 4 还以 42.2% 的成绩遥遥领先，这才多久性能就又往上抬了一大截。</p>\n  <p>而 Anthropic 的 Claude Chrome 插件甚至能直接在浏览器里自己导航网站、填表格、处理任务，像个真人在操作似的。推理、金融这些测评项目上也都更强了，各项指标都在往上涨。</p>\n  <p><img class=\"alignnone size-full wp-image-1639705\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12128.png!720\" alt=\"\" width=\"1282\" height=\"704\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12128.png!720 1282w, https://s3.ifanr.com/wp-content/uploads/2025/09/12128-360x198.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/12128-768x422.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/12128-1024x562.png 1024w\" sizes=\"(max-width: 1282px) 100vw, 1282px\"></p>\n  <p>有了这么强的能力，Anthropic 这次自然不会只发个模型就完事。</p>\n  <p>具体来看：</p>\n  <ul>\n   <li>Claude Code加了「检查点」功能，能随时保存进度，想回退到之前某个状态一键搞定</li>\n   <li>终端界面翻新，还发布了原生 VS Code 插件</li>\n   <li>Claude API 增加了上下文编辑功能和记忆工具</li>\n   <li>代码执行和文件创建现在直接整合到对话里</li>\n  </ul>\n  <p>甚至，Anthropic 把自己内部用来搭建 Claude Code 的底层基础设施也开放出来了，叫 Claude Agent SDK。</p>\n  <p>智能体怎么在长时间任务里管理记忆、怎么设计权限系统让自主性和用户控制找到平衡点、怎么让多个子智能体配合着完成目标，这些都是构建和设计 AI 智能体的棘手问题。</p>\n  <p>而借助 Claude Agent SDK，现在你也能拿去构建自己的产品。</p>\n  <p><img class=\"alignnone size-full wp-image-1639707\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/121210.png!720\" alt=\"\" width=\"1272\" height=\"710\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/121210.png!720 1272w, https://s3.ifanr.com/wp-content/uploads/2025/09/121210-360x201.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/121210-768x429.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/121210-1024x572.png 1024w\" sizes=\"(max-width: 1272px) 100vw, 1272px\"></p>\n  <p>今天起，开发者还可以通过 Claude API 调用 claude-sonnet-4-5。定价还是跟 Claude Sonnet 4 一样，每百万 tokens $3/$15，价格没变能力更强。</p>\n  <p>网友 @vasumanmoza 体验完直接发帖：</p>\n  <p>「Claude 4.5 Sonnet 刚在一次调用里重构了我整个代码库，25 次工具调用，新增 3000 多行代码，生成了 12 个全新文件。它把所有东西都模块化了，拆掉了巨石式结构，清理了意大利面条式代码。结果完全跑不通，但天啊真的很优雅。」这评价，属于又爱又恨那种。</p>\n  <p>Cursor 表示，在 Claude Sonnet 4.5 上看到了最前沿的编程性能，尤其处理长周期任务时提升明显。这也再次说明为什么很多 Cursor 用户会选 Claude 来解决最复杂的问题。</p>\n  <p>知名测评博主&nbsp;Dan Shipper 则表示，新版 Sonnet 4.5 在使用体验上响应速度更快，可控性更强，也更稳定。</p>\n  <p>性能强是一方面，安全性也得跟上。</p>\n  <p>据介绍，Claude Sonnet 4.5 也是 Anthropic 到目前为止对齐度最高的前沿模型。</p>\n  <p>靠着 Claude 更强的能力加上完善的安全训练，Anthropic 在模型行为上取得了显著改进，减少了阿谀奉承、欺骗、权力追求、鼓励妄想等行为。此外，Anthropic 在防御提示注入攻击和减少内容误判这块也有了重大突破。</p>\n  <p><img class=\"alignnone size-full wp-image-1639706\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12129.png!720\" alt=\"\" width=\"1282\" height=\"720\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12129.png!720 1282w, https://s3.ifanr.com/wp-content/uploads/2025/09/12129-360x202.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/12129-768x431.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/12129-1024x575.png 1024w\" sizes=\"(max-width: 1282px) 100vw, 1282px\"></p>\n  <p>比较让我感兴趣的是，Anthropic 还在 Claude Sonnet 4.5 发布的同时推出了个临时研究预览功能，叫「Imagine with Claude」。</p>\n  <p>在这个功能里，Claude 会实时生成软件，所有功能不是预设的，所有代码也不是提前写好的。你看到的一切都是 Claude 跟你互动时当场创造和调整出来的。</p>\n  <p>不过，「Imagine with Claude」接下来五天内只会对 Max 订阅用户开放。</p>\n  <p>附上传送门 claude.ai/imagine。</p>\n  <p><img class=\"alignnone size-full wp-image-1639704\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12127.png!720\" alt=\"\" width=\"1286\" height=\"858\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/12127.png!720 1286w, https://s3.ifanr.com/wp-content/uploads/2025/09/12127-360x240.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/12127-768x512.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/12127-1024x683.png 1024w\" sizes=\"(max-width: 1286px) 100vw, 1286px\"></p>\n  <p>毫无疑问，今年的 AI 赛道依旧是卷编程的一年。</p>\n  <p>目前 Anthropic 估值已经到了 1830 亿美元，8 月还实现了年化营收 50 亿美元，但这其中相当一部分增长靠着来自编程软件的普及。问题是，老对手 OpenAI 和 Google Gemini 也在疯狂推类似工具抢程序员用户。</p>\n  <p>甚至一周之后就是 OpenAI 年度开发者大会，Anthropic 这个时候抢先发布 Claude Sonnet 4.5，时间卡得够精准，明摆着就是要给对手上一波压力。</p>\n  <p>此外，Anthropic 联合创始人兼首席科学官 Jared Kaplan 还表示，更先进的 Opus 模型，预计今年晚些时候推出：「Anthropic 在大小模型的使用上都能占优势。」</p>\n  <p>不过有一说一，Anthropic 自己眼下也有麻烦要解决。</p>\n  <p>过去两个月，Claude 系列模型刚经历了一场「降智」风波。用户普遍反映模型推理、代码、格式和工具调用质量断崖式下滑，连付费的 Max 用户都没能幸免。</p>\n  <p>虽然 Anthropic 后来紧急回滚了 Opus 4.1 更新，还承认了两个独立 Bug，声明「绝非为省成本故意降智」，但由于没提供补偿或退款，GitHub 和 X 等平台上还是出现了退订潮，不少用户直接转投 Codex。</p>\n  <p>这次 Claude Sonnet 4.5 的发布，显然就是 Anthropic 想用实打实的性能提升来挽回流失的用户。至于能不能成功，就看接下来几周的实际表现了。</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 发布 Claude Sonnet 4.5，在编程基准测试中登顶，支持长时间专注工作，并推出 Agent SDK 和开发工具，旨在挽回用户并挑战竞争对手。",
+  "oneSentenceSummary": "Anthropic 发布 Claude Sonnet 4.5，在编程基准测试中登顶，支持长时间专注工作，并推出 Agent SDK 和开发工具，旨在挽回用户并挑战竞争对手。",
+  "summary": "文章报道了 Anthropic 发布 Claude Sonnet 4.5，强调其在 SWE-bench Verified 编程测试中位居业界第一，并具备连续专注工作超过 30 小时的能力，能一口气生成大量代码。新模型在 OSWorld 等真实计算机任务基准测试中表现突出，并增强了推理、金融等各项能力。Anthropic 还推出了多项开发工具和功能，包括 Claude Code 的“检查点”、原生 VS Code 插件、API 上下文编辑和记忆工具，以及开放了用于构建智能体的 Claude Agent SDK。文章提及了用户对新模型的积极反馈，但也指出了 Anthropic 此前模型“降智”风波的背景，并分析了此次发布旨在挽回用户和在 AI 编程赛道上与 OpenAI、Google Gemini 竞争的战略意图。最后，文章还预告了更先进的 Opus 模型将在今年晚些时候推出，并介绍了“Imagine with Claude”的临时研究预览功能。",
+  "mainPoints": [
+    {
+      "point": "Claude Sonnet 4.5 在编程基准测试中表现卓越，尤其擅长长时间任务。",
+      "explanation": "新模型在 SWE-bench Verified 和 OSWorld 等测试中登顶，展现了顶尖的编程能力，并能连续工作 30 小时，极大提升了 AI 在复杂软件开发中的效率和可靠性。"
+    },
+    {
+      "point": "Anthropic 通过 Agent SDK 和开发工具，赋能开发者构建复杂 AI 应用。",
+      "explanation": "开放 Claude Agent SDK 以及提供 VS Code 插件、API 增强功能等，降低了智能体和 AI 应用的开发门槛，加速了 AI 技术在实际场景中的落地。"
+    },
+    {
+      "point": "此次发布是 Anthropic 应对市场竞争和用户信任危机的战略举措。",
+      "explanation": "在经历“降智”风波后，Anthropic 通过发布性能强劲的新模型，旨在挽回流失用户，并在与 OpenAI、Google Gemini 的激烈竞争中占据优势。"
+    }
+  ],
+  "keyQuotes": [
+    "在考察真实编程水平的 SWE-bench Verified 测试里，Claude Sonnet 4.5 直接登顶业界第一。",
+    "用 Anthropic 的话来说，Claude Sonnet 4.5 现在就是全球最强编程模型------构建复杂智能体、操作电脑、推理和数学，各项能力都狠狠提升了一波。",
+    "甚至，Anthropic 把自己内部用来搭建 Claude Code 的底层基础设施也开放出来了，叫 Claude Agent SDK。",
+    "这次 Claude Sonnet 4.5 的发布，显然就是 Anthropic 想用实打实的性能提升来挽回流失的用户。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Claude Sonnet 4.5",
+    "Anthropic",
+    "编程助手",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 86,
+  "wordCount": 1729,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759220189000,
+  "publishDateStr": "2025-09-30",
+  "publishDateTimeStr": "2025-09-30 08:16:29"
+}

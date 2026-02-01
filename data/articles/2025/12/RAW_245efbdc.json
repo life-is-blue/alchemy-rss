@@ -1,0 +1,58 @@
+{
+  "id": "RAW_245efbdc",
+  "title": "Vike 发布 Photon：搭载新一代 JavaScript 部署架构并深度集成 Cloudflare",
+  "url": "https://www.infoq.com/news/2025/12/photon-deployment-javascript/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-09 09:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://vike.dev/\">Vike</a>, the flexible framework for building advanced web applications, has introduced <a href=\"https://vike.dev/blog/photon\">Photon</a>, a next-generation infrastructure for deploying JavaScript servers across any platform. Photon represents a shift in how developers approach server deployment and integration.</p>\n   <p>The Vike team has also released <code>vike-photon</code>, which replaces the previous <code>vike-server</code> package. Developers currently using <code>vike-server</code> are encouraged to migrate to the new infrastructure to take advantage of the improved capabilities.</p>\n   <p>Photon is designed to work with any JavaScript server framework, including Hono, Express.js, Fastify, Elysia, H3, Srvx, and Hattip, and supports deployment to any platform, whether self-hosted, Cloudflare, Vercel, or Netlify. This universal approach addresses a longstanding challenge in the JavaScript ecosystem where different server frameworks and deployment platforms have required custom integration work.</p>\n   <p>One of the improvements in Photon is the Cloudflare integration. When using <code>@photonjs/cloudflare</code>, the development environment runs inside Cloudflare's <code>workerd</code> runtime instead of Node.js. This is the same runtime Cloudflare uses in production, making the development environment a much more faithful representation of production behavior. Vike is among the first frameworks to support this capability, powered by Vite's Environment API, which enables Vite to run in a Node.js process while executing server code in another non-Node.js process such as <code>workerd</code>.</p>\n   <p>The new infrastructure also allows developers to directly use Cloudflare's APIs in development without requiring the previously clunky <code>getPlatformProxy()</code> setup. Developers can now access key-value stores, environment variables, and other Cloudflare features seamlessly in both development and production environments.</p>\n   <p>Beyond the Cloudflare improvements, Photon includes several developer experience enhancements. Hot Module Replacement (HMR) eliminates the need for full server reloads during development. The infrastructure supports per-route code splitting, allowing deployment to separate edge workers. Photon also provides zero-config integration for most common scenarios while maintaining flexibility for advanced use cases, and includes a built-in server for projects that prefer not to configure their own.</p>\n   <p>The Vike team positions Photon as part of a broader movement toward shared deployment infrastructure in the JavaScript ecosystem. Other projects working in this space include Nitro and Netlify's infrastructure RFC. The Vike team has expressed eagerness to collaborate with both initiatives, noting that increased collaboration across the ecosystem benefits everyone.</p>\n   <p>The announcement has generated positive early feedback from the developer community. Responding to the <a href=\"https://x.com/brillout/status/1983148778866765849?s=46\">release announcement</a>, one developer commented, \"Just finished the article, this sounds amazing.\"</p>\n   <p>For developers migrating from <code>vike-server</code>, the process involves updating dependencies to remove <code>vike-server</code> and install <code>vike-photon</code> along with the latest version of Vike (0.4.239 or higher). Configuration files require updates to replace <code>vike-server/config</code> with <code>vike-photon/config</code>, and server entry points need adjustments to use the new Photon packages such as <code>@photonjs/hono</code> or <code>@photonjs/vercel</code>. Developers using <code>vike-cloudflare</code> should replace it with <code>@photonjs/cloudflare</code>, while those using <code>vite-plugin-vercel</code> should switch to <code>@photonjs/vercel</code>. Complete migration documentation is available at <a href=\"http://vike.dev/migration/vike-photon\">vike.dev/migration/vike-photon</a>.</p>\n   <p>Photon is open source and developed collaboratively, reflecting the team's philosophy that deployment infrastructure should be shared across the JavaScript community. While the long-term evolution of these tools remains uncertain, Photon provides a concrete solution for developers today while the community works toward potentially integrating more functionality directly into Vite and its ecosystem.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vike Releases Photon with Next-Gen JavaScript Deployment Infrastructure and Cloudflare Integration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/photon-deployment-javascript/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765270800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vike 发布了 Photon，一款全新的 JavaScript 部署架构，深度集成了 Cloudflare，可增强在任何平台部署 JavaScript 服务器的体验，并具有热模块替换 (HMR) 等特性。",
+  "oneSentenceSummary": "Vike 发布了 Photon，一款全新的 JavaScript 部署架构，深度集成了 Cloudflare，可增强在任何平台部署 JavaScript 服务器的体验，并具有热模块替换 (HMR) 等特性。",
+  "summary": "Vike 推出了 Photon，一款用于 JavaScript 服务器的新一代部署架构，旨在简化各种框架（例如 Hono、Express.js）和平台（例如 Cloudflare、Vercel）上的部署。Photon 的一个主要亮点是其 Cloudflare 集成，它使得开发环境能在与生产环境相同的 Cloudflare `workerd` 运行时中运行（`workerd` 是 Cloudflare Workers 的底层技术），通过 Vite 的环境 API 确保一致性。新功能包括在开发中无缝访问 Cloudflare API、热模块替换 (HMR) 和按路由代码分割。Photon 取代了 `vike-server`，鼓励现有用户进行迁移，提供零配置的便利性以及高级用例的灵活性。它也是一个开源项目，旨在推动 JavaScript 生态系统中共享部署架构的趋势。",
+  "mainPoints": [
+    {
+      "point": "Photon 统一了 JavaScript 服务器部署，并解决了跨框架和平台的集成挑战。",
+      "explanation": "通过支持多样化的服务器框架和部署平台，Photon 消除了自定义集成工作的需要，显著简化了开发人员的部署流程并提高了效率。"
+    },
+    {
+      "point": "`workerd` 运行时中的 Cloudflare 集成确保了开发与生产环境的一致性。",
+      "explanation": "开发人员现在可以在模拟生产环境的 `workerd` 运行时中构建和测试其应用程序，从而更准确地反映生产行为并减少潜在的部署不一致性。"
+    },
+    {
+      "point": "Photon 引入了热模块替换 (HMR) 和按路由代码分割，提升了开发效率和部署灵活性。",
+      "explanation": "HMR 通过消除开发过程中的服务器完全重新加载，减少了开发人员的迭代时间；而按路由代码分割则通过允许部署将边缘工作器根据特定路由进行分离，从而优化了性能和可扩展性。"
+    },
+    {
+      "point": "Photon 促进了 JavaScript 生态系统中共享部署架构的更广泛运动。",
+      "explanation": "作为开源项目，Photon 鼓励协作，并与 Nitro 和 Netlify 的基础设施 RFC 等举措保持一致，旨在为 JavaScript 社区的服务器部署建立通用的工具和最佳实践。"
+    }
+  ],
+  "keyQuotes": [
+    "Photon 旨在与任何 JavaScript 服务器框架配合使用，包括 Hono、Express.js、Fastify、Elysia、H3、Srvx 和 Hattip，并支持部署到任何平台，无论是自托管、Cloudflare、Vercel 还是 Netlify。",
+    "当使用 `@photonjs/cloudflare` 时，开发环境在 Cloudflare 的 `workerd` 运行时而不是 Node.js 中运行。这与 Cloudflare 在生产中使用的运行时相同，使得开发环境能够更忠实地反映生产行为。",
+    "热模块替换 (HMR) 消除了开发过程中服务器完全重新加载的需要。该基础设施支持按路由代码分割，允许部署到单独的边缘工作器。",
+    "Vike 团队将 Photon 定位为 JavaScript 生态系统中共享部署架构的更广泛运动的一部分。"
+  ],
+  "tags": [
+    "JavaScript",
+    "部署",
+    "Vike",
+    "Cloudflare",
+    "Vite"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 509,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765270800000,
+  "publishDateStr": "2025-12-09",
+  "publishDateTimeStr": "2025-12-09 09:00:00"
+}

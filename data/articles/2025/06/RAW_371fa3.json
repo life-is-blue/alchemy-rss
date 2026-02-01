@@ -1,0 +1,58 @@
+{
+  "id": "RAW_371fa3",
+  "title": "英伟达 GB200 NVL72 超级计算机在 DeepSeek V2 上实现 2.7 倍推理加速",
+  "url": "https://www.infoq.com/news/2025/06/nvidia-gb200/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-29 00:00:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In collaboration with NVIDIA, researchers from <a href=\"https://github.com/sgl-project/sglang\">SGLang</a> have <a href=\"https://lmsys.org/blog/2025-06-16-gb200-part-1/\">published</a> early benchmarks of the GB200 (Grace Blackwell) NVL72 system, showing up to a 2.7× increase in LLM inference throughput compared to the H100 on the DeepSeek-V2 671B model.</p>\n   <p>The uplift is attributed to a suite of software optimizations built for the Blackwell architecture, including FP8-optimized matrix multiplication, accelerated attention kernels, and high-speed token routing over <a href=\"https://www.nvidia.com/en-us/data-center/nvlink/\">NVLink</a>. These enhancements were integrated into the SGLang runtime to fully exploit GB200's dense multi-GPU fabric and unified memory model.</p>\n   <p>NVIDIA's <a href=\"https://www.nvidia.com/en-us/data-center/gb200-nvl72/\">GB200 NVL72</a> is positioned as a general-purpose platform for large-scale AI, spanning both training and inference. This benchmark, focused solely on inference, offers an early look at how the system performs under realistic load—before broader workloads like multi-trillion parameter training or multimodal serving are publicly tested.</p>\n   <p>In decoding benchmarks using a 2,000-token prompt, SGLang achieved 7,583 tokens per second per GPU—a 2.7× improvement over H100 HGX systems on the same workload. This level of throughput enables <a href=\"https://developer.nvidia.com/blog/how-nvidia-gb200-nvl72-and-nvidia-dynamo-boost-inference-performance-for-moe-models\">faster responses</a> for large-context inputs and high concurrency, such as technical document summarization, codebase-aware AI assistants, and enterprise-scale retrieval-augmented generation (RAG). It also reduces the number of GPUs required to serve large models interactively, improving both latency and cost efficiency at scale.</p>\n   <p><img class=\"zoom-image\" height=\"369\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXcgKz8ZsZxVdPDbOz9QZBrMbuHGGtQLMe6XzRdfp4GlMc8oeMjVEOoBBLZ21vpBsPCwSwMPpin2pcIgDkVCp5R1pRtY6hwFUuG96GVOOA78bODKbcGs-i35_-qFWGTXWqPLS2y6?key=opwSJS7N2Pqg7-p-JiukVA\" width=\"602\" rel=\"share\"></p>\n   <p>The benchmark was conducted using <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-Prover-V2-671B\">DeepSeek-V2</a>, a 671-billion parameter, decoder-only large language model. Released by DeepSeek, the model follows a Mixture-of-Experts (MoE) design—<a href=\"https://arxiv.org/pdf/2405.04434\">activating ~21B parameters per token</a>&nbsp;(≈ 9% of the total)—meaning only a fraction of the parameters are used during inference.</p>\n   <p>This architecture presents a realistic performance challenge: token routing between experts <a href=\"https://lmsys.org/blog/2025-05-05-large-scale-ep\">stresses inter-GPU communication</a>, while the large model size and long prompt lengths place sustained pressure on GPU memory.&nbsp;</p>\n   <p>To achieve the reported speedup, the SGLang team integrated a series of Blackwell-specific optimizations into their runtime. These include DeepGEMM, a high-performance FP8 matrix multiplication library designed to exploit Blackwell's new UMMA (Unified Matrix Multiplication Accelerator) instructions; FlashInfer FMHA (Fused Multi-Head Attention), a rewritten fused attention kernel optimized for the DeepSeek model's prefill phase; and DeepEP, a communication library that efficiently shuffles tokens between routed experts using direct NVLink memory mapping.&nbsp;</p>\n   <p>The team also employed CUTLASS MLA (Multi-Head Latent Attention), a latent-attention kernel tuned for Blackwell's memory hierarchy, and Mooncake, a custom transfer engine for disaggregated key-value (KV) cache movement.&nbsp;</p>\n   <p>Collectively, these components formed a software path that minimized compute, memory, and communication overhead during SGLang's large-scale multi-GPU inference experiments.</p>\n   <p>The authors note that while the benchmark demonstrates significant gains in decoding throughput, several areas remain under-optimized. In particular, the prefill stage has yet to be fully tuned, and many kernels do not yet saturate the GB200's memory bandwidth or compute capacity. Communication and compute are also not fully overlapped, leaving further efficiency gains on the table.</p>\n   <p>Future work will focus on closing these gaps, with plans to optimize prefill latency and improve memory utilization and latency.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Nvidia's GB200 NVL72 Supercomputer Achieves 2.7× Faster Inference on DeepSeek V2\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/nvidia-gb200/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1751220000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "借助 Blackwell 架构优化，英伟达 GB200 NVL72 系统在 DeepSeek-V2 671B 模型上的推理性能较 H100 提升 2.7 倍。",
+  "oneSentenceSummary": "借助 Blackwell 架构优化，英伟达 GB200 NVL72 系统在 DeepSeek-V2 671B 模型上的推理性能较 H100 提升 2.7 倍。",
+  "summary": "SGLang 研究团队发布的基准测试表明，英伟达 GB200 NVL72 系统在 DeepSeek-V2 671B 大语言模型上的推理吞吐量达到每 GPU 7583 token/秒，较 H100 提升 2.7 倍。这一性能飞跃得益于针对 Blackwell 架构的系列软件优化：采用 FP8 优化的 DeepGEMM 矩阵乘法、FlashInfer FMHA 注意力核，以及基于 NVLink 的 DeepEP 令牌路由技术。这些优化充分利用了 GB200 的密集多 GPU 互连架构和统一内存模型，有效应对了 DeepSeek-V2 混合专家模型（每 token 仅激活约 210 亿参数）带来的技术挑战。测试结果显示，在技术文档摘要和检索增强生成等大上下文应用中，系统解码吞吐量显著提升，但预填充阶段的性能优化仍是未来重点改进方向。",
+  "mainPoints": [
+    {
+      "point": "GB200 NVL72 在 DeepSeek-V2 671B 上的推理速度达到 7583 token/秒，较 H100 快 2.7 倍。",
+      "explanation": "基准测试证实了通过软硬件深度集成可为混合专家模型带来显著的吞吐量提升。"
+    },
+    {
+      "point": "Blackwell 专属优化包括 DeepGEMM 矩阵乘法、FlashInfer FMHA 注意力核和基于 NVLink 的 DeepEP 路由。",
+      "explanation": "这些组件构成了完整的软件通路，最大程度降低了大规模推理中的计算、内存和通信开销。"
+    },
+    {
+      "point": "DeepSeek-V2 的混合专家架构带来了独特的路由和内存管理挑战。",
+      "explanation": "每 token 仅激活约 210 亿参数的设计对 GPU 间互联通信提出了极高要求，需要高效的令牌路由机制。"
+    },
+    {
+      "point": "后续优化将聚焦预填充延迟降低和内存带宽利用率提升。",
+      "explanation": "通过进一步挖掘 GB200 架构的潜力，有望获得额外性能提升。"
+    }
+  ],
+  "keyQuotes": [
+    "性能提升源自专为 Blackwell 架构设计的优化套件，包括 FP8 优化的矩阵乘法、加速的注意力核，以及基于 NVLink 的高速令牌路由技术。",
+    "7583 token/秒的吞吐量可显著提升大上下文应用（如技术文档摘要、代码感知型 AI 助手和企业级检索增强生成系统）的响应速度。",
+    "为实现这一加速效果，SGLang 团队整合了系列 Blackwell 专属优化，包括 DeepGEMM 矩阵乘法、FlashInfer FMHA 注意力核和 DeepEP 通信库。",
+    "未来工作将着力解决当前性能瓶颈，重点优化预填充延迟并提升内存利用效率。"
+  ],
+  "tags": [
+    "性能基准",
+    "大语言模型",
+    "英伟达",
+    "GB200 NVL72",
+    "Blackwell"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 471,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1751155200000,
+  "publishDateStr": "2025-06-29",
+  "publishDateTimeStr": "2025-06-29 00:00:00"
+}

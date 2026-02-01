@@ -1,0 +1,57 @@
+{
+  "id": "RAW_0023bd",
+  "title": "打造开源社区的四个步骤",
+  "url": "https://github.blog/open-source/maintainers/four-steps-toward-building-an-open-source-community/",
+  "date": "2025-03-06 17:00:25",
+  "author": "Klint Finley",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Open source projects generally begin with a problem to be solved. If it’s a problem a lot of people have, it may gain traction. Eventually you might have many people contributing. Before you know it, your project might turn into more than just a project, but a community.</p>\n  <p>That requires you as a maintainer to think differently about what you’re doing. It’s no longer just about writing code, but about facilitating relationships.</p>\n  <p>In this article, we’ll explore four steps to take to help your open source project evolve into a healthy community.</p>\n  <h2 id=\"1-lay-the-ground-work-early\">1. Lay the ground work early<a href=\"#1-lay-the-ground-work-early\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"1. Lay the ground work early\"></a></h2>\n  <p>It’s never too early to start thinking about community. The <a href=\"https://github.com/withastro/astro\">Astro</a> team had community building in mind from the very beginning of the project. “It was one of the first things we focused on once we had a minimum viable product (MVP) together,” Astro co-creator Fred Schott told us in a <a href=\"https://github.blog/open-source/maintainers/what-to-do-when-your-open-source-project-becomes-a-community/\">Q&amp;A on open source community building</a>.</p>\n  <p>There’s quite a bit you can do to prepare before people start showing up. Among the most important is creating contributor guidelines and adopting a code of conduct. “You’d be surprised at how early contributor guidelines come in handy,” Schott says. “You need to answer questions like ‘How do I clone the repo?’ or ‘How do I get the packages installed?'” These basic things might seem obvious. But maintainers have been in their codebases for so long that they forget how hard it can be for new people to get started.</p>\n  <p>Many maintainers think a code of conduct isn’t something they need to worry about when the project is small and conflicts between contributors have yet to arise. But it’s best to have clearly articulated expectations and a plan for what to do if someone violates them <em>before</em> they are needed. “If you care about outside contributions at all, you should have a code of conduct, regardless of size,” Schott says. “It’s more about intent: If your goal is to build a community or encourage outside contributors on your project, then you’ll want a code of conduct. If your repo is meant to be a solo project, then I think you’re fine to skip it.”</p>\n  <h2 id=\"2-meet-people-where-they-are\">2. Meet people where they are<a href=\"#2-meet-people-where-they-are\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"2. Meet people where they are\"></a></h2>\n  <p>Building your own community spaces on platforms like Discord, Slack, and GitHub Discussions is important, but in the early days you need to meet people where they are. <a href=\"https://github.com/graphile\">Graphile</a> co-maintainer Jem Gillam says the team used F5bot to watch for mentions of Graphile across the web and social media so the team could answer questions and join conversations where they were already taking place. Eventually, as a project grows, a community will cohere in a particular place.</p>\n  <p>Think offline, too. Conferences and meetups are a great way to meet current and potential users and contributors. “I go to conferences and let people know that we’re looking for contributors and that we’ll walk anyone through submitting their first pull request,” says <a href=\"https://github.com/dataplat/dbatools\">dbatools</a> creator and maintainer Chrissy LeMaire. “I entice people by letting them know they can safely cut their teeth with us.”</p>\n  <h2 id=\"3-lead-by-example\">3. Lead by example<a href=\"#3-lead-by-example\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"3. Lead by example\"></a></h2>\n  <p>Having a code of conduct is one thing. But it’s more important to conduct yourself the way you want your community to act. Schott emphasizes the importance of being patient with new users. “If you’re dismissive of the problems people face, they’ll leave,” he says. “First impressions are important.”</p>\n  <p>It’s important to set the right tone. “If there’s something that has come up that’s really negative, we tend to give it time—we don’t react in the moment,” Gillam says. The team strives to assume good intent because often people might come across more harshly than they intend, especially if they’re not writing in their native language. “It’s very easy for people to think they have a silly question, but we encourage people to ask them anyway because if one person has a particular question other people probably do as well,” Gillam says.</p>\n  <p>LeMaire recommends being open about what you don’t know and where you personally struggle. She livestreamed her work on Twitch to show people that even as a Microsoft Most Valuable Professional and GitHub Star she still struggled and made mistakes. “I show people that it’s OK not to know everything and that they don’t have to use the most intimidating or complicated tools to be effective,” she says.</p>\n  <h2 id=\"4-spotlight-your-contributors\">4. Spotlight your contributors<a href=\"#4-spotlight-your-contributors\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"4. Spotlight your contributors\"></a></h2>\n  <p>Be sure to show your appreciation for your contributors. You can thank them in the README file on your repo. LeMaire set up a LinkedIn company for dbatools and told contributors they were welcome to add themselves. It helped contributors spotlight their contributions outside of GitHub, and even helped some find jobs.</p>\n  <p>Don’t forget to recognize the <a href=\"https://github.com/readme/featured/open-source-non-code-contributions\">non-code contributors</a> as well. “Our documentation used to assume that core contributors were technical contributors, so we had some technical requirements,” Schott explains. Initially, the Astro project required someone to make “significant code contributions” to become a core contributor. Now the team evalutates non-code contributions when considering whether to promote someone to core contributor status.</p>\n  <p>“People contribute in lots of different ways, from documentation to community support,” Schott says. “We’ve updated our expectations accordingly.”</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\">\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文为开源项目维护者提供了将项目发展为健康社区的四个实用步骤。",
+  "oneSentenceSummary": "本文为开源项目维护者提供了将项目发展为健康社区的四个实用步骤。",
+  "summary": "文章借鉴了 Astro， Graphile， dbatools 等项目的实践经验，探讨了如何将开源项目发展为健康社区的四个关键步骤。首先，强调尽早树立社区观念，制定贡献者指南和行为准则的重要性。其次，建议维护者主动在用户常用的平台与他们互动，并积极参与线下活动。第三，强调维护者应以身作则，耐心对待新用户，营造积极友好的氛围。最后，鼓励维护者公开感谢贡献者，包括代码贡献者和非代码贡献者。通过这些措施，开源项目可以吸引更多参与者，构建更具活力的社区。",
+  "mainPoints": [
+    {
+      "point": "重视并感谢所有贡献者（含非代码贡献者）",
+      "explanation": "公开表彰贡献，认可非代码贡献价值，能有效激励社区成员，促进多元化贡献，提升社区整体活力。"
+    },
+    {
+      "point": "尽早制定贡献者指南和行为准则",
+      "explanation": "明确项目参与规则和行为规范，降低新手入门门槛，预防潜在冲突，营造积极健康的社区环境。"
+    },
+    {
+      "point": "积极互动是社区建设的关键",
+      "explanation": "主动参与讨论，解答疑问，能有效扩大项目影响力，吸引更多潜在贡献者，促进社区凝聚力。"
+    },
+    {
+      "point": "维护者应以身作则，营造积极友好的氛围",
+      "explanation": "耐心解答问题，开放分享经验，鼓励提问，能有效提升用户参与度和归属感，促进社区健康发展。"
+    }
+  ],
+  "keyQuotes": [
+    "无论规模大小，如果你重视外部贡献，就应该制定行为准则。（原文：If you care about outside contributions at all， you should have a code of conduct， regardless of size.）",
+    "人们很容易觉得自己的问题很傻，但我们仍然鼓励他们提问，因为如果一个人有某个问题，其他人可能也有。（原文：It's very easy for people to think they have a silly question， but we encourage people to ask them anyway because if one person has a particular question other people probably do as well.）",
+    "人们通过多种方式做出贡献，从文档到社区支持。我们已经相应地更新了我们的期望。（原文：People contribute in lots of different ways， from documentation to community support. We've updated our expectations accordingly.）"
+  ],
+  "tags": [
+    "开源社区",
+    "开源项目管理",
+    "社区建设",
+    "项目维护",
+    "贡献者"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 856,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741280425000,
+  "publishDateStr": "2025-03-06",
+  "publishDateTimeStr": "2025-03-06 17:00:25"
+}

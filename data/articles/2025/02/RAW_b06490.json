@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b06490",
+  "title": "不到 24 小时，开源版 Deep Research 疯狂来袭！一月少花 1400",
+  "url": "https://www.jiqizhixin.com/articles/2025-02-04-2",
+  "date": "2025-02-04 12:35:30",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote data-author-name=\"\" data-content-utf8-length=\"13\" data-source-title=\"\" data-type=\"2\" data-url=\"\">\n   <section>\n    <section>\n     <p>OpenAI 被开源包围了。</p>\n    </section>\n   </section>\n  </blockquote>\n  <p>昨日，AI 社区最大的新闻当属 OpenAI 发布的全新智能体 <a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650953359&amp;idx=1&amp;sn=f51a6615c061fac099186905d0be9b94&amp;scene=21#wechat_redirect\" target=\"_blank\">Deep Research</a> 了！</p>\n  <p>作为一个使用推理来综合大量在线信息并为用户完成多步骤研究任务的智能体，Deep Research 旨在帮助用户进行深入、复杂的信息查询与分析。</p>\n  <p><img data-imgfileid=\"503469748\" data-ratio=\"0.5532900834105653\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250204234313_dd46eb\" data-type=\"gif\" data-w=\"1079\" data-original-style=\"\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/2c8c8631-d9a0-4a70-9ecd-7f7816309052/640.gif\" data-order=\"0\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>显然，对于那些在金融、科学、政策和工程等领域从事密集知识工作并需要彻底、精确和可靠研究的用户而言，Deep Research 称得上研究神器了。</p>\n  <p>项目负责人之一 Zhiqing Sun（孙之清）本科毕业于北京大学计算机科学与技术系。2019 年起在 CMU 语言技术研究所攻读博士学位，现为 OpenAI 研究科学家。</p>\n  <p><img data-imgfileid=\"503469749\" data-ratio=\"0.8977604673807206\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c62f0a1d-0ed8-4327-cf20-d01c364f8500/public\" data-type=\"png\" data-w=\"1027\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/84de09bf-9a0d-4f02-a205-b0d8ba87d8b8/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>遗憾的是，Deep Research 目前仅供 Pro 订阅用户使用，每月 200 美元着实令很多人望而却步。</p>\n  <p><img data-imgfileid=\"503469751\" data-ratio=\"0.1574074074074074\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1de35a7b-9693-419b-6487-f074e39d8900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/7dd56ef4-1fc1-439e-a182-8b8052b65e37/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>所以，在 Deep Research 发布之后，各种开源复现版本纷至沓来。</p>\n  <p>从 OpenAI 发布的官方博客来看，Deep Research 用到了端到端的强化学习，并且在多个领域的复杂浏览和推理任务上进行了训练，因此才有了现在的性能。</p>\n  <p>其实，早在去年，来自字节跳动 ByteDance Research 的研究人员就提出了基于强化学习（Reinforcement Learning, RL）的 LLM Agent 框架 ——AGILE。该研究已被NeurIPS接收，这应该是学术界第一个用强化学习做Agent的端到端训练的工作。了解更多内容可以参考机器之心此前报道《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650936623&amp;idx=4&amp;sn=3c6959f5f349e915efdde582fa526d04&amp;scene=21#wechat_redirect\" target=\"_blank\">端到端优化所有能力，字节跳动提出强化学习LLM Agent框架AGILE</a>》。</p>\n  <p>接下来，我们看看在一天之内，都有哪些 Deep Research开源复现项目。</p>\n  <p><strong>一、Open Deep Research</strong></p>\n  <p>其中一个开源复现版本为「Open Deep Research」。</p>\n  <p><img data-imgfileid=\"503469752\" data-ratio=\"0.43425925925925923\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/21e5f50f-5904-4777-e33e-86ee8e27d600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/a747d1a0-e42c-456f-97f1-b9055478fd21/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>项目地址：https://github.com/nickscamara/open-deep-research</p>\n  <p>具体而言，Open Deep Research 是一个 AI 智能体，可以对大量的 web 数据进行推理，该方法没有使用 o3 的微调版本，而是使用了爬虫工具 Firecrawl 的提取 + 搜索功能以及推理模型来深入研究网络。</p>\n  <p>项目主页还放出了 demo 展示，我们可以发现，在询问 Open Deep Research 关于「2025 年 B2B 领域最大的创业机会」时，Open Deep Research 给出了思考过程，答案也相当完美。<a href=\"https://mp.weixin.qq.com/s/bf_3PmC2-ptzEBadBa6XFQ?token=935449120&amp;lang=zh_CN\"><img src=\"https://image.jiqizhixin.com/uploads/editor/bba64f6b-d5b5-4aa8-a1e8-4d723742e081/1738672275914.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>根据项目介绍，我们可以得知 Open Deep Research 背后默认的模型为 gpt-4o，如果你想换个其他模型使用也是可以的，只需几行代码即可切换为 Anthropic、Cohere 等发布的模型。</p>\n  <p><strong>二、OpenDeepResearcher</strong></p>\n  <p>另外一个比较热门的复现项目为「OpenDeepResearcher」。</p>\n  <p><img data-imgfileid=\"503469753\" data-ratio=\"0.32685185185185184\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6740653d-bf1e-4901-0a9a-2a04f42fb700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/3d80d79e-7019-4377-a2f6-05ea7ea7d0a9/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>项目地址：https://github.com/mshumer/OpenDeepResearcher</p>\n  <p>作为一个开源的 AI 智能体，OpenDeepResearcher 可以提供全面的研究。用户只需提供一个主题，该智能体就会展开研究，并返回一份综合报告。</p>\n  <p>其工作过程非常简单，对于给定的查询，OpenDeepResearcher 执行以下步骤：</p>\n  <ul>\n   <li>\n    <section>\n     执行搜索，查看结果页面，并提取重要信息；\n    </section></li>\n   <li>\n    <section>\n     如果它想深入了解，其可以重复此过程，并提出新的查询；\n    </section></li>\n   <li>\n    <section>\n     完成后，它会使用上下文生成报告。<a href=\"https://mp.weixin.qq.com/s/bf_3PmC2-ptzEBadBa6XFQ?token=935449120&amp;lang=zh_CN\"><img src=\"https://image.jiqizhixin.com/uploads/editor/a4817e94-fb3f-48d4-be62-17033214ac59/1738672316186.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a>\n    </section>\n    <p><strong>三、node-DeepResearch</strong></p>\n    <p>最后一个复现项目是「node-DeepResearch」，它是由 Jina AI CEO 肖涵（Han Xiao）创建。</p>\n    <p>他表示，OpenAI 的 Deep Research 只是在 while 循环中进行「搜索 + 读取 + 推理」。他在 nodejs 运行环境中，使用谷歌 gemini-flash 和 jina reader（Jina AI 推出的开源工具，将互联网上的 HTML 网页内容转换为适合 LLM 处理的纯文本格式）进行了复现。</p>\n    <p><img data-imgfileid=\"503469754\" data-ratio=\"0.8648148148148148\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2c060d96-f56d-40d3-6ca6-819fcf639800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/faddae18-02b7-44a8-aedc-ce11f4128a3c/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n    <p>我们来看下运行效果。</p>\n    <p>下面是「jina ai 最新博客文章内容是什么」（what is the latest blog post from jina ai）的 2/3 步搜索示例：首先找到 jina ai 新闻网站、阅读其内容，然后确定最新帖子内容。</p>\n    <p><img data-imgfileid=\"503469755\" data-ratio=\"0.9275521405049396\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250204234313_01d463\" data-type=\"gif\" data-w=\"911\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/db53c277-ba28-4ed0-9381-b032aa4c1cde/640.gif\" data-order=\"1\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n    <p>下面视频是关于「who is the biggest, cohere, jina ai, voyage」的 13 步查询，经过搜索、反馈、循环之后，结果是正确的（cohere）。这里视频 2 倍加速。<a href=\"https://mp.weixin.qq.com/s/bf_3PmC2-ptzEBadBa6XFQ?token=935449120&amp;lang=zh_CN\"><img src=\"https://image.jiqizhixin.com/uploads/editor/aead791c-b363-45e3-9eb0-fe4ed67958c0/1738672352230.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a></p>\n    <p>对于 node-DeepResearch，显然缺少了微调 o3 推理模型的支持。</p>\n    <p><img data-imgfileid=\"503469756\" data-ratio=\"0.15092592592592594\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/24197e23-0696-477b-7ddc-9ff9437d9800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/e6fc822c-2d81-4326-9386-1b807471fd59/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n    <p>有人认为，这个项目实现了 OpenAI 准备了半年多的东西所做到的功能。还有人呼吁，赶紧把 UI 做得漂亮一点。</p>\n    <p><img data-imgfileid=\"503469757\" data-ratio=\"0.6898148148148148\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fca64468-1ae8-4e71-dca8-059982173e00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/a4165ba5-e9a4-473e-8dff-5ccd35800092/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n    <p>目前，该项目已经收获了近 700 个 Stars。</p>\n    <p><img data-imgfileid=\"503469758\" data-ratio=\"0.45092592592592595\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cce03bb2-91cb-46d2-3ddd-45ef25b81200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/3cbd6339-7179-4fdd-9823-adf788da74e4/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n    <p>项目地址：https://github.com/jina-ai/node-DeepResearch</p>\n    <p>相信后续会有更多类似的开源智能体项目出来。</p></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "文章介绍了多个开源复现版本的 Deep Research 智能体，强调了与 OpenAI 的 Deep Research 在功能和成本效益上的不同。",
+  "oneSentenceSummary": "文章介绍了多个开源复现版本的 Deep Research 智能体，强调了与 OpenAI 的 Deep Research 在功能和成本效益上的不同。",
+  "summary": "文章详细报道了 OpenAI 发布的 Deep Research 智能体，并跟踪了多个开源复现项目。Deep Research 旨在通过推理和综合大量在线信息来完成复杂的研究任务，主要服务于金融、科学、政策和工程领域的用户。文章介绍了来自字节跳动的 AGILE 框架作为学术界的先行者，并列举了几个开源复现项目：Open Deep Research、OpenDeepResearcher 和 node-DeepResearch，分别基于不同技术实现了对网络信息的自动搜索、提取与推理分析。文章还提到，OpenAI 的 Deep Research 服务目前仅对 Pro 订阅用户开放，而开源复现版本为用户提供了低成本的替代方案，并在技术实现上各有优劣。",
+  "mainPoints": [
+    {
+      "point": "Deep Research 能为用户完成复杂的多步骤研究任务",
+      "explanation": "Deep Research 结合推理技术和大规模在线信息，通过多步骤的查询和推理流程，帮助用户高效地进行深入的研究工作，特别适用于金融、科学等领域的专家需求。"
+    },
+    {
+      "point": "AGILE 框架提出了基于强化学习的智能体训练方法",
+      "explanation": "字节跳动提出的 AGILE 框架通过端到端强化学习优化大语言模型，成为 Deep Research 背后的核心技术之一。AGILE 为智能体提供了更强的推理能力与效率。"
+    },
+    {
+      "point": "多个开源项目提供了 Deep Research 的替代实现方案",
+      "explanation": "开源版本如 Open Deep Research 和 OpenDeepResearcher 通过不同技术手段复现了 Deep Research 的功能，并通过开源方式为用户提供了更具成本效益的选择。"
+    },
+    {
+      "point": "开源项目具有不同的技术实现和优缺点",
+      "explanation": "如 Open Deep Research 侧重于使用爬虫工具进行数据提取，而 node-DeepResearch 则利用谷歌 gemini-flash 和 Jina Reader 进行搜索与推理，这使得它们在实际应用场景中表现不同。"
+    }
+  ],
+  "keyQuotes": [
+    "Deep Research 是一款能够为用户完成多步骤研究任务的智能体。",
+    "AGILE 框架是学术界第一个基于强化学习的端到端训练的 LLM Agent 框架。",
+    "Open Deep Research 可以通过简单的几行代码切换不同的推理模型，提供灵活的功能。",
+    "node-DeepResearch 实现了基于谷歌 gemini-flash 和 Jina Reader 的搜索与推理流程。",
+    "开源复现版本为用户提供了低成本的替代方案，降低了使用门槛。"
+  ],
+  "tags": [
+    "Deep Research",
+    "开源项目",
+    "AI智能体",
+    "信息查询",
+    "推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1602,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1738672530000,
+  "publishDateStr": "2025-02-04",
+  "publishDateTimeStr": "2025-02-04 12:35:30"
+}

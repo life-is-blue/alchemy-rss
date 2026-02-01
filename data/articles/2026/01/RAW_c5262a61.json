@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c5262a61",
+  "title": "微软研究院开发新方法以增强 AI 模型隐私保护",
+  "url": "https://www.infoq.com/news/2026/01/microsoft-llm-contextual-privacy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-02 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A team of AI researchers at Microsoft introduces <a href=\"https://www.microsoft.com/en-us/research/blog/reducing-privacy-leaks-in-ai-two-approaches-to-contextual-integrity/\">two novel approaches for enforcing contextual integrity in large language models</a>: <a href=\"https://github.com/microsoft/ACV/tree/main/misc/PrivacyInAction\">PrivacyChecker</a>, an open-source lightweight module that acts as a <a href=\"https://www.microsoft.com/en-us/research/publication/privacy-in-action-towards-realistic-privacy-mitigation-and-evaluation-for-llm-powered-agents/\">privacy shield during inference</a>, and CI-CoT + CI-RL, an advanced training method designed to <a href=\"https://www.microsoft.com/en-us/research/publication/contextual-integrity-in-llms-via-reasoning-and-reinforcement-learning/\">teach models to reason about privacy</a>.</p>\n   <p>Contextual integrity defines privacy as the appropriateness of information flows within specific social contexts, that is, disclosing only the information strictly necessary to carry through a given task, such as booking a medical appointment. According to Microsoft's researchers, today's LLMs lack this kind of contextual awareness and can potentially disclose sensitive information, thereby undermining user trust.</p>\n   <p>The first approach focuses on inference-time checks, i.e., safeguards applied when a model generates its response. These checks constitute a protective shield, evaluating the information at multiple stages of an agent’s request lifecycle. The researchers provide a reference implementation of a library, PrivacyChecker, that integrates with the global system prompt as well as with specific tool calls, and can be used as a gate when invoking external MCP tools to prevent sensitive information from being shared with them.</p>\n   <p>PrivacyChecker follows a relatively simple pipeline. First, it extracts information from the user's request; next, it classifies it according to a <em>privacy judgement</em>; and, optionally, it injects privacy guidelines into the prompt to ensure the model knows how to handle detected sensitive information.</p>\n   <p>PrivacyChecker is model-agnostic and can be used with existing models without retraining.</p>\n   <blockquote>\n    <p>On the static PrivacyLens benchmark, PrivacyChecker was shown to reduce information leakage from 33.06% to 8.32% on GPT4o and from 36.08% to 7.30% on DeepSeekR1, while preserving the system’s ability to complete its assigned task.</p>\n   </blockquote>\n   <p>The second approach explored by Microsoft's researchers aims to enhance contextual integrity using chain-of-thought prompting (CI-CoT). While the chain-of-thought technique is typically employed to improve a model's problem-solving capabilities, the researchers applied it with a twist:</p>\n   <blockquote>\n    <p>We repurposed CoT to have the model assess contextual information disclosure norms before responding. The prompt directed the model to identify which attributes were necessary to complete the task and which should be withheld.</p>\n   </blockquote>\n   <p>While CI-CoT proved effective at reducing information leakage on the <a href=\"https://github.com/SALT-NLP/PrivacyLens\">PrivacyLens benchmark</a>, it also tended to produce more conservative responses, occasionally withholding information that was necessary for the given task. To addressed this issue, Microsoft's researchers introduced a reinforcement learning stage (CI-RL):</p>\n   <blockquote>\n    <p>The model is rewarded when it completes the task using only information that aligns with contextual norms. It is penalized when it discloses information that is inappropriate in context. This trains the model to determine not only how to respond but whether specific information should be included.</p>\n   </blockquote>\n   <p>The combined approach, CI-CoT + CI-RL, was as effective as CI-CoT in reducing leakage while preserving the original model's performance.</p>\n   <p>Contextual integrity is a novel concept that has been pioneered at <a href=\"https://arxiv.org/html/2408.02373v2\">Google DeepMind</a> and Microsoft in the context of LLM research. Originally proposed by <a href=\"https://www.jstor.org/stable/23046912\">Helen Nissenbaum</a>, it defines privacy not as a blanket right to secrecy, but as the <a href=\"https://arxiv.org/html/2408.02373v1\">\"appropriate flow of information in accordance with contextual information norms\"</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Research Develops Novel Approaches to Enforce Privacy in AI Models\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/microsoft-llm-contextual-privacy/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767387600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软研究院推出了 PrivacyChecker 和 CI-CoT + CI-RL 方法，通过在 LLM 中强制执行“情境完整性”来增强隐私，防止在推理和模型推理过程中泄露敏感信息。",
+  "oneSentenceSummary": "微软研究院推出了 PrivacyChecker 和 CI-CoT + CI-RL 方法，通过在 LLM 中强制执行“情境完整性”来增强隐私，防止在推理和模型推理过程中泄露敏感信息。",
+  "summary": "微软研究院揭晓了两种增强大语言模型（LLM）隐私的新方法，旨在强制执行情境完整性。第一种是 PrivacyChecker，这是一个开源且与模型无关的模块，在推理过程中运行，用于在用户提示词到达 LLM 或外部工具之前审计并过滤敏感信息。在 PrivacyLens 等基准测试中，它在不进行重新训练的情况下，显著降低了 GPT-4o 和 DeepSeekR1 等模型的信息泄露率。第二种方法结合了思维链（CI-CoT）提示词与强化学习（CI-RL），教导 LLM 推理隐私规范和属性必要性。CI-CoT 引导模型识别并扣留不必要的属性，而 CI-RL 则奖励适当的信息流并惩罚不当披露，从而兼顾隐私保护与任务完成。这些方法基于“情境完整性”概念，该概念通过特定社会情境下信息流的适当性来定义隐私，旨在防止 LLM 无意中泄露敏感数据并破坏用户信任。",
+  "mainPoints": [
+    {
+      "point": "微软研究院开发了 PrivacyChecker，这是一种用于 LLM 推理阶段的隐私盾牌。",
+      "explanation": "PrivacyChecker 是一个开源且与模型无关的模块，它从用户请求中提取敏感信息，根据隐私判断进行分类，并能将隐私指南注入提示词中。正如在 PrivacyLens 基准测试中所展示的，它在不需要模型重新训练的情况下，显著减少了推理过程中的信息泄露。"
+    },
+    {
+      "point": "一种全新的训练方法 CI-CoT + CI-RL，教导 LLM 推理情境隐私。",
+      "explanation": "该方法使用思维链（CI-CoT）提示词引导模型评估情境信息披露规范，识别必要属性与敏感属性。随后，强化学习（CI-RL）奖励符合隐私规范的任务完成行为，同时惩罚不当披露，从而在隐私保护与模型性能之间取得平衡。"
+    },
+    {
+      "point": "该研究基于隐私的“情境完整性”框架。",
+      "explanation": "情境完整性将隐私定义为特定社会情境下信息的适当流动，而不仅仅是保密。这些方法旨在赋予 LLM 这种理解能力，防止其无意中泄露敏感信息，从而建立用户信任并防止隐私泄露。"
+    }
+  ],
+  "keyQuotes": [
+    "在静态 PrivacyLens 基准测试中，PrivacyChecker 被证明能将 GPT-4o 的信息泄露率从 33.06% 降低到 8.32%，将 DeepSeekR1 的泄露率从 36.08% 降低到 7.30%，同时保持系统完成指定任务的能力。",
+    "我们重新利用了 CoT，让模型在回答之前评估情境信息披露规范。提示词引导模型识别哪些属性是完成任务所必需的，哪些应该被扣留。",
+    "当模型仅使用符合情境规范的信息完成任务时，会获得奖励；当其披露了在情境中不当的信息时，会受到惩罚。这训练了模型不仅要决定如何回答，还要决定特定信息是否应该被包含在内。"
+  ],
+  "tags": [
+    "LLM 隐私",
+    "AI 安全",
+    "情境完整性",
+    "强化学习",
+    "思维链"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 500,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767387600000,
+  "publishDateStr": "01-02",
+  "publishDateTimeStr": "2026-01-02 21:00:00"
+}

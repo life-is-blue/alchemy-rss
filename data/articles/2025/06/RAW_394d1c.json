@@ -1,0 +1,57 @@
+{
+  "id": "RAW_394d1c",
+  "title": "基准测试报告揭示 OpenTelemetry 对 Go 语言性能的影响",
+  "url": "https://www.infoq.com/news/2025/06/opentelemetry-go-performance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-30 00:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">A new benchmark study from <a href=\"https://coroot.com/blog/opentelemetry-for-go-measuring-the-overhead/\">observability platform Coroot</a> has shed light on the performance costs of implementing <a href=\"https://www.dynatrace.com/monitoring/technologies/opentelemetry\">OpenTelemetry</a> in high-throughput <a href=\"https://go.dev/\">Go</a> applications. The findings show that while OpenTelemetry delivers valuable trace-level insights, it introduces notable overhead, increasing CPU usage by approximately 35% and increasing network traffic and latency under load.</p>\n   <p dir=\"ltr\">Using a simple HTTP service backed by an in-memory database, the study compared baseline performance with full OpenTelemetry instrumentation under identical load conditions (10,000 requests per second). Runs occurring in <a href=\"https://www.docker.com/\">Docker</a> containers across four Linux hosts revealed several findings: enabling tracing increased CPU usage from 2 to 2.7 cores (roughly 35%), memory usage rose by 5–8 MB, and 99th-percentile latency increased modestly from approximately 10 ms to 15 ms. Additionally, tracing data resulted in approximately 4 MB/s of outbound network traffic, highlighting the resource implications of full request-level telemetry.</p>\n   <p dir=\"ltr\">The study also contrasted <a href=\"https://opentelemetry.io/docs/specs/otel/trace/sdk/\">SDK-based tracing</a> with eBPF-based approaches, although caution should be noted, as Coroot sells an eBPF-based observability solution. <a href=\"https://ebpf.io/\">eBPF</a>, which avoids modifying application code, exhibited lower resource consumption—under 0.3 cores—even under heavy load when only metrics were collected. Coroot concluded that while OpenTelemetry's SDK offers detailed trace visibility, it comes with measurable overhead that must be weighed against observability needs. They argue that for use cases prioritizing low latency and running with capped resources, an eBPF-based implementation may be a more suitable compromise.</p>\n   <p dir=\"ltr\">This evaluation sparked conversations in the Go community. A <a href=\"https://news.ycombinator.com/item?id=44290331\">discussion on Hacker News</a> suggested performance gains could be achieved by optimizing SDK internals, such as using faster time functions, replacing mutexes with atomics, or marshaling methodically. On <a href=\"https://www.reddit.com/r/golang/comments/1lajtwn/opentelemetry_for_go_measuring_the_overhead/\">Reddit</a>, users noted that even with zero sampling, significant overhead remains due to context propagation and span management. These perspectives underscore a broader recognition that while OpenTelemetry brings essential insights, it also introduces resource tradeoffs that require careful implementation and tuning.</p>\n   <p dir=\"ltr\">One user, <a href=\"https://www.reddit.com/user/FZambia/\">FZambia</a>, stated the following:</p>\n   <blockquote>\n    <p dir=\"ltr\">\"I was initially skeptical about tracing with its overhead (both resource-wise and instrumentation process-wise) vs properly instrumented app using metrics. As time goes, I have more and more examples when tracing helped to diagnose the issue, investigating incidents. The visualization helps a lot here – cross-team communication simplifies a lot when you have a trace. Still, I see how spans contains so much unnecessary data in tags, and collecting them on every request seems so much work to do while you are not using 99.999% of those spans. Turning on sampling is again controversial - you won't find span when it's needed (sometimes it's required even if the request was successful). So reading such detailed investigations of tracing overhead is really useful, thanks!\"</p>\n   </blockquote>\n   <p dir=\"ltr\">Coroot's benchmarks provide valuable data showing that OpenTelemetry in Go delivers powerful observability at a measurable cost, with approximately 35% CPU overhead, and increased latency under load. The community response suggests that optimizations are underway, yet teams should still balance the need for trace-level visibility against performance constraints and explore lighter-weight options like eBPF-based metrics when appropriate.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Report Shows OpenTelemetry’s Impact on Go Performance\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/opentelemetry-go-performance/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1751284800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "基准研究表明，在 Go 语言中使用 OpenTelemetry（可观测性框架）会带来 35% 的 CPU 开销，揭示了性能与可观测性之间的权衡关系，同时表明基于 eBPF（扩展伯克利包过滤器）的方案能以更低开销实现类似功能。",
+  "oneSentenceSummary": "基准研究表明，在 Go 语言中使用 OpenTelemetry（可观测性框架）会带来 35% 的 CPU 开销，揭示了性能与可观测性之间的权衡关系，同时表明基于 eBPF（扩展伯克利包过滤器）的方案能以更低开销实现类似功能。",
+  "summary": "Coroot 进行的基准测试评估了 OpenTelemetry 在 Linux 主机上运行的 Docker 容器中高吞吐量 Go 语言应用程序的性能影响。结果显示 CPU 增加 35%，内存增加 5-8 MB，在每秒 1 万次请求的负载下延迟更高，链路追踪数据产生的网络流量为 4 MB/s。该研究对比了基于 SDK 的链路追踪和 eBPF 方法，显示 eBPF 的资源消耗更低（CPU 占用低于 0.3 个核心）。Hacker News 和 Reddit 上的社区讨论提出了 SDK 优化建议（更快的时间函数、原子操作替换），同时讨论了采样权衡——丢失关键跨度与减少未使用标签元数据的开销。",
+  "mainPoints": [
+    {
+      "point": "OpenTelemetry 在 Go 语言中引入了显著的资源开销",
+      "explanation": "在负载下，CPU 增加 35%，内存增长 5-8 MB，P99 延迟从 10ms 增加到 15ms，需要在系统可观测性和运行性能之间谨慎权衡。"
+    },
+    {
+      "point": "eBPF 提供了比 SDK 链路追踪更低开销的替代方案",
+      "explanation": "Coroot 的 eBPF 实现通过避免代码埋点显示出 CPU 占用低于 0.3 个核心，尽管与 OpenTelemetry SDK 相比追踪粒度较粗。"
+    },
+    {
+      "point": "社区在采样争议中提出 SDK 优化建议",
+      "explanation": "开发者提出了技术改进（原子操作、高效序列化），同时应对采样困境——丢失关键跨度与收集大部分未使用的标签元数据。"
+    },
+    {
+      "point": "链路追踪可视化有助于跨团队诊断",
+      "explanation": "如社区评论所述，尽管存在开销成本，但链路追踪可视化显著改善了事件诊断和团队沟通。"
+    }
+  ],
+  "keyQuotes": [
+    "研究结果表明，虽然 OpenTelemetry 提供了有价值的链路追踪级别洞察，但它引入了显著的开销，在负载下 CPU 使用率增加约 35%，网络流量和延迟也增加。",
+    "Coroot 得出结论，虽然 OpenTelemetry 的 SDK 提供了详细的链路追踪可见性，但它带来了可衡量的开销，必须与可观测性需求进行权衡。",
+    "可视化在这里帮助很大——当你有一个链路追踪时，跨团队沟通会简化很多。不过，我看到跨度中包含了许多不必要的标签元数据，在每个请求上收集这些数据显得效率低下，而你实际上不会使用 99.999% 的这些跨度。"
+  ],
+  "tags": [
+    "可观测性",
+    "性能基准测试",
+    "OpenTelemetry",
+    "Go 语言",
+    "eBPF"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 485,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1751241600000,
+  "publishDateStr": "2025-06-30",
+  "publishDateTimeStr": "2025-06-30 00:00:00"
+}

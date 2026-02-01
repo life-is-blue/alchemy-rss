@@ -1,0 +1,51 @@
+{
+  "id": "RAW_f1e420",
+  "title": ".NET AI Chat Web App 模板 Preview 2 发布：支持 Qdrant 和 .NET Aspire",
+  "url": "https://www.infoq.com/news/2025/04/microsoft-dotnet-ai-template-p2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-21 00:00:00",
+  "author": "Almir Vuk",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The second preview of the <a href=\"https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview2/\">.NET AI Chat Web App template</a> has been released, introducing several enhancements. This update includes support for .NET Aspire and integration with the Qdrant vector database, enabling the creation of cloud-native applications with this template.</p>\n   <p>The .NET AI template is a component of Microsoft's effort to simplify AI development, offering scaffolding and guidance through Visual Studio, Visual Studio Code, and the .NET CLI. It is designed to expedite the development of AI-powered chat applications capable of interacting with custom data. This release continues to employ the <a href=\"https://en.wikipedia.org/wiki/Retrieval-augmented_generation\">Retrieval Augmented Generation (RAG)</a> pattern, commonly used in chat applications, while adding new features tailored for developers using <a href=\"https://www.infoq.com/news/2023/11/dotnet-aspire/\">.NET Aspire</a>.</p>\n   <p>A notable addition in Preview 2 is the support for .NET Aspire, which enhances the development toolkit by enabling advanced AI capabilities and offering improved integration options. Additionally, the inclusion of the <a href=\"https://qdrant.tech/\">Qdrant vector database</a> demonstrates how it can be leveraged in conjunction with .NET Aspire to create scalable applications utilizing vector data.</p>\n   <p><a href=\"https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview2/\">Preview 2</a> also introduces configuration options for Visual Studio Code. When creating a new project with the C# Dev Kit extension, developers can configure settings such as model service providers and vector stores, further enhancing the flexibility of the template.</p>\n   <p>Key features of the template include the ability to create chat-based UI interactions using sample PDFs or custom data with the RAG pattern. Developers can select between local vector stores for rapid prototyping or Azure AI Search for more complex use cases. The template also allows for the customization of generated code to meet specific project requirements, including chat interactions, citation tracking, and follow-up suggestions.</p>\n   <p>The update introduces .NET Aspire Orchestration, which facilitates powerful integrations with both local and cloud-based AI models. The <strong><em>Use .NET Aspire Orchestration</em></strong>&nbsp;option generates a new .NET Aspire solution with an <em>.AppHost</em> project for configuring integrations with various AI services and vector store providers.</p>\n   <p>Developers can host local models using the <a href=\"https://ollama.com/\">Ollama</a> container image available on Docker, integrated via the <a href=\"https://learn.microsoft.com/en-us/dotnet/aspire/community-toolkit/ollama?tabs=dotnet-cli%2Cdocker\">.NET Aspire Community Toolkit Ollama</a> package.</p>\n   <p><img alt=\"\" style=\"width:100%;height:732px;\" data-src=\"https://www.infoq.com/news/2025/04/microsoft-dotnet-ai-template-p2/news/2025/04/microsoft-dotnet-ai-template-p2/en/resources/1use-aspire-orchestration-1745167526397.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/microsoft-dotnet-ai-template-p2/en/resources/1use-aspire-orchestration-1745167526397.png\" rel=\"share\"><em>(Source: <a href=\"https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview2/\">Microsoft Official Documentation</a>)&nbsp;</em></p>\n   <p>Support for GitHub Models, OpenAI, and Azure OpenAI is also included, offering direct connections to advanced language models through Azure's secure environment or OpenAI APIs. Developers can also leverage enhanced semantic search capabilities, powered by <a href=\"https://azure.microsoft.com/en-us/products/ai-services/ai-search\">Azure AI Search</a> and Qdrant vector stores, to index and query vectorized data more effectively.</p>\n   <p>To start with Preview 2, developers can install the <a href=\"https://www.nuget.org/packages/Microsoft.Extensions.AI.Templates/9.4.0-preview.2.25216.9\"><em>Microsoft.Extensions.AI.Templates</em></a> package by running the following command:</p>\n   <pre>\r\n<code class=\"language-bash\">dotnet new install Microsoft.Extensions.AI.Templates</code></pre>\n   <p>Microsoft continues to refine the .NET AI template based on feedback from the community. As stated in the source, the future releases will include support for <em>Console</em> and <a href=\"https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-9.0\"><em>Minimal API</em></a> templates, deeper integration with <em><a href=\"https://azure.microsoft.com/en-us/products/ai-foundry\">Azure AI Foundry</a></em>, and closer collaboration with the <a href=\"https://youtube.com/shorts/IKNs6Bz5Yjk?si=YKC9dqyhYpUc_9iU\">Semantic Kernel</a> team. Eventually, as reported, the template will be bundled with the .NET SDK by default.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\".NET AI Chat Web App Template Preview 2 Released with Qdrant and .NET Aspire Support\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Almir Vuk\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/microsoft-dotnet-ai-template-p2/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1745230200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": ".NET AI Chat Web App 模板 Preview 2 发布，重点集成 .NET Aspire 和 Qdrant，增强云原生 AI 应用开发。",
+  "oneSentenceSummary": ".NET AI Chat Web App 模板 Preview 2 发布，重点集成 .NET Aspire 和 Qdrant，增强云原生 AI 应用开发。",
+  "summary": ".NET AI Chat Web App 模板 Preview 2 通过引入对云原生应用的 .NET Aspire 支持，以及用于可扩展向量数据处理的 Qdrant 向量数据库集成，简化了 AI 驱动的聊天应用开发。该模板使用检索增强生成 (RAG) 模式，使开发者能够通过 Visual Studio、Visual Studio Code 和 .NET CLI 快速构建与自定义数据交互的聊天应用。主要功能包括 RAG 模式下的用户界面交互和向量存储选择。此更新包括用于集成本地和云 AI 模型的 .NET Aspire Orchestration，并支持 GitHub Models、OpenAI 和 Azure OpenAI。此更新旨在加速 .NET 开发者构建 AI 驱动的应用。",
+  "mainPoints": [
+    {
+      "point": ".NET AI 模板通过集成 .NET Aspire 和 Qdrant，显著简化了 AI 应用的开发和部署。",
+      "explanation": "该模板旨在加速 AI 驱动的聊天应用的开发，使开发者能够快速构建与自定义数据交互的应用。"
+    },
+    {
+      "point": "支持 .NET Aspire 增强了开发工具包，提供更高级的 AI 功能和更优的集成选择。",
+      "explanation": ".NET Aspire Orchestration 促进了本地和云端 AI 模型的集成，提高了应用的可扩展性和灵活性。"
+    },
+    {
+      "point": "集成 Qdrant 向量数据库支持创建利用向量数据的可扩展应用。",
+      "explanation": "开发者可以结合 .NET Aspire 使用 Qdrant 来有效地索引和查询向量化数据，从而增强语义搜索功能。"
+    }
+  ],
+  "keyQuotes": [
+    "Preview 2 通过 .NET Aspire Orchestration 实现与本地和云 AI 模型的深度集成。"
+  ],
+  "tags": [
+    "AI 开发",
+    "AI 应用框架",
+    ".NET",
+    "AI 模板",
+    "RAG"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 468,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745193600000,
+  "publishDateStr": "2025-04-21",
+  "publishDateTimeStr": "2025-04-21 00:00:00"
+}

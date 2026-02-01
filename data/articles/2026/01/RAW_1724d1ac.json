@@ -1,0 +1,49 @@
+{
+  "id": "RAW_1724d1ac",
+  "title": "Tailwind 因为 AI 的裁员“闹剧”结束，而 AI 对开源项目的影响才刚刚开始",
+  "url": "https://juejin.cn/post/7593535577046417443",
+  "date": "2026-01-11 22:53:22",
+  "author": "恋猫de小郭",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p><strong>Tailwind 还是相当明白「会哭的孩子有奶吃」这个道理</strong>，“裁员风波”才刚开始，立马就收到谷歌 AI Studio 、Vercel 和 Lovable 的相关赞助：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/6b0d62334d554c62a3f3173fc26d818c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=lDxQhVoGIOy4sGrA9Xff3rwULOU%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/542b5533d138449ca30f1bff93bd4a99~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=jLQHgKv50Vnwr%2FgATNdLFKUxclE%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/19fefe8e13614bf0bad8cdcddf737dff~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=xgwBWVmlbEuzpJQMtgoDjQYHgm4%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这个风波其实并不是最近才开始的，早在去年年底，Bun 被 Anthropic 收购加入 Claude Code 阵营的之后，Tailwind CSS 的创始人 Adam Wathan 就发出过灵魂警告：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/14c29c446f4a42d5aaec149e7ce4452f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=hU9plrIE6pHk0ipuqlfXscBzQwc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>因为现在很多 AI 公司，比如 OpenAI 、Claude、Gemini 等，都在前端 AI 上都大量使用了 Tailwind，因为很大程度上， <strong>Tailwind CSS 训练数据多、表达方式离散可拼装、可控性强、出错成本低</strong> ，例如：</p>\n   <pre><code class=\"hljs language-ini code-block-extension-codeShowNum\" lang=\"ini\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">&lt;div <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"p-4 rounded-xl shadow-md bg-white\"</span>&gt;</span>\n</code></pre>\n   <p>对 AI 来说，Tailwind 的 class 写法非常像在拼积木，每个 token（<code>p-4</code> / <code>rounded-xl</code> / <code>shadow-md</code>）都是一个“语义单元”：</p>\n   <ul>\n    <li>既能局部修改（把 <code>p-4</code>改 <code>p-6</code>）</li>\n    <li>又能组合叠加</li>\n    <li>还能按响应式/状态扩展（md:p-6 hover:bg-xxx）</li>\n   </ul>\n   <p>在这方面，<strong>模型向来更擅长生成离散符号序列（token），而不擅长维护抽象结构</strong>，同时 class 贴在元素上所见即所得，符合 <strong>AI 追求的尽可能“生成代码一次就能跑”</strong> 。</p>\n   <blockquote>\n    <p>特别是谷歌的 AI Studio 在这方面倾向特别明显。</p>\n   </blockquote>\n   <p>那这对 Tailwind 有什么影响？<strong>这不是代表着框架在 AI 时代很流行吗？为什么还会出现”裁员“问题</strong>？这个影响其实就类似 AI 对 Stackoverflow 的影响，原网站没流量了：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/3c27ef9b3da14cfea02bd5deeb7086bb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=pEgVhoxmeX2cTINVJ0b0dNGzcv0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>Tailwind 这次的本质矛盾在于，<strong>AI 让 Tailwind 使用量更大，但把它原本的赚钱路径（流量 to 转化）给切断了</strong>，所以反而出现“越火越穷”的情况。</p>\n   <p>Tailwind 本体是开源免费的，但是它的典型商业模式是：</p>\n   <blockquote>\n    <p><strong>Google/搜索 → Tailwind 官网文档/教程 → 认同与依赖 → 购买增值产品</strong>(模版、文档、企业合作、教程和顾问咨询等)。</p>\n   </blockquote>\n   <p>这其实也是很多开源项目的盈利方式，特别国内很多 gitee 的项目更明显，放出简陋开源版本，付费提供文档和完整商业版本，而这些付费产品严重依赖：<strong>文档流量 + 心智依赖 ，还有用户在官网停留时间和访问频率，但是现在 AI 在掐断了这个路径</strong>。</p>\n   <blockquote>\n    <p>Tailwind 在线文档的流量下降了 40%，收入下降了 80%，<strong>实际上写技术文章和公众号的应该也有感受，现在的开发者越来越不喜欢读和找技术文章了，就算读也是让 AI 直接总结</strong>。</p>\n   </blockquote>\n   <p>当然，这波闹出来的裁掉 75% 的工程师的事件，多少也有一些标题党的味道，因为<strong>工程团队原来有4 个工程师，这次裁掉了 3 个，所以比例高达 75%</strong> ：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e405f650b7df4c05a538f6f9a50f2550~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=aAwHQfPeLIlEPDmzkrgXHHD3s1g%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>实际应该就是剩下创始人+ 1 个工程师+ 1 个兼职的团队规模。</p>\n   </blockquote>\n   <p>当然，这波赞助风波其实对于 Tailwind 危机来说，也只是解救近期的燃眉之急，因为它不像 Bun ，Bun 对 Anthropic 来说是强战略资产，因为运行时/工具链直接影响 AI 编码产品的性能与交付：</p>\n   <blockquote>\n    <p>一体化 runtime/toolchain，和 AI coding 产品的工程链路强绑定，收购能立刻减少外部依赖、提升稳定性与性能上限。</p>\n   </blockquote>\n   <p>所以 Bun 卖的是“工程基础设施能力”（速度/工具链/交付体验），而 Tailwind 虽然十分流行，但是主要商业化通常靠“围绕开源的增值产品/服务漏斗”，成不了核心体系的，简单说：</p>\n   <ul>\n    <li>Bun 属于“可控的关键基础设施（runtime/toolchain）”，收购后可以把关键工具链进化成自有资产</li>\n    <li>Tailwind 属于“可替代的开发者体验层（UI styling layer）”，买它不太会给你护城河</li>\n   </ul>\n   <p><strong>在链路上的差距，也导致了它们之间命运的走向不同</strong>，当然 Tailwind 深知“发声”的重要性，所以这波闹腾之后，也暂时性解决了生存问题，只是：</p>\n   <blockquote>\n    <p>赞助只能覆盖一时的资金问题，但解决不了当前开源项目的的商业模式窘境。</p>\n   </blockquote>\n   <p>AI 切断流量是致命的，StackOverflow 在这方面表现最为明显也最为明显，所以 Tailwind 这波于开发者和开源领域来也是很明显的警钟：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e9f6a77474da4de189bb15e5393ac330~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=760SqbfWL8SDymZuLYEfeT7AcSc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>就像我朋友，上午还问有没有什么记账软件推荐，结果下午就直接用 AI 做了一个符合心意的应用，AI 对于个人开发者的影响未来也会越来越明显，如果 AI 可以直接 A2UI 直出功能和结果的时候，是否其他独立产品还有存在的意义？</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/97e37cb5876e4b5eb10933519ff1b4fc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768776802&amp;x-signature=bpVc%2Fwv1ohms1sCwcX2Y2IvQq2E%3D\" alt=\"image-20260111143806306\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>所以， AI 对于开发者和开源项目的影响才刚刚开始，以前的项目增长和流水靠的是：</p>\n   <ul>\n    <li>Google 搜索</li>\n    <li>文档流量</li>\n    <li>StackOverflow</li>\n    <li>博客/教程</li>\n    <li>GitHub star 传播</li>\n   </ul>\n   <p>但是现在 AI 时代之后，开源的影响力不再去取决于：</p>\n   <ul>\n    <li>文档写得多好</li>\n    <li>SEO 做得多好</li>\n   </ul>\n   <p>现在的项目是否流畅，越来越由取决于 AI ：</p>\n   <ul>\n    <li>训练语料里出现得够不够多</li>\n    <li>模型偏好它还是偏好别的库</li>\n    <li>它是否“更适合生成”</li>\n   </ul>\n   <p>而项目能否赚到钱，更要取决于你在 AI 链路里扮演的角色，这也是 Tailwind 这波表现出来的趋势：</p>\n   <blockquote>\n    <p>虽然你在 AI 时代很多，但是越火，流量却越少。</p>\n   </blockquote>\n  </div>\n </body>\n</html>",
+  "aiSummary": "AI 的普及导致 Tailwind CSS 等开源项目传统盈利模式受损，揭示了 AI 时代开源项目商业模式的深层困境和潜在挑战。",
+  "oneSentenceSummary": "AI 的普及导致 Tailwind CSS 等开源项目传统盈利模式受损，揭示了 AI 时代开源项目商业模式的深层困境和潜在挑战。",
+  "summary": "文章分析了 Tailwind CSS 因 AI 发展而产生的“裁员风波”及其背后折射出的开源项目商业模式困境。AI 公司青睐 Tailwind CSS，因其离散化、可拼装的特性使其成为理想的 AI 训练数据和生成目标。然而，这种普及并未给 Tailwind 带来预期收益，反而切断了其传统的“文档流量-转化为增值服务”的商业路径，导致官网流量和收入大幅下降。文章指出，此次“裁员”尽管是小规模事件，但揭示了 AI 对开源项目盈利模式的深远影响，许多开源项目赖以生存的搜索引擎、文档流量、博客教程和 GitHub star 等传统增长模式在 AI 时代受到冲击。最终，文章强调开源项目在 AI 时代需要重新思考其价值链和商业定位，尤其是在 AI 能够直接生成代码和完成功能时，其生存方式面临巨大挑战。",
+  "mainPoints": [
+    {
+      "point": "AI 正在颠覆开源项目的传统商业模式，通过切断流量转化路径影响营收。",
+      "explanation": "AI 工具可以直接生成代码或提供答案，减少了开发者访问开源项目官网、文档和教程的需求，从而导致围绕流量和心智依赖建立的增值服务盈利模式失效。"
+    },
+    {
+      "point": "Tailwind CSS 因其技术特性成为 AI 模型的优选目标，但并未因此受益。",
+      "explanation": "Tailwind CSS 的离散化、模块化特性（如 `p-4`，`rounded-xl`）使其成为 AI 训练的理想语料和易于生成的代码风格，但这种高度适应性反而加速了传统流量的流失。"
+    },
+    {
+      "point": "开源项目在 AI 时代面临着从“可控基础设施”向“可替代体验层”的价值降级风险。",
+      "explanation": "像 Bun 这种提供核心运行时/工具链的项目，对 AI 编码产品具有战略重要性，可能被收购；而 Tailwind 这种提供 UI 样式层的项目，虽然流行但易被替代，难以成为 AI 体系的核心资产，面临商业困境。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 让 Tailwind 使用量更大，但把它原本的赚钱路径（流量 to 转化）给切断了，所以反而出现『越火越穷』的情况。",
+    "多数 AI 公司，大量使用了 Tailwind，因为很大程度上，Tailwind CSS 训练数据多、表达方式离散可拼装、可控性强、出错成本低。",
+    "赞助只能覆盖一时的资金问题，但解决不了当前开源项目的的商业模式窘境。",
+    "现在的项目是否流畅，越来越由取决于 AI ：训练语料里出现得够不够多、模型偏好它还是偏好别的库、它是否『更适合生成』。",
+    "AI 对于开发者和开源项目的影响才刚刚开始。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 85,
+  "wordCount": 1616,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768172002000,
+  "publishDateStr": "01-11",
+  "publishDateTimeStr": "2026-01-11 22:53:22"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "RAW_ea04dc",
+  "title": "一文看懂“提示词” vs “提示词工程” vs “上下文工程”",
+  "url": "https://baoyu.io/blog/prompt-engineering-vs-context-engineering",
+  "date": "2025-07-02 01:20:36",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"kscdl79i4z\">很多人分不清楚什么是“提示词”（Prompt），什么是“提示词工程”（Prompt Engineering），现在还又多了一个概念叫“上下文工程”（Context Engineering），这又和“提示词工程”什么区别？</p><img src=\"https://baoyu.io/uploads/2025-07-02-1751419326719-8e6f02d0-22ef-463d-97e1-3e40b3fbe453.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <h3 data-id=\"rqfbpie7ci\" id=\"rqfbpie7ci\" data-toc-id=\"rqfbpie7ci\">什么是提示词（Prompt）？</h3>\n   <p data-id=\"906oof8cwh\"><strong>提示词很好理解，就是给 AI 模型的输入文本，就是你直接向模型输入的问题或指令。</strong> 比如你让 ChatGPT 总结一段文本、调用模型 API 传入提示词去翻译一篇文章等等。</p>\n   <p data-id=\"4j2gp9s826\">提示词是一段文本，有点像代码。</p>\n   <h3 data-id=\"q3a3b0vozy\" id=\"q3a3b0vozy\" data-toc-id=\"q3a3b0vozy\">什么是提示词工程（Prompt Engineering）？</h3>\n   <p data-id=\"65y3sne5u7\"><strong>提示词工程是一个过程，系统化地设计、测试、优化提示词的过程。</strong></p>\n   <p data-id=\"8rswkj38z5\">就像软件工程，我们为了完成某个需求，要有一套科学的方法来帮助完成软件开发的过程，有方法论（比如敏捷开发），要使用工具，要保证质量，不断迭代，最终交付软件，或者说代码。</p>\n   <h3 data-id=\"uznlemzaz6\" id=\"uznlemzaz6\" data-toc-id=\"uznlemzaz6\">举个例子</h3>\n   <p data-id=\"11565qs0w5\">比如我们要有个提示词帮助翻译英文文章到中文。</p>\n   <p data-id=\"gcztqkmzcl\">普通人都可以写：</p>\n   <blockquote data-id=\"7lksbzcw64\">\n    <p data-id=\"88xe5oxdee\">“请把下面的英文内容翻译为中文：”</p>\n   </blockquote>\n   <p data-id=\"u9cgpacvtz\">这就是一段提示词。</p>\n   <p data-id=\"9q69eqod58\">但是你会发现虽然能翻译，但是似乎翻译效果不够好，于是你开始想办法优化，让 AI 扮演一个英文翻译到中文的专家，发现似乎有点效果。</p>\n   <p data-id=\"ptc59p54ja\">但还是翻译有点生硬，然后你看有人介绍了 CoT（思维链，Chain of Though），于是尝试在提示词中让 AI 去先直译再意译，但你也不知道这样的改动是不是真的有用，于是你找了10篇文章，分别用加了 CoT 和没加 CoT 的文章，去用相同的模型去翻译，然后找了几个人，在不告诉他们使用什么方法翻译的情况下让他们评估好坏，结果绝大部分都认为加了 CoT 的效果更好，那么你就明白了，原来加了 CoT 对翻译是有效果的。</p>\n   <p data-id=\"l8x0x96d3j\">于是你受到鼓舞，即然 CoT 有效果，那么我在直译、意译的基础上，继续增加一个 AI 对直译结果的评估，再去意译，甚至再多加几步是不是效果更好？再继续改进提示词，拿着之前的测试集去评估测试，果然测试效果更好，但是也带来新的问题，Token 消耗更多，时间更长，还可能会偏离原意。CoT 也并不见得步骤越多越好。</p>\n   <p data-id=\"vv244g8fz5\">再后来推理模型发布了，你发现模型自己会 CoT 了，语言能力也更强了，原来繁琐的一步步翻译似乎没有必要，于是进一步优化，发现只要在提示词中让模型“用中文重写”就可以达到很好的翻译效果，测试集评估结果也是正面的。</p>\n   <p data-id=\"75zly99qj8\"><strong>这整个对翻译提示词“设计”、“测试”、“优化”的过程就是提示工程。</strong> 最终通过这样的过程，产生出一个版本一个版本的提示词。</p>\n   <p data-id=\"zdr6apydtu\">再精炼浓缩一下：<strong>提示词工程是产生提示词的过程。</strong></p>\n   <h3 data-id=\"rngce4xwge\" id=\"rngce4xwge\" data-toc-id=\"rngce4xwge\">什么是上下文工程（Context Engineering）？</h3>\n   <p data-id=\"1jtl75c1pb\">要理解上下文工程，先得搞清楚什么是“上下文”（Context）？</p>\n   <p data-id=\"anp92azo4f\"><strong>“上下文”不仅仅是发给大语言模型的一句提示词，而是模型生成回答之前所看到的一切信息，这些信息包括系统提示词、用户输入的问题、当前对话的历史消息、系统对你的历史记忆、工具返回的信息等等。</strong></p>\n   <p data-id=\"7yakrcnltl\">另外上下文窗口不是无限的，每个模型都对上下文的长度有限制，通常上下文内容多了会影响性能，所以控制好发送给 AI 的上下文很重要，既不能遗漏，又不能什么都放进去要控制体积。</p>\n   <p data-id=\"6igzro9jir\">举个例子，你跟 ChatGPT 说： “今天都有什么重要的 AI 新闻？”</p>\n   <p data-id=\"yt724qjq14\">看起来只是一句话，但是对于大模型来说，初始的上下文有这些：</p>\n   <ul>\n    <li>\n     <p data-id=\"gx9jpod5zo\">系统提示词：“你是个有用的助手，总是帮用户解决问题”</p></li>\n    <li>\n     <p data-id=\"g67roprlyz\">用户输入：“今天都有什么重要的 AI 新闻？”</p></li>\n    <li>\n     <p data-id=\"06x2x2sryt\">可用工具：“日期工具、搜索工具、网页抓取工具”</p></li>\n    <li>\n     <p data-id=\"pzzlczg1bw\">长期记忆：“用户主要使用中文”</p></li>\n    <li>\n     <p data-id=\"82my56zhmk\">历史会话消息：无</p></li>\n    <li>\n     <p data-id=\"awt6oo44go\">工具返回信息：无</p></li>\n   </ul>\n   <p data-id=\"sfgrh5qnd9\">这些上下文不足以让 AI 回答你的问题，于是它需要自己去调用工具找齐上下文：</p>\n   <ul>\n    <li>\n     <p data-id=\"jovcxi762q\">根据日期工具获取到今天的日期（大模型自己不知道今天是几号）</p></li>\n    <li>\n     <p data-id=\"v8ipc4iooc\">根据今天的日期去调用搜索工具检索 AI 新闻</p></li>\n   </ul>\n   <p data-id=\"ov7nuk4s20\">调用完工具后，现在 AI 的信息完整了：</p>\n   <ul>\n    <li>\n     <p data-id=\"torux7eyat\">系统提示词：“你是个有用的助手，总是帮用户解决问题”</p></li>\n    <li>\n     <p data-id=\"dmnklzvde0\">用户输入：“今天都有什么重要的 AI 新闻？”</p></li>\n    <li>\n     <p data-id=\"scknt9pop1\">可用工具：“日期工具、搜索工具、网页抓取工具”</p></li>\n    <li>\n     <p data-id=\"dnptyl8p3n\">长期记忆：“用户主要使用中文”</p></li>\n    <li>\n     <p data-id=\"wymbe4c28u\">历史会话消息：无</p></li>\n    <li>\n     <p data-id=\"dy3hcrpoz1\">工具返回信息：</p>\n     <ul>\n      <li>\n       <p data-id=\"gfq4mrc28c\">2025-7-1</p></li>\n      <li>\n       <p data-id=\"zudngjuc2a\">Hollywood Confronts AI Copyright Chaos in Washington, Courts</p></li>\n      <li>\n       <p data-id=\"d9fyrd58bs\">Mark Zuckerberg Announces New Meta ‘Superintelligence Labs’ Unit</p></li>\n     </ul></li>\n   </ul>\n   <p data-id=\"jiyzrr68r1\">现在信息够了，考虑用户偏好中文，最后返回的内容如下：</p>\n   <blockquote data-id=\"a37shj9kq6\">\n    <p data-id=\"wzfq9o8piv\">今天的 AI 新闻有：</p>\n    <ul>\n     <li>\n      <p data-id=\"wmm4uohjnt\">好莱坞在华盛顿和法院直面人工智能版权混乱</p></li>\n    </ul>\n   </blockquote>\n   <ul>\n    <li>\n     <p data-id=\"a1cbsya1uv\">马克·扎克伯格宣布成立新的“超级智能实验室”部门 马克·扎克伯格宣布成立新的“超级智能实验室”部门</p></li>\n   </ul>\n   <p data-id=\"x5j6p7rv8t\">假如用户再追问一句： “帮我返回第二条新闻的详情”</p>\n   <p data-id=\"pzgbvgsof1\">那么模型要从历史会话里面，找到第二条新闻的链接，再去调用网页抓取工具，把新闻内容抓取下来，根据用户的偏好翻译成中文，最后返回用户中文的新闻内容。</p>\n   <p data-id=\"f7o8p3fijz\">注意看<strong>这个构建上下文的过程是完全动态的，并不是按照设计好的工作流去收集上下文，而是模型自己根据当前上下文状态去自主动态的调用工具收集上下文，并且不同的任务需要调用的工具也不一样。</strong></p><img src=\"https://baoyu.io/uploads/2025-07-02-1751419572453-a7190fa0-2807-4628-b10c-86f3b31b70d6.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"2lgpafkpqw\">这其实也就是现在 AI Agent 的工作原理：<strong>能分辨是否已经收集够了完成任务必要的上下文，能自主决定是不是需要借助工具或者对话来补齐上下文。</strong></p><img src=\"https://baoyu.io/uploads/2025-07-02-1751419548402-dfadd81f-04b9-4ba0-bb01-0d917ec795d7.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"ov89y9tc7j\">上下文工程的概念也正是在 AI Agent 爆发的背景下诞生的。原来单纯靠提示词工程已经无法满足 AI Agent 产品的需求了，AI Agent 需要的更多的是为系统设计好工具、定义好工具和模型之间交互的数据格式、有效组织上下文信息提供给模型（内容长了要不要压缩、怎么压缩）等等。</p>\n   <p data-id=\"o4uzpy73ac\"><strong>上下文工程（Context Engineering），就是一门为 AI 设计和构建动态上下文的学科，为大语言模型提供恰当的信息和工具，帮助模型高效完成任务。</strong></p>\n   <blockquote data-id=\"iwvn295fhi\">\n    <p data-id=\"m4hv6q30id\">“上下文工程”指的是一种精妙而复杂的技术：你要精准地将上下文窗口填充上恰到好处的信息，让模型能准确地迈出下一步。<br>\n      这是一门科学，也是门艺术。</p>\n   </blockquote>\n   <blockquote data-id=\"9ya04n57e8\">\n    <p data-id=\"r0z1r0n57h\">说它是科学，因为你要把任务描述、说明、少量样例（few-shot examples）、检索增强生成（RAG）、各种相关数据（甚至可能是多模态数据）、工具、状态、历史信息等全部巧妙地组合在一起，同时还要考虑如何压缩信息。这就像烹饪一道精致的菜肴，配料太少或搭配不对，模型无法获得足够的信息，性能会变差；配料太多或毫无关联，则会增加成本甚至降低表现。要做好这件事，需要的不仅仅是简单堆叠，更是高度专业化的技巧。</p>\n   </blockquote>\n   <blockquote data-id=\"rv1a8ifwzf\">\n    <p data-id=\"jovkuiync6\">说它是艺术，则是因为操作者还要掌握一种近似“心理学”的直觉，敏锐地洞察 LLM 和人类用户心理之间的微妙互动。</p>\n   </blockquote>\n   <blockquote data-id=\"ir8s97n7eq\">\n    <p data-id=\"qtqfvzvk6f\">——Andrej Karpathy</p>\n   </blockquote>\n   <h2 data-id=\"hq3jsgrzwa\" id=\"hq3jsgrzwa\" data-toc-id=\"hq3jsgrzwa\">最后</h2>\n   <p data-id=\"nju704b740\">分别一句话总结一下</p><img src=\"https://baoyu.io/uploads/2025-07-02-1751419744545-eb4899d9-1dbf-4e4a-a787-f87c4c1f0418.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <ul>\n    <li>\n     <p data-id=\"huvdoq3wul\"><strong>提示词：</strong> 发送给 AI 的问题或者指令文本</p></li>\n    <li>\n     <p data-id=\"534k7k8rwr\"><strong>提示词工程：</strong> 系统化地设计、测试、优化提示词的过程。</p></li>\n    <li>\n     <p data-id=\"brw7pclrf6\"><strong>上下文工程：</strong> 为大语言模型提供恰当的上下文、帮助模型高效完成任务的科学和艺术。</p></li>\n   </ul>\n   <p data-id=\"h5c23mfz91\">如果没理解这些概念也没关系，<strong>对于普通人来说，能写提示词就够了</strong>，要开发 AI 应用才需要考虑提示词工程去不断优化提示词，要开发动态的 AI 智能体才需要去搞上下文工程为 AI 的上下文窗口填充恰好的信息。</p></div>\n \n",
+  "aiSummary": "通过案例清晰区分并教育读者理解提示词、提示词工程和上下文工程的概念与应用场景",
+  "oneSentenceSummary": "通过案例清晰区分并教育读者理解提示词、提示词工程和上下文工程的概念与应用场景",
+  "summary": "文章系统性地解释了提示词（Prompt）、提示词工程（Prompt Engineering）和上下文工程（Context Engineering）三个关键概念的区别与联系，具有明确的教育目的。首先定义提示词是直接输入给 AI 模型的文本指令，而提示词工程则是系统化设计、测试和优化提示词的过程，通过翻译案例详细展示了提示词工程的实践方法。接着深入剖析上下文工程的动态特性，强调其为 AI 设计和构建动态上下文的学科，涉及工具设计、数据格式定义和信息组织等复杂任务，特别是在 AI Agent 中的应用价值。文章通过具体案例、可视化图表和权威引用，清晰界定了这三个概念的边界和应用场景。",
+  "mainPoints": [
+    {
+      "point": "提示词是直接输入 AI 模型的指令文本",
+      "explanation": "作为 AI 交互的基础单元，提示词的质量直接影响模型输出效果，需要精心设计和优化"
+    },
+    {
+      "point": "提示词工程是系统化设计优化提示词的过程",
+      "explanation": "通过科学方法论持续迭代提示词，类似软件开发流程，确保提示词效果最大化"
+    },
+    {
+      "point": "上下文工程是构建动态上下文的学科",
+      "explanation": "为 AI 提供恰当信息和工具组合，涉及复杂的信息组织和压缩技术，是 AI Agent 的核心"
+    },
+    {
+      "point": "上下文工程兼具科学性和艺术性",
+      "explanation": "既需要精准的技术组合，又需要理解模型与用户的心理互动，是高级 AI 开发的核心技能"
+    },
+    {
+      "point": "技术演进：从提示词到上下文工程",
+      "explanation": "反映了 AI 交互技术的发展脉络，从简单指令到复杂动态上下文管理的演进过程"
+    },
+    {
+      "point": "三个概念对应不同层级用户需求",
+      "explanation": "普通用户只需基础提示词，AI 应用开发者需要提示词工程，AI Agent 开发者则必须掌握上下文工程"
+    }
+  ],
+  "keyQuotes": [
+    "提示词工程是产生提示词的过程",
+    "上下文工程（Context Engineering），就是一门为 AI 设计和构建动态上下文的学科，为大语言模型提供恰当的信息和工具，帮助模型高效完成任务",
+    "这是一门科学，也是门艺术。说它是科学，因为你要把任务描述、说明、少量样例（few-shot examples）、检索增强生成（RAG）、各种相关数据（甚至可能是多模态数据）、工具、状态、历史信息等全部巧妙地组合在一起，同时还要考虑如何压缩信息",
+    "说它是艺术，则是因为操作者还要掌握一种近似\"心理学\"的直觉，敏锐地洞察 LLM 和人类用户心理之间的微妙互动",
+    "对于普通人来说，能写提示词就够了，要开发 AI 应用才需要考虑提示词工程去不断优化提示词，要开发动态的 AI 智能体才需要去搞上下文工程",
+    "这整个对翻译提示词\"设计\"、\"测试\"、\"优化\"的过程就是提示工程。最终通过这样的过程，产生出一个版本一个版本的提示词"
+  ],
+  "tags": [
+    "提示词工程",
+    "上下文工程",
+    "AI开发",
+    "LLM应用",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2618,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751419236000,
+  "publishDateStr": "2025-07-02",
+  "publishDateTimeStr": "2025-07-02 01:20:36"
+}

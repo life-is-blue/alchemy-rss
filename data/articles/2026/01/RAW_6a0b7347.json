@@ -1,0 +1,59 @@
+{
+  "id": "RAW_6a0b7347",
+  "title": "“关于 AI Agent，你最想知道的 3 个问题——为什么我说”垂直 Agent“是个伪命题”",
+  "url": "https://baoyu.io/blog/2026/01/18/ai-agent-interview",
+  "date": "2026-01-18 00:00:00",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"mt-2 flex text-sm font-medium text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">作者：<span style=\"background-color:inherit;font-size:1rem;\">宝玉</span></span>\n    </div>\n   </div>\n  </div>\n  <img src=\"https://s.baoyu.io/imgs/2026-01-18/ai-agent-interview/cover.png\" alt=\"“关于 AI Agent，你最想知道的 3 个问题——为什么我说”垂直 Agent“是个伪命题”\" class=\"mt-2 mb-6 rounded-xl border bg-muted transition-colors w-full\" loading=\"lazy\">\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"z9sv5cqj42\">回答几个读者问题。</p>\n   <p data-id=\"1laqrtd4c4\">AI Agent 的定义和国家无关，更多是行业共识的演进。</p>\n   <p data-id=\"gncmczadc5\">目前业界比较认可的定义来自 Anthropic。他们在《Building Effective Agents》（<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.anthropic.com/research/building-effective-agents）这篇文章中做了一个很重要的区分：\">https://www.anthropic.com/research/building-effective-agents）这篇文章中做了一个很重要的区分：</a></p>\n   <blockquote data-id=\"ddqgpvj2no\">\n    <p data-id=\"hrcljwd6b2\"><strong>工作流（Workflow）</strong>：通过预定义的代码路径来编排 LLM 与工具的系统。</p>\n    <p data-id=\"6enjz52w9h\"><strong>Agent</strong>：由 LLM 动态地指挥自己的流程和工具使用方式的系统，始终由 LLM 来掌控完成任务的方式。</p>\n   </blockquote>\n   <p data-id=\"72fa2btyrh\">简单来说，工作流是“人写好剧本，AI 照着演”；而 Agent 是“人给个目标，AI 自己想办法”。</p>\n   <p data-id=\"jpzqo3gdvy\">从技术实现角度，我比较认同 Simon Willison 提出的简洁定义（<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://simonwillison.net/2025/Sep/18/agents/）：\">https://simonwillison.net/2025/Sep/18/agents/）：</a></p>\n   <blockquote data-id=\"f2a76y8vka\">\n    <p data-id=\"gj1l17exv2\">一个 AI Agent（智能体），是为了实现某个目标，<strong>循环调用工具</strong>的大语言模型。</p>\n   </blockquote>\n   <p data-id=\"394s75wg22\">这个定义抓住了 Agent 的本质——它不是一次性给出答案，而是通过“思考→行动→观察→再思考”的循环，逐步完成任务。目前主流的 Agent 实现，无论是 OpenAI 的还是 Anthropic 的，底层都是这个结构。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-18/ai-agent-interview/illustration-agent-core-loop.png\" data-width=\"100%\" data-align=\"center\" alt=\"Agent 的核心循环\">\n   <p data-id=\"b2vicfirmm\">当然，不同公司可能会根据产品定位给出略有差异的表述，但核心思想是一致的：<strong>Agent = LLM + 工具调用 + 自主决策循环</strong>。</p>\n   <hr>\n   <h2 data-id=\"o7p7gfibq6\" id=\"o7p7gfibq6\" data-toc-id=\"o7p7gfibq6\">2、近期国内外大厂密集推出 AI Agent，为何选择这个时间点？您如何看待 AI Agent 的商业化前景？</h2>\n   <p data-id=\"zjdxjscigx\">大厂在这个时间点密集推出 Agent，核心原因是：<strong>Agent 是目前 AI 落地最有价值的方向</strong>。</p>\n   <h3 data-id=\"y25sryoafx\" id=\"y25sryoafx\" data-toc-id=\"y25sryoafx\">为什么 Agent 比聊天机器人更有商业价值？</h3>\n   <p data-id=\"c9w5zcn88x\">聊天机器人的局限性很明显——它只能“说”，不能“做”。而 Agent 能够：</p>\n   <ul>\n    <li>\n     <p data-id=\"u9q8m8z4pu\"><strong>调用工具</strong>：比如搜索网页、读写文件、执行代码</p>\n    </li>\n    <li>\n     <p data-id=\"u3nn0p3ai0\"><strong>完成复杂任务</strong>：把大任务拆解成小步骤，逐个完成</p>\n    </li>\n    <li>\n     <p data-id=\"7muyaxw0pm\"><strong>与外部系统集成</strong>：对接企业内部系统、数据库、API</p>\n    </li>\n    <li>\n     <p data-id=\"ck4zvsir5h\"><strong>持续运行</strong>：不需要人一直盯着，可以在后台自主工作</p>\n    </li>\n   </ul>\n   <p data-id=\"z26v0v60nt\">这意味着 Agent 可以真正替代人完成一部分工作，而不只是辅助回答问题。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-18/ai-agent-interview/illustration-chat-vs-agent.png\" data-width=\"100%\" data-align=\"center\" alt=\"Chatbot 与 Agent 的对比\">\n   <h3 data-id=\"opudksl9xk\" id=\"opudksl9xk\" data-toc-id=\"opudksl9xk\">已经跑通的场景：编程领域</h3>\n   <p data-id=\"3ytxq6lp22\">编程是 Agent 最先落地的领域。像 Claude Code、Cursor、Codex 这样的编程 Agent，已经能够实实在在地帮开发者完成任务，不只是生成代码片段，而是理解需求、读取项目代码、修改文件、运行测试、修复 bug，整个流程都能自主完成。</p>\n   <h3 data-id=\"qg5p6klpbd\" id=\"qg5p6klpbd\" data-toc-id=\"qg5p6klpbd\">正在爆发的方向：Skills 生态</h3>\n   <p data-id=\"mqf0f0cv7a\">去年底开始，“Skills”这个概念开始流行。简单理解，<strong>Skills 就是教会 Agent 完成特定任务的“技能包”</strong>，一套预设的工具、提示词和工作流的组合。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-18/ai-agent-interview/illustration-agent-skills.png\" data-width=\"100%\" data-align=\"center\" alt=\"Agent 的 Skills 技能包\">\n   <p data-id=\"w2419y8w7t\">比如我个人就大量使用 Claude Code 结合各种 Skills 来提升效率：</p>\n   <ul>\n    <li>\n     <p data-id=\"08cdbfjxor\">给文章自动配图（调用图片生成工具）</p>\n    </li>\n    <li>\n     <p data-id=\"oerm3hs6k4\">根据素材生成漫画故事</p>\n    </li>\n    <li>\n     <p data-id=\"3850x92nbc\">根据素材自动生成 PPT</p>\n    </li>\n    <li>\n     <p data-id=\"idcjqmj35a\">自动发布文章到公众号、博客、社交媒体</p>\n    </li>\n    <li>\n     <p data-id=\"ijy2iz50cr\">等等</p>\n    </li>\n   </ul>\n   <p data-id=\"xg53grbs7m\">这些任务以前每个都要花我半小时到几小时，现在几分钟就能完成。顺便说一下，我这几个 skills 都是开源的：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/JimLiu/baoyu-skills\">https://github.com/JimLiu/baoyu-skills</a></p>\n   <h3 data-id=\"93oomhxeib\" id=\"93oomhxeib\" data-toc-id=\"93oomhxeib\">现阶段的挑战</h3>\n   <p data-id=\"dhwzkfswim\">但 Agent 目前仍处于早期阶段，主要挑战有：</p>\n   <ol>\n    <li>\n     <p data-id=\"ety11zuwy5\"><strong>门槛较高</strong>：目前这些能力主要在极客圈子里流行，普通用户上手困难</p>\n    </li>\n    <li>\n     <p data-id=\"5eylzob0rk\"><strong>安全问题</strong>：Agent 需要较高的系统权限才能工作，这带来了安全风险。比如恶意的 Skill 可能窃取数据、攻击系统</p>\n    </li>\n    <li>\n     <p data-id=\"xcevpiciyj\"><strong>可靠性</strong>：Agent 有时会“跑偏”，需要人工干预</p>\n    </li>\n   </ol>\n   <p data-id=\"ouaavr42ac\">这些问题都在被逐步解决。大厂密集入场，本质上是看到了 Agent 的巨大潜力，想要抢占生态位。谁能率先建立起最多用户的 Agent 客户端和丰富的 Skills 生态，谁就能在下一阶段占据优势。</p>\n   <p data-id=\"k2u7ubv3pc\">就像现在 Anthropic 就依赖 Claude Code 抢占了先机和用户心智，大家想到 Coding Agent 先想到 Claude Code，MCP、Skills 的标准也是他们提出来的，开发者们争先恐后的基于他们的标准在构建 Agent 生态。</p>\n   <h2 data-id=\"ntrl4jcpnh\" id=\"ntrl4jcpnh\" data-toc-id=\"ntrl4jcpnh\">3、通用类 AI Agent 和垂直类 AI Agent，您更看好哪个的商业前景？</h2>\n   <p data-id=\"t4yhmgtkw1\">这个问题需要换个角度来理解。</p>\n   <h3 data-id=\"h32fny2a4m\" id=\"h32fny2a4m\" data-toc-id=\"h32fny2a4m\">Agent 本身难以形成垂直壁垒</h3>\n   <p data-id=\"7wre4bk7wv\">从技术角度看，<strong>Agent 本身没有任何秘密</strong>，就像我前面说的，它从技术角度看就是一个循环调用工具的大语言模型。</p>\n   <p data-id=\"ewrdghpp4j\">而模型对所有人来说都是一样的：要么花钱用商业模型（OpenAI、Anthropic、豆包、阿里），要么用 DeepSeek 这样的开源模型。这就像选操作系统，你用 Windows 还是 Linux，大家都能用。</p>\n   <p data-id=\"su4jngxjkj\">所以，单纯做一个垂直领域的 Agent 很难建立护城河。你今天能做，别人明天也能做，而且可能做得更好。</p>\n   <h3 data-id=\"mk74jce4o2\" id=\"mk74jce4o2\" data-toc-id=\"mk74jce4o2\">真正的机会在哪里？</h3>\n   <p data-id=\"cotkwlhxro\">打个比方：<strong>Agent 就像操作系统，无论是通用领域还是垂直领域，操作系统本身都差不多。真正的差异化，是基于操作系统之上的应用。</strong></p>\n   <p data-id=\"wk4mdec4wq\">垂直领域真正的机会在于：</p>\n   <ol>\n    <li>\n     <p data-id=\"utfre1fi2u\"><strong>独有的数据</strong>：你有别人没有的行业数据、客户数据、知识库</p>\n    </li>\n    <li>\n     <p data-id=\"jxsm7naukw\"><strong>专业的 Skills</strong>：针对特定行业流程打造的工具和工作流</p>\n    </li>\n    <li>\n     <p data-id=\"tuqlc9wujz\"><strong>深度的集成</strong>：与行业内已有系统的对接能力</p>\n    </li>\n    <li>\n     <p data-id=\"kivqilnvzx\"><strong>领域 Know-how</strong>：对行业痛点和流程的深刻理解</p>\n    </li>\n   </ol>\n   <p data-id=\"40hn8uimu3\">举个例子：一个医疗领域的 Agent 产品，核心竞争力不是“Agent”这层，而是背后接入的医学知识库、与医院 HIS 系统的对接、对诊疗流程的理解、以及多年积累的脱敏病例数据。</p>\n   <p data-id=\"0d8w4oodem\"><strong>所以我的结论是：不要去做“垂直 Agent”，而是用通用 Agent 的能力，去解决垂直领域的问题。</strong> 护城河不在 Agent 这层，在你围绕 Agent 构建的数据、工具和行业理解。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-18/ai-agent-interview/illustration-vertical-moat.png\" data-width=\"100%\" data-align=\"center\" alt=\"垂直领域的护城河\">\n   <p data-id=\"e18flhq0zu\"><em>以上是我基于一线实践的观察和思考，仅供参考。</em></p>\n  </div>\n  <div class=\"flex justify-center py-6 lg:py-10\">\n   <a class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2\" href=\"https://baoyu.io/translations\">\n    <br>\n   </a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文深入探讨了 AI Agent 的定义、兴起原因及其商业化前景，强调了 AI Agent 相较于聊天机器人的核心优势，并指出“垂直 Agent”是伪命题，真正的商业价值在于结合通用 Agent 能力构建垂直领域的数据、工具和行业 Know-how。",
+  "oneSentenceSummary": "本文深入探讨了 AI Agent 的定义、兴起原因及其商业化前景，强调了 AI Agent 相较于聊天机器人的核心优势，并指出“垂直 Agent”是伪命题，真正的商业价值在于结合通用 Agent 能力构建垂直领域的数据、工具和行业 Know-how。",
+  "summary": "宝玉在本文中回答了关于 AI Agent 的三个核心问题。首先，文章明确区分了“工作流”与“Agent”：工作流是预定义脚本，而 Agent 是 LLM 自主决策和工具调用的循环系统。其次，分析了国内外大厂密集推出 AI Agent 的原因在于其作为 AI 落地的巨大商业价值，强调 Agent 能通过调用工具、完成复杂任务、与外部系统集成并持续运行，超越聊天机器人“只能说不能做”的局限性。编程领域已成功落地，并指出“Skills 生态”是正在爆发的方向。作者最后深入论证了“垂直 Agent”是个伪命题，因为 Agent 本身技术上难以形成壁垒，真正的护城河在于通用 Agent 能力之上，结合独有数据、专业 Skills、深度集成和领域 Know-how 来解决垂直行业问题，而非仅仅是垂直化的 Agent 技术本身。",
+  "mainPoints": [
+    {
+      "point": "AI Agent 的核心是 LLM 结合工具调用和自主决策循环，而非预定义的工作流。",
+      "explanation": "Agent 拥有“思考→行动→观察→再思考”的能力，能动态地指挥流程和工具使用，使其超越了传统工作流的脚本限制，能自主完成复杂任务。"
+    },
+    {
+      "point": "AI Agent 比聊天机器人更具商业价值，因为它能实际执行任务。",
+      "explanation": "Agent 能够调用工具、完成复杂任务、与外部系统集成并持续运行，从而真正替代部分人工工作，而非仅提供信息或辅助聊天。"
+    },
+    {
+      "point": "“垂直 Agent”是一个伪命题，真正的商业机会在于通用 Agent 能力结合垂直领域的数据和 Know-how。",
+      "explanation": "Agent 技术本身不具备壁垒，护城河在于独有的行业数据、专业的技能包（Skills）、与现有系统的深度集成以及对行业痛点的深刻理解。"
+    },
+    {
+      "point": "Agent 目前面临上手门槛高、安全风险和可靠性三大挑战。",
+      "explanation": "Agent 能力目前主要在极客圈流行，需要较高权限可能带来安全隐患，且其执行任务时有时可能“跑偏”，需要人工干预确保可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "工作流（Workflow）：通过预定义的代码路径来编排 LLM 与工具的系统。Agent：由 LLM 动态地指挥自己的流程和工具使用方式的系统，始终由 LLM 来掌控完成任务的方式。",
+    "简单来说，工作流是\"人写好剧本，AI 照着演\"；而 Agent 是\"人给个目标，AI 自己想办法\"。",
+    "Agent = LLM + 工具调用 + 自主决策循环。",
+    "Agent 是目前 AI 落地最有价值的方向。",
+    "所以我的结论是：不要去做\"垂直 Agent\"，而是用通用 Agent 的能力，去解决垂直领域的问题。"
+  ],
+  "tags": [
+    "AI Agent",
+    "大型语言模型",
+    "工具调用",
+    "自主决策",
+    "商业化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 2000,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768694400000,
+  "publishDateStr": "01-18",
+  "publishDateTimeStr": "2026-01-18 00:00:00"
+}

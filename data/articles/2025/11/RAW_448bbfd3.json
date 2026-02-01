@@ -1,0 +1,55 @@
+{
+  "id": "RAW_448bbfd3",
+  "title": "Spring Boot 4：更轻量、更安全的应用和新的 Kotlin 基线",
+  "url": "https://blog.jetbrains.com/idea/2025/11/spring-boot-4/",
+  "date": "2025-11-20 20:11:35",
+  "author": "Andrey Belyaev",
+  "siteName": "The IntelliJ IDEA Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content js-toc-content\">\n   <p>Spring Boot 4.0 has officially landed. At JetBrains, we’ve been tracking the updates since the first milestones to ensure that IntelliJ IDEA delivers a smooth and reliable development experience.</p>\n   <p>While many of the core capabilities come directly from Spring Framework 7, Spring Boot remains the adoption enabler that brings everything together: sensible defaults, consistent configuration, unified starters, and the familiar lightning-fast productivity when creating applications.</p>\n   <p>As the most popular framework in the Java world, Spring Boot also helps developers move from older JDK versions to newer ones that offer better performance, more efficient garbage collectors, and modern language features.</p>\n   <p>This major Spring Boot release introduces cleaner modularization to reduce memory usage, improved observability with Micrometer, JSpecify as the standard null-safety library, and many other small improvements that streamline daily development.</p>\n   <p>For JetBrains, the biggest news in Spring Boot 4 is that Kotlin 2.2 is now the official baseline version for the framework. This milestone is the result of a <a href=\"https://blog.jetbrains.com/kotlin/2025/05/strategic-partnership-with-spring/\">long-standing collaboration</a> between the JetBrains Kotlin team and the Spring Framework team.</p>\n   <p>Let’s take a closer look at Spring Boot 4’s new features through the lens of Kotlin 2.2.&nbsp;</p>\n   <h2 class=\"wp-block-heading\">Nullability</h2>\n   <p>The Kotlin compiler and IntelliJ IDEA now support JSpecify annotations natively. You will receive a compiler warning if you use JSpecify-annotated Java code incorrectly. In addition, IntelliJ IDEA will warn you if you try to assign a Java variable annotated with <code>@Nullable</code> to a non-nullable variable in Kotlin, and vice versa.&nbsp;</p>\n   <p>For example, for the Java interface:</p>\n   <pre class=\"EnlighterJSRAW\">@NullMarked\n\npublic interface QuoteProvider {\n\n&nbsp;&nbsp;&nbsp;&nbsp;Quote findQuote(String text);\n\n}</pre>\n   <p>A Kotlin implementation must return a non-nullable Quote object from the overridden <code>findQuote()</code> method:</p>\n   <figure class=\"wp-block-image size-full\">\n    <img decoding=\"async\" fetchpriority=\"high\" width=\"1124\" height=\"288\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/11/image1-2.png\" alt=\"\" class=\"wp-image-660388\">\n   </figure>\n   <p>You’ll see the following error message:</p>\n   <figure class=\"wp-block-image size-full\">\n    <img decoding=\"async\" width=\"1600\" height=\"516\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/11/image-35.png\" alt=\"\" class=\"wp-image-660366\">\n   </figure>\n   <p>IntelliJ IDEA detects the issue and suggests changing the return type to non-nullable. JSpecify is now the default library for nullability checks across all Spring projects. This means that when you create a Spring Boot 4 project in Kotlin, you can be sure that the framework types that you use are null-aware.&nbsp;</p>\n   <h2 class=\"wp-block-heading\">API versioning</h2>\n   <p>API versioning in Kotlin works much the same way as in <a href=\"https://blog.jetbrains.com/idea/2025/11/intellij-idea-2025-3-spring-7/#rest-api-versioning\">Java</a>. Thanks to Spring’s well-designed API versioning mechanism, adding a version takes only a few lines of configuration and a single annotation attribute. In Kotlin, the versioned API looks just as straightforward:</p>\n   <pre class=\"EnlighterJSRAW\">@RestController\n\n@RequestMapping(\"/api\", produces = [MediaType.APPLICATION_JSON_VALUE])\n\nclass QuoteController(private val klient: QuoteKlient) {\n\n&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping(\"quote\", version = \"1.0\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;fun fetchRandomQuote(): ResponseEntity&lt;Quote&gt; = \nResponseEntity.ok(klient.fetchRandomQuote())\n\n&nbsp;&nbsp;&nbsp;&nbsp;@GetMapping(\"quote\", version = \"2.0\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;fun fetchRandomQuotes(): ResponseEntity&lt;List&lt;Quote&gt;&gt; = \nResponseEntity.ok(klient.fetchRandomQuotes())\n\n}</pre>\n   <p>There’s nothing fancy here, just the usual Kotlin conciseness, with IntelliJ IDEA inspections helping you configure and validate version formats.&nbsp;</p>\n   <h3 class=\"wp-block-heading\">Bean registration</h3>\n   <p>Bean registration is one of the areas where Kotlin truly shines. Thanks to its expressiveness and extensibility, it provides a powerful DSL for registering beans dynamically when the regular <code>@ConditionalOn…</code> annotation family is <a href=\"https://blog.jetbrains.com/idea/2025/11/intellij-idea-2025-3-spring-7/#dynamic-bean-registration\">insufficient</a>.</p>\n   <p>For example, instead of the following Java code:</p>\n   <pre class=\"EnlighterJSRAW\">public class QuoteProviderRegistrar implements BeanRegistrar {\n    @Override\n\n&nbsp;&nbsp;&nbsp;&nbsp;public void register(BeanRegistry registry, Environment env) {\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;registry.registerBean(\"quoteProviderDb\", QuoteProviderDb.class);\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;registry.registerBean(\"quoteProviderFallback\",\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QuoteProviderFallback.class,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spec -&gt; {\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spec.fallback();\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spec.order(1);\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);\n\n&nbsp;&nbsp;&nbsp;&nbsp;}\n\n}</pre>\n   <p>You can write a more elegant version without all the <code>.class</code> calls and lambda boilerplate:</p>\n   <pre class=\"EnlighterJSRAW\">class KuoteProviderRegistrar : BeanRegistrarDsl({\n\n&nbsp;&nbsp;&nbsp;&nbsp;registerBean&lt;QuoteProviderDb&gt;(\"quoteProviderDb\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;registerBean&lt;QuoteProviderFallback&gt;(\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = \"quoteProviderFallback\",\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fallback = true,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;order = 1\n\n&nbsp;&nbsp;&nbsp;&nbsp;)\n\n})</pre>\n   <p>Much cleaner, right?&nbsp;</p>\n   <h3 class=\"wp-block-heading\">Conclusion</h3>\n   <p>Spring Boot is the most popular framework for Java development – and for good reason. With Spring Boot 4 establishing Kotlin 2.2 as the baseline and offering first-class support, we expect to see even broader Kotlin adoption among backend developers who want to use the latest language features.&nbsp;</p>\n   <p>You can try Spring Boot 4 in the <a href=\"https://www.jetbrains.com/idea/nextversion/\" target=\"_blank\" rel=\"noopener\">2025.3 Beta</a> release or wait for the stable version, which is expected in early December.</p>\n   <p>At JetBrains, we continue to work closely with the Spring Framework team to ensure Kotlin remains well-integrated and fully supported in the Spring ecosystem.</p>\n  </div>\n  <a href=\"#\" class=\"toc-opener\"></a>\n  <div class=\"container comments-container\">\n   <div class=\"content\"></div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Spring Boot 4.0 集成 Kotlin 2.2 作为其基线，带来更轻量、更安全的应用，并增强了空指针安全性及改进的 Bean 注册。",
+  "oneSentenceSummary": "Spring Boot 4.0 集成 Kotlin 2.2 作为其基线，带来更轻量、更安全的应用，并增强了空指针安全性及改进的 Bean 注册。",
+  "summary": "Spring Boot 4.0 已经发布，充分利用 Spring 框架 7 的核心功能，并将 Kotlin 2.2 确立为官方基线。此重大更新引入了更清晰的模块化以减少内存占用，通过 Micrometer 改进监控能力，并采用 JSpecify 在所有 Spring 项目中实现标准的空指针安全。对于 Kotlin 开发者，这意味着对 JSpecify 注解的原生支持、简化的 API 版本控制以及更具表现力的 DSL 用于动态 Bean 注册，从而显著提高生产力和代码质量。文章重点介绍了 JetBrains 与 Spring 团队的合作，以确保 Kotlin 的无缝集成，使 Spring Boot 4 成为现代后端开发领域一个极具吸引力的选择。",
+  "mainPoints": [
+    {
+      "point": "Kotlin 2.2 现在是 Spring Boot 4 的官方基线。",
+      "explanation": "JetBrains 和 Spring 之间的战略合作伙伴关系确保对 Kotlin 最新功能的一流支持，从而促进后端开发者更广泛地采用 Kotlin。"
+    },
+    {
+      "point": "Spring Boot 4 采用 JSpecify 实现标准的空指针安全。",
+      "explanation": "Kotlin 和 IntelliJ IDEA 中对 JSpecify 注解的原生支持提供了编译时警告，通过防止空指针异常，确保更安全、更可靠的代码。"
+    },
+    {
+      "point": "Kotlin 的高表达性简化了动态 Bean 注册流程。",
+      "explanation": "Kotlin 强大的 DSL 允许以更清晰、更简洁的方式动态注册 Bean，与传统的 Java 配置相比，减少了样板代码。"
+    }
+  ],
+  "keyQuotes": [
+    "Spring Boot 仍然是推动应用开发的强大引擎，它整合了合理的默认配置、一致的配置管理、统一的启动组件，以及开发者在创建应用时所熟悉的快速高效的开发体验。",
+    "对于 JetBrains 来说，Spring Boot 4 中最大的新闻是 Kotlin 2.2 现在是该框架的官方基线版本。",
+    "JSpecify 现在是所有 Spring 项目中空指针检查的默认库。",
+    "Bean 注册是 Kotlin 真正闪耀的领域之一。 感谢它的表达性和可扩展性，它提供了一个强大的 DSL 用于动态注册 Bean。",
+    "随着 Spring Boot 4 将 Kotlin 2.2 确立为基线并提供一流的支持，我们希望看到希望使用最新语言功能的后端开发者更广泛地采用 Kotlin。"
+  ],
+  "tags": [
+    "Spring Boot 4",
+    "Kotlin 2.2",
+    "Java",
+    "Java框架",
+    "空安全"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 624,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d317ac",
+  "sourceName": "The IntelliJ IDEA Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763669495000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 20:11:35"
+}

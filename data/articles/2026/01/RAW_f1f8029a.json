@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f1f8029a",
+  "title": "GitLab 18.8 宣布 Duo Agent 平台正式可用",
+  "url": "https://www.infoq.com/news/2026/01/gitlab-18-8-duo-agent-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-19 10:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://about.gitlab.com/releases/2026/01/15/gitlab-18-8-released/#gitlab-duo-agent-platform-now-generally-available\">GitLab 18.8 brings a number of new features</a>, including GitLab Duo Planner Agent, GitLab Duo Security Analyst Agent, auto-dismiss irrelevant vulnerabilities, and more. With this release, the GitLab Duo Agent Platform, enabling organizations to orchestrate AI agents, reaches general availability.</p>\n   <p>GitLab says that GitLab Duo Agent Platform helps teams coordinate agents across every phase of the development process, from planning and building to securing and shipping. The company adds that the platform addresses the <em>AI paradox</em> by extending AI-driven productivity beyond coding to the entire workflow, reducing bottlenecks such as a growing code review backlogs, security vulnerabilities, compliance checks, and downstream bug fixes.</p>\n   <p>To achieve this, the GitLab Duo Agent Platform brings together agentic chat, task-specific agents, workflow automation, and enterprise-grade controls, enabling organizations to deploy and manage AI across the entire development lifecycle.</p>\n   <blockquote>\n    <p>The platform provides a central AI Catalog where teams can discover, manage, and share agents and flows across their organization. Built-in foundational agents like Planner, Security Analyst, and Data Analyst handle structured work at key decision points, while customizable flows automate multi-step agents and tasks in development workflows from issue to merge request, CI/CD migration, pipeline troubleshooting, and code reviews.</p>\n   </blockquote>\n   <p>Developers can use the Planner agent to create, update, and analyze GitLab work items, such as backlog analysis, prioritization with frameworks like RICE or MoSCoW, and surface what requires direct intervention.</p>\n   <p>The Security Analyst Agent lets engineers manage vulnerabilities using natural language in GitLab Duo Agentic Chat, allowing them to triage, assess, and guide remediation directly through chat instead of dashboards or custom scripts.</p>\n   <p>Using vulnerability management policies, security teams can automatically dismiss vulnerabilities that don't apply to their organization, cutting through noise and allowing developers to focus on genuine security risks. Auto-dismissed vulnerabilities are labelled accordingly in merge requests and tracked in the vulnerability report for audit purposes.</p>\n   <p>In addition to the afore mentioned AI-powered features, GitLab 18.8 also includes other enhancements, such as an improved GitLab Runner, multiple container scanning, centralized credential management API, and much more. Be sure to read the official announcement for full details.</p>\n   <p>GitLab Duo Agent Platform is not the only agent orchestration platform on the market. Competitors include <a href=\"https://www.infoq.com/news/2024/05/github-copilot-workspace-preview/\">Copilot Workspace</a>, <a href=\"https://cloud.google.com/gemini-enterprise?hl=en\">Google Gemini Enterprise</a>, <a href=\"https://www.microsoft.com/en-us/microsoft-agent-365\">Microsoft Agent 365</a>, and others.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitLab 18.8 Marks General Availability of the Duo Agent Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/gitlab-18-8-duo-agent-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768816800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitLab 18.8 正式推出 Duo Agent 平台，旨在将 AI 智能体集成到整个软件开发生命周期中，以提升生产力并解决编码之外的工作流程瓶颈。",
+  "oneSentenceSummary": "GitLab 18.8 正式推出 Duo Agent 平台，旨在将 AI 智能体集成到整个软件开发生命周期中，以提升生产力并解决编码之外的工作流程瓶颈。",
+  "summary": "GitLab 18.8 引入了 GitLab Duo Agent 平台的正式可用性，该平台旨在编排从规划到安全和发布的软件开发生命周期各阶段的 AI 智能体。此平台通过将 AI 的生产力效益扩展到代码生成之外，解决诸如不断增长的代码审查积压、安全漏洞和合规性检查等问题，以应对‘AI 悖论’。关键组件包括用于管理智能体的 AI 目录、内置的基础智能体（如规划师和安全分析师）以及用于自动化开发工作流程中多步骤任务的可定制流程。规划师智能体协助进行待办事项分析和优先级排序，而安全分析师智能体则支持自然语言漏洞管理和修复。此外，此版本还提供了自动忽略无关漏洞、改进的 GitLab Runner 和集中式凭证管理等功能。文章还提到了 Copilot Workspace、Google Gemini Enterprise 和 Microsoft Agent 365 等竞争对手，表明 AI 智能体编排市场正在增长。",
+  "mainPoints": [
+    {
+      "point": "GitLab Duo Agent 平台将 AI 生产力从编码扩展到整个开发工作流程。",
+      "explanation": "该平台旨在通过自动化和简化规划、构建、安全和发布过程中的各种任务（而不仅仅是代码生成）来解决‘AI 悖论’。"
+    },
+    {
+      "point": "该平台提供了一个中央 AI 目录以及规划师和安全分析师等基础智能体。",
+      "explanation": "团队可以发现、管理和共享智能体，并使用内置工具进行待办事项分析、漏洞管理和自动化多步骤开发任务。"
+    },
+    {
+      "point": "AI 驱动的漏洞管理支持自然语言交互并自动忽略无关问题。",
+      "explanation": ""
+    }
+  ],
+  "keyQuotes": [
+    "GitLab Duo Agent 平台（使组织能够编排 AI 智能体）已达到正式可用状态。",
+    "该平台通过将 AI 驱动的生产力从编码扩展到整个工作流程，解决 *AI 悖论*，减少诸如不断增长的代码审查积压、安全漏洞、合规性检查和下游错误修复等瓶颈。",
+    "内置的基础智能体（如规划师、安全分析师和数据分析师）在关键决策点处理结构化工作，而可定制的流程则自动化开发工作流程中的多步骤智能体和任务。",
+    "安全分析师智能体允许工程师在 GitLab Duo Agentic Chat 中使用自然语言管理漏洞，使他们能够通过聊天直接进行分类、评估和指导修复，而无需使用仪表板或自定义脚本。"
+  ],
+  "tags": [
+    "GitLab Duo",
+    "AI 智能体",
+    "DevOps",
+    "软件开发生命周期",
+    "安全自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 75,
+  "wordCount": 369,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768816800000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 10:00:00"
+}

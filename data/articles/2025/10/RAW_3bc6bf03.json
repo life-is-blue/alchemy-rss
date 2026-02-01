@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3bc6bf03",
+  "title": "推理 token 减少 46%！Meta 新方法缩短思维链，告别重复推导",
+  "url": "https://www.qbitai.com/2025/10/339545.html",
+  "date": "2025-10-05 08:59:54",
+  "author": "时令",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"37\">时令 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"38\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">大模型老走重复步骤，导致思维链越来越长怎么办？</p>\n  <p data-track=\"3\">Meta、Mila-Quebec AI Institute、蒙特利尔大学和普林斯顿大学联合提出<strong>元认知复用（Metacognitive Reuse） 机制</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113803_dcf4e2d867199e06c2e0b789a4a415f7.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113803_dcf4e2d867199e06c2e0b789a4a415f7.png\">\n  </div>\n  <p data-track=\"4\">简单来说，就是让模型自己回顾、总结解题思路，将常用的推理套路提炼成更为简洁的“行为”，并将其存储于 “行为手册（Behavior Handbook）” 中。</p>\n  <p data-track=\"5\">当再遇到类似问题时，模型便可直接从手册中调用相应的行为，无需重新推导。</p>\n  <p data-track=\"6\">实验结果显示，该机制通过行为条件推理、行为引导自我改进、行为条件监督微调三种应用场景，在MATH、AIME等数学基准测试中实现了显著优化，在保持准确率不变的前提下，<strong>最多可减少46%的推理token使用量</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113800_bf610974587844ffb2373c5f82b5cfbd.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113800_bf610974587844ffb2373c5f82b5cfbd.png\">\n  </div>\n  <p data-track=\"7\">下面具体来看。</p>\n  <p data-track=\"9\">如今，大型语言模型在解决数学、编程等复杂任务时，广泛采用思维链进行推理，所以每次遇到新问题时，都需要重复推导通用子步骤。</p>\n  <p data-track=\"10\">这不仅会导致token用量膨胀、推理延迟增加，还会占用上下文窗口空间，降低模型探索新路径的能力。</p>\n  <p data-track=\"11\">与此同时，现有LLM的记忆系统（如RAG）仅存储 “是什么” 的陈述性知识，缺乏 “如何思考” 的程序性知识复用机制，无法解决重复推理的低效问题。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113803_e9cb6f432f3e54d197e6b1f6e91b2954.jpeg\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113803_e9cb6f432f3e54d197e6b1f6e91b2954.jpeg\">\n  </div>\n  <p data-track=\"12\">针对上述问题，研究团队提出了<strong>元认知复用（Metacognitive Reuse） 机制</strong>。</p>\n  <p data-track=\"13\">让模型面对问题时，先尝试解决它，随后回顾整个推理过程，从中识别出可复用的推理步骤，最终将其转化为一组标准化“行为”——带有规范名称的简短可执行指令。</p>\n  <p data-track=\"14\">这些“行为”会被收录进一本可检索的“行为手册”，既能在测试阶段通过上下文提示直接调用，也可通过监督微调内化为模型的固有能力。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113800_ca657bf0c869052099b9fba3356f3ccb.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113800_ca657bf0c869052099b9fba3356f3ccb.png\">\n  </div>\n  <p data-track=\"15\">首先，研究人员描绘了“行为”构建的整个流程，该框架让模型在推理过程中扮演3种不同的角色。</p>\n  <ul>\n   <li data-track=\"16\">元认知策略器（LLM A）：负责从自身的推理轨迹中提取行为；</li>\n   <li data-track=\"17\">教师（LLM B）：负责生成监督微调（SFT）训练的数据；</li>\n   <li data-track=\"18\">学生（LLM C）：其推理过程可通过行为加以辅助，包括行为条件推理或行为条件SFT。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113800_fe01fe20884c2ed03faa6786243cc3e3.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113800_fe01fe20884c2ed03faa6786243cc3e3.png\">\n  </div>\n  <p data-track=\"19\">为了提取“行为”，元认知策略器首先会针对给定问题生成一个解决方案，包含推理轨迹+最终答案。</p>\n  <p data-track=\"20\">然后，将该问题–解答对再次输入元认知策略器，用以生成反思，主要是评估推理是否逻辑严密、答案是否正确，以及是否能提炼出新的可复用行为以简化未来的解题过程。</p>\n  <p data-track=\"21\">最后，通过另一次查询，元认知策略器将问题、解答和反思转化为一组“行为条目（包含名称和指令）”，并将添加到“行为手册”中。</p>\n  <p data-track=\"23\">研究团队在三种不同场景下测试了该模型的推理性能。</p>\n  <p data-track=\"24\"><strong>行为条件推理（BCI）</strong></p>\n  <p data-track=\"25\">在首个场景中，BCI被用于MATH和AIME–24/25两个数据集，DeepSeek-R1-Distill-Llama-70B （R1-Llama-70B）和Qwen3-32B被用作候选学生模型。R1-Llama-70B被用作元认知策略生成器。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113800_337976d0ebc1e576b7e93ad54fa5572a.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113800_337976d0ebc1e576b7e93ad54fa5572a.png\">\n  </div>\n  <p data-track=\"26\">由上图可以看出，BCI可以在使用更少token的情况下，就能达到与基线相当或更优的性能。</p>\n  <p data-track=\"27\">此外，随着token的增加，该方法性能仍在提升，表明其不会对模型原有能力产生不良影响。</p>\n  <p data-track=\"28\"><strong>行为引导的自我改进</strong></p>\n  <p data-track=\"29\">在此实验中，R1-Llama-70B同时担任元认知策略器和学生两个角色，具体做法是直接让模型对自身的推理轨迹进行批判并修正，以实现自我改进。</p>\n  <p data-track=\"30\">这个方法就像让大模型自己“改作业”。给模型一个问题Q，它先写出一条初步推理轨迹R1。然后，把问题Q和R1 一起交回给模型，让它检查并改进，生成新的推理轨迹R2，以修正错误或补充遗漏的步骤。</p>\n  <p data-track=\"31\">从下图可以看出，即使不更新参数，模型也能借助从过往解题过程中提取的行为模式，优化后续推理效果。相比朴素的“批判-修正”基线方法，该策略可将准确率最多提升10%。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113801_c7b4e7fa003382686f75b591bf4c16f5.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113801_c7b4e7fa003382686f75b591bf4c16f5.png\">\n  </div>\n  <p data-track=\"32\"><strong>行为条件监督微调（BC-SFT）</strong></p>\n  <p data-track=\"33\">BC-SFT旨在将高质量的行为直接融入模型参数中，其中R1-Llama-70B同时担任元认知策略器和教师模型，Qwen2.5-14B、Qwen2.5-32B-Instruct、Qwen3-14B和Llama-3.1-8B被用作需要微调的学生模型。</p>\n  <p data-track=\"34\">与常规SFT相比，新方法可以更有效地将不具备推理能力的模型转化为具备推理能力的模型。</p>\n  <p data-track=\"35\">值得一提的是，BC-SFT不仅在token上使用更高效，而且几乎在所有情况下，其准确率都高于两个基线模型。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251005113801_6b23e8db9ba393ccefbc5f85b42b32ab.png\" alt=\"推理token减少46%！Meta新方法缩短思维链，告别重复推导\" data-src=\"https://image.jido.dev/20251005113801_6b23e8db9ba393ccefbc5f85b42b32ab.png\">\n  </div>\n  <p data-track=\"36\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/connordavis_ai/status/1971937767975498160\n   <br class=\"sysbr\">\n   [2]https://arxiv.org/abs/2509.13237</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Meta 提出元认知复用机制，通过提炼和复用 LLM 推理行为，显著减少思维链 token 消耗并提升推理效率和准确性。",
+  "oneSentenceSummary": "Meta 提出元认知复用机制，通过提炼和复用 LLM 推理行为，显著减少思维链 token 消耗并提升推理效率和准确性。",
+  "summary": "文章介绍了 Meta 等机构提出的“元认知复用（Metacognitive Reuse）”机制，旨在解决大模型在复杂任务中重复推导导致 token 消耗高、推理效率低的问题。该机制允许模型回顾并总结解题思路，将常用推理模式提炼为标准化“行为”，并存储于“行为手册”中。当遇到类似问题时，模型可直接调用这些行为，无需重复推导。研究团队在行为条件推理（BCI）、行为引导自我改进和行为条件监督微调（BC-SFT）三种场景下进行了实验，结果显示在保持准确率不变的前提下，最多可减少 46%的推理 token 使用量，并在特定场景下将准确率提升 10%。该机制为优化 LLM 推理效率和能力提供了新途径，对大模型实际应用具有重要意义。",
+  "mainPoints": [
+    {
+      "point": "元认知复用机制通过提炼标准化“行为”有效缩短大模型思维链。",
+      "explanation": "模型能自主回顾推理过程，将重复步骤抽象为可复用行为，存储在“行为手册”中，从而在后续推理中直接调用，避免冗余推导，提升推理效率。"
+    },
+    {
+      "point": "该机制显著提升 LLM 推理效率，最多可减少 46%的 token 使用量。",
+      "explanation": "通过行为条件推理（BCI）等应用，模型在数学基准测试中，在保持准确率的同时，大幅降低了推理所需的 token 数量，有效降低了计算成本和延迟。"
+    },
+    {
+      "point": "元认知复用不仅提升效率，还能通过自我改进和微调提升模型准确率。",
+      "explanation": "行为引导的自我改进使模型能批判并修正自身推理轨迹，提高准确率；行为条件监督微调能更有效地将推理能力内化到模型参数中。"
+    }
+  ],
+  "keyQuotes": [
+    "Meta、Mila-Quebec AI Institute、蒙特利尔大学和普林斯顿大学联合提出**元认知复用（Metacognitive Reuse） 机制**。",
+    "简单来说，就是让模型自己回顾、总结解题思路，将常用的推理套路提炼成更为简洁的\"行为\"，并将其存储于 \"行为手册（Behavior Handbook）\" 中。",
+    "实验结果显示，该机制通过行为条件推理、行为引导自我改进、行为条件监督微调三种应用场景，在 MATH、AIME 等数学基准测试中实现了显著优化，在保持准确率不变的前提下，**最多可减少 46%的推理 token 使用量**。",
+    "现有 LLM 的记忆系统（如 RAG）仅存储 \"是什么\" 的陈述性知识，缺乏 \"如何思考\" 的程序性知识复用机制，无法解决重复推理的低效问题。",
+    "行为引导的自我改进...相比朴素的\"批判-修正\"基线方法，该策略可将准确率最多提升 10%。"
+  ],
+  "tags": [
+    "大语言模型",
+    "推理优化",
+    "思维链",
+    "元认知",
+    "行为复用"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1709,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759654794000,
+  "publishDateStr": "2025-10-05",
+  "publishDateTimeStr": "2025-10-05 08:59:54"
+}

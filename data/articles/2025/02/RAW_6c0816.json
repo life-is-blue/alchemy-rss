@@ -1,0 +1,53 @@
+{
+  "id": "RAW_6c0816",
+  "title": "Cloudflare 开源文档并采用 Astro 提高其可扩展性",
+  "url": "https://mp.weixin.qq.com/s/e7joBjD1N-FIIT9rt9Y1qg",
+  "date": "2025-02-08 05:18:56",
+  "author": "Renato Losio",
+  "siteName": "InfoQ 中文",
+  "content": "\n \n \n  <section style=\"text-align: center;margin-bottom: 16px;\">\n   <br></section>\n  <section style=\"color: rgb(63, 63, 63);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\">\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    作者 | Renato Losio\n   </section>\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    译者 | 平川\n   </section>\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    策划 | Tina\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">最近，Cloudflare 发表了一篇文章，详细介绍了他们为了升级开发文档而从 Hugo 迁移到 Astro 生态系统的情况。Cloudflare 的所有文档都已在 GitHub 上开源，使社区有机会做出贡献。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Developers.cloudflare.com 网站之前是将一系列 Workers 站点合并成 单个 Cloudflare Pages 实例。他们使用了 Hugo 和 Gatsby 等工具，将数千个 Markdown 页面转换为 HTML、CSS 和 JavaScript。Cloudflare 产品内容主管 Kim Jeske、Cloudflare 文档平台工程师 Kian Newman-Hazel 和 Cloudflare 技术写作经理 Kody Jackson 解释了更换 Web 框架的原因：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"108\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      尽管 Cloudflare 的内容团队在发布产品的同时提供了文档，但开源文档网站本身却没有得到很好的扩展。Developers.cloudflare.com 并不适合贡献者，而我们因此错过了社区开发人员创建的所有精彩内容。\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">2021 年，Cloudflare 采用了 “内容即产品” 战略，强调要预测用户的需求，通过提供世界一流的内容来支持无障碍产品的创建。Jeske、Newman-Hazel 和 Jackson 写道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"93\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      开源文档使开发社区的任何人在任何地方都可以贡献内容。通过公开文档网站的内容和框架，我们不仅为开发人员提供了对资料本身进行完善的机会，还让他们可以了解并参与到文档的构建、审批和维护过程中。\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">根据该团队的说法，Astro 的文档主题 Starlight 是决定迁移文档网站的关键因素：该主题提供了强大的组件重载和一个可利用内置组件和基本样式的插件系统。CloudZero 研究总监 Jeremy Daly 评论说：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"101\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      Cloudflare 已将其所有开发文档开源，并从 Hugo 迁移到 Astro，JavaScript 生态系统又多了一位受害者。无论你的文档有多好，要保持文档的及时更新，并使所有人可以访问，用户的反馈至关重要。\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">根据 Cloudflare 团队的说法，将所有文档开源可以让公司与社区保持联系，并迅速落实反馈意见。在其他超大规模企业中，这并不是一个经常采用的策略。正如 InfoQ 此前报道的那样，亚马逊云科技在将大部分文档开源五年之后，转变了做法。2023 年，这家云提供商退役了所有公开的 GitHub 文档，理由是保持文档与内部版本一致存在挑战。而且，与 GitHub 存储库同步需要人工操作。当时，亚马逊云科技首席布道师 Jeff Barr 写道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"40\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      管理成本非常高，确实耗费了许多宝贵的时间，而这些时间本可以直接用来提高文档质量。\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Mathi 软件工程师 Gianluca Arbezzano 认为这个话题很有意义：</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">如果你认为 “这只是文档而已\"，那么我认为你应该多用点心！我们配拥有最好的！来自 Cloudflare 的这篇关于从 Hugo 迁移到 Astro 的文章是一篇好文章。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">在 Hacker News 上评论 Cloudflare 的文章时，Alex Hovhannisyan 提醒 道：</p>\n   <blockquote class=\"js_blockquote_wrap\" data-type=\"2\" data-url=\"\" data-author-name=\"\" data-content-utf8-length=\"81\" data-source-title=\"\">\n    <section class=\"js_blockquote_digest\">\n     <section>\n      我很抱歉，但作为一个最近从 Netlify 迁移过来的人，我必须实话实说（并且正在考虑迁回去）：文档做得好不好与技术栈无关。最终用户并不关心你的文档使用了什么技术栈。\n     </section>\n    </section>\n   </blockquote>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">所有 Cloudflare 文档都可以在网站 developers.cloudflare.com 上查阅。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: left;\"><strong><span style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></strong></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: left;\"><span style=\"font-size: 14px;color: rgb(136, 136, 136);\">https://www.infoq.com/news/2025/02/cloudflare-documentation-astro/</span></p><section style=\"padding-top:23px;color:rgb(74, 74, 74);visibility:visible;white-space:pre-line;padding-left:8px;letter-spacing:0.544px;font-size:16px;line-height:27px;-webkit-tap-highlight-color:transparent;outline:0px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom:0px;padding-right:8px;\">\n   </section>\n  </section>\n  <p style=\"display: none;\"><mp-style-type data-value=\"10000\"></mp-style-type></p>\n \n",
+  "aiSummary": "Cloudflare 将其开发者文档开源，并从 Hugo 迁移到 Astro 生态系统，旨在提高文档的可扩展性、促进社区参与，并降低维护成本。",
+  "oneSentenceSummary": "Cloudflare 将其开发者文档开源，并从 Hugo 迁移到 Astro 生态系统，旨在提高文档的可扩展性、促进社区参与，并降低维护成本。",
+  "summary": "Cloudflare 为了提升开发者文档的可扩展性和促进社区参与，并降低维护成本，决定将其文档开源，并从 Hugo 迁移到 Astro 生态系统。文章详细介绍了 Cloudflare 做出这一决策的背景，即原有的文档网站在扩展性和贡献者友好性方面存在不足。Astro 的 Starlight 文档主题成为迁移的关键因素，因为它提供了强大的组件重载和插件系统，简化了文档网站的定制和扩展。Cloudflare 认为开源文档能够更好地与社区保持联系，并快速响应反馈，从而降低维护成本。文章还对比了亚马逊云科技(AWS)对此策略的不同做法，AWS 在将大部分文档开源五年后又选择关闭，增加了对比性，引发读者对文档管理策略的思考。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 通过开源文档提升社区参与度并降低维护成本",
+      "explanation": "开源允许社区成员贡献内容，参与文档的构建、审批和维护，从而提高文档质量和覆盖范围，同时社区的参与也降低了 Cloudflare 自身的维护成本。"
+    },
+    {
+      "point": "Astro 的 Starlight 主题是迁移的关键因素，简化了定制和扩展",
+      "explanation": "Starlight 提供了强大的组件重载和插件系统，简化了文档网站的定制和扩展，使得 Cloudflare 能够更高效地构建和维护文档。"
+    },
+    {
+      "point": "文档质量与技术栈选择并非绝对相关，内容和用户体验至关重要",
+      "explanation": "最终用户更关心文档的内容和质量，以及良好的用户体验，而非底层使用的技术栈。选择合适的技术栈应该服务于内容质量和用户体验的提升。"
+    }
+  ],
+  "keyQuotes": [
+    "开源文档使开发社区的任何人在任何地方都可以贡献内容。",
+    "无论你的文档有多好，要保持文档的及时更新，并使所有人可以访问，用户的反馈至关重要。",
+    "文档做得好不好与技术栈无关。最终用户并不关心你的文档使用了什么技术栈。"
+  ],
+  "tags": [
+    "文档",
+    "开源",
+    "Astro",
+    "Hugo",
+    "Cloudflare"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1041,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1738991936000,
+  "publishDateStr": "2025-02-08",
+  "publishDateTimeStr": "2025-02-08 05:18:56"
+}

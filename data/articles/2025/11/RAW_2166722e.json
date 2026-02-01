@@ -1,0 +1,59 @@
+{
+  "id": "RAW_2166722e",
+  "title": "Valkey 9.0 引入多数据库集群、原子槽迁移和显著性能提升",
+  "url": "https://www.infoq.com/news/2025/11/valkey-9-atomic-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-22 03:05:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Linux Foundation has announced the <a href=\"https://valkey.io/blog/introducing-valkey-9/\">general availability of Valkey 9.0</a>, the open-source in-memory storage solution developed as a successor to Redis. The latest major version introduces atomic slot migrations, hash field expiration, and full support for numbered databases in cluster mode, enabling scaling to 2,000 nodes and achieving over 1 billion requests per second.</p>\n   <p>Released <a href=\"https://valkey.io/blog/valkey-8-ga/\">one year after Valkey 8.0</a>, Valkey 9.0 adds atomic slot migration, improving how clusters rebalance data. Unlike stepwise migrations that could change ownership mid-transfer, the <a href=\"https://valkey.io/blog/atomic-slot-migration/\">new atomic movement</a> is designed to ensure consistent key routing and predictable handoffs, reducing transient errors and simplifying live resharding. <a href=\"https://www.linkedin.com/in/kshams/\">Khawaja Shams</a>, co-founder and CEO of Momento, and <a href=\"https://www.linkedin.com/in/allenheltondev/\">Allen Helton</a>, ecosystem engineer at Momento and AWS Hero, write:</p>\n   <blockquote>\n    <p>For teams running Valkey in clustered environments, this fundamentally shifts how you plan capacity and manage operational risk. Scale-outs become predictable instead of painful.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/kyle-davis-linux/\">Kyle Davis</a>, senior developer advocate at AWS and open source leader for Valkey, explains:</p>\n   <blockquote>\n    <p>In Valkey, keys are bundled into one of 16,384 ‘slots’ and each node takes one or more slots. In Valkey 9.0 instead of being key-by-key, Valkey migrates entire slots at a time, atomically moving the slot from one node to another using the AOF format.</p>\n   </blockquote>\n   <p>Another prominent feature is hash field expiration. Previously, Valkey hashes could only expire as a whole, forcing users to split data across multiple keys when field-level expiration was needed. Valkey 9.0 allows individual hash fields to expire independently. In a separate article, <a href=\"https://valkey.io/blog/hash-fields-expiration/\">Ran Shidlansik</a>, senior software engineer at AWS, explains how<a href=\"https://valkey.io/blog/hash-fields-expiration/\"> hash field expiration works</a> and why active, rather than lazy, expiration is used to reclaim expired hash fields. Shidlansik concludes:</p>\n   <blockquote>\n    <p>The benchmarks demonstrate that field-level expirations can be added to Valkey without compromising memory efficiency, or latency. The memory overhead remains modest and predictable, command throughput is unaffected, and the shared active expiration job efficiently reclaims memory even under heavy ingestion workloads.</p>\n   </blockquote>\n   <p><a href=\"https://valkey.io/blog/numbered-databases/\">Numbered databases</a>, long used to separate data and prevent key collisions, were limited in Redis and previous Valkey releases to a single database in cluster mode. Removing this restriction, Valkey 9.0 introduces full cluster support for numbered databases, enabling scalable, multi-database deployments. Davis explains how <a href=\"https://valkey.io/blog/numbered-databases/\">numbered databases are a form of namespacing</a> and their primary use case:</p>\n   <blockquote>\n    <p>The most straight forward use case of numbered databases is when you need to separate your data logically and you can tolerate the effects of resource sharing. This might be something like keeping customer data separated from one another or combining applications on to a single cluster when resources are unlikely to be an issue.</p>\n   </blockquote>\n   <p><em><img alt=\"Numbered Databases in Valkey 9.0\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/11/valkey-9-atomic-migration/news/2025/11/valkey-9-atomic-migration/en/resources/1move-db.drawio-1763003546477.png\" style=\"width: 800px; height: 393px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/valkey-9-atomic-migration/en/resources/1move-db.drawio-1763003546477.png\" rel=\"share\"></em></p>\n   <p><em>Source: Valkey blog</em></p>\n   <p>The community behind the project recently discussed the architectural improvements in Valkey 9.0, which demonstrated how the resilience of large clusters enabled scaling to 2,000 nodes and <a href=\"https://valkey.io/blog/1-billion-rps/\">achieving over 1 billion requests per second.</a> Shams and Helton add:</p>\n   <blockquote>\n    <p>The performance story in 9.0 is about using modern CPU capabilities intelligently. Valkey 9.0 takes advantage of modern hardware to deliver performance that outpaces previous versions by wide margins (...) As a result, you get lower tail latency, higher per-node throughput, and measurable cost efficiency at scale.</p>\n   </blockquote>\n   <p>Supported by AWS, Oracle, and Google Cloud, among others, Valkey is released under the BSD 3-clause license. Valkey 9.0 is now available for <a href=\"https://valkey.io/download/\">download</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Valkey 9.0 Introduces Multi-Database Clustering, Atomic Slot Migration, and Major Performance Gains\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/valkey-9-atomic-migration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763780700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Valkey 9.0 引入了多数据库集群、原子槽迁移和显著的性能提升，增强了内存存储解决方案的可扩展性和运营效率。",
+  "oneSentenceSummary": "Valkey 9.0 引入了多数据库集群、原子槽迁移和显著的性能提升，增强了内存存储解决方案的可扩展性和运营效率。",
+  "summary": "Valkey 9.0，作为 Redis 的继任者，开源内存存储解决方案，现已正式发布，为集群环境带来了重大改进。主要功能包括原子槽迁移，可确保在数据重新平衡期间实现一致的键路由和可预测的切换，从而显著减少瞬态错误。它还引入了独立的哈希字段过期，实现细粒度数据管理，提高内存效率。此外，Valkey 9.0 完全支持编号数据库，从而实现可扩展的多数据库部署。这些创新利用现代 CPU 能力，从而实现显著的性能提升，实现超过每秒 10 亿次请求，并在大规模下提高成本效率。此更新从根本上改善了使用 Valkey 的团队的容量规划和运营风险管理。",
+  "mainPoints": [
+    {
+      "point": "原子槽迁移提升集群数据重新平衡和一致性。",
+      "explanation": "这种新机制确保了重新分片期间一致的键路由和可预测的数据切换。这显著减少了瞬态错误，并简化了集群环境的运营管理。"
+    },
+    {
+      "point": "哈希字段过期支持哈希中细粒度的独立数据过期。",
+      "explanation": "用户现在可以为哈希中的各个字段设置过期时间，从而提供更灵活的数据管理和更高的内存效率。这消除了跨多个键拆分数据的需要。"
+    },
+    {
+      "point": "多数据库集群支持可扩展且逻辑分离的部署。",
+      "explanation": "Valkey 9.0 通过完全支持编号数据库消除了以前的集群模式限制。这使得在大规模多应用程序环境中实现逻辑数据分离并防止键冲突成为可能。"
+    },
+    {
+      "point": "显著的性能提升提高了吞吐量和大规模成本效率。",
+      "explanation": "Valkey 9.0 通过智能地利用现代 CPU 能力，提供超过每秒 10 亿次请求、更低的尾部延迟和更高的单节点吞吐量。这为大型部署带来了可衡量的成本节省。"
+    }
+  ],
+  "keyQuotes": [
+    "对于在集群环境中运行 Valkey 的团队来说，这从根本上改变了您规划容量和管理运营风险的方式。扩展变得可预测，而不是痛苦。",
+    "在 Valkey 9.0 中，它不是逐个键地迁移，而是每次迁移整个槽，使用 AOF 格式以原子方式将槽从一个节点移动到另一个节点。",
+    "基准测试表明，可以将字段级过期添加到 Valkey，而不会影响内存效率或延迟。内存开销仍然适度和可预测，命令吞吐量不受影响。即使在繁重的摄取工作负载下，共享的活动过期作业也能有效地回收内存。",
+    "编号数据库最直接的用例是当您需要从逻辑上分离数据并且可以容忍资源共享的影响时。",
+    "9.0 中的性能提升得益于对现代 CPU 能力的智能利用。Valkey 9.0 利用现代硬件，提供比以前版本更快的性能 (...)"
+  ],
+  "tags": [
+    "Valkey",
+    "内存数据库",
+    "集群",
+    "分布式系统",
+    "数据迁移"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 539,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763780700000,
+  "publishDateStr": "2025-11-22",
+  "publishDateTimeStr": "2025-11-22 03:05:00"
+}

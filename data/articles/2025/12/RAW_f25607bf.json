@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f25607bf",
+  "title": "Magika 1.0：基于 Rust 和 AI 的智能高速文件检测",
+  "url": "https://www.infoq.com/news/2025/12/magika-rust-file-type-detector/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-12 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has just released <a href=\"https://opensource.googleblog.com/2025/11/announcing-magika-10-now-faster-smarter.html\">version 1.0 of Magika</a>, a substantial rewrite of its open-source file type detection system. The new version leverages AI to support a broader range of file types and is built in Rust for maximum speed and security.</p>\n   <p>Magika 1.0 brings the number of <a href=\"https://securityresearch.google/magika/core-concepts/models-and-content-types/\">supported file types</a> to over 200, up from 100 in the previous Python version.</p>\n   <p>Google highlights that many of the newly added file types are specialized text-based file types that were previously difficult to detect. These include Dockerfiles, TOML, HCL, Bazel files and many more. Magika 1.0 can also distinguish between source code files written in Swift, Kotlin, TypeScript, Dart, Web Assembly, and Zig (zig). Additionally, it supports file types commonly used in data science, such as Jupyter Notebooks, Numpy arrays, PyTorch models, ONNX files, and others.</p>\n   <p>In addition to supporting a wider range of file types, Magika 1.0 offer greater granularity, distinguishing similar formats that were previously grouped together, such as TypeScript and JavaScript, C++ and C, TSV and CSV, etc.</p>\n   <p>To enable the tool to detect this wide diversity of formats, Google engineers created a large dataset of file format samples to train a specialized AI model. The sheer volume of data represented a challenge in itself:</p>\n   <blockquote>\n    <p>Our training dataset grew to over 3TB when uncompressed, which required an efficient processing pipeline. To handle this, we leveraged our recently released SedPack dataset library. This tool allows us to stream and decompress this large dataset directly to memory during training, bypassing potential I/O bottlenecks and making the process feasible.</p>\n   </blockquote>\n   <p>At the same time, several formats, including recent, legacy, and specialized formats, were significantly underrepresented. Google addressed this using Gemini to \"create a high-quality, synthetic training set by translating existing code and other structured files from one format to another\".</p>\n   <p>Google says that Magika achieves ~99% average precision and recall, outperforming existing approaches, especially on textual content types.</p>\n   <p>Another major advantage of Magika 1.0 is its completely rewritten core, which uses Rust to maximize performance and enhance memory safety. The new Rust-based engine is at the heart of Magika's command line tool, which is able to scan hundreds of files per second on a single CPU:</p>\n   <blockquote>\n    <p>Magika is able to identify hundreds of files per second on a single core and easily scale to thousands per second on modern multi-core CPUs thanks to the use of the high-performance ONNX Runtime for model inference and Tokio for asynchronous parallel processing,</p>\n   </blockquote>\n   <p><img alt=\"\" style=\"width: 630px; height: 368px;\" data-src=\"https://www.infoq.com/news/2025/12/magika-rust-file-type-detector/news/2025/12/magika-rust-file-type-detector/en/resources/1magika-1765571219937.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/magika-rust-file-type-detector/en/resources/1magika-1765571219937.jpg\" rel=\"share\"></p>\n   <p>Based on Google's benchmarks, this approach makes it possible to process nearly 1,000 files per second on a MacBook Pro (M4). <a href=\"https://www.reddit.com/r/rust/comments/1osog21/comment/no493k6/\">As Reddit user <code>robertknight2</code> explains</a>, in this workflow:</p>\n   <blockquote>\n    <p>Rust is used for extracting feature vectors from files using a small subset of the content and driving the scanning process via a tokio-based loop. The ML inference which predicts the file type based on extracted features is however done in C++ by ONNX Runtime (via the ort crate).</p>\n   </blockquote>\n   <p>The tool incurs a one-time performance cost when initially loading the model, but afterwards it achieves around 5ms per file, with nearly constant inference time independently from file size.</p>\n   <p>Although some have <a href=\"https://x.com/LundukeJournal/status/1989056823144452197\">viewed the adoption of Rust negatively</a>, <a href=\"https://x.com/CalebMaclennan/status/1989082406851428690?s=20\">X user Caleb Maclennan noted</a> that \"the security implications of heuristic guessing how to handle inputs makes Rust a good pick\". <a href=\"https://x.com/mazzarito/status/1989183439711682680?s=20\">User Mazzarito added</a>:</p>\n   <blockquote>\n    <p>When file extensions are missing, or when they cannot be trusted such as during file uploads this type of program is actually quite valuable. File types are simply conventions- but there is no standard way to determine its type other than trying to read it its decoder.</p>\n   </blockquote>\n   <p>You can <a href=\"https://github.com/google/magika\">install Magika</a>'s command line tool by executing:</p>\n   <pre>\r\n<code>curl -LsSf https://securityresearch.google/magika/install.sh | sh\r\n</code></pre>\n   <p>or getting the Python package, which includes the CLI tool, running <code>pipx install magika</code>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Magika 1.0: Smarter, Faster File Detection with Rust and AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/magika-rust-file-type-detector/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765573200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌的 Magika 1.0，凭借 Rust 重写与 AI 增强，实现了显著更快、更智能的文件类型检测，高精度支持逾 200 种类型。",
+  "oneSentenceSummary": "谷歌的 Magika 1.0，凭借 Rust 重写与 AI 增强，实现了显著更快、更智能的文件类型检测，高精度支持逾 200 种类型。",
+  "summary": "谷歌发布了 Magika 1.0，这是其开源文件类型检测系统的一次重大重写。该新版本显著扩展了其功能，支持超过 200 种文件类型，比之前的 Python 100 种类型有了大幅增加。它擅长检测 Dockerfiles、TOML、HCL 等专用文本文件，以及各种编程语言源代码和数据科学格式。Magika 1.0 还提供了更高的粒度，能够区分相似格式。这是通过在一个庞大的 3TB 数据集上训练专门的 AI 模型实现的，利用谷歌的 SedPack 库和 Gemini 进行合成数据生成，以克服代表性不足格式的数据稀缺问题。核心引擎用 Rust 重写，增强了性能和内存安全性（Memory Safety），使其能够在单个 CPU 上每秒扫描数百个文件。基准测试显示，在现代硬件上，它每秒可以处理近 1000 个文件，在初始模型加载后，每个文件的推理时间仅为 5 毫秒。虽然 Rust 的采用引发了争议，但其在处理不受信任输入时的安全优势得以凸显。Magika 1.0 为文件扩展名缺失或不可靠的情景（如文件上传）提供了有价值的解决方案。",
+  "mainPoints": [
+    {
+      "point": "Magika 1.0 通过 AI 模型显著扩展了文件类型覆盖范围和粒度。",
+      "explanation": "新版本能够检测超过 200 种文件类型，包括专用文本格式和不同的编程语言，提供比以往版本更精确的分类能力。"
+    },
+    {
+      "point": "基于 Rust 的核心提供了卓越的性能和增强的安全性。",
+      "explanation": "采用 Rust 重写，实现了高速扫描（每秒数百到数千个文件）和内存安全性，这对于处理潜在的不可信文件输入至关重要。"
+    },
+    {
+      "point": "谷歌利用大型数据集和 Gemini 进行合成数据生成，以有效地训练 AI 模型。",
+      "explanation": "为应对 3TB 训练数据集和代表性不足格式的挑战，谷歌利用 SedPack 进行高效处理，并使用 Gemini 生成高质量的合成训练数据，从而有效训练了 AI 模型。"
+    }
+  ],
+  "keyQuotes": [
+    "我们未压缩的训练数据集增长到超过 3TB，这需要一个高效的处理管道。",
+    "谷歌表示，Magika 实现了约 99% 的平均精确率（Precision）和召回率（Recall），优于现有方法，尤其是在文本内容类型上。",
+    "得益于使用高性能 ONNX Runtime 进行模型推理和 Tokio 进行异步并行处理，Magika 能够在单核上每秒识别数百个文件，并在现代多核 CPU 上轻松扩展到每秒数千个。",
+    "当文件扩展名缺失，或者在文件上传等情况下无法信任文件扩展名时，这类程序实际上非常有价值。"
+  ],
+  "tags": [
+    "文件类型检测",
+    "AI",
+    "Rust",
+    "机器学习",
+    "性能优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 621,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765573200000,
+  "publishDateStr": "2025-12-12",
+  "publishDateTimeStr": "2025-12-12 21:00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1d4443e1",
+  "title": "Data Commons MCP 服务器：为 AI 开发者开启公共数据集的新篇章",
+  "url": "https://www.infoq.com/news/2025/10/data-commons-mcp-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-09 18:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has recently introduced the <a href=\"https://blog.google/technology/developers/ai-agents-datacommons/\">Data Commons Model Context Protocol (MCP) Server</a>, a tool that enables AI developers and researchers to easily access the public dataset collection available through <a href=\"https://datacommons.org\">Data Commons</a>.</p>\n   <p>The new MCP server provides a unified way to access datasets published on Data Commons:</p>\n   <blockquote>\n    <p>This allows developers to leverage our comprehensive data without needing to learn or directly interact with complex underlying APIs. It dramatically accelerates the creation of data-rich, agentic applications that reduce the rate of hallucinations in LLMs.</p>\n   </blockquote>\n   <p>The Data Commons MCP server allows analysts and data scientists to execute queries in natural language such as \"What health data do you have for Africa?\", \"Compare the life expectancy, economic inequality, and GDP growth for BRICS nations\", \"Generate a concise report on income vs diabetes in US counties\", among others.</p>\n   <p>According to Data Commons head Prem Ramaswami, this capability is a <a href=\"https://www.linkedin.com/posts/premrama_introducing-the-data-commons-model-context-activity-7376657244882505728-A-bP/\">game-changer</a>, shifting \"data-driven decisions from complicated to practical\", whereas previously, analysts would often give up on manually searching through disparate and diverse data sources.</p>\n   <p>Ramaswami also highlights the case of ONE, a global organization advocating for investment in Africa, which leveraged the Data Commons MCP Server to build an interactive platform that allows users to search through tens of millions of health financing records using plain language. Users can also visualize the results and download clean datasets for further analysis.</p>\n   <blockquote>\n    <p>This first-of-its-kind tool uses AI and human expertise to unlock trusted health financing data in seconds—a powerful new resource for those shaping policy and driving change.</p>\n   </blockquote>\n   <p>The Data Commons MCP server is implemented as a <a href=\"https://pypi.org/project/datacommons-mcp/\">PyPi package</a> and supports either datacommons.org as the default server or a custom Data Commons instance. For a quick start, Google is providing a <a href=\"https://colab.research.google.com/github/datacommonsorg/agent-toolkit/blob/main/notebooks/datacommons_mcp_tools_with_custom_agent.ipynb\">Colab notebook</a> demonstrating how to build and run an agent that interacts with the Data Commons MCP Server.</p>\n   <p>Google launched Data Commons in 2018 to make datasets from a variety of sources publicly accessible, including government surveys, local administrative data, and statistics from global organizations such as the United Nations. Data Commons uses a graph data model that can be accessed via a browser interface and several APIs. The model is also accessible through Google Search using natural language queries.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"The New Data Commons MCP Server Unlocks a Wealth of Public Datasets for AI Developers\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/data-commons-mcp-server/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760032800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌 Data Commons MCP 服务器简化 AI 开发者对公共数据集的访问，支持自然语言查询，减少 LLM 幻觉。",
+  "oneSentenceSummary": "谷歌 Data Commons MCP 服务器简化 AI 开发者对公共数据集的访问，支持自然语言查询，减少 LLM 幻觉。",
+  "summary": "谷歌最近发布了 Data Commons 模型上下文协议 (MCP) 服务器，这是一个重要的工具，旨在为 AI 开发者和研究人员提供简单、统一的途径，以访问通过 Data Commons 提供的广泛公共数据集集合。该服务器抽象掉了复杂的底层 API，从而允许用户使用自然语言查询和交互数据，例如询问非洲的健康数据或比较各个国家的经济指标。Data Commons 负责人 Prem Ramaswami 强调，这项技术是“颠覆性技术”，它将数据驱动的决策从复杂的手动搜索转变为实用、高效和直观的体验。一个值得注意的实际应用是 ONE 组织，它利用 MCP 服务器构建了一个交互式平台，使用户能够使用简单的语言搜索数千万条健康融资记录，可视化结果并下载干净的数据集。Data Commons MCP 服务器以 PyPi 包的形式提供，谷歌还通过提供 Colab 笔记本电脑来支持开发人员，以便快速集成和构建与服务器交互的代理。Data Commons 本身最初由谷歌于 2018 年推出，它汇集了来自各种来源的公共数据集，包括政府调查和全球组织，利用可通过浏览器界面、多个 API 和谷歌搜索访问的图形数据模型。",
+  "mainPoints": [
+    {
+      "point": "Data Commons MCP 服务器统一并简化了对各种公共数据集的访问。",
+      "explanation": "它提供了一个单一的界面，封装了复杂的 API，使 AI 开发者能够轻松地利用全面的数据，而无需深入了解底层来源的技术知识。"
+    },
+    {
+      "point": "支持公共数据集的自然语言查询，从而增强了数据驱动的决策。",
+      "explanation": "用户可以用简单的语言提出查询，使数据探索更加直观和高效，从而大大减少了以前数据发现所需的手动工作。"
+    },
+    {
+      "point": "有助于创建数据丰富的 AI 代理，从而减少 LLM 幻觉。",
+      "explanation": "通过提供结构化和相关的数据上下文，该服务器可帮助 AI 代理检索准确的信息，从而提高 LLM 的可靠性和事实依据。"
+    }
+  ],
+  "keyQuotes": [
+    "这使开发者可以利用我们全面的数据，而无需学习或直接与复杂的底层 API 进行交互。它极大地加速了数据丰富的代理应用程序的创建，从而降低了 LLM 中幻觉的发生率。",
+    "这种能力是一种颠覆性技术，将“数据驱动的决策从复杂变为实用”。",
+    "这种首创的工具使用 AI 和人类专业知识在几秒钟内解锁可信赖的健康融资数据——对于那些制定政策和推动变革的人来说，这是一种强大的新资源。"
+  ],
+  "tags": [
+    "数据访问",
+    "公共数据集",
+    "自然语言查询",
+    "API 封装",
+    "AI 代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 363,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760032800000,
+  "publishDateStr": "2025-10-09",
+  "publishDateTimeStr": "2025-10-09 18:00:00"
+}

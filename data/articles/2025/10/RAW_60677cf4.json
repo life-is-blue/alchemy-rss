@@ -1,0 +1,55 @@
+{
+  "id": "RAW_60677cf4",
+  "title": "将科研脏活累活真·丢给 AI！上海 AI Lab 推出科研智能体 FlowSearch",
+  "url": "https://www.qbitai.com/2025/10/341385.html",
+  "date": "2025-10-14 04:15:55",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">将复杂科研过程自动化落地，上海人工智能实验室推出FlowSearch！</p>\n  <p data-track=\"2\">在GAIA、HLE、GPQA以及TRQA等科研基准上，<strong>FlowSearch不仅实现了性能全面领先，还展示了AI在复杂科研任务中的动态协作与深度推理能力。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_7dcb903e057ea76de08152380a0ce6cd.png\" data-src=\"https://image.jido.dev/20251014060801_7dcb903e057ea76de08152380a0ce6cd.png\">\n  </div>\n  <p data-track=\"3\">展开来说，当AI在问答基准和标准化测试中表现卓越之时，其进行科学研究的能力也在被更多关注。</p>\n  <p data-track=\"4\">科学研究不同于解题或信息检索，它是一个开放性、长期且复杂的认知过程——研究者需要提出原创问题、设计实验方案、收集并整合多源证据，并在不断迭代中形成系统结论。</p>\n  <p data-track=\"5\">这样的过程远超计算能力本身，它要求的是创新思维、动态推理能力以及对复杂知识关系的精准掌控。</p>\n  <p data-track=\"6\">而<strong>FlowSearch</strong>，正是一个<strong>由动态结构化知识流驱动的深度科研智能体</strong>。</p>\n  <p data-track=\"7\">它通过动态结构化知识流构建科研任务的多层依赖图，并在多智能体框架下实现任务的并行探索、知识的递归整合和流程的自适应优化。</p>\n  <p data-track=\"8\">与传统“输入—计算—输出”的封闭式AI不同，FlowSearch更像一个理解你研究思路的伙伴——当发现新信息，它会主动调整计划；当证据链不完整，它会引导进一步探索；当推理偏离目标，它会进行自我修正。</p>\n  <p data-track=\"9\">研究团队表示，它标志着科研智能体从“被动工具”迈向主动探索伙伴的新阶段，让科学发现不再只是等待AI输出结果，而是与AI一起探索、不断前进。</p>\n  <p data-track=\"11\">FlowSearch由三大核心模块组成，每个模块都像科研团队中的“关键成员”，协同完成复杂任务：</p>\n  <p data-track=\"12\"><strong>1、Knowledge Flow Planner</strong>：规划研究路线，像科学家一样拆解问题、逐层细化制定任务；</p>\n  <p data-track=\"13\"><strong>2、Knowledge Collector</strong>：执行任务、收集信息，就像勤奋的实验助理一样整理数据；</p>\n  <p data-track=\"14\"><strong>3、Knowledge Flow Refiner</strong>：反思和优化整个研究流程，确保科研思路清晰、连贯、可持续。</p>\n  <p data-track=\"15\">当你提出研究问题时，FlowSearch先由Planner构建初步的知识流——每个节点代表一个子问题或关键概念，节点之间的连接描绘了知识依赖关系。</p>\n  <p data-track=\"16\">随后，多名“智能体”同时开始执行任务，Collector不断填充节点内容，而Refiner会根据中间结果动态调整流程——增删任务、优化依赖，让科研路径像有生命一样逐步演化。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_c6847751988af3fed11d5c8b8cc838d7.png\" data-src=\"https://image.jido.dev/20251014060801_c6847751988af3fed11d5c8b8cc838d7.png\">\n  </div>\n  <p data-track=\"18\">FlowSearch使用<strong>有向无环图</strong>把科研任务和知识关系可视化。每个节点都携带任务类型（检索、求解、回答）、描述和知识上下文，而节点间的边定义了信息流向。</p>\n  <p data-track=\"19\">这种设计让科研推理不再依赖线性顺序，而能<strong>同时展开多条探索路径</strong>，每一步都可追踪和验证。</p>\n  <p data-track=\"20\">换句话说，它不仅让 AI 能“想清楚每一步”，也让你能随时理解科研过程的脉络。</p>\n  <p data-track=\"22\">高质量的科研规划源于<strong>逐层细化的专家式思维</strong>。Planner模块采用递归扩展策略——从总问题出发，识别每一层需要细化的子任务，生成新的节点和依赖关系。</p>\n  <p data-track=\"23\">这一过程持续进行，直到形成完整的初始知识流。FlowSearch中的<strong>InternPlanner</strong>模型经过结构化科研任务数据微调，能够学习专家的拆解方式，让AI的规划既逻辑清晰，又稳健可靠。</p>\n  <p data-track=\"25\"><strong>Knowledge Collector</strong>执行任务、收集信息，并把结果整理成节点知识，为后续推理提供输入。</p>\n  <p data-track=\"26\">任务执行完成后，Knowledge Flow Refiner会启动反思机制：它能根据新信息调整节点和依赖关系，优化任务顺序，确保知识流持续进化。</p>\n  <p data-track=\"27\">这意味着FlowSearch不只是一个执行工具，它具备<strong>自组织、自纠错、自优化能力</strong>，可以在复杂科研任务中保持全局一致性，同时灵活应对局部变化。</p>\n  <p data-track=\"28\">以上设计让FlowSearch同时具备：</p>\n  <ul>\n   <li data-track=\"29\">层次化分解能力：仿佛每个科研问题都能被拆解到最合适的颗粒度；</li>\n   <li data-track=\"30\">多路并行探索能力：智能体可以同时处理多个任务，提高效率；</li>\n   <li data-track=\"31\">全局收敛能力：动态调整确保最终知识流完整、逻辑自洽。</li>\n  </ul>\n  <p data-track=\"32\">无论是复杂跨学科研究，还是大规模数据分析，FlowSearch都能让科研不再只是“等待AI输出”，而是真正的与AI共同探索。</p>\n  <p data-track=\"34\"><strong>1、综合性能突破</strong></p>\n  <p data-track=\"35\">FlowSearch在三大权威基准<strong>GAIA、GPQA-diamond、HLE</strong>上，全面超越现有方法。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_e799a7c259b0e43818d12c92c4733680.png\" data-src=\"https://image.jido.dev/20251014060801_e799a7c259b0e43818d12c92c4733680.png\">\n  </div>\n  <p data-track=\"36\">在生物领域的专业基准<strong>TRQA</strong>上，FlowSearch依托通用工具链超越了多个领域专用模型，显示出强大的专业问题解决能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_6469fbec59108e15cdc0eed07794410c.png\" data-src=\"https://image.jido.dev/20251014060801_6469fbec59108e15cdc0eed07794410c.png\">\n  </div>\n  <p data-track=\"37\"><strong>2、模块有效性验证</strong></p>\n  <p data-track=\"38\">去除动态知识流建模或反思模块均导致显著性能下降，验证了结构化规划与动态调整机制在提升推理深度与系统稳定性方面的关键价值。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_aae1a191aaeb900ab36b951d236e9f97.png\" data-src=\"https://image.jido.dev/20251014060801_aae1a191aaeb900ab36b951d236e9f97.png\">\n  </div>\n  <p data-track=\"39\"><strong>3、Internplanner模型训练效果</strong></p>\n  <p data-track=\"40\">经过微调的<strong>Internplanner-32B</strong>相比基础模型<strong>Qwen-3-32B</strong>在GAIA上提升约6个百分点，表明结构化知识训练能够显著增强模型的规划能力与任务一致性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_f86fee1d409f5b26e91b2f278f04f71d.jpeg\" data-src=\"https://image.jido.dev/20251014060801_f86fee1d409f5b26e91b2f278f04f71d.jpeg\">\n  </div>\n  <p data-track=\"41\"><strong>4、案例分析</strong></p>\n  <p data-track=\"42\">通过FlowSearch与OWL的对比案例可以看出，FlowSearch通过显式依赖建模与中间结果整合，有效避免了证据丢失与逻辑链断裂，展现出更高的推理透明度与可解释性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"将科研脏活累活真·丢给AI！上海AI Lab推出科研智能体FlowSearch\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251014060801_86929e20672c7d678a522fb53600aa9d.png\" data-src=\"https://image.jido.dev/20251014060801_86929e20672c7d678a522fb53600aa9d.png\">\n  </div>\n  <p data-track=\"43\">同时，FlowSearch不仅能够高质量地完成科研问答任务，还能直接适配于科学调研与报告生成任务，产出完整、全面且逻辑清晰的科学调研成果。</p>\n  <p data-track=\"48\">团队表示，FlowSearch的提出标志着科研智能体从“任务执行”向“知识驱动推理”的关键转变。</p>\n  <ul>\n   <li data-track=\"49\">对于科研新人，它能够构建完整的知识探索路径，降低进入新领域的学习门槛；</li>\n   <li data-track=\"50\">对跨学科研究者，它提供了知识流整合与多模态信息融合能力；</li>\n   <li data-track=\"51\">对资深学者，它可作为智能研究助手，在假设生成、证据聚合和报告撰写阶段显著提升效率。</li>\n  </ul>\n  <p data-track=\"52\">更重要的是，FlowSearch的动态结构化框架为未来<strong>可解释科研智能体</strong>与<strong>自演化科学发现系统</strong>奠定了通用基础——使智能体具备类研究者的思考、探索与自我反思能力，推动人工智能从工具向真正的科研伙伴演进。</p>\n  <p data-track=\"53\">论文链接：https://arxiv.org/abs/2510.08521\n   <br class=\"sysbr\">\n   GitHub仓库：https://github.com/Alpha-Innovator/InternAgent</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "上海人工智能实验室推出科研智能体 FlowSearch，通过动态结构化知识流和多智能体框架，自动化复杂科研过程，实现深度推理和自适应优化。",
+  "oneSentenceSummary": "上海人工智能实验室推出科研智能体 FlowSearch，通过动态结构化知识流和多智能体框架，自动化复杂科研过程，实现深度推理和自适应优化。",
+  "summary": "文章详细介绍了上海人工智能实验室开发的科研智能体 FlowSearch。该系统旨在自动化复杂的科学研究过程，解决传统 AI 在开放性、长期性科研任务中的局限。FlowSearch 的核心创新在于其“动态结构化知识流”驱动的深度科研智能体框架，能够构建科研任务的多层依赖图，并在多智能体协同下实现任务并行探索、知识递归整合和流程自适应优化。它包含 Knowledge Flow Planner、Knowledge Collector 和 Knowledge Flow Refiner 三大核心模块，分别负责规划研究路线、收集信息和反思优化流程。文章通过在 GAIA、GPQA、HLE 和 TRQA 等权威基准测试上 FlowSearch 的领先性能，以及模块有效性、InternPlanner 模型训练效果和案例分析，验证了其在提升科研效率、推理深度和可解释性方面的突破。FlowSearch 将 AI 从被动工具转变为主动探索伙伴，对科研新人、跨学科研究者和资深学者均有显著价值，并为未来可解释和自演化科研智能体奠定了通用基础。",
+  "mainPoints": [
+    {
+      "point": "FlowSearch 通过动态结构化知识流和多智能体框架，实现复杂科研过程自动化。",
+      "explanation": "该系统能够构建任务依赖图，并行探索、递归整合知识并自适应优化流程，将 AI 从被动工具转变为主动科研伙伴，有效应对科研的开放性与复杂性。"
+    },
+    {
+      "point": "FlowSearch 在多项权威科研基准上性能全面领先，展示 AI 深度推理能力。",
+      "explanation": "在 GAIA、GPQA、HLE 和 TRQA 等基准测试中超越现有方法，证明其在专业问题解决和复杂任务处理上的卓越能力和更深的推理深度。"
+    },
+    {
+      "point": "FlowSearch 具备层次化分解、多路并行探索和全局收敛能力。",
+      "explanation": "其三大核心模块协同工作，确保科研问题被细化到合适颗粒度，任务并行高效执行，并最终形成逻辑自洽的完整知识流，提升效率与质量。"
+    }
+  ],
+  "keyQuotes": [
+    "FlowSearch 不仅实现了性能全面领先，还展示了 AI 在复杂科研任务中的动态协作与深度推理能力。",
+    "FlowSearch，正是一个由动态结构化知识流驱动的深度科研智能体。",
+    "它通过动态结构化知识流构建科研任务的多层依赖图，并在多智能体框架下实现任务的并行探索、知识的递归整合和流程的自适应优化。",
+    "FlowSearch 不只是一个执行工具，它具备自组织、自纠错、自优化能力，可以在复杂科研任务中保持全局一致性，同时灵活应对局部变化。",
+    "FlowSearch 的提出标志着科研智能体从'任务执行'向'知识驱动推理'的关键转变。"
+  ],
+  "tags": [
+    "科研智能体",
+    "智能体框架",
+    "AI Agent",
+    "多智能体",
+    "大语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2318,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760415355000,
+  "publishDateStr": "2025-10-14",
+  "publishDateTimeStr": "2025-10-14 04:15:55"
+}

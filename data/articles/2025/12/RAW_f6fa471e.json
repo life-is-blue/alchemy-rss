@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f6fa471e",
+  "title": "DeepSeek-V3.2",
+  "url": "https://simonwillison.net/2025/Dec/1/deepseek-v32/#atom-everything",
+  "date": "2025-12-01 23:56:19",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://api-docs.deepseek.com/news/news251201\">DeepSeek-V3.2</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46108780\" title=\"Hacker News\">via</a>) Two new open weight (MIT licensed) models from DeepSeek today: <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V3.2\">DeepSeek-V3.2</a> and <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale\">DeepSeek-V3.2-Speciale</a>, both 690GB, 685B parameters. Here's the <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-V3.2/resolve/main/assets/paper.pdf\">PDF tech report</a>.</p>\n   <p>DeepSeek-V3.2 is DeepSeek's new flagship model, now running on <a href=\"https://chat.deepseek.com\">chat.deepseek.com</a>.</p>\n   <p>The difference between the two new models is best explained by this paragraph from the technical report:</p>\n   <blockquote>\n    <p>DeepSeek-V3.2 integrates reasoning, agent, and human alignment data distilled from specialists, undergoing thousands of steps of continued RL training to reach the final checkpoints. To investigate the potential of extended thinking, we also developed an experimental variant, DeepSeek-V3.2-Speciale. This model was trained exclusively on reasoning data with a reduced length penalty during RL. Additionally, we incorporated the dataset and reward method from DeepSeekMath-V2 (Shao et al., 2025) to enhance capabilities in mathematical proofs.</p>\n   </blockquote>\n   <p>I covered <a href=\"https://simonwillison.net/2025/Nov/27/deepseek-math-v2/\">DeepSeek-Math-V2 last week</a>. Like that model, DeepSeek-V3.2-Speciale also scores gold on the 2025 International Mathematical Olympiad so beloved of model training teams!</p>\n   <p>I tried both models on \"Generate an SVG of a pelican riding a bicycle\" using the chat feature of <a href=\"https://openrouter.ai/\">OpenRouter</a>. DeepSeek V3.2 produced this very short reasoning chain:</p>\n   <blockquote>\n    <p>Let's assume the following:</p>\n    <p>Wheel radius: 40\n     <br>\n     Distance between wheel centers: 180\n     <br>\n     Seat height: 60 (above the rear wheel center)\n     <br>\n     Handlebars: above the front wheel, extending back and up.</p>\n    <p>We'll set the origin at the center of the rear wheel.</p>\n    <p>We'll create the SVG with a viewBox that fits the entire drawing.</p>\n    <p>Let's start by setting up the SVG.</p>\n   </blockquote>\n   <p>Followed by this illustration:</p>\n   <p><img alt=\"Pleasing gradents for the sky and ground and sun. Neat three-circle clouds. A Pelican on a Bicycle title printed on the image. The pelican is cute but stlightly detached from the bicycle. The bicycle has a somewhat mangled brown frame.\" src=\"https://static.simonwillison.net/static/2025/deepseek-v32.png\"></p>\n   <p>Here's what I got from the Speciale model, which thought deeply about the geometry of bicycles and pelicans for <a href=\"https://gist.githubusercontent.com/simonw/3debaf0df67c2d99a36f41f21ffe534c/raw/fbbb60c6d5b6f02d539ade5105b990490a81a86d/svg.txt\">a very long time (at least 10 minutes)</a> before spitting out this result:</p>\n   <p><img alt=\"It's not great. The bicycle is distorted, the pelican is a white oval, an orange almost-oval beak, a little black eye and setched out straight line limbs leading to the pedal and handlebars.\" src=\"https://static.simonwillison.net/static/2025/deepseek-v32-speciale.png\"></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9172/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DeepSeek 发布了两个新的开放权重 685B 参数 模型：DeepSeek-V3.2 和 DeepSeek-V3.2-Speciale，后者 বিশেষভাবে 侧重于增强推理和数学能力。",
+  "oneSentenceSummary": "DeepSeek 发布了两个新的开放权重 685B 参数 模型：DeepSeek-V3.2 和 DeepSeek-V3.2-Speciale，后者 বিশেষভাবে 侧重于增强推理和数学能力。",
+  "summary": "本文宣布发布 DeepSeek-V3.2 和 DeepSeek-V3.2-Speciale，这是 DeepSeek 的两个新的开放权重（MIT 许可）大型语言模型（LLM），每个模型都具有 6850 亿个参数。DeepSeek-V3.2 被定位为他们新的旗舰模型，通过广泛的强化学习（RL）训练整合了推理、代理 和人类对齐数据。Speciale 变体是一个实验模型，专门在推理数据上进行训练，在强化学习（RL）期间减少了长度惩罚，并结合了来自 DeepSeekMath-V2 的数据集和奖励方法，以增强数学证明能力，在 2025 年国际数学奥林匹克竞赛中获得金牌。作者使用 OpenRouter 进行了一次简短的非正式测试，提示两个模型生成一个鹈鹕骑自行车的 SVG (可缩放矢量图形)。DeepSeek-V3.2 产生了一个简洁的推理链，其插图在视觉上很吸引人，但略有脱离感。而 Speciale 模型参与了一个漫长的几何推理过程，产生了不太令人满意和扭曲的视觉输出。本文提供了指向 Hugging Face 上模型及其技术报告的直接链接，提供了对这些新进展的快速概述。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek-V3.2 及其 “Speciale” 变体为通用和专门的推理引入了新的功能。",
+      "explanation": "DeepSeek-V3.2 是通用任务的旗舰模型，而 DeepSeek-V3.2-Speciale 是专门为增强推理和数学证明而设计的实验版本，表明了 LLM 开发的双重策略方法。"
+    },
+    {
+      "point": "DeepSeek-V3.2-Speciale 展示了专业的数学能力，取得了顶级的基准测试结果。",
+      "explanation": "通过结合 DeepSeekMath-V2 的数据集和奖励方法，Speciale 在数学证明方面表现出色，在 2025 年国际数学奥林匹克竞赛中获得金牌，突出了有针对性的模型训练效果。"
+    },
+    {
+      "point": "非正式测试表明，两种模型在创造性任务方面存在不同的性能特征。",
+      "explanation": "作者进行的 SVG 生成测试表明，DeepSeek-V3.2 能更快地生成更美观的结果。相比之下，Speciale 虽然进行了大量的几何推理，但效果不佳，这说明它们在实际应用中各有优劣。"
+    }
+  ],
+  "keyQuotes": [
+    "DeepSeek-V3.2 整合了从专家那里提取的推理、代理 和人类对齐数据，经过数千步持续的强化学习（RL）训练，达到了最终的检查点。",
+    "为了研究扩展思维的潜力，我们还开发了一个实验变体，DeepSeek-V3.2-Speciale。该模型专门在推理数据上进行训练，在强化学习（RL）期间减少了长度惩罚。",
+    "此外，我们还结合了来自 DeepSeekMath-V2（Shao et al.， 2025）的数据集和奖励方法，以增强数学证明能力。",
+    "与该模型一样，DeepSeek-V3.2-Speciale 也在模型训练团队高度关注的 2025 年国际数学奥林匹克竞赛中获得金牌！"
+  ],
+  "tags": [
+    "LLM",
+    "DeepSeek",
+    "开放权重模型",
+    "模型发布",
+    "推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 271,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764633379000,
+  "publishDateStr": "2025-12-01",
+  "publishDateTimeStr": "2025-12-01 23:56:19"
+}

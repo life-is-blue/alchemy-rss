@@ -1,0 +1,54 @@
+{
+  "id": "RAW_12d999",
+  "title": "GPT-5 又帮陶哲轩解决了一个难题",
+  "url": "https://www.qbitai.com/2025/09/328419.html",
+  "date": "2025-09-03 07:35:57",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">GPT-5又帮陶哲轩解决了一个难题！</p>\n  <p data-track=\"2\">消息来自陶本人最新动态，他衷心提醒大家：</p>\n  <p data-track=\"3\">AI能够大显身手的场景再+1——<strong>半自动化文献检索</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250903104144_0751803d5b88862330d2035c81bc45e4.png\" alt=\"GPT-5又帮陶哲轩解决了一个难题\" data-src=\"https://image.jido.dev/20250903104144_0751803d5b88862330d2035c81bc45e4.png\">\n  </div>\n  <p data-track=\"4\">简单来说，陶正在做的事情，其实就是用<strong>AI+数据库比对</strong>来帮忙解决数学里的难题。</p>\n  <p data-track=\"5\">结果AI不仅省时省力，成果也十分卓越，正如陶激动所言：</p>\n  <blockquote>\n   <p data-track=\"6\"><strong>这是Erdos问题/OEIS关联项目的首次概念验证成果。</strong></p>\n  </blockquote>\n  <p data-track=\"7\">具体咋回事儿，下面详细来看——</p>\n  <p data-track=\"9\">事情的起因还要追溯到一个关键人物——20世纪著名匈牙利数学家Paul Erdős。</p>\n  <p data-track=\"10\">此人一辈子合作了超过500位数学家，毕生发表了约1525篇数学论文，数量之多，至今无人能及。</p>\n  <p data-track=\"11\">相应地，他也给后人留下了一大堆至今未解的难题，它们被称为“Erdős问题”。</p>\n  <p data-track=\"12\">其中就有一大类问题很“刁钻”——<strong>它们不是问“算出结果是多少”，而是问“这个结果是不是有理数</strong><em>（能写成分数的那种）</em>”。</p>\n  <p data-track=\"13\">一般而言，准确回答这类问题往往面临两个主要困难：</p>\n  <ul>\n   <li data-track=\"14\">第一重困难：公式写得简单，但算起来超级复杂，手工几乎算不动。</li>\n   <li data-track=\"15\">第二重困难：就算你能算很多位小数，也不等于你能直接证明它是有理数还是无理数。</li>\n  </ul>\n  <p data-track=\"16\">所以，这类问题往往悬而未决几十年。</p>\n  <p data-track=\"17\">而现在，陶哲轩在OpenAI最新模型GPT-5的帮助下，完成了这样一件事：</p>\n  <p data-track=\"18\">它不是直接“证明”某个数是不是无理数，而是把这个数列算到很高精度的小数，相当于给出了一个“数字指纹”。</p>\n  <p data-track=\"19\">然后把这个小数串放进OEIS<em>（一个收录全球数列的数据库）</em>&nbsp;搜一搜，结果发现能和人类之前整理过的相关数列匹配上。</p>\n  <p data-track=\"20\">这说明这个问题其实早在某篇论文里就被解决了，只是没人把这件事和Erdős问题库对应起来。</p>\n  <p data-track=\"21\">换句话说，AI在这里起到了“桥梁”的作用——将不同数据库和知识源连接起来，而这恰好是人工手动操作最容易遗漏的环节。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250903104144_f9ec64778314316758ffd5ca092a8dce.jpeg\" alt=\"GPT-5又帮陶哲轩解决了一个难题\" data-src=\"https://image.jido.dev/20250903104144_f9ec64778314316758ffd5ca092a8dce.jpeg\">\n  </div>\n  <p data-track=\"22\">具体而言，陶哲轩要求GPT-5把一系列Erdős问题中的无理性相关级数展开成高精度小数。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250903104144_3380612129ee09b3b8f31d53b91c7380.png\" alt=\"GPT-5又帮陶哲轩解决了一个难题\" data-src=\"https://image.jido.dev/20250903104144_3380612129ee09b3b8f31d53b91c7380.png\">\n  </div>\n  <p data-track=\"23\">然后将得到的这些小数输入到OEIS搜索栏中，OEIS会尝试匹配数据库中的数列。</p>\n  <p data-track=\"24\">结果发现，<strong>Erdős问题#259和OEIS A371134对应上了。</strong></p>\n  <p data-track=\"25\">在OEIS的参考文献里，陶找到了Yong-Gao Chen和Imre Z. Ruzsa这两位作者的一篇论文，这篇论文事实上已经给出了该问题的完整解决方案，只是Erdosproblems网站<em>（收录了近1000道Erdős问题）</em>并不知道。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250903104144_0dec1238f6273b15d756dc59c22583e2.png\" alt=\"GPT-5又帮陶哲轩解决了一个难题\" data-src=\"https://image.jido.dev/20250903104144_0dec1238f6273b15d756dc59c22583e2.png\">\n  </div>\n  <p data-track=\"26\">最终，陶把这一发现提交到Erdosproblems/OEIS关联项目仓库，并将Erdős问题#259的状态更新至“已解决”。</p>\n  <p data-track=\"27\">一言以蔽之，AI在上面这种半自动化文献检索应用中能够发挥自己独特的价值：</p>\n  <blockquote>\n   <p data-track=\"28\">AI本身算的不一定完全可靠，但它可以作为“定位器”，帮助找到那些更权威、更可靠的人类研究成果，这样就能兼顾效率和可信度。</p>\n  </blockquote>\n  <p data-track=\"30\">最后补充一下陶哲轩这个研究项目的背景。</p>\n  <p data-track=\"31\">在8月31日的一篇博客中，陶对<strong>Erdosproblems/OEIS关联项目</strong>的发起过程及背后原因进行了详细介绍。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250903104145_d10698b635eb3e5738c837554850f78f.png\" alt=\"GPT-5又帮陶哲轩解决了一个难题\" data-src=\"https://image.jido.dev/20250903104145_d10698b635eb3e5738c837554850f78f.png\">\n  </div>\n  <p data-track=\"32\">这个项目由陶本人和英国数学家Thomas Bloom提议发起，目前在GitHub社区开源。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"GPT-5又帮陶哲轩解决了一个难题\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250903104144_5fc4e0fe4098fec61a459797632ad209.png\" data-src=\"https://image.jido.dev/20250903104144_5fc4e0fe4098fec61a459797632ad209.png\">\n  </div>\n  <p data-track=\"33\">既然是关联项目，先说说关联双方分别是什么：</p>\n  <ul>\n   <li data-track=\"34\"><strong>Erdosproblems网站</strong>：这是Thomas Bloom搭建的网站，收录了近1000道由著名数学家Erdős提出或传播的问题，并记录了每道题目前是“未解”、“已解”还是“部分解决”。</li>\n   <li data-track=\"35\"><strong>OEIS（整数数列在线百科全书）</strong>：这是一个更老、更庞大的数据库，里面有几十万条整数数列，每条数列都可能对应着某个数学问题、猜想或者研究成果。数学家们常用它来寻找“这个奇怪的数列到底是不是别人已经研究过的东西”。</li>\n  </ul>\n  <p data-track=\"36\">之所以要将二者关联起来，主要是研究人员现在面临两个问题：</p>\n  <ul>\n   <li data-track=\"37\">信息分散：有的数列已经在OEIS出现过，但Erdosproblems网站上没有注明；</li>\n   <li data-track=\"38\">有遗漏：还有很多Erdős问题相关的数列，OEIS里根本没收录。</li>\n  </ul>\n  <p data-track=\"39\">这就导致研究者可能错过已有的成果，或者重复劳动。</p>\n  <p data-track=\"40\">而Erdosproblems/OEIS关联项目很好地解决了上述问题，其方案大致如下：</p>\n  <p data-track=\"41\">第一步：所有人都可以尝试将Erdős问题里对应的整数数列算出来；</p>\n  <p data-track=\"42\">第二步：然后和OEIS对比，看看是不是已经存在，或者需要新加入；</p>\n  <p data-track=\"43\">第三步：最后把结果记录到一个GitHub表格里，标记清楚“这个问题和哪些OEIS数列对应”。</p>\n  <p data-track=\"44\">通过以上众包方式，关于Erdős难题的数学研究就能有序持续推进了。</p>\n  <p data-track=\"45\">开源地址：\n   <br>\n   https://github.com/teorth/erdosproblems</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "GPT-5 协助陶哲轩通过半自动化文献检索，将 Erdős 问题中的数列与 OEIS 数据库匹配，成功发现并解决了此前未关联的问题。",
+  "oneSentenceSummary": "GPT-5 协助陶哲轩通过半自动化文献检索，将 Erdős 问题中的数列与 OEIS 数据库匹配，成功发现并解决了此前未关联的问题。",
+  "summary": "本文报道了数学家陶哲轩利用 GPT-5 解决一个“Erdős 问题”的最新进展。陶哲轩通过 AI 将 Erdős 问题中的数学级数展开成高精度小数，生成“数字指纹”，随后在 OEIS（整数数列在线百科全书）数据库中进行检索匹配。这种半自动化文献检索方法成功地将 Erdős 问题#259 与 OEIS A371134 关联起来，发现了一篇此前未被 Erdosproblems 网站收录的已解决论文，从而更新了该问题的状态。文章强调，AI 在此过程中扮演了“桥梁”和“定位器”的角色，有效连接了分散的知识源，提高了文献检索效率和可信度，而非直接进行数学证明。这一成果是 Erdosproblems/OEIS 关联项目的首次概念验证，该项目由陶哲轩和 Thomas Bloom 发起，旨在通过众包方式解决 Erdős 问题信息分散和遗漏的问题，促进数学研究的有序推进。",
+  "mainPoints": [
+    {
+      "point": "AI 作为“定位器”而非直接证明者，有效连接分散知识源。",
+      "explanation": "GPT-5 通过高精度小数展开，将数学级数与 OEIS 数据库匹配，发现已解决问题，弥补了人工检索的遗漏，提升了科研效率与可信度。"
+    },
+    {
+      "point": "半自动化文献检索是 AI 在科研领域的新兴应用场景。",
+      "explanation": "陶哲轩的实践验证了 AI 在处理复杂数学问题时，能有效辅助研究人员进行信息匹配和知识关联，减少重复劳动，加速问题解决。"
+    },
+    {
+      "point": "Erdosproblems/OEIS 关联项目通过众包促进数学难题解决。",
+      "explanation": "该开源项目旨在解决 Erdős 问题和 OEIS 之间信息分散的问题，通过社区协作将数列与现有成果对应，形成更完整的知识体系。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 能够大显身手的场景再+1------**半自动化文献检索**。",
+    "**这是 Erdos 问题/OEIS 关联项目的首次概念验证成果。**",
+    "AI 在这里起到了\"桥梁\"的作用------将不同数据库和知识源连接起来，而这恰好是人工手动操作最容易遗漏的环节。",
+    "AI 本身算的不一定完全可靠，但它可以作为\"定位器\"，帮助找到那些更权威、更可靠的人类研究成果，这样就能兼顾效率和可信度。"
+  ],
+  "tags": [
+    "AI应用",
+    "数学研究",
+    "文献检索",
+    "大语言模型",
+    "GPT-5"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1739,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756884957000,
+  "publishDateStr": "2025-09-03",
+  "publishDateTimeStr": "2025-09-03 07:35:57"
+}

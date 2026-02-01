@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a83da4c1",
+  "title": "GitHub 通过 AgentHQ 扩展 Copilot 生态系统",
+  "url": "https://www.infoq.com/news/2025/11/github-copilot-agenthq/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-08 10:30:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub announced during its annual <a href=\"https://github.com/events/universe/recap\">GitHub Universe 2025</a> event a new addition to its platform called <a href=\"https://github.blog/news-insights/company-news/welcome-home-agents/\">AgentHQ</a>, designed to let developers create and deploy AI agents that work directly within GitHub’s development environment. The feature expands the company’s ongoing efforts to integrate AI into the software development lifecycle, building on previous Copilot releases.</p>\n   <p>Agents are designed as customizable, task-specific AI assistants that can handle various aspects of the coding workflow, from issue triage and documentation to testing and deployment. Unlike Copilot, which focuses primarily on in-editor code completion and generation, GitHub AgentHQ operates at a broader level, they can monitor repository events, respond to pull requests, or perform code reviews using contextual information available in a project.</p>\n   <p>Developers can build their own agents using GitHub’s API and runtime environment. Each agent can access repository data, interact with pull requests, and trigger actions through defined workflows. This modular architecture allows teams to experiment with automation while maintaining full control over permissions and security. According to GitHub, these agents run in isolated environments and respect the repository’s access scopes, ensuring that sensitive data stays protected.</p>\n   <p>AgentHQ also integrates with <a href=\"https://github.com/features/actions\">GitHub Actions</a>, enabling automated pipelines that combine traditional CI/CD tasks with AI-driven reasoning. For instance, an agent could review code changes, suggest improvements, and trigger a test suite if specific conditions are met. Another agent might handle repetitive maintenance tasks, such as dependency updates or security scanning.</p>\n   <p>GitHub says the new feature is part of its broader plan to make development more conversational and context-aware. With AgentHQ, developers can communicate with their repositories using natural language, ask questions about implementation details, or request actions without leaving the GitHub interface. The agents can reference issues, commits, or documentation and act on that context directly.</p>\n   <p>The introduction of AgentHQ positions GitHub alongside other major platforms exploring agentic development, such as <a href=\"https://www.infoq.com/news/2025/10/anthropic-claude-skills/\">Anthropic’s Claude Skills</a> and <a href=\"https://www.infoq.com/news/2025/11/cursor-composer-multiagent/\">Cursor’s multi-agent interface</a>. While those systems focus on extending model capabilities, GitHub’s approach brings automation directly into its existing developer ecosystem, where millions of repositories already operate.</p>\n   <p>Early community reactions to the announcement were mixed but generally curious about GitHub’s move toward agent-based workflows. On <a href=\"https://x.com/github/status/1983205334756839605\">X</a>, some developers expressed excitement about the potential for AgentHQ to automate repetitive coding and review tasks, while others raised concerns about control and transparency in multi-agent environments.\n    <br>\n    <br>\n    Software developer <a href=\"https://x.com/zhangjintao9020/status/1983344068496388561\">Jintao Zhang</a>&nbsp;commented:</p>\n   <blockquote>\n    <p>Will AgentHQ become the next AWS Marketplace?</p>\n   </blockquote>\n   <p>Meanwhile engineer <a href=\"https://x.com/delaanthonio/status/1983365266764640375\">Anthonio Dela</a> shared:</p>\n   <blockquote>\n    <p>Absolutely exciting news! This will make coding agents so much more accessible.</p>\n   </blockquote>\n   <p>Alongside the launch of AgentHQ, GitHub introduced new features for <a href=\"https://github.com/features/copilot?utm_source=web-k2k-copilot-features-lp&amp;utm_medium=web&amp;utm_campaign=universe25\">Copilot Workflows</a>, enabling developers to assign tasks to Copilot directly from tools such as Slack, Microsoft Teams, and Linear, as well as an <a href=\"https://github.blog/changelog/2025-10-28-new-public-preview-features-in-copilot-code-review-ai-reviews-that-see-the-full-picture/\">agentic code</a> review feature powered by CodeQL. <a href=\"https://github.blog/changelog/2025-10-28-github-copilot-in-visual-studio-code-gets-upgraded/?utm_source=web-k2k-vscode-general-cta&amp;utm_medium=web&amp;utm_campaign=universe25\">VS Code Plan Mode</a> was made generally available, allowing developers to structure their coding plans and integrate custom agents defined in an <a href=\"https://code.visualstudio.com/docs/copilot/customization/custom-instructions#_use-an-agentsmd-file-experimental?utm_source=blog-day1-recap-agents-md-cta&amp;utm_medium=blog&amp;utm_campaign=universe25\">AGENTS.md</a> file. On the enterprise side, GitHub unveiled <a href=\"https://github.blog/changelog/2025-10-28-github-code-quality-in-public-preview/\">Code Quality</a>, a new dashboard offering organization-wide visibility into maintainability, reliability, and test coverage, along with APIs to measure Copilot usage and manage AI agents at scale</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Expands Copilot Ecosystem with AgentHQ\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/github-copilot-agenthq/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762597800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 推出 AgentHQ，通过一个平台扩展 Copilot，开发者可以在 GitHub 环境中构建和部署可定制的 AI 智能代理，以自动化各种开发任务。",
+  "oneSentenceSummary": "GitHub 推出 AgentHQ，通过一个平台扩展 Copilot，开发者可以在 GitHub 环境中构建和部署可定制的 AI 智能代理，以自动化各种开发任务。",
+  "summary": "GitHub 在 GitHub Universe 2025 大会上宣布推出 AgentHQ，这是一个新的平台功能，旨在使开发者能够直接在 GitHub 生态系统中创建和部署特定于任务的 AI 智能代理。这些智能代理超越了 Copilot 在编辑器中的能力，在更广泛的层面上运行，以监控代码仓库事件、管理拉取请求和执行上下文代码审查。开发者可以利用 GitHub 的 API 和运行时来构建访问代码仓库数据和触发操作的智能代理，并通过隔离的环境和访问范围来确保安全性。AgentHQ 与 GitHub Actions 无缝集成，支持通过 AI 驱动的推理增强的自动化 CI/CD 管道，用于代码审查和依赖项更新等任务。此举旨在培养更具交互性和上下文感知性的开发体验，允许与代码仓库进行自然语言交互。GitHub 的战略使其在代理式开发领域与其他平台齐头并进。其独特之处在于将自动化功能直接整合到现有的开发者生态系统中。该公告还包括新的 Copilot Workflows 功能、由 CodeQL 提供支持的代理式代码审查以及面向企业的代码质量仪表板。",
+  "mainPoints": [
+    {
+      "point": "AgentHQ 通过启用可定制的 AI 智能代理来执行广泛的开发任务，从而扩展了 GitHub 的 AI 集成。",
+      "explanation": "与 Copilot 的代码完成功能不同，AgentHQ 允许开发者创建监控代码仓库、管理拉取请求和进行上下文代码审查的智能代理，从而自动化更广泛的开发工作流程。"
+    },
+    {
+      "point": "智能代理与 GitHub 的现有生态系统（包括 API 和 GitHub Actions）集成，以实现增强的自动化。",
+      "explanation": "这种集成允许智能代理访问代码仓库数据、触发工作流程，并将 AI 驱动的推理与传统的 CI/CD 任务相结合，从而简化开发管道。"
+    },
+    {
+      "point": "GitHub 的方法侧重于将代理式开发直接嵌入到其已建立的开发者平台中。",
+      "explanation": "GitHub 凭借其庞大的用户群和代码仓库，在众多代理平台中脱颖而出。这一策略使得 AI 自动化更加易于使用，并能更好地融入开发者日常工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "智能代理被设计为可定制的、特定于任务的 AI 助手，可以处理编码工作流程的各个方面，从问题分类和文档编制到测试和部署。",
+    "借助 AgentHQ，开发者可以使用自然语言与他们的代码仓库进行通信，询问有关实施细节的问题，或请求操作，而无需离开 GitHub 界面。",
+    "GitHub 的方法将自动化直接引入其现有的开发者生态系统中，数百万个代码仓库已在该生态系统中运行和维护。"
+  ],
+  "tags": [
+    "AI 智能代理",
+    "GitHub",
+    "软件开发",
+    "自动化",
+    "Copilot"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 508,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762597800000,
+  "publishDateStr": "2025-11-08",
+  "publishDateTimeStr": "2025-11-08 10:30:00"
+}

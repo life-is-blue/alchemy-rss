@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d8bd43",
+  "title": "Android Studio Narwhal：Gemini AI 功能再升级",
+  "url": "https://www.infoq.com/news/2025/09/android-studio-narwahl-gemini/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-04 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The latest <a href=\"https://android-developers.googleblog.com/2025/09/android-studio-narwhal-3-smarter-ai-backup-restore-compose-preview.html\">Android Studio Narwhal 3 Feature Drop</a> introduces enhancements aimed at boosting developer productivity, including support for resizable Compose previews, new app Backup &amp; Restore tools, and expanded Gemini capabilities such as automatic code generation from UI screenshots.</p>\n   <p>To help developers customize Gemini's behavior on a per-project basis, Android Studio now supports <code>AGENTS.md</code> Markdown files where teams can define project-specific context, including instructions, coding style rules, and other guidance. Each directory can have its own <code>AGENTS.md</code> file for more granular control, and the shared files make it easy for teams to align on the same context.</p>\n   <p>Two other new features are Image Attachment and the @File Context, which makes it easier to include images or entire files in queries. For example, developers can attach images for a UI mock-up and ask Gemini to generate the Compose code that implements it, ask it to help understand the UI structure and data flow from a screenshot, or suggest a UI fix or improvement based on a circled area in a screenshot. As Google product manager Paris Hsu explained, early adopters of image attachment <a href=\"https://android-developers.googleblog.com/2025/09/entri-cut-ui-development-time-gemini-android-studio.html\">reduced the time required to implement their user interface by 40% </a>.</p>\n   <blockquote>\n    <p>By uploading screenshots of Figma designs, Gemini produced the UI structures they needed to build entire screens in minutes. Gemini played a key role in revamping the platform’s Sign-Up flow, for example [...] Over time, this approach became a standard part of their prototyping process, with the team reporting 40% reduction in average UI build time per screen.</p>\n   </blockquote>\n   <p>On the other hand, attaching a file to a prompt helps extend the context so Gemini can provide more accurate and relevant answers. To make this easier, Android Studio now displays a list of candidate files for inclusion whenever you prefix a word with the <code>@</code> symbol.</p>\n   <p>Still on the AI integration front, the latest Android Studio feature drop adds support for the MCP protocol, enhancing interoperability with external tools. José Alcérreca, developer relations at Google, <a href=\"https://www.youtube.com/watch?v=B-wzYo7pXaA&amp;t=39s\">demostrated how Gemini can fetch a list of issues</a> assigned to you using GitHub's MCP server and even have it suggest an implementation. assigned to you from GitHub’s MCP server and even suggest implementations. He stressed that GitHub is just one example within a growing ecosystem of tools, but advised disabling MCP support if you are not using it, since it may unnecessarily inflate Gemini’s context.</p>\n   <p>Several other new features aim to simplify app optimization, improve project organization, and ensure compliance. These include support for app backup and restore, automatic inspection of Proguard rules to flag overly broad ones, and a better developer experience for large projects. Notably, Android Studio now makes it much easier to test an app’s backup and restore functionality, which is critical to ensuring a smooth transfer experience for users moving to a new device.</p>\n   <p>As a final note, it is worth mentioning the new resizable compose preview, which makes it much easier and faster to get feedback on how well an app adapts to different screen sizes.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Android Studio Narwhal Extends Gemini AI Capabilities\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/android-studio-narwahl-gemini/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1757019600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Android Studio Narwhal 通过 Gemini AI 增强开发者在 UI 代码、上下文和工具集成方面的效率。",
+  "oneSentenceSummary": "Android Studio Narwhal 通过 Gemini AI 增强开发者在 UI 代码、上下文和工具集成方面的效率。",
+  "summary": "最新的 Android Studio Narwhal 3 功能更新引入了显著增强，旨在通过高级 Gemini AI 集成和全新开发工具，提高开发者生产力。核心创新在于引入 `AGENTS.md` Markdown 文件，它允许开发团队定义项目特定的上下文，包括详细指令、编码风格规则等。此功能支持根据项目需求定制更精细、更一致的 AI 行为，从而有效促进团队协作。一个主要亮点是图像附件功能，使开发者能够直接从 UI 屏幕截图或模型生成 Compose UI 代码；早期采用者报告称，通过在几分钟内将 Figma 设计转换为功能性 UI 结构，UI 开发时间减少了 40%，效果显著。此外，`@File Context` 功能简化了在 Gemini 查询中包含整个文件的过程，通过提供扩展的上下文理解，从而产生更准确、更具针对性的 AI 响应。除了 AI 功能之外，Narwhal 还增加了对 MCP 协议的支持，从而增强了与 GitHub 等外部工具的兼容性，以便获取问题并提出实现建议。其他值得注意的改进包括可调整大小的 Compose 预览，它简化了在各种屏幕尺寸上测试应用程序的适配性，以及强大的应用程序备份和恢复工具，以确保用户在迁移到新设备时能够平稳过渡。这些功能共同旨在简化 Android 开发工作流程。",
+  "mainPoints": [
+    {
+      "point": "Android Studio 集成 Gemini AI，可直接从屏幕截图生成 UI 代码，大幅缩短开发周期！",
+      "explanation": "图像附件功能允许开发者上传 UI 模型，Gemini 生成相应的 Compose 代码，从而使 UI 构建时间最多减少 40%。"
+    },
+    {
+      "point": "通过 AGENTS.md 文件定义项目编码规范，并通过文件附件提供详细的上下文信息，Gemini AI 能够更准确地理解开发者意图，提供更具相关性的建议。",
+      "explanation": "AGENTS.md 文件使团队能够定义编码风格和指令，而 @File Context 允许包含整个文件，从而确保 Gemini 为开发者提供更量身定制和准确的帮助。"
+    },
+    {
+      "point": "Android Studio Narwhal 通过核心 AI 功能之外的新工具改进了互操作性和开发者体验。",
+      "explanation": "对外部工具的 MCP 协议支持、可调整大小的 Compose 预览以及增强的应用程序备份/恢复工具等新功能有助于形成更全面、更高效的开发环境。"
+    }
+  ],
+  "keyQuotes": [
+    "通过上传 Figma 设计的屏幕截图，Gemini 可以在几分钟内生成构建整个屏幕所需的 UI 结构。",
+    "随着时间的推移，这种方法已成为他们原型设计过程的标准部分，该团队报告说，每个屏幕的平均 UI 构建时间减少了 40%。",
+    "他特别指出，GitHub 只是这个蓬勃发展的工具生态系统中的冰山一角。同时，他也建议，如果当前项目未使用 MCP 支持，应及时禁用，以避免不必要地增加 Gemini 的处理负担。"
+  ],
+  "tags": [
+    "人工智能开发",
+    "Android Studio",
+    "Gemini AI",
+    "代码生成",
+    "开发者生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 500,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1757019600000,
+  "publishDateStr": "2025-09-04",
+  "publishDateTimeStr": "2025-09-04 21:00:00"
+}

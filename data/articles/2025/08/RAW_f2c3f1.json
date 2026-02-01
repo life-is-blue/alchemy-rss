@@ -1,0 +1,55 @@
+{
+  "id": "RAW_f2c3f1",
+  "title": "售价 2 万 5！英伟达推出机器人\"最强大脑\"：AI 算力飙升 750%配 128GB 大内存，宇树已经用上了",
+  "url": "https://www.qbitai.com/2025/08/325709.html",
+  "date": "2025-08-25 23:20:20",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"40\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">英伟达直接把服务器级别的算力塞进了机器人体内。</p>\n  <p data-track=\"3\">全新的机器人计算平台<strong>Jetson Thor</strong>正式发售，基于最新的Blackwell GPU架构，AI算力直接飙升到2070 TFLOPS，比上一代Jetson Orin提高至整整<strong>7.5倍</strong>，同时能效提高至<strong>3.5倍</strong>。</p>\n  <p data-track=\"4\"><strong>128GB的超大内存</strong>配置，在边缘计算设备里是前所未有。</p>\n  <p data-track=\"5\">在宣传片中，黄仁勋把他当成送给所有机器人的礼物：</p>\n  <p data-track=\"6\">黄仁勋表示：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"7\">Jetson Thor助力全球百万开发者构建可与物理世界交互、甚至改变物理世界的机器人系统。具备无与伦比的性能与能效，还能够在边缘设备上同时运行多个AI模型。</p>\n   <p data-track=\"8\">作为一款卓越的超级计算机，Jetson Thor正在推动物理AI与通用机器人时代真正到来。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"售价2万5！英伟达推出机器人“最强大脑”：AI算力飙升750%配128GB大内存，宇树已经用上了\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250826013749_303924332622d80683974146ff7d4a91.png\" data-src=\"https://image.jido.dev/20250826013749_303924332622d80683974146ff7d4a91.png\">\n  </div>\n  <p data-track=\"9\">Jetson Thor基于Jetson软件栈优化，支持所有流行的生成式AI框架和AI推理模型，包括主流语言模型Qwen、DeepSeek以及视觉语言动作模型到和视觉语言模型等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"售价2万5！英伟达推出机器人“最强大脑”：AI算力飙升750%配128GB大内存，宇树已经用上了\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250826013748_f6bd2a6c22e2801a36edae7d21dab544.png\" data-src=\"https://image.jido.dev/20250826013748_f6bd2a6c22e2801a36edae7d21dab544.png\">\n  </div>\n  <p data-track=\"10\">Jetson AGX THOR开发者套件美国售价3499美元<em>（约25000人民币，但中国售价尚未公布）</em>。</p>\n  <p data-track=\"11\">T5000模组也已发售，购买1000片以上单价2999美元。</p>\n  <p data-track=\"12\">其中T5000模组是完整版，T4000模组则是为那些想从Orin升级的用户准备的精简版，功耗也从130W降到了75W。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"售价2万5！英伟达推出机器人“最强大脑”：AI算力飙升750%配128GB大内存，宇树已经用上了\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250826013753_084c7731cf62335567b66210aa23f26a.png\" data-src=\"https://image.jido.dev/20250826013753_084c7731cf62335567b66210aa23f26a.png\">\n  </div>\n  <p data-track=\"14\">Thor的强悍不仅体现在AI算力上，人形机器人需要大量实时控制计算，需要CPU与AI算力同样重要，存储与带宽方面也都得到了升级。</p>\n  <p data-track=\"15\">具体特性如下：</p>\n  <ul>\n   <li data-track=\"16\"><strong>GPU：</strong>Blackwell架构，最高2560个CUDA核/9个第五代Tensor Core，并支持MIG技术（多实例 GPU）将GPU资源按多任务隔离与并行调度，适配并行多代理/多工作流场景。</li>\n   <li data-track=\"17\"><strong>CPU：</strong>14核Arm Neoverse V3AE，面向实时控制与任务管理的确定性执行与更高吞吐，CPU性能相较前代显著提升。</li>\n   <li data-track=\"18\"><strong>存储与带宽：</strong>128GB 256-bit LPDDR5X，273GB/s显存带宽，为大型Transformer推理与高并发视频编解码提供保障。</li>\n   <li data-track=\"19\"><strong>功耗：</strong>40–130W，支持从移动平台到固定式机器人多样热/功耗配置，开发套件集成导热板与风扇便于热设计评估。</li>\n   <li data-track=\"20\"><strong>视频编解码：</strong>多路4K/8K编解码能力显著增强，有利于多摄并发与长时视频代理推理。</li>\n   <li data-track=\"21\"><strong>网络与传感：</strong>最多4×25GbE，搭配高速摄像头卸载引擎与Holoscan Sensor Bridge，将相机、雷达、激光雷达等数据以极低时延直送 GPU 内存，提升多传感器融合与高频闭环控制的稳定性。</li>\n   <li data-track=\"22\"><strong>I/O：</strong>开发套件与量产模组提供 QSFP28、RJ45、USB 3.x、PCIe Gen5等接口，适配机器人传感/执行器与加速外设扩展</li>\n  </ul>\n  <p data-track=\"23\">在软件优化上，英伟达也下了功夫。</p>\n  <p data-track=\"24\">Jetson Thor原生支持NVIDIA Isaac（仿真/开发）、Isaac GR00T（人形机器人基础模型）、Metropolis（视觉 AI）、Holoscan（传感器工作流），支持从云到边缘统一开发/部署路径。</p>\n  <p data-track=\"25\">通过<strong>FP4量化和推测解码</strong>（speculative decoding）技术，在某些模型上能再获得2倍的性能提升。</p>\n  <p data-track=\"26\">数据显示，Thor能在200毫秒内给出第一个token响应，每秒能生成超过25个token，这个速度已经能支撑实时人机对话。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"售价2万5！英伟达推出机器人“最强大脑”：AI算力飙升750%配128GB大内存，宇树已经用上了\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250826013748_b641681c03039f5964ffade7c5c1ca64.png\" data-src=\"https://image.jido.dev/20250826013748_b641681c03039f5964ffade7c5c1ca64.png\">\n  </div>\n  <p data-track=\"27\">研华科技、Aetina、ConnectTech、米文动力、天准科技等正在打造具备量产条件的Jetson Thor系统，拥有灵活的输入输出接口、定制化配置，并能够提供多种形态规格。</p>\n  <p data-track=\"28\">亚德诺半导体、e-con Systems、英飞凌、Leopard Imaging、RealSense、森云智能等传感器与执行器企业，正将摄像头、雷达、激光雷达等设备的传感器数据，以超低延迟直接传输至Jetson Thor的 GPU内存中。</p>\n  <p data-track=\"30\">第一批采用Thor的公司里，中国企业占了很大比例。<strong>联影医疗、万集科技、优必选、银河通用、宇树科技、众擎机器人和智元机器人</strong>等都已经开始集成这个新平台。</p>\n  <p data-track=\"31\"><strong>宇树科技创始人王兴兴</strong>表示：“Jetson Thor带来了计算能力的巨大飞跃，机器人更强的敏捷性、更快的决策制定以及更高的自主水平，这对于机器人在现实世界中实现导航与交互至关重要。”</p>\n  <p data-track=\"32\"><strong>银河通用CTO王鹤</strong>则透露，他们的G1 Premium机器人在采用Thor后，运动速度和动作流畅性已经有了显著提升。</p>\n  <p data-track=\"33\">此外<strong>波士顿动力</strong>正将Jetson Thor集成到其人形机器人Atlas，让Atlas得以在设备端搭载此前仅服务器才具备的计算能力。</p>\n  <p data-track=\"34\"><strong>Agility Robotics</strong>计划将Jetson Thor作为第六代Digit计算核心，在仓库与制造环境中执行堆叠、装载及码垛等物流任务。</p>\n  <p data-track=\"35\">在演讲中，<strong>英伟达机器人与边缘AI副总裁Deepu Talla</strong>提出了这样的观点：要真正实现物理AI和机器人，需要三台计算机协同工作。</p>\n  <p data-track=\"36\">第一台是用来训练AI的DGX系统，第二台是用来在仿真环境中测试AI的Omniverse平台，第三台才是装在机器人身上的”大脑”，也就是今天发布的Jetson Thor。</p>\n  <p data-track=\"37\">他特别强调仿真测试这一步至关重要，因为仿真相比在真实物理环境中开发更快、更安全、更便宜。</p>\n  <p data-track=\"38\">而且这不是一次性的过程，即使机器人部署到现场后，这个训练-仿真-部署的循环还会持续进行，不断升级机器人的能力。</p>\n  <p data-track=\"39\">参考链接：\n   <br>\n   [1]https://blogs.nvidia.cn/blog/jetson-thor-physical-ai-edge/\n   <br>\n   [2]https://blogs.nvidia.cn/blog/nvidia-blackwell-powered-jetson-thor-now-available-accelerating-the-age-of-general-robotics/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "英伟达推出基于 Blackwell 架构的机器人计算平台 Jetson Thor，AI 算力飙升 7.5 倍并配备 128GB 内存，赋能通用机器人和物理 AI 发展。",
+  "oneSentenceSummary": "英伟达推出基于 Blackwell 架构的机器人计算平台 Jetson Thor，AI 算力飙升 7.5 倍并配备 128GB 内存，赋能通用机器人和物理 AI 发展。",
+  "summary": "文章深入介绍了英伟达最新发布的机器人计算平台 Jetson Thor，该平台被誉为机器人“最强大脑”。Jetson Thor 基于 Blackwell GPU 架构，其 AI 算力高达 2070 TFLOPS，相比上一代 Jetson Orin 提升了 7.5 倍，同时能效提升 3.5 倍。它配备了边缘计算设备中前所未有的 128GB 超大内存和 14 核 Arm Neoverse V3AE CPU，支持 MIG 技术，并增强了视频编解码、高速网络与传感器数据传输能力。该平台旨在将服务器级别的强大算力带到机器人和边缘设备，原生支持 NVIDIA Isaac、Isaac GR00T 等软件栈，并利用 FP4 量化和推测解码技术进一步提升性能，实现实时人机对话响应。Jetson Thor 的开发者套件售价 3499 美元，已获得联影医疗、宇树科技、波士顿动力、Agility Robotics 等多家国内外领先机器人公司的采纳，正推动物理 AI 与通用机器人时代的到来。英伟达强调，实现物理 AI 需要 DGX 系统训练、Omniverse 平台仿真和 Jetson Thor 部署三者协同，形成持续迭代的开发循环。",
+  "mainPoints": [
+    {
+      "point": "英伟达 Jetson Thor 平台以革命性 AI 算力与大内存，大幅提升边缘 AI 设备性能。",
+      "explanation": "Jetson Thor 集成了 Blackwell GPU 和 128GB LPDDR5X 内存，将服务器级 AI 算力下放到机器人和边缘设备，显著增强了处理复杂 AI 模型和多任务并行场景的能力。"
+    },
+    {
+      "point": "该平台为通用机器人和物理 AI 发展提供强大硬件基础和软件生态支持。",
+      "explanation": "Jetson Thor 不仅拥有卓越的 CPU 和 GPU 性能，还通过优化软件栈（如 Isaac GR00T）和高速传感器集成，赋能机器人更好地感知、理解和交互物理世界，加速机器人智能化进程。"
+    },
+    {
+      "point": "英伟达构建“训练-仿真-部署”完整生态，加速机器人开发与迭代。",
+      "explanation": "Jetson Thor 是英伟达机器人生态的关键一环，与 DGX 训练系统和 Omniverse 仿真平台协同，形成高效的开发闭环，降低开发成本、提升开发安全性，并实现机器人能力的持续升级。"
+    }
+  ],
+  "keyQuotes": [
+    "Jetson Thor 助力全球百万开发者构建可与物理世界交互、甚至改变物理世界的机器人系统。",
+    "具备无与伦比的性能与能效，还能够在边缘设备上同时运行多个 AI 模型。",
+    "作为一款卓越的超级计算机，Jetson Thor 正在推动物理 AI 与通用机器人时代真正到来。",
+    "Jetson Thor 带来了计算能力的巨大飞跃，机器人更强的敏捷性、更快的决策制定以及更高的自主水平，这对于机器人在现实世界中实现导航与交互至关重要。",
+    "要真正实现物理 AI 和机器人，需要三台计算机协同工作。第一台是用来训练 AI 的 DGX 系统，第二台是用来在仿真环境中测试 AI 的 Omniverse 平台，第三台才是装在机器人身上的'大脑'，也就是今天发布的 Jetson Thor。"
+  ],
+  "tags": [
+    "机器人",
+    "边缘AI",
+    "NVIDIA Jetson Thor",
+    "Blackwell架构",
+    "AI算力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 92,
+  "wordCount": 2062,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756164020000,
+  "publishDateStr": "2025-08-25",
+  "publishDateTimeStr": "2025-08-25 23:20:20"
+}

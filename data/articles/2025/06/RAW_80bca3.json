@@ -1,0 +1,59 @@
+{
+  "id": "RAW_80bca3",
+  "title": "刚刚，OpenAI 苏黎世办公室被 Meta 一锅端，三名 ViT 作者被挖走 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-26-7",
+  "date": "2025-06-26 05:06:47",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <section>\n    <blockquote>\n     <p>恭喜 Meta。</p>\n    </blockquote>\n   </section>\n  </section>\n  <p>刚刚，华尔街日报发布了一份独家报道，称去年底刚刚组建的 OpenAI 苏黎世办公室基本被 Meta 一锅端走了。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1778f4e6-4949-48b4-4e9d-91e6ee1d5400/public\" data-ratio=\"0.425531914893617\" data-s=\"300,640\" data-type=\"png\" data-w=\"940\" type=\"block\" data-imgfileid=\"503492235\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/05e2af4f-31b7-4a24-aaef-2ab4c7153f78/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>具体来说，Meta CEO 马克・扎克伯格挖走了 Lucas Beyer、Alexander Kolesnikov 和 Xiaohua Zhai（翟晓华）三位研究者。</p>\n  <p>这三人一直以来都是密切的合作伙伴，共同参与了 ViT 等重要研究。去年 12 月，他们离开了谷歌 DeepMind 的苏黎世办公室，加入了 OpenAI 并成立了 OpenAI 的苏黎世办公室。相关详情可参阅我们之前的报道《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650945782&amp;idx=1&amp;sn=338a9b871e0967cb8c4f5c5a60ff0ca0&amp;scene=21#wechat_redirect\" target=\"_blank\">刚刚，三名谷歌 Vision Transformer 作者官宣加入 OpenAI</a>》。</p>\n  <p>华尔街日报称：「OpenAI 的一位发言人证实，这三名研究人员已经离职。」</p>\n  <p>在最新模型发布失败后，扎克伯格一直在大力招募研究者，期望夺回该公司在 AI 领域的优势。也因此，Meta 最近可以说是敞开了钱包疯狂挖人。</p>\n  <p>据报道，马克・扎克伯格最近每天都在向 AI 领域最顶尖的人才发送电子邮件和 WhatsApp 消息。他亲自联系了数百名研究人员、科学家、基础设施工程师、产品明星和企业家，试图让他们加入他正在组建的超级智能实验室（Superintelligence lab）。当然，他的开价也相当诱人，甚至「向一些人提供了价值 1 亿美元的优厚待遇。」</p>\n  <p>一些收到消息的人非常惊讶，甚至不敢相信这是扎克伯格发来的。其中一人甚至认为这是个恶作剧，好几天都没有回复。</p>\n  <p>前段时间，Meta 还向 AI 初创公司 Scale 投资了 140 亿美元，并聘请其 CEO Alexandr Wang 领导其新组建的超级智能团队，参阅报道《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650973572&amp;idx=3&amp;sn=02355d90955965cee0633d67d4f43413&amp;scene=21#wechat_redirect\" target=\"_blank\">刚刚，Scale AI CEO Alexandr Wang 正式官宣：Meta 重金投资并挖走了我</a>》。</p>\n  <p>扎克伯格还曾试图招募 OpenAI 联合创始人 Ilya Sutskever（创立了 Safe Superintelligence Inc.）和 John Schulman，但都未能成功。</p>\n  <p>OpenAI CEO 山姆・奥特曼在周二的一次活动上表示，他并不担心扎克伯格的闪电战：「这就像是，扎克伯格正在做一些新的疯狂的事情。那又怎么样呢？」上周，奥特曼表示，他手下最优秀的人才并没有离开去 Meta。虽然这样说，但 OpenAI 其实也在进行反制，为其研究人员提供更多资金和发展空间。</p>\n  <p>下面就来简单了解下这篇新闻的三位主角：</p>\n  <p>Xiaohua Zhai（翟晓华）</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ee51044a-15b0-4e91-7567-65cfaf847b00/public\" alt=\"image.png\" data-ratio=\"0.5333333333333333\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492223\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/2f553a6d-c3eb-4761-9bfc-9c160e391b7d/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>个人主页：https://sites.google.com/view/xzhai</p>\n  <p>根据领英简历，翟晓华在 2025 年加入 OpenAI。此前，他是 Google DeepMind（苏黎世）的资深研究科学家和管理者。在那里，他领导着苏黎世的一个多模态研究团队，其研究重心是多模态数据、开放权重模型和包容性。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/731356d9-ee95-412c-3f58-d41bf59f3d00/public\" alt=\"image.png\" data-ratio=\"0.7342592592592593\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492224\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/741c47fc-fb41-4a74-856c-570b23b0bac4/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>他于 2014 年在北京大学取得了计算机科学博士学位。之后曾在谷歌从事了三年软件工程师的工作。2017 年 12 月，他加入 DeepMind 担任研究科学家，并一直在此工作了 7 年。离职后，加入 OpenAI。</p>\n  <p>目前，翟晓华在 Google Scholar 上的被引量已经达到了 8 万多，其中大部分被引量来自他们三人共同参与的 ViT 论文《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3cbb5e24-c0c6-4a9d-d89d-ea3f2a194700/public\" alt=\"image.png\" data-ratio=\"0.4361111111111111\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492225\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/fa19f7a9-29d5-4c80-a549-42882eca4846/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Lucas Beyer</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8eaa27cd-9615-4ffe-37a4-12b5b5618200/public\" alt=\"image.png\" data-ratio=\"0.4398148148148148\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492226\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/d19d7529-23c4-48b9-867f-4b0fdd713be8/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>个人主页：https://lucasb.eyer.be/</p>\n  <p>他在 2018 年于德国亚琛工业大学完成了自己的高等学业，期间曾在谷歌以实习生身份从事过研究工作，也在 Kindred.ai 担任过 AI 工程师，在德国亚琛工业大学担任过研究助理。</p>\n  <p>毕业后，他正式加入谷歌，先后在谷歌大脑与 DeepMind 从事研究工作。离开谷歌后，他于 2024 年加入 OpenAI。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/271ab8f1-fd12-4822-734b-45d025400500/public\" alt=\"image.png\" data-ratio=\"0.833805476864967\" data-type=\"png\" data-w=\"1059\" data-imgfileid=\"503492227\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/893964f1-46c4-4ae4-bc70-c7e5f101e41c/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>目前，Lucas Beyer 在 Google Scholar 上的被引量已经达到了 8 万多。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b28ddf16-47b6-44c4-441d-ce0c2ee95500/public\" alt=\"image.png\" data-ratio=\"0.45092592592592595\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492228\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/a32e682e-f380-4144-a96f-a89a61de0fc6/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Alexander Kolesnikov</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dffc236f-d523-4cb5-b552-f678dd05e200/public\" alt=\"image.png\" data-ratio=\"0.5009259259259259\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492229\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/e15e34d4-ed4b-4b98-b2b5-5f9ec83507f8/640.png\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>个人主页：https://kolesnikov.ch/</p>\n  <p>Alexander Kolesnikov 于 2012 年硕士毕业于莫斯科国立大学，之后在奥地利科学技术研究所取得了机器学习与计算机视觉博士学位。类似地，2018 年博士毕业后，他也先后在谷歌大脑和 DeepMind 从事研究工作。之后加入 OpenAI 担任技术人员，致力于多模态人工智能研究。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90297748-9b5c-4dff-2919-ef1b5d8d7100/public\" data-ratio=\"0.7485549132947977\" data-s=\"300,640\" data-type=\"png\" data-w=\"1038\" type=\"block\" data-imgfileid=\"503492234\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/103cb000-9849-4a84-a2be-f3bc191dfa84/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>目前，Alexander Kolesnikov 在 Google Scholar 上的被引量已经达到了 9 万多。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/75cdbc84-c279-4f17-8086-cecd74010c00/public\" alt=\"image.png\" data-ratio=\"0.4361111111111111\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492230\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/0e61f219-5ae1-498b-9562-9d0c69a71103/640.png\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>参考链接</sup></p>\n  <p><sup>https://www.wsj.com/tech/ai/meta-poaches-three-openai-researchers-eb55eea9</sup></p>\n  <p><sup>https://www.wsj.com/tech/ai/meta-ai-recruiting-mark-zuckerberg-5c231f75</sup></p>\n </body>\n</html>",
+  "aiSummary": "Meta 从 OpenAI 苏黎世办公室挖走三位 ViT 核心研究员，凸显 AI 顶尖人才竞争白热化。",
+  "oneSentenceSummary": "Meta 从 OpenAI 苏黎世办公室挖走三位 ViT 核心研究员，凸显 AI 顶尖人才竞争白热化。",
+  "summary": "这篇机器之心报道披露了 Meta 成功从 OpenAI 挖走了去年底刚刚加入并组建苏黎世办公室的三位核心研究科学家：Lucas Beyer、Alexander Kolesnikov 和翟晓华（Xiaohua Zhai）。这三位研究员在加入 OpenAI 前曾是谷歌 DeepMind 苏黎世的密切合作伙伴，他们是 Vision Transformer (ViT) 等计算机视觉领域重要研究的核心作者。报道援引华尔街日报消息，并指出 Meta CEO 马克·扎克伯格近期亲自参与顶尖 AI 人才的招募，甚至提供了高达 1 亿美元的优厚待遇。文章还提到了 Meta 近期对 Scale AI 的投资及挖角其 CEO，以及扎克伯格未能成功招募 Ilya Sutskever 和 John Schulman 的尝试，侧面反映了当前 AI 领域巨头间激烈的人才争夺战。OpenAI CEO 奥特曼对此事表示并不担心，但 OpenAI 也在采取反制措施留住人才。文章最后简要介绍了被挖走三位研究员的学术背景和主要研究贡献，特别是他们在多模态和计算机视觉领域的影响力。",
+  "mainPoints": [
+    {
+      "point": "Meta 成功从 OpenAI 挖角三位重量级 AI 研究员",
+      "explanation": "此事件标志着 AI 领域人才争夺战升级，Meta 通过高薪和 CEO 亲自招募手段增强自身 AI 研发实力。"
+    },
+    {
+      "point": "被挖角人才在 Vision Transformer 等多模态研究贡献突出",
+      "explanation": "Lucas Beyer、Alexander Kolesnikov 和翟晓华在 ViT 等计算机视觉和多模态领域是核心作者，他们的流失对 OpenAI 相关研究可能产生影响。"
+    },
+    {
+      "point": "Meta CEO 扎克伯格亲自下场高薪挖人",
+      "explanation": "扎克伯格直接参与招募顶尖 AI 人才，提供巨额报酬，显示 Meta 夺回 AI 领先地位的决心和投入力度。"
+    },
+    {
+      "point": "AI 巨头间顶尖人才流失与反制成为常态",
+      "explanation": "文章对比了 Meta 的挖角成功与失败案例，并提到 OpenAI 也在反制，反映了 AI 行业人才市场的竞争现状。"
+    }
+  ],
+  "keyQuotes": [
+    "刚刚，华尔街日报发布了一份独家报道，称去年底刚刚组建的 OpenAI 苏黎世办公室基本被 Meta 一锅端走了。",
+    "具体来说，Meta CEO 马克・扎克伯格挖走了 Lucas Beyer、Alexander Kolesnikov 和 Xiaohua Zhai（翟晓华）三位研究者。",
+    "OpenAI 的一位发言人证实，这三名研究人员已经离职。",
+    "据报道，马克・扎克伯格最近每天都在向 AI 领域最顶尖的人才发送电子邮件和 WhatsApp 消息。",
+    "奥特曼表示，他并不担心扎克伯格的闪电战：「这就像是，扎克伯格正在做一些新的疯狂的事情。那又怎么样呢？」"
+  ],
+  "tags": [
+    "AI人才竞争",
+    "Meta",
+    "OpenAI",
+    "AI研究员",
+    "行业动态"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1406,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750914407000,
+  "publishDateStr": "2025-06-26",
+  "publishDateTimeStr": "2025-06-26 05:06:47"
+}

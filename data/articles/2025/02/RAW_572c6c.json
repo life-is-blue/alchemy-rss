@@ -1,0 +1,53 @@
+{
+  "id": "RAW_572c6c",
+  "title": "AI 无法攻克的 235 道谜题！让 o1、Gemini 2.0 Flash Thinking 集体挂零",
+  "url": "https://www.jiqizhixin.com/articles/2025-02-17-4",
+  "date": "2025-02-17 05:28:54",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote data-author-name=\"\" data-content-utf8-length=\"28\" data-source-title=\"\" data-type=\"2\" data-url=\"\">\n   <section>\n    <section>\n     Scale AI 等提出的新基准再次暴露了大语言模型的弱点。\n    </section>\n   </section>\n  </blockquote>\n  <section>\n   又又又一个超高难度的推理基准测试向 AI 发出了挑战！\n  </section>\n  <section>\n   大语言模型的进展伴随着评估基准的不断进步，各种难度、覆盖不同学科的评估基准被用来测试这些模型的各项能力。\n  </section>\n  <section>\n   比如前几天，Center for AI Safety（AI 安全中心）与 Scale AI 联合打造了全新基准：Humanity's Last Exam，即「<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650954083&amp;idx=1&amp;sn=4e9f3daa01286e4808ef4201fb1fb07a&amp;scene=21#wechat_redirect\" target=\"_blank\">人类的最后考试</a>」，简称 HLE。这个新基准对主流的推理模型提出了巨大挑战，结果显示 DeepSeek-R1、o1 的准确度都低于 10%。\n  </section>\n  <section>\n   如今，一个比「人类的最后考试」更苛刻的基准了，它就是同样由 Scale AI、Center for AI Safety 以及 MIT 的研究者联合推出的&nbsp;<strong>ENIGMAEVAL</strong>。这是一个针对高难度问题的基准，其格式多种多样，涵盖了从解谜寻宝（puzzle hunts）抽取的文本和图像难题。\n  </section>\n  <section>\n   Puzzle hunts 是一种团队解谜竞赛，测试了参与者的逻辑推理、创造性思维、团队协作以及跨学科知识运用能力。它们通常包含一系列复杂的谜题，每个谜题的解答可能会涉及文字游戏、数学、密码学、图像分析、程序编写、文化常识等多个领域。&nbsp;\n  </section>\n  <section>\n   对于 ENIGMAEVAL 基准，研究者使用了原始的多模态问题和高质量的人工转录版本，从而评估大语言模型的端到端能力以及它们的独立推理能力。这种设计选择使得研究者能够区分模型的性能限制源于它们的推理能力，而不是解析复杂文档或处理不同模态的能力。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471443\" data-ratio=\"0.425\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8f420312-44b6-44c5-812a-b112cb91d800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/235bef25-2e61-4530-b9ad-06d7adb51774/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <section>\n     论文标题：ENIGMAEVAL: ABenchmark of LongMultimodal Reasoning Challenges\n    </section></li>\n   <li>\n    <section>\n     论文地址：https://arxiv.org/pdf/2502.08859\n    </section></li>\n   <li>\n    <section>\n     榜单地址：https://scale.com/leaderboard/enigma_eval\n    </section></li>\n  </ul>\n  <section>\n   在 ENIGMAEVAL 基准上，研究者对现有多模态和推理基准上表现优异的前沿语言模型进行了评估。结果显示，包括 OpenAI o1 在内等 SOTA 模型在普通谜题（Normal）上的准确率最高仅为 7.0% 左右，<strong>在困难谜题（Hard）上的准确率则降至 0%</strong>，远远不及经验丰富的人类解谜者。\n  </section>\n  <section>\n   <img alt=\"2025-02-17_101212.png\" data-imgfileid=\"503471444\" data-ratio=\"0.9111111111111111\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5e4a4d14-7db4-4c0e-f652-893600070d00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/7fa80d9f-e3e6-4ed8-a534-c1d628a33512/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   有趣的是，从转录的谜题到原始 PDF 版的谜题，模型性能可能会急剧下降，这表明了一些前沿模型仍然受限于 OCR 和解析能力。虽然研究者最开始假设原始谜题格式可能会造成额外的困难，但对模型成功案例的详细分析表明，它们已经针对复杂文档的处理进行了很好的优化。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471445\" data-ratio=\"0.4648148148148148\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/db3d88e5-b06c-4d64-3f9d-271de7b67400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/c449a22c-6418-499f-afd6-147485db241e/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   研究者表示，ENIGMAEVAL 将与「人类的最后考试」一起构建全新的 LLM 基准，通过极具挑战性的任务揭露当前大语言模型的局限性。\n  </section>\n  <section>\n   正如一些网友评论所说，看起来 AI 离真正理解世界还有很长的路要走。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471446\" data-ratio=\"0.19074074074074074\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/29bfae95-28f4-42f7-5404-56ccb0818c00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/af58488e-9c8a-4902-af49-9e3ac59f2d4d/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   另外，该基准测试中没有将 DeepSeek R1 纳入在内，所以很好奇它的表现如何。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471447\" data-ratio=\"0.15925925925925927\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/be3820e6-3f71-492b-2bb5-c72e4603a400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/66d44e0d-a511-4d89-a8c9-fef300d97d07/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>&nbsp;ENIGMAEVAL 基准</strong>\n  </section>\n  <section>\n   ENIGMAEVAL 包含 1184 道谜题，每个谜题通常需要一群经验丰富的人花费数小时甚至数天才能解决。其有两种格式：\n  </section>\n  <section>\n   （1）原始 PDF 的 PNG 图像（如页面截图），用于测试模型端到端的性能；\n  </section>\n  <section>\n   （2）结构化的文本 - 图像表示，保留了语义关系和视觉元素，用于有针对性地评估模型多模态推理能力，同时减少干扰和预处理负担。\n  </section>\n  <section>\n   ENIGMAEVAL 来源如下（表 1），按照难度分组为 Normal （949 道题）和 Hard （235 道题）两大部分：\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471454\" data-ratio=\"0.6092592592592593\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7568bf13-cea6-4056-61a9-219e53e20a00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/3b7680fd-0ff5-48d2-bb38-996878de5d18/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   普通谜题示例（Normal）：\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471448\" data-ratio=\"1.3504043126684635\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2696efab-7014-4708-1949-315b1e2e5200/public\" data-type=\"png\" data-w=\"742\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/f53b9775-eb16-4936-bc3e-eec4cbdb13bf/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471449\" data-ratio=\"1.3407682775712515\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd3c0645-630b-4d3f-7601-1a5aa5807500/public\" data-type=\"png\" data-w=\"807\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/591d0d48-394e-472d-9af2-c1c33e9cb748/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   困难谜题示例（Hard）：\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471450\" data-ratio=\"1.2666666666666666\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2171347c-76fd-44e3-fe77-0b31cce85b00/public\" data-type=\"png\" data-w=\"840\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/5e2c8c38-ec93-430f-adf7-11ace465af39/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471451\" data-ratio=\"2.2722371967654986\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/52c0e476-4865-4754-5429-8aca1dae2d00/public\" data-type=\"png\" data-w=\"742\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/aa2a9db2-73b4-4639-85a2-c3af8eb570bc/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   除了这些谜题，本文还收集了相应的解决方案文档，以 PDF 或 HTML 页面的形式提供。\n  </section>\n  <section>\n   <strong>实验</strong>&nbsp;\n  </section>\n  <section>\n   本文在 ENIGMAEVAL 基准上测试了最先进的 LLM 的深度推理能力。\n  </section>\n  <section>\n   <strong>结果</strong>\n  </section>\n  <section>\n   模型在解答谜题方面的表现并不出色 。\n  </section>\n  <section>\n   所有前沿的视觉 - 语言模型在此次评估中的准确率都显著偏低，即便是领先的模型（o1）在常规难度部分也仅达到 7.0% 的准确率，在困难难度部分更是达到了 0%（见表 2）。\n  </section>\n  <section>\n   所有测试模型在困难难度部分完全失败（准确率为 0%），这强调了这些模型在面对更为复杂的谜题变体时所遭遇的重大挑战。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503471453\" data-ratio=\"0.37962962962962965\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bca6f04a-2cee-4b6e-60a2-670ea9899a00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/8aabece5-9aeb-47ba-a5c2-3f29795daeac/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   此外，本文还使用 o1 模型对其自身生成的答案进行审核，以检查是否存在抄袭或荒谬的推理链条，这是通过将前沿模型生成的逐步解决方案与官方谜题解析（附录 B.3）进行对比来实现的。每一个被 o1 标记的案例都经过了人工检查，结果发现审核模型幻觉般地提供了抄袭的证据，这表明实验所采用的模型是独立得出正确答案的。\n  </section>\n </body>\n</html>",
+  "aiSummary": "ENIGMAEVAL 基准测试表明，当前大语言模型在解决高难度谜题（特别是困难谜题）方面表现不佳，即使是 SOTA 模型在困难谜题上的准确率也为 0。",
+  "oneSentenceSummary": "ENIGMAEVAL 基准测试表明，当前大语言模型在解决高难度谜题（特别是困难谜题）方面表现不佳，即使是 SOTA 模型在困难谜题上的准确率也为 0。",
+  "summary": "文章介绍了由 Scale AI、Center for AI Safety 和 MIT 的研究者联合推出的 ENIGMAEVAL 基准，该基准旨在评估大语言模型在解决高难度谜题方面的能力。ENIGMAEVAL 包含 1184 道谜题，涵盖文本和图像难题，例如页面截图等形式，分为 Normal 和 Hard 两个难度级别。实验结果表明，包括 OpenAI o1 在内的 SOTA 模型在普通谜题上的准确率最高仅为 7.0% 左右，在困难谜题上的准确率则降至 0%，远低于人类解谜者。研究者认为，ENIGMAEVAL 将与“人类的最后考试”一起构建全新的 LLM 基准，揭露当前大语言模型的局限性。",
+  "mainPoints": [
+    {
+      "point": "ENIGMAEVAL 基准旨在评估 LLM 在高难度谜题上的推理能力。",
+      "explanation": "该基准包含多种格式的谜题，涵盖文本和图像，能够有效测试模型的逻辑推理、创造性思维和跨学科知识运用能力。"
+    },
+    {
+      "point": "现有 SOTA 模型在 ENIGMAEVAL 基准上表现不佳。",
+      "explanation": "即使是领先的模型在常规难度谜题上的准确率也较低，在困难难度谜题上甚至完全失败，表明模型在复杂推理方面存在局限性。"
+    },
+    {
+      "point": "模型性能受限于 OCR 和解析能力。",
+      "explanation": "模型在处理原始 PDF 格式的谜题时，性能显著下降，表明 OCR 和解析能力仍有提升空间。"
+    }
+  ],
+  "keyQuotes": [
+    "在困难谜题（Hard）上的准确率则降至 0%",
+    "ENIGMAEVAL 将与「人类的最后考试」一起构建全新的 LLM 基准，通过极具挑战性的任务揭露当前大语言模型的局限性。",
+    "所有前沿的视觉 - 语言模型在此次评估中的准确率都显著偏低，即便是领先的模型（o1）在常规难度部分也仅达到 7.0% 的准确率，在困难难度部分更是达到了 0%"
+  ],
+  "tags": [
+    "大语言模型",
+    "基准测试",
+    "多模态推理",
+    "ENIGMAEVAL",
+    "OpenAI o1"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1546,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739770134000,
+  "publishDateStr": "2025-02-17",
+  "publishDateTimeStr": "2025-02-17 05:28:54"
+}

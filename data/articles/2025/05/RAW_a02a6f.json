@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a02a6f",
+  "title": "谷歌 NotebookLM 终于说中文了！这可是最火的大模型播客产品 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-05-4",
+  "date": "2025-05-05 11:14:23",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>NotebookLM 正在变成谷歌 AI 路线里最靠谱的选手之一：现在除了支持中文播报，还要上移动 App，变身日常学习办公神器。</p>\n  </blockquote>\n  <section>\n   <span data-pm-slice=\"0 0 []\">能将音频源转化为引人入胜、类似播客的对话，</span>NotebookLM 自从去年推出开始，就圈粉无数。 \n   <br>\n   <br>\n  </section>\n  <section>\n   数天前，备受大家喜爱的这款大模型产品终于支持中文播客了！ \n   <br><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/923dd3e7-0683-46fa-d241-b18bc92ffc00/public\" alt=\"image.png\" data-ratio=\"0.774074074074074\" data-type=\"png\" data-w=\"1080\" data-backw=\"562\" data-backh=\"435\" data-imgfileid=\"503483920\" data-original-style=\"width:100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/f517384d-244e-4ee2-b25f-57c1dbc68d83/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"><sup>&nbsp; &nbsp; &nbsp; 这一功能的推出标志着NotebookLM向真正的多语言AI知识助手又迈进一步。</sup>\n   <br>\n   <br><em><em>工具链接：https://notebooklm.google.com/</em></em>\n   <br>\n   <br>\n    作为谷歌旗下 AI 文档助手，NotebookLM 有不少功能，包括摘要、时间线等常规内容，还有互动脑图。\n  </section>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250505141111_69b1d6\" data-ratio=\"0.5180722891566265\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1079\" type=\"block\" data-backw=\"578\" data-backh=\"299\" data-imgfileid=\"503483922\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/3ef7ff5c-c46e-4e6c-bf5b-a4c2816a3fcd/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   但真正让它出圈的还是音频概览（ Audio Overviews ）功能 —— &nbsp;上传一些文本、网页、视频，Audio Overviews 就能把它们变成一段有主持人、有对话、有互动、有情绪起伏的 AI 播客。 \n   <br>\n   <br>\n    据说现在 10 个 NotebookLM 用户，恨不得有 9 个人都在使用这个功能。 \n   <br>\n   <br>\n    虽说是神器，很多国内用户抱怨听不了中文播客也是白搭。等了大半年，Audio Overviews 终于支持超过 50 种语言，包括中文。 \n   <br><img alt=\"image.png\" data-backh=\"242\" data-backw=\"562\" data-imgfileid=\"503483916\" data-ratio=\"0.43148148148148147\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/930ce291-bc2d-4768-4c52-0b1c0266b600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/7ad87d5a-38b7-40f7-8f34-81f77dfc8fce/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"><em><sup>&nbsp; &nbsp; &nbsp; 仅需在「设置」的「输出语言」中找到中文，选定即可。</sup></em>\n   <br>\n   <br>\n    我们也简单体验了一把。 \n   <br>\n   <br>\n    为了比较分析两位女导演，我们上传了 BBC 对奥斯卡获奖导演赵婷的专访（英文视频）和国内关于邵艺辉的一些采访（中文文本）。 \n   <br><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8fc67bda-e5fb-4cb1-af58-2139d194b400/public\" alt=\"image.png\" data-ratio=\"0.6211656441717791\" data-type=\"png\" data-w=\"652\" data-backw=\"562\" data-backh=\"349\" data-imgfileid=\"503483917\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/48f87ed4-31af-4da1-9912-6159e7b4cb73/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">几分钟后，就得到了一个时长 8 分钟的中文播客节目。<a href=\"https://mp.weixin.qq.com/s/WcZa3IV0RHBRUfwKUrzdWQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/71a18a68-0d14-48fc-b3f2-2e08533965d2/1746443564075.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a>\n  </section>\n  <section>\n   内容上，AI 大模型对两位导演的采访信息进行了整理： \n   <br>\n   <br>\n    赵婷讲了自己在好莱坞的经历、对边缘人群的关注、以及她对行业结构的思考；邵艺辉则谈到女性题材、两性关系以及她如何在片场营造友善平等的氛围。 \n   <br>\n   <br>\n    访谈共同展现了两位导演在各自文化背景下对电影艺术的独特视角和对社会议题的关注。 \n   <br>\n   <br>\n    AI 总结出的关键词、对比点还比较准，而且播客中的「主持人」是一男一女两位 AI ： \n   <br>\n   <br>\n    声音听起来很自然，比微信读书的「听书」好听太多；说话有停顿、有插话，而且很口语化，这些都让对话显得更加自然逼真。 \n   <br>\n   <br>\n    当然，你还可以继续提高材料来源多元性。 \n   <br>\n   <br>\n    例如，有关宫崎骏的最新消息很多都是日文，就算不懂日文也可以通过 AI 播客快速 get 报道内容。 \n   <br><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/99b3ebd5-1135-47e7-8bd4-04fe9615fb00/public\" alt=\"image.png\" data-ratio=\"0.6887550200803213\" data-type=\"png\" data-w=\"996\" data-backw=\"562\" data-backh=\"387\" data-imgfileid=\"503483919\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/247badf8-d62a-48b4-a8fa-063cf5c0ceb0/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   这一次，我们选择了台湾腔中文播报（繁体中文），听听效果如何：\n  </section>\n  <section>\n   <a href=\"https://mp.weixin.qq.com/s/WcZa3IV0RHBRUfwKUrzdWQ\"><img src=\"https://image.jiqizhixin.com/uploads/editor/b82a175a-c43b-46e6-ae15-7e84656bcb9c/1746443601884.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a>\n  </section>\n  <section>\n   进一步讲，哪怕是英文、法语、日文、西班牙语等，只要是产品覆盖到的语言，最后都可以变成中文节目，破译其中内容。 \n   <br>\n   <br>\n    作为谷歌目前最受欢迎的 AI 产品，NotebookLM 底层是谷歌 Gemini 2.5 Flash （ thinking model ），虽然不是最强的 Pro 版本，但也能支持最大 200MB 的上传内容，一次性处理 50 万个 token 上下文，足以扮演一位「可查询、可对话」的 AI 知识专家。 \n   <br><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8ce0f7a4-3367-4da0-8b83-a9aeed7da700/public\" alt=\"image.png\" data-ratio=\"0.8296296296296296\" data-type=\"png\" data-w=\"1080\" data-backw=\"562\" data-backh=\"466\" data-imgfileid=\"503483918\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/43d3d49f-8e0d-44ee-9b5b-9e8f3f948685/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">重点是：它<strong>只围绕你上传的资料说话</strong>，引用明确、查证方便，不会满嘴跑火车。 \n   <br>\n   <br>\n    相比大多数 AI 助手，它的实用性更落地——不抢你流程，不乱猜内容，就是帮你梳理信息、提升效率。\n  </section>\n  <section>\n   目前 NotebookLM 依然只能通过网页使用，虽然手机浏览器能打开，但体验不太行。 \n   <br>\n   <br>\n    好消息是，谷歌已经官宣即将上线<strong>安卓 App</strong>，并已开放 Play 商店页面预注册。 iOS 版也已上架预注册，预计会在 5 月 20 日的 <strong>Google I/O 大会</strong>上正式发布。 \n   <br><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5cb94217-2756-4680-7bf2-2b983beecb00/public\" alt=\"image.png\" data-ratio=\"0.6981481481481482\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503483921\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/64804ae1-a9c2-4192-a79e-f86fbf52bc33/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">包括音频概览在内的多项功能都将在 App 中支持，甚至还有加入 AI 对话功能，让你能<strong>和 AI 主持人互动</strong>。 \n   <br>\n   <br>\n    但注意，高阶功能（比如音频概览）可能只面向 Gemini Advanced（$20/月）订阅用户开放。免费用户估计每天只有一两次薅羊毛的机会。\n  </section>\n </body>\n</html>",
+  "aiSummary": "谷歌 NotebookLM 上线中文播客和移动 App，变身 AI 知识专家，提升信息获取效率。",
+  "oneSentenceSummary": "谷歌 NotebookLM 上线中文播客和移动 App，变身 AI 知识专家，提升信息获取效率。",
+  "summary": "文章介绍了谷歌旗下 AI 文档助手 NotebookLM 最新推出的中文播客功能，该功能解决了国内用户无法使用英文播客的痛点，可以将文本、网页、视频等资料转化为 AI 播客，方便用户快速了解信息。文章通过实例展示了该功能在不同场景下的应用，例如比较分析导演访谈、快速获取外文资讯等。同时，文章还提到 NotebookLM 即将推出安卓和 iOS App，并可能加入 AI 对话功能。NotebookLM 底层基于谷歌 Gemini 2.5 Flash 模型，信息梳理准确、效率高，能够处理大量上下文，并确保内容引用明确，实用性强。",
+  "mainPoints": [
+    {
+      "point": "NotebookLM 上线中文播客功能，支持 50 多种语言。",
+      "explanation": "用户可以通过上传文本、网页、视频等资料，快速生成中文播客节目，方便快捷地获取信息。"
+    },
+    {
+      "point": "NotebookLM 即将推出移动 App，支持 AI 对话功能，进一步提升用户互动体验。",
+      "explanation": "用户可以在 App 中与 AI 主持人互动，获取更个性化的信息服务，提升使用体验。"
+    },
+    {
+      "point": "NotebookLM 基于 Gemini 2.5 Flash 模型，只围绕你上传的资料说话，实用性强。",
+      "explanation": "该模型能够处理大量上下文，并确保内容引用明确，避免了 AI 助手“满嘴跑火车”的问题，保证信息来源的可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "NotebookLM 正在变成谷歌 AI 路线里最靠谱的选手之一：现在除了支持中文播报，还要上移动 App，变身日常学习办公神器。",
+    "据说现在 10 个 NotebookLM 用户，恨不得有 9 个人都在使用这个功能。",
+    "重点是：它只围绕你上传的资料说话 ，引用明确、查证方便，不会满嘴跑火车。",
+    "相比大多数 AI 助手，它的实用性更落地------不抢你流程，不乱猜内容，就是帮你梳理信息、提升效率。",
+    "哪怕是英文、法语、日文、西班牙语等，只要是产品覆盖到的语言，最后都可以变成中文节目，破译其中内容。"
+  ],
+  "tags": [
+    "AI产品",
+    "NotebookLM",
+    "播客",
+    "Gemini",
+    "谷歌"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1268,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746443663000,
+  "publishDateStr": "2025-05-05",
+  "publishDateTimeStr": "2025-05-05 11:14:23"
+}

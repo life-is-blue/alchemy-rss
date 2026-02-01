@@ -1,0 +1,54 @@
+{
+  "id": "RAW_93fcb0f9",
+  "title": "Redis 13 年后发现严重远程代码执行漏洞",
+  "url": "https://www.infoq.com/news/2025/11/redis-vulnerability-redishell/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-08 10:21:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Redis recently released a <a href=\"https://redis.io/blog/security-advisory-cve-2025-49844/\">security advisory regarding CVE-2025-49844</a>. This critical (CVSS 10.0) use-after-free (UAF) vulnerability in Lua scripting could allow authenticated attackers to execute remote code on older versions of Redis and Valkey with Lua scripting enabled. Developers are urged to upgrade to patched releases as soon as possible.</p>\n   <p>Exploiting the so-called \"RediShell\" remote code execution vulnerability, an authenticated user can use a specially crafted script to manipulate the garbage collector, trigger a use-after-free, and potentially execute arbitrary code remotely.</p>\n   <p>The vulnerability exploits a 13-year-old UAF memory corruption bug in Redis, allowing a post-auth attacker to send a crafted Lua script to escape the default Lua sandbox and execute arbitrary native code. This grants full host access, enabling data theft, wiping, encryption, resource hijacking, and lateral movement within cloud environments. <a href=\"https://www.linkedin.com/in/riazlakhani/\">Riaz Lakhani</a>, CISO at Redis, warns:</p>\n   <blockquote>\n    <p>Exploitation of this vulnerability requires an attacker to first gain authenticated access to your Redis instance. There are several steps you can take to protect your Redis from being accessed by a malicious actor.</p>\n   </blockquote>\n   <p>In its <a href=\"https://redis.io/blog/security-advisory-cve-2025-49844/\">security advisory</a>, Redis recommends following security best practices, restricting network access with firewalls and network policies, enforcing strong authentication, and limiting permissions to allow only trusted identities to run Lua scripts or other potentially risky commands.</p>\n   <p>The exploitation starts with the attacker sending a malicious Lua script that exploits a use-after-free vulnerability, escapes the Lua sandbox, and achieves arbitrary code execution. The attacker can then establish a reverse shell for persistent access and system compromise, for example, exfiltrating sensitive data from Redis, installing malware, or stealing credentials. Furthermore, on a public cloud provider, stolen IAM tokens could be used to access other cloud services, escalate privileges, and move to additional systems. The vulnerability was <a href=\"https://www.wiz.io/blog/wiz-research-redis-rce-cve-2025-49844\">initially reported by Wiz researchers</a> <a href=\"https://www.linkedin.com/in/benny-isaacs/\">Benny Isaacs</a>, Nir Brakha, and <a href=\"https://www.linkedin.com/in/sagi-tzadik-95b3a7194/\">Sagi Tzadik</a>, who wrote:</p>\n   <blockquote>\n    <p>Given that Redis is used in an estimated 75% of cloud environments, the potential impact is extensive. Organizations are strongly urged to patch instances immediately by prioritizing those that are exposed to the internet.</p>\n   </blockquote>\n   <p>While there is no evidence that the vulnerability was ever exploited, Wiz identified 330K Redis instances exposed to the internet, including over 60K without authentication configured, and 57% of cloud environments installing Redis as container images, many without proper security hardening.</p>\n   <p><a href=\"https://www.linkedin.com/in/kshams/\">Allen Helton</a>, ecosystem engineer at Momento and AWS Hero, and Khawaja Shams, co-founder and CEO of Momento, published an article about <a href=\"https://www.gomomento.com/blog/the-latest-redis-vulnerability-exposes-a-bigger-problem/\">securing Redis and Valkey clusters</a>. Shams <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7382188975861653504/\">summarizes</a> on LinkedIn:</p>\n   <blockquote>\n    <p>CVE-2025-49844 lets attackers escape the Lua sandbox and execute code on the host. That’s bad enough. But the bigger issue? We often see customers with cache clusters inside VPCs still run without authentication. Even after you patch, anyone or anything in your network can connect to your cache and start manipulating data. No exploit required. If you take one action today — put a password on your Valkey nodes. Everything else can wait.</p>\n   </blockquote>\n   <p>Matthias Endler, Rust consultant, questions whether the language used is the main issue and <a href=\"https://www.linkedin.com/posts/matthiasendler_rust-security-activity-7381269051232190464-SpuC\">comments</a>:</p>\n   <blockquote>\n    <p>13 years. That's how long it took to find a critical safety vulnerability in one of the most popular C open source codebases, Redis. This is software that was expertly written by some of the best engineers in the world and yet, mistakes can still happen! It's just that in C a \"mistake\" can often mean a memory-safety bug that would put user data at risk (...) That's the nature of memory-safety bugs in C: they can hide in plain sight.</p>\n   </blockquote>\n   <p>The fix has been backported to all supported releases. According to the Redis documentation, developers should update to 7.22.2-20 or later, 7.8.6-207 or later, 7.4.6-272 or later, 7.2.4-138 or later, or 6.4.2-131 or later. <a href=\"https://github.com/orgs/valkey-io/discussions/2706\">Valkey, a fork of Redis, is also affected</a> and has released the following versions to address it: 7.2.11, 8.0.6, and 8.1.4.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Redis Critical Remote Code Execution Vulnerability Discovered After 13 Years\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/redis-vulnerability-redishell/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762597260000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Redis 和 Valkey 的 Lua 脚本中发现了一个存在 13 年之久的严重释放后重用漏洞 (CVE-2025-49844)，该漏洞允许经过身份验证的攻击者实现远程代码执行，因此需要立即修补。",
+  "oneSentenceSummary": "Redis 和 Valkey 的 Lua 脚本中发现了一个存在 13 年之久的严重释放后重用漏洞 (CVE-2025-49844)，该漏洞允许经过身份验证的攻击者实现远程代码执行，因此需要立即修补。",
+  "summary": "本文报告了 'RediShell' 漏洞的发现，这是一个存在于 Redis 和 Valkey 的 Lua 脚本中的严重 (CVSS 10.0) 释放后重用漏洞，可能允许经过身份验证的攻击者远程执行任意代码。该漏洞在潜伏 13 年后被发现，使攻击者能够逃脱 Lua 沙箱，获得完全主机访问权限，并执行诸如数据窃取或系统入侵等操作。尽管攻击需要经过身份验证的访问，但大量 Redis 实例在没有适当身份验证的情况下暴露于互联网，这突显了普遍存在的安全配置不当问题。专家强调，应立即对受支持的版本进行修补，并遵守基本的安全最佳实践，例如强大的身份验证、网络分段和受限权限，以减轻与此漏洞以及基于 C 的软件固有的内存安全挑战相关的风险。",
+  "mainPoints": [
+    {
+      "point": "Redis/Valkey Lua 脚本中一个存在 13 年之久的严重释放后重用 (UAF) 漏洞可实现远程代码执行。",
+      "explanation": "CVE-2025-49844，被称为 'RediShell'，允许经过身份验证的攻击者绕过 Lua 沙箱并执行任意本机代码，从而导致完全主机入侵和严重的数据安全风险。"
+    },
+    {
+      "point": "Redis 实例中普遍存在的互联网暴露和缺乏身份验证放大了漏洞的影响。",
+      "explanation": "数十万个 Redis 实例暴露在网上，其中许多没有身份验证，这突显了在为关键数据存储实施基本安全最佳实践方面的普遍不足。"
+    },
+    {
+      "point": "该事件突显了基于 C 的软件中内存安全的持续挑战以及对强大安全层的需求。",
+      "explanation": "在流行的 C 代码库中长期存在的错误强调了消除内存安全问题的难度，并强化了网络访问控制和强大身份验证的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "利用此漏洞需要攻击者首先获得对您的 Redis 实例的身份验证访问权限。",
+    "鉴于 Redis 估计在 75% 的云环境中使用，因此潜在的影响是巨大的。强烈建议各组织立即修补实例，并优先考虑暴露于互联网的实例。",
+    "CVE-2025-49844 允许攻击者逃脱 Lua 沙箱并在主机上执行代码。这已经非常糟糕。但更严重的问题是，我们经常看到，即使在 VPC 内部署了缓存集群，客户仍然在没有身份验证的情况下运行它们。",
+    "13 年。这是在最流行的 C 开源代码库之一 Redis 中发现关键安全漏洞所花费的时间。"
+  ],
+  "tags": [
+    "安全漏洞",
+    "Redis",
+    "Valkey",
+    "远程代码执行",
+    "释放后重用"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 629,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762597260000,
+  "publishDateStr": "2025-11-08",
+  "publishDateTimeStr": "2025-11-08 10:21:00"
+}

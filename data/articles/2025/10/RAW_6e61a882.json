@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6e61a882",
+  "title": "拒绝\"熵崩塌\"和\"熵爆炸\"！这项研究让大模型推理成绩飙升",
+  "url": "https://www.qbitai.com/2025/10/340944.html",
+  "date": "2025-10-13 09:12:43",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">大语言模型在RLVR训练中面临的“熵困境”，有解了！</p>\n  <p data-track=\"2\">2024年以来，以OpenAI o1、DeepSeek-R1、Kimi K1、Qwen3等为代表的大模型，在数学、代码和科学推理任务上取得了显著突破。这些进展很大程度上得益于一种名为RLVR （基于可验证奖励的强化学习）的方法。</p>\n  <p data-track=\"3\">该方法通过数学验证、单元测试等<strong>可自动判断对错的方式</strong>提供训练信号，替代了传统依赖人类评判的流程，使模型能够进行大规模、高效率的自我改进。</p>\n  <p data-track=\"4\">然而，RLVR在实践中始终面临“探索机制极易失衡”这一关键瓶颈——<strong>要么探索受限，陷入熵崩塌；要么探索失控，引发熵爆炸。</strong></p>\n  <p data-track=\"5\">为突破这一瓶颈，来自上海人工智能实验室和复旦大学等机构的研究团队提出<strong>选择性熵正则化方法（SIREN）</strong>，通过<strong>划定探索范围、聚焦关键决策、稳定训练过程</strong>的三重机制，实现了对探索行为的精准调控。</p>\n  <p data-track=\"6\">实验证明，该方法不仅在多项数学推理基准上取得了显著性能提升，更重要的是，它让模型的探索过程变得更加高效与可控。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120818_a6c369225afb186ae337658abff3bd76.png\" data-src=\"https://image.jido.dev/20251013120818_a6c369225afb186ae337658abff3bd76.png\">\n  </div>\n  <p data-track=\"7\">下面详细来看——</p>\n  <p data-track=\"9\">在RLVR训练中，研究人员期望模型能够持续探索多样化的解题路径，以避免过早陷入局部最优。</p>\n  <p data-track=\"10\">一个自然的想法是：<strong>引入熵正则化</strong>（entropy regularization）。</p>\n  <p data-track=\"11\">这是强化学习中鼓励探索的经典手段。其核心思想很简单：在优化目标中加入一项，<strong>鼓励模型在每一步生成时保持一定的“不确定性”</strong>，不要过早把概率全压在少数几个词上。</p>\n  <p data-track=\"12\">具体来说，就是计算每一步输出分布的熵（衡量“混乱程度”），再把整条推理轨迹的平均熵加到训练目标里，用一个系数控制探索强度。</p>\n  <p data-track=\"13\">以下公式分别为：熵的计算公式及熵正则的优化目标。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120817_5f30ff210b2b7bb2c014f9a984b5576b.png\" data-src=\"https://image.jido.dev/20251013120817_5f30ff210b2b7bb2c014f9a984b5576b.png\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120818_c5778a57d155e5d550724a7e08ac7556.png\" data-src=\"https://image.jido.dev/20251013120818_c5778a57d155e5d550724a7e08ac7556.png\">\n  </div>\n  <p data-track=\"14\">然而，这一策略在大型推理模型（LRM）的复杂场景下却极易走向两个极端：</p>\n  <ul>\n   <li data-track=\"15\"><strong>探索受限（熵崩塌）</strong></li>\n  </ul>\n  <p data-track=\"16\">当太小，熵项几乎不起作用，模型迅速退化为近似确定性策略。平均熵迅速收敛，即发生熵崩塌。几轮训练后，所有回答都高度相似，陷入“舒适区”。这种熵崩塌现象不仅扼杀了模型的多样性，也使其推理能力在训练早期就触及天花板，无法充分释放潜力。</p>\n  <ul>\n   <li data-track=\"17\"><strong>探索失控（熵爆炸）</strong></li>\n  </ul>\n  <p data-track=\"18\">反之，当稍大，模型便极易在庞大的动作空间（数十万个token）与超长的推理轨迹（上千步生成）中失控。根据熵的定义，当概率分布越“平”，熵就越高。而在如此庞大的词表中，哪怕只把一点点概率质量从高义词（如“因此”）挪到无意义词（如“&lt;”“#@$%”），也能带来显著的熵增。</p>\n  <p data-track=\"19\">更糟的是，在自回归生成中，这种不确定性会沿着轨迹<strong>逐步累积</strong>——早期几步的微小混乱，会迅速放大为整条推理链的失控。最终使得模型为了“拉高熵”，在<strong>每个位置</strong>、对<strong>每个token</strong>都分配一点概率，导致生成内容充斥无意义符号，逻辑断裂、语义崩坏——这就是典型的<strong>熵爆炸</strong>（entropy explosion）。</p>\n  <p data-track=\"20\">传统方法会失效的根本原因在于：<strong>熵正则化的激励是“无差别”的</strong>——它假设所有token、所有位置都同等值得探索。但LRM的生成过程具有鲜明的结构性：</p>\n  <ul>\n   <li data-track=\"21\">在每个生成步骤上，仅有概率排名靠前的少数token具备语义合理性，其余绝大多数token概率趋近于零且无实际意义；</li>\n   <li data-track=\"22\">在整个生成序列中，仅有少数承担逻辑枢纽作用的关键词（如逻辑连接词、变量名、结论引导词）真正影响推理走向，而大量用于句法填充的常规词则应保持高确定性，以维持推理连贯性。</li>\n  </ul>\n  <p data-track=\"23\">正因忽略了这种<strong>“探索价值的非均匀分布”</strong>，传统熵正则化不仅难以有效引导探索，反而容易引发训练不稳定，甚至背离提升推理能力的初衷。</p>\n  <p data-track=\"24\">下图表明，训练前模型的概率分布高度集中，且只有少量位置在逻辑上关键，值得探索；过度探索后概率被摊薄，生成内容混乱。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120817_7154b535d57735d4714d0052f1670102.png\" data-src=\"https://image.jido.dev/20251013120817_7154b535d57735d4714d0052f1670102.png\">\n  </div>\n  <p data-track=\"26\">针对传统方法的不足，研究人员提出<strong>选择性熵正则化方法（SIREN）</strong>，通过结构化约束实现探索过程的精细调控。SIREN包含三个核心机制：</p>\n  <p data-track=\"27\"><strong>1、划定探索范围（Top-p掩码, Top-P Mask）</strong></p>\n  <p data-track=\"28\">在每个生成步骤中，将熵的计算范围严格限定于概率最高的核心token集合，确保探索仅在语义合理的候选词中进行，避免无效探索。</p>\n  <p data-track=\"29\"><strong>2、识别关键决策点（峰值熵掩码，Peak-entropy Mask）</strong></p>\n  <p data-track=\"30\">自动识别生成序列中熵值显著高于平均水平的逻辑关键词（如推理连接词、假设引导词等），并将探索激励集中作用于这些关键位置。</p>\n  <p data-track=\"31\"><strong>3、稳定训练过程（自锚定正则化, Self-anchored Regularization）</strong></p>\n  <p data-track=\"32\">将熵值目标从最大化调整为维持合理区间，通过动态锚定机制使探索强度始终处于可控范围，避免训练失稳。</p>\n  <p data-track=\"33\">这一方法首次在RLVR框架中实现了对探索范围、位置和强度的三重精准控制，为大规模推理模型的稳定训练提供了可靠解决方案。</p>\n  <p data-track=\"34\">下图为SIREN的方法流程：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120823_45a1c833a1af7981db6acce1b159710e.png\" data-src=\"https://image.jido.dev/20251013120823_45a1c833a1af7981db6acce1b159710e.png\">\n  </div>\n  <p data-track=\"36\">实验结果显示，SIREN在不同模型和数据集上均取得显著提升。</p>\n  <p data-track=\"37\">以下为SIREN在Qwen2.5-Math-7B上的实验结果：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120819_9e792e6f178ebbf8e4bd2126d3cd124b.png\" data-src=\"https://image.jido.dev/20251013120819_9e792e6f178ebbf8e4bd2126d3cd124b.png\">\n  </div>\n  <p data-track=\"38\">以及SIREN在其他基座模型上的实验结果：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120821_0e9d957caa2b0d4a9f96b689fc4c8508.jpeg\" data-src=\"https://image.jido.dev/20251013120821_0e9d957caa2b0d4a9f96b689fc4c8508.jpeg\">\n  </div>\n  <p data-track=\"39\">上述结果表明：</p>\n  <ul>\n   <li data-track=\"40\">在Qwen2.5-Math-7B上，SIREN平均maj@k达<strong>54.6%</strong>，超越最强基线<strong>4.8%</strong>。</li>\n   <li data-track=\"41\">在最具挑战的AIME24/25上，提升均达<strong>6.6%</strong>。</li>\n   <li data-track=\"42\">在1.5B到8B不同规模、不同基座的模型上均稳定有效。</li>\n  </ul>\n  <p data-track=\"44\">分析表明，这正是有效探索带来的根本性改变。与传统的熵正则方法相比，SIREN展现出更合理有效的探索模式。</p>\n  <p data-track=\"45\">下图中，SIREN展现出较高的pass@k，探索边界显著扩展：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120818_f87e67e94275f2d80c18c9dbaf6dcd6b.png\" data-src=\"https://image.jido.dev/20251013120818_f87e67e94275f2d80c18c9dbaf6dcd6b.png\">\n  </div>\n  <p data-track=\"46\">还能避免困惑度坍缩，SIREN将答案多样性保持良好：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120817_2533e52c3c46bd669d9c2744abc83aa4.jpeg\" data-src=\"https://image.jido.dev/20251013120817_2533e52c3c46bd669d9c2744abc83aa4.jpeg\">\n  </div>\n  <p data-track=\"47\">下图表明，先加大探索再缓慢收敛，训练过程平稳可控：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"拒绝“熵崩塌”和“熵爆炸”！这项研究让大模型推理成绩飙升\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013120817_d9690c4242b1b3768a448f258a0d2865.jpeg\" data-src=\"https://image.jido.dev/20251013120817_d9690c4242b1b3768a448f258a0d2865.jpeg\">\n  </div>\n  <p data-track=\"49\">这项研究致力于解决<strong>大语言模型在RLVR训练中面临的策略探索难题</strong>。</p>\n  <p data-track=\"50\">通过系统的实证分析，研究人员发现传统的探索机制在大规模动作空间和长序列生成中极易失衡，导致模型陷入熵崩塌和熵爆炸的困境。</p>\n  <p data-track=\"51\">为突破这一瓶颈，团队提出了选择性熵正则化方法（SIREN），通过划定探索范围、聚焦关键决策、稳定训练过程的三重机制，实现了对探索行为的精准调控。实验证明，该方法不仅在多项数学推理基准上取得了显著性能提升，更重要的是，它让模型的探索过程变得更加高效与可控。</p>\n  <p data-track=\"52\">团队表示，展望未来，随着强化学习成为大模型后训练的主流方法，如何实现稳定、可控、高效的探索，将成为释放大模型潜力、突破性能瓶颈的核心议题。该研究提出的选择性探索调控机制，为探索的精细化提供了一种可行的解决方案。</p>\n  <p data-track=\"53\">团队期待这项工作能为下一代推理模型的训练范式提供启发，推动大模型在数学、代码、科学推理等复杂任务以及其他更广阔的应用领域走得更远。</p>\n  <p data-track=\"54\">论文链接：https://arxiv.org/abs/2509.25133\n   <br class=\"sysbr\">\n   项目主页：https://github.com/Linn3a/siren</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "这项研究提出了选择性熵正则化方法（SIREN），解决了大模型在 RLVR 训练中面临的“熵困境”，显著提升了模型推理能力和训练稳定性。",
+  "oneSentenceSummary": "这项研究提出了选择性熵正则化方法（SIREN），解决了大模型在 RLVR 训练中面临的“熵困境”，显著提升了模型推理能力和训练稳定性。",
+  "summary": "文章深入探讨了大语言模型在基于可验证奖励的强化学习（RLVR）训练中面临的关键瓶颈——“熵困境”。传统熵正则化因其“无差别激励”的根本性不足，难以有效引导探索，反而极易导致探索机制失衡，陷入“熵崩塌”（探索受限）或“熵爆炸”（探索失控）的困境，从而阻碍模型推理能力的充分释放。为突破这一瓶颈，来自上海人工智能实验室和复旦大学等机构的研究团队提出了选择性熵正则化方法（SIREN）。SIREN 通过“划定探索范围（Top-p 掩码）”、“识别关键决策点（峰值熵掩码）”和“稳定训练过程（自锚定正则化）”三重机制，实现了对探索行为的精准调控。实验证明，该方法不仅在多项数学推理基准上取得了显著性能提升（例如在 Qwen2.5-Math-7B 上平均 maj@k 达 54.6%，超越基线 4.8%），更重要的是，它让模型的探索过程变得更加高效与可控，为大规模推理模型的稳定训练提供了可靠解决方案。",
+  "mainPoints": [
+    {
+      "point": "大模型在 RLVR 训练中面临“熵困境”，传统熵正则化因无差别激励而失效。",
+      "explanation": "大语言模型利用 RLVR 进行训练时，探索机制极易失衡，导致探索受限或失控；传统熵正则化无法区分探索价值，反而加剧训练不稳定，无法有效引导探索。"
+    },
+    {
+      "point": "SIREN 通过划定探索范围、聚焦关键决策点和稳定训练过程实现精准调控。",
+      "explanation": "SIREN 结合 Top-p 掩码、峰值熵掩码和自锚定正则化三重机制，首次在 RLVR 框架中实现对探索范围、位置和强度的精细控制，解决了探索失衡问题。"
+    },
+    {
+      "point": "SIREN 显著提升大模型在数学推理等任务上的性能，并使训练过程更高效可控。",
+      "explanation": "实验结果表明，SIREN 在不同模型和数据集上均取得显著性能提升，有效避免了困惑度坍塌，保持了答案多样性，并确保了训练过程的平稳可控。"
+    }
+  ],
+  "keyQuotes": [
+    "RLVR 在实践中始终面临'探索机制极易失衡'这一关键瓶颈------要么探索受限，陷入熵崩塌；要么探索失控，引发熵爆炸。",
+    "传统方法会失效的根本原因在于：熵正则化的激励是'无差别'的------它假设所有 token、所有位置都同等值得探索。",
+    "研究人员提出选择性熵正则化方法（SIREN），通过结构化约束实现探索过程的精细调控。",
+    "这一方法首次在 RLVR 框架中实现了对探索范围、位置和强度的三重精准控制，为大规模推理模型的稳定训练提供了可靠解决方案。",
+    "实验证明，该方法不仅在多项数学推理基准上取得了显著性能提升，更重要的是，它让模型的探索过程变得更加高效与可控。"
+  ],
+  "tags": [
+    "大语言模型",
+    "强化学习",
+    "模型训练",
+    "推理能力",
+    "熵正则化"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 86,
+  "wordCount": 2557,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760346763000,
+  "publishDateStr": "2025-10-13",
+  "publishDateTimeStr": "2025-10-13 09:12:43"
+}

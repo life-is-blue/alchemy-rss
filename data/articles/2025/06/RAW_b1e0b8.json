@@ -1,0 +1,63 @@
+{
+  "id": "RAW_b1e0b8",
+  "title": "突破通用领域推理的瓶颈！清华 NLP 实验室强化学习新研究 RLPR ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-27",
+  "date": "2025-06-27 02:23:18",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p data-pm-slice=\"0 0 []\"><strong><br></strong></p>\n  <p><strong>余天予，清华大学计算机系一年级博士生，导师为清华大学自然语言处理实验室刘知远副教授。研究兴趣主要包括高效多模态大模型、多模态大模型对齐和强化学习，在 CVPR、AAAI等人工智能领域的著名国际会议和期刊发表多篇学术论文，谷歌学术引用1000余次。</strong></p>\n  <p data-pm-slice=\"0 0 []\">Deepseek 的 R1、OpenAI 的 o1/o3 等推理模型的出色表现充分展现了 RLVR（Reinforcement Learning with Verifiable Reward，基于可验证奖励的强化学习）的巨大潜力。</p>\n  <p data-pm-slice=\"0 0 []\">然而，现有方法的应用范围局限于数学和代码等少数领域。面对自然语言固有的丰富多样性，依赖规则验证器的方法难以拓展到通用领域上。</p>\n  <p>针对这一关键挑战，清华大学自然语言处理实验室提出了一项关键性技术 —— 基于参考概率奖励的强化学习（Reinforcement Learning with Reference Probability Reward，<strong>RLPR</strong>）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/efae3b50-f40a-44b0-8ab3-6dfa80b61700/public\" data-ratio=\"0.9213930348258706\" data-s=\"300,640\" data-type=\"png\" data-w=\"1005\" type=\"block\" data-backw=\"578\" data-backh=\"533\" data-imgfileid=\"503492255\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/bb640834-a755-4369-9da9-fb2b3876c13c/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：RLPR: Extrapolating RLVR to General Domains without Verifiers</p></li>\n   <li>\n    <p>论文地址：https://github.com/OpenBMB/RLPR/blob/main/RLPR_paper.pdf</p></li>\n   <li>\n    <p>GitHub 仓库：https://github.com/OpenBMB/RLPR</p></li>\n  </ul>\n  <p>这项技术通过 Prob-to-Reward 方法显著提高了概率奖励（Probability-based Reward, PR）的质量，相比基于似然度的基线方法取得了明显更佳的性能优势和训练稳定性。</p>\n  <p>同时，RLPR 提出基于奖励标准差的动态过滤机制，进一步提升强化学习的稳定性和性能提升。目前 RLPR 相关代码、模型、数据、论文均已开源。</p>\n  <p><strong>PR 为何有效？挖掘模型的内在评估</strong></p>\n  <p>研究团队观察到，大语言模型（LLM）在推理过程中对于参考答案的生成概率直接反映了模型对于本次推理的质量评估。也就是说，模型的推理越正确，其生成参考答案的概率通常就越高。</p>\n  <p>在论文中，研究团队给出了一个具体示例：当模型在输出 o2 中错误地把选项 A 排在了第二位时，可以观察到参考答案在第二个正确选项位置上的<strong>生成概率出现了显著下降</strong>。这一现象清晰地表明，PR 能够精准捕捉模型对于自身推理质量的判断，并且与模型推理的正确性表现出高度相关性。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/07c4db2f-1067-43d8-2857-2ec0e9130e00/public\" data-ratio=\"0.26296296296296295\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"152\" data-imgfileid=\"503492264\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/416d8237-c8b6-47cd-bd98-a2cdcc9514ff/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; PR 示例，更深的颜色代表更大的输出概率</sup></em></p>\n  <p><strong>RLPR 核心特点</strong></p>\n  <p><strong>领域无关的高效奖励生成</strong></p>\n  <p>现有 RLVR 方法通常需要投入大量的人力和工程资源，为每个领域编写特定的验证规则，相比之下，RLPR 仅需要简单的一次前向传播（forward pass）就可以生成奖励分数。通过使用<strong>参考答案的生成概率均值</strong>作为奖励。这种方法能够有效地应对自然语言固有的复杂多样性。</p>\n  <p>如下图所示（右侧示例），基于规则匹配的方式无法识别出 y2 和 y3 和参考答案语义等价，而 RLPR 的 PR 机制准确地给予了这两个答案更高的分数。</p>\n  <section>\n   <img data-backh=\"206\" data-backw=\"578\" data-imgfileid=\"503492265\" data-ratio=\"0.35555555555555557\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6f6d09f3-dd2e-4f05-508e-b22700b87d00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/730d0836-95f4-4a67-a521-6b402a16ee34/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; RLPR 与现有 RLVR 范式的对比</sup></em></p>\n  <p><strong>奖励纠偏和动态过滤</strong></p>\n  <p>基础的 PR 已经呈现出和回答质量很高的相关性，但是仍然受到问题和参考答案风格等无关因素的干扰（即存在偏差）。为此，研究团队提出构建一个不包含思维链过程（z）的对照奖励，并通过做差的方式去除无关因素对于分数的影响，实现奖励纠偏。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8e3a0fa4-e621-4e04-d3be-c50ae3c6fe00/public\" data-ratio=\"0.044444444444444446\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"578\" data-backh=\"26\" data-imgfileid=\"503492266\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/5bab95b3-68d2-486e-aa25-31ac84596962/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-backh=\"25\" data-backw=\"578\" data-imgfileid=\"503492267\" data-ratio=\"0.04259259259259259\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/433f0eeb-74f5-4ff6-3579-74d04b8cef00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/6a2db608-abfc-46f3-a464-193eae3e4d8b/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>传统基于准确率（Accuracy Filtering）的样本过滤方法难以适用于连续的 PR 值。RLPR 提出基于奖励标准差的动态过滤机制，保留那些取得较高奖励标准差的样本用于训练，有效提升了训练的稳定性和效果。考虑到训练过程中奖励的标准差会持续变化，RLPR 进一步采用指数移动平均（EMA）的方式持续动态更新过滤阈值。</p>\n  <p><strong>可靠的奖励质量和框架鲁棒性</strong></p>\n  <p>研究团队通过 ROC-AUC 指标定量评估了不同来源奖励的质量。结果表明，PR 在 0.5B 规模即取得了显著优于规则奖励和验证器模型奖励的质量。同时，通用领域奖励质量随着模型能力的增强可以进一步提高到 0.91 水平。</p>\n  <section>\n   <img data-backh=\"367\" data-backw=\"578\" data-imgfileid=\"503492268\" data-ratio=\"0.6341880341880342\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/151a82e7-db71-4e91-b025-2b7fee087500/public\" data-type=\"png\" data-w=\"585\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/cf9fd07d-f588-4398-8593-a7852431e2c4/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PR 奖励质量优于规则奖励和验证器模型奖励</sup></em></p>\n  <p>为了验证框架的鲁棒性，研究团队使用多种不同的训练模板结合 RLPR 训练 Qwen2.5 3B 模型，并观察到 RLPR 在不同训练模板上都可以取得稳定的性能提升。</p>\n  <section>\n   <img data-backh=\"160\" data-backw=\"578\" data-imgfileid=\"503492269\" data-ratio=\"0.27685185185185185\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0cbecd67-5e02-46c8-94c5-e93b2a369a00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/e16f8128-6187-4ccf-8a1a-85a55ad9017e/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; RLPR 对不同训练模板的鲁棒性</sup></em></p>\n  <p>研究团队还进一步在 Gemma、Llama 等更多系列的基座模型上进行实验，验证 RLPR 框架对于不同基座模型均可以稳定提升模型的推理能力，并超过了使用规则奖励的 RLVR 基线。</p>\n  <section>\n   <img data-imgfileid=\"503492270\" data-ratio=\"0.5518518518518518\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fd403c08-960f-4eae-19ce-7ec66f31e500/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/e02ca838-91b3-4c4f-85f3-d6809f5e460d/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; RLPR 在 Gemma、Llama、Qwen 等不同基座模型上均稳定提升推理能力</sup></em></p>\n  <p><strong>总结</strong></p>\n  <p>RLPR 提出了创新的 Prob-to-Reward 奖励机制，解决了现有 RLVR 范式的领域依赖问题。通过在 Gemma、Llama、Qwen 等主流模型系列上的广泛验证，RLPR 不仅证明了其卓越的有效性和相对于传统规则奖励的显著优势，更在推动强化学习（RL）向更大规模（scaling）发展的道路上，迈出了坚实而有力的一步。</p>\n  <p>更多研究细节，可参考原论文。</p>\n \n",
+  "aiSummary": "清华大学提出 RLPR 技术，通过参考概率奖励和动态过滤机制解决强化学习在通用领域的应用难题，并在多种基座模型上验证有效。",
+  "oneSentenceSummary": "清华大学提出 RLPR 技术，通过参考概率奖励和动态过滤机制解决强化学习在通用领域的应用难题，并在多种基座模型上验证有效。",
+  "summary": "清华大学自然语言处理实验室针对现有基于可验证奖励的强化学习（RLVR）方法在通用领域应用的局限性，提出了创新的基于参考概率奖励的强化学习（RLPR）技术。该技术通过 Prob-to-Reward 方法提高概率奖励质量，并引入奖励纠偏和基于标准差的动态过滤机制提升训练稳定性。实验证明，RLPR 的奖励质量 ROC-AUC 达到 0.91，显著优于传统规则奖励。在 Gemma、Llama、Qwen 等多种基座模型上的验证表明，RLPR 能稳定提升模型推理能力。该技术为强化学习在更大规模应用提供了新思路。",
+  "mainPoints": [
+    {
+      "point": "RLPR 通过参考概率奖励解决 RLVR 的领域依赖问题",
+      "explanation": "利用模型生成参考答案的概率作为奖励，摆脱了对特定领域验证规则的依赖，实现了领域无关的高效奖励生成。"
+    },
+    {
+      "point": "Prob-to-Reward 方法结合奖励纠偏显著提升奖励质量",
+      "explanation": "通过改进概率奖励计算和去除无关因素干扰，RLPR 的奖励质量 ROC-AUC 达到 0.91，显著优于传统方法。"
+    },
+    {
+      "point": "动态过滤机制增强训练稳定性",
+      "explanation": "基于奖励标准差的动态过滤机制结合 EMA 更新策略，有效筛选训练样本，提升了强化学习的效果和稳定性。"
+    },
+    {
+      "point": "RLPR 在多种基座模型上验证有效",
+      "explanation": "在 Gemma、Llama、Qwen 等不同系列的基座模型上，RLPR 均能稳定提升模型的推理能力，证明了框架的鲁棒性。"
+    },
+    {
+      "point": "技术成熟度高且已开源",
+      "explanation": "RLPR 相关代码、模型、数据和论文均已开源，为学术界和工业界提供了可直接应用的解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "RLPR 提出了创新的 Prob-to-Reward 奖励机制，解决了现有 RLVR 范式的领域依赖问题",
+    "研究团队观察到，大语言模型（LLM）在推理过程中对于参考答案的生成概率直接反映了模型对于本次推理的质量评估",
+    "RLPR 提出基于奖励标准差的动态过滤机制，保留那些取得较高奖励标准差的样本用于训练，有效提升了训练的稳定性和效果",
+    "PR 在 0.5B 规模即取得了显著优于规则奖励和验证器模型奖励的质量，ROC-AUC 达到 0.91",
+    "RLPR 不仅证明了其卓越的有效性和相对于传统规则奖励的显著优势，更在推动强化学习（RL）向更大规模（scaling）发展的道路上，迈出了坚实而有力的一步"
+  ],
+  "tags": [
+    "强化学习",
+    "大语言模型",
+    "清华大学",
+    "RLPR",
+    "自然语言处理"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1709,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750990998000,
+  "publishDateStr": "2025-06-27",
+  "publishDateTimeStr": "2025-06-27 02:23:18"
+}

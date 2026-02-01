@@ -1,0 +1,65 @@
+{
+  "id": "RAW_122ffb04",
+  "title": "为什么 AI 明明写后端更爽，但却都网传 AI 取代前端，而不是 AI 取代后端？就离谱...昨天发完 手写代码\"已死\"",
+  "url": "https://juejin.cn/post/7582528397865254939",
+  "date": "2025-12-12 04:11:06",
+  "author": "程序员Sunday",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body cache result\">\n   <p>大家好，我是 Sunday。</p>\n   <p>昨天发完 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2F_ha5pViynB6CAOr8-v91QA\" target=\"_blank\" title=\"https://mp.weixin.qq.com/s/_ha5pViynB6CAOr8-v91QA\" ref=\"nofollow noopener noreferrer\">手写代码\"已死\"？深度体验 Gemini 3 Pro 和 Claude Sonnet 4.5 后的 72 小时 </a> 后，后台私信直接爆了。</p>\n   <p>大家的关注点出奇的一致，但是却并不是我提到的薪资差距，<strong>而是文中我随口提的一句话：</strong></p>\n   <blockquote>\n    <p><strong>“用 AI 写后端比写前端厉害多了。但为什么大家总觉得 AI 要取代前端，而不是后端？”</strong></p>\n   </blockquote>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/6c914606f28e4f1ea61d371ed55b9b1a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg56iL5bqP5ZGYU3VuZGF5:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766117466&amp;x-signature=3bR09qoFejQxbJfC1Cd9sxn%2FU0k%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>很多做后端的同学不服气，跑来跟我对线：“Sunday，你懂不懂后端？后端涉及高并发、微服务、分布式事务，AI 怎么可能搞得定？”</p>\n   <p>也有前端同学很焦虑：“是不是前端真的要完了？我还需要继续学吗？”</p>\n   <p>别急。今天是 12 月 12 号，距离 2026 年只剩不到 20 天。在各大厂开始锁 HC（Headcount）、大家开始摸鱼写年终总结的 <strong>“垃圾时间”</strong> 里，我想和大家 <strong>深度、\"赤裸\"(请不要想歪了...)</strong> 地聊聊这个话题。</p>\n   <p>这不仅仅是“前端 vs 后端”的技术之争，更是我们每个人在 <strong>2026 年保住饭碗</strong> 的底层逻辑。</p>\n   <h2 data-id=\"heading-0\">并不是“后端更难”，而是“上下文”不同</h2>\n   <p>首先，我要抛出一个反直觉的结论：<strong>单纯从代码生成的质量来看，AI 写后端代码（Python/Java/Go），其实比写前端代码（JS/TS/CSS）要强得多。</strong></p>\n   <p>为什么？因为后端逻辑通常是线性的、严谨的。</p>\n   <ul>\n    <li>输入一个参数 -&gt; 查数据库 -&gt; 做个计算 -&gt; 返回结果。</li>\n    <li>这种逻辑，LLM（大语言模型）理解起来毫不费力。</li>\n   </ul>\n   <p>反观前端：</p>\n   <ul>\n    <li>CSS 的层叠上下文（Stacking Context）</li>\n    <li>React 的闭包陷阱</li>\n    <li>Vue 的响应式原理</li>\n    <li>还有那该死的浏览器兼容性，以及 <strong>最重要的</strong> UI 还原度</li>\n   </ul>\n   <p>这些东西充满了“难以被机器理解的东西”，AI 会经常写出“不是这里差点，就是那里差点”，无法复原设计图的代码。</p>\n   <p><strong>但是！</strong> 为什么大家依然觉得 <strong>前端更容易被取代</strong>？</p>\n   <p>核心原因只有两个：</p>\n   <ol>\n    <li><strong>颗粒度的细化！</strong></li>\n    <li><strong>IDE 的支持！</strong></li>\n   </ol>\n   <h3 data-id=\"heading-1\">1. 颗粒度的细化</h3>\n   <p>前端开发在这十年做了一件最伟大的事，就是 <strong>组件化</strong>（React/Vue）。</p>\n   <p>我们把页面拆成了 Header、Sidebar、Button、List。每一个组件都是 <strong>相对独立</strong> 的。</p>\n   <p>这就给 AI 提供了一个 <strong>完美的切入点</strong>。</p>\n   <p>你想想，当你用 Cursor 或者 Windsurf 写代码时，你是不是通常只把当前这个 <code>.vue</code> 或者 <code>.tsx</code> 文件投喂给 AI？</p>\n   <p>因为前端的逻辑 <strong>高度内聚</strong> 在组件内部。AI 只需要理解这 200 行代码，就能完美地帮你重构、加功能、改样式。它不需要知道你隔壁页面的路由是怎么配置的，也不需要知道你的全局 Store 里存了什么（大部分时候）。<code>PS：</code> 我并不是说 AI 不会理解全局，事实上现在的 <code>AI 已经可以很好的理解全局代码了</code></p>\n   <p><strong>这就是为什么前端觉得 AI 好用，老板觉得前端好裁。</strong></p>\n   <p>因为任务被颗粒化了，颗粒化到连外行都能用 AI 拼凑出一个像模像样的页面。虽然无法完美还原设计图，但是如果让 AI 自行设计样式的话，那么是完全可以达到商用水平的。即：<strong>无设计图，AI 发挥，则可超过一般设计师的设计</strong></p>\n   <p><strong>再看看后端。</strong></p>\n   <p>后端的复杂，从来不在于某一个函数的实现，而在于 <strong>关系</strong>。</p>\n   <ul>\n    <li>这个接口改了，会不会影响那个微服务的调用？</li>\n    <li>这个字段动了，会不会导致两年前写的那个报表任务挂掉？</li>\n    <li>这个缓存策略改了，会不会在半夜 12 点引发雪崩？</li>\n   </ul>\n   <p>这些逻辑，往往分散在几十个服务、上百个配置文件、以及 <strong>只有老员工脑子里才知道的“祖传规矩”</strong> 里。</p>\n   <p>目前的 AI 模型（哪怕是 Gemini 3 pro 或 Claude Sonnet 4.5），它们的 <strong>Context Window（上下文窗口）</strong> 虽然已经很大了，但依然无法装下整个公司 <strong>10 年积累的后端架构和业务逻辑</strong>。</p>\n   <p>所以，后端同学目前的安全感，其实是来自于 <strong>“业务逻辑的极度耦合”</strong> 和 <strong>“系统的不可维护性”</strong>。</p>\n   <p>说难听点：<strong>是因为代码写得烂且复杂，AI 才看不懂。</strong> 这不算什么值得骄傲的护城河，但在 2025 年，这确实救了很多人的命。</p>\n   <h3 data-id=\"heading-2\">02：IDE 的支持</h3>\n   <p>说起 AI 编程工具，那么大家想到的肯定是 <code>cursor、Github Copilot</code> 等。但是，大家有没有发现这些 IDE 大部分都是用来写前端代码的工具。虽然他们可以写后端代码，但是后端人却依然习惯使用 IDEA（注：这里的后端仅指 <code>java</code>不涉及 Node、Python 等）</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b3d4730bda234f97abe5b64213eb2f76~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg56iL5bqP5ZGYU3VuZGF5:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766117466&amp;x-signature=zYaH9RQlV0CqJMlot63wUssoF5U%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这就导致了一个非常有意思的现象：<strong>工具的壁垒，意外成了后端的掩体。</strong></p>\n   <p>众所周知，<code>Cursor</code> 是基于 VS Code 二次开发的。而在 Java / Go 的庞大生态里，JetBrains 系列（IntelliJ IDEA, GoLand）才是绝对的统治者。</p>\n   <p>对于后端同学来说，IDEA 强大的静态分析、重构能力、以及对 Maven/Gradle 复杂构建工具的支持，是 VS Code 很难在短期内追平的。这就导致很多后端同学<strong>想用 Cursor 却用得不顺手</strong>，被迫留在了老牌 IDE 里，从而在物理上“隔离”了一部分 AI 的冲击。</p>\n   <p><strong>但这只是暂时的。</strong> 随着 JetBrains AI 的发力以及 Cursor 对 Java 支持的完善，这层窗户纸迟早要破。</p>\n   <p>而当这层窗户纸捅破之后，真正的危机才刚刚开始。</p>\n   <p>当然，以上内容 <strong>仅为个人见解</strong>，非喜勿喷... 如果一定要喷，请轻喷...</p>\n   <h2 data-id=\"heading-3\">12月该准备什么？</h2>\n   <p>说了这么多理论，供大家参考就可以。</p>\n   <p>但是，我相信大多数的同学看文章也不是光想看看热闹的。大家想要的还是 <strong>现在我们应该怎么做？</strong></p>\n   <p>落地到 <strong>今天（2025 年 12 月 12 号）</strong>，这一天，我们该做什么？</p>\n   <p>现在的招聘市场很奇妙：</p>\n   <ul>\n    <li><strong>大厂锁 HC：</strong> 只有零星的补录，主要在盘点年终奖和裁员名单。</li>\n    <li><strong>中小厂在观望：</strong> 想招人，但想招“全能侠”，价格给得还低。</li>\n   </ul>\n   <p>很多同学会认为这是 <strong>“年底垃圾时间”</strong>。</p>\n   <p>从而导致，大多数人这时候选择躺平，等年终奖，或者等明年“金三银四”。<strong>大错特错！</strong></p>\n   <p>Sunday 阅人无数，可以负责任地告诉你：<strong>每年的 12 月和 1 月，是普通人实现“职场超车”的黄金窗口期。</strong></p>\n   <p>为什么？因为这时候竞争对手最少，而面试官（如果还在招人的话）是最急的。更重要的是，这一个半月，足够把 <strong>针对面试做好充足准备</strong>。</p>\n   <p>所以，好好的准备你的简历，好好的深挖你的业务项目，抓住年底的机会，尽快拿到中大厂的 offer。因为只有进入到更大的平台，你才可以真正实现薪资的跳跃！</p>\n   <h2 data-id=\"heading-4\">写在最后</h2>\n   <p>文章的最后，我想聊聊心态。</p>\n   <p>昨天文章发出后，有一位 90 后的同学问我，说：“Sunday 老师，我觉得我们 90 后就是被放弃的一代。好不容易学个技术上个班，技术更新的那么快，根本学不动。现在 AI 出来了，程序员是不是都要被淘汰了？”</p>\n   <p>不过，话说回来。虽然我也是 90 后，但是我不这么认为。</p>\n   <p>AI 本质上是一个 <strong>杠杆</strong>。</p>\n   <blockquote>\n    <p>它会放大你的弱点，同时也会放大你的优势！对于普通人而言，AI 是极其富有创造力的工具，它可以让你一个人就能活成一支优秀的团队！</p>\n   </blockquote>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章深度探讨 AI 在前端和后端代码生成方面的差异与误解，分析了 AI 更易“取代”前端而非后端的原因，并给出年末职场发展建议。",
+  "oneSentenceSummary": "文章深度探讨 AI 在前端和后端代码生成方面的差异与误解，分析了 AI 更易“取代”前端而非后端的原因，并给出年末职场发展建议。",
+  "summary": "作者针对 AI 取代编程工作的热门话题，特别是“AI 更易取代前端而非后端”的说法进行了深入分析。他指出，从代码生成质量上看，AI 在后端开发上表现更优，因为后端逻辑更线性严谨。然而，前端的组件化和任务颗粒度细化，以及当前前端 AI 开发工具的普及度，使得 AI 在前端领域的介入更为直观和高效。相反，后端复杂的业务逻辑耦合和系统庞大的上下文窗口是 AI 目前难以逾越的障碍，这种“安全感”是暂时的。文章进一步指出，AI 编程 IDE 对前端支持更成熟，间接保护了后端开发，但这种壁垒终将被打破。最后，作者针对职场“垃圾时间”的误区，提倡利用年末这段时间积极准备，实现职场超车，并强调 AI 是放大个人优势的强大杠杆。",
+  "mainPoints": [
+    {
+      "point": "AI 在后端代码生成质量上优于前端，因后端逻辑更线性严谨。",
+      "explanation": "后端业务逻辑如数据库操作、数据计算等模式化强，AI 易于理解和生成。而前端的 UI 还原度、兼容性等细节和难以被机器理解的复杂性（如 CSS 层叠上下文）更难以被 AI 完全掌握，导致生成代码效果不佳。"
+    },
+    {
+      "point": "前端的组件化和任务颗粒度细化使其更易被 AI 赋能或“取代”。",
+      "explanation": "前端组件（如 React/Vue）的高度内聚性，使得 AI 只需理解局部代码即可重构、加功能、改样式，显著降低开发门槛和提高了效率，使“外行也能用 AI 拼凑出像样的页面”。"
+    },
+    {
+      "point": "后端复杂且高度耦合的业务逻辑以及庞大的上下文窗口是 AI 目前的挑战，而非真正的长期护城河。",
+      "explanation": "后端关系的复杂性、涉及几十个服务、上百个配置文件，以及大量“祖传规矩”所形成的庞大上下文，超出了当前 AI 模型的处理能力。这种“看不懂”的代码保护了后端开发者，但被作者认为是“代码写得烂且复杂”的表现，且这种安全感是暂时的。"
+    },
+    {
+      "point": "AI 编程 IDE 对 Java/Go 后端支持的相对滞后，间接保护了后端开发，但这种壁垒将很快消失。",
+      "explanation": "Cursor 等 AI 编程工具多基于 VS Code，更受前端青睐。而 Java/Go 后端开发者习惯使用 JetBrains 系列 IDE，由于工具壁垒，部分后端开发者尚未充分感受到 AI 冲击。但随着 JetBrains AI 和 Cursor 对 Java 支持的完善，这一隔离将被打破。"
+    },
+    {
+      "point": "年末是职场超车的黄金窗口期，个人需积极利用 AI 工具提升竞争力。",
+      "explanation": "在“垃圾时间”多数人选择躺平，但此时竞争对手少、面试官需求急。利用年末的 1-2 个月充分准备简历和面试，争取高薪 offer。同时，将 AI 视为“杠杆”，放大个人优势，成为“一支优秀的团队”而不仅仅是工具使用者。"
+    }
+  ],
+  "keyQuotes": [
+    "用 AI 写后端比写前端厉害多了。但为什么大家总觉得 AI 要取代前端，而不是后端？",
+    "单纯从代码生成的质量来看，AI 写后端代码（Python/Java/Go），其实比写前端代码（JS/TS/CSS）要强得多。",
+    "前端开发在这十年做了一件最伟大的事，就是组件化（React/Vue）。这给 AI 提供了一个完美的切入点。",
+    "后端的复杂，从来不在于某一个函数的实现，而在于关系。",
+    "目前的 AI 模型（哪怕是 Gemini 3 pro 或 Claude Sonnet 4.5），它们的 Context Window（上下文窗口）虽然已经很大了，但依然无法装下整个公司 10 年积累的后端架构和业务逻辑。",
+    "每年的 12 月和 1 月，是普通人实现'职场超车'的黄金窗口期。",
+    "AI 本质上是一个杠杆。它会放大你的弱点，同时也会放大你的优势！"
+  ],
+  "tags": [
+    "AI编程",
+    "前端开发",
+    "后端开发",
+    "技术趋势",
+    "职场发展"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 86,
+  "wordCount": 2389,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765512666000,
+  "publishDateStr": "2025-12-12",
+  "publishDateTimeStr": "2025-12-12 04:11:06"
+}

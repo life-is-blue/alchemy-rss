@@ -1,0 +1,57 @@
+{
+  "id": "RAW_10bcafa3",
+  "title": "10GB vs 600MB：我们弃用 GitLab，选择了这个轻量级神器",
+  "url": "https://juejin.cn/post/7582637280217858102",
+  "date": "2025-12-12 08:17:45",
+  "author": "勇哥Java实战",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body cache result\">\n   <p>最近在开发一个类似魔搭（ModelScope）的AI 模型托管平台，需要为每个项目提供独立的仓库服务。</p>\n   <p>最初的方案选择了业界熟知的 GitLab ，但很快就遇到了瓶颈：仅仅是基础的代码托管功能，GitLab全套服务（主进程、PostgreSQL 和 Redis ）在运行一段时间后，内存占用一度逼近 10GB。这对于我们的轻量级项目需求而言，无疑是一个难以承受的“资源黑洞”。</p>\n   <p><strong>最后我们选择了 Gitea 这个轻量级的自托管 Git 解决方案——它不仅将内存占用从10GB降低到 600MB左右，更重要的是提供了完整的API接口，让我们可以深度集成到自己的 AI 平台中。</strong></p>\n   <p>本文将带你快速使用 <strong>Docker 部署 Gitea</strong>，并演示如何创建仓库，以及如何通过 Gitea <strong>REST API</strong> 实现业务定制 。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/bfec6295f82444c39f92a2fbe5eab738~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=mGJNmP47KuVhKFKq6m%2F098dSi88%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-0\">1 部署前置准备</h2>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/3afac8ccd99b4d1383d7e4257f4999f3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=3wLGgxxqjVcjibWBrJh2GHlduWY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <table>\n    <thead>\n     <tr>\n      <th>组件</th>\n      <th>是否必须</th>\n      <th>用途说明</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><strong>数据库（MySQL / PostgreSQL / SQLite）</strong></td>\n      <td>✅ 必须</td>\n      <td>存储核心业务数据：用户、仓库、Issue、PR、权限、LFS 元信息等</td>\n     </tr>\n     <tr>\n      <td><strong>S3 / MinIO（对象存储）</strong></td>\n      <td>➖ 可选</td>\n      <td>用于存储仓库附件、LFS 大文件；没有时使用本地磁盘</td>\n     </tr>\n     <tr>\n      <td><strong>Redis</strong></td>\n      <td>➖ 可选</td>\n      <td>用作缓存、Session、队列后台，提升性能</td>\n     </tr>\n    </tbody>\n   </table>\n   <p>gitea 支持 sqlite 、mysql8 、pg12 ，因为 sqlite 只支持单进程/线程写，性能极差。</p>\n   <p>因为笔者使用 MySQL 最多也最熟悉，所以我们选择前置安装 MySQL 8 。安装完 MySQL 后 ，在数据库中新建数据库 gitea （此时，gitea 数据库并没有任何表）。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c709f0fd8e104b86bec5492677c38dd7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=nAlJuvPLI%2BzIZkXtRzal3s1%2F3mU%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-1\">2 Docker 安装 Gitea</h2>\n   <p>接下来，运行如下命令，使用 Docker 安装 Gitea 。</p>\n   <pre><code class=\"hljs language-bash code-block-extension-codeShowNum\" lang=\"bash\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">docker run -d --name gitea \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">-p 3000:3000 -p 222:22 \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">-v /Users/zhangyong/docker/gitea/data:/data \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\">-v /etc/localtime:/etc/localtime:ro \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\">-v /etc/timezone:/etc/timezone:ro \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"6\">-e USER_UID=1000 \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"7\">-e USER_GID=1000 \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"8\">--restart always \\</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"9\">gitea/gitea:latest</span>\n</code></pre>\n   <p>安装完后第一次访问页面 <a href=\"https://link.juejin.cn?target=http%3A%2F%2Flocalhost%3A3000\" target=\"_blank\" title=\"http://localhost:3000\" ref=\"nofollow noopener noreferrer\">http://localhost:3000</a> :</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/466b6ec6e6724cfdb2e20666e49ab49e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=0krxtc0OhgZn53EUdjmRSOvb6Rk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>如图，我们配置了 数据库 Gitea ，然后点击立即安装 。</p>\n   <blockquote>\n    <p>配置选项将写入以下位置: /data/gitea/conf/app.ini</p>\n   </blockquote>\n   <p>安装完成之后，界面如下：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/eea9a20d8f07490e9f9a402b38c50208~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=kZcSoRRJK4JeJjJ4lsOVsDufaVM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>注册完 root 账号后，进入首页：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/27619bddd35c47e6bd84e6a9c699460c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=CnVDxOI8fttr3NDZvIZS0VvWHWs%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-2\">3 新建仓库</h2>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/70af6a7b9ec24426a192fc5289bc170f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=11sdf08WbvvzNUQQC977rUqWZNY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>如图，创建仓库的界面和 Github 类似，输入仓库名，即可创建成功：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/1c5045d4b9654b33bd8f1adfcff1fe0d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=6M6ypGZh0dKcTJ3kwo33g20EPyQ%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>当我们想克隆 或者 推送仓库时，需要创建用户的 pat （ Access Token ）。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/7cd25975bd8b4a2e9575a12c8996ee0d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=X3YNR68eZJezjSYSILpjeFNpVac%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>创建成功后，界面如下：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e09cc254670b4c859d49f04aa2a4770c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=0WOSJS9CGLii2MBr338zRpLUpVA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>我们将令牌保存好，在克隆仓库时，或者 push 仓库时，需要使用该令牌。</p>\n   <h2 data-id=\"heading-3\">4 调用 API</h2>\n   <p>如图，当我们访问：<a href=\"https://link.juejin.cn?target=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fswagger%23%2Frepository\" target=\"_blank\" title=\"http://localhost:3000/api/swagger#/repository\" ref=\"nofollow noopener noreferrer\">http://localhost:3000/api/swagger#/repository</a> , 可以查看所有的 Gitea 开发 API 。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a942402ba7b54d9fad44bb24aaa56422~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=aHaNzvEVNB1f24p3gNK9wgU9tdA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>如图，我们可以将所有的 Gitea API 封装成如下的 Java 服务：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/29db174249ce4d3dba8292f8b0c7f604~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=KbRkA7gNh5Y4aho0cHmdMkx1FVY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-4\">5 总结</h2>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/63cc142b758947578080af8fd3e2e6b4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YuH5ZOlSmF2YeWunuaImA==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766132265&amp;x-signature=IMQ023ID0EcudPdN69KIBnjwj%2B4%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>上图是笔者调研 Gitea 和 GItlab 的对比图，相比之下 ，Gitea 真是轻量级神器 ，能够完美适配公司业务的需求。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章详细介绍了如何通过 Docker 部署轻量级自托管 Git 服务 Gitea 以替代资源消耗大的 GitLab，并演示了仓库创建和 API 集成。",
+  "oneSentenceSummary": "文章详细介绍了如何通过 Docker 部署轻量级自托管 Git 服务 Gitea 以替代资源消耗大的 GitLab，并演示了仓库创建和 API 集成。",
+  "summary": "文章从作者在构建 AI 模型托管平台时遇到的 GitLab 资源占用问题切入，指出 GitLab 高达 10GB 的内存消耗难以满足轻量级项目需求。随后引出解决方案——Gitea，一个将内存占用降至约 600MB 的轻量级 Git 服务，并强调其提供完整 API 接口，便于深度集成。文章详细介绍了使用 Docker 部署 Gitea 的步骤，包括前置准备（数据库选择 MySQL）、Docker 命令部署、首次访问安装配置和用户注册。接着演示了 Gitea 中仓库的创建过程和个人访问令牌（PAT）的生成与使用。最后，文章展示了如何通过 Gitea 的 REST API 文档查看和封装接口，实现业务定制，并对比 GitLab 强调了 Gitea 的轻量级优势。",
+  "mainPoints": [
+    {
+      "point": "Gitea 作为轻量级 Git 服务，能显著降低资源占用，解决 GitLab 的资源消耗问题。",
+      "explanation": "GitLab 在基础代码托管服务中内存占用高达 10GB，而 Gitea 仅需约 600MB，非常适合资源受限或需要轻量化部署的场景，这对于追求高效率和成本控制的项目至关重要。"
+    },
+    {
+      "point": "Gitea 提供完整的 REST API 接口，便于进行业务系统深度集成和定制开发。",
+      "explanation": "完整的 API 接口使得 Gitea 能够无缝集成到如 AI 平台等更复杂的业务系统中，实现自动化操作（如代码仓库创建、权限管理）和功能扩展，满足特定业务需求，提升开发灵活性。"
+    },
+    {
+      "point": "Docker 容器化部署 Gitea 简便高效，是快速搭建私有 Git 服务的推荐方式。",
+      "explanation": "文章提供了详细的 Docker 部署步骤和配置指南，大大降低了 Gitea 服务的部署和管理复杂度。这种容器化部署方式，使得开发者可以快速构建、迁移和扩展私有的代码托管环境，尤其适合开发测试环境或小型团队。"
+    },
+    {
+      "point": "个人访问令牌（PAT）机制保障了对 Gitea 仓库的授权访问和操作安全。",
+      "explanation": "文章演示了如何创建和使用 PAT 进行仓库的克隆、推送等操作。PAT 作为一种安全的认证方式，避免了直接暴露用户密码，为自动化脚本和外部应用访问 Gitea 提供了灵活且安全的凭证管理方式。"
+    }
+  ],
+  "keyQuotes": [
+    "仅仅是基础的代码托管功能，GitLab 全套服务（主进程、PostgreSQL 和 Redis ）在运行一段时间后，内存占用一度逼近 10GB。",
+    "最后我们选择了 Gitea 这个轻量级的自托管 Git 解决方案------它不仅将内存占用从 10GB 降低到 600MB 左右，更重要的是提供了完整的 API 接口，让我们可以深度集成到自己的 AI 平台中。",
+    "Gitea 真是轻量级神器 ，能够完美适配公司业务的需求。"
+  ],
+  "tags": [
+    "Git",
+    "Gitea",
+    "GitLab",
+    "Docker",
+    "代码托管"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 888,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765527465000,
+  "publishDateStr": "2025-12-12",
+  "publishDateTimeStr": "2025-12-12 08:17:45"
+}

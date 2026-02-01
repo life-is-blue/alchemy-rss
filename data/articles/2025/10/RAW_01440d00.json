@@ -1,0 +1,55 @@
+{
+  "id": "RAW_01440d00",
+  "title": "谁是 2025 年度最好的编程语言？",
+  "url": "https://www.qbitai.com/2025/10/338993.html",
+  "date": "2025-10-01 02:19:28",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"61\">Jay 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"62\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">Python依然是最好的语言。</p>\n  <p data-track=\"3\">在刚刚出炉的IEEE Spectrum 2025编程语言排行榜上，Python再次斩获最受欢迎的编程语言。</p>\n  <p data-track=\"4\"><strong>不仅是冠军，而且是「一骑绝尘」的断崖式领先——</strong>第二名Java和Python的差距相当悬殊。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251001033749_deee762bf7aae353109d63f3b05ccf91.png\" alt=\"谁是2025年度最好的编程语言？\" data-src=\"https://image.jido.dev/20251001033749_deee762bf7aae353109d63f3b05ccf91.png\">\n  </div>\n  <p data-track=\"5\">更可怕的是，Python仍保持着迅猛的增长速度，一、二名之间的鸿沟还在越拉越大。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"6\">Python十连冠</h2>\n  <p data-track=\"7\">继连续九届蝉联IEEE Spectrum榜首后，Python今年再次发力，拿下了编程语言综合排名榜十连冠。</p>\n  <p data-track=\"8\">而且，<strong>这是Python首次在综合排名、增长速度、就业导向等三个板块都问鼎第一，也是IEEE榜单12年来第一个三冠王。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"谁是2025年度最好的编程语言？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251001033749_fc107c5ba2c990051800d6fda7221d2f.png\" data-src=\"https://image.jido.dev/20251001033749_fc107c5ba2c990051800d6fda7221d2f.png\">\n  </div>\n  <p data-track=\"9\">想当年，Python刚出道时就因简洁性闻名遐迩，因此逐渐替代Java成为了高校的教学语言。</p>\n  <p data-track=\"10\">随后，NumPy、SciPy、matplotlib、pandas等库相继问世，让Python迅速成长为科研、金融、数据分析领域的王牌。</p>\n  <p data-track=\"11\">在这一过程中，<strong>网络效应发挥了巨大作用。</strong></p>\n  <p data-track=\"12\">越来越多的程序员选择Python，并基于它开发了各类工具，在开源社区贡献了海量的代码和解决方案，逐渐构建出属于Python的生态护城河。</p>\n  <p data-track=\"13\">AI则进一步放大了这种优势。</p>\n  <p data-track=\"14\">与其他编程语言相比，Python拥有更丰富的训练数据，这让Claude等大模型在使用Python时表现更出色。反过来，这也吸引了更多零基础的AI用户，把Python作为首选语言。</p>\n  <p data-track=\"15\"><strong>万万没想到，Python竟然比程序员先吃到了人工智能的红利。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"谁是2025年度最好的编程语言？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251001033750_d30a93bb7e9b9ce4dc230a9c17d8e3db.gif\" data-src=\"https://image.jido.dev/20251001033750_d30a93bb7e9b9ce4dc230a9c17d8e3db.gif\">\n  </div>\n  <p data-track=\"16\">有人欢喜有人愁，Python是成了AI的“亲儿子”，但JavaScript可就倒了大霉了。</p>\n  <p data-track=\"17\">今年，<strong>JavaScript在综合排名中的波动最大，从去年的前三直接跌至第六。</strong></p>\n  <p data-track=\"18\">JavaScript的优势在于网页编写，而这一山峰正在被Vibe Coding的水位线淹没，讨论JavaScript的人越来越少了。</p>\n  <p data-track=\"19\">数据分析之王「SQL」的宝座也受到了冲击。</p>\n  <p data-track=\"20\">要知道，SQL多年来一直是最受雇主欢迎的技能，也是程序员简历上的必备技能。</p>\n  <p data-track=\"21\">但这道屹立多年的防线也被Python攻破了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谁是2025年度最好的编程语言？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251001033749_72303cf47adceb069f8c1954ef67c834.png\" data-src=\"https://image.jido.dev/20251001033749_72303cf47adceb069f8c1954ef67c834.png\">\n  </div>\n  <p data-track=\"22\">不过，SQL的处境依然比JavaScript安全得多。即便不再耀眼，它仍是极具价值的就业技能，和Python的差距并不大。</p>\n  <p data-track=\"23\">这是因为SQL的定位更垂直，它是所有企业数据库的标准语言。</p>\n  <p data-track=\"24\">即便Python在通用编程方面很厉害，但要访问数据库时依旧离不开SQL。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"25\">排名背后：编程语言的失速时刻</h2>\n  <p data-track=\"26\">在编程语言头部效应愈发显著的同时，程序员的工作方式也在发生微妙变化。</p>\n  <p data-track=\"27\">最直观的，就是<strong>曾经风靡一时的「社区文化」正在衰落。</strong></p>\n  <p data-track=\"28\">程序员在问答网站上的活跃度急剧下降，遇到问题不再第一时间去社区发帖，而是习惯于直接向大模型提问，或者依赖Cursor等智能体自动补全。</p>\n  <p data-track=\"29\">数据也印证了这一点：</p>\n  <p data-track=\"30\">2023年3月，Stack Overflow新增问题约8.7万个，但到2024年3月，这一数字降至约5.88万个，仅一年就下滑32.5%。</p>\n  <p data-track=\"31\"><strong>到2024年12月，情况更为惨淡，同比下降已达40%。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"谁是2025年度最好的编程语言？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251001033749_01cfb0f9614642e6ee8d2d145483c5ce.png\" data-src=\"https://image.jido.dev/20251001033749_01cfb0f9614642e6ee8d2d145483c5ce.png\">\n  </div>\n  <p data-track=\"32\">不少程序员直言，社区的氛围有时会令人不舒服，他们现在遇到问题更愿意咨询AI：</p>\n  <blockquote>\n   <p data-track=\"33\">那里的人真是太刻薄了。他们会因为你没有提前搜索过而指责你，让你觉得自己很蠢，而且大多数时候，他们只是瞥一眼就走开了，根本不会帮你。\n    <br class=\"sysbr\">\n    LLM出现之后好多了，没有哪个人工智能会因为嫌你笨就欺负你，然后一走了之。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"谁是2025年度最好的编程语言？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251001033749_ba2a9a691f7be3a6ee57e3acd1af369f.png\" data-src=\"https://image.jido.dev/20251001033749_ba2a9a691f7be3a6ee57e3acd1af369f.png\">\n  </div>\n  <p data-track=\"34\">不止是学习方式，程序员的工作逻辑也在悄然发生变化。</p>\n  <p data-track=\"35\">无论是老手借助AI处理繁琐的任务，还是新手尝试编写完整的Web应用，AI的介入让程序员逐渐摆脱对编程细节的执着。</p>\n  <p data-track=\"36\">首先是语法细节，然后是流程控制和函数……这些过去需要死磕的内容，正越来越多地交给AI处理。</p>\n  <p data-track=\"37\">很快，源代码的细枝末节将不再重要，也不会有人再为该用制表符还是空格缩进而大打出手。</p>\n  <p data-track=\"38\"><strong>甚至，程序员可能也不必再为选择哪门语言而困扰，因为答案只会剩下一个。</strong></p>\n  <p data-track=\"39\">过去编程语言之所以百花齐放，是因为面对特定任务，总有某种语言更有优势——你不会用R语言去控制洗衣机，也不会反过来用C语言去跑大规模统计分析。</p>\n  <p data-track=\"40\">但从技术角度讲，这并非不可能，只不过对于人类来说难如登天，我们没有太多精力去做这种吃力不讨好的事情。</p>\n  <p data-track=\"41\">不过AI可没有这种烦恼，只要有足够的训练数据，它就能用指定语言解决任何问题。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谁是2025年度最好的编程语言？\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/b59fc90d91d953d6d02c3c88c850cd13.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/b59fc90d91d953d6d02c3c88c850cd13.gif\">\n  </div>\n  <p data-track=\"42\">这意味着，<strong>马太效应将进一步加剧，编程语言的多样性会显著下降。</strong></p>\n  <p data-track=\"43\">一方面，主流通用语言会在用户正反馈中获得指数级增长，固化「强者恒强」的格局。</p>\n  <p data-track=\"44\">另一方面，非主流语言因缺乏训练数据，AI难以支持，程序员上手门槛高，因此会被进一步边缘化。</p>\n  <p data-track=\"45\">就像今天的开发者几乎不再关心CPU指令集和底层的汇编语言一样，未来编程应该用Python还是Java，可能也会变成无关紧要的细节。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"46\">AI正在终结编程语言？</h2>\n  <p data-track=\"47\">目前，<strong>编程正在经历自20世纪50年代初编译器问世以来最大的一次变革。</strong></p>\n  <p data-track=\"48\">像Python这样的高级语言，最初的使命其实很朴素：</p>\n  <p data-track=\"49\">1、创建抽象层，让程序员不必再亲手操作寄存器、内存、指令集。</p>\n  <p data-track=\"50\">2、在代码出错时给出报错提示，而不是直接崩溃，避免程序员“搬起石头砸自己的脚”。</p>\n  <p data-track=\"51\">从计算机角度看，高级语言从来不是必需品，只不过人类需要一种更便利的交互方式。</p>\n  <p data-track=\"52\">但可惜的是，高级语言的出现也没有让编程简单到哪去，对于大多数人而言，自然语言才是才是最理想的。</p>\n  <p data-track=\"53\">如今AI仍然只是在帮我们提高写代码的效率，但未来，<strong>是否能跳过这个非必要环节，让我们能直接通过Prompt来与编译器对话？</strong></p>\n  <p data-track=\"54\">这种模式有一个缺点，就是会让编程成为和大模型一样无法解释的黑匣子。</p>\n  <p data-track=\"55\">不过，虽然无法再直接阅读源代码，但我们可以把程序拆成模块化的功能单元，通过监管这一个个单元来确保程序的可靠性。</p>\n  <p data-track=\"56\">届时，程序员无需再去维护成千上万行的源代码，只要调整提示符，就能通过AI一键优化软件。</p>\n  <p data-track=\"57\">那么在没有源代码的未来，程序员的角色是什么？</p>\n  <p data-track=\"58\">没有一个确定的答案，但我们<strong>可以肯定的是：底层的架构设计与算法选择依然是核心能力。</strong></p>\n  <p data-track=\"59\">编程语言或许会退场，但代码的底层逻辑不会。</p>\n  <p data-track=\"60\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://spectrum.ieee.org/top-programming-languages-2025?utm_source=homepage&amp;utm_medium=hero&amp;utm_campaign=2025-09-25&amp;utm_content=hero1\n   <br class=\"sysbr\">\n   [2]https://hodgef.com/blog/stack-overflows-decline-how-ai-is-changing-community-engagement-forever-a1ab2/?utm_source=chatgpt.com\n   <br class=\"sysbr\">\n   [3]https://news.ycombinator.com/item?id=41364798&amp;utm_source=chatgpt.com</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "IEEE Spectrum 2025 编程语言排行榜显示 Python 十连冠并首次实现三冠王，同时文章深入分析了 AI 对编程语言生态、开发者社区及未来编程方式的深远影响。",
+  "oneSentenceSummary": "IEEE Spectrum 2025 编程语言排行榜显示 Python 十连冠并首次实现三冠王，同时文章深入分析了 AI 对编程语言生态、开发者社区及未来编程方式的深远影响。",
+  "summary": "文章基于 IEEE Spectrum 2025 年编程语言排行榜，指出 Python 连续十年蝉联最受欢迎编程语言榜首，并首次在综合排名、增长速度和就业导向三个板块均问鼎第一，展现出断崖式领先。文章深入分析了 Python 因简洁性、庞大生态系统及 AI 领域的独特优势而持续增长的现象，同时指出 JavaScript 和 SQL 等语言面临的挑战。更重要的是，文章探讨了 AI 对编程世界的深远影响，包括 Stack Overflow 等编程社区活跃度急剧下降，开发者转而向大模型寻求帮助；AI 介入使得编程细节不再重要，可能加剧编程语言的马太效应，导致多样性下降。最终，文章展望了 AI 时代编程的未来，认为编程语言可能退场，但底层的架构设计与算法选择仍是核心能力，程序员将更多地通过 Prompt 与编译器交互。",
+  "mainPoints": [
+    {
+      "point": "Python 在 IEEE Spectrum 2025 榜单中实现十连冠并首次斩获三冠王。",
+      "explanation": "Python 因简洁性、庞大生态系统及 AI 领域的独特优势，持续保持断崖式领先，成为综合排名、增长速度和就业导向的全面冠军。"
+    },
+    {
+      "point": "AI 正在加速编程社区文化的衰落，改变开发者获取知识的方式。",
+      "explanation": "Stack Overflow 等问答社区活跃度大幅下降，开发者倾向于直接向大模型提问，AI 提供了更友好、高效的解决问题途径。"
+    },
+    {
+      "point": "AI 将加剧编程语言的马太效应，并可能终结编程语言的多样性。",
+      "explanation": "AI 能用指定语言解决任何问题，使得主流通用语言获得指数级增长，非主流语言因缺乏 AI 训练数据而边缘化，未来编程可能只剩少数几种语言。"
+    }
+  ],
+  "keyQuotes": [
+    "Python 依然是最好的语言。",
+    "这是 Python 首次在综合排名、增长速度、就业导向等三个板块都问鼎第一，也是 IEEE 榜单 12 年来第一个三冠王。",
+    "万万没想到，Python 竟然比程序员先吃到了人工智能的红利。",
+    "LLM 出现之后好多了，没有哪个人工智能会因为嫌你笨就欺负你，然后一走了之。",
+    "编程正在经历自 20 世纪 50 年代初编译器问世以来最大的一次变革。"
+  ],
+  "tags": [
+    "编程语言",
+    "Python",
+    "人工智能影响",
+    "IEEE Spectrum",
+    "编程社区"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 90,
+  "wordCount": 2393,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759285168000,
+  "publishDateStr": "2025-10-01",
+  "publishDateTimeStr": "2025-10-01 02:19:28"
+}

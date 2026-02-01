@@ -1,0 +1,63 @@
+{
+  "id": "RAW_898a73",
+  "title": "腾讯大模型战略首次全景亮相！智能体平台重磅上线，从\"落地可用\"到\"智能协同\"",
+  "url": "https://www.qbitai.com/2025/05/286237.html",
+  "date": "2025-05-22 15:11:48",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺<br>\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>智能体的开发门槛，又又又被打下来了！</p>\n  <p>昨天，腾讯云在他们的AI产业应用峰会上，正式上线了全新的智能体开发平台，率先在行业内实现零代码配置多智能体协同构建。</p>\n  <p>除了上线智能体开发平台，腾讯云也对从AI Infra到模型到应用的整个体系来了波全面升级。</p>\n  <p>包括混元系列大模型，也迎来了重磅更新。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b3892825-2f01-45b9-e4f0-c9264b880200/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/81c059bb-36d2-4a22-7e14-a3871c589c00/public\" data-ratio=\"0.5537037037037037\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100312446\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"1\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>腾讯云副总裁吴永坚对量子位表示：“腾讯云在智能体领域的产品布局，是围绕企业真实需求逐步演进的。整体思路是从场景出发，扎实解决实际问题，并推动能力从‘落地可用’逐步迈向‘智能协同’。”</p>\n  <p>从一系列接踵而来的更新当中，可以看到鹅厂的企业级AI产品体系正在变得越来越完整。</p>\n  <p>对腾讯云自身而言，这些发布和更新也意味着其产品能力被进一步补齐。</p>\n  <h2>多智能体开发，零代码搞定</h2>\n  <p>腾讯云智能体开发平台的前身是“大模型知识引擎”。据吴永坚介绍，平台在RAG能力、工作流能力、多Agent协作机制及To B实战场景支持方面具备明显差异化优势。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bcb016c7-e59f-478d-f001-540242efb000/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/534919a0-1ada-4acc-350b-662fbe3a0e00/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100312455\" data-original-style=\"height: auto !important;\" data-index=\"2\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>平台具备先进的RAG（Retrieval-Augmented Generation，检索增强生成）能力，先从知识库中检索信息，再由大模型基于检索结果生成准确可追溯的回答。</p>\n  <p>在具体能力上，在复杂表格问答场景中表现突出；同时支持基于文档自动生成问答对并进行溯源校验，有效降低运营成本。平台还率先实现新旧文档比对与高效决策，支持仅针对增量内容生成问答对，显著减少token消耗。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d392021e-c789-422f-1031-334d2cd33100/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ad42f763-3a7c-4a03-736e-5bb351f3b300/public\" data-ratio=\"0.8611111111111112\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100312444\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"3\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>在支持拖拉拽零代码流程搭建的工作流中，腾讯云智能体平台首次推出了具备全局视野的Agent，支持灵活的节点回退和全局意图洞察，智能控制节点跳转。</p>\n  <p>吴永坚举了个例子，假如让Agent帮忙获取一份天气预报，明确地点和时间后就已经进入了执行环节，但用户突然发现把地点说错了，这时智能体可以回退到地点信息获取节点重新询问，而不是“傻傻的”往前执行而不顾用户反馈。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a89d8e0c-20d8-4fad-1286-8edc28bcca00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0fe5c412-8bad-445b-1122-798b0f989600/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100312456\" data-original-style=\"height: auto !important;\" data-index=\"4\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>此外，腾讯云智能体平台还率先支持了零代码配置多Agent协同转交，灵活配置满足不同的Multi-Agent协同方式的搭建需求。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/09bb67a9-7da3-4940-47e6-39f5beb3c900/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f64dccb9-24ea-4dc7-d33b-c6551a033500/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100312457\" data-original-style=\"height: auto !important;\" data-index=\"5\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>插件生态方面，腾讯云智能体开发平台整合了内部优质能力（如腾讯地图、腾讯医典）、RAG组件（如网页解析、文档解析、Text2SQL）、以及通过MCP协议接入的第三方插件，实现全面开放与能力融合。</p>\n  <p>同时，平台沉淀了很多经过To B实战打磨沉淀的优势，支持平台级、应用级、知识库等完整权限体系配置，同时具备企业级智能体运维的管理后台，真正做到灵活、可控、安全。</p>\n  <p>智能体平台的落地，对基础大模型能力提出了更高要求。腾讯云在大会上还带来了混元系列大模型的最新进展，包括新模型的发布和既有模型的升级。</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     深度思考模型T1全面升级，采用多阶段强化学习训练，竞赛级数学能力提升8%；\n    </section></li>\n   <li>\n    <section>\n     快思考模型Turbo S，在全球arena榜单中上升到全球第八；\n    </section></li>\n   <li>\n    <section>\n     此外还包括视觉深度模型、端到端语音通话模型、生图模型imageV2.0、3D生成模型3D V2.5以及可以实现工业级游戏资产生成的混元游戏模型。\n    </section></li>\n  </ul>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2c870453-6580-463f-294e-f35acee3f100/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/634c3a8d-78f6-4bc8-e56a-e3d3652f6900/public\" data-ratio=\"0.6648148148148149\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100312458\" data-original-style=\"height: auto !important;\" data-index=\"6\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>随着智能体开发平台的上线以及既有AI产品矩阵能力的提升，可以看到腾讯云在大模型领域的产品体系正在日渐完善。</p>\n  <h2>腾讯云为什么要做智能体开发平台？</h2>\n  <p>腾讯云智能体开发平台的出现，顺应了企业AI应用的演进过程，以及在一系列过程中涌现出的用户需求。</p>\n  <p>吴永坚认为，To B是用于生产的严肃场景，用户输入问题的复杂度和多样性比To C场景更高，对输出的回复要求更高，目前大模型能力在To B严肃场景还不能完全满足需求，需通过产品能力体系化去解决。</p>\n  <p>腾讯云智能体开发平台的出现，其实是围绕着企业对于AI应用的多样化需求逐步演进。</p>\n  <p>大模型的产品落地，按照产品形态可以分为：API接入、RAG应用、工作流应用和Agent自主决策的应用。在过去两三年的时间里，企业级大模型应用的发展过程，大概可以分为几个阶段：</p>\n  <p>首先，是最简单的大模型API接入，用户需求直接传递给大模型，由模型根据自身知识返回结果，用以AI聊天、搜索等相对简单的场景，通过更加自然、有趣的交互，帮助企业获取更多流量收益；</p>\n  <p>第二个阶段，通过RAG的加持，可以让大模型结合企业垂直领域的知识提供更加精准、可靠的回复；</p>\n  <p>第三个阶段，通过工作流编排“原子能力”，搭建复杂工作流程，解决企业业务流程定制化的问题。</p>\n  <p>这三种方式，也是过去腾讯云逐步演进并完善的主要智能体构建方式，并且已经交付了众多行业与场景，真正在落地在生产环境中，为企业产生价值。</p>\n  <p>近期，随着大模型技术的升级，“模型自驱动”Agent也越来越火热，即支持模型主动选择和调用工具，并能够主动纠错和反思，相比于RAG能够解决任务执行类的企业需求；相比工作流编排，配置成本更低，表现更灵活。</p>\n  <p>但是每一类模式的To B落地都会面临非常多挑战，比如：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     API接入形式虽然轻量易用，但难以应对专业领域问题和复杂任务链路；\n    </section></li>\n   <li>\n    <section>\n     RAG提升了问答回复精准度，但对流程执行类任务支持有限；\n    </section></li>\n   <li>\n    <section>\n     工作流编排支持人工编排固定流程，但很难保证灵活对话；\n    </section></li>\n   <li>\n    <section>\n     Agent虽具备更强的自主性与智能性，但要全面适配企业级稳定性要求，仍需结合场景深入打磨。\n    </section></li>\n  </ul>\n  <p>这些问题都是企业使用大模型上会遇到的实际问题。在大模型落地如此困难的背景下，一站式开发平台的重要性和实战经验沉淀就显得尤为明显了。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/441da201-ab09-4c47-4160-61a59a596400/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85d0e8a3-0afa-4352-c4fa-5d3a6216ba00/public\" data-ratio=\"0.6666666666666666\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100312454\" data-original-style=\"height: auto !important;\" data-index=\"7\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>站在企业用户的角度看，市面上的智能体平台已经琳琅满目，选择腾讯的优势又是什么呢？</p>\n  <p>腾讯云的智能体开发平台经过To B实战打磨<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;color: rgb(34, 34, 34);font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;orphans: 2;text-indent: 0px;text-transform: none;widows: 2;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(255, 255, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;font-size: 16px;font-family: Arial;text-align: left;letter-spacing: 1px !important;word-spacing: 1px !important;line-height: 2 !important;min-height: 1.5em !important;box-sizing: border-box !important;overflow-wrap: break-word !important;margin: 20px 16px !important;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">，沉淀了在RAG、工作流实际的产品优势功能，并升级支持了多Agent协同。</span></p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     RAG：端到端的多模态解析大模型和检索链路沉淀、支持复杂表格结构查询（Text2SQL）、问答对自动生成；\n    </section></li>\n   <li>\n    <section>\n     工作流：内置全局洞察Agent，具备流程回退能力；支持异步任务控制；满足企业级流程管控需求；\n    </section></li>\n   <li>\n    <section>\n     Agent：严审插件中心的插件质量，保障工具识别准确率与执行稳定性；新增支持多Agent协同编排，缓解单Agent的决策压力和工具选择压力，让不同的Agent各司其职，形成类似“专家协作”的机制，满足企业复杂场景的需要。\n    </section></li>\n  </ul>\n  <p>平台同时配套完备的权限体系，和运营排查工具和管理后台，能够确保服务可靠运行。</p>\n  <p>目前智能体开发平台已经在腾讯云多家客户的多个场景中落地，据了解，在智能客服落地场景，腾讯云与一汽丰田合作，全面升级智能客服体系，显著提升客户服务质量与运营效率。通过整合企业专属知识，构建高质量问答能力，自2024年1月接入以来，智能客服独立解决率从37%提升至84%，大幅减轻坐席压力，优化客户体验和服务效率。</p>\n  <p>在医药零售领域，大参林基于腾讯云大模型知识引擎，构建了覆盖药品知识、销售场景、职能办公等多个场景的专属AI知识库，打造了“AI小参”问答助手，已服务总部与上万家门店的5万名员工，查询响应时间缩短超80%。</p>\n  <p>在医疗行业文书撰写场景，腾讯云与迈瑞合作推出“启元重症”智能体。迈瑞通过行业模型结合工作流，对接院内系统，实现病情问答、文书生成、知识检索一体化。医生只需一句话，即可生成完整参考病例，病历书写效率提升近一倍。</p>\n  <h2>从智能客服到智能体应用开发平台</h2>\n  <p>万丈高楼平地起，腾讯云智能体开发平台也并非一蹴而就。吴永坚表示，腾讯云始终坚持从企业业务场景出发，一步步完善底座能力，从模型到平台，从工具到智能体，最终构建出一套真正能跑业务、能接工具、能持续演进的智能体体系。</p>\n  <p>前面介绍过，腾讯云智能体开发平台的前身是“大模型知识引擎”，但实际上它真正的起点是企点智能客服。</p>\n  <p>最初腾讯云聚集在大模型需求最为旺盛的智能客服领域，基于客服场景，在企点智能客服上对知识问答场景共性的、核心能力进行打磨。</p>\n  <p>落地过程中，客户的需求也在不断升级和变化，腾讯云智能团队发现还有非常多值得探索的场景，比如标签提取、文案创作、角色扮演、还有需要自定义流程并对接企业等，于是开始推动其产品向着“智能体构建平台”的方向上进化。</p>\n  <p>在智能体构建平台上，腾讯云的演进路径非常明确：从最初的RAG知识库问答，到流程编排的工作流，再逐步引入Agent能力，演进为多智能体协同的Multi-Agent架构，MCP协议出现后，也进行了快速适配。</p>\n  <p>当然Multi-Agent不是终点，人工智能技术和企业用户需求的演变也不会停止。</p>\n  <p>但在变化之中保持不变的，是坚持满足客户需求。</p>\n  <p>吴永坚介绍，“构建一个离产业最近的AI平台”，就是腾讯云的核心主张之一。</p>\n  <p>在他看来，企业级AI产品的研发不是为了炫技，也不是追求潮流而堆砌产品功能，而是要切实满足用户的价值。</p>\n  <p>“在产业智能化转型的浪潮中，‘构建离产业最近的AI平台’不仅是技术能力的比拼，更是对产业痛点的深度理解和价值闭环能力的考验。”吴永坚说。</p>\n  <p>目前来看，整个行业仍然处在一个自由竞争的状态，具体哪种技术或产品路线更具优势仍待检验，可以说各家都有各自的优势和不足。</p>\n  <p>但是，通过技术提升、生态共建与场景化落地，腾讯云在“离产业最近”的目标上，一直在修炼内功，并取得了一些进展。</p>\n  <p>比如在行业Konw-How深度内化方面，腾讯云已构建覆盖金融、教育、零售、出行、消费电子等30多个行业的解决方案。</p>\n  <p>腾讯云预计，未来企业应用会更加行业垂直化，用户对精度的要求会更高，对数据安全性的要求也会不断提升，将通过模型能力升级、平台工具完善、场景解决方案打磨等措施进一步提升产品能力。</p>\n  <p>除了应用之外，进一步强化降本增效能力，还需要基础设施的升级，具体来说，更高效与自动化的训练技术、分布式推理技术、主流模型内核优化、主流芯片的推理加速能力将是主要演进方向。</p>\n  <p>吴永坚表示，“我们的目标就是以用户需求为本，去做产品和技术的持续迭代，更好地构建距离产业更近的AI。”</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "腾讯云发布零代码智能体开发平台并升级混元大模型，聚焦企业级 AI 落地与智能协同。",
+  "oneSentenceSummary": "腾讯云发布零代码智能体开发平台并升级混元大模型，聚焦企业级 AI 落地与智能协同。",
+  "summary": "文章报道了腾讯云在 AI 产业应用峰会上的重要发布。核心亮点是推出全新的零代码智能体开发平台，该平台从原有的“大模型知识引擎”演进而来，在 RAG 能力、工作流编排、特别是多 Agent 协同方面实现了零代码配置，显著降低了企业开发复杂 AI 应用的门槛。同时，腾讯云对混元系列大模型进行了全面升级，提升了基础能力及多模态支持。文章深入分析了腾讯云构建智能体平台的战略考量，指出 To B 场景的复杂性要求体系化的产品能力，而非单一模型。通过列举一汽丰田、大参林、迈瑞等客户案例，展示了平台在智能客服、知识问答、文书生成等场景的实际落地效果和价值。文章最后强调腾讯云坚持“构建离产业最近的 AI 平台”，以用户需求为导向持续迭代产品和技术。",
+  "mainPoints": [
+    {
+      "point": "腾讯云推出零代码智能体开发平台",
+      "explanation": "平台提供零代码配置能力，支持 RAG、工作流和多 Agent 协同构建，大幅降低企业开发复杂 AI 应用的门槛，加速业务智能化落地。"
+    },
+    {
+      "point": "平台具备高级 RAG 和工作流功能",
+      "explanation": "强化了复杂表格问答、增量问答、带全局视野的工作流回退等功能，提升了企业级应用所需的精准度和流程控制能力。"
+    },
+    {
+      "point": "率先支持零代码配置多 Agent 协同",
+      "explanation": "允许灵活编排多个 Agent 协作完成复杂任务，模拟专家协作模式，有效应对单一 Agent 能力边界和复杂场景需求。"
+    },
+    {
+      "point": "混元系列大模型全面升级",
+      "explanation": "T1、Turbo S 等模型能力提升，并新增多模态模型，为智能体平台和企业应用提供更强大的底层 AI 能力支持。"
+    },
+    {
+      "point": "平台已在多个行业场景成功落地",
+      "explanation": "通过在一汽丰田、大参林、迈瑞等客户处的落地案例，验证了平台在智能客服、知识库、医疗文书等 B2B 场景的实用性和价值。"
+    }
+  ],
+  "keyQuotes": [
+    "腾讯云在智能体领域的产品布局，是围绕企业真实需求逐步演进的。整体思路是从场景出发，扎实解决实际问题，并推动能力从'落地可用'逐步迈向'智能协同'。",
+    "腾讯云智能体平台还率先支持了零代码配置多 Agent 协同转交，灵活配置满足不同的 Multi-Agent 协同方式的搭建需求。",
+    "To B 是用于生产的严肃场景，用户输入问题的复杂度和多样性比 To C 场景更高，对输出的回复要求更高，目前大模型能力在 To B 严肃场景还不能完全满足需求，需通过产品能力体系化去解决。",
+    "在大模型落地如此困难的背景下，一站式开发平台的重要性和实战经验沉淀就显得尤为明显了。",
+    "我们的目标就是以用户需求为本，去做产品和技术的持续迭代，更好地构建距离产业更近的 AI。"
+  ],
+  "tags": [
+    "智能体",
+    "大模型",
+    "检索增强生成 (RAG)",
+    "多智能体",
+    "工作流编排"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 16,
+  "score": 91,
+  "wordCount": 3858,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747926708000,
+  "publishDateStr": "2025-05-22",
+  "publishDateTimeStr": "2025-05-22 15:11:48"
+}

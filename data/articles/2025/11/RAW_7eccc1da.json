@@ -1,0 +1,55 @@
+{
+  "id": "RAW_7eccc1da",
+  "title": "以可持续的方式开发和部署软件",
+  "url": "https://www.infoq.com/news/2025/11/sustainable-software/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-20 11:18:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Sustainable APIs benefit most from minimalism, <a href=\"https://www.linkedin.com/in/jochen-joswig/\">Jochen Joswig</a> said at <a href=\"https://www.oop-konferenz.de/en/\">OOP Conference</a>. Deployment should consider energy, usage, carbon intensity, hardware acquisition. Remote work, long device lifespans, and green office practices&nbsp;can lower emissions. Efficient CI, selective builds, smaller artefacts, and optimized assets can further reduce energy use.</p>\n   <p>DevGreenOps is an extension of the DevOps approach, in which environmental sustainability considerations are integrated into every step of the DevOps cycle. Applying transparency, minimalism, efficiency, and awareness, helps to <a href=\"https://www.infoq.com/news/2025/10/sustainable-digital-services/\">design sustainable digital services</a>.</p>\n   <p>There are many ideas for ensuring the ecological sustainability of APIs, Joswig said. The API Thinking collective has an overview of best practices in their <a href=\"https://www.collectif-api-thinking.com/assets/deliverables/worksites/50_CAT_API_Sustainable_IT.pdf\">Sustainable API Green Score</a>. Most of the practices fall into the transparency, minimalism, and efficiency categories. Joswig argued that projects will see the greatest benefits from practices in the minimalism category, like: \"decommissioning unused APIs\", \"exchange with the smallest size\", \"optimize queries to limit returned information\", or \"collect only required data\":</p>\n   <blockquote>\n    <p>These best practices not only reduce the bandwidth, hardware resources and energy footprints of software providing the API, but they are also a clear indication of clean and well maintained code.</p>\n   </blockquote>\n   <p>The recommendations of \"deploy API near consumers\" and \"Be near Data Centers\" are among the most controversial, because they seem to contradict the idea of location shifting, Joswig said. But location shifting itself is also controversial; it might be less sustainable than it looks:</p>\n   <blockquote>\n    <ul>\n     <li>Leaving resources in \"suboptimal\" locations under utilized or idle is hardly efficient.</li>\n     <li>Constantly moving data from location to location will increase the load on the network in between, which results in the need to expand it, which results in more emissions during the build out and during the operation.</li>\n    </ul>\n   </blockquote>\n   <p>Deploying software into data centers in a sustainable way depends on multiple factors, like:</p>\n   <blockquote>\n    <ul>\n     <li>How much energy is needed to host and run the software vs. how much energy is needed to transfer the data</li>\n     <li>How big is the expected average difference in carbon intensity for the particular use case</li>\n     <li>Does the software deployment result in new hardware acquisition at the deployment site</li>\n    </ul>\n   </blockquote>\n   <p>It is important to look at use cases for expected average carbon intensity, Joswig said. If, for example, you can be sure that your software won’t run during the night, then your software will benefit from the presence of solar energy in the grid, which helps keep the energy carbon intensity low during the day. Even if during the night the carbon intensity of the grid is very high, your use case won’t be affected by this, he said.</p>\n   <p>One of the most sustainable actions any software-building company can take is allowing remote work. The study from the Öko-Institut <a href=\"https://www.oeko.de/publikation/arbeiten-im-homeoffice-gut-fuer-die-umwelt-und-die-mitarbeiterinnen/\">Arbeiten im Homeoffice – gut für die Umwelt und die Mitarbeiter:innen?</a> shows that working from home can greatly reduce CO2 emissions, especially if no additional hardware has to be acquired. Joswig mentioned that when employees commute, then providing convenient infrastructure for bicycles and supporting ride sharing among employees can be very impactful too.</p>\n   <p>Joswig mentioned that other factors of sustainability are devices like laptops, smartphones, monitors, keyboards, mice, routers, servers, etc. Utilising them for as long as possible and ensuring a long lifespan is important. When devices must be replaced, they should find a second home e.g. through refurbishing or donation programs.</p>\n   <p>Inside the office, we can do a lot to be more sustainable, Joswig explained:</p>\n   <blockquote>\n    <p>We can choose green energy providers and save energy by turning off lights, monitors, coffee machines, etc. during the night and over the weekends. We can shift towards a paperless office, and we can try to save water.</p>\n   </blockquote>\n   <p>Applying DevGreenOps, a tool like <a href=\"https://www.green-coding.io/products/eco-ci/\">EcoCI</a> can measure or estimate the energy required by any pipeline run, including a build pipeline run. For the \"minimal\" category, Joswig advises a \"build once deploy everywhere\" approach, for teams working with different environments for development, testing and production. Teams working with mono-repos only need to run builds for the parts of the code, which have actually changed. Only build the frontend, if the frontend code changed, only build the backend, if the backend code changed, don't build anything if only the documentation was updated,&nbsp;Joswig suggested.</p>\n   <p>There are tools that help you reduce the size of your build artefacts, like <a href=\"https://github.com/slimtoolkit/slim\">SlimToolkit</a> for Docker containers. Most build tools and frameworks, especially for frontend web applications, already come with support for optimizations of the build output, Joswig said. Tree shaking, minification, and compression of static assets should already be the standard in every production build.</p>\n   <p>Some tools can also do more, like <a href=\"https://parceljs.org/\">Parcel</a>, which supports differential bundling, development branch removal, and image optimization. Image optimization is an especially interesting feature, because images are typically responsible for most of a web page’s weight, Joswig explained:</p>\n   <blockquote>\n    <p>Having a build tool like parcel, which can automatically convert images into web optimized formats, and resizes them to only what is really necessary, can save a lot of bandwidth, memory and unnecessary computation on the client.</p>\n   </blockquote>\n   <p>However, overrelying on such features may result in unnecessary load during the build process itself, Joswig concluded.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Developing and Deploying Software in a Sustainable Way\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/sustainable-software/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763637480000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文探讨如何通过极简设计、高效流程和环保意识，将环境可持续性融入软件开发和部署的各个环节。内容涵盖优化 API 设计、提升 CI/CD 效率等方面。",
+  "oneSentenceSummary": "本文探讨如何通过极简设计、高效流程和环保意识，将环境可持续性融入软件开发和部署的各个环节。内容涵盖优化 API 设计、提升 CI/CD 效率等方面。",
+  "summary": "本文基于 Jochen Joswig 在 OOP 会议上的演讲，倡导绿色研发运维（DevGreenOps），作为研发运维一体化（DevOps）的延伸，它将环境可持续性融入到软件的整个生命周期中。文章强调 API 设计中极简主义的重要性，例如停用未使用的 API 和优化数据交换，这些实践不仅能减少带宽、硬件和能源消耗，也体现了代码的规范和整洁。文章探讨了可持续的部署策略，综合考虑能源消耗、碳排放强度和硬件采购，并详细讨论了“就近部署”和“异地迁移”这两种策略的优缺点。此外，文章还强调了更广泛的可持续性行动，包括推广远程办公、延长设备使用寿命和采用绿色办公实践。文章还详细介绍了高效的持续集成/持续交付（CI/CD）流程、单体仓库的选择性构建、更小的构建产物（例如使用 SlimToolkit）以及资源优化（摇树优化、最小化、使用 Parcel 等工具进行图像优化）如何在开发和运营期间显著降低能源消耗。核心信息强调，透明、极简、高效和环保意识是创建真正可持续的数字服务的必要条件。",
+  "mainPoints": [
+    {
+      "point": "API 设计中的极简主义对于减少环境足迹和提高代码质量至关重要。",
+      "explanation": "停用未使用的 API、优化数据交换大小以及仅查询必要的数据，能够显著减少带宽、硬件和能源消耗，同时也反映了维护良好的代码。"
+    },
+    {
+      "point": "绿色研发运维将环境可持续性整合到研发运维一体化的每个阶段。",
+      "explanation": "通过应用透明、极简、高效和环保意识等原则，绿色研发运维（DevGreenOps）有助于设计在生态上可持续的数字服务，贯穿从概念到部署和运营的整个过程。"
+    },
+    {
+      "point": "优化开发和部署流程可显著降低能源消耗。",
+      "explanation": "高效的持续集成/持续交付（选择性构建、更小的构建产物）、资源优化（摇树优化、最小化、图像优化）、远程办公和延长设备使用寿命等实践，有助于降低碳排放。"
+    }
+  ],
+  "keyQuotes": [
+    "这些最佳实践不仅减少了提供 API 的软件的带宽、硬件资源和能源占用，而且清楚地表明了代码的整洁和维护良好。",
+    "将资源闲置在未充分利用的“次优”位置，效率低下。",
+    "任何软件公司可以采取的最可持续的行动之一是允许远程办公。",
+    "尽可能延长设备的使用寿命非常重要。",
+    "使用像 Parcel 这样的构建工具，它可以自动将图像转换为 Web 优化格式，并根据实际需求调整图像尺寸，从而节省大量的带宽、内存和客户端上不必要的计算。"
+  ],
+  "tags": [
+    "可持续软件开发",
+    "研发运维一体化",
+    "绿色IT",
+    "API设计",
+    "云部署"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 840,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763637480000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 11:18:00"
+}

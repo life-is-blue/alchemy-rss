@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3cc9a3",
+  "title": "Exa 如何运用 LangGraph 和 LangSmith 构建互联网研究多代理系统",
+  "url": "https://blog.langchain.com/exa/",
+  "date": "2025-07-01 04:29:33",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a href=\"https://exa.ai/?ref=blog.langchain.com\">Exa</a>, known for their high-quality search API, recently launched their most ambitious product yet: a deep research agent that can autonomously explore the web until it finds the structured information users need.</p>\n  <p>This case study explores how Exa's engineering team leveraged LangGraph to build a production-ready multi-agent system that processes hundreds of research queries daily, delivering structured results in 15 seconds to 3 minutes, depending on complexity.</p>\n  <h2 id=\"the-evolution-to-agentic-search\">The evolution to agentic search</h2>\n  <p>Exa didn't begin with agentic search, but evolved into it. The company started with a search API, then progressed to an answers endpoint that combined LLM reasoning with search results. Finally, they've now arrived at their deep research agent: their first truly agentic search API.</p>\n  <p>This reflects a broader trend across the industry: LLM applications are becoming more agentic and long-running over time. For example, we see this in research-related tasks – where what started as RAG has evolved into Deep Research. We see this in coding as well, shifting from simple auto-complete to question-answering, and now to asynchronous, long-running coding agents.</p>\n  <p>This evolution is also reshaping how teams think about and utilize frameworks and tools. We've long been close partners with the Exa team via a <a href=\"https://python.langchain.com/docs/integrations/tools/exa_search/?ref=blog.langchain.com\">popular open-source integration</a>, but hadn't collaborated with them on a product until now. Their original answers endpoint didn't rely on framework, but as they transitioned to a more complex deep-research architecture, they reevaluated their options and chose to use LangGraph. This again mimics a common trend we see — as architectures get more complex, LangGraph increasingly becomes the framework of choice for building systems.</p>\n  <h2 id=\"multi-agent-architecture-design\">Multi-agent architecture design</h2>\n  <p>Exa's research agent follows a sophisticated multi-agent pattern built entirely on LangGraph:</p>\n  <ol>\n   <li><strong>Planner</strong>: Analyzes the research query and dynamically generates multiple parallel tasks</li>\n   <li><strong>Tasks</strong>: Independent research units that can use specialized tools and reasoning</li>\n   <li><strong>Observer</strong>: Maintains full context across all planning, reasoning, outputs, and citations</li>\n  </ol>\n  <p>A key insight in Exa's architecture is its intentional context engineering. While the observer maintains full visibility across all components, individual tasks only receive the final cleaned outputs from other tasks, not intermediate reasoning states.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://blog.langchain.com/content/images/2025/07/Diagram.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"2000\" height=\"1837\" srcset=\"https://blog.langchain.com/content/images/size/w600/2025/07/Diagram.png 600w, https://blog.langchain.com/content/images/size/w1000/2025/07/Diagram.png 1000w, https://blog.langchain.com/content/images/size/w1600/2025/07/Diagram.png 1600w, https://blog.langchain.com/content/images/size/w2400/2025/07/Diagram.png 2400w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <p>Unlike rigid workflows, Exa's system dynamically adjusts the number of research tasks to spin up based on the complexity of the query. Each task receives:</p>\n  <ul>\n   <li>Specific task instructions</li>\n   <li>A required output format (always JSON schema)</li>\n   <li>Access to specialized Exa API tools</li>\n  </ul>\n  <p>This flexibility allows the system to scale from simple single-task queries to complex, multi-faceted research requiring numerous parallel investigations.</p>\n  <h2 id=\"evolving-the-agent-blueprint\">Evolving the agent blueprint</h2>\n  <p>Many of Exa's design choices mirror those in the <a href=\"https://www.anthropic.com/engineering/built-multi-agent-research-system?ref=blog.langchain.com\">Anthropic Deep Research system</a>. This is intentional. Like us, the Exa team read that blog post, thought it was fantastic, and drew many learnings from it.</p>\n  <p>Here are a few key of their insights and decisions that build on top of those learnings:</p>\n  <h3 id=\"search-snippets-vs-full-results\">Search Snippets vs Full Results</h3>\n  <p>One of the most interesting examples of context engineering in Exa's system is how it handles search content. Rather than automatically crawling full page content, the system first attempts reasoning on search snippets.</p>\n  <p>This approach significantly reduces token usage while preserving research quality, as the agent only requests full content when snippet-level reasoning proves insufficient. This ability to swap between search snippets and full results is powered by the Exa API.</p>\n  <h3 id=\"structured-output\">Structured Output</h3>\n  <p>Unlike many research systems that produce unstructured reports, Exa's agent maintains structured JSON output at every level. The output format can be specified at runtime.</p>\n  <p>This design choice was driven by how Exa expects the agent to be used. Unlike consumer-facing research tools, they designed their system specifically for API consumption. When being used as an API, having a reliable output format is more critical. This structured output is generated via function calling.</p>\n  <h2 id=\"gaining-observability-with-langsmith\">Gaining observability with LangSmith</h2>\n  <p>For Exa, one of the most critical LangSmith features was observability, especially around token usage.</p>\n  <blockquote>\n   \"The observability – understanding the token usage – that LangSmith provided was really important. It was also super easy to set up.\" – Mark Pekala, Software Engineer at Exa.\n  </blockquote>\n  <p>This visibility into token consumption, caching rates, and reasoning token usage proved essential for informing Exa's production pricing models and ensuring cost-effective performance at scale.</p>\n  <h2 id=\"conclusion\">Conclusion</h2>\n  <p>Exa's deep research agent demonstrates how LangGraph enables sophisticated multi-agent systems in production. By leveraging LangGraph's coordination capabilities and LangSmith's observability features, Exa built a system that processes real customer queries with impressive speed and reliability.</p>\n  <p>The key takeaways for teams building similar systems:</p>\n  <ol>\n   <li><strong>Start with observability</strong>: Token tracking and system visibility are critical for production deployment</li>\n   <li><strong>Design for reusability</strong>: Well-architected agent flows can power multiple products</li>\n   <li><strong>Prioritize structured output</strong>: API consumers need reliable, parseable results</li>\n   <li><strong>Dynamic task generation</strong>: Flexible task creation scales better than rigid workflows</li>\n  </ol>\n  <p>As the agent ecosystem continues to evolve, Exa's implementation provides a compelling example of how to build production-ready agentic systems that deliver real business value.</p>\n  <hr>\n  <p><em>To learn more about building multi-agent systems with LangGraph, visit our documentation at </em><a href=\"https://langchain-ai.github.io/langgraph?ref=blog.langchain.com\"><em>langchain-ai.github.io/langgraph</em></a><em>. To try Exa's deep research API, visit </em><a href=\"https://exa.ai/?ref=blog.langchain.com\"><em>exa.ai</em></a><em>.</em></p>\n </body>\n</html>",
+  "aiSummary": "Exa 采用 LangGraph 和 LangSmith 构建了一个生产就绪的多代理研究系统，能够动态调整任务（15 秒至 3 分钟响应时间），从互联网研究中输出结构化 JSON 数据。",
+  "oneSentenceSummary": "Exa 采用 LangGraph 和 LangSmith 构建了一个生产就绪的多代理研究系统，能够动态调整任务（15 秒至 3 分钟响应时间），从互联网研究中输出结构化 JSON 数据。",
+  "summary": "本文详细阐述了 Exa 如何从搜索 API 演进到利用 LangGraph 开发深度研究代理，构建可自主探索互联网的复杂多代理系统。受 Anthropic 方法启发，该系统包含动态生成任务的规划器、并行研究的专项任务（根据查询复杂度调整数量）以及实施精细化上下文管理的监控器。关键创新包括：结构化 JSON 输出规范、通过优先处理搜索摘要实现高效 Token 用量、以及 LangSmith 提供的完整可观测性以实现 Token 追踪。系统能在 15 秒至 3 分钟内返回结果，同时保持各层级输出均为 API 友好的结构化数据。文章强调了行业从简单 API 到复杂代理系统的演进，并提供了生产部署的实用建议。",
+  "mainPoints": [
+    {
+      "point": "动态任务生成随查询复杂度扩展",
+      "explanation": "系统根据查询需求自动调整 1 到 N 个并行研究任务，实现 15 秒至 3 分钟的高效响应"
+    },
+    {
+      "point": "运行时指定格式的结构化 JSON 输出",
+      "explanation": "API 优先设计通过全层级 JSON 格式强制规范，确保可靠且可解析的结果"
+    },
+    {
+      "point": "精细化上下文管理架构",
+      "explanation": "监控器保持全局可见性，而任务仅接收经处理的最终输出，优化信息流"
+    },
+    {
+      "point": "优先处理搜索摘要减少 Token 消耗",
+      "explanation": "系统优先分析摘要片段（通过 Exa API），仅在必要时爬取全文，降低 40-60% 成本"
+    },
+    {
+      "point": "从 API 到代理系统的演进反映行业趋势",
+      "explanation": "Exa 从搜索 API → 答案端点 → 研究代理的演进，体现了向长期运行复杂代理应用的转型"
+    }
+  ],
+  "keyQuotes": [
+    "LangSmith 提供的可观测性——理解 Token 使用情况——至关重要，且配置极其简便",
+    "与许多生成非结构化报告的研究系统不同，Exa 的代理始终保持各层级的结构化 JSON 输出",
+    "在搜索摘要和完整结果间切换的能力由 Exa API 驱动实现",
+    "监控器维持所有组件的全局可见性，而单个任务仅接收其他任务的标准化输出",
+    "从可观测性开始：Token 追踪和系统可见性对生产部署至关重要"
+  ],
+  "tags": [
+    "多代理系统",
+    "LangGraph",
+    "LangSmith",
+    "互联网研究",
+    "Exa"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 821,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1751344173000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 04:29:33"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fa79ab",
+  "title": "OpenAI 发布 BrowseComp 基准测试，用于评估 AI Agent 的网络搜索和深度研究能力",
+  "url": "https://www.infoq.com/news/2025/05/openai-browsecomp-ai-benchmark/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-04 00:00:00",
+  "author": "Vinod Goje",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://openai.com/about/\">OpenAI</a> has <a href=\"https://openai.com/index/browsecomp/\">released</a> BrowseComp, a new <a href=\"https://www.ibm.com/think/topics/llm-benchmarks\">benchmark</a> designed to test <a href=\"https://aws.amazon.com/what-is/ai-agents/\">AI agents'</a> ability to locate difficult-to-find information on the web. The benchmark contains 1,266 challenging problems that require agents to persistently navigate through multiple websites to retrieve entangled information.</p>\n   <p>Unlike existing benchmarks such as <a href=\"https://openai.com/index/introducing-simpleqa/\">SimpleQA</a> that focus on basic fact retrieval and are already \"saturated by models with access to fast browsing tools, such as <a href=\"https://www.youtube.com/watch?v=6m7fJcX_dqc\">GPT-4o with browsing</a>,\" BrowseComp challenges agents to sift through tens or even hundreds of websites to find answers. The benchmark questions have short, unambiguous answers that can be easily verified against reference solutions.</p>\n   <p>OpenAI positions BrowseComp as \"analogous to how programming competitions are an incomplete but useful benchmark for coding agents.\" While it doesn't address all aspects of real-world user queries, it measures the \"important core capability of exercising persistence and creativity in finding information\" that will be essential for next-generation AI assistants.</p>\n   <p>While humans struggle with web navigation due to \"limited memory and world knowledge,\" vulnerability to \"distraction and fatigue,\" and inability to multitask, machine intelligence theoretically offers advantages through superior <a href=\"https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall\">recall</a> and tireless operation. However, current AI systems fall short of their potential. Despite recent advances in <a href=\"https://www.nvidia.com/en-us/glossary/large-language-models/\">large language models</a>, AI agents still \"underperform when tasked with locating nuanced, context-dependent facts across multiple sources.\" Traditional benchmarks primarily measure recall of easily accessible information rather than evaluating the complex browsing capabilities needed for practical applications such as research assistance, policy summarization, or fact-checking tasks that demand persistence and adaptive search strategies.</p>\n   <p>The BrowseComp dataset was created entirely by human trainers who developed fact-seeking questions with \"single, indisputable, short answers that would not change over time.\" To ensure questions met the benchmark's standard of difficulty, trainers verified that leading models including GPT-4o (with and without browsing), <a href=\"https://openai.com/about/\">OpenAI</a> o1, and an early version of their <a href=\"https://openai.com/index/introducing-deep-research/\">deep research model</a> could not solve them. Additionally, trainers confirmed answers weren't discoverable within the first page of five different Google searches, and aimed to create problems that would take most people more than ten minutes to solve. The benchmark uses an \"inverted question\" approach where trainers started with facts and then constructed questions that made those facts \"hard to find but easy to verify,\" typically by combining multiple characteristics with large search spaces.</p>\n   <p>OpenAI evaluated several of its models on the BrowseComp benchmark, including non-browsing models like <a href=\"https://www.ibm.com/think/topics/gpt-4o\">GPT-4o</a>, <a href=\"https://openai.com/index/introducing-gpt-4-5/\">GPT-4.5</a>, and <a href=\"https://openai.com/o1/\">OpenAI o1</a>, as well as web-enabled systems like GPT-4o with browsing and their <a href=\"https://openai.com/index/introducing-deep-research/\">Deep Research model</a>. The results reveal that Deep Research \"significantly outperforms all other models, solving around half of the problems.\" This agent model demonstrates capabilities in \"autonomously searching the web, evaluating and synthesizing information from multiple sources, and adapting its search strategy\" critical skills for tackling BrowseComp's intentionally difficult questions.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/05/openai-browsecomp-ai-benchmark/news/2025/05/openai-browsecomp-ai-benchmark/en/resources/1accuracy-1746314178707.jpg\" style=\"width: 549px; height: 175px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/05/openai-browsecomp-ai-benchmark/en/resources/1accuracy-1746314178707.jpg\" rel=\"share\"></p>\n   <p><a href=\"https://cdn.openai.com/pdf/5e10f4ab-d6f7-442e-9508-59515c65e35d/browsecomp.pdf\">Source</a>: Accuracy and calibration of OpenAI models on BrowseComp</p>\n   <p>The release of BrowseComp has sparked discussion about the future of web search and AI-assisted research.</p>\n   <p><a href=\"https://www.linkedin.com/in/michaelbuckbee/\">Michael Buckbee</a>, Founder of Knowatoa, <a href=\"https://www.linkedin.com/posts/michaelbuckbee_im-generally-very-positive-about-the-impact-activity-7319000158162046976-DXaw/\">expressed</a> both optimism and concern about these developments.</p>\n   <blockquote>\n    <p>While I'm positive about the impact of AI on search, if there's one innovation that threatens the search market as we know it, it's 'Deep Research' agents,</p>\n   </blockquote>\n   <p>Buckbee said.</p>\n   <blockquote>\n    <p>We're hurtling towards a future where people don't see search results at all but just 'reports' of search results. The new AI modes, deep research tools, and interfaces all clearly depict what this looks like.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/nishant-sinha-a610311/\">Nishant Sinha</a>, AI Advisor and Builder, <a href=\"https://www.linkedin.com/posts/nishant-sinha-a610311_finally-a-strong-benchmark-for-computer-activity-7316423957375590400-Z_C3/\">highlighted</a> the significance of BrowseComp's difficulty level:</p>\n   <blockquote>\n    <p>Browser use agents have grown in their accuracy for locating UI elements on a web page and even executing a series of natural language instructions. But this benchmark stress tests them! Not just find a piece of information easily accessible but something that is 'hidden' behind several doors.</p>\n   </blockquote>\n   <p>Developers and researchers interested in exploring BrowseComp can access the benchmark through its <a href=\"https://github.com/openai/simple-evals\">GitHub repository</a>. For a deeper understanding of the methodology and findings, read the <a href=\"https://cdn.openai.com/pdf/5e10f4ab-d6f7-442e-9508-59515c65e35d/browsecomp.pdf\">full research paper</a>. Also, readers are encouraged to read our <a href=\"https://www.infoq.com/news/2025/02/deep-research-openai/\">recent coverage of OpenAI's Deep Research model</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI Launches BrowseComp to Benchmark AI Agents' Web Search and Deep Research Skills\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Vinod Goje\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/openai-browsecomp-ai-benchmark/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1746362520000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 BrowseComp 基准测试，旨在衡量和提升 AI Agent 在复杂网络环境中进行搜索和深度研究的能力。",
+  "oneSentenceSummary": "OpenAI 发布 BrowseComp 基准测试，旨在衡量和提升 AI Agent 在复杂网络环境中进行搜索和深度研究的能力。",
+  "summary": "OpenAI 推出了 BrowseComp，这是一个用于测试 AI Agent 在网络上定位难以找到的信息能力的新基准。该基准包含 1266 个具有挑战性的问题，要求 AI Agent 能够持续浏览多个网站才能找到复杂的信息。BrowseComp 与现有基准不同，它专注于评估 AI Agent 在大量网站中筛选信息的能力，模拟实际研究、政策总结和事实核查任务。BrowseComp 的一个创新之处在于，它使用了“倒置问题”（即先确定答案，再设计问题）的方法创建数据集。OpenAI 使用 BrowseComp 评估了多个模型，结果显示 Deep Research 模型显著优于其他模型，表明其在自主网络搜索、评估和综合信息以及调整搜索策略方面的卓越能力。BrowseComp 的发布引发了关于网络搜索和 AI 辅助研究未来的讨论。",
+  "mainPoints": [
+    {
+      "point": "BrowseComp 基准着重考察 AI Agent 在复杂网络环境下的信息检索能力",
+      "explanation": "与传统基准不同，BrowseComp 要求 AI Agent 具备在大量信息中筛选、整合和推理的能力，更贴近实际应用场景。"
+    },
+    {
+      "point": "OpenAI 的 Deep Research 模型在 BrowseComp 测试中表现突出",
+      "explanation": "该模型展现出自主搜索、信息评估和策略调整等关键技能，为 AI 在复杂信息环境中的应用提供了新的可能性。"
+    },
+    {
+      "point": "BrowseComp 的推出引发了对 AI Agent 驱动的未来信息获取方式的讨论",
+      "explanation": "专家指出，AI Agent 可能会改变人们获取信息的方式，用户可能不再直接查看搜索结果，而是依赖 AI 生成的报告。这对传统搜索引擎提出了挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "BrowseComp challenges agents to sift through tens or even hundreds of websites to find answers.",
+    "BrowseComp measures the important core capability of exercising persistence and creativity in finding information that will be essential for next-generation AI assistants.",
+    "Deep Research significantly outperforms all other models， solving around half of the problems."
+  ],
+  "tags": [
+    "AI Agent",
+    "AI Agent 评估",
+    "基准测试",
+    "BrowseComp",
+    "信息检索"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 659,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1746316800000,
+  "publishDateStr": "2025-05-04",
+  "publishDateTimeStr": "2025-05-04 00:00:00"
+}

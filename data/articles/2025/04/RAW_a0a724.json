@@ -1,0 +1,54 @@
+{
+  "id": "RAW_a0a724",
+  "title": "QCon 伦敦大会：构建软件即服务时常犯的错误",
+  "url": "https://www.infoq.com/news/2025/04/qcon-saas-software-mistakes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-09 00:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At QCon London 2025, AWS Ambassador <a href=\"https://www.linkedin.com/in/jtopper/\">Jon Topper</a> delivered a talk on common mistakes that companies make when building SaaS (Software as a Service) solutions.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/qcon-saas-software-mistakes/news/2025/04/qcon-saas-software-mistakes/en/resources/11744132323897-1744199345832.jpg\" style=\"width: 600px; height: 400px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/qcon-saas-software-mistakes/en/resources/11744132323897-1744199345832.jpg\" rel=\"share\"></p>\n   <p>\"Building, deploying, and operating software is hard, and that goes double when you're building SaaS,\" said Topper, the founder of <a href=\"https://www.scalefactory.com/\">The Scale Factory</a> (now part of Ten10). A recurring theme of his talk was how teams can often accidentally make lives extra complicated for their future selves. He said how much wisdom can come from communities and user groups, \"they allow us to heed people's lessons and understand their mistakes before we make them ourselves.\"</p>\n   <p>Topper began his talk by explaining how traditional software may be shipped out on media or as discrete downloadable artefacts for users to install as they wish, but SaaS solutions come with the complexity of being fundamentally designed for hosting multiple tenants. He pointed out the scale of SaaS in the contemporary software space: half of the venture capital deployed into companies worldwide in 2024 went into SaaS businesses according to <a href=\"https://dealroom.co/gudes/saas\">Dealroom</a>.</p>\n   <p>Topper urged people to think about architecting for multi-tenancy right from the start. He explained that many SaaS products evolve from enterprise applications intended for a single tenant and ventured that not considering multi-tenancy at the start can significantly hinder scaling options later on. He also suggested immediately calculating the baseline costs per tenant and making sure that these fit in at the price point that the market needs.</p>\n   <blockquote>\n    <p>If you're not thinking about tenancy on day one, you're walking into only being able to build the silo model.</p>\n   </blockquote>\n   <p>Reflecting on the fact that development teams are usually busy innovating and iterating on new features, it usually falls to them to provision environments for new potential customers, and this can often be low on their priorities. So Topper advises automating tenant provisioning early on to avoid the development team being a bottleneck for the commercial side of the business.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/qcon-saas-software-mistakes/news/2025/04/qcon-saas-software-mistakes/en/resources/120250408_145517-1744199226093.jpg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/qcon-saas-software-mistakes/en/resources/120250408_145517-1744199226093.jpg\" rel=\"share\"></p>\n   <p>Turning to how actually to build SaaS applications in the cloud, Topper described three main architectural models: the \"pool\" model, where everything is shared, the \"silo\" model, where each customer has unique dedicated infrastructure, and a \"bridge\" model option in the middle where some resources are shared but some are dedicated per customer. He stated that regulatory requirements in industries such as healthcare, life sciences and finance can sometimes drive people towards the silo model, noting that the silo model has higher baseline costs and is more complicated, but provides the most isolation.</p>\n   <p>He conceptualised SaaS architecture as having two components: the application plane (web application, services, API gateway, database) and the control plane (orchestration layer, tenant onboarding, billing automation). He strongly advocated using AWS Control Tower and Landing Zones to provide security guardrails and consistency across accounts.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/qcon-saas-software-mistakes/news/2025/04/qcon-saas-software-mistakes/en/resources/120250408_151317-1744199226093.jpg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/qcon-saas-software-mistakes/en/resources/120250408_151317-1744199226093.jpg\" rel=\"share\"></p>\n   <p>Topper warned strongly on the dangers of per-customer customisations and allowing customers to mandate release timings. \"Delivering unique features or different versions to tenants will kill ops teams if you're not careful.\" He advocated for a strong product philosophy that includes being comfortable with the \"strategic no\" when customers ask for features that don't align with the current product roadmap.</p>\n   <blockquote>\n    <p>If you allow customers to dictate when or where software updates happen, then you're baking in operational complexity and sacrificing your weekends.</p>\n   </blockquote>\n   <p>He also advised against deploying software into customers' AWS accounts despite customer requests, explaining that \"philosophically this isn't really SaaS - it's just selling software,\" and to avoid trying to be multi-cloud; \"as an early-stage business, you shouldn't be worried about building on more than one platform until you've saturated the market for people who will buy the AWS version.\"</p>\n   <p>Topper recommended doing proper disaster recovery and security planning, citing AWS CTO Werner Vogels' wisdom that \"everything fails all the time\". He suggested doing pre-mortem exercises to make a start on this. On the topic of data, he proposed building a security model based on developing an understanding of where their data is and who has responsibility for it.</p>\n   <p>TL;DR: Jon Topper's ten things people get wrong when building SaaS applications:</p>\n   <ul>\n    <li>Building something users don't want</li>\n    <li>Not building tenancy concepts into application components</li>\n    <li>Not calculating baseline per-tenant costs and testing this with the market</li>\n    <li>Not automating tenant provisioning</li>\n    <li>Delivering unique features or different versions to tenants</li>\n    <li>Deploying your software into your customers' AWS accounts</li>\n    <li>Building your solution to be multi-cloud or cloud-agnostic</li>\n    <li>Deploying your solution on-premise for customers</li>\n    <li>Not thinking sufficiently about backups and disaster recovery</li>\n    <li>Not classifying data assets</li>\n    <li>Listening to consultants instead of understanding your customer base</li>\n   </ul>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London: Mistakes People Make Building SaaS Software\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/qcon-saas-software-mistakes/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1744199700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "亚马逊云科技大使 Jon Topper 在 QCon 伦敦 2025 伦敦大会上分享了构建软件即服务时常见的错误，重点包括多租户架构设计、自动化租户配置、避免过度定制化以及灾难恢复规划。",
+  "oneSentenceSummary": "亚马逊云科技大使 Jon Topper 在 QCon 伦敦 2025 伦敦大会上分享了构建软件即服务时常见的错误，重点包括多租户架构设计、自动化租户配置、避免过度定制化以及灾难恢复规划。",
+  "summary": "本文总结了亚马逊云科技大使 Jon Topper 在 QCon 伦敦 2025 大会上关于构建软件即服务时常见错误的演讲主要内容。Topper 强调了在软件即服务架构设计中从一开始就考虑多租户的重要性，并提出了三种主要的架构模型：共享模式、独立模式和混合模式。他还强调了自动化租户配置、避免为每个客户进行定制化、以及进行充分的灾难恢复和安全规划的重要性。此外，Topper 还列举了构建软件即服务应用时常见的十个错误，例如“未计算每个租户的基线成本”、“未对数据资产进行分类”等。本文为软件即服务架构师和开发者提供了有价值的参考和指导，帮助他们避免在构建软件即服务时常犯的错误。",
+  "mainPoints": [
+    {
+      "point": "从一开始就考虑多租户架构对于软件即服务产品的可扩展性至关重要。",
+      "explanation": "若在早期忽略多租户设计，后续扩展会面临巨大挑战，只能选择成本高昂且扩展性差的独立（Silo）模式，限制业务增长。"
+    },
+    {
+      "point": "自动化租户配置可以避免开发团队成为业务瓶颈。",
+      "explanation": "手动配置租户环境会耗费开发资源，阻碍新客户的快速接入，自动化能够提升效率和响应速度。"
+    },
+    {
+      "point": "避免为每个客户进行定制化，保持产品一致性。",
+      "explanation": "为每个客户提供独特功能或版本会导致开发运维复杂性增加，测试成本上升，影响产品质量和团队效率。因此，应坚持产品路线图，避免过度定制化。"
+    }
+  ],
+  "keyQuotes": [
+    "If you're not thinking about tenancy on day one， you're walking into only being able to build the silo model.（如果在第一天没有考虑租户问题，那么你最终只能构建孤岛模式。）",
+    "If you allow customers to dictate when or where software updates happen， then you're baking in operational complexity and sacrificing your weekends.（如果你允许客户决定软件更新的时间和地点，那么你就是在增加运维的复杂性，并且牺牲你的周末。）",
+    "as an early-stage business， you shouldn't be worried about building on more than one platform until you've saturated the market for people who will buy the AWS version.（作为一家早期公司，在 AWS 版本的市场饱和之前，你不应该考虑在多个平台上构建。）",
+    "everything fails all the time（任何事物都会随时失效）"
+  ],
+  "tags": [
+    "软件即服务",
+    "多租户架构",
+    "多租户",
+    "云计算",
+    "亚马逊云科技"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 750,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744156800000,
+  "publishDateStr": "2025-04-09",
+  "publishDateTimeStr": "2025-04-09 00:00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_45d727a5",
+  "title": "350PB、数百万事件、单一系统：探秘 Uber 的跨区域数据湖与灾难恢复体系",
+  "url": "https://www.infoq.com/news/2026/01/uber-hivesync-data-lake/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-16 15:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber has built <a href=\"https://www.uber.com/blog/building-ubers-data-lake-batch-data-replication-using-hivesync/\">HiveSync, a sharded batch replication system</a> that keeps Hive and HDFS data synchronized across multiple regions, handling millions of Hive events daily. HiveSync ensures cross-region data consistency, enables Uber’s disaster recovery strategy, and eliminates inefficiency caused by the secondary region sitting idle, which previously incurred hardware costs equal to the primary, while still maintaining high availability.</p>\n   <p>Built initially on the open-source Airbnb <a href=\"https://github.com/airbnb/reair\">ReAir</a> project, HiveSync has been extended with sharding, <a href=\"https://en.wikipedia.org/wiki/Directed_acyclic_graph\">DAG</a>-based orchestration, and a separation of control and data planes. <a href=\"https://en.wikipedia.org/wiki/Extract,_transform,_load\">ETL</a> jobs now execute exclusively in the primary data center, while HiveSync handles cross-region replication with near real-time consistency, preserving disaster readiness and analytics access. Sharding allows tables and partitions to be divided into independent units for parallel replication and fine-grained fault tolerance.</p>\n   <p>HiveSync separates the control plane, which orchestrates jobs and manages state in a relational metadata store, from the data plane, which performs <a href=\"https://en.wikipedia.org/wiki/Apache_Hadoop\">HDFS</a> and <a href=\"https://en.wikipedia.org/wiki/Apache_Hive\">Hive</a> file operations. A Hive Metastore event listener captures DDL and DML changes, logging them to <a href=\"https://www.mysql.com/\">MySQL</a> and triggering replication workflows. Jobs are represented as finite-state machines, supporting restartability and robust failure recovery.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/01/uber-hivesync-data-lake/news/2026/01/uber-hivesync-data-lake/en/resources/1hivesyncarch-1768281999264.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/uber-hivesync-data-lake/en/resources/1hivesyncarch-1768281999264.jpeg\" rel=\"share\"></p>\n   <p><em>HiveSync architecture: control plane and data plane separation (Source: <a href=\"https://www.uber.com/blog/building-ubers-data-lake-batch-data-replication-using-hivesync\">Uber Blog Post</a>)</em></p>\n   <p>HiveSync has two main components: the HiveSync Replication Service and the Data Reparo Service. The Replication Service uses a Hive Metastore Event Listener to capture table and partition changes in real-time, logging them asynchronously in MySQL. These audit entries are converted into asynchronous replication jobs executed as finite-state machines, with states persisted for reliability. Uber uses a hybrid strategy: smaller jobs use <a href=\"https://en.wikipedia.org/wiki/Remote_procedure_call\">RPC</a> for efficiency, while larger jobs leverage <a href=\"https://hadoop.apache.org/docs/stable/hadoop-distcp/DistCp.html\">DistCp</a> on <a href=\"https://yarnpkg.com/\">YARN</a>. A DAG manager enforces shard-level ordering and locks, and static and dynamic sharding enable horizontal scaling, ensuring consistent, conflict-free replication.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/01/uber-hivesync-data-lake/news/2026/01/uber-hivesync-data-lake/en/resources/1hivereplication-1768281999264.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/uber-hivesync-data-lake/en/resources/1hivereplication-1768281999264.jpeg\" rel=\"share\"></p>\n   <p>HiveSync replication service <em>(Source:&nbsp;&nbsp;<a href=\"https://www.uber.com/blog/building-ubers-data-lake-batch-data-replication-using-hivesync\">Uber Blog Post</a>)</em></p>\n   <p>Data Reparo is a reconciliation service that continuously detects anomalies, such as missing partitions or out-of-band HDFS updates, and restores parity between datacenter1 (DC1) and datacenter2 (DC2) to maintain data correctness. HiveSync maintains a four-hour replication SLA with a 99th <a href=\"https://en.wikipedia.org/wiki/Percentile\">percentile</a> lag of around 20 minutes and supports a one-time replication service for bootstrapping historical datasets into new regions or clusters before switching to incremental replication. Uber’s Data Reparo service scans DC1 and DC2 for anomalies, such as missing or extra partitions, and fixes any mismatches to ensure cross-region consistency, targeting over 99.99% accuracy.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/01/uber-hivesync-data-lake/news/2026/01/uber-hivesync-data-lake/en/resources/1datarepor-1768281999264.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/uber-hivesync-data-lake/en/resources/1datarepor-1768281999264.jpeg\" rel=\"share\"></p>\n   <p><em>Data Reparo analyzes and resolves inconsistencies across data centers (Source: <a href=\"https://www.uber.com/blog/building-ubers-data-lake-batch-data-replication-using-hivesync\">Uber Blog Post</a>)</em></p>\n   <p>HiveSync operates at a massive scale, managing 800,000 Hive tables totaling approximately 300 petabytes of data, with individual tables ranging from a few gigabytes to tens of petabytes. Partitions per table vary from a few hundred to over a million. Each day, HiveSync processes over 5 million Hive DDL and DML events, replicating about 8 petabytes of data across regions.</p>\n   <p>Looking ahead, Uber plans to extend HiveSync for cloud replication use cases as batch analytics and ML pipelines migrate to Google Cloud, further leveraging <a href=\"https://en.wikipedia.org/wiki/Shard_(database_architecture)\">sharding</a>, orchestration, and reconciliation to maintain petabyte-scale data integrity efficiently.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"350PB, Millions of Events, One System: Inside Uber’s Cross-Region Data Lake and Disaster Recovery\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/uber-hivesync-data-lake/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768575600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 的 HiveSync 是一个分片批处理复制系统，跨区域处理 350PB 数据，确保数据湖的灾难恢复、高可用性和近实时一致性。",
+  "oneSentenceSummary": "Uber 的 HiveSync 是一个分片批处理复制系统，跨区域处理 350PB 数据，确保数据湖的灾难恢复、高可用性和近实时一致性。",
+  "summary": "本文详细介绍了 Uber 的 HiveSync，这是一个分片批处理复制系统，旨在为其包含 350PB 数据和数百万日常事件的大规模 Hive 和 HDFS 数据湖维护跨区域数据一致性。针对备用区域闲置的低效问题，HiveSync 通过主动复制数据来确保灾难恢复和高可用性。该系统基于 Airbnb 的 ReAir 构建，融合了分片技术、基于 DAG 的编排以及控制平面与数据平面的清晰分离。该系统每天处理数百万 DDL/DML 事件，以近实时一致性（99% 分位数延迟约 20 分钟）和 4 小时 SLA 复制 PB 级数据。关键组件 Data Reparo 持续协调数据中心之间的数据不一致性，实现超过 99.99% 的准确率。展望未来，随着批处理分析和 ML 管道迁移到 Google Cloud，Uber 计划将 HiveSync 扩展到云复制，突显其在大规模数据完整性方面的持续重要性。",
+  "mainPoints": [
+    {
+      "point": "HiveSync 是一个分片批处理复制系统，为 Uber 的大规模数据湖实现跨区域数据一致性和灾难恢复",
+      "explanation": "它主动跨多个区域同步 350PB 的 Hive 和 HDFS 数据，取代低效的闲置备用区域，并通过高可用性确保业务连续性"
+    },
+    {
+      "point": "系统通过先进的架构模式实现近实时一致性和高数据完整性",
+      "explanation": "利用分片、基于 DAG 的编排和清晰的平面分离，HiveSync 保持 4 小时 SLA 和约 20 分钟的 99% 分位数延迟，每天处理数百万事件"
+    },
+    {
+      "point": "Data Reparo 服务持续协调数据，确保高准确性并防止不一致性",
+      "explanation": "该服务扫描异常情况，如缺失分区和带外 HDFS 更新，修复不匹配问题，保证跨数据中心超过 99.99% 的数据准确性"
+    },
+    {
+      "point": "HiveSync 处理 PB 级数据和数百万日常事件，展示强大的可扩展性",
+      "explanation": "它管理 80 万个 Hive 表，每天复制约 8PB 数据，展示了处理海量数据量和交易率的能力"
+    },
+    {
+      "point": "Uber 计划扩展 HiveSync 用于云复制，适应不断演进的基础设施策略",
+      "explanation": "随着批处理分析和 ML 管道迁移到 Google Cloud，HiveSync 的分片、编排和协调原则将在混合和多云环境中用于高效的数据完整性"
+    }
+  ],
+  "keyQuotes": [
+    "HiveSync 确保跨区域数据一致性，支持 Uber 的灾难恢复策略，并消除了备用区域闲置造成的低效问题",
+    "ETL 作业现在仅在主数据中心执行，而 HiveSync 以近实时一致性处理跨区域复制，保持灾难准备状态和分析访问能力",
+    "HiveSync 在巨大规模下运行，管理着约 80 万个 Hive 表，总计约 300PB 数据",
+    "Data Reparo 是一个协调服务，持续检测异常情况，如缺失分区或带外 HDFS 更新，并恢复数据中心 1（DC1）和数据中心 2（DC2）之间的对等性以保持数据正确性",
+    "每天，HiveSync 处理超过 500 万个 Hive DDL 和 DML 事件，跨区域复制约 8PB 数据"
+  ],
+  "tags": [
+    "数据复制",
+    "分布式系统",
+    "HDFS",
+    "Hive",
+    "灾难恢复"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 495,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768575600000,
+  "publishDateStr": "01-16",
+  "publishDateTimeStr": "2026-01-16 15:00:00"
+}

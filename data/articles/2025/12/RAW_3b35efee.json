@@ -1,0 +1,54 @@
+{
+  "id": "RAW_3b35efee",
+  "title": "GPT-5.2",
+  "url": "https://simonwillison.net/2025/Dec/11/gpt-52/#atom-everything",
+  "date": "2025-12-11 23:58:04",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2025/Dec/11/gpt-52/\">\n    <p class=\"mobile-date\">11th December 2025</p>\n    <p>OpenAI reportedly <a href=\"https://www.wsj.com/tech/ai/openais-altman-declares-code-red-to-improve-chatgpt-as-google-threatens-ai-lead-7faf5ea6\">declared a “code red”</a> on the 1st of December in response to increasingly credible competition from the likes of Google’s Gemini 3. It’s less than two weeks later and they just <a href=\"https://openai.com/index/introducing-gpt-5-2/\">announced GPT-5.2</a>, calling it “the most capable model series yet for professional knowledge work”.</p>\n    <h4 id=\"key-characteristics-of-gpt-5-2\">Key characteristics of GPT-5.2</h4>\n    <p>The new model comes in two variants: GPT-5.2 and GPT-5.2 Pro. There’s no Mini variant yet.</p>\n    <p>GPT-5.2 is available via their UI in both “instant” and “thinking” modes, presumably still corresponding to the API concept of different reasoning effort levels.</p>\n    <p>The knowledge cut-off date for both variants is now <strong>August 31st 2025</strong>. This is significant—GPT 5.1 and 5 were both Sep 30, 2024 and GPT-5 mini was May 31, 2024.</p>\n    <p>Both of the 5.2 models have a 400,000 token context window and 128,000 max output tokens—no different from 5.1 or 5.</p>\n    <p>Pricing wise 5.2 is a rare <em>increase</em>—it’s 1.4x the cost of GPT 5.1, at $1.75/million input and $14/million output. GPT-5.2 Pro is $21.00/million input and a hefty $168.00/million output, putting it <a href=\"https://www.llm-prices.com/#sel=gpt-4.5%2Co1-pro%2Cgpt-5.2-pro\">up there</a> with their previous most expensive models o1 Pro and GPT-4.5.</p>\n    <p>So far the main benchmark results we have are self-reported by OpenAI. The most interesting ones are a 70.9% score on their GDPval “Knowledge work tasks” benchmark (GPT-5 got 38.8%) and a 52.9% on ARC-AGI-2 (up from 17.6% for GPT-5.1 Thinking).</p>\n    <p>The ARC Prize Twitter account provided <a href=\"https://x.com/arcprize/status/1999182732845547795\">this interesting note</a> on the efficiency gains for GPT-5.2 Pro</p>\n    <blockquote>\n     <p>A year ago, we verified a preview of an unreleased version of @OpenAI o3 (High) that scored 88% on ARC-AGI-1 at est. $4.5k/task</p>\n     <p>Today, we’ve verified a new GPT-5.2 Pro (X-High) SOTA score of 90.5% at $11.64/task</p>\n     <p>This represents a ~390X efficiency improvement in one year</p>\n    </blockquote>\n    <p>GPT-5.2 can be accessed in OpenAI’s Codex CLI tool like this:</p>\n    <pre><code>codex -m gpt-5.2\n</code></pre>\n    <p>There are three new API models:</p>\n    <ul>\n     <li><a href=\"https://platform.openai.com/docs/models/gpt-5.2\">gpt-5.2</a></li>\n     <li><a href=\"https://platform.openai.com/docs/models/gpt-5.2-chat-latest\">gpt-5.2-chat-latest</a>—the model used by ChatGPT</li>\n     <li><a href=\"https://platform.openai.com/docs/models/gpt-5.2-pro\">gpt-5.2-pro</a></li>\n    </ul>\n    <p>OpenAI have published a new <a href=\"https://cookbook.openai.com/examples/gpt-5/gpt-5-2_prompting_guide\">GPT-5.2 Prompting Guide</a>.</p>\n    <h4 id=\"it-s-better-at-vision\">It’s better at vision</h4>\n    <p>One note from the announcement that caught my eye:</p>\n    <blockquote>\n     <p>GPT‑5.2 Thinking is our strongest vision model yet, cutting error rates roughly in half on chart reasoning and software interface understanding.</p>\n    </blockquote>\n    <p>I had <a href=\"https://simonwillison.net/2025/Aug/29/the-perils-of-vibe-coding/\">dissapointing results from GPT-5</a> on an OCR task a while ago. I tried it against GPT-5.2 and it did <em>much</em> better:</p>\n    <div class=\"highlight highlight-source-shell\">\n     <pre>llm -m gpt-5.2 ocr -a https://static.simonwillison.net/static/2025/ft.jpeg</pre>\n    </div>\n    <p>Here’s <a href=\"https://gist.github.com/simonw/b4a13f1e424e58b8b0aca72ae2c3cb00\">the result</a> from that, which cost 1,520 input and 1,022 for a total of <a href=\"https://www.llm-prices.com/#it=1520&amp;ot=1022&amp;sel=gpt-5.2\">1.6968 cents</a>.</p>\n    <h4 id=\"rendering-some-pelicans\">Rendering some pelicans</h4>\n    <p>For my classic “Generate an SVG of a pelican riding a bicycle” test:</p>\n    <div class=\"highlight highlight-source-shell\">\n     <pre>llm -m gpt-5.2 <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Generate an SVG of a pelican riding a bicycle<span class=\"pl-pds\">\"</span></span></pre>\n    </div>\n    <p><img src=\"https://static.simonwillison.net/static/2025/gpt-2.5-pelican.png\" alt=\"Described by GPT-5.2: Cartoon-style illustration: A white, duck-like bird with a small black eye, oversized orange beak (with a pale blue highlight along the lower edge), and a pink neckerchief rides a blue-framed bicycle in side view; the bike has two large black wheels with gray spokes, a blue front fork, visible black crank/pedal area, and thin black handlebar lines, with gray motion streaks and a soft gray shadow under the bike on a light-gray road; background is a pale blue sky with a simple yellow sun at upper left and two rounded white clouds (one near upper center-left and one near upper right).\" style=\"max-width: 100%;\"></p>\n    <p>And for the more advanced alternative test, which tests instruction following in a little more depth:</p>\n    <div class=\"highlight highlight-source-shell\">\n     <pre>llm -m gpt-5.2 <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>Generate an SVG of a California brown pelican riding a bicycle. The bicycle</span>\n<span class=\"pl-s\">must have spokes and a correctly shaped bicycle frame. The pelican must have its</span>\n<span class=\"pl-s\">characteristic large pouch, and there should be a clear indication of feathers.</span>\n<span class=\"pl-s\">The pelican must be clearly pedaling the bicycle. The image should show the full</span>\n<span class=\"pl-s\">breeding plumage of the California brown pelican.<span class=\"pl-pds\">\"</span></span></pre>\n    </div>\n    <p><img src=\"https://static.simonwillison.net/static/2025/gpt-5.2-p2.png\" alt=\"Digital illustration on a light gray/white background with a thin horizontal baseline: a stylized California brown pelican in breeding plumage is drawn side-on, leaning forward and pedaling a bicycle; the pelican has a dark brown body with layered wing lines, a pale cream head with a darker brown cap and neck shading, a small black eye, and an oversized long golden-yellow bill extending far past the front wheel; one brown leg reaches down to a pedal while the other is tucked back; the bike is shown in profile with two large spoked wheels (black tires, white rims), a dark frame, crank and chainring near the rear wheel, a black saddle above the rear, and the front fork aligned under the pelican’s head; text at the top reads &quot;California brown pelican (breeding plumage) pedaling a bicycle&quot;.\" style=\"max-width: 100%;\"></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9090/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 OpenAI 正式发布的 GPT-5.2 和 GPT-5.2 Pro 模型，重点介绍了它们在知识工作和视觉任务方面的性能提升、定价上涨以及可用性。",
+  "oneSentenceSummary": "本文探讨了 OpenAI 正式发布的 GPT-5.2 和 GPT-5.2 Pro 模型，重点介绍了它们在知识工作和视觉任务方面的性能提升、定价上涨以及可用性。",
+  "summary": "为应对来自谷歌 Gemini 3 带来的竞争，OpenAI 在“红色警报”之后，正式推出了 GPT-5.2 和 GPT-5.2 Pro 模型。这些模型被定位为 OpenAI 迄今为止为专业知识工作而打造的最强大系列，其知识截止日期已延长至 2025 年 8 月 31 日。尽管上下文窗口与之前的版本相似，但定价显著上涨，特别是 GPT-5.2 Pro。OpenAI 官方公布的基准测试显示，性能有了显著提升：GPT-5.2 在知识任务的 GDPval 上达到了 70.9%，在 ARC-AGI-2 上达到了 52.9%。值得注意的是，GPT-5.2 Pro 在过去一年中，针对 ARC-AGI-1 任务的效率提升了 390 倍。GPT-5.2 Thinking 的一项关键增强是其卓越的视觉能力，这显著改善了 OCR 任务结果和图像生成准确性。这些模型可通过 OpenAI 的 UI、Codex CLI 工具和新的 API 端点进行访问。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.2 模型在专业知识工作和高级推理任务方面表现出显著改进的性能。",
+      "explanation": "GPT-5.2 在 GDPval 上取得了 70.9% 的自测分数，在 ARC-AGI-2 上获得了 52.9%，这表明其在复杂任务处理能力上较之前的版本有了显著飞跃。"
+    },
+    {
+      "point": "新模型提供了增强的视觉能力，减少了图表推理和软件界面理解中的错误。",
+      "explanation": "GPT-5.2 Thinking 被强调为更强大的视觉模型，在 OCR 方面表现出色，并提供更准确、更详细的图像生成，弥补了此前的不足并拓宽了应用场景。"
+    },
+    {
+      "point": "GPT-5.2 Pro 展现出卓越的效率提升，预示着 AI 模型内部资源优化取得了显著的技术进步。",
+      "explanation": "GPT-5.2 Pro 在 ARC-AGI-1 任务中实现了 390 倍的效率提升，这表明尽管定价有所上涨，但其底层技术在计算资源利用效率上取得了显著进步。"
+    }
+  ],
+  "keyQuotes": [
+    "据报道，OpenAI 在 12 月 1 日宣布进入“紧急状态”，以应对来自谷歌 Gemini 3 等日益可信的竞争。",
+    "OpenAI 刚刚发布了 GPT-5.2，称其为“有史以来最适合专业知识工作的模型系列”。",
+    "今天，我们验证了新的 GPT-5.2 Pro (X-High) SOTA 分数为 90.5%，每个任务成本为 11.64 美元。这意味着一年内的效率提高了约 390 倍。",
+    "GPT-5.2 Thinking 是我们迄今为止最强大的视觉模型，将图表推理和软件界面理解的错误率降低了大约一半。"
+  ],
+  "tags": [
+    "GPT-5.2",
+    "OpenAI",
+    "LLM",
+    "AI 模型",
+    "视觉 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 513,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765497484000,
+  "publishDateStr": "2025-12-11",
+  "publishDateTimeStr": "2025-12-11 23:58:04"
+}

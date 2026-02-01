@@ -1,0 +1,55 @@
+{
+  "id": "RAW_8b7f8d9e",
+  "title": "React 高级会议：使用交互式组件提升可访问性",
+  "url": "https://www.infoq.com/news/2025/12/accessibility-ariakit-react/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-01 12:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At React Advanced 2025, <a href=\"https://www.linkedin.com/in/aurora-scharff-a86b88188/\">Aurora Scharff</a> presented <q>Building Interactive Async UI with React 19 and Ariakit</q> and shared how <a href=\"http://ariakit.org/\">ARIAKit</a>, an open-source accessibility library, enables developers to build custom UI components that meet WCAG standards without requiring deep accessibility expertise. The presentation showcased a practical approach to combining ARIAKit's unstyled primitives with modern React patterns to create production-ready, accessible interfaces.\n    <br>\n    <br>\n    <img alt=\"\" style=\"width: 700px; height: 525px;\" data-src=\"https://www.infoq.com/news/2025/12/accessibility-ariakit-react/news/2025/12/accessibility-ariakit-react/en/resources/1IMG_0765-1764520043310.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/accessibility-ariakit-react/en/resources/1IMG_0765-1764520043310.jpeg\" rel=\"share\"></p>\n   <p>ARIAKit provides unstyled, accessible UI primitives that handle keyboard navigation, screen reader support, and ARIA attributes automatically. The library, which has gained adoption in major projects including WordPress Gutenberg and WooCommerce, follows WAI-ARIA standards while allowing complete styling freedom. Unlike fully styled component libraries, ARIAKit exports composable primitives that developers can customize with any styling solution, including Tailwind CSS.</p>\n   <p>The speaker illustrated the challenges facing developers who need to implement custom designs while maintaining accessibility. In some countries, WCAG 2 compliance is legally required for public applications, with potential fines for non-compliance. However, many development teams lack dedicated accessibility resources, creating a gap between design requirements and implementation capabilities.</p>\n   <p><img alt=\"\" style=\"width: 700px; height: 525px;\" data-src=\"https://www.infoq.com/news/2025/12/accessibility-ariakit-react/news/2025/12/accessibility-ariakit-react/en/resources/1IMG_0759-1764520043310.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/accessibility-ariakit-react/en/resources/1IMG_0759-1764520043310.jpeg\" rel=\"share\"></p>\n   <p>Starting with a non-accessible account selector component, the demonstration showed common accessibility failures including missing keyboard navigation, non-functional escape key handling, and absent screen reader support. The initial implementation relied on generic div elements with manual state management through multiple useState hooks and verbose event handling code.</p>\n   <p>The transformation to an accessible component involved replacing generic HTML elements with ARIAKit primitives. A SelectProvider component managed the interaction state, while Select, SelectPopover, and SelectItem components provided the structure. ARIAKit automatically applied appropriate ARIA attributes and handled keyboard interactions, including arrow key navigation and focus management.</p>\n   <p>The presentation highlighted how ARIAKit enables styling through data attributes rather than traditional state management. Instead of managing hover and focus states manually, developers can style components using data-active-item and data-focus-visible attributes that ARIAKit applies automatically. This approach proved particularly valuable for keyboard users, who require higher contrast focus indicators than mouse users.</p>\n   <p>Integration with React 19 features demonstrated how ARIAKit components work alongside modern async patterns. The speaker used <a href=\"https://react.dev/reference/react/useTransition\">useTransition</a> to coordinate server operations with UI updates, eliminating flickering pending states. The <a href=\"https://react.dev/reference/react/useOptimistic\">useOptimistic</a> hook provided instant feedback for state changes while maintaining automatic rollback on errors. Server functions replaced traditional API endpoints, simplifying the architecture by allowing direct function calls from client components.</p>\n   <p>ARIAKit is available as an open-source library under an MIT license, with active development and comprehensive documentation at <a href=\"http://ariakit.org\">ariakit.org</a>. The library works with React 17 and above, and its primitives can be installed via npm, yarn, or pnpm package managers.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Accessibility with Interactive Components at React Advanced Conf\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/accessibility-ariakit-react/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764590400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "ARIAKit 是一个开源库，用于构建符合 WCAG 标准的 React UI 组件，并无缝集成 React 19 的异步特性。",
+  "oneSentenceSummary": "ARIAKit 是一个开源库，用于构建符合 WCAG 标准的 React UI 组件，并无缝集成 React 19 的异步特性。",
+  "summary": "本文基于 Aurora Scharff 在 2025 年 React 高级会议上的演讲，介绍了一个开源库 ARIAKit，它旨在简化 React 中可访问的自定义 UI 组件的创建。它解决了开发人员在满足公共应用程序的 WCAG 合规性时面临的挑战，尤其是在缺乏专业可访问性资源时。ARIAKit 提供了无样式、可组合的基元，可以自动管理键盘导航、屏幕阅读器支持和 ARIA 属性。这使得开发人员可以使用 Tailwind CSS 等解决方案完全自由地进行样式设置。演示展示了如何通过使用 ARIAKit 基元替换通用 HTML 将不可访问的组件转换为兼容组件，突出了其使用数据属性进行样式设置的优势，而非手动状态管理。此外，本文还说明了 ARIAKit 与现代 React 19 功能的无缝集成，例如 `useTransition` 用于协调异步 UI 更新，`useOptimistic` 用于通过错误自动回滚进行即时反馈。这些都简化了服务器交互。ARIAKit 已在 WordPress Gutenberg 等项目中广泛采用，为构建可访问的界面提供了一种实用且可用于生产的解决方案。",
+  "mainPoints": [
+    {
+      "point": "ARIAKit 简化了符合 WCAG 标准的 React UI 组件的构建，降低了对专业可访问性知识的需求。",
+      "explanation": "它提供了无样式的基元，可以自动处理键盘导航、屏幕阅读器支持和 ARIA 属性，使开发人员可以专注于设计和功能，同时确保合规性。"
+    },
+    {
+      "point": "ARIAKit 通过数据属性提供完全的样式灵活性，并与现代 React 模式无缝集成。",
+      "explanation": "开发人员可以使用 ARIAKit 的数据属性通过任何 CSS 解决方案来设置组件的样式，并且它可以有效地与 React 19 的 `useTransition` 和 `useOptimistic` 一起使用，以实现高级异步 UI。"
+    },
+    {
+      "point": "该库通过启用自定义设计同时确保法律可访问性合规性，从而解决了 Web 开发中的一个关键差距。",
+      "explanation": "许多团队缺乏可访问性专家，而 ARIAKit 弥补了这一差距，有助于满足公共应用程序的法律要求并改善所有用户的用户体验。"
+    }
+  ],
+  "keyQuotes": [
+    "ARIAKit 提供了无样式的、可访问的 UI 基元，可以自动处理键盘导航、屏幕阅读器支持和 ARIA 属性。",
+    "该库已在包括 WordPress Gutenberg 和 WooCommerce 在内的主要项目中获得采用，它遵循 WAI-ARIA 标准，同时允许完全的样式自由。",
+    "从一个不可访问的帐户选择器组件开始，该演示展示了常见的可访问性故障，包括缺少键盘导航、非功能性的 escape 键处理以及缺少屏幕阅读器支持。",
+    "与 React 19 功能的集成演示了 ARIAKit 组件如何与现代异步模式一起工作。",
+    "useOptimistic hook 为状态更改提供即时反馈，同时保持错误时的自动回滚。"
+  ],
+  "tags": [
+    "可访问性",
+    "React",
+    "UI 组件",
+    "ARIAKit",
+    "WCAG"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 417,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764590400000,
+  "publishDateStr": "2025-12-01",
+  "publishDateTimeStr": "2025-12-01 12:00:00"
+}

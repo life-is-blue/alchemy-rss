@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a61f2fb1",
+  "title": "华为新架构砍了 Transformer 大动脉！任意模型推理能力原地飙升",
+  "url": "https://www.qbitai.com/2025/12/359247.html",
+  "date": "2025-12-05 17:40:31",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"70\">金磊 发自 凹非寺</p>\n   <p data-track=\"71\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">是时候给<strong>Transformer</strong>的大动脉<strong>动刀子</strong>了。</p>\n  <p data-track=\"3\">因为即便它享有当下AI世界基石的地位，但自身问题也是非常明显：</p>\n  <p data-track=\"4\">一旦遇到复杂的数学题或者需要多步逻辑推理的时候，就开始一本正经地胡说八道了……</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_cb2ccf4d865d4e5238ec1fc7d39253e7.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_cb2ccf4d865d4e5238ec1fc7d39253e7.png\">\n  </div>\n  <p data-track=\"5\">问题究竟出在了哪里？</p>\n  <p data-track=\"6\">答案就藏在Transformer的核心机制里——<strong>Attention</strong>。</p>\n  <p data-track=\"7\">传统Attention机制本质上像是一种配对比较：每个词只和另一个词直接发生关系，生成一个注意力权重。</p>\n  <p data-track=\"8\">这种架构虽然擅长捕捉长距离依赖，但在建模复杂、多跳、多点之间的逻辑关系时却显得力不从心了。</p>\n  <p data-track=\"9\">例如它能轻松理解“A认识B”，但如果要它理解“张三通过李四认识了王五”，即多跳、多点之间的复杂、间接关系，它的脑回路就显得不够深，推理能力的天花板瞬间触顶。</p>\n  <p data-track=\"10\">现在，这个天花板，被华为<strong>诺亚方舟实验室</strong>捅破了！</p>\n  <p data-track=\"11\">因为就在最近，团队祭出了一种全新架构，叫做<strong>Nexus</strong>，即<strong>高阶注意力机制</strong>（Higher-Order Attention Mechanism）。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_59f8d84d9ef896a714946e5de3c5ca85.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_59f8d84d9ef896a714946e5de3c5ca85.png\">\n  </div>\n  <p data-track=\"12\">它可以说是直接狙击了Attention机制的核心痛点，<strong>使用更高阶注意力</strong>，就能有效地建模多跳、多点之间的复杂关联。</p>\n  <p data-track=\"13\">并且从实验结果来看，效果也是有点惊艳在身上的。</p>\n  <p data-track=\"14\">只要换上Nexus这个新架构，模型在数学和科学等复杂推理任务上的能力，都能立马实现大幅飙升，而且还是<strong>参数零增</strong>的那种。</p>\n  <p data-track=\"15\">妙哉，着实妙哉。</p>\n  <p data-track=\"16\">接下来，就让我们一同来深入了解一下Nexus的精妙一刀。</p>\n  <p data-track=\"18\">要理解高阶的意义，我们必须先回顾传统自注意力机制的根本缺陷。</p>\n  <p data-track=\"19\">标准的自注意力机制本质上是将输入序列X分别通过三个线性变换WQ，WK，WV生成Query（Q）、Key（K）、Value（V），再通过softmax计算注意力权重：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_1a69acdb473612291f492aea659a7750.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_1a69acdb473612291f492aea659a7750.png\">\n  </div>\n  <p data-track=\"20\">但这里就出现了一个关键的问题：Q和K都是静态的、与上下文无关的线性投影。</p>\n  <p data-track=\"21\">也就是说，某个token的Query向量仅由它自己决定，无法感知其他token的存在；这导致注意力权重只能反映两两之间的直接关系。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"22\"><strong>精妙第一刀：Q和K的革新</strong></p>\n  <p data-track=\"23\">华为诺亚方舟实验室的第一个刀法，就精妙地砍在了这里：<strong>Nexus让Q和K的生成过程本身也变成一个注意力操作。</strong></p>\n  <p data-track=\"24\">换句话说，token在计算最终的Q和K之前，会先进行一次<strong>“预推理”</strong>；这个过程，其实就是一个<strong>嵌套的自注意力机制</strong>。</p>\n  <p data-track=\"25\">Token首先通过这个内部循环，从全局上下文中聚合信息，形成一个更加精炼、更具<strong>上下文感知能力</strong>的表示，然后再用这个表示去计算最终的Q和K。</p>\n  <p data-track=\"26\">这就好比，在你问我答（Q和K计算Attention）之前，每个token都先在内部进行了深思熟虑，充分吸收了它在整个序列中的环境信息。</p>\n  <p data-track=\"27\">这样生成的Q和K，自然就摆脱了线性投影的僵硬，具备了捕捉复杂关系的动态性。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_6cc1ff9d20cbcba096b06d50eba0c008.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_6cc1ff9d20cbcba096b06d50eba0c008.png\">\n  </div>\n  <p class=\"pgc-h-forward-slash\" data-track=\"28\"><strong>精妙第二刀：巧用递归框架</strong></p>\n  <p data-track=\"29\">Nexus架构最精妙之处，还在于它的<strong>递归框架</strong>（Recursive Framework）。</p>\n  <p data-track=\"30\">这个内部注意力循环可以被递归地来嵌套。</p>\n  <p data-track=\"31\">如果我们将一层Attention视为一阶关系（A认识B），那么将Attention的输出作为下一层Attention的输入，就可以构建二阶关系（张三通过李四认识王五），乃至更高阶的关系。</p>\n  <p data-track=\"32\">在Nexus中，这种递归嵌套被巧妙地集成在一个单层结构中，形成了一个层次化的推理链。</p>\n  <p data-track=\"33\">论文进一步将上述过程递归化，定义第m阶注意力为：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_40d0a9e98a6e091f50c0c8312e3264ae.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_40d0a9e98a6e091f50c0c8312e3264ae.png\">\n  </div>\n  <p data-track=\"34\">其中，m=1就是标准注意力；m=2表示Q和K由一次内层注意力生成；m=3表示Q和K由二阶注意力生成，相当于“注意力的注意力的注意力”。</p>\n  <p data-track=\"35\">这种结构天然支持多跳推理链，就像人在解一道数学题时，先理解题干中的关键变量（第1层），再思考它们之间的公式关系（第2层），最后验证整体逻辑是否自洽（第3层）。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"36\"><strong>精妙第三刀：不增参数</strong></p>\n  <p data-track=\"37\">复杂架构往往意味着更高的计算开销和更多的参数量，但Nexus通过精巧的设计，完全规避了这些问题——<strong>权重共享策略</strong>。</p>\n  <p data-track=\"38\">具体来说，无论是内层还是外层的注意力模块，都复用同一组投影权重WQ，WK，WV。</p>\n  <p data-track=\"39\">这意味着，尽管计算路径更复杂，但模型参数量和原始Transformer完全一致。</p>\n  <p data-track=\"40\">这种设计背后有一个关键假设：无论处于递归的哪一层，将token投影为Query或Key的语义变换方式是相似的。</p>\n  <p data-track=\"41\">团队通过实验证明，这一假设是成立的。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_f3f52c6b40cd7297075763b9713af0a3.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_f3f52c6b40cd7297075763b9713af0a3.png\">\n  </div>\n  <p data-track=\"42\">在Pythia-70M的消融实验中，使用权重共享的Nexus-QK-Shared版本，平均准确率仍比基线高出近1个百分点，而参数量毫无增加。</p>\n  <p data-track=\"43\">这就让Nexus成为了一种极其高效的表达密度提升器——用相同的参数，实现更强的推理能力。</p>\n  <p data-track=\"45\">那么Nexus的效果到底如何？</p>\n  <p data-track=\"46\">论文在两个维度做了验证：从零训练的小模型，以及对已有大模型的架构改造。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"47\"><strong>小模型全面领先</strong></p>\n  <p data-track=\"48\">研究团队在 Pythia 系列（70M 到 1B）上从头训练 Nexus，并在六个标准推理数据集上评估：ARC-C、ARC-E、HellaSwag、LogiQA、PiQA和SciQ。</p>\n  <p data-track=\"49\">结果非常一致：Nexus 在所有规模上都优于原始Transformer。</p>\n  <p data-track=\"50\">尤其在需要多步推理或科学常识的任务中提升显著。例如：</p>\n  <ul>\n   <li data-track=\"51\">在SciQ（科学问答）上，70M模型准确率从61.5%提升至68.5%，提升7个百分点；</li>\n   <li data-track=\"52\">在PiQA（物理常识推理）上，1B模型从62.5%提升至63.6%。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_73e4a305e7b3ad18fa7aa4c4a07be85a.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_73e4a305e7b3ad18fa7aa4c4a07be85a.png\">\n  </div>\n  <p data-track=\"53\">这说明Nexus特别擅长处理那些不能靠表面模式匹配解决的问题，是真的有在做推理。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"54\"><strong>大模型改装即用</strong></p>\n  <p data-track=\"55\">面对规模更大的模型，Nexus还体现出了即插即用的能力。</p>\n  <p data-track=\"56\">团队将Qwen2.5的1.5B和7B版本的标准注意力层直接替换为Nexus结构，仅在SFT（监督微调）阶段进行训练，未改动预训练权重。</p>\n  <p data-track=\"57\">结果表明，在三个高难度数学推理基准上（MATH-500、AIME24、GPQA-Diamond），Nexus 均带来稳定提升：</p>\n  <ul>\n   <li data-track=\"58\">Qwen2.5-1.5B在MATH-500上准确率从78.6% → 80.1%；</li>\n   <li data-track=\"59\">Qwen2.5-7B在AIME24上从 45.2% → 47.5%。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251205213729_25854cea39ea5c9b7da49a0ccc348b1c.png\" alt=\"华为新架构砍了Transformer大动脉！任意模型推理能力原地飙升\" data-src=\"https://image.jido.dev/20251205213729_25854cea39ea5c9b7da49a0ccc348b1c.png\">\n  </div>\n  <p data-track=\"60\">尤其值得注意的是AIME24的提升，因为这类题目要求严格的多步逻辑推导，错误一步就全盘皆输。Nexus 的改进说明，它确实在内部构建了更连贯的推理链。</p>\n  <p data-track=\"61\">从这一层面来看，Nexus不仅是一个新训练范式，还是一套架构升级套件。你不用重新训练一个千亿模型，只需在微调阶段替换注意力层，就能解锁更强的推理能力。</p>\n  <p data-track=\"63\">虽然Nexus目前聚焦于语言模型，但其思想具有普适性。</p>\n  <p data-track=\"64\">高阶关系建模在视觉、图神经网络、多模态任务中同样关键；例如，在视频理解中，“A看到B打了C” 就是一个典型的三元关系，传统Attention难以直接捕捉。</p>\n  <p data-track=\"65\">华为诺亚团队表示，下一步将探索Nexus在视觉Transformer和多模态大模型中的应用，并优化其计算效率。</p>\n  <p data-track=\"66\">Transformer 的智商天花板，或许从来不在参数量，而在其注意力机制的表达能力。华为诺亚的 Nexus，用一种优雅而高效的方式，为这一核心模块注入了高阶推理能力。</p>\n  <p data-track=\"67\">它不靠堆料，不靠提示工程，而是从架构底层重构了模型的思考方式。</p>\n  <p data-track=\"68\">因此，Nexus也提醒了我们：<strong>有时候，聪明的架构比规模的大小更重要。</strong></p>\n  <p data-track=\"69\">论文地址：\n   <br class=\"sysbr\">\n   https://arxiv.org/abs/2512.03377</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "华为诺亚方舟实验室提出全新 Nexus 高阶注意力机制，通过革新 Transformer 核心 Attention，在参数零增的情况下显著提升任意模型在复杂推理任务上的能力。",
+  "oneSentenceSummary": "华为诺亚方舟实验室提出全新 Nexus 高阶注意力机制，通过革新 Transformer 核心 Attention，在参数零增的情况下显著提升任意模型在复杂推理任务上的能力。",
+  "summary": "文章深入介绍了华为诺亚方舟实验室研发的全新 AI 模型架构 Nexus，旨在解决传统 Transformer 模型在复杂多步逻辑推理任务中表现力不足的问题。该架构通过引入“高阶注意力机制”，革新了传统 Attention 中 Query 和 Key 的生成方式，使其具备上下文感知能力，并通过递归框架构建多跳推理链。Nexus 的关键创新在于其在不增加模型参数量的前提下，显著提升了模型在数学、科学等复杂推理任务上的表现。实验结果表明，无论是从零训练的小模型，还是对已有大型模型（如 Qwen2.5）进行即插即用改造，Nexus 都能带来稳定的性能提升。文章强调，Nexus 不仅是一个新的训练范式，更是一个高效的架构升级套件，其思想具有普适性，有望应用于视觉、图神经网络和多模态任务中，预示着架构的精巧设计比单纯增加参数规模更为重要。",
+  "mainPoints": [
+    {
+      "point": "Nexus 革新了 Attention 机制中的 Q 和 K 生成，使其具备上下文感知能力",
+      "explanation": "通过嵌套的自注意力机制进行“预推理”，使得 Query 和 Key 能从全局上下文聚合信息，摆脱了静态线性投影的局限，能捕捉更复杂的动态关系。"
+    },
+    {
+      "point": "采用递归框架构建高阶注意力，实现多跳逻辑推理",
+      "explanation": "Nexus 巧妙地将注意力操作递归嵌套，将一阶关系扩展到多阶关系，模拟人脑多步推理过程，有效解决传统 Transformer 难以处理的复杂间接关联。"
+    },
+    {
+      "point": "在参数零增的前提下，Nexus 显著提升模型推理能力",
+      "explanation": "通过精巧的权重共享策略，Nexus 在不增加模型参数量的情况下实现了计算路径的复杂化和表达密度的提升，大幅提高了模型在复杂数学和科学任务上的准确率。"
+    }
+  ],
+  "keyQuotes": [
+    "是时候给 Transformer 的大动脉动刀子了。",
+    "Nexus，即高阶注意力机制（Higher-Order Attention Mechanism）。它可以说是直接狙击了 Attention 机制的核心痛点，使用更高阶注意力，就能有效地建模多跳、多点之间的复杂关联。",
+    "Nexus 让 Q 和 K 的生成过程本身也变成一个注意力操作。换句话说，token 在计算最终的 Q 和 K 之前，会先进行一次“预推理”；这个过程，其实就是一个嵌套的自注意力机制。",
+    "复杂架构往往意味着更高的计算开销和更多的参数量，但 Nexus 通过精巧的设计，完全规避了这些问题——权重共享策略。",
+    "Transformer 的智商天花板，或许从来不在参数量，而在其注意力机制的表达能力。华为诺亚的 Nexus，用一种优雅而高效的方式，为这一核心模块注入了高阶推理能力。"
+  ],
+  "tags": [
+    "AI模型",
+    "Transformer",
+    "注意力机制",
+    "推理能力",
+    "模型架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 90,
+  "wordCount": 2766,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764956431000,
+  "publishDateStr": "2025-12-05",
+  "publishDateTimeStr": "2025-12-05 17:40:31"
+}

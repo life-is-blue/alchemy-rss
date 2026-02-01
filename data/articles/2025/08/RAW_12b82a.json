@@ -1,0 +1,55 @@
+{
+  "id": "RAW_12b82a",
+  "title": "GitLab 发布 Duo Agent 平台公开 Beta 版，引入 Agent 编排的 DevSecOps",
+  "url": "https://www.infoq.com/news/2025/08/gitlab-duo-agent-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-31 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">GitLab has launched the <a href=\"https://about.gitlab.com/blog/gitlab-duo-agent-platform-public-beta/\">public beta of its GitLab Duo Agent Platform</a>, an orchestration tool that enables developers to collaborate asynchronously with AI agents across the DevSecOps lifecycle. The platform, now available to <a href=\"https://about.gitlab.com/pricing/\">GitLab.com Premium and Ultimate</a> customers as well as self-managed installations, transforms traditional, linear development workflows into dynamic, multi-agent systems where AI handles routine tasks such as refactoring, security scanning, and research, while developers focus on complex problem-solving.</p>\n   <p dir=\"ltr\">At its core, the Duo Agent Platform leverages GitLab's position as the centralized system of record, encompassing code, merge requests, CI/CD pipelines, test results, compliance checks, and project history, to provide AI agents with full organizational context. This allows agents to make informed, autonomous contributions aligned with development standards and workflows.</p>\n   <p dir=\"ltr\">The public beta rollout introduces several key features designed to enhance collaboration between developers and agents. Agents can now operate in parallel, with different roles such as a Software Developer Agent, a Security Analyst Agent, or a Deep Research Agent, each performing specialized tasks under unified orchestration. Developers can interact with these agents through chat interfaces embedded directly in VS Code, JetBrains IDEs, and GitLab's Web UI, delegating tasks and receiving feedback in natural language with commands such as \"/explain\", \"/tests\", or \"/include\".</p>\n   <p dir=\"ltr\">The platform also allows organizations to define custom agent rules using natural language, ensuring that agent behavior, coding preferences, and compliance requirements align with established standards. Beyond GitLab's own ecosystem, the Duo Agent Platform integrates with the Model Context Protocol (MCP), enabling agents to interoperate with external systems and services. This positions the platform as not only a developer productivity tool but as an extensible, intelligent layer across the entire DevSecOps ecosystem.</p>\n   <p dir=\"ltr\">GitLab plans to update the platform monthly as part of its 18.x release train, with general availability expected later this year. <a href=\"https://securitybrief.com.au/story/gitlab-duo-agent-platform-beta-unlocks-ai-human-collaboration\">Early industry feedback has been positive</a>. Bal Kang, Engineering Platform Lead at NatWest, stated that Duo agents embedded in their software development lifecycle have already \"boosted productivity, velocity, and efficiency\" by freeing developers from repetitive tasks. Rachel Stephens, Research Director at RedMonk, added that GitLab's orchestration platform represents \"a significant step forward in integrating AI agents into existing DevSecOps toolchains\".</p>\n   <p dir=\"ltr\">By introducing orchestration, developer context, and intelligent automation into a unified, agent-based framework, GitLab's Duo Agent Platform public beta offers a glimpse into the future of software engineering collaboration.</p>\n   <p dir=\"ltr\">But GitLab is not alone. Rivals including GitHub, JetBrains, and Atlassian have already deployed big agent-driven solutions, each taking a distinct approach to integrating AI into the development lifecycle.</p>\n   <p dir=\"ltr\">GitHub's Copilot, powered by OpenAI Codex and later GPT-4 and now GPT-5, popularized the idea of AI as a real-time \"pair programmer\". Unlike GitLab's orchestrated, multi-agent model, Copilot focuses on inline code generation and developer assistance within the IDE. GitHub has also introduced <a href=\"https://githubnext.com/projects/copilot-workspace\">Copilot Workspace</a>, an experimental platform where AI agents handle entire workflows, such as project setup, dependency updates, and CI configuration (GitHub Blog). While GitLab emphasizes orchestration across multiple agents with organizational context, GitHub remains closer to the developer's keyboard, prioritizing productivity and rapid coding suggestions.</p>\n   <p dir=\"ltr\">JetBrains took a different route with the AI Assistant for IntelliJ-based IDEs. Rather than building a multi-agent orchestration layer, <a href=\"https://www.jetbrains.com/ai-assistant/\">JetBrains integrated AI features</a>, such as smart code explanations, inline documentation, and automated refactoring, directly into the IDE's workflow. This approach resembles GitHub's, but keeps everything IDE-centric. JetBrains positions AI less as a \"collaborative agent ecosystem\" and more as an extension of the development environment, reinforcing its philosophy that developer productivity is best improved by tightening the loop between coding and feedback inside the IDE.</p>\n   <p dir=\"ltr\">Atlassian has leaned on AI agents to streamline project management and collaboration. Through <a href=\"https://www.atlassian.com/trust/atlassian-intelligence\">Atlassian Intelligence</a>, Confluence and Jira now use AI to summarize issues, generate documentation, and automate routine administrative tasks. Unlike GitLab or GitHub, Atlassian's AI agents don't write code; instead, they focus on removing the overhead of planning, documentation, and ticket management. The strategy is less about developer-agent pair programming and more about ensuring teams can move work through the pipeline with fewer bottlenecks.</p>\n   <p dir=\"ltr\">While GitLab differentiates itself with its agent orchestration platform, compared to these competitors, all companies are converging on the same vision: AI agents as core participants in the software development lifecycle.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitLab Unveils Duo Agent Platform in Public Beta, Introducing Agent-Orchestrated DevSecOps\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/gitlab-duo-agent-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756641600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitLab 发布 Duo Agent 平台公开 Beta 版，引入 Agent 编排的 DevSecOps，实现 AI 智能体与人类的协作。",
+  "oneSentenceSummary": "GitLab 发布 Duo Agent 平台公开 Beta 版，引入 Agent 编排的 DevSecOps，实现 AI 智能体与人类的协作。",
+  "summary": "GitLab 发布了 Duo Agent 平台的公开 Beta 版，这是一款旨在促进开发者和 AI 智能体在整个 DevSecOps 生命周期中进行异步协作的编排工具。该平台将传统工作流程转变为动态的、多智能体系统，使 AI 能够管理诸如重构和安全扫描等日常任务，助力开发者摆脱重复劳动，从而能够专注于解决复杂的难题。该平台的核心功能是利用 GitLab 全面的信息中心，包括代码、CI/CD 流水线和合规性检查，为 AI 智能体提供完整的组织背景，以便其做出明智的贡献。主要功能包括专业智能体（例如，软件开发者、安全分析师）的并行操作、通过 IDE 和 GitLab Web UI 进行的自然语言交互以及可自定义的智能体规则。该平台还通过模型上下文协议 (MCP) 与外部系统集成。虽然收到了积极的早期反馈，但 GitLab 通过专注于整个 DevSecOps 生态系统中的多智能体编排和深度组织背景，从而将自己与 GitHub Copilot / Workspace（代码生成）、JetBrains AI Assistant（以 IDE 为中心的功能）和 Atlassian Intelligence（项目管理 AI）等竞争对手区分开来。这标志着 GitLab 在推动 AI 智能体成为软件工程核心参与者方面迈出了重要一步。",
+  "mainPoints": [
+    {
+      "point": "GitLab Duo Agent 平台引入了 Agent 编排的 DevSecOps，以增强 AI 智能体与人类的协作。",
+      "explanation": "该平台将传统的线性开发转变为动态的多智能体系统，使 AI 能够处理诸如重构和安全等日常任务，使开发者能够专注于解决复杂的难题和创新。"
+    },
+    {
+      "point": "该平台利用 GitLab 的集中式信息中心，为 AI 智能体提供全面的组织背景。",
+      "explanation": "通过访问代码、CI/CD 和项目历史记录，AI 智能体可以做出明智的、自主的贡献，这些贡献与已建立的开发标准和工作流程保持一致，从而确保一致性和合规性。"
+    },
+    {
+      "point": "GitLab 通过多智能体编排和深度组织背景来区分其产品。",
+      "explanation": "与主要以代码为中心或以项目管理为中心的竞争对手工具不同，GitLab 的平台在整个 DevSecOps 生命周期中编排各种 AI 智能体，将它们深度集成到开发过程中。"
+    }
+  ],
+  "keyQuotes": [
+    "GitLab 发布了 GitLab Duo Agent 平台的公开 Beta 版，这是一款编排工具，使开发者能够与 AI 智能体在整个 DevSecOps 生命周期中进行异步协作。",
+    "Duo Agent 平台的核心在于利用 GitLab 的集中式信息中心地位，该系统包含代码、MR、CI/CD 流水线、测试结果、合规性检查和项目历史记录，从而为 AI 智能体提供完整的组织背景。",
+    "通过将编排、开发者背景和智能自动化引入统一的、基于智能体的框架中，GitLab 的 Duo Agent 平台公开 Beta 版让人们得以一窥软件工程协作的未来。",
+    "RedMonk 的研究总监 Rachel Stephens 补充说，GitLab 的编排平台代表着“在将 AI 智能体集成到现有 DevSecOps 工具链中迈出的重要一步”。",
+    "虽然 GitLab 通过其智能体编排平台与这些竞争对手区分开来，但所有公司都在朝着相同的愿景发展：AI 智能体成为软件开发生命周期的核心参与者。"
+  ],
+  "tags": [
+    "DevSecOps",
+    "AI 智能体",
+    "软件工程",
+    "GitLab Duo Agent 平台",
+    "GitLab"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 694,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756641600000,
+  "publishDateStr": "2025-08-31",
+  "publishDateTimeStr": "2025-08-31 12:00:00"
+}

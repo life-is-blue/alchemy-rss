@@ -1,0 +1,63 @@
+{
+  "id": "RAW_c916d1d",
+  "title": "AI Coding 言出法随，未来什么还会值钱？",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6968e0a578a76a0c824d9745",
+  "date": "2026-01-15 12:39:00",
+  "author": "徐文浩，任鑫",
+  "siteName": "AI炼金术",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>本期节目源于“意外”——嘉宾临时缺席，任鑫和徐文浩就自己闲聊了起来。两人从自己用 AI 给孩子写游戏、做学习工具的亲身经历出发，探讨了一个核心命题：</span><b><span>当 AI 编程能力（AI Coding）足够强时，传统的软件开发流程、低代码工具（Low-code）甚至“公司”这种组织形式是否还有存在的必要？</span></b><span>未来 36 个月，生产力将越来越过剩，传统的工作能力、管理技能将进一步贬值，我们应该做什么准备呢？市场还会需要什么，什么资源和能力会相对升值呢？</span></p>\n  <br>\n  <p><strong><span>你会听到的关键结论</span></strong></p>\n  <p><b><span>中间层会变薄</span></b><span>：很多事直接“对话 → 代码 → 执行”，不再需要一堆工作流产品夹在中间。</span></p>\n  <p><b><span>企业不会跟着消失</span></b><span>：高风险场景要可控、可审计、可追责，“稳定界面+背锅机制”是刚需。</span></p>\n  <p><b><span>Skill/Agent 很强也很危险</span></b><span>：给权限就等于开攻击面，偷 key/私钥/勒索不是科幻。</span></p>\n  <p><b><span>组织协同被重新定价</span></b><span>：三五个人+AI 可能干掉过去小几十人的“沟通型产出”。</span></p>\n  <p><b><span>渠道比生产力更值钱</span></b><span>：做东西更容易以后，难点回到获客、信任、成交。</span></p>\n  <br>\n  <p><strong><span>详细内容时间戳</span></strong></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"79\">00:01:19</a> 这期为什么临时加更：AI coding 让人开始“价值感摇晃”</span></p>\n  <p><span>今天想聊的不是工具测评，而是心理震荡与判断框架</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"511\">00:08:31</a> 为什么 AI Coding 像“言出法随”？</span></p>\n  <p><b><span>从“想办法”到“改软件”：一句话把限制改掉</span></b></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"553\">00:09:13</a> “即抛即用软件”为什么突然划算？</span></p>\n  <p><span>过去个性化软件太贵，现在可以为一个任务快速定制、用完就丢</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"605\">00:10:05</a> 给孩子做听写 App：闭环不是判对错，而是“笔画级反馈”</span></p>\n  <p><b><span>少给具体指令，让 AI 自己把需求优化到更短反馈闭环</span></b></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"992\">00:16:32</a> 为什么企业场景仍需要“稳定界面 + 责任机制”？</span></p>\n  <p><span>高确定性/高风险场景不接受“今天能用明天崩”</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1070\">00:17:50</a> </span><b><span>人类该干什么：把真实世界和虚拟世界对齐</span></b></p>\n  <p><span>目标、约束、权责对齐做不好，AI 会把你带沟里</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1143\">00:19:03</a> Skill/Agent 的安全坑：偷 key、私钥、勒索</span></p>\n  <p><span>权限管理与攻击面：强大=更需要边界</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1534\">00:25:34</a> “中间层不存在”：对话里写代码，自动把录音变 MD</span></p>\n  <p><span>iCloud 文件夹→定时扫描→转写/总结→输出 Markdown</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1729\">00:28:49</a> 拖拽工作流会消失吗？企业为什么可能留住中间层</span></p>\n  <p><span>合规/权限/审计/治理决定企业演进速度</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2014\">00:33:34</a> 组织被重新定价：3–5个人+AI 能不能干掉过去的小几十人协同？</span></p>\n  <p><b><span>协同的真实成本：沟通、对齐、跟进</span></b></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2073\">00:34:33</a> “AI 领导力”焦虑：练传统管理会不会18个月后过时？</span></p>\n  <p><span>不确定性也很大：别把焦虑当确定命运</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2340\">00:39:00</a> 飞书妙计的机会：不是文档过载，是过滤器失灵</span></p>\n  <p><span>你需要 summary，不需要被扔进一堆 wiki 里自救</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2743\">00:45:43</a> 渠道比生产力更值钱：</span><b><span>造东西更容易后，难点回到“卖出去”</span></b></p>\n  <p><span>增长、成交、信任分发才是硬骨头</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2922\">00:48:42</a> 信息流高频≠事件高概率：别被融资/估值新闻劫持心智</span></p>\n  <p><span>看到得多，不代表发生得多（节目里提到的部分公司名未解释清楚，可能是简称/口误）</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3251\">00:54:11</a> 给普通人的 3 条 AI 入门建议：频次、付费、万能提示词</span></p>\n  <p><span>放进 Dock、买一个会员、让 AI 先提问再回答</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3669\">01:01:09</a> 最后的落点：旧经验可能大部分是错的，要从零开始设计</span></p>\n  <p><span>不是小修小补，而是换一套工作方式</span></p>\n  <br>\n  <p><strong><span>欢迎订阅「AI 炼金术」的播客，以及同名公众号、视频号</span></strong><span>&nbsp;</span></p>\n  <p><span>「AI 炼金术」是一档由徐文浩和任鑫——两位多年老友、AI 领域的资深从业者——打造的播客。这里是探讨 AI 和创业的理想聚集地，我们会邀请一线创业者、产品产品和科研学者，深入探讨 AI 如何重塑行业、变革生活，以及如何从 0 到 1 打造 AI 原生产品。&nbsp;</span></p>\n  <p><span>我们的讨论会涵盖多个话题：从 AI 如何改变世界的未来，到如何找到 AI 创业的 PMF；从如何利用 AI 降本增效，到怎样将 AI 技术融入日常生活……如果你对 AI、产品、创业感兴趣，这里有满满的干货和一线实战经验，欢迎关注并推荐给你的朋友，共同探索未来的无限可能！&nbsp;</span></p>\n  <p><span>商务合作：公众号 「AI炼金术 」菜单栏中【商务】获取联系方式&nbsp;</span></p>\n  <br>\n  <p><strong><span>节目主理人：</span></strong><span>&nbsp;</span></p>\n  <br>\n  <p><b><span>徐文浩：</span></b><span>某AI创业公司联合创始人，正在面向全球市场开发AI应用。连续创业者，参与过多家创业公司，拼多多早期员工。广告科技公司MediaV的算法和数据负责人，后被360收购。离开后加入成立不到1个月的拼多多。后创办了基于AI的海外客服聊天机器人公司 BotHub.AI 和 海外社交电商平台 Bukito 都宣告失败。2023年再次下场创业。&nbsp;</span></p>\n  <br>\n  <p><b><span>任鑫：</span></b><span>云九资本合伙人，主要在投资和孵化面向全球市场的 AI 应用。之前是连续创业者，曾经打造“今夜酒店特价”用移动互联网应用特价销售酒店尾房；被京东并购后内部创业“京东到家”开展本地即时零售业务；2015 年再次创业 Get 探索对话式人工智能助理成为先烈；2021 年出售公司，2023 年重新回到 AI 世界。</span></p>\n  <br>\n  <p><strong><span>BGM：</span></strong></p>\n  <p><b><span>片尾：</span></b><span>Rangga Jones - i confess</span></p>\n  <br>\n  <br>\n </body>\n</html>",
+  "aiSummary": "本期播客讨论了 AI 编码对传统软件开发、组织结构乃至商业模式的颠覆性影响，并分享了两位资深从业者在 AI 时代如何保持竞争力、适应变革的深度思考与实践。",
+  "oneSentenceSummary": "本期播客讨论了 AI 编码对传统软件开发、组织结构乃至商业模式的颠覆性影响，并分享了两位资深从业者在 AI 时代如何保持竞争力、适应变革的深度思考与实践。",
+  "summary": "本期《AI 炼金术》两位资深嘉宾任鑫和徐文浩，以亲身经历出发，深度探讨了 AI 编码能力（AI Coding）的飞速发展对软件开发、低代码工具，乃至公司组织形式可能带来的冲击。他们分享了利用 AI 为孩子开发定制化学习应用的经验，强调 AI 在提升效率和实现个性化需求方面的巨大潜力，甚至能够让非专业人士快速构建应用。播客还讨论了 AI 作为“言出法随”的工具，如何让“中间层”变薄，工作流直接由“对话-代码-执行”完成，并就 AI Agent 可能存在的安全风险进行了探讨。嘉宾们预测，未来组织协同的成本将降低，少数人结合 AI 即可完成过去大型团队的工作，并提出在 AI 生产力过剩的时代，渠道和信任将比单纯的生产力更有价值。最后，他们为普通人提供了 AI 入门建议，并强调在 AI 时代需要重新思考工作方式、个人竞争力与商业形态，接受旧经验的失效，从零开始设计。",
+  "mainPoints": [
+    {
+      "point": "AI Coding 能力正快速提升，使软件开发成本大幅降低，应用更趋个性化",
+      "explanation": "AI 已能高效辅助非专业人士快速构建定制化应用（如给孩子定制学习 App），显著降低了开发门槛和成本，使得“即抛即用软件”成为可能，极大提升了个人解决特定问题的效率。"
+    },
+    {
+      "point": "AI 将使“中间层”工作流变薄，颠覆传统组织模式，少数人与 AI 可完成大量工作",
+      "explanation": "Many task workflows can be directly achieved through \"dialogue -> code -> execution\" leveraging LLMs， reducing the need for traditional workflow tools and large teams. This implies that small teams (e.g.， 3-5 individuals augmented by AI) could potentially achieve the output of dozens of people， leading to a reshaping of organizational structures and emphasizing individual agency."
+    },
+    {
+      "point": "AI Agent 的强大功能伴随着潜在的安全风险和信任挑战",
+      "explanation": "AI Agent 如果被赋予过多权限，可能面临泄露敏感信息（如 API Key、私钥）或被勒索等安全问题。用户在长期信任中易放松警惕，需要警惕 AI 带来的“信任陷阱”，并考虑通过“AI 检查 AI”来应对风险。"
+    },
+    {
+      "point": "在 AI 生产力过剩时代，渠道、信任和解决“卖出去”问题的能力更显价值",
+      "explanation": "当 AI 极大提高了“造东西”的效率后，核心难点转向了如何获客、建立信任和促进成交。具备高质量客户关系和渠道分发能力在商业中将更加稀缺和宝贵。"
+    },
+    {
+      "point": "面对 AI 浪潮，个人需重新思考工作方式，提升“AI 领导力”，并重视个人品牌和人脉网络",
+      "explanation": "旧经验可能失效，个人应积极将 AI 融入日常工作以提升效率和创造力，培养指导 AI 完成任务的“AI 领导力”，同时维护个人品牌和建立高质量人脉，以适应未来变革并保持竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 是人类历史上最激动人心的技术革命，也是我们这一代人最大的挑战与机遇。",
+    "我可以在研发的时候遇到困难，我就可以改问题，不解决困难。",
+    "最大的好处，它其实不是在于说我做了一个比别人做的好的应用，而在于这个应用是我独特的，它是为我的这个具体的问题设计的。",
+    "未来的代码审查，不会是 AI 完全取代人，而是 AI 赋能人，让整个流程更高效、更智能。",
+    "渠道比生产力更值钱：造东西更容易后，难点回到“卖出去”。"
+  ],
+  "tags": [
+    "AI编码",
+    "大型语言模型",
+    "AI应用开发",
+    "组织变革",
+    "生产力工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 93,
+  "wordCount": 1726,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_29b54a",
+  "sourceName": "AI炼金术",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768480740000,
+  "publishDateStr": "01-15",
+  "publishDateTimeStr": "2026-01-15 12:39:00"
+}

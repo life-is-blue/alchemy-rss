@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ad40fd",
+  "title": "Spring 框架 7.0.0-M7 现已发布",
+  "url": "https://spring.io/blog/2025/07/17/spring-framework-7-0-0-M7-available-now",
+  "date": "2025-07-17 00:00:00",
+  "author": "bclozel",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On behalf of the team and everyone who has contributed, I am pleased to announce a new milestone for the next Spring Framework generation. We have compiled all the upgrade information, new features and deprecations on the <a href=\"https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-7.0-Release-Notes\">Spring Framework 7.0 release notes</a> preview page.</p>\n  <h2 id=\"resilience-features\"><a href=\"#resilience-features\" aria-label=\"resilience features permalink\" class=\"anchor before\"></a>Resilience Features</h2>\n  <p>After the introduction of the <code>org.springframework.core.retry</code> package in 7.0.0-M6, effectively moving features from the former \"spring-retry\" project, we recently introduced dedicated <code>@Retryable</code>, <code>@ConcurrencyLimit</code> and <code>@EnableResilientMethods</code> annotations. This is now documented in the <a href=\"https://docs.spring.io/spring/reference/7.0-SNAPSHOT/core/resilience.html\">\"Resilience Features\" section of the reference documentation</a>.</p>\n  <h2 id=\"introducing-jmsclient-and-revisiting-jdbcclient\"><a href=\"#introducing-jmsclient-and-revisiting-jdbcclient\" aria-label=\"introducing jmsclient and revisiting jdbcclient permalink\" class=\"anchor before\"></a>Introducing JmsClient and revisiting JdbcClient</h2>\n  <p>After JdbcClient and RestClient in 6.1, we are now introducing a <code>JmsClient</code>: with common send and receive operations against a JMS destination, dealing with Spring's common <code>Message</code> or with payload values, throwing <code>MessagingException</code> in alignment with the \"spring-messaging\" module. This is effectively an alternative to <code>JmsMessagingTemplate</code>, also delegating to Spring's <code>JmsTemplate</code> for performing actual operations.</p>\n  <p>You can find <a href=\"https://docs.spring.io/spring-framework/docs/7.0.0-SNAPSHOT/javadoc-api/org/springframework/jms/core/JmsClient.html\">code snippets in the JmsClient Javadoc</a>.</p>\n  <h2 id=\"api-versioning-updates\"><a href=\"#api-versioning-updates\" aria-label=\"api versioning updates permalink\" class=\"anchor before\"></a>API Versioning updates</h2>\n  <p>We have significantly improved the API Versioning support in this release. On top of resolving API versions in media types, applications now support API deprecations, validation, a fixed set of versions, and more. This is completing the umbrella ticket for this feature and we documented it in the <a href=\"https://docs.spring.io/spring-framework/reference/7.0-SNAPSHOT/web/webmvc-versioning.html\">API Versioning for MVC</a> and <a href=\"https://docs.spring.io/spring-framework/reference/7.0-SNAPSHOT/web/webflux-versioning.html\">API Versioning for WebFlux</a> sections of the reference documentation.</p>\n  <h2 id=\"message-converters-configuration-with-httpmessageconverters\"><a href=\"#message-converters-configuration-with-httpmessageconverters\" aria-label=\"message converters configuration with httpmessageconverters permalink\" class=\"anchor before\"></a>Message converters configuration with HttpMessageConverters</h2>\n  <p>Similar to the codecs configuration on the reactive side with <code>WebClient</code> and WebFlux server applications, we have introduced the new <code>HttpMessageConverters</code> class for an easier and centralized experience when it comes to classpath detection of HTTP message converters and their global setup.</p>\n  <p>In practice, you will encounter them on new configuration methods. For example, <a href=\"https://docs.spring.io/spring-framework/docs/7.0.0-SNAPSHOT/javadoc-api/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.html#configureMessageConverters(org.springframework.http.converter.HttpMessageConverters.ServerBuilder)\">WebMvcConfigurer#configureMessageConverters</a> will let you configure a custom message converter. There are similar methods on <code>RestTemplate</code> and <code>RestClient</code> as well.</p>\n  <h2 id=\"pausing-of-test-application-contexts\"><a href=\"#pausing-of-test-application-contexts\" aria-label=\"pausing of test application contexts permalink\" class=\"anchor before\"></a>Pausing of Test Application Contexts</h2>\n  <p>The Spring TestContext framework is caching application context instances within test suites for faster runs. As of Spring Framework 7.0, we now <a href=\"https://docs.spring.io/spring-framework/reference/7.0-SNAPSHOT/testing/testcontext-framework/ctx-management/caching.html\">pause test application contexts when they're not used</a>. This means an application context stored in the context cache will be stopped when it is no longer actively in use and automatically restarted the next time the context is retrieved from the cache. Specifically, the latter will restart all auto-startup beans in the application context, effectively restoring the lifecycle state.</p>\n  <h2 id=\"and-much-more\"><a href=\"#and-much-more\" aria-label=\"and much more permalink\" class=\"anchor before\"></a>And much more!</h2>\n  <p>There are plenty of other changes, like the Kotlin 2.2.0 upgrade, or <a href=\"https://github.com/spring-projects/spring-framework/issues/35111\">the Hibernate 7.0 support and Hibernate 5.x/6.x backwards compatibility concerns</a>. As usual, you can check <a href=\"https://github.com/spring-projects/spring-framework/releases/tag/v7.0.0-M7\">the detailed changelog</a> for more details.</p>\n  <p>7.0.0-M7 is now available from <a href=\"https://repo.spring.io\">https://repo.spring.io</a> and <a href=\"https://spring.io/blog/2025/01/21/milestones-to-central\">Maven Central</a>.</p>\n  <p><a href=\"https://spring.io/projects/spring-framework/\">Project Page</a> | <a href=\"https://github.com/spring-projects/spring-framework\">GitHub</a> | <a href=\"https://github.com/spring-projects/spring-framework/issues\">Issues</a> | <a href=\"https://docs.spring.io/spring-framework/reference/\">Documentation</a></p>\n </body>\n</html>",
+  "aiSummary": "Spring 框架 7.0.0-M7 发布，亮点包括弹性特性、Jms 客户端、API 版本控制增强和测试上下文暂停，旨在提升开发者体验。",
+  "oneSentenceSummary": "Spring 框架 7.0.0-M7 发布，亮点包括弹性特性、Jms 客户端、API 版本控制增强和测试上下文暂停，旨在提升开发者体验。",
+  "summary": "本文详细介绍了 Spring 框架 7.0.0-M7 的发布，这是下一代框架的重要里程碑。它引入了多个关键增强功能：弹性特性，包括 `@Retryable` 和 `@ConcurrencyLimit` 注解，已整合至核心框架。同时，新增 `JmsClient` 以简化 JMS 操作，作为对现有 `JdbcClient` 和 `RestClient` 的补充。API 版本控制支持针对 MVC 和 WebFlux 进行了大幅改进，现已支持弃用和验证。此外，Spring 测试上下文框架现在可以在测试期间智能地暂停未使用的应用程序上下文，以提升测试速度。其他更新包括 Kotlin 2.2.0 和 Hibernate 7.0 支持，全面展示了最新进展。",
+  "mainPoints": [
+    {
+      "point": "弹性特性现已整合至 Spring 框架核心。",
+      "explanation": "`@Retryable`、`@ConcurrencyLimit` 和 `@EnableResilientMethods` 注解提供了内置的弹性功能，从而简化了健壮和容错应用程序的开发。"
+    },
+    {
+      "point": "新的 `JmsClient` 和增强的 `JdbcClient`/`RestClient` 提供了现代客户端 API。",
+      "explanation": "这些新客户端提供了一种更一致和简化的方式来与 JMS 目标和数据库进行交互，从而提升开发者体验，并使常见操作的代码更清晰易懂。"
+    },
+    {
+      "point": "API 版本控制的显著改进，增强 Web 应用开发能力。",
+      "explanation": "应用程序现在支持 API 弃用、验证和固定版本集，为 MVC 和 WebFlux 应用程序提供更强大且易于维护的 API 管理。"
+    },
+    {
+      "point": "Spring 测试上下文框架通过上下文暂停优化测试执行。",
+      "explanation": "Spring 测试上下文框架通过暂停不活跃上下文来优化测试执行效率，从而显著加快测试运行速度，提高整体开发者生产力。"
+    }
+  ],
+  "keyQuotes": [
+    "在 7.0.0-M6 中，我们引入了 `org.springframework.core.retry` 包，并将功能从之前的 \"spring-retry\" 项目中移出。此后，我们引入了专用的 `@Retryable`、`@ConcurrencyLimit` 和 `@EnableResilientMethods` 注解。",
+    "在 6.1 中引入 JdbcClient 和 RestClient 之后，我们现在引入 `JmsClient`。`JmsClient` 针对 JMS 目标执行常见的发送和接收操作，处理 Spring 的通用 `Message` 或有效负载值，并抛出与 \"spring-messaging\" 模块一致的 `MessagingException`。",
+    "在此版本中，我们显著改进了 API 版本控制支持。除了媒体类型中的 API 版本解析外，应用程序现在还支持 API 弃用、验证和固定版本集等功能。",
+    "自 Spring 框架 7.0 起，我们会在测试应用程序上下文闲置时暂停它们。"
+  ],
+  "tags": [
+    "Spring 框架",
+    "框架更新",
+    "软件开发",
+    "后端开发",
+    "弹性工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 436,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1752710400000,
+  "publishDateStr": "2025-07-17",
+  "publishDateTimeStr": "2025-07-17 00:00:00"
+}

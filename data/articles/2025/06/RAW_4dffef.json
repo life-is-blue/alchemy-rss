@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4dffef",
+  "title": "首个沉浸式体积视频数据集 ImViD 上线，定义沉浸式媒体新形态丨 CVPR'25 Highlight",
+  "url": "https://www.qbitai.com/2025/06/293352.html",
+  "date": "2025-06-12 04:47:09",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p class=\"pgc-p\" data-track=\"7\" data-pm-slice=\"0 0 []\">当Meta用天价堆砌「元宇宙」却困在卡通画风，当Vision Pro用户为3-DoF的“电子橱窗”眩晕买单，当影视巨头砸千万搭建穹顶摄影棚却只能产出“人像手办”……</p>\n  <p class=\"pgc-p\" data-track=\"108\">猛然发现——没有高保真体积视频的元宇宙，不过是高清版的《我的世界》。</p>\n  <p class=\"pgc-p\" data-track=\"109\">今天为大家带来清华大学-咪咕团队发表于CVPR 2025的最新工作《ImViD: Dynamic Volumetric Video Reconstruction and Rendering for Immersive VR》。</p>\n  <p class=\"pgc-p\" data-track=\"110\">作者用360°真实光场+多模态6-DoF自由漫游，将VR体验从“隔着玻璃看展”推向“穿越时空的在场感”。</p>\n  <p data-track=\"9\">随着Meta Quest和Apple Vision Pro等VR头显的兴起，人们对沉浸式体验的需求愈发强烈。然而，传统2D视频或静态3D模型始终难以突破<strong>“真实感”</strong>的桎梏，最新的技术也面临着<strong>“形似神离”</strong>的困境：</p>\n  <p data-track=\"10\">● <strong>2019年Google</strong>提出<strong>沉浸式光场（Immersive Light Field），</strong>虽支持6-DoF交互，但受限于固定机位的拍摄方式，仅覆盖场景的正面视角，交互范围有限，且缺乏多模态数据；</p>\n  <p data-track=\"11\">● <strong>2022年 Apple </strong>提出<strong>沉浸式视频（Immersive Video），</strong>虽以高分辨率和环绕式立体声著称，但仅提供3-DoF的观看体验，缺少空间位置的交互自由度。此外，这种呈现方式无法提供真实场景的深度感知，导致视觉系统与前庭感知的冲突，用户在长时间观看后易产生眩晕和疲劳；</p>\n  <p data-track=\"12\">● <strong>2024年 Infinite Reality </strong>推出的<strong>空间捕获技术（Spatial Capture），</strong>通过穹顶式“由外向内（Outside-looking-in）”的采集方案实现了高分辨率、高真实感的动态场景建模。然而，受限于封闭式硬件架构，仅能针对狭小空间内以人或物体为中心的局部场景进行捕捉，缺乏复杂背景细节与自然光照，且设备部署复杂、成本高昂，难以拓展至开放环境或大规模商业应用。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1be0e4e8-df1c-41b3-500d-ca9f2dccaa00/public\" data-ic=\"false\" data-width=\"2478\" data-height=\"1366\" data-ic-uri=\"\">\n  </div>\n  <p class=\"pgc-p\" data-track=\"24\"><em>图注：沉浸式媒体形式的分类及发展方向示意图：体积视频是顺应时代信息升维的产物，有望成为未来的主流媒体形式。</em></p>\n  <p data-track=\"26\">清华-咪咕团队联合推出<strong>“沉浸式体积视频（Immersive Volumetric Video）”</strong>概念，从四个维度突破传统体积视频的局限：</p>\n  <p data-track=\"27\">1. <strong>全视角：360°真实场景。</strong>团队实现动态前景+复杂背景完整覆盖，突破固定空间拍摄限制；</p>\n  <p data-track=\"28\">2. <strong>大空间：大范围6-DoF交互。</strong>可移动拍摄车扩大采集范围，支持用户六自由度自由探索每一处细节；</p>\n  <p data-track=\"29\">3. <strong>多模态</strong>：<strong>光声同步采集。</strong>5K@60FPS视频+同步音频采集，高保真光声场融合重建，视听反馈随动无延迟；</p>\n  <p data-track=\"30\">4. <strong>长时长</strong>：<strong>长时间高帧率内容。</strong>1-5分钟高清动态光场内容告别“片段式”体验！</p>\n  <p data-track=\"31\">该工作构建了一套完整的生产管线：从<strong>系统搭建</strong>、<strong>采集策略设计</strong>、<strong>光/声场融合重建</strong>，到最终<strong>高保真实时渲染交互</strong>。 为下一代 VR 沉浸内容提供基准数据与方法参考。</p>\n  <p data-track=\"32\">相关成果发表于<strong>国际计算机视觉顶级会议IEEE CVPR 2025</strong>并入选为<strong>Highlight</strong>（亮点工作）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8bf9c7cb-a69d-4ca5-6cb0-b11cfe9dec00/public\" data-ic=\"false\" data-width=\"1219\" data-height=\"331\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\"><em>图注：[CVPR 2025 Highlight] ImViD: Dynamic Volumetric Video Reconstruction and Rendering for Immersive VR</em></p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c5b1ee3f-cbf5-4205-2aec-4cd591d79e00/public\" data-ic=\"false\" data-width=\"1320\" data-height=\"743\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"35\">图注：<em>ImViD沉浸式体积视频构建方法总览：采集 – 预处理 – 光场重建 – 声场建模 – 渲染</em></p>\n  <p data-track=\"43\">团队推出全球<strong>首个面向大空间的多模态体积视频数据集ImViD</strong>以支持用户可自由移动的完全沉浸式体验，为体积视频的研究和应用提供了新的路径：</p>\n  <p data-track=\"44\">● <strong>硬件革新</strong>：自搭建<strong>46台GoPro相机阵列</strong>+<strong>可移动拍摄车</strong>，模拟人类视角的观看习惯，高效高密度覆盖采集空间；</p>\n  <p data-track=\"45\">● <strong>数据规模</strong>：<strong>7大</strong>开放世界真实室内外场景（歌剧、会议、教学等），<strong>5K</strong>分辨率+<strong>60FPS</strong>，总时长超<strong>38分钟</strong>，<strong>13万帧</strong>；</p>\n  <p data-track=\"46\">● <strong>动态捕捉</strong>：支持<strong>静态定点</strong>与<strong>动态移动</strong>双模式拍摄，首次实现“边走边拍”的多视角高密度时空光场采集；</p>\n  <p data-track=\"47\">● <strong>开放挑战</strong>：所有动态场景数据公开，推动沉浸式体积视频算法与应用突破！</p>\n  <p data-track=\"49\">团队设计并搭建了一个可远程控制的移动式平台，搭载 46 台GoPro 摄像机同步触发，可实现高效光、声场采集：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a96f903b-4def-4e8c-7acc-5eed62608b00/public\" data-ic=\"false\" data-width=\"1219\" data-height=\"762\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"50\"><em>数据采集方案：可移动式平台 + 多种拍摄模式</em></p>\n  <p data-track=\"51\">undefined 多视角同步音视频采集（分辨率 5312×2988, 60FPS, 1-5 min）；</p>\n  <p data-track=\"52\">undefined 定点采集 + 移动轨迹拍摄模式（支持背景重建与动态前景追踪）；</p>\n  <p data-track=\"53\">undefined 毫米级相机阵列时间同步机制。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1007d0d1-8cff-4317-3ff3-d0e2228cde00/public\" data-ic=\"false\" data-width=\"1627\" data-height=\"468\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"54\"><em>数据集内容与参数指标展示</em></p>\n  <p data-track=\"55\">数据集中包括了各式各样的生活常见室内外动态场景，具有丰富的前背景，涵盖了慢速运动和快速运动的内容，对当前重建算法提出了更高的要求，能进一步挖掘算法的瓶颈，促进社区的进步。</p>\n  <p data-track=\"57\"><strong>动态光场重建：</strong></p>\n  <p data-track=\"58\">作者在 Spacetime Gaussian (STG) 的基础上，提出了时空一致性更强的改进方法 STG++，解决了原方法在动态场景下的漂移与色差问题。</p>\n  <p data-track=\"59\">为了消除多相机之间的色彩差异，STG++ 为每个相机引入仿射颜色变换：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8bab4477-47e4-4e6e-c25b-406035e77a00/public\" data-ic=\"false\" data-width=\"320\" data-height=\"76\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"61\">该变换在渲染损失中被联合优化，以确保多视角颜色对齐。此外，作者还在重建过程中对时间维度执行了致密化操作，让高斯在时间维度上也可控。</p>\n  <p data-track=\"62\"><strong>自由声场重建：</strong></p>\n  <p data-track=\"63\">作者提出一种不依赖神经网络训练的几何驱动声场建模方法，基于 HRTF（头相关传递函数）和 RIR（房间脉冲响应）进行空间音频渲染。具体步骤如下：</p>\n  <p data-track=\"64\">（1）声源定位：通过麦克风阵列获取声源位置与用户耳朵位置；</p>\n  <p data-track=\"65\">（2）距离衰减建模：计算声源到用户耳朵的距离衰减；</p>\n  <p data-track=\"66\">（3）空间音频渲染：基于 HRTF 和 RIR 进行空间音频渲染。&#xb; 从多个同步相机采集的音视频数据构建声场的方案在国内外鲜有团队尝试，但这类采集方式非常贴近人们日常拍摄生活场景的习惯，因此该团队提出的方案具有极大的推广价值。</p>\n  <p data-track=\"68\">● <strong>光场重建</strong>：改进算法STG++以<strong>31.24 PSNR、110 FPS</strong>刷新性能，解决色彩闪烁与运动断层难题；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b8f19450-50b6-4566-d63f-bbce4a593200/public\" data-ic=\"false\" data-width=\"1319\" data-height=\"466\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a94c8dc5-17ef-4691-14c1-a51547c3e600/public\" data-ic=\"false\" data-width=\"778\" data-height=\"276\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"76\"><em>图注：论文结果展示（一）</em></p>\n  <p data-track=\"77\">● <strong>声场合成</strong>：用户研究显示，<strong>61.9%专家</strong>认为空间音频感知“优秀”，<strong>90%</strong>认可沉浸感；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b235ef27-0522-4111-ce48-f5f78fc80200/public\" data-ic=\"false\" data-width=\"781\" data-height=\"286\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b6c48d87-2e40-4eb6-43a5-c7389f82ad00/public\" data-ic=\"false\" data-width=\"1134\" data-height=\"699\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"84\">图注：<em>论文结果展示（二）</em></p>\n  <p data-track=\"89\">● <strong>实时交互</strong>：单卡3090实现6-DoF多模态VR体验，60FPS丝滑渲染，视听反馈随动无延迟！</p>\n  <div class=\"pgc-img\">\n   <img alt=\"首个沉浸式体积视频数据集ImViD上线，定义沉浸式媒体新形态丨CVPR‘25 Highlight\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9f6e25de-4b1b-4be8-77e4-b2e300d79b00/public\" data-ic=\"false\" data-width=\"934\" data-height=\"730\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"90\"><em>图注：论文结果展示（三）</em></p>\n  <p data-track=\"92\">ImViD不仅为学术界提供全新基准，更在影视、教育、医疗等领域展现潜力：</p>\n  <p data-track=\"93\">● <strong>动态光场重建</strong>：推动长时复杂场景的高效建模；</p>\n  <p data-track=\"94\">● <strong>声场合成</strong>：无需训练数据，支持移动声源定位，非常适合日常记录（Causal Capture）；</p>\n  <p data-track=\"95\">● <strong>产业落地</strong>：助力智慧医疗、教育、远程协作，智慧文旅如虚拟演唱会、景点游览等应用场景。同时将支持移动端交互渲染，让4D视频具有更多可能。</p>\n  <p data-track=\"98\"><strong>项目主页</strong>：https://yzxqh.github.io/ImViD/</p>\n  <p data-track=\"99\"><strong>论文地址：</strong> https://arxiv.org/pdf/2503.14359</p>\n  <p data-track=\"103\"><strong>论文/代码/数据</strong>：全面开源，欢迎挑战！（持续更新中）</p>\n  <p class=\"pgc-p\" data-track=\"104\"><strong>致谢</strong>：</p>\n  <p class=\"pgc-p\" data-track=\"113\">本研究获国家重点研发计划、国家自然科学基金、清华-咪咕智能光场与交互技术联合研究中心和北京市光场共性技术平台支持。</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "清华-咪咕团队推出首个大空间多模态体积视频数据集 ImViD，及其重建渲染方法，推动高保真沉浸式 VR 发展。",
+  "oneSentenceSummary": "清华-咪咕团队推出首个大空间多模态体积视频数据集 ImViD，及其重建渲染方法，推动高保真沉浸式 VR 发展。",
+  "summary": "文章介绍了清华大学-咪咕团队在 CVPR 2025 发表的 Highlight 工作：ImViD 数据集和相关的动态体积视频重建与渲染技术。针对现有沉浸式媒体（如 Meta 元宇宙、Vision Pro 视频、空间捕获）在真实感、自由度、多模态和时长上的局限，ImViD 提供了全球首个面向大空间、360°全视角、多模态（光声同步）、长时间（1-5 分钟）的动态体积视频数据集。团队构建了包含 46 台 GoPro 和移动平台的采集系统，设计了 STG++光场重建算法和几何驱动声场建模方法，并在单卡 3090 上实现了 60FPS 的实时 6-DoF 渲染交互。ImViD 数据集和代码已开源，为沉浸式体积视频研究及在影视、教育、医疗等领域应用提供了重要基准。",
+  "mainPoints": [
+    {
+      "point": "发布 ImViD 数据集：首个大空间多模态动态体积视频数据集",
+      "explanation": "ImViD 提供 360°真实场景、大范围 6-DoF 自由漫游、光声同步采集和长时间内容，突破现有沉浸式媒体限制。"
+    },
+    {
+      "point": "创新动态光场重建算法 STG++和声场建模方法",
+      "explanation": "STG++解决动态场景色彩和运动问题，声场建模实现几何驱动渲染，支持移动声源定位，适合日常记录。"
+    },
+    {
+      "point": "实现高真实感、可交互的沉浸式 VR 体验",
+      "explanation": "基于 ImViD 数据和算法，可在单卡实现 60FPS 实时渲染和 6-DoF 自由漫游，提升 VR 体验的沉浸感和在场感。"
+    }
+  ],
+  "keyQuotes": [
+    "猛然发现——没有高保真体积视频的元宇宙，不过是高清版的《我的世界》。",
+    "作者用 360°真实光场+多模态 6-DoF 自由漫游，将 VR 体验从\"隔着玻璃看展\"推向\"穿越时空的在场感\"。",
+    "清华-咪咕团队联合推出\"沉浸式体积视频（Immersive Volumetric Video）\"概念，从四个维度突破传统体积视频的局限。",
+    "团队推出全球首个面向大空间的多模态体积视频数据集 ImViD 以支持用户可自由移动的完全沉浸式体验。",
+    "本项目全面开源，欢迎挑战！"
+  ],
+  "tags": [
+    "沉浸式体积视频",
+    "数据集",
+    "3D重建",
+    "光场",
+    "声场"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2516,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749703629000,
+  "publishDateStr": "2025-06-12",
+  "publishDateTimeStr": "2025-06-12 04:47:09"
+}

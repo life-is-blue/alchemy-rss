@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c73967",
+  "title": "Atlas 搜索节点：多区域可用性，助力全球扩展",
+  "url": "https://www.mongodb.com/blog/post/atlas-search-nodes-now-with-multi-region-availability",
+  "date": "2025-03-06 14:41:17",
+  "author": "Elliott Gluck",
+  "siteName": "MongoDB Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>At MongoDB, we are continually refining our products to try and create the simplest and most seamless developer experience possible. This mantra has also been applicable to how we think about search, from the beginning with Atlas Text Search, to the announcement of the next paradigm with Atlas Vector Search. We have continued to expand this vision with the introduction of Search Nodes, <a href=\"https://www.mongodb.com/blog/post/search-nodes-now-public-preview-performance-scale-dedicated-infrastructure\" target=\"_blank\">initially launching on AWS</a>, and then expanding to both <a href=\"https://www.mongodb.com/blog/post/workload-isolation-more-scalability-availability-search-nodes-now-on-gcp\" target=\"_blank\">Google Cloud and Microsoft Azure</a>. Today we’re excited to take the next step in that journey with the announcement of multi-region availability on all three major cloud providers.</p>\n  <h2>Search Nodes: Isolation and scale</h2>\n  <p>As a quick refresher, Search Nodes provide dedicated infrastructure for <a href=\"https://www.mongodb.com/products/platform/atlas-search\" target=\"_blank\">Atlas Search</a> and <a href=\"https://www.mongodb.com/products/platform/atlas-vector-search\" target=\"_blank\">Vector Search</a> workloads, enabling even greater control over search workloads. They also allow you to isolate and optimize compute resources to scale search and database needs independently, delivering better performance at scale and higher availability.</p>\n  <p>Since our announcements, we’ve been thrilled with the excitement around Search Nodes and the desire for better control, flexibility, and availability for scaling both Atlas Search and Vector Search workloads. Incorporating Search Nodes into your deployment delivers workload isolation, and the ability to optimize resource usage.</p>\n  <p>A visual of the evolution from the previous coupled architecture to dedicated nodes is shown below:</p>\n  <figure>\n   <div class=\"fl-center\">\n    <img src=\"https://webassets.mongodb.com/_com_assets/cms/Screenshot 2024-07-31 at 10.47.43 AM-2fnvbuyycx.png\" alt=\"Graphic titled Better aligning workload size with resourcing. On the left of the graphic, is a cylinder labled coupled architecture, which contains search, database, and vector search. Arrows point from this left component over to the right, where there is a box titled dedicated search nodes. This side contains search, database, and scalability.\" title=\" \" style=\"width: 750px\">\n   </div>\n   <figcaption class=\"fl-center\">\n    <i>Figure 1: Improved workload sizing alignment and enhanced scalability with Search Nodes</i>\n   </figcaption>\n  </figure>\n  <br>\n  <h2>Introducing Global Availability</h2>\n  <p>Another tenet of our builder's journey is making sure the flexibility, scalability, and performance with Search Nodes are available to everyone, regardless of the cloud you’re using or cloud region. Today, we’re excited to officially announce multi-region availability for Search Nodes to allow anyone to better optimize resource usage regardless of location.</p>\n  <p>Now, with multi-region availability, you can take full advantage of global scalability by no longer being limited to one geographic area. Furthermore, you now have the peace of mind by having the redundancy needed to protect yourself in the case of any unforeseen outage event, whether due to technical issues or natural disasters that could cause data center downtime.</p>\n  <figure>\n   <div class=\"fl-center\">\n    <img src=\"https://webassets.mongodb.com/_com_assets/cms/Screenshot 2024-07-31 at 8.12.43 AM-alfq3w0w7e.png\" alt=\"This image is a basic world map that has MongoDB leaf logos indicating where MongoDB cloud servers are available. There are several logos in North America, one in Brazil, several in Europe, a couple in Africa, one in Asia, and one in Australia.\" title=\" \" style=\"width: 750px\">\n   </div>\n   <figcaption class=\"fl-center\">\n    <i>Figure 2: Multi-region availability on all three major cloud providers</i>\n   </figcaption>\n  </figure>\n  <br>\n  <p>Here is a quick video tutorial about how to enable Search Nodes, as well as take advantage of multi-region availability:</p>\n  <br><iframe width=\"800\" height=\"425\" src=\"https://www.youtube.com/embed/nHbTIVxlpNE?si=w49_Nm3wa05Tw-sJ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <center>\n   <i>Brief tutorial on how to enable multi-region Search Nodes</i>\n  </center>\n  <p>With today’s announcements we’re excited to bring the power and control of dedicated Search Nodes to people using all clouds and regions across the globe. We’re excited to see the continued adoption and improved results from having greater ubiquity across your search implementations.</p>\n  <p>As always, <a href=\"https://feedback.mongodb.com/forums/924868-atlas-search?_ga=2.208380818.1667696991.1717371098-433147649.1713975572&amp;_gac=1.254019900.1714400733.EAIaIQobChMI9dDu0eDJhAMVhEtHAR10ZgwqEAAYASAAEgKEw_D_BwE\" target=\"_blank\">reach out to us</a> with any feedback, as we’d love to hear what you think!</p>\n </body>\n</html>",
+  "aiSummary": "MongoDB 宣布 Atlas 搜索节点现已在 AWS、Google Cloud 和 Microsoft Azure 上实现多区域可用性，增强了全球可扩展性和冗余性。",
+  "oneSentenceSummary": "MongoDB 宣布 Atlas 搜索节点现已在 AWS、Google Cloud 和 Microsoft Azure 上实现多区域可用性，增强了全球可扩展性和冗余性。",
+  "summary": "MongoDB 的 Atlas 搜索节点现已支持多区域可用性，为用户提供了更强大的全球可扩展性和冗余性。搜索节点提供了一个专用的基础设施，让用户可以独立地扩展搜索和数据库需求，从而提高性能和可用性。多区域可用性消除了地理限制，并提供了抵御意外中断的冗余。",
+  "mainPoints": [
+    {
+      "point": "搜索节点提供了一个专用的基础设施，让用户可以隔离和优化计算资源，独立地扩展搜索和数据库需求。",
+      "explanation": "这提高了性能和可用性，允许用户根据工作负载大小和资源需求进行优化。"
+    },
+    {
+      "point": "多区域可用性消除了地理限制，让用户可以利用全球可扩展性。",
+      "explanation": "用户不再局限于一个地理区域，可以优化资源使用，并为意外中断提供冗余。"
+    },
+    {
+      "point": "MongoDB 致力于简化开发者体验，而多区域可用性是其持续改进的一部分。",
+      "explanation": "此更新旨在通过提供更好的控制、灵活性和可用性来增强开发者的体验。"
+    }
+  ],
+  "keyQuotes": [
+    "今天，我们很高兴宣布所有三大云提供商的搜索节点多区域可用性。",
+    "现在，借助多区域可用性，您可以充分利用全球可扩展性，不再局限于一个地理区域。",
+    "我们很高兴看到持续采用并改善了搜索实现中的普遍性。"
+  ],
+  "tags": [
+    "MongoDB",
+    "Atlas 搜索",
+    "多区域可用性",
+    "云计算",
+    "AWS"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 440,
+  "domain": "mongodb.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_4a7cb7",
+  "sourceName": "MongoDB Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741272077000,
+  "publishDateStr": "2025-03-06",
+  "publishDateTimeStr": "2025-03-06 14:41:17"
+}

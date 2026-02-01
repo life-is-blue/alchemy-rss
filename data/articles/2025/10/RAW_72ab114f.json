@@ -1,0 +1,55 @@
+{
+  "id": "RAW_72ab114f",
+  "title": "智能体框架、运行时与套件：概念解析",
+  "url": "https://blog.langchain.com/agent-frameworks-runtimes-and-harnesses-oh-my/",
+  "date": "2025-10-25 16:14:35",
+  "author": "LangChain Accounts",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>There are few different open source packages we maintain: <a href=\"https://docs.langchain.com/oss/python/langchain/quickstart?ref=blog.langchain.com\">LangChain</a> and <a href=\"https://docs.langchain.com/oss/python/langgraph/overview?ref=blog.langchain.com\">LangGraph</a> being the biggest ones, but <a href=\"https://docs.langchain.com/oss/python/deepagents/overview?ref=blog.langchain.com\">DeepAgents</a> being an increasingly popular one. I’ve started using different terms to describe them: LangChain is an agent framework, LangGraph is an agent runtime, DeepAgents is an <a href=\"https://www.vtrivedy.com/posts/claude-code-sdk-haas-harness-as-a-service?ref=blog.langchain.com\">agent harness</a>. Other folks are using these terms as well - but I don’t think there is a clear definition of framework vs runtime vs harness. This is my attempt to do try to define things. I will readily admit that there is still murkiness and overlap so I would love any feedback!</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://blog.langchain.com/content/images/2025/10/Screenshot-2025-10-25-at-9.08.30---AM.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"912\" height=\"492\" srcset=\"https://blog.langchain.com/content/images/size/w600/2025/10/Screenshot-2025-10-25-at-9.08.30---AM.png 600w, https://blog.langchain.com/content/images/2025/10/Screenshot-2025-10-25-at-9.08.30---AM.png 912w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"agent-frameworks-langchain\">Agent Frameworks (LangChain)</h2>\n  <p>Most packages out there that help build with LLMs I would classify as agent frameworks. The main value add they provide is abstractions. These abstractions represent a mental model of the world. These abstractions should ideally make it easier to get started. They also provide a standard way to build applications which makes it easy for developers to onboard and jump between projects. Complaints against abstractions are that if done poorly they can obfuscate the inner workings of things and not provide the flexibility needed for advanced use cases.</p>\n  <p>We think of <a href=\"https://docs.langchain.com/oss/python/langchain/overview?ref=blog.langchain.com\">LangChain</a> as an agent framework. As part of the 1.0 we spent a lot of time thinking about the abstractions - for structured content blocks, for the agent loop, for middleware (which we think adds flexibility to the standard agent loop). Other examples of what I would consider agent frameworks are Vercel’s AI SDK, CrewAI, OpenAI Agents SDK, Google ADK, LlamaIndex, and lot more.</p>\n  <h2 id=\"agent-runtimes-langgraph\">Agent Runtimes (LangGraph)</h2>\n  <p>When you need to run agents in production, you will want some sort of runtime for agents. This runtime should provide more infrastructure level considerations. The main one that comes to mind is <a href=\"https://docs.langchain.com/oss/python/langgraph/durable-execution?ref=blog.langchain.com\">durable execution</a>, but I would also put considerations like support for streaming, <a href=\"https://docs.langchain.com/oss/python/langgraph/interrupts?ref=blog.langchain.com\">human-in-the-loop support</a>, thread level persistence and <a href=\"https://docs.langchain.com/oss/python/langgraph/add-memory?ref=blog.langchain.com\">cross-thread persistence</a> here.</p>\n  <p>When we build <a href=\"https://docs.langchain.com/oss/python/langgraph/overview?ref=blog.langchain.com\">LangGraph</a>, we wanted to build in a production ready agent runtime from scratch. You can read more about our thought process behind building LangGraph <a href=\"https://blog.langchain.com/building-langgraph/\">here</a>. The other projects we think are closest to this are Temporal, Inngest, and other durable execution engines.</p>\n  <p>Agent runtimes are generally lower level than agent frameworks and can power agent frameworks. For example, LangChain 1.0 is built on top of LangGraph to take advantage of the agent runtime it provides.</p>\n  <h2 id=\"agent-harnesses-deepagents\">Agent Harnesses (DeepAgents)</h2>\n  <p><a href=\"https://docs.langchain.com/oss/python/deepagents/overview?ref=blog.langchain.com\">DeepAgents</a> is the newest project we’re working on. It is higher level than agent frameworks - it builds on top of LangChain. It adds in default prompts, opiononated handling for tool calls, tools for planning, has access to a filesystem, and more. It’s more than a framework - it comes with batteries included.</p>\n  <p>Another way that we’ve used to describe DeepAgents is as a “general purpose version of Claude Code”. To be fair, Claude Code is also trying to be an agent harness - they’ve released things like Claude Agent SDK as a step in that direction. Besides Claude Agent SDK, I don’t think there are many other general purpose agent harnesses out there today. One could argue, however, that ALL the coding CLI's are in a way agent harnesses, and may be general purpose.</p>\n  <h2 id=\"when-to-use-each-one\">When to use each one</h2>\n  <p>Let’s summarize the differences and talk about when to each one:</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://blog.langchain.com/content/images/2025/10/Screenshot-2025-10-25-at-9.05.40---AM.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"1786\" height=\"332\" srcset=\"https://blog.langchain.com/content/images/size/w600/2025/10/Screenshot-2025-10-25-at-9.05.40---AM.png 600w, https://blog.langchain.com/content/images/size/w1000/2025/10/Screenshot-2025-10-25-at-9.05.40---AM.png 1000w, https://blog.langchain.com/content/images/size/w1600/2025/10/Screenshot-2025-10-25-at-9.05.40---AM.png 1600w, https://blog.langchain.com/content/images/2025/10/Screenshot-2025-10-25-at-9.05.40---AM.png 1786w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <p>Now, I will readily admit that the lines are blurry. LangGraph is probably best described as both a runtime and a framework, for example. “Agent Harness” is a term I’m just starting to see be used more (<a href=\"https://www.vtrivedy.com/posts/claude-code-sdk-haas-harness-as-a-service?ref=blog.langchain.com\">I didn’t come up with it</a>). I don’t think there is yet a super clear definition of any of these.</p>\n  <p>Part of the fun of developing in an early space is coming up with the mental models for how to talk about things. We know LangChain is different from LangGraph, and DeepAgents is different from both of them. We think describing them as a framework, runtime, and harness respectively is a helpful distinction - but as always, we would love your feedback!</p>\n </body>\n</html>",
+  "aiSummary": "本文旨在明确智能体框架、运行时与套件之间的区别，并以 LangChain 为例，阐述它们在 LLM 智能体开发中的作用。",
+  "oneSentenceSummary": "本文旨在明确智能体框架、运行时与套件之间的区别，并以 LangChain 为例，阐述它们在 LLM 智能体开发中的作用。",
+  "summary": "本文旨在阐明围绕 LLM 智能体开发的新兴术语，明确定义并区分智能体框架、智能体运行时与智能体套件。文章认为，类似 LangChain 的智能体框架提供了高级抽象和心智模型，能够简化初步开发并标准化应用构建。以 LangGraph 为例的智能体运行时，则侧重于生产环境下的基础设施问题，如持久性执行、流式传输和人机协作支持，通常在更底层运行，为框架提供动力。最后，类似 DeepAgents 的智能体套件则被视为更高层次的即用型系统，它们构建于框架之上，提供预设配置、高级工具和全面的智能体操作环境。作者承认这些定义存在固有的模糊性和重叠，并强调这只是在快速发展的 AI 智能体生态系统中，为建立有效心智模型所做的初步尝试。",
+  "mainPoints": [
+    {
+      "point": "智能体框架提供高级抽象，以简化 LLM 智能体开发。",
+      "explanation": "类似 LangChain 的框架提供概念模型和标准化方法，降低了开发者的上手难度，方便项目管理，但也可能存在与抽象层相关的复杂性。"
+    },
+    {
+      "point": "智能体运行时为稳健的智能体执行提供生产级基础设施。",
+      "explanation": "像 LangGraph 这样的运行时侧重于关键的运营层面，如持久性执行、流式传输和持久性，是智能体框架的底层基础。"
+    },
+    {
+      "point": "智能体套件是构建在框架之上的综合性即用型系统。",
+      "explanation": "类似 DeepAgents 的套件提供预设配置、预配置工具和更高级的功能，旨在为智能体应用提供完整且即用的环境。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为，市面上大多数辅助构建 LLM 的软件包都属于智能体框架。它们的主要附加价值在于抽象。",
+    "当需要在生产环境中运行智能体时，就需要某种智能体运行时。这种运行时应提供更多基础设施层面的支持。",
+    "DeepAgents 是我们正在开发的最新项目，它比智能体框架更高级，构建于 LangChain 之上。它添加了默认提示语、针对工具调用的预设处理方式、用于规划的工具，并且可以访问文件系统等。",
+    "智能体运行时通常比智能体框架更底层，可以为智能体框架提供支持。",
+    "在早期领域进行开发的乐趣之一，就是为讨论事物建立心智模型。"
+  ],
+  "tags": [
+    "智能体框架",
+    "智能体运行时",
+    "智能体套件",
+    "LLM 智能体",
+    "LangChain"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 664,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761408875000,
+  "publishDateStr": "2025-10-25",
+  "publishDateTimeStr": "2025-10-25 16:14:35"
+}

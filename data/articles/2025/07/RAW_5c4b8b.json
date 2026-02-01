@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5c4b8b",
+  "title": "AI for Chemistry 进入「配置即代码」时代，Chemia 一键训练化学 AI 模型 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-18-9",
+  "date": "2025-07-18 08:18:10",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/732dd98a-8adb-410e-4b49-5f80346e8000/public\" data-ratio=\"0.5601851851851852\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100024652\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/6a81abcf-d6e4-4055-805b-35b620e88fd5/640.png\" data-sec-load-status=\"2\" data-report-img-idx=\"0\" alt=\"图片\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>编辑 | ScienceAI</p>\n  <p data-pm-slice=\"0 0 []\">如今，人工智能已成为化学研究不可或缺的工具，广泛应用于化合物性质预测、反应优化和材料设计等领域。</p>\n  <p data-pm-slice=\"0 0 []\">尽管大模型作为当前人工智能领域的主流方向之一，但是基于特征工程的传统人工智能算法依然在许多垂直领域有着难以替代的作用。</p>\n  <p data-pm-slice=\"0 0 []\">目前，垂直科学领域的初学者在面对人工智能建模时，面临诸多挑战，数据处理、模型调参及实验复现等繁琐流程耗时耗力，且易使人望而却步。</p>\n  <p>近日，<strong>上海人工智能实验室物质科学团队开源 Chemia，一个专为化学性质与反应预测与优化而生的综合&nbsp;</strong><strong>AI&nbsp;</strong><strong>模型训练</strong><strong>框架</strong>。</p>\n  <p>Chemia 借鉴「<strong>配置即代码」</strong>的理念，将从<strong>数据准备、特征工程、模型训 练、超参优化，到最终的化合物（或材料）性质以及化学反应条件预测</strong>的完整流程，全部浓缩在一个清晰直观的 <strong>YAML 配置文件</strong>中，通过一行代码即可实现化学大模型训练！</p>\n  <p>核心功能如下：</p>\n  <ul>\n   <li>\n    <p><strong>强大的算法库</strong>：内置 15 种以上经典 AI 算法，还有神经网络和图神经网络，满足不同研究需求。</p></li>\n   <li>\n    <p><strong>自动化特征工程</strong>：自动生成各种特征，如 Morgan 指纹、RDKit 描述符等，并且专门针对化学任务内置了Unimol, ChemBERTa, Molt5等预训练模型 Embedding 的接口灵活调用，解放你的生产力。</p></li>\n   <li>\n    <p><strong>智能优化引擎</strong>：深度集成 Optuna 进行超参数调优，自动帮你找到最优的模型参数。</p></li>\n   <li>\n    <p><strong>灵活的工作流</strong>：无论是快速训练、k-折交叉验证，还是完整的「训练-优化」端到端流程，都能轻松实现。</p></li>\n  </ul>\n  <section>\n   Github：https://github.com/flyben97/Chemia\n  </section>\n  <h3>Chemia：化学研究的「菜谱」</h3>\n  <p><strong>告别繁琐脚本，解放生产力</strong></p>\n  <p>Chemia 就像是化学研究的「菜谱」，它把从数据准备、特征工程、模型训练到最终预测的整个过程，都浓缩在一个清晰直观的 YAML 配置文件里。这样一来，化学家们再也不用编写和维护复杂的代码了，只需要修改几行配置，就能轻松切换数据集、更换模型、调整特征。这不仅节省了大量时间，还让研究者能够更专注于科学问题本身。举两个例子：</p>\n  <p>Case1：当用户收集了一份化合物分子结构和 HOMO-LUMO 能量 gap 的数据集，用户只需要将这个数据集的存放路径写在 YAML 文件里面，然后通过简单的文本改动，就可以通过一行代码去训练一个预测 HOMO-LUMO 能量 gap 的人工智能模型。</p>\n  <p>Case2：用户收集了一个电池配方和电池循环次数的数据集，用户只需要将这个数据集的存放路径写在 YAML 文件里面，并指定哪些内容需要作为特征输入，接着就可以通过一行代码去训练一个电池配方预测电池循环次数的人工智能模型。这就好比只需要按照菜谱上的配方和步骤，就能轻松做出一道复杂的菜肴，而不需要从头学习复杂的烹饪技巧。</p>\n  <p><strong>极致灵活性，满足多样化需求</strong></p>\n  <p>Chemia 内置了 15 种以上经典 AI 算法，包括 XGBoost、LightGBM、CatBoost&nbsp;等，还支持神经网络和图神经网络。无论是想快速尝试多种算法，还是深度优化特定反应，研究都可以根据自己的需求，轻松选择不同的模型进行对比和优化。这就像是你在做菜时，觉得某种调料的味道不够理想，就可以随时更换另一种调料，直到找到最满意的味道。</p>\n  <p><strong>一键复现，提升科研可信度</strong></p>\n  <p>在科学研究中，实验的可重复性至关重要。但传统的 AI 实验，由于代码复杂、参数众多，往往难以精确复现。通过 Chemia，只要将配置文件和数据保存好，任何人都可以精确复现你的实验流程。</p>\n  <p>这种可复现性不仅提高了科研的可信度，还极大提升了团队协作效率。这就像是你把做好的菜肴的菜谱（run_config.json 文件）分享给朋友，他们按照菜谱操作，也能做出同样的菜肴。</p>\n  <h3>仅需三步，五分钟快速上手</h3>\n  <p><strong>第一步：准备你的数据（CSV 格式）</strong></p>\n  <p>把你的数据整理成一个表格，比如：</p>\n  <section>\n   <p><code># my_data.csv&nbsp;</code><code>Catalyst,Reactant1,Yield&nbsp;</code><code>CCO,c1ccccc1,95.2&nbsp;</code><code>CCN,c1ccc(C)cc1,88.5&nbsp;</code><code>...</code></p>\n  </section>\n  <p><strong>第二步：编写你的配置文件（config.yaml）</strong></p>\n  <p>在配置文件里写上你的数据路径、需要的特征和目标：</p>\n  <section>\n   <pre data-lang=\"makefile\"><code>experiment_name: \"My_First_Reaction_Prediction\"&nbsp;</code><code>task_type: \"regression\"&nbsp;</code><code>data:&nbsp;</code><code>&nbsp; &nbsp; main_file_path:&nbsp;\"data/my_data.csv\"&nbsp;</code><code>&nbsp; &nbsp; smiles_col: [\"Catalyst\",&nbsp;\"Reactant1\"]&nbsp;</code><code>&nbsp; &nbsp; target_col:&nbsp;\"Yield\"&nbsp;</code><code>features:&nbsp;</code><code>&nbsp; &nbsp; per_smiles_col_generators:&nbsp;</code><code>&nbsp; &nbsp; &nbsp; &nbsp; Catalyst: [{type:&nbsp;\"morgan\"}]&nbsp;</code><code>&nbsp; &nbsp; &nbsp; &nbsp; Reactant1: [{type:&nbsp;\"rdkit_descriptors\"}]&nbsp;</code><code>training:&nbsp;</code><code>&nbsp; &nbsp; models_to_run: [\"xgb\",&nbsp;\"lgbm\",&nbsp;\"rf\"]&nbsp;# 训练三种模型对比&nbsp;</code><code>&nbsp; &nbsp; n_trials: 50&nbsp;# 自动进行50次超参数搜索&nbsp;</code></pre>\n  </section>\n  <p><strong>第三步：启动！</strong></p>\n  <section>\n   <pre data-lang=\"css\"><code>python run_training.py&nbsp;--config&nbsp;config.yaml</code></pre>\n  </section>\n  <p>实验结果、最优模型和性能报告就会自动生成，就是这么简单！</p>\n  <h3><strong>结语</strong></h3>\n  <p>Chemia 由武汉大学博士生高犇在上海人工智能实验室实习期间完成。更多项目详情欢迎查看 Github 文档，如果觉得好用的话欢迎点个 Star。</p>\n  <p>未来，Chemia 还将不断迭代，大家可以持续关注。</p>\n  <p>Github 文档：https://github.com/flyben97/Chemia/blob/main/README.md</p>\n </body>\n</html>",
+  "aiSummary": "Chemia 是一个开源的综合 AI 模型训练框架，通过“配置即代码”理念，极大简化了化学领域 AI 建模流程，实现化合物性质预测和反应优化。",
+  "oneSentenceSummary": "Chemia 是一个开源的综合 AI 模型训练框架，通过“配置即代码”理念，极大简化了化学领域 AI 建模流程，实现化合物性质预测和反应优化。",
+  "summary": "文章详细介绍了上海人工智能实验室物质科学团队开源的 Chemia 框架，旨在解决化学领域初学者在 AI 建模中面临的数据处理、模型调参和实验复现等挑战。Chemia 借鉴“配置即代码”理念，将数据准备、特征工程、模型训练、超参优化及最终预测等完整流程，通过一个清晰直观的 YAML 配置文件实现，用户只需一行代码即可训练化学 AI 模型。其核心功能包括内置 15 种以上经典 AI 算法（如 XGBoost、LightGBM、神经网络、图神经网络）、自动化特征工程（支持 Morgan 指纹、RDKit 描述符及 Unimol、ChemBERTa 等预训练模型 Embedding）、深度集成 Optuna 进行超参数调优，以及支持灵活的工作流（如 k-折交叉验证）。文章通过具体案例和“三步上手”教程，生动展示了 Chemia 如何帮助化学家告别繁琐脚本、提升科研效率和实验可复现性，从而解放生产力，使研究者能更专注于科学问题本身。",
+  "mainPoints": [
+    {
+      "point": "Chemia 通过“配置即代码”理念极大简化化学 AI 建模流程。",
+      "explanation": "通过 YAML 配置文件统一管理数据、特征、模型和优化，让非专业开发者也能轻松训练化学 AI 模型，显著提升效率和易用性。"
+    },
+    {
+      "point": "框架内置丰富算法与自动化能力，满足多样化研究需求。",
+      "explanation": "提供多种经典 AI 算法、神经网络和图神经网络，并支持自动化特征工程和预训练模型 Embedding，提升模型构建的灵活性和便捷性。"
+    },
+    {
+      "point": "Chemia 提升了化学 AI 实验的可复现性与协作效率。",
+      "explanation": "通过标准化配置文件，确保实验结果的精确复现，增强科研可信度，并促进团队间的高效协作，降低了重复工作的成本。"
+    }
+  ],
+  "keyQuotes": [
+    "Chemia 借鉴「配置即代码」 的理念，将从数据准备、特征工程、模型训练、超参优化，到最终的化合物（或材料）性质以及化学反应条件预测 的完整流程，全部浓缩在一个清晰直观的 YAML 配置文件中，通过一行代码即可实现化学大模型训练！",
+    "Chemia 就像是化学研究的「菜谱」，它把从数据准备、特征工程、模型训练到最终预测的整个过程，都浓缩在一个清晰直观的 YAML 配置文件里。",
+    "无论是想快速尝试多种算法，还是深度优化特定反应，研究都可以根据自己的需求，轻松选择不同的模型进行对比和优化。",
+    "通过 Chemia，只要将配置文件和数据保存好，任何人都可以精确复现你的实验流程。"
+  ],
+  "tags": [
+    "化学AI",
+    "AI框架",
+    "机器学习",
+    "深度学习",
+    "配置即代码"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1638,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752826690000,
+  "publishDateStr": "2025-07-18",
+  "publishDateTimeStr": "2025-07-18 08:18:10"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a1a84cd",
+  "title": "Katelyn Lesse – Anthropic：为 AI 代理优化 Claude API",
+  "url": "https://www.youtube.com/watch?v=aqW68Is_Kj4",
+  "date": "2025-12-04 20:15:01",
+  "author": "AI Engineer",
+  "siteName": "AI Engineer",
+  "content": "<html>\n <head></head>\n <body>\n  <h2 data-path-to-node=\"1\">内容概要</h2>\n  <p data-path-to-node=\"2\">Anthropic Claude 开发者平台团队负责人 Katelyn Lesse 介绍了他们如何演进 API 以支持构建强大的智能体系统。她概述了最大化性能的三个主要支柱：第一，通过自定义功能（如“思考”预算和工具使用）充分利用 Claude 的能力；第二，利用模型上下文协议 (MCP) 和记忆工具有效管理上下文窗口，确保模型在正确的时间获取正确的信息；第三，提供基础设施，通过安全代码执行和智能体技能 (Agent Skills)，让 Claude 能够拥有一台“电脑”并自主操作。</p>\n  <h2 data-path-to-node=\"3\">目录</h2>\n  <ul data-path-to-node=\"4\">\n   <li>\n    <p data-path-to-node=\"4,0,0\">介绍与欢迎</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,1,0\">利用 Claude 的能力</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,2,0\">管理 Claude 的上下文窗口</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,3,0\">给 Claude 一台电脑</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,4,0\">总结与招聘</p>\n   </li>\n  </ul>\n  <h2 data-path-to-node=\"5\">介绍与欢迎</h2>\n  <p data-path-to-node=\"6\">早上好。首先，我们要非常感谢 Swix 和整个 AI Engineer 组织团队让我们聚在一起。</p>\n  <p data-path-to-node=\"7\">我是 Katelyn，我是 Anthropic Claude 开发者平台团队的负责人。先举手做个调查，在座有多少人通过集成 LLM API 来构建智能体？看来我找对人了，太棒了。</p>\n  <p data-path-to-node=\"8\">今天，我想分享我们如何演进平台，帮助大家使用 Claude 构建真正强大的智能体 (Agentic) 系统。我们非常喜欢与那些致力于“提升智能上限”的开发者合作。他们总是力求站在前沿，总是试图发挥我们模型的最佳性能，构建最高效的系统。</p>\n  <p data-path-to-node=\"9\">接下来，我想介绍我们如何构建一个平台来帮助大家充分发挥 Claude 的潜力。我会以一个大家可能听说过的产品为例，它是我们非常喜欢的智能体编码产品，叫做 Claude Code。</p>\n  <p data-path-to-node=\"10\">当我们考虑最大化模型性能时，我们致力于通过平台帮助大家做到三件事。</p>\n  <p data-path-to-node=\"11\">第一，平台帮助大家利用 Claude 的能力。我们训练 Claude 擅长很多事情，我们需要在 API 中提供相应的工具，让大家能用上 Claude 真正擅长的那些功能。</p>\n  <p data-path-to-node=\"12\">其次，我们帮助大家管理 Claude 的上下文窗口。在任何给定时刻，保持窗口中包含正确的上下文，对于获得 Claude 的最佳输出至关重要。</p>\n  <p data-path-to-node=\"13\">第三，也是我们最近非常兴奋的一点，我们认为应该直接给 Claude 一台电脑，让它自己去操作。稍后我会谈到我们如何演进平台，为大家提供基础设施和其他支持，让 Claude 真正做到这一点。</p>\n  <h2 data-path-to-node=\"14\">利用 Claude 的能力</h2>\n  <p data-path-to-node=\"15\">首先谈谈利用 Claude 的能力。我们让 Claude 在很多方面变得非常出色，并通过 API 将这些能力作为可定制的功能提供给大家。</p>\n  <p data-path-to-node=\"16\">第一个例子相对基础：Claude 变得擅长思考了。Claude 在各种任务上的表现，与其推理问题所花费的时间成正比。</p>\n  <p data-path-to-node=\"17\">我们将其作为一个 API 功能提供给大家，你可以决定：是让 Claude 花更多时间思考以解决更复杂的问题，还是让 Claude 快速给出答案。我们也提供了一个预算功能，让你可以告诉 Claude 可以花费多少 token 用于思考。</p>\n  <p data-path-to-node=\"18\">对于 Claude Code 来说，这是一个很好的例子。通常你会用 Claude Code 调试相当复杂的系统，或者有时你只是想快速得到一个答案。因此，Claude Code 利用了这个 API 功能来决定是否让 Claude 进行更长时间的思考。</p>\n  <p data-path-to-node=\"19\">另一个基础示例是工具使用 (Tool Use)。Claude 在可靠地调用工具方面已经变得非常出色。</p>\n  <p data-path-to-node=\"20\">我们在 API 中通过两种方式提供了这一功能：一是我们内置的工具，比如网页搜索工具；二是支持创建自定义工具的能力。你只需定义名称、描述和输入架构 (Schema)，Claude 就能相当可靠地知道何时去调用这些工具并传递正确的参数。</p>\n  <p data-path-to-node=\"21\">这与 Claude Code 息息相关。Claude Code 拥有非常多的工具，它无时无刻不在调用它们来执行读取文件、搜索文件、写入文件以及重新运行测试等操作。</p>\n  <h2 data-path-to-node=\"22\">管理 Claude 的上下文窗口</h2>\n  <p data-path-to-node=\"23\">我们演进平台以帮助大家最大化 Claude 智能的第二种方式，是帮助管理 Claude 的上下文窗口。在正确的时间将正确的上下文放入窗口，是最大化性能最重要的手段之一。</p>\n  <p data-path-to-node=\"24\">但是，要做好上下文管理非常复杂，尤其是对于像 Claude Code 这样的编码智能体。你有技术设计文档、整个代码库、指令、工具调用记录等。所有这些都有可能在某个时刻出现在窗口中，那么如何确保窗口里保留的是正确的那部分内容呢？正确获取上下文并随时间推移对其进行优化，是我们思考了很多的问题。</p>\n  <p data-path-to-node=\"25\">让我们从模型上下文协议 (MCP) 开始。我们在一年前推出了 MCP，看到社区蜂拥采用 MCP 作为智能体与外部系统交互的标准化方式，真的很酷。</p>\n  <p data-path-to-node=\"26\">对于 Claude Code，你可以想象一下 GitHub 或 Sentry。在智能体的上下文之外，有很多地方可能包含额外的信息、工具或其他内容，你希望你的智能体（或 Claude Code 智能体）能够与它们交互。显然，相比于仅能看到 Prompt 中内容的智能体，这能带来更好的性能。</p>\n  <p data-path-to-node=\"27\">接下来是记忆 (Memory)。如果说利用 MCP 这样的工具能将上下文带入窗口，那么我们引入的记忆工具则是帮助你在窗口之外保存上下文，并且 Claude 知道只有在真正需要时才将其拉回窗口。</p>\n  <p data-path-to-node=\"28\">我们推出的第一版记忆工具本质上是一个客户端文件系统。数据由你控制，但 Claude 擅长判断“哦，这是一个值得稍后保存的好东西”，并且知道何时将其拉回。</p>\n  <p data-path-to-node=\"29\">对于 Claude Code，你可以想象代码库的模式 (Patterns) 或 Git 工作流的偏好设置。这些都是 Claude 可以存储在记忆中，并仅在相关时才拉回的内容。</p>\n  <p data-path-to-node=\"30\">第三点是上下文编辑 (Context Editing)。如果记忆是帮助你在窗口外保存内容并在合理时拉回，那么上下文编辑则是帮助你清除当前不相关、不应留在窗口中的内容。</p>\n  <p data-path-to-node=\"31\">我们第一版上下文编辑功能主要是清除旧的工具结果。这样做是因为工具结果可能会非常大，占用大量窗口空间。而且我们发现，过去的工具调用结果对于帮助 Claude 在后续会话中做出良好响应并不一定非常相关。</p>\n  <p data-path-to-node=\"32\">想想 Claude Code，它会调用数百个工具。它读取的文件或其他内容都在占用窗口空间。因此，它们利用上下文管理将这些内容从窗口中清除。</p>\n  <p data-path-to-node=\"33\">我们发现，如果将记忆工具与上下文编辑结合使用，在我们内部的评估基准上，性能提升了 39%，这是一个非常巨大的提升。这恰恰表明了只在窗口中保留当前相关内容的重要性。</p>\n  <p data-path-to-node=\"34\">我们正在通过提供更大的上下文窗口来扩展这一能力。对于我们的一些模型，你可以拥有 100 万 token 的上下文窗口。将更大的窗口与编辑窗口内容的工具相结合，可以最大化性能。</p>\n  <p data-path-to-node=\"35\">随着时间的推移，我们正在教 Claude 越来越好地理解其上下文窗口中的内容。也许它还有很大的运行空间，也许空间快用完了。Claude 会根据窗口中剩余的空间做出相应的反应。</p>\n  <h2 data-path-to-node=\"36\">给 Claude 一台电脑</h2>\n  <p data-path-to-node=\"37\">第三点是，我们要给 Claude 一台电脑，让它自己去操作。我们对这一点感到非常兴奋，因为目前围绕智能体框架 (Harnesses) 有很多讨论。比如应该有多少脚手架 (Scaffolding)？它应该有多大的主观意见？应该重还是轻？</p>\n  <p data-path-to-node=\"38\">我认为归根结底，Claude 拥有编写代码的能力，如果 Claude 也有运行这些代码的权限，它就能完成任何事情。仅仅通过给 Claude 施展的空间，你就能获得非常棒的专业产出。</p>\n  <p data-path-to-node=\"39\">但让你做到这一点的挑战在于基础设施以及专业知识。比如，如何给 Claude 权限，让它在使用电脑时为你带来更好的结果？</p>\n  <p data-path-to-node=\"40\">有个有趣的故事，我们最近推出了 Web 版和移动版的 Claude Code。这对我们的团队来说是一个有趣的项目，因为我们有很多问题要解决。当你在本地运行 Claude Code 时，它本质上是在使用你的机器作为电脑。但如果你在 Web 或移动设备上开始一个会话然后走开，会发生什么？Claude Code 在哪里运行？在哪里工作？</p>\n  <p data-path-to-node=\"41\">我们需要解决一些难题。我们需要一个安全的环境，让 Claude 能够编写和运行代码，而这些代码并不一定是你批准过的。我们需要解决大规模的容器编排问题。还需要解决会话持久性问题。</p>\n  <p data-path-to-node=\"42\">因为当我们推出这个功能后，很多人非常兴奋，开启了很多会话然后走开。我们需要确保当你回来想看 Claude 的成果时，所有东西都已准备就绪。</p>\n  <p data-path-to-node=\"43\">其中一个关键的原语是我们的代码执行工具 (Code Execution Tool)。我们在 API 中发布了这个工具，它允许 Claude 编写代码并在安全的沙盒环境中运行代码。</p>\n  <p data-path-to-node=\"44\">我们的平台处理容器、处理安全性，你不必考虑这些，因为它们运行在我们的服务器上。你可以决定让 Claude 写一些代码，并让 Claude 去运行这些代码。</p>\n  <p data-path-to-node=\"45\">Claude Code 有很多这样的例子，比如让动画变得更闪亮，你希望 Claude 能够实际运行代码。我们确实认为，智能体的未来是让模型在沙盒环境中相当自主地工作，而我们正在为你提供实现这一点的基础设施。</p>\n  <p data-path-to-node=\"46\">一旦你考虑赋予模型在你试图做的事情上的实际领域专业知识，这就变得非常强大。我们最近发布了智能体技能 (Agent Skills)，你可以将其与代码执行工具结合使用。技能基本上就是文件夹，里面包含脚本、指令和资源，Claude 有权访问并可以决定在其沙盒环境中运行。</p>\n  <p data-path-to-node=\"47\">它根据你的请求以及技能的描述来决定这样做。Claude 非常擅长判断：“现在是将这个技能拉入上下文并加以利用的正确时机。”</p>\n  <p data-path-to-node=\"48\">你可以将技能与 MCP 等工具结合使用。MCP 让你能够访问工具和上下文，而技能则赋予你利用这些工具和上下文的专业知识。</p>\n  <p data-path-to-node=\"49\">对于 Claude Code，一个很好的例子是网页设计。也许每当你推出新产品或新功能时，你都会构建落地页。当你构建这些落地页时，你希望它们遵循你的设计系统和既定模式。</p>\n  <p data-path-to-node=\"50\">此时 Claude 就会知道：“好吧，有人让我构建一个落地页。现在是拉入网页设计技能并为该落地页使用正确模式和设计系统的好时机。”</p>\n  <p data-path-to-node=\"51\">明天，我们要团队的 Barry 和 Mahes 将做一个关于技能的演讲。他们会深入探讨，我强烈推荐大家去看看。</p>\n  <h2 data-path-to-node=\"52\">总结与招聘</h2>\n  <p data-path-to-node=\"53\">以上就是我们演进平台的方式，旨在帮助大家利用 Claude 的所有能力，为正在构建的产品获得绝对最佳的性能。</p>\n  <p data-path-to-node=\"54\">第一，利用 Claude 的能力：随着我们的研究团队训练 Claude，我们提供 API 功能来利用这些能力。第二，管理 Claude 的上下文：保持上下文窗口整洁，在正确的时间包含正确的上下文非常重要。第三，给 Claude 一台电脑，让它自己去操作。</p>\n  <p data-path-to-node=\"55\">我们将继续演进平台。随着 Claude 变得更好、拥有更多能力，并且在现有能力上更加精进，我们将围绕这一点继续演进 API，以便大家保持领先并利用 Claude 最好的一面。</p>\n  <p data-path-to-node=\"56\">其次，随着记忆和上下文的发展，我们将加大在工具方面的投入，让 Claude 能够决定拉入什么、稍后存储什么以及从上下文窗口中清理什么。</p>\n  <p data-path-to-node=\"57\">第三，我们将继续在智能体基础设施上发力。“让 Claude 拥有一台电脑并自主操作”这一想法最大的问题在于我提到的编排、安全环境和沙盒等问题。我们将继续努力，确保这些功能准备好供大家使用。</p>\n  <p data-path-to-node=\"58\">最后，我在招人。Anthropic 正在招聘，我们的团队正在快速扩张。如果你是一个喜欢构建令人愉悦的开发者产品的人，如果你对我们在 Claude 上所做的事情感到兴奋，我们很乐意在终端产品设计、开发者关系 (DevRel) 等多个职能部门与你合作。请联系我们，谢谢大家。</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 详细介绍了 Claude 的 API 如何演进，通过利用模型能力、管理上下文，并为 AI 代理提供基础设施，从而帮助开发者构建强大的 AI 代理系统。",
+  "oneSentenceSummary": "Anthropic 详细介绍了 Claude 的 API 如何演进，通过利用模型能力、管理上下文，并为 AI 代理提供基础设施，从而帮助开发者构建强大的 AI 代理系统。",
+  "summary": "Anthropic 的 Claude 开发者平台团队负责人 Katelyn Lesse 概述了他们的策略，旨在演进 Claude 的 API 以支持强大的 AI 代理开发。她提出了三个核心支柱：首先，通过例如用于控制推理时间的“思考预算”和可靠的自定义工具使用等功能，最大化 Claude 的固有能力；其次，使用模型上下文协议 (MCP) 、客户端内存工具和上下文编辑来优化上下文窗口管理，确保 Claude 在正确的时间访问最相关的信息；第三，为自主代理操作提供基础设施。该基础设施包括一个安全的沙盒化代码执行环境，Claude 可以在其中编写和运行代码，以及“代理技能 (Agent Skills)”，即特定领域的脚本和指令文件夹，使 Claude 能够更独立和有效地运行。这个平台演进旨在使开发者能够构建高性能和复杂的代理系统，例如他们内部的 Claude 代码产品。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 正在通过“思考预算”和工具使用等 API 功能来增强 Claude 的核心能力。",
+      "explanation": "通过公开允许开发者控制 Claude 的推理时间并集成自定义工具的功能，Anthropic 使代理能够更有效地处理复杂问题并可靠地与外部系统交互。"
+    },
+    {
+      "point": "有效的上下文窗口管理对于最大化 Claude 在代理系统中的性能至关重要。",
+      "explanation": "诸如模型上下文协议 (MCP) 、客户端内存和上下文编辑等工具可确保 Claude 的有限上下文窗口仅包含最相关的信息，从而显著提高响应质量和效率。"
+    },
+    {
+      "point": "通过安全的代码执行和代理技能 (Agent Skills) 为 Claude 提供“一台计算机”，可以赋能更自主和有能力的代理。",
+      "explanation": "Anthropic 的基础设施允许 Claude 在沙盒环境中编写和运行代码，并利用特定领域的“代理技能 (Agent Skills)”（脚本、指令、资源），将其转变为一个非常有能力和自我操作的代理。"
+    }
+  ],
+  "keyQuotes": [
+    "我们正在演进该平台，以帮助您使用 Claude 构建真正强大的代理系统。",
+    "Claude 在任务上花费的推理时间越长，表现就越好。",
+    "在正确的时间在窗口中获得正确的上下文是最大化性能的最重要方法。",
+    "我认为归根结底，如果 Claude 具有编写代码的能力，并且也具有运行该代码的权限，那么它可以做任何事情。",
+    "代理的未来将是在沙盒环境中相当自主地工作的模型，并且我们正在为您构建实现这一目标的基础设施。"
+  ],
+  "tags": [
+    "AI 代理",
+    "LLM",
+    "API 设计",
+    "上下文管理",
+    "工具使用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 16,
+  "score": 92,
+  "wordCount": 3888,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_db1f86",
+  "sourceName": "AI Engineer",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1764879301000,
+  "publishDateStr": "2025-12-04",
+  "publishDateTimeStr": "2025-12-04 20:15:01"
+}

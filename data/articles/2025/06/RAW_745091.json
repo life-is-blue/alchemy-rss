@@ -1,0 +1,57 @@
+{
+  "id": "RAW_745091",
+  "title": "这个扩散 LLM 太快了！没有「请稍后」，实测倍速于 Gemini 2.5 Flash ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-27-11",
+  "date": "2025-06-27 08:31:44",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>只需一眨眼的功夫，Mercury 就把任务完成了。</p>\n  </blockquote>\n  <p>「我们非常高兴地推出 Mercury，这是首款专为聊天应用量身定制的商业级扩散 LLM！Mercury 速度超快，效率超高，能够为对话带来实时响应，就像 Mercury Coder 为代码带来的体验一样。」</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2d48aff3-3806-4652-ac81-7e70ab0d6b00/public\" alt=\"image.png\" data-ratio=\"0.5387547649301143\" data-type=\"png\" data-w=\"787\" data-imgfileid=\"503492514\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/de7a8831-ac6a-4b96-b1f0-ff254bcd60ff/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>刚刚，AI 初创公司 Inception Labs 在 X 上宣布了这样一个好消息。该公司的创始人之一 Stefano Ermon 实际上也正是扩散模型（diffusion model）的发明者之一，同时他也是 FlashAttention 原始论文的作者之一。Aditya Grover 和 Volodymyr Kuleshov 皆博士毕业于斯坦福大学，后分别在加利福尼亚大学洛杉矶分校和康乃尔大学任计算机科学教授。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0ff56701-6d57-45ba-a2c5-eb2a38fc9100/public\" alt=\"image.png\" data-ratio=\"0.3990740740740741\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492519\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/deba0498-e4ff-433a-8052-7e82766390c5/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Mercury 效果如何？我们先看一个官方 Demo：</p>\n  <p>视频显示，一位用户想要学习西班牙语。请求 Mercury 教他一些常见的问候语及其含义。几乎一眨眼的功夫，Mercury 就给出了一些常见的西班牙语问候语及其含义，速度确实非常快。<a href=\"https://mp.weixin.qq.com/s/dSEkdYHOQbaiRN3O4D-hKg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/16d57d44-9437-493e-a58a-ac651115a9d1/1751012836573.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>一直以来，扩散模型是图像生成和视频生成的主流方法。然而，扩散模型在离散数据上的应用，特别是在语言领域，仍然仅限于小规模的实验。与经典的自回归模型相比，扩散模型的优势在于其能够进行并行生成，这不仅可以大幅提高生成速度，还能提供更精细的控制、推理能力和多模态数据处理能力。</p>\n  <p>然而，将扩散模型扩展到现代 LLMs 的规模，同时保持高性能，仍然是一个未解决的挑战。&nbsp;</p>\n  <p>Mercury 就是为此诞生的，其是首个基于扩散模型的 LLM。与自回归（AR）模型相比，Mercury 模型在性能和效率上都达到了最先进的水平。&nbsp;</p>\n  <p>在性能表现上，根据第三方测评机构 Artificial Anlys 的基准测试数据显示，Mercury 可媲美 GPT-4.1 Nano 和 Claude 3.5 Haiku 等速度经过优化的前沿模型，同时运行速度提升超过 7 倍。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6bf512ff-0cb4-4cf6-0816-272ef12ae200/public\" alt=\"image.png\" data-ratio=\"0.5148148148148148\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492532\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0fef5036-87f9-41fb-aeed-ce184630f409/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3d82d0f1-4f0b-4c1d-1be2-528318e56700/public\" alt=\"image.png\" data-ratio=\"0.6601851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492537\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/0851c418-0e43-4242-b2bb-8f7f5e3a4761/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>在其他场景下，Mercury 也展现出超强的能力。</p>\n  <p>首先在实时语音方面。Mercury 凭借其低延迟特性，能够为各类实时语音应用提供支持，包括翻译服务和呼叫中心代理等场景。在实际语音指令测试中，基于标准 NVIDIA 硬件运行的 Mercury，其延迟表现优于在 Cerebras 系统上运行的 Llama 3.3 70B 大模型。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c06fef73-7f46-4686-e2bb-ef579ec10b00/public\" alt=\"image.png\" data-ratio=\"0.5\" data-type=\"png\" data-w=\"1080\" data-croporisrc=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gWicdlvS95jD8Te9UDuEQox5qBrayhNR3AZ0SHOTHaUHHiaSopXYG1Quicf1Y2D3Y1jy4ryOGG0vtWdFg/0?wx_fmt=png&amp;from=appmsg\" data-cropx1=\"7.117437722419929\" data-cropx2=\"2000\" data-cropy1=\"298.93238434163703\" data-cropy2=\"1295.373665480427\" data-imgfileid=\"503492539\" data-original-style=\"width: 560px;height: 280px;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/90370ce4-903f-44d1-8eff-ae7bd43b8a71/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>其次是可交互性。Mercury 是微软 NLWeb 项目的合作伙伴。与 Mercury 结合使用时，NLWeb 能够提供闪电般快速、自然的对话。与其他注重速度的模型（例如 GPT-4.1 Mini 和 Claude 3.5 Haiku）相比，Mercury 的运行速度更快，确保了流畅的用户体验。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6fdf9af0-bc09-41ff-b000-bcc670650c00/public\" alt=\"image.png\" data-ratio=\"0.7453703703703703\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492542\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/ea314f55-f357-4322-ad10-daf64af14215/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>与此同时，Inception Labs 还发布了 Mercury 技术报告，感兴趣的读者可以前去了解更多内容。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/36cfc6e4-43c2-4e35-388e-7efb2f514000/public\" alt=\"image.png\" data-ratio=\"0.29259259259259257\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503492548\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/a4e93d9d-d9b1-4b46-882e-e386fb637fff/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <ul>\n   <li>\n    <p>论文标题： Mercury: Ultra-Fast Language Models Based on Diffusion&nbsp;</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/pdf/2506.17298</p></li>\n   <li>\n    <p>试用地址：https://poe.com/Inception-Mercury</p></li>\n  </ul>\n  <p>我们不难看出，Mercury 是迈向基于扩散语言建模未来的下一步，它将用极其快速和强大的 dLLM 取代当前一代的自回归模型。</p>\n  <p>既然 Mercury 主打速度快，效率高，那么真实体验效果如何呢？机器之心上手体验了一把。</p>\n  <p><strong>一手体验</strong></p>\n  <p>首先测试一下 Mercury 的推理能力，两个经典的问题「9.11 和 9.9 哪个大」「\"Strawberry\" 中有几个字母 'r'?」都回答正确。<a href=\"https://mp.weixin.qq.com/s/dSEkdYHOQbaiRN3O4D-hKg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/8eaba9f5-1545-47fd-8c5b-31229f889d29/1751012883267.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>但在「红绿色盲女孩的父亲为什么崩溃」这个问题上败下阵来。<a href=\"https://mp.weixin.qq.com/s/dSEkdYHOQbaiRN3O4D-hKg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/43d78530-9ba3-4f81-bb2f-920066b21314/1751012895513.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>接下来我们测试一下代码能力，我们用 Mercury、Gemini 2.5 Flash、GPT 4.1 mini 生成同一个脚本任务，看看他们表现有什么区别。</p>\n  <p>「 生成一个 1000 字的 TypeScript 游戏脚本，包括角色类、攻击逻辑、敌人 AI、UI 模块初始化。 」</p>\n  <p>Mercury 生成过程：<a href=\"https://mp.weixin.qq.com/s/dSEkdYHOQbaiRN3O4D-hKg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/8886d2be-89ed-4655-b59d-4a367ed3fa81/1751012919176.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>Gemini 2.5 Flash 生成过程：<a href=\"https://mp.weixin.qq.com/s/dSEkdYHOQbaiRN3O4D-hKg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/7b1710e0-8ac9-46ae-9243-bd4d9b10b61f/1751012934290.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>GPT 4.1 mini 生成过程：<a href=\"https://mp.weixin.qq.com/s/dSEkdYHOQbaiRN3O4D-hKg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/dc3dd15a-07d7-4403-99bc-fbaf995d006d/1751012957980.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>可以看到，Mercury 确实生成速度非常快，在短暂几秒停顿后，大量文本同时出现，任务完成仅仅用时几秒，而 Gemini 和 GPT 生成的文字像打字机一样一个接一个地流出，总耗时较长。&nbsp;</p>\n  <p>再来检查一下生成质量怎么样，这里邀请 GPT o3 作为评委老师。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/93cba001-f560-4324-af02-e0b54a546f00/public\" alt=\"image.png\" data-ratio=\"0.334916864608076\" data-type=\"png\" data-w=\"842\" data-imgfileid=\"503492551\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/4cf4550b-d1a1-4afa-ae49-b2d21c84ed59/640.png\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>可以看到，虽然 Mercury 生成速度很快，但生成质量还有待提高。</p>\n  <p>最后，我们还问了 Mercury 一些日常问题，回答速度非常快。&nbsp;</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9b5bf5d-aee3-4dc9-de3e-5fa804fc9900/public\" data-ratio=\"0.7907407407407407\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492552\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/5543fdeb-6a01-43a9-b3fd-52462b61c361/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>还没体验的小伙伴，可以去试一试了。</p>\n </body>\n</html>",
+  "aiSummary": "介绍基于扩散模型的 LLM Mercury，其速度远超 Gemini 2.5 Flash，但生成质量有待提高。",
+  "oneSentenceSummary": "介绍基于扩散模型的 LLM Mercury，其速度远超 Gemini 2.5 Flash，但生成质量有待提高。",
+  "summary": "文章介绍了 AI 初创公司 Inception Labs 推出的扩散 LLM 模型 Mercury，该模型专为聊天应用设计，具有超快的响应速度和高效的性能。Mercury 基于扩散模型，相比传统自回归模型，能够并行生成，大幅提高生成速度，并提供更精细的控制和多模态数据处理能力。文章通过官方 Demo 和第三方测评数据展示了 Mercury 在速度和性能上的优势，特别是在实时语音和交互性方面的优异表现。同时指出其在生成质量上仍有待提高。此外，文章还提供了 Mercury 的技术报告链接和试用地址。",
+  "mainPoints": [
+    {
+      "point": "Mercury 是首款基于扩散模型的商业级 LLM",
+      "explanation": "Mercury 利用扩散模型的并行生成能力，显著提高了响应速度，适用于实时聊天应用。"
+    },
+    {
+      "point": "Mercury 在速度上远超 Gemini 2.5 Flash 和 GPT-4.1 mini",
+      "explanation": "第三方测评显示，Mercury 的运行速度提升超过 7 倍，但在生成质量上仍有不足。"
+    },
+    {
+      "point": "Mercury 在实时语音和交互性方面表现优异",
+      "explanation": "Mercury 的低延迟特性使其在实时语音应用和自然对话场景中具有明显优势。"
+    },
+    {
+      "point": "Mercury 在生成质量上仍有待提高",
+      "explanation": "虽然生成速度很快，但测试显示其生成质量不如 Gemini 和 GPT 等模型。"
+    }
+  ],
+  "keyQuotes": [
+    "Mercury 就是为此诞生的，其是首个基于扩散模型的 LLM。与自回归（AR）模型相比，Mercury 模型在性能和效率上都达到了最先进的水平。",
+    "在性能表现上，根据第三方测评机构 Artificial Anlys 的基准测试数据显示，Mercury 可媲美 GPT-4.1 Nano 和 Claude 3.5 Haiku 等速度经过优化的前沿模型，同时运行速度提升超过 7 倍。",
+    "可以看到，Mercury 确实生成速度非常快，在短暂几秒停顿后，大量文本同时出现，任务完成仅仅用时几秒，而 Gemini 和 GPT 生成的文字像打字机一样一个接一个地流出，总耗时较长。"
+  ],
+  "tags": [
+    "扩散模型",
+    "LLM",
+    "Inception Labs",
+    "Mercury",
+    "实时响应"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1476,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751013104000,
+  "publishDateStr": "2025-06-27",
+  "publishDateTimeStr": "2025-06-27 08:31:44"
+}

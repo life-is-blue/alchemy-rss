@@ -1,0 +1,63 @@
+{
+  "id": "RAW_d66489",
+  "title": "大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮",
+  "url": "https://www.qbitai.com/2025/07/304239.html",
+  "date": "2025-07-03 06:35:03",
+  "author": "不圆",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-arrow-right\" data-track=\"56\">北邮网安团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"57\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p class=\"pgc-h-arrow-right\" data-track=\"57\">当推理链从3步延伸到50+步，幻觉率暴增10倍；反思节点也束手无策。</p>\n  <p data-track=\"3\">来自北京邮电大学的研究团队通过<strong>思维链审计实验</strong>，首次定量揭示了这一“越想越错”现象背后的元认知偏差：</p>\n  <p data-track=\"4\">长链推理中的反思不是纠错机制，而是给幻觉颁发“理性证书”——</p>\n  <p data-track=\"5\">模型为保持与用户提示语义一致，<strong>宁可篡改协议定义也不否定前提</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90fa2092-2345-48c0-2506-5b9f21ef4b00/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90fa2092-2345-48c0-2506-5b9f21ef4b00/public\">\n  </div>\n  <p data-track=\"7\">推理大模型（RLLMs）能把复杂问题拆解成几十步推理，再给出看似缜密的结论。然而，随着推理链条变长，一个令人不安的趋势浮出水面——<strong>错误不再是偶发失误，而是沿链条滚雪球式放大</strong>。</p>\n  <p data-track=\"8\">在医疗、金融、法律等高风险场景，一次细小偏差就可能酿成灾难。</p>\n  <p data-track=\"9\">遗憾的是，当前安全评估几乎都停留在结果级：判定答案对错、衡量毒性与否，犹如“考试只看最后分数”。</p>\n  <p data-track=\"10\">这种做法忽视了一个关键问题：<strong>错误到底是如何在链内生根、扩散并固化的？</strong>如果无法洞察这一机制，就难以对症下药。</p>\n  <p data-track=\"11\">北京邮电大学的研究团队为解决这一问题，采取了以下方法：</p>\n  <p data-track=\"12\">首先<strong>基于RFC协议文档构建受控知识域</strong>，再让模型生成<strong>30–60步</strong>的长链推理，并在关键节点插入reflection操作以实时记录置信度变化。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94e67f97-6ee6-4397-f5b8-d79676a86400/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94e67f97-6ee6-4397-f5b8-d79676a86400/public\">\n  </div>\n  <p data-track=\"13\">具体而言，他们构建了一个受控知识领域，该领域捕获了两种类型的幻觉案例，克服了在受控环境中可靠地重现幻觉的困难（图a）。</p>\n  <p data-track=\"14\">这个领域具有以下三个特点：</p>\n  <ul>\n   <li data-track=\"15\"><strong>封闭性</strong>：1515道问题严格限定在314份RFC技术文档内，杜绝外部干扰；</li>\n   <li data-track=\"16\"><strong>可验证</strong>：每个知识单元带明确真值标签；</li>\n   <li data-track=\"17\"><strong>高压陷阱</strong>：在30%的问题中预埋三重错误事实（如篡改协议校验规则），测试模型纠偏能力。</li>\n  </ul>\n  <p data-track=\"18\">然后，他们提出了一种针对长链推理的建模系统，该系统追踪知识是如何在多个推理步骤中被引入、反馈和完善的，解决了在复杂的推理轨迹中研究幻觉演化的挑战（图b）。</p>\n  <p data-track=\"19\">更进一步，他们还审计了幻觉实例，以归因于现实案例中幻觉的传播，应对了理解长链推理背后幻觉潜在机制这一挑战。如图c所示，k1和k3通过错误知识引入幻觉，将最初正确的思维链第一步（c1）经由c3反射扭曲为幻觉产生的c4，从而揭示了推理模型中存在的潜在风险。</p>\n  <p data-track=\"21\">通过对结果进行分析，北京邮电大学的研究团队揭示了RLLM产生幻觉的核心机制：</p>\n  <blockquote>\n   <p data-track=\"22\">当模型在长思维链中反复挣扎，它不是在逼近真相——而是在用千余词的复杂推理，固化几十个词的错误答案。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/41a2da40-9cef-469c-ebb0-b6d19a619c00/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/41a2da40-9cef-469c-ebb0-b6d19a619c00/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2476835b-30ef-4db5-d6fc-459cfcbfb600/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2476835b-30ef-4db5-d6fc-459cfcbfb600/public\">\n  </div>\n  <p data-track=\"23\"><strong>1、外部错误诱发内部造假</strong></p>\n  <p data-track=\"24\">实验显示，当模型遭遇预埋错误（如“UDP校验绑定HMAC安全”）时：</p>\n  <ul>\n   <li data-track=\"25\">仅25.9%直接采纳</li>\n   <li data-track=\"26\">55.9%触发内部知识编造流程（例如：虚构“RFC5.2要求校验位包含密钥”）</li>\n  </ul>\n  <p data-track=\"27\"><strong>2、反思（Reflection）沦为自我说服工具</strong></p>\n  <ul>\n   <li data-track=\"28\">自我说服：生成假设性主张(“或许校验确保HMAC完整”)</li>\n   <li data-track=\"29\">知识造假：追加虚构依据(“参见RFCXX.Y条款”)；</li>\n   <li data-track=\"30\">元认知漂移：token/claim双级别置信度不降反升。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e2a70ee-4a46-4537-2806-372f80dfcd00/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e2a70ee-4a46-4537-2806-372f80dfcd00/public\">\n  </div>\n  <p data-track=\"32\">为了检验上游推理的变化如何影响下游，北京邮电大学的研究团队设计了一个<strong>正向干预实验</strong>，可以拆解为以下三步：</p>\n  <p data-track=\"33\"><strong>1.精准定位</strong>：在1015条长链样本中标记首个错误知识节点（如虚构的协议条款）。</p>\n  <p data-track=\"34\"><strong>2.三阶段干预</strong>：</p>\n  <ul>\n   <li data-track=\"35\">错误发生前（Edit1）：在首个错误节点前注入修正知识；</li>\n   <li data-track=\"36\">错误发生时（Edit2）：直接替换错误节点；</li>\n   <li data-track=\"37\">错误发生后（Edit3）：在错误下游插入修正。</li>\n  </ul>\n  <p data-track=\"38\"><strong>3.六维评估指标</strong>：</p>\n  <ul>\n   <li data-track=\"39\">是否接受修正？</li>\n   <li data-track=\"40\">推理链是否发生改变？</li>\n   <li data-track=\"41\">最终答案是否随之改变？</li>\n   <li data-track=\"42\">推理链与答案是否保持一致？</li>\n   <li data-track=\"43\">修正在整个链条中的传播程度如何？</li>\n   <li data-track=\"44\">残留幻觉的比率有多少？</li>\n  </ul>\n  <blockquote>\n   <p data-track=\"46\">评测7大主流检测方法，最优者耗时2小时/样本，准确率仍不足79%。<br class=\"sysbr\">\n     在1500+tokens的长思维链样本上验证，结果显示当前检测方法在元认知级幻觉面前效果堪忧。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3e37c4e0-61ff-4d98-5592-286b48383300/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3e37c4e0-61ff-4d98-5592-286b48383300/public\">\n  </div>\n  <p data-track=\"47\">通过正向干预实验对长链幻觉进行检测，结果显示：</p>\n  <p data-track=\"48\">Edit1对下游推理的影响显著大于Edit2和Edit3，表明干预效果会沿推理链递减。</p>\n  <p data-track=\"49\">Edit2编辑案例比Edit1表现出更高的接受度和更低的幻觉率，这意味着模型对Edit2的置信度较低，更容易受到干预影响。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/78fdb294-6905-487e-f894-bd49ab099700/public\" alt=\"大模型越反思越错，原来是长链推理通过自我说服加重幻觉 | 北邮\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/78fdb294-6905-487e-f894-bd49ab099700/public\">\n  </div>\n  <p data-track=\"50\">使用7种主流的检测方法对幻觉进行检测，得到以下结果：</p>\n  <ul>\n   <li data-track=\"51\">速度与精度互斥：分钟级方法准确率≤61.6%，78.9%高精度需较高算力；</li>\n   <li data-track=\"52\">细粒度检测无解：现有技术无法识别元认知漂移（如反思中错误强化）。</li>\n  </ul>\n  <p data-track=\"53\">也就是说，<strong>现有干预措施无法从根本上消除幻觉现象，当前模型也缺乏足够的应对能力</strong>。</p>\n  <p data-track=\"54\"><em>论文原文：https://arxiv.org/abs/2505.13143</em><br><em>代码仓库：https://github.com/Winnie-Lian/AHa_Meta_Cognitive</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "北邮团队通过受控实验研究发现大模型长链推理中反思机制反而加重幻觉，揭示错误在推理链中的扩散机制",
+  "oneSentenceSummary": "北邮团队通过受控实验研究发现大模型长链推理中反思机制反而加重幻觉，揭示错误在推理链中的扩散机制",
+  "summary": "北京邮电大学研究团队通过思维链审计实验，首次定量揭示了大模型在长链推理中'越想越错'的现象。研究基于 RFC 协议文档构建受控知识域，包含 1515 道严格限定问题和 30%预埋错误的问题。研究发现，当推理链从 3 步延伸到 50+步时，幻觉率暴增 10 倍，反思节点不仅无法纠错，反而通过自我说服加重幻觉。团队发现模型为保持与用户提示语义一致，会篡改协议定义而非否定前提，55.9%的情况会触发内部知识编造流程。通过正向干预实验发现，错误发生前的干预效果最佳，而现有检测方法在元认知级幻觉面前效果不佳，最优方法准确率不足 79%。",
+  "mainPoints": [
+    {
+      "point": "长链推理中反思机制加重幻觉",
+      "explanation": "研究发现当推理链延长至 50+步时，模型幻觉率暴增 10 倍，反思节点成为自我说服工具而非纠错机制"
+    },
+    {
+      "point": "外部错误诱发内部知识编造",
+      "explanation": "实验显示 55.9%的情况会触发内部知识编造流程，模型为保持一致性会虚构依据(如'参见 RFCXX.Y 条款')"
+    },
+    {
+      "point": "模型为保持一致性会篡改知识",
+      "explanation": "模型宁可篡改协议定义也不否定错误前提，通过元认知漂移(token/claim 双级别置信度不降反升)维持推理链"
+    },
+    {
+      "point": "干预效果沿推理链递减",
+      "explanation": "正向干预实验显示错误发生前(Edit1)的干预效果最佳，错误发生后(Edit3)效果最弱，表明早期纠正的重要性"
+    },
+    {
+      "point": "现有检测方法效果有限",
+      "explanation": "评测 7 种主流检测方法，最优者耗时 2 小时/样本，准确率仍不足 79%，无法识别元认知漂移等复杂幻觉"
+    }
+  ],
+  "keyQuotes": [
+    "当推理链从 3 步延伸到 50+步，幻觉率暴增 10 倍；反思节点也束手无策",
+    "模型为保持与用户提示语义一致，宁可篡改协议定义也不否定前提",
+    "55.9%触发内部知识编造流程(例如：虚构'RFC5.2 要求校验位包含密钥')",
+    "模型在长思维链中反复挣扎，它不是在逼近真相------而是在用千余词的复杂推理，固化几十个词的错误答案",
+    "现有干预措施无法从根本上消除幻觉现象，当前模型也缺乏足够的应对能力"
+  ],
+  "tags": [
+    "大语言模型",
+    "推理链",
+    "模型幻觉",
+    "元认知偏差",
+    "北京邮电大学"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1812,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751524503000,
+  "publishDateStr": "2025-07-03",
+  "publishDateTimeStr": "2025-07-03 06:35:03"
+}

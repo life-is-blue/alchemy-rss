@@ -7,7 +7,10 @@
   "siteName": "Andrew Ng(@AndrewYNg)",
   "content": null,
   "aiSummary": "吴恩达宣布推出与 Anthropic 合作的全新短课程，教授如何为 Claude 等 AI 智能体创建并部署标准化的“技能 (Skills)”。",
+  "oneSentenceSummary": "吴恩达宣布推出与 Anthropic 合作的全新短课程，教授如何为 Claude 等 AI 智能体创建并部署标准化的“技能 (Skills)”。",
+  "summary": "吴恩达的 deeplearning.ai 联合 Anthropic 推出新课程《Agent Skills with Anthropic》，由 Elie Schoppik 执教。该课程核心在于教授开发者如何构建“技能”——这是一种以文件夹形式组织的结构化指令集，能为 AI 智能体提供按需知识和工作流支持。课程涵盖了从代码生成、数据分析到研究等自定义技能的实战开发，并演示了如何利用 MCP 和子智能体构建复杂的智能体系统。这些技能采用开放标准格式，实现了“一次构建，多处部署”，可完美适配 Claude.ai、Claude Code、API 及 SDK 等多个平台。",
   "mainPoints": [],
+  "keyQuotes": [],
   "tags": [
     "AI 智能体",
     "Anthropic",
@@ -15,10 +18,19 @@
     "AI 技能",
     "AI 开发"
   ],
-  "categoryTag": null,
+  "topicTag": "ai-llm",
   "readTime": 4,
   "score": 92,
   "wordCount": 975,
   "domain": "x.com",
-  "category": "Artificial_Intelligence"
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ef9dba",
+  "sourceName": "Andrew Ng(@AndrewYNg)",
+  "resourceType": "TWITTER",
+  "language": "en_US",
+  "publishTimeStamp": 1769621507000,
+  "publishDateStr": "01-28",
+  "publishDateTimeStr": "2026-01-28 17:31:47"
 }

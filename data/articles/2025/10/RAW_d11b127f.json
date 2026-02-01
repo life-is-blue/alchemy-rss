@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d11b127f",
+  "title": "IBM 发布 Granite-Docling-258M，一款用于精确文档转换的精简型视觉语言模型",
+  "url": "https://www.infoq.com/news/2025/10/granite-docling-ibm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-08 18:45:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>IBM Research has recently introduced <a href=\"https://www.ibm.com/new/announcements/granite-docling-end-to-end-document-conversion\">Granite-Docling-258M</a>, a new open-source vision-language model (VLM) designed for high-fidelity document-to-text conversion while preserving complex layouts, tables, equations, and lists.</p>\n   <p>Unlike typical OCR systems that rely on large, general-purpose models, Granite-Docling is purpose-built for document parsing. With only 258 million parameters, it delivers accuracy on par with models several times its size — offering a major cost and efficiency advantage. The model goes beyond plain text extraction by retaining precise document structure, including math notation, table layouts, and code blocks, making it well-suited for retrieval-augmented generation (RAG) pipelines and dataset preparation.</p>\n   <p>Granite-Docling builds on the earlier SmolDocling-256M-preview, replacing the SmolLM-2 backbone with a Granite 3-based architecture and upgrading the visual encoder from SigLIP to SigLIP2. The new version addresses previous stability issues such as token repetition or incomplete parses, thanks to improved dataset filtering and annotation cleanup.</p>\n   <p>Early community reactions have highlighted the model’s potential for on-device use. On Reddit, one commenter <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1njet2z/comment/neq8vo9/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">noted</a>:</p>\n   <blockquote>\n    <p>0.3B? Impressive. Almost like even low-end phones will have solid local LLM inferencing in the future.</p>\n   </blockquote>\n   <p>To which a member of the IBM team <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1njet2z/comment/nevinjg/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">responded</a>:</p>\n   <blockquote>\n    <p>Thanks, we are trying to push as much as we can with the smaller models, as some tasks do not need such large models.</p>\n   </blockquote>\n   <p>IBM Research highlights that Granite-Docling’s benchmark results on standard document understanding datasets show consistent improvements across accuracy, structural fidelity, and layout retention. The Hugging Face model card includes full performance data, where Granite-Docling matches or exceeds larger proprietary systems on metrics like table structure recognition and equation parsing, while maintaining sublinear memory use.</p>\n   <p>At the core of Granite-Docling’s performance is DocTags, a structured markup format that describes every page element — including tables, charts, code, forms, and captions — along with their spatial and logical relationships. This explicit tagging allows the model to separate content from structure, producing outputs that are compact, machine-readable, and easily convertible to formats such as Markdown, JSON, or HTML.</p>\n   <p>The model also introduces experimental multilingual support for Arabic, Chinese, and Japanese, expanding beyond the English-only scope of its predecessor. While these capabilities are still early-stage, IBM notes that global language coverage will be a central goal in future releases.</p>\n   <p>Granite-Docling is intended to complement the Docling library, which provides customizable document-conversion pipelines and agentic AI integration. Used together, the library and the model combine high accuracy with flexible orchestration for enterprise document workflows.</p>\n   <p>IBM says upcoming work will include larger Granite-Docling models (up to 900M parameters), expanded evaluation datasets through Docling-eval, and deeper integration of DocTags within IBM watsonx.ai.</p>\n   <p>Granite-Docling-258M is available now on <a href=\"https://huggingface.co/ibm-granite/granite-docling-258M\">Hugging Face</a> under Apache 2.0.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"IBM Releases Granite-Docling-258M, a Compact Vision-Language Model for Precise Document Conversion\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/granite-docling-ibm/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759949100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "IBM 推出 Granite-Docling-258M，这是一款精简的开源视觉语言模型，用于高精度文档到文本的转换，可保留复杂的布局和结构。",
+  "oneSentenceSummary": "IBM 推出 Granite-Docling-258M，这是一款精简的开源视觉语言模型，用于高精度文档到文本的转换，可保留复杂的布局和结构。",
+  "summary": "IBM 研究院发布了 Granite-Docling-258M，这是一款专门为精确的文档到文本转换而设计的开源视觉语言模型 (VLM)。与传统的 OCR 不同，该模型优先保留复杂的文档结构，包括表格、公式和代码块。该模型仅有 2.58 亿个参数，但其准确性可与更大的模型相媲美。这显著降低了成本并提高了效率，使其非常适合设备上使用以及集成到 RAG 管道中。该模型基于 Granite 3 架构，并配备了升级的视觉编码器，从而解决了之前的稳定性问题。其核心创新在于 DocTags，这是一种结构化标记格式，可将内容与结构分离。这使得输出结果易于转换为 Markdown 或 JSON 等格式，并具有良好的机器可读性。Granite-Docling 还具有实验性的多语言支持，旨在补充 Docling 库，以用于企业文档工作流程。该模型已在 Hugging Face 上以 Apache 2.0 许可发布。未来计划包括开发更大的模型，并与 IBM watsonx.ai 进行更深入的集成。",
+  "mainPoints": [
+    {
+      "point": "Granite-Docling-258M 提供高精度文档转换，并具有卓越的效率。",
+      "explanation": "该模型仅有 2.58 亿个参数，可在显著降低计算成本的同时，与更大的系统相媲美，并支持设备上应用。这对于资源受限的环境来说是一个关键优势。"
+    },
+    {
+      "point": "该模型擅长保留复杂的文档结构，这对于高级 AI 应用至关重要。",
+      "explanation": "除了纯文本之外，Granite-Docling 还可以使用其 DocTags 格式准确保留表格、公式和代码块的布局。这使得输出结果非常适合 RAG 管道和结构化数据提取。"
+    },
+    {
+      "point": "Granite-Docling 是一种开源解决方案，有望得到广泛采用和集成。",
+      "explanation": "它以 Apache 2.0 许可发布，并在 Hugging Face 上提供。它补充了 Docling 库，从而为企业文档工作流程提供了一种灵活、高精度的工具，并促进了社区驱动的创新。"
+    }
+  ],
+  "keyQuotes": [
+    "与依赖大型通用模型的典型 OCR 系统不同，Granite-Docling 专为文档解析而构建。",
+    "0.3B？太棒了！感觉即使是低端手机，未来也能进行可靠的本地 LLM 推理。",
+    "DocTags 是 Granite-Docling 性能的核心，它是一种结构化标记格式，用于描述每个页面元素——包括表格、图表、代码、表单和标题——以及它们在空间和逻辑上的关系。",
+    "Granite-Docling-258M 现已在 Hugging Face 上以 Apache 2.0 许可提供。"
+  ],
+  "tags": [
+    "视觉语言模型",
+    "文档理解",
+    "OCR",
+    "轻量级AI",
+    "IBM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 431,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759949100000,
+  "publishDateStr": "2025-10-08",
+  "publishDateTimeStr": "2025-10-08 18:45:00"
+}

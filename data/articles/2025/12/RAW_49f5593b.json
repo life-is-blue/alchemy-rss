@@ -1,0 +1,59 @@
+{
+  "id": "RAW_49f5593b",
+  "title": "微信杂谈：AI 产品 & 品味",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491045&idx=1&sn=1704f5e78c43674565918487e2d1263e",
+  "date": "2025-12-11 08:00:00",
+  "author": "浮之静",
+  "siteName": "浮之静",
+  "content": "<html>\n <head></head>\n <body>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100007393\" class=\"rich_pages wxw-img js_insertlocalimg\" data-ratio=\"0.5578125\" data-s=\"300,640\" data-type=\"png\" data-w=\"1280\" style=\"width:100%;\" type=\"block\" data-backw=\"578\" data-backh=\"322\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=5d14012d&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F90Kxd0FAJJckyzAZ7Fcz8kNQJYcf59T13T5UibEg0wsrXBS7sUg92uzVOKqfFSqpytns9DsVbQVGKia0Jny0Nzzw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0px;margin-bottom: 16px;text-align: left;\"><span leaf=\"\">前段时间，高强度写了&nbsp;<a class=\"normal_text_link\" target=\"_blank\" style=\"\" href=\"https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&amp;mid=2247491010&amp;idx=1&amp;sn=4a2dc0ef22832ea003bb0192b2f2f6d4&amp;scene=21#wechat_redirect\" textvalue=\"深度思考：聊聊 AI 发展趋势\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\"><span textstyle=\"\" style=\"font-style: italic;text-decoration: underline;\">深度思考：聊聊 AI 发展趋势</span></a>、<a class=\"normal_text_link\" target=\"_blank\" style=\"\" href=\"https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&amp;mid=2247491031&amp;idx=1&amp;sn=8f2b6a5fa50f09a926d791eb5b76a72e&amp;scene=21#wechat_redirect\" textvalue=\"AI 编程生态：Anthropic 收购 Bun 意味着什么？\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\"><span textstyle=\"\" style=\"font-style: italic;text-decoration: underline;\">AI 编程生态：Anthropic 收购 Bun 意味着什么？</span></a>&nbsp;两篇万字长文，让我一点写作的欲望都没了。</span></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0;margin-bottom: 16px;\" data-pm-slice=\"0 0 []\"><span leaf=\"\">评论区、微信群也有些朋友反馈说没看懂。这对作者来说并不是好事，证明我并没有把一件事讲清楚（可能也是我需要思考改进的点）。但文章的理解度往往是和信息密度挂钩的，和排版、表达方式关系不大。这或许也是为啥论文难读的原因吧，有太多术语需要自己去补充理解。我写文章最痛苦的点也在于此，自己写出来的任何一个术语，先要确保自己了解（哪怕只是简单搜一下名词解释）…</span></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0px;margin-bottom: 16px;text-align: left;\"><span leaf=\"\">最近在 Noi 群里聊了一些关于产品 &amp; 品味的话题，就想做个简单整理：</span></p>\n  <ul style=\"font-size: 15px;box-sizing: border-box;margin-top: 0;margin-bottom: 16px;padding-left: 2em;\" class=\"list-paddingleft-1\">\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">agent 也只是当下使用 ai 的一种形式，形式可能会淘汰（比如大模型迭代），但底层的能力不会，应该去关注更本质的东西。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">像 mcp、skills，包括之前的微调，其实都是在发挥模型自身的潜力，或者给模型接外挂。不管是 agent、mpc、还是 skills 都是在调用工具，或者说是编排任务。所以目前大部分 ai 类应用都在围绕工具、任务编排在做各种工作流。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">ai 产品形式虽然多样，但本质上趋同，都在试图解决某类垂直领域问题。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">Computer Use Agent (CUA)：这类任务常牵扯到系统权限，所以很多大厂都在搞 app 或 browser。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">浏览器层出不穷，chat bot 层出不穷，但有趣的 idea，能够一眼打动人的似乎没多少。感觉都在做大体相同，细节稍微有点差异的东西（可能是在做品味或体验）。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">agentOS（豆包手机）动的利益链太大了，短期内很难有所突破。最大的问题还是安全与信任。它的愿景是好的，但过于垄断了，在系统层面几乎可以干掉 99% 的应用，不好用或者安全出了问题也没法及时切换…</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">目前 agent 总给人说不上来的感觉，就比如我在用 codex 解决问题时，agent 时不时会查看无关上下文，或在某个问题上固执己见，犟得跟驴一样，然后陷入死循环。自动化链路越长，跑偏或崩溃的风险也愈高…</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">最近和人聊到 ai 产品，在 vibe coding 大行其道的今天，其实想做出让人眼前一亮的产品，就是需要靠品味和细节来打动人。因为你能做的事情，ai 基本都能做，但是品味这个东西，只可意会不可言传，ai 很难去平衡这个度。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">感觉开发产品还是要克制，什么都搞，最终会变成四不像。最理想状态是支持插件系统，通过插件来拓展生态位。就像 raycast 核心是快捷键、vscode 核心是 ide、obsidian 核心是笔记，但插件让它们不再是单纯的快捷键、ide、笔记。回过头看，似乎很多产品都是在这样玩（</span></span><span style=\"font-size: 15px;box-sizing: border-box;\"><strong style=\"font-size: 15px;box-sizing: border-box;font-weight: 600;\"><span leaf=\"\">产品 = 平台基座 + 插件生态</span></strong><span leaf=\"\">）。</span></span></li>\n  </ul>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100007394\" class=\"rich_pages wxw-img\" data-ratio=\"1.247282608695652\" data-s=\"300,640\" data-type=\"png\" data-w=\"736\" style=\"width:100%;\" type=\"block\" data-backw=\"578\" data-backh=\"721\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=44545b89&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F90Kxd0FAJJckyzAZ7Fcz8kNQJYcf59T1IVHgx8x8BJ0IO51k153U2ohOlPVibAteMe9iaA9t0Tux0Ltibs02s90pg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0px;margin-bottom: 16px;text-align: left;\"><span leaf=\"\">当下，我认为：</span><strong style=\"font-size: 15px;box-sizing: border-box;font-weight: 600;\"><span leaf=\"\">AI coding 与程序员最大的区别可能就剩品味了，而且这个趋势会越来越明显…</span></strong></p>\n  <p style=\"font-size: 15px;box-sizing: border-box;margin-top: 0px;margin-bottom: 16px;text-align: left;\"><span leaf=\"\">关于 AI 品味，我朋友圈有个人评论说它本质就是 ai prompt（独立人格 + 演员。表演任何人格，称理论上 ai 的演员人格可以被人类的各种审美所代替）。这个观点我并不太认可，原因主要有两点：</span></p>\n  <ol style=\"font-size: 15px;box-sizing: border-box;margin-top: 0;padding-left: 2em;margin-bottom: 0;\" class=\"list-paddingleft-1\">\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">其实并不能简单划等号，ai 人格可以理解为一种独立人格，但人与人之间的品味，也是不同的。即使亲如兄弟，思想也会存在隔阂，这并不是简单的映射或复刻关系。</span></span></li>\n   <li style=\"font-size: 15px;box-sizing: border-box;word-break: break-all;margin-top: .25em;\"><span style=\"font-size: 15px;box-sizing: border-box;\"><span leaf=\"\">ai 对人脑的模仿可能 5% 都没有，知识量大并不代表真正智能。如果什么都可以模仿，现在已经没有人类什么事了（这让我想起了 Ilya 之前播客里提到的“情绪价值函数”，它不是简单的对错运算，而是一些感性的东西在帮你做决策。查看原文<a class=\"normal_text_link\" target=\"_blank\" style=\"\" href=\"https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&amp;mid=2247490982&amp;idx=1&amp;sn=c3753b07e27a9d5093ee3dc3a81b4fd9&amp;scene=21#wechat_redirect\" textvalue=\"Ilya Sutskever：AI 研究、泛化与未来之路\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\"><span textstyle=\"\" style=\"font-style: italic;text-decoration: underline;\">Ilya Sutskever：AI 研究、泛化与未来之路</span></a>）...</span></span></li>\n  </ol>\n </body>\n</html>",
+  "aiSummary": "文章探讨了 AI 产品开发的核心问题，强调 AI 产品应关注底层能力而非形式，并通过“平台基座+插件生态”模式克制开发，同时指出 AI 与人类最大的区别在于“品味”。",
+  "oneSentenceSummary": "文章探讨了 AI 产品开发的核心问题，强调 AI 产品应关注底层能力而非形式，并通过“平台基座+插件生态”模式克制开发，同时指出 AI 与人类最大的区别在于“品味”。",
+  "summary": "作者通过对近期 AI 领域思考的整理，提出了 AI 产品开发的几个核心观点。他认为，AI 产品应专注于底层能力和任务编排，而非当前 Agent 等可能被迭代的形式。同时，文章强调了在 AI 产品同质化背景下，“品味”和细节的重要性，认为 AI 目前难以模仿人类的感性与品味。作者提倡产品开发应克制，通过“平台基座+插件生态”模式来拓展功能，避免“四不像”，并进一步提出 AI 编码与程序员最大的区别在于“品味”的生成。",
+  "mainPoints": [
+    {
+      "point": "AI 产品应关注底层能力和任务编排，而非表层形式，以应对技术快速迭代。",
+      "explanation": "Agent、MPC、Skills 等仅是 AI 应用的一种形式，其底层核心都是调用工具与编排任务，因此应聚焦不变的底层能力，而非易被淘汰的形式。"
+    },
+    {
+      "point": "在 AI 产品同质化竞争中，“品味”与细节成为打动用户的关键。",
+      "explanation": "随着 AI 技术普及，大家能做的事情趋同，用户体验和产品细节所体现的“品味”成为区分产品、赢得用户青睐的核心差异点。"
+    },
+    {
+      "point": "产品开发应克制，采用“平台基座+插件生态”模式构建可扩展系统。",
+      "explanation": "避免功能臃肿导致“四不像”，通过核心平台提供基础能力，并通过插件系统拓展生态位，实现灵活性和可持续发展。"
+    },
+    {
+      "point": "AI 与程序员的最大区别在于“品味”，AI 难以真正模仿人类的感性决策。",
+      "explanation": "AI 虽拥有海量知识，但在审美、感性决策及真正智能方面与人类存在根本差异，例如 Ilya 提到的“情绪价值函数”是 AI 难以模拟的。"
+    }
+  ],
+  "keyQuotes": [
+    "agent 也只是当下使用 ai 的一种形式，形式可能会淘汰（比如大模型迭代），但底层的能力不会，应该去关注更本质的东西。",
+    "感觉开发产品还是要克制，什么都搞，最终会变成四不像。最理想状态是支持插件系统，通过插件来拓展生态位。",
+    "产品 = 平台基座 + 插件生态",
+    "AI coding 与程序员最大的区别可能就剩品味了，而且这个趋势会越来越明显...",
+    "ai 对人脑的模仿可能 5% 都没有，知识量大并不代表真正智能。"
+  ],
+  "tags": [
+    "AI产品设计",
+    "Agent",
+    "产品品味",
+    "插件生态",
+    "产品开发策略"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1313,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_557f42",
+  "sourceName": "浮之静",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765440000000,
+  "publishDateStr": "2025-12-11",
+  "publishDateTimeStr": "2025-12-11 08:00:00"
+}

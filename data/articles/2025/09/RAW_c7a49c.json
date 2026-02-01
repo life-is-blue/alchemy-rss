@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c7a49c",
+  "title": "马斯克周末血裁 xAI 500 人",
+  "url": "https://www.qbitai.com/2025/09/333071.html",
+  "date": "2025-09-17 09:31:45",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-arrow-right\" data-track=\"67\">Jay 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"68\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">什么情况，帮马斯克训练大模型的人说失业就失业了？</p>\n  <p data-track=\"3\">上周四晚，xAI内部上演了一场突袭测试，还要求员工必须在第二天早上之前完成并提交。</p>\n  <p data-track=\"4\">这可不是一次简单的随堂测试——</p>\n  <p data-track=\"5\">截至目前，本次xAI内部测试的淘汰率高达33%，已有<strong>超过500名员工</strong>被通知卷铺盖走人。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_bee0ec16a3b43361f963750e501cb980.jpeg\" data-src=\"https://image.jido.dev/20250917100826_bee0ec16a3b43361f963750e501cb980.jpeg\">\n  </div>\n  <p data-track=\"7\">数据标注团队曾是xAI最大的团队，在Grok的开发过程中发挥了关键作用。他们的工作是标记、分类并将原始数据置于特定语境中，从而教会AI如何更好地理解世界。</p>\n  <p data-track=\"8\">自xAI成立以来，数据标注团队的规模一直在持续增长。</p>\n  <p data-track=\"9\"><strong>与大多数人工智能公司不同，xAI的许多数据标注员都是直接聘请的，而非外包</strong>。通过这种方式，可以让公司对模型训练拥有更多的控制权，更好的隐私。</p>\n  <p data-track=\"10\">但相应的，成本也更高。</p>\n  <p data-track=\"11\">今年2月份，xAI披露计划雇用数千人来帮助训练Grok，并在半年内新增了约700名数据标注员。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_bfe72945c60d7cefd7c4135d9b687853.jpeg\" data-src=\"https://image.jido.dev/20250917100826_bfe72945c60d7cefd7c4135d9b687853.jpeg\">\n  </div>\n  <p data-track=\"12\">然而9月初，Linkedin页面显示，负责管理数据标注团队的十几名经理中，<strong>至少已有9位被解雇</strong>。</p>\n  <p data-track=\"13\">这次不太寻常的人事变动，为即将到来的剧烈动荡埋下了种子。</p>\n  <p data-track=\"14\">之后一段时间内，xAI开始与数据标注团队的部分员工开展<strong>一对一的谈话</strong>。</p>\n  <p data-track=\"15\">在交流过程中，这些员工被要求展示他们的工作成果以及他们能如何为xAI创造价值。</p>\n  <p data-track=\"16\">山雨欲来风满楼，据部分员工表示，这一系列约谈在xAI内部营造了一种“恐慌感”。</p>\n  <p data-track=\"17\">不出所料，上周四晚，xAI在Slack<em>（一个类似于飞书的团队协作工具）</em>上发布了公告：</p>\n  <blockquote>\n   <p data-track=\"18\">请部分员工放下手头工作，在明早之前至少参加一次测试，以确定你们未来在公司的角色。</p>\n  </blockquote>\n  <p data-track=\"19\">据悉，测试涵盖了传统领域，如STEM、编程、金融和医学，也包括一些较为另类的方向，比如Grok的“个性与模型行为”以及“段子手和沉迷刷屏者”。</p>\n  <p data-track=\"20\">除此之外，还有面向提升chatbot安全性的测试。</p>\n  <p data-track=\"21\">公告发布后，超过100名员工在Slack上表示不解，一名员工直言对测试的时间安排感到不满。</p>\n  <blockquote>\n   <p data-track=\"22\">在人们下班回家后做这种事，真是见不得人。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_ccff9c5ed6187cebb2bb670bfbc6249f.jpeg\" data-src=\"https://image.jido.dev/20250917100826_ccff9c5ed6187cebb2bb670bfbc6249f.jpeg\">\n  </div>\n  <p data-track=\"23\">可反抗并没有起到什么作用，更没有阻止噩耗传来——</p>\n  <p data-track=\"24\">测试结束不久，周五晚，许多数据标注员收到了解雇邮件，宣告其在xAI的旅途到此结束。</p>\n  <p data-track=\"25\">解雇邮件中这样写道：</p>\n  <blockquote>\n   <p data-track=\"26\">在全面审查了我们的人力数据工作后，我们决定加快数据标注员的扩张和优先级排序，同时减少对普通AI数据标注员职位的关注。\n    <br class=\"sysbr\">\n    这一战略转变将立即生效。作为此次重点转变的一部分，我们不再需要大多数普通数据标注员职位，您在xAI的雇佣关系也将终止。</p>\n  </blockquote>\n  <p data-track=\"27\"><em>（ps：xAI的数据标注团队主要由两部分组成：一部分是负责STEM、编程、金融、法律和媒体等垂直领域的专业数据标注员；另外很大一部分是负责视频标注、音频标注、写作等任务的通用数据标注员。）</em></p>\n  <p data-track=\"28\">根据Slack聊天室上的人数统计，数据标注团队的成员已从1500名下滑至1000多人，即接近三分之一的员工被裁。</p>\n  <p data-track=\"29\">与之形成鲜明对比的，是xAI的全新招聘启事：</p>\n  <p data-track=\"30\">该公司计划将<strong>专业数据标注员的规模扩展现有基础上的10倍</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_43d18259440c4db8e403224245984162.jpeg\" data-src=\"https://image.jido.dev/20250917100826_43d18259440c4db8e403224245984162.jpeg\">\n  </div>\n  <p data-track=\"32\">长期以来，人们一直认为数据越多越好。</p>\n  <p data-track=\"33\">然而，此次xAI从通用数据标注员向专业数据标注员的大角度倾斜，可能反映出马斯克恰恰押注于相反的观点——<strong>质量重于数量</strong>。</p>\n  <p data-track=\"34\">这样做的好处是，可以提升Grok在特定领域的能力和可信度。</p>\n  <p data-track=\"35\">但缺点也很明显，依赖较小的专家库可能会限制模型看到的数据的多样性，人工智能系统依赖于多样性而蓬勃发展，过度缩小训练数据可能会带来盲点。</p>\n  <p data-track=\"36\">对模型厂商来说，重点在于<strong>如何在约束条件改变的情况下，重新在质与量之间找到新的平衡</strong>。</p>\n  <p data-track=\"37\">自互联网上的高质量语料消耗殆尽后，Scaling Law迎来边际效应递减的拐点，模型训练成本快速攀升，大模型的发展也随之进入平台期。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_31b64396cee92b98e358320951df416d.jpeg\" data-src=\"https://image.jido.dev/20250917100826_31b64396cee92b98e358320951df416d.jpeg\">\n  </div>\n  <p data-track=\"38\">此外，通用模型虽然具备更强的广度，但在金融、医疗、法律等行业，参数量相对较小的垂直模型反而更容易保证准确性与合规性。</p>\n  <p data-track=\"39\">在此背景下，过去想象中大一统通用模型的画像越来越模糊，垂直场景却百花齐放。</p>\n  <p data-track=\"40\">马斯克或许正是看中了这一点。</p>\n  <p data-track=\"41\">因此，这次xAI裁员可能并非一次简单的团队重组，而是瞄准垂直行业AI蓝海而下的一笔巨额赌注。</p>\n  <p data-track=\"42\">如果成功，Grok有望在行业垂直应用领域建立优势。</p>\n  <p data-track=\"43\">但若失败，硅谷钢铁侠之队可能会在Scaling Law这条赛道上失速，被OpenAI和Anthropic甩在身后。</p>\n  <p data-track=\"45\">众所周知，马斯克如此大刀阔斧地拆解公司团队并不是新鲜事。</p>\n  <p data-track=\"46\">在Model 3产能地狱时期，愤怒老马2年内便裁掉了7000多人，这还仅仅是特斯拉公开披露的数字。</p>\n  <p data-track=\"47\">那段时间，除非迫不得已，特斯拉员工不会轻易经过马斯克的办公桌，以免引起老马的注意，一个不小心就危及他们的职业生涯。</p>\n  <p data-track=\"48\">曾深受其害的特斯拉员工们甚至专门为此创造了一个术语——<strong>Elon的愤怒解雇</strong>。</p>\n  <p data-track=\"49\">这个技能，马斯克从特斯拉到，再到现在的xAI，都在持续释放。</p>\n  <p data-track=\"50\">2022年，老马刚接手Twitter的时同样开启了“愤怒Elon”模式，不到一周时间就开掉了3700名Twitter老员工，一度使得Twiiter多个部门瘫痪。</p>\n  <p data-track=\"51\">马斯克为什么这么喜欢开人？</p>\n  <p data-track=\"52\">这与他的<strong>硬核理念</strong>密不可分——</p>\n  <p data-track=\"53\"><strong>喜欢带领精悍的团队作战，格外强调性能与效率，受不了高强度工作或者拿不出成绩就滚蛋</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_cb2e060bdffb63dc4639e483f86402a5.jpeg\" data-src=\"https://image.jido.dev/20250917100826_cb2e060bdffb63dc4639e483f86402a5.jpeg\">\n  </div>\n  <p data-track=\"54\">具体来说，马斯克更喜欢技术能力较强的小团队，他坚决抵制扩大团队规模，认为规模较小但能力强且积极进取的团队通常比规模大得多的团队表现更好，主要有3点理由：</p>\n  <p data-track=\"55\">第一，小团队能调动的人力资源更少，反而会因此变得更有创意、更贪婪、更忙碌。</p>\n  <p data-track=\"56\">第二，小团队几乎不需要中层管理人员，更方便拿到一手信息，沟通效率更高。</p>\n  <p data-track=\"57\">第三，小团队的运行速度更快，能大大缩短迭代周期。</p>\n  <p data-track=\"58\">而经过老马严选留下来的员工也并非永远安全。</p>\n  <p data-track=\"59\">马斯克非常强调性能与效率，对低绩效者的容忍度低，特斯拉前人工智能负责人Andrej Karpathy提到他有时候甚至要<strong>“fight to keep some people”</strong>。</p>\n  <blockquote>\n   <p data-track=\"60\">大多数硅谷公司都“宠爱”员工，而马斯克则倾向于“强迫”员工拼尽全力，表现不佳的人很快就会被从团队中除名，我需要很努力才能说服他让一些人留在团队中。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克周末血裁xAI 500人\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250917100826_f5211fe01d6e12c490e865a827820dec.jpeg\" data-src=\"https://image.jido.dev/20250917100826_f5211fe01d6e12c490e865a827820dec.jpeg\">\n  </div>\n  <p data-track=\"61\">2022年末，马斯克在午夜用电子邮件中向原Twitter员工发出了类似的最后通牒，“专注于硬核文化，否则，请带着遣散费离开”。</p>\n  <blockquote>\n   <p data-track=\"62\">展望未来，要构建突破性的Twitter 2.0并在竞争日益激烈的世界中取得成功，我们需要非常硬核，这意味着长时间高强度工作，只有出色的表现才能称得上是及格。</p>\n  </blockquote>\n  <p data-track=\"63\">但事实证明，这种方式的确有助于激发团队潜力。</p>\n  <p data-track=\"64\">所以这次xAI的裁员，会让Grok Great起来吗？</p>\n  <p data-track=\"65\">参考链接：\n   <br>\n   [1]https://economictimes.indiatimes.com/news/international/us/mass-layoffs-at-elon-musks-xai-500-data-workers-axed-as-grok-chatbot-faces-big-changes/articleshow/123870379.cms\n   <br>\n   [2]https://www.businessinsider.com/xai-management-shakeup-data-annotation-team-2025-9\n   <br>\n   [3]https://x.com/xai/status/1966677385056841884\n   <br>\n   [4]https://www.theguardian.com/technology/2025/may/05/elon-musk-doge-federal-government\n   <br>\n   [5]https://www.wired.com/story/elon-musk-tesla-life-inside-gigafactory/\n   <br>\n   [6]https://www.theverge.com/2022/11/16/23462026/elon-musk-twitter-email-hardcore-or-severance\n   <br>\n   [7]https://medium.com/the-low-end-disruptor/elon-musks-leadership-style-424343fe6cb3</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "xAI 近期裁撤超 500 名通用数据标注员，转向专注于高素质专业标注团队，反映了马斯克“质量重于数量”的 AI 训练策略，并可能押注垂直 AI 领域。",
+  "oneSentenceSummary": "xAI 近期裁撤超 500 名通用数据标注员，转向专注于高素质专业标注团队，反映了马斯克“质量重于数量”的 AI 训练策略，并可能押注垂直 AI 领域。",
+  "summary": "文章详细报道了马斯克旗下人工智能公司 xAI 近期的大规模裁员事件。上周四晚，xAI 突击测试员工，并导致超过 500 名通用数据标注员被解雇，淘汰率高达 33%。此前，xAI 曾直接聘请大量数据标注员，以期更好地控制模型训练和数据隐私，但成本较高。此次裁员伴随着 xAI 将专业数据标注员规模扩大 10 倍的计划，预示着其 AI 训练策略从“数量优先”转向“质量优先”，旨在提升 Grok 在特定领域的能力和可信度。文章分析认为，这可能是马斯克对垂直行业 AI 蓝海的一次巨大赌注，以应对高质量语料消耗殆尽和通用模型发展进入平台期的行业现状。同时，文章回顾了马斯克在特斯拉和 Twitter 的类似“愤怒解雇”历史，指出其偏爱精悍、高效团队的硬核管理理念，强调性能与效率。",
+  "mainPoints": [
+    {
+      "point": "xAI 大规模裁员通用数据标注员，转向专业化团队，体现 AI 训练策略转变",
+      "explanation": "xAI 解雇超 500 名通用标注员，并计划将专业标注员团队扩大 10 倍，表明其从追求数据数量转变为追求数据质量，以提升 Grok 在特定领域的能力。"
+    },
+    {
+      "point": "此次裁员是马斯克押注垂直 AI 蓝海市场的重要策略",
+      "explanation": "在大模型发展进入平台期、高质量语料稀缺背景下，xAI 此举旨在通过专业数据提升模型在特定行业的准确性和合规性，以期在垂直应用领域建立优势。"
+    },
+    {
+      "point": "马斯克一贯的硬核管理理念和对效率的极致追求是裁员的深层原因",
+      "explanation": "文章通过回顾马斯克在特斯拉和 Twitter 的裁员历史，揭示其偏爱精悍小团队、强调高强度工作和极致性能的领导风格，这与 xAI 此次裁员一脉相承。"
+    }
+  ],
+  "keyQuotes": [
+    "与大多数人工智能公司不同，xAI 的许多数据标注员都是直接聘请的，而非外包。",
+    "在全面审查了我们的人力数据工作后，我们决定加快数据标注员的扩张和优先级排序，同时减少对普通 AI 数据标注员职位的关注。",
+    "此次 xAI 从通用数据标注员向专业数据标注员的大角度倾斜，可能反映出马斯克恰恰押注于相反的观点------质量重于数量。",
+    "对模型厂商来说，重点在于如何在约束条件改变的情况下，重新在质与量之间找到新的平衡。",
+    "喜欢带领精悍的团队作战，格外强调性能与效率，受不了高强度工作或者拿不出成绩就滚蛋。"
+  ],
+  "tags": [
+    "xAI",
+    "马斯克",
+    "Grok",
+    "AI模型训练",
+    "数据标注"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2585,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758101505000,
+  "publishDateStr": "2025-09-17",
+  "publishDateTimeStr": "2025-09-17 09:31:45"
+}

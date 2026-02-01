@@ -1,0 +1,53 @@
+{
+  "id": "RAW_30cae8",
+  "title": "刚刚，2024 图灵奖颁给了强化学习之父 Richard Sutton 与导师 Andrew Barto",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-05-16",
+  "date": "2025-03-05 11:46:18",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote data-author-name=\"\" data-content-utf8-length=\"51\" data-source-title=\"\" data-type=\"2\" data-url=\"\">\n   <section>\n    <section>\n     强化学习先驱 Andrew Barto 与 Richard Sutton 获得今年的 ACM 图灵奖。\n    </section>\n   </section>\n  </blockquote>\n  <section>\n   人工智能学者，再次收获图灵奖！\n  </section>\n  <section>\n   <img data-imgfileid=\"503474388\" data-ratio=\"1.1742424242424243\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2366b189-25e3-451c-44e7-c339053c4200/public\" data-type=\"png\" data-w=\"1056\" data-original-style=\"\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/dd7945ea-8b8e-4af6-b1df-ae104c002228/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   刚刚，计算机学会（ACM）宣布了 2024 年的 ACM A.M. Turing Award（图灵奖）获得者：<strong>Andrew Barto</strong> 和 <strong>Richard Sutton</strong>。\n  </section>\n  <section>\n   他们都是对强化学习做出奠基性贡献的著名研究者，Richard Sutton 更是有「强化学习之父」的美誉。Andrew Barto 则是 Sutton 的博士导师。自 1980 年代起，两位学者在一系列论文中提出了强化学习的主要思想，还构建了强化学习的数学基础，并开发了强化学习的重要算法。两人合著的《<strong>Reinforcement&nbsp;Learning: An&nbsp;Introduction</strong>》一直是强化学习领域最经典的教材之一。&nbsp;\n  </section>\n  <section>\n   Andrew Barto 是马萨诸塞大学阿默斯特分校信息与计算机科学荣休教授。Richard Sutton 是阿尔伯塔大学计算机科学教授，同时也是 Keen Technologies 的研究科学家。\n  </section>\n  <section>\n   ACM 图灵奖常被称为「计算机领域的诺贝尔奖」，奖金为 100 万美元，由谷歌公司提供资金支持。该奖项以提出计算数学基础的英国数学家艾伦・图灵命名。\n  </section>\n  <section>\n   <strong>强化学习，当今 AI 突破的原点</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503474390\" data-ratio=\"0.9018518518518519\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb3a7624-623c-42b3-0a8f-42ac91b26e00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/6a822a00-4978-4d04-9e35-bee676d4a9c4/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   说起强化学习，我们可以想起最近引爆全球 AI 技术爆发的 DeepSeek R1，其中的强化学习算法 GRPO 赋予了大模型极强的推理能力，且不需要大量监督微调，是 AI 性能突破的核心。\n  </section>\n  <section>\n   再往前看，在围棋上超越人类的 AlphaGo 也是利用强化学习自我博弈训练出的策略。可以说最近的几次 AI 突破，背后总有强化学习的身影。\n  </section>\n  <section>\n   人工智能领域通常会比较关注智能体的构建 —— 即可以感知和行动的实体。更智能的智能体能够选择更好的行动方案。因此，想出比其他方案更好行动方案概念，对 AI 非常关键。借用自心理学和神经科学的「奖励」— 词，表示向智能体提供的与其行为质量相关的信号。强化学习（RL）是在这种信号下学习更成功行为的过程。\n  </section>\n  <section>\n   通过奖励学习的理念对动物训练师来说已有数千年历史。后来，艾伦・图灵 1950 年的论文《计算机械与智能》提出了「机器能思考吗？」的问题，并提出了基于奖励和惩罚的机器学习方法。\n  </section>\n  <section>\n   图灵报告说他进行了一些初步实验，Arthur Samuel 也在 1950 年代后期开发了一个能通过自我对弈学习的跳棋程序。但在接下来的几十年里，AI 的这一方向进展甚微。\n  </section>\n  <section>\n   直至 1980 年代初，受心理学观察的启发，Andrew Barto 和他的博士生 Richard Sutton 开始将强化学习作为一个通用问题框架进行构建。\n  </section>\n  <section>\n   他们借鉴了马尔可夫决策过程（MDP）提供的数学基础，在这个框架中，智能体在随机环境中做出决策，每次转换后收到奖励信号，并最大化其长期累积奖励。\n  </section>\n  <section>\n   与标准 MDP 理论假设智能体知道一切不同，RL 框架允许环境和奖励是未知的。RL 的最小信息需求，结合 MDP 框架的通用性，使 RL 算法可以应用于广泛的问题。\n  </section>\n  <section>\n   Andrew Barto 和 Richard Sutton 联手或者协同他人，都开发了许多 RL 基本算法。其中包括他们最重要的贡献 —— 时间差分学习（该算法为解决奖励预测问题取得了重要进展），以及策略梯度方法和使用神经网络作为表示学习函数的工具。他们还提出了结合学习和规划的智能体设计，展示了获取环境知识作为规划基础的价值。\n  </section>\n  <section>\n   同样有影响力的是他们的教科书《Reinforcement Learning: An Introduction》(1998)，它仍然是该领域的标准参考，被引用超过 79,000 次。这本书让数千名研究人员理解并为这一新兴领域做出贡献，至今仍激发着计算机科学领域的许多重要研究活动。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474391\" data-ratio=\"0.9585666293393057\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/833959df-8952-4c5e-c197-73d324c82d00/public\" data-type=\"png\" data-w=\"893\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/f306afd6-1b7b-4809-ba66-2bf1bb32310f/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   尽管 Barto 和 Sutton 的算法是数十年前开发的，但通过将强化学习与深度学习（由 2018 年图灵奖获得者 Bengio、Hinton、LeCun 开创）相结合，强化学习的实际应用已在过去十五年中取得重大进展。于是，深度强化学习技术应运而生。\n  </section>\n  <section>\n   强化学习最著名的例子是 AlphaGo 计算机程序在 2016 年和 2017 年战胜了顶级人类围棋选手。另一个近期重大成就是聊天机器人 ChatGPT。\n  </section>\n  <section>\n   ChatGPT 是一个经过两阶段训练得到的大型语言模型（LLM），其中第二阶段采用了一种名为「基于人类反馈的强化学习（RLHF）」的技术，其作用是可以让模型输出符合人类期望。\n  </section>\n  <section>\n   强化学习在许多其他领域也取得了成功，其中之一是机器人运动技能学习。通过强化学习，机器手可以学会操作物体和解决物理问题；并且这种学习过程可在模拟中完成，然后再迁移到现实世界。\n  </section>\n  <section>\n   强化学习适用的领域还包括网络拥堵控制、芯片设计、互联网广告、优化、全球供应链优化、改进聊天机器人的行为和推理能力，甚至改进矩阵乘法算法 —— 这是计算机科学中最古老的问题之一。\n  </section>\n  <section>\n   最后，强化学习还反过来助力了神经科学的发展 —— 强化学习正是受到了该学科的启发。最近的研究，包括 Barto 的研究成果，已经表明 AI 领域开发的某些强化学习算法可为涉及人类大脑中多巴胺系统的广泛发现提供最佳解释。\n  </section>\n  <section>\n   「Barto 和 Sutton 的工作展示了将多学科方法应用于我们领域长期挑战的巨大潜力，」ACM 主席 Yannis Ioannidis 解释道。「从认知科学和心理学到神经科学的研究领域启发了强化学习的发展，这为 AI 领域的一些最重要进展奠定了基础，并让我们更深入地了解大脑如何工作。Barto 和 Sutton 的工作不是我们已经超越的垫脚石。强化学习继续发展，并为计算和许多其他学科的进一步发展提供了巨大潜力。用我们领域最负盛名的奖项表彰他们是非常恰当的。」\n  </section>\n  <section>\n   「在 1947 年的一次演讲中，艾伦・图灵表示『我们想要的是一台能从经验中学习的机器』」，谷歌高级副总裁 Jeff Dean 指出。「Barto 和 Sutton 开创的强化学习直接回应了图灵的挑战。他们的工作是过去几十年 AI 进步的关键。他们开发的工具仍然是 AI 繁荣的中心支柱，带来了重大进步，吸引了大量年轻研究人员，并推动了数十亿美元的投资。RL 的影响将持续到未来。谷歌很荣幸赞助 ACM 图灵奖并表彰那些塑造了改善我们生活的技术的个人。」\n  </section>\n  <section>\n   <img data-imgfileid=\"503474392\" data-ratio=\"0.6916666666666667\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/24d3504e-911f-4312-4092-ba2bcf5e7300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/556714fb-efe0-4d98-ad93-d331f7210b36/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>个人背景</strong>\n  </section>\n  <section>\n   <strong>Andrew G. Barto</strong>\n  </section>\n  <section>\n   Andrew Barto 是马萨诸塞大学阿默斯特分校信息与计算机科学系荣誉退休教授。他于 1977 年作为博士后研究助理在马萨诸塞大学阿默斯特分校开始职业生涯，此后担任过多个职位，包括副教授、教授和系主任。Barto 在密歇根大学获得数学学士学位（优等），并在那里获得了计算机与通信科学的硕士和博士学位。\n  </section>\n  <section>\n   Barto 的荣誉包括马萨诸塞大学神经科学终身成就奖、IJCAI 研究卓越奖（Research Excellence Award）和 IEEE 神经网络学会先驱奖。他是电气和电子工程师协会（IEEE）会士和美国科学促进会（AAAS）会士。\n  </section>\n  <section>\n   <strong>Richard S. Sutton</strong>\n  </section>\n  <section>\n   Richard S. Sutton 是阿尔伯塔大学计算机科学教授、Keen Technologies（一家总部位于德克萨斯州达拉斯的通用人工智能公司）的研究科学家，以及阿尔伯塔机器智能研究所（Amii）的首席科学顾问。Sutton 从 2017 年到 2023 年是 DeepMind 的杰出研究科学家。在加入阿尔伯塔大学之前，他曾于 1998 年至 2002 年在新泽西州 Florham Park 的 AT&amp;T 香农实验室人工智能部门担任首席技术人员。\n  </section>\n  <section>\n   Sutton 与 Andrew Barto 的合作始于 1978 年，当时在马萨诸塞大学阿默斯特分校，Barto 是 Sutton 的博士和博士后导师。Sutton 在斯坦福大学获得心理学学士学位，在马萨诸塞大学阿默斯特分校获得计算机与信息科学的硕士和博士学位。\n  </section>\n  <section>\n   Sutton 的荣誉包括获得 IJCAI 研究卓越奖、加拿大人工智能协会终身成就奖和马萨诸塞大学阿默斯特分校的杰出研究成就奖。Sutton 是伦敦皇家学会会士、人工智能促进协会会士和加拿大皇家学会会士。\n  </section>\n  <section>\n   <em><sup>参考链接</sup></em>\n  </section>\n  <section>\n   <sup><em>https://x.com/TheOfficialACM/status/1897225672935735579</em></sup>\n  </section>\n  <section>\n   <em><sup>https://amturing.acm.org/</sup></em>\n  </section>\n </body>\n</html>",
+  "aiSummary": "2024 年图灵奖授予强化学习先驱 Andrew Barto 和 Richard Sutton，以表彰他们对强化学习理论、算法和应用的奠基性贡献。",
+  "oneSentenceSummary": "2024 年图灵奖授予强化学习先驱 Andrew Barto 和 Richard Sutton，以表彰他们对强化学习理论、算法和应用的奠基性贡献。",
+  "summary": "计算机学会（ACM）宣布 2024 年图灵奖授予 Andrew Barto 和 Richard Sutton，以表彰他们对强化学习领域的奠基性贡献。两位学者自 1980 年代起提出了强化学习的主要思想，构建了数学基础，并开发了重要算法。他们合著的《Reinforcement Learning: An Introduction》是该领域经典教材。**强化学习通过奖励机制学习优化策略**，在 AlphaGo 和 ChatGPT 等 AI 突破中发挥关键作用。Barto 和 Sutton 的工作结合了心理学、神经科学和计算机科学，为 AI 发展奠定了基础，并加深了对大脑工作原理的理解。",
+  "mainPoints": [
+    {
+      "point": "Barto 和 Sutton 奠定了强化学习的理论和算法基础",
+      "explanation": "两位学者提出了强化学习的主要思想，构建了数学基础，并开发了时间差分学习和策略梯度等重要算法。"
+    },
+    {
+      "point": "强化学习是当今 AI 突破的原点",
+      "explanation": "DeepSeek R1 和 AlphaGo 等 AI 技术突破都离不开强化学习算法的应用，强化学习在各个领域都取得了显著成就。"
+    },
+    {
+      "point": "强化学习促进了神经科学的发展",
+      "explanation": "AI 领域开发的强化学习算法为理解人类大脑中的多巴胺系统提供了新的视角和解释。"
+    }
+  ],
+  "keyQuotes": [
+    "我们想要的是一台能从经验中学习的机器",
+    "Barto 和 Sutton 开创的强化学习直接回应了图灵的挑战。",
+    "他们的工作是过去几十年 AI 进步的关键。"
+  ],
+  "tags": [
+    "图灵奖",
+    "强化学习",
+    "Andrew Barto",
+    "Richard Sutton",
+    "AI 算法"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 92,
+  "wordCount": 2747,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741175178000,
+  "publishDateStr": "2025-03-05",
+  "publishDateTimeStr": "2025-03-05 11:46:18"
+}

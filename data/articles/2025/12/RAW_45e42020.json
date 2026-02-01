@@ -1,0 +1,57 @@
+{
+  "id": "RAW_45e42020",
+  "title": "uv 何以如此之快",
+  "url": "https://simonwillison.net/2025/Dec/26/how-uv-got-so-fast/#atom-everything",
+  "date": "2025-12-26 23:43:15",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html\">How uv got so fast</a></strong>. Andrew Nesbitt provides an insightful teardown of why <a href=\"https://github.com/astral-sh/uv\">uv</a> is so much faster than <code>pip</code>. It's not nearly as simple as just \"they rewrote it in Rust\" - <code>uv</code> gets to skip a huge amount of Python packaging history (which <code>pip</code> needs to implement for backwards compatibility) and benefits enormously from work over recent years that makes it possible to resolve dependencies across most packages without having to execute the code in <code>setup.py()</code> using a Python interpreter.</p>\n   <p>Two notes that caught my eye that I hadn't understood before:</p>\n   <blockquote>\n    <p><strong>HTTP range requests for metadata.</strong> <a href=\"https://packaging.python.org/en/latest/specifications/binary-distribution-format/\">Wheel files</a> are zip archives, and zip archives put their file listing at the end. uv tries PEP 658 metadata first, falls back to HTTP range requests for the zip central directory, then full wheel download, then building from source. Each step is slower and riskier. The design makes the fast path cover 99% of cases. None of this requires Rust.</p>\n    <p>[...]</p>\n    <p><strong>Compact version representation</strong>. uv packs versions into u64 integers where possible, making comparison and hashing fast. Over 90% of versions fit in one u64. This is micro-optimization that compounds across millions of comparisons.</p>\n   </blockquote>\n   <p>I wanted to learn more about these tricks, so I fired up <a href=\"https://simonwillison.net/2025/Nov/6/async-code-research/\">an asynchronous research task</a> and told it to checkout the <code>astral-sh/uv</code> repo, find the Rust code for both of those features and try porting it to Python to help me understand how it works.</p>\n   <p>Here's <a href=\"https://github.com/simonw/research/tree/main/http-range-wheel-metadata\">the report that it wrote for me</a>, the <a href=\"https://github.com/simonw/research/pull/57\">prompts I used</a> and the <a href=\"https://gistpreview.github.io/?0f04e4d1a240bfc3065df5082b629884/index.html\">Claude Code transcript</a>.</p>\n   <p>You can try <a href=\"https://github.com/simonw/research/blob/main/http-range-wheel-metadata/wheel_metadata.py\">the script</a> it wrote for extracting metadata from a wheel using HTTP range requests like this:</p>\n   <p><code>uv run --with httpx https://raw.githubusercontent.com/simonw/research/refs/heads/main/http-range-wheel-metadata/wheel_metadata.py https://files.pythonhosted.org/packages/8b/04/ef95b67e1ff59c080b2effd1a9a96984d6953f667c91dfe9d77c838fc956/playwright-1.57.0-py3-none-macosx_11_0_arm64.whl -v</code></p>\n   <p>The Playwright wheel there is ~40MB. Adding <code>-v</code> at the end causes the script to spit out verbose details of how it fetched the data - <a href=\"https://gist.github.com/simonw/a5ef83b6e4605d2577febb43fa9ad018\">which looks like this</a>.</p>\n   <p>Key extract from that output:</p>\n   <pre><code>[1] HEAD request to get file size...\n    File size: 40,775,575 bytes\n[2] Fetching last 16,384 bytes (EOCD + central directory)...\n    Received 16,384 bytes\n[3] Parsed EOCD:\n    Central directory offset: 40,731,572\n    Central directory size: 43,981\n    Total entries: 453\n[4] Fetching complete central directory...\n    ...\n[6] Found METADATA: playwright-1.57.0.dist-info/METADATA\n    Offset: 40,706,744\n    Compressed size: 1,286\n    Compression method: 8\n[7] Fetching METADATA content (2,376 bytes)...\n[8] Decompressed METADATA: 3,453 bytes\n\nTotal bytes fetched: 18,760 / 40,775,575 (100.0% savings)\n</code></pre>\n   <p>The section of the report <a href=\"https://github.com/simonw/research/tree/main/http-range-wheel-metadata#bonus-compact-version-representation\">on compact version representation</a> is interesting too. Here's how it illustrates sorting version numbers correctly based on their custom u64 representation:</p>\n   <pre><code>Sorted order (by integer comparison of packed u64):\n  1.0.0a1 (repr=0x0001000000200001)\n  1.0.0b1 (repr=0x0001000000300001)\n  1.0.0rc1 (repr=0x0001000000400001)\n  1.0.0 (repr=0x0001000000500000)\n  1.0.0.post1 (repr=0x0001000000700001)\n  1.0.1 (repr=0x0001000100500000)\n  2.0.0.dev1 (repr=0x0002000000100001)\n  2.0.0 (repr=0x0002000000500000)\n</code></pre>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9227/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 `uv` 获得速度优势的秘诀：它主要依靠 HTTP 范围请求高效获取元数据和紧凑的版本表示，而非仅仅因为用 Rust 编写，从而超越了 `pip`。",
+  "oneSentenceSummary": "本文详细介绍了 `uv` 获得速度优势的秘诀：它主要依靠 HTTP 范围请求高效获取元数据和紧凑的版本表示，而非仅仅因为用 Rust 编写，从而超越了 `pip`。",
+  "summary": "本文解释了 `uv`（一个现代 Python 包安装器和解析器）为何能比 `pip` 实现显著更快的性能的深层技术原因。文章指出，其速度优势并非仅仅因为它用 Rust 编写，而是因为它战略性地规避了 `pip` 必须为向后兼容性而维护的大量 Python 打包遗留问题。作者进一步深入探讨了两个具体的优化点：巧妙地使用 HTTP 范围请求，无需完全下载即可从 Wheel 文件中高效获取元数据；以及采用紧凑的 `u64` 整数表示包版本，这极大地加快了版本比较和哈希处理。文章还提及作者如何利用一项 AI 研究任务来更好地理解甚至将这些概念移植到 Python 中，展示了 AI 在实际应用中的价值。",
+  "mainPoints": [
+    {
+      "point": "`uv` 的速度主要源于避免 Python 打包的历史包袱。",
+      "explanation": "与 `pip` 不同，`uv` 不需要维护与旧打包标准的向后兼容性，这使其能够利用现代打包技术，从而避免了执行 `setup.py` 脚本进行依赖解析。"
+    },
+    {
+      "point": "通过 HTTP 范围请求实现高效的元数据获取。",
+      "explanation": "`uv` 智能地使用 HTTP 范围请求来仅下载 `.whl` (Wheel) 文件的必要部分，特别是 ZIP 存档的中央目录，从而在不下载整个包的情况下提取元数据，极大减少了输入/输出。"
+    },
+    {
+      "point": "紧凑的 `u64` 整数表示优化了版本比较。",
+      "explanation": "`uv` 将百分之九十以上的包版本打包成一个 `u64` 整数，从而实现极快的数值比较和哈希处理以进行版本排序，这是一个微优化，在数百万次操作中显著影响性能。"
+    },
+    {
+      "point": "AI 是技术研究和理解的宝贵工具。",
+      "explanation": "作者有效地利用了一项由 AI 驱动的异步研究任务来分析代码、将 Rust 的功能移植到 Python 并生成报告，这展示了 AI 在深度技术调查中的实用性。"
+    }
+  ],
+  "keyQuotes": [
+    "认为 `uv` 速度快仅仅是因为“它被用 Rust 重写”，这种看法并不全面——`uv` 得以跳过大量的 Python 打包历史（`pip` 需要为向后兼容性实现这些），并极大地受益于近年来使大多数包的依赖解析成为可能的工作，而无需使用 Python 解释器执行 `setup.py` 中的代码。",
+    "`uv` 首先尝试 PEP 658 元数据，然后回退到对 ZIP 中央目录的 HTTP 范围请求，接着是完整 Wheel 下载，最后是从源代码构建。每一步都更慢、风险更大。这种设计使得快速路径覆盖了百分之九十九的情况。",
+    "`uv` 尽可能将版本打包成 `u64` 整数，使得比较和哈希处理速度快。超过百分之九十的版本可以放入一个 `u64` 中。这是一种微优化，在数百万次比较中不断累积。"
+  ],
+  "tags": [
+    "Python",
+    "包管理",
+    "uv",
+    "pip",
+    "性能优化"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 441,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766792595000,
+  "publishDateStr": "2025-12-26",
+  "publishDateTimeStr": "2025-12-26 23:43:15"
+}

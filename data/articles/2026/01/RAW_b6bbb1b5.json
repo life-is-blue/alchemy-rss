@@ -1,0 +1,54 @@
+{
+  "id": "RAW_b6bbb1b5",
+  "title": "jordanhubbard/nanolang",
+  "url": "https://simonwillison.net/2026/Jan/19/nanolang/#atom-everything",
+  "date": "2026-01-19 23:58:56",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://github.com/jordanhubbard/nanolang\">jordanhubbard/nanolang</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46684958\" title=\"Hacker News\">via</a>) Plenty of people have mused about what a new programming language specifically designed to be used by LLMs might look like. Jordan Hubbard (<a href=\"https://en.wikipedia.org/wiki/Jordan_Hubbard\">co-founder of FreeBSD</a>, with serious stints at Apple and NVIDIA) just released exactly that.</p>\n   <blockquote>\n    <p>A minimal, LLM-friendly programming language with mandatory testing and unambiguous syntax.</p>\n    <p>NanoLang transpiles to C for native performance while providing a clean, modern syntax optimized for both human readability and AI code generation.</p>\n   </blockquote>\n   <p>The syntax strikes me as an interesting mix between C, Lisp and Rust.</p>\n   <p>I decided to see if an LLM could produce working code in it directly, given the necessary context. I started with this <a href=\"https://github.com/jordanhubbard/nanolang/blob/main/MEMORY.md\">MEMORY.md</a> file, which begins:</p>\n   <blockquote>\n    <p><strong>Purpose:</strong> This file is designed specifically for Large Language Model consumption. It contains the essential knowledge needed to generate, debug, and understand NanoLang code. Pair this with <code>spec.json</code> for complete language coverage.</p>\n   </blockquote>\n   <p>I ran that using <a href=\"https://llm.datasette.io/\">LLM</a> and <a href=\"https://github.com/simonw/llm-anthropic\">llm-anthropic</a> like this:</p>\n   <pre><code>llm -m claude-opus-4.5 \\\n  -s https://raw.githubusercontent.com/jordanhubbard/nanolang/refs/heads/main/MEMORY.md \\\n  'Build me a mandelbrot fractal CLI tool in this language' \n  &gt; /tmp/fractal.nano\n</code></pre>\n   <p>The <a href=\"https://gist.github.com/simonw/7847f022566d11629ec2139f1d109fb8#mandelbrot-fractal-cli-tool-in-nano\">resulting code</a>... <a href=\"https://gist.github.com/simonw/7847f022566d11629ec2139f1d109fb8?permalink_comment_id=5947465#gistcomment-5947465\">did not compile</a>.</p>\n   <p>I may have been too optimistic expecting a one-shot working program for a new language like this. So I ran a clone of the actual project, copied in my program and had Claude Code take a look at the failing compiler output.</p>\n   <p>... and it worked! Claude happily grepped its way through the various <code>examples/</code> and built me a working program.</p>\n   <p>Here's <a href=\"https://gisthost.github.io/?9696da6882cb6596be6a9d5196e8a7a5/index.html\">the Claude Code transcript</a> - you can see it <a href=\"https://gisthost.github.io/?9696da6882cb6596be6a9d5196e8a7a5/page-001.html#msg-2026-01-19T23-43-09-675Z\">reading relevant examples here</a> - and here's <a href=\"https://gist.github.com/simonw/e7f3577adcfd392ab7fa23b1295d00f2\">the finished code plus its output</a>.</p>\n   <p>I've suspected <a href=\"https://simonwillison.net/2025/Nov/7/llms-for-new-programming-languages/\">for a while</a> that LLMs and coding agents might significantly reduce the friction involved in launching a new language. This result reinforces my opinion.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9251/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 探索了由 Jordan Hubbard 开发的新型 LLM 友好型编程语言 NanoLang，展示了 AI 智能体如何通过上下文感知调试来克服采用新语言的阻力。",
+  "oneSentenceSummary": "Simon Willison 探索了由 Jordan Hubbard 开发的新型 LLM 友好型编程语言 NanoLang，展示了 AI 智能体如何通过上下文感知调试来克服采用新语言的阻力。",
+  "summary": "本文评测了 NanoLang，这是一种由 FreeBSD 联合创始人 Jordan Hubbard 专门为 LLM 消费而设计的极简编程语言。NanoLang 具有明确的语法和强制性测试，并转译为 C 语言以保证性能。作者 Simon Willison 通过尝试使用 Claude 3.5 Opus 生成 Mandelbrot 分形 CLI 工具，测试了该语言的核心价值主张。虽然零样本提示未能生成可编译的代码，但 Willison 证明了 AI 智能体（Claude Code）可以通过自主分析项目文档和现有示例成功修复错误。这一实验为以下理论提供了概念验证：LLM 将显著降低进入新型专业编程语言的门槛。",
+  "mainPoints": [
+    {
+      "point": "NanoLang 的架构专门针对人类可读性和 AI 代码生成进行了优化。",
+      "explanation": "通过提供 MEMORY.md 文件和明确的语法，该语言旨在减少 LLM 在编写 C++ 或 Rust 等传统复杂语言时常见的幻觉和结构错误。"
+    },
+    {
+      "point": "AI 智能体可以有效解决新编程语言的“冷启动”问题。",
+      "explanation": "即使 LLM 在零样本生成中失败，能够读取本地文档和示例的智能体也可以自我纠正，并在不熟悉的语法中生成可运行的代码。"
+    },
+    {
+      "point": "由于 LLM 的能力，发布新语言的阻力正在降低。",
+      "explanation": "从历史上看，新语言由于缺乏生态系统和开发者熟悉度而难以普及；LLM 通过为任何具有充足上下文的语言充当即时专家，缓解了这一问题。"
+    }
+  ],
+  "keyQuotes": [
+    "一种具有强制性测试和明确语法的极简、LLM 友好型编程语言。",
+    "此文件专门为大语言模型消费而设计。它包含了生成、调试和理解 NanoLang 代码所需的必备知识。",
+    "我一直怀疑 LLM 和编程智能体可能会显著减少发布新语言所涉及的阻力。这一结果强化了我的观点。",
+    "Claude 愉快地通过 grep 搜索了各种示例，并为我构建了一个可以运行的程序。"
+  ],
+  "tags": [
+    "NanoLang",
+    "LLM 友好型语言",
+    "AI 编程智能体",
+    "转译器",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 287,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768867136000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 23:58:56"
+}

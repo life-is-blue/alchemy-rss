@@ -1,0 +1,54 @@
+{
+  "id": "RAW_29069f",
+  "title": "Pogocache：具有低延迟和多种网络协议的开源缓存软件",
+  "url": "https://www.infoq.com/news/2025/08/pogocache-caching/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-31 10:20:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A new open-source caching software, <a href=\"https://github.com/tidwall/pogocache\">Pogocache</a>, recently reached 1.0 general availability, focusing on low latency and CPU efficiency. Pogocache supports multiple popular protocols while claiming better throughput and lower latency than other open-source caching alternatives.</p>\n   <p>Started by <a href=\"https://x.com/tidwall\">Josh Baker</a>, creator of the geospatial database and geofencing server Tile38 and the TG geospatial library, Pogocache is written in C and runs as a server-based program. Pogocache <a href=\"https://pogocache.com/docs/commands\">supports</a> Memcache, Valkey/Redis, HTTP, and PostgreSQL wire protocols, allowing the use of system tools such as curl and psql, as well as third-party client libraries. According to the author, Pogocache is a fast caching solution optimized for <a href=\"https://news.ycombinator.com/item?id=44641971\">extremely low contention</a> and good memory locality. Baker writes:</p>\n   <blockquote>\n    <p>Pogocache is faster than Memcache, Valkey, Redis, Dragonfly, and Garnet. It has the lowest latency per request, providing the quickest response times. It's optimized to scale from one to many cores, giving you the best single-threaded and multithreaded performance.</p>\n   </blockquote>\n   <p>As with most caching solutions, the target use cases include session storage, database query caching, real-time data feeds, and API acceleration.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/08/pogocache-caching/news/2025/08/pogocache-caching/en/resources/1Screenshot 2025-08-30 at 21-31-02 graphs-dark.png (PNG Image 2000 × 1773 pixels) — Scaled (53%)-1756582442443.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/pogocache-caching/en/resources/1Screenshot 2025-08-30 at 21-31-02 graphs-dark.png (PNG Image 2000 × 1773 pixels) — Scaled (53%)-1756582442443.png\" rel=\"share\"><img alt=\"\" style=\"width:100%;height:941px;\" data-src=\"https://www.infoq.com/news/2025/08/pogocache-caching/news/2025/08/pogocache-caching/en/resources/1pogocache-1756582442443.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/pogocache-caching/en/resources/1pogocache-1756582442443.png\" rel=\"share\"></p>\n   <p><em><a href=\"https://github.com/tidwall/cache-benchmarks\">Performance</a> of Pogocache against other caching software running 8 threads on an AWS c8g.8xlarge.&nbsp;Source: Pogocache GitHub</em></p>\n   <p>The project includes a <a href=\"https://github.com/tidwall/pogocache/blob/main/README.md#design-details\">section with design details</a> that highlights a sharded hashmap inspired by the author’s <a href=\"https://github.com/tidwall/shardmap\">shardmap</a> project and significant improvements in thread handling. Pogocache stores entries (key-value pairs) in a sharded hash map that has a high fan-out, often with 4096 shards. The number of shards is automatically configured at startup, but can be changed by the user, with each shard having its own independent hashmap. That hashmap uses open addressing with Robin Hood hashing. Baker adds:</p>\n   <blockquote>\n    <p>Instead of running Pogocache as a server-based program, the self-contained pogocache.c file can be compiled into existing software, bypassing the network and directly accessing the cache programmatically. Running embedded provides raw speed, with over 100M ops per second.</p>\n   </blockquote>\n   <p>Pogocache determines the number of threads to use for the program's lifetime at startup, based on the machine's core count. <a href=\"https://www.linkedin.com/in/simonwillison/\">Simon Willison</a>, co-founder of Lanyrd and co-creator of the Django web framework, <a href=\"https://simonwillison.net/2025/Jul/21/pogocache/\">comments</a>:</p>\n   <blockquote>\n    <p>Performance aside, the most interesting thing about Pogocache is the server interface it provides: it emulates the APIs for Redis and Memcached, provides a simple HTTP API and lets you talk to it over the PostgreSQL wire protocol as well!</p>\n   </blockquote>\n   <p>On <a href=\"https://news.ycombinator.com/item?id=44638076\">Hacker News</a>, most feedback is positive, with some asking for more design details to support the performance claims. According to the documentation, the protocols are automatically detected, eliminating the need to manage multiple ports.</p>\n   <pre>\r\n<code class=\"language-bash\">psql -h localhost -p 9401\r\n=&gt; SET first Tom;\r\n=&gt; SET last Anderson;\r\n=&gt; SET age 37;\r\n\r\n$ curl http://localhost:9401/last\r\nAnderson</code></pre>\n   <p><em>Source: Simon Willison’s Weblog</em></p>\n   <p>On <a href=\"https://portallinuxferramentas.blogspot.com/2025/07/rewritten-article-pogocache-10-launches.html\">his blog</a>, Cezar Henrique da Costa e Souza warns:</p>\n   <blockquote>\n    <p>While the initial release and performance claims are undeniably exciting, the true test for Pogocache lies ahead. How will these benchmarks hold up under rigorous, independent scrutiny across varied production workloads? How quickly will the developer community embrace and contribute to the project?</p>\n   </blockquote>\n   <p>Pogocache's <a href=\"https://github.com/tidwall/pogocache/blob/main/README.md#roadmap-and-status\">roadmap</a> includes building domain-specific integrations for web, SQL, prompts, and geo, adding direct access over shared memory and IPC, and providing enterprise tooling such as distributed routing and failovers.</p>\n   <p>The <a href=\"https://github.com/tidwall/pogocache/releases/tag/1.1.0\">recently released version 1.1</a> adds automatic background sweeps of expired keys. Pogocache is open-source software licensed under the AGPLv3 license.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pogocache: Open Source Caching Software with Low Latency and Multiple Wire Protocols\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/pogocache-caching/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756635600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pogocache，一种新的基于 C 的开源缓存软件，通过支持多种网络协议和提供嵌入式集成来实现低延迟和高 CPU 效率，将其定位为一款高性能的缓存解决方案。",
+  "oneSentenceSummary": "Pogocache，一种新的基于 C 的开源缓存软件，通过支持多种网络协议和提供嵌入式集成来实现低延迟和高 CPU 效率，将其定位为一款高性能的缓存解决方案。",
+  "summary": "本文介绍了 Pogocache，这是一款由 Tile38 的创建者 Josh Baker 最近发布的 AGPLv3 许可的开源缓存软件。Pogocache 用 C 语言编写，优先考虑低延迟和 CPU 效率，声称与 Memcache、Valkey/Redis、Dragonfly 和 Garnet 等已建立的缓存解决方案相比，具有更高的吞吐量和响应时间。一个关键特性是它支持多种网络协议 —— Memcache、Valkey/Redis、HTTP 和 PostgreSQL —— 允许与各种客户端库和系统工具无缝集成，而无需管理多个端口。Pogocache 可以作为服务器运行，也可以直接嵌入到应用程序中，嵌入时提供每秒超过 1 亿次的操作。它的设计包含一个具有高扇出（例如，4096 个分片）的分片哈希表，灵感来自作者的 `shardmap` 项目，并优化了线程处理。常见的用例包括会话存储、数据库查询缓存、实时数据馈送和 API 加速。虽然 Hacker News 上最初的社区反馈大多是积极的，但有些人希望了解更多设计细节，并希望对性能声明进行独立验证。该项目的路线图包括特定领域的集成和企业工具，1.1 版本已经增加了自动过期密钥清理功能。",
+  "mainPoints": [
+    {
+      "point": "Pogocache 提供卓越的性能，具有极低的延迟和高 CPU 效率。",
+      "explanation": "该软件针对低资源竞争和良好的内存局部性进行了优化，声称在响应时间和跨多个内核的可扩展性方面优于 Memcache、Redis 等。"
+    },
+    {
+      "point": "它支持多种流行的网络协议，并且可以直接嵌入到应用程序中以实现最大速度。",
+      "explanation": "通过模拟 Memcache、Redis、HTTP 和 PostgreSQL API，它简化了集成。嵌入 `pogocache.c` 文件绕过了网络开销，实现了每秒超过 1 亿次的操作。"
+    },
+    {
+      "point": "Pogocache 具有分片哈希表设计，并具有雄心勃勃的未来增强功能路线图。",
+      "explanation": "它的核心设计使用具有许多独立分片的分片哈希表，灵感来自 `shardmap`。该路线图包括特定领域的集成和企业级功能，如分布式路由。"
+    }
+  ],
+  "keyQuotes": [
+    "Pogocache 比 Memcache、Valkey、Redis、Dragonfly 和 Garnet 更快。它具有每个请求的最低延迟，提供最快的响应时间。",
+    "无需将 Pogocache 作为基于服务器的程序运行，可以将独立的 pogocache.c 文件编译到现有软件中，绕过网络并以编程方式直接访问缓存。运行嵌入式提供原始速度，每秒超过 1 亿次操作。",
+    "除了性能之外，Pogocache 最有趣的地方在于它提供的服务器接口：它模拟了 Redis 和 Memcached 的 API，提供了一个简单的 HTTP API，并允许您通过 PostgreSQL 网络协议与它通信！",
+    "虽然最初的发布和性能声明无疑令人兴奋，但 Pogocache 的真正考验还在后面。这些基准测试在各种生产工作负载下，在严格的独立审查下将如何保持？"
+  ],
+  "tags": [
+    "缓存",
+    "开源",
+    "低延迟",
+    "多协议",
+    "键值存储"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 542,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756635600000,
+  "publishDateStr": "2025-08-31",
+  "publishDateTimeStr": "2025-08-31 10:20:00"
+}

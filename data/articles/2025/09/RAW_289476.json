@@ -1,0 +1,54 @@
+{
+  "id": "RAW_289476",
+  "title": "研究人员发现 GitHub “错误提交” 中泄露的数千个敏感信息",
+  "url": "https://www.infoq.com/news/2025/09/github-leaked-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-04 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Security researcher Sharon Brizinov, in collaboration with Truffle Security, has conducted a <a href=\"https://trufflesecurity.com/blog/guest-post-how-i-scanned-all-of-github-s-oops-commits-for-leaked-secrets\">sweeping investigation of GitHub's \"oops commits\"</a>, force-pushed or deleted commits that remain archived, and uncovered thousands of secrets left behind, including high-value tokens and admin-level credentials. The team also released an open-source tool to help others scan their own repositories for such hidden leakages.</p>\n   <p dir=\"ltr\"><a href=\"https://github.com/\">GitHub</a> retains every public commit, even those developers attempt to erase through force pushes, as \"zero-commit\" PushEvents in its archive. By scanning all of these dangling commits since 2020 using data from GitHub Archive, Brizinov discovered secrets that led to approximately $25,000 in bug bounty rewards, particularly exposing GitHub PATs and AWS credentials that could have led to wide-ranging supply-chain attacks.</p>\n   <p dir=\"ltr\">To empower the community, <a href=\"https://trufflesecurity.com/\">Truffle Security</a> and Brizinov co-developed the <a href=\"https://github.com/trufflesecurity/force-push-scanner\">Force Push Scanner</a>, an open-source tool that identifies and scans orphaned commits within your GitHub organization or user account. It mines the <a href=\"https://www.gharchive.org/\">GH Archive</a> dataset using BigQuery and applies <a href=\"https://trufflesecurity.com/trufflehog\">TruffleHog</a> scanning to uncover hidden secrets and vulnerabilities.</p>\n   <p dir=\"ltr\">The findings were staggering: a large volume of active secrets, such as MongoDB credentials and API tokens, were found in .env and common config files. One particularly alarming case involved a GitHub Personal Access Token with admin permissions over the <a href=\"https://istio.io/\">Istio </a>repositories, posing a massive potential for a supply-chain compromise, though the token was swiftly revoked following responsible disclosure.</p>\n   <p dir=\"ltr\">Community reaction highlights the broader implications: developers and security professionals noted that commits intended to be removed are often still accessible. <a href=\"https://www.reddit.com/r/netsec/comments/1lpa6z1/how_i_scanned_all_of_githubs_oops_commits_for\">One user commented</a>, \"There isn't a proven way to delete a commit once it leaves your machine... you have to assume it's permanently exposed\", underscoring the dangers of making assumptions about deletion.</p>\n   <p dir=\"ltr\">This research challenges the notion that force-pushed Git history is private. Any secret committed, even unknowingly, should be deemed compromised and immediately revoked. Truffle Security's Force Push Scanner adds instrumentation to detect lingering vulnerabilities from prior commits before they cause widespread damage.</p>\n   <p dir=\"ltr\"><a href=\"https://trufflesecurity.com/blog/guest-post-how-i-scanned-all-of-github-s-oops-commits-for-leaked-secrets\">To prevent secret leaks, developers should prioritize using secret management tools and environment variables instead of hardcoding credentials. Storing secrets in secure platforms like </a><a href=\"https://www.hashicorp.com/en/products/vault\">HashiCorp Vault</a>, <a href=\"https://aws.amazon.com/secrets-manager/\">AWS Secrets Manager</a>, or <a href=\"https://azure.microsoft.com/en-us/products/key-vault\">Azure Key Vault</a> ensures sensitive data never enters the codebase while providing centralized control over access. Alongside this, enforcing secret scanning at multiple stages, both locally with pre-commit hooks and in CI/CD pipelines, is critical. Tools like <a href=\"https://github.com/trufflesecurity/trufflehog\">TruffleHog</a>, <a href=\"https://github.com/gitleaks/gitleaks\">Gitleaks</a>, or <a href=\"https://github.com/Yelp/detect-secrets\">Detect Secrets</a> can detect exposed credentials early, and regular historical scans help uncover secrets hidden in older commits.</p>\n   <p dir=\"ltr\">When a secret is exposed, it should always be treated as compromised. Immediate revocation and rotation of credentials, ideally through automated processes or dynamic secret systems, minimizes the risk window. This should be paired with strict access controls guided by the principle of least privilege, ensuring developers and services only access the credentials they truly need. Additionally, enabling GitHub's push protection can prevent secrets from being committed in the first place, and history-cleaning tools like git filter-repo can be used cautiously when policy allows.</p>\n   <p dir=\"ltr\">Beyond tools and automation, creating a strong security culture is essential. Teams should be trained to recognize the risks of committing secrets and adopt safe handling practices, such as secure storage, regular scanning, and key rotation. By combining technical safeguards with cultural change, teams can significantly reduce the risk of secret exposure and make secure coding practices a default part of their workflows.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Researcher Unearths Thousands of Leaked Secrets in GitHub’s “Oops Commits”\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/github-leaked-secrets/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756987200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "一位研究人员在 GitHub 存档的“错误提交”中发现了数千个泄露的高价值敏感信息，并发布了一个开源工具来检测它们，强调了强大的敏感信息管理的关键需求...",
+  "oneSentenceSummary": "一位研究人员在 GitHub 存档的“错误提交”中发现了数千个泄露的高价值敏感信息，并发布了一个开源工具来检测它们，强调了强大的敏感信息管理的关键需求...",
+  "summary": "安全研究员 Sharon Brizinov 与 Truffle Security 合作，对 GitHub 的“错误提交”（即，即使开发者尝试通过强制推送删除提交，GitHub 仍然会将其作为零提交推送事件保存在其存档中）进行了全面调查。通过使用 GitHub Archive 数据系统地扫描自 2020 年以来所有此类公共提交，Brizinov 发现了数千个泄露的敏感信息，包括高价值令牌和管理员级别的凭据，如 GitHub 个人访问令牌 (PAT) 和 AWS 凭据，这些凭据可能导致广泛的供应链攻击。这项研究获得了约 25，000 美元的漏洞赏金奖励。为了增强社区的能力，Truffle Security 和 Brizinov 共同开发了开源 “Force Push Scanner” 工具，该工具利用 GH Archive 和 TruffleHog 来识别和扫描 GitHub 组织内隐藏漏洞的孤立提交。调查结果强调，一旦提交了敏感信息，即使试图删除它，也应被视为永久暴露并立即撤销。文章强烈主张采取预防措施，包括使用专门的密钥管理工具（例如，HashiCorp Vault，AWS Secrets Manager）、环境变量，并在多个阶段（提交前、CI/CD、历史扫描）强制执行敏感信息扫描。它还强调了立即撤销、最小权限访问以及培养强大的安全文化以减轻敏感信息暴露风险的重要性。",
+  "mainPoints": [
+    {
+      "point": "GitHub 的 “错误提交”（强制推送/删除）保留敏感数据，使其成为泄露敏感信息的重要来源。",
+      "explanation": "GitHub 存档所有公共提交，即使是那些打算删除的提交，也会产生暴露高价值凭据（如 API 密钥和管理员令牌）的持久风险，最近的一项调查中发现的数千个此类敏感信息就证明了这一点。"
+    },
+    {
+      "point": "Git 历史记录中泄露的敏感信息会带来严重的供应链风险，因此需要立即撤销和采取强有力的预防措施。",
+      "explanation": "暴露的凭据，即使在历史提交中，也可以授予对关键系统的未经授权的访问权限。这需要一个“视为已受损”的策略、快速撤销以及采用安全的密钥管理实践和持续扫描工具。"
+    },
+    {
+      "point": "有效的密钥管理包括安全存储、持续扫描和强大的安全文化，以防止和补救泄漏。",
+      "explanation": "开发人员必须优先使用专门的密钥管理工具，将敏感信息扫描集成到他们的开发工作流程中（提交前、CI/CD），并培养一种安全至上的心态，以显著降低敏感信息暴露的风险。"
+    }
+  ],
+  "keyQuotes": [
+    "一旦提交离开本地机器，便无法彻底删除，必须假定其已永久暴露",
+    "任何提交的敏感信息，即使是不知情的，也应被视为已受损并立即撤销。",
+    "为了防止敏感信息泄漏，开发人员应该优先使用密钥管理工具和环境变量，而不是硬编码凭据。",
+    "通过将技术保障与文化变革相结合，团队可以显著降低敏感信息暴露的风险，并使安全编码实践成为其工作流程的默认部分。"
+  ],
+  "tags": [
+    "GitHub Security",
+    "密钥管理",
+    "供应链安全",
+    "数据泄露",
+    "DevSecOps"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 553,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756987200000,
+  "publishDateStr": "2025-09-04",
+  "publishDateTimeStr": "2025-09-04 12:00:00"
+}

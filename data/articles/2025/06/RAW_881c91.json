@@ -1,0 +1,54 @@
+{
+  "id": "RAW_881c91",
+  "title": "微软开源 GitHub Copilot Chat 扩展",
+  "url": "https://www.infoq.com/news/2025/06/microsoft-oss--copilot-extension/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-01 00:00:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At its Build 2025 conference, Microsoft announced plans to <a href=\"https://code.visualstudio.com/blogs/2025/05/19/openSourceAIEditor\">open source over the next few months the code behind the GitHub Copilot Chat extension</a> under the MIT license and refactor core AI capabilities directly into the main VS Code codebase. The move, if completed, may affect the ability of current for-pay AI code editors to compete purely on features.</p>\n   <p>Microsoft cited several reasons for open-sourcing Copilot Chat. They noted the significant advancements in large language models, which have reduced the need for and value of proprietary prompting strategies. In fact, the company Anthropic <a href=\"https://docs.anthropic.com/en/release-notes/system-prompts\">regularly releases the system prompts for its Claude models</a>. Keeping prompts secret for long remains a challenging endeavor in the face of <a href=\"https://github.com/elder-plinius/CL4R1T4S\">community-led transparency efforts</a>. AI prompts can additionally be protected by copyright <a href=\"https://technophilosoph.com/en/2025/02/07/ai-prompts-and-output-can-be-protected-by-copyright-under-certain-circumstances/\">only under certain restrictive circumstances</a>. The same <a href=\"https://www.linkedin.com/pulse/do-prompts-used-ai-softwares-can-patented-has-ipr-ekata-deb-xbfic#:~:text=Technical%20Process%3A%20If%20a%20prompt,be%20eligible%20for%20patent%20protection.\">applies to patenting</a>.</p>\n   <p>Microsoft’s open-sourcing decision also <a href=\"https://code.visualstudio.com/blogs/2025/05/19/openSourceAIEditor\">addresses requests from extension authors</a> who needed tighter integration into VS Code than is currently offered by the public extension APIs. The Copilot Chat extension utilised VSCode's <a href=\"https://code.visualstudio.com/api/advanced-topics/using-proposed-api\" target=\"_blank\">Proposed APIs</a>, a set of unstable APIs implemented in VS Code but not exposed to the public as stable. Regular extension authors, on the other hand, <a href=\"https://github.com/microsoft/vscode-discussions/discussions/899\">were not able to publish extensions using the Proposed APIs</a> on the Visual Studio Code Marketplace.</p>\n   <p>The alternative was, as Cursor, Windsurf, et. al. did, to fork Visual Studio Code. As those forks grew in popularity and raised a significant amount of venture capital, Microsoft started to enforce its extension marketplace rules so that forks like Cursor could no longer fetch Microsoft-licensed extensions (e.g., <a href=\"https://github.com/microsoft/vscode-cpptools/blob/main/RuntimeLicenses/cpptools-LICENSE.txt\">C/C++ extension</a>). By moving the <a href=\"https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat\">Copilot Chat extension</a> to an MIT license, with its core features integrated into the <a href=\"https://github.com/microsoft/vscode\">VS Code core</a>, Microsoft may severely restrict the ability of forks with limited software development teams to compete purely on features against the broader community of extension authors.</p>\n   <p>Microsoft also quoted the need for <a href=\"https://techstartups.com/2025/05/19/microsoft-makes-visual-studio-code-vs-code-open-source-ai-editor-ushering-new-era-developer-tools/\">increased transparency regarding data collection and improved community-driven security</a> as driving factors for open-sourcing the extension.</p>\n   <p>This initiative positions VS Code to evolve beyond supporting AI extensions to becoming an “AI-native editor” by default.</p>\n   <p>Initial developer reactions on platforms like <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1kqhljr/vs_code_open_source_copilot/?rdt=61355\">Reddit</a>&nbsp;and <a href=\"https://news.ycombinator.com/item?id=44031344\">Hacker News</a> have shown general approval for the open-sourcing. Discussions often focus on the potential for <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1kqhljr/vs_code_open_source_copilot/?rdt=61355\">integrating local AI models</a>, the impact on the competitive editor landscape, and the potential for community contributions to the core AI features. The move is largely seen as a positive step for transparency and the broader developer tools ecosystem.</p>\n   <p>Visual Studio Code’s product manager <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1kqhljr/comment/mt5yb44/\">chimed in</a> on Reddit:</p>\n   <blockquote>\n    <p>(vscode pm here)<br>\n      We do want to open-source the Github Copilot suggestion functionality as well. The current plan is to move all that functionality to the open-source Copilot Chat extension (as step 2). Timeline - next couple of months.<br>\n      […] See the engineering plan <a href=\"https://github.com/microsoft/vscode/issues/249031\">here</a></p>\n   </blockquote>\n   <blockquote>\n    <p>Chat is compatible [with ollama]!</p>\n    <p>See <a href=\"https://code.visualstudio.com/docs/copilot/language-models#_bring-your-own-language-model-key\">https://code.visualstudio.com/docs/copilot/language-models#_bring-your-own-language-model-key</a></p>\n    <p>Suggestions are not yet compatible - if you want that, we have a feature request that you can upvote. I do want us to add this <a href=\"https://github.com/microsoft/vscode-copilot-release/issues/7690\">https://github.com/microsoft/vscode-copilot-release/issues/7690</a></p>\n   </blockquote>\n   <p>Microsoft made a flurry of announcements at its Build 2025 conference regarding future products and improvements on current products. The TypeScript team <a href=\"https://www.infoq.com/news/2025/05/new-typescript-compiler-10x-fast/\">has announced an experimental native port of the TypeScript compiler (tsc)</a>, aimed at providing a 10x improvement in build time, drastically reducing cold editor startup times, and substantially improving memory usage. <a href=\"https://www.infoq.com/news/2025/05/microsoft-edit-new-tui-editor/\">Microsoft</a> <a href=\"https://www.infoq.com/news/2025/05/microsoft-edit-new-tui-editor/\" target=\"_blank\">has announced Edit, a new open-source command-line text editor</a>, which will be distributed in the future as part of Windows 11. Edit aims to provide a lightweight, native, modern command-line editing experience similar to <a href=\"https://www.nano-editor.org/\">Nano</a> and <a href=\"https://www.vim.org/\">Vim</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Open Sources the GitHub Copilot Chat Extension\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/microsoft-oss--copilot-extension/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1748746800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软计划开源 GitHub Copilot Chat 扩展，并将核心人工智能集成到 VS Code 中，使其成为 AI 原生编辑器。",
+  "oneSentenceSummary": "微软计划开源 GitHub Copilot Chat 扩展，并将核心人工智能集成到 VS Code 中，使其成为 AI 原生编辑器。",
+  "summary": "在 Build 2025 大会上，微软宣布计划在 MIT 许可证下开源 GitHub Copilot Chat 扩展的代码，并将其核心人工智能功能重构到 VS Code 的主代码库中。此举的原因在于，随着 LLM（大型语言模型）的进步，专有提示词的价值逐渐降低。同时，此举也解决了扩展开发者要求更紧密地集成到 VS Code 核心中的需求（此前，他们难以使用稳定 API 实现深度集成）。此外，微软还希望通过稳定核心 API 广泛提供核心人工智能功能，从而挑战那些仅在功能上竞争的 VS Code 衍生版本。该计划旨在提高数据收集的透明度，并加强社区驱动的安全性。开发者对此反应普遍积极，他们看好集成本地 AI 模型的前景及其对编辑器竞争格局的影响。这将推动 VS Code 默认演变为“AI 原生编辑器”。",
+  "mainPoints": [
+    {
+      "point": "微软将开源 Copilot Chat，并将人工智能功能集成到 VS Code 核心中。",
+      "explanation": "该战略举措通过开放源代码，将核心人工智能功能集成至主编辑器，旨在实现更紧密的集成，并促进社区的广泛参与。"
+    },
+    {
+      "point": "LLM 的进步降低了专有提示词的竞争优势。",
+      "explanation": "随着 LLM 的可访问性和透明度提高（例如 Anthropic 发布提示词），保持特定提示策略的私密性的价值降低。"
+    },
+    {
+      "point": "开源和核心集成解决了开发者的请求，并挑战了编辑器衍生版本。",
+      "explanation": "此举允许扩展开发者使用稳定的 API 进行深度集成，并削弱了 Cursor 等 VS Code 衍生版本的基于功能的竞争策略。"
+    }
+  ],
+  "keyQuotes": [
+    "在 Build 2025 大会上，微软宣布计划在未来几个月内，在 MIT 许可证下开源 GitHub Copilot Chat 扩展背后的代码，并将核心人工智能功能直接重构到 VS Code 的主代码库中。",
+    "该计划使 VS Code 不仅支持人工智能扩展，而且默认演变为“AI 原生编辑器”。",
+    "Reddit 和 Hacker News 等平台上的开发者普遍对开源表示赞赏。",
+    "通过将 Copilot Chat 扩展以 MIT 许可证开源，并将其核心功能集成到 VS Code 核心中，微软可能会大大削弱那些软件开发资源有限的衍生版本，使其难以仅凭功能与庞大的扩展开发者社区竞争。"
+  ],
+  "tags": [
+    "开发者工具",
+    "VS Code",
+    "GitHub Copilot",
+    "开源",
+    "AI 代码编辑器"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 586,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748736000000,
+  "publishDateStr": "2025-06-01",
+  "publishDateTimeStr": "2025-06-01 00:00:00"
+}

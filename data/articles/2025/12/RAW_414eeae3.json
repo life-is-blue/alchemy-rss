@@ -1,0 +1,55 @@
+{
+  "id": "RAW_414eeae3",
+  "title": "React Advanced 2025：Nuqs 让类型安全的 URL 状态管理成为焦点",
+  "url": "https://www.infoq.com/news/2025/12/nuqs-react-advanced/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-12 13:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://nuqs.dev/\">Nuqs</a>, an open-source type-safe search params state manager for React, was showcased at <a href=\"https://reactadvanced.com/\">React Advanced 2025</a>, demonstrating how URL state management can transform application development across the React ecosystem.</p>\n   <p>At React Advanced 2025 in London on November 28, <a href=\"https://www.linkedin.com/in/francoisbest/\">François Best</a>, a freelance software engineer, presented his library Nuqs, which is used by companies including <a href=\"https://sentry.io/welcome\">Sentry</a>, <a href=\"https://supabase.com/\">Supabase</a>, <a href=\"https://vercel.com/\">Vercel</a>, and <a href=\"https://clerk.com/\">Clerk</a>. The presentation explored how storing application state in URL search parameters unlocks capabilities that traditional state management approaches cannot provide.\n    <br>\n    <br>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/nuqs-react-advanced/news/2025/12/nuqs-react-advanced/en/resources/1IMG_0808-1765317143301.jpeg\" style=\"width: 800px; height: 355px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/nuqs-react-advanced/en/resources/1IMG_0808-1765317143301.jpeg\" rel=\"share\"></p>\n   <p>Best introduced the concept of URL state as storing application data in the query string portion of URLs, describing two key advantages he calls \"superpowers.\" The first, teleportation, enables users to share links that preserve complete application state, allowing recipients to see identical views and pick up exactly where others left off. The second, time travel, leverages bookmarks and browser history as mechanisms for recalling past application states.</p>\n   <p>The library replaces React's standard <code>useState</code> hook with <code>useQueryState</code>, providing automatic synchronization between component state and URL parameters. Nuqs includes built-in parsers that transform URL strings into typed values such as integers, booleans, and dates, ensuring type safety throughout the application. The library supports all major React frameworks through adapter providers, including Next.js app and pages routers, <a href=\"https://remix.run/\">Remix</a>, <a href=\"https://reactrouter.com/\">React Router</a>, and <a href=\"https://tanstack.com/router/latest\">TanStack Router</a>.</p>\n   <p>The presentation demonstrated advanced features addressing common URL state challenges. Time safety decouples UI updates from URL updates, preventing browser rate-limiting issues while maintaining responsive interfaces. Throttling and debouncing capabilities prevent excessive network requests during high-frequency interactions like text inputs. Integration with React's <code>useTransition</code> provides loading indicators during server-side rendering updates. The library also supports URL key mapping, allowing developers to use descriptive variable names internally while keeping URLs concise for end users.</p>\n   <p>The presentation highlighted testing capabilities through a dedicated testing adapter that mocks required functionality, enabling developers to test both initial URL value loading and search parameter updates. Best noted the project has nearly 10,000 stars on GitHub and is maintained during evenings and weekends with growing community contributions.\n    <br>\n    <br>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/nuqs-react-advanced/news/2025/12/nuqs-react-advanced/en/resources/1IMG_0810-1765317143301.jpeg\" style=\"width: 800px; height: 316px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/nuqs-react-advanced/en/resources/1IMG_0810-1765317143301.jpeg\" rel=\"share\"></p>\n   <p>Best outlined several important limitations of URL state management that developers must consider. URL length creates practical constraints, as users prefer shorter, more readable links. Once shared, URLs cannot be controlled, requiring migration strategies when making changes to search parameter schemas. Browsers rate-limit URL updates for security reasons, necessitating careful state update management. URL parameters create entry points into applications, requiring robust state machine design to handle direct navigation.</p>\n   <p>The developer community has responded positively to Nuqs. The video titled <a href=\"https://www.youtube.com/watch?v=t4d1cJarJqs\"><q>The BEST Type-Safe URL State Manager</q></a> highlighted how the library handles parsing, throttling, defaults, and server-side rendering. One developer writing for <a href=\"https://www.danielfullstack.com/article/this-library-could-replace-react-state-management\">DevFullstack</a> suggested the library <q>could replace React state management</q> noting how it <q>works exactly as useState works but stores the state in the URL.</q></p>\n   <p>Nuqs is open-source software maintained primarily by François Best, with an MIT license and active development on GitHub. The library weighs approximately 6 kilobytes gzipped and supports TypeScript with end-to-end type safety between server and client components.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"React Advanced 2025: Type Safe URL State Management Takes Center Stage with Nuqs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/nuqs-react-advanced/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765544400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Nuqs，一个适用于 React 的开源类型安全 URL 查询参数状态管理器，在 React Advanced 2025 大会上亮相，展示了其强大功能如何改变应用程序开发。",
+  "oneSentenceSummary": "Nuqs，一个适用于 React 的开源类型安全 URL 查询参数状态管理器，在 React Advanced 2025 大会上亮相，展示了其强大功能如何改变应用程序开发。",
+  "summary": "本文介绍了 Nuqs，一个在 React Advanced 2025 大会上展示的、适用于 React 的开源、类型安全的 URL 查询参数状态管理器。通过将应用程序状态存储在 URL 查询字符串中，Nuqs 提供了独特的优势，例如“状态传送”（teleportation）——共享保留完整应用程序状态的链接，以及“时间旅行”（time travel）——利用浏览器历史记录来回溯过去的状态。它用 `useQueryState` 替换了 React 的 `useState` Hook，实现了组件状态和 URL 参数之间的自动、类型安全同步，支持包括 Next.js 和 Remix 在内的主要 React 框架。演示文稿重点介绍了时间安全性、节流、防抖、`useTransition` 集成和 URL 键映射等高级功能，这些功能解决了浏览器限速和 URL 简洁性等常见的 URL 状态管理挑战。尽管 URL 状态管理存在 URL 长度限制和更新频率等局限性，但 Nuqs 凭借其创新方法获得了社区的积极反馈，一些开发者甚至建议它可能取代传统的 React 状态管理。",
+  "mainPoints": [
+    {
+      "point": "Nuqs 通过 URL 状态管理提供“状态传送”和“时间旅行”作为核心功能。",
+      "explanation": "“状态传送”允许用户共享保留完整应用程序状态的链接，以便无缝地共享信息和协作，而“时间旅行”使用户能够利用浏览器历史记录重新访问和恢复过去的应用程序状态，从而增强用户体验。"
+    },
+    {
+      "point": "Nuqs 通过 `useQueryState` 实现类型安全的状态同步和广泛的框架兼容性。",
+      "explanation": "通过用 `useQueryState` 替换 `useState`，Nuqs 确保了组件状态和 URL 参数之间的自动、类型安全同步。它支持 Next.js 和 Remix 等主要 React 框架，显著提高了开发效率和代码质量。"
+    },
+    {
+      "point": "Nuqs 凭借高级功能解决了常见的 URL 状态管理挑战，以提升性能和用户体验。",
+      "explanation": "时间安全性、节流、防抖、与 `useTransition` 的集成以及 URL 键映射等功能，可以缓解浏览器限速、过多的网络请求和冗长的 URL 等问题，从而优化用户交互和系统性能。"
+    }
+  ],
+  "keyQuotes": [
+    "演示文稿探讨了如何将应用程序状态存储在 URL 查询参数中，这释放了传统状态管理方法无法提供的能力。",
+    "首先，“状态传送”使用户能够共享保留完整应用程序状态的链接，允许接收者看到相同的视图并从应用上次中断的地方继续。",
+    "其次，“时间旅行”利用书签和浏览器历史记录作为重现过去应用程序状态的机制。",
+    "该库用 `useQueryState` 替换了 React 的标准 `useState` Hook，提供了组件状态和 URL 参数之间的自动同步。",
+    "一位为 DevFullstack 撰稿的开发者表示，该库可能取代 React 状态管理，称其工作方式与 `useState` 完全相同，但将状态存储在 URL 中。"
+  ],
+  "tags": [
+    "React",
+    "URL 状态管理",
+    "Nuqs",
+    "TypeScript",
+    "前端开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 493,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765544400000,
+  "publishDateStr": "2025-12-12",
+  "publishDateTimeStr": "2025-12-12 13:00:00"
+}

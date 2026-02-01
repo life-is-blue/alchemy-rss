@@ -1,0 +1,58 @@
+{
+  "id": "RAW_92dd36cf",
+  "title": "打破孤岛：Netflix 引入 Upper 建模框架，实现内容工程一致性",
+  "url": "https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-12 15:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix <a href=\"https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d\">has introduced Upper</a>, a unified domain modeling framework built into its Unified Data Architecture, to standardize domain definitions across its expanding <a href=\"https://netflixtechblog.com/netflix-studio-engineering-overview-ed60afcfa0ce\">content engineering</a> systems. Previously, teams maintained separate domain models, which meant building custom translations between every pair of systems.This introduction of Upper provides a consistent conceptual layer, supporting engineering teams as the company grows into live events, games, advertising, and global content production.</p>\n   <p>Upper is based on <a href=\"https://www.w3.org/standards/\">W3C standards</a> such as <a href=\"https://www.w3.org/RDF/\">RDF</a> for conceptual graph representation and <a href=\"https://www.w3.org/TR/shacl/\">SHACL</a> for validation, and it enables the principle of \"model once, represent everywhere\" across the data ecosystem.Upper organizes concepts through keyed entities, their attributes, and their relationships across domain boundaries. The modeling grammar and validation structure are designed to maintain consistency as definitions evolve. Keyed concepts can be extended <a href=\"https://tomgruber.org/writing/onto-design.pdf#page=4\">monotonically</a>, allowing new attributes or relationships without modifying existing definitions allowing domains to expand over time without breaking existing models.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/news/2025/12/netflix-upper-uda-architecture/en/resources/1onepiecemode-1765074905763.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/netflix-upper-uda-architecture/en/resources/1onepiecemode-1765074905763.jpeg\" rel=\"share\"></p>\n   <p><em>Graph Representation of OnePiece Domain Model (Source : <a href=\"https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d\">Netflix Tech Blog</a>)</em></p>\n   <p>As mentioned by <a href=\"https://www.linkedin.com/in/bertails/\">Alexandre Bertails</a>, principal engineer at Netflix:</p>\n   <blockquote>Upper is designed to bootstrap itself through four foundational properties: it’s self-describing (defines what a domain model is), self-referencing (models itself as a domain), self-governing (validates itself against its own rules), and federated (closed for modification, open for extension). This self-governing foundation is what enables the governance chain that makes UDA scale.</blockquote>\n   <p>UDA adopts a named-graph-first information model, where each named graph conforms to a governing model within the <a href=\"https://en.wikipedia.org/wiki/Knowledge_graph\">knowledge graph</a>. The knowledge graph comprises three components: Domain Models, Data Container Representations, and Mappings, which define concepts, locate data containers, and link concepts to physical data sources. This structure provides modularity, resolution, and governance across the graph.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/news/2025/12/netflix-upper-uda-architecture/en/resources/1mapping-1765074905763.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/netflix-upper-uda-architecture/en/resources/1mapping-1765074905763.jpeg\" rel=\"share\"></p>\n   <p><em>Mapping Between Domain Model and Data Mesh Source (Source : <a href=\"https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d\">Netflix Tech Blog</a>)</em></p>\n   <p>At the core of UDA, domain entities defined in Upper are transformed into data container representations through a process called projection. Projections generate concrete technical artifacts, including <a href=\"https://graphql.org/\">GraphQL</a> schemas, <a href=\"https://avro.apache.org/\">Avro</a> records, <a href=\"https://iceberg.apache.org/\">Apache Iceberg</a> tables, <a href=\"https://en.wikipedia.org/wiki/SQL\">SQL</a> schemas, and Java types, which downstream systems can consume. UDA maintains explicit mappings between conceptual definitions and these physical data containers to ensure consistency as models evolve. Netflix engineer describes this approach as allowing changes to domain concepts to propagate automatically to all representations without manual updates, supporting both engineering workflows and operational reporting.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/news/2025/12/netflix-upper-uda-architecture/en/resources/2netfixudaheader-1765074905763.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/netflix-upper-uda-architecture/en/resources/2netfixudaheader-1765074905763.jpeg\" rel=\"share\"></p>\n   <p><em>Domain Model to Data Containers Connection (Source : <a href=\"https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d\">Netflix Tech Blog</a>)</em></p>\n   <p>Primary Data Management (PDM) and Operational Reporting (Sphere) were among the first teams to adopt Upper. The Content Production team used UDA to track asset ingestion, approvals, and content readiness. The Advertising and Personalization team leveraged the knowledge graph to align definitions of campaigns, promotions, and targeting metadata, reducing manual reconciliation and enabling automated workflow generation. PDM exposes a taxonomy-driven interface that allows business users to navigate domain concepts without knowledge of ontology languages. Sphere generates queries automatically from the graph, minimizing the need for manual joins.</p>\n   <p>Looking ahead, Netflix plans to expand Upper and UDA to support additional projections such as <a href=\"https://en.wikipedia.org/wiki/Protocol_Buffers\">Protobuf</a>/<a href=\"https://en.wikipedia.org/wiki/GRPC\">gRPC</a>, materialize knowledge graphs of instance data for querying and profiling, and address challenges initially posed by <a href=\"https://en.wikipedia.org/wiki/Graph_traversal\">Graph Search</a>. Netflix engineers aim to enhance discoverability, automation, and interoperability across Netflix’s growing content and data ecosystem.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Breaking Silos: Netflix Introduces Upper Metamodel to Bring Consistency Across Content Engineering\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765551600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 引入了“Upper”，一个构建在其统一数据架构（UDA）中的统一领域建模框架，旨在标准化其不断扩展的内容工程系统中的领域定义，从而提升系统一致性与互操作性。",
+  "oneSentenceSummary": "Netflix 引入了“Upper”，一个构建在其统一数据架构（UDA）中的统一领域建模框架，旨在标准化其不断扩展的内容工程系统中的领域定义，从而提升系统一致性与互操作性。",
+  "summary": "Netflix 开发了“Upper”，一个集成到其统一数据架构（UDA）中的统一领域建模框架，以解决由不同内容工程团队的各种领域模型引起的不一致问题。通过标准化领域定义，Upper 避免了系统之间进行定制转换，确保了概念层的一致性。Upper 基于 RDF 和 SHACL 等 W3C 标准，实现了“一次建模，随处呈现”的原则，允许概念单调扩展而不会破坏现有模型。UDA 架构包含一个带有领域模型、数据容器表示和映射的知识图谱。Upper 中定义的领域实体被生成到各种技术工件中（例如 GraphQL 模式、Avro 记录、SQL 模式），确保了在工程和运营工作流中自动传播一致性。早期采用者，包括主要数据管理、运营报告以及内容制作和广告团队，已成功利用 Upper 简化了工作流，减少了人工协调工作，并增强了数据易发现性。Netflix 计划进一步扩展 Upper 的功能，以支持额外的数据生成方式，并提高其数据生态系统中的易发现性和互操作性。",
+  "mainPoints": [
+    {
+      "point": "Upper 标准化了 Netflix 内容工程系统中的领域定义。",
+      "explanation": "该框架解决了不同团队维护的不一致领域模型问题，简化了数据集成，减少了系统间定制转换的需求，从而提高了整体系统一致性。"
+    },
+    {
+      "point": "Upper 利用 W3C 标准和单调扩展进行灵活且可演进的领域建模。",
+      "explanation": "基于 RDF 和 SHACL，Upper 允许在不破坏现有模型的情况下进行定义扩展，支持长期可扩展性并适应直播活动和广告等新业务需求。"
+    },
+    {
+      "point": "UDA 将概念领域模型转换为各种物理数据表示。",
+      "explanation": "通过“生成”，Upper 的定义生成了 GraphQL 模式、Avro 记录和 SQL 表等工件，确保了工程和运营工作流中的自动一致性传播。"
+    },
+    {
+      "point": "该框架显著提高了 Netflix 的数据治理和运营效率。",
+      "explanation": "PDM 和广告等团队通过利用 Upper 的统一定义和 UDA 的知识图谱，显著改善了工作流自动化，减少了协调工作，并增强了数据易发现性。"
+    }
+  ],
+  "keyQuotes": [
+    "Upper 的引入提供了一个一致的概念层，随着公司发展到直播活动、游戏、广告和全球内容制作领域，它将支持工程团队。",
+    "Upper 的设计通过四个基本属性实现自举：它是自我描述的（定义领域模型是什么），自我引用的（将自身建模为一个领域），自我管理的（根据自身规则验证自身），以及联邦式的（即对修改封闭，但对扩展开放）。",
+    "UDA 维护了概念定义与这些物理数据容器之间的显式映射，以确保随着模型演进的一致性。",
+    "Netflix 工程师旨在提高 Netflix 不断增长的内容和数据生态系统中的易发现性、自动化和互操作性。"
+  ],
+  "tags": [
+    "领域建模",
+    "数据架构",
+    "Netflix",
+    "知识图谱",
+    "系统一致性"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 525,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765551600000,
+  "publishDateStr": "2025-12-12",
+  "publishDateTimeStr": "2025-12-12 15:00:00"
+}

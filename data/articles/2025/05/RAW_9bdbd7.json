@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9bdbd7",
+  "title": "利用开放的 Agent2Agent (A2A) 协议，赋能多 Agent 应用 | The Microsoft Cloud Blog",
+  "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/05/07/empowering-multi-agent-apps-with-the-open-agent2agent-a2a-protocol/",
+  "date": "2025-05-08 13:08:12",
+  "author": "Yina Arenas, Bas Brekelmans",
+  "siteName": "Microsoft Azure Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Over the past year, we’ve seen AI agents evolve from experimental tools to essential components of enterprise systems. From simple prompt and response bots to agents that act autonomously on your behalf, this shift marks a new era of software design where intelligence is no longer tied to static interfaces or single applications.</p>\n  <p>At Microsoft, we’ve seen this transformation firsthand. <a href=\"https://ai.azure.com/\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Azure AI Foundry</strong></a> is now used by developers at more than 70,000 enterprises and digital native companies, including Atomicwork, Epic, Fujitsu, Gainsight, H&amp;R Block, and LG Electronics, to design, customize, and manage AI apps and agents. In just four months, over 10,000 organizations have adopted our new Agent Service to build, deploy, and scale agentic systems. More than 230,000 organizations, including 90% of the Fortune 500, have already used <a href=\"https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio\" target=\"_blank\" rel=\"noreferrer noopener\"><strong>Microsoft</strong> <strong>Copilot Studio</strong></a>.&nbsp;</p>\n  <p class=\"has-text-align-left\">As agents take on more sophisticated roles, they need access not only to diverse models and tools but also to one another. That is why we are committed to advancing open protocols like <a href=\"https://github.com/google/A2A\" target=\"_blank\" rel=\"noreferrer noopener\">Agent2Agent (A2A)</a>, coming soon to Azure AI Foundry and Copilot Studio, which will enable agents to collaborate across clouds, platforms, and organizational boundaries.</p>\n  <div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\">\n   <iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7325882270177710083?compact=1\" height=\"399\" width=\"504\" frameborder=\"0\" allowfullscreen title=\"Embedded post\"></iframe>\n  </div>\n  <p>We’re aligning with the broader industry push for shared agent protocols—doing what we’ve always done: embracing openness, supporting real-world developers, and turning experimentation into enterprise-grade platforms. Our goal is simple: empower both pro and citizen developers to build agents that interoperate across clouds and frameworks. &nbsp;</p>\n  <p>We believe that Microsoft Copilot will empower every employee and act as the “UI for AI” to connect with agents and agentic systems—networks of agents that reason, act, and adapt across boundaries. As customers scale these systems, <strong>interoperability is no longer optional</strong>. They want their agents to orchestrate tasks that span vendors, clouds, and data silos. They want control, visibility, and trust—without being locked in. &nbsp;</p>\n  <p>A2A can enable structured agent communication—exchanging goals, managing state, invoking actions, and returning results securely and observably. Developers can use tools they know, like Semantic Kernel or LangChain, and still interoperate. Every call travels through enterprise-grade safeguards: Microsoft Entra, mutual TLS, Azure AI Content Safety, and full audit logs. Azure AI Foundry is built with trust by default, and as agent ecosystems grow more open and distributed, safety, compliance, and accountability remain first-class. &nbsp;</p>\n  <div class=\"wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex\">\n   <div class=\"wp-block-button is-style-arrow-left\">\n    <a class=\"wp-block-button__link wp-element-button\" href=\"https://azure.microsoft.com/en-us/products/ai-foundry/\">Get started with Azure AI Foundry</a>\n   </div>\n   <div class=\"wp-block-button is-style-arrow-left is-style-prefix-outgoing\">\n    <a class=\"wp-block-button__link wp-element-button\" href=\"https://www.microsoft.com/en-us/microsoft-copilot/agents\">Get started with Copilot Studio</a>\n   </div>\n  </div>\n  <h2 class=\"wp-block-heading\" id=\"what-we-are-delivering\">What we are delivering&nbsp;</h2>\n  <p>With support for A2A:&nbsp;</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Azure AI Foundry</strong> customers can build complex, multi-agent workflows that span internal copilots, partner tools, and production infrastructure—while maintaining governance and SLAs.</li>\n   <li><strong>Copilot Studio</strong> agents will be able to securely invoke external agents, including those built with other platforms or hosted outside Microsoft.</li>\n   <li>Enterprises gain a path to composable, intelligent systems that scale across organizational and cloud boundaries.</li>\n   <li>Microsoft’s contributions will accelerate development and adoption of the open A2A protocol across the industry.</li>\n  </ul>\n  <p>This is just one step on a longer journey. As we’ve done with innovations like Autogen, Semantic Kernel, our contributions to Model Context Protocol (MCP), and our catalog of open models, we will continue to evolve the platform to support <strong>the protocols, models, and frameworks that matter most to developers and enterprises</strong>. We see protocols like A2A and MCP as important steps in the direction of realizing our vision for the agentic future. &nbsp; &nbsp;</p>\n  <h2 class=\"wp-block-heading\" id=\"what-s-next\">What’s next&nbsp;</h2>\n  <p>Agentic computing isn’t a trend—it’s a foundational shift. It changes how software is built, how decisions are made, and how value is created.&nbsp;</p>\n  <p>We have joined the A2A working group on GitHub to contribute to the spec and tooling. The A2A public preview in Foundry and Copilot Studio will arrive soon.&nbsp;&nbsp;</p>\n  <p>By supporting A2A and building on our open orchestration platform, we’re laying the foundation for the next generation of software—collaborative, observable, and adaptive by design. The best agents won’t live in one app or cloud; they’ll operate in the flow of work, spanning models, domains, and ecosystems. We’re building that future with openness at the center—because agents shouldn’t be islands, and intelligence should work across boundaries, just like the world it serves. &nbsp;</p>\n  <h2 class=\"wp-block-heading\" id=\"getting-started\">Getting started&nbsp;</h2>\n  <p>We’ve introduced a <a href=\"https://devblogs.microsoft.com/foundry/semantic-kernel-a2a-integration/\" target=\"_blank\" rel=\"noreferrer noopener\">new sample in Semantic Kernel</a> (available in Python) that demonstrates how two local agents can collaborate using the A2A protocol. In this example, the agents work together to plan a travel itinerary and handle currency conversions, showcasing seamless interoperability without the need for custom orchestration code.</p>\n  <h2 class=\"wp-block-heading\" id=\"resources\">Resources&nbsp;</h2>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://devblogs.microsoft.com/foundry/semantic-kernel-a2a-integration\" target=\"_blank\" rel=\"noreferrer noopener\">Semantic Kernel A2A sample</a></li>\n   <li><a href=\"https://azure.microsoft.com/products/ai-foundry\" target=\"_blank\" rel=\"noreferrer noopener\">Azure AI Foundry</a></li>\n   <li><a href=\"https://learn.microsoft.com/azure/ai-services/agents/\" target=\"_blank\" rel=\"noreferrer noopener\">Azure AI Agent Service docs</a></li>\n   <li><a href=\"https://copilotstudio.microsoft.com/\" target=\"_blank\" rel=\"noreferrer noopener\">Copilot Studio</a></li>\n   <li><a href=\"https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai\" target=\"_blank\" rel=\"noreferrer noopener\">Responsible AI guidance</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Microsoft Azure AI Foundry 和 Copilot Studio 将支持 Agent2Agent (A2A) 协议，以实现 AI Agent 的跨平台和跨组织协作。",
+  "oneSentenceSummary": "Microsoft Azure AI Foundry 和 Copilot Studio 将支持 Agent2Agent (A2A) 协议，以实现 AI Agent 的跨平台和跨组织协作。",
+  "summary": "微软宣布 Azure AI Foundry 和 Copilot Studio 将支持开放的 Agent2Agent (A2A) 协议 (Agent2Agent (A2A) protocol)，旨在实现 AI Agent 的跨云、平台和组织协作。A2A 协议通过定义交换目标、管理状态、调用操作和返回结果的标准，实现安全、可观察的 Agent 通信。微软强调其对开放协议的支持，并致力于构建开放的 Agent 生态系统，支持开发者使用 Semantic Kernel 和 LangChain 等工具构建互操作的 Agent。安全性和合规性也得到了强调，通过 Microsoft Entra、mutual TLS 和 Azure AI Content Safety 等技术确保安全的 Agent 通信。微软希望通过 A2A 协议在企业中推广 Agent 技术，并构建可组合的智能系统。",
+  "mainPoints": [
+    {
+      "point": "A2A 协议旨在实现 Agent 的跨平台和跨组织互操作。",
+      "explanation": "通过标准化 Agent 之间的通信，A2A 协议打破了平台和组织障碍，使 Agent 能够协作完成复杂的任务并实现更广泛的应用。"
+    },
+    {
+      "point": "微软强调其 Agent 生态系统的开放性与安全性。",
+      "explanation": "通过支持像 A2A 这样的开放协议并提供安全措施，微软致力于构建安全可靠的 Agent 生态系统，促进 Agent 技术的发展。"
+    },
+    {
+      "point": "Agent 技术代表了软件开发领域的一次根本性转变。",
+      "explanation": "Agent 技术改变了软件的构建方式、决策的制定方式和价值的创造方式，代表了软件开发领域的一次根本性转变。"
+    }
+  ],
+  "keyQuotes": [
+    "互操作性不再是可选项。",
+    "最好的 Agent 不会存在于一个应用或云中；它们将在工作流程中运行，跨越模型、领域和生态系统。",
+    "Agent 不应该是孤岛，智能应该跨越边界工作，就像它所服务的世界一样。"
+  ],
+  "tags": [
+    "Agent2Agent",
+    "A2A",
+    "AI Agent",
+    "Multi-Agent System",
+    "Agent Communication Protocol"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 729,
+  "domain": "microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_a08882",
+  "sourceName": "Microsoft Azure Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1746709692000,
+  "publishDateStr": "2025-05-08",
+  "publishDateTimeStr": "2025-05-08 13:08:12"
+}

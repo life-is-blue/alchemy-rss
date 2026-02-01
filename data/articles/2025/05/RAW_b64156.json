@@ -1,0 +1,67 @@
+{
+  "id": "RAW_b64156",
+  "title": "旅游巨头 Skyscanner 优化可观测性，削减 90% 的工程成本",
+  "url": "https://www.infoq.com/news/2025/05/skyscanner-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-26 00:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The COVID-19 pandemic gave the engineering teams at travel search giant <a href=\"https://www.skyscanner.net/\">Skyscanner</a> an opportunity to introspectively examine their observability stack. Skyscanner has written about how it has overhauled its approach to technical observability with a system that improves reliability for engineers and travellers alike.</p>\n   <p>According to a <a href=\"https://medium.com/@SkyscannerEng/skyscanners-journey-to-effective-observability-655167a49d2f\">recent engineering blog post</a>, the company began this transformation in 2020, when the travel industry lay dormant and faced unprecedented disruption. Skyscanner's engineering team used this period as an opportunity to identify and address weaknesses in its monitoring systems.</p>\n   <p>\"Our challenges were not simply related to cost, or the complexity of running this platform with a small team,\" the Skyscanner engineering team writes. \"We understood that our most important problem to solve was improving the confidence of all engineers to understand and operate their services, to reliably connect more than 110 million users to over 1,200 flight, hotel and car hire partners each month.\"</p>\n   <p>The company's previous observability architecture was complex, featuring a mix of specialised vendors and some internal systems based on open-source technologies like OpenTSDB, Prometheus, and they had multiple <a href=\"https://www.elastic.co/elastic-stack/\">ELK stacks</a>. This fragmentation created problems for engineers who needed to understand and troubleshoot issues across the platform.</p>\n   <p><img alt=\"SkyScanner's legacy observability architecture\" data-src=\"https://www.infoq.com/news/2025/05/skyscanner-observability/news/2025/05/skyscanner-observability/en/resources/11_PkWllKGqqbCLel8kqKHyWQ-1748034296363.webp\" style=\"width: 600px; height: 471px;\" src=\"https://res.infoq.com/news/2025/05/skyscanner-observability/en/resources/11_PkWllKGqqbCLel8kqKHyWQ-1748034296363.webp\" rel=\"share\"></p>\n   <p>To address these challenges, Skyscanner developed a new strategy centred around two key principles: adopting OpenTelemetry as a single standard for instrumenting services and transporting data and implementing New Relic as a unified data storage and analysis backend.</p>\n   <blockquote>\n    <p>We're all in when it comes to the vision of high-quality, standardised, portable, and ubiquitous telemetry provided by OpenTelemetry. The future is OTel-native, not APM agents, and we're ready for it.</p>\n   </blockquote>\n   <p>The simplicity of OpenTracing and OpenTelemetry's API designs allowed Skyscanner to migrate over 300 microservices within weeks by just bumping a library version number. This rapidly reduced the cognitive load on engineers by removing context switching between multiple observability platforms. The standardisation also enabled better correlation of traces, metrics, logs, and events across services and frameworks.</p>\n   <p>An unexpectedly positive outcome was a cultural shift in how teams approached telemetry. When made aware of the costs associated with data collection and storage, many teams voluntarily looked for more efficient approaches.</p>\n   <p>\"We had teams that wanted to find more optimal ways of using telemetry,\" the engineering team notes. \"When they saw the advantages, they were convinced, and started to rely on tracing rather than verbose logging or high-cardinality metrics. This made some teams reduce their telemetry costs by over 90%!\"</p>\n   <p>To gain further adoption of the new observability stack, Skyscanner launched an \"Observability Ambassadors\" initiative, identifying engineers within teams who could bring observability best practices to their domains. The company also began hosting Observability Game Days using the official OpenTelemetry Demo to make system debugging more engaging.</p>\n   <p><img alt=\"SkyScanner now have observability ambassadors\" data-src=\"https://www.infoq.com/news/2025/05/skyscanner-observability/news/2025/05/skyscanner-observability/en/resources/11_MwAawRsWsxm2LxO3X6gubw-1748034296363.webp\" style=\"width: 600px; height: 550px;\" src=\"https://res.infoq.com/news/2025/05/skyscanner-observability/en/resources/11_MwAawRsWsxm2LxO3X6gubw-1748034296363.webp\" rel=\"share\"></p>\n   <p>Skyscanner has also connected its new abilities in technical observability back to actual business outcomes that affect its travelling customers by rethinking its approach to Service Level Objectives (SLOs). Rather than focusing solely on technical metrics like API response codes, the company now drives SLOs from signals directly related to user experience.</p>\n   <blockquote>\n    <p>With access to client-side telemetry, we can drive SLOs from signals that relate directly to our users, like 'how many flight searches displayed valid results?'</p>\n   </blockquote>\n   <p>This new observability approach has radically changed how Skyscanner manages cross-domain dependencies and facilitates collaboration between teams. \"We're using observability not only as a technical tool, but also as a sociotechnical tool, to help us reason about our system and make data-driven decisions,\" the engineering team concludes. \"We base our commitments on evidence, not intuition.\"</p>\n   <p>Skyscanner is not the only company using OpenTelemetry as a lever to redefine how SLOs are driven. An <a href=\"https://www.nofire.ai/blog/how-opentelemetry-kubernetes-slo-ai-redefine-incident-resolution\">article by NOFire AI</a> reinforces and extends many of these themes, particularly around the transformative impact of OpenTelemetry and the shift from traditional monitoring to intelligent observability. This article also emphasises how OpenTelemetry provides unified observability by eliminating fragmented, siloed approaches that aren't helpful in a progressive organisation. NOFire argues that Service Level Objectives should focus on user experience rather than arbitrary technical metrics, mirroring Skyscanner's shift from API response codes to meaningful user-centric signals like \"how many flight searches displayed valid results.\"</p>\n   <p>However, NOFire takes this further by introducing AI-powered incident resolution. While Skyscanner achieved cultural transformation through human-centred initiatives like Observability Ambassadors, NOFire proposes using Generative AI to automatically surface root causes and generate actionable resolutions, potentially eliminating the manual dashboard exploration that both companies identify as problematic.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Travel Giant Skyscanner Overhauls Observability, Cuts Engineering Costs by 90%\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/skyscanner-observability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1748246400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Skyscanner 通过 OpenTelemetry 和 New Relic 改进了其可观测性体系，成本降低 90%，同时提升了工程师信心和以用户为中心的 SLO。",
+  "oneSentenceSummary": "Skyscanner 通过 OpenTelemetry 和 New Relic 改进了其可观测性体系，成本降低 90%，同时提升了工程师信心和以用户为中心的 SLO。",
+  "summary": "本文详细介绍了旅游搜索巨头 Skyscanner 自 2020 年起如何改进其技术可观测性平台。面对混合了供应商和开源工具的复杂且碎片化的遗留系统，他们采取了一项新战略，以 OpenTelemetry 作为统一的插桩标准，New Relic 作为统一的数据后端。这种标准化显著降低了工程师的认知负担，并实现了跨信号的更好关联。一个令人惊讶的结果是文化上的，团队自愿优化遥测，从而在某些团队中降低了超过 90% 的成本。为了进一步推动采用和文化转变，Skyscanner 发起了“可观测性大使”和“可观测性游戏日”等活动。Skyscanner 还将服务级别目标 (SLO) 的重点转移，现在他们关注用户体验信号，而不仅仅是技术指标。该公司强调了可观测性作为数据驱动决策的社会技术工具的作用。文章将 Skyscanner 以人为本的文化转变与 NOFire AI 关于使用 OpenTelemetry 进行 AI 驱动的事件响应的观点进行了对比。",
+  "mainPoints": [
+    {
+      "point": "分散的遗留可观测性系统导致了复杂性和较低的工程师信心。",
+      "explanation": "Skyscanner 之前混合使用供应商和开源工具，造成了信息孤岛，使得故障排除变得困难，并降低了工程师理解服务健康状况的能力。"
+    },
+    {
+      "point": "OpenTelemetry 的设计有助于跨微服务的轻松快速迁移。",
+      "explanation": "OpenTelemetry 的 API 设计简单，使得 Skyscanner 能够通过简单地更新库版本，在几周内快速迁移超过 300 个微服务。"
+    },
+    {
+      "point": "采用 OpenTelemetry 作为标准，并采用 New Relic 作为后端，统一了数据存储和分析。",
+      "explanation": "使用 OpenTelemetry 进行插桩，并使用 New Relic 作为后端，减少了平台之间的上下文切换，并实现了跨追踪、指标和日志的无缝数据关联。"
+    },
+    {
+      "point": "可观测性转型带来了显著的成本节约和文化转变。",
+      "explanation": "提高对数据成本的认识鼓励团队优化遥测使用，从而大幅降低成本（高达 90%），并培养数据驱动的思维模式。"
+    },
+    {
+      "point": "SLO 将重点从技术指标转移到以用户为中心的体验信号。",
+      "explanation": "通过利用客户端遥测，Skyscanner 现在可以根据实际用户结果定义 SLO，从而更好地反映旅行者体验和业务影响。"
+    },
+    {
+      "point": "可观测性是一种用于协作和决策制定的社会技术工具。",
+      "explanation": "除了技术监控之外，新的可观测性体系还有助于跨团队理解、数据驱动的决策，并加强基于证据采取行动的文化。"
+    }
+  ],
+  "keyQuotes": [
+    "我们了解到，要解决的最重要的问题是提高所有工程师理解和运营其服务的信心...",
+    "对于 OpenTelemetry 所带来的高质量、标准化、可移植和无处不在的遥测技术的愿景，我们完全支持。未来是 OTel 原生的，而不是 APM 代理，我们已经为此做好了准备。",
+    "当他们看到优势时，他们就被说服了，并开始依赖追踪，而不是详细的日志记录或高基数指标。这使得一些团队的遥测成本降低了 90% 以上！",
+    "通过访问客户端遥测，我们可以从直接与我们的用户相关的信号驱动 SLO，例如“有多少航班搜索显示了有效结果？”",
+    "我们不仅将可观测性用作一种技术工具，而且还用作一种社会技术工具，以帮助我们推理我们的系统并做出数据驱动的决策。"
+  ],
+  "tags": [
+    "可观测性",
+    "OpenTelemetry",
+    "Skyscanner",
+    "New Relic",
+    "SRE"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 731,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748217600000,
+  "publishDateStr": "2025-05-26",
+  "publishDateTimeStr": "2025-05-26 00:00:00"
+}

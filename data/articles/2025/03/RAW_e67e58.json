@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e67e58",
+  "title": "Docker Desktop 4.39 发布：引入 Docker Smart AI Agent，CLI 正式版发布，并增强多平台支持",
+  "url": "https://www.infoq.com/news/2025/03/docker-desktop-4-39/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-28 00:00:00",
+  "author": "Diogo Carleto",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Docker has released <a href=\"https://www.docker.com/blog/docker-desktop-4-39/\">Docker Desktop 4.39</a>. This version brings Docker Smart AI Agent with Model Context Protocol (MCP) and Kubernetes Integration, Docker Desktop CLI GA, and enhanced multi-platform support aiming to make it easier for users to manage multi-platform container images.</p>\n   <p>The Docker AI Agent, also known as \"Ask Gordon\", has been updated; it now integrates with third-part services via Model Context Protocol (MCP), a new standard to connect AI agents and models to external data and tools. Developers can use it to generate GitHub projects, retrieve remote content, or even run AI agents as containers. To use it, users just need to type <code>docker ai</code> in the terminal or in the Docker Desktop AI Agent window, and the agent looks for a <code>gordon-mcp.yml</code> file in the working directory for a list of MCP servers to be used in that context.</p>\n   <p>Additionally, Docker AI now connects directly to the local Docker Engine and Kubernetes cluster to manage resources. It can list and clean up containers, images, and volumes, as well as interact with Kubernetes, such as listing namespaces, deploying services, and analyzing pod logs​. These new integrations aim to expand what the AI assistant can do, reducing the need for manual commands and scripts in many common scenarios.</p>\n   <p>User experience has also been improved. The AI now supports multi-line prompts and copying output more easily within Docker Desktop. Response times have been reduced, and answers are more context-aware. According to Docker, 'Ask Gordon' now delivers responses faster and with deeper context about images, containers, and volumes​, improving both performance and usefulness.</p>\n   <p>Docker Desktop CLI, previously in beta, is now generally available. First introduced as a beta in v4.37, the Docker Desktop CLI is a command-line interface tool that allows users to control Docker Desktop without clicking through the GUI. It allows developers to manage Docker Desktop directly from the command line, performing tasks such as starting, stopping, restarting, and checking the status of Docker Desktop. Additionally, the developers can also print logs and update to the latest version of Docker Desktop.</p>\n   <p>Docker Desktop 4.39 also extends the AI agent's capability to support the containerization of the applications. Developers can now leverage Ask Gordon to generate Docker related assets for projects in the languages:</p>\n   <ul class=\"c6 lst-kix_w98nu96feyog-0 start\">\n    <li class=\"c1 c10 li-bullet-0\">JavaScript/TypeScript: using npm, pnpm, yarn, and bun.</li>\n    <li class=\"c1 c10 li-bullet-0\">Go: using Go modules.​</li>\n    <li class=\"c1 c10 li-bullet-0\">Python: using pip, poetry, and uv.</li>\n    <li class=\"c1 c10 li-bullet-0\">C#: using nuget​.</li>\n   </ul>\n   <p>To initiate the containerization process, developers just need to prompt Ask Gordon with a prompt like <code>Can you containerize my application?</code>. Ask Gordon will analyze the project, identify its structure, and generate essential Docker assets, including an optimized Dockerfile, Docker Compose file, .dockerignore file, and even a README with usage instructions.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/docker-desktop-4-39/news/2025/03/docker-desktop-4-39/en/resources/image1-1743168426363.png\" rel=\"\" share_ share=\"\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/docker-desktop-4-39/en/resources/image1-1743168426363.png\"></p>\n   <p>(image taken by <a href=\"https://www.docker.com/blog/docker-desktop-4-39/\">Docker blog</a>)</p>\n   <p>Docker Desktop 4.39 has improved the support for multi-platform image management by introducing the <code>--platform</code> flag to the commands <code>save</code>, <code>docker load</code>, and <code>docker history</code>. Since containers today often need to run on multiple architectures such as deploying the same application to both x86_64 and ARM64 machines, this addition allows users to select specific architecture variants when exporting or importing images. It is possible for example for a user to export only the <code>linux/arm64</code> version of an image with:</p>\n   <p><code>docker save --platform linux/arm64 -o custom-image.tar my-app:latest</code></p>\n   <p>and similarly import a specific architecture variant using:</p>\n   <p><code>docker load --platform linux/amd64 -i custom-image.tar</code></p>\n   <p>It is important to notice that Docker continues to support multi-platform builds using <code>buildx</code>.</p>\n   <p>More details about the news of the Docker Desktop can be found in the <a href=\"https://docs.docker.com/desktop/release-notes/#4390/\">release notes</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Docker Desktop 4.39 Brings Docker Smart AI Agent, CLI in GA, and Enhanced Multi-Platform Support\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Diogo Carleto\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/docker-desktop-4-39/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1743174000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Docker Desktop 4.39 版本发布，重点引入 Docker Smart AI Agent，Docker Desktop CLI 正式发布，并优化了多平台支持。",
+  "oneSentenceSummary": "Docker Desktop 4.39 版本发布，重点引入 Docker Smart AI Agent，Docker Desktop CLI 正式发布，并优化了多平台支持。",
+  "summary": "Docker Desktop 4.39 版本带来了多项重要更新。Docker Smart AI Agent（又名 \"Ask Gordon\"）通过模型上下文协议 (MCP) 与第三方服务集成，拓展了其应用场景，允许开发者生成 GitHub 项目、检索远程内容或将 AI Agent 作为容器运行。Docker AI 现在可以直接连接到本地 Docker Engine 和 Kubernetes 集群，自动执行容器清理，简化服务部署等资源管理操作。Docker Desktop CLI 正式版发布，允许用户通过命令行管理 Docker Desktop。此外，新版本还改进了多平台镜像管理，通过 `--platform` 标志支持在 `save`、`load` 和 `history` 命令中指定架构。",
+  "mainPoints": [
+    {
+      "point": "Docker Smart AI Agent 通过 MCP 集成第三方服务，拓展了应用场景。",
+      "explanation": "开发者可以使用 Docker Smart AI Agent 生成 GitHub 项目、检索远程内容，甚至将 AI Agent 作为容器运行，减少手动操作。"
+    },
+    {
+      "point": "Docker Desktop CLI 正式版发布，提供通过命令行管理 Docker Desktop 的能力。",
+      "explanation": "开发者可以通过命令行启动、停止、重启 Docker Desktop，查看状态和日志，以及更新到最新版本。"
+    },
+    {
+      "point": "增强的多平台支持通过 `--platform` 标志简化了多架构镜像的管理。",
+      "explanation": "用户可以在 `save`、`load` 和 `history` 命令中指定架构，减小镜像大小，加速传输，便于在不同架构的机器上部署应用程序。"
+    }
+  ],
+  "keyQuotes": [
+    "要使用它，用户只需在终端或 Docker Desktop AI Agent 窗口中输入 `docker ai`，代理会在工作目录中查找 `gordon-mcp.yml` 文件，以获取上下文中要使用的 MCP 服务器列表。",
+    "Docker AI 现在可以直接连接到本地 Docker Engine 和 Kubernetes 集群来管理资源。",
+    "Docker Desktop CLI 是一个命令行界面工具，允许用户无需点击图形用户界面即可控制 Docker Desktop。"
+  ],
+  "tags": [
+    "Docker Desktop",
+    "Docker AI Agent",
+    "CLI",
+    "多平台支持",
+    "镜像管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 579,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1743120000000,
+  "publishDateStr": "2025-03-28",
+  "publishDateTimeStr": "2025-03-28 00:00:00"
+}

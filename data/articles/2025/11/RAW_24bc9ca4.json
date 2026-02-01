@@ -1,0 +1,54 @@
+{
+  "id": "RAW_24bc9ca4",
+  "title": "Buoyant 宣布 Linkerd 支持 MCP，扩展服务网格对基于 Agent 的 AI 流量的支持",
+  "url": "https://www.infoq.com/news/2025/11/buoyant-linkerd-mcp-support/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-26 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Buoyant, the company behind the open-source <a href=\"https://linkerd.io/\">Linkerd service mesh</a>, <a href=\"https://www.buoyant.io/newsroom/announcing-mcp-support-for-linkerd-to-accelerate-enterprise-ai-outcomes\">announced </a>that Linkerd now supports the <a href=\"https://modelcontextprotocol.io/docs/getting-started/intro\">Model Context Protocol (MCP)</a>, making it the first service mesh to natively manage, secure, and observe agentic AI traffic in Kubernetes environments. The move is designed to accelerate enterprise AI adoption by offering a stable, secure, and fully observable runtime for AI-driven workflows, which behave differently from traditional API-based applications.</p>\n   <p dir=\"ltr\">The announcement comes as enterprises increasingly integrate AI agents that rely on MCP, a protocol enabling models to access external tools, data sources, and context through persistent, long-lived sessions. Unlike conventional request-response APIs, MCP-driven agentic workloads are unpredictable, stateful, and capable of generating intense resource spikes, creating challenges for organizations lacking visibility or security controls tailored to this new traffic pattern.</p>\n   <p dir=\"ltr\">Buoyant CEO William Morgan emphasized the urgency:\n    <br>\n    \"Enterprises are eager to innovate with AI, but they can't do so at the expense of their security posture and application reliability. Linkerd solves this problem by extending its proven capabilities to MCP traffic... giving organizations the tools to accelerate their usage with confidence.\"</p>\n   <p dir=\"ltr\">Linkerd's upcoming MCP support brings core mesh capabilities, including visibility, access control, and traffic shaping, to agentic AI workloads without requiring additional tools or architectural changes. Enterprises will gain metrics on prompt usage, latencies, failure rates, and resource consumption, along with zero-trust access control for all MCP calls based on cryptographic workload identities. By layering these capabilities into the mesh itself, Buoyant positions Linkerd as a unified control plane for both traditional microservice traffic and emerging AI agent communication.</p>\n   <p dir=\"ltr\">Early users say this fills a gap in enterprise readiness for AI. Blake Romano, Senior Engineer at Imagine Learning, noted that concerns about MCP security initially slowed their internal rollout. He added that Linkerd's existing security posture and observability features \"removed a major barrier to adoption,\" providing visibility into agent behavior and confidence to scale AI initiatives safely.</p>\n   <p dir=\"ltr\">Buoyant recently showcased MCP support at <a href=\"https://www.cncf.io/blog/2025/11/06/your-complete-guide-to-kubecon-cloudnativecon-north-america-2025/\">KubeCon North America</a> in Atlanta on November 10–13, 2025. Full availability has since started rolling out across both open-source Linkerd and Buoyant's enterprise distribution. While other meshes and API platforms can proxy MCP traffic, none currently treat it as a first-class protocol, leaving enterprises to coordinate AI agents through infrastructures built for traditional, stateless APIs.</p>\n   <p dir=\"ltr\"><a href=\"https://istio.io/\">Istio</a>, along with other Envoy-backed meshes such as <a href=\"https://kuma.io/\">Kuma</a> and <a href=\"https://developer.konghq.com/mesh/\">Kong Mesh</a>, offers robust security and observability for microservices. However, these meshes lack direct awareness of MCP's long-lived, stateful sessions. To manage AI agent workflows, organizations must layer in custom Envoy filters or sidecar extensions. This introduces operational complexity and still provides limited visibility into agent behavior, such as prompt flows, session lifecycles, or tool invocation patterns.</p>\n   <p dir=\"ltr\">While Envoy's extensibility theoretically enables deeper support, no current distribution provides out-of-the-box MCP capabilities. This leaves enterprises with security and observability gaps, particularly when AI workloads generate unpredictable traffic spikes beyond what these meshes were originally designed to handle.</p>\n   <p dir=\"ltr\">HashiCorp's <a href=\"https://developer.hashicorp.com/consul\">Consul</a> delivers strong application identity, service discovery, and ACL-based traffic authorization. Yet its mesh features remain centered around conventional microservices. MCP traffic is handled as generic L4 or L7 streams, without the protocol-specific semantics needed to track agent state, measure prompt behavior, or apply granular zero-trust policies to model-to-tool interactions. As a result, organizations using Consul still require additional tooling to safely deploy agentic workloads.</p>\n   <p dir=\"ltr\">Modern gateways such as <a href=\"https://konghq.com/\">Kong</a>, <a href=\"https://cloud.google.com/apigee?hl=en\">Apigee</a>, <a href=\"https://nginx.org/\">NGINX</a>, and <a href=\"https://www.getambassador.io/\">Ambassador </a>play a vital role in managing API ingress, but they are not equipped for MCP-driven AI traffic. Gateways excel at securing and shaping discrete HTTP requests; MCP, by contrast, relies on persistent sessions, streaming context, and multi-step agent workflows that can bypass gateway enforcement entirely. This limits their ability to enforce per-tool authorization, trace agent reasoning steps, or monitor token usage across long-running interactions.</p>\n   <p dir=\"ltr\">By integrating MCP directly into the mesh dataplane, Linkerd introduces capabilities currently absent across the service networking ecosystem. These include cryptographically enforced zero-trust for AI agent calls, deep observability into prompt flows and session behavior, and adaptive traffic shaping designed for the bursty nature of agentic workloads.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Buoyant Announces MCP Support for Linkerd, Extending Service Mesh Capabilities to Agentic AI Traffic\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/buoyant-linkerd-mcp-support/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764158400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Buoyant 的 Linkerd 现在支持模型上下文协议 (MCP)，成为首个在 Kubernetes 中原生管理、保护和观测基于 Agent 的 AI 流量的服务网格。",
+  "oneSentenceSummary": "Buoyant 的 Linkerd 现在支持模型上下文协议 (MCP)，成为首个在 Kubernetes 中原生管理、保护和观测基于 Agent 的 AI 流量的服务网格。",
+  "summary": "文章宣布 Buoyant 的 Linkerd 服务网格现在支持模型上下文协议 (MCP)，使其成为首个在 Kubernetes 环境中原生管理、保护和观测基于 Agent 的 AI 流量的服务网格。 这一进步旨在通过为 AI 驱动的工作流程提供稳定、安全且完全可观测的运行时，来加速企业对 AI 的采用。 这些工作流程依赖于持久且长期的会话，并且本质上是不可预测、有状态和资源密集型的，这与传统的基于 API 的应用程序不同。 Linkerd 的 MCP 支持将核心网格功能（如可见性、访问控制和流量整形）直接扩展到 AI 代理工作负载，提供关于 Prompt 使用情况、延迟和资源消耗的详细指标，以及零信任访问控制。 文章强调，现有的服务网格（例如 Istio、Consul）和 API 网关并非为 MCP 的长期有状态会话而设计，需要复杂的自定义解决方案或提供有限的可见性。 通过将 MCP 直接集成到网格数据平面中，Linkerd 解决了关键的安全性和可观测性差距，为传统微服务和新兴 AI 代理通信提供了一个统一的控制平面。",
+  "mainPoints": [
+    {
+      "point": "Linkerd 的原生 MCP 支持直接解决了基于 Agent 的 AI 流量的独特安全性和可观测性挑战。",
+      "explanation": "与无状态 API 不同，AI 代理工作负载是不可预测且有状态的，这造成了重大差距，Linkerd 的新功能通过扩展经过验证的网格功能来解决这些差距。"
+    },
+    {
+      "point": "Linkerd 提供了全面的服务网格功能，包括增强的可见性、访问控制和流量整形，专门为 AI 代理设计。",
+      "explanation": "它将核心网格功能扩展到 MCP 驱动的工作流程，提供关于 Prompt 使用情况和延迟的关键指标，以及零信任安全性，而无需进行架构更改。"
+    },
+    {
+      "point": "Linkerd 的原生集成将 MCP 视为首要协议，从而在现有服务网络解决方案中提供了独特的优势。",
+      "explanation": "其他服务网格和 API 网关通常缺乏对 MCP 的长期会话和有状态性质的直接感知，从而导致复杂的解决方法和对 AI 代理行为的有限洞察。"
+    }
+  ],
+  "keyQuotes": [
+    "企业热衷于通过 AI 进行创新，但不能以牺牲安全态势和应用可靠性为代价。 Linkerd 通过将其经过验证的功能扩展到 MCP 流量来解决此问题，使组织能够使用这些工具来充满信心地加速 AI 的应用。",
+    "Linkerd 即将推出的 MCP 支持将核心网格功能（包括可见性、访问控制和流量整形）带给基于 Agent 的 AI 工作负载，而无需其他工具或架构更改。",
+    "虽然其他网格和 API 平台可以代理 MCP 流量，但目前没有平台将其视为首要协议。 这导致企业仍然需要通过为传统无状态 API 构建的基础设施来协调 AI 代理。",
+    "通过将 MCP 直接集成到网格数据平面中，Linkerd 引入了当前在服务网络生态系统中不存在的功能。"
+  ],
+  "tags": [
+    "服务网格",
+    "AI 代理",
+    "Linkerd",
+    "Kubernetes",
+    "模型上下文协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 667,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764158400000,
+  "publishDateStr": "2025-11-26",
+  "publishDateTimeStr": "2025-11-26 12:00:00"
+}

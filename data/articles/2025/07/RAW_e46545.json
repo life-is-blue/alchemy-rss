@@ -1,0 +1,58 @@
+{
+  "id": "RAW_e46545",
+  "title": "刚刚，Meta 宣布正式成立「超级智能实验室」！11 人豪华团队首曝光 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-01-2",
+  "date": "2025-07-01 02:51:05",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Meta 又有了新动向！</p>\n  <p>这几天，Meta 挖人简直挖疯了，先后夺走了 OpenAI 约十位员工，目前已公开确认有七人。</p>\n  <p>今天，据彭博社等最新消息，<strong>在周一给 Meta 员工的一份内部备忘录中，扎克伯格宣布重组公司人工智能团队（包括研究、基础设施和产品），合并到新成立的「Meta 超级智能实验室」（Meta Superintelligence Labs）。</strong></p>\n  <p>该部门将由数据标注初创公司 Scale AI 前 CEO Alexandr Wang 领导，并担任公司首席人工智能官。同时，扎克伯克还首次<strong>曝光了 11 位从 OpenAI、Anthropic、谷歌 DeepMind 那里挖来的顶尖人才。</strong></p>\n  <p>扎克伯格表示，MSL 将吸纳公司的各个团队，致力于开发 Llama 开源系列大模型、相关产品和基础人工智能研究项目等。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a69d7325-1a66-47f8-fca2-13948870d300/public\" data-ratio=\"0.4888888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493053\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/e254e8fd-5a55-4910-93ae-9edc837054a1/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>以下是扎克伯克完整的备忘录内容：</p>\n  <p>随着人工智能进步的加速，发展超级智能已指日可待。我相信这将是人类新纪元的开端，我本人将全力以赴，确保 Meta 引领这一进程。今天，我想详细介绍一下我们如何调整组织架构，以实现我们的愿景：「为每个人打造专属的超级智能」。</p>\n  <p>我们将把整个组织命名为「Meta 超级智能实验室」（Meta Superintelligence Labs，简称 MSL）。<strong>这包括我们所有的基础研究、产品和 FAIR 团队，以及一个新成立的专注于开发下一代模型的实验室。</strong></p>\n  <p>Alexandr Wang 已加入 Meta，担任我们的首席人工智能官<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">（Chief AI officer）</span>并领导 MSL。Alexandr 和我共事多年，我认为他是同辈创业者中最杰出的一位。他对超级智能的历史性意义有着清晰的认识，并且作为联合创始人兼 CEO，他将 ScaleAI 打造成了一家高速发展的公司，几乎参与了行业内所有领先模型的开发工作。</p>\n  <p>Nat Friedman 也已加入 Meta，将与 Alexandr 搭档共同领导 MSL，负责我们的 AI 产品和应用研究工作。Nat 将与康纳（Connor）一起确定他未来的具体职责。他曾负责微软旗下的 GitHub，最近则运营着一家领先的 AI 投资公司。过去一年，Nat 一直担任我们 Meta 顾问委员会的成员，因此对我们的路线图和所需行动已有深入了解。</p>\n  <p>此外，今天还有几位实力强劲的新成员加入，或是过去几周内已经加入，我也很高兴在此一并宣布：</p>\n  <ul>\n   <li>\n    <p><strong>Trapit Bansal</strong>&nbsp;— 思维链（CoT）强化学习技术开创者，OpenAI o 系列模型共同创建者。</p></li>\n   <li>\n    <p><strong>Shuchao Bi</strong>— GPT-4o 语音模式与 o4-mini 共同创建者，曾任 OpenAI 多模态后训练负责人。</p></li>\n   <li>\n    <p><strong>Huiwen Chang</strong>— GPT-4o 图像生成系统共同创建者，Google Research 期间发明 MaskGIT 及 Muse 文生图架构。</p></li>\n   <li>\n    <p><strong>Ji Lin</strong>&nbsp;— 参与开发 o3/o4-mini、GPT-4o、GPT-4.1、GPT-4.5、4o-imagegen 及 Operator 推理框架。</p></li>\n   <li>\n    <p><strong>Joel Pobar</strong>— Anthropic 推理系统专家，此前在 Meta 任职 11 年主导 HHVM/Hack/Flow/Redex 开发及性能工具与机器学习。</p></li>\n   <li>\n    <p><strong>Jack Rae</strong>— Gemini 预训练技术负责人及 Gemini 2.5 推理架构师，DeepMind 时期主导 Gopher/Chinchilla 早期大模型研发。</p></li>\n   <li>\n    <p><strong>Hongyu Ren（任泓宇）</strong>— GPT-4o/4o-mini/o1-mini/o3-mini/o3/o4-mini 共同创建者，曾任 OpenAI 后训练团队主管。</p></li>\n   <li>\n    <p><strong>Johan Schalkwyk</strong>— 前 Google Fellow，Sesame 系统早期贡献者，Maya 项目技术主管。</p></li>\n   <li>\n    <p><strong>Pei Sun</strong>— 谷歌 Deepmind Gemini 后训练 / 编程 / 推理架构师，曾主导 Waymo 近两代感知模型开发。</p></li>\n   <li>\n    <p><strong>Jiahui Yu（余家辉）</strong>— o3/o4-mini/GPT-4.1/GPT-4o 共同创建者，曾任 OpenAI 感知团队负责人，Gemini 多模态系统联合主管。</p></li>\n   <li>\n    <p><strong>Shengjia Zhao</strong>— ChatGPT/GPT-4/4.1/o3 共同创建者，曾任 OpenAI 合成数据团队主管。</p></li>\n  </ul>\n  <p>我对 Llama 4.1 和 4.2 的规划进展倍感振奋。这些模型驱动着 Meta AI—— 目前已在旗下应用收获超 10 亿月活跃用户，更有日益增长的智能体网络持续优化我们的产品与技术。我们将坚定不移地推进这些模型的迭代升级。</p>\n  <p>与此同时，<strong>我们将启动下一代模型的前沿研究，力争在未来一年左右达到技术巅峰。</strong>过去数月我遍访 Meta 内部、顶尖 AI 实验室及潜力初创企业，已为这项精英小团队计划组建核心班底。该团队仍在扩充中，后续将邀请公司 AI 体系内多位精英加入。</p>\n  <p>Meta 在向世界交付超级智能的进程中占据独特优势地位：我们拥有雄厚的业务实力支撑，能构建远超小型实验室规模的计算资源；具备服务数十亿用户的产品研发与增长经验；正开拓并引领高速增长的 AI 智能眼镜与可穿戴设备领域；更凭借企业架构优势，能以远胜同行的信念与魄力推进战略。</p>\n  <p>我坚信，此次人才涌入与模型研发的双轨并行策略，必将为<strong>「实现全民专属超级智能」</strong>的承诺奠定坚实基础。未来数周还将有更多顶尖人才加入各层级团队，敬请期待。我已准备好全力以赴投入这项工作。</p>\n  <p>目前，新加入 Meta 的人已经开始在社交媒体上宣传造势，比如 Jack Rae。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/abea518d-550d-4985-9abb-9870c084b600/public\" data-ratio=\"0.6611111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493057\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/e7b3828f-f111-4866-90ef-943b8925ae51/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>参考链接：</sup></p>\n  <p><sup>https://www.bloomberg.com/news/articles/2025-06-30/zuckerberg-announces-meta-superintelligence-effort-more-hires?srnd=phx-technology</sup></p>\n  <p><sup>https://www.cnbc.com/2025/06/30/mark-zuckerberg-creating-meta-superintelligence-labs-read-the-memo.html</sup></p>\n  <p><sup>https://www.theverge.com/news/695355/mark-zuckerberg-meta-ai-superintelligence-labs</sup></p>\n </body>\n</html>",
+  "aiSummary": "Meta 宣布成立超级智能实验室并引入 11 位顶尖 AI 人才，整合资源开发下一代大模型以实现全民专属超级智能愿景。",
+  "oneSentenceSummary": "Meta 宣布成立超级智能实验室并引入 11 位顶尖 AI 人才，整合资源开发下一代大模型以实现全民专属超级智能愿景。",
+  "summary": "Meta 宣布重组其人工智能团队，成立新的「Meta 超级智能实验室」（MSL），由 Scale AI 前 CEO Alexandr Wang 领导。该实验室将整合 Meta 的基础研究、产品和 FAIR 团队，专注于开发 Llama 开源系列大模型及下一代 AI 技术。Meta 从 OpenAI、Anthropic 和谷歌 DeepMind 挖来了 11 位顶尖人才，包括多位曾参与 GPT-4o、Gemini 等知名项目的专家。扎克伯格在内部备忘录中强调了 Meta 在超级智能领域的独特优势，包括计算资源、用户基础和产品经验，并提出了'为每个人打造专属的超级智能'的愿景。目前 Llama 4.1 和 4.2 已取得进展，驱动着 Meta AI 产品超过 10 亿月活跃用户。",
+  "mainPoints": [
+    {
+      "point": "Meta 成立超级智能实验室，整合 AI 资源",
+      "explanation": "Meta 通过成立 MSL，集中力量开发下一代大模型，提升其在 AI 领域的竞争力。新实验室将整合基础研究、产品和 FAIR 团队资源。"
+    },
+    {
+      "point": "引入 11 位顶尖 AI 人才，增强研发实力",
+      "explanation": "Meta 从 OpenAI、Anthropic 和谷歌 DeepMind 挖来 11 位核心人才，包括 GPT-4o、Gemini 等知名项目的创建者，显著提升技术实力。"
+    },
+    {
+      "point": "实施双轨并行研发策略",
+      "explanation": "Meta 同时推进现有 Llama 模型的迭代升级和下一代模型的前沿研究，采用精英小团队模式加速超级智能研发。"
+    },
+    {
+      "point": "扎克伯格强调 Meta 在超级智能领域的独特优势",
+      "explanation": "Meta 凭借计算资源、数十亿用户基础和产品经验，结合 AI 智能眼镜等硬件优势，有望在超级智能研发中占据领先地位。"
+    }
+  ],
+  "keyQuotes": [
+    "随着人工智能进步的加速，发展超级智能已指日可待。我相信这将是人类新纪元的开端，我本人将全力以赴，确保 Meta 引领这一进程。",
+    "Alexandr 和我共事多年，我认为他是同辈创业者中最杰出的一位。他对超级智能的历史性意义有着清晰的认识，并且作为联合创始人兼 CEO，他将 ScaleAI 打造成了一家高速发展的公司，几乎参与了行业内所有领先模型的开发工作。",
+    "Meta 在向世界交付超级智能的进程中占据独特优势地位：我们拥有雄厚的业务实力支撑，能构建远超小型实验室规模的计算资源；具备服务数十亿用户的产品研发与增长经验；正开拓并引领高速增长的 AI 智能眼镜与可穿戴设备领域；更凭借企业架构优势，能以远胜同行的信念与魄力推进战略。",
+    "我坚信，此次人才涌入与模型研发的双轨并行策略，必将为「实现全民专属超级智能」的承诺奠定坚实基础。"
+  ],
+  "tags": [
+    "Meta",
+    "超级智能",
+    "大模型",
+    "AI人才竞争",
+    "AI实验室"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1591,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751338265000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 02:51:05"
+}

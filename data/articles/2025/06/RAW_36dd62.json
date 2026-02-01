@@ -1,0 +1,55 @@
+{
+  "id": "RAW_36dd62",
+  "title": "Docker 发布强化基础镜像",
+  "url": "https://www.infoq.com/news/2025/06/docker-hardened-images/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-21 00:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   Docker has introduced a new range of security-focused base images designed for production use, aiming to reduce vulnerabilities and support secure software supply chains across containerised applications. \n   <p></p>\n   <p dir=\"ltr\">Docker Hardened Images (DHI) are a curated set of minimal images built from source using a<a href=\"https://www.docker.com/blog/introducing-docker-hardened-images\"> distroless approach</a>. By removing shells, package managers, and other unnecessary components, the images are designed to reduce the attack surface of containerised workloads significantly.</p>\n   <p dir=\"ltr\">According to Docker, the hardened images reduce the vulnerability footprint by up to<a href=\"https://www.docker.com/blog/introducing-docker-hardened-images\"> 95% compared to traditional base images</a>. Each image is maintained with automated patching and ongoing security updates, aiming for a near-zero number of known CVEs.<a href=\"https://www.docker.com/blog/introducing-docker-hardened-images\"> Critical and high-severity vulnerabilities are patched within seven days</a>, backed by a defined service-level agreement.</p>\n   <p dir=\"ltr\">The hardened images are designed to be drop-in replacements for popular base images, such as&nbsp;Alpine and Debian. Docker has focused on ensuring compatibility with existing Dockerfiles to minimise disruption to build pipelines. A<a href=\"https://www.docker.com/blog/introducing-docker-hardened-images\"> customisation layer</a> allows teams to add their own certificates, packages, and configuration files on top of the secure base.</p>\n   <p dir=\"ltr\">DHI images also include signed Software Bill of Materials (SBOMs) and provenance metadata, supporting increased transparency and supply chain visibility. These features may be particularly relevant for teams operating in regulated industries or security-sensitive environments, where additional assurance and traceability are valued.</p>\n   <p dir=\"ltr\">Docker has announced <a href=\"https://www.docker.com/press-release/announces-hardened-images-catalog-to-strengthen-enterprise-software-supply-chain-security/\">early integration partners, including Microsoft, GitLab, JFrog, NGINX, Sysdig, Wiz, and Sonatype.</a> These collaborations aim to ensure DHI works seamlessly with popular security and CI/CD tooling.</p>\n   <p dir=\"ltr\">In internal testing, Docker reports that swapping a standard Node.js image for a hardened variant led to a <a href=\"https://www.docker.com/blog/introducing-docker-hardened-images/\">98% reduction</a> in the number of installed packages and the elimination of known CVEs. The initial catalogue includes hardened images for common runtimes, including Python, Go, and Java.</p>\n   <p dir=\"ltr\">DHI is now available via Docker Hub, with access determined by Docker’s subscription tiers. The setup documentation and customisation tools are included as part of the release.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Docker Launches Hardened Base Images\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/docker-hardened-images/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750500000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Docker 发布强化镜像 (DHI)，这是一类最小且安全的基础镜像，能够将容器漏洞足迹减少高达 95 %。",
+  "oneSentenceSummary": "Docker 发布强化镜像 (DHI)，这是一类最小且安全的基础镜像，能够将容器漏洞足迹减少高达 95 %。",
+  "summary": "Docker 推出了 Docker 强化镜像 (DHI)，这是一套新的最小基础镜像，专为生产环境使用而设计，并采用无发行版方法构建。通过移除 shell 和包管理器等不必要的组件，这些镜像显著减小了攻击面，与传统镜像相比，已知漏洞减少高达 95 %。DHI 包括针对严重漏洞的自动化补丁，并带有 SLA 保障，同时提供签名的 SBOM 和出处元数据，以增强软件供应链安全。它们被设计为与现有 Dockerfile 兼容的直接替换品，并提供一个定制层。与 Microsoft 和 GitLab 等合作伙伴的早期集成确保了与 CI/CD 工具的兼容性。初始目录涵盖 Python、Go 和 Java 等运行时，可根据订阅级别通过 Docker Hub 获取。",
+  "mainPoints": [
+    {
+      "point": "强化镜像大幅减少容器漏洞足迹。",
+      "explanation": "通过采用无发行版方法并移除不必要的组件，DHI 与标准镜像相比，可将漏洞数量减少高达 95 %。"
+    },
+    {
+      "point": "自动化补丁和 SBOM 提高了安全性和合规性。",
+      "explanation": "DHI 包括持续的安全更新，针对严重问题提供 SLA 保障，并提供签名的 SBOM 以满足透明度和合规需求。"
+    },
+    {
+      "point": "镜像设计易于集成到现有工作流中。",
+      "explanation": "DHI 设计为带有定制层的直接替换品，与标准 Dockerfile 兼容，并通过合作关系集成了主要的 CI/CD 和安全工具。"
+    }
+  ],
+  "keyQuotes": [
+    "Docker 强化镜像 (DHI) 是一组精选的最小镜像，使用无发行版方法从源代码构建。",
+    "据 Docker 称，强化镜像与传统基础镜像相比，将漏洞足迹减少了高达 95 %。",
+    "严重和高危漏洞将在七天内获得补丁，并有明确的服务级别协议保障。",
+    "DHI 镜像还包括签名的软件物料清单 (SBOM) 和出处元数据，以支持提高透明度和供应链可见性。",
+    "在内部测试中，Docker 报告称，将标准 Node.js 镜像替换为强化变体后，已安装软件包数量减少了 98 %，并消除了已知的 CVE。"
+  ],
+  "tags": [
+    "容器安全",
+    "软件供应链",
+    "漏洞管理",
+    "企业安全",
+    "Docker"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 317,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750464000000,
+  "publishDateStr": "2025-06-21",
+  "publishDateTimeStr": "2025-06-21 00:00:00"
+}

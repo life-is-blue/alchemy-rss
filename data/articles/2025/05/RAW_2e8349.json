@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2e8349",
+  "title": "用 AI 创作手办照片：从灵感到提示词模板的实战案例",
+  "url": "https://baoyu.io/blog/ai-generated-hand-model-photos",
+  "date": "2025-05-09 16:27:40",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"hvjclit42f\">昨天分享的关于如何写提示词模板的帖子，主要提供了一些理论上的说明和一个实际案例。今天再补充一个案例，介绍如何以图片为基础作为参数，来设计提示词模板。</p>\n   <p data-id=\"w95usxxrts\">比如，我在 X 上看到一张很有意思的图片，是真人和手办合影的照片。当时我就在想，是不是能够实现上传一张照片后，AI就自动生成同样姿势的手办与真人同框合影？</p><img src=\"https://baoyu.io/uploads/2025-05-09-1746805073901-19917379-a741-4895-ad06-a0798c78b673.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"r4bv95aap8\">我手边已经有一个用于生成手办的提示词：</p>\n   <blockquote data-id=\"swkvz2zy5j\">\n    <p data-id=\"3rnpgm6urq\">hatsune miku cherry blossom edition anime figurine on a desk, casual shot as if from a smartphone, pastel pink hair, pastel pink and white clothes</p>\n   </blockquote>\n   <p data-id=\"mzrbtgpti5\">按照上一篇文章的思路，下一步就是借助 AI 帮我设计更适合的提示词。</p>\n   <p data-id=\"trj89hhgjr\">于是我将参考提示词和照片一起提交给了 ChatGPT：</p>\n   <blockquote data-id=\"5zx103jt8r\">\n    <p data-id=\"nid9gct9jg\">[ref] hatsune miku cherry blossom edition anime figurine on a desk, casual shot as if from a smartphone, pastel pink hair, pastel pink and white clothes [/ref] 参考上面的提示词，帮我设计一段中文提示词，可以根据我上传的人物照片，生成照片人物的相同姿势的手办，并且类似图片中在同框照片中。</p>\n   </blockquote>\n   <p data-id=\"1khmzo5jkv\">ChatGPT 帮我写了一个初版提示词：</p>\n   <blockquote data-id=\"ztt6fuyklm\">\n    <p data-id=\"pfxgyu3sym\">生成一个以真实人物照片为基础的手办模型，保持与照片中人物完全一致的姿势、表情和服装造型，风格精致细腻，头发和服装具有自然柔和的渐变色彩与细节质感，整体风格偏向日系动漫手办风。最终呈现为一张真实人物与其对应手办模型同框合影的效果图，人物摆放位置、构图布局及光照氛围与参考图片相似，画面视觉风格亲切生动、充满动漫感。</p>\n   </blockquote><img src=\"https://baoyu.io/uploads/2025-05-09-1746805327336-d9fd8863-b566-4f13-b786-9def25f32bf7.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"oxz8nd6fr5\">接下来我立刻进行了测试，发现这个提示词对照片本身的要求比较高，普通的生活照片效果一般。比如我随手找了张剧照进行测试：</p><img src=\"https://baoyu.io/uploads/2025-05-09-1746805379111-42bc0612-6c3e-40ee-b47d-234168e707c0.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"1pyp7uqtn5\">结果显示，生成的手办效果倒是不错，但真人部分与原始照片差距较大，存在失真现象。</p>\n   <p data-id=\"dleoxr3xpo\">这其实也是目前 AI 生成图片的常见问题：当参考图是真人的时候，生成效果往往不够理想。既然如此，我们可以灵活变通一下思路，干脆去掉真人部分，只生成对应的手办。</p>\n   <p data-id=\"4dmmv6qlbs\">于是我手动调整了提示词，删除了原提示词的后半部分：</p>\n   <blockquote data-id=\"yg5s9a3xs8\">\n    <p data-id=\"qzzts5pyn2\">生成一只摆放在桌面上的动漫手办，手机随手拍的休闲视角；以附件人物照片为基础的手办模型，保持与照片中人物完全一致的姿势、表情和服装造型，风格精致细腻，头发和服装具有自然柔和的渐变色彩与细节质感，整体风格偏向日系动漫手办风。</p>\n   </blockquote>\n   <p data-id=\"isxz4ycg49\">再次测试，效果明显改善：</p><img src=\"https://baoyu.io/uploads/2025-05-09-1746805901695-68ba0675-f6c3-4777-9526-ad0907a20b83.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"4gruj5awql\">但接下来我测试更多照片时，又遇到了新的问题：如果上传的是半身照，那么生成的手办也只显示半身，这样显然不是我想要的效果。</p><img src=\"https://baoyu.io/uploads/2025-05-09-1746806006196-ac055eaf-5257-4b6d-bc5c-99dc6308e9bc.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"72vetkughn\">虽然我可以手动继续调整，但我第一反应依旧是让 AI 来帮我。于是我把之前的提示词和新需求提供给了 ChatGPT：</p>\n   <blockquote data-id=\"w64r861gtc\">\n    <p data-id=\"mw5d0qxnkf\">[ref] 生成一只摆放在桌面上的动漫手办，手机随手拍的休闲视角；以附件人物照片为基础的手办模型，保持与照片中人物完全一致的姿势、表情和服装造型，风格精致细腻，头发和服装具有自然柔和的渐变色彩与细节质感，整体风格偏向日系动漫手办风。 [/ref] 完善上面的提示词，让它保证手办是全身完整的。</p>\n   </blockquote>\n   <p data-id=\"pe27c9u7rc\">这一次 ChatGPT 给我生成了一个新版本：</p>\n   <blockquote data-id=\"m13n8rnpn6\">\n    <p data-id=\"y7se1c6zem\">生成一张摆放于桌面上的动漫风格手办照片，以日常随手用手机拍摄的轻松休闲视角呈现。手办模型以附件中人物照片为基础，精确还原照片中人物的全身姿势、面部表情以及服装造型，确保手办全身完整呈现。整体设计精致细腻，头发与服饰采用自然柔和的渐变色彩与细腻质感，风格偏向日系动漫风，细节丰富，质感真实，观感精美。</p>\n   </blockquote>\n   <p data-id=\"d9hk4kxg8u\">值得一提的是，这里我并未继续之前的AI对话，而是新开了一个会话，因为此前我对提示词做过一些人工调整，如果继续之前的会话，会导致新提示词受到过往上下文的干扰，不如明确上下文后新建会话，这样效果更好。</p>\n   <p data-id=\"3fp8z3og0d\">再次测试，效果果然很好：</p><img src=\"https://baoyu.io/uploads/2025-05-09-1746806382299-34469f20-621c-461d-80db-f49da5d7c2a4.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"z83u23mj68\">之后我用其他照片做了更多测试，效果都非常不错，说明现在的提示词模板已基本稳定，可以投入实际使用了。</p><img src=\"https://baoyu.io/uploads/2025-05-09-1746806427999-8b3acdc8-213c-4eac-b95d-26998fd8c7a9.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"5ofsqyxob6\">当然，从提示词优化的角度来说，这个结果可能并非最精简的版本，也有网友提出可以更简洁。但本文的重点在于分享AI创作过程中的灵感与实践，希望带给你启发：</p>\n   <ul>\n    <li>\n     <p data-id=\"r504d7vh11\">从日常生活中寻找灵感，并尝试与 AI 技术结合，比如我看到有趣的照片就会想到用AI进行类似创作尝试；</p></li>\n    <li>\n     <p data-id=\"0ib1jtlt3g\">做任何事情之前，我首先会想 AI 能否帮我完成或优化，因此我习惯用 AI 协助写提示词、调整提示词，大大降低了项目启动门槛与优化效率；</p></li>\n    <li>\n     <p data-id=\"v9f71bbnx0\">强调人主导AI，而非过度依赖。AI 无法替你产生创意、主动发现问题或调整方案，但只要你具备好的创意与执行力，AI 会帮你事半功倍。</p></li>\n   </ul>\n   <p data-id=\"0x55qp2l5j\">以上就是一个小小案例，却体现了我日常如何借助 AI 进行高效创作的过程，希望对你也有所启发！</p></div>\n \n",
+  "aiSummary": "本文作者分享了如何通过上传照片并迭代优化提示词，利用 AI 生成高质量手办照片的实践案例，展示了 AI 在图像生成领域的应用和提示词工程的重要性。",
+  "oneSentenceSummary": "本文作者分享了如何通过上传照片并迭代优化提示词，利用 AI 生成高质量手办照片的实践案例，展示了 AI 在图像生成领域的应用和提示词工程的重要性。",
+  "summary": "本文作者分享了其利用 AI 生成手办照片的实践过程。他从一张真人与手办合影的照片中获得灵感，尝试使用 AI 生成类似效果。通过 ChatGPT，他以初始提示词和上传的照片为基础，生成初步的手办模型。在测试中，他发现真人参考图效果不佳，于是调整思路，专注于生成手办。随后，针对半身照生成的手办不完整问题，再次借助 ChatGPT 优化提示词，不断迭代优化提示词，最终获得了全身手办的理想效果。文章强调了在 AI 创作中，人应主导而非过度依赖 AI，并分享了从生活中寻找灵感、利用 AI 辅助优化提示词等经验。",
+  "mainPoints": [
+    {
+      "point": "AI 可以根据人物照片生成对应手办模型",
+      "explanation": "通过上传人物照片，并结合适当的提示词，AI 能够生成与照片中人物姿势、表情、服装相似的手办模型。"
+    },
+    {
+      "point": "提示词的迭代优化，结合人工干预，是提升 AI 生成手办效果的关键",
+      "explanation": "通过不断测试和调整提示词，并结合人工干预，可以逐步优化 AI 的生成效果，使其更符合需求。同时，针对不同问题，需要灵活调整提示策略。"
+    },
+    {
+      "point": "人应主导 AI 创作，而非过度依赖",
+      "explanation": "AI 可以辅助创作，但创意、问题发现和方案调整仍需人来主导。AI 是工具，好的创意和执行力才能让 AI 发挥更大价值。"
+    }
+  ],
+  "keyQuotes": [
+    "生成一个以真实人物照片为基础的手办模型，保持与照片中人物完全一致的姿势、表情和服装造型，风格精致细腻，头发和服装具有自然柔和的渐变色彩与细节质感，整体风格偏向日系动漫手办风。",
+    "AI 无法替你产生创意、主动发现问题或调整方案，但只要你具备好的创意与执行力，AI 会帮你事半功倍。",
+    "从日常生活中寻找灵感，并尝试与 AI 技术结合，比如我看到有趣的照片就会想到用 AI 进行类似创作尝试；"
+  ],
+  "tags": [
+    "AIGC",
+    "提示词工程",
+    "提示词模板",
+    "AI创作",
+    "人机协作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 90,
+  "wordCount": 1672,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746808060000,
+  "publishDateStr": "2025-05-09",
+  "publishDateTimeStr": "2025-05-09 16:27:40"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a1613956",
+  "title": "GitHub 新嵌入模型大幅提升代码搜索与上下文理解能力",
+  "url": "https://www.infoq.com/news/2025/10/github-embedding-model/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-10 10:27:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has introduced a <a href=\"https://github.blog/news-insights/product-news/copilot-new-embedding-model-vs-code/\">new embedding model</a> for Copilot, now integrated into <a href=\"https://code.visualstudio.com/\">Visual Studio Code</a>. The model is designed to improve how Copilot understands programming context, retrieves relevant code, and suggests completions. According to GitHub, this update provides a 37.6% improvement in retrieval quality, doubles throughput speed, and reduces memory usage for code indexing by a factor of eight.</p>\n   <p>The new model powers all of Copilot’s main modes: chat, agent, edit, and ask. Benchmarks shared by GitHub show that the average embedding score increased from 0.362 to 0.498. Developers writing in C# and Java reported noticeably better results, with the rate of accepted code suggestions roughly doubling. These gains suggest that Copilot can now better recognize intent in complex codebases and deliver more relevant snippets during everyday programming.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/10/github-embedding-model/news/2025/10/github-embedding-model/en/resources/1All_1200x630-1-1759941360303.webp\" style=\"width: 768px; height: 403px;\" src=\"https://res.infoq.com/news/2025/10/github-embedding-model/en/resources/1All_1200x630-1-1759941360303.webp\" rel=\"share\"></p>\n   <p>To train the system, GitHub used contrastive learning with <a href=\"https://medium.com/@mlshark/infonce-explained-in-details-and-implementations-902f28199ce6\">InfoNCE loss</a> and introduced a method called <a href=\"https://medium.com/@zilliz_learn/matryoshka-representation-learning-explained-the-method-behind-openais-efficient-text-embeddings-a600dfe85ff8\">Matryoshka Representation Learning</a>. This technique allows the model to handle embeddings at multiple levels of granularity, meaning it can represent both small code fragments and entire files effectively. The training process also relied on hard negatives, examples of code that appear similar but are functionally incorrect, to help the model better distinguish between valid and invalid suggestions. This approach is meant to reduce retrieval errors that occur when two pieces of code look nearly identical but differ in behavior.</p>\n   <p>Compared to other models in the field, such as <a href=\"https://blog.voyageai.com/2024/12/04/voyage-code-3/\">VoyageCode3</a>, <a href=\"https://www.nomic.ai/blog/posts/introducing-state-of-the-art-nomic-embed-code\">Nomic Embed Code</a>, and <a href=\"https://jina.ai/models/jina-embeddings-v2-base-code/\">Jina Code Embeddings</a>, GitHub’s approach is notable for its integration and optimization within the <a href=\"https://code.visualstudio.com/\">VS Code</a> environment. Competing models often emphasize benchmark scores or multilingual support, but GitHub’s focus on efficiency and memory reduction directly benefits the local developer experience. By compressing the <a href=\"https://www.sanity.io/docs/compute-and-ai/embeddings-index-api-overview#:~:text=An%20embeddings%20index%20is%20a,Get%20started\">embedding index</a>, the model can work faster without sacrificing retrieval accuracy, which is especially useful for developers working on large projects.</p>\n   <p>The introduction of this model is part of GitHub’s broader effort to make Copilot more <a href=\"https://en.wikipedia.org/wiki/Context_awareness\">context-aware</a>. While earlier versions of Copilot relied heavily on large language models for text prediction, the embedding layer now plays a larger role in understanding the structure of a codebase. Better embeddings mean Copilot can recall relevant functions, classes, and documentation with higher precision, reducing the need for repeated prompts and improving workflow speed.</p>\n   <p>In <a href=\"https://www.reddit.com/r/GithubCopilot/comments/1ntjmj4/github_copilot_gets_smarter_at_finding_your_code/\">Reddit</a>, developers raised immediate questions about how broadly the new embedding model is rolling out. User <a href=\"https://www.reddit.com/r/GithubCopilot/comments/1ntjmj4/comment/ngv0gow/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">Andrew Greenh</a> posted:&nbsp;</p>\n   <blockquote>\n    <p>I only see vscode mentioned, is this automatically in the cli as well?</p>\n   </blockquote>\n   <p>Meanwhile a less enthusiastic view from user <a href=\"https://www.reddit.com/r/GithubCopilot/comments/1ntjmj4/comment/ngv11i2/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">oVerde</a> appeared too:&nbsp;</p>\n   <blockquote>\n    <p>Oh this sounds like VSCode only, sad news.</p>\n   </blockquote>\n   <p>GitHub says it will continue to train on more languages and data sources and refine retrieval quality in future updates. Developers can already experience the improvements by updating to the latest version of Copilot in VS Code. The company’s roadmap includes expanding embedding coverage and further optimizing the balance between latency, memory use, and retrieval accuracy.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Introduces New Embedding Model to Improve Code Search and Context\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/github-embedding-model/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760092020000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 为 VS Code 版 Copilot 推出新型嵌入模型，显著提升代码搜索、上下文理解及检索效率。",
+  "oneSentenceSummary": "GitHub 为 VS Code 版 Copilot 推出新型嵌入模型，显著提升代码搜索、上下文理解及检索效率。",
+  "summary": "GitHub 为 Copilot 推出了一个先进的嵌入模型，现已集成到 Visual Studio Code 中，标志着 AI 辅助代码开发进入新阶段。该模型极大地增强了 Copilot 理解编程上下文、检索相关代码片段和提供准确建议的能力。关键性能指标包括检索质量提高了 37.6%，吞吐速度提高了一倍，代码索引的内存使用量减少了八倍。该模型的训练结合了使用 InfoNCE 损失的对比学习，并引入了 Matryoshka 表示学习，实现了多粒度代码表示，并提升了对功能相似但有错误代码的辨别能力。与竞争对手不同，GitHub 优先考虑在 VS Code 环境中进行深度集成和优化，专注于效率和内存减少，以提升本地开发者体验。然而，Reddit 等平台的用户反馈显示，他们关注该模型是否会在 VS Code 之外推广。这项举措是 GitHub 创建更具上下文感知能力的 Copilot、减少重复提示和简化工作流程的更广泛战略的一部分。未来的发展将扩大语言支持并进一步优化性能。",
+  "mainPoints": [
+    {
+      "point": "GitHub 的新嵌入模型显著提高了 Copilot 的代码检索准确性和运营效率。",
+      "explanation": "该模型在检索质量方面提高了 37.6%，吞吐量提高了一倍，内存使用量减少了 8 倍，从而提供更精准的代码建议，加快开发流程，特别是对于 C# 和 Java 开发人员。"
+    },
+    {
+      "point": "先进的机器学习技术，如 Matryoshka 表示学习，是该模型增强上下文理解的基础。",
+      "explanation": "通过利用带有 InfoNCE 损失的对比学习和 Matryoshka 表示学习，该模型可以处理多个粒度的代码，并区分细微的功能差异，从而提高建议的准确性。"
+    },
+    {
+      "point": "该模型通过深度 VS Code 集成和资源优化，优先考虑实际的开发者体验。",
+      "explanation": "GitHub 专注于 VS Code 环境中的效率和内存减少，这直接使大型项目上的开发人员受益，与竞争对手的模型相比，可以实现更快、更准确的本地操作。"
+    }
+  ],
+  "keyQuotes": [
+    "根据 GitHub 的数据，此更新使检索质量提高了 37.6%，吞吐速度提高了一倍，代码索引的内存使用量减少了八倍。",
+    "这些收益表明，Copilot 现在可以更好地识别复杂代码库中的意图，并在日常编程中提供更相关的代码片段。",
+    "这项技术使该模型能够处理多个粒度级别的嵌入，这意味着它可以有效地表示小代码片段和整个文件。",
+    "GitHub 专注于效率和内存减少，这直接有益于本地开发者体验。",
+    "更好的嵌入意味着 Copilot 可以更高精度地回忆相关函数、类和文档，从而减少重复提示的需要并提高工作流程速度。"
+  ],
+  "tags": [
+    "AI开发",
+    "嵌入模型",
+    "GitHub Copilot",
+    "Visual Studio Code",
+    "Matryoshka表示学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 477,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760092020000,
+  "publishDateStr": "2025-10-10",
+  "publishDateTimeStr": "2025-10-10 10:27:00"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_343242eb",
+  "title": "我 MiniMax，用实习生处理数据，照样屠榜开源大模型",
+  "url": "https://www.qbitai.com/2025/11/348698.html",
+  "date": "2025-11-04 05:16:04",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n    <br>\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>屠榜开源大模型的MiniMax M2是怎样炼成的？</p>\n  <p>为啥M1用了Linear Attention，到了M2又换成更传统的Full Attention了？</p>\n  <p>现在的大模型社区，可谓是被M2的横空出世搞得好不热闹。</p>\n  <p>面对现实任务，M2表现得非常扛打，在香港大学的AI-Trader模拟A股大赛中拿下了第一名，20天用10万本金赚了将近三千元。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121234_70e1ebc75022ac80cd3a9b4a6928eb34.png\" alt=\"图片\" data-imgfileid=\"100355732\" data-ratio=\"0.5138888888888888\" data-src=\"https://image.jido.dev/20251104121219_3291d3\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"1\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>而之所以能够站在聚光灯下，还有一个原因是M2身上着实有不少奇招。</p>\n  <p>除了注意力机制“回归传统”，M2在数据处理、思考模式上也是另辟蹊径，给开源社区带来了不一样的技术路径。</p>\n  <p>而且MiniMax还公开了这些招数背后的“棋谱”，接连发布三篇技术博客，将M2的技术细节娓娓道来。</p>\n  <p>博客一发布，本已讨论得热火朝天的大模型社区变得更热闹了，不乏有大佬给出自己的分析。</p>\n  <p>其中也包括质疑的声音，比如Thinking Machine Lab技术人员Songlin Yang就表示——</p>\n  <p>MiniMax团队敢于揭露Linear Attention的不足这点值得肯定，但他们的测试有问题，低估了Linear Attention的实力。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121224_4c4bdf393ea25ef6f3306db53184ba37.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251104121219_6d6396\" data-ratio=\"1.1611111111111112\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100355731\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"2\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>实际上，注意力机制的选择，也确实是M2相关问题当中最热门的一个。</p>\n  <p>M2团队选择的理由究竟是什么？三篇技术报告揭开了哪些秘密？</p>\n  <p>快搬起小板凳，我们一点点往下看。</p>\n  <h2>5202年了，还有人用Full Attention？</h2>\n  <p>就从网友们最好奇的Full Attention机制开始说起。</p>\n  <p>毕竟现在算力十分稀缺，MiniMax却没有选择更省算力的Linear和Hybrid等机制。</p>\n  <p>加上M2的上一代M1用的就是Linear Attention，这次却换了方案，更是给这个选择添上了几分神秘色彩。</p>\n  <p>这个问题看似复杂，但MiniMax的理由却非常简单有力——试出来的。</p>\n  <p>M2团队希望构建的是一个真正可用于商业部署的通用模型，所以稳定性和可靠性就成了优先考量。</p>\n  <p>一开始，他们确实也试了Efficient Attention，结果发现，用了这些机制之后的模型，虽然在小任务上表现尚可，但随着上下文长度的拉长，性能就大幅下降了。</p>\n  <p>一番折腾之后，团队最终决定放弃Efficient路径，转而回归稳定可靠的Full Attention。</p>\n  <p>而且团队试过的路比想象中多得多，Blog下方有网友追问，是否尝试更多的Linear Attention变体，比如GDN或Mamba2。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121224_0c3ee952465cd3608877f82188e9fd52.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251104121219_42960c\" data-ratio=\"0.27685185185185185\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100355728\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"3\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>而团队成员表示，这些方法也都尝试过，但结果只有一个——这些方法的实际表现都不及Full Attention。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121221_aeeced49ec2460143e55385e7967fee5.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251104121219_a6d9e2\" data-ratio=\"0.30092592592592593\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100355729\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"4\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>也就是说，Efficient Attention看似是命运的馈赠，实际上早已在暗中标好了价格。</p>\n  <p>M2的当头一棒，让人们开始意识到，所谓的“免费午餐”根本就不存在。</p>\n  <p>比如这位网友过去就认为，Lightning Attention与Full Attention混合起来效果和纯Full Attention是一样的，但他现在发现，对于复杂任务而言根本不是这么回事。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121222_ab49b4776ad4501491900aeaf9660c04.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251104121219_ad87be\" data-ratio=\"0.325\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100355730\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"5\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>不过MiniMax也并没有把其他Attention一棒子打死，M2团队探讨了这些Attention未来的改进方向。</p>\n  <p>但问题不是出在Attention本身，而是人们缺乏有效的评估系统。</p>\n  <p>M2团队指出，现在的模型评测系统不完善，很多常用榜单根本拉不开差距，造成了Efficient Attention表现能与Full Attention持平的假象。</p>\n  <p>可只要一遇到多跳推理或长链逻辑过程这种高端局，Efficient Attention就立马现原形。</p>\n  <p>推理基础设施也需要进一步提升——如何将理论计算复杂度优势转化为应用层面的速度和价格优势，是目前业界仍在攻克的方向。</p>\n  <p>总之，要想转化为实际生产力，需要提前构建更丰富的长文数据、更完善的评测体系、更贴近部署场景的实验范式，以及更稳定的训练与推理基建。</p>\n  <p>但随着Context Length越来越长，尤其是在Pretrain和Posttrain阶段都面临长上下文挑战的背景下，未来某个阶段GPU的增长速度可能赶不上数据长度增长带来的压力，那时Linear或Sparse结构的优势将会逐渐释放。</p>\n  <h2>想让模型做好推理，还得从数据开始</h2>\n  <p>现在骨架（模型）搭好了，该往里面填肉（数据）了，有意思的是，这件事，M2团队雇了一帮实习生来干，还把这个细节写到了博客里。</p>\n  <p>网友看了就很纳闷，直言自己get不到M2团队强调这个细节的目的。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121221_ee42f9016e978cec090b2bf0d0832123.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251104121219_8aae17\" data-ratio=\"0.3712962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100355734\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"6\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>面对这样犀利的提问，作者也是丝毫不卖关子。</p>\n  <p>之所以强调实习生呢，是想反衬出M2用的数据处理流程非常成熟，成熟到让没有经验的人来操作，一样可以达到预期效果。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251104121223_801c4fa88f3731d5fe7514b8753ef692.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251104121219_623c36\" data-ratio=\"0.16574074074074074\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100355733\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"7\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>说到底，M2团队是咋处理数据的？咱们接着往下看。</p>\n  <p>他们希望模型能够具有更强的泛化能力，也就是能够适应更多的任务类型。</p>\n  <p>确定了这个目标之后，筛选数据的标准自然也就有了。</p>\n  <p>M2团队把数据质量的衡量标准拆解成了思维链（CoT）和Response这两个关键维度。</p>\n  <p>CoT部分的标准很容易理解，逻辑完整、表述简洁，就是优质数据，符合我们的常识。</p>\n  <p>Response部分就更能体现M2团队的巧思了。</p>\n  <p>前面说过，团队的目的是想让模型适应更多场景，而在他们看来，Response数据，刚好就是症结所在——</p>\n  <p>过去的Response数据，对榜单格式的依赖已经达到过拟合了，导致换个环境就秒变战五渣。</p>\n  <p>所以，M2在数据合成时刻意引入了格式多样性。</p>\n  <p>当然只靠形式是不够的，数据内容本身，也要尽可能多地涉猎不同领域的任务。</p>\n  <p>好的数据要广泛吸纳，不好的数据则要及时剔除——</p>\n  <p>M2团队发现，模型表现出的所有问题，包括幻觉、指令未遵循等等，几乎都能从数据上找到根源。</p>\n  <p>所以在处理数据时，他们专门整理了一批典型的bad case，基于规则和大模型判断，构建了数据清洗流程，从而消灭这些“坏数据”。</p>\n  <p>数据范围更加广泛，质量也有了保障之后，接下来的事，就是扩大数据规模了。</p>\n  <h2>交叉思考，让模型不再“高分低能”</h2>\n  <p>在M2团队的实践过程中，有一个“高分低能”的问题贯穿始终——模型一考试成绩都很高，但到了真实场景就被虐得渣也不剩。</p>\n  <p>这个问题在Agent场景中也是如此，甚至同一个模型，在不同的Agent系统里体验差异也会非常大。</p>\n  <p>问题出在了哪里呢？M2团队对Agent执行任务的流程进行了拆解。</p>\n  <p>Agent在执行任务时，会分析用户的意图，然后做出任务规划，之后付诸执行，中间过程还会涉及外部工具的调用。</p>\n  <p>在传统的模型当中，Agent会在规划阶段进行思考，但到了执行环节，就变成了既没有思维也没有感情的机器。</p>\n  <p>但实际工作并不是能够完全依照原始规划进行的，如果不根据执行过程中遇到的实际情况对规划进行调整，那便是刻舟求剑，任务做不好就不是什么怪事了。</p>\n  <p>而要想根据每步的执行结果进行动态调整，就需要把原先只在开头进行的思考过程，复制到每一个关键节点。</p>\n  <p>所以，M2团队提出了“Interleaved Thinking”（交错式思维链）的策略。</p>\n  <p>这种策略让思考在显式推理与工具调用之间交替进行，并把推理结果持续带入后续步骤，这样一来原本冗长、重度依赖工具的任务，就变成了稳定的“计划→行动→反思”循环。</p>\n  <p>Interleaved Thinking保持了思维链的连贯性，使其在多轮交互中不断累积，更加接近人类的任务执行方式，也减少了状态漂移与重复性错误的产生。</p>\n  <p>实际应用当中效果也是立竿见影，不仅提升了模型在长链任务中的容错率，也显著增强了对环境扰动的适应能力。</p>\n  <p>除了新的思考模式，泛化也是M2团队自始至终在强调的一个关键指标。</p>\n  <p>他们发现，即便模型的工具调用能力得到大幅提升，但只要换个框架，模型依然容易失控。</p>\n  <p>怎么办呢？简单说，菜就多练——M2团队选择从训练数据下手。</p>\n  <p>他们设计了一整套覆盖全轨迹扰动的数据链路，在构建训练样本时，他们不仅模拟了工具本身的变化，还覆盖了系统提示语、环境参数变化、用户反复提问、工具返回异常等多种情况。</p>\n  <p>看上去指标很复杂，但简单概括就是，让这些训练数据尽可能多地去模拟真实使用场景，在训练中就学会如何在不确定性中完成任务。</p>\n  <h2>能实现落地，才是好选择</h2>\n  <p>回看M2的结构选择，MiniMax并不是为了“回归传统”而选择Full Attention。</p>\n  <p>相反，在Efficient Attention广受追捧的当下，坚持使用Full Attention恰恰体现了团队更偏工程理性的判断——优先考虑模型在真实任务中的稳定性与可用性，而非盲目追求资源的节省。</p>\n  <p>这并非首次类似决策，例如早在MoE架构尚未成为行业主流前，MiniMax就已投入探索，并取得阶段性成果。</p>\n  <p>彼时，选择MoE的厂商寥寥，MiniMax却凭借自身理解做出了不同判断，并最终验证了可行性。</p>\n  <p>可以看出，MiniMax不仅拥有深刻的技术洞察，更突出以实用性为导向，在M2上，这种思路也表现得尤为明确——</p>\n  <p>它不是一个为参数堆叠而生的“炫技模型”，而是为开发者准备的落地工具，强调解释逻辑、兼顾系统性，并不断通过社区反馈与真实使用场景持续迭代。</p>\n  <p>在今天这个“结构百花齐放”的阶段，MiniMax展示的，不只是模型能力本身，更是一套面向复杂现实问题的思考方式。</p>\n  <p>比起抢占某个风口，拥有一套稳定可用、被理解并认可的工程体系，也许更具意义。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章深入解析 MiniMax M2 大模型在注意力机制、数据处理和思维链上的工程理性选择，揭示其屠榜开源社区背后的技术路径。",
+  "oneSentenceSummary": "文章深入解析 MiniMax M2 大模型在注意力机制、数据处理和思维链上的工程理性选择，揭示其屠榜开源社区背后的技术路径。",
+  "summary": "文章深入剖析了 MiniMax M2 大模型在屠榜开源大模型榜单之后，其背后独特的技术路径和工程理性选择。首先，它解释了 M2 为何放弃上一代 M1 的 Linear Attention，转而采用更传统的 Full Attention，强调了在追求商业部署通用模型时，稳定性和可靠性优先于算力节省的工程理性。其次，文章揭示了 M2 独特的数据处理流程，如何通过强调实习生参与来凸显其流程的成熟度，并着重于数据质量、泛化能力和 bad case 清洗。此外，M2 提出的“交错式思维链”（Interleaved Thinking）策略，通过在推理与工具调用之间交替思考，有效解决了模型在长链任务中“高分低能”的问题，显著提升了容错率和环境适应性。文章总结 MiniMax M2 并非为炫技而生，而是以实用性为导向，为开发者提供落地工具，展现了其面向复杂现实问题的深刻思考方式。",
+  "mainPoints": [
+    {
+      "point": "M2 选择 Full Attention 而非高效注意力机制，优先保障模型在商业部署中的稳定性与可靠性。",
+      "explanation": "MiniMax 团队通过大量实验发现，高效注意力机制在小任务上表现尚可，但在长上下文复杂任务中性能大幅下降，因此为追求通用模型的稳定可靠性，回归更成熟的 Full Attention。"
+    },
+    {
+      "point": "M2 采用高度成熟的数据处理流程，通过强调实习生参与凸显其可操作性、质量保障及泛化能力。",
+      "explanation": "团队将数据质量拆解为思维链和 Response 维度，引入格式多样性，并基于规则和大模型判断清洗 bad case，确保数据广泛性和高质量，以提升模型泛化能力。"
+    },
+    {
+      "point": "M2 引入“交错式思维链”策略，通过持续思考解决模型在复杂长链任务中的“高分低能”问题。",
+      "explanation": "该策略使模型在推理与工具调用间交替思考，形成“计划→行动→反思”循环，显著提升了模型在 Agent 场景中的容错率和对环境扰动的适应能力。"
+    }
+  ],
+  "keyQuotes": [
+    "M2 团队希望构建的是一个真正可用于商业部署的通用模型，所以稳定性和可靠性就成了优先考量。",
+    "M2 的当头一棒，让人们开始意识到，所谓的'免费午餐'根本就不存在。",
+    "M2 团队发现，模型表现出的所有问题，包括幻觉、指令未遵循等等，几乎都能从数据上找到根源。",
+    "Interleaved Thinking 保持了思维链的连贯性，使其在多轮交互中不断累积，更加接近人类的任务执行方式，也减少了状态漂移与重复性错误的产生。",
+    "MiniMax 不仅拥有深刻的技术洞察，更突出以实用性为导向，在 M2 上，这种思路也表现得尤为明确------它不是一个为参数堆叠而生的'炫技模型'，而是为开发者准备的落地工具。"
+  ],
+  "tags": [
+    "大语言模型",
+    "MiniMax",
+    "M2",
+    "注意力机制",
+    "数据处理"
+  ],
+  "topicTag": "other",
+  "readTime": 15,
+  "score": 91,
+  "wordCount": 3621,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762233364000,
+  "publishDateStr": "2025-11-04",
+  "publishDateTimeStr": "2025-11-04 05:16:04"
+}

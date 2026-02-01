@@ -1,0 +1,54 @@
+{
+  "id": "RAW_928311",
+  "title": "一次又一次的「开发者要被取代了」的炒作潮",
+  "url": "https://baoyu.io/translations/the-recurring-cycle-of-developer-replacement-hype",
+  "date": "2025-05-27 22:59:52",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://alonso.network/the-recurring-cycle-of-developer-replacement-hype/\">The Recurring Cycle of 'Developer Replacement' Hype</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <img src=\"https://alonso.network/content/images/size/w960/2025/05/recurring-cycles.png\" data-width=\"100%\" data-align=\"center\" alt=\"周期性的「开发者被取代」炒作潮\">\n   <h2 data-id=\"2ym03m3frz\" id=\"2ym03m3frz\" data-toc-id=\"2ym03m3frz\">从「无代码」到「AI 辅助开发」</h2>\n   <p data-id=\"b6m0ags129\">每隔几年，总会冒出一种全新的技术，声称可以彻底取代程序员。各种夸张的新闻标题接踵而来，比如「编程的终结」、「人人都能开发App」，甚至还有我最喜欢的一条：「我的孩子五岁还没学会识字，就会写代码了！」</p>\n   <p data-id=\"lchdnbrf9s\">高管们为之振奋，咨询师们像鲨鱼般蜂拥而至，PPT 幻灯片疯狂增长，预算也随之倾斜。</p>\n   <p data-id=\"tf34hmsheg\">然后，现实终于到来了。</p>\n   <p data-id=\"5bdr4qxg95\"><strong>真正发生的并不是取代，而是转型。</strong> 那些号称能让技术岗位消失的新技术，最终却催生了全新的技术岗位，并且这些新岗位通常薪资更高。无代码（NoCode）运动并未淘汰程序员，而是创造了无代码专家和后台整合工程师。云计算也没有淘汰系统管理员，而是将他们转型为薪水翻倍的 DevOps 工程师。</p>\n   <p data-id=\"dkcqspyc4j\">如今，我们正目睹着同样的现象再次发生在 AI 辅助开发领域。「AI 能为你写全部代码」的承诺，逐渐演变成需要工程师来有效组织和调控 AI 系统。这些人本质上还是原来的工程师，但需要具备新技能，并获得更高的薪酬。</p>\n   <p data-id=\"97b2u0mtvb\">但这一次的转型有更深刻的含义。不同于以往只改变实现方式的技术变革，AI 辅助开发清晰地揭示出软件工程中的一个根本真相：</p>\n   <p data-id=\"s3oshnjpw0\"><strong>软件行业中最宝贵的技能不是写代码，而是设计和构建系统的架构。</strong></p>\n   <p data-id=\"63buvpl4xk\">而这，恰恰是 AI 至今远未能取代的技能。</p>\n   <h2 data-id=\"x2ybfdnfgf\" id=\"x2ybfdnfgf\" data-toc-id=\"x2ybfdnfgf\">一再重复的「开发者被取代」神话</h2>\n   <p data-id=\"o3m7ie054g\">回顾一下历史，我们已经经历了多少次类似的「革命」呢？我们一起来数数看：</p>\n   <h3 data-id=\"x5nuj1y13l\" id=\"x5nuj1y13l\" data-toc-id=\"x5nuj1y13l\">无代码/低代码革命</h3>\n   <p data-id=\"0vk84g3jtp\">还记得那些承诺「让业务人员通过拖拽就能开发 App」的工具吗？当初的说法听起来很动人：「既然人人都能自己搭建应用，为什么还要雇佣昂贵的程序员呢？」</p>\n   <p data-id=\"1ugsmi9dt0\">可现实呢？这些工具带来了新的问题：背后的数据模型还是要人来设计，跟已有系统的对接依然复杂，边缘情况无法通过图形化界面解决，维护和升级同样离不开技术人员。</p>\n   <p data-id=\"8molnehsew\">最终，这些工具没减少开发人员，反而催生了一批懂业务又懂技术局限性的「无代码专家」。而且，这些专家的薪资甚至超过了当初被宣称会取代的程序员。</p>\n   <h3 data-id=\"7azkfjq62k\" id=\"7azkfjq62k\" data-toc-id=\"7azkfjq62k\">云计算革命</h3>\n   <p data-id=\"d6whwncc4t\">「迁移到云上后，你再也不需要系统管理员了！」</p>\n   <p data-id=\"kmv6rm3e9s\">仿佛把服务器托管给别人，就真的不需要管理了似的。实际情况却是，云计算没有消除系统运维的需求，而是改变了运维工作的形态，并极大地拓展了运维工作的范畴。</p>\n   <p data-id=\"u1axzgljjy\">系统管理员们并没有消失，他们重生为 DevOps 工程师，有了新的高大上的职称和明显更高的收入。工作内容并未消失，而是演变成了基础设施即代码、自动化部署流程和分布式系统管理。</p>\n   <p data-id=\"aiaenwair1\">正如我之前在 LinkedIn 关于微服务的<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.linkedin.com/posts/danilo-alonso_softwarearchitecture-microservicesdebate-activity-7327489408041984001-xqL-?ref=alonso.network\">帖子</a>中所写：「我看过很多团队花费数月时间将功能完好的单体应用拆成微服务，最后却发现他们只是在用更昂贵的新问题换掉旧问题。」云计算推动了这种复杂性，而处理这种复杂性的人依然是技术专家，只不过工作层次更高了。</p>\n   <h3 data-id=\"z6jyi3d2t6\" id=\"z6jyi3d2t6\" data-toc-id=\"z6jyi3d2t6\">海外外包开发潮</h3>\n   <p data-id=\"l4bgn39w6v\">「既然可以用更便宜的价格在海外完成开发，为什么还要付高薪请本地的程序员？」</p>\n   <p data-id=\"tqmlknjkbf\">成本大幅降低的承诺，很快碰到了现实的障碍：沟通不畅、质量控制困难，以及开发过程中深度的背景知识和持续的协作需求。</p>\n   <p data-id=\"56diqbo4v9\">最后出现的方案，是更精细的分工、更清晰的职责界限、更成熟的架构实践，以及——意料之外的——更高的综合成本。</p>\n   <h3 data-id=\"p7so8vrqqg\" id=\"p7so8vrqqg\" data-toc-id=\"p7so8vrqqg\">AI 编程助手革命</h3>\n   <p data-id=\"gcr8ijssd6\">如今又有 AI 出来宣称「只要你描述一下需求，AI 就会自动生成代码！」</p>\n   <p data-id=\"wfxxz7tp55\">但现实很快浮现：AI 写出的代码虽然看起来合理，却经常隐藏着细微的错误和不一致性。资深工程师花费大量时间检查和修正 AI 生成的代码。所谓的「意念编程」（vibe coding）现象表明，经验丰富的开发人员能从 AI 中获得远多于新手的价值。纯靠 AI 搭建的系统，往往缺乏整体性和架构一致性。</p>\n   <blockquote data-id=\"8i5pdm57n7\">\n    <p data-id=\"pm19hxn822\">「在木匠们还在使用凿子的时代，你给木匠们送一台数控机床。你猜谁能做出更好的家具？」</p>\n   </blockquote>\n   <p data-id=\"r5dxfohej3\">模式再次重演：技术没有取代技能，而是把技能推到了更高的抽象层次。</p>\n   <h2 data-id=\"55glsl58th\" id=\"55glsl58th\" data-toc-id=\"55glsl58th\">为什么这次的情况有些不同？</h2>\n   <p data-id=\"wfgt3gdcqm\">那些认为「AI 将取代程序员」的人，忽略了一个重要事实：<strong>代码并不是资产，而是负债</strong>。每行代码都需要被维护、调试、安全防护，并最终被替换掉。真正的资产是代码背后的业务能力。</p>\n   <p data-id=\"4i1nnr0jev\">如果 AI 大幅降低了写代码的成本和速度，那其实是在让人们更快、更轻易地制造更多的负担。当负担的产生速度空前提升时，能够战略性地管理、减少这些负担的人才价值也会随之大幅提升。</p>\n   <p data-id=\"e8q9zxjdgy\">尤其因为 AI 擅长局部优化，却无法进行整体设计。它能优化单个函数，却无法决定服务是否应该存在，或服务应如何与更广泛的系统协作。当开发速度加快时，架构问题往往会在你意识到之前就已深度植入系统之中。</p>\n   <p data-id=\"6mvl01nrqu\">对于搭建短期使用的营销网站，这可能无伤大雅；但对需要长期演进的系统，这种情况将是灾难性的。</p>\n   <p data-id=\"a8bejsecib\">虽然技术转型的模式始终如一——系统管理员变成了 DevOps 工程师，后台开发变成了云架构师——但 AI 正在加速这一过程。而最终留下来的技能，不是写代码。</p>\n   <p data-id=\"3yr8l859n9\">而是设计和构建系统的架构。这，正是 AI 无法取代的核心能力。</p>\n   <p data-id=\"ng00dzc5yd\">（完）</p>\n   <h2 data-id=\"nh1xujpg4m\" id=\"nh1xujpg4m\" data-toc-id=\"nh1xujpg4m\">译注</h2>\n   <p data-id=\"z29qfl3boa\">文章中木匠和CNC机床是个有趣的例子，传统的手工木匠，他们靠简单工具和扎实的手工技能打造家具。“数控机床”则代表最新技术的辅助工具。它能自动、高效地切割、加工木材，大幅提高生产效率。当先进技术出现时，真正优秀的不是工具，而是驾驭工具的高手。</p>\n   <ol>\n    <li>\n     <p data-id=\"k9bw5pi7ox\">工具提高了生产力，但不自动提高创造力。 CNC机床的确能够更精准、更快速地生产家具，但它本身并不会「设计」出精美的家具。真正决定家具美观和质量的，始终是设计和架构它的人——也就是“木匠”。</p></li>\n    <li>\n     <p data-id=\"y7nr2guboo\">高手掌握新工具后，价值会成倍增长。 给一个新手或普通人一台先进的数控机床，他可能只会用来制作简单粗糙的家具； 给一个经验丰富的木工大师同样的设备，他则能设计并创造出精妙绝伦的艺术品级家具。</p></li>\n    <li>\n     <p data-id=\"updcdbvc8u\">工具的价值在于放大使用者的能力。 新工具能把高手和普通人的差距迅速拉大，而不是缩小。懂设计、懂构造、懂木材属性的高级木工，会更快地利用新工具创造出超越传统水准的作品；而不懂设计、不懂木材的新手，使用再先进的工具，也只会做出平庸的产品。</p></li>\n   </ol>\n   <p data-id=\"9r0lt36bts\">传统的程序员（木匠）靠自身对技术和架构的深刻理解（凿子的技能）来创造系统。AI代码助手（数控机床）则能自动、快速生成代码，但并不能取代程序员对架构、设计、业务理解的需求。</p>\n   <p data-id=\"a9auqcvfdl\">在AI时代：</p>\n   <ul>\n    <li>\n     <p data-id=\"rbfg9w9htn\">普通开发者 可能只是简单使用AI自动生成代码，最终做出的产品缺乏架构性和创新性；</p></li>\n    <li>\n     <p data-id=\"r11l2g0v7l\">高级开发者（系统架构师） 则能善用AI辅助开发工具，专注于系统设计、整体规划与优化，从而做出更优秀、更复杂、更稳健的系统。</p></li>\n   </ul>\n   <p data-id=\"ia2b5irew2\">真正决定最终成果的不是工具本身，而是使用工具的人所具备的设计与架构能力。技术越先进，越需要的是具备高阶技能的人来驾驭它们。代码生成AI无法取代系统架构师，反而会让擅长架构设计的人变得更加重要，市场价值更高。</p></div>\n \n",
+  "aiSummary": "文章探讨了技术变革并非取代而是转型，强调软件架构而非代码是核心价值。",
+  "oneSentenceSummary": "文章探讨了技术变革并非取代而是转型，强调软件架构而非代码是核心价值。",
+  "summary": "本文深入分析了历史上多次「开发者被取代」的炒作潮，从无代码、云计算到海外外包和如今的 AI 编程助手。作者论证了这些技术并未淘汰开发者，而是推动了开发者角色的转型和技能升级，催生了如无代码专家、DevOps 工程师等薪资更高的岗位。文章提出核心观点，认为软件行业最宝贵的技能不是写代码，而是设计和构建系统的架构。AI 加速代码生成，但代码本身是负债，AI 擅长局部优化而非整体设计，这使得能够管理、减少负债并进行整体架构的人才价值愈发突出。结论是技术越先进，越需要具备高阶设计和架构能力的人来驾驭。",
+  "mainPoints": [
+    {
+      "point": "技术变革促使开发者角色转型而非消失",
+      "explanation": "回顾历史上的无代码、云计算等浪潮，它们最终都催生了新的、通常薪资更高的技术岗位，而非简单取代原有职位。"
+    },
+    {
+      "point": "软件行业的真正价值在于架构设计，而非代码本身",
+      "explanation": "代码是需要维护的负债，而系统架构是核心资产；AI 加速代码生成，反而增加了管理负债的需求。"
+    },
+    {
+      "point": "AI 编程助手提升了架构师和资深开发者的价值",
+      "explanation": "AI 擅长局部代码生成，但缺乏整体系统设计能力，使得具备高阶架构思维的人才更加稀缺和重要。"
+    }
+  ],
+  "keyQuotes": [
+    "真正发生的并不是取代，而是转型。",
+    "软件行业中最宝贵的技能不是写代码，而是设计和构建系统的架构。",
+    "代码并不是资产，而是负债。",
+    "AI 擅长局部优化，却无法进行整体设计。"
+  ],
+  "tags": [
+    "开发者职业",
+    "技术变革",
+    "软件架构",
+    "软件工程",
+    "AI编程助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2622,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748386792000,
+  "publishDateStr": "2025-05-27",
+  "publishDateTimeStr": "2025-05-27 22:59:52"
+}

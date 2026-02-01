@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ebfcd89d",
+  "title": "使用 MCP 进行代码执行：构建更高效的 AI 智能体",
+  "url": "https://simonwillison.net/2025/Nov/4/code-execution-with-mcp/#atom-everything",
+  "date": "2025-11-04 23:56:24",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://www.anthropic.com/engineering/code-execution-with-mcp\">Code execution with MCP: Building more efficient agents</a></strong> (<a href=\"https://x.com/AnthropicAI/status/1985846791842250860\" title=\"@AnthropicAI\">via</a>) When I <a href=\"https://simonwillison.net/2025/Oct/16/claude-skills/\">wrote about Claude Skills</a> I mentioned that I don't use MCP at all any more when working with coding agents - I find CLI utilities and libraries like Playwright Python to be a more effective way of achieving the same goals.</p>\n   <p>This new piece from Anthropic proposes a way to bring the two worlds more closely together.</p>\n   <p>It identifies two challenges with MCP as it exists today. The first has been widely discussed before: all of those tool descriptions take up a lot of valuable real estate in the agent context even before you start using them.</p>\n   <p>The second is more subtle but equally interesting: chaining multiple MCP tools together involves passing their responses through the context, absorbing more valuable tokens and introducing changes for the LLM to make additional mistakes.</p>\n   <p>What if you could turn MCP tools into code functions instead, and then let the LLM wire them together with executable code?</p>\n   <p>Anthropic's example here imagines a system that turns MCP tools into TypeScript files on disk, looking something like this:</p>\n   <div class=\"highlight highlight-source-ts\">\n    <pre><span class=\"pl-c\">// ./servers/google-drive/getDocument.ts</span>\n<span class=\"pl-k\">interface</span> <span class=\"pl-smi\">GetDocumentInput</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-c1\">documentId</span>: <span class=\"pl-smi\">string</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span>\n<span class=\"pl-k\">interface</span> <span class=\"pl-smi\">GetDocumentResponse</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-c1\">content</span>: <span class=\"pl-smi\">string</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span>\n<span class=\"pl-c\">/* Read a document from Google Drive */</span>\n<span class=\"pl-k\">export</span> <span class=\"pl-k\">async</span> <span class=\"pl-k\">function</span> <span class=\"pl-en\">getDocument</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">input</span>: <span class=\"pl-smi\">GetDocumentInput</span><span class=\"pl-kos\">)</span>: <span class=\"pl-smi\">Promise</span><span class=\"pl-c1\">&lt;</span><span class=\"pl-smi\">GetDocumentResponse</span><span class=\"pl-c1\">&gt;</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-k\">return</span> <span class=\"pl-en\">callMCPTool</span><span class=\"pl-c1\">&lt;</span><span class=\"pl-smi\">GetDocumentResponse</span><span class=\"pl-c1\">&gt;</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">'google_drive__get_document'</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">input</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre>\n   </div>\n   <p>This takes up no tokens at all - it's a file on disk. In a similar manner to Skills the agent can navigate the filesystem to discover these definitions on demand.</p>\n   <p>Then it can wire them together by generating code:</p>\n   <div class=\"highlight highlight-source-ts\">\n    <pre><span class=\"pl-k\">const</span> <span class=\"pl-s1\">transcript</span> <span class=\"pl-c1\">=</span> <span class=\"pl-kos\">(</span><span class=\"pl-k\">await</span> <span class=\"pl-s1\">gdrive</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">getDocument</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">{</span> <span class=\"pl-c1\">documentId</span>: <span class=\"pl-s\">'abc123'</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">content</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">await</span> <span class=\"pl-s1\">salesforce</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">updateRecord</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">{</span>\n  <span class=\"pl-c1\">objectType</span>: <span class=\"pl-s\">'SalesMeeting'</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-c1\">recordId</span>: <span class=\"pl-s\">'00Q5f000001abcXYZ'</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-c1\">data</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">Notes</span>: <span class=\"pl-s1\">transcript</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre>\n   </div>\n   <p>Notably, the example here avoids round-tripping the response from the <code>gdrive.getDocument()</code> call through the model on the way to the <code>salesforce.updateRecord()</code> call - which is faster, more reliable, saves on context tokens, and avoids the model being exposed to any potentially sensitive data in that document.</p>\n   <p>This all looks very solid to me! I think it's a sensible way to take advantage of the strengths of coding agents and address some of the major drawbacks of MCP as it is usually implemented today.</p>\n   <p>There's one catch: Anthropic outline the proposal in some detail but provide no code to execute on it! Implementation is left as an exercise for the reader:</p>\n   <blockquote>\n    <p>If you implement this approach, we encourage you to share your findings with the <a href=\"https://modelcontextprotocol.io/community/communication\">MCP community</a>.</p>\n   </blockquote>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9135/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 提出通过将模型上下文协议 (MCP) 工具转换为可执行代码函数，以减少 token 使用并提高 AI 智能体的效率和可靠性。",
+  "oneSentenceSummary": "Anthropic 提出通过将模型上下文协议 (MCP) 工具转换为可执行代码函数，以减少 token 使用并提高 AI 智能体的效率和可靠性。",
+  "summary": "本文讨论了 Anthropic 提出的旨在解决 AI 智能体代码执行中模型上下文协议 (MCP) 关键局限性的方案。该方案主要针对两个挑战：工具描述消耗的大量上下文 token，以及通过 LLM 上下文传递响应来串联工具所导致的效率低下和潜在错误。为此，该方案建议将 MCP 工具转换为可发现的代码函数（例如，磁盘上的 TypeScript 文件），从而允许 LLM 生成直接可执行的代码来编排这些函数，避免了将中间结果传递回模型的过程。作者 Simon Willison 认为该方法具有较强的可行性，并强调其在提升执行速度和可靠性、节省 token 以及增强数据隐私方面的潜力。然而，该提案目前缺乏实现代码，实际开发工作将由社区主导。",
+  "mainPoints": [
+    {
+      "point": "当前的 MCP 设计导致过多的上下文 token 消耗和工具链中的潜在错误。",
+      "explanation": "通过 LLM 上下文传递的工具描述和中间响应会消耗宝贵的 token，并为模型出错创造机会，从而阻碍智能体的效率和可靠性。"
+    },
+    {
+      "point": "Anthropic 提出将 MCP 工具转换为可发现的、可执行的代码函数。",
+      "explanation": "通过将 MCP 工具转换为磁盘上的代码文件，智能体可以直接生成和执行代码来编排函数，从而绕过 LLM 往返过程以获取中间数据，进而提高性能。"
+    },
+    {
+      "point": "所提出的方法提高了 AI 智能体的速度、可靠性、token 效率和数据隐私。",
+      "explanation": "与传统的 MCP 链接相比，直接代码执行避免了将敏感数据暴露给模型，并减少了上下文 token 的使用，从而加快了 AI 智能体的运行速度，并提高了其稳健性。"
+    }
+  ],
+  "keyQuotes": [
+    "如果可以将 MCP 工具转换为代码函数，然后让 LLM 使用可执行代码将它们连接在一起，会怎么样？",
+    "值得注意的是，此处的示例避免了在 `gdrive.getDocument()` 调用到 `salesforce.updateRecord()` 调用的过程中，通过模型往返传输响应——这更快、更可靠，节省了上下文 token，并避免了模型暴露于该文档中任何潜在的敏感数据。",
+    "我认为这是一个非常可靠的方案！我认为这是一种明智的方法，可以利用编码智能体的优势，并解决 MCP 在当今通常实现方式中的一些主要缺点。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "代码执行",
+    "LLM 效率",
+    "模型上下文协议 (MCP)",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 402,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762300584000,
+  "publishDateStr": "2025-11-04",
+  "publishDateTimeStr": "2025-11-04 23:56:24"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_fe4933",
+  "title": "如何使用 Gemini 把播客转成格式良好文本",
+  "url": "https://baoyu.io/blog/gemini-podcast-to-text",
+  "date": "2025-02-23 16:36:18",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"t8w6zm60vq\">很多朋友跟我一样，日常有把视频、播客、会议记录音频转成文本的需求，尤其是要识别出发言人，把发言人和发言内容对上，这样可以节约大量时间去听几个小时视频，而且不会漏掉重点，毕竟文字阅读速度还是快多了。而且有了文本，还可以进一步生成摘要、写一篇文章。</p>\n   <p data-id=\"8iawsdoa5i\">我自己一般会用 Google 的 Gemini 2.0 pro 模型来做这事，尤其是在 AIStudio（<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://aistudio.google.com/\">https://aistudio.google.com/</a> ）中使用 Gemini 所有模型还是免费的，只是麻烦的是 AIStudio 只对部分国家地区开放，在国内是无法直接访问的，可惜这方面我也没什么办法。</p>\n   <p data-id=\"3el3g4ania\">这里重点还是分享一下日常我是如何借助 AI 来转换音视频文稿的。通常我有几种场景：</p>\n   <ol>\n    <li>\n     <p data-id=\"6krslbdlmr\">生成带发言人和时间戳的</p></li>\n    <li>\n     <p data-id=\"wqafxyk3xe\">生成段落格式友好的文稿（还可能加上翻译）</p></li>\n   </ol>\n   <h3 data-id=\"g5de7y2u8u\" id=\"g5de7y2u8u\" data-toc-id=\"g5de7y2u8u\">提示词怎么写？</h3>\n   <p data-id=\"f5gs3l4x73\">这两种提示词会略有差别，但要点都是：</p>\n   <ul>\n    <li>\n     <p data-id=\"f5gntbzqet\">要求：你希望模型做的事情，比如让 AI 提取音频文稿</p></li>\n    <li>\n     <p data-id=\"9lerrjqoj1\">背景信息：这个音频主题是什么？参与人都有谁？一些专有名词（可以避免识别时的拼写错误）是什么？</p></li>\n    <li>\n     <p data-id=\"tllhs7rj8k\">输出格式：你可以规范输出的格式，而且你可以用大括号包起来的占位符来描述各个部分的位置。</p></li>\n   </ul>\n   <p data-id=\"hv5syr2j0o\">比如下面是我用过的两套提示词供参考：</p>\n   <p data-id=\"u75kt39y0z\"><strong>请按照 Speaker 提取文稿</strong></p><img src=\"https://baoyu.io/uploads/2025-02-23/1740328671576.png\" data-width=\"100%\" data-align=\"center\">\n   <pre><code class=\"language-markdown\">请按照 Speaker 提取下面音频文稿，背景信息：\n\n标题：厚雪长波×美轮美换：不再自信的美国\n\n主持：七一 罗夏\n\n嘉宾：王浩岚\n\n尝试匹配上 Speakers 的名字，并在每个人后面加上开始发言时间，格式如下：\n\n{Speaker Name} {Time, format: HH:mm:ss}:\n{Content}</code></pre>\n   <p data-id=\"004nccq5bt\"><strong>按照段落格式整理文本并翻译成中文</strong></p><img src=\"https://baoyu.io/uploads/2025-02-23/1740328684553.png\" data-width=\"100%\" data-align=\"center\">\n   <pre><code class=\"language-markdown\">请生成这个视频的完整的字幕，不需要时间戳，整理成段落格式，并翻译成中文。</code></pre>\n   <h3 data-id=\"tua9p6jf4z\" id=\"tua9p6jf4z\" data-toc-id=\"tua9p6jf4z\">模型怎么选？</h3>\n   <p data-id=\"4d7sdayss8\">优先使用 Pro 模型，虽然速度慢一些，但是输出质量最好，无论是 Gemini 1.5 Pro 还是 Gemini 2.0 Pro 都可以。Lite 模型会幻觉比较严重。</p>\n   <h3 data-id=\"em6y95b6l6\" id=\"em6y95b6l6\" data-toc-id=\"em6y95b6l6\">视频文件还是音频文件？</h3>\n   <ul>\n    <li>\n     <p data-id=\"iaueq6skwr\">如果你只需要音频转成文本，那么就把视频先转换为 mp3 或者 wav 等音频格式减少输入体积；</p></li>\n    <li>\n     <p data-id=\"pu4ejunenl\">如果视频文件体积很小，就没必要费事直接发过去简单；</p></li>\n    <li>\n     <p data-id=\"on22p4za14\">如果你的文稿依赖于视频画面，并且视频文件不是很大，那也可以直接用视频，尤其是有些只有画面没有声音的视频，Gemini 的多模态做得很好，视频音频都可以识别。</p></li>\n   </ul>\n   <h3 data-id=\"7l3wgmb17m\" id=\"7l3wgmb17m\" data-toc-id=\"7l3wgmb17m\">如果一次输出不完整怎么办？</h3>\n   <p data-id=\"9m0ttfkyl2\">AI Studio 上，每次输出的 Token 限制最大 8K，超过了就会自动停止，通常每次只能输出 20-30 左右的音频长度，当出现输出中断后，只需要输入“continue”或者“继续”就可以让它继续输出。但是当音频长度超过 2 小时，可能继续输出会幻觉很严重，输出内容和音频对不上。所以这种情况下要把视频分割成若干段，每一段不要超过 2 小时，甚至更短。</p><img src=\"https://baoyu.io/uploads/2025-02-23/1740328695557.png\" data-width=\"100%\" data-align=\"center\">\n   <h3 data-id=\"nrwah6jxx7\" id=\"nrwah6jxx7\" data-toc-id=\"nrwah6jxx7\">出现幻觉怎么办？</h3>\n   <p data-id=\"99hc3fotyr\">大语言模型在输出时，可能会有幻觉，有时候明明音频已经结束了，但在继续编造后续内容，音频长度越长越可能出现幻觉，所以一定要校对，对一些关键位置对照一下输出的内容。</p>\n   <p data-id=\"wx5b52mnit\">每一次输入“continue”继续输出后，最好检查一下，如果发现幻觉了，可以把这一段删除，重新开始。如果最后出现幻觉的内容不多，也可以不删除，在输入“continue”的时候，可以加上继续输出的位置，这样它可以从你要求的位置重新生成，这样也可以有效避免。</p><img src=\"https://baoyu.io/uploads/2025-02-23/1740328706118.png\" data-width=\"100%\" data-align=\"center\">\n   <h3 data-id=\"qn02gej7z7\" id=\"qn02gej7z7\" data-toc-id=\"qn02gej7z7\">怎么导出输出的内容？</h3>\n   <p data-id=\"gewnipfet8\">AIStudio 在导出对话历史上做的很糟糕，你只能一条一条复制粘贴出去，在每条消息菜单上，都有一个复制文本或者复制 Markdown 的菜单项，建议复制为 Markdown，并且结合 Markdown 编辑器，这样可以保留加粗等格式。</p><img src=\"https://baoyu.io/uploads/2025-02-23/1740328719349.png\" data-width=\"100%\" data-align=\"center\">\n   <h3 data-id=\"fgi1k8yu1v\" id=\"fgi1k8yu1v\" data-toc-id=\"fgi1k8yu1v\">除了 Gemini 还有没有其他选择？</h3>\n   <p data-id=\"y9ap8d1qdf\">很多人没条件访问 Gemini，或者隐私数据不想被泄露，这种情况下建议使用 Whisper 模型相关，Mac 下我推荐使用开源的 WhisperKit：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/argmaxinc/WhisperKit\">https://github.com/argmaxinc/WhisperKit</a> ，用 Python 的话可以试试：</p>\n   <ul>\n    <li>\n     <p data-id=\"2b4lvcvg58\">stable-ts：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/jianfch/stable-ts\">https://github.com/jianfch/stable-ts</a></p></li>\n    <li>\n     <p data-id=\"bx8aq1weim\">WhisperX：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/m-bain/whisperX\">https://github.com/m-bain/whisperX</a></p></li>\n   </ul>\n   <p data-id=\"0mqsqmpub6\">商业的飞书妙记和 MemoAI 也不错，这都是我自己用过的靠谱的，唯一的问题就是 Whisper 这类模型不能直接识别发言人，要识别发言人还要配合其他模型。</p></div>\n \n",
+  "aiSummary": "本文介绍了如何使用 Gemini 模型高效地将播客等音视频文件转换为格式良好的文本，解决人工转录的痛点，并分享了实用技巧。",
+  "oneSentenceSummary": "本文介绍了如何使用 Gemini 模型高效地将播客等音视频文件转换为格式良好的文本，解决人工转录的痛点，并分享了实用技巧。",
+  "summary": "文章详细介绍了使用 Google Gemini 模型将音视频文件转换为文本的实践方法。针对生成带发言人时间戳和段落格式文稿两种常见需求，给出了提示词编写的要点和示例。强调了 Gemini 模型的多模态能力，可以处理同时包含视频和音频的源文件，Pro 模型在输出质量上的优势，并针对视频/音频文件类型、输出不完整、出现幻觉等问题，提供了实用解决方案。文章也推荐了 Whisper 模型及其相关工具，作为保护隐私或无法访问 Gemini 时的替代方案。文章内容全面，具有很强的实操指导意义。",
+  "mainPoints": [
+    {
+      "point": "清晰的提示词是高质量转录的关键",
+      "explanation": "提示词需要明确任务要求、背景信息和输出格式，并针对不同需求选择合适的提示词模板，以提高模型输出的准确性和效率。"
+    },
+    {
+      "point": "Gemini Pro 模型在音视频转录方面表现更佳",
+      "explanation": "相较于 Lite 模型，Pro 模型在输出质量方面具有显著优势，能更好地识别语音内容，减少幻觉，提升转录的准确性。"
+    },
+    {
+      "point": "处理长音频需要分段转录和校对",
+      "explanation": "受 Token 限制，长音频需要分割成小段进行转录，并通过人工校对来修正模型产生的幻觉，确保转录内容的准确性。"
+    },
+    {
+      "point": "大语言模型转录中普遍存在的“幻觉”问题需要重视",
+      "explanation": "在使用 Gemini 等大语言模型进行音视频转录时，可能会出现无中生有的“幻觉”现象，需要通过校对和修正来保证内容真实性。"
+    }
+  ],
+  "keyQuotes": [
+    "我自己一般会用 Google 的 Gemini 2.0 pro 模型来做这事",
+    "针对特定格式要求，可以通过提示词工程来指导 Gemini 模型的输出",
+    "优先使用 Pro 模型，虽然速度慢一些，但是输出质量最好",
+    "AIStudio 上，每次输出的 Token 限制最大 8K，超过了就会自动停止",
+    "每一次输入\"continue\"继续输出后，最好检查一下，如果发现幻觉了，可以把这一段删除，重新开始。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Gemini",
+    "语音转文本",
+    "音视频处理",
+    "提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1414,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740328578000,
+  "publishDateStr": "2025-02-23",
+  "publishDateTimeStr": "2025-02-23 16:36:18"
+}

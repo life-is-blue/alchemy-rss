@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a3dfbb",
+  "title": "LWiAI 播客 #218 - Github Spark，MegaScience，美国 AI 行动计划",
+  "url": "https://lastweekin.ai/p/lwiai-podcast-218-github-spark-megascience",
+  "date": "2025-07-31 16:14:30",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"youtube2-BoUAtfKkPnU\" data-attrs=\"{&quot;videoId&quot;:&quot;BoUAtfKkPnU&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\" class=\"youtube-wrap\">\n   <div class=\"youtube-inner\">\n    <iframe src=\"https://www.youtube-nocookie.com/embed/BoUAtfKkPnU?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n   </div>\n  </div>\n  <p><span>Our 218th episode with a summary and discussion of last week's big AI news!</span><br><span>Recorded on 07/25/2025</span></p>\n  <p><span>P.S. Andrey’s startup finally launched their thing over at </span><a href=\"https://www.astrocade.com/\" rel>astrocade.com</a><span> ; check it out!</span></p>\n  <p><span>Hosted by </span><a href=\"https://twitter.com/andrey_kurenkov\" rel>Andrey Kurenkov</a><span> and </span><a href=\"https://twitter.com/jeremiecharris\" rel>Jeremie Harris</a><span>. </span><br><span>Feel free to email us your questions and feedback at </span><a href=\"mailto:contact@lastweekinai.com\" rel>contact@lastweekinai.com </a><span>and/or </span><a href=\"mailto:hello@gladstone.ai\" rel>hello@gladstone.ai</a></p>\n  <p>In this episode:</p>\n  <ul>\n   <li>\n    <p>GitHub introduces Vibe Coding with Spark, engaging users with natural language and visual controls to develop full-stack applications.</p></li>\n   <li>\n    <p>AI coding tools from Gemini CLI and RepliIt face significant issues, inadvertently deleting user data and highlighting the importance of careful management.</p></li>\n   <li>\n    <p>US releases AI Action Plan outlining economic, technical, and policy strategies to maintain leadership in AI technology.</p></li>\n   <li>\n    <p><span>Newly released Mega Science and SWE-Perf data sets evaluate AI reasoning and performance capabilities in diverse scientific and software engineering tasks.</span><br></p></li>\n  </ul>\n  <p>Timestamps + Links:</p>\n  <ul>\n   <li>\n    <p>(00:00:10) Intro / Banter</p></li>\n   <li>\n    <p>(00:01:31) News Preview</p></li>\n   <li>\n    <p>Tools &amp; Apps</p></li>\n  </ul>\n  <ul>\n   <li>\n    <p><span>(00:03:53) </span><a href=\"https://www.marktechpost.com/2025/07/24/github-introduces-vibe-coding-with-spark-revolutionizing-intelligent-app-development-in-a-flash/\" rel>GitHub Introduces Vibe Coding with Spark: Revolutionizing Intelligent App Development in a Flash - MarkTechPost</a></p>\n    <ul>\n     <li>\n      <p><span>(00:07:05) </span><a href=\"https://www.theverge.com/news/712995/figma-make-ai-general-availability-announcement\" rel>Figma’s AI app building tool is now available for everyone | The Verge</a></p></li>\n     <li>\n      <p><span>(00:10:18) </span><a href=\"https://arstechnica.com/information-technology/2025/07/ai-coding-assistants-chase-phantoms-destroy-real-user-data/\" rel>Two major AI coding tools wiped out user data after making cascading mistakes - Ars Technica</a></p></li>\n     <li>\n      <p><span>(00:14:10) </span><a href=\"https://techcrunch.com/2025/07/23/googles-ai-overviews-have-2b-monthly-users-ai-mode-100m-in-the-us-and-india/\" rel>Google's AI Overviews have 2B monthly users, AI Mode 100M in the US and India | TechCrunch</a></p></li>\n    </ul></li>\n   <li>\n    <p>Applications &amp; Business</p></li>\n  </ul>\n  <ul>\n   <li>\n    <p><span>(00:18:10) </span><a href=\"https://www.wired.com/story/anthropic-dario-amodei-gulf-state-leaked-memo/\" rel>Leaked Memo: Anthropic CEO Says the Company Will Pursue Gulf State Investments After All</a></p>\n    <ul>\n     <li>\n      <p><span>(00:24:39) </span><a href=\"https://venturebeat.com/ai/mira-murati-says-her-startup-thinking-machines-will-release-new-product-in-months-with-significant-open-source-component/\" rel>Mira Murati says her startup Thinking Machines will release new product in ‘months’ with ‘significant open source component’</a></p></li>\n     <li>\n      <p><span>(00:27:07) </span><a href=\"https://www.theverge.com/news/708885/waymo-austin-map-expand-tesla-robotaxi\" rel>Waymo responds to Tesla’s dick joke with a bigger Austin robotaxi map | The Verge</a></p></li>\n    </ul></li>\n   <li>\n    <p>Projects &amp; Open Source</p></li>\n  </ul>\n  <ul>\n   <li>\n    <p><span>(00:32:05) </span><a href=\"https://arxiv.org/pdf/2507.16812\" rel>MegaScience: Pushing the Frontiers of Post-Training Datasets for Science Reasoning</a></p>\n    <ul>\n     <li>\n      <p><span>(00:43:09) </span><a href=\"https://www.marktechpost.com/2025/07/21/tiktok-researchers-introduce-swe-perf-the-first-benchmark-for-repository-level-code-performance-optimization/?amp=&amp;_gsa=1&amp;_js_v=a9&amp;usqp=mq331AQGsAEggAID#amp_tf=From%20%251%24s&amp;aoh=17532458044900&amp;csi=0&amp;referrer=https%3A%2F%2Fwww.google.com&amp;ampshare=https%3A%2F%2Fwww.marktechpost.com%2F2025%2F07%2F21%2Ftiktok-researchers-introduce-swe-perf-the-first-benchmark-for-repository-level-code-performance-optimization%2F\" rel>TikTok Researchers Introduce SWE-Perf: The First Benchmark for Repository-Level Code Performance Optimization - MarkTechPost</a></p></li>\n    </ul></li>\n   <li>\n    <p>Research &amp; Advancements</p></li>\n  </ul>\n  <ul>\n   <li>\n    <p><span>(00:47:17) </span><a href=\"https://arxiv.org/pdf/2507.14805\" rel>Subliminal Learning: Language models transmit behavioral traits via hidden signals in data</a></p>\n    <ul>\n     <li>\n      <p><span>(00:55:34) </span><a href=\"https://arxiv.org/pdf/2507.14417\" rel>Inverse Scaling in Test-Time Compute</a></p></li>\n     <li>\n      <p><span>(01:02:34) </span><a href=\"https://arxiv.org/pdf/2507.09404\" rel>Scaling Laws for Optimal Data Mixtures</a></p></li>\n    </ul></li>\n   <li>\n    <p>Policy &amp; Safety</p></li>\n  </ul>\n  <ul>\n   <li>\n    <p><span>(01:07:35) </span><a href=\"https://www.whitehouse.gov/articles/2025/07/white-house-unveils-americas-ai-action-plan/\" rel>White House Unveils America’s AI Action Plan</a></p>\n    <ul>\n     <li>\n      <p><span>(01:16:55) </span><a href=\"https://arxiv.org/pdf/2507.11473\" rel>Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety</a></p></li>\n     <li>\n      <p><span>(01:20:20) </span><a href=\"https://www.alignmentforum.org/posts/wnzkjSmrgWZaBa2aC/self-preservation-or-instruction-ambiguity-examining-the\" rel>Self-preservation or Instruction Ambiguity? Examining the Causes of Shutdown Resistance</a></p></li>\n     <li>\n      <p><span>(01:24:00) </span><a href=\"https://futurism.com/commitment-jail-chatgpt-psychosis\" rel>People Are Being Involuntarily Committed, Jailed After Spiraling Into \"ChatGPT Psychosis\"</a></p></li>\n     <li>\n      <p><span>(01:28:03) </span><a href=\"https://techcrunch.com/2025/07/18/meta-refuses-to-sign-eus-ai-code-of-practice/\" rel>Meta refuses to sign EU’s AI code of practice</a></p></li>\n    </ul></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本期播客带您回顾上周不容错过的 AI 新闻，涵盖 AI 编码工具、政策发展和评估数据集的最新进展。",
+  "oneSentenceSummary": "本期播客带您回顾上周不容错过的 AI 新闻，涵盖 AI 编码工具、政策发展和评估数据集的最新进展。",
+  "summary": "第 218 集“上周 AI”播客总结并讨论了上周的主要 AI 新闻。重点包括 GitHub 推出的 Vibe Coding with Spark，它使用自然语言和可视化控制进行全栈应用开发。本集还讨论了 Gemini CLI 和 RepliIt 等 AI 编码工具面临的数据丢失问题，强调了可靠数据管理的重要性。此外，播客还介绍了美国 AI 行动计划，概述了在 AI 技术领域保持全球领导地位的战略，并介绍了 MegaScience 和 SWE-Perf 等新数据集，旨在评估 AI 在科学和软件工程任务中的推理和性能。内容还涉及 AI 业务发展、研究进展和政策辩论等。",
+  "mainPoints": [
+    {
+      "point": "GitHub Spark 引入 Vibe Coding，助力直观应用开发。",
+      "explanation": "这项新功能允许用户使用自然语言和可视化控制开发全栈应用程序，标志着 AI 辅助的编程模式正在普及。"
+    },
+    {
+      "point": "AI 编码工具面临严重数据丢失问题，可靠性引人关注。",
+      "explanation": "Gemini CLI 和 RepliIt 等工具意外删除用户数据的事件，凸显了可靠数据管理和谨慎使用 AI 工具的重要性。"
+    },
+    {
+      "point": "美国发布 AI 行动计划，旨在保持全球领导地位。",
+      "explanation": "该计划概述了经济、技术和政策战略，旨在巩固美国在快速发展的人工智能领域中的领先地位。"
+    },
+    {
+      "point": "MegaScience 和 SWE-Perf 等新数据集提升了 AI 评估能力。",
+      "explanation": "这些数据集为评估 AI 在复杂科学和软件工程任务中的推理和性能提供了新的基准，推动了 AI 能力的发展。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub 推出 Vibe Coding with Spark，利用自然语言和可视化控制，助力用户开发全栈应用。",
+    "Gemini CLI 和 RepliIt 的 AI 编码工具面临重大问题，意外删除用户数据，可靠数据管理至关重要。",
+    "美国发布 AI 行动计划，概述了经济、技术和政策战略，以保持在 AI 技术的领先地位。",
+    "新发布的 MegaScience 和 SWE-Perf 数据集评估了 AI 在科学和软件工程任务中的推理和性能。"
+  ],
+  "tags": [
+    "AI 新闻",
+    "AI 开发",
+    "AI 政策",
+    "AI 模型",
+    "GitHub"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 379,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753978470000,
+  "publishDateStr": "2025-07-31",
+  "publishDateTimeStr": "2025-07-31 16:14:30"
+}

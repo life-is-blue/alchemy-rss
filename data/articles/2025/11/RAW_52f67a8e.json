@@ -1,0 +1,58 @@
+{
+  "id": "RAW_52f67a8e",
+  "title": "月之暗面公开 RL 训练加速方法：训练速度暴涨 97%，长尾延迟狂降 93%",
+  "url": "https://www.qbitai.com/2025/11/356868.html",
+  "date": "2025-11-27 08:07:12",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"57\">鹭羽 发自 凹非寺</p>\n   <p data-track=\"58\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">u1s1，现在模型能力是Plus了，但Rollout阶段的速度却越来越慢……</p>\n  <p data-track=\"3\">于是月之暗面出手了：<strong>爆改RL训练速度，让LLM“越跑越快”！</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123946_ecf5913911e81bece63b7c327042e920.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123946_ecf5913911e81bece63b7c327042e920.jpeg\">\n  </div>\n  <p data-track=\"4\">最近月之暗面联合清华大学提出了全新的加速引擎<strong>Seer</strong>，能够在不改变核心训练算法的前提下，大幅度提升LLM的强化学习训练速度。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123947_10c6c3b08e2cec50ff5f1cfffe7a536b.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123947_10c6c3b08e2cec50ff5f1cfffe7a536b.jpeg\">\n  </div>\n  <p data-track=\"5\">依托组内上下文设计，可实现同步RL的Rollout效率提升<strong>74%～97%</strong>，长尾延迟减少<strong>75%～93%</strong>。</p>\n  <p data-track=\"6\">好好好，几乎是模型换代式的效率提升。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_3254ecc4fc58183936eaf39c99611061.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_3254ecc4fc58183936eaf39c99611061.jpeg\">\n  </div>\n  <p data-track=\"7\">下面来康康详细内容。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"8\">跑得更快、更省资源</h2>\n  <p data-track=\"9\">强化学习目前已成为推动LLM发展的核心技术，但现有系统面临着严重的性能瓶颈。</p>\n  <p data-track=\"10\">具体来说，就是在端到端迭代过程中，生成阶段（rollout phase）会耗费大量的时间资源，然而该阶段受固有工作负载不均衡的影响，存在明显的长尾延迟问题，且资源利用率较低。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_f4550a03f36bbb8c99d65cfdfdc146a0.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_f4550a03f36bbb8c99d65cfdfdc146a0.jpeg\">\n  </div>\n  <p data-track=\"11\">因此研究团队针对性推出了高效同步RL框架<strong>Seer</strong>。</p>\n  <p data-track=\"12\">其核心架构包括三大模块：</p>\n  <p data-track=\"13\">1、<strong>推理引擎池</strong>（Inference Engine Pool）</p>\n  <p data-track=\"14\">基于DRAM/SSD构建，包括多个推理实例与跨节点的<strong>全局KVCache池</strong>，不仅可以支持负载均衡，又能通过KVCache池复用中间数据，避免重复计算。</p>\n  <p data-track=\"15\">2、<strong>请求缓冲区</strong>（Request Buffer）</p>\n  <p data-track=\"16\">作为所有rollout请求的统一入口，负责维护请求的全量元数据（包括组ID、提示词长度、原始最大生成长度、已生成长度等），并管理请求状态（未调度/处理中/已完成片段），实现资源的精细化调度。</p>\n  <p data-track=\"17\">3、<strong>上下文管理器</strong>（Context Manager）</p>\n  <p data-track=\"18\">负责维护所有请求的上下文视图，并基于上下文信号生成调度决策。</p>\n  <p data-track=\"19\">另外，Seer还引入了三项关键技术，包括用于动态负载均衡的分段生成、上下文感知调度以及自适应分组推测解码，协同降低长尾延迟和提高资源利用效率。</p>\n  <p data-track=\"20\"><strong>技术一：分段生成</strong>（Divided Rollout）</p>\n  <p data-track=\"21\">针对内存波动与负载失衡，Seer提出“精细化分段+全局KVCache支撑” 的解决方案。</p>\n  <p data-track=\"22\">首先是将GRPO中隶属同一提示词的响应拆解为多个独立请求，再将每个请求按照生成长度进一步拆分为多个片段。</p>\n  <p data-track=\"23\">然后重新回到请求缓冲区，更新已生成长度，等待后续调度直到生成原始最大长度。</p>\n  <p data-track=\"24\">同时为避免重新调度时的提示词编码重计算，Seer复用全局KVCache池，将每个片段的中间数据都存储在共享池中。</p>\n  <p data-track=\"25\">这样就能在片段迁移到新实例时，直接从共享池中读取KVCache，而无需重新编码提示词，大幅降低迁移开销。</p>\n  <p data-track=\"26\"><strong>技术二：上下文感知调度</strong>（Context-Aware Scheduling）</p>\n  <p data-track=\"27\">为了解决调度失衡、长请求延迟导致的长尾问题，Seer使用“先探路+后调度”的策略。</p>\n  <p data-track=\"28\">先为每个提示词组指定第一个响应为投机请求（speculative request），优先获取该组的长度特征，再基于特征调度剩余请求，避免长请求被保留到最后。</p>\n  <p data-track=\"29\"><strong>技术三：自适应分组推测解码</strong>（Adaptive Grouped Speculative Decoding）</p>\n  <p data-track=\"30\">由于传统推测解码依赖静态小模型生成草稿，无法适配RL中目标模型的迭代更新，Seer利用组内响应模式相似的特性，通过DGDS（分布式分组草稿服务器）聚合组内所有响应的token序列，构建动态模式参考库。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_af59aa5058e5270b837b537826e0d408.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_af59aa5058e5270b837b537826e0d408.jpeg\">\n  </div>\n  <p data-track=\"31\">然后基于参考库生成草稿，就能削减额外模型开销，并随着组内响应的增加进一步提升草稿质量。</p>\n  <p data-track=\"32\">最终依靠三者的协同作用，既能保障同步RL的算法保真度，又可从内存、调度、推理三个维度全面优化rollout效率。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"33\">实验验证</h2>\n  <p data-track=\"34\">为了验证系统性能，研究团队选取<strong>Moonlight</strong>、<strong>Qwen2-VL-72B</strong>、<strong>Kimi-K2</strong>三个模型，均采用GRPO算法训练，并将veRL（同步RL系统，支持训练与rollout协同部署）作为基线系统进行对比。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_047e492c6a4af40816ce60defd078a09.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_047e492c6a4af40816ce60defd078a09.jpeg\">\n  </div>\n  <p data-track=\"35\">在端到端性能验证上，实验结果发现Seer在不同工作负载中均实现性能突破，其中吞吐量可提升<strong>74%~97%</strong>，显著高于veRL，且稳定性更强。</p>\n  <p data-track=\"36\">而veRL的长尾延迟则相当严重，例如在Moonlight任务中，veRL最后10%请求需耗时3984秒（占总时长约50%），而Seer仅需364秒，长尾延迟可实现降低85%。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123944_6c68142914cd133763995a32cf586206.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123944_6c68142914cd133763995a32cf586206.jpeg\">\n  </div>\n  <p data-track=\"37\">此外，Qwen2-VL-72B任务中可降低93%，Kimi-K2任务降低75%。</p>\n  <p data-track=\"38\">研究团队还对Seer的核心创新点（上下文感知调度、分组推测解码）进行了专项实验。</p>\n  <p data-track=\"39\">先是在Qwen2-VL-72B任务的第5次迭代中，设置三组对比：</p>\n  <ul>\n   <li data-track=\"40\">No-Context：仅分段生成，无长度预测。</li>\n   <li data-track=\"41\">Context-Aware：Seer的调度策略。</li>\n   <li data-track=\"42\">Oracle：提前知道所有请求的真实长度，执行理想LFS调度。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_3b8ea7770f960a2c79ad0b6952e52975.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_3b8ea7770f960a2c79ad0b6952e52975.jpeg\">\n  </div>\n  <p data-track=\"43\">结果表明，在吞吐量上Context-Aware可达到Oracle的95%，远高于No-Context；在长尾延迟上，Context-Aware也仅为No-Context的13%，接近Oracle。</p>\n  <p data-track=\"44\">说明基于组内长度上下文的调度，虽无法达到理想Oracle水平，但已能<strong>大幅缓解长尾问题</strong>，且无需提前知道真实长度，实用性较强。</p>\n  <p data-track=\"45\">然后同样是在Qwen2-VL-72B任务中，设置四组对比推测解码的有效性：</p>\n  <ul>\n   <li data-track=\"46\">No-SD：无推测解码。</li>\n   <li data-track=\"47\">No-Context：有推测解码，但不聚合组内模式。</li>\n   <li data-track=\"48\">No-Adapt：有组模式，但固定推测参数。</li>\n   <li data-track=\"49\">Seer：完整分组推测解码。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_e152a5cff106efe57e576985ad911f42.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_e152a5cff106efe57e576985ad911f42.jpeg\">\n  </div>\n  <p data-track=\"50\">结果显示，Seer在吞吐量上远高于No-Context与No-Adapt，Seer的接受长度也随rollout推进而动态提升，证明了只有<strong>组内模式上下文</strong>和<strong>自适应参数</strong>相互结合才能最大化推测解码的效率。</p>\n  <p data-track=\"52\">另外，有消息称，月之暗面即将完成新一轮融资，融资金额将高达数亿美元。</p>\n  <p data-track=\"53\">本轮融资一旦完成，该公司估值将提升至<strong>40亿美元</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251127123945_758301ea04bbb7a5eed949e76740d9a4.jpeg\" alt=\"月之暗面公开RL训练加速方法：训练速度暴涨97%，长尾延迟狂降93%\" data-src=\"https://image.jido.dev/20251127123945_758301ea04bbb7a5eed949e76740d9a4.jpeg\">\n  </div>\n  <p data-track=\"62\">目前月之暗面正在积极与IDG Capital等在内的投资机构进行融资洽谈，其中潜在投资方还包括现有股东<strong>腾讯</strong>。</p>\n  <p data-track=\"55\">消息还称，预期计划将在今年年底前完成该轮融资，并在明年下半年启动<strong>IPO进程</strong>。</p>\n  <p data-track=\"56\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/rohanpaul_ai/status/1992315143665881432?s=20\n   <br class=\"sysbr\">\n   [2]https://arxiv.org/abs/2511.14617\n   <br class=\"sysbr\">\n   [3]https://cn.wsj.com/articles/chinas-moonshot-ai-raising-fresh-funds-that-could-value-it-at-about-4-billion-0216a228</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "月之暗面与清华大学发布 Seer 引擎，通过优化强化学习 rollout 阶段，将 LLM 训练速度提升 97%，长尾延迟降低 93%。",
+  "oneSentenceSummary": "月之暗面与清华大学发布 Seer 引擎，通过优化强化学习 rollout 阶段，将 LLM 训练速度提升 97%，长尾延迟降低 93%。",
+  "summary": "文章详细介绍了月之暗面联合清华大学提出的 LLM 强化学习训练加速引擎 Seer。Seer 旨在解决现有 RL 训练中 rollout 阶段速度慢、长尾延迟高和资源利用率低的问题。其核心架构包括推理引擎池、请求缓冲区和上下文管理器，并引入了分段生成、上下文感知调度以及自适应分组推测解码三项关键技术。实验结果表明，Seer 在不同模型和工作负载下，吞吐量可提升 74%～97%，长尾延迟降低 75%～93%，显著优于基线系统 veRL。文章后半部分提及月之暗面的融资和估值信息，与技术内容关联性较低。",
+  "mainPoints": [
+    {
+      "point": "Seer 引擎通过优化 LLM 强化学习的 rollout 阶段，大幅提升训练效率。",
+      "explanation": "针对 rollout 阶段的性能瓶颈、长尾延迟和资源利用率低的问题，Seer 提出了综合解决方案，实现了训练速度和效率的显著提升。"
+    },
+    {
+      "point": "Seer 核心架构包含推理引擎池、请求缓冲区和上下文管理器，实现精细化资源调度和数据复用。",
+      "explanation": "通过构建全局 KVCache 池、统一管理请求元数据和基于上下文生成调度决策，Seer 有效解决了负载不均衡和重复计算问题。"
+    },
+    {
+      "point": "分段生成、上下文感知调度和自适应分组推测解码是 Seer 加速的关键技术。",
+      "explanation": "这三项技术分别从内存优化、调度优化和推理优化三个维度协同作用，保障算法保真度的同时全面提升 rollout 效率。"
+    },
+    {
+      "point": "实验验证 Seer 在吞吐量和长尾延迟方面均实现突破性提升。",
+      "explanation": "在 Moonlight、Qwen2-VL-72B、Kimi-K2 等模型上，Seer 的吞吐量提升高达 97%，长尾延迟降低 93%，表现出卓越的性能和稳定性。"
+    }
+  ],
+  "keyQuotes": [
+    "月之暗面联合清华大学提出了全新的加速引擎 Seer，能够在不改变核心训练算法的前提下，大幅度提升 LLM 的强化学习训练速度。",
+    "其核心架构包括三大模块：推理引擎池、请求缓冲区和上下文管理器。",
+    "Seer 还引入了三项关键技术，包括用于动态负载均衡的分段生成、上下文感知调度以及自适应分组推测解码，协同降低长尾延迟和提高资源利用效率。",
+    "Seer 在不同工作负载中均实现性能突破，其中吞吐量可提升 74%～97% ，显著高于 veRL，且稳定性更强。"
+  ],
+  "tags": [
+    "大语言模型",
+    "强化学习",
+    "训练优化",
+    "性能加速",
+    "Seer"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 86,
+  "wordCount": 2319,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764230832000,
+  "publishDateStr": "2025-11-27",
+  "publishDateTimeStr": "2025-11-27 08:07:12"
+}

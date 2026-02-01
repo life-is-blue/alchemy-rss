@@ -1,0 +1,59 @@
+{
+  "id": "RAW_4da68196",
+  "title": "LeCun 创业首轮估值 247 亿！Alexandre 当 CEO",
+  "url": "https://www.qbitai.com/2025/12/362050.html",
+  "date": "2025-12-19 02:39:10",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>LeCun在Meta的Last Day还没来，新公司又被曝出更多细节。</p>\n  <p>前脚LeCun本人在播客当中宣布了新公司名称，现在融资和估值目标就被《金融时报》曝光了。</p>\n  <p>这家名为Advanced Machine Intelligence Labs（AMI Labs）的新公司，计划于明年一月正式亮相，目标估值30亿欧元（约247亿人民币）。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044712_21f7bf19e137793f730135dbf01b186b.png\" alt=\"图片\" data-imgfileid=\"100371645\" data-ratio=\"0.2740740740740741\" data-src=\"https://image.jido.dev/20251219044711_d6f9e340\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"2\" data-report-img-idx=\"0\" data-fail=\"0\"></p>\n  <p>AMI Labs的研究方向，就是LeCun一直主推的“世界模型”，而且将走开源路线，老东家Meta也将与其保持合作。</p>\n  <p>另外，曝料也透露了AMI Labs的CEO人选并非LeCun本人，而是他的一位老部下。</p>\n  <p>新公司AMI Labs定于2026年1月在巴黎正式启动，在Meta逐渐转向封闭生态的背景下，LeCun选择了他在学术界一贯坚持的开源路线。</p>\n  <p>而且在技术层面，AMI Labs选择了比主流的LLM更具挑战性的道路——死磕“世界模型”。</p>\n  <p>因为在LeCun看来，基于自回归机制的LLM存在根本性的逻辑缺陷，它们只是在统计概率上预测下一个字符，并不真正理解物理世界的运行规律。</p>\n  <p>他曾在多个场合直言，现有的LLM路线是通往AGI的“死路”，其智能水平甚至不如一只狗——因为狗能通过观察理解物理世界的因果关系，而单纯靠文本训练的AI做不到。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044712_6a01afd879b666641568ca9874587f62.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251219044711_1f4006dc\" data-ratio=\"0.5564814814814815\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100371647\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>为此，新公司将通过JEPA（联合嵌入预测架构）来构建技术底座。</p>\n  <p>这套架构的核心逻辑在于“抽象”与“规划”：它不再像视频生成模型那样试图预测每一个像素点，而是在抽象的表示空间中学习、预测未来的状态。</p>\n  <p>这种方式能让AI像人类或动物一样，忽略无关的背景噪声，专注于理解关键信息的动态变化，从而具备真正的推理和规划能力。</p>\n  <p>在资本运作方面，AMI Labs的起步规格也非常高。</p>\n  <p>据《金融时报》称，公司正以30亿欧元的目标估值寻求首轮5亿欧元（约41亿人民币）融资。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044712_d2b22aee71732bbe95e47487c95ec5ee.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251219044711_4ac03860\" data-ratio=\"0.2740740740740741\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100371645\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"4\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>顺便提一句，LeCun的老东家Meta也将与AMI Labs建立合作，但不会直接注资。</p>\n  <p>至于公司的CEO人选，LeCun本人大概率不会出任CEO。</p>\n  <p>这一安排也符合LeCun一贯的科研志趣——这位65岁的图灵奖得主曾多次表示，自己的核心动力是“提升人类智能”，而非陷入行政管理与财务报表的琐事中。</p>\n  <p>而CEO职位的人选则被曝是医疗AI独角兽Nabla的创始人兼CEO&nbsp;Alexandre LeBrun。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044712_2dc499793840a724eb5c0aa26f20df18.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251219044711_f126e4f6\" data-ratio=\"1\" data-type=\"png\" data-w=\"300\" data-imgfileid=\"100371644\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <h2>谁是LeBrun？</h2>\n  <p>这一被寄予厚望的CEO人选，是与LeCun有着深厚渊源的“老战友”。</p>\n  <p>作为法国科技圈知名的连续创业者，LeBrun目前的公开身份是医疗AI独角兽Nabla的创始人兼CEO。</p>\n  <p>他即将出任AMI Labs CEO的消息，也是由Nabla联创兼COO&nbsp;Delphine Groll向媒体透露的。</p>\n  <p>Groll在声明中表示，LeBrun将转任Nabla的执行董事长，通过职权交割完成善后工作。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044713_4ed4657cb60557859c5c39d07c530f2f.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251219044711_ecfbebf5\" data-ratio=\"0.5712962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100371648\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"6\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>LeBrun是巴黎高等电信学校硕士，1999年毕业。</p>\n  <p>随后，他的职业生涯起步于商旅技术公司KDS（现为美国运通旗下Amex GBT Neo），并于2002年开启了连续创业之路。</p>\n  <p>那年，他创立了客户服务AI公司VirtuOz，随后成功将其打造为行业先驱，最终被语音技术巨头Nuance收购。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044712_ba84c348fdf6b029b451284cd3ff64ee.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251219044711_4da0cc55\" data-ratio=\"0.5953703703703703\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100371646\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"7\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>而他与LeCun的交集，则始于2015年的一次关键并购——当时他创立的语音交互平台Wit.ai被Facebook高价收购，他也随之正式加入了Meta的技术生态。</p>\n  <p>进入Meta后，LeBrun出任了FAIR的工程负责人，是LeCun的直接下属，主要职责是协助作为首席科学家的LeCun管理实验室的工程团队，将前沿的科研理论转化为可验证的工程实践。</p>\n  <p>三年后，2018年，LeBrun离开了FAIR，开启新的Nabla创业征程。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251219044712_7196ccb31ec616284c2457e510047c21.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251219044711_a3ed7999\" data-ratio=\"0.36666666666666664\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100371649\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>这段在FAIR共事三年的经历，无疑将为两人未来在AMI Labs的再度联手奠定了信任基础。</p>\n  <p>如果这一任命最终落地，AMI Labs将形成“LeCun主内负责科研、LeBrun主外负责商业”的双核架构。</p>\n  <p>对于已经65岁的LeCun来说，这或许是他职业生涯中的又一次豪赌。</p>\n  <p>他在最近的播客节目中坦言，尽管到了可以退休的年纪，妻子也希望他回归家庭，但他无法停下，因为“提升人类智能”的使命尚未完成。</p>\n  <p>这也正是AMI Labs成立的初衷——抛弃当下大模型的捷径，去啃下物理世界认知这块最硬的骨头。</p>\n  <p>参考链接：\n   <br>\n   https://www.ft.com/content/d88729c0-c44f-4530-b888-bafa29ee0446</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Yann LeCun 正筹备成立新公司 AMI Labs，聚焦开源世界模型而非大语言模型，并由其前下属 Alexandre LeBrun 担任 CEO，首轮融资目标估值达 247 亿人民币。",
+  "oneSentenceSummary": "Yann LeCun 正筹备成立新公司 AMI Labs，聚焦开源世界模型而非大语言模型，并由其前下属 Alexandre LeBrun 担任 CEO，首轮融资目标估值达 247 亿人民币。",
+  "summary": "文章披露了 AI 科学巨擘 Yann LeCun 即将成立的新公司 Advanced Machine Intelligence Labs (AMI Labs) 的更多细节。该公司计划于 2026 年 1 月在巴黎正式启动，目标估值 30 亿欧元（约 247 亿人民币），并寻求首轮 5 亿欧元的融资。AMI Labs 的核心研究方向是 LeCun 长期倡导的“世界模型”，并坚持开源路线，与其老东家 Meta 保持合作而非直接注资。文章指出，LeCun 认为现有基于自回归机制的大语言模型（LLM）存在根本性缺陷，不足以实现通用人工智能，因此 AMI Labs 将通过 JEPA（联合嵌入预测架构）来构建技术底座，专注于物理世界因果关系的理解和预测。此外，文章还爆料称医疗 AI 独角兽 Nabla 的创始人兼 CEO Alexandre LeBrun 将出任 AMI Labs 的 CEO，LeCun 则专注于科研，形成“LeCun 主内、LeBrun 主外”的协作模式。LeBrun 与 LeCun 曾在 Meta 的 FAIR 实验室共事三年，具备深厚的技术和管理经验。",
+  "mainPoints": [
+    {
+      "point": "Yann LeCun 新公司 AMI Labs 将专注于“世界模型”的开源研发",
+      "explanation": "AMI Labs 计划于 2026 年启动，目标以 JEPA 架构构建可理解物理世界因果关系的 AI 模型，走与当前主流 LLM 路线不同的技术路径，并坚持开源策略。"
+    },
+    {
+      "point": "AMI Labs 首轮融资目标估值高达 247 亿人民币，显示资本市场高度关注",
+      "explanation": "公司正以 30 亿欧元的估值寻求 5 亿欧元的融资，这反映出市场对 LeCun 及其“世界模型”理念的强烈信心和对其未来潜力的认可。"
+    },
+    {
+      "point": "Alexandre LeBrun 将出任 AMI Labs 的 CEO，实现科研与商业化的高效结合",
+      "explanation": "LeBrun 曾是 LeCun 在 Meta 的 FAIR 团队前下属，并在医疗 AI 领域成功创业，其管理和商业经验将与 LeCun 的科研专长形成互补，确保 AMI Labs 的成功运作。"
+    },
+    {
+      "point": "LeCun 对现有大语言模型（LLM）的局限性提出深刻批判，并选择更具挑战性的“世界模型”路线",
+      "explanation": "LeCun 认为 LLM 仅是统计预测，缺乏对物理世界的真实理解，无法通往 AGI，因此他选择了一条通过 JEPA 架构来学习、预测未来状态的“世界模型”路线，以实现真正的推理和规划能力。"
+    }
+  ],
+  "keyQuotes": [
+    "这家名为 Advanced Machine Intelligence Labs（AMI Labs）的新公司，计划于明年一月正式亮相，目标估值 30 亿欧元（约 247 亿人民币）。",
+    "AMI Labs 的研究方向，就是 LeCun 一直主推的\"世界模型\"，而且将走开源路线，老东家 Meta 也将与其保持合作。",
+    "新公司将通过 JEPA（联合嵌入预测架构）来构建技术底座。这套架构的核心逻辑在于\"抽象\"与\"规划\"。",
+    "他在多个场合直言，现有的 LLM 路线是通往 AGI 的\"死路\"，其智能水平甚至不如一只狗。",
+    "如果这一任命最终落地，AMI Labs 将形成\"LeCun 主内负责科研、LeBrun 主外负责商业\"的双核架构。"
+  ],
+  "tags": [
+    "Yann LeCun",
+    "世界模型",
+    "AGI",
+    "JEPA",
+    "AMI Labs"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1680,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766111950000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 02:39:10"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f843cd55",
+  "title": "今日学习：从 archive.softwareheritage.org 下载归档的 Git 仓库",
+  "url": "https://simonwillison.net/2025/Dec/30/software-heritage/#atom-everything",
+  "date": "2025-12-30 23:51:33",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://til.simonwillison.net/github/software-archive-recovery\">TIL: Downloading archived Git repositories from archive.softwareheritage.org</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46435308#46438857\" title=\"Hacker News comment\">via</a>) Back in February I <a href=\"https://simonwillison.net/2025/Feb/7/sqlite-s3vfs/\">blogged about</a> a neat Python library called <code>sqlite-s3vfs</code> for accessing SQLite databases hosted in an S3 bucket, released as MIT licensed open source by the UK government's Department for Business and Trade.</p>\n   <p>I went looking for it today and found that the <a href=\"https://github.com/uktrade/sqlite-s3vfs\">github.com/uktrade/sqlite-s3vfs</a> repository is now a 404.</p>\n   <p>Since this is taxpayer-funded open source software I saw it as my moral duty to try and restore access! It turns out <a href=\"https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/uktrade/sqlite-s3vfs\">a full copy</a> had been captured by <a href=\"https://archive.softwareheritage.org/\">the Software Heritage archive</a>, so I was able to restore the repository from there. My copy is now archived at <a href=\"https://github.com/simonw/sqlite-s3vfs\">simonw/sqlite-s3vfs</a>.</p>\n   <p>The process for retrieving an archive was non-obvious, so I've written up a TIL and also published a new <a href=\"https://tools.simonwillison.net/software-heritage-repo#https%3A%2F%2Fgithub.com%2Fuktrade%2Fsqlite-s3vfs\">Software Heritage Repository Retriever</a> tool which takes advantage of the CORS-enabled APIs provided by Software Heritage. Here's <a href=\"https://gistpreview.github.io/?3a76a868095c989d159c226b7622b092/index.html\">the Claude Code transcript</a> from building that.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9232/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "作者成功地从 Software Heritage 档案库中恢复了一个政府资助的丢失的开源 Git 仓库，随后构建了一个工具，以简化他人的检索过程。",
+  "oneSentenceSummary": "作者成功地从 Software Heritage 档案库中恢复了一个政府资助的丢失的开源 Git 仓库，随后构建了一个工具，以简化他人的检索过程。",
+  "summary": "本文详细介绍了作者恢复一个丢失的开源 Git 仓库 `sqlite-s3vfs` 的经历，该仓库由英国政府开发，随后从 GitHub 上删除。发现 404 链接后，作者认为鉴于该项目由纳税人资助，自己有道义上的责任恢复其访问权限。他成功地在 archive.softwareheritage.org 上找到了一个完整的归档副本。由于检索过程并不直观，作者随后创建了一个专用工具“Software Heritage 仓库检索器”，该工具利用了档案库启用 CORS 的 API，并将整个过程记录为一篇 TIL（今日学习）帖子。这突出了 Software Heritage 等数字保存工作的重要性，并分享了一个恢复丢失代码库的实用解决方案。",
+  "mainPoints": [
+    {
+      "point": "数字档案库（如 Software Heritage）可用于恢复丢失的开源代码。",
+      "explanation": "作者通过在 archive.softwareheritage.org 上找到其归档副本，成功检索了一个在 GitHub 上显示 404 的仓库，强调了此类保存工作的价值。"
+    },
+    {
+      "point": "检索已归档仓库的过程可能复杂且不明显。",
+      "explanation": "尽管存在档案库，作者指出下载仓库的步骤并不直观，这促使他创建了一个简化的工具并记录了整个过程。"
+    },
+    {
+      "point": "构建自定义工具可以增强对数字档案库的访问性。",
+      "explanation": "为了简化恢复过程，作者开发了“Software Heritage 仓库检索器”工具，该工具利用了启用 CORS 的 API，使其他人更容易访问已归档的代码。"
+    }
+  ],
+  "keyQuotes": [
+    "我今天查找时，发现 github.com/uktrade/sqlite-s3vfs 仓库现在显示 404 了。",
+    "既然这是纳税人资助的开源软件，我认为恢复访问是我的道德责任！",
+    "事实证明，Software Heritage 档案库已经捕获了一个完整副本，所以我能够从那里恢复仓库。",
+    "检索档案的过程并不直观，所以我撰写了一篇 TIL，并发布了一个新的 Software Heritage 仓库检索器工具，该工具利用了 Software Heritage 提供的启用 CORS 的 API。"
+  ],
+  "tags": [
+    "Git",
+    "开源",
+    "软件归档",
+    "仓库恢复",
+    "数字保存"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 153,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767138693000,
+  "publishDateStr": "2025-12-30",
+  "publishDateTimeStr": "2025-12-30 23:51:33"
+}

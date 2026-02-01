@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b943fde5",
+  "title": "张亚勤院士：基础大模型最终不超过 10 个，十年后机器人比人多 | MEET2026",
+  "url": "https://www.qbitai.com/2025/12/360373.html",
+  "date": "2025-12-11 10:34:53",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"63\">编辑部 整理自 MEET2026</p>\n   <p data-track=\"64\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">从ChatGPT到DeepSeek，AI正沿着<strong>“智能+”</strong>的路径进入新一轮浪潮。</p>\n  <p data-track=\"3\">正值大模型从“算力堆叠”走向“推理优先”的关键节点，<strong>清华大学智能产业研究院（AIR）创始院长、中国工程院外籍院士张亚勤</strong>提出：</p>\n  <blockquote>\n   <p data-track=\"4\">新一轮人工智能，是信息智能、物理智能和生物智能的融合，本质上也是原子、分子和比特的融合。</p>\n  </blockquote>\n  <p data-track=\"5\">也就是说，在规模定律持续发挥作用的前提下，当参数规模、数据体量与算力资源跨过某个阈值，智能就不再只停留在模式识别，而是开始“涌现”——</p>\n  <p data-track=\"6\">先是从鉴别式AI走向生成式AI，再从生成式AI走向以<strong>智能体</strong>为代表的新范式。</p>\n  <p data-track=\"7\">在本次<strong>量子位MEET2026智能未来大会</strong>上，他也将ChatGPT和DeepSeek，视作这一轮演进中的两个重要里程碑：</p>\n  <p data-track=\"8\">前者通过统一表征与token化，把文本、语音、图像乃至蛋白质、点云等数据纳入同一空间；</p>\n  <p data-track=\"9\">后者则以高效率、高性能、低价格和开源路径，把大模型从“预训练时代”推向以推理为核心的“DeepSeek时刻”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"张亚勤院士：基础大模型最终不超过10个，十年后机器人比人多 | MEET2026\" src=\"https://image.jido.dev/20251211143724_eeb279ac6a1d1e1a61d54ec96a6799ef.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"628\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">至于未来5~10年的主战场，在他看来，将走向<strong>“智能体互联网”时代</strong>——</p>\n  <p data-track=\"11\">基础大模型像操作系统一样在全球范围内收敛到<strong>不超过10个；</strong>而<strong>智能体会取代今天的大部分SaaS和App</strong>，成为企业和个人与世界交互的默认形态，同时这也是通往AGI的必经之路。</p>\n  <p data-track=\"12\">为了完整体现张亚勤的思考，在不改变原意的基础上，量子位对演讲内容进行了编辑整理，希望能给你带来更多启发。</p>\n  <p data-track=\"13\">MEET2026智能未来大会是由量子位主办的行业峰会，近30位产业代表与会讨论。线下参会观众近1500人，线上直播观众350万+，获得了主流媒体的广泛关注与报道。</p>\n  <ul>\n   <li data-track=\"15\">新一轮人工智能是<strong>信息智能、物理智能和生物智能</strong>在统一token表征与规模定律驱动下的融合演进。</li>\n   <li data-track=\"16\">以ChatGPT与DeepSeek为代表，AI正从鉴别式走向生成式与推理式，在<strong>高效率、低成本和开源生态</strong>中加速落地。</li>\n   <li data-track=\"17\">生成式AI正快速演化为智能体，任务长度<strong>与能力同步提升、风险同步放大</strong>。</li>\n   <li data-track=\"18\"><strong>基础大模型</strong>相当于AI时代的操作系统，全球玩家<strong>不会超过十家</strong>，将重构为“基础模型+垂直/边缘模型+智能体网络”的新产业格局。</li>\n   <li data-track=\"19\"><strong>智能体互联网</strong>是未来5–10年最大方向，也是通往AGI的必经之路，预计在15–20年内完成从信息智能到物理智能、再到生物智能的跨越。</li>\n   <li data-track=\"20\">……</li>\n  </ul>\n  <p data-track=\"21\">以下为张亚勤演讲全文：</p>\n  <p data-track=\"23\">今天我谈的是人工智能+的趋势，这个题目我也思考了有将近十年的时间，我出了一本书叫《智能涌现》，也总结了人工智能这十年的发展，这里面也包括我当时在10年前写的“智能+”和“人工智能+”的文章。</p>\n  <p data-track=\"24\">首先就是新一轮的人工智能，它是<strong>信息智能、物理智能和生物智能的融合</strong>，我们的信息世界、物理世界和生物世界都走向了数字化，所以它也是原子、分子和比特的融合。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"张亚勤院士：基础大模型最终不超过10个，十年后机器人比人多 | MEET2026\" src=\"https://image.jido.dev/20251211143726_fd89cd4be19275caac6149fd99338ca4.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"468\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">人工智能已经有70年的历史了，过去的五年和十年发展尤其快，一个重要的里程碑就是2022年的ChatGPT，距离现在正好三年。</p>\n  <p data-track=\"26\">特别重要的就是ChatGPT所带来的<strong>从鉴别式的AI走向了生成式的AI</strong>，过去更多的是模式识别，现在我们可以创造新的内容，这里面有三个特别重要的概念：</p>\n  <p data-track=\"27\">首先它是一个<strong>统一的表征</strong>，即tokenization，不管是文字、语音，图片、视频，或者是蛋白质、DNA、细胞，或者是三维的激光雷达的点云信号，都可以把它变成一个统一的token。</p>\n  <p data-track=\"28\">token越多，数据越多，算力越强、算法越好，这个时候就越准确。</p>\n  <p data-track=\"29\">规模定律（Scaling Law）到了一定的规模的话，就会出现<strong>智能涌现</strong>，这也是我这本书的题目。 另外一个重要时刻就是咱们中国的DeepSeek时刻，DeepSeek出来之后，首先就让整个模型<strong>从预训练走向推理</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"张亚勤院士：基础大模型最终不超过10个，十年后机器人比人多 | MEET2026\" src=\"https://image.jido.dev/20251211143725_037c208ad53a98faa7c1f0a12f81a9f8.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"602\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">另外一点当然很重要，它有很多的算法创新、架构创新、系统创新，可以说是<strong>高效率、高性能和低价格</strong>。</p>\n  <p data-track=\"31\">同时它又是个新的商业模式，它是开源的，用的MIT的license，这个本身是限制最少的开源架构，所以DeepSeek出来之后，在国内和全球范围内大幅度地加速了它的落地和应用，所以我把它叫做<strong>DeepSeek Moment</strong>，也是中国的一个路径。</p>\n  <p data-track=\"33\">AI发展有五个趋势，首先就是<strong>生成式的AI正走向智能体的AI</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"张亚勤院士：基础大模型最终不超过10个，十年后机器人比人多 | MEET2026\" src=\"https://image.jido.dev/20251211143725_acf94eb9cdaf4de11eedd8931bb840fc.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"594\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"34\"><strong>智能体</strong>是这两年AI方面一个新的发展，是最重要的一个创新。</p>\n  <p data-track=\"35\">过去七个月，Agent的任务长度就增长了两倍，准确度大于50%，其实也已经和人类对齐了。</p>\n  <p data-track=\"36\">第二个趋势很重要，就是<strong>规模定律在预训练阶段已经放缓了</strong>，尽管这个智能还在往前走，更多的智能放到后训练、推理、智能体阶段。</p>\n  <p data-track=\"37\">这里面很有意思的现象就是，推理的单位成本在过去一年下降了10倍，但是智能体本身的算力要求一年也是增长了10倍，所以一个乘10、一个除10正好平衡。</p>\n  <p data-track=\"38\">第三点就是，我们从信息智能走向<strong>物理智能和生物智能</strong>，大语言模型走向<strong>视觉语言动作模型</strong>（VLA，Vision-Language-Action）。</p>\n  <p data-track=\"39\">这里面有两个很重要的节点，一个是<strong>无人驾驶</strong>，无人驾驶今年就已经到达ChatGPT时刻，2030年就是DeepSeek时刻——即<strong>10%左右的新车拥有L4级无人驾驶的能力</strong>。</p>\n  <p data-track=\"40\">另外<strong>机器人</strong>一定是未来最大的赛道，尽管人形机器人还需要很多年，但是我认为在<strong>未来10年左右，我们机器人会比人的数目还要多</strong>。</p>\n  <p data-track=\"41\">一个不好的消息是，AI的风险正在快速上升，智能体出来之后我们的风险至少double（翻倍）。</p>\n  <p data-track=\"43\">如果看一下新产业格局的话，我们有基础大模型，像操作系统一样，上面有垂直模型，还有边缘模型。</p>\n  <p data-track=\"44\">基础大模型，全球可能最后<strong>不会超过10个</strong>，一半中国的，一半美国的，可能说不定还有一两个是别的国家的，中美两个国家有不同的路径，但是是引领全球。</p>\n  <p data-track=\"45\">这里面还包括开源和闭源，去年我记得我们还在争论到底以开源为主、还是闭源为主。现在我觉得比较清楚了——<strong>开源会成为更多的、更大的平台和生态，可能80%是开源， 20%的是闭源。</strong></p>\n  <p data-track=\"46\">这个图就特别清楚，规模定律可以看到的Pre-train还在往上走，但是走的速率已经在平缓，Post-train在increase，智能体还是直线地往上走。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"张亚勤院士：基础大模型最终不超过10个，十年后机器人比人多 | MEET2026\" src=\"https://image.jido.dev/20251211143724_80554bd7c4a451b2ec4f5fa95537ccb2.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"589\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\">还有一点，智能体本身不仅仅是技术，它其实在形成<strong>网络</strong>，也形成<strong>新的经济形态</strong>。</p>\n  <p data-track=\"48\">所以我们以后如果看企业的架构都会有完全不同的一种概念，以后企业需要GPU、大模型、数据，然后包括我们的人力资源，有些可能是人，有些可能是智能体，所以这对于未来管理企业、开发产品都有很大的影响。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251211143724_d9f91a3f7066355c5e7c464912bb8a2a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"603\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"49\">这张图是未来的技术架构，左边这张图是ChatGPT刚出来不久的时候我画的，如果看这个黄线的话，在左边可以看到基础大模型它是一个平台，上面有各种不同的领域垂直模型，而上面有SaaS（软件作为一种服务），在边缘会蒸馏出一个相对比较小的模型，再上面有APP，这是当时我想的架构。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251211143724_049656febbbe53cbba8ca07614278cbf.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"590\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"50\">10月我把这个架构做了更新，最重要的一点就是我认为<strong>未来我们的SaaS和在设备端或边缘端的手机APP都会被Agent取代</strong>，也就是说<strong>智能体是未来的SaaS和APP</strong>。</p>\n  <p data-track=\"51\">我举个例子，所谓的智能体，你可以有各种各样的，有消费者的、各个不同行业的、机器人的、无人驾驶的。</p>\n  <p data-track=\"52\">刘洋教授在清华做了一个<strong>医疗智能体</strong>，也是全球第一个智能体无人医院——想用智能体网络、多智能体去模拟真正的三甲医院，这里面当然有病人、医生、护士、各种不同的科室。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251211143724_6f52ea0424088e2df20a5dfb58879c9d.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"599\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"53\">在这个虚拟世界里面，多智能体会互相交互和学习，然后持续快速地进化，这样就是能在很短的时间，比如说两天它就可以完成一个三甲医院两到三年的这些病例，而且准确度还要高得很多。</p>\n  <p data-track=\"54\">但我们并不是说让智能体来替代未来的医生，它更多的是作为助理，我们相信未来每个医生都会有TA的一个智能体。</p>\n  <p data-track=\"55\">所以如果看一下产业机遇的话，我把<strong>基础大模型看作是我们人工智能时代的一个操作系统</strong>，它会彻底重写、重构和重塑我们产业的形态。</p>\n  <p data-track=\"56\">就像在PC时代我们有Windows，在移动时代有安卓和iOS，同样在人工智能时代操作系统就是一个基础大模型。有了这个操作系统之后，它下面的芯片架构、上面的应用生态都会完全被重构。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251211143725_24e92926b20c911f1a78613ca3fb3936.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"591\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"57\">也就是为什么现在芯片是以GPU为主的，上面的生态是以垂直模型加上边缘模型和智能体为主的，整个规模会比PC时代、移动时代大一个、两个甚至三个数量级。</p>\n  <p data-track=\"58\">另外，我们从互联网发展的角度来看的话，我们最早是PC互联，后来到了移动互联，再之后我们到了物联网，现在我们正走向<strong>Internet of Agents，也就是智能体互联网</strong>，我认为它是<strong>未来5到10年最大的发展方向</strong>。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251211143724_49925de4128489578121e82c31904e96.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"600\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"59\"><strong>智能体也是我们实现AGI通用人工智能的必经之路</strong>，这里面需要新的算法体系，比如说新的记忆体系、世界模型。</p>\n  <p data-track=\"60\">我认为未来五年的话，现在的自回归架构、Transformer、Diffusion可能就会被颠覆，有了这些东西之后我们就可以实现通用人工智能。</p>\n  <p data-track=\"61\">到底需要多长时间呢？</p>\n  <p data-track=\"62\">我认为可能需要<strong>15~20年</strong>。先是信息智能，再是物理智能，最后达到<strong>生物智能</strong>。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "张亚勤院士预测，未来基础大模型将不超过 10 个，智能体将取代 SaaS 和 App 成为主流交互形式，并驱动 AGI 发展，十年内机器人数量将超越人类。",
+  "oneSentenceSummary": "张亚勤院士预测，未来基础大模型将不超过 10 个，智能体将取代 SaaS 和 App 成为主流交互形式，并驱动 AGI 发展，十年内机器人数量将超越人类。",
+  "summary": "文章整理了张亚勤院士在 MEET2026 大会上的演讲内容，深入探讨了人工智能发展的最新趋势。他指出新一轮 AI 是信息智能、物理智能、生物智能的融合，代表着原子、分子和比特的融合。张亚勤院士强调，大模型正从“算力堆叠”向“推理优先”转型，ChatGPT 和 DeepSeek 是这一转变的里程碑，前者通过统一表征统一了多模态数据，后者以高效率、低成本和开源模式加速了模型落地。他预测，未来 5-10 年将进入“智能体互联网”时代，基础大模型将收敛至全球不超过 10 个，智能体将普遍取代 SaaS 和 App，成为与世界交互的主流形式，同时这也是通往 AGI（通用人工智能）的必经之路。文章还探讨了 AI 发展中的具体趋势，如生成式 AI 向智能体 AI 演进、规模定律放缓但推理和智能体发展加速、AI 风险上升以及新的产业格局，并指出智能体互联网将是未来最大的发展方向，最终实现通用人工智能需要 15-20 年。",
+  "mainPoints": [
+    {
+      "point": "新一轮 AI 是信息、物理、生物智能的融合，促进原子、分子、比特的统一。",
+      "explanation": "随着 ChatGPT 等模型的出现，AI 不再局限于模式识别，而是通过统一表征（tokenization）整合文本、语音、图像、生物数据等，实现信息世界的数字化和智能涌现。"
+    },
+    {
+      "point": "未来基础大模型将收敛到不超过 10 个，并成为 AI 时代的操作系统。",
+      "explanation": "如同 PC 时代的 Windows 和移动时代的安卓/iOS，少数基础大模型将重构芯片架构和应用生态，形成“基础模型+垂直/边缘模型+智能体网络”的新产业格局。"
+    },
+    {
+      "point": "智能体互联网是未来 AGI 的必经之路，将取代现有 SaaS 和 App。",
+      "explanation": "智能体作为 AI 发展的重要创新，其任务处理能力和准确性已达到人类水平，将成为企业和个人与世界交互的默认形态，推动 AGI 在 15-20 年内实现信息、物理乃至生物智能的跨越。"
+    },
+    {
+      "point": "AI 将从生成式发展为智能体驱动型，并加速走向物理和生物智能。",
+      "explanation": "大模型的发展正从预训练走向推理阶段，智能体作为新的 AI 范式，将加速无人驾驶与机器人领域的发展，预计未来十年机器人数量将超越人类。"
+    }
+  ],
+  "keyQuotes": [
+    "新一轮人工智能，是信息智能、物理智能和生物智能的融合，本质上也是原子、分子和比特的融合。",
+    "基础大模型像操作系统一样在全球范围内收敛到不超过 10 个；而智能体会取代今天的大部分 SaaS 和 App，成为企业和个人与世界交互的默认形态，同时这也是通往 AGI 的必经之路。",
+    "智能体也是我们实现 AGI 通用人工智能的必经之路，这里面需要新的算法体系，比如说新的记忆体系、世界模型。",
+    "在未来 10 年左右，我们机器人会比人的数目还要多。",
+    "开源会成为更多的、更大的平台和生态，可能 80%是开源，20%的是闭源。"
+  ],
+  "tags": [
+    "大模型趋势",
+    "智能体",
+    "AGI",
+    "产业格局",
+    "统一表征"
+  ],
+  "topicTag": "other",
+  "readTime": 15,
+  "score": 92,
+  "wordCount": 3510,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765449293000,
+  "publishDateStr": "2025-12-11",
+  "publishDateTimeStr": "2025-12-11 10:34:53"
+}
