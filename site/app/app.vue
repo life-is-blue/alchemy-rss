@@ -26,27 +26,10 @@
             </button>
           </div>
 
-          <!-- Selected Reading (Grouped by Category) -->
-          <div class="space-y-3">
-            <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest px-3">精选阅读</p>
-            <div class="space-y-1 max-h-[30vh] overflow-y-auto hide-scrollbar">
-              <button
-                v-for="group in categoryGroups"
-                :key="group.key"
-                @click="selectCategory(group.key)"
-                class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[13px] font-medium transition-all group hover:bg-[var(--color-hover-bg)]"
-                :class="currentCategory === group.key ? 'bg-primary/10 text-primary font-bold' : 'text-text-sub hover:text-text-main'"
-              >
-                <span class="truncate">{{ group.label }}</span>
-                <span class="text-[10px] opacity-40 group-hover:opacity-100 transition-opacity">{{ group.count }}</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- RSS Sources (Flat list) -->
-          <div class="space-y-3">
-            <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest px-3">RSS 订阅源</p>
-            <div class="space-y-1 max-h-[30vh] overflow-y-auto hide-scrollbar">
+          <!-- RSS Sources (Flat list) - Kept but made more compact -->
+          <div class="space-y-3 pt-4">
+            <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest px-3">订阅源</p>
+            <div class="space-y-1 max-h-[40vh] overflow-y-auto hide-scrollbar">
               <button
                 v-for="feed in sourceFeeds"
                 :key="feed.title"
@@ -158,19 +141,30 @@
             <!-- Feed View -->
             <div v-if="!selectedUrl" class="w-full">
               <div v-if="currentView === 'reader'" key="articles">
-                <!-- Density Toggle & Summary (Optional Header inside list) -->
-                <div class="flex items-center justify-between mb-8">
-                  <div class="flex items-center gap-3">
-                    <span class="text-[11px] font-bold text-primary bg-primary/5 px-2.5 py-1 rounded-full border border-primary/10 uppercase tracking-tight">
-                      {{ filteredArticles.length }} Articles
-                    </span>
+                <!-- Integrated Header & Filter Bar -->
+                <div class="mb-10 space-y-6">
+                  <div class="flex items-end gap-3">
+                    <h2 class="text-3xl font-extrabold text-text-main tracking-tight">{{ filterTitle }}</h2>
+                    <span class="text-[13px] font-bold text-text-muted mb-1 opacity-40 uppercase tracking-widest">{{ filteredArticles.length }} ARTICLES</span>
+                  </div>
+
+                  <!-- Horizontal Category Pills -->
+                  <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-2">
                     <button
-                      v-if="hasActiveFilter"
-                      @click="clearFilters"
-                      class="text-[11px] font-bold text-text-muted hover:text-primary transition-colors flex items-center gap-1"
+                      @click="selectCategory('全部')"
+                      class="px-5 py-2 rounded-full text-[13px] font-bold transition-all whitespace-nowrap border"
+                      :class="currentCategory === '全部' ? 'bg-primary text-white border-primary shadow-md' : 'bg-white text-text-sub border-outline/5 hover:border-primary/20'"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                      Clear Filters
+                      全部
+                    </button>
+                    <button
+                      v-for="group in categoryGroups"
+                      :key="group.key"
+                      @click="selectCategory(group.key)"
+                      class="px-5 py-2 rounded-full text-[13px] font-bold transition-all whitespace-nowrap border"
+                      :class="currentCategory === group.key ? 'bg-primary text-white border-primary shadow-md' : 'bg-white text-text-sub border-outline/5 hover:border-primary/20'"
+                    >
+                      {{ group.label }}
                     </button>
                   </div>
                 </div>
