@@ -1,6 +1,7 @@
 [
   {
-    "title": "精选文章 - AI",
+    "title": "AI 精选",
+    "aliases": ["精选文章 - AI"],
     "type": "ARTICLE",
     "category": "Artificial_Intelligence",
     "qualifiedFilter": "true",
@@ -9,7 +10,8 @@
     "limit": 30
   },
   {
-    "title": "精选文章 - 编程",
+    "title": "编程 精选",
+    "aliases": ["精选文章 - 编程"],
     "type": "ARTICLE",
     "category": "Programming_Technology",
     "qualifiedFilter": "true",
@@ -18,7 +20,8 @@
     "limit": 30
   },
   {
-    "title": "精选文章 - 商业",
+    "title": "商业 精选",
+    "aliases": ["精选文章 - 商业"],
     "type": "ARTICLE",
     "category": "Business_Tech",
     "qualifiedFilter": "true",
@@ -27,7 +30,8 @@
     "limit": 30
   },
   {
-    "title": "精选文章 - 产品",
+    "title": "产品 精选",
+    "aliases": ["精选文章 - 产品"],
     "type": "ARTICLE",
     "category": "Product_Development",
     "qualifiedFilter": "true",
@@ -36,7 +40,8 @@
     "limit": 30
   },
   {
-    "title": "更多文章 - AI",
+    "title": "AI 更多",
+    "aliases": ["更多文章 - AI"],
     "type": "ARTICLE",
     "category": "Artificial_Intelligence",
     "qualifiedFilter": "false",
@@ -45,7 +50,8 @@
     "limit": 30
   },
   {
-    "title": "更多文章 - 编程",
+    "title": "编程 更多",
+    "aliases": ["更多文章 - 编程"],
     "type": "ARTICLE",
     "category": "Programming_Technology",
     "qualifiedFilter": "false",
@@ -54,7 +60,8 @@
     "limit": 30
   },
   {
-    "title": "更多文章 - 商业",
+    "title": "商业 更多",
+    "aliases": ["更多文章 - 商业"],
     "type": "ARTICLE",
     "category": "Business_Tech",
     "qualifiedFilter": "false",
@@ -63,7 +70,8 @@
     "limit": 30
   },
   {
-    "title": "更多文章 - 产品",
+    "title": "产品 更多",
+    "aliases": ["更多文章 - 产品"],
     "type": "ARTICLE",
     "category": "Product_Development",
     "qualifiedFilter": "false",
@@ -72,7 +80,8 @@
     "limit": 30
   },
   {
-    "title": "技术视频 - 编程",
+    "title": "编程 视频",
+    "aliases": ["技术视频 - 编程"],
     "type": "VIDEO",
     "category": "Programming_Technology",
     "qualifiedFilter": "true",
@@ -80,7 +89,8 @@
     "limit": 100
   },
   {
-    "title": "技术视频 - AI",
+    "title": "AI 视频",
+    "aliases": ["技术视频 - AI"],
     "type": "VIDEO",
     "category": "Artificial_Intelligence",
     "qualifiedFilter": "true",
@@ -88,7 +98,8 @@
     "limit": 100
   },
   {
-    "title": "深度播客 - AI",
+    "title": "AI 播客",
+    "aliases": ["深度播客 - AI"],
     "type": "PODCAST",
     "category": "Artificial_Intelligence",
     "qualifiedFilter": "true",
@@ -96,7 +107,8 @@
     "limit": 100
   },
   {
-    "title": "深度播客 - 商业",
+    "title": "商业 播客",
+    "aliases": ["深度播客 - 商业"],
     "type": "PODCAST",
     "category": "Business_Tech",
     "qualifiedFilter": "true",
@@ -105,6 +117,7 @@
   },
   {
     "title": "AI 动态",
+    "aliases": ["AI 动态"],
     "type": "TWITTER",
     "category": "Artificial_Intelligence",
     "lowerTotalScore": 10,
@@ -112,7 +125,8 @@
     "limit": 100
   },
   {
-    "title": "编程动态",
+    "title": "编程 动态",
+    "aliases": ["编程动态"],
     "type": "TWITTER",
     "category": "Programming_Technology",
     "lowerTotalScore": 10,
@@ -120,7 +134,8 @@
     "limit": 100
   },
   {
-    "title": "宝玉的分享",
+    "title": "宝玉",
+    "aliases": ["宝玉的分享"],
     "type": "rss",
     "xmlUrl": "https://baoyu.io/feed.xml",
     "limit": 20

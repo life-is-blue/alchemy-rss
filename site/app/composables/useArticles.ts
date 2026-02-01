@@ -90,7 +90,13 @@ export const useArticles = () => {
       ])
 
       rssData.value = Array.isArray(rssResp) ? rssResp : []
-      const sourceMap = new Map(rssData.value.map(s => [s.title, s]))
+      const sourceMap = new Map<string, any>()
+      rssData.value.forEach(s => {
+        sourceMap.set(s.title, s)
+        if (Array.isArray(s.aliases)) {
+          s.aliases.forEach((alias: string) => sourceMap.set(alias, s))
+        }
+      })
 
       if (Array.isArray(articlesResp)) {
         const now = new Date().getTime()

@@ -312,7 +312,11 @@ async function handleFeed() {
   const apiSources = []
 
   sourcesConfig.forEach((config, index) => {
-    const existingItems = linksExist.find(el => el.title === config.title)?.items || []
+    let existingItems = linksExist.find(el => el.title === config.title)?.items || []
+    if ((!existingItems || existingItems.length === 0) && Array.isArray(config.aliases)) {
+      const aliasEntry = linksExist.find(el => config.aliases.includes(el.title))
+      if (aliasEntry?.items) existingItems = aliasEntry.items
+    }
     const sourceInfo = { config, index, existingItems }
 
     // 判断源类型

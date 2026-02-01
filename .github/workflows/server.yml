@@ -9,6 +9,11 @@ on:
         description: 'Input suffix'
         required: false
         type: string
+      mode:
+        description: 'Run mode: once | backfill'
+        required: false
+        type: string
+        default: 'once'
 
   schedule:
     - cron: '0 */2 * * *'
@@ -70,7 +75,11 @@ jobs:
         fi
         echo "========================="
         pnpm install
-        pnpm run once
+        if [ "${{ github.event.inputs.mode }}" = "backfill" ]; then
+          pnpm run backfill
+        else
+          pnpm run once
+        fi
 
     - name: Check for changes
       id: git-check

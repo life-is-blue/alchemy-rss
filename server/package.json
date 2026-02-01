@@ -4,7 +4,8 @@
   "main": "index.js",
   "description": "Alchemy 数据炼金平台 - 后端服务",
   "scripts": {
-    "once": "node ./once.js"
+    "once": "node ./once.js",
+    "backfill": "node ./backfill.js"
   },
   "dependencies": {
     "async": "^2.6.1",
