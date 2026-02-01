@@ -101,16 +101,9 @@
               class="flex items-center gap-2 px-6 py-2.5 rounded-full bg-white text-text-main text-[13px] font-bold hover:bg-black/5 transition-all active:scale-95 shadow-sm border border-outline/5"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-              阅读原文
+            阅读原文
             </a>
           </div>
-
-          <button
-            @click="scrollToTop"
-            class="p-3 rounded-full bg-white text-text-muted hover:text-primary transition-all active:scale-90 border border-outline/5 shadow-sm"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
         </div>
 
         <!-- Next Article Card -->
@@ -118,16 +111,28 @@
            <p class="text-[11px] font-bold text-text-muted/40 uppercase tracking-widest mb-4">下一篇 Next</p>
            <div
              @click="$emit('open-next', nextArticle)"
-             class="group cursor-pointer p-6 rounded-xl border transition-all duration-300"
+             class="group cursor-pointer p-8 rounded-2xl border transition-all duration-500 relative overflow-hidden"
              style="background-color: var(--color-hover-bg); border-color: var(--color-outline);"
-             :class="['hover:bg-primary/5 hover:border-primary/10']"
+             :class="['hover:bg-primary/[0.03] hover:border-primary/20 hover:shadow-xl hover:-translate-y-1']"
            >
-             <h3 class="text-[16px] font-bold text-text-main group-hover:text-primary transition-colors mb-2 truncate">
-               {{ nextArticle.title }}
-             </h3>
-             <div class="flex items-center gap-2 text-[12px] text-text-muted">
-               <span>{{ nextArticle.rssTitle || 'RSS' }}</span>
-               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-50 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+             <!-- Decoration -->
+             <div class="absolute right-0 top-0 bottom-0 w-1 bg-primary/0 group-hover:bg-primary/40 transition-all"></div>
+
+             <div class="flex items-center justify-between gap-6">
+               <div class="flex-1 min-w-0">
+                 <h3 class="text-[18px] md:text-[20px] font-bold text-text-main group-hover:text-primary transition-colors mb-3 line-clamp-2 leading-snug">
+                   {{ nextArticle.title }}
+                 </h3>
+                 <div class="flex items-center gap-2 text-[13px] text-text-muted font-medium">
+                   <span class="text-primary/60">{{ nextArticle.rssTitle || 'RSS' }}</span>
+                   <span class="opacity-30">·</span>
+                   <span>点击继续阅读</span>
+                 </div>
+               </div>
+               
+               <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-text-muted group-hover:bg-primary group-hover:text-white transition-all duration-300 shrink-0 border border-outline/5">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+               </div>
              </div>
            </div>
         </div>
