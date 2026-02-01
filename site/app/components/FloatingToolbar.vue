@@ -1,47 +1,50 @@
 <template>
-  <div class="fixed right-6 bottom-6 md:right-10 md:bottom-10 z-40 flex flex-col items-center gap-2">
-    <!-- Unified Capsule Dock -->
-    <div
-      v-if="showToolbar || showBackToTop"
-      class="flex flex-col items-center p-1.5 gap-2 rounded-full transition-all duration-300 backdrop-blur-md border border-outline/10 shadow-paper"
-      style="background-color: var(--color-surface);"
-    >
-      
-      <!-- Toolbar Items (Reader Mode) -->
-      <template v-if="showToolbar">
-        <button
-          @click="$emit('toggle-settings')"
-          class="toolbar-btn group relative"
-          title="阅读设置"
-        >
-          <span class="text-[16px] font-serif font-bold">Aa</span>
-          <span class="tooltip">样式设置</span>
-        </button>
+  <div class="fixed right-6 bottom-1/2 translate-y-1/2 md:right-12 z-40 flex flex-col gap-5">
+    
+    <!-- Reader Actions (Only when reading) -->
+    <template v-if="showToolbar">
+      <!-- Catalog (Placeholder for now) -->
+      <button class="wechat-fab group" title="目录">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+      </button>
 
-        <button
-          @click="$emit('toggle-dark')"
-          class="toolbar-btn group relative"
-          title="夜间模式"
-        >
-          <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-          <svg v-else xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-          <span class="tooltip">{{ isDark ? '日间模式' : '夜间模式' }}</span>
-        </button>
+      <!-- AI Summary (Toggle) -->
+      <button class="wechat-fab group" title="AI 摘要">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      </button>
 
-        <!-- Divider if BackToTop is also visible -->
-        <div v-if="showBackToTop" class="w-4 h-[1px] my-0.5" style="background-color: var(--color-border)"></div>
-      </template>
+      <!-- Style Settings (Aa) -->
+      <button
+        @click="$emit('toggle-settings')"
+        class="wechat-fab group"
+        title="样式设置"
+      >
+        <span class="text-[17px] font-serif font-medium">A</span>
+      </button>
 
-      <!-- Back to Top -->
+      <!-- Dark Mode -->
+      <button
+        @click="$emit('toggle-dark')"
+        class="wechat-fab group"
+        title="夜间模式"
+      >
+         <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+         <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </template>
+
+    <!-- Back to Top (Conditional) -->
+    <transition name="fade">
       <button
         v-if="showBackToTop"
         @click="scrollToTop"
-        class="toolbar-btn group relative"
+        class="wechat-fab group"
         title="回到顶部"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
       </button>
-    </div>
+    </transition>
+
   </div>
 </template>
 
@@ -58,41 +61,29 @@ const scrollToTop = () => emit('scroll-top')
 </script>
 
 <style scoped>
-.toolbar-btn {
-  width: 40px;
-  height: 40px;
+.wechat-fab {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  background-color: var(--color-surface);
   color: var(--color-text-sub);
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* Soft Shadow */
+  border: 1px solid var(--color-outline);
   transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
 }
-.toolbar-btn:hover {
-  background-color: var(--color-hover-bg);
+
+.wechat-fab:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   color: var(--color-primary);
 }
-.toolbar-btn:active {
-  transform: scale(0.92);
-}
 
-.tooltip {
-  position: absolute;
-  right: 100%;
-  margin-right: 12px;
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-  font-size: 11px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  opacity: 0;
-  white-space: nowrap;
-  pointer-events: none;
-  transition: opacity 0.2s;
-  font-weight: 500;
-}
-.group:hover .tooltip {
-  opacity: 1;
+.wechat-fab:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 </style>
