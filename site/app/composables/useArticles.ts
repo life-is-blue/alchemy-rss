@@ -35,6 +35,10 @@ export const CONTENT_TYPE_ICONS: Record<string, string> = {
   rss: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>`
 }
 
+// Shared Navigation State (Persistent across components)
+const currentView = ref('reader')
+const selectedUrl = ref('')
+
 export const useArticles = () => {
   const articles = ref<any[]>([])
   const rssData = ref<any[]>([])
@@ -154,12 +158,24 @@ export const useArticles = () => {
   const selectTab = (type: string) => {
     currentTab.value = type
     currentPage.value = 1
+    currentView.value = 'reader'
+    selectedUrl.value = ''
     scrollToTop()
   }
 
   const selectCategory = (id: string) => {
     currentCategory.value = id
     currentPage.value = 1
+    currentView.value = 'reader' // Force back to article list view
+    selectedUrl.value = ''       // Close reader if open
+    scrollToTop()
+  }
+
+  const handleNav = (id: string) => {
+    currentView.value = id
+    currentCategory.value = '全部'
+    selectedUrl.value = ''
+    if (id === 'reader') selectCategory('全部')
     scrollToTop()
   }
 
@@ -172,11 +188,13 @@ export const useArticles = () => {
   return {
     articles,
     categoryGroups,
-    sourceFeeds, // Expose feeds
+    sourceFeeds,
     rssData,
     loading,
     currentTab,
     currentCategory,
+    currentView,
+    selectedUrl,
     searchValue,
     displayedArticles,
     filteredArticles,
@@ -184,6 +202,7 @@ export const useArticles = () => {
     loadData,
     loadMore,
     selectTab,
-    selectCategory
+    selectCategory,
+    handleNav
   }
 }

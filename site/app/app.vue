@@ -19,9 +19,9 @@
               :key="item.id"
               @click="handleNav(item.id)"
               class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[14px] font-medium transition-all group hover:bg-[var(--color-hover-bg)]"
-              :class="currentView === item.id && !currentCategory ? 'bg-primary text-white shadow-md hover:bg-primary' : 'text-text-sub hover:text-text-main'"
+              :class="currentView === item.id && (currentCategory === '全部' || item.id !== 'reader') ? 'bg-primary text-white shadow-md hover:bg-primary' : 'text-text-sub hover:text-text-main'"
             >
-              <span class="w-4.5 h-4.5 flex items-center justify-center transition-colors" :class="currentView === item.id && !currentCategory ? 'text-white' : 'text-text-sub group-hover:text-primary'" v-html="getIcon(item.icon)"></span>
+              <span class="w-4.5 h-4.5 flex items-center justify-center transition-colors" :class="currentView === item.id && (currentCategory === '全部' || item.id !== 'reader') ? 'text-white' : 'text-text-sub group-hover:text-primary'" v-html="getIcon(item.icon)"></span>
               {{ item.label }}
             </button>
           </div>
@@ -326,7 +326,7 @@
               :key="item.id"
               @click="handleNav(item.id); isMobileMenuOpen = false"
               class="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-[14px] font-medium transition-all"
-              :class="currentView === item.id && !currentCategory ? 'bg-primary/5 text-primary' : 'text-text-sub'"
+              :class="currentView === item.id && (currentCategory === '全部' || item.id !== 'reader') ? 'bg-primary/5 text-primary' : 'text-text-sub'"
             >
               <span class="w-5 h-5 flex items-center justify-center" v-html="getIcon(item.icon)"></span>
               {{ item.label }}
@@ -367,16 +367,17 @@ const {
   categoryGroups,
   sourceFeeds,
   currentCategory,
+  currentView,
+  selectedUrl,
   loadData,
   loadMore,
   selectTab,
-  selectCategory
+  selectCategory,
+  handleNav
 } = useArticles()
 
 const { theme, fontSize, increaseFont, decreaseFont, resetFont } = useReadingSettings()
 
-const selectedUrl = ref('')
-const currentView = ref('reader')
 const viewMode = ref('list')
 const isMobileMenuOpen = ref(false)
 const showGlobalSettings = ref(false)
@@ -445,14 +446,6 @@ const nextArticle = computed(() => {
 })
 
 const hasActiveFilter = computed(() => (currentCategory.value && currentCategory.value !== '全部') || currentView.value === 'favorites')
-
-const handleNav = (id) => {
-  currentView.value = id
-  currentCategory.value = '全部'
-  selectedUrl.value = ''
-  if (id === 'reader') selectCategory('全部')
-  scrollToTop()
-}
 
 const clearFilters = () => handleNav('reader')
 
