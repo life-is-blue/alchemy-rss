@@ -95,7 +95,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:-translate-x-1 transition-transform"><path d="m15 18-6-6 6-6"/></svg>
           </button>
 
-          <h1 class="text-[15px] font-bold text-text-main truncate max-w-[300px] md:max-w-[500px]">
+          <h1 
+            class="text-[15px] font-bold text-text-main truncate max-w-[300px] md:max-w-[500px] transition-opacity duration-300"
+            :class="selectedUrl && !showHeaderTitle ? 'opacity-0' : 'opacity-100'"
+          >
             {{ selectedUrl ? filteredArticles.find(a => a.link === selectedUrl)?.title : filterTitle }}
           </h1>
         </div>
@@ -228,6 +231,7 @@
                   @scroll-top="scrollToTop"
                   @show-settings="showGlobalSettings = true"
                   @open-next="openArticle"
+                  @toggle-header-title="showHeaderTitle = $event"
                 />
               </div>
             </div>
@@ -376,6 +380,7 @@ const currentView = ref('reader')
 const viewMode = ref('list')
 const isMobileMenuOpen = ref(false)
 const showGlobalSettings = ref(false)
+const showHeaderTitle = ref(false)
 const mainContent = ref(null)
 const scrollSentinel = ref(null)
 const showBackToTop = ref(false)
@@ -453,6 +458,7 @@ const clearFilters = () => handleNav('reader')
 
 const openArticle = (article) => {
   selectedUrl.value = article.link
+  showHeaderTitle.value = false // Reset header title visibility
   scrollToTop()
 }
 

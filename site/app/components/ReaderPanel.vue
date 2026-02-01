@@ -178,7 +178,7 @@ const props = defineProps({
   nextArticle: Object
 })
 
-const emit = defineEmits(['scroll-top', 'show-settings', 'open-next'])
+const emit = defineEmits(['scroll-top', 'show-settings', 'open-next', 'toggle-header-title'])
 
 const { fontSize, theme, increaseFont, decreaseFont } = useReadingSettings()
 const { updateProgress } = useReadingProgress()
@@ -242,10 +242,27 @@ const updateReadingProgress = () => {
 
 const scrollToTop = () => emit('scroll-top')
 
+// Scroll Title Logic
+let titleObserver = null
+const setupTitleObserver = () => {
+  if (process.client && articleContent.value) {
+    const titleEl = articleContent.value.querySelector('h1')
+    if (titleEl) {
+      titleObserver = new IntersectionObserver((entries) => {
+        // If title is NOT intersecting (scrolled out of view), show header title
+        emit('toggle-header-title', !entries[0].isIntersecting)
+      }, { threshold: 0 })
+      titleObserver.observe(titleEl)
+    }
+  }
+}
+
 // Setup Image Listeners for Lightbox & Code Copy Buttons
 const setupContentInteractions = () => {
   nextTick(() => {
     if (articleContent.value) {
+      setupTitleObserver() // Initialize title observer
+      
       // 1. Image Lightbox
       const images = articleContent.value.querySelectorAll('img')
       images.forEach(img => {
