@@ -5,7 +5,11 @@
         v-for="tool in visibleTools"
         :key="tool.id"
         @click="tool.handler"
-        class="wechat-fab group relative"
+        class="wechat-fab group relative transition-all duration-300"
+        :class="[
+          { 'text-primary border-primary bg-primary/5': tool.active },
+          tool.id === 'top' && !showBackToTop ? 'opacity-20 grayscale pointer-events-none' : 'opacity-100'
+        ]"
         :title="tool.label"
         :aria-label="tool.label"
       >
@@ -27,41 +31,33 @@ import { computed } from 'vue'
 const props = defineProps({
   showBackToTop: { type: Boolean, default: false },
   showToolbar: { type: Boolean, default: true },
-  isDark: { type: Boolean, default: false }
+  isDark: { type: Boolean, default: false },
+  isReader: { type: Boolean, default: false }
 })
 
-const emit = defineEmits(['scroll-top', 'toggle-settings', 'toggle-dark', 'toggle-catalog', 'toggle-ai'])
+const emit = defineEmits(['scroll-top', 'toggle-settings', 'toggle-dark', 'back', 'home'])
 
-// Icon Constants (SVG Strings for purity)
 const ICONS = {
-  CATALOG: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>`,
-  AI: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>`,
-  STYLE: `<span class="text-[18px] font-serif font-medium">A</span>`,
-  SUN: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`,
+  CATALOG: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>`,
+  HOME: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+  FONT_SIZE: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>`,
+  SUN: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`,
   MOON: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>`,
   TOP: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>`
 }
 
-// Tool Definition
 const tools = computed(() => [
   {
-    id: 'catalog',
-    label: '目录',
-    icon: ICONS.CATALOG,
+    id: 'nav',
+    label: props.isReader ? '返回目录' : '首页',
+    icon: props.isReader ? ICONS.CATALOG : ICONS.HOME,
     visible: props.showToolbar,
-    handler: () => emit('toggle-catalog')
-  },
-  {
-    id: 'ai',
-    label: 'AI 摘要',
-    icon: ICONS.AI,
-    visible: props.showToolbar,
-    handler: () => emit('toggle-ai')
+    handler: () => props.isReader ? emit('back') : emit('home')
   },
   {
     id: 'settings',
-    label: '样式设置',
-    icon: ICONS.STYLE,
+    label: '字体与样式',
+    icon: ICONS.FONT_SIZE,
     visible: props.showToolbar,
     handler: () => emit('toggle-settings')
   },
@@ -76,7 +72,8 @@ const tools = computed(() => [
     id: 'top',
     label: '回到顶部',
     icon: ICONS.TOP,
-    visible: props.showBackToTop,
+    visible: true, // Always visible to prevent layout jumping
+    active: props.showBackToTop,
     handler: () => emit('scroll-top')
   }
 ])
@@ -104,7 +101,7 @@ const visibleTools = computed(() => tools.value.filter(t => t.visible))
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   color: var(--color-primary);
-  border-color: var(--color-primary); /* Active Border */
+  border-color: var(--color-primary);
 }
 
 .wechat-fab:active {
@@ -112,13 +109,12 @@ const visibleTools = computed(() => tools.value.filter(t => t.visible))
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
-/* Vue Transition: Fab Fade In/Out */
 .fab-enter-active,
 .fab-leave-active {
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy enter */
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .fab-leave-active {
-  position: absolute; /* Smooth collapse */
+  position: absolute;
   opacity: 0;
 }
 .fab-enter-from,

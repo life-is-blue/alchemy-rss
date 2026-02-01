@@ -103,15 +103,6 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="absolute left-4 top-2.5 text-text-muted/50 transition-colors"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </div>
 
-          <!-- Settings Trigger (List View) -->
-          <button
-            v-if="!selectedUrl"
-            @click="showGlobalSettings = true"
-            class="p-2 rounded-full text-text-sub hover:text-primary hover:bg-black/5 transition-all"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-          </button>
-
           <!-- View Mode Toggle -->
           <div class="flex items-center bg-black/[0.03] p-0.5 rounded-full border border-outline/5">
             <button
@@ -228,14 +219,17 @@
         </div>
       </main>
 
-      <!-- Floating Toolbar -->
+      <!-- Floating Toolbar (Unified) -->
       <FloatingToolbar
         :show-back-to-top="showBackToTop"
-        :show-toolbar="!!selectedUrl"
+        :show-toolbar="true"
         :is-dark="theme === 'night'"
+        :is-reader="!!selectedUrl"
         @scroll-top="scrollToTop"
         @toggle-settings="showGlobalSettings = true"
         @toggle-dark="theme = (theme === 'night' ? 'white' : 'night')"
+        @back="closeReader"
+        @home="handleNav('reader')"
       />
     </div>
 
