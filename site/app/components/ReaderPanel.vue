@@ -348,8 +348,8 @@ watch(() => props.url, async (newUrl) => {
   color: var(--color-text-main);
 }
 .article-body p {
-  margin-bottom: 2.5rem;
-  line-height: 1.85;
+  margin-bottom: 2rem; /* Reduced from 2.5rem for better continuity */
+  line-height: 1.75;   /* Tightened from 1.85 */
   text-align: justify; /* WeChat Reading standard */
 }
 .article-body h1, .article-body h2, .article-body h3 {

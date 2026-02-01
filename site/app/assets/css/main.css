@@ -158,26 +158,44 @@
 }
 
 .theme-night {
-  --color-background: var(--theme-night-bg);
-  --color-text-main: var(--theme-night-text);
-  --color-text-sub: #777777;
-  --color-text-muted: #555555;
-  --color-sidebar-bg: #1A1A1A; /* Solid dark for sidebar */
-  --color-card-bg: #252525;
-  --color-card-border: rgba(255, 255, 255, 0.05);
-  --color-hover-bg: rgba(255, 255, 255, 0.05);
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-surface: #252525;
+  --color-background: #121212; /* Material Neutral 900 */
+  --color-text-main: #E3E3E3;  /* Material Neutral 90 */
+  --color-text-sub: #C4C7C5;   /* Material Neutral Variant 80 */
+  --color-text-muted: #8E918F; /* Material Neutral Variant 60 */
+  
+  --color-sidebar-bg: #121212;
+  --color-surface: #1E1E1E;    /* Surface Level 1 */
+  
+  --color-card-bg: #1E1E1E;
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  
+  --color-hover-bg: rgba(255, 255, 255, 0.08);
+  --color-border: rgba(255, 255, 255, 0.08); /* Distinct border for separation */
+  
+  /* Reset shadows for dark mode */
   --shadow-wechat: none;
+  --shadow-paper: 0 0 0 1px rgba(255,255,255,0.05), 0 20px 40px -4px rgba(0,0,0,0.6); /* Deep ambient shadow for depth */
   --shadow-card: none;
+  
+  --color-active-indicator: #334455; /* Subtle blue tint for active state */
 }
 
 .theme-night h1, .theme-night h2, .theme-night h3 {
-  color: #E0E0E0;
+  color: #F2F2F2; /* High emphasis */
 }
 .theme-night .article-body {
-  font-weight: 300; /* Thinner font for dark mode to reduce glow */
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
+  color: #E3E3E3;
+}
+.theme-night .floating-action {
+  background-color: #2C2C2C; /* Surface Container High */
+  color: #E3E3E3;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.theme-night .floating-action:hover {
+  background-color: #383838;
+  border-color: rgba(255,255,255,0.2);
 }
 
 
