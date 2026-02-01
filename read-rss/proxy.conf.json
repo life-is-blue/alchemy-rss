@@ -1,0 +1,12 @@
+{
+  "/data": {
+    "target": "https://rss.izoa.fun",
+    "secure": true,
+    "changeOrigin": true
+  },
+  "/api": {
+    "target": "https://rss.izoa.fun",
+    "secure": true,
+    "changeOrigin": true
+  }
+}

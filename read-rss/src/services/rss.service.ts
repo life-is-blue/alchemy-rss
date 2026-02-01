@@ -61,7 +61,7 @@ export class RssService {
   feeds: WritableSignal<Feed[]> = signal([]);
   loading: WritableSignal<boolean> = signal(false);
 
-  private readonly INDEX_URL = './assets/data/links.json';
+  private readonly INDEX_URL = '/data/links.json';
 
   constructor(private http: HttpClient) {
     this.loadAlchemyData();
@@ -132,10 +132,10 @@ export class RssService {
     // 2. Try Archive Path
     if (item.archive_path) {
       try {
-        // Fix: Ensure path starts with ./assets/ or just assets/
+        // Ensure path starts with leading slash for root-relative access
         let fetchPath = item.archive_path;
-        if (!fetchPath.startsWith('assets/') && !fetchPath.startsWith('./assets/') && !fetchPath.startsWith('/')) {
-           fetchPath = 'assets/' + fetchPath;
+        if (!fetchPath.startsWith('/')) {
+           fetchPath = '/' + fetchPath;
         }
 
         const archive = await firstValueFrom(this.http.get<AlchemyArchive>(fetchPath));
@@ -153,8 +153,8 @@ export class RssService {
     // 3. Fallback: Proxy / API Reader
     // This is "Dynamic Read" from protocol
     try {
-       // Use our existing proxy which acts as a reader
-       const proxyUrl = `/api/proxy?url=${encodeURIComponent(item.link)}`;
+       // Use the Alchemy reader API endpoint
+       const proxyUrl = `/api/reader?url=${encodeURIComponent(item.link)}`;
        const text = await firstValueFrom(this.http.get(proxyUrl, { responseType: 'text' }));
        return text;
     } catch (e) {
