@@ -7,8 +7,6 @@
   "siteName": "张小珺Jùn｜商业访谈录",
   "content": "<html>\n <head></head>\n <body>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_flo18nnusp7ounltf8ugcdhxio6o.jpg\">\n  </figure>\n  <span></span>\n  <p><span>今天的嘉宾是印奇。</span></p>\n  <span></span>\n  <p><span>他在担任智能汽车技术公司千里科技的董事长之外，最近也迎来一个新的身份：</span><strong><span>出任大模型公司阶跃星辰的董事长。</span></strong></p>\n  <span></span>\n  <p><span>这次，我和他聊了聊新身份、新阶段与从AI 1.0到2.0转轨与反思。</span></p>\n  <span></span>\n  <p><span>接下来是我对印奇的访谈。</span></p>\n  <span></span>\n  <p><span>期待2026年，我们和AI共同进步！</span></p>\n  <span></span>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fm2f9n8vmm_n-xafqmi98xs3t3k8.png\">\n  </figure>\n  <span></span>\n  <figure>\n   <img src=\"https://image.jido.dev/20260126062445_FhSPftiIlfRcGzUbJvicKXW4ej2p.png\">\n  </figure>\n  <span></span>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fvv-r5fbydyhgzamyxav1k1a9ijt.png\">\n  </figure>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"90\">01:30</a> 新的身份</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"708\">11:48</a> 残酷的淘汰赛和赌注</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1650\">27:30</a> 重新定义阶跃星辰</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2485\">41:25</a> 打后发战役</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2960\">49:20</a> AI 1.0到2.0转轨与反思</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4265\">01:11:05</a> 聪明人的诱惑</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"5947\">01:39:07</a> 姚班、创业和超多元方程</span></p>\n  <span></span>\n  <p><span>【更多信息】</span></p>\n  <span></span>\n  <p><span>免责声明：本内容不作为投资建议。</span></p>\n  <span></span>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fn7o36ntuypcm_rqifj1lw-tiwk8.jpg\">\n  </figure>\n </body>\n</html>",
   "aiSummary": "访谈了 AI 老兵印奇出任阶跃星辰董事长的思考，涵盖了大模型竞争、软硬结合的商业模式以及从 AI 1.0 到 2.0 的转轨反思。",
-  "oneSentenceSummary": "访谈了 AI 老兵印奇出任阶跃星辰董事长的思考，涵盖了大模型竞争、软硬结合的商业模式以及从 AI 1.0 到 2.0 的转轨反思。",
-  "summary": "本期播客由张小珺对话 AI 领域知名创业者印奇。印奇分享了他出任大模型公司“阶跃星辰”董事长的新身份及其背后逻辑，强调了阶跃星辰作为基础模型（基模）公司的技术追求。访谈深入分析了当前大模型百亿美元级别的残酷竞赛，认为创业公司在纯 C 端软件或纯 B 端业务中难以与巨头竞争，因此提出了“AI + 终端”的软硬结合闭环路径。印奇反思了旷视时期的安防大战，坦言当时的人才与行业属性不匹配，并提出未来三年将是 AI 走向物理世界、实现 VLA（视觉-语言-动作）模型的关键窗口期。对话还涉及了如何在大模型时代构建高密度人才组织、后发优势的战略选择以及对 AGI 的技术信仰。",
   "mainPoints": [
     {
       "point": "基础模型公司必须寻找差异化的商业闭环路径",
@@ -27,12 +25,6 @@
       "explanation": "当前的语言模型缺乏对物理逻辑的理解，未来 5-7 年内，通过车、穿戴设备等终端收集的多模态物理数据将推动模型从数字世界跨越到物理世界。"
     }
   ],
-  "keyQuotes": [
-    "这可能是有史以来最激烈的一次科技竞争，投入强度和速度都超过了以往任何一个技术迭代周期。",
-    "如果做基模公司，同时做 to B 肯定不成立；单纯做 C 端的纯软件应用也不成立，那是互联网大厂的战场。",
-    "聪明人第一要长期坚持，第二要用正确的笨办法来做，这其实都挺难的。",
-    "我这辈子就是想做 AI 相关的事情。如果重新来一次，只要不打安防那场仗就行，应该更早进入车或终端领域。"
-  ],
   "tags": [
     "大模型",
     "阶跃星辰",
@@ -40,19 +32,10 @@
     "软硬一体",
     "智能驾驶"
   ],
-  "topicTag": "other",
+  "categoryTag": null,
   "readTime": 1,
   "score": 93,
   "wordCount": 208,
   "domain": "xiaoyuzhoufm.com",
-  "category": "Business_Tech",
-  "aiSubCategory": "NEWS",
-  "mainDomain": "Artificial_Intelligence",
-  "sourceId": "SOURCE_31d080",
-  "sourceName": "张小珺Jùn｜商业访谈录",
-  "resourceType": "PODCAST",
-  "language": "zh_CN",
-  "publishTimeStamp": 1769391013000,
-  "publishDateStr": "01-26",
-  "publishDateTimeStr": "2026-01-26 01:30:13"
+  "category": "Business_Tech"
 }

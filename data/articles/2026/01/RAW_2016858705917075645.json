@@ -7,10 +7,7 @@
   "siteName": "Qwen(@Alibaba_Qwen)",
   "content": null,
   "aiSummary": "阿里巴巴 Qwen 团队开源了 Qwen3-ASR 和 Qwen3-ForcedAligner，这两款生产级语音模型支持 52 种语言，并能处理复杂的真实场景音频。",
-  "oneSentenceSummary": "阿里巴巴 Qwen 团队开源了 Qwen3-ASR 和 Qwen3-ForcedAligner，这两款生产级语音模型支持 52 种语言，并能处理复杂的真实场景音频。",
-  "summary": "Qwen 团队发布了 Qwen3-ASR 和 Qwen3-ForcedAligner，这是一套专为复杂真实场景音频环境设计的开源语音模型。这些模型支持 52 种语言和方言的自动语言识别，可处理长达 20 分钟的音频，并提供高精度的词级时间戳。此次发布还包含了一套完整的推理与微调全栈工具，并兼容 vLLM，为开源语音转文本及对齐生态系统做出了重要贡献。",
   "mainPoints": [],
-  "keyQuotes": [],
   "tags": [
     "Qwen3-ASR",
     "语音识别",
@@ -18,19 +15,10 @@
     "阿里巴巴 Qwen",
     "ASR"
   ],
-  "topicTag": "ai-llm",
+  "categoryTag": null,
   "readTime": 4,
   "score": 92,
   "wordCount": 883,
   "domain": "x.com",
-  "category": "Artificial_Intelligence",
-  "aiSubCategory": "MODELS",
-  "mainDomain": "Artificial_Intelligence",
-  "sourceId": "SOURCE_e04fff",
-  "sourceName": "Qwen(@Alibaba_Qwen)",
-  "resourceType": "TWITTER",
-  "language": "en_US",
-  "publishTimeStamp": 1769691561000,
-  "publishDateStr": "01-29",
-  "publishDateTimeStr": "2026-01-29 12:59:21"
+  "category": "Artificial_Intelligence"
 }
