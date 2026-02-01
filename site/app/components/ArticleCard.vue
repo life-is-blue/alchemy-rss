@@ -12,23 +12,32 @@
     ]"
     :style="mode === 'card' ? { backgroundColor: 'var(--color-card-bg)', borderColor: 'var(--color-card-border)' } : {}"
   >
+    <!-- NEW Indicator (Pulse) -->
+    <div v-if="article.isNew" class="absolute top-0 right-0 p-3 z-10">
+       <span class="flex h-2 w-2">
+         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+         <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+       </span>
+    </div>
+
     <!-- List Mode Layout -->
     <div v-if="mode === 'list'" class="flex items-center gap-4">
       <div class="flex-1 min-w-0">
-        <div class="flex items-center gap-2 mb-1">
+        <div class="flex items-center gap-2 mb-1.5">
            <span v-if="isQualified" class="text-qualified shrink-0">
              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
            </span>
-           <h3 class="text-[14px] font-bold text-text-main truncate group-hover:text-primary transition-colors">
+           <span class="inline-flex items-center text-primary/60 shrink-0" v-html="getContentTypeIcon(article.contentType)"></span>
+           <h3 class="text-[15px] font-bold text-text-main truncate group-hover:text-primary transition-colors">
              {{ article.title }}
            </h3>
         </div>
         <div class="flex items-center gap-3 text-[11px] text-text-muted">
-          <span class="font-medium text-text-sub">{{ article.rssTitle || 'RSS' }}</span>
+          <span class="font-bold text-text-sub uppercase tracking-tight">{{ article.rssTitle || 'RSS' }}</span>
           <span class="opacity-30">·</span>
           <span>{{ formatRelativeTime(article.date) }}</span>
           <span v-if="displayTags.length" class="opacity-30">·</span>
-          <span v-if="displayTags.length" class="truncate">{{ displayTags[0] }}</span>
+          <span v-if="displayTags.length" class="truncate opacity-60">#{{ displayTags[0] }}</span>
         </div>
       </div>
     </div>
@@ -43,18 +52,18 @@
           >
             精选
           </span>
-          <span class="inline-flex items-center text-text-muted" v-html="getContentTypeIcon(article.contentType)"></span>
+          <span class="inline-flex items-center text-primary/60" v-html="getContentTypeIcon(article.contentType)"></span>
         </div>
         <span class="text-[11px] text-text-muted font-medium">{{ formatRelativeTime(article.date) }}</span>
       </div>
 
-      <h3 class="article-title text-[16px] font-semibold text-text-main leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2 tracking-tight">
+      <h3 class="article-title text-[17px] font-bold text-text-main leading-snug mb-3 group-hover:text-primary transition-colors line-clamp-2 tracking-tight">
         {{ article.title }}
       </h3>
 
       <p
         v-if="displaySummary"
-        class="text-[13px] text-text-sub leading-relaxed mb-4 line-clamp-2"
+        class="text-[13px] text-text-sub leading-relaxed mb-4 line-clamp-2 opacity-80"
       >
         {{ displaySummary }}
       </p>
@@ -64,12 +73,12 @@
           <span
             v-for="tag in displayTags"
             :key="tag"
-            class="tag-chip"
+            class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-black/[0.03] text-text-muted/60"
           >
-            {{ tag }}
+            #{{ tag }}
           </span>
         </div>
-        <span class="text-[11px] text-text-muted font-bold tracking-tight shrink-0">
+        <span class="text-[11px] text-text-muted font-bold tracking-tight shrink-0 uppercase">
           {{ article.rssTitle || 'RSS' }}
         </span>
       </div>

@@ -89,10 +89,10 @@
             <button
               @click="toggleFavorite"
               class="flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold transition-all active:scale-95 shadow-sm border border-outline/5"
-              :class="isFavorited ? 'bg-primary text-white border-primary' : 'bg-white text-text-main hover:bg-black/5'"
+              :class="isFavorited(props.url) ? 'bg-primary text-white border-primary' : 'bg-white text-text-main hover:bg-black/5'"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" :fill="isFavorited ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2.5"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
-              {{ isFavorited ? '已收藏' : '加入收藏' }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" :fill="isFavorited(props.url) ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2.5"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+              {{ isFavorited(props.url) ? '已收藏' : '加入收藏' }}
             </button>
             <a
               :href="props.url"
@@ -185,8 +185,8 @@ const props = defineProps({
 
 const emit = defineEmits(['scroll-top', 'show-settings', 'open-next', 'toggle-header-title'])
 
-const { fontSize, theme, increaseFont, decreaseFont } = useReadingSettings()
-const { updateProgress } = useReadingProgress()
+const { isRead } = useReadingProgress()
+const { isFavorited, toggleFavorite: globalToggleFavorite } = useArticles()
 
 const article = ref(null)
 const loading = ref(false)
@@ -211,27 +211,18 @@ const closeLightbox = () => {
   document.body.style.overflow = ''
 }
 
-const isFavorited = ref(false)
-
 const toggleFavorite = () => {
   if (!props.url) return
-  isFavorited.value = !isFavorited.value
-  if (process.client) {
-    const favorites = JSON.parse(localStorage.getItem('article-favorites') || '{}')
-    if (isFavorited.value) {
-      favorites[props.url] = { title: article.value?.title || props.articleData?.title, savedAt: new Date().toISOString() }
-    } else {
-      delete favorites[props.url]
-    }
-    localStorage.setItem('article-favorites', JSON.stringify(favorites))
-  }
+  globalToggleFavorite({
+    link: props.url,
+    title: article.value?.title || props.articleData?.title,
+    rssTitle: article.value?.siteName || props.articleData?.rssTitle,
+    date: article.value?.date || props.articleData?.date
+  })
 }
 
 const checkFavoriteStatus = () => {
-  if (process.client && props.url) {
-    const favorites = JSON.parse(localStorage.getItem('article-favorites') || '{}')
-    isFavorited.value = !!favorites[props.url]
-  }
+  // Logic removed as it's now handled by the computed global isFavorited(props.url)
 }
 
 const updateReadingProgress = () => {

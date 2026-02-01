@@ -35,59 +35,54 @@ export const CONTENT_TYPE_ICONS: Record<string, string> = {
   rss: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>`
 }
 
-// Shared Navigation State (Persistent across components)
+// Shared Navigation & Global State
 const currentView = ref('reader')
 const selectedUrl = ref('')
+const favorites = ref<Record<string, any>>({})
 
 export const useArticles = () => {
   const articles = ref<any[]>([])
   const rssData = ref<any[]>([])
   const loading = ref(true)
-  const currentTab = ref('全部') // Level 1: Content Type or '全部'
-  const currentCategory = ref('全部') // Level 2: Source Category
+  const currentTab = ref('全部')
+  const currentCategory = ref('全部')
   const searchValue = ref('')
   
   // Pagination
   const pageSize = 40
   const currentPage = ref(1)
 
-  // Taxonomy Tree: Grouped by Source Category (Level 2)
-  const categoryGroups = computed(() => {
-    const groups: Record<string, number> = {}
-    
-    articles.value.forEach(article => {
-      const cat = article.sourceCategory
-      if (cat && CATEGORY_LABELS[cat]) {
-        groups[cat] = (groups[cat] || 0) + 1
+  // Load Favorites from LocalStorage
+  const loadFavorites = () => {
+    if (process.client) {
+      const stored = localStorage.getItem('article-favorites')
+      if (stored) favorites.value = JSON.parse(stored)
+    }
+  }
+
+  const toggleFavorite = (article: any) => {
+    if (!article.link) return
+    if (favorites.value[article.link]) {
+      delete favorites.value[article.link]
+    } else {
+      favorites.value[article.link] = { 
+        title: article.title, 
+        rssTitle: article.rssTitle,
+        date: article.date,
+        savedAt: new Date().toISOString() 
       }
-    })
+    }
+    if (process.client) {
+      localStorage.setItem('article-favorites', JSON.stringify(favorites.value))
+    }
+  }
 
-    return Object.entries(groups)
-      .map(([key, count]) => ({
-        key,
-        label: CATEGORY_LABELS[key] || key,
-        count
-      }))
-      .sort((a, b) => b.count - a.count)
-  })
-
-  // Feed Level Taxonomy: Individual feeds from rss.json
-  const sourceFeeds = computed(() => {
-    const counts: Record<string, number> = {}
-    articles.value.forEach(a => {
-      if (a.rssTitle) counts[a.rssTitle] = (counts[a.rssTitle] || 0) + 1
-    })
-
-    return rssData.value.map(s => ({
-      title: s.title,
-      type: s.type,
-      count: counts[s.title] || 0
-    })).filter(s => s.count > 0)
-  })
+  const isFavorited = (link: string) => !!favorites.value[link]
 
   // Load Data & Enrich
   const loadData = async () => {
     loading.value = true
+    loadFavorites()
     try {
       const [articlesResp, rssResp] = await Promise.all([
         $fetch('/api/articles').catch(() => $fetch('/data/links.json')),
@@ -98,6 +93,7 @@ export const useArticles = () => {
       const sourceMap = new Map(rssData.value.map(s => [s.title, s]))
 
       if (Array.isArray(articlesResp)) {
+        const now = new Date().getTime()
         articles.value = articlesResp.flatMap(curr => {
           let config = sourceMap.get(curr.title)
           if (!config) {
@@ -105,13 +101,17 @@ export const useArticles = () => {
              config = rssData.value.find(s => s.title.includes(normalized))
           }
 
-          return curr.items.map(item => ({
-            ...item,
-            rssTitle: curr.title,
-            contentType: config?.type || 'ARTICLE',
-            sourceCategory: config?.category || 'other',
-            qualified: config?.qualifiedFilter === 'true'
-          }))
+          return curr.items.map(item => {
+            const publishDate = new Date(item.date).getTime()
+            return {
+              ...item,
+              rssTitle: curr.title,
+              contentType: config?.type || 'ARTICLE',
+              sourceCategory: config?.category || 'other',
+              qualified: config?.qualifiedFilter === 'true',
+              isNew: (now - publishDate) < 24 * 60 * 60 * 1000 // Last 24h
+            }
+          })
         }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       }
     } catch (e) {
@@ -121,9 +121,14 @@ export const useArticles = () => {
     }
   }
 
-  // Filter Logic
+  // Filter Logic (Now handles Favorites)
   const filteredArticles = computed(() => {
     let list = articles.value
+
+    // 0. Favorites View
+    if (currentView.value === 'favorites') {
+      return list.filter(a => !!favorites.value[a.link])
+    }
 
     // 1. Content Type Filter
     if (currentTab.value !== '全部') {
@@ -203,6 +208,8 @@ export const useArticles = () => {
     loadMore,
     selectTab,
     selectCategory,
-    handleNav
+    handleNav,
+    toggleFavorite,
+    isFavorited
   }
 }
