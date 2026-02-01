@@ -65,7 +65,7 @@
             ? 'text-primary font-bold'
             : 'text-text-sub'"
         >
-          {{ cat.name }}
+          {{ getCategoryLabel(cat.name) }}
           <span class="text-[10px] opacity-40 font-normal transform -translate-y-0.5">{{ cat.count }}</span>
 
           <!-- Active Indicator -->
@@ -83,9 +83,41 @@
       <div class="w-full max-w-[1200px] book-card flex bg-white overflow-hidden relative">
 
         <!-- Sidebar (Large Screens) -->
-        <aside class="hidden xl:flex w-52 flex-col p-8 pr-0 gap-6 shrink-0 overflow-y-auto border-r border-outline/5">
+        <aside class="hidden xl:flex w-52 flex-col p-6 pr-0 gap-6 shrink-0 overflow-y-auto border-r border-outline/5">
+          <!-- Navigation Section -->
           <div>
-            <p class="text-[10px] font-bold text-text-sub/40 uppercase tracking-[0.15em] mb-3 px-3">内容分类</p>
+            <p class="text-[10px] font-bold text-text-sub/40 uppercase tracking-[0.15em] mb-3 px-3">导航</p>
+            <div class="flex flex-col gap-1">
+              <button
+                @click="goHome"
+                class="flex items-center gap-2.5 text-left py-2 px-3 rounded-lg text-[13px] transition-all"
+                :class="currentView === 'reader' && !currentCategory ? 'bg-primary/5 text-primary font-semibold' : 'text-text-sub hover:text-text-main hover:bg-black/5'"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span>首页</span>
+              </button>
+              <button
+                @click="currentView = 'favorites'"
+                class="flex items-center gap-2.5 text-left py-2 px-3 rounded-lg text-[13px] transition-all"
+                :class="currentView === 'favorites' ? 'bg-primary/5 text-primary font-semibold' : 'text-text-sub hover:text-text-main hover:bg-black/5'"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+                <span>收藏</span>
+              </button>
+              <button
+                @click="currentView = 'sources'; selectedUrl = ''"
+                class="flex items-center gap-2.5 text-left py-2 px-3 rounded-lg text-[13px] transition-all"
+                :class="currentView === 'sources' ? 'bg-primary/5 text-primary font-semibold' : 'text-text-sub hover:text-text-main hover:bg-black/5'"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                <span>RSS 源</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Categories Section -->
+          <div>
+            <p class="text-[10px] font-bold text-text-sub/40 uppercase tracking-[0.15em] mb-3 px-3">分类</p>
             <div class="flex flex-col gap-1">
               <button
                 v-for="cat in categoryFilters"
@@ -94,7 +126,7 @@
                 class="flex items-center gap-2 text-left py-2 px-3 rounded-lg text-[13px] transition-all"
                 :class="currentCategory === cat.name ? 'bg-primary/5 text-primary font-semibold' : 'text-text-sub hover:text-text-main hover:bg-black/5'"
               >
-                <span class="flex-1 truncate">{{ cat.name }}</span>
+                <span class="flex-1 truncate">{{ getCategoryLabel(cat.name) }}</span>
                 <span class="text-[10px] font-medium px-1.5 py-0.5 rounded transition-colors" :class="currentCategory === cat.name ? 'bg-primary/10 text-primary' : 'bg-black/5 text-text-sub/60'">{{ cat.count }}</span>
               </button>
             </div>
@@ -115,11 +147,20 @@
               <div v-if="currentView === 'reader' && !selectedUrl" key="articles">
                 <div class="flex items-center justify-between mb-6">
                   <h2 class="text-xl md:text-2xl font-bold tracking-tight text-text-main">
-                    {{ currentContentType === '全部' ? '精选推荐' : contentTypeTabs.find(t => t.value === currentContentType)?.label || '全部' }}
+                    {{ filterTitle }}
                   </h2>
-                  <span class="text-[11px] font-medium text-text-sub/60 bg-black/5 px-2 py-1 rounded">
-                    {{ filteredArticles.length }} 篇
-                  </span>
+                  <div class="flex items-center gap-3">
+                    <span class="text-[11px] font-medium text-text-sub/60 bg-black/5 px-2 py-1 rounded">
+                      {{ filteredArticles.length }} 篇
+                    </span>
+                    <button
+                      v-if="hasActiveFilter"
+                      @click="clearFilters"
+                      class="text-[11px] font-medium text-primary hover:text-primary/80 transition-colors"
+                    >
+                      清除筛选
+                    </button>
+                  </div>
                 </div>
 
                 <!-- Loading Skeleton -->
@@ -214,7 +255,7 @@
 </template>
 
 <script setup>
-import { CONTENT_TYPE_LABELS } from '~/composables/useArticles'
+import { CONTENT_TYPE_LABELS, CATEGORY_LABELS } from '~/composables/useArticles'
 
 const {
   loading,
@@ -253,6 +294,38 @@ const contentTypeTabs = computed(() => [
 // This ensures category counts remain stable when a category is selected
 const categoryFilters = computed(() => categoryTags.value)
 
+// Dynamic filter title based on current filters
+const filterTitle = computed(() => {
+  const categoryLabel = currentCategory.value && currentCategory.value !== '全部'
+    ? getCategoryLabel(currentCategory.value)
+    : null
+  const typeLabel = currentContentType.value !== '全部'
+    ? contentTypeTabs.value.find(t => t.value === currentContentType.value)?.label
+    : null
+
+  if (categoryLabel && typeLabel) {
+    return `${categoryLabel} · ${typeLabel}`
+  } else if (categoryLabel) {
+    return categoryLabel
+  } else if (typeLabel) {
+    return typeLabel
+  }
+  return '精选推荐'
+})
+
+// Check if any filter is active
+const hasActiveFilter = computed(() => {
+  return currentContentType.value !== '全部' || (currentCategory.value && currentCategory.value !== '全部')
+})
+
+// Clear all filters
+const clearFilters = () => {
+  currentContentType.value = '全部'
+  selectTab('全部')
+  selectCategory('全部')
+  scrollToTop()
+}
+
 // Select content type (top tabs)
 const selectContentType = (type) => {
   currentContentType.value = type
@@ -280,6 +353,22 @@ const openArticle = (article) => {
 // Close reader and return to list
 const closeReader = () => {
   selectedUrl.value = ''
+}
+
+// Go to home (clear all filters)
+const goHome = () => {
+  currentView.value = 'reader'
+  currentContentType.value = '全部'
+  selectedUrl.value = ''
+  selectTab('全部')
+  selectCategory('全部')
+  scrollToTop()
+}
+
+// Get category label in Chinese
+const getCategoryLabel = (name) => {
+  if (name === '全部') return '全部'
+  return CATEGORY_LABELS[name] || name
 }
 
 const scrollToTop = () => {
