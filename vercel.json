@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "installCommand": "",
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/api/reader",
+      "destination": "/api/reader"
+    },
+    {
+      "source": "/u/:id",
+      "destination": "/api/u?id=:id"
+    },
+    {
+      "source": "/(data|details|assets|static)/:path*",
+      "destination": "/$1/:path*"
+    },
+    {
+      "source": "/(favicon.ico|favicon.svg|atom.xml)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
