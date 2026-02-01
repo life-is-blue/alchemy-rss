@@ -209,13 +209,15 @@
             </div>
 
             <!-- Zen Reader View -->
-            <div v-else key="reader" class="w-full flex justify-center">
-              <div class="w-full max-w-[800px] bg-white md:my-10 shadow-wechat md:rounded-[32px] overflow-hidden border border-outline/5">
+            <div v-else key="reader" class="w-full flex justify-center min-h-screen pb-20">
+              <div class="w-full max-w-[900px] bg-white md:my-6 md:shadow-wechat md:rounded-xl overflow-hidden border-x border-y border-outline/10 transition-all duration-300">
                 <ReaderPanel
                   :url="selectedUrl"
                   :articleData="filteredArticles.find(a => a.link === selectedUrl)"
+                  :nextArticle="nextArticle"
                   @scroll-top="scrollToTop"
                   @show-settings="showGlobalSettings = true"
+                  @open-next="openArticle"
                 />
               </div>
             </div>
@@ -396,6 +398,15 @@ const filterTitle = computed(() => {
   if (currentView.value === 'favorites') return '我的收藏'
   if (currentView.value === 'sources') return '订阅管理'
   return currentCategory.value !== '全部' ? (CATEGORY_LABELS[currentCategory.value] || currentCategory.value) : '精选推荐'
+})
+
+const nextArticle = computed(() => {
+  if (!selectedUrl.value) return null
+  const currentIndex = filteredArticles.value.findIndex(a => a.link === selectedUrl.value)
+  if (currentIndex !== -1 && currentIndex < filteredArticles.value.length - 1) {
+    return filteredArticles.value[currentIndex + 1]
+  }
+  return null
 })
 
 const hasActiveFilter = computed(() => (currentCategory.value && currentCategory.value !== '全部') || currentView.value === 'favorites')

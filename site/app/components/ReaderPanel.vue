@@ -113,7 +113,24 @@
           </button>
         </div>
 
-        <div class="text-center text-[11px] text-text-muted/30 font-bold uppercase tracking-[0.3em]">
+        <!-- Next Article Card -->
+        <div v-if="nextArticle" class="mt-16 mb-8">
+           <p class="text-[11px] font-bold text-text-muted/40 uppercase tracking-widest mb-4">下一篇 Next</p>
+           <div
+             @click="$emit('open-next', nextArticle)"
+             class="group cursor-pointer p-6 rounded-xl border border-outline/10 bg-black/[0.02] hover:bg-primary/5 hover:border-primary/10 transition-all duration-300"
+           >
+             <h3 class="text-[16px] font-bold text-text-main group-hover:text-primary transition-colors mb-2 truncate">
+               {{ nextArticle.title }}
+             </h3>
+             <div class="flex items-center gap-2 text-[12px] text-text-muted">
+               <span>{{ nextArticle.rssTitle || 'RSS' }}</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="opacity-50 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+             </div>
+           </div>
+        </div>
+
+        <div v-if="!nextArticle" class="text-center text-[11px] text-text-muted/30 font-bold uppercase tracking-[0.3em]">
           END OF ARCHIVE
         </div>
       </footer>
@@ -144,10 +161,11 @@ import { useReadingProgress } from '~/composables/useReadingProgress'
 
 const props = defineProps({
   url: String,
-  articleData: Object
+  articleData: Object,
+  nextArticle: Object
 })
 
-const emit = defineEmits(['scroll-top', 'show-settings'])
+const emit = defineEmits(['scroll-top', 'show-settings', 'open-next'])
 
 const { fontSize, theme, increaseFont, decreaseFont } = useReadingSettings()
 const { updateProgress } = useReadingProgress()
