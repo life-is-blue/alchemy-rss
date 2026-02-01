@@ -86,14 +86,30 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
           </button>
 
-          <h1 class="text-[15px] font-bold text-text-main truncate">
-            {{ selectedUrl ? '正在阅读' : filterTitle }}
+          <!-- Reader Back Button (Desktop) -->
+          <button
+            v-if="selectedUrl"
+            @click="closeReader"
+            class="hidden md:flex items-center gap-2 text-text-sub hover:text-primary transition-all group"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:-translate-x-1 transition-transform"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          <h1 class="text-[15px] font-bold text-text-main truncate max-w-[300px] md:max-w-[500px]">
+            {{ selectedUrl ? filteredArticles.find(a => a.link === selectedUrl)?.title : filterTitle }}
           </h1>
         </div>
 
-        <div class="flex items-center gap-3 md:gap-4 flex-1 justify-end max-w-xl ml-auto">
-          <!-- Search (Desktop) -->
-          <div class="relative w-full max-w-[240px] hidden sm:block">
+        <div class="flex items-center gap-6 md:gap-8">
+          <!-- Top Nav Links (WeChat Style) -->
+          <nav v-if="selectedUrl" class="hidden md:flex items-center gap-6">
+            <button @click="handleNav('reader')" class="text-[13px] font-bold text-text-sub hover:text-primary transition-colors">首页</button>
+            <div class="w-[1px] h-3 bg-border"></div>
+            <button @click="handleNav('favorites')" class="text-[13px] font-bold text-text-sub hover:text-primary transition-colors">我的收藏</button>
+          </nav>
+
+          <!-- Search (Only in List View) -->
+          <div v-if="!selectedUrl" class="relative w-full max-w-[240px] hidden sm:block">
             <input
               v-model="searchValue"
               type="text"
