@@ -1,0 +1,24 @@
+{
+  "id": "RAW_2017703360393318587",
+  "title": "使用 nanochat 以低于 100 美元的成本训练 GPT-2 级别的 LLM",
+  "url": "https://x.com/karpathy/status/2017703360393318587",
+  "date": "2026-01-31 20:55:42",
+  "author": "Andrej Karpathy",
+  "siteName": "Andrej Karpathy(@karpathy)",
+  "content": null,
+  "aiSummary": "Andrej Karpathy 展示了如何将 GPT-2 级别模型的训练成本降低 600 倍，利用 nanochat 框架仅需 73 美元和 3 小时即可完成。",
+  "mainPoints": [],
+  "tags": [
+    "GPT-2",
+    "LLM 训练",
+    "nanochat",
+    "AI 效率",
+    "Flash Attention 3"
+  ],
+  "categoryTag": null,
+  "readTime": 9,
+  "score": 94,
+  "wordCount": 2244,
+  "domain": "x.com",
+  "category": "Artificial_Intelligence"
+}

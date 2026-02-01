@@ -1,7 +1,15 @@
-> **更新时间**: 2026-02-01 08:09:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-01 11:00:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
+
+
+
+### [使用-nanochat-以低于-100-美元的成本训练-GPT-2-级别的-LLM](https://x.com/karpathy/status/2017703360393318587)
+
+2026-01-31 20:55:42 | 标签: GPT-2, LLM 训练, nanochat, AI 效率, Flash Attention 3
+
+> Andrej Karpathy 展示了如何将 GPT-2 级别模型的训练成本降低 600 倍，利用 nanochat 框架仅需 73 美元和 3 小时即可完成。
 
 
 
