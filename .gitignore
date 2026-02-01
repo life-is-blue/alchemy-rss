@@ -22,6 +22,7 @@ $RECYCLE.BIN/
 .vscode
 
 node_modules
+.worktrees
 *.js.map
 .vercel
 dist
