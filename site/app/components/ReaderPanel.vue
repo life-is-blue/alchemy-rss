@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-background relative transition-colors duration-500" ref="readerContainer">
+  <div class="relative transition-colors duration-500" ref="readerContainer">
     <!-- Reading Progress Bar (top) -->
-    <div class="fixed top-14 left-0 right-0 h-0.5 bg-black/5 z-50">
+    <div class="fixed top-0 left-0 right-0 h-1 bg-primary/10 z-50">
       <div
-        class="reading-progress h-full"
+        class="reading-progress h-full bg-primary"
         :style="{ width: readingProgress + '%' }"
       ></div>
     </div>
@@ -46,7 +46,7 @@
       </header>
 
       <!-- AI Insight Card (Clean Style) -->
-      <div v-if="article.aiSummary || article.mainPoints" class="mb-16 rounded-3xl p-6 md:p-8 border border-outline/5 transition-all duration-500" style="background-color: var(--color-card-bg); box-shadow: var(--shadow-wechat);">
+      <div v-if="article.aiSummary || article.mainPoints" class="mb-16 rounded-3xl p-6 md:p-8 border border-outline/10 transition-all duration-500" style="background-color: var(--color-hover-bg); box-shadow: var(--shadow-card);">
         <div class="flex items-center gap-2 text-primary font-bold text-[14px] mb-6 uppercase tracking-wider">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 1 8 8c0 3.2-2.3 5.9-5.4 7.2-.6.2-1 .8-1 1.4v.4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.4c0-.6-.4-1.2-1-1.4C4.3 15.9 2 13.2 2 10a8 8 0 0 1 8-8z"/><path d="M9 22h6"/></svg>
           AI 深度摘要
@@ -118,7 +118,9 @@
            <p class="text-[11px] font-bold text-text-muted/40 uppercase tracking-widest mb-4">下一篇 Next</p>
            <div
              @click="$emit('open-next', nextArticle)"
-             class="group cursor-pointer p-6 rounded-xl border border-outline/10 bg-black/[0.02] hover:bg-primary/5 hover:border-primary/10 transition-all duration-300"
+             class="group cursor-pointer p-6 rounded-xl border transition-all duration-300"
+             style="background-color: var(--color-hover-bg); border-color: var(--color-outline);"
+             :class="['hover:bg-primary/5 hover:border-primary/10']"
            >
              <h3 class="text-[16px] font-bold text-text-main group-hover:text-primary transition-colors mb-2 truncate">
                {{ nextArticle.title }}

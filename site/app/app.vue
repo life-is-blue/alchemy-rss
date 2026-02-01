@@ -210,7 +210,10 @@
 
             <!-- Zen Reader View -->
             <div v-else key="reader" class="w-full flex justify-center min-h-screen pb-20">
-              <div class="w-full max-w-[900px] bg-white md:my-6 md:shadow-wechat md:rounded-xl overflow-hidden border-x border-y border-outline/10 transition-all duration-300">
+              <div
+                class="w-full max-w-[900px] md:my-6 md:rounded-xl overflow-hidden border-x border-y transition-all duration-300"
+                style="background-color: var(--color-surface); box-shadow: var(--shadow-wechat); border-color: var(--color-border);"
+              >
                 <ReaderPanel
                   :url="selectedUrl"
                   :articleData="filteredArticles.find(a => a.link === selectedUrl)"
