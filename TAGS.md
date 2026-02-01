@@ -1,6 +1,6 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-01 17:36:15 | [返回首页](/README.md)
+**更新时间**: 2026-02-01 18:03:18 | [返回首页](/README.md)
 
 ---
 
@@ -58,8 +58,8 @@
 
 
 
-- [#410.-Marc-Andreessen：真正的-AI-繁荣尚未开始，我们正处于历史性的转折点](https://www.xiaoyuzhoufm.com/episode/697dc610b4be4c149b5d5742) - 深度播客 - 商业
-- [清华-AGI-峰会圆桌对话：笨笨的坚持，也许走到最后的就是我们](https://baoyu.io/blog/2026/01/10/china-ai-roundtable) - 宝玉的分享
+- [#410.-Marc-Andreessen：真正的-AI-繁荣尚未开始，我们正处于历史性的转折点](https://www.xiaoyuzhoufm.com/episode/697dc610b4be4c149b5d5742) - 商业 播客
+- [清华-AGI-峰会圆桌对话：笨笨的坚持，也许走到最后的就是我们](https://baoyu.io/blog/2026/01/10/china-ai-roundtable) - 宝玉
 
 
 
