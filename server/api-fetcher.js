@@ -30,6 +30,9 @@ function delay(ms) {
  * 判断错误是否可重试
  */
 function isRetryable(error) {
+  if (typeof error?.status === 'number') {
+    return error.status === 429 || error.status >= 500
+  }
   const msg = error.message || ''
   return msg.includes('频繁') ||
          msg.includes('rate') ||
@@ -89,10 +92,27 @@ async function callAPI(endpoint, method = 'POST', body = null) {
 
   return callWithRetry(async () => {
     const resp = await fetch(url, options)
-    const json = await resp.json()
+    const text = await resp.text()
+
+    let json = null
+    try {
+      json = JSON.parse(text)
+    } catch (e) {
+      const err = new Error(`Non-JSON response (${resp.status}): ${text.slice(0, 200)}`)
+      err.status = resp.status
+      throw err
+    }
+
+    if (!resp.ok) {
+      const err = new Error(`HTTP ${resp.status}: ${json.message || 'Unknown error'}`)
+      err.status = resp.status
+      throw err
+    }
 
     if (!json.success) {
-      throw new Error(`API Error: ${json.message || 'Unknown error'}`)
+      const err = new Error(`API Error: ${json.message || 'Unknown error'}`)
+      err.status = resp.status
+      throw err
     }
 
     return json.data

@@ -127,7 +127,13 @@ async function processApiSource(config, existingItems, backfillOptions) {
 
   while (currentPage <= backfillOptions.maxPages) {
     const listOptions = buildListOptions(config, currentPage, backfillOptions.pageSize, backfillOptions.timeFilter)
-    const dataList = await apiFetcher.fetchResourceList(listOptions)
+    let dataList = []
+    try {
+      dataList = await apiFetcher.fetchResourceList(listOptions)
+    } catch (e) {
+      utils.logWarn(`回填源 ${config.title} 拉取失败: ${e.message}`)
+      break
+    }
     if (!dataList || dataList.length === 0) break
 
     const apiItems = normalizeListItems(dataList)
