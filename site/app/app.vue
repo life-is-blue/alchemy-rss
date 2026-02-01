@@ -143,8 +143,24 @@
             <div v-if="!selectedUrl" class="w-full">
               <div v-if="currentView === 'reader'" key="articles">
                 <!-- Integrated Filter Bar (Space Optimized) -->
-                <div class="mb-8">
-                  <!-- Horizontal Category Pills -->
+                <div class="mb-8 space-y-4">
+                  <!-- Media Type Switcher (Level 1 Format) -->
+                  <div class="flex items-center gap-6 border-b border-outline/5 pb-4">
+                    <button
+                      v-for="type in contentTypes"
+                      :key="type.id"
+                      @click="selectTab(type.label)"
+                      class="flex items-center gap-2 text-[13px] font-bold transition-all relative"
+                      :class="currentTab === type.label ? 'text-primary' : 'text-text-muted hover:text-text-main'"
+                    >
+                      <span v-html="getFormatIcon(type.id)" class="opacity-70"></span>
+                      <span>{{ type.label }}</span>
+                      <!-- Active Indicator Dot -->
+                      <div v-if="currentTab === type.label" class="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-primary rounded-full"></div>
+                    </button>
+                  </div>
+
+                  <!-- Horizontal Category Pills (Level 2 Topic) -->
                   <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-2">
                     <button
                       @click="selectCategory('全部')"
@@ -381,6 +397,23 @@ const availableThemes = {
   sepia: { bg: '#F5E6C8', label: '羊皮纸' },
   green: { bg: '#CCE8CF', label: '护眼绿' },
   night: { bg: '#1A1A1A', label: '极夜黑' }
+}
+
+const contentTypes = [
+  { id: 'ALL', label: '全部' },
+  { id: 'ARTICLE', label: '文章' },
+  { id: 'TWITTER', label: '动态' },
+  { id: 'PODCAST', label: '播客' },
+  { id: 'VIDEO', label: '视频' }
+]
+
+const getFormatIcon = (id) => {
+  if (id === 'ALL') return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>'
+  if (id === 'ARTICLE') return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>'
+  if (id === 'TWITTER') return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>'
+  if (id === 'PODCAST') return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>'
+  if (id === 'VIDEO') return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>'
+  return ''
 }
 
 let observer = null
