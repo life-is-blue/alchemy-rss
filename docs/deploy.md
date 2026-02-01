@@ -5,30 +5,45 @@
 ## 部署架构
 
 ```
-Vercel 部署结构:
-├── read-rss/dist/       # Angular 静态文件 (index.html, *.js)
+GitHub Actions 构建流程:
+master 分支 → 构建 Angular → 推送到 gh-pages
+
+Vercel 静态托管 (gh-pages 分支):
+├── index.html, *.js     # Angular 构建产物
 ├── data/                # 爬虫数据 (links.json, articles/)
-└── api/                 # Vercel Serverless Functions
+├── api/                 # Vercel Serverless Functions
+└── details/             # 文章详情
 ```
 
-Angular 直接通过 `/data/links.json` 访问数据，无需复制。
+## 构建流程
+
+**GitHub Actions** (`server.yml`) 负责：
+1. 从 `gh-pages` 恢复 `data/` 目录
+2. 运行爬虫更新数据
+3. 构建 Angular 前端 (`read-rss/`)
+4. 将所有内容推送到 `gh-pages`
+
+**Vercel** 只做静态托管，不执行构建：
+- `buildCommand: ""` - 跳过构建
+- `outputDirectory: "."` - 直接使用根目录
 
 ## Vercel Dashboard 配置
 
-在 Vercel Dashboard → Project Settings → General 中配置：
+| 配置项 | 值 |
+|--------|-----|
+| **Production Branch** | `gh-pages` |
+| **Framework Preset** | `Other` |
 
-| 配置项 | 值 | 说明 |
-|--------|-----|------|
-| **Framework Preset** | `Other` | Angular 非官方预设 |
-| **Build Command** | `cd read-rss && npm install && npm run build` | 进入子目录构建 |
-| **Output Directory** | `read-rss/dist` | Angular 输出目录 |
+其他配置通过 `vercel.json` 管理。
 
 ## Rewrites 配置
 
-SPA 路由已通过 `vercel.json` 配置，无需在 Dashboard 额外设置：
+SPA 路由通过 `vercel.json` 配置：
 
 ```json
 {
+  "buildCommand": "",
+  "outputDirectory": ".",
   "rewrites": [
     { "source": "/api/reader", "destination": "/api/reader" },
     { "source": "/(data|details|assets|static)/:path*", "destination": "/$1/:path*" },

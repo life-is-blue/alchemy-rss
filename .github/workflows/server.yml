@@ -146,38 +146,28 @@ jobs:
 
     - name: Build Frontend
       if: steps.git-check.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-      working-directory: ./site
+      working-directory: ./read-rss
       run: |
-        # 升级到 Node 20 后，pnpm 能够正确处理 Nuxt 4 的原生绑定
-        rm -rf node_modules
-        pnpm install --no-frozen-lockfile
-        
-        # 将 data 目录拷贝到 public，使其在构建后可直接访问
-        cp -r ../data ./public/
-        
-        pnpm run generate
+        npm install
+        npm run build
 
     - name: Prepare Deployment Folder
       run: |
-        # 诊断：看看构建到底产出了什么
-        ls -la site/
-        ls -R site/.output/public || ls -R site/dist || echo "No output found!"
-        
-        mkdir -p deploy/public
-        # 尝试从 Nuxt 4 默认路径拷贝，如果不存在则尝试 site/dist
-        if [ -d "site/.output/public" ]; then
-          cp -r site/.output/public/* deploy/public/
-        elif [ -d "site/dist" ]; then
-          cp -r site/dist/* deploy/public/
+        mkdir -p deploy
+
+        # Angular 构建产物
+        if [ -d "read-rss/dist" ]; then
+          cp -r read-rss/dist/* deploy/
         fi
-        
+
         # 拷贝后端 Serverless API
-        cp -r api deploy/public/
-        
-        cp -r data deploy/public/ || true
-        cp -r details deploy/public/ || true
-        cp README.md deploy/public/ || true
-        cp TAGS.md deploy/public/ || true
+        cp -r api deploy/
+
+        # 拷贝数据文件
+        cp -r data deploy/ || true
+        cp -r details deploy/ || true
+        cp README.md deploy/ || true
+        cp TAGS.md deploy/ || true
 
     - name: Deploy to Data Branch
       uses: JamesIves/github-pages-deploy-action@v4
