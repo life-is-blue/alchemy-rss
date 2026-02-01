@@ -41,24 +41,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Sidebar: Refined WeChat Logic */
+/* Sidebar: Seamless Design */
 .nav-item-base {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 1.25rem;
+  padding: 0.8rem 1.25rem;
   border-radius: 12px;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
-
-.nav-item-content {
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Precise 16px gap */
-  flex: 1;
-  min-width: 0;
+  border: none !important;
 }
 
 .nav-item-active {
@@ -84,32 +77,31 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   padding: 0 1.25rem;
-  margin-top: 3.5rem; /* Increased from 2rem */
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
 }
 
-/* Header Integration: Smooth & Transparent */
+/* Header Integration: Borderless */
 .header-integrated-input {
-  background-color: rgba(0, 0, 0, 0.03);
-  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.035);
+  border: none !important;
   transition: all 0.3s ease;
 }
 .header-integrated-input:focus {
   background-color: #FFFFFF;
-  border-color: rgba(50, 145, 255, 0.15);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .header-integrated-pill {
-  background-color: rgba(0, 0, 0, 0.03);
-  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.035);
+  padding: 4px;
   border-radius: 12px;
 }
 
 /* Floating Toolbar */
 .wechat-fab {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--color-surface);
   color: var(--color-text-sub);
@@ -117,15 +109,18 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.02);
+  border: none !important;
 }
 .wechat-fab:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
   color: var(--color-primary);
 }
 
 /* Article Read Styles */
 .article-read {
-  opacity: 0.6;
+  opacity: 0.65;
+}
+.article-read .article-title {
+  font-weight: normal;
 }
