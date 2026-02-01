@@ -45,7 +45,7 @@
   --color-card-border: rgba(0, 0, 0, 0.02);
 
   /* Reader Themes */
-  --theme-white-bg: #FFFFFF;
+  --theme-white-bg: #FCFCFA; /* Warm off-white, less harsh than #FFFFFF */
   --theme-white-text: #333333;
 
   --theme-sepia-bg: #F5E6C8;

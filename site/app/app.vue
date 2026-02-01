@@ -202,7 +202,7 @@
             <!-- Zen Reader View -->
             <div v-else key="reader" class="w-full flex justify-center min-h-screen pb-20">
               <div
-                class="w-full max-w-[900px] md:my-10 md:rounded-[var(--radius-paper)] overflow-hidden transition-all duration-300"
+                class="w-full max-w-[1000px] md:my-10 md:rounded-[var(--radius-paper)] overflow-hidden transition-all duration-300"
                 style="background-color: var(--color-surface); box-shadow: var(--shadow-paper);"
               >
                 <ReaderPanel
@@ -252,7 +252,7 @@
              <button @click="decreaseFont" class="w-12 h-10 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm transition-all active:scale-95 text-text-sub">
                <span class="text-[14px] font-serif font-bold">A</span>
              </button>
-             <span class="text-[13px] font-medium text-text-main w-12 text-center">{{ fontSize }}</span>
+             <button @click="resetFont" class="text-[13px] font-medium text-text-main w-12 text-center hover:bg-white hover:shadow-sm rounded-lg h-8 transition-all" title="重置字号">{{ fontSize }}</button>
              <button @click="increaseFont" class="w-12 h-10 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm transition-all active:scale-95 text-text-sub">
                <span class="text-[20px] font-serif font-bold">A</span>
              </button>
@@ -353,7 +353,7 @@ const {
   selectCategory
 } = useArticles()
 
-const { theme, fontSize, increaseFont, decreaseFont } = useReadingSettings()
+const { theme, fontSize, increaseFont, decreaseFont, resetFont } = useReadingSettings()
 
 const selectedUrl = ref('')
 const currentView = ref('reader')

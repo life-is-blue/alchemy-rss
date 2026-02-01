@@ -34,11 +34,13 @@ export const useReadingSettings = () => {
 
   const increaseFont = () => { if (fontSize.value < 24) fontSize.value += 1 }
   const decreaseFont = () => { if (fontSize.value > 14) fontSize.value -= 1 }
+  const resetFont = () => { fontSize.value = 18 }
 
   return {
     fontSize,
     theme,
     increaseFont,
-    decreaseFont
+    decreaseFont,
+    resetFont
   }
 }
