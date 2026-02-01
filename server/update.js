@@ -17,6 +17,7 @@ const createFeed = require('./feed')
 const apiFetcher = require('./api-fetcher')
 const rssFetcher = require('./rss-fetcher')
 const { classifyTags } = require('./tag-classifier')
+const { slimLinksJson } = require('./link-slimmer')
 
 const {
   RESP_PATH,
@@ -371,9 +372,10 @@ async function handleFeed() {
     linksJson.some((l, i) => JSON.stringify(l) !== JSON.stringify(linksExist[i]))
 
   if (hasChanges) {
-    fs.outputJsonSync(LINKS_PATH, linksJson)
     await writemd(newData, linksJson)
     await createFeed(linksJson)
+    const slimmed = slimLinksJson(linksJson)
+    fs.outputJsonSync(LINKS_PATH, slimmed)
     utils.log(`更新完成: +${newData.length} 篇文章`)
     if (!utils.WORKFLOW) handleCommit()
   } else {
