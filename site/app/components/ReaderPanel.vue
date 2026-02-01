@@ -1,174 +1,98 @@
 <template>
   <div class="relative transition-colors duration-500" ref="readerContainer">
-    <!-- Reading Progress Bar (top) -->
+    <!-- Reading Progress Bar -->
     <div class="fixed top-0 left-0 right-0 h-1 bg-primary/10 z-50">
-      <div
-        class="reading-progress h-full bg-primary"
-        :style="{ width: readingProgress + '%' }"
-      ></div>
-    </div>
-
-    <!-- Loading State -->
-    <div v-if="loading" class="max-w-[700px] mx-auto py-20 px-6 space-y-10 animate-pulse">
-      <div class="h-10 bg-black/[0.03] rounded-lg w-4/5"></div>
-      <div class="h-4 bg-black/[0.03] rounded-lg w-1/4"></div>
-      <div class="space-y-4 pt-10">
-        <div class="h-4 bg-black/[0.03] rounded-lg w-full"></div>
-        <div class="h-4 bg-black/[0.03] rounded-lg w-full"></div>
-        <div class="h-4 bg-black/[0.03] rounded-lg w-5/6"></div>
-      </div>
+      <div class="reading-progress h-full bg-primary" :style="{ width: readingProgress + '%' }"></div>
     </div>
 
     <!-- Article Content -->
-    <div
-      v-else-if="article"
-      ref="articleContent"
-      class="max-w-[750px] mx-auto py-12 md:py-20 px-6 md:px-10 selection:bg-primary/10 transition-colors duration-500"
-    >
-      <header class="mb-16">
-        <div class="flex items-center gap-2 text-[12px] font-bold text-[#006633] mb-6 uppercase tracking-widest opacity-80">
+    <div v-if="article" ref="articleContent" class="max-w-[800px] mx-auto py-12 md:py-24 px-6 md:px-12 selection:bg-primary/10 transition-colors duration-500">
+      
+      <!-- Hero Header (Design Sync with read-intro.png) -->
+      <header class="text-center mb-20">
+        <div class="flex items-center justify-center gap-2 text-[12px] font-bold text-primary mb-10 uppercase tracking-[0.2em]">
           <span>{{ article.siteName || 'Alchemy Archive' }}</span>
-          <span v-if="article.byline" class="opacity-30">·</span>
-          <span v-if="article.byline">作者：{{ article.byline }}</span>
         </div>
         
-        <h1 class="text-3xl md:text-4xl font-extrabold leading-[1.3] text-text-main mb-10 tracking-tight">
+        <h1 class="text-3xl md:text-5xl font-black leading-tight text-text-main mb-10 tracking-tighter">
           {{ article.title }}
         </h1>
 
-        <div class="flex items-center gap-4 text-[13px] text-text-muted font-medium">
-           <span v-if="article.readTime">{{ article.readTime }} 分钟阅读</span>
-           <span v-if="articleData?.tags?.length" class="opacity-30">·</span>
-           <div v-if="articleData?.tags?.length" class="flex items-center gap-2 overflow-x-auto hide-scrollbar">
-             <span v-for="tag in articleData.tags.slice(0, 3)" :key="tag" class="whitespace-nowrap opacity-60 hover:opacity-100 transition-opacity">#{{ tag }}</span>
-           </div>
+        <div v-if="article.byline" class="text-primary font-bold text-[15px] mb-12">
+          <span class="opacity-60 text-text-muted mr-1">作者</span>
+          <span class="hover:underline cursor-pointer">{{ article.byline }}</span>
+        </div>
+
+        <!-- Designer Stats Row -->
+        <div class="stats-row">
+          <div class="stats-item">
+            <span class="stats-value">{{ article.score || 0 }}%</span>
+            <span class="stats-label">推荐值</span>
+          </div>
+          <div class="w-[1px] h-8 bg-black/5"></div>
+          <div class="stats-item">
+            <span class="stats-value">{{ article.readTime || '5' }}</span>
+            <span class="stats-label">分钟阅读</span>
+          </div>
+          <div class="w-[1px] h-8 bg-black/5"></div>
+          <div class="stats-item">
+            <span class="stats-value">{{ Math.round((article.wordCount || 1000) / 1000) }}k</span>
+            <span class="stats-label">字数</span>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-4 mt-12">
+           <button @click="toggleFavorite" class="px-8 py-3 rounded-xl font-bold text-sm border border-outline/10 hover:bg-black/5 transition-all">
+             {{ isFavorited(props.url) ? '已收藏' : '加入书架' }}
+           </button>
+           <a :href="props.url" target="_blank" class="px-8 py-3 rounded-xl bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+             开始阅读原文
+           </a>
         </div>
       </header>
 
-      <!-- AI Insight Card (Clean Style) -->
-      <div v-if="article.aiSummary || article.mainPoints" class="mb-16 rounded-3xl p-6 md:p-8 border border-outline/10 transition-all duration-500" style="background-color: var(--color-hover-bg); box-shadow: var(--shadow-card);">
-        <div class="flex items-center gap-2 text-primary font-bold text-[14px] mb-6 uppercase tracking-wider">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 1 8 8c0 3.2-2.3 5.9-5.4 7.2-.6.2-1 .8-1 1.4v.4a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.4c0-.6-.4-1.2-1-1.4C4.3 15.9 2 13.2 2 10a8 8 0 0 1 8-8z"/><path d="M9 22h6"/></svg>
-          AI 深度摘要
+      <!-- AI Summary Section -->
+      <div v-if="article.aiSummary || article.mainPoints" class="mb-20 rounded-3xl p-8 md:p-12 bg-[#F5F7F9] border border-outline/5">
+        <div class="flex items-center gap-2 text-primary font-black text-[14px] mb-8 uppercase tracking-widest">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          AI 智能导读
         </div>
-
-        <p v-if="article.aiSummary" class="text-[16px] text-text-main leading-relaxed mb-8 font-medium italic opacity-90">
+        <p v-if="article.aiSummary" class="text-xl text-text-main leading-relaxed mb-10 font-bold tracking-tight">
           "{{ article.aiSummary }}"
         </p>
-
-        <div v-if="article.mainPoints && article.mainPoints.length" class="space-y-4">
-          <div v-for="(point, idx) in article.mainPoints" :key="idx" class="flex gap-4 items-start group">
-            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary/5 text-primary text-[10px] font-bold shrink-0 mt-0.5 group-hover:bg-primary group-hover:text-white transition-all">
-              {{ idx + 1 }}
-            </span>
-            <div class="text-[14px] leading-relaxed">
-              <strong class="text-text-main block mb-1">{{ point.point }}</strong>
-              <p v-if="point.explanation" class="text-text-sub opacity-80">{{ point.explanation }}</p>
+        <div v-if="article.mainPoints?.length" class="space-y-6">
+          <div v-for="(point, idx) in article.mainPoints" :key="idx" class="flex gap-6 items-start">
+            <span class="flex items-center justify-center w-7 h-7 rounded-lg bg-primary text-white text-[12px] font-black shrink-0 mt-1 shadow-md shadow-primary/10">{{ idx + 1 }}</span>
+            <div>
+              <strong class="text-text-main text-[16px] block mb-2">{{ point.point }}</strong>
+              <p class="text-text-sub opacity-80 leading-relaxed">{{ point.explanation }}</p>
             </div>
           </div>
         </div>
-
-        <div class="mt-8 pt-6 border-t border-black/[0.03] flex items-center justify-between text-[11px] font-bold text-text-muted/40 uppercase tracking-widest">
-          <span v-if="article.score" class="flex items-center gap-1.5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="text-qualified"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            WORTH {{ article.score }} POINTS
-          </span>
-          <span v-if="article.wordCount">{{ article.wordCount }} WORDS</span>
-        </div>
       </div>
 
-      <article
-        class="prose prose-lg max-w-none text-text-main leading-[1.85] font-normal article-body"
-        :style="{ fontSize: fontSize + 'px' }"
-        v-html="article.content"
-      ></article>
+      <!-- Main Body -->
+      <article class="prose prose-xl max-w-none text-text-main article-body" :style="{ fontSize: fontSize + 'px' }" v-html="article.content"></article>
 
-      <footer class="mt-24 mb-12 border-t border-outline/5 pt-12">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
-          <div class="flex items-center gap-4">
-            <button
-              @click="toggleFavorite"
-              class="flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold transition-all active:scale-95 shadow-sm border border-outline/5"
-              :class="isFavorited(props.url) ? 'bg-primary text-white border-primary' : 'bg-white text-text-main hover:bg-black/5'"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" :fill="isFavorited(props.url) ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2.5"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
-              {{ isFavorited(props.url) ? '已收藏' : '加入收藏' }}
-            </button>
-            <a
-              :href="props.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex items-center gap-2 px-6 py-2.5 rounded-full bg-white text-text-main text-[13px] font-bold hover:bg-black/5 transition-all active:scale-95 shadow-sm border border-outline/5"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-            阅读原文
-            </a>
-          </div>
-        </div>
-
-        <!-- Next Article Card -->
-        <div v-if="nextArticle" class="mt-16 mb-8">
-           <p class="text-[11px] font-bold text-text-muted/40 uppercase tracking-widest mb-4">下一篇 Next</p>
-           <div
-             @click="$emit('open-next', nextArticle)"
-             class="group cursor-pointer p-8 rounded-2xl border transition-all duration-500 relative overflow-hidden"
-             style="background-color: var(--color-hover-bg); border-color: var(--color-outline);"
-             :class="['hover:bg-primary/[0.03] hover:border-primary/20 hover:shadow-xl hover:-translate-y-1']"
-           >
-             <!-- Decoration -->
-             <div class="absolute right-0 top-0 bottom-0 w-1 bg-primary/0 group-hover:bg-primary/40 transition-all"></div>
-
-             <div class="flex items-center justify-between gap-6">
-               <div class="flex-1 min-w-0">
-                 <h3 class="text-[18px] md:text-[20px] font-bold text-text-main group-hover:text-primary transition-colors mb-3 line-clamp-2 leading-snug">
-                   {{ nextArticle.title }}
-                 </h3>
-                 <div class="flex items-center gap-2 text-[13px] text-text-muted font-medium">
-                   <span class="text-primary/60">{{ nextArticle.rssTitle || 'RSS' }}</span>
-                   <span class="opacity-30">·</span>
-                   <span>点击继续阅读</span>
-                 </div>
-               </div>
-               
-               <div class="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-text-muted group-hover:bg-primary group-hover:text-white transition-all duration-300 shrink-0 border border-outline/5">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-               </div>
+      <footer class="mt-32 pt-16 border-t border-black/5">
+        <div v-if="nextArticle" class="group cursor-pointer p-10 rounded-3xl bg-[#F5F7F9] hover:bg-primary/[0.03] transition-all duration-500 relative overflow-hidden" @click="$emit('open-next', nextArticle)">
+           <div class="absolute right-0 top-0 bottom-0 w-1.5 bg-primary/0 group-hover:bg-primary transition-all"></div>
+           <p class="text-[11px] font-black text-text-muted/40 uppercase tracking-[0.2em] mb-6">下一篇 NEXT</p>
+           <div class="flex items-center justify-between gap-8">
+             <div class="flex-1 min-w-0">
+               <h3 class="text-2xl font-black text-text-main group-hover:text-primary transition-colors mb-4 truncate leading-tight">{{ nextArticle.title }}</h3>
+               <div class="flex items-center gap-3 text-sm font-bold text-text-muted"><span class="text-primary/60">{{ nextArticle.rssTitle }}</span><span>·</span><span>点击继续阅读</span></div>
              </div>
+             <div class="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shrink-0 border border-outline/5"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
            </div>
-        </div>
-
-        <div v-if="!nextArticle" class="text-center text-[11px] text-text-muted/30 font-bold uppercase tracking-[0.3em]">
-          END OF ARCHIVE
         </div>
       </footer>
     </div>
 
-    <!-- Empty State -->
-    <div v-else class="flex flex-col items-center justify-center text-text-muted/30 text-center gap-6 p-10 min-h-[70vh]">
-      <div class="w-20 h-20 rounded-full bg-black/[0.02] flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/><path d="M8 15h6"/></svg>
-      </div>
-      <p class="text-sm font-bold tracking-tight">请在左侧选择一篇文章开始阅读</p>
-    </div>
-
-    <!-- Lightbox Overlay -->
+    <!-- Lightbox -->
     <transition name="fade">
-      <div
-        v-if="showLightbox"
-        @click="closeLightbox"
-        class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 cursor-zoom-out backdrop-blur-sm"
-      >
-        <img
-          :src="lightboxImage"
-          class="max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-transform duration-300"
-          alt="Full size preview"
-        />
-        <button
-          @click.stop="closeLightbox"
-          class="absolute top-6 right-6 p-3 bg-white/10 rounded-full text-white hover:bg-white/20 transition-all"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
-        </button>
+      <div v-if="showLightbox" @click="closeLightbox" class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-8 cursor-zoom-out backdrop-blur-md">
+        <img :src="lightboxImage" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl transition-transform duration-500" />
       </div>
     </transition>
   </div>
@@ -176,40 +100,22 @@
 
 <script setup>
 import { useReadingProgress } from '~/composables/useReadingProgress'
-
-const props = defineProps({
-  url: String,
-  articleData: Object,
-  nextArticle: Object
-})
-
-const emit = defineEmits(['scroll-top', 'show-settings', 'open-next', 'toggle-header-title'])
-
 const { isRead } = useReadingProgress()
 const { isFavorited, toggleFavorite: globalToggleFavorite } = useArticles()
+const { fontSize, theme } = useReadingSettings()
+
+const props = defineProps({ url: String, articleData: Object, nextArticle: Object })
+const emit = defineEmits(['scroll-top', 'show-settings', 'open-next', 'toggle-header-title'])
 
 const article = ref(null)
 const loading = ref(false)
 const readingProgress = ref(0)
-const readerContainer = ref(null)
 const articleContent = ref(null)
-
-// Lightbox State
 const lightboxImage = ref(null)
 const showLightbox = ref(false)
 
-const openLightbox = (src) => {
-  if (!src) return
-  lightboxImage.value = src
-  showLightbox.value = true
-  document.body.style.overflow = 'hidden' // Prevent scrolling
-}
-
-const closeLightbox = () => {
-  showLightbox.value = false
-  lightboxImage.value = null
-  document.body.style.overflow = ''
-}
+const openLightbox = (src) => { lightboxImage.value = src; showLightbox.value = true; document.body.style.overflow = 'hidden' }
+const closeLightbox = () => { showLightbox.value = false; document.body.style.overflow = '' }
 
 const toggleFavorite = () => {
   if (!props.url) return
@@ -221,8 +127,34 @@ const toggleFavorite = () => {
   })
 }
 
-const checkFavoriteStatus = () => {
-  // Logic removed as it's now handled by the computed global isFavorited(props.url)
+// Scroll & Reveal Title Logic
+let titleObserver = null
+const setupTitleObserver = () => {
+  if (process.client && articleContent.value) {
+    const titleEl = articleContent.value.querySelector('h1')
+    if (titleEl) {
+      titleObserver = new IntersectionObserver((entries) => { emit('toggle-header-title', !entries[0].isIntersecting) }, { threshold: 0 })
+      titleObserver.observe(titleEl)
+    }
+  }
+}
+
+const setupContentInteractions = () => {
+  nextTick(() => {
+    if (articleContent.value) {
+      setupTitleObserver()
+      articleContent.value.querySelectorAll('img').forEach(img => {
+        img.style.cursor = 'zoom-in'; img.addEventListener('click', (e) => { e.stopPropagation(); openLightbox(img.src) })
+      })
+      articleContent.value.querySelectorAll('pre').forEach(pre => {
+        if (pre.parentNode.classList.contains('code-wrapper')) return
+        const wrapper = document.createElement('div'); wrapper.className = 'code-wrapper relative group'; pre.parentNode.insertBefore(wrapper, pre); wrapper.appendChild(pre)
+        const btn = document.createElement('button'); btn.className = 'absolute top-3 right-3 p-2 rounded-lg bg-white/10 text-white/50 opacity-0 group-hover:opacity-100 hover:bg-white/20 hover:text-white transition-all'; btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`
+        btn.addEventListener('click', async () => { await navigator.clipboard.writeText(pre.innerText); btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-green-400"><polyline points="20 6 9 17 4 12"/></svg>'; setTimeout(() => { btn.innerHTML = originalIcon }, 2000) })
+        wrapper.appendChild(btn)
+      })
+    }
+  })
 }
 
 const updateReadingProgress = () => {
@@ -232,174 +164,31 @@ const updateReadingProgress = () => {
   const scrollHeight = container.scrollHeight - container.clientHeight
   if (scrollHeight > 0) {
     readingProgress.value = Math.min(100, Math.round((container.scrollTop / scrollHeight) * 100))
-    if (props.url) updateProgress(props.url, readingProgress.value)
+    if (props.url) useReadingProgress().updateProgress(props.url, readingProgress.value)
   }
 }
 
-const scrollToTop = () => emit('scroll-top')
-
-// Scroll Title Logic
-let titleObserver = null
-const setupTitleObserver = () => {
-  if (process.client && articleContent.value) {
-    const titleEl = articleContent.value.querySelector('h1')
-    if (titleEl) {
-      titleObserver = new IntersectionObserver((entries) => {
-        // If title is NOT intersecting (scrolled out of view), show header title
-        emit('toggle-header-title', !entries[0].isIntersecting)
-      }, { threshold: 0 })
-      titleObserver.observe(titleEl)
-    }
-  }
-}
-
-// Setup Image Listeners for Lightbox & Code Copy Buttons
-const setupContentInteractions = () => {
-  nextTick(() => {
-    if (articleContent.value) {
-      setupTitleObserver() // Initialize title observer
-      
-      // 1. Image Lightbox
-      const images = articleContent.value.querySelectorAll('img')
-      images.forEach(img => {
-        img.style.cursor = 'zoom-in'
-        img.addEventListener('click', (e) => {
-          e.stopPropagation()
-          openLightbox(img.src)
-        })
-      })
-
-      // 2. Code Block Copy
-      const preBlocks = articleContent.value.querySelectorAll('pre')
-      preBlocks.forEach(pre => {
-        // Wrapper for positioning
-        if (pre.parentNode.classList.contains('code-wrapper')) return // Avoid double wrap
-        
-        const wrapper = document.createElement('div')
-        wrapper.className = 'code-wrapper relative group'
-        pre.parentNode.insertBefore(wrapper, pre)
-        wrapper.appendChild(pre)
-
-        // Copy Button
-        const btn = document.createElement('button')
-        btn.className = 'absolute top-2 right-2 p-1.5 rounded-md bg-white/10 text-white/70 opacity-0 group-hover:opacity-100 hover:bg-white/20 hover:text-white transition-all text-xs font-sans'
-        btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`
-        
-        btn.addEventListener('click', async () => {
-          try {
-            await navigator.clipboard.writeText(pre.innerText)
-            const originalIcon = btn.innerHTML
-            btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><polyline points="20 6 9 17 4 12"/></svg>`
-            setTimeout(() => { btn.innerHTML = originalIcon }, 2000)
-          } catch (err) {
-            console.error('Failed to copy', err)
-          }
-        })
-        wrapper.appendChild(btn)
-      })
-    }
-  })
-}
-
-onMounted(() => {
-  if (process.client) {
-    const container = document.querySelector('.overflow-y-auto')
-    if (container) container.addEventListener('scroll', updateReadingProgress, { passive: true })
-  }
-})
-
-onUnmounted(() => {
-  if (process.client) {
-    const container = document.querySelector('.overflow-y-auto')
-    if (container) container.removeEventListener('scroll', updateReadingProgress)
-  }
-})
+onMounted(() => { if (process.client) document.querySelector('.overflow-y-auto')?.addEventListener('scroll', updateReadingProgress, { passive: true }) })
+onUnmounted(() => { if (process.client) document.querySelector('.overflow-y-auto')?.removeEventListener('scroll', updateReadingProgress) })
 
 watch(() => props.url, async (newUrl) => {
-  if (!newUrl) {
-    article.value = null
-    readingProgress.value = 0
-    return
-  }
-
-  loading.value = true
-  readingProgress.value = 0
-  checkFavoriteStatus()
-
+  if (!newUrl) { article.value = null; return }
+  loading.value = true; readingProgress.value = 0
   try {
     if (props.articleData?.archive_path) {
-      try {
-        article.value = await $fetch(`/${props.articleData.archive_path}`)
-        loading.value = false
-        setupContentInteractions() // Setup listener after static load
-        return
-      } catch { console.warn('Static archive missing, falling back...') }
+      article.value = await $fetch(`/${props.articleData.archive_path}`)
+    } else {
+      article.value = await $fetch('/api/reader', { query: { url: newUrl } })
     }
-    article.value = await $fetch('/api/reader', { query: { url: newUrl } })
-    setupContentInteractions() // Setup listener after API load
-  } catch (e) {
-    console.error('Failed to load article', e)
-    article.value = null
-  } finally {
-    loading.value = false
-  }
+    setupContentInteractions()
+  } catch (e) { console.error(e); article.value = null } finally { loading.value = false }
 }, { immediate: true })
 </script>
 
 <style>
-.article-body {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  color: var(--color-text-main);
-}
-.article-body p {
-  margin-bottom: 2rem; /* Reduced from 2.5rem for better continuity */
-  line-height: 1.75;   /* Tightened from 1.85 */
-  text-align: justify; /* WeChat Reading standard */
-}
-.article-body h1, .article-body h2, .article-body h3 {
-  font-weight: 800;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  line-height: 1.25;
-  letter-spacing: -0.025em; /* tight tracking */
-  color: var(--color-text-main);
-}
-.article-body h2 { font-size: 1.6rem; border-bottom: 1px solid var(--color-outline); padding-bottom: 0.75rem; }
-.article-body img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 24px;
-  margin: 3rem auto;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.08);
-}
-.article-body pre {
-  background-color: #1A1A1A;
-  color: #E0E0E0;
-  padding: 2rem;
-  border-radius: 20px;
-  font-size: 14px;
-  line-height: 1.7;
-  margin: 3rem 0;
-  overflow-x: auto;
-  border: 1px solid rgba(255,255,255,0.05);
-}
-.article-body blockquote {
-  border-left: 6px solid var(--color-primary);
-  background: rgba(0, 0, 0, 0.02);
-  padding: 2rem 2.5rem;
-  margin: 3rem 0;
-  font-style: italic;
-  color: var(--color-text-sub);
-  border-radius: 4px 20px 20px 4px;
-}
-.article-body a {
-  color: var(--color-primary);
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  font-weight: 700;
-  transition: opacity 0.2s;
-}
-.article-body a:hover {
-  opacity: 0.7;
-}
+.article-body { color: var(--color-text-main); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+.article-body p { margin-bottom: 2.5rem; line-height: 1.85; text-align: justify; }
+.article-body h2 { font-size: 1.8rem; font-weight: 900; margin: 4rem 0 2rem; border-bottom: 1px solid rgba(0,0,0,0.03); padding-bottom: 1rem; }
+.article-body img { border-radius: 20px; margin: 4rem auto; box-shadow: var(--shadow-wechat); }
+.article-body blockquote { border-left: 4px solid var(--color-primary); background: rgba(var(--color-primary-rgb), 0.03); padding: 2rem 3rem; margin: 4rem 0; border-radius: 4px 24px 24px 4px; font-style: italic; }
 </style>
