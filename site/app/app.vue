@@ -79,10 +79,11 @@
           </button>
 
           <h1 
-            class="text-[15px] font-bold text-text-main truncate max-w-[300px] md:max-w-[500px] transition-opacity duration-300"
+            class="text-[15px] font-bold text-text-main truncate max-w-[300px] md:max-w-[500px] transition-opacity duration-300 flex items-center gap-2"
             :class="selectedUrl && !showHeaderTitle ? 'opacity-0' : 'opacity-100'"
           >
-            {{ selectedUrl ? filteredArticles.find(a => a.link === selectedUrl)?.title : filterTitle }}
+            <span>{{ selectedUrl ? filteredArticles.find(a => a.link === selectedUrl)?.title : filterTitle }}</span>
+            <span v-if="!selectedUrl" class="text-[10px] font-bold text-text-muted opacity-40 uppercase tracking-widest mt-0.5">{{ filteredArticles.length }}</span>
           </h1>
         </div>
 
@@ -141,13 +142,8 @@
             <!-- Feed View -->
             <div v-if="!selectedUrl" class="w-full">
               <div v-if="currentView === 'reader'" key="articles">
-                <!-- Integrated Header & Filter Bar -->
-                <div class="mb-10 space-y-6">
-                  <div class="flex items-end gap-3">
-                    <h2 class="text-3xl font-extrabold text-text-main tracking-tight">{{ filterTitle }}</h2>
-                    <span class="text-[13px] font-bold text-text-muted mb-1 opacity-40 uppercase tracking-widest">{{ filteredArticles.length }} ARTICLES</span>
-                  </div>
-
+                <!-- Integrated Filter Bar (Space Optimized) -->
+                <div class="mb-8">
                   <!-- Horizontal Category Pills -->
                   <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-2">
                     <button
