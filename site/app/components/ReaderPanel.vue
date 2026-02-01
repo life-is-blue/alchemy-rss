@@ -23,16 +23,16 @@
     <div
       v-else-if="article"
       ref="articleContent"
-      class="max-w-[700px] mx-auto py-12 md:py-20 px-6 md:px-10 selection:bg-primary/10 transition-colors duration-500"
+      class="max-w-[750px] mx-auto py-12 md:py-20 px-6 md:px-10 selection:bg-primary/10 transition-colors duration-500"
     >
       <header class="mb-16">
-        <div class="flex items-center gap-2 text-[12px] font-bold text-text-muted/60 mb-6 uppercase tracking-widest">
+        <div class="flex items-center gap-2 text-[12px] font-bold text-[#006633] mb-6 uppercase tracking-widest opacity-80">
           <span>{{ article.siteName || 'Alchemy Archive' }}</span>
           <span v-if="article.byline" class="opacity-30">·</span>
-          <span v-if="article.byline">{{ article.byline }}</span>
+          <span v-if="article.byline">作者：{{ article.byline }}</span>
         </div>
         
-        <h1 class="text-3xl md:text-4xl font-extrabold leading-[1.25] text-text-main mb-8 tracking-tight">
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-[1.3] text-text-main mb-10 tracking-tight">
           {{ article.title }}
         </h1>
 

@@ -35,23 +35,20 @@ export const CONTENT_TYPE_ICONS: Record<string, string> = {
   rss: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>`
 }
 
-// Shared Navigation & Global State
+// Shared Singleton State
+const articles = ref<any[]>([])
+const rssData = ref<any[]>([])
+const loading = ref(true)
+const currentTab = ref('全部')
+const currentCategory = ref('全部')
 const currentView = ref('reader')
 const selectedUrl = ref('')
+const searchValue = ref('')
 const favorites = ref<Record<string, any>>({})
+const currentPage = ref(1)
+const pageSize = 40
 
 export const useArticles = () => {
-  const articles = ref<any[]>([])
-  const rssData = ref<any[]>([])
-  const loading = ref(true)
-  const currentTab = ref('全部')
-  const currentCategory = ref('全部')
-  const searchValue = ref('')
-  
-  // Pagination
-  const pageSize = 40
-  const currentPage = ref(1)
-
   // Load Favorites from LocalStorage
   const loadFavorites = () => {
     if (process.client) {
@@ -62,16 +59,18 @@ export const useArticles = () => {
 
   const toggleFavorite = (article: any) => {
     if (!article.link) return
-    if (favorites.value[article.link]) {
-      delete favorites.value[article.link]
+    const newFavorites = { ...favorites.value }
+    if (newFavorites[article.link]) {
+      delete newFavorites[article.link]
     } else {
-      favorites.value[article.link] = { 
+      newFavorites[article.link] = { 
         title: article.title, 
         rssTitle: article.rssTitle,
         date: article.date,
         savedAt: new Date().toISOString() 
       }
     }
+    favorites.value = newFavorites
     if (process.client) {
       localStorage.setItem('article-favorites', JSON.stringify(favorites.value))
     }
@@ -81,6 +80,7 @@ export const useArticles = () => {
 
   // Load Data & Enrich
   const loadData = async () => {
+    if (articles.value.length > 0) return // Singleton pattern
     loading.value = true
     loadFavorites()
     try {
@@ -121,7 +121,7 @@ export const useArticles = () => {
     }
   }
 
-  // Filter Logic (Now handles Favorites)
+  // Filter Logic
   const filteredArticles = computed(() => {
     let list = articles.value
 
@@ -154,14 +154,45 @@ export const useArticles = () => {
     return list
   })
 
+  // Taxonomy Tree
+  const categoryGroups = computed(() => {
+    const groups: Record<string, number> = {}
+    articles.value.forEach(article => {
+      const cat = article.sourceCategory
+      if (cat && CATEGORY_LABELS[cat]) {
+        groups[cat] = (groups[cat] || 0) + 1
+      }
+    })
+    return Object.entries(groups)
+      .map(([key, count]) => ({ key, label: CATEGORY_LABELS[key] || key, count }))
+      .sort((a, b) => b.count - a.count)
+  })
+
+  const sourceFeeds = computed(() => {
+    const counts: Record<string, number> = {}
+    articles.value.forEach(a => {
+      if (a.rssTitle) counts[a.rssTitle] = (counts[a.rssTitle] || 0) + 1
+    })
+    return rssData.value.map(s => ({
+      title: s.title,
+      type: s.type,
+      count: counts[s.title] || 0
+    })).filter(s => s.count > 0)
+  })
+
   const displayedArticles = computed(() => filteredArticles.value.slice(0, currentPage.value * pageSize))
-
   const hasMore = computed(() => displayedArticles.value.length < filteredArticles.value.length)
-
   const loadMore = () => { if (hasMore.value) currentPage.value++ }
+
+  const scrollToTop = () => {
+    if (process.client) {
+      document.querySelector('.overflow-y-auto')?.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
 
   const selectTab = (type: string) => {
     currentTab.value = type
+    currentCategory.value = '全部' // Reset category when changing format
     currentPage.value = 1
     currentView.value = 'reader'
     selectedUrl.value = ''
@@ -170,30 +201,23 @@ export const useArticles = () => {
 
   const selectCategory = (id: string) => {
     currentCategory.value = id
+    currentTab.value = '全部' // Reset format when changing category
     currentPage.value = 1
-    currentView.value = 'reader' // Force back to article list view
-    selectedUrl.value = ''       // Close reader if open
+    currentView.value = 'reader'
+    selectedUrl.value = ''
     scrollToTop()
   }
 
   const handleNav = (id: string) => {
     currentView.value = id
     currentCategory.value = '全部'
+    currentTab.value = '全部'
     selectedUrl.value = ''
-    if (id === 'reader') selectCategory('全部')
     scrollToTop()
-  }
-
-  const scrollToTop = () => {
-    if (process.client) {
-      document.querySelector('.overflow-y-auto')?.scrollTo({ top: 0, behavior: 'smooth' })
-    }
   }
 
   return {
     articles,
-    categoryGroups,
-    sourceFeeds,
     rssData,
     loading,
     currentTab,
@@ -201,6 +225,8 @@ export const useArticles = () => {
     currentView,
     selectedUrl,
     searchValue,
+    categoryGroups,
+    sourceFeeds,
     displayedArticles,
     filteredArticles,
     hasMore,
