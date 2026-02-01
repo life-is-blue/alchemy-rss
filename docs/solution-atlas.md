@@ -71,7 +71,7 @@ Alchemy   = 个人炼金厂 (精炼 + 铸造 + 永久储备)
 | 模块 | 状态 | 说明 |
 |------|------|------|
 | `server/fetch.js` | ✅ 完善 | API-First 混合抓取策略 |
-| `server/archiver.js` | ⚠️ 代码完善但未生效 | 归档逻辑存在但 articles/ 无数据 |
+| `server/update.js` | ⚠️ 待验证 | 归档逻辑已内置，但 articles/ 数据需验证 |
 | `site/` 前端 | ✅ 完善 | Nuxt 4 + Tailwind，阅读体验良好 |
 | GitHub Actions | ✅ 运行中 | 每 2 小时定时抓取 |
 
@@ -82,20 +82,20 @@ Alchemy   = 个人炼金厂 (精炼 + 铸造 + 永久储备)
 | `links.json` | 300KB, 758 篇 | 按源分组，结构可用 |
 | `articles/` | **gh-pages 分支无数据** | 归档逻辑未正确运行，需修复 |
 | `rss.json` | 5 个源 | 配置正常 |
-| `tags.json` | 6 个分类 | 关键词规则，可扩展 |
+| `tags.json` | 主题标签配置 | 关键词规则，可扩展 |
 
 ### 2.3 关键问题：归档未生效
 
-**archiver.js 代码分析**：
+**update.js 归档逻辑分析**：
 
 ```javascript
 // 路径策略: data/articles/YYYY/MM/<id>.json
-const relPath = `${year}/${month}/${resourceId}.json`;
-const absPath = path.join(this.articlesDir, relPath);
+const relPath = `${year}/${month}/${article.id}.json`;
+const absPath = `${ARTICLES_DIR}/${relPath}`;
 ```
 
 **可能原因**：
-1. `update.js` 未正确调用 archiver
+1. `update.js` 归档分支未触发（API Key 缺失或源类型不支持归档）
 2. GitHub Actions 工作流未触发归档步骤
 3. 归档结果未正确提交到 gh-pages
 
@@ -129,7 +129,7 @@ const absPath = path.join(this.articlesDir, relPath);
 ```
 
 **所需能力**:
-- 文章全文归档 ✓ (archiver.js 已支持)
+- 文章全文归档 ✓ (update.js 已支持)
 - 语义检索 (需实现)
 - MCP Server 接口 (可选，后期)
 
@@ -207,7 +207,7 @@ BestBlogs API
      ▼
 ┌─────────────┐    ┌─────────────┐
 │   Fetcher   │ → │  Archiver   │
-│  (fetch.js) │    │(archiver.js)│
+│  (fetch.js) │    │(update.js)│
 └─────────────┘    └──────┬──────┘
                           │
           ┌───────────────┼───────────────┐
@@ -231,7 +231,7 @@ BestBlogs API
 data/
 ├── links.json              # 主索引（保持现有结构）
 ├── rss.json                # RSS 源配置
-├── tags.json               # 分类配置
+├── tags.json               # 主题标签配置
 ├── articles/               # 文章归档【需修复】
 │   └── {YYYY}/{MM}/{id}.json
 └── vectors/                # 向量存储【新增】
@@ -247,7 +247,7 @@ data/
 
 ## 5. 数据模型设计
 
-### 5.1 文章归档 Schema（已有，由 archiver.js 生成）
+### 5.1 文章归档 Schema（已有，由 update.js 归档生成）
 
 ```json
 // data/articles/YYYY/MM/{id}.json
@@ -263,18 +263,22 @@ data/
   "content": "清洗后的 HTML 全文",
 
   // BestBlogs AI 产出
-  "aiSummary": "AI 一句话摘要",
+  "oneSentenceSummary": "AI 一句话摘要",
+  "summary": "AI 详细摘要",
+  "aiSummary": "AI 一句话摘要（兼容字段）",
   "mainPoints": ["要点1", "要点2", "要点3"],
-  "tags": ["标签1", "标签2"],
+  "keyQuotes": ["引用1", "引用2"],
+  "tags": ["标签1", "标签2"],           // 上游原始标签（API/RSS）
+  "topicTag": "ai-llm",                // 本地主题标签（关键词匹配）
   "readTime": 9,
   "score": 92,
   "wordCount": 2076,
   "domain": "bestblogs.dev",
-  "category": "ai"
+  "category": "Artificial_Intelligence"
 }
 ```
 
-**说明**：archiver.js 已实现此结构，无需修改 Schema。
+**说明**：update.js 已实现此结构，无需修改 Schema。
 
 ### 5.2 索引 Schema（现有 links.json）
 
@@ -288,19 +292,24 @@ data/
         "link": "https://www.bestblogs.dev/article/xxx",
         "date": "2026-01-29",
         "summary": "RSS 摘要...",
-        // 新增字段（archiver.js 已支持）
+        // 新增字段（update.js 已支持）
         "id": "xxx",
         "archive_path": "data/articles/2026/01/xxx.json",
-        "ai_summary": "AI 一句话摘要",
-        "tags": ["标签"],
-        "read_time": 9
+        "oneSentenceSummary": "AI 一句话摘要",
+        "summary": "AI 详细摘要",
+        "tags": ["标签"],               // 上游原始标签（API/RSS）
+        "topicTag": "ai-llm",           // 本地主题标签
+        "readTime": 9,
+        "category": "Artificial_Intelligence"
       }
     ]
   }
 ]
 ```
 
-**需要确认**：当前 links.json 是否包含 `archive_path` 字段。
+**说明**：
+- `category` 为 BestBlogs 上游分类（主类）
+- `topicTag` 为本地主题标签（用于 TAGS.md/详情页聚合）
 
 ### 5.3 向量索引（新增）
 
@@ -440,7 +449,7 @@ Phase 0 (v0.2)              Phase 1 (v0.3)             Phase 2 (v0.4)
 
 | 风险 | 影响 | 应对 |
 |------|------|------|
-| BestBlogs API 变更 | 中 | archiver.js 已有抽象层 |
+| BestBlogs API 变更 | 中 | api-fetcher.js 已有抽象层 |
 | 文章删除/下架 | 低 | 本地归档不受影响 |
 
 ---
@@ -452,7 +461,7 @@ Phase 0 (v0.2)              Phase 1 (v0.3)             Phase 2 (v0.4)
 | 文件 | 作用 | 状态 |
 |------|------|------|
 | `server/fetch.js` | RSS/API 抓取 | ✅ 正常 |
-| `server/archiver.js` | 文章归档 | ⚠️ 代码完善，调用链待验证 |
+| `server/update.js` | 文章归档 | ⚠️ 归档逻辑内置，调用链待验证 |
 | `server/update.js` | 主流程编排 | ⚠️ 待检查 archiver 调用 |
 | `.github/workflows/server.yml` | CI/CD | ⚠️ 待检查归档步骤 |
 

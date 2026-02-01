@@ -172,16 +172,17 @@ async function processSource(sourceConfig, existingItems) {
     try {
       // RSS 源不支持归档，直接返回索引数据
       if (isRss) {
-        if (isNew) newCount++
+      if (isNew) newCount++
         const tags = apiItem.tags
         return {
           title: apiItem.title,
           link: apiItem.link,
           date: apiItem.date || utils.getNowDate('YYYY-MM-DD'),
           summary: apiItem.summary,
+          oneSentenceSummary: apiItem.oneSentenceSummary || apiItem.summary,
           sourceName: apiItem.sourceName,
           tags: tags,
-          categoryTag: classifyTags(tags),
+          topicTag: classifyTags(tags),
           _source: 'rss'
         }
       }
@@ -190,6 +191,8 @@ async function processSource(sourceConfig, existingItems) {
       const fullData = await apiFetcher.fetchFullResource(apiItem.id)
 
       if (fullData) {
+        const tags = fullData.tags || apiItem.tags
+        fullData.topicTag = classifyTags(tags)
         // 保存到归档目录
         const date = fullData.date || apiItem.date || utils.getNowDate('YYYY-MM-DD')
         const archivePath = await saveArticle(fullData, date)
@@ -197,18 +200,33 @@ async function processSource(sourceConfig, existingItems) {
         if (isNew) newCount++
 
         // 返回索引数据
-        const tags = fullData.tags || apiItem.tags
         return {
           id: apiItem.id,
           title: fullData.title || apiItem.title,
           link: fullData.url || apiItem.url,
           date: date,
-          summary: fullData.aiSummary || apiItem.summary,
+          oneSentenceSummary: fullData.oneSentenceSummary || fullData.aiSummary || apiItem.oneSentenceSummary,
+          summary: fullData.summary || apiItem.summary,
+          mainPoints: fullData.mainPoints || apiItem.mainPoints,
+          keyQuotes: fullData.keyQuotes || apiItem.keyQuotes,
           archive_path: archivePath,
           tags: tags,
-          categoryTag: classifyTags(tags),
-          read_time: fullData.readTime || apiItem.readTime,
-          score: fullData.score || apiItem.score
+          topicTag: fullData.topicTag,
+          readTime: fullData.readTime || apiItem.readTime,
+          score: fullData.score || apiItem.score,
+          wordCount: fullData.wordCount || apiItem.wordCount,
+          domain: fullData.domain || apiItem.domain,
+          category: fullData.category || apiItem.category,
+          aiSubCategory: fullData.aiSubCategory || apiItem.aiSubCategory,
+          mainDomain: fullData.mainDomain || apiItem.mainDomain,
+          sourceId: fullData.sourceId || apiItem.sourceId,
+          sourceName: fullData.sourceName || apiItem.sourceName,
+          resourceType: fullData.resourceType || apiItem.resourceType,
+          language: fullData.language || apiItem.language,
+          publishTimeStamp: fullData.publishTimeStamp || apiItem.publishTimeStamp,
+          publishDateStr: fullData.publishDateStr || apiItem.publishDateStr,
+          publishDateTimeStr: fullData.publishDateTimeStr || apiItem.publishDateTimeStr,
+          qualified: apiItem.qualified
         }
       } else {
         // API 获取失败，使用列表数据
@@ -219,11 +237,27 @@ async function processSource(sourceConfig, existingItems) {
           title: apiItem.title,
           link: apiItem.url,
           date: apiItem.date || utils.getNowDate('YYYY-MM-DD'),
+          oneSentenceSummary: apiItem.oneSentenceSummary,
           summary: apiItem.summary,
+          mainPoints: apiItem.mainPoints,
+          keyQuotes: apiItem.keyQuotes,
           tags: tags,
-          categoryTag: classifyTags(tags),
-          read_time: apiItem.readTime,
-          score: apiItem.score
+          topicTag: classifyTags(tags),
+          readTime: apiItem.readTime,
+          score: apiItem.score,
+          wordCount: apiItem.wordCount,
+          domain: apiItem.domain,
+          category: apiItem.category,
+          aiSubCategory: apiItem.aiSubCategory,
+          mainDomain: apiItem.mainDomain,
+          sourceId: apiItem.sourceId,
+          sourceName: apiItem.sourceName,
+          resourceType: apiItem.resourceType,
+          language: apiItem.language,
+          publishTimeStamp: apiItem.publishTimeStamp,
+          publishDateStr: apiItem.publishDateStr,
+          publishDateTimeStr: apiItem.publishDateTimeStr,
+          qualified: apiItem.qualified
         }
       }
     } catch (e) {
@@ -248,14 +282,9 @@ async function processSource(sourceConfig, existingItems) {
     }
   })
 
-  // 6. 排序和脱水
+  // 6. 排序
   allItems = allItems
     .sort((a, b) => a.date < b.date ? 1 : -1)
-    .map((item, index) => {
-      if (index < 100) return item
-      const { summary, ai_summary, ...rest } = item
-      return rest
-    })
 
   utils.logSuccess(`完成 ${sourceConfig.title}: +${newCount} 篇`)
   return { items: allItems, newCount }

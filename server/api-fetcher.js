@@ -183,16 +183,28 @@ async function fetchFullResource(id) {
 
       // AI 元数据
       aiSummary: meta.oneSentenceSummary,
+      oneSentenceSummary: meta.oneSentenceSummary,
+      summary: meta.summary,
       mainPoints: meta.mainPoints,
+      keyQuotes: meta.keyQuotes,
       tags: meta.tags,
-      categoryTag: null,  // 由调用方填充
+      topicTag: null,  // 由调用方填充
       readTime: meta.readTime,
       score: meta.score,
       wordCount: meta.wordCount,
 
       // 原始元数据
       domain: meta.domain,
-      category: meta.category
+      category: meta.category,
+      aiSubCategory: meta.aiSubCategory,
+      mainDomain: meta.mainDomain,
+      sourceId: meta.sourceId,
+      sourceName: meta.sourceName,
+      resourceType: meta.resourceType,
+      language: meta.language,
+      publishTimeStamp: meta.publishTimeStamp,
+      publishDateStr: meta.publishDateStr,
+      publishDateTimeStr: meta.publishDateTimeStr
     }
   } catch (e) {
     utils.logWarn(`获取资源失败 ${id}: ${e.message}`)
@@ -246,13 +258,26 @@ async function fetchSource(sourceConfig) {
       title: item.title,
       url: item.url || `https://www.bestblogs.dev/article/${item.id}`,
       date: item.publishDateTimeStr || item.publishDateStr,
-      summary: item.oneSentenceSummary || item.summary,
+      oneSentenceSummary: item.oneSentenceSummary,
+      summary: item.summary,
+      mainPoints: item.mainPoints,
+      keyQuotes: item.keyQuotes,
       tags: item.tags,
       score: item.score,
       readTime: item.readTime,
       wordCount: item.wordCount,
       category: item.category,
-      sourceName: item.sourceName
+      sourceName: item.sourceName,
+      sourceId: item.sourceId,
+      resourceType: item.resourceType,
+      domain: item.domain,
+      aiSubCategory: item.aiSubCategory,
+      mainDomain: item.mainDomain,
+      language: item.language,
+      publishTimeStamp: item.publishTimeStamp,
+      publishDateStr: item.publishDateStr,
+      publishDateTimeStr: item.publishDateTimeStr,
+      qualified: item.qualified
     }))
   } catch (e) {
     utils.logWarn(`获取源失败 ${sourceConfig.title}: ${e.message}`)
