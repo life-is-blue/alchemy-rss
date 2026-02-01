@@ -145,26 +145,26 @@ jobs:
         ls -la site/
         ls -R site/.output/public || ls -R site/dist || echo "No output found!"
         
-        mkdir -p deploy
+        mkdir -p deploy/public
         # 尝试从 Nuxt 4 默认路径拷贝，如果不存在则尝试 site/dist
         if [ -d "site/.output/public" ]; then
-          cp -r site/.output/public/* deploy/
+          cp -r site/.output/public/* deploy/public/
         elif [ -d "site/dist" ]; then
-          cp -r site/dist/* deploy/
+          cp -r site/dist/* deploy/public/
         fi
         
         # 拷贝后端 Serverless API
-        cp -r api deploy/
+        cp -r api deploy/public/
         
-        cp -r data deploy/ || true
-        cp -r details deploy/ || true
-        cp README.md deploy/ || true
-        cp TAGS.md deploy/ || true
+        cp -r data deploy/public/ || true
+        cp -r details deploy/public/ || true
+        cp README.md deploy/public/ || true
+        cp TAGS.md deploy/public/ || true
 
     - name: Deploy to Data Branch
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: deploy
+        folder: deploy/public
         branch: gh-pages
         token: ${{ secrets.GITHUB_TOKEN }}
         commit_message: "arch: initial data branch setup"
