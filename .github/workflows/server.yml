@@ -42,6 +42,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: production
+    env:
+      RUN_MODE: ${{ github.event.inputs.mode || 'once' }}
+      BACKFILL_RESET: ${{ github.event.inputs.backfill_reset || 'false' }}
 
     permissions:
       contents: write
@@ -76,6 +79,21 @@ jobs:
         key: ${{ runner.os }}-pnpm-202412-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
           ${{ runner.os }}-pnpm-202412-
+
+    - name: Restore data from gh-pages
+      if: ${{ env.RUN_MODE != 'backfill' || env.BACKFILL_RESET != 'true' }}
+      run: |
+        git fetch origin gh-pages
+        if git cat-file -e origin/gh-pages:public/data/links.json 2>/dev/null; then
+          git checkout origin/gh-pages -- public/data public/details public/README.md public/TAGS.md || true
+          mkdir -p data details
+          cp -R public/data/. data/ || true
+          cp -R public/details/. details/ || true
+          cp public/README.md README.md || true
+          cp public/TAGS.md TAGS.md || true
+        else
+          git checkout origin/gh-pages -- data details README.md TAGS.md || true
+        fi
 
     - name: Install and run crawler
       id: crawler
