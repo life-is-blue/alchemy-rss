@@ -12,33 +12,50 @@
         </div>
 
         <nav class="space-y-6">
-          <!-- Main Nav -->
+          <!-- 1. Main Views -->
           <div class="space-y-1">
             <button
               v-for="item in mainNav"
               :key="item.id"
               @click="handleNav(item.id)"
-              class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[14px] font-medium transition-all group hover:bg-[var(--color-hover-bg)]"
-              :class="currentView === item.id && (currentCategory === '全部' || item.id !== 'reader') ? 'bg-primary text-white shadow-md hover:bg-primary' : 'text-text-sub hover:text-text-main'"
+              class="nav-item"
+              :class="currentView === item.id && currentCategory === '全部' && currentTab === '全部' ? 'active' : 'inactive'"
             >
-              <span class="w-4.5 h-4.5 flex items-center justify-center transition-colors" :class="currentView === item.id && (currentCategory === '全部' || item.id !== 'reader') ? 'text-white' : 'text-text-sub group-hover:text-primary'" v-html="getIcon(item.icon)"></span>
+              <span class="w-4.5 h-4.5 flex items-center justify-center" v-html="getIcon(item.icon)"></span>
               {{ item.label }}
             </button>
           </div>
 
-          <!-- RSS Sources (Flat list) - Kept but made more compact -->
-          <div class="space-y-3 pt-4">
-            <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest px-3">订阅源</p>
-            <div class="space-y-1 max-h-[40vh] overflow-y-auto hide-scrollbar">
+          <!-- 2. Format Filters (Twitter, Podcast, etc.) -->
+          <div class="space-y-3">
+            <p class="nav-section-title">载体格式</p>
+            <div class="space-y-1">
               <button
-                v-for="feed in sourceFeeds"
-                :key="feed.title"
-                @click="selectCategory(feed.title)"
-                class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-[13px] font-medium transition-all group hover:bg-[var(--color-hover-bg)]"
-                :class="currentCategory === feed.title ? 'bg-primary/10 text-primary font-bold' : 'text-text-sub hover:text-text-main'"
+                v-for="type in contentTypes.slice(1)"
+                :key="type.id"
+                @click="selectTab(type.label)"
+                class="nav-item-sub"
+                :class="currentTab === type.label ? 'active' : 'inactive'"
               >
-                <span class="truncate max-w-[120px]">{{ feed.title }}</span>
-                <span class="text-[10px] opacity-40 group-hover:opacity-100 transition-opacity">{{ feed.count }}</span>
+                <span class="w-4 h-4 flex items-center justify-center opacity-60" v-html="getFormatIcon(type.id)"></span>
+                {{ type.label }}
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. Topic Categories -->
+          <div class="space-y-3">
+            <p class="nav-section-title">专题分类</p>
+            <div class="space-y-1 max-h-[30vh] overflow-y-auto hide-scrollbar">
+              <button
+                v-for="group in categoryGroups"
+                :key="group.key"
+                @click="selectCategory(group.key)"
+                class="nav-item-sub"
+                :class="currentCategory === group.key ? 'active' : 'inactive'"
+              >
+                <span class="truncate">{{ group.label }}</span>
+                <span class="text-[10px] opacity-30">{{ group.count }}</span>
               </button>
             </div>
           </div>
@@ -142,43 +159,12 @@
             <!-- Feed View -->
             <div v-if="!selectedUrl" class="w-full">
               <div v-if="currentView === 'reader'" key="articles">
-                <!-- Integrated Filter Bar (Space Optimized) -->
-                <div class="mb-8 space-y-4">
-                  <!-- Media Type Switcher (Level 1 Format) -->
-                  <div class="flex items-center gap-6 border-b border-outline/5 pb-4">
-                    <button
-                      v-for="type in contentTypes"
-                      :key="type.id"
-                      @click="selectTab(type.label)"
-                      class="flex items-center gap-2 text-[13px] font-bold transition-all relative"
-                      :class="currentTab === type.label ? 'text-primary' : 'text-text-muted hover:text-text-main'"
-                    >
-                      <span v-html="getFormatIcon(type.id)" class="opacity-70"></span>
-                      <span>{{ type.label }}</span>
-                      <!-- Active Indicator Dot -->
-                      <div v-if="currentTab === type.label" class="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-primary rounded-full"></div>
-                    </button>
-                  </div>
-
-                  <!-- Horizontal Category Pills (Level 2 Topic) -->
-                  <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-2">
-                    <button
-                      @click="selectCategory('全部')"
-                      class="px-5 py-2 rounded-full text-[13px] font-bold transition-all whitespace-nowrap border"
-                      :class="currentCategory === '全部' ? 'bg-primary text-white border-primary shadow-md' : 'bg-white text-text-sub border-outline/5 hover:border-primary/20'"
-                    >
-                      全部
-                    </button>
-                    <button
-                      v-for="group in categoryGroups"
-                      :key="group.key"
-                      @click="selectCategory(group.key)"
-                      class="px-5 py-2 rounded-full text-[13px] font-bold transition-all whitespace-nowrap border"
-                      :class="currentCategory === group.key ? 'bg-primary text-white border-primary shadow-md' : 'bg-white text-text-sub border-outline/5 hover:border-primary/20'"
-                    >
-                      {{ group.label }}
-                    </button>
-                  </div>
+                <!-- Zero-distraction Content Header -->
+                <div class="mb-8 flex items-center justify-between">
+                   <div class="flex items-end gap-3">
+                      <h2 class="text-2xl font-extrabold text-text-main tracking-tight">{{ filterTitle }}</h2>
+                      <span class="text-[12px] font-bold text-text-muted opacity-30 mb-1 uppercase tracking-widest">{{ filteredArticles.length }} ARTICLES</span>
+                   </div>
                 </div>
 
                 <!-- Articles Grid/List -->
@@ -494,3 +480,29 @@ if (process.client) {
   })
 }
 </script>
+
+<style scoped>
+.nav-item {
+  @apply w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[14px] font-bold transition-all;
+}
+.nav-item.active {
+  @apply bg-primary text-white shadow-md hover:bg-primary;
+}
+.nav-item.inactive {
+  @apply text-text-sub hover:text-text-main hover:bg-[var(--color-hover-bg)];
+}
+
+.nav-item-sub {
+  @apply w-full flex items-center justify-between px-3 py-2 rounded-xl text-[13px] font-medium transition-all;
+}
+.nav-item-sub.active {
+  @apply bg-primary/10 text-primary font-bold;
+}
+.nav-item-sub.inactive {
+  @apply text-text-sub hover:text-text-main hover:bg-[var(--color-hover-bg)];
+}
+
+.nav-section-title {
+  @apply text-[10px] font-bold text-text-muted/40 uppercase tracking-[0.15em] px-3;
+}
+</style>
