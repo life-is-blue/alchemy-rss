@@ -155,6 +155,26 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:rotate-45 transition-transform"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
        </button>
     </div>
+    <!-- Lightbox Overlay -->
+    <transition name="fade">
+      <div
+        v-if="showLightbox"
+        @click="closeLightbox"
+        class="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 cursor-zoom-out backdrop-blur-sm"
+      >
+        <img
+          :src="lightboxImage"
+          class="max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-transform duration-300"
+          alt="Full size preview"
+        />
+        <button
+          @click.stop="closeLightbox"
+          class="absolute top-6 right-6 p-3 bg-white/10 rounded-full text-white hover:bg-white/20 transition-all"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -177,6 +197,23 @@ const loading = ref(false)
 const readingProgress = ref(0)
 const readerContainer = ref(null)
 const articleContent = ref(null)
+
+// Lightbox State
+const lightboxImage = ref(null)
+const showLightbox = ref(false)
+
+const openLightbox = (src) => {
+  if (!src) return
+  lightboxImage.value = src
+  showLightbox.value = true
+  document.body.style.overflow = 'hidden' // Prevent scrolling
+}
+
+const closeLightbox = () => {
+  showLightbox.value = false
+  lightboxImage.value = null
+  document.body.style.overflow = ''
+}
 
 const isFavorited = ref(false)
 
@@ -214,6 +251,52 @@ const updateReadingProgress = () => {
 
 const scrollToTop = () => emit('scroll-top')
 
+// Setup Image Listeners for Lightbox & Code Copy Buttons
+const setupContentInteractions = () => {
+  nextTick(() => {
+    if (articleContent.value) {
+      // 1. Image Lightbox
+      const images = articleContent.value.querySelectorAll('img')
+      images.forEach(img => {
+        img.style.cursor = 'zoom-in'
+        img.addEventListener('click', (e) => {
+          e.stopPropagation()
+          openLightbox(img.src)
+        })
+      })
+
+      // 2. Code Block Copy
+      const preBlocks = articleContent.value.querySelectorAll('pre')
+      preBlocks.forEach(pre => {
+        // Wrapper for positioning
+        if (pre.parentNode.classList.contains('code-wrapper')) return // Avoid double wrap
+        
+        const wrapper = document.createElement('div')
+        wrapper.className = 'code-wrapper relative group'
+        pre.parentNode.insertBefore(wrapper, pre)
+        wrapper.appendChild(pre)
+
+        // Copy Button
+        const btn = document.createElement('button')
+        btn.className = 'absolute top-2 right-2 p-1.5 rounded-md bg-white/10 text-white/70 opacity-0 group-hover:opacity-100 hover:bg-white/20 hover:text-white transition-all text-xs font-sans'
+        btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`
+        
+        btn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(pre.innerText)
+            const originalIcon = btn.innerHTML
+            btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><polyline points="20 6 9 17 4 12"/></svg>`
+            setTimeout(() => { btn.innerHTML = originalIcon }, 2000)
+          } catch (err) {
+            console.error('Failed to copy', err)
+          }
+        })
+        wrapper.appendChild(btn)
+      })
+    }
+  })
+}
+
 onMounted(() => {
   if (process.client) {
     const container = document.querySelector('.overflow-y-auto')
@@ -244,10 +327,12 @@ watch(() => props.url, async (newUrl) => {
       try {
         article.value = await $fetch(`/${props.articleData.archive_path}`)
         loading.value = false
+        setupContentInteractions() // Setup listener after static load
         return
       } catch { console.warn('Static archive missing, falling back...') }
     }
     article.value = await $fetch('/api/reader', { query: { url: newUrl } })
+    setupContentInteractions() // Setup listener after API load
   } catch (e) {
     console.error('Failed to load article', e)
     article.value = null
@@ -265,6 +350,7 @@ watch(() => props.url, async (newUrl) => {
 .article-body p {
   margin-bottom: 2.5rem;
   line-height: 1.85;
+  text-align: justify; /* WeChat Reading standard */
 }
 .article-body h1, .article-body h2, .article-body h3 {
   font-weight: 800;

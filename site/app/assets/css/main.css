@@ -173,6 +173,10 @@
 .theme-night h1, .theme-night h2, .theme-night h3 {
   color: #E0E0E0;
 }
+.theme-night .article-body {
+  font-weight: 300; /* Thinner font for dark mode to reduce glow */
+  -webkit-font-smoothing: antialiased;
+}
 
 
 /* Transitions */
@@ -198,8 +202,13 @@
 
 /* 已读文章样式 */
 .article-read {
-  opacity: 0.6;
+  opacity: 0.85; /* Less transparent than before */
 }
 .article-read .article-title {
   color: var(--color-text-sub);
+  font-weight: normal;
+}
+.article-read img {
+  filter: grayscale(100%); /* Grayscale images */
+  opacity: 0.8;
 }
