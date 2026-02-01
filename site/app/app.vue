@@ -180,7 +180,7 @@
                   :class="[
                     viewMode === 'card'
                       ? 'grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6'
-                      : 'grid grid-cols-1 gap-3'
+                      : 'flex flex-col bg-surface rounded-[var(--radius-paper)] shadow-paper overflow-hidden border border-outline/5'
                   ]"
                 >
                   <ArticleCard

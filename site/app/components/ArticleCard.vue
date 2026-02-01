@@ -1,14 +1,16 @@
 <template>
   <div
     class="group relative transition-all duration-300 cursor-pointer active:scale-[0.995]"
-    style="background-color: var(--color-card-bg); border-color: var(--color-card-border);"
     :class="[
-      mode === 'card' ? 'rounded-2xl p-5 border shadow-sm hover:shadow-md card-hover' : 'px-4 py-3 border-b hover:bg-[var(--color-hover-bg)]',
+      mode === 'card' 
+        ? 'rounded-2xl p-5 border shadow-sm hover:shadow-md card-hover' 
+        : 'px-4 py-5 border-b border-outline/5 hover:bg-[var(--color-hover-bg)]',
       {
-        'qualified-border': isQualified,
+        'qualified-border': isQualified && mode === 'card',
         'article-read': isRead(article.link)
       }
     ]"
+    :style="mode === 'card' ? { backgroundColor: 'var(--color-card-bg)', borderColor: 'var(--color-card-border)' } : {}"
   >
     <!-- List Mode Layout -->
     <div v-if="mode === 'list'" class="flex items-center gap-4">
