@@ -18,6 +18,7 @@ const apiFetcher = require('./api-fetcher')
 const rssFetcher = require('./rss-fetcher')
 const { classifyTags } = require('./tag-classifier')
 const { slimLinksJson } = require('./link-slimmer')
+const { writeWeeklyIndex } = require('./weekly-index')
 
 const {
   RESP_PATH,
@@ -374,6 +375,7 @@ async function handleFeed() {
   if (hasChanges) {
     await writemd(newData, linksJson)
     await createFeed(linksJson)
+    await writeWeeklyIndex(linksJson)
     const slimmed = slimLinksJson(linksJson)
     fs.outputJsonSync(LINKS_PATH, slimmed)
     utils.log(`更新完成: +${newData.length} 篇文章`)

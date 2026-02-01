@@ -16,6 +16,7 @@ const createFeed = require('./feed')
 const apiFetcher = require('./api-fetcher')
 const { classifyTags } = require('./tag-classifier')
 const { slimLinksJson } = require('./link-slimmer')
+const { writeWeeklyIndex } = require('./weekly-index')
 
 const { RSS_PATH, LINKS_PATH } = utils.PATH
 const ARTICLES_DIR = utils.PATH.RESP_PATH + '/data/articles'
@@ -300,6 +301,7 @@ async function runBackfill() {
 
   await writemd(newData, linksJson)
   await createFeed(linksJson)
+  await writeWeeklyIndex(linksJson)
   const slimmed = slimLinksJson(linksJson)
   fs.outputJsonSync(LINKS_PATH, slimmed)
   utils.logSuccess(`回填完成: +${newData.length} 篇文章`)
