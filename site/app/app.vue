@@ -1,139 +1,109 @@
 <template>
   <div class="h-screen flex overflow-hidden bg-background selection:bg-primary/10 transition-colors duration-500" :class="[`theme-${theme}`]">
-    <!-- Desktop Sidebar -->
+    <!-- Clean Sidebar: No hard borders, subtle depth -->
     <aside
-      class="hidden md:flex w-72 flex-col shrink-0 border-r transition-all duration-300 backdrop-blur-xl"
-      style="background-color: var(--color-sidebar-bg); border-color: var(--color-border);"
+      class="hidden md:flex w-72 flex-col shrink-0 transition-all duration-300 bg-sidebar-bg relative z-20"
     >
-      <div class="p-8 flex flex-col h-full overflow-hidden">
-        <!-- WeChat Style Logo -->
-        <div class="flex items-center gap-3 font-bold text-[20px] text-text-main mb-12 px-2 cursor-pointer" @click="handleNav('reader')">
+      <div class="p-8 flex flex-col h-full">
+        <!-- Minimal Logo -->
+        <div class="flex items-center gap-3 font-bold text-text-main mb-12 px-2 cursor-pointer" @click="handleNav('reader')">
           <div class="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center shadow-lg shadow-primary/20">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
           </div>
-          <span class="tracking-tighter font-serif text-2xl text-text-main">Alchemy</span>
+          <span class="tracking-tighter font-serif text-2xl">Alchemy</span>
         </div>
 
-        <nav class="space-y-10 flex-1 overflow-y-auto hide-scrollbar pr-2 text-text-main">
-          <!-- 1. Main Views -->
+        <nav class="space-y-10 flex-1 overflow-y-auto hide-scrollbar pr-2">
+          <!-- Main Views -->
           <div class="space-y-1">
             <button
               v-for="item in mainNav"
               :key="item.id"
               @click="handleNav(item.id)"
               class="nav-item-base"
-              :class="currentView === item.id && currentCategory === '全部' && currentTab === '全部' ? 'nav-item-active' : 'nav-item-inactive'"
+              :class="currentView === item.id && currentCategory === '全部' && currentTab === '全部' ? 'nav-item-active shadow-sm' : 'nav-item-inactive'"
             >
-              <div class="nav-item-content">
+              <div class="flex items-center gap-3">
                 <span class="w-5 h-5 flex items-center justify-center" v-html="getIcon(item.icon)"></span>
                 <span class="text-[15px] font-bold">{{ item.label }}</span>
               </div>
             </button>
           </div>
 
-          <!-- 2. Format Filters -->
-          <div class="space-y-4">
-            <p class="nav-section-title">载体格式</p>
+          <!-- Taxonomy Sections -->
+          <div v-for="section in navSections" :key="section.title" class="space-y-4">
+            <p class="nav-section-title">{{ section.title }}</p>
             <div class="space-y-1">
               <button
-                v-for="type in contentTypes.slice(1)"
-                :key="type.id"
-                @click="selectTab(type.label)"
-                class="nav-item-base !py-2.5"
-                :class="currentTab === type.label ? 'bg-primary/10 text-primary font-bold shadow-sm' : 'nav-item-inactive'"
+                v-for="item in section.items"
+                :key="item.key"
+                @click="item.handler()"
+                class="nav-item-base"
+                :class="item.active ? 'bg-primary/5 text-primary font-bold' : 'nav-item-inactive'"
               >
-                <div class="nav-item-content">
-                  <span class="w-4.5 h-4.5 flex items-center justify-center opacity-70" v-html="getFormatIcon(type.id)"></span>
-                  <span class="text-[14px]">{{ type.label }}</span>
+                <div class="flex items-center gap-3">
+                  <span v-if="item.icon" class="w-4.5 h-4.5 opacity-60" v-html="item.icon"></span>
+                  <span class="text-[14px] truncate max-w-[140px]">{{ item.label }}</span>
                 </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- 3. Topic Categories -->
-          <div class="space-y-4">
-            <p class="nav-section-title">专题分类</p>
-            <div class="space-y-1">
-              <button
-                v-for="group in categoryGroups"
-                :key="group.key"
-                @click="selectCategory(group.key)"
-                class="nav-item-base !py-2.5"
-                :class="currentCategory === group.key ? 'bg-primary/10 text-primary font-bold shadow-sm' : 'nav-item-inactive'"
-              >
-                <div class="nav-item-content">
-                  <span class="text-[14px] truncate">{{ group.label }}</span>
-                </div>
-                <span class="nav-item-count text-[11px]">{{ group.count }}</span>
+                <span class="text-[10px] font-bold opacity-30">{{ item.count }}</span>
               </button>
             </div>
           </div>
         </nav>
 
-        <!-- Compact Profile (Bottom) -->
-        <div class="mt-auto pt-8 border-t flex items-center gap-4" style="border-color: var(--color-border);">
+        <!-- Compact Profile -->
+        <div class="mt-auto pt-8 border-t border-black/[0.03] flex items-center gap-4">
           <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 shrink-0 overflow-hidden">
             <img src="/favicon.svg" class="w-6 h-6 opacity-90 object-contain" alt="Avatar" />
           </div>
           <div class="min-w-0">
-            <p class="text-[12px] font-bold text-text-main truncate leading-tight">Pickle Rick</p>
+            <p class="text-[13px] font-bold text-text-main truncate leading-tight">Pickle Rick</p>
             <p class="text-[11px] text-text-muted/60 truncate uppercase font-bold tracking-tighter">Premium Edition</p>
           </div>
         </div>
       </div>
     </aside>
 
-    <!-- Main Content Shell -->
-    <div class="flex-1 flex flex-col min-w-0 relative">
-      <!-- Fixed Top Header (Design Sync with nav.png) -->
+    <!-- Main Content: Floating Paper Aesthetic -->
+    <div class="flex-1 flex flex-col min-w-0 relative z-10">
+      <!-- Fixed Glass Header -->
       <header
-        class="h-16 px-6 md:px-12 flex items-center justify-between border-b bg-white/80 backdrop-blur-xl z-30 shrink-0"
-        style="border-color: var(--color-border);"
+        class="h-16 px-6 md:px-12 flex items-center justify-between bg-white/80 backdrop-blur-xl shrink-0 z-30"
       >
         <div class="flex items-center gap-6">
-          <button @click="isMobileMenuOpen = true" class="md:hidden p-2 text-text-sub hover:text-primary">
+          <button @click="isMobileMenuOpen = true" class="md:hidden p-2 text-text-sub hover:text-primary transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
           </button>
 
-          <!-- Back Button -->
           <button
             v-if="selectedUrl"
             @click="closeReader"
-            class="hidden md:flex items-center justify-center w-8 h-8 rounded-full hover:bg-black/5 text-text-sub hover:text-primary transition-all group"
+            class="hidden md:flex items-center justify-center w-8 h-8 rounded-full hover:bg-black/5 text-text-sub transition-all group"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="group-hover:-translate-x-0.5 transition-transform"><path d="m15 18-6-6 6-6"/></svg>
           </button>
 
-          <!-- Dynamic Title & Count -->
           <h1 
-            class="text-[16px] font-bold text-text-main transition-all duration-300 flex items-center gap-3"
+            class="text-[16px] font-bold text-text-main transition-opacity duration-300"
             :class="selectedUrl && !showHeaderTitle ? 'opacity-0' : 'opacity-100'"
           >
-            <span class="tracking-tight">{{ selectedUrl ? filteredArticles.find(a => a.link === selectedUrl)?.title : filterTitle }}</span>
-            <span v-if="!selectedUrl" class="text-[11px] font-black text-primary px-2 py-0.5 rounded-md bg-primary/5 border border-primary/10 tracking-widest uppercase">{{ filteredArticles.length }} Articles</span>
+            {{ selectedUrl ? filteredArticles.find(a => a.link === selectedUrl)?.title : filterTitle }}
           </h1>
         </div>
 
-        <!-- WeChat Style Search & Top Nav -->
-        <div class="flex items-center gap-10 flex-1 justify-end">
-          <div v-if="!selectedUrl" class="relative w-full max-w-[320px] hidden lg:block">
+        <!-- Integrated Search & Nav -->
+        <div class="flex items-center gap-10">
+          <div v-if="!selectedUrl" class="relative w-full max-w-[280px] hidden lg:block">
             <input
               v-model="searchValue"
               type="text"
-              placeholder="搜索文章..."
-              class="w-full h-10 bg-[#F5F5F5] rounded-full px-11 text-[14px] text-text-main focus:bg-white focus:shadow-sm focus:outline-none transition-all duration-300 border-none placeholder:text-text-muted/50"
+              placeholder="搜索..."
+              class="w-full h-10 bg-black/[0.04] rounded-full px-11 text-[14px] text-text-main focus:bg-white focus:shadow-sm focus:outline-none transition-all duration-300 border-none"
             />
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="absolute left-4 top-3 text-text-muted/40 transition-colors"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="absolute left-4 top-3 text-text-muted/40"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </div>
 
-          <nav class="hidden md:flex items-center gap-8">
-            <button @click="handleNav('reader')" class="text-[14px] font-bold transition-colors" :class="currentView === 'reader' && !selectedUrl ? 'text-primary' : 'text-text-sub hover:text-primary'">首页</button>
-            <div class="w-[1px] h-3 bg-black/5"></div>
-            <button @click="handleNav('favorites')" class="text-[14px] font-bold transition-colors" :class="currentView === 'favorites' ? 'text-primary' : 'text-text-sub hover:text-primary'">我的收藏</button>
-          </nav>
-
-          <!-- View Mode -->
-          <div class="flex items-center bg-[#F5F5F5] p-1 rounded-xl">
+          <div class="flex items-center bg-black/[0.04] p-1 rounded-xl">
             <button
               @click="viewMode = 'list'"
               class="p-1.5 rounded-lg transition-all"
@@ -152,7 +122,7 @@
         </div>
       </header>
 
-      <!-- Scrollable Main -->
+      <!-- Scrollable Container -->
       <main
         ref="mainContent"
         class="flex-1 overflow-y-auto custom-scrollbar flex flex-col items-center relative transition-colors duration-500"
@@ -165,14 +135,14 @@
           ]"
         >
           <transition name="fade" mode="out-in">
-            <!-- Feed View -->
+            <!-- Feed -->
             <div v-if="!selectedUrl" class="w-full">
               <div v-if="currentView === 'reader' || currentView === 'favorites'" key="articles">
                 <div
                   :class="[
                     viewMode === 'card'
                       ? 'grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10'
-                      : 'flex flex-col bg-surface rounded-[var(--radius-paper)] shadow-paper overflow-hidden border border-outline/5'
+                      : 'flex flex-col bg-white rounded-3xl shadow-paper overflow-hidden border border-black/[0.03]'
                   ]"
                 >
                   <ArticleCard
@@ -185,31 +155,24 @@
                 </div>
 
                 <div v-if="loading" class="mt-12 space-y-6">
-                  <div v-for="i in 3" :key="i" class="animate-pulse bg-black/[0.02] rounded-3xl h-40"></div>
+                  <div v-for="i in 3" :key="i" class="animate-pulse bg-white rounded-3xl h-40 shadow-sm"></div>
                 </div>
 
                 <div v-if="!loading && displayedArticles.length === 0" class="py-40 text-center">
-                   <div class="w-24 h-24 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-8">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-primary/40"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
-                   </div>
-                   <p class="text-text-muted font-bold text-lg">空空如也</p>
+                   <p class="text-text-muted font-bold text-lg opacity-20 tracking-tighter">EMPTY ARCHIVE</p>
                 </div>
 
-                <div v-if="hasMore" ref="scrollSentinel" class="h-32 flex items-center justify-center mt-10">
-                   <div class="flex gap-2">
-                     <div class="w-2 h-2 rounded-full bg-primary animate-bounce"></div>
-                     <div class="w-2 h-2 rounded-full bg-primary [animation-delay:0.2s] animate-bounce"></div>
-                     <div class="w-2 h-2 rounded-full bg-primary [animation-delay:0.4s] animate-bounce"></div>
-                   </div>
+                <div v-if="hasMore" ref="scrollSentinel" class="h-32 flex items-center justify-center">
+                   <div class="w-2 h-2 rounded-full bg-primary/20 animate-bounce"></div>
                 </div>
               </div>
               <SourceGrid v-else-if="currentView === 'sources'" key="sources" :sources="rssData" />
             </div>
 
-            <!-- Zen Reader View -->
+            <!-- Reader -->
             <div v-else key="reader" class="w-full flex justify-center min-h-screen pb-24">
               <div
-                class="w-full max-w-[1000px] md:my-12 md:rounded-[var(--radius-paper)] overflow-hidden transition-all duration-500"
+                class="w-full max-w-[1000px] md:my-12 md:rounded-3xl overflow-hidden transition-all duration-500"
                 style="background-color: var(--color-surface); box-shadow: var(--shadow-paper);"
               >
                 <ReaderPanel
@@ -227,6 +190,7 @@
         </div>
       </main>
 
+      <!-- Floating Tool Stack -->
       <FloatingToolbar
         :show-back-to-top="showBackToTop"
         :show-toolbar="true"
@@ -242,26 +206,26 @@
       />
     </div>
 
-    <!-- Global Settings Drawer -->
+    <!-- Right Drawer -->
     <transition name="drawer-right">
-      <div v-if="showGlobalSettings" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl shadow-2xl z-50 p-10 flex flex-col gap-12 border-l border-outline/5">
+      <div v-if="showGlobalSettings" class="fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-2xl shadow-2xl z-50 p-10 flex flex-col gap-12 border-l border-black/[0.03]">
         <div class="flex items-center justify-between">
            <h3 class="font-black text-text-main uppercase tracking-[0.2em] text-[12px]">Settings</h3>
-           <button @click="showGlobalSettings = false" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5 text-text-muted transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg></button>
+           <button @click="showGlobalSettings = false" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-black/5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg></button>
         </div>
         <div class="space-y-6">
-          <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest">Font Size</p>
-          <div class="flex items-center justify-between bg-[#F5F5F5] rounded-2xl p-2.5">
-             <button @click="decreaseFont" class="w-12 h-12 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm transition-all active:scale-90"><span class="text-sm font-bold opacity-60">A</span></button>
-             <button @click="resetFont" class="text-sm font-black text-text-main px-4 hover:bg-white rounded-lg h-10 transition-all">{{ fontSize }}</button>
-             <button @click="increaseFont" class="w-12 h-12 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm transition-all active:scale-90"><span class="text-xl font-bold opacity-60">A</span></button>
+          <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest text-center">字号 Font Size</p>
+          <div class="flex items-center justify-between bg-black/[0.04] rounded-2xl p-2.5">
+             <button @click="decreaseFont" class="w-12 h-12 flex items-center justify-center rounded-xl hover:bg-white transition-all active:scale-90"><span class="text-sm font-bold">A</span></button>
+             <button @click="resetFont" class="text-sm font-black">{{ fontSize }}</button>
+             <button @click="increaseFont" class="w-12 h-12 flex items-center justify-center rounded-xl hover:bg-white transition-all active:scale-90"><span class="text-xl font-bold">A</span></button>
           </div>
         </div>
         <div class="space-y-6">
-          <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest">Theme</p>
+          <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest text-center">主题 Theme</p>
           <div class="grid grid-cols-2 gap-4">
             <button v-for="(t, key) in availableThemes" :key="key" @click="theme = key" class="flex flex-col items-center gap-3 p-4 rounded-3xl border-2 transition-all active:scale-95" :class="theme === key ? 'border-primary bg-primary/5' : 'border-transparent bg-black/[0.03]'">
-              <div class="w-12 h-12 rounded-full border border-black/5 shadow-inner" :style="{ backgroundColor: t.bg }"></div>
+              <div class="w-12 h-12 rounded-full border border-black/5" :style="{ backgroundColor: t.bg }"></div>
               <span class="text-[11px] font-bold text-text-sub">{{ t.label }}</span>
             </button>
           </div>
@@ -273,10 +237,10 @@
 </template>
 
 <script setup>
-import { CONTENT_TYPE_LABELS, CATEGORY_LABELS } from '~/composables/useArticles'
+import { CONTENT_TYPE_LABELS, CATEGORY_LABELS, CONTENT_TYPE_ICONS } from '~/composables/useArticles'
 
 const {
-  loading, searchValue, rssData, filteredArticles, displayedArticles, hasMore, categoryGroups, sourceFeeds, currentCategory, currentTab, currentView, selectedUrl, loadData, loadMore, selectTab, selectCategory, handleNav, toggleFavorite, isFavorited
+  loading, searchValue, rssData, filteredArticles, displayedArticles, hasMore, categoryGroups, currentCategory, currentTab, currentView, selectedUrl, loadData, loadMore, selectTab, selectCategory, handleNav, toggleFavorite, isFavorited
 } = useArticles()
 
 const { theme, fontSize, increaseFont, decreaseFont, resetFont } = useReadingSettings()
@@ -293,7 +257,7 @@ const availableThemes = {
   white: { bg: '#FFFFFF', label: '简约白' },
   sepia: { bg: '#F5E6C8', label: '羊皮纸' },
   green: { bg: '#CCE8CF', label: '护眼绿' },
-  night: { bg: '#1A1A1A', label: '极夜黑' }
+  night: { bg: '#121212', label: '极夜黑' }
 }
 
 const contentTypes = [
@@ -313,8 +277,12 @@ const getFormatIcon = (id) => {
   return ''
 }
 
-const handleScroll = (e) => { showBackToTop.value = e.target.scrollTop > 300 }
+const navSections = computed(() => [
+  { title: '载体格式', items: contentTypes.slice(1).map(t => ({ label: t.label, active: currentTab.value === t.label, icon: getFormatIcon(t.id), handler: () => selectTab(t.label) })) },
+  { title: '专题分类', items: categoryGroups.value.map(g => ({ label: g.label, active: currentCategory.value === g.key, count: g.count, handler: () => selectCategory(g.key) })) }
+])
 
+const handleScroll = (e) => { showBackToTop.value = e.target.scrollTop > 300 }
 const getIcon = (name) => {
   if (name === 'home') return '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>'
   if (name === 'bookmark') return '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>'
@@ -324,7 +292,7 @@ const getIcon = (name) => {
 
 const filterTitle = computed(() => {
   if (currentView.value === 'favorites') return '我的收藏'
-  if (currentView.value === 'sources') return '订阅管理'
+  if (currentView.value === 'sources') return '管理源'
   return currentCategory.value !== '全部' ? (CATEGORY_LABELS[currentCategory.value] || currentCategory.value) : '精选推荐'
 })
 
@@ -341,11 +309,18 @@ const scrollToTop = () => mainContent.value?.scrollTo({ top: 0, behavior: 'smoot
 
 onMounted(() => { loadData() })
 
+const mainNav = [
+  { id: 'reader', label: '全部文章', icon: 'home' },
+  { id: 'favorites', label: '我的收藏', icon: 'bookmark' },
+  { id: 'sources', label: 'RSS 订阅源', icon: 'rss' }
+]
+
 if (process.client) {
   window.addEventListener('keydown', (e) => { if (e.key === 'Escape' && selectedUrl.value) closeReader() })
 }
 </script>
 
 <style>
-/* Nuxt 4 standard CSS handles global styles */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
