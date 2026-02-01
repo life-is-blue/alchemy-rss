@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
 
-// 内容类型常量
+// Content Types
 export const CONTENT_TYPES = {
   ARTICLE: 'ARTICLE',
   VIDEO: 'VIDEO',
@@ -17,93 +17,71 @@ export const CONTENT_TYPE_LABELS = {
   rss: '外部订阅'
 } as const
 
-// 分类标签中文映射
+// Category Labels (Source Categories from rss.json)
 export const CATEGORY_LABELS: Record<string, string> = {
-  'ai-llm': '人工智能',
-  'programming': '编程开发',
-  'product-business': '产品商业',
+  'Artificial_Intelligence': '人工智能',
+  'Programming_Technology': '编程开发',
+  'Business_Tech': '商业科技',
+  'Product_Development': '产品设计',
   'other': '其他'
 }
 
-// SVG 图标组件（替换 emoji）
-export const CONTENT_TYPE_ICONS = {
+// Icons
+export const CONTENT_TYPE_ICONS: Record<string, string> = {
   ARTICLE: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>`,
   VIDEO: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>`,
   PODCAST: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>`,
   TWITTER: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>`,
   rss: `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>`
-} as const
+}
 
 export const useArticles = () => {
-  const articles = ref([])
-  const rssData = ref([])
-  const sourcesMap = ref(new Map()) // 源配置映射
+  const articles = ref<any[]>([])
+  const rssData = ref<any[]>([])
   const loading = ref(true)
-  const currentTab = ref('全部')
-  const currentCategory = ref('全部') // 分类标签筛选
+  const currentTab = ref('全部') // Level 1: Content Type or '全部'
+  const currentCategory = ref('全部') // Level 2: Source Category
   const searchValue = ref('')
-
-  // 分页状态
+  
+  // Pagination
   const pageSize = 40
   const currentPage = ref(1)
 
-  // 基于 categoryTag 的分类统计
-  const categoryTags = computed(() => {
-    const counts: Record<string, number> = { '全部': articles.value.length }
-
+  // Taxonomy Tree: Grouped by Source Category (Level 2)
+  const categoryGroups = computed(() => {
+    const groups: Record<string, number> = {}
+    
     articles.value.forEach(article => {
-      const cat = article.categoryTag
-      if (cat) {
-        const catName = Array.isArray(cat) ? cat[0] : cat
-        if (catName) {
-          counts[catName] = (counts[catName] || 0) + 1
-        }
+      const cat = article.sourceCategory
+      if (cat && CATEGORY_LABELS[cat]) {
+        groups[cat] = (groups[cat] || 0) + 1
       }
     })
 
-    return Object.entries(counts)
-      .map(([name, count]) => ({ name, count }))
-      .filter(item => item.count > 0)
-      .sort((a, b) => {
-        if (a.name === '全部') return -1
-        if (b.name === '全部') return 1
-        return b.count - a.count
-      })
-      .slice(0, 10) // 限制显示数量
+    return Object.entries(groups)
+      .map(([key, count]) => ({
+        key,
+        label: CATEGORY_LABELS[key] || key,
+        count
+      }))
+      .sort((a, b) => b.count - a.count)
   })
 
-  const categories = computed(() => {
-    // 初始化计数
-    const counts: Record<string, number> = { '全部': articles.value.length }
-
-    // 初始化所有类型的计数为 0
-    Object.values(CONTENT_TYPE_LABELS).forEach(label => {
-      counts[label] = 0
+  // Feed Level Taxonomy: Individual feeds from rss.json
+  const sourceFeeds = computed(() => {
+    const counts: Record<string, number> = {}
+    articles.value.forEach(a => {
+      if (a.rssTitle) counts[a.rssTitle] = (counts[a.rssTitle] || 0) + 1
     })
 
-    // 统计每种类型的文章数量
-    articles.value.forEach(article => {
-      const type = article.contentType
-      if (type && CONTENT_TYPE_LABELS[type as keyof typeof CONTENT_TYPE_LABELS]) {
-        const label = CONTENT_TYPE_LABELS[type as keyof typeof CONTENT_TYPE_LABELS]
-        counts[label] = (counts[label] || 0) + 1
-      }
-    })
-
-    // 定义固定的排序顺序
-    const sortOrder = ['全部', '文章', '视频', '播客', '动态', '外部订阅']
-
-    return Object.entries(counts)
-      .map(([name, count]) => ({ name, count }))
-      .filter(item => item.count > 0 || item.name === '全部') // 仅显示有内容的分类（全部除外）
-      .sort((a, b) => {
-        const indexA = sortOrder.indexOf(a.name)
-        const indexB = sortOrder.indexOf(b.name)
-        // 如果不在排序列表中，放到最后
-        return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB)
-      })
+    return rssData.value.map(s => ({
+      title: s.title,
+      type: s.type,
+      count: counts[s.title] || 0
+    })).filter(s => s.count > 0)
   })
 
+  // Load Data & Enrich
   const loadData = async () => {
     loading.value = true
     try {
@@ -112,56 +90,26 @@ export const useArticles = () => {
         $fetch('/data/rss.json').catch(() => [])
       ])
 
-      // 预计算优化结构
-      const optimizedSources: { title: string; baseTitle: string; config: any }[] = []
+      rssData.value = Array.isArray(rssResp) ? rssResp : []
+      const sourceMap = new Map(rssData.value.map(s => [s.title, s]))
 
-      // 建立源配置映射
-      if (Array.isArray(rssResp)) {
-        rssResp.forEach(source => {
-          sourcesMap.value.set(source.title, source)
-          optimizedSources.push({
-            title: source.title,
-            baseTitle: source.title.split('-')[0]?.trim(),
-            config: source
-          })
-        })
-      }
-
-      // 辅助函数：模糊匹配源配置
-      const findSourceConfig = (title: string) => {
-        // 1. 精确匹配
-        if (sourcesMap.value.has(title)) {
-          return sourcesMap.value.get(title)
-        }
-
-        // 2. 模糊匹配：处理 "精选文章 (BestBlogs)" -> "精选文章 - AI" 等情况
-        const normalizedTitle = title.replace(/\s*\([^)]*\)/, '').trim() // 移除括号部分
-
-        for (const item of optimizedSources) {
-          // 检查是否包含相同的关键词
-          if (item.title.includes(normalizedTitle) || normalizedTitle.includes(item.baseTitle)) {
-            return item.config
-          }
-        }
-
-        return null
-      }
-
-      // 合并文章时添加源元数据
       if (Array.isArray(articlesResp)) {
         articles.value = articlesResp.flatMap(curr => {
-          const sourceConfig = findSourceConfig(curr.title)
+          let config = sourceMap.get(curr.title)
+          if (!config) {
+             const normalized = curr.title.replace(/\s*\([^)]*\)/, '').trim()
+             config = rssData.value.find(s => s.title.includes(normalized))
+          }
 
           return curr.items.map(item => ({
             ...item,
             rssTitle: curr.title,
-            // 新增字段：内容类型和源分类
-            contentType: sourceConfig?.type || 'ARTICLE',
-            sourceCategory: sourceConfig?.category,
+            contentType: config?.type || 'ARTICLE',
+            sourceCategory: config?.category || 'other',
+            qualified: config?.qualifiedFilter === 'true'
           }))
-        }).sort((a, b) => a.date < b.date ? 1 : -1)
+        }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
       }
-      rssData.value = rssResp || []
     } catch (e) {
       console.error('Failed to load data', e)
     } finally {
@@ -169,36 +117,27 @@ export const useArticles = () => {
     }
   }
 
-  // 基础过滤后的全量列表
+  // Filter Logic
   const filteredArticles = computed(() => {
     let list = articles.value
 
-    // 1. 类型过滤 (根据 contentType)
+    // 1. Content Type Filter
     if (currentTab.value !== '全部') {
-      // 根据当前选中的标签名称找到对应的 CONTENT_TYPE key
-      const targetTypeEntry = Object.entries(CONTENT_TYPE_LABELS).find(([_, label]) => label === currentTab.value)
-
-      if (targetTypeEntry) {
-        const targetType = targetTypeEntry[0]
-        list = list.filter(a => a.contentType === targetType)
-      }
+       const typeEntry = Object.entries(CONTENT_TYPE_LABELS).find(([_, label]) => label === currentTab.value)
+       const targetType = typeEntry ? typeEntry[0] : currentTab.value
+       if (targetType && targetType !== '全部') list = list.filter(a => a.contentType === targetType)
     }
 
-    // 2. 分类标签过滤 (根据 categoryTag)
+    // 2. Category OR Source Title Filter
     if (currentCategory.value !== '全部') {
-      list = list.filter(a => {
-        const cat = a.categoryTag
-        if (!cat) return false
-        const catName = Array.isArray(cat) ? cat[0] : cat
-        return catName === currentCategory.value
-      })
+      list = list.filter(a => a.sourceCategory === currentCategory.value || a.rssTitle === currentCategory.value)
     }
 
-    // 3. 搜索过滤
+    // 3. Search
     if (searchValue.value) {
       const search = searchValue.value.toLowerCase()
-      list = list.filter(a =>
-        a.title.toLowerCase().includes(search) ||
+      list = list.filter(a => 
+        a.title.toLowerCase().includes(search) || 
         (a.summary && a.summary.toLowerCase().includes(search))
       )
     }
@@ -206,43 +145,34 @@ export const useArticles = () => {
     return list
   })
 
-  // 最终显示的切片列表
-  const displayedArticles = computed(() => {
-    return filteredArticles.value.slice(0, currentPage.value * pageSize)
-  })
+  const displayedArticles = computed(() => filteredArticles.value.slice(0, currentPage.value * pageSize))
 
-  const hasMore = computed(() => {
-    return displayedArticles.value.length < filteredArticles.value.length
-  })
+  const hasMore = computed(() => displayedArticles.value.length < filteredArticles.value.length)
 
-  const loadMore = () => {
-    if (hasMore.value) {
-      currentPage.value++
-    }
+  const loadMore = () => { if (hasMore.value) currentPage.value++ }
+
+  const selectTab = (type: string) => {
+    currentTab.value = type
+    currentPage.value = 1
+    scrollToTop()
   }
 
-  const selectTab = (title) => {
-    currentTab.value = title
-    currentPage.value = 1 // 切换分类重置页码
-    if (process.client) {
-      const container = document.querySelector('.overflow-y-scroll')
-      if (container) container.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+  const selectCategory = (id: string) => {
+    currentCategory.value = id
+    currentPage.value = 1
+    scrollToTop()
   }
 
-  const selectCategory = (category: string) => {
-    currentCategory.value = category
-    currentPage.value = 1 // 切换分类重置页码
+  const scrollToTop = () => {
     if (process.client) {
-      const container = document.querySelector('.overflow-y-scroll')
-      if (container) container.scrollTo({ top: 0, behavior: 'smooth' })
+      document.querySelector('.overflow-y-auto')?.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }
 
   return {
     articles,
-    categories,
-    categoryTags,
+    categoryGroups,
+    sourceFeeds, // Expose feeds
     rssData,
     loading,
     currentTab,
