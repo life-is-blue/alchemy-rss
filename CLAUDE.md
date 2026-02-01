@@ -22,6 +22,7 @@ pnpm preview          # 预览构建结果
 cd server
 pnpm install          # 安装依赖
 pnpm run once         # 单次运行爬虫
+pnpm run backfill     # 回填历史文章数据
 ```
 
 ### Root Level
