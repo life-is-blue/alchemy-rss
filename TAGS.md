@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-01 12:42:35 | [返回首页](/README.md)
+**更新时间**: 2026-02-01 14:14:30 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (12)
+- [AI & 大模型](#ai-llm) (11)
 - [产品与商业](#product-business) (1)
 - [其他](#other) (5)
 
@@ -20,7 +20,6 @@
 
 
 - [2026-01-31-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-01-31-HackerNews/) - 更多文章 - 商业
-- [Kimi-K2.5-深度实测：变强了，但待「封神」｜AI-上新](https://mp.weixin.qq.com/s?__biz=MTMwNDMwODQ0MQ==&mid=2653098167&idx=1&sn=f6684e4b229d1d0b8cb36320fb8ced24) - 更多文章 - 商业
 - [Clawd-创始人：我发布的很多代码自己都没读过](https://www.youtube.com/watch?v=8lF7HmQ_RgY) - 技术视频 - 编程
 - [Vol.86-同一代技术，两个系统，181-页-PPT-全记录-AI-行业的-2025](https://www.xiaoyuzhoufm.com/episode/697cbc24b4be4c149b4b6931) - 深度播客 - AI
 - [视频剪辑的「Cursor-时刻」来了？｜对谈-ChatCut-创始人李凯文：从金马导演到-AI-创业](https://www.xiaoyuzhoufm.com/episode/697195ab109824f9e1df1e6d) - 深度播客 - AI
