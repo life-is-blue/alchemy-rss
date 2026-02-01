@@ -24,6 +24,7 @@ const DEFAULT_PAGE_SIZE = 100
 const DEFAULT_MAX_PAGES = 20
 const DEFAULT_CONCURRENCY = 2
 const DEFAULT_DELAY_MS = 500
+const DEFAULT_RESET = false
 
 async function delay(ms) {
   if (!ms) return
@@ -244,19 +245,26 @@ async function runBackfill() {
   await fs.ensureDir(ARTICLES_DIR)
 
   const sourcesConfig = fs.readJsonSync(RSS_PATH)
-  const linksExist = fs.existsSync(LINKS_PATH) ? fs.readJsonSync(LINKS_PATH) : []
 
   const backfillOptions = {
     timeFilter: process.env.BACKFILL_TIME_FILTER || DEFAULT_TIME_FILTER,
     pageSize: Number(process.env.BACKFILL_PAGE_SIZE || DEFAULT_PAGE_SIZE),
     maxPages: Number(process.env.BACKFILL_MAX_PAGES || DEFAULT_MAX_PAGES),
     concurrency: Number(process.env.BACKFILL_CONCURRENCY || DEFAULT_CONCURRENCY),
-    delayMs: Number(process.env.BACKFILL_DELAY_MS || DEFAULT_DELAY_MS)
+    delayMs: Number(process.env.BACKFILL_DELAY_MS || DEFAULT_DELAY_MS),
+    reset: process.env.BACKFILL_RESET === 'true' || DEFAULT_RESET
   }
 
-  utils.log(`回填参数: timeFilter=${backfillOptions.timeFilter}, pageSize=${backfillOptions.pageSize}, maxPages=${backfillOptions.maxPages}`)
+  utils.log(`回填参数: timeFilter=${backfillOptions.timeFilter}, pageSize=${backfillOptions.pageSize}, maxPages=${backfillOptions.maxPages}, reset=${backfillOptions.reset}`)
+
+  if (backfillOptions.reset) {
+    utils.logWarn('执行覆盖模式：清空 data/articles 与 data/links.json')
+    await fs.remove(ARTICLES_DIR)
+    await fs.ensureDir(ARTICLES_DIR)
+  }
 
   const linksJson = new Array(sourcesConfig.length)
+  const linksExist = backfillOptions.reset ? [] : (fs.existsSync(LINKS_PATH) ? fs.readJsonSync(LINKS_PATH) : [])
   const newData = { length: 0, titles: [], rss: {}, links: {} }
 
   for (let i = 0; i < sourcesConfig.length; i += 1) {
