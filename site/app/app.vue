@@ -247,6 +247,19 @@
         </div>
 
         <div class="space-y-4">
+          <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest">阅读字号</p>
+          <div class="flex items-center justify-between bg-black/[0.03] rounded-2xl p-2 border border-black/[0.02]">
+             <button @click="decreaseFont" class="w-12 h-10 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm transition-all active:scale-95 text-text-sub">
+               <span class="text-[14px] font-serif font-bold">A</span>
+             </button>
+             <span class="text-[13px] font-medium text-text-main w-12 text-center">{{ fontSize }}</span>
+             <button @click="increaseFont" class="w-12 h-10 flex items-center justify-center rounded-xl hover:bg-white hover:shadow-sm transition-all active:scale-95 text-text-sub">
+               <span class="text-[20px] font-serif font-bold">A</span>
+             </button>
+          </div>
+        </div>
+
+        <div class="space-y-4">
           <p class="text-[11px] font-bold text-text-muted/50 uppercase tracking-widest">显示主题</p>
           <div class="grid grid-cols-2 gap-3">
             <button
@@ -340,7 +353,7 @@ const {
   selectCategory
 } = useArticles()
 
-const { theme } = useReadingSettings()
+const { theme, fontSize, increaseFont, decreaseFont } = useReadingSettings()
 
 const selectedUrl = ref('')
 const currentView = ref('reader')
