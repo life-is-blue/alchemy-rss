@@ -164,7 +164,7 @@ jobs:
     - name: Deploy to Data Branch
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: deploy/public
+        folder: deploy
         branch: gh-pages
         token: ${{ secrets.GITHUB_TOKEN }}
         commit_message: "arch: initial data branch setup"
