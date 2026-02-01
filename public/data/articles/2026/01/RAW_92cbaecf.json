@@ -1,0 +1,58 @@
+{
+  "id": "RAW_92cbaecf",
+  "title": "Google 发布通用商业协议 (UCP)，助力智能体购物",
+  "url": "https://www.infoq.com/news/2026/01/google-ucp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-24 16:50:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has launched the <a href=\"https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/\">Universal Commerce Protocol (UCP)</a>, an open-source standard designed to enhance commerce on AI-powered platforms. UCP creates a common language for agentic shopping, enabling seamless interactions among consumers, businesses, and payment providers. It integrates with existing retail infrastructure and the Agent Payments Protocol (<a href=\"https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol\">AP2</a>) for secure payments, offering businesses flexible connection options via APIs and Agent-to-Agent (<a href=\"https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/\">A2A</a>) communication.</p>\n   <p>UCP was developed in collaboration with major players such as Shopify, Etsy, Wayfair, Target, and Walmart, and endorsed by over 20 global partners. The protocol is designed to serve the entire commerce ecosystem: businesses maintain control over their products and checkout, AI platforms can onboard merchants quickly, developers can build on a neutral open standard, payment providers gain interoperability, and consumers enjoy frictionless shopping experiences.</p>\n   <p>The protocol addresses a major challenge in today’s commerce infrastructure: the N by N integration problem. Traditional systems require separate connections for each platform or sales channel, which can slow down the rollout of agentic shopping experiences. UCP provides a single, secure layer that standardizes the full commerce workflow, from product discovery to checkout and order management. It allows agents to discover business capabilities and available payment options dynamically, supports multiple communication methods, including APIs, Agent2Agent, and MCP, and separates payment instruments from handlers to work with a broad range of payment providers.</p>\n   <p>In practical terms, UCP allows agents to access a business’s services, initiate checkout processes, and apply discounts through standardized requests. Google’s reference implementation demonstrates this by enabling purchases via AI interfaces such as AI Mode in Search and Gemini, using Google Wallet or other compatible payment methods. Businesses can connect their inventory through a Merchant Center account, making their products accessible to agents without custom integrations for each platform.</p>\n   <p>Andy Reid, Chief Innovation Officer and AI advocate, raised a <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7417105773681614848?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7417105773681614848%2C7418624068054052864%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287418624068054052864%2Curn%3Ali%3Aactivity%3A7417105773681614848%29\">question</a> on LinkedIn about potential implications for smaller brands:</p>\n   <blockquote>\n    <p>If UCP allows Gemini to collapse the entire shopping journey into a single 'Pay' button, does this accelerate the move toward your 'Default Economy' where only one brand is surfaced as the definitive answer? How do smaller brands survive if the protocol favors the single most coherent 'default' rather than a marketplace of choices?</p>\n   </blockquote>\n   <p>James Massey, AI lead at Google, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7417105773681614848?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7417105773681614848%2C7418624068054052864%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7417105773681614848%2C7418679761016619008%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287418624068054052864%2Curn%3Ali%3Aactivity%3A7417105773681614848%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287418679761016619008%2Curn%3Ali%3Aactivity%3A7417105773681614848%29\">responded</a>:</p>\n   <blockquote>\n    <p>Andy Reid, interesting perspective. I think that while a single ‘pay’ button simplifies the final step, UCP is designed as an open standard rather than a closed marketplace. In my opinion, this actually means it could be even better for smaller brands. By using UCP to become 'discoverable' to AI agents without needing the massive ad budgets required for traditional search, if their product is the most relevant, the protocol allows Gemini to surface them as the primary option, regardless of brand size. Actually, it’s about data quality. Interesting though, I think it’ll take a while to see!</p>\n   </blockquote>\n   <p>UCP's open architecture enables developers to explore functionalities such as checkout, discounts, and order management, with Python-based SDKs for rapid implementation. Google and its partners aim to simplify integration and enhance shopping experiences for consumers and businesses through a shared standard for agentic commerce.</p>\n   <p>The Universal Commerce Protocol is available as an open-source specification on GitHub, and the project encourages community contributions through pull requests and discussions.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google’s Universal Commerce Protocol (UCP) Powers Agentic Shopping\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/google-ucp/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1769273400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出了通用商业协议 (UCP)，这是一项旨在统一 AI 驱动的“智能体购物”的开源标准，通过简化 AI 智能体、商家和支付提供商之间的交互来实现这一目标。",
+  "oneSentenceSummary": "Google 推出了通用商业协议 (UCP)，这是一项旨在统一 AI 驱动的“智能体购物”的开源标准，通过简化 AI 智能体、商家和支付提供商之间的交互来实现这一目标。",
+  "summary": "Google 与 Shopify 和 Walmart 等行业巨头合作，推出了通用商业协议 (UCP)。这一开源标准解决了“N 乘 N”的集成挑战，即传统商业系统需要为不同平台建立碎片化的连接。UCP 为整个商业工作流（从产品发现到安全结账）提供了一个统一层，通过与智能体支付协议 (AP2) 集成并支持智能体对智能体 (A2A) 通信。该协议允许 AI 智能体动态发现业务能力，并通过标准化请求处理交易，有效地将 Gemini 等 AI 界面转变为直接的购物中心。虽然它承诺通过更好的可发现性降低小型品牌的门槛，但也引发了关于“默认经济”潜力的讨论，即 AI 可能只呈现最相关的一个选项。",
+  "mainPoints": [
+    {
+      "point": "UCP 解决了现代数字商业中的“N 乘 N”集成问题。",
+      "explanation": "UCP 不再为每个销售渠道构建自定义集成，而是提供了一个单一、安全的层，使跨 AI 平台的产品发现、结账和订单管理标准化。"
+    },
+    {
+      "point": "该协议通过标准化通信实现无缝的“智能体购物”。",
+      "explanation": "通过利用 API、A2A 和 MCP，UCP 允许 AI 智能体自主与业务服务交互、应用折扣，并通 AP2 协议发起支付。"
+    },
+    {
+      "point": "UCP 能够通过数据质量使小型品牌的可发现性更加民主化。",
+      "explanation": "Google 建议，通过采用开放标准，小型商家可以根据相关性而非巨额广告预算被 AI 智能体发现，尽管这仍是行业争论的焦点。"
+    },
+    {
+      "point": "该架构将支付工具与处理程序分离，以实现最大的灵活性。",
+      "explanation": "这种设计选择确保了协议能够与广泛的全球支付提供商和现有的零售基础设施保持互操作性。"
+    }
+  ],
+  "keyQuotes": [
+    "UCP 为智能体购物创造了一种通用语言，实现了消费者、企业和支付提供商之间的无缝交互。",
+    "传统系统需要为每个平台或销售渠道建立单独的连接，这可能会减慢智能体购物体验的推广速度。",
+    "如果 UCP 允许 Gemini 将整个购物流程简化为一个“支付”按钮，这是否会加速向“默认经济”的转变？",
+    "通过使用 UCP 让 AI 智能体变得“可发现”，而不需要传统搜索所需的巨额广告预算，只要他们的产品最相关，该协议就允许 Gemini 将其呈现出来。"
+  ],
+  "tags": [
+    "Universal Commerce Protocol",
+    "智能体购物",
+    "AI 智能体",
+    "电子商务",
+    "互操作性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 533,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769273400000,
+  "publishDateStr": "01-24",
+  "publishDateTimeStr": "2026-01-24 16:50:00"
+}

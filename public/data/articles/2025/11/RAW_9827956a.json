@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9827956a",
+  "title": "这些大神在 Meta 的论文看一篇少一篇了",
+  "url": "https://www.qbitai.com/2025/11/353414.html",
+  "date": "2025-11-17 05:57:25",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"39\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">离开Meta的大佬们，留下作品还在陆续发表，今天轮到田渊栋。</p>\n  <p data-track=\"3\">这次他带领团队把目光投向了大模型强化学习训练中一个令人困惑的现象：<strong>为什么RL训练明明带来巨大性能提升，却只改变了极少数参数。</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251117073758_2d64bfb64ef15deeab7c7ff304ab2174.png\" data-src=\"https://image.jido.dev/20251117073758_2d64bfb64ef15deeab7c7ff304ab2174.png\">\n  </div>\n  <p data-track=\"4\">论文剖析了可验证奖励强化学习（RLVR）的训练动态，戳破了一个误区，参数更新的稀疏只是表面现象，背后是RLVR有个固定的优化偏好。</p>\n  <p data-track=\"5\">对于同一个预训练模型来说，无论用什么数据集和RL算法，RLVR只盯着同一小部分参数修改。</p>\n  <p data-track=\"6\">团队还提出了一个全新的<strong>三门理论（Three-Gate Theory）</strong>，一步步说明RLVR的参数更新是怎么定位至特定参数区域的。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251117073758_bafda3e4e9134f86ccb1f66504acd87e.png\" data-src=\"https://image.jido.dev/20251117073758_bafda3e4e9134f86ccb1f66504acd87e.png\">\n  </div>\n  <p data-track=\"8\">像OpenAI-o3和DeepSeek-R1这样的推理模型，都是通过大规模RLVR训练获得数学和编程能力的大幅增强。</p>\n  <p data-track=\"9\">按理说，如此巨大的能力提升应该伴随着大量参数的改变，但最近的研究却发现，RL训练产生的参数更新是稀疏的，而监督微调（SFT）的参数更新是密集的。</p>\n  <p data-track=\"10\">这种高收益、低变化的悖论引发了Meta团队的关注。</p>\n  <p data-track=\"11\">他们分析了包括Qwen系列和DeepSeek-R1-Distill-Qwen在内的多个开源模型，这些模型经过超过3000步的长时间RL训练，涵盖数学、编程、STEM、逻辑谜题和指令遵循等多样化任务。</p>\n  <p data-track=\"12\">通过设计一种bfloat16精度感知的探测方法，研究团队准确测量了参数更新的稀疏度。结果显示，SFT的稀疏度通常只有0.6%到18.8%，而RL的稀疏度高达36%到92%，相差了一个数量级。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251117073758_dda0ec00176e657b80f09915074e4072.png\" data-src=\"https://image.jido.dev/20251117073758_dda0ec00176e657b80f09915074e4072.png\">\n  </div>\n  <p data-track=\"13\">但更重要的发现是，这种稀疏性只是表面现象，背后隐藏着一个更深层的机制：模型条件优化偏差（model-conditioned optimization bias）。</p>\n  <p data-track=\"14\">为了解释这种独特的训练行为，研究团队提出了三门理论，解释了RL更新是如何被约束、引导和过滤的。</p>\n  <p data-track=\"15\"><strong>第一门：KL锚定（KL Anchor）。</strong></p>\n  <p data-track=\"16\">RLVR的核心是 “试错学习”，但他次更新不会让模型的输出风格太偏离（比如原来模型说话简洁，不能越学习越啰嗦）。</p>\n  <p data-track=\"17\">这个机制背后原理是，在线策略梯度更新会在每一步施加策略KL界限。</p>\n  <p data-track=\"18\">即使在没有显式KL正则项的DAPO算法中，比例裁剪技巧仍然会施加O(ε²)的KL界限。这种锚定效应确保了每步相对于当前策略的漂移很小，进而限制了参数的移动范围。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251117073759_cd87bd13d793b0da76fcd1598465bbc6.png\" data-src=\"https://image.jido.dev/20251117073759_cd87bd13d793b0da76fcd1598465bbc6.png\">\n  </div>\n  <p data-track=\"19\"><strong>第二门：模型几何（Model Geometry）。</strong></p>\n  <p data-track=\"20\">预训练模型拥有高度结构化的几何特性，比如模型里负责核心逻辑的参数，对应高曲率区域，改动起来影响大，但容易不稳定。</p>\n  <p data-track=\"21\">在KL约束下，RL更新倾向于保持模型的原始权重结构，自然偏向于优化景观中的低曲率方向。</p>\n  <p data-track=\"22\">反观SFT，因为修改高曲率区域容易接近标准答案，但改多了会把模型原有的能力框架 打乱，反而不利于复杂推理。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p26-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/5c6ba5a4bca54215b3dbdb4d179c0bfa~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=sI%2B6lkD%2BwaJotEKYyMSOgOzH9gU%3D\" data-src=\"https://p26-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/5c6ba5a4bca54215b3dbdb4d179c0bfa~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=sI%2B6lkD%2BwaJotEKYyMSOgOzH9gU%3D\">\n  </div>\n  <p data-track=\"23\"><strong>第三门：精度过滤（Precision）。</strong></p>\n  <p data-track=\"24\">bfloat16的有限精度充当了一个透镜，隐藏了在RL不愿施加大改变区域的微小更新。</p>\n  <p data-track=\"25\">由于bfloat16只有7位尾数，小于单位最低位（ULP）阈值的变化无法表示。如果RL持续更新路由到特定参数子集，存储的值就不会改变，结果就表现为稀疏性。</p>\n  <p data-track=\"26\">如果换成更高精度（比如 float32），会发现更多参数改动。</p>\n  <p data-track=\"27\">论文做了很多实验验证上面的逻辑，确认了RLVR和SFT在参数空间中的优化区域完全不同。</p>\n  <p data-track=\"28\">通过分析奇异值分解（SVD）重构后的主成分权重，团队发现RL更新与主成分权重的重叠度始终低于随机水平，表明RL有强烈的倾向避开这些权重。相反，RL更新与低幅度权重显示出超随机的重叠，这是因为它们对微小更新的阻力较低。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/e57dbb6d4c904660a7f678726354ebdc~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=CsU3Gs6SO%2BNQWdl297uOUaHi9QQ%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/e57dbb6d4c904660a7f678726354ebdc~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=CsU3Gs6SO%2BNQWdl297uOUaHi9QQ%3D\">\n  </div>\n  <p data-track=\"29\">以及因果性验证实验，团队通过正交旋转和头部置换故意”扰乱”Qwen3-4B-Base模型特定层的几何结构。结果显示，在被干预的层中，更新重叠度降至随机水平，而在未触及的层中保持较高，这证明预训练模型的几何结构是优化偏差的来源。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/0ea1bac0a477419e872fea0c2a0b3151~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=R3sK%2FgnYq0sveAC5rqRJv6La84s%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/0ea1bac0a477419e872fea0c2a0b3151~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=R3sK%2FgnYq0sveAC5rqRJv6La84s%3D\">\n  </div>\n  <p data-track=\"30\">在光谱分析方面，RLVR检查点在顶部主成分内表现出明显稳定的谱：跨层的主子空间旋转一致较小，谱漂移最小。奇异值曲线几乎与基础模型相同。相比之下，SFT在相同指标上引起了显著更大的旋转和明显的漂移。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/5fb63185c75e4d6d8748d91ffa163331~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=P31TtZfhTVHiWBIFTz8Hd9j8A08%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/5fb63185c75e4d6d8748d91ffa163331~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=P31TtZfhTVHiWBIFTz8Hd9j8A08%3D\">\n  </div>\n  <p data-track=\"32\">这项研究不仅解释了观察到的现象，还为RL训练算法的设计提供了指导。</p>\n  <p data-track=\"33\">团队的发现表明，许多SFT时代的参数高效微调（PEFT）方法，特别是通过稀疏或低秩先验与主方向对齐的方法，在RLVR中的迁移效果很差。</p>\n  <p data-track=\"34\">在稀疏微调实验中，仅更新主成分权重（SFT偏好的方向）会产生最差的优化轨迹，KL曲线上升缓慢，显示出过度干预和退化的训练动态。</p>\n  <p data-track=\"35\">相反，更新非主成分、低幅度权重恰好符合理论预测的离主成分区域，能够紧密跟踪密集RLVR轨迹。</p>\n  <p data-track=\"36\">对于最近流行的LoRA变体，研究发现主成分定向的PiSSA并没有比标准LoRA带来额外收益。</p>\n  <p data-track=\"37\">在用于匹配全参数性能的较高学习率下，PiSSA经常变得不稳定并提前崩溃。这是因为在PiSSA中扩大学习率会强制沿主方向更新，而这些方向具有更高曲率和谱扭曲特性，正是RLVR倾向于避免的方向。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/db6c02c1ca4342f49903958520d42ace~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=CdR4ex33fu6fwzlen%2FOCbmAAXkg%3D\" data-src=\"https://p3-sign.toutiaoimg.com/tos-cn-i-6w9my0ksvp/db6c02c1ca4342f49903958520d42ace~tplv-tt-shrink:640:0.image?lk3s=06827d14&amp;traceid=2025111713452671AE886B0DF6E6DFE530&amp;x-expires=2147483647&amp;x-signature=CdR4ex33fu6fwzlen%2FOCbmAAXkg%3D\">\n  </div>\n  <p data-track=\"38\">论文地址：https://arxiv.org/abs/2511.08567</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Meta 团队论文揭示大模型强化学习训练参数更新稀疏性背后的固定优化偏好，并提出“三门理论”解释其机制。",
+  "oneSentenceSummary": "Meta 团队论文揭示大模型强化学习训练参数更新稀疏性背后的固定优化偏好，并提出“三门理论”解释其机制。",
+  "summary": "文章深入解读了 Meta 团队（由田渊栋带领）的一项最新研究，旨在解释大语言模型在强化学习（RLVR）训练中，性能显著提升却仅改变极少数参数的“悖论”。论文指出，参数更新的稀疏性并非偶然，而是 RLVR 存在一个固定的优化偏好。团队提出了创新的“三门理论”，通过 KL 锚定、模型几何和精度过滤三个层面，详细阐释了 RL 更新如何被约束、引导和过滤，使其精准定位到特定的参数区域。研究通过大量实验验证了 RLVR 与监督微调（SFT）在参数空间中的优化区域截然不同，并发现传统为 SFT 设计的参数高效微调（PEFT）方法，如 PiSSA，在 RLVR 中效果不佳，甚至可能导致训练不稳定。这项研究为理解和设计更有效的 RL 训练算法提供了重要指导。",
+  "mainPoints": [
+    {
+      "point": "RL 训练的参数更新稀疏性是表面现象，背后隐藏固定优化偏好。",
+      "explanation": "论文揭示，RLVR 训练虽带来巨大性能提升，但参数更新稀疏，实际是模型条件优化偏差导致 RL 只修改同一小部分特定参数，而非随机稀疏。"
+    },
+    {
+      "point": "“三门理论”解释了 RLVR 参数更新的定位机制。",
+      "explanation": "该理论通过 KL 锚定（约束漂移）、模型几何（偏向低曲率区域）和精度过滤（bfloat16 精度隐藏微小更新）三个层面，详细阐述了 RL 更新的约束、引导和过滤过程。"
+    },
+    {
+      "point": "RLVR 与 SFT 的优化偏好显著不同，影响 PEFT 方法效果。",
+      "explanation": "RLVR 倾向避开高曲率主方向，而 SFT 倾向修改这些区域。这导致为 SFT 设计的 PEFT 方法在 RLVR 中效果不佳，甚至因强制沿高曲率方向更新而变得不稳定。"
+    }
+  ],
+  "keyQuotes": [
+    "为什么 RL 训练明明带来巨大性能提升，却只改变了极少数参数。",
+    "论文剖析了可验证奖励强化学习（RLVR）的训练动态，戳破了一个误区，参数更新的稀疏只是表面现象，背后是 RLVR 有个固定的优化偏好。",
+    "团队还提出了一个全新的三门理论（Three-Gate Theory），一步步说明 RLVR 的参数更新是怎么定位至特定参数区域的。",
+    "这项研究不仅解释了观察到的现象，还为 RL 训练算法的设计提供了指导。",
+    "对于最近流行的 LoRA 变体，研究发现主成分定向的 PiSSA 并没有比标准 LoRA 带来额外收益。"
+  ],
+  "tags": [
+    "大语言模型",
+    "强化学习",
+    "模型训练",
+    "参数稀疏性",
+    "优化偏好"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 2000,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763359045000,
+  "publishDateStr": "2025-11-17",
+  "publishDateTimeStr": "2025-11-17 05:57:25"
+}

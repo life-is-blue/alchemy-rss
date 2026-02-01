@@ -1,0 +1,55 @@
+{
+  "id": "RAW_88ce6d19",
+  "title": "Spring AI 1.0.3 版本正式发布",
+  "url": "https://spring.io/blog/2025/10/01/spring-ai-1-0-3-available-now",
+  "date": "2025-10-01 00:00:00",
+  "author": "markpollack",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On behalf of the Spring AI engineering team and everyone who has contributed, I'm happy to announce that Spring AI <code>1.0.3</code> has been released and is now available from Maven Central.</p>\n  <p>This patch release delivers important stability improvements and bug fixes.</p>\n  <h2 id=\"release-summary\"><a href=\"#release-summary\" aria-label=\"release summary permalink\" class=\"anchor before\"></a>Release Summary</h2>\n  <p>This release includes <a href=\"https://github.com/spring-projects/spring-ai/releases/tag/v1.0.3\">27 improvements, bug fixes, and documentation updates</a>. The focus of this patch release is on:</p>\n  <ul>\n   <li><strong>Improvements</strong>: 18 enhancements to expand capabilities and functionality</li>\n   <li><strong>Stability</strong>: 6 bug fixes addressing community-reported issues</li>\n   <li><strong>Documentation</strong>: 3 improvements to help developers</li>\n  </ul>\n  <p>Thanks to all those who have contributed with issue reports and pull requests.</p>\n  <h2 id=\"key-highlights\"><a href=\"#key-highlights\" aria-label=\"key highlights permalink\" class=\"anchor before\"></a>Key Highlights</h2>\n  <p>This patch release includes several improvements and fixes:</p>\n  <ul>\n   <li><strong>GemFire Vector Store</strong> - metadata filtering queries for more precise vector search operations</li>\n   <li><strong>AWS Bedrock</strong> - new BedrockChatOptions API and proxy chat model fixes</li>\n   <li><strong>GraalVM Native Image</strong> - ahead-of-time compilation improvements</li>\n   <li><strong>Spring Bean Injection</strong> - OpenAiApi now available as an injectable Spring bean</li>\n   <li><strong>Streaming and Tool Calling</strong> - improved event handling and error messages</li>\n   <li><strong>Developer Experience</strong> - better IDE auto-completion and documentation updates</li>\n  </ul>\n  <p>These changes continue to improve the stability and usability of Spring AI.</p>\n  <h2 id=\"whats-next\"><a href=\"#whats-next\" aria-label=\"whats next permalink\" class=\"anchor before\"></a>What's Next</h2>\n  <p>The Spring AI team is making good progress on PR merging with a downward trend in our backlog. We're targeting a 1.1 GA release in 4-5 weeks with a primary focus on Model Context Protocol (MCP) functionality.</p>\n  <p>For the latest updates and to contribute to the project, visit our <a href=\"https://github.com/spring-projects/spring-ai\">GitHub repository</a> or join the discussion in our community channels. For general questions, please ask on <a href=\"https://stackoverflow.com\">Stack Overflow</a> using the <a href=\"https://stackoverflow.com/tags/spring-ai\"><code>spring-ai</code> tag</a>.</p>\n  <h2 id=\"contributors\"><a href=\"#contributors\" aria-label=\"contributors permalink\" class=\"anchor before\"></a>Contributors</h2>\n  <p>Thanks to all contributors who made this release possible:</p>\n  <ul>\n   <li><a href=\"https://github.com/albertattard\">Albert Attard (@albertattard)</a></li>\n   <li><a href=\"https://github.com/kirkster96\">Cameron Kirk (@kirkster96)</a></li>\n   <li><a href=\"https://github.com/cho\">cho-thinkfree-com (@cho)</a></li>\n   <li><a href=\"https://github.com/christian.tzolov\">Christian Tzolov (@christian.tzolov)</a></li>\n   <li><a href=\"https://github.com/bottarde\">Eric Bottard (@bottarde)</a></li>\n   <li><a href=\"https://github.com/crad_on25\">Hyoseop Song (@crad_on25)</a></li>\n   <li><a href=\"https://github.com/academey\">Hyunjoon Park (@academey)</a></li>\n   <li><a href=\"https://github.com/ilayaperumalg\">Ilayaperumal Gopinathan (@ilayaperumalg)</a></li>\n   <li><a href=\"https://github.com/jason.huynh\">Jason Huynh (@jason.huynh)</a></li>\n   <li><a href=\"https://github.com/joshlong\">Josh Long (@joshlong)</a></li>\n   <li><a href=\"https://github.com/leehaut\">lance (@leehaut)</a></li>\n   <li><a href=\"https://github.com/bert825_work\">Li Huagang-简放视野 (@bert825_work)</a></li>\n   <li><a href=\"https://github.com/mark.pollack\">Mark Pollack (@mark.pollack)</a></li>\n   <li><a href=\"https://github.com/alexanderklmn\">Oleksandr Klymenko (@alexanderklmn)</a></li>\n   <li><a href=\"https://github.com/ai-afk\">SiBo Ai (@ai-afk)</a></li>\n   <li><a href=\"https://github.com/soby.chacko\">Soby Chacko (@soby.chacko)</a></li>\n   <li><a href=\"https://github.com/sunyuhan1998\">Sun Yuhan (@sunyuhan1998)</a></li>\n   <li><a href=\"https://github.com/waldemar.panas\">Waldemar Panas (@waldemar.panas)</a></li>\n   <li><a href=\"https://github.com/xfl12345\">xfl12345 (@xfl12345)</a></li>\n   <li><a href=\"https://github.com/zhouyanming\">Yanming Zhou (@zhouyanming)</a></li>\n   <li><a href=\"https://github.com/fatebugs\">随缘Bug (@fatebugs)</a></li>\n  </ul>\n  <h2 id=\"resources\"><a href=\"#resources\" aria-label=\"resources permalink\" class=\"anchor before\"></a>Resources</h2>\n  <p><a href=\"https://spring.io/projects/spring-ai/\">Project Page</a> | <a href=\"https://github.com/spring-projects/spring-ai\">GitHub</a> | <a href=\"https://github.com/spring-projects/spring-ai/issues\">Issues</a> | <a href=\"https://docs.spring.io/spring-ai/docs/1.0.3/reference/html\">Documentation</a> | <a href=\"https://stackoverflow.com/questions/tagged/spring-ai\">Stack Overflow</a></p>\n </body>\n</html>",
+  "aiSummary": "Spring AI 1.0.3 版本发布，重点关注稳定性改进和缺陷修复，以及 GemFire 向量存储集成和 AWS Bedrock API 更新等少量增强功能。",
+  "oneSentenceSummary": "Spring AI 1.0.3 版本发布，重点关注稳定性改进和缺陷修复，以及 GemFire 向量存储集成和 AWS Bedrock API 更新等少量增强功能。",
+  "summary": "Spring AI 团队宣布发布 1.0.3 版本，现已在 Maven Central 上提供。此补丁版本主要提供了 27 项改进、缺陷修复和文档更新，强调增强的稳定性和可用性。主要亮点包括：改进的 GemFire 向量存储元数据过滤；新的 BedrockChatOptions API 和 AWS Bedrock 代理修复；GraalVM Native Image 提前编译改进；以及 OpenAiApi 作为可注入的 Spring bean 的可用性。此外，流式传输和工具调用事件处理得到了改进，并通过更好的 IDE 自动完成功能提升了开发者体验。该团队已经在努力开发 4-5 周内发布的 1.1 GA 版本，重点是模型上下文协议 (MCP) 功能，并感谢众多社区贡献者。",
+  "mainPoints": [
+    {
+      "point": "Spring AI 1.0.3 提供了关键的稳定性和可用性增强。",
+      "explanation": "此补丁版本解决了 27 个问题，包括 18 项增强功能和 6 个缺陷修复，确保为 Spring 生态系统中的 AI 应用开发提供更强大、更可靠的基础。"
+    },
+    {
+      "point": "新功能扩展了集成能力和开发者体验。",
+      "explanation": "GemFire 向量存储元数据过滤、AWS Bedrock API 改进和更好的 GraalVM Native Image 支持等关键新增功能扩展了框架的实用性并简化了开发工作流程。"
+    },
+    {
+      "point": "Spring AI 团队正在积极推进具有 MCP 功能的 1.1 GA 版本的发布。",
+      "explanation": "这标志着持续的开发和清晰的路线图，表明未来的发展，特别是在模型上下文协议中，从而提升了框架的长期价值。"
+    }
+  ],
+  "keyQuotes": [
+    "此补丁版本提供了重要的稳定性改进和缺陷修复。",
+    "此补丁版本的重点是：改进、稳定性、文档。",
+    "GemFire 向量存储 - 元数据过滤查询，用于实现更精确的向量搜索操作。",
+    "AWS Bedrock - 新的 BedrockChatOptions API 和代理聊天模型修复。",
+    "Spring AI 团队在 PR 合并方面取得了良好进展，积压工作呈下降趋势。我们的目标是在 4-5 周内发布 1.1 GA 版本，主要关注模型上下文协议 (MCP) 功能。"
+  ],
+  "tags": [
+    "Spring AI",
+    "补丁发布",
+    "AI框架",
+    "Java",
+    "向量存储"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 349,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759276800000,
+  "publishDateStr": "2025-10-01",
+  "publishDateTimeStr": "2025-10-01 00:00:00"
+}

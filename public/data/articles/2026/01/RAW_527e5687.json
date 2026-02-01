@@ -1,0 +1,59 @@
+{
+  "id": "RAW_527e5687",
+  "title": "Skills 不就是脚本套个壳吗？我十几年前就玩 AutoIt 了",
+  "url": "https://baoyu.io/blog/2026/01/25/script-vs-agent-skills",
+  "date": "2026-01-25 00:00:00",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"mt-2 flex text-sm font-medium text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">作者：<span style=\"background-color:inherit;font-size:1rem;\">宝玉</span></span>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/cover.png\" alt=\"\"></p>\n   <p>程序员看到 Agent Skills，很多人第一反应是：“这不就是脚本换个壳吗？我用 Python 半小时就能写出来，还更稳定。”</p>\n   <p>比如安替老师：</p>\n   <blockquote>\n    <p>我怎么觉得现在 skills 炫耀的功能，基本上我很快就可以用 Claude Code 手搓一个 Python 程序完成了，而且更稳定、更快、随时可调整订制。当然 Skills 把和 AI 的互动简化了，不过我觉得它增加的不确定性、控制力弱、延迟等问题，超越了它带来的好处。</p>\n   </blockquote>\n   <p>还有更直接的：</p>\n   <blockquote>\n    <p>就他妈一堆自动化的 bat shell 脚本，JB 吹上天。吐了。我十几年前就玩 AutoIt 了。</p>\n   </blockquote>\n   <p>拿部分场景来比功能，确实不算错。但把 Skills 等同于脚本，就像把智能手机等同于能打电话的计算器，<strong>功能有重叠，本质变了</strong>。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/01-comparison-script-vs-skill.png\" alt=\"脚本 vs Skills 本质对比\"></p>\n   <p>先说定义。</p>\n   <p><strong>脚本</strong>：你写一段代码，告诉电脑先做 A，再做 B，最后做 C。固定动作，按步执行，遇错停下等你。</p>\n   <p><strong>Agent Skills</strong>：给 AI Agent 的技能包。核心是一个 <code>SKILL.md</code> 说明文档，写清楚什么情况该用、怎么做更专业、哪些步骤要调代码。还可能引用其他文档或脚本。Agent 读懂之后，自己决定该不该用、怎么用。</p>\n   <p><strong>三个关键差异：</strong></p>\n   <p><strong>1. 脚本对 Skills 不是必须的。</strong> 比如我做了一个“宝玉写作风格”的 Skill，只有一个 <code>SKILL.md</code>，写清楚风格要求，没有任何脚本。这活你让脚本做，还真做不了。</p>\n   <p><strong>2. Skill 里的脚本是 Agent 在调度。</strong> 传统脚本：你写代码 → 你调用 → 遇到问题停下来等你。Agent + Skills：你说目标 → Agent 理解 → Agent 调用 → 遇到问题 Agent 自己解决。</p>\n   <p>拿处理 PDF 举例。缺 <code>pdfplumber</code> 库？脚本报错退出，Agent 自己装一个。PDF 格式有问题？脚本报错退出，Agent 换个解析方式。代码有 bug？脚本报错退出，Agent 读报错信息，改代码重跑。</p>\n   <p>相当于你电脑上配了一个 <strong>AI 程序员</strong>，能看懂报错、装依赖、改代码、调试。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/02-flowchart-agent-self-healing.png\" alt=\"遇到错误：脚本 vs Agent\"></p>\n   <p><strong>3. Skills 用自然语言编排工作流。</strong> 脚本用 <code>if-else</code>、<code>for</code> 循环、<code>try-catch</code> 编排，你得把思路翻译成代码。Skills 用自然语言：什么情况下用、注意什么、出错怎么办。</p>\n   <p>这降低了门槛。以前只有程序员能写自动化，现在产品经理、运营、设计师，需求说得清楚就能做。</p>\n   <p>也提高了灵活性。比如我写了个“文章配图”的 Skill，不用代码判断文章类型，只在 <code>SKILL.md</code> 里写：<strong>配图服务于内容理解，技术内容优先流程图，观点内容优先概念图</strong>。Agent 自己判断当前文章该用哪种。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/03-comparison-nl-vs-code.png\" alt=\"编排方式的变革：代码 vs 自然语言\"></p>\n   <h2>确定性的事交给代码</h2>\n   <p>Skills 和脚本不是二选一。<strong>确定的事让代码做，不确定的让 Agent 做。</strong></p>\n   <p>我的写作工作流里有个格式化步骤：中文引号换全角、中英文之间加空格。规则明确，我写了个脚本。AI 润色完文章后自动调用，比让 AI 做更稳定，成本也更低。</p>\n   <p>怎么判断该用哪个？想想<strong>银行柜台</strong>和<strong>项目经理</strong>的区别。</p>\n   <p><strong>银行柜台</strong>：每一步有标准动作，合规严格，输出必须可预测。这种场景用脚本，Agent 反而添乱。</p>\n   <p><strong>项目经理</strong>：需求模糊，步骤随时调整，中间冒出各种意外。这才是 Agent 的舞台。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/04-scene-certainty-vs-uncertainty.png\" alt=\"什么时候用哪个？银行柜台 vs 项目经理\"></p>\n   <h2>为什么 Skills 突然火了？</h2>\n   <p>在 Agent Skills 之前，我就是脚本自动化爱好者，写了不少小工具。但有两个问题一直没解决。</p>\n   <p><strong>写脚本的成本不低。</strong> 我是专业程序员，也没写太多自动化脚本，因为把想法变成代码太繁琐。现在借助 Agent，几句话就自动搞定了。非程序员更是直接受益，就好比《哈利波特》里<strong>麻瓜突然获得了魔法</strong>。以前自动化是少数“魔法师”的专利，现在人人都能做。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/05-scene-automation-democracy.png\" alt=\"从专利到普惠：自动化的民主化\"></p>\n   <p><strong>分享脚本的成本更高。</strong> 我的脚本很少分享，因为基本只有自己能用。写兼容代码和文档的成本太高，不值得。</p>\n   <p>现在不一样了。我的 baoyu-skills 刚发布时很多在 Windows 下跑不顺，但网友运行时 Agent 会主动修复兼容问题。热心网友还把修改提成 PR，帮到了更多人。</p>\n   <p><strong>Skills 的进化也快。</strong> 一方面背后的 Agent 模型在不断变强。另一方面，Skills 的反馈循环短得多。传统软件要走产品经理 → 开发 → 测试的长链条，用户拿到可能不是想要的。Skills 是每个人量身定制，一边用一边改，Agent 知道全部上下文，遇到问题马上定位，根据反馈实时调整。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/06-framework-skills-evolution.png\" alt=\"Skills 进化飞轮\"></p>\n   <h2>“苦涩的教训”</h2>\n   <p>强化学习之父 Rich Sutton 在 2019 年写过一篇著名文章《The Bitter Lesson》。核心观点：<strong>70 年人工智能研究证明，通用方法最终总是赢。</strong></p>\n   <p>他回顾了国际象棋、围棋、语音识别、计算机视觉的历史，发现一个规律：研究者试图把专家知识硬编码进系统，短期有效，长期却停滞甚至阻碍进步。真正的突破来自<strong>让机器自己搜索和学习</strong>。</p>\n   <p>脚本是“把你的思考过程固化成代码”，Skills 是“告诉 AI 目标和约束，让它自己想办法”。前者是 <strong>hard-coded</strong>，后者是 <strong>learned</strong>。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/07-comparison-hardcoded-vs-learned.png\" alt=\"苦涩的教训：Hard-coded vs Learned\"></p>\n   <p>“我十几年前就玩 AutoIt 了”，没错。但今天变了：<strong>AI 能理解自然语言、能动态规划、能从错误中学习。</strong></p>\n   <h2>别忘了安全</h2>\n   <p>Skills 把脚本加说明书打包分发，本质上是<strong>新的依赖生态，新的攻击面</strong>。恶意 Skills 可能引入漏洞、诱导外联，甚至数据外泄。只装可信来源的 Skills，装之前审计文件和脚本内容。</p>\n   <h2>真正的分野</h2>\n   <p>“我用 Python 半小时就能写出来”，没错。但写完只有你能用，你愿意花时间写文档、做兼容、处理边界情况吗？大概率不愿意。</p>\n   <p>“十几年前就玩 AutoIt 了”，也没错。但十几年过去了，AutoIt 还是那批人在用。</p>\n   <p>Skills 的意义不在于能做什么新事情，而在于<strong>谁能做这些事情</strong>。以前自动化是程序员的特权，现在是每个人的工具。以前写脚本要考虑十几种边界情况，现在 Agent 帮你兜底。以前分享脚本是技术输出，现在分享 Skills 是知识传递。</p>\n   <p>程序员看 Skills 觉得没技术含量，就像厨师看预制菜觉得没灵魂。但餐饮业的变革不是让每个人都变成厨师，而是让不会做饭的人也能吃上还不错的菜。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-25/script-vs-agent-skills/08-infographic-real-divide.png\" alt=\"真正的分野\"></p>\n   <p>Sutton 那篇文章叫“苦涩的教训”。苦涩在哪？研究者花几十年精心设计的专家系统，被暴力计算加通用学习碾压了。那些精巧的领域知识、引以为傲的工程技巧，在算力和数据面前不值一提。</p>\n   <p>你花十年练就的脚本技巧，可能正在被一种你不太看得上的新范式取代。承认这一点确实苦涩，但早点看清楚，总比后知后觉强。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文深度辨析了 Agent Skills 与传统脚本的本质区别，指出 Skills 是由 AI 调度、以自然语言编排的动态能力包，标志着自动化从程序员特权向全民普惠的范式转移。",
+  "oneSentenceSummary": "本文深度辨析了 Agent Skills 与传统脚本的本质区别，指出 Skills 是由 AI 调度、以自然语言编排的动态能力包，标志着自动化从程序员特权向全民普惠的范式转移。",
+  "summary": "文章针对开发者群体中“Skills 只是脚本套壳”的普遍质疑进行了深度回应。作者宝玉指出，脚本是按部就班的固定指令，而 Agent Skills 是以 `SKILL.md` 为核心的智能技能包，其本质差异在于：Skills 不必依赖脚本、由 Agent 动态调度并具备自我修复能力、且使用自然语言进行逻辑编排。文章强调，确定的任务应交给代码（脚本），而不确定的、需动态规划的任务则是 Agent 的舞台。通过引用 Rich Sutton 的《苦涩的教训》，作者论证了从“硬编码专家知识”向“通用学习与搜索”转化的必然性，并指出 Skills 的核心价值在于降低了自动化的门槛，实现了“自动化的民主化”，让非技术人员也能通过知识传递而非单纯的代码编写来掌控复杂流程。",
+  "mainPoints": [
+    {
+      "point": "Agent Skills 与脚本的本质区别在于调度主体与编排方式的变革。",
+      "explanation": "脚本是开发者预设的固定逻辑，而 Skills 是给 Agent 的说明书，由 AI 根据目标自主决定调用时机，并能处理运行中的报错与环境依赖。"
+    },
+    {
+      "point": "确定的事交给代码，不确定的事交给 Agent。",
+      "explanation": "脚本像银行柜台，追求高确定性和合规；Agent 像项目经理，擅长处理模糊需求和意外状况，两者应结合使用而非二选一。"
+    },
+    {
+      "point": "Skills 实现了自动化的“民主化”，降低了开发与分享的门槛。",
+      "explanation": "自然语言编排让非程序员也能创建自动化工具，且 Agent 的理解能力解决了传统脚本难以跨平台兼容和维护成本高的痛点。"
+    },
+    {
+      "point": "AI 时代的“苦涩教训”：通用方法最终会战胜精巧的专家系统。",
+      "explanation": "过度依赖硬编码的脚本技巧在具备动态规划能力的 AI 面前显得僵化，拥抱能自我学习和搜索的通用范式才是未来趋势。"
+    }
+  ],
+  "keyQuotes": [
+    "把 Skills 等同于脚本，就像把智能手机等同于能打电话的计算器，功能有重叠，本质变了。",
+    "脚本是‘把你的思考过程固化成代码’，Skills 是‘告诉 AI 目标和约束，让它自己想办法’。",
+    "Skills 的意义不在于能做什么新事情，而在于谁能做这些事情。",
+    "你花十年练就的脚本技巧，可能正在被一种你不太看得上的新范式取代。",
+    "以前自动化是少数‘魔法师’的专利，现在人人都能做。"
+  ],
+  "tags": [
+    "AI Agent",
+    "Agent Skills",
+    "自动化脚本",
+    "软件工程范式",
+    "自然语言编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 88,
+  "wordCount": 2234,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1769299200000,
+  "publishDateStr": "01-25",
+  "publishDateTimeStr": "2026-01-25 00:00:00"
+}

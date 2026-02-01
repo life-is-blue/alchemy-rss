@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5c1ce86e",
+  "title": "英伟达推出 OmniVinci：一款用于跨模态理解的仅供研究的 LLM（大型语言模型）",
+  "url": "https://www.infoq.com/news/2025/10/nvidia-omnivinci/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-28 07:24:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>NVIDIA has introduced <a href=\"https://huggingface.co/papers/2510.15870\">OmniVinci</a>, a large language model designed to understand and reason across multiple input types — including text, vision, audio, and even robotics data. The project, developed by NVIDIA Research, aims to push machine intelligence closer to human-like perception by unifying how models interpret the world across different sensory streams.</p>\n   <p>OmniVinci combines architectural innovations with a large-scale synthetic data pipeline. According to the research paper, the system introduces three key components: OmniAlignNet, which aligns vision and audio embeddings into a shared latent space; Temporal Embedding Grouping, which captures how video and audio signals change relative to one another; and Constrained Rotary Time Embedding, which encodes absolute temporal information to synchronize multi-modal inputs.</p>\n   <p>The team also built a new data synthesis engine producing over 24 million single- and multi-modal conversations, designed to teach the model how to integrate and reason across modalities. Despite using only 0.2 trillion training tokens—one-sixth of what Qwen2.5-Omni required—OmniVinci reportedly outperforms it across key benchmarks:</p>\n   <ul>\n    <li>+19.05 on DailyOmni for cross-modal understanding,</li>\n    <li>+1.7 on MMAR for audio tasks, and</li>\n    <li>+3.9 on Video-MME for vision performance.</li>\n   </ul>\n   <p><img alt=\"Omnivinci benchmark\" style=\"width:100%;height:1000px;\" data-src=\"https://www.infoq.com/news/2025/10/nvidia-omnivinci/news/2025/10/nvidia-omnivinci/en/resources/1Zrzut ekranu 2025-10-26 o 16.19.58-1761492800839.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/nvidia-omnivinci/en/resources/1Zrzut ekranu 2025-10-26 o 16.19.58-1761492800839.png\" rel=\"share\">\n    <br>\n    <em>Source: https://huggingface.co/nvidia/omnivinci</em></p>\n   <p>NVIDIA researchers describe these results as evidence that “modalities reinforce one another,” improving both perception and reasoning when models are trained to process sight and sound together. Early experiments also extend into applied domains like robotics, medical imaging, and smart factory automation, where cross-modal context could boost decision accuracy and reduce latency.</p>\n   <p>However, the release has not been without criticism. Although the paper refers to OmniVinci as open-source, it is released under NVIDIA’s OneWay Noncommercial License, which restricts commercial use. This sparked debate among researchers and developers.\n    <br>\n    As Julià Agramunt, a data researcher, <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7386011085474066432?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7386011085474066432%2C7387102417495965696%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287387102417495965696%2Curn%3Ali%3AugcPost%3A7386011085474066432%29\">wrote</a> on LinkedIn:</p>\n   <blockquote>\n    <p>Sure, NVIDIA put in the money and built the model. But releasing a ‘research-only’ model into the open and reserving commercial rights for themselves isn’t open-source, it’s digital feudalism. The community does the free labor and improves the model, they keep the profit. That’s not innovation sharing, it’s value extraction dressed up as generosity.</p>\n   </blockquote>\n   <p>On Reddit, one user <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1ob7q6m/comment/nkmtal8/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">noted</a> the lack of accessibility at launch:</p>\n   <blockquote>\n    <p>Does anyone have access to this yet? Trying to see their bench results, but it’s locked behind them accepting users.</p>\n   </blockquote>\n   <p>For those who do gain access, NVIDIA provides setup scripts and examples through Hugging Face, showing how to run inference on video, audio, or image data directly with Transformers. The codebase builds on NVILA, NVIDIA’s multi-modal foundation, and supports full GPU acceleration for real-time applications.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"NVIDIA Introduces OmniVinci, a Research-Only LLM for Cross-Modal Understanding\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/nvidia-omnivinci/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761636240000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "英伟达推出 OmniVinci，一款仅供研究的多模态 LLM（大型语言模型），展示了最先进的跨模态理解能力，但其商业用途受到限制。",
+  "oneSentenceSummary": "英伟达推出 OmniVinci，一款仅供研究的多模态 LLM（大型语言模型），展示了最先进的跨模态理解能力，但其商业用途受到限制。",
+  "summary": "本文报道了英伟达最新推出的仅供研究使用的大型语言模型 OmniVinci，该模型专为全面跨模态理解而设计，能够处理文本、视觉、音频和机器人技术等多种类型的数据。OmniVinci 由英伟达研究院开发，采用了 OmniAlignNet、时间嵌入分组和约束旋转时间嵌入等创新架构，并配备了一个能够生成超过 2400 万个对话的合成数据管道。据报道，在关键基准测试中，它以更少的训练令牌优于 Qwen2.5-Omni。然而，该模型以单向非商业许可发布，引发了社区对其“开源”标签和可访问性的质疑。英伟达在 Hugging Face 上为获得授权的用户提供了安装脚本和示例，并支持完整的 GPU 加速。",
+  "mainPoints": [
+    {
+      "point": "OmniVinci 统一了文本、视觉、音频、机器人技术等各种数据类型，以实现类人的跨模态理解。",
+      "explanation": "该模型整合了多种感官输入，是朝着更全面的人工智能感知迈出的重要一步，这对于跨不同模态进行高级推理和交互至关重要。"
+    },
+    {
+      "point": "架构创新和大型合成数据管道使 OmniVinci 具有卓越的性能。",
+      "explanation": "OmniAlignNet、时间嵌入分组和专用数据引擎等关键组件使该模型能够高效地对齐和推理跨模态数据，从而以更少的令牌实现最先进的结果。"
+    },
+    {
+      "point": "尽管 OmniVinci 贴有“开源”标签，但其限制性的非商业许可引发了争议。",
+      "explanation": "虽然该模型在技术上可用于研究，但许可限制了其商业应用和可访问性，引发了关于真正开源原则和更广泛的开发者实用性的讨论。"
+    }
+  ],
+  "keyQuotes": [
+    "OmniVinci 是一个大型语言模型，旨在理解和推理多种输入类型，包括文本、视觉、音频，甚至机器人数据。",
+    "模态之间相互加强，当模型经过训练以同时处理视觉和声音时，可以提高感知和推理能力。",
+    "将“仅供研究”的模型发布到开放环境，并为自己保留商业权利，并非开源，而是一种变相的商业垄断。"
+  ],
+  "tags": [
+    "多模态 LLM",
+    "英伟达研究院",
+    "跨模态理解",
+    "OmniVinci",
+    "人工智能架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 407,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761636240000,
+  "publishDateStr": "2025-10-28",
+  "publishDateTimeStr": "2025-10-28 07:24:00"
+}

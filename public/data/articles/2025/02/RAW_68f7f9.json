@@ -1,0 +1,53 @@
+{
+  "id": "RAW_68f7f9",
+  "title": "200 多行代码，超低成本复现 DeepSeek R1「Aha Moment」！复旦大学开源",
+  "url": "https://www.jiqizhixin.com/articles/2025-02-18-2",
+  "date": "2025-02-18 02:24:56",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <blockquote data-author-name=\"\" data-content-utf8-length=\"166\" data-source-title=\"\" data-type=\"2\" data-url=\"\"><section><section>AIxiv专栏是机器之心发布学术、技术内容的栏目。过去数年，机器之心AIxiv专栏接收报道了2000多篇内容，覆盖全球各大高校与企业的顶级实验室，有效促进了学术交流与传播。如果您有优秀的工作想要分享，欢迎投稿或者联系报道。投稿邮箱：liyazhou@jiqizhixin.com；zhaoyunfeng@jiqizhixin.com\n    </section>\n   </section>\n  </blockquote>\n  <section>\n   <strong>本文是复旦大学知识工场实验室肖仰华教授、梁家卿青年副研究员科研团队的最新研究成果，他们用简洁的代码高效复现了 R1-zero 的自发反思能力。</strong>\n  </section>\n  <section>\n   在关于 DeepSeek 的文章中，我们会多次听到「Aha Moment」这个词。它指的是模型在训练过程中经历的一种顿悟时刻，表现为模型突然展现出类似人类的自我反思和策略调整能力。\n  </section>\n  <section>\n   <img data-imgfileid=\"503471577\" data-ratio=\"0.6388888888888888\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43fb213c-5b5a-4d0d-119a-babbd96c9200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/a7475f0e-e5bb-45e2-bafa-6f4dca471671/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; DeepSeek 论文中提到的 Aha Moment。</sup></em>\n  </section>\n  <section>\n   DeepSeek-R1-zero 经过强化学习实现了大模型顿悟时刻的自发涌现，引发了大量对其方案的解读与复现工作。\n  </section>\n  <section>\n   其中，基于 GRPO（ Group Relative Policy Optimization）强化学习方案尤其受到关注。业界先后开源了多个基于 GRPO 算法的 R1-zero 复现项目。然而，这些复现项目严重依赖一些复杂代码框架，有着较高的代码实现复杂度，对部署环境存在较高依赖，资源利用率不高，代码可读性与可维护性仍存在改进空间。\n  </section>\n  <section>\n   对此，复旦大学知识工场实验室肖仰华教授、梁家卿青年副研究员科研团队基于 GRPO 算法思想高效复现了 R1-zero 自发反思能力。目前，该项目（Simple-GRPO）的第一版代码实现已经开源并提交 Github。\n  </section>\n  <section>\n   <img data-imgfileid=\"503471578\" data-ratio=\"0.8870370370370371\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/282fdfe1-aaf5-45e4-5030-dca02da1ec00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/cc0287e2-a26b-4589-85d1-9a33d48b4532/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   代码地址：https://github.com/lsdefine/simple_GRPO。\n  </section>\n  <section>\n   该项目相对于现有开源的 R1-zero 复现具有以下优势：\n  </section>\n  <section>\n   <strong>代码简洁，依赖简单</strong><strong>，</strong>只需要 200 多行<strong>；</strong>\n  </section>\n  <section>\n   <strong>资源消耗低</strong>，通过模型解耦与分离进一步降低算力需求，该项目支持在一张 A800 (80G) 加一张 3090 (24G) 完成 7B 模型的训练。根据 AutoDL 平台计费标准，一张 A800 (80G) 5.98 元 / 时，一张 3090 (24G) 1.32 元 / 时。以项目作者经验，模型在这样的算力平台下，训练 1h 模型就能出现 aha moment，折合人民币 7.3 元，单次实验成本压缩至奶茶价格区间。\n  </section>\n  <section>\n   <strong>项目介绍&nbsp;</strong>\n  </section>\n  <section>\n   本项目代码简单，GRPO 算法实现仅有 200 多行代码，且仅依赖基础的深度学习代码库，如 deepspeed 和 torch，而无需 ray 等复杂框架。具体实现细节如下：\n  </section>\n  <section>\n   <strong>① 参考模型分离</strong>：\n  </section>\n  <section>\n   在实现过程中，参考模型（reference model）被解耦，允许其在不同的 GPU 上运行（甚至可以运行在 3090 显卡上）。这避免了将参考模型和训练模型放在同一个 GPU 上，防止 torch 的多进程机制创建多个副本，避免显存浪费，并使得在 A800（80G）上训练 7B 模型成为可能。\n  </section>\n  <section>\n   <strong>② 核心损失计算</strong>：\n  </section>\n  <section>\n   损失计算公式基于 Hugging Face 的 trl 实现。\n  </section>\n  <section>\n   <strong>③ 训练环境与过程</strong>\n  </section>\n  <section>\n   项目在 1 张 A800（80G）显卡上用 Zero-Stage 2 做优化，使用另一张 A800（80G）显卡进行参考模型的推理，参考模型分离使得 GRPO 的训练更加高效。\n  </section>\n  <section>\n   在以上训练环境中，Qwen2.5-3B 训练 60 步需要 12 分 34 秒，Qwen2.5-7B 训练 60 步需要 16 分 40 秒。其中在前 30 步优化中，Qwen2.5-7B 和 Qwen2.5-3B 的输出内容中，均出现了「顿悟时刻」现象。示例如下：\n  </section>\n  <ul>\n   <li>\n    <section>\n     Qwen2.5-3B（步骤 20）\n    </section></li>\n  </ul>\n  <section>\n   <img data-imgfileid=\"503471579\" data-ratio=\"0.0712962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dcdb8d4e-6713-40bd-bc9e-38bd488e4c00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/1b21275e-30f4-49c2-b40a-d3365f05bd97/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-imgfileid=\"503471580\" data-ratio=\"0.3472222222222222\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5694ee0f-1593-44ec-6e0c-d1c452a38f00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/bba00431-4950-4001-874e-a9453ef37897/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   其中文翻译如下：\n  </section>\n  <section>\n   「&lt;think&gt; ... 要找出卡姆登画的鸡蛋比阿诺德多多少，我们从卡姆登画的鸡蛋数量中减去阿诺德画的鸡蛋数量。所以，21-28 = -7。<strong>然而，这个结果在问题的背景下没有意义，因为卡姆登画的鸡蛋不可能比阿诺德少。让我们重新考虑最初的解决方案步骤：我们应该验证关于卡姆登和莎拉的鸡蛋之间关系的初始假设是否正确 。</strong>... &lt;/think&gt; &lt;answer&gt;-7&lt;/answer&gt;」\n  </section>\n  <ul>\n   <li>\n    <section>\n     Qwen2.5-7B（步骤 20）\n    </section></li>\n  </ul>\n  <section>\n   <img data-imgfileid=\"503471581\" data-ratio=\"0.11851851851851852\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/74d700e2-5a84-483e-013c-de8cc6367f00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/f336d792-7458-49b7-baf2-1d05ca70e43d/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-imgfileid=\"503471582\" data-ratio=\"0.42314814814814816\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b51a06b2-273d-44d1-c6b7-09ffd47afa00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/bcb0e99a-7268-430d-af4c-db899aa1ea1c/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   其中文翻译如下：\n  </section>\n  <section>\n   「&lt;think&gt; ... 因此，Joanne 从普通树上摘了 350 个苹果。<strong>但是，这似乎不对，因为总数应该是 500 个，而我们已经计算了 150 个，只剩下 350 个普通树上的苹果，这与总数相矛盾。让我们重新评估一下&nbsp;</strong>。... &lt;/think&gt; &lt;answer&gt;350&lt;/answer&gt;」\n  </section>\n  <section>\n   <strong>实验结果&nbsp;</strong>\n  </section>\n  <section>\n   使用 Qwen2.5-3B 和 Qwen2.5-7B 作为基础模型，测试了模型训练过程中正确率（左图）和格式遵循能力（右图）的变化情况，比较符合预期。\n  </section>\n  <ul>\n   <li>\n    <section>\n     Qwen2.5-3B：\n    </section>\n    <section>\n     <img data-galleryid=\"\" data-imgfileid=\"503471583\" data-ratio=\"0.32685185185185184\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2dd3b6fa-27a3-4e96-c4b9-cf4651225900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/28d17950-cb66-42ce-87d1-5270319616fe/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n    </section></li>\n  </ul>\n  <section>\n   在 GSM8K 和 Math 混合数据集进行训练，从上图可以看出，Qwen2.5-3B 的准确率在经历 5 步的优化后能稳定在 60% 以上，最高能达到 70% 左右；格式遵循能力在 30 步以后接近 100%.\n  </section>\n  <ul>\n   <li>\n    <section>\n     Qwen2.5-7B\n    </section></li>\n  </ul>\n  <section>\n   <img data-galleryid=\"\" data-imgfileid=\"503471584\" data-ratio=\"0.3194444444444444\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b94f0ded-3b58-4ea0-cf7b-8e3996800e00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/83ddacab-cf24-44f9-9551-8474bfccaade/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   在 GSM8K 数据集上进行训练，从上图可以看出，Qwen2.5-7B 的无论是准确率还是格式遵循能力都能在三十步以内快速收敛，准确率（左图）始终保持在 90% 以上，格式遵循能力（右图）到达 100%.\n  </section>\n  <section>\n   <strong>改进方向</strong>\n  </section>\n  <section>\n   近期本项目将进一步推出以下方向的优化版本，敬请关注。\n  </section>\n  <section>\n   <strong>组内答案同质性问题</strong>\n  </section>\n  <section>\n   根据 GRPO 算法中的分组策略，当组内答案全部正确或全为错误时，奖励函数无法有效分配差异化奖励，强化学习将缺乏对比性的训练信号，导致模型难以收敛。后续将在训练过程中实时监控答案分布，对同质化的答案进行重新采样和分组，以提供有效的对比信号。\n  </section>\n  <section>\n   <strong>长思维链（CoT）显存占用问题</strong>\n  </section>\n  <section>\n   当模型生成较长的思维链（CoT）时，由于文本序列长度较长，显存占用会显著增加。对此，后续考虑拆分组别，减小批次大小，或对长序列分阶段处理，以减小训练过程中的 GPU 内存开销，提升训练效率。\n  </section>\n \n",
+  "aiSummary": "复旦大学开源 Simple-GRPO，低成本复现 DeepSeek R1 自发反思，降低 7B 模型训练门槛。",
+  "oneSentenceSummary": "复旦大学开源 Simple-GRPO，低成本复现 DeepSeek R1 自发反思，降低 7B 模型训练门槛。",
+  "summary": "复旦大学知识工场实验室开源了 Simple-GRPO 项目，旨在以简洁的代码高效复现 DeepSeek R1-zero 的自发反思能力（Aha Moment）。该项目基于 GRPO 强化学习算法，仅用 200 多行代码，依赖简单，资源消耗低，通过模型解耦与分离，支持在一张 A800 和一张 3090 上完成 7B 模型的训练，单次实验成本压缩至“奶茶价格”区间。实验结果表明，Qwen2.5-3B 和 Qwen2.5-7B 模型在训练初期即可涌现自发反思能力。未来，该项目将致力于解决组内答案同质性问题和长思维链带来的显存占用问题。",
+  "mainPoints": [
+    {
+      "point": "Simple-GRPO 以极简代码和低资源消耗实现了 R1-zero 的自发反思能力复现。",
+      "explanation": "该项目仅用 200 多行代码实现了 GRPO 算法，并通过模型解耦降低了资源消耗，方便研究者进行学习和实验。"
+    },
+    {
+      "point": "参考模型分离有效降低了训练过程中的显存占用。",
+      "explanation": "通过将参考模型部署在单独的 GPU 上，避免了显存浪费，使得在较低算力资源上训练 7B 模型成为可能。"
+    },
+    {
+      "point": "实验结果表明 Qwen2.5 系列模型在训练初期即可涌现自发反思能力。",
+      "explanation": "在少量步骤的训练后，Qwen2.5-3B 和 Qwen2.5-7B 模型均展现出类似人类的自我反思和策略调整能力。"
+    }
+  ],
+  "keyQuotes": [
+    "在关于 DeepSeek 的文章中，我们会多次听到「Aha Moment」这个词。它指的是模型在训练过程中经历的一种顿悟时刻，表现为模型突然展现出类似人类的自我反思和策略调整能力。",
+    "该项目相对于现有开源的 R1-zero 复现具有以下优势：代码简洁，依赖简单，只需要 200 多行；资源消耗低。",
+    "以项目作者经验，模型在这样的算力平台下，训练 1h 模型就能出现 aha moment，折合人民币 7.3 元，单次实验成本压缩至奶茶价格区间。"
+  ],
+  "tags": [
+    "大语言模型",
+    "强化学习",
+    "自发反思",
+    "DeepSeek",
+    "GRPO"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 93,
+  "wordCount": 1952,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739845496000,
+  "publishDateStr": "2025-02-18",
+  "publishDateTimeStr": "2025-02-18 02:24:56"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_30ef61f6",
+  "title": "SAM 3：为现代视觉工作流程引入更强大的分割架构",
+  "url": "https://www.infoq.com/news/2025/11/meta-sam3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-26 05:09:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Meta has released <a href=\"https://ai.meta.com/sam3/\">SAM 3</a>, the latest version of its Segment Anything Model and the most substantial update to the project since its initial launch. Built to provide more stable and context-aware segmentation, the model offers improvements in accuracy, boundary quality, and robustness to real-world scenes, aiming to make segmentation more reliable across research and production systems.</p>\n   <p>SAM 3 has a redesigned architecture that better handles fine structures, overlapping objects, and ambiguous areas. It produces more consistent masks for small objects and cluttered environments, which earlier versions struggled with. The update also includes a revised training dataset to enhance coverage and reduce failures in challenging conditions like unusual lighting and occlusions.</p>\n   <p>Performance enhancements extend to speed as well. SAM 3 delivers faster inference on both GPUs and mobile-class hardware, reducing latency for interactive use and batch processing. The model ships with optimized runtimes for PyTorch, ONNX, and web execution, reflecting the system’s widespread adoption in browsers, creative tools, and robotics pipelines. These integrations are designed to simplify deployment without requiring substantial changes to existing workflows.</p>\n   <p>Another focus of the release is improved contextual understanding. SAM 3 incorporates mechanisms for interpreting relationships between objects within a scene, not just their spatial boundaries. The result is segmentation that aligns more closely with human perception of object coherence, helping downstream tasks that rely on cleaner or semantically meaningful masks.</p>\n   <p>The research team notes that this update brings the model closer to functioning as a general-purpose component within multimodal systems, where segmentation is increasingly treated as an infrastructural capability rather than a specialized module.</p>\n   <p>Community reaction has been mixed but pragmatic. One Reddit user <a href=\"https://www.reddit.com/r/MachineLearning/comments/1p1cfvx/comment/npp2i98/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">noted</a>:</p>\n   <blockquote>\n    <p>It seems like a software update, not a new model.</p>\n   </blockquote>\n   <p>Another <a href=\"https://www.reddit.com/r/MachineLearning/comments/1p1cfvx/comment/npps9xk/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">pointed</a> to a change in capability availability:</p>\n   <blockquote>\n    <p>Text prompting in SAM2 was very experimental, and the public model didn't support it. Now the public model seems to have it, which is a pretty big step for a lot of practitioners.</p>\n   </blockquote>\n   <p>Beyond interactive use cases, SAM 3 is intended to support a wide range of downstream applications, including AR/VR scene understanding, scientific imaging, video editing, automated labeling, and robotics perception. Meta has positioned the model as a component that fits naturally into existing vision pipelines, rather than requiring dedicated infrastructure or task-specific training.</p>\n   <p>SAM 3 is available now under an open-source license, including model weights, documentation, and deployment examples. By combining a more capable architecture with broader platform compatibility, the release strengthens SAM's role as a general tool for segmentation across research and industry settings. Anyone interested in the deeper details — from model design to dataset construction — can read the <a href=\"https://ai.meta.com/research/publications/sam-3-segment-anything-with-concepts/\">official paper</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"SAM 3 Introduces a More Capable Segmentation Architecture for Modern Vision Workflows\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/meta-sam3/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764133740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 推出的 SAM 3 采用了重新设计的架构，实现了更稳定、上下文感知和更准确的图像分割。这增强了性能，并为现代视觉工作流程中更广泛的应用提供了可能。",
+  "oneSentenceSummary": "Meta 推出的 SAM 3 采用了重新设计的架构，实现了更稳定、上下文感知和更准确的图像分割。这增强了性能，并为现代视觉工作流程中更广泛的应用提供了可能。",
+  "summary": "Meta 发布了 SAM 3，这是对其万物分割模型的一项重大更新，采用重新设计的架构，提供更稳定、上下文感知的分割。新版本在准确性、边界质量和鲁棒性方面均有显著改进，尤其擅长处理复杂场景、精细结构、重叠对象和混乱环境中的模糊区域，部分归功于经过修订的训练数据集。除了增强的准确性，SAM 3 还在图形处理器和移动硬件上实现了更快的推理速度，并支持针对 PyTorch、ONNX 和 Web 执行进行优化的运行时，从而简化了跨平台的部署。一项关键的进步是其改进的上下文理解能力，使其能够理解对象之间的关系，与人类的感知更加一致。这使得 SAM 3 成为多模态系统的通用组件，广泛应用于 AR/VR 场景理解、科学成像、视频编辑和机器人感知等领域。SAM 3 在开源许可下发布，包含模型权重和文档，巩固了其作为研究和工业环境中分割基础工具的地位。",
+  "mainPoints": [
+    {
+      "point": "SAM 3 采用重新设计的架构，显著提升分割准确性和鲁棒性。",
+      "explanation": "新的架构和修订后的训练数据集使 SAM 3 能够更好地处理复杂的场景、精细的结构和遮挡，从而在各种真实条件下实现更精确和一致的分割掩码。"
+    },
+    {
+      "point": "增强的上下文理解使 SAM 3 成为多模态系统的通用组件。",
+      "explanation": "通过理解对象之间的关系，该模型与人类的感知更加一致，并逐渐发展成为各种下游视觉任务的基础设施能力，而不仅仅是一个专门的模块。"
+    },
+    {
+      "point": "显著的性能改进和广泛的部署兼容性是关键亮点。",
+      "explanation": "在各种硬件上更快的推理速度，以及针对多个平台优化的运行时，简化了集成到现有工作流程的过程，从而减少了交互式和批处理应用程序的延迟。"
+    }
+  ],
+  "keyQuotes": [
+    "该模型旨在提供更稳定和上下文感知的分割，从而提高了准确性、边界质量以及对真实场景的鲁棒性。这使得分割在研究和生产系统中更加可靠。",
+    "SAM 3 具有重新设计的架构，可以更好地处理精细的结构、重叠的对象和模糊的区域。",
+    "研究团队指出，此更新使该模型更接近于在多模态系统中充当通用组件，在这些系统中，分割越来越多地被视为一种基础设施能力，而不是专门的模块。",
+    "SAM2 中的文本提示非常具有实验性，并且公共模型不支持它。现在公共模型已经支持文本提示功能，这对于许多开发者来说是相当重要的一步。",
+    "SAM 3 现已在开源许可下提供，包括模型权重、文档和部署示例。"
+  ],
+  "tags": [
+    "图像分割",
+    "计算机视觉",
+    "深度学习",
+    "Meta",
+    "多模态人工智能"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 435,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764133740000,
+  "publishDateStr": "2025-11-26",
+  "publishDateTimeStr": "2025-11-26 05:09:00"
+}

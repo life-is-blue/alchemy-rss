@@ -1,0 +1,55 @@
+{
+  "id": "RAW_2c5303e9",
+  "title": "报告：LLM 在事件管理中尚不能取代 SRE",
+  "url": "https://www.infoq.com/news/2025/09/clickhouse-llm-sre-report/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-27 22:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://clickhouse.com/blog/llm-observability-challenge\">A study by ClickHouse</a> found that large language models (LLMs) can't yet replace Site Reliability Engineers (SREs) for tasks such as finding the root causes of incidents. AI technology is, however, advancing significantly towards this.</p>\n   <p>The study, conducted by Lionel Palacin and Al Brown, tested five leading models against real-world observability data to determine whether AI could autonomously identify production issues. The results suggest that whilst LLMs show great promise as assistive tools, they fall short of completely replacing human engineers.</p>\n   <p>\"Autonomous RCA is not there yet,\" the authors explained. \"The promise of using LLMs to find production issues faster and at lower cost fell short in our evaluation, and even GPT-5 did not outperform the others.\"</p>\n   <p><img alt=\"LLM Observability Diagram, courtesy of ClickHouse\" style=\"width: 600px; height: 382px;\" data-src=\"https://www.infoq.com/news/2025/09/clickhouse-llm-sre-report/news/2025/09/clickhouse-llm-sre-report/en/resources/1llm_observability_diagram_2_f7bc121f65-1759009721416.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/clickhouse-llm-sre-report/en/resources/1llm_observability_diagram_2_f7bc121f65-1759009721416.png\" rel=\"share\"></p>\n   <p>The research team tested Claude Sonnet 4, OpenAI GPT-o3, OpenAI GPT-4.1, and Gemini 2.5 Pro against four datasets containing distinct anomalies from the OpenTelemetry demo application. Each model was given access to observability data and asked to identify root causes using a simple prompt: \"You're an Observability agent and have access to OpenTelemetry data from a demo application. Users have reported issues using the application, can you identify what is the issue, the root cause and suggest potential solutions?\"</p>\n   <p>The results were mixed across all of the models. Some of them successfully identified some issues, but none found root causes consistently without some human guidance. In scenarios involving payment failures linked to specific user loyalty levels, both Claude Sonnet 4 and OpenAI o3 managed to identify the problem after the initial prompt. However, with more complex issues like cache and product catalogue errors, the AI needed some degree of human intervention to get to the right answer.</p>\n   <p>\"This reflects a common pattern: the model tends to lock onto a single line of reasoning and doesn't explore other possibilities,\" the researchers noted when describing Claude Sonnet 4's performance on cache-related issues.</p>\n   <p>Using different scenarios also produced variations in performance. For example, Gemini 2.5 Pro&nbsp; excelled at identifying a specific product catalogue issue but struggled with cache-related problems. It also hallucinated and doubled-down on incorrect information. \"It then began to formulate an imaginary cause (for which it had no evidence), and began trying to prove its case,\" the authors observed regarding Gemini's tendency to create unfounded theories.</p>\n   <p>Cost and efficiency varied dramatically between models and scenarios. Token usage ranged from thousands to millions, making cost prediction difficult. Investigation times spanned from just over a minute to 45 minutes, whilst costs per investigation ranged from $0.10 to nearly $6.</p>\n   <p>When OpenAI released GPT-5 during the study period, the researchers tested it against the same scenarios. Despite being the newest model, GPT-5 performed similarly to existing models, essentially matching OpenAI o3's results whilst using fewer tokens.</p>\n   <p>There were some limitations in the testing approach that the team used. They used relatively simple datasets that represented hour-long periods of telemetry data which had anomalies injected into them that were easier to detect than real production problems. The team also didn't fine-tune their prompts with content enrichment or other techniques that might have improved performance. The study did however find that LLMs excelled at writing root cause analysis reports, with all models producing strong initial drafts. \"We found the results to be consistently strong across different models and anomaly types,\" the researchers reported.</p>\n   <p>The researchers concluded that the current optimal approach combines human expertise with AI assistance rather than full automation. They recommend using LLMs to \"summarise noisy logs and traces, draft status updates and post-mortem sections, suggest an investigation plan to follow, and review investigation data and validate findings\" whilst keeping engineers in control of the process.</p>\n   <p>A post by <a href=\"https://www.linkedin.com/pulse/ai-future-site-reliability-engineering-sre-jobs-varun-biswas-fwxle/\">Varun Biswas on LinkedIn</a> argues that AI-driven tools can take over a significant share of monitoring, analysis, and remediation tasks, with&nbsp; but humans stay in the loop especially for strategic decisions and oversight. The most repetitive, automatable tasks are being delegated to AI, while system design, escalation, and recovery remain human-led.</p>\n   <p>Another <a href=\"https://www.iccs-meeting.org/archive/iccs2025/papers/159090307.pdf\">recent study by Tomasz Szandała</a> evaluates the capability of GPT-4o, Gemini-1.5, and Mistral-small in conducting root cause analysis (RCA) for infrastructure incidents using chaos engineering scenarios. This paper tested LLMs with eight failure scenarios invented from a controlled e-commerce environment, and compared their performance to human Site Reliability Engineers.</p>\n   <p><img alt=\"The Szandala Report\" style=\"width: 300px; height: 193px;\" data-src=\"https://www.infoq.com/news/2025/09/clickhouse-llm-sre-report/news/2025/09/clickhouse-llm-sre-report/en/resources/1Screenshot From 2025-09-27 22-47-50-1759009721416.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/clickhouse-llm-sre-report/en/resources/1Screenshot From 2025-09-27 22-47-50-1759009721416.png\" rel=\"share\"></p>\n   <p>This report found that in zero-shot settings, LLMs were moderately successful, reporting 44-58% accuracy, and with human SREs performing significantly better at 62%. The study found that \"LLMs achieved significantly lower results\" compared to humans, with GPT-4 achieving 0.52, Gemini 0.58, and Mistral 0.44 accuracy. However, some prompt engineering did improveperformance to 60-74% accuracy, though humans still did better at over 80%.</p>\n   <p>The ClickHouse study found that \"even GPT-5 did not outperform the others\" and required significant human guidance, whereas this study showed measurable improvement through prompt engineering techniques. Szandała's research demonstrated more consistent improvements through structured prompting, suggesting that \"prompt engineering emerged as the critical element for LLMs' performance\".</p>\n   <p>\"So can LLMs replace SREs right now? No. Can they shorten incidents and improve documentation when paired with a fast observability stack? Yes,\" the authors of the Clickhouse report concluded. \"The path forward is better context and better tools, with engineers in control.\"</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Report Finds LLMs Not Yet Ready to Replace SREs in Incident Management\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/clickhouse-llm-sre-report/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759010400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "报告显示，LLM 作为辅助工具有前景，但尚不能自主进行复杂事件的根本原因分析，取代 SRE 。",
+  "oneSentenceSummary": "报告显示，LLM 作为辅助工具有前景，但尚不能自主进行复杂事件的根本原因分析，取代 SRE 。",
+  "summary": "本文总结了两项研究（一项来自 ClickHouse ，另一项来自 Tomasz Szandała ）的发现，评估大型语言模型（LLM ）在站点可靠性工程（SRE ）中的应用，特别是事件根本原因分析（RCA ）。ClickHouse 的研究测试了诸如 Claude Sonnet 4 、OpenAI GPT - o3 、GPT - 4.1 、Gemini 2.5 Pro 和 GPT - 5 等模型，基于真实可观测性数据，结论是 LLM 在缺乏人工指导的情况下，无法实现自主 RCA 。这些模型在处理复杂问题时经常遇到困难，产生幻觉或局限于单一推理路径。成本和调查时间也差异很大。然而，LLM 擅长起草 RCA 报告。Szandała 的研究评估了 GPT - 4o 、Gemini - 1.5 和 Mistral - small 在混沌工程场景中的表现，发现与人类 SRE （62 % ）相比，LLM 在零样本设置中表现出适度的成功（44 - 58 % 的准确率）。至关重要的是，提示工程显著提高了 LLM 的性能（60 - 74 % 的准确率），但仍落后于人类 SRE （超过 80 % ）。两项研究均表明，LLM 在日志总结、报告起草和计划制定等方面作为辅助工具有显著价值，但战略决策和复杂问题解决仍需人工干预。",
+  "mainPoints": [
+    {
+      "point": "LLM 尚不能在事件管理中实现完全自主的根本原因分析。",
+      "explanation": "多项研究表明，即使是像 GPT - 5 这样先进的 LLM ，在没有人为干预的情况下，也很难持续识别复杂生产问题的根本原因，经常产生幻觉或固执于不正确的推理。"
+    },
+    {
+      "point": "LLM 作为 SRE 辅助工具，能有效提升特定任务效率。",
+      "explanation": "LLM 擅长总结嘈杂的日志、起草事后分析报告、提出调查计划和审查数据，从而使 SRE 能够专注于更复杂的问题解决和战略决策。"
+    },
+    {
+      "point": "提示工程是提升 LLM 在 SRE 任务中表现的关键。",
+      "explanation": "结构化的提示技术可以显著提高 LLM 在根本原因分析中的准确性，这表明人类用户如何与这些 AI 模型互动和指导它们非常重要。"
+    }
+  ],
+  "keyQuotes": [
+    "“自主 RCA 尚未实现，”作者解释说。“在我们的评估中，利用 LLM 更快、更低成本地定位生产问题的期望并未实现，甚至 GPT - 5 也没有胜过其他模型。”",
+    "“这反映了一种常见的模式：模型倾向于固守单一推理路径，缺乏对其他可能性的探索。”",
+    "“随后，模型开始构建一个缺乏证据的虚构原因，并试图证明其合理性。”",
+    "“那么 LLM 现在可以取代 SRE 吗？不能。与快速可观测性技术栈结合使用时，能否缩短事件处理时间并改进文档质量？”",
+    "“未来的方向是更完善的上下文信息和更强大的工具，并由工程师主导。”"
+  ],
+  "tags": [
+    "LLM",
+    "SRE",
+    "事件管理",
+    "根本原因分析",
+    "可观测性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 856,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759010400000,
+  "publishDateStr": "2025-09-27",
+  "publishDateTimeStr": "2025-09-27 22:00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_59495c",
+  "title": "NotebookLM 新功能：AI 驱动，一键探索全网资源",
+  "url": "https://blog.google/technology/google-labs/notebooklm-discover-sources/",
+  "date": "2025-04-02 18:30:01",
+  "author": "Adam Bignell",
+  "siteName": "The Keyword (blog.google) ",
+  "content": "<html>\n <head></head>\n <body>\n  <uni-article-speakable style=\"height: 55px; margin-bottom: 36px; display: block;\" page-title=\"New in NotebookLM: Discover sources from around the web\" listen-to-article=\"Listen to article\" data-date-modified=\"2025-04-02T18:30:01.658556+00:00\" data-tracking-ids=\"G-HGNBTNCHCQ,G-6NKTLKV14N\" data-voice-list=\"en.ioh-pngnat:Cyan,en.usb-pngnat:Lime\" data-script-src=\"https://www.gstatic.com/readaloud/player/web/api/js/api.js\">\n   <!---->\n   <div id=\"uni-article-speakable\">\n    <!--?lit$608826997$--><span width=\"14px\">\n     <svg width=\"24px\" viewBox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\" class=\"uni-spinner uni-spinner--small\">\n      <circle class=\"loader-path\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"7\" cx=\"33\" cy=\"33\" r=\"25\"></circle>\n     </svg></span>\n   </div>\n  </uni-article-speakable> <!--article text-->\n  <div class=\"module--text module--text__article\" role=\"presentation\" data-analytics-module=\"{\n           &quot;module_name&quot;: &quot;Paragraph&quot;,\n           &quot;section_header&quot;: &quot;New in NotebookLM: Discover sources from around the web&quot;\n         }\">\n   <div class=\"uni-paragraph article-paragraph\" data-component=\"uni-article-paragraph\" data-compononent-initialized=\"true\">\n    <div class=\"rich-text\">\n     <p data-block-key=\"ybiod\" class=\"drop-cap\">NotebookLM helps you understand anything. If you’ve used NotebookLM before, you’ve manually uploaded sources for your projects — whether you’re writing a paper, planning a vacation or transcribing interviews. But starting today, there’s a new option: Discover sources.</p>\n     <p data-block-key=\"8mqkl\">When you tap the Discover button in NotebookLM, you can describe the topic you’re interested in, and NotebookLM will bring back a curated collection of relevant sources from the web. You can add those sources to your notebook in one click. It’s a fast and easy way to quickly grasp a new concept or gather essential reading on a topic.</p>\n    </div>\n   </div>\n  </div><uni-image-full-width alignment=\"full\" alt-text=\"Animation showing how Discover sources button works in NotebookLM\" external-image=\"\" or-mp4-video-title=\"NLM_StudentBlogAssets_DiscoverSources_Video\" or-mp4-video-url=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/F405_NLM_StudentBlogAssets_DiscoverSources.mp4\" section-header=\"New in NotebookLM: Discover sources from around the web\" custom-class=\"image-full-width--constrained-width uni-component-spacing\">\n   <!---->\n   <div class=\"image-full-width image-full-width--full image-full-width--constrained-width uni-component-spacing\" data-analytics-module=\"{\n          &quot;module_name&quot;: &quot;Inline Images&quot;,\n          &quot;section_header&quot;: &quot;New in NotebookLM: Discover sources from around the web&quot;\n        }\">\n    <!--?lit$608826997$--><!--?lit$608826997$-->\n    <div class=\" image-full-width__media-asset image-full-width__media-asset--mp4 \">\n     <!--?lit$608826997$--> <!--?lit$608826997$--><!--?lit$608826997$--><span class=\"image-full-width__video-title--sr-visible\"><!--?lit$608826997$-->Animation showing how Discover sources button works in NotebookLM</span><!--?--> <!--?lit$608826997$--><!--?lit$608826997$--><!--?--> <!--?lit$608826997$--><!--?lit$608826997$--><!--?-->\n    </div><!--?--> <!--?lit$608826997$--><!--?lit$608826997$--><!--?-->\n   </div>\n  </uni-image-full-width>\n  <div class=\"module--text module--text__article\" role=\"presentation\" data-analytics-module=\"{\n           &quot;module_name&quot;: &quot;Paragraph&quot;,\n           &quot;section_header&quot;: &quot;New in NotebookLM: Discover sources from around the web&quot;\n         }\">\n   <div class=\"uni-paragraph article-paragraph\" data-component=\"uni-article-paragraph\" data-compononent-initialized=\"true\">\n    <div class=\"rich-text\">\n     <h2 data-block-key=\"ybiod\">How it works</h2>\n     <p data-block-key=\"166o9\">When you describe your topic, NotebookLM gathers hundreds of potential web sources in seconds. It analyzes them and picks the most relevant ones based on your defined topic. It presents up to 10 source recommendations, each with an annotated summary explaining its relevance to your topic.</p>\n     <p data-block-key=\"703sc\">With one click, you can import these sources and use them with other NotebookLM features, such as Briefing Docs, FAQs, and Audio Overviews. The sources will remain in your notebook, allowing you to also read the originals, ask questions via chat, and use NotebookLM's citation and note-taking features.</p>\n     <p data-block-key=\"e1907\">We've even included a fun additional feature for newcomers to NotebookLM: the “I'm Feeling Curious” button. It generates sources on a random topic, offering a quick way for you to see the product’s source discovery agent in action.</p>\n     <p data-block-key=\"4uum7\">Here’s how you can use it:</p>\n     <ul>\n      <li data-block-key=\"6d2d9\">Go to <a href=\"https://notebooklm.google.com/\" data-analytics-onclick=\"{&quot;event&quot;:&quot;page interaction&quot;,&quot;category&quot;:&quot;in-article links&quot;,&quot;action&quot;:&quot;link click&quot;,&quot;label&quot;:&quot;https://notebooklm.google.com/&quot;}\" rel=\"noopener\" target=\"_blank\">notebooklm.google.com</a>.</li>\n      <li data-block-key=\"6tf66\">Open up a notebook.</li>\n      <li data-block-key=\"311m\">In the Sources panel, tap the Discover button.</li>\n      <li data-block-key=\"1fuh0\">Describe what you’re interested in.</li>\n     </ul>\n     <p data-block-key=\"8h5gl\">Discover sources is the first of a series of NotebookLM features that uses the power of Gemini to find and collect relevant sources for your notebook. It will start rolling out today for all <a href=\"https://notebooklm.google/\" data-analytics-onclick=\"{&quot;event&quot;:&quot;page interaction&quot;,&quot;category&quot;:&quot;in-article links&quot;,&quot;action&quot;:&quot;link click&quot;,&quot;label&quot;:&quot;https://notebooklm.google/&quot;}\" rel=\"noopener\" target=\"_blank\">NotebookLM</a> users, and we expect the rollout to take about a week or so.<span class=\"tombstone\"></span></p>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "NotebookLM 新增“资源发现”功能，利用 Gemini 模型一键发现并收集网络资源，显著提升研究效率。",
+  "oneSentenceSummary": "NotebookLM 新增“资源发现”功能，利用 Gemini 模型一键发现并收集网络资源，显著提升研究效率。",
+  "summary": "Google 的 NotebookLM 推出一项新功能——“资源发现”，旨在简化用户收集研究资料的过程。用户只需描述感兴趣的主题，NotebookLM 即可利用 Gemini 模型在几秒内从网络上检索数百个潜在资源，筛选出最多 10 个最相关的资源，并提供带有注释的摘要，解释其与主题的相关性。用户可以一键将这些资源导入 NotebookLM，并结合简报文档（快速概览）、常见问题解答（FAQ）和音频概览（语音总结）等其他功能使用。此外，还新增“I'm Feeling Curious”按钮，为新用户提供随机主题的资源发现体验。该功能已开始向所有 NotebookLM 用户推出。",
+  "mainPoints": [
+    {
+      "point": "“资源发现”功能简化了研究资料的收集流程。",
+      "explanation": "用户可以通过描述主题，快速获取由 AI 筛选并附带摘要的相关网络资源，无需手动搜索和评估。"
+    },
+    {
+      "point": "Gemini 模型是“资源发现”功能的核心驱动力。",
+      "explanation": "Gemini 负责在网络上检索、分析和筛选资源，确保推荐结果的相关性和质量。"
+    },
+    {
+      "point": "NotebookLM 提供多种功能集成，提升研究效率。",
+      "explanation": "“资源发现”与简报文档、常见问题解答和音频概览等功能集成，方便用户对收集到的资源进行整理、分析和学习。"
+    }
+  ],
+  "keyQuotes": [
+    "When you describe your topic， NotebookLM gathers hundreds of potential web sources in seconds.",
+    "It analyzes them and picks the most relevant ones based on your defined topic.",
+    "Discover sources is the first of a series of NotebookLM features that uses the power of Gemini to find and collect relevant sources for your notebook."
+  ],
+  "tags": [
+    "NotebookLM",
+    "Gemini",
+    "信息检索",
+    "信息检索效率",
+    "效率工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 316,
+  "domain": "blog.google",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_40cd8f",
+  "sourceName": "The Keyword (blog.google) ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1743618601000,
+  "publishDateStr": "2025-04-02",
+  "publishDateTimeStr": "2025-04-02 18:30:01"
+}

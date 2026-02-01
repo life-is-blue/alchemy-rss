@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9568c77f",
+  "title": "Sora2 还在 5 秒打转，字节 AI 生视频已经 4 分钟\"起飞\"",
+  "url": "https://www.qbitai.com/2025/10/339556.html",
+  "date": "2025-10-06 06:12:11",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"44\">鹭羽 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"45\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">从5秒到<strong>4分钟</strong>，Sora2也做不到的分钟级长视频生成，字节做到了！</p>\n  <p data-track=\"3\">先来看一个前方潜水员拍摄的“真实”海底世界Vlog：</p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_b610126557d9263a81c063a90faebf07.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084432_b610126557d9263a81c063a90faebf07.png\"></p>\n   <p class=\"pgc-img-caption\">视频链接：https://mp.weixin.qq.com/s/DL8JfT36xwbcs8FnKGttdQ</p>\n  </div>\n  <p data-track=\"4\">华生，有发现么？不同于一般的AI生成视频，只有短短几秒钟……这个片子全程1分40秒，<strong>都是“水分”、都是AI</strong>。</p>\n  <p data-track=\"5\">这就是字节和UCLA联合提出的新方法——<strong>Self-Forcing++</strong>，无需更换模型架构或重新收集长视频数据集，就能轻松生成分钟级长视频，也不会后期画质突然变糊或卡住。</p>\n  <p data-track=\"6\">通过利用教师知识和自生成视频片段指导自回归生成，最长生成视频可达<strong>4分15秒</strong>，而且高质量、还开源。</p>\n  <p data-track=\"7\">话不多说，再看几个视频效果尝尝鲜。</p>\n  <p data-track=\"8\">长达3分钟的无人机视角下的海岸线，be like：</p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_fa40ed53cefe6644ca6347ddfaa77a57.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084432_fa40ed53cefe6644ca6347ddfaa77a57.png\"></p>\n   <p class=\"pgc-img-caption\">视频链接：https://mp.weixin.qq.com/s/DL8JfT36xwbcs8FnKGttdQ</p>\n  </div>\n  <p data-track=\"9\">时长拉到极致，4分15秒跟随大象的脚步纵览草原美景。</p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_c5c2d9c5eec5ad37534a2e4afa3c8d2e.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084432_c5c2d9c5eec5ad37534a2e4afa3c8d2e.png\"></p>\n   <p class=\"pgc-img-caption\">视频链接：https://mp.weixin.qq.com/s/DL8JfT36xwbcs8FnKGttdQ</p>\n  </div>\n  <p data-track=\"10\">而相同时长下，此前的长视频生成SOTA <strong>SkyReels</strong>做出的效果是酱紫的：<s>（重生之我成为一只蚂蚁）</s></p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_7f63476498b0dc5b74ad9adb8f3bb326.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084432_7f63476498b0dc5b74ad9adb8f3bb326.png\"></p>\n   <p class=\"pgc-img-caption\">视频链接：https://mp.weixin.qq.com/s/DL8JfT36xwbcs8FnKGttdQ</p>\n  </div>\n  <p data-track=\"11\">Self-Forcing++在短时长上继承了<strong>Self-Forcing</strong>的高质量画面效果，长时长生成也能达成性能指标All kill，视觉稳定性大幅领先<strong>CausVid</strong>等方法。</p>\n  <p data-track=\"12\">或许，AI电影时代离我们已不再遥远……下面来康康更多详细内容。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"13\">从5秒到4分15秒</h2>\n  <p data-track=\"14\">先一起来思考下这个问题：为啥现在的AI视频质量这么高，但还是很容易被人捉虫AI生成？</p>\n  <p data-track=\"15\">其实bug就出自<strong>视频长度</strong>。</p>\n  <p data-track=\"16\">无论是Sora2、字节Wan，还是腾讯混元、谷歌Veo，视频内容再真假难辨，长度却都只有<strong>5到10秒</strong>。</p>\n  <p data-track=\"17\">即使勉勉强强做出长视频，也是只有前几秒能看，后面画面通通崩坏。</p>\n  <p data-track=\"18\">原因无他，传统扩散视频生成模型依赖Transformer结构，即使改用双向教师模型将知识蒸馏给学生模型，由于模型本身无法生成长视频的限制，还是会持续不断积累误差。</p>\n  <p data-track=\"19\">于是针对这一问题，字节提出<strong>Self-Forcing++</strong>方法抑制后期质量下降，不再依赖长视频教师模型训练，而是让模型在自己的错误中成长。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084433_74184ca6c014e87db3f2eba36b88d047.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084433_74184ca6c014e87db3f2eba36b88d047.png\">\n  </div>\n  <p data-track=\"20\">首先是视频长度上，分别从噪声初始化、蒸馏方式、缓存机制三方面优化训练过程：</p>\n  <ul>\n   <li data-track=\"21\"><strong>反向噪声初始化：</strong>让学生模型生成远超5秒（实验用100秒）的干净帧序列，再按扩散噪声调度向序列中重新注入噪声。</li>\n   <li data-track=\"23\"><strong>扩展分布匹配蒸馏：</strong>在帧序列生成后，从中随机抽取5秒连续窗口，计算学生与教师模型在窗口内的分布差异（KL散度），然后通过最小化该差异完成训练。</li>\n   <li data-track=\"25\"><strong>滚动KV缓存训练：</strong>在训练与推理阶段均采用滚动KV缓存，训练时用该缓存生成远超教师监督时长的序列，用于扩展DMD计算。</li>\n  </ul>\n  <p data-track=\"27\">简单来说，就是让LLM在犯错-修正-再犯错的循环中，逐渐学会长时间的稳定生成。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_c636b904fe6bec6b3605065711adaaac.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084432_c636b904fe6bec6b3605065711adaaac.png\">\n  </div>\n  <p data-track=\"28\">另外，由于自回归模型使用滑动窗口或稀疏注意力生成长序列时，容易出现长时记忆丢失的情况，还需要引入<strong>组相对策略优化</strong>（GRPO）改善视频平滑性。</p>\n  <p data-track=\"29\">通过计算每一步的重要性权重，结合当前自回归生成的对数概率总和，衡量生成策略的合理性，再将相邻帧光流的相对大小作为运动连续性代理指标，引导模型优化，最终可有效减少画面突变异常。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_c1d8698d66ac1bd4d6c1fc0f172d25bd.png\" alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" data-src=\"https://image.jido.dev/20251006084432_c1d8698d66ac1bd4d6c1fc0f172d25bd.png\">\n  </div>\n  <p data-track=\"30\">研究人员同时发现，现有长视频评估所使用的VBench基准并不完全准确，一些过亮的坏视频也会被误判为好。</p>\n  <p data-track=\"31\">为此他们将<strong>Gemini-2.5-Pro</strong>作为评委，让模型按照过曝光、误差积累等维度以0-100分评分，可以更为精准地衡量视觉稳定性（Visual Stability）。</p>\n  <p data-track=\"32\">这一点在后续的实验结果中也得以验证。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"33\">兼顾时长和质量</h2>\n  <p data-track=\"34\">研究人员主要设计了两类场景评估，分别对比该方法与基准模型（包括自回归模型与双向模型）在<strong>短时长视频质量</strong>和<strong>长时长生成</strong>上的效果。</p>\n  <p data-track=\"35\">其中短时长场景（5s）仍然采用VBench基准，根据946个提示词从16个维度评估生成质量。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/030c9d3275e61bbbe3857eb8471b0519.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/030c9d3275e61bbbe3857eb8471b0519.gif\">\n  </div>\n  <p data-track=\"36\">结果显示，Self-Forcing++在语义得分（80.37）和总得分（83.11）上均超过NOVA、SkyReels-V2、CausVid等模型，只略低于<strong>Wan2.1</strong>的总得分84.67。</p>\n  <p data-track=\"37\">说明Self-Forcing++虽并未专门针对短视频进行训练，但其在短时长场景中仍能保持高视觉质量与语义一致性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/7842a2832755ee3398f1297dbd0a910d.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/7842a2832755ee3398f1297dbd0a910d.gif\">\n  </div>\n  <p data-track=\"38\">在50秒生成时，视觉稳定性得分为90.94，远超CausVid（40.47）和Self-Forcing（40.12），动态程度更是Self-Forcing得分的<strong>1.6倍</strong>，文本对齐得分（26.37）也高于多数基准，证明其在中长时长场景的稳定性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084432_ba606b71174980c0d686b6a267418284.png\" data-src=\"https://image.jido.dev/20251006084432_ba606b71174980c0d686b6a267418284.png\">\n  </div>\n  <p data-track=\"39\">而在75秒到100秒生成中，文本对齐得分可达<strong>26.04</strong>、动态程度为<strong>54.12</strong>，相比CausVid分别提升6.67%和56.4%，相比Self-Forcing则提升18.36%和104.9%。</p>\n  <p data-track=\"40\">视觉稳定性得分（84.22）为Self-Forcing（32.03）的<strong>2.6倍</strong>，且framewise质量（60.66）与基准模型相当，说明其在极长时长下仍能保持高保真度与一致性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Sora2还在5秒打转，字节AI生视频已经4分钟“起飞”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251006084433_1d19b2557b336747c96afdaeecd15203.png\" data-src=\"https://image.jido.dev/20251006084433_1d19b2557b336747c96afdaeecd15203.png\">\n  </div>\n  <p data-track=\"41\">长视频生成通常存在的失效模式，如运动停滞、保真度退化，Self-Forcing++均未出现类似情况，视频全程保持连贯运动和稳定亮度及质量。</p>\n  <p data-track=\"42\">最终实验验证得出，Self-Forcing++可<strong>最长生成4分15秒</strong>的视频，比原先的5秒提升近50倍，且在保真度和一致性上<strong>优于基线方法</strong>。</p>\n  <p data-track=\"43\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://self-forcing-plus-plus.github.io/\n   <br class=\"sysbr\">\n   [2]https://arxiv.org/abs/2510.02283</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "字节跳动与 UCLA 联合提出的 Self-Forcing++方法，成功将 AI 视频生成时长从秒级扩展至分钟级（最长 4 分 15 秒），同时保持了高质量和视觉稳定性。",
+  "oneSentenceSummary": "字节跳动与 UCLA 联合提出的 Self-Forcing++方法，成功将 AI 视频生成时长从秒级扩展至分钟级（最长 4 分 15 秒），同时保持了高质量和视觉稳定性。",
+  "summary": "文章详细介绍了字节跳动与 UCLA 联合研发的 Self-Forcing++技术，旨在解决当前主流 AI 视频生成模型（如 Sora2）普遍存在的视频时长短（通常 5-10 秒）且长视频易崩坏的问题。Self-Forcing++无需更换模型架构或重新收集长视频数据集，通过优化训练过程，包括反向噪声初始化、扩展分布匹配蒸馏和滚动 KV 缓存训练，有效抑制了误差积累，实现了分钟级（最长 4 分 15 秒）高质量视频生成。此外，该方法还引入了组相对策略优化（GRPO）以改善视频平滑性，并创新性地提出使用 Gemini-2.5-Pro 作为评估器来更精准地衡量长视频的视觉稳定性。实验结果表明，Self-Forcing++在短、中、长视频生成场景下，无论在视觉质量、语义一致性还是稳定性方面，均显著优于多数现有基准模型，为 AI 电影和内容创作领域带来了重要突破，且该方法已开源。",
+  "mainPoints": [
+    {
+      "point": "Self-Forcing++突破 AI 视频时长限制，实现分钟级高质量视频生成。",
+      "explanation": "该方法无需更换模型架构或重新收集长视频数据集，通过优化训练流程，将 AI 视频生成时长从传统几秒提升至最长 4 分 15 秒，解决了长视频生成中的画质崩坏问题。"
+    },
+    {
+      "point": "技术创新确保长视频视觉稳定性与连贯性。",
+      "explanation": "引入反向噪声初始化、扩展分布匹配蒸馏、滚动 KV 缓存训练来抑制误差积累，并采用组相对策略优化改善视频平滑性，有效减少画面突变异常。"
+    },
+    {
+      "point": "利用 Gemini-2.5-Pro 作为评估器，提升长视频视觉稳定性评估精度。",
+      "explanation": "通过 AI 模型对视频进行多维度评分，弥补了现有 VBench 基准在长视频评估上的不足，能更精准地识别过曝光、误差积累等问题，提升评估的准确性。"
+    }
+  ],
+  "keyQuotes": [
+    "从 5 秒到 4 分钟，Sora2 也做不到的分钟级长视频生成，字节做到了！",
+    "这就是字节和 UCLA 联合提出的新方法------Self-Forcing++，无需更换模型架构或重新收集长视频数据集，就能轻松生成分钟级长视频，也不会后期画质突然变糊或卡住。",
+    "通过利用教师知识和自生成视频片段指导自回归生成，最长生成视频可达 4 分 15 秒，而且高质量、还开源。",
+    "不再依赖长视频教师模型训练，而是让模型在自己的错误中成长。",
+    "Self-Forcing++可最长生成 4 分 15 秒 的视频，比原先的 5 秒提升近 50 倍，且在保真度和一致性上优于基线方法。"
+  ],
+  "tags": [
+    "AI视频生成",
+    "长视频",
+    "扩散模型",
+    "Self-Forcing++",
+    "AIGC"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2262,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759731131000,
+  "publishDateStr": "2025-10-06",
+  "publishDateTimeStr": "2025-10-06 06:12:11"
+}

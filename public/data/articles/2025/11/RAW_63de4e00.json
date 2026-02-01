@@ -1,0 +1,54 @@
+{
+  "id": "RAW_63de4e00",
+  "title": "Meta 用一个烂 Web 应用替换原生 WhatsApp：Windows 用户活该将就？",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263837&idx=3&sn=ab069772ee6d350c4f8f36800859bbb3",
+  "date": "2025-11-22 07:26:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | John Gruber </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 王强 </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">策划 | Tina </span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px 0px 24px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Myayank Parmar 关于 Windows 的最新一篇文章写道：</span></p>\n   <div data-role=\"outer\" label=\"edit by 135editor\" data-pm-slice=\"0 0 []\">\n    <div data-tools=\"135编辑器\" data-id=\"94875\" data-width=\"98%\" style=\"width: 98%;flex: 0 0 98%;margin-left: auto;margin-right: auto;box-sizing:border-box;max-width:98% !important;\">\n     <div style=\"display: flex;\">\n      <div style=\"display: flex;\">\n       <div data-autoskip=\"1\" style=\"box-sizing:border-box;padding-left:10px;font-size: 14px;color:#333;letter-spacing: 1.5px;text-align: justify;\">\n        <p style=\"margin-bottom:15px;display:block;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">Windows 11 版 WhatsApp 刚刚迎来了一次“重大”升级，但你很可能会对此感到失望，因为它只是简单地在一个 WebView2 容器中加载了 web.whatsapp.com 而已。这意味着 Windows11 版 WhatsApp 已经彻底拉了，性能再度变得糟糕透顶。</span></span></p>\n        <p style=\"margin-bottom:15px;display:block;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">WhatsApp 是 Windows 应用发展历程中的一个缩影，它经历了从 Web 封装到原生应用，最终又回归到 Web 的漫长过程。最初，Windows 版 WhatsApp 是一个 Electron 应用，经过多年的开发，最终它被 UWP 取代。四年后，WhatsApp 又回到了 WebView2，放弃了最初的 WinUI/UWP 原生应用理念。</span></span></p>\n        <p style=\"margin-bottom:15px;display:block;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">应用占用大量内存并不一定意味着性能糟糕，但新版 WhatsApp 的问题在于它运行起来非常卡顿。浏览不同的对话时，你会注意到性能缓慢、加载时间过长以及其他性能问题。</span></span></p>\n        <p style=\"margin-bottom:15px;display:block;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">我们还发现它与 Windows 通知的兼容性很差。它在 Windows 11 的“勿扰模式”和“活动时间”方面也存在问题。此外，通知延迟也是个问题。</span></span></p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这篇文章在几个方面都很有意思。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">首先，从 Meta 的角度来看。他们曾经用一款现代化的原生 Windows 应用取代了之前糟糕的 Windows Web 版应用，这款应用似乎让像 Parmar 这样的 Windows 爱好者非常满意。而现在，他们又放弃了这款应用，重新回到了四年前被原生应用取代的那个版本：一个臃肿、缓慢且不出所料，对原生 Windows 功能支持不佳的 Web 版应用。很多大公司都懒得开发原生应用就已经够糟糕的了，而看到一款优秀的原生应用被弃用，更是令人惋惜。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">其次，Parmar 对新的 Web 版 WhatsApp 应用的种种抱怨也很有意思。他的抱怨句句在理，但让我惊讶的是，他竟然没有提到用户界面。也许 Web 版应用的用户界面其实还不错？我不知道。但我怀疑更确切地说，是 Windows 极客们把 UI 设计质量和对平台规范的遵循放在了优先级很低的位置。这就是为什么他们是 Windows 用户，而不是 Mac 用户。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">最后，我不禁怀疑，这是否预示着当前 macOS 版 WhatsApp 的未来堪忧。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这款原生应用是用 MacCatalyst 编写的，而 MacCatalyst 是苹果公司用于将 iOS UIKit 应用移植到 Mac 的框架。和大多数 Catalyst 应用一样，Mac 版 WhatsApp 并不是一款优秀的 Mac 应用。它完全不支持“服务”菜单，不允许你将聊天窗口打开到独立窗口中，也不允许打开多个聊天窗口。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">它的“设置”选项直接在主窗口中打开。这种“只有一个窗口，所有功能都在这个窗口里”的设计风格非常 iOS 化。它的菜单栏简直是人机交互规范（HIG）拥护者的噩梦。所有多词菜单命令都采用句子式大小写，而非标题式大小写（当然，Catalyst 自带的“免费”菜单命令除外——这款应用的开发者怎么会没注意到这一点呢？），菜单标题顺序是：文件、聊天、编辑、通话、查看、窗口、帮助（显然应该是文件、编辑、查看、聊天、通话、窗口、帮助）。41 年来，有任何一款优秀的 Mac 应用会把某个菜单放在“文件”和“编辑”之间吗？</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">不过，即便如此，Mac 版 WhatsApp 仍然比我用过的任何 Electron 应用都要好。现在看来，它对 CPU 和内存的占用都很低。在我看来，它比 Signal 和 Beeper 都略胜一筹，这两款应用都是用 Electron 开发的，而且它们的内存占用都比 WhatsApp 高。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">举个显而易见的优点：当你在 WhatsApp 中向旧聊天发送新消息时，该聊天会以动画形式移动到聊天列表顶部。它会向上滑动，其他聊天记录则会随着重新排序而向下滑动。在 Mac 版 Signal 和 Beeper 应用中，更新的聊天记录会直接跳到聊天列表顶部，没有任何动画效果。真是糟糕。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">问题是，Meta 放弃原生 Windows 应用是因为他们不太重视 Windows 平台吗？还是因为他们根本就不太重视原生桌面应用——接下来他们要推出的只是一个粗糙的 Web 应用封装？Mac 版 WhatsApp 目前是 Mac AppStore 中排名第一的免费应用——但它同时也是 Microsoft Store 中排名第一的免费 Windows 应用。Meta 确实刚刚发布了 WhatsApp 的原生 AppleWatch 应用，但如果你想为 WatchOS 开发应用，它必须是原生应用。你不能像 Electron 应用那样，把 Web 应用封装起来发布到 WatchOS 上。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">就我个人而言，如果 Meta 放弃 WhatsApp Mac 应用，我不会太在意，因为我几乎不用 WhatsApp。但在美国以外，WhatsApp 在世界大部分地区（或许是绝大多数地区）都是主流的即时通讯平台。如果我是经常使用 WhatsApp 的 Mac 用户，我会很担心。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://daringfireball.net/2025/11/meta_whatsapp_windows_shitty_web_app\" target=\"_blank\">https://daringfireball.net/2025/11/meta_whatsapp_windows_shitty_web_app</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Meta 用 Web 应用取代原生 Windows 版 WhatsApp，导致性能和功能严重倒退，引发对桌面应用策略的担忧。",
+  "oneSentenceSummary": "Meta 用 Web 应用取代原生 Windows 版 WhatsApp，导致性能和功能严重倒退，引发对桌面应用策略的担忧。",
+  "summary": "文章深入批判了 Meta 将 Windows 版 WhatsApp 从原生 UWP 应用回退到基于 WebView2 的 Web 封装应用的决策。作者指出，此举导致新版 WhatsApp 性能卡顿、加载缓慢，并与 Windows 原生通知、勿扰模式等功能兼容性差，严重影响用户体验。这标志着 WhatsApp 在 Windows 平台应用开发上的倒退，也反映出许多大型公司对桌面原生应用开发重视程度的下降。同时，文章还对 Mac 版 WhatsApp（基于 Mac Catalyst）的用户体验问题进行了分析，并担忧 Meta 对桌面原生应用的不重视可能预示着 Mac 版 WhatsApp 未来也将被 Web 封装取代，尽管 WhatsApp 在全球范围内用户众多。文章强调了原生应用在性能和用户体验上的优势，以及企业在跨平台策略中可能面临的权衡。",
+  "mainPoints": [
+    {
+      "point": "Meta 将 Windows 版 WhatsApp 回退到 Web 封装应用导致性能和功能严重倒退。",
+      "explanation": "新版 WhatsApp 基于 WebView2 加载网页版，运行卡顿、加载缓慢，且与 Windows 原生通知等功能兼容性差，严重影响用户体验。"
+    },
+    {
+      "point": "优秀的桌面原生应用被弃用，反映了企业对桌面平台重视程度的下降。",
+      "explanation": "Meta 放弃了先前受好评的 UWP 原生应用，转而使用低质量的 Web 封装，这体现了其在桌面应用开发策略上的倒退。"
+    },
+    {
+      "point": "即使是 Mac Catalyst 应用，在性能和用户体验上也优于 Electron 等 Web 封装应用。",
+      "explanation": "作者通过对比 Mac 版 WhatsApp（Catalyst）与 Signal/Beeper（Electron），指出 Catalyst 应用在动画流畅度和资源占用上表现更好，尽管其 UI/UX 仍有不足。"
+    }
+  ],
+  "keyQuotes": [
+    "Windows 11 版 WhatsApp 刚刚迎来了一次\"重大\"升级，但你很可能会对此感到失望，因为它只是简单地在一个 WebView2 容器中加载了 web.whatsapp.com 而已。",
+    "很多大公司都懒得开发原生应用就已经够糟糕的了，而看到一款优秀的原生应用被弃用，更是令人惋惜。",
+    "不过，即便如此，Mac 版 WhatsApp 仍然比我用过的任何 Electron 应用都要好。现在看来，它对 CPU 和内存的占用都很低。",
+    "问题是，Meta 放弃原生 Windows 应用是因为他们不太重视 Windows 平台吗？还是因为他们根本就不太重视原生桌面应用------接下来他们要推出的只是一个粗糙的 Web 应用封装？"
+  ],
+  "tags": [
+    "应用开发",
+    "Web技术",
+    "原生应用",
+    "跨平台开发",
+    "WhatsApp"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1553,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763796360000,
+  "publishDateStr": "2025-11-22",
+  "publishDateTimeStr": "2025-11-22 07:26:00"
+}

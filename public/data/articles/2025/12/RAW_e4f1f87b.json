@@ -1,0 +1,63 @@
+{
+  "id": "RAW_e4f1f87b",
+  "title": "VSCode 推出 绿色版！更强！更智能！",
+  "url": "https://juejin.cn/post/7580683234437267519",
+  "date": "2025-12-08 06:40:11",
+  "author": "前端开发爱好者",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>最近，<strong>VSCode</strong> 再次被推上热门，各大开发社区、推特/X 上都在讨论一个话题—— <strong>“VSCode 绿色版（Insiders）功能太强了！”</strong></p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/0fd75366f0ac490fb31a64d91d2db806~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=e4IwreK27oO7HkQ6ifhy0%2BJ1vvM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>事实上，<strong>VSCode Insiders</strong> 并不是一个新名字，但随着微软不断注入 <strong>AI 能力、终端增强、Git 大升级、新 UI</strong>，它已经变成了真正意义上的：<strong>VSCode 超强增强版！</strong></p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/65e457d6105e4b288ac072205f72e141~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=enccncUjEEooOxgtS6UEG8794ws%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>本文将带你全面认识 <strong>绿色版都强在哪？为什么开发者都在推荐？你是否应该安装？</strong></p>\n   <h2 data-id=\"heading-0\">🎯 <strong>什么是 VSCode 绿色版（Insiders）？</strong></h2>\n   <p><strong>一句话：VSCode 的“更新抢先体验版”，比正式版更快看到新功能！</strong></p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/cd7f8a7bb5d141399075d6e6fc39658e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=gfdHagRpJjIyOStiSqoqJ09%2FM80%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>它和 <strong>Stable</strong>（正式版）可以共存使用，<code>不会覆盖</code>、<code>不冲突</code>，非常适合爱折腾、追新功能的开发者。</p>\n   <h2 data-id=\"heading-1\">🟢 <strong>终端大升级：智能提示终于来了！</strong></h2>\n   <p><strong>VSCode</strong> 终端一直是<code>“能用但不好用”</code>；而绿色版直接把它提升到<code>“智能终端”</code>级别。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/68f66166dd4a4818a871e2df9faf7465~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=pJk0kbSnJ%2BRvlWoX3VXKpq2kOoM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-2\">✨ <strong>1. 命令自动补全（智能建议）</strong></h3>\n   <p>例如你在<strong>终端</strong>输入：</p>\n   <pre><code class=\"hljs code-block-extension-codeShowNum\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">git ch</span>\n</code></pre>\n   <p>它会自动建议：</p>\n   <pre><code class=\"hljs code-block-extension-codeShowNum\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">git checkout</span>\n</code></pre>\n   <p>更厉害的是：</p>\n   <ul>\n    <li><strong>命令 flag 会被分类展示</strong></li>\n    <li><strong>参数智能提示</strong></li>\n    <li><strong>路径补全更精确</strong></li>\n   </ul>\n   <h3 data-id=\"heading-3\">✨ <strong>2. AI 执行命令时使用“真终端渲染器”</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4170726936fe4f78a6b8aec8588c3dd4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=0pLSwRb8%2F4Vnk9cnBbB8qZ7ZSmk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>绿色版已将 <strong>Copilot Agent</strong> 的终端输出升级为 <strong>xterm.js 真终端渲染器</strong>：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f965e6dd918544c6ab49550005d0ee90~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=njvLyv8RJq%2BiW4Rh8yRpYYcNol0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <ul>\n    <li><code>ANSI</code> 颜色正常显示</li>\n    <li><code>表格</code>、<code>行列</code>对齐准确</li>\n    <li>输出<code>清晰</code>、<code>结构化</code></li>\n   </ul>\n   <p><strong>终端从此不再只是“命令窗”，而是智能交互环境。</strong></p>\n   <h2 data-id=\"heading-4\">🌳 <strong>Git 管理体验提升：Stash 终于可视化了！</strong></h2>\n   <p>以前 <strong>VSCode</strong> 对 <code>stash</code> 支持几乎没有，只能敲命令。</p>\n   <p>这次绿色版直接补上短板！</p>\n   <p>设置以下选项：</p>\n   <ul>\n    <li><code>scm.repositories.explorer：true</code></li>\n    <li><code>scm.repositories.selectionMode：single</code></li>\n   </ul>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/73f92237ca2a402da1743154c0365fb8~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=AxqICOg7m38wJORh6RqBi4NI%2Bgc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-5\">✨ <strong>可视化 Stash 管理器</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b0e462d705f942f3ac4ef35e4e84ae22~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=zWOw7mdOxnUKXlVNBgOVgZhpKyo%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <ul>\n    <li>查看所有 <code>stash</code></li>\n    <li>一键 <code>apply / pop / delete</code></li>\n    <li>自动显示<code>时间戳</code></li>\n    <li>相同时间段用竖线对齐，界面更清爽</li>\n   </ul>\n   <p>这功能对于频繁<code>切分支</code>、<code>保存临时改动</code>的开发者来说简直是 <strong>质的提升</strong>。</p>\n   <h2 data-id=\"heading-6\">🤖 <strong>AI 全面进化：Copilot Agent 模式上线！</strong></h2>\n   <p>这是绿色版最轰动的更新之一。</p>\n   <h3 data-id=\"heading-7\">✨ <strong>1. Copilot 从“智能补全” → “自动执行任务代理”</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/dad068975d62481f9aec4411410c4fcb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=f0GOFN7uqwY5WFpsfDS%2FxD727B8%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>它可以自动：</p>\n   <ul>\n    <li><strong>修改多个文件</strong></li>\n    <li><strong>执行并分析终端命令</strong></li>\n    <li><strong>管理项目结构</strong></li>\n    <li><strong>重构代码</strong></li>\n    <li><strong>搜索 / 替换文件内容</strong></li>\n    <li><strong>构建 / 运行项目</strong></li>\n   </ul>\n   <p>你只需要一句话：</p>\n   <blockquote>\n    <p>“帮我给项目增加用户登录功能。”</p>\n   </blockquote>\n   <p>然后它会自动拆解步骤，帮你完成。</p>\n   <h3 data-id=\"heading-8\">✨ <strong>2. Notebook（Markdown + 代码）也能用 AI 自动编辑</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f18eea80317e49738bd63ab93a8a3543~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=s2l8WVl0lKF46yFPz9J89w5FZ%2Fk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>例如：</p>\n   <ul>\n    <li><strong>自动创建 Code Cell</strong></li>\n    <li><strong>总结文章内容</strong></li>\n    <li><strong>插入示例代码</strong></li>\n    <li><strong>自动修复错别字</strong></li>\n    <li><strong>做学习笔记</strong></li>\n   </ul>\n   <p>科研、学习、数据分析用户狂喜！</p>\n   <h2 data-id=\"heading-9\">🖥 <strong>UI / UX 更现代、更便捷</strong></h2>\n   <p>绿色版对各种细节都做了<strong>体验升级</strong>：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/521d126379f64fcb98a0acc04751011f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765780810&amp;x-signature=D6V%2BLQ8uP6mFIqp58EgVbCuvhyA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <ul>\n    <li><strong>Git 同步按钮更直观</strong></li>\n    <li><strong>悬停信息更清晰</strong></li>\n    <li><strong>状态指示更精准</strong></li>\n    <li><strong>布局与配色有实验性改进</strong></li>\n   </ul>\n   <p><strong>整体观感比正式版更轻盈、简洁、顺滑。</strong></p>\n   <h2 data-id=\"heading-10\">🔧 <strong>扩展生态更强：插件作者必装</strong></h2>\n   <p>很多新的 <strong>API</strong>（如 <code>Terminal API</code>、<code>Notebook API</code>、<code>Panel API</code>）都会：</p>\n   <p>👉 <strong>先出现在 Insiders</strong> 👉 <strong>过几个月再进入正式版</strong></p>\n   <p>如果你要开发或测试 <strong>VSCode</strong> 扩展，绿色版是必备。</p>\n   <h2 data-id=\"heading-11\">📥 <strong>如何安装 VS Code 绿色版？</strong></h2>\n   <p>安装非常简单：</p>\n   <p>👉 <strong>官方下载安装</strong>：<code>https://code.visualstudio.com/insiders</code></p>\n   <p>优势：</p>\n   <ul>\n    <li><strong>可与正式版并存</strong></li>\n    <li><strong>不影响原环境</strong></li>\n    <li><strong>卸载不留痕</strong></li>\n    <li><strong>随时体验最新功能</strong></li>\n   </ul>\n   <h2 data-id=\"heading-12\">✔️ <strong>谁适合使用 VS Code 绿色版？</strong></h2>\n   <p>如果你属于下面任意一个人，请立即安装：</p>\n   <ul>\n    <li><strong>喜欢尝鲜</strong></li>\n    <li><strong>重度命令行用户</strong></li>\n    <li><strong>Copilot</strong> 用户</li>\n    <li><strong>插件开发者</strong></li>\n    <li><strong>关注效率 &amp; 新技术</strong></li>\n    <li>想第一时间体验 <strong>VSCode</strong> 未来方向</li>\n   </ul>\n   <p>总结一下绿色版带来的增强：</p>\n   <table>\n    <thead>\n     <tr>\n      <th>功能方向</th>\n      <th>提升</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>🔥 <strong>终端</strong></td>\n      <td>智能提示 + 真终端渲染</td>\n     </tr>\n     <tr>\n      <td>🌳 <strong>Git</strong></td>\n      <td>可视化 <strong>Stash</strong> 管理</td>\n     </tr>\n     <tr>\n      <td>🤖 <strong>AI</strong></td>\n      <td><strong>Copilot</strong> 进入自动化时代</td>\n     </tr>\n     <tr>\n      <td>🖥 <strong>UI</strong></td>\n      <td>更现代、更细腻</td>\n     </tr>\n     <tr>\n      <td>🧩 <strong>插件</strong></td>\n      <td>最新 <strong>API</strong> 先体验</td>\n     </tr>\n    </tbody>\n   </table>\n   <p>一句话：<strong>VSCode Insiders 是真正意义上的“VS Code Pro 版”。</strong></p>\n   <p>如果你还没体验，现在就装一个吧，你会爱上它。</p>\n   <ul>\n    <li><strong>VSCode Insiders 下载地址</strong>：<code>https://code.visualstudio.com/insiders</code></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "VSCode Insiders（绿色版）作为官方的“抢先体验版”，通过集成 AI 能力、终端升级、Git 可视化管理和 UI 优化，已成为开发者的“超强增强版”开发工具，推荐尝鲜和插件开发者使用。",
+  "oneSentenceSummary": "VSCode Insiders（绿色版）作为官方的“抢先体验版”，通过集成 AI 能力、终端升级、Git 可视化管理和 UI 优化，已成为开发者的“超强增强版”开发工具，推荐尝鲜和插件开发者使用。",
+  "summary": "文章详细介绍了 VSCode Insiders（又称绿色版）的强大新功能及优势。它不是一个新版本，而是 VSCode 的抢先体验版，可以与正式版共存，让用户提前体验最新特性。绿色版在终端、Git、AI 和 UI/UX 方面都有显著提升：终端升级支持智能命令补全和真终端渲染器，极大提升命令行体验；Git 管理新增可视化 Stash 功能，方便开发者管理临时改动；AI 方面，Copilot 升级为 Agent 模式，能自动执行多文件修改、代码重构等复杂任务；UI/UX 则进行现代化改进，使整体观感更轻盈。此外，它还是插件开发者测试新 API 的必备工具。文章最后总结了绿色版的五大增强点，并呼吁重度命令行用户、Copilot 用户、插件开发者及关注效率和新技术的人群立即安装体验。尽管功能强大，Insiders 版本作为预览版可能存在一定的稳定性问题和功能未稳定等风险。",
+  "mainPoints": [
+    {
+      "point": "VSCode Insiders 是官方的抢先体验版，可与稳定版共存，提供最新功能，但需注意其潜在的不稳定性。",
+      "explanation": "Insiders 版本允许用户在不影响现有稳定版环境的前提下，提前试用 VSCode 的最新特性和实验性功能，适合喜欢探索新技术的开发者，但作为预览版，需审慎对待其可能存在的 bug 和未成熟功能。"
+    },
+    {
+      "point": "终端功能大幅升级，引入智能命令补全和真终端渲染器提升用户体验。",
+      "explanation": "新的终端功能支持命令、参数和路径的智能提示，并通过 xterm.js 提供更清晰、结构化的输出，将终端从“能用”变为“智能交互环境”。"
+    },
+    {
+      "point": "Git 管理新增可视化 Stash 功能，简化了临时改动的管理流程。",
+      "explanation": "针对开发者频繁切换分支、保存临时改动的痛点，绿色版提供了可视化的 Stash 管理器，实现了“一键 apply/pop/delete”，显著提升了 Git 操作效率和体验。"
+    },
+    {
+      "point": "Copilot 升级为 Agent 模式，能自动执行复杂任务，从智能补全到任务代理。",
+      "explanation": "AI 能力从代码补全进化为能够理解并自动拆解执行多文件修改、代码重构、项目构建等复杂任务，极大地提升了开发自动化和智能化水平。"
+    },
+    {
+      "point": "用户界面和用户体验进行了现代化改进，整体更轻盈、简洁和顺滑。",
+      "explanation": "绿色版对 UI 细节进行优化，包括 Git 同步按钮、悬停信息、状态指示和布局配色，为用户带来更现代、便捷的视觉和操作体验。"
+    }
+  ],
+  "keyQuotes": [
+    "VSCode Insiders 并不是一个新名字，但随着微软不断注入 AI 能力、终端增强、Git 大升级、新 UI ，它已经变成了真正意义上的：VSCode 超强增强版！",
+    "VSCode Insiders 是真正意义上的“VS Code Pro 版”。",
+    "VSCode 的\"更新抢先体验版\"，比正式版更快看到新功能！",
+    "终端从此不再只是\"命令窗\"，而是智能交互环境。",
+    "Copilot 从\"智能补全\" → \"自动执行任务代理\""
+  ],
+  "tags": [
+    "VSCode",
+    "Insiders",
+    "开发工具",
+    "AI辅助开发",
+    "Copilot Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1280,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765176011000,
+  "publishDateStr": "2025-12-08",
+  "publishDateTimeStr": "2025-12-08 06:40:11"
+}

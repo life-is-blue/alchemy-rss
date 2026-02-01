@@ -1,0 +1,59 @@
+{
+  "id": "RAW_fbe993",
+  "title": "谁是最强\"打工 AI\"？OpenAI 亲自测试，结果第一不是自己",
+  "url": "https://www.qbitai.com/2025/09/336858.html",
+  "date": "2025-09-26 06:06:39",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"52\">西风 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"53\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">OpenAI发布最新研究，却在里面夸了一波Claude。</p>\n  <p data-track=\"3\">他们<strong>提出名为GDPval的新基准</strong>，用来衡量AI模型在真实世界具有经济价值的任务上的表现。</p>\n  <p data-track=\"4\">具体来说，GDPval覆盖了<strong>对美国GDP贡献最大的9个行业中的44种职业</strong>，这些职业年均创收合计达3万亿美元。任务基于平均拥有14年经验的行业专家的代表性工作设计而成。</p>\n  <p data-track=\"5\">专业评分人员将主流模型的输出结果与人类专家的成果进行了对比。</p>\n  <p data-track=\"6\">最终测试下来，<strong>Claude Opus 4.1成为表现最佳的模型，47.6%的产出被评定媲美人类专家成果</strong>。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_d5b1e252217b4dee478bd8b0769a3cc8.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"980\" data-height=\"858\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">GPT-5 38.8%的成绩和Claude还是有些差距，位居第二；GPT-4o与人类相比只有12.4%获胜或平局。</p>\n  <p data-track=\"8\">没能成为最优，OpenAI也给自己找补了：不同模型各有优势，Claude Opus 4.1主要是在美学方面突出，而<strong>GPT-5在准确性上更优</strong>。</p>\n  <p data-track=\"9\">OpenAI还表示，同样值得注意的是模型的进步速度，其前沿模型在短短一年内，胜率几乎实现了翻倍。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_70c97805d34b0f4ef434d2db9675e903.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1046\" data-height=\"764\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">最后OpenAI还<strong>开源了包含220项任务的优质子集</strong>，并提供公开的自动评分服务。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_4cbbb6efa13ffb454cd54844273ab421.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"780\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">网友看后纷纷表示，非常因吹斯汀的研究：</p>\n  <blockquote>\n   <p data-track=\"12\">OpenAI各代模型的性能呈线性增长，以及感谢对竞争对手的认可。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_f67fc901c29e03633d4fb67626305a61.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"938\" data-height=\"188\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">还有网友认为，这也可能是奥特曼精心设计的宣传手段，通过吹嘘AI能为GDP带来增长而筹集资金。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_1402d0f4c39aa7891b225100ce961cb6.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"932\" data-height=\"238\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_809c5e4816fb6cff03cc002a7f8d6387.jpeg\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"114\" data-height=\"114\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"14\">下面具体来看一下这项测试。</p>\n  <p data-track=\"16\">OpenAI指出，GDPval相比现有的AI评估，好就好在：</p>\n  <ul>\n   <li data-track=\"17\">任务<strong>基于真实工作成果且关联完成时间与成本</strong>，具备现实性；</li>\n   <li data-track=\"18\">涵盖O*NET（美国职业信息网络）追踪的大部分职业工作活动，具有代表性<strong>广度</strong>；</li>\n   <li data-track=\"19\">任务要求<strong>处理多种格式文件并解析多个参考文件</strong>，涉及计算机使用与多模态；</li>\n   <li data-track=\"20\">除了正确性还需<strong>考虑结构、风格等主观因素</strong>，数据集也可作为评估自动评分系统性能的测试平台；</li>\n   <li data-track=\"21\">以<strong>胜率为主要指标无上限</strong>，支持持续评估；</li>\n   <li data-track=\"22\">任务难度高，<strong>行业专业人士平均需7小时完成</strong>，复杂任务甚至耗时数周。</li>\n  </ul>\n  <p data-track=\"23\">其任务构建流程，首先从确定核心行业与职业入手。</p>\n  <p data-track=\"24\">OpenAI先是筛选出了对美国GDP贡献超5%的9个行业<em>（依据2024年第二季度各行业增加值占美国国内生产总值百分比数据）</em>，再在每个行业内挑选5个贡献工资总额最多且以数字任务为主的职业。</p>\n  <p data-track=\"25\">判断职业是否“以数字任务为主”时，参考O<em>NET中该职业的所有任务，借助GPT-4o对任务按“数字/非数字”分类，结合O</em>NET中任务的相关性、重要性和频率得分加权计算，若60%以上任务为数字任务，则将该职业纳入。</p>\n  <p data-track=\"26\">最终OpenAI<strong>筛选出了44个职业，这些职业合计年创收3万亿美元</strong>。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_c26d55ea6feb5f516b0035b51b62fac8.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"696\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\">接着进行行业专业人士招募，要求参与任务创建的专家至少有4年相关职业经验，简历需体现专业认可度、晋升经历及管理职责。</p>\n  <p data-track=\"28\">经统计，<strong>招募来的行业专家平均经验达14年</strong>。</p>\n  <p data-track=\"29\">这些人还需进一步通过视频面试、背景调查、培训及测试才能参与该项目（OpenAI还会给到一笔优厚报酬），其前雇主涵盖苹果、谷歌、微软、Meta、三星、甲骨文、IBM、摩根大通等众多知名企业与机构，确保专家具备扎实的行业实践基础。</p>\n  <p data-track=\"30\">任务创建环节，<strong>每个GDPval任务包含“需求”和“交付成果”两部分</strong>，行业专家会对照O*NET中自身职业的任务分类设计任务，以保证任务覆盖的广度与代表性。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_203b14035517e22aa9c979e025874353.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"677\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\">为了评估任务质量，OpenAI要求这些专家根据其职业的实际标准，对每项任务的难度、代表性、完成时间和整体质量等进行打分，并结合OEWS（美国劳工统计局职业就业统计）数据中对应职业的中位时薪，<strong>通过“平均完成时间×时薪”计算每个任务的经济价值</strong>。</p>\n  <p data-track=\"32\">最终，<strong>GDPval全集中总共包含1320项任务</strong>，所有任务均经过了“自动化模型筛选+多轮人类专家审核”的迭代流程，每个任务会获得至少3次、平均5次的人工审核。</p>\n  <p data-track=\"33\">专家在各评审阶段会给出详细意见。任务会根据意见反复修改完善。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_bb0713b2018baf0292b10510a85d1700.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"537\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"35\">OpenAI开源了包含220项任务的优质子集，采用了盲态专家pairwise对比法（即专家不知晓待评成果来源的成对对比评分方式），对该子集进行评级。</p>\n  <p data-track=\"36\">每项对比评分平均耗时超过1小时。OpenAI表示还额外邀请了更多职业领域专家，对人类专家与模型输出的成果进行评分。专家需为其选择及排序结果提供详细依据。</p>\n  <p data-track=\"37\">针对优质子集，OpenAI同时开发了实验性<strong>自动评分器</strong>，其与人类专家评分的一致性达66%，仅比人类间评分一致性（71%）低5%。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_9f4e712a996b71840bc0dff8bd6ef39d.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"591\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">对GPT-4o、o4-mini、o3、GPT-5、Claude Opus 4.1、Gemini 2.5 Pro及Grok 4这几款模型进行评估后，结果显示：</p>\n  <p data-track=\"39\">在GDPval优质子集任务中，Claude Opus 4.1是整体表现最佳的模型，尤其在美观性方面（如文档格式、幻灯片布局）表现突出。</p>\n  <p data-track=\"40\">其输出的成果中，有47.6%被评定为优于或等同于人类专家水平的成果。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_3a7047fd34f1a7756881c7d45f474afa.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1064\" data-height=\"660\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"41\">OpenAI各代模型在GDPval上的表现大致呈线性提升。</p>\n  <p data-track=\"42\">而根据下图所示，GPT-5在准确性方面（如严格遵循指令、完成正确计算）优势显著。</p>\n  <p data-track=\"43\">换句话说，GPT-5在纯文本任务上表现更优，但Claude在.pdf、.xlsx、.ppt等文件类型的处理上表现更佳，展现出更强的视觉感知与美观设计能力。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_b4818032c30bba8878e43924a5ab816a.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"625\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"44\">在GDPval优质子集的全部任务中，有略多于50%的任务里，至少有一个模型的输出成果优于人类专家或与人类专家相当。</p>\n  <p data-track=\"45\">OpenAI还指出，将AI模型与人类监督结合，在完成任务时有望比单独人类专家更经济高效。</p>\n  <p data-track=\"46\">无论是“先让模型试做，不满意再自己改”的模式，还是“直接用模型成果”“只让模型试一次就自己做”等模式，都能帮人类节省成本和时间。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_ca91f756929fc5868d1979a8862f9896.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"744\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\">此外，研究发现增加推理努力（如对o3、GPT-5设置不同推理强度）、提供更多任务背景、优化提示词与智能体辅助框架（如通过在容器中支持GET请求，采用“N=4”的“最优N选1”抽样策略，搭配GPT-5作为判断模型）能显著提升模型性能。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_68603114a7cf0ff50e4c95487ec8a3d4.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"648\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"48\">OpenAI也指出了GDPval的局限性，如数据集规模有限（仅44种职业）、聚焦可在计算机上完成的知识工作（不包含体力劳动等）、任务为精准指定的一次性任务（缺乏交互性）、自动评分器存在不足、评估成本高等。</p>\n  <p data-track=\"49\">目前，GDPval尚处于初步阶段，OpenAI计划在未来的迭代版本中，逐步拓展其覆盖范围、增强真实性与交互性，并纳入更多场景细节。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20250926072159_9007ae99ba98ef506c483b20f992ed05.png\" alt=\"谁是最强“打工AI”？OpenAI亲自测试，结果第一不是自己\" data-ic=\"false\" data-width=\"1080\" data-height=\"350\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"50\">By the way，不光OpenAI觉得Claude好，曾经的亲密盟友微软最近传来消息：携手Anthropic优化Microsoft 365 Copilot AI助手（doge）。</p>\n  <p data-track=\"51\"><em>参考链接：</em>\n   <br>\n   <em>[1]https://x.com/OpenAI/status/1971249374077518226</em>\n   <br>\n   <em>[2]https://evals.openai.com/</em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 GDPval 新基准，用于评估 AI 模型在真实世界经济任务中的表现，结果显示 Claude Opus 4.1 优于 GPT-5 和 GPT-4o，但在准确性方面 GPT-5 更优。",
+  "oneSentenceSummary": "OpenAI 发布 GDPval 新基准，用于评估 AI 模型在真实世界经济任务中的表现，结果显示 Claude Opus 4.1 优于 GPT-5 和 GPT-4o，但在准确性方面 GPT-5 更优。",
+  "summary": "OpenAI 最新研究提出了名为 GDPval 的新基准，旨在衡量 AI 模型在具有经济价值的真实世界任务上的表现。该基准覆盖了对美国 GDP 贡献最大的 9 个行业中的 44 种职业，任务设计基于平均拥有 14 年经验的行业专家。通过专业评分人员对比主流模型输出与人类专家成果，结果显示 Claude Opus 4.1 表现最佳，47.6%的产出媲美人类专家；GPT-5 以 38.8%位居第二，GPT-4o 为 12.4%。OpenAI 指出 Claude Opus 4.1 在美学方面突出，而 GPT-5 在准确性上更优。文章详细阐述了 GDPval 基准的优势，如任务基于真实工作、覆盖广度、处理多模态文件、考虑主观因素等。OpenAI 还开源了包含 220 项任务的优质子集，并提供了自动评分服务。研究同时探讨了 AI 模型与人类结合的经济效益，并指出了 GDPval 的局限性及其未来发展计划。",
+  "mainPoints": [
+    {
+      "point": "GDPval 基准创新性地聚焦于 AI 在真实世界经济任务中的表现。",
+      "explanation": "该基准通过模拟对美国 GDP 有显著贡献的职业任务，评估 AI 模型在实际工作场景中的价值，为 AI 能力评估提供了更具经济和社会意义的视角。"
+    },
+    {
+      "point": "Claude Opus 4.1 在 GDPval 综合表现中超越 OpenAI 自家模型。",
+      "explanation": "测试结果显示 Claude Opus 4.1 在整体表现上领先，尤其在文档格式和幻灯片布局等美观性方面突出，这表明其他厂商在特定领域已具备强大竞争力。"
+    },
+    {
+      "point": "AI 模型在特定能力上各有侧重，GPT-5 在准确性方面表现更优。",
+      "explanation": "尽管 Claude 综合排名靠前，但 GPT-5 在严格遵循指令和正确计算等准确性方面优势显著，提示模型选型需根据具体任务需求进行权衡。"
+    },
+    {
+      "point": "AI 与人类协作模式有望显著提升任务完成的经济效益。",
+      "explanation": "研究指出，结合 AI 模型与人类监督的模式，如 AI 初做人类修改，能有效节省成本和时间，为企业和个人提供更高效的工作解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 发布最新研究，却在里面夸了一波 Claude。",
+    "最终测试下来，Claude Opus 4.1 成为表现最佳的模型，47.6%的产出被评定媲美人类专家成果。",
+    "OpenAI 还表示，同样值得注意的是模型的进步速度，其前沿模型在短短一年内，胜率几乎实现了翻倍。",
+    "在 GDPval 优质子集任务中，Claude Opus 4.1 是整体表现最佳的模型，尤其在美观性方面（如文档格式、幻灯片布局）表现突出。",
+    "OpenAI 还指出，将 AI 模型与人类监督结合，在完成任务时有望比单独人类专家更经济高效。"
+  ],
+  "tags": [
+    "AI模型评估",
+    "模型能力",
+    "GDPval",
+    "基准测试",
+    "真实世界任务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 92,
+  "wordCount": 2577,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758866799000,
+  "publishDateStr": "2025-09-26",
+  "publishDateTimeStr": "2025-09-26 06:06:39"
+}

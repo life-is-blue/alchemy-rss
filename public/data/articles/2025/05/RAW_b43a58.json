@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b43a58",
+  "title": "Anthropic API 智能体构建新功能发布",
+  "url": "https://www.anthropic.com/news/agent-capabilities-api",
+  "date": "2025-05-24 00:58:12",
+  "author": "Anthropic News",
+  "siteName": "Anthropic News",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Today, we're announcing four new capabilities on the Anthropic API that enable developers to build more powerful AI agents: the code execution tool, MCP connector, Files API, and the ability to cache prompts for up to one hour.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"building-better-ai-agents\">Building better AI agents</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Together with <a href=\"https://www.anthropic.com/news/claude-4\">Claude Opus 4 and Sonnet 4</a>, these beta features enable developers to build agents that execute code for advanced data analysis, connect to external systems through MCP servers, store and access files efficiently across sessions, and maintain context for up to 60 minutes with cost-effective caching—without building custom infrastructure.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">For example, a project management AI agent can use the MCP connector with Asana to reference tasks and assign work, upload relevant reports via the Files API, analyze progress and risks with the code execution tool, and maintain full context throughout—all while keeping costs down through extended prompt caching.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">These capabilities join existing features like <a href=\"https://www.anthropic.com/news/web-search-api\">web search</a> and <a href=\"https://www.anthropic.com/news/introducing-citations-api\">citations</a> as part of a comprehensive toolkit for building AI agents. Read on to explore each new capability in detail.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"code-execution-tool\">Code execution tool</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">We're introducing a <a href=\"https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool\">code execution tool</a> on the Anthropic API, giving Claude the ability to run Python code in a sandboxed environment to produce computational results and data visualizations. This transforms Claude from a code-writing assistant into a data analyst that can iterate on visualizations, clean datasets, and derive insights directly within API calls.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"Video_post-wrapper__uy5Rq\">\n    <div class=\"Video_post-video-container__oACj_\">\n     <!--$!-->\n     <template data-dgst=\"BAILOUT_TO_CLIENT_SIDE_RENDERING\"></template><!--/$-->\n    </div>\n   </figure>\n  </div>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">With the code execution tool, Claude can load datasets, generate exploratory charts, identify patterns, and iteratively refine outputs based on execution results—all within a single interaction. This means that Claude can handle complex analytical tasks end-to-end, rather than just suggesting code for you to run separately.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Key use cases include:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li><strong>Financial modeling</strong>: Generate financial projections, analyze investment portfolios, and calculate complex financial metrics.</li>\n   <li><strong>Scientific computing</strong>: Execute simulations, process experimental data, and analyze research datasets.</li>\n   <li><strong>Business intelligence</strong>: Create automated reports, analyze sales data, and generate performance dashboards.</li>\n   <li><strong>Document processing</strong>: Extract and transform data across formats, generate formatted reports, and automate document workflows.</li>\n   <li><strong>Statistical analysis</strong>: Perform regression analysis, hypothesis testing, and predictive modeling on datasets.</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Organizations receive 50 free hours of usage with the code execution tool per day, then pay $0.05 per hour per container for additional usage. Explore the <a href=\"https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool\">documentation</a> to learn more about pricing.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"mcp-connector\">MCP connector</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The <a href=\"https://docs.anthropic.com/en/docs/agents-and-tools/mcp-connector\">MCP connector</a> on the Anthropic API enables developers to connect Claude to any remote Model Context Protocol (MCP) server without writing client code.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Previously, connecting to MCP servers required building your own client harness to handle MCP connections. Now, the Anthropic API handles all connection management, tool discovery, and error handling automatically. Simply add a remote MCP server URL to your API request and you can immediately access powerful third-party tools, dramatically reducing the complexity of building tool-enabled agents.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">When Claude receives a request with MCP servers configured, it automatically:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>Connects to the specified MCP servers</li>\n   <li>Retrieves available tools</li>\n   <li>Reasons about what tool to call and what arguments to pass</li>\n   <li>Executes tool calls agentically until a sufficient result is achieved</li>\n   <li>Manages authentication and error handling</li>\n   <li>Returns the enhanced response with integrated data</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The growing ecosystem of remote MCP servers means you can easily add capabilities to your AI applications without building one-off integrations. You can integrate with any remote MCP server, including those from <a href=\"https://zapier.com/mcp\">Zapier</a> and <a href=\"https://developers.asana.com/docs/using-asanas-model-control-protocol-mcp-server\">Asana</a>. See more remote MCP servers in our <a href=\"https://docs.anthropic.com/en/docs/agents-and-tools/remote-mcp-servers\">documentation</a>.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"files-api\">Files API</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The <a href=\"https://docs.anthropic.com/en/docs/build-with-claude/files\">Files API</a> simplifies how developers store and access documents when building with Claude. Instead of managing file uploads in every request, you can now upload documents once and reference them repeatedly across conversations.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">This streamlines development workflows, particularly for applications that need to work with large document sets such as knowledge bases, technical documentation, or datasets.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The Files API will integrate with the code execution tool, enabling Claude to access and process uploaded files directly during code execution and produce files such as charts and graphs as part of the response. This means developers can upload a dataset through the Files API once, then have Claude analyze it across multiple sessions without re-uploading.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"extended-prompt-caching\">Extended prompt caching</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Developers can now choose between our standard 5-minute time to live (TTL) for <a href=\"https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching\">prompt caching</a> or opt for an <a href=\"https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching#1-hour-cache-duration-beta\">extended 1-hour TTL</a> at an additional cost—a 12x improvement that can reduce expenses for long-running agent workflows. With extended caching, customers can provide Claude with extensive background knowledge and examples while reducing costs by up to 90% and latency by up to 85% for long prompts.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">This makes it practical to build agents that maintain context over extended periods, whether they're handling multi-step workflows, analyzing complex documents, or coordinating with other systems. Long-running agent applications that previously faced prohibitive costs can now operate efficiently at scale.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"getting-started\">Getting started</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">All of these features are now available in public beta on the Anthropic API. <a href=\"https://docs.anthropic.com/en/docs/overview\">Visit our documentation</a> to learn more or <a href=\"https://www.youtube.com/live/EvtPBaaykdo\">watch the keynote</a> from our developer conference to see these capabilities in action.</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 发布四项 API Beta 版新功能，助力开发者构建更强大的 AI 智能体。新功能包括代码执行和扩展缓存。",
+  "oneSentenceSummary": "Anthropic 发布四项 API Beta 版新功能，助力开发者构建更强大的 AI 智能体。新功能包括代码执行和扩展缓存。",
+  "summary": "Anthropic 在其 API 上发布了四个新的 Beta 版功能，旨在增强 AI 智能体开发。这些功能包括：用于在沙盒环境中运行 Python 代码的代码执行工具，使 Claude 成为数据分析师；MCP 连接器简化了集成 Asana 和 Zapier 等外部工具的过程，无需自定义客户端代码；文件 API 允许开发者存储和引用跨会话的文档，以实现高效的知识库和数据处理。最后，扩展的 Prompt 缓存提供 1 小时的 TTL 选项，可显著降低成本和延迟，适用于需要大量背景信息的长时间运行的智能体工作流。 这些功能与网络搜索等现有功能相结合，为构建复杂的 AI 应用提供了全面的工具包。",
+  "mainPoints": [
+    {
+      "point": "新的代码执行工具允许 Claude 直接执行数据分析。",
+      "explanation": "Claude 可以在沙盒 Python 环境中运行代码，直接在 API 调用中完成数据清洗、可视化和科学计算等端到端分析任务。"
+    },
+    {
+      "point": "MCP 连接器简化了与第三方服务的集成。",
+      "explanation": "MCP 连接器简化了与 Asana、Zapier 等模型上下文协议服务器的连接管理和工具发现，大幅降低了智能体添加外部功能的复杂性。"
+    },
+    {
+      "point": "文件 API 简化了跨会话的文档存储和访问。",
+      "explanation": "文件 API 支持一次上传、多次引用文档，提高智能体处理大型知识库或数据集的效率，尤其是在与代码执行结合使用时。"
+    },
+    {
+      "point": "扩展的 Prompt 缓存降低了智能体工作流的成本和延迟。",
+      "explanation": "扩展的 Prompt 缓存提供 1 小时缓存，有效维护上下文，降低成本（高达 90%）和延迟（高达 85%），适用于需要大量背景信息的长时间运行的智能体应用。"
+    }
+  ],
+  "keyQuotes": [
+    "今天，我们宣布了 Anthropic API 上的四项新功能，这些功能使开发者能够构建更强大的 AI 智能体...",
+    "这使得 Claude 不仅是代码编写助手，更是一位数据分析师，能够迭代可视化结果、清理数据集，并在 API 调用中直接获取深刻洞见。",
+    "现在，Anthropic API 自动处理所有连接管理、工具发现和错误处理。",
+    "文件 API 简化了开发者在使用 Claude 构建应用时，文档的存储和访问流程",
+    "通过扩展缓存，客户可以为 Claude 提供广泛的背景知识和示例，同时对于长 Prompt，将成本降低高达 90％，并将延迟降低高达 85％。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "Anthropic API",
+    "工具使用",
+    "代码执行",
+    "MCP 连接器"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 811,
+  "domain": "anthropic.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8b9413",
+  "sourceName": "Anthropic News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748048292629,
+  "publishDateStr": "2025-05-24",
+  "publishDateTimeStr": "2025-05-24 00:58:12"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_358755",
+  "title": "断交 OpenAI 后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物",
+  "url": "https://www.qbitai.com/2025/02/256492.html",
+  "date": "2025-02-20 16:54:43",
+  "author": "白交",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"41\">白交 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"42\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">与OpenAI断交之后，<strong>Figure</strong>首个成果出炉：</p>\n  <p data-track=\"3\"><strong>Helix</strong>，一个端到端通用控制模型，它能让机器人像人一样感知、理解和行动。</p>\n  <p data-track=\"4\">只需自然语言提示，<strong>机器人就能拿起任何东西</strong>，哪怕是从没见过的东西，比如这个活泼的小仙人掌。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/936ef6c84963238f9e9eaedf4493f2ec.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/936ef6c84963238f9e9eaedf4493f2ec.gif\">\n  </div>\n  <p data-track=\"5\">从官方放出的演示中可以看到，它在接收到人类的提示后，就会按照指令逐一拿起桌上的物品放进冰箱。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b83b6aa7-6370-47da-c119-f608cea95800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b83b6aa7-6370-47da-c119-f608cea95800/public\">\n  </div>\n  <p data-track=\"6\">“机器人站着不语，只是一味地执行指令”</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/555ae794-7c59-4ee4-c987-3bdcb6090100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/555ae794-7c59-4ee4-c987-3bdcb6090100/public\">\n  </div>\n  <p data-track=\"8\">两个机器人也可以共同协作，但有意思的一点是，他们竟然<strong>共用同一组神经网络</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c76902b1-4ee6-417f-2ae6-4f2d9cc90400/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c76902b1-4ee6-417f-2ae6-4f2d9cc90400/public\">\n  </div>\n  <p data-track=\"10\">来看看具体是怎么一回事。</p>\n  <p data-track=\"12\">从技术报告上看，这个通用“视觉-语言-动作” (VLA) 模型完成了一系列的首创：</p>\n  <p data-track=\"13\"><strong>整个上身控制</strong>，Helix是首个能对整个上身（包括手腕、躯干、头部和各个手指）进行高速率（200Hz）连续控制的VLA。</p>\n  <p data-track=\"14\"><strong>多机器人协作</strong>，第一个同时在两个机器人上运行的 VLA，使它们能够使用从未见过的物品解决共享的、远程操作任务。</p>\n  <p data-track=\"15\"><strong>拿起任何东西</strong>，只需按照自然语言提示，就能拿起几乎任何小型家居物品，包括数千种它们从未遇到过的物品。</p>\n  <p data-track=\"16\"><strong>一个神经网络</strong>，与之前的方法不同，Helix 使用一组神经网络权重来学习所有行为（挑选和放置物品、使用抽屉和冰箱以及跨机器人交互），而无需任何针对特定任务的微调。</p>\n  <p data-track=\"17\"><strong>可立即商业化部署</strong>，第一款完全在嵌入式低功耗 GPU 上运行的 VLA，可立即进行商业部署。</p>\n  <p data-track=\"18\">Helix由两个系统组成，两个系统经过端到端训练，并且可以进行通信。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/53a69763-f2df-461f-edbf-cbb7dc91a500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/53a69763-f2df-461f-edbf-cbb7dc91a500/public\">\n  </div>\n  <p data-track=\"19\"><strong>系统2</strong>：VLM主干，基于在互联网规模数据上预训练的7B开源VLM，它将单目机器人图像和机器人状态信息（包括手腕姿势和手指位置）投射到视觉语言嵌入空间后进行处理。</p>\n  <p data-track=\"20\">工作频率为 7-9 Hz，用于场景理解和语言理解，可对不同对象和语境进行广泛的泛化。</p>\n  <p data-track=\"21\"><strong>系统1</strong>：80M参数的交叉注意力Transformer，用于处理底层控制。它依靠一个完全卷积、多尺度的视觉骨干网进行视觉处理，该骨干网由完全在模拟中完成的预训练初始化而成。</p>\n  <p data-track=\"22\">将 S2 生成的潜在语义表征转化为精确的连续机器人动作，包括所需的手腕姿势、手指弯曲和外展控制，以及躯干和头部方向目标。速度为200Hz。</p>\n  <p data-track=\"23\">他们在动作空间中附加了一个合成的 “任务完成百分比 ”动作，使 Helix 能够预测自己的终止条件，从而更容易对多个任务进行排序。</p>\n  <p data-track=\"24\">这种解耦架构允许每个系统在其最佳时间尺度上运行。S2可以“慢慢思考”高级目标，而 S1 可以“快速思考”以实时执行和调整动作。</p>\n  <p data-track=\"25\">训练过程是<strong>完全端到端</strong>，从原始像素和文本命令映射到具有标准回归损失的连续动作。</p>\n  <p data-track=\"26\">并且Helix 不需要针对特定任务进行调整；它保持单个训练阶段和单个神经网络权重集，无需单独的动作头或每个任务的微调阶段。</p>\n  <p data-track=\"28\">CEO透露，这项工作他们花费了一年多的时间，旨在解决通用机器人问题——</p>\n  <p data-track=\"29\">像人类一样，Helix可以理解语音、推理问题并能抓住任何物体。</p>\n  <p data-track=\"30\">而就在两周前，他们宣布取消与OpenAI之间的合作关系，当时就透露会在接下来的30天展示<strong>“没人在人形机器人上见过的东西”</strong>。</p>\n  <p data-track=\"31\">如今已经揭晓，就是Helix。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3df1205-a1d5-4650-256b-b3a94d619300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3df1205-a1d5-4650-256b-b3a94d619300/public\">\n  </div>\n  <p data-track=\"32\">值得一提的是，Helix还代表着一种新型的Scaling Law。</p>\n  <p data-track=\"33\">他们认为，家庭是机器人面临的最大挑战。与受控的工业环境不同，家里堆满了无数的物品。为了让机器人在家庭中发挥作用，它们需要能够<strong>按需产生智能的新行为</strong>，尤其是对它们从未见过的物体。</p>\n  <p data-track=\"34\">当前，教机器人一种新行为需要大量的人力。要么是数小时的博士级专家手动编程，要么是数千次演示。</p>\n  <p data-track=\"35\">这两种方式成本都很高，所以都是行不通的（dont work）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"断交OpenAI后，人形机器人独角兽首秀：一个神经网络控制整个上身，能听懂人话可抓万物\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9097304-c223-4482-8846-9f5f97151600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9097304-c223-4482-8846-9f5f97151600/public\">\n  </div>\n  <p data-track=\"36\">与早期的机器人系统不同，<strong>Helix</strong>能够即时生成长视界、协作、灵巧的操作，而无需任何特定任务的演示或大量的手动编程。</p>\n  <p data-track=\"37\">Helix 表现出强大的对象泛化能力，能够拾取数千种形状、大小、颜色和材料特性各异的新奇家居用品，而这些物品在训练中从未见过，只需用自然语言询问即可。</p>\n  <p data-track=\"38\">这意味着，这代表 Figure 在<strong>扩展人形机器人行为</strong>方面迈出了变革性的一步。</p>\n  <p data-track=\"39\">到时候，当Helix 扩大1000倍、机器人扩展到十亿级别，会是什么样子？有点子期待。</p>\n  <p data-track=\"40\">参考链接：<br>\n    [1]https://www.figure.ai/news/helix<br>\n    [2]https://x.com/adcock_brett/status/1892577936869327233</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Figure 发布人形机器人控制模型 Helix，该模型无需针对特定任务进行微调，即可通过自然语言指令控制机器人抓取各种物体，具备强大的泛化能力。",
+  "oneSentenceSummary": "Figure 发布人形机器人控制模型 Helix，该模型无需针对特定任务进行微调，即可通过自然语言指令控制机器人抓取各种物体，具备强大的泛化能力。",
+  "summary": "Figure 公司发布了其首个成果——人形机器人通用控制模型 Helix。该模型是一个端到端的视觉 - 语言 - 动作（VLA）模型，能让机器人像人一样感知、理解和行动。Helix 无需针对特定任务进行微调，仅通过自然语言提示，机器人就能拿起各种物体，即使是未曾见过的。该模型实现了多个首创，包括对整个上身的高速控制、多机器人协作、以及在嵌入式低功耗 GPU 上的商业化部署。Helix 由两个系统组成，VLM 主干负责场景和语言理解，将单目机器人图像和机器人状态信息投射到视觉语言嵌入空间，而 Transformer 则负责底层控制，将语义表征转化为精确的连续机器人动作。两个系统协同工作，使得机器人能够理解语音、推理问题并抓取物体。此外，Helix 在动作空间中附加了一个合成的 “任务完成百分比” 动作，使其更容易对多个任务进行排序。该成果代表着 Figure 在扩展人形机器人行为方面迈出了重要一步。",
+  "mainPoints": [
+    {
+      "point": "Helix 模型实现端到端控制，无需特定任务微调，降低了开发和部署成本",
+      "explanation": "该模型通过一套神经网络权重学习所有行为，避免了传统方法中针对特定任务的微调，降低了开发和部署成本。"
+    },
+    {
+      "point": "Helix 模型具备强大的泛化能力，可以处理未见过的物体，扩展了人形机器人的应用范围",
+      "explanation": "Helix 模型能够拾取各种形状、大小、颜色和材料各异的家居用品，而这些物品在训练中从未见过，只需用自然语言询问即可。这代表 Figure 在扩展人形机器人行为方面迈出了变革性的一步。"
+    },
+    {
+      "point": "Helix 模型基于解耦架构，实现高效的场景理解和动作执行，为未来机器人发展提供了新思路",
+      "explanation": "该模型采用双系统架构，分别负责场景理解和底层控制，使得机器人能够理解高级目标并实时执行和调整动作。这种架构为未来机器人发展提供了新思路。"
+    }
+  ],
+  "keyQuotes": [
+    "Helix，一个端到端通用控制模型，它能让机器人像人一样感知、理解和行动。",
+    "与早期的机器人系统不同，Helix 能够即时生成长视界、协作、灵巧的操作，而无需任何特定任务的演示或大量的手动编程。",
+    "为了让机器人在家庭中发挥作用，它们需要能够按需产生智能的新行为，尤其是对它们从未见过的物体。",
+    "他们认为，家庭是机器人面临的最大挑战。与受控的工业环境不同，家里堆满了无数的物品。为了让机器人在家庭中发挥作用，它们需要能够按需产生智能的新行为，尤其是对它们从未见过的物体。"
+  ],
+  "tags": [
+    "人形机器人",
+    "具身智能",
+    "控制模型",
+    "自然语言处理",
+    "多模态"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1603,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740070483000,
+  "publishDateStr": "2025-02-20",
+  "publishDateTimeStr": "2025-02-20 16:54:43"
+}

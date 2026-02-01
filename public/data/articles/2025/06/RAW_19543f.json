@@ -1,0 +1,55 @@
+{
+  "id": "RAW_19543f",
+  "title": "谷歌太壕了！编程 Agent 大招至简：开源且免费，百万上下文、多模态、MCP 全支持",
+  "url": "https://www.qbitai.com/2025/06/301735.html",
+  "date": "2025-06-26 02:45:05",
+  "author": "鱼羊",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"41\">鱼羊 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"42\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>开源且免费</strong>！谷歌对编程Agent出手了。</p>\n  <p data-track=\"3\">推出<strong>Gemini CLI</strong>，让你在终端里就能访问Gemini，并且提供“<strong>业界最高免费限额</strong>”：</p>\n  <p data-track=\"4\">100万上下文窗口的Gemini 2.5 Pro，每分钟允许60次模型请求，每天的上限则是1000次。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b98cb53f-d107-49b7-6cf4-9dd539493f00/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b98cb53f-d107-49b7-6cf4-9dd539493f00/public\">\n  </div>\n  <p data-track=\"5\">官方还着重提醒：</p>\n  <p data-track=\"6\">Gemini CLI写码很强，但不只能拿来编程哦。</p>\n  <p data-track=\"7\">调用一下Veo和Imagen，在命令行里搞视频生成，也就是一句话的事：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/f9cdbdcc95f370fafcd565dc25fcbadd.gif\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/f9cdbdcc95f370fafcd565dc25fcbadd.gif\">\n  </div>\n  <p data-track=\"8\">消息一出，讨论度立刻爆炸，GitHub仓库标星也一夜狂飙至10.8k。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/065e08a1-5f0c-40e4-af52-06099e2b7500/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/065e08a1-5f0c-40e4-af52-06099e2b7500/public\">\n  </div>\n  <p data-track=\"9\">有网友干脆给Cursor打出了RIP。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/57bb0472-2825-4976-fc10-a9e55ecb3600/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/57bb0472-2825-4976-fc10-a9e55ecb3600/public\">\n  </div>\n  <p data-track=\"10\">而对于更直接能拿来对标的Claude Code和OpenAI Codex CLI，更是一句免费盖过所有（doge）。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9d657d1-eee9-4410-24c5-34032a519100/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9d657d1-eee9-4410-24c5-34032a519100/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d3e6e26c-ec98-49d8-378c-7621a3f30900/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d3e6e26c-ec98-49d8-378c-7621a3f30900/public\">\n  </div>\n  <p data-track=\"11\">简而言之，这回家大业大的谷歌，实属“壕”气干云，下血本了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f4a40a17-b218-4b4b-4451-e2c408d0b200/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f4a40a17-b218-4b4b-4451-e2c408d0b200/public\">\n  </div>\n  <p data-track=\"13\">来看一下Gemini CLI的详细情况。</p>\n  <p data-track=\"14\">官方介绍，其能力涵盖代码理解、文件操作、命令执行和动态故障排除等诸多方面。</p>\n  <p data-track=\"15\">简单来说，有了Gemini CLI，大家就可以在命令行里用自然语言指挥Gemini模型写代码、Debug了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3711a0a1-d026-402d-d814-f3b65e1a3400/public\" alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3711a0a1-d026-402d-d814-f3b65e1a3400/public\">\n  </div>\n  <p data-track=\"16\">更具体的应用实例包括，编码方面：</p>\n  <ul>\n   <li data-track=\"17\">支持100万上下文窗口，可以查询和编辑大型代码库；</li>\n   <li data-track=\"18\">集成GitHub，支持自动执行操作任务，比查询pull requests、管理代码分支；</li>\n  </ul>\n  <p data-track=\"19\">工具调用方面：</p>\n  <ul>\n   <li data-track=\"20\">支持多模态，能根据PDF或草图直接生成App。</li>\n   <li data-track=\"21\">支持MCP，可以用Imagen、Veo、Lyria等生图生视频；</li>\n   <li data-track=\"22\">可以使用谷歌搜索。</li>\n  </ul>\n  <p data-track=\"23\">网友实测还显示，跑起并行来，Gemini CLI的表现是酱婶的：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/f4d1b951df62211cdde54833354b809d.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/f4d1b951df62211cdde54833354b809d.gif\">\n  </div>\n  <p data-track=\"24\">除此之外，Gemini CLI和谷歌的AI编程助手Gemini Code Assist是技术共享的。</p>\n  <p data-track=\"25\">开源协议方面，Gemini CLI遵循的是<strong>Apache 2.0</strong>。</p>\n  <p data-track=\"27\">安装Gemini CLI前，需要先检查一下是否已经安装了Node.js 18或更高版本。</p>\n  <p data-track=\"28\">安装命令是：</p>\n  <p class=\"syl-line-pure-english\" data-track=\"29\">npx https://github.com/google-gemini/gemini-cli</p>\n  <p data-track=\"30\">或者：</p>\n  <p class=\"syl-line-pure-english\" data-track=\"31\">npm install -g @google/gemini-cli<br class=\"sysbr\">\n    gemini</p>\n  <p data-track=\"32\">另外还需要登录一下谷歌账号，以获取免费额度。</p>\n  <p data-track=\"33\">如果需要使用特定模型，或者更大的用量，则需要申请一个API密钥。</p>\n  <p class=\"syl-line-pure-english\" data-track=\"34\">export GEMINI_API_KEY=”YOUR_API_KEY”</p>\n  <p data-track=\"35\">想要试玩的话，官方还提供了一些prompt示例。</p>\n  <p data-track=\"36\">比如自动化工作流程：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"37\">Make me a slide deck showing the git history from the last 7 days, grouped by feature and team member.</p>\n  </blockquote>\n  <p data-track=\"38\">更多示例可以在GitHub仓库中查看。</p>\n  <p data-track=\"39\">那就，玩起来？</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌太壕了！编程Agent大招至简：开源且免费，百万上下文、多模态、MCP全支持\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/abb0071c-a226-4280-d345-b21ff4acc500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/abb0071c-a226-4280-d345-b21ff4acc500/public\">\n  </div>\n  <p data-track=\"40\">开源链接：<br>\n    https://github.com/google-gemini/gemini-cli<br>\n    参考链接：<br>\n    https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/</p>\n  <p>— 完 —</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谷歌开源免费编程 Agent 工具 Gemini CLI，提供百万上下文、多模态及慷慨免费额度，赋能终端编程与多模态交互。",
+  "oneSentenceSummary": "谷歌开源免费编程 Agent 工具 Gemini CLI，提供百万上下文、多模态及慷慨免费额度，赋能终端编程与多模态交互。",
+  "summary": "文章详细介绍了谷歌最新推出的开源免费编程 Agent 工具 Gemini CLI。该工具允许开发者直接在终端通过自然语言与强大的 Gemini 模型进行交互，执行代码理解、编写、文件操作、Debug 等任务。其亮点包括提供业界最高的免费使用额度（百万上下文的 Gemini 2.5 Pro、每日 1000 次请求），支持处理大型代码库，并集成了 GitHub 功能。更进一步，Gemini CLI 利用 Gemini 的多模态和 MCP 能力，可在终端实现根据草图生成 App 或通过调用 Imagen/Veo 进行生图生视频等操作。文章提供了安装指南和 Prompt 示例，并提及了其与 Gemini Code Assist 的技术共享关系，强调了其开源（Apache 2.0 协议）的特性，引发了技术社区的广泛关注和讨论。",
+  "mainPoints": [
+    {
+      "point": "谷歌发布开源免费的 Gemini CLI，大幅降低 AI 编程工具使用门槛。",
+      "explanation": "通过提供开源代码和慷慨的免费使用额度，谷歌让更多开发者能够无障碍地在终端体验强大的 Gemini 模型能力，推动 AI 辅助编程普及。"
+    },
+    {
+      "point": "Gemini CLI 提供百万上下文和代码理解能力，有效支持大型代码库操作。",
+      "explanation": "利用 Gemini 2.5 Pro 的百万上下文窗口，CLI 工具能够理解和编辑大型项目代码，解决了传统工具在处理复杂项目时的限制，提升了开发效率。"
+    },
+    {
+      "point": "集成了多模态和 MCP 能力，扩展了终端 AI 工具的应用场景。",
+      "explanation": "用户不仅能进行编程，还能利用 Gemini CLI 进行跨模态交互，如根据草图生成代码，或在命令行调用图像/视频生成模型，丰富了终端工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "开源且免费！谷歌对编程 Agent 出手了。",
+    "推出 Gemini CLI，让你在终端里就能访问 Gemini，并且提供\"业界最高免费限额\"：",
+    "简单来说，有了 Gemini CLI，大家就可以在命令行里用自然语言指挥 Gemini 模型写代码、Debug 了。",
+    "支持 100 万上下文窗口，可以查询和编辑大型代码库；",
+    "支持多模态，能根据 PDF 或草图直接生成 App。"
+  ],
+  "tags": [
+    "编程 Agent",
+    "Gemini CLI",
+    "大语言模型",
+    "多模态",
+    "多模态内容生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 897,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750905905000,
+  "publishDateStr": "2025-06-26",
+  "publishDateTimeStr": "2025-06-26 02:45:05"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_cfd87d95",
+  "title": "智谱新模型也用 DeepSeek 的 MLA，苹果 M5 就能跑",
+  "url": "https://www.qbitai.com/2026/01/370652.html",
+  "date": "2026-01-20 09:19:49",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"22\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">智谱AI上市后，再发新成果。</p>\n  <p data-track=\"3\">开源轻量级大语言模型GLM-4.7-Flash，直接替代前代GLM-4.5-Flash，API免费开放调用。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110444_b2e8c60baa9b6358d5962929f42d8eb8.webp\" data-src=\"https://image.jido.dev/20260120110444_b2e8c60baa9b6358d5962929f42d8eb8.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">这是一个30B总参数、仅3B激活参数的混合专家（MoE）架构模型，官方给它的定位是“本地编程与智能体助手”。</p>\n  <p data-track=\"5\">在SWE-bench Verified代码修复测试中，GLM-4.7-Flash拿下59.2分，“人类最后的考试”等评测中也显著超越同规模的Qwen3-30B和GPT-OSS-20B。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110444_63a0ee994273b159667817cb06687a77.webp\" data-src=\"https://image.jido.dev/20260120110444_63a0ee994273b159667817cb06687a77.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">作为去年12月发布的旗舰模型GLM-4.7的轻量化版本，GLM-4.7-Flash继承了GLM-4系列在编码和推理上的核心能力，同时针对效率做了专门优化。</p>\n  <p data-track=\"7\">除了编程，官方还推荐将这个模型用于创意写作、翻译、长上下文任务，甚至角色扮演场景。</p>\n  <p data-track=\"9\">GLM-4.7-Flash沿用了该系列的”混合思考模型”的设计。</p>\n  <p data-track=\"10\">总参数量300亿，但实际推理时仅激活约30亿参数，使模型在保持能力的同时大幅降低计算开销。</p>\n  <p data-track=\"11\">上下文窗口支持到200K，既可以云端API调用，也支持本地部署。</p>\n  <p data-track=\"12\">目前官方还没有给出技术报告，更多细节还要从配置文件自己挖掘。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110445_1e45c8f2f20066fb7de6e38dc32b1475.webp\" data-src=\"https://image.jido.dev/20260120110445_1e45c8f2f20066fb7de6e38dc32b1475.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\">有开发者注意到一个重要细节：GLM团队这次首次采用了MLA（Multi-head Latent Attention）架构。这一架构此前由DeepSeek-v2率先使用并验证有效，如今智谱也跟进了。</p>\n  <p data-track=\"14\">从具体结构来看，GLM-4.7-Flash的深度与GLM-4.5 Air和Qwen3-30B-A3B接近，但专家数量有所不同——它采用64个专家而非128个，激活时只调用5个（算上共享专家）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110444_0c928d846cb2b11bffdb8cad9417c335.webp\" data-src=\"https://image.jido.dev/20260120110444_0c928d846cb2b11bffdb8cad9417c335.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">目前发布不到12小时，HuggingFace、vLLM等主流平台就提供了day0支持。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110444_459f1a0d38a28ab0137f13915a2052c9.webp\" data-src=\"https://image.jido.dev/20260120110444_459f1a0d38a28ab0137f13915a2052c9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110444_77f4adf9648294a721b676b3ccd79d22.webp\" data-src=\"https://image.jido.dev/20260120110444_77f4adf9648294a721b676b3ccd79d22.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"16\">官方也在第一时间提供了对华为昇腾NPU的支持。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110444_1ed7b314f827cc7b9ef1ce71950bb5eb.webp\" data-src=\"https://image.jido.dev/20260120110444_1ed7b314f827cc7b9ef1ce71950bb5eb.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"17\">本地部署方面，经开发者实测在32GB统一内存、M5芯片的苹果笔记本上能跑到43 token/s的速度。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110445_4dd107b476609ad16f484563c03bea17.webp\" data-src=\"https://image.jido.dev/20260120110445_4dd107b476609ad16f484563c03bea17.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"18\">官方API平台上基础版GLM-4.7-Flash完全免费（限1个并发），高速版GLM-4.7-FlashX价格也相当白菜。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110446_153b6cc3b23c7811e3a22727bb735412.webp\" data-src=\"https://image.jido.dev/20260120110446_153b6cc3b23c7811e3a22727bb735412.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"19\">对比同类模型，在上下文长度支持和输出token价格上有优势，但目前延迟和吞吐量还有待优化。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260120110445_f5d733424be6dcf732e26fc7a8836c30.webp\" data-src=\"https://image.jido.dev/20260120110445_f5d733424be6dcf732e26fc7a8836c30.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"20\">HuggingFace：\n   <br class=\"sysbr\">\n   https://huggingface.co/zai-org/GLM-4.7-Flash</p>\n  <p data-track=\"21\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/Zai_org/status/2013261304060866758</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "智谱 AI 发布开源轻量级模型 GLM-4.7-Flash，采用 MLA 架构与 MoE 设计，主打本地编程与智能体助手场景。",
+  "oneSentenceSummary": "智谱 AI 发布开源轻量级模型 GLM-4.7-Flash，采用 MLA 架构与 MoE 设计，主打本地编程与智能体助手场景。",
+  "summary": "智谱 AI 推出 GLM-4.7-Flash 开源模型，旨在替代前代 GLM-4.5-Flash。该模型采用 MoE（混合专家）架构，总参数量 300 亿，推理时仅激活 30 亿参数。技术上首次引入了由 DeepSeek 验证有效的 MLA（多头潜在注意力）架构，显著提升了推理效率。在 SWE-bench 等代码评测中表现优异，超越了同规模的 Qwen3 和 GPT-OSS 模型。模型支持 200K 长上下文，适配华为昇腾 NPU 及苹果 M 系列芯片，实测在 M5 芯片上可达 43 token/s。目前 API 基础版免费开放，提供极高的性价比。",
+  "mainPoints": [
+    {
+      "point": "GLM-4.7-Flash 采用 MoE 架构实现高效率与高性能的平衡。",
+      "explanation": "通过 30B 总参数与 3B 激活参数的设计，模型在保持强大逻辑推理能力的同时，大幅降低了计算资源消耗，适合本地化部署。"
+    },
+    {
+      "point": "首次引入 MLA 架构，标志着国产大模型技术方案的收敛与演进。",
+      "explanation": "借鉴 DeepSeek-v2 的 MLA 架构，智谱在轻量化模型上实现了更优的注意力机制处理，进一步优化了 KV Cache 占用。"
+    },
+    {
+      "point": "模型在代码修复和编程辅助领域具有显著的竞争优势。",
+      "explanation": "在 SWE-bench Verified 测试中取得高分，定位为本地编程助手，针对开发者工作流进行了深度优化。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个 30B 总参数、仅 3B 激活参数的混合专家（MoE）架构模型，官方给它的定位是'本地编程与智能体助手'。",
+    "GLM 团队这次首次采用了 MLA（Multi-head Latent Attention）架构。这一架构此前由 DeepSeek-v2 率先使用并验证有效，如今智谱也跟进了。",
+    "本地部署方面，经开发者实测在 32GB 统一内存、M5 芯片的苹果笔记本上能跑到 43 token/s 的速度。",
+    "官方 API 平台上基础版 GLM-4.7-Flash 完全免费（限 1 个并发），高速版 GLM-4.7-FlashX 价格也相当白菜。"
+  ],
+  "tags": [
+    "GLM-4.7-Flash",
+    "智谱AI",
+    "MLA架构",
+    "MoE",
+    "开源模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 901,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768900789000,
+  "publishDateStr": "01-20",
+  "publishDateTimeStr": "2026-01-20 09:19:49"
+}

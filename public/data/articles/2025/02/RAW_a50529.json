@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a50529",
+  "title": "在 AI 时代，博客写作仍然值得 【译】",
+  "url": "https://baoyu.io/translations/blogging-in-the-age-of-ai",
+  "date": "2025-02-28 03:19:35",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.gilesthomas.com/2025/02/blogging-in-the-age-of-ai\">It's still worth blogging in the age of AI</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"2syov2mswt\">我之前关于<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.gilesthomas.com/2025/02/20250223-til-deep-dive-posts\">以“撰写你曾经希望找到的教程”为目的进行博客写作</a>的文章，在<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/item?id=43154666\">Hacker News</a>上引起了巨大反响。尽管评论区涌现了许多精彩的讨论，但一个问题却不断被提及：当人们纷纷转向 ChatGPT、Claude 和 DeepSeek 等工具来直接获得答案时，写博客还有什么意义？除了这些 AI 外，还有谁会读你写的东西？</p>\n   <p data-id=\"kqao86qc5f\">去年，当我重新开始半定期写博客时，也问过自己同样的问题，这篇文章正是我试图总结为何博客写作依然值得的原因。简单来说就是：<strong>写博客不只是为了被人阅读，而是为了学习与思考，同时留下你曾经思考和学习的持久证据。</strong></p>\n   <p data-id=\"1oknfdpeh8\">首先，我们概括一下在学习过程中边学边写博客的两大原因：</p>\n   <ul>\n    <li>\n     <p data-id=\"dcddqx677l\">帮助你将新学到的知识具体化。</p></li>\n    <li>\n     <p data-id=\"6bdoeuxi29\">帮助未来的其他人——他们可能正在寻找你所写的信息，并最终在你的博客中找到答案。</p></li>\n   </ul>\n   <p data-id=\"4s9jnvwq6v\">在 AI 时代，从帮助他人的角度来看，只有第二个原因更为重要。无论其他人或大型语言模型（LLMs）是否阅读，你通过写作都会更深入地学习。但如今，如果你发表了一篇关于<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.gilesthomas.com/2021/03/fun-with-network-namespaces\">Linux 网络命名空间</a>的文章，第二天有人需要相关知识时，他们可能直接询问 ChatGPT，然后 AI 搜索到你的页面，消化你的内容，并将结果作为自己的答案呈现出来，也许还会与其他地方的内容混合在一起。当然，你的网站可能会出现在 AI 回答的“参考资料”部分，但坦白地说，很少有人会去查看这些链接。更糟的是，六个月内，你的网站可能就会被 AI 下一轮训练吸收进去，此后甚至连参考链接都不会留下。</p>\n   <p data-id=\"kvb48aw99q\">如果博客写作中“帮助他人解决问题”这一点完全出于利他主义，那么以上情况就完全无关紧要了。但事实上，它并非如此，博客还有其他几个目的：</p>\n   <ol>\n    <li>\n     <p data-id=\"p30a8785qy\">为自己树立声望。</p></li>\n    <li>\n     <p data-id=\"ulvbdz47sx\">从他人认可你的努力中获得多巴胺的愉悦感——类似社交媒体上的点赞，但需要付出更多努力。</p></li>\n    <li>\n     <p data-id=\"01rkweabtj\">构建一个能拿出来展示的写作作品集。</p></li>\n   </ol>\n   <p data-id=\"fai92xit9j\">我们逐个讨论这些理由。</p>\n   <p data-id=\"ltm0fm1u5q\">如果你想通过博客为自己树立声望，可能会很困难。举个例子：如果你不是这篇博客的常规读者，那么你知道我（本文作者）住在哪里吗？我的本职工作又是什么？（不要作弊点击上方的“关于”链接。）</p>\n   <p data-id=\"91liq0wxkr\">如果你知道答案，那你属于极少数人。昨天，这个网站因为 HN 的链接获得了约 35,000 次访问，但访问“关于”页面的却不到 300 人。这很正常！当你写一篇博客，即使人们觉得有趣，也只是看完后认为值得他们花费时间，然后就离开了。这本就该如此，仅仅因为你偶尔说了些有用的内容，并不意味着人们需要对你的生活产生兴趣——没人想被跟踪。</p>\n   <p data-id=\"94p3geh3mq\">即使你不断地发布引人入胜的文章，作为纯粹的博主，你也无法建立多少有价值的“个人品牌”。</p>\n   <p data-id=\"bdwtl7cotg\">想想你关注的那些著名博主：他们之所以出名，是因为他们做了其他重要的事情。他们创建了一个重要的开源项目，创立了一家公司，发明了某种技术，常常在大会上演讲，或写出了成功的科幻小说，等等。</p>\n   <p data-id=\"b3dfah9i2s\">因此，我不认为你能仅靠写博客树立声望。如果你的目标仅仅是这个，我担心你会失望。</p>\n   <p data-id=\"bevinwhfgb\">多巴胺的愉悦感确实更真实一些。当人们在我的文章下留言时，我确实感到温暖。当昨天晚上睡觉前看到我的上一篇文章在 HN 首页排名第一时，我甚至截图并分享到我的“极客朋友”WhatsApp 群组，并配文“w00t!”。</p>\n   <p data-id=\"l2elekoptq\">但这样的时刻很少见，我也不觉得 AI 会让这些时刻更加稀缺。博客有时就像对着虚空呐喊一样——大多数文章都不会得到互动，这种情况自我 2006 年开始写博客时就是如此。你可能有 500 名忠实读者，也可能一个都没有——无法确定。</p>\n   <p data-id=\"xjfwj558su\">对此，我只能引用 serviceberry 在 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/item?id=43155587\">HN</a> 上所说的话（黑体为本人所加）：</p>\n   <blockquote data-id=\"w3lu0opg43\">\n    <p data-id=\"7ypm2rnlks\">推论是，如果你读到一篇文章时，<strong>请回应一下</strong>。给作者留言或评论。因为别人不会这样做。每一个 YouTube 名人背后，都有成千上万个在互联网上发布好内容但却不知道自己的作品是否被看到或欣赏的人。</p>\n   </blockquote>\n   <p data-id=\"352oqa5ymk\">...也许我们应该偶尔查看 AI 提供的参考资料，并向原作者致以感谢！</p>\n   <p data-id=\"1zvfuw6arf\">最后我们再讨论更积极的观点。我说过，你很难仅靠博客树立个人声望，但这并不意味着从职业发展的角度来说，写博客毫无意义。你正在建立一个体现你兴趣领域的写作作品集。想象一下你在面试时被问到某个问题，你除了现场解答之外还可以说：“我以前详细写过一篇博客，要不我稍后把链接发给你？”又或者你在与潜在客户谈判某个具体领域的合作时，难道不是可以向他们展示你过去写过的相关文章吗？</p>\n   <p data-id=\"lmz676xbql\">你的 GitHub 个人页面展示了你对开源项目的贡献，以及你的编码能力。而你的博客则体现了你对知识的贡献，以及你的思考能力。这是有价值的！</p>\n   <p data-id=\"fnimntyok9\">该总结一下了。博客之所以有价值，是因为它帮助你学习，帮助他人解决问题，让你偶尔享受被人认可的愉悦感，并构建起能展示你技能的写作作品集。我相信，唯一可能受到 AI 负面影响的是互动带来的愉悦感，而对大多数博客来说，这种互动本就非常少见，不值得过分担忧。</p>\n   <p data-id=\"ntab7zdequ\">更何况，如果 AI 灾难真的降临，至少你的思想已经被广泛地发布在互联网上，你会成为那些“回形针最大化器”训练数据的一部分，某种意义上来说，它们会“记住”你。这也不错嘛。</p></div>\n \n",
+  "aiSummary": "在 AI 时代，博客写作的价值在于通过记录学习和思考过程，构建个人作品集，留下持久的知识资产，而非单纯追求声望和互动。",
+  "oneSentenceSummary": "在 AI 时代，博客写作的价值在于通过记录学习和思考过程，构建个人作品集，留下持久的知识资产，而非单纯追求声望和互动。",
+  "summary": "文章探讨了在 AI 时代博客写作的意义。作者认为，虽然 AI 工具能快速提供答案，但博客写作的核心价值在于：通过写作加深学习理解，构建个人知识体系和作品集，并享受偶尔被认可的愉悦感。即使 AI 可能减少互动，博客仍是展示个人技能和思考能力的有效方式，有助于在面试和合作中展示专业技能和知识深度，提升个人竞争力。写作不仅帮助自己，也能通过 AI 间接帮助他人。作者对博客写作的未来价值持乐观态度，认为在 AI 时代，博客写作仍然值得。",
+  "mainPoints": [
+    {
+      "point": "博客写作是深度学习和长期知识沉淀的有效方式",
+      "explanation": "通过写作将知识具体化，加深理解，形成持久的思考记录，构建个人知识体系，而非仅仅为了被阅读。"
+    },
+    {
+      "point": "博客能构建展示个人技能和思考能力的作品集，助力职业发展",
+      "explanation": "博客是展示个人兴趣领域和专业技能的平台，面试或合作时可作为有力的补充材料，体现知识贡献和思考深度，提升个人竞争力。"
+    },
+    {
+      "point": "AI 时代博客写作的互动价值可能降低，但长期价值依然存在",
+      "explanation": "AI 工具可能减少读者直接访问博客的需求，但博客的核心价值在于自我提升和知识沉淀，而非单纯依赖互动，长期来看依然具有价值。"
+    }
+  ],
+  "keyQuotes": [
+    "写博客不只是为了被人阅读，而是为了学习与思考，同时留下你曾经思考和学习的持久证据。",
+    "博客体现了你对知识的贡献，以及你的思考能力。这是有价值的！",
+    "即使 AI 灾难真的降临，至少你的思想已经被广泛地发布在互联网上，你会成为那些 '回形针最大化器' 训练数据的一部分，某种意义上来说，它们会 '记住' 你。这也不错嘛。"
+  ],
+  "tags": [
+    "博客写作",
+    "AI时代",
+    "个人品牌",
+    "知识管理",
+    "主动学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1945,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740712775000,
+  "publishDateStr": "2025-02-28",
+  "publishDateTimeStr": "2025-02-28 03:19:35"
+}

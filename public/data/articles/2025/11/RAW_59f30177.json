@@ -1,0 +1,58 @@
+{
+  "id": "RAW_59f30177",
+  "title": "Copilot 助力 GitHub 平台构建之路",
+  "url": "https://github.blog/ai-and-ml/github-copilot/how-copilot-helps-build-the-github-platform/",
+  "date": "2025-11-12 09:00:00",
+  "author": "Matt Nigh",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>As engineers at GitHub, “dogfooding” is core to our culture. We build GitHub on GitHub, using the same tools we ship to developers. But as <a href=\"https://github.com/features/copilot?utm_source=blog-copilot-feature&amp;utm_medium=blog&amp;utm_campaign=universe25post\">GitHub Copilot</a> has evolved from an autocomplete suggestion to a sophisticated AI assistant, our own use of it has evolved, too.</p>\n  <p>It’s no longer just a tool in our editors. We’ve integrated Copilot directly into our development lifecycle.</p>\n  <p>Inside our core repository, the one we use to build github.com, <code>@Copilot</code> isn’t just suggesting code; it’s an active contributor. It gets assigned issues by human engineers, opens pull requests, and does the work assigned.</p>\n  <p>Copilot is a prolific engineer within GitHub, and it’s taking on some of our most time-consuming and tedious tasks. For this article, we analyzed a month of pull requests created within our core repo by Copilot. Here’s what we found.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-copilot-does-simple-work-that-saves-time\">Copilot does simple work that saves time</h3>\n  <p>Before we get to the complex, architectural work, it’s worth noting how much of Copilot’s day-to-day work is about accelerating the small tasks that add up. These are the quick fixes that save engineers from constant context-switching.</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>UI and copy tweaks:</strong> It gets tasked with fixing minor UI bugs, like realigning a misaligned icon, or updating placeholder text in a filter bar to be more accurate.</li>\n   <li><strong>Documentation and cleanup:</strong> It also handles straightforward cleanup. In one pull request, <code>@Copilot</code> was assigned to fix <strong>161 typos</strong> in comments and documentation strings across 100 different files. It’s a simple task, but one that no human engineer wants to spend an afternoon doing.</li>\n  </ul>\n  <h3 class=\"wp-block-heading\" id=\"h-critical-cleanup-and-maintenance\">Critical cleanup and maintenance</h3>\n  <p>A healthy codebase requires constant care. This is where <code>@Copilot</code> shines. A significant portion of the pull requests were focused on code maintenance, modernization, and large-scale refactors that would have been time-consuming for human engineers, including:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Removing feature flags:</strong> This is a huge one. <code>@Copilot</code> is constantly assigned to clean up deprecated feature flags, removing the conditional logic, stale code, and old tests across the entire codebase.</li>\n   <li><strong>Large-scale refactoring:</strong> When we need to rename a class used across the application, <code>@Copilot</code> can take it on. It’s even authored massive, repository-wide pull requests to rename core internal classes, a task that would be tedious and time-consuming for any developer.</li>\n   <li><strong>Performance optimization:</strong> It finds and fixes common performance anti-patterns, replacing inefficient code with more optimized alternatives in high-traffic areas.</li>\n  </ul>\n  <h3 class=\"wp-block-heading\" id=\"h-fixing-bugs-and-flaky-tests\">Fixing bugs and flaky tests</h3>\n  <p><code>@Copilot</code> also helped us solve a number of bugs. It’s patched production issues and improved the stability of our CI/CD pipeline.</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Production errors:</strong> It’s not just fixing simple bugs; it’s resolving tricky <code>NoMethodError</code> issues in core logic and even fixing complex error masking issues in our caching infrastructure.</li>\n   <li><strong>Performance bottlenecks:</strong> One of its most impactful contributions was a pull request that fixed a severe performance issue where git push was taking <strong>~15 minutes</strong> for engineers in Codespaces.</li>\n   <li><strong>Fixing flaky tests:</strong> We all know the pain of a test breaking a build. <code>@Copilot</code> was regularly assigned to investigate and fix them.</li>\n  </ul>\n  <h3 class=\"wp-block-heading\" id=\"h-building-new-features\">Building new features</h3>\n  <p>This is where it gets really interesting. <code>@Copilot</code> isn’t just maintaining old code; it’s actively building new functionality. Human engineers spec out the work in an issue, assign it to <code>@Copilot</code>, and it gets to work.</p>\n  <p>It’s adding:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>New API endpoints:</strong> One pull request added a new REST API endpoint to list repository security advisory comments.</li>\n   <li><strong>New internal tools:</strong> It’s not just adding production features. Copilot has been extensively used to improve our internal tools. Our internal intranet, training sites, onboarding, etc. All of these have been maintained significantly by Copilot.&nbsp;</li>\n  </ul>\n  <h3 class=\"wp-block-heading\" id=\"h-migrations-and-security\">Migrations and security</h3>\n  <p>Beyond daily tasks, we’re also assigning <code>@Copilot</code> to high-stakes, complex projects that are critical for the platform’s future.</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Security gating:</strong> <code>@Copilot</code> has been tasked with adding security gates to prevent our own internal integrations from performing sensitive actions, such as modifying releases or release assets.</li>\n   <li><strong>Database migrations:</strong> It’s even handling database schema migrations. We’ve assigned it critical, high-precision tasks like migrating column types to support new standards.</li>\n   <li><strong>Documentation creation:</strong> It’s used to keep documentation in sync with fast-moving code. For example, it has authored numerous pull requests to add comments to our rate-limiting code to ensure developers easily remember to keep it synchronized with another service.</li>\n  </ul>\n  <h3 class=\"wp-block-heading\" id=\"h-codebase-wide-audits-and-analysis-discerning-problems-then-solving-them\">Codebase-wide audits and analysis: Discerning problems, then solving them</h3>\n  <p>In some of its most advanced tasks, <code>@Copilot</code> acts as a researcher. We can assign it an ambiguous task, and it will analyze the codebase and report back with its findings in a pull request.</p>\n  <p>In one pull request, it was tasked with auditing all our Codespaces feature flags. It returned a pull request with a comprehensive report categorizing all the flags and their references throughout the code.</p>\n  <p>In another, it performed a “comprehensive analysis of authorization queries” to identify opportunities for performance and safety improvements. This moves Copilot’s role from code generation to systems-level architectural analysis, helping developers to jump straight to solving a complex problem rather than spending days just identifying it.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-a-new-way-to-collaborate\">A new way to collaborate</h3>\n  <p>If you check Copilot’s merged pull request rate in your repo, you’ll notice it’s lower than human contributors. That’s expected—and useful.</p>\n  <p>Here’s the pattern we discovered:</p>\n  <ul class=\"wp-block-list\">\n   <li>You assign <code>@Copilot</code> an issue</li>\n   <li>It opens a pull request with a first-pass solution</li>\n   <li>You review it like any other pull request</li>\n   <li><strong>Then you choose</strong> to merge it, iterate on the branch, or close it and take a different approach.</li>\n  </ul>\n  <p>The value isn’t in blindly merging. <em>It’s in not starting from zero.</em> You’ll get a concrete implementation to critique right away. All the boilerplate and the basic scaffolding is already handled.</p>\n  <p>This shifts our focus away from writing <em>all</em> the code. Instead, you get to jump straight to the most critical parts of engineering: solving the core problem, refining Copilot’s suggestions, working in areas of the codebase not fit for AI, and owning the architecture, security, and user experience. It’s not about automating our jobs; it’s about letting Copilot handle the tedious 80% of the work. This frees us up to dedicate our expertise to the critical 20% that truly matters.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 工程师利用 Copilot 作为积极贡献者参与各种任务，从小的修复到复杂的重构和功能开发，根本上改变了开发工作流程。",
+  "oneSentenceSummary": "GitHub 工程师利用 Copilot 作为积极贡献者参与各种任务，从小的修复到复杂的重构和功能开发，根本上改变了开发工作流程。",
+  "summary": "文章详细介绍了 GitHub 工程师如何“深度使用” GitHub Copilot，将其从一个简单的自动完成工具发展成为一个集成的 AI 助手，积极为 github.com 的开发做出贡献。`@Copilot` 被分配问题，打开拉取请求，并处理各种任务，包括简单的 UI 调整、大量的文档清理、关键的代码维护（如功能标志删除）、大规模重构、性能优化，以及修复生产 bug 和不稳定的测试。更令人印象深刻的是，Copilot 还参与构建新功能，如 API 端点和内部工具，并处理高风险项目，如安全防护和数据库迁移。它甚至执行全代码库审计和架构分析，识别问题供人类工程师解决。这种新的协作模式强调 Copilot 处理常用代码和初始解决方案，使人类工程师能够专注于关键的问题解决、架构设计、安全和用户体验，最终转变了开发模式。",
+  "mainPoints": [
+    {
+      "point": "Copilot 充当积极的工程贡献者，处理从小的修复到复杂的系统分析的各种任务。",
+      "explanation": "除了简单的代码建议，Copilot 还被分配问题，打开拉取请求，并处理 UI 调整、文档、重构、bug 修复、新功能、安全，甚至全代码库审计，大大扩展了它的用途。"
+    },
+    {
+      "point": "AI 助手擅长处理繁琐、耗时的任务，使工程师能够专注于更高价值的工作。",
+      "explanation": "Copilot 自动化重复性任务，如修复拼写错误、删除功能标志和大规模重命名，使工程师能够专注于关键的问题解决、架构、安全和用户体验。"
+    },
+    {
+      "point": "Copilot 促进了一种新的协作模式，提供初始解决方案以加速开发过程。",
+      "explanation": "工程师将问题分配给 Copilot，然后 Copilot 通过拉取请求提供初步解决方案，从而有效地消除了“从零开始”的阶段，并实现了即时评论和迭代。"
+    },
+    {
+      "point": "Copilot 的功能扩展到高级任务，如性能优化、安全防护和架构分析。",
+      "explanation": "AI 的任务是识别和修复低效代码模式，添加安全防护，处理数据库迁移，并执行全面的代码库审计，以识别和报告问题。"
+    }
+  ],
+  "keyQuotes": [
+    "在我们的核心存储库中，我们用它来构建 github.com，`@Copilot` 不仅仅是建议代码；它是一个积极的贡献者。",
+    "这不是为了自动化我们的工作；而是为了让 Copilot 处理繁琐的 80% 的工作，这使我们能够将我们的专业知识用于真正重要的关键 20%。",
+    "这使 Copilot 的角色从代码生成转变为系统层面架构分析，帮助开发人员直接跳到解决复杂问题，而不是花费数天时间来识别它。",
+    "价值不在于盲目合并，而在于不从零开始。你将立即获得一个具体的实现来进行评论，所有的常用代码和基本框架都已经处理完毕。"
+  ],
+  "tags": [
+    "AI 助手",
+    "GitHub Copilot",
+    "软件开发",
+    "代码重构",
+    "代码维护"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 999,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762938000000,
+  "publishDateStr": "2025-11-12",
+  "publishDateTimeStr": "2025-11-12 09:00:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f6d655",
+  "title": "GPT-5-Codex",
+  "url": "https://simonwillison.net/2025/Sep/23/gpt-5-codex/#atom-everything",
+  "date": "2025-09-23 23:59:20",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://platform.openai.com/docs/models/gpt-5-codex\">GPT-5-Codex</a></strong>. OpenAI <a href=\"https://simonwillison.net/2025/Sep/15/gpt-5-codex/\">half-relased this model</a> earlier this month, adding it to their Codex CLI tool but not their API.</p>\n   <p>Today they've fixed that - the new model can now be accessed as <code>gpt-5-codex</code>. It's priced the same as regular GPT-5: $1.25/million input tokens, $10/million output tokens, and the same hefty 90% discount for previously cached input tokens, especially important for agentic tool-using workflows which quickly produce a lengthy conversation.</p>\n   <p>It's only available via their Responses API, which means you currently need to install the <a href=\"https://github.com/simonw/llm-openai-plugin\">llm-openai-plugin</a> to use it with LLM:</p>\n   <pre><code>llm install -U llm-openai-plugin\nllm -m openai/gpt-5-codex -T llm_version 'What is the LLM version?'\n</code></pre>\n   <p>Outputs:</p>\n   <blockquote>\n    <p>The installed LLM version is 0.27.1.</p>\n   </blockquote>\n   <p>I added <a href=\"https://llm.datasette.io/en/stable/tools.html\">tool support</a> to that plugin today, <a href=\"https://github.com/simonw/llm-openai-plugin/issues/20#issuecomment-3325921197\">mostly authored by GPT-5 Codex itself</a> using OpenAI's Codex CLI.</p>\n   <p>The new <a href=\"https://cookbook.openai.com/examples/gpt-5-codex_prompting_guide\">prompting guide for GPT-5-Codex</a> is worth a read.</p>\n   <blockquote>\n    <p>GPT-5-Codex&nbsp;is purpose-built for Codex CLI, the Codex IDE extension, the Codex cloud environment, and working in GitHub, and also supports versatile tool use. We recommend using&nbsp;GPT-5-Codex&nbsp;only for agentic and interactive coding use cases.</p>\n    <p>Because the model is trained specifically for coding, many best practices you once had to prompt into general purpose models are built in, and over prompting can reduce quality.</p>\n    <p>The core prompting principle for&nbsp;GPT-5-Codex&nbsp;is&nbsp;<strong>“less is more.”</strong></p>\n   </blockquote>\n   <p>I <a href=\"https://gist.github.com/simonw/b371949ae984b0431848cd16cba24b27\">tried my pelican benchmark</a> at a cost of <a href=\"https://www.llm-prices.com/#it=16&amp;ot=2154&amp;ic=1.25&amp;oc=10\">2.156 cents</a>.</p>\n   <pre><code>llm -m openai/gpt-5-codex \"Generate an SVG of a pelican riding a bicycle\"\n</code></pre>\n   <p><img alt=\"See description below\" src=\"https://static.simonwillison.net/static/2025/gpt-5-codex-api-pelican.png\"></p>\n   <p>I asked Codex to describe this image and it correctly identified it as a pelican!</p>\n   <pre><code>llm -m openai/gpt-5-codex -a https://static.simonwillison.net/static/2025/gpt-5-codex-api-pelican.png \\\n  -s 'Write very detailed alt text'\n</code></pre>\n   <blockquote>\n    <p>Cartoon illustration of a cream-colored pelican with a large orange beak and tiny black eye riding a minimalist dark-blue bicycle. The bird’s wings are tucked in, its legs resemble orange stick limbs pushing the pedals, and its tail feathers trail behind with light blue motion streaks to suggest speed. A small coral-red tongue sticks out of the pelican’s beak. The bicycle has thin light gray spokes, and the background is a simple pale blue gradient with faint curved lines hinting at ground and sky.</p>\n   </blockquote>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9024/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 宣布 OpenAI 的 `gpt-5-codex` 模型开放 API，重点介绍其在编码、工具支持和多模态方面的能力，并提供了实际案例。",
+  "oneSentenceSummary": "Simon Willison 宣布 OpenAI 的 `gpt-5-codex` 模型开放 API，重点介绍其在编码、工具支持和多模态方面的能力，并提供了实际案例。",
+  "summary": "本文宣布了 OpenAI 的 `gpt-5-codex` 模型的完整 API 发布，该模型之前仅限于 CLI 工具。文章详细说明了其定价与 `gpt-5` 相同，并强调了缓存输入 token 的 90% 显著折扣，这对 Agentic 工作流程的成本控制至关重要。该模型可通过 Responses API 访问，需要 `llm-openai-plugin` 进行 LLM 集成，新增的工具支持大部分由 GPT-5 Codex 自动生成。文章重点介绍了该模型在 Agentic 和交互式编码方面的专业性质，提倡“少即是多”的提示原则，因为它内置了编码最佳实践。实际演示包括 pelican 基准测试和成功的多模态图像描述，展示了其多功能能力。",
+  "mainPoints": [
+    {
+      "point": "完整 API 发布与定价",
+      "explanation": "`gpt-5-codex` 现在可以通过 OpenAI 的 Responses API 完全使用，与 `gpt-5` 共享相同的定价，并且对于缓存的输入 token 享有 90% 的显著折扣，这对于 Agentic 工作流程非常有利。这使得开发者能更广泛地使用这一专业编码模型，而不仅仅是最初的 CLI 工具，从而实现具有成本效益的迭代开发。"
+    },
+    {
+      "point": "具有“少即是多”提示的专用编码模型",
+      "explanation": "该模型专为 Agentic 和交互式编码用例而构建，许多编码最佳实践都内置于其中，因此“少即是多”是核心提示原则，以避免过度提示并保持质量。该指南对于开发者有效利用 `gpt-5-codex` 至关重要。它明确了 `gpt-5-codex` 的最佳使用方式，使其有别于通用 LLM。"
+    },
+    {
+      "point": "增强的工具支持，部分为自编写",
+      "explanation": "`llm-openai-plugin` 现在包括工具支持，其中很大一部分是由 GPT-5 Codex 本身使用 OpenAI 的 Codex CLI 编写的。这表明该模型具备强大的自生成工具的能力，突出了其在开发者工作流程中进行自主开发和集成的潜力。"
+    },
+    {
+      "point": "多模态能力演示",
+      "explanation": "文章展示了该模型准确描述图像（鹈鹕骑自行车）的能力，表明其在纯代码生成之外的多模态理解。这拓宽了 `gpt-5-codex` 的应用范围，使其不仅限于文本编码，还可应用于需要视觉上下文进行代码生成或文档编制的领域。"
+    }
+  ],
+  "keyQuotes": [
+    "GPT-5-Codex 专为 Codex CLI、Codex IDE 扩展、Codex 云环境以及在 GitHub 中工作而构建，并且还支持多功能的工具使用。",
+    "由于该模型是专门为编码而训练的，因此很多以前需要通过提示才能让通用模型实现的最佳实践，现在已内置于该模型中，过度提示反而会降低质量。",
+    "GPT-5-Codex 的核心提示原则是“少即是多”。",
+    "我今天向该插件添加了工具支持，主要由 GPT-5 Codex 本身使用 OpenAI 的 Codex CLI 编写。"
+  ],
+  "tags": [
+    "OpenAI",
+    "GPT-5-Codex",
+    "AI Model",
+    "API",
+    "Coding"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 93,
+  "wordCount": 348,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758671960000,
+  "publishDateStr": "2025-09-23",
+  "publishDateTimeStr": "2025-09-23 23:59:20"
+}

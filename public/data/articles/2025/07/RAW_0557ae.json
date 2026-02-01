@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0557ae",
+  "title": "研究表明：AI 编码工具并未提升资深开发者效率",
+  "url": "https://www.infoq.com/news/2025/07/ai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-20 00:00:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A <a href=\"https://arxiv.org/pdf/2507.09089\">recent study</a> challenges the widespread belief that AI tools accelerate software development. Researchers at <a href=\"https://metr.org/\">METR</a> conducted a randomized controlled trial of experienced open-source developers using AI-enhanced development&nbsp;tools like Claude 3.5 and Cursor Pro. Contrary to expectations, they found that AI-assisted programming led to a 19% increase in task completion time—even as developers believed they were working faster. The findings reveal a potential gap between AI’s perceived promise and its real-world impact.</p>\n   <p>To evaluate AI’s influence under realistic conditions, the researchers designed a randomized controlled trial (RCT) rooted in production-grade environments. Rather than using synthetic benchmarks, they recruited experienced contributors to complete real tasks across mature open-source repositories.</p>\n   <p>Participants were 16 professional developers with an average of five years of experience on the projects they were assigned. The repositories included realistic, 'in-anger' issues drawn from their own codebases:&nbsp;very large (&gt; 1.1m lines of code), well established open source&nbsp;projects.&nbsp;</p>\n   <p>Across 246 tasks, each developer was randomly assigned to a maximum of two-hour sessions either with or without access to AI assistance. Those with access used Cursor Pro, a code editor with integrated support for Claude 3.5/3.7 Sonnet. The control group was explicitly blocked from using AI tools.</p>\n   <p>The study collected both objective and subjective metrics, including task duration, code quality, and developer perception. Before and after each task, developers and external experts predicted the likely effect of AI on productivity.</p>\n   <p>The central result was both striking and unexpected: AI-assisted developers took 19% longer to complete tasks than those without AI. This contradicted pre-task expectations from both participants and experts, who had predicted an average speedup of ~40%.</p>\n   <p><img class=\"zoom-image\" height=\"299\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXfOc5KTvjZ_7AerRPXwQ5vDzZ4mUJ1qsU-xC3ybkVg2AuGRy1V6rm-wbtdmF5xBfCwLMynie7wTyz6iCK4oxFGp_R06nlmuEz_g2vuMItzSi8FEncQgR5aw9aRZ4g_aQ5cZpcuukw?key=yjGJeXBh6EB7MPGrXnR8jA\" width=\"602\" rel=\"share\"></p>\n   <p>The authors attributed the slowdown to a variety of contributing factors, including time spent prompting, reviewing AI-generated suggestions, and integrating outputs with complex codebases. Through 140+ hours of screen recordings, they identified five key contributors to the slowdown. These frictions likely offset any up-front gains from code generation, revealing a significant disconnect between perceived and actual productivity.</p>\n   <p><img class=\"zoom-image\" height=\"328\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXc-b0EAhoslFxO4i8RxhAWxOk4JA2HJxR4KyYi03w1bPxAiwGzXx1mRrC9uf0QWTtiRLJdaXGDcNLIaLdVO4ehs-a3WnyiMicSxrJuMY0heVxDhwgdrmCYTZOxiCW4DqVzhow7qZQ?key=yjGJeXBh6EB7MPGrXnR8jA\" width=\"602\" rel=\"share\"></p>\n   <p>The researchers highlight this phenomenon as a 'perception gap'—where friction introduced by AI tooling is subtle enough to go unnoticed in the moment but cumulatively slows real-world output. The contrast between perception and outcome underscores the study’s importance of grounding AI tool evaluation not just in user sentiment, but in rigorous measurement.</p>\n   <p>The authors caution against overgeneralizing their findings. While the study shows a measurable slowdown with AI tooling in this particular setting, they stress that many of the contributing factors are specific to their design. The developers were working in large, mature open-source codebases—projects with strict review standards and unfamiliar internal logic. The tasks were constrained to two-hour blocks, limiting exploration, and all AI interactions were funneled through a single toolchain</p>\n   <p>Importantly, the authors emphasize that future systems may overcome the challenges observed here. Improvements in prompting techniques, agent scaffolding, or domain-specific fine tuning could unlock real productivity gains even in the settings tested.&nbsp;</p>\n   <p>As AI capabilities continue to progress rapidly, the authors frame their findings not as a verdict on the usefulness of AI tools—but as a data point in a fast-evolving landscape that still requires rigorous, real-world evaluation.<br>\n     &nbsp;</p>\n   <p>&nbsp;</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI Coding Tools Underperform in Field Study with Experienced Developers\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/ai-productivity/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1753038000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "一项现场研究发现，与预期生产力提升相反，AI 编码工具反而导致资深开发者的任务完成时间增加了 19%。",
+  "oneSentenceSummary": "一项现场研究发现，与预期生产力提升相反，AI 编码工具反而导致资深开发者的任务完成时间增加了 19%。",
+  "summary": "知名研究机构 METR 的一项最新研究表明，该研究基于一项针对资深开源开发者，使用 Cursor Pro (集成 Claude 3.5) 等 AI 工具进行的随机对照试验，挑战了 AI 加速软件开发的传统观点。与参与者和专家预期 40% 的效率提升相反，AI 辅助编程反而导致任务完成时间增加了 19%。研究人员将这种速度下降归因于“摩擦”因素，例如花费在提示工程、审查 AI 生成的建议以及将输出集成到复杂的代码库中的时间，研究揭示了一种“感知差距”现象：开发者主观感觉效率提升，但实际并非如此。虽然承认该研究存在特定设计局限性（大型代码库、严格的代码审查、有限的任务范围、单一工具链），但作者强调，因此，对 AI 工具进行严谨、贴近实际的评估至关重要，不能仅凭主观感受。",
+  "mainPoints": [
+    {
+      "point": "对照研究显示，AI 编码工具反而导致资深开发者任务完成时间增加 19%，结果令人意外。",
+      "explanation": "一项严格的随机对照试验显示，使用 AI 工具的开发者完成任务的时间明显更长，这直接与通常对生产力提高的预期相矛盾。"
+    },
+    {
+      "point": "速度下降归因于“摩擦”因素，例如提示工程、审查和集成 AI 生成的代码。",
+      "explanation": "研究人员通过屏幕录像发现，与 AI 工具交互所耗费的时间，抵消了代码生成带来的初期收益。这导致开发者在感知和实际生产力之间产生脱节。"
+    },
+    {
+      "point": "因此，对 AI 工具进行严谨、贴近实际的评估至关重要，不能仅凭主观感受。",
+      "explanation": "该研究强调了一个重要的“感知差距”，强调了在真实的生产环境中进行客观的、数据驱动的测量对于真正了解 AI 的影响的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 辅助编程反而导致任务完成时间增加了 19%，即便开发者自认为效率更高。",
+    "最核心的结论令人震惊：使用 AI 辅助的开发者，任务完成时间反而比不使用 AI 的开发者长 19%。",
+    "作者认为，速度下降的原因包括：提示工程耗时、审查 AI 生成建议，以及将输出集成到复杂的代码库中。",
+    "研究人员将此现象定义为“感知差距”：AI 工具带来的摩擦不易察觉，但长期累积会降低实际效率。",
+    "作者强调，这项研究并非否定 AI 工具的价值，而是为快速发展的 AI 领域提供了一个数据参考，提醒我们仍需进行严谨、贴近实际的评估。"
+  ],
+  "tags": [
+    "开发者生产力",
+    "AI 编码工具",
+    "大语言模型",
+    "现场研究",
+    "软件开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 517,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1752969600000,
+  "publishDateStr": "2025-07-20",
+  "publishDateTimeStr": "2025-07-20 00:00:00"
+}

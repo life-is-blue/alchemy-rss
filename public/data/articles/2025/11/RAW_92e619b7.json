@@ -1,0 +1,63 @@
+{
+  "id": "RAW_92e619b7",
+  "title": "攻克价值数十亿美元的难题：Maarten Balliauw 的 C# 可空引用类型指南 | .NET 工具博客",
+  "url": "https://blog.jetbrains.com/dotnet/2025/11/04/maarten-balliauws-guide-to-csharp-nullable-reference-types/",
+  "date": "2025-11-04 13:39:13",
+  "author": "Sasha Ivanova",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>At the most recent <a href=\"http://jetbrains.net\" target=\"_blank\" rel=\"noopener\">JetBrains.NET Days Online 2025 event</a>, Maarten Balliauw delivered a comprehensive session on migrating existing codebases to use C# nullable reference types, a feature that’s been available since C# 8 but remains underutilized in many legacy projects. Through practical examples and migration strategies, Maarten demonstrated how to bring null safety to your existing code without drowning in thousands of warnings.</p>\n  <h2 class=\"wp-block-heading\">Watch the full presentation</h2>\n  <iframe width=\"800\" height=\"450\" src=\"https://www.youtube.com/embed/zZniCOWy-4w?si=D2RwTLKOlwjjGfmN\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n  <p><em>#nullable enable – Unlock the Power of C# Nullability — Maarten Balliauw</em></p>\n  <h2 class=\"wp-block-heading\">It’s not for runtime safety</h2>\n  <p>Maarten opens with a crucial clarification that sets realistic expectations for the entire migration journey: “There is no runtime safety for nullable reference types. It is design time and compile time that help to check whether something can be null or not.” This isn’t a silver bullet that will eliminate all null reference exceptions – it’s a tool to help developers make better decisions while writing code.</p>\n  <p>The feature essentially flips the traditional C# paradigm. As Maarten explains, “The idea is that when you’re writing code, every single type that you have is going to be non-nullable by default. And there is a syntax to annotate a reference type as being nullable.” This inversion makes nullability explicit rather than implicit, forcing developers to think intentionally about null handling.</p>\n  <h2 class=\"wp-block-heading\">The Boy Scout Rule for migration</h2>\n  <p>When it comes to migrating existing codebases, Maarten advocates for a pragmatic approach. For smaller projects, you might enable nullability project-wide and plow through the warnings. But for larger codebases, he recommends the Boy Scout Rule:</p>\n  <blockquote class=\"wp-block-quote\">\n   <p>“Keep it disabled at the project level. And whenever you touch a piece of code, you enable it file by file and just work your way through until the entire project is converted.”</p>\n  </blockquote>\n  <p>The key insight for where to begin? “Start at the center and work outwards” (<a href=\"https://youtu.be/zZniCOWy-4w?si=P07EsJS0H-uhy9pt&amp;t=1797\" target=\"_blank\" rel=\"noopener\">29:59</a>). Maarten suggests starting with classes that have few dependencies but are used extensively throughout the codebase, typically data transfer objects and domain models. A small change in these central classes can eliminate warnings across your entire codebase.</p>\n  <h2 class=\"wp-block-heading\">The temptation of the dammit operator</h2>\n  <p>Throughout the presentation, Maarten repeatedly warns against one particular anti-pattern: the null-forgiving operator (!), also known as the “dammit operator”. His stance is unequivocal: “The null forgiving operator is an anti-pattern.”</p>\n  <p>Why such strong language? “You’re lying to the compiler. You’re lying to yourself when you are working in this codebase a couple of months after you first wrote the code.” While the operator can be useful during migration to temporarily suppress warnings, Maarten emphasizes that production code should never ship with these suppressions.</p>\n  <h2 class=\"wp-block-heading\">Embracing null, not fighting it</h2>\n  <p>In a refreshing perspective shift, Maarten reminds developers: “Don’t be afraid of null. Nullable reference types will help you get more confidence in compiler and IDE flow analysis. It’s impossible to get rid of all of the null usages in code” (<a href=\"https://youtu.be/zZniCOWy-4w?si=PgDox5P5Fy0ymO9x&amp;t=2243\" target=\"_blank\" rel=\"noopener\">37:23</a>). The goal isn’t to eliminate null entirely, it’s to build a safety net for dealing with it effectively.</p>\n  <p>This philosophy extends to library authors, who need to consider consumers using different languages. Since nullable reference types are C# only, libraries should still include runtime null checks for robustness, especially when the API might be consumed by F# or VB.NET code that won’t benefit from the nullable annotations.</p>\n  <h2 class=\"wp-block-heading\">Entity Framework’s surprise</h2>\n  <p>One of the most valuable warnings in the presentation concerns Entity Framework Core, which has a potentially breaking behavior: “The Entity Framework Core team, unfortunately, did look at this, and they are actually updating your database schema based on nullable reference types.”</p>\n  <p>This means that enabling nullable reference types can inadvertently trigger database schema changes, something that might slip past developers but certainly won’t escape the notice of your DBA. It’s a “gotcha” that Maarten admits makes sense from Entity Framework’s perspective, but one that can be an unwelcome surprise during migration.</p>\n  <h2 class=\"wp-block-heading\">Practical tools for the journey</h2>\n  <p>Maarten highlights several tools that make migration more manageable (<a href=\"https://youtu.be/zZniCOWy-4w?si=4DfDEnWx6rpCuk7e&amp;t=2308\" target=\"_blank\" rel=\"noopener\">38:28</a>). The value tracking feature in Microsoft Visual Studio and Rider helps trace where properties are set, making it easier to determine if something can actually be null. The automatic migration tools can get you quite far along the way by running flow analysis and making educated guesses about nullability.</p>\n  <p>For JSON serialization scenarios, Maarten presents multiple strategies, with his personal favorite being the use of the required keyword combined with proper validation, rather than littering code with null-forgiving operators or losing type safety by making everything nullable.</p>\n  <h2 class=\"wp-block-heading\">The takeaway</h2>\n  <p>Maarten’s session demystifies the migration to nullable reference types, presenting it not as an all-or-nothing proposition but as a gradual improvement process. His closing summary captures the essence perfectly: “Nullable reference types give you design time and compile time safety in .NET, not at runtime.”</p>\n  <p>This session serves as both a technical guide and a philosophical framework for approaching nullability. It’s not about achieving perfection or eliminating all nulls – it’s about making your codebase more predictable, maintainable, and explicit about its null-handling intentions.</p>\n  <p>For teams sitting on legacy codebases wondering if the migration effort is worth it, the essence of Maarten’s argument is that the investment in nullable reference types pays dividends in code clarity, reduced bugs, and better communication of intent between team members, including your future self.</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p>Follow Maarten Balliauw’s work on nullable reference types and other C# topics on<a href=\"https://blog.maartenballiauw.be/\" target=\"_blank\" rel=\"noopener\"> his blog</a>, <a href=\"https://twitter.com/maartenballiauw/\" target=\"_blank\" rel=\"noopener\">X</a>, and <a href=\"https://bsky.app/profile/maartenballiauw.be\" target=\"_blank\" rel=\"noopener\">Bluesky</a>.</p>\n  <p>Watch the full recording of this year’s online event on YouTube:</p>\n  <p>▶️ <a href=\"https://www.youtube.com/watch?v=Srsnb7JNXiw&amp;t=6s\" target=\"_blank\" rel=\"noopener\">Day 1: Aspire, Clean Architecture, C# Nullability, Messaging, Uno, Blazor TDD.</a></p>\n  <p>▶️ <a href=\"https://www.youtube.com/watch?v=Aq1xHunHNuA\" target=\"_blank\" rel=\"noopener\">Day 2: Event-Driven Systems &amp; GenAI Qith Aspire, F#, dotMemory, and More.</a></p>\n  <p>You may also find these interesting:</p>\n  <p><a href=\"https://mattjameschampion.com/2025/06/16/the-null-forgiving-operator-in-c-is-a-code-smell/\" target=\"_blank\" rel=\"noopener\"><em>The Null-Forgiving Operator in C# Is a Code Smell(!)</em></a>&nbsp; by Matthew Champion.</p>\n  <p><a href=\"https://blog.maartenballiauw.be/post/2022/04/11/nullable-reference-types-in-csharp-migrating-to-nullable-reference-types-part-1.html\" target=\"_blank\" rel=\"noopener\"><em>Nullable reference types in C# – Migrating to nullable reference types</em></a> by Maarten Balliauw.&nbsp;</p>\n  <p><a href=\"https://www.damirscorner.com/blog/posts/20220812-NullableReferenceTypesAndNullabilityInEfCore.html\" target=\"_blank\" rel=\"noopener\"><em>Nullable reference types and nullability in EF Core</em></a> by Damir Arh.</p>\n  <p><a href=\"https://www.jetbrains.com/guide/dotnet/links/null-void-everything-about-nothing-in-net/\" target=\"_blank\" rel=\"noopener\"><em>Null &amp; Void – Everything About Nothing in .NET</em></a> – a presentation given by Stefan Pölz at .NET Days Online 2021.&nbsp;</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/dotnet/2025/10/29/simplifying-distributed-systems-dotnet-aspire-jason-taylor/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Simplifying Distributed Systems: Jason Taylor Shows How .NET Aspire Makes the Complex Feel Effortless</a>\n  </div>\n  <div class=\"banner\">\n   <a href=\"https://jb.gg/rsrp-blog-download\" target=\"_blank\"><img src=\"https://admin.blog.jetbrains.com/wp-content/uploads/2024/09/R.png\"></a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Maarten Balliauw 的指南提供了有效迁移 C# 代码库以使用可空引用类型的实用策略。",
+  "oneSentenceSummary": "Maarten Balliauw 的指南提供了有效迁移 C# 代码库以使用可空引用类型的实用策略。",
+  "summary": "本文总结了 Maarten Balliauw 关于迁移现有 C# 代码库以采用可空引用类型 (NRTs) 的演讲内容，这是一个经常未被充分利用的 C# 8 功能。它阐明了 NRTs 提供设计时和编译时安全性，而不是针对空引用异常的运行时保护，从而转变为默认的非空范例，并为可空类型提供显式语法。对于大型项目，推荐的“童子军规则 (Boy Scout Rule)”方法包括逐个文件启用可空性，从中心数据传输对象 (DTOs) 开始。Maarten 强烈警告不要使用“空值容忍运算符”作为反模式，强调开发人员应该通过构建安全网而不是试图完全消除 null 来拥抱 null。他还注意到启用 NRTs 时 Entity Framework Core (EF Core) 令人惊讶的架构更改。重点介绍了 Visual Studio/Rider 的价值跟踪和自动迁移功能等实用工具，以及 JSON 序列化策略。会议强调 NRTs 是一种渐进式改进，可以在代码清晰度、减少错误和更好地沟通意图方面获得回报，从而使代码库更具可预测性和可维护性。",
+  "mainPoints": [
+    {
+      "point": "C# 可空引用类型提供设计时和编译时安全性，而不是运行时保护。",
+      "explanation": "这个关键的澄清设定了现实的期望，强调 NRTs 是一种开发工具，有助于在运行时前预防空引用异常，指导开发人员做出更好的决策。"
+    },
+    {
+      "point": "对于大型代码库，采用渐进式的逐文件迁移策略，从中心组件开始。",
+      "explanation": "“童子军规则 (Boy Scout Rule)”方法（逐个文件启用，从低依赖性、高使用率的类（如 DTOs）开始）使迁移易于管理，并防止被数千个警告所淹没。"
+    },
+    {
+      "point": "空值容忍运算符是一种反模式，应在生产代码中避免。",
+      "explanation": "使用此运算符实际上是“欺骗编译器”和你自己，在不解决底层可空性问题的情况下抑制警告，这可能导致隐藏的错误并降低代码清晰度。"
+    },
+    {
+      "point": "拥抱 null 而不是试图消除它，专注于使用 NRTs 构建安全网。",
+      "explanation": "目标不是摆脱所有 null 用法，而是利用 NRTs 来获得对编译器和 IDE 流程分析的信心，使 null 处理显式化并使代码更健壮。"
+    },
+    {
+      "point": "请注意，启用可空引用类型时，Entity Framework Core (EF Core) 可能会意外更改数据库架构。",
+      "explanation": "这个“陷阱”突出显示了一个潜在的重大更改，其中 Entity Framework Core (EF Core) 将 NRT 注释解释为架构修改，如果在迁移期间未预期和管理，则可能导致问题。"
+    }
+  ],
+  "keyQuotes": [
+    "可空引用类型没有运行时安全性。设计时和编译时有助于检查某些内容是否可以为 null。",
+    "在项目层面保持禁用。每当你修改代码时，逐个文件启用，直到整个项目完成转换。",
+    "空值容忍运算符是一种反模式。",
+    "不要害怕 null。可空引用类型将帮助你对编译器和 IDE 流程分析更有信心。不可能消除代码中的所有 null 用法。",
+    "可空引用类型在 .NET 中为你提供设计时和编译时安全性，而不是在运行时。"
+  ],
+  "tags": [
+    "C#",
+    "可空引用类型",
+    ".NET",
+    "静态分析",
+    "编程语言特性"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1006,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762263553000,
+  "publishDateStr": "2025-11-04",
+  "publishDateTimeStr": "2025-11-04 13:39:13"
+}

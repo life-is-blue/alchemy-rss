@@ -7,7 +7,10 @@
   "siteName": "Lenny Rachitsky(@lennysan)",
   "content": null,
   "aiSummary": "Lenny Rachitsky 分享了来自 Jason Cohen (@asmartbear) 关于诊断增长停滞的 11 个关键洞察，涵盖定价心理学、流失率优化及战略定位。",
+  "oneSentenceSummary": "Lenny Rachitsky 分享了来自 Jason Cohen (@asmartbear) 关于诊断增长停滞的 11 个关键洞察，涵盖定价心理学、流失率优化及战略定位。",
+  "summary": "本推文详尽总结了与成功创始人及产品专家 Jason Cohen 的播客访谈。针对面临增长瓶颈的产品驱动型业务，提炼出 11 条极具操作性的见解。核心观点包括：理解“价格太贵”往往并非流失的真因；取消调研中措辞的微妙差异如何影响反馈质量；定价过低如何导致目标市场筛选偏差；流失率如何决定业务规模的天花板；以及新用户引导流程在提升留存中的杠杆作用。此外，还探讨了定位对感知价值的影响、营销渠道的衰退规律、净收入留存率（NRR）对规模化的重要性，以及“先创造价值，再分享利益”的底层商业逻辑。这是一份诊断并解决增长挑战的专业框架。",
   "mainPoints": [],
+  "keyQuotes": [],
   "tags": [
     "产品增长",
     "定价策略",
@@ -15,10 +18,19 @@
     "SaaS",
     "业务战略"
   ],
-  "categoryTag": null,
+  "topicTag": "product-business",
   "readTime": 17,
   "score": 93,
   "wordCount": 4050,
   "domain": "x.com",
-  "category": "Artificial_Intelligence"
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_7a7b4c",
+  "sourceName": "Lenny Rachitsky(@lennysan)",
+  "resourceType": "TWITTER",
+  "language": "en_US",
+  "publishTimeStamp": 1769449228000,
+  "publishDateStr": "01-26",
+  "publishDateTimeStr": "2026-01-26 17:40:28"
 }

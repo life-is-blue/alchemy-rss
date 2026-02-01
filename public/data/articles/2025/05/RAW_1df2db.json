@@ -1,0 +1,59 @@
+{
+  "id": "RAW_1df2db",
+  "title": "Spring AI 项目周报 - 2025 年 5 月 27 日",
+  "url": "https://spring.io/blog/2025/05/27/this-week-in-spring-may-27th-2025",
+  "date": "2025-05-27 00:00:00",
+  "author": "joshlong",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hi, Spring fans! Welcome to another installment of <em>This Week in Spring</em>! This time, I'm talking to you after an <em>insane</em> week behind me. Last week I flew from San Francisco to Stockholm, Sweden where I was the speaker for the JForum event, a monthly meetup. Spring drew the largest audience to JForum since before the pandemic! Then, it was off to beautiful Barcelona for the <em>fantastic</em> Spring I/O event, where I did a keynote with Dr Mark Pollack on Spring AI, then hosted a joint talk with Spring cofounders Rod Johnson and Juergen Hoeller. Then, I did a joint talk with GraalVM found and Oracle vice president Thomas Wuerthinger. Then, it was off to Madrid where I met some customers and users. Then, it was off to beautiful Coimbra, Portgual, for the <em>amazing</em> JNation.pt conference!</p>\n  <p>All of which is to say, I had a <em>ton</em> of fun! But I am exhausted and eager to just chill out in Lisboa for a few days before heading to Amsterdam for the amazing JSpring and, separately, to the IntelliJ IDEA Conf, then off to Tokyo for the JJUG Spring event!</p>\n  <p>That excitement is only possible because our community is <em>amazing</em>! And on that note, let's dive into this week's roundup.</p>\n  <ul>\n   <li><a href=\"https://spring.io/blog/2025/05/20/spring-ai-1-0-GA-released\">Spring AI is 1.0!</a> This release was years in the making but represents the first GA release of Spring AI of dozens (but still less than a hundred, I think) of different modules support chat models, image models, transcription models, embedding models, and vector stores.</li>\n   <li>want to get started? Look no further than <a href=\"https://spring.io/blog/2025/05/20/your-first-spring-ai-1\">this blog: <em>Your First Spring AI 1.0 application</em></a> which features Anthropic as the chat model, PostgresML for embeddings, PostgreSQL as the vector store, and Spring AI.</li>\n  </ul>\n  <p>This isn't the only place you can read about Spring AI 1.0, however! Some of our friends in the community chimed in, too! For example:</p>\n  <ul>\n   <li>Microsoft Azure <a href=\"https://techcommunity.microsoft.com/blog/appsonazureblog/spring-ai-1-0-ga-is-here---build-java-ai-apps-end-to-end-on-azure-today/4414763\">put out a nice blog</a> and <a href=\"https://youtu.be/nkB2fnq-HOg\">Video</a>. A special thanks to <a href=\"https://www.linkedin.com/in/asir-architect-javaonazure\">Asir Selvasingh</a> who helped us <a href=\"https://youtu.be/zIYmgEbUl4U?feature=shared&amp;t=4970\">launch Spring AI</a> back at the Spring One conference in Vegas in 2023.</li>\n   <li>AWS has a nice article <a href=\"https://community.aws/content/2xLkItwKHrZ5EweKTz9uPpYHyPk/spring-ai-1-0-brings-ai-to-the-developer-masses\">on the new Spring AI release, also!</a> - Spring AI 1.0 Brings AI to the Developer Masses</li>\n   <li>Google has a nice blog <a href=\"https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-and-spring-ai-10\">on the new Spring AI 1.0 release, too!</a> - Google Cloud and Spring AI 1.0</li>\n   <li>I put out a video on <a href=\"https://youtu.be/mBMq2BqfjyA\">Spring AI and CloudFoundry called <em>Bootiful, Agentic, Production-Worthy, Cloud-Native Systems and Services</em></a></li>\n   <li>Elastic has a nice blog <a href=\"https://www.elastic.co/search-labs/blog/spring-ai-elasticsearch-application\">on using Spring AI as a vector store with Spring AI </a> - Spring AI and Elasticsearch as your vector database</li>\n   <li>Redis <a href=\"https://redis.io/blog/build-fast-production-worthy-ai-apps-with-spring-ai-and-redis/\">has a nice blog on using Redis as a vector store (is there nothing Redis can not do?)</a> — Build fast, production-worthy AI apps with Spring AI and Redis</li>\n   <li>MongoDB <a href=\"https://dev.to/mongodb/how-to-build-rag-applications-with-spring-ai-and-mongodb-5gaj\">has a nice blog on using MongoDB as a vector store with Spring AI 1.0</a> - Spring AI and MongoDB: How to Build RAG Applications</li>\n   <li>Oracle <a href=\"https://blogs.oracle.com/developers/post/spring-ai-10-ga-released-with-oracle-vector-database-support\">has a nice blog on using Oracle DB as a Vector Store with Spring AI 1.0—</a>Spring AI 1.0 GA released with Oracle Vector Database support</li>\n   <li>InfoQ put together a news post <a href=\"https://www.infoq.com/news/2025/05/spring-ai-1-0-streamlines-apps/\">on Spring AI 1.0—</a>Spring AI 1.0 Released, Streamlines AI Application Development with Broad Model Support</li>\n   <li>The New Stack has an <a href=\"https://thenewstack.io/production-worthy-ai-with-spring-ai-1-0/\">Article</a> - Production-Worthy AI With Spring AI 1.0</li>\n   <li>This is an article from Daniel Garnier-Moiroux on <a href=\"https://spring.io/blog/2025/05/19/spring-ai-mcp-client-oauth2\">MCP Authorization in practice with Spring AI and OAuth2</a> that is <em>well</em> worth reading if you intend to take this stuff to production!</li>\n  </ul>\n  <p>As you can see, <em>tons</em> of interest in the Spring AI 1.0 release! Thank you, community! And tons of interest in all the other amazing releases, too!</p>\n  <ul>\n   <li>I love this blog Spring Data lead Mark Paluch <a href=\"https://spring.io/blog/2025/05/23/vector-search-methods\">looking at repository vector search methods</a></li>\n   <li>In last week's installment of <em>A Bootiful Podcast</em>, <a href=\"https://spring.io/blog/2025/05/22/a-bootiful-podcast-sergi-almar\">I talk to Spring IO foudner Sergi Almar</a></li>\n   <li>Speaking of Spring Data, did you see this incredible <a href=\"https://spring.io/blog/2025/05/22/spring-data-ahead-of-time-repositories\">new Spring Data AOT repository support</a>? Right now it's only available for JDBC and MongoDB, but we're working on expanding support. TL;DR: you can have Spring Data code-generate the repository at compilation that would otherwise be generated at runtime. This results in code that's more debuggable, takes less RAM, and starts up quicker. <em>Nice!</em></li>\n   <li><a href=\"https://spring.io/blog/2025/05/22/spring-integration-6-5-released\">Spring Integration 6.5 GA is available</a></li>\n   <li><a href=\"https://spring.io/blog/2025/05/22/spring-boot-3-5-0-available-now\">Spring Boot 3.5.0 available now</a></li>\n   <li><a href=\"https://spring.io/blog/2025/05/22/spring-boot-3-4-6-available-now\">Spring Boot 3.4.6 is available now</a></li>\n   <li><a href=\"https://spring.io/blog/2025/05/22/spring-boot-3-3-12-available-now\">Spring Boot 3.3.12 is available now</a></li>\n   <li><a href=\"https://github.com/wimdeblauwe/vite-spring-boot/releases/tag/0.9.0\"><code>vite-spring-boot 0.9.0</code></a> released with support for JTE as an alternative to Thymeleaf as template engine for Spring Boot so you can have all the Vite niceness for your CSS and JavaScript bits.</li>\n   <li>preliminary for the faster, more memory-efficient, and more debuggable <a href=\"https://twitter.com/belyaev_andrey/status/1927072372101656643?s=12\">Spring Data AOT-based repositories is now previewing in IntellIJ IDEA!</a></li>\n   <li>an oldie-but-a-goodie: <a href=\"https://reflectoring.io/spring-boot-12-factor-app/\">12 Factor Applications with Spring Boot</a></li>\n   <li>this is an interesting exploration of a (since-patched) bug in <a href=\"https://www.linkedin.com/pulse/when-metaspace-strikes-deep-dive-java-memory-mystery-evgeny-lazarev-ofxjf/\">Spring Retry and the unintended growth of Metaspace usage when used with Spring Cloud Config Client</a></li>\n   <li>an interesting <a href=\"https://mydeveloperplanet.com/2024/04/17/validation-with-spring-boot/\">look at validation with Spring Boot</a></li>\n   <li>speaking of Spring IO 2025, <a href=\"https://www.youtube.com/watch?v=oUK1Np4OvnM\">do <em>not</em> miss this jam-packed keynote!</a></li>\n   <li>Spring Framework contributor and legend Arjen Poutsma talks about <a href=\"https://poutsma-principles.com/blog/2025/05/20/method-chaining/\">building fluent API designs</a></li>\n   <li>this blog from AWS is <em>very</em> interesting! It looks at building MCP services and - most notably - <a href=\"https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/\">it demonstrates all the code in terms of Spring AI</a></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "每周 Spring 新闻重点：Spring AI 1.0 正式发布及生态系统支持。",
+  "oneSentenceSummary": "每周 Spring 新闻重点：Spring AI 1.0 正式发布及生态系统支持。",
+  "summary": "本周 Spring 重点发布 Spring AI 1.0 正式版，历经多年开发，标志着其已为生产环境做好准备。此版本全面支持各类 AI 模型（聊天、图像、转录、嵌入），并与众多向量数据库集成。文章强调了主流云服务商（微软 Azure、AWS、谷歌云）和数据库厂商（Elastic、Redis、MongoDB、Oracle）的广泛采用和支持。合作伙伴指出，Spring AI 1.0“让更多开发者能够使用 AI”，并使“可用于生产环境的 AI 应用”成为可能。此外，新闻综述还简要介绍了 Spring Data AOT 仓库支持预览、Spring Integration 6.5 GA 以及多个 Spring Boot 版本的更新。",
+  "mainPoints": [
+    {
+      "point": "Spring AI 1.0 已正式发布，可用于生产环境。",
+      "explanation": "经过多年开发，Spring AI 1.0 正式发布，提供在 JVM 上构建 AI 应用所需的稳定 API 和全面功能。"
+    },
+    {
+      "point": "该版本全面支持各类 AI 模型和向量数据库。",
+      "explanation": "Spring AI 1.0 提供聊天、图像、转录和嵌入模型的模块，并与众多向量数据库集成，以构建各种 AI 应用。"
+    },
+    {
+      "point": "主流云厂商和数据平台积极支持 Spring AI 1.0。",
+      "explanation": "来自 AWS、Azure、Google Cloud、Elastic、Redis、MongoDB 和 Oracle 的公告和指南表明了强大的生态系统支持，有助于推广和集成 Spring AI 1.0。"
+    },
+    {
+      "point": "其他值得关注的 Spring 项目也发布了更新。",
+      "explanation": "本周还发布了 Spring Integration 6.5 GA、多个 Spring Boot 版本以及 Spring Data AOT 仓库支持的预览版。"
+    }
+  ],
+  "keyQuotes": [
+    "Spring AI 1.0 发布！",
+    "此版本历经多年酝酿，是 Spring AI 的首次 GA 发布...",
+    "Spring AI 1.0 让更多开发者能够使用 AI",
+    "使用 Spring AI 1.0 构建生产级 AI 应用",
+    "正如您所见，社区对 Spring AI 1.0 版本表现出极大的兴趣！"
+  ],
+  "tags": [
+    "Spring AI",
+    "AI开发",
+    "Java",
+    "Spring Framework",
+    "向量数据库"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 864,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748304000000,
+  "publishDateStr": "2025-05-27",
+  "publishDateTimeStr": "2025-05-27 00:00:00"
+}

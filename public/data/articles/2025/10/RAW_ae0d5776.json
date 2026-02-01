@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ae0d5776",
+  "title": "Daniel Stenberg 谈 AI 辅助的 curl 错误报告",
+  "url": "https://simonwillison.net/2025/Oct/2/curl/#atom-everything",
+  "date": "2025-10-02 15:00:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://mastodon.social/@bagder/115241241075258997\">Daniel Stenberg's note on AI assisted curl bug reports</a></strong> (<a href=\"https://news.ycombinator.com/item?id=45449348\" title=\"Hacker News\">via</a>) Curl maintainer Daniel Stenberg on Mastodon:</p>\n   <blockquote>\n    <p>Joshua Rogers sent us a <em>massive</em> list of potential issues in #curl that he found using his set of AI assisted tools. Code analyzer style nits all over. Mostly smaller bugs, but still bugs and there could be one or two actual security flaws in there. Actually truly awesome findings.</p>\n    <p>I have already landed 22(!) bugfixes thanks to this, and I have over twice that amount of issues left to go through. Wade through perhaps.</p>\n    <p>Credited \"Reported in Joshua's sarif data\" if you want to look for yourself</p>\n   </blockquote>\n   <p>I searched for <code>is:pr Joshua sarif data is:closed</code> in the <code>curl</code> GitHub repository <a href=\"https://github.com/curl/curl/pulls?q=is%3Apr+Joshua+sarif+data+is%3Aclosed\">and found 49 completed PRs so far</a>.</p>\n   <p>Joshua's own post about this: <a href=\"https://joshua.hu/llm-engineer-review-sast-security-ai-tools-pentesters\">Hacking with AI SASTs: An overview of 'AI Security Engineers' / 'LLM Security Scanners' for Penetration Testers and Security Teams</a>. The <a href=\"https://joshua.hu/files/AI_SAST_PRESENTATION.pdf\">accompanying presentation PDF</a> includes screenshots of some of the tools he used, which included Almanax, Amplify Security, Corgea, Gecko Security, and ZeroPath. Here's his vendor summary:</p>\n   <p><img alt=\"Screenshot of a presentation slide titled &quot;General Results&quot; with &quot;RACEDAY&quot; in top right corner. Three columns compare security tools: &quot;Almanax&quot; - Excellent single-function &quot;obvious&quot; results. Not so good at large/complicated code. Great at simple malicious code detection. Raw-bones solutions, not yet a mature product. &quot;Gorgoa&quot; - Discovered nearly all &quot;test-case&quot; issues. Discovered real vulns in big codebases. Tons of F/Ps. Malicious detection sucks. Excellent UI &amp; reports. Tons of bugs in UI. PR reviews failed hard. &quot;ZeroPath&quot; - Discovered all &quot;test-case&quot; issues. Intimidatingly good bug and vuln findings. Excellent PR scanning. In-built issue chatbot. Even better with policies. Extremely slow UI. Complex issuedescriptions.\" src=\"https://static.simonwillison.net/static/2025/security-vendor-slide.jpg\"></p>\n   <p>This result is especially notable because Daniel has been outspoken about the deluge of junk AI-assisted reports on \"security issues\" that curl has received in the past. In <a href=\"https://simonwillison.net/2025/May/6/daniel-stenberg/\">May this year</a>, concerning HackerOne:</p>\n   <blockquote>\n    <p>We now ban every reporter INSTANTLY who submits reports we deem AI slop. A threshold has been reached. We are effectively being DDoSed. If we could, we would charge them for this waste of our time.</p>\n   </blockquote>\n   <p>He also wrote about this <a href=\"https://daniel.haxx.se/blog/2024/01/02/the-i-in-llm-stands-for-intelligence/\">in January 2024</a>, where he included this note:</p>\n   <blockquote>\n    <p>I do however suspect that if you just add an ever so tiny (intelligent) human check to the mix, the use and outcome of any such tools will become so much better. I suspect that will be true for a long time into the future as well.</p>\n   </blockquote>\n   <p>This is yet another illustration of how much more interesting these tools are when experienced professionals use them to augment their existing skills.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9035/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "curl 维护者 Daniel Stenberg 赞扬 AI 辅助错误报告，肯定了 AI 与人类专业知识结合的价值，一改此前负面看法。",
+  "oneSentenceSummary": "curl 维护者 Daniel Stenberg 赞扬 AI 辅助错误报告，肯定了 AI 与人类专业知识结合的价值，一改此前负面看法。",
+  "summary": "本文报道了 curl 项目维护者 Daniel Stenberg 对 AI 辅助错误报告的态度显著转变。此前，Stenberg 曾公开批评甚至禁止提交他认为低质量的、AI 生成的安全报告，将其比作针对他们时间的 DDoS 攻击。然而，Joshua Rogers 利用一套 AI 安全静态分析工具（包括 Almanax、Amplify Security、Corgea、Gecko Security 和 ZeroPath）为 curl 项目提交了大量潜在问题列表，其中包括小错误甚至潜在的安全缺陷。Stenberg 对这些发现表示高度赞扬，目前已经修复了 22 个错误，还有更多问题需要解决。这一事件有力地表明，经验丰富的专业人士利用 AI 工具增强现有技能时，工具的价值和有效性会显著提高。这也验证了 Stenberg 早先的观点，即“微小的（智能的）人工检查”能显著改善 AI 工具的结果。",
+  "mainPoints": [
+    {
+      "point": "AI 辅助工具能有效发现大量软件错误，包括潜在安全漏洞。",
+      "explanation": "Joshua Rogers 使用 AI SAST 工具为 curl 项目找到了“大量”潜在问题列表，其中许多问题已得到修复，这证明了 AI 在代码审查和错误检测方面的潜力。"
+    },
+    {
+      "point": "AI 工具的价值在于与经验丰富的专业人士结合。",
+      "explanation": "Daniel Stenberg 高度赞扬了 Joshua Rogers 的 AI 辅助报告，这与他之前对“AI 垃圾”的负面态度形成对比，强调了人类智能在过滤和利用 AI 输出方面的关键作用。"
+    },
+    {
+      "point": "AI 安全静态分析工具 (SAST) 已经证明了在复杂代码库中发现真实漏洞的能力。",
+      "explanation": "文章提到了 Joshua Rogers 的演示文稿中列出的 AI 工具，例如 ZeroPath，尽管存在一些缺点，但这些工具在测试用例和大型代码库中都显示出强大的发现真实漏洞的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "Joshua Rogers 使用他的 AI 辅助工具在 #curl 中发现了一个*大量*的潜在问题列表。到处都是代码分析器风格的 nit（代码规范小问题）。大多数是较小的错误，但仍然是错误，并且可能存在一两个实际的安全缺陷。这真是非常棒的发现。",
+    "因此，我已经提交了 22 个（！）缺陷修复，还有超过两倍数量的问题需要处理。或许需要仔细检查。",
+    "但我确实认为，如果加入少量（智能的）人工检查，这些工具的使用和结果会更好。而且我认为未来很长一段时间内都会是这样。",
+    "这再次表明，当经验丰富的专业人士使用这些工具来增强现有技能时，这些工具会更有价值。"
+  ],
+  "tags": [
+    "AI辅助",
+    "错误报告",
+    "代码分析",
+    "安全测试",
+    "curl"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 328,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759417209000,
+  "publishDateStr": "2025-10-02",
+  "publishDateTimeStr": "2025-10-02 15:00:09"
+}

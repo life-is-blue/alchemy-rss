@@ -1,0 +1,63 @@
+{
+  "id": "RAW_00aa8b",
+  "title": "GitHub Copilot 编码助手集成工作流程的五种方法",
+  "url": "https://github.blog/ai-and-ml/github-copilot/5-ways-to-integrate-github-copilot-coding-agent-into-your-workflow/",
+  "date": "2025-09-18 09:00:00",
+  "author": "Andrea Griffiths",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>If you’ve already tried <a href=\"https://docs.github.com/en/copilot/concepts/coding-agent/coding-agent\">GitHub Copilot coding agent</a>, you know the basics: assign a task, let it work in the background, and review the pull request when it’s done.&nbsp;</p>\n  <p>But what if you’re ready to move beyond the basics?</p>\n  <p>We got you. In this tutorial, we’ll explore five powerful strategies to integrate the coding agent deeper into your development workflow. From tackling tech debt to validating UI changes and experimenting with branch strategies, let’s unlock Copilot’s full potential.</p>\n  <p>Let’s go!</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <iframe loading=\"lazy\" title=\"What's new with the Copilot coding agent | GitHub Checkout\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/t4ERV6aHCPM?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n   </div>\n  </figure>\n  <p>\n   <br>\n   <strong>1. Offload tech debt with the Agents panel</strong>\n  </p>\n  <p>Tech debt is like weeds in your garden: ignore it, and it spreads everywhere.&nbsp;</p>\n  <p>You know that pile of “we should really fix this someday” tasks sitting in your backlog? The dependency upgrades, lingering feature flags, small refactors that everyone avoids because they’re boring but necessary?&nbsp;</p>\n  <p>I used to let those pile up until they became weekend projects. Not anymore.</p>\n  <p>The new <a href=\"https://github.blog/changelog/2025-08-19-agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github-com/\">Agents panel</a> lets me batch these tedious-but-important tasks and hand them off to Copilot while I focus on actual feature development.</p>\n  <p>Steps:</p>\n  <ol class=\"wp-block-list\">\n   <li>Open your repository on GitHub.com and click the <strong>Agents panel button</strong>.\n    <br></li>\n   <li>Describe your task:\n    <br>\n    <ul class=\"wp-block-list\">\n     <li><em>“Update the extension manifest to support VS Code 1.104”</em></li>\n     <li><em>“Add TypeScript strict mode and fix all resulting type errors”</em>\n      <br></li>\n    </ul></li>\n   <li>Hit <strong>Start task</strong> and let Copilot do the rest.</li>\n  </ol>\n  <figure class=\"wp-block-video\">\n   <video controls src=\"https://github.blog/wp-content/uploads/2025/09/addtracking_a5872e.mp4\"></video>\n  </figure>\n  <p>👉 <strong>Pro tip</strong>: Batch small cleanup tasks into separate requests. <a href=\"https://docs.github.com/en/copilot/concepts/billing/copilot-requests#what-are-premium-requests\">Each task only costs one premium request</a>, and you’ll get neatly scoped pull requests you can merge independently.</p>\n  <h2 class=\"wp-block-heading\" id=\"2-validate-ui-changes-with-playwright-mcp\"><strong>2. Validate UI changes with Playwright MCP</strong></h2>\n  <p>Front-end changes usually come with a side quest: Spin up the app locally, poke around the UI, and hope nothing’s broken. Copilot’s Playwright MCP server integration changes this completely. It can spin up your application, interact with it, and capture screenshots automatically.&nbsp;</p>\n  <p>Steps:</p>\n  <ol class=\"wp-block-list\">\n   <li>From the Agents panel, describe the task:\n    <br>\n    <em>“Add internationalization support for English, French, and Spanish.”</em><em> \n     <br> \n    </em></li>\n   <li>Copilot generates the code, uses the Playwright MCP server to run your app in a browser, and captures <strong>screenshots for the pull request</strong>.\n    <br></li>\n   <li>Review the screenshots directly in the pull request before checking out the branch locally.</li>\n  </ol>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" loading=\"lazy\" src=\"https://github.blog/wp-content/uploads/2025/09/playwright.gif\" alt=\"Square image\">\n  </figure>\n  <p>👉 <strong>Pro tip</strong>: This is great for validating responsive designs, dark mode toggles, or any UI change where a screenshot is worth a thousand code reviews.</p>\n  <h2 class=\"wp-block-heading\" id=\"3-experiment-safely-with-branch-strategies\"><strong>3. Experiment safely with branch strategies</strong></h2>\n  <p>Not every idea is ready for prime time. Sometimes you need a safe space to let Copilot experiment without touching your main branch. And here’s what makes Copilot’s branch handling really powerful: You can pick any branch as your starting point, not just the default.</p>\n  <p>Steps:</p>\n  <ol class=\"wp-block-list\">\n   <li>From the Agents panel, describe the task:\n    <br>\n    “<em>Add real time flight tracking with live delay notifications”</em><em> \n     <br> \n    </em></li>\n   <li>&nbsp;<strong>Choose your base branch</strong> from the dropdown: Maybe you want to build on <code>feature/booking-system</code>&nbsp; instead of main.\n    <br></li>\n   <li>Copilot creates a <code>copilot/</code> branch from your selected base branch and opens a draft pull request for your review.</li>\n  </ol>\n  <ol start=\"4\" class=\"wp-block-list\">\n   <li>Review the pull request and give Copilot feedback through pull request comments, as seen in the gif below:</li>\n  </ol>\n  <figure class=\"wp-block-image\">\n   <img decoding=\"async\" loading=\"lazy\" src=\"https://github.blog/wp-content/uploads/2025/09/mentioncopilot-4.gif\" alt=\"Square image\">\n  </figure>\n  <p>👉 <strong>Pro tip</strong>: Use dedicated branches to showcase prototypes in demos — clean, isolated, and easy to discard if needed.</p>\n  <h2 class=\"wp-block-heading\" id=\"4-choose-the-right-entry-point-for-your-task\"><strong>4. Choose the right entry point for your task</strong></h2>\n  <p>You wouldn’t use a screwdriver when you need a hammer, and the same goes for assigning tasks to Copilot. With multiple entry points (Agents panel, GitHub Issues, Your favorite IDE, GitHub Mobile), the trick is knowing which one fits the moment.</p>\n  <p>My best fits:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Agents panel:</strong> Perfect for ad hoc tasks while browsing GitHub — ideal when you’re reviewing issues or planning work.</li>\n   <li><strong>GitHub Issues:</strong> Great if your team already tracks work in Issues. Just assign directly to Copilot and it becomes part of your existing workflow.</li>\n   <li><strong>VS Code:</strong> Use for quick refactors spotted while coding — no context switching required.</li>\n   <li><strong>Mobile app:</strong> Surprisingly useful for small tasks or follow-ups when you’re away from your desk.</li>\n  </ul>\n  <p>👉 <strong>Pro tip</strong>: Don’t overthink it. The best entry point is the one closest to where inspiration strikes.</p>\n  <h2 class=\"wp-block-heading\" id=\"5-extend-copilot-coding-agent-with-mcp-servers\"><strong>5. Extend Copilot Coding Agent with MCP servers</strong></h2>\n  <p>Here’s where things get interesting. Copilot gets smarter when it has more context to work with. Out of the box, it ships with two powerful Model Context Protocol (MCP) servers:</p>\n  <p><strong>Default MCP servers:</strong></p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Playwright MCP:</strong> Enables browser automation and screenshot capabilities for testing web applications</li>\n   <li><strong>GitHub MCP:</strong> Provides awareness of GitHub repositories, issues, pull requests, and other GitHub-specific context.</li>\n  </ul>\n  <p>But it can become ever more powerful when you extend this ecosystem with custom MCP servers, for example:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Notion MCP:</strong> Pull in project specs or notes.</li>\n   <li><strong>Hugging Face MCP:</strong> Access AI models and datasets for machine learning features.</li>\n  </ul>\n  <p>The recently launched open source <a href=\"http://modelcontextprotocol/registry\">MCP Registry</a> provides a centralized place to discover, publish, and manage MCP server integrations. Check it out to see what others have built or to contribute your own.</p>\n  <p class=\"is-typography-preset-h2\"><strong><strong><strong>TL;DR</strong></strong></strong></p>\n  <p>👉 <strong>Pro tip</strong>: For implementation examples, visit the <a href=\"https://code.visualstudio.com/insider/mcp\">VS Code Insider page</a>, which offers a curated list of MCP servers across categories like Developer Tools, Productivity, Data &amp; Analytics, Business Services, and Cloud &amp; Infrastructure — all installable with a click.</p>\n  <p>These five workflows demonstrate how Copilot evolves from a suggestion tool into an essential development partner with the coding agent. By integrating it into your daily routine, you’re not just saving time, you’re fundamentally changing how you approach development challenges.</p>\n  <p>Think about it: Those tech debt items that used to languish for months? Now automated. The UI validations that demanded context-switching? Handled with screenshots. The experimental features you were hesitant to build? Safely prototyped in isolated branches.</p>\n  <p>The big wins: When teams stop seeing Copilot as just another coding tool and start treating it as a collaborator that unlocks new possibilities in your dev workflow.&nbsp;</p>\n  <h2 class=\"wp-block-heading\" id=\"your-next-steps\"><strong>Your next steps</strong></h2>\n  <p>Don’t just read about these workflows, experience them. Choose one task from your backlog right now (we all have them), open the Agents panel in your repository, and hand it off to Copilot. Then use those reclaimed hours to tackle the creative challenges only us humans can solve.</p>\n  <p>As AI-assisted development continues to evolve, the developers who thrive won’t be those who code the fastest, they’ll be the ones who masterfully orchestrate their AI tools to amplify their impact.</p>\n  <p>What will you build with your new teammate?</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "探讨 GitHub Copilot 编码助手在开发者工作流程中的高级集成策略，以提升效率。",
+  "oneSentenceSummary": "探讨 GitHub Copilot 编码助手在开发者工作流程中的高级集成策略，以提升效率。",
+  "summary": "本文详细介绍了五种强大的策略，旨在将 GitHub Copilot 的编码助手深度集成到开发流程中。内容包括：通过代理面板卸载技术债务；利用 Playwright MCP 验证 UI 更改，实现自动化截图；从任意分支安全地进行分支策略实验；根据任务类型选择合适的入口点（代理面板、GitHub Issues、VS Code、移动应用）；以及使用自定义模型上下文协议 (MCP) 服务器（例如 Notion 或 Hugging Face）扩展 Copilot 的功能。这些方法旨在将 Copilot 转变为开发流程中不可或缺的合作伙伴，自动执行繁琐任务，并促进新的协作模式。",
+  "mainPoints": [
+    {
+      "point": "使用 Copilot 的代理面板卸载技术债务。",
+      "explanation": "通过代理面板批量将繁琐的清理任务（如依赖项升级）分配给 Copilot，使开发人员能够专注于核心功能开发。"
+    },
+    {
+      "point": "利用 Playwright MCP 集成高效验证 UI 更改。",
+      "explanation": "Copilot 可以利用 Playwright 运行应用程序，与 UI 交互，并自动捕获屏幕截图，以便在 Pull Request 中更方便地进行审查。"
+    },
+    {
+      "point": "在隔离分支上安全地进行功能实验。",
+      "explanation": "利用 Copilot 创建和处理源自任何选定基本分支的 `copilot/` 分支，从而实现安全的原型设计和实验。"
+    },
+    {
+      "point": "选择合适的 Copilot 入口点，优化任务分配。",
+      "explanation": "根据当前上下文和灵感在代理面板、GitHub Issues、VS Code 或移动应用中进行选择，从而确保无缝的工作流程集成。"
+    },
+    {
+      "point": "使用自定义 MCP 服务器扩展 Copilot 功能。",
+      "explanation": "集成自定义模型上下文协议服务器（例如 Notion、Hugging Face），以便为 Copilot 提供更广泛的上下文感知，增强其智能性。"
+    }
+  ],
+  "keyQuotes": [
+    "新的代理面板让我可以批量处理这些繁琐但重要的任务，并将它们交给 Copilot，而我则专注于实际的功能开发。",
+    "Copilot 的 Playwright MCP 服务器集成彻底改变了这一点。它可以启动您的应用程序，与之交互并自动捕获屏幕截图。",
+    "您可以选择任何分支作为起点，而不仅仅是默认分支。",
+    "Copilot 获得的上下文越多，其能力就越强。",
+    "蓬勃发展的开发人员不会是那些编码速度最快的人，而是那些巧妙地协调其 AI 工具以扩大其影响的人。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "AI 编码助手",
+    "开发者工作流程",
+    "软件工程",
+    "AI 开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1030,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758186000000,
+  "publishDateStr": "2025-09-18",
+  "publishDateTimeStr": "2025-09-18 09:00:00"
+}

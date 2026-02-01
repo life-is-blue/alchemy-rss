@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5d8da440",
+  "title": "为什么我用了那么多提示词模板甚至用了 AI 帮忙还是写不好提示词？",
+  "url": "https://baoyu.io/blog/why-i-cant-write-good-prompts-with-ai-and-templates",
+  "date": "2025-10-06 04:05:26",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"nni2uy1n8h\">上次我分享了一个模拟雷军演讲的提示词，广受好评，但也有网友想知道我是怎么写出这样的提示词的。授人以鱼不如授人以渔，还是继续分享一下写好提示词的方法论。</p>\n   <p data-id=\"2hivd7gweg\">现在流行的是上下文工程（Context Engineering），似乎很少有人提起提示词工程（Prompt Engineering），甚至很多人觉得提示词工程已经不需要了：</p>\n   <blockquote data-id=\"0abdeiw0oc\">\n    <p data-id=\"ahaz4y5q9d\">“模型已经那么强了，还要啥提示词工程，我写什么提示词大模型都能知道我的意思执行的很好。”</p>\n   </blockquote>\n   <p data-id=\"lb9xb104a8\">这话只是部分正确，模型是已经越来越强了，普通的需求确实只要简单的提示，但是复杂的需求还是要借助提示词工程才能写的好。</p>\n   <p data-id=\"34q5r15qdb\"><strong>那么什么是提示词工程？</strong></p>\n   <blockquote data-id=\"wm8nl5t1ls\">\n    <p data-id=\"yu79wfo9hg\">提示词工程是一个过程，系统化地设计、测试、优化提示词的过程——宝玉</p>\n   </blockquote>\n   <p data-id=\"m6zgq17vcd\">网上分享的提示词或者各种提示词模板，它不是提示词工程，是提示词，是静态的，产生这些提示词的过程才叫提示词工程。</p>\n   <p data-id=\"ajf408ox3t\">举几个我最近写提示词的例子。</p>\n   <p data-id=\"b9i9yop2a6\">第一个例子就是我怎么写雷军演讲这个提示词的。</p>\n   <p data-id=\"c9jp868tu4\">往下看之前不妨停下来想一想，如果你来写怎么写？</p>\n   <p data-id=\"iioxa24qtb\">我是这么做的： 先用 Deep Research 去收集雷军的演讲，然后让 AI 基于 AI 的演讲结果生成一个模仿雷军演讲的提示词。</p>\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img14@main/2025/10/05/1759720790489-63e76dd9-55a9-4b79-bbe5-8230bb629a01.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"z9six69f67\">AI 生成了提示词后，我拿去测试了一下，虽然也生成了一个类似雷军风格的演讲稿，但是内容平淡无奇，结果并不怎么理想。</p>\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img12@main/2025/10/05/1759721137596-3674564f-6c35-4a4f-819b-dc18f48295da.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"mn3bfprjbb\">我用相同的方法分别去 ChatGPT 和 Claude 上测试了，评估下来结果都不怎么好。</p>\n   <p data-id=\"rugxmrsyxj\">看来 Deep Research 搜索出来的结果并不够好，可能很多都不是雷军的演讲，只是新闻报道之类，后来正好在 X 上看到有网友转载的早年有人整理的雷军演讲风格总结，于是用它试试看：</p>\n   <blockquote data-id=\"fnf3d7q3rs\">\n    <p data-id=\"tr4i6n9fl5\">请帮我生成一个 Prompt，可以把输入的主题或文本生成雷军风格的演讲稿。以下是网友总结的内容作为参考： &lt;tweet &gt; 雷军有一个非常牛的技能，就是把一件平平无奇或者并没有那么厉害的东西用数字、百分比或者其他的形容词给描述成一个听上去可望而不可即的物品。 发布会后，极氪高管吐槽小米汽车：小米的营销值得我们学习，但是汽车技术上小米应该向我们学习。 雷军的 PPT 和王家卫的电影台词有异曲同工之妙。 举个例子，普通人下一碗面就是我什么时候在哪下一碗什么面。但是雷军的PPT 会这样说:经我们小米的员工连续300个日夜不间断的大数据研究发现，97%的人类在早晨七点零三分56秒的时候会出现明显的饥饿感，相比较七点整，饥饿感整整提升了57%。 为了解决这种困扰人类几千年的饥饿感，我们小米工程师们反复研究比对发现，面粉的饱腹感要比大米的饱腹感高出21%。 于是我们专门找到了面粉原料小麦的5万年前的发源地 --位于中东的新月沃土，砸重金在新月沃土研制出了一款迄今为止最有饱腹感的面条。 那么究竟多有饱腹感呢? 比传统的面条饱腹感提升了73%。同时卡路里下降50%。 我们也给它取了一个好听的名字，叫小米超级空心面。同时呢，我们还联合饮用水的行业巨头--农夫山泉研制出了业内首创的泡面专用水-农夫米泉。用我们农夫米泉煮出来的面条饱腹感还能再提升11% 9.9元3斤小米空心强饱腹感面条。（面粉成本1.6元一斤而已）免费送十包调料。总共有9款粗细不同，6种种包装颜色可选 &lt;/tweet&gt;</p>\n   </blockquote>\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img9@main/2025/10/05/1759721692387-953c03a8-33c5-43b3-b452-18aeac6a0c87.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"ybhbf0hxlc\">用生成后的提示词去测试了一下，效果极好！</p>\n   <p data-id=\"yuluk52e9s\">就这么简单！</p>\n   <p data-id=\"853tx8eb9u\">我把这个过程画成了一张图</p>\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img16@main/2025/10/05/1759721791239-6b3bd1f0-8dad-4f53-83ed-c92cccb34e84.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"cszanohmdw\">所有的提示词创作都是这样一个迭代的过程：</p>\n   <ol>\n    <li>\n     <p data-id=\"50rtt4duw9\">目标：先设定一个目标，你期望你的提示词能达到什么样的效果。</p>\n    </li>\n    <li>\n     <p data-id=\"gh8rfdjk2u\">想法：有了目标你需要有个想法怎么来写，比如可以手写，可以 AI 帮你写，可以套模板</p>\n    </li>\n    <li>\n     <p data-id=\"59ko997sq3\">写提示词：不用想那么多，先写一个版本出来。就好比你在练习射击，别想太多，先瞄准开一枪。</p>\n    </li>\n    <li>\n     <p data-id=\"fwy4d71mzc\">测试提示词：得到第一个版本 Prompt 后，去测试你的提示词。</p>\n    </li>\n    <li>\n     <p data-id=\"yislo1h62z\">评估：拿到测试结果后，看看实际结果和你期望的结果有多大差距，差距在哪里。就好比你朝靶子开了一枪后，量一下离靶心多远。</p>\n    </li>\n   </ol>\n   <p data-id=\"sqkzmr22lx\">如果评估结果达不到你设定的目标，那么就从第 1 步开始，基于上一个版本的结果继续迭代。有时候运气好，一次就得到了好的结果，有时候就需要反复迭代。</p>\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img13@main/2025/10/05/1759723005099-012001b5-e191-45fc-b0e9-6a3ad9eaa625.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"uskbaev490\">再比如上一次我创作 YouTube 字幕生成的提示词时，迭代了十几个版本，一开始是对格式不满意，后来发现它总是在段落中间加上时间戳，非常影响阅读体验，但是怎么在提示词里面强调让它不要在段落中间加时间戳都不起作用。</p>\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img14@main/2025/10/05/1759723111722-e598d7f7-1c02-45d3-a6af-bff44ef43cde.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"mro84esc0q\">最后灵机一动在 Few-Shot 的例子里面，加了一个如果同一个人发言内容太长就拆分成两段显示的例子，终于是不会再在段落内加时间戳了。</p>\n   <p data-id=\"hfjy0fr7xy\">所以回头总结一下，很多人写不好提示词，根源其实不是找不到好的模板，或者 AI 帮不了你，而是<strong>你是不是能评估出当前提示词生成结果离目标的差距，以及知道怎么调整。</strong></p>\n   <p data-id=\"wwp7ac13dt\">这也是为什么专业领域的提示词，通常还需要有专业背景才能写得好，比如一个不懂编程的人去用 AI 编程，就算套用一堆的提示词模板，也一样难用 AI 写好，因为他们无法判断提示词生成的结果是不是满足要求，如果不满足差距在哪里，怎么调整。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章详细阐述了提示词工程是一个系统化的迭代过程，强调评估与调整能力是写好提示词的关键。",
+  "oneSentenceSummary": "文章详细阐述了提示词工程是一个系统化的迭代过程，强调评估与调整能力是写好提示词的关键。",
+  "summary": "文章纠正了当前对提示词工程的普遍误解，指出其并非简单套用模板或依赖 AI 生成，而是一个系统化的设计、测试、优化过程。作者通过模仿雷军演讲和生成 YouTube 字幕的实际案例，详细演示了从设定目标、构思想法、编写提示词、测试、评估到迭代的完整流程。文章强调，能否准确评估提示词生成结果与目标之间的差距，并知道如何进行有效调整，是写好提示词的核心能力。同时指出，专业背景对于进行有效评估和优化至关重要，因为这有助于理解和判断结果的质量。文章为读者提供了实用的提示词开发方法论。",
+  "mainPoints": [
+    {
+      "point": "提示词工程是一个系统化的迭代过程，而非静态模板或 AI 生成。",
+      "explanation": "高质量提示词的产出需要经过设定目标、构思、编写、测试、评估和持续迭代的完整流程，才能达到预期效果。"
+    },
+    {
+      "point": "评估与调整能力是写好提示词的核心，而非模板或 AI 辅助本身。",
+      "explanation": "关键在于能够判断 AI 生成结果与目标间的差距，并知道如何针对性地调整提示词，这是提升提示词质量的关键能力。"
+    },
+    {
+      "point": "专业背景对于高效进行提示词工程至关重要。",
+      "explanation": "拥有专业领域知识能帮助使用者准确评估 AI 生成内容的质量和适用性，从而更有效地指导提示词的优化方向。"
+    }
+  ],
+  "keyQuotes": [
+    "提示词工程是一个过程，系统化地设计、测试、优化提示词的过程。",
+    "所有的提示词创作都是这样一个迭代的过程：目标 -> 想法 -> 写提示词 -> 测试提示词 -> 评估 -> 迭代。",
+    "很多人写不好提示词，根源其实不是找不到好的模板，或者 AI 帮不了你，而是你是不是能评估出当前提示词生成结果离目标的差距，以及知道怎么调整。",
+    "专业领域的提示词，通常还需要有专业背景才能写得好，因为他们无法判断提示词生成的结果是不是满足要求，如果不满足差距在哪里，怎么调整。"
+  ],
+  "tags": [
+    "提示词工程",
+    "Prompt Engineering",
+    "大语言模型",
+    "LLM",
+    "AI开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 92,
+  "wordCount": 1900,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759723526000,
+  "publishDateStr": "2025-10-06",
+  "publishDateTimeStr": "2025-10-06 04:05:26"
+}

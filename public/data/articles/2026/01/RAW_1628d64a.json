@@ -1,0 +1,58 @@
+{
+  "id": "RAW_1628d64a",
+  "title": "Swift 跨平台框架 Skip 现已完全开源",
+  "url": "https://www.infoq.com/news/2026/01/swift-skip-open-sourced/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-28 16:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>After three years of development, the team behind Skip, a solution designed to create iOS and Android apps from a single Swift/SwiftUI codebase, has announced their decision to make the product <a href=\"https://skip.dev/blog/skip-is-free/\">completely and open source</a>, in order to foster adoption and community contribution.</p>\n   <p>Prior to this announcement, Skip was a paid solution requiring a subscription and a license key to create apps, unless you were an indie developer or building free apps. This model, Skip explains, helped bootstrap the product without outside investment, but \"the plain truth is that developers expect to get their tools free of charge\". With the recent decision to go open source, Skip now aligns with the major development tools for both iOS and Android, including Xcode, Android Studio, popular frameworks, and other essential tools, which are all available for free.</p>\n   <p>But it's not just a matter of cost, Skip says, that drove their decision:</p>\n   <blockquote>\n    <p>Beyond pricing, there’s a deeper concern about durability. Developers are understandably wary of building their entire app strategy on a small company’s paid, closed-source tool. What if the company goes under? Gets acquired and shut down? What happens to their apps?</p>\n   </blockquote>\n   <p>In a nutshell that's the reason why Skip is going open source: even if the current development team were to disappear, the solution would continue to exist, preserving the investment developers have made in it.</p>\n   <p>According to the Skip team, the rapid evolution of UI frameworks on both Android and iOS, with Material Expressive and Liquid Glass, has created a situation where using legacy cross-platform UI frameworks can lead to \"dated interfaces, weaker user experiences, and real competitive disadvantages\". By contrast, Skip enables fully native user experiences on both platforms.</p>\n   <p>In fact, the Skip framework brings SwiftUI to Android by bridging it to Jetpack Compose. This approach allows iOS developers to write both their app's business logic and UI in the same codebase, with minimal additional effort.</p>\n   <p>Several early adopters of Skip, back when it was still a closed-source, paid product, shared their experience on Reddit on Reddit. Redditor <a href=\"https://www.reddit.com/r/SwiftUI/comments/1nzgdih/comment/ni1zrpb/\"><code>jestecs</code> noted</a> that \"It is quite good there are some gotchyas here and there but overall it’s been surprisingly pleasant to work with\". Additionally, <a href=\"https://www.reddit.com/r/SwiftUI/comments/1nzgdih/comment/ni26xec/\"><code>JEHonYakuSha</code> elaborated more</a>:</p>\n   <blockquote>\n    <p>There are some issues where certain deprecated constructors are not supported so you may be used to an older way to defining your view modifiers or components, but once you get used to being a little creative and confirming what is supported, it is very good.</p>\n   </blockquote>\n   <p><code>JEHonYakuSha</code> also noted that you can mix Kotlin code snippets into your Swift codebase using <code>// SKIP INSERT</code> and that only the Swift Package Manager is supported on the iOS side, which can make managing internal dependencies somewhat tricky.</p>\n   <p>One important caveat from Skip's documentation is that the framework is <a href=\"https://skip.tools/docs/gettingstarted/#existing_development\">best suited for new projects or apps with few external dependencies</a>:</p>\n   <blockquote>\n    <p>Migrating an existing app to Skip is not trivial. Most apps contain many iOS-only dependencies that make an Android port challenging.</p>\n   </blockquote>\n   <p>Skip started three years ago as a Swift-to-Kotlin transpiler and later added support for the most widely used SwiftUI APIs on Android. During this time, the established the Swift Android Workgroup and released the <a href=\"https://www.infoq.com/news/2025/10/swift-sdk-android/\">Swift Android SDK</a>, enabling natively compiling Swift code on Android. Today, Skip supports many popular integration frameworks, interoperates with thousands of cross-platform Swift packages, and offers a comprehensive SwiftUI implementation, according to the team.</p>\n   <p>An open-source alternative providing a SwiftUI-like API for UI across macOS, Linux, Windows, and <a href=\"https://github.com/stackotter/swift-cross-ui/issues/145\">some nascent support for Android</a> is <a href=\"https://swiftcrossui.dev/\">SwiftCrossUI</a>.</p>\n   <p>Skip can be cloned on <a href=\"https://github.com/skiptools\">GitHub</a> while all documentation, blog, and case studies have moved to <a href=\"https://skip.dev\">skip.dev</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Swift Cross-Platform Framework Skip Now Fully Open Source\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/swift-skip-open-sourced/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1769616000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Skip 是一款通过单一 Swift/SwiftUI 代码库构建原生 iOS 和 Android 应用的框架，目前已转型为完全开源模式，旨在推动社区采用并确保长期持久性。",
+  "oneSentenceSummary": "Skip 是一款通过单一 Swift/SwiftUI 代码库构建原生 iOS 和 Android 应用的框架，目前已转型为完全开源模式，旨在推动社区采用并确保长期持久性。",
+  "summary": "本文报道了跨平台开发工具 Skip 的战略转型，即从付费订阅模式转变为完全开源项目。Skip 的独特之处在于将 Swift 转译为 Kotlin，并将 SwiftUI 桥接到 Jetpack Compose，从而实现真正的原生用户体验，而非 Web 视图或自定义渲染。此次转型旨在解决开发者对供应商锁定以及小公司闭源工具“持久性”的担忧。虽然该框架提供了愉快的开发体验并支持在 Swift 中混入 Kotlin，但由于迁移具有大量 iOS 特定依赖项的现有应用非常复杂，因此目前主要推荐用于新项目。",
+  "mainPoints": [
+    {
+      "point": "Skip 已转型为完全开源模式，以消除采用障碍。",
+      "explanation": "通过放弃付费订阅模式，Skip 符合了行业对免费开发工具的预期，并确保了框架的生存能够独立于原公司的商业成功。"
+    },
+    {
+      "point": "该框架通过将 SwiftUI 桥接到 Jetpack Compose 来实现原生性能。",
+      "explanation": "与可能产生陈旧 UI 的传统跨平台框架不同，Skip 允许开发者在业务逻辑和 UI 上都使用 Swift，然后直接映射到原生的 Android 组件。"
+    },
+    {
+      "point": "将现有 iOS 应用迁移到 Skip 仍然是一个重大的技术挑战。",
+      "explanation": "该框架最适合新项目（Greenfield Projects），因为现有应用通常依赖于仅限 iOS 的依赖项，而这些依赖项在 Skip/Android 生态系统中没有直接的等价物。"
+    },
+    {
+      "point": "Skip 通过允许在 Swift 中集成 Kotlin 代码来促进互操作性。",
+      "explanation": "开发者可以使用类似 '// SKIP INSERT' 的特定指令将 Kotlin 代码片段混入其 Swift 代码库中，从而在需要原生 Android 特定功能时提供灵活性。"
+    }
+  ],
+  "keyQuotes": [
+    "除了价格，还有一个更深层次的关于持久性的担忧。开发者理所当然地会对将整个应用策略构建在一家小公司的付费闭源工具之上持谨慎态度。",
+    "事实真相是，开发者期望免费获得他们的工具。",
+    "Skip 通过将 SwiftUI 桥接到 Jetpack Compose，在两个平台上实现了完全原生的用户体验。",
+    "将现有应用迁移到 Skip 并非易事。大多数应用包含许多仅限 iOS 的依赖项，这使得 Android 端的移植具有挑战性。"
+  ],
+  "tags": [
+    "Swift",
+    "SwiftUI",
+    "跨平台开发",
+    "开源",
+    "Android 开发"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 600,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769616000000,
+  "publishDateStr": "01-28",
+  "publishDateTimeStr": "2026-01-28 16:00:00"
+}

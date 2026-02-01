@@ -1,0 +1,57 @@
+{
+  "id": "RAW_810ade",
+  "title": "无需数据标注！测试时强化学习，模型数学能力暴增 | 清华&上海 AI Lab",
+  "url": "https://www.qbitai.com/2025/04/276379.html",
+  "date": "2025-04-24 06:26:28",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺<br>\n    量子位 | 公众号 QbitAI</h5>\n  <p>无需数据标注，在测试时做强化学习，模型数学能力暴增159%！</p>\n  <p>清华和上海AI Lab周伯文团队用这样的方法，对模型进行了强化——</p>\n  <p>结果模型在多个数据集上的成绩均大幅提升，尤其是Qwen-2.5-Math-7B，它做AIME 2024竞赛题的成绩直接提高了159%。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/152effde-57e2-44e1-f277-0503596e0700/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1c426515-a547-4983-39b0-91e4bb174000/public\" data-ratio=\"0.3580952380952381\" data-type=\"png\" data-w=\"1050\" data-imgfileid=\"100306819\" data-original-style=\"text-align: center;margin: 0px auto;padding: 0px;\" data-index=\"1\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>实验过程中，强化学习的数据均由被训练的模型自身生成。</p>\n  <p>作者还发现，训练后的模型性能，准确性已经超过了用于训练它的伪标签（测试时强化学习过程中产生）。</p>\n  <p>DeepMind工程师评价，这种测试时强化学习的方式将改变LLM的格局：</p>\n  <blockquote>\n   <p>它利用预训练模型和特定任务的提示进行实时自适应，而无需大量带标签的数据集，这是向前迈出的重要一步。</p>\n  </blockquote>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4c4077aa-0aa0-4a70-db4b-31ee77448b00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5be2a9b9-d5bf-40fe-8ba5-2b7f31ae1700/public\" data-ratio=\"0.2601851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306816\" data-original-style=\"text-align: center;margin: 0px auto;padding: 0px;\" data-index=\"2\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <h2>模型自己生成强化学习数据</h2>\n  <p>作者提出的测试时强化学习（TTRL）过程是测试时扩展和测试时训练的结合，具体可以分为“生成、投票、强化”三个大步骤。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/800bc948-70c6-413f-8b4d-7f7e26a40400/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3ff11905-6f7b-4163-b5f7-2888ef93b700/public\" data-ratio=\"0.3935361216730038\" data-type=\"png\" data-w=\"1052\" data-imgfileid=\"100306815\" data-original-style=\"text-align: center;margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>第一步生成的目的，是让模型针对每个输入的prompt，生成尽可能多样化的候选答案，该过程通过测试时推理来实现。</p>\n  <p>其思路是在推理阶段增加计算资源以获得更好的性能，具体到TTRL采用的是增加采样数量的方式，即对每个prompt，让模型采样生成N个不同的答案，而不是只生成一个确定性最高的输出。</p>\n  <p>作者的实验中，当在AIME 2024数据集上应用TTRL训练Qwen2.5-Math-7B模型时，每个prompt采样64次(N=64)，温度系数设为1.0，以鼓励模型生成多样化的答案。</p>\n  <p>投票过程从上一步生成的N个候选答案出发，通过多数投票的方式来估计正确答案，并将其作为伪标签。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ca61d0f8-5cd9-4cee-5368-33b43eb23a00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/92d6a891-0f79-45e5-fd0e-591e62b65a00/public\" data-ratio=\"0.49722222222222223\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306817\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"4\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>TTRL在实际应用投票机制时还引入了一个参数 Maj@N，表示多数投票的估计准确率。</p>\n  <p>它衡量的是伪标签与真实标签的一致性。通过控制Maj@N，可以权衡伪标签的质量和数量。</p>\n  <p>最后一步利用强化学习，基于上一步估计出的伪标签，来优化语言模型的策略，使其倾向于给出正确答案。</p>\n  <p>TTRL采用GRPO算法，还加入了重要性采样和蒙特卡洛估计等技术，以提高训练效率和稳定性。</p>\n  <h2>模型数学能力大幅提升</h2>\n  <p>为了评估TTRL的效果，作者在AIME 2024、AMC和MATH-500三个数据集上对调整前后的三款模型进行了测试。</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     在AIME 2024数据集上，对于Qwen2.5-Math-7B基础模型，TTRL将其准确率从16.7%提高到43.3%，提升幅度高达159.3%，超越了所有在大规模标注数据上训练的模型。\n    </section></li>\n   <li>\n    <section>\n     在AMC数据集上，Qwen2.5-Math-7B、Qwen2.5-Math-1.5B和LLaMA模型的准确率分别获得了74.9%、63.1%和68.4%的大幅提高。\n    </section></li>\n   <li>\n    <section>\n     MATH-500数据集上的表现更为突出，Qwen2.5-Math-7B和Qwen2.5-Math-1.5B分别实现了66.4%和142.4%的惊人提升，LLaMA模型的准确率也提高了29.3%。\n    </section></li>\n  </ul>\n  <p>平均而言，TTRL使Qwen2.5-Math-7B模型在三个数据集上的性能提高了84.1%。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8f50eb67-16ad-4400-9674-972d448e9100/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f788954e-c811-4869-0a70-252802197e00/public\" data-ratio=\"0.7574074074074074\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306818\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>进一步的泛化性实验表明，在一个数据集上应用TTRL后，性能的提高可以自然迁移到其他数据集，甚至是从未参与训练的任务。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e307468-511d-435c-f457-1bf9eb17a200/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/04e405ba-0c1d-48c6-b3c8-61db35413300/public\" data-ratio=\"0.4185185185185185\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306821\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"6\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>为了分析TTRL方法有效的原因，作者比较了TTRL训练前后模型的多数投票性能。</p>\n  <p>结果，应用TTRL后，模型的多数投票准确率（Maj@64）显著高于原始的Qwen模型，说明通过多数投票得到的伪标签质量优于单个模型输出。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ae0c4b86-9814-42e6-38e9-aa0714e2a200/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d4b41457-22d7-49c2-e659-660d03ca6c00/public\" data-ratio=\"0.3425925925925926\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306820\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"7\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>并且强化学习具备纠错能力。即使伪标签并非完全准确，强化学习也可以通过奖惩机制引导模型朝着正确方向优化。</p>\n  <p>从AIME 2024上标签准确率和奖励准确率的变化曲线中可以看到，即使在标签准确率较低的阶段，奖励准确率也能维持在90%以上。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/12ed22fd-7f3e-484d-1d0c-72f5c0910b00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90f593b0-55ee-485b-b7c3-455ed7919b00/public\" data-ratio=\"0.38981481481481484\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306823\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"7\" data-fail=\"0\">\n  </section>\n  <h2>作者简介</h2>\n  <p>这项研究的领导者是清华大学C3I课题组博士生张开颜和上海AI实验室青年研究员崔淦渠。</p>\n  <p>张开颜的导师是上海人工智能实验室主任、首席科学家周伯文教授；崔淦渠则毕业于清华NLP实验室，读博期间导师是刘知远副教授。</p>\n  <p>本文共同一作是张开颜和同样来自清华的Yuxin Zuo，周伯文和C3I课题组博士后丁宁是本文的通讯作者。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/249207ac-2c31-44d0-0848-11c29fc0e100/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3989edcb-b962-4dfe-9741-32f2512a1000/public\" data-ratio=\"0.39814814814814814\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100306822\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"9\" data-report-img-idx=\"8\" data-fail=\"0\">\n  </section>\n  <p>论文地址：<br>\n    https://arxiv.org/abs/2504.16084</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "清华 & 上海 AI Lab 提出测试时强化学习 (TTRL) 方法，无需标注数据，显著提升大语言模型在数学问题上的解决能力。",
+  "oneSentenceSummary": "清华 & 上海 AI Lab 提出测试时强化学习 (TTRL) 方法，无需标注数据，显著提升大语言模型在数学问题上的解决能力。",
+  "summary": "该文章介绍了一种由清华大学和上海 AI Lab 提出的名为测试时强化学习 (TTRL) 的新方法，用于提升大语言模型在数学问题上的解决能力。该方法无需数据标注，通过让模型自身生成强化学习数据，并在测试过程中进行强化学习训练。TTRL 包含“生成、投票、强化”三个步骤，其中强化环节采用 GRPO 算法，并加入重要性采样和蒙特卡洛估计等技术。实验结果表明，该方法能显著提高模型在多个数学数据集上的准确率，例如，Qwen-2.5-Math-7B 模型在 AIME 2024 数据集上的准确率提高了 159%。该研究还发现，TTRL 方法具有泛化性，在一个数据集上应用后，性能的提高可以迁移到其他数据集。DeepMind 工程师评价该方法是 LLM 领域的重要一步。",
+  "mainPoints": [
+    {
+      "point": "TTRL 无需标注数据即可提升模型数学能力",
+      "explanation": "通过测试时推理生成多样化答案，使用多数投票生成伪标签，再利用强化学习优化模型策略，避免了对大量标注数据的依赖。"
+    },
+    {
+      "point": "TTRL 显著提升模型在数学数据集上的准确率",
+      "explanation": "实验结果表明，TTRL 能大幅提高模型在 AIME 2024、AMC 和 MATH-500 等数据集上的准确率，尤其是在 AIME 2024 数据集上，Qwen-2.5-Math-7B 模型的准确率提高了 159%。"
+    },
+    {
+      "point": "TTRL 方法具有良好的泛化能力",
+      "explanation": "在一个数据集上应用 TTRL 后，性能的提高可以自然迁移到其他数据集，甚至是从未参与训练的任务。"
+    },
+    {
+      "point": "强化学习具备纠错能力",
+      "explanation": "即使伪标签并非完全准确，强化学习也可以通过奖惩机制引导模型朝着正确方向优化。"
+    }
+  ],
+  "keyQuotes": [
+    "无需数据标注，在测试时做强化学习，模型数学能力暴增 159%！",
+    "它利用预训练模型和特定任务的提示进行实时自适应，而无需大量带标签的数据集，这是向前迈出的重要一步。",
+    "训练后的模型性能，准确性已经超过了用于训练它的伪标签。"
+  ],
+  "tags": [
+    "强化学习",
+    "大语言模型",
+    "数学能力",
+    "Qwen",
+    "清华大学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1655,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745475988000,
+  "publishDateStr": "2025-04-24",
+  "publishDateTimeStr": "2025-04-24 06:26:28"
+}

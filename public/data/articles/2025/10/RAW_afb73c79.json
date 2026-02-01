@@ -1,0 +1,55 @@
+{
+  "id": "RAW_afb73c79",
+  "title": "谷歌新版 Gemini 一夜端掉 UI：单 HTML 文件复刻 macOS，成功率 100%",
+  "url": "https://www.qbitai.com/2025/10/341790.html",
+  "date": "2025-10-15 03:50:17",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"61\">Jay 发自 凹非寺量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">前端UI的工作，被谷歌AI一夜干没了。</p>\n  <p data-track=\"3\">就在最新能力展示中，<strong>Gemini 3.0 Pro居然自己“捏”出了一个macOS</strong>。</p>\n  <p data-track=\"5\">只靠几行提示词，谷歌的AI就在浏览器里复刻出了苹果引以为傲的UI。</p>\n  <p data-track=\"6\"><strong>Prompt&nbsp;</strong>: Design and create a web os like mac os full functional features from text editor , to dile manager to paint to video editor and all important mac os pre bundled software Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome.make it interesting and highly detail , shows details that no one expected go full creative and full beauty in one code block.</p>\n  <p data-track=\"7\">苹果式动画、窗口最小化、工具栏、浏览器……一应俱全，并且所有功能都能正常运行。</p>\n  <p data-track=\"8\">甚至还有个彩蛋——</p>\n  <p data-track=\"9\">在终端输入“matrix”，就会触发《黑客帝国》同款炫酷特效。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/004ff479d9c051024630fe604d5a381f.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/004ff479d9c051024630fe604d5a381f.gif\">\n  </div>\n  <p data-track=\"10\">重点在于成功率！</p>\n  <p data-track=\"11\">因为在A/B测试中不可能重复生成，<strong>以上你看到的所有都完完全全是一次生成的结果，并且源代码已经在CodePen上公开</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060754_40e83f4ba4507448b964516140049773.png\" data-src=\"https://image.jido.dev/20251015060754_40e83f4ba4507448b964516140049773.png\">\n  </div>\n  <p data-track=\"12\">网友惊呼，如果正式版真能达到这样的水准，Gemini无疑将成为史上最强的编程型模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060802_63683564065520160edee595282a0178.png\" data-src=\"https://image.jido.dev/20251015060802_63683564065520160edee595282a0178.png\">\n  </div>\n  <p data-track=\"14\">短短一天之内，苹果、微软、Linux这三足鼎立的PC操作系统江湖就被Gemini 3.0 Pro全包了。</p>\n  <p data-track=\"15\">有网友尝试让Gemini 3.0 Pro生成一个网页版Windows，结果一次成功。</p>\n  <p data-track=\"17\">而且，它不仅在终端里内置了Python，还能玩游戏、运行代码，功能完整得离谱。</p>\n  <p data-track=\"18\"><strong>Prompt&nbsp;</strong>: Design and create a web os like windows os full functional features from text editor , terminal with python and code editor and a game that can be played to dile manager to paint to video editor and all important windows os pre bundled software Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome.make it interesting and highly detail , shows details that no one expected go full creative and full beauty in one code block.</p>\n  <p data-track=\"19\">没有对比就没有伤害——</p>\n  <p data-track=\"20\">有网友展示了相同提示词下，Claude 4.5 Sonnet的「杰作」，<strong>连应用图标都点不开</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060754_348fa20c10a19b373cf2beabe2ad94ae.png\" data-src=\"https://image.jido.dev/20251015060754_348fa20c10a19b373cf2beabe2ad94ae.png\">\n  </div>\n  <p data-track=\"21\">Linux自然也跑不掉。</p>\n  <p data-track=\"23\">结果依然不错，还可以上维基百科、调用计算器、更换壁纸。</p>\n  <p data-track=\"24\"><strong>Prompt&nbsp;</strong>: Create a fully functional Linux desktop environment (Ubuntu/GNOME style) as a complete web operating system in a single HTML file with embedded CSS and JavaScript. All applications must be fully functional Use whatever libraries to get this done but make sure I can paste it all into a single HTML file and open it in Chrome.make it interesting and highly detail , shows details that no one expected go full creative and full beauty in one code block.</p>\n  <p data-track=\"25\">看到这些，硅基生命派表示非常满意：</p>\n  <blockquote>\n   <p data-track=\"26\">谁说LLM只会鹦鹉学舌的？！</p>\n  </blockquote>\n  <p data-track=\"27\">毕竟macOS和windows在网上连行源代码都没有。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060755_c347a6b361100f68a8134fcacf049d35.png\" data-src=\"https://image.jido.dev/20251015060755_c347a6b361100f68a8134fcacf049d35.png\">\n  </div>\n  <p data-track=\"28\">但也有网友指出，<strong>这只是一个模拟环境，距离真正的OS还差得远</strong>。</p>\n  <blockquote>\n   <p data-track=\"29\">确实令人印象深刻，但我们必须区分“仿真”和“实现”的区别。这些其实只是“粘合代码”，底层依赖的都是现有技术。\n    <br class=\"sysbr\">\n    就像程序员不能因为调用了库就把功劳算在自己头上一样，AI也不能。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060754_a7580006918f29c281f1729ef151d462.png\" data-src=\"https://image.jido.dev/20251015060754_a7580006918f29c281f1729ef151d462.png\">\n  </div>\n  <p data-track=\"31\">虽然谷歌尚未公布Gemini 3.0 Pro的正式发布时间，但从以往的泄露节奏和发布规律来看，有业内人士推测它可能会在未来几个月内亮相。</p>\n  <p data-track=\"32\">一个明显的信号是：网上来自各路influencer的演示视频越来越多了。</p>\n  <blockquote>\n   <p data-track=\"33\">不知怎么的，我们在Gemini 3正式发布前看到的demo，比当初2.5 Pro还要多。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060754_a318d645106147d76be51d48c1cf5023.png\" data-src=\"https://image.jido.dev/20251015060754_a318d645106147d76be51d48c1cf5023.png\">\n  </div>\n  <p data-track=\"34\">上一轮NanoBanana的营销成功，显然让谷歌尝到了“预热”的甜头，这次或许又想再赌一把。</p>\n  <p data-track=\"35\">不过，期望值拉得越高，落差往往也越大——就像当初的GPT-5那样。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新版Gemini一夜端掉UI：单HTML文件复刻macOS，成功率100%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015060754_4c47b283b67369d7e0f4366f581ad387.png\" data-src=\"https://image.jido.dev/20251015060754_4c47b283b67369d7e0f4366f581ad387.png\">\n  </div>\n  <p data-track=\"36\">感兴趣的朋友们到CodePen操作起来啦～</p>\n  <p data-track=\"37\">macOS:\n   <br class=\"sysbr\">\n   https://codepen.io/ChetasLua/pen/EaPvqVo\n   <br class=\"sysbr\">\n   Windows:\n   <br class=\"sysbr\">\n   https://codepen.io/ChetasLua/pen/yyezLjN\n   <br class=\"sysbr\">\n   Linux:\n   <br class=\"sysbr\">\n   https://codepen.io/ChetasLua/pen/LEGzZaQ</p>\n  <p data-track=\"38\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/chetaslua/status/1977936585522847768\n   <br class=\"sysbr\">\n   [2]https://www.ainewshub.org/post/google-gemini-3-pro-rumors-release-date-features-and-what-to-expect-in-late-2025?utm_source=chatgpt.com</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谷歌 Gemini 3.0 Pro 通过简单提示词，成功一次性生成并复刻了功能完整的 macOS、Windows 和 Linux 网页版操作系统 UI，展现了 AI 在前端代码生成领域的巨大潜力。",
+  "oneSentenceSummary": "谷歌 Gemini 3.0 Pro 通过简单提示词，成功一次性生成并复刻了功能完整的 macOS、Windows 和 Linux 网页版操作系统 UI，展现了 AI 在前端代码生成领域的巨大潜力。",
+  "summary": "文章报道了谷歌 Gemini 3.0 Pro 在最新能力展示中，仅凭几行提示词，便能一次性成功在浏览器中复刻出功能完整的 macOS、Windows 和 Linux 网页版操作系统 UI。这些 UI 不仅包含文本编辑器、文件管理器、画图工具等核心功能，还具备苹果式动画、窗口最小化、工具栏等细节，甚至内置了 Python 终端和游戏。文章强调了 Gemini 3.0 Pro 100%的成功率，并对比了其他模型的表现。尽管有网友指出这仍是“仿真”而非“实现”，但其所展现的强大代码生成能力引发了业界对前端 UI 工作未来发展方向的讨论。文章还提及了 Gemini 3.0 Pro 可能在未来几个月内正式发布，并附带了 CodePen 上的演示链接。",
+  "mainPoints": [
+    {
+      "point": "Gemini 3.0 Pro 展示了强大的前端 UI 代码一次性生成能力",
+      "explanation": "模型能根据简单提示词，一次性生成功能完整、细节丰富的 macOS、Windows、Linux 等操作系统 UI，成功率 100%，极大地提升了开发效率和创意实现能力。"
+    },
+    {
+      "point": "AI 在代码生成领域的突破性进展预示着开发模式的变革",
+      "explanation": "Gemini 3.0 Pro 的能力超越了传统编程范式，有望简化前端开发流程，降低技术门槛，并可能对未来的软件开发职业产生深远影响。"
+    },
+    {
+      "point": "尽管仍是“仿真”，但其潜在价值和启发意义巨大",
+      "explanation": "虽然生成的 Web OS 是基于现有技术栈的“粘合代码”，而非底层操作系统实现，但其展现的 AI 理解和组合复杂功能的能力，对开发者和产品经理思考未来 AI 辅助开发和产品形态具有极高参考价值。"
+    }
+  ],
+  "keyQuotes": [
+    "前端 UI 的工作，被谷歌 AI 一夜干没了。",
+    "只靠几行提示词，谷歌的 AI 就在浏览器里复刻出了苹果引以为傲的 UI。",
+    "以上你看到的所有都完完全全是一次生成的结果，并且源代码已经在 CodePen 上公开。",
+    "确实令人印象深刻，但我们必须区分'仿真'和'实现'的区别。这些其实只是'粘合代码'，底层依赖的都是现有技术。",
+    "谁说 LLM 只会鹦鹉学舌的？！"
+  ],
+  "tags": [
+    "大语言模型",
+    "代码生成",
+    "前端开发",
+    "UI设计",
+    "Web OS"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1191,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760500217000,
+  "publishDateStr": "2025-10-15",
+  "publishDateTimeStr": "2025-10-15 03:50:17"
+}

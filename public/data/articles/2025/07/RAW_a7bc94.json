@@ -1,0 +1,63 @@
+{
+  "id": "RAW_a7bc94",
+  "title": "首次！世界模型、动作模型融合，全自回归模型 WorldVLA 来了 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-03-11",
+  "date": "2025-07-03 08:15:03",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p><strong>岑俊，阿里巴巴达摩院具身智能大模型算法研究员，博士毕业于香港科技大学。研究方向主要是：具身智能 VLA 模型，世界模型。</strong></p>\n  <p>阿里巴巴达摩院提出了 WorldVLA, 首次将世界模型 (World Model) 和动作模型 (Action Model/VLA Model) 融合到了一个模型中。WorldVLA 是一个统一了文本、图片、动作理解和生成的全自回归模型。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5bcc34c1-eddb-4428-3990-347355f18e00/public\" data-ratio=\"0.8287037037037037\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493733\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/8a3336ef-5971-487b-99eb-6c4964f12cb6/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：WorldVLA: Towards Autoregressive Action World Model</p></li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2506.21539</p></li>\n   <li>\n    <p>代码地址：https://github.com/alibaba-damo-academy/WorldVLA</p></li>\n  </ul>\n  <p><strong>研究简介</strong></p>\n  <p>近年来，视觉 - 语言 - 动作（Vision-Language-Action, VLA）模型的发展成为机器人动作建模研究的重要方向。这类模型通常是在大规模预训练的多模态大语言模型（Multimodal Large Language Models, MLLMs）基础上，添加一个动作输出头或专门的动作模块，以实现对动作的生成。MLLMs 在感知和决策方面表现出色，使得 VLA 模型在多种机器人任务中展现出良好的泛化能力。然而，这些模型存在一个显著的局限性：它们往往缺乏对动作本身的深入理解。在现有方法中，动作只是作为输出结果处理，并未被当作输入进行分析和建模。相比之下，世界模型（World Models）能够基于当前观测与动作预测未来的视觉状态，从而同时理解视觉信息和行为动态。尽管具备这一优势，世界模型却无法直接生成动作输出，这导致其在需要显式动作规划的应用场景中存在功能上的空白。</p>\n  <p>为了解决 VLA 模型与世界模型各自的局限，我们提出 WorldVLA —— 一种基于自回归机制的统一动作与图像理解与生成模型。如下图所示，WorldVLA 使用三个独立的编码器分别处理图像、文本和动作数据。不同模态的 token 被设计为共享相同的词表，从而使得在同一个语言模型架构下可以统一完成跨模态的理解与生成任务。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bfbf761f-50e5-4290-21cf-196dfe1df500/public\" data-ratio=\"0.425\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493734\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/7b6f3450-ab2b-42ec-9282-2590eb317d64/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>其中，世界模型部分通过输入动作来生成对应的视觉表示，从而学习环境中的物理动态规律。这种对动作的解读与物理世界的建模对于动作模型的决策至关重要。与此同时，嵌入在 WorldVLA 中的动作模型也反过来增强了对视觉信息的理解，进一步提升世界模型在图像生成方面的准确性。这种双向增强机制使整个系统在理解和生成图像与动作方面更加鲁棒和全面。</p>\n  <p>此外，已有研究表明，动作分块（action chunking）和并行解码技术对动作模型的性能有显著影响。然而，我们在实验中发现，在自回归模型中连续生成多个动作时会导致性能下降。主要原因在于，预训练的多模态语言模型主要接触的是图像和文本，而对动作的学习较少，因此在动作生成任务中泛化能力有限。而在自回归模型中，后续动作的生成依赖于前面的预测结果，一旦出现错误，便会随时间不断传播放大。为了解决这一问题，我们提出了一种动作注意力掩码策略（action attention masking strategy），在生成当前动作时选择性地屏蔽掉之前的动作信息。这种方法有效缓解了错误累积的问题，在动作分块生成任务中带来了显著的性能提升。</p>\n  <p>在 LIBERO 基准测试中，我们的 WorldVLA 相比使用相同主干网络的传统动作模型，在抓取成功率上提升了 4%。相较于传统的世界模型，WorldVLA 在视频生成质量上表现更优，FVD（Fréchet Video Distance）指标降低了 10%。这些结果充分说明，将世界模型与动作模型融合所带来的协同增益，验证了图像与动作统一理解与生成框架的优势。在动作分块生成任务中，传统自回归方式会导致抓取成功率下降 10% 到 50%。但引入我们的注意力掩码策略后，性能下降得到了明显缓解，抓取成功率提升了 4% 到 23%。</p>\n  <p><strong>研究方法</strong></p>\n  <p>VLA 模型可以根据图像理解生成动作；世界模型可以根据当前图像和动作生成下一帧图像；WorldVLA 将将两者融合，实现图像与动作的双向理解和生成，如下图所示。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37fc73b7-998f-49a8-9f0e-6d7bcb62d600/public\" data-ratio=\"0.49907407407407406\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493735\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/7a59041d-2feb-418b-a07c-afc1a86641b1/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>WorldVLA 使用独立的编码器分别处理图像、文本和动作，并让这些模态共享同一个词汇表，从而在单一的大语言模型架构下实现跨模态的统一建模。这种设计不仅提升了动作生成的准确性，也增强了图像预测的质量。WorldVLA 使用 Action Model 数据和 World Model 数据来训练模型。Action Model 是根据图片输入和文本指令输入来输出动作，数据格式如下：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a1a3f16-140f-49a8-2a1d-116ac7febd00/public\" data-ratio=\"0.10925925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493736\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/537431c6-bf05-4a40-87e6-6c45293b4f3e/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>World Model 根据当前帧图片和动作来生成下一帧图片，数据格式如下：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb9b290b-7f08-41fb-e41f-d92e1a888100/public\" data-ratio=\"0.12222222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493737\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/3e591d5e-a354-45a0-85b6-7ebd2c0f43f9/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在一次性输出多个 action 时，使用默认的自回归范式会使得效果变差。原因是动作模态并不在原本多模态大模型的预训练中，因此泛化能力较差，这样生成多个动作时就会有误差累积的问题。为了解决这个问题，WorldVLA 提出了一种 attention mask 策略，使得生成动作时只能看见前面的图片而不能看见前面的动作，从而解决动作累计误差问题，如下图所示。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4745451e-721e-4e50-aa67-5a4895340300/public\" data-ratio=\"0.35555555555555557\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493738\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/ceabddcb-b516-4d15-b324-9694626697f6/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>实验结果</strong></p>\n  <p>在 LIBERO benchmark 上的实验结果如下图所示，在没有预训练的情况下超越了需要预训练的全自回归模型 OpenVLA。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b5f1834d-fb4e-4979-9b0b-c9a00269e400/public\" data-ratio=\"0.36574074074074076\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493739\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/34ab5b6f-8135-45de-87a4-999bd9e7a5c9/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>下图为 action model 的消融实验结果。对比 row2 和 row1 以及 row5 和 row4 可以看出，world model 的加入可以给 action model 带来更好的结果。Row3 可以看出，使用默认的 attention mask 会导致某些任务的成功率下降，但是从 row4 看出，我们提出的 attention mask 可以全面大幅提升任务的成功率。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f76f9602-2953-4c39-f4f9-8c08601db700/public\" data-ratio=\"0.2101851851851852\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493740\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/c80518e2-fc20-41ee-b5da-cbe58014c232/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>Action Model 可视化 (Text + Image -&gt; Action)</strong></p>\n  <p>下图可以看出 WorldVLA 可以根据指令完成对应的动作。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0cb3db68-4343-4fc6-7122-d60e0a4eae00/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"gif\" data-w=\"250\" type=\"block\" data-imgfileid=\"503493781\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/c322bb2a-9cce-4c3e-b20a-2a45513eb829/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3a866f8b-f068-4617-b542-01d6c89d0d00/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"gif\" data-w=\"250\" type=\"block\" data-imgfileid=\"503493782\" data-original-style=\"null\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/dad86e77-5ecb-4a03-9742-c76d422f416c/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"14\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/13bd858f-40fe-423f-c412-bcb6d8d04600/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"gif\" data-w=\"250\" type=\"block\" data-imgfileid=\"503493783\" data-original-style=\"null\" data-index=\"12\" src=\"https://image.jiqizhixin.com/uploads/editor/fc913339-640d-4c3c-976e-b37e5db9b303/640.gif\" data-order=\"2\" alt=\"图片\" data-report-img-idx=\"11\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p><strong>World Model 可视化 (Action + Image -&gt; Image)</strong></p>\n  <p>下图可以看出 WorldVLA 可以根据动作和图片来生成下一帧图片。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a08a4fc-52f0-4441-9a8d-04901f977500/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"gif\" data-w=\"250\" type=\"block\" data-imgfileid=\"503493784\" data-original-style=\"null\" data-index=\"13\" src=\"https://image.jiqizhixin.com/uploads/editor/9cd4d2a2-a230-4e95-a707-19665f7c422b/640.gif\" data-order=\"3\" alt=\"图片\" data-report-img-idx=\"15\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9f118327-3a81-4311-a8e7-a43cfb62cf00/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"gif\" data-w=\"250\" type=\"block\" data-imgfileid=\"503493785\" data-original-style=\"null\" data-index=\"14\" src=\"https://image.jiqizhixin.com/uploads/editor/817d91bd-96dc-44cc-91ab-1b49db749a44/640.gif\" data-order=\"4\" alt=\"图片\" data-report-img-idx=\"13\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\"><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67e45967-4acf-4245-3fe3-594750e9db00/public\" data-ratio=\"1\" data-s=\"300,640\" data-type=\"gif\" data-w=\"250\" type=\"block\" data-imgfileid=\"503493786\" data-original-style=\"null\" data-index=\"15\" src=\"https://image.jiqizhixin.com/uploads/editor/02efa6ed-7f95-4caa-90ef-85e338a0e5fd/640.gif\" data-order=\"5\" alt=\"图片\" data-report-img-idx=\"12\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n \n",
+  "aiSummary": "阿里巴巴达摩院提出 WorldVLA 模型，首次融合世界模型和动作模型，通过动作注意力掩码策略解决误差累积问题，实现全自回归的图像与动作双向理解和生成。",
+  "oneSentenceSummary": "阿里巴巴达摩院提出 WorldVLA 模型，首次融合世界模型和动作模型，通过动作注意力掩码策略解决误差累积问题，实现全自回归的图像与动作双向理解和生成。",
+  "summary": "文章介绍了阿里巴巴达摩院提出的 WorldVLA 模型，该模型首次将世界模型（World Model）和动作模型（Action Model/VLA Model）融合到一个全自回归模型中，实现了文本、图片、动作的统一理解和生成。WorldVLA 通过独立的编码器处理不同模态数据，并共享词汇表，实现了跨模态的统一建模。文章详细阐述了模型的架构、训练方法以及提出的动作注意力掩码策略，该策略有效解决了动作生成中的误差累积问题。实验结果表明，WorldVLA 在 LIBERO 基准测试中表现优异，抓取成功率提升了 4%，视频生成质量（FVD 指标）降低了 10%。模型的双向增强机制使动作模型和世界模型相互促进，提升了整体性能。",
+  "mainPoints": [
+    {
+      "point": "WorldVLA 首次融合世界模型和动作模型",
+      "explanation": "通过统一建模图像与动作的双向理解和生成，解决了传统 VLA 模型和世界模型各自的局限性。"
+    },
+    {
+      "point": "提出动作注意力掩码策略",
+      "explanation": "在生成当前动作时选择性地屏蔽之前的动作信息，有效缓解了自回归模型中动作生成的误差累积问题。"
+    },
+    {
+      "point": "独立编码器+共享词汇表设计",
+      "explanation": "通过这种跨模态统一建模方式，实现了文本、图片、动作的高效理解和生成。"
+    },
+    {
+      "point": "实验验证了模型的优越性",
+      "explanation": "在 LIBERO 基准测试中，WorldVLA 抓取成功率提升 4%，视频生成 FVD 指标降低 10%。"
+    },
+    {
+      "point": "双向增强机制",
+      "explanation": "动作模型和世界模型的相互促进，使系统在理解和生成图像与动作方面更加鲁棒和全面。"
+    }
+  ],
+  "keyQuotes": [
+    "WorldVLA 是一个统一了文本、图片、动作理解和生成的全自回归模型。",
+    "这种双向增强机制使整个系统在理解和生成图像与动作方面更加鲁棒和全面。",
+    "在生成当前动作时选择性地屏蔽掉之前的动作信息。这种方法有效缓解了错误累积的问题。",
+    "在 LIBERO 基准测试中，我们的 WorldVLA 相比使用相同主干网络的传统动作模型，在抓取成功率上提升了 4%，FVD 指标降低了 10%。",
+    "不同模态的 token 被设计为共享相同的词表，从而使得在同一个语言模型架构下可以统一完成跨模态的理解与生成任务。"
+  ],
+  "tags": [
+    "具身智能",
+    "世界模型",
+    "动作模型",
+    "多模态大模型",
+    "自回归模型"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2057,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751530503000,
+  "publishDateStr": "2025-07-03",
+  "publishDateTimeStr": "2025-07-03 08:15:03"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_452ecd",
+  "title": "Open Researcher：集成 Firecrawl 工具的智能研究助手",
+  "url": "https://www.firecrawl.dev/blog/open-researcher-interleaved-thinking",
+  "date": "2025-07-02 04:05:11",
+  "author": "eric",
+  "siteName": "FireCrawl Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We’ve been building research agents for a while now. State machines, workflow engines, decision trees - the usual suspects. They work fine for predictable tasks, but research queries are rarely predictable.</p>\n  <p>So we tried something different with Anthropic’s new interleaved thinking feature. Instead of pre-defining every possible research path, we let the AI think through what it needs to do.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"the-problem-with-traditional-orchestration\" class=\"absolute -top-[120px]\"></span>\n   <h3>The Problem with Traditional Orchestration</h3>\n  </div>\n  <p>Most AI agents follow predefined workflows. Search → Extract → Summarize. Works great until someone asks something that doesn’t fit the pattern.</p>\n  <p>We kept hitting this wall. Users would ask complex research questions that needed different approaches. Our workflows would either fail or take inefficient paths. Adding more branches to the decision tree just made it more brittle.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"how-interleaved-thinking-works\" class=\"absolute -top-[120px]\"></span>\n   <h3>How Interleaved Thinking Works</h3>\n  </div>\n  <p>Anthropic released a feature where AI can insert thinking blocks between actions. Not hidden reasoning - actual visible thoughts about what to do next.</p>\n  <p>Here’s what it looks like in practice:</p>\n  <pre><code>Thinking Block #1: They're asking about the 3rd blog post on firecrawl.dev. \nI need to find the blog listing first to count posts chronologically.\n\nThinking Block #2: I should search for 'site:firecrawl.dev/blog' to get \nall blog posts. Then I can identify which one is third.\n\nThinking Block #3: Actually, I might need to scrape the blog index page \nto see the proper ordering. Let me do that after the search.\n</code></pre>\n  <p>The AI reasons through each step before taking action. No predefined workflow needed.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"what-we-built\" class=\"absolute -top-[120px]\"></span>\n   <h3>What We Built</h3>\n  </div>\n  <p>Open Researcher combines:</p>\n  <ul>\n   <li>Anthropic’s interleaved thinking for reasoning</li>\n   <li>Firecrawl for web data extraction</li>\n   <li>Basic search capabilities</li>\n  </ul>\n  <p>That’s it. No complex orchestration layer. The AI decides which tools to use based on its reasoning.</p>\n  <p>Example of it self-correcting:</p>\n  <pre><code>Thinking Block #7: I searched for recent React features but got results \nfrom 2023. I should add '2024' to my search query.\n\nThinking Block #8: These results conflict. Let me check the official \nReact blog directly with a targeted search.\n</code></pre>\n  <div class=\"blog-heading relative\">\n   <span id=\"real-world-performance\" class=\"absolute -top-[120px]\"></span>\n   <h3>Real-World Performance</h3>\n  </div>\n  <p>We’ve tested it on various research tasks:</p>\n  <p><strong>Technical Documentation Research:</strong> The AI figures out which docs to check, identifies outdated information, and cross-references multiple sources without explicit instructions.</p>\n  <p><strong>Company Research:</strong> It develops its own strategy for finding team information, checking multiple sources like company pages and LinkedIn when needed.</p>\n  <p><strong>API Investigation:</strong> It reasons through authentication requirements, finds example code, and identifies missing documentation.</p>\n  <p>Is it perfect? No. Sometimes it takes longer routes than necessary. Sometimes the thinking is verbose. But it handles edge cases that would break traditional workflows.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"the-code\" class=\"absolute -top-[120px]\"></span>\n   <h3>The Code</h3>\n  </div>\n  <p>Open Researcher is open source. The core logic is surprisingly simple - most of the complexity is handled by the AI’s reasoning.</p>\n  <p>Clone it: <a href=\"https://github.com/mendableai/open-researcher\">github.com/mendableai/open-researcher</a></p>\n  <p>Try it on your own research problems. The thinking blocks make it easy to debug when something goes wrong. You can see exactly why it made each decision.</p>\n  <div class=\"blog-heading relative\">\n   <span id=\"what-we-learned\" class=\"absolute -top-[120px]\"></span>\n   <h3>What We Learned</h3>\n  </div>\n  <p>Letting AI reason through tool usage eliminates a lot of orchestration complexity. Instead of predicting every path, you let the AI figure out the path.</p>\n  <p>This approach won’t replace all workflows. Predictable, high-volume tasks still benefit from traditional orchestration. But for research and exploration tasks, thinking-based agents are surprisingly effective.</p>\n  <p>We’re still experimenting with this approach. If you try it out, let us know what works and what doesn’t. The more real-world usage we see, the better we can make it.</p>\n </body>\n</html>",
+  "aiSummary": "Open Researcher 是一款基于 Anthropic 交替思考技术和 Firecrawl 工具的 AI 研究助手，无需预设流程即可自主完成复杂研究任务，并具备自我纠错能力。",
+  "oneSentenceSummary": "Open Researcher 是一款基于 Anthropic 交替思考技术和 Firecrawl 工具的 AI 研究助手，无需预设流程即可自主完成复杂研究任务，并具备自我纠错能力。",
+  "summary": "本文介绍了由 Firecrawl 开发的开源 AI 研究助手 Open Researcher。该工具创新性地采用了 Anthropic 的交替思考技术，无需预设工作流即可自主执行研究任务。与传统 AI 助手不同，Open Researcher 能在研究过程中动态推理每个步骤，自主选择工具和方法，并通过可视化思维模块实现决策过程透明化。该系统融合了 Anthropic 的推理引擎与 Firecrawl 的网络数据抓取和基础搜索功能，在应对复杂多变的研究需求时展现出卓越的自我调整能力。实际案例显示，该工具在技术文档研究（识别过期信息）、企业调研（制定调查策略）和 API 探索（认证逻辑推理）等场景均有出色表现。其可视化思维模块不仅提升了系统可调试性，也为开发者提供了清晰的决策过程追踪。",
+  "mainPoints": [
+    {
+      "point": "交替思考技术支持无预设流程的动态研究推理",
+      "explanation": "Anthropic 的交替思考技术允许 AI 在执行步骤间插入可视化思维模块，通过实时推理适应多变的研究需求，而非依赖固定流程。"
+    },
+    {
+      "point": "融合多技术栈的透明化研究解决方案",
+      "explanation": "该系统整合了 Anthropic 的推理能力、Firecrawl 的数据抓取和基础搜索功能，通过可视化思维模块实现决策过程透明化和可调试。"
+    },
+    {
+      "point": "自适应能力应对复杂研究挑战",
+      "explanation": "Open Researcher 能自主调整研究方法，特别适用于需求模糊或存在矛盾的技术文档研究、企业尽调和 API 探索等复杂场景。"
+    },
+    {
+      "point": "思维模块开创 AI 决策透明化新标准",
+      "explanation": "可视化推理步骤不仅赋能复杂任务执行，还让开发者清晰掌握 AI 决策逻辑，大幅提升系统可调试性和可信度。"
+    }
+  ],
+  "keyQuotes": [
+    "我们摒弃预设研究路径的传统做法，转而让 AI 自主规划执行方案",
+    "AI 系统在行动前完成逐步推理，无需预设工作流程",
+    "思维模块 #7：检索最新 React 特性时发现结果均为 2023 年数据，需在搜索条件中加入'2024'时间限定",
+    "AI 自主决策工具使用方式，有效降低流程编排复杂度 - 无需预测所有路径，AI 自会找到最优解"
+  ],
+  "tags": [
+    "AI 研究助手",
+    "自主智能系统",
+    "智能研究",
+    "Anthropic",
+    "Firecrawl"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 551,
+  "domain": "firecrawl.dev",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_629b1d",
+  "sourceName": "FireCrawl Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1751429111000,
+  "publishDateStr": "2025-07-02",
+  "publishDateTimeStr": "2025-07-02 04:05:11"
+}

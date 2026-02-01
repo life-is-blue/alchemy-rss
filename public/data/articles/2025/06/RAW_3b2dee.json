@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3b2dee",
+  "title": "Svelte 发布 Attachments 功能，增强 DOM 的交互式和响应式特性",
+  "url": "https://www.infoq.com/news/2025/06/svelte-releases-attachments/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-16 22:30:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The latest version of Svelte <a href=\"https://www.youtube.com/watch?v=P3Ldkuksqu0\">includes a new functionality dubbed attachments</a> that enhances a web application’s DOM with interactive and reactive features. Svelte Attachments replace Svelte Actions.</p>\n   <p>Just like with Svelte Actions, developers use attachments to provide code to run when a component or DOM element is mounted or unmounted. Typically, the provided code would provision a listener for an event of interest, and remove that listener when the attachment target is unmounted. Attachments can also be used in conjunction with third-party libraries that require a target DOM element. Attachment that depends on reactive values will rerun when those values change.</p>\n   <p><a href=\"https://joyofcode.xyz/svelte-attachments-explained\">The following is&nbsp;an example</a> using the <code>ScrambleTextPlugin</code> from the GSAP animation library:</p>\n   <pre class=\"language-html\">\r\n<code class=\"prism  language-html\"><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>script</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token script language-javascript\">\r\n  <span class=\"token keyword\">import</span> <span class=\"token punctuation\">{</span> gsap <span class=\"token punctuation\">}</span> <span class=\"token keyword\">from</span> <span class=\"token string\">'gsap'</span>\r\n  <span class=\"token keyword\">import</span> <span class=\"token punctuation\">{</span> ScrambleTextPlugin <span class=\"token punctuation\">}</span> <span class=\"token keyword\">from</span> <span class=\"token string\">'gsap/ScrambleTextPlugin'</span>\r\n\r\n  gsap<span class=\"token punctuation\">.</span><span class=\"token function\">registerPlugin</span><span class=\"token punctuation\">(</span>ScrambleTextPlugin<span class=\"token punctuation\">)</span>\r\n\r\n  <span class=\"token comment\">// ⚠️ attachments live inside of `$effect`</span>\r\n  <span class=\"token keyword\">function</span> <span class=\"token function\">scramble</span><span class=\"token punctuation\">(</span>text<span class=\"token punctuation\">,</span> options<span class=\"token punctuation\">)</span> <span class=\"token punctuation\">{</span>\r\n    <span class=\"token keyword\">return</span> <span class=\"token punctuation\">(</span>element<span class=\"token punctuation\">)</span> <span class=\"token operator\">=&gt;</span> <span class=\"token punctuation\">{</span>\r\n      gsap<span class=\"token punctuation\">.</span><span class=\"token function\">to</span><span class=\"token punctuation\">(</span>element<span class=\"token punctuation\">,</span> <span class=\"token punctuation\">{</span>\r\n        duration<span class=\"token punctuation\">:</span> <span class=\"token number\">2</span><span class=\"token punctuation\">,</span>\r\n        scrambleText<span class=\"token punctuation\">:</span> text<span class=\"token punctuation\">,</span>\r\n        <span class=\"token operator\">...</span>options\r\n      <span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span>\r\n    <span class=\"token punctuation\">}</span>\r\n  <span class=\"token punctuation\">}</span>\r\n\r\n  <span class=\"token keyword\">let</span> text <span class=\"token operator\">=</span> <span class=\"token function\">$state</span><span class=\"token punctuation\">(</span><span class=\"token string\">'Svelte'</span><span class=\"token punctuation\">)</span>\r\n</span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>script</span><span class=\"token punctuation\">&gt;</span></span>\r\n\r\n<span class=\"token comment\">&lt;!-- tracking context --&gt;</span>\r\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>input</span> <span class=\"token attr-name\">type</span><span class=\"token attr-value\"><span class=\"token punctuation\">=</span><span class=\"token punctuation\">\"</span>text<span class=\"token punctuation\">\"</span></span> <span class=\"token attr-name\"><span class=\"token namespace\">bind:</span>value</span><span class=\"token attr-value\"><span class=\"token punctuation\">=</span>{text}</span> <span class=\"token punctuation\">/&gt;</span></span>\r\n<span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;</span>div</span> <span class=\"token attr-name\">{@attach</span> <span class=\"token attr-name\">scramble(text)}</span><span class=\"token punctuation\">&gt;</span></span><span class=\"token tag\"><span class=\"token tag\"><span class=\"token punctuation\">&lt;/</span>div</span><span class=\"token punctuation\">&gt;</span></span>\r\n</code></pre>\n   <p>When the DOM is mounted for the first time, the text Svelte will be scrambled. Additionally, any further change to the <code>text</code> value will also cause the text to be scrambled. Developers can <a href=\"https://svelte.dev/playground/actions-pannable#H4sIAAAAAAAACr1US47TQBC9StEaybbkOBJL5yMQYgcS0rAAYaTpuCuZBrvbcpcTR5HPwJ4Vx-A8XIAroGo7yWQyGRBIKAt3XtWrrnqv7J0wskSRiudQ2hoht2VVYAsyJ20NhKg0oYpELJa6QCfSDztB24oZDIj4wK-qxK2xIMYW0uFDeG4NoSEnUjF1ea0rmmcGQJeVrQl2sHKygg6WtS0h4D_BSfg6r2W5KPAttvSmaFbanCSPz-NBZrgCR5MaV9oR1n0kPE-O-uTxGH58_fbz-xeQRDK_LbljKPQaQRunFYJdws0VLpeY0w0zlo3p5XJDzZCwpRhsxaiLYMdZADVSU7OoBXLRCGbzfWjokew-GB8jAKqpJZdK4Wl8RN2dCVLwVx6DSZIM1--xLupPHT-6ftYCyRNhBleOJGEYXHuzgigz0_HBo8xMn4xGQLXMP2uzAm9kSzAazTMz1aZqCHgtZplgPBOw0Eala1k0ONsx1MGYU5Vew-5ZL-ypXFE3n46VXs8zI2JfRaRUN9jFFzauksbIRYHJJ3e6cqeBOzuHrV-kg137xNBYhd6ljFiRdrI_bflkMjpQbqVRBb62jUNlNybEtTfSUzNqYQYeSfJCo6F3kx7f3sPfD2Uz4psTpV0lKb99ySlhH8jI4AZeNI5s2eNBJY0jWVMQ7-_jn0KSukhhB20MW2-sx9lufkaHuzbaKLtJpFK-4Ct-GwzWYVDyOKVdYxDfHZCRaPIn3KY6ZTZVz-suq8fF76mXW-MI1JmIMBocOaSc6Qmj3qr_4cEg1EULYlBtzD0-bMVjojTV_14oNOof16n2Vv71Rl2m_2ap_KAX9pFfzVMyI_vWh8_wMLRCR7XdhtFRBV_6cmOPVKe-Peommenuf8g-xoK15cFFupSFw-4X5w-0Zn8HAAA=\">experiment with the example in the Svelte playground</a>.</p>\n   <p>Thus Svelte Attachments extend Svelte Actions which did not provide similar reactivity to its parameters. Additionally, Svelte Attachment can be set up on Svelte components, while Svelte Actions can only be declared on DOM elements. The release provides a mechanism to create attachments from actions, thus allowing developers to reuse <a href=\"https://action-archive.vercel.app/\">existing libraries of actions</a>.</p>\n   <p>Attachments can be used to encapsulate behavior separately from markup (as done in other UI frameworks, e.g. <a href=\"https://react.dev/reference/react/hooks\">hooks in React</a>). Examples of behaviors that were already implemented as actions and can now benefit from attachment affordances include clipboard copying, <a href=\"https://svu.vercel.app/action/paste\">clickboard pasting into an element</a>, capturing a click outside an element, masking user input, animating an element, <a href=\"https://svelte-put.vnphanquang.com/docs/dragscroll\">pointer drag-to-scroll behavior</a>, <a href=\"https://svelte-put.vnphanquang.com/docs/shortcut\">provisioning of shortcut keys</a>, <a href=\"https://svelte-put.vnphanquang.com/docs/swipeable\">make an element swipeable</a>, <a href=\"https://svelteui.dev/composables/use-download\">download on click</a>, and many more.</p>\n   <p>Developers are invited to <a href=\"https://svelte.dev/docs/svelte/@attach\">read the full documentation article online</a> for an exhaustive view of the feature, together with detailed examples and explanations. Developers may also <a href=\"https://github.com/sveltejs/svelte/pull/15000\">review the corresponding pull request</a> for details about the motivation behind the feature and comments from developers.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Svelte Releases Attachments to Enhance DOM with Interactive and Reactive Features\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/svelte-releases-attachments/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750113000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Svelte 引入 'Attachments'，通过响应式行为增强 DOM / 组件功能，取代 Actions。",
+  "oneSentenceSummary": "Svelte 引入 'Attachments'，通过响应式行为增强 DOM / 组件功能，取代 Actions。",
+  "summary": "最新的 Svelte 版本引入了 'Attachments'，这是一项旨在增强 Web 应用中的 DOM 元素和组件，为其添加交互式和响应式能力的新功能。Attachments 取代了 Svelte Actions，在提供类似的挂载 / 卸载代码执行功能的基础上，为参数引入了关键的响应性。与 Actions 不同，Attachments 可以直接应用于 Svelte 组件，扩展了其适用范围。此版本提供了一种机制，可以将现有的 Actions 转换为 Attachments，确保与现有库的兼容性。这项功能使开发者能够将交互行为（如动画、拖动滚动、快捷键）与标记分离开来封装，与现代 UI 开发模式保持一致。文章重点介绍了实际示例，并提供了文档和 Playground 示例的链接。",
+  "mainPoints": [
+    {
+      "point": "Svelte Attachments 取代 Actions 并新增响应性。",
+      "explanation": "新的 Attachments 功能提供了 Actions 的挂载 / 卸载生命周期钩子，但允许参数具有响应性，当值改变时自动重新运行。"
+    },
+    {
+      "point": "Attachments 可用于 DOM 元素和 Svelte 组件。",
+      "explanation": "这将功能应用范围从 DOM 元素扩展至组件，使得交互行为能够更灵活地直接应用于组件。"
+    },
+    {
+      "point": "现有的 Svelte Actions 可以转换为与 Attachments 一起使用。",
+      "explanation": "提供的机制确保了向后兼容性，并允许开发者利用现有库和社区开发的 Actions。"
+    }
+  ],
+  "keyQuotes": [
+    "Svelte 最新版本包含一项名为 Attachments 的新功能，它增强了 Web 应用的 DOM，使其具有交互式和响应式特性。",
+    "Attachments 取代 Svelte Actions。",
+    "依赖于响应式值的 Attachments，当这些值改变时将重新运行。",
+    "此外，Svelte Attachments 可以设置在 Svelte 组件上，而 Svelte Actions 只能声明在 DOM 元素上。",
+    "此版本提供了一种机制，可以从 Actions 创建 Attachments，从而允许开发者重用现有的 Actions 库。"
+  ],
+  "tags": [
+    "前端",
+    "Svelte",
+    "UI 开发",
+    "响应性",
+    "Attachments"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 380,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750113000000,
+  "publishDateStr": "2025-06-16",
+  "publishDateTimeStr": "2025-06-16 22:30:00"
+}

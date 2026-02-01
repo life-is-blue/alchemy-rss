@@ -1,0 +1,55 @@
+{
+  "id": "RAW_2ac575",
+  "title": "扩散 LLM 推理用上类 GRPO 强化学习！优于单独 SFT，UCLA、Meta 新框架 d1 开源",
+  "url": "https://www.jiqizhixin.com/articles/2025-04-20-7",
+  "date": "2025-04-20 06:34:10",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>大语言模型的推理能力，不再是 AR（自回归）的专属。扩散模型现在也能「动脑子」，新框架 d1 让它们学会了解数学、懂逻辑、会思考。</p>\n  </blockquote>\n  <p>当前，强化学习（RL）方法在最近模型的推理任务上取得了显著的改进，比如 DeepSeek-R1、Kimi K1.5，显示了将 RL 直接用于基础模型可以取得媲美 OpenAI o1 的性能。</p>\n  <p>不过，基于 RL 的后训练进展主要受限于自回归的大语言模型（LLM），它们通过从左到右的序列推理来运行。</p>\n  <p>与此同时，离散扩散大语言模型（dLLM）成为有潜力的语言建模的非自回归替代。不像以因果方式逐 token 生成文本的自回归模型那样，dLLM 通过迭代去噪过程生成文本，在多步骤操作中优化序列的同时并通过双向注意力利用过去和未来的上下文。其中，LLaDA 等开放的掩码 dLLM 实现了媲美同尺寸自回归模型的性能，而 Mercury 等闭源 dLLM 进一步展现了出色的推理延迟。</p>\n  <p>然而，顶级的开源 dLLM 并没有使用 RL 后训练，使得这一有潜力的研究方向还有很大的挖掘空间。这一范式转变引出了重要的问题：RL 后训练如何在非自回归上下文中高效地实现？</p>\n  <p>RL 算法适应掩码 dLLM 面临一些独特的挑战，原因在于自回归模型采用的已有方法（如 PPO、GRPO）通过计算生成序列的对数概率来估计和优化策略分布，导致无法直接应用于 dLLM。虽然这种计算在自回归模型中通过序列因式分解很容易实现，但 dLLM 由于它们的迭代、非序列生成过程而缺乏这种自然分解。</p>\n  <p>为了解决这些问题，<strong>来自 UCLA 和 Meta AI 的研究者提出了一个两阶段后训练框架 d1，从而可以在掩码 dLLM 中进行推理</strong>。在第一阶段，模型在高质量推理轨迹中进行监督微调；在第二即 RL 阶段，研究者引入了用于掩码 dLLM 的新颖策略梯度方法 diffu-GRPO，它利用提出的高效一步（one-step）对数概率估计在 GRPO 的基础上创建。</p>\n  <p>研究者表示，他们的估计器利用了随机提示词掩码，作为策略优化的一种正则化，使得可以扩展 per batch 的梯度更新数量并减少 RL 训练所需的在线生成数量。这将极大地降低计算时间。</p>\n  <section>\n   <img data-imgfileid=\"503482026\" data-ratio=\"0.2601851851851852\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/323fa7dd-7a07-47d5-0e79-f730447bb500/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/ee946947-375b-4039-8b37-d2fd9603b73a/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning</p></li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2504.12216</p></li>\n   <li>\n    <p>项目主页：https://dllm-reasoning.github.io/</p></li>\n   <li>\n    <p>GitHub 地址：https://github.com/dllm-reasoning/d1</p></li>\n  </ul>\n  <p>在实验部分，研究者使用 LLaDA-8B-Instruct 作为基础模型实例化 d1。他们将 d1-LLaDA 的性能与基础 LLaDA 模型以及仅使用 SFT 和仅使用 diffu-GRPO 训练的 LLaDA 模型进行比较。结果表明，d1 在四个数学和逻辑推理基准测试中始终优于基础模型，如下图 1 所示。d1-LLaDA 同样优于仅使用 SFT 方法和仅使用 diffu-GRPO 方法的模型。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c10baf2-4a67-41c7-033c-a50ab2e13300/public\" data-ratio=\"0.412962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482027\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/e4b5672a-1392-4435-ad39-286790ee524e/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>方法概览</strong></p>\n  <p>d1 是一个两阶段框架，通过依次结合监督微调（SFT）和在线强化学习（RL）来增强预训练掩码 dLLMs 的推理性能。</p>\n  <p>其中，在线强化学习（特别是 GRPO 算法）已被证明能有效提升离线训练语言模型的性能。然而，GRPO 的学习策略并不能直接泛化到 dLLMs。</p>\n  <p>GRPO 的目标函数（如公式 3 所示）需要同时计算当前策略 π_θ 和旧策略 π_θold 在以下两个层面的（对数）似然比：</p>\n  <ol>\n   <li>\n    <p>token 层面（用于优势权重计算）；</p></li>\n   <li>\n    <p>序列层面（用于反向 KL 散度项）。</p></li>\n  </ol>\n  <p>核心问题在于：研究者需要高效计算 dLLMs 生成内容的逐 token 对数概率和序列对数概率。</p>\n  <p>自回归（AR）模型，如 Transformer，直接对每个 token 的对数概率进行建模，并且可以通过链式法则使用一次前向传递轻松计算出序列级别的对数概率<img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/061453c4-dfeb-4ba7-866d-4f7a00ec2700/public\" alt=\"image.png\" data-ratio=\"0.09558823529411764\" data-type=\"png\" data-w=\"544\" data-imgfileid=\"503482030\" data-original-style=\"width: 210px;height: 20px;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/ee9dadd5-970c-42cd-8250-8c88de50d3c2/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dii\" style=\"width: 29.88%;\">。同样，KL 项可以分解为<img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/46dcfe28-ffc3-4405-2ceb-9d46b63dd500/public\" alt=\"image.png\" data-ratio=\"0.08229426433915212\" data-type=\"png\" data-w=\"802\" data-imgfileid=\"503482033\" data-original-style=\"width: 315px;height: 26px;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/708f7dda-f3f3-460d-a787-baf275c7bc45/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dii\" style=\"width: 42.53%;\">。</p>\n  <p>与 AR 模型不同，dLLMs 不遵循序列对数概率的顺序分解。同时，每个 token 的对数概率计算成本也很高，因为解码过程中需要多次调用掩码预测器 f_θ。基于此，该研究提出了一个高效的对数概率估计器。</p>\n  <p>对于序列对数概率，该研究使用均场近似方法，将其分解为独立的每个 token 对数概率的乘积。</p>\n  <p>对于每个 token 的对数概率，该研究引入了一种估计方法，该方法仅调用一次 f_θ。</p>\n  <p>基于新引入的对数概率估计器，该研究将 GRPO 扩展到掩码 dLLMs，推导出 diffu-GRPO 的损失函数。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/87565ba4-183f-43df-d365-ac5bf2992f00/public\" data-ratio=\"0.1925925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482034\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/142a144a-da8a-4ecf-a72d-bbfced7f42ee/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>算法如下图所示。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd5fbbdc-79b8-4b1a-2760-ade7fcfc1a00/public\" data-ratio=\"0.4324074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482035\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/ce9af5c1-a21b-4d78-82a8-1fc36bef98fb/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>实验结果</strong></p>\n  <p>表 1 报告了基线模型 LLaDA-8B-Instruct 与采用不同后训练优化方案的模型，在四项任务上的零样本性能对比。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4679593a-5c09-4235-49cc-e184f56dcf00/public\" data-ratio=\"0.41203703703703703\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482036\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/e1a9a60e-c485-41bc-87f1-d4f83e527944/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>图 3 绘制了有效 token 的平均数量：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/57ce4499-4bb3-4ad6-c470-2ecd3309c800/public\" data-ratio=\"0.41203703703703703\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503482037\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/0cffa049-75a9-4df2-942e-fdfabb9b7d0b/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>基于实验，该研究得出以下主要发现：</p>\n  <p>diffu-GRPO 在所有 12 种设置中都一致优于基础的 LLaDA 和 SFT（监督式微调）。diffu-GRPO 和 SFT 都相较于 LLaDA-8B-Instruct 基线有所提升，但 diffu-GRPO 显示出更持续且幅度更大的增益。具体来说，diffu-GRPO 在所有 12 种设置中都优于 LLaDA-8B-Instruct 和 SFT，而 SFT 仅在其中的 7 种设置中优于 LLaDA-8B-Instruct，这表明<strong> diffu-GRPO 相比于单独的 SFT 实现了更强的整体性能提升。</strong></p>\n  <p>LLaDA+diffu-GRPO 在所有设置中都优于基础的 LLaDA-8B-Instruct 模型，而 d1-LLaDA 在每种情况下都超过了 LLaDA+SFT。这表明，无论初始化是来自预训练模型还是经过 SFT 调整的检查点，<strong>diffu-GRPO 都能提供可靠的性能提升</strong>。</p>\n  <p><strong>d1 训练方案实现了最显著的性能提升</strong>。通过先进行监督微调（SFT）、再结合 diffu-GRPO 训练所形成的 d1-LLaDA 模型，产生了超越单一方法的叠加增益。这种组合式方法在 12 个实验设置中有 11 项优于纯 diffu-GRPO 方案，表明两个训练阶段存在协同效应。</p>\n  <p>定性结果表明，在 SFT 和 d1-LLaDA 生成中出现了顿悟时刻。尽管与 LLaDA-8B-Instruct 相比，生成序列长度为 128 和 256 的性能随着 SFT、diffu-GRPO 和 d1 有所提高，但从质的方面看，在生成的推理轨迹中并未观察到显著差异。然而当序列长度达到 512 时，该研究开始观察到 SFT 和 d1-LLaDA 模型展现出两种关键能力：自我修正机制和回溯行为。</p>\n </body>\n</html>",
+  "aiSummary": "UCLA 和 Meta 提出的 d1 框架，通过结合监督微调和类 GRPO 强化学习，显著提升了扩散语言模型在数学和逻辑推理任务上的性能。",
+  "oneSentenceSummary": "UCLA 和 Meta 提出的 d1 框架，通过结合监督微调和类 GRPO 强化学习，显著提升了扩散语言模型在数学和逻辑推理任务上的性能。",
+  "summary": "本文介绍了来自 UCLA 和 Meta AI 的研究者提出的一个两阶段后训练框架 d1，该框架旨在提升掩码扩散大语言模型（dLLM）的推理能力。d1 框架解决了在非自回归模型上应用强化学习进行推理能力提升的问题。d1 框架首先通过监督微调（SFT）在高质量推理轨迹上进行训练，然后引入了一种新颖的策略梯度方法 diffu-GRPO，该方法基于高效的一步对数概率估计，扩展了 GRPO 算法以适应 dLLM。实验结果表明，d1 框架在数学和逻辑推理基准测试中显著优于单独使用 SFT 或 diffu-GRPO 的方法，实现了更强的整体性能提升，并观察到模型在生成推理轨迹中展现出自我修正和回溯行为。",
+  "mainPoints": [
+    {
+      "point": "d1 框架通过结合 SFT 和 diffu-GRPO，实现了优于单一方法的性能提升。",
+      "explanation": "实验结果表明，d1-LLaDA 模型在多个推理任务中超越了单独使用 SFT 或 diffu-GRPO 训练的模型，证明了两种训练阶段存在协同效应。"
+    },
+    {
+      "point": "diffu-GRPO 算法通过高效的对数概率估计，扩展了 GRPO 在 dLLM 上的应用。",
+      "explanation": "该研究提出了一种新颖的一步对数概率估计方法，使得 GRPO 算法能够有效地应用于非自回归的扩散语言模型。"
+    },
+    {
+      "point": "d1 框架能够使模型在生成推理轨迹中展现出自我修正和回溯行为。",
+      "explanation": "定性结果表明，当序列长度达到一定程度时，d1-LLaDA 模型能够展现出自我修正和回溯能力，提升推理的准确性。"
+    }
+  ],
+  "keyQuotes": [
+    "d1 框架通过结合监督微调和类 GRPO 强化学习，解决了在扩散模型中应用强化学习进行推理的难题",
+    "d1 是一个两阶段框架，通过依次结合监督微调（SFT）和在线强化学习（RL）来增强预训练掩码 dLLMs 的推理性能。",
+    "diffu-GRPO 相比于单独的 SFT 实现了更强的整体性能提升。",
+    "diffu-GRPO 都能提供可靠的性能提升",
+    "d1 训练方案实现了最显著的性能提升"
+  ],
+  "tags": [
+    "扩散模型",
+    "扩散语言模型",
+    "强化学习",
+    "推理能力",
+    "GRPO"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2112,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745130850000,
+  "publishDateStr": "2025-04-20",
+  "publishDateTimeStr": "2025-04-20 06:34:10"
+}

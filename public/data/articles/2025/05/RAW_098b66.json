@@ -1,0 +1,57 @@
+{
+  "id": "RAW_098b66",
+  "title": "开源全能图像模型媲美 GPT-4o！解决扩散模型误差累计问题",
+  "url": "https://www.qbitai.com/2025/05/281799.html",
+  "date": "2025-05-12 07:52:57",
+  "author": "明敏",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"85\">ModelScope团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"86\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"45\">OpenAI GPT-4o发布强大图片生成能力后，业界对大模型生图能力的探索向全模态方向倾斜，训练全模态模型成研发重点。</p>\n  <p data-track=\"46\">开源的MLLMs和扩散模型已经过大规模预训练，其从零开始训练统一任务，不如取长补短，将MLLMs的语言建模能力，与扩散模型的像素级图像建模能力，进行有机的结合。</p>\n  <p data-track=\"47\">基于这个思路，ModelScope团队提出可同时完成图像理解、生成和编辑的统一模型<strong>Nexus-Gen</strong>，在图像质量和编辑能力上达GPT-4o同等水平，并将成果全方位开源，望引发开发者讨论，促进All-to-All模型领域发展。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1b5fcf2c-f3e3-40d5-a7d6-fbe127be8900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1b5fcf2c-f3e3-40d5-a7d6-fbe127be8900/public\">\n  </div>\n  <p data-track=\"48\">模型先进行图像生成，然后进行图像理解的可视化案例：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/841abe2e-3ef3-4b5c-5dfd-fe60937bd300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/841abe2e-3ef3-4b5c-5dfd-fe60937bd300/public\">\n  </div>\n  <p data-track=\"51\">Nexus-Gen采用了与GPT-4o类似的 token → [transformer] → [diffusion] → pixels 技术路线，融合了SOTA MLLMs的强大文本预测能力和Diffusion模型的强大图像渲染能力，其总体架构如图所示。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cc7ba6e1-a5f2-4cff-4867-a33b299c6f00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cc7ba6e1-a5f2-4cff-4867-a33b299c6f00/public\">\n  </div>\n  <p data-track=\"52\">作为一个All-to-All模型，Nexus-Gen的输入和输出都支持图像和文本模态，自回归Transformer输出的文本Token进行分类后解码成对应的输出文本。而输出的视觉Token的embeddings则会作为条件输入给Vision Decoder中解码为输出图像。</p>\n  <p data-track=\"53\">之前的All-to-All模型大多直接使用自回归Transformer直接对图像的像素空间进行建模，然后用VAE等模型解码为图像，导致图像质量较差。</p>\n  <p data-track=\"54\">为了保证图像质量，Nexus-Gen选择在高维特征空间对图像进行建模，并选择SOTA的扩散模型作为视觉解码器。</p>\n  <p data-track=\"55\">相比于处理单一任务的模型，All-to-All模型的潜力在于<strong>图像理解、生成、编辑等任务可以相互促进、互相组合</strong>。</p>\n  <p data-track=\"56\">为了完成这一目标，将模型的输入和输出特征空间限定在同一个连续高维特征空间，统一使用Vision Encoder编码图像得到高维特征。对于理解任务，这些特征直接输入模型中作为先验。对于生成任务，这些特征则作为真值指导模型的训练。</p>\n  <p data-track=\"58\">在训练阶段，自回归模型直接使用真值作为输入序列，然后将输入序列左移一位后计算损失函数。在推理阶段，则采用Token-by-Token的自回归：<strong>即每预测一个Token，就将其送回输入，预测后续的Token。</strong></p>\n  <p data-track=\"59\">团队发现，将这种自回归范式，直接运用在连续特征空间的图像Embedding预测上，会带来比较严重的误差累计问题。</p>\n  <p data-track=\"60\">如下图所示，从第一个黄色的图像Token开始，预测的Embedding就存在误差。将带误差的Embedding送回输入中，会导致后续的Embedding预测误差不断增大，最终导致整个图像Token序列预测失败。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94f5fd89-2f00-41e6-52d1-1610f096c400/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94f5fd89-2f00-41e6-52d1-1610f096c400/public\">\n  </div>\n  <p data-track=\"61\">误差累计本质上是由训练和推理行为不一致导致的。为了解决这个问题，魔搭团队提出了预填充自回归的策略，如下图所示。在训练时使用可学习特殊Token填充对应的图像Embedding位置，这样就可以让模型学习直接预测任意位置的图像Token的能力。</p>\n  <p data-track=\"62\">在推理阶段，只要预测到图像的起始Token BOI，就直接预填充N个特殊Token到输入序列中。通过这种方式，能够保证训练和推理阶段行为的一致性，从而消除误差累计。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5f544cc4-ce3c-4a38-e6f8-0a6f126ebf00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5f544cc4-ce3c-4a38-e6f8-0a6f126ebf00/public\">\n  </div>\n  <p data-track=\"64\">在Nexus-Gen工作之前，没有看到过在统一的理解、生成和编辑任务上做训练的先例。所以魔搭团队首先从工程上，探索使用类messages格式来定义所有任务的数据格式。如下图所示。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b0d0fb27-284e-4beb-a8fa-770d31bb3b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b0d0fb27-284e-4beb-a8fa-770d31bb3b00/public\">\n  </div>\n  <p data-track=\"65\">之后，团队从开源社区收集了约25M训练数据并转化为以上统一的格式，其中，图像理解数据6M，图像生成数据12M，图像编辑数据7M。</p>\n  <p data-track=\"66\">部分数据使用Qwen-VL-max API进行了重新标注。其中，图像编辑数据包含了团队在ModelScope社区最新开源的，图像编辑数据集系列ImagePulse。</p>\n  <p data-track=\"67\">这一系列数据集中，针对GPT-4o不同的图像编辑能力，包含了添加、去除、改变、风格迁移等原子能力而生成的，大约1M高质量样本。</p>\n  <p data-track=\"68\">此外后续团队也会将其他在训练过程中使用到的全部数据，都进行开源。</p>\n  <p data-track=\"69\">由于Nexus-Gen将图像特征统一在Vision Encoder的高维空间中，因此自回归模型部分和扩散模型部分可以分开训练。</p>\n  <p data-track=\"70\">自回归模型使用魔搭开源的<strong>SWIFT框架</strong>训练，扩散模型则使用了魔搭的<strong>DiffSynth-Studio框架</strong>训练。下表详细描述了训练过程的细节。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c528fac8-236c-4a7c-6648-a956f57b9900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c528fac8-236c-4a7c-6648-a956f57b9900/public\">\n  </div>\n  <p data-track=\"71\">自回归模型采用了三阶段训练策略，前两个阶段逐步将图像生成和图像编辑能力嵌入语言模型中，最后一个阶段则采用少量高质量数据来提升模型生图质量。</p>\n  <p data-track=\"72\">扩散模型的训练目标是将输入条件由原本文本输入调整为图像Embedding输入，采用单阶段训练策略。</p>\n  <p data-track=\"74\">Nexus同时具备图像理解、生成和编辑能力，以下是每个能力的可视化案例。</p>\n  <p data-track=\"75\"><strong>图像理解</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c53789d4-de04-4f0f-40e5-4ebe819e3b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c53789d4-de04-4f0f-40e5-4ebe819e3b00/public\">\n  </div>\n  <p data-track=\"76\"><strong>图像生成</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8b598f7c-bab0-4ce9-12c2-1e961cc3b000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8b598f7c-bab0-4ce9-12c2-1e961cc3b000/public\">\n  </div>\n  <p data-track=\"77\"><strong>图像编辑</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"开源全能图像模型媲美GPT-4o！解决扩散模型误差累计问题\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83257469-aeb7-4086-c588-5ecc1054fb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83257469-aeb7-4086-c588-5ecc1054fb00/public\">\n  </div>\n  <p data-track=\"79\">在模型融合训练、图像Token数量提升、ScaleUp数据集和模型大小等等方面，Nexus-Gen依然存在着大量的优化潜力，目前ModelScope团队在这些不同方向，还在进行更深入的探索。</p>\n  <p data-track=\"80\">Nexus-Gen的诞生，验证了从SOTA的MLLMs和扩散模型出发，来对齐以GPT-4o为代表的闭源SOTA的可能性。其效果与GPT-4o具备许多共同点，比如图像编辑会导致原图部分变化、可以文本润色进行多样化图像生成等；团队也发现了许多OpenAI团队没有揭露的现象，比如图像编辑能力极大受益于图像生成，统一模型使多prompt编辑、故事性编辑成为可能等等。</p>\n  <p data-track=\"81\">ModelScope社区会持续将探索过程的模型权重、训练数据以及工程框架全部开源，欢迎社区对Nexus-Gen和All-to-All统一模型的技术未来进行广泛交流。</p>\n  <p data-track=\"82\">论文链接：https://arxiv.org/pdf/2504.21356<br>\n    代码链接：https://github.com/modelscope/Nexus-Gen<br>\n    模型链接：https://www.modelscope.cn/models/DiffSynth-Studio/Nexus-Gen<br>\n    数据集（ImagePulse）链接：https://www.modelscope.cn/collections/ImagePulse—-tulvmaidong-7c3b8283a43e40</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "ModelScope 团队开源全能图像模型 Nexus-Gen，通过结合 MLLMs 和扩散模型，并创新性地解决了扩散模型误差累计问题，在图像理解、生成和编辑等方面媲美 GPT-4o。",
+  "oneSentenceSummary": "ModelScope 团队开源全能图像模型 Nexus-Gen，通过结合 MLLMs 和扩散模型，并创新性地解决了扩散模型误差累计问题，在图像理解、生成和编辑等方面媲美 GPT-4o。",
+  "summary": "ModelScope 团队提出了一种名为 Nexus-Gen 的开源全能图像模型，旨在实现图像理解、生成和编辑的统一。该模型采用了 token → [transformer] → [diffusion] → pixels 技术路线，融合了 MLLMs 的文本预测能力和扩散模型的图像渲染能力。Nexus-Gen 通过预填充自回归策略解决了图像 Embedding 预测中的误差累计问题，并统一了输入和输出特征空间，使得各项任务可以相互促进。团队从开源社区收集了约 25M 训练数据并转化为统一格式，开源了模型权重、训练数据和工程框架，并发布了图像编辑数据集 ImagePulse，促进 All-to-All 模型领域发展。实验结果表明，Nexus-Gen 在图像质量和编辑能力上达到了 GPT-4o 的水平，并发现了一些 OpenAI 未揭露的现象，如图像编辑能力受益于图像生成等。",
+  "mainPoints": [
+    {
+      "point": "预填充自回归策略有效解决了误差累计问题",
+      "explanation": "在图像 Embedding 预测中，通过预填充特殊 Token，保证训练和推理阶段行为一致性，从而消除误差累计，提高图像质量。"
+    },
+    {
+      "point": "Nexus-Gen 采用了与 GPT-4o 类似的 token → [transformer] → [diffusion] → pixels 技术路线",
+      "explanation": "该模型融合了 SOTA MLLMs 的强大文本预测能力和 Diffusion 模型的强大图像渲染能力。"
+    },
+    {
+      "point": "Nexus-Gen 融合 MLLMs 和扩散模型，实现图像处理",
+      "explanation": "通过结合 MLLMs 的文本预测能力和扩散模型的图像渲染能力，实现了高质量的图像生成和编辑，并开源了相关模型。"
+    },
+    {
+      "point": "统一数据格式促进理解、生成和编辑任务融合",
+      "explanation": "采用类 messages 格式定义所有任务的数据格式，使得图像理解、生成和编辑等任务可以相互促进、互相组合。"
+    }
+  ],
+  "keyQuotes": [
+    "Nexus-Gen 的诞生，验证了从 SOTA 的 MLLMs 和扩散模型出发，来对齐以 GPT-4o 为代表的闭源 SOTA 的可能性。",
+    "图像编辑能力极大受益于图像生成，统一模型使多 prompt 编辑、故事性编辑成为可能等等。",
+    "ModelScope 社区会持续将探索过程的模型权重、训练数据以及工程框架全部开源，欢迎社区对 Nexus-Gen 和 All-to-All 统一模型的技术未来进行广泛交流。"
+  ],
+  "tags": [
+    "多模态模型",
+    "图像生成",
+    "图像编辑",
+    "扩散模型",
+    "MLLMs"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2498,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747036377000,
+  "publishDateStr": "2025-05-12",
+  "publishDateTimeStr": "2025-05-12 07:52:57"
+}

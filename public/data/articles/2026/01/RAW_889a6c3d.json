@@ -1,0 +1,52 @@
+{
+  "id": "RAW_889a6c3d",
+  "title": "AI 驱动的代码编辑器 Cursor 推出动态上下文发现功能以提升 Token 效率",
+  "url": "https://www.infoq.com/news/2026/01/cursor-dynamic-context-discovery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-14 11:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cursor has introduces a new approach to minimize the context size of requests sent to large language models. Called <a href=\"https://cursor.com/blog/dynamic-context-discovery\">dynamic context discovery</a>, this method moves away from including large amounts of static context upfront, allowing the agent to dynamically retrieve only the information it needs. This reduces token usage and limits the inclusion of potentially confusing or irrelevant details.</p>\n   <p>Cursor employs five distinct techniques to implement dynamic context discovery. A common feature across all of them is the use of files as the primary interface for LLM-based tools, allowing content to be stored and fetched dynamically by the agent instead of overwhelming the context window.</p>\n   <blockquote>\n    <p>As coding agents quickly improve, files have been a simple and powerful primitive to use, and a safer choice than yet another abstraction that can't fully account for the future.</p>\n   </blockquote>\n   <p>The first technique Cursor uses involves writing large outputs, such as those from shell commands or other tools, to files, ensuring that no relevant information is ever lost. The agent can then use <code>tail</code> to access the end of the file as needed.</p>\n   <p>Secondly, to prevent the loss of information when long context is summarized to fit token limits, Cursor saves the full history to a file, allowing the agent to retrieve any missing details later. Similarly, <a href=\"https://cursor.com/docs/context/skills#agent-skills\">domain-specific capabilities</a> are stored in files, enabling the agent to dynamically discover relevant ones using <a href=\"https://cursor.com/blog/semsearch\">Cursor's semantic search tools</a>.</p>\n   <p>For MCP tools, rather than including all tools from MCP servers upfront, the agent retrieves only the tool names and fetches the full detail as needed. This has a significant impact on total token count:</p>\n   <blockquote>\n    <p>The agent now only receives a small bit of static context, including names of the tools, prompting it to look up tools when the task calls for it. In an A/B test, we found that in runs that called an MCP tool, this strategy reduced total agent tokens by 46.9% (statistically significant, with high variance based on the number of MCPs installed).</p>\n   </blockquote>\n   <p><img alt=\"\" style=\"width: 630px; height: 354px;\" data-src=\"https://www.infoq.com/news/2026/01/cursor-dynamic-context-discovery/news/2026/01/cursor-dynamic-context-discovery/en/resources/1cursor-1768385024753.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/cursor-dynamic-context-discovery/en/resources/1cursor-1768385024753.jpg\" rel=\"share\"></p>\n   <p>Another advantage of this approach is that the agent can monitor the status of each MCP tool. For instance, if an MCP server requires re-authentication, the agent can notify the user instead of overlooking it entirely.</p>\n   <p>Finally, the output of all terminal sessions is synced to the file system, making it easier for the agent to answer user questions about a failing command. Storing output in files also allows the agent to grep only the relevant information, further reducing context size.</p>\n   <p>X user @glitchy noted that, while <a href=\"https://x.com/Glitchymagic/status/2008645395485020480?s=20\">reducing tokens is an important goal, it is unclear how this might affect latency</a>. @NoBanksNearby added that dynamic context discovery is <a href=\"https://x.com/NoBanksNearby/status/2008644561674137888?s=20\">\"huge for dev efficiency when running multiple MCP servers\"</a> and <a href=\"https://x.com/casinokrisa/status/2008862311336047058?s=20\">@casinokrisa</a> confirmed reinforced this:</p>\n   <blockquote>\n    <p>Reducing tokens by nearly half cuts costs and speed up responses, especially across multiple servers.</p>\n   </blockquote>\n   <p>Finally, @anayatkhan09 <a href=\"https://x.com/anayatkhan09/status/2008790121966170181?s=20\">hinted at possible improvements</a>:</p>\n   <blockquote>\n    <p>The next step is exposing that dynamic context policy to users so we can tune recall aggressiveness per repo instead of treating all tools the same.</p>\n   </blockquote>\n   <p>According to Cursor, dynamic context discovery will be available to all users in the coming weeks.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI-Powered Code Editor Cursor Introduces Dynamic Context Discovery to Improve Token-Efficiency\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/cursor-dynamic-context-discovery/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768388400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cursor 的新功能「动态上下文发现」通过动态从文件中检索所需上下文来优化 AI 编辑器 Token 使用量，显著降低成本和提升效率",
+  "oneSentenceSummary": "Cursor 的新功能「动态上下文发现」通过动态从文件中检索所需上下文来优化 AI 编辑器 Token 使用量，显著降低成本和提升效率",
+  "summary": "Cursor 推出了「动态上下文发现」，这是一种优化 AI 驱动代码编辑器中 Token 使用的新方法。该方法从静态的大上下文窗口转向动态检索仅必要信息，主要通过将文件作为基于 LLM 工具的主要接口。它采用了五种技术：将大型工具输出写入文件（如 shell 命令）、将完整历史保存到文件以防止在总结上下文时信息丢失、将领域特定能力存储在文件中以便语义搜索发现、动态获取 MCP（模块化代码游乐场）工具细节而不是预先包含所有内容，以及将终端输出同步到文件以便智能体更轻松访问。这种方法显著减少了 Token 数量（MCP 工具最多减少 46.9%）并提高了开发人员效率，尽管其对延迟的影响仍存在争议。Cursor 计划很快向所有用户推出此功能",
+  "mainPoints": [
+    {
+      "point": "Cursor 引入「动态上下文发现」以最小化 LLM Token 使用量",
+      "explanation": "这种方法通过动态检索智能体仅需要的信息来减少发送给大型语言模型的上下文大小，摆脱了预先包含大量静态上下文的做法"
+    },
+    {
+      "point": "该方法的核心是将文件作为基于 LLM 工具的主要接口",
+      "explanation": "这允许内容（如大型工具输出、命令历史和领域特定能力）被动态存储和获取，防止上下文窗口过载并提高效率"
+    },
+    {
+      "point": "采用了五种不同的技术来实现动态上下文发现",
+      "explanation": "这些技术包括将大型输出写入文件、保存完整历史以供检索、将领域特定技能存储在文件中、按需获取 MCP 工具细节以及将终端会话同步到文件系统"
+    },
+    {
+      "point": "该系统显著减少了 Token 消耗并提高了开发人员效率",
+      "explanation": "A/B 测试显示 MCP 工具调用的 Token 减少了 46.9%，从而降低了成本并加快了响应时间，特别是对于管理多个 MCP 服务器的开发人员"
+    }
+  ],
+  "keyQuotes": [
+    "随着编程智能体的快速改进，文件一直是一个简单而强大的原始接口，比另一个无法完全预测未来的抽象层更安全",
+    "智能体现在只接收少量静态上下文，包括工具名称，提示它在任务需要时查找工具",
+    "将 Token 减少近一半可以降低成本并加速响应，特别是在多个服务器之间",
+    "下一步是向用户公开动态上下文策略，以便我们可以按代码库调整检索积极性，而不是对所有工具一视同仁"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 513,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768388400000,
+  "publishDateStr": "01-14",
+  "publishDateTimeStr": "2026-01-14 11:00:00"
+}

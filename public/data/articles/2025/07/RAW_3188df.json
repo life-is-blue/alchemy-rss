@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3188df",
+  "title": "Gemini 负责人爆料！多模态统一 token 表示，视觉至关重要",
+  "url": "https://www.qbitai.com/2025/07/304342.html",
+  "date": "2025-07-03 07:06:44",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n\n \n \n  <blockquote>\n   <p data-pm-slice=\"0 0 []\">一水 闻乐 发自 凹非寺<br>\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>一次性揭秘Gemini多模态技术！</p>\n  <p>就在刚刚，Gemini模型行为产品负责人<strong>Ani Baddepudi</strong>在谷歌自家的开发者频道开启了爆料模式。</p>\n  <p>他和OpenAI前员工、现谷歌AI Studio产品负责人<em>（Logan Kilpatrick，右）</em>探讨了诸多众人好奇已久的问题：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     为啥Gemini一开始就被设计为原生多模态？\n    </section></li>\n   <li>\n    <section>\n     将图像和视频转化为token时，是否会存在压缩损失或信息丢失？\n    </section></li>\n   <li>\n    <section>\n     Gemini 2.5为何在视频理解方面表现出色？\n    </section></li>\n   <li>\n    <section>\n     多模态框架下，一个能力的提升是否会带动其他能力的整体提升？\n    </section></li>\n   <li>\n    <section>\n     ……\n    </section></li>\n  </ul>\n  <p>一言以蔽之，整个谈话几乎都围绕着<strong>Gemini多模态</strong>展开，包括其背后设计理念、当前应用以及未来发展方向。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb63322c-a0cb-4678-6de3-9d36313ce400/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/667c5cba-f96d-4f71-1acb-d1df66e66100/public\" data-ratio=\"0.6768518518518518\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100323865\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"1\" data-before-load-time=\"1751526196576\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>之所以这场谈话值得关注，实在是因为Gemini多模态过于响当当和重要了。</p>\n  <p>2023年12月，谷歌原生多模态Gemini 1.0模型正式上线，一举将AI竞赛由ChatGPT主导的文本领域带入多模态领域。</p>\n  <p><a class=\"normal_text_link\" href=\"https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&amp;mid=2247799598&amp;idx=1&amp;sn=c7670df9a2d58b313924bc462d8b081e&amp;scene=21#wechat_redirect\" target=\"_blank\" rel=\"noopener\" data-itemshowtype=\"0\" data-linktype=\"2\">而最新的Gemini 2.5 Pro（0605）</a>，不仅在代码、推理等任务上更上一层楼，而且还拿下视觉能力第一，可以说夯实了谷歌在多模态领域的领先地位。</p>\n  <p>此时回看Gemini当时的一些设计理念，会发现其前瞻性与创新性不仅为后续的发展奠定了坚实基础，而且对未来仍具有指导意义。</p>\n  <p>敲黑板，整场谈话干货满满，咱们这就开始~</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb99b72b-d44b-4974-a919-033efeba9900/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3dda1ff3-9106-4e21-dd43-d1a9a74fb900/public\" data-ratio=\"1.0406976744186047\" data-type=\"png\" data-w=\"172\" data-imgfileid=\"100323862\" data-original-style=\"margin:0px auto;padding:0px;width:106px;height:110px;\" data-index=\"2\" data-before-load-time=\"1751526206547\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>一个智能体的世界如果只有文字，能读懂莎士比亚、能编写代码，甚至可以和你进行深入的哲学对话，但它看不到屏幕上跳动的图标、认不出厨房正在烹饪的食材、不能理解一幅画或者一段视频的意境。</p>\n  <p>这样的智能体完整吗？</p>\n  <p>谷歌的Gemini模型给出了一个响亮的答案：不，不完整。</p>\n  <p>而这，就是Gemini在诞生之初就被设计为多模态的<strong>根本原因</strong>。</p>\n  <p>访谈一开始，Logan Kilpatrick就问了这个根源性的问题：</p>\n  <blockquote>\n   <p>为什么Gemini从一开始就被设计为多模态模型？</p>\n  </blockquote>\n  <p>Ani Baddepudi强调，如果想要构建通用人工智能（AGI）和强大的AI系统，那么多模态的能力必不可少。</p>\n  <p>最初的目标是为了让模型能够<strong>像人类一样看世界</strong>，而<strong>视觉</strong>是人类感知世界的核心组成部分，许多领域（如医学、金融）的任务都有很大的视觉成分，因此多模态设计至关重要。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e1518c33-0b26-4d41-5598-c0b4f51abc00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0301a942-72c1-4a3e-8118-558e2f875800/public\" data-ratio=\"0.5009259259259259\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100323866\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-before-load-time=\"1751526206698\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>Gemini作为一个原生的多模态模型，这意味着它并非将不同的单一模态模型拼凑起来。</p>\n  <p>而是<strong>从零开始</strong>，将文本、图像、视频和音频等所有模态都转化为<strong>统一的“token表示”</strong>，并在这些信息上进行协同训练。</p>\n  <p>既然提到了信息“token化”，Logan Kilpatrick继续寻求爆料：</p>\n  <blockquote>\n   <p>将图像、视频转化为token表示时，是否存在信息损失？模型是如何处理的？</p>\n  </blockquote>\n  <p>在这个问题上，Ani Baddepudi承认，将图像、视频转化为token表示时会有一些固有的信息损失，如何使特征表示的损失更小是一个需要持续研究的问题。</p>\n  <p>但令人惊讶的是，<strong>模型看到足够多的图像和视频后，即使采样率较低，比如以每秒一帧（1FPS）的速度采样，模型依然能呈现良好的泛化能力。</strong></p>\n  <h2>Gemini 2.5在视频理解上“令人惊叹”</h2>\n  <p>接下来Logan Kilpatrick还特意cue到了<strong>Gemini 2.5系列模型</strong>。</p>\n  <p>在他之前的一篇推文中，Gemini 2.5 Pro在视频理解方面的SOTA成绩令人印象深刻。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9353fd6e-2061-4d40-7d82-bd7395dc0500/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8c9855aa-20c2-44a1-24e2-974926108e00/public\" data-ratio=\"0.5064814814814815\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100323863\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"4\" data-before-load-time=\"1751526206898\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>而对于这一亮点，Ani Baddepudi也补充了更多细节。</p>\n  <p>不过在展开前，他也再次感叹：</p>\n  <blockquote>\n   <p><strong>Gemini 2.5在视频理解方面相当令人惊叹!</strong></p>\n  </blockquote>\n  <p>第一，它解决了之前模型在鲁棒性方面的问题。</p>\n  <p>举个例子，之前给模型输入1小时视频，通常它只会关注前5~10分钟，然后对视频其余部分的关注就逐渐减弱，所以团队针对长上下文视频进行了改进。</p>\n  <p>第二，它意味着，团队将核心视觉能力的改进泛化到了视频。</p>\n  <p>简单而言，Gemini 2.5<strong>真正解锁了视频作为信息媒介的能力</strong>，能够完成将视频转换为代码<em>（如食谱、讲座笔记）</em>等非常实用的任务。</p>\n  <p>第三，它让团队看到了<strong>多模态能力的正向迁移</strong>以及<strong>多项视觉能力整合</strong>。</p>\n  <p>Ani Baddepudi表示，拥有一个单一多模态模型的好处在于，能够看到大量的积极能力迁移。</p>\n  <p>就拿Gemini 2.5“视频转代码”功能来说，这其实是因为模型在代码处理能力方面本身就更强大。</p>\n  <p>其次，过去需要独立模型处理的OCR、检测、分割等能力，现在都整合进了Gemini中，从而带来了许多新的用例。</p>\n  <p>例如转录视频时，既需要强大的OCR能力，也需要强大的时间理解能力，才能让模型理解视频中发生了什么然后进行转录。</p>\n  <p>还包括让Ani Baddepudi等人感到兴奋的一个用例——<strong>结对程序员</strong>，即通过流式传输IDE视频，然后询问代码库问题。这需要模型具备强大的编码、核心视觉<em>（空间理解、OCR）</em>以及对视频中信息随时间变化的理解能力。</p>\n  <p>总之，按照Ani Baddepudi的说法，<strong>Gemini是少数能够进行视频输入和最先进视频理解的基础模型之一</strong>。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1879db8c-4ac0-4d91-5120-6907632ee300/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6e1318c1-3ab7-4f84-4905-dee32e73a300/public\" data-ratio=\"0.562037037037037\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100323864\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-before-load-time=\"1751526207164\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>当然，这背后也离不开一些关键技术。</p>\n  <p>据Ani Baddepudi透露，要让Gemini理解视频，它需要<strong>同时理解音频和视觉部分</strong>。</p>\n  <blockquote>\n   <p>这是一个相当棘手的问题，因为你需要这些东西对齐。</p>\n  </blockquote>\n  <p>目前的解决方案是，在视频的每个给定时间块<em>（或小片段）</em>内，将该时间块的音频信息和与该音频对应的视频帧（即图像）交错在一起进行处理。</p>\n  <p>所谓“交错”是指，将同时发生的音频和视觉信息捆绑或混合起来，供模型共同学习和理解。</p>\n  <p>这一方法在泛化方面非常出色，能让模型很好地理解视频，表现非常自然。</p>\n  <p>此外，尽管当前主要以1FPS<em>（每秒帧数）</em>采样进行训练，但通过更高效的token化方式<em>（每帧用64个token表示，而非之前的256个）</em>，模型能够在较低细节下实现令人惊讶的高性能。</p>\n  <p>通过这一方式，Gemini现在可以处理长达6小时的视频，拥有200万上下文token。</p>\n  <p>而且Ani Baddepudi表示，团队正在努力<strong>支持更高帧率的视频理解</strong>，以应对如高尔夫挥杆分析、舞蹈动作评判等需要更精细时间细节的用例。</p>\n  <h2>“万物皆视觉”的产品理念</h2>\n  <p>Ani Baddepudi还提到了Gemini<strong>“万物皆视觉”</strong>的产品理念。</p>\n  <p>他将视觉用例分为三类，这些分类指导着产品开发的方向。</p>\n  <p>第一种是现有模型能做到的。</p>\n  <p>比如传统的OCR（光学字符识别）、翻译、图像检索（例如Google Lens用于购物）、以及分类（例如识别植物或动物）等。</p>\n  <p>第二种是人类专家能够做到的。</p>\n  <p>比如文档分析、内容整理与视频理解与推理等，这些任务通过Gemini的视觉能力能够更高效、无损地完成。</p>\n  <p>第三种是超越人类或在可行时间内无法完成的任务。</p>\n  <p>比如将讲座视频转换为可交互式学习的应用程序、在烹饪时主动提醒何时加入食材。</p>\n  <p>再比如，当你在城市中行走时，可以通过视觉向Gemini提问关于周围事物的问题，而不需要费力地将问题转化为文本。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/59cc2d5b-5c18-431b-ea3c-3b1a174f3500/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e4c5102-b521-486b-a1ae-961799633700/public\" data-ratio=\"0.5388888888888889\" data-type=\"png\" data-w=\"1080\" data-croporisrc=\"https://mmbiz.qlogo.cn/mmbiz_png/YicUhk5aAGtAmYX0yNTuHEjkiaBaVeNRma7QkMlL4gVGexEPoKKBgDr4w2V7iaVKunPd94wytGJ9oFbGibtKs1STiag/0?wx_fmt=png&amp;from=appmsg\" data-cropx2=\"1152\" data-cropy1=\"179.34065934065936\" data-cropy2=\"801.7582417582418\" data-imgfileid=\"100323868\" data-original-style=\"margin:0px auto;padding:0px;width:546px;height:295px;\" data-index=\"6\" data-before-load-time=\"1751526207499\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>这就需要模型<strong>不仅能够看到屏幕上的内容，还能看到真实的物理世界</strong>。</p>\n  <p>关于未来产品的体验，Ani Baddepudi给出了极具吸引力的回答：</p>\n  <blockquote>\n   <p>想象你有一个专家人类在你的肩膀上，看到你所能看到的一切，并帮助你完成事情。</p>\n  </blockquote>\n  <h2>关于Gemini多模态团队</h2>\n  <p>聊天最后， Ani Baddepudi分享了Gemini多模态团队的协作方式和工作重心。</p>\n  <p>在他看来，要想实现多模态能力，这离不开一支庞大的研究队伍。</p>\n  <blockquote>\n   <p>多模态之所以令人惊叹，是因为它拥有如此多的能力，而要实现这些能力，一个非常困难的问题是需要将这些能力整合到一个单一模型中，并确保每种能力都能表现出色。</p>\n  </blockquote>\n  <p>就是说，每整合一种能力都需要相关方向的大量人才。</p>\n  <p>然后，他进一步解释了团队如何将研究转化为产品。</p>\n  <p>首先，团队深入思考开发者和消费者将如何使用这些视觉能力，并努力将这种直觉融入到模型中，形成了紧密的<strong>产品-模型反馈循环</strong>。</p>\n  <blockquote>\n   <p>一年后、两年后、五年后人们将如何与这些模型互动？</p>\n  </blockquote>\n  <p>因为在Ani Baddepudi看来，今天开发的许多能力都是构建未来愿景的基石。</p>\n  <p>而且他认为接下来的重点是，<strong>如何让这些模型感觉更自然、更具交互性</strong>。</p>\n  <blockquote>\n   <p>目前许多AI产品都是“回合制”系统<em>（即你查询模型，它返回答案，然后你再次查询）</em>，这感觉“不自然”且“有点过时”。</p>\n  </blockquote>\n  <p>至于具体如何实现，Ani Baddepudi从模型行为角度出发归纳了以下几点：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     赋予模型同理心（empathy）；\n    </section></li>\n   <li>\n    <section>\n     让模型不仅能够理解用户，还要能理解用户的隐含意图；\n    </section></li>\n   <li>\n    <section>\n     在平衡Gemini现有强大原生能力的同时，赋予模型“个性”（personality）。\n    </section></li>\n  </ul>\n  <p>同时他还提到，鉴于目前许多AI用例只返回大量文本，他正在思考是否能用<strong>有趣的视觉形式</strong>来以更信息密集或“高热量”（high-calorie）的方式传达信息。</p>\n  <blockquote>\n   <p>这也许是让Gemini变得“友好”且“易于交流”的关键突破点。</p>\n  </blockquote>\n  <p>参考链接：<br>\n    [1]https://www.youtube.com/watch?v=K4vXvaRV0dw<br>\n    [2]https://x.com/OfficialLoganK/status/1940531108476780780</p>\n  <p>– 完 –</p><!--版权声明-->\n \n",
+  "aiSummary": "Gemini 负责人揭秘多模态模型设计理念，强调视觉在 AGI 中的核心地位及视频理解技术的突破，并阐述'万物皆视觉'的产品理念",
+  "oneSentenceSummary": "Gemini 负责人揭秘多模态模型设计理念，强调视觉在 AGI 中的核心地位及视频理解技术的突破，并阐述'万物皆视觉'的产品理念",
+  "summary": "文章报道了 Gemini 模型行为产品负责人 Ani Baddepudi 在谷歌开发者频道的访谈内容。访谈深入探讨了 Gemini 作为原生多模态模型的设计理念，包括将不同模态统一表示为 token 的方法、视频理解能力的突破（如处理长达 6 小时视频、1FPS 采样下的高性能）。特别强调了视觉在构建 AGI 中的核心作用，并分享了 Gemini 2.5 在视频理解方面的三大改进：长上下文处理、能力正向迁移和多模态整合。详细阐述了'万物皆视觉'的产品理念，将视觉用例分为三类（现有模型能做到的、人类专家能做到的、超越人类能力的）。最后展望了未来 AI 交互将更加自然、视觉化的方向，并介绍了 Gemini 多模态团队的协作方式和工作重心。",
+  "mainPoints": [
+    {
+      "point": "1FPS 采样下仍能保持高性能",
+      "explanation": "通过优化 token 化方式（每帧 64token），Gemini 在低帧率采样下仍能良好泛化，目前可处理长达 6 小时的视频，这一技术突破使 Gemini 在视频理解领域具有显著优势"
+    },
+    {
+      "point": "原生多模态设计是 Gemini 的核心优势",
+      "explanation": "Gemini 从零开始设计为多模态模型，将文本、图像、视频和音频统一表示为 token，采用'交错处理音频和视觉信息'的技术方案，使多模态信息对齐更精准，这使其在多模态任务中表现更优"
+    },
+    {
+      "point": "视觉能力是构建 AGI 的关键要素",
+      "explanation": "访谈强调视觉是人类感知世界的核心，许多专业领域任务都有视觉成分，因此多模态设计对实现 AGI 至关重要，形成了'万物皆视觉'的产品理念"
+    },
+    {
+      "point": "Gemini 2.5 在视频理解上取得三大突破",
+      "explanation": "改进长上下文处理、实现能力正向迁移、整合多项视觉能力（如 OCR、检测、分割等），使 Gemini 成为少数能进行先进视频理解的基础模型之一，解锁了视频作为信息媒介的实用价值"
+    },
+    {
+      "point": "未来 AI 交互将更自然和视觉化",
+      "explanation": "团队正致力于让 AI 交互突破'回合制'模式，通过视觉形式和同理心设计，使交互更自然、信息传达更高效，目标是创造'专家在肩膀上'般的体验"
+    }
+  ],
+  "keyQuotes": [
+    "如果想要构建通用人工智能（AGI）和强大的 AI 系统，那么多模态的能力必不可少",
+    "Gemini 2.5 在视频理解方面相当令人惊叹!",
+    "拥有一个单一多模态模型的好处在于，能够看到大量的积极能力迁移",
+    "想象你有一个专家人类在你的肩膀上，看到你所能看到的一切，并帮助你完成事情",
+    "目前许多 AI 产品都是'回合制'系统，这感觉'不自然'且'有点过时'"
+  ],
+  "tags": [
+    "多模态模型",
+    "Gemini",
+    "视频理解",
+    "AGI",
+    "谷歌"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 92,
+  "wordCount": 3430,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751526404000,
+  "publishDateStr": "2025-07-03",
+  "publishDateTimeStr": "2025-07-03 07:06:44"
+}

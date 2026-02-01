@@ -1,0 +1,54 @@
+{
+  "id": "RAW_2418c1",
+  "title": "迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑",
+  "url": "https://www.qbitai.com/2025/03/268979.html",
+  "date": "2025-03-29 08:13:33",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"43\">允中 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"44\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">3月29日，智源研究院在2025中关村论坛“未来人工智能先锋论坛”上发布首个跨本体具身大小脑协作框架RoboOS与开源具身大脑RoboBrain，可实现跨场景多任务轻量化快速部署与跨本体协作，<strong>推动单机智能迈向群体智能</strong>，为构建具身智能开源统一生态加速场景应用提供底层技术支持。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/20f75169-7a42-46e4-6240-3321f980fd00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/20f75169-7a42-46e4-6240-3321f980fd00/public\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△基于RoboOS及RoboBrain的多机器人跨本体协作递送任务Demo</p>\n  </div>\n  <p data-track=\"45\">视频链接：<br>\n    https://mp.weixin.qq.com/s/APgi5k53hrJo8lpxcAkE-g</p>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9843bf96-4748-4959-ca82-bc3aede0c900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9843bf96-4748-4959-ca82-bc3aede0c900/public\">\n  </div>\n  <p data-track=\"7\">在具身场景中，长程操作任务是机器人执行复杂任务的核心能力之一。具身大脑RoboBrain融合了<strong>机器人任务规划、可操作区域感知、轨迹预测</strong>的三维能力，通过将抽象指令映射为具象动作序列，增强长程操作任务的能力。</p>\n  <p data-track=\"8\">RoboBrain由三个模块组成：用于任务规划的<strong>基座模型</strong>、用于可操作区域感知的<strong>A-LoRA模块</strong>和用于轨迹预测的<strong>T-LoRA模块</strong>。在推理时，模型首先感知视觉输入，并将输入指令分解为一系列可执行的子任务，然后执行可操作区域感知和轨迹预测。RoboBrain采用多阶段训练策略，使其具备长历史帧记忆和高分辨率图像感知能力，进而提升场景感知和操作规划的能力。</p>\n  <p data-track=\"9\">RoboBrain 在任务规划、可操作区域感知和轨迹预测评测任务中均表现出卓越性能。</p>\n  <p data-track=\"10\">在<strong>任务规划</strong>方面，RoboBrain在不牺牲通用能力的前提下，在机器人规划评测集OpenEQA、ShareRobot（自建）和RoboVQA上多个维度优于GPT-4V、Claude3等6个当时领先的闭源/开源MLLMs。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c46a6dd-b012-4806-2b40-36a7686c1600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c46a6dd-b012-4806-2b40-36a7686c1600/public\">\n  </div>\n  <p data-track=\"12\">在<strong>可操作区域感知</strong>方面，RoboBrain在AGD20K测试集上的平均精度超过了当时最先进的开源模型Qwen2-VL，验证了其在指令理解和物体属性方面的卓越能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd08ce2e-afd1-4ee7-7bdd-53acf5d25500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd08ce2e-afd1-4ee7-7bdd-53acf5d25500/public\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△RoboBrain在可操作区域感知基准上的性能</p>\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c256bdbd-ab83-4e3d-9110-a3554713ff00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c256bdbd-ab83-4e3d-9110-a3554713ff00/public\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△RoboBrain在轨迹预测基准上的性能</p>\n  </div>\n  <p data-track=\"15\">在<strong>轨迹预测</strong>方面，RoboBrain预测的操作轨迹具有与真实轨迹较高的相似度，展现了其在轨迹预测中的高精度和稳定性。RoboBrain的未来迭代版本会持续提高轨迹预测的能力。</p>\n  <p data-track=\"16\">目前，RoboBrain能够<strong>解读</strong>人类指令和视觉图像，以<strong>生成</strong>基于实时图像反馈的行动计划和评估，<strong>预测</strong>每一步的轨迹并<strong>感知</strong>相应的可操作区域。具体而言，RoboBrain 能够有效利用环境信息和交互对象的状态——无论是从第一人称还是第三人称视角捕捉的图像——生成针对不同类型机器人操作任务的任务规划，并基于人类指令和视觉信息，提供合理的可操作区域，并能在不同场景中表现出良好的泛化能力，生成既可行又合理的轨迹。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4a4a9053-9948-46d1-b498-b640e2e44d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4a4a9053-9948-46d1-b498-b640e2e44d00/public\">\n  </div>\n  <p data-track=\"17\"><strong>具身大脑RoboBrain</strong>、<strong>小脑技能库</strong>以及<strong>跨机器人数据中枢</strong>，是跨本体框架RoboOS的核心要素。具身大脑RoboBrain，负责全局感知与决策，构建动态时空感知、规划指导和反馈纠错机制；小脑技能库，负责低延迟精准执行，实现柔性与精密操作等；跨机器人数据中枢，负责实时共享空间、时间和本体记忆，为决策规划与优化协作操作提供信息支持，从而形成感知-认知-决策-行动的闭环。</p>\n  <p data-track=\"19\">跨本体具身大小脑协作框架RoboOS，基于<strong>“大脑-小脑”分层架构</strong>，通过模块化设计、智能任务管理和跨本体协作，为机器人提供高效、灵活、可扩展的底层支持，实现从单机智能到群体智能的跃迁。</p>\n  <p data-track=\"20\">在RoboOS的分层架构下，具身大脑RoboBrain的复杂场景感知与决策能力，可与小脑技能库的高效执行能力深度结合，确保协作框架在<strong>长周期、高动态任务</strong>中的稳定运行。实现大脑模型（如LLM/VLM）与小脑技能（如抓取、导航）的“即插即用”，目前，可支持松灵双臂、睿尔曼单/双臂、智元人形、宇树人形等不同类型的具身本体。</p>\n  <p data-track=\"21\">通过共享记忆系统（空间记忆/时间记忆/本体记忆），实现<strong>多个机器人之间的状态同步与智能协作</strong>，突破传统“信息孤岛”限制，实现跨本体协作控制。</p>\n  <p data-track=\"22\">RoboOS可<strong>动态管理多机器人任务队列</strong>，支持优先级抢占与资源优化分配，确保复杂场景下实时响应，实现高并发任务调度。</p>\n  <p data-track=\"23\">此外，RoboOS可基于执行反馈动态调整策略，结合环境变化，<strong>持续优化任务规划</strong>，提升鲁棒性，做到实时闭环优化。</p>\n  <p data-track=\"24\">在“递送苹果和水果刀”的任务场景中，基于RoboOS及RoboBrain，睿尔曼单臂机器人（转运）、宇树人形G1（挑拣水果）、松灵双臂机器人（挑拣水果刀）分工协作。</p>\n  <p data-track=\"25\">整体任务流程是睿尔曼调用“导航技能”移动至餐桌前，宇树G1调用“视觉抓取技能”完成指定物体的挑拣，睿尔曼调用“抓取技能”提起果篮并导航至松灵餐桌前。紧接着，松灵调用“抓取技能”获取水果刀，并放置在果篮中心，睿尔曼依据“空间记忆”导航至办公桌位置，递送果篮后返回待命。</p>\n  <p data-track=\"26\"><strong>RoboOS接收</strong>“拿离杯子最近的水果，并递送一把水果刀”<strong>指令</strong>后，<strong>递送RoboBrain进行任务拆解</strong>，并将拆解后的子任务分发给3台跨本体机器人。RoboBrain通过 “空间记忆” 感知环境，确定果篮、苹果位置，并拆解任务为“宇树G1挑拣苹果→睿尔曼传递果篮→松灵机器人抓取水果刀→睿尔曼返回”。</p>\n  <p data-track=\"27\">各机器人本体执行子任务过程中，由<strong>RoboOS提供端云协作能力</strong>，将任务规划为技能粒度，实现云端RoboBrain分发规划，端侧执行技能并实时反馈。RoboBrain识别“离杯子最近的水果位置”、“果篮抓取位置affordance”、“水果刀抓取位置affordance”、“果篮空闲位置Pointing”，经由<strong>RoboOS递送指导各机器人本体完成任务</strong>。</p>\n  <p data-track=\"29\">RoboOS 作为面向多机器人系统的跨本体具身大小脑协作框架，专为解决当前具身智能落地过程中的通用性适配与多机调度难题而设计。针对<strong>异构本体难以统一接入、任务调度效率低、缺乏动态错误反馈机制</strong>等痛点，基于RoboOS 的“大小脑协同”的架构范式，云端的具身大脑 RoboBrain 负责<strong>统一的任务理解、规划决策与上下文感知</strong>，本体侧则接入轻量级的小脑执行模块，实现感知-认知-决策-行动的闭环协作。</p>\n  <p data-track=\"30\">该机制能够动态感知本体差异、灵活适配操作指令、自动修复异常行为，有效提升系统在复杂任务场景下的鲁棒性与泛化性。RoboOS 原生支持<strong>异构机器人本体的灵活接入</strong>，以 Profile 模板机制快速完成机器人能力建模与适配。</p>\n  <p data-track=\"31\">本体的小脑模块可调用包括开源技能库、自研低阶控制器等多种技能接口，形成一个<strong>支持模块复用、即插即用</strong>的运行体系，大幅降低开发门槛与接入成本。</p>\n  <p data-track=\"32\">在云端，RoboOS 提供完备的模型适配与 API 接入能力，兼容自研的多模态 VLM，<strong>作为可插拔的大脑决策引擎</strong>，从而在服务机器人、工业自动化、智慧物流、智能制造等领域支撑复杂任务的多机协作需求。</p>\n  <p data-track=\"33\">借助 RoboOS 的<strong>端云一体化协同能力与动态调度机制</strong>，整个系统不仅具备高度的扩展性与可迁移性，更为未来具身智能的规模部署与生态构建奠定了通用操作系统级的基础。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"迈向群体智能 | 智源首个跨本体具身大小脑协作框架与开源具身大脑\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e9d149b-04d5-4dc7-eae9-627fdef02b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e9d149b-04d5-4dc7-eae9-627fdef02b00/public\">\n  </div>\n  <p data-track=\"34\">RoboOS基于智源研究院研发的并行训练与推理框架FlagScale，原生支持多机器人系统的端云协同能力，打造具身智能的统一底座。系统在设计上充分考虑“多机器人-多模态-多任务”场景，具备极高的可扩展性与低时延响应能力。</p>\n  <p data-track=\"35\">在端侧部署中，机器人注册即可自动与云端部署的RoboBrain大脑建立双向通信链路，通过高效发布-订阅机制实现实时任务调度与状态反馈，指令响应延迟低于10ms，满足复杂动态任务的闭环控制需求。</p>\n  <p data-track=\"36\">面向机器人在长期运行中产生的海量感知与行为数据，RoboOS 提供基于内存优化的数据访问引擎，支持TB级别历史数据的内存随机访问能力，为任务复现、异常回溯、跨任务知识迁移等场景提供基础能力。结合 RoboBrain 的任务推理与策略优化模块，历史数据还可用于多机之间的协作知识共享，实现更强的智能演化与自主学习能力。</p>\n  <p data-track=\"37\">此外，FlagScale 作为底层支撑框架，支持大模型在<strong>多设备间的并行推理与多任务协同调度，可无缝集成视觉语言模型、轨迹生成模块、感知识别等子系统</strong>，全面释放具身大模型的系统潜力。</p>\n  <p data-track=\"38\">目前，智源研究院依托多模态大模型技术优势资源，正在联合北大、清华、中科院等高校院所以及银河通用、乐聚、加速进化、宇树等产业链上下游企业，积极建设具身智能创新平台，重点开展数据、模型、场景验证等研究。</p>\n  <p data-track=\"39\">此次智源研究院发布的跨本体具身大小脑协作框架RoboOS及开源具身大脑RoboBrain，将有机融合和广泛链接不同构型的具身本体与丰富多元的具身模型，加速具身智能跨本体协作与规模化应用。</p>\n  <p data-track=\"40\"><strong>开放、协作、共享，是具身智能生态繁荣的必经之路</strong>，智源研究院愿携手更多产业合作伙伴，共绘具身智能生态蓝图。</p>\n  <p data-track=\"41\">开源链接：<br>\n    具身多模态大脑模型RoboBrain<br>\n    Github： https://github.com/FlagOpen/RoboBrain<br>\n    Gitee： https://gitee.com/flagopen/robo-brain<br>\n    Huggingface：https://huggingface.co/BAAI/RoboBrain</p>\n  <p data-track=\"42\">为机器人操作任务设计的高质量异构数据集ShareRobot<br>\n    GitHub：https://github.com/FlagOpen/ShareRobot<br>\n    Gitee： https://gitee.com/flagopen/share-robot<br>\n    Huggingface： https://huggingface.co/datasets/BAAI/ShareRobot</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "智源研究院发布跨本体具身大小脑协作框架 RoboOS 与开源具身大脑 RoboBrain，赋能群体智能和具身智能应用。",
+  "oneSentenceSummary": "智源研究院发布跨本体具身大小脑协作框架 RoboOS 与开源具身大脑 RoboBrain，赋能群体智能和具身智能应用。",
+  "summary": "智源研究院发布了跨本体具身大小脑协作框架 RoboOS 和开源具身大脑 RoboBrain。RoboBrain 融合了机器人任务规划、可操作区域感知和轨迹预测能力，由基座模型、A-LoRA 模块和 T-LoRA 模块组成，通过多阶段训练策略提升场景感知和操作规划能力。RoboOS 基于 \"大脑 - 小脑\" 分层架构，结合 RoboBrain 的全局感知和决策能力与小脑技能库的高效执行能力，实现跨本体协作控制和动态任务管理，解决了具身智能落地过程中的通用性适配与多机调度难题，并已在松灵双臂、睿尔曼单 / 双臂、智元人形、宇树人形等多种异构机器人本体上进行了验证。RoboOS 具备端云协同与动态调度特性，为具身智能的规模部署与生态构建奠定基础。",
+  "mainPoints": [
+    {
+      "point": "RoboBrain 融合多维能力，提升机器人长程操作性能",
+      "explanation": "RoboBrain 融合机器人任务规划、可操作区域感知、轨迹预测的三维能力，将抽象指令映射为具象动作序列，增强长程操作任务的能力。"
+    },
+    {
+      "point": "RoboOS 通过分层架构和跨本体协作实现群体智能",
+      "explanation": "RoboOS 基于 \"大脑 - 小脑\" 分层架构，实现大脑模型与小脑技能的 \"即插即用\"，并通过共享记忆系统实现多个机器人之间的状态同步与智能协作。"
+    },
+    {
+      "point": "RoboOS 有效提升了复杂任务场景下的鲁棒性与泛化性",
+      "explanation": "RoboOS 能够动态感知本体差异、灵活适配操作指令、自动修复异常行为，有效提升系统在复杂任务场景下的鲁棒性与泛化性。"
+    }
+  ],
+  "keyQuotes": [
+    "推动单机智能迈向群体智能，为构建具身智能开源统一生态加速场景应用提供底层技术支持。",
+    "开放、协作、共享，是具身智能生态繁荣的必经之路。",
+    "智源研究院愿携手更多产业合作伙伴，共绘具身智能生态蓝图。",
+    "RoboOS 接收 **指令** 后， **递送 RoboBrain 进行任务拆解**，并将拆解后的子任务分发给 3 台跨本体机器人。"
+  ],
+  "tags": [
+    "具身智能",
+    "机器人",
+    "群体智能",
+    "RoboOS",
+    "RoboBrain"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 89,
+  "wordCount": 3429,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743236013000,
+  "publishDateStr": "2025-03-29",
+  "publishDateTimeStr": "2025-03-29 08:13:33"
+}

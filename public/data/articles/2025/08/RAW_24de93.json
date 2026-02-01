@@ -1,0 +1,53 @@
+{
+  "id": "RAW_24de93",
+  "title": "Cloudflare Quicksilver 多级缓存迁移实践：数十亿请求下的性能优化",
+  "url": "https://www.infoq.com/news/2025/08/cloudflare-key-value-store/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-09 14:30:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The engineering team at Cloudflare recently shared how they transitioned Quicksilver, their internal global key-value store, to a tiered caching architecture. They described their incremental journey from storing everything everywhere to adopting a distributed caching system, improving storage efficiency while preserving consistency guarantees and low-latency reads at the edge.</p>\n   <p>Over the last few years, Cloudflare transitioned from what is now called Quicksilver V1, where all data was stored on each server, to a new tiered caching system, Quicksilver V2, where only a handful of servers store data. The <a href=\"https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-1/\">two-article series</a> describes how they achieved the tiered caching architecture, a process that required the team to migrate hundreds of thousands of live databases while serving billions of requests per second.</p>\n   <p><a href=\"https://blog.cloudflare.com/introducing-quicksilver-configuration-distribution-at-internet-scale/\">Quicksilver</a> is a key-value store developed internally by Cloudflare to enable fast global replication and low-latency access across its global data centers. Originally designed as a global distribution system for configurations, it has evolved over time into the foundational storage system for many Cloudflare services and products, including their DNS, CDN, and WAF.</p>\n   <p>Quicksilver v1 stored the complete dataset on every server globally, resulting in unsustainable disk space usage as the 1.6TB dataset grew by 50% in just one year, threatening to exhaust available storage across Cloudflare's network. The transition began with Quicksilver v1.5, a solution that introduced proxy and replica server roles, resulting in a 50% reduction in disk usage.</p>\n   <p>In the latest v2 implementation, Cloudflare introduced a multi-level caching strategy. The newest architecture features local per-server caches, data center-wide sharded caches, and full dataset replicas on specialized storage nodes, with reactive prefetching that distributes cache misses across servers. Memory usage and cold cache concerns led Cloudflare to choose persistent storage using <a href=\"https://rocksdb.org/\">RocksDB</a> over memory-based caching, with evictions based on the engine's compaction filters.</p>\n   <p><img alt=\"Cloudflare Quicksilver\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/08/cloudflare-key-value-store/news/2025/08/cloudflare-key-value-store/en/resources/2image6-1753205999642.jpg\" style=\"width:100%;height:932px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/cloudflare-key-value-store/en/resources/2image6-1753205999642.jpg\" rel=\"share\"></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p><a href=\"https://www.linkedin.com/in/anton-dort-golts-50050b1b/\">Anton Dort-Golts</a> and <a href=\"https://www.linkedin.com/in/marten-van-de-sanden-789a0311/\">Marten van de Sanden</a>, systems engineers at Cloudflare, explain why backward compatibility and sequential consistency were important:</p>\n   <blockquote>\n    <p>Quicksilver has, from the start, provided sequential consistency to clients (...) We have experienced <a href=\"https://www.hyrumslaw.com/\">Hyrum's Law</a> first hand, with Quicksilver being so widely adopted across the company that every property we introduced in earlier versions is now relied upon by other teams. This means that changing behaviour would inevitably break existing functionality and introduce bugs.</p>\n   </blockquote>\n   <p>The new architecture maintains sequential consistency through <a href=\"https://en.wikipedia.org/wiki/Multiversion_concurrency_control\">multiversion concurrency control</a> (MVCC) and sliding window approaches to handle asynchronous replication challenges.</p>\n   <p><em><img alt=\"Cloudflare Cache Hit Rate\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/08/cloudflare-key-value-store/news/2025/08/cloudflare-key-value-store/en/resources/1image12-1753205999642.jpg\" style=\"width:100%;height:881px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/cloudflare-key-value-store/en/resources/1image12-1753205999642.jpg\" rel=\"share\"></em></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>The transformation from the old architecture to Quicksilver v2 addresses the initial critical constraints across Cloudflare's 330-city network while maintaining sub-millisecond performance for the 1.6TB dataset containing five billion key-value pairs. According to the authors, Quicksilver currently responds to 90% of requests within 1 ms and 99.9% of requests within 7 ms. Most requests return only a few keys, while others return hundreds or even more keys. Dort-Golts and van de Sanden add:</p>\n   <blockquote>\n    <p>Our key space was split up into multiple shards. Each server in a data center was assigned one of the shards. Instead of those shards containing the full dataset for their part of the key space, they contain a cache for it. Those cache shards are populated by all cache misses inside the data center. This all forms a data center-wide cache that is distributed using sharding.</p>\n   </blockquote>\n   <p>Cloudflare resolved the data locality issue by maintaining local per-server caches in addition to data center-wide caches, with all servers in a data center containing both their local cache and a cache for one physical shard of the sharded cache. Each requested key is first looked up in the server's local cache and then in the data center-wide sharded one. If both caches miss the key, the lookup happens on one of the storage nodes. The authors conclude the analysis by sharing the results of having multiple caching layers:</p>\n   <blockquote>\n    <p>The percentage of keys that can be resolved within a data center improved significantly by adding the second caching layer. The worst performing instance has a cache hit rate higher than 99.99%. All other instances have a cache hit rate that is higher than 99.999%.</p>\n   </blockquote>\n   <p>The 99.9th percentile latency between proxies and replicas shows virtually no difference, with proxies occasionally outperforming replicas due to smaller on-disk datasets.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/cloudflare-key-value-store/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1754749800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 成功迁移 Quicksilver 至多级缓存架构，显著提升存储效率。新架构在大规模下保持了低延迟读取。",
+  "oneSentenceSummary": "Cloudflare 成功迁移 Quicksilver 至多级缓存架构，显著提升存储效率。新架构在大规模下保持了低延迟读取。",
+  "summary": "Cloudflare 的工程团队详细介绍了内部全局键值存储 Quicksilver 从“在所有地方存储所有内容”的 V1 模型到新的 V2 多级缓存系统的复杂迁移过程。面对 330 个数据中心快速扩展的 1.6TB 数据集带来的不可持续的磁盘使用量，他们采用了一种增量式的分布式缓存方案。V2 架构结合了本地服务器缓存、数据中心范围的分片缓存以及专用存储节点上的完整数据集副本，利用 RocksDB 进行持久存储。这个复杂的转换涉及迁移数十万个实时数据库，同时每秒处理数十亿个请求，并通过多版本并发控制 (MVCC) 和滑动窗口技术严格保持顺序一致性。最终实现了存储效率的大幅提升，以及全球网络中亚毫秒级的性能和超过 99.99% 的缓存命中率。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 的 Quicksilver V2 通过多级缓存策略大幅减少了存储空间占用。",
+      "explanation": "通过从在每台服务器上存储完整数据集过渡到具有本地、分片和专用缓存的分层系统，Cloudflare 有效地解决了不可持续的磁盘增长问题，同时保持了高性能。"
+    },
+    {
+      "point": "在大型实时迁移期间保持顺序一致性对于基础系统至关重要。",
+      "explanation": "由于 Quicksilver 的广泛内部采用，向后兼容性和顺序一致性至关重要，通过 MVCC 和滑动窗口技术，在整个复杂数据库迁移过程中实现了这一目标。"
+    },
+    {
+      "point": "多层缓存架构可在全球范围内提供出色的缓存命中率和超低延迟。",
+      "explanation": "将本地服务器缓存与数据中心范围的分片缓存和反应式预取相结合，可为数十亿个请求带来超过 99.99% 的缓存命中率和亚毫秒级响应时间。"
+    }
+  ],
+  "keyQuotes": [
+    "Quicksilver 从一开始就为客户端提供顺序一致性 (...) 我们亲身体验了 [Hyrum 定律]，Quicksilver 在整个公司中被广泛采用，以至于我们在早期版本中引入的每个属性现在都被其他团队所依赖。",
+    "最新的架构具有本地服务器缓存、数据中心范围的分片缓存以及专用存储节点上的完整数据集副本，并具有反应式预取功能，可在服务器之间分发缓存未命中请求。",
+    "通过添加第二层缓存，数据中心内可以解析的密钥比例显著提高。性能最差的实例的缓存命中率高于 99.99%。所有其他实例的缓存命中率均高于 99.999%。"
+  ],
+  "tags": [
+    "分布式系统",
+    "缓存",
+    "键值存储",
+    "Cloudflare",
+    "系统架构"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 691,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1754749800000,
+  "publishDateStr": "2025-08-09",
+  "publishDateTimeStr": "2025-08-09 14:30:00"
+}

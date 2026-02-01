@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6cd70120",
+  "title": "一撮钛粉末，如何变成 Apple Watch 最复杂的金属结构？｜独家专访",
+  "url": "https://www.ifanr.com/1644383?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-11-18 22:44:25",
+  "author": "何宗丞",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>&nbsp;</p>\n  <p>Apple Watch 最新一代的钛金属外壳，始于一撮细密的金属粉末。</p>\n  <p>没有车床的轰鸣、火星，也没有刀具切割金属时那令人牙酸的摩擦声，钛金属版的 Apple Watch 不是被切削出来的，而是被「打印」出来的。</p>\n  <p>3D 打印这个词，在很多人的脑海里仍停留在实验室和原型阶段：打印一只概念零件、一段验证思路的模型。而苹果，第一次把它推入了消费电子的大规模量产线。</p>\n  <p>这还真不是炫技。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644604\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_3IgRoM.gif\" alt=\"\" width=\"766\" height=\"431\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_3IgRoM.gif 766w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_3IgRoM-360x203.gif 360w\" sizes=\"(max-width: 766px) 100vw, 766px\"></p>\n  <h3><b>为什么是 3D 打印？</b></h3>\n  <p>传统的金属加工是一道「做减法」的技艺：一整块金属，通过 CNC 加工（数控铣床）从四面八方切、铣、磨，把多余的部分一点点削切成目标的形状，再进行打磨和抛光。</p>\n  <p>这种方式加工精度极高，却免不了一个硬伤——浪费。</p>\n  <p>「金属好不好加工，一用刀就知道。」钛的优秀已经被无数行业肯定：轻、强、耐腐蚀，是天生的「工程好料」。但它同时也倔强固执：熔点高、延展性低，加工具有挑战性。刀具磨损比加工铝时快得多，时间被成倍拉长，还要不断处理因「太硬」而带来的种种麻烦。</p>\n  <p>对 Apple Watch 这样的复杂造型来说，过去工程师常常得先做一个尺寸更大的锻件，再慢慢从里面「雕刻」出想要的形状。就如同从一块巨石中凿出一小尊雕像，壮观，却不够高效。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644598\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_plQR20.gif\" alt=\"\" width=\"601\" height=\"501\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_plQR20.gif 601w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_plQR20-360x300.gif 360w\" sizes=\"(max-width: 601px) 100vw, 601px\"></p>\n  <p>增材制造彻底改写了这套逻辑。它的思路，则是一次「加」的工艺——将材料一层层堆叠成形，如同用裱花袋挤出蛋糕的纹理，精准而克制。</p>\n  <h3><b>60 微米、900 层：一枚表壳的成长轨迹</b></h3>\n  <p>打印从一撮回收的钛粉开始。</p>\n  <p>「钛金属粉末之前是不存在的，」Kate Bergeron 是苹果产品设计副总裁，还负责所有 Apple 产品的材料创新。她告诉爱范儿，获得并使用可回收的钛粉，本身就是一个巨大的突破。</p>\n  <p>钛是一种坚硬而活跃的金属，在高温下甚至可能爆燃。为了保障安全，苹果对原始钛进行雾化处理，降低氧含量，并针对激光参数进行了极为精细的调整。</p>\n  <p>每台打印机配备了一个振镜系统，包含 6 束激光，每束光如同一支细笔，通过振镜系统引导，在粉末表面融化出一层零件的横截面。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644599\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_dy2JZL.gif\" alt=\"\" width=\"695\" height=\"391\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_dy2JZL.gif 695w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_dy2JZL-360x203.gif 360w\" sizes=\"(max-width: 695px) 100vw, 695px\"></p>\n  <p>完成一层，打印平台下移 60 微米——大约一根头发丝的宽度，再铺上新的粉末层，继续熔化。</p>\n  <p>经过 900 层的堆叠，表壳的雏形浮现。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644600\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_fh67dH.gif\" alt=\"\" width=\"575\" height=\"323\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_fh67dH.gif 575w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_fh67dH-360x202.gif 360w\" sizes=\"(max-width: 575px) 100vw, 575px\"></p>\n  <p>打印结束后，零件仍埋在粉末堆里，工程师通过真空吸取的方式清除多余的粉末。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644601\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_ojyW9Z.gif\" alt=\"\" width=\"525\" height=\"295\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_ojyW9Z.gif 525w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_ojyW9Z-360x202.gif 360w\" sizes=\"(max-width: 525px) 100vw, 525px\"></p>\n  <p>接着，使用超声振动设备，对打印件进行更精细的清粉操作，确保将表壳内部缝隙和细小结构中的残余粉末完全清除。所有粉末都会被回收再利用。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644602\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_SNpoUF.gif\" alt=\"\" width=\"542\" height=\"305\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_SNpoUF.gif 542w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_SNpoUF-360x203.gif 360w\" sizes=\"(max-width: 542px) 100vw, 542px\"></p>\n  <p>随后，成型的零件被金刚石线锯从底板上小心翼翼地切割下来。</p>\n  <h3><b>从粗糙到精致：后处理的艺术</b></h3>\n  <p><img class=\"aligncenter size-full wp-image-1644603\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_XOXuRe.gif\" alt=\"\" width=\"581\" height=\"327\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_XOXuRe.gif 581w, https://s3.ifanr.com/wp-content/uploads/2025/11/IMB_XOXuRe-360x203.gif 360w\" sizes=\"(max-width: 581px) 100vw, 581px\"></p>\n  <p>增材制造出的金属零件，其表面粗糙度远无法满足消费级产品的外观要求，尤其像 Apple Watch Series 11 这样要求抛光镜面、结构复杂、内外皆可见的产品。</p>\n  <p>于是，一门叫做「后处理」的工艺开始了。</p>\n  <p>CNC 精修校正尺寸、喷砂或抛光塑造质感、注塑整合其他部件、最后进行表面处理。Ultra 3 采用细腻喷砂，强化户外的坚固触感；Series 11 则追求几乎照见人影的光滑度。</p>\n  <p>「我们对精度与结构完整性要求没有任何降低。」Kate 强调，苹果没有因为 3D 打印而牺牲质量。</p>\n  <p><img class=\"aligncenter size-full wp-image-1644395\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/apple.jpg!720\" alt=\"\" width=\"580\" height=\"203\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/apple.jpg!720 580w, https://s3.ifanr.com/wp-content/uploads/2025/11/apple-360x126.jpg 360w\" sizes=\"(max-width: 580px) 100vw, 580px\"></p>\n  <div class=\"editor-image-source\">\n   <p>▲ 左图显示外壳表面纹理，右图显示抛光表面</p>\n  </div>\n  <p><a href=\"https://www.youtube.com/shorts/TR9rPYlFTDE\">拆解网站 iFixit</a> 也从侧面印证了这一点，在显微镜下，Ultra 3 表壳的确隐约可见一些打印层纹。但在硬度测试中，Ultra 3 表壳与前代锻造版本一样，仅在莫氏硬度 6 级才会出现划痕————比早期 Ultra 一代（硬度 5 级即划伤）更为优秀。</p>\n  <h3><b>环保是一场主动争胜的技术战</b></h3>\n  <p>如果制造一枚表壳可以用传统工艺解决，为什么苹果要冒着巨大的研发成本绕这么大一个圈？</p>\n  <p>毕竟，普通用户并不关心 Apple Watch 是不是 3D 打印的。</p>\n  <p>答案藏在另一个更宏大的承诺里——</p>\n  <p>苹果以 2015 年为基准，计划实现 75% 的碳减排。主要路径包括：推动供应链使用可再生能源、采用更低碳的运输方式，以及通过材料创新提升回收比例。</p>\n  <p>3D 打印正好处在这三个方向的交汇点上。它不仅将钛金属的回收利用比例提升至 100%，与锻造相比，打印可减少约 50% 材料使用量，从源头减少碳排放。</p>\n  <blockquote>\n   <p>过去我们如果能提高 10%、15% 的材料效率，我们就已经非常兴奋了。而现在，我们将材料使用量直接砍半——从碳排放角度来看，这是一次极其重大的胜利。</p>\n  </blockquote>\n  <p>在苹果环境和供应链创新副总裁 Sarah 眼中，环保从来不是被动的责任，而是一场需要主动出击的技术战役。而 3D 打印，正是这场战役中的一件关键武器。</p>\n  <p>她所带领的团队，负责在苹果全球供应链中贯彻两个核心目标：一个是到 2030 年实现碳中和，另一个是终有一日，让每一件产品都由回收和可再生材料制成。</p>\n  <p>据她透露，苹果目前已完成 60% 的减碳任务，但剩下的减碳部分将越发艰难。</p>\n  <blockquote>\n   <p>我们寻找的是那种既对地球有益，也对产品本身、对用户体验同样有益的方案。</p>\n  </blockquote>\n  <h3><b>从 CNC 到 3D 打印：制造的下一次进化</b></h3>\n  <p>十五年前，苹果用 CNC 工艺打造出 MacBook Unibody 一体成型机身，开启精密制造的革命性时刻，推动了整整一代制造业升级。</p>\n  <p>苹果能够大规模集成 3D 打印钛金属，其他 OEM 厂商也能有信心跟进。</p>\n  <p>在过去的一个季度中，我们看到各大品牌将增材制造引入日常产品和运营中——从消费玩具和自行车组件到鞋类平台和工厂备件。这一模式是一致的：试点生产线成熟为可重复的生产，中等产量下经济效益更好，并与数字质量系统更紧密集成。简单来说，增材制造正从新奇走向常规。</p>\n  <p data-start=\"221\" data-end=\"371\">专注金属增材制造的专业机构 <a href=\"https://3dspro.com/resources/blog/apple-watch-ultra-3-scaling-3d-printed-titanium-from-prototype-to-millions\">3DS Pro 认为</a>，金属 3D 打印这件事的意义不仅在于「用上了新工艺」，而是它证明了一件以前几乎没人敢想的事——钛金属的 3D 打印，真的可以规模化做到消费电子所需的光洁度与公差控制。不是几十件的试水，而是数百万件的量产级别。</p>\n  <p>更重要的是，它所能带来的创造力空间，也被正式打开。</p>\n  <p>传统的减材加工，总要被刀具、弯折半径、材料延展性这些边界框住思路。但 3D 打印的逻辑完全不同——它可以在元件内部做晶格结构，可以一次成型复杂的中空通道，也可以实现传统方法根本没法加工的过渡几何。</p>\n  <p>iPhone Air 是一个极好的例子：它的 USB-C 外壳，用的就是和 Apple Watch 一样的回收钛粉，用 3D 打印造出来。在这种工艺下，设计师不仅能保持结构强度与耐用性，还能实现极致的轻薄比例。</p>\n  <p><img class=\"aligncenter size-large wp-image-1644393\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/11/iPhone-Air-3D-Printed-USB-C-Feature-1024x576.jpg!720\" alt=\"\" width=\"1024\" height=\"576\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/11/iPhone-Air-3D-Printed-USB-C-Feature-1024x576.jpg!720 1024w, https://s3.ifanr.com/wp-content/uploads/2025/11/iPhone-Air-3D-Printed-USB-C-Feature-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/11/iPhone-Air-3D-Printed-USB-C-Feature-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/11/iPhone-Air-3D-Printed-USB-C-Feature.jpg 1600w\" sizes=\"(max-width: 1024px) 100vw, 1024px\"></p>\n  <p>「这件事一开始是既令人兴奋又让人有点害怕的。」Kate 说，「因为理论上，它可以打印任何形状。我们已经充分理解了钛金属的打印方式，接下来我们会探索如何将这项工艺应用到更多产品上。」</p>\n  <p>「现在谈革命还为时尚早。」Kate 谨慎地说，「但它绝对是我们制造工具箱中新增的重要一环。」</p>\n  <p>接着，她说了一句特别「苹果」的话：「天空才是极限。」</p>\n  <p>又像是给未来留了个伏笔：「我们很期待设计师们会用这项技术提出什么新的挑战。」</p>\n  <blockquote>\n   <p>「这绝不是一个终点，而是一个新的起点。」</p>\n  </blockquote>\n </body>\n</html>",
+  "aiSummary": "文章独家专访苹果高管，深入解析 Apple Watch 钛金属外壳如何通过创新 3D 打印技术实现大规模量产，兼顾复杂结构、环保目标与产品质量。",
+  "oneSentenceSummary": "文章独家专访苹果高管，深入解析 Apple Watch 钛金属外壳如何通过创新 3D 打印技术实现大规模量产，兼顾复杂结构、环保目标与产品质量。",
+  "summary": "文章核心揭示了苹果 Apple Watch 钛金属外壳通过增材制造（3D 打印）技术实现大规模量产的创新过程。该技术突破了传统 CNC 加工钛金属面临的材料浪费和加工难度大的问题，通过逐层激光熔化堆叠，显著提高了材料利用率，并能实现复杂结构的一体成型。文章详细介绍了回收钛粉的准备、多激光振镜系统、60 微米/层的精密堆叠，以及后续的精修、抛光等后处理工艺，强调了苹果在确保产品精度和质量方面不妥协。更重要的是，文章指出 3D 打印是苹果实现碳减排和可持续发展战略的关键一环，将材料使用量减少 50% 并实现 100% 回收利用。这一大规模量产的成功不仅证明了金属 3D 打印在消费电子领域的巨大潜力，也为未来的产品设计开辟了新的可能性，预示着制造业的下一次进化。",
+  "mainPoints": [
+    {
+      "point": "3D 打印技术有效解决了传统工艺在钛金属复杂结构制造中的痛点",
+      "explanation": "传统 CNC 加工钛金属效率低、材料浪费大且难以实现复杂中空结构，而增材制造通过逐层堆叠，显著提升材料利用率并突破设计限制。"
+    },
+    {
+      "point": "苹果将金属 3D 打印技术成功应用于消费电子大规模量产，树立行业新标杆",
+      "explanation": "苹果证明了金属 3D 打印可以达到消费电子产品所需的光洁度和公差控制，实现了数百万件的量产，推动了制造业的进步和应用信心。"
+    },
+    {
+      "point": "3D 打印是苹果实现环保目标和可持续发展战略的重要支柱",
+      "explanation": "该技术使钛金属回收利用率达到 100%，并减少 50% 材料使用量，是苹果达成碳减排和全面使用回收材料承诺的关键路径。"
+    }
+  ],
+  "keyQuotes": [
+    "过去我们如果能提高 10%、15% 的材料效率，我们就已经非常兴奋了。而现在，我们将材料使用量直接砍半------从碳排放角度来看，这是一次极其重大的胜利。",
+    "我们寻找的是那种既对地球有益，也对产品本身、对用户体验同样有益的方案。",
+    "现在谈革命还为时尚早，但它绝对是我们制造工具箱中新增的重要一环。",
+    "天空才是极限。",
+    "这绝不是一个终点，而是一个新的起点。"
+  ],
+  "tags": [
+    "3D打印",
+    "增材制造",
+    "智能制造",
+    "精密制造",
+    "钛金属"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2529,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763505865000,
+  "publishDateStr": "2025-11-18",
+  "publishDateTimeStr": "2025-11-18 22:44:25"
+}

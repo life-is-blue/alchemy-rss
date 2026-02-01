@@ -1,0 +1,59 @@
+{
+  "id": "RAW_8c70b3",
+  "title": "新版 GPT-5 刚刚发布，最卷 AI 连肝代码 7 小时，编程工具大洗牌开始了",
+  "url": "https://www.ifanr.com/1637833?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-09-16 09:51:53",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>就在 Anthropic Claude 陷入降智风波时，OpenAI 刚刚推出了 GPT-5-Codex——这是基于 GPT-5 优化后的 Codex 专用版本，专门针对「自主编程」进行了训练。</p>\n  <p>这次升级确实有些分量。</p>\n  <p>聚焦于真实的软件工程场景的 GPT-5-Codex，不仅能处理日常的编程交互，还能独立完成复杂耗时的工程项目。它能像真正的程序员一样，连续工作超过 7 个小时，在复杂项目上不断迭代、修 bug、跑测试，最后交付一个完整可用的解决方案。</p>\n  <p>从四月份推出 CLI 版本，到五月份上线网页版，再到现在的全面升级，Codex 的——就是要把编程这件事彻底「自动化」。</p>\n  <p>现在无论你在终端、IDE、网页还是手机上开发，Codex 都能提供一致的编程辅助体验，而且已经整合进 ChatGPT 账号体系，本地和云端可以无缝切换。</p>\n  <p><img class=\"alignnone size-full wp-image-1637862\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/img_68c8b8448b4d9.png!720\" alt=\"\" width=\"3840\" height=\"2160\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/img_68c8b8448b4d9.png!720 3840w, https://s3.ifanr.com/wp-content/uploads/2025/09/img_68c8b8448b4d9-360x203.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/img_68c8b8448b4d9-768x432.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/img_68c8b8448b4d9-1024x576.png 1024w\" sizes=\"(max-width: 3840px) 100vw, 3840px\"></p>\n  <p>GPT-5-Codex 最有意思的特性是「动态思考」能力。它能够根据任务复杂度灵活调整处理时间。</p>\n  <p>OpenAI 内部员工使用数据显示，按模型生成的 token 数排序，对于最底部 10% 的简单请求，GPT-5-Codex 比 GPT-5 少用了 93.7% 的计算资源。</p>\n  <p>相反，对于最顶部 10% 的复杂请求，它会花费大约两倍的时间进行推理、代码编辑、测试和迭代。这意味着日常聊天和小任务响应会更快，而复杂的大型重构则会投入更多时间深度处理。</p>\n  <p><img class=\"alignnone size-full wp-image-1637886\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/555.png!720\" alt=\"\" width=\"1322\" height=\"756\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/555.png!720 1322w, https://s3.ifanr.com/wp-content/uploads/2025/09/555-360x206.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/555-768x439.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/555-1024x586.png 1024w\" sizes=\"(max-width: 1322px) 100vw, 1322px\"></p>\n  <p>用人话说就是：日常小问题不磨蹭，大项目该花时间就花时间。</p>\n  <p>终于有个编程模型懂得「好钢用在刀刃上」了。</p>\n  <p>基准测试方面，在 GPT-5 发布时，OpenAI 只在 477 个 SWE-bench Verified 任务上报告结果，在被 Anthropic 指出这一问题后，今天 OpenAI 宣布这些问题已经修复，现在可以在全部 500 个任务上报告结果。结果如下：</p>\n  <p><img class=\"alignnone size-full wp-image-1637885\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/554.png!720\" alt=\"\" width=\"1144\" height=\"756\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/554.png!720 1144w, https://s3.ifanr.com/wp-content/uploads/2025/09/554-360x238.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/554-768x508.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/554-1024x677.png 1024w\" sizes=\"(max-width: 1144px) 100vw, 1144px\"></p>\n  <p>代码重构评测更是涵盖了 Python、Go 甚至 OCaml 等语言，比如一个来自 Gitea 的 pull request 案例，修改了 232 个文件、3541 行代码，将 ctx 变量贯穿到应用逻辑中。</p>\n  <p>代码审查功能也很实用，它会在代码库中浏览分析，运行测试验证正确性，给出的审查意见准确性不错。在 OpenAI 内部，Codex 现在会审查大部分 PR，每天能发现数百个问题，很多时候比人工审查更早发现潜在 bug。</p>\n  <p><img class=\"alignnone size-full wp-image-1637887\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/556.png!720\" alt=\"\" width=\"1642\" height=\"780\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/556.png!720 1642w, https://s3.ifanr.com/wp-content/uploads/2025/09/556-360x171.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/556-768x365.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/556-1024x486.png 1024w\" sizes=\"(max-width: 1642px) 100vw, 1642px\"></p>\n  <p>前端开发支持同样到位，GPT-5-Codex 不仅能创建桌面应用，移动端开发能力也有明显提升。它还能读取截图和设计稿，检查开发进度，把工作成果可视化展示，这对前端开发确实很有帮助。</p>\n  <p>工具层面的更新也相当丰富。全新改造的 Codex CLI 现在围绕自主编程流程重构，支持直接附加和分享图片，包括截图、线框图和架构图，用于建立对设计决策的共同理解。</p>\n  <p><img class=\"alignnone size-full wp-image-1637888\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/557.gif\" alt=\"\" width=\"1978\" height=\"1096\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/557.gif 1978w, https://s3.ifanr.com/wp-content/uploads/2025/09/557-360x199.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/557-768x426.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/557-1024x567.gif 1024w\" sizes=\"(max-width: 1978px) 100vw, 1978px\"></p>\n  <p>处理复杂任务时，Codex 会通过待办清单跟踪进度，内置了网页搜索、MCP 等工具连接外部系统。</p>\n  <p>审批模式简化为三种：只读模式需要显式批准，自动模式对工作区有完整访问权限但工作区外需要批准，完全访问模式可以在任意位置读取文件并运行带网络访问的命令。</p>\n  <p>全新的 IDE 插件支持 VS Code、Cursor 等编辑器，让用户能无缝预览本地修改并与 Codex 协作编辑代码。插件还支持在云端与本地环境间流畅切换，可以直接在编辑器中创建云端任务、跟踪进行中的工作，以及审查已完成的任务。</p>\n  <p>云端基础设施也有明显改进，通过容器缓存将新任务和后续任务的中位完成时间缩短了 90%。Codex 能自动设置运行环境，扫描常见初始化脚本并执行，在配置网络访问权限时还能运行 pip install 等命令按需安装依赖。</p>\n  <p><img class=\"alignnone size-full wp-image-1637890\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/559.gif\" alt=\"\" width=\"1988\" height=\"1098\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/559.gif 1988w, https://s3.ifanr.com/wp-content/uploads/2025/09/559-360x199.gif 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/559-768x424.gif 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/559-1024x566.gif 1024w\" sizes=\"(max-width: 1988px) 100vw, 1988px\"></p>\n  <p>安全方面，OpenAI 采用了沙箱运行环境，默认禁用网络访问，确保不会在用户电脑上执行有害操作，同时降低提示注入风险。</p>\n  <p>开发者可以根据风险承受度自定义安全设置，在云端可以限制网络访问只允许可信域名，在 CLI 和 IDE 插件中可以批准命令、允许全权限运行或使用网页搜索、连接 MCP 服务器。</p>\n  <p>与 GPT-5 管理方式一致，GPT-5-Codex 在生物与化学领域被归类为高能力模型，已采取相应安全措施。</p>\n  <p>价格上，Codex 已经集成到 ChatGPT 的各个付费套餐中，不同套餐提供不同的使用额度。</p>\n  <ul>\n   <li>Plus、Edu 和 Business 适合每周几次专注的编程会话；</li>\n   <li>Pro 则能支持跨多个项目的一整周工作量。</li>\n  </ul>\n  <p>Business 套餐可以购买额外额度，帮助开发者突破包含的上限；Enterprise 套餐则提供共享额度池，只需为团队实际使用部分付费。对于使用 API key 的开发者，OpenAI 计划很快在 API 中开放 GPT-5-Codex。</p>\n  <p><img class=\"alignnone size-full wp-image-1637894\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/5514.png!720\" alt=\"\" width=\"1190\" height=\"1490\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/5514.png!720 1190w, https://s3.ifanr.com/wp-content/uploads/2025/09/5514-360x451.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/5514-768x962.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/5514-818x1024.png 818w\" sizes=\"(max-width: 1190px) 100vw, 1190px\"></p>\n  <p>目前 GPT-5-Codex 的系统提示词已经泄露，感兴趣的开发者可以研究一下。</p>\n  <p>系统提示词地址：https://github.com/elder-plinius/CL4R1T4S/blob/main/OPENAI/Codex_Sep-15-2025.md</p>\n  <p>知名博主 Dan Shipper 在体验完 GPT-5-Codex 之后，给出的评价是：</p>\n  <blockquote>\n   <p>我们在 @every 上测试了几天，结果相当震撼：</p>\n   <p>– 它会根据任务动态选择「思考」时间——难题上能长时间工作，简单问题则能即时给出答案。\n    <br>\n    – 在我们的生产代码库测试中，它可以自主运行 长达 35 分钟 ——相比之下，GPT-5 往往过于谨慎，这是一次明显的升级。\n    <br>\n    – 它支持 本地与网页开发环境的无缝切换。你可以在 VS Code 中启动一个任务，然后在去购物时把它交给 Codex Web 继续完成。\n    <br>\n    – 它配备了 代码审查智能体，会真正运行你的代码，因此能发现更多 bug。</p>\n   <p>以下是我们经过大量内部测试后的整体感受：\n    <br>\n    – 这是一次非常出色的升级，让 Codex CLI 成为了 Claude Code 的有力替代品。\n    <br>\n    – 不过，它需要合理的提示才能表现出最佳效果。比如 @kieranklaassen 最多只能让它运行 5 分钟，而 @DannyAziz97 找到了诀窍。\n    <br>\n    – 有时候它会「偷懒」——在某些任务上可能思考不足，或者如果认为任务过大就会直接拒绝。\n    <br>\n    – 我整个周末都在用 Codex CLI 为 @CoraComputer 提交一个新的 PR，体验下来发现它非常好用、易于引导——这是一个很棒的模型。</p>\n  </blockquote>\n  <p>OpenAI Codex 产品负责人 Alexander Embiricos 表示，性能的大幅提升主要归功于 GPT-5-Codex 动态的「思考能力」。Embiricos 解释说，GPT-5-Codex 的工作方式类似，但它内部没有路由器，而是能实时调整在某项任务上投入的时间。</p>\n  <p>Embiricos 指出，这比路由机制更具优势：后者在一开始就必须决定要为某个问题分配多少算力和时间，而 GPT-5-Codex 则可以在处理任务 5 分钟后决定「还需要再多花一个小时」。他说，他见过该模型在某些情况下连续工作超过 7 小时。</p>\n  <p><img class=\"alignnone size-full wp-image-1637889\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/558.png!720\" alt=\"\" width=\"2940\" height=\"1588\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/558.png!720 2940w, https://s3.ifanr.com/wp-content/uploads/2025/09/558-360x194.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/558-768x415.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/558-1024x553.png 1024w\" sizes=\"(max-width: 2940px) 100vw, 2940px\"></p>\n  <p>最近几个月，几乎所有 AI 大厂的重磅更新都指向同一个方向——编程能力。相比之下，如果你仔细观察就会发现，针对普通用户的「优化」其实是在不断减少。</p>\n  <p>表面上看，这可能是因为面向普通消费者的 AI 产品已经陷入瓶颈期。聊天、写文案、做翻译，这些功能已经比较成熟，很难再有突破性进展。</p>\n  <p>但更深层的原因，还是绕不开商业逻辑。</p>\n  <p>开发先进的 AI 模型本就需要天文数字的巨额投入，这些成本总要有人承担。与其指望海量低付费用户慢慢回血，不如直接锁定那些真正愿意掏钱的高价值用户。而程序员是最愿意为 AI 工具付费、且粘性较高的群体之一。</p>\n  <p>从这个角度来说，放弃技术平权的叙事，AI 的未来可能比我们想象的更加「精英化」。这不一定是坏事，但至少我们应该对此有清醒的认识。</p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布了专为自主编程优化的 GPT-5-Codex，具备动态思考、长时间迭代修复和智能代码审查等能力，预示着编程工具的大洗牌。",
+  "oneSentenceSummary": "OpenAI 发布了专为自主编程优化的 GPT-5-Codex，具备动态思考、长时间迭代修复和智能代码审查等能力，预示着编程工具的大洗牌。",
+  "summary": "文章详细介绍了 OpenAI 新推出的 GPT-5-Codex，这是一款基于 GPT-5 专门针对“自主编程”训练的 AI 模型。该模型最大的亮点是其“动态思考”能力，能够根据任务复杂度灵活调整处理时间，在简单任务上显著减少计算资源消耗，而在复杂任务上投入更多时间进行深度处理。它能像真正的程序员一样，连续工作超过 7 小时进行迭代、修 bug、跑测试。文章展示了 GPT-5-Codex 在 SWE-bench 基准测试、多语言代码重构、智能代码审查以及前端开发辅助等方面的强大表现。此外，它还提供了全面升级的 CLI 工具、IDE 插件，实现了本地与云端无缝切换的编程辅助体验，并支持灵活的审批模式和安全的沙箱运行环境，已集成至 ChatGPT 付费套餐。文章最后指出，当前 AI 大厂的重心正转向编程能力，这可能与商业逻辑驱动下的“AI 精英化”趋势有关，即锁定高价值开发者用户群体。",
+  "mainPoints": [
+    {
+      "point": "GPT-5-Codex 实现了自主编程能力，能独立完成复杂工程任务。",
+      "explanation": "模型能长时间连续工作，进行代码迭代、bug 修复和测试，显著提升了软件开发自动化水平和效率，标志着 AI 在编程领域的重大突破。"
+    },
+    {
+      "point": "创新的“动态思考”能力，使模型能智能分配计算资源和处理时间。",
+      "explanation": "针对简单任务快速响应，对复杂任务深入推理和迭代，提高了资源利用效率和问题解决深度，避免了资源浪费。"
+    },
+    {
+      "point": "全面升级的编程辅助功能和工具生态，提升了开发者协作效率和安全性。",
+      "explanation": "提供强大的代码审查、前端开发支持、跨平台工具链、IDE 插件和沙箱安全环境，优化了开发流程和用户体验。"
+    },
+    {
+      "point": "AI 大厂重心转向编程工具，预示着 AI 发展或将更加“精英化”。",
+      "explanation": "商业逻辑驱动下，AI 投入巨额成本，高价值开发者用户群体更愿意付费，导致 AI 产品发展方向倾斜，放弃了技术平权的叙事。"
+    }
+  ],
+  "keyQuotes": [
+    "GPT-5-Codex------这是基于 GPT-5 优化后的 Codex 专用版本，专门针对「自主编程」进行了训练。",
+    "它能像真正的程序员一样，连续工作超过 7 个小时，在复杂项目上不断迭代、修 bug、跑测试，最后交付一个完整可用的解决方案。",
+    "GPT-5-Codex 最有意思的特性是「动态思考」能力。它能够根据任务复杂度灵活调整处理时间。",
+    "我们整个周末都在用 Codex CLI 为 @CoraComputer 提交一个新的 PR，体验下来发现它非常好用、易于引导------这是一个很棒的模型。",
+    "从这个角度来说，放弃技术平权的叙事，AI 的未来可能比我们想象的更加「精英化」。"
+  ],
+  "tags": [
+    "AI编程",
+    "GPT-5-Codex",
+    "代码生成",
+    "软件工程",
+    "动态思考"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2596,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758016313000,
+  "publishDateStr": "2025-09-16",
+  "publishDateTimeStr": "2025-09-16 09:51:53"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "RAW_fa80a8",
+  "title": "谢赛宁团队新基准让 LLM 集体自闭，DeepSeek R1、Gemini 2.5 Pro 都是零分 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-18-14",
+  "date": "2025-06-18 10:14:23",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>当前 LLM 与人类大师级水平之间仍存在显著差距。</p>\n  </blockquote>\n  <p>近年来，LLMs（如 GPT-4、Claude、Gemini 等）在代码生成领域取得了显著进展。它们不仅在经典编程基准（如 HumanEval）中表现出色，甚至在某些测试中超越了人类平均水平。这促使许多研究者开始宣称：LLM 已经胜过人类程序员，尤其是在竞赛编程领域。&nbsp;</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bdf1d7c8-e07c-4246-dfcd-6127b8523f00/public\" alt=\"1750213502324.png\" data-ratio=\"0.9037593984962407\" data-type=\"png\" data-w=\"665\" data-imgfileid=\"503490687\" data-original-style=\"width: 485px;height: 438px;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/7a07d781-a9dd-4f58-8858-64177cc5029c/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\"></p>\n  <p>更进一步的，在结合了外部工具之后，一些模型（如 o3 和 o4-mini-high）甚至在 Codeforces 平台上获得了超过 2700 的 Elo 评分 —— 这个分数已跻身参赛者前 0.1%。&nbsp;</p>\n  <p>然而，这些简单的量化评估，真的能体现模型解决复杂问题的能力吗？我们不妨先问几个问题：LLMs 真的具备与顶级人类选手相当的推理能力吗？模型的高分究竟有多少来自真实的推理能力，又有多少是依赖外部工具的结果？</p>\n  <p>为了解答上述问题，来自纽约大学、普林斯顿大学等 8 家机构的研究者提出了 <strong>LiveCodeBench Pro</strong>，这是一个极具挑战性的竞技编程基准测试。</p>\n  <p>值得一提的是，这项研究有多位参加过国际算法竞赛。例如，作者之一、纽约大学本科生 Zihan Zheng 曾代表学校参加 ICPC 世界总决赛。</p>\n  <p>LiveCodeBench Pro 收录了 584 道截至 2025 年 4 月 25 日的高质量题目，这些题目均来自 Codeforces 、ICPC 系列赛和 IOI 系列赛等顶级赛事。并且这些问题会不断更新以降低可能的数据污染。</p>\n  <p>此外，所有题目均由奥赛奖牌选手进行算法类别标注，并对模型生成的失败提交逐行分析。&nbsp;</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/92277442-bd8f-4162-cb2a-fc8863251200/public\" alt=\"image.png\" data-ratio=\"0.5675925925925925\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490688\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/18543d98-ea7d-4861-bbad-61f2cdfd667e/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <ul>\n   <li>\n    <p>论文标题：LiveCodeBench Pro: How Do Olympiad Medalists Judge LLMs in Competitive Programming?&nbsp;</p>\n   </li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2506.11928</p>\n   </li>\n   <li>\n    <p>项目主页：https://livecodebenchpro.com/</p>\n   </li>\n   <li>\n    <p>GitHub：https://github.com/GavinZhengOI/LiveCodeBench-Pro</p>\n   </li>\n  </ul>\n  <p>本文在 LiveCodeBench Pro 上评估了一系列前沿大模型，包括 Gemini 2.5 Pro、o4-mini-high 和 DeepSeek R1 等。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0b938ad0-b5e4-43fa-4f13-fd9ea850fd00/public\" alt=\"image.png\" data-ratio=\"0.5333333333333333\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490689\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/ab7e4651-350c-4588-8512-1829a6524784/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>基于这套数据和评测框架，本文发现当前前沿模型依然存在显著不足：在没有外部工具支持的情况下，表现最好的模型在中等难度题上的 pass@1 仅为 53%，在高难度题上则完全无法通过（0%），而这些正是人类专家仍能稳定发挥的领域。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9a4bec83-e2bb-495e-6b80-20f363ad0100/public\" alt=\"image.png\" data-ratio=\"0.4981481481481482\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490690\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/9238b9bd-00aa-4c05-8c82-7299d18cb1d3/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; LiveCodeBench Pro 排行榜</sup></p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d9f613ad-67c7-48ee-ce12-3fa2126fd100/public\" alt=\"image.png\" data-ratio=\"0.8101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490691\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/203ff08f-ed95-477d-9388-28dcf0b947c7/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>此外，本文还发现，LLMs 在以实现（implementation-heavy）为主的问题上表现良好，但在处理复杂的算法推理和边界情况分析时表现欠佳，甚至常常生成自信而错误的解释。模型的高分更多是依赖于辅助工具的加持，而非真正的推理能力。</p>\n  <p>LiveCodeBench Pro 的出现揭示了当前 LLM 与人类大师级水平之间仍存在显著差距。</p>\n  <p><strong>分析与讨论</strong></p>\n  <p><strong>在不同算法范式上的表现</strong></p>\n  <p><strong>发现 1.</strong> 大语言模型在知识密集型和逻辑密集型问题上表现更佳，而在观察密集型问题或分类讨论（case work）上表现较差。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8090fde9-d684-4f52-03df-f288fd011b00/public\" alt=\"image.png\" data-ratio=\"0.412962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490692\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/12e1c6e7-90dc-4ee2-aa27-4f900115101e/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>文中展示了 6 个模型在各类编程问题中的表现。研究发现，人类在不同问题标签上的表现更为一致，而模型的评分则因标签不同而显示出更大的差异。主要发现总结如下：&nbsp;</p>\n  <p><strong>知识密集型问题是大语言模型的舒适区。</strong> 带有如线段树、图论、树和数据结构等标签的问题，在大多数模型上都表现出很高的性能。这些问题通常可以通过拼接众所周知的模板（例如，树状数组、迪杰斯特拉算法、欧拉路径）来解决。这正是大语言模型的优势所在，因为所需的模式会以字面形式出现在其训练数据中，并且生成语法正确的模板对于大语言模型来说比对人类容易得多。&nbsp;</p>\n  <p><strong>逻辑密集型问题也取得了同样好的结果。</strong> 大语言模型在逻辑密集型类别中也表现出色，例如组合数学、数学、动态规划和二分搜索。这些类别需要更有模式的思维方式（例如，在组合数学中应用组合恒等式，在动态规划中构建状态空间并推导转移函数），并且可以从记忆化的脚手架代码中受益。&nbsp;</p>\n  <p><strong>在观察密集型问题上表现不佳。 </strong>对于博弈论、特定问题特定分析（ad-hoc）、贪心算法和构造性问题，大多数模型的评分骤降至 1500 以下，明显低于其在知识密集型和逻辑密集型类别中的表现。解决这些问题通常取决于发现新颖的见解，而这是无法仅靠记忆化的代码片段来获得的。&nbsp;</p>\n  <p><strong>大语言模型在分类讨论上遇到困难。</strong> 有趣的是，所有模型都在分类讨论上表现不佳。除了 o4-mini-high 之外，每个模型的评分都低于 1500 分，即便是 o4-mini-high，其表现在此类别中也远逊于其他问题类别。人工检查显示，无法识别和处理边界情况是所有模型的一个突出失败模式。&nbsp;</p>\n  <p><strong>交互式问题暴露了模型的显著弱点。</strong> 在交互式问题上，o4-mini-high 的评分骤降至 1500 左右，其他模型也表现挣扎。论文附录中讨论了这种糟糕表现背后的可能原因，并指出了 o3-mini-high 在解决交互式问题时出现的异常行为。&nbsp;</p>\n  <p><strong>失败原因诊断及与人类的比较</strong></p>\n  <p><strong>发现 2.</strong> o3-mini 在算法逻辑错误和错误观察方面比人类多得多，但在实现逻辑错误方面则少得多。</p>\n  <p>研究人员专门使用可读性最佳的模型 o3-mini 进行标注和深入分析，并在图 3 的树状图中展示了结果。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cba93958-f60d-4e77-8c2d-7e6ce11d6400/public\" alt=\"image.png\" data-ratio=\"0.5444444444444444\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490693\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/f2980905-84cb-4894-93f1-f62043c087ff/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>概念性错误是模型失败的主要原因。</strong>「思路错误」分支内最大的红色区块显示，在 125 个标注问题中，o3-mini 比人类参赛者多犯了 34 个算法逻辑错误。这些是真正的概念性失误，而非表面的程序错误。&nbsp;</p>\n  <p><strong>实现是模型的强项。</strong> 与底层编码相关的指标通常对 o3-mini 有利。例如，在 125 个标注问题中，o3-mini 比人类少犯了 25 个实现逻辑错误。值得注意的是，所有观察到的初始化错误和输入输出格式错误都出现在人类提交的代码中。评测结果细分也证实了这一点：o3-mini 几乎没有出现「运行时错误」，突显了其在实现层面相对不易出错。&nbsp;</p>\n  <p><strong>一个显著的例外 —— 空闲时间超限。</strong>「评测结果」下的一个深红色矩形显示「空闲时间超限」的判罚激增。这源于 o3-mini 在交互式问题上的奇特行为，其大多数提交都被判为「空闲时间超限」。</p>\n  <p><strong>在示例输入上失败。</strong> 树状图突出显示，在「示例失败」类别中，o3-mini 的实例数多出了 45 个，这些情况下解决方案能够编译，但在问题的示例输入上就已经失败。与人类不同，o3-mini 无法在提交前在本地编译或运行示例输入。拥有终端和工具调用能力（例如 o3 和 o4-mini-high）的模型，预计会少犯很多这类容易发现的错误。&nbsp;</p>\n  <p>总而言之，该分析表明，大语言模型的代码在语法上通常更可靠，但在构建正确算法或从问题中提取正确观察所需的高层次推理方面存在困难。虽然正式标注仅涵盖了 o3-mini 的提交，但初步的人工检查表明，大多数现有的大语言模型都存在相同的错误模式。&nbsp;</p>\n  <p><strong>多次尝试（Pass@k）对模型性能的影响</strong></p>\n  <p><strong>发现 3. </strong>增加尝试次数（pass@k）能显著提升模型性能，但在高难度问题上仍然会失败。</p>\n  <p>OpenAI 报告称，具备终端访问权限和 pass@k 的 o4-mini 在 Codeforces 上的 Elo 评分为 2719，这与对 o4-mini-high 的评估（无终端访问权限，pass@1）所获得的 2116 分形成对比。这种差异促使研究人员去研究终端访问和工具调用的性能影响，以及允许多次尝试（pass@k）的效果。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/791ceb71-5af2-4b2a-5127-97f018a7b300/public\" alt=\"image.png\" data-ratio=\"0.29907407407407405\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490694\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/0ebd485d-e0bf-4501-a777-428edde2e5b9/640.png\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>如图 4 所示，随着 k 值的增加，模型的评分显著提高。例如，o4-mini-medium 的评分从 pass@1 时的 1793 分上升，并在 k 增加到 10 时收敛至 2334 分。o4-mini-low 和 o4-mini-high 也观察到类似的上升趋势。虽然多次尝试带来的这些增益是显著的，但收敛后的评分仍然比报告的 2719 分低了大约 400 分。因此，可以推测，剩余的差距主要归因于工具调用和终端访问带来的好处。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ce8166e1-1dfb-4aba-36ef-f1b235202800/public\" alt=\"image.png\" data-ratio=\"0.40185185185185185\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490695\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/db6c57d3-cd33-4829-a8c4-9502c077dd76/640.png\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>如图 5 所示，可以观察到在改进最大的五个类别中，有三个 —— 博弈论、贪心算法和分类讨论 —— 属于观察密集型问题，通常可以通过假设结论来解决。更高频率地进行有根据的猜测，会大大增加正确解决这些问题的概率。&nbsp;</p>\n  <p><strong>推理模型与其非推理对应模型的比较</strong></p>\n  <p><strong>发现 4:</strong> 推理能力在组合数学中带来最大提升，在知识密集型类别中提升较大，而在观察密集型类别中提升相对较小。</p>\n  <p>研究人员考察了在大语言模型中启用推理能力对每个问题标签的影响。具体来说，他们直接比较推理模型及其非推理对应模型，以便控制模型架构、训练数据和其他外部因素的变化，从而分离出推理的真正效果。</p>\n  <p>这种分离对于展示额外的思维链或测试时扩展方法对模型在各问题标签上的解决问题能力的真实影响至关重要。研究特别选择比较 DeepSeek V3 与 R1，以及 Claude 3.7 Sonnet 的非思考（Non-thinking）与思考（Thinking）版本，如图 6 所示，这是两款主流前沿模型，均有非推理版本和推理对应版本。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3bf139a8-e461-4efe-2f2e-a8d928bce100/public\" alt=\"image.png\" data-ratio=\"0.40370370370370373\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503490696\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/aa93799d-519d-4569-8b9a-40649ef9e349/640.png\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>主要发现总结如下：</p>\n  <p><strong>在组合数学中提升最大</strong>：两个模型都在组合数学中显示出最大提升，其中 DeepSeek-R1 的评分比 V3 高出近 1400 分。</p>\n  <p><strong>在知识密集型类别中提升较大</strong>：对于数据结构和线段树等知识密集型问题，启用推理也带来了较大提升（例如，在 DeepSeek 上，线段树问题的评分提升了约 700 分；在 Claude 上，数据结构问题的评分提升了约 500 分）。这是符合预期的，因为这些类别中的问题通常涉及结构化思维。</p>\n  <p><strong>在观察密集型类别中提升有限</strong>：有趣的是，对于博弈论、贪心算法、特定问题特定分析和构造性问题 —— 这些通常需要大量观察且大语言模型经常遇到困难的领域，即使启用推理也只带来微乎其微的提升（例如，对于 DeepSeek，在博弈论上的提升几乎是最低的；而对于 Claude，则是负提升）。这就提出了一个问题：当前的思维链方法对于这些类型的问题是否存在固有的局限性？或者是否存在一个涌现阈值 —— 即推理能力发展到某个点后，最终可能会在这些领域解锁显著的性能增益。</p>\n </body>\n</html>",
+  "aiSummary": "谢赛宁团队新基准 LiveCodeBench Pro 揭示当前 LLM 在竞技编程复杂推理任务上与人类差距显著。",
+  "oneSentenceSummary": "谢赛宁团队新基准 LiveCodeBench Pro 揭示当前 LLM 在竞技编程复杂推理任务上与人类差距显著。",
+  "summary": "本文介绍了纽约大学、普林斯顿大学等机构提出的 LiveCodeBench Pro，这是一个针对竞技编程领域 LLM 能力的新基准测试。该基准包含顶级赛事高质量题目，由奥赛选手标注和分析。评估发现，在无外部工具下，前沿模型在中等难度题上通过率低，高难度题上几乎为零。LLMs 擅长知识/逻辑密集型和实现类问题，但在观察密集型、分类讨论和交互式问题上表现差。模型失败主因是算法概念错误，而非实现。Pass@k 能提升性能，但工具调用是高分的关键。推理能力有助于组合数学等领域，但在观察密集型问题提升有限。基准显示当前 LLM 远未达到人类大师水平。",
+  "mainPoints": [
+    {
+      "point": "LiveCodeBench Pro 新基准揭示 LLM 在竞技编程中的真实能力差距",
+      "explanation": "相比传统基准，LiveCodeBench Pro 采用高质量、不断更新的题目，并进行专家分析，更准确反映模型在复杂、动态环境下的推理和解题能力。"
+    },
+    {
+      "point": "无工具支持下，顶级 LLM 在高难度竞技编程问题上表现极差",
+      "explanation": "实验数据显示，即使是 Gemini 2.5 Pro 等模型，在没有外部工具辅助时，面对高难度竞技编程题几乎完全无法通过，远低于人类专家水平。"
+    },
+    {
+      "point": "LLMs 在不同类型编程问题上的表现存在显著差异",
+      "explanation": "模型擅长需要知识模板或结构化逻辑的问题，但难以处理依赖新颖观察、复杂边界情况或分类讨论的问题，暴露了推理能力的局限性。"
+    },
+    {
+      "point": "模型失败主要源于概念性算法错误，而非低级实现错误",
+      "explanation": "人工分析显示，模型代码语法通常正确，但在构建正确的算法思路和进行高层次推理方面存在困难，这是与人类表现差异的关键点。"
+    },
+    {
+      "point": "外部工具（如终端访问）对 LLM 竞技编程高分至关重要",
+      "explanation": "虽然增加尝试次数(pass@k)能提升性能，但模型的高 Elo 评分更依赖于调用工具进行编译、测试等辅助操作，而非纯粹的内部推理能力。"
+    }
+  ],
+  "keyQuotes": [
+    "当前 LLM 与人类大师级水平之间仍存在显著差距。",
+    "LiveCodeBench Pro，这是一个极具挑战性的竞技编程基准测试。",
+    "在没有外部工具支持的情况下，表现最好的模型在中等难度题上的 pass@1 仅为 53%，在高难度题上则完全无法通过（0%）。",
+    "模型的高分更多是依赖于辅助工具的加持，而非真正的推理能力。",
+    "概念性错误是模型失败的主要原因。",
+    "大语言模型的代码在语法上通常更可靠，但在构建正确算法或从问题中提取正确观察所需的高层次推理方面存在困难。"
+  ],
+  "tags": [
+    "竞技编程",
+    "LLM评测",
+    "基准测试",
+    "大语言模型",
+    "代码生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 89,
+  "wordCount": 3508,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750241663000,
+  "publishDateStr": "2025-06-18",
+  "publishDateTimeStr": "2025-06-18 10:14:23"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a253241d",
+  "title": "析言 XiYan-SQL 智能体，登顶 BIRD-CRITIC 全球榜单！",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499004&idx=1&sn=62f4fb7fd7aa263eaa4470e26509e988",
+  "date": "2025-12-09 05:40:27",
+  "author": "通义大模型",
+  "siteName": "通义大模型",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"background-color: inherit; font-size: 1rem;\">📖近日，飞天实验室自研数据分析智能体 “析言 XiYan-SQL” 在全球权威SQL诊断评测基准 BIRD-CRITIC（又名 SWE-SQL） 的所有开放榜单中位居第一，超越多家国内外顶尖团队，再次刷新SQL诊断与修复能力的行业纪录。</span></p>\n  <p>❓ BIRD-CRITIC基准 （亦称SWE-SQL），由学界与Google Cloud合作推出，为了回答一个核心问题：“大语言模型能否解决真实数据库应用中的用户问题？”。它把企业里常见的数据库报错、性能问题、查询需求整理成题目，覆盖 MySQL、PostgreSQL、SQL Server、Oracle 等主流数据库系统，既有简单查询，也有插入、更新、删除等复杂操作，还包含大量模型从未见过的新场景，整体难度远高于传统的 “自然语言生成 SQL” 测试。</p>\n  <p>✍️在这套“真实难题”上，析言XiYan-SQL在 BIRD-CRITIC-1.0-Open、BIRD-CRITIC-PG、BIRD-CRITIC-Flash 三个重要榜单上全部斩获第一，在跨方言鲁棒性、复杂 SQL 处理能力、真实问题修复率和分布外泛化等维度获得权威验证。</p>\n  <p>技术上，析言 XiYan-SQL 通过 相关模式筛选（Schema Filter）、多生成器集成（Multi-Generator Ensemble）、候选重组与最优选择（Selection with Candidate Reorganization） 等创新，使模型既能生成高质量 SQL，又兼顾可执行性与可维护性，能够在存在脏数据、异构模式和跨方言差异的真实系统中，给出高可用的诊断与修复方案。</p>\n  <p>👏目前，XiYan-SQL相关模型与核心组件已于 GitHub、ModelScope和Hugging Face 社区开源，欢迎开发者前往体验与贡献。</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=1489e2d7&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPkrSJO7NVGjUhxhB1Zo3Zv81u6d9Hm5j4Fe506cGXxN4ffFUHO82f2TOqdgyAE63ZUJc0nibfgia3Q%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=862cd569&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPkrSJO7NVGjUhxhB1Zo3Zv4A9OIBJRx8c09I6ibamznBtZe7YEHKeGMiaPDG6icu94MumRbBNo5gjSQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=e53e85a6&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPkrSJO7NVGjUhxhB1Zo3Zvib0GzmREqfxcpdrAfghHbEjy6DycWcreOU6SqJ3MZtGCk4iaQm2Pkibkg%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=1ba2b63e&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPkrSJO7NVGjUhxhB1Zo3Zv3I1SzO73aSpqwCXOWUMsuic0mO3hMsKhNPAa7viaALKgIncLrIAEI1mw%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=f59da6fb&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkfTykfMJicWPkrSJO7NVGjUhxhB1Zo3Zvg54hKnYWV677OKVEnZoib467P9GWByVyWmaEZsA5mMcgibibVArUerIXg%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "通义大模型自研的“析言 XiYan-SQL”智能体在 BIRD-CRITIC 全球测评基准中取得 SQL 诊断与修复能力的全球第一，并已开源。",
+  "oneSentenceSummary": "通义大模型自研的“析言 XiYan-SQL”智能体在 BIRD-CRITIC 全球测评基准中取得 SQL 诊断与修复能力的全球第一，并已开源。",
+  "summary": "文章介绍了通义大模型旗下的飞天实验室自主研发的数据分析智能体“析言 XiYan-SQL”在权威 SQL 诊断评测基准 BIRD-CRITIC（SWE-SQL）的多个开放榜单中位居全球第一的成就。BIRD-CRITIC 基准旨在评估大语言模型解决真实数据库应用问题的能力，覆盖多种主流数据库系统和复杂操作。XiYan-SQL 通过模式筛选、多生成器集成、候选重组与最优选择等创新技术，在 SQL 生成、可执行性和可维护性方面表现出色，能够有效处理脏数据、异构模式和跨方言差异。该智能体的核心模型与组件已在 GitHub、ModelScope 和 Hugging Face 社区开源，鼓励开发者参与体验与贡献。",
+  "mainPoints": [
+    {
+      "point": "“析言 XiYan-SQL”智能体在 BIRD-CRITIC 全球测评基准中斩获第一。",
+      "explanation": "这表明其在真实数据库应用中的 SQL 诊断与修复能力达到全球领先水平，超越众多顶尖团队。"
+    },
+    {
+      "point": "BIRD-CRITIC 基准模拟企业数据库实际问题，难度远超传统 SQL 生成测试。",
+      "explanation": "该基准关注模型能否解决真实世界中的数据库报错、性能问题和查询需求，是衡量 LLM 解决实际数据库应用能力的重要指标。"
+    },
+    {
+      "point": "“析言 XiYan-SQL”采用多项创新技术实现高性能和高可用性。",
+      "explanation": "通过相关模式筛选、多生成器集成等技术，模型能生成高质量且可执行、可维护的 SQL，适应真实复杂数据环境。"
+    },
+    {
+      "point": "“析言 XiYan-SQL”核心模型与组件已开源。",
+      "explanation": "开源进一步促进了技术交流和社区贡献，让更多开发者可以体验和应用这一领先的 SQL 智能体技术。"
+    }
+  ],
+  "keyQuotes": [
+    "飞天实验室自研数据分析智能体 \"析言 XiYan-SQL\" 在全球权威 SQL 诊断评测基准 BIRD-CRITIC（又名 SWE-SQL） 的所有开放榜单中位居第一，超越多家国内外顶尖团队，再次刷新 SQL 诊断与修复能力的行业纪录。",
+    "BIRD-CRITIC 基准 （亦称 SWE-SQL），由学界与 Google Cloud 合作推出，为了回答一个核心问题：\"大语言模型能否解决真实数据库应用中的用户问题？\"。",
+    "技术上，析言 XiYan-SQL 通过 相关模式筛选（Schema Filter）、多生成器集成（Multi-Generator Ensemble）、候选重组与最优选择（Selection with Candidate Reorganization） 等创新，使模型既能生成高质量 SQL，又兼顾可执行性与可维护性。",
+    "目前，XiYan-SQL 相关模型与核心组件已于 GitHub、ModelScope 和 Hugging Face 社区开源，欢迎开发者前往体验与贡献。"
+  ],
+  "tags": [
+    "SQL智能体",
+    "大语言模型",
+    "BIRD-CRITIC",
+    "AI模型评测",
+    "数据库"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 585,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_2ce88a",
+  "sourceName": "通义大模型",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765258827000,
+  "publishDateStr": "2025-12-09",
+  "publishDateTimeStr": "2025-12-09 05:40:27"
+}

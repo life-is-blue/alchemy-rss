@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ad6ae554",
+  "title": "谷歌发布新工具和库，赋能 AI 眼镜应用开发",
+  "url": "https://www.infoq.com/news/2025/12/android-glasses-ar-sdk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-15 11:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>With the release of the <a href=\"https://android-developers.googleblog.com/2025/12/build-for-ai-glasses-with-android-xr.html\">Android XR SDK Developer Preview 3</a>, Google has introduced two new libraries to help developers create AI Glasses experiences, Jetpack Projected and Jetpack Compose Glimmer. ARCore for Jetpack XR has also been expanded to work with AI Glasses, adding motion tracking and geospatial capabilities.</p>\n   <p>The new libraries introduced with Android XR SDK Developer Preview 3 allow developers to extend existing mobile apps to interact with AI Glasses by leveraging their built-in speakers, camera, and microphone, as well as presenting information through the glasses' display, where available.</p>\n   <blockquote>\n    <p>There are many scenarios where your app might want to use AI glasses hardware. For example, a video conferencing app could add a UI control that allows the user to switch their video stream from the phone's camera to the AI glasses' camera, offering a first-person point of view.</p>\n   </blockquote>\n   <p>The first library, Jetpack Projected, enables a host device, such as an Android phone, to <em>project</em> an app's XR experience to AI Glasses using audio and/or video. The library allows apps to check whether the target device has a display and wait for it to become available for use. Before an app can access device hardware, it must request permission at runtime in accordance with the standard <a href=\"https://developer.android.com/guide/topics/permissions/overview\">Android permission model</a>.</p>\n   <p>You can access AI Glasses hardware from both an AI Glasses activity and a standard app, provided you get a <a href=\"https://developer.android.com/develop/xr/jetpack-xr-sdk/access-hardware-projected-context#phone-activity-service\">valid <em>projected context</em></a>. Audio support is straightforward, as the AI Glasses audio device behaves as a standard Bluetooth audio device.</p>\n   <p><a href=\"https://developer.android.com/develop/xr/jetpack-xr-sdk/access-hardware-projected-context#capture-image\">Capturing a photo or video</a> with the glasses' camera is a bit more complex, since it requires instantiating several classes to check hardware availability, setting it up, and binding the activity lifecycle to the camera so it opens and closes with the activity state.</p>\n   <p>Jetpack Compose Glimmer, on the other hand, is a set of UI components and a visual language to create augmented experiences on AI glasses provided with a display. The new visual languages uses optical see-through to blend visuals with the environment, focusing on clarity, legibility, and minimal distraction. Supported <a href=\"https://developer.android.com/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/whats-included#components\">components</a> include text, icons, title chips, cards, list, and buttons. All components are built on the underlying concept of a <a href=\"https://developer.android.com/reference/kotlin/androidx/xr/glimmer/package-summary#(androidx.compose.ui.Modifier).surface(kotlin.Boolean,androidx.compose.ui.graphics.Shape,androidx.compose.ui.graphics.Color,androidx.compose.ui.graphics.Color,androidx.xr.glimmer.SurfaceDepth,androidx.compose.foundation.BorderStroke,androidx.compose.foundation.interaction.MutableInteractionSource)\"><code>surface</code></a>, which developers can access to create non-standard components.</p>\n   <p><img alt=\"\" style=\"width: 630px; height: 354px;\" data-src=\"https://www.infoq.com/news/2025/12/android-glasses-ar-sdk/news/2025/12/android-glasses-ar-sdk/en/resources/1navigation-1765795490702.gif\" src=\"https://res.infoq.com/news/2025/12/android-glasses-ar-sdk/en/resources/1navigation-1765795490702.gif\" rel=\"share\"></p>\n   <p>Glimmer components can be customized using modifiers to adjust layout, appearance, and behavior and can be stacked along the z-axis to provide a sense of depth through the use of shadows. Google also introduced an AI Glasses emulator in Android Studio for UI preview and to simulate user interactions, including touchpad and voice input.</p>\n   <p>As a final note on the latest Android XR SDK version, Google has expanded <a href=\"https://developer.android.com/develop/xr/jetpack-xr-sdk/arcore\">ARCore for Jetpack XR</a>, a set of APIs to create augmented experiences that include the possibility of retrieving planar data, anchoring content to a fixed location in space, and more. The latest version adds support for motion tracking, so that glasses responds to user movements, and geospatial pose, allowing content to be anchored to locations covered by Google Street View.</p>\n   <p>Android XR SDK Preview 3 is available in Android Studio Canary after upgrading to the lastest emulator version (36.4.3 Canary or later).</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Unveils New Tools and Libraries for Building AI Glasses Apps\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/android-glasses-ar-sdk/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765796400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌推出全新 Jetpack 库（Projected 和 Compose Glimmer），并扩展 Android XR SDK 开发者预览版 3 中的 ARCore 功能，助力开发者构建具备增强现实能力的 AI 眼镜应用。",
+  "oneSentenceSummary": "谷歌推出全新 Jetpack 库（Projected 和 Compose Glimmer），并扩展 Android XR SDK 开发者预览版 3 中的 ARCore 功能，助力开发者构建具备增强现实能力的 AI 眼镜应用。",
+  "summary": "谷歌发布了 Android XR SDK 开发者预览版 3，为 AI 眼镜应用的开发带来了重大进展。此次更新主要增加了两个 Jetpack 库：Jetpack Projected 允许移动应用将其扩展现实（XR）体验无缝延伸至 AI 眼镜，从而能够调用眼镜的摄像头、麦克风和显示器；Jetpack Compose Glimmer 则是一个 UI 工具包，它提供了一套专为 AI 眼镜显示器上的增强体验定制的视觉语言，旨在确保显示清晰、最大程度减少干扰。此外，用于 Jetpack XR 的 ARCore 得到了显著增强，集成了运动追踪和地理空间功能，使得 AI 眼镜能够响应用户动作，并通过谷歌街景数据将数字内容锚定到现实世界中的特定位置。这些工具，结合 Android Studio 中的 AI 眼镜模拟器，旨在简化为新兴 AI 眼镜平台开发沉浸式和交互式应用的过程。",
+  "mainPoints": [
+    {
+      "point": "Jetpack Projected 允许移动应用将其功能无缝扩展至 AI 眼镜硬件。",
+      "explanation": "此库使得现有的 Android 应用能够充分利用 AI 眼镜的摄像头、麦克风、扬声器和显示屏，将移动体验转化为交互式的扩展现实应用。例如，视频会议应用可切换至第一人称视角。"
+    },
+    {
+      "point": "Jetpack Compose Glimmer 提供了一个专为 AI 眼镜显示器上的增强体验而优化的 UI 工具包。",
+      "explanation": "Glimmer 提供了一套包含文本、图标和卡片等组件的视觉语言，专为光学透视显示器设计。它确保了丰富增强现实界面的清晰度、可读性，并最大程度减少视觉干扰。"
+    },
+    {
+      "point": "用于 Jetpack XR 的 ARCore 扩展了运动追踪和地理空间功能，以实现沉浸式增强现实应用。",
+      "explanation": "这些增强功能使 AI 眼镜能够追踪用户移动，并利用谷歌街景数据将虚拟内容精确锚定到现实世界的特定位置，从而实现更复杂、更具位置感知能力的增强现实体验。"
+    }
+  ],
+  "keyQuotes": [
+    "在许多场景中，您的应用可能需要利用 AI 眼镜的硬件功能。例如，一个视频会议应用可以添加一个 UI 控件，允许用户将视频流从手机摄像头切换到 AI 眼镜摄像头，从而提供第一人称视角。",
+    "新的视觉语言采用光学透视技术，将视觉元素与实际环境融合，专注于提升清晰度、可读性，并最大程度地减少干扰。",
+    "最新版本增加了对运动追踪和地理空间姿态的支持。这意味着眼镜能够响应用户移动，并允许内容锚定到由谷歌街景覆盖的真实地理位置。"
+  ],
+  "tags": [
+    "Android 开发",
+    "AI 眼镜",
+    "扩展现实",
+    "Jetpack",
+    "ARCore"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 522,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765796400000,
+  "publishDateStr": "2025-12-15",
+  "publishDateTimeStr": "2025-12-15 11:00:00"
+}

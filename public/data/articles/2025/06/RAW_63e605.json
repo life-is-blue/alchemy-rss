@@ -1,0 +1,58 @@
+{
+  "id": "RAW_63e605",
+  "title": "Google Cloud Run 现在提供用于 AI 和批量处理的无服务器 GPU",
+  "url": "https://www.infoq.com/news/2025/06/google-cloud-run-nvidia-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-09 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud has announced the general availability of NVIDIA GPU support for Cloud Run, its serverless runtime. With this enhancement, Google Cloud aims to provide a powerful, yet remarkably cost-efficient, environment for a wide range of GPU-accelerated use cases, particularly in AI inference and batch processing.</p>\n   <p>In a company <a href=\"https://cloud.google.com/blog/products/serverless/cloud-run-gpus-are-now-generally-available\">blog post</a>, Google highlights that developers favor Cloud Run for its simplicity, flexibility, and scalability. With the addition of GPU support, it now extends its core benefits to GPU resources:</p>\n   <ul>\n    <li>Pay-per-second billing: Users are now charged only for the GPU resources they consume, down to the second – thus minimizing waste.</li>\n    <li>Scale to zero: Cloud Run automatically scales GPU instances down to zero when inactive, eliminating idle costs - particularly beneficial for sporadic or unpredictable workloads.</li>\n    <li>Rapid startup and scaling: Instances with GPUs and drivers can start up in under 5 seconds, enabling applications to respond to demand very quickly.</li>\n    <li>Full streaming support: Built-in support for HTTP and WebSocket streaming allows for interactive applications, such as real-time LLM responses.</li>\n   </ul>\n   <p>Dave Salvator, director of accelerated computing products at NVIDIA, commented:</p>\n   <blockquote>\n    <p>Serverless GPU acceleration represents a major advancement in making cutting-edge AI computing more accessible. With seamless access to NVIDIA L4 GPUs, developers can now bring AI applications to production faster and more cost-effectively than ever before.</p>\n   </blockquote>\n   <p>A significant barrier to entry has been removed, as NVIDIA L4 GPU support on Cloud Run is now available to all users with no quota request required. Developers can enable GPU support via a simple command-line flag (--gpu 1) or by checking a box in the Google Cloud console.</p>\n   <p>Cloud Run with GPU support is production-ready, covered by Cloud Run's Service Level Agreement (SLA) for reliability and uptime. It offers zonal redundancy by default for resilience, with an option for lower pricing for best-effort failover in case of a zonal outage by turning off zonal redundancy.</p>\n   <p>The general availability of GPU support on Cloud Run has also sparked a discussion within the developer community regarding its competitive implications, particularly in relation to other major cloud providers. Rubén del Campo, a principal software engineer at ZenRows, &nbsp;<a href=\"https://www.linkedin.com/posts/rdelcampog_cloud-run-gpus-are-now-generally-available-activity-7335976045126299648-rgjv\">highlighted</a> Google's move as something \"AWS should have built years ago: serverless GPU compute that actually works.\"</p>\n   <p>His perspective highlights a perceived \"massive gap in AWS Lambda's capabilities,\" specifically citing Lambda's 15-minute timeout and CPU-only compute as prohibitive for modern AI workloads, such as Stable Diffusion inference, model fine-tuning, or real-time video analysis. \"Try running Stable Diffusion inference, fine-tuning a model, or processing video with AI in Lambda. You can't,\" the user commented, emphasizing that Cloud Run GPUs make such tasks \"trivial with serverless GPUs that scale to zero.\"</p>\n   <p>While Cloud Run GPUs offer compelling features, some users on a Hacker News <a href=\"https://news.ycombinator.com/item?id=44178468\">thread</a> have raised concerns regarding the lack of hard billing limits, which could lead to unexpected costs. While Cloud Run allows setting maximum instance limits, it doesn't provide an actual dollar-based spending cap.</p>\n   <p>In addition, comparisons on the same Hacker News <a href=\"https://news.ycombinator.com/item?id=44178468\">thread</a> also indicate that other providers like Runpod.io may offer more competitive pricing for similar GPU instances. For example, some users have pointed out that Runpod's hourly rates for L4, A100, and H100 GPUs can be significantly lower than Google's, even when considering Google's per-second billing.</p>\n   <p>Beyond real-time inference, Google has also announced the availability of GPUs on <a href=\"https://cloud.google.com/run/docs/overview/what-is-cloud-run#cloud-run-jobs\">Cloud Run jobs</a> (currently in private preview), unlocking new use cases for batch processing and asynchronous tasks. These features are supported globally, with Cloud Run GPUs available in five Google Cloud regions: us-central1 (Iowa, USA), europe-west1 (Belgium), europe-west4 (Netherlands), asia-southeast1 (Singapore), and asia-south1 (Mumbai, India). Additional regions are planned.</p>\n   <p>Lastly, the company states that developers can start building with Cloud Run GPUs by leveraging the official <a href=\"https://cloud.google.com/run/docs/configuring/services/gpu\">documentation</a>, <a href=\"https://cloud.google.com/run/docs/tutorials/gpu-gemma-with-ollama\">quickstarts</a>, and <a href=\"https://cloud.google.com/run/docs/configuring/services/gpu-best-practices\">best practices for optimizing model loading</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Cloud Run Now Offers Serverless GPUs for AI and Batch Processing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/google-cloud-run-nvidia-gpu/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1749463200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Cloud Run 全面推出用于 AI 推理和批量处理的无服务器 GPU 支持。",
+  "oneSentenceSummary": "Google Cloud Run 全面推出用于 AI 推理和批量处理的无服务器 GPU 支持。",
+  "summary": "Google Cloud 已为其无服务器平台 Cloud Run 提供了 NVIDIA GPU 支持的全面可用性。此增强功能专为 GPU 加速工作负载设计，主要用于 AI 推理和批量处理。重点强调的关键优势包括按秒计费、自动缩容至零以提高成本效益、快速启动时间（不到 5 秒），以及对实时 LLM 响应等交互式应用的全面流式支持。该服务提供 NVIDIA L4 GPU 支持，无需配额请求，并且已生产就绪，提供 SLA 覆盖和区域冗余选项。在开发者社区中，该服务被认为相对于 AWS Lambda 等平台在现代 AI 工作负载方面具有竞争优势，因为 Lambda 的限制（超时、仅限 CPU）对现代 AI 工作负载构成了限制。然而，用户讨论也提出了对缺少硬计费上限以及与 Runpod.io 等专业提供商相比可能存在的成本差异的担忧。Cloud Run 作业（私有预览）也提供 GPU，扩展了异步任务的能力。",
+  "mainPoints": [
+    {
+      "point": "Cloud Run 现在提供具有按秒计费和自动缩容至零功能的无服务器 GPU。",
+      "explanation": "这使得 GPU 密集型任务能够以成本效益高的方式执行，通过消除空闲成本，这对于零星或不可预测的 AI 和批量工作负载尤其有益。"
+    },
+    {
+      "point": "Cloud Run 上提供 NVIDIA L4 GPU 无需配额请求。",
+      "explanation": "这消除了一个重要的进入门槛，简化了开发者在 Google Cloud 上构建 AI 应用时访问高性能计算的过程。"
+    },
+    {
+      "point": "配备 GPU 的 Cloud Run 解决了现有无服务器计算对于现代 AI 的限制。",
+      "explanation": "与具有超时和仅限 CPU 计算的 AWS Lambda 等产品不同，Cloud Run GPU 使得 Stable Diffusion 或实时视频分析等任务得以在无服务器环境中实现。"
+    },
+    {
+      "point": "该服务已生产就绪，具有 SLA 覆盖并提供区域冗余。",
+      "explanation": "这确保了关键 GPU 加速应用的可靠性和正常运行时间，提供了可配置的弹性（或 容错能力）和成本选项，这对于全面可用性至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "无服务器 GPU 加速代表着一项重大进步，使前沿 AI 计算更易于访问。",
+    "Cloud Run GPU 现已全面可用。这是 AWS 几年前就应该构建的东西：真正可用的无服务器 GPU 计算。",
+    "尝试在 Lambda 中运行 Stable Diffusion 推理、微调模型或使用 AI 处理视频。你做不到。",
+    "虽然 Cloud Run 允许设置最大实例限制，但它不提供实际的基于美元的消费上限。"
+  ],
+  "tags": [
+    "云计算",
+    "无服务器",
+    "无服务器计算",
+    "Google Cloud",
+    "Cloud Run"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 625,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1749427200000,
+  "publishDateStr": "2025-06-09",
+  "publishDateTimeStr": "2025-06-09 00:00:00"
+}

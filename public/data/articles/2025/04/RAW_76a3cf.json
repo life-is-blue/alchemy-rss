@@ -1,0 +1,57 @@
+{
+  "id": "RAW_76a3cf",
+  "title": "优化人工智能工作负载：谷歌云的优化策略",
+  "url": "https://www.infoq.com/news/2025/04/optimize-ai-workload/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-09 00:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud <a href=\"https://cloud.google.com/blog/products/ai-machine-learning/reduce-cost-and-improve-your-ai-workloads/\">has announced </a>a suite of new tools and features designed to help organizations reduce costs and improve efficiency of AI workloads across their cloud infrastructure. The announcement comes as enterprises increasingly seek ways to optimize spending on AI initiatives while maintaining performance and scalability.</p>\n   <p>The new features focus on three key areas: compute resource optimization, specialized hardware acceleration, and intelligent workload scheduling. These improvements aim to address one of the primary challenges enterprises face when deploying AI at scale—balancing innovation with cost management.</p>\n   <p>In the announcement, Google Cloud's VP of AI Products said:</p>\n   <blockquote>\n    <p>Organizations are increasingly looking for ways to optimize their AI costs without sacrificing performance or capability, these new features directly address that need by providing more efficient ways to run machine learning training and inference.</p>\n   </blockquote>\n   <p>Google Cloud's approach begins with strategic platform selection. Organizations now have multiple options ranging from fully-managed services to highly customizable solutions. <a href=\"https://cloud.google.com/vertex-ai?hl=en\">Vertex AI</a> offers a unified, fully managed AI development platform that eliminates infrastructure management concerns, while <a href=\"https://cloud.google.com/run?hl=en\">Cloud Run</a> with GPU support provides a scalable inference service option. For long-running tasks, <a href=\"https://cloud.google.com/batch/docs/get-started\">Cloud Batch</a> combined with Spot Instances can significantly reduce costs. Organizations with existing Kubernetes expertise may benefit from <a href=\"https://cloud.google.com/kubernetes-engine?hl=en\">Google Kubernetes Engine</a> (GKE), while those requiring maximum control can utilize Google Compute Engine.</p>\n   <p>A key recommendation focuses on optimizing container performance. When working with inference containers in environments like GKE or Cloud Run, Google advises keeping containers lightweight by externally storing models using <a href=\"https://cloud.google.com/storage/docs/cloud-storage-fuse/overview\">Cloud Storage with FUSE</a>, <a href=\"https://cloud.google.com/filestore?hl=en\">Filestore</a>, or shared read-only persistent disks. This approach dramatically reduces container startup times and improves scaling efficiency—critical factors in managing both performance and costs.</p>\n   <p>Storage selection emerges as another critical factor in optimization. Google Cloud recommends Filestore for smaller AI workloads, Cloud Storage for object storage at any scale, and Cloud Storage FUSE for mounting storage buckets as a file system. For workloads requiring lower latency, <a href=\"https://cloud.google.com/parallelstore/docs/overview\">Parallelstore</a> provides sub-millisecond access times, while <a href=\"https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/hyperdisk-ml\">Hyperdisk ML </a>delivers high-performance storage specifically engineered for serving tasks.</p>\n   <p>To prevent costly delays in resource acquisition, Google Cloud emphasizes the importance of <a href=\"https://cloud.google.com/blog/products/compute/introducing-dynamic-workload-scheduler\">Dynamic Workload Scheduler </a>and Future Reservations. These tools secure needed cloud resources in advance, guaranteeing availability when required while optimizing the procurement process for popular hardware components.</p>\n   <p>The final strategy addresses deployment efficiency through custom disk images. Rather than repeatedly configuring operating systems, GPU drivers, and AI frameworks from scratch, organizations can create and maintain custom disk images that allow new, fully-configured workers to deploy in seconds rather than hours.</p>\n   <p>AI cost management has become increasingly critical across industries, in response to the growing demand for more efficient and cost-effective AI infrastructure, both AWS and Microsoft Azure have also ramped up their efforts to support enterprise AI workloads. AWS has introduced new cost-aware tools within its <a href=\"https://aws.amazon.com/sagemaker/\">SageMaker platform</a>, including Managed Spot Training and model monitoring capabilities to help users optimize both performance and budget. Similarly, Azure is enhancing its AI offering through <a href=\"https://azure.microsoft.com/en-us/products/machine-learning\">Azure Machine Learning</a> with features like intelligent autoscaling, reserved capacity pricing, and seamless integration with <a href=\"https://azure.microsoft.com/en-us/products/kubernetes-service\">Azure Kubernetes Service </a>(AKS) for better workload orchestration.</p>\n   <p>Like Google Cloud, both AWS and Azure are emphasizing hybrid flexibility, storage optimization, and GPU acceleration to give enterprises more control over how they scale and spend. This convergence signals a competitive push across cloud providers to address the pressing challenge of AI cost management while still empowering innovation at scale.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Optimize AI Workloads: Google Cloud’s Tips and Tricks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/optimize-ai-workload/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1744189200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌云推出了新的工具和功能，旨在优化云基础设施上人工智能工作负载的成本和效率。这些工具和功能还有助于提高资源利用率。",
+  "oneSentenceSummary": "谷歌云推出了新的工具和功能，旨在优化云基础设施上人工智能工作负载的成本和效率。这些工具和功能还有助于提高资源利用率。",
+  "summary": "谷歌云宣布了一套新的工具和功能，旨在帮助企业降低成本并提高其云基础设施上人工智能工作负载的效率。这些新功能侧重于三个关键领域：计算资源优化、专用硬件加速和智能工作负载调度。谷歌云建议采用战略平台选择（例如 Vertex AI ( 谷歌云 AI 平台 )、Cloud Run、Cloud Batch、GKE、Compute Engine 等），优化容器性能（使用通过 FUSE 挂载的谷歌云存储、Filestore 等作为外部存储模型），优化存储选择（Filestore、谷歌云存储、Parallelstore、Hyperdisk ML），使用动态工作负载调度器和提前资源预置，以及使用自定义磁盘镜像来提高部署效率。亚马逊云和微软云也在采取类似的策略，表明云提供商之间正在展开激烈竞争，以应对人工智能成本管理这一紧迫挑战，并同时支持大规模创新。",
+  "mainPoints": [
+    {
+      "point": "人工智能成本管理已成为各行业越来越关键的问题",
+      "explanation": "在各行业中，优化人工智能成本变得至关重要，为后续的优化策略提供了背景和重要性。"
+    },
+    {
+      "point": "战略平台选择对于人工智能成本优化至关重要",
+      "explanation": "根据工作负载需求选择合适的平台，例如 Vertex AI ( 谷歌云 AI 平台 )、Cloud Run 或 Cloud Batch，可以显著降低成本并提高效率。"
+    },
+    {
+      "point": "优化容器性能可以提高扩展效率",
+      "explanation": "通过将模型存储在容器外部，并使用通过 FUSE 挂载的谷歌云存储或 Filestore，可以减少容器启动时间，并提高扩展效率。"
+    },
+    {
+      "point": "动态工作负载调度器和提前资源预置确保资源可用性",
+      "explanation": "这些工具可以提前确保所需的云资源，保证在需要时可用，同时优化硬件组件的采购流程。"
+    }
+  ],
+  "keyQuotes": [
+    "各组织越来越希望找到优化人工智能成本的方法，同时确保性能和能力不受影响。这些新功能通过提供更高效的机器学习训练和推理方式，直接满足了这一需求。",
+    "一个关键建议侧重于优化容器性能。",
+    "人工智能成本管理在各行业中变得越来越关键。"
+  ],
+  "tags": [
+    "人工智能成本优化",
+    "谷歌云",
+    "人工智能工作负载",
+    "Vertex AI",
+    "Cloud Run"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 558,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744156800000,
+  "publishDateStr": "2025-04-09",
+  "publishDateTimeStr": "2025-04-09 00:00:00"
+}

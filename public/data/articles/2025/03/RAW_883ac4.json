@@ -1,0 +1,58 @@
+{
+  "id": "RAW_883ac4",
+  "title": "InstructLab.ai：合成数据微调，降低 LLM 门槛？",
+  "url": "https://www.infoq.com/news/2025/03/llm-finetuning-synthetic-data/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-07 11:11:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"http://instructlab.ai\">InstructLab.ai</a> is the open-source implementation of the large-scale alignment for chatbots(LAB) concept described in <a href=\"https://arxiv.org/abs/2403.01081\">the paper</a>. According to the paper’s abstract, LAB intends to overcome the scalability challenges in the instruction-tuning phase of a large language model (LLM). Its approach leverages a synthetic data-based alignment tuning method for LLMs. Crafted taxonomies allow this approach to deliver the synthesization seeds for training data.</p>\n   <p>The project promises to reduce the complexity and the cost of fine-tuning LLMs by reducing the reliance on human-annotated data or proprietary models. The approach allows users to tweak AI models without prior ML expertise or robust infrastructure. At the core of this approach are crafted taxonomies that will enable it to deliver the synthetization seeds for training data. Using taxonomy-guided synthetic data generation and a multiphase tuning framework enables the assimilation of new knowledge and capabilities into a foundation model while retaining existing knowledge. Thus, it promises to be an effective solution for enhancing LLM capabilities without the drawbacks of catastrophic forgetting.</p>\n   <p>A taxonomy is the tree-like way the data is stored, with each layer being a knowledge node. There are three categories:</p>\n   <ul>\n    <li>Knowledge data - consisting of subject matter expertise like books, technical instructions and manuals</li>\n    <li>Foundational skills - consisting of capabilities for additional knowledge acquisition, like reasoning, math and coding skills</li>\n    <li>Compositional skills - builds on the previous two, relating to jobs or questions requiring knowledge and foundational skills</li>\n   </ul>\n   <p>Knowledge nodes in the taxonomy tree consist of <code><em>qna.yaml</em></code> files similar to those used for skills but with additional elements. To contribute knowledge, users must create a Git repository, such as the one <a href=\"https://github.com/instructlab/instructlab\">hosted on GitHub</a>, containing markdown files detailing their knowledge contributions. The <code><em>qna.yaml</em></code> file includes parameters that draw information from these repositories, facilitating the integration of user-submitted content.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/llm-finetuning-synthetic-data/news/2025/03/llm-finetuning-synthetic-data/en/resources/9image2-1741338824071.png\" style=\"width:100%;height:712px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/llm-finetuning-synthetic-data/en/resources/9image2-1741338824071.png\" rel=\"share\"></p>\n   <p><a href=\"https://arxiv.org/abs/2403.01081\">Image Source</a></p>\n   <p>Instructlab.ai intends to deliver these by leveraging the community's skills and knowledge. The targeted audience is broad, as the input consists of just a few lines of YAML code in the <code><em>qna.yaml</em></code> file and an <em>attribution.txt</em> for citing sources.</p>\n   <p>The training concept can be applied to any chat model, regardless of origin. The InstructLab Granite-7b models are publicly available under an open-source Apache 2.0 license.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/03/llm-finetuning-synthetic-data/news/2025/03/llm-finetuning-synthetic-data/en/resources/9image1-1741338824071.png\" style=\"width: 373px; height: 519px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/llm-finetuning-synthetic-data/en/resources/9image1-1741338824071.png\" rel=\"share\"></p>\n   <p><a href=\"https://github.com/instructlab/instructlab\">Image Source</a></p>\n   <p>InstructLab regularly retrains its models using organised user contributions, improving capabilities through continuous community-driven updates.</p>\n   <p>InfoQ sat with <a href=\"https://www.linkedin.com/in/lesliehawthorn/\">Leslie Hawthorn</a>, director of industry community strategy at Red Hat Open Source Program Office, and <a href=\"https://www.linkedin.com/in/mairinduffy\">Máirín Duffy</a>, InstructLab’s engineering leader, to learn more about the project's impact.</p>\n   <blockquote>\n    <p><strong>Hawthorn</strong>: I am delighted to see the potential for community-driven innovation that InstructLab presents. The possibilities are endless - from fine-tuning existing models for specific domains to creating new ones that tackle complex problems like language understanding or text generation. And who knows? Maybe someone will come up with a game-changing breakthrough that revolutionises the field! I'm excited to participate in this journey and see what the community comes up with.</p>\n   </blockquote>\n   <p>&nbsp;</p>\n   <blockquote>\n    <p><strong>Duffy</strong>: We aim to drive adoption of our tooling and model API standard, making it easier for developers to build upon and contribute to the ecosystem.</p>\n   </blockquote>\n   <p>Although LLMs are accelerators in many industries, not every model is appropriate in every scenario. Adapting general-purpose models to particular cases can be costly and lengthy. InstructLab.ai pledges to democratise model customisation through its community-led process. <a href=\"https://blog.instructlab.ai/2024/12/community-model-build/\">Instructlab.ai published the first model</a> built by its community just before Christmas.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"instructlab.ai Uses Synthetic Data to Reduce Complexity of Fine-Tuning LLMs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/llm-finetuning-synthetic-data/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1741345860000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "InstructLab.ai 通过社区驱动的合成数据微调，旨在降低大型语言模型的微调门槛，实现更灵活的模型定制。",
+  "oneSentenceSummary": "InstructLab.ai 通过社区驱动的合成数据微调，旨在降低大型语言模型的微调门槛，实现更灵活的模型定制。",
+  "summary": "文章介绍了 InstructLab.ai，一个通过开源方式实现大规模聊天机器人对齐（LAB）概念的项目，旨在通过社区驱动和合成数据相结合的创新方法，解决大型语言模型（LLM）指令调优的可扩展性挑战，降低对人工标注数据或专有模型的依赖，从而显著降低大型语言模型微调的复杂性和成本，加速 AI 模型定制的推广。InstructLab.ai 利用精心设计的分类法，为训练数据提供合成种子，并结合多阶段调整框架，将新知识和能力融入到基础模型中，同时保留现有知识。InstructLab 已经发布了第一个由社区构建的模型，展示了其社区驱动的潜力。该项目旨在通过其社区主导的流程，推广模型定制化。",
+  "mainPoints": [
+    {
+      "point": "InstructLab.ai 旨在降低大型语言模型微调的复杂性和成本。",
+      "explanation": "通过减少对人工标注数据和专有模型的依赖，降低了大型语言模型微调的门槛，使得更多开发者可以参与到人工智能模型的定制中。"
+    },
+    {
+      "point": "基于合成数据的方法可以有效提升大型语言模型的性能。",
+      "explanation": "通过精心设计的分类法和多阶段调整框架，InstructLab.ai 能够将新知识和能力融入到基础模型中，同时避免灾难性遗忘。"
+    },
+    {
+      "point": "社区驱动是 InstructLab.ai 的核心优势。",
+      "explanation": "通过社区成员的贡献，InstructLab.ai 可以不断地重新训练模型，提升模型能力，并促进人工智能技术的普及。"
+    },
+    {
+      "point": "InstructLab.ai 利用分类法指导的合成数据生成和多阶段调整框架，实现了新知识的融合和原有知识的保留。",
+      "explanation": "这种方法能够有效地将新的知识和能力融入到基础模型中，同时避免灾难性遗忘，保证了模型性能的稳定性和可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "The project promises to reduce the complexity and the cost of fine-tuning LLMs by reducing the reliance on human-annotated data or proprietary models.",
+    "Using taxonomy-guided synthetic data generation and a multiphase tuning framework enables the assimilation of new knowledge and capabilities into a foundation model while retaining existing knowledge.",
+    "InstructLab regularly retrains its models using organised user contributions， improving capabilities through continuous community-driven updates.",
+    "I am delighted to see the potential for community-driven innovation that InstructLab presents."
+  ],
+  "tags": [
+    "大型语言模型",
+    "模型微调",
+    "合成数据",
+    "InstructLab.ai",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 553,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741345860000,
+  "publishDateStr": "2025-03-07",
+  "publishDateTimeStr": "2025-03-07 11:11:00"
+}

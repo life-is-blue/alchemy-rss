@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ce542e",
+  "title": "姚顺雨提到的「AI 下半场」，产品评估仍被误解 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-02-2",
+  "date": "2025-06-02 14:37:08",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>前段时间，OpenAI 研究员姚顺雨发表了一篇主题为「AI 下半场」的博客。其中提到，「接下来，AI 的重点将从解决问题转向定义问题。在这个新时代，评估的重要性将超过训练。我们需要重新思考如何训练 AI 以及如何衡量进展，这可能需要更接近产品经理的思维方式。」（参见《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650965529&amp;idx=1&amp;sn=eb553785af462d8fdba2793990754823&amp;scene=21#wechat_redirect\" target=\"_blank\">清华学霸、OpenAI 姚顺雨：AI 下半场开战，评估将比训练重要</a>》）</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/87fb5825-eace-4a5d-2126-c50636e4dd00/public\" data-ratio=\"0.9037037037037037\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485660\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/d44e1ee0-5211-4d74-9d41-89e77623bb51/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>由于观点非常有见地，这篇博客吸引了大量从业者围观。</p>\n  <p>有意思的是，亚马逊首席应用科学家 Eugene Yan 最近也发表了一篇博客，专门介绍 AI 产品的评估，可以说是对姚顺雨博客的有力补充。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb758ac9-6a82-4643-48d1-8ca911b2e400/public\" data-ratio=\"1.1796296296296296\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485661\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/b3b49bd4-a152-4bb7-8932-d6c3699ae8dc/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>这篇博客同样得到了诸多好评。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ebf9f36-2635-4eb5-3a98-aae43b21b500/public\" data-ratio=\"1.386111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485662\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/d2cc8499-4511-4759-911f-ded3cb468a71/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/900c7c8a-6fe0-4819-5e96-94012c86d900/public\" data-ratio=\"1.3138888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485663\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/c480f14a-945d-4840-b0dd-bd21c8b5633c/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>以下是博客原文。</p>\n  <p><strong>自动化评估救不了你的产品&nbsp;&nbsp;</strong><strong>你得修复你的流程</strong></p>\n  <p>产品评估这件事，很多人根本没搞懂。总有人以为再加个工具、添个指标，或者让大语言模型当裁判（LLM-as-judge），就能解决问题拯救产品。这根本是在回避核心问题，逃避真正该做的工作。评估并非一劳永逸，也不是什么快速起效的方法 —— 它是运用科学方法的持续实践，是评估驱动开发，是 AI 输出的持续监测。</p>\n  <p>构建产品评估体系，本质上就是在践行科学方法。这才是真正的秘诀。它是一个不断提问、实验和分析的循环。</p>\n  <p>首先从观察开始，也就是「看数据」。我们要审视输入内容、AI 输出结果，以及用户与系统的交互情况。数据会告诉我们系统哪里运转良好，更重要的是，哪里会出问题。发现这些故障模式才是有效改进的起点。</p>\n  <p>接着我们标注数据，优先处理问题输出。这意味着要对成功和失败的样本进行标记，建立平衡且有代表性的数据集。理想情况下，正负样本应该五五开，并覆盖各类输入场景。这个数据集将成为针对性评估的基础，帮我们追踪已发现问题的改进情况。</p>\n  <p>然后，我们提出假设：为什么会出现这个错误？可能是 RAG 检索没返回相关上下文，也可能是模型处理复杂（有时自相矛盾）的指令时力不从心。通过分析检索文档、推理轨迹和错误输出等数据，我们能确定要优先修复的问题以及要验证的假设。</p>\n  <p>紧接着设计实验验证假设。比如重写提示词、更新检索组件或切换不同模型。好的实验要能明确验证假设是否成立，最好还设置基线对照组进行比较。</p>\n  <p>结果测量和错误分析往往是最难的环节。这不同于随意的感觉判断，必须量化实验改动是否真有效果：准确率提升了吗？缺陷减少了吗？新版本在对比测试中表现更优吗？无法量化的改进根本不算改进。</p>\n  <p>实验成功就应用更新，失败就深挖错误原因，修正假设再来一次。就在这个循环中，产品评估成了推动产品进步、减少缺陷、赢得用户信任的数据飞轮。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1268a2cf-0d20-4b4c-01ad-eba08c649b00/public\" data-ratio=\"0.5259259259259259\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485664\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/27ac22b1-b119-49e6-83e3-9853940300a9/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 将科学方法应用于 AI 产品开发。</sup></p>\n  <p>评估驱动的开发（Eval-driven development，EDD）能帮我们打造更好的 AI 产品。这类似于测试驱动的开发 —— 先写测试用例，再实现能通过测试的代码。EDD 秉持相同理念：开发 AI 功能前，先通过产品评估定义成功标准，确保从第一天就有明确目标和可衡量的指标。说个秘密：机器学习团队几十年来都在这么做，我们始终根据验证集和测试集来构建模型系统，只是说法不同而已。</p>\n  <p>在 EDD 中，评估指引开发方向。我们先评估基线（比如简单提示词）获取基准数据。之后每个提示词调整、系统更新和迭代都要评估：简化提示词提升了准确性吗？检索更新增加了相关文档召回率吗？还是反而让效果变差了？</p>\n  <p>EDD 提供即时客观的反馈，让我们看清哪些改进有效。这个「写评估 - 做改动 - 跑评估 - 整合改进」的循环确保了可衡量的进步。我们建立的不是模糊的直觉判断，而是扎根于软件工程实践的反馈闭环。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cc1296a6-4e1c-4327-c130-1ddd20975100/public\" data-ratio=\"0.525\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485665\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/08fd1cad-431e-4933-bf5f-11d081aee871/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 先写评估标准，再构建能通过评估的系统。</sup></p>\n  <p>自动化评估工具（LLM-as-judge）也离不开人工监督。虽然自动化评估能扩大监测范围，但无法弥补人为疏忽。如果我们不主动审查 AI 输出和用户反馈，再多自动评估工具也救不了产品。</p>\n  <p>要评估和监测 AI 产品，通常需要采样输出并标注质量缺陷。有了足够多高质量标注数据，我们就能校准自动评估工具，使其与人类判断一致。这可能涉及测量二元标签的召回率 / 准确率，或通过两两比较决定输出之间的相关性。校准后的评估工具能有效扩展 AI 系统的持续监测能力。</p>\n  <p>但自动评估工具不能取代人工监督。我们仍需要定期采样、标注数据，分析用户反馈。理想情况下，我们应该设计能够通过用户交互获取隐式反馈的产品。不过，显式反馈虽然不那么频繁，偶尔也会有偏见，但也很有价值。</p>\n  <p>另外，自动评估工具虽扩展性强，但也不完美。不过人类标注员同样会犯错。只要持续收集更高质量的标注数据，我们就能更好地校准这些工具。保持「数据采样 - 输出标注 - 工具优化」的反馈循环，需要严格的组织纪律。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/93871069-218c-4408-3a43-8c4c429ddc00/public\" data-ratio=\"0.4046296296296296\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485666\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/74c18f6e-64ee-458e-9765-cbf334e6e63c/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 自动化评估工具本质上是人工标注与反馈流程的放大器。</sup></p>\n  <p>虽然使用 AI 构建产品感觉很神奇，但仍然需要耗费大量精力。如果团队不应用科学的方法，实践评估驱动的开发，并监控系统的输出，那么购买或构建另一个评估工具将无法挽救产品。</p>\n  <p>原文链接：https://eugeneyan.com/writing/eval-process/</p>\n </body>\n</html>",
+  "aiSummary": "文章深入分析 AI 产品评估误区，强调应基于科学方法和评估驱动开发，而非单纯依赖工具。",
+  "oneSentenceSummary": "文章深入分析 AI 产品评估误区，强调应基于科学方法和评估驱动开发，而非单纯依赖工具。",
+  "summary": "文章基于 OpenAI 研究员姚顺雨关于“AI 下半场评估重要性超过训练”的观点，引用亚马逊首席应用科学家 Eugene Yan 的博客，探讨了 AI 产品评估的深层问题。指出许多人错误地认为增加工具或使用 LLM-as-judge 能解决评估难题，实则回避了核心流程问题。作者强调，有效的评估是遵循科学方法的持续实践：观察数据、标注问题、提出假设、设计实验、测量结果并循环改进。推崇评估驱动开发（EDD），要求先定义评估标准再构建产品，确保开发有明确方向和可衡量目标。自动化评估工具是人工监督的放大器，仍需结合人工标注和用户反馈进行校准和持续监测。最终，修复评估流程而非仅依赖工具，才是提升 AI 产品质量的关键。",
+  "mainPoints": [
+    {
+      "point": "AI 产品评估的核心在于实践科学方法的持续循环。",
+      "explanation": "通过观察、标注、假设、实验和测量等步骤，建立数据驱动的反馈闭环，系统性地发现和解决 AI 产品问题，推动持续改进。"
+    },
+    {
+      "point": "应采用评估驱动开发（EDD）理念构建 AI 产品。",
+      "explanation": "先定义清晰的评估标准和成功指标，再进行开发，确保所有改动和迭代都有可衡量的目标，提升开发效率和产品质量。"
+    },
+    {
+      "point": "自动化评估工具是辅助手段，不应取代人工监督和流程优化。",
+      "explanation": "自动化工具依赖人工标注进行校准，且需结合用户反馈，核心在于建立健全的评估流程，而非过度依赖技术本身。"
+    }
+  ],
+  "keyQuotes": [
+    "接下来，AI 的重点将从解决问题转向定义问题。在这个新时代，评估的重要性将超过训练。",
+    "自动化评估救不了你的产品 你得修复你的流程",
+    "评估并非一劳永逸，也不是什么快速起效的方法 ------ 它是运用科学方法的持续实践，是评估驱动开发，是 AI 输出的持续监测。",
+    "评估驱动的开发（Eval-driven development，EDD）能帮我们打造更好的 AI 产品。",
+    "自动化评估工具（LLM-as-judge）也离不开人工监督。虽然自动化评估能扩大监测范围，但无法弥补人为疏忽。"
+  ],
+  "tags": [
+    "AI产品评估",
+    "评估驱动开发",
+    "科学方法",
+    "AI产品开发",
+    "LLM-as-judge"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1974,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748875028000,
+  "publishDateStr": "2025-06-02",
+  "publishDateTimeStr": "2025-06-02 14:37:08"
+}

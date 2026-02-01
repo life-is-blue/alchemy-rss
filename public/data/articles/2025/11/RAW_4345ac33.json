@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4345ac33",
+  "title": "何恺明 MIT 两名新弟子曝光：首次有女生入组，另一位是 FNO 发明者，均为华人",
+  "url": "https://www.qbitai.com/2025/11/349790.html",
+  "date": "2025-11-06 11:11:53",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"77\">Jay 发自 凹非寺量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"5\">AI大牛何恺明的主页，更新了两名新弟子的信息——</p>\n  <p data-track=\"6\">都是华人，也都是学霸履历，<strong>博士生「胡珂雅」+博士后「李宗宜 」</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123757_7d7d5c389f37146b46b000d97debffc7.png\" data-ic=\"false\" data-width=\"1074\" data-height=\"678\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">至此，何恺明任教MIT以来招募的6位学生中，5名都是中国面孔。</p>\n  <p data-track=\"8\">而这一次新入组的两位中国成员，也都一路闪光。</p>\n  <p data-track=\"10\"><strong>胡珂雅</strong>，本科毕业于<strong>上海交通大学</strong>。</p>\n  <p data-track=\"11\">高中时期，她就读于名声赫赫的重点中学<strong>福建师范大学附属中学</strong>。</p>\n  <p data-track=\"12\">2021年，胡珂雅入学上交知名的<strong>ACM班</strong>，修读计算机科学方向。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123758_671ec5f4386964419cd50b717dcd57a7.jpeg\" data-ic=\"false\" data-width=\"400\" data-height=\"400\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">根据上海交大致远学院公众号，自大三起，胡珂雅便成为了<strong>上海交通大学脑机接口实验室</strong>（BCMI）的一员，师从郑伟龙教授。</p>\n  <p data-track=\"14\">那段时间，她把研究方向定在<strong>AI for Science</strong>——希望能将AI与脑科学结合，通过自监督学习去处理原始脑电信号，从而帮助抑郁症患者及其他受精神健康困扰的群体。</p>\n  <p data-track=\"15\">经过几个月的打磨，她以第一作者完成了名为《Contrastive Self-supervised EEG Representation Learning for Emotion Classification》的论文。</p>\n  <p data-track=\"16\">这篇成果被国际生物医学计算机顶会EMBC接收，她也因此受邀赴美做口头报告。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123756_1cbf79894d23a9971a8ab8b9ac0947b4.png\" data-ic=\"false\" data-width=\"974\" data-height=\"731\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">与此同时，她还作为共同作者参与了一篇改进自监督学习效果的项目，这篇论文此后同样成功被顶会Cognitive Science 2025收录。</p>\n  <p data-track=\"18\">大三暑假，胡珂雅前往<strong>康奈尔大学</strong>实习，在教授Kevin Ellis和博士生Hao Tang的指导下，参与了一个旨在提升程序合成与代码修复效率的研究项目，而她负责核心算法设计与实现。</p>\n  <p data-track=\"19\">该成果最终被世界顶级机器学习会议NeurIPS 2024接收，胡珂雅是第二作者。</p>\n  <p data-track=\"20\">光做完一个项目还不够，胡珂雅又和博士生Wen-Ding Li联手，把目光投向了当时颇受瞩目的AGI公开竞赛——<strong>ARC Prize 2024</strong>。</p>\n  <p data-track=\"21\">ARC这个概念最初由François Chollet提出，用来评估AI在面对全新问题时的学习与推理能力，而不是靠记忆或针对特定任务重复训练来取胜。</p>\n  <p data-track=\"22\">ARC Prize 2024正是围绕这一基准展开，要求参赛者提交算法来解决从未见过的任务集。</p>\n  <p data-track=\"23\">换句话说，想要取得胜利，参赛模型必须能在「少样本、抽象推理」的场景下展现接近人类水准的思考能力。</p>\n  <p data-track=\"24\">比赛标准严苛，但诱惑同样惊人——<strong>总奖金超过100万美元</strong>，因此吸引了来自全球1430支队伍参赛。</p>\n  <p data-track=\"25\">为了在这场硬仗中脱颖而出，胡珂雅主导研发了一套关键方法：用程序合成自动生成数据集，并在此基础上微调大语言模型，同时结合测试时微调（test-time finetuning）技术。</p>\n  <p data-track=\"26\">事实证明，这套方法的确能显著提升模型表现。</p>\n  <p data-track=\"27\">经过激烈的角逐，胡珂雅所在团队的成果在比赛中达到当时的SOTA水平，一举斩获「最佳论文奖」。</p>\n  <p data-track=\"28\">此后，她以共同第一作者的身份将此研究成果整理成文，成功发表于顶级机器学习会议ICLR 2025。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123757_4db2ab028867846e923047336961f932.png\" data-ic=\"false\" data-width=\"719\" data-height=\"539\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">别忘了，这时候的胡珂雅还只是个本科生。</p>\n  <p data-track=\"30\">仅仅是在本科阶段，她手里已经攒下了四篇含金量极高的论文，而且一半都是第一作者。</p>\n  <p data-track=\"31\">这样的履历，自然让她在申请博士时成了各大名校争抢的「香饽饽」——据说MIT、普林斯顿、卡内基梅隆、康奈尔、华盛顿大学，全都给了offer。</p>\n  <p data-track=\"32\">最后，她选了MIT，直博。</p>\n  <p data-track=\"33\">目前，胡珂雅是MIT电子工程与计算机科学系一年级博士生，由何恺明和Jacob Andreas共同指导。</p>\n  <p data-track=\"34\">她在MIT专注于语言与视觉的交叉研究，希望打造出能更高效利用数据、具备更强泛化能力的智能体。</p>\n  <p data-track=\"36\">另一位新入组的何恺明弟子<strong>李宗宜&nbsp;</strong>，之前已经在AI学术圈小有名气了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123756_d526d5b68968fc67faf3fa91c09c3271.png\" data-ic=\"false\" data-width=\"769\" data-height=\"725\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"37\">2021年，还在读博士的李宗宜以第一作者身份发表了篇重量级论文——</p>\n  <p data-track=\"38\">《Fourier Neural Operator for Parametric Partial Differential Equations》。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123757_f9c611060baaa70d9466744c01df326f.png\" data-ic=\"false\" data-width=\"954\" data-height=\"312\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"39\">光说名字大家可能不太熟悉，但正是这篇论文提出了后来闻名遐迩的傅里叶神经算子（FNO），首次实现了「神经算子」真正意义上的规模化应用。</p>\n  <p data-track=\"40\">不过，在聊FNO之前，我们得先搞清楚一个问题：什么是神经算子？</p>\n  <p data-track=\"41\">简单来说，<strong>神经算子是一种能学会「解物理方程」的神经网络</strong>。</p>\n  <p data-track=\"42\">在训练的时候，科学家会喂给它大量与物理方程计算相关的数据，比如：不同的起始水温 → 煮熟方便面所需的时间；不同的出手角度和速度 → 篮球最终的轨迹和落点……</p>\n  <p data-track=\"43\">通过学习这些样本，神经算子最终会涌现出一套「通用规律」，就像掌握了一份更高阶的乘法口诀。</p>\n  <p data-track=\"44\">未来遇到相似的数据，它不需要一步步推算，而是靠「直觉」就能瞬间秒杀「压轴题」。</p>\n  <p data-track=\"45\">举个例子：</p>\n  <p data-track=\"46\">你想预测暴风雨会往哪儿移动，按照传统方法，即便是超级计算机也得吭哧吭哧跑上好几个小时；</p>\n  <p data-track=\"47\">但如果用神经算子，只要输入当天的气压、温度、风速，它几毫秒内就能算出暴风雨的路径。</p>\n  <p data-track=\"48\">这就像一个过目不忘的学霸，看一眼题目就能凭借知识库直接在答题卡上写出结果，而不用在纸上一步一步推算。</p>\n  <p data-track=\"49\">（咳咳，要是高考这么干，还是会被判0分的哈）</p>\n  <p data-track=\"50\">凭借这种「秒算」能力，神经算子在天气预报、碳封存与空气动力学仿真等领域有奇效。</p>\n  <p data-track=\"51\">更重要的是，它让AI第一次能在物理规律层面实现泛化，因此成为连接机器学习与基础科学的关键桥梁。</p>\n  <p data-track=\"52\">李宗宜的研究重心正是这个领域，并且在此方向迈出了关键一步——他们提出的FNO通过将传统的空间卷积搬到频率域，<strong>用傅里叶变换来处理数据，让神经算子的运行速度成倍提升</strong>。</p>\n  <p data-track=\"53\">正是这项突破，让FNO被视为 「AI for Science」 领域的里程碑模型，而李宗宜也因此被公认为神经算子方向的核心贡献者之一，其谷歌学术引用次数已超过<strong>1.2万</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123757_3896ad6407fd8afce8105825fff5e1ee.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"497\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"54\">目前，李宗宜在MIT担任博士后研究员，由何恺明教授指导。</p>\n  <p data-track=\"55\">不过，他在MIT的时间可能不会太长——</p>\n  <p data-track=\"56\">据悉，他已经拿到<strong>纽约大学助理教授</strong>的职位，将于明年秋季入职。</p>\n  <p data-track=\"57\">李宗宜的家乡在北京，曾就读于<strong>人大附中</strong>，随后赴美求学。</p>\n  <p data-track=\"58\">本科阶段，他在<strong>圣路易斯华盛顿大学</strong>修读计算机科学与数学双学位，还辅修了爵士乐。</p>\n  <p data-track=\"59\">2019年，他前往<strong>加州理工学院</strong>攻读博士，师从Anima Anandkumar和 Andrew Stuart，两位导师共同见证了FNO的诞生。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123756_54d52e25f8c83d6d0551a97189fbae58.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"720\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"60\">另外，博士期间，李宗宜也曾<strong>连续三个暑期都在英伟达实习</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"何恺明MIT两名新弟子曝光：首次有女生入组，另一位是FNO发明者，均为华人\" src=\"https://image.jido.dev/20251106123801_84886d401fc12ba14b013d5a2a3160f8.png\" data-ic=\"false\" data-width=\"752\" data-height=\"544\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"62\">其实在2023年，何恺明副教授在MIT的求职演讲上有放过话，他特别指出「AI for Science」 将是其未来几年重点深耕的方向。</p>\n  <p data-track=\"63\">如今再看他的团队阵容，确实颇有深意。</p>\n  <p data-track=\"64\">新加入的两位成员——胡珂雅和李宗宜 ，一个曾在上交脑机接口实验室做科研，一个是神经算子领域的领军人物，正好在这个方向上强强呼应。</p>\n  <p data-track=\"65\">再加上此前的邓明扬、白行健、黎天鸿和Jake Austin，何恺明如今已集齐六位得意门生，可谓「阵容豪华」。</p>\n  <p data-track=\"66\">不过量子位听说，今年<strong>原计划其实是七个人</strong>。</p>\n  <p data-track=\"67\">最后一位候选人是位男生，履历同样亮眼，甚至有传言说，他的推荐信出自与何恺明同级别的大牛教授之手，并且被强烈推荐。</p>\n  <p data-track=\"68\">不过，他目前还没出现在何恺明的团队介绍中。</p>\n  <p data-track=\"69\">作为ResNet发明者之一，何恺明自2024年离职Meta进入学术界后，也令更多优秀的年轻人受益——年轻学者有机会更加深入且没有ROI制约地推进AI基础研究和前沿突破。</p>\n  <p data-track=\"70\">实际上，<strong>当年的ResNet四人组，都在以各自的方式培养新生代</strong>。</p>\n  <p data-track=\"71\">何恺明的主业是MIT教授，但在Google DeepMind有产业合作；</p>\n  <p data-track=\"72\">张祥雨的主业是阶跃星辰首席科学家，但也是母校西安交通大学兼职教授；</p>\n  <p data-track=\"73\">任少卿的主业是蔚来汽车智能驾驶副总裁，但今年刚给母校中科大担任人工智能实验室教授，招生开坛授课……</p>\n  <p data-track=\"74\">相信新生代的AI天才就在他们传帮带的这批人中间——</p>\n  <p data-track=\"75\"><strong>名师高徒，生生不息。</strong></p>\n  <p data-track=\"76\">参考链接：\n   <br>\n   [1]https://lillian039.github.io/\n   <br>\n   [2]https://zongyi-li.github.io/assets/pdf/Zongyi_CV_July2025.pdf\n   <br>\n   [3]https://www.facebook.com/lizongyijohnny/?locale=zh_CN\n   <br>\n   [4]https://zongyi-li.github.io/\n   <br>\n   [5]https://mp.weixin.qq.com/s/xTXjyE3MFLHGpVpJEXIrYA</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章报道了 AI 大牛何恺明 MIT 团队新招募的两名华人学生：本科期间成果丰硕的博士生胡珂雅，以及傅里叶神经算子（FNO）发明者、博士后李宗宜，彰显其在“AI for Science”领域的布局。",
+  "oneSentenceSummary": "文章报道了 AI 大牛何恺明 MIT 团队新招募的两名华人学生：本科期间成果丰硕的博士生胡珂雅，以及傅里叶神经算子（FNO）发明者、博士后李宗宜，彰显其在“AI for Science”领域的布局。",
+  "summary": "量子位报道了 AI 领军人物何恺明在 MIT 团队迎来两位杰出华人新成员：博士生胡珂雅和博士后李宗宜。胡珂雅本科毕业于上海交通大学 ACM 班，在校期间已在 AI for Science（脑机接口）、程序合成及大语言模型抽象推理（ARC Prize 2024 最佳论文奖）等多个前沿方向发表多篇顶会论文，展现了卓越的科研潜力。李宗宜则是傅里叶神经算子（FNO）的核心发明者，该技术通过将空间卷积引入频率域，显著提升了神经算子在解决物理方程方面的效率与泛化能力，被视为“AI for Science”领域的里程碑，其谷歌学术引用次数已超过 1.2 万。文章指出，何恺明此前曾公开表示“AI for Science”是其未来重点深耕方向，这两位新成员的加入，恰好契合并强化了这一战略布局。文章还提及了 ResNet 其他共同发明者也在积极培养新生代 AI 人才。",
+  "mainPoints": [
+    {
+      "point": "何恺明 MIT 团队引入两位顶尖华人学生，强化“AI for Science”战略方向。",
+      "explanation": "博士生胡珂雅和博士后李宗宜的加入，分别在脑机接口、程序合成与大语言模型推理、以及神经算子等领域带来深厚积累，与何恺明教授的“AI for Science”愿景高度契合。"
+    },
+    {
+      "point": "胡珂雅本科阶段即在 AI for Science 和 LLM 推理等前沿领域取得多项国际顶会成果。",
+      "explanation": "她在脑电信号处理、程序合成及 ARC Prize 2024 竞赛中展现出卓越的创新能力和研究实力，作为本科生已有多篇顶会论文，潜力巨大。"
+    },
+    {
+      "point": "李宗宜是“傅里叶神经算子（FNO）”发明者，该技术是 AI for Science 领域的里程碑。",
+      "explanation": "FNO 通过傅里叶变换提升神经算子处理物理方程的速度和泛化能力，使其在天气预报、材料科学等领域具有颠覆性应用前景，谷歌学术引用超 1.2 万。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 大牛何恺明的主页，更新了两名新弟子的信息------都是华人，也都是学霸履历，博士生「胡珂雅」+博士后「李宗宜 」。",
+    "胡珂雅把研究方向定在 AI for Science------希望能将 AI 与脑科学结合，通过自监督学习去处理原始脑电信号，从而帮助抑郁症患者及其他受精神健康困扰的群体。",
+    "正是这项突破，让 FNO 被视为 「AI for Science」 领域的里程碑模型，而李宗宜也因此被公认为神经算子方向的核心贡献者之一，其谷歌学术引用次数已超过 1.2 万。",
+    "何恺明副教授在 MIT 的求职演讲上有放过话，他特别指出「AI for Science」 将是其未来几年重点深耕的方向。",
+    "相信新生代的 AI 天才就在他们传帮带的这批人中间------名师高徒，生生不息。"
+  ],
+  "tags": [
+    "AI for Science",
+    "何恺明",
+    "傅里叶神经算子",
+    "大语言模型",
+    "MIT"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 86,
+  "wordCount": 2855,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762427513000,
+  "publishDateStr": "2025-11-06",
+  "publishDateTimeStr": "2025-11-06 11:11:53"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_8a1dca",
+  "title": "如何选择最佳多模态大模型压缩方案？哈工大、度小满开源 EFFIVLM-BENCH 基准测试框架 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-16-8",
+  "date": "2025-06-16 06:16:08",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p>在金融科技智能化转型进程中，大语言模型以及多模态大模型（LVLM）正成为核心技术驱动力。尽管 LVLM 展现出卓越的跨模态认知能力，其部署却长期受限于显著的算力瓶颈 —— 大小中等的模型一次多图推理可能需要 100 G 的显存空间，严重制约产业落地。</p>\n  <p>针对这一技术痛点，<strong>哈工大团队联合度小满金融科技正式发布 EFFIVLM-BENCH</strong>，业界首个支持跨场景统一评估的多模态大模型高效化基准框架，为学术界提供可复现的压缩方案对比基准，同时赋能工业界实现最优部署策略遴选。该项目框架已在 GitHub 全面开源, 对应论文《EFFIVLM-BENCH: A Comprehensive Benchmark for Evaluating Training-Free Acceleration in Large Visual-Language Models》被 ACL（CCF-A）录用为主会论文。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8f2c9963-c749-44cf-bd0d-d206fc16b600/public\" data-ratio=\"0.3101851851851852\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489748\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/7b2a6d2f-edee-481a-9df9-b97c1f3e8a5e/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2506.00479</p></li>\n   <li>\n    <p>项目地址：<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify;line-height: 1.75em;margin-left: 8px;margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">https://effivlm-bench.github.io/</span></p></li>\n  </ul>\n  <p><strong>EFFIVLM-BENCH：</strong><strong>为LVLM高效化方案提供全面、系统的“体检报告”</strong></p>\n  <p>在 LVLM 的研究和应用中，不同的方法常常应用于不同的模型上，另一方面，即使最新的研究为能够公平比较仍应用于较为古早的模型上。如何在最先进的模型上公平有效地评估和比较各种加速方法的性能，一直是一个亟待解决的问题。EFFIVLM-BENCH 的出现，正是为了填补这一空白。该平台的核心价值在于其先进性、全面性和系统性。</p>\n  <p>EFFIVLM-BENCH 提供了一个统一的评估框架，对主流的加速技术进行细致的性能剖析，包括 kv cache 压缩、token 压缩和参数压缩（如剪枝、量化），共计近 20 种模型高效化方法。在评测上，它不仅关注模型在特定任务上的绝对性能，更创新性地引入了泛化能力、忠诚度（即压缩后模型与原始模型行为的一致性）以及实际推理效率（如真实推理时间）等多维度评估指标。这意味着，EFFIVLM-BENCH 能够为不同的加速方法出具一份详尽的 “体检报告”，揭示其在不同场景下的优势与不足。</p>\n  <p>EFFIVLM-BENCH 的评估范围广泛，涵盖了多种前沿的 LVLM 架构（如 LLaVA-OneVision, Qwen2-VL, InternVL2.5）、模型高效化方法以及近 20 个不同类型的多模态基准任务，从文档图像理解、图表问答到长文本视频理解等，力求模拟真实应用场景的复杂性。通过对这些场景的深入分析，EFFIVLM-BENCH 旨在帮助研究者和开发者找到性能与效率之间的最佳平衡点，即所谓的 “帕累托最优” 解。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2462c737-b52d-4f64-033f-6e74f7b22600/public\" data-ratio=\"0.24074074074074073\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503489749\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/373306d9-c468-4112-9200-f8fe93f7939a/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 图 2 不同模型在多个 Benchmarks 上的输入输出长度</sup></p>\n  <p><strong>EFFIVLM-BENCH 的深度洞察：</strong><strong>加速 LVLM 并非 “一刀切”</strong></p>\n  <p>通过 EFFIVLM-BENCH 的广泛实验与深度分析，哈工大团队联合度小满获得了一系列关于 LVLM 加速的重要发现。研究表明，LVLM 的加速并非简单的 “一刀切” 方案，其效果与具体应用场景和所采用的技术策略紧密相关。例如，<strong>任务依赖性显著</strong>，token 压缩方法在处理不同类型的任务时表现各异，尤其对于需要精细视觉信息或生成长序列输出的任务，其性能可能会受到较大影响。在保持模型泛化能力和忠诚度方面，<strong>KV 缓存压缩技术通常展现出更佳的优势</strong>。</p>\n  <p>同时，<strong>效率权衡</strong>也是一门艺术，不同的加速策略在 “首 token 生成时间”（TTFT）和后续解码速度上各有侧重，开发者需要根据实际应用需求进行选择，例如 token 压缩可能更适合需要快速响应的短文本任务。此外，<strong>参数压缩的稳健性也值得关注</strong>，像量化这样的技术在保持模型原始性能方面往往更为可靠。更进一步，该研究还深入探讨了<strong>层自适应稀疏性、注意力汇聚点（Attention Sink）在 LVLM 中的关键作用，以及模态特定的信息合并策略等前沿机制</strong>，这些探索为未来的 LVLM 优化指明了新的方向。这些发现共同揭示了 LVLM 加速的复杂性和多面性，强调了针对性优化和综合评估的重要性。</p>\n  <section>\n   <img data-imgfileid=\"503489750\" data-ratio=\"0.5540816326530612\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dbd6deaa-de8c-4e4d-c6ec-ec4762498600/public\" data-type=\"png\" data-w=\"980\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/a7d2be6e-13c9-41e2-bcb9-422f8bfa214b/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 图 3 针对 Token 压缩方法在效率与性能之间的权衡关系</sup></p>\n  <p><strong>开源共建，推动 LVLM 技术发展</strong></p>\n  <p>EFFIVLM-BENCH 的推出，标志着 LVLM 效率评估领域的一个重要进展。哈工大团队与度小满表示，EFFIVLM-BENCH 将秉承开放共享的原则，其完整的代码和评估方案已在 GitHub 上开源，希望能为研究者和开发者提供一个强大而易用的评估工具。</p>\n  <p>通过 EFFIVLM-BENCH，团队期望能够激发更多关于 LVLM 加速技术的创新研究，推动相关技术的快速迭代和优化，最终使得强大的大型视觉语言模型能够以更低的成本、更高的效率服务于更广泛的应用场景。</p>\n  <p>随着人工智能技术的不断深化，LVLM 等先进技术必将在各行各业发挥越来越重要的作用。此次哈工大团队联合度小满推出 EFFIVLM-BENCH，是双方在大模型领域合作的又一重要成果。未来，双方将继续深化合作，探索更多前沿技术，为推动人工智能技术的发展和应用贡献力量。</p>\n \n",
+  "aiSummary": "介绍哈工大与度小满开源的 EFFIVLM-BENCH，业界首个全面评估多模态大模型压缩方案的基准测试框架。",
+  "oneSentenceSummary": "介绍哈工大与度小满开源的 EFFIVLM-BENCH，业界首个全面评估多模态大模型压缩方案的基准测试框架。",
+  "summary": "文章发布了哈工大与度小满联合推出的 EFFIVLM-BENCH，旨在解决多模态大模型（LVLM）部署中的算力瓶颈。该框架是业界首个支持跨场景统一评估 LVLM 训练无关高效化方法的基准，涵盖近 20 种压缩技术（kv cache、token、参数压缩）和多种前沿 LVLM 架构，并在近 20 个多模态任务上进行评测。创新性地引入泛化能力、忠诚度、实际推理效率等多维度评估指标。研究通过该基准发现，LVLM 加速方案效果与任务场景、技术策略强相关，并非“一刀切”，例如 KV 缓存压缩在泛化和忠诚度上表现更佳。该项目已开源，旨在推动 LVLM 高效化技术的发展与应用落地。",
+  "mainPoints": [
+    {
+      "point": "LVLM 部署面临显著的算力瓶颈",
+      "explanation": "多模态大模型（LVLM）因其巨大的模型尺寸和计算需求，导致高昂的显存开销，严重阻碍了其在实际产业中的广泛落地应用。"
+    },
+    {
+      "point": "EFFIVLM-BENCH 提供统一全面的评估框架",
+      "explanation": "该基准是业界首个针对 LVLM 训练无关加速方法设计的统一评估平台，覆盖多种技术和模型，实现公平对比与性能剖析。"
+    },
+    {
+      "point": "引入多维度指标评估加速方案效果",
+      "explanation": "除了传统性能，EFFIVLM-BENCH 还评估泛化能力、忠诚度及实际推理效率，提供更全面的“体检报告”，辅助最优策略选择。"
+    },
+    {
+      "point": "LVLM 加速效果具有强任务依赖性",
+      "explanation": "研究发现，不同的压缩方法（如 token 压缩）在处理不同多模态任务时表现差异显著，需要针对性优化而非通用方案。"
+    },
+    {
+      "point": "KV 缓存压缩在泛化与忠诚度方面表现更佳",
+      "explanation": "实验表明，KV 缓存压缩技术在保持模型对不同任务的泛化能力和压缩后与原模型行为一致性方面通常优于其他方法。"
+    }
+  ],
+  "keyQuotes": [
+    "大小中等的模型一次多图推理可能需要 100 G 的显存空间，严重制约产业落地。",
+    "EFFIVLM-BENCH，业界首个支持跨场景统一评估的多模态大模型高效化基准框架...",
+    "提供了一个统一的评估框架，对主流的加速技术进行细致的性能剖析...",
+    "创新性地引入了泛化能力、忠诚度（即压缩后模型与原始模型行为的一致性）以及实际推理效率（如真实推理时间）等多维度评估指标。",
+    "研究表明，LVLM 的加速并非简单的 '一刀切' 方案，其效果与具体应用场景和所采用的技术策略紧密相关。"
+  ],
+  "tags": [
+    "LVLM",
+    "模型压缩",
+    "模型加速",
+    "基准测试",
+    "评估体系"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1789,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750054568000,
+  "publishDateStr": "2025-06-16",
+  "publishDateTimeStr": "2025-06-16 06:16:08"
+}

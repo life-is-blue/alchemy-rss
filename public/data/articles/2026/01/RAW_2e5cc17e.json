@@ -1,0 +1,59 @@
+{
+  "id": "RAW_2e5cc17e",
+  "title": "作为 Cursor 和 Claude Code 的研发者，他们是如何看待和使用 AI",
+  "url": "https://juejin.cn/post/7590724064520978495",
+  "date": "2026-01-04 05:26:13",
+  "author": "恋猫de小郭",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>近日，Cursor VP Lee Robinson 和 Claude Code 之父 Boris Cherny 都分享了他们的 AI 感悟和经验，特别是 Lee Robinson 的 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUrNLVip0hSA\" target=\"_blank\" title=\"https://www.youtube.com/watch?v=UrNLVip0hSA\" ref=\"nofollow noopener noreferrer\">《AI codes better than me. Now what?》</a> 就很好展示了对于开发者来说，2026 开始程序员应该如何转变自我的定位。</p>\n   <blockquote>\n    <p>类似的，在之前的 <a href=\"https://juejin.cn/post/7587845752681807935\" target=\"_blank\" title=\"https://juejin.cn/post/7587845752681807935\">《AI 让我误以为自己很强，未来程序员的转型之路》</a>也思考过未来 AI 浪潮下程序员的转变。</p>\n   </blockquote>\n   <p>首先对于 Lee Robinson 来说，他总结的现状是：<strong>他已经很少亲手写代码了</strong>，比如最近他使用 Rust 实现了一个图片压缩工具，可编译成 WebAssembly 并在 SvelteKit 应用中运行，而这个过程里他没有亲手写一行代码，完全由 AI 代理完成。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c2b19ac5289140c99277eb8f4da39df6~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=ilaEVmVGALEz5imMsyb0ZQF3Fys%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>另外一个例子就是 Space Invaders 游戏克隆，他为 Analog Pocket（类似 Game Boy 的掌机）开发了一款游戏，而这个过程需要用到 Verilog 硬件描述语言，但是他对 Verilog 一无所知，不过在 AI 的帮助下，他最终还是完成了硬件层面所有的编程。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/3ceff33d954141d7b045fc2405f778d6~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=IVnT31TMzbAz7%2BhBBkAcQo3xnaE%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b28251d0ff764c1db75627f83278a6f7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=AsF827xyl9Aeaz5fxVrRO1Jf%2B%2FA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这两个例子很直观的体现出了 AI 的能力和对开发者的影响，<strong>未来 AI 肯定是让 AI 者不再只是局限在某个技术标签下</strong>，所以他在半年前加入了 Cursor，因为他强烈感觉到软件工程的版图正在发生巨变，所以他希望参与到定义这种变化。</p>\n   <blockquote>\n    <p>Cursor 确实也在影响着开发者的开发习惯，基本上你不用 Cursor 也用过 Trae ？</p>\n   </blockquote>\n   <p>对比过去的模型指令遵循能力差，并且经常出现幻觉的情况，现在的 Codex Max 或者 Opus 4.5 都表现出了非常强大的代码完成效果（就是贵），对于 Lee Robinson 来说，他觉得目前的模型在写代码方面确实已经比他更强。</p>\n   <blockquote>\n    <p><strong>所以，对于未来开发者而言，确实不应该纠结于在“写代码能力”上去和 AI 对比</strong>，因为你真写不过它，没它持久也没它能输出。</p>\n   </blockquote>\n   <p><strong>所以 Lee Robinson 认为，对于开发者来说，写代码这件事不再是瓶颈</strong>，他建议：</p>\n   <ul>\n    <li>不要因为过去 AI 现在不擅长某个领域（如 Rust 或底层代码）就认为它永远不行，模型在这些领域的进步速度极快</li>\n    <li>让 AI 接管软件开发中大量繁琐和重复性的工作</li>\n    <li>当生成代码变可用时，工程师的价值将体现在“品味”上，开发者不要只关注代码，更要关注产品本身、用户体验 (UX)、市场营销以及如何构建用户真正喜欢的东西</li>\n   </ul>\n   <blockquote>\n    <p><strong>所谓未来的核心不再是“如何写代码”，而是“如何构建和管理好优秀的产品”</strong> ，并如何使用好 AI 完成需求 。</p>\n   </blockquote>\n   <p>就连 <a href=\"https://juejin.cn/post/7590421489998610451\" target=\"_blank\" title=\"https://juejin.cn/post/7590421489998610451\">Android Studio 的全新 AI Agent</a> ，都在不断增加 vibe coding 的支持，AI 在开发者领域如今确实已经成为不可或缺的存在，就像 StackOverflow ，随着 AI 的发展，如今的“活人”流量可以说是几乎跌停，这大概也是 AI 浪潮的典型体现：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4cff9263f9404feb9dba4c01b16133cb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=MFlurdzzaKio86%2BqW6Bs%2F3QBWSM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>另外前些日子 Manus 卖身 Meta 的身价也引起热议，实际上一些专业开发者“看不上” Manus 的产品，但是为什么它还是能有如此身价？</p>\n   <p>实际上 Manus 的服务对象很多是非专业技术的人，使用 Manus 的核心用户，大多是那些不需要知道该使用什么技术栈或如何构建数据库，他们更多是完全不理解技术的人，这些用户基本是追求一个结果，不在意过程的创业者和企业主。</p>\n   <blockquote>\n    <p>这也是一个方向，如果 AI 可以产出初步结果验证产品，那也许代码这个中间过程如何，未来或者也没那么重要？</p>\n   </blockquote>\n   <p>就连谷歌 Gemini API 负责人都自曝，用竞品 Claude Code 在 1小时复现自己团队一年成果，虽然还不够完美，但是这已经很能说明问题：<strong>不要和 AI 比代码输出的能力</strong> 。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/fb94047b1d75411dac10651d9c4723eb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=uKarpFsIifJBJgHzaht6zoffAGg%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><strong>那么为什么 2026 了，还有很多人使用 AI 的过程中发现，AI 并不好用</strong>？这个问题可能 Claude Code 之父 Boris Cherny 的经验分享可以给出答案，他在 30 天内跑了 259 个 PR ，所有代码都是 CC + Opus 4.5 完成，最长的 session 跑了近 42 小时。</p>\n   <blockquote>\n    <p>也许你觉得不好用，主要是因为没用好没用对，而不是 AI 不行。</p>\n   </blockquote>\n   <p>Boris Cherny 提供了一些 CC 的使用技巧：</p>\n   <ul>\n    <li>在端中并行运行 5 个 Claude 进程，并且将标签页编号为 1-5，通过系统通知来了解哪个 Claude 进程需要人工处理，这样可以有效提供任务并行效果：<img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/2a685f387f894848927fa1a4ac07d407~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=nLBgd8kxVhTu1J8V9cLDMSFi%2BcU%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n   </ul>\n   <ul>\n    <li>团队共享一个用于 Claude Code 的 CLAUDE.md 文件，每当发现 Claude 做错了什么，团队可以添加到 CLAUDE.md ，让 Claude 下次避免犯同样的错误<img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c4a0e40ea3474e6999be6d0fdc70453b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=%2BceA8G9EwN6yiIwebYxKxvzoBow%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>Code Review 时 <code>@.claude</code> 自动更新规则到 CLAUDE.md ，这里主要通过 Claude Code Github action 来实现 <img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/7e01693bedc846bb8c9ca6515ad36388~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=HmC8b6xBCzvpTuTdKLRAAC1B9c8%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n   </ul>\n   <ul>\n    <li>大多数会话都从 plan 模式（Shift+Tab twice）开始，一个好的 Plan 非常重要，不要一上来就盲目开始需求<img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/0eb9adddb31e4a05b31a105988f93ff4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=g4QbxTsIewHc1%2FBwxEf18Vezagk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>高频工作流都做成 slash commands 并存放在 <code>.claude/commands/</code>，这样 Claude 自己也能调用，可以减少人工的重复处理接管<img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4f4d2414b2364ccd9d9391b0db80626e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=yZAod%2BqpCzyvatozqe0LVN1EPIg%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>使用一些 subagents ，例如 code-simplifier 会在 Claude 完成工作后简化代码，verify-app 会提供详细的端到端 Claude 代码测试指南，这些 subagents 的作用是自动化处理大多数 PR 时最常用的工作流<img src=\"\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>不使用 <code>--dangerously-skip-permissions</code> 参数，推荐使用 <code>/permissions</code> 参数预先允许一些环境中安全的常用 bash 命令，以避免不必要的权限提示，这些配置大部分会提交到 <code>.claude/settings.json</code> 文件并与团队共享<img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/dddaa78f9c6a49c7abc062ab75bd4668~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=Ulz%2BmrUghW1sX7c%2BQzDNo3eUn70%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>长任务用可以用 ralph-wiggum 插件让 Claude 自动循环直到完成<img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/d669800990f64bd3b00b0c4ca357e9fd~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768109172&amp;x-signature=zDEwgeKiz6FnTDFbmD8q6p96TQE%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li>要想让 Claude Code 发挥最佳效果，<strong>最重要的一点可能是给 Claude 提供验证运行结果的方式</strong>，如果 Claude 拥有这种反馈机制，最终结果的质量将提升 2-3 倍，比如 Claude 可以使用 Claude Chrome 扩展程序测试提交的每一个变更</li>\n   </ul>\n   <p>所以可以看到，同样的工具，同样的使用 AI ，规模化和流程化的配置，还有开发过程中的各种规则、技能和文件积累，就会让 AI 变成更加智能和直观，最重要是可维护性会大大提高，这也是未来程序员在 AI 浪潮的必备技能之一，也许以后，你真的就是一个 AI 管理者。</p>\n   <p>你说呢？未来的大模型善后工程师~</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章探讨了 AI 时代程序员角色的转变，强调开发者应关注产品与用户体验并学会高效管理和利用 AI 工具，而非纠结于代码编写，最终成为 AI 管理者。",
+  "oneSentenceSummary": "文章探讨了 AI 时代程序员角色的转变，强调开发者应关注产品与用户体验并学会高效管理和利用 AI 工具，而非纠结于代码编写，最终成为 AI 管理者。",
+  "summary": "文章聚焦于 AI 时代程序员角色的转变和如何高效使用 AI 工具。Cursor VP Lee Robinson 分享了他借助 AI 完成复杂编程任务（如 Rust 图像压缩工具、Verilog 硬件编程）的经验，指出 AI 在编写代码方面已超越人类，开发者应将重心转向产品思维、用户体验和如何利用 AI 解决问题。文章还提到 Android Studio 集成 AI、StackOverflow 流量下降等现象，印证了 AI 对开发领域的深远影响。Claude Code 之父 Boris Cherny 则提供了实用的 AI 编程工具（如 Claude Code）使用技巧，包括并行处理、团队协作积累知识（CLAUDE.md）、计划先行、自动化命令、Subagents 辅助、提供反馈机制等，强调通过规范化和流程化配置，让 AI 工具发挥最佳效能，最终提出未来的程序员将转型为“AI 管理者”或“大模型善后工程师”。",
+  "mainPoints": [
+    {
+      "point": "AI 在代码生成能力上已超越人类，开发者应转变重心。",
+      "explanation": "Lee Robinson 的实践证明，AI 能独立完成 RUST、Verilog 等复杂语言的编程任务，这使得开发者不再需要亲手写代码，从而将精力投入到产品开发、用户体验和市场营销等更高层次的工作中。"
+    },
+    {
+      "point": "未来程序员的核心价值在于产品构建和 AI 管理能力。",
+      "explanation": "随着 AI 代码生成效率的提升，开发者不再受限于编写代码的瓶颈，应将重心放在如何利用 AI 工具更好地构建和管理优秀的产品，以及如何引导和优化 AI 的工作流程。"
+    },
+    {
+      "point": "高效使用 AI 编码工具需要规范化配置和流程管理。",
+      "explanation": "Boris Cherny 分享了 Claude Code 的多个实用技巧，包括并行处理、团队经验积累（CLAUDE.md）、计划先行和自动化等，强调通过系统性方法才能发挥 AI 工具的最大潜力，提升开发效率和质量。"
+    },
+    {
+      "point": "提供 AI 反馈机制是提升 AI 生成质量的关键。",
+      "explanation": "让 AI 能够验证运行结果，通过反馈循环不断自我优化，可以显著提升其输出内容的质量和准确性，这对于实现 AI 自动化编程至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "他已经很少亲手写代码了，比如最近他使用 Rust 实现了一个图片压缩工具，可编译成 WebAssembly 并在 SvelteKit 应用中运行，而这个过程里他没有亲手写一行代码，完全由 AI 代理完成。",
+    "所以，对于未来开发者而言，确实不应该纠结于在\"写代码能力\"上去和 AI 对比，因为你真写不过它，没它持久也没它能输出。",
+    "所谓未来的核心不再是\"如何写代码\"，而是\"如何构建和管理好优秀的产品\" ，并如何使用好 AI 完成需求。",
+    "要想让 Claude Code 发挥最佳效果，最重要的一点可能是给 Claude 提供验证运行结果的方式，如果 Claude 拥有这种反馈机制，最终结果的质量将提升 2-3 倍。",
+    "（未来程序员）也许以后，你真的就是一个 AI 管理者。"
+  ],
+  "tags": [
+    "AI开发",
+    "编程范式",
+    "软件工程",
+    "AI工具",
+    "开发者转型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1912,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767504373000,
+  "publishDateStr": "01-04",
+  "publishDateTimeStr": "2026-01-04 05:26:13"
+}

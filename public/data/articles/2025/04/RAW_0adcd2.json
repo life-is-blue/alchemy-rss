@@ -1,0 +1,52 @@
+{
+  "id": "RAW_0adcd2",
+  "title": "Google Firebase Studio 使用初体验",
+  "url": "https://baoyu.io/blog/firebase-studio-first-experience",
+  "date": "2025-04-10 16:08:28",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"o6s8d8d70x\">测试了下 Google 新的在线 AI 开发平台 Firebase Studio，很强大，有些交互甚至比 v0.dev 做的还好些。从前台界面上看，它有两种主要的交互方式并且可以自由切换：</p>\n   <p data-id=\"og6a4wuqls\"></p><img src=\"https://baoyu.io/uploads/2025-04-10/1744301379375.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"zrbcx02gd8\">一种是类似于 v0.dev 这样，不需要你懂代码，直接通过提示词就可以构建应用，并且可以实时预览结果；</p><img src=\"https://baoyu.io/uploads/2025-04-10/1744301387937.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"wu52v99w3w\">另一种是类似于 Cursor 或者 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"http://bolt.new\">bolt.new</a> 那样，是一个在线编辑器，但是可以实时预览结果，不止是 Web 程序，包括 React Native 的手机应用程序也可以在浏览器中连一个 Android 的虚拟机实时预览结果。</p><img src=\"https://baoyu.io/uploads/2025-04-10/1744301403004.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"0kjuncxuk2\">Firebase Studio 在交互细节上还是做的蛮好的，把 v0.dev 的选中 UI 元素再用提示词编辑的交互抄过去了。</p><img src=\"https://baoyu.io/uploads/2025-04-10/1744301414225.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"nlr0l84nd5\">另外它还有一个实用功能，就是对 UI 截图，然后在截图上画框标记，再把截图发到对话框，让 AI 对标记的内容进行修改编辑。这个还蛮实用的。</p>\n   <p data-id=\"bajuy5dc7k\">另外它集成了 Google Cloud 和 Gemini AI 一系列的服务，也就是你创建的应用程序可以借用 Gemini AI 的 API，做一些 AI 能力的应用，比如图1就是一个根据图片生成诗句的AI应用，当然你需要配置一下自己的 Gemini API Key（点击个按钮就可以自动配置）。最后生成的结果也可以发布到公网上让其他人测试访问。</p>\n   <p data-id=\"zvk6ehd9x7\">Firebase Studio 的 AI 代码编辑应该是基于 Gemini 2.5 Pro，编程能力是挺不错的，但是审美似乎不怎么样，做出来的应用都很简陋，不像 Claude 3.5/3.7 做的 UI 美观大气，审美在线。</p>\n   <p data-id=\"q4vaehwstw\">目前是免费的，推荐去试试，使用地址：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"http://studio.firebase.google.com\">studio.firebase.google.com</a></p></div>\n \n",
+  "aiSummary": "Google Firebase Studio 是一个集成了多种 AI 开发方式的在线平台，但 UI 生成能力有待提高。",
+  "oneSentenceSummary": "Google Firebase Studio 是一个集成了多种 AI 开发方式的在线平台，但 UI 生成能力有待提高。",
+  "summary": "文章介绍了 Google 新推出的在线 AI 开发平台 Firebase Studio 的使用体验。该平台提供低代码（提示词）和代码编辑两种模式，无需本地环境配置即可实时预览。Firebase Studio 在交互细节上有所创新，支持截图标记修改。此外，它集成了 Google Cloud 和 Gemini AI 服务，方便开发者快速创建 AI 应用并部署到公网。文章指出，Firebase Studio 的 AI 代码编辑能力基于 Gemini 2.5 Pro，编程能力不错，但 UI 审美有待提高，UI 生成质量有待提升。目前该平台免费使用。",
+  "mainPoints": [
+    {
+      "point": "Firebase Studio 提供低代码和代码编辑两种交互方式，并支持实时预览",
+      "explanation": "用户可选择无需代码的提示词构建，或使用在线编辑器进行更精细的开发，并实时预览效果。"
+    },
+    {
+      "point": "集成了 Google Cloud 和 Gemini AI 服务，方便 AI 应用开发",
+      "explanation": "开发者可利用 Gemini AI 的 API，快速创建具备 AI 能力的应用，并部署到公网。"
+    },
+    {
+      "point": "UI 生成质量有待提升，但交互方式有创新",
+      "explanation": "使用 Firebase Studio 创建的应用 UI 设计相对简陋，不如 Claude 等其他 AI 工具生成的界面美观，但在交互上借鉴了 v0.dev 的优点，并支持截图标记修改。"
+    }
+  ],
+  "keyQuotes": [
+    "另外它还有一个实用功能，就是对 UI 截图，然后在截图上画框标记，再把截图发到对话框，让 AI 对标记的内容进行修改编辑。这个还蛮实用的。",
+    "Firebase Studio 的 AI 代码编辑应该是基于 Gemini 2.5 Pro，编程能力是挺不错的，但是审美似乎不怎么样，做出来的应用都很简陋，不像 Claude 3.5/3.7 做的 UI 美观大气，审美在线。"
+  ],
+  "tags": [
+    "AI开发平台",
+    "Firebase Studio",
+    "在线IDE",
+    "Web IDE",
+    "低代码开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 530,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1744301308000,
+  "publishDateStr": "2025-04-10",
+  "publishDateTimeStr": "2025-04-10 16:08:28"
+}

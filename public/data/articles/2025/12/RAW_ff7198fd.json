@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ff7198fd",
+  "title": "Claude 单次反编译的意外有效性",
+  "url": "https://simonwillison.net/2025/Dec/6/one-shot-decompilation/#atom-everything",
+  "date": "2025-12-06 18:30:56",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://blog.chrislewis.au/the-unexpected-effectiveness-of-one-shot-decompilation-with-claude/\">The Unexpected Effectiveness of One-Shot Decompilation with Claude</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46080498\" title=\"Hacker News\">via</a>) Chris Lewis decompiles N64 games. He wrote about this previously in <a href=\"https://blog.chrislewis.au/using-coding-agents-to-decompile-nintendo-64-games/\">Using Coding Agents to Decompile Nintendo 64 Games</a>, describing his efforts to decompile Snowboard Kids 2 (<a href=\"https://en.wikipedia.org/wiki/Snowboard_Kids_2\">released in 1999</a>) using a \"matching\" process:</p>\n   <blockquote>\n    <p>The matching decompilation process involves analysing the MIPS assembly, inferring its behaviour, and writing C that, when compiled with the same toolchain and settings, reproduces the exact code: same registers, delay slots, and instruction order. [...]</p>\n    <p>A good match is more than just C code that compiles to the right bytes. It should look like something an N64-era developer would plausibly have written: simple, idiomatic C control flow and sensible data structures.</p>\n   </blockquote>\n   <p>Chris was getting some useful results from coding agents earlier on, but this <a href=\"https://blog.chrislewis.au/the-unexpected-effectiveness-of-one-shot-decompilation-with-claude/\">new post</a> describes how a switching to a new processing Claude Opus 4.5 and Claude Code has massively accelerated the project - as demonstrated started by this chart on <a href=\"https://decomp.dev/cdlewis/snowboardkids2-decomp?mode=history\">the decomp.dev page</a> for his project:</p>\n   <p><img alt=\"Chart showing progress in matching code for Snowboard Kids 2. It slowly climbs from 20% to 25% from 3rd September to 17th November, then rises quickly to 45% by 2nd December\" src=\"https://static.simonwillison.net/static/2025/decomp-progress.jpg\"></p>\n   <p>Here's <a href=\"https://github.com/cdlewis/snowboardkids2-decomp/blob/852f47a4905a08d5d652387597bc5b47d29582f2/CLAUDE.md\">the prompt he was using</a>.</p>\n   <p>The big productivity boost was unlocked by switching to use Claude Code in non-interactive mode and having it tackle the less complicated functions (aka the lowest hanging fruit) first. Here's the relevant code from the <a href=\"https://github.com/cdlewis/snowboardkids2-decomp/blob/785db3cb0ce356e57ea5016835499fd6b393c490/tools/vacuum.sh#L44-L54\">driving Bash script</a>:</p>\n   <pre>simplest_func=<span class=\"pl-s\"><span class=\"pl-pds\">$(</span>python3 tools/score_functions.py asm/nonmatchings/ <span class=\"pl-k\">2&gt;&amp;1</span><span class=\"pl-pds\">)</span></span>\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> ...</span>\noutput=<span class=\"pl-s\"><span class=\"pl-pds\">$(</span>claude -p <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>decompile the function <span class=\"pl-smi\">$simplest_func</span><span class=\"pl-pds\">\"</span></span> <span class=\"pl-k\">2&gt;&amp;1</span> <span class=\"pl-k\">|</span> tee -a tools/vacuum.log<span class=\"pl-pds\">)</span></span></pre>\n   <p><a href=\"https://github.com/cdlewis/snowboardkids2-decomp/blob/785db3cb0ce356e57ea5016835499fd6b393c490/tools/score_functions.py\">score_functions.py</a> uses some heuristics to decide which of the remaining un-matched functions look to be the least complex.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9181/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了如何通过切换到 Claude Opus 4.5 和 Code 来加速 N64 游戏的反编译，这种单次反编译方法显著提升了逆向工程的效率。",
+  "oneSentenceSummary": "本文详细介绍了如何通过切换到 Claude Opus 4.5 和 Code 来加速 N64 游戏的反编译，这种单次反编译方法显著提升了逆向工程的效率。",
+  "summary": "本文重点介绍了 Chris Lewis 在反编译 Nintendo 64 游戏《滑雪少年 2》方面取得的重大进展。他使用了 Anthropic 的 Claude Opus 4.5 和 Code。最初，该项目采用“匹配”反编译过程，涉及细致的 MIPS 汇编分析和 C 代码重现。然而，通过 Claude（特别是 Claude Opus 4.5 和 Code）转向单次反编译方法，实现了大规模的加速。一个关键的战略决策是以非交互模式使用 Claude，优先反编译复杂度较低的函数，这些函数通过启发式评分系统识别。这种方法上的创新使得匹配代码迅速增加，突显了大型语言模型在专业、复杂的逆向工程任务中出人意料的有效性。",
+  "mainPoints": [
+    {
+      "point": "Claude Opus 4.5 和 Code 通过单次反编译方法显著加速了 N64 游戏的反编译。",
+      "explanation": "通过切换到高级 Claude 模型，该项目在将 MIPS 汇编匹配到 C 代码的速度方面出现了显著提高，表明大型语言模型在逆向工程中具有强大而高效的应用。"
+    },
+    {
+      "point": "使用 AI 代理优先处理简单的功能可以提高生产力。",
+      "explanation": "通过战略性地使用 Claude 首先处理复杂度较低的函数，并在启发式评分系统的指导下，显著提升了生产力。这展示了 AI 辅助任务中有效的工作流程优化。"
+    },
+    {
+      "point": "使用大型语言模型进行单次反编译可以重现 N64 时代的习惯 C 代码。",
+      "explanation": "生成不仅可以正确编译，而且还可以模仿人工编写的、符合 N64 时代习惯的 C 代码的目标表明，大型语言模型可以为复杂的逆向工程挑战生成高质量、符合上下文的代码。"
+    }
+  ],
+  "keyQuotes": [
+    "匹配的反编译过程包括分析 MIPS 汇编，推断其行为，并编写 C 代码。当使用相同的工具链和设置进行编译时，可以重现完全相同的代码：相同的寄存器、延迟槽和指令顺序。",
+    "一个好的匹配不仅仅是可以编译成正确字节的 C 代码，它应该看起来像是 N64 时代的开发人员可能会编写的东西：简单、符合习惯的 C 控制流和合理的数据结构。",
+    "通过切换到以非交互模式使用 Claude Code，并首先处理不太复杂的函数（即最容易实现的部分），从而释放了巨大的生产力提升。"
+  ],
+  "tags": [
+    "反编译",
+    "大型语言模型",
+    "Claude",
+    "N64 游戏",
+    "逆向工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 242,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765045856000,
+  "publishDateStr": "2025-12-06",
+  "publishDateTimeStr": "2025-12-06 18:30:56"
+}

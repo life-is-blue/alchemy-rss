@@ -1,0 +1,61 @@
+{
+  "id": "RAW_2de5b7",
+  "title": "如何加速我的代理？",
+  "url": "https://blog.langchain.dev/how-do-i-speed-up-my-agent/",
+  "date": "2025-03-15 18:34:47",
+  "author": "Harrison Chase",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I get this question a bunch. Developers generally first spend time getting the agent to work, but then they turn their attention to speed and cost. There are few things we see developers doing:</p>\n  <ul>\n   <li>Identifying where the latency is coming from</li>\n   <li>Changing the UX to reduce the “perceived” latency</li>\n   <li>Making fewer LLM calls</li>\n   <li>Speeding up LLM calls</li>\n   <li>Making LLM calls in parallel</li>\n  </ul>\n  <h2 id=\"identifying-where-the-latency-is-coming-from\">Identifying where the latency is coming from</h2>\n  <p>This may sound basic, but how you approach reducing latency will depend entirely on your specific bottleneck. Is the latency coming from one big LLM call, or from multiple small ones that just add up? You’ll need to diagnose these before trying to speed it up.</p>\n  <p><a href=\"http://langchain.com/langsmith?ref=blog.langchain.dev\">LangSmith</a> is an incredibly useful tool for this, providing complete visibility into your agent interactions. You can track the latency of each step of the agent, and we’ve also recently introduced a “waterfall” view to easily identify which steps contribute the most to overall latency.</p>\n  <h2 id=\"changing-the-ux-to-reduce-the-%E2%80%9Cperceived%E2%80%9D-latency\">Changing the UX to reduce the “perceived” latency</h2>\n  <p>Sometimes, the easiest way to reduce latency… is to not reduce latency.</p>\n  <p>While it might seem counterintuitive at first, but if we think about why latency matters — it often matters because people are concerned that if the agent takes too long to run, the user won’t like using it. This can often be solved by updating the UX of the agent. We see two main ways people do this.</p>\n  <ul>\n   <li><strong>Stream back results.</strong> Streaming is pretty common place for most LLM applications, but if you aren’t doing it, you definitely should. It conveys to the user that the LLM is working, and they are less likely to leave the page.In addition to streaming response tokens, you can also stream things beyond just the final response. For example, you could stream the steps of the plan the agent is taking, the retrieval results, or the thinking tokens. <a href=\"https://www.langchain.com/breakoutagents/perplexity?ref=blog.langchain.dev\">Perplexity does a fantastic job at this</a> with their search interface. They’ve found that by making a UI change to show these intermediate steps, user satisfaction improved — despite the total completion time remaining unchanged.</li>\n   <li><strong>Run agents in the background</strong>. Have agents running in the background. For my email assistant, I don’t have visibility into how long the email agent takes. That’s because it is triggered by an event (an email) and I only get notified when it’s stuck. I hide <strong>all</strong> the latency from the user, and the agent just runs in the background.</li>\n  </ul>\n  <h2 id=\"making-fewer-llm-calls\">Making fewer LLM calls</h2>\n  <p>Not everything needs to be an LLM call. If you can do things in a way other than making an LLM call - great! The agents we see being built are a combination of LLM calls and code. This hybrid approach of combining code with LLM calls is one of the guiding principles of LangGraph, and a core reason why <a href=\"https://blog.langchain.dev/is-langgraph-used-in-production/\">companies like Replit, Uber, LinkedIn and Klarna are adopting it</a>.</p>\n  <p>A common path we see is “Single LLM call” → “ReAct Agent” → “Multi Agent” → “LangGraph”.</p>\n  <p>People start with a single LLM call. They run into some short comings, and step up to an agent. This works okay, but then they try to give it more tools and realize that a single agent can only support so many tools. They then go to a “multi-agent” setup, using a supervisor or swarm architecture.</p>\n  <p>The issue with this is that these architectures use a LOT of LLM calls. They are not super efficient in how the different agents communicate. That is by design - they are general purpose architectures, so they are not optimized for your use case.</p>\n  <p>That is when we see people reach for <a href=\"http://langchain.com/langgraph?ref=blog.langchain.dev\">LangGraph</a>. LangGraph is low level, and allows you to specify exactly how these agents should communicate with each other (or when something is just an LLM call). Often times this leads to significantly less LLM calls, making the agent faster and cheaper (and often more reliable).</p>\n  <h2 id=\"speeding-up-llm-calls\">Speeding up LLM calls</h2>\n  <p>We generally see two ways developers have been speeding up LLM calls.</p>\n  <p><strong>Faster models</strong>. Some models are faster than others. Google offers Gemini Flash which is very fast. OpenAI and Anthropic also have smaller, faster models. Open source model hosting platforms like Groq and Fireworks are constantly trying to make the best open source models faster and faster. Note: this often comes with a tradeoff of using <strong>worse</strong> models, as these faster models are usually smaller and thus less accurate.</p>\n  <p><strong>Less context.</strong> The time an LLM takes to respond is proportional to the length of the input. In order to get faster results, you can pass less input! This is why you need to have <strong>full control and visibility</strong> over what <strong>exactly</strong> goes into each LLM call. Frameworks that obfuscate this (or don’t make it easy to control) are no good - that is why LangGraph comes with no hidden prompts — you have full control. If you are looking for a way to get better <strong>visibility</strong> into what is going into the LLM calls - check out LangSmith.</p>\n  <h2 id=\"making-llm-calls-in-parallel\">Making LLM calls in parallel</h2>\n  <p>Not applicable to all use cases, but if it is for your use case you should be doing this. LangGraph <a href=\"https://langchain-ai.github.io/langgraph/how-tos/branching/?ref=blog.langchain.dev\">supports parallelism</a> out of the box. Examples of where you can think about doing this:</p>\n  <ul>\n   <li>Doing a guardrail check and generation in parallel</li>\n   <li>Doing extraction from multiple documents in parallel</li>\n   <li>Calling multiple models in parallel and then combining the outputs</li>\n  </ul>\n  <h2 id=\"conclusion\">Conclusion</h2>\n  <p>Speeding up your AI agent is ultimately about making strategic tradeoffs between performance, cost, and capability. Start by first understanding your specific performance bottlenecks, then apply these techniques selectively based on your use case. And sometimes the most effective method isn't technical at all —&nbsp;but rather rethinking how users experience the interaction with your agent.</p>\n  <p>As you try out new strategies, we'd love to hear from you — what techniques have worked best for speeding up your agent? Drop us a line on <a href=\"https://x.com/LangChainAI?ref=blog.langchain.dev\">X</a> or <a href=\"https://www.linkedin.com/company/langchain/?ref=blog.langchain.dev\">LinkedIn</a>.</p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了优化 LangChain 代理速度的多种策略，包括识别瓶颈、优化体验、减少/加速/并行化 LLM 调用。",
+  "oneSentenceSummary": "本文介绍了优化 LangChain 代理速度的多种策略，包括识别瓶颈、优化体验、减少/加速/并行化 LLM 调用。",
+  "summary": "文章深入探讨了如何提升 LangChain 代理的速度和效率。首先强调了识别延迟瓶颈的重要性，建议使用 LangSmith 等工具进行诊断。其次，提出了通过优化用户体验以降低用户感知延迟的策略，例如流式传输结果和后台运行代理。接着，讨论了如何通过结合代码和 LLM 调用、使用 LangGraph 等方法来减少 LLM 调用次数。此外，还介绍了加速 LLM 调用的两种方式：使用更快的模型和减少上下文。最后，强调了在适用场景下并行处理 LLM 调用的重要性，并提供了使用 LangGraph 实现并行处理的示例。文章总结了优化代理速度需要在性能、成本和能力之间进行权衡，并鼓励开发者分享实践经验。",
+  "mainPoints": [
+    {
+      "point": "识别延迟瓶颈是优化代理速度的关键步骤",
+      "explanation": "使用 LangSmith 等工具可以帮助开发者诊断代理交互中的延迟来源，从而有针对性地进行优化。"
+    },
+    {
+      "point": "优化用户体验可以有效减少用户感知延迟",
+      "explanation": "通过流式传输结果和后台运行代理等方式，可以在不实际减少延迟的情况下，提升用户满意度。"
+    },
+    {
+      "point": "减少 LLM 调用次数可以显著提升代理速度和降低成本",
+      "explanation": "结合代码和 LLM 调用、使用 LangGraph 等方法可以减少不必要的 LLM 调用，从而提高效率。"
+    },
+    {
+      "point": "加速 LLM 调用是提高代理速度的有效途径",
+      "explanation": "选择更快的模型（如 Google Gemini Flash）或减少输入上下文长度，可以在一定程度上提升 LLM 调用的速度。但需注意，更快的模型可能牺牲一定的准确性。"
+    },
+    {
+      "point": "并行处理 LLM 调用可以在适用场景下显著提升代理效率",
+      "explanation": "LangGraph 支持并行处理，适用于安全检查、多文档信息抽取、多模型并行调用等场景。"
+    }
+  ],
+  "keyQuotes": [
+    "有时候，减少延迟最简单的方法...就是不去减少延迟。",
+    "并非所有事情都需要通过 LLM 调用来实现。如果可以通过其他方式完成，那就太好了！",
+    "加速你的 AI 代理最终是在性能、成本和能力之间进行战略性权衡。"
+  ],
+  "tags": [
+    "LangChain",
+    "AI 代理",
+    "LLM",
+    "性能优化",
+    "性能调优"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 990,
+  "domain": "blog.langchain.dev",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1742063687000,
+  "publishDateStr": "2025-03-15",
+  "publishDateTimeStr": "2025-03-15 18:34:47"
+}

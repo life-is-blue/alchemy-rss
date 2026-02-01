@@ -1,0 +1,57 @@
+{
+  "id": "RAW_6a2590ef",
+  "title": "Spring Data 2025.1.0 GA 版本发布",
+  "url": "https://spring.io/blog/2025/11/14/spring-data-2025-1-goes-ga",
+  "date": "2025-11-14 00:00:00",
+  "author": "mp911de",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Dear Spring Data community,</p>\n  <p>On behalf of the data team, it is my pleasure to announce that Spring Data 2025.1 is generally available from Maven Central now! The 4.0 generation comes with several key themes:</p>\n  <ul>\n   <li><strong>Upgrade to Spring Framework 7</strong></li>\n   <li><strong>Upgrade to Jakarta EE 11 (JPA 3.2, Servlet 6.1)</strong></li>\n   <li><strong><a href=\"https://docs.spring.io/spring-data/jpa/reference/jpa/aot.html#aot.repositories\">Ahead-of-Time Repositories</a></strong></li>\n   <li><strong><a href=\"https://jspecify.dev/\">Comprehensive null safety through JSpecify</a></strong></li>\n   <li><strong>Add support for Jackson 3</strong></li>\n   <li><strong><a href=\"https://docs.spring.io/spring-data/jpa/reference/repositories/vector-search.html\">Vector Search Methods</a></strong></li>\n  </ul>\n  <p>Ahead-of-Time Repositories bring the benefits of <a href=\"https://docs.spring.io/spring-framework/reference/core/aot.html\">AOT compilation</a> to Spring Data repositories, enabling faster startup times and reduced memory consumption for applications using Spring Data JPA, MongoDB, JDBC, and Cassandra. AOT Repositories provide additional documentation metadata as JSON file for each AOT repository. Ahead-of-Time Repositories are generated during the AOT build phase and utilized when your application is started in AOT mode (on the JVM or as GraalVM Native image).</p>\n  <p>All Spring Data projects now use <a href=\"https://jspecify.dev/\">JSpecify</a> annotations to express parameter and return-value nullability. JSpecify allows for better static analysis and improved code quality when using Spring Data in conjunction with tools that support JSpecify stopping the sprawl of dormant and every-project-has-one nullability annotations.</p>\n  <p><a href=\"https://github.com/FasterXML/jackson/blob/main/jackson3/MIGRATING_TO_JACKSON_3.md\">Jackson 3</a> is the next major version of the popular JSON processing library. Spring Data provides first-class Jackson 3 experience while retaining broad Jackson 2 compatibility. Jackson 3 uses different artifact coordinates and packages, however, Jackson 2 and Jackson 3 share a common annotations library to ease transition. Most Spring Data modules have deprecated their Jackson 2 support and ship with Jackson 3-variants. The only exception is Spring Data REST that is essentially a large wrapper around Jackson. Therefore, Spring Data REST cannot provide dual-version Jackson support requiring Jackson 3.</p>\n  <p>Vector Search Methods enable Vector Search through Spring Data Repositories in JPA (through <code>hibernate-vector</code>), Apache Cassandra, MongoDB, and Neo4j. Using Vector Search from Spring Data bridges the gap between pure content-oriented vector indexes towards an entity-centric design that allows for usage of existing data models in the context of AI.</p>\n  <p>Check out our <a href=\"https://github.com/spring-projects/spring-data-commons/wiki/Spring-Data-2025.1-Release-Notes\">Release Notes wiki page</a> for details about specific features in Spring Data 4.0.</p>\n  <p>Cheers, Mark</p>\n </body>\n</html>",
+  "aiSummary": "Spring Data 2025.1.0 GA 版本发布，包含 Spring Framework 7 和 Jakarta EE 11 升级，AOT 仓库提升性能，JSpecify 保证空安全，以及 Jackson 3 支持等特性...",
+  "oneSentenceSummary": "Spring Data 2025.1.0 GA 版本发布，包含 Spring Framework 7 和 Jakarta EE 11 升级，AOT 仓库提升性能，JSpecify 保证空安全，以及 Jackson 3 支持等特性...",
+  "summary": "本文宣布 Spring Data 2025.1 GA 版本的发布，开启了 4.0 时代，为现代应用程序开发带来了一系列重大增强。此版本的主要特性包括对 Spring Framework 7 和 Jakarta EE 11 (JPA 3.2， Servlet 6.1) 的基础升级，确保与最新的企业 Java 标准保持一致。一项关键的性能创新是引入了 AOT 仓库。它利用提前编译技术，加快 Spring Data JPA、MongoDB、JDBC 和 Cassandra 应用程序的启动时间，并减少内存消耗，尤其有利于 GraalVM Native Image 部署。为了提高代码质量和可维护性，现在通过 JSpecify 注解集成了完整的空安全机制，为改进静态分析提供了标准化的可空性表达式。此外，Spring Data 2025.1 还提供对流行的 JSON 处理库 Jackson 3 的一流支持，同时管理与 Jackson 2 的兼容性。一个突出的特点是包含了向量搜索方法，支持将向量搜索功能无缝集成到 Spring Data 仓库中，用于各种数据库，如 JPA (通过 `hibernate-vector`)、Apache Cassandra、MongoDB 和 Neo4j。这项创新有效地将现有的实体中心化数据模型与 AI 驱动的向量索引连接起来，为智能应用程序开辟了新的可能性。总的来说，这个版本为那些旨在 Spring 生态系统中构建高性能、健壮且支持 AI 的应用程序的开发人员提供了巨大的价值。",
+  "mainPoints": [
+    {
+      "point": "Spring Data 2025.1 通过 AOT 仓库显著提高了性能。",
+      "explanation": "AOT 仓库利用提前编译来减少应用程序启动时间和内存占用，这对于云原生部署和 GraalVM Native Images 尤其重要。"
+    },
+    {
+      "point": "向量搜索方法的引入将传统数据模型与 AI 能力连接起来。",
+      "explanation": "此功能允许开发人员将向量搜索功能无缝集成到现有 Spring Data 仓库中，用于各种数据库。它支持实体中心化设计，从而促进智能应用程序的开发，这些应用程序可以利用 AI 驱动的向量索引以及传统数据模型。"
+    },
+    {
+      "point": "通过 JSpecify 实现的全面空安全提高了代码质量和静态分析。",
+      "explanation": "采用 JSpecify 标准化可空性注解，减少了歧义，并改进了工具支持，以便在编译时检测潜在的 `NullPointerExceptions`，从而实现更健壮和可靠的应用程序。"
+    },
+    {
+      "point": "此版本确保了与主要生态系统升级的兼容性和现代化。",
+      "explanation": "升级到 Spring Framework 7、Jakarta EE 11 (JPA 3.2， Servlet 6.1) 以及对 Jackson 3 的一流支持，使 Spring Data 与最新的行业标准保持一致，从而提供了一个健壮且最新的开发环境。"
+    }
+  ],
+  "keyQuotes": [
+    "AOT 仓库将 AOT 编译的优势带到 Spring Data 仓库，从而加快了使用 Spring Data JPA、MongoDB、JDBC 和 Cassandra 的应用程序的启动时间并减少了内存消耗。",
+    "所有 Spring Data 项目现在都使用 JSpecify 注解来表达参数和返回值的可空性。当在支持 JSpecify 的工具中使用 Spring Data 时，JSpecify 可以实现更好的静态分析和改进的代码质量，避免了可空性注解的过度分散和重复定义。",
+    "向量搜索方法通过 Spring Data 仓库在 JPA (通过 `hibernate-vector`)、Apache Cassandra、MongoDB 和 Neo4j 中启用向量搜索。从 Spring Data 使用向量搜索弥合了纯粹面向内容的向量索引与以实体为中心的设计之间的差距，从而允许在 AI 上下文中使用现有数据模型。"
+  ],
+  "tags": [
+    "Spring Data",
+    "软件架构",
+    "Java",
+    "AOT",
+    "向量搜索"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 336,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763078400000,
+  "publishDateStr": "2025-11-14",
+  "publishDateTimeStr": "2025-11-14 00:00:00"
+}

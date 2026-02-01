@@ -1,0 +1,54 @@
+{
+  "id": "RAW_90d09236",
+  "title": "LLM-Evalkit 介绍",
+  "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-llm-evalkit/",
+  "date": "2025-10-14 00:00:00",
+  "author": "Mike Santoro, Vipin Nair",
+  "siteName": "Google Cloud Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" class=\" \">\n    <p><span style=\"vertical-align:baseline\">If you've worked with Large Language Models (LLMs), you're likely familiar with this scenario: your team's prompts are scattered across documents, spreadsheets, and different cloud consoles. Iterating is often a manual and inefficient process, making it difficult to track which changes actually improve performance.&nbsp;</span></p>\n    <p><span style=\"vertical-align:baseline\">To address this, we’re introducing </span><a href=\"https://github.com/GoogleCloudPlatform/generative-ai/tree/main/tools/llmevalkit\" rel=\"noopener\" target=\"_blank\"><span style=\"text-decoration:underline;vertical-align:baseline\">LLM-Evalkit</span></a><span style=\"vertical-align:baseline\">, a light-weight, open-source application designed to bring structure to this process. LLM-Evalkit is a practical lightweight framework built on Vertex AI SDKs using Google Cloud that centralizes and streamlines prompt engineering, enabling teams to track objective metrics and iterate more effectively.</span></p>\n    <h3><strong style=\"vertical-align:baseline\">Centralizing a disparate workflow</strong></h3>\n    <p><span style=\"vertical-align:baseline\">Currently, managing prompts on Google Cloud can involve juggling several tools. A developer might experiment in one console, save prompts in a separate document, and use another service for evaluation. This fragmentation leads to duplicated effort and makes it hard to establish a standardized evaluation process. Different team members might test prompts in slightly different ways, leading to inconsistent results.</span></p>\n    <p><span style=\"vertical-align:baseline\">LLM-Evalkit solves this by abstracting these disparate tools into a single, cohesive application. It provides a centralized hub for all prompt-related activities, from creation and testing to versioning and benchmarking. This unification simplifies the workflow, ensuring that all team members are working from the same playbook. With a shared interface, you can easily track the history and performance of different prompts over time, creating a reliable system of record.</span></p>\n   </div>\n  </section>\n  <section class=\"k6ctOd\">\n   <aside class=\"IwVNTb\">\n    <div class=\"ecJG2e nRhiJb-ObfsIf\">\n     <div class=\"nRhiJb-kR0ZEf-OWXEXe-GV1x9e-OiUrBf nRhiJb-snVHke-ibL1re-X66g3b nRhiJb-snVHke-R6PoUb-UFsB2c\">\n      <h4 class=\"Qwf2Db-MnozTc Qwf2Db-MnozTc-OWXEXe-MnozTc-qWD73c\">$300 in free credit to try Google Cloud AI and ML</h4>\n      <div class=\"nRhiJb-qJTHM nRhiJb-DbgRPb-R6PoUb-ma6Yeb\">\n       <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" class=\" \">\n        <p>Build and test your proof of concept with $300 in free credit for new customers. Plus, all customers get free monthly usage of 20+ products, including AI APIs.\n         <br>\n         <a href=\"http://console.cloud.google.com/freetrial?redirectPath=/vertex-ai/\">Start building for free</a></p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </aside>\n  </section>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" class=\" \">\n    <h3><strong style=\"vertical-align:baseline\">From guesswork to measurement</strong></h3>\n    <p><span style=\"vertical-align:baseline\">Too often, teams iterate on prompts based on subjective \"feel\" or a few example outputs. While this can work initially, it doesn't scale and makes it difficult to justify why one prompt is truly better than another.</span></p>\n    <p><span style=\"vertical-align:baseline\">LLM-Evalkit encourages a shift in focus from the prompt itself to the problem you're trying to solve. The methodology is straightforward:</span></p>\n    <ol>\n     <li style=\"list-style-type:decimal;vertical-align:baseline\">\n      <p><strong style=\"vertical-align:baseline\">Start with a specific problem:</strong><span style=\"vertical-align:baseline\"> Clearly define the task you want the LLM to perform.</span></p>\n     </li>\n     <li style=\"list-style-type:decimal;vertical-align:baseline\">\n      <p><strong style=\"vertical-align:baseline\">Gather or create a relevant dataset:</strong><span style=\"vertical-align:baseline\"> Build a set of test cases that represent the kinds of inputs the model will see.</span></p>\n     </li>\n     <li style=\"list-style-type:decimal;vertical-align:baseline\">\n      <p><strong style=\"vertical-align:baseline\">Build concrete measurements:</strong><span style=\"vertical-align:baseline\"> Define objective metrics to score the model's outputs against your dataset.</span></p>\n     </li>\n    </ol>\n    <p><span style=\"vertical-align:baseline\">This approach allows for systematic, data-driven iterations. Instead of guessing whether a new prompt is an improvement, you can measure its performance against a consistent benchmark. Progress can be tracked against objective metrics, making it clear which changes lead to better, more reliable results.</span></p>\n    <h3><strong style=\"vertical-align:baseline\">Empowering teams with a no-code approach</strong></h3>\n    <p><span style=\"vertical-align:baseline\">Prompt engineering shouldn't be limited to those who are comfortable with complex tooling and code. When only a few technical team members can effectively build and test prompts, it creates a bottleneck that slows down the development cycle.</span></p>\n    <p><span style=\"vertical-align:baseline\">LLM-Evalkit addresses this with a no-code, user-friendly interface. The goal is to make prompt engineering accessible to a wider range of team members, including product managers, UX writers, and subject matter experts who have valuable domain knowledge but may not be developers. By democratizing the process, teams can iterate more quickly, test a wider range of ideas, and foster better collaboration between technical and non-technical stakeholders.</span></p>\n   </div>\n  </section>\n  <section class=\"QzPuud\">\n   <div>\n    <section>\n     <figure class=\"NEBdNd\">\n      <section class=\"PBkdHd DhGbH\" jscontroller=\"SCGBie\" jsaction=\"rcuQ6b:npT2md\">\n       <img class=\"JcsBte mZzdH ZOnyjc\" src=\"https://storage.googleapis.com/gweb-cloudblog-publish/original_images/image1_k34bZ9U.gif\" alt=\"https://storage.googleapis.com/gweb-cloudblog-publish/original_images/image1_k34bZ9U.gif\" jsname=\"P3Vluc\" jsaction=\"click:HTIlC\" loading=\"lazy\">\n      </section>\n     </figure>\n    </section>\n   </div>\n  </section>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" class=\" \">\n    <h3><strong style=\"vertical-align:baseline\">Get started</strong></h3>\n    <p><span style=\"vertical-align:baseline\">LLM-Evalkit is designed to bring a more systematic and collaborative approach to prompt engineering. By providing a centralized, metric-driven, and no-code framework, it helps teams move from ad-hoc experimentation to a more structured and efficient workflow.</span></p>\n    <p><span style=\"vertical-align:baseline\">We encourage you to try it out. You can find the </span><a href=\"https://github.com/GoogleCloudPlatform/generative-ai/tree/main/tools/llmevalkit\" rel=\"noopener\" target=\"_blank\"><span style=\"text-decoration:underline;vertical-align:baseline\">open-source repository</span></a><span style=\"vertical-align:baseline\"> and documentation on our GitHub. We look forward to seeing how your teams use it to build more effectively with LLMs. </span><span style=\"vertical-align:baseline\">For the most up-to-date evaluation features, you can explore them directly in the </span><a href=\"https://console.cloud.google.com/vertex-ai/evaluation/create\"><span style=\"text-decoration:underline;vertical-align:baseline\">Google Cloud console</span></a><span style=\"vertical-align:baseline\">. If you prefer a guided approach, a specific console </span><a href=\"https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-genai-console\"><span style=\"text-decoration:underline;vertical-align:baseline\">tutorial</span></a><span style=\"vertical-align:baseline\"> is available to walk you through the process, providing you with flexible options for all your prompt engineering needs.</span></p>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "LLM-Evalkit 是谷歌云的开源框架，旨在集中管理、评估和简化提示工程，并采用零代码方法。",
+  "oneSentenceSummary": "LLM-Evalkit 是谷歌云的开源框架，旨在集中管理、评估和简化提示工程，并采用零代码方法。",
+  "summary": "本文介绍 LLM-Evalkit (大型语言模型评估工具包)，这是一个轻量级的开源应用程序，构建于 Vertex AI SDK 之上，旨在解决当前大型语言模型提示工程工作流程中的碎片化和低效问题。它集中管理提示，允许团队在统一的中心创建、测试和版本控制提示，从而消除分散的文档和不一致的测试流程。LLM-Evalkit 能够针对特定数据集和指标客观地衡量提示性能，从而取代主观猜测，促进数据驱动的方法。此外，它提供了一个零代码、用户友好的界面，以普及提示工程。产品经理、UX 文案等非开发人员也能方便使用 LLM-Evalkit，从而促进协作并加速开发周期。该工具旨在为 LLM 开发带来结构和效率。",
+  "mainPoints": [
+    {
+      "point": "LLM-Evalkit 将不同的提示工程工作流程集中到一个有凝聚力的应用程序中。",
+      "explanation": "它统一了提示的创建、测试、版本控制和基准测试流程，消除了流程分散的问题，并确保团队方法一致，从而形成可靠的记录系统。"
+    },
+    {
+      "point": "它将提示迭代从主观猜测转变为客观的、数据驱动的衡量。",
+      "explanation": "通过定义具体问题、收集相关数据集和构建具体指标，团队可以系统地衡量和跟踪提示性能，从而实现更可靠的改进。"
+    },
+    {
+      "point": "该框架通过一个零代码、用户友好的提示工程界面，为不同的团队赋能。",
+      "explanation": "这种可访问性普及了该过程，允许产品经理和主题专家等非技术人员贡献想法，从而加速迭代并促进协作。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM-Evalkit 是一个实用的轻量级框架，构建于使用谷歌云的 Vertex AI SDK 之上。它集中并简化了提示工程，使团队能够跟踪客观指标并更有效地迭代。",
+    "LLM-Evalkit 通过将这些不同的工具抽象成一个单一的、有凝聚力的应用程序来解决这个问题。它为所有与提示相关的活动提供了一个集中的中心，从创建和测试到版本控制和基准测试。",
+    "LLM-Evalkit 鼓励将重点从提示本身转移到您试图解决的实际问题上。",
+    "LLM-Evalkit 通过一个零代码、用户友好的界面来解决这个问题。目标是让更广泛的团队成员可以访问提示工程。"
+  ],
+  "tags": [
+    "提示工程",
+    "LLM 评估",
+    "开源",
+    "谷歌云",
+    "Vertex AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 651,
+  "domain": "cloud.google.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_bc3236",
+  "sourceName": "Google Cloud Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760400000000,
+  "publishDateStr": "2025-10-14",
+  "publishDateTimeStr": "2025-10-14 00:00:00"
+}

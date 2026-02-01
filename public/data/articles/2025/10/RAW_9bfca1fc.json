@@ -1,0 +1,63 @@
+{
+  "id": "RAW_9bfca1fc",
+  "title": "独家专访 AirPods 团队：一只小小的耳机，如何学会追踪 50 种运动？",
+  "url": "https://www.ifanr.com/1640497?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-10-15 23:32:04",
+  "author": "何宗丞",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <hr>\n  <p><img class=\"aligncenter size-full wp-image-1640503\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-02-ROW-250909.jpg!720\" alt=\"\" width=\"3840\" height=\"2160\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-02-ROW-250909.jpg!720 3840w, https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-02-ROW-250909-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-02-ROW-250909-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-02-ROW-250909-1024x576.jpg 1024w\" sizes=\"(max-width: 3840px) 100vw, 3840px\"></p>\n  <p>带心率监测的耳机，并非苹果首创。</p>\n  <p>过去十年，Jabra、Sennheiser、Beats 都在这条赛道上尝试，但这些锦上添花的功能都让<a href=\"https://www.tomsguide.com/audio/airpods/i-compared-the-apple-airpods-pro-3s-heart-rate-readings-vs-a-chest-strap-and-the-results-shocked-me?utm_source=chatgpt.com\">没能打动 Nick Harris-Fry</a>，作为资深跑者、Tom’s Guide 的健身编辑，他几乎试遍了所有品牌的心率耳机，结论却始终一致：没有一副耳机能与胸带的精度相提并论。</p>\n  <p>胸带，那条勒在胸口略显不便的装置，至今仍是普通消费者能买到的最可靠的心率监测设备。</p>\n  <p>直到 AirPods Pro 3 的出现。</p>\n  <p>Nick Harris-Fry 以 Garmin HRM600 胸带（电信号级精度）作为对照，结果发现 AirPods Pro 3 的心率曲线几乎与胸带重合，尤其在稳态跑与间歇跑这种对精度要求极高的场景下，两条曲线如同镜像般贴合。</p>\n  <p><img class=\"aligncenter size-full wp-image-1640500\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/zhqgCzeYqJxzXe24zCLhyj-1200-80.png.jpeg!720\" alt=\"\" width=\"1200\" height=\"372\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/zhqgCzeYqJxzXe24zCLhyj-1200-80.png.jpeg!720 1200w, https://s3.ifanr.com/wp-content/uploads/2025/10/zhqgCzeYqJxzXe24zCLhyj-1200-80.png-360x112.jpeg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/zhqgCzeYqJxzXe24zCLhyj-1200-80.png-768x238.jpeg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/zhqgCzeYqJxzXe24zCLhyj-1200-80.png-1024x317.jpeg 1024w\" sizes=\"(max-width: 1200px) 100vw, 1200px\"></p>\n  <p>更令人惊讶的是，它能在播放音乐的同时，感知你的心跳频率、判断步伐节奏,并实时识别超过 50 种运动类型。</p>\n  <p>AirPods Pro 3 是如何实现的？</p>\n  <p>为了找到答案，<strong>爱范儿专访了苹果感知与连接副总裁 Ron Huang 与健康感知总监 Steve Waydo</strong>，在这场对话中，我们试图理解的不仅是一项新技术的工作原理，更是苹果如何思考「身体」这个终极界面。</p>\n  <h3>耳道，也许比手腕更懂你</h3>\n  <p>从生理结构上看，耳道是一块天然的传感「黄金地带」。它靠近颞浅动脉，血流灌注稳定，又被外耳包裹，几乎没有外界光线干扰。</p>\n  <p>这些特性，让耳道成为比手腕更理想的生理信号采集点。</p>\n  <p><img class=\"aligncenter size-full wp-image-1640501\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/sensors-23-06484-g001.jpg!720\" alt=\"\" width=\"749\" height=\"476\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/sensors-23-06484-g001.jpg!720 749w, https://s3.ifanr.com/wp-content/uploads/2025/10/sensors-23-06484-g001-360x229.jpg 360w\" sizes=\"(max-width: 749px) 100vw, 749px\"></p>\n  <p><a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC10384007/?utm_source=chatgpt.com\">美国一篇论文</a>《可穿戴光电容积脉搏波分析原理及其在生理监测中的应用》明确指出：</p>\n  <blockquote>\n   <p>耳道 PPG（光电容积描记）信号在血管分布、抗运动干扰和环境光抑制方面，优于腕部与指端。</p>\n  </blockquote>\n  <p>相比之下，手腕是一个充满变数的测量场域。肌肉频繁运动，摆臂幅度剧烈，汗液、毛发乃至肤色都会干扰光信号的传播。</p>\n  <p>苹果健康感知总监 Steve Waydo 在实验中反复验证了这一点：在力量训练、划船等需要握紧器械的场景下，腕部设备往往难以稳定测心率，而耳机测到的血流信号更加连贯。</p>\n  <p><img class=\"aligncenter size-full wp-image-1640499\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/AZ9Nq2DPP5LVSWgAL8d3qj.gif\" alt=\"\" width=\"728\" height=\"400\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/AZ9Nq2DPP5LVSWgAL8d3qj.gif 728w, https://s3.ifanr.com/wp-content/uploads/2025/10/AZ9Nq2DPP5LVSWgAL8d3qj-360x198.gif 360w\" sizes=\"(max-width: 728px) 100vw, 728px\"></p>\n  <p>在耳道这个暗箱式环境中，AirPods Pro 3 采用了红外光 PPG（IR PPG） 方案————有别于市面上大多数设备使用的绿色 LED 光源。</p>\n  <p>Steve Waydo 解释说，红外光的能耗更低，也避免了「耳朵冒绿光」的尴尬。</p>\n  <p>更重要的考量是，红外波长更深，穿透力更强，能够深入血管密集的耳道组织，捕捉到更干净、更稳定的脉冲信号。</p>\n  <p>AirPods Pro 3 的传感器每秒脉冲约 250–256 次红外光，同时结合 IMU（加速度计与陀螺仪） 数据，用来消除运动伪影——比如跑步时脚步触地带来的节奏性震动，或者转头时产生的加速度变化。</p>\n  <p>这种光学信号与动态数据融合的算法，是 AirPods Pro 3 能在运动中保持心率精度的关键。它不是单一传感器的胜利，而是多模态数据协同的结果。</p>\n  <p>苹果感知与连接副总裁 Ron Huang 补充说：</p>\n  <blockquote>\n   <p>当用户同时佩戴 Apple Watch 和 AirPods Pro 3 时，系统会在最近 5 分钟的信号里滚动比较，并自动选择更可靠的来源。</p>\n  </blockquote>\n  <p>例如在力量训练中，手部抓握动作较多，腕部设备的数据会受到干扰，系统就会更多优先选择来自耳道的心率信号。</p>\n  <p>从这个角度看，Apple Watch 和 AirPods Pro 并不是为了相互取代，而是为了在不同场景下互为补充，共同在为同一个身体建立更完整更真实的数字镜像。</p>\n  <h3>十年算法的缩小成果</h3>\n  <p>Waydo 的团队从 Apple Watch 诞生之初就开始积累算法。那套神经网络原本是为手腕设计的，针对的是腕部血管的光学特性、手臂摆动的运动模式、皮肤组织的光散射规律。</p>\n  <p>但令人意外的是，这十年的积累并未因平台切换而作废——它们成为了 AirPods 心率传感器开发的基</p>\n  <p>由于耳机的空间极为有限，AirPods Pro 3 使用的是 Apple Watch 心率算法的「小型化版本」。</p>\n  <p>他们从原型耳机中采集到的大量数据，进一步微调模型，使其在极端条件下也能准确追踪心率。测试包括不同肤色、耳型、温湿度和运动强度，甚至在寒冷气候中仍保持稳定。</p>\n  <p>「贴合度」是在采访中被反复提到的一个关键词，它不仅关乎声学体验——主动降噪的效果、空间音频的沉浸感，更直接决定了生理数据的准确性。</p>\n  <blockquote>\n   <p>当耳塞贴合良好时，双耳协同的心率读数非常精准。</p>\n  </blockquote>\n  <p>Steve Waydo 说。</p>\n  <p>这也是苹果在 AirPods Pro 3 上重新设计入耳结构、优化硅胶耳塞形状、升级自适应调音算法的隐性原因——那些看似为了声音的改进，同时也在为生理监测铺路。</p>\n  <h3>像大语言模型那样：如何让耳机理解 50 种动作？</h3>\n  <p><img class=\"aligncenter size-full wp-image-1640502\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-01-ROW-250909.jpg!720\" alt=\"\" width=\"3840\" height=\"2160\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-01-ROW-250909.jpg!720 3840w, https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-01-ROW-250909-360x203.jpg 360w, https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-01-ROW-250909-768x432.jpg 768w, https://s3.ifanr.com/wp-content/uploads/2025/10/Apple-AirPods-Pro-3-lifestyle-01-ROW-250909-1024x576.jpg 1024w\" sizes=\"(max-width: 3840px) 100vw, 3840px\"></p>\n  <p>准确的心率监测只是起点。</p>\n  <p>苹果的目标是：让 AirPods Prio 具备与 Apple Watch 相当的运动体验——不仅要知道你的心跳快慢，还要理解你正在做什么运动，消耗了多少卡路里,跑了多远的距离。</p>\n  <p>这意味着，苹果必须榨干「所能利用的每一个传感器。」</p>\n  <p>AirPods Pro 3 在感知系统上其实是像个「小生态系统」。在耳机侧，它部署了加速度计、陀螺仪和心率传感器，在 iPhone 侧，则贡献了 GPS 与气压计。这些传感器产生的数据流，需要被实时整合、解析、转化为有意义的运动指标。</p>\n  <p>Ron Huang 提到，Apple Watch 上已积累了大量动作信号的经验，比如跑步时手臂的摆动、划船机训练的动作模式等。把这套能力迁移到 AirPods 后，需要把原来针对手腕的动作观测「翻译」为对头部运动的观测。</p>\n  <p>为此,团队借鉴了大语言模型（LLM）的训练思路——通过海量数据学习通用的「动作语法」，而非为每种运动硬编码规则。</p>\n  <p>他们基于 Apple Heart and Movement Study（心脏与运动研究）中约 5000 万小时的真实运动数据，训练了一个全新的动作基础模型(Motion Foundation Model)。</p>\n  <p>那是一项苹果几年前面向公众发起的开放研究，参与者自愿捐献来自 Apple Watch 与 iPhone 的运动数据。</p>\n  <blockquote>\n   <p>它本质上是一个回归模型，能理解你在做哪些活动、是否在对抗阻力、动用大肌群还是小肌群、运动平面与身体姿态等。</p>\n  </blockquote>\n  <p>为了确保算法能覆盖普拉提、HIIT、椭圆机等不同类型的锻炼，苹果邀请了不同体能与技能水平的参与者进行测试与校准。</p>\n  <p>在实验室中：在他们采用了被认为是「黄金标准」的方式——佩戴氧气面罩，用代谢面罩（Metabolic Cart）观测真实氧气交换率，以验证卡路里模型的准确性。</p>\n  <p>在步数与距离的追踪上，团队开发了全新的行人运动神经网络。他们邀请数百人进入生物力学实验室，使用标定跑步机记录距离，在鞋底放置压力传感器标记落脚与离地时刻，并用摄像机捕捉完整步态。</p>\n  <p>最终，他们得以在 AirPods 上「一次性推出超过 50 种运动类型」的追踪能力，而这在 Apple Watch 时代花了几年才达成。</p>\n  <h3>从声学到身体：技术的终极归宿</h3>\n  <p>作为一种时刻贴近身体的设备，AirPods 天然地处于一个微妙的位置：它既面向外部世界，放大声音、过滤噪音、重构空间，又面向内在自我，感知呼吸、追踪脉搏。</p>\n  <p>当一个声学器件开始理解心跳的起伏、步伐的韵律、身体的语言，它就不再仅仅是一个输出设备，而是一个双向的感知界面。</p>\n  <p>从「听世界的声音」到「听身体的声音」，这条路径延续了苹果一贯的产品哲学——技术最终要回归人的感知。</p>\n  <p>耳机曾经只是音乐的出口，内容的播放器。而现在，它正成为身体的入口，自我认知的传感器。当技术学会倾听身体，它才真正学会了倾听人。</p>\n </body>\n</html>",
+  "aiSummary": "文章独家专访苹果团队，深入揭示 AirPods Pro 3 如何利用耳道生理优势、多模态传感器融合及借鉴 LLM 训练思路，实现高精度心率监测和 50 多种运动追踪。",
+  "oneSentenceSummary": "文章独家专访苹果团队，深入揭示 AirPods Pro 3 如何利用耳道生理优势、多模态传感器融合及借鉴 LLM 训练思路，实现高精度心率监测和 50 多种运动追踪。",
+  "summary": "文章通过对苹果感知与连接副总裁 Ron Huang 和健康感知总监 Steve Waydo 的独家专访，详细阐述了 AirPods Pro 3 在健康监测和运动追踪方面的突破性进展。文章指出，耳道因其生理结构优势（靠近颞浅动脉、血流稳定、无光线干扰）成为比手腕更理想的生理信号采集点。AirPods Pro 3 采用红外光 PPG 方案，结合 IMU 数据，通过光学信号与动态数据融合算法，实现了可媲美专业胸带的高精度心率监测。苹果将 Apple Watch 十年积累的算法“小型化”并微调应用于 AirPods，同时强调良好的耳塞贴合度是确保生理数据准确性的关键。此外，苹果借鉴大语言模型训练思路，基于 Apple Heart and Movement Study 中约 5000 万小时的真实运动数据，训练了全新的动作基础模型，使 AirPods Pro 3 能实时识别超过 50 种运动类型。文章还强调了 Apple Watch 与 AirPods Pro 3 在不同场景下的互补作用，以及苹果从声学设备到身体感知界面的产品哲学转变。",
+  "mainPoints": [
+    {
+      "point": "耳道是理想的生理信号采集点，AirPods Pro 3 实现高精度心率监测。",
+      "explanation": "通过耳道红外光 PPG 结合 IMU 数据，利用光学信号与动态数据融合算法，AirPods Pro 3 的心率监测精度可媲美专业胸带。"
+    },
+    {
+      "point": "苹果利用十年算法积累，实现 AirPods 心率算法的“小型化”。",
+      "explanation": "将 Apple Watch 的心率算法微调并应用于空间有限的 AirPods，确保在极端条件下也能准确追踪心率。"
+    },
+    {
+      "point": "借鉴大语言模型训练思路，通过动作基础模型识别 50 多种运动。",
+      "explanation": "基于海量运动数据训练的回归模型，使 AirPods Pro 3 能理解并识别普拉提、HIIT 等多种运动类型。"
+    },
+    {
+      "point": "Apple Watch 与 AirPods Pro 3 互补，共同构建更完整的身体数字镜像。",
+      "explanation": "系统能自动选择更可靠的信号源，如在力量训练中优先选择耳道数据，提升整体健康监测的准确性。"
+    },
+    {
+      "point": "AirPods 从声学器件转变为双向感知界面，体现苹果技术回归人体的产品哲学。",
+      "explanation": "耳机不再仅是声音输出设备，而是能感知身体信号的入口，实现从“听世界”到“听身体”的转变。"
+    }
+  ],
+  "keyQuotes": [
+    "耳道，也许比手腕更懂你。",
+    "耳道 PPG（光电容积描记）信号在血管分布、抗运动干扰和环境光抑制方面，优于腕部与指端。",
+    "这种光学信号与动态数据融合的算法，是 AirPods Pro 3 能在运动中保持心率精度的关键。它不是单一传感器的胜利，而是多模态数据协同的结果。",
+    "当用户同时佩戴 Apple Watch 和 AirPods Pro 3 时，系统会在最近 5 分钟的信号里滚动比较，并自动选择更可靠的来源。",
+    "从「听世界的声音」到「听身体的声音」，这条路径延续了苹果一贯的产品哲学------技术最终要回归人的感知。"
+  ],
+  "tags": [
+    "AirPods Pro 3",
+    "健康监测",
+    "运动追踪",
+    "智能耳机",
+    "可穿戴设备"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2604,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760571124000,
+  "publishDateStr": "2025-10-15",
+  "publishDateTimeStr": "2025-10-15 23:32:04"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_62ab45a7",
+  "title": "MacWhisper 现已支持自动说话人识别",
+  "url": "https://simonwillison.net/2025/Nov/18/macwhisper-speaker-recognition/#atom-everything",
+  "date": "2025-11-18 22:19:26",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div class=\"note\">\n    <p>Inspired by <a href=\"https://news.ycombinator.com/item?id=45970519#45971014\">this conversation</a> on Hacker News I decided to upgrade <a href=\"https://goodsnooze.gumroad.com/l/macwhisper\">MacWhisper</a> to try out NVIDIA Parakeet and the new Automatic Speaker Recognition feature.</p>\n    <p>It appears to work really well! Here's the result against <a href=\"https://static.simonwillison.net/static/2025/HMB-nov-4-2025.m4a\">this 39.7MB m4a file</a> from my <a href=\"https://simonwillison.net/2025/Nov/18/gemini-3/#analyzing-a-city-council-meeting\">Gemini 3 Pro write-up</a> this morning:</p>\n    <p><img alt=\"A screenshot of the MacWhisper transcription application interface displaying a file named &quot;HMB_compressed.&quot; The center panel shows a transcript of a City Council meeting. Speaker 2 begins, &quot;Thank you, Mr. Mayor, uh City Council... Victor Hernandez, Spanish interpreter,&quot; followed by Spanish instructions: &quot;Buenas noches, les queremos dejar saber a todos ustedes que pueden acceder lo que es el canal de Zoom...&quot; Speaker 1 responds, &quot;Thank you. Appreciate that. Can we please have a roll call?&quot; Speaker 3 then calls out &quot;Councilmember Johnson?&quot; and &quot;Councilmember Nagengast?&quot; to which Speaker 1 answers, &quot;Here.&quot; The interface includes metadata on the right indicating the model &quot;Parakeet v3&quot; and a total word count of 26,109.\" src=\"https://static.simonwillison.net/static/2025/macwhisper-parakeet.jpg\"></p>\n    <p>You can export the transcript with both timestamps and speaker names using the Share -&gt; Segments &gt; .json menu item:</p>\n    <p><img alt=\"A close-up of the MacWhisper interface showing the export dropdown menu with &quot;Segments&quot; selected. A secondary menu lists various file formats including .txt, .csv, and .pdf, with a red arrow pointing specifically to the &quot;.json&quot; option, set against the background of the meeting transcript.\" src=\"https://static.simonwillison.net/static/2025/macwhisper-export.jpg\"></p>\n    <p>Here's <a href=\"https://gist.github.com/simonw/2149eb880142561b8fccf1866bc16767\">the resulting JSON</a>.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/203/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "MacWhisper 引入由 NVIDIA Parakeet 驱动的自动说话人识别功能，显著提升语音转录准确性和导出能力。",
+  "oneSentenceSummary": "MacWhisper 引入由 NVIDIA Parakeet 驱动的自动说话人识别功能，显著提升语音转录准确性和导出能力。",
+  "summary": "本文宣布 MacWhisper 的一项重大更新，引入自动说话人识别功能。这项新功能受到 Hacker News 讨论的启发，利用 NVIDIA Parakeet 准确识别和标记音频录音中的不同说话人。作者使用市议会会议的音频文件演示了其有效性，展示了一份清晰且区分说话人的语音转录文本。该功能的一项关键实际优势是能够将这些包含时间戳和说话人姓名的详细语音转录文本，导出为结构化的 JSON 格式，从而方便进一步的数据处理和集成。此增强功能使 MacWhisper 成为一款更强大、更高效的音频转录工具。",
+  "mainPoints": [
+    {
+      "point": "MacWhisper 集成 NVIDIA Parakeet，实现了自动说话人识别功能。",
+      "explanation": "通过准确识别和标记音频录音中不同的说话人，此升级显著增强了语音转录工具的功能，从而提高了多人讨论的转录清晰度和可用性。"
+    },
+    {
+      "point": "新的说话人识别功能在实际使用中表现出卓越的有效性。",
+      "explanation": "针对真实音频文件（市议会会议）的测试成功区分了说话人，使生成的语音转录文本对于对话的分析和审查具有很高的价值。"
+    },
+    {
+      "point": "带有说话人姓名和时间戳的语音转录文本可以轻松地以 JSON 格式导出。",
+      "explanation": "此功能允许用户将结构化的语音转录数据集成到其他工作流程或应用程序中，增强了其在各种用例中的实用性，超越了简单的文本输出。"
+    }
+  ],
+  "keyQuotes": [
+    "受到 Hacker News 上《这个对话》的启发，我决定升级《MacWhisper》，以尝试 NVIDIA Parakeet 和新的自动说话人识别功能。",
+    "其效果显著！",
+    "您可以使用“共享 -> 片段 -> .json”菜单项导出包含时间戳和说话人姓名的语音转录文本。"
+  ],
+  "tags": [
+    "说话人识别",
+    "语音文本转换",
+    "MacWhisper",
+    "NVIDIA Parakeet",
+    "AI 应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 70,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763504366000,
+  "publishDateStr": "2025-11-18",
+  "publishDateTimeStr": "2025-11-18 22:19:26"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_774de1",
+  "title": "效果媲美 GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架",
+  "url": "https://www.qbitai.com/2025/06/291799.html",
+  "date": "2025-06-07 05:54:16",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"57\">ENVISION Lab团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"58\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">图像生成、视频创作、照片精修需要找不同的模型完成也太太太太太麻烦了。</p>\n  <p data-track=\"3\">有没有这样一个“AI创作大师”，你只需要用一句话描述脑海中的灵感，它就能自动为你搭建流程、选择工具、反复修改，最终交付高质量的视觉作品呢？</p>\n  <p data-track=\"4\">这一切，现在通过一个由港科大（广州）和字节联合出品的全新的<strong>开源</strong>框架——<strong>ComfyMind</strong>实现了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4db6c5b3-0e31-4f90-a580-f27e47eada00/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4db6c5b3-0e31-4f90-a580-f27e47eada00/public\">\n  </div>\n  <p data-track=\"5\">ComfyMind是一个通用视觉生成框架，它旨在用一套系统，统一处理从文本到图像、从图像到视频等所有主流视觉生成任务。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/17e561d1-0045-48f3-eec5-4f266dad6d00/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/17e561d1-0045-48f3-eec5-4f266dad6d00/public\">\n  </div>\n  <p data-track=\"6\">在多个行业基准测试中，ComfyMind的性能全面超越现有开源方法，达到了与闭源的<strong>GPT-4o-Image</strong>相媲美的水平。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"7\">从“手工作坊”到“智能工厂”</h2>\n  <p data-track=\"8\">无论是让棱镜散射出物理精确的彩虹，还是给蛋糕切上一块，甚至将一个Logo无缝融入产品，ComfyMind都能轻松胜任。</p>\n  <p data-track=\"9\">来看看效果。</p>\n  <p data-track=\"10\">结合光学知识，生成一张玻璃棱镜的光散射的图像：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/28d15504-b22a-4cc5-7a14-ab3e69673400/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/28d15504-b22a-4cc5-7a14-ab3e69673400/public\">\n  </div>\n  <p data-track=\"11\">给一张蛋糕的图像，将给定蛋糕切角：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0306f225-c13f-43a5-3a88-cfe1d0926d00/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0306f225-c13f-43a5-3a88-cfe1d0926d00/public\">\n  </div>\n  <p data-track=\"12\">给一张Logo图像，将Logo嵌入杯子：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bbf41a90-f1f8-4474-e4fa-350c9d82d300/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bbf41a90-f1f8-4474-e4fa-350c9d82d300/public\">\n  </div>\n  <p data-track=\"13\">生成一个长度为8秒的海边燃烧的篝火的视频：</p>\n  <p data-track=\"14\">虽然视觉生成模型突飞猛进，但真正能<strong>“一套系统包打所有任务”</strong>的开源框架依旧脆弱，难以支撑真实生产诉求；</p>\n  <p data-track=\"15\">相对地，闭源GPT-Image-1（即GPT-4o-Image）虽效果出众，却无法被社区自由扩展或调优。</p>\n  <p data-track=\"16\">ComfyUI的节点式设计为<strong>“可视化、模块化”</strong>奠定了基础，理论上任何任务都能通过组合节点完成；</p>\n  <p data-track=\"17\">然而，当工作流跨越多模态、多阶段时，手工搭建不仅耗时费力，更对专业知识要求极高，成为创作的门槛。</p>\n  <p data-track=\"18\">ComfyAgent等LLM-驱动方案已经开始尝试自动生成工作流，但它们依赖扁平JSON 解码，既难以表达模块层级，又缺乏执行端反馈，导致节点缺漏与语义漂移。</p>\n  <p data-track=\"19\">人类艺术家在构建复杂流程时，会先拆解任务，再局部试错、局部修正。</p>\n  <p data-track=\"20\">借鉴这一策略，该团队提出ComfyMind：以<strong>“原子工作流”</strong>为最小单位，以自然语言描述接口，结合树状规划加局部反馈执行，将视觉内容创作转化为分层决策问题，从而在保持灵活性的同时，显著提升稳健性与扩展性。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"21\">给Comfyui装上大脑，会规划，更会“返工”</h2>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d7b26e0a-3786-4c80-e637-19cd1e8e1f00/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d7b26e0a-3786-4c80-e637-19cd1e8e1f00/public\">\n  </div>\n  <p data-track=\"22\">上图展示了ComfyMind系统pipeline。</p>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"23\"><strong>整体架构：“ComfyUI × 多代理协同”</strong></h3>\n  <p data-track=\"24\">ComfyMind将ComfyUI仅视为底层执行引擎：所有高层决策由<strong>规划-执行-评估</strong>三代理协作完成。</p>\n  <p data-track=\"25\">规划代理自顶向下拆解任务；</p>\n  <p data-track=\"26\">执行代理把每一步映射成JSON工作流并结合ComfyUI进行具体生成；</p>\n  <p data-track=\"27\">评估代理在生成流程结束时使用VLM判定生成质量与指令一致性，并把诊断信息返回给上一层级。</p>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"28\"><strong>语义工作流接口：把节点图“函数化”</strong></h3>\n  <p data-track=\"29\">论文提出的语义工作流接口将社区验证的T2I、I2V、Mask生成等模板封装为“原子工作流”，并以自然语言标注其功能和必选/可选参数。</p>\n  <p data-track=\"30\">规划代理因此能够在纯语义空间像调用高阶函数那样组合模块，无需接触易错的JSON语法，彻底消除“漏节点”“拼接错误”等结构性故障。</p>\n  <p data-track=\"31\">所有SWI描述集中于单一文档直接注入LLM上下文，摆脱对3200+节点检索数据集的依赖，实现零-RAG的快速扩展能力。</p>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"32\"><strong>树状规划＋局部反馈：「分块-修补」策略</strong></h3>\n  <p data-track=\"33\">复杂指令被递归拆分为子目标，形成 语义搜索树；每个节点代表局部规划，边对应一次SWI调用。</p>\n  <p data-track=\"34\">系统在节点处仅执行链首函数并即时评估——若失败，错误与重规划被限制在当前层级，已通过的分支原地保留，避免全链重跑与策略振荡。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"35\">全面的性能评估，在三大基准对比</h2>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"36\"><strong>ComfyBench自动工作流构建</strong></h3>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/553de996-065b-46fd-d43a-30be08183b00/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/553de996-065b-46fd-d43a-30be08183b00/public\">\n  </div>\n  <p data-track=\"37\">ComfyMind在ComfyBench全难度任务上取得100%的通过率，消除JSON级失败。</p>\n  <p data-track=\"38\">同时，将问题解决率在Vanilla、Complex、Creative难度上分别较ComfyAgent提升100%、292%和283%，凸显多代理-ComfyUI体系在通用生成与编辑任务上的卓越泛化能力与输出质量。</p>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"39\"><strong>Geneval文生图</strong></h3>\n  <p data-track=\"40\">在GenEval中，ComfyMind获得0.90总分，较开源基线SD3与Janus-Pro-7B分别领先0.16和0.10，并在六大维度中的五项及总体成绩超越GPT-Image-1。</p>\n  <p data-track=\"41\">定性对比进一步显示，在各类约束下，本系统同时满足了指令并生成视觉连贯的高质量图像。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3f0b2089-cc61-4bc7-5454-6aef1d3f5600/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3f0b2089-cc61-4bc7-5454-6aef1d3f5600/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a0ab3c17-0eec-412d-dba6-f6e47916ad00/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a0ab3c17-0eec-412d-dba6-f6e47916ad00/public\">\n  </div>\n  <h3 class=\"pgc-h-arrow-right\" data-track=\"42\"><strong>Reason-Edit图像编辑</strong></h3>\n  <p data-track=\"43\">在Reason-Edit基准上，ComfyMind以0.906的GPT-score较前开源SOTA SmartEdit提升+0.334，并接近GPT-Image-1（0.929）。</p>\n  <p data-track=\"44\">定性对比亦表明，ComfyMind相较于在精准完成复杂编辑指令的同时还保持了非编辑区域的细节与风格一致。</p>\n  <p data-track=\"45\">而GPT-Image-1常出现纹理丢失、色调漂移或比例失真等瑕疵。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3db828c-19b7-4c7a-4023-8ff41b646100/public\" alt=\"效果媲美GPT-4o，一键搞定各类视觉生成任务丨港科广字节全新框架\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3db828c-19b7-4c7a-4023-8ff41b646100/public\">\n  </div>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"46\">总结</h2>\n  <p data-track=\"47\">论文提出了基于ComfyUI平台构建的全新框架ComfyMind。</p>\n  <p data-track=\"48\">ComfyMind将视觉内容创建概念化为一个模块化、语义结构化的规划流程，并将基于树的规划与局部反馈执行相结合。</p>\n  <p data-track=\"49\">ComfyMind框架性能超越了之前的开源方法，并取得了与GPT-Image-1相当的结果。</p>\n  <p data-track=\"50\">相关论文，在线Demo, 代码，项目主页等均已公开公布。</p>\n  <p data-track=\"51\">感兴趣的小伙伴可以进一步体验和探索。</p>\n  <p data-track=\"52\"><em>论文链接: https://arxiv.org/abs/2505.17908</em><em><br></em><em>项目主页链接: https://litaoguo.github.io/ComfyMind.github.io/</em><em><br></em><em>在线Demo链接: https://envision-research.hkust-gz.edu.cn/ComfyMind/</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "港科广和字节联合开源通用视觉生成框架 ComfyMind，性能媲美 GPT-4o，一站式处理各类视觉任务。",
+  "oneSentenceSummary": "港科广和字节联合开源通用视觉生成框架 ComfyMind，性能媲美 GPT-4o，一站式处理各类视觉任务。",
+  "summary": "文章介绍了由港科大（广州）和字节跳动联合推出的开源通用视觉生成框架 ComfyMind。该框架旨在统一处理包括图像生成、视频创作、图像编辑在内的各类主流视觉生成任务，解决现有开源方案分散且复杂、闭源模型缺乏灵活扩展性的问题。ComfyMind 以 ComfyUI 为底层执行引擎，在其之上构建了规划-执行-评估的多代理协作体系。通过引入“原子工作流”的语义接口和“树状规划 + 局部反馈”策略，ComfyMind 将视觉创作转化为分层决策问题，提高了系统的稳健性和扩展性。性能评估显示，ComfyMind 在 ComfyBench 自动工作流构建、Geneval 文生图和 Reason-Edit 图像编辑三大基准测试中全面超越现有开源方法，并在多项指标上达到了与 GPT-4o-Image 相媲美的水平，展现了其在通用视觉生成领域的卓越能力。",
+  "mainPoints": [
+    {
+      "point": "ComfyMind 统一处理多种视觉生成任务，简化复杂工作流。",
+      "explanation": "框架集成了 T2I、I2V 等主流任务，通过标准化接口和自动化流程，让用户能用自然语言描述意图，系统自动完成复杂视觉创作。"
+    },
+    {
+      "point": "采用多代理协同和分层决策提升系统性能和鲁棒性。",
+      "explanation": "规划、执行、评估代理协作，结合树状规划和局部反馈，使系统能更智能地拆解任务、处理错误，提高生成成功率和质量。"
+    },
+    {
+      "point": "语义工作流接口简化节点组合，提高灵活性和可扩展性。",
+      "explanation": "将 ComfyUI 的节点图封装为语义接口，摆脱对 JSON 细节的依赖，使得组合和扩展新功能更加便捷高效。"
+    },
+    {
+      "point": "在多项视觉基准测试中性能优异，媲美 GPT-4o-Image。",
+      "explanation": "ComfyMind 在工作流构建、文生图、图像编辑等任务上取得领先的基准成绩，证明了其 SOTA 的生成和编辑能力。"
+    }
+  ],
+  "keyQuotes": [
+    "有没有这样一个\"AI 创作大师\"，你只需要用一句话描述脑海中的灵感，它就能自动为你搭建流程、选择工具、反复修改，最终交付高质量的视觉作品呢？",
+    "ComfyMind 是一个通用视觉生成框架，它旨在用一套系统，统一处理从文本到图像、从图像到视频等所有主流视觉生成任务。",
+    "在多个行业基准测试中，ComfyMind 的性能全面超越现有开源方法，达到了与闭源的 GPT-4o-Image 相媲美的水平。",
+    "借鉴这一策略，该团队提出 ComfyMind：以\"原子工作流\"为最小单位，以自然语言描述接口，结合树状规划加局部反馈执行，将视觉内容创作转化为分层决策问题。",
+    "ComfyMind 框架性能超越了之前的开源方法，并取得了与 GPT-Image-1 相当的结果。"
+  ],
+  "tags": [
+    "视觉生成",
+    "AI框架",
+    "多模态",
+    "Agent",
+    "工作流自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2118,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749275656000,
+  "publishDateStr": "2025-06-07",
+  "publishDateTimeStr": "2025-06-07 05:54:16"
+}

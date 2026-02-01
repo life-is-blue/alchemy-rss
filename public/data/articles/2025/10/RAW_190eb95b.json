@@ -1,0 +1,55 @@
+{
+  "id": "RAW_190eb95b",
+  "title": "并行编码智能体实践",
+  "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents/#atom-everything",
+  "date": "2025-10-05 12:06:55",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2025/Oct/5/parallel-coding-agents/\">\n    <p class=\"mobile-date\">5th October 2025</p>\n    <p>For a while now I’ve been hearing from engineers who run multiple coding agents at once—firing up several Claude Code or Codex CLI instances at the same time, sometimes in the same repo, sometimes against multiple checkouts or <a href=\"https://docs.claude.com/en/docs/claude-code/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees\">git worktrees</a>.</p>\n    <p>I was pretty skeptical about this at first. AI-generated code needs to be reviewed, which means the natural bottleneck on all of this is how fast I can review the results. It’s tough keeping up with just a single LLM given how fast they can churn things out, where’s the benefit from running more than one at a time if it just leaves me further behind?</p>\n    <p>Despite my misgivings, over the past few weeks I’ve noticed myself quietly starting to embrace the parallel coding agent lifestyle.</p>\n    <p>I can only focus on reviewing and landing one significant change at a time, but I’m finding an increasing number of tasks that can still be fired off in parallel without adding too much cognitive overhead to my primary work.</p>\n    <p>Here are some patterns I’ve found for applying parallel agents effectively.</p>\n    <h4 id=\"research-poc\">Research for proof of concepts</h4>\n    <p>The first category of tasks I’ve been applying this pattern to is <strong>research</strong>.</p>\n    <p>Research tasks answer questions or provide recommendations without making modifications to a project that you plan to keep.</p>\n    <p>A lot of software projects start with a proof of concept. Can <a href=\"https://yjs.dev\">Yjs</a> be used to implement a simple collaborative note writing tool with a Python backend? The <a href=\"https://github.com/y-crdt/pycrdt\">libraries exist</a>, but do they work when you wire them together?</p>\n    <p>Today’s coding agents can build a proof of concept with new libraries and resolve those kinds of basic questions. Libraries too new to be in the training data? Doesn’t matter: tell them to checkout the repos for those new dependencies and read the code to figure out how to use them.</p>\n    <h4 id=\"how-does-that-work-again\">How does that work again?</h4>\n    <p>If you need a reminder about how a portion of your existing system works, modern “reasoning” LLMs can provide a detailed, actionable answer in just a minute or two.</p>\n    <p>It doesn’t matter how large your codebase is: coding agents are extremely effective with tools like grep and can follow codepaths through dozens of different files if they need to.</p>\n    <p>Ask them to make notes on where your signed cookies are set and read, or how your application uses subprocesses and threads, or which aspects of your JSON API aren’t yet covered by your documentation.</p>\n    <p>These LLM-generated explanations are worth stashing away somewhere, because they can make excellent context to paste into further prompts in the future.</p>\n    <h4 id=\"small-maintenance-tasks\">Small maintenance tasks</h4>\n    <p>Now we’re moving on to code edits that we intend to keep, albeit with <em>very</em> low-stakes. It turns out there are a lot of problems that really just require a little bit of extra cognitive overhead which can be outsourced to a bot.</p>\n    <p>Warnings are a great example. Is your test suite spitting out a warning that something you are using is deprecated? Chuck that at a bot—tell it to run the test suite and figure out how to fix the warning. No need to take a break from what you’re doing to resolve minor irritations like that.</p>\n    <p>There is a definite knack to spotting opportunities like this. As always, the best way to develop that instinct is to try things—any small maintenance task is something that’s worth trying with a coding agent. You can learn from both their successes <em>and</em> their failures.</p>\n    <h4 id=\"carefully-specified-and-directed-actual-work\">Carefully specified and directed actual work</h4>\n    <p>Reviewing code that lands on your desk out of nowhere is a <em>lot</em> of work. First you have to derive the goals of the new implementation: what’s it trying to achieve? Is this something the project needs? Is the approach taken the best for this current project, given other future planned changes? A lot of big questions before you can even start digging into the details of the code.</p>\n    <p>Code that started from your own specification is a lot less effort to review. If you already decided what to solve, picked the approach and worked out a detailed specification for the work itself, confirming it was built to your needs can take a lot less time.</p>\n    <p>I described my <a href=\"https://simonwillison.net/2025/Mar/11/using-llms-for-code/#tell-them-exactly-what-to-do\">more authoritarian approach</a> to prompting models for code back in March. If I tell them <em>exactly</em> how to build something the work needed to review the resulting changes is a whole lot less taxing.</p>\n    <h4 id=\"how-i-m-using-these-tools-today\">How I’m using these tools today</h4>\n    <p>My daily drivers are currently <a href=\"https://www.claude.com/product/claude-code\">Claude Code</a> (on Sonnet 4.5), <a href=\"https://github.com/openai/codex\">Codex CLI</a> (on GPT-5-Codex), and <a href=\"https://chatgpt.com/codex\">Codex Cloud</a> (for asynchronous tasks, frequently launched from my phone.)</p>\n    <p>I’m also dabbling with <a href=\"https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent\">GitHub Copilot Coding Agent</a> (the agent baked into the <a href=\"https://github.com\">GitHub.com</a> web interface in various places) and <a href=\"https://jules.google\">Google Jules</a>, Google’s currently-free alternative to Codex Cloud.</p>\n    <p>I’m still settling into patterns that work for me. I imagine I’ll be iterating on my processes for a long time to come, especially as the landscape of coding agents continues to evolve.</p>\n    <p>I frequently have multiple terminal windows open running different coding agents in different directories. These are currently a mixture of Claude Code and Codex CLI, running in <a href=\"https://simonwillison.net/2025/Sep/30/designing-agentic-loops/#the-joy-of-yolo-mode\">YOLO mode</a> (no approvals) for tasks where I’m confident malicious instructions can’t sneak into the context.</p>\n    <p>(I need to start habitually running my local agents in Docker containers to further limit the blast radius if something goes wrong.)</p>\n    <p>I haven’t adopted git worktrees yet: if I want to run two agents in isolation against the same repo I do a fresh checkout, often into <code>/tmp</code>.</p>\n    <p>For riskier tasks I’m currently using asynchronous coding agents—usually Codex Cloud—so if anything goes wrong the worst that can happen is my source code getting leaked (since <a href=\"https://simonwillison.net/2025/Jun/3/codex-agent-internet-access/\">I allow it to have network access</a> while running). Most of what I work on is open source anyway so that’s not a big concern for me.</p>\n    <p>I occasionally use <a href=\"https://github.com/features/codespaces\">GitHub Codespaces</a> to run VS Code’s agent mode, which is surprisingly effective and runs directly in my browser. This is particularly great for workshops and demos since it works for anyone with GitHub account, no extra API key necessary.</p>\n    <h4 id=\"please-share-your-patterns-that-work\">Please share your patterns that work</h4>\n    <p>This category of coding agent software is still really new, and the models have only really got good enough to drive them effectively in the past few months—Claude 4 and GPT-5 in particular.</p>\n    <p>I plan to write more as I figure out the ways of using them that are most effective. I encourage other practitioners to do the same!</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9013/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "并行 AI 编码智能体工作流的实用模式",
+  "oneSentenceSummary": "并行 AI 编码智能体工作流的实用模式",
+  "summary": "Simon Willison 的文章探讨了如何利用多个 AI 编码智能体来优化软件开发流程。他关注的是一种不断演进的实践方法。作者最初对此持怀疑态度，因为人工代码审查是瓶颈。但他发现了几种有效的并行智能体使用模式，这些模式不会显著增加认知负担。这些模式包括利用智能体进行研究和构建概念验证，即使是使用新的库，也可以指示它们阅读源代码来实现。智能体在理解现有代码库方面也非常有效，可以提供详细的解释，为未来的提示提供有价值的上下文。此外，它们对于分流小型、低风险的维护任务（例如解决弃用警告）非常有用。对于更重要的工作，作者提倡一种“更严格的提示方法”，其中高度指定的任务减少了审查生成的代码所需的工作量。Willison 详细介绍了他的当前设置，包括 Claude Code、Codex CLI、Codex Cloud、GitHub Copilot 编码智能体和 Google Jules 等工具，通常并行运行多个实例。他描述了使用“YOLO 模式”处理低风险任务，使用异步智能体处理风险较高的任务，并使用全新的签出或 Docker 进行隔离。他鼓励其他从业者分享他们不断发展的方法，因为这种新型的编码智能体软件随着 Claude 4 和 GPT-5 等高级模型的出现而不断成熟。",
+  "mainPoints": [
+    {
+      "point": "并行 AI 编码智能体有效地处理研究和概念验证任务",
+      "explanation": "智能体可以快速探索新的库并构建功能原型，甚至可以通过阅读源代码来完成，从而节省开发人员在初始调查中的时间。"
+    },
+    {
+      "point": "AI 智能体擅长解释现有代码库逻辑并执行小型维护任务",
+      "explanation": "他们可以浏览大型代码库，阐明系统功能，解决诸如弃用警告之类的小问题，从而使开发人员可以专注于主要工作。"
+    },
+    {
+      "point": "针对 AI 智能体的高度指定任务减少了审查开销并提高了代码质量",
+      "explanation": "当给出精确的指令时，智能体会生成更容易、更快速审查的代码，从而更紧密地与开发人员的意图保持一致。"
+    }
+  ],
+  "keyQuotes": [
+    "尽管我有所顾虑，但在过去的几周里，我发现自己已经悄悄地开始拥抱并行编码智能体的生活方式。",
+    "库太新而无法包含在训练数据中？没关系：告诉他们检出这些新依赖项的存储库并阅读代码以弄清楚如何使用它们。",
+    "如果您需要提醒您现有系统的某个部分是如何工作的，那么现代“推理” LLM 可以在一两分钟内提供详细的、可操作的答案。",
+    "基于自身规范编写的代码能够显著减少审查工作量。",
+    "这种编码智能体软件仍然非常新，并且这些模型在过去几个月中才真正变得足够好以有效地驱动它们---特别是 Claude 4 和 GPT-5。"
+  ],
+  "tags": [
+    "AI 编码智能体",
+    "开发者工作流",
+    "LLM",
+    "代码生成",
+    "软件开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 93,
+  "wordCount": 1077,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759666015000,
+  "publishDateStr": "2025-10-05",
+  "publishDateTimeStr": "2025-10-05 12:06:55"
+}

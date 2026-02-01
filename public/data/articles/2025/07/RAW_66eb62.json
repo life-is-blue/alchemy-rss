@@ -1,0 +1,54 @@
+{
+  "id": "RAW_66eb62",
+  "title": "WDTA 发布全球首个 AI 智能体运行安全测试标准，蚂蚁集团、清华大学等联合编制",
+  "url": "https://www.qbitai.com/2025/07/308867.html",
+  "date": "2025-07-14 06:52:32",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <div data-page-id=\"EcADd4bbfoYPtoxcWftc1Ji7nle\" data-lark-html-role=\"root\" data-docx-has-block-data=\"true\">\n   <p class=\"ace-line ace-line old-record-id-doxcneXHVAYNRUivOFI9256WCkY\">日前，世界数字科学院（WDTA）在联合国日内瓦总部正式发布AI STR系列新标准《AI智能体运行安全测试标准》，标准由蚂蚁集团、清华大学、中国电信牵头，联合普华永道、新加坡南洋理工大学、美国圣路易斯华盛顿大学等二十余家国内外机构、企业及高校共同编制，为全球首个单智能体运行安全测试标准。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcnGPBB9JKzPiE9DLWjgsoCAg\">该标准针对智能体跨越“语言墙”所带来的“行为”风险，首次将输入输出、大模型、RAG、记忆和工具五个关键链路与运行环境对应起来，构建了全链路风险分析框架；同时，细分了智能体风险类型，完善并创新提出了模型检测、网络通信分析和工具模糊测试等测试方法，弥补了智能体安全测试技术标准的空白。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcnz91Fqa368MZnLvt5RiI2xb\">标准在AI for Good全球峰会期间由联合国社会发展研究所（UNRISD）与世界数字科学院（WDTA）联合主办的“数字技术与人工智能社会影响全球咨询会”上发布。</p>\n   <p class=\"image-uploaded gallery old-record-id-doxcnSRMStR8ySWgTEzE6MWJbtg\" data-type=\"image\" data-ace-gallery-json=\"{&quot;items&quot;:[{&quot;uuid&quot;:&quot;31cca14b-7f18-47e3-bf82-909d218c8b31&quot;,&quot;height&quot;:131,&quot;width&quot;:230,&quot;currHeight&quot;:131,&quot;currWidth&quot;:230,&quot;natrualHeight&quot;:131,&quot;natrualWidth&quot;:230,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:1,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FDhvXb1ydOo1atlxl8aNcbFUZnHf%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;DhvXb1ydOo1atlxl8aNcbFUZnHf&quot;,&quot;image_type&quot;:&quot;image/jpeg&quot;,&quot;size&quot;:3810676,&quot;comments&quot;:[]}]}\"><img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f5984f76-620e-41b1-3f4c-f7b178463a00/public\" alt=\"WDTA发布全球首个AI智能体运行安全测试标准，蚂蚁集团、清华大学等联合编制\" data-single-block=\"true\" data-snapshot=\"eyJ0eXBlIjoiaW1hZ2UiLCJwYXJlbnRfaWQiOiJFY0FEZDRiYmZvWVB0b3hjV2Z0YzFKaTdubGUiLCJjb21tZW50cyI6bnVsbCwicmV2aXNpb25zIjpudWxsLCJsb2NrZWQiOmZhbHNlLCJoaWRkZW4iOmZhbHNlLCJhdXRob3IiOiI3MjE4NzI5MzIzOTcyMTMyODY1IiwiYWxpZ24iOiJjZW50ZXIiLCJpbWFnZSI6eyJ0b2tlbiI6IkRodlhiMXlkT28xYXRseGw4YU5jYkZVWm5IZiIsIm1pbWVUeXBlIjoiaW1hZ2UvanBlZyIsInNpemUiOjM4MTA2NzYsInNjYWxlIjoxLCJ3aWR0aCI6MjMwLCJoZWlnaHQiOjEzMSwibmFtZSI6ImltYWdlMS5qcGVnIiwiY3JvcCI6WzAsMCwwLDBdLCJyb3RhdGlvbiI6MCwiY2FwdGlvbiI6eyJ0ZXh0Ijp7ImFwb29sIjp7Im5leHROdW0iOjAsIm51bVRvQXR0cmliIjpudWxsfSwiaW5pdGlhbEF0dHJpYnV0ZWRUZXh0cyI6eyJhdHRyaWJzIjpudWxsLCJ0ZXh0IjpudWxsfX19fX0=\" data-suite=\"eyJmaWxlVG9rZW4iOiJEaHZYYjF5ZE9vMWF0bHhsOGFOY2JGVVpuSGYiLCJvYmpUeXBlIjoiZG9jeCIsIm9ialRva2VuIjoiZG94Y25TUk1TdFI4eVNXZ1RFekU2TVdKYnRnIiwib3JpZ2luU3JjIjoiaHR0cHM6Ly9pbnRlcm5hbC1hcGktZHJpdmUtc3RyZWFtLmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9wcmV2aWV3L0RodlhiMXlkT28xYXRseGw4YU5jYkZVWm5IZi8/cHJldmlld190eXBlPTE2In0=\" data-src=\"https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/DhvXb1ydOo1atlxl8aNcbFUZnHf/?mount_node_token=doxcnSRMStR8ySWgTEzE6MWJbtg&amp;mount_point=docx_image\" data-width=\"230\" data-height=\"131\" data-lark-image-uri=\"drivetoken://DhvXb1ydOo1atlxl8aNcbFUZnHf\" data-lark-image-width=\"230\" data-lark-image-height=\"131\"></p>\n   <p class=\"ace-line ace-line old-record-id-doxcnIMjSx0ctonKVL6Bb4FzQgb\">2025年，被称为“智能体元年”。AI智能体凭借着深度思考、自主规划、做出决策并深度执行的能力，使得AI在发展路径上实现一次范式突变：从“我说AI答”到“我说AI做”，并被逐渐应用到各类商业场景中。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcnxyon6dY0de44uX9FnKmjEh\">然而，技术突破伴随着不容忽视的安全隐忧。最新调研显示，超过70%的智能体从业者担忧AI幻觉与错误决策、数据泄露等问题，因为AI生成的内容往往包含事实错误，或者对指令产生误解，其中超半数受访者表示，所在企业尚未设立明确的智能体安全负责人。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcnZoyrVlqmdBajqBEWpmU5Cb\">“面对AI相关技术的快速演进，我们必须正视‘科林格里奇困境’：一旦新技术深植社会，风险治理的代价将成倍上升。”WDTA执行理事长李雨航强调，“AI STR系列标准正是试图在这一临界点前建立清晰、可执行的安全标准和测评、认证体系，将伦理与责任嵌入AI的全生命周期之中，从而确保技术发展服务于人类的长期利益。”</p>\n   <p class=\"image-uploaded gallery old-record-id-doxcnuUt8gj6Yyy2TPOFjUT9nzd\" data-type=\"image\" data-ace-gallery-json=\"{&quot;items&quot;:[{&quot;uuid&quot;:&quot;bb770988-c69c-4696-8683-49473fafe584&quot;,&quot;height&quot;:159,&quot;width&quot;:273,&quot;currHeight&quot;:159,&quot;currWidth&quot;:273,&quot;natrualHeight&quot;:159,&quot;natrualWidth&quot;:273,&quot;pluginName&quot;:&quot;imageUpload&quot;,&quot;scale&quot;:1,&quot;src&quot;:&quot;https%3A%2F%2Finternal-api-drive-stream.feishu.cn%2Fspace%2Fapi%2Fbox%2Fstream%2Fdownload%2Fpreview%2FOIxobuYmooQ51BxDz41cEtiQncf%2F%3Fpreview_type%3D16&quot;,&quot;file_token&quot;:&quot;OIxobuYmooQ51BxDz41cEtiQncf&quot;,&quot;image_type&quot;:&quot;image/png&quot;,&quot;size&quot;:1310418,&quot;comments&quot;:[]}]}\"><img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e55ebff6-62e4-4b9b-22e1-3427e57ac000/public\" alt=\"WDTA发布全球首个AI智能体运行安全测试标准，蚂蚁集团、清华大学等联合编制\" data-single-block=\"true\" data-snapshot=\"eyJ0eXBlIjoiaW1hZ2UiLCJwYXJlbnRfaWQiOiJFY0FEZDRiYmZvWVB0b3hjV2Z0YzFKaTdubGUiLCJjb21tZW50cyI6bnVsbCwicmV2aXNpb25zIjpudWxsLCJsb2NrZWQiOmZhbHNlLCJoaWRkZW4iOmZhbHNlLCJhdXRob3IiOiI3MjE4NzI5MzIzOTcyMTMyODY1IiwiYWxpZ24iOiJjZW50ZXIiLCJpbWFnZSI6eyJ0b2tlbiI6Ik9JeG9idVltb29RNTFCeER6NDFjRXRpUW5jZiIsIm1pbWVUeXBlIjoiaW1hZ2UvcG5nIiwic2l6ZSI6MTMxMDQxOCwic2NhbGUiOjEsIndpZHRoIjoyNzMsImhlaWdodCI6MTU5LCJuYW1lIjoiaW1hZ2UyLnBuZyIsImNyb3AiOlswLDAsMCwwXSwicm90YXRpb24iOjAsImNhcHRpb24iOnsidGV4dCI6eyJhcG9vbCI6eyJuZXh0TnVtIjowLCJudW1Ub0F0dHJpYiI6bnVsbH0sImluaXRpYWxBdHRyaWJ1dGVkVGV4dHMiOnsiYXR0cmlicyI6bnVsbCwidGV4dCI6bnVsbH19fX19\" data-suite=\"eyJmaWxlVG9rZW4iOiJPSXhvYnVZbW9vUTUxQnhEejQxY0V0aVFuY2YiLCJvYmpUeXBlIjoiZG9jeCIsIm9ialRva2VuIjoiZG94Y251VXQ4Z2o2WXl5MlRQT0ZqVVQ5bnpkIiwib3JpZ2luU3JjIjoiaHR0cHM6Ly9pbnRlcm5hbC1hcGktZHJpdmUtc3RyZWFtLmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9wcmV2aWV3L09JeG9idVltb29RNTFCeER6NDFjRXRpUW5jZi8/cHJldmlld190eXBlPTE2In0=\" data-src=\"https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/all/OIxobuYmooQ51BxDz41cEtiQncf/?mount_node_token=doxcnuUt8gj6Yyy2TPOFjUT9nzd&amp;mount_point=docx_image\" data-width=\"273\" data-height=\"159\" data-lark-image-uri=\"drivetoken://OIxobuYmooQ51BxDz41cEtiQncf\" data-lark-image-width=\"273\" data-lark-image-height=\"159\"></p>\n   <p class=\"ace-line ace-line old-record-id-doxcnOErzdFoU2QmQoeDncqUe7h\">峰会上，蚂蚁集团大模型数据安全总监杨小芳表示，当前AI技术应用加速落地，但单智能体的安全风险缺乏统一的全链路安全测试标准，导致潜在的等问题难以被量化和规避，单智能体标准的制定是AI治理的“最小可行单元”，而多智能体治理是未来“摩天大楼”的核心结构，下一步行业应从单点逐步向多智能体治理生态共建突破。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcnNeYVBQDszgWHFbq3xaCAWh\">与其他国际标准不同，AI STR不仅关注风险识别和风险分级，更提供全流程管理方案，即从数据治理到模型落地，配套具体测试工具和认证流程，助力企业提升AI应用的安全性与可信度。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcneh4TBapHn0k0oPhnM4Vi4c\">该标准不仅提供了一套可行可靠的智能体安全基准，也为全球AI智能体生态的安全、可信和可持续发展增加了有益的探索。目前，部分标准的测评与认证已在金融、医疗等领域落地应用。</p>\n   <p class=\"ace-line ace-line old-record-id-doxcnscxmblnHxXyzE8WNC3WtHc\">此前，WDTA已发布3项AI STR标准，包括“生成式人工智能应用安全测试标准”,“大语言模型安全测试方法”和“大模型供应链安全要求”，由 OpenAI、蚂蚁集团、科大讯飞、谷歌、微软、英伟达、百度、腾讯等数十家单位的多名专家学者共同参与。</p>\n   <p style=\"text-align: right;\">*本文系量子位获授权刊载，观点仅为作者所有</p>\n  </div><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "WDTA 联合蚂蚁集团、清华大学等发布全球首个 AI 智能体运行安全测试标准，旨在应对智能体行为风险，弥补安全测试技术空白。",
+  "oneSentenceSummary": "WDTA 联合蚂蚁集团、清华大学等发布全球首个 AI 智能体运行安全测试标准，旨在应对智能体行为风险，弥补安全测试技术空白。",
+  "summary": "文章报道了世界数字科学院（WDTA）在联合国日内瓦总部正式发布《AI 智能体运行安全测试标准》。该标准由蚂蚁集团、清华大学等二十余家国内外机构联合编制，是全球首个针对单智能体运行安全测试的标准。该标准的核心在于应对智能体跨越“语言墙”带来的“行为”风险，首次构建了涵盖输入输出、大模型、RAG、记忆和工具五个关键链路的全链路风险分析框架。同时，它细分了智能体风险类型，并创新性地提出了模型检测、网络通信分析和工具模糊测试等测试方法，有效弥补了智能体安全测试技术标准的空白。文章指出，2025 年被称为“智能体元年”，但伴随技术突破而来的是 AI 幻觉、错误决策、数据泄露等严重安全隐忧。WDTA 强调，该标准旨在“科林格里奇困境”前建立清晰可执行的安全标准和测评认证体系，将伦理与责任嵌入 AI 全生命周期。蚂蚁集团指出，该标准是 AI 治理的“最小可行单元”，为未来多智能体治理奠定基础。与其他国际标准不同，AI STR 系列不仅关注风险识别和分级，更提供从数据治理到模型落地的全流程管理方案，并已在金融、医疗等领域落地应用，为全球 AI 智能体生态的安全、可信和可持续发展提供了有益探索。",
+  "mainPoints": [
+    {
+      "point": "全球首个智能体运行安全测试标准发布：",
+      "explanation": "WDTA 联合多方发布了全球首个 AI 智能体运行安全测试标准，填补了该领域的技术空白，为智能体安全提供了基础框架和统一基准。"
+    },
+    {
+      "point": "构建全链路风险分析框架与创新测试方法：",
+      "explanation": "标准首次将智能体运行的五个关键链路（输入输出、大模型、RAG、记忆和工具）与运行环境对应，构建了全面的风险分析框架，并提出了创新的测试方法，提升了风险识别和规避能力。"
+    },
+    {
+      "point": "强调 AI 治理的紧迫性与实践性：",
+      "explanation": "面对智能体带来的安全隐忧和“科林格里奇困境”，该标准提供了从数据治理到模型落地的全流程管理方案，并已在实际领域落地应用，具备高度实用价值，推动 AI 安全负责任发展。"
+    }
+  ],
+  "keyQuotes": [
+    "该标准针对智能体跨越'语言墙'所带来的'行为'风险，首次将输入输出、大模型、RAG、记忆和工具五个关键链路与运行环境对应起来，构建了全链路风险分析框架。",
+    "面对 AI 相关技术的快速演进，我们必须正视'科林格里奇困境'：一旦新技术深植社会，风险治理的代价将成倍上升。",
+    "单智能体标准的制定是 AI 治理的'最小可行单元'，而多智能体治理是未来'摩天大楼'的核心结构，下一步行业应从单点逐步向多智能体治理生态共建突破。",
+    "与其他国际标准不同，AI STR 不仅关注风险识别和风险分级，更提供全流程管理方案，即从数据治理到模型落地，配套具体测试工具和认证流程，助力企业提升 AI 应用的安全性与可信度。"
+  ],
+  "tags": [
+    "AI安全",
+    "智能体",
+    "行业标准",
+    "AI治理",
+    "蚂蚁集团"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1185,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752475952000,
+  "publishDateStr": "2025-07-14",
+  "publishDateTimeStr": "2025-07-14 06:52:32"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_c6c665",
+  "title": "PNG 规范第三版发布：新增 HDR 和官方 APNG 支持",
+  "url": "https://www.infoq.com/news/2025/08/png-3-hdr-animated-png-support/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-25 17:33:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The W3C recently published the <a href=\"https://www.w3.org/TR/png-3/\">Portable Network Graphics (PNG) Specification (Third Edition)</a>, two decades after the second edition was accepted as a web standard. This update introduces High Dynamic Range (HDR) color, standardizes Animated PNGs (APNGs), and adds Exif metadata support, <a href=\"https://coywolf.com/news/web-development/new-version-of-png-to-challenge-avif-and-webp-for-image-dominance-on-the-web/\">making PNG a valuable alternative to other formats</a> like AVIF and WebP.</p>\n   <p>The PNG format was <a href=\"https://www.w3.org/TR/2003/REC-PNG-20031110/\">last updated in 2003</a>. The motivation for crafting the third edition came from the W3C’s Timed Text Working Group, which required a format capable of supporting HDR in subtitles. The <a href=\"https://www.reddit.com/r/YouShouldKnow/comments/1f09ls2/ysk_if_you_watch_movies_in_hdr_you_should_change/#:~:text=Why%20YSK:%20When%20watching%20movies,readability%20without%20overwhelming%20the%20visuals.\">sometimes excessive subtitles’ brightness</a>, specially against dark scenes, can cause eye strain and distract from the surrounding content. This need catalyzed a broader effort involving industry participants such as Adobe, Apple, and Google. The update was also driven by PNG’s role in digital preservation; it is a <a href=\"https://www.loc.gov/preservation/resources/rfs/stillimg.html#ogdigital\">recommended format for the US Library of Congress</a> due to its lossless compression and standardized nature.</p>\n   <p>The most significant change is the introduction of robust HDR support via a new 4-byte <code>cICP</code> chunk (Coding-Independent Code Points). This chunk allows an image to explicitly define its color space, transfer function, and matrix coefficients. <a href=\"https://x.com/svgeesus\">Chris Lilley</a>, one of the original developers of PNG who contributed to the formulation of the new PNG specification, explained in a <a href=\"https://svgees.us/blog/cICP.html\">technical article</a> how this enables accurate color rendering on the commonly available wide-gamut displays.</p>\n   <p>In addition, the new specification formally standardizes Animated PNGs (APNGs). Previously an unofficial extension proposed by Mozilla, APNGs provide a lossless, frame-by-frame animation capability with support for 24-bit color and 8-bit alpha transparency. Developers now have an improved alternative to animated GIFs.</p>\n   <p>Lastly, the spec adds official support for <a href=\"https://en.wikipedia.org/wiki/Exif\">Exif data</a>, allowing metadata such as copyright information and camera settings to be embedded directly within the file.</p>\n   <p>Developer discussions on <a href=\"https://www.reddit.com/r/webdev/comments/1lj81pc/png_is_back/\">Reddit</a> highlighted the practical advantages of a standardized APNG format. While modern video codecs are generally more efficient for animations, they have some limitations. A Reddit user emphasized the importance of APNGs for animations requiring transparency:</p>\n   <blockquote>\n    <p>While the webm spec supports an alpha channel, Safari does not render it. So if you want animated assets with transparent backgrounds, but feel limited by gif’s 1-bit alpha depth, APNG would be a good choice. I suspect that this is why apple’s short-lived iMessage “stickers” supported APNG.</p>\n    <p><a href=\"https://www.reddit.com/r/webdev/comments/1lj81pc/comment/mzic2eh/\">Source: pdschatz on Reddit</a></p>\n   </blockquote>\n   <p>While the new features are designed to be backward compatible, one HackerNews user noted that it could be further improved:</p>\n   <blockquote>\n    <p>This is great but also has the issue that users might not notice that their setup is giving them a less than optimal result… Seems the backwards compatibility isn’t as great as it could be. Old programs show a washed out image instead which sucks. This should have been avoidable in the same way JPG gain maps work so that you only need updated programs to take advantage of the increased gamut… and not to correctly show colors that fit into sRGB.</p>\n    <p><a href=\"https://news.ycombinator.com/item?id=44385382\">Source: account42 on Hacker News</a></p>\n   </blockquote>\n   <p>The article’s author confirmed that the working group is aware of this and plans to address it in the next edition of the specifications. “PNG Fourth Edition, which we are working on now, is likely to add gain maps,” they wrote. “However, gain maps are extra data. So there is a trade off.”</p>\n   <p>A <a href=\"https://lists.w3.org/Archives/Public/public-png/2025Mar/0012.html\">Fifth Edition of the specifications</a> will <a href=\"https://news.ycombinator.com/item?id=44388462\">research compression improvements</a>, with goals including updating libpng, enabling parallel encoding/decoding, and potentially integrating modern algorithms like zstd.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Third Edition of PNG Specification Released, Adds HDR and Official APNG Support\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/png-3-hdr-animated-png-support/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756143180000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "W3C 发布了 PNG 规范的第三版，引入了 HDR 支持，标准化了 APNG，并增加了 Exif 元数据，使其在现代网络图像格式中更具竞争力。",
+  "oneSentenceSummary": "W3C 发布了 PNG 规范的第三版，引入了 HDR 支持，标准化了 APNG，并增加了 Exif 元数据，使其在现代网络图像格式中更具竞争力。",
+  "summary": "W3C 发布了便携式网络图形 (PNG) 规范的第三版，这是二十年来的首次重大更新。此重要版本通过新的 `cICP` 区块引入了强大的高动态范围 (HDR) 颜色支持，从而可以在广色域显示器上实现准确的颜色渲染。这源于定时文本工作组对字幕的需求。它还正式标准化了动画 PNG (APNG)，以前是一个非官方的扩展，提供了一种无损的逐帧动画格式，具有 24 位颜色和 8 位 Alpha 透明度，使其成为动画 GIF 的改进替代品，尤其是在透明背景方面，其他格式（如 WebM）可能存在局限性。此外，该规范还增加了对 Exif 元数据的官方支持。这些更新旨在增强 PNG 的功能和相关性，由 Adobe、Apple 和 Google 等行业参与者推动，并加强其在数字保存中的作用。未来的版本计划解决 HDR 的向后兼容性（PNG4 中的增益映射）和压缩改进（PNG5）。",
+  "mainPoints": [
+    {
+      "point": "PNG 第三版引入了强大的 HDR 支持，可在现代显示器上实现准确的色彩渲染。",
+      "explanation": "新的 `cICP` 区块显式定义了色彩空间、传递函数和矩阵系数，从而使 PNG 可以在广色域显示器上正确显示高动态范围图像，从而满足了现代网络的关键需求。"
+    },
+    {
+      "point": "APNG 现在已正式标准化，为透明动画提供了更好的替代方案。",
+      "explanation": "这提供了具有 24 位颜色和 8 位 Alpha 透明度的无损逐帧动画，直接解决了动画 GIF 的局限性以及 WebM Alpha 通道的特定浏览器问题。"
+    },
+    {
+      "point": "此更新增强了 PNG 作为 Web 和数字保存的竞争性图像格式的相关性。",
+      "explanation": "通过添加 HDR 和标准化的 APNG，PNG 成为一种更通用和更有价值的选择，在特定用例中挑战了 AVIF 和 WebP 等较新的格式，并巩固了其在数字存档中的作用。"
+    }
+  ],
+  "keyQuotes": [
+    "此更新引入了高动态范围 (HDR) 颜色，标准化了动画 PNG (APNG)，并增加了 Exif 元数据支持，使 PNG 成为 AVIF 和 WebP 等其他格式的有价值的替代方案。",
+    "虽然 WebM 规范支持 Alpha 通道，但 Safari 不会渲染它。因此，如果您想要具有透明背景的动画素材，但又受到 GIF 的 1 位 Alpha 深度的限制，那么 APNG 将是一个不错的选择。",
+    "旧程序显示的图像会显得色彩黯淡，效果不佳。应该以与 JPG 增益映射相同的方式避免这种情况，这样您只需要更新的程序即可利用增加的色域……而不是正确显示适合 sRGB 的颜色。",
+    "我们现在正在开发的 PNG 第四版可能会添加增益映射。"
+  ],
+  "tags": [
+    "PNG",
+    "图像格式",
+    "Web 标准",
+    "HDR",
+    "APNG"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 565,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756143180000,
+  "publishDateStr": "2025-08-25",
+  "publishDateTimeStr": "2025-08-25 17:33:00"
+}

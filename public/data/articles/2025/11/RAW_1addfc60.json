@@ -1,0 +1,55 @@
+{
+  "id": "RAW_1addfc60",
+  "title": "Grafana 和 GitLab 推出 CI/CD 无服务器可观测性集成",
+  "url": "https://www.infoq.com/news/2025/11/grafana-gitlab-serverless-cicd/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-06 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">In a move to streamline development workflows, Daniel Fritzgerald of GrafanaLabs has <a href=\"https://grafana.com/blog/2025/10/10/a-serverless-approach-to-ci-cd-observability-with-gitlab-and-grafana/\">published </a>a new <a href=\"https://github.com/danifitz/gitlab-logs-grafana-loki\">open-source solution</a> that links GitLab CI/CD events into Grafana's observability stack via a serverless architecture. The integration enables teams to channel GitLab webhooks, such as pushes, merge requests, and pipeline completions, directly into <a href=\"https://grafana.com/products/cloud/logs/\">Grafana Cloud Logs</a> (built on <a href=\"https://grafana.com/oss/loki/\">Grafana Loki</a>) for real-time visibility and correlation between deploy events and performance metrics.</p>\n   <p dir=\"ltr\">The core challenge addressed is the fragmentation between source control, CI/CD tooling, and observability systems. Many teams struggle with disconnected dashboards: developers may check <a href=\"https://about.gitlab.com/\">GitLab</a> for pipeline status; operations review logs in <a href=\"https://grafana.com/\">Grafana</a>; and neither view is tied directly to underlying metrics or deployments, causing slower incident response and manual correlation. The GitLab-Grafana integration closes that gap by funneling structured CI/CD events into a unified log stream, enabling teams to monitor pipeline health, deployment frequencies, and correlate changes with system metrics.</p>\n   <p dir=\"ltr\">From a technical standpoint, the solution relies on a lightweight serverless function (such as an <a href=\"https://aws.amazon.com/lambda/\">AWS Lambda</a>) that receives GitLab webhooks via an API Gateway endpoint, formats the payload as structured logs, and ships them into Grafana Cloud Logs. Users can then use <a href=\"https://grafana.com/docs/loki/latest/query/\">LogQL</a> queries to analyze CI/CD activity by project, deployment success rates, or build times. Furthermore, these logs can be combined with application performance data in Grafana dashboards, for example, seeing error rates plotted alongside specific deploys or code changes.</p>\n   <p dir=\"ltr\">The introduction of this serverless observability pipeline effectively makes CI/CD telemetry first-class in monitoring platforms. Teams can now create alerts based on deployment trends (e.g., build failures, long pipeline times, reduced deployment cadence), visualize developer productivity and release velocity, and drive compliance or audit reporting on change-failure rates and deployment recovery times. Grafana notes that this style of integration reflects a broader shift toward unified visibility where code changes, metrics, logs, and traces operate as part of a single workflow.</p>\n   <p dir=\"ltr\">For organizations seeking to adopt this model, compatible setups typically follow four steps: deploy the Lambda function with Grafana Cloud credentials, create an API endpoint for GitLab webhooks, configure GitLab to send events to that endpoint, and begin building dashboards in Grafana. With minimal code, reportedly around 69 lines of Python, teams can set up the integration in under 30 minutes, according to the blog post.</p>\n   <p dir=\"ltr\">For those interested in this observability approach, here are some additional templates that can help achieve something similar and be utilized to showcase CI/CD observability, especially with GitLab + Prometheus:</p>\n   <p dir=\"ltr\"><a href=\"https://grafana.com/grafana/dashboards/10620-gitlab-ci-pipelines\">GitLab CI Pipelines dashboard (ID: 10620)</a>: This dashboard visualizes metrics from GitLab's CI pipelines, using Prometheus as a data source. It includes panels for pipeline durations, success/fail counts, jobs metrics, etc.</p>\n   <p dir=\"ltr\"><a href=\"https://github.com/mvisonneau/gitlab-ci-pipelines-exporter/blob/main/examples/quickstart/grafana/dashboards/dashboard_pipelines.json\">Dashboard JSON from GitLab CI Pipelines Exporter</a>:&nbsp; The gitlab-ci-pipelines-exporter project provides an example dashboard JSON, which you can import or customize.</p>\n   <p dir=\"ltr\"><a href=\"https://gitlab.com/gitlab-org/grafana-dashboards/-/tree/8e03585bea81be8af5c651179c840ec0cdfd9a2d\">GitLab Self-managed Grafana Dashboards repo</a>: GitLab maintains a repository of sample dashboards (for GitLab metrics) that include performance, CI metrics, etc.</p>\n   <p dir=\"ltr\"><a href=\"https://grafana.com/grafana/dashboards/21662-gitlab-runner\">GitLab Runner Dashboard (ID: 21662)</a>: This dashboard focuses on runner metrics, which can complement pipeline dashboards by showing the health, concurrency, and performance of runner infrastructure.</p>\n   <p dir=\"ltr\">One <a href=\"https://www.reddit.com/r/grafana/comments/jhs8ic/webhooks_for_grafana\">Reddit user</a> described how they consume CI/CD pipeline events or deployment webhooks and feed them into Grafana Logs panels. For instance, they published a webhook service, used a Grafana data-source plugin, and showed GitLab pipeline events in Grafana logs.</p>\n   <p dir=\"ltr\">Overall, this integration marks an advance in linking development workflows with observability tooling. By treating CI/CD events as structured logs and making them queryable alongside metrics and traces, teams gain a more holistic view of their software delivery lifecycle - reducing the time to detect issues, improving incident response, and aligning developer actions with operational outcomes.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Grafana and GitLab Introduce Serverless CI/CD Observability Integration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/grafana-gitlab-serverless-cicd/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762430400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Grafana 和 GitLab 推出无服务器集成，将 CI/CD 事件导入 Grafana Cloud Logs，为开发工作流程提供统一的可观测性，并改进事件响应和决策制定。",
+  "oneSentenceSummary": "Grafana 和 GitLab 推出无服务器集成，将 CI/CD 事件导入 Grafana Cloud Logs，为开发工作流程提供统一的可观测性，并改进事件响应和决策制定。",
+  "summary": "本文介绍了 GrafanaLabs 的一项新开源解决方案，该方案通过无服务器架构集成 GitLab CI/CD 事件与 Grafana 的可观测性平台。这项创新解决了源代码控制、CI/CD 工具和监控系统之间常见的可见性碎片化挑战，从而减少事件响应时间和手动关联工作。通过利用轻量级的无服务器函数（如 AWS Lambda）捕获 GitLab Webhooks（例如，推送、合并请求、流水线完成），并将其转换为 Grafana Cloud Logs (由 Loki 提供支持) 的结构化日志。这使得团队可以获得实时的、统一的洞察力。这允许在部署事件和应用程序性能指标之间进行直接关联，从而更好地监控流水线健康状况、跟踪部署频率，并显著缩短事件响应时间。该集成还有助于创建基于部署趋势的可靠警报，可视化开发人员的生产力和发布速度，并增强对变更失败率和部署恢复时间的合规性报告。设置过程的设计非常简单，只需要最少的代码（据报道约为 69 行 Python），并且易于实施。这种方法标志着整个行业正在向全面的、统一的可观测性转变，覆盖整个软件交付生命周期。它提供了从初始代码更改到运营结果的整体视图，并将开发人员的行为与运营目标对齐。",
+  "mainPoints": [
+    {
+      "point": "一种新的无服务器集成统一了碎片化的 CI/CD 工具与可观测性平台。",
+      "explanation": "通过轻量级无服务器函数将 GitLab Webhooks 导入 Grafana Cloud Logs，该方案弥合了源代码控制、CI/CD 和监控系统之间的可见性差距。"
+    },
+    {
+      "point": "实时 CI/CD 事件日志记录增强了运营可见性和关联能力。",
+      "explanation": "结构化 CI/CD 事件通过统一的日志流，帮助团队监控流水线健康状况和部署频率，并将代码变更与系统性能指标关联，从而加速事件响应。"
+    },
+    {
+      "point": "该解决方案显著提高了开发人员的生产力洞察力，并简化了合规性报告。",
+      "explanation": "它有助于创建关于部署趋势的警报，可视化发布速度，并生成关于变更失败率和恢复时间的审计报告。这提供了软件交付生命周期的整体视图。"
+    }
+  ],
+  "keyQuotes": [
+    "该集成使团队能够将 GitLab Webhooks（例如推送、合并请求和流水线完成）直接导入构建于 Grafana Loki 之上的 Grafana Cloud Logs，以实现实时可见性以及部署事件和性能指标之间的关联。",
+    "GitLab-Grafana 集成通过将结构化的 CI/CD 事件导入统一的日志流来弥合差距，帮助团队监控流水线健康状况、部署频率，并将更改与系统指标关联。",
+    "这种无服务器可观测性流水线的引入有效地提升了 CI/CD 遥测在监控平台中的地位。",
+    "根据博客文章，团队只需最少的代码（据报道约为 69 行 Python），即可在 30 分钟内完成集成设置。",
+    "通过将 CI/CD 事件视为结构化日志，并使它们可以与指标和跟踪一起查询，团队可以更全面地了解其软件交付生命周期。这有助于缩短检测问题的时间，改善事件响应，并将开发人员的行为与运营结果对齐。"
+  ],
+  "tags": [
+    "CI/CD",
+    "可观测性",
+    "DevOps",
+    "Grafana",
+    "GitLab"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 600,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762430400000,
+  "publishDateStr": "2025-11-06",
+  "publishDateTimeStr": "2025-11-06 12:00:00"
+}

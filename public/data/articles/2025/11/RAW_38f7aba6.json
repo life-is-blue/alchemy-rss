@@ -1,0 +1,55 @@
+{
+  "id": "RAW_38f7aba6",
+  "title": "美团开源 LongCat-Audio-Codec，高效语音编解码器助力实时交互落地",
+  "url": "https://tech.meituan.com/2025/11/14/longcat-audio-codec.html",
+  "date": "2025-11-14 00:00:00",
+  "author": "作者: 美团技术团队",
+  "siteName": "美团技术团队",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content\">\n   <p>语音大语言模型（Speech LLM）想落地，绕不开一个死结：既要快速理解语音里的语义，又要说出自然的音色，还得实时响应。比如智能音箱 “听不懂” 语音，车载助手 “说” 得像机器人，实时翻译延迟卡半秒 ——深究根源，全在 “语音 Token 化”：作为拆分语音为 Speech LLM “离散单元” 的关键步骤，传统方案始终没平衡好 —— 要么缺语义、要么丢声学、要么延迟高，刚好卡了 Speech LLM 落地的 “死结”。</p>\n   <p>针对 Speech LLM 落地中的音频处理难题，美团 LongCat 团队正式开源专用语音编解码方案 <a href=\"https://github.com/meituan-longcat/LongCat-Audio-Codec\">LongCat-Audio-Codec</a>。它提供了一套一站式的 Token 生成器（Tokenizer）与 Token 还原器（DeTokenizer）工具链，其核心功能是将原始音频信号映射为语义与声学并行的 Token 序列，实现高效离散化，再通过解码模块重构高质量音频，为 Speech LLM 提供从信号输入到输出的全链路音频处理支持。通过创新的架构设计与训练策略，LongCat-Audio-Codec 在语义建模、声学重建、流式合成三大维度实现突破。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/060fea91e92194443e8b186566bbb460743887.png\" alt=\"LongCat-Audio-Codec 模型架构图\"></p>\n   <h2 id=\"一-技术亮点\">一、技术亮点</h2>\n   <p>LongCat-Audio-Codec 的核心竞争力源于三大创新设计。</p>\n   <p><strong>设计一： 语义 - 声学双 Token 并行提取机制：兼顾理解与生成</strong></p>\n   <p>为解决语义空间干扰声学空间导致的重构质量不佳的问题，LongCat-Audio-Codec 采用 “级联训练 - 并行推理” 的创新设计：</p>\n   <ul>\n    <li><strong>语义 Token</strong>：首先基于双向 Transformer 架构，聚焦语音内容的核心信息，基于 CTC 微调后的 ASR 模型提取纯粹的语义信息，为 Speech LLM 的语义理解提供支撑；</li>\n    <li><strong>声学 Token</strong>：随后基于已有语义信息，结合改进的量化技术，在大码本空间下补充韵律、音色等副语言特征的声学 Token，解决非语义信息覆盖不足的问题。</li>\n   </ul>\n   <p>同时，该方案支持声学码本的动态配置，可以在保证语义能力一致的情况下，根据下游任务调整码本层数。如下游任务是少音色场景，则可以选择单个声学码本来减少 Speech LLM 的学习压力；如果下游任务是多音色场景，则可以选择全部声学码本来提供丰富的说话人支持。</p>\n   <p><strong>设计二： 低延迟流式解码器：兼顾实时与质量</strong></p>\n   <p>低延时流式处理能力是 Speech LLM 实时交互场景（如车载语音助手、实时翻译）的核心需求，其关键指标为端到端延迟（End-to-End Latency）。传统解码架构没有专为流式场景设计，易导致实时交互延迟高（如实时翻译卡半秒），LongCat-Audio-Codec 通过低延迟流式解码器解决这一问题。其解码器采用帧级增量处理模式，通过控制对未来语音 Token 的依赖，将解码延迟控制在百毫秒级。该架构显著提升了 Speech LLM 的交互实时性，满足工业级实时响应标准。</p>\n   <p><strong>设计三：超低比特率高保真与集成超分辨率设计：兼顾压缩效率与音质</strong></p>\n   <p>为解决 “低比特率音质劣化”和“超分辨率需额外模型” 问题，LongCat-Audio-Codec 采用协同优化设计：</p>\n   <ul>\n    <li><strong>超低比特率</strong>：比特率是衡量音频压缩效率的核心指标，依托模型优化与三阶段训练机制，通过降低信息量，从而在保证 Speech LLM 能够从海量数据中学习到语音的本质同时，降低 Speech LLM 的训练难度，也为 Speech LLM 的规模化落地提供了支撑。</li>\n    <li><strong>集成超分辨率</strong>：LongCat-Audio-Codec 将超分辨率思想嵌入解码器，通过神经网络对重建音频进行频域补全。该集成设计不仅进一步提高了核心内容的压缩率，更通过提升输出音频的采样率，增强了语音的自然度与细节表现力。</li>\n   </ul>\n   <h2 id=\"二-性能评估\">二、性能评估</h2>\n   <h3 id=\"1-低比特率下的可懂性与音质优势\">1. 低比特率下的可懂性与音质优势</h3>\n   <p>在测试中，LongCat-Audio-Codec 在低比特率区间（0.43-0.87kbps）关键指标优于同类方案：对比其他携带语义的编解码器，LongCat-Audio-Codec 在各比特率区间均表现最优。</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/ab1baef4d09fc0dcd5e57843b9910242218214.png\" alt></p>\n   <ul>\n    <li>0.85-2kbps 区间（4 个码本，0.87kbps）：词错误率（WER，越低表示语音可懂性越高）仅 1.48，语音质量感知评估（PESQ，越高表示主观音质越好）达 2.30，短时客观可懂性（STOI，越高表示语音信息保留越完整）达 0.921，说话人相似度（SECS）0.942，兼顾可懂性与音色一致性；</li>\n    <li>0.65-0.85kbps 区间（3 个码本，0.65kbps）：WER 1.70，STOI 0.900，优于同类低比特率方案；</li>\n    <li>&lt;0.65kbps 区间（2 个码本，0.43kbps）：WER 2.10，STOI 0.839，在极端低比特率下仍保持高可懂性，适合资源受限场景。</li>\n   </ul>\n   <h3 id=\"2-比特率与性能的灵活适配\">2. 比特率与性能的灵活适配</h3>\n   <p>当前架构支持在保证语义理解能力的情况下灵活调整码本数量（2-4 个），LongCat-Audio-Codec 可以实现比特率从 0.43kbps 到 0.87kbps 的渐进式优化，且指标同步提升：</p>\n   <ul>\n    <li>WER 从 2.10 降至 1.48，STOI 从 0.839 升至 0.921，语音可懂度显著提高；</li>\n    <li>总基音误差（GPE）从 3.69 降至 1.65，PESQ 从 1.47 升至 2.30，说话人相似度从 0.862 升至 0.942，语音重构相似度进一步提高。</li>\n   </ul>\n   <h3 id=\"3-多阶段训练策略适配多样化场景\">3. 多阶段训练策略适配多样化场景</h3>\n   <p>LongCat-Audio-Codec 设计了多阶段的训练策略，来兼容压缩率和音质的需求。其中 Stage1 用于满足高压缩率下的重构需求，Stage2 用于满足高音质合成需求，Stage3 用于满足个性化定制需求：</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/75283954bb20569e705a198a769df577189630.png\" alt></p>\n   <p>经过 Stage 2 优化后，LongCat-Audio-Codec 在音质上表现突出，无参考音质指标 SIGMOS 3.35，NISQA 4.33，甚至超过 LibriTTS clean 数据集（SIGMOS 3.24、NISQA 4.09）录音水平：</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/e501b3d95dd3c33b824fec17eca261ca77921.png\" alt></p>\n   <p>经过 Stage 3 优化后，有限集说话人相似度（SIM）从 0.717 升至 0.938，证明在当前架构下，使用最低码率（0.43kbps）下也可满足说话人定制需求。</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/49186d8a7522e8c2e86c525c6882a6ca622510.png\" alt></p>\n   <h2 id=\"三-总结\">三、总结</h2>\n   <p>作为工业级语音大模型（Speech LLM）的专用语音 Token 解决方案，LongCat-Audio-Codec 以三大核心创新打破了语音大模型落地的关键瓶颈：通过 “语义 - 声学双 Token 并行提取” 破解 “懂却说不清” 的平衡难题，以 “低延迟流式解码” 解决 “说得清却不实时” 的交互痛点，靠 “超低比特率高保真 + 集成超分辨率” 兼顾压缩效率与音质细节，真正让语音大模型既 “听懂” 语义，又能够“说清” 。</p>\n   <p>LongCat-Audio-Codec 的开源发布，给语音大模型领域带来三重关键价值：</p>\n   <ul>\n    <li>其一，降低技术门槛 —— 为缺乏专用语音处理模块的研究团队提供一站式 Token 生成器（Tokenizer）与 Token 还原器（DeTokenizer）工具链，缓解语音大模型领域架构碎片化、上手难度高的问题，开发者可基于开源代码快速开发自己的语音大模型；</li>\n    <li>其二，丰富应用场景 —— 具备灵活码本、轻量化、低延迟解码方案，适用更多的应用场景；</li>\n    <li>其三，完善技术生态 —— 与美团此前发布的 LongCat 系列模型形成协同，从语音Token处理到语音大模型全链路能力，为构建全栈式语音智能系统奠定基础。</li>\n   </ul>\n   <p>作为开源的语音大模型专用语音编解码器，LongCat-Audio-Codec 的技术路线不仅为当前语音大模型落地提供了高效适配的解决方案，更给语音 - 语言跨模态研究提供了新的参考范式。未来，LongCat 团队还将在多语言语音处理、长音频建模等方向持续优化，期待为行业带来更多突破，也欢迎更多开发者关注与参与共建。</p>\n   <p><strong>Github地址</strong>：<a href=\"https://github.com/meituan-longcat/LongCat-Audio-Codec\">https://github.com/meituan-longcat/LongCat-Audio-Codec</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美团开源 LongCat-Audio-Codec，一种高效语音编解码器，通过语义-声学双 Token 并行、低延迟流式解码和超低比特率高保真设计，解决语音大模型实时交互落地瓶颈。",
+  "oneSentenceSummary": "美团开源 LongCat-Audio-Codec，一种高效语音编解码器，通过语义-声学双 Token 并行、低延迟流式解码和超低比特率高保真设计，解决语音大模型实时交互落地瓶颈。",
+  "summary": "文章详细介绍了美团开源的 LongCat-Audio-Codec 语音编解码方案，旨在解决语音大语言模型（Speech LLM）在实时交互落地中面临的“听懂”与“说清”的平衡难题。传统语音 Token 化方案在语义、声学或延迟方面存在不足。LongCat-Audio-Codec 通过三大核心创新实现突破：一是“语义-声学双 Token 并行提取机制”，采用级联训练-并行推理，兼顾语义理解和声学重建质量；二是“低延迟流式解码器”，通过帧级增量处理将端到端延迟控制在百毫秒级，满足实时交互需求；三是“超低比特率高保真与集成超分辨率设计”，协同优化压缩效率与音质。性能评估显示，该方案在低比特率下保持高可懂性和音质，并支持比特率与性能的灵活适配以及多阶段训练策略以适应多样化场景。LongCat-Audio-Codec 的开源降低了技术门槛，丰富了应用场景，并完善了美团 LongCat 系列技术生态。",
+  "mainPoints": [
+    {
+      "point": "语义-声学双 Token 并行提取机制，有效平衡语音理解与生成质量。",
+      "explanation": "通过双向 Transformer 提取纯粹语义 Token，结合改进量化技术补充声学 Token，解决传统方案语义空间干扰声学空间问题，兼顾 Speech LLM 的理解与自然音色生成。"
+    },
+    {
+      "point": "低延迟流式解码器实现百毫秒级实时交互。",
+      "explanation": "采用帧级增量处理模式，将端到端延迟控制在百毫秒级别，显著提升 Speech LLM 在车载助手、实时翻译等场景的交互实时性，满足工业级标准。"
+    },
+    {
+      "point": "超低比特率高保真与集成超分辨率设计，兼顾压缩效率与音质。",
+      "explanation": "通过模型优化和三阶段训练实现超低比特率，降低 Speech LLM 训练难度；同时将超分辨率嵌入解码器，通过频域补全提升输出音频采样率和自然度。"
+    }
+  ],
+  "keyQuotes": [
+    "Speech LLM 想落地，绕不开一个死结：既要快速理解语音里的语义，又要说出自然的音色，还得实时响应。",
+    "LongCat-Audio-Codec 在语义建模、声学重建、流式合成三大维度实现突破。",
+    "其解码器采用帧级增量处理模式，通过控制对未来语音 Token 的依赖，将解码延迟控制在百毫秒级。",
+    "LongCat-Audio-Codec 将超分辨率思想嵌入解码器，通过神经网络对重建音频进行频域补全。",
+    "LongCat-Audio-Codec 的开源发布，给语音大模型领域带来三重关键价值：降低技术门槛、丰富应用场景、完善技术生态。"
+  ],
+  "tags": [
+    "语音编解码",
+    "语音大模型",
+    "Speech LLM",
+    "音频处理",
+    "实时交互"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2724,
+  "domain": "tech.meituan.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f18ad4",
+  "sourceName": "美团技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763078400000,
+  "publishDateStr": "2025-11-14",
+  "publishDateTimeStr": "2025-11-14 00:00:00"
+}

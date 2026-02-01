@@ -1,0 +1,55 @@
+{
+  "id": "RAW_51500e",
+  "title": "LinkedIn 如何在现有消息基础设施上构建企业级多智能体 AI",
+  "url": "https://www.infoq.com/news/2025/09/linkedin-multi-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-15 12:30:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>LinkedIn has <a href=\"https://www.linkedin.com/blog/engineering/generative-ai/the-linkedin-generative-ai-application-tech-stack-extending-to-build-ai-agents\" target=\"_blank\">extended its generative AI application platform to support multi-agent systems</a> by repurposing its existing messaging infrastructure as an orchestration layer. This approach allows the company to scale <a href=\"https://cloud.google.com/discover/what-are-ai-agents\" target=\"_blank\">AI agent</a> deployments without building new coordination technology from scratch. The revised architecture enables LinkedIn's \"Hiring Assistant\", the company's first AI agent, to achieve global availability while supporting complex multi-step workflows through agent coordination.</p>\n   <p>The engineering team identified several key architectural lessons from their multi-agent implementation:</p>\n   <blockquote>\n    <ul>\n     <li><strong><em>Reusing existing infrastructure</em></strong><em> and providing&nbsp;</em><strong><em>strong developer abstractions</em></strong><em> are key to scaling complex AI systems efficiently.&nbsp;</em></li>\n     <li><strong><em>Designing for human-in-the-loop control&nbsp;</em></strong><em>ensures&nbsp;</em><strong><em>trust and safety</em></strong><em> while enabling agents to operate autonomously when appropriate.&nbsp;</em></li>\n     <li><strong><em>Observability and context engineering</em></strong><em> have become essential for&nbsp;</em><strong><em>debugging, continuous improvement, and delivering adaptive, personalized experiences</em></strong><em>.&nbsp;</em></li>\n     <li><em>Finally,&nbsp;</em><strong><em>adopting open protocols&nbsp;</em></strong><em>is critical to&nbsp;</em><strong><em>enabling interoperability and avoiding fragmentation</em></strong><em> as agent ecosystems grow.</em></li>\n    </ul>\n   </blockquote>\n   <p>The platform treats agents as standardized <a href=\"https://grpc.io/\" target=\"_blank\">gRPC</a> services registered in a central skill registry, allowing developers to define agent capabilities through familiar service contracts. \"Developers simply annotate this definition with some platform-defined proto3 options that describe the metadata of their agent, and register it via a build plugin into the skill registry\", creating a reusable agent-as-a-service pattern that leverages existing LinkedIn infrastructure.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/09/linkedin-multi-agent/news/2025/09/linkedin-multi-agent/en/resources/1LinkedIn-Agents-Platform-Components-1757768635810.png\" style=\"width:100%;height:634px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/linkedin-multi-agent/en/resources/1LinkedIn-Agents-Platform-Components-1757768635810.png\" rel=\"share\">\n    <br>\n    <em>The relationship between different agent platform components (<a href=\"https://www.linkedin.com/blog/engineering/generative-ai/the-linkedin-generative-ai-application-tech-stack-extending-to-build-ai-agents\" target=\"_blank\">source</a>)</em></p>\n   <p>Rather than building new orchestration technology, LinkedIn adapted its production messaging system to coordinate multi-agent workflows. This platform offers guaranteed first-in-first-out (FIFO) delivery, message persistence, and horizontal scaling capabilities, and these directly translate to agent coordination benefits. \"Long-lived tasks could be broken down into a sequence of messages with guaranteed FIFO delivery and seamless message history lookup\", while parallelization occurs through multiple message threads managed by the existing infrastructure.</p>\n   <p>The architecture implements a two-tier observability strategy addressing the unique challenges of debugging non-deterministic agent systems. Pre-production environments use <a href=\"https://www.langchain.com/langsmith\" target=\"_blank\">LangSmith</a> for rich execution tracing and developer introspection, while production relies on <a href=\"https://opentelemetry.io/\" target=\"_blank\">OpenTelemetry</a> for structured, privacy-compliant monitoring integrated with LinkedIn's existing observability stack. This hybrid approach enables developers to iterate quickly while maintaining enterprise-grade reliability and compliance.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/09/linkedin-multi-agent/news/2025/09/linkedin-multi-agent/en/resources/1LinkedIn-Observability-Flows-1757768635810.png\" style=\"width: 767px; height: 720px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/linkedin-multi-agent/en/resources/1LinkedIn-Observability-Flows-1757768635810.png\" rel=\"share\">\n    <br>\n    <em>LinkedIn agent platform observability flow (<a href=\"https://www.linkedin.com/blog/engineering/generative-ai/the-linkedin-generative-ai-application-tech-stack-extending-to-build-ai-agents\" target=\"_blank\">source</a>)</em></p>\n   <p>LinkedIn's client integration libraries handle cross-device synchronization, incremental streaming, and asynchronous communication patterns which are essential for agent interactions that span multiple user sessions. The platform supports both synchronous and asynchronous agent invocation patterns, allowing developers to choose between strong consistency with async messaging or eventual consistency with direct synchronous calls based on specific use case requirements.</p>\n   <p>The platform adopted open protocols, including <a href=\"https://modelcontextprotocol.io/\" target=\"_blank\">Model Context Protocol (MCP)</a> and <a href=\"https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/\" target=\"_blank\">Agent-to-Agent (A2A)</a>. \"We are incrementally adopting these open protocols, moving away from a proprietary skill registry, paving the way for more intelligent, interoperable, and context-aware agent ecosystems\", positioning LinkedIn's architecture for broader ecosystem compatibility as agent standards mature.</p>\n   <p>MCP has already gained widespread adoption among major model providers, such as Anthropic and OpenAI. However, <a href=\"https://github.com/a2aproject/A2A\" target=\"_blank\">A2A</a> remains a more experimental protocol, focusing specifically on enabling seamless collaboration between different AI agents. A2A addresses the challenges of agents discovering each other's capabilities, negotiating task delegation, and coordinating complex workflows that span multiple specialized agents.</p>\n   <p>This architectural approach reflects a broader industry trend toward enterprise multi-agent platforms, with <a href=\"https://www.infoq.com/news/2024/12/aws-multi-agent/\" target=\"_blank\">AWS</a>, <a href=\"https://www.infoq.com/news/2024/11/microsoft-magentic-one/\" target=\"_blank\">Microsoft</a>, and other major providers releasing similar orchestration frameworks in recent months. LinkedIn's messaging-based approach offers a distinctive path for organizations looking to leverage existing infrastructure investments while scaling AI agent capabilities.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How LinkedIn Built Enterprise Multi-Agent AI on Existing Messaging Infrastructure\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/linkedin-multi-agent/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1757939400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "LinkedIn 改造了其生成式 AI 平台，通过复用现有消息传递基础架构实现可扩展的编排，从而支持多智能体系统，强调人机协同和开放协议的应用。",
+  "oneSentenceSummary": "LinkedIn 改造了其生成式 AI 平台，通过复用现有消息传递基础架构实现可扩展的编排，从而支持多智能体系统，强调人机协同和开放协议的应用。",
+  "summary": "LinkedIn 通过扩展其生成式 AI 应用程序平台以支持多智能体系统，显著推进了平台发展。这一关键步骤是通过创造性地调整其现有的生产消息传递基础架构作为核心编排层来实现的。这种创新方法使公司能够在全球范围内部署和扩展复杂的 AI 代理功能，例如 LinkedIn 的首个 AI 代理“招聘助手”。这无需从头开始构建新的协调技术。文章概述了几个关键的架构经验教训，包括重用现有基础设施的至关重要性、提供强大的开发者抽象层、设计人工参与的控制机制以确保信任和安全、实施全面的可观测性和上下文工程以实现持续改进，以及采用开放协议以实现互操作性。代理被视为标准化的 gRPC 服务，注册在中央技能中心，从而促进可重用的代理即服务模式。经过调整的消息系统提供了诸如保证 FIFO 交付、消息持久性和水平扩展等基本功能，这些功能直接提升了代理协调的效率。此外，采用 LangSmith 进行预生产和 OpenTelemetry 进行生产的两层可观测性策略，可确保快速迭代以及企业级可靠性和合规性。该平台对开放协议（特别是模型上下文协议 (MCP) 和代理间 (A2A)）的承诺，使 LinkedIn 的架构能够与更广泛的生态系统兼容，与行业内日益增长的迈向企业级多智能体平台的趋势保持一致。",
+  "mainPoints": [
+    {
+      "point": "复用现有消息传递基础架构能够实现可扩展且高效的多智能体 AI 编排。",
+      "explanation": "LinkedIn 利用其生产消息系统的保证 FIFO 交付、持久性和水平扩展来协调复杂的多智能体工作流程，避免了构建新的专用编排技术的需要。"
+    },
+    {
+      "point": "设计人机协同控制和强大的可观测性可确保信任和持续改进。",
+      "explanation": "整合人工监督可维持安全和信任。两层可观测性策略 (LangSmith/OpenTelemetry) 有助于进行有效的调试和持续迭代，从而优化自适应代理体验。"
+    },
+    {
+      "point": "采用开放协议对于互操作性至关重要，并可避免在不断发展的 AI 代理生态系统中出现碎片化。",
+      "explanation": "LinkedIn 逐步采用 MCP 和 A2A 等协议，从而促进各种 AI 代理之间的无缝协作，并随着标准的发展，使其平台能够适应未来的生态系统兼容性。"
+    }
+  ],
+  "keyQuotes": [
+    "重用现有基础设施并提供强大的开发者抽象层是有效扩展复杂 AI 系统的关键。",
+    "设计人机协同控制可确保信任和安全，同时使代理能够在适当的时候自主运行。",
+    "可观测性和上下文工程已成为调试、持续改进和提供自适应的个性化体验的必要条件。",
+    "长期存在的任务可以分解为一系列消息，这些消息具有保证的 FIFO 交付和无缝的消息历史记录查找。",
+    "我们正在逐步采用这些开放协议，从而摆脱专有的技能注册中心，为更智能、可互操作且具有上下文感知能力的代理生态系统铺平道路。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "AI 代理",
+    "生成式 AI",
+    "AI 架构",
+    "平台工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 546,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1757939400000,
+  "publishDateStr": "2025-09-15",
+  "publishDateTimeStr": "2025-09-15 12:30:00"
+}

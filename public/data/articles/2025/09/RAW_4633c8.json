@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4633c8",
+  "title": "刚刚，李飞飞空间智能新成果震撼问世！3D 世界生成进入「无限探索」时代 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-17-2",
+  "date": "2025-09-17 02:20:29",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>就在今天，斯坦福大学教授李飞飞的创业公司 World Labs 发布了新成果 —— <strong>限量开放的测试预览版空间智能模型 Marble</strong>。</p>\n  <p>「只需一张图片，就能生成持久存在的 3D 世界，比以往更宏大、更震撼！」</p>\n  <section>\n   <img data-imgfileid=\"503507429\" data-ratio=\"1.0888888888888888\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250917023832_8f08ff\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/9cd8773f-1189-4085-8e5a-289fbd91648e/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>我们先看下面一段视频 demo：<img src=\"https://image.jiqizhixin.com/uploads/editor/ddfcc4e8-9393-419c-a0bb-588d692c61d1/1758075540587.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>李飞飞对此表示，「这是一个使用我们的 3D 世界生成模型创建的极其庞大的世界，它令我惊叹不已！」</p>\n  <p>实现这一切，输入的既可以是单张图片，也可以是文本提示。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_c3a348\" data-ratio=\"0.45185185185185184\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-backw=\"562\" data-backh=\"254\" data-imgfileid=\"503507430\" data-original-style=\"width:100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/6c4289e2-0794-4db4-99fb-09dacfd7920b/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>当被问到与谷歌的 Genie 有什么区别时，李飞飞表示，「我们生成的 3D 世界是永久存在的，用户可以自由地在其中导航探索，而这一切对你来说完全免费。」</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_a9acd2\" data-ratio=\"0.6407407407407407\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507431\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0318c2d6-c426-4552-a39d-8051338cc38c/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>有 X 博主表示，「这才是真正的大规模 3D 生成。」</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_a307e7\" data-ratio=\"1.0324074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507432\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/c7839c42-1362-4db5-9b73-b5408a847c2e/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>另有网友测试后表示效果很棒，也提出了一些改进的建议。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_acfe6e\" data-ratio=\"0.36944444444444446\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507433\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/b35411a3-52bc-4166-bd99-bfcb1df852b8/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>目前，用户可以加入白名单，访问 Marble 预览版。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_da62e0\" data-ratio=\"0.4925925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507434\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/14f038b2-12b7-4fb2-9877-6bf9082dbc84/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>白名单地址：https://www.worldlabs.ai/waitlist</p>\n  <p>在 World Labs 放出的官方博客中，我们可以看到更详细的技术细节（下文以第一人称陈述）。</p>\n  <p>今天，我们很高兴分享在「空间智能」前沿探索上的最新进展 ——<strong> 生成持久、可导航、可控的 3D 世界</strong>。</p>\n  <p>同时，我们正式推出 Marble，一个限量测试版预览模型，现已开放试用。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_2a0fcf\" data-ratio=\"0.362962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507435\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/3605295c-34f7-4e97-82d4-86a804a3566e/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>试用地址：marble.worldlabs.ai</p>\n  <p><strong>无论是输入一张图片还是一段文字提示，Marble 都能生成一个 3D 世界，供你无限制地探索 —— 没有时间限制、没有形变、没有不一致性。</strong></p>\n  <p>与此前成果相比，现在生成的 3D 世界规模更大、风格更多样化、几何结构也更为干净。</p>\n  <p>Marble 让用户可以浏览和构建 3D 世界。爱好者和开发者还可以将生成的世界导出为高斯点云，并在下游项目中加以使用。这在开源渲染库 Spark 的支持下尤为方便，它能够将<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">高斯点云</span>无缝集成进 Three.js，用于构建基于 Web 的 3D 体验，并能高效地在桌面电脑、笔记本电脑、移动设备和 VR 头显上运行。</p>\n  <p>凭借模型在一致性和风格遵循上的进步，用户现在可以通过组合多个单独的生成结果来构建出更大的世界。</p>\n  <p><strong>更优质的几何结构</strong></p>\n  <p>在许多视觉创作者的工作流与应用场景中，能够在一致的 3D 世界中进行导航和交互是核心需求。</p>\n  <p>我们生成的 3D 世界支持用户在浏览器中进行自由视角的导航，且完全零成本。相比深度图或点云所提供的有限 3D 体验，我们的世界具备更丰富的几何复杂度，能够生成更完整的 3D 场景，使用户可以从输入视角的背后或更远处进行探索。</p>\n  <p>目前，我们的模型主要面向 3D 环境的创建，而不是聚焦于单个或中心对象（例如人物或动物）。所以，对于自拍爱好者或宠物主人来说，暂时可能会有些遗憾。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_1c8b87\" data-ratio=\"0.553125\" data-s=\"300,640\" data-type=\"gif\" data-w=\"640\" type=\"block\" data-imgfileid=\"503507440\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/929904af-8bcc-4e0f-abb6-077b1078a08f/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_c01a2b\" data-ratio=\"0.553125\" data-s=\"300,640\" data-type=\"gif\" data-w=\"640\" type=\"block\" data-imgfileid=\"503507441\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/328f23a7-9e45-4311-91ee-259e8ca1b7f2/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>更多样化的风格</strong></p>\n  <p>生成式 AI 最令人兴奋的一点，是它能在创作过程中自由迭代外观与风格。</p>\n  <p>我们的模型可以将各种风格的输入转化为 3D 世界，从平面、色彩鲜明的卡通到逼真、细节丰富的图像，让用户能够不断探索和尝试，找到最契合需求的 3D 世界。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_3a35f5\" data-ratio=\"0.7555555555555555\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507442\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/41d9359a-7695-4df4-8192-dce682dcf1c0/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>更宏大场景的探索</strong></p>\n  <p>以房间大小为尺度的世界是一个很好的起点，但创作者的想象往往超越这些界限。</p>\n  <p>我们想展示一些可能性：用户可以将自己生成的空间拼接在一起，从而构建更宏大的环境。得益于我们的模型在风格一致性和几何一致性上的表现，如今已经可以畅快地在这些更大的世界中进行导航和浏览，并设想出丰富多样的应用场景。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_4c4d8e\" data-ratio=\"0.546875\" data-s=\"300,640\" data-type=\"gif\" data-w=\"640\" type=\"block\" data-imgfileid=\"503507443\" data-original-style=\"null\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/f61450ab-451e-403e-906e-cb695e57c88d/640.gif\" data-order=\"2\" alt=\"图片\" data-report-img-idx=\"11\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>博客地址：https://www.worldlabs.ai/blog/bigger-better-worlds</sup></p>\n </body>\n</html>",
+  "aiSummary": "李飞飞团队发布空间智能模型 Marble，能从图片或文本生成持久、可自由探索的 3D 世界。",
+  "oneSentenceSummary": "李飞飞团队发布空间智能模型 Marble，能从图片或文本生成持久、可自由探索的 3D 世界。",
+  "summary": "文章详细介绍了斯坦福大学李飞飞教授的创业公司 World Labs 最新推出的空间智能模型 Marble。该模型的核心能力在于能够仅通过一张图片或一段文本提示，实现 3D 世界的“无限探索”，生成持久存在、可自由导航的 3D 世界。文章强调了 Marble 相较于现有技术的优势，例如其生成的 3D 世界具有永久性、无形变、无不一致性，并且规模更大、风格更多样、几何结构更优质。用户不仅可以在浏览器中自由视角探索这些世界，还能将其导出为高斯点云，并通过开源渲染库 Spark 无缝集成到 Three.js 等下游项目中，从而构建基于 Web 的 3D 体验。Marble 目前主要专注于 3D 环境的创建，暂不支持单个对象（如人物或动物）的生成。文章还提供了白名单申请地址，邀请用户体验预览版。",
+  "mainPoints": [
+    {
+      "point": "Marble 模型实现从单图/文本生成持久、可自由探索的 3D 世界。",
+      "explanation": "突破传统 3D 生成的局限，提供无时间限制、无形变、无不一致性的沉浸式体验，极大降低 3D 内容创作门槛。"
+    },
+    {
+      "point": "模型生成 3D 世界几何结构更优质，支持多样化艺术风格。",
+      "explanation": "实现了从平面卡通到逼真细节的风格转换，且支持用户从输入视角背后探索，提供了更丰富的视觉创作可能。"
+    },
+    {
+      "point": "支持导出高斯点云，并能拼接生成宏大场景。",
+      "explanation": "通过 Spark 渲染库可集成到 Three.js 等 Web 3D 项目，并能组合多个生成结果构建更大环境，赋能开发者和创作者。"
+    },
+    {
+      "point": "Marble 模型目前主要用于创建 3D 环境而非单个对象。",
+      "explanation": "明确了当前应用场景和局限性，有助于用户理解其定位，避免不必要的期望，并为未来发展方向提供线索。"
+    }
+  ],
+  "keyQuotes": [
+    "只需一张图片，就能生成持久存在的 3D 世界，比以往更宏大、更震撼！",
+    "我们生成的 3D 世界是永久存在的，用户可以自由地在其中导航探索，而这一切对你来说完全免费。",
+    "无论是输入一张图片还是一段文字提示，Marble 都能生成一个 3D 世界，供你无限制地探索 ------ 没有时间限制、没有形变、没有不一致性。",
+    "目前，我们的模型主要面向 3D 环境的创建，而不是聚焦于单个或中心对象（例如人物或动物）。"
+  ],
+  "tags": [
+    "3D世界生成",
+    "空间智能",
+    "生成式AI",
+    "AI模型",
+    "计算机图形学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 93,
+  "wordCount": 1291,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758075629000,
+  "publishDateStr": "2025-09-17",
+  "publishDateTimeStr": "2025-09-17 02:20:29"
+}

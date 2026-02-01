@@ -1,0 +1,54 @@
+{
+  "id": "RAW_a02cee",
+  "title": "架构和 AI 应用的开放实践",
+  "url": "https://www.infoq.com/news/2025/09/open-practices-for-ai-adoption/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-18 07:00:00",
+  "author": "Rafiq Gemmail",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://www.cloudnativesummit.co/schedule2025.html\">Cloud Native Summit</a> recently released videos from its 2025 conference in Auckland. The sessions included several talks highlighting how organisations can turn collaboration patterns into outcomes with the <a href=\"https://openpracticelibrary.com/\">Open Practice Library</a>, a curated collection of patterns that help teams through collaborative practices. <a href=\"https://www.linkedin.com/in/magnorsky/\">Andrea Magnorsky</a> presented her Byte-Sized Architecture approach for building a shared understanding of architecture. At the same time,&nbsp;<a href=\"https://www.linkedin.com/in/ahilan-ponnusamy/\">Ahilan Ponnusamy</a> and <a href=\"https://www.linkedin.com/in/grabnerandi/\">Andreas Grabner</a>, co-authors of <a href=\"https://www.amazon.com/Technology-Operating-Models-Cloud-Edge-ebook/dp/B0C3MFYSND\">Technology Operating Models for Cloud and Edge</a>, discussed applying library practices to drive successful enterprise AI adoption.</p>\n   <p>Magnorsky, an architect and consultant, described designing&nbsp;<a href=\"https://openpracticelibrary.com/practice/bytesize-architecture-sessions/\" target=\"_blank\">Byte-Sized Architecture workshops</a>&nbsp;when working with UK broadcaster ITV as a way to make architecture continuous and inclusive, using regular short, structured workshops to build shared understanding.&nbsp;Her talk, titled&nbsp;<a href=\"https://www.youtube.com/watch?v=DpJdqdY8WMw\">The Deliberate Practice of Thinking about Your Systems</a>, showed that the key differentiator of Byte-Sized Architecture is that it avoids forcing a complex outcome in a single optimistically timeboxed architectural session. She explained how the sessions integrate architectural alignment and evolution into a team’s cadence with insights emerging from a mix of technical and non-technical partners:</p>\n   <blockquote>It takes between 45 and 90 minutes… you have strategies to deal with larger groups but the actual session has no more than 10 people. And most importantly, it's recurrent. So you can run a series of these sessions to achieve certain goals.</blockquote>\n   <p>Magorsky explained that recurrent workshops, where participants draw and share their understanding of architectural components, make the implicit explicit, enabling teams to gradually capture insights, surface assumptions, and create a living library of architecture knowledge that evolves alongside the system. She said ultimately, \"what we have built is (an) encoding of what is in the programmer’s brain,\" and that misalignment with this is most pronounced during incidents, when the mental models of engineers on an incident call diverge from when the software was built, impacting recovery.</p>\n   <p>Connecting with these ideas, Ponnusamy and Grabner presented their keynote titled&nbsp;<a href=\"https://www.youtube.com/watch?v=YEWz6GDnAY4\">Technology Operating Model for Enterprise AI Adoption</a>, introducing a framework designed to guide AI projects through an iterative, outcome-aligned adoption process. Drawing on the Open Practice Library, the model emphasises stakeholder alignment, platform engineering, and incremental delivery.</p>\n   <p>Ponnusamy explained that every organization has a technology operating model, but few make it explicit. AI adoption adds urgency, as enterprises are rapidly deploying generative AI, hybrid cloud architectures, and new platforms, all while facing challenges such as shadow AI adoption by stealth, a sprawl of approaches, and talent scarcity. He outlined the importance of utilising a platform engineering approach to AI adoption:</p>\n   <blockquote>It provides a single point of access for all tools, a single source of truth for initiatives, and guardrails for security and compliance… By operating the platform as a product, you ensure it addresses current needs while remaining flexible for the future, improving adoption and experience.</blockquote>\n   <p>Ponnusamy and Grabners’ operating model is structured around the concept of \"streams, dimensions, and dimension items\". For example, the AI platform and tenant experience stream is distilled into dimensions within this domain, which include platform onboarding, lifecycle management, and AI operations. Each dimension is broken into incremental, measurable transition states of evolution, comparable to milestones, leading ultimately to a target state of standardised, automated, bias-aware AI operations. Ponnusamy described it:</p>\n   <blockquote>You need to know your start state, define achievable transition states, and build toward your target state incrementally. For example, we might first make customers aware that AI is being used, then capture feedback, implement bias detection, and finally reach fully automated AI operations.</blockquote>\n   <p>The Technology Operating Model for AI Adoption involves a recurrent process of assessing progress towards the target state, and utilises a mix of established lean processes from the Open Practice library, such as <a href=\"https://openpracticelibrary.com/practice/impact-mapping/\">Impact Mapping</a> for stakeholder and goal alignment, <a href=\"https://openpracticelibrary.com/practice/user-story-mapping/\">story mapping and value slicing</a> for breaking down work, and various facilitation techniques, as depicted below.</p>\n   <p><img alt=\"Practices in the Technology Operating Model\" data-src=\"https://www.infoq.com/news/2025/09/open-practices-for-ai-adoption/news/2025/09/open-practices-for-ai-adoption/en/resources/1mobius-technology-operating-model-1757845311348.png\" style=\"width: 600px; height: 314px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/09/open-practices-for-ai-adoption/en/resources/1mobius-technology-operating-model-1757845311348.png\" rel=\"share\"></p>\n   <p>Like Magnorsky’s Byte-Sized Architecture, the Technology Operating Model for AI demonstrates that recurrent sessions with a small group collaborating to improve ownership and evolution of architecture are equally critical for AI adoption. This aligns with the <a href=\"https://www.infoq.com/articles/culture-trends-2025/\">2025 InfoQ Culture and Methods Trends report</a>, in which \"the panel agreed that in the rush to adopt AI, teams must preserve spaces for human collaboration, reflection, and learning.\"</p>\n   <p>This was further echoed by <a href=\"https://www.thoughtworks.com/profiles/m/may-ping-xu\">May Xu</a>, Thoughtworks’ head of technology for APAC, who recently wrote about <a href=\"https://www.thoughtworks.com/insights/blog/generative-ai/five-dimensions-of-AI-adoption\">five dimensions</a> for leaders to focus on when driving impactful AI adoption. Xu proposed a strategy which focuses on skills, AI literacy, collaborative learning, governance, experimentation and clear playbooks. While literacy and collaborative learning closely align with Byte-Sized Architecture, the remainder fit well into the Technology Operating Model for AI Adoption.</p>\n   <p>Magnorsky reminded the audience that they were all \"knowledge workers,\" and called out that this meant they were most effective when working together to see \"the system from multiple perspectives,\" to deliver value through successful change. She said:</p>\n   <blockquote>Knowledge work is understanding and applying knowledge, which is your experience, values, context, all your heuristics in ways that enable your organisations to make effective change.</blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Open Practices for Architecture and AI Adoption\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Rafiq Gemmail\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/open-practices-for-ai-adoption/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1758178800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文重点介绍了开放实践和运营模式，通过协作和平台，培养共同的架构理解，并推动成功的、迭代的企业 AI 应用。",
+  "oneSentenceSummary": "本文重点介绍了开放实践和运营模式，通过协作和平台，培养共同的架构理解，并推动成功的、迭代的企业 AI 应用。",
+  "summary": "本文总结了 2025 年云原生峰会的见解，重点介绍了组织如何利用开放实践库进行架构和 AI 应用。Andrea Magnorsky 介绍了“字节级架构”，这是一种使用定期举办的结构化工作坊，在团队内部构建持续的、包容的架构理解的方法，将隐性知识转化为显性知识，并培养一个活跃的架构知识库。作为补充，Ahilan Ponnusamy 和 Andreas Grabner 提出了“企业 AI 应用的技术运营模式”。该框架也借鉴了开放实践库，强调利益相关者对齐、平台工程和增量交付，以指导 AI 项目。它通过提倡平台工程作为 AI 项目的单一访问点和事实来源，解决了诸如“影子 AI”和人才稀缺等挑战。这两种方法都强调了人工协作、反思和学习在驾驭复杂技术变革中的关键作用，与当前强调刻意练习和结构化采纳策略的行业趋势相一致。",
+  "mainPoints": [
+    {
+      "point": "字节级架构培养持续的、包容的架构理解。",
+      "explanation": "定期的、简短的、结构化的工作坊（45-90 分钟，最多 10 人）使团队能够逐步构建共享的架构知识，揭示假设，并对齐心智模型，从而改善系统演进和事故恢复。"
+    },
+    {
+      "point": "技术运营模式指导迭代的、与结果对齐的企业 AI 应用。",
+      "explanation": "该框架强调利益相关者对齐、平台工程和增量交付，以有效管理 AI 项目，从“起始状态”通过“过渡状态”转移到自动化、偏差感知的 AI 运营的“目标状态”。"
+    },
+    {
+      "point": "平台工程对于成功的企业 AI 应用至关重要。",
+      "explanation": "它为工具提供单一访问点，为项目提供单一事实来源，并为安全和合规提供护栏。通过将平台视为产品，可以确保灵活性并满足当前和未来的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "需要 45 到 90 分钟……您可以使用策略来处理更大的群体，但是实际的会话不超过 10 个人。最重要的是，它是循环的。因此，您可以运行一系列会话来实现某些目标。",
+    "通过将平台作为产品进行运营，您可以确保它满足当前的需求，同时保持对未来的灵活性，从而改善应用和体验。",
+    "你需要明确你的初始状态，定义可达成的过渡状态，并逐步朝着你的目标前进。",
+    "知识工作是理解和应用知识，即您的经验、价值观、背景以及所有启发式方法，以使您的组织能够做出有效的改变。"
+  ],
+  "tags": [
+    "AI 应用",
+    "企业 AI 应用",
+    "架构设计",
+    "持续架构",
+    "平台工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 831,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758178800000,
+  "publishDateStr": "2025-09-18",
+  "publishDateTimeStr": "2025-09-18 07:00:00"
+}

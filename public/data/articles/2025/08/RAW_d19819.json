@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d19819",
+  "title": "AI 提升的是下限，而不是上限",
+  "url": "https://baoyu.io/translations/ai-is-a-floor-raiser-not-a-ceiling-raiser",
+  "date": "2025-08-01 03:07:03",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://elroy.bot/blog/2025/07/29/ai-is-a-floor-raiser-not-a-ceiling-raiser.html#license\">AI is a Floor Raiser, not a Ceiling Raiser</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <h2 data-id=\"152q70kbo9\" id=\"152q70kbo9\" data-toc-id=\"152q70kbo9\">被重塑的学习曲线</h2>\n   <p data-id=\"2q26eot7il\">在AI时代之前，每个人在学习新知识时，都难免遇到“资源匹配”的问题。学习资源一般是为特定人群设计的，因此对你来说未必是最佳选择：</p>\n   <ul>\n    <li>\n     <p data-id=\"3ui7afzfg8\">你是某领域<code>感兴趣的话题</code>的新手，但却熟悉相关领域<code>相关话题</code>。但很难找到能够基于<code>相关话题</code>教授你<code>感兴趣的话题</code>的资源。</p></li>\n    <li>\n     <p data-id=\"ak8y2ws1gr\">为了有效学习<code>感兴趣的话题</code>，你其实需要先掌握<code>前置技能</code>。但作为新手，你可能根本意识不到自己需要先学这个<code>前置技能</code>。</p></li>\n    <li>\n     <p data-id=\"guv1cnta3p\">你对<code>感兴趣的话题</code>已经有了一些基础知识，但遭遇瓶颈，很难找到帮助你突破<code>中级瓶颈</code>的资源。</p></li>\n   </ul>\n   <p data-id=\"c7fthwuttj\">一般来说，一个人掌握技能的学习曲线大致如下：</p><img src=\"https://baoyu.io/uploads/2025-08-01-skills.png\" data-width=\"100%\" data-align=\"center\" alt=\"传统的学习曲线\">\n   <p data-id=\"32oxfkj0p1\">AI学习的突破之处就在于它能<strong>精准适配你的学习水平</strong>。AI能以你理解的方式解答问题，甚至帮你处理基础的重复性工作。这就改变了学习的曲线：</p><img src=\"https://baoyu.io/uploads/2025-08-01-ai_skills.png\" data-width=\"100%\" data-align=\"center\" alt=\"AI加持后的学习曲线\">\n   <h2 data-id=\"yzj66a6xst\" id=\"yzj66a6xst\" data-toc-id=\"yzj66a6xst\">精通仍然很难！</h2>\n   <p data-id=\"73fggm0b9u\">领域专家往往对AI持更谨慎的态度。一位来自 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/item?id=44726211\">Hacker News</a> 的用户表示：</p>\n   <blockquote data-id=\"rzb4etocxh\">\n    <p data-id=\"rof9sc0pxf\">“[AI]很浅薄。我越深入，AI的帮助似乎就越少。而且，如果你在研究复杂且可能有争议的课题时，需要寻找权威或者学术性的来源，那简直就是灾难。”</p>\n   </blockquote>\n   <p data-id=\"3sjcdioi0g\">仔细想想，这种情况很好理解。AI的能力取决于训练数据的丰富性。如果某个话题数据充足、观点一致，AI就能很好地进行整合输出；但如果内容太深奥，数据往往稀少；若是话题充满争议，数据又会出现大量矛盾。因此，精通某个领域依然不易。</p>\n   <p data-id=\"67dw4qrq3q\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://openai.com/index/chatgpt-study-mode/\">OpenAI 推出的学习模式（Study Mode）</a> 暗示了另一个问题：你可以直接问AI答案，而非学习。长期来看，作弊者的水平会停滞于AI能够轻松提供答案的那个阶段：</p><img src=\"https://baoyu.io/uploads/2025-08-01-cheating_with_ai.png\" data-width=\"100%\" data-align=\"center\" alt=\"利用AI作弊形成的平台期\">\n   <p data-id=\"s603hkfg1g\">所以，从长期看，作弊并不会真正使人受益。</p>\n   <h2 data-id=\"77im79rkd5\" id=\"77im79rkd5\" data-toc-id=\"77im79rkd5\">学习曲线变化带来的影响</h2>\n   <p data-id=\"7ocw0ad9zv\">技术变革本质上是生态变革，它带来输家和赢家。AI带来的影响，取决于“做出有影响力产品需要的精通程度”：</p>\n   <h3 data-id=\"yn00w9vw5g\" id=\"yn00w9vw5g\" data-toc-id=\"yn00w9vw5g\">编程领域：管理者获益，大型代码库遇冷</h3>\n   <p data-id=\"7vrmmp5vej\">工程经理（EM）在尝试编程时经常遇到难题：他们懂得软件设计原则，知道差的软件长什么样子，但却不懂得使用<code>某框架</code>具体怎么做。这曾使得一个后端工程经理很难在业余时间做出一款 iPhone 应用。</p>\n   <p data-id=\"z4kouukjh5\">但有了AI，他们能够快速学会基本技能，并制作出简单的应用，再用原本就掌握的软件知识进一步<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://techcrunch.com/2025/07/29/jack-dorseys-bluetooth-messaging-app-bitchat-now-on-app-store/\">优化为一个可用的产品</a>。有AI与没有AI，决定了他们能否真正做出产品：</p><img src=\"https://baoyu.io/uploads/2025-08-01-em_software_development.png\" data-width=\"100%\" data-align=\"center\" alt=\"工程经理和软件开发\">\n   <p data-id=\"k493llzuor\">而对于在复杂代码库工作的开发者来说，AI的帮助则相对有限。AI缺乏对具体需求和已有实现的深入理解，因此效果不太理想：</p><img src=\"https://baoyu.io/uploads/2025-08-01-large_code_bases.png\" data-width=\"100%\" data-align=\"center\" alt=\"AI在大型代码库中的局限性\">\n   <h3 data-id=\"y7kvlhxi8m\" id=\"y7kvlhxi8m\" data-toc-id=\"y7kvlhxi8m\">创意领域：AI电影还难登大雅之堂</h3>\n   <p data-id=\"fkyadcq9jn\">创意人士对AI十分焦虑：未来人们是否只看AI制作的小说、电影？</p>\n   <p data-id=\"9ucr1p4xqf\">这不太可能发生，因为创意领域竞争极为激烈，而要赢得关注，最关键的是<strong>创新性</strong>。虽然AI可以快速生产图片、音频、文字，但却未能增加观众的注意力总量，进入市场的门槛仍然极高：</p><img src=\"https://baoyu.io/uploads/2025-08-01-creative_works.png\" data-width=\"100%\" data-align=\"center\" alt=\"创意作品的竞争曲线\">\n   <p data-id=\"bcz7575pcu\">人类对“新颖性”要求很高，能够敏锐察觉内容的雷同性。这也是为什么“吉卜力风格头像”虽短暂风靡网络，却难以撼动《哈尔的移动城堡》的文化地位。</p>\n   <h3 data-id=\"lp3p3wkgxe\" id=\"lp3p3wkgxe\" data-toc-id=\"lp3p3wkgxe\">已经有成熟手机App的领域：影响有限</h3>\n   <p data-id=\"22s8yovjxa\">在一些早已有专业App的领域，比如邮件和点餐，AI至今未带来显著影响：</p><img src=\"https://baoyu.io/uploads/2025-08-01-email_food_ordering.png\" data-width=\"100%\" data-align=\"center\" alt=\"邮件和外卖领域AI的影响\">\n   <p data-id=\"d7p0e7gs75\">邮件看似AI应用的理想领域，但现代邮件App已有丰富的个性化过滤与组织功能，AI的优势体现并不明显：</p>\n   <ul>\n    <li>\n     <p data-id=\"uujjl4xe4a\">垃圾邮件早就自动放入垃圾箱，AI对垃圾邮件的总结也只是垃圾。</p></li>\n    <li>\n     <p data-id=\"aeyafofvk5\">重要邮件我不想看AI总结：AI的概括可能遗漏发件人精心设计的重要细节。</p></li>\n   </ul>\n   <p data-id=\"hiu2we8ewc\">类似的，外卖App如DoorDash界面已经精心设计，巧妙平衡了价格、食材信息和食物图片。AI几乎很难在界面效率或设计美观程度上提供更好体验。</p>\n   <h2 data-id=\"fqa6wx6y3v\" id=\"fqa6wx6y3v\" data-toc-id=\"fqa6wx6y3v\">未来早已降临，只是尚未普及</h2>\n   <p data-id=\"dlt02urtxx\">AI提高了人们从事知识工作的下限，但并非所有人都会感受到这一变化。这正解释了为何AI在人群中的反应差异极大。对我这样的工程经理而言，AI彻底改变了我与技术的关系。而另一些人则担心甚至反感AI替代他们；还有一些人，听到聪明人谈论AI的妙处，却怎么也看不到自己的需求，甚至怀疑“难道是我自己没搞明白？”</p>\n   <p data-id=\"a1uoofkmdb\">AI并没有全面取代传统工作方式，但它确实能力非凡。无论你是谁，AI都值得你去尝试探索，但如果它对你并无明显作用，那大概率是因为它真的不适合你。</p></div>\n \n",
+  "aiSummary": "文章深入探讨了人工智能在提升知识工作和学习效率下限方面的潜力，同时指出其在帮助用户达到专业精通上限时的局限性，并分析了 AI 对不同领域和角色的差异化影响。",
+  "oneSentenceSummary": "文章深入探讨了人工智能在提升知识工作和学习效率下限方面的潜力，同时指出其在帮助用户达到专业精通上限时的局限性，并分析了 AI 对不同领域和角色的差异化影响。",
+  "summary": "本文围绕“AI 提升的是下限，而不是上限”这一核心观点，详细阐述了人工智能对学习曲线和不同行业的影响。作者首先指出 AI 能够通过精准适配个人学习水平，有效解决传统学习中的资源匹配和前置技能缺失问题，从而显著提升学习效率和入门门槛，改变了传统的学习曲线。然而，文章也强调 AI 的能力受限于训练数据的深度和一致性，因此在处理深奥、复杂或争议性强的话题时，其帮助会明显减少，难以辅助用户达到真正的领域精通。作者进一步分析了 AI 对不同领域的影响：在编程领域，AI 能赋能工程经理快速实现产品原型，但对处理大型复杂代码库的资深开发者帮助有限；在创意领域，AI 虽能快速生成内容，但难以满足人类对创新性的高要求，难以撼动头部作品的地位；在邮件、外卖等已有成熟 App 的领域，AI 带来的影响也相对有限。文章最后总结，AI 确实提高了知识工作的下限，但其影响因人而异，并非适用于所有场景，鼓励读者探索 AI，但也无需过度神化或担忧。",
+  "mainPoints": [
+    {
+      "point": "AI 能精准适配学习水平，显著提升学习效率和知识掌握的“下限”",
+      "explanation": "通过个性化解答和处理基础工作，AI 解决了传统学习中的资源匹配和前置技能问题，使学习曲线更加平缓，帮助新手快速入门和突破初期瓶颈。"
+    },
+    {
+      "point": "AI 在帮助用户达到精通上限方面存在局限性",
+      "explanation": "由于训练数据在深奥、复杂或争议性话题上的稀缺或矛盾，AI 难以提供深入且权威的见解，因此对领域专家的辅助作用有限，无法帮助用户实现真正的精通。"
+    },
+    {
+      "point": "AI 对不同领域和角色的影响存在差异性",
+      "explanation": "AI 能有效赋能编程领域的管理者快速实现产品，但在复杂代码库、高度依赖创新性的创意领域或已有成熟解决方案的领域，其价值和影响相对有限。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 学习的突破之处就在于它能**精准适配你的学习水平**。",
+    "[AI]很浅薄。我越深入，AI 的帮助似乎就越少。",
+    "长期来看，作弊者的水平会停滞于 AI 能够轻松提供答案的那个阶段。",
+    "有 AI 与没有 AI，决定了他们能否真正做出产品。",
+    "AI 提高了人们从事知识工作的下限，但并非所有人都会感受到这一变化。"
+  ],
+  "tags": [
+    "人工智能",
+    "学习与成长",
+    "生产力工具",
+    "LLM",
+    "技术趋势"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 93,
+  "wordCount": 1606,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1754017623000,
+  "publishDateStr": "2025-08-01",
+  "publishDateTimeStr": "2025-08-01 03:07:03"
+}

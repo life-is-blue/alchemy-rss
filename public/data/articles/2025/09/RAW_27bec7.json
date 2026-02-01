@@ -1,0 +1,55 @@
+{
+  "id": "RAW_27bec7",
+  "title": "快手可灵团队提出 MIDAS：压缩比 64 倍、延迟低于 500ms，多模态互动数字人框架实现交互生成新突破 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-13-2",
+  "date": "2025-09-13 10:17:57",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <br>\n  </section>\n  <p>数字人视频生成技术正迅速成为增强人机交互体验的核心手段之一。然而，现有方法在实现低延迟、多模态控制与长时序一致性方面仍存在显著挑战。大多数系统要么计算开销巨大，无法实时响应，要么只能处理单一模态输入，缺乏真正的交互能力。</p>\n  <p>为了解决这些问题，<strong>快手可灵团队（Kling Team）</strong> 提出了一种名为 MIDAS（Multimodal Interactive Digital-human Synthesis）的新型框架，通过自回归视频生成结合轻量化扩散去噪头，实现了多模态条件下实时、流畅的数字人视频合成。该系统具备三大核心优势：</p>\n  <ul>\n   <li>\n    <p><strong>64× 高压缩比自编码器</strong>，将每帧压缩至最多 60 个 token，大幅降低计算负荷；</p>\n   </li>\n   <li>\n    <p><strong>低于 500ms 端到端生成延迟</strong>，支持实时流式交互；</p>\n   </li>\n   <li>\n    <p><strong>4 步扩散去噪</strong>，在效率与视觉质量间取得最佳平衡。</p>\n   </li>\n  </ul>\n  <p>该项研究已被广泛实验验证，在多语言对话、歌唱合成甚至交互式世界建模等任务中表现出色，为数字人实时交互提供了全新解决方案。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250913113959_9861b4\" data-ratio=\"0.35892116182572614\" data-s=\"300,640\" data-type=\"png\" data-w=\"964\" type=\"block\" data-imgfileid=\"503506571\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/ddc15173-53d9-4a19-9e77-cc768996c3d8/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：MIDAS: Multimodal Interactive Digital-humAn Synthesis via Real-time Autoregressive Video Generation</p>\n   </li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2508.19320</p>\n   </li>\n   <li>\n    <p>主页地址：https://chenmingthu.github.io/milm/</p>\n   </li>\n  </ul>\n  <p><strong>核心创新</strong></p>\n  <p><strong>1. 多模态指令控制机制</strong></p>\n  <p>MIDAS 支持从音频、姿态到文本等多种输入信号。通过一个统一的多模态条件投影器，将不同模态编码到共享潜在空间，形成全局指令令牌，构建 frame-by-frame 的 chunk 注入，引导自回归模型生成语义和空间一致的数字人动作与表情。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250913113959_b488ee\" data-ratio=\"0.7993421052631579\" data-s=\"300,640\" data-type=\"png\" data-w=\"608\" type=\"block\" data-imgfileid=\"503506573\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/925bfdb7-180f-4930-aed7-13c85c50b490/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>2. 因果潜在预测 + 扩散渲染</strong></p>\n  <p>模型可嵌套任意类似大语言模型的自回归架构，逐帧预测潜在表示，再由一个轻量级扩散头进行去噪和高清渲染。这种设计既保证了生成的连贯性，也大幅降低了计算延迟，适合实时流式生成。</p>\n  <p><strong>3. 高压缩率自编码器（DC-AE）</strong></p>\n  <p>为实现高效的自回归建模，团队设计了压缩比高达 64 倍的 DC-AE，将每帧图像表示为最多 60 个令牌，支持分辨率最高达 384×640 的图像重建，并引入因果时序卷积与 RoPE 注意力机制保障时序一致性。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250913113959_1f5fa6\" data-ratio=\"0.483402489626556\" data-s=\"300,640\" data-type=\"png\" data-w=\"964\" type=\"block\" data-imgfileid=\"503506581\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/b53a7e9f-9f73-4461-bcd9-0e10b705da23/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>4. 大规模多模态对话数据集</strong></p>\n  <p>为训练模型，研究者构建了一个约 2 万小时的大规模对话数据集，涵盖单人、双人对话场景，涵盖多语言、多风格内容，为模型提供了丰富的语境与交互样本。</p>\n  <p><strong>方法概要</strong></p>\n  <ul>\n   <li>\n    <p><strong>模型架构</strong>：采用 Qwen2.5-3B 作为自回归主干网络，扩散头基于 PixArt-α /mlp 结构。</p>\n   </li>\n   <li>\n    <p><strong>训练策略</strong>：引入可控噪声注入，通过 20 级噪声桶和对应嵌入，缓解自回归模型在推理阶段的曝光偏差问题。</p>\n   </li>\n   <li>\n    <p><strong>推理机制</strong>：支持分块流式生成，每块 6 帧，可实现 480ms 级别的低延迟响应。</p>\n   </li>\n  </ul>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250913113959_3cd976\" data-ratio=\"0.4854771784232365\" data-s=\"300,640\" data-type=\"png\" data-w=\"964\" type=\"block\" data-imgfileid=\"503506583\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/96a6e8a0-6917-40ae-9964-5139764999b2/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>效果展示</strong></p>\n  <p><strong>1. 双人对话生成</strong></p>\n  <p>系统可实时处理双人对话音频流，生成与语音同步的口型、表情和倾听姿态，支持自然轮流对话:<a href=\"https://mp.weixin.qq.com/s/2pfS1zGF8OBeVtjtmosnYw\"><img src=\"https://image.jiqizhixin.com/uploads/editor/40e12b08-523b-41d6-8e19-056f26ffd6b0/1757758482954.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; 双工对话示例</sup></p>\n  <p><strong>2. 跨语言歌唱合成</strong></p>\n  <p>在没有显式语言标识的情况下，模型精准实现中文、日文、英文歌曲的唇形同步，生成视频可达 4 分钟无显著漂移:<a href=\"https://mp.weixin.qq.com/s/2pfS1zGF8OBeVtjtmosnYw\"><img src=\"https://image.jiqizhixin.com/uploads/editor/0527b6c9-4545-4557-96af-3602b69e6481/1757758494409.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; 多语言歌唱合成效果</sup></p>\n  <p><strong>3. 通用交互世界模型</strong></p>\n  <p>通过在 Minecraft 数据集上训练，MIDAS 可响应方向控制信号，展现出良好的场景一致性与记忆能力，验证了其作为交互式世界模型的潜力:<a href=\"https://mp.weixin.qq.com/s/2pfS1zGF8OBeVtjtmosnYw\"><img src=\"https://image.jiqizhixin.com/uploads/editor/90325bdc-5fc6-4e95-8bd9-351fb87eb079/1757758519238.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <section>\n   <span data-cover=\"http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FKmXPKA19gW8T5zBrXibsnsAHYJsSJaPjsHc3lhzzicvcSJ0Wnrv9S1afaeIRy7Nr1Vh8icpDVaBiblgut2cziaKXiaNA%2F0%3Fwx_fmt%3Djpeg\" data-mpvid=\"wxv_4161597848720654354\" data-ratio=\"0.7272727272727273\" data-src=\"https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;auto=0&amp;vid=wxv_4161597848720654354\" data-vh=\"492.75\" data-vidtype=\"2\" data-vw=\"657\" data-w=\"128\" height=\"509\" scrolling=\"no\" width=\"661\"> \n    <div data-key=\"wxv_4161597848720654354\">\n     <div data-v-db5bdc2b=\"\">\n      <div data-v-823ba74e=\"\" data-v-db5bdc2b=\"\"></div>\n     </div>\n    </div> \n   </span>\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; Minecraft 环境下的交互生成示例</sup></p>\n  <p><strong>总结</strong></p>\n  <p>MIDAS 在双边对话、多语言生成等任务中，MIDAS 均实现实时生成（&lt;500ms 延迟), 并且扩散头仅需 4 步去噪，在效率与质量间取得最佳平衡，支持长达几分钟的连续生成，且质量衰减显著低于基线方法。</p>\n  <p>MIDAS 不仅为实时数字人生成提供了端到端的解决方案，更探索了多模态自回归模型在交互式媒体生成中的潜力。其模块化设计允许灵活扩展至更多模态与控制信号，为虚拟人直播、元宇宙交互、多模态 AI 智能体等应用奠定了技术基础。</p>\n  <p>团队表示，未来将进一步探索更高分辨率、更复杂交互逻辑下的生成能力，并推进系统在真实产品环境中的部署。</p>\n </body>\n</html>",
+  "aiSummary": "快手可灵团队提出 MIDAS 框架，通过 64 倍高压缩比自编码器和 4 步扩散去噪，实现多模态、低延迟（<500ms）的实时互动数字人视频生成，为交互式 AI 应用带来突破。",
+  "oneSentenceSummary": "快手可灵团队提出 MIDAS 框架，通过 64 倍高压缩比自编码器和 4 步扩散去噪，实现多模态、低延迟（<500ms）的实时互动数字人视频生成，为交互式 AI 应用带来突破。",
+  "summary": "文章详细介绍了快手可灵团队研发的 MIDAS（Multimodal Interactive Digital-human Synthesis）框架，旨在解决当前数字人视频生成技术在实现低延迟、多模态控制和长时序一致性方面的核心挑战。MIDAS 通过结合自回归视频生成与轻量化扩散去噪头，成功实现了实时、流畅的数字人视频合成。其主要创新包括：设计了高达 64 倍压缩比的自编码器，将每帧图像压缩至最多 60 个令牌，大幅降低计算负荷；实现了低于 500 毫秒的端到端生成延迟，支持实时流式交互；以及仅需 4 步的扩散去噪过程，在保证视觉质量的同时显著提升了效率。该框架支持音频、姿态、文本等多种模态输入，通过统一的条件投影器将不同模态编码到共享潜在空间。为训练模型，团队构建了一个约 2 万小时的大规模多模态对话数据集。实验结果表明，MIDAS 在双人对话、跨语言歌唱合成及交互式世界建模等任务中均表现出色，为虚拟人直播、元宇宙交互和多模态 AI 智能体等应用提供了坚实的技术基础。",
+  "mainPoints": [
+    {
+      "point": "MIDAS 通过高压缩比自编码器和高效去噪实现实时多模态数字人生成。",
+      "explanation": "采用 64 倍高压缩比自编码器和 4 步扩散去噪，将端到端延迟降低至 500ms 以下，有效解决了现有技术在实时性与视觉质量之间的平衡难题。"
+    },
+    {
+      "point": "创新的多模态指令控制机制统一处理多种输入信号。",
+      "explanation": "通过统一的多模态条件投影器将音频、姿态、文本等编码为共享潜在空间的全局指令令牌，确保数字人动作与表情的语义和空间一致性。"
+    },
+    {
+      "point": "大规模多模态对话数据集是模型高性能的关键支撑。",
+      "explanation": "构建了约 2 万小时的对话数据集，涵盖多语言、多风格内容，为模型提供了丰富的语境与交互样本，显著提升了模型的泛化能力和生成真实感。"
+    }
+  ],
+  "keyQuotes": [
+    "快手可灵团队（Kling Team）提出了一种名为 MIDAS（Multimodal Interactive Digital-human Synthesis）的新型框架，通过自回归视频生成结合轻量化扩散去噪头，实现了多模态条件下实时、流畅的数字人视频合成。",
+    "64× 高压缩比自编码器，将每帧压缩至最多 60 个 token，大幅降低计算负荷；低于 500ms 端到端生成延迟，支持实时流式交互；4 步扩散去噪，在效率与视觉质量间取得最佳平衡。",
+    "MIDAS 支持从音频、姿态到文本等多种输入信号。通过一个统一的多模态条件投影器，将不同模态编码到共享潜在空间，形成全局指令令牌，构建 frame-by-frame 的 chunk 注入，引导自回归模型生成语义和空间一致的数字人动作与表情。",
+    "模型可嵌套任意类似大语言模型的自回归架构，逐帧预测潜在表示，再由一个轻量级扩散头进行去噪和高清渲染。这种设计既保证了生成的连贯性，也大幅降低了计算延迟，适合实时流式生成。",
+    "为训练模型，研究者构建了一个约 2 万小时的大规模对话数据集，涵盖单人、双人对话场景，涵盖多语言、多风格内容，为模型提供了丰富的语境与交互样本。"
+  ],
+  "tags": [
+    "数字人",
+    "多模态AI",
+    "实时生成",
+    "视频生成",
+    "扩散模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1402,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757758677000,
+  "publishDateStr": "2025-09-13",
+  "publishDateTimeStr": "2025-09-13 10:17:57"
+}

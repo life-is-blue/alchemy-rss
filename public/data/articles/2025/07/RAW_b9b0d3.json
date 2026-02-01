@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b9b0d3",
+  "title": "Spring Data JDBC 和 R2DBC 4.0 版本支持复合 ID",
+  "url": "https://spring.io/blog/2025/07/22/spring-data-jdbc-composite-id",
+  "date": "2025-07-22 00:00:00",
+  "author": "schauder",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I'm happy to announce, that Spring Data JDBC and R2DBC finally support Composite IDs starting with version 4.0.0-M4.</p>\n  <p>Most of you probably know, but just to make sure everyone has the same understanding: From the database point of view a composite id (or composite key) is a primary key that consists of more than one column. On the Java side these columns get mapped to an entity with an attribute for each column Usage should be straight forward and I'll demonstrate it in the following article for JDBC. Usage in R2DBC is anlogous.</p>\n  <p>To get started just put an <code>@Id</code> annotation on a field in your aggregate root that references an entity, instead of a simple type.</p>\n  <pre><code class=\"language-java\">class Employee {\n\n\t@Id\n\tEmployeeId id;\n\n\tString name;\n\n\t// ...\n}\n\nrecord EmployeeId(\n\t\tOrganization organization,\n\t\tLong employeeNumber) {\n}\n\nenum Organization {\n\tRND,\n\tSALES,\n\tMARKETING,\n\tPURCHASING\n}\n</code></pre>\n  <p>That reference becomes automatically an embedded reference, i.e. the fields of the entity become columns of the table of the aggregate root.</p>\n  <pre><code class=\"language-sql\">create table employee\n(\n    organization    varchar(20),\n    employee_number int,\n    name            varchar(100)\n);\n</code></pre>\n  <p>If you want to tweak the names you may add an <code>@Embedded</code> annotation, which allows you to provide a prefix. It does look a little weird to specify what should happen when upon loading the entity is all null values. But with <code>Embedded</code> you have to although a primary key that is <code>null</code> will cause problems all over the place and just won't work.</p>\n  <pre><code class=\"language-java\">class Employee {\n\n\t@Id\n\t@Embedded.Nullable(prefix = \"id_\")\n\tEmployeeId id;\n\n\tString name;\n\t\n\t// ... \n}\n\n</code></pre>\n  <pre><code class=\"language-sql\">create table employee\n(\n    id_organization    varchar(20),\n    id_employee_number int,\n    name            varchar(100)\n);\n</code></pre>\n  <p>Just as with normal ids Spring Data Relational uses the the value of id as an indication for new entities: If the id value is <code>null</code>, then the entity is considered new and an insert will be performed. If the id value is not <code>null</code>, an update is in order.</p>\n  <p>When saving a new entity with composite id you now face a minor problem: Composite Ids can't easily be generated via and autoincrement column, since it by definition consists of multiple columns. One way to handle this is to have a <code>BeforeConvertCallback</code></p>\n  <pre><code class=\"language-java\">@Bean\nBeforeConvertCallback&lt;Employee&gt; idGeneration() {\n\treturn new BeforeConvertCallback&lt;&gt;() {\n\t\tAtomicLong counter = new AtomicLong();\n\n\t\t@Override\n\t\tpublic Employee onBeforeConvert(Employee employee) {\n\t\t\tif (employee.id == null) {\n\t\t\t\temployee.id = new EmployeeId(Organization.RND, counter.addAndGet(1));\n\t\t\t}\n\t\t\treturn employee;\n\t\t}\n\t};\n}\n</code></pre>\n  <pre><code class=\"language-java\">repository.save(new Employee(\"Mark Paluch\"));\n</code></pre>\n  <p>In most cases with composite id it is probably easier to set the id upfront and either use optimistic locking, i.e. a <code>null</code> version field will mark the entity as new, or explicitely call <code>JdbcAggregateTemplate.insert</code>.</p>\n  <pre><code class=\"language-java\">interface EmployeeRepository extends Repository&lt;Employee, EmployeeId&gt;, InsertRepository&lt;Employee&gt; {\n\tEmployee findById(EmployeeId id);\n\n\tEmployee save(Employee employee);\n}\n</code></pre>\n  <pre><code class=\"language-java\">interface InsertRepository&lt;E&gt; {\n\tE insert(E employee);\n}\n</code></pre>\n  <pre><code class=\"language-java\">class InsertRepositoryImpl&lt;E&gt; implements InsertRepository&lt;E&gt; {\n\t@Autowired\n\tprivate JdbcAggregateTemplate template;\n\t@Override\n\tpublic E insert(E employee) {\n\t\treturn template.insert(employee);\n\t}\n}\n</code></pre>\n  <pre><code class=\"language-java\">@Autowired\nEmployeeRepository repository;\n\n// ...\n\nrepository.insert(new Employee(new EmployeeId(Organization.RND, 23L), \"Jens Schauder\"));\n</code></pre>\n  <p>I hope you find this new addition to Spring Data Relational useful. The full code for the samples used in this article can be found at <a href=\"https://github.com/spring-projects/spring-data-examples/tree/main/jdbc/composite-ids\">https://github.com/spring-projects/spring-data-examples/tree/main/jdbc/composite-ids</a>.</p>\n  <p>If you find bugs or have ideas for improvements, please create a ticket at <a href=\"https://github.com/spring-projects/spring-data-relational/issues\">https://github.com/spring-projects/spring-data-relational/issues</a>.</p>\n </body>\n</html>",
+  "aiSummary": "Spring Data JDBC 和 R2DBC 4.0 现在支持复合 ID，简化了多列主键实体的映射和管理。",
+  "oneSentenceSummary": "Spring Data JDBC 和 R2DBC 4.0 现在支持复合 ID，简化了多列主键实体的映射和管理。",
+  "summary": "本文宣布并演示了 Spring Data JDBC 和 R2DBC 中对复合 ID 期待已久的支持，始于 4.0.0-M4 版本。文章解释了如何通过 `@Id` 注解嵌入式实体定义复合 ID，`@Id` 注解自动将字段映射到聚合根表的列。本文还详细介绍了如何使用 `@Embedded.Nullable` 自定义列名，并为生成复合 ID 提供了解决方案，建议对新实体使用 `BeforeConvertCallback` 或显式调用 `JdbcAggregateTemplate.insert`。全文提供 Java 和 SQL 代码示例，便于开发者理解和应用新功能。",
+  "mainPoints": [
+    {
+      "point": "Spring Data JDBC/R2DBC 4.0 引入了对复合 ID 的本机支持。",
+      "explanation": "开发者可以通过 `@Id` 注解嵌入式实体定义多列主键，简化复杂关系和遗留数据库模式的数据建模。"
+    },
+    {
+      "point": "嵌入式 ID 字段自动映射到聚合根表列，简化对象关系映射。",
+      "explanation": "复合 ID 实体的字段会自动映射为主表中的列，从而减少了样板代码并提高了对象关系映射的一致性。"
+    },
+    {
+      "point": "为复合 ID 生成和实体持久化提供清晰的策略。",
+      "explanation": "本文演示了通过 `BeforeConvertCallback` 生成复合 ID 以及使用 `JdbcAggregateTemplate.insert` 显式保存新实体的实用方法，从而解决了常见的挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "我很高兴地宣布，Spring Data JDBC 和 R2DBC 最终支持复合 ID，从 4.0.0-M4 版本开始。",
+    "从数据库的角度来看，复合 id（或复合键）是由多个列组成的主键。",
+    "该引用会自动成为嵌入式引用，实体的字段会映射为聚合根表的列。",
+    "与普通 id 一样，Spring Data Relational 使用 id 的值来指示新实体：如果 id 值为 `null`，则该实体被认为是新的，并将执行插入操作。",
+    "在大多数情况下，使用复合 id 可能更容易预先设置 id，或者使用乐观锁定，即 `null` 版本字段将实体标记为新实体，或者显式调用 `JdbcAggregateTemplate.insert`。"
+  ],
+  "tags": [
+    "Spring Data",
+    "JDBC",
+    "R2DBC",
+    "复合 ID",
+    "数据持久化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 524,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753142400000,
+  "publishDateStr": "2025-07-22",
+  "publishDateTimeStr": "2025-07-22 00:00:00"
+}

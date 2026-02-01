@@ -1,0 +1,59 @@
+{
+  "id": "RAW_aa7db68f",
+  "title": "Android 宣布 Runtime 编译速度史诗级提升：在编译时间上优化了 18%",
+  "url": "https://juejin.cn/post/7583980250733969471",
+  "date": "2025-12-16 03:40:54",
+  "author": "恋猫de小郭",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>近期，<strong>Android 官方宣布了 Android Runtime 在编译时间上实现了 18% 的显著优化，同时不牺牲编译代码的质量，也没有增加峰值内存使用</strong>，换句话说，这属于是一个“<strong>速度提升 + 零损失</strong>”的优化成果。</p>\n   <p>实际上这个调整作为 2025 年的关键 KPI ，目前已经实现了分阶段 rollout：<strong>部分优化已经在 2025 年 6 月的 Android 发布中上线，其余会在年底发布中完成</strong>，所有运行 Android 12 及以上版本的用户都可以通过 mainline 更新得到这些改进。</p>\n   <blockquote>\n    <p>“mainline 更新”（ Project Mainline / Google Play System Updates） 是一种模块化更新机制，它支持 Google 通过 Google Play 直接更新 Android 系统的核心组件（如Android Runtime、媒体框架、安全模块等），这个更新不需要用户等待 OTA 。</p>\n   </blockquote>\n   <p>而这次优化更加具体的说就是：</p>\n   <ul>\n    <li><strong>编译时间减少了 18%</strong></li>\n   </ul>\n   <ul>\n    <li>对编译器最终输出质量没有负面影响</li>\n   </ul>\n   <ul>\n    <li>没有出现内存回归（就是提升过程中不增加内存占用峰值）</li>\n   </ul>\n   <p>并且，这些改进对于 JIT 和 AOT（预先编译） 都有用，当然<strong>这里提到的 Android Runtime（ART）“编译速度”不是你在本地用 Gradle 构建 APK 的速度，而是「设备端 ART 对 app 字节码进行 AOT / JIT 编译的速度」</strong> ，一般而言针对ART 内部的“编译器执行速度”会有：</p>\n   <ul>\n    <li>JIT 编译速度</li>\n    <li>AOT / dex2oat 编译速度</li>\n    <li>编译器各个 IR / 优化 pass 的执行时间</li>\n   </ul>\n   <p>例如在 ART 里有很多 pass（比如 GVN、某些数据流分析），每次都会遍历 IR，即使当前方法根本不满足优化条件也会完整跑一遍逻辑，这种行为带来的开销并没有产生收益：</p>\n   <blockquote>\n    <p>官方提到，在之前有一个名为全局值编号 (GVN) 的阶段，这个过程里它有一个名为 <code>Kill</code> 的方法，这个方法会根据过滤器删除一些节点，由于它需要遍历所有节点并逐个检查，因此非常耗时，而事实上无论当时有多少节点存活，其实都能预先知道检查结果为 false ，那么在这种情况下完全可以跳过遍历，从而将性能消耗从 1.023% 降低到约 0.3%，并将 GVN 的运行时间缩短约 15%。</p>\n   </blockquote>\n   <p>其他的一些案例，包括有：</p>\n   <h4 data-id=\"heading-0\"><code>FindReferenceInfoOf</code> 的查找优化</h4>\n   <p><code>LoadStoreAnalysis</code> 阶段的方法 <code>FindReferenceInfoOf</code> 原本使用线性搜索 O(n) 在向量中查找，而现在将数据结构改为以指令 ID 为索引，实现 O(1) 查找，并预分配向量以避免 resize ， <strong>从而在这个阶段加速 34 - 66%，总编译时间提升 0.5-1.8%，虽然增加了一个计数字段，但峰值内存没有增加</strong>。</p>\n   <h4 data-id=\"heading-1\">结构调整</h4>\n   <p>代码库中使用了一个自定义的 <code>HashSet</code>，多年前是为了处理极少数的大型集合而优化的，但现在的用法变成了创建大量小型的、短生命周期的集合，所以本地调整实现以适应“小而短”的用法，减少创建和销毁开销，<strong>从而让编译时间提升 1.3-2%，且内存使用量反而下降了 0.5-1%</strong> 。</p>\n   <p>还有通过将数据结构以引用方式传递给 lambda 表达式，避免了数据结构的复制，从而将编译时间缩短了约 0.5% 到 1% ，这一点在最初的代码审查中被忽略了，并在代码库中保留了多年：</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a5884e1bdbb1451ba34bb04a5b1dcd18~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766461254&amp;x-signature=OnHrUf%2B0SjuZ0%2FkUTWq74fGATSo%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h4 data-id=\"heading-2\">内联 (Inlining) 检查</h4>\n   <p>编译器为了性能会内联函数，原本的流程是先计算大量数据，最后再做“最终检查”（如指令数、寄存器需求）决定是否内联，而现在将这些检查从“计算后”移到了“计算前”作为启发式规则（Heuristics），避免了大量无效计算，<strong>仅指令数检查一项的移动就带来了约 2% 的提升</strong>。</p>\n   <p>事实上官方在进行这些调整时也遇到了不少问题，因为即使你发现某个区域占用了大量编译时间，并且投入了开发时间尝试改进，有时也找不到解决方案，当你修改了 A 问题后，自然而然就带了 B 问题，比如：</p>\n   <ul>\n    <li><strong>内存回归</strong> ：在优化“输出写入”阶段时，团队通过缓存计算值来加速（原本预计提升 1.3-2.8%），但自动化测试时发现，额外的缓存数据结构导致了内存使用量的显著增加</li>\n    <li><strong>历史遗留负担</strong> ：许多低效代码是因为历史原因遗留下来的（比如上述的 <code>HashSet</code>），或者是因为代码审查疏忽（将对象按值传递而不是按引用传递）</li>\n    <li><strong>复杂度的权衡</strong> ：某些优化方案可能过于复杂，或者会增加代码维护难度</li>\n   </ul>\n   <p>针对这些问题，官方进行了一系列的调整尝试：</p>\n   <ul>\n    <li><strong>重构解决内存回归</strong> ：针对“输出写入”阶段的内存问题，本次直接重构了该阶段的逻辑，这里设计了一种新方案，移除了两个冗余数据结构中的一个，这不仅解决了内存回退问题，还进一步提升了 0.5-1.8% 的速度<img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/50691e9c962d41e7b558bfec3faf585d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766461254&amp;x-signature=y4RTZRiorDUOScj7jbBlN682d%2BM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li><strong>使用 pprof 进行深度分析</strong> ：利用 <code>pprof</code> 工具生成 Flame Graph和 Bottom-up 视图，精准定位那些“隐形”的开销（如频繁的 <code>Kill</code> 方法或意外的对象拷贝）<img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/44d769a04d2c4ba09f63dd56f255a84b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766461254&amp;x-signature=oJMfUQSxGNIY9tA4UfQDKs01wwk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f8a0e32ebaca42288fd5b5af85f5da4c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766461254&amp;x-signature=Y8%2B%2FsUtI717%2BYsyJ%2FxFtXxUsP9E%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li><strong>“快速迭代”策略</strong> ：为了节省开发时间，先用原型（Prototype）在典型应用（First-party apps, Android OS）上快速验证想法，确认收益后再进行完整的工程实现和测试</li>\n    <li><strong>利用全新 C++ 特性</strong> ：比如使用 <code>BitVectorView</code> 替代可变长的 <code>BitVector</code>，并利用模板化实现让 <code>Union()</code> 操作在 64 位平台上一次处理两倍的位数</li>\n   </ul>\n   <p>除此之外还有：</p>\n   <ul>\n    <li><a href=\"https://link.juejin.cn?target=http%3A%2F%2Fr.android.com%2F3469440\" target=\"_blank\" title=\"http://r.android.com/3469440\" ref=\"nofollow noopener noreferrer\">Add bookkeeping</a> 将编译时间缩短约 0.6-1.6%</li>\n    <li><a href=\"https://link.juejin.cn?target=http%3A%2F%2Fr.android.com%2F3492151\" target=\"_blank\" title=\"http://r.android.com/3492151\" ref=\"nofollow noopener noreferrer\">Lazily compute data</a> 来避免循环计算</li>\n    <li><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fandroid.googlesource.com%2Fplatform%2Fart%2F%2B%2Fbd15b243cda3f9c5038b76099e703e050890f280%255E!%2F%23F0\" target=\"_blank\" title=\"https://android.googlesource.com/platform/art/+/bd15b243cda3f9c5038b76099e703e050890f280%5E!/#F0\" ref=\"nofollow noopener noreferrer\">Refactor our code</a> 跳过不会用到的预计算工作</li>\n    <li><a href=\"https://link.juejin.cn?target=http%3A%2F%2Fr.android.com%2F3497214\" target=\"_blank\" title=\"http://r.android.com/3497214\" ref=\"nofollow noopener noreferrer\">Avoid some dependent load chains</a> 如果可以从其他地方轻松获取 allocator</li>\n    <li><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fandroid.googlesource.com%2Fplatform%2Fart%2F%2B%2Fbf625ebd279484bc5b0214e1659797dac2f27c8d%255E!%2F%23F0\" target=\"_blank\" title=\"https://android.googlesource.com/platform/art/+/bf625ebd279484bc5b0214e1659797dac2f27c8d%5E!/#F0\" ref=\"nofollow noopener noreferrer\">避免在寄存器分配中频繁地对寄存器类型（核心/浮点）进行分支</a></li>\n    <li><a href=\"https://link.juejin.cn?target=http%3A%2F%2Fr.android.com%2F3802063\" target=\"_blank\" title=\"http://r.android.com/3802063\" ref=\"nofollow noopener noreferrer\">确保某些数组</a>在编译时已初始化，不要依赖 clang 来完成这项工作</li>\n    <li><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fandroid.googlesource.com%2Fplatform%2Fart%2F%2B%2F77a5d1e6464a03460fad1daa6f357f3a9e5d8f19%255E!%2F%23F0\" target=\"_blank\" title=\"https://android.googlesource.com/platform/art/+/77a5d1e6464a03460fad1daa6f357f3a9e5d8f19%5E!/#F0\" ref=\"nofollow noopener noreferrer\">优化一些循环 </a>，使用范围循环，因为 clang 可以更好地优化范围循环，避免因循环副作用而重新加载容器的内部指针，避免在循环中通过内联的 <code>InputAt(.)</code> 为每个输入调用虚函数 <code>HInstruction::GetInputRecords()</code></li>\n    <li>利用编译器优化，<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fandroid.googlesource.com%2Fplatform%2Fart%2F%2B%2F85f6b01b978b0543e964fa65d9d66adfedfd90cb%255E!%2F%23F0\" target=\"_blank\" title=\"https://android.googlesource.com/platform/art/+/85f6b01b978b0543e964fa65d9d66adfedfd90cb%5E!/#F0\" ref=\"nofollow noopener noreferrer\"> 避免在访问者模式中使用 Accept() 函数</a></li>\n   </ul>\n   <h2 data-id=\"heading-3\">最后</h2>\n   <p>最后，看不懂不要紧，只需要知道它很牛逼，并且还能让 Android 12 以后的机器变得更快，在用户端体现出来就是：</p>\n   <ul>\n    <li>app 启动更快</li>\n    <li>冷启动更少卡顿</li>\n    <li>低端机更友好</li>\n    <li>安装 / 更新变快</li>\n   </ul>\n   <p>同时也展示了教科书级别的优化策略，不仅要看速度，更要看内存、稳定性、可维护性等综合指标，所以官方这份报告不仅仅是技术公告，更是一份优秀的编译器工程的案例研究。</p>\n   <h2 data-id=\"heading-4\">参考链接</h2>\n   <p><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fandroid-developers.googleblog.com%2F2025%2F12%2F18-faster-compiles-0-compromises.html\" target=\"_blank\" title=\"https://android-developers.googleblog.com/2025/12/18-faster-compiles-0-compromises.html\" ref=\"nofollow noopener noreferrer\">android-developers.googleblog.com/2025/12/18-…</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Android Runtime（ART）通过一系列编译器优化，在不牺牲代码质量和不增加内存峰值的前提下，将设备端应用编译速度提升了 18%，此优化已在 Android 12 及以上版本逐步推出。",
+  "oneSentenceSummary": "Android Runtime（ART）通过一系列编译器优化，在不牺牲代码质量和不增加内存峰值的前提下，将设备端应用编译速度提升了 18%，此优化已在 Android 12 及以上版本逐步推出。",
+  "summary": "文章详细介绍了 Android Runtime 在设备端应用编译速度上实现 18%优化背后的技术细节和工程实践。此次优化聚焦于 JIT 和 AOT 编译过程，包含了诸多精细化改进，如 GVN 阶段的遍历优化、FindReferenceInfoOf 的查找效率提升、自定义 HashSet 结构调整以及内联检查前置等。文章不仅阐述了具体的优化方案，还分享了团队在优化过程中遇到的内存回归、历史遗留问题和复杂度权衡等挑战，并介绍了通过重构、pprof 深度分析、快速迭代和利用 C++新特性等策略来解决这些问题。这些改进将直接提升用户体验，表现为应用启动更快、卡顿减少、对低端机更友好。",
+  "mainPoints": [
+    {
+      "point": "Android Runtime（ART）实现 18%的编译速度提升，且未牺牲代码质量和内存效率。",
+      "explanation": "此次优化是 Google 针对 ART 编译器的深层改进，关键在于提升设备端应用字节码的 JIT/AOT 编译速度，通过多种技术手段达成性能飞跃的同时保持稳定性。"
+    },
+    {
+      "point": "优化细节涵盖 GVN、数据结构、内联策略等多个编译器层面。",
+      "explanation": "文章具体分析了通过跳过无效遍历、优化线性查找为 O(1)查找、调整集合数据结构以适应高频小规模使用、将内联检查前置等微观优化，累计实现显著性能提升。"
+    },
+    {
+      "point": "团队在优化过程中克服了内存回归、历史遗留代码和复杂性权衡等挑战。",
+      "explanation": "通过重构解决内存问题，利用 pprof 工具进行深度性能分析，采用原型快速迭代以及利用 C++新特性等工程方法，保证了优化方案的有效性和稳定性。"
+    },
+    {
+      "point": "用户将直接受益于此次更新，体验更快的应用启动和更少的卡顿。",
+      "explanation": "编译速度的提升最终会体现在终端用户体验上，尤其对于低端设备，应用的启动速度和运行流畅度将得到明显改善，提升设备整体响应能力。"
+    }
+  ],
+  "keyQuotes": [
+    "Android 官方宣布了 Android Runtime 在编译时间上实现了 18% 的显著优化，同时不牺牲编译代码的质量，也没有增加峰值内存使用。",
+    "这些改进对于 JIT 和 AOT（预先编译） 都有用，当然这里提到的 Android Runtime（ART）\"编译速度\"不是你在本地用 Gradle 构建 APK 的速度，而是「设备端 ART 对 app 字节码进行 AOT / JIT 编译的速度」。",
+    "针对\"输出写入\"阶段的内存问题，本次直接重构了该阶段的逻辑，这里设计了一种新方案，移除了两个冗余数据结构中的一个，这不仅解决了内存回退问题，还进一步提升了 0.5-1.8% 的速度。",
+    "利用 `pprof` 工具生成 Flame Graph 和 Bottom-up 视图，精准定位那些\"隐形\"的开销（如频繁的 `Kill` 方法或意外的对象拷贝）。",
+    "教科书级别的优化策略，不仅要看速度，更要看内存、稳定性、可维护性等综合指标，所以官方这份报告不仅仅是技术公告，更是一份优秀的编译器工程的案例研究。"
+  ],
+  "tags": [
+    "Android",
+    "ART",
+    "JIT",
+    "AOT",
+    "编译器优化"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 88,
+  "wordCount": 2124,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765856454000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 03:40:54"
+}

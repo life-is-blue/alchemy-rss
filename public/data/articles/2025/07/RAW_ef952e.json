@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ef952e",
+  "title": "OpenAI 发布通用型 ChatGPT 代理，以应对 Excel、PowerPoint 和 Chrome 浏览器的挑战",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251653&idx=3&sn=9665e70c9c51be2663a98cc6d6ce0204",
+  "date": "2025-07-27 04:41:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "\n \n \n  <p><span></span><br></p>\n  <div style=\"color: #3f3f3f;font-size: 16px;font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;margin: 0;box-sizing: border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Andrew Hoblitzell </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">最近，OpenAI发布 了 ChatGPT 代理，它将 Operator 的浏览技能和 Deep Research 的总结能力整合到单一的“ChatGPT 代理”中。现在，开发者不再需要将代码或公式片段粘贴到 ChatGPT 中，然后再将答案复制到生产力应用中，而是可以提示一个工具来收集数据、对其进行推理，并一次性返回一个可编辑的电子表格或幻灯片。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">该代理通过在后台发出 Python 代码来编写有效的.xlsx 和.pptx 文件，其输出可以在 Excel、LibreOffice、PowerPoint、Keynote 或任何理解开放格式的库中打开。企业家早期的实践笔记指出，即使是简单的一行提示也能生成连贯的幻灯片。在聊天窗口背后，代理可以在 GUI 浏览器、文本浏览器、类 POSIX 终端和直接 API 调用之间进行选择。它可以通过“连接器”登录到 SaaS 工具，使用文本浏览器抓取表格，运行终端中的代码进行数据整形，并将结果放入 LibreOffice，然后提供下载链接。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;box-sizing: border-box;font-size: 16px;text-align: center;white-space: pre-line;line-height: 27px;padding: 23px 8px 0px;margin: 0px;color: rgb(74, 74, 74);\" nodeleaf=\"\"><img data-imgfileid=\"503767977\" class=\"rich_pages wxw-img\" data-ratio=\"0.574585635359116\" data-type=\"png\" data-w=\"1448\" style=\"width: 100%;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=9dacd74d&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VN0fLFgYLyQ6nVms3gyfHULp4VZZ5Wyq7mQkvqn5HnYsEXYr5lzz1yia6pLl2VQVFOXQ6BgxFTWCJA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">在 SpreadsheetBench 上，ChatGPT 代理的准确率达到了 45.5%，而 Copilot-in-Excel 仅为 20%。OpenAI 还声称，ChatGPT 代理在 DSBench 和 BrowseComp 上取得了一流的成绩，在 Humanity's Last Exam 上一次通过率达到了 41.6%，但这些基准测试都假设代理被允许运行代码和浏览。</span></p>\n   <blockquote>\n    <p><span leaf=\"\">我会向我自己的家人解释说……在有机会在实际应用中研究和改进它之前，我不会把它用于高风险的用途或处理大量个人信息。</span></p>\n    <p style=\"text-align: right;\"><span leaf=\"\">—— Sam Altman</span></p>\n   </blockquote>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">从开发者的角度来看，代理只是又一个 ChatGPT 工具选项，你基于 Assistants API 构建的任何东西都会自动继承它。通过连接器可以将代理指向私有 GitHub 存储库或 Grafana 面板，而 Generative-Excel-Data-Assistant 等 GitHub 项目和 Azure 的“assistant-agent”笔记本则展示了如何将工作流嵌入内部应用程序。像 awesome-ai-agents 这样的社区列表收录了数十个类似的开源项目，你现在就可以开始创建分支。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;box-sizing: border-box;font-size: 16px;text-align: center;white-space: pre-line;line-height: 27px;padding: 23px 8px 0px;margin: 0px;color: rgb(74, 74, 74);\" nodeleaf=\"\"><img data-imgfileid=\"503767978\" class=\"rich_pages wxw-img\" data-ratio=\"0.7777777777777778\" data-type=\"png\" data-w=\"1314\" style=\"width: 100%;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=6cb1cc6c&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VN0fLFgYLyQ6nVms3gyfHUL7aMuFn3Gia549OPh72KibKp2prdwkTWjlPPuSibtOXF83AribKEfIa6taQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">该功能是在 OpenAI 经历了一个 “坎坷的夏天”之后推出的，但仍然成了一项引人注目的胜利。TechRadar 在实测中让它规划了一个到东京旅游的行程，并生成了一个格式化的表格。另一方面，基准测试显示了不同的结果。早期的 ZDNet 基准测试发现，在多步骤任务中，只有八分之一可以在不产生幻觉的情况下完成，而 The Information 引用了一位测试者遇到的情况，一个人类在 15 分钟内就能完成的任务，他等了 30 分钟。OpenAI 也做了说明，当代理同时处理多个工具时风险更高、运行时间更长。该公司最近与 Gemini 和其他深度推理模型共享了 IMO Gold，而 Alexander Wei评论说 该公司“很快将发布 GPT5”。</span></p>\n   <blockquote>\n    <p><span leaf=\"\">你可能不会看到软件的完全压缩，其中只有一个代理和一个数据库，因为工作流和公司特有的业务流程中有很多逻辑需要构建到数据库中或围绕数据库构建……代理会在 1% 的时间里犯错误，它会与某人分享错误的东西或向错误的人开放访问权限。</span></p>\n    <p style=\"text-align: right;\"><span leaf=\"\">—— Box CEO Aaron Levie</span></p>\n   </blockquote>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">高质量的标记数据仍然是每个代理工作流所赖以生存的氧气。这也解释了为什么 Meta 刚刚开出了一张价值 140 亿美元的支票，用于购买 Scale AI 近一半的人工合成图像、代码跟踪和 RLHF 示例，供未来发布的 Llama 使用。。像 亚马逊 Mechanical Turk 这样的众包主力仍然在填充边缘案例提示的长尾，而像 Turing 这样的其他初创公司现在拥有超过 400 万专家标记员，并且收入增长了三倍，达到 3 亿美元，为那些对 Meta 的新窗口保持警惕的实验室提供了一个中立选项。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">希望实施代理的开发者应该将输出视为草稿资料，执行沙盒凭证并捕获日志——这是生态系统成熟过程中的奠基性实践。如果你想了解更多信息，请参考 系统卡片。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;box-sizing: border-box;font-size: 16px;text-align: left;white-space: pre-line;line-height: 27px;padding: 23px 8px 0px;margin: 0px;color: rgb(74, 74, 74);\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"font-weight: 400;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;box-sizing: border-box;font-size: 16px;text-align: left;white-space: pre-line;line-height: 27px;padding: 23px 8px 0px;margin: 0px;color: rgb(74, 74, 74);\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/07/openai-chatgpt-agents/\" target=\"_blank\">https://www.infoq.com/news/2025/07/openai-chatgpt-agents/</a></span></span></p></div>\n \n",
+  "aiSummary": "OpenAI 发布通用型 ChatGPT 代理，整合浏览与总结能力，旨在提升与 Excel、PowerPoint 等生产力工具的交互效率，但仍面临准确性和可靠性挑战。",
+  "oneSentenceSummary": "OpenAI 发布通用型 ChatGPT 代理，整合浏览与总结能力，旨在提升与 Excel、PowerPoint 等生产力工具的交互效率，但仍面临准确性和可靠性挑战。",
+  "summary": "文章介绍了 OpenAI 最新发布的通用型 ChatGPT 代理，该代理整合了 Operator 的浏览功能和 Deep Research 的总结能力，旨在简化用户与 Excel、PowerPoint、Chrome 等生产力工具的交互。开发者现在可以通过单一提示，让代理自动收集数据、进行推理并生成可编辑的电子表格或幻灯片，无需手动复制粘贴。该代理通过在后台执行 Python 代码生成文件，并能通过连接器登录 SaaS 工具、抓取数据、运行终端代码。尽管在 SpreadsheetBench 等基准测试中表现优于竞品，但文章也指出其在实际多步骤任务中仍存在挑战，例如 ZDNet 的基准测试发现其在多步骤任务中仅有八分之一能无幻觉完成，以及 The Information 引用测试者遇到的耗时过长问题。文章强调了高质量标记数据对代理工作流的重要性，并建议开发者将代理输出视为草稿，并在沙盒环境中进行测试，以应对其潜在的错误率和风险。",
+  "mainPoints": [
+    {
+      "point": "ChatGPT 代理整合多项能力以提升生产力工具交互效率",
+      "explanation": "该代理结合了浏览和总结功能，能够直接生成可编辑的电子表格和幻灯片，显著简化了用户在不同应用间的数据处理和内容创建流程。"
+    },
+    {
+      "point": "代理在特定基准测试中表现突出但实际应用仍存挑战",
+      "explanation": "尽管在 SpreadsheetBench 等测试中展现出优越性，但在复杂多步骤任务中仍可能出现幻觉和耗时问题，提示其成熟度尚待提高。"
+    },
+    {
+      "point": "高质量数据和审慎实践对代理应用至关重要",
+      "explanation": "文章强调了标记数据对代理性能的支撑作用，并建议开发者在沙盒环境中使用代理，将其输出视为草稿，以应对其固有的错误率和风险。"
+    }
+  ],
+  "keyQuotes": [
+    "开发者不再需要将代码或公式片段粘贴到 ChatGPT 中，然后再将答案复制到生产力应用中，而是可以提示一个工具来收集数据、对其进行推理，并一次性返回一个可编辑的电子表格或幻灯片。",
+    "我会向我自己的家人解释说......在有机会在实际应用中研究和改进它之前，我不会把它用于高风险的用途或处理大量个人信息。",
+    "你可能不会看到软件的完全压缩，其中只有一个代理和一个数据库，因为工作流和公司特有的业务流程中有很多逻辑需要构建到数据库中或围绕数据库构建......代理会在 1% 的时间里犯错误，它会与某人分享错误的东西或向错误的人开放访问权限。",
+    "高质量的标记数据仍然是每个代理工作流所赖以生存的氧气。",
+    "希望实施代理的开发者应该将输出视为草稿资料，执行沙盒凭证并捕获日志------这是生态系统成熟过程中的奠基性实践。"
+  ],
+  "tags": [
+    "AI代理",
+    "OpenAI",
+    "ChatGPT",
+    "自动化",
+    "生产力工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1293,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753591260000,
+  "publishDateStr": "2025-07-27",
+  "publishDateTimeStr": "2025-07-27 04:41:00"
+}

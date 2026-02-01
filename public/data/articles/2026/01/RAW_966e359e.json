@@ -1,0 +1,55 @@
+{
+  "id": "RAW_966e359e",
+  "title": "Amazon S3 Vectors 正式发布，为 RAG 引入“存储优先”架构",
+  "url": "https://www.infoq.com/news/2026/01/aws-s3-vectors-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-02 10:17:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS recently announced the general availability of <a href=\"https://aws.amazon.com/s3/features/vectors/\">S3 Vectors</a>, a cloud object storage service with native support for storing and querying vector data.&nbsp;With the GA release, the company increases per-index capacity forty-fold to 2 billion vectors and introduces sub-100ms query latencies.</p>\n   <p>Earlier this year, in July, the service was available as <a href=\"https://www.infoq.com/news/2025/07/aws-s3-vectors/\">a preview</a>, and the company reports that users have already created over 250,000 vector indexes and ingested more than 40 billion vectors. This preview capped indexes at 50 million vectors, yet Sebastian Stromacq, principal developer at AWS, writes:</p>\n   <blockquote>\n    <p>You can now store and search across up to 2 billion vectors in a single index... This means you can consolidate your entire vector dataset into a single index, eliminating the need to shard across multiple smaller indexes or to implement complex query federation logic.</p>\n   </blockquote>\n   <p>In addition, the company enhances query performance, with infrequent queries returning results in under 1 second and frequent queries achieving latencies of 100ms or less, which is beneficial for interactive applications like conversational AI. Furthermore, according to the company, up to 100 search results can now be retrieved per query, improving the context for <a href=\"https://aws.amazon.com/what-is/retrieval-augmented-generation/\">retrieval-augmented generation</a> (RAG) applications. Finally, write performance now supports up to 1,000 PUT transactions per second for single-vector updates, enabling higher throughput with small batch sizes and immediate searchability of new data from multiple concurrent sources.</p>\n   <p>The company also states that two key integrations that were launched in preview are now generally available.&nbsp;Users can now leverage <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-bedrock-kb.html\">S3 Vectors as a vector storage engine for Amazon Bedrock Knowledge Base</a>, and <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-opensearch.html\">S3 Vectors integration with Amazon OpenSearch is now generally available</a>, enabling users to use S3 Vectors as their vector storage layer while using OpenSearch for search and analytics capabilities.</p>\n   <p>Jalaj Nautiyal, a developer, writes in a LinkedIn <a href=\"https://www.linkedin.com/posts/jalaj-nautiyal-3baa68121_aws-genai-vectordatabase-activity-7402128466030309376-sJfV\">post</a>:</p>\n   <blockquote>\n    <p>S3 Vectors moves vector search from a Compute-First problem to a Storage-First solution. The \"Serverless\" Shift: You no longer manage clusters, pods, or shards. You treat vectors like any other object in S3. Scale: Store billions of vectors.\n     <br>\n     Cost: Reduce total ownership costs by up to 90%. You pay for S3 storage (cheap) + query fees. No idle compute costs.</p>\n   </blockquote>\n   <p>In addition, he writes:</p>\n   <blockquote>\n    <p>For 80% of internal RAG applications and autonomous agents, you probably don't need the Ferrari of vector databases. You just need a reliable, infinite trunk. S3 just became that trunk.</p>\n   </blockquote>\n   <p>Currently, S3 Vectors is available in 14 AWS regions, up from 5 during the preview. In addition, the pricing of the service depends on three dimensions:</p>\n   <ul>\n    <li>PUT pricing is calculated based on the logical GB of vectors users upload, where each vector includes its logical vector data, metadata, and key.&nbsp;</li>\n    <li>The total logical storage across indexes determines storage costs.&nbsp;</li>\n    <li>Query charges&nbsp;include a per-API charge plus a $/TB charge based on index size (excluding non-filterable metadata).</li>\n   </ul>\n   <p>More details on pricing are available on the <a href=\"https://aws.amazon.com/s3/pricing/\">pricing page</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Amazon S3 Vectors Reaches GA, Introducing &quot;Storage-First&quot; Architecture for RAG\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/aws-s3-vectors-ga/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767349020000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS S3 Vectors 正式商用，支持高达 20 亿个向量且延迟低于 100ms，通过“存储优先”架构为 RAG 应用显著降低成本并简化管理。",
+  "oneSentenceSummary": "AWS S3 Vectors 正式商用，支持高达 20 亿个向量且延迟低于 100ms，通过“存储优先”架构为 RAG 应用显著降低成本并简化管理。",
+  "summary": "AWS 宣布 S3 Vectors 正式商用（GA），这是一种原生支持存储和查询向量数据的云对象存储服务。此次 GA 版本将单个索引的容量显著提升至 20 亿个向量，并针对频繁查询实现了低于 100ms 的查询延迟。相关增强功能包括单次查询可检索多达 100 个搜索结果（为 RAG 应用提供更丰富的上下文），以及支持每秒高达 1，000 次的单向量更新 PUT 事务。与 Amazon Bedrock Knowledge Base 和 Amazon OpenSearch 的关键集成也已正式上线。开发者 Jalaj Nautiyal 提出了一个值得关注的观点，他强调 S3 Vectors 实现了从“计算优先”到“存储优先”架构的转变，通过利用 S3 的低成本存储，推动了无服务器化、大规模可扩展性以及高达 90% 的成本削减。他将 S3 Vectors 定位为适用于大多数内部 RAG 应用的“无限后备箱”，从而消除了对更复杂、昂贵的向量数据库的需求。该服务目前已在 14 个 AWS 区域可用，定价基于向量上传、存储和查询量。",
+  "mainPoints": [
+    {
+      "point": "AWS S3 Vectors 正式商用，显著提升了向量数据的容量和性能。",
+      "explanation": "该服务现在支持每个索引高达 20 亿个向量，为频繁查询提供低于 100ms 的延迟，并与 Bedrock Knowledge Base 和 OpenSearch 集成，简化了 AI 应用的大规模向量数据管理。"
+    },
+    {
+      "point": "它引入了“存储优先”架构，重新定义了 RAG 中向量搜索的处理方式。",
+      "explanation": "通过像处理其他 S3 对象一样处理向量，它实现了一种无服务器模式，用户无需管理复杂的基础设施，将重心从计算转向了具有成本效益、可扩展的存储。"
+    },
+    {
+      "point": "S3 Vectors 为 RAG 应用提供了大幅的成本削减并简化了扩展性。",
+      "explanation": "由于利用了 S3 廉价的存储并消除了闲置计算成本，成本可降低高达 90%，使其成为许多不需要高端向量数据库的内部 RAG 场景的理想且可靠的解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "你现在可以在单个索引中存储和搜索多达 20 亿个向量……这意味着你可以将整个向量数据集整合到单个索引中，无需在多个小索引之间进行分片，也不需要实现复杂的查询联邦逻辑。",
+    "S3 Vectors 将向量搜索从一个“计算优先”的问题转变为一个“存储优先”的解决方案。",
+    "“无服务器”转型：你不再需要管理集群、Pod 或分片。你像对待 S3 中的任何其他对象一样对待向量。规模：存储数十亿个向量。",
+    "成本：将总拥有成本降低高达 90%。你只需支付 S3 存储费（便宜）+ 查询费。没有闲置计算成本。",
+    "对于 80% 的内部 RAG 应用和自主智能体来说，你可能不需要向量数据库中的法拉利。你只需要一个可靠的、无限大的后备箱。S3 刚刚成为了那个后备箱。"
+  ],
+  "tags": [
+    "AWS",
+    "S3 Vectors",
+    "向量数据库",
+    "RAG",
+    "Serverless"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 477,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767349020000,
+  "publishDateStr": "01-02",
+  "publishDateTimeStr": "2026-01-02 10:17:00"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9f6aae88",
+  "title": "GenAI 系统的隐性技术债",
+  "url": "https://www.databricks.com/blog/hidden-technical-debt-genai-systems",
+  "date": "2026-01-30 03:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <h2>Introduction</h2>\n  <p>If we broadly compare classical machine learning and generative AI workflows, we find that the general workflow steps remain similar between the two. Both require data collection, feature engineering, model optimization, deployment, evaluation, etc. but the execution details and time allocations are fundamentally different. Most importantly, generative AI introduces unique sources of technical debt that can accumulate quickly if not properly managed, including:</p>\n  <ul>\n   <li><strong>Tool sprawl</strong> - difficulty managing and selecting from proliferating agent tools</li>\n   <li><strong>Prompt stuffing</strong> - overly complex prompts that become unmaintainable</li>\n   <li><strong>Opaque pipelines</strong> - lack of proper tracing makes debugging difficult</li>\n   <li><strong>Inadequate feedback systems</strong> - failing to capture and utilize human feedback effectively</li>\n   <li><strong>Insufficient stakeholder engagement</strong> - not maintaining regular communication with end users</li>\n  </ul>\n  <p>In this blog, we will address each form of technical debt in turn. Ultimately, teams transitioning from classical ML to generative AI need to be aware of these new debt sources and adjust their development practices accordingly - spending more time on evaluation, stakeholder management, subjective quality monitoring, and instrumentation rather than the data cleaning and feature engineering that dominated classical ML projects.</p>\n  <h2>How are Classical Machine Learning (ML) and Generative Artificial Intelligence (AI) Workflows different?</h2>\n  <p>To appreciate where the field is now, it’s useful to compare how our workflows for generative AI compare with what we use for classical machine learning problems. The following is a high-level overview. As this comparison reveals, the broad workflow steps remain the same, but there are differences in the execution details that lead to different steps getting emphasized. As we’ll see, generative AI also introduces new forms of technical debt, which have implications for how we maintain our systems in production.</p>\n  <div class=\"table-responsive\">\n   <div class=\"max-w-full overflow-x-auto\">\n    <table class=\"table color-bar\" width=\"100%\">\n     <thead>\n      <tr>\n       <th>Workflow Step</th>\n       <th>Classical ML</th>\n       <th>Generative AI</th>\n      </tr>\n     </thead>\n     <tbody>\n      <tr>\n       <td>Data collection</td>\n       <td>Collected data represents real-world events, such as retail sales or equipment failures.\n        <br>\n        <br>\n        Structured formats, such as CSV and JSON, are often used.</td>\n       <td>Collected data represents contextual knowledge that helps a language model provide relevant responses.\n        <br>\n        <br>\n        Both structured data (often in real time tables) and unstructured data (images, videos, text files) can be used.</td>\n      </tr>\n      <tr>\n       <td>Feature engineering/\n        <br>\n        Data transformation</td>\n       <td>Data transformation steps involve either creating new features to better reflect the problem space (e.g., creating weekday and weekend features from timestamp data) or doing statistical transformations so models fit the data better (e.g., standardizing continuous variables for k-means clustering and doing a log transform of skewed data so it follows a normal distribution).</td>\n       <td>For unstructured data, transformation involves chunking, creating embedding representations, and (possibly) adding metadata such as headings and tags to chunks.\n        <br>\n        <br>\n        For structured data, it might involve denormalizing tables so that large language models (LLMs) don’t have to consider table joins. Adding table and column metadata descriptions is also important.</td>\n      </tr>\n      <tr>\n       <td>Model pipeline design</td>\n       <td>\n        <p>Usually covered by a basic pipeline with three steps:</p>\n        <ul>\n         <li>Preprocessing (statistical column transformations such as standardization, normalization, or one-hot encoding)</li>\n         <li>Model prediction (passing preprocessed data to the model to produce outputs)</li>\n         <li>Postprocessing (enriching the model output with additional information, typically business logic filters)</li>\n        </ul>\n       </td>\n       <td>Usually involves a query rewriting step, some form of information retrieval, possibly tool calling, and safety checks at the end.\n        <br>\n        <br>\n        Pipelines are much more complex, involve more complex infrastructure like databases and API integrations, and sometimes handled with graph-like structures.</td>\n      </tr>\n      <tr>\n       <td>Model optimization</td>\n       <td>Model optimization involves hyperparameter tuning using methods such as cross-validation, grid search, and random search.</td>\n       <td>While some hyperparameters, such as temperature, top-k, and top-p, may be changed, most effort is spent tuning prompts to guide model behavior.\n        <br>\n        <br>\n        Since an LLM chain may involve many steps, an AI engineer may also experiment with breaking down a complex operation into smaller components.</td>\n      </tr>\n      <tr>\n       <td>Deployment</td>\n       <td>Models are much smaller than foundation models such as LLMs. Entire ML applications can be hosted on a CPU without GPUs being needed.\n        <br>\n        <br>\n        Model versioning, monitoring, and lineage are important considerations.\n        <br>\n        <br>\n        Model predictions rarely require complex chains or graphs, so traces are usually not used.</td>\n       <td>Because foundation models are very large, they may be hosted on a central GPU and exposed as an API to several user-facing AI applications. Those applications act as “wrappers” around the foundation model API and are hosted on smaller CPUs.\n        <br>\n        <br>\n        Application version management, monitoring, and lineage are important considerations.\n        <br>\n        <br>\n        Additionally, because LLM chains and graphs can be complex, proper tracing is needed to identify query bottlenecks and bugs.</td>\n      </tr>\n      <tr>\n       <td>Evaluation</td>\n       <td>For model performance, data scientists can use defined quantitative metrics such as F1 score for classification or root mean square error for regression.</td>\n       <td>The correctness of an LLM output relies on subjective judgments, e.g. of the quality of a summary or translation. Therefore, response quality is usually judged with guidelines rather than quantitative metrics.</td>\n      </tr>\n     </tbody>\n    </table>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文识别了生成式 AI 中五个独特的技术债来源，并为从传统机器学习转向基于 LLM 的工作流提供了一个对比框架。",
+  "oneSentenceSummary": "本文识别了生成式 AI 中五个独特的技术债来源，并为从传统机器学习转向基于 LLM 的工作流提供了一个对比框架。",
+  "summary": "本文探讨了从传统机器学习向生成式 AI 的转变如何改变了技术债的格局。虽然高层级的工作流步骤（数据收集、优化和部署）保持相似，但执行细节却大相径庭。GenAI 引入了特定的风险，如工具泛滥、难以维护的“提示词堆砌”（prompt stuffing）以及缺乏适当追踪的透明度不足的流水线。作者认为，工程团队必须将重心从数据清洗和特征工程转向构建稳健的评估框架、插桩（instrumentation）以及持续的利益相关者反馈，以有效管理这些新的复杂性。",
+  "mainPoints": [
+    {
+      "point": "生成式 AI 将技术债的主要来源从数据预处理转向了流水线复杂性和提示词管理。",
+      "explanation": "与特征工程占据主导地位的传统 ML 不同，GenAI 的债务源于难以维护的提示词和复杂的智能体工具泛滥，这要求开发人员关注架构的稳健性和 LLM 链的长期可维护性。"
+    },
+    {
+      "point": "生成式 AI 系统的评估本质上是主观的，需要定性指南而非简单的定量指标。",
+      "explanation": "传统 ML 使用 F1 分数或 RMSE，而 GenAI 依赖于以人为中心的质量判断（如摘要准确性或翻译细微差别），因此需要复杂的反馈系统和利益相关者的一致性，以确保生产就绪。"
+    },
+    {
+      "point": "LLM 链和 API 集成的复杂性使得不透明的流水线成为调试和性能优化的重大风险。",
+      "explanation": "由于 GenAI 通常涉及多步推理、查询重写和外部工具调用，因此适当的追踪和插桩对于识别瓶颈并防止生产中隐性架构债的积累至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "生成式 AI 引入了独特的技术债来源，如果管理不当，这些债务会迅速积累。",
+    "从传统 ML 转向生成式 AI 的团队需要……在评估、利益相关者管理、主观质量监控和插桩上投入更多时间。",
+    "LLM 输出的正确性依赖于主观判断……响应质量通常根据指南而非定量指标来评判。",
+    "提示词堆砌——导致难以维护的过度复杂的提示词。",
+    "流水线要复杂得多，涉及数据库和 API 集成等更复杂的底层设施，有时还会使用类图结构进行处理。"
+  ],
+  "tags": [
+    "技术债",
+    "生成式 AI",
+    "MLOps",
+    "LLM 流水线",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 760,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769742000000,
+  "publishDateStr": "01-30",
+  "publishDateTimeStr": "2026-01-30 03:00:00"
+}

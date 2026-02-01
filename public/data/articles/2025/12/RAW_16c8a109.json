@@ -1,0 +1,63 @@
+{
+  "id": "RAW_16c8a109",
+  "title": "Flutter UI 设计库解耦重构进度，官方解答未来如何适配",
+  "url": "https://juejin.cn/post/7585751355593850899",
+  "date": "2025-12-22 03:34:11",
+  "author": "恋猫de小郭",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body cache result\">\n   <p>在目前的 Flutter 架构中，Material（Android ）和 Cupertino（iOS）的 UI 库是与核心框架捆绑在一起的，也就是常见的 \"batteries included\" 原则，为的是方便开发者开箱即用，但是也导致了 Widgets、Material 和 Cupertino 这三个 lib 紧密耦合。</p>\n   <p>而今年提出的 decoupling design 重构，就是<strong>计划将这两个设计库从核心框架中解耦，并调整到独立的 Pub 包</strong>，也就是核心框架将只包含基础的 <code>Widgets</code> 库，而特定的设计风格将变为可选的插件 ：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c7f08af96f354221ab52520890f27380~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=r95H8TJV7oMzVG70mcSaJ8gnn8M%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>之所以会有这个调整，最主要还是因为在最新的 Material 3 Expressive 和 Liquid Glass 风格发布之后，UI 在 Framework 层的适配成本变高，并且 <strong>Framework 的更新节奏也无法很好适应这种 UI 风格调整</strong>，所以在社区的呼声下，官方正式开始了 decoupling design 计划。</p>\n   <p>实际上在之前，很多基础组件对特定设计库有不必要的依赖，你以为框架的代码结构是下图 A ，但是在多年维护后，目前已经是下图 B 的情况：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/369d602fb81d4fe1b65e446997de2572~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=6qAsbJsdiaILfSsykRKpbhEQOnQ%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>另外，类似 <code>SelectionArea</code> 组件，它看起来是一个纯 Widget 的基础组件，但为了实现跨平台适配，底层却必须依赖 Material 和 Cupertino 库 ，如果没有，你就会发现：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/5259133efa5c48faa624e75b8dc5dfa5~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=npmC5nlW3N6ZY9HEKsRLclLt73Q%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>因为在之前的 \"batteries included\" 原则，实际上控件内部会根据使用的风格或者运行的平台，主动为用户采用对应的主题风格，这样的话好处肯定是开箱即用，但是实际上用户很多时候并不理解这一点，并且最重要的是：</p>\n   <blockquote>\n    <p><strong>由于设计库与框架发布周期绑定，新设计的跟进趋势会让适应速度变慢很多，同时紧密的耦合也让 PR 变得复杂，每次调整风险更高，容易引发回归错误</strong> 。</p>\n   </blockquote>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/0b2278e0a4c947a0a189036864f45187~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=4lT3LjEFHBWBGzGN194n4Ek8ni0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>另外，现阶段开发者如果想构建非 Material/Cupertino 的自定义设计系统，往往不得不从头开始，因为现有的基础组件的定制功能开发不足 ，所以 decoupling design 作为现阶段必须经历的产物，最终提上了日程。</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f849dc87fb8b4a838b4bb5509b028c2f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=YaEXHekZKeZOlUgDuC8Ed3zKvuY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>当然，实际上解耦和重构设计库是一个非常大的底层调整，其中核心主要涉及了四个领域：</p>\n   <ul>\n    <li><strong>System UI</strong> ：需要重新界定设计库与平台之间的界限（例如文本选择、页面过渡） ，这个是最大的成本之一</li>\n    <li><strong>代码组织</strong> ：在基础 <code>Widgets</code> 库中创建更多的“原始组件抽象” (raw widget abstractions)，类似现在的 <code>RawRadio</code><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/9e79ad1ea8cf4bda87832255ae530e84~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=OKahAaQVVHvPFPi6LwM6n9oIfZc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n    <li><strong>主题</strong>：评估并改进主题系统，解决 Material 和 Cupertino 主题缺乏共同 BASE 的问题 ，因为之前 Widgets 完全没有主题体系，所以需要考虑是否引入更通用的 theme abstraction</li>\n    <li><strong>基础设施适配</strong>：迁移超过 200 个测试，并将相关的 CI 流程从主仓库迁移出去 ，避免交叉导入，建立独立的 CI 流程，让 PR 更便捷过审</li>\n   </ul>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/2dc792c8a50d4f9a90e6478487e2e0e6~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=nq3LVhvrxJxQD%2BAOWsZUX%2BQw2eU%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>而对于解耦完成的是假变，整个项目分三个阶段进行：</p>\n   <ul>\n    <li>\n     <p><strong>阶段一 (2025年12月)</strong> ：</p>\n     <ul>\n      <li>基础调整，将 Material/Cupertino 中的通用核心逻辑下沉移动到 <code>widgets</code> 库</li>\n      <li>搭建 Flutter packages 仓库的基础支持</li>\n     </ul>\n    </li>\n    <li>\n     <p><strong>阶段二 2026年</strong> ：</p>\n     <ul>\n      <li>正式解耦，将代码移至新的包中并发布到 Pub</li>\n      <li>在主框架中标记旧库为“已弃用” (deprecated)</li>\n     </ul>\n    </li>\n    <li>\n     <p><strong>阶段三 - 2026年晚些时候</strong> ：</p>\n     <ul>\n      <li>从核心框架中彻底移除已弃用的 Material 和 Cupertino 库</li>\n     </ul>\n    </li>\n   </ul>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/bb4eda73d66a4a6a84a4bb3385cb4e2f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=eYX2ZyzSg4ENvbGcvoTvAC9HAWw%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>也就是，2026 年我们就可以拥有全新的 Material 3 Expressive 和 Liquid Glass 风格支持，并且是可选 package</p>\n   </blockquote>\n   <p>当然，对开发者的影响的使用肯定有影响，这个影响有好有坏：</p>\n   <ul>\n    <li><strong>版本管理更灵活</strong>：解耦后，Material 和 Cupertino 将遵循语义化版本控制，开发者可以锁定特定版本，独立于 Flutter 框架的升级节奏 ，更加方便灵活，<strong>不必跟着 Flutter 升级 UI 设计</strong></li>\n    <li><strong>更容易构建自定义设计</strong>：通过使用底层的“原始组件” (raw widgets，如 <code>RawRadio</code>)，构建完全自定义的 UI 系统将变得更加容易，不再被迫基于 Material 组件修改</li>\n    <li><strong>破坏性变更 (Breaking Changes)</strong> ：虽然未来会提供快速修复工具 (quick fixes)，但解耦过程不可避免地会带来一些破坏性变更 ，这些是是需要开发者自己适配</li>\n    <li><strong>设计库更新暂停</strong>：为了减少迁移难度，在解耦完成前， Flutter 会将暂停引入新的重大设计更新（如 Material 3 Expressive 或 Liquid Glass） ，所以这个需要开发耐心等待</li>\n   </ul>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c3fa99b8f6d842f2acfc7786def5d092~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=P7KXXLTGu4fKwzFHOl8%2BkEvYgfs%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>当然，解耦之后，<strong>Framework 的 UI break change 会越来越少，而开发者也可以选择自己的 style package 进行 lock</strong> ，整体灵活性和可用度会更好。</p>\n   <p>不过，对于 Plugin开发者来说，可能会有更高的适配成本，<strong>因为需要考虑 UI 实现里使用的是哪个 version 的 style package ，也需要考虑会不会给用户带来版本冲突等</strong>，在这方面也许未来会出现类似 RN 的：</p>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/ff1a70cf4a9347aba175551957b971b1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1766979251&amp;x-signature=NLTo0F37w3rKBu1LOuWLfBf4LxI%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-0\">最后</h2>\n   <p>这次重构虽然是一项巨大的工程，但长远来看会让 Flutter 框架更耐用，也让设计库的迭代更迅速，并更好地支持第三方设计生态系统的发展 ，甚至未来 PC 平台的第三方 UI 风格也可以更好适配，这也引出另一个问题：</p>\n   <blockquote>\n    <p>Compose Multiplatform 是否也有类似问题，是否也会跟进？毕竟 CMP 也是以 Material 为主，不过目前看来 Compose 先天具备分层风格 function ，更倾向于平台层 UI 自己独立实现，实际上问题会小很多。</p>\n   </blockquote>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章详细解读了 Flutter 官方将 Material 和 Cupertino UI 库从核心框架解耦的重构计划，分析其原因、阶段性目标、对开发者和生态的长远影响。",
+  "oneSentenceSummary": "文章详细解读了 Flutter 官方将 Material 和 Cupertino UI 库从核心框架解耦的重构计划，分析其原因、阶段性目标、对开发者和生态的长远影响。",
+  "summary": "本文深入分析了 Flutter 官方正在进行的 UI 设计库解耦重构计划。该计划旨在将 Material 和 Cupertino UI 库从核心框架中独立出来，作为独立的 Pub 包，以解决当前框架与 UI 风格更新解耦的问题，并提升自定义 UI 系统的构建灵活性。文章阐述了解耦的必要性，即现有紧密耦合导致的 UI 适配成本高昂、更新节奏滞后以及阻碍自定义 UI 发展等问题。同时，详细介绍了重构涉及的 System UI、代码组织、主题系统和基础设施适配等四大核心领域，并规划了分阶段的实施路线图（预计 2026 年完成）。最后，文章还探讨了解耦对开发者带来的版本管理灵活性和自定义便利性，以及短期内可能出现的破坏性变更和设计库更新暂停等影响，并展望了长远来看对 Flutter 框架耐用性和生态发展的积极作用。",
+  "mainPoints": [
+    {
+      "point": "Flutter UI 库解耦旨在解决现有框架与 UI 设计库紧密耦合导致的问题。",
+      "explanation": "解耦可以避免 UI 风格更新与 Framework 更新节奏不匹配、PR 复杂难控、自定义 UI 系统构建困难、以及对新 Material/Cupertino 风格支持滞后等问题。"
+    },
+    {
+      "point": "解耦重构是一项涵盖 System UI、代码组织、主题和基础设施的复杂工程。",
+      "explanation": "这包括重新界定 UI 与平台的界限、创建更多原始组件抽象、改进主题系统兼容性以及迁移测试和 CI 流程，以实现彻底的模块化。"
+    },
+    {
+      "point": "重构计划分三个阶段进行，预计 2026 年晚些时候彻底完成。",
+      "explanation": "阶段性实施确保了平稳过渡，通过基础调整、正式解耦发布新包，最终移除旧库，最终目标是实现更灵活的 UI 与框架分离。"
+    },
+    {
+      "point": "解耦将提升开发者的版本管理灵活性和自定义 UI 能力，但短期内有破坏性变更。",
+      "explanation": "解耦后 UI 库可独立更新，开发者更容易构建自定义设计系统；但迁移过程会带来不可避免的破坏性变更，部分新设计特性在解耦前会暂停引入。"
+    },
+    {
+      "point": "长远看，解耦将使 Flutter 框架更稳定，并促进第三方设计生态发展。",
+      "explanation": "框架 UI break change 减少，开发者能更灵活选择 UI 包，有助于构建更耐用的 Flutter 生态，并为 PC 等平台提供更强的 UI 定制能力。"
+    }
+  ],
+  "keyQuotes": [
+    "计划将这两个设计库从核心框架中解耦，并调整到独立的 Pub 包。",
+    "由于设计库与框架发布周期绑定，新设计的跟进趋势会让适应速度变慢很多，同时紧密的耦合也让 PR 变得复杂，每次调整风险更高，容易引发回归错误。",
+    "在基础 `Widgets` 库中创建更多的\"原始组件抽象\" (raw widget abstractions)，类似现在的 `RawRadio`。",
+    "2026 年我们就可以拥有全新的 Material 3 Expressive 和 Liquid Glass 风格支持，并且是可选 package。",
+    "这次重构虽然是一项巨大的工程，但长远来看会让 Flutter 框架更耐用，也让设计库的迭代更迅速，并更好地支持第三方设计生态系统的发展。"
+  ],
+  "tags": [
+    "Flutter",
+    "UI设计",
+    "框架架构",
+    "解耦",
+    "重构"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1657,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766374451000,
+  "publishDateStr": "2025-12-22",
+  "publishDateTimeStr": "2025-12-22 03:34:11"
+}

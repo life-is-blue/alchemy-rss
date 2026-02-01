@@ -1,0 +1,55 @@
+{
+  "id": "RAW_2eaa8a3e",
+  "title": "PyTorch 基金会欢迎 Ray，发布 Monarch 以简化分布式 AI",
+  "url": "https://www.infoq.com/news/2025/10/pytorch-conf-ray-monarch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-30 16:00:00",
+  "author": "Hien Luu",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At the <a href=\"https://pytorch.org/event/pytorch-conference-2025/\">2025 PyTorch Conference</a>, the PyTorch Foundation announced several initiatives aimed at advancing open, scalable AI infrastructure. The <a href=\"https://pytorch.org/blog/pytorch-foundation-welcomes-ray-to-deliver-a-unified-open-source-ai-compute-stack/\">foundation welcomed Ray</a>, the distributed computing framework, as a hosted project and introduced <a href=\"https://pytorch.org/blog/introducing-pytorch-monarch/\">PyTorch Monarch</a>, a new framework simplifying distributed AI workload across multiple machines. The event also spotlighted new open research projects, including <a href=\"https://marin.community/\">Stanford’s Marin</a> and <a href=\"https://allenai.org/olmo\">AI2’s Olmo-Thinking</a>, highlighting the growing push for transparency and reproducibility in foundation model development.</p>\n   <p>The inclusion of <a href=\"https://www.ray.io/\">Ray</a> reflects the foundation’s broader strategy to build a unified open ecosystem spanning model development, serving, and distributed execution. Originally developed at UC Berkeley’s RISELab, Ray provides a compact set of Python primitives that make distributed computation as intuitive as writing local code, enabling developers to scale training, tuning, and inference workloads seamlessly.</p>\n   <p>The addition of Ray complements other recent projects under the foundation’s umbrella, including <a href=\"https://pytorch.org/blog/pytorch-foundation-welcomes-deepspeed-as-a-hosted-project/\">DeepSpeed</a> for distributed training and <a href=\"https://pytorch.org/blog/pytorch-foundation-welcomes-vllm/\">vLLM</a> for high-throughput inference. Together, PyTorch, DeepSpeed, vLLM, and Ray form a cohesive open-source stack covering the full model lifecycle—from experimentation to production-scale deployment.</p>\n   <p>&nbsp;</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/10/pytorch-conf-ray-monarch/news/2025/10/pytorch-conf-ray-monarch/en/resources/1Ray-within-the-AI-Compute-Software-Stack-1761799192341.jpeg\" style=\"width: 600px; height: 338px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/pytorch-conf-ray-monarch/en/resources/1Ray-within-the-AI-Compute-Software-Stack-1761799192341.jpeg\" rel=\"share\">\n   </center>\n   <center>\n    Source: <a href=\"https://pytorch.org/blog/pytorch-foundation-welcomes-ray-to-deliver-a-unified-open-source-ai-compute-stack/\">PyTorch Foundation blog</a>\n   </center>\n   <p>In parallel, the Meta PyTorch team introduced PyTorch Monarch, a framework designed to abstract entire GPU clusters as a single logical device. Monarch’s array-like mesh interface allows developers to express parallelism using&nbsp;Pythonic constructs while the system automatically manages data and computation distribution. Built on a Rust-based backend, Monarch aims to combine performance with safety and reduce the cognitive load of distributed programming.</p>\n   <p>The conference further emphasized open collaboration in foundation model development and research. In a keynote, Percy Liang from Stanford University introduced <a href=\"https://marin.community/\">Marin</a>, an open lab under the <a href=\"https://crfm.stanford.edu/\">Center for Research on Foundation Models</a> that seeks to make frontier AI development fully transparent—releasing datasets, code, hyperparameters, and training logs to enable reproducibility and community participation.</p>\n   <p>Similarly, Nathan Lambert, Senior Research Scientist from Ai2, presented <a href=\"https://allenai.org/olmo\">Olmo-Thinking</a>, an open reasoning model that disclosed details about the training process, model architecture decisions, data sourcing, and training code design often absent in the closed model releases. These efforts align with a broader movement toward open, and reproducible foundation models.</p>\n   <p>By expanding its scope beyond core framework development, the PyTorch Foundation is positioning itself as a central hub for open AI infrastructure. The upcoming 2026 PyTorch Conference in San Jose will likely continue this focus on ecosystem collaboration and developer enablement.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"PyTorch Foundation Welcomes Ray, Unveils Monarch for Simplified Distributed AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Hien Luu\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/pytorch-conf-ray-monarch/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761840000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "PyTorch 基金会整合 Ray 并引入 Monarch 以简化分布式 AI，从而促进开放、可扩展的基础设施，并提高基础模型开发的可复现性。",
+  "oneSentenceSummary": "PyTorch 基金会整合 Ray 并引入 Monarch 以简化分布式 AI，从而促进开放、可扩展的基础设施，并提高基础模型开发的可复现性。",
+  "summary": "在 2025 年的 PyTorch 大会上，PyTorch 基金会宣布了旨在构建开放和可扩展的 AI 基础设施的重大进展。其中关键的是欢迎 Ray，一个分布式计算框架，作为基金会托管的项目。这种整合旨在创建一个统一的开源堆栈，包括 PyTorch、DeepSpeed、vLLM 和 Ray，从而简化从开发到生产规模部署的整个 AI 模型生命周期。同时，Meta 的 PyTorch 团队推出了 PyTorch Monarch，这是一个新颖的框架，可以将整个 GPU 集群抽象为单个逻辑设备。Monarch 通过 Pythonic 结构和高性能 Rust 后端简化了分布式 AI 编程，从而降低了开发者的认知负担。会议重点介绍了斯坦福大学的 Marin 和 AI2 的 Olmo-Thinking 等项目。这些项目旨在通过公开共享数据集、代码和训练日志来提高基础模型研究的透明度和可复现性。这些举措共同将 PyTorch 基金会定位为开放 AI 基础设施和协作创新的中心枢纽。",
+  "mainPoints": [
+    {
+      "point": "PyTorch 基金会整合 Ray，旨在建立统一的开源 AI 计算堆栈。",
+      "explanation": "Ray 的加入补充了 PyTorch、DeepSpeed 和 vLLM，为扩展 AI 工作负载提供了一个全面的框架，从实验到生产规模部署，涵盖了整个模型生命周期。"
+    },
+    {
+      "point": "PyTorch Monarch 通过将 GPU 集群抽象为单个逻辑设备来简化分布式 AI。",
+      "explanation": "Monarch 的类数组网格接口和 Pythonic 结构降低了分布式编程的复杂性，利用 Rust 后端来增强性能和安全性。"
+    },
+    {
+      "point": "新的开放研究项目倡导基础模型开发的透明度和可复现性。",
+      "explanation": "斯坦福大学的 Marin 和 AI2 的 Olmo-Thinking 等项目旨在通过发布数据集、代码和训练日志，促进社区参与，从而使前沿 AI 开发完全透明。"
+    }
+  ],
+  "keyQuotes": [
+    "该基金会欢迎分布式计算框架 Ray 作为一个托管项目，并发布了 PyTorch Monarch，这是一个简化跨多台机器的分布式 AI 工作负载的新框架。",
+    "Ray 最初由加州大学伯克利分校的 RISELab 开发，提供了一组紧凑的 Python 原语，使分布式计算像编写本地代码一样直观。这使得开发人员能够无缝地扩展训练、调整和推理工作负载。",
+    "Monarch 的类数组网格接口允许开发人员使用 Pythonic 结构表达并行性，而系统会自动管理数据和计算分布。",
+    "Marin... 旨在使前沿 AI 开发完全透明：发布数据集、代码、超参数和训练日志，以实现可复现性和社区参与。",
+    "通过扩展其在核心框架开发之外的范围，PyTorch 基金会将自己定位为开放 AI 基础设施的中心枢纽。"
+  ],
+  "tags": [
+    "分布式 AI",
+    "PyTorch",
+    "Ray",
+    "PyTorch Monarch",
+    "开源 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 380,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761840000000,
+  "publishDateStr": "2025-10-30",
+  "publishDateTimeStr": "2025-10-30 16:00:00"
+}

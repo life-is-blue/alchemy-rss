@@ -1,0 +1,55 @@
+{
+  "id": "RAW_58b27b81",
+  "title": "谷歌开源 Gemini CLI 扩展程序助力开发者构建自定义 AI 驱动工作流",
+  "url": "https://www.infoq.com/news/2025/10/gemini-cli-extensions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-18 00:27:00",
+  "author": "Hien Luu",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has released <a href=\"https://blog.google/technology/developers/gemini-cli-extensions/\">Gemini CLI Extensions</a>, an open-source framework that lets developers build and share integrations for the <a href=\"https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/\">Gemini CLI agent</a>. The framework uses playbooks—structured instructions that help the AI interact with external tools such as databases, CI/CD systems, and APIs. With a community <a href=\"https://geminicli.com/extensions/\">catalog</a> of extensions and launch partners including Dynatrace, Elastic, Figma, Shopify, and Stripe, the new framework aims to make the Gemini CLI a central hub for extensible, AI-assisted developer workflows.</p>\n   <p>The extension framework builds on Gemini CLI's existing capabilities through a modular architecture. Each extension includes a built-in 'playbook' that provides the AI with immediate knowledge of how to use connected tools, eliminating complex setup requirements. The framework supports multiple components within a single extension: one or more MCP servers for external tool connectivity, context files like GEMINI.md for providing model instructions, excluded tools for disabling built-in functionality, and custom slash commands for complex prompts.</p>\n   <p style=\"text-align: center\"><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/10/gemini-cli-extensions/news/2025/10/gemini-cli-extensions/en/resources/1graphic-extenions-1760677471876.jpg\" style=\"width: 450px; height: 361px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/gemini-cli-extensions/en/resources/1graphic-extenions-1760677471876.jpg\" rel=\"share\"></p>\n   <p style=\"text-align: center\">Source: <a href=\"https://geminicli.com/extensions/\">Anatomy of an extension</a></p>\n   <p>Extensions enhance the Model Context Protocol by adding intelligence layers beyond raw tool connectivity. While MCP provides basic tool access, Gemini CLI extensions wrap this capability with contextual awareness and personalized execution. The system consults extension playbooks and evaluates environmental context such as local files and git status to execute appropriate tools based on developer intent.</p>\n   <p>At launch, Google is highlighting an open ecosystem that includes both first-party and third-party integrations. Initial partners cover key development domains, including observability and data analysis (Dynatrace, Elastic), design (Figma), security (Snyk), CI/CD (Harness), and API tooling (Postman, Stripe). Google's first-party extensions support key categories: Cloud Infrastructure (Cloud Run, GKE), App Development (Code Review, Flutter, Firebase), and Data/AI (BigQuery, Cloud SQL, Looker), demonstrating its utility across the developer's entire workflow. Google emphasizes that anyone can build and publish extensions, encouraging internal tooling and community contributions alongside commercial offerings.</p>\n   <p>The framework positions Gemini CLI as the center of an open ecosystem where any developer can build integrations. Google has launched a dedicated <a href=\"https://geminicli.com/extensions/browse/\">Extensions page</a> that catalogs available extensions ranked by GitHub popularity. The company provides <a href=\"https://geminicli.com/docs/extensions/#extension-creation\">templates</a> and <a href=\"https://geminicli.com/docs/extensions/getting-started-extensions/\">step-by-step guides</a> for developers interested in creating and sharing custom extensions, enabling both personal workflow optimization and enterprise internal tool integration.</p>\n   <p>Reactions from community:</p>\n   <p>One user shared:</p>\n   <blockquote>I like it so much, infinite potential here and we're just getting started! Amazing work folks!</blockquote>\n   <p>One user asked:</p>\n   <blockquote>How are they different from \"clause code subagents\"?</blockquote>\n   <p>Another one answered:</p>\n   <blockquote>Ah, very different from subagents. Think of extensions as a way to bundle a collection of functionality under a simple install. This could be one or more MCP servers, commands, instructions on how (and when) to utilize said MCP servers and a number of other things. Once Gemini CLI lights up its subagent support in the future you can bet that it'll also land in extensions as well!</blockquote>\n   <p>Google's Gemini CLI extensions enter a competitive landscape where other AI-powered coding assistant CLI tools are also evolving their extensibility approaches. Claude Code supports extensibility through the Model Context Protocol (MCP), offering customization through slash commands, agents, MCP servers, and hooks, with Anthropic recently introducing a <a href=\"https://www.anthropic.com/news/claude-code-plugins\">plugin system</a> that enables users to share custom setups. However, neither OpenAI's Codex CLI nor GitHub Copilot CLI currently offer comparable extension frameworks or third-party integration marketplaces, positioning Google's catalog-based approach as a distinctive feature in the AI-powered CLI space.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google’s Open Source Gemini CLI Extensions Let Developers Build Custom AI-Powered Workflows\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Hien Luu\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/gemini-cli-extensions/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760747220000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌的开源 Gemini CLI 扩展程序框架允许开发者构建和分享自定义 AI 驱动的集成，通过“行动方案”增强开发者工作流。",
+  "oneSentenceSummary": "谷歌的开源 Gemini CLI 扩展程序框架允许开发者构建和分享自定义 AI 驱动的集成，通过“行动方案”增强开发者工作流。",
+  "summary": "谷歌发布了 Gemini CLI 扩展程序，这是一个旨在帮助开发者为 Gemini CLI 代理创建和分享自定义集成的开源框架。该框架引入了“行动方案”，这是一种结构化的指令集，使 AI 能够与数据库、CI/CD 系统和 API 等外部工具无缝交互。该系统基于模块化架构，每个扩展都集成了一个“行动方案”，使 AI 能够立即了解工具的用法，从而避免了复杂的设置过程。该系统通过添加上下文感知来增强模型上下文协议，评估本地文件和 Git 状态等环境因素，以根据开发者的意图执行工具。谷歌正在构建一个开放的生态系统，包含第一方（如 Google Cloud 服务）和第三方集成，合作伙伴包括 Dynatrace、Elastic、Figma 和 Stripe 等。一个专门的社区目录和开发者资源（模板、指南）旨在鼓励广泛采用和贡献，将 Gemini CLI 定位为可扩展的 AI 辅助开发者工作流的中心枢纽，并使其与 Claude Code 和 GitHub Copilot CLI 等竞争对手区分开来。",
+  "mainPoints": [
+    {
+      "point": "Gemini CLI 扩展程序提供了一个开源框架，用于构建自定义 AI 驱动的集成。",
+      "explanation": "该框架允许开发者为 Gemini CLI 代理创建和分享扩展程序，通过与各种外部工具集成，实现个性化的 AI 辅助工作流。"
+    },
+    {
+      "point": "该框架利用 “行动方案” 实现 AI 上下文感知，从而与外部系统进行交互。",
+      "explanation": "“行动方案”是一种结构化的指令集，使 AI 能够立即了解如何使用连接的工具，通过上下文感知增强模型上下文协议，以实现智能执行。"
+    },
+    {
+      "point": "谷歌正在建立一个具有社区目录和第三方支持的开放生态系统。",
+      "explanation": "通过第一方和合作伙伴集成，以及开发者资源，谷歌旨在使 Gemini CLI 成为 AI 辅助开发的核心可扩展平台，从而在市场上脱颖而出。"
+    }
+  ],
+  "keyQuotes": [
+    "谷歌发布了 Gemini CLI 扩展程序，这是一个开源框架，让开发者可以为 Gemini CLI 代理构建和分享集成。",
+    "该框架使用 “行动方案” —— 结构化的指令集，帮助 AI 与数据库、CI/CD 系统和 API 等外部工具进行交互。",
+    "该系统查阅扩展程序的 “行动方案” 并评估环境上下文，例如本地文件和 Git 状态，以根据开发者意图执行适当的工具。",
+    "谷歌鼓励开发者构建和发布扩展程序，无论是内部工具、社区贡献还是商业产品，都将得到支持。",
+    "谷歌基于目录的模式是 AI 驱动的 CLI 领域的一大特色。"
+  ],
+  "tags": [
+    "AI 开发",
+    "开发者工具",
+    "Gemini CLI",
+    "开源",
+    "AI 代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 547,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760747220000,
+  "publishDateStr": "2025-10-18",
+  "publishDateTimeStr": "2025-10-18 00:27:00"
+}

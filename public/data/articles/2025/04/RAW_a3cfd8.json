@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a3cfd8",
+  "title": "AWS 在 Well-Architected 生成式 AI Lens 中推广 “负责任的 AI” 理念",
+  "url": "https://www.infoq.com/news/2025/04/aws-well-architected-genai-lens/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-27 00:00:00",
+  "author": "Rafal Gancarz",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has <a href=\"https://aws.amazon.com/blogs/architecture/announcing-the-aws-well-architected-generative-ai-lens/\">announced the availability of the new Well-Architected Generative AI Lens</a>, which focuses on providing best practices for designing and operating generative AI workloads. The lens is aimed at business leaders, data scientists, architects, and engineers responsible for delivering robust and cost-effective solutions using generative AI. The document offers cloud-agnostic best practices, implementation guidance, and links to additional resources.</p>\n   <p>The Generative IA Lens addresses <a href=\"https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/responsible-ai.html\">responsible AI</a>, acknowledging the new challenges presented by the emergence of AI-driven capabilities and outlining a set of considerations for customers to review and address. The paper highlights the need for ensuring veracity and robustness (i.e., achieving correct system outputs, even with unexpected or adversarial inputs) as particularly important, compared to traditional machine learning solutions.</p>\n   <p>The lens promotes an iterative process for the design, delivery, and operation of generative AI solutions. The six phases of the <a href=\"https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lifecycle.html\">generative AI lifecycle</a> include scoping the impact, selecting and customizing the model, integrating the model into existing applications, and deploying the new AI-driven capability. The final phase involves iterating and improving the capability, closing the iterative loop.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/aws-well-architected-genai-lens/news/2025/04/aws-well-architected-genai-lens/en/resources/1aws-genai-lens-lifecycle-1745760346133.jpeg\" style=\"width: 376px; height: 374px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/aws-well-architected-genai-lens/en/resources/1aws-genai-lens-lifecycle-1745760346133.jpeg\" rel=\"share\"></p>\n   <p><em>The six phases of the generative AI lifecycle (Source: <a href=\"https://aws.amazon.com/blogs/architecture/announcing-the-aws-well-architected-generative-ai-lens/\">AWS Architecture Blog</a>)</em></p>\n   <p>The paper also covers additional challenges to <a href=\"https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/architecture.html\">the data architecture</a> posed by delivering generative AI solutions. The document focuses on three primary use cases: model pre-training, model fine-tuning, and retrieval-augmented generation (RAG). Each of these use cases has different requirements, but overall, they demand mature and adaptable approaches that can support large datasets and complex infrastructure footprints.</p>\n   <p>The authors of the announcement highlight the value offered by the lens:</p>\n   <blockquote>\n    <p>The Generative AI Lens provides a consistent approach for customers to evaluate architectures that use large language models (LLMs) to achieve their business goals. This lens addresses common considerations relevant to model selection, prompt engineering, model customization, workload integration, and continuous improvement.</p>\n   </blockquote>\n   <p>The document covers all six pillars of the Well-Architected Framework and discusses many areas specific to delivering generative AI solutions. It also offers a set of <a href=\"https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/design-principles.html\">design principles</a> for generative AI workflows created on AWS, specifically highlighting the need for controlled autonomy, which is particularly relevant to AI workloads.</p>\n   <p><a href=\"https://www.linkedin.com/in/dpoccia/\">Danilo Poccia</a>, Chief Evangelist (EMEA) at AWS, summarized the announcement in <a href=\"https://x.com/danilop/status/1914640393607532779\">his X post</a>:</p>\n   <blockquote>\n    <p>The lens emphasizes responsible AI practices with clear dimensions for fairness, explainability, privacy, safety, and transparency, recognizing the shared responsibilities between model producers, providers, and consumers.</p>\n   </blockquote>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Promotes Responsible AI in the Well-Architected Generative AI Lens\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Rafal Gancarz\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/aws-well-architected-genai-lens/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1745760900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 发布 Well-Architected 生成式 AI Lens，提供生成式 AI 工作负载设计和运营的最佳实践，强调负责任的 AI 实践。",
+  "oneSentenceSummary": "AWS 发布 Well-Architected 生成式 AI Lens，提供生成式 AI 工作负载设计和运营的最佳实践，强调负责任的 AI 实践。",
+  "summary": "AWS 发布了 AWS Well-Architected 生成式 AI Lens，旨在为设计和运营生成式 AI 工作负载提供最佳实践，帮助用户构建稳定可靠且经济高效的解决方案。该 Lens 面向业务领导者、数据科学家、架构师和工程师，提供云无关的最佳实践、实施指南和资源链接。它强调负责任的 AI，解决 AI 驱动能力带来的新挑战，并概述了一系列需要客户审查和解决的考虑因素，特别强调了确保准确性和鲁棒性的必要性。该 Lens 提倡生成式 AI 解决方案的设计、交付和运营的迭代过程，涵盖了生成式 AI 生命周期的六个阶段，并讨论了交付生成式 AI 解决方案对数据架构提出的额外挑战。该文档侧重于模型预训练、模型微调和检索增强生成（RAG）这三个主要用例。此外，该 Lens 还涵盖了 Well-Architected 框架的所有六个支柱，并提供了一套在 AWS 上创建的生成式 AI 工作流的设计原则，特别强调了受控自主性的必要性。",
+  "mainPoints": [
+    {
+      "point": "Well-Architected 生成式 AI Lens 提供生成式 AI 最佳实践",
+      "explanation": "该 Lens 为设计和运营生成式 AI 工作负载提供云无关的最佳实践和实施指南。它旨在帮助用户构建稳定可靠且经济高效的解决方案。"
+    },
+    {
+      "point": "强调负责任的 AI 实践，关注公平性、可解释性、隐私、安全和透明度",
+      "explanation": "该框架强调在生成式 AI 解决方案中实施 “负责任的 AI” 实践，旨在解决与 AI 系统相关的道德和社会影响。"
+    },
+    {
+      "point": "生成式 AI 生命周期涵盖影响范围界定、模型选择和定制等六个阶段",
+      "explanation": "Lens 概述了生成式 AI 解决方案的迭代过程，涵盖从初始范围界定到持续改进的各个阶段。"
+    }
+  ],
+  "keyQuotes": [
+    "The Generative AI Lens provides a consistent approach for customers to evaluate architectures that use large language models (LLMs) to achieve their business goals.",
+    "This lens addresses common considerations relevant to model selection， prompt engineering， model customization， workload integration， and continuous improvement.",
+    "The lens emphasizes responsible AI practices with clear dimensions for fairness， explainability， privacy， safety， and transparency， recognizing the shared responsibilities between model producers， providers， and consumers."
+  ],
+  "tags": [
+    "AWS",
+    "生成式 AI",
+    "最佳实践",
+    "AI 架构",
+    "负责任的 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 390,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745712000000,
+  "publishDateStr": "2025-04-27",
+  "publishDateTimeStr": "2025-04-27 00:00:00"
+}

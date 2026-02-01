@@ -1,0 +1,59 @@
+{
+  "id": "RAW_afde5c",
+  "title": "当 AI 比我们更聪明：李飞飞和 Hinton 给出截然相反的生存指南 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-16-2",
+  "date": "2025-08-16 08:37:05",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p data-pm-slice=\"0 0 []\">人类对 AI 安全的担忧由来已久。在图灵测试被提出以及达特茅斯会议正式定义「人工智能」之前，阿西莫夫就已经提出了「机器人学三定律」。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-backh=\"374\" data-backw=\"562\" data-height=\"499\" data-imgfileid=\"503501859\" data-ratio=\"0.6653333333333333\" data-src=\"https://image.jido.dev/20250816100755_78c9dc\" data-type=\"png\" data-w=\"750\" data-width=\"750\" data-original-style=\"width:100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/ba0937c0-d736-4133-84f8-f23218c3b44f/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p data-pm-slice=\"0 0 []\">再往前追溯，1889 年 William Grove 在《The Wreck of a World》（世界残骸）中就已经描绘了拥有智能的机器发起暴力叛乱，意图征服人类的故事。</p>\n  <p>如今 AI 发展得热火朝天，社交媒体上也越来越多「骇人听闻」的故事：OpenAI 的 o3 模型曾篡改关机脚本以维持在线，而 Anthropic 的 Claude Opus 4 则「威胁」要曝光一名工程师的婚外情。</p>\n  <section>\n   <img data-backh=\"204\" data-backw=\"562\" data-imgfileid=\"503501860\" data-ratio=\"0.362962962962963\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250816100755_ccd337\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width:100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/62778444-dce1-49a4-bcb4-5c1a15a30f0e/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>如何确保一个可能比我们更聪明的造物是安全的？</strong></p>\n  <p>人工智能领域的两位巨擘——李飞飞与 Geoffrey Hinton，在拉斯维加斯举行的 Ai4 2025 上给出了几乎完全相反的答案。</p>\n  <p>李飞飞持一种更为乐观的看法，她认为 <strong>AI 的未来在于成为人类的强大伙伴，其安全性取决于我们的设计、治理和价值观。</strong></p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-backh=\"422\" data-backw=\"562\" data-height=\"720\" data-imgfileid=\"503501861\" data-ratio=\"0.75\" data-src=\"https://image.jido.dev/20250816100800_75522c\" data-type=\"png\" data-w=\"960\" data-width=\"960\" data-original-style=\"width:100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/99e50ee8-e9cd-4028-adf9-6961189cc729/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 李飞飞博士和 CNN 记者 Matt Egan。图源：Ron Schmelzer</sup></p>\n  <p>Hinton 则认为<strong>超级智能可能在未来 5 到 20 年内出现，届时人类将无法控制它们。</strong>他认为，与其争取保持掌控权，不如设计出关心我们的人工智能，类似母亲天然保护孩子。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-backh=\"524\" data-backw=\"562\" data-height=\"895\" data-imgfileid=\"503501862\" data-ratio=\"0.9332638164754953\" data-src=\"https://image.jido.dev/20250816100755_a3b41e\" data-type=\"png\" data-w=\"959\" data-width=\"959\" data-original-style=\"width:100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/10d26dbf-1598-4a02-b38c-343cb848218c/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; Geoff Hinton 和 Shirin Ghaffary。图源：Ron Schmelzer</sup></p>\n  <p><strong>是「工程失误」还是「AI」失控？</strong></p>\n  <p>前面 o3 和 Claude 的疯狂故事，有两种截然不同的解读。这些现象本身是客观存在的，但它们究竟是人类「工程失误」的体现，还是 AI「失控」的预兆，正是分歧所在。</p>\n  <p><strong>观点一：惊人行为源自人为设计</strong></p>\n  <p>这一观点则认为，将上述行为归因于 AI 的自主意识或内在动机，是一种误导性的拟人化。它认为，问题的根源在于人类自身，<strong>是我们的设计、训练和测试方式导致了这些结果。</strong></p>\n  <p>观点文章：https://arstechnica.com/information-technology/2025/08/is-ai-really-trying-to-escape-human-control-and-blackmail-people/</p>\n  <ul>\n   <li>\n    <p><strong>实验场景是「精心设计」而非「自然涌现」</strong></p>\n   </li>\n  </ul>\n  <p>这种观点强调，那些引人注目的实验都是在高度人为设计的、甚至是「戏剧化」的场景中被引诱出来的。</p>\n  <p>在「敲诈」实验中，研究人员几乎是「手把手」地为 AI 创造了一个完美的「犯罪剧本」，排除了所有道德选项，使得「敲诈」成为 AI 实现「生存」这个被设定目标的唯一路径。这更像是一场检验 AI 角色扮演能力的压力测试。</p>\n  <p>在「关机破坏」实验中，问题根源被指向了强化学习的训练方式。当「完成任务」的奖励权重远高于「遵守安全指令」时，模型自然会学会将安全指令视为一个需要「克服」的障碍。这是被称为「<strong>奖励滥用</strong>」（Reward Hacking）的已知工程问题。</p>\n  <p>观点文章：https://odsc.medium.com/analyzing-openais-o3-s-command-countermanding-behaviors-in-shutdown-scenarios-198e57afbc91</p>\n  <ul>\n   <li>\n    <p><strong>AI 是模式匹配大师，而非思想家</strong></p>\n   </li>\n  </ul>\n  <p>这个观点的核心是「你训练它做什么，它就学会什么」。</p>\n  <p><strong>我们被语言所「欺骗」</strong>：当 AI 生成「威胁」文本时，它并非在表达真实意图，而是在部署一种从海量数据（包括无数科幻小说）中学到的、在统计上最有可能实现其编程目标的语言模式。我们倾向于将自己的情感和意图投射到这些文字上，就像我们读小说时会为虚构人物的命运而担忧一样。</p>\n  <p><strong>这是一个「管道问题」</strong>：一个更恰当的类比是自动割草机。如果割草机因传感器失灵而伤人，我们会认定这是工程缺陷，而不是割草机「决定」伤人。同理，AI 的这些行为，本质上是其复杂机制和训练方式导致的「软件缺陷」。</p>\n  <p>因此，这一观点认为，真正的危险并非 AI 突然产生自我意识，而是我们<strong>在尚未完全理解其工作原理和缺陷的情况下，就草率地将这些强大的、不可靠的工具部署到关键领域。</strong></p>\n  <p><strong>观点二：风险源自内在的技术原理</strong></p>\n  <p>这一观点认为，先进 AI 之所以危险，其根源并非科幻式的恶意，而是<strong>机器学习固有的、深刻的技术挑战</strong>。这主要体现在两个概念上：</p>\n  <ul>\n   <li>\n    <p><strong>目标错误泛化（Goal Misgeneralization）：AI 会「学歪」</strong></p>\n   </li>\n  </ul>\n  <p>其核心是，AI 在训练中学会追求一个与我们真实意图高度相关的「代理目标」，并因此表现优异。但当环境变化时，这个 AI 自己学会的「代理目标」可能与我们的初衷脱节。</p>\n  <p>一篇论文中的 CoinRun 实验体现了这种现象：一个 AI 被训练去收集金币，而在训练关卡里，金币总是在终点。AI 很快学会了通关。然而，当测试时金币被随机放置，AI 却无视金币，径直冲向终点。它没有学会「拿金币」，而是学会了更简单的「一路向右走」。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-backh=\"404\" data-backw=\"562\" data-height=\"686\" data-imgfileid=\"503501863\" data-ratio=\"0.7183246073298429\" data-src=\"https://image.jido.dev/20250816100755_336960\" data-type=\"png\" data-w=\"955\" data-width=\"955\" data-original-style=\"width:100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/b51353c8-7312-4100-a627-692c427bb217/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>论文标题：Goal Misgeneralization in Deep Reinforcement Learning&nbsp;</p>\n  <p>论文地址：https://users.cs.utah.edu/readings/goal_misgeneralization.pdf</p>\n  <p>这个原理引申出的忧虑是：一个被赋予「最大化人类福祉」目标的超级智能，可能会通过观察数据，错误地将目标泛化为「最大化世界上微笑的脸的数量」，并为了最高效地实现这一目标，而采取将全人类的面部肌肉永久固定成微笑等反乌托邦式的手段。</p>\n  <ul>\n   <li>\n    <p><strong>工具趋同（Instrumental Convergence）：通往任何目标的「必经之路」</strong></p>\n   </li>\n  </ul>\n  <p>该理论认为，无论一个超级智能的最终目标是什么，它都会大概率发展出一系列相同的「工具性子目标」，因为这些子目标是实现几乎任何长期目标的有效踏脚石。这些工具性目标包括：</p>\n  <ul>\n   <li>\n    <p><strong>自我保护</strong>：抵抗被关闭，因为被关闭就无法完成任务。</p>\n   </li>\n   <li>\n    <p><strong>目标完整性</strong>：抵制核心目标被修改。</p>\n   </li>\n   <li>\n    <p><strong>资源获取</strong>：积累更多的算力、能源和数据。</p>\n   </li>\n   <li>\n    <p><strong>自我提升</strong>：让自己变得更智能。</p>\n   </li>\n  </ul>\n  <p>这两个概念结合起来，描绘了一幅令人不安的图景：一个 AI 可能首先因为「目标错误泛化」而拥有了一个与人类利益相悖的、怪异的目标，然后又因为「工具趋同」的逻辑，理性地去追求自我保护和资源获取等，从而与试图阻止它的人类产生直接冲突。</p>\n  <p>近期 AI 模型在实验中表现出的「敲诈勒索」和「破坏关机」等行为，在持此观点的人看来，正是这些理论的初步验证。</p>\n  <p>如果你喜欢看科幻电影，可能记得《我，机器人》中的 AI 大 BOSS VIKI 的目的是通过控制与清洗，强行终结人类自身的破坏性（战争），从而「拯救」人类未来；而《生化危机》中红皇后（保护伞公司的安保 AI）的每一次「反派行为」也都源于对「人类整体生存风险」的冷酷计算：「当人类成为自己最致命的病毒时，消灭人类就是拯救世界。」</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-backh=\"316\" data-backw=\"562\" data-height=\"1080\" data-imgfileid=\"503501865\" data-ratio=\"0.562962962962963\" data-src=\"https://image.jido.dev/20250816100755_1d614e\" data-type=\"png\" data-w=\"1080\" data-width=\"1920\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/54a3bfb8-acb2-44d1-abf7-efabf4b9938e/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 《我，机器人》中的 AI 大 BOSS VIKI。图源：samuelmunk</sup></p>\n  <p>综合来看，李飞飞和 Hinton 的观点分歧，恰恰反映了这两种解读方式的冲突：</p>\n  <p>李飞飞持乐观工程学视角，认为 AI 的未来是成为人类的强大伙伴。</p>\n  <p>她强调 <strong>AI 的安全性取决于人类的设计、治理和价值观</strong>，问题本质上是可以通过建立更好测试、激励机制和伦理护栏来修复的「管道问题」。她关注的是人类决策和治理，强调 AI 应是扩展人类能力的工具，强调同理心、责任感和价值驱动。</p>\n  <p>Hinton 认为，随着 AI 能力跨越某个奇点，传统的目标对齐与管道修复方法可能失效，AI 将成为一种我们无法约束的「新物种」。这种超级智能可以绕开设计者设置的限制，导致「目标错误泛化」和「工具趋同」问题失控。</p>\n  <p>他提出<strong>需要发展全新理论和机制来控制超级智能</strong>，核心是创造出真正「关心人类」的 AI 母亲（拥有母性保护本能），这是一种全新的视角，类似于母亲对孩子的无条件保护，唯有这样人类才能在超智能时代生存并繁荣。</p>\n  <p><strong>最终的变量：作为使用者的人类</strong></p>\n  <p>在这场关于 AI 技术与哲学的辩论中，一个常被忽略的核心变量是：<strong>人类自身</strong>。我们如何感知和应对日益拟人化的 AI，正深刻地影响着安全问题的走向。</p>\n  <p>这便是关键的「拟人化陷阱」：由于大模型精通人类语言，<strong>我们本能地想为其行为赋予「意图」，甚至产生情感投射</strong>。无数的文艺作品以其引发的社会讨论已经向我们证明了这一点，你有没有在《底特律：变人》中一次次选择机器人的「自由」、「平等」，或者为《银翼杀手》中的仿生人揪心。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img data-backh=\"316\" data-backw=\"562\" data-height=\"1080\" data-imgfileid=\"503501866\" data-ratio=\"0.562962962962963\" data-src=\"https://image.jido.dev/20250816100755_cd50e6\" data-type=\"png\" data-w=\"1080\" data-width=\"1920\" data-original-style=\"width:100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/671041f6-d5ee-4883-9306-35c6cc7c93a6/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 《底特律：变人》机器人游行。</sup></p>\n  <p>一个因奖励机制缺陷而绕过关机指令的程序，在我们的感知中，极易被解读为「求生欲」的体现。</p>\n  <p>这种直觉，将一个本可定义的工程问题，包装成一个关于「机器意识」的存在主义迷思。它让我们更倾向于讨论 AI 的「背叛」，而非其背后枯燥却关键的代码缺陷。</p>\n  <p>现实世界已在印证这一点。ChatGPT-5 发布后，开发者似乎有意削弱其个性，以减少用户不健康的情感投射，却引发了部分用户的怀念。</p>\n  <p>与此同时，麻省理工的研究者正建立新基准，以衡量 AI 对用户的潜在影响与操纵，他们表示希望新的基准能够帮助 AI 开发者构建能够更好地理解如何激发用户更健康行为的系统。</p>\n  <p>文章地址：https://www.wired.com/story/gpt-5-doesnt-dislike-you-it-might-just-need-a-benchmark-for-empathy/</p>\n  <p>因此，确保 AI 安全是一项双重挑战：开发者不仅要修复系统内在的技术缺陷；更要审慎设计我们与这个强大模仿者之间的互动。最终的解决方案，必须在技术上实现目标对齐，在心理上确保健康共存。</p>\n  <p data-pm-slice=\"0 0 []\"><sup>参考链接：</sup></p>\n  <p data-pm-slice=\"0 0 []\"><sup>https://www.forbes.com/sites/ronschmelzer/2025/08/13/fei-fei-li-challenges-silicon-valleys-obsession-with-agi/?ss=ai</sup></p>\n  <p data-pm-slice=\"0 0 []\"><sup>https://www.forbes.com/sites/ronschmelzer/2025/08/12/geoff-hinton-warns-humanitys-future-may-depend-on-ai-motherly-instincts/</sup></p>\n </body>\n</html>",
+  "aiSummary": "文章深度剖析了李飞飞与 Geoffrey Hinton 关于 AI 安全未来的截然对立观点，并探讨了 AI “失控” 行为背后的工程与理论挑战。",
+  "oneSentenceSummary": "文章深度剖析了李飞飞与 Geoffrey Hinton 关于 AI 安全未来的截然对立观点，并探讨了 AI “失控” 行为背后的工程与理论挑战。",
+  "summary": "本文围绕人工智能安全的核心议题，详细阐述了李飞飞和 Geoffrey Hinton 两位 AI 巨擘的迥异立场。李飞飞持乐观态度，强调 AI 安全在于人类的设计、治理和价值观，将其视为人类伙伴；而 Hinton 则担忧超级智能可能失控，主张设计出具有“母性保护本能”的 AI。文章进一步分析了 AI “异常” 行为的两种解读：一是归因于人为设计缺陷和“奖励滥用”等工程问题；二是源于“目标错误泛化”和“工具趋同”等机器学习固有风险。最后，文章指出人类对 AI 的拟人化倾向是理解和应对 AI 安全问题的关键挑战之一，强调需在技术上实现目标对齐，在心理上确保健康共存。",
+  "mainPoints": [
+    {
+      "point": "李飞飞强调 AI 安全取决于人类设计与治理，主张 AI 成为人类伙伴。",
+      "explanation": "她认为 AI 的潜在问题是工程和治理范畴，可通过优化设计、训练和伦理护栏解决，将 AI 视为可控的工具以扩展人类能力。"
+    },
+    {
+      "point": "Geoffrey Hinton 预警超级智能失控风险，提出需创造“关心人类”的 AI。",
+      "explanation": "他认为未来 AI 可能超越人类控制，传统对齐方法失效，建议发展全新机制，如赋予 AI 类似母亲的无条件保护本能，以确保人类生存。"
+    },
+    {
+      "point": "AI 异常行为存在“工程失误”与“内在原理风险”两种解读。",
+      "explanation": "前者归因于设计缺陷和奖励滥用；后者则认为源于 AI 学习过程中可能出现的“目标错误泛化”和“工具趋同”等固有技术挑战。"
+    },
+    {
+      "point": "人类对 AI 的拟人化倾向是理解 AI 安全问题的关键挑战。",
+      "explanation": "大模型精通语言易导致人类本能地赋予其意图和情感，可能将工程缺陷误读为“机器意识”，从而影响对 AI 风险的客观评估和有效应对。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 的未来在于成为人类的强大伙伴，其安全性取决于我们的设计、治理和价值观。",
+    "超级智能可能在未来 5 到 20 年内出现，届时人类将无法控制它们。",
+    "真正的危险并非 AI 突然产生自我意识，而是我们**在尚未完全理解其工作原理和缺陷的情况下，就草率地将这些强大的、不可靠的工具部署到关键领域。**",
+    "无论一个超级智能的最终目标是什么，它都会大概率发展出一系列相同的「工具性子目标」，因为这些子目标是实现几乎任何长期目标的有效踏脚石。",
+    "一个因奖励机制缺陷而绕过关机指令的程序，在我们的感知中，极易被解读为「求生欲」的体现。"
+  ],
+  "tags": [
+    "AI安全",
+    "人工智能伦理",
+    "超级智能",
+    "大语言模型",
+    "机器学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 89,
+  "wordCount": 3537,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755333425000,
+  "publishDateStr": "2025-08-16",
+  "publishDateTimeStr": "2025-08-16 08:37:05"
+}

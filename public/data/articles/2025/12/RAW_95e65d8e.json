@@ -1,0 +1,58 @@
+{
+  "id": "RAW_95e65d8e",
+  "title": "Cloudflare 开源 tokio-quiche，助力 Rust 更轻松开发 QUIC 和 HTTP/3 应用",
+  "url": "https://www.infoq.com/news/2025/12/quic-http3-rust/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-27 08:08:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://blog.cloudflare.com/async-quic-and-http-3-made-easy-tokio-quiche-is-now-open-source/\">Cloudflare has open-sourced </a>tokio-quiche, an asynchronous <a href=\"https://datatracker.ietf.org/doc/rfc9000/\">QUIC</a> and <a href=\"https://datatracker.ietf.org/doc/html/rfc9114\">HTTP/3</a> Rust library that wraps its battle-tested quiche implementation with the Tokio runtime to simplify the development of high-performance QUIC applications. The library was used internally to back the edge services, the Oxy HTTP proxies, or <a href=\"https://datatracker.ietf.org/wg/masque\">MASQUE</a>-based tunnels, replacing Wireguard-based tunnels in the WARP client.</p>\n   <p>Tokio-quiche is now available as an open-source <a href=\"https://crates.io/crates/tokio-quiche\">crate on crates.io</a>, with its source hosted in the <a href=\"https://github.com/cloudflare/quiche/tree/master/tokio-quiche\">quiche repository</a>. The library combines the sans-io QUIC/HTTP/3 implementation in quiche with Tokio’s async runtime, providing an integration layer that has been refined and used to handle millions of HTTP/3 requests per second in systems such as Apple iCloud Private Relay, next-generation Oxy-based proxies, and WARP’s MASQUE client.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/quic-http3-rust/news/2025/12/quic-http3-rust/en/resources/17image1-1766813468098.png\" style=\"width:100%;height:1540px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/quic-http3-rust/en/resources/17image1-1766813468098.png\" rel=\"share\"></p>\n   <p><em>Library Architecture Diagram. Source: cloudflare blog</em></p>\n   <p>The original quiche library was designed as a low-level, sans-io QUIC and HTTP/3 implementation that could be embedded in diverse environments, but wiring it into real applications required implementing UDP I/O, connection management, and the event loop by hand. tokio-quiche addresses this by providing an async integration with Tokio: it manages UDP sockets, routes datagrams to connections, and drives quiche’s state machine so developers can focus on application logic rather than transport plumbing.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/quic-http3-rust/news/2025/12/quic-http3-rust/en/resources/17image2-1766813468098.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/quic-http3-rust/en/resources/17image2-1766813468098.png\" rel=\"share\"></p>\n   <p><em>Tokio-quiche Internal Data Flow. Source: cloudflare blog</em></p>\n   <p>Internally, tokio-quiche uses an actor model: an inbound packet router and per-connection IO worker actors move packets between the socket and quiche, while encapsulating state and communication via channels. On top of this, the library exposes an ApplicationOverQuic trait that abstracts the execution of application protocols over QUIC. It ships an H3Driver implementation (with server and client variants) that turns quiche’s raw HTTP/3 events into higher-level async streams suitable for building HTTP/3 servers and clients.</p>\n   <p>Cloudflare notes that tokio-quiche powers internal workloads, including HTTP/3 proxies and MASQUE-based tunnels, effectively replacing WireGuard tunnels with QUIC-based ones for WARP. By releasing tokio-quiche, Cloudflare aims to make it easier for the Rust ecosystem to adopt HTTP/3 and QUIC—supporting use cases such as DNS-over-QUIC, custom VPNs, and HTTP servers—and to align external integrations with the same stack used in its own edge services.</p>\n   <p>The maintainers emphasise that tokio-quiche is a foundational building block rather than a complete HTTP/3 framework: it exposes low-level protocol capabilities and example client/server event loops, with plans to open-source higher-level HTTP client and server abstractions that currently power Oxy and WARP. Cloudflare also hints at upcoming posts covering topics like actor patterns with Tokio, UDP GRO/GSO, and a new QUIC-based service handling millions of requests per second on top of tokio-quiche.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Open Sources tokio‑quiche, Promising Easier QUIC and HTTP/3 in Rust\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/quic-http3-rust/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766822880000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 已开源 tokio-quiche，一个 Rust 库，它将 Cloudflare 高性能的 quiche QUIC/HTTP/3 实现与 Tokio 异步运行时集成，以简化 QUIC 应用开发。",
+  "oneSentenceSummary": "Cloudflare 已开源 tokio-quiche，一个 Rust 库，它将 Cloudflare 高性能的 quiche QUIC/HTTP/3 实现与 Tokio 异步运行时集成，以简化 QUIC 应用开发。",
+  "summary": "Cloudflare 已开源 tokio-quiche，这是一个 Rust 库，旨在通过将其久经实战考验的 quiche 实现与 Tokio 异步运行时集成，从而简化高性能 QUIC 和 HTTP/3 应用程序的开发。该库已经为 Cloudflare 的内部服务提供支持，例如边缘代理和 WARP 的基于 MASQUE 的隧道，它抽象并屏蔽了 UDP I/O、连接管理和 QUIC 状态机处理的复杂性。在内部，tokio-quiche 采用 Actor 模型进行高效的数据包路由和连接管理，并提供一个 ApplicationOverQuic trait（应用程序通过 QUIC 进行通信的接口）用于协议抽象，包括一个 H3Driver 用于构建 HTTP/3 服务器和客户端。此次发布旨在通过提供一个强大的基础构建块，促进 QUIC 和 HTTP/3 在 Rust 生态系统中的更广泛采用，以应对各种应用场景，例如 DNS-over-QUIC 和自定义 VPN。",
+  "mainPoints": [
+    {
+      "point": "tokio-quiche 简化 Rust 中的 QUIC 和 HTTP/3 应用程序开发。",
+      "explanation": "通过将 Cloudflare 的高性能 quiche 库与 Tokio 异步运行时封装，它抽象并屏蔽了 UDP I/O 和连接管理等复杂的低级网络细节，使开发人员能够专注于应用程序逻辑。"
+    },
+    {
+      "point": "该库久经实战考验，并用于 Cloudflare 的生产系统。",
+      "explanation": "已成功部署在处理数百万 HTTP/3 请求的系统中，例如 Apple iCloud 专用代理、Oxy 代理和 WARP，证明其在大规模环境下的健壮性和性能。"
+    },
+    {
+      "point": "它为高级网络应用程序提供了基础构建模块。",
+      "explanation": "虽然不是一个完整的框架，但 tokio-quiche 暴露了低级协议功能，并促进了自定义 HTTP/3 服务器、客户端以及其他基于 QUIC 的服务（如 DNS-over-QUIC）的构建。"
+    },
+    {
+      "point": "内部架构利用 Actor 模型实现高效并发。",
+      "explanation": "利用入站数据包路由器和按连接划分的 IO 工作 Actor，以及一个 `ApplicationOverQuic` trait 和 `H3Driver`，来管理状态并简化高吞吐量数据流。"
+    }
+  ],
+  "keyQuotes": [
+    "tokio-quiche 通过提供与 Tokio 的异步集成来解决这个问题：它管理 UDP 套接字，将数据报路由到连接，并驱动 quiche 的状态机，这样开发人员就可以专注于应用程序逻辑，而不是底层传输机制的繁琐工作。",
+    "该库将 quiche 中无 I/O 的 QUIC/HTTP/3 实现与 Tokio 的异步运行时相结合，提供了一个经过完善并用于处理每秒数百万 HTTP/3 请求的集成层。",
+    "通过发布 tokio-quiche，Cloudflare 旨在让 Rust 生态系统更容易采用 HTTP/3 和 QUIC——支持 DNS-over-QUIC、自定义 VPN 和 HTTP 服务器等多种应用场景。",
+    "维护者强调 tokio-quiche 是一个基础构建块，而不是一个完整的 HTTP/3 框架：它暴露了低级协议功能以及示例客户端/服务器事件循环。"
+  ],
+  "tags": [
+    "Rust",
+    "QUIC",
+    "HTTP/3",
+    "Tokio",
+    "Cloudflare"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 414,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766822880000,
+  "publishDateStr": "2025-12-27",
+  "publishDateTimeStr": "2025-12-27 08:08:00"
+}

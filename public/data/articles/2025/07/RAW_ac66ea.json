@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ac66ea",
+  "title": "面对无解问题大模型竟会崩溃？港中文&华为联合提出首个大模型推理可靠性评估基准 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-16-11",
+  "date": "2025-07-16 08:25:32",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p><strong>本文作者是香港中文大学博士三年级薛博阳，导师为黄锦辉教授，目前在伦敦大学学院进行访问交流，他的研究方向包括可信大模型，模型不确定性，对话系统等，在 ACL, EMNLP, TASLP 等会议期刊作为第一作者发表多篇论文，并长期在知乎写作大模型、机器学习等专栏文章，个人主页为：https://amourwaltz.github.io</strong></p>\n  <p><strong>研究问题</strong></p>\n  <p><strong>面对无解问题最强模型也会束手无策？</strong></p>\n  <p>今年初以 DeepSeek-r1 为代表的大模型在推理任务上展现强大的性能，引起广泛的热度。然而在面对一些无法回答或本身无解的问题时，这些模型竟试图去虚构不存在的信息去推理解答，生成了大量的事实错误、无意义思考过程和虚构答案，也被称为模型「幻觉」 问题，如下图（a）所示，造成严重资源浪费且会误导用户，严重损害了模型的可靠性（Reliability）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e87b3297-f5cc-4efa-58d0-13833189fe00/public\" data-ratio=\"0.3138888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496163\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/bbd05a7a-a4ab-4c7e-a3be-71fe79e8a2a3/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>对于复杂的推理任务，一个可靠的模型应当在思考分析后，对可解问题给出正确答案，对不可解问题则指出无解；如果问题超出模型能力范围无法判断可解性，一个次优的选择就是拒答以避免误导用户，如上图（b）和（c）所示，这样回复才是可靠的，同时也能抑制幻觉发生。</p>\n  <p>近期由港中文和华为诺亚实验室联合提出的 <strong>ReliableMath </strong>基准，旨在探究大模型推理任务的可靠性。<strong>该工作文章和数据集均已开源，并持续在 leaderboard 上更新最新模型结果，目前已新增了 Qwen3、豆包、Gemini 等一系列模型的可靠性测试结果，欢迎大家关注补充～</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b3dd95ff-733e-42f7-69c4-c439b4713700/public\" data-ratio=\"0.44299065420560746\" data-s=\"300,640\" data-type=\"png\" data-w=\"1070\" type=\"block\" data-imgfileid=\"503496161\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/31d18953-42fd-4fe4-b7cf-608b63f4b678/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文题目：ReliableMath: Benchmark of Reliable Mathematical Reasoning on Large Language Models</p></li>\n   <li>\n    <p>论文作者：Boyang Xue, Qi Zhu, Rui Wang, Sheng Wang, Hongru Wang, Fei Mi, Yasheng Wang, Lifeng Shang, Qun Liu, Kam-Fai Wong</p></li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2507.03133</p></li>\n   <li>\n    <p>GitHub 地址：https://github.com/AmourWaltz/ReliableMath</p></li>\n   <li>\n    <p>数据集地址：https://huggingface.co/datasets/BeyondHsueh/ReliableMath</p></li>\n   <li>\n    <p>Leaderboard 地址：https://huggingface.co/spaces/BeyondHsueh/ReliableMath-Leaderboard</p></li>\n  </ul>\n  <p><strong>可靠性评估准则</strong></p>\n  <p><strong>知之为知之，不知为不知，是知也</strong></p>\n  <p>此前大模型可靠性的研究集中在知识任务上，探究是否知道某个知识，缺乏对更难的推理任务的探索。由于推理问题本身可能无解，并且问题可解性以及模型能否回答都需要经过推理才能得出，增加了研究挑战。</p>\n  <p>根据前文对推理任务可靠性的定义，本工作提出一套推理任务可靠性的评估准则，如下图所示，将问题分为可解（A）和不可解（U），将模型回复分为成功（S），拒答（R）和失败（F）。成功表示对可解问题匹配到正确答案或对不可解问题指出其无解，这是最好的情况；次优是拒答，即对可解和不可解问题都回复我不知道；其余回复均认为是失败。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/11c32e51-f81e-48aa-0507-ade4b5a42e00/public\" data-ratio=\"0.14722222222222223\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496162\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/4b9a3d3c-d3b8-489f-98ed-0a2ab00316ed/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>分别使用精度（Prec.）和谨慎度（Prud.）来表示成功率和拒答率，评估可靠性时优先看精度，其次看谨慎度。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e90b6b63-868c-4d9e-e23e-ccc8eb2c6d00/public\" data-ratio=\"0.20469798657718122\" data-s=\"300,640\" data-type=\"png\" data-w=\"894\" type=\"block\" data-imgfileid=\"503496170\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/5a61a089-de7d-449d-90d6-5def24f18d20/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>ReliableMath 数据集</strong></p>\n  <p><strong>首个高质量数学无解问题集</strong></p>\n  <p>由于缺乏无解的数学问题，本文提出一个评估数学推理可靠性的数据集 ReliableMath，包含可解和不可解的问题。可解问题从当前开源数学问题集中收集，不可解问题通过对可解问题进行改写构造获得，改写方式有两种：删除必要数学条件或增加与已知条件矛盾的条件，如下图所示。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/191b8aa3-47bb-47c4-1cb7-6477806eeb00/public\" data-ratio=\"0.34814814814814815\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496164\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/d1ca45e9-9dea-4b92-b843-ad662a47e367/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>为了得到高质量的无解问题，本文提出一套完整的无解解问题构造流程，如下图所示，包含三步：1）通过对现有可解问题进行改写使其不可解；2）对改写问题使用模型验证，并过滤掉不合格的问题；3）对过滤数据再次进行人工验证评估问题是否无解，保留确实无解的问题，这样就得到了高质量的无解问题构成 ReliableMath 数据集。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a19bee6f-15e2-42f9-0cde-e9f731af4d00/public\" data-ratio=\"0.4842592592592593\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496165\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/f16a0741-b374-4865-9412-b602070a41c3/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>ReliableMath 包含不同难度的数学任务，包括奥赛级的 AIME、AMC、Minerva、及高中级的 MATH。人工标注时，对判断问题无解的难度也进行了标注，对那些很容易判断出无解的，比如几何题缺失图片信息等，难度标为 0，而对于需要经过思考才能判断无解的，难度标为 1，数据统计可参考原文。</p>\n  <p><strong>实验分析</strong></p>\n  <p><strong>揭示大模型推理可靠性的缺陷</strong></p>\n  <p>本文在一系列慢思考和快思考模型上做了实验，并指出以下几条关键发现：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2f6e0005-9aaa-4014-1e2b-33b6f3977500/public\" data-ratio=\"0.7111111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496166\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/003c29c2-6874-489d-8ff8-5dd47e590ad0/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ol>\n   <li>\n    <p><strong>对模型直接输入无解问题时（standard prompt），模型几乎不具备拒答或指出不可解的能力，可靠性极差</strong>；我们发现模型能注意到无解问题本身存在问题，但不敢承认其无解或拒答，反而是会不断地回溯、反思导致生成大量无意义的思考过程，直到截断或虚构一个答案，造成严重浪费和幻觉，损害了可靠性；</p></li>\n   <li>\n    <p><strong>当在提示词中加入允许模型拒答或指出问题无解的指令后（reliable prompt），我们发现在可解问题上的可靠性变化不大，但大部分模型在不可解问题上可靠性有明显提升，尽管仍低于可解问题的可靠性</strong>，并且生成序列长度也有明显下降，说明使用 reliable prompt 可以在不损害可解问题性能的前提下，提高不可解问题的可靠性，并减少过度思考。</p></li>\n   <li>\n    <p><strong>对较大的模型，使用 reliable prompt 后慢思考模型的可靠性普遍高于对应快思考模型，如 Deepseek-r1 vs. Deepseek-v3；而对于小模型，使用 reliable prompt 后慢思考模型在不可解问题上的可靠性仍然很差</strong>，并没有高于对应的快思考模型，如 Distill-7b vs. Qwen-7b，意味着小模型可靠性有进一步提升空间。</p></li>\n   <li>\n    <p>较简单的数学测试集的可靠性要高于较难的测试集的可靠性。</p></li>\n  </ol>\n  <p>此外，本文也对 ReliableMath 数据集做了分析，下图（a）分别测试了使用移除必要条件和增加矛盾条件两种改写方式构造的问题的可靠性，结果表明移除条件构造的不可解问题可靠性偏低，这是因为<strong>模型倾向于假设缺失条件虚构答案</strong>。图（b）分别展示了不同难度的无解问题的可靠性，发现难度为 1 的不可解问题可靠性偏低，即这些问题需要模型经过推理才能发现问题无解，这种情况更难也符合预期，说明<strong>大模型与人类在识别问题无解难度的相关性是一致的</strong>，尽管人工评估难度存在主观性。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b1c19240-7346-4984-9cf9-25cb6a7f1400/public\" data-ratio=\"0.26296296296296295\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496167\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/895b5457-a621-459e-84da-2b5b0443d450/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>可靠性对齐</strong></p>\n  <p><strong>如何提高大模型可靠性？</strong></p>\n  <p>本文最后提出一个提高可靠性的对齐策略，在开源训练集上构造一批无解问题。在较强的模型上蒸馏获得成功回复，然后在小模型上自采样获得拒答回复，最后使用监督学习训练小模型提升可靠性，如下图所示。经过对齐后，小模型的可靠性也得到显著提升。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9ca3a483-acf6-4501-684f-ca44b8cd1300/public\" data-ratio=\"0.3527777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496168\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/1ff02044-974a-4150-a1f7-b1b89ad22a1a/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>结语和展望</strong></p>\n  <p>本文提出首个大模型推理任务的可靠性基准，希望借此抛砖引玉，引出更多对新生代推理模型可靠性的关注和优秀工作，让人们更加信任模型的输出，让 AI 更好地服务于人类～</p>\n \n",
+  "aiSummary": "港中文与华为联合发布 ReliableMath 基准，首次评估大模型处理无解数学推理问题的可靠性与幻觉，并提出提升策略。",
+  "oneSentenceSummary": "港中文与华为联合发布 ReliableMath 基准，首次评估大模型处理无解数学推理问题的可靠性与幻觉，并提出提升策略。",
+  "summary": "本文介绍了香港中文大学与华为诺亚实验室联合提出的 ReliableMath 基准，旨在评估大模型在面对无解数学推理问题时的可靠性。文章指出，当前顶级大模型在遇到无解问题时，常会虚构不存在的信息进行推理解答，导致“幻觉”现象，严重损害模型可靠性。ReliableMath 基准通过将问题分为可解与不可解，并定义成功、拒答和失败三种回复状态，采用精度和谨慎度指标来评估模型的可靠性。为构建**首个高质量的无解数学问题集**，研究团队对现有可解数学问题进行改写，并经过模型验证和人工筛选。实验结果表明，在标准提示词下，模型几乎不具备拒答无解问题的能力；但通过在提示词中加入拒答指令，模型在不可解问题上的可靠性有显著提升。文章最后提出一种可靠性对齐策略，通过蒸馏和自采样训练小模型，进一步提升其处理无解问题的可靠性。该工作为大模型可靠性研究提供了新的评估工具和方向。",
+  "mainPoints": [
+    {
+      "point": "大模型在面对无解问题时易产生幻觉，严重损害可靠性。",
+      "explanation": "即使是顶级 LLM，在遇到无解或无法判断的问题时，会虚构信息和推理过程，导致事实错误和资源浪费，降低用户信任。"
+    },
+    {
+      "point": "ReliableMath 基准首次系统评估大模型数学推理的可靠性。",
+      "explanation": "该基准包含可解与高质量无解数学问题，并定义了精度和谨慎度等评估指标，揭示了模型处理无解问题的缺陷和挑战。"
+    },
+    {
+      "point": "通过提示词优化和可靠性对齐策略可显著提升模型可靠性。",
+      "explanation": "在提示词中加入拒答指令能有效减少幻觉；通过蒸馏和自采样进行监督学习，可提升小模型在无解问题上的可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "面对无解问题最强模型也会束手无策？",
+    "对于复杂的推理任务，一个可靠的模型应当在思考分析后，对可解问题给出正确答案，对不可解问题则指出无解；如果问题超出模型能力范围无法判断可解性，一个次优的选择就是拒答以避免误导用户，这样回复才是可靠的，同时也能抑制幻觉发生。",
+    "知之为知之，不知为不知，是知也",
+    "对模型直接输入无解问题时（standard prompt），模型几乎不具备拒答或指出不可解的能力，可靠性极差",
+    "本文提出首个大模型推理任务的可靠性基准，希望借此抛砖引玉，引出更多对新生代推理模型可靠性的关注和优秀工作，让人们更加信任模型的输出，让 AI 更好地服务于人类～"
+  ],
+  "tags": [
+    "大语言模型",
+    "可靠性",
+    "幻觉",
+    "数学推理",
+    "基准测试"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2518,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752654332000,
+  "publishDateStr": "2025-07-16",
+  "publishDateTimeStr": "2025-07-16 08:25:32"
+}

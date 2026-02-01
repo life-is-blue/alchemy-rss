@@ -1,0 +1,54 @@
+{
+  "id": "RAW_09c45e",
+  "title": "AI 大佬曼宁转赞，MetaGPT 团队首提「Atom of Thoughts」，原子化思考让 4o-mini 暴打推理模型？",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-16-2",
+  "date": "2025-03-15 16:03:00",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <section>\n   <strong>AoT 作者团队来自 MetaGPT 开源社区。第一作者为香港科技大学（广州）的滕枫蔚，通讯作者为 DeepWisdom 创始人兼 CEO 吴承霖。团队还包括 DeepWisdom 研究员于兆洋、中国人民大学的石泉、香港科技大学（广州）的博士生张佳钇和助理教授骆昱宇。</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503475970\" data-ratio=\"0.30462962962962964\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94821459-faeb-47dc-f9c0-35b250b49d00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/aa796b9c-0b3f-4157-a330-effd8056f0a0/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <section>\n     论文标题：Atom of Thoughts for Markov LLM Test-Time Scaling\n    </section></li>\n   <li>\n    <section>\n     论文地址：https://arxiv.org/abs/2502.12018\n    </section></li>\n   <li>\n    <section>\n     项目地址：https://github.com/qixucen/atom\n    </section></li>\n  </ul>\n  <section>\n   <strong>从 “长链推理” 到 “原子思维”：AoT 的诞生</strong>\n  </section>\n  <section>\n   大语言模型（LLM）近年来凭借训练时扩展（train-time scaling）取得了显著性能提升。然而，随着模型规模和数据量的瓶颈显现，测试时扩展（test-time scaling）成为进一步释放潜力的新方向。然而，无论是思维链（CoT）、思维树（ToT）等提示策略和推理框架，还是 OpenAI o1/o3 和 DeepSeek-R1 等推理模型，在推理时都过度依赖完整历史信息，导致计算资源浪费，同时冗余信息干扰有效推理。\n  </section>\n  <section>\n   具体来说，基于链的方法每进行一步推理，都需回顾已有的完整链条；基于树的方法则需要追踪祖先和同层节点；基于图的方法允许节点任意连接，进一步加重了历史信息依赖，导致计算复杂度上升。随着推理规模扩大，特别是以 OpenAI 的 o1/o3 和 DeepSeek-R1 为代表的推理模型，飙升的计算资源需求用于处理不断积累的历史信息。相比之下，人类推理倾向于将复杂问题拆分为独立的子问题，逐步解决并整合后续推理所需的信息，而不执着于保留每步细节。这种 “原子化思考” 启发了 AoT 的设计，使其专注当前状态的推理，摒弃历史依赖。\n  </section>\n  <section>\n   基于此观察，研究人员推出了 Atom of Thoughts（AoT），AoT 的核心洞察是：复杂推理可通过一系列轻量的 “原子问题” 实现，这些问题的执行仅依赖自身，摆脱历史信息依赖。AoT 将推理过程构建为马尔可夫过程（Markov process），通过不断进行状态转移，逐步简化问题并始终保持和原问题等价，最终求解轻量的原子问题来回答原问题。\n  </section>\n  <section>\n   <img data-imgfileid=\"503475971\" data-ratio=\"0.6314814814814815\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e90e2e6b-e131-4623-5c32-79c3c01d3300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0b3335c6-620e-43e0-b62e-4a8785b5e1f5/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AoT 论文 X 平台获得近 40 万浏览量，并获 NLP 巨匠、2024 冯诺伊曼奖得主 Christopher Manning 转发。</sup></em>\n  </section>\n  <section>\n   <strong>AoT 如何推理？</strong>\n  </section>\n  <section>\n   <strong>由拆解收缩双阶段组成的马尔可夫转移过程</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503475972\" data-ratio=\"0.3925925925925926\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cca9a43b-2386-4c7b-5f89-cbac123ed700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/69c127cc-bdf8-4edb-b98b-0a9d33c7b588/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>在马尔可夫过程中，状态从原问题 Q0 初始化，问题所需的推理时间可通过拆解生成的 DAG 结构复杂度反映。随着拆解和收缩迭代，当前状态 Qi 的推理时间逐步降低。</sup></em>\n  </section>\n  <section>\n   AoT 的一次状态转移由两个核心步骤组成：拆解（Decomposition）和收缩（Contraction）。这两个步骤共同完成一次状态转换，生成一个简化的问题作为下一轮拆解与收缩的 “原问题”。这一过程不断迭代，直到达到最大次数限制 —— 该限制由首次拆解生成的图的深度确定，以避免无限循环。\n  </section>\n  <section>\n   <strong>1. 拆解（Decomposition）</strong>\n  </section>\n  <section>\n   AoT 首先将当前问题分解为一个临时的、基于依赖关系的有向无环图（DAG）。在这个 DAG 中，节点代表子问题，边则表示它们之间的依赖关系。临时 DAG 提供的结构信息为后续收缩阶段奠定了基础，帮助消除因复杂结构带来的历史信息负担。\n  </section>\n  <section>\n   <strong>2. 收缩（Contraction）</strong>\n  </section>\n  <section>\n   拆解完成后，DAG 以规则化的方式区分子问题：无入边的节点被定义为独立子问题，有入边的节点被定义为依赖子问题。独立子问题的信息转化为已知条件，依赖子问题的描述则被整合为一个更简洁的独立问题，从而形成新的原子状态。这一状态的答案与前一状态的问题保持等价。由于马尔可夫过程从原问题初始化，所有状态均与原问题维持等价关系。\n  </section>\n  <section>\n   AoT 马尔可夫式的状态转移和原子化的状态表示极大地消除了对历史信息的依赖，将计算资源聚焦于当前的原子问题，提高推理的稳健性。\n  </section>\n  <section>\n   <strong>原子性带来即插即用</strong>\n  </section>\n  <section>\n   <strong>兼容一切框架和模型</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503475974\" data-ratio=\"0.35833333333333334\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dda19f17-88fb-453a-8ee0-e8f296658700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/b29936d8-262e-4991-94f3-81da93762d56/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>主实验结果，其中评估了三个变体：基础版本（AoT），作为插件与 FoT 集成的版本（AoT (d=1)+FoT (n=2)），以及一个计算密集型版本（AoT∗）</sup></em>\n  </section>\n  <section>\n   AoT 不仅是一个独立的推理框架，更是一个强大的插件。其每一次状态转移得到的原子状态中的问题都可以无缝嵌入现有的推理手段，无论是提示策略、推理框架，代理工作流还是多智能体代理系统，AoT 都能通过预处理简化输入问题，同时保持答案等价性，来优化后续推理效率和效果。\n  </section>\n  <section>\n   <img data-imgfileid=\"503475975\" data-ratio=\"0.8527443105756358\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25cd03ba-55a4-48ff-ec43-02e168894f00/public\" data-type=\"png\" data-w=\"747\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/a94711f1-b082-4467-9311-a631569a14a0/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <em><sup>在 MATH 数据集上的性能比较。绿色线条显示 FoT 在不同树数（2^k,k=0,1,2,…）下 scaling 的情况，而灰色趋势线（代表其他基线方法）则共同展示了性能提升与计算成本之间的权衡。AoT（d=1）结合 FoT（n=2）在保持较低计算需求的同时，达到了稍优于 FoT（n=8）的性能。</sup></em>\n  </section>\n  <section>\n   AoT 的原子性设计天然契合多跳推理场景的需求。QwQ-32B-Preview、DeepSeek-R1 和 o3-mini 等模型通过延长思维链展现出强大的推理能力。例如以 gpt-4o-mini 作为执行模型的 AFlow 在多跳任务中仍与 o3-mini 的直接求解存在差距。然而，AoT 通过原子化分解，使得即便仅以 gpt-4o-mini 这种短思维链模型作为推理基座，也能在性能上超越这些强大的长思维链模型。更进一步，当 o3-mini 被用作 AoT 的推理基座时，原子性设计的优势得以充分发挥，带来更加显著的性能提升。\n  </section>\n  <section>\n   <img data-imgfileid=\"503475976\" data-ratio=\"0.39444444444444443\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0940b215-b06c-4c1c-701c-90abd9884300/public\" data-type=\"png\" data-w=\"720\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/cb19521f-ca99-456a-adb4-40cd4064c529/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;多跳问答任务中推理模型性能比较</sup></em>\n  </section>\n  <section>\n   <strong>开源与社区</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503475977\" data-ratio=\"0.8777777777777778\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b1a636ad-890d-4203-5c7b-f7424830f900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/00d7c1fd-7c44-433c-8c22-75a22efe268b/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">AoT 延续了 MetaGPT 社区的开源精神，代码已公开于 GitHub。欢迎开发者与研究者尝试 AoT，无论是独立使用还是集成到现有方法，并持续关注后续研究和功能更新。\n  </section>\n \n",
+  "aiSummary": "MetaGPT 团队提出的 AoT 方法通过将复杂推理拆解为独立子问题，解决大模型推理过程中对历史信息的过度依赖，从而提升推理效率和性能，并兼容多种框架和模型。",
+  "oneSentenceSummary": "MetaGPT 团队提出的 AoT 方法通过将复杂推理拆解为独立子问题，解决大模型推理过程中对历史信息的过度依赖，从而提升推理效率和性能，并兼容多种框架和模型。",
+  "summary": "文章介绍了 MetaGPT 团队提出的 Atom of Thoughts (AoT) 原子化思考方法，旨在解决大语言模型在推理时过度依赖历史信息的问题。AoT 将复杂推理过程分解为一系列轻量的原子问题，每个原子问题的解决仅依赖自身，无需回顾历史信息。通过拆解和收缩两个步骤组成的马尔可夫转移过程，AoT 逐步简化问题，并始终保持与原问题等价，这种马尔可夫过程的构建是其创新点之一。实验结果表明，AoT 不仅可以独立使用，还可以作为插件集成到现有推理框架中，显著提升推理效率和性能。即使使用较小的模型如 gpt-4o-mini 作为推理基座，也能在性能上超越大型推理模型，例如在多跳问答任务中超越 o3-mini 等模型，并且代码已在 GitHub 上开源。",
+  "mainPoints": [
+    {
+      "point": "AoT 通过原子化分解降低对历史信息的依赖",
+      "explanation": "将复杂问题分解为一系列独立的原子问题，每个问题仅依赖自身信息，无需回顾历史，从而减少计算资源消耗。"
+    },
+    {
+      "point": "拆解和收缩是 AoT 马尔可夫转移过程的核心步骤",
+      "explanation": "拆解将问题分解为有向无环图，收缩则将独立子问题的信息转化为已知条件，简化依赖子问题，最终形成新的原子状态。"
+    },
+    {
+      "point": "AoT 的原子性设计使其能够超越长思维链模型",
+      "explanation": "通过原子化分解，即使使用短思维链模型作为推理基座，也能在性能上超越那些强大的长思维链模型。"
+    }
+  ],
+  "keyQuotes": [
+    "复杂推理可通过一系列轻量的 \"原子问题\" 实现，这些问题的执行仅依赖自身，摆脱历史信息依赖。",
+    "AoT 将推理过程构建为马尔可夫过程（Markov process），通过不断进行状态转移，逐步简化问题并始终保持和原问题等价，最终求解轻量的原子问题来回答原问题。",
+    "AoT 不仅是一个独立的推理框架，更是一个强大的插件。",
+    "AoT 的一次状态转移由两个核心步骤组成：拆解（Decomposition）和收缩（Contraction）"
+  ],
+  "tags": [
+    "AI模型",
+    "大语言模型",
+    "推理优化",
+    "测试时扩展 (test-time scaling)",
+    "MetaGPT"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2040,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1742054580000,
+  "publishDateStr": "2025-03-15",
+  "publishDateTimeStr": "2025-03-15 16:03:00"
+}

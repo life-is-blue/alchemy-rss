@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d29654",
+  "title": "阿里通义发布并行计算新策略：1.6B 等效 4.4B，内存消耗骤降 95%",
+  "url": "https://www.qbitai.com/2025/05/288760.html",
+  "date": "2025-05-28 07:10:29",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"42\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"43\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>既能提升模型能力，又不显著增加内存和时间成本</strong>，LLM第三种Scaling Law被提出了。</p>\n  <p data-track=\"3\">对于<strong>1.6B模型</strong>，能实现性能接近4.4B模型，<strong>内存占用仅为后者的1/22，延迟增加量为1/6</strong>。</p>\n  <p data-track=\"4\">并且可直接应用于现有模型（如Qwen-2.5），无需从头训练。</p>\n  <p data-track=\"5\">这就是阿里通义团队提出的<strong>PARSCALE</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阿里通义发布并行计算新策略：1.6B等效4.4B，内存消耗骤降95%\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83ef0869-37e5-4a03-03d5-aab2ce89b600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83ef0869-37e5-4a03-03d5-aab2ce89b600/public\">\n  </div>\n  <p data-track=\"6\">目前LLMs的优化主要有两种思路：参数扩展（如GPT-4）和推理时间扩展（如DeepSeek-R1），但会增加内存和时间成本。</p>\n  <p data-track=\"7\">阿里通义团队提出的新范式受CFG（无分类器引导）双路径推理机制的启发。</p>\n  <p data-track=\"8\">他们将CFG的并行思想从 “<strong>生成阶段的推理优化</strong>” 扩展为 “<strong>训练和推理全流程的「计算缩放」</strong>”。</p>\n  <p data-track=\"9\">让我们来扒一扒技术细节。</p>\n  <p data-track=\"12\">CFG 通过同时运行有条件生成（输入提示词）和无条件生成（不输入提示词）两条路径，再通过加权平均融合结果，提升生成质量（如文本相关性、图像细节精准度）。</p>\n  <p data-track=\"13\">其核心在于利用<strong>并行计算</strong>（两次前向传播）增强模型决策的多样性和准确性，而<strong>无需增加模型参数</strong>。</p>\n  <p data-track=\"14\">研究人员观察到CFG的有效性可能源于计算量的增加（两次前向传播），而非单纯的条件引导。</p>\n  <p data-track=\"15\">由此提出假设：并行计算的规模（如路径数量）可能是提升模型能力的关键因素，而非仅依赖参数规模或推理时间的串行扩展（如生成更多token）。</p>\n  <p data-track=\"16\">CFG用2条并行路径提升性能，PARSCALE则<strong>将路径数量扩展为P条</strong>（如P=8），并通过可学习的输入变换和动态聚合，使并行计算成为一种可扩展的 “计算缩放” 范式。下图展示了PARSCALE方法。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阿里通义发布并行计算新策略：1.6B等效4.4B，内存消耗骤降95%\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37d53099-02fd-4d6e-93e0-540d4b2dac00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37d53099-02fd-4d6e-93e0-540d4b2dac00/public\">\n  </div>\n  <p data-track=\"18\"><strong>1、输入层：可学习的多路径输入变换</strong></p>\n  <p data-track=\"19\">核心改进是将CFG的固定双路径扩展为P条可学习的并行路径，每条路径通过可训练的前缀嵌入生成差异化输入。</p>\n  <ul>\n   <li data-track=\"20\">前缀嵌入生成：为每个并行路径引入可训练的前缀向量（维度与输入嵌入一致），拼接在原始输入前，形成路径专属输入。</li>\n   <li data-track=\"21\">KV缓存区分：在Transformer的注意力层中，不同路径的键（K）和值（V）缓存相互独立，确保各路径的计算互不打扰，增强输出多样性。</li>\n  </ul>\n  <p data-track=\"22\"><strong>2、计算层：并行前向传播</strong></p>\n  <ul>\n   <li data-track=\"23\">并行执行：将P个差异化输入同时输入模型，利用GPU的并行计算能力，一次性完成P路前向传播，生成P个输出流。</li>\n   <li data-track=\"24\">效率优势：通过批量矩阵运算实现P路并行，计算效率随P线性增长，共享模型主体参数，仅增加前缀嵌入等少量可训练参数。</li>\n  </ul>\n  <p data-track=\"25\"><strong>3、输出层：动态加权聚合</strong></p>\n  <p data-track=\"26\">通过多层感知机（MLP）动态计算各路径输出的聚合权重，替代 CFG 的固定权重机制：若某路径输出与当前输入语义匹配度高，MLP 会为其分配更高权重。</p>\n  <p data-track=\"29\">当P=8时，1.6B参数模型在HumanEval的性能（Pass@1=39.1%）接近4.4B参数模型（Pass@1=45.4%），但内存占用仅为后者的1/22，延迟增加量为1/6。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阿里通义发布并行计算新策略：1.6B等效4.4B，内存消耗骤降95%\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/46764fb9-7c68-4b7e-f984-10edb49f4400/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/46764fb9-7c68-4b7e-f984-10edb49f4400/public\">\n  </div>\n  <p data-track=\"30\">在GSM8K数学推理任务中，P=8使1.8B模型性能提升<strong>34%</strong>（相对基准），显著高于参数扩展的增益。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阿里通义发布并行计算新策略：1.6B等效4.4B，内存消耗骤降95%\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3b0897bd-8d4b-4d31-ef7a-ab45f8c70200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3b0897bd-8d4b-4d31-ef7a-ab45f8c70200/public\">\n  </div>\n  <p data-track=\"32\">阶段1：用传统方法预训练模型至收敛（1Ttokens）。</p>\n  <p data-track=\"33\">阶段2：冻结主体参数，仅训练前缀嵌入和聚合权重（20Btokens，占总数据的 2%）。</p>\n  <p data-track=\"34\">P=8模型在GSM8K上提升34%，且与从头训练效果相当，证明少量数据即可激活并行路径的有效性。且该策略使训练成本降低约 98%</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阿里通义发布并行计算新策略：1.6B等效4.4B，内存消耗骤降95%\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d4e640f5-a445-4802-0893-a4d6795c8f00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d4e640f5-a445-4802-0893-a4d6795c8f00/public\">\n  </div>\n  <p data-track=\"36\">研究团队在Qwen-2.5-3B模型上进行<strong>持续预训练</strong>和<strong>参数高效微调（PEFT）</strong>，仅调整前缀和聚合权重。</p>\n  <p data-track=\"37\">结果显示，在代码生成任务（HumanEval+）中PEFT 方法使Pass@1提升15%，且冻结主体参数时仍有效，证明动态调整 P 的可行性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阿里通义发布并行计算新策略：1.6B等效4.4B，内存消耗骤降95%\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a74aecbf-b09b-445d-cbdc-b1a14769b800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a74aecbf-b09b-445d-cbdc-b1a14769b800/public\">\n  </div>\n  <p data-track=\"38\">PARSCALE通过<strong>可学习的多路径输入、动态聚合权重、全流程并行优化</strong>，将CFG的 “双路径启发” 升级为一种通用的计算缩放范式。</p>\n  <p data-track=\"39\">感兴趣的朋友可到官方查看更多细节～</p>\n  <p data-track=\"40\">论文链接：https://arxiv.org/abs/2505.10475<br>\n    代码地址：https://github.com/QwenLM/ParScale<br>\n    参考链接：https://x.com/iScienceLuvr/status/1923262107845525660</p>\n  <p data-track=\"41\">— 完 —</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阿里通义提出 PARSCALE 并行计算新策略，使小模型性能接近大模型，内存消耗骤降，效率大幅提升。",
+  "oneSentenceSummary": "阿里通义提出 PARSCALE 并行计算新策略，使小模型性能接近大模型，内存消耗骤降，效率大幅提升。",
+  "summary": "本文介绍了阿里通义团队提出的 PARSCALE，一种基于并行计算的 LLM“计算缩放”新范式。受 CFG 双路径推理启发，PARSCALE 将并行路径扩展至 P 条，通过可学习的输入变换和动态聚合，在训练和推理全流程利用并行计算增强模型能力，而非仅依赖参数规模或推理时间扩展。实验结果表明，PARSCALE 能显著提升小模型性能，例如 1.6B 模型在性能接近 4.4B 模型的同时，内存占用仅为后者的 1/22，延迟增加量为 1/6。该方法可直接应用于现有模型，通过少量数据微调即可激活并行能力，训练成本大幅降低，具有显著的实用价值。",
+  "mainPoints": [
+    {
+      "point": "提出 PARSCALE 并行计算新范式，实现 LLM 计算缩放",
+      "explanation": "PARSCALE 借鉴 CFG，将并行路径扩展并可学习化，通过并行前向传播和动态聚合提升模型能力，开辟参数和时间扩展外的第三种 Scaling Law。"
+    },
+    {
+      "point": "显著提升小模型性能及效率，降低资源消耗",
+      "explanation": "在保持接近大模型性能的同时，大幅减少内存占用（降 95%）和延迟增加量，极大地提高了模型推理的硬件效率和经济性。"
+    },
+    {
+      "point": "支持现有模型快速应用，训练成本低廉",
+      "explanation": "该策略可应用于现有预训练模型，只需对少量参数进行微调，训练数据和成本需求极低（降低 98%），易于推广和落地。"
+    }
+  ],
+  "keyQuotes": [
+    "既能提升模型能力，又不显著增加内存和时间成本，LLM 第三种 Scaling Law 被提出了。",
+    "对于 1.6B 模型 ，能实现性能接近 4.4B 模型，内存占用仅为后者的 1/22，延迟增加量为 1/6。",
+    "由此提出假设：并行计算的规模（如路径数量）可能是提升模型能力的关键因素，而非仅依赖参数规模或推理时间的串行扩展。",
+    "且该策略使训练成本降低约 98%",
+    "在代码生成任务（HumanEval+）中 PEFT 方法使 Pass@1 提升 15%，且冻结主体参数时仍有效，证明动态调整 P 的可行性。"
+  ],
+  "tags": [
+    "LLM优化",
+    "模型效率",
+    "内存优化",
+    "推理加速",
+    "训练优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 90,
+  "wordCount": 1633,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748416229000,
+  "publishDateStr": "2025-05-28",
+  "publishDateTimeStr": "2025-05-28 07:10:29"
+}

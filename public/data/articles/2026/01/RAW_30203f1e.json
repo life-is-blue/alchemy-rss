@@ -1,0 +1,59 @@
+{
+  "id": "RAW_30203f1e",
+  "title": "Google 的八种核心多智能体设计模式",
+  "url": "https://www.infoq.com/news/2026/01/multi-agent-design-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-05 07:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google recently published a <a href=\"https://developers.googleblog.com/developers-guide-to-multi-agent-patterns-in-adk/\">guide outlining eight essential design patterns for multi-agent systems</a>, ranging from sequential pipelines to human-in-the-loop architecture. The guide provides concrete explanations of each pattern along with sample code for Google's Agent Development Kit.</p>\n   <p>Creating complex, scalable agentic applications requires the same disciplined approach used for other software systems, Google says, as relying on a single entity creates a bottleneck with undesirable effects on performance, debugging, and performance.</p>\n   <blockquote>\n    <p>Reliability comes from decentralization and specialization. Multi-Agent Systems (MAS) allow you to build the AI equivalent of a microservices architecture. By assigning specific roles (a Parser, a Critic, a Dispatcher) to individual agents, you build systems that are inherently more modular, testable, and reliable.</p>\n   </blockquote>\n   <p>Google has identified eight fundamental architectures, or patterns, that help developers design multi-agent systems in a structured way using the three foundational execution patterns provided by the Agent Development Kit: sequential, loop, and parallel.</p>\n   <p>The simplest pattern is the <em>sequential pipeline</em>, in which agents are arranged like an assembly line, with each agent passing its output to the next. This pattern \"is linear, deterministic, and refreshingly easy to debug because you always know exactly where the data came from\", Google says.</p>\n   <p>A slight variation of the sequential pipeline, is the <em>coordinator/dispatcher</em> pattern, in which one agent acts as a <em>decision maker</em> receiving a request and dispatching it to a specialized agent further down the line.</p>\n   <p>The <em>parallel fan-out/gather</em> pattern is useful when multiple agents can operate at the same time, each with its own specific responsibilities. For example, to review a PR, a primary agent can spawn parallel agents to carry through specific tasks such as enforcing style, auditing security, and analyzing performance. The parallel agent feed their output into a <em>synthesizer</em> agent, which aggregates outputs and approves or rejects the PR.</p>\n   <p>For more complex scenarios, developers can arrange their agents using a <em>hierarchical decomposition</em>, where high-level agents break down complex goals into sub-tasks and delegate them to other agents.</p>\n   <p>When output reliability is critical, the <em>generator and critic</em> pattern can be used, in which one agent is responsible for content creation while another validates it and, optionally, provides feedback to the former so it refines its output iteratively.</p>\n   <p>A generalization of the <em>generator and critic</em> is the <em>iterative refinement</em> pattern, where the output produced by a <em>generator agent</em> is submitted to a <em>critique agent</em> and a <em>refiner agent</em>, which work together iteratively to improve the original output.</p>\n   <p>There are cases where decisions must be made that have irreversible effects or carry significant consequences, such as executing financial transactions, deploying code to production, or taking action based on sensitive data. In those cases, the <em>human in the loop</em> pattern may be the solution, in which an <em>approval tool</em> agent can pause execution when required and wait for a human reviewer to approve or deny the suggested outcome.</p>\n   <p>Finally, the <em>composite pattern</em> allows to combine any of the other patterns, such as using a <em>coordinator</em> to route requests, a <em>parallel</em> agent to speed up processing, and a <em>generator and critic</em> loop to ensure output quality.</p>\n   <p>As mentioned, Google's guide includes detailed diagrams and code snippets showing how to <a href=\"https://google.github.io/adk-docs/agents/multi-agents/\">use the Agent Development Kit to implement all these patterns</a>. Do not miss it for the full detail.</p>\n   <p>For an alternative take on using the ADK for multi-agent systems, check out <a href=\"https://medium.com/@shins777/adk-workflow-the-core-logic-of-ai-agent-8ce4be5c1c40\">Hangsik Shin's guide</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google’s Eight Essential Multi-Agent Design Patterns\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/multi-agent-design-patterns/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767596400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 介绍了构建稳健且可扩展的多智能体系统的八种核心设计模式，为 AI 应用开发提供了结构化方法。",
+  "oneSentenceSummary": "Google 介绍了构建稳健且可扩展的多智能体系统的八种核心设计模式，为 AI 应用开发提供了结构化方法。",
+  "summary": "Google 发布了一份指南，详细介绍了多智能体系统（MAS）的八种关键设计模式，旨在为 AI 应用开发引入严谨的工程方法。该指南强调，MAS 是 AI 领域的微服务架构，通过去中心化和专业化来提升模块化、可测试性和可靠性。这些模式利用 Google 的 Agent Development Kit 实现，包括：顺序流水线、协调器/调度器、并行扇出/汇聚、分层分解、生成器与评论员、迭代优化、人机协同以及复合模式。每种模式都附带简要说明及应用示例（例如：并行扇出/汇聚用于 PR 审查，人机协同用于关键决策），为开发者构建复杂且可扩展的智能体应用提供了结构化框架。原始指南还提供了用于实际开发的图表和代码片段。",
+  "mainPoints": [
+    {
+      "point": "构建复杂的 AI 应用需要严谨的软件工程原则，类似于微服务架构。",
+      "explanation": "多智能体系统中的去中心化和专业化增强了可靠性、模块化和可测试性，克服了单体 AI 设计的局限性。"
+    },
+    {
+      "point": "Google 确定了结构化多智能体系统开发的八种基本设计模式。",
+      "explanation": "这些模式涵盖了从简单的顺序流水线到复杂的分层分解以及人机协同架构，为各种智能体应用需求提供了蓝图。"
+    },
+    {
+      "point": "每种模式都解决了智能体交互中的特定复杂性和需求。",
+      "explanation": "示例包括用于线性处理的顺序模式、用于并发任务的并行执行、用于提高可靠性的生成器-评论员模式，以及用于关键决策的人机协同模式。"
+    },
+    {
+      "point": "Google 的 Agent Development Kit (ADK) 支持这些模式的实现。",
+      "explanation": "该指南提供了实用的代码示例和图表，展示了如何使用 ADK 应用这些架构概念。"
+    }
+  ],
+  "keyQuotes": [
+    "可靠性源于去中心化和专业化。多智能体系统（MAS）允许你构建 AI 版本的微服务架构。",
+    "通过为单个智能体分配特定角色（解析器、评论员、调度器），你可以构建出本质上更具模块化、可测试性和可靠性的系统。",
+    "顺序流水线是线性的、确定性的，而且调试起来非常容易，因为你始终确切地知道数据的来源。",
+    "当输出的可靠性至关重要时，可以使用生成器和评论员模式，其中一个智能体负责内容创作，而另一个负责验证，并可选地向前者提供反馈，以便其迭代优化输出。",
+    "对于必须做出具有不可逆影响或重大后果的决策的情况，人机协同模式可能是解决方案。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "设计模式",
+    "Agent Development Kit",
+    "AI 架构",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 556,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767596400000,
+  "publishDateStr": "01-05",
+  "publishDateTimeStr": "2026-01-05 07:00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_1db009d9",
+  "title": "领域驱动设计与变革走私：构建社会技术系统",
+  "url": "https://www.infoq.com/news/2025/11/sociotechnical-design-DDD/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-13 11:39:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Domain-Driven Design (DDD) can upskill sociotechnical design to navigate organizational dynamics and decision complexity in human systems, Xin Yao explained at <a href=\"https://www.oop-konferenz.de/en/\">OOP Conference</a>. She presented how change smuggling offers a practical way to launch small, safe-to-fail probes, nudging sociotechnical changes to emerge organically and conversationally.</p>\n   <p>Today’s software professionals navigate a maze of technical, business, and social complexity. According to Xin Yao, thriving in this environment requires more than technical and business expertise, and <a href=\"https://www.infoq.com/news/2025/05/sociotechnical-complexity/\">sociotechnical design helps us deal with these challenges</a>.</p>\n   <p>Sociotechnical design in software development emphasizes creating systems where people and technology thrive by fostering collaboration, emergent coherence, and shared understanding through enabling constraints. As a result, <a href=\"https://www.infoq.com/news/2025/09/sociotechnical-design/\">sociotechnical design can improve architectural decisions</a>, Xin Yao explained.</p>\n   <p>DDD is a sociotechnical practice, Yao explained:</p>\n   <blockquote>\n    <p>It’s hands-on and grounded in the idea that software design must align with business complexity, which ultimately means aligning with people: users, customers, domain experts, etc. DDD bridges technical models and human understanding, ensuring software closely reflects the mental models and workflows of the business. DDD’s context mapping patterns reveal team boundaries, collaboration modes, and the subtle interplay between human organization and code organization.</p>\n   </blockquote>\n   <p>DDD treats organizational complexity as a means to a technical end: keeping the software model coherent and maintainable. Sociotechnical design takes the next step: it treats organizational and human system dynamics as first-class design material, Yao said. Where DDD models business complexity for better software, sociotechnical design models organizational complexity for better work. DDD aligns software with the domain, sociotechnical design coheres and complexifies software, teams, and organizations into a living, evolving system, Yao mentioned.</p>\n   <p>Large-scale change initiatives often fail because they trigger resistance: decisions are imposed from above, and the messy reality of human systems gets oversimplified, Yao said. Change smuggling gives software practitioners a gentler, safer way to introduce sociotechnical thinking when formal channels feel unnavigable or blocked. Instead of pushing for change among peers or upwards, change smugglers embed small, safe-to-fail experiments - Trojan Mice-inside existing structures. Rather than saying the organization is too slow to change, Yao explained, we can explore what’s possible from a learning-together stance.</p>\n   <p>Change smugglers form authentic partnerships. They create spaces where doubts and possibilities can coexist, favor peer connection over positional influence, and seed local shifts in how people work together - without setting off the corporate immune system, Yao explained:</p>\n   <blockquote>\n    <p>For example, instead of forcing teams into a new collaboration model, a smuggler - previously known as change agent - might unceremoniously reframe an existing meeting into a participatory modeling session, subtly reshaping decision-making dynamics.</p>\n   </blockquote>\n   <p>To level up, software professionals need to go beyond technical excellence: insist on understanding the whole picture, shape information flow, design collaboration, model experiential coherence, and see uncertainty as an ally, Yao concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/xinxin/\">Xin Yao</a> about DDD and change smuggling.</p>\n   <p><strong>InfoQ: How can DDD practitioners and software architects become skilled sociotechnical designers and architects?</strong></p>\n   <blockquote>\n    <p><strong>Xin Yao</strong>: If you’re great at DDD, you already think beyond code - you model the business, engage with domain experts, and shape software around real-world complexity.</p>\n    <p>Now, take that mindset and zoom out. Think of it like career progression:</p>\n    <ul>\n     <li>Junior DDD: \"How do I design better aggregates and value objects?\"</li>\n     <li>Mid-level DDD: \"How do teams collaborate to model Ubiquitous Language within Bounded Contexts?\"</li>\n     <li>Sociotechnical designer: \"How do team co-design and co-evolve software and human systems using relational methods and sociotechnical architecture?\"</li>\n    </ul>\n   </blockquote>\n   <p><strong>InfoQ: What can they do to upgrade their toolbox?</strong></p>\n   <blockquote>\n    <p><strong>Yao</strong>: Some of the tools that they can add to their kit are:</p>\n    <ul>\n     <li>Context Mapping - probe social and technical boundaries. Where do friction and dependencies really come from?</li>\n     <li>Experience Design for Coherence - creating lived, collaborative experiences that foster deep conversations, sense-making, and shared agency over their work.</li>\n     <li>Sociotechnical Architecture - defining quality attributes for the social architecture, such as connection, belonging, and aliveness, and modeling them with discipline.</li>\n     <li>Leader as Convener and Connector -<strong> </strong>Shifting from architect to conversation catalyst, offering in-context support so teams can find their own way.</li>\n     <li>Appreciating uncertainty - treating the unknown as creative fuel. The best designs emerge at the sweet spot between structure and improvisation, guidance and freedom, stability and variation. Think of it like sailing—you can’t control the wind, but you can adjust the sails.</li>\n    </ul>\n    <p>The next time they hit an architecture crossroad, they can ask themselves: is this a tech problem, or is it also shaped by social complexity? Then, design for both. That’s the upgrade.</p>\n   </blockquote>\n   <p><strong>InfoQ: What makes \"change smuggling\" an effective approach to sociotechnical change?</strong></p>\n   <blockquote>\n    <p><strong>Yao</strong>:<em> </em>Because it works with, not against, a social system’s natural dynamics. Small experiments shift interactions and sociotechnical learning without threatening identity or power. Over time, these enabling constraints bring about constitutive constraints - patterns of interaction that shape the system. Eventually, they evolve into governing constraints, shifting how work happens at scale.</p>\n    <p>It’s less storming the castle, more sneaking in through the kitchen and winning hearts one conversation at a time. Effective sociotechnical change isn’t about declaring war on the status quo - it’s about redesigning the conditions for self-sustaining changes to emerge.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How to do Sociotechnical Design Using Domain-Driven Design and Change Smuggling\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/sociotechnical-design-DDD/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763033940000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文阐述了如何利用领域驱动设计 (DDD) 应对组织复杂性，并介绍了一种通过“变革走私”实现社会技术设计的有效方法。",
+  "oneSentenceSummary": "本文阐述了如何利用领域驱动设计 (DDD) 应对组织复杂性，并介绍了一种通过“变革走私”实现社会技术设计的有效方法。",
+  "summary": "本文基于 Xin Yao 的演讲，探讨了如何利用领域驱动设计 (DDD) 增强社会技术设计，以应对现代软件开发中复杂的技术、业务和社会挑战。它强调社会技术设计超越了 DDD 对软件一致性的关注，将组织和人类系统动态视为一流的设计材料，旨在改进整体工作流程。其核心前提是促进协作、共享理解和自组织协同，使人和技术能够共同发展。本文介绍了“变革走私”作为一种实用且温和的方法来推动社会技术变革。变革走私不是强加通常会引发抵制的大规模举措，而是提倡在现有结构中嵌入小型的“安全失败”实验——称为“特洛伊木马”。这些微妙的干预会重塑互动并促进有机的、对话式的学习，从而在不激活公司免疫系统的情况下实现自我维持的变革。Xin Yao 进一步阐述了 DDD 从业者如何成为熟练的社会技术设计师：扩展视野，共同设计人类和软件系统；运用上下文映射、体验设计和社会技术架构等工具；拥抱不确定性，将其视为创新动力。这种方法强调与社会系统的自然动态合作，而不是对抗，以实现有效且可持续的组织转型。",
+  "mainPoints": [
+    {
+      "point": "社会技术设计通过将组织和人类动态视为改进工作的首要设计材料来扩展 DDD。",
+      "explanation": "DDD 使软件与业务复杂性对齐，而社会技术设计则对组织复杂性进行建模，以优化工作流程。通过这种方式，软件、团队和组织可以整合为一个持续演进的系统。"
+    },
+    {
+      "point": "“变革走私”是一种有效、温和的方法，通过小型的、安全失败的实验来引入社会技术变革。",
+      "explanation": "这种方法使用“特洛伊木马”，通过巧妙地重塑互动和培养自发学习来避免抵制，从而与社会系统的动态合作而不是对抗。"
+    },
+    {
+      "point": "软件专业人员可以通过扩展他们的思维方式并采用特定的工具和实践来发展成为熟练的社会技术设计师。",
+      "explanation": "这包括超越代码来对人类系统进行建模，利用上下文映射和社会技术架构等工具，并拥抱“组织者和协调者”的角色，以促进涌现设计。"
+    }
+  ],
+  "keyQuotes": [
+    "DDD 连接了技术模型和人类理解，确保软件紧密反映业务的心理模型和工作流程。",
+    "DDD 建模业务复杂性以优化软件，社会技术设计则建模组织复杂性以改进工作。",
+    "当正式渠道受阻时，变革走私为软件从业者提供了一种更温和、更安全的方式来引入社会技术理念。",
+    "有效的社会技术变革不是对现状宣战——而是重新设计自我维持的变革出现的条件。",
+    "最佳设计源于结构与即兴、指导与放任、稳定与变化之间的平衡。"
+  ],
+  "tags": [
+    "社会技术设计",
+    "领域驱动设计 (DDD)",
+    "软件架构",
+    "组织变革",
+    "团队协作"
+  ],
+  "topicTag": "architecture",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 841,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763033940000,
+  "publishDateStr": "2025-11-13",
+  "publishDateTimeStr": "2025-11-13 11:39:00"
+}

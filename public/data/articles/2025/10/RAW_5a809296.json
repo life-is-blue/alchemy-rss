@@ -1,0 +1,59 @@
+{
+  "id": "RAW_5a809296",
+  "title": "VAE 再被补刀！清华快手 SVG 扩散模型亮相，训练提效 6200%，生成提速 3500%",
+  "url": "https://www.qbitai.com/2025/10/346706.html",
+  "date": "2025-10-28 07:35:11",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"2\">前脚谢赛宁刚宣告VAE在图像生成领域退役，后脚清华与快手可灵团队也带着无VAE潜在扩散模型<strong>SVG</strong>来了。</p>\n  <p data-track=\"3\">该方法实现了在训练效率上62倍、生成速度上35倍的提升。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083810_bf094e3a3c42e464ba15013802161553.png\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"996\" data-height=\"496\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">VAE为何被接连抛弃？主要还是因为<strong>语义纠缠</strong>的缺陷——语义特征都放在同一个潜空间，调一个数值就会“牵一发而动全身”，比如只想改变猫的颜色，结果体型、表情都跟着变。</p>\n  <p data-track=\"5\">和谢赛宁团队极简复用预训练编码器、改造DiT架构，专注于生成性能的RAE不同，SVG通过<strong>语义+细节双分支+分布对齐</strong>，实现了多任务通用。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083810_33a8f0b8ae0eace2b2d5f77d5f7e27a0.png\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"888\" data-height=\"270\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">下面具体来看。</p>\n  <p data-track=\"8\">在传统的「VAE+扩散模型」图像生成范式中，VAE的核心作用是将高分辨率图像压缩为低维的潜空间特征（可以理解为图像的简化代码），供后续扩散模型学习生成逻辑。</p>\n  <p data-track=\"9\">但这样会使不同类别、不同语义的图像特征会混乱地交织在一起，比如猫和狗的特征边界模糊不清等。</p>\n  <p data-track=\"10\">直接导致两个问题：</p>\n  <ul>\n   <li data-track=\"11\">一是扩散模型训练效率极低，需要数百万步迭代才能勉强理清特征逻辑；</li>\n   <li data-track=\"12\">二是生成过程繁琐，往往需要经过几十甚至上百步采样才能输出清晰图像。</li>\n  </ul>\n  <p data-track=\"13\">并且，生成的特征空间用途单一，除了图像生成，几乎无法适配图像识别、语义分割等其他视觉任务。</p>\n  <p data-track=\"14\">面对VAE的困境，谢赛宁团队的RAE技术选择了极致聚焦生成的思路。直接复用DINOv2、MAE等成熟的预训练编码器，不额外修改编码器结构，仅通过优化解码器来还原图像细节，同时针对性地改造扩散模型架构。</p>\n  <p data-track=\"15\">最终实现了生成效率与质量的跨越式提升，简单说就是把重心全放在了“把图生成得又快又好”上。</p>\n  <p data-track=\"16\">而清华&amp;快手可灵团队的SVG技术，则走了兼顾生成与多任务通用的路线，核心差异就在于对特征空间的构建逻辑上。</p>\n  <p data-track=\"17\">RAE是直接复用预训练特征，SVG 则是主动构建语义与细节融合的特征空间。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083810_1273655ddcf73ab9fe8439eb8e1ce603.png\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"1080\" data-height=\"285\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">具体来看，SVG选择以DINOv3预训练模型作为语义提取器。</p>\n  <p data-track=\"19\">原因是DINOv3经过大规模自监督学习，能够精准捕捉图像的高层语义信息，让猫、狗、汽车等不同类别的特征边界能够清晰可辨，从根源上解决了语义纠缠问题。</p>\n  <p data-track=\"20\">但团队也发现，DINOv3提取的特征偏重于宏观语义，会丢失颜色、纹理等高频细节，因此又专门设计了一个轻量级的残差编码器来进行细节补充，针对性地学习这些被忽略的细节信息。</p>\n  <p data-track=\"21\">而为了让「语义」和「细节补充」能够完美融合，SVG还加入了关键的<strong>分布对齐机制</strong>。</p>\n  <p data-track=\"22\">这一机制通过技术手段调整残差编码器输出的细节特征，使其在数值分布上与DINOv3的语义特征完全匹配，避免细节信息扰乱语义结构。</p>\n  <p data-track=\"23\">实验数据也印证了这一机制的重要性。去掉分布对齐后，SVG生成图像的FID值（衡量生成图像与真实图像相似度的核心指标，数值越低越优）从6.12升至9.03，生成质量大幅下滑。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083813_b34e828aa548e1b8db92a4c1abdfec82.png\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"1080\" data-height=\"183\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">实验结果显示，SVG在生成质量、效率、多任务通用性上全面超越传统VAE方案。</p>\n  <p data-track=\"25\">训练效率方面，在ImageNet 256×256数据集上，SVG-XL模型仅训练80个epoch，在无分类器引导时FID达6.57，远超同规模基于VAE的SiT-XL（22.58）；如果延长训练至1400个epoch，FID可低至1.92，接近当前顶级生成模型水平。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083810_685c1d08964277d319ab2e8185741a5d.png\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"1080\" data-height=\"397\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">推理效率方面，消融实验中，5步采样时，SVG-XL的gFID为12.26，而SiT-XL（SD-VAE）为69.38、SiT-XL（VA-VAE）为74.46。这表明在较少的采样步数下，SVG-XL就能达到较好的生成质量。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083810_1649de772afaf520b5060db1ea544b4d.jpeg\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"614\" data-height=\"420\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\"><strong>不仅是生图</strong>，SVG的特征空间继承了DINOv3的能力，可直接用于图像分类、语义分割、深度估计等任务，且无需微调编码器。例如，在ImageNet-1K分类任务中Top-1精度达到81.8%，与原始DINOv3几乎一致；在ADE20K语义分割任务中mIoU达46.51%，接近专门的分割模型。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028083810_9ad2bd80f29188c6ab85fc7878f643e8.png\" alt=\"VAE再被补刀！清华快手SVG扩散模型亮相，训练提效6200%，生成提速3500%\" data-ic=\"false\" data-width=\"1080\" data-height=\"186\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">团队由郑文钊担任项目负责人，目前是加州大学伯克利分校博士后。此前，他在清华大学自动化系获博士学位，研究集中在人工智能和深度学习领域。</p>\n  <p data-track=\"30\">同样来自清华自动化系的史明磊和王皓霖目前均在攻读博士学位，研究重点为多模态生成模型。</p>\n  <p class=\"pgc-p\" data-track=\"31\">其中，史明磊透露自己还在创办一家专注于人工智能应用的公司。</p>\n  <p data-track=\"33\">Ziyang Yuan、Xiaoshi Wu、Xintao Wang、Pengfei Wan则来自快手可灵团队。</p>\n  <p data-track=\"34\">其中，Pengfei Wan是快手可灵视频生成模型负责人。</p>\n  <p data-track=\"35\">从谢赛宁团队的RAE到清华快手的SVG，尽管技术路线各有侧重，但从两者的突破可以看出，预训练视觉模型的特征空间，或许已经具备了替代VAE的能力。</p>\n  <p data-track=\"36\">论文地址：https://arxiv.org/abs/2510.15301\n   <br>\n   代码地址：https://github.com/shiml20/SVG</p>\n  <p data-track=\"39\">— 完 —</p>\n  <p data-track=\"40\">量子位 QbitAI · 头条号签约</p>\n  <p data-track=\"41\">关注我们，第一时间获知前沿科技动态</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "清华与快手团队推出无 VAE 潜在扩散模型 SVG，通过语义与细节双分支及分布对齐，在图像生成效率上实现 62 倍提升，生成速度提升 35 倍，并兼顾多任务通用性。",
+  "oneSentenceSummary": "清华与快手团队推出无 VAE 潜在扩散模型 SVG，通过语义与细节双分支及分布对齐，在图像生成效率上实现 62 倍提升，生成速度提升 35 倍，并兼顾多任务通用性。",
+  "summary": "文章详细介绍了清华大学与快手可灵团队共同研发的无 VAE 潜在扩散模型 SVG，旨在解决传统 VAE 在图像生成中存在的语义纠缠、训练效率低、生成速度慢及特征空间用途单一等问题。SVG 的核心创新在于构建了“语义+细节双分支+分布对齐”的特征空间：它利用 DINOv3 预训练模型提取高层语义信息，同时设计轻量级残差编码器补充高频细节，并通过分布对齐机制确保语义与细节的完美融合。实验结果显示，SVG 在 ImageNet 数据集上，训练效率相比基于 VAE 的 SiT-XL 模型提升显著，生成质量（FID 值）大幅优化，且推理速度更快。更重要的是，SVG 的特征空间继承了 DINOv3 的多任务能力，无需微调即可直接用于图像分类、语义分割等任务，展现出超越传统 VAE 方案的全面优势，为图像生成和多任务视觉应用开辟了新路径。",
+  "mainPoints": [
+    {
+      "point": "SVG 模型通过移除 VAE 解决了语义纠缠问题，大幅提升了图像生成效率和质量。",
+      "explanation": "传统 VAE 的语义纠缠导致特征混淆、训练低效。SVG 通过语义与细节双分支结合分布对齐，从根本上解耦特征，使训练效率提升 62 倍，生成速度提升 35 倍，并显著优化生成质量。"
+    },
+    {
+      "point": "SVG 采用 DINOv3 提取语义特征，并用残差编码器补充细节，实现特征空间的有效构建。",
+      "explanation": "利用 DINOv3 的强大语义捕捉能力，配合轻量级残差编码器补充高频细节，形成高质量的特征表示，克服了单一编码器特征丢失的问题。"
+    },
+    {
+      "point": "分布对齐机制确保语义与细节特征的融合质量，是 SVG 高性能的关键。",
+      "explanation": "通过技术手段调整细节特征的数值分布以匹配语义特征，避免信息扰乱，实验证明该机制对维持生成图像质量至关重要。"
+    },
+    {
+      "point": "SVG 的特征空间具备多任务通用性，可直接应用于图像分类、语义分割等任务。",
+      "explanation": "得益于 DINOv3 的强大能力，SVG 的特征空间不仅用于生成，还能无需微调地支持多种视觉任务，拓宽了模型应用范围和实用价值。"
+    }
+  ],
+  "keyQuotes": [
+    "前脚谢赛宁刚宣告 VAE 在图像生成领域退役，后脚清华与快手可灵团队也带着无 VAE 潜在扩散模型 SVG 来了。",
+    "该方法实现了在训练效率上 62 倍、生成速度上 35 倍的提升。",
+    "SVG 通过语义+细节双分支+分布对齐，实现了多任务通用。",
+    "SVG 在生成质量、效率、多任务通用性上全面超越传统 VAE 方案。",
+    "预训练视觉模型的特征空间，或许已经具备了替代 VAE 的能力。"
+  ],
+  "tags": [
+    "扩散模型",
+    "图像生成",
+    "无VAE",
+    "特征学习",
+    "VAE"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 86,
+  "wordCount": 1865,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761636911000,
+  "publishDateStr": "2025-10-28",
+  "publishDateTimeStr": "2025-10-28 07:35:11"
+}

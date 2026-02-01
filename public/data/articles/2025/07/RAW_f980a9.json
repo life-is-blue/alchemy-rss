@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f980a9",
+  "title": "Visual Studio Copilot 的智能 AI 编辑",
+  "url": "https://devblogs.microsoft.com/visualstudio/smarter-ai-edits-in-visual-studio-copilot/",
+  "date": "2025-07-31 12:00:42",
+  "author": "Jessie Houghton",
+  "siteName": "Visual Studio Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span data-contrast=\"auto\">When we first set out to get smarter AI edits in Visual Studio Copilot, we knew we were tackling a deeply complex problem. It wasn’t just about generating great suggestions—it was about figuring out how to seamlessly apply those suggestions to your code. While the idea seemed simple at first glance, the reality was anything but.&nbsp; </span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <p></p>\n  <div style=\"width:100%;\" class=\"wp-video\">\n   <!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->\n   <video class=\"wp-video-shortcode\" id=\"video-253719-1\" width=\"992\" height=\"616\" preload=\"metadata\" controls=\"controls\">\n    <source type=\"video/mp4\" src=\"https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/07/SideBySideNewMapper.mp4?_=1\"><a href=\"https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/07/SideBySideNewMapper.mp4\">https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2025/07/SideBySideNewMapper.mp4</a>\n   </video>\n  </div>\n  <p></p>\n  <h2><b><span data-contrast=\"auto\">The Complexity of Implementing AI-Generated Edits</span></b><span data-ccp-props=\"{}\">&nbsp;</span></h2>\n  <p><span data-contrast=\"auto\">Let’s&nbsp;rewind to our early attempts. Copilot might give you a fantastic suggestion—a new method, a helpful refactor, or&nbsp;maybe even&nbsp;a corrected logic block. But the&nbsp;real challenge&nbsp;began when we tried to insert those changes into the existing file without breaking anything. Where does the edit go? What happens if the file has been updated since the suggestion was generated? What if the model’s output inadvertently introduces conflicts, overlaps existing code, or even forgets a required bracket? These questions made the process tricky, and the resulting red squiggles made it difficult to trust AI suggestions.</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <p><span data-contrast=\"auto\">In the early days, we approached this problem in the most straightforward way possible: brute force. We used heuristics and rule-based techniques like string matching and pattern recognition to&nbsp;identify&nbsp;where edits might belong. It worked… kind of. The results were often inconsistent, especially for complex edits spanning multiple lines. And as Copilot’s capabilities expanded to support more languages and scenarios,&nbsp;maintaining&nbsp;these rules became a moving target—always shifting, always growing harder to manage. Success rates hovered around 50%, which was far from ideal. In hindsight, it became increasingly clear that we&nbsp;couldn’t&nbsp;outpace the ever-evolving models with static rules.&nbsp;&nbsp;</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <h2><b><span data-contrast=\"auto\">Better Models Meet Smarter Techniques</span></b><span data-ccp-props=\"{}\">&nbsp;</span></h2>\n  <p><span data-contrast=\"auto\">As AI technology advanced, we saw an opportunity to revisit this problem with a fresh perspective. Two major developments in AI made it possible to rethink how we could get smarter edits in Visual Studio Copilot: modern models with larger context windows and a groundbreaking technique called speculative decoding.&nbsp; </span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <p><b><span data-contrast=\"auto\">Speculative decoding</span></b><span data-contrast=\"auto\">&nbsp;became a game changer for speeding up AI-assisted edits. It works by pairing a fast model with a more sophisticated one. The fast model generates token predictions for the edit ahead of time, while the smarter model steps in only when needed to refine or verify those predictions. This collaboration&nbsp;improved average token generation speed&nbsp;by 2-3x&nbsp;and&nbsp;made&nbsp;it&nbsp;feasible&nbsp;to implement the generated edits using the model, which&nbsp;significantly enhanced accuracy when integrating changes into your files.&nbsp;&nbsp;</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <p><span data-contrast=\"auto\">By using speculative decoding,&nbsp;we adopted&nbsp;the&nbsp;model-based approach to applying edits that&nbsp;was able to fill in the gaps that the&nbsp;previous&nbsp;approach could not reach.&nbsp;Instead of relying on rule sets, we employed an&nbsp;AI model to simulate an “ideal” version of your file with the chosen suggestions seamlessly integrated. A smart diff algorithm then compares this ideal version with your actual file to pinpoint and precisely map the edits. This allowed the entire process to handle edge cases—like overlapping code or missing syntax—more intelligently than ever before.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <h2><b><span data-contrast=\"auto\">Balancing Accuracy&nbsp;and Speed</span></b><span data-ccp-props=\"{}\">&nbsp;</span></h2>\n  <p><span data-contrast=\"auto\">While speculative decoding dramatically improved performance, applying AI edits still came with a natural trade-off: using models introduced latency. Previously, all string computation was done locally, meaning edits appeared&nbsp;almost instantly. Now, every edit&nbsp;involved&nbsp;network calls and token generation—a process that unfolds incrementally as a token stream, rather than as a single, instant response.&nbsp;&nbsp;</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <p><span data-contrast=\"auto\">To make this experience feel meaningful for users, we implemented a streaming animation in the editor. As edits are detected on the token stream, users see their document updating line by line in real time. This animation serves two purposes:&nbsp;showcasing&nbsp;progress and providing visibility into exactly how the changes are being applied. Although this approach trades the speed we had before for greater accuracy, feedback has shown that users value precision over raw speed—especially when it comes to&nbsp;maintaining&nbsp;code quality and reducing disruption.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n  <h2><b><span data-contrast=\"auto\">Looking Ahead</span></b></h2>\n  <p><span data-contrast=\"auto\">This work laid the foundation for Agent Mode in Visual Studio Copilot—a feature that enables the AI to not only suggest improvements but actively&nbsp;assist&nbsp;in executing them. For Agent Mode to function effectively, the edits needed to be precise, seamless, and reliable enough for the agent to build, debug, and test the code. Speculative decoding has already made significant strides in balancing speed and accuracy, but&nbsp;we’re&nbsp;not stopping there.</span></p>\n  <p><span data-contrast=\"auto\">A faster implementation of our speculative decoding technique is on the horizon. This updated version will&nbsp;leverage&nbsp;advancements in token generation and model pairing to further reduce latency while&nbsp;maintaining&nbsp;accuracy users have come to expect. Early tests show promise of a 2-4x speed boost compared to the original rollout, moving closer to the ideal experience where precision meets near-instant response times.</span><span data-ccp-props=\"{}\">&nbsp;</span></p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 Visual Studio Copilot 如何克服 AI 代码编辑的挑战。通过推测解码和模型方法，提高了准确性和用户体验。",
+  "oneSentenceSummary": "本文介绍了 Visual Studio Copilot 如何克服 AI 代码编辑的挑战。通过推测解码和模型方法，提高了准确性和用户体验。",
+  "summary": "本文介绍了 Visual Studio Copilot 中 AI 生成代码编辑的演变过程。最初，基于规则的方法效果不佳，成功率仅为 50%，且难以适应快速发展的 AI 模型。通过采用更大上下文窗口的现代 AI 模型和推测解码技术，实现了显著的突破。这种方法将令牌生成速度提高了 2 - 3 倍，并实现了一个强大的基于模型的系统，AI 可以在其中模拟集成了建议的“理想”代码文件。然后，智能差异比较算法精确地映射这些更改，有效地处理复杂的边缘情况。虽然这种方法引入了网络延迟，但实时流式动画提供了即时视觉反馈，用户认为这种权衡是值得的，因为它强调准确性和代码质量。这项基础性工作也为 Copilot 未来的 Agent 模式铺平了道路，预计未来速度将提高 2 - 4 倍。",
+  "mainPoints": [
+    {
+      "point": "Copilot 中早期基于规则的 AI 编辑集成不可靠且难以维护。",
+      "explanation": "最初用于应用 AI 生成的代码编辑的启发式方法和字符串匹配方法经常失败（50% 的成功率），难以处理复杂的场景，并且无法跟上 AI 模型快速发展的步伐。"
+    },
+    {
+      "point": "推测解码和基于模型的方法显着提高了编辑准确性和集成度。",
+      "explanation": "通过配对快速且复杂的模型，推测解码加速了令牌生成（2 - 3 倍）。这使得 AI 能够模拟理想文件，智能差异比较算法精确地映射编辑，更智能地处理复杂的边缘情况。"
+    },
+    {
+      "point": "优先考虑准确性而不是原始速度，实时流式动画增强了用户体验。",
+      "explanation": "尽管网络调用引入了延迟，但流式动画提供了更改的实时视觉更新，更符合用户对代码质量和精度的要求，从而建立了对 AI 辅助编辑的信任。"
+    },
+    {
+      "point": "这项工作是未来 AI 功能（如 Agent 模式）的基础，并具有进一步的速度改进。",
+      "explanation": "精确和可靠的 AI 编辑方面的进步对于启用 Agent 模式至关重要，在此模式下，AI 可以主动执行改进。未来的优化有望将推测解码的速度提高 2 - 4 倍。"
+    }
+  ],
+  "keyQuotes": [
+    "事后看来，越来越清楚的是，我们无法通过静态规则超越不断发展的模型。",
+    "推测解码彻底改变了 AI 辅助编辑的速度。",
+    "我们没有依赖规则集，而是采用 AI 模型来模拟文件的“理想”版本，并将所选建议无缝集成。",
+    "反馈表明，用户重视精度而不是原始速度，尤其是在保证代码质量和减少干扰方面。"
+  ],
+  "tags": [
+    "AI 辅助编码",
+    "推测解码",
+    "大语言模型",
+    "代码编辑",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 762,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_395010",
+  "sourceName": "Visual Studio Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753963242000,
+  "publishDateStr": "2025-07-31",
+  "publishDateTimeStr": "2025-07-31 12:00:42"
+}

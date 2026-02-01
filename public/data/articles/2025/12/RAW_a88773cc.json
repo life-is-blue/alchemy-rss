@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a88773cc",
+  "title": "Kubernetes 1.35 发布：引入原地 Pod 扩容与 AI 优化调度",
+  "url": "https://www.infoq.com/news/2025/12/kubernetes-1-35/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-31 10:00:00",
+  "author": "Mostafa Radwan",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Cloud Native Computing Foundation (CNCF) announced the release of Kubernetes 1.35, named \"Timbernetes\"&nbsp;, emphasizing its focus on mutability and the optimization of high-performance AI/ML workloads.</p>\n   <p>A key feature in version 1.35 is the general availability of <a href=\"https://kubernetes.io/blog/2025/12/19/kubernetes-v1-35-in-place-pod-resize-ga/\" target=\"_blank\">In-Place Pod Resize</a>. This feature allows cluster operators to adjust CPU and memory resources for running pods without triggering a container restart.</p>\n   <p><a href=\"https://www.linkedin.com/in/piotrminkowski/\" target=\"_blank\">Piotr Mińkowski</a>, a Solutions Architect at Red Hat, highlighted the importance of this to Java developers in his recent <a href=\"https://x.com/piotr_minkowski/status/2002672463868805461\" target=\"_blank\">post</a> on X.com.</p>\n   <blockquote>\n    <p>Why is it essential for Java? You can give the pod extra CPU only for startup, then shrink it after. App starts fast, the Pod uses the right amount of resources always.</p>\n   </blockquote>\n   <p>Alpha features in this release include native support for <a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction/gang-scheduling/\" target=\"_blank\">Gang Scheduling</a> within the scheduler. Gang scheduling ensures that a group of interrelated pods, for example, AI/ML training jobs, are scheduled simultaneously or not at all.</p>\n   <p>The new&nbsp;<code><a href=\"https://kubernetes.io/docs/concepts/workloads/workload-api/#pod-groups\" target=\"_blank\">PodGroup</a></code> API resource in version 1.35 allows users to define scheduling requirements directly in the core API. In prior releases of Kubernetes, projects such as <a href=\"https://www.cncf.io/projects/volcano/\" target=\"_blank\">Volcano</a> or <a href=\"https://kueue.sigs.k8s.io/\" target=\"_blank\">Kueue</a> were used to handle similar challenges.</p>\n   <p>Another feature entering alpha is the enhancements made to the <code>/flagz</code>&nbsp;&amp;&nbsp;&nbsp;<code>/statusz </code><a href=\"https://kubernetes.io/docs/reference/instrumentation/zpages/#z-pages\" target=\"_blank\">endpoints</a> for Kubernetes components. Such changes provide machine-parsable output to authorized users, making it easier for automated troubleshooting and observability tools to monitor all core components over HTTP without sophisticated text parsing.</p>\n   <p>In Kubernetes 1.35, a configurable tolerance for the Horizontal Pod Autoscaler (HPA) graduated to beta and became a default feature. In previous versions, <a href=\"https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/\" target=\"_blank\">HPA</a> used a fixed 10% tolerance for scaling actions, which made it challenging to accommodate workloads that may require a different threshold. This move enables users to define a per-resource <a href=\"https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#tolerance\" target=\"_blank\">tolerance</a> window without requiring cluster-wide configuration changes.</p>\n   <p>Also, <a href=\"https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#pod-certificate-requests\" target=\"_blank\">PodCertificateRequests</a>, a collection of API objects to streamline and automate how Kubernetes pods obtain certificates, graduated to beta in this release. A PodCertificateRequest is designed to manage certificate generation at the pod level and writes the certificate directly to the pod’s filesystem, simplifying&nbsp;mTLS flow with no bearer tokens or human interactions.</p>\n   <p>Although it’s not part of 1.35, the community's decision to sunset the <a href=\"https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/\" target=\"_blank\">Ingress</a> NGINX controller reflects a move toward more integrated solutions, encouraging users to consider modern alternatives such as the Gateway API.</p>\n   <p>Ingress NGINX will receive only best-effort maintenance until March 2026. The recommended approach is to migrate to the <a href=\"https://gateway-api.sigs.k8s.io/\" target=\"_blank\">Gateway API,</a> an official Kubernetes project focused on L4 and L7 routing, or to use an <a href=\"https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/#third-party-ingress-controllers\" target=\"_blank\">alternative third-party</a> ingress controller.</p>\n   <p>Kubernetes version 1.35 includes 60 enhancements, 22 alpha features, 19 graduating to beta, 17 becoming generally available or stable, along with a few <a href=\"https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/#deprecations-removals-and-community-updates\" target=\"_blank\">deprecations and removals</a>.</p>\n   <p>For more information on the Kubernetes 1.35 release, users can refer to the official <a href=\"https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md\" target=\"_blank\">release notes</a> and <a href=\"https://kubernetes.io/docs/home/\" target=\"_blank\">documentation</a> for a comprehensive overview of the enhancements, deprecations, and removals.</p>\n   <p>In addition, Users can also join the release team on Wednesday, January 14, 2026, at 11:00 AM (CST) for a <a href=\"https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cloud-native-live-kubernetes-v135-release/\" target=\"_blank\">live webinar</a>. The next release, version 1.36, is expected by April 2026.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Kubernetes 1.35 Released with In-Place Pod Resize and AI-Optimized Scheduling\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mostafa Radwan\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/kubernetes-1-35/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767175200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Kubernetes 1.35 “Timbernetes” 引入了原地 Pod 扩容、AI 优化的成组调度（Gang Scheduling），以及针对可变性、可观测性和证书管理的重大增强，标志着云原生和 AI/ML 工作负载的一次重要更新。",
+  "oneSentenceSummary": "Kubernetes 1.35 “Timbernetes” 引入了原地 Pod 扩容、AI 优化的成组调度（Gang Scheduling），以及针对可变性、可观测性和证书管理的重大增强，标志着云原生和 AI/ML 工作负载的一次重要更新。",
+  "summary": "Kubernetes 1.35 代号为 “Timbernetes”，其发布重点在于可变性以及对 AI/ML 工作负载的优化支持。核心特性包括原地 Pod 扩容（In-Place Pod Resize）正式商用（GA），允许在不重启的情况下动态调整运行中 Pod 的 CPU 和内存，这对 Java 应用和资源效率提升具有显著意义。此版本还引入了成组调度（Gang Scheduling）的 Alpha 支持和全新的 PodGroup API 资源，实现了相互依赖 Pod 的原子化调度，这对于此前由 Volcano 或 Kueue 等外部项目管理的 AI/ML 训练任务至关重要。`/flagz` 和 `/statusz` 端点的增强提升了可观测性和自动化故障排除能力。水平 Pod 自动扩缩器（HPA）的可配置容忍度已进入 Beta 阶段，提供了更灵活的扩缩容方案。此外，PodCertificateRequests 移至 Beta 阶段，简化了 Pod 的 mTLS 证书管理。文章还提到社区正逐渐从 Ingress NGINX 控制器转向 Gateway API 等现代替代方案。总体而言，1.35 版本引入了 60 项增强功能，巩固了 Kubernetes 作为高性能云原生和 AI/ML 应用平台的地位。",
+  "mainPoints": [
+    {
+      "point": "原地 Pod 扩容现已正式商用，支持在不重启的情况下动态调整运行中 Pod 的资源。",
+      "explanation": "该功能显著提高了资源利用率和应用效率，对于资源需求波动的应用（如启动阶段需要更多资源的 Java 应用）特别有利。"
+    },
+    {
+      "point": "Kubernetes 1.35 引入了对成组调度的原生支持和新的 PodGroup API，优化了 AI/ML 工作负载的调度。",
+      "explanation": "这些 Alpha 特性允许将 AI/ML 训练中常见的相互依赖的 Pod 作为一个单元进行调度，减少了失败率并提高了复杂分布式应用的资源分配效率。"
+    },
+    {
+      "point": "通过改进 `/flagz` 和 `/statusz` 端点以及可配置的 HPA 容忍度，增强了可观测性和自动化水平。",
+      "explanation": "核心组件提供的机器可解析输出简化了故障排除，而灵活的 HPA 容忍度允许更精确且针对特定工作负载的自动扩缩容配置，提升了集群运营效率。"
+    },
+    {
+      "point": "PodCertificateRequests 简化了 Pod 的 mTLS 证书管理，社区信号显示正逐渐放弃 Ingress NGINX。",
+      "explanation": "Pod 级别的自动化证书生成提高了安全性并简化了 mTLS 流程。Ingress NGINX 的弃用则鼓励用户采用更现代、集成度更高的网络解决方案，如 Gateway API。"
+    }
+  ],
+  "keyQuotes": [
+    "1.35 版本的一个核心特性是原地 Pod 扩容的正式商用。该功能允许集群操作员在不触发容器重启的情况下，调整运行中 Pod 的 CPU 和内存资源。",
+    "为什么它对 Java 至关重要？你可以在启动时为 Pod 分配额外的 CPU，然后在启动后将其缩小。这样应用启动快，且 Pod 始终使用适量的资源。",
+    "成组调度确保了一组相互关联的 Pod（例如 AI/ML 训练任务）能够同时被调度，否则就都不调度。",
+    "社区决定逐步停止支持 Ingress NGINX 控制器，反映了向更集成解决方案迁移的趋势，鼓励用户考虑 Gateway API 等现代替代方案。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "AI/ML",
+    "云计算",
+    "容器技术",
+    "DevOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 500,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767175200000,
+  "publishDateStr": "2025-12-31",
+  "publishDateTimeStr": "2025-12-31 10:00:00"
+}

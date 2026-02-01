@@ -1,0 +1,63 @@
+{
+  "id": "RAW_2dba9cd0",
+  "title": "马斯克霸气回怼 Waymo：连对抗特斯拉的机会都没有",
+  "url": "https://www.qbitai.com/2025/12/360255.html",
+  "date": "2025-12-11 08:15:49",
+  "author": "杰西卡",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <div class=\"article-content\">\n   <article class=\"syl-article-base syl-page-article syl-device-pc\">\n    <blockquote>\n     <p class=\"pgc-h-forward-slash\" data-track=\"62\">杰西卡 发自 副驾寺智</p>\n     <p class=\"pgc-h-forward-slash\" data-track=\"63\">能车参考 | 公众号 AI4Auto</p>\n    </blockquote>\n    <p data-track=\"2\"><strong>“Waymo从来没有真正与特斯拉抗衡的机会。”</strong></p>\n    <p data-track=\"3\">这番大胆开麦，不用想也知道，来自一向“口无遮拦”的首富<strong>马斯克</strong>。</p>\n    <p data-track=\"4\">不过事出有因，他的回怼实际是因为谷歌DeepMind首席科学家发帖时，暗示特斯拉和Waymo相比，两家的Robotaxi还有差距。</p>\n    <p data-track=\"5\">借着这个档口，马斯克再度放话，<strong>3周内</strong>Robotaxi就会<strong>取消安全员</strong>——真正开始纯无人载客了。</p>\n    <p data-track=\"7\">引得马斯克激情开麦的源头，来自<strong>谷歌</strong>DeepMind首席科学家、谷歌研究首席科学家、Gemini项目负责人<strong>杰夫·迪恩</strong>（Jeff Dean）在社交平台X上发的一篇帖子。</p>\n    <p data-track=\"8\">这篇帖子原本是在展示谷歌旗下<strong>Waymo的基础模型</strong>。</p>\n    <p data-track=\"9\">这个模型通过融合端到端与模块化设计，构建了一个以“快速感知-深度推理”双系统为核心的世界模型架构：</p>\n    <ul>\n     <li data-track=\"10\">系统1（快速反应）：传感器融合编码器实时处理摄像头/激光雷达/雷达数据，生成物体、语义信息及嵌入向量，支持毫秒级驾驶决策；</li>\n     <li data-track=\"11\">系统2（深度推理）：基于Gemini大模型的视觉语言模型（VLM），利用海量世界知识理解罕见场景（如车辆起火时主动绕行）。</li>\n    </ul>\n    <p data-track=\"12\">两者共同输入世界解码器，生成高精度轨迹预测与安全验证信号。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093711_2fa5e7466d669a52478ef44369467679.jpeg\" data-src=\"https://image.jido.dev/20251211093711_2fa5e7466d669a52478ef44369467679.jpeg\">\n    </div>\n    <p data-track=\"13\">原本只是一个简单的介绍，不过评论区里，有网友看热闹不嫌事大，问他<strong>Waymo和特斯拉哪个更领先</strong>？</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093710_4bb2c35effac71e0c46281046c3357ea.jpeg\" data-src=\"https://image.jido.dev/20251211093710_4bb2c35effac71e0c46281046c3357ea.jpeg\">\n    </div>\n    <p data-track=\"14\">杰夫的回复也不出所料，必然是支持自家产品Waymo了，还暗示两家仍有差距：</p>\n    <blockquote>\n     <p data-track=\"15\">我不认为特斯拉的自动驾驶乘车里程数量接近Waymo。</p>\n    </blockquote>\n    <p data-track=\"16\">他表示，Waymo最新的公开纯无人载客里程数是<strong>9600万英里</strong>（约为1.5亿公里），而且安全数据也很有说服力。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093709_098259a3fb3efbebd5b036378c5da4dd.jpeg\" data-src=\"https://image.jido.dev/20251211093709_098259a3fb3efbebd5b036378c5da4dd.jpeg\">\n    </div>\n    <p data-track=\"17\">这可把高强度冲浪的X老板“惹怒了”。马斯克立即在下面跟帖回复了杰夫：</p>\n    <blockquote>\n     <p data-track=\"18\">Waymo从来没有真正有机会与特斯拉抗衡。事后看来，这一点显而易见。</p>\n    </blockquote>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093714_3150b0817178c51db2734c769e5fb83d.jpeg\" data-src=\"https://image.jido.dev/20251211093714_3150b0817178c51db2734c769e5fb83d.jpeg\">\n    </div>\n    <p data-track=\"19\">美国Robotaxi，到底谁更强啊？</p>\n    <p data-track=\"21\">平心而论，Waymo和特斯拉的Robotaxi，目前来看优势各不相同。</p>\n    <p data-track=\"22\">杰夫在帖子里强调的“领先”，更侧重<strong>纯无人里程数和安全性</strong>。</p>\n    <p data-track=\"23\">他分享的Waymo官网链接里，有非常详细的Robotaxi安全数据记载，列举了多种情况下，Waymo<strong>全无人载客行驶</strong>（RO）的<strong>事故率</strong>，与<strong>人类交通事故基准</strong>进行比较的结果。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093709_7685b9658afad1a87263ce48d34a84a4.png\" data-src=\"https://image.jido.dev/20251211093709_7685b9658afad1a87263ce48d34a84a4.png\">\n    </div>\n    <p data-track=\"24\">选几条重点数据来看：</p>\n    <p data-track=\"25\">Waymo截至今年6月，已有9600万英里的全无人自动驾驶载客里程。</p>\n    <p data-track=\"26\"><strong>凤凰城</strong>大约贡献了其中近一半的里程数，根据最近披露数据，Waymo在凤凰城已投放的车队数为500辆车，占总车队数的五分之一。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093709_d1c153725a35af6501eff5bc07129442.png\" data-src=\"https://image.jido.dev/20251211093709_d1c153725a35af6501eff5bc07129442.png\">\n    </div>\n    <p data-track=\"27\">具体到Waymo运营的城市中，和行驶相同距离的普通人类驾驶员相比：</p>\n    <p data-track=\"28\">Waymo把造成严重伤亡的概率减少了91%，安全气囊弹出事故减少79%，造成人员伤亡的事故减少80%。</p>\n    <p data-track=\"29\">而针对道路弱势使用者，比如行人、骑自行车的人、骑摩托的人，Waymo表示其Robotaxi能分别减少92%、78%和89%的事故发生。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093709_e4fe9125be0dd21074806908df03430c.png\" data-src=\"https://image.jido.dev/20251211093709_e4fe9125be0dd21074806908df03430c.png\">\n    </div>\n    <p data-track=\"30\">还有更直观的对比图，比如安全气囊弹开的碰撞事故，<strong>车对车正向碰撞、侧向碰撞、二次碰撞</strong>等7种场景中，Waymo的表现都优于人类平均基准。</p>\n    <p data-track=\"31\">Waymo甚至还没有单车发生碰撞的事故被记录。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093709_8bda26e0c058d6345af93522d5667bb4.png\" data-src=\"https://image.jido.dev/20251211093709_8bda26e0c058d6345af93522d5667bb4.png\">\n    </div>\n    <p data-track=\"33\">总结下来就是，Waymo Driver在避免造成人员伤亡，以及导致安全气囊弹出的事故方面，都优于人类驾驶员。</p>\n    <p data-track=\"34\">而特斯拉也会定期发布安全报告，不过不单是Robotaxi数据，而是其跑通Robotaxi的重要核心——<strong>FSD</strong>的安全数据：</p>\n    <p data-track=\"35\">截至目前，特斯拉FSD行驶总里程达<strong>67.7亿英里</strong>（约109亿公里）。相较于美国整体道路安全水平，FSD把碰撞概率降低了超80%。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093710_b4f2160f466e44df6e7d3f1a34614cbd.png\" data-src=\"https://image.jido.dev/20251211093710_b4f2160f466e44df6e7d3f1a34614cbd.png\">\n    </div>\n    <p data-track=\"36\">特斯拉的这个统计方法和Waymo不同，是以事故前的里程数来作为标准——也就是说，数值越高，说明碰撞越少、越安全。</p>\n    <p data-track=\"37\">在严重碰撞（安全气囊弹开）和轻微碰撞（安全气囊未弹开）两类场景中，开启FSD在事故前行驶的里程数，都明显高于没有开启FSD、手动驾驶的里程数。</p>\n    <p data-track=\"38\">在FSD已开启时，平均每510万英里（约821公里）出现一次重大事故，明显高于美国平均水平的70万英里。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093712_5ca1beb66de451407581b05480625d3d.png\" data-src=\"https://image.jido.dev/20251211093712_5ca1beb66de451407581b05480625d3d.png\">\n    </div>\n    <p data-track=\"39\">而特斯拉的统计结果是，启用FSD之后，严重碰撞和轻微碰撞的事故发生率，都能降低到人类水平的1/7。</p>\n    <p data-track=\"40\">不过，不少人认为，两家的安全数据现在还不具有可比性，统计口径差异巨大。</p>\n    <p data-track=\"41\">而且FSD依然是在驾驶座上有人时采集的数据，特斯拉Robotaxi还<strong>没撤掉安全员</strong>，这也是部分人对特斯拉保持观望态度的原因之一。</p>\n    <p data-track=\"42\">刚好，马斯克准备提提速——</p>\n    <p data-track=\"43\">据他这周在xAI黑客马拉松活动现场透露：大约<strong>三周</strong>内，特斯拉Robotaxi会在奥斯汀投入运营，车内无人，甚至连副驾驶座位上都没有人。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093709_77cfd702f2ac39e8cd7ff0d957502c25.png\" data-src=\"https://image.jido.dev/20251211093709_77cfd702f2ac39e8cd7ff0d957502c25.png\">\n    </div>\n    <p data-track=\"44\">算算时间，整整三周以后就是12月31日，看来马斯克是真的准备兑现“年底前去安全员”的flag了。</p>\n    <p data-track=\"45\">这已经是马斯克第四次、也是连续第四个月公开表示要<strong>“去安全员”</strong>——虽然目标范围从刚开始的所有车队，已经缩小到了奥斯汀车队。</p>\n    <p data-track=\"46\">而马斯克面对早就大规模运营的Waymo，之所以底气这么足，可能部分原因来自其取得进展的速度。</p>\n    <p data-track=\"47\">自今年6月首次推出Robotaxi，到现在刚好半年时间，特斯拉Robotaxi的开城范围已经超过了Waymo。</p>\n    <p data-track=\"48\">有网友放出了一个美国Robotaxi排行榜，整理了相关的运营数据。</p>\n    <div class=\"pgc-img\">\n     <img alt=\"马斯克霸气回怼Waymo：连对抗特斯拉的机会都没有\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093711_f5bb13259df64d9e00c16bf4c8407f5a.png\" data-src=\"https://image.jido.dev/20251211093711_f5bb13259df64d9e00c16bf4c8407f5a.png\">\n    </div>\n    <p data-track=\"49\">从服务范围看，Waymo运营范围约为<strong>833平方英里</strong>，相当于<strong>2157.5平方公里</strong>，差不多是3个北京五环内的面积。</p>\n    <p data-track=\"50\">至于能辐射到的服务群体，大约有560万人，可以覆盖美国1.7%的人口。</p>\n    <p data-track=\"51\">特斯拉的运营范围要更大一点，目前大约是1077平方英里（约2790平方公里）；覆盖人口数和Waymo几乎持平。</p>\n    <p data-track=\"52\">另外，特斯拉的单车成本也更低，正在跑Robotaxi的<strong>Model Y</strong>，长续航后驱版在美国售价大约是<strong>4.5万美元</strong>（约31.8万元）。</p>\n    <p data-track=\"53\">而Waymo目前运营的<strong>捷豹I-Pace</strong>车型，在美国售价高达<strong>7.73万美元</strong>（约54.5万元），比Model Y大约贵70%。</p>\n    <p data-track=\"54\">特斯拉还有一个更大的优势，是马斯克曾说过，会考虑让老车主的车加入到Robotaxi车队。用网友的话说就是：</p>\n    <blockquote>\n     <p data-track=\"55\">数百万潜在的特斯拉Robotaxi，已经存在于消费者手中。</p>\n    </blockquote>\n    <div class=\"pgc-img\">\n     <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251211093711_4aa6238c532ec018b84540dc7af63243.jpeg\" data-src=\"https://image.jido.dev/20251211093711_4aa6238c532ec018b84540dc7af63243.jpeg\">\n    </div>\n    <p data-track=\"57\">不过呢，特斯拉是不是真能铺开规模，真能超越Waymo？</p>\n    <p data-track=\"58\">作为Waymo路线上的一员文远知行CEO<strong>韩旭</strong>，在参加<strong>量子位MEET2026智能未来大会</strong>的时候，有了新的预测：</p>\n    <blockquote>\n     <p data-track=\"59\">如果马斯克还是用Model 3或者Model Y这样的量产车，且3年之内坚持不装激光雷达，那么肯定无法在旧金山做到今天Waymo的水平。</p>\n    </blockquote>\n    <p data-track=\"60\">他举例，马斯克在2018年的时候说，可以用无人驾驶从任何一个停车场到开到另一个停车场，比如从纽约无接管开到洛杉矶……但今天他依然做不到，至少FSD V12依然做不到。</p>\n    <p data-track=\"61\">马斯克承诺过的很多东西的确会做到，只不过是时间的差别，往往8年、10年往后Delay，“我很期待他能做出来，但是时间要更好地把握”。</p>\n   </article>\n  </div>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "马斯克与谷歌 Waymo 就自动驾驶 Robotaxi 的领先地位展开激烈争论，文章对比了两家公司的技术、运营数据和发展策略，并披露了马斯克关于特斯拉 Robotaxi 即将取消安全员的最新计划。",
+  "oneSentenceSummary": "马斯克与谷歌 Waymo 就自动驾驶 Robotaxi 的领先地位展开激烈争论，文章对比了两家公司的技术、运营数据和发展策略，并披露了马斯克关于特斯拉 Robotaxi 即将取消安全员的最新计划。",
+  "summary": "文章围绕马斯克因谷歌 DeepMind 首席科学家杰夫·迪恩暗示 Waymo 领先特斯拉 Robotaxi 而引发的“口水战”展开。杰夫·迪恩展示了 Waymo 基于端到端与模块化设计构建的世界模型架构及其 9600 万英里的纯无人载客里程和详细安全数据。马斯克则强硬回击，并预告特斯拉 Robotaxi 将在三周内（年底前）在奥斯汀实现纯无人运营。文章随后详细对比了 Waymo 和特斯拉 Robotaxi 在纯无人里程、安全数据统计口径、运营范围、单车成本等方面的异同与优劣势。最后，引用文远知行 CEO 的观点指出特斯拉在技术路线（如坚持不使用激光雷达）和兑现承诺时间上的挑战。",
+  "mainPoints": [
+    {
+      "point": "马斯克与谷歌 DeepMind 首席科学家杰夫·迪恩围绕 Robotaxi 领先地位展开激烈争议。",
+      "explanation": "杰夫·迪恩以 Waymo 的纯无人里程和安全数据暗示其领先，马斯克则坚称 Waymo 从未有机会与特斯拉抗衡。"
+    },
+    {
+      "point": "Waymo 展示了其融合端到端与模块化设计的世界模型架构，并强调其大规模纯无人里程和高安全数据。",
+      "explanation": "Waymo 的系统通过“快速感知-深度推理”双系统处理复杂场景，并在凤凰城等城市积累了 9600 万英里的纯无人载客里程，事故率远低于人类驾驶。"
+    },
+    {
+      "point": "特斯拉 FSD 累积了更长的总行驶里程，马斯克预告 Robotaxi 将在三周内实现无安全员运营。",
+      "explanation": "特斯拉 FSD 总里程达 67.7 亿英里，碰撞概率显著降低。马斯克计划年底前在奥斯汀推出纯无人驾驶的 Robotaxi 服务，以兑现其“去安全员”的承诺。"
+    },
+    {
+      "point": "两家公司的 Robotaxi 在运营规模、成本和技术路线上各有优劣。",
+      "explanation": "特斯拉 Robotaxi 运营范围更广，单车成本更低，且潜在车队规模庞大；Waymo 在纯无人里程和安全数据透明度上占优，但成本较高，技术路线更保守。"
+    },
+    {
+      "point": "业内人士对特斯拉纯视觉路线的自动驾驶能力表示谨慎。",
+      "explanation": "文远知行 CEO 韩旭认为，如果特斯拉坚持不装激光雷达，纯视觉方案难以在复杂城市场景达到 Waymo 的当前水平，并指出马斯克在兑现承诺时间上常有延迟。"
+    }
+  ],
+  "keyQuotes": [
+    "\"Waymo 从来没有真正与特斯拉抗衡的机会。\"",
+    "“我不认为特斯拉的自动驾驶乘车里程数量接近 Waymo。”",
+    "“数百万潜在的特斯拉 Robotaxi，已经存在于消费者手中。”",
+    "“如果马斯克还是用 Model 3 或者 Model Y 这样的量产车，且 3 年之内坚持不装激光雷达，那么肯定无法在旧金山做到今天 Waymo 的水平。”",
+    "\"马斯克承诺过的很多东西的确会做到，只不过是时间的差别，往往 8 年、10 年往后 Delay，\""
+  ],
+  "tags": [
+    "自动驾驶",
+    "Robotaxi",
+    "特斯拉",
+    "Waymo",
+    "马斯克"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 88,
+  "wordCount": 2700,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765440949000,
+  "publishDateStr": "2025-12-11",
+  "publishDateTimeStr": "2025-12-11 08:15:49"
+}

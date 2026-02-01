@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8bb8ee3c",
+  "title": "Apple 推出 Swift 安卓 SDK 预览版",
+  "url": "https://www.infoq.com/news/2025/10/swift-sdk-android/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-31 18:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://www.swift.org/blog/nightly-swift-sdk-for-android/\">Swift SDK for Android</a>, recently released as a nightly build, is designed to help developers to port their Swift packages to Android, making it easier to share code across platforms. While the SDK is still in preview, over 25% of packages in the Swift Package Index can already be compiled for Android.</p>\n   <p>At its core, the Swift SDK for Android consists of a Swift toolchain tailored for the Android platform, i.e., the compiler and an implementation of the Swift standard library running on Android, along with a collection of bindings that provide access to Android APIs from Swift. The Swift toolchain, that uses the <a href=\"https://github.com/swiftlang/swift-java\">swift-java-project</a> for Java/Swift interoperability, can create shared objects that are linked into an <code>.apk</code> archive and accessed through the JNI.</p>\n   <p>The Swift SDK for Android takes a <a href=\"https://github.com/swiftlang/swift-evolution/blob/807b844be42db582e434d1667fc907ae7a7a8775/visions/android.md\">non-partisan approach to UIs</a>. Instead of committing to a single UI framework, the team behind it will support existing ones, specifically Android's native toolkits like Jetpack Compose and the classical XML-based system, Flutter's UI engine, as well as third-party bridging solutions like <a href=\"https://www.infoq.com/news/2025/10/swift-sdk-android/Skip.tools\">Skip</a>. Another possible approach, not explicitly mentioned by the Swift Android team is to <a href=\"https://levelup.gitconnected.com/swift-on-android-how-the-new-swift-sdk-unlocks-real-cross-platform-mobile-development-0b4b79d476aa\">implement the UI in Swift using OpenGL, Vulkan, or other rendering engines</a>, and then use a <code>NativeActivity</code> to integrate it in an Android app.</p>\n   <p>The Skip framework, in particular, re-implements SwiftUI for Android by bridging it to Jetpack Compose. <a href=\"https://skip.tools/blog/fully-native-android-swift-apps\">This approach</a> provides a seamless way for iOS developers to write both their app's business logic and UI in the same codebase, with minimal additional effort.</p>\n   <p>An open-source alternative providing SwiftUI-like API for UI across macOS, Linux, Windows and some <a href=\"https://github.com/stackotter/swift-cross-ui/issues/145\">nascent support for Android</a> is <a href=\"https://swiftcrossui.dev\">SwiftCrossUI</a>.</p>\n   <p>While the prospect of using Swift for both iOS and Android apps may sound enticing, creating great <a href=\"https://news.ycombinator.com/item?id=45700274\">cross-platform apps is not just a matter of toolchain support and native toolkits</a>, as <em>andrekandre</em> notes on Hacker News:</p>\n   <blockquote>\n    <p>[I] have gone down this route before, and tbh the biggest issue is dev ux (ios devs cant debug easily, model mismatches vs kotlin e.g kotlin exceptions cant be caught from swift) and in the end even kotlin multi platform isn't the same as kotlin for android, so in a sense you are still introducing a 3rd language after a fashion...</p>\n   </blockquote>\n   <p>The initial release of the Swift SDK for Android comes roughly six months after Apple announced the <a href=\"https://www.swift.org/android-workgroup/\">establishment of an Android working group within the Swift project</a>, aimed at ensuring that Swift can be compiled for Android without relying on unofficial forks, as well as enhancing Swift's standard libraries for better compatibility with Android APIs.</p>\n   <p>Prior to the creation of the Swift SDK for Android, developers could use third-party solutions like <a href=\"https://www.scade.io\">Scade.io</a> to compile their Swift code to run on Android. Scade is based on Swift4j and focuses on non-UI application logic.</p>\n   <p>For Android developers looking to port their apps to iOS, a more mature option is <a href=\"https://www.infoq.com/articles/kotlin-multiplatform-evaluation/\">Kotlin Multiplatform with Jetpack Compose Multiplatform</a>, which InfoQ has covered extensively in the past.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Apple Previews SDK for Building Android Apps with Swift\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/swift-sdk-android/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761933600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Apple 发布 Swift 安卓 SDK，助力开发者移植 Swift 包并构建跨平台应用，但挑战犹存。",
+  "oneSentenceSummary": "Apple 发布 Swift 安卓 SDK，助力开发者移植 Swift 包并构建跨平台应用，但挑战犹存。",
+  "summary": "Apple 发布 Swift 安卓 SDK 预览版，标志着 Swift 开发者向安卓平台迈出了重要一步。该 SDK 包含为安卓定制的 Swift 工具链（编译器和标准库），以及通过 JNI 访问安卓 API 的绑定。该 SDK 在 UI 方面采取开放态度，支持原生安卓工具包（如 Jetpack Compose）、Flutter 以及 Skip 这样的第三方解决方案（将 SwiftUI 桥接到 Jetpack Compose）。虽然代码共享前景可期，但文章也强调了跨平台开发中潜在的开发者体验挑战，如调试和语言互操作性问题。此前，Swift 项目成立了安卓工作组，旨在官方支持 Swift 在安卓上的编译，不再依赖 Scade.io 等第三方方案。对于将安卓应用移植到 iOS 的开发者来说，使用 Jetpack Compose Multiplatform 的 Kotlin 多平台仍然是一个更成熟的选择。",
+  "mainPoints": [
+    {
+      "point": "Swift 安卓 SDK 能够将 Swift 包移植到安卓，促进跨平台代码复用。",
+      "explanation": "该 SDK 提供了必要的工具链和 API 绑定，开发者可以借此为安卓编译 Swift 代码，这对于在 iOS 和安卓应用之间共享业务逻辑至关重要。"
+    },
+    {
+      "point": "该软件开发工具包支持各种用户界面框架，为开发者提供了选择首选方法的灵活性。",
+      "explanation": "该 SDK 不局限于单一 UI 框架，支持原生安卓、Flutter 以及 Skip 这样的 SwiftUI 桥接方案，旨在实现广泛应用并适应现有开发流程。"
+    },
+    {
+      "point": "尽管有潜力，但在安卓上进行跨平台 Swift 开发面临着重大的开发者体验挑战。",
+      "explanation": "互操作性问题、调试复杂性以及 Swift 和 Kotlin 环境之间潜在的不匹配是值得注意的问题，开发者需要解决这些问题才能进行有效的多平台开发。"
+    }
+  ],
+  "keyQuotes": [
+    "Swift 安卓 SDK 包含为安卓平台定制的 Swift 工具链（编译器和标准库），以及一组允许 Swift 访问安卓 API 的绑定。",
+    "Swift 安卓 SDK 在 UI 方面采取开放态度。开发团队不局限于单一 UI 框架，而是支持现有框架，特别是安卓原生工具包（如 Jetpack Compose 和传统的 XML 系统）、Flutter UI 引擎以及 Skip 这样的第三方桥接方案。",
+    "虽然为 iOS 和安卓应用使用 Swift 的前景可能听起来很诱人，但创建出色的跨平台应用不仅仅是工具链支持和原生工具包的问题。"
+  ],
+  "tags": [
+    "跨平台开发",
+    "Swift",
+    "安卓",
+    "软件开发工具包",
+    "移动开发"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 491,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761933600000,
+  "publishDateStr": "2025-10-31",
+  "publishDateTimeStr": "2025-10-31 18:00:00"
+}

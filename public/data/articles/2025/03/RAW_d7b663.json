@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d7b663",
+  "title": "陶哲轩亲测点赞 o3-mini：专家级证明，我收到了一个完美的答案",
+  "url": "https://www.qbitai.com/2025/03/263236.html",
+  "date": "2025-03-11 06:12:46",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"47\">金磊 发自 凹非寺</p>\n   <p data-track=\"48\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">刚刚，<strong>陶哲轩</strong>亲测了一下<strong>o3-mini</strong>，然后他给出了这样的结论：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"3\">重建图论中一个标准（专家级）结果的证明，o3-mini是完全可以hold住的。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/124f7574-eeb2-4cf4-3d3b-5716f5902300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/124f7574-eeb2-4cf4-3d3b-5716f5902300/public\">\n  </div>\n  <p data-track=\"4\">陶哲轩要重建的这个证明，叫做<strong>三角形移除引理</strong>（triangle removal lemma），由Ruzsa和Szemeredi于1978年提出，是极值图论中的重要结果:</p>\n  <p data-track=\"5\">对于任意的η＞0，都存在c&gt;0，使得对于任意一个足够大的有n个顶点的图，如果该图中最多包含cn3个三角形，那么可以通过移除最多ηn2条边，使这个图变为无三角形的图。</p>\n  <p data-track=\"6\">用另一种表述方式就是，如果一个有n个顶点的图包含o(n3)个三角形，那么可以通过移除o(n2)条边来删除所有的三角形。</p>\n  <p data-track=\"7\">然后陶哲轩看罢o3-mini的作答后表示：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"8\">在几秒钟后，我收到了一个完美的答案，（o3-mini）正确地解释了这种蕴含关系。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1eb1b814-93f0-471a-46d9-d901e8bfd600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1eb1b814-93f0-471a-46d9-d901e8bfd600/public\">\n  </div>\n  <p data-track=\"10\">首先，我们来看下陶哲轩的<strong>Prompt</strong>：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"11\">Ruzsa和Szemeredi的三角形移除引理断言，如果一个具有n个顶点的图（n很大）包含o(n3)个三角形，那么可以通过移除o(n2)条边使其变为无三角形图。显然，这一引理蕴含了以下结论：如果一个具有n个顶点的图是n个诱导匹配的并集，那么它只包含o(n2)条边。你知道后者是如何从前者的结论中推导出来的吗？</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c5c5658-f7e6-4422-4c96-963cb0e39a00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c5c5658-f7e6-4422-4c96-963cb0e39a00/public\">\n  </div>\n  <p data-track=\"12\">对于这个问题，o3-mini的回答是这样的：</p>\n  <p data-track=\"13\">（注：为完整体现内容，o3-mini的作答将以英文呈现）</p>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dd864f80-ee07-49b3-ff95-a8bd5c7a0800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dd864f80-ee07-49b3-ff95-a8bd5c7a0800/public\">\n  </div>\n  <p data-track=\"14\">可以看到，o3-mini回答的逻辑还是比较清晰的。</p>\n  <p data-track=\"15\">一步一步展开论证，从起始条件（诱导匹配的并集），到构建辅助图，再到建立边与三角形数量的联系、应用引理，最后得出结论。</p>\n  <p data-track=\"16\">紧接着，陶哲轩开始追问了：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"17\">谢谢！三角形移除引理的另一个标准推论是(6,3)定理：如果一个具有n个顶点的3-一致超图不包含(6,3)-配置，即不存在六个顶点确定至少三个超边的情况，那么该超图只包含o(n2)条超边。你能解释一下为什么这也是三角形移除引理的一个推论吗？</p>\n  </blockquote>\n  <p data-track=\"18\">o3-mini在思考了片刻后，开始作答：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/27530b0a-6221-4822-39a5-71be3306e200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/27530b0a-6221-4822-39a5-71be3306e200/public\">\n  </div>\n  <p data-track=\"19\">o3-mini对这个问题的总结是：</p>\n  <p data-track=\"20\">在一个不包含任何 “(6,3)-configuration”（即任意六个顶点不生成三条或更多超边 ）的3-uniform 超图中，由于将超边编码为辅助图中的三角形后，辅助图的三角形结构受超图条件限制呈现 “稀疏” 状态 ，根据三角形移除引理可以推断出，该超图中的超边总数为o(n2)，也就是说这样的超图不会过于稠密。</p>\n  <p data-track=\"21\">在此之后，陶哲轩便开始<strong>加大难度</strong>：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"22\">感谢你的大致概述！我有兴趣将其扩展成一个更详细的证明。我听说首先考虑超图是线性的情况会很有帮助——即任意两条超边不会共享两个顶点。你能将你的概述扩展成一个更精确的论证，专门针对线性情况吗？</p>\n  </blockquote>\n  <p data-track=\"23\">这一次，o3-mini思考的时间足足是上个问题的四倍：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb6ad4b7-4e51-4455-1e82-833716caec00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fb6ad4b7-4e51-4455-1e82-833716caec00/public\">\n  </div>\n  <p data-track=\"24\">这次o3-mini的推理过程，是通过构造一个辅助图G，将超图中的每个超边对应到辅助图中的一个三角形。利用线性性质保证这些三角形边不相交，再通过假设m=Ω(n2)推出与三角形移除引理相矛盾的结果，从而证明原假设错误，得出超边数量的渐近上界 。</p>\n  <p data-track=\"25\">陶哲轩再追问：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"26\">如何确保图G不会产生任何额外的三角形，除了那些直接由超边生成的三角形之外？</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/44c2c551-cd70-42dd-2bb4-2a015b47df00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/44c2c551-cd70-42dd-2bb4-2a015b47df00/public\">\n  </div>\n  <p data-track=\"27\">至此，陶哲轩评价道：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"28\">好的，我认为这给出了(6,3)定理在线性情况下的<strong>完整证明</strong>。</p>\n  </blockquote>\n  <p data-track=\"29\">然后继续追问o3-mini：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"30\">你有什么建议，如何建立一般情况下使用这个线性的情况？</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/38239d8f-8816-4ac8-eaf8-5d3866a1ca00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/38239d8f-8816-4ac8-eaf8-5d3866a1ca00/public\">\n  </div>\n  <p data-track=\"31\">o3-mini给出了一种“清理”的路数：</p>\n  <ul>\n   <li data-track=\"32\">清理超图：通过删除少量超边使得到的子超图H’线性化，“(6,3) 条件” 保证不会移除过多超边。</li>\n   <li data-track=\"33\">应用线性情况结论：为线性超图H’构建辅助图，每个超边对应一个边不相交三角形。</li>\n   <li data-track=\"34\">利用三角形移除引理：过多的边不相交三角形会导致与引理矛盾，所以H’有o(n2)个超边。</li>\n   <li data-track=\"35\">推导原始超图的边界：因为H’保留了H’的几乎所有超边，所以原始超图H’也有o(n2)个超边。</li>\n  </ul>\n  <p data-track=\"36\">陶哲轩认为这是一个不错的策略，并最后提出了一个问题：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"37\">你能不能试着给出一个更精确的清理步骤的描述，这个步骤可能会把一个一般的(6,3)超图转换成一个线性的(6,3)超图，并对边缘进行一些控制？</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4dd1e7d7-628f-4110-9d24-8f07926c9f00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4dd1e7d7-628f-4110-9d24-8f07926c9f00/public\">\n  </div>\n  <p data-track=\"39\">在陶哲轩六连问之后，除了刚才提到的“完美答案”之外，他还给出了更加客观中立的评价：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"40\">我的总体感觉是，至少对于研究级的数学任务，当前的模型在“仅需用户提供大致指导即可真正有用”和“只有在用户提供大量详细指导后才有用”之间波动，而最强大的模型在前者中的回答比例更高。</p>\n   <p data-track=\"41\">它们似乎特别适合那些非常标准的问题，这些问题的答案基本上可以在现有资源（如维基百科或StackOverflow）中找到。</p>\n   <p data-track=\"42\">但随着问题变得越来越冷门，成功率逐渐下降（尽管下降的方式较为平缓），并且需要更多的用户指导（或更高的计算资源）才能使LLM的输出达到可用的形式。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/436df588-d330-44cd-2c10-8d9982d5a800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/436df588-d330-44cd-2c10-8d9982d5a800/public\">\n  </div>\n  <p data-track=\"43\">陶哲轩的这波实测也引发了不少网友的讨论。</p>\n  <p data-track=\"44\">例如有人质疑LLM的推理能力，认为它们是随机文本生成器，而不是真正的推理模型。他指出LLM的输出依赖于点赞/踩票信号，而不是真正的逻辑推理。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"陶哲轩亲测点赞o3-mini：专家级证明，我收到了一个完美的答案\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c8ad72d7-b22d-4f69-eb17-af8a06223000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c8ad72d7-b22d-4f69-eb17-af8a06223000/public\">\n  </div>\n  <p data-track=\"45\">陶哲轩与o3-mini完整对话：<br class=\"sysbr\">\n    https://chatgpt.com/share/67cf13cf-53dc-800e-a382-e4ece8341a6d</p>\n  <p data-track=\"46\">参考链接：<br class=\"sysbr\">\n    https://mathstodon.xyz/@tao/114139145175476223</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "陶哲轩亲测 o3-mini，验证其在数学证明题上的能力，发现其在标准问题上表现优秀，但在复杂问题上依赖指导。",
+  "oneSentenceSummary": "陶哲轩亲测 o3-mini，验证其在数学证明题上的能力，发现其在标准问题上表现优秀，但在复杂问题上依赖指导。",
+  "summary": "陶哲轩对 o3-mini 进行了实测，通过“六连问” 逐步增加难度，围绕三角形移除引理这一专家级数学问题，检验了其推理能力。结果显示，o3-mini 在标准问题上能给出完美答案，但在更冷门、更复杂的问题上，需要用户提供更详细的指导才能达到可用水平。文章引发了关于 LLM 推理能力的讨论，有观点认为其依赖于点赞 / 踩票信号，而非真正的逻辑推理。",
+  "mainPoints": [
+    {
+      "point": "o3-mini 在标准数学问题上表现出色",
+      "explanation": "在三角形移除引理的标准问题上，o3-mini 能够快速给出正确且逻辑清晰的答案，证明了其在特定领域的知识储备和推理能力。"
+    },
+    {
+      "point": "o3-mini 在复杂问题求解中展现潜力，但仍需用户指导",
+      "explanation": "随着问题难度增加，o3-mini 的成功率下降，需要用户提供更详细的指导才能得到可用的输出，表明其泛化能力和自主推理能力仍有局限性，但也展现了其在复杂问题求解中的潜力。"
+    },
+    {
+      "point": "o3-mini 擅长解决能在现有资源中找到答案的标准问题",
+      "explanation": "o3-mini 在解决标准问题时表现出色，表明其擅长利用现有知识和资源，快速找到解决方案。"
+    },
+    {
+      "point": "LLM 推理能力引发争议",
+      "explanation": "有观点认为，LLM 的输出依赖于训练数据的点赞 / 踩票信号，而非真正的逻辑推理，其推理能力有待进一步验证。"
+    }
+  ],
+  "keyQuotes": [
+    "在几秒钟后，我收到了一个完美的答案，（o3-mini）正确地解释了这种蕴含关系。",
+    "我的总体感觉是，至少对于研究级的数学任务，当前的模型在'仅需用户提供大致指导即可真正有用'和'只有在用户提供大量详细指导后才有用'之间波动，而最强大的模型在前者中的回答比例更高。",
+    "它们似乎特别适合那些非常标准的问题，这些问题的答案基本上可以在现有资源（如维基百科或 StackOverflow）中找到。",
+    "好的，我认为这给出了 (6，3) 定理在线性情况下的**完整证明**。"
+  ],
+  "tags": [
+    "大语言模型",
+    "数学证明",
+    "数学",
+    "推理能力",
+    "o3-mini"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2031,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741673566000,
+  "publishDateStr": "2025-03-11",
+  "publishDateTimeStr": "2025-03-11 06:12:46"
+}

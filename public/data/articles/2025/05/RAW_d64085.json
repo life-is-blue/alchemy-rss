@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d64085",
+  "title": "浙大&港理工等提出 InfiGUI-R1：利用强化学习，让 GUI 智能体学会规划任务、反思错误 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-02-2",
+  "date": "2025-05-02 10:33:25",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p data-pm-slice=\"0 0 []\"><br></p>\n  <p data-pm-slice=\"0 0 []\">当前，多模态大模型驱动的图形用户界面（GUI）智能体在自动化手机、电脑操作方面展现出巨大潜力。然而，一些现有智能体更类似于「反应式行动者」（Reactive Actors），主要依赖隐式推理，面对需要复杂规划和错误恢复的任务时常常力不从心。</p>\n  <p data-pm-slice=\"0 0 []\">我们认为，要真正提升 GUI 智能体的能力，关键在于从「反应式」迈向「深思熟虑的推理者」（Deliberative Reasoners）。为此，浙江大学联合香港理工大学等机构的研究者们提出了 <strong>InfiGUI-R1</strong>，一个基于其创新的 <strong>Actor2Reasoner </strong>框架训练的 GUI 智能体，旨在让 AI 像人一样在行动前思考，行动后反思。</p>\n  <section>\n   <img data-imgfileid=\"503483643\" data-ratio=\"0.44722222222222224\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8beaddf1-d963-4b04-976b-d088094da800/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/27408a2a-1a21-4283-9e0c-e66778a8eee3/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：InfiGUI-R1: Advancing Multimodal GUI Agents from Reactive Actors to Deliberative Reasoners</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2504.14239</p></li>\n   <li>\n    <p>项目仓库：https://github.com/Reallm-Labs/InfiGUI-R1</p></li>\n   <li>\n    <p>模型地址：https://huggingface.co/Reallm-Labs/InfiGUI-R1-3B</p></li>\n  </ul>\n  <p><strong>从「反应行动」到「深思熟虑」：GUI 智能体面临的挑战</strong></p>\n  <p>想象一下，你让 AI Agent 帮你完成一个多步骤的手机操作，比如「预订明天下午去北京的高铁票」。一个简单的「反应行动」式 Agent 可能会按顺序点击它认为相关的按钮，但一旦遇到预期外的界面（如弹窗广告、加载失败），就容易卡壳或出错，因为它缺乏「规划」和「反思」的能力。</p>\n  <p>为了让 GUI 智能体更可靠、更智能地完成复杂任务，它们需要<strong>具备深思熟虑的推理能力</strong>。这意味着智能体的行为模式需要从简单的「感知 → 行动」转变为更高级的「感知 → 推理 → 行动」模式。这种模式要求智能体不仅能看懂界面，还要能：</p>\n  <ul>\n   <li>\n    <section>\n     <strong>理解任务意图</strong>：将高层指令分解为具体的执行步骤\n    </section></li>\n   <li>\n    <section>\n     <strong>进行空间推理</strong>：准确理解界面元素的布局和关系，定位目标\n    </section></li>\n   <li>\n    <section>\n     <strong>反思与纠错</strong>：识别并从错误中恢复，调整策略\n    </section></li>\n  </ul>\n  <p><strong>Actor2Reasoner 框架：两步走，打造深思熟虑的推理者</strong></p>\n  <p>为了实现这一目标，研究团队提出了 <strong>Actor2Reasoner 框架</strong>，一个以推理为核心的两阶段训练方法，旨在逐步将 GUI 智能体从「反应式行动者」培养成「深思熟虑的推理者」。</p>\n  <section>\n   <img data-imgfileid=\"503483644\" data-ratio=\"0.28888888888888886\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e99a7729-d1e6-417c-d0d6-6d66ee512300/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/9216f275-b6bb-4f08-bce9-3b66d2037841/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>图：Actor2Reasoner 框架概览</sup></p>\n  <p><strong>第一阶段：推理注入（Reasoning Injection）—— 打下推理基础</strong></p>\n  <p>此阶段的核心目标是完成从「行动者」到「基础推理者」的关键转变。研究者们采用了<strong>空间推理蒸馏（Spatial Reasoning Distillation）</strong>技术。他们首先识别出模型在哪些交互步骤中容易因缺乏推理而出错（称之为「推理瓶颈样本」），然后利用能力更强的「教师模型」生成带有明确空间推理步骤的高质量执行轨迹。</p>\n  <p>通过在这些包含显式推理过程的数据上进行监督微调（SFT），引导基础模型学习在生成动作前，先进行必要的逻辑思考，特别是整合 GUI 视觉空间信息的思考。这一步打破了「感知 → 行动」的直接链路，建立了「感知 → 推理 → 行动」的基础模式。</p>\n  <p><strong>第二阶段：深思熟虑增强（Deliberation Enhancement）—— 迈向高级推理</strong></p>\n  <p>在第一阶段的基础上，此阶段利用强化学习（RL）进一步提升模型的「深思熟虑」能力，重点打磨规划和反思两大核心能力。研究者们创新性地引入了两种方法：</p>\n  <ul>\n   <li>\n    <section>\n     <strong>目标引导</strong>：为了增强智能体「向前看」的规划和任务分解能力，研究者们设计了奖励机制，鼓励模型在其推理过程中生成明确且准确的中间子目标。通过评估生成的子目标与真实子目标的对齐程度，为模型的规划能力提供有效的学习信号。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     <strong>错误回溯</strong>：为了培养智能体「向后看」的反思和自我纠错能力，研究者们在 RL 训练中有针对性地构建了模拟错误状态或需要从错误中恢复的场景。例如，让模型学习在执行了错误动作后如何使用「返回」等操作进行「逃逸」，以及如何在「回到正轨」后重新评估并执行正确的动作。这种针对性的训练显著增强了模型的鲁棒性和适应性。 \n     <br>\n     <br>\n    </section></li>\n  </ul>\n  <section>\n   为了有效引导强化学习过程，研究者们还采用了一套专门适用于 GUI 多种任务场景的奖励函数，为智能体提供更佳的反馈。\n  </section>\n  <p><strong>InfiGUI-R1-3B：小参数，大能量</strong></p>\n  <p>基于 Actor2Reasoner 框架，研究团队训练出了 <strong>InfiGUI-R1-3B </strong>模型（基于 Qwen2.5-VL-3B-Instruct）。尽管只有 30 亿参数，InfiGUI-R1-3B 在多个关键基准测试中展现出了卓越的性能：</p>\n  <p><strong>GUI 元素定位（Grounding）能力突出:</strong><strong><br></strong></p>\n  <ul>\n   <li>\n    <section>\n     在跨平台（移动、桌面、网页）的 <strong>ScreenSpot </strong>基准上，平均准确率达到 <strong>87.5%</strong>，在移动、桌面、Web 平台的文本和图标定位任务上全面领先，达到同等参数量模型中 SOTA 水平。\n    </section></li>\n  </ul>\n  <ul>\n   <li>\n    <section>\n     在更具挑战性、面向复杂高分屏桌面应用的 <strong>ScreenSpot-Pro</strong> 基准上，平均准确率达到 <strong>35.7%</strong>，性能比肩参数量更大且表现优异的 7B 模型（如 UI-TARS-7B），证明了其在复杂专业软件（例如 CAD、Office）界面上的指令定位准确性。\n    </section></li>\n  </ul>\n  <section>\n   <img data-imgfileid=\"503483646\" data-ratio=\"0.6731481481481482\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5629ca48-c7eb-4ffd-9132-e2f467359300/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/aa9b0230-6642-40af-9081-9320a308f934/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>表：ScreenSpot 性能对比</sup></p>\n  <section>\n   <img data-imgfileid=\"503483647\" data-ratio=\"0.5814814814814815\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/666878cd-1f32-4a3b-6994-e26340403a00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/5da48537-bc01-4f13-a7ab-d726ba6509f9/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>图：ScreenSpot-Pro 性能对比</sup></p>\n  <section>\n   <strong>复杂任务执行（Trajectory）能力优异</strong>\n  </section>\n  <section>\n   在模拟真实安卓环境复杂任务的 AndroidControl 基准上（包含 Low 和 High 两个难度级别），成功率分别达到 <strong>92.1%</strong> 和 <strong>71.1%</strong>。这一成绩不仅超越了参数量相近的 SOTA 模型（如 UI-TARS-2B），甚至优于一些参数量远超自身的 7B 乃至 72B 模型（如 Aguvis-72B）。\n  </section>\n  <section>\n   <img data-imgfileid=\"503483648\" data-ratio=\"0.6621900826446281\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f7932da7-5155-4df7-15c5-11328931a500/public\" data-type=\"png\" data-w=\"968\" type=\"block\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/24a197bf-4d6b-4f36-80a9-a24480b24d82/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 表：AndroidControl 性能对比</sup></p>\n  <p>这些结果充分证明了 Actor2Reasoner 框架的有效性。通过系统性地注入和增强推理能力，特别是规划和反思能力，InfiGUI-R1-3B 以相对较小的模型规模，在 GUI 理解和复杂任务执行方面取得了领先或极具竞争力的表现。</p>\n  <p><strong>结语</strong></p>\n  <p>InfiGUI-R1 和 Actor2Reasoner 框架的提出，为开发更智能、更可靠的 GUI 自动化工具开辟了新的道路。它证明了通过精心设计的训练方法，即使是小规模的多模态模型，也能被赋予强大的规划、推理和反思能力，从而更好地理解和操作我们日常使用的图形界面，向着真正「能思考、会纠错」的 AI 助手迈出了坚实的一步。</p>\n \n",
+  "aiSummary": "InfiGUI-R1 通过 Actor2Reasoner 框架和强化学习，提升 GUI 智能体在复杂任务中的规划、推理和纠错能力，为 GUI 自动化开辟新路径。",
+  "oneSentenceSummary": "InfiGUI-R1 通过 Actor2Reasoner 框架和强化学习，提升 GUI 智能体在复杂任务中的规划、推理和纠错能力，为 GUI 自动化开辟新路径。",
+  "summary": "本文介绍了浙江大学等机构提出的 InfiGUI-R1，一个基于 Actor2Reasoner 框架训练的 GUI 智能体。该框架旨在通过两阶段训练方法，将 GUI 智能体从“反应式行动者”培养成“深思熟虑的推理者”，解决现有 GUI 智能体在复杂规划和错误恢复方面的不足。第一阶段通过空间推理蒸馏技术，让模型学习在行动前进行逻辑思考。第二阶段利用强化学习，增强模型的规划和反思能力，通过目标引导和错误回溯，提升智能体在复杂任务中的表现。实验结果表明，InfiGUI-R1 在 GUI 元素定位和复杂任务执行方面均表现出色，证明了 Actor2Reasoner 框架的有效性，为开发更智能、更可靠的 GUI 自动化工具开辟了新的道路。",
+  "mainPoints": [
+    {
+      "point": "Actor2Reasoner 框架是提升 GUI 智能体推理能力的关键",
+      "explanation": "通过推理注入和深思熟虑增强两个阶段，有效提升智能体的规划、推理和反思能力，使其能够更好地完成复杂任务。"
+    },
+    {
+      "point": "空间推理蒸馏技术为 GUI 智能体打下推理基础",
+      "explanation": "通过学习带有明确空间推理步骤的高质量执行轨迹，引导模型在生成动作前进行必要的逻辑思考，建立“感知 → 推理 → 行动”的基础模式。"
+    },
+    {
+      "point": "强化学习显著增强了 GUI 智能体的鲁棒性和适应性",
+      "explanation": "通过目标引导和错误回溯，模型学会如何在错误中恢复，并重新评估和执行正确的动作，从而提升在复杂环境中的表现。"
+    }
+  ],
+  "keyQuotes": [
+    "要真正提升 GUI 智能体的能力，关键在于从「反应式」迈向「深思熟虑的推理者」",
+    "Actor2Reasoner 框架，一个以推理为核心的两阶段训练方法，旨在逐步将 GUI 智能体从「反应式行动者」培养成「深思熟虑的推理者」",
+    "通过系统性地注入和增强推理能力，特别是规划和反思能力，InfiGUI-R1-3B 以相对较小的模型规模，在 GUI 理解和复杂任务执行方面取得了领先或极具竞争力的表现"
+  ],
+  "tags": [
+    "GUI 智能体",
+    "GUI 自动化",
+    "人机交互",
+    "强化学习",
+    "多模态大模型"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2257,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746182005000,
+  "publishDateStr": "2025-05-02",
+  "publishDateTimeStr": "2025-05-02 10:33:25"
+}

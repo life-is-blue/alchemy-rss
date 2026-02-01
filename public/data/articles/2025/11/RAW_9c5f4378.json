@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9c5f4378",
+  "title": "Vite+ 正式发布，搭载一体化工具链与 Rust 核心引擎",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262532&idx=4&sn=7410078c4f34cfe2d730fd07949281bd",
+  "date": "2025-11-08 04:50:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Daniel Curtis</span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">VoidZero 正式发布了基于 Vite 构建的全新一体化 JavaScript 工具链 Vite+。作为 Vite 的即插即用超集，Vite+ 提供了一体化命令行体验，涵盖项目框架搭建、测试、代码检查、格式化、库打包、单仓库任务执行及开发工具可视化等功能。其目标在于减少工具链碎片化，使大型团队能够围绕单个高性能工作流协同运作。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Vite+ 旨在从以下三个主要的方面进行增强：工具整合、性能与可扩展性以及企业级特性。在工具方面，Vite+ 通过新增内置命令扩展了熟悉的命令集：</span></p>\n   <ul style=\"margin: 14px 0 0 0;line-height: 1.75em;text-align: left;list-style-type: disc;\" class=\"list-paddingleft-1\">\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">vite new —— 用于搭建新应用，推荐使用单体库项目结构。该命令也可用于生成新软件包。</span></p>\n    </li>\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">vite test —— 提供与 Vitest 相同的测试命令，兼容 Jest API，支持浏览器模式和可视化回归测试。</span></p>\n    </li>\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">vite lint —— 一个基于 Oxlint 构建的代码检查命令，后者是一个基于 Rust 的代码检查工具，据称 比 ESLint 快 50-100 倍，拥有 600 多个兼容 ESLint 的规则。</span></p>\n    </li>\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">vite fmt —— 一个代码格式化命令，基于即将发布的 Oxfmt 构建。按照文档的说法，他们的目标是与 Prettier 百分之九十九兼容，并提供额外的灵活性。</span></p>\n    </li>\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">vite lib —— 一个打包命令，基于 tsdown 和 Rolldown 构建，提供快速打包库的功能。Vite+ 选择了 Rolldown 而不是 Vite v7 中使用的 Rollup，因为 Rolldown 比 Rollup 快 10-30 倍。</span></p>\n    </li>\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">vite run —— 一个带有缓存的单体库任务运行器，类似于 turborepo，但使用了智能缓存，无需显式配置。</span></p>\n    </li>\n    <li style=\"text-align: left;font-size: 16px;\">\n     <p><span leaf=\"\">最后，vite ui 提供了开发工具，用于检查模块行为、调整大小以及摇树。</span></p>\n    </li>\n   </ul>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在性能方面，其核心组件使用 Rust（通过 Oxc、Rolldown）实现，据说构建速度比 webpack 快 40 倍，并且在代码检查 / 格式化流程方面有重大改进。其架构设计充分考虑了可扩展性和单体库的复杂性，内置了智能缓存和成熟的工作流支持。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">企业特性包括供应链审查、SLA（针对中大型团队）以及供 OSS 和小型团队免费试用的许可模型，但大型组织需要使用商业许可。其定价方式尚未公布。根据发布公告，Vite+ 是补充性的，不会取代 Vite 或其生态系统，而只是对它进行扩展以便适应更大规模的应用。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Reddit（r/webdev）上，一位潜在用户评论说，定价和商业可用性被刻意隐藏在了页脚上方。该帖发布者回应称，这从来都不是一个秘密，它是一个商业项目。在 HackerNews 上，讨论更多是围绕着成本展开，有位用户担心 vite 是一个“抽地毯式骗局”，并补充说，“Vite 团队的这一举动非常糟糕”。对此，Vite 创始人 Evan You 在回应中表示，他向用户保证，现有的开源库如 Vite 将保持开源，Vite+ 产生的收入将用于继续支持这些底层库的开发。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在同一条 Hacker News 讨论帖中，人们围绕该项目雄心勃勃的定位展开了探讨，并且提到，其他工具（如 Rome）尝试实现相同的目标却以失败而告终，但对 Vite+ 能否成功，人们仍然抱有乐观的预期。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Vite+ 是一款专为现代 JavaScript/TypeScript Web 应用而设计的工具链，基于广为人知的 Vite 生态系统而构建，其核心部分开源，商业使用可提供全部源代码。此次发布标志着该工具正朝着工具整合与企业友好型工作流的方向迈进，并且为现有的 Vite 用户提供兼容性保证。随着早期访问申请通道的开放，Vite+ 有望成为统一开发平台领域的有力竞争者。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/10/vite-plus-unveiled/\" target=\"_blank\">https://www.infoq.com/news/2025/10/vite-plus-unveiled/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "VoidZero 发布 Vite+，一款基于 Vite、搭载 Rust 核心引擎的一体化 JavaScript 工具链，旨在解决工具链碎片化并提升大型团队开发效率。",
+  "oneSentenceSummary": "VoidZero 发布 Vite+，一款基于 Vite、搭载 Rust 核心引擎的一体化 JavaScript 工具链，旨在解决工具链碎片化并提升大型团队开发效率。",
+  "summary": "文章详细介绍了 VoidZero 公司发布的 Vite+，一个基于 Vite 的全新一体化 JavaScript 工具链。Vite+作为 Vite 的即插即用超集，旨在通过整合项目搭建、测试、代码检查（基于 Rust 的 Oxlint）、格式化（基于 Oxfmt）、库打包（基于 tsdown 和 Rolldown）、单仓库任务执行（类似 turborepo）及开发工具可视化等功能，减少工具链碎片化，提升大型团队的协同效率。其核心组件采用 Rust 实现，宣称在性能上远超现有工具，例如构建速度比 Webpack 快 40 倍。文章还提及了 Vite+的企业级特性和商业许可模式，以及由此引发的社区讨论，Vite 创始人 Evan You 对此回应称，Vite+的收入将用于支持底层开源库的开发。Vite+的发布标志着前端工具链向整合、高性能和企业级支持方向发展。",
+  "mainPoints": [
+    {
+      "point": "Vite+ 旨在通过提供一体化命令行体验，解决前端工具链碎片化问题。",
+      "explanation": "它整合了项目搭建、测试、代码检查、格式化、库打包、单仓库任务执行及开发工具可视化等多种功能，简化了大型团队的工作流，提升开发效率。"
+    },
+    {
+      "point": "Vite+ 的核心引擎采用 Rust 实现，显著提升了构建、检查和打包的性能与可扩展性。",
+      "explanation": "利用 Oxc、Rolldown 等 Rust 工具，Vite+宣称在速度上远超传统工具，如构建速度比 Webpack 快 40 倍，代码检查比 ESLint 快 50-100 倍，以适应大规模应用和单体库的复杂性。"
+    },
+    {
+      "point": "作为商业项目，Vite+ 旨在通过商业许可模式支持底层开源生态发展，但其定价策略引发社区关注。",
+      "explanation": "Vite 创始人 Evan You 回应称，Vite+的收入将用于持续支持 Vite 等底层开源库的开发，以确保 Vite 生态的健康发展，并打消社区疑虑。"
+    }
+  ],
+  "keyQuotes": [
+    "VoidZero 正式发布了基于 Vite 构建的全新一体化 JavaScript 工具链 Vite+。",
+    "Vite+ 提供了一体化命令行体验，涵盖项目框架搭建、测试、代码检查、格式化、库打包、单仓库任务执行及开发工具可视化等功能。",
+    "其核心组件使用 Rust（通过 Oxc、Rolldown）实现，据说构建速度比 webpack 快 40 倍，并且在代码检查 / 格式化流程方面有重大改进。",
+    "Vite 创始人 Evan You 在回应中表示，他向用户保证，现有的开源库如 Vite 将保持开源，Vite+ 产生的收入将用于继续支持这些底层库的开发。",
+    "Vite+ 是一款专为现代 JavaScript/TypeScript Web 应用而设计的工具链，基于广为人知的 Vite 生态系统而构建，其核心部分开源，商业使用可提供全部源代码。"
+  ],
+  "tags": [
+    "前端开发",
+    "JavaScript",
+    "构建工具",
+    "Vite",
+    "Rust"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1209,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762577400000,
+  "publishDateStr": "2025-11-08",
+  "publishDateTimeStr": "2025-11-08 04:50:00"
+}

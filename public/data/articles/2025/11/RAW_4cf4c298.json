@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4cf4c298",
+  "title": "DynamoDB DNS 系统中的竞态条件：分析 AWS US-EAST-1 (美国东部-1) 区域的中断事件",
+  "url": "https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-15 10:46:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>On October 19th and 20th, AWS experienced an extended outage triggered by a failure in Amazon DynamoDB that affected most services in its most popular region, Northern Virginia. The cloud provider <a href=\"https://aws.amazon.com/message/101925/?ck_subscriber_id=3258097686\">released an analysis of the incident</a>, sparking discussions in the community about redundancy on AWS, moving out of public cloud, and multi-region approaches.</p>\n   <p>According to the post-mortem, which provides details on the DynamoDB DNS management architecture, the incident was triggered by a latent defect in the service’s automated DNS management system, leading to endpoint resolution failures for DynamoDB. Other popular services that rely on DynamoDB, including new EC2 instance launches, Lambda invocations, and Fargate task launches, were also impacted during the outage. In the summary of the Amazon DynamoDB service disruption in the US-EAST-1 region, the team acknowledges that the reliability issue significantly affected many customers. They write:</p>\n   <blockquote>\n    <p>The root cause of this issue was a latent race condition in the DynamoDB DNS management system that resulted in an incorrect empty DNS record for the service’s regional endpoint (dynamodb.us-east-1.amazonaws.com) that the automation failed to repair.</p>\n   </blockquote>\n   <p>While the incident report focuses on specific 2- or 3-hour periods and services, the repercussions for many customers lasted significantly longer, with some reporting issues for up to 15 hours. While in many online threads developers joked about \"it's always DNS\", <a href=\"https://www.linkedin.com/in/theburningmonk/\">Yan Cui</a>, AWS Hero and serverless expert, highlights in <a href=\"https://newsletter.theburningmonk.com/posts/it-wasn-t-dns-after-all\">his newsletter</a>:</p>\n   <blockquote>\n    <p>The DNS failure was the first symptom, not the root cause of the recent AWS outage. The root cause was a race condition in an internal DynamoDB microservice that automates DNS record management for the regional cells of DynamoDB.</p>\n   </blockquote>\n   <p>During the outage, new EC2 instances were created at the hypervisor level, but their networking configuration never completed. Furthermore, delays in network state propagation for newly launched EC2 instances also caused a cascading impact on the Network Load Balancer service and all other services that rely on it. Jeremy Daly, director of research at CloudZero, <a href=\"https://offbynone.io/issues/341/\">writes</a>:</p>\n   <blockquote>\n    <p>The good news? It’s all back to normal. The bad news? People are losing their minds over this and thinking that a T1 line to their garage would be more resilient.</p>\n   </blockquote>\n   <p>AWS has not yet addressed the race condition scenario, but is planning several short- and long-term changes as a result of this outage. The team writes:</p>\n   <blockquote>\n    <p>We have already disabled the DynamoDB DNS Planner and the DNS Enactor automation worldwide. In advance of re-enabling this automation, we will fix the race condition scenario and add additional protections to prevent the application of incorrect DNS plans. For NLB, we are adding a velocity control mechanism to limit the capacity a single NLB can remove when health check failures cause AZ failover.</p>\n   </blockquote>\n   <p>Furthermore, the cloud provider plans to improve the throttling mechanism in EC2 data propagation systems to rate-limit incoming work based on the size of the waiting queue, protecting the service during periods of high load.</p>\n   <p>In a <a href=\"https://www.linkedin.com/posts/roman-siewko_aws-reliability-20062025-we-often-have-activity-7388488110734553088-T04x?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">popular LinkedIn post</a>, Roman Siewko, a DevOps consultant at ERGO Technology, argues that while the outage impacted many large providers and received significant attention, practitioners should also understand the history and the actual numbers before making changes. Siewko comments:</p>\n   <blockquote>\n    <p>The ~15-hour AWS outage on October 20, 2025, left a strong impression. In contrast, it’s hard to compare that with the nearly silent reliability of the previous years. (...) Most of the time, it’s closer to four nines. As of October 25, 2025, the rolling figures are 99.84% (1-year) and 99.95% (5-year).</p>\n   </blockquote>\n   <p>Mudassir Mustafa, co-founder and CEO of Rebase, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7388488110734553088?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7388488110734553088%2C7388557711539511298%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287388557711539511298%2Curn%3Ali%3Aactivity%3A7388488110734553088%29\">adds</a>:</p>\n   <blockquote>\n    <p>In reliability engineering, memory bias often outweighs data. Teams overreact to rare events but underinvest in the slow, invisible work that keeps uptime steady year after year.</p>\n   </blockquote>\n   <p>The <a href=\"https://health.aws.amazon.com/health/status?eventID=arn:aws:health:us-east-1::event/MULTIPLE_SERVICES/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE/AWS_MULTIPLE_SERVICES_OPERATIONAL_ISSUE_BA540_514A652BE1A\">AWS event history</a> tracks all impacted services and their timelines.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Race Condition in DynamoDB DNS System: Analyzing the AWS US-EAST-1 Outage\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763203560000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "分析由 DynamoDB 的 DNS 管理系统中潜在的竞态条件引起的 AWS US-EAST-1 (美国东部-1) 区域重大中断事件，详细说明了其广泛影响以及 AWS 计划的补救措施。",
+  "oneSentenceSummary": "分析由 DynamoDB 的 DNS 管理系统中潜在的竞态条件引起的 AWS US-EAST-1 (美国东部-1) 区域重大中断事件，详细说明了其广泛影响以及 AWS 计划的补救措施。",
+  "summary": "本文深入探讨了 US-EAST-1 (美国东部-1) 区域发生的重大 AWS 中断事件，该事件主要是由 Amazon DynamoDB 的自动化 DNS 管理系统中的潜在竞态条件触发的。这个缺陷导致 DynamoDB 区域端点出现不正确的空 DNS 记录，随后导致端点解析失败，并对关键的依赖服务（如新的 EC2 实例启动、Lambda 调用和 Fargate 任务）产生连锁影响。分析表明，DNS 故障是一种表象，而内部 DynamoDB 微服务中的底层竞态条件才是真正的根本原因。AWS 的官方事后分析报告承认了对客户的严重影响，并概述了立即采取的行动，包括在全球范围内禁用有问题的 DNS 自动化，以及修复竞态条件的长期计划。此外，还将增强 EC2 数据传播中的限流机制。本文还包含了专家的观点，他们提倡采用数据驱动的方法来评估云可靠性，敦促从业者考虑 AWS 一贯的长期可用性，而不是对罕见的、备受瞩目的事件过度解读。",
+  "mainPoints": [
+    {
+      "point": "DynamoDB 自动化 DNS 管理系统中的潜在竞态条件是 AWS US-EAST-1 (美国东部-1) 区域中断的根本原因。",
+      "explanation": "该缺陷导致 DynamoDB 区域端点生成不正确的空 DNS 记录，导致服务解析失败，并对依赖的 AWS 服务造成广泛中断。"
+    },
+    {
+      "point": "由于复杂的相互依赖关系和网络配置问题，中断的影响波及到各种 AWS 服务。",
+      "explanation": "新的 EC2 实例网络配置失败以及新启动实例的网络状态传播延迟产生了多米诺骨牌效应，影响了网络负载均衡器和其他服务。"
+    },
+    {
+      "point": "AWS 正在实施短期和长期解决方案，以解决中断的根本原因并增强系统弹性。",
+      "explanation": "采取的措施包括禁用错误的 DNS 自动化、修复竞态条件、增加保护措施以及改进 EC2 数据传播系统中的限流，以更好地处理高负载。"
+    },
+    {
+      "point": "在讨论云可靠性时，应更重视长期数据，避免受罕见重大事件造成的“认知偏差 (Memory Bias) ”的影响。",
+      "explanation": "专家建议采取平衡的观点，承认 AWS 多年来总体上的高可用性，而不是让罕见的中断事件过度影响对云弹性的看法。"
+    }
+  ],
+  "keyQuotes": [
+    "此问题的根本原因是 DynamoDB DNS 管理系统中的潜在竞态条件，该条件导致该服务的区域端点 (dynamodb.us-east-1.amazonaws.com) 出现不正确的空 DNS 记录，而自动化未能修复该记录。",
+    "DNS 故障是第一个症状，而不是最近 AWS 中断的根本原因。根本原因是内部 DynamoDB 微服务中的竞态条件，该微服务可自动执行 DynamoDB 区域单元的 DNS 记录管理。",
+    "我们已经在全球范围内禁用了 DynamoDB DNS 规划器 (DNS Planner) 和 DNS 执行器 (DNS Enactor) 自动化。在重新启用此自动化之前，我们将修复竞态条件场景并添加其他保护措施，以防止应用不正确的 DNS 计划。",
+    "在可靠性工程中，认知偏差 (Memory Bias) 通常超过数据。团队对罕见事件反应过度，但对保持正常运行时间逐年稳定的缓慢而无形的工作投资不足。"
+  ],
+  "tags": [
+    "云服务中断",
+    "竞态条件",
+    "云可靠性",
+    "事件分析",
+    "分布式系统"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 618,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763203560000,
+  "publishDateStr": "2025-11-15",
+  "publishDateTimeStr": "2025-11-15 10:46:00"
+}

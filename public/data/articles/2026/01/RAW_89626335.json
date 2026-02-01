@@ -1,0 +1,54 @@
+{
+  "id": "RAW_89626335",
+  "title": "瑞幸背后的芯片，藏不住了",
+  "url": "https://www.qbitai.com/2026/01/372724.html",
+  "date": "2026-01-26 11:38:03",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"66\">金磊 发自 凹非寺</p>\n   <p data-track=\"67\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>瑞幸咖啡</strong>背后的<strong>芯片</strong>，藏不住了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123313_12869aefbd5bcb37679200ae6ba3efef.webp\" data-src=\"https://image.jido.dev/20260126123313_12869aefbd5bcb37679200ae6ba3efef.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"3\">当你走进瑞幸咖啡店，点一杯生椰拿铁的所有过程，例如下单、出杯、核销、取餐……这一切的背后其实都有一双“眼睛”在盯着。</p>\n  <p data-track=\"4\">在看什么？</p>\n  <p data-track=\"5\">它要实时识别订单、判断制作节奏、校验物料状态、监控设备运行，还要把数据同步回总部，用于品控、调度和运营决策。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123313_c7a6d3ef1d7fa998aec57c4ae95e5c00.webp\" data-src=\"https://image.jido.dev/20260126123313_c7a6d3ef1d7fa998aec57c4ae95e5c00.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">这就是藏在瑞幸咖啡背后无数的边缘侧AI，它们有一个共性，那便是算力必须就近部署，响应必须足够快，稳定性必须足够强，成本还要可控。</p>\n  <p data-track=\"7\"><strong>芯片</strong>，成了其中关键中的关键。</p>\n  <p data-track=\"8\">就在今天，瑞幸背后芯片的庐山真面目终于浮出了水面——</p>\n  <p data-track=\"9\">来自一家刚刚完成上市不久的国产通用GPU公司，<strong>天数智芯</strong>。</p>\n  <p data-track=\"10\">前脚刚刚敲完钟，时隔仅半个月时间，天数智芯便又一口气发布了<strong>四款</strong>边端算力产品，<strong>彤央系列</strong>。</p>\n  <p data-track=\"11\">而且不只是发布的动作，像瑞幸已经在用的边端算力，正是彤央。</p>\n  <p data-track=\"12\">那么这个系列的产品到底实力几何，我们继续往下看。</p>\n  <p data-track=\"14\">先来看名字。</p>\n  <p data-track=\"15\">彤央之名，源自商周青铜器铭文，但在天数智芯的内部，彤央有着别样的寓意：</p>\n  <p data-track=\"16\"><strong>“彤”</strong>指向高能效计算能力，<strong>“央”</strong>则意味着在边端场景中承担核心算力枢纽的角色。</p>\n  <p data-track=\"17\">换言之，这是一个为真实业务现场而生的算力系列。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123313_60721f91c5b562a6e5cec19fc45083ea.webp\" data-src=\"https://image.jido.dev/20260126123313_60721f91c5b562a6e5cec19fc45083ea.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"18\">彤央系列的首发阵容，共包括四款产品：<strong>TY1000</strong>、<strong>TY1100</strong>，以及定位算力终端的<strong>TY1100_NX</strong>和<strong>TY1200</strong>。</p>\n  <p data-track=\"19\">先看彤央TY1000。</p>\n  <p data-track=\"20\">这是一个标准699Pin接口的模组，尺寸只有口袋大小，但在这个方寸之间，天数塞进了近<strong>200T的稠密算力</strong>。</p>\n  <p data-track=\"21\">在实际测试中，无论是典型的CV任务，还是NLP推理，甚至是对参数规模达到32B的DeepSeek-R1模型进行推理，以及具身智能VLA模型及世界模型等场景，TY1000在多项指标上都展现出不弱于主流国际方案的表现。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123312_5d2f0e803235ef5ef19e9fe49d7f30df.webp\" data-src=\"https://image.jido.dev/20260126123312_5d2f0e803235ef5ef19e9fe49d7f30df.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"22\">在天数智芯披露的测试数据中，TY1000在多类负载下的综合效率，超过了英伟达AGX Orin所对应的典型配置。</p>\n  <p data-track=\"23\">虽然这并不意味着全面替代，但至少证明了一件事：在边端通用推理这个维度，国产通用GPU已经具备了正面对比的能力。</p>\n  <p data-track=\"24\">其次是<strong>彤央TY1100</strong>。</p>\n  <p data-track=\"25\">这款产品在架构上进行了进一步升级，采用了12核ARM v9架构CPU，并在系统级算力供给上更加充沛。</p>\n  <p data-track=\"26\">它面向的是对通用计算和AI推理都有较高要求的复杂场景，比如多传感器融合、边缘数据预处理、实时决策等。</p>\n  <p data-track=\"27\">如果说TY1000更偏向算力核心，那么TY1100则更像是一块完整的边缘计算底座。</p>\n  <p data-track=\"28\">接下来，是针对对显存容量和性价比更加敏感用户的<strong>TY1100_NX</strong>。</p>\n  <p data-track=\"29\">更大的显存配置，使其在多模型并行、长序列推理等场景中具备更高的稳定性，同时维持了即插即用的部署方式，降低了系统集成门槛。</p>\n  <p data-track=\"30\">最后，便是<strong>彤央TY1200</strong>，则被天数智芯定义为算力终端。</p>\n  <p data-track=\"31\">它的算力规格提升到了300 TOPS，更重要的是，它是面向终端形态的整体方案。这类产品的目标用户，并不只是算法工程师，还包括希望直接把AI能力装进设备的行业客户。</p>\n  <p data-track=\"32\">从产品组合上看，彤央系列并没有走单点极致路线，而是刻意拉开了算力、形态和价格区间，覆盖从算力模组到终端的不同部署需求。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123312_159b44c1084f6e19e868c2e6e6dc9486.webp\" data-src=\"https://image.jido.dev/20260126123312_159b44c1084f6e19e868c2e6e6dc9486.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"33\">但天数智芯并没有把重点只放在芯片的参数上。</p>\n  <p data-track=\"34\">在生态层面，彤央系列在接口和形态上实现了与主流产品的Pin-to-Pin兼容，大幅降低了客户从既有方案迁移的成本。</p>\n  <p data-track=\"35\">这一点，对于已经有成熟系统的工业和商业客户来说，几乎是“是否愿意尝试”的分水岭。</p>\n  <p data-track=\"36\">更重要的是，这些产品并不是为了发布而发布。</p>\n  <p data-track=\"37\">在<strong>机器人领域</strong>，彤央与格蓝若机器人合作进入企业实际应用场景；在<strong>工业侧</strong>，比依电器等制造企业正在用其进行设备智能化升级；在<strong>商业零售场景</strong>中，瑞幸咖啡只是其中一个典型案例；而在<strong>交通领域</strong>，彤央系列也已经参与到多个车路云一体化试点中。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123312_56b21520bd42f707247c53af9dedda8f.webp\" data-src=\"https://image.jido.dev/20260126123312_56b21520bd42f707247c53af9dedda8f.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"38\">当四个完全不同的行业场景，开始使用同一套通用GPU算力底座时，一个更大的问题随之浮现：</p>\n  <p data-track=\"39\">天数智芯真正想做的，究竟是什么？</p>\n  <p data-track=\"41\">如果只看彤央系列，很容易理解为一家国产芯片公司想要率先补全云边端的业务版图。</p>\n  <p data-track=\"42\">但从其同样于1月26日公开披露的架构路线图来看，事情显然没有这么简单，在其业务大本营的云端场景，天数有更野心勃勃的目标。</p>\n  <p data-track=\"43\">天数智芯并不满足于国产替代这个阶段性目标。在多次公开场合中，它都明确提到，自己的长期目标是对标乃至超越英伟达这样的行业标杆。</p>\n  <p data-track=\"44\">为此，天数智芯给出了一张明确到年份的架构路线图。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123313_6a6fc8801ce0f832fadd6d8a99f98658.webp\" data-src=\"https://image.jido.dev/20260126123313_6a6fc8801ce0f832fadd6d8a99f98658.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"45\">2025年天数智芯推出的天数<strong>天枢架构</strong>，超越英伟达Hopper。据了解，这已经不是规划，而是现实：该架构支持从高精度科学计算到AI精度计算，AI芯片在执行注意力机制相关计算时，算力的实际有效利用效率达到90%及以上。</p>\n  <p data-track=\"46\">而测试数据显示，天数天枢架构效率较当前行业平均水平提升60%，在DeepSeek V3场景平均比Hopper架构高约20%性能。</p>\n  <p data-track=\"47\">到2026年，天数<strong>天璇架构</strong>，新增ixFP4精度支持，对标Blackwell；天数<strong>天玑架构</strong>，实现全场景AI与加速计算覆盖，<strong>超越Blackwell</strong>。</p>\n  <p data-track=\"48\">而在2027年，天数智芯规划中的天权架构，则直接指向对Rubin架构的全面超越，重点融入更多精度支持与创新设计。</p>\n  <p data-track=\"49\">支撑这条路线图的背后，还有一整套底层技术能力。</p>\n  <p data-track=\"50\">包括TPC Broadcast、Instruction Co-Exec、Dynamic Warp Scheduling在内的多项技术，构成了天数智芯在指令级并行、资源调度和算力利用率上的核心优势。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123312_0d34ce057db434da812fe01a2c6d34da.webp\" data-src=\"https://image.jido.dev/20260126123312_0d34ce057db434da812fe01a2c6d34da.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"51\">这些能力，决定了它是否真的具备在通用GPU赛道长期演进的可能性。</p>\n  <p data-track=\"52\">那么，天数智芯是否真的有这样的实力？</p>\n  <p data-track=\"53\">一个直观的判断方式，是看<strong>通用性</strong>。</p>\n  <p data-track=\"54\">截至目前，天数智芯的通用GPU已经稳定运行400余种主流模型，并且强调Day 0适配能力；以DeepSeek为例，其在天数智芯平台上的适配和推理，已经成为客户实际部署的一部分。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123313_ddf94066a8ed936be652be9c173eb1b9.webp\" data-src=\"https://image.jido.dev/20260126123313_ddf94066a8ed936be652be9c173eb1b9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"55\">第二个维度，是<strong>商业化落地</strong>。</p>\n  <p data-track=\"56\">根据其公开披露的数据，天数智芯累计交付的芯片数量已经超过5.2万片，服务客户超过300家。</p>\n  <p data-track=\"57\">在实际应用中，互联网AI客服的算力成本被压缩了一半，而单机性能翻倍；金融行业的研报生成效率提升了约70%；在高要求的集群场景中，其千卡规模集群已经实现了超过1000天的稳定运行。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260126123313_9752feb867509233cfe73563ca4f1270.webp\" data-src=\"https://image.jido.dev/20260126123313_9752feb867509233cfe73563ca4f1270.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"58\">这些数据足够耀眼，也足够具体。</p>\n  <p data-track=\"59\">尤其值得注意的是，天数智芯在招股书中，对客户数量、量产发货规模、卡级毛利等核心指标进行了相对完整的披露。这种摊开来讲的方式，在当前的国产芯片行业中并不多见。</p>\n  <p data-track=\"60\">也正是在这一点上，天数智芯与不少大厂自研芯片或专用NPU路线拉开了差距。</p>\n  <p data-track=\"61\">它选择了一条更难、也更慢的路——坚持通用GPU路线，从架构、指令集、编译器到软件栈进行全栈自研。这意味着没有盲区，也意味着每一步都必须自己趟过去。</p>\n  <p data-track=\"62\">最后，回到瑞幸的那杯咖啡。</p>\n  <p data-track=\"63\">当国产算力开始真正进入千行百业，进入门店、工厂、道路和设备，芯片不再只是发布会上的参数，已然是业务链条中不可或缺的一环。</p>\n  <p data-track=\"64\">从这个角度看，此次发布的意义，或许并不只在于发布了四代架构图，和四款边端新品，而在于国产通用GPU，一边抬头，试图超越行业标杆，并以更大的野心，尝试面向无人区提出自己的路径；一边低头，以一种更贴近现实的方式，不断深入产业现场。</p>\n  <p data-track=\"65\">而这，可能才是天数智芯真正想证明的事情。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "国产通用 GPU 厂商天数智芯发布「彤央」系列边端算力产品，并披露其从天枢到天权的四代架构路线图，展示了其在瑞幸咖啡等实际商业场景中的落地能力。",
+  "oneSentenceSummary": "国产通用 GPU 厂商天数智芯发布「彤央」系列边端算力产品，并披露其从天枢到天权的四代架构路线图，展示了其在瑞幸咖啡等实际商业场景中的落地能力。",
+  "summary": "本文报道了国产通用 GPU 企业天数智芯在上市后的最新动态。文章以瑞幸咖啡门店背后的边缘 AI 算力需求为切入点，引出了天数智芯新发布的「彤央」系列四款边端算力产品（TY1000/1100/1100_NX/1200）。该系列产品主打高能效与行业兼容性，旨在解决商业零售、机器人、工业制造等场景的就近算力部署问题。此外，天数智芯首次公开了极具野心的云端架构路线图，计划通过天枢、天璇、天玑、天权四代架构，在 2027 年前实现对英伟达 Rubin 等国际顶尖架构的性能超越。文章强调了天数智芯坚持全栈自研通用 GPU 路线，并通过 5.2 万片的累计交付量证明了其商业化落地能力。",
+  "mainPoints": [
+    {
+      "point": "天数智芯发布彤央系列边端算力产品，覆盖从模组到终端的多种形态。",
+      "explanation": "彤央系列包含 TY1000 等四款产品，提供高达 200-300 TOPS 的算力，支持 DeepSeek-R1 等大模型推理，并在接口上实现 Pin-to-Pin 兼容以降低迁移成本。"
+    },
+    {
+      "point": "公司披露了对标并超越英伟达的四代云端架构演进路线图。",
+      "explanation": "从 2025 年的天枢架构到 2027 年的天权架构，天数智芯计划在算力效率、精度支持及全场景覆盖上逐步超越 Hopper、Blackwell 及 Rubin 架构。"
+    },
+    {
+      "point": "坚持全栈自研通用 GPU 路线，已在多个行业实现大规模商业落地。",
+      "explanation": "累计交付超 5.2 万片芯片，服务 300 余家客户，在瑞幸零售、金融研报生成、工业自动化等领域验证了其稳定性和成本优势。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个为真实业务现场而生的算力系列。",
+    "在边端通用推理这个维度，国产通用 GPU 已经具备了正面对比的能力。",
+    "天数智芯并不满足于国产替代这个阶段性目标。在多次公开场合中，它都明确提到，自己的长期目标是对标乃至超越英伟达这样的行业标杆。",
+    "它选择了一条更难、也更慢的路——坚持通用 GPU 路线，从架构、指令集、编译器到软件栈进行全栈自研。"
+  ],
+  "tags": [
+    "通用GPU",
+    "天数智芯",
+    "边缘计算",
+    "国产芯片",
+    "AI算力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 82,
+  "wordCount": 2804,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1769427483000,
+  "publishDateStr": "01-26",
+  "publishDateTimeStr": "2026-01-26 11:38:03"
+}

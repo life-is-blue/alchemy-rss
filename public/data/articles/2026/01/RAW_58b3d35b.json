@@ -1,0 +1,63 @@
+{
+  "id": "RAW_58b3d35b",
+  "title": "参数仅 1/30 却追平闭源巨头？MiroThinker 1.5 开源实测：普通人也能拥有的“顶级情报官”",
+  "url": "https://juejin.cn/post/7594420277448933403",
+  "date": "2026-01-13 04:13:57",
+  "author": "石臻说AI",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4a403fb75c9b4e75937cefeb0e0aa60e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=lZ48Ff2ifk0WZ%2F%2FJEyvZ24kjHIc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <hr>\n   <h3 data-id=\"heading-0\">石臻说AI报道</h3>\n   <p>编辑：石臻</p>\n   <h5 data-id=\"heading-1\">【导读】在这个大模型“狂卷”参数和长文本的时代，作为一名重度信息检索用户。我时常陷入一种“信息雾霾”：AI 给出的答案看似完美，但充满了似是而非的幻觉。尤其是当我们需要做复杂的行业调研或代码复盘时，大多数模型像是一个会“背书”的优等生，却不是一个会“查证”的研究员</h5>\n   <p>最近，MiroMind 团队开源的 <strong>MiroThinker 1.5</strong> 引起了我的注意。它不拼万亿参数，而是走了一条反共识的 <strong>“发现式智能”</strong> （Discovery Intelligence）路线 。</p>\n   <p>在使用了一周并深度拆解了其 GitHub 代码后，我决定聊聊为什么我认为它可能是目前最接近“真相”的搜索智能体。</p>\n   <p><strong>【第一时间体验传送门】👉</strong> <strong>立即免费使用 <a href=\"https://link.juejin.cn?target=MiroThinker\" title=\"MiroThinker\" target=\"_blank\" ref=\"nofollow noopener noreferrer\">MiroThinker (dr.miromind.ai)</a></strong></p>\n   <h2 data-id=\"heading-2\">一、 核心差异：“做题家” vs “科学家”</h2>\n   <p>大多数主流大模型是典型的 <strong>“做题家”</strong> 。它们试图把全人类的知识背进参数里（Internal Parameters），遇到问题时，基于概率分布“编”一个答案 。这就导致了严重的幻觉——不懂装懂。</p>\n   <p>而 MiroThinker 1.5 的核心理念是 <strong>“科学家模式”</strong> 。它不依赖死记硬背，而是依赖 <strong>Interactive Scaling（交互式扩展）</strong> 。当它遇到不确定的问题时，它会执行一个慢思考闭环：</p>\n   <ol>\n    <li><strong>提出假设</strong>：针对问题构建初步的逻辑模型。</li>\n    <li><strong>主动向外部世界查证（Evidence-Seeking）</strong> ：调用搜索工具获取实时信息 。</li>\n    <li><strong>发现对不上，自我否定</strong>：比对假设与证据，识别矛盾点。</li>\n    <li><strong>修正假设，直到证据****收敛</strong>：通过多轮迭代，确保结论准确可靠 。</li>\n   </ol>\n   <p>这种机制让它在处理复杂问题时，表现出了惊人的逻辑密度。</p>\n   <h3 data-id=\"heading-3\">二、 硬核实测：以小博大的“越级挑战”</h3>\n   <p>口说无凭，我们直接看 Benchmark 数据。</p>\n   <p>在搜索智能体最看重的 <strong>BrowseComp</strong> 评测集中，MiroThinker 1.5 展现了极高的“智效比”。特别是 <strong>MiroThinker-v1.5-30B</strong> 版本，以极小的参数规模，跑出了令人咋舌的成绩。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/fb41274dd7154f849b0ae36b4ff7d6e2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=kFuaTBfSbRPL%2BGKiJ6AaslFOsxE%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>我们来看一组关键数据对比：</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e9d18b8c117f4c16b61268c6a0298d11~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=01yPkV%2FHx4ipQ6cOcHcehVg4oWY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <ul>\n    <li><strong>Gemini DeepSearch</strong>：得分 <strong>59.2</strong></li>\n    <li><strong>MiroThinker-v1.5-30B</strong>：得分 <strong>56.1</strong></li>\n   </ul>\n   <p><strong>这意味着什么？</strong> 一个仅有 30B 参数的开源权重模型，在搜索与推理的综合能力上，<strong>几乎快要追平了</strong> Google 顶级的闭源搜索模型 Gemini DeepSearch。</p>\n   <p>这证明了 MiroMind 团队的观点：智能的提升不一定非要靠堆砌万亿参数（Scaling Law），通过高效的 <strong>Interactive Scaling（交互式扩展）</strong> ，小模型也能拥有顶级的“查证”与“思考”能力。对于开发者和个人用户来说，这意味着我们可以在本地或低成本环境下，获得一线大厂级别的搜索推理体验。</p>\n   <h2 data-id=\"heading-4\">三、 真实体验：一份关于“AI眼镜”的深度调研</h2>\n   <p>为了验证它是否真的具备“深度思考”能力，我并没有用简单的百科问题测试它，而是模拟了一个投资人/产品经理的真实场景。</p>\n   <p>我在 Web 端输入了这样一个指令：</p>\n   <blockquote>\n    <p><strong>“给我调研一下 AI眼镜，给我出一份深度报告”</strong></p>\n   </blockquote>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/0c876e5bbe224aa78825ae12eb984576~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=NhenJWw55R%2BIeFlNULWwL51ejkA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><strong>它的反应让我感到惊喜，具体表现如下：</strong></p>\n   <ul>\n    <li><strong>拆解与规划</strong>它没有立即生成文本，而是先展示了它的思考路径（Thinking Process）。它将任务拆解为“市场规模”、“核心玩家（Meta/Ray-Ban, Apple, 国内厂商）”、“技术瓶颈”、“未来趋势”等子任务 。</li>\n    <li><strong>多源验证</strong>我看到后台不断闪烁着 <code>Tool Calls</code>。它在调用 Google Search 检索最新的发布会信息，同时抓取深度的行业分析文章 [9]。</li>\n    <li><strong>去伪存真</strong>最关键的是，它过滤掉了大量的营销号软文，通过比对不同信源的数据，给出了一份结构极其严谨的报告。</li>\n   </ul>\n   <p><em>( Search -&gt; Thinking -&gt; Refining 体现其 Evidence-Seeking 的能力)</em></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/090d70e741324dc4a734bb8d23f68d66~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=q9u5%2BzVD9vqwXoylofZTxfe0Vgs%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/430505f6427946a1a80f2b3e338b3246~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=IuB%2F%2BVDVqarCCHCSZ15D7vZFn%2FU%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><em>搜索的数据搜索好了之后，给出了一份详细的研究报告</em></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/1707c4642318438981b2e96d3340f6f5~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=GnaUNBybYpftnyGyp9QkuJo5kkI%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><em>特别是还会把每个地方的信息源引用的地方都做好了标注，然后在最后给出引用源的链接，让你的数据有据可查</em></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a6ed3a6ac75d466da9f9927e07b4b863~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=9GjW6dzZKzpPLrpTUwDX%2B1emA94%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/19ef52c1af6f49c7817a96e608c22a3c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=TgS8581kNHVhpf9zgQg7WuUP8dQ%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>最终生成的报告不仅包含了 各个厂商的情况和研究方向，还深入分析了国内厂商在光波导技术上的布局差异。这种“研究员”级别的交付能力，正是解决“信息雾霾”的解药。</p>\n   <h2 data-id=\"heading-5\">四、 技术解密：GitHub 生态与开源精神</h2>\n   <p>对于技术爱好者来说，MiroThinker 1.5 最性感的地方在于它的开源生态。MiroMind 团队并没有把技术藏着掖着，而是在 GitHub 上开源了核心代码和框架 。</p>\n   <p><strong>开发者资源指路：</strong></p>\n   <ul>\n    <li><strong>GitHub</strong> <strong>项目主页：</strong> <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FMiroMindAI%2FMiroThinker\" target=\"_blank\" title=\"https://github.com/MiroMindAI/MiroThinker\" ref=\"nofollow noopener noreferrer\">github.com/MiroMindAI/…</a> <em>(强烈建议去点个 Star ⭐，支持开源精神)</em></li>\n    <li><strong>MiroFlow</strong> <strong>开源框架</strong> <strong>：</strong> <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FMiroMindAI%2FMiroFlow\" target=\"_blank\" title=\"https://github.com/MiroMindAI/MiroFlow\" ref=\"nofollow noopener noreferrer\">github.com/MiroMindAI/…</a></li>\n   </ul>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/6371b1e000164ce79145db48464ffbcb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=ksF4xOJJhE82t7k9C8cfe2MaWAo%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>我们在 GitHub 的文档中可以看到几个关键的技术突破：</p>\n   <ol>\n    <li><strong>400次工具调用（Tool Calls）</strong> ：它支持在单次任务中进行高达 400 次的工具交互，这远超一般 Agent 的限制，使其能处理极长周期的复杂任务 [12]。</li>\n    <li><strong>时序敏感训练沙盒</strong>：这是很多模型忽略的点。MiroThinker 在训练时强行约束模型“只能看过去，不能看未来”，彻底杜绝了数据泄露（Future Leakage），确保了预测的真实性 。</li>\n    <li><strong>256K 超长上下文</strong>：支持海量资料的吞吐与分析 。</li>\n   </ol>\n   <p>如果你是开发者，你可以直接 <code>Fork</code> 代码，在本地部署（支持 SGLang 或 vLLM），甚至利用它的 MCP 协议扩展自己的工具集 。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/ce4a84da8633447da6832ef10f2edf26~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg55-z6Ie76K-0QUk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768882437&amp;x-signature=e2CV2Eluk4Bz0bsA%2B13cr%2BxGpwY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-6\">五、 总结</h2>\n   <p>MiroThinker 1.5 不是另一个“聊天玩具”，它是为那些渴望<strong>真相、深度和效率</strong>的人准备的 <strong>“外脑”</strong> 。它证明了通过 Interactive Scaling，AI 可以从“复读机”进化为“科学家”。</p>\n   <p>无论你是被信息过载困扰的决策者，还是通过开源代码探索世界的开发者，我都强烈推荐你试一试：</p>\n   <ol>\n    <li><strong>普通用户/决策者</strong>：直接使用 Web 端，体验“顶级研究员”帮你查资料的快感。👉 <strong>点击注册体验 (dr.miromind.ai)</strong></li>\n    <li><strong>研究员/极客</strong>：去 Hugging Face 下载模型，在本地跑起来。👉 <strong>模型下载 (Hugging Face)</strong></li>\n    <li><strong>开发者</strong>：访问 GitHub 项目，Fork 代码，共建生态。👉 <strong>GitHub 项目主页 (给个Star支持)</strong></li>\n   </ol>\n   <p><strong>在这个充满噪声的世界里，让我们一起用 AI 逼近真相。</strong></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "MiroThinker 1.5 以小参数实现“发现式智能”，通过模拟科学家查证与修正假设的慢思考模式，在搜索推理能力上匹敌闭源巨头，并提供开源生态供开发者共建。",
+  "oneSentenceSummary": "MiroThinker 1.5 以小参数实现“发现式智能”，通过模拟科学家查证与修正假设的慢思考模式，在搜索推理能力上匹敌闭源巨头，并提供开源生态供开发者共建。",
+  "summary": "文章详细介绍了 MiroMind 团队开源的 MiroThinker 1.5 大模型，强调其“发现式智能”路线，即通过 Interactive Scaling（交互式扩展）实现像“科学家”一样主动查证、自我否定和修正假设的慢思考闭环。文章通过实测对比，MiroThinker 1.5 在 BrowseComp 评测集中，以 30B 的小参数规模，表现出接近 Gemini DeepSearch 的搜索与推理能力，证明了小模型在高效交互下也能达到顶级水平。作者通过一次关于“AI 眼镜”的深度调研，展示了 MiroThinker 1.5 在任务拆解、多源验证、去伪存真以及引用溯源方面的优势。文章还技术性地揭示了 MiroThinker 1.5 的核心突破，包括 400 次工具调用、时序敏感训练沙盒和 256K 超长上下文。最后，文章鼓励普通用户、研究员和开发者体验并共建其开源生态，强调其是解决“信息雾霾”的“外脑”。",
+  "mainPoints": [
+    {
+      "point": "MiroThinker 1.5 采用“发现式智能”路径，区别于传统大模型的“做题家”模式。",
+      "explanation": "它不依赖参数内化知识，而是通过“提出假设-查证-否定-修正”的慢思考闭环，主动与外部世界交互，确保结论的准确性和逻辑密度，有效避免幻觉。"
+    },
+    {
+      "point": "以小参数实现了“越级挑战”，性能接近顶级闭源模型。",
+      "explanation": "在 BrowseComp 评测中，MiroThinker-v1.5-30B 以远小于闭源模型的参数量，达到或接近了 Gemini DeepSearch 的搜索与推理能力，展示了 Interactive Scaling 在提升模型智能上的高效性。"
+    },
+    {
+      "point": "具备深度调研能力，提供结构严谨、有据可查的报告。",
+      "explanation": "通过模拟“AI 眼镜”调研，MiroThinker 1.5 展示了任务拆解、多源验证、筛选优质信息并标注引用源的能力，其报告质量达到“研究员”级别。"
+    },
+    {
+      "point": "技术亮点在于其强大的工具调用、时序敏感训练及超长上下文。",
+      "explanation": "模型支持高达 400 次工具交互，通过时序敏感训练杜绝数据泄露，并提供 256K 超长上下文支持大量资料分析，这些技术是实现其“发现式智能”的关键。"
+    },
+    {
+      "point": "积极拥抱开源生态，鼓励开发者共建。",
+      "explanation": "MiroMind 团队开源了核心代码和框架，鼓励开发者在本地部署、扩展工具集，共同推动 AI 发展，实现人人可用的“顶级情报官”愿景。"
+    }
+  ],
+  "keyQuotes": [
+    "大多数主流大模型是典型的“做题家”。它们试图把全人类的知识背进参数里，遇到问题时，基于概率分布“编”一个答案。",
+    "MiroThinker 1.5 的核心理念是“科学家模式”。它不依赖死记硬背，而是依赖 Interactive Scaling（交互式扩展）。",
+    "一个仅有 30B 参数的开源权重模型，在搜索与推理的综合能力上，几乎快要追平了 Google 顶级的闭源搜索模型 Gemini DeepSearch。",
+    "这种“研究员”级别的交付能力，正是解决“信息雾霾”的解药。",
+    "MiroThinker 1.5 不是另一个“聊天玩具”，它是为那些渴望真相、深度和效率的人准备的“外脑”。"
+  ],
+  "tags": [
+    "大模型",
+    "AI Agent",
+    "开源模型",
+    "MiroThinker",
+    "Interactive Scaling"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 88,
+  "wordCount": 2072,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768277637000,
+  "publishDateStr": "01-13",
+  "publishDateTimeStr": "2026-01-13 04:13:57"
+}

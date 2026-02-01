@@ -1,0 +1,59 @@
+{
+  "id": "RAW_dc23427f",
+  "title": "清华新研究，Nature+Science 双杀！",
+  "url": "https://www.qbitai.com/2026/01/369696.html",
+  "date": "2026-01-15 07:17:43",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">就在刚刚，清华大学的一项<strong>AI for Science研究</strong>不仅登上Nature，而且还被Science深度报道了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_68062409473e296121daf4067c04e27a.webp\" data-src=\"https://image.jido.dev/20260115083329_68062409473e296121daf4067c04e27a.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"2\">这项来自清华大学李勇团队的研究通过分析全球<strong>2.5亿篇</strong>科学文献，揭示了<strong>AI for Science领域存在的一个典型矛盾</strong>——</p>\n  <blockquote>\n   <p data-track=\"3\">AI在助力科学家“个体加速”的同时，却导致科学界的集体注意力窄化和趋同优化的“群体登山”现象。</p>\n  </blockquote>\n  <p data-track=\"4\">就是说，虽然AI帮助科学家发表了更多论文、更早成为项目负责人，但却导致人们集体涌入少量适合AI研究的“热门山峰”，从而无形中削弱了科学探索的广度。</p>\n  <p data-track=\"5\">而且进一步分析表明，这一矛盾绝非偶然，而是由当前科学智能AI模型<strong>缺乏通用性</strong>导致的系统性影响。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_6e4a13b695bcf89afd818f6d36c503d0.jpeg\" data-src=\"https://image.jido.dev/20260115083329_6e4a13b695bcf89afd818f6d36c503d0.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">下面详细来看这到底是一项怎样的研究。</p>\n  <p data-track=\"8\">回到起点，团队之所以进行这项研究，主要是发现AI for Science领域存在一个明显矛盾——</p>\n  <p data-track=\"9\"><strong>在AI持续赋能科研的背景下，为何各学科的整体科学进展未见明显加速？</strong></p>\n  <p data-track=\"10\">一方面，AI for Science研究已经产生了AlphaFold这样的荣获诺贝尔奖的成果；但另一方面，统计表明各学科领域的颠覆性研究成果在逐年下降，似乎未能获得AI助力。</p>\n  <p data-track=\"11\">这背后的原因到底是什么？到目前为止，业界仍然没有明确答案。</p>\n  <p data-track=\"12\">于是，团队向着这一问题出发了，并最终发表了《Artificial Intelligence Tools Expand Scientists’ Impact but Contract Science’s Focus》这篇论文。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_6187350c0b92c3c1d5b2d6f9bd7a493e.webp\" data-src=\"https://image.jido.dev/20260115083329_6187350c0b92c3c1d5b2d6f9bd7a493e.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\">在论文中，团队进行的首项工作是：<strong>从浩如烟海的文献中找出那些“AI赋能的研究”</strong>。</p>\n  <p data-track=\"14\">这一步对后续定量刻画AI对科学的影响至关重要。</p>\n  <p data-track=\"15\">为此，团队摒弃了停留在关键词层面的浅层检索方法，而提出了一条<strong>“高质量专家标注 + 大规模语言模型推理“相结合的技术路径——</strong></p>\n  <p data-track=\"16\"><strong>通过领域专家标注少量论文样本，再让语言模型大规模推理的迭代优化，逐步让语言模型学会从标题和摘要中深层次的分析“那些是使用了AI工具的研究”。</strong></p>\n  <p data-track=\"17\">论文显示，BERT的识别准确率非常高，达到了0.875分（满分为1）。</p>\n  <p data-track=\"18\">靠着这套方法，他们扫描了近50年来的海量文献（涵盖1980-2025年），最终画出了一张<strong>“AI赋能科研全景地图”</strong>。</p>\n  <p data-track=\"19\">这张地图横跨“机器学习、深度学习、生成式AI”三个时代，涵盖4130万篇论文、覆盖2857万研究者，被团队视为研究<strong>“AI如何系统性影响科研”的首个基准数据集</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_1b937b1d21f08e5969fa201e9f4f8720.webp\" data-src=\"https://image.jido.dev/20260115083329_1b937b1d21f08e5969fa201e9f4f8720.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">基于该数据集，团队系统性分析了AI在自然科学六大领域（生物、医学、化学、物理、材料科学和地质学）的影响。</p>\n  <p data-track=\"22\">所采用的分析方法大致可分为以下三个阶段：</p>\n  <ul>\n   <li data-track=\"23\">step 1：构建“科学语义地图”</li>\n   <li data-track=\"24\">step 2：定义衡量“广度”的指标</li>\n   <li data-track=\"25\">step 3：进行比较分析</li>\n  </ul>\n  <p data-track=\"26\">简单来说，团队想要回答一个关键问题——</p>\n  <p data-track=\"27\"><strong>有了AI的帮助后，科学家探索的领域到底是变宽了，还是变窄了？</strong></p>\n  <p data-track=\"28\">为了客观衡量这种看不见、摸不着的“认知版图”，他们提出了<strong>基于隐藏变量的科学学</strong>分析方法。</p>\n  <p data-track=\"29\">该方法和传统科学学的区别在于，它不再仅仅依赖论文的标题、关键词、作者、引用关系等“表面”数据，而是深入到论文的“思想”和“内容”本身，从而能更精细地度量像“知识广度”这样抽象的概念。</p>\n  <p data-track=\"30\">具体到第一步，他们把每篇论文中最能代表其内容的标题和摘要作为核心文本，通过一个深度嵌入表征模型转换成一个由768个数字组成的、固定长度的数学向量。</p>\n  <p data-track=\"31\">这个向量就是每篇论文在高维数字空间中的“坐标”——<strong>理论上，语义相似的论文，其向量距离也会更接近</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_c3483cc5e4b969888e1c1dc1d13bbdb4.webp\" data-src=\"https://image.jido.dev/20260115083329_c3483cc5e4b969888e1c1dc1d13bbdb4.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\">而当所有论文都找到自己的“坐标”后，团队主要通过<strong>“直径”和熵值</strong>这两个指标来测量知识广度。</p>\n  <p data-track=\"33\"><strong>前者用来衡量探索的“最远边界”</strong>。</p>\n  <p data-track=\"34\">比如对于某个领域一年的AI论文，先计算它们所有坐标点的几何中心，然后找出离中心点最远的那篇论文，测量它们之间的欧氏距离。</p>\n  <p data-track=\"35\">这个距离就是研究中定义的“直径”，用于衡量这批论文的主题覆盖广度。直径越大，说明探索的范围越广。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083330_90723c371721878c39bbe474a554648b.webp\" data-src=\"https://image.jido.dev/20260115083330_90723c371721878c39bbe474a554648b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\"><strong>后者用来衡量分布的“均匀度”</strong>。</p>\n  <p data-track=\"37\">这是指分析同一批论文坐标点在空间中的分布状态——如果均匀分散在空间各处则熵值高，反之，如果它们紧密地聚集在少数几个热点周围，则熵值低。</p>\n  <p data-track=\"38\">然后就用这些指标去分别测量两类科学家群体的论文：一类是<strong>使用AI</strong>进行研究的，另一类是<strong>不使用AI</strong>的。</p>\n  <p data-track=\"39\">以此判断AI究竟是在扩张还是收缩科学的认知边界。</p>\n  <p data-track=\"40\">结果发现，在微观个体层面，使用AI的科学家比不使用的多发表<strong>3.02倍</strong>论文，获得<strong>4.84倍</strong>引用量。</p>\n  <p data-track=\"41\">而且前者更是提早<strong>1.37年</strong>成为研究项目负责人（以末位作者为标志）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_cf56acd162581710a02a0fb3c3340870.webp\" data-src=\"https://image.jido.dev/20260115083329_cf56acd162581710a02a0fb3c3340870.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"42\">然而，个体科研加速的背后，却是人类整体科学版图的异常收缩。</p>\n  <p data-track=\"43\">在集体层面上，与AI结合的科研项目的知识广度下降了<strong>4.63%</strong>、不同领域科学家间的跨界互动减少了<strong>22%</strong>，而且AI论文引用呈现“星型结构”——</p>\n  <p data-track=\"44\">几乎都在引用同一篇或少数几篇经典的、开创性的AI工作，这表明研究趋向集中和单一化，缺少创新活力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_a6ac463dc8dd00eefe07b6cb98fbc2d3.webp\" data-src=\"https://image.jido.dev/20260115083329_a6ac463dc8dd00eefe07b6cb98fbc2d3.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"45\">那么问题来了，这一矛盾现象究竟是什么导致的呢？</p>\n  <p data-track=\"47\">论文给出了一个明确结论——</p>\n  <p data-track=\"48\"><strong>这是由当前AI for Science模型缺乏通用性导致的系统性影响。</strong></p>\n  <p data-track=\"49\">团队发现，AI的高效率产生了一种强大的“科学智能引力”效应。它引导研究者集体涌向少量适合AI研究的“热门山峰”，即那些已有大量数据、适合用现有AI方法快速出成果的研究方向。</p>\n  <p data-track=\"50\">这种“群体登山”模式，虽能加速对已知问题的解决，却也在无形中固化了科学探索的路径，系统性地削弱了科学家向“未知山峰”探索的广度。</p>\n  <p data-track=\"51\">最终就形成了<strong>“广度让位于速度”</strong>的现象。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_098e836ff15544f7969f42a2d9a6ea95.webp\" data-src=\"https://image.jido.dev/20260115083329_098e836ff15544f7969f42a2d9a6ea95.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"52\">团队表示，这一矛盾机制的发现是对AI赋能科研模式的深度反思：</p>\n  <blockquote>\n   <p data-track=\"53\">现有的AI for Science虽然极大地促进了局部的效率提升，却难以驱动全链条、多领域的科研创新。</p>\n  </blockquote>\n  <p data-track=\"54\">而为了突破这一局限，徐丰力、李勇教授团队最终推出了<strong>全流程、跨学科的科研智能体系统—OmniScientist。（访问网址：OmniScientist.ai）</strong></p>\n  <p data-track=\"55\">该系统通过深入挖掘大模型智能体的通用推理能力，实现跨学科、全流程、多模态的系统性科研支持，从而让AI从“辅助工具”进化为具备“主动提出假说、自主设计实验、分析结果并形成理论”的“AI科学家”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260115083329_96832790697e6b0536409e1137fbc72b.webp\" data-src=\"https://image.jido.dev/20260115083329_96832790697e6b0536409e1137fbc72b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"56\">最后，这项研究完成单位为清华大学电子工程系、芝加哥大学社会学系，通讯作者为徐丰力助理教授、李勇教授、James Evans教授，第一作者为清华大学电子工程系博士生郝千越。</p>\n  <p data-track=\"57\">论文：</p>\n  <p class=\"syl-line-pure-english\" data-track=\"58\">https://arxiv.org/abs/2412.07727</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "清华大学一项 AI for Science 研究通过分析海量科学文献，发现 AI 虽提升科学家个体效率，却导致科学界集体注意力窄化和“群体登山”现象，并提出 OmniScientist 系统以解决 AI 模型通用性不足问题。",
+  "oneSentenceSummary": "清华大学一项 AI for Science 研究通过分析海量科学文献，发现 AI 虽提升科学家个体效率，却导致科学界集体注意力窄化和“群体登山”现象，并提出 OmniScientist 系统以解决 AI 模型通用性不足问题。",
+  "summary": "清华大学李勇团队的 AI for Science 研究登上了《Nature》并被《Science》报道，该研究通过分析全球 2.5 亿篇科学文献，揭示了 AI 在加速科学家个体研究（如发表更多论文、提早晋升）的同时，却系统性地导致了科学探索广度的收缩。研究指出，这种矛盾源于当前 AI for Science 模型缺乏通用性，使得研究者集体涌向少数适合 AI 出成果的“热门山峰”，形成“群体登山”现象。团队为此构建了“AI 赋能科研全景地图”数据集，并提出了基于隐藏变量的“科学语义地图”分析方法，通过“直径”和“熵值”等指标量化知识广度。最终，为解决这一问题并突破现有 AI 模型局限性，团队推出了全流程、跨学科的科研智能体系统 OmniScientist，旨在将 AI 从辅助工具升级为能主动提出假说、设计实验的“AI 科学家”。",
+  "mainPoints": [
+    {
+      "point": "AI 在提升科学家个体研究效率的同时，导致科学界集体关注点窄化和趋同优化。",
+      "explanation": "AI 工具帮助科学家发表更多论文、提早成为项目负责人，但却使得研究者集中于少量适合现有 AI 方法的“热门”研究方向，削弱了科学探索的广度。"
+    },
+    {
+      "point": "这一矛盾现象的核心原因是当前 AI for Science 模型缺乏通用性。",
+      "explanation": "现有的 AI 模型擅长解决特定领域的问题，但未能提供全链条、跨领域的通用科研支持，从而形成“广度让位于速度”的“科学智能引力”效应。"
+    },
+    {
+      "point": "研究通过创新方法从海量文献中识别 AI 赋能研究，并量化知识广度。",
+      "explanation": "团队结合专家标注和大规模语言模型推理，构建了 AI 赋能科研基准数据集，并利用“科学语义地图”和“直径/熵值”指标，客观测量了 AI 对科学知识广度的影响。"
+    },
+    {
+      "point": "为解决 AI 通用性不足，清华团队推出了全流程、跨学科的科研智能体系统 OmniScientist。",
+      "explanation": "OmniScientist 旨在通过大模型智能体的通用推理能力，实现从辅助工具到具备主动假说、实验设计、结果分析等能力的“AI 科学家”的转变，推动多领域科研创新。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 在助力科学家“个体加速”的同时，却导致科学界的集体注意力窄化和趋同优化的“群体登山”现象。",
+    "这一矛盾绝非偶然，而是由当前科学智能 AI 模型缺乏通用性导致的系统性影响。",
+    "他们在论文中进行的唯一一项工作是：从浩如烟海的文献中找出那些“AI 赋能的研究”。",
+    "然而，个体科研加速的背后，却是人类整体科学版图的异常收缩。",
+    "现有的 AI for Science 虽然极大地促进了局部的效率提升，却难以驱动全链条、多领域的科研创新。"
+  ],
+  "tags": [
+    "AI for Science",
+    "科学研究",
+    "大模型",
+    "科研智能体",
+    "学术评估"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2431,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768461463000,
+  "publishDateStr": "01-15",
+  "publishDateTimeStr": "2026-01-15 07:17:43"
+}

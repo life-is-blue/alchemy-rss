@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ba6ab5",
+  "title": "Cloudflare 启用模型上下文协议 (MCP) 服务器的远程服务器托管服务",
+  "url": "https://www.infoq.com/news/2025/04/cloudflare-remote-mcp-servers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-03 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has announced the ability to build and deploy remote <a href=\"https://modelcontextprotocol.io/introduction\">Model Context Protocol</a> (MCP) servers on <a href=\"https://developers.cloudflare.com/agents/guides/remote-mcp-server/\">its platform</a>, thereby expanding the reach and usability of the protocol, which is designed for standardized interaction between AI applications and external services. Previously often limited to local execution, MCP servers can now leverage Cloudflare's global network.</p>\n   <p>This development enables a broader range of internet users to benefit from MCP without requiring local installations, particularly for web-based and mobile applications that seek to integrate AI agents with external resources.</p>\n   <p>In a <a href=\"https://x.com/CryptoGPTo/status/1904163689365938493\">tweet</a> on X, Pradeep Menon, an AI Technologist, wrote:</p>\n   <blockquote>\n    <p>MCP serves as a universal translator between AI models and external applications, including databases, messaging apps, cloud services, and development tools. It achieves this by standardizing how AI interacts with tools and data, enabling seamless integration without requiring the hardcoding of every connection.</p>\n   </blockquote>\n   <p>Key features and benefits of Cloudflare's remote MCP server offering include:</p>\n   <ul>\n    <li>Simplified Deployment: Cloudflare aims to abstract away the complexities of building and deploying remote MCP servers.</li>\n    <li>Enhanced Accessibility: Remote servers hosted on Cloudflare are accessible over the internet, broadening the potential user base for MCP-enabled applications.</li>\n    <li>OAuth Integration: Built-in OAuth support through Cloudflare facilitates secure authorization and access control for remote MCP interactions.</li>\n    <li>Expanded Use Cases: Remote MCP unlocks new possibilities for AI agents to seamlessly interact with various online services and tools, potentially leading to innovative AI-powered workflows.</li>\n   </ul>\n   <p>Victoria Slocome stated in a <a href=\"https://x.com/victorialslocum/status/1901940554553766040\">tweet</a>:</p>\n   <blockquote>\n    <p>MCP creates a simpler, more reliable way to give AI systems access to exactly the data they need through a single protocol.</p>\n   </blockquote>\n   <p>Cloudflare's implementation includes tools like <a href=\"https://developers.cloudflare.com/agents/model-context-protocol/authorization\">workers-oauth-provider</a> for streamlined OAuth integration and <a href=\"https://developers.cloudflare.com/agents/model-context-protocol/tools/\">McpAgent</a> for managing remote transport. This initiative signals a move towards making it easier for developers to create powerful AI applications capable of interacting with the broader digital landscape beyond simple inference.</p>\n   <p><img alt=\"\" src=\"https://cf-assets.www.cloudflare.com/zkvhlag99gkb/7bI7rJtLh89jmZaibSgiLl/e426f93616a8210d80b979c47d89dc75/image4.png\" style=\"width: 600px; height: 217px;\" rel=\"share\"></p>\n   <p><em>(Source: Cloudflare <a href=\"https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/\">blog post</a>)</em></p>\n   <p>By providing a robust and accessible platform for remote MCP servers, Cloudflare is positioning itself as a key enabler in the evolving landscape of AI-driven applications that require contextual interaction with external services.</p>\n   <p><a href=\"https://x.com/aparnabsinha\">Aparna Sinha</a>, a senior vice president at Capital One, <a href=\"https://x.com/aparnabsinha/status/1904993695730196917\">tweeted</a> on X:</p>\n   <blockquote>\n    <p>This MCP server hosting offering is more than a remote MCP server host. Delivered securely, it could be quite useful for enterprises building internal agentic applications.</p>\n   </blockquote>\n   <p>Lastly, the <a href=\"https://developers.cloudflare.com/agents/guides/remote-mcp-server/\">developer docs</a> provide more guidance for those wanting to deploy an example MCP server to their Cloudflare account. Additionally, a <a href=\"https://github.com/cloudflare/ai/tree/main/demos/remote-mcp-github-oauth\">GitHub repository</a> is available with sample code (GitHub Oauth).</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Enables Remote Hosting for Model Context Protocol (MCP) Servers\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/cloudflare-remote-mcp-servers/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1743674400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 启用远程模型上下文协议 (MCP) 服务器托管服务，简化 AI 应用集成并降低使用门槛。",
+  "oneSentenceSummary": "Cloudflare 启用远程模型上下文协议 (MCP) 服务器托管服务，简化 AI 应用集成并降低使用门槛。",
+  "summary": "Cloudflare 发布远程模型上下文协议 (MCP) 服务器托管服务，旨在标准化 AI 应用与外部服务交互的方式。利用 Cloudflare 的全球网络，开发者可以轻松构建和部署 MCP 服务器，将 AI 代理与在线服务和工具集成，无需本地安装，从而加速 AI 应用创新。该服务提供简化的部署、增强的可访问性和内置的 OAuth 集成，为构建内部 AI 代理应用的企业提供安全可靠的解决方案。Cloudflare 将自身定位为在 AI 驱动的应用领域中扮演关键赋能者的角色。",
+  "mainPoints": [
+    {
+      "point": "远程 MCP 服务器增强了 AI 应用的可访问性",
+      "explanation": "通过 Cloudflare 托管的远程服务器可以在互联网上访问，扩大了 MCP 应用的潜在用户群，并支持更具创新性的 AI 工作流程。"
+    },
+    {
+      "point": "Cloudflare 简化了构建和部署远程 MCP 服务器的过程",
+      "explanation": "通过简化部署的复杂性，Cloudflare 使开发者能够更轻松地利用 MCP 协议，专注于 AI 应用开发和集成。"
+    },
+    {
+      "point": "Cloudflare 的 OAuth 集成确保 AI 应用与外部服务的安全交互",
+      "explanation": "Cloudflare 提供 OAuth 集成，确保 AI 应用与外部服务之间的安全交互。"
+    }
+  ],
+  "keyQuotes": [
+    "MCP 充当 AI 模型和外部应用（包括数据库、消息应用、云服务和开发工具）之间的通用翻译器。",
+    "MCP 创建了一种更简单、更可靠的方式，通过单一协议使 AI 系统能够准确访问所需的数据。",
+    "此 MCP 服务器托管产品不仅仅是远程 MCP 服务器主机。它以安全的方式交付，对于构建内部 Agent 应用的企业来说非常有用。"
+  ],
+  "tags": [
+    "AI 代理",
+    "AI 开发",
+    "模型上下文协议",
+    "MCP",
+    "Cloudflare"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 406,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1743638400000,
+  "publishDateStr": "2025-04-03",
+  "publishDateTimeStr": "2025-04-03 00:00:00"
+}

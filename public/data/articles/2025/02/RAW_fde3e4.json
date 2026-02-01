@@ -1,0 +1,63 @@
+{
+  "id": "RAW_fde3e4",
+  "title": "LWiAI 播客 #198 - DeepSeek R1 & 贾纳斯， Qwen2.5， OpenAI 任务执行器",
+  "url": "https://lastweekin.ai/p/lwiai-podcast-198-deepseek-r1-and",
+  "date": "2025-02-04 09:19:50",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"youtube2-i6JECxeu6mc\" class=\"youtube-wrap\" data-attrs=\"{&quot;videoId&quot;:&quot;i6JECxeu6mc&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\">\n   <div class=\"youtube-inner\">\n    <iframe src=\"https://www.youtube-nocookie.com/embed/i6JECxeu6mc?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n   </div>\n  </div>\n  <p><span>Our 198th episode with a summary and discussion of last week's big AI news!</span><br><span>Recorded on 01/31/2024</span></p>\n  <p><span>Hosted by </span><a href=\"https://twitter.com/andrey_kurenkov\" rel>Andrey Kurenkov</a><span> and </span><a href=\"https://twitter.com/jeremiecharris\" rel>Jeremie Harris</a><span>. </span><br><span>Feel free to email us your questions and feedback at </span><a href=\"mailto:contact@lastweekinai.com\" rel>contact@lastweekinai.com </a><span>and/or </span><a href=\"mailto:hello@gladstone.ai\" rel>hello@gladstone.ai</a><br><a href=\"https://discord.gg/nTyezGSKwP\" rel>Join our new Discord here!</a><span> </span></p>\n  <p>In this episode:</p>\n  <p><span>- DeepSeek releases R1, a competitive AI model comparable to OpenAI’s O1, leading to market unrest and significant drops in tech stocks, including a 17% plunge in NVIDIA's stock. </span><br><span>- OpenAI launches Operator to facilitate agentic computer use, while facing competition from new releases by DeepSeek and Quen, with applications seeing rapid adoption.</span><br><span>- President Trump revokes the Biden administration's executive order on AI, signaling a shift in AI policy and deregulation efforts.</span><br><span>- Taiwanese government clears TSMC to produce advanced 2-nanometer chip technology abroad, aiming to strengthen global semiconductor supply amidst geopolitical tensions.</span></p>\n  <p><span>If you would like to become a sponsor for the newsletter, podcast, or both, please fill out </span><a href=\"https://forms.gle/VmZDCzSBfeACe1Ke9\" rel>this form</a><span>.</span></p>\n  <p>Timestamps + Links:</p>\n  <ul>\n   <li>\n    <p>(00:00:00) Intro / Banter</p></li>\n   <li>\n    <p>(00:03:01) Response to listener comments</p></li>\n   <li>\n    <p>Projects &amp; Open Source</p>\n    <ul>\n     <li>\n      <p><span>(00:06:26) </span><a href=\"https://arxiv.org/abs/2501.12948v1\" rel>DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</a></p></li>\n     <li>\n      <p><span>(00:30:25) </span><a href=\"https://techcrunch.com/2025/01/27/viral-ai-company-deepseek-releases-new-image-model-family/\" rel>Viral AI company DeepSeek releases new image model family</a></p></li>\n     <li>\n      <p><span>(00:34:07) </span><a href=\"https://arxiv.org/abs/2501.15383v1\" rel>Qwen2.5-1M Technical Report</a></p></li>\n     <li>\n      <p><span>(00:38:32) </span><a href=\"https://techcrunch.com/2025/01/27/alibabas-qwen-team-releases-ai-models-that-can-control-pcs-and-phones/\" rel>Alibaba’s Qwen team releases AI models that can control PCs and phones</a></p></li>\n    </ul></li>\n   <li>\n    <p>Tools &amp; Apps</p>\n    <ul>\n     <li>\n      <p><span>(00:42:09) </span><a href=\"https://techcrunch.com/2025/01/23/openai-launches-operator-an-ai-agent-that-performs-tasks-autonomously/\" rel>OpenAI launches Operator, an AI agent that performs tasks autonomously</a></p></li>\n     <li>\n      <p><span>(00:47:37) </span><a href=\"https://techcrunch.com/2025/01/28/deepseek-reaches-no-1-on-us-play-store/\" rel>DeepSeek reaches No. 1 on US Play Store</a></p></li>\n     <li>\n      <p><span>(00:52:17) </span><a href=\"https://www.testingcatalog.com/alibaba-rolled-out-qwen-chat-v0-2-and-qwen2-5-1m-model/\" rel>Alibaba rolled out Qwen Chat v0.2 and Qwen2.5-1M model</a></p></li>\n     <li>\n      <p><span>(00:53:50) </span><a href=\"https://www.testingcatalog.com/perplexity-launches-us-hosted-deepseek-r1-hints-at-eu-hosting-soon/\" rel>Perplexity launches US-hosted DeepSeek R1, hints at EU hosting soon</a></p></li>\n     <li>\n      <p><span>(00:55:31) </span><a href=\"https://www.cnn.com/2025/01/16/media/apple-ai-news-fake-headlines/index.html?utm_source=www.therundown.ai&amp;utm_medium=newsletter&amp;utm_campaign=ai-s-tutoring-breakthrough\" rel>Apple is pulling its AI-generated notifications for news after generating fake headlines</a></p></li>\n     <li>\n      <p><span>(00:59:00) </span><a href=\"https://www.thetimes.com/world/europe/article/french-ai-lucie-looks-tres-chic-but-keeps-getting-answers-wrong-7vk2szmdg\" rel>French AI ‘Lucie’ looks très chic, but keeps getting answers wrong</a></p></li>\n    </ul></li>\n   <li>\n    <p>Applications &amp; Business</p>\n    <ul>\n     <li>\n      <p><span>(01:02:09) </span><a href=\"https://www.wired.com/story/deepseek-executives-reaction-silicon-valley/\" rel>DeepSeek’s New AI Model Sparks Shock, Awe, and Questions From US Competitors</a></p></li>\n     <li>\n      <p><span>(01:07:49) </span><a href=\"https://www.windowscentral.com/microsoft/microsoft-loses-openai-exclusive-cloud-provider-status-to-500-billion-stargate-project\" rel>Microsoft loses OpenAI exclusive cloud provider status to $500 billion Stargate project</a></p></li>\n     <li>\n      <p><span>(01:13:00) </span><a href=\"https://www.cnbc.com/2025/01/14/openai-says-blackrock-exec-adebayo-ogunlesi-is-joining-board.html\" rel>OpenAI adds BlackRock exec Adebayo Ogunlesi to board of directors</a></p></li>\n     <li>\n      <p><span>(01:15:00) </span><a href=\"https://techcrunch.com/2025/01/24/elevenlabs-has-raised-a-new-round-at-3b-valuation-led-by-iconiq-growth-sources-say/\" rel>ElevenLabs has raised a new round at $3B+ valuation led by ICONIQ Growth, sources say</a></p></li>\n    </ul></li>\n   <li>\n    <p>Policy &amp; Safety</p>\n    <ul>\n     <li>\n      <p><span>(01:16:00) </span><a href=\"https://indianexpress.com/article/technology/artificial-intelligence/donald-trump-500-billion-stargate-project-ai-infrastructure-9792439/\" rel>Donald Trump unveils $500 billion Stargate Project to build AI infrastructure in the US, promising over 100K jobs</a></p></li>\n     <li>\n      <p><span>(01:20:36) </span><a href=\"https://aibusiness.com/responsible-ai/trump-revokes-biden-ai-policy-signs-executive-order-to-strengthen-ai-leadership\" rel>Trump Revokes Biden AI Policy, Signs Executive Order to Strengthen AI Leadership</a></p></li>\n     <li>\n      <p><span>(01:23:20) </span><a href=\"https://www.cnbc.com/2025/01/29/anthropic-ceo-amodei-says-he-doesnt-view-deepseek-as-adversaries.html\" rel>Anthropic CEO doesn’t see DeepSeek as ‘adversaries,’ but says export controls are critical</a></p></li>\n     <li>\n      <p><span>(01:30:26) </span><a href=\"https://www.tomshardware.com/tech-industry/taiwanese-govt-clears-tsmc-to-make-2nm-chips-abroad-country-lowers-its-silicon-shield\" rel>Taiwanese govt clears TSMC to make 2nm chips abroad — country lowers its 'Silicon Shield'</a></p></li>\n    </ul></li>\n   <li>\n    <p>(01:33:01) Outro</p></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本期节目讨论了 AI 领域的重大进展，包括 DeepSeek R1 的发布、OpenAI 的任务执行器、AI 模型竞争以及特朗普总统在 AI 政策上的转变，这些事件引发了市场动荡和地缘政治影响。",
+  "oneSentenceSummary": "本期节目讨论了 AI 领域的重大进展，包括 DeepSeek R1 的发布、OpenAI 的任务执行器、AI 模型竞争以及特朗普总统在 AI 政策上的转变，这些事件引发了市场动荡和地缘政治影响。",
+  "summary": "在本期播客中，主持人回顾了 AI 领域的重大进展，包括 DeepSeek 发布的 R1，这是一款直接挑战 OpenAI O1 的竞争性 AI 模型，引发了市场动荡，导致英伟达股价大幅下跌 17%。OpenAI 的新产品任务执行器，一款旨在自主执行任务的 AI 代理，也备受关注，展示了其在塑造未来代理型 AI 方面的潜力。节目还提到了政治上的转变，特朗普总统撤销了拜登的 AI 行政命令，表明了一种放宽监管的立场。此外，台湾政府批准台积电在海外生产 2 纳米芯片的决定也被讨论，突显了其在中美紧张关系中的地缘政治意义。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek R1 挑战 OpenAI 的 O1，导致市场动荡",
+      "explanation": "DeepSeek R1 的发布导致市场动荡，英伟达股价因此下跌 17%。这突显了 DeepSeek 与 OpenAI 在 AI 市场上的激烈竞争。"
+    },
+    {
+      "point": "OpenAI 推出任务执行器以增强自主任务处理能力",
+      "explanation": "OpenAI 的任务执行器使 AI 能够自主执行任务，巩固了其在 AI 代理领域的地位。这带来了新的机遇，并加剧了与 DeepSeek 和阿里巴巴等新兴模型的竞争。"
+    },
+    {
+      "point": "特朗普撤销拜登的 AI 行政命令，表明政策转变",
+      "explanation": "特朗普总统撤销拜登的 AI 行政命令，表明了一种放宽监管的 AI 政策，可能在美国推动更具竞争性和更少控制的 AI 市场。"
+    },
+    {
+      "point": "台湾台积电获准在海外生产 2 纳米芯片",
+      "explanation": "台湾批准台积电在海外生产先进的 2 纳米芯片，这是加强全球半导体供应链并应对与中国地缘政治紧张局势的重要举措。"
+    },
+    {
+      "point": "AI 模型发布引发行业动态变化和合作伙伴关系",
+      "explanation": "DeepSeek 的 R1 和阿里巴巴的 Qwen2.5 等新 AI 模型的发布引发了行业动态的变化，各公司纷纷建立新的合作伙伴关系以保持竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "DeepSeek R1 的发布引发了美国竞争对手的严重担忧，导致股价大幅下跌，包括英伟达 17% 的暴跌。",
+    "OpenAI 的新产品任务执行器旨在增强自主任务完成能力，标志着科技行业向代理型 AI 发展的趋势。",
+    "特朗普撤销拜登的 AI 行政命令，预示着 AI 将走向放宽监管的未来，可能推动创新和竞争。",
+    "台湾批准台积电在海外生产 2 纳米芯片的决定可能会加强全球半导体供应，缓解地缘政治紧张局势带来的风险。",
+    "AI 行业正在经历一场巨变，DeepSeek 和阿里巴巴的新竞争模型正在动摇现状。"
+  ],
+  "tags": [
+    "DeepSeek",
+    "OpenAI",
+    "AI 代理",
+    "AI 模型",
+    "AI 政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 403,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738660790000,
+  "publishDateStr": "2025-02-04",
+  "publishDateTimeStr": "2025-02-04 09:19:50"
+}

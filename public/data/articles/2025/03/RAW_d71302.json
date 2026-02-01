@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d71302",
+  "title": "Htmx 的未来：稳定与兼容",
+  "url": "https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-17 00:00:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The htmx team <a href=\"https://htmx.org/essays/future/\">recently released an essay addressing the future of htmx</a>. htmx wants to be a low-cost, high-value addition to the toolkits of web developers with a focus on stability and backward compatibility. Going forward, htmx will be developed with its existing users in mind. Websites built with htmx should be working for many years without changes.</p>\n   <p>The essay starts by reminding the reader of the ubiquity of jQuery and positing three reasons why jQuery is still used in 75% of public websites. First, jQuery could be added with a single, dependency-free link. Second, jQuery remained largely backward-compatible while it evolved. Third, jQuery is a library that, unlike frameworks, does not dictate the structure of an application.</p>\n   <p>Alex Petros discussed in his talk <a href=\"https://www.youtube.com/watch?v=lASLZ9TgXyc\">“Building The 100 Year Web Service”</a> what would be candidate stacks for long-lived applications:</p>\n   <p><img alt=\"\" style=\"width: 605px; height: 344px;\" data-src=\"https://www.infoq.com/news/2025/03/htmx-future-stability-compat/news/2025/03/htmx-future-stability-compat/en/resources/1alternative platforms-1742172531812.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/htmx-future-stability-compat/en/resources/1alternative platforms-1742172531812.png\" rel=\"share\"></p>\n   <p>Petros asserted that the web platform provides higher durability guarantees for applications than desktop or mobile applications. The web runs on a large set of devices, has been backward-compatible since its inception, and does not gate application deployment behind an approval process.</p>\n   <p>The essay declares htmx intent to be an attractive candidate for long-lived applications by adopting an extremely stable API and implementation:</p>\n   <blockquote>\n    <p>This means accepting and documenting the <a href=\"https://htmx.org/quirks/\">quirks</a> of the current implementation.</p>\n    <p>Someone upgrading htmx (even from 1.x to 2.x) should expect things to continue working as before.</p>\n    <p>Where appropriate, we may add better configuration options, but we won’t change defaults.</p>\n    <p>We are going to be increasingly inclined to not accept new proposed features in the library core.</p>\n    <p>People shouldn’t feel pressure to upgrade htmx over time unless there are specific bugs that they want fixed, and they should feel comfortable that the htmx that they write in 2025 will look very similar to the htmx they write in 2035 and beyond.</p>\n   </blockquote>\n   <p>In the talk, Petros discussed SQLite as a candidate database technology as it is highly backward-compatible, is supported everywhere, and has a very long lifespan. While Postgres may require an upgrade or migration every 5 years when a given release is no longer supported, SQLite has not required any upgrade since 2004. SQLite has made backward compatibility a core feature in order to not break existing deployments — at the cost of supporting bugs, documenting gotchas, and reporting on caveats and quirks of the stable versions. Petros <a href=\"https://youtu.be/lASLZ9TgXyc?t=1063\">provided the following quote</a> from the SQLite technical documentation:</p>\n   <blockquote>\n    <blockquote>\n     <p>Primary keys can sometimes contain NULL</p>\n    </blockquote>\n    <p>This is a bug, but by the time the problem was discovered there were [sic] so many databases in circulation that depended on the bug that the decision was made to support the buggy behavior moving forward.</p>\n   </blockquote>\n   <p>Similarly, the team will consider new core htmx features when new browser features are available. Developers can rely on the <a href=\"https://htmx.org/extensions/building/\">htmx Extensions API</a> to build non-core functionalities. A <a href=\"https://htmx.org/extensions/#community-extensions\">list of community extensions is available</a> online.</p>\n   <p>Lastly, the htmx team intends to continue evangelizing hypermedia concepts (cf. <a href=\"https://dl.acm.org/doi/pdf/10.1145/3648188.3675127\">hypermedia controls</a>). The team advocates for the inclusion of those concepts into the HTML standard itself. In this ideal world, there will no longer be any extra htmx dependency as the core ideas would be baked into the platform. Interested readers can review the current <a href=\"https://alexanderpetros.com/triptych/button-actions\">Button Actions proposal</a>. The proposal gives HTML buttons the <code>action</code> attribute, allowing them to make HTTP requests.</p>\n   <p>One developer on Reddit <a href=\"https://www.reddit.com/r/htmx/comments/1hv7owm/comment/m5st31y/\">mentioned</a> that stability may be counter-cultural in the JavaScript world:</p>\n   <blockquote>\n    <p>While I agree with this sentiment and way of designing software, it does leave a problem with the current way we manage dependencies in our software these days:</p>\n    <p>We tend to rate the “health” of a project based on the number of new releases within a given time span. So once software is “complete” as you tend to see in the Rust and Go ecosystems, it is to the untrained eye indistinguishable from abandonware.</p>\n    <p>If we are to normalize “complete” software we need new heuristics as to the health and stability of a project.</p>\n   </blockquote>\n   <p>htmx is an open-source project under the BSD-2-clause license. htmx claims to provide AJAX, CSS Transitions, WebSockets, and <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events\">Server-Sent Events</a> directly in HTML, using attributes, so developers can build user interfaces with the simplicity and power of hypertext.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"The Future of Htmx - Stability and Compatibility\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/htmx-future-stability-compat/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1742175180000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Htmx 致力于通过稳定性和向后兼容性，成为长期 Web 应用开发的可靠选择，其设计理念参考 jQuery 和 SQLite。",
+  "oneSentenceSummary": "Htmx 致力于通过稳定性和向后兼容性，成为长期 Web 应用开发的可靠选择，其设计理念参考 jQuery 和 SQLite。",
+  "summary": "Htmx 团队发布文章，阐述其未来发展方向，强调稳定性和向后兼容性，旨在成为 Web 开发者工具箱中低成本、高价值的补充。文章回顾了 jQuery 的成功，认为其易于添加、向后兼容和不强制应用结构的特性是其流行的原因。Htmx 计划通过保持 API 和实现的稳定性，借鉴 jQuery 的易用性和 SQLite 的长期稳定性，成为长期 Web 应用的理想选择。Htmx 通过扩展 API 构建非核心功能，保持核心库的精简和稳定。同时，Htmx 团队倡导将超媒体概念纳入 HTML 标准，并关注开发者对项目“健康”度的新认识，体现 htmx 在长期维护方面的优势。",
+  "mainPoints": [
+    {
+      "point": "Htmx 注重长期稳定性和向后兼容性",
+      "explanation": "Htmx 团队计划通过保持 API 和实现的稳定性，确保现有网站无需更改即可长期运行。"
+    },
+    {
+      "point": "Htmx 借鉴 jQuery 的易用性和 SQLite 的长期稳定性，以实现长期兼容性",
+      "explanation": "Htmx 学习 jQuery 的易用性以及 SQLite 的长期稳定性与兼容性。旨在为 Web 开发者提供一个可靠的长期解决方案。"
+    },
+    {
+      "point": "Htmx 倡导将超媒体概念纳入 HTML 标准",
+      "explanation": "Htmx 团队希望将超媒体概念融入 HTML 标准，从而减少对额外依赖的需求。"
+    },
+    {
+      "point": "Htmx 通过扩展 API 提供非核心功能，保持核心库的精简和稳定",
+      "explanation": "开发者可以利用 htmx 的扩展 API 构建非核心功能，这有助于保持核心库的精简和稳定，同时满足不同的应用需求。"
+    }
+  ],
+  "keyQuotes": [
+    "升级 htmx 的用户（即使是从 1.x 升级到 2.x）应该期望一切都能像以前一样工作。",
+    "我们将越来越倾向于不接受库核心中提出的新功能。",
+    "除非有需要修复的特定错误，否则人们不应感到随着时间的推移升级 htmx 的压力，并且他们应该感到放心，他们在 2025 年编写的 htmx 将与他们在 2035 年及以后编写的 htmx 非常相似。"
+  ],
+  "tags": [
+    "前端开发",
+    "htmx",
+    "前端框架",
+    "向后兼容性",
+    "Web应用"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 695,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1742169600000,
+  "publishDateStr": "2025-03-17",
+  "publishDateTimeStr": "2025-03-17 00:00:00"
+}

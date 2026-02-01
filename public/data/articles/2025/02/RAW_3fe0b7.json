@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3fe0b7",
+  "title": "OpenAI 发布 Operator：一款 Web 任务 AI 代理",
+  "url": "https://www.infoq.com/news/2025/02/openai-operator-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-18 00:00:00",
+  "author": "Anthony Alford",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://openai.com/\">OpenAI</a> released a research preview of <a href=\"https://openai.com/index/introducing-operator/\">Operator</a>, an AI agent that can use a web browser to perform tasks on a user's behalf. Operator achieves new state-of-the-art performance on the <a href=\"https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard\">WebArena</a> and <a href=\"https://www.trykura.com/benchmarks#computer-use\">WebVoyager</a> benchmarks.</p>\n   <p>To build Operator, OpenAI developed a new model called <a href=\"https://openai.com/index/computer-using-agent/\">Computer-Using Agent</a> (CUA), which is derived from GPT-4o. It relies on GPT-4o's vision ability to understand the contents of a browser screen, and it is further trained to interact with GUI elements like buttons and menus. To perform a task, it iteratively loops through a series of perception, reasoning, and acting steps until the task is complete. OpenAI has built in several safety guardrails: for example, Operator will require the user to take over when entering passwords, and it will refuse some high-risk tasks such as banking transactions. According to OpenAI:</p>\n   <blockquote>\n    <p>We have made significant progress in deep reasoning through the o-model series, vision capabilities through GPT-4o, and new techniques to improve robustness through reinforcement learning and instruction hierarchy. The next challenge space we plan to explore is expanding the action space of agents. The flexibility offered by a universal interface addresses this challenge, enabling an agent that can navigate any software tool designed for humans. By moving beyond specialized agent-friendly APIs, CUA can adapt to whatever computer environment is available—truly addressing the \"long tail\"&nbsp;of digital use cases that remain out of reach for most AI.</p>\n   </blockquote>\n   <p>In late 2024, InfoQ covered Anthropic's release of the <a href=\"https://www.infoq.com/news/2024/11/anthropic-claude-computer-use/\">Computer Use feature</a>, which allows their Claude model to interact with a computer by interpreting the images on the screen, moving the mouse pointer, clicking buttons, and entering text via a virtual keyboard. Claude set records on several OS and web use benchmarks, but Operator outperforms it on WebArena, WebVoyager, and <a href=\"https://os-world.github.io/\">OSWorld</a>. However, Operator still falls short of human performance on these tasks: for example, it scores 38.1% on OSWorld vs. over 70% for humans.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/02/openai-operator-release/news/2025/02/openai-operator-release/en/resources/1cua-benchmarks-1739106524580.png\" style=\"width:100%;height:317px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/02/openai-operator-release/en/resources/1cua-benchmarks-1739106524580.png\" rel=\"share\"></p>\n   <p><em>CUA Benchmark Scores. Image Source: <a href=\"https://openai.com/index/computer-using-agent/\">OpenAI's CUA Report</a></em></p>\n   <p>Because Operator can take actions on websites, OpenAI added <a href=\"https://openai.com/index/operator-system-card/\">several safety measures</a> beyond those already built into GPT-4o. Particularly important are the safeguards against adversarial attacks by malicious websites, including prompt injection and phishing. OpenAI used red-teams to test the safeguards, and claim that their mitigation against prompt injection worked in \"all but one case.\"</p>\n   <p>AI researcher and entrepreneur Andrej Karpathy <a href=\"https://x.com/karpathy/status/1882544526033924438\">wrote about Operator</a> on X:</p>\n   <blockquote>\n    <p>Projects like OpenAI’s Operator are to the digital world as humanoid robots are to the physical world. One general setting (monitor keyboard and mouse, or human body) that can in principle gradually perform arbitrarily general tasks, via an I/O interface originally designed for humans. In both cases, it leads to a gradually mixed-autonomy world, where humans become high-level supervisors of low-level automation. A bit like a driver monitoring the Autopilot. This will happen faster in the digital world than in the physical world because flipping bits is somewhere around 1000X less expensive than moving atoms. Though the market size and opportunity feels a lot bigger in the physical world.</p>\n   </blockquote>\n   <p>Operator is only available via the web for ChatGPT Pro users. OpenAI intends to expand this to other paid ChatGPT plans \"once we are confident in its safety and usability at scale,\" and to make the underlying CUA model available via API.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"OpenAI Releases Operator, an AI Agent for Web-Based Tasks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Anthony Alford\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/openai-operator-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1739887200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 Operator：基于 GPT-4o 的 AI 代理，模仿人类操作自动化 Web 任务，在 WebArena 等测试中表现领先。",
+  "oneSentenceSummary": "OpenAI 发布 Operator：基于 GPT-4o 的 AI 代理，模仿人类操作自动化 Web 任务，在 WebArena 等测试中表现领先。",
+  "summary": "OpenAI 发布了 Operator 的研究预览版，该 AI 代理能够通过 Web 浏览器代表用户执行任务。Operator 基于一种新的计算机使用代理 (CUA) 模型构建，该模型源自 GPT-4o。它利用 GPT-4o 的视觉能力来理解浏览器屏幕内容，并经过训练与 GUI 元素进行交互。它通过感知、推理和行动步骤的迭代循环来完成任务。OpenAI 集成了多项安全机制，例如在密码输入时需要用户授权，并拒绝执行高风险交易。尽管 Operator 在 WebArena 和 WebVoyager 基准测试中优于 Anthropic 的 Claude Computer Use 功能，但在 OSWorld 上的性能仍低于人类水平。这些安全机制旨在防御对抗性攻击，例如提示注入和网络钓鱼。",
+  "mainPoints": [
+    {
+      "point": "Operator 在多个基准测试中表现出色",
+      "explanation": "Operator 在 WebArena 和 WebVoyager 等基准测试中取得了领先的性能，展示了其在 Web 任务自动化方面的潜力。"
+    },
+    {
+      "point": "Operator 通过 CUA 模型模拟人类操作，执行 Web 任务",
+      "explanation": "Operator 基于 GPT-4o 的视觉能力和 GUI 交互训练，通过感知、推理和行动循环完成任务，模拟 Web 浏览器中的人类操作。"
+    },
+    {
+      "point": "OpenAI 为 Operator 实现了多重安全机制",
+      "explanation": "Operator 需要人工干预密码输入和高风险交易等场景，并采取保护措施，防范来自恶意网站的对抗性攻击，确保用户安全。"
+    }
+  ],
+  "keyQuotes": [
+    "我们计划探索的下一个挑战是扩展代理的行动空间。通用界面提供的灵活性能够解决此问题，使代理可以操作任何为人类设计的软件工具。",
+    "像 OpenAI 的 Operator 这样的项目之于数字世界，就像人形机器人之于物理世界。",
+    "由于翻转比特的成本远低于移动原子，因此这一趋势在数字世界中的发展速度将快于物理世界。"
+  ],
+  "tags": [
+    "AI 代理",
+    "GPT-4o",
+    "Web 自动化",
+    "Operator",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 539,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739836800000,
+  "publishDateStr": "2025-02-18",
+  "publishDateTimeStr": "2025-02-18 00:00:00"
+}

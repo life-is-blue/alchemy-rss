@@ -1,0 +1,54 @@
+{
+  "id": "RAW_b9d23b",
+  "title": "大神卡帕西亲自演绎零基础开发 APP，ChatGPT 四轮对话搞定，一小时即在手机运行",
+  "url": "https://www.qbitai.com/2025/03/266763.html",
+  "date": "2025-03-24 07:54:40",
+  "author": "白交",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-arrow-right\" data-track=\"35\">白交 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"36\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">大神卡帕西带着他的教程又来了！</p>\n  <p data-track=\"3\">这次不是教学视频，而是手把手教你如何用大模型开发APP——</p>\n  <p data-track=\"4\">他没有阅读任何文档，也没有在专门平台Swift编程过，在与ChatGPT<strong>仅四轮对话</strong>的指导下，成功在手机上运行上了。</p>\n  <div class=\"tt-video-box\">\n   <div class=\"mock-player\">\n    <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"mock-video-poster\" src=\"https://p0-private.toutiao.com/tos-cn-p-e5b010/198aa7d620d12bbb17e392efabd282be~tplv-tt-large.image?_iz=30575&amp;c=ef143cfe&amp;lk3s=06827d14&amp;policy=eyJ2bSI6MywidWlkIjoiNTM2MjQxMjE2MzMifQ%3D%3D&amp;x-orig-authkey=5a21e4afda5945d9a206a695e4c78a63&amp;x-orig-expires=1743407319&amp;x-orig-sign=902w3DwLYW4Q0UGqZbGyHakules%3D\">\n   </div>\n  </div>\n  <p data-track=\"6\">这是个用来减肥跟踪APP。整个过程不到一个小时，而后又用了三轮对话增加了更多功能，真·实力演绎<strong>「零基础开发」</strong>。</p>\n  <p data-track=\"7\">网友：太好了，把它放在APP Store上吧。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4d7b8b85-a290-459e-6f18-1d481893ba00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4d7b8b85-a290-459e-6f18-1d481893ba00/public\">\n  </div>\n  <p data-track=\"9\">来看看具体是怎么四轮对话搞定。</p>\n  <p data-track=\"10\">首先，<strong>启动应用程序</strong>。</p>\n  <p data-track=\"11\">「你能带我编写第一个iOS应用程序吗？」ChatGPT显示介绍了四个基本步骤：下载运行Xcode；配置你的项目；了解启动模板；运行APP。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ea07a1d6-c7cd-4c1f-e1f2-a22f66863900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ea07a1d6-c7cd-4c1f-e1f2-a22f66863900/public\">\n  </div>\n  <p data-track=\"12\">随后，卡帕西告诉了ChatGPT他的需求：</p>\n  <blockquote>\n   <p data-track=\"13\">一个用来减肥跟踪的APP；<br class=\"sysbr\">\n     希望APP能显示一个计时器，但其单位是因时间流逝而 “免费 ”消耗的卡路里。这将是屏幕中央大数字显示的主要内容。<br class=\"sysbr\">\n     比如取 2000卡路里，除以24/60/60 得出每秒消耗的卡路里，然后每秒更新一次我目前已经消耗的卡路里。</p>\n  </blockquote>\n  <p data-track=\"14\">以及一些具体的要求：</p>\n  <ul>\n   <li data-track=\"15\">增加 2 个按钮，一个按钮是+100，另一个是-100。</li>\n   <li data-track=\"16\">翻转计时器的方向</li>\n   <li data-track=\"17\">颜色：+100 显示为红色，-100为绿色。-当前的千卡数也用颜色表示：红色表示不好（过剩），绿色表示好（不足）。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/9a51f4989fd63ce58556261754421153.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/9a51f4989fd63ce58556261754421153.gif\">\n  </div>\n  <p data-track=\"18\">整个编写过程中他还遇到了一些问题，也都通通抛给ChatGPT解决。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/555224e3-677e-4626-c1b8-fcafcb6aee00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/555224e3-677e-4626-c1b8-fcafcb6aee00/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/357a1fa5-3d46-46a1-15b8-0fb4c6993400/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/357a1fa5-3d46-46a1-15b8-0fb4c6993400/public\">\n  </div>\n  <p data-track=\"19\"><strong>第二步，增强</strong>。在原有基础上增添一些功能以及一些小小改动（调整字体大小啥的）。</p>\n  <p data-track=\"20\">ChatGPT也给出了一些建议，比如卡路里动态运行图、小工具集成等等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/64423beb-344f-4158-7c82-a1ba82bd2300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/64423beb-344f-4158-7c82-a1ba82bd2300/public\">\n  </div>\n  <p data-track=\"21\"><strong>第三步， 添加App Storage</strong>。</p>\n  <p data-track=\"22\">接下来，其实卡帕西自己也不会知道要做啥了。在ChatGPT建议之下增加了暗黑模式、AppStorage。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c15d5f6-ded7-4cd2-7ad2-9c13e45f2100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c15d5f6-ded7-4cd2-7ad2-9c13e45f2100/public\">\n  </div>\n  <p data-track=\"23\">基本功能差不多之后，最后就是<strong>部署到手机</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e566d176-089b-4062-968a-c9afe4c85d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e566d176-089b-4062-968a-c9afe4c85d00/public\">\n  </div>\n  <p data-track=\"24\">从想法到运行整个过程<strong>只需一小时</strong>搞定，而且中间的创意也都是ChatGPT来提供。</p>\n  <p data-track=\"25\">卡帕西所做的是就是开头一个想法，剩下就是在ChatGPT手把手教导下一步步完成。</p>\n  <p data-track=\"26\">然后又在第二天，他想进一步更新一些功能，也通通用ChatGPT搞定了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ce380f4-caee-4136-6482-c6a70588ee00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ce380f4-caee-4136-6482-c6a70588ee00/public\">\n  </div>\n  <p data-track=\"27\">比如添加一个漂亮的动画圆环，在底部用圆圈显示脂肪磅数等等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e51d329d-df35-4db8-831c-a8a1afc5e900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e51d329d-df35-4db8-831c-a8a1afc5e900/public\">\n  </div>\n  <p data-track=\"28\">又在不久之前，卡帕西再一次更新这项目的进展（说是最后一次与ChatGPT的对话）：</p>\n  <p data-track=\"29\">添加小日志并隐藏 BMR。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0ba2994c-52cb-4414-b8da-4ee9248bba00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0ba2994c-52cb-4414-b8da-4ee9248bba00/public\">\n  </div>\n  <p data-track=\"30\">应用程序现在有400行代码，速度开始变慢，功能也越来越复杂。接下来他考虑要么将 ChatGPT 连接到 Xcode，要么连接到 Cursor 进行进一步开发。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f315bc7e-2f34-4b61-028c-a10788bdcf00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f315bc7e-2f34-4b61-028c-a10788bdcf00/public\">\n  </div>\n  <p data-track=\"31\">然后，再看看能不能放到APP Store上。</p>\n  <p data-track=\"32\">好好好，感觉可以跟着卡帕西干起来了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"大神卡帕西亲自演绎零基础开发APP，ChatGPT四轮对话搞定，一小时即在手机运行\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37cbfdba-4355-4b18-7cc8-6e81b4967000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37cbfdba-4355-4b18-7cc8-6e81b4967000/public\">\n  </div>\n  <p data-track=\"33\">参考链接：<br>\n    https://x.com/karpathy/status/1903891179370123559</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "卡帕西演示了如何通过与 ChatGPT 四轮对话，在零编程基础的情况下，一小时内开发出一个可运行的减肥跟踪 APP，展示了 AI 辅助开发的潜力。",
+  "oneSentenceSummary": "卡帕西演示了如何通过与 ChatGPT 四轮对话，在零编程基础的情况下，一小时内开发出一个可运行的减肥跟踪 APP，展示了 AI 辅助开发的潜力。",
+  "summary": "文章讲述了 AI 大神卡帕西如何利用 ChatGPT，在没有 Swift 编程经验的情况下，通过四轮对话快速开发出一个 iOS 减肥跟踪 APP。他向 ChatGPT 描述了 APP 的需求，包括显示卡路里消耗计时器、增减卡路里按钮以及颜色反馈等功能。在 ChatGPT 的指导和创意启发下，他逐步完成了 APP 的编写、功能增强和部署。整个过程中，卡帕西也遇到了一些问题，在 ChatGPT 的帮助下得以解决，充分展示了 AI 的调试能力。整个过程仅用时一小时，充分展示了大语言模型在辅助软件开发方面的潜力。后续卡帕西还不断与 ChatGPT 互动，为 APP 增加了暗黑模式、动画圆环和日志等功能，最终应用程序达到了 400 行代码。文章也提及了后续将 ChatGPT 连接到 Xcode 或 Cursor 进行进一步开发的计划。AI 辅助开发具有局限性，开发者需要保持对代码质量和逻辑的控制。",
+  "mainPoints": [
+    {
+      "point": "ChatGPT 能有效辅助零基础开发者快速构建 APP",
+      "explanation": "通过自然语言交互，ChatGPT 可以提供代码、建议和解决方案，降低了编程门槛，加速了开发过程。"
+    },
+    {
+      "point": "大语言模型在软件开发中具有巨大的潜力",
+      "explanation": "除了代码生成，ChatGPT 还能提供创意、调试问题和建议，成为开发者强大的助手。"
+    },
+    {
+      "point": "人机协作是未来软件开发的重要趋势，开发者需要保持对代码质量和逻辑的控制",
+      "explanation": "开发者可以利用 AI 工具提高效率和创造力，但仍需保持对代码质量和逻辑的控制。"
+    }
+  ],
+  "keyQuotes": [
+    "你能带我编写第一个 iOS 应用程序吗？",
+    "一个用来减肥跟踪的 APP，希望 APP 能显示一个计时器，但其单位是因时间流逝而 '免费 '消耗的卡路里。",
+    "从想法到运行整个过程只需一小时搞定，而且中间的创意也都是 ChatGPT 来提供。",
+    "ChatGPT 也给出了一些建议，比如卡路里动态运行图、小工具集成等等"
+  ],
+  "tags": [
+    "AI辅助开发",
+    "大语言模型",
+    "ChatGPT",
+    "iOS开发",
+    "SwiftUI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1016,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1742802880000,
+  "publishDateStr": "2025-03-24",
+  "publishDateTimeStr": "2025-03-24 07:54:40"
+}

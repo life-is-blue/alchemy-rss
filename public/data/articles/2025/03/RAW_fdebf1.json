@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fdebf1",
+  "title": "草稿链代替思维链，推理 token 砍掉 80%，显著降低算力成本和延迟",
+  "url": "https://www.qbitai.com/2025/03/262864.html",
+  "date": "2025-03-10 04:53:23",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"21\">梦晨 发自 凹非寺\n    <br>\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">推理token减少80%-90%，准确率变化不大，某些任务还能增加。</p>\n  <p data-track=\"3\">Zoom团队提出思维链替代品“草稿链”，显著降低延迟和算力成本。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eaa8f3c7-3f98-4675-feef-495790897b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eaa8f3c7-3f98-4675-feef-495790897b00/public\">\n  </div>\n  <p data-track=\"4\">原理很简单，要求模型为每个推理步骤生成简洁、信息密集的token。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/06e0695b-9e69-4133-c36c-0c59487aa800/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/06e0695b-9e69-4133-c36c-0c59487aa800/public\">\n  </div>\n  <p data-track=\"5\">这一思路受到人类解题过程启发，人类通常不会详细阐述每一个细节，只是简单几下关键的中间结果，作为草稿来辅助思考。</p>\n  <p data-track=\"6\">此外，草稿链方法简单且易于实现，不需要修改模型、微调或强化学习，只需更新提示词中的示例即可，相关代码和数据已在GitHub上开源。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d72b00a7-8be4-46c7-8020-02c1b1133500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d72b00a7-8be4-46c7-8020-02c1b1133500/public\">\n  </div>\n  <p data-track=\"7\">研究团队认为，与另一种降低延迟和计算成本的方法“在连续潜空间推理”相比，草稿链保留了可解释性，且可以应用于闭源的黑盒模型。</p>\n  <p data-track=\"8\">第三方分析测算，对于每个月处理100万个推理请求的企业， 可以将成本从思维链的3800美元降低到760美元，每月节省超过3000美元。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5caa0b01-ba36-411b-c47a-1fd827faca00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5caa0b01-ba36-411b-c47a-1fd827faca00/public\">\n  </div>\n  <p data-track=\"10\">实验遵循原始思维链论文，评估3类任务：算术推理、常识推理和符号推理。</p>\n  <p data-track=\"11\">算数推理任务选择GSM8k数据集，从准确率看，标准提示下GPT-4o和Claude 3.5 Sonnet的准确率分别仅53.3%和64.6%，思维链使两者均超95%，草稿链也达到91%左右。</p>\n  <p data-track=\"12\">在token使用上，思维链生成约200个token/响应，草稿链仅约40个，减少约80%。</p>\n  <p data-track=\"13\">延迟方面，草稿链使GPT-4o和Claude 3.5 Sonnet的平均延迟分别降低76.2%和48.4%。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32ee9a7d-d764-4069-9a11-34036e3f8200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32ee9a7d-d764-4069-9a11-34036e3f8200/public\">\n  </div>\n  <p data-track=\"14\">常识推理选择BIG-bench 的日期理解和运动理解任务也取得了相似的结果，特别值得注意的是Claude 3.5 Sonnet在草稿链下准确率还有所上升。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0f1c3d25-9999-42de-af87-ada5becb9c00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0f1c3d25-9999-42de-af87-ada5becb9c00/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3021cbd-abb2-4faa-7b97-3f55a4650900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3021cbd-abb2-4faa-7b97-3f55a4650900/public\">\n  </div>\n  <p data-track=\"15\">符号推理选择抛硬币任务，由于原数据集未公开，作者合成了250个示例的测试集。\n   <br>\n   草稿链在保持100%准确率的情况下大幅减少了推理token和延迟。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/913a308a-27a9-4ba1-acdf-aa7802c0c300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/913a308a-27a9-4ba1-acdf-aa7802c0c300/public\">\n  </div>\n  <p data-track=\"16\">但草稿链方法也有一定的局限性：在零样本设置下有效性会显著下降。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/66c58cc2-1c82-42b6-6228-afd2f0be7d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/66c58cc2-1c82-42b6-6228-afd2f0be7d00/public\">\n  </div>\n  <p data-track=\"17\">此外，在参数量小于30亿的小模型上，虽然草稿链仍能有效减少每个回答所需的token数并提高准确率，但与思维链相比，性能差距更大。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"草稿链代替思维链，推理token砍掉80%，显著降低算力成本和延迟\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f69fdfe2-da44-4264-2c38-8d90f7f15200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f69fdfe2-da44-4264-2c38-8d90f7f15200/public\">\n  </div>\n  <p data-track=\"18\">研究团队推测，可能是由于训练数据中缺乏草稿链风格的推理模式，在不提供few-shot样本指导的情况下，很难生成简洁而有帮助的”草稿”。</p>\n  <p data-track=\"19\">论文地址：\n   <br>\n   https://arxiv.org/abs/2502.18600v2</p>\n  <p data-track=\"20\">参考链接：\n   <br>\n   [1]https://ajithp.com/2025/03/02/chain-of-draft-llm-prompting/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Zoom 团队提出草稿链方法，作为思维链的替代方案，通过生成简洁的中间结果来辅助思考，有效降低大语言模型的推理 token 和延迟，同时保持甚至提升准确率。",
+  "oneSentenceSummary": "Zoom 团队提出草稿链方法，作为思维链的替代方案，通过生成简洁的中间结果来辅助思考，有效降低大语言模型的推理 token 和延迟，同时保持甚至提升准确率。",
+  "summary": "文章介绍了 Zoom 团队提出的“草稿链”方法，旨在替代传统的“思维链”推理模式，以降低大语言模型的推理成本和延迟。该方法的核心思想是要求模型在推理过程中生成简洁、信息密集的 token 作为草稿，模拟人类解题时先写草稿的习惯。这种方法主要通过提示工程 (Prompt Engineering) 实现。实验结果表明，在算术推理、常识推理和符号推理等任务中，“草稿链”在显著减少推理 token 数量（80%-90%）和降低延迟的同时，能够保持甚至提升模型的准确率，特别是在常识推理任务中，Claude 3.5 Sonnet 的准确率还有所上升。此外，该方法易于实现，无需修改模型或进行微调，只需更新提示词中的示例即可。第三方分析表明，采用“草稿链”可以显著降低企业的推理成本。但该方法在零样本设置和小模型上的有效性会显著下降。",
+  "mainPoints": [
+    {
+      "point": "草稿链通过生成简洁 token 显著降低推理成本",
+      "explanation": "模型为每个推理步骤生成信息密集的 token，减少了 token 使用量，从而降低了计算成本，并缩短了推理延迟。"
+    },
+    {
+      "point": "草稿链方法易于实现且不依赖模型修改",
+      "explanation": "该方法不需要对模型进行微调或强化学习，只需修改提示词中的示例即可，具有良好的通用性和易用性。"
+    },
+    {
+      "point": "草稿链在零样本和小模型上的表现有局限性",
+      "explanation": "在缺乏 few-shot 样本指导的情况下，草稿链的有效性会显著下降；在参数量较小的模型上，性能提升不如思维链明显。"
+    }
+  ],
+  "keyQuotes": [
+    "推理 token 减少 80%-90%，准确率变化不大，某些任务还能增加。",
+    "草稿链方法简单且易于实现，不需要修改模型、微调或强化学习，只需更新提示词中的示例即可",
+    "与另一种降低延迟和计算成本的方法 '在连续潜空间推理' 相比，草稿链保留了可解释性，且可以应用于闭源的黑盒模型。"
+  ],
+  "tags": [
+    "大语言模型",
+    "推理优化",
+    "草稿链",
+    "思维链",
+    "token 减少"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 898,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741582403000,
+  "publishDateStr": "2025-03-10",
+  "publishDateTimeStr": "2025-03-10 04:53:23"
+}

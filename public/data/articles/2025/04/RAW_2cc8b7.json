@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2cc8b7",
+  "title": "GitHub Markdown 图片暗黑/光明模式适配指南",
+  "url": "https://github.blog/developer-skills/github/how-to-make-your-images-in-markdown-on-github-adjust-for-dark-mode-and-light-mode/",
+  "date": "2025-04-18 19:30:46",
+  "author": "Cassidy Williams",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>GitHub supports dark mode and light mode, and as developers, we can make our README images look great in both themes. Here’s a quick guide to using the <code>&lt;picture&gt;</code> element in your GitHub Markdown files to dynamically switch images based on the user’s color scheme.</p>\n  <p>When <a href=\"https://docs.github.com/en/get-started/accessibility/managing-your-theme-settings\">developers switch to GitHub’s dark mode (or vice versa)</a>, standard images can look out of place, with bright backgrounds or clashing colors.</p>\n  <p>Instead of forcing a one-size-fits-all image, you can tailor your visuals to blend seamlessly with the theme. It’s a small change, but it can make your project look much more polished.</p>\n  <h2 id=\"one-snippet-two-themes\"><strong>One snippet, two themes!</strong><a href=\"#one-snippet-two-themes\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"<strong>One snippet, two themes!</strong>\"></a></h2>\n  <p>Here’s the magic snippet you can copy into your README (or any Markdown file):</p>\n  <pre><code>&lt;picture&gt;\n  &lt;source media=\"(prefers-color-scheme: dark)\" srcset=\"dark-mode-image.png\"&gt;\n  &lt;source media=\"(prefers-color-scheme: light)\" srcset=\"light-mode-image.png\"&gt;\n  &lt;img alt=\"Fallback image description\" src=\"default-image.png\"&gt;\n&lt;/picture&gt;\n</code></pre>\n  <p>Now, we say it’s magic, but let’s take a peek behind the curtain to show how it works:</p>\n  <ul>\n   <li>The <code>&lt;picture&gt;</code> tag lets you define multiple image sources for different scenarios.</li>\n   <li>The <code>&lt;source media=\"...\"&gt;</code> attribute matches the user’s color scheme. \n    <ul>\n     <li>When <code>media=\"(prefers-color-scheme: dark)\"</code>, the browser loads the <code>srcset</code> image when GitHub is in dark mode.</li>\n     <li>Similarly, when <code>media=\"(prefers-color-scheme: light)\"</code>, the browser loads the <code>srcset</code> image when GitHub is in light mode.</li>\n    </ul></li>\n   <li>If the browser doesn’t support the <code>&lt;picture&gt;</code> element, or the user’s system doesn’t match any defined media queries, the fallback <code>&lt;img&gt;</code> tag will be used.</li>\n  </ul>\n  <p>You can use this approach in your repo README files, documentation hosted on GitHub, and any other Markdown files rendered on GitHub.com!</p>\n  <h2 id=\"demo\"><strong>Demo</strong><a href=\"#demo\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"<strong>Demo</strong>\"></a></h2>\n  <p>What’s better than a demo to help you get started? Here’s what this looks like in practice:<br></p>\n  <div style=\"width:100%;\" class=\"wp-video\">\n   <!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->\n   <video class=\"wp-video-shortcode\" id=\"video-86598-1\" width=\"1920\" height=\"1080\" preload=\"metadata\" controls=\"controls\">\n    <source type=\"video/mp4\" src=\"https://github.blog/wp-content/uploads/2025/04/Toggle-Dark-and-Light-Mode-on-GitHub-.mp4#t=0.001?_=1\"><a href=\"https://github.blog/wp-content/uploads/2025/04/Toggle-Dark-and-Light-Mode-on-GitHub-.mp4#t=0.001\">https://github.blog/wp-content/uploads/2025/04/Toggle-Dark-and-Light-Mode-on-GitHub-.mp4#t=0.001</a>\n   </video>\n  </div>\n  <p></p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\">\n  </div>\n </body>\n</html>",
+  "aiSummary": "介绍如何利用 HTML 的 `<picture>` 元素，在 GitHub Markdown 中根据用户主题模式（黑暗/光明）动态切换图片。",
+  "oneSentenceSummary": "介绍如何利用 HTML 的 `<picture>` 元素，在 GitHub Markdown 中根据用户主题模式（黑暗/光明）动态切换图片。",
+  "summary": "本文介绍一种优化 GitHub 仓库 README 文件及其他 Markdown 文档中图片显示效果的方法，使其能够根据用户的 GitHub 主题设置（黑暗模式或光明模式）自动调整。通过使用 HTML 的 `<picture>` 元素，开发者可以指定不同的图片资源对应不同的主题模式。文章提供了具体的代码示例，解释了 `<picture>` 元素的工作原理，包括如何使用 `media` 属性来检测用户的主题偏好，以及如何在不支持 `<picture>` 元素的浏览器中提供备用图片。这种方法可以提升 GitHub README 文件的专业性和用户体验，使项目在不同主题下都呈现出最佳视觉效果。",
+  "mainPoints": [
+    {
+      "point": "使用 `<picture>` 元素可根据 GitHub 主题动态切换图片",
+      "explanation": "通过 `<picture>` 标签和 `media` 属性，可以针对黑暗和光明模式加载不同的图片，提升在不同主题下的视觉效果。"
+    },
+    {
+      "point": "`source` 标签的 `media` 属性匹配用户颜色方案",
+      "explanation": "`media=\"(prefers-color-scheme: dark)\"` 匹配黑暗模式，`media=\"(prefers-color-scheme: light)\"` 匹配光明模式。"
+    },
+    {
+      "point": "提供兼容性方案，确保所有浏览器都能正常显示图片",
+      "explanation": "当浏览器不支持 `<picture>` 或用户系统不匹配任何 `media` 查询时，`img` 标签确保图片正常显示。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub 现已支持黑暗/光明模式，开发者们，让你的 README 图片在这两种主题下都光彩夺目！",
+    "告别一刀切，定制视觉效果，与主题无缝融合。",
+    "`<picture>` 标签允许你为不同的场景定义多个图像源。"
+  ],
+  "tags": [
+    "GitHub",
+    "Markdown",
+    "HTML",
+    "黑暗模式",
+    "光明模式"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 268,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745004646000,
+  "publishDateStr": "2025-04-18",
+  "publishDateTimeStr": "2025-04-18 19:30:46"
+}

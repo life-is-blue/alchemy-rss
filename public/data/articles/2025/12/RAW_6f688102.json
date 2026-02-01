@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6f688102",
+  "title": "NVIDIA Dynamo 解决多节点 LLM 推理难题",
+  "url": "https://www.infoq.com/news/2025/12/nvidia-dynamo-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-04 13:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Serving <a href=\"https://en.wikipedia.org/wiki/Large_language_model\">Large Language Models</a> (LLMs) at scale is complex. Modern LLMs now exceed the memory and compute capacity of a single <a href=\"https://en.wikipedia.org/wiki/Graphics_processing_unit\">GPU</a> or even a single multi-GPU node. As a result, inference workloads for 70B+, 120B+ parameter models, or pipelines with large context windows, require multi-node<strong>, </strong>distributed GPU deployments.</p>\n   <p>This challenge is sparking innovations in the inference stack. That’s where <a href=\"https://developer.nvidia.com/dynamo\">Dynamo</a> comes in. Dynamo is an <a href=\"https://github.com/ai-dynamo/dynamo\">open-source framework</a> for distributed inference. It manages execution across GPUs and nodes. It breaks inference into phases, like prefill and decode. It also separates memory-bound and compute-bound tasks. Plus, it dynamically manages GPU resources to boost usage and keep latency low.</p>\n   <p>Dynamo allows infrastructure teams to scale inference capacity responsively, handling demand spikes without permanently overprovisioning expensive GPU resources. The framework works with any inference engine. It supports <a href=\"https://github.com/NVIDIA/TensorRT-LLM\">TensorRT-LLM</a>, <a href=\"https://github.com/vllm-project/vllm\">vLLM</a>, <a href=\"https://github.com/sgl-project/sglang\">SGLang</a>, and more. This gives organizations flexibility in their technology choices.</p>\n   <p>Microsoft Azure and NVIDIA recently <a href=\"https://blog.aks.azure.com/2025/10/24/dynamo-on-aks\">collaborated</a> to showcase the open-source NVIDIA Dynamo framework. This collaboration showed that disaggregation, smart caching, and dynamic resource allocation can run high-performance AI workloads on Kubernetes well. The recent report details how the authors used Dynamo on a Kubernetes cluster (AKS). This setup runs on special rack-scale VM instances, the ND GB200-v6, featuring 72 tightly integrated NVIDIA Blackwell GPUs.</p>\n   <p>They used this setup to run the open-source 120B-parameter model <a href=\"https://huggingface.co/openai/gpt-oss-120b\">GPT-OSS 120B</a>, using a tested 'InferenceMAX' recipe. This setup achieved 1.2 million tokens per second, showing that Dynamo can handle enterprise-level inference tasks on regular clusters.</p>\n   <p>The deployment used standard cloud-native tools like GPU node pools, Helm for Dynamo, and Kubernetes for orchestration. This shows that organizations can benefit from Dynamo without needing custom infrastructure.</p>\n   <p>Dynamo's core innovation centers on disaggregating the prefill and decode phases of LLM inference onto separate GPUs. The prefill phase, which processes input context, is compute-intensive, while the decode phase, which generates output tokens, is memory-bound. By separating these phases, each can be optimized independently with different GPU counts and parallelism strategies.</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/12/nvidia-dynamo-kubernetes/news/2025/12/nvidia-dynamo-kubernetes/en/resources/1dynamo_features-04dd30fd6edac98ed86c14ec21fca1af-1764845679334.jpg\" style=\"width:100%;height:560px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/nvidia-dynamo-kubernetes/en/resources/1dynamo_features-04dd30fd6edac98ed86c14ec21fca1af-1764845679334.jpg\" rel=\"share\">\n   </center>\n   <p>This architectural choice solves a common issue with inference workloads. Take an e-commerce app that creates personalized product recommendations. It might process thousands of tokens for user and product context (heavy prefill), but only generate short 50-token descriptions (light decode). Running both tasks on the same GPU wastes resources. With disaggregated serving, prefill GPUs handle compute-heavy tasks, while decode GPUs focus on memory bandwidth and capacity.</p>\n   <p>The framework features dynamic GPU scheduling that adapts to changing demand. This lets the inference system scale resources based on real-time traffic. A Planner component, based on SLAs, forecasts traffic using time-series data. It adjusts GPU allocation between prefill and decode workers to meet latency goals, such as Time to First Token and Inter-Token Latency.</p>\n   <p>During traffic surges, the system can reallocate GPUs from decode to prefill operations or spin up additional resources. When the load decreases, resources scale back down. This elasticity helps organizations meet service level objectives without overprovisioning hardware.</p>\n   <p>Dynamo includes an LLM-aware router that tracks the location of key-value (KV) cache across GPU clusters. When requests arrive, the router calculates overlap between the new request and cached KV blocks, directing traffic to GPUs that can maximize cache reuse. This approach reduces redundant computation, particularly valuable when multiple requests share common context.</p>\n   <p>For memory management, the KV Block Manager moves rarely accessed cache blocks to CPU RAM, SSDs, or object storage. This caching method allows scaling cache storage to petabytes and keeps reuse efficient. Without offloading, more concurrent sessions per GPU can lead to evictions and expensive recomputations. With offloading, GPUs can handle more users while keeping latency low.</p>\n   <p>Dynamo is positioned as the successor to <a href=\"https://developer.nvidia.com/dynamo-triton\">NVIDIA Triton Inference Server,</a> incorporating lessons learned from earlier inference serving frameworks. Built with Rust for performance and Python for extensibility, the project is fully open source on <a href=\"https://github.com/ai-dynamo/dynamo\">GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"NVIDIA Dynamo Addresses Multi-Node LLM Inference Challenges\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/nvidia-dynamo-kubernetes/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764853200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "NVIDIA Dynamo 是一个开源框架，旨在通过分离预填充和解码阶段、动态管理 GPU 资源以及优化 KV 缓存来解决多节点 LLM 推理的难题。",
+  "oneSentenceSummary": "NVIDIA Dynamo 是一个开源框架，旨在通过分离预填充和解码阶段、动态管理 GPU 资源以及优化 KV 缓存来解决多节点 LLM 推理的难题。",
+  "summary": "本文介绍了 NVIDIA Dynamo，它是一个开源框架，旨在解决大规模 LLM 推理的复杂性，特别是对于那些超出单 GPU 或多 GPU 节点容量的模型。Dynamo 通过将推理分解为预填充和解码阶段，并分别优化内存密集型和计算密集型任务，从而管理跨 GPU 和节点的分布式执行。它动态地管理 GPU 资源，以提高利用率并最大限度地减少延迟，使基础设施团队能够灵活地扩展推理容量，而无需过度供应。该框架与各种推理引擎（如 TensorRT-LLM 和 vLLM）兼容。与微软 Azure 的合作展示了 Dynamo 在 Kubernetes (AKS) 上使用 ND GB200-v6 实例的能力，在使用 GPT-OSS 120B 模型时实现了每秒 120 万 tokens。主要创新包括将预填充（计算密集型）和解码（内存密集型）阶段分离到不同的 GPU 上，基于服务等级协议 (SLA) 和流量预测的动态 GPU 调度，以及优化 KV 缓存重用的 LLM 感知型路由器。Dynamo 还具有一个 KV 块管理器，用于卸载不经常访问的缓存块，防止缓存驱逐并提高并发性。Dynamo 被定位为 NVIDIA Triton 推理服务器的继任者，它使用 Rust 和 Python 构建，并且完全开源。",
+  "mainPoints": [
+    {
+      "point": "Dynamo 通过将 LLM 推理分解为预填充和解码阶段来优化资源利用率。",
+      "explanation": "通过将计算密集型的预填充任务和内存密集型的解码任务分配到不同的 GPU 上，Dynamo 允许独立优化，从而防止资源浪费并提高各种 LLM 工作负载的效率。"
+    },
+    {
+      "point": "动态 GPU 调度和资源分配实现了响应式扩展和成本效率。",
+      "explanation": "Dynamo 的规划器组件预测流量并实时调整 GPU 分配，从而允许系统在需求高峰期间扩大规模，并在低负载期间缩小规模，最终优化硬件利用率并降低运营成本。"
+    },
+    {
+      "point": "LLM 感知型路由和 KV 缓存管理显著提高了推理性能。",
+      "explanation": "该框架智能地路由请求，以最大限度地重用 KV 缓存并卸载较少使用的缓存块，从而减少冗余计算并以更低的延迟实现更高的并发会话。"
+    }
+  ],
+  "keyQuotes": [
+    "Dynamo 是一个用于分布式推理的开源框架。它管理跨 GPU 和节点的执行。",
+    "Dynamo 的核心创新在于将 LLM 推理的预填充和解码阶段分离到不同的 GPU 上。",
+    "这种设置实现了每秒 120 万 tokens，表明 Dynamo 可以在常规集群上处理企业级推理任务。",
+    "Dynamo 包括一个 LLM 感知型路由器，用于跟踪跨 GPU 集群的键值 (KV) 缓存的位置。",
+    "Dynamo 被定位为 NVIDIA Triton 推理服务器的继任者，并借鉴了早期推理服务框架的经验。"
+  ],
+  "tags": [
+    "LLM 推理",
+    "分布式系统",
+    "NVIDIA Dynamo",
+    "GPU 优化",
+    "Kubernetes"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 632,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764853200000,
+  "publishDateStr": "2025-12-04",
+  "publishDateTimeStr": "2025-12-04 13:00:00"
+}

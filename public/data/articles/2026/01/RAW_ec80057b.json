@@ -1,0 +1,63 @@
+{
+  "id": "RAW_ec80057b",
+  "title": "当翻译层消失，还剩下什么？",
+  "url": "https://baoyu.io/blog/2026/01/07/ai-pm-new-era",
+  "date": "2026-01-10 00:00:00",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"2xt23nmpsd\">很多人的工作，说的难听一点就是<strong>翻译</strong>，或者说上传下达。</p>\n   <p data-id=\"uy8bu8tz15\">产品经理把客户需求翻译成工程师能看懂的文档。项目经理把老板的想法翻译成执行计划。咨询顾问把行业知识翻译成客户能用的方案。分析师把数据翻译成决策建议。</p>\n   <p data-id=\"xhtji8lhlj\">这种翻译工作，由于 AI 能力的进化正在被压缩。</p>\n   <p data-id=\"5t4sxtf9hz\">Shubham Saboo 是 Google 的高级 AI 产品经理，他最近写了一篇文章《The Modern AI PM in the age of Agents》（<span data-name=\"link\" data-type=\"emoji\">🔗</span> <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/Saboo_Shubham_/article/2008742211194913117\">https://x.com/Saboo_Shubham_/article/2008742211194913117</a> <span data-name=\"link\" data-type=\"emoji\">🔗</span>），讲 AI 智能体时代 PM 角色的变化。</p>\n   <p data-id=\"k8hs4c6rk1\">他的核心观点是：<strong>当智能体能直接把清晰的问题变成可运行的代码，PM 就不再是给工程师翻译需求了，而是要把问题定义得足够清楚，让智能体能直接干活。</strong></p>\n   <p data-id=\"9hcsuia0co\">如果说工作效率从周变成了小时，这不仅仅是效率上的提升，更会带来工作方式的变化。</p>\n   <h2 data-id=\"4mhie19vv6\" id=\"4mhie19vv6\" data-toc-id=\"4mhie19vv6\">不只是产品经理</h2>\n   <p data-id=\"u6thlhj6x0\">产品经理只是最先感受到冲击的群体。但仔细想想，所有\"把 A 翻译成 B\"的工作都面临同样的问题。</p>\n   <p data-id=\"0b7gzgxbxy\">当 AI 智能体能直接理解清晰的问题描述并产出结果，中间的翻译层就变得多余了。你不需要一个人来把你的想法翻译成另一种形式，你需要的是把想法本身说清楚。</p>\n   <p data-id=\"hhbwmy7y8m\">以前你可以不太清楚自己要什么，反正有人帮你梳理、澄清、来回沟通。现在这个缓冲带没了。你必须自己想清楚。</p>\n   <p data-id=\"t5ynufsj5q\"><strong>能把问题定义清楚的人，价值上升。只会传递信息的人，价值下降。</strong></p>\n   <h2 data-id=\"od7lf9caqk\" id=\"od7lf9caqk\" data-toc-id=\"od7lf9caqk\">三个新能力</h2>\n   <p data-id=\"78opflnt7c\">当实现不再是瓶颈，瓶颈就转移到上游，转移到搞清楚该做什么。</p>\n   <p data-id=\"ozdi4kc9o9\">围绕这个，有三个能力变得特别重要：</p>\n   <p data-id=\"cw4fjaz3og\"><strong>第一是问题定义。</strong></p>\n   <p data-id=\"wnvrw2bf92\">模糊的需求 AI 也能应付，但出来的东西大概率不是你想要的。你得把问题想透：边界在哪，约束是什么，成功长什么样。以前这些可以在反复沟通中逐步明确，现在你得在开工前就想清楚。比如做一个报表工具是模糊的，每周一自动汇总上周销售数据，按区域分组，标红低于目标的，导出 Excel 才是定义清楚的问题。</p>\n   <p data-id=\"2f9x0vo73j\"><strong>第二是上下文喂养。</strong></p>\n   <p data-id=\"cgdx7lulji\">你给 AI 的背景信息质量，直接决定产出质量。同样一个需求，给一句话和给一份详细的背景说明，结果天差地别。这个能力很少有人提，但每个用好 AI 的人都默默练出来了。</p>\n   <p data-id=\"zfiirzdeht\"><strong>第三是品味和判断。</strong></p>\n   <p data-id=\"gdbp6zv74f\">AI 能快速产出很多东西，但能跑不等于能用。哪些真正解决问题，哪些只是看起来对，需要人来判断。这种判断力没有捷径，只能靠不断看、不断评估、不断踩坑积累。</p>\n   <h2 data-id=\"ew7fif47fp\" id=\"ew7fif47fp\" data-toc-id=\"ew7fif47fp\">上下文六要素</h2>\n   <p data-id=\"4wvuj51g2f\">三个能力里，上下文喂养最容易被忽视，但可能最实用。这里有一个框架，适用于任何需要和 AI 协作的场景：</p>\n   <ol>\n    <li>\n     <p data-id=\"tki05s6o4i\"><strong>具体的对象</strong>：你在为谁解决问题？不是泛泛的用户画像，是具体的人。他的日常工作流程是什么，什么情况下会放弃，什么情况下会满意。越具体越好。</p>\n    </li>\n    <li>\n     <p data-id=\"hovelcj3mz\"><strong>原始表达</strong>：问题最初是怎么被描述的？直接用原话，别加工。用户怎么抱怨，客户怎么提需求，这些原汁原味的表达比你的总结有价值得多。</p>\n    </li>\n    <li>\n     <p data-id=\"6g6k5q2i8a\"><strong>好的参照</strong>：你心目中的好是什么样？找几个例子给 AI 看。截图也行，链接也行，案例也行。给示例比用文字描述有效一百倍。</p>\n    </li>\n    <li>\n     <p data-id=\"uf6325qwjd\"><strong>失败记录</strong>：这个问题之前试过什么方案，为什么不行？把踩过的坑写下来。AI 不知道你的历史，不告诉它，它可能把你走过的弯路再走一遍。</p>\n    </li>\n    <li>\n     <p data-id=\"e0m74j2e3p\"><strong>真正的约束</strong>：注意是真正的约束，不是所有限制都值得写。只写那些会实际影响方案走向的：必须兼容什么，预算多少，截止时间是什么。</p>\n    </li>\n    <li>\n     <p data-id=\"iw8p2h106i\"><strong>成功标准</strong>：怎么知道做成了？要可衡量的，不是\"提升用户体验\"这种虚的。完成率从多少提到多少，时间从多久缩短到多久，能量化就量化。</p>\n    </li>\n   </ol>\n   <p data-id=\"wroskcpdia\">我自己用 AI 写代码、写文档、做分析，都是这个体验。花半小时把背景写清楚，比花三小时反复调 prompt 有效得多。</p>\n   <h2 data-id=\"o7a4t7i5s7\" id=\"o7a4t7i5s7\" data-toc-id=\"o7a4t7i5s7\">怎么开始</h2>\n   <p data-id=\"3wjajuivpz\">如果你想试试这种新的工作方式，可以尝试：</p>\n   <p data-id=\"ux3qo3cyd7\">找一个你现在就有的真实小问题。不是想象出来的，是真的困扰你的。比如每周要手动整理的报表，比如反复做的某个分析，比如一直想做但嫌麻烦的小工具。</p>\n   <p data-id=\"80y3yox994\">然后花半小时写上下文，按前面说的六要素来。别急着动手，先把背景搞清楚。</p>\n   <p data-id=\"9o9lhzb0jz\">接着让 AI 做一版，看看出来什么。不指望第一次就对，但你能看到方向。然后调整，再来。</p>\n   <p data-id=\"s4l3ri6sfu\">做十次。不同的问题，不同的复杂度。你会慢慢建立起直觉，知道什么该告诉 AI，什么不用说，什么时候该相信它，什么时候该自己判断。</p>\n   <p data-id=\"kr28hht9es\"><strong>这种直觉，就是新时代的核心竞争力。</strong></p>\n   <hr>\n   <p data-id=\"i51ykyt5hh\">如果你的工作主要是把客户需求翻译成文档给工程师，那是工作流。工作流会被自动化。</p>\n   <p data-id=\"r9kj611tgk\">如果你的工作是把问题理解得足够深，深到正确的解决方案变得显而易见，你比以前更值钱了。智能体会把这种理解放大成发布的产品，比任何团队都快。</p>\n   <p data-id=\"mcv00zgboy\">每个 PM 都该问自己：<strong>当翻译层消失，还剩下什么？</strong></p>\n   <p data-id=\"fmpbv663m5\">对于最好的 PM 来说，答案是：那些真正重要的东西。理解问题，用户同理心，判断力，品味。这些一直是 PM 工作的一部分。现在它们正在成为全部。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文论述了 AI 智能体时代“翻译层”工作消失的趋势，强调将价值转移到清晰定义问题、有效喂养上下文和培养判断力，从而提升个人核心竞争力。",
+  "oneSentenceSummary": "本文论述了 AI 智能体时代“翻译层”工作消失的趋势，强调将价值转移到清晰定义问题、有效喂养上下文和培养判断力，从而提升个人核心竞争力。",
+  "summary": "文章深入探讨了在 AI 智能体时代，传统“翻译”型工作面临的冲击和转型。作者指出，AI 的崛起正在压缩产品经理、项目经理等将 A 翻译成 B 的中间层工作。未来，核心价值将转移到“把问题定义清楚”的能力上，而非仅仅是信息传递。文章着重提出了 AI 时代产品经理及其他类似角色需要培养的三项新能力：问题定义、上下文喂养和品味与判断。其中，作者详细阐述了“上下文喂养”的六要素框架，包括明确具体的对象、原始表达、好的参照、失败记录、真正的约束和成功标准。通过一个实践案例，鼓励读者通过小步快跑的方式，不断积累与 AI 协作的直觉和经验，强调在翻译层消失后，真正重要的“理解问题、用户同理心、判断力、品味”将成为决定性竞争力。",
+  "mainPoints": [
+    {
+      "point": "AI 智能体正在压缩传统工作中的“翻译层”价值。",
+      "explanation": "随着 AI 能力的进化，例如智能体能将清晰的问题直接转化为可运行的代码，产品经理等过去负责将需求“翻译”给工程师的角色将受到冲击，中间的信息传递环节变得多余。"
+    },
+    {
+      "point": "价值重心转移至“清楚定义问题”的能力。",
+      "explanation": "当 AI 能够直接执行指令时，工作的核心将从“如何实现”转移到“实现什么”，即要求从业者能将模糊需求转化为清晰、可执行的问题定义，这成为新的核心竞争力。"
+    },
+    {
+      "point": "AI 时代需要培养问题定义、上下文喂养和品味判断三项新能力。",
+      "explanation": "为了适应 AI 协作模式，个人需要精进模糊问题清晰化、提供高质量背景信息（上下文喂养）以及对 AI 产出进行有效评估和选择（品味判断）的能力。"
+    },
+    {
+      "point": "“上下文喂养”是提升 AI 协作效率的关键，具备六要素框架。",
+      "explanation": "通过明确具体对象、原始表达、好的参照、失败记录、真正的约束和成功标准这六个维度，能显著提高对 AI 产出的质量和准确性，减少反复调整的成本。"
+    },
+    {
+      "point": "实践和直觉培养是适应新时代工作方式的核心。",
+      "explanation": "通过反复进行小规模的 AI 辅助实践，积累与 AI 协作的直觉，将使个体学会何时信任 AI、何时介入判断，从而在新工作流中保持竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "很多人的工作，说的难听一点就是翻译，或者说上传下达。",
+    "能把问题定义清楚的人，价值上升。只会传递信息的人，价值下降。",
+    "当实现不再是瓶颈，瓶颈就转移到上游，转移到搞清楚该做什么。",
+    "上下文喂养最容易被忽视，但可能最实用。",
+    "这种直觉，就是新时代的核心竞争力。"
+  ],
+  "tags": [
+    "AI",
+    "产品经理",
+    "工作流",
+    "能力转型",
+    "提示工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1769,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768003200000,
+  "publishDateStr": "01-10",
+  "publishDateTimeStr": "2026-01-10 00:00:00"
+}

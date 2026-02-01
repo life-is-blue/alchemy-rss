@@ -1,0 +1,57 @@
+{
+  "id": "RAW_cd50b3",
+  "title": "Gemini 2.0 Flash 原生图像生成实验：开发者的新选择",
+  "url": "https://developers.googleblog.com/en/experiment-with-gemini-20-flash-native-image-generation/",
+  "date": "2025-03-12 00:00:00",
+  "author": "Kat Kampf, Nicole Brichtova",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini-image-generation.original.png\" alt=\"Gemini 2.0 Flash native image generation\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"i2nj7\">In <a href=\"https://developers.googleblog.com/en/the-next-chapter-of-the-gemini-era-for-developers/\">December</a> we first introduced native image output in Gemini 2.0 Flash to trusted testers. Today, we're making it available for developer experimentation across <a href=\"https://ai.google.dev/gemini-api/docs/available-regions\">all regions</a> currently supported by Google AI Studio. You can test this new capability using an experimental version of Gemini 2.0 Flash (<a href=\"https://aistudio.google.com/prompts/new_chat?model=gemini-2.0-flash-exp\">gemini-2.0-flash-exp</a>) in Google AI Studio and via the Gemini API.</p>\n    <p data-block-key=\"dhg64\">Gemini 2.0 Flash combines multimodal input, enhanced reasoning, and natural language understanding to create images that give you exactly what you ask for.</p>\n    <p data-block-key=\"9pdlj\">Here are some examples of where 2.0 Flash’s multimodal outputs shine:</p>\n    <h3 data-block-key=\"cij9j\"><b><br>\n       1. Text and images together</b></h3>\n    <p data-block-key=\"cjj6n\">Use Gemini 2.0 Flash to tell a story and it will illustrate it with pictures, keeping the characters and settings consistent throughout. Give it feedback and the model will retell the story or change the style of its drawings.<br></p>\n   </div>\n   <div class=\"inner-block-content video-block\">\n    <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/wagtailvideo-26bi7zxz_thumb.jpg\">\n     <source src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/image-text-gemini-2-image-generation.mp4\" type=\"video/mp4\">\n     <p>Sorry, your browser doesn't support playback for this video</p>\n    </video>\n    <div class=\"video-description\">\n     Story and illustration generation in Google AI Studio\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"i2nj7\"><b>2. Conversational image editing</b></h3>\n    <p data-block-key=\"5iuor\">Gemini 2.0 Flash helps you edit images through many turns of a natural language dialogue, great for iterating towards a perfect image, or to explore different ideas together.</p>\n   </div>\n   <div class=\"inner-block-content video-block\">\n    <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/wagtailvideo-n80ygwe3_thumb.jpg\">\n     <source src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/conversational-image-editing-gemini-2-image-generation_2.mp4\" type=\"video/mp4\">\n     <p>Sorry, your browser doesn't support playback for this video</p>\n    </video>\n    <div class=\"video-description\">\n     Multi-turn conversation image editing maintaining context throughout the conversation in Google AI Studio\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"sgfq1\"><b>3. World understanding</b></h3>\n    <p data-block-key=\"e2e9c\">Unlike many other image generation models, Gemini 2.0 Flash leverages world knowledge and enhanced reasoning to create the <i>right</i> image. This makes it perfect for creating detailed imagery that’s realistic–like illustrating a recipe. While it strives for accuracy, like all language models, its knowledge is broad and general, not absolute or complete.<br></p>\n   </div>\n   <div class=\"inner-block-content video-block\">\n    <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/wagtailvideo-qsk2q7qb_thumb.jpg\">\n     <source src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/world-understanding-gemini-2-image-generation_2.mp4\" type=\"video/mp4\">\n     <p>Sorry, your browser doesn't support playback for this video</p>\n    </video>\n    <div class=\"video-description\">\n     Interleaved text and image output for a recipe in Google AI Studio\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"sgfq1\"><b>4. Text rendering</b></h3>\n    <p data-block-key=\"fja7a\">Most image generation models struggle to accurately render long sequences of text, often resulting in poorly formatted or illegible characters, or misspellings. Internal benchmarks show that 2.0 Flash has stronger rendering compared to leading competitive models, and great for creating advertisements, social posts, or even invitations.</p>\n   </div>\n   <div class=\"inner-block-content video-block\">\n    <video autoplay=\"\" loop=\"\" muted playsinline=\"\" poster=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/wagtailvideo-m6z8l7l9_thumb.jpg\">\n     <source src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/text-rendering-gemini-2-image-generation_2.mp4\" type=\"video/mp4\">\n     <p>Sorry, your browser doesn't support playback for this video</p>\n    </video>\n    <div class=\"video-description\">\n     Image outputs with long text rendering in Google AI Studio\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"i2nj7\">Start making images with Gemini today</h2>\n    <p data-block-key=\"9oj6a\">Get started with Gemini 2.0 Flash via the Gemini API. Read more about image generation in our <a href=\"https://ai.google.dev/gemini-api/docs/image-generation\">docs</a>.</p>\n   </div>\n   <div class=\"inner-block-content code-block\">\n    <div class=\"highlight\">\n     <pre class=\"python\"><span></span><span class=\"kn\">from</span> <span class=\"nn\">google</span> <span class=\"kn\">import</span> <span class=\"n\">genai</span>\n<span class=\"kn\">from</span> <span class=\"nn\">google.genai</span> <span class=\"kn\">import</span> <span class=\"n\">types</span>\n\n<span class=\"n\">client</span> <span class=\"o\">=</span> <span class=\"n\">genai</span><span class=\"o\">.</span><span class=\"n\">Client</span><span class=\"p\">(</span><span class=\"n\">api_key</span><span class=\"o\">=</span><span class=\"s2\">\"GEMINI_API_KEY\"</span><span class=\"p\">)</span>\n\n<span class=\"n\">response</span> <span class=\"o\">=</span> <span class=\"n\">client</span><span class=\"o\">.</span><span class=\"n\">models</span><span class=\"o\">.</span><span class=\"n\">generate_content</span><span class=\"p\">(</span>\n    <span class=\"n\">model</span><span class=\"o\">=</span><span class=\"s2\">\"gemini-2.0-flash-exp\"</span><span class=\"p\">,</span>\n    <span class=\"n\">contents</span><span class=\"o\">=</span><span class=\"s2\">\"Generate a story about a cute baby turtle in a 3d digital art style. For each scene, generate an image.\"</span><span class=\"p\">,</span>\n    <span class=\"n\">config</span><span class=\"o\">=</span><span class=\"n\">types</span><span class=\"o\">.</span><span class=\"n\">GenerateContentConfig</span><span class=\"p\">(</span><span class=\"n\">response_modalities</span><span class=\"o\">=</span><span class=\"p\">[</span><span class=\"s2\">\"Text\"</span><span class=\"p\">,</span> <span class=\"s2\">\"Image\"</span><span class=\"p\">])</span>\n<span class=\"p\">)</span>\n</pre>\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"i2nj7\">Whether you are building AI agents, developing apps with beautiful visuals like illustrated interactive stories, or brainstorming visual ideas in conversation, Gemini 2.0 Flash allows you to add text and image generation with just a single model. We're eager to see what developers create with native image output and your <a href=\"https://discuss.ai.google.dev/c/gemini-api/4\">feedback</a> will help us finalize a production-ready version soon.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Gemini 2.0 Flash 推出原生图像生成功能，开发者可在 Google AI Studio 和 Gemini API 上进行实验。该模型在多项图像处理任务中表现出色。",
+  "oneSentenceSummary": "Gemini 2.0 Flash 推出原生图像生成功能，开发者可在 Google AI Studio 和 Gemini API 上进行实验。该模型在多项图像处理任务中表现出色。",
+  "summary": "Google 发布了 Gemini 2.0 Flash 的实验版本，该版本引入了原生图像生成功能，并已向所有 Google AI Studio 支持的区域的开发者开放。Gemini 2.0 Flash 结合了多模态输入、增强的推理能力和自然语言理解，可以根据用户需求生成图像。文章通过多个示例展示了 Gemini 2.0 Flash 在文本图像结合、会话式图像编辑、世界知识理解和文本渲染方面的优势。开发者可以通过 Gemini API 开始使用 Gemini 2.0 Flash，并根据官方文档了解更多关于图像生成的信息。Google 鼓励开发者提供反馈，以帮助最终确定生产版本。",
+  "mainPoints": [
+    {
+      "point": "Gemini 2.0 Flash 在文本和图像结合方面表现出色",
+      "explanation": "它可以根据故事生成插图，并保持角色和场景的一致性，同时根据反馈修改故事或绘画风格。"
+    },
+    {
+      "point": "Gemini 2.0 Flash 支持会话式图像编辑",
+      "explanation": "它可以通过多轮自然语言对话编辑图像，方便用户迭代出完美的图像，或共同探索不同的想法。"
+    },
+    {
+      "point": "Gemini 2.0 Flash 利用世界知识和增强的推理能力生成图像",
+      "explanation": "这使得它非常适合创建详细且逼真的图像，比如用于说明食谱，但其知识是广泛和一般的，并非绝对或完整。"
+    },
+    {
+      "point": "Gemini 2.0 Flash 在文本渲染方面表现出色",
+      "explanation": "它能够准确地渲染长文本序列，非常适合创建广告、社交帖子或邀请函。"
+    }
+  ],
+  "keyQuotes": [
+    "{\"quote\":\"Gemini 2.0 Flash combines multimodal input， enhanced reasoning， and natural language understanding to create images that give you exactly what you ask for.\"，\"translation\":\"Gemini 2.0 Flash 结合了多模态输入、增强的推理能力和自然语言理解，能够根据您的需求精准地生成图像。\"}",
+    "{\"quote\":\"Internal benchmarks show that 2.0 Flash has stronger rendering compared to leading competitive models， and great for creating advertisements， social posts， or even invitations.\"，\"translation\":\"内部基准测试表明，与领先的竞争模型相比，2.0 Flash 在渲染方面表现更强，非常适合创建广告、社交帖子或邀请函。\"}",
+    "{\"quote\":\"We're eager to see what developers create with native image output and your feedback will help us finalize a production-ready version soon.\"，\"translation\":\"我们热切期待开发者们使用原生图像生成功能创造出令人惊艳的作品，您的反馈将帮助我们尽快完成生产版本的最终确定。\"}"
+  ],
+  "tags": [
+    "大语言模型",
+    "图像生成",
+    "图像生成模型",
+    "AI 图像生成",
+    "多模态学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 470,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741737600000,
+  "publishDateStr": "2025-03-12",
+  "publishDateTimeStr": "2025-03-12 00:00:00"
+}

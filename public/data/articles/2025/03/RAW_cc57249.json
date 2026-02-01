@@ -1,0 +1,63 @@
+{
+  "id": "RAW_cc57249",
+  "title": "EP96 AI Agent：炒作还是革命？从实践+技术角度扒一扒",
+  "url": "https://www.xiaoyuzhoufm.com/episode/67d8460a78103db3bd0a1c4e",
+  "date": "2025-03-17 22:00:00",
+  "author": "硬地骇客",
+  "siteName": "硬地骇客",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>本期聊聊AI Agent，节目内容涉及有function calling机制、MCP协议、Workflow与Agent的关系、AI Agent的挑战与解决方案等核心内容。你将了解到AI Agent的本质， 帮助大家理解其核心原理。</span></p><span></span>\n  <p><span>更多内容信息和时间线参考下文的硬地笔记，欢迎收听本期节目。</span></p><span></span>\n  <h2><span>本期赞助</span></h2><span></span>\n  <p><a href=\"https://podwise.ai/\" data-url=\"https://podwise.ai/\"><span>Podwise.ai - Podcast knowledge at 10x speed 🚀</span></a></p><span></span>\n  <p><span>Apple Store 下载👉🏻 </span><a href=\"https://apps.apple.com/cn/app/podwise-ai/id6499190232?l=en-GB\" data-url=\"https://apps.apple.com/cn/app/podwise-ai/id6499190232?l=en-GB\"><span>apps.apple.com</span></a></p><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/Fr9JZPGMLVEDLDOgFbUQrh8Y5ybp.png\">\n  </figure><span></span>\n  <h2><span>硬地笔记</span></h2><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"49\">00:00:49</a> AI Agent 概念的兴起与定义</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"638\">00:10:38</a> LLM如何通过Function Calling解决“没有手和脚”的难题？</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1030\">00:17:10</a> Function Calling 的成功率与优化</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1483\">00:24:43</a> Function Calling 与 MCP 协议的比较</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1868\">00:31:08</a> 在AI开发中，你偏好Workflow还是Agent？</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2491\">00:41:31</a> AI Agent会变得越来越专业吗？未来怎么看？</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3425\">00:57:05</a> 小团队如何在AI应用中选对模式？</span></p><span></span>\n  <p><strong><span>提到的一些名词：</span></strong></p><span></span>\n  <ul>\n   <span> </span>\n   <li><span>AI Agent: 人工智能领域中的一个概念，指能够自主执行任务的智能体。它能够感知环境，根据目标制定计划，并采取行动以达到目标，无需持续的人工干预，不同于传统的 AI 助手或聊天机器人。</span></li><span> </span>\n   <li><span>AutoGPT: 一个基于 GPT 模型的开源 AI Agent 框架。它允许用户创建能够自主执行一系列任务的 AI Agent，例如搜索信息、编写代码或进行网络交互。</span></li><span> </span>\n   <li><span>Manus: 一个 AI Agent 应用，旨在提供一个通用的 AI 助手功能。它能够根据用户的指令自主执行任务，并以可视化的方式展现其工作流程，但其通用性及成本受到讨论。</span></li><span> </span>\n   <li><span>AutoGen: 微软开发的一个 AI Agent 框架，与 AutoGPT 类似，允许用户创建和管理 AI Agent 以执行各种任务。它提供了更结构化的框架和工具，方便开发者构建复杂的 AI 系统。</span></li><span> </span>\n   <li><span>LLM (大型语言模型): 指能够处理和生成人类语言的大型神经网络模型。例如，ChatGPT 和 Gemini 都属于 LLM，它们是许多 AI Agent 的核心技术。</span></li><span> </span>\n   <li><span>Function Calling: 大型语言模型的一种能力，允许模型调用外部函数或工具来执行特定任务。这使得 AI Agent 能够与外部世界交互，获取信息或执行操作，例如获取天气信息或搜索网页。</span></li><span> </span>\n   <li><span>Model Context Protocol (MCP): 一种用于 AI Agent 与外部工具交互的协议。它定义了标准化的通信方式，方便不同 AI Agent 和工具之间的互操作性，提高了代码的可复用性和效率。</span></li><span> </span>\n   <li><span>Workflow: 一种通过代码定义的、可控的、步骤化的任务执行流程。在 AI 应用开发中，Workflow 常用于构建可靠且可预测的 AI 系统，与更强调自主性的 AI Agent 形成对比。</span></li><span> </span>\n   <li><span>牛鞭效应: 供应链管理中的一个概念，指需求波动在供应链上传递时被放大的现象。在 AI Agent 和 Workflow 中，也可能出现类似的 “信息损失” 现象，导致最终结果与预期不符。</span></li><span> </span>\n   <li><span>AGI (通用人工智能): 指拥有与人类同等或超越人类智能水平的人工智能。在讨论 AI Agent 的通用性时，AGI 常被提及，作为衡量 Agent 能力的终极目标。</span></li><span> </span>\n   <li><span>Context Caching: 一种优化大型语言模型使用效率的技术。通过缓存上下文信息，可以减少重复计算，降低成本并提高模型的响应速度，从而缓解信息损失问题。</span></li><span></span>\n  </ul><span></span>\n  <h2><span>欢迎关注我们</span></h2><span></span>\n  <ul>\n   <span> </span>\n   <li><span>知识星球:</span><a href=\"https://t.zsxq.com/19SKbmflB\" data-url=\"https://t.zsxq.com/19SKbmflB\"><span> t.zsxq.com</span></a></li><span> </span>\n   <li><span>官网: </span><a href=\"https://hardhacker.com/\" data-url=\"https://hardhacker.com/\"><span>hardhacker.com</span></a></li><span> </span>\n   <li><span>小手册: </span><a href=\"https://book.hardhacker.com/\" data-url=\"https://book.hardhacker.com/\"><span>book.hardhacker.com</span></a></li><span> </span>\n   <li><span>用爱发电不容易，请我们喝咖啡☕️: </span><a href=\"https://afdian.net/a/hardhacker\" data-url=\"https://afdian.net/a/hardhacker\"><span>afdian.net</span></a></li><span> </span>\n   <li><span>公众号/小红书: 硬地骇客</span></li><span> </span>\n   <li><span>商务合作: hardhackerlabs@gmail.com</span></li><span> </span>\n   <li><span>加入「硬地骇客」会员服务，即可在会员专属的微信群与其他朋友一起畅所欲言，成为会员也是对我们持续更新最大的鼓励！</span></li><span></span>\n  </ul><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/Fn51yNVEE4AD0pUYJz1RImGJWpHA.png\">\n  </figure><span></span>\n </body>\n</html>",
+  "aiSummary": "深入探讨 AI Agent 的定义、核心能力、技术实现与应用，并分析其与 Workflow 的关系及未来发展趋势。",
+  "oneSentenceSummary": "深入探讨 AI Agent 的定义、核心能力、技术实现与应用，并分析其与 Workflow 的关系及未来发展趋势。",
+  "summary": "本期播客围绕 AI Agent 展开了深入讨论。首先，嘉宾们对 AI Agent 的概念进行了辨析，强调其自主性和执行复杂任务的能力，并与传统 AI 助手和聊天机器人区分开来。接着，详细解读了 AI Agent 的核心能力，包括自主设定计划、获取和处理数据以及协同工作等。在技术实现层面，探讨了 Function Calling 机制在 AI Agent 中的应用，以及 MCP 协议在 AI 应用开发中的作用。此外，还深入分析了 AI Agent 与 Workflow 的关系，认为二者并非竞争关系，而是可以互补协作。最后，对 AI Agent 的未来发展趋势进行了展望，认为其将朝着更小、更专业的方向发展，并在特定领域发挥更大价值。整个讨论既有对抽象概念的思辨，也有对具体技术实现的剖析，内容丰富且具有启发性。",
+  "mainPoints": [
+    {
+      "point": "AI Agent 强调自主性，能自主设定计划并执行复杂任务",
+      "explanation": "AI Agent 能够根据目标自主制定计划，并采取行动以达到目标，无需持续人工干预，这与传统的 AI 助手或聊天机器人不同。"
+    },
+    {
+      "point": "Function Calling 机制是 AI Agent 实现外部交互的关键",
+      "explanation": "通过 Function Calling，AI Agent 可以调用外部函数或工具来执行特定任务，从而与外部世界交互，获取信息或执行操作。"
+    },
+    {
+      "point": "MCP 协议为 AI 应用开发提供标准化数据和服务调用方式",
+      "explanation": "MCP 协议通过客户端和服务器的交互，为开发者提供标准化的数据和服务调用方式，促进数据和服务的共享，降低了 AI 应用开发的门槛。"
+    },
+    {
+      "point": "AI Agent 与 Workflow 并非竞争关系，而是可以互补协作",
+      "explanation": "Workflow 保证稳定性和效率，AI Agent 则提供更高智能性和灵活性，共同构建既能保证下限又能追求上限的系统。"
+    },
+    {
+      "point": "AI Agent 的未来发展趋势是更小、更专业、更精准",
+      "explanation": "未来的 AI Agent 将专注于特定领域，并在该领域内提供专业且强大的服务，通过上层的协作层实现整体协调。"
+    }
+  ],
+  "keyQuotes": [
+    "AI agent 其实更加强调自主性，就是无需持续的人工干预。我觉得有别于之前的像 AI assistant 就是助手。然后还有包括以前更多像这个 AI 的使用场景，其实是 chat boot 对吧？聊天机器人。",
+    "当前的这个 AI agent，我觉得它很核心的能力就是它可以执行很多很多个 task，对吧？比如说我们刚才讲说去查查天气？那真正去执行查天气的那个动作，它其实就是一个 task。那 task 怎么讲？就简化一下的话，我觉得它可能就是一个 function，对吧那。AI agent 它其实说白了就是利用 LM 去做 function calling。",
+    "我觉得理解他们之间的关系很简单，比如说可以简单的理解成啥呢？ 比如 functions cling，它其实是一个底层的能力。比如说我们经常可能大家都能理解我去开发一个浏览器的插件。那你可能说你开发一个浏览器插件的时候，你可能要调用很多浏览器提供的 API 的一些能力。他否则就说你总不会总是写一个 hello word 这样的毫无意义的插件，对吧？你如果要想去真正的去干一些事情，那你肯定都要去掉一些底层能力。所以说那个底层的能力其实就是 function calling。",
+    "另外今天确实有有很多的一些新人进入这个领域。他们其实更崇尚这种今天说的那种不受 workflows 的这种规则控制的。而且他的这种很放飞自我的这种模式，就是抛开基数的话，我觉得这也是一个很有意思的一个现象，也算是一种新老的观念的冲突。",
+    "有一个趋势是很多人认为说 AI agent 应该往更小更专业的方向去做。就是每一个 AI 进来能做的事情都很专业精准且强大。然后做成一个很完善的 AI 型的生态之后，上层还会有一层协作的这一层。这层协作的层层可以是不同的方式，就比如说 work flow 吧？它是去保下限的，同时也是保效率的一种办法。那你再套一个 AI int 说让他来做这个总协调总指挥部，那就可能更加灵活对吧？可期待它的结果。"
+  ],
+  "tags": [
+    "AI Agent",
+    "Function Calling",
+    "MCP 协议",
+    "Workflow",
+    "自主性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1176,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f3d4df",
+  "sourceName": "硬地骇客",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1742248800000,
+  "publishDateStr": "2025-03-17",
+  "publishDateTimeStr": "2025-03-17 22:00:00"
+}

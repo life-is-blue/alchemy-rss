@@ -1,0 +1,55 @@
+{
+  "id": "RAW_fa086b30",
+  "title": "iOS 26.1 隐藏彩蛋曝光，苹果给 ChatGPT 们造了个新「C 口」",
+  "url": "https://www.ifanr.com/1639105?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-09-28 19:44:12",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>iOS 26 上线后，用户立马分成了两派。</p>\n  <p>有人认为新系统视觉有新意，也有人吐槽不好看、bug 多、电池续航直线下降。在争议声中，苹果也推送了 iOS 26.1 开发者测试版，优化了液态效果和 UI 细节。但该说不说，比起这些「面子工程」，苹果在系统深处埋下的彩蛋，其实更值得关注。</p>\n  <p><img class=\"alignnone size-full wp-image-1639367\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1242.png!720\" alt=\"\" width=\"1278\" height=\"638\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1242.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2025/09/1242-360x180.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/1242-768x383.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/1242-1024x511.png 1024w\" sizes=\"(max-width: 1278px) 100vw, 1278px\"></p>\n  <p>据 9to5Mac 报道，iOS 26.1、iPadOS 26.1 和 macOS Tahoe 26.1 开发者测试版隐藏的代码显示，苹果正在为 App Intents 引入 MCP 支持打基础。这也意味着未来，我们能让 ChatGPT、Claude 或其他任何兼容 MCP 的 AI 模型直接与 Mac、iPhone 和 iPad 应用交互。</p>\n  <h3>Anthropic&nbsp;的 MCP 协议，成了苹果「管住」ChatGPT 的钥匙</h3>\n  <p>在讨论苹果这个大动作之前，我们需要给不了解的朋友科普一下 MCP。MCP，全称 Model Context Protocol（模型上下文协议），由 Anthropic 于去年 11 月提出，它要解决的是一个叫「N x M」的集成难题。</p>\n  <p>什么意思呢？ 就是说，如果有 N 个 AI 模型，和 M 个外部工具或数据源，如果按传统做法，我们得开发 N&nbsp;x&nbsp;M 个定制 API 接口，非常麻烦此时 MCP 邪魅一笑：别折腾了，我来当万能翻译官。</p>\n  <p>MCP 通过提供一个通用、开放的协议，把模型与外部数据源和工具的连接方式标准化，取代了过去零散、私有化的集成做法，意在实现双向、安全的交互。通俗点说，它想成为 AI 领域里的「HTTP（网页的基础协议）」或「SMTP（邮件协议）」，它仅存在于软件，但在 AI 时代的意义不亚于一个标准化的硬件「USB-C 接口」。</p>\n  <p><img class=\"alignnone size-full wp-image-1639368\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1243.png!720\" alt=\"\" width=\"1286\" height=\"720\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1243.png!720 1286w, https://s3.ifanr.com/wp-content/uploads/2025/09/1243-360x202.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/1243-768x430.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/1243-1024x573.png 1024w\" sizes=\"(max-width: 1286px) 100vw, 1286px\"></p>\n  <p>效果怎么样？立竿见影。自打问世以来，MCP 已被 Notion、Google、Figma、OpenAI 等公司和平台也都陆续接入，成为 AI 应用接入的行业「通用插口」。</p>\n  <p>很多人容易误解 MCP + App Intents 只服务于 AI，其实并不是。</p>\n  <p>MCP 的本质是协议，它解决的是如何让模型或外部服务和系统安全对话的问题。虽然今天最热门的用例是 AI 模型调用应用，但 MCP 也可能用于非 AI 场景。以微信支付为例，就能看到 MCP 不局限于 AI 的可能性。</p>\n  <p>腾讯元器平台近日宣布已经接入微信支付 MCP，支持开发者在智能体（agent）中直接发起订单、查询订单、处理赞赏等功能。</p>\n  <p>同样，App Intents 也并不是专为 AI 而生的「新物种」。</p>\n  <p><img class=\"alignnone size-full wp-image-1639369\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1244.png!720\" alt=\"\" width=\"1302\" height=\"664\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1244.png!720 1302w, https://s3.ifanr.com/wp-content/uploads/2025/09/1244-360x184.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/1244-768x392.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/1244-1024x522.png 1024w\" sizes=\"(max-width: 1302px) 100vw, 1302px\"></p>\n  <p>它在 2022 年就出现了，当时的目标就是把应用的功能抽象成语义化的动作，让系统能直接调用。比如 Spotlight 搜索、快捷指令、小组件，其实都在用 App Intents，并不依赖 AI。</p>\n  <p>MCP 的接入，只是让「外部 AI」也能走上这条现成的通道。</p>\n  <p>根据对 iOS 26.1 等测试版软件代码的分析，苹果并非让每个应用单独去支持 MCP。恰恰相反，它正在构建一个直接集成在 App Intents 框架中，系统级的 MCP 支持。换言之，苹果不希望开发者自己「魔改」，而是要用官方操作系统的规范来开发接口适配，就可以使用了——这与苹果过去对应用遵守规范的要求一以贯之。</p>\n  <p>这意味着，在 iPhone 上，Siri/Apple Intelligence（由苹果的基础模型驱动）理解你的请求并可触发 App Intents 执行本地动作；当系统判断需要更广泛知识时，会征得你同意后把必要内容交给 ChatGPT 获取答案。</p>\n  <p><img class=\"alignnone size-full wp-image-1639371\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1246.png!720\" alt=\"\" width=\"1284\" height=\"714\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1246.png!720 1284w, https://s3.ifanr.com/wp-content/uploads/2025/09/1246-360x200.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/1246-768x427.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/1246-1024x569.png 1024w\" sizes=\"(max-width: 1284px) 100vw, 1284px\"></p>\n  <p>所以未来的场景可能是这样的：你对着 ChatGPT 说「帮我在微信里转 100 块给张三」，ChatGPT 会调用 MCP，把这个指令打包成标准化的请求；iPhone 系统通过 App Intents 识别出这是微信支付的动作，直接调用微信的接口完成操作。你不需要自己切换 App、点按钮，一切都由模型+系统协作完成。</p>\n  <p>换句话说，MCP 让模型有了「手」，App Intents 则是苹果为这双「手」划定的轨道。</p>\n  <p>这样做有什么好处呢？</p>\n  <p>头一个好处是搭便车。苹果可以直接享用整个行业围绕 MCP 建设的庞大工具生态，不用自己从头到尾开发每一个功能集成。</p>\n  <p>另一方面，当所有外部 AI 的请求都必须经过苹果自家的、经过严格审查的 App Intents 框架，这样苹果既能强制执行自己的隐私安全标准，又能保证用户体验的一致性。</p>\n  <p>还记得在之前的文章中，我们提到过 AI Key。这是一款定位于「AI 助手」的外接硬件，厂商宣传它可随插随拔，通过 iPhone 的 USB 接口连接后，能够帮助你动动嘴操作手机上的应用和功能，从消息、地图到拍照、社交软件，几乎覆盖常见任务。</p>\n  <p>虽然目的相似，都有机会让 AI 代替用户，直接操控手机的应用，但和 AI key 这种体验受限的硬件「外挂」相比，系统层面的调度机制才是真正可规模化，更务实、更长远的价值。</p>\n  <p>不过，苹果在 iOS 26.1 测试版里只是「埋下了」系统级 MCP 支持的代码，目前仍处于早期工程阶段，并未对外发布可调用接口，未来能否实现、何时实现，还要看后续测试版和官方文档的公开进度。</p>\n  <h3>造不出最强的剑，那就打造最好的剑鞘</h3>\n  <p>延伸到整体变化，苹果近年的开放姿态愈发明显。</p>\n  <p>哪怕是 Apple Intelligence，本质上也体现了这种转向。起了个大早，赶了个晚集，追赶 OpenAI 等厂商并非一朝一夕，苹果已不再执念于「全栈自研」，而是主动拥抱外部模型，为系统预留出灵活的接入入口。</p>\n  <p>这种转变在苹果内部也引发了不小的冲击。据彭博社报道，苹果 AI 团队内部曾就「自研 vs 合作」发生过激烈争论，但最终还是保留了更务实的平台化路线。这也与整个行业的走向不谋而合。</p>\n  <p>短期内，AI 可能出现巨头垄断红利，但长期必然走向分层竞争。</p>\n  <p>没有任何单一模型能在所有任务上都做到最好，开源的存在更让市场有了平替选项。于是，对平台型公司而言，最优解自然是通过集成不同供应商的模型来实现风险分散、成本优化和择优使用。</p>\n  <p><img class=\"alignnone size-full wp-image-1639372\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1247.png!720\" alt=\"\" width=\"1278\" height=\"726\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1247.png!720 1278w, https://s3.ifanr.com/wp-content/uploads/2025/09/1247-360x205.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/1247-768x436.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/1247-1024x582.png 1024w\" sizes=\"(max-width: 1278px) 100vw, 1278px\"></p>\n  <p>微软就是典型的案例。</p>\n  <p>过去它与 OpenAI 深度捆绑，但最近，微软把 Anthropic 的 Claude 模型也集成进 Microsoft 365 Copilot。表面看，这是因为双方裂痕加深，但更深层的原因在于微软内部测试发现，Claude 在某些场景下的表现确实优于 ChatGPT。</p>\n  <p>类似的逻辑，如今也映射到苹果身上。</p>\n  <p>继和 OpenAI 合作之后，今年也不断有风声传出，苹果已经把 Google Gemini 和 Anthropic Claude 同时列入下一代 Siri 与系统级 AI 的候选名单。</p>\n  <p>回望苹果的长期叙事，这条线索就更清晰了。</p>\n  <p>苹果在 2008 年推出 App Store 时也面临过类似的质疑——为什么要让第三方开发者「寄生」在 iOS 上？结果证明，平台模式释放出的创新活力远超苹果单打独斗。</p>\n  <p><img class=\"alignnone size-full wp-image-1639366\" src=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1241.png!720\" alt=\"\" width=\"1286\" height=\"728\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2025/09/1241.png!720 1286w, https://s3.ifanr.com/wp-content/uploads/2025/09/1241-360x204.png 360w, https://s3.ifanr.com/wp-content/uploads/2025/09/1241-768x435.png 768w, https://s3.ifanr.com/wp-content/uploads/2025/09/1241-1024x580.png 1024w\" sizes=\"(max-width: 1286px) 100vw, 1286px\"></p>\n  <p>再后来，无论是 CarPlay、HealthKit，还是今天的 MCP + App Intents，这也是苹果最为熟悉的平台治理逻辑：它来制定标准和规则，第三方在规则之内自由创新。</p>\n  <p>建立在 App Intents 之上的代理层平台，同样是这一逻辑的最新延续。</p>\n  <p>通过 MCP 协议，苹果能够把外部 AI 模型都转化成了供应商。而当这些供应商想触达苹果庞大且高价值的用户群体时，就必须遵守苹果的接口和安全标准。换句话说，苹果再次把自己放在了分发渠道和规则制定者的位置上——这也是苹果最擅长、也最舒服的角色。</p>\n </body>\n</html>",
+  "aiSummary": "苹果通过在 iOS 26.1 中集成 Anthropic 的 MCP 协议到 App Intents 框架，为外部 AI 模型与系统应用交互提供了标准化接口，旨在成为 AI 生态的规则制定者。",
+  "oneSentenceSummary": "苹果通过在 iOS 26.1 中集成 Anthropic 的 MCP 协议到 App Intents 框架，为外部 AI 模型与系统应用交互提供了标准化接口，旨在成为 AI 生态的规则制定者。",
+  "summary": "文章深入分析了 iOS 26.1 开发者测试版中苹果为 App Intents 引入 MCP（Model Context Protocol）支持的潜在影响。MCP 是 Anthropic 提出的一种通用开放协议，旨在标准化 AI 模型与外部工具和数据源的连接，解决复杂的集成难题。苹果此举意味着未来 ChatGPT、Claude 等兼容 MCP 的 AI 模型将能够直接与 Mac、iPhone 和 iPad 上的应用进行交互。文章强调，苹果的策略是通过系统级集成 App Intents 框架来统一管理外部 AI 请求，而非让应用各自为政，从而确保隐私安全、用户体验一致性，并强制执行自身的标准。这种转变体现了苹果从“全栈自研”向“开放合作”的务实转向，旨在利用其平台治理逻辑，将自身定位为 AI 时代的分发渠道和规则制定者，而非执着于自研最强 AI 模型，这与 App Store、CarPlay 等历史案例一脉相承。",
+  "mainPoints": [
+    {
+      "point": "苹果正通过在 iOS 26.1 中引入 MCP 支持到 App Intents 框架，为外部 AI 模型与系统应用交互铺路。",
+      "explanation": "这意味着 ChatGPT、Claude 等外部 AI 模型将能标准化地直接调用 iPhone/iPad/Mac 上的应用功能，极大扩展 AI 在苹果生态中的能力边界。"
+    },
+    {
+      "point": "苹果此举旨在通过系统级集成和 App Intents 框架，实现对外部 AI 模型的“管辖”和标准化。",
+      "explanation": "苹果不希望开发者“魔改”，而是通过官方规范统一管理外部 AI 请求，确保隐私安全、用户体验一致性，并强制执行自身标准。"
+    },
+    {
+      "point": "苹果的策略体现了从“全栈自研”转向“开放合作”的务实转变，旨在成为 AI 时代的分发渠道和规则制定者。",
+      "explanation": "苹果不再执着于自研最强 AI，而是通过集成行业通用协议和平台治理，利用其庞大用户群体和生态优势，构建 AI 生态的核心地位。"
+    }
+  ],
+  "keyQuotes": [
+    "MCP 通过提供一个通用、开放的协议，把模型与外部数据源和工具的连接方式标准化，取代了过去零散、私有化的集成做法，意在实现双向、安全的交互。",
+    "通俗点说，它想成为 AI 领域里的「HTTP（网页的基础协议）」或「SMTP（邮件协议）」，它仅存在于软件，但在 AI 时代的意义不亚于一个标准化的硬件「USB-C 接口」。",
+    "换句话说，MCP 让模型有了「手」，App Intents 则是苹果为这双「手」划定的轨道。",
+    "当所有外部 AI 的请求都必须经过苹果自家的、经过严格审查的 App Intents 框架，这样苹果既能强制执行自己的隐私安全标准，又能保证用户体验的一致性。",
+    "苹果再次把自己放在了分发渠道和规则制定者的位置上------这也是苹果最擅长、也最舒服的角色。"
+  ],
+  "tags": [
+    "AI集成",
+    "MCP协议",
+    "App Intents",
+    "iOS",
+    "苹果生态"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 89,
+  "wordCount": 2493,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759088652000,
+  "publishDateStr": "2025-09-28",
+  "publishDateTimeStr": "2025-09-28 19:44:12"
+}

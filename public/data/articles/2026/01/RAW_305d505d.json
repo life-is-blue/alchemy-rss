@@ -1,0 +1,53 @@
+{
+  "id": "RAW_305d505d",
+  "title": "如何在自己的数据上对嵌入模型进行基准测试",
+  "url": "https://www.freecodecamp.org/news/how-to-benchmark-embedding-models-on-your-own-data/",
+  "date": "2026-01-15 15:49:38",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Finding the right embedding model for your specific data can often feel like guesswork, but it doesn't have to be. While generic benchmarks provide a baseline, they rarely reflect how a model will perform on your unique datasets and niche terminology.</p>\n  <p>We just posted a course on the freeCodeCamp.org YouTube channel that offers a comprehensive, beginner-friendly roadmap to mastering the art of custom benchmarking. By moving beyond standard metrics, you will learn how to leverage Vision Language Models for precise text extraction, use LLMs to generate synthetic evaluation data, and apply rigorous statistical tests to determine which model truly delivers the best results for your machine.</p>\n  <p>In this course, you will learn how to:</p>\n  <ul>\n   <li>\n    <p>Overcome the limitations of standard Python libraries for PDF text extraction by using Vision Language Models (VLMs).</p>\n   </li>\n   <li>\n    <p>Segment extracted text into context-preserving chunks.</p>\n   </li>\n   <li>\n    <p>Generate evaluation questions for each chunk using Large Language Models (LLMs).</p>\n   </li>\n   <li>\n    <p>Create vector representations of your data using both open-source and proprietary embedding models.</p>\n   </li>\n   <li>\n    <p>Deploy local models in GGUF format on your own machine using llama.cpp.</p>\n   </li>\n   <li>\n    <p>Benchmark different embedding models using various metrics and statistical tests with the ranx library.</p>\n   </li>\n   <li>\n    <p>Visualize vector representations through plotting to see how clusters are formed.</p>\n   </li>\n   <li>\n    <p>Interpret statistical results, including understanding the significance of p-values.</p>\n   </li>\n   <li>\n    <p>And much more!</p>\n   </li>\n  </ul>\n  <p>Watch the full course <a target=\"_blank\" href=\"https://youtu.be/7G9q_5q82hY\">on the freeCodeCamp.org YouTube channel</a> (4-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7G9q_5q82hY\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了一个关于使用自有数据进行嵌入模型自定义基准测试的全面课程，涵盖通过 VLM 进行文本提取、使用 LLM 生成合成数据以及统计评估。",
+  "oneSentenceSummary": "本文介绍了一个关于使用自有数据进行嵌入模型自定义基准测试的全面课程，涵盖通过 VLM 进行文本提取、使用 LLM 生成合成数据以及统计评估。",
+  "summary": "文章强调了在特定数据集上对嵌入模型进行自定义基准测试的必要性，因为通用基准测试往往不够充分。它推广了一个 freeCodeCamp.org 的 YouTube 课程，旨在指导初学者完成这一过程。课程教授如何克服使用视觉语言模型（VLM）进行标准文本提取的局限性，分割提取的文本，并使用大型语言模型（LLM）生成合成评估问题。参与者还将学习使用各种嵌入模型创建向量表示，通过 llama.cpp 部署本地 GGUF 模型，使用 ranx 库的指标和统计测试对模型进行基准测试，可视化向量聚类，并解释如 p 值等统计结果。目标是让用户能够为其独特的机器和数据确定性能最佳的嵌入模型。",
+  "mainPoints": [
+    {
+      "point": "通用嵌入模型基准测试对于自定义数据集和特定领域术语来说是不够的。",
+      "explanation": "要准确评估嵌入模型的性能，关键在于直接在您的独特数据上进行基准测试，而不是仅仅依赖通用基准。"
+    },
+    {
+      "point": "该课程为自定义嵌入模型基准测试提供了适合初学者的路线图。",
+      "explanation": "它教授生成合成评估数据、利用 VLM 进行文本提取以及应用严格的统计测试来找到最佳模型的实用技能。"
+    },
+    {
+      "point": "关键技术包括使用 VLM 进行文本提取、使用 LLM 生成合成数据以及通过 ranx 库进行统计测试。",
+      "explanation": "学习者将掌握高级文本处理、数据增强和评估方法，包括部署本地 GGUF 模型和解释统计显著性。"
+    }
+  ],
+  "keyQuotes": [
+    "为您的特定数据找到合适的嵌入模型常常感觉像是在猜测，但其实不必如此。",
+    "虽然通用基准测试提供了一个基线，但它们很少能反映模型在您的独特数据集和特定领域术语上的表现。",
+    "通过超越标准指标，您将学习如何利用视觉语言模型进行精确的文本提取，使用 LLM 生成合成评估数据，并应用严格的统计测试来确定哪个模型真正为您的机器提供最佳结果。"
+  ],
+  "tags": [
+    "嵌入模型",
+    "基准测试",
+    "LLM",
+    "VLM",
+    "数据评估"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 221,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768492178000,
+  "publishDateStr": "01-15",
+  "publishDateTimeStr": "2026-01-15 15:49:38"
+}

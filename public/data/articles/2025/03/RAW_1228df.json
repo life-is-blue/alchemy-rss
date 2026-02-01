@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1228df",
+  "title": "Mistral AI 发布号称最强 OCR API：能解锁 90% 非结构化数据，1 美元搞定 2000 页文档",
+  "url": "https://mp.weixin.qq.com/s/XPKXKKjQudIA4YAEAsIvWw",
+  "date": "2025-03-10 07:58:23",
+  "author": "AI前线",
+  "siteName": "AI前线",
+  "content": "\n \n \n  <p style=\"text-align: center;\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-backh=\"253\" data-backw=\"578\" data-croporisrc=\"https://mmbiz.qpic.cn/mmbiz_jpg/ZBjVrHIdkOk70pyAWo0Qoscc1pTqywb5v9tLF7EHH5oIib6dGosjUhdSlejRwUJI4ULYqZC3u18KicUX44zWefLw/0?wx_fmt=webp&amp;from=appmsg\" data-cropx1=\"0\" data-cropx2=\"600\" data-cropy1=\"57.093425605536325\" data-cropy2=\"319.72318339100343\" data-imgfileid=\"100151418\" data-ratio=\"0.43833333333333335\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7d49fa4f-45ee-47d7-5b2e-97678a608000/public\" data-type=\"jpeg\" data-w=\"600\" style=\"width: 100%;height: auto;\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7d49fa4f-45ee-47d7-5b2e-97678a608000/public\"></p>\n  <section style=\"color: rgb(63, 63, 63);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\">\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    作者 | 冬梅\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">今天，法国 AI 明星创企 Mistral AI 发布了一款名为 Mistral OCR 的光学字符识别（OCR）API，它可以帮助企业更好地理解和处理各种文档。简单来说，就是让电脑不仅能“看到”纸上的文字，还能“理解”这些文字的意思，帮助企业更高效地工作。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">该 API 可以从非结构化的 PDF 和图像中高精度地提取内容（包括手写笔记、键入的文本、图像、表格和方程式），并以结构化格式呈现。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">结构化数据就像表格一样，有行有列，方便搜索和分析，比如数据库里的名字、地址或财务记录。而非结构化数据则没有固定格式，比如邮件、社交媒体内容、视频、图片和音频，处理起来更麻烦，通常需要用到自然语言处理（NLP）和机器学习（ML）这样的高级技术。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">对于企业来说，搞清楚这两种数据的区别很重要，这样才能更好地管理和利用自己的信息。Mistral OCR 支持多种语言，处理速度快，还能结合大型语言模型（LLM）来理解文档内容，帮助企业把文档整理得井井有条，为 AI 应用做好准备。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">根据 Mistral 发布新 API 的博客文章，<strong style=\"text-align: left;\">90% 的商业信息都是非结构化的</strong>，因此对于寻求数字化和分类数据以用于 AI 应用程序或内部 / 外部知识库的组织来说，新 API 应该是一个巨大的福音。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: center;\"><img alt=\"\" class=\"rich_pages wxw-img\" data-imgfileid=\"100151423\" data-ratio=\"0.7436241610738255\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3ff0bc63-6a46-4719-da88-f7f965e48600/public\" data-type=\"png\" data-w=\"1490\" style=\"width: 100%;\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3ff0bc63-6a46-4719-da88-f7f965e48600/public\"></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">那么，Mistral OCR 有哪些特点，能完成哪些具体的工作？</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">据 Mistral AI 介绍，Mistral OCR 具备以下几个特点：</p>\n   <ul style=\"margin-top: 14px;line-height: 1.75em;text-align: left;\" class=\"list-paddingleft-1\">\n    <li style=\"text-align: left;\">\n     <p>原生支持多语言和多格式：Mistral OCR 能够识别和处理数千种文字、字体以及语言，以及不同的文档布局，这对于跨国公司和国际组织来说极为重要。</p></li>\n    <li style=\"text-align: left;\">\n     <p>处理速度很快，单节点每分钟可处理 2000 页。</p></li>\n    <li style=\"text-align: left;\">\n     <p>保持文档结构：与普通的 OCR 技术不同，Mistral OCR 在转换文档时能够保留原有的格式，如标题、段落、列表和表格等，这使得提取的文本更加有序，便于后续使用。</p></li>\n    <li style=\"text-align: left;\">\n     <p>灵活的输出格式：用户可以根据需要提取文档中的特定信息，并将其转换为结构化的数据格式，如 JSON 或 Markdown，这样可以轻松地将数据集成到其他 AI 系统中。</p></li>\n    <li style=\"text-align: left;\">\n     <p>自托管选项：对于对数据安全和合规性有严格要求的企业，Mistral OCR 提供了自托管的解决方案，允许企业在自己的服务器上部署该技术，确保数据的安全。</p></li>\n   </ul>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">此外，Mistral OCR 不仅仅是一个文本识别工具，它还具备文档理解的能力。在提取文本和结构之后，它可以与大型语言模型结合，使用户能够通过自然语言与文档内容进行交互。这意味着用户可以进行以下操作：</p>\n   <ul style=\"margin-top: 14px;line-height: 1.75em;text-align: left;\" class=\"list-paddingleft-1\">\n    <li style=\"text-align: left;\">\n     <p>对文档内容提出问题并得到答案；</p></li>\n    <li style=\"text-align: left;\">\n     <p>自动提取关键信息和进行总结；</p></li>\n    <li style=\"text-align: left;\">\n     <p>在多个文档之间进行比较分析；</p></li>\n    <li style=\"text-align: left;\">\n     <p>获得基于整个文档上下文的智能回答。</p></li>\n   </ul>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">目前，Mistral AI 已将 Mistral OCR 作为 Le Chat 上数百万用户的默认文档理解模型，并以 1000 页 / 美元的价格发布 API mistral-ocr-latest（通过批量推理，每美元的页数大约翻了一番）。</p>\n   <section style=\"font-size: 20px;text-align: center;\">\n    <span style=\"margin-top: 38px;margin-bottom: 10px;height: 59px;line-height: 85px;color: rgb(60, 112, 198);background-image: url(&quot;https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ea16207b-1e9a-4621-99c6-b062dc9c4900/public&quot;);background-position: 50% 50%;background-repeat: no-repeat;background-attachment: initial;background-origin: initial;background-clip: initial;border-bottom: 2px solid rgb(27, 95, 160);background-size: 57px;display: inline-block;\">性能如何？</span>\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">能做这么多工作的 OCR，与其他模型相比，性能如何？</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Mistral 强调了其 OCR 技术在现有工具中的竞争优势，并甩出了基准测试结果，显示其表现优于 Google Document AI、Azure OCR 和 OpenAI 的 GPT-4o 等主要替代方案。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">在多语言的基准测试上，Mistral OCR 的表现全面超越了 Azure OCR、Google Doc AI 和 Gemini-2.0-Flash-001。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: center;\"><img alt=\"\" class=\"rich_pages wxw-img\" data-imgfileid=\"100151422\" data-ratio=\"0.4244791666666667\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f1ba36e3-119a-480d-d9a6-3c430032bc00/public\" data-type=\"png\" data-w=\"1920\" style=\"width: 100%;\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f1ba36e3-119a-480d-d9a6-3c430032bc00/public\"></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Mistral OCR 的设计运行速度也比其他模型更快，能够在单个节点上每分钟处理多达 2000 页。这种速度优势使其适合于研究、客户服务和历史保存等行业的大批量文档处理。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: center;\"><img alt=\"\" class=\"rich_pages wxw-img\" data-imgfileid=\"100151421\" data-ratio=\"0.2984375\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/71aee0e5-4168-40ea-edeb-6e8f4c9a1100/public\" data-type=\"png\" data-w=\"1920\" style=\"width: 100%;\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/71aee0e5-4168-40ea-edeb-6e8f4c9a1100/public\"></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: left;\"><span style=\"color: rgb(136, 136, 136);font-size: 14px;\"><strong style=\"text-align: left;\">参考链接：</strong></span></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: left;\"><span style=\"color: rgb(136, 136, 136);font-size: 14px;\">https://mistral.ai/news/mistral-ocr<br></span></p><section style=\"-webkit-tap-highlight-color:transparent;outline:0px;color:rgb(63, 63, 63);letter-spacing:0.544px;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom:0px;\"><section style=\"-webkit-tap-highlight-color: transparent;outline: 0px;letter-spacing: 0.578px;\"><section style=\"-webkit-tap-highlight-color: transparent;outline: 0px;letter-spacing: 0.544px;white-space-collapse: preserve-breaks;text-align: center;visibility: visible;\">     </section>\n    </section>\n   </section>\n  </section>\n  <p style=\"display: none;\"><mp-style-type data-value=\"3\"></mp-style-type></p>\n \n",
+  "aiSummary": "Mistral AI 发布 OCR API，高效处理非结构化数据，结合 LLM 实现文档理解，性能领先于主流竞品",
+  "oneSentenceSummary": "Mistral AI 发布 OCR API，高效处理非结构化数据，结合 LLM 实现文档理解，性能领先于主流竞品",
+  "summary": "Mistral AI 发布了 Mistral OCR API，旨在帮助企业高效处理非结构化的 PDF 和图像数据，并以结构化格式呈现，解决非结构化数据处理的挑战。该 API 支持多种语言和格式，处理速度快，并能与大型语言模型结合使用，以实现文档理解和交互，为 AI 应用做好准备。Mistral OCR 在性能基准测试中超越了 Google Document AI、Azure OCR 和 OpenAI 的 GPT-4o 等主要竞争对手。该 API 已在 Le Chat 上使用，并以 1 美元 / 2000 页的价格发布，具有性价比优势。",
+  "mainPoints": [
+    {
+      "point": "高效处理非结构化数据",
+      "explanation": "能够从 PDF 和图像中提取手写笔记、键入的文本、图像、表格和方程式，并以结构化格式呈现。"
+    },
+    {
+      "point": "结合 LLM 实现文档理解和交互",
+      "explanation": "用户可以通过自然语言与文档内容进行交互，提出问题并得到答案，自动提取关键信息和进行总结等。"
+    },
+    {
+      "point": "性能优于主流 OCR 产品",
+      "explanation": "在多语言基准测试中，Mistral OCR 的表现全面超越了 Azure OCR、Google Doc AI 和 Gemini-2.0-Flash-001。"
+    }
+  ],
+  "keyQuotes": [
+    "90% 的商业信息都是非结构化的",
+    "Mistral OCR 能够识别和处理数千种文字、字体以及语言，以及不同的文档布局",
+    "Mistral OCR 的设计运行速度也比其他模型更快，能够在单个节点上每分钟处理多达 2000 页"
+  ],
+  "tags": [
+    "OCR",
+    "API",
+    "Mistral AI",
+    "文档理解",
+    "非结构化数据"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1274,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_458cfe",
+  "sourceName": "AI前线",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741593503000,
+  "publishDateStr": "2025-03-10",
+  "publishDateTimeStr": "2025-03-10 07:58:23"
+}

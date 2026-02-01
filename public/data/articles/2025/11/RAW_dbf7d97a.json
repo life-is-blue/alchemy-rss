@@ -1,0 +1,55 @@
+{
+  "id": "RAW_dbf7d97a",
+  "title": "苹果 AI 论文太坑了！用 GPT 写的 GT，导致北京程序员通宵加班",
+  "url": "https://www.qbitai.com/2025/11/357282.html",
+  "date": "2025-11-28 09:07:43",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"66\">衡宇 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"67\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">大无语事件天天有，今天特别多——</p>\n  <p data-track=\"3\"><strong>AI大模型公司阶跃星辰的研究员，自曝被苹果挂在arXiv上的论文，狠狠坑了一把。</strong></p>\n  <p data-track=\"4\">自己去反馈问题，对方简单回了两句就把issue关了；直到自己留下公开评论，对方才撤稿下架代码了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_a40a530bbfec989a88cea25cb643d8c9.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_a40a530bbfec989a88cea25cb643d8c9.png\">\n  </div>\n  <p data-track=\"5\">别着急，我们先来梗概一下故事线：</p>\n  <p data-track=\"6\">这个月月初，阶跃研究员Lei Yang被同事安利了一篇arXiv上苹果出品的论文（该论文也在投ICLR 2026），论文中提出的benchmark和Lei Yang最近做的研究非常契合。</p>\n  <p data-track=\"7\">他超级开心，马上停下手头的工作，开始适配这个benchmark。</p>\n  <p data-track=\"8\">结果这个声称“小模型全面超越GPT-5、数据经人工精心把控”的视觉benchmark，<strong>实际上却存在荒谬的官方代码bug和高达约30%的GT（Ground Truth）错误率</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_f3601ea068d51ce2b7a2c018d9157ba6.jpeg\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_f3601ea068d51ce2b7a2c018d9157ba6.jpeg\">\n  </div>\n  <p data-track=\"9\">看到这儿，你是不是已经觉得够离谱了？</p>\n  <p data-track=\"10\">不好意思了朋友们，<strong>这还不是最离谱的</strong>……后续的故事看得人脑子上一个问号接一个问号冒出来。</p>\n  <p data-track=\"11\">这场闹剧的荒诞程度，一步步升级，直到最终Lei Yang“公开把它喷撤稿了”。</p>\n  <p data-track=\"12\">总之看得围观的Reddit吃瓜网友连连摇头：</p>\n  <blockquote>\n   <p data-track=\"13\">我们曾拥有BatchNorm、ResNet、Dropout、Transformer这些革命性成果。\n    <br class=\"sysbr\">\n    但到了大模型时代看起来真的是一团糟。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_4a787d1e47a493caff00fb81304ab979.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_4a787d1e47a493caff00fb81304ab979.png\">\n  </div>\n  <p data-track=\"14\">好了，咱们一起来详细看看这个大无语事件到底是怎么回事。</p>\n  <p data-track=\"16\">这个荒诞故事涉及的论文名为《Where Did the Reasoning Go Wrong? A Benchmark of Puzzle-Based Visual Tasks with CoT Error Detection》。</p>\n  <p data-track=\"17\">它提出了一个基于谜题的视觉推理任务的诊断benmark。</p>\n  <p data-track=\"18\">巧的是，论文中提出的这个新benchmark，和Lei Yang近期的研究方向挺契合。</p>\n  <p data-track=\"19\">所以Lei Yang读完论文后，停下手头其他工作，开始着手适配。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124212_6bf3d6ef311e95e9cca75b5c9f1ae897.jpeg\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124212_6bf3d6ef311e95e9cca75b5c9f1ae897.jpeg\">\n  </div>\n  <p data-track=\"20\">没想到的是，熬了一个周末的通宵完成适配后，<strong>模型跑出来的点数极其之低</strong>，远低于预期。</p>\n  <p data-track=\"21\">“我非常沮丧。”Lei Yang又开始做各种检查和尝试。</p>\n  <p data-track=\"22\">这个阶段就开始出现不对劲了。<strong>Lei Yang发现了官方代码的bug</strong>：</p>\n  <blockquote>\n   <p data-track=\"23\">请求VLM的时候只用了图片路径的字符串，而不包含图片本身。</p>\n  </blockquote>\n  <p data-track=\"24\">行，有bug咱们就修bug呗！</p>\n  <p data-track=\"25\">好家伙，<strong>修复这个bug后，模型的点数更低了</strong>……</p>\n  <p data-track=\"26\">这结果给Lei Yang干懵了。他在多个平台公开的小作文中写道：“由于结果过于离谱，我不得不做更多的验证工作，最终结论仍然是修了bug后点会更低。”</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_d7c9c8ef441066a1a081e886cdf5357d.jpeg\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_d7c9c8ef441066a1a081e886cdf5357d.jpeg\">\n  </div>\n  <p data-track=\"27\">不得已，Lei Yang决定一条一条地分析错题，看看自家的模型是怎么做错的。</p>\n  <p data-track=\"28\">他抽查了前20道阶跃模型答错的题，结果令人大吃一惊：</p>\n  <ul>\n   <li data-track=\"29\">里面有6道题明确属于GT错误。</li>\n   <li data-track=\"30\">从GT错误风格来看，很可能是模型自动生成的GT加上质检严重不足，导致GT包含大量幻觉。</li>\n  </ul>\n  <p data-track=\"31\">这意味着，写进论文里、作者精心挑选用于展示的内容存在大问题。</p>\n  <p data-track=\"32\">他初步估算了一下，<strong>GT错误率可能高达30%</strong>。</p>\n  <p data-track=\"34\">于是，Lei Yang选择在GitHub上向作者反馈，指出其中的错误。</p>\n  <p data-track=\"35\">6天过后，<strong>论文作者简单回复了一下，然后直接关闭了issue</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_3e7e125aec4f8dab53f456582a25847c.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_3e7e125aec4f8dab53f456582a25847c.png\">\n  </div>\n  <p data-track=\"36\">给Lei Yang气的呀，组织语言一通回击。</p>\n  <p data-track=\"37\">然而这件荒谬事件没有最离谱，只有更离谱——</p>\n  <p data-track=\"38\">ICLR review公布后，Lei Yang看了看该论文的<strong>5条reviews，居然没有任何一个审稿人发现GT质量问题，也没人发现论文中的例子存在幻觉和错误</strong>。</p>\n  <p data-track=\"39\">（这里中插一下Openreview的直通车：https://openreview.net/forum?id=pS9jc2zxQz）</p>\n  <p data-track=\"40\">愤怒之下，他撰写了一份详尽的Public Comment。</p>\n  <p data-track=\"41\">内容大概是列举GT问题的实例，提醒ICLR审稿人和社区这个数据集质量堪忧、极易误导研究方向。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124211_3f684ceee95f4f1baa85b546f971548f.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124211_3f684ceee95f4f1baa85b546f971548f.png\">\n  </div>\n  <p data-track=\"42\">在这条评论最后，Lei Yang留了句话</p>\n  <blockquote>\n   <p data-track=\"43\">我在这里评论是为了<strong>防止有兴趣的研究人员重复我经历的相同循环</strong>——看到第一个错误检测任务时的兴奋，运行它后的震惊和失望，以及追踪底层GT问题后的沮丧——<strong>从而节省每个人的时间和精力</strong>。</p>\n  </blockquote>\n  <p data-track=\"44\">Fine，看似是输出愤怒，实则是真没招了，顺便警醒一下后来人不要再被坑。</p>\n  <p data-track=\"45\">不少网友为Lei Yang的这个行为超棒的：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124208_0146277e487ece4230a3260527d3eeff.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124208_0146277e487ece4230a3260527d3eeff.png\">\n  </div>\n  <p data-track=\"46\">最后，在<strong>这条公开评论发表的第二天，论文作者就宣布撤稿，并删除了GitHub上的repo</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_3b88a039b4f4a14190362201c27290fa.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_3b88a039b4f4a14190362201c27290fa.png\">\n  </div>\n  <p data-track=\"48\">这两天Lei Yang在多个平台分享自己的惨痛踩坑经历，希望通过分享这一遭遇，让更多研究者警觉起来，尤其不要盲目信任表面包装，哪怕是来自大公司。</p>\n  <p data-track=\"49\">今天上午，论文作者在小地瓜（没错就是那个平台）上现身回应了。</p>\n  <p data-track=\"50\">他首先<strong>声明自己这边已经和Lei Yang详细交流</strong>，也感谢和尊重推动学术社区进展的每个人。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124211_dc39249711157fcd99b379b87f0a26c6.jpeg\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124211_dc39249711157fcd99b379b87f0a26c6.jpeg\">\n  </div>\n  <p data-track=\"51\">我们梳理了一下论文作者的回应。</p>\n  <p data-track=\"52\"><strong>首先关于数据质量，作者承认审核不周</strong>。</p>\n  <p data-track=\"53\">虽然当初对injected error（人为注入错误）的样本做了人工检查，但没有认真审核更关键的部分。</p>\n  <p data-track=\"54\">所以也就没有留意到GT解答思路由GPT自动转换成分步骤CoT时出现了幻觉，导致step label出现了问题。</p>\n  <p data-track=\"55\">这部分实质上承认了此次荒谬事件中最核心的问题，即自动构建数据时的质检严重不足。</p>\n  <p data-track=\"56\"><strong>其次说了说关于论文中example inference的事儿。</strong></p>\n  <p data-track=\"57\">他解释称项目中的example inference代码是一个dummy示例，不是正式的演示代码。</p>\n  <p data-track=\"58\">在o3的输出例子中，是可以看到模型确实看到了图片的。</p>\n  <p data-track=\"59\">然后，他表示<strong>当时接收到Lei Yang的提醒后，修改了dummy代码</strong>，并且回复了Lei Yang。</p>\n  <p data-track=\"60\">最后他对自己当时直接关闭了issue感到非常抱歉。</p>\n  <p data-track=\"61\">“当时reopen并且回复了新提出的问题，下次也会一直开着直到问题全部解决。”</p>\n  <p data-track=\"62\">回应贴的最后一点是这么写的：</p>\n  <blockquote>\n   <p data-track=\"63\">我们的目标包括这个benchmark的目的都是推进各个研究方向，在做数据时有不应出现的疏忽，但我们各自都是出于对这个方向的兴趣，利用业余时间在做这个项目，也在其中花费了大量时间精力为了推进这个小方向的发展。\n    <br class=\"sysbr\">\n    我们<strong>会认真总结这次的经验教训</strong>，再接再厉。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251128124207_7a4436b34d2206257563bc9dad0dd5dc.png\" alt=\"苹果AI论文太坑了！用GPT写的GT，导致北京程序员通宵加班\" data-src=\"https://image.jido.dev/20251128124207_7a4436b34d2206257563bc9dad0dd5dc.png\">\n  </div>\n  <p data-track=\"64\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/diyerxx/status/1994042370376032701\n   <br class=\"sysbr\">\n   [2]https://www.reddit.com/r/MachineLearning/comments/1p82cto/d_got_burned_by_an_apple_iclr_paper_it_was/\n   <br class=\"sysbr\">\n   [3]https://www.xiaohongshu.com/explore/6928aaf8000000001b022d64?app_platform=ios&amp;app_version=9.10&amp;share_from_user_hidden=true&amp;xsec_source=app_share&amp;type=normal&amp;xsec_token=CBLEH7cvuVDNN78gtS-RUB8YQp0_GXstBHlQAk14v6t8I=&amp;author_share=1&amp;xhsshare=WeixinSession&amp;shareRedId=NzxHOEQ6OTw6Pjw3Sj81SD1HQUk5R0lK&amp;apptime=1764289526&amp;share_id=c73caa18d27a408898ea99622f8e0360\n   <br class=\"sysbr\">\n   [4]https://openreview.net/forum?id=pS9jc2zxQz\n   <br class=\"sysbr\">\n   [5]https://openreview.net/pdf/e5917f72a8373c7f56b3cb9c0ac881d991294ee2.pdf</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "量子位报道苹果 AI 论文存在严重 GT 错误和代码 bug，导致研究员通宵加班，最终通过公开反馈促使论文撤稿，揭示 AI 研究数据质量挑战。",
+  "oneSentenceSummary": "量子位报道苹果 AI 论文存在严重 GT 错误和代码 bug，导致研究员通宵加班，最终通过公开反馈促使论文撤稿，揭示 AI 研究数据质量挑战。",
+  "summary": "文章详细报道了阶跃星辰研究员 Lei Yang 在适配一篇苹果公司发布于 arXiv（并投稿 ICLR 2026）的 AI 论文时，遭遇的荒谬事件。该论文提出的视觉推理 benchmark 声称数据经过精心把控，但 Lei Yang 在适配过程中发现官方代码存在逻辑 bug，且核心的 Ground Truth（GT）错误率高达约 30%，怀疑是 GPT 自动生成后质检严重不足所致。在 GitHub 上向作者反馈问题后，作者最初简单回复并关闭了 issue。直到 Lei Yang 在 ICLR 的 Openreview 平台发布详尽的公开评论，警示社区数据质量问题，论文作者才于次日宣布撤稿并删除 GitHub 代码库。此事件引发了对 AI 研究数据质量、学术诚信以及大公司论文严谨性的广泛讨论，论文作者随后在小红书回应，承认审核不周导致 GT 解答思路由 GPT 自动转换时出现幻觉问题，并对处理 issue 的方式表示歉意。",
+  "mainPoints": [
+    {
+      "point": "苹果 AI 论文的视觉推理 benchmark 存在严重 GT 错误和代码 bug。",
+      "explanation": "论文声称数据精心把控，但实际 GT 错误率高达 30%，且官方代码有逻辑 bug，导致研究员在适配时耗费大量精力并得出错误结论。"
+    },
+    {
+      "point": "论文作者最初对问题反馈处理不当，引发公众关注后才撤稿。",
+      "explanation": "研究员在 GitHub 反馈后，作者简单回复并关闭 issue；直到公开评论施压，才撤稿，暴露出学术交流和问题处理机制的不足。"
+    },
+    {
+      "point": "事件揭示了当前 AI 研究领域对数据质量和学术严谨性可能存在的挑战。",
+      "explanation": "即使是来自大公司的论文，也可能存在严重缺陷，且审稿机制未能有效发现，警示研究者需保持批判性思维。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 大模型公司阶跃星辰的研究员，自曝被苹果挂在 arXiv 上的论文，狠狠坑了一把。",
+    "这个声称\"小模型全面超越 GPT-5、数据经人工精心把控\"的视觉 benchmark，实际上却存在荒谬的官方代码 bug 和高达约 30%的 GT（Ground Truth）错误率。",
+    "我在这里评论是为了防止有兴趣的研究人员重复我经历的相同循环------看到第一个错误检测任务时的兴奋，运行它后的震惊和失望，以及追踪底层 GT 问题后的沮丧------从而节省每个人的时间和精力。",
+    "我们曾拥有 BatchNorm、ResNet、Dropout、Transformer 这些革命性成果。但到了大模型时代看起来真的是一团糟。",
+    "我们的目标包括这个 benchmark 的目的都是推进各个研究方向，在做数据时有不应出现的疏忽，但我们各自都是出于对这个方向的兴趣，利用业余时间在做这个项目，也在其中花费了大量时间精力为了推进这个小方向的发展。"
+  ],
+  "tags": [
+    "AI论文质量",
+    "数据质量",
+    "模型评估",
+    "学术诚信",
+    "大语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 86,
+  "wordCount": 2303,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764320863000,
+  "publishDateStr": "2025-11-28",
+  "publishDateTimeStr": "2025-11-28 09:07:43"
+}

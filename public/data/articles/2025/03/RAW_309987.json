@@ -1,0 +1,53 @@
+{
+  "id": "RAW_309987",
+  "title": "单个 4090 就能跑，Mistral 开源多模态小模型，开发者：用来构建推理模型足够香",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-18-12",
+  "date": "2025-03-18 07:58:58",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote data-author-name=\"\" data-content-utf8-length=\"57\" data-source-title=\"\" data-type=\"2\" data-url=\"\">\n   <section>\n    <p>多模态，性能超 GPT-4o Mini、Gemma 3，还能在单个 RTX 4090 上运行，这个小模型值得一试。</p>\n   </section>\n  </blockquote>\n  <section>\n   小模型正在变得越来越好，而且越来越便宜。\n  </section>\n  <section>\n   刚刚，法国 AI 创企 Mistral AI 开源了一个 24B 的多模态小模型，该模型在多个基准上击败了 Gemma 3 和 GPT-4o Mini 等同类模型，而且推理速度达到了 150 个 token / 秒，称得上是又好又快。\n  </section>\n  <section>\n   <img data-imgfileid=\"503476731\" data-ratio=\"1.100098135426889\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d93311f3-5bc4-48aa-ce61-cc12bebe5500/public\" data-type=\"png\" data-w=\"1019\" data-original-style=\"\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/ea5279c9-c6c9-4ad6-9f55-d26b26a4b7de/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   重要的是，它只需要一个 RTX 4090 或 32GB RAM 的 Mac 就能运行，而且开源协议是 Apache 2.0，因此既能用于研究，也能商用。\n  </section>\n  <section>\n   <img data-imgfileid=\"503476732\" data-ratio=\"1.2792607802874743\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/01063fcb-9039-4eb9-4fff-ffe62735ba00/public\" data-type=\"png\" data-w=\"974\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/f0f4bbaf-7794-4da2-ae71-6f24243c6fe9/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <img data-imgfileid=\"503476733\" data-ratio=\"0.7916666666666666\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/44e47f59-f13d-48dc-114f-dd75136a4200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/d9d7cd55-0e15-4628-9fc1-58e21306fef3/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   具体来说，Mistral Small 3.1 是基于 Mistral Small 3 构建的。与 Mistral Small 3 相比，它的上下文窗口更大，达到了 128k（Mistral Small 3 仅为 32k），文本生成能力得到了改进，还新增了视觉能力。\n  </section>\n  <section>\n   Mistral 官方表示，Mistral Small 3.1 是一款多功能模型，旨在处理各种生成式 AI 任务，包括指令遵循、对话辅助、图像理解和函数调用。它为企业级和消费级 AI 应用提供了坚实的基础。\n  </section>\n  <section>\n   目前，部分开发者已经在自己的设备上完成了部署，并晒出了体验效果：\n  </section>\n  <section>\n   <img data-imgfileid=\"503476734\" data-ratio=\"0.8685185185185185\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9087c9ee-34aa-4400-98ce-02b881d12600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/f3f4f68b-88d7-4ead-84bd-9d030969ee1e/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-imgfileid=\"503476736\" data-ratio=\"0.6166666666666667\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/73be1f4f-8497-454b-4bfe-120285306600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/e19940ec-57c3-4869-a9c8-33f4a1d9805e/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   Mistral Small 3.1 可在 huggingface 网站 Mistral Small 3.1 Base 和 Mistral Small 3.1 Instruct 上下载。\n  </section>\n  <ul>\n   <li>\n    <section>\n     Mistral Small 3.1 Base：https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503\n    </section></li>\n   <li>\n    <section>\n     Mistral Small 3.1 Instruct：https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503 &nbsp;\n    </section></li>\n  </ul>\n  <section>\n   以下是该模型的详细信息。\n  </section>\n  <section>\n   <strong>核心特性</strong>\n  </section>\n  <section>\n   Mistral Small 3.1 具有以下特点：\n  </section>\n  <ul>\n   <li>\n    <section>\n     轻量级：可以在单个 RTX 4090 或具有 32GB RAM 的 Mac 上运行。这使其非常适合端侧使用情况。\n    </section></li>\n   <li>\n    <section>\n     快速响应能力：非常适合虚拟助手和其他需要快速、准确响应的应用程序。\n    </section></li>\n   <li>\n    <section>\n     低延迟函数调用：能够在自动化或智能体工作流中快速执行函数。\n    </section></li>\n   <li>\n    <section>\n     针对专业领域进行微调：Mistral Small 3.1 可以针对特定领域进行微调，打造精准的主题专家。这在法律咨询、医疗诊断和技术支持等领域尤其有用。\n    </section></li>\n   <li>\n    <section>\n     高级推理的基础：开放的 Mistral 模型已经被开发者用来构建出色的推理模型，比如 Nous Research 的 DeepHermes 24B 就是基于 Mistral Small 3 构建出来的。为了鼓励这种创新，Mistral AI 发布了 Mistral Small 3.1 的基础模型和指令检查点，以便社区进一步对模型进行下游定制。\n    </section></li>\n  </ul>\n  <section>\n   <img data-imgfileid=\"503476739\" data-ratio=\"1.2435185185185185\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/65f9f9df-cd9e-4bf7-ffee-805658133500/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/bac71af9-fc90-4ae9-8a4b-8f1f1cd92e1b/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   Mistral Small 3.1 可用于需要多模态理解的各种 B 端和 C 端应用程序，例如文档验证、诊断、端侧图像处理、质量检查的视觉检查、安全系统中的物体检测、基于图像的客户支持和通用协助。\n  </section>\n  <section>\n   <strong>性能展示</strong>\n  </section>\n  <section>\n   以下是 Mistral Small 3.1 在文本、多模态、多语言、长上下文等场景中的性能表现情况。\n  </section>\n  <section>\n   <strong>文本指令基准</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503476740\" data-ratio=\"0.8481481481481481\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/61989969-9be5-4a3e-9f23-8509b9df9400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/24222bd7-a3d5-4b29-8023-e52dee17c73c/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>多模态指令基准</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503476741\" data-ratio=\"0.9185185185185185\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6528f9fc-8c61-4f2a-0ac7-7c9439612800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/7d4bd93c-b7c6-48e9-b56e-dc438aaf911b/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>多语言指令基准</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503476742\" data-ratio=\"0.9101851851851852\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/08573121-aaba-4665-1db3-c46eab1f4100/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/c20aa0ac-a5f8-4f5f-ac03-799c386ef253/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>预训练性能</strong>\n  </section>\n  <section>\n   <img data-imgfileid=\"503476743\" data-ratio=\"0.5638888888888889\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eafd15fd-bef9-41e3-59c5-a60ed6b86d00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/5835b5c4-7544-43aa-8bc0-374b2abaf4fe/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>参考链接：https://mistral.ai/news/mistral-small-3-1</sup></em>\n  </section>\n </body>\n</html>",
+  "aiSummary": "Mistral AI 开源高性能多模态小模型 Mistral Small 3.1，性能超 GPT-4o Mini 和 Gemma 3，支持单 4090 运行及商用。",
+  "oneSentenceSummary": "Mistral AI 开源高性能多模态小模型 Mistral Small 3.1，性能超 GPT-4o Mini 和 Gemma 3，支持单 4090 运行及商用。",
+  "summary": "Mistral AI 发布了 Mistral Small 3.1，一个 24B 的多模态小模型，该模型在多个基准测试中胜过 Gemma 3 和 GPT-4o Mini 等模型，并具有 150 token / 秒的推理速度。该模型可以在单个 RTX 4090 或具有 32GB RAM 的 Mac 上运行，并采用 Apache 2.0 开源协议。Mistral Small 3.1 基于 Mistral Small 3 构建，具有更大的上下文窗口（128k），改进的文本生成能力和新增的视觉能力，特别是在图像理解方面表现出色。该模型旨在处理各种生成式 AI 任务，适用于企业级和消费级 AI 应用。它具有轻量级、快速响应能力和低延迟函数调用等特点，并可以针对特定领域进行微调。Mistral AI 发布了基础模型和指令检查点，以鼓励社区进一步定制模型。",
+  "mainPoints": [
+    {
+      "point": "Mistral Small 3.1 性能优越且资源需求低",
+      "explanation": "该模型在多个基准测试中超越同类模型，同时可以在单个 RTX 4090 上运行，降低了部署和使用门槛。"
+    },
+    {
+      "point": "该模型具有多功能性，适用于多种 AI 任务",
+      "explanation": "Mistral Small 3.1 旨在处理各种生成式 AI 任务，包括指令遵循、对话辅助、图像理解和函数调用。"
+    },
+    {
+      "point": "支持微调和定制，鼓励社区创新",
+      "explanation": "Mistral AI 发布了基础模型和指令检查点，方便社区进一步对模型进行下游定制和优化。"
+    }
+  ],
+  "keyQuotes": [
+    "多模态，性能超 GPT-4o Mini、Gemma 3，还能在单个 RTX 4090 上运行，这个小模型值得一试。",
+    "Mistral Small 3.1 是一款多功能模型，旨在处理各种生成式 AI 任务，包括指令遵循、对话辅助、图像理解和函数调用。",
+    "开放的 Mistral 模型已经被开发者用来构建出色的推理模型，比如 Nous Research 的 DeepHermes 24B 就是基于 Mistral Small 3 构建出来的。"
+  ],
+  "tags": [
+    "多模态",
+    "小模型",
+    "Mistral AI",
+    "Mistral Small 3.1",
+    "GPT-4o Mini"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 871,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1742284738000,
+  "publishDateStr": "2025-03-18",
+  "publishDateTimeStr": "2025-03-18 07:58:58"
+}

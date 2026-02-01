@@ -1,0 +1,59 @@
+{
+  "id": "RAW_9992e71f",
+  "title": "Valkey 9.0 引入多数据库集群、原子级槽位迁移，并带来大幅性能提升",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265783&idx=4&sn=b27b3ddd9c9d97e917fb90685b2782ba",
+  "date": "2025-12-07 02:15:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Renato Losio </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 马可薇 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Linux 基金会宣布 Valkey 9.0 正式发布，这是一款作为 Redis 接班者而发展的开源内存存储方案。最新的大版本带来了原子级槽位迁移、哈希字段过期，以及在集群模式下对编号数据库的完整支持，使其可扩展到 2000 个节点，并实现每秒超 10 亿次请求的处理能力。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Valkey 9.0 在 Valkey 8.0 发布一周年后推出。本次版本新增的原子槽位迁移（atomic slot migration） 改进了集群的数据再均衡方式。此前的逐步迁移模式可能在传输过程中改变槽位归属，而新版的原子迁移方式则确保了键路由的一致性与可预测的交接，从而减少过渡性错误并简化在线重分片。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Momento 联合创始人兼 CEO Khawaja Shams 与 Momento 生态工程师、AWS Hero Allen Helton 写道：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">对于在集群环境中运行 Valkey 的团队而言，这从根本上改变了容量规划和运维风险管理方式。扩容将变得可预测，而不再是痛苦的过程。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">亚马逊云科技高级开发者布道师、Valkey 开源负责人 Kyle Davis 进一步解释：</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Valkey 中，所有键会被映射为 16,384 个槽位之一，每个节点负责一个或多个槽位。在 Valkey 9.0 中，迁移不再是按键迁移，而是一次迁移整个槽位，并通过 AOF 格式进行原子移动。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">另一个重要功能是哈希字段过期（hash field expiration）。此前，Valkey 的哈希结构只能整体过期，若需字段级过期，用户只能拆分为多个键。9.0 允许哈希中的每个字段独立过期。AWS 高级软件工程师 Ran Shidlansik 在另一篇文章中解释了其实现方式，并说明 Valkey 采用主动过期机制清理已过期的哈希字段。Shidlansik 总结道：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">基准测试表明，字段级过期可以在不牺牲内存效率或延迟的情况下加入 Valkey。额外内存开销保持可控，指令吞吐未受影响，而共享的主动过期任务在高写入压力下仍能高效回收内存。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">编号数据库（numbered databases） 长期用于隔离数据、防止键冲突，但在 Redis 以及之前的 Valkey 版本中，集群模式只能使用单一数据库。Valkey 9.0 取消了这一限制，引入了对编号数据库的完整集群支持，使多数据库的可扩展部署成为可能。Davis 将编号数据库视为一种命名空间机制，并说明其主要用途：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">最直接的使用场景是需要逻辑上隔离数据，同时能够接受资源共享带来的影响。例如，将不同客户的数据分隔开，或在资源不成问题的情况下整合多个应用到同一个集群中。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img data-imgfileid=\"503782131\" class=\"rich_pages wxw-img\" data-ratio=\"0.49125\" data-type=\"png\" data-w=\"800\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=8a416559&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VMAiarLvic1SIbS1iahAiajib1pMAtfic5IdWmfVGfP9kq0aGpba2CC5mSAAoENSRHCxIknmWZg4eJ3icWTQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">项目社区近期讨论了 Valkey 9.0 的架构改进，展示了其在大型集群中的增强韧性，使系统能够扩展至 2000 个节点并实现每秒超 10 亿次请求的处理能力。Shams 与 Helton 指出：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">9.0 的性能提升来自对现代 CPU 能力的智能利用。Valkey 9.0 能在现代硬件上发挥更高效的表现，与之前版本相比有显著优势（……）最终带来更低的尾延迟、更高的单节点吞吐量，以及可量化的成本效率。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Valkey 由亚马逊云科技、Oracle、谷歌云等企业支持，遵循 BSD 三条款许可。 Valkey 9.0 现已开放下载。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/11/valkey-9-atomic-migration/\" target=\"_blank\">https://www.infoq.com/news/2025/11/valkey-9-atomic-migration/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Valkey 9.0 作为 Redis 的开源继承者，引入了原子级槽位迁移、哈希字段过期和多数据库集群支持，大幅提升了大规模分布式部署的性能、可扩展性和运维效率。",
+  "oneSentenceSummary": "Valkey 9.0 作为 Redis 的开源继承者，引入了原子级槽位迁移、哈希字段过期和多数据库集群支持，大幅提升了大规模分布式部署的性能、可扩展性和运维效率。",
+  "summary": "文章详细介绍了开源内存存储方案 Valkey 9.0 的正式发布及其带来的关键新特性。作为 Redis 的接班者，Valkey 9.0 在集群模式下实现了对编号数据库的完整支持，使其能够扩展至 2000 个节点并处理每秒超过 10 亿次请求。核心改进包括原子级槽位迁移，它通过一次性迁移整个槽位，确保了键路由的一致性并简化了在线重分片，显著改善了集群的数据再均衡方式，减少了扩容的运维风险。此外，新版本还引入了哈希字段过期功能，允许哈希结构中的每个字段独立设置过期时间，提高了数据管理的灵活性和内存效率。文章强调，Valkey 9.0 的性能提升得益于对现代 CPU 能力的智能利用，带来了更低的尾延迟、更高的单节点吞吐量和更优的成本效率。该项目由亚马逊云科技、Oracle、谷歌云等企业支持，遵循 BSD 三条款许可，旨在为开发者提供一个强大、可扩展且运维友好的内存数据存储解决方案。",
+  "mainPoints": [
+    {
+      "point": "原子级槽位迁移显著提升集群扩容与运维效率。",
+      "explanation": "新的原子迁移方式确保了数据再均衡过程中键路由的一致性与可预测性，减少了过渡性错误，使大规模集群的扩容变得更加可靠和可控。"
+    },
+    {
+      "point": "哈希字段过期功能增强数据管理灵活性与内存效率。",
+      "explanation": "允许哈希结构中的每个字段独立过期，避免了传统哈希结构整体过期的限制，简化了细粒度数据管理，同时保持了内存和吞吐量的效率。"
+    },
+    {
+      "point": "多数据库集群支持解锁大规模部署的隔离能力。",
+      "explanation": "Valkey 9.0 首次在集群模式下支持编号数据库，为逻辑隔离不同客户或应用数据提供了原生机制，简化了资源共享下的多租户或多应用部署。"
+    },
+    {
+      "point": "Valkey 9.0 性能大幅提升，支持超大规模请求处理。",
+      "explanation": "通过智能利用现代 CPU 能力，Valkey 9.0 实现了更高的单节点吞吐量、更低的尾延迟，使其能够扩展到 2000 个节点并处理每秒超 10 亿次请求。"
+    }
+  ],
+  "keyQuotes": [
+    "对于在集群环境中运行 Valkey 的团队而言，这从根本上改变了容量规划和运维风险管理方式。扩容将变得可预测，而不再是痛苦的过程。",
+    "在 Valkey 中，所有键会被映射为 16，384 个槽位之一，每个节点负责一个或多个槽位。在 Valkey 9.0 中，迁移不再是按键迁移，而是一次迁移整个槽位，并通过 AOF 格式进行原子移动。",
+    "基准测试表明，字段级过期可以在不牺牲内存效率或延迟的情况下加入 Valkey。额外内存开销保持可控，指令吞吐未受影响，而共享的主动过期任务在高写入压力下仍能高效回收内存。",
+    "最直接的使用场景是需要逻辑上隔离数据，同时能够接受资源共享带来的影响。例如，将不同客户的数据分隔开，或在资源不成问题的情况下整合多个应用到同一个集群中。",
+    "9.0 的性能提升来自对现代 CPU 能力的智能利用。Valkey 9.0 能在现代硬件上发挥更高效的表现，与之前版本相比有显著优势（......）最终带来更低的尾延迟、更高的单节点吞吐量，以及可量化的成本效率。"
+  ],
+  "tags": [
+    "内存数据库",
+    "Valkey",
+    "Redis",
+    "分布式系统",
+    "集群管理"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1094,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765073700000,
+  "publishDateStr": "2025-12-07",
+  "publishDateTimeStr": "2025-12-07 02:15:00"
+}

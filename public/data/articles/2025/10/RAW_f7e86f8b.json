@@ -1,0 +1,55 @@
+{
+  "id": "RAW_f7e86f8b",
+  "title": "马斯克从英伟达挖人做 AI 游戏！第一步：研发世界模型",
+  "url": "https://www.qbitai.com/2025/10/340762.html",
+  "date": "2025-10-13 01:49:19",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"60\">衡宇 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"61\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>马斯克的xAI也入局世界模型了</strong>！</p>\n  <p data-track=\"3\">想必听到这个消息的Meta、Google DeepMind一定会缓缓打出一个问号：冲我们来的？</p>\n  <p data-track=\"4\">据《金融时报》（FT）报道，为了增加这场“世界模型大混战”的赢面，今年夏天，xAI<strong>已经从英伟达挖来了多名资深研究员</strong>来助阵。</p>\n  <p data-track=\"5\">另一边，在悄然下场世界模型后，马斯克几天前又在上再次重申了去年定下的那个“小目标”——</p>\n  <blockquote>\n   <p data-track=\"6\">2026年年底前，xAI会发布一款伟大的AI生成游戏。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克从英伟达挖人做AI游戏！第一步：研发世界模型\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013030752_39ce1a6b170a2575aef996ba1612183e.png\" data-src=\"https://image.jido.dev/20251013030752_39ce1a6b170a2575aef996ba1612183e.png\">\n  </div>\n  <p data-track=\"7\"><strong>Stability AI创始人EMostaque在自己的上列出这样一组数字</strong>：</p>\n  <p data-track=\"8\">OpenAI今年收入约100亿美元，视频游戏行业今年收入约2000亿美元。</p>\n  <p data-track=\"9\">马斯克呀马斯克，Attention is all you need（狗头）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克从英伟达挖人做AI游戏！第一步：研发世界模型\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013030752_90f19b3648e485105809536ffd9f32fb.png\" data-src=\"https://image.jido.dev/20251013030752_90f19b3648e485105809536ffd9f32fb.png\">\n  </div>\n  <p data-track=\"11\">世界模型是近两年全球AI巨头&amp;实验室们的新战场，Google DeepMind、Meta、NVIDIA、李飞飞等都在做。</p>\n  <p data-track=\"12\">如今，xAI也来了。</p>\n  <p data-track=\"13\">而它的<strong>第一步，就选择了去英伟达挖老黄墙脚——</strong></p>\n  <p data-track=\"14\">今年夏天，xAI至少雇佣了两位来自英伟达的研究人员：<strong>Zeeshan Patel</strong>和<strong>Ethan He</strong>。</p>\n  <p data-track=\"15\">其中，<strong>Zeeshan Patel</strong>今年5月硕士毕业于UC伯克利，研究主要面向深度学习、生成模型和物理人工智能。</p>\n  <p data-track=\"16\">加入xAI前，他先在苹果AI/ML部门从事基础模型研究，后又加入英伟达研究院从事生成式世界模型研究。</p>\n  <p data-track=\"17\">在英伟达工作期间，Zeeshan Patel专注于大规模多模态模型与训练框架的研发</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克从英伟达挖人做AI游戏！第一步：研发世界模型\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013030752_9ddf1bbaf7f7eadffcb46ebbda0e8717.png\" data-src=\"https://image.jido.dev/20251013030752_9ddf1bbaf7f7eadffcb46ebbda0e8717.png\">\n  </div>\n  <p data-track=\"18\"><strong>Ethan He，</strong>本科毕业于西安交通大学，而后前往CMU攻读计算机视觉的硕士学位，最后满绩毕业。</p>\n  <p data-track=\"19\">目前，他的Google Scholar被引数为8495。</p>\n  <p data-track=\"20\">2019年到2021年期间，Ethan He在FaceBook AI从事研究工程师，工作内容主要包括大规模视频自监督学习、视频基础模型等。</p>\n  <p data-track=\"21\">2023年，他加入英伟达，工作内容均与MoE模型、多模态模型和世界模型有关。</p>\n  <p data-track=\"22\">今年7月，他正式加入xAI。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克从英伟达挖人做AI游戏！第一步：研发世界模型\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013030752_d74090f082fad9ee444af0582f510c4e.png\" data-src=\"https://image.jido.dev/20251013030752_d74090f082fad9ee444af0582f510c4e.png\">\n  </div>\n  <p data-track=\"23\">若说这两人有什么共同点，那就是<strong>两人此前都在英伟达参与了Omniverse平台的核心开发工作</strong>。</p>\n  <p data-track=\"24\">这个平台是全球最成熟的仿真平台之一，被称作“通往物理世界的数字平行宇宙”。</p>\n  <p data-track=\"25\">简单来说，Omniverse是英伟达打造的物理一致性仿真系统，广泛应用于机器人训练、3D 建模、数字孪生、自动驾驶等领域。</p>\n  <p data-track=\"26\">它能在虚拟世界中精确地模拟现实物理规律，让AI在不触碰现实的情况下，就能学会如何与世界互动。</p>\n  <p data-track=\"27\">——而<strong>世界模型需要的就是这样的能力</strong>。</p>\n  <p data-track=\"28\">Omniverse与世界模型训练/评测天然契合，难怪xAI内部人士透露，马斯克计划在xAI将英伟达在图形与物理模拟领域的积累，应用到自家的世界模型体系中。</p>\n  <p data-track=\"30\">“世界模型”这个概念，其实最早可以追溯到强化学习，意思是让AI先在脑海中模拟出一个世界，再去规划行动、预测结果。</p>\n  <p data-track=\"31\">而<strong>时至今日，它被不少业内人士视为AGI的核心底座。</strong></p>\n  <p data-track=\"32\">AI教母李飞飞对世界模型的定义则是源自于人类自然形成的世界心智模型。</p>\n  <blockquote>\n   <p data-track=\"33\">指的是<strong>一种AI系统能够真正理解和推理物理3D世界的模型，而不仅仅局限于文本处理。</strong>\n    <br>\n    世界模型能让AI理解3D结构、形状和组合性，从而推动机器人技术、创意产业和计算的未来发展。</p>\n  </blockquote>\n  <p data-track=\"34\">在李飞飞看来，世界模型不仅能生成和重建持久存在、可导航的3D环境，还能支持多种应用，实现更大规模的虚拟世界和多元宇宙的构建。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克从英伟达挖人做AI游戏！第一步：研发世界模型\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013030752_0dd2dc3af8b8a2ca041a261562a3a6de.png\" data-src=\"https://image.jido.dev/20251013030752_0dd2dc3af8b8a2ca041a261562a3a6de.png\">\n  </div>\n  <p data-track=\"35\">在过去一年，这个方向几乎成了AI巨头和实验室的兵家必争之地。</p>\n  <ul>\n   <li data-track=\"36\"><strong>DeepMind</strong>推出Genie 3，能从一张图片或一段文字，直接生成可交互的 2D 游戏世界；</li>\n   <li data-track=\"37\"><strong>Meta</strong>发布V-JEPA-2，让模型在视频中预测未来帧、理解物理因果；</li>\n   <li data-track=\"38\"><strong>英伟达</strong>自家也在强化世界模型，用于机器人训练与数字孪生；</li>\n   <li data-track=\"39\">……</li>\n  </ul>\n  <p data-track=\"40\">那么，马斯克携xAI下场，到底想干啥？</p>\n  <p data-track=\"41\">知情人士消息，<strong>xAI入局世界模型后的的首批落点可能是电子游戏</strong>。</p>\n  <p data-track=\"42\">目前，团队正在尝试让AI自动生成自适应、逼真的3D场景，可以根据玩家行为实时变化的那种。</p>\n  <p data-track=\"43\">这与马斯克自己设下的目标完美呼应——到2026年底，推出一款由世界模型驱动的AI生成游戏。</p>\n  <p data-track=\"44\">一位用户在上留言称：“AI在游戏开发中的效率很高，能让创造力自由流动，这很有道理。”</p>\n  <div class=\"pgc-img\">\n   <img alt=\"马斯克从英伟达挖人做AI游戏！第一步：研发世界模型\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251013030752_4c6cb0416cfb1b46d7d30bb094b00d71.png\" data-src=\"https://image.jido.dev/20251013030752_4c6cb0416cfb1b46d7d30bb094b00d71.png\">\n  </div>\n  <p data-track=\"45\">与此同时，<strong>xAI内部也正在为此组建一支全模态团队</strong>（Multimodal Team），专门研究图像、视频、音频的综合理解与生成。</p>\n  <p data-track=\"46\">他们近期公开的招聘信息显示，这支团队包括多个方向：</p>\n  <ul>\n   <li data-track=\"47\"><strong>Member of Technical Staff – Multimodal（Audio），职责涵盖音频理解、生成与评测；</strong></li>\n   <li data-track=\"48\"><strong>Member of Technical Staff – Multimodal Understanding，薪资区间18万–44万美元/年，侧重于多模态建模与数据系统。</strong></li>\n  </ul>\n  <p data-track=\"49\">除此之外，还有一个职位在业内引发热议，<strong>Video Games Tutor</strong>，即电子游戏导师。</p>\n  <p data-track=\"50\">相关招聘页面写得很直接：</p>\n  <blockquote>\n   <p data-track=\"51\">时薪45–100美元，向模型讲解电子游戏机制、叙事逻辑、任务设计。</p>\n  </blockquote>\n  <p data-track=\"52\">看来，马斯克似乎打算让人类专家教模型怎么玩游戏、怎么设计任务、如何构建可交互世界。</p>\n  <p data-track=\"53\">马斯克本人在多次公开发言中提到，xAI的使命是“让AI理解宇宙的本质”。而世界模型正是通向理解宇宙的必经之路。</p>\n  <p data-track=\"54\">有了世界模型，AI不再只用来生成内容，而能在内部模拟出一个真实世界的副本。</p>\n  <p data-track=\"55\">这意味着它既可以驱动AI游戏，也可以驱动智能体、自动驾驶乃至具身智能机器人。</p>\n  <p data-track=\"56\">从这一点上来看，<strong>xAI、特斯拉、Neuralink、之间的关系也变得微妙</strong>——</p>\n  <p data-track=\"57\">xAI研发模型，特斯拉拥有机器人和自动驾驶数据，Neuralink提供脑机接口则是社交与实时反馈的平台。</p>\n  <p data-track=\"58\"><strong>如果这些板块能通过世界模型互通，马斯克的AI帝国，将真正形成闭环</strong>。</p>\n  <p data-track=\"59\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://www.ft.com/content/ac566346-53dd-4490-8d4c-5269906c64ee\n   <br class=\"sysbr\">\n   [2]https://x.com/EMostaque/status/1977352468087320714\n   <br class=\"sysbr\">\n   [3]https://www.zeeshanp.me/research/\n   <br class=\"sysbr\">\n   [4]https://www.linkedin.com/in/ethanhe42/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "马斯克的 xAI 公司正通过挖角英伟达研究员，加速研发世界模型，目标是 2026 年底推出 AI 生成游戏。",
+  "oneSentenceSummary": "马斯克的 xAI 公司正通过挖角英伟达研究员，加速研发世界模型，目标是 2026 年底推出 AI 生成游戏。",
+  "summary": "文章报道了埃隆·马斯克的 xAI 公司正积极布局世界模型领域，并为此从英伟达挖来了 Zeeshan Patel 和 Ethan He 等多名资深研究员。这些研究员此前在英伟达 Omniverse 平台的核心开发中扮演重要角色，该平台在物理模拟和虚拟世界构建方面与世界模型的需求高度契合。xAI 计划将英伟达在图形与物理模拟的积累应用于其世界模型体系。世界模型被业内视为通用人工智能（AGI）的核心基石，能让 AI 理解并推理物理 3D 世界。xAI 的首个落地应用将是 AI 生成游戏，马斯克目标在 2026 年底前发布一款伟大的 AI 生成游戏。此外，xAI 正组建全模态团队，并招聘“电子游戏导师”以训练模型。文章还提及世界模型可能将 xAI、特斯拉和 Neuralink 的业务连接起来，形成马斯克的 AI 帝国闭环。",
+  "mainPoints": [
+    {
+      "point": "xAI 正大力投入世界模型研发，挖角英伟达资深研究员",
+      "explanation": "xAI 通过引入在英伟达 Omniverse 平台有经验的研究员，旨在将物理模拟能力融入其世界模型体系，加速技术发展。"
+    },
+    {
+      "point": "世界模型被 xAI 视为 AGI 核心，首个落地应用为 AI 生成游戏",
+      "explanation": "马斯克计划利用世界模型让 AI 理解和模拟真实世界，并设定了 2026 年底前推出 AI 生成游戏的明确目标，展现了其商业化路径。"
+    },
+    {
+      "point": "世界模型可能整合马斯克旗下各公司，构建 AI 生态闭环",
+      "explanation": "通过世界模型，xAI、特斯拉（数据、机器人）和 Neuralink（脑机接口）有望实现技术互通，形成一个强大的 AI 帝国生态系统。"
+    }
+  ],
+  "keyQuotes": [
+    "世界模型是近两年全球 AI 巨头&实验室们的新战场，Google DeepMind、Meta、NVIDIA、李飞飞等都在做。",
+    "Omniverse 是英伟达打造的物理一致性仿真系统，广泛应用于机器人训练、3D 建模、数字孪生、自动驾驶等领域。它能在虚拟世界中精确地模拟现实物理规律，让 AI 在不触碰现实的情况下，就能学会如何与世界互动。",
+    "世界模型这个概念，其实最早可以追溯到强化学习，意思是让 AI 先在脑海中模拟出一个世界，再去规划行动、预测结果。而时至今日，它被不少业内人士视为 AGI 的核心底座。",
+    "世界模型能让 AI 理解 3D 结构、形状和组合性，从而推动机器人技术、创意产业和计算的未来发展。",
+    "如果这些板块能通过世界模型互通，马斯克的 AI 帝国，将真正形成闭环。"
+  ],
+  "tags": [
+    "世界模型",
+    "AI游戏",
+    "多模态AI",
+    "xAI",
+    "英伟达"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 86,
+  "wordCount": 2196,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760320159000,
+  "publishDateStr": "2025-10-13",
+  "publishDateTimeStr": "2025-10-13 01:49:19"
+}

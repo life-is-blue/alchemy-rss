@@ -1,0 +1,58 @@
+{
+  "id": "RAW_eca6f2",
+  "title": "将 Prometheus 告警规则迁移至 Grafana",
+  "url": "https://grafana.com/blog/2025/05/27/how-to-import-prometheus-style-alerts-and-recording-rules-to-grafana-managed-alerts-and-recording-rules/",
+  "date": "2025-05-27 14:36:47",
+  "author": "Sonia Aguilar, Alexander Akhmetov",
+  "siteName": "Grafana Labs",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Grafana Alerting has evolved dramatically since the legacy dashboard-alert days. Today, Grafana-managed alerts power enterprise-scale monitoring in Grafana Cloud and on-prem installations. And over the last two years, we’ve added RBAC, state history, versioning, and much more.</p>\n  <p>At the same time, our own monitoring at Grafana Labs relies heavily on Prometheus-style alerts—a situation that’s not uncommon for our users, too. Prometheus-compatible systems let you express alerting logic close to your data and in a simple YAML format, and manage those alerts with tools like <code>mimirtool</code> or <code>cortextool</code>.</p>\n  <p>But during an internal hackathon a few months ago, a few of us wondered: “What if we could easily migrate Prometheus-style alerts into Grafana without rewriting them?” And that question ultimately led to new functionality in <a href=\"https://grafana.com/blog/2025/05/07/grafana-12-release-all-the-new-features/\">Grafana 12</a> that lets you bulk import your existing Prometheus, <a href=\"https://grafana.com/oss/loki/?pg=blog&amp;plcmt=body-txt\">Grafana Loki</a>, or <a href=\"https://grafana.com/oss/mimir/?pg=blog&amp;plcmt=body-txt\">Grafana Mimir</a> rule files into Grafana-managed alerts and recording rules, directly through the UI.</p>\n  <div class=\"youtube-lazyload responsive-video\" data-embed=\"NsFVxXTMbUc\" data-url=\"https://www.youtube.com/embed/NsFVxXTMbUc?autoplay=1&amp;rel=0\" data-title=\"YouTube Video\"></div>\n  <h2 id=\"under-the-hood-how-prometheus-rules-become-native-grafana-alerts\">Under the hood: how Prometheus rules become native Grafana alerts</h2>\n  <p>When we started this project, our main idea was simple: the existing tooling and CI/CD pipelines should just work. To make this possible, we added <a href=\"https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/alerting-rules/alerting-migration/migration-api/?pg=blog&amp;plcmt=body-txt\">APIs</a> to Grafana that are compatible with Mimir and Loki, so if your workflows already use <code>mimirtool</code> or <code>cortextool</code> you can simply point them to your Grafana instance and everything continues to work. Behind the scenes, Grafana takes your rule definitions from the YAML and converts it to Grafana alert rules.</p>\n  <p>However, converting alerts from Prometheus to Grafana isn’t always as straightforward as it might seem. Prometheus and Grafana have some differences in how they evaluate alert rules, which means that an alert rule simply copied from Prometheus could start firing unexpectedly in Grafana. For example, Prometheus treats empty query results as healthy:</p>\n  <div class=\"code-snippet code-snippet__mini\">\n   <div class=\"lang-toolbar__mini\">\n    <span class=\"code-clipboard\">\n     <button x-data=\"app_code_snippet()\" x-init=\"init()\" @click=\"copy()\"><img class=\"code-clipboard__icon\" src=\"https://grafana.com/media/images/icons/icon-copy-small-2.svg\" alt=\"Copy code to clipboard\" width=\"14\" height=\"13\"> <span>Copy</span></button></span>\n   </div>\n   <div class=\"code-snippet code-snippet__border\">\n    <pre data-expanded=\"false\"><code class=\"language-none\">vector(0)  \t  -&gt; value 0 -&gt; alert fires\nvector(0) &gt; 0  -&gt; empty   -&gt; alert does not fire</code></pre>\n   </div>\n  </div>\n  <p><a href=\"https://grafana.com/docs/grafana/latest/alerting/?pg=blog&amp;plcmt=body-txt\">Grafana Alerting</a>, on the other hand, has more alert states, including <code>No Data</code> when the query returns no results, or <code>Error</code> when the rule evaluation fails, etc. Without adjustment and additional threshold conditions, the first query above would be normal in Grafana, and the second query would start firing.</p>\n  <p>To preserve a Prometheus-like behavior, the importer adds a small math expression after the Prometheus query to the rule pipeline. The query itself remains unchanged, but Grafana Alerting interprets its result in the same way Prometheus does.</p>\n  <p>These are only a few examples of the differences, but ensuring the evaluation compatibility was one side of the story. We also wanted to give users the ability to use Grafana’s additional alerting features, even when importing via existing tools. To make these available through the API and still keep it compatible, the import APIs accept custom HTTP headers. These headers, supported by <code>mimirtool</code> and <code>cortextool</code>, let you specify things like target folder for the new rules, choose the data source, or import rules in a paused state without touching the YAML. For more details on these headers check our <a href=\"https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/alerting-rules/alerting-migration/migration-api/?pg=blog&amp;plcmt=body-txt\">documentation</a>.</p>\n  <h2 id=\"meet-the-import-ui-and-api\">Meet the import UI and API</h2>\n  <p>Modern observability stacks often have thousands of alert rules created over years of resource monitoring. Manually recreating data source alert rules as Grafana-managed rules is an arduous, painstaking task with a high probability of errors.&nbsp;</p>\n  <p>Starting with Grafana 12, you can import your existing Prometheus, Loki, or Mimir rule files into Grafana-managed rules directly through the UI. Data sources like Mimir or Loki have a ruler API and rules from them can be imported to Grafana right in the UI. And if you are working with Prometheus, you can use the <a href=\"https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/alerting-rules/alerting-migration/migration-api/?pg=blog&amp;plcmt=body-txt\">import API</a>.</p>\n  <p>To get started, go to “Alerting” and then go to the “Alert rules” menu, and under the “Data source-managed” alert rules section, you’ll find a new <strong>Import to Grafana-managed rules</strong> option. This opens up a page where you can:</p>\n  <ul>\n   <li>Choose your data source you want to get alerts imported from.</li>\n   <li>Select or create a target folder for the new imported rules.</li>\n   <li>Define a namespace, group, and pause evaluation of imported rules. This optional step allows you to filter which rules are imported and control whether they start evaluating or remain paused until you’re ready to enable them.</li>\n   <li>Preview the import and check for any conflicts or overwrites.</li>\n  </ul>\n  <p>Once you’re happy with the setup, just click <strong>Import</strong>, and your rules will be imported. And now you can start taking advantage of all the powerful features available with Grafana-managed rules.</p>\n  <figure class=\"figure-wrapper figure-wrapper__lightbox w-100p\" style=\"max-width:1999px\" itemprop=\"associatedMedia\" itemscope itemtype=\"http://schema.org/ImageObject\">\n   <a class=\"lightbox-link\" href=\"https://grafana.com/media/blog/import-alerts-rules/import-alert-rules.png\" itemprop=\"contentUrl\">\n    <div class=\"img-wrapper w-100p h-auto\">\n     <img class=\"lazyload\" data-src=\"https://grafana.com/media/blog/import-alerts-rules/import-alert-rules.png\" data-srcset=\"/media/blog/import-alerts-rules/import-alert-rules.png?w=320 320w, /media/blog/import-alerts-rules/import-alert-rules.png?w=550 550w, /media/blog/import-alerts-rules/import-alert-rules.png?w=750 750w, /media/blog/import-alerts-rules/import-alert-rules.png?w=900 900w, /media/blog/import-alerts-rules/import-alert-rules.png?w=1040 1040w, /media/blog/import-alerts-rules/import-alert-rules.png?w=1240 1240w, /media/blog/import-alerts-rules/import-alert-rules.png?w=1920 1920w\" data-sizes=\"auto\" alt=\"Import alert rules menu in Grafana\" width=\"1999\" height=\"1469\" src=\"https://grafana.com/media/blog/import-alerts-rules/import-alert-rules.png\">\n    </div></a>\n  </figure>\n  <h2 id=\"ready-to-migrate\">Ready to migrate?</h2>\n  <p>At Grafana Labs, we have already adopted this internally: we have CI/CD pipelines that continuously upload thousands of our own data source-managed alerts into Grafana. This has unlocked the ability for our own engineering teams to:</p>\n  <ul>\n   <li>Receive visualizations on our alerts</li>\n   <li>Simplify our routing strategy, routing alerts directly to our Grafana Cloud IRM contact point</li>\n   <li>View our alerts on our Service Center page during team stand-ups</li>\n   <li>Add granular RBAC to our rules for increased access control</li>\n   <li>Manage exceptions in our rules with no data and error states</li>\n  </ul>\n  <p>Give it a try yourself. Check out <a href=\"https://grafana.com/docs/grafana-cloud/alerting-and-irm/alerting/alerting-rules/alerting-migration/?pg=blog&amp;plcmt=body-txt\">our documentation</a> to get started today!</p>\n  <p><em><a href=\"https://grafana.com/products/cloud/?pg=blog&amp;plcmt=body-txt\">Grafana Cloud</a> is the easiest way to get started with metrics, logs, traces, dashboards, and more. We have a generous forever-free tier and plans for every use case.<a href=\"https://grafana.com/auth/sign-up/create-user/?pg=blog&amp;plcmt=body-txt\"> Sign up for free now</a>!</em></p>\n </body>\n</html>",
+  "aiSummary": "Grafana 12 引入新的用户界面和 API，简化 Prometheus 告警规则的迁移。",
+  "oneSentenceSummary": "Grafana 12 引入新的用户界面和 API，简化 Prometheus 告警规则的迁移。",
+  "summary": "本文详细介绍了 Grafana 12 中新的**批量**告警和记录规则导入功能。这项功能旨在解决将现有 Prometheus 告警规则迁移到 Grafana 的问题，这些规则通常使用 `mimirtool` 或 `cortextool` 等工具进行管理。解决的核心问题是 Prometheus（将空结果视为健康）和 Grafana（使用“无数据”状态）之间告警评估行为的差异。Grafana 12 通过提供与 Prometheus 工具兼容的 API，并引入用于**批量**导入的用户界面来解决这个问题。在幕后，Grafana 向导入的规则添加了一个数学表达式，以确保评估行为与 Prometheus 保持一致。本文还介绍了为导入的规则启用 Grafana 的高级功能（基于角色的访问控制、可视化、路由），并引用了有关实际迁移步骤的文档。",
+  "mainPoints": [
+    {
+      "point": "Grafana 12 通过用户界面和 API 简化了 Prometheus 告警的迁移。",
+      "explanation": "新功能支持批量导入 Prometheus 告警和记录规则到 Grafana，减少手动工作和潜在错误。"
+    },
+    {
+      "point": "导入尊重 Prometheus 的评估行为，尽管存在差异。",
+      "explanation": "Grafana 在导入过程中添加了一个查询后数学表达式，以确保规则的行为与在 Prometheus 中一样，一致地处理空查询结果。"
+    },
+    {
+      "point": "现有的 Prometheus 工具可以与 Grafana API 一起使用。",
+      "explanation": "兼容的 API 允许使用 `mimirtool` 或 `cortextool` 的工作流直接指向 Grafana 实例，保留已建立的 CI/CD 管道。"
+    },
+    {
+      "point": "迁移的规则可以访问高级 Grafana 告警功能。",
+      "explanation": "导入后，规则可以利用 Grafana 的基于角色的访问控制、状态历史记录、版本控制、增强的路由和可视化功能。"
+    }
+  ],
+  "keyQuotes": [
+    "如果我们可以在不重写 Prometheus 风格告警的情况下轻松地将其迁移到 Grafana 中呢？",
+    "为了使这成为可能，我们向 Grafana 添加了与 Mimir 和 Loki 兼容的 API，因此如果您的工作流程已经使用 `mimirtool` 或 `cortextool`，则只需将它们指向您的 Grafana 实例，一切都会继续工作。",
+    "但是，将告警从 Prometheus 转换为 Grafana 并不总是像看起来那么简单。",
+    "为了保留类似 Prometheus 的行为，导入程序在 Prometheus 查询之后向规则处理流程添加了一个小的数学表达式。"
+  ],
+  "tags": [
+    "Grafana",
+    "Prometheus",
+    "告警",
+    "监控",
+    "迁移"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 866,
+  "domain": "grafana.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_c68a52",
+  "sourceName": "Grafana Labs",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748356607000,
+  "publishDateStr": "2025-05-27",
+  "publishDateTimeStr": "2025-05-27 14:36:47"
+}

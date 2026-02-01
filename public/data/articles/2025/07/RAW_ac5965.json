@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ac5965",
+  "title": "月之暗面/Kimi-K2-Instruct",
+  "url": "https://simonwillison.net/2025/Jul/11/kimi-k2/#atom-everything",
+  "date": "2025-07-11 18:33:54",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://huggingface.co/moonshotai/Kimi-K2-Instruct\">moonshotai/Kimi-K2-Instruct</a></strong> (<a href=\"https://news.ycombinator.com/item?id=44533403\" title=\"Hacker News\">via</a>) Colossal new open weights model release today from <a href=\"https://en.wikipedia.org/wiki/Moonshot_AI\">Moonshot AI</a>, a two year old Chinese AI lab with a name inspired by Pink Floyd’s album The Dark Side of the Moon.</p>\n   <p>My <a href=\"https://tools.simonwillison.net/huggingface-storage\">HuggingFace storage calculator</a> says the repository is 958.52 GB. It's a mixture-of-experts model with \"32 billion activated parameters and 1 trillion total parameters\", trained using the Muon optimizer as described in Moonshot's joint paper with UCLA <a href=\"https://arxiv.org/abs/2502.16982\">Muon is Scalable for LLM Training</a>.</p>\n   <p>I think this may be the largest ever open weights model? DeepSeek v3 is 671B.</p>\n   <p>I created <a href=\"https://platform.moonshot.ai/console/api-keys\">an API key for Moonshot</a>, added some dollars and ran a prompt against it using my LLM tool. First I added this to the <a href=\"https://llm.datasette.io/en/stable/other-models.html#openai-compatible-models\">extra-openai-models.yaml file</a>:</p>\n   <pre><code>- model_id: kimi-k2\n  model_name: kimi-k2-0711-preview\n  api_base: https://api.moonshot.ai/v1\n  api_key_name: moonshot\n</code></pre>\n   <p>Then I set the API key:</p>\n   <pre><code>llm keys set moonshot\n# Paste key here\n</code></pre>\n   <p>And ran a prompt:</p>\n   <pre><code>llm -m kimi-k2 \"Generate an SVG of a pelican riding a bicycle\" \\\n  -o max_tokens 2000\n</code></pre>\n   <p>(The default max tokens setting was too short.)</p>\n   <p><img alt=\"Description by Claude Sonnet 4: Simple line drawing of a white rubber duck with orange beak sitting on a red bicycle with spoked wheels\" src=\"https://static.simonwillison.net/static/2025/kimi-k2-pelican.png\"></p>\n   <p>This is pretty good! The spokes are a nice touch. <a href=\"https://gist.github.com/simonw/39aba6a1d4895ad7516bffe9485031db\">Full transcript here</a>.</p>\n   <p>This one is open weights but not open source: they're using a <a href=\"https://github.com/moonshotai/Kimi-K2/blob/main/LICENSE\">modified MIT license</a> with this non-OSI-compliant section tagged on at the end:</p>\n   <blockquote>\n    <p>Our only modification part is that, if the Software (or any derivative works thereof) is used for any of your commercial products or services that have more than 100 million monthly active users, or more than 20 million US dollars (or equivalent in other currencies) in monthly revenue, you shall prominently display \"Kimi K2\" on the user interface of such product or service.</p>\n   </blockquote>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/8829/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了月之暗面的 Kimi-K2-Instruct，这是一个巨大的新型开放权重混合专家架构（MoE），详细阐述了其规模、训练优化器及独特的商业授权条款。",
+  "oneSentenceSummary": "本文介绍了月之暗面的 Kimi-K2-Instruct，这是一个巨大的新型开放权重混合专家架构（MoE），详细阐述了其规模、训练优化器及独特的商业授权条款。",
+  "summary": "本文报道了月之暗面发布的 Kimi-K2-Instruct，这是一个重要的开放权重模型，可能是同类模型中最大的，具有 1 万亿个总参数和一个混合专家架构（MoE）。它强调了该模型使用与加州大学洛杉矶分校（UCLA）共同开发的 Muon 优化器进行训练。作者提供了一个通过月之暗面的 API（应用程序接口）访问和提示该模型的实际示例。讨论的一个关键方面是该模型的修改后的 MIT 许可证，其中包括一个非 OSI 兼容的条款，要求对大型商业应用进行署名，这为开放权重模型的应用开启了新的篇章。",
+  "mainPoints": [
+    {
+      "point": "月之暗面发布了 Kimi-K2-Instruct，可能是最大的开放权重混合专家架构。",
+      "explanation": "该模型具有 1 万亿个总参数，在开放权重大型语言模型（LLM）的规模上实现了突破，标志着该领域的重大进步。"
+    },
+    {
+      "point": "该模型使用 Muon 优化器进行训练，表明采用了先进的训练技术。",
+      "explanation": "采用可扩展的 Muon 优化器，并在与加州大学洛杉矶分校（UCLA）的联合论文中详细介绍，突显了用于训练如此大规模大型语言模型（LLM）的复杂方法。"
+    },
+    {
+      "point": "Kimi-K2-Instruct 具有独特的、非 OSI 兼容的修改后的 MIT 许可证。",
+      "explanation": "该许可证要求在大型商业产品中醒目地展示 'Kimi K2' 字样。这为开放权重模型的商业部署引入了一项新颖且具有潜在影响的条件。"
+    }
+  ],
+  "keyQuotes": [
+    "月之暗面今日发布了其最新的大型开放权重模型，这是一家成立两年的中国 AI 实验室，其名称灵感来自 Pink Floyd 的专辑《月之暗面》。",
+    "它是一个混合专家模型，具有“320 亿个激活参数和 1 万亿个总参数”，使用 Muon 优化器进行训练，如月之暗面与加州大学洛杉矶分校（UCLA）的联合论文《Muon is Scalable for LLM Training》中所述。",
+    "我认为这可能是最大的开放权重模型？DeepSeek v3 是 671B。",
+    "我们所做的唯一修改是，如果该软件（或其任何衍生作品）用于您的任何商业产品或服务，这些产品或服务每月活跃用户超过 1 亿，或每月收入超过 2000 万美元（或等值的其他货币），则您应在此类产品或服务的用户界面上醒目地显示 'Kimi K2'。"
+  ],
+  "tags": [
+    "大型语言模型",
+    "月之暗面",
+    "Kimi-K2-Instruct",
+    "混合专家架构",
+    "开放权重"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 270,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1752258834000,
+  "publishDateStr": "2025-07-11",
+  "publishDateTimeStr": "2025-07-11 18:33:54"
+}

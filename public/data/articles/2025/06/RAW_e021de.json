@@ -1,0 +1,63 @@
+{
+  "id": "RAW_e021de",
+  "title": "打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准",
+  "url": "https://www.qbitai.com/2025/06/292027.html",
+  "date": "2025-06-09 09:47:33",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"44\">UNITE团队 投稿<br class=\"sysbr\">\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">多模态检索是信息理解与获取的关键技术，但其中的<strong>跨模态干扰</strong>问题一直是一大难题。</p>\n  <p data-track=\"3\">可行的解决办法是<strong>构建一种统一的多模态表示方式</strong>，为此，来自快手与东北大学的研究人员推出了<strong>多模态统一嵌入框架——UNITE</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/254e9ef2-aaf0-43ed-0719-a00ea28ef900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/254e9ef2-aaf0-43ed-0719-a00ea28ef900/public\">\n  </div>\n  <p data-track=\"4\">UNITE的核心目标，就是构建一个能同时处理文本、图像、视频及其融合模态输入的统一嵌入器。</p>\n  <p data-track=\"5\">它从数据策划与训练机制两个关键视角出发，用对比学习的机制重新定义了统一多模态表示学习的范式。</p>\n  <p data-track=\"6\">在细粒度检索、指令检索等多个评测中，UNITE框架都斩获了最佳成绩。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0b47bb01-327d-4faf-73aa-70b1a21a9500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0b47bb01-327d-4faf-73aa-70b1a21a9500/public\">\n  </div>\n  <p data-track=\"8\">在多模态检索任务中，不同模态（文本、图像、视频）天然存在分布差异。</p>\n  <p data-track=\"9\">如果在训练时将所有模态混合进行对比学习，会导致表示空间产生语义扭曲或干扰噪声，影响模型对各模态语义的准确建模。</p>\n  <p data-track=\"10\">为了解决这一挑战，UNITE团队提出了<strong>Modal-Aware Masked Contrastive Learning</strong>（MAMCL）这一对比学习机制，能显著缓解跨模态“相互干扰”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e74b3ba2-b3ff-4fe7-9d5b-956bf422a300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e74b3ba2-b3ff-4fe7-9d5b-956bf422a300/public\">\n  </div>\n  <p data-track=\"11\">在传统InfoNCE损失下，模型会尝试最大化正样本对之间的相似度，并最小化其与负样本之间的相似度：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ba778327-4cf8-4acd-8adc-6b800429ac00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ba778327-4cf8-4acd-8adc-6b800429ac00/public\">\n  </div>\n  <p data-track=\"12\">但这种方式<strong>不能区分模态组合</strong>，例如，一个query的正样本为文本模态，但其负样本可能是图像、视频或者其他模态组合。这可能导致模型用图像来学文本相似度，产生模态冲突。</p>\n  <p data-track=\"13\">MAMCL的核心思想是模态掩码约束，也就是只在与当前query目标模态一致的负样本中进行对比，从而避免模态间的错误竞争。</p>\n  <p data-track=\"14\">给定一个批次中个query，每个query（）对应一个正样本和个负样本，构造相似度矩阵：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ca74a8ce-bde3-4cbe-799b-1eb921ac0600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ca74a8ce-bde3-4cbe-799b-1eb921ac0600/public\">\n  </div>\n  <p data-track=\"15\">其中是第个候选样本，是温度系数。</p>\n  <p data-track=\"16\">接下来引入模态掩码矩阵，用于标记候选样本与正样本模态是否一致：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/981b869d-4888-4faf-305e-ac09c0569700/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/981b869d-4888-4faf-305e-ac09c0569700/public\">\n  </div>\n  <p data-track=\"17\">其中表示提取候选样本的模态标签（例如 text, image, video, text+video）。</p>\n  <p data-track=\"18\">然后，构造模态感知掩码相似度矩阵:</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2c6a2b70-154e-4a0c-80f5-e7863793c000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2c6a2b70-154e-4a0c-80f5-e7863793c000/public\">\n  </div>\n  <p data-track=\"19\">这一步确保在计算损失时，<strong>仅考虑模态一致的样本</strong>。</p>\n  <p data-track=\"20\">最终，MAMCL损失定义为（p是当前query对应的正样本索引）：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1cd52606-e3cb-4dff-4254-385652819500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1cd52606-e3cb-4dff-4254-385652819500/public\">\n  </div>\n  <p data-track=\"21\">为了平衡泛化能力与判别能力，UNITE采用了<strong>“检索适应 + 指令微调”</strong>的两阶段训练方案：</p>\n  <ul>\n   <li data-track=\"22\">检索适应阶段，使用text-text、text-image、text-video等多模态数据训练模型的基本检索能力，同时引入高粒度视频-文本数据，显著提升模型的细粒度区分能力；</li>\n   <li data-track=\"23\">指令微调阶段，基于MMEB、CoVR等复杂多模态指令任务训练，增强模型的指令遵循能力和扩展性。</li>\n  </ul>\n  <p data-track=\"25\">在细粒度检索、指令检索等多个评测中，UNITE框架都斩获了最佳成绩。</p>\n  <p data-track=\"26\"><strong>图像-文本检索</strong>任务中，在ShareGPT4V、Urban1K和DOCCI上，UNITE显著超越E5-V和VLM2Vec等模型；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b83aeefa-e7b7-4073-d5dd-685f2f9eff00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b83aeefa-e7b7-4073-d5dd-685f2f9eff00/public\">\n  </div>\n  <p data-track=\"27\"><strong>视频-文本检索</strong>方面，UNITE的2B模型在CaReBench三个子任务（General/Spatial/Temporal）中的General和Spatial里超越了前SOTA，7B模型以显著领先水平刷新当前最好表现。</p>\n  <p data-track=\"28\">UNITE 7B在CaReBench上分别达到86.0，86.9，86.5，84.8，52.4，55.4。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/08bf875f-b995-4fd0-7bf6-5d086675ad00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/08bf875f-b995-4fd0-7bf6-5d086675ad00/public\">\n  </div>\n  <p data-track=\"29\"><strong>指令检索</strong>任务里，作者的UNITE系列模型也在多个数据集上表现出色。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90702aac-b008-4fa6-65c7-87e689619b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90702aac-b008-4fa6-65c7-87e689619b00/public\">\n  </div>\n  <p data-track=\"30\">具体来说，在涵盖分类、VQA、检索、定位四类任务共36个数据集的MMEB Benchmark中，UNITE 7B达到了最优性能70.3，超越了更大规模的模型mmE5 11B (69.8) 和IDMR 26B (69.2)。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2be60b7c-31b9-4b8c-4056-459c4aae2300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2be60b7c-31b9-4b8c-4056-459c4aae2300/public\">\n  </div>\n  <p data-track=\"31\">在合成视频检索任务CoVR上，UNITE 2B和UNITE 7B达到了69.1和72.5，均明显领先于现有SOTA模型(60.1)。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6d8bae25-d9f4-435a-4a75-36ee53b68b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6d8bae25-d9f4-435a-4a75-36ee53b68b00/public\">\n  </div>\n  <p data-track=\"32\">为验证其通用性，团队还在多个标准跨模态检索任务上进行了评估。在Flickr30K、MSR-VTT、MSVD、DiDeMo任务上，展现了良好的通用表征能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/afd6a64a-f586-46fa-68d0-ea36eb59ca00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/afd6a64a-f586-46fa-68d0-ea36eb59ca00/public\">\n  </div>\n  <p data-track=\"33\">综合来看，UNITE支持文本、图像、视频及融合模态内容，并展现了综合最优性能。</p>\n  <p data-track=\"34\">其可视化结果如下：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"打破跨模态干扰，快手东北大学联合提出统一多模态框架，横扫多模态检索基准\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c9f07fa-293e-467d-6325-16e64935ea00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c9f07fa-293e-467d-6325-16e64935ea00/public\">\n  </div>\n  <p data-track=\"35\">另外在实验过程当中，作者还有三个关键发现。</p>\n  <p data-track=\"36\">一是<strong>视频-文本数据具备“统一模态”的核心能力</strong>。</p>\n  <p data-track=\"37\">具体来说，视频-文本对数据在所有配置中表现最为突出，不仅在视频检索任务中遥遥领先（如MSR-VTT、MSVD），甚至在图文检索任务中也超越了基于图像-文本对训练的模型。</p>\n  <p data-track=\"38\">二是<strong>指令类任务更依赖文本主导的数据支撑</strong>——</p>\n  <p data-track=\"39\">尽管视频-文本对数据在一般检索任务中表现出色，但在复杂检索指令跟随类任务（如MMEB、CoVR）中，其优势反而不明显。</p>\n  <p data-track=\"40\">这类任务需要模型理解长文本、复杂逻辑或多阶段指令，研究认为，Text–Text数据提升了语言理解与逻辑构建能力，而Text–Image数据提供精准的视觉语义映射，利于模态对齐。</p>\n  <p data-track=\"41\">最后，<strong>细粒度Text-Video样本的添加策略影响巨大</strong>，直接在第一阶段“检索适应”中融合细粒度视频-文本样本，能带来整体性能最优解，相比传统“先对齐后微调”的做法更加有效且高效。</p>\n  <p data-track=\"42\">更多方法和实验细节，请参照论文。</p>\n  <p data-track=\"43\">论文链接：https://arxiv.org/pdf/2505.19650<br>\n    代码链接：https://github.com/friedrichor/UNITE<br>\n    项目链接：https://friedrichor.github.io/projects/UNITE<br>\n    模型/数据链接：https://huggingface.co/collections/friedrichor/unite-682da30c4540abccd3da3a6b</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "快手与东北大学提出 UNITE 多模态统一嵌入框架，通过模态感知对比学习解决跨模态干扰，并在多模态检索基准上取得 SOTA。",
+  "oneSentenceSummary": "快手与东北大学提出 UNITE 多模态统一嵌入框架，通过模态感知对比学习解决跨模态干扰，并在多模态检索基准上取得 SOTA。",
+  "summary": "文章介绍了快手与东北大学联合提出的多模态统一嵌入框架 UNITE，旨在构建一个能同时处理文本、图像、视频及融合模态的统一表示。针对多模态检索中存在的跨模态干扰问题，UNITE 引入了模态感知掩码对比学习（MAMCL）机制，确保只在模态一致的负样本中进行对比，显著缓解了模态冲突。框架采用“检索适应 + 指令微调”两阶段训练方案，融合高粒度视频-文本数据增强细粒度区分能力，并通过复杂指令任务提升指令遵循能力。UNITE 在图像-文本、视频-文本、指令检索等多个主流基准测试中表现出色，尤其在 CaReBench 和 MMEB 上刷新了当前最优成绩，验证了其在统一多模态表示和检索方面的优越性能。研究还发现，视频-文本数据对于构建统一模态表示至关重要，而指令类任务更依赖文本主导数据，同时早期融合细粒度视频-文本样本是有效的训练策略。",
+  "mainPoints": [
+    {
+      "point": "UNITE 框架构建统一多模态嵌入，有效处理多种模态输入。",
+      "explanation": "通过设计一个统一的嵌入器，UNITE 能够将文本、图像、视频及其融合模态映射到同一个表示空间，为多模态理解和检索奠定基础。"
+    },
+    {
+      "point": "模态感知掩码对比学习（MAMCL）显著缓解跨模态干扰。",
+      "explanation": "MAMCL 机制在对比学习中引入模态约束，避免不同模态负样本对表示空间产生的语义扭曲，提高模型对各模态语义建模的准确性。"
+    },
+    {
+      "point": "“检索适应 + 指令微调” 的两阶段训练方案提升模型泛化与判别能力。",
+      "explanation": "结合多模态数据进行检索适应和基于复杂任务进行指令微调，使 UNITE 模型在细粒度区分和复杂指令理解方面均表现优异。"
+    },
+    {
+      "point": "UNITE 在多个多模态检索基准上取得最佳性能。",
+      "explanation": "实验结果表明，UNITE 在图像-文本、视频-文本、指令检索等任务上超越现有 SOTA 模型，验证了其方法的有效性及模型的通用性。"
+    },
+    {
+      "point": "关键实验揭示了数据类型和训练策略对多模态模型性能的重要影响。",
+      "explanation": "研究发现视频-文本数据对统一模态表示有核心作用，指令类任务更依赖文本主导数据，并且早期融合细粒度视频-文本样本是更有效的训练策略。"
+    }
+  ],
+  "keyQuotes": [
+    "多模态检索是信息理解与获取的关键技术，但其中的跨模态干扰问题一直是一大难题。",
+    "可行的解决办法是构建一种统一的多模态表示方式，为此，来自快手与东北大学的研究人员推出了多模态统一嵌入框架——UNITE。",
+    "Modal-Aware Masked Contrastive Learning（MAMCL）这一对比学习机制，能显著缓解跨模态\"相互干扰\"。",
+    "为了平衡泛化能力与判别能力，UNITE 采用了\"检索适应 + 指令微调\"的两阶段训练方案。",
+    "视频-文本对数据在所有配置中表现最为突出，不仅在视频检索任务中遥遥领先，甚至在图文检索任务中也超越了基于图像-文本对训练的模型。"
+  ],
+  "tags": [
+    "多模态模型",
+    "多模态检索",
+    "深度学习",
+    "计算机视觉",
+    "自然语言处理"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2129,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749462453000,
+  "publishDateStr": "2025-06-09",
+  "publishDateTimeStr": "2025-06-09 09:47:33"
+}

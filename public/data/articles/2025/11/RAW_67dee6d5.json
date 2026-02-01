@@ -1,0 +1,55 @@
+{
+  "id": "RAW_67dee6d5",
+  "title": "Helm 4 发布：六年来的重大更新，改进 Kubernetes 包管理",
+  "url": "https://www.infoq.com/news/2025/11/helm-4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-30 21:30:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Helm, the Kubernetes application package manager, has <a href=\"https://www.cncf.io/announcements/2025/11/12/helm-marks-10-years-with-release-of-version-4/\">officially reached version 4.0.0</a>. Helm 4 is the first major upgrade in six years, and also marks Helm's 10th anniversary under the guidance of the Cloud Native Computing Foundation (CNCF). The update aims to address several challenges around scalability, security, and developer workflow.</p>\n   <p>Helm 4's SDK features several enhancements designed to enhance integration and developer experience. It adopts modern Go logging interfaces to facilitate multi-logger support and allows Helm's functionality to be embedded directly into other applications through embeddable commands. Helm 4 also now offers native support for server-side apply (a Kubernetes feature that moves the logic from the <tt>kubectl apply</tt> command into the API server). This change reflects a broader trend in that direction in the Kubernetes ecosystem, ensuring that integrations built on top of Helm are both powerful and physically coherent with modern cluster behaviour.</p>\n   <p><img alt=\"Helm Website, with Helm 4 Overview\" style=\"width: 600px; height: 321px;\" data-src=\"https://www.infoq.com/news/2025/11/helm-4/news/2025/11/helm-4/en/resources/1Screenshot From 2025-11-30 21-09-45-1764537293094.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/helm-4/en/resources/1Screenshot From 2025-11-30 21-09-45-1764537293094.png\" rel=\"share\"></p>\n   <p>The plugin system has also been rebuilt: traditional Helm plugins still function, but users can now also write plugins in WebAssembly (WASM) for broader portability. Additionally, there are improvements in chart distribution, performance, and mechanisms for chart signing and testing automation.</p>\n   <p>These changes reflect both new features and a revisiting of design debt accumulated during the Helm v3 era, according to a <a href=\"https://rimusz.net/exploring-the-helm-v4-development-process-and-potential-features/\">blog post</a> by Helm co-founder Rimantas Mocevicius.</p>\n   <p><a href=\"https://helm.sh/community/hips/hip-0012\">HIP-0012</a> (Helm Improvement Proposal), the proposal guiding Helm 4, set a schedule beginning with planning in late 2024, followed by engineering through mid-2025 and release by November 2025. It emphasised feature development that the team could deliver in a reasonable timeframe, carefully introducing breaking changes. Improvements targeting Kubernetes integration, such as server-side apply (SSA), modern plugin architecture, and chart API refinements, were part of the roadmap. Problems with contributor engagement and maintenance backlog were also recognised and addressed via process improvements.</p>\n   <p>From the broader user perspective, Jimmy Song, <a href=\"https://jimmysong.io/blog/helm-4-delivery-and-plugin-rebuild/\">writing on his blog</a>, captures how the release \"moves beyond a templating tool\" and modernises Helm. He suggests that adding SSA aligns it much closer with GitOps methods, and that having reproducible builds, WASM for plugins, and tools like kstatus for status parsing bring it up to date with the modern Kubernetes paradigm. Song suggests that these changes mean that Helm is shifting from being more than a chart renderer to being more of a deployment orchestrator.</p>\n   <p>One of the more contentious issues in the Helm ecosystem concerns support for Custom Resource Definitions (CRDs). A <a href=\"https://github.com/helm/community/pull/379/files\">proposal</a> for more robust CRD updating behaviour, including merging new versions, appending to version lists, preserving metadata, and ensuring rollback paths for backwards compatibility, has been submitted for inclusion. However, as of Helm 4's initial release, these proposals have not been incorporated. Helm still installs CRDs placed in a special `crds/` directory at chart installation, but will not to upgrade or delete CRDs through its normal upgrade process. <a href=\"https://keda.sh/troubleshooting/helm-upgrade-crd/\">Existing documentation</a> warns that updated CRDs in the crds folder are skipped with only warnings, not applied.</p>\n   <p>Community feedback reflects disappointment at this omission. In <a href=\"https://www.reddit.com//r/kubernetes/comments/1ova60o/release_helm_v400_helmhelm/\">a Reddit discussion</a> shortly after the release, users asked if CRD behaviour had improved. One user commented \"Still no improvements on the CRD front? ::(\" noting that Helm remains unable to safely manage CRD lifecycles. Another user reported that their organisation's tooling and CLI workflows rely on annotation-based CRDs, and adapting to any changes in Helm's CRD logic will be non-trivial.</p>\n   <p>Other commentary, <a href=\"https://blog.stackademic.com/helm-4-is-finally-here-but-argocd-solved-its-biggest-problem-3-years-ago-15352bcb70ad\">such as that from Heinan Cabouly</a>, argues that GitOps tools like Argo CD had already solved some of Helm's biggest workflow gaps years earlier, implying Helm 4 feels more like catch‑up than reinvention. Helm 4 is, however, still acknowledged as a significant milestone that improves the project's long‑term viability rather than an incremental patch.​</p>\n   <p>Practitioners and bloggers have welcomed Helm 4's deployment safety improvements, especially new readiness-based controls that reduce race conditions between dependent components during rollouts. Pierre-Louis Gueugnon, <a href=\"https://enix.io/en/blog/helm-4/,\">writing for Enix</a>, praises the smarter, content-based chart cache and performance improvements, which are seen as practical quality-of-life upgrades for teams doing frequent, large-scale deployments.​</p>\n   <p>Looking forward, the Helm maintainers have indicated that features not initially adopted for v4 may be considered in minor releases or even Helm 5. The community will be watching closely for when CRD upgrades become safe, stable, and documented enough to be broadly adopted.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Helm Improves Kubernetes Package Management with Biggest Release in 6 Years\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/helm-4/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764538200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Helm 4.0.0 是六年来的首次重大升级，实现了 Kubernetes 包管理的现代化，主要体现在增强的软件开发工具包 (SDK)、WebAssembly 插件和服务器端应用 (SSA)。CRD 管理仍然面临挑战。",
+  "oneSentenceSummary": "Helm 4.0.0 是六年来的首次重大升级，实现了 Kubernetes 包管理的现代化，主要体现在增强的软件开发工具包 (SDK)、WebAssembly 插件和服务器端应用 (SSA)。CRD 管理仍然面临挑战。",
+  "summary": "Kubernetes 包管理器 Helm 发布里程碑式的 4.0.0 版本，迎来 10 周年，并着力解决可扩展性、安全性和开发者工作流程方面的长期挑战。新版本主要增强功能包括：现代化的 Go SDK，方便集成和嵌入命令；原生支持 Kubernetes 服务器端应用 (SSA)，与 GitOps 实践对齐；重建的插件系统，支持 WebAssembly (WASM)，提高可移植性。性能改进、Chart 分发和自动化测试机制也是更新的一部分。然而，一个核心问题仍然是缺乏对自定义资源定义 (CRD) 生命周期管理的强大支持，这引起了社区的失望。尽管有批评者认为 Argo CD 等 GitOps 工具已经弥补了 Helm 的一些差距，Helm 4 仍然被广泛认为是提高项目长期可行性和部署安全性的关键里程碑。新版本尤其引入了基于就绪状态的控制。预计未来的次要版本或 Helm 5 将解决悬而未决的 CRD 管理问题。",
+  "mainPoints": [
+    {
+      "point": "Helm 4 引入了重要的现代化功能，如原生服务器端应用 (SSA) 和 WebAssembly (WASM) 插件。",
+      "explanation": "服务器端应用 (SSA) 使 Helm 与现代 Kubernetes 和 GitOps 范例保持一致，增强部署一致性。WebAssembly (WASM) 插件则为扩展 Helm 的功能提供了更大的可移植性和灵活性。"
+    },
+    {
+      "point": "该版本通过增强 SDK 功能和优化性能，着力提升可扩展性、安全性和开发者工作流程效率。",
+      "explanation": "现代化的 Go SDK、基于内容的 Chart 缓存和基于就绪状态的控制共同提升了 Kubernetes 上的应用程序部署体验，使其更强大、高效和安全。"
+    },
+    {
+      "point": "CRD 生命周期管理仍然是一个未解决的问题，导致社区不满。",
+      "explanation": "尽管是主要版本，Helm 4 仍然无法安全地管理 CRD 升级或删除，导致用户不得不绕过 Helm 的正常流程来管理 CRD，这是未来需要改进的关键领域。"
+    }
+  ],
+  "keyQuotes": [
+    "Helm 4 是六年来的首次重大升级，也标志着 Helm 在云原生计算基金会 (CNCF) 的指导下成立 10 周年。",
+    "这一变化反映了 Kubernetes 生态系统中更广泛的趋势，旨在确保构建在 Helm 之上的集成既强大，又能与现代集群的行为保持一致。",
+    "CRD 方面还是没有改进吗？::( 看来 Helm 还是没法安全地管理 CRD 生命周期啊。",
+    "然而，Helm 4 仍然被认为是提高项目长期可行性的重要里程碑，而不是增量补丁。",
+    "Helm 4 的部署安全改进受到了从业者和博主的欢迎，特别是新的基于就绪状态的控制，能有效减少部署期间依赖组件之间的竞争。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "Helm",
+    "Kubernetes 包管理",
+    "云原生",
+    "GitOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 700,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764538200000,
+  "publishDateStr": "2025-11-30",
+  "publishDateTimeStr": "2025-11-30 21:30:00"
+}

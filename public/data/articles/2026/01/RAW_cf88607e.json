@@ -1,0 +1,58 @@
+{
+  "id": "RAW_cf88607e",
+  "title": "Google 发布 Gemma 3 270M 变体：专为移动端和边缘设备的函数调用而优化",
+  "url": "https://www.infoq.com/news/2026/01/functiongemma-edge-function-call/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-26 10:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/functiongemma/\">FunctionGemma</a> is a new, lightweight version of the Gemma 3 270M model, fine-tuned to translate natural language into structured function and API calls, enabling AI agents to \"do more than just talk\" and act.</p>\n   <p><a href=\"https://developers.googleblog.com/en/introducing-gemma-3-270m/\">Launched a few months ago</a>, Gemma 3 270M has evolved into FunctionGemma by gaining native function call capabilities in response to developer demand.</p>\n   <p>Running locally allows the model to function either as an independent agent for private, offline tasks or as an \"intelligent traffic controller\" that routes more complex requests to larger, remote models.</p>\n   <blockquote>\n    <p>This is particularly compelling on-device, where agents can automate complex, multi-step workflows, from setting reminders to toggling system settings. To enable this at the edge, models must be lightweight enough to run locally and specialized enough to be reliable.</p>\n   </blockquote>\n   <p>Rather than being intended for zero-shot prompting, FunctionGemma is designed to be further customized into fast, private, on-device agents capable of translating natural language into executable API actions, Google explains. This approach is key to achieving production-ready level performance.</p>\n   <blockquote>\n    <p>In our \"Mobile Actions\" evaluation, fine-tuning transformed the model’s reliability, boosting accuracy from a 58% baseline to 85%.</p>\n   </blockquote>\n   <p>The model is engineered to run efficiently on resource-constrained devices like mobile phones and NVIDIA Jetson Nano. It uses Gemma's 256k vocabulary to tokenize JSON and multilingual inputs efficiently.</p>\n   <p>FunctionGemma supports what Google calls \"unified action and chat\", enabling it to generate structured code/function calls to execute tools and then switch back to natural language to explain the results to the user.</p>\n   <p>Google also notes that FunctionGemma offers broad ecosystem support, allowing fine-tuning with frameworks such as Hugging Face Transformers, Unsloth, Keras or NVIDIA NeMo and deployment via LiteRT-LM, vLLM, MLX, Llama.cpp, Ollama, Vertex AI or LM Studio.</p>\n   <p>Google clearly outlines the conditions under which FunctionGemma is the preferred option, including having a defined API surface, being willing to fine-tune it, prioritizing local-first deployment, or building a complex system that can combine on-device and remote tasks.</p>\n   <p>To showcase the model in action, Google has published several demos, including Mobile Actions, TinyGarden, and Physics Playground, all accessible through the <a href=\"https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery\">Google AI Edge Gallery app</a> available on the Play Store.</p>\n   <p>Mobile Actions parses natural language commands like \"Create a calendar event for lunch tomorrow,\", \"Add John to my contacts\", or Turn on the flashlight\", and maps them to corresponding OS-level tool calls.</p>\n   <p>TinyGarden is a voice-controlled game where players give natural language commands like \"Plant sunflowers in the top row and water them\". The model breaks that down into specific function calls like <code>plantCrop</code> and <code>waterCrop</code> with coordinate targets.</p>\n   <p>Physics Playground is an interactive physics puzzle demo that uses natural language instructions to control simulation actions within the game. This demos uses Transformer.js to showcase client-side JavaScript integration.</p>\n   <p>FunctionGemma is available on <a href=\"https://huggingface.co/google/functiongemma-270m-it\">Hugging Face</a> or <a href=\"https://www.kaggle.com/models/google/functiongemma\">Kaggle</a>. Google also provides a <a href=\"https://github.com/google-gemini/gemma-cookbook/blob/main/FunctionGemma/%5BFunctionGemma%5DFinetune_FunctionGemma_270M_for_Mobile_Actions_with_Hugging_Face.ipynb\">Colab notebooks</a> and a <a href=\"https://huggingface.co/datasets/google/mobile-actions\">mobile-actions dataset</a> to help developers specialize the model</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Releases Gemma 3 270M Variant Optimized for Function Calling on Mobile and Edge Devices\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/functiongemma-edge-function-call/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1769421600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出了 FunctionGemma，这是一个拥有 270M 参数的模型，专门为移动端和边缘设备的本地函数调用而优化，填补了自然语言与可执行 API 操作之间的空白。",
+  "oneSentenceSummary": "Google 推出了 FunctionGemma，这是一个拥有 270M 参数的模型，专门为移动端和边缘设备的本地函数调用而优化，填补了自然语言与可执行 API 操作之间的空白。",
+  "summary": "FunctionGemma 是 Gemma 3 270M 模型的一个专门化、轻量级变体，旨在将自然语言转化为结构化的函数和 API 调用。它专为手机和 NVIDIA Jetson Nano 等资源受限的环境设计，解决了对可靠、低延迟且私密的设备端智能体的需求。该模型具有“统一操作与对话”能力，使其能够在执行工具和以自然语言解释结果之间切换。Google 强调，虽然其基准准确率为 58%，但通过微调可以将生产级移动操作的性能提升至 85%。此次发布包含了对 Hugging Face 和 vLLM 等框架的广泛生态支持，以及语音控制游戏和操作系统级自动化工具等实用演示。",
+  "mainPoints": [
+    {
+      "point": "FunctionGemma 将轻量级 LLM 从对话工具转变为可执行操作的智能体。",
+      "explanation": "通过针对结构化输出对 270M 参数模型进行微调，Google 使小型硬件能够执行复杂的 API 调用，而不仅仅是生成文本。"
+    },
+    {
+      "point": "微调对于在边缘设备上实现生产级可靠性至关重要。",
+      "explanation": "在移动操作评估中，该模型的准确率在微调后从 58% 跃升至 85%，证明了专门化是小型模型实现可靠运行的关键。"
+    },
+    {
+      "point": "该模型充当了混合 AI 架构中的“智能流量控制器”。",
+      "explanation": "它可以在本地处理私密的简单任务，同时将复杂请求路由到更大的远程模型，从而兼顾隐私和性能。"
+    },
+    {
+      "point": "广泛的生态兼容性确保了开发者采用的低门槛。",
+      "explanation": "对 Hugging Face、Llama.cpp 和 Ollama 等行业标准工具的支持，使开发者能够轻松地将 FunctionGemma 集成到现有工作流中。"
+    }
+  ],
+  "keyQuotes": [
+    "FunctionGemma 是 Gemma 3 270M 模型的一个全新轻量级版本，经过微调可将自然语言转化为结构化的函数和 API 调用。",
+    "在我们的“移动操作”评估中，微调改变了模型的可靠性，将准确率从 58% 的基准提升到了 85%。",
+    "本地运行允许模型既可以作为处理私密、离线任务的独立智能体，也可以作为“智能流量控制器”，将更复杂的请求路由到更大的远程模型。",
+    "为了在边缘端实现这一目标，模型必须足够轻量以在本地运行，并且足够专门化以保证可靠性。"
+  ],
+  "tags": [
+    "FunctionGemma",
+    "边缘 AI",
+    "设备端 LLM",
+    "函数调用",
+    "Gemma 3"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 474,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769421600000,
+  "publishDateStr": "01-26",
+  "publishDateTimeStr": "2026-01-26 10:00:00"
+}

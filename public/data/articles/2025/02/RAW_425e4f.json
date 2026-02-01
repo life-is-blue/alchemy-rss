@@ -1,0 +1,53 @@
+{
+  "id": "RAW_425e4f",
+  "title": "分布式多模式数据库 Aerospike 8 引入 ACID 实时事务支持",
+  "url": "https://www.infoq.com/news/2025/02/aerospike-database-8-acid/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-16 15:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://aerospike.com/press-release/aerospike-8-delivers-the-first-real-time-distributed-acid-transaction/\">Aerospike has announced version 8.0 of its distributed multi-modal database</a>, bringing support for distributed ACID transactions. This enables large-scale online transaction processing (OLTP) applications like banking, e-commerce, inventory management, health care, order processing, and more, says the company.</p>\n   <p><span style=\"box-sizing: border-box; margin: 0px; padding: 0px;\">As Aerospike director of product, Ronen Botzer explains, large-scale applications all require some horizontal scaling to support the concurrent load and reduce latency, which inevitably brings the&nbsp;<a href=\"https://en.wikipedia.org/wiki/CAP_theorem\" target=\"_blank\">CAP Theorem</a>&nbsp;into play.</span></p>\n   <p>The CAP theorem states that when a network partitions due to some failure, a distributed system may be either consistent or available. In contrast, both of these properties can be guaranteed in the absence of partitions. <a href=\"http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed\">For distributed database systems, the theorem led to RDBMS usually choosing consistency via ACID, with NoSQL databases favoring availability</a> following the BASE paradigm.</p>\n   <p>Belonging to the NoSQL camp, Aerospike was born as an AP (available and partition-tolerant) datastore. Later, it introduced support for ACID with its fourth release by allowing developers to select whether a namespace runs in a high-availability AP mode or a high-performance CP mode. CP mode in Aerospike is known as strong consistency (SC) and provides sequential consistency and linearizable reads, guaranteeing consistency for single objects.</p>\n   <blockquote>\n    <p>While Aerospike pre-8.0 has been great at satisfying the requirements of internet applications [...] limiting SC mode to single-record and batched commands left something to be desired. The denormalization approach works well in a system where objects are independent of each other [...] but in many applications, objects actually do have relationships between them.</p>\n   </blockquote>\n   <p>As Botzer explained, the existence of relationships between objects makes transactions necessary, and many developers had to build their own transaction mechanism on top of a distributed database. This is why Aerospike built native distributed transaction capabilities into Database 8, which meant providing <a href=\"https://jepsen.io/consistency/models/strong-serializable\">strict serializability</a> for multi-record updates without hampering performance.</p>\n   <p>Aerospike distributed transactions have a cost, which includes four extra writes and one extra read, so it is important to understand the performance implications they have. Tests based on <a href=\"https://github.com/lerocha/chinook-database\">Luis Rocha’s Chinook</a> database showed results in line with those extra operations, meaning that smaller transactions are affected most while overhead is amortized in larger ones. All in all, says Botzer,</p>\n   <blockquote>\n    <p>Transactions perform well <a href=\"https://aerospike.com/docs/server/guide/transactions-create#best-practices\">when used judiciously</a> together with single-record read and write workloads.</p>\n   </blockquote>\n   <p>ACID transactions display properties designed to ensure the reliability and consistency of database transactions, i.e., atomicity, consistency, isolation, and durability. They guarantee that database operations are executed correctly. If there is any failure, the database can recover to its previous state without losing any data or impacting the consistency of the data. BASE systems opt instead for being Basically Available, Soft-stated, and Eventually consistent, thus giving up on consistency.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Distributed Multi-Modal Database Aerospike 8 Brings Support for Real-Time ACID Transactions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/aerospike-database-8-acid/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1739718000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Aerospike 8.0 发布，引入分布式 ACID 事务支持，适用于大规模 OLTP 应用，提升数据一致性。",
+  "oneSentenceSummary": "Aerospike 8.0 发布，引入分布式 ACID 事务支持，适用于大规模 OLTP 应用，提升数据一致性。",
+  "summary": "Aerospike 8.0 版本引入了分布式 ACID 事务支持，旨在满足大规模在线事务处理 (OLTP) 应用的需求，如银行、电商等。此前，Aerospike 作为 NoSQL 数据库，属于 AP (Availability and Partition Tolerance，可用性和分区容错性) 阵营，现在开始支持 ACID 事务，这是一个显著的演进。虽然之前版本通过强一致性 (Strong Consistency， SC) 模式提供了一定程度的 ACID 支持，但仅限于单记录和批量命令。新版本通过提供多记录更新的严格可串行化 (strict serializability)，解决了对象间存在关系时的事务需求。虽然分布式事务会带来额外的读写开销 (四次额外写入和一次额外读取)，但官方表示在合理使用的情况下，性能表现良好。",
+  "mainPoints": [
+    {
+      "point": "Aerospike 8 在 NoSQL 数据库中引入分布式 ACID 事务，扩展应用场景",
+      "explanation": "新特性使 Aerospike 支持需强一致性保证的大规模 OLTP 应用，如金融交易和库存管理。"
+    },
+    {
+      "point": "CAP 理论在分布式数据库设计中至关重要",
+      "explanation": "网络分区时，分布式系统需在一致性和可用性间权衡，Aerospike 提供 AP 和 CP 两种模式选择。"
+    },
+    {
+      "point": "分布式事务需谨慎使用，权衡性能开销",
+      "explanation": "Aerospike 8 提供 ACID 事务，但会带来额外读写操作，需在性能和一致性间权衡。"
+    }
+  ],
+  "keyQuotes": [
+    "Aerospike has announced version 8.0 of its distributed multi-modal database， bringing support for distributed ACID transactions.",
+    "Transactions perform well [when used judiciously] together with single-record read and write workloads.",
+    "While Aerospike pre-8.0 has been great at satisfying the requirements of internet applications [...] limiting SC mode to single-record and batched commands left something to be desired."
+  ],
+  "tags": [
+    "数据库",
+    "database",
+    "分布式系统",
+    "distributed system",
+    "ACID事务"
+  ],
+  "topicTag": "architecture",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 441,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739718000000,
+  "publishDateStr": "2025-02-16",
+  "publishDateTimeStr": "2025-02-16 15:00:00"
+}

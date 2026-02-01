@@ -1,0 +1,59 @@
+{
+  "id": "RAW_cd552c29",
+  "title": "2025 回顾：软件开发变革之年",
+  "url": "https://www.docker.com/blog/2025-recap-the-year-software-development-changed-shape/",
+  "date": "2025-12-20 05:45:02",
+  "author": "Srini Sekaran",
+  "siteName": "Docker",
+  "content": "<html>\n <head></head>\n <body>\n  <p>2025 was the year software teams stopped optimizing models and started optimizing systems.</p>\n  <p>By December, a few truths were impossible to ignore.</p>\n  <h2 class=\"wp-block-heading\" id=\"1-developer-productivity-became-the-real-competitive-advantage\"><strong>1. Developer Productivity Became the Real Competitive Advantage</strong></h2>\n  <p>By mid-year, every major AI lab had cleared the “good enough reasoning” bar. With model quality converging, the differentiator was no longer raw intelligence. It was how fast teams could ship.</p>\n  <p>The fastest teams used systems that were:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Declarative:</strong> automation defined in YAML and config, not code</li>\n   <li><strong>Composable:</strong> agents calling tools with minimal glue</li>\n   <li><strong>Observable:</strong> evaluated, traced, and versioned&nbsp;</li>\n   <li><strong>Reproducible:</strong> identical behavior every run</li>\n  </ul>\n  <p>Productivity became a platform problem, not a talent problem.</p>\n  <h2 class=\"wp-block-heading\" id=\"2-security-went-from-filters-to-blast-radius\"><strong>2. Security Went From “Filters” to “Blast Radius”</strong></h2>\n  <p>The real problem wasn’t what models say. It was what they could do.</p>\n  <p>Once agents can act, blast radius matters more than the prompt.</p>\n  <p>Production incidents across the industry made it clear:</p>\n  <ul class=\"wp-block-list\">\n   <li>Agents leaking internal data within minutes</li>\n   <li>Malicious plugins shipping ransomware</li>\n   <li>Supply-chain bugs in AI tooling&nbsp;</li>\n   <li>Agents deleting repos or months of work</li>\n  </ul>\n  <p>Smart teams adopted the same guardrails they use for privileged system processes:</p>\n  <ul class=\"wp-block-list\">\n   <li>Sandboxed runtimes</li>\n   <li>Containerized toolchains</li>\n   <li>Signed artifacts</li>\n   <li>Policies in front of tool calls</li>\n   <li>Hardened bases and reproducible builds</li>\n  </ul>\n  <p>The industry stopped filtering danger out of the model. They focused on containing it.</p>\n  <h2 class=\"wp-block-heading\" id=\"3-agents-stopped-being-demos\"><strong>3. Agents Stopped Being Demos&nbsp;</strong></h2>\n  <p>Agents became good enough to do real jobs.</p>\n  <p>At the start of the year, “agent” meant a clever prototype. By the end, agents were doing operational work: updating infrastructure, resolving customer issues, moving money, managing SaaS tools.</p>\n  <p>Two shifts unlocked this:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Reasoning took a leap.</strong><strong> \n     <br> \n    </strong>OpenAI’s <a href=\"https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/\" rel=\"nofollow noopener\" target=\"_blank\">o3 solved 25%</a> of FrontierMath, problems that take researchers hours or days. DeepSeek sent waves with their R1 model, proving that the frontier moved from model size to compute at inference time.\n    <br></li>\n   <li><strong>Tools became standardized.</strong><strong> \n     <br> \n    </strong>MCP became the USB-C port of AI, a universal way for agents to safely access tools, data, and workflows. Once the ecosystem aligned on a common port, everything accelerated.</li>\n  </ul>\n  <h2 class=\"wp-block-heading\" id=\"4-containers-quietly-remained-the-execution-layer-for-everything\"><strong>4. Containers Quietly Remained the Execution Layer for Everything</strong></h2>\n  <p>Containers continued doing the quiet work of powering every stack.</p>\n  <p>More than 90% of companies used containers as the default environment where:</p>\n  <ul class=\"wp-block-list\">\n   <li>Applications run</li>\n   <li>Build systems operate</li>\n   <li>Agents execute real tasks</li>\n   <li>Infrastructure is tested before hitting production</li>\n  </ul>\n  <p>Even in an agent-driven world, developers need environments that act the same way every time. Containers remained a universal, stable execution surface.\n   <br></p>\n  <h2 class=\"wp-block-heading\" id=\"5-hardened-images-became-the-new-starting-point\"><strong>5. Hardened Images Became the New Starting Point</strong></h2>\n  <p>You can’t trust the system if you don’t trust the base image.&nbsp;</p>\n  <p>Docker Hardened Images (DHI) solved the first question every team had to ask: “What are we actually running?”&nbsp;</p>\n  <p>DHI answered that with:</p>\n  <ul class=\"wp-block-list\">\n   <li>A known, verified base image</li>\n   <li>A transparent bill of materials</li>\n   <li>Reproducible builds</li>\n   <li>Signed artifacts</li>\n  </ul>\n  <p>When <a href=\"https://www.docker.com/blog/docker-hardened-images-for-every-developer/\" id=\"dkr_hardened-images-became-free-84255\">hardened images became free</a>, the cost of doing the right thing dropped to zero. Teams no longer layered security patches on top of unknown upstream risk. They began from a secure, trusted baseline.</p>\n  <h1 class=\"wp-block-heading\"><strong>What’s Next for 2026</strong></h1>\n  <p>The race for raw model intelligence is over. What separates winners in 2026 will be everything <em>around</em> the model.</p>\n  <ol class=\"wp-block-list\">\n   <li><strong>Agents become a standard runtime target. </strong>Versioned and deployed like services.</li>\n   <li><strong>Security frameworks treat agents as users. </strong>With permissions, onboarding, and monitoring.</li>\n   <li><strong>Ecosystem gravity increases</strong>. MCP is the start. The dominant tool interface becomes the center of the agent economy.</li>\n   <li><strong>Trust becomes infrastructure. </strong>Signed models to verified tools to hardened bases. Winners will have the smallest blast radius when things break.</li>\n   <li><strong>The term “AI engineer” fades</strong>. What remains is what has always been: software engineers who build secure, governable, and resilient systems.</li>\n  </ol>\n  <p>In 2023, we learned to talk to models. In 2024, we learned to chain them. In 2025, we gave them real power.</p>\n  <p>2026 will be about earning the right to keep it.</p>\n </body>\n</html>",
+  "aiSummary": "文章回顾了 2025 年，软件开发重心从优化 AI 模型转向优化整个系统，强调了开发者生产力、安全性、智能体实际应用以及容器的持久作用。",
+  "oneSentenceSummary": "文章回顾了 2025 年，软件开发重心从优化 AI 模型转向优化整个系统，强调了开发者生产力、安全性、智能体实际应用以及容器的持久作用。",
+  "summary": "本文回顾了 2025 年作为软件开发的关键一年，它标志着重心从优化 AI 模型转向优化整个系统。文章强调了涌现出的五个关键事实：首先，随着 AI 模型质量趋于一致，开发者生产力成为主要的竞争优势；其次，安全性从过滤模型输出演变为通过强化系统防护来遏制智能体的“影响范围”（blast radius）；再次，AI 智能体由于推理飞跃和 MCP 等标准化工具，已从演示转变为执行实际操作工作；然后，容器仍然是——从应用程序到智能体任务——一切的通用执行层；最后，强化镜像（例如 Docker 强化镜像）成为新的安全开发起点。展望 2026 年，文章预测成功将取决于模型周边的基础设施，智能体将成为标准运行时目标，拥有强大的安全框架，通过标准化接口增加生态系统凝聚力，实现基础设施层信任，并重新强调“软件工程师”而非“AI 工程师”在构建安全和弹性系统中的作用。",
+  "mainPoints": [
+    {
+      "point": "随着 AI 模型质量趋于一致，开发者生产力成为真正的竞争优势。",
+      "explanation": "随着 AI 模型达到“足够好的推理”水平，通过声明式、可组合、可观测和可重现的系统快速交付软件的能力变得至关重要，生产力瓶颈从人才层面转向平台层面。"
+    },
+    {
+      "point": "安全性从过滤威胁转向遏制自主智能体的影响范围（blast radius）。",
+      "explanation": "随着智能体获得行动能力，焦点从仅仅过滤模型输 H 出转向实施强大的系统级防护，如沙箱运行时和签名工件，以防止智能体造成损害或数据泄露。"
+    },
+    {
+      "point": "AI 智能体从原型发展为执行关键操作任务。",
+      "explanation": "AI 推理的显著进步（例如 OpenAI 的 o3 模型解决了 FrontierMath 中 25% 的问题）和工具接口的标准化（如 MCP）使智能体能够可靠地处理基础设施更新、客户服务和金融交易。"
+    },
+    {
+      "point": "容器和强化镜像对于可靠和安全的软件执行仍然至关重要。",
+      "explanation": "尽管 AI 取得了进步，容器仍然是包括 AI 智能体在内的所有软件的通用执行层。强化镜像成为开发的基本安全起点，提供透明、已验证和可重现的基础。"
+    }
+  ],
+  "keyQuotes": [
+    "2025 年是软件团队停止优化模型而开始优化系统的一年。",
+    "生产力成为一个平台问题，而非人才问题。",
+    "一旦智能体能够行动，影响范围（blast radius）比提示更重要。",
+    "MCP 成为了 AI 的 USB-C 接口，是智能体安全访问工具、数据和工作流程的通用方式。",
+    "模型基础智能水平的竞争已经结束。2026 年，区分赢家的是模型周围的一切。"
+  ],
+  "tags": [
+    "软件开发",
+    "AI 智能体",
+    "开发者生产力",
+    "容器化",
+    "安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 618,
+  "domain": "docker.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8de690",
+  "sourceName": "Docker",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766209502000,
+  "publishDateStr": "2025-12-20",
+  "publishDateTimeStr": "2025-12-20 05:45:02"
+}

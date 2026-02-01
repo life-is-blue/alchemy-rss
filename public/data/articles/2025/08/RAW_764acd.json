@@ -1,0 +1,63 @@
+{
+  "id": "RAW_764acd",
+  "title": "关于大模型与软件开发的一些思考",
+  "url": "https://martinfowler.com/articles/202508-ai-thoughts.html",
+  "date": "2025-08-28 14:10:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I’m about to head away from looking after this site for a few weeks (part vacation, part work stuff). As I contemplate some weeks away from the daily routine, I feel an urge to share some scattered thoughts about the state of LLMs and AI.</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>I’ve seen a few early surveys on the effect AI is having on software development, is it really speeding folks up, does it improve or wreck code quality? One of the big problems with these surveys is that they aren’t taking into account <em>how</em> people are using the LLMs. From what I can tell the vast majority of LLM usage is fancy auto-complete, often using co-pilot. But those I know who get the most value from LLMs reckon that auto-complete isn’t very useful, preferring approaches that allow the LLM to directly read and edit source code files to carry out tasks. My concern is that surveys that ignore the different work-flows of using LLMs will produce data that’s going to send people down the wrong paths.</p>\n  <p>(Another complication is the varying capabilities of different models.)</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>I’m often asked, “what is the future of programming?” Should people consider entering software development now? Will LLMs eliminate the need for junior engineers? Should senior engineers get out of the profession before it’s too late? My answer to all these questions is “I haven’t the foggiest”. Furthermore I think anyone who says they know what this future will be is talking from an inappropriate orifice. We are still figuring out how to use LLMs, and it will be some time before we have a decent idea of how to use them well, especially if they gain significant improvements.</p>\n  <p>What I suggest, is that people experiment with them. At the least, read about what others are doing, but pay attention to the details of their workflows. Preferably experiment yourself, and do share your experiences.</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❇&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>I’m also asked: “is AI a bubble”? To which my answer is “OF COURSE IT’S A BUBBLE”. All major technological advances have come with economic bubbles, from canals and railroads to the internet. We know with near 100% certainty that this bubble will pop, causing lots of investments to fizzle to nothing. However what we don’t know is <em>when</em> it will pop, and thus how big the bubble will have grown, generating some real value in the process, before that happens. It could pop next month, or not for a couple of years.</p>\n  <p>We also know that when the bubble pops, many firms will go bust, but not all. When the dot-com bubble burst, it killed pets.com, it killed Webvan… but it did not kill Amazon.</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>I <a href=\"https://martinfowler.com/articles/202106-reducing-speaking.html\">retired from public speaking</a> a couple of years ago. But while I don’t miss the stress of giving talks, I do miss hanging out with my friends in the industry. So I’m looking forward to catching up with many of them at <a href=\"https://gotocph.com/2025\">GOTO Copenhagen</a>. I’ve been involved with the GOTO conference series since the 1990s (when it was called JAOO), and continue to be impressed with how they put together a fascinating program.</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✢&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>My former colleague Rebecca Parsons, has been saying for a long time that hallucinations aren’t a bug of LLMs, they are a feature. Indeed they are <em>the</em> feature. All an LLM does is produce hallucinations, it’s just that we find some of them useful.</p>\n  <p>One of the consequences of this is that we should always consider asking the LLM the same question more than once, perhaps with some variation in the wording. Then we can compare answers, indeed perhaps ask the LLM to compare answers for us. The difference in the answers can be as useful as the answers themselves.</p>\n  <p>Certainly if we ever ask a hallucination engine for a numeric answer, we should ask it at least three times, so we get some sense of the variation. Furthermore we shouldn’t ask an LLM to calculate an answer than we can calculate deterministically (yes, I’ve seen this). It is OK to ask an LLM to generate code to calculate an answer (but still do it more than once).</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Other forms of engineering have to take into account the variability of the world. A structural engineer builds in tolerance for all the factors she can’t measure. (I remember being told early in my career that the unique characteristic of digital electronics was that there was no concept of tolerances.) Process engineers consider that humans are executing tasks, and will sometimes be forgetful or careless. Software Engineering is unusual in that it works with deterministic machines. Maybe LLMs mark the point where we join our engineering peers in a world on non-determinism.</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>I’ve often heard, with decent reason, an LLM compared to a junior colleague. But I find LLMs are quite happy to say “all tests green”, yet when I run them, there are failures. If that was a junior engineer’s behavior, how long would it be before H.R. was involved?</p>\n  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>LLMs create a huge increase in the attack surface of software systems. Simon Willison described the <a href=\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\">The Lethal Trifecta</a> for AI agents: an agent that combines access to your private data, exposure to untrusted content, and a way to externally communicate (“exfiltration”). That “untrusted content” can come in all sorts of ways, ask it to read a web page, and an attacker can easily put instructions on the website in 1pt white-on-white font to trick the gullible LLM to obtain that private data.</p>\n  <p>This is particularly serious when it comes to agents acting in a browser. Read an attacker’s web page, and it could trick the agent to go to your bank account in another tab and “buy you a present” by transferring your balance to the kind attacker. <a href=\"https://simonwillison.net/2025/Aug/25/agentic-browser-security/\">Willison’s view</a> is that “the <em>entire concept</em> of an agentic browser extension is fatally flawed and cannot be built safely”.</p>\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 分享了关于大型语言模型（LLMs）对软件开发影响的见解，批评了相关使用情况调查，指出了人工智能经济泡沫现象，并着重强调了安全风险，尤其是在智能代理浏览器扩展应用中。",
+  "oneSentenceSummary": "Martin Fowler 分享了关于大型语言模型（LLMs）对软件开发影响的见解，批评了相关使用情况调查，指出了人工智能经济泡沫现象，并着重强调了安全风险，尤其是在智能代理浏览器扩展应用中。",
+  "summary": "Martin Fowler 对大型语言模型（LLMs）在软件开发领域的现状和未来影响进行了一系列反思。他质疑了早期关于 LLM 影响评估调查的有效性，认为这些调查通常未能充分考虑除基本代码自动完成之外的各种使用模式，可能导致误导性结论。虽然他对编程的长期未来表示不确定，但他提倡开发者积极尝试 LLMs，并密切观察有效的工作流程。Fowler 坚定地认为，当前的人工智能领域存在经济泡沫，注定会破裂，但同时也将产生具有持久价值的成果。他以一种颇具争议的视角看待 LLM 的生成偏差问题，认为它们是一种基本“特性”而非缺陷，并建议采用重复查询等策略来管理其不确定性。Fowler 还思考了 LLMs 在软件工程中引入不确定性的作用，使其与其他工程学科更加相似。最后，他着重强调了由于 LLMs 导致软件系统受攻击面显著增加所带来的严重安全问题，特别是在智能代理浏览器扩展的背景下，他赞同 Simon Willison 的观点，即此类代理本质上存在缺陷且不安全。",
+  "mainPoints": [
+    {
+      "point": "当前关于 LLM 在软件开发中使用情况的调查通常存在缺陷且具有误导性。",
+      "explanation": "许多调查忽略了简单代码自动完成之外的各种 LLM 工作流程，导致对开发者如何真正利用 LLM 价值的理解不够深入，可能误导未来的应用策略。"
+    },
+    {
+      "point": "大模型时代编程的未来充满不确定性，需要不断试验。",
+      "explanation": "对编程领域的未来发展做出明确预测为时尚早。相反，开发者应该积极尝试 LLMs 并分享经验，以共同探索其最佳应用方式。"
+    },
+    {
+      "point": "当前的人工智能市场是一个经济泡沫，与过去的技术繁荣时期类似。",
+      "explanation": "虽然预计人工智能经济泡沫将会破裂，导致许多公司倒闭，但它也将创造巨大的持久价值，就像互联网泡沫时代一样，一些公司在普遍崩溃中依然蓬勃发展。"
+    },
+    {
+      "point": "LLM 的生成偏差是一种基本特性，而非错误，需要采取适应性使用策略。",
+      "explanation": "鉴于 LLMs 固有的不确定性（即每次运行结果可能不同），用户应多次查询，尤其是在需要精确答案时，并比较结果，以便更好地利用其可变性并提高可靠性。"
+    },
+    {
+      "point": "LLMs 显著增加了软件系统的受攻击面，特别是智能代理浏览器。",
+      "explanation": "“致命三要素”（私有数据访问、不受信任的内容、数据渗漏）使得智能代理浏览器扩展存在致命缺陷，通过复杂且隐蔽的指令造成严重的安全漏洞。"
+    }
+  ],
+  "keyQuotes": [
+    "我担心的是，忽略使用 LLM 的不同工作流程的调查，会产生将人们引入歧途的数据。",
+    "而且，我认为任何说自己知道未来会怎样的人都是在瞎扯。我们仍在摸索如何使用 LLMs，并且在对如何高效利用它们有一个清晰的认识之前，还需要一段时间，特别是当它们取得显著改进时。",
+    "所有重大的技术进步都伴随着经济泡沫，从运河、铁路到互联网，无一例外。我们几乎可以 100% 确定这个泡沫会破裂，导致大量投资付诸东流。",
+    "我的前同事 Rebecca Parsons 长期以来一直认为，生成偏差不是 LLM 的 Bug，而是一种特性。事实上，它们就是 *这个* 特性。LLM 所做的只是生成内容，只不过我们发现其中一些是有用的。",
+    "Willison 认为，智能代理浏览器扩展的 *整个概念* 存在根本性缺陷，无法安全构建。"
+  ],
+  "tags": [
+    "大模型",
+    "软件开发",
+    "人工智能影响",
+    "人工智能安全",
+    "行业趋势"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1004,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756390200000,
+  "publishDateStr": "2025-08-28",
+  "publishDateTimeStr": "2025-08-28 14:10:00"
+}

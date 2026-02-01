@@ -1,0 +1,55 @@
+{
+  "id": "RAW_479e1f",
+  "title": "业界首个高质量原生 3D 组件生成模型来了！来自腾讯混元团队",
+  "url": "https://www.qbitai.com/2025/09/337237.html",
+  "date": "2025-09-27 05:10:36",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"159\">业界首个高质量原生3D组件生成模型来了！来自腾讯混元3D团队。</p>\n  <p data-track=\"160\">现有的3D生成算法通常会生成一体化的3D模型，<strong>而下游应用通常需要语义可分解的3D形状</strong>，即3D物体的每一个组件需要单独地生成出来。</p>\n  <p data-track=\"161\">一般来说，<strong>组件式3D生成</strong>主要有2个应用场景：</p>\n  <p data-track=\"162\"><strong>1） 视频游戏制作管线</strong>： 在游戏中， 很多资产是要根据语意信息将其绑定不同的游戏逻辑， 比如，汽车模型应该能够被分解为主体和四个可滚动的轮子， 这样轮子是可以单独滚动起来的。所以组件拆分很重要。</p>\n  <p data-track=\"163\">与此同时，3D几何生成的下游链路，包括低模拓扑，UV展开等模块。这些模块处理很复杂的几何会变得困难，通过将复杂几何进行拆分简单的小组件，这种分而治之的策略，可以大大降低下游算法的处理难度。</p>\n  <p data-track=\"164\"><strong>2）3D打印</strong>： 这对3D打印行业也是不错的消息， 用户可以把组件一个一个打印出来然后再组装，像搭积木一样。</p>\n  <p data-track=\"165\">然而，现有的组件式3D生成方法通常缺乏足够的可控性，生成部件的几何质量不够理想，并且语义连贯性有限。</p>\n  <p data-track=\"166\">对此，Hunyuan3D-Part提出了一种用于打造可投入生产，几何质量高，可编辑，且结构合理的组件式3D生成新范式。</p>\n  <p data-track=\"167\">下面详细来看。</p>\n  <p data-track=\"169\">如下图所示，给定一张输入图片，团队首先使用Hunyuan3D的基模型获取整体形状<em>（可以是V2.5或者V3.0）</em>。</p>\n  <p data-track=\"170\">然后，将整体Mesh传递给部件检测模块<strong>P3-SAM</strong>，以获得语义特征和部件的边界框<em>（bounding boxes）</em>。</p>\n  <p data-track=\"171\">最后，由<strong>X-Part</strong>将整体形状分解为各个部件。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104017_6daa8bcae51ee40dc34e0c9c51fb3cb4.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104017_6daa8bcae51ee40dc34e0c9c51fb3cb4.jpeg\">\n  </div>\n  <p data-track=\"173\">其技术亮点在于：</p>\n  <p data-track=\"174\">1）提出了业界首个原生3D分割模型P3-SAM， 利用大规模高质量3D数据训练，摆脱对2D数据的依赖，大幅提高3D组件分割的精度和鲁棒性。</p>\n  <p data-track=\"175\">2）提出了工业级组件生成模型X-Part，重新定义3D组件生成可控性和生成质量的天花板。</p>\n  <p data-track=\"177\">以下为P3-SAM和X-Part的详细介绍。</p>\n  <p data-track=\"179\">团队提出了一种原生3D的分割模型，称为<strong>P</strong>oint-<strong>P</strong>romptable&nbsp;<strong>P</strong>art&nbsp;<strong>S</strong>egmentation，即P3-SAM。</p>\n  <p data-track=\"180\">该模型旨在实现对任意复杂三维物体的全自动分割，生成精确掩码并具备极强的鲁棒性。作为开创性的可提示图像分割工作，SAM为实现这一目标提供了可行的方案。</p>\n  <p data-track=\"181\">然而，本方法聚焦于自动实现精确的组件分割，并对SAM的体系结构进行了简化。团队未采用SAM中复杂的分割解码器和多类型提示，仅采用单一正点提示进行处理。</p>\n  <p data-track=\"182\">具体来说，如图2所示，P3-SAM包含一个特征提取器、三个分割头和一个IoU（交并比）预测头。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_5ca53e858debdacac23e4ffa9c3df64f.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_5ca53e858debdacac23e4ffa9c3df64f.jpeg\">\n  </div>\n  <p data-track=\"184\">PointTransformerV3作为特征提取器，并融合其不同层级的特征作为点级特征。输入的点提示和特征信息会被融合，并传递至分割头，用于预测三个多尺度掩码。同时，IoU预测头用于评估掩码质量。</p>\n  <p data-track=\"185\">为实现物体的自动分割，如图3所示，团队利用FPS（最远点采样）生成点提示，配合NMS（非极大值抑制）合并冗余掩码。点级掩码随后被投影到网格面上，从而获得部件分割结果。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_e9b6695db5b41de6a211c67da8532739.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_e9b6695db5b41de6a211c67da8532739.jpeg\">\n  </div>\n  <p data-track=\"187\">本方法的另一关键创新在于，完全摒弃2D SAM的影响，依赖于原生3D部件监督，进行原生3D分割模型的训练。</p>\n  <p data-track=\"188\">鉴于现有3D部件分割数据集规模普遍较小且缺乏详细部件标注，本方案开发了一套用于美术师创建网格的自动化部件标注流程，并据此生成了一个包含370万个高质量部件级掩码的三维网格数据集。</p>\n  <p data-track=\"189\">最终模型在该数据集上展现出优越的可扩展性，并实现了强鲁棒性、精确性及全局一致性的组件级分割。</p>\n  <p data-track=\"191\">X-Part能够实现具有语义意义且结构一致的部件生成。目标是在给定物体点云的情况下，生成高保真、结构一致的部件几何体，同时保证对分解过程的灵活可控性。</p>\n  <p data-track=\"192\">如图4所示，首先利用<strong>P3-SAM得到组件的包围盒，点云语义特征</strong>。 为实现可控性提出了一个基于部件级提示的特征提取模块，利用P3-SAM包围盒作为提示，指示部件的位置和尺寸，而不是直接将分割结果作为输入。</p>\n  <p data-track=\"193\">与细粒度、点级分割提示相比，包围盒提供了一种更粗粒度的引导方式，有助于缓解对输入的过拟合。</p>\n  <p data-track=\"194\">此外，包围盒还为部分可见部件提供了额外的体积信息，从而有利于生成和可控性。</p>\n  <p data-track=\"195\">其次，尽管分割结果可能存在不准确，团队注意到高维点级语义特征并没有受到<strong>P3-SAM</strong>中聚类算法或预测头所导致的信息压缩影响，因此能够提供更准确的语义表示。</p>\n  <p data-track=\"196\">因此，团队将语义特征以精心设计的特征扰动方式引入到其框架中，这有助于实现有意义的部件分解。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_8377c85bb3ecc01645b7c78caa5e260b.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_8377c85bb3ecc01645b7c78caa5e260b.jpeg\">\n  </div>\n  <p data-track=\"199\">本方案在三个数据集上进行了效果评估：PartObj-Tiny、PartObj-Tiny-WT和PartNetE。</p>\n  <p data-track=\"200\">PartObj-Tiny是Objarvse的一个子集，包含8个类别共200个数据样本，并且都带有人工标注的部件分割信息。</p>\n  <p data-track=\"201\">PartObj-Tiny-WT是PartObj-Tiny的闭合水密（watertight）版本。</p>\n  <p data-track=\"202\">如表1（组件分割模型P3-SAM和现有工作对比结果）、表2（组件生成模型X-Part和竞品对比结果）所示，其分割和生成结果大幅超越现有工作。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_9d86b788781f274ad1c00dca27514c2b.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_9d86b788781f274ad1c00dca27514c2b.jpeg\">\n  </div>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_442e52e8a3713cc46cf2ee92f2adb5be.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_442e52e8a3713cc46cf2ee92f2adb5be.jpeg\">\n  </div>\n  <p data-track=\"204\">团队还对模型的分割及生成效果进行了可视化。</p>\n  <p data-track=\"205\">下图为<strong>P3-SAM</strong>的分割结果：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_0657e1150560e29057d642436ab71335.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_0657e1150560e29057d642436ab71335.jpeg\">\n  </div>\n  <p data-track=\"206\">然后是<strong>X-Part</strong>的生成结果：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_8020769f27283a2020c3e239c82871d6.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_8020769f27283a2020c3e239c82871d6.jpeg\">\n  </div>\n  <p data-track=\"207\">下图为X-Part的生成结果， 左中右依次为输入图、混元3D V2.5生成结果、组件拆分结果。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_914f3a4b95c0080f04ff87ce8c86478c.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_914f3a4b95c0080f04ff87ce8c86478c.jpeg\">\n  </div>\n  <p data-track=\"208\">下图为X-Part的生成结果和开源对比：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_40e20c46417b530074c5144defce86dc.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_40e20c46417b530074c5144defce86dc.jpeg\">\n  </div>\n  <p data-track=\"209\">下图为X-Part的生成结果和闭源R模型对比：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927104016_766518b5906c7d3167ec2159d1f2c03f.jpeg\" alt=\"业界首个高质量原生3D组件生成模型来了！来自腾讯混元团队\" data-src=\"https://image.jido.dev/20250927104016_766518b5906c7d3167ec2159d1f2c03f.jpeg\">\n  </div>\n  <p data-track=\"210\">体验地址及相关技术论文如下。</p>\n  <p data-track=\"211\">代码：https://github.com/Tencent-Hunyuan/Hunyuan3D-Part\n   <br>\n   权重： https://huggingface.co/tencent/Hunyuan3D-Part</p>\n  <p data-track=\"212\">P3-SAM论文及项目地址：\n   <br>\n   https://arxiv.org/abs/2509.06784\n   <br>\n   https://murcherful.github.io/P3-SAM/</p>\n  <p data-track=\"213\">X-Part论文及项目地址：\n   <br>\n   https://arxiv.org/abs/2509.08643\n   <br>\n   https://yanxinhao.github.io/Projects/X-Part/</p>\n  <p data-track=\"214\">体验入口：\n   <br>\n   （轻量版）Hugging Face demo：https://huggingface.co/spaces/tencent/Hunyuan3D-Part\n   <br>\n   （满血版）混元3D Studio：https://3d.hunyuan.tencent.com/studio</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "腾讯混元团队发布业界首个高质量原生 3D 组件生成模型 Hunyuan3D-Part，通过 P3-SAM 和 X-Part 实现高精度、可控的语义可分解 3D 形状生成。",
+  "oneSentenceSummary": "腾讯混元团队发布业界首个高质量原生 3D 组件生成模型 Hunyuan3D-Part，通过 P3-SAM 和 X-Part 实现高精度、可控的语义可分解 3D 形状生成。",
+  "summary": "文章详细介绍了腾讯混元团队推出的业界首个高质量原生 3D 组件生成模型 Hunyuan3D-Part。该模型旨在解决现有 3D 生成算法无法提供语义可分解 3D 形状的问题，以满足视频游戏制作管线和 3D 打印等下游应用对组件化模型的需求。Hunyuan3D-Part 包含两个核心模块：P3-SAM，一个利用大规模高质量 3D 数据训练的原生 3D 分割模型，摆脱了对 2D 数据的依赖，大幅提高了 3D 组件分割的精度和鲁棒性；以及 X-Part，一个工业级组件生成模型，能够基于 P3-SAM 提供的包围盒和语义特征，生成高保真、结构一致且可灵活控制的部件几何体。文章通过详细的技术亮点、模型架构、训练方法和评估结果，展示了该模型在组件分割和生成方面显著超越现有工作，为 3D 内容创作和工业应用开辟了新范式，并提供了代码、权重、论文及在线体验地址，具有极高的实践参考价值。",
+  "mainPoints": [
+    {
+      "point": "Hunyuan3D-Part 实现了业界首个高质量原生 3D 组件生成。",
+      "explanation": "通过集成 P3-SAM 和 X-Part，模型能够生成语义可分解的 3D 形状，解决了现有 3D 生成一体化的问题，满足游戏制作和 3D 打印等下游应用对组件化模型的需求。"
+    },
+    {
+      "point": "P3-SAM 摆脱 2D 依赖，大幅提升 3D 组件分割精度和鲁棒性。",
+      "explanation": "该原生 3D 分割模型利用大规模高质量 3D 数据集训练，实现了对复杂三维物体的全自动、精确组件分割，解决了现有方法对 2D 数据依赖的问题。"
+    },
+    {
+      "point": "X-Part 提供工业级组件生成能力，兼顾高保真与可控性。",
+      "explanation": "通过基于部件级提示的特征提取和语义特征扰动，X-Part 能够生成结构一致、几何质量高且可灵活控制的部件几何体，显著超越现有生成模型。"
+    }
+  ],
+  "keyQuotes": [
+    "现有的 3D 生成算法通常会生成一体化的 3D 模型，而下游应用通常需要语义可分解的 3D 形状，即 3D 物体的每一个组件需要单独地生成出来。",
+    "Hunyuan3D-Part 提出了一种用于打造可投入生产，几何质量高，可编辑，且结构合理的组件式 3D 生成新范式。",
+    "提出了业界首个原生 3D 分割模型 P3-SAM， 利用大规模高质量 3D 数据训练，摆脱对 2D 数据的依赖，大幅提高 3D 组件分割的精度和鲁棒性。",
+    "提出了工业级组件生成模型 X-Part，重新定义 3D 组件生成可控性和生成质量的天花板。",
+    "本方法聚焦于自动实现精确的组件分割，并对 SAM 的体系结构进行了简化。团队未采用 SAM 中复杂的分割解码器和多类型提示，仅采用单一正点提示进行处理。"
+  ],
+  "tags": [
+    "3D生成",
+    "计算机图形学",
+    "深度学习",
+    "语义分割",
+    "游戏开发"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2243,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758949836000,
+  "publishDateStr": "2025-09-27",
+  "publishDateTimeStr": "2025-09-27 05:10:36"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_80fa45",
+  "title": "Qwen3 小升级即 SOTA，开源大模型王座快变中国内部赛了",
+  "url": "https://www.qbitai.com/2025/07/311258.html",
+  "date": "2025-07-22 05:05:00",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"35\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"36\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">开源大模型正在进入中国时间。</p>\n  <p data-track=\"3\">Kimi K2风头正盛，然而不到一周，Qwen3就迎来最新升级，235B总参数量仅占Kimi K2 1T规模的四分之一。</p>\n  <p data-track=\"4\">基准测试性能上却超越了Kimi K2。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/58c535fe-ea60-4acb-b398-5c1172f02600/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">Qwen官方还宣布<strong>不再使用混合思维模式</strong>，而是分别训练Instruct和Thinking模型。</p>\n  <p data-track=\"6\">所以，此次发布的<strong>新模型仅支持非思考模式</strong>，现在网页版已经可以上线使用了，但通义APP还未见更新。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/52f3cc0e-75cc-45dc-ebf5-7bba9ea11b00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"206\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">Qwen官方还透露：这次只是一个小更新！大招很快就来了！</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8fefe277-e51e-40cf-139d-c35a47093d00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"180\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"8\">但总归就是，再见Qwen3-235B-A22B，你好<strong>Qwen3-235B-A22B-2507</strong>了。</p>\n  <p data-track=\"9\">By the way，这个名字怎么取得越来越复杂了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c53278a7-5445-49f4-c2fb-3ab67c050e00/public\" data-ic=\"false\" data-width=\"934\" data-height=\"176\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">先来看看这次的“小更新”都有哪些～</p>\n  <p data-track=\"12\">新模型是一款因果语言模型，采用MoE架构，总参数量达235B，其中非嵌入参数为234B，推理时<strong>激活参数为22B</strong>。</p>\n  <p data-track=\"13\">在官方介绍中显示，模型共包含94层，采用分组查询注意力（GQA）机制，配备64个查询头和4个键值头，并设置128个专家，每次推理时激活8个专家。</p>\n  <p data-track=\"14\">该模型原生支持262144的上下文长度。</p>\n  <p data-track=\"15\"><strong>这次改进主要有以下几个方面</strong>：</p>\n  <ul>\n   <li data-track=\"16\">显著提升了通用能力，包括指令遵循、逻辑推理、文本理解、数学、科学、编码和工具使用。</li>\n   <li data-track=\"17\">大幅增加了多语言长尾知识的覆盖范围。</li>\n   <li data-track=\"18\">更好地符合用户在主观和开放式任务中的偏好，能够提供更有帮助的响应和更高质量的文本生成。</li>\n   <li data-track=\"19\">增强了对256K长上下文的理解能力。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1c1d3581-b2ff-48a3-766f-9f7dc08dc200/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"2240\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">在官方发布的基准测试中可以看到，相较于上一版本，新模型在AIME25上准确率从24.7%上升到70.3%，表现出良好的数学推理能力。</p>\n  <p data-track=\"21\">而且对比Kimi K2、DeepSeek-V3，Qwen3新模型的能力也都略胜一筹。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/21b53dab-bb2e-4ab0-4511-d08d78d36a00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">为了提高使用体验，官方还推荐了最佳设置：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/24ff6892-292c-4669-97a6-31c7d8f2fe00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"576\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"23\">Qwen3新版本深夜发布就立刻收获了一众好评：Qwen在中等规模的语言模型中已经领先。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://image.jido.dev/20250722074151_269ee9bd715688b3f97ad5f7e8fa933d.png\" data-ic=\"false\" data-width=\"1064\" data-height=\"256\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">也有网友感慨Qwen在开启新的架构范式：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ac2f09b2-61a9-46fa-17aa-80223b53d200/public\" data-ic=\"false\" data-width=\"1060\" data-height=\"188\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">有趣的是，就在Qwen3新模型发布的前两天，NVIDIA也宣称发布了新的SOTA开源模型<strong>OpenReasoning-Nemotron</strong>。</p>\n  <p data-track=\"27\">该模型提供四个规模：1.5B、7B、14B和32B，并且可以实现100%本地运行。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0361a492-fe96-4fdc-1491-fdc6dd3cb400/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"671\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"28\">但实际上，这只是基于Qwen-2.5在Deepseek R1数据上微调的模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Qwen3小升级即SOTA，开源大模型王座快变中国内部赛了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c6f9a969-f117-443f-c958-f5705eccea00/public\" data-ic=\"false\" data-width=\"1056\" data-height=\"806\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">而现在Qwen3已经更新，大招已经被预告。</p>\n  <p data-track=\"30\">随着Llama转向闭源的消息传出，OpenAI迟迟不见Open，开源基础大模型的竞争，现在正在进入中国时间。</p>\n  <p data-track=\"31\">DeepSeek丢了王座，Kimi K2补上，Kimi K2坐稳没几天，Qwen的挑战就来了。</p>\n  <p data-track=\"32\"><em>体验链接：https://chat.qwen.ai/</em></p>\n  <p data-track=\"33\"><em>参考链接：</em><em><br></em><em>[1]https://x.com/Alibaba_Qwen/status/1947344511988076547</em><em><br></em><em>[2]https://x.com/giffmana/status/1947362393983529005</em></p>\n  <p data-track=\"34\">— 完 —</p>\n  <p data-track=\"38\"><!--版权声明--></p>\n </body>\n</html>",
+  "aiSummary": "Qwen3 最新版本以更小参数量超越 Kimi K2，引领开源大模型 SOTA，中国厂商竞争日趋白热化。",
+  "oneSentenceSummary": "Qwen3 最新版本以更小参数量超越 Kimi K2，引领开源大模型 SOTA，中国厂商竞争日趋白热化。",
+  "summary": "文章详细报道了阿里云 Qwen3 大模型最新版本的发布，该版本采用 MoE 架构，总参数量 235B，激活参数 22B，并在基准测试中超越了 Kimi K2 和 DeepSeek-V3。新版 Qwen3 不再采用混合思维模式，而是分别训练 Instruct 和 Thinking 模型，显著提升了通用能力、多语言长尾知识覆盖、用户偏好符合度以及 256K 长上下文理解能力。文章还指出，随着 Llama 转向闭源和 OpenAI 保持封闭，开源基础大模型的竞争正逐步演变为中国内部赛，Qwen、Kimi、DeepSeek 等厂商持续刷新 SOTA 记录，凸显了中国在开源大模型领域的强劲势头。",
+  "mainPoints": [
+    {
+      "point": "Qwen3 新版以更小参数量实现性能超越，刷新开源模型 SOTA 记录",
+      "explanation": "Qwen3-235B-A22B-2507 在仅四分之一 Kimi K2 参数量的情况下，通过基准测试展现出更优异的性能，尤其在数学推理能力上大幅提升。"
+    },
+    {
+      "point": "Qwen3 架构优化与能力提升，专注于非思考模式训练",
+      "explanation": "新版本采用 MoE 架构，并放弃混合思维模式，转为独立训练 Instruct 和 Thinking 模型，全面增强了通用能力、多语言知识和长上下文理解。"
+    },
+    {
+      "point": "开源大模型竞争格局转向中国内部赛，展现强劲创新力",
+      "explanation": "随着国际巨头转向闭源，中国厂商如 Qwen、Kimi、DeepSeek 在开源大模型领域竞争激烈，持续推出高性能模型，引领行业发展。"
+    }
+  ],
+  "keyQuotes": [
+    "Qwen3 就迎来最新升级，235B 总参数量仅占 Kimi K2 1T 规模的四分之一。基准测试性能上却超越了 Kimi K2。",
+    "Qwen 官方还宣布不再使用混合思维模式，而是分别训练 Instruct 和 Thinking 模型。",
+    "这次改进主要有以下几个方面：显著提升了通用能力，包括指令遵循、逻辑推理、文本理解、数学、科学、编码和工具使用。增强了对 256K 长上下文的理解能力。",
+    "随着 Llama 转向闭源的消息传出，OpenAI 迟迟不见 Open，开源基础大模型的竞争，现在正在进入中国时间。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Qwen3",
+    "开源模型",
+    "MoE架构",
+    "基准测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 94,
+  "wordCount": 1079,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753160700000,
+  "publishDateStr": "2025-07-22",
+  "publishDateTimeStr": "2025-07-22 05:05:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a4111197",
+  "title": "Reddit 将其评论功能的后端从 Python 迁移为 Go 微服务",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266336&idx=4&sn=aced522497c30757cc97bac9d967f108",
+  "date": "2025-12-11 04:31:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 张卫滨 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Reddit 完成了对其评论后端的重大重构，从传统的 Python 系统迁移到了特定领域的 Go 微服务，以提高性能和可靠性。这一变化解决了 Reddit 的最高写入系统中长期存在的延迟和可扩展性挑战，同时为现代化其他核心模型奠定了基础。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">迁移遵循了一个多阶段的策略，旨在保持正确性并最小化用户中断。Reddit 工程师首先在 Go 中实现了所有评论读取端点，并使用 tap-compare 测试方法进行验证。在这种方法中，一部分实时流量被发送到新服务，将其响应与旧的 Python 系统进行比较，并且只将原始响应返回给用户。这使得工程师能够在完全切换流量之前，在生产环境中安全地检测差异。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">写入操作更为复杂，因为评论创建涉及多个数据存储：PostgreSQL 用于持久化，Memcached 用于缓存，Redis 用于 变更数据捕获（change data capture，CDC） 事件。为了防止与生产数据冲突，Reddit 在 tap-compare 测试期间为 Go 服务部署了姊妹数据存储。这些存储镜像了生产环境的模式，但仅用于处理写入的测试，使团队能够在不承担实时数据损坏的风险下验证系统的行为。Reddit 一共测试了三个写入端点，跨越三个数据存储，创建了 18 个单独的验证路径。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img data-imgfileid=\"503782641\" class=\"rich_pages wxw-img\" data-ratio=\"0.6800535475234271\" data-type=\"jpeg\" data-w=\"1494\" style=\"width: 100%;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=115f45dc&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FYriaiaJPb26VPhd6kicD0icKLP8DnNb0AHzibUr9vvQVMcCzCk29d9kyNutnhM4Pj5RdTrpw2BhCjff9kqq9DpxL9Ig%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">在 tap-compare 期间对评论后端进行双重写入（来源：Reddit 工程的帖子）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">迁移也暴露了几个边缘案例，例如，早期序列化不匹配意味着 Python 服务最初无法反序列化由 Go 写入的数据，这通过验证 CDC 事件消费者与旧服务的对比来解决。数据访问的差异性也导致了数据库压力：Python 单体使用 ORM，而 Go 会直接写入，产生了更高的写入放大负载，这通过查询级优化得到了缓解。此外，在 tap-compare 期间，Python 写入生产数据与 Go 写入和比较读取之间发生了竞态条件。工程师通过在运行 tap-compare 之前使用生产派生数据改进本地测试来解决这些问题。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img data-imgfileid=\"503782642\" class=\"rich_pages wxw-img\" data-ratio=\"0.8575305291723202\" data-type=\"png\" data-w=\"1474\" style=\"width: 450px;height: 386px;\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=0f65c7ff&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VPhd6kicD0icKLP8DnNb0AHzibT39fGvAwIsDiaVXCpyM2EeQZl6AXQibowt491d4zGe2rsZfkWcrvqnIA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">在双重写入后进行 tap-compare 验证（来源：Reddit 工程帖子）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">根据 Reddit 团队的说法，新架构简化了评论系统的依赖链，同时为下游系统保持了完整的事件传递保证。转向特定领域的微服务还使平台为进一步分解其他核心服务做好了准备，这些服务是四个核心模型的一部分，几乎涵盖了所有用例：评论、账户、帖子和子版块。截至本文撰写时，这两个模型，即评论和账户，已从 Python 单体完全迁移，而帖子和子版块的迁移正在进行中。一旦完成，所有四个核心模型将在新的微服务架构下实现现代化。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Reddit 的高级软件工程师 Katie Shannon 总结了重写的结果：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">与旧的 Python 系统相比，关键写入操作，以及创建、更新和增加端点的 p99 延迟，减少了一半，旧系统之前曾经历过高达 15 秒的峰值。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">社区反馈显示了更快的评论创建和在高峰流量期间减少的停机时间。Shannon 指出，仔细管理数据一致性和模式演变，解决了并发和 Go 的特定问题。Reddit 基础设施团队补充说，Go 的并发性允许以较少的 pod 实现比 Python 更高的吞吐量，使其成为首选方案。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Reddit Migrates Comment Backend from Python to Go Microservice to Halve Latency</span></span><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">(<a href=\"https://www.infoq.com/news/2025/11/reddit-comments-go-migration/)\" target=\"_blank\">https://www.infoq.com/news/2025/11/reddit-comments-go-migration/)</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Reddit 将其评论后端从 Python 单体架构成功迁移到 Go 微服务，显著提升了 P99 延迟并为其他核心服务的现代化奠定基础。",
+  "oneSentenceSummary": "Reddit 将其评论后端从 Python 单体架构成功迁移到 Go 微服务，显著提升了 P99 延迟并为其他核心服务的现代化奠定基础。",
+  "summary": "本文详细介绍了 Reddit 将其评论功能的后端从传统的 Python 单体架构迁移到 Go 语言微服务的整个过程。为了解决长期存在的延迟和可扩展性问题，Reddit 采取了多阶段策略，首先通过 tap-compare 测试方法验证 Go 服务的所有读取端点，确保与 Python 系统响应一致。对于写入操作，团队通过部署姊妹数据存储进行双重写入测试，规避生产数据风险，并解决了序列化不匹配、数据库压力以及竞态条件等挑战。迁移结果显示，关键写入操作的 P99 延迟降低了一半，且 Go 语言的并发特性使得系统在更少资源下实现更高吞吐量。此次迁移不仅优化了评论系统，也为 Reddit 其他核心模型（如账户、帖子、子版块）的微服务化铺平了道路。",
+  "mainPoints": [
+    {
+      "point": "Reddit 将评论后端从 Python 单体迁移至 Go 微服务以解决性能和可扩展性瓶颈。",
+      "explanation": "此次迁移旨在改善 Reddit 最高写入系统的延迟和可扩展性挑战，通过将大型单体架构分解为 Go 微服务，提升系统的响应速度和处理能力。"
+    },
+    {
+      "point": "迁移采用分阶段策略，并通过 tap-compare 测试确保数据正确性和最小化用户中断。",
+      "explanation": "先验证读取端点，再处理复杂的写入操作，利用姊妹数据存储进行测试，有效避免了生产环境风险，保证了迁移的平稳进行。"
+    },
+    {
+      "point": "Go 微服务架构显著降低了关键写入操作的 P99 延迟，并提升了系统吞吐量。",
+      "explanation": "与旧的 Python 系统相比，Go 服务的 P99 延迟减少了一半，同时 Go 的并发特性使得系统能够以更少的资源处理更高的请求量，提升了整体效率和用户体验。"
+    },
+    {
+      "point": "本次迁移为 Reddit 其他核心服务的现代化和微服务化奠定了基础。",
+      "explanation": "成功将评论和账户模型迁移至微服务，验证了该策略的有效性，为帖子和子版块等其他核心功能的持续重构指明了方向。"
+    }
+  ],
+  "keyQuotes": [
+    "Reddit 完成了对其评论后端的重大重构，从传统的 Python 系统迁移到了特定领域的 Go 微服务，以提高性能和可靠性。",
+    "Reddit 工程师首先在 Go 中实现了所有评论读取端点，并使用 tap-compare 测试方法进行验证。",
+    "与旧的 Python 系统相比，关键写入操作，以及创建、更新和增加端点的 p99 延迟，减少了一半，旧系统之前曾经历过高达 15 秒的峰值。",
+    "Go 的并发性允许以较少的 pod 实现比 Python 更高的吞吐量，使其成为首选方案。"
+  ],
+  "tags": [
+    "微服务",
+    "架构迁移",
+    "Go语言",
+    "Python",
+    "后端开发"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1135,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765427460000,
+  "publishDateStr": "2025-12-11",
+  "publishDateTimeStr": "2025-12-11 04:31:00"
+}

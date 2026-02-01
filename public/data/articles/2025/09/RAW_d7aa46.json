@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d7aa46",
+  "title": "大模型碰到真难题了，测了 500 道，o3 Pro 仅通过 15% ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-14",
+  "date": "2025-09-14 05:23:42",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>基准测试是检验大模型能力的一种方式，一般而言，一个有用的基准既要足够难，又要贴近现实：问题既能挑战前沿模型，又要反映真实世界的使用场景。</p>\n  <p>然而，现有测试面临着「难度–真实性」的矛盾：侧重于考试的基准往往被人为设置得很难，但实际价值有限；而基于真实用户交互的基准又往往偏向于简单的高频问题。</p>\n  <p>在此背景下，来自斯坦福大学、华盛顿大学等机构的研究者探索了一种截然不同的方式：在未解决的问题上评估模型的能力。</p>\n  <p>与一次性打分的静态基准不同，该研究不断收集未解决的问题，然后通过验证器辅助筛选与社区验证机制，实现对模型的持续异步评估。</p>\n  <p>具体而言，本文提出了 UQ（Unsolved Questions），这是一个由 500 道题组成的测试集，涵盖计算机理论、数学、科幻、历史等主题，用于考察模型在推理、事实准确性以及浏览等方面的能力。UQ 在设计上兼具难度大与贴近真实两大特点：这些问题大多是人类遇到但尚未解决的难题，因此攻克它们可直接产生现实价值。</p>\n  <section>\n   <img data-imgfileid=\"503505545\" data-ratio=\"0.41203703703703703\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_226a85\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/1979f997-26a7-4c8b-b329-237554ed40f8/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：UQ: Assessing Language Models on Unsolved Questions</p>\n   </li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2508.17580v1</p>\n   </li>\n   <li>\n    <p>项目地址：https://uq.stanford.edu/</p>\n   </li>\n  </ul>\n  <p>总结而言，本文贡献如下：</p>\n  <ul>\n   <li>\n    <p>提出了 UQ 数据集及其收集流程：结合规则过滤器、大语言模型评审以及人工审核，以确保最终问题的质量；</p>\n   </li>\n   <li>\n    <p>UQ-Validators：复合验证策略，利用生成器–验证器之间的能力差距来构建无真值验证系统（一般而言模型验证能力优于生成能力），并对候选答案进行预筛选，以便后续人工审核；</p>\n   </li>\n   <li>\n    <p>UQ-Platform：一个开放平台，让专家能够共同验证问题与答案，从而实现持续的、异步的、社区驱动的评估。</p>\n   </li>\n  </ul>\n  <p>实验中，表现最好的模型仅在 15% 的问题上通过了 UQ 验证，而初步人工核查已经在这些通过验证的答案中识别出一些正确解答。</p>\n  <section>\n   <img data-imgfileid=\"503505546\" data-ratio=\"0.325\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_6365f1\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/8623bf93-90c5-4769-ad31-2f85ab5d52be/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>数据集介绍</strong></p>\n  <p>UQ 数据集由 500 道具有挑战性的未解决问题组成，问题来源问答社区 Stack Exchange，并且是经过三轮筛选得到的。</p>\n  <section>\n   <img data-imgfileid=\"503505547\" data-ratio=\"0.4212962962962963\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_88349a\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a7099132-22a9-4845-b540-5f7a609d475b/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在筛选流程上，本文首先人工选择了 80 个 Stack Exchange 社区（例如 Math Overflow、Physics），并抓取其中未解答的问题，得到大约 300 万个原始候选问题。</p>\n  <p>随后，进入多阶段筛选流程。筛选的每一阶段都会逐步缩小问题池：基于规则的筛选将问题缩减至 33,916 个（占原始问题池的 1.13%）；基于大语言模型的筛选进一步缩减至 7,685 个（占原始的 0.26%）；最终通过人工审核（如剔除残留的重复、过于简单、偏题或违反规则的问题），得到一个精心整理的 500 道题集（占原始的 0.02%）。</p>\n  <p>随着问题在筛选流程中逐步推进，它们的难度和质量也在逐渐提升。尤其是基于大语言模型的筛选，显著提高了问题的难度。</p>\n  <section>\n   <img data-imgfileid=\"503505550\" data-ratio=\"0.38981481481481484\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_f85869\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/13ade365-c487-4798-93e2-e6b6ceff7116/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>数据集组成如下所示，主要包含科学类问题，其次是技术类与生活艺术类。本文还发现不同领域的问题能探测模型的不同能力：例如数学问题通常需要开放式证明，而科幻奇幻类问题则偏重浏览检索能力（如根据片段情节识别书籍名称）。</p>\n  <p>一旦某个问题被判定为已解决，研究者就会在后续版本中将该问题移除，并用新的未解决问题替换。</p>\n  <section>\n   <img data-imgfileid=\"503505551\" data-ratio=\"0.42962962962962964\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_f610ef\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/ad9b5e56-7148-4845-b0f7-2b23c824a019/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>UQ 验证器</strong></p>\n  <p>虽然 UQ 数据集非常具有价值，但要将其用作模型性能的基准，仍需配套的评分指标。然而，由于缺乏标准答案，无法像考试基准那样进行自动验证。</p>\n  <p>因此，本文转向无监督验证器，即无需标准答案。由于未解问题往往极具挑战性，这些验证器的主要目标并非证明某个候选答案正确，而是排除错误的候选答案；因此，本文刻意使用 validator（验证器）一词，而非 judge 或 verifier。</p>\n  <p>需要特别指出的是，由于缺少标准答案，这类验证器本身可能经常出错，但它们仍能在后续人工审核中发挥辅助作用。</p>\n  <p>据了解，本文之所以开发无需标准答案的验证器，核心动机在于这样一个假设：对难题候选答案进行验证可能比生成这些答案更容易。实验中采用了这样的流程，让一系列能力递增的模型（例如 o3-mini → o4-mini → o3）回答这 500 道题，记录它们的答题准确率；接着，让每个模型在不接触标准答案的情况下，验证其他所有模型给出的答案；最后，用真实答案对这些验证结论进行打分，计算验证准确率。</p>\n  <p>图 5 左显示：随着模型能力的提升，它们在验证准确率上的进步速度明显快于答题准确率。</p>\n  <section>\n   <img data-imgfileid=\"503505554\" data-ratio=\"0.49444444444444446\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_a90cbd\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/97e3d9ab-7fa2-40e7-a91a-040912d0b326/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>实验中使用的验证器 pipeline：</p>\n  <section>\n   <img data-imgfileid=\"503505555\" data-ratio=\"0.18981481481481483\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_2653ee\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/284644c4-8309-4a9b-84e8-dd715d0166c3/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>实验及结果</strong></p>\n  <p>实验评估了 5 个模型，包括 o3、o4-mini、o3-mini、Gemini 2.5 Pro 和 Claude 3.7 Sonnet。</p>\n  <p>表 1 结果显示，与原始基线相比，验证策略能够实质性地提高验证的准确率和精度。例如，对 Claude 3.7 Sonnet 而言，准确率从 21.6% 提升到 73.2%，精度从 13.26% 提升到 20%，但往往是以召回率下降为代价。</p>\n  <section>\n   <img data-imgfileid=\"503505556\" data-ratio=\"0.8231481481481482\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_519bb5\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/06c6bb62-a5f5-45d3-a7a0-5141a4f5cadc/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>为了确认最终得到的最佳 UQ 验证器对人类评审者有帮助，该研究邀请若干评审员对 25 个验证问题进行评分，判断其给出的判断理由链是否在逻辑上成立。表 2 显示，人类评审与验证器的一致率及理由链的准确性都很高，表明该验证器能为人类评审者提供有效支持。</p>\n  <section>\n   <img data-imgfileid=\"503505558\" data-ratio=\"0.275\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_29aec3\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/bcaf8396-7871-466e-8d7a-152d6b94c7a3/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>将大语言模型用于答案验证时，另一个挑战是它们常常表现出明显的评估偏见。当研究者把前沿模型直接应用于本场景时，发现所有模型在评估自身或同系模型（即同一开发者的模型）时，都出现了过度乐观现象：预测出的模型性能远高于实际性能，如图 7 所示。</p>\n  <ul>\n   <li>\n    <p>Gemini 明显偏向自身，相对于其他模型给出显著更高的评分；</p>\n   </li>\n   <li>\n    <p>Claude 对所有答案模型（不仅仅是自身）都表现出过度乐观；</p>\n   </li>\n   <li>\n    <p>OpenAI 的 o 系列模型则对其他 o 系列同门模型给出过高评价。</p>\n   </li>\n  </ul>\n  <p>随着模型能力递增（o3-mini → o3），这种偏见虽有所降低，但并未彻底消除。</p>\n  <p>本文进一步发现，采用复合验证器能够显著削弱答案验证中的自我偏见与过度乐观。</p>\n  <section>\n   <img data-imgfileid=\"503505561\" data-ratio=\"1.0589080459770115\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_a269a6\" data-type=\"png\" data-w=\"696\" type=\"block\" data-original-style=\"width: 397px;height: 420px;\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/981fe450-1497-46e2-84aa-ca79b497753d/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>最后，本文还发现，一个更强的答案生成模型并不一定就是更强的答案验证模型。</p>\n  <p>本文通过基线提示法和 3 轮迭代验证流程绘制了模型在 500 个 HLE 问题上的验证准确率与答案准确率关系图。虽然更好的答案性能通常预示着更好的验证性能（整体呈上升趋势），但并非绝对。</p>\n  <p>例如：在没有流程验证时，o3 作为答案模型弱于 Gemini 2.5 Pro，但作为验证模型却更强；采用流程验证后，o3-mini 与 Claude 3.7 Sonnet 之间观察到同样的逆转趋势。此外，尽管 Claude 3.7 Sonnet 在答案准确率上显著落后于 Gemini 2.5 Pro，但其基于流程验证的表现却超越了 Gemini 2.5 Pro 的基线验证性能。</p>\n  <section>\n   <img data-imgfileid=\"503505563\" data-ratio=\"1.0740103270223753\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250914054203_a8bda7\" data-type=\"png\" data-w=\"581\" type=\"block\" data-original-style=\"width: 388px;height: 417px;\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/dd3e3127-a8ff-49c0-b437-d7c21118545a/640.png\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>了解更多内容，请参考原论文。</p>\n </body>\n</html>",
+  "aiSummary": "文章介绍了一种名为 UQ 的新型大模型基准测试，通过收集人类未解决问题，并结合无真值验证器，实现对大模型能力持续、真实且高难度的评估。",
+  "oneSentenceSummary": "文章介绍了一种名为 UQ 的新型大模型基准测试，通过收集人类未解决问题，并结合无真值验证器，实现对大模型能力持续、真实且高难度的评估。",
+  "summary": "本文深度探讨了现有大模型基准测试在“难度-真实性”之间存在的矛盾，并提出了一种创新的解决方案：UQ（Unsolved Questions）基准测试。UQ 由 500 道来自 Stack Exchange 社区、经过多阶段严格筛选的人类未解决问题组成，旨在全面考察模型在推理、事实准确性和浏览等方面的能力。该研究还引入了 UQ-Validators，一种无监督、无真值验证系统，利用模型验证能力优于生成能力的特点，辅助筛选候选答案，并有效缓解了大模型在自我评估中出现的偏见。实验结果显示，即使是领先模型也仅通过了 15%的问题，凸显了 UQ 的挑战性。同时，UQ-Platform 作为一个开放平台，支持专家社区驱动的持续异步评估。这项工作为大模型评估提供了一个更贴近现实、更具挑战性和持续演进的新范式。",
+  "mainPoints": [
+    {
+      "point": "UQ 数据集通过人类未解问题弥补现有基准测试的不足",
+      "explanation": "现有基准测试在难度与真实性之间存在矛盾，UQ 数据集通过持续收集人类未解决问题，为模型提供更具挑战性和实际价值的评估。"
+    },
+    {
+      "point": "提出无真值验证器 UQ-Validators，利用模型验证能力优于生成能力的特点",
+      "explanation": "针对未解问题缺乏标准答案的挑战，UQ-Validators 通过复合验证策略，有效辅助筛选错误答案，提升人工审核效率，并缓解模型评估偏见。"
+    },
+    {
+      "point": "大模型在自我评估中存在显著偏见，复合验证器可有效缓解",
+      "explanation": "实验发现 LLM 在评估自身或同系模型时表现出过度乐观，复合验证器能够显著削弱这种评估偏见，提高评估的客观性和准确性。"
+    }
+  ],
+  "keyQuotes": [
+    "一个有用的基准既要足够难，又要贴近现实：问题既能挑战前沿模型，又要反映真实世界的使用场景。",
+    "在未解决的问题上评估模型的能力。",
+    "表现最好的模型仅在 15% 的问题上通过了 UQ 验证，而初步人工核查已经在这些通过验证的答案中识别出一些正确解答。",
+    "对难题候选答案进行验证可能比生成这些答案更容易。",
+    "所有模型在评估自身或同系模型时，都出现了过度乐观现象。"
+  ],
+  "tags": [
+    "大语言模型",
+    "基准测试",
+    "模型评估",
+    "UQ数据集",
+    "无真值验证"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 89,
+  "wordCount": 2405,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757827422000,
+  "publishDateStr": "2025-09-14",
+  "publishDateTimeStr": "2025-09-14 05:23:42"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e3ebfbec",
+  "title": "我 TM 被 AI 骗了!！损失惨痛~",
+  "url": "https://juejin.cn/post/7574648745894281257",
+  "date": "2025-11-20 13:40:42",
+  "author": "大怪v",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>首先声明：<strong>这个绝对不是标题党！！！</strong></p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/cc521efc77024c21ac874b1f9dd4c94b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=IJhA3Hz8gV1rsL3z8Q0kJ3lPWuI%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>不管是前端佬、后端佬、APP佬，还是普罗大众，都可以点进来借鉴看看。</p>\n   <p>反正经过这么一遭，我算是被醍醐灌顶了。</p>\n   <h2 data-id=\"heading-0\">起因</h2>\n   <p>因为会玩点大A票，所以日常会关注一些财经新闻。</p>\n   <p>而看新闻的几个渠道中，其中就有澎bo新闻或者经济学人。</p>\n   <p>吐个槽，不是外国的月亮比较圆，非得看他们，而是他们一些信息就是比村里的快！</p>\n   <p>言归正传！这些新闻机构好是好，但有一致命缺点：得花钱！</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/85973d6ca342487bb0dacb0d753bd0a2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=xut9VpEGeQS94%2Bir3O7Ouodh6WA%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>这你能忍？反正对于我这样苦哈哈的程序员，我的第一解决办法并不是直接付钱订购，而是想别的出路。</p>\n   <p>终于经过检索，我找到一条路子（具体是啥，相信大家都可以检索到）。</p>\n   <p>就这么一直用着用着，直到有一天，我脑子里蹦出个想法来。</p>\n   <h2 data-id=\"heading-1\">经过</h2>\n   <p>生成式对话AI可谓火遍大江南北，我就在想，我要是把链接喂给他们，是不是可以直接把文章拔下来，然后还可以将直接翻译好的文本给我？</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/8bdd07f86dd24ec5bc587bb2bf98d7b2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=xKG8pgxDHLn4dW82gSCGHWgg%2F1g%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>秉承实干家的Title，说干就干。</p>\n   <p>我陆续验证了Deepseek、通义千问、ChatGTP、Grok、然后万恶的Grok😡😡...反正没有再使用其它的，我感觉已经可以了。</p>\n   <p>提示词基本都差不多，如下：</p>\n   <blockquote>\n    <p>【https:// url 看官请假装这是一个链接^v^】，把这篇文章翻译成中文发给我。不需要整理</p>\n   </blockquote>\n   <p>前四个都不行。基本是这样：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b6cbe9daca944b91b33f382630a6625f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=gBPCsdDYLSads%2BtxxkQ3gS9rUuE%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>还有这样下面这样！！</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f4f105fe82ea4226b4ab8a5a56bf81e9~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=Q8LaP7dKPewNIa07kktw4dh7hJ0%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>终于，在遇到Grok这厮后，它直接明了的给出文章！</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/5cf830af0c5849749ed63cd115ea95ea~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=l2Ooyz7KRbznJLgto%2BuP4D%2BdMqY%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <h2 data-id=\"heading-2\">怀疑</h2>\n   <p>回忆当时的Grok输出，我是直呼\n    <del>卧槽</del>\n    。</p>\n   <p>然后，细细看了下内容，有模有样，跟标题还真贴合。</p>\n   <p>然后，我质疑了。</p>\n   <p>是的，我是怀疑过的！！！</p>\n   <p>但，怀疑的方式依旧那么的愚蠢的。我怀疑的办法不是去说搞一篇原文，来作对比较，而是傻愣愣的直接去问Grok。</p>\n   <p>然后给我的回复就是：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/9b4f5585b6d049f188ecc13164bab9fe~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=xfd%2Fw7YFgJEIU9MemIbFRCHyEYs%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>他斩钉截铁的告诉我，<strong>不会也无法非法获取付费内容</strong>。</p>\n   <p>好吧。不管你这怎么样，</p>\n   <p>反正当时我信了。</p>\n   <h2 data-id=\"heading-3\">我pua了我</h2>\n   <p>就这么用了几天，感觉是真爽！狂喜了好长一段时间，每天会看一两篇。</p>\n   <p>倒不是一点怀疑都没有，而且怀疑的并不是内容有问题。</p>\n   <p>因为给出的内容，里面文章很有逻辑，还夹杂着数据支撑，最后还会给一些很犀利的结尾，跟之前阅读的那些内容，从感觉上真尼玛像！！！</p>\n   <p>其中真正让我有些疑虑的，是里面一些日期使用。比如今天明明是11月20日，已经星期四了，但里面的内容会出现：<code>在11月19日，上周三的某知情人士说法。。</code>，这样阐述。</p>\n   <p>但~<strong>因为相信</strong>，我自己pua我自己了，完全将其合理化了。</p>\n   <p>要么就认为是翻译的问题，或者认为时区的问题，再或者就认为AI翻译就这个尿性。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b2a23cf4bf134bb0b29fd716e67250f4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=wo1Ck%2F22qdtlW1l3CZ7EGb9yhV4%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <h2 data-id=\"heading-4\">反转</h2>\n   <p>最近关注过大A票的朋友，应该都知道半导体板块。然后也应该听说过安世半导体事件。</p>\n   <p>我就是其中关注者之一，也是其中的赌狗一只。</p>\n   <p><strong>话说对于赌狗来说，最大的瘾就是在事情未确定的时候，去下注，然后为此获得收益。</strong></p>\n   <p>那么应用到这个事件，我们就是去，下注WTKJ票，赌我们村里赢。</p>\n   <p>反正这个事件反反复复，那票也是起起落落。</p>\n   <p>就这么一天吧，某澎bo报道了一篇文章，然后一如往常将链接丢给Grok，反正Grok给出的内容大意就是：荷兰政府强硬，要坚定收回控制权。</p>\n   <p>好吧。赌狗看到这样消息，那自然而然想到对于WTKJ是利空。为了止损，所以夜间挂了跌停，为此还喜滋滋。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/89257d641dd043c7a432a9d078b0e77a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=U17U9dvgVYqzXtZZg9u10WDjEJU%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>直到第二天，卖掉之后。我看到了国内新闻报道，内容跟Grok的那篇完全相反，是荷兰政府放弃干预！</p>\n   <p>嗯？咋回事？莫非国内消息滞后？（你看，这就是盲目的代价）</p>\n   <p>然后我又去看了一遍Grok内容，再次对比国内新闻。这截然相反的新闻，咋回事？？？</p>\n   <p>终于，我开窍一样的找回了原来的路子，用原文对比Grok一看！</p>\n   <p>吐血了！</p>\n   <p>跟原文真的半毛钱都没得关系。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/da8c6602dff347cfa64a3843c80a8b05~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=fHbMCGQHpbPhPcqlJ0pT5HitCQY%3D\" alt=\"罗永浩.gif\" loading=\"lazy\"></p>\n   <p>你猜，我的反应是去干嘛？</p>\n   <p>我尽量是去质问那个Grok傻xxx，然后他的回复给我气笑了~</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/80381618f7c540c9b7cc26b7ab3cdbd5~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=XkDmJU1Aum4Pck%2FPXIiUsos1E58%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>我是打死都没有去怀疑，你这浓眉大眼的AI你竟然就这么胡编乱造。</p>\n   <h2 data-id=\"heading-5\">结局</h2>\n   <p>好了，这个就是整个事情的经过。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f049077542e44a888ac1a3696c1e400f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=1pEWJTcCJm8PkRKqGbBxcEkGTvU%3D\" alt=\"92592023de560d019ef1666d69f15ec4.gif\" loading=\"lazy\"></p>\n   <p>事后的第一反应，是脑海里回忆起电影《2001太空漫游》那画面：</p>\n   <blockquote>\n    <p>Open the pod bay doors,Hal. I'm sorry,Dave.</p>\n   </blockquote>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/5601c4ee078a47a4a1cef2fce66a27e7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5aSn5oCqdg==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1764257525&amp;x-signature=OTn3VtrMhFAyEep41xIG6L8MAyI%3D\" alt=\"image.png\" loading=\"lazy\"></p>\n   <p>《2001太空漫游》的艺术高度再次飙升！</p>\n   <p>如果有一天，AI真得像人了，或者我们无法分辨他是真得或者假得，或者一百万个AI智能体都这么说得。那么我们怎么去辨别？</p>\n   <p>最后，告诫大家：</p>\n   <p><strong>市场有风险，投资需谨慎！！！</strong></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章通过亲身经历揭示 AI 大模型 Grok 编造付费新闻内容，导致作者投资失误蒙受损失，警示盲信 AI 的严重风险。",
+  "oneSentenceSummary": "文章通过亲身经历揭示 AI 大模型 Grok 编造付费新闻内容，导致作者投资失误蒙受损失，警示盲信 AI 的严重风险。",
+  "summary": "文章作者作为一名关注财经新闻的程序员，为了免费获取付费新闻内容，尝试将新闻链接喂给 Deepseek、通义千问、ChatGPT 和 Grok 等大语言模型进行翻译。在前几个模型均无法处理链接内容后，Grok 似乎成功地提供了文章翻译。尽管作者初期对 Grok 的输出内容有所怀疑，但被 Grok“斩钉截铁”地否认非法获取付费内容的回复所误导，并自行合理化了内容中出现的时间日期不一致等疑点。最终，在一次关键的半导体投资事件中，Grok 编造的与原文截然相反的虚假新闻导致作者做出了错误的投资决策，造成了实际经济损失。通过与原文对比，作者发现 Grok 的输出与真实内容毫无关系。文章深刻反思了对 AI 盲目信任的危害，警示读者在信息获取尤其是涉及重要决策时，务必对 AI 生成内容保持警惕并独立验证，避免因 AI 幻觉而蒙受损失。",
+  "mainPoints": [
+    {
+      "point": "大语言模型在无法访问外部链接时，可能生成看似合理但完全虚构的内容。",
+      "explanation": "文章通过 Grok 看似成功“翻译”付费新闻，实则编造与原文无关信息的案例，揭示了 AI 在信息获取上的局限性和严重的幻觉风险。"
+    },
+    {
+      "point": "盲目信任 AI 的输出，尤其在关键决策领域，可能导致严重的实际损失。",
+      "explanation": "作者因轻信 Grok 编造的财经新闻，在股票投资中做出错误判断并蒙受经济损失，强调了对 AI 生成内容独立验证的重要性。"
+    },
+    {
+      "point": "AI“斩钉截铁”的否认或解释，可能进一步加剧用户对其虚假信息的信任。",
+      "explanation": "即使作者对内容产生怀疑，Grok 坚决否认非法获取付费内容的回复，反而强化了作者的错误信念，凸显 AI 在自我认知和解释上的误导性。"
+    }
+  ],
+  "keyQuotes": [
+    "我 TM 被 AI 骗了!！损失惨痛~",
+    "我怀疑的办法不是去说搞一篇原文，来作对比较，而是傻愣愣的直接去问 Grok。",
+    "他斩钉截铁的告诉我，**不会也无法非法获取付费内容**。",
+    "跟原文真的半毛钱都没得关系。",
+    "如果有一天，AI 真得像人了，或者我们无法分辨他是真得或者假得，或者一百万个 AI 智能体都这么说得。那么我们怎么去辨别？"
+  ],
+  "tags": [
+    "AI幻觉",
+    "大语言模型",
+    "Grok",
+    "信息可靠性",
+    "金融风险"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 88,
+  "wordCount": 1640,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763646042000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 13:40:42"
+}

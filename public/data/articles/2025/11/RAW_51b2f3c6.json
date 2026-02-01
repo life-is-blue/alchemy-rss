@@ -1,0 +1,55 @@
+{
+  "id": "RAW_51b2f3c6",
+  "title": "Google Cloud 发布分布式系统混沌工程框架与实践",
+  "url": "https://www.infoq.com/news/2025/11/google-chaos-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-12 09:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud's Expert Services Team <a href=\"https://cloud.google.com/blog/products/devops-sre/getting-started-with-chaos-engineering/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">has released</a> a detailed guide on chaos engineering for cloud-based distributed systems. It highlights that the intentional creation of failures is essential for developing resilient architectures. The initiative provides open-source recipes and helpful guidance for applying controlled disruption testing in Google Cloud environments.</p>\n   <p>The Google Cloud team addresses a critical misconception in the industry: that cloud providers' SLAs and built-in resiliency features automatically protect business applications. Apps that aren’t built to handle faults or expect constant service will fail if cloud services go down. This happens regardless of what the cloud infrastructure promises.</p>\n   <p>The framework outlined by Google Cloud is built on five fundamental principles. First, teams must establish a \"steady state hypothesis\" defining what normal system behavior looks like before introducing disruptions. Second, experiments should replicate real-world conditions that systems might encounter in production. Third, and most distinctively, chaos experiments should run in production environments with real traffic and dependencies—this differentiates chaos engineering from traditional testing approaches.</p>\n   <p>The fourth principle emphasizes automation, treating resiliency testing as a continuous process rather than one-off events. Teams must conduct a thorough assessment of the \"blast radius\" of experiments. They should sort applications and services into tiers, depending on how much they could affect customers.</p>\n   <p>The practical implementation includes six key practices:</p>\n   <ul>\n    <li>\n     <p>Define steady state metrics, like latency and throughput.&nbsp;&nbsp;</p>\n    </li>\n    <li>\n     <p>Formulate testable hypotheses, such as \"deleting this container pod will not affect user login.\"&nbsp;&nbsp;</p>\n    </li>\n    <li>\n     <p>Start in controlled non-production environments, then expand to production.&nbsp;&nbsp;</p>\n    </li>\n    <li>\n     <p>Inject failures directly into systems and indirectly through environmental changes.&nbsp;&nbsp;</p>\n    </li>\n    <li>\n     <p>Automate experimental execution using CI/CD pipelines.&nbsp;&nbsp;</p>\n    </li>\n    <li>\n     <p>Derive actionable insights from the results.</p>\n    </li>\n   </ul>\n   <p>To make it easier to get started, Google Cloud suggests using <a href=\"https://chaostoolkit.org/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Chaos Toolkit</a>. This is an open-source Python framework. It has a modular design and supports extension libraries for Google Cloud, Kubernetes, and more. The PSO team has made a full set of Google Cloud recipes on GitHub. Each recipe tackles specific failure scenarios.</p>\n   <p>Chaos engineering has changed a lot since it started. Major tech companies around the world now use it, each creating their own methods to fit their infrastructure needs.</p>\n   <p>In 2010, Netflix created <a href=\"https://netflix.github.io/chaosmonkey/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Chaos Monkey</a>. It tests system stability by randomly ending instances and services in Netflix's cloud architecture. The company later added the <a href=\"https://netflixtechblog.com/the-netflix-simian-army-16e57fbab116\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Simian Army</a>. This suite includes tools like Latency Monkey, which adds artificial delays, and Chaos Kong, which simulates whole availability zone failures. In 2014, Netflix introduced Failure Injection Testing (FIT), which added more precise control over failure injection by pushing failure simulation metadata through their systems.</p>\n   <p>Around the same time Netflix developed Chaos Monkey, Google came out with Disaster Resilience Testing, or <a href=\"https://cloud.google.com/blog/products/management-tools/shrinking-the-time-to-mitigate-production-incidents\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">DiRT</a>. This allowed Google to ensure it was ready for any disaster by checking its systems regularly and automatically to confirm they were prepared to respond and recover. Over time, DiRT turned into a yearly, multi-day testing event to check Google's disaster preparedness across the board.</p>\n   <p>Also AWS has its tool for chaos engineering called <a href=\"https://cloud.google.com/blog/products/management-tools/shrinking-the-time-to-mitigate-production-incidentshttps://aws.amazon.com/fis/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">AWS Fault Injection Simulator (FIS). </a>This is a fully managed service for running fault injection experiments. It simulates real-world AWS faults and works with tools like Chaos Toolkit and <a href=\"https://chaos-mesh.org/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Chaos Mesh</a>. This expands the types of failures you can test<a href=\"https://cloud.google.com/blog/products/management-tools/shrinking-the-time-to-mitigate-production-incidentshttps://aws.amazon.com/fis/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">.</a> AWS also created a <a href=\"https://docs.aws.amazon.com/fis/latest/userguide/scenario-library.htmlhttps://docs.aws.amazon.com/fis/latest/userguide/scenario-library.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Scenarios Library</a>. It has pre-built experiments that test application resilience and make chaos engineering easier. The FIS Scenarios Library features experiments such as AZ Availability: Power Interruption. This simulates power outages in certain zones.</p>\n   <p>Modern architectures have shifted from monolithic to microservices-based systems. This change has increased the complexity of service dependencies. Cloud environments are very distributed because applications are in many availability zones and regions. This distribution creates many potential failure points. Traditional testing methods often struggle to cover these issues fully.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Cloud Introduces Chaos Engineering Framework and Recipes for Distributed Systems\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/google-chaos-engineering/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762938000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Cloud 推出全面的混沌工程框架，包含原则、实践和开源方案，旨在构建高弹性的云原生分布式系统。",
+  "oneSentenceSummary": "Google Cloud 推出全面的混沌工程框架，包含原则、实践和开源方案，旨在构建高弹性的云原生分布式系统。",
+  "summary": "本文详细介绍了 Google Cloud 的全新混沌工程框架，强调其在构建高弹性云原生分布式系统中的关键作用。文章挑战了一种常见的误解，即云服务提供商的服务等级协议 (SLA) 能自动保证应用弹性，并强调应用本身必须具备处理故障的能力。该框架围绕五个基本原则构建：建立稳定状态假设、模拟真实世界环境、直接在生产环境进行实验、自动化弹性测试，以及彻底评估任何中断的爆炸半径 (Blast Radius)。文章概述了六个实际的实施步骤，从定义稳定状态指标和制定可测试的假设，到通过 CI/CD 管道实现自动化执行，并从中获取可执行的见解。此外，文章还重点介绍了开源混沌工具包 Chaos Toolkit 和 Google Cloud 专门的 GitHub 方案，并回顾了 Netflix 的混沌猴子 Chaos Monkey 和猩猩军团 Simian Army、Google 的灾难恢复测试 DiRT 以及 AWS 故障注入模拟器 FIS 等历史案例，突显了混沌工程在行业内的广泛应用和演进。鉴于现代微服务和分布式云环境的复杂性日益增加，混沌工程变得至关重要。",
+  "mainPoints": [
+    {
+      "point": "仅靠云服务提供商的服务等级协议 (SLA) 不足以确保分布式系统中的应用弹性。",
+      "explanation": "应用必须设计为具备容错能力，因为云基础设施本身并不能保证避免应用特定的故障或服务中断。"
+    },
+    {
+      "point": "Google Cloud 的混沌工程框架建立在五个核心原则之上，旨在实现有效的实验。",
+      "explanation": "这些原则包括：定义稳定状态、模拟真实世界环境、在生产环境执行实验、实现流程自动化，以及仔细评估中断可能造成的爆炸半径。"
+    },
+    {
+      "point": "混沌工程的实际实施涉及从指标到可执行的见解这六个关键步骤。",
+      "explanation": "具体实施包括：定义稳定状态指标、制定可测试的假设、从非生产环境逐步过渡到生产环境、采用多种故障注入方法、实施 CI/CD 自动化，并从实验结果中获取有价值的经验。"
+    }
+  ],
+  "keyQuotes": [
+    "有意制造故障对于开发弹性架构至关重要。",
+    "如果云服务出现故障，未构建为处理故障或期望持续服务的应用将会失败。无论云基础设施承诺什么，情况都是如此。",
+    "混沌实验应在具有真实流量和依赖关系的生产环境中运行——这使混沌工程与传统的测试方法区分开来。",
+    "团队必须全面评估实验的“爆炸半径”，并根据应用和服务对客户的影响程度进行分级。",
+    "现代架构已从单体系统转变为基于微服务的系统。这种转变增加了服务依赖的复杂性。"
+  ],
+  "tags": [
+    "混沌工程",
+    "分布式系统",
+    "云原生",
+    "弹性工程",
+    "Google Cloud"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 618,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762938000000,
+  "publishDateStr": "2025-11-12",
+  "publishDateTimeStr": "2025-11-12 09:00:00"
+}

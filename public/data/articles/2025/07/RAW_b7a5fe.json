@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b7a5fe",
+  "title": "两周反转：Anthropic「闪电」夺回被 Cursor 挖走的核心编程大将 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-17-2",
+  "date": "2025-07-17 02:36:38",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p data-pm-slice=\"0 0 []\">本月初，据 The Information 报道，Anthropic Claude Code 的两位负责人 Boris Cherny 和 Cat Wu 被 AI 编程应用 Cursor 的开发商 Anysphere 挖走。详见机器之心报道：《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650977057&amp;idx=2&amp;sn=019ba0a1f5efb63f017d1a343a922fc8&amp;scene=21#wechat_redirect\" target=\"_blank\">从亲密伙伴抢人，Cursor挖走Claude Code两位核心人物</a>》</p>\n  <p>其中，Boris Cherny 是 Claude Code 项目的开发负责人，可以说是 <strong>Claude Code 技术的灵魂人物</strong>，此前加入 Anysphere 担任首席架构师和工程主管。Cat Wu 则是 Claude Code 产品经理，在 Anysphere 的新职务是产品主管。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/92dee263-5df4-4c85-34ea-6b4a69c2c400/public\" alt=\"image.png\" data-ratio=\"0.5693606755126659\" data-type=\"png\" data-w=\"829\" data-imgfileid=\"503496576\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/1644511e-21ed-4509-bf0d-bc6e17900171/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>Boris Cherny 和 Cat Wu，在此访谈节目中，Cherny 表示 Anthropic 公司 80% 的代码都是 Claude 写的。图源：Latent Space</sup></p>\n  <p>万万没想到，仅仅过了两周，事情迎来了反转！</p>\n  <p>同样据 The Information 独家消息，<strong>Anthropic 重新聘回了这两位 Claude Code 的关键负责人</strong>。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ac6cc1ae-af67-4bf8-7c06-626120dc9000/public\" alt=\"image.png\" data-ratio=\"0.2462962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496577\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/042b8c91-1007-49f2-b506-cc81c0413e55/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Anthropic 最近给投资人透了些底：公司虽然还在大把大把地「烧钱」，但赚钱的能力确实在变强。</p>\n  <p>这番话效果立竿见影。据知情人士透露，已经有投资人按捺不住，表示如果 Anthropic 要再融一轮，他们愿意按超过 1000 亿美元的估值来投。要知道，就在四个月前，这家公司的估值才「仅仅」580 亿美元。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4befd380-e4b5-44db-674a-405ff8198e00/public\" alt=\"image.png\" data-ratio=\"0.562037037037037\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496578\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/55c23f0e-8ba6-468c-a2f7-81f4af7c61b1/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><sup>&nbsp; &nbsp; &nbsp; Anthropic CEO Dario Amodei</sup></p>\n  <p><strong>喜忧参半的利润率</strong></p>\n  <p>Anthropic 透露，他们直接卖 AI 模型和聊天机器人 Claude 给客户时，<strong>毛利率能达到 60%，而且还在朝着 70% 努力</strong>。这个数字相当不错，可以简单理解为，每赚 100 块钱，刨去服务器和客服成本，能剩下 60 多块。</p>\n  <p><strong>但这里有个坑</strong>。这漂亮的数字不包括通过亚马逊 AWS 和谷歌云的销售。在那两条渠道上，Anthropic 的毛利率其实是<strong>负 30%</strong>！原因很简单，亚马逊和谷歌作为「中间商」，要抽走一大笔分成。</p>\n  <p>虽然目前大部分收入还来自直销，但 Anthropic 自己也预计，未来云服务商会成为主要的销售渠道。这意味着，他们整体的利润水平可能并没有听上去那么乐观。</p>\n  <p>相比之下，OpenAI 在今年早些时候预测其 2025 年的毛利率为 48%。OpenAI 预计未来几年将稳步提升，到 2029 年最终达到 70% 的毛利率。目前尚不清楚这两家公司是否以相同的方式计算其毛利率。</p>\n  <p>要说花钱，Anthropic 和它的老对手 OpenAI 都是「重量级选手」。</p>\n  <ul>\n   <li>\n    <p><strong>Anthropic</strong>：去年烧了 56 亿美元，今年计划烧 30 亿。</p></li>\n   <li>\n    <p><strong>OpenAI</strong>：收入是 Anthropic 的好几倍，但烧钱速度却更慢。</p></li>\n  </ul>\n  <p>尽管如此，两家公司的收入增长都堪称「爆炸式」，今年的业绩很可能都会轻松超过最初的乐观预期。投资者似乎更看重这种惊人的增长速度，暂时忽略了高昂的成本。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/191745d5-f6f5-4a4d-78aa-f91b35c78000/public\" alt=\"image.png\" data-ratio=\"0.6332547169811321\" data-type=\"png\" data-w=\"848\" data-imgfileid=\"503496579\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/3f19e098-42bd-4df9-80f0-e6d1afe1e481/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>如果估值真的冲到 1000 亿美元，意味着投资者愿意给出其远期收入<strong>至少 25 倍</strong>的价格。</p>\n  <p>相比之下，OpenAI 在一月份的融资讨论中，估值已经谈到了 2600 亿美元，大约是当时远期收入的 43 倍。从那时到现在，OpenAI 的年化收入又从 60 亿美元涨到了超过 100 亿。</p>\n  <p><strong>编程助手 Claude Code 成「新王牌」</strong></p>\n  <p>Anthropic 的增长很大程度上要归功于其在<strong>编程领域的强大实力</strong>。他们的编程助手 <strong>Claude Code</strong> 正在飞速占领市场。</p>\n  <ul>\n   <li>\n    <p><strong>增长惊人</strong>：自 6 月以来，周下载量暴增 6 倍，达到 300 万次。</p></li>\n   <li>\n    <p><strong>收入贡献大</strong>：这款产品贡献了超过 2 亿美元的年化收入。</p></li>\n  </ul>\n  <p>相比之下，Claude Code 的「老对手」们的情况似乎不太乐观。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/874ff2b6-1f59-4fd6-78f5-30e3438a4700/public\" alt=\"image.png\" data-ratio=\"0.6831683168316832\" data-type=\"png\" data-w=\"909\" data-imgfileid=\"503496580\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/1383cb92-3b0a-4a4b-9513-ead702674dab/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>Cursor 作为一个第三方工具，不提供对模型内部参数（如学习率、层数等）的直接访问或微调功能。模型的训练和优化由其提供商（OpenAI、Anthropic、Google 等）完成，Cursor 仅作为接口调用这些模型。</p>\n  <p>Cursor 最近的更新也引发大量用户的不满。</p>\n  <p>简单来说，这次更新把付费模式从一个相对固定的订阅制，彻底转向了按用量计费的模式。</p>\n  <ul>\n   <li>\n    <p><strong>以前</strong>：Pro 用户每月有 500 次使用高级模型的「快速响应」，用完后也能无限次使用速度稍慢的模型。这基本算是一种「半无限」的自助餐。</p></li>\n   <li>\n    <p><strong>现在</strong>：每月给你 20 美元的「额度」。你可以调用任何模型，但会计入这 20 美元的账单里。用完？那就得额外掏钱买点数（Credits）了。</p></li>\n  </ul>\n  <p>Cursor 以前是自己硬扛着昂贵的 AI 模型成本，现在选择把这笔账单直接甩给了用户。</p>\n  <p>同时伴随着是响应质量和使用体验的下降，已经有不少用户选择迁移到其他平台。</p>\n  <section>\n   <img data-backh=\"421\" data-backw=\"578\" data-croporisrc=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gWicJ6e8aibto7ChfoJgfuhKpzMkrgHicovO4Kq1NicFc1L0caYhq20EmXiaG2Cbl9OdiaIDWAe5Q5vQCXdg/0?wx_fmt=png&amp;from=appmsg\" data-cropx1=\"9.155709342560554\" data-cropx2=\"882\" data-cropy2=\"642.4256055363322\" data-imgfileid=\"503496582\" data-ratio=\"0.7353951890034365\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a43a9ac-84d2-4ca3-32b3-9d0dc57e9d00/public\" data-type=\"png\" data-w=\"873\" type=\"block\" data-original-style=\"width: 572px;height: 421px;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/3e42734c-b779-4c76-a489-7b4b4abec652/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>而 Windsurf 最近的收购案闹得沸沸扬扬，似乎也前途未卜。详见机器之心报道：《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650979722&amp;idx=1&amp;sn=f275282358d5836b6c23d7a0920f6579&amp;scene=21#wechat_redirect\" target=\"_blank\">Windsurf交易内幕疯传：24亿美元被瓜分，背刺数百员工？</a>》《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650979918&amp;idx=1&amp;sn=06685b431b73f377daa4073373ba70f0&amp;scene=21#wechat_redirect\" target=\"_blank\">突发｜动荡72小时后，华人团队Cognition收购Windsurf剩余团队</a>》</p>\n  <p>对此你有什么看法呢？欢迎在评论区留言。</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 成功挽回被竞争对手 Cursor 挖走的 Claude Code 核心负责人，同时披露了公司财务状况和编程助手 Claude Code 的强劲增长，凸显其在 AI 编程领域的竞争力。",
+  "oneSentenceSummary": "Anthropic 成功挽回被竞争对手 Cursor 挖走的 Claude Code 核心负责人，同时披露了公司财务状况和编程助手 Claude Code 的强劲增长，凸显其在 AI 编程领域的竞争力。",
+  "summary": "文章详细报道了 Anthropic 公司在人才竞争和市场表现上的最新动态。首先，Anthropic 成功地将此前被 Cursor 挖走的 Claude Code 项目两位核心负责人重新聘回，展现了其对关键人才的重视和挽留能力。其次，文章深入分析了 Anthropic 的财务状况，指出其尽管仍在“烧钱”，但收入增长强劲，毛利率在直销渠道表现出色（60%），但在云服务商渠道则面临负毛利率的挑战，同时公司估值有望突破千亿美元。最后，文章强调了 Anthropic 的编程助手 Claude Code 作为新的增长引擎，周下载量和年化收入均实现惊人增长，并对比了竞争对手 Cursor 和 Windsurf 当前面临的困境，进一步巩固了 Anthropic 在 AI 编程市场的领先地位。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 成功挽回核心人才，彰显其在 AI 人才竞争中的实力",
+      "explanation": "公司迅速回聘此前被挖走的 Claude Code 核心负责人，体现了 Anthropic 对关键技术和人才的重视，有效稳定了团队并维护了核心竞争力。"
+    },
+    {
+      "point": "Anthropic 财务表现喜忧参半，但整体增长势头强劲",
+      "explanation": "直销渠道毛利率高，但云渠道负毛利率带来挑战；尽管持续高额投入，公司收入爆炸式增长，获得投资者高估值，显示市场对其未来前景的看好。"
+    },
+    {
+      "point": "Claude Code 成为 Anthropic 新王牌，加速占领 AI 编程市场",
+      "explanation": "编程助手 Claude Code 下载量和收入贡献显著增长，巩固了 Anthropic 在 AI 编程领域的市场地位，并与竞争对手的困境形成鲜明对比。"
+    }
+  ],
+  "keyQuotes": [
+    "Anthropic 重新聘回了这两位 Claude Code 的关键负责人。",
+    "Anthropic 公司 80% 的代码都是 Claude 写的。",
+    "Anthropic 透露，他们直接卖 AI 模型和聊天机器人 Claude 给客户时，毛利率能达到 60%，而且还在朝着 70% 努力。",
+    "但这里有个坑。这漂亮的数字不包括通过亚马逊 AWS 和谷歌云的销售。在那两条渠道上，Anthropic 的毛利率其实是负 30%！",
+    "Anthropic 的增长很大程度上要归功于其在编程领域的强大实力。他们的编程助手 Claude Code 正在飞速占领市场。"
+  ],
+  "tags": [
+    "AI编程",
+    "行业动态",
+    "Anthropic",
+    "Claude Code",
+    "市场竞争"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1616,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752719798000,
+  "publishDateStr": "2025-07-17",
+  "publishDateTimeStr": "2025-07-17 02:36:38"
+}

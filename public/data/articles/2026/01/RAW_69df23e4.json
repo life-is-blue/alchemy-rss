@@ -1,0 +1,53 @@
+{
+  "id": "RAW_69df23e4",
+  "title": "Qwen3-TTS 系列现已开源：语音设计、克隆与生成",
+  "url": "https://simonwillison.net/2026/Jan/22/qwen3-tts/#atom-everything",
+  "date": "2026-01-22 17:42:34",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://qwen.ai/blog?id=qwen3tts-0115\">Qwen3-TTS Family is Now Open Sourced: Voice Design, Clone, and Generation</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46719229\" title=\"Hacker News\">via</a>) I haven't been paying much attention to the state-of-the-art in speech generation models other than noting that they've got <em>really good</em>, so I can't speak for how notable this new release from Qwen is.</p>\n   <p>From <a href=\"https://github.com/QwenLM/Qwen3-TTS/blob/main/assets/Qwen3_TTS.pdf\">the accompanying paper</a>:</p>\n   <blockquote>\n    <p>In this report, we present the Qwen3-TTS series, a family of advanced multilingual, controllable, robust, and streaming text-to-speech models. Qwen3-TTS supports state-of- the-art 3-second voice cloning and description-based control, allowing both the creation of entirely novel voices and fine-grained manipulation over the output speech. Trained on over 5 million hours of speech data spanning 10 languages, Qwen3-TTS adopts a dual-track LM architecture for real-time synthesis [...]. Extensive experiments indicate state-of-the-art performance across diverse objective and subjective benchmark (e.g., TTS multilingual test set, InstructTTSEval, and our long speech test set). To facilitate community research and development, we release both tokenizers and models under the Apache 2.0 license.</p>\n   </blockquote>\n   <p>To give an idea of size, <a href=\"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base\">Qwen/Qwen3-TTS-12Hz-1.7B-Base</a> is 4.54GB on Hugging Face and <a href=\"https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base\">Qwen/Qwen3-TTS-12Hz-0.6B-Base</a> is 2.52GB.</p>\n   <p>The <a href=\"https://huggingface.co/spaces/Qwen/Qwen3-TTS\">Hugging Face demo</a> lets you try out the 0.6B and 1.7B models for free in your browser, including voice cloning:</p>\n   <p><img alt=\"Screenshot of a Qwen3-TTS voice cloning web interface with three tabs at top: &quot;Voice Design&quot;, &quot;Voice Clone (Base)&quot; (selected), and &quot;TTS (CustomVoice)&quot;. The page is titled &quot;Clone Voice from Reference Audio&quot; and has two main sections. Left section: &quot;Reference Audio (Upload a voice sample clone)&quot; showing an audio waveform player at 0:00/0:34 with playback controls, upload and microphone icons, followed by &quot;Reference Text (Transcript of the reference audio)&quot; containing three paragraphs: &quot;Simon Willison is the creator of Datasette, an open source tool for exploring and publishing data. He currently works full-time building open source tools for data journalism, built around Datasette and SQLite. Prior to becoming an independent open source developer, Simon was an engineering director at Eventbrite. Simon joined Eventbrite through their acquisition of Lanyrd, a Y Combinator funded company he co-founded in 2010. He is a co-creator of the Django Web Framework, and has been blogging about web development and programming since 2002 at simonwillison.net&quot;. Right section: &quot;Target Text (Text to synthesize with cloned voice)&quot; containing text about Qwen3-TTS speech generation capabilities, with &quot;Language&quot; dropdown set to &quot;Auto&quot; and &quot;Model Size&quot; dropdown set to &quot;1.7B&quot;, and a purple &quot;Clone &amp; Generate&quot; button at bottom.\" src=\"https://static.simonwillison.net/static/2026/qwen-voice-clone.jpg\"></p>\n   <p>I tried this out by recording myself reading <a href=\"https://simonwillison.net/about/\">my about page</a> and then having Qwen3-TTS generate audio of me reading the Qwen3-TTS announcement post. Here's the result:</p>\n   <p>\n    <audio controls style=\"width: 100%\">\n     <source src=\"https://static.simonwillison.net/static/2026/qwen-tts-clone.wav\" type=\"audio/wav\"> Your browser does not support the audio element.\n    </audio>\n   </p>\n   <p>It's important that everyone understands that voice cloning is now something that's available to anyone with a GPU and a few GBs of VRAM... or in this case a web browser that can access Hugging Face.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9255/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文宣布开源 Qwen3-TTS，这是一个最先进的多语言文本转语音系列模型，支持 3 秒语音克隆和基于描述的语音控制。",
+  "oneSentenceSummary": "本文宣布开源 Qwen3-TTS，这是一个最先进的多语言文本转语音系列模型，支持 3 秒语音克隆和基于描述的语音控制。",
+  "summary": "本篇文章重点介绍了 Qwen 团队发布的 Qwen3-TTS，这是一系列先进的语音生成模型，现已根据 Apache 2.0 协议开源。该系列模型参数量从 0.6B 到 1.7B 不等，在超过 500 万小时、涵盖 10 种语言的数据上进行了训练。其核心特性包括高保真 3 秒语音克隆、通过双轨 LM 架构实现的实时流式合成，以及允许通过文本描述创建新声音的“语音设计”功能。作者展示了使用 Hugging Face 演示进行语音克隆的个人示例，同时强调了这一社会影响：高质量的语音克隆现在对于任何拥有基础计算资源的人来说都是触手可及的。",
+  "mainPoints": [
+    {
+      "point": "Qwen3-TTS 引入了高性能、可控且实时的语音合成技术。",
+      "explanation": "该模型系列支持最先进的 3 秒语音克隆和基于描述的控制，既能复制现有声音，也能创建全新的声音。"
+    },
+    {
+      "point": "模型基于海量数据集构建，并针对效率进行了优化。",
+      "explanation": "该系列在 10 种语言的 500 万小时语音数据上进行训练，采用双轨 LM 架构，支持不同模型规模（0.6B 和 1.7B）的实时流式合成。"
+    },
+    {
+      "point": "语音克隆技术已达到极高的普及程度。",
+      "explanation": "作者指出，复杂的语音克隆不再需要专门的实验室，现在可以在浏览器中或在显存需求极低的消费级 GPU 上运行。"
+    }
+  ],
+  "keyQuotes": [
+    "Qwen3-TTS 支持最先进的 3 秒语音克隆和基于描述的控制，既允许创建全新的声音，也能对输出语音进行细粒度操控。",
+    "为了促进社区研究与开发，我们根据 Apache 2.0 协议发布了分词器和模型。",
+    "重要的是，每个人都应该意识到，语音克隆现在对任何拥有 GPU 和几 GB 显存的人来说都是可用的……或者在这种情况下，只需要一个浏览器。"
+  ],
+  "tags": [
+    "Text-to-Speech",
+    "Qwen3-TTS",
+    "语音克隆",
+    "开源 AI",
+    "多语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 264,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769103754000,
+  "publishDateStr": "01-22",
+  "publishDateTimeStr": "2026-01-22 17:42:34"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b527f5",
+  "title": "AI Coding 玩家图谱：谁在押注，谁在突围？| 量子位智库报告",
+  "url": "https://www.qbitai.com/2025/09/327729.html",
+  "date": "2025-09-01 02:38:21",
+  "author": "智库",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p class=\"pgc-h-arrow-right\" data-track=\"46\" data-pm-slice=\"0 0 []\">分析师 卡洛琳</p>\n  <p class=\"pgc-h-arrow-right\" data-track=\"46\" data-pm-slice=\"0 0 []\">量子位智库 | 公众号 AI123All</p>\n  <p data-track=\"5\">从硅谷到欧洲，AI Coding的融资正以惊人速度<strong>燃烧</strong>。</p>\n  <p data-track=\"6\">Cursor单笔融资<strong>9</strong>亿美元，Lovable<strong>8</strong>个月跻身独角兽。</p>\n  <p data-track=\"7\">Vibe Coding瞬间成为热词，<strong>会用AI写代码</strong>好像比会写代码更值得炫耀。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"AI Coding玩家图谱：谁在押注，谁在突围？| 量子位智库报告\" src=\"https://image.jido.dev/20250901053801_f16d229668ccf9e6dda6896c4c4b3687.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"693\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"8\">赛道升温，我们总结了海内外市场的玩家图谱后发现：</p>\n  <ul>\n   <li data-track=\"9\">代理类产品增多，低代码平台涌入新面孔；</li>\n   <li data-track=\"10\">优秀的助手类产品也在试水AI Agent功能；</li>\n   <li data-track=\"11\">连大型AI模型制造商也在强调Coding能力；</li>\n   <li data-track=\"12\">从关注补全到“start to PR(Pull Request)”，AI介入广度提升；</li>\n   <li data-track=\"13\">……</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"AI Coding玩家图谱：谁在押注，谁在突围？| 量子位智库报告\" src=\"https://image.jido.dev/20250901053801_08e82906c3d1a5717f36dd5352ce68c6.jpeg\" data-ic=\"false\" data-width=\"1080\" data-height=\"1004\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"AI Coding玩家图谱：谁在押注，谁在突围？| 量子位智库报告\" src=\"https://image.jido.dev/20250901053801_e36b77bc186552b55fe4d1ec71e3b7c8.jpeg\" data-ic=\"false\" data-width=\"1080\" data-height=\"932\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">Agent是市场对AI交付新要求的体现，新推出的产品以代理类或低代码平台居多。</p>\n  <p data-track=\"17\">像TRAE这样在辅助编码领域已有优势的产品，也在尝试构建多Agent的平台，强调“自主拆解需求”和“自动完成多轮编码任务”；腾讯也先推出AI编程助手CodeBuddy，随后升级新功能模块<strong>Craft智能体</strong>，提供对话式编程体验。</p>\n  <p data-track=\"18\">无论是初创企业还是大型AI模型开发商，混合式工具和助手类、代理类产品同步推出变多了，既可以接受人工指令，又可以提供后端代码。</p>\n  <p data-track=\"20\">低代码/零代码赛道2021年起即被机构连续上调CAGR至25%以上，成为“非生成式AI”中增速最快的软件子领域。</p>\n  <p data-track=\"21\">和编码助手不同，低代码赛道的AI Coding并非简单替代开发者，而是扩展了这一市场的<strong>潜在创作者</strong>。AI大幅提升了低代码平台的产出效果，Vibe Coding等概念，让无代码经验的用户也能通过自然语言和场景驱动成为开发者。</p>\n  <p data-track=\"23\">本轮AI模型进展集中于Coding能力的展现或提升。基础模型即便没有专门发Coding model，也会探索这一场景。</p>\n  <p data-track=\"24\">Anthropic Claude、Google Gemini、OpenAI GPT均在 HumanEval、MBPP、SWE-Bench刷新 SOTA，由于Coding能力已成为衡量模型可落地性的首要指标，事实上基础模型迭代一次，AI Coding工具就能免费获得一次<strong>性能跃迁</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"AI Coding玩家图谱：谁在押注，谁在突围？| 量子位智库报告\" src=\"https://image.jido.dev/20250901053801_2547cf2110770546a421331c81f6fa9c.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"641\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">我们关注到对AI Coding产品的使用体验有明确影响的<strong>2</strong>个节点：</p>\n  <ul>\n   <li data-track=\"27\">是否选择提供可交付的产品，超越编码这一能力；</li>\n   <li data-track=\"28\">是否试水Agent概念，甚至直接提供Agent功能。</li>\n  </ul>\n  <p data-track=\"29\">当产品引入Agent概念时，AI在开发中的角色就由被动转为<strong>主动</strong>。Copilot相关的功能更新已经不再是AI Coding产品的主攻点，渐进式地更新Agent模式成为潮流。</p>\n  <p data-track=\"30\">同时，新的产品正在水平扩张其能力，在扮演着<strong>全栈代码生成器</strong>的同时，逐步提升AI的<strong>自主性</strong>。</p>\n  <p data-track=\"32\">但是，目前大多数AI Coding提供的产品仍然是“一次性产品”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"AI Coding玩家图谱：谁在押注，谁在突围？| 量子位智库报告\" src=\"https://image.jido.dev/20250901053801_69043f8dc0b7966af45632863c8526a2.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"651\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">Coding不等于产品开发，软件工程是包括规划、分工、信息、质量保证的一整套完整的系统。除了代码生成，维护、运营等同样重要。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"AI Coding玩家图谱：谁在押注，谁在突围？| 量子位智库报告\" src=\"https://image.jido.dev/20250901053801_50ef8ac0b9753d382235aac04b8f840f.png\" data-ic=\"false\" data-width=\"1072\" data-height=\"655\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"34\">同时，对于产品来说<strong>留存</strong>是关键指标，只有当AI Coding产品拥有记忆、读上下文等复用能力，它才能真正融入完整的开发周期。连接的环节越多，产品的使用价值越大。</p>\n  <p data-track=\"36\">AI Coding的出现无疑提升了小型团队的效率，<strong>大事</strong>不必使用<strong>大团队</strong>也能做成，更多人可以落地自己的创业想法，而且创新成本零门槛。\n   <br>\n   我们也在持续关注最新最好的AI产品，等待AI产品百强的新版图。</p>\n  <p data-track=\"37\"><strong>高清图谱和报告下载链接：</strong></p>\n  <p data-track=\"38\">https://jkhbjkhb.feishu.cn/wiki/W5D7wuDcbiPXDLkaRLQcAJpOn8f?from=from_copylink</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章深入分析了 AI Coding 市场的最新动态、玩家图谱及发展趋势，强调了 AI Agent 和低代码平台在拓展开发者边界上的作用。",
+  "oneSentenceSummary": "文章深入分析了 AI Coding 市场的最新动态、玩家图谱及发展趋势，强调了 AI Agent 和低代码平台在拓展开发者边界上的作用。",
+  "summary": "文章聚焦 AI Coding 领域的快速发展与融资热潮，揭示了该赛道的玩家图谱和关键趋势。报告指出，代理类产品和结合 AI 的低代码平台数量显著增多，大型 AI 模型制造商也正不断提升其 Coding 能力。AI 在开发中的角色正从被动辅助转向主动代理，产品开始向“全栈代码生成器”和“自主性”方向发展。文章强调了基础模型 Coding 能力提升对 AI Coding 工具的赋能作用，使得 AI Coding 工具能免费获得性能跃迁。同时，文章也指出当前 AI Coding 产品普遍存在“一次性”问题，未能完全融入软件工程的完整生命周期。未来，具备记忆和上下文理解能力的 AI Coding 产品将更具价值，有望大幅提升小型团队效率并降低创新门槛。",
+  "mainPoints": [
+    {
+      "point": "AI Coding 市场正经历快速增长和产品形态演变，AI Agent 和低代码平台成为主要趋势",
+      "explanation": "市场融资活跃，新产品多为代理类或结合 AI 的低代码平台，AI 在开发中的角色正从辅助走向主动，致力于全栈代码生成和自主性提升。"
+    },
+    {
+      "point": "基础大模型 Coding 能力的飞跃式提升，为 AI Coding 工具带来性能跃迁",
+      "explanation": "Anthropic Claude、Google Gemini、OpenAI GPT 等大模型在代码基准测试上刷新 SOTA，其 Coding 能力直接赋能上层 AI Coding 工具，推动行业发展。"
+    },
+    {
+      "point": "当前 AI Coding 产品面临“一次性”挑战，需融入软件工程完整生命周期以提升长期价值",
+      "explanation": "大多数 AI Coding 产品仍停留在代码生成阶段，缺乏记忆和上下文理解能力，难以覆盖软件开发、维护和运营的全流程，限制了其在实际项目中的留存和复用价值。"
+    }
+  ],
+  "keyQuotes": [
+    "Vibe Coding 瞬间成为热词，会用 AI 写代码好像比会写代码更值得炫耀。",
+    "基础模型迭代一次，AI Coding 工具就能免费获得一次性能跃迁。",
+    "当产品引入 Agent 概念时，AI 在开发中的角色就由被动转为主动。",
+    "Coding 不等于产品开发，软件工程是包括规划、分工、信息、质量保证的一整套完整的系统。",
+    "只有当 AI Coding 产品拥有记忆、读上下文等复用能力，它才能真正融入完整的开发周期。"
+  ],
+  "tags": [
+    "AI Coding",
+    "AI Agent",
+    "低代码",
+    "大语言模型",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1251,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756694301000,
+  "publishDateStr": "2025-09-01",
+  "publishDateTimeStr": "2025-09-01 02:38:21"
+}

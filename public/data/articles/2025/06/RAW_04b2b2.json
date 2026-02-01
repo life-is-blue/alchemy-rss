@@ -1,0 +1,59 @@
+{
+  "id": "RAW_04b2b2",
+  "title": "从结对程序员到协作伙伴：我们对 GitHub Copilot 中智能体工作流的愿景",
+  "url": "https://github.blog/news-insights/product-news/from-pair-to-peer-programmer-our-vision-for-agentic-workflows-in-github-copilot/",
+  "date": "2025-06-25 16:00:00",
+  "author": "Tim Rogers",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Software development has always been a deeply human, collaborative process. When we introduced <a href=\"https://github.com/features/copilot\">GitHub Copilot</a> in 2021 as an “<a href=\"https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/\">AI pair programmer</a>,” it was designed to help developers stay in the flow, reduce boilerplate work, and accelerate coding.</p>\n  <p>But what if Copilot could be more than just an assistant? What if it could actively collaborate with you—working alongside you on synchronous tasks, tackling issues independently, and even reviewing your code?</p>\n  <p>That’s the future we’re building.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-our-vision-for-what-s-next-nbsp\">Our vision for what’s next&nbsp;</h2>\n  <p>Today, AI agents in GitHub Copilot don’t just assist developers but actively solve problems through multi-step reasoning and execution. These agents are capable of:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Independent problem solving:</strong> Copilot will break down complex tasks and take the necessary steps to solve them, providing updates along the way.</li>\n   <li><strong>Adaptive collaboration:</strong> Whether working in sync with you or independently in the background, Copilot will iterate on its own outputs to drive progress.</li>\n   <li><strong>Proactive code quality:</strong> Copilot will proactively assist with tasks like issue resolution, testing, and code reviews, ensuring higher-quality, maintainable code.</li>\n  </ul>\n  <p>Rather than fitting neatly into synchronous or asynchronous categories, the future of Copilot lies in its ability to flexibly transition between modes—executing tasks independently while keeping you informed and in control. This evolution will allow you to focus on higher-level decision-making while Copilot takes on more of the execution.</p>\n  <p>Let’s explore what’s already here—and what’s coming next.</p>\n  <aside data-color-mode=\"light\" data-dark-theme=\"dark\" data-light-theme=\"light_dimmed\" class=\"wp-block-group post-aside--large p-4 p-md-6 is-style-light-dimmed has-global-padding is-layout-constrained wp-block-group-is-layout-constrained is-style-light-dimmed--1\" style=\"border-top-width:4px\">\n   <p>Modern development isn’t linear. We context switch between features, bug fixes, dependency bumps, and reviews every day. A truly useful AI must:</p>\n   <ol class=\"wp-block-list\">\n    <li><strong>Act independently</strong>: plan multi‑step tasks and execute them without hand holding.</li>\n    <li><strong>Stay transparent</strong>: share its plan and progress, so you can intervene instantly.</li>\n    <li><strong>Earn trust</strong>: test its own work and explain every change.</li>\n   </ol>\n   <p>Copilot’s new <strong>agentic architecture</strong> is designed around these guardrails.</p>\n  </aside>\n  <h2 class=\"wp-block-heading\" id=\"h-copilot-in-action-taking-steps-toward-our-vision-nbsp\">Copilot in action: Taking steps toward our vision&nbsp;</h2>\n  <h3 class=\"wp-block-heading\" id=\"h-agent-mode-a-real-time-ai-teammate-inside-your-ide\">Agent mode: A real-time AI teammate inside your IDE</h3>\n  <p>If you’ve used <a href=\"https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/\">agent mode with GitHub Copilot</a> (and you should, because it’s fantastic), you’ve already experienced an independent AI agent at work.&nbsp;</p>\n  <p>Agent mode lives where you code and feels like handing your computer to a teammate for a minute: it types on your screen while you look on, and can grab the mouse. When you prompt it, the agent takes control, works through the problem, and reports its work back to you with regular check-in points. It can:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Read your entire workspace</strong> to understand context.</li>\n   <li><strong>Plan multi‑step fixes or refactors</strong> (and show you the plan first).</li>\n   <li><strong>Apply changes, run tests, and iterate</strong> in a tight feedback loop.</li>\n   <li><strong>Ask for guidance</strong> whenever intent is ambiguous.</li>\n   <li><strong>Run and refine its own work</strong> through an “agentic loop”—planning, applying changes, testing, and iterating.</li>\n  </ul>\n  <p>Rather than just responding to requests, Copilot in agent mode actively works toward your goal. You define the outcome, and it determines the best approach—seeking feedback from you as needed, testing its own solutions, and refining its work in real time.&nbsp;</p>\n  <p>Think of it as pair programming in fast forward: you’re watching the task unfold in real time, free to jump in or redirect at any step. ✨</p>\n  <figure class=\"wp-block-video\">\n   <video controls poster=\"https://github.blog/wp-content/uploads/2025/06/Screenshot-2025-06-20-at-12.31.22 PM.png\" src=\"https://github.blog/wp-content/uploads/2025/06/copilot-agent-ga.mp4\"></video>\n  </figure>\n  <h3 class=\"wp-block-heading\" id=\"h-coding-agent-an-ai-teammate-that-works-while-you-don-t-nbsp\">Coding agent: An AI teammate that works while you don’t&nbsp;</h3>\n  <p>Not all coding happens in real time. Sometimes, you need to hand off tasks to a teammate and check back later.</p>\n  <p>That’s where <strong>our coding agent</strong> comes in—and it’s our first step in transforming Copilot into an independent agent. Coding agent spins up its <strong>own secure dev environment</strong> in the cloud. You can assign multiple issues to Copilot, then dive into other work (or grab a cup of coffee!) while it handles the heavy lifting. It can:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Clone your repo and bootstrap tooling</strong> in isolation.</li>\n   <li><strong>Break the issue into steps</strong>, implement changes, and write or update tests.</li>\n   <li><strong>Validate its work </strong>by running your tests and linter.</li>\n   <li><strong>Open a draft PR</strong> and iterate based on your PR review comments.</li>\n   <li><strong>Stream progress updates</strong> so you can peek in—or jump in—any time.</li>\n  </ul>\n  <p>Working with coding agent is like asking a teammate in another room—with their own laptop and setup—to tackle an issue. You’re free to work on something else, but you can pop in for status or feedback whenever you like.</p>\n  <figure class=\"wp-block-video\">\n   <video controls poster=\"https://github.blog/wp-content/uploads/2025/06/Screenshot-2025-06-20-at-12.35.06 PM.png\" src=\"https://github.blog/wp-content/uploads/2025/06/Copilot-Coding-Agent-Overview-v3-Burned.mp4\"></video>\n  </figure>\n  <h2 class=\"wp-block-heading\" id=\"h-less-todo-more-done-the-next-stage-of-copilot-s-agentic-future\">Less TODO, more done: The next stage of Copilot’s agentic future</h2>\n  <p>The next stage of Copilot is being built on three converging pillars:</p>\n  <ol class=\"wp-block-list\">\n   <li><strong>Smarter, leaner models.</strong> Ongoing breakthroughs in large language models keep driving accuracy up while pushing latency and cost down. Expanded context windows now span entire monoliths, giving Copilot the long-range “memory” it needs to reason through complex codebases and return answers grounded in your real code.<br></li>\n   <li><strong>Deeper contextual awareness.</strong> Copilot increasingly understands the full story behind your work—issues, pull-request history, dependency graphs, even private runbooks and API specs (via MCP). By tapping this richer context, it can suggest changes that align with project intent, not just syntax.<br></li>\n   <li><strong>Open, composable foundation.</strong> We’re designing Copilot to slot into <em>your</em> stack—not the other way around. You choose the editor, models, and tools; Copilot plugs in, learns your patterns, and amplifies them. You’re in the driver’s seat, steering the AI to build, test, and ship code faster than ever.</li>\n  </ol>\n  <p>Taken together, these pillars move Copilot beyond a single assistant toward a flexible AI teammate—one that can help any team, from three developers in a garage to thousands in a global enterprise, plan, code, test, and ship with less friction and more speed.</p>\n  <p>So, get ready for what’s next. The next wave is already on its way.&nbsp;</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\">\n  </div>\n </body>\n</html>",
+  "aiSummary": "GitHub Copilot 正在从结对程序员发展成为能够独立执行智能体开发工作流的 AI 协作伙伴。",
+  "oneSentenceSummary": "GitHub Copilot 正在从结对程序员发展成为能够独立执行智能体开发工作流的 AI 协作伙伴。",
+  "summary": "GitHub 对 Copilot 的愿景正在从响应式的结对程序员转向主动的、独立的 AI 协作开发者。这种演变涉及能够通过多步推理、自适应协作和主动质量辅助（测试、代码评审）独立解决问题的 AI 智能体。文章重点介绍了两个关键步骤：Agent 模式，一个理解工作区上下文并规划多步修改的实时 IDE 队友；以及即将推出的 Coding Agent，它将在安全云环境中异步工作，克隆代码仓库、实现修改、运行测试并创建草稿 PR。智能体 Copilot 的未来建立在更智能的模型、更深度的上下文感知（代码库、问题、私有文档）以及开放、可组合的基础之上，旨在减少摩擦，加速各种规模团队的开发进程。",
+  "mainPoints": [
+    {
+      "point": "Copilot 正在从助手转型为独立的 AI 协作伙伴。",
+      "explanation": "未来的 Copilot 智能体将主动解决问题，分解任务并执行多步计划，同时进行自适应协作和质量检查。"
+    },
+    {
+      "point": "Agent 模式在 IDE 内提供实时、交互式的编码辅助。",
+      "explanation": "此模式读取工作区上下文，规划修改，应用修复，运行测试，并在紧密的循环中迭代，允许开发者观察和指导。"
+    },
+    {
+      "point": "Coding Agent 可在云环境中实现异步任务执行。",
+      "explanation": "开发者可以将问题分配给此 Agent，它会设置自己的环境，独立实现修改、运行测试并创建草稿 PR。"
+    },
+    {
+      "point": "未来的 Agent 能力依赖于更智能的模型和更深度的上下文。",
+      "explanation": "改进的 LLM、扩展的上下文窗口和私有文档集成将提高智能体驱动修改的准确性和相关性。"
+    }
+  ],
+  "keyQuotes": [
+    "但如果 Copilot 不仅仅是一个助手呢？如果它能主动与你协作——与你并行处理同步任务，独立处理问题，甚至评审你的代码呢？",
+    "今天，GitHub Copilot 中的 AI 智能体不仅辅助开发者，更能通过多步推理和执行主动解决问题。",
+    "Copilot 的新**智能体架构**便是围绕这些防护栏设计的。",
+    "Agent 模式就存在于你编码的环境中，感觉就像是将你的电脑短暂交给一位队友...",
+    "总而言之，这些支柱将 Copilot 从单一助手推向灵活的 AI 队友——一个能够帮助任何规模的团队，从车库里的三名开发者到全球企业中的数千名员工，以更少的摩擦和更快的速度进行规划、编码、测试和发布。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "AI智能体",
+    "软件开发",
+    "智能体工作流",
+    "LLM应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 899,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750867200000,
+  "publishDateStr": "2025-06-25",
+  "publishDateTimeStr": "2025-06-25 16:00:00"
+}

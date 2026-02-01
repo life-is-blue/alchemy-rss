@@ -1,0 +1,55 @@
+{
+  "id": "RAW_fccaf4",
+  "title": "到底啥是开发者营销？",
+  "url": "https://baoyu.io/translations/developer-marketing",
+  "date": "2025-09-15 15:33:10",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://mattpalmer.io/posts/developer-marketing/\">What is developer marketing?</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"lbeoh2onhk\">作者：Matt Palmer</p>\n   <p data-id=\"nrk1f4ajw0\"><em>这是一篇持续更新的文章。它主要受到我在 </em><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://replit.com/\"><em>Replit</em></a><em> 领导开发者关系 (DevRel) 和技术营销的经历启发，我们在这期间将公司的年度经常性收入（ARR）从 200 万美元做到了 </em><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/paulg/status/1953991503581470977\"><em>1.5 亿美元以上</em></a><em>。</em></p>\n   <p data-id=\"e2yb23im5l\">面向开发者的营销，和面向其他任何群体的营销，本质上没什么不同。</p>\n   <p data-id=\"hyt1nbxka6\">最重要的只有三件事：做什么、为谁做、怎么说。</p>\n   <p data-id=\"cq2nwdamg9\">营销始于产品。而产品要求你对两件事有极其鲜明的观点：</p>\n   <ol>\n    <li>\n     <p data-id=\"efktfhl73q\">你在打造什么？</p>\n    </li>\n    <li>\n     <p data-id=\"ts2awbdoga\">你为谁而打造？</p>\n    </li>\n   </ol>\n   <p data-id=\"do1xty3hic\">要把这件事做好，出奇地难。</p>\n   <p data-id=\"2pzrkmba0m\">作为一名营销人，你的首要任务就是理解产品和用户。</p>\n   <p data-id=\"md8nle9j82\">这也是为什么我认为开发者营销人员需要懂技术的原因之一：如果你想跟开发者交流，那最好的方式就是你自己也<em>是</em>一名开发者。</p>\n   <p data-id=\"r35rlyj3oi\">一个你自己都不用的产品，你怎么可能<em>真正</em>理解它呢？</p>\n   <p data-id=\"0oja3kux2t\">理解用户的最简单方法，就是<em>成为</em>用户。而营销，只是在这之上增加了一个观点层：</p>\n   <ol>\n    <li>\n     <p data-id=\"7cur90lbwf\">你如何沟通？</p>\n    </li>\n   </ol>\n   <p data-id=\"ezrahx19bo\">就是这样。营销 = 产品 + 沟通。</p>\n   <p data-id=\"fosx6316b6\">当然，对于技术产品来说，这事儿挺难的。如果你还没注意到，大多数工程师是通过代码而不是文案来沟通的。</p>\n   <p data-id=\"smaxsh4b81\">而且，大多数对技术概念感兴趣的人，都喜欢极客式地深入探讨。</p>\n   <p data-id=\"z595v4cgsc\">我们总是从功能开始。我们解释工作原理。我们撰写技术说明。</p>\n   <p data-id=\"b45j1s2zuj\">你很难找到一个既寻求理解<em>又</em>力求简化的人。为什么呢？</p>\n   <p data-id=\"9tlti9wbef\">如果你觉得软件很难懂，那么恭喜你，你已经领先了 90% 的开发者营销人员。</p>\n   <p data-id=\"6iw2f0xgop\">当你阅读文档时，心里想着“这到底TMD是啥意思？”的那个瞬间。</p>\n   <p data-id=\"3h9gpy0kyd\">你的用户，想的跟你一模一样。</p>\n   <p data-id=\"tpm9nwgsw7\">大多数打造技术产品的人，都沉浸在解决方案里太久，以至于忘了问题本身是什么感觉。</p>\n   <p data-id=\"6vk9dba8rg\">但你还记得。这就是你的超能力。</p>\n   <p data-id=\"16stz73mes\">当你对某个东西豁然开朗时，请特别留意那一刻。那正是你需要为用户重现的“顿悟时刻”。</p>\n   <p data-id=\"zer23n9wr8\">最优秀的开发者营销人员，并不是最聪明的工程师。他们是那些对“为什么事情这么难”始终保持好奇心的人。</p>\n   <p data-id=\"ogr3ogwgzt\">大多数技术营销之所以很烂，是因为作者满脑子想的都是功能，而不是问题。</p>\n   <p data-id=\"6fqec0h9rc\">他们会写：“我们的平台提供全面的 AI 辅助开发能力，并具备企业级的安全性和可扩展性。”</p>\n   <p data-id=\"gudw1cwo1g\">但开发者根本不关心什么“全面的 AI 辅助开发能力”。</p>\n   <p data-id=\"z6nczkkcqa\">他们想的是：“这个月我已经第 50 次写这该死的重复样板代码了，我真的受够了。”</p>\n   <p data-id=\"39n4kpltnk\">真正的魔法，发生在你将“解决方案行话”翻译回“人类语言”的那一刻：</p>\n   <p data-id=\"l4egjvvjzo\"><span data-name=\"cross_mark\" data-type=\"emoji\">❌</span> 机器人模式</p>\n   <p data-id=\"j0cia3lnhf\">“我们的平台提供全面的 AI 辅助开发能力，并具备企业级的安全性和可扩展性。”</p>\n   <p data-id=\"0cs7pclkam\"><span data-name=\"check_mark_button\" data-type=\"emoji\">✅</span> 人类模式</p>\n   <p data-id=\"ujchtj6dgg\">“几分钟构建应用，无需编程。”</p>\n   <p data-id=\"3u9qkh2duo\"><span data-name=\"cross_mark\" data-type=\"emoji\">❌</span> 机器人模式</p>\n   <p data-id=\"vhiz5w2st6\">“利用我们先进的机器学习算法，优化您的开发工作流。”</p>\n   <p data-id=\"iucjwh9jnr\"><span data-name=\"check_mark_button\" data-type=\"emoji\">✅</span> 人类模式</p>\n   <p data-id=\"e6060u6adq\">“别再写那些重复的样板代码了，开始创造酷炫的东西吧！”</p>\n   <p data-id=\"d4v1l05lk0\"><span data-name=\"cross_mark\" data-type=\"emoji\">❌</span> 机器人模式</p>\n   <p data-id=\"155hedx6ov\">“我们的解决方案致力于解决现代开发团队所经历的痛点。”</p>\n   <p data-id=\"jn7z1027db\"><span data-name=\"check_mark_button\" data-type=\"emoji\">✅</span> 人类模式</p>\n   <p data-id=\"9bhcu9hhod\">“还记得编程曾经的乐趣吗？这份快乐，我们帮你找回来。”</p>\n   <p data-id=\"fzd0hd2znr\">我没有简化任何东西，我只是不再像个机器人一样说话。</p>\n   <p data-id=\"luafl99891\">这不是什么魔法，这是一个流程：</p>\n   <p data-id=\"zfz12sitmf\"><strong>第一步：从用户的视角出发</strong> 在推销你的解决方案之前，先理解他们的世界。什么让他们夜不能寐？他们在哪儿交流？他们抱怨些什么？</p>\n   <p data-id=\"5bjestvthv\"><strong>第二步：关注结果，而非功能</strong> 用他们能取得的成就来吸引他们，而不是工作原理。自信地部署、更快地构建、晚上睡个好觉。</p>\n   <p data-id=\"ed6rio4gwt\"><strong>第三步：保持简单</strong> 用小学四年级的阅读水平来写作。短句子，清晰的语言。不用术语，一句话只讲一件事。</p>\n   <p data-id=\"4dlm0dmhna\"><strong>第四步：情感先行，逻辑殿后</strong> 用情感钩住他们，再用事实来证明。先让他们感到自信，再展示监控数据。情感第一，参数第二。</p>\n   <p data-id=\"3rm0740h79\"><strong>第五步：自信地表达观点</strong> 对你做的每件事都要有强烈的观点。我们是最好的，就该这么做，无需道歉。</p>\n   <h3 data-id=\"hq5ovfxccj\" id=\"hq5ovfxccj\" data-toc-id=\"hq5ovfxccj\">从用户的视角出发</h3>\n   <p data-id=\"bzuk8w0oot\">在推销你的解决方案之前，先理解他们的世界</p>\n   <ul>\n    <li>\n     <p data-id=\"ded6wsjy15\">什么让他们夜不能寐？</p>\n    </li>\n    <li>\n     <p data-id=\"qv4kjj8565\">他们在哪儿交流？</p>\n    </li>\n    <li>\n     <p data-id=\"waagn2nqsf\">他们抱怨些什么？</p>\n    </li>\n   </ul>\n   <p data-id=\"seu0vlrj45\"><span data-name=\"bulb\" data-type=\"emoji\">💡</span> 你无法解决自己不理解的问题</p>\n   <h3 data-id=\"ltv3zy6bi6\" id=\"ltv3zy6bi6\" data-toc-id=\"ltv3zy6bi6\">关注结果，而非功能</h3>\n   <p data-id=\"k3iylv8ojt\">用他们能取得的成就来吸引他们，而不是工作原理</p>\n   <ul>\n    <li>\n     <p data-id=\"dprpe70qji\">自信地部署</p>\n    </li>\n    <li>\n     <p data-id=\"3junvzkgeq\">更快地构建</p>\n    </li>\n    <li>\n     <p data-id=\"n480bsuyz5\">晚上睡个好觉</p>\n    </li>\n   </ul>\n   <p data-id=\"vwlusvlgz9\"><span data-name=\"bulb\" data-type=\"emoji\">💡</span> 人们买的是结果，而不是能力</p>\n   <h3 data-id=\"4aaamcp25y\" id=\"4aaamcp25y\" data-toc-id=\"4aaamcp25y\">保持简单</h3>\n   <p data-id=\"mx7mx20bwa\">小学四年级的阅读水平。短句子，清晰的语言。</p>\n   <ul>\n    <li>\n     <p data-id=\"b5mn4eralo\">不用术语</p>\n    </li>\n    <li>\n     <p data-id=\"1wgwhjnqjn\">一句话只讲一件事</p>\n    </li>\n    <li>\n     <p data-id=\"yu789mxn3d\">用 relatable (有共鸣) 的语言</p>\n    </li>\n   </ul>\n   <p data-id=\"hagdaaysdl\"><span data-name=\"bulb\" data-type=\"emoji\">💡</span> 复杂是转化率的天敌</p>\n   <h3 data-id=\"8nuvf2k6y6\" id=\"8nuvf2k6y6\" data-toc-id=\"8nuvf2k6y6\">情感先行，逻辑殿后</h3>\n   <p data-id=\"eq3hv7xyzk\">用情感钩住他们，再用事实来证明</p>\n   <ul>\n    <li>\n     <p data-id=\"5oa9isxh9g\">感觉自信 → 再展示监控数据</p>\n    </li>\n    <li>\n     <p data-id=\"xu9rvbkpxh\">情感第一，参数第二</p>\n    </li>\n   </ul>\n   <p data-id=\"em75v3446x\"><span data-name=\"bulb\" data-type=\"emoji\">💡</span> 人们凭情感购买，靠逻辑说服自己</p>\n   <h3 data-id=\"s2qg02uxx9\" id=\"s2qg02uxx9\" data-toc-id=\"s2qg02uxx9\">自信地表达观点</h3>\n   <p data-id=\"hyotyr9nkt\">对你做的每件事都要有强烈的观点</p>\n   <ul>\n    <li>\n     <p data-id=\"tj4k3glu6z\">我们是最好的</p>\n    </li>\n    <li>\n     <p data-id=\"4audfdfjk9\">就该这么做</p>\n    </li>\n    <li>\n     <p data-id=\"8kgmmxmkv8\">无需道歉</p>\n    </li>\n   </ul>\n   <p data-id=\"0j7cfcuyjk\"><span data-name=\"bulb\" data-type=\"emoji\">💡</span> 自信会传染，犹豫会赶客</p>\n   <p data-id=\"duoallyeo6\">就是这样。五个步骤。没什么革命性的东西，但大多数人至少会跳过其中三步。从用户开始，关注结果，保持简单，情感先行，保持自信。</p>\n   <p data-id=\"qq7etd8fyb\">始终如一地做到这五点，你就在成为一名优秀开发者营销人员的路上了。</p>\n   <p data-id=\"p21nud7tm6\">最棒的开发者营销不是创造客户，而是培养铁杆粉丝。</p>\n   <p data-id=\"1m01blzvxi\">但人们到底在为什么东西奔走相告呢？不是你的产品，是他们的成功。</p>\n   <p data-id=\"4wgiay8fqd\">因为按时交付了那个不可能的项目而获得晋升。创办了自己的公司。能早点回家，花更多时间陪伴家人。完成了一件他们从未想过可能实现的事情。</p>\n   <p data-id=\"odjujr4wna\">人们不会跟朋友聊你的产品功能，他们会聊自己是怎么赢的。</p>\n   <p data-id=\"ug10rsuj9s\"><strong>分享你的失败。</strong> 不要只展示光鲜亮丽的演示。要展示你曾如何与他们面临的同样问题作斗争。你的失败，会让他们的成功显得触手可及。</p>\n   <p data-id=\"yz8gnlucip\"><strong>请求帮助。</strong> 你的社区想要做出贡献。当他们帮助改进你的产品时，他们也对其他所有人的成功投入了感情。</p>\n   <p data-id=\"8ddy218tdw\"><strong>庆祝他们的胜利。</strong> 当有人用你的产品做出惊艳的东西时，让他们成为明星。主角不是你的产品，而是他们。他们的成功故事，会成为你最强大的营销素材。</p>\n   <p data-id=\"o8sv9vvqza\"><strong>持之以恒地出现。</strong> 他们成功时，你在。他们挣扎时，你也在。当有人关注时，成功的感觉会更棒。</p>\n   <p data-id=\"y8vac44ulh\">我们的目标不是诱骗人们使用你的产品，而是通过<strong>让他们成功</strong>，成为他们成功故事中不可或缺的一部分。</p>\n   <p data-id=\"nx4oijingm\">当你把这一切都做到位时，会发生什么呢？</p>\n   <p data-id=\"bqwg9txpzr\">有人试用了你的产品，因为你真正理解他们的问题。不是什么虚构的用户画像问题——而是他们真实、日常的挫败感。</p>\n   <p data-id=\"nibbvhts4j\">他们用了，产品很好用。他们比预期更快地交付了项目。他们在站会上脸上有光。他们难得地准时回了家。</p>\n   <p data-id=\"z13aalsm1d\">现在，他们有故事可讲了。“哥们，你必须试试这个东西。我花了两小时就把那个功能搞定了。”</p>\n   <p data-id=\"t6pewa5q0x\">他们的朋友也试了。同样的结果。更多的故事。</p>\n   <p data-id=\"bmh35o6zbq\">不知不觉中，你已经不用再做营销了。你的用户就是你的营销团队。而且，他们比你以往任何时候都更有说服力。</p>\n   <p data-id=\"6pr0f2f7bp\">这才是增长的真正方式。通过那些真心实意、忍不住告诉所有人他们的生活变得有多好的人。</p>\n   <p data-id=\"sfosb24ekr\">开发者营销归根结底就三件事：</p>\n   <ol>\n    <li>\n     <p data-id=\"k6g94paczi\"><strong>打造一个值得被谈论的产品</strong></p>\n    </li>\n    <li>\n     <p data-id=\"nsejlvqxbi\"><strong>用人话来谈论它</strong></p>\n    </li>\n    <li>\n     <p data-id=\"8yj4j9mwxi\"><strong>帮助其他人也来谈论它</strong></p>\n    </li>\n   </ol>\n   <p data-id=\"mddau7sz07\">其他的一切，都只是噪音。</p>\n   <p data-id=\"6r39sjqg2z\">基础是产品，执行是沟通。</p>\n   <p data-id=\"ml7nnkuiuw\">但秘诀，是让你的用户成功。</p>\n   <p data-id=\"za9tv9vo4e\">他们赢了，你才能赢。</p>\n   <p data-id=\"7u6xir3vjl\">当他们用你的工具取得了有意义的成就时，他们不仅仅是客户——他们成了你所创造价值的活生生的证明。</p>\n   <p data-id=\"uua5q1rfpd\">大多数人可能不把这叫做营销，但我认为，这就是。</p>\n   <p data-id=\"imht8kpe3y\">每周学习</p>\n   <hr>\n   <p data-id=\"2c3dyyz3ec\">原文链接: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://mattpalmer.io/posts/developer-marketing/\">https://mattpalmer.io/posts/developer-marketing/</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章深入阐释了开发者营销的核心原则，强调理解用户痛点、用“人话”沟通产品价值，并最终通过赋能用户成功实现增长。",
+  "oneSentenceSummary": "文章深入阐释了开发者营销的核心原则，强调理解用户痛点、用“人话”沟通产品价值，并最终通过赋能用户成功实现增长。",
+  "summary": "本文由 Matt Palmer 撰写，宝玉翻译，详细解读了开发者营销的本质。作者指出，开发者营销与其他营销并无不同，核心在于理解产品、理解用户和有效沟通。文章强调开发者营销人员需具备技术背景，以便真正理解产品和用户痛点。它批判了多数技术营销仅关注功能而非解决问题的“机器人模式”，倡导用“人类语言”将解决方案转化为用户可感知的价值和结果。文章提出了五步流程：从用户视角出发、关注结果、保持简单、情感先行逻辑殿后、自信表达观点。最终，文章强调开发者营销的秘诀是帮助用户成功，将客户转化为忠实粉丝，通过用户的成功故事实现产品的有机增长。",
+  "mainPoints": [
+    {
+      "point": "开发者营销的核心在于深刻理解产品和用户，最好营销者本身就是开发者。",
+      "explanation": "只有深入理解产品功能和用户的真实痛点，才能有效沟通产品价值，避免营销内容流于形式，确保与目标受众产生共鸣。"
+    },
+    {
+      "point": "有效的开发者沟通应将“解决方案行话”翻译成“人类语言”，聚焦用户成果而非功能。",
+      "explanation": "摒弃复杂的技术术语，用简洁、共鸣的语言描述产品能为用户带来的实际好处和成功，引发情感共鸣，再辅以逻辑证明。"
+    },
+    {
+      "point": "真正的增长来自于赋能用户成功，将他们转化为产品的忠实拥护者和传播者。",
+      "explanation": "通过帮助用户实现个人或职业上的成功，让他们成为产品价值的活生生证明，从而实现口碑传播和有机增长，而非单纯的功能推广。"
+    }
+  ],
+  "keyQuotes": [
+    "作为一名营销人，你的首要任务就是理解产品和用户。",
+    "最优秀的开发者营销人员，并不是最聪明的工程师。他们是那些对'为什么事情这么难'始终保持好奇心的人。",
+    "真正的魔法，发生在你将'解决方案行话'翻译回'人类语言'的那一刻。",
+    "人们买的是结果，而不是能力。",
+    "秘诀，是让你的用户成功。"
+  ],
+  "tags": [
+    "开发者营销",
+    "营销策略",
+    "增长策略",
+    "产品沟通",
+    "用户成功"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2620,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757950390000,
+  "publishDateStr": "2025-09-15",
+  "publishDateTimeStr": "2025-09-15 15:33:10"
+}

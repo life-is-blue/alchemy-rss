@@ -1,0 +1,63 @@
+{
+  "id": "RAW_826664d9",
+  "title": "代码日趋廉价，软件依然昂贵",
+  "url": "https://baoyu.io/translations/2026/01/13/code-is-cheap-software-isnt",
+  "date": "2026-01-13 00:00:00",
+  "author": "Chris Gregori",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt\">Code Is Cheap Now. Software Isn't.</a>\n    </div>\n    <div class=\"mt-2 flex text-sm font-medium text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">作者：<span style=\"background-color:inherit;font-size:1rem;\">Chris Gregori</span></span>\n    </div>\n   </div>\n  </div>\n  <img src=\"https://s.baoyu.io/imgs/2026-01-13/code-is-cheap-software-isnt/cover.png\" alt=\"代码日趋廉价，软件依然昂贵\" class=\"mt-2 mb-6 rounded-xl border bg-muted transition-colors w-full\" loading=\"lazy\">\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <blockquote>\n    <p><strong>原文标题</strong>：Code Is Cheap Now. Software Isn't.\n     <br>\n     <strong>作者</strong>：Chris Gregori（ <a href=\"https://x.com/codestirring\">https://x.com/codestirring</a> ）\n     <br>\n     <strong>原文链接</strong>：<a href=\"https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt\">https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt</a>\n     <br>\n     <strong>发布时间</strong>：2026-01-10</p>\n   </blockquote>\n   <p>软件构建的门槛已然崩塌，但构建<strong>有价值</strong>事物的门槛却依然高不可攀。</p>\n   <p>Claude Code 和 Claude Opus 4.5 的发布给这股热潮又添了一把火。虽然大语言模型（LLM）工具早已存在，但现在它们变得空前强大，吸引了更多目光。但这并非 SaaS（软件即服务）的黄金时代，我们正步入一个“个人化、用完即弃”的软件时代——在这个时代，工程重心从编写代码转向塑造系统，而这正是工程师依然无可替代的原因。</p>\n   <h2>现代开发的转变</h2>\n   <p><strong>Claude Code</strong> 最近刷爆了我的信息流，这背后有其道理。有趣的不只是开发者们蜂拥而至，而是那些原本依赖 Lovable 或 Replit 等平台的**“构建者”（Builders）和创客**也在纷纷迁移。</p>\n   <p>别误会，用来快速发布产品，原来的工具依然好用。但我们看到了一个明显转变：人们重新发现了<strong>命令行优先（CLI-first）工作流</strong>的内在美感。当你把交互转移到<strong>终端</strong>时，抽象层被削薄了。你不再是被动遵循托管界面为你铺设好的“快乐路径”，而是真正掌控全局的人。</p>\n   <hr>\n   <h2>门槛的崩塌</h2>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-13/code-is-cheap-software-isnt/illustration-barrier-collapse.png\" alt=\"门槛的崩塌\"></p>\n   <p>人们到底在用这些工具造什么？环顾四周，你会发现：万物皆可造。其实，我们已达饱和点。一方面，我们见证了<strong>软件创造真正的民主化</strong>。门槛实际上已经不复存在。有史以来第一次，<strong>非开发者</strong>不再仅仅是软件消费者，而是摇身一变，成了自家工具的<strong>架构师</strong>。</p>\n   <p>过去，如果你有个特定问题，得花好几个小时去搜一个能解决 80% 痛点的 SaaS 产品。如今，工作流变了。人们打开命令行或语音界面，直接描述需求。我们看到了**“个人软件”**的井喷：</p>\n   <ul>\n    <li>针对特定预算风格定制的<strong>订阅追踪器</strong></li>\n    <li>解决某个极小众数据录入问题的 <strong>Chrome 扩展</strong></li>\n    <li>界面完全符合用户心意的<strong>健身 App</strong></li>\n   </ul>\n   <p>这是一个巨大转变。<strong>软件正演变为一种你生成的个人效用工具，而非购买的商品。</strong></p>\n   <h2>从 SaaS 到\"草稿纸\"</h2>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-13/code-is-cheap-software-isnt/illustration-saas-vs-scratchpad.png\" alt=\"从 SaaS 到草稿纸\"></p>\n   <p>我们正进入软件开发的新纪元，在这里，目标不再总是长久存续。多年来，业界一直痴迷于构建“平台”和“生态系统”，但潮流正转向更“短命”的形态。我们正在从 SaaS 转向“草稿纸”（Scratchpads）。</p>\n   <p>这类新软件大多不是为了传世而生。恰恰相反，人们越来越多地构建工具来一次性解决单一、特定的问题，然后将其抛弃。这种软件被视为一种<strong>用完即弃的效用工具</strong>，它只活在当下，不问未来。</p>\n   <p>这一模式之所以可行，归功于一种特定的技术哲学：命令行优先的接口、本地数据和零上手成本。一旦消除了注册账户、配置数据库或在复杂界面中摸索的摩擦成本，创建工具的代价便几近于零。此时，“临时性”不再是缺陷，反而成了一种特性。如果花五分钟就能搞定一个针对一次性任务的定制方案，那你根本不需要它长久存在。</p>\n   <p>这与传统 SaaS 模式形成了鲜明对比。SaaS 的本质就是为了优化留存、锁定用户并扩张业务。它的商业模式旨在把你圈在生态系统里，不断增加你的足迹。反观这些定制工具，它们优化的是即时性和掌控力。它们不在乎你的终身价值（LTV），只在乎搞定眼前的问题。</p>\n   <p>从很多方面看，这回归了电子表格最初的用法。你打开 Excel 不是为了建一个永久的、用好多年的数据库；你把它当作草稿纸来理清问题、计算结果，然后继续下一步。</p>\n   <p>在这个新格局中，Claude Code 就像是开发者的 Excel——一个用来解决眼前问题的强大、灵活的实用工具；而不是创始人的 Shopify——那种为业务建立永久基石的平台。关键在于搞定工作，然后把工具扔在一边。</p>\n   <p>这也解释了为什么下一点至关重要：快速生成软件是一回事；让它在现实世界的碰撞中存活下来则是另一回事。</p>\n   <h2>代码日趋廉价，软件依然昂贵</h2>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-13/code-is-cheap-software-isnt/illustration-code-cheap-software-expensive.png\" alt=\"代码廉价，软件昂贵\"></p>\n   <p>这就是当前\"AI 原生\"时代的残酷现实：代码不值钱了，但软件依然昂贵。</p>\n   <p>大语言模型（LLM）有效地抹平了生成代码行的成本，但它丝毫没有降低真正理解问题的成本。我们看到无数“周末开发出的 App”泛滥成灾，但其中大多数只是对基础增删改查（CRUD）操作和第三方 API 的简单套壳（Wrapper）。它们在 Twitter 演示视频里看起来很酷，可一旦遭遇现实世界的摩擦，往往瞬间崩塌。</p>\n   <p>软件真正的成本不在于初次编写，而在于后续维护、边缘情况处理、不断累积的用户体验债务，以及数据所有权的复杂性。这些“速成”方案极其脆弱。</p>\n   <p>银行一改 CSV 导出格式，那个订阅追踪器就挂了；目标网站的 DOM 结构一变，那个 Chrome 扩展就废了；用户一旦需要强大的离线支持或可靠的数据同步，那个健身 App 就没法用了。</p>\n   <p>最近，我在 Hacker News、Reddit 和 Twitter 上看到很多关于“软件工程末日”的悲观论调。这完全搞错了重点。我们并没有见证这个职业的终结；我们正步入它的新纪元。</p>\n   <p>工程师的价值正在从语法的“怎么写”（How），转移到系统的“是什么”（What）和“为什么”（Why）。<strong>真正的工程在于抽象和架构</strong>。它关乎如何构建长久系统，理解为何需要特定限流策略，懂得管理分布式缓存，以及清楚知道环境变数绝对<em>不能</em>存放在何处。</p>\n   <p>AI 常让人觉得强大，因为它掩盖了复杂性。但作为工程师，你的工作是管理这种复杂性，而不是无视它。工具变了，但对工程严谨性的根本要求从未如此之高。</p>\n   <h2>分发的假象</h2>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-13/code-is-cheap-software-isnt/illustration-distribution-illusion.png\" alt=\"分发的假象\"></p>\n   <p>事情也有反面。随着门槛消失，<strong>噪音</strong>也达到了历史最高点。我的信息流现在充斥着**“AI 创业者”<strong>，声称他们用一下午做出来的 App 就能获得</strong>五位数的月经常性收入（MRR）**。</p>\n   <p>很多情况下，这些说法非常可疑。当你看到一个既无现有分发渠道又无清晰**“护城河”**的创作者，声称一个周末项目能赚 10,000 美元 MRR 时，这通常是骗取关注的手段，而非真实的商业反映。</p>\n   <p>有些故事或许是真的，但在大多数情况下，这些并非技术创新的蓝图，而是营销案例。这些人之所以成功，是因为他们精通在拥挤市场中博取眼球的艺术，而不只是因为他们有个 AI 副驾驶。</p>\n   <p>我们已经进入了一个代码生成不再是瓶颈的时代。<strong>真正的挑战已经转移到了分发</strong>，更重要的是，如何从行业中盛行的“快速致富”姿态中，分辨出<strong>真正的实用价值</strong>。</p>\n   <p>这些人并没有发现什么秘密捷径；他们只是找到了一种方法，能更快地执行既有优势（或者假如学编程对副业来说太难的话，AI 帮他们解锁了这个能力）。</p>\n   <p>我们可以换个视角看待这种转变：AI 实际上消除了作为主要差异化因素的工程杠杆。当任何开发者都能用 LLM 在极短时间内构建和部署复杂功能时，写代码的能力就不再是曾经的那种竞争优势了。光做一个“构建者”已经不够了。</p>\n   <p>相反，成功现在取决于那些更难被自动化的因素。品味、时机以及对受众深刻直觉的理解，比以往任何时候都重要。你可以在周末生成一个产品，但如果你造错了东西，或者把它推给了一群根本不在乎的人，那它依然一文不值。</p>\n   <p>在这个新环境中，代码变成了容易的部分。困难的部分依然如旧：想办法让人们在乎你的产品。</p>\n   <h2>谁是赢家</h2>\n   <p>首先，是那些受困于枯燥、重复性问题的领域专家。其次，是构建一次性工具的内部团队——那种需要立即生效而无需完美外观的脚本和内部应用。超级用户（Power Users）也是大赢家，尤其是当他们想用更稳健的方案替代脆弱的人工工作流时。最后，这对那些重视解决方案所有权胜过表面光鲜的工程师来说，也是一场胜利。</p>\n   <p>当然——像 Claude Opus 4.5、Claude Code 和 Cursor 这样的工具对工程师确实有用。它们在消除样板代码、实现功能和编写单元测试方面表现出色。最近我最喜欢的用例之一（特别是刚入职新工作时），就是生成个性化文档和功能演示，以快速熟悉代码库和各种细节——这对上手非常有帮助。</p>\n   <p>但现实是：LLM 并不完美——即使代码能一次编译通过。即便有高质量的提示词（Prompt）和清晰规则，这些模型依然会犯错。作为一个天天用这些工具的人，我可以告诉你，不能无脑信任输出结果。你依然得像审查同事的 Pull Request 一样审查代码。你得阅读逻辑，检查假设，通常还得手动修改才能搞定。</p>\n   <p>毕竟，你很可能要把代码发给队友审查（也许还要经过 Code Rabbit）——让队友去审查一堆你自己都没写过、甚至没费心检查过的代码，这公平吗？</p>\n   <p>这些工具能帮你跑得更快，但它们无法取代批判性的眼光，也无法替代你多年的经验，更不会比你更懂整体的问题空间。</p>\n   <hr>\n   <p>炒作让人觉得我们正步入 SaaS 的黄金时代。其实不然。我们正步入的是个人软件的时代：生成工具来解决问题，然后继续前行。</p>\n   <p>揣着二十美元，哪怕只有几小时闲暇，再加点耐心，几乎任何人都能发布一个功能完备的应用程序。我们正进入“个人软件”时代，从最初的灵感到做出可用产品之间的鸿沟从未如此之窄。</p>\n   <p>在这个新现实中，工程专业知识依然极具价值，只是角色的本质正在转变。其重要性并未消退，相反，现在的关键在于利用这些工具在比以前更高的层面上进行构建。驾驭这些系统并提供 LLM 目前缺乏的技术监督，需要真正的专业知识。</p>\n   <p>虽然 AI 写代码确实厉害，但在架构可维护、可分发和可扩展的系统方面，它依然很菜。这就是那些以为可以炒掉开发团队的非技术型领导者犯大错的地方。除非有一天人工智能发展到让整个讨论都变得毫无意义，否则相信“提示词可以取代技术专长”绝对是个战略误判。构建稳健的软件，依然需要一位理解这门手艺底层原则的人类。</p>\n   <p>归根结底，虽然工具变了，但优秀工程的根基未变。</p>\n   <p>门槛或许已消失，但判断力、品味和责任感，依然是这行饭碗的根本。</p>\n   <hr>\n   <p>希望这篇文章对你有所启发。<a href=\"https://www.twitter.com/codestirring\">在 Twitter 上关注我</a> 或 <a href=\"https://bsky.app/profile/codestirring.bsky.social\">Bluesky</a> 获取更多关于编程和 Elixir 的狂野观点。</p>\n   <p>去看看 <a href=\"https://defer.to\">defer.to</a> —— 我最近沉迷的项目！</p>\n   <hr>\n   <p><img src=\"https://baoyu.io/translations/2026/01/13/imgs/infographic.png\" alt=\"信息图\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章指出，AI 大模型使代码生成变得廉价，但构建有价值、可维护的软件依然昂贵，工程师的价值正从“写代码”转向“系统架构与管理复杂性”。",
+  "oneSentenceSummary": "文章指出，AI 大模型使代码生成变得廉价，但构建有价值、可维护的软件依然昂贵，工程师的价值正从“写代码”转向“系统架构与管理复杂性”。",
+  "summary": "文章深入探讨了在大型语言模型（LLM）工具日益强大的背景下，软件开发领域中代码生成门槛的降低，以及随之而来的工程师角色和软件价值重心的转移。作者 Chris Gregori 指出，尽管 LLM 如 Claude Code 能让代码变得廉价易得，但创建真正有价值、可维护、可扩展的软件仍然昂贵且困难。文章阐述了从传统 SaaS 转向“个人化、用完即弃”的“草稿纸”式软件的趋势，这种软件旨在一次性解决特定问题。同时，作者强调在 AI 时代，工程师的价值不再仅仅在于编写代码的“How”，而在于对系统进行抽象和架构设计的“What”和“Why”，以及管理复杂性。文章还讨论了“分发”的新挑战，指出在代码生成不再是瓶颈时，品味、时机和对用户需求的深刻理解变得更为重要。最终，文章总结称，尽管工具在变，但优秀工程的根基——判断力、品味和责任感——依然是核心价值。",
+  "mainPoints": [
+    {
+      "point": "AI 大模型降低了代码生成成本，推动了“个人软件”的兴起。",
+      "explanation": "LLM 使非开发者也能成为工具架构师，催生了针对特定需求的“用完即弃”型个人化软件，开发门槛大幅降低。"
+    },
+    {
+      "point": "软件的真正价值体现在其维护、边缘处理和用户体验上，而非初始代码生成。",
+      "explanation": "尽管代码生成廉价，但构建能够应对现实世界摩擦、管理复杂性并具备长期生命力的软件仍然需要高昂的投入，这凸显了“软件昂贵”的本质。"
+    },
+    {
+      "point": "工程师的重心正在从代码编写转向系统架构与复杂性管理。",
+      "explanation": "在 AI 辅助编码的时代，工程师的独特价值在于抽象复杂性、进行架构设计、理解系统运行原理及进行技术监督，而非仅仅是语法层面的实现。"
+    },
+    {
+      "point": "代码生成瓶颈消除后，成功的关键转向了分发和对需求的深刻理解。",
+      "explanation": "当任何人都可快速生成代码时，产品的品味、时机把握、用户洞察以及如何让产品被大众发现和接受，成为新的核心竞争力。"
+    },
+    {
+      "point": "工具改变但工程的根基不变，判断力、品味和责任感依然不可或缺。",
+      "explanation": "AI 工具能提高效率，但无法替代人类的批判性思维、经验积累和对整体问题空间的理解，人类工程师的监督和决策仍然至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "软件构建的门槛已然崩塌，但构建有价值事物的门槛却依然高不可攀。",
+    "软件正演变为一种你生成的个人效用工具，而非购买的商品。",
+    "代码不值钱了，但软件依然昂贵。",
+    "工程师的价值正在从语法的“怎么写”（How），转移到系统的“是什么”（What）和“为什么”（Why）。",
+    "门槛或许已消失，但判断力、品味和责任感，依然是这行饭碗的根本。"
+  ],
+  "tags": [
+    "人工智能",
+    "软件工程",
+    "LLM",
+    "开发效率",
+    "工程师转型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 88,
+  "wordCount": 3725,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768262400000,
+  "publishDateStr": "01-13",
+  "publishDateTimeStr": "2026-01-13 00:00:00"
+}

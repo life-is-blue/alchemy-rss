@@ -1,0 +1,54 @@
+{
+  "id": "RAW_a3af0a73",
+  "title": "我们如何修复 Cloudflare ACME 验证逻辑中的漏洞",
+  "url": "https://blog.cloudflare.com/acme-path-vulnerability/",
+  "date": "2026-01-19 14:00:00",
+  "author": "Hrushikesh Deshpande",
+  "siteName": "The Cloudflare Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On October 13, 2025, security researchers from <a href=\"https://fearsoff.org/\"><u>FearsOff</u></a> identified and reported a vulnerability in Cloudflare's ACME (Automatic Certificate Management Environment) validation logic that disabled some of the <a href=\"https://developers.cloudflare.com/waf/\"><u>WAF</u></a> features on specific ACME-related paths. The vulnerability was reported and validated through Cloudflare’s <a href=\"https://hackerone.com/cloudflare?type=team\"><u>bug bounty</u></a> program.</p>\n  <p>The vulnerability was rooted in how our edge network processed requests destined for the ACME HTTP-01 challenge path (<code><i>/.well-known/acme-challenge/*</i></code>).</p>\n  <p>Here, we’ll briefly explain how this protocol works and the action we took to address the vulnerability.&nbsp;</p>\n  <p><b>Cloudflare has patched this vulnerability and there is no action necessary for Cloudflare customers.</b> We are not aware of any malicious actor abusing this vulnerability.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"how-acme-works-to-validate-certificates\">How ACME works to validate certificates</h3>\n  </div>\n  <p>ACME is a protocol used to automate the issuance, renewal, and revocation of <a href=\"https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/\"><u>SSL/TLS certificates</u></a>. When an HTTP-01 challenge is used to validate domain ownership, a Certificate Authority (CA) will expect to find a validation token at the HTTP path following the format of <i>http://{customer domain}/.well-known/acme-challenge/{token value}</i>.&nbsp;</p>\n  <p>If this challenge is used by a certificate order managed by Cloudflare, then Cloudflare will respond on this path and provide the token provided by the CA to the caller. If the token provided does not correlate to a Cloudflare managed order, then this request would be passed on to the customer origin, since they may be attempting to complete domain validation as a part of some other system. Check out the flow below for more details — other use cases are discussed later in the blog post.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://cf-assets.www.cloudflare.com/zkvhlag99gkb/6myH4sEuRj4hhBPYiITWsB/9be3e62bdd7001ab1ef9b01db094de5b/BLOG-3067_2.png\" alt=\"BLOG-3067 2\" class=\"kg-image\" width=\"1999\" height=\"1062\" loading=\"lazy\">\n  </figure>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"the-underlying-logic-flaw\">The underlying logic flaw&nbsp;</h3>\n  </div>\n  <p>Certain requests to<i> /.well-known/acme-challenge/*</i> would cause the logic serving ACME challenge tokens to disable WAF features on a challenge request, and allow the challenge request to continue to the origin when it should have been blocked.</p>\n  <p>Previously, when Cloudflare was serving a HTTP-01 challenge token, if the path requested by the caller matched a token for an active challenge in our system, the logic serving an ACME challenge token would disable WAF features, since Cloudflare would be directly serving the response. This is done because those features can interfere with the CA’s ability to validate the token values and would cause failures with automated certificate orders and renewals.</p>\n  <p>However, in the scenario that the token used was associated with a different zone and not directly managed by Cloudflare, the request would be allowed to proceed onto the customer origin without further processing by WAF rulesets.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"how-we-mitigated-this-vulnerability\">How we mitigated this vulnerability</h3>\n  </div>\n  <p>To mitigate this issue, a code change was released. This code change only allows the set of security features to be disabled in the event that the request matches a valid ACME HTTP-01 challenge token for the hostname. In that case, Cloudflare has a challenge response to serve back.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"cloudflare-customers-are-protected\">Cloudflare customers are protected</h3>\n  </div>\n  <p>As we noted above,<b> Cloudflare has patched this vulnerability and Cloudflare customers do not need to take any action.</b> In addition, we are not aware of any malicious actor abusing this vulnerability.</p>\n  <div class=\"flex anchor relative\">\n   <h3 id=\"moving-quickly-with-vulnerability-transparency\">Moving quickly with vulnerability transparency</h3>\n  </div>\n  <p>As always, we thank the external researchers for responsibly disclosing this vulnerability. We encourage the Cloudflare community to submit any identified vulnerabilities to help us continually improve the security posture of our products and platform.&nbsp;</p>\n  <p>We also recognize that the trust you place in us is paramount to the success of your infrastructure on Cloudflare. We consider these vulnerabilities with the utmost concern and will continue to do everything in our power to mitigate impact. We deeply appreciate your continued trust in our platform and remain committed not only to prioritizing security in all we do, but also acting swiftly and transparently whenever an issue does arise.&nbsp;</p>\n </body>\n</html>",
+  "aiSummary": "Cloudflare 修复了一个逻辑缺陷，该缺陷曾导致特定 ACME 挑战路径的 WAF 防护被意外禁用，可能允许未经审查的流量到达客户源站。",
+  "oneSentenceSummary": "Cloudflare 修复了一个逻辑缺陷，该缺陷曾导致特定 ACME 挑战路径的 WAF 防护被意外禁用，可能允许未经审查的流量到达客户源站。",
+  "summary": "本文详细介绍了在 Cloudflare 的 ACME（自动证书管理环境）验证逻辑中发现的一个安全漏洞。该缺陷存在于边缘网络处理 HTTP-01 挑战请求的方式中。为了防止 WAF 干扰合法的证书续期，Cloudflare 的系统被设计为对匹配 '/.well-known/acme-challenge/*' 路径的请求绕过安全规则。然而，一个逻辑错误导致带有与其他区域（Zone）相关联令牌的请求也能绕过 WAF 并继续前往客户的源服务器。Cloudflare 随后部署了一个补丁，确保仅当请求与特定主机名的有效且本地管理的挑战令牌匹配时，才会禁用 WAF 功能。",
+  "mainPoints": [
+    {
+      "point": "ACME 路径处理中的逻辑缺陷允许某些指向源站的请求绕过 WAF。",
+      "explanation": "系统错误地为不匹配本地证书订单的请求禁用了安全功能，导致潜在的恶意流量在未经检查的情况下到达客户源站。"
+    },
+    {
+      "point": "WAF 功能最初在 ACME 路径上被禁用，以确保证书验证成功。",
+      "explanation": "安全规则有时会拦截证书颁发机构（CA）的验证机器人，因此 Cloudflare 绕过了这些规则以防止自动化证书续期失败。"
+    },
+    {
+      "point": "缓解措施涉及针对特定主机名对 ACME 令牌进行严格验证。",
+      "explanation": "Cloudflare 更新了其边缘逻辑，仅当请求匹配专门为该区域管理的有效、活跃的 ACME HTTP-01 挑战令牌时，才会禁用安全功能。"
+    }
+  ],
+  "keyQuotes": [
+    "某些指向 /.well-known/acme-challenge/* 的请求会导致处理 ACME 挑战令牌的逻辑在挑战请求上禁用 WAF 功能，并允许该挑战请求在原本应该被拦截的情况下继续前往源站。",
+    "在这种情况下，如果使用的令牌与不同的区域相关联且不直接由 Cloudflare 管理，则该请求将被允许继续前往客户源站，而无需经过 WAF 规则集的进一步处理。",
+    "此代码更改仅在请求匹配主机名的有效 ACME HTTP-01 挑战令牌时，才允许禁用安全功能集。",
+    "Cloudflare 已经修复了此漏洞，Cloudflare 客户无需采取任何行动。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "网络安全",
+    "ACME 协议",
+    "WAF",
+    "漏洞修复"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 597,
+  "domain": "blog.cloudflare.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_903ae3",
+  "sourceName": "The Cloudflare Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768831200000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 14:00:00"
+}

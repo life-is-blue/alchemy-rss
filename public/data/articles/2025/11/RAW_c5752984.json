@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c5752984",
+  "title": "TanStack Start：基于 React/SolidJS 的新型元框架",
+  "url": "https://www.infoq.com/news/2025/11/tanstack-start-v1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-07 09:30:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://tanstack.com/start/latest\">TanStack Start</a>, the full-stack framework built on top of <a href=\"https://tanstack.com/router/latest\">TanStack Router</a> and Vite for <a href=\"https://react.dev/\">React</a> and <a href=\"https://www.solidjs.com/\">Solid</a>, has launched version v1, introducing production ready capabilities including server side rendering, streaming hydration, server functions, and type-safe APIs. The release is&nbsp;TanStack’s entry&nbsp;into full meta-framework territory, offering an alternative to existing stacks such as <a href=\"https://nextjs.org/\">Next.js</a> and <a href=\"https://remix.run/\">Remix</a>.&nbsp;</p>\n   <p>The v1 release emphasizes three major areas: type-safe routing &amp; APIs, streaming-enabled server side rendering, and deployment flexibility. At its core, TanStack Start inherits the router’s fully inferred typing system, extending it into server routes and loader functions so that navigation and data loading share the same type definitions. The streaming SSR model lets applications send HTML to the client as soon as it’s ready, then hydrate and continue interactive loading, blurring the line between client and server rendering.</p>\n   <p>Deployment is designed to be universal, examples include Cloudflare Workers, Netlify, Vercel, or any Node/Bun target, thanks to the custom Vite plug-in and modern bundling strategy.&nbsp;</p>\n   <p>To illustrate the routing and data-loading model:</p>\n   <pre>\r\n<code>import { createFileRoute } from '@tanstack/react-router'\r\nimport { createServerFn } from '@tanstack/react-start'\r\n\r\nexport const getTodos = createServerFn({ method: 'GET' }).handler(async () =&gt; {\r\n   return fetch('/api/todos').then(r =&gt; r.json())\r\n})\r\n\r\nexport const Route = createFileRoute('/task-list')({\r\n  loader: getTodos,\r\n  component: TaskList,\r\n})\r\n\r\nfunction TaskList() {\r\n   // ... Example Component\r\n}</code></pre>\n   <p>This snippet demonstrates how server functions (<a href=\"https://tanstack.com/start/latest/docs/framework/react/guide/server-functions#basic-usage\">createServerFn</a>) and file-based route definitions combine into one unified API. Developers can find richer examples over on the <a href=\"https://github.com/TanStack/router/tree/main/examples/react/start-basic\">GitHub repo</a>&nbsp;for TanStack Start.</p>\n   <p>Community reaction has been optimistic, with a lot of comparisons made to other frameworks. An in depth comparison <a href=\"https://www.lorenstew.art/blog/10-kanban-boards\">between 10 different frameworks</a> for mobile performance showed that TanStack Start performed much better than alternatives such as Next.js in terms of bundle size and various performance metrics.</p>\n   <p>The creator of jQuery, John Resig, also <a href=\"https://x.com/jeresig/status/1982046991132889191?s=46\">weighed into the discussion</a> on X with the following:\n    <br>\n    <br>\n    <em>I've been using T</em>anstack<em> Start for a new project and it's super good. The server functions completely replace the need for TRPC/GraphQL/REST, the middleware is composable and fully typed, and having TSRouter's nice typing and stateful search params is icing on the cake. A+!</em>\n    <br>\n    <br>\n    The excitement for the project is seen in other forums too, such as this&nbsp;<a href=\"https://www.reddit.com/r/reactjs/comments/1mfi44m/will_tanstack_start_be_a_replacement_for_next/\">reddit thread</a> where some developers are considering it as a replacement for Next.js, and one user even mentioned they are using it <a href=\"https://www.reddit.com/r/reactjs/comments/1mfi44m/comment/n6hd9yj/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">in production for a complex project</a> already.</p>\n   <p>In terms of migration and tooling alignment, TanStack Start supports incremental integration: existing TanStack Router or TanStack Query applications can adopt Start’s server-function and SSR features gradually, with minimal disruption. The maintainers emphasise that Start augments the Router rather than replacing it outright, making it easier for teams to adopt.&nbsp;</p>\n   <p>For developers considering&nbsp;migrating from Next.js, there is a specific <a href=\"https://tanstack.com/start/latest/docs/framework/react/migrate-from-next-js\">migration guide</a> available.</p>\n   <p>TanStack Start is an open-source full-stack framework powered by TanStack Router and Vite, designed for React and Solid applications that need SSR, streaming, type-safe routing, and universal deployment. With the v1 release, TanStack expands its ecosystem from client-routing to full application stacks, offering teams a compelling alternative to more opinionated meta-frameworks, particularly those seeking type-safety and fine-grained control.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"TanStack Start: A New Meta Framework Powered By React Or SolidJS\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/tanstack-start-v1/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762507800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "TanStack Start v1 发布，作为 React/Solid 的类型安全、支持流式 SSR 的元框架，为 Next.js/Remix 提供了一种替代方案。",
+  "oneSentenceSummary": "TanStack Start v1 发布，作为 React/Solid 的类型安全、支持流式 SSR 的元框架，为 Next.js/Remix 提供了一种替代方案。",
+  "summary": "TanStack Start v1 版本发布，该框架构建于 TanStack Router 和 Vite 之上，为 React 和 SolidJS 提供全栈元框架支持。其主要功能包括生产环境可用的服务器端渲染（支持流式 hydration）、类型安全的 API，以及在 Cloudflare Workers 和 Vercel 等多种目标平台上的灵活部署。TanStack Start 定位为 Next.js 和 Remix 的替代方案，着重强调统一的类型安全路由和数据加载模型。jQuery 创始人 John Resig 等社区成员对该框架给予了积极评价，认为其在性能方面具有优势，并且易于现有 TanStack Router/Query 用户进行渐进式迁移。",
+  "mainPoints": [
+    {
+      "point": "TanStack Start v1 引入了用于全栈 Web 开发的生产就绪功能。",
+      "explanation": "它提供服务器端渲染、流式 hydration 和类型安全的 API，旨在成为 Next.js 和 Remix 等成熟元框架的有力竞争者。"
+    },
+    {
+      "point": "其类型安全的路由和服务器功能简化了数据加载和 API 交互。",
+      "explanation": "该框架通过共享类型定义统一了导航和数据加载，增强了开发者体验，并减少了全栈应用中常见的错误。"
+    },
+    {
+      "point": "TanStack Start 提供了部署灵活性并支持渐进式采用。",
+      "explanation": "它专为跨各种目标的通用部署而设计，并支持逐步集成到现有的 TanStack Router/Query 应用中，从而最大限度地减少团队的干扰。"
+    }
+  ],
+  "keyQuotes": [
+    "TanStack Start 是一个构建在 TanStack Router 和 Vite 之上，用于 React 和 Solid 的全栈框架。其 v1 版本已发布，并引入了生产就绪的功能，包括服务器端渲染、流式 hydration、服务器功能和类型安全的 API。",
+    "服务器功能完全取代了对 TRPC/GraphQL/REST 的需求，中间件可组合且类型安全，TSRouter 优秀的类型系统和有状态搜索参数更是锦上添花。A+!",
+    "TanStack Start 是一个由 TanStack Router 和 Vite 驱动的开源全栈框架，专为需要 SSR、流式传输、类型安全路由和通用部署的 React 和 Solid 应用程序而设计。"
+  ],
+  "tags": [
+    "元框架",
+    "React",
+    "SolidJS",
+    "SSR",
+    "类型安全"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 513,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762507800000,
+  "publishDateStr": "2025-11-07",
+  "publishDateTimeStr": "2025-11-07 09:30:00"
+}

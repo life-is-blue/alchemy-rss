@@ -1,0 +1,51 @@
+{
+  "id": "RAW_2f7fa0e3",
+  "title": "“优秀的工程管理”是一种潮流",
+  "url": "https://simonwillison.net/2025/Nov/23/good-engineering-management-is-a-fad/#atom-everything",
+  "date": "2025-11-23 21:29:09",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://lethain.com/good-eng-mgmt-is-a-fad/\">\"Good engineering management\" is a fad</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46026939\" title=\"Hacker News\">via</a>) Will Larson argues that the technology industry's idea of what makes a good engineering manager changes over time based on industry realities. ZIRP hypergrowth has been exchanged for a more cautious approach today, and expectations of managers has changed to match:</p>\n   <blockquote>\n    <p>Where things get weird is that in each case a morality tale was subsequently superimposed on top of the transition [...] the industry will want different things from you as it evolves, and it will tell you that each of those shifts is because of some complex moral change, but it’s pretty much always about business realities changing.</p>\n   </blockquote>\n   <p>I particularly appreciated the section on core engineering management skills that stay constant no matter what:</p>\n   <blockquote>\n    <ol>\n     <li><strong>Execution</strong>: lead team to deliver expected tangible and intangible work. Fundamentally, management is about getting things done, and you’ll neither get an opportunity to begin managing, nor stay long as a manager, if your teams don’t execute. [...]</li>\n     <li><strong>Team</strong>: shape the team and the environment such that they succeed. This is&nbsp;<em>not</em>&nbsp;working for the team, nor is it working for your leadership, it is finding the balance between the two that works for both. [...]</li>\n     <li><strong>Ownership</strong>: navigate reality to make consistent progress, even when reality is difficult Finding a way to get things done, rather than finding a way that it not getting done is someone else’s fault. [...]</li>\n     <li><strong>Alignment</strong>: build shared understanding across leadership, stakeholders, your team, and the problem space. Finding a realistic plan that meets the moment, without surprising or being surprised by those around you. [...]</li>\n    </ol>\n   </blockquote>\n   <p>Will goes on to list four additional growth skill \"whose presence–or absence–determines how far you can go in your career\".</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9162/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "“优秀的工程管理”的概念是动态的，随着行业现实而变化，但执行力、团队建设、主人翁精神和协同等核心技能始终不变。",
+  "oneSentenceSummary": "“优秀的工程管理”的概念是动态的，随着行业现实而变化，但执行力、团队建设、主人翁精神和协同等核心技能始终不变。",
+  "summary": "这篇文章总结了威尔·拉森的观点，认为技术行业中“优秀的工程管理”的普遍定义不是一个固定的标准，而是一种“潮流”，不断适应行业变化。例如，以零利率政策（ZIRP）为特征的超增长时期，对管理者的期望也随之改变，与当前更加谨慎的经济环境相比，作者批判性地观察到，虽然这些转变通常被描述为复杂的道德层面的转变，但它们从根本上是由不断变化的商业现实驱动的。尽管行业需求不断变化，但文章强调了四个核心工程管理技能的存在，这些技能保持不变且不可或缺。这些包括：**执行力**，即领导团队交付预期的有形和无形工作的能力；**团队**，涉及塑造团队及其环境以促进成功，有效地平衡团队和领导的需求；**主人翁精神**，展示应对复杂的局面并确保持续进步而不推卸责任的能力；以及**协同**，在领导、利益相关者、团队和问题空间之间建立共识，以创建现实的计划。这些基本技能被认为是管理者最初成功和长期职业发展的关键，在动态变化的环境中提供了一个稳定可靠的框架。",
+  "mainPoints": [
+    {
+      "point": "“优秀的工程管理”的定义是流动的，由不断变化的商业现实驱动，而不是道德层面的转变。",
+      "explanation": "行业对管理者的期望随着经济周期而变化（例如，超增长与谨慎），因此，何为“好的”管理取决于具体情况，并随着市场需求而变化。"
+    },
+    {
+      "point": "四个核心技能对于有效的工程管理至关重要。",
+      "explanation": "执行力、团队建设、主人翁精神和协同是基本能力，可确保管理者在不同行业阶段和经济条件下的成功和职业发展。"
+    }
+  ],
+  "keyQuotes": [
+    "奇怪的是，在每种情况下，道德说辞随后都叠加在转型之上 [...] 随着行业的发展，行业会提出不同要求，并且会告诉你每一次转变都是因为一些复杂的道德变化，但它几乎总是与商业现实的变化有关。",
+    "执行力：领导团队交付预期的有形和无形工作。管理的本质是完成目标，如果团队缺乏执行力，管理者将无法获得管理机会，也难以长期胜任。",
+    "团队：塑造团队和环境，使其获得成功。这既不是为团队服务，也不是为领导服务，而是在两者之间找到平衡，从而实现双赢。",
+    "主人翁精神：在复杂局面下保持进展，即使现实充满挑战。关键在于解决问题，而不是归咎于他人。",
+    "协同：在领导、利益相关者、团队和问题空间之间达成共识。制定切合实际的计划，避免意外情况。"
+  ],
+  "tags": [
+    "工程管理",
+    "技术领导力",
+    "行业趋势",
+    "管理技能",
+    "核心技能"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 283,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763933349000,
+  "publishDateStr": "2025-11-23",
+  "publishDateTimeStr": "2025-11-23 21:29:09"
+}

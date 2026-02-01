@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b27db65b",
+  "title": "Cursor 发布首个编程大模型！代码生成 250tokens/秒，强化学习+MoE 架构",
+  "url": "https://www.qbitai.com/2025/10/347234.html",
+  "date": "2025-10-30 01:30:40",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"64\">Jay 发自 凹非寺量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"5\">Cursor的首个编码模型，刚刚发布了！</p>\n  <p data-track=\"6\">最新进展，<strong>Cursor 2.0</strong>正式发布，并且首次搭载了「内部」大模型。</p>\n  <p data-track=\"7\">没错，不是GPT、不是Claude，如今模型栏多了个新名字——<strong>Composer</strong>。</p>\n  <p data-track=\"8\">实力相当炸裂：</p>\n  <p data-track=\"9\">据官方说法，<strong>Composer仅需30秒就能完成复杂任务，比同行快400%</strong>。</p>\n  <p data-track=\"11\">基于模型升级，Cursor 2.0带来了不少新玩意儿——</p>\n  <p data-track=\"12\"><strong>原生浏览器工具</strong>：模型可以自己动手测试代码、调错、迭代，直到结果完全正确。</p>\n  <p data-track=\"14\"><strong>语音生成代码</strong>：不用敲键盘，张嘴就行，直接把思路变成代码。</p>\n  <p data-track=\"16\"><strong>全新界面逻辑</strong>：从「以文件为中心」切换为「以Agent为中心」，多个Agent可以同时运行、互不干扰。</p>\n  <p data-track=\"17\">让多个Agent同时尝试同一问题并择优采用，能显著提升最终结果。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Cursor发布首个编程大模型！代码生成250tokens/秒，强化学习+MoE架构\" src=\"https://image.jido.dev/20251030033746_f1862f3e54b54508563cfc372a756d01.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"582\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">太多了太多了，根本看不完。</p>\n  <p data-track=\"20\">当然，其他的都是小菜，最炸裂的依然是——<strong>Cursor居然有了自己的基座模型</strong>。</p>\n  <p data-track=\"21\">要知道，以前的Cursor虽然火，但本质上还只是套壳GPT或Claude，再厉害也不是Cursor的功劳。</p>\n  <p data-track=\"22\">而这次不一样，Composer正式登场，Cursor终于能挺直腰板了。</p>\n  <p data-track=\"23\">难怪这回官网介绍语气都硬气了不少。（doge）</p>\n  <p data-track=\"24\">Cursor表示，这款模型是专为低延迟编码打造的，可以在 30秒内完成大多数交互任务。</p>\n  <p data-track=\"25\">即便面对体量庞大、结构复杂的代码库，也能保持高水准的推理与理解能力。</p>\n  <p data-track=\"26\">除了酷炫的Demo，当然还要用Benchmark秀秀肌肉。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Cursor发布首个编程大模型！代码生成250tokens/秒，强化学习+MoE架构\" src=\"https://image.jido.dev/20251030033746_ca3f533568ea4d6f33a2fa83741d2e6b.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\">Composer的性能全部通过内部测试套件 「Cursor Bench」 测得——这是一个根据真实开发者使用场景打造的评估系统。</p>\n  <p data-track=\"28\">该Benchmark不仅看代码是否正确，还评估模型是否能遵守抽象层次、风格规范和工程实践。</p>\n  <p data-track=\"29\">结果显示：<strong>Composer能以每秒250个tokens的速度生成代码。</strong></p>\n  <p data-track=\"30\">这速度比当前最快的推理模型（GPT-5、Claude Sonnet 4.5）快约两倍，比其其他模型更是快四倍。</p>\n  <p data-track=\"31\">速度快了，但脑子依然灵活，Composer显著提高了推理能力和任务泛化能力，水准可媲美中等前沿模型，</p>\n  <p data-track=\"33\">这么惊艳的表现，究竟是怎么炼成的？</p>\n  <p data-track=\"34\">Cursor研究科学家Sasha Rush透露了答案——关键在于强化学习。</p>\n  <blockquote>\n   <p data-track=\"35\">我们用强化学习训练了一个大型MoE模型，让它更贴近真实的编程任务，而且速度也非常快。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"Cursor发布首个编程大模型！代码生成250tokens/秒，强化学习+MoE架构\" src=\"https://image.jido.dev/20251030033746_55e6360cf91b9a79d4bafa403a58d67b.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"428\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">同时，为了和强化学习打配合，Cursor把自己在产品上的优势发挥到了极致。</p>\n  <blockquote>\n   <p data-track=\"37\">和其他机器学习方法不同，强化学习几乎无法从完整系统里抽象出太多内容。所以我们让Composer和Cursor一同设计，确保它能在真实规模下顺畅运行。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"Cursor发布首个编程大模型！代码生成250tokens/秒，强化学习+MoE架构\" src=\"https://image.jido.dev/20251030033746_18854c86ad33ffba639f51bf2d456b57.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"268\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">强化学习最大的特点是：它得在真实环境里「干活」，才能学到真本事。</p>\n  <p data-track=\"39\">如果Composer只在虚拟数据集里改改代码，它根本不知道这些代码有没有bug、测试能不能过。</p>\n  <p data-track=\"40\">所以，Cursor干脆让模型直接进「上战场」。在完整的 Cursor 环境 中运行、调用工具、执行命令，通过一次次真实交互，拿到最有效的反馈信号。</p>\n  <p data-track=\"41\">具体来说，Composer的训练不是喂静态数据集，而是基于真实的软件工程任务完成的。</p>\n  <p data-track=\"42\">训练时，模型直接在完整代码库里动手，用上整套生产级工具：文件编辑、语义搜索、终端命令……</p>\n  <p data-track=\"43\">面对复杂工程问题，它必须自己写、自己测、自己修。</p>\n  <p data-track=\"44\">每一轮训练都对应一个具体任务，比如写一段改动、拟一份方案，或者解释某个代码逻辑。</p>\n  <p data-track=\"45\">事实证明，强化学习确实让Composer的表现上了一个台阶。</p>\n  <p data-track=\"46\">它学会了如何聪明地选工具、灵活地做并行处理，不再会一拍脑袋给用户抽张废卡。</p>\n  <p data-track=\"47\">随着训练深入，模型甚至出现了涌现行为——能自动运行单元测试、修复代码格式错误，甚至可以自主完成多步代码搜索与调试流程。</p>\n  <p data-track=\"48\">而Cursor 2.0这次为多Agent协作提供的基础架构，正式建立在Composer这些底层能力的基础之上。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Cursor发布首个编程大模型！代码生成250tokens/秒，强化学习+MoE架构\" src=\"https://image.jido.dev/20251030033746_e1abd23d8511778e75933e6b10e30a16.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"49\">值得注意的是，这次Cursor带来的不只是一个更快的模型，而是一个真正面向实战的AI系统。</p>\n  <p data-track=\"50\">相比一味去和那些头部基座模型硬刚，Cursor这次更聪明地发挥了自己在应用端的产品优势——</p>\n  <p data-track=\"51\">让Composer直接在与用户相同的环境中运行，真正做到贴合开发者的日常工作流程。</p>\n  <p data-track=\"53\">话说回来，Composer的效果确实很惊艳，但Cursor似乎在故意回避一个问题——</p>\n  <p data-track=\"54\"><strong>强化学习没问题，但模型底子你倒是说清楚啊。</strong></p>\n  <blockquote>\n   <p data-track=\"55\">Composer的透明度缺失简直离谱。他们提到用了强化学习，但没交代模型的其他训练过程——\n    <br>\n    到底是自己预训练的，还是拿现成模型改的？\n    <br>\n    在他们公开更多细节、或有人能独立复现结果之前，我对这些说法都持保留态度。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"Cursor发布首个编程大模型！代码生成250tokens/秒，强化学习+MoE架构\" src=\"https://image.jido.dev/20251030033746_a5303948015a12096c7facc00b661073.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"213\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"56\">Cursor研究员Sasha Rush这些天也一直在 Hacker News 上亲自答疑，但对于「基础模型来源」这个问题，她始终没正面回应。</p>\n  <p data-track=\"57\">当被直接问到 「Composer是不是微调自某个开源模型？」 时，Rush的回答是：</p>\n  <blockquote>\n   <p data-track=\"58\">我们的主要关注点在于强化学习的后训练阶段，我们认为这是使模型成为强大的交互式智能体的最佳途径。</p>\n  </blockquote>\n  <p data-track=\"59\">不过可以确定的是，Cursor过去确实有自己的内部模型。</p>\n  <p data-track=\"60\">据悉，Cheetah是Composer的早期原型，团队曾用它来测试生成速度与系统集成效果。</p>\n  <p data-track=\"61\">不过嘛，正式版Composer到底是基于Cheetah，还是从开源模型的骨架上改的……</p>\n  <p data-track=\"62\">还需要让子弹再飞一会儿～</p>\n  <p data-track=\"63\">参考链接：\n   <br>\n   [1]https://news.ycombinator.com/item?id=45748725\n   <br>\n   [2]https://simonwillison.net/2025/Oct/29/cursor-composer/\n   <br>\n   [3]https://venturebeat.com/ai/vibe-coding-platform-cursor-releases-first-in-house-llm-composer-promising\n   <br>\n   [4]https://cursor.com/cn/blog/2-0\n   <br>\n   [5]https://x.com/srush_nlp/status/1983572683355725869\n   <br>\n   [6]https://x.com/cursor_ai/status/1983567619946147967</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Cursor 2.0 发布首个内部编程大模型 Composer，采用强化学习与 MoE 架构，实现 250tokens/秒代码生成，并带来原生浏览器工具、语音编程和多 Agent 协作等创新功能。",
+  "oneSentenceSummary": "Cursor 2.0 发布首个内部编程大模型 Composer，采用强化学习与 MoE 架构，实现 250tokens/秒代码生成，并带来原生浏览器工具、语音编程和多 Agent 协作等创新功能。",
+  "summary": "文章详细介绍了 Cursor 2.0 及其首次搭载的内部编程大模型 Composer。该模型采用强化学习（RL）和 MoE（Mixture of Experts）架构，旨在实现低延迟编码，官方宣称能以 250 tokens/秒的速度生成代码，并在 30 秒内完成复杂任务，性能超越现有主流模型。Cursor 2.0 还引入了原生浏览器工具、语音生成代码以及“以 Agent 为中心”的全新界面逻辑，支持多 Agent 并行运行。文章强调 Composer 通过在真实开发环境中进行 RL 训练，使其能调用工具、执行命令，学习到实际的编程技能和涌现行为。尽管性能卓越，文章也指出 Cursor 在模型底层透明度方面存在不足，未明确说明 Composer 是自研预训练还是基于现有模型微调。",
+  "mainPoints": [
+    {
+      "point": "Cursor 发布首个内部编程大模型 Composer，大幅提升代码生成速度与任务处理效率",
+      "explanation": "Composer 采用强化学习和 MoE 架构，实现 250 tokens/秒的代码生成速度，并在 30 秒内完成复杂任务，性能显著优于现有模型，是 Cursor 从套壳到自研的关键一步。"
+    },
+    {
+      "point": "Composer 通过在真实开发环境中进行强化学习训练，具备强大的实战能力",
+      "explanation": "模型直接在完整代码库中调用工具、执行命令，通过真实交互获得反馈，学习解决实际软件工程问题，并展现出自动测试、修复格式等涌现行为。"
+    },
+    {
+      "point": "Cursor 2.0 引入多项创新功能，如原生浏览器工具和 Agent-centric 界面",
+      "explanation": "这些新功能使模型能自行测试、调试代码，支持语音编程，并允许多个 Agent 并行协作，显著提升开发者工作效率和体验。"
+    }
+  ],
+  "keyQuotes": [
+    "Composer 仅需 30 秒就能完成复杂任务，比同行快 400%。",
+    "我们用强化学习训练了一个大型 MoE 模型，让它更贴近真实的编程任务，而且速度也非常快。",
+    "Composer 能以每秒 250 个 tokens 的速度生成代码。这速度比当前最快的推理模型（GPT-5、Claude Sonnet 4.5）快约两倍，比其其他模型更是快四倍。",
+    "强化学习最大的特点是：它得在真实环境里「干活」，才能学到真本事。",
+    "Composer 的透明度缺失简直离谱。他们提到用了强化学习，但没交代模型的其他训练过程------到底是自己预训练的，还是拿现成模型改的？"
+  ],
+  "tags": [
+    "编程大模型",
+    "强化学习",
+    "MoE架构",
+    "代码生成",
+    "AI编程工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2079,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761787840000,
+  "publishDateStr": "2025-10-30",
+  "publishDateTimeStr": "2025-10-30 01:30:40"
+}

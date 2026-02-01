@@ -1,0 +1,58 @@
+{
+  "id": "RAW_aa3b2f",
+  "title": "Gemini 2.0: Flash， Flash-Lite 和 Pro",
+  "url": "https://developers.googleblog.com/en/gemini-2-family-expands/",
+  "date": "2025-02-05 00:00:00",
+  "author": "Shrestha Basu Mallick, Logan Kilpatrick",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini-2-banner.original.png\" alt=\"Gemini-2-banner\">\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"6g5r2\"><b>Gemini 2.0 Family expands for developers</b></h2>\n    <p data-block-key=\"8ip0a\"><br>\n      Today we <a href=\"https://blog.google/technology/google-deepmind/gemini-model-updates-february-2025\">announced exciting updates</a> that make Gemini 2.0 available to more developers and production use. The following models are now available in the Gemini API via <a href=\"https://aistudio.google.com/\">Google AI Studio</a> and in <a href=\"https://console.cloud.google.com/freetrial?redirectPath=/vertex-ai/studio\">Vertex AI</a>:</p>\n    <p data-block-key=\"dph4h\"></p>\n    <ul>\n     <li data-block-key=\"a34i9\"><b>Gemini 2.0 Flash</b> is now generally available, with higher rate limits, stronger performance, and simplified pricing.</li>\n    </ul>\n    <p data-block-key=\"2dopt\"></p>\n    <ul>\n     <li data-block-key=\"ea6re\"><b>Gemini 2.0 Flash-Lite</b>, a new variant that is our most cost-efficient model yet, is now available in public preview.</li>\n    </ul>\n    <p data-block-key=\"92gtg\"></p>\n    <ul>\n     <li data-block-key=\"6pdu2\"><b>Gemini 2.0 Pro,</b> an experimental update to our best model yet for coding and complex prompts, is now available.</li>\n    </ul>\n    <p data-block-key=\"28d6b\">Together with the recently-launched <a href=\"https://deepmind.google/technologies/gemini/flash-thinking/\">Gemini 2.0 Flash Thinking Experimental</a>, our Flash variant that reasons before answering, these releases make Gemini 2.0 capabilities available to a broad range of use cases and applications.</p>\n    <h2 data-block-key=\"ackj0\"><br>\n      Model features</h2>\n    <p data-block-key=\"7ae8m\">Gemini 2.0 Flash offers a comprehensive suite of features, including native tool use, a 1 million token context window, and multimodal input. It currently supports text output, with image and audio output capabilities and the Multimodal Live API planned for general availability in the coming months. Gemini 2.0 Flash-Lite is cost-optimized for large scale text output use cases.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Full_Chart_G2.0.original.png\" alt=\"Gemini features across models comparison table gemini 2.0 flash lite pro experimental\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"zjx38\">Model performance</h2>\n    <p data-block-key=\"eof1g\">The Gemini 2.0 models deliver significant performance improvements over Gemini 1.5 across a range of benchmarks.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image6.original_JY99INi.png\" alt=\"The Gemini 2.0 models deliver significant performance improvements over Gemini 1.5 across a range of benchmarks.\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"6g5r2\">As with <a href=\"https://developers.googleblog.com/en/updated-gemini-models-reduced-15-pro-pricing-increased-rate-limits-and-more/\">prior models</a>, Gemini 2.0 Flash defaults to a concise style that makes it easier to use and reduces cost. It can also be <a href=\"https://ai.google.dev/gemini-api/docs/prompting-strategies#define-the-format-of-the-response\">prompted</a> to use a more verbose style that produces better results in chat-oriented use cases.</p>\n    <h2 data-block-key=\"5akkh\"><br>\n      Gemini Pricing</h2>\n    <p data-block-key=\"dhlkc\">We <a href=\"https://developers.googleblog.com/en/gemini-15-flash-8b-is-now-generally-available-for-use/\">continue</a> to reduce costs with Gemini 2.0 Flash and 2.0 Flash-Lite. Both have a single price per input type, removing the Gemini 1.5 Flash distinction between short and long context requests. This means the cost of both 2.0 Flash and Flash-Lite can be lower than Gemini 1.5 Flash with mixed-context workloads, despite the performance improvements that both deliver.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini-family-pricing-comparison-2.0-flash-lite.original_ndNIfQR.png\" alt=\"Gemini family pricing comparison 2.0 flash lite\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"6g5r2\">Follow these links to learn more about <a href=\"https://ai.google.dev/gemini-api/docs/tokens\">token counting</a> for different modalities, about <a href=\"https://ai.google.dev/pricing\">Gemini Developer API pricing</a>, and about <a href=\"https://cloud.google.com/vertex-ai/generative-ai/pricing\">Vertex AI pricing</a>.</p>\n    <p data-block-key=\"esra\">You can start building with the latest Gemini models in four lines of code, with an industry leading free tier and rate limits to scale to production. We’re inspired by your progress <a href=\"http://blog.google/feed/gemini-developer-use-cases-feb-2025\">thus far</a> and can’t wait to see how you will use these latest Gemini models. Happy building!</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "谷歌宣布推出扩展版 Gemini 2.0 系列，包括 Flash、Flash-Lite 和 Pro 型号，这些型号在性能、成本效益和开发者易用性方面有所提升，并新增了 Flash Thinking Experimental 以增强高级推理能力。",
+  "oneSentenceSummary": "谷歌宣布推出扩展版 Gemini 2.0 系列，包括 Flash、Flash-Lite 和 Pro 型号，这些型号在性能、成本效益和开发者易用性方面有所提升，并新增了 Flash Thinking Experimental 以增强高级推理能力。",
+  "summary": "本文介绍了 Gemini 2.0 模型家族的最新更新，现已通过谷歌 AI 工作室和顶点 AI 提供。文章重点介绍了三个关键变体：Gemini 2.0 Flash（具有增强功能的通用版本）、Flash-Lite（适用于大规模文本输出的成本高效选项）以及 Pro（针对编码和复杂任务优化的实验性更新）。此外，最近推出的 Gemini 2.0 Flash Thinking Experimental 被强调为一项重要补充，它在响应前提供推理能力。与 Gemini 1.5 相比，这些模型在性能上有显著提升，支持多模态输入，简化了定价结构并降低了成本。开发者可以利用谷歌 AI 工作室和顶点 AI 等工具，将这些模型无缝集成到他们的工作流程中。性能基准和定价细节通过图表展示，体现了技术深度和实际优势。",
+  "mainPoints": [
+    {
+      "point": "Gemini 2.0 Flash 提供增强的性能和简化的定价",
+      "explanation": "支持 1 百万标记的上下文窗口并具备多模态支持，相较于 Gemini 1.5，它提升了可用性并降低了成本。"
+    },
+    {
+      "point": "Flash-Lite 针对成本高效的大型文本输出进行了优化",
+      "explanation": "这一新变体适用于预算敏感型应用，同时不牺牲核心功能，非常适合高容量任务。"
+    },
+    {
+      "point": "Pro 针对高级编码任务和复杂指令",
+      "explanation": "作为实验性更新，它旨在满足诸如推理密集型任务和复杂问题解决场景等专门需求。"
+    },
+    {
+      "point": "Flash Thinking Experimental 增强了推理能力",
+      "explanation": "这一独特变体引入了预推理功能，扩展了使用案例范围，包括更复杂的决策和分析任务。"
+    }
+  ],
+  "keyQuotes": [
+    "结合最近发布的 Gemini 2.0 Flash Thinking Experimental，这些发布使 Gemini 2.0 的能力适用于广泛的应用场景和用途。",
+    "两种模型均采用统一的按输入类型定价模式，取消了 Gemini 1.5 Flash 对短上下文和长上下文请求的区分。",
+    "我们深受您迄今所取得进展的鼓舞，迫不及待地想看看您将如何使用这些最新的 Gemini 模型。",
+    "Gemini 2.0 Flash 默认采用简洁风格，使其更易于使用并降低成本。"
+  ],
+  "tags": [
+    "Gemini",
+    "大语言模型",
+    "模型更新",
+    "AI开发",
+    "Google AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 93,
+  "wordCount": 376,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738713600000,
+  "publishDateStr": "2025-02-05",
+  "publishDateTimeStr": "2025-02-05 00:00:00"
+}

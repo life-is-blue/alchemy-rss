@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5af6aa",
+  "title": "AWS 为 ECS 引入集成蓝绿部署功能",
+  "url": "https://www.infoq.com/news/2025/07/aws-blue-green-ecs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-22 00:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://aws.amazon.com/\">Amazon Web Services</a> has launched a new built-in <a href=\"https://www.infoq.com/articles/blue-green-deployments/\">blue/green deployment</a> feature for <a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html\">Amazon Elastic Container Service</a> (ECS). This capability allows development teams to deploy containerised applications safely whilst maintaining the ability to roll back near-instantaneously if issues arise, and makes a complex workaround using AWS CodeDeploy unnecessary.</p>\n   <p>The new feature addresses a common challenge faced by development teams who previously had to build and maintain custom tooling for blue/green functionality during releases to ECS. \"At scale, development teams spend valuable cycles building and maintaining undifferentiated deployment tools instead of innovating for their business,\" explained <a href=\"https://www.linkedin.com/in/donnieprakoso/\">Donnie Prakoso</a>, Principal Developer Advocate at AWS and <a href=\"https://aws.amazon.com/blogs/aws/accelerate-safe-software-releases-with-new-built-in-blue-green-deployments-in-amazon-ecs/\">author of the announcement</a>.</p>\n   <p><img alt=\"Blue/green deployment diagram, courtesy of Amazon Web Services\" data-src=\"https://www.infoq.com/news/2025/07/aws-blue-green-ecs/news/2025/07/aws-blue-green-ecs/en/resources/12025-news-ecsbg-rev-1-1753032327757.png\" style=\"width: 600px; height: 388px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/07/aws-blue-green-ecs/en/resources/12025-news-ecsbg-rev-1-1753032327757.png\" rel=\"share\"></p>\n   <p>Blue/green deployment is a software release strategy that maintains two identical production environments. The existing \"blue\" environment continues serving live traffic, while a new \"green\" environment is created when a new application version is to be deployed. After thorough testing and monitoring of the green environment, traffic is routed from blue to green, ensuring minimal user disruption and an easy rollback to the previous version if that is needed.</p>\n   <p>Prior to this announcement, AWS customers wanting blue/green deployment capabilities on ECS <a href=\"https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-ECSbluegreen.html\">had to rely on AWS CodeDeploy</a>, which required additional configuration and setup complexity. Engineers had various options to work around this, including swapping auto-scaling groups behind a Load Balancer and updating auto-scaling group launch configurations. The CodeDeploy approach, whilst functional, required teams to create separate CodeDeploy applications and deployment groups and manage complex IAM roles. AWS CodeDeploy managed the blue/green deployment process, but teams still had to configure Load Balancer listeners and target groups manually.&nbsp;Amazon ECS now orchestrates this entire workflow automatically, providing event hooks that allow teams to validate new software versions using synthetic traffic before exposing them to end users.</p>\n   <p>In the context of the new announcement, Chris Musther from The Scale Factory <a href=\"https://www.linkedin.com/posts/chris-musther_amazon-ecs-enables-built-in-bluegreen-deployments-activity-7351900247691862017-DYDx/\">wrote on LinkedIn</a>: \"It was possible to do via CodeDeploy and was outlined in the docs - this just makes it simpler and more feature rich.\"</p>\n   <p>The new capability integrates directly with existing ECS configurations and can be enabled through the ECS console, AWS CLI, or infrastructure as code tools. Users can configure how long instant rollback to blue remains available after production traffic shifts to the green environment, known as the \"bake time.\" Each service revision maintains immutable configuration, including task definition, load balancer settings, and Service Connect configuration, so that rollbacks will always restore exactly the same environment that was previously running.</p>\n   <p>During deployment, ECS automatically invokes Lambda functions at specified lifecycle stages, allowing comprehensive testing against the green revision. The six deployment lifecycle hooks are: pre-scale-up, post-scale-up, production traffic shift, test traffic shift, post-production traffic shift, and post-test traffic shift. These hooks can trigger AWS Lambda functions to perform custom validation logic, such as synthetic testing, API calls, or metrics queries, to check application health, run integration tests, or validate performance metrics before signalling whether to proceed or abort the deployment.</p>\n   <blockquote>\n    <p>My validation function can run comprehensive tests against the green revision—checking application health, running integration tests, or validating performance metrics.<br>\n      - Donnie Prakoso</p>\n   </blockquote>\n   <p>Other major cloud providers already have similar blue/green deployment strategies for containerised applications that aren't running on their own hosted Kubernetes services. Microsoft Azure provides <a href=\"https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment\">blue/green deployment capabilities through Azure Container Apps</a>, using container app revisions, traffic weights, and revision labels to achieve blue/green. The platform allows users to create instances of blue and green application versions, test and verify new revisions, then redirect traffic accordingly. Similarly, Google Cloud Run supports <a href=\"https://cloud.google.com/blog/products/serverless/cloud-run-now-supports-gradual-rollouts-and-rollbacks\">gradual rollouts and rollbacks</a> to achieve blue/green deployment.</p>\n   <p>Other industry reactions have been positive, though one Reddit commenter <a href=\"https://www.reddit.com/r/aws/comments/1m4cfn1/comment/n44tpwp/\">ponders the cutover's atomicity for busy services</a>:</p>\n   <blockquote>\n    <p>Good move by AWS—built‑in blue/green for ECS is a game changer for zero‑downtime deploys. Curious how clean the traffic shift is under load.</p>\n   </blockquote>\n   <p>The blue/green deployment capability is included with Amazon ECS at no additional charge. Users pay only for the compute resources used during the deployment process. The feature is available across all commercial AWS regions.</p>\n   <p>&nbsp;</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces Built-in Blue-Green Deployment Capability for ECS\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/aws-blue-green-ecs/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1753174800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 为 ECS 引入了一种新的集成蓝绿部署功能，简化了安全应用程序的发布与回滚流程，无需依赖外部工具。",
+  "oneSentenceSummary": "AWS 为 ECS 引入了一种新的集成蓝绿部署功能，简化了安全应用程序的发布与回滚流程，无需依赖外部工具。",
+  "summary": "这篇 InfoQ 文章宣布了 AWS 针对 Amazon Elastic Container Service（ECS）的新的集成蓝绿部署功能，解决了开发团队之前依赖复杂的自定义工具或 AWS CodeDeploy 所面临的重大挑战。新功能简化了容器化应用程序的部署过程，实现了安全发布，并具备接近即时回滚的能力。它与现有的 ECS 配置无缝集成，允许用户通过 ECS 控制台、AWS CLI 或基础设施即代码工具启用它。文章重点介绍了可配置的“观察期”和集成的生命周期钩子，这些钩子可以触发 Lambda 函数，以便在流量转移之前对新软件版本进行自定义验证和测试。它还将此功能与 Microsoft Azure 和 Google Cloud 提供的类似蓝绿产品进行了比较，强调了此增强功能使 ECS 的功能与行业标准保持一致。除了计算资源消耗外，该功能不收取额外费用，旨在加速安全软件发布并提高 ECS 用户的运营效率。",
+  "mainPoints": [
+    {
+      "point": "AWS ECS 现在提供集成蓝绿部署，无需复杂的外部工具。",
+      "explanation": "这项新功能简化了 ECS 上容器化应用程序的安全、零停机部署和即时回滚，无需依赖自定义工具或繁琐的 AWS CodeDeploy 配置。"
+    },
+    {
+      "point": "新功能直接与 ECS 集成，并通过生命周期钩子提供灵活的验证。",
+      "explanation": "用户可以配置“观察期”并利用 Lambda 触发的生命周期钩子，以便在路由生产流量之前对新软件版本进行全面测试，例如综合测试、API 调用和指标验证等。"
+    },
+    {
+      "point": "此增强功能使 AWS ECS 在蓝绿部署方面与其他主流云服务提供商对齐。",
+      "explanation": "集成的蓝绿部署功能使 ECS 的功能与 Azure Container Apps 和 Google Cloud Run 保持一致，从而在容器化应用程序部署策略中提供竞争优势。"
+    }
+  ],
+  "keyQuotes": [
+    "大规模的开发团队花费宝贵的周期来构建和维护无差别的部署工具，而不是为他们的业务进行创新。",
+    "可以通过 CodeDeploy 实现，并在文档中进行了概述——这只是使其更简单且功能更丰富。",
+    "我的验证函数可以对绿色版本运行综合测试——检查应用程序运行状况、运行集成测试或验证性能指标。",
+    "AWS 的一项明智之举——ECS 的集成蓝绿部署是零停机部署的游戏规则改变者。令人关注的是在高负载情况下流量切换的平滑程度。"
+  ],
+  "tags": [
+    "蓝绿部署",
+    "AWS ECS",
+    "容器化",
+    "部署自动化",
+    "云服务"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 663,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753142400000,
+  "publishDateStr": "2025-07-22",
+  "publishDateTimeStr": "2025-07-22 00:00:00"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "RAW_1c21a8",
+  "title": "构建 AI 智能体的经验分享",
+  "url": "https://baoyu.io/translations/learnings-from-building-ai-agents",
+  "date": "2025-06-26 18:04:09",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.cubic.dev/blog/learnings-from-building-ai-agents\">Learnings from building AI agents</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <h4 data-id=\"khp94h1f97\" id=\"khp94h1f97\" data-toc-id=\"khp94h1f97\">我们如何让 AI 代码审查助手变得更安静、更精准？</h4>\n   <p data-id=\"jf4v9rccty\">作者：Paul Sangle-Ferriere</p>\n   <p data-id=\"717lb8divg\">我是 Paul，<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"http://cubic.dev/\">cubic</a> 的联合创始人，cubic 是一个以 AI 为核心的“智能版 GitHub”。其中最重要的功能之一，就是一款 AI 代码审查智能体。它能自动审阅代码提交，帮助发现代码中的错误、不良设计模式、重复代码等问题。</p>\n   <p data-id=\"j5bwueabl0\">今年 4 月首次发布时，我们最常听到的用户反馈特别简单：<strong>AI 提出的反馈太多太吵了！</strong></p>\n   <p data-id=\"dxmv3z6jqz\">即便是很小的代码改动（PR），也常常被 AI 评论淹没，充斥着大量低价值的意见、过度挑剔甚至是误报。这不仅没有帮助开发者，反而干扰了真正重要的代码讨论。</p><img src=\"https://baoyu.io/uploads/2025-06-26/1750961084743.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"8kwczplukx\"><em>一个典型的鸡蛋里挑骨头的例子</em></p>\n   <p data-id=\"cgfzzcxoma\">于是，我们决定认真反思和深入研究问题的根源。</p>\n   <p data-id=\"6ztoip6f36\">经过三次重大的架构改进，以及大量线下测试，我们最终成功地将误报率降低了 <strong>51%</strong>，而且没有牺牲召回率（recall）。</p>\n   <p data-id=\"y4ylxkl3zx\">在这个过程中，我们得到了很多重要的教训。这些教训不仅适用于代码审查，也对设计其他高效 AI 智能体有极大帮助。</p>\n   <h2 data-id=\"k7ofpkwksf\" id=\"k7ofpkwksf\" data-toc-id=\"k7ofpkwksf\">1. “拍脑袋”阶段：一个包打天下的智能体行不通</h2>\n   <p data-id=\"d9u9wn6fq9\">我们最初设计的架构看起来简单明了：</p>\n   <p data-id=\"ue595odccm\">[代码差异]</p>\n   <p data-id=\"e2ls085mia\">↓</p>\n   <p data-id=\"ssxq8yx0mc\">[单个大提示词，包含代码库的全部上下文]</p>\n   <p data-id=\"1s0xk4kmck\">↓</p>\n   <p data-id=\"mrztef0lxo\">[输出评论列表]</p>\n   <p data-id=\"k6bb2tg3yw\">这种设计看起来很干净，实际却很快暴露了严重问题：</p>\n   <ul>\n    <li>\n     <p data-id=\"luptu0bul2\"><strong>误报太多</strong>：AI 智能体经常把代码风格的小问题误判为严重 bug，还重复提一些已经修复或被代码格式工具处理过的建议。</p></li>\n    <li>\n     <p data-id=\"e5gaijlgng\"><strong>用户失去信任</strong>：开发者很快开始忽略这些评论，当一半以上都是无关紧要的内容时，真正重要的信息自然也会被漏掉。</p></li>\n    <li>\n     <p data-id=\"oxr4evrrbp\"><strong>推理不透明</strong>：AI 为什么要提出特定建议，几乎无法解释。即使明确告诉它“忽略代码风格的小问题”，效果也很差。</p></li>\n   </ul>\n   <p data-id=\"pkk0fnc7x4\">我们尝试了标准方案——例如延长提示词、调整模型温度（temperature）和采样方式等，但效果都不明显。</p>\n   <h2 data-id=\"odneowops3\" id=\"odneowops3\" data-toc-id=\"odneowops3\">2. 我们最终有效的方案</h2>\n   <p data-id=\"jzmgvwfprj\">经过大量尝试，我们找到了一套在实际项目中真正有效的架构。这些方案使得我们现在能减少 51% 的误报率。</p>\n   <h4 data-id=\"61uy5jks11\" id=\"61uy5jks11\" data-toc-id=\"61uy5jks11\">2.1 强制要求 AI 给出明确的推理日志</h4>\n   <p data-id=\"aa5ogy6g74\">我们要求 AI 智能体在提出任何反馈之前，必须明确地记录自己的推理过程：</p>\n   <pre><code class=\"language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"reasoning\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"第 42 行 `cfg` 可能是空指针，但在第 47 行却直接引用了它。\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"finding\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"可能存在空指针解引用问题\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"confidence\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-number\">0.81</span>\n<span class=\"hljs-punctuation\">}</span>\n</code></pre>\n   <p data-id=\"9c6hbjxbzz\">这种方式带来了巨大好处：</p>\n   <ul>\n    <li>\n     <p data-id=\"bldairfagy\">能够清楚地了解 AI 为什么提出某个问题。如果推理本身有误，我们可以快速定位并修正。</p></li>\n    <li>\n     <p data-id=\"8mftezavv7\">促使 AI 进行结构化思考，先说明理由再做判断，极大减少了随意的错误结论。</p></li>\n    <li>\n     <p data-id=\"jpdlxitudc\">提供了诊断并彻底解决问题根源的有效依据。</p></li>\n   </ul>\n   <h4 data-id=\"286afgtosb\" id=\"286afgtosb\" data-toc-id=\"286afgtosb\">2.2 减少工具数量，聚焦于核心功能</h4>\n   <p data-id=\"7ftviqn5tu\">一开始，我们给 AI 配备了大量工具，例如语言服务器协议（LSP）、静态分析、测试工具等。但推理日志显示，其实大部分任务只需要几个核心工具，多余的工具反而让 AI 混乱。</p>\n   <p data-id=\"hpaokenirg\">我们最终简化工具链，仅保留最基本的语言服务器（LSP）和终端功能。</p>\n   <p data-id=\"mpi2jcva4k\">这样，AI 可以将精力专注在确认真正有意义的问题上，精准度大幅提高。</p>\n   <h4 data-id=\"ma57zn402o\" id=\"ma57zn402o\" data-toc-id=\"ma57zn402o\">2.3 使用“专职”微型智能体代替“大而全”规则集</h4>\n   <p data-id=\"daqf8s05wc\">刚开始，我们本能地想用一个超大提示词，添加越来越多规则来处理各种细节：</p>\n   <ul>\n    <li>\n     <p data-id=\"6vpg3txr61\">“忽略 <code>.test.ts</code> 文件中的未使用变量”</p></li>\n    <li>\n     <p data-id=\"y1stszek84\">“在 Python 的 <code>__init__.py</code> 文件中跳过导入检查”</p></li>\n    <li>\n     <p data-id=\"vc3w2giu4z\">“不对 Markdown 文件进行代码审查”</p></li>\n   </ul>\n   <p data-id=\"67jkytdgoy\">结果却发现这种做法既不可持续，也效率低下，AI 常常忽略掉大量规则。</p>\n   <p data-id=\"e2hmqrlm8y\">我们最终取得突破性进展的方案，是使用多个专门的微型智能体（micro-agents），每个只专注于非常明确的任务：</p>\n   <ul>\n    <li>\n     <p data-id=\"pniisw0eig\"><strong>规划智能体（Planner）</strong>：快速评估代码变化并确定需要进行的检查。</p></li>\n    <li>\n     <p data-id=\"uwxas84pia\"><strong>安全智能体（Security Agent）</strong>：专门检测安全漏洞，例如代码注入或认证安全问题。</p></li>\n    <li>\n     <p data-id=\"rwzp3dj2b7\"><strong>重复代码智能体（Duplication Agent）</strong>：负责检查代码是否存在重复或拷贝的情况。</p></li>\n    <li>\n     <p data-id=\"mniuanuu2k\"><strong>编辑智能体（Editorial Agent）</strong>：处理拼写错误和文档一致性。</p></li>\n   </ul>\n   <p data-id=\"r5il0ds35h\">微型智能体的专职分工，让每个智能体都能保持精细而专注的上下文，从而提高精准度。尽管整体的 token 使用量有所增加，我们通过有效的缓存策略成功控制了成本。</p>\n   <h2 data-id=\"0psrvm2jtp\" id=\"0psrvm2jtp\" data-toc-id=\"0psrvm2jtp\">3. 实际效果</h2>\n   <p data-id=\"t0d0qu2fl8\">这些架构和提示词的改进，在数百个活跃的开源和私有项目中获得了显著成果。在过去六周的实践中，我们具体收获包括：</p>\n   <ul>\n    <li>\n     <p data-id=\"oz0ijzbp77\">误报数量减少 51%，显著提升了开发者的信任和用户体验。</p></li>\n    <li>\n     <p data-id=\"nf3ehwn1la\">每个代码提交（PR）评论的中位数减少一半，让团队能够专注于真正重要的问题。</p></li>\n    <li>\n     <p data-id=\"vucwjifblm\">团队反馈称审查流程明显更流畅，节约了大量管理无效评论的时间，更高效地推动代码合并。</p></li>\n   </ul>\n   <p data-id=\"vzksmpqk74\">同时，AI 的精准性提高，让开发者更加信任和愿意与 AI 智能体互动，审查效率大大提升。</p>\n   <h2 data-id=\"1cfedtso4f\" id=\"1cfedtso4f\" data-toc-id=\"1cfedtso4f\">4. 关键经验总结</h2>\n   <ol>\n    <li>\n     <p data-id=\"tii709q94f\"><strong>明确推理是关键</strong>。要求 AI 首先说明理由，这不仅能提升准确度，也能极大简化后续的调试过程。</p></li>\n    <li>\n     <p data-id=\"e797i1tdya\"><strong>精简工具集</strong>。定期检查智能体所用的工具，果断移除使用率低于 10% 的工具。</p></li>\n    <li>\n     <p data-id=\"frl3kn6mqg\"><strong>专职微型智能体胜过大而全规则</strong>。每个智能体聚焦于一个明确的任务，减少认知负担，大幅提高准确性。</p></li></ol></div>\n \n",
+  "aiSummary": "通过强制推理日志、精简工具链和专职微型智能体等架构改进，成功将 AI 代码审查助手的误报率降低 51%，显著提升开发者信任度",
+  "oneSentenceSummary": "通过强制推理日志、精简工具链和专职微型智能体等架构改进，成功将 AI 代码审查助手的误报率降低 51%，显著提升开发者信任度",
+  "summary": "文章分享了 cubic 团队在开发 AI 代码审查智能体过程中的经验教训。最初设计的单一智能体架构存在误报率高、用户反馈称 AI 提出的反馈太多太吵且多为低价值意见等问题。通过三次重大改进，团队最终采用强制推理日志、精简工具链和专职微型智能体（包括规划、安全、重复代码、编辑等智能体）等策略，成功将误报率降低 51%，同时保持召回率。这些改进显著提升了开发者的信任度和审查效率，每个 PR 评论的中位数减少一半。关键经验包括：明确推理过程、精简工具集、采用专职微型智能体等。",
+  "mainPoints": [
+    {
+      "point": "强制推理日志显著提升 AI 审查准确性",
+      "explanation": "要求 AI 在提出反馈前记录推理过程，使判断更加结构化，减少了随意错误，同时提升了开发者信任度"
+    },
+    {
+      "point": "精简工具链有助于 AI 专注核心问题",
+      "explanation": "去除使用率低的工具，让 AI 集中精力处理真正重要的代码问题，精准度大幅提高"
+    },
+    {
+      "point": "专职微型智能体优于大而全的规则集",
+      "explanation": "多个专注特定任务（规划、安全、重复代码等）的微型智能体比单一复杂智能体更精准高效"
+    },
+    {
+      "point": "改进显著提升开发者信任和体验",
+      "explanation": "误报率降低 51%后，开发者更愿意与 AI 智能体互动，审查流程明显更流畅"
+    }
+  ],
+  "keyQuotes": [
+    "AI 提出的反馈太多太吵了！即便是很小的代码改动（PR），也常常被 AI 评论淹没，充斥着大量低价值的意见、过度挑剔甚至是误报",
+    "强制要求 AI 智能体在提出任何反馈之前，必须明确地记录自己的推理过程",
+    "我们最终简化工具链，仅保留最基本的语言服务器（LSP）和终端功能",
+    "专职微型智能体的分工，让每个智能体都能保持精细而专注的上下文，从而提高精准度",
+    "误报数量减少 51%，显著提升了开发者的信任和用户体验",
+    "明确推理是关键。要求 AI 首先说明理由，这不仅能提升准确度，也能极大简化后续的调试过程",
+    "精简工具集。定期检查智能体所用的工具，果断移除使用率低于 10%的工具"
+  ],
+  "tags": [
+    "AI智能体",
+    "代码审查",
+    "误报率优化",
+    "微型智能体",
+    "cubic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1880,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750961049000,
+  "publishDateStr": "2025-06-26",
+  "publishDateTimeStr": "2025-06-26 18:04:09"
+}

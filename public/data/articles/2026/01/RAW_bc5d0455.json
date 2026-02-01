@@ -1,0 +1,58 @@
+{
+  "id": "RAW_bc5d0455",
+  "title": "利用 Databricks Agent Bricks 构建合规风险 Copilot（第一部分：信息提取）",
+  "url": "https://www.databricks.com/blog/building-regulatory-risk-copilot-databricks-agent-bricks-part-1-information-extraction",
+  "date": "2026-01-21 19:50:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In July 2025, the US FDA publicly released an initial batch of <a data-external-link=\"true\" href=\"https://www.fda.gov/news-events/press-announcements/fda-announces-real-time-release-complete-response-letters-posts-previously-unpublished-batch-89\" target=\"_blank\" rel=\"noopener noreferrer\">200+ Complete Response Letters</a> (CRLs), decision letters explaining why drug and biologic applications were not approved on first pass, marking a major transparency shift. For the first time, sponsors, clinicians and data teams can analyze the industry through the agency’s own language about deficiencies across clinical, CMC, safety, labeling, and bioequivalence, via centralized, downloadable open FDA PDFs.</p>\n  <p>As the FDA continues to release new CRLs, the ability to rapidly generate insight from this and other unstructured data, and add to their internal intelligence/data, becomes a major competitive advantage. Organizations that can effectively harness these unstructured data insights, in the form of PDFs, documents, images, and beyond, can de-risk their own submissions, identify common pitfalls, and ultimately accelerate their path to market. The challenge is that this data, like many other regulatory data, is locked in PDFs, which are notoriously difficult to process at scale.</p>\n  <p>This is precisely the type of challenge Databricks was built to solve. This blog demonstrates how to use Databricks' latest AI tooling to accelerate the extraction of key information trapped in PDFs - turning these critical letters into a source of actionable intelligence.</p>\n  <h2>What it takes to be successful with AI</h2>\n  <p>Given the technical depth required, engineers often lead development in a silo, creating a wide gap between the AI build and the business requirements. By the time a subject matter expert (SME) sees the result, it's often not what they needed. The feedback loop is too slow and the project loses momentum.</p>\n  <p>During early testing phases, it is crucial to establish a baseline. In many cases, alternative approaches require wasting months without ground truths, relying instead on subjective observation and “vibes”. This lack of empirical evidence stalls progress. Conversely, Databricks tooling provides evaluation features out-of-the-box and allows customers to emphasize quality immediately - using an iterative framework to gain mathematical confidence in the extraction. AI success requires a new approach built on rapid, collaborative iteration.</p>\n  <p>Databricks provides a unified platform where business SMEs and AI engineers can work together in real-time to build, test, and deploy production-quality agents. This framework is built on three key principles:</p>\n  <ul>\n   <li><strong>Tight Business-Technical Alignment:</strong> SMEs and tech leads collaborate in the same UI for instant feedback, replacing slow email loops.</li>\n   <li><strong>Ground Truth Evaluation:</strong> Business-defined \"ground truth\" labels are built directly into the workflow for formal scoring.</li>\n   <li><strong>A Full Platform Approach:</strong> This isn't a sandbox or point solution; it’s fully integrated with automated pipelines, LLM-as-a-Judge evaluation, production-reliable GPU throughput, and end-to-end Unity Catalog governance.</li>\n  </ul>\n  <p>This unified platform approach is what turns a prototype into a trusted, production-ready AI system. Let's walk through the four steps to build it.</p>\n </body>\n</html>",
+  "aiSummary": "本文展示了如何利用 Databricks 统一 AI 平台从非结构化的 FDA 合规信函中提取结构化见解，强调业务与技术的对齐以及基于事实标准的评估。",
+  "oneSentenceSummary": "本文展示了如何利用 Databricks 统一 AI 平台从非结构化的 FDA 合规信函中提取结构化见解，强调业务与技术的对齐以及基于事实标准的评估。",
+  "summary": "文章探讨了处理非结构化合规数据的挑战，特别是 FDA 最近发布的完整回复函（CRLs）。这些文件包含关于药品申请缺陷的关键信息，但由于其 PDF 格式，难以进行大规模分析。Databricks 提出了一个使用其“Agent Bricks”框架的解决方案，该框架摒弃了孤立的开发模式，转向协作、迭代的方法。该方法侧重于三个核心原则：领域专家（SMEs）与工程师之间的紧密配合、使用数学事实标准而非主观“感觉”进行评估，以及包括 Unity Catalog 治理和 LLM-as-a-Judge 评估在内的全平台集成。这种方法旨在将原始合规 PDF 转化为可操作的情报，从而降低未来申报的风险。",
+  "mainPoints": [
+    {
+      "point": "如果能有效处理 FDA CRLs 等非结构化合规数据，将代表显著的竞争优势。",
+      "explanation": "从缺陷信函中提取见解，使机构能够识别临床和 CMC 领域的常见陷阱，从而可能加速其自身的药品审批流程。"
+    },
+    {
+      "point": "成功的 AI 开发需要缩小技术工程师与领域专家之间的差距。",
+      "explanation": "孤立的开发会导致结果偏差；Databricks 倡导统一的 UI，让领域专家在构建过程中向工程师提供即时反馈。"
+    },
+    {
+      "point": "使用事实标准进行实证评估，对于超越基于“感觉”的 AI 开发至关重要。",
+      "explanation": "通过迭代框架建立正式的评分和数学置信度，团队可以确保提取质量达到生产标准。"
+    },
+    {
+      "point": "从 AI 原型转向生产就绪系统，需要全平台化的方法。",
+      "explanation": "与自动化流水线、受治理的目录以及可靠的 GPU 吞吐量集成，可确保 AI 智能体具备可扩展性、安全性和可信度。"
+    }
+  ],
+  "keyQuotes": [
+    "挑战在于，这些数据与许多其他合规数据一样，被锁定在 PDF 中，而众所周知，PDF 很难进行大规模处理。",
+    "在许多情况下，替代方法在没有事实标准的情况下浪费数月时间，转而依赖主观观察和“感觉”。",
+    "AI 的成功需要一种建立在快速、协作迭代基础上的新方法。",
+    "这不仅仅是一个沙盒或点解决方案；它与自动化流水线、LLM-as-a-Judge 评估以及端到端的 Unity Catalog 治理完全集成。"
+  ],
+  "tags": [
+    "Databricks",
+    "信息提取",
+    "合规 AI",
+    "LLM-as-a-Judge",
+    "智能体工作流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 449,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769025000000,
+  "publishDateStr": "01-21",
+  "publishDateTimeStr": "2026-01-21 19:50:00"
+}

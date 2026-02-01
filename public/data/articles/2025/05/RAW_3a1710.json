@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3a1710",
+  "title": "Compose Multiplatform iOS 稳定版发布：可用于生产环境，并支持 hotload 随着 Compo",
+  "url": "https://juejin.cn/post/7501158867579387943",
+  "date": "2025-05-07 01:57:50",
+  "author": "恋猫de小郭",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>随着 Compose Multiplatform 1.8.0 的发布，iOS 版本也引来的第一个稳定版本，按照官方的原话：「iOS Is Stable and Production-Ready」 ，而 1.8.0 版本，也让 Kotlin 和 Compose 在移动端有了完整的支持。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/fa81f4dfeaea4e71a28a51448b8a5b9c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1747187870&amp;x-signature=JgRpaBMJ7NIkC8iHwSAczqy4z9g%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>在 2023 年 4 月 Compose 发布了 <a href=\"https://juejin.cn/post/7221800875743182907?searchId=20240527085801BD510F7F36C4152D273C\" target=\"_blank\" title=\"https://juejin.cn/post/7221800875743182907?searchId=20240527085801BD510F7F36C4152D273C\"><em>Compose for iOS Alpha</em></a> ，而在 2024 年的 5 月的 <a href=\"https://juejin.cn/post/7372572344249499675\" target=\"_blank\" title=\"https://juejin.cn/post/7372572344249499675\">1.6 版本发布了iOS Beta</a> ，一年后的今天，1.8 版本终于有迎来了 Stable 发布。</p>\n   <blockquote>\n    <p>三年之期已到，龙王归来？</p>\n   </blockquote>\n   <p>在官方的调查里，超过 96% 的开发者表示在 iOS 上使用 Compose Multiplatform 没有重大的性能问题，这也是官方本次 stable 的原因：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4a5ff1a817194d86a2c1fa5d1ab1bbee~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1747187870&amp;x-signature=TVQHZqfCLGGrseyP9tj6HhCbOJY%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>同时在性能对比也有不错的基准测试结果：</p>\n   <ul>\n    <li>启动时间与原生应用程序相当</li>\n    <li>滚动性能与 SwiftUI 相当</li>\n    <li>仅增加了 ~9 MB 的大小</li>\n   </ul>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/42380179eced485b93bccee136ced4e2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1747187870&amp;x-signature=7%2Fw4Oz1sNVW82jzFhIUhqn8n5yc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>基准测试：<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FJetBrains%2Fcompose-multiplatform%2Ftree%2Fmaster%2Fbenchmarks%2Fshowcases%2FLazyGridImageView\" target=\"_blank\" title=\"https://github.com/JetBrains/compose-multiplatform/tree/master/benchmarks/showcases/LazyGridImageView\" ref=\"nofollow noopener noreferrer\">github.com/JetBrains/c…</a></p>\n   </blockquote>\n   <p>如果你去看 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.jetbrains.com%2Fhelp%2Fkotlin-multiplatform-dev%2Fwhats-new-compose-180\" target=\"_blank\" title=\"https://www.jetbrains.com/help/kotlin-multiplatform-dev/whats-new-compose-180\" ref=\"nofollow noopener noreferrer\">1.8.0 的更新日志</a> ，就会看到 Compose 大部分都是 iOS 的亮点，基本这个版本就是为了 iOS 而发布，其中最有意思的莫过于本次加入了并发渲染﻿支持：</p>\n   <blockquote>\n    <p>Compose Multiplatform 在 iOS 现在支持将渲染任务卸载到专用渲染线程，而并发渲染可以在没有 UIKit 互操作的情况下提高性能。</p>\n   </blockquote>\n   <p>用户通过直接在 <code>ComposeUIViewController</code> 配置块中启用 <code>ComposeUIViewControllerConfiguration</code> 类的 <code>useSeparateRenderThreadWhenPossible</code> 标志或 <code>parallelRendering</code> 属性，选择在单独的渲染线程上对渲染命令进行编码：</p>\n   <pre><code class=\"hljs language-kotlin code-block-extension-codeShowNum\" lang=\"kotlin\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\"><span class=\"hljs-meta\">@OptIn(ExperimentalComposeUiApi::class)</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\"><span class=\"hljs-function\"><span class=\"hljs-keyword\">fun</span> <span class=\"hljs-title\">main</span><span class=\"hljs-params\">(<span class=\"hljs-keyword\">vararg</span> args: <span class=\"hljs-type\">String</span>)</span></span> {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">    UIKitMain {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\">        ComposeUIViewController(configure = { parallelRendering = <span class=\"hljs-literal\">true</span> }) {</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\">            <span class=\"hljs-comment\">// ...</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"6\">        }</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"7\">    }</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"8\">}</span>\n</code></pre>\n   <p><strong>而另一个 iOS 的核心实现就是 Kotlin/Native</strong> ，Kotlin/Native 是 KMP 在 iOS 支持的关键能力，它负责将 Kotlin 代码直接编译为目标平台的机器码或 LLVM 中间表示 (IR)，最终为 iOS 生成一个标准 <code>.framework</code> ，这也是为什么 Compose iOS 能实现接近原生的性能。</p>\n   <blockquote>\n    <p>鸿蒙 Compose 实现支持目前主流也是 Kotlin/Native ，不得不说 Kotlin 最强大的核心价值不是他的语法糖，而是他的编译器。</p>\n   </blockquote>\n   <p>当然，Compose Multiplatform 的 UI 渲染并非直接依赖于 iOS 的 UIKit 或 SwiftUI 的原生组件，而是依赖于Skia 图形库，在 Compose Multiplatform 里是通过 Skiko (Skia for Kotlin) 这套 Kotlin 绑定库的能力进行绘制。</p>\n   <blockquote>\n    <p>简单理解，Skiko 在 iOS 利用 <code>CAMetalLayer</code> 作为其绘图表面，Compose UI 的每一帧都会通过 Skia 引擎渲染到由 <code>CAMetalLayer</code> 提供的 Metal 纹理上，这层实现逻辑和 Flutter 类似。</p>\n   </blockquote>\n   <p>而前面提到了 UIKit 的互操作，这也是 Compose 渐进式集成的支持之一，在 iOS 上 Compose 可以同时与 SwiftUI 和 UIKit 进行互操作，换句话说，开发者可以在 Swift/UIKit 中使用 Compose，也在 Compose 中使用 SwiftUI/UIKit 。</p>\n   <blockquote>\n    <p>当然，基于 Compose iOS 的实现模式，在继承的数据绑定和状态同步交互上可能还会存在某些边界问题。</p>\n   </blockquote>\n   <p>同时，就像我们之前聊过的，<a href=\"https://juejin.cn/post/7449965819360411685\" target=\"_blank\" title=\"https://juejin.cn/post/7449965819360411685\">klibs.io 的发布</a>也补全了 Compose Multiplatform 在跨平台最后一步，这也是 Compose iOS 能正式发布的另外一个原因：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/04276d725c504ec0a462c64193733bef~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1747187870&amp;x-signature=py3ImE2mm9k6yhO4iuoNT5IeD%2Fk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>而 1.8 下的 Compose iOS 也更新了一些细节：、</p>\n   <ul>\n    <li>与原生 iOS 物理特性匹配的滚动行为</li>\n    <li>原生 selection 和从右到左支持的文本编辑</li>\n    <li>与系统的拖放集成</li>\n    <li>遵循系统设置（如字体大小和对比度）的自适应 UI</li>\n    <li>iOS 原生的导航手势</li>\n   </ul>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a72550775b41497b893f7ebc4145c827~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1747187870&amp;x-signature=U4JUoQN8GGm3wNAAd2KpnSvYOB0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>目前官方表示，许多团队（包括 Markaz、Wrike、Feres 和 Physics Wallah）已经将 Compose Multiplatform 集成到它们的大型应用中，根据 Compoes 的理念 ，可以一次集成一个屏幕或功能，所以你无需从头开始就可以使用 Compose iOS。</p>\n   <blockquote>\n    <p>也就是除了 Web 路线之后，基本上 Compose 在 Stable 的节奏上已经跟上了 Flutter 。</p>\n   </blockquote>\n   <p>最后，现在 <strong>Compose 的 hot reload 已经可以使用</strong> ，现在 Compose Multi 开发可以和 Flutter 一样在更改代码后立即查看结果：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c3b850a15a22440d83b81af9cb6fa0b2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1747187870&amp;x-signature=xvKb0s0PE5Ipbjnu1SVGVTQRFh0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>在补全这一点后， Compose 跨平台的开发体验也上了一个档次，至少 hot load 的体验比 preview 好太多了。</p>\n   </blockquote>\n   <p>那么，你已经用上 Compose iOS 了吗？或者说你接下来会考虑吗？</p>\n   <h2 data-id=\"heading-0\">参考链接</h2>\n   <ul>\n    <li><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fblog.jetbrains.com%2Fkotlin%2F2025%2F05%2Fcompose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready%2F\" target=\"_blank\" title=\"https://blog.jetbrains.com/kotlin/2025/05/compose-multiplatform-1-8-0-released-compose-multiplatform-for-ios-is-stable-and-production-ready/\" ref=\"nofollow noopener noreferrer\">blog.jetbrains.com/kotlin/2025…</a></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Compose Multiplatform iOS 稳定版发布，支持并发渲染和热重载，标志着 Kotlin 跨平台移动开发进入新阶段。",
+  "oneSentenceSummary": "Compose Multiplatform iOS 稳定版发布，支持并发渲染和热重载，标志着 Kotlin 跨平台移动开发进入新阶段。",
+  "summary": "Compose Multiplatform 1.8.0 版本正式发布，标志着其 iOS 版本进入生产可用阶段。该版本性能接近原生，启动速度和滚动性能优秀，并增加了并发渲染支持。Compose Multiplatform 依赖 Kotlin/Native 和 Skia 实现高性能渲染，并支持与 SwiftUI 和 UIKit 的互操作。Compose 现在也支持 Hot Reload，提升了开发体验。许多团队已经开始将 Compose Multiplatform 集成到大型应用中。",
+  "mainPoints": [
+    {
+      "point": "Compose Multiplatform iOS 版本已稳定，可用于生产环境",
+      "explanation": "官方已声明 iOS 版本达到稳定状态，性能测试结果良好，超过 96% 的开发者表示没有重大性能问题。"
+    },
+    {
+      "point": "并发渲染和 Kotlin/Native 是 Compose iOS 实现高性能的关键",
+      "explanation": "并发渲染通过专用渲染线程提高性能，Kotlin/Native 将 Kotlin 代码编译为原生机器码，保证了运行效率。"
+    },
+    {
+      "point": "Compose Multiplatform 支持与 UIKit 和 SwiftUI 互操作",
+      "explanation": "开发者可以在现有的 Swift/UIKit 项目中逐步集成 Compose，无需完全重写，降低了迁移成本。"
+    },
+    {
+      "point": "Compose 补全 Hot Reload 功能，提升跨平台开发效率",
+      "explanation": "开发者可以像 Flutter 一样，修改代码后立即看到效果，极大地提高了开发效率和调试体验。"
+    },
+    {
+      "point": "Compose Multiplatform 在跨平台移动开发领域已成为 Flutter 的有力竞争者",
+      "explanation": "Compose Multiplatform 的稳定发布和持续优化，使其在跨平台开发领域具有更强的竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "iOS Is Stable and Production-Ready",
+    "Kotlin/Native 是 KMP 在 iOS 支持的关键能力",
+    "Compose Multiplatform 在 iOS 现在支持将渲染任务卸载到专用渲染线程",
+    "Compose Multiplatform 允许渐进式集成，降低迁移成本",
+    "Compose 跨平台的开发体验也上了一个档次，至少 hot load 的体验比 preview 好太多了"
+  ],
+  "tags": [
+    "Compose Multiplatform",
+    "Compose iOS",
+    "iOS",
+    "Kotlin/Native",
+    "Skia"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1177,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746583070000,
+  "publishDateStr": "2025-05-07",
+  "publishDateTimeStr": "2025-05-07 01:57:50"
+}

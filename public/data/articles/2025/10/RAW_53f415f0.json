@@ -1,0 +1,55 @@
+{
+  "id": "RAW_53f415f0",
+  "title": "Kimi 开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨 6 倍",
+  "url": "https://www.qbitai.com/2025/10/347789.html",
+  "date": "2025-10-31 08:49:31",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"41\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"42\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">Transformer的时代，正在被改写。</p>\n  <p data-track=\"3\">月之暗面最新发布的开源<strong>Kimi Linear</strong>架构，用一种全新的注意力机制，在相同训练条件下<strong>首次超越了全注意力模型</strong>。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_c01ab311e050e67d8a4a7117f9b276dd.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"583\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">在长上下文任务中，它不仅减少了75%的KV缓存需求，还实现了高达6倍的推理加速。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_e8d0d1fae038681c5aadcb3b2e058d76.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"393\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">有网友表示期待：这个架构下的Kimi K2.5何时来？？</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_6e557273b492c94fd6a302306398a516.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"1056\" data-height=\"160\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">不过，咱还是先来看一下Kimi Linear是如何挑战传统Transformer的。</p>\n  <p data-track=\"8\">Transformer确实聪明，但聪明得有点太烧钱。</p>\n  <p data-track=\"9\">它的注意力机制是全连接的，每个token都要和其他所有token打交道。</p>\n  <p data-track=\"10\">计算量也随着输入长度呈平方增长（O(N²)），而且每生成一个新词，还要查一遍之前的所有缓存。</p>\n  <p data-track=\"11\">这就导致推理阶段的KV Cache占显存极大，尤其是在128K以上的上下文中，显卡直接崩溃警告。</p>\n  <p data-track=\"12\">模型越强，显卡越崩，钱包越痛。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093817_e4eec96a4ec40499dcf4ce9d2c9fe0c8.jpeg\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"234\" data-height=\"232\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">所以，过去几年无数团队都在研究<strong>线性注意力</strong>，希望把计算从 O(N²) 降到 O(N)，让模型能又快又省。</p>\n  <p data-track=\"14\">但问题是，以前的线性注意力都记不住东西，快是快了，but智商打折。</p>\n  <p data-track=\"15\">现在，Kimi Linear以既要又要还要的姿态登场了。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_13ecb1e7e4df1b12d6afe19ab8bcd707.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"1058\" data-height=\"1066\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">Kimi Linear的核心创新是<strong>Kimi Delta Attention（KDA）</strong>。</p>\n  <p data-track=\"17\">它在原有线性注意力的基础上，引入了<strong>细粒度遗忘门控</strong>，不再像传统线性注意力那样一刀切地遗忘，而是让模型可以在每个通道维度上独立地控制记忆保留，把重要信息留下，把冗余信息扔掉。</p>\n  <p data-track=\"18\">更关键的是，KDA的状态更新机制是基于一种<strong>改进的Delta Rule</strong>（增量学习规则）。</p>\n  <p data-track=\"19\">它在数学上保证了稳定性，即使是在百万级token序列中，梯度也不会爆炸或消失。</p>\n  <p data-track=\"20\">这也让Kimi Linear能在超长上下文中跑得稳。</p>\n  <p data-track=\"21\">整个模型采用<strong>3:1的混合层设计</strong>，每3层线性注意力（KDA）后加1层全注意力。这样既保留全局语义的建模能力，又能在多数层用线性计算节省资源。</p>\n  <p data-track=\"22\">团队还干脆把传统的RoPE（旋转位置编码）砍掉，让KDA自己通过时间衰减核函数学习序列位置信息。</p>\n  <p data-track=\"23\">结果，没有RoPE，模型反而更稳、更泛化。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_55614a920495dafcebe3f003a8df3c97.jpeg\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"234\" data-height=\"196\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">在KDA的状态更新过程中，Kimi Linear用了一种叫Diagonal-Plus-Low-Rank（DPLR）的结构。</p>\n  <p data-track=\"25\">核心思路是把注意力矩阵拆成「对角块+低秩补丁」，这样GPU在并行计算时能一次性处理更多内容，吞吐率直接翻倍。</p>\n  <p data-track=\"26\">此外，团队还引入了分块并行计算和kernel fusion优化（内核融合），极大地减少了显存I/O开销。</p>\n  <p data-track=\"27\">在工程部署上，它还能无缝对接vLLM推理框架，不需要改模型结构，也不需要改缓存管理，直接替换即可。</p>\n  <p data-track=\"28\">这意味着，任何基于Transformer的系统在理论上都能一键升级为Kimi Linear。</p>\n  <p data-track=\"29\">实验结果显示，在相同训练规模下，比如1.4T tokens，Kimi Linear在MMLU、BBH、RULER、GPQA-Diamond等多个基准测试上全面超越Transformer。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_300989a20b513245d945f09dfb42555e.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"986\" data-height=\"616\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">长上下文推理中，解码速度提升最高达6倍，KV缓存减少75%。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093810_7794a886fed41a230976988ef6573928.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"393\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\">不仅没丢精度，还在数学推理、代码生成等任务上更稳定、更高分。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251031093812_16cbbd01a78d55735842c949335065be.png\" alt=\"Kimi开源新线性注意力架构，首次超越全注意力模型，推理速度暴涨6倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"357\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">不得不说，Transformer的地位正在被重新审视。</p>\n  <p data-track=\"34\">Mamba的作者曾用长文论述Transformer并非最终解法，状态空间模型（SSM）在长序列建模和高效计算上展现出强大的替代潜力，这也让人们重新思考注意力是否真的是唯一答案。</p>\n  <p data-track=\"35\">之前谷歌推出的MoR架构，探索用递归结构取代部分注意力，通过动态计算深度来减少冗余推理，进一步提升效率。</p>\n  <p data-track=\"36\">苹果公司也在多项研究中倾向采用Mamba，而非传统Transformer，理由很现实——SSM架构更节能、延迟更低、适合在终端设备上部署。</p>\n  <p data-track=\"37\">现在，Kimi Linear则从另一条路线突围，在线性注意力方向上取得突破。</p>\n  <p data-track=\"38\">或许这也预示着，AI架构正在告别对传统Transformer的路径依赖，迈向多元创新时代。</p>\n  <p data-track=\"39\">但值得一提的是，刚刚坐上开源模型王座的MiniMax M2，却重新用回了全注意力机制。</p>\n  <p data-track=\"40\">技术报告：https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct</p>\n  <p data-track=\"43\">— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Kimi 开源新线性注意力架构 KDA，首次在长上下文任务中超越全注意力模型，推理速度提升 6 倍，KV 缓存减少 75%，推动 AI 架构创新。",
+  "oneSentenceSummary": "Kimi 开源新线性注意力架构 KDA，首次在长上下文任务中超越全注意力模型，推理速度提升 6 倍，KV 缓存减少 75%，推动 AI 架构创新。",
+  "summary": "文章详细介绍了月之暗面开源的 Kimi Linear 架构，其核心创新是 Kimi Delta Attention（KDA）线性注意力机制。该架构在相同训练条件下，首次在长上下文任务中超越了传统全注意力模型，实现了高达 6 倍的推理速度提升和 75%的 KV 缓存需求减少。KDA 通过引入细粒度遗忘门控和基于改进 Delta Rule 的稳定状态更新机制，解决了传统线性注意力“记忆力不足”的问题，使其在百万级 token 序列中也能稳定运行。此外，Kimi Linear 采用 3:1 混合层设计、移除 RoPE 并利用时间衰减核函数学习位置信息，并通过 DPLR 结构、分块并行计算和 kernel fusion 等工程优化，大幅提升了吞吐率和显存效率。实验结果显示，Kimi Linear 在多个基准测试上全面超越 Transformer，并可无缝对接 vLLM 推理框架。文章指出，Kimi Linear 的突破预示着 AI 架构正告别对传统 Transformer 的路径依赖，迈向多元创新时代。",
+  "mainPoints": [
+    {
+      "point": "Kimi Linear 架构通过 KDA 机制首次在性能上超越了全注意力模型。",
+      "explanation": "Kimi Linear 引入细粒度遗忘门控和改进的 Delta Rule，解决了传统线性注意力“记忆力不足”的问题，使其在长上下文任务中同时实现高性能和高效率。"
+    },
+    {
+      "point": "该架构显著提升了推理速度并降低了 KV 缓存需求。",
+      "explanation": "创新的 DPLR 结构、分块并行计算和内核融合优化，使得模型解码速度最高提升 6 倍，KV 缓存减少 75%，大幅降低了计算资源消耗。"
+    },
+    {
+      "point": "Kimi Linear 的设计理念预示着 AI 架构正迈向多元创新时代。",
+      "explanation": "文章通过 Kimi Linear、Mamba、MoR 等案例，展现了 AI 领域在摆脱传统 Transformer 路径依赖、探索更高效模型架构方面的趋势。"
+    }
+  ],
+  "keyQuotes": [
+    "月之暗面最新发布的开源 Kimi Linear 架构，用一种全新的注意力机制，在相同训练条件下首次超越了全注意力模型。",
+    "Kimi Linear 的核心创新是 Kimi Delta Attention（KDA）。它在原有线性注意力的基础上，引入了细粒度遗忘门控，不再像传统线性注意力那样一刀切地遗忘，而是让模型可以在每个通道维度上独立地控制记忆保留，把重要信息留下，把冗余信息扔掉。",
+    "实验结果显示，在相同训练规模下，比如 1.4T tokens，Kimi Linear 在 MMLU、BBH、RULER、GPQA-Diamond 等多个基准测试上全面超越 Transformer。",
+    "长上下文推理中，解码速度提升最高达 6 倍，KV 缓存减少 75%。",
+    "或许这也预示着，AI 架构正在告别对传统 Transformer 的路径依赖，迈向多元创新时代。"
+  ],
+  "tags": [
+    "开源",
+    "大语言模型架构",
+    "线性注意力",
+    "Kimi Delta Attention",
+    "Transformer"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1646,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761900571000,
+  "publishDateStr": "2025-10-31",
+  "publishDateTimeStr": "2025-10-31 08:49:31"
+}

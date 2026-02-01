@@ -1,0 +1,55 @@
+{
+  "id": "RAW_cf5878fd",
+  "title": "Anthropic 为 Claude Code 增加沙箱和 Web 访问，以实现更安全的 AI 赋能编码",
+  "url": "https://www.infoq.com/news/2025/11/anthropic-claude-code-sandbox/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-14 13:45:00",
+  "author": "Vinod Goje",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic <a href=\"https://claude.com/blog/beyond-permission-prompts-making-claude-code-more-secure-and-autonomous\">released</a> sandboxing capabilities for <a href=\"https://github.com/anthropics/claude-code\">Claude Code</a> and launched a <a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\">web-based version</a> of the tool that runs in isolated cloud environments. The company introduced these features to address security risks that arise when Claude Code writes, tests, and debugs code with broad access to developer codebases and files. According to Anthropic, \"Giving Claude this much access to your codebase and files can introduce risks, especially in the case of prompt injection.\" The new sandboxing approach creates pre-defined boundaries within which Claude can operate, reducing the number of permission prompts developers receive while the company claims it increases safety protections.</p>\n   <p>Anthropic built the sandboxing approach on operating system-level features that establish two security boundaries. The first boundary provides filesystem isolation, which the company states \"ensures that Claude can only access or modify specific directories.\" Anthropic positions this as protection against <a href=\"https://www.ibm.com/think/topics/prompt-injection\">prompt-injected</a> versions of Claude modifying sensitive system files. The second boundary implements <a href=\"https://trainingcamp.com/glossary/network-isolation/\">network isolation</a>, which the company says \"ensures that Claude can only connect to approved servers.\" This aims to prevent a compromised Claude instance from leaking sensitive information or downloading malware.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/11/anthropic-claude-code-sandbox/news/2025/11/anthropic-claude-code-sandbox/en/resources/1claude_code_sandboxing-1762918294629.webp\" style=\"width:100%;height:2161px;\" src=\"https://res.infoq.com/news/2025/11/anthropic-claude-code-sandbox/en/resources/1claude_code_sandboxing-1762918294629.webp\" rel=\"share\"></p>\n   <p><a href=\"https://www.anthropic.com/engineering/claude-code-sandboxing\">Source</a>: Claude Code's Sandboxing Architecture</p>\n   <p>Anthropic emphasizes that both isolation techniques must work together for effective protection. The company notes that without network isolation, a compromised agent could exfiltrate sensitive files like SSH keys, while without filesystem isolation, a compromised agent could escape the sandbox and gain network access.</p>\n   <p>The web-based version of Claude Code uses a custom proxy service to handle <a href=\"https://en.wikipedia.org/wiki/Git\">git</a> interactions. Inside the sandbox, the git client authenticates to this service with what Anthropic describes as a custom-built scoped credential. The proxy verifies this credential and the contents of the git interaction, such as ensuring it only pushes to the configured branch, before attaching the appropriate authentication token and sending the request to GitHub.</p>\n   <p>When developers start a task on <a href=\"https://code.claude.com/docs/en/claude-code-on-the-web\">Claude Code on the web</a>, the system clones their repository to an Anthropic-managed <a href=\"https://www.vmware.com/topics/virtual-machine\">virtual machine</a>. Claude then calls a secure cloud environment with the user's code and configures internet access based on user settings. During task execution, Claude analyzes code, makes changes, runs tests, and checks its work. Upon completion, users receive notification that the task is finished and can create a pull request with the changes, which are pushed to a branch ready for review.</p>\n   <p>Anthropic positions sandboxing as a solution to limitations in traditional permission-based security systems that require constant user approval for bash commands. The company <a href=\"https://code.claude.com/docs/en/sandboxing\">identifies</a> several issues with the permission-based approach, including what it calls approval fatigue, where repeatedly clicking approve can cause users to pay less attention to what they're approving. The traditional model also creates productivity slowdowns through constant interruptions and limits Claude Code's efficiency when it must wait for approvals.</p>\n   <p>The sandboxing model addresses these issues through a different approach. According to Anthropic, the system works by defining clear boundaries that specify which directories and network hosts Claude Code can access. This reduces the number of permission prompts, as safe commands within the sandbox do not require approval. The company states that attempts to access resources outside the sandbox trigger immediate notifications, while Claude Code can run more independently within the defined limits.</p>\n   <p><a href=\"https://x.com/simonw\">Simon Willison</a>, co-creator of Django, <a href=\"https://x.com/simonw/status/1980359550575460657\">described</a> his experience with preview access to the system. He characterized it as</p>\n   <blockquote>\n    <p>effectively a sandboxed instance of 'claude --dangerously-skip-permissions' running in Anthropic's container.</p>\n   </blockquote>\n   <p>This comparison highlights how the sandboxing approach changes the permission model by establishing upfront boundaries rather than requesting approval for each individual action.</p>\n   <p><a href=\"https://x.com/danshipper\">Dan Shipper</a>, co-founder and CEO of <a href=\"http://every.to/\">every.to</a>, <a href=\"https://x.com/danshipper/status/1980334576225472793\">noted</a> the deployment architecture and accessibility of the web version. He explained that the system</p>\n   <blockquote>\n    <p>lets you kick off tasks on the web or mobile—like Codex</p>\n   </blockquote>\n   <p>and that</p>\n   <blockquote>\n    <p>everything runs in a VM on the cloud.</p>\n   </blockquote>\n   <p><a href=\"https://x.com/dani_avila7\">Daniel San</a>, co-founder and CTO of <a href=\"https://www.aitmpl.com/agents\">aitmpl.com</a>, provided technical context on the security architecture. He distinguished between container-level and application-level protections, stating that</p>\n   <blockquote>\n    <p>Docker provides system-level isolation, while Claude Code's sandbox adds fine-grained security controls that restrict what files and network resources an agent can access during execution.</p>\n   </blockquote>\n   <p>Developers interested in the technical implementation can review the <a href=\"https://github.com/anthropic-experimental/sandbox-runtime\">sandbox runtime source code on GitHub</a>, where Anthropic has published the experimental repository. The main <a href=\"https://github.com/anthropics/claude-code\">Claude Code repository</a> is also available on GitHub for those who want to examine the tool's codebase. Anthropic has also published a course on Skilljar that demonstrates <a href=\"https://anthropic.skilljar.com/claude-code-in-action\">Claude Code in action</a> for developers who want to see the tool's capabilities before testing it themselves.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic Adds Sandboxing and Web Access to Claude Code for Safer AI-Powered Coding\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Vinod Goje\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/anthropic-claude-code-sandbox/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763127900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 为 Claude Code 引入了沙箱和基于 Web 的版本，以增强安全性和自主性，通过文件系统和网络隔离来缓解提示注入风险。",
+  "oneSentenceSummary": "Anthropic 为 Claude Code 引入了沙箱和基于 Web 的版本，以增强安全性和自主性，通过文件系统和网络隔离来缓解提示注入风险。",
+  "summary": "Anthropic 通过推出沙箱功能和新的基于 Web 的版本，对其 AI 赋能的编码助手 Claude Code 进行了重大改进。这些更新主要旨在加强安全性并改善开发者体验，特别是解决 AI 代理广泛访问敏感代码库的固有风险，例如提示注入漏洞。沙箱机制采用了两个强大的操作系统级安全边界：文件系统隔离，严格限制 Claude 访问指定的目录；以及网络隔离，防止未经授权的外部连接，以防止数据泄露或恶意软件下载。Anthropic 强调，这两种隔离技术都至关重要，必须协同运行才能实现全面保护。基于 Web 的 Claude Code 在隔离的云虚拟机中运行，利用自定义代理服务实现安全的 Git 交互。这种创新的沙箱模型提供了优于传统基于权限的系统的替代方案，后者通常会导致“审批疲劳（即由于频繁的审批请求而导致用户变得麻木）”和工作流程中断，从而提高安全性和开发者生产力。该公司还开源了部分沙箱运行时，提高了透明度，并允许开发者检查底层安全架构。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 中的沙箱显著增强了针对提示注入和未经授权访问的安全性。",
+      "explanation": "通过实施文件系统和网络隔离，Claude Code 在预定义的边界内运行，防止访问敏感文件或未经授权的网络连接，从而降低安全风险并保护知识产权。"
+    },
+    {
+      "point": "新方法解决了传统权限系统的局限性，提高了开发者生产力和 AI 自主性。",
+      "explanation": "沙箱显著减少了“审批疲劳（即由于频繁的审批请求而导致用户变得麻木）”和持续中断，使 Claude Code 能够在安全限制内更独立地执行任务，从而实现更顺畅、更高效的开发流程。"
+    },
+    {
+      "point": "基于 Web 的 Claude Code 为 AI 辅助编码任务提供了一个安全的云托管环境。",
+      "explanation": "在隔离的云虚拟机中运行，并使用自定义 Git 代理，确保了安全的代码仓库交互和任务执行，使强大的 AI 编码助手对于开发者来说更易于访问和管理。"
+    }
+  ],
+  "keyQuotes": [
+    "给予 Claude 如此广泛地访问您的代码库和文件权限可能会带来风险，尤其是在提示注入的场景下。",
+    "第一个边界提供文件系统隔离，该公司表示“确保 Claude 只能访问或修改特定目录”。",
+    "第二个边界实施网络隔离，该公司表示“确保 Claude 只能连接到批准的服务器”。",
+    "Docker 提供了系统级隔离，而 Claude Code 的沙箱增加了细粒度的安全控制，限制了代理在执行期间可以访问的文件和网络资源。",
+    "实际上是在 Anthropic 的容器中运行的“`claude --dangerously-skip-permissions`”的沙箱实例。"
+  ],
+  "tags": [
+    "AI 开发",
+    "代码生成",
+    "安全性",
+    "沙箱",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 736,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763127900000,
+  "publishDateStr": "2025-11-14",
+  "publishDateTimeStr": "2025-11-14 13:45:00"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "RAW_983f7b",
+  "title": "Nature 子刊 | 有效提升蛋白质折叠模式覆盖度，清华等使用全局几何感知潜在编码改进扩散模型 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-01-8",
+  "date": "2025-07-01 06:19:57",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ddc820bf-e3df-4b4f-da3a-920840b0ba00/public\" data-ratio=\"0.5425925925925926\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-backw=\"546\" data-backh=\"296\" data-imgfileid=\"100024433\" data-original-style=\"width:100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/a2fe01ec-b75d-4342-9b36-b2613e20d0db/640.jpeg\" data-sec-load-status=\"2\" data-report-img-idx=\"0\" alt=\"图片\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p data-pm-slice=\"0 0 []\"><span data-pm-slice=\"0 0 []\">编辑丨coisini</span></p>\n  <p>基于扩散的生成模型近期在从头设计蛋白质方向取得重大突破，显著推动了领域发展。</p>\n  <p>然而，有证据表明：一些特定折叠类别的蛋白质骨架，AI 模型仍难以生成。并且，当前广泛使用的可设计性、新颖性和多样性等指标，均无法反映生成结果对天然蛋白质空间的覆盖程度。</p>\n  <p>为此，近期来自清华大学、北京生命科学研究所等机构的研究团队提出了一种无监督系统 ——TopoDiff&nbsp;框架，通过学习和利用全局几何感知的潜在表征，实现了基于扩散模型的无条件与可控蛋白质生成。研究论文发表于《Nature Machine Intelligence》。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6fee1e4c-4fa9-481c-4ae9-99110ad22b00/public\" data-ratio=\"0.34496919917864477\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"974\" type=\"block\" data-backw=\"546\" data-backh=\"188\" data-imgfileid=\"100024428\" data-original-style=\"width:100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/d9ef499c-21a4-4563-aada-ce3a5f79e1b3/640.jpeg\" alt=\"图片\" data-before-load-time=\"1751350760978\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>论文地址：https://www.nature.com/articles/s42256-025-01059-x</p>\n  <p data-pm-slice=\"0 0 []\">提升蛋白质折叠模式覆盖度</p>\n  <p>为了提升生成样本对特定蛋白质折叠的覆盖率，有方法采用残基级别的一维 / 二维折叠条件约束配合额外微调来生成具有可变环区的免疫球蛋白结构域，或用特定蛋白质类别训练分类器。这些方法虽能增强特定蛋白质类群的覆盖率，但其适用前提是目标类群必须具有清晰明确的定义且包含足量训练样本。</p>\n  <p>因此，研究团队聚焦于一个重要且通用的无监督学习问题：给定任意数据集，如何在不依赖标注信息或先验认知的条件下训练扩散模型以捕捉潜在数据分布？更进一步，能否利用 SOTA 生成模型的设计优势来学习可解释的潜在编码，从而深化理解？</p>\n  <p>基于上述问题，研究团队提出 TopoDiff 框架，同步训练基于扩散的结构生成模型与编解码器架构的结构编码器，旨在实现双重目标：</p>\n  <ol>\n   <li>\n    <p>学习能编码蛋白质高级全局几何特征的紧凑、定长连续潜在空间；</p>\n   </li>\n   <li>\n    <p>构建一个可在残基层面运行的生成模块（以给定的潜在信息为条件进行生成）。</p>\n   </li>\n  </ol>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f83bfc69-155c-4e55-c4f9-f5cd43ff0600/public\" data-ratio=\"0.8777777777777778\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-backw=\"546\" data-backh=\"479\" data-imgfileid=\"100024429\" data-original-style=\"width:100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/8819fed9-45f0-4bd8-96dd-237a95f83a82/640.jpeg\" alt=\"图片\" data-before-load-time=\"1751350761444\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>该研究训练了一个简单的潜在扩散模型来无偏地采样学得的潜在分布，并利用采样得到的潜在变量指导蛋白质结构采样 —— 该方案有效提升了数据集中折叠模式的覆盖广度，也为可控生成开辟了新维度。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0e45905d-3462-463e-96c3-54fd31851800/public\" data-ratio=\"0.9814814814814815\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-backw=\"546\" data-backh=\"536\" data-imgfileid=\"100024430\" data-original-style=\"width:100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/cb12a868-01a9-4df0-a6bd-116a8d261fa4/640.jpeg\" alt=\"图片\" data-before-load-time=\"1751350761810\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>实验评估</p>\n  <p>为了评估 TopoDiff 无条件生成新蛋白质结构的性能表现，该研究将 TopoDiff 与多种基于扩散的前沿生成模型进行对比，包括 Genie、FrameDiff、Chroma 和 RFDiffusion。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4dc2c93c-8732-4595-6625-d88d1dc9a600/public\" data-ratio=\"1.0444444444444445\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-backw=\"546\" data-backh=\"570\" data-imgfileid=\"100024431\" data-original-style=\"width:100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/46b04e6c-e4a4-4b9e-b80f-d0d0e90d2013/640.jpeg\" alt=\"图片\" data-before-load-time=\"1751350762408\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>研究团队注意到，现有评估指标主要关注单样本质量（如可设计性、新颖性）或样本内多样性，缺乏对生成样本覆盖已知折叠空间程度的量化。</p>\n  <p>覆盖度能客观反映模型在现有数据中进行无偏采样的能力。有研究证据表明：忽视这一指标会导致模型选择偏差。</p>\n  <p>事实上，过去十年中，蛋白质从头设计领域主要局限于 α 螺旋束和 α-β 夹心结构，并且基于扩散的模型尚未能有效扭转这一局面。</p>\n  <p>因此，研究团队定义了覆盖度指标，并采用该指标及可设计性、新颖性、多样性等传统指标对 TopoDiff 及其他前沿模型进行了系统评估。</p>\n  <p>最终，该研究通过生物实验证实：TopoDiff 有效提升了对天然蛋白质折叠模式的覆盖范围。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7db758ef-7e54-483f-8596-2a4d7ef1a100/public\" data-ratio=\"1.351636747624076\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"947\" type=\"block\" data-backw=\"546\" data-backh=\"738\" data-imgfileid=\"100024432\" data-original-style=\"width:100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/77942010-b2c3-498e-904d-3dcdce7bbe68/640.jpeg\" alt=\"图片\" data-before-load-time=\"1751350763576\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>感兴趣的读者可以阅读论文原文，了解更多研究内容。</p>\n </body>\n</html>",
+  "aiSummary": "清华大学等机构在《Nature Machine Intelligence》发表 TopoDiff 框架，通过全局几何感知潜在编码改进扩散模型，有效提升蛋白质折叠模式覆盖度。",
+  "oneSentenceSummary": "清华大学等机构在《Nature Machine Intelligence》发表 TopoDiff 框架，通过全局几何感知潜在编码改进扩散模型，有效提升蛋白质折叠模式覆盖度。",
+  "summary": "文章介绍了清华大学和北京生命科学研究所等机构在《Nature Machine Intelligence》发表的 TopoDiff 框架。该框架通过无监督学习全局几何感知的潜在表征，实现了基于扩散模型的无条件与可控蛋白质生成，不依赖标注信息或先验认知。TopoDiff 同步训练基于扩散的结构生成模型与编解码器架构的结构编码器，学习蛋白质高级全局几何特征的紧凑潜在空间。实验表明，TopoDiff 在提升蛋白质折叠模式覆盖度方面优于 Genie、FrameDiff 等前沿生成模型，并通过生物实验证实了其有效性。研究还创新性地定义了覆盖度指标，解决了现有评估指标无法反映生成结果对天然蛋白质空间覆盖程度的问题。",
+  "mainPoints": [
+    {
+      "point": "TopoDiff 框架通过无监督学习全局几何感知潜在编码改进扩散模型",
+      "explanation": "TopoDiff 不依赖标注信息或先验认知，同步训练结构生成模型与结构编码器，创新性地学习蛋白质高级全局几何特征的潜在空间。"
+    },
+    {
+      "point": "TopoDiff 有效解决蛋白质折叠模式覆盖不足问题",
+      "explanation": "实验表明，TopoDiff 在覆盖度指标上显著优于 Genie、FrameDiff 等前沿生成模型，解决了现有模型对特定折叠类别覆盖不足的问题。"
+    },
+    {
+      "point": "创新性定义覆盖度指标量化生成样本覆盖程度",
+      "explanation": "研究提出的覆盖度指标能客观反映模型无偏采样的能力，弥补了传统指标在评估生成样本覆盖已知折叠空间方面的不足，具有方法论创新价值。"
+    },
+    {
+      "point": "为无监督蛋白质生成提供通用解决方案",
+      "explanation": "TopoDiff 框架为'给定任意数据集，如何在不依赖标注信息条件下训练扩散模型'这一通用问题提供了有效解决方案，拓展了应用场景。"
+    }
+  ],
+  "keyQuotes": [
+    "基于扩散的生成模型近期在从头设计蛋白质方向取得重大突破，显著推动了领域发展。",
+    "这些方法虽能增强特定蛋白质类群的覆盖率，但其适用前提是目标类群必须具有清晰明确的定义且包含足量训练样本。",
+    "TopoDiff 框架，通过学习和利用全局几何感知的潜在表征，实现了基于扩散模型的无条件与可控蛋白质生成。",
+    "该研究训练了一个简单的潜在扩散模型来无偏地采样学得的潜在分布，并利用采样得到的潜在变量指导蛋白质结构采样。",
+    "覆盖度能客观反映模型在现有数据中进行无偏采样的能力。有研究证据表明：忽视这一指标会导致模型选择偏差。",
+    "TopoDiff 有效提升了对天然蛋白质折叠模式的覆盖范围。"
+  ],
+  "tags": [
+    "蛋白质折叠",
+    "蛋白质设计",
+    "扩散模型",
+    "无监督学习",
+    "清华大学"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1095,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751350797000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 06:19:57"
+}

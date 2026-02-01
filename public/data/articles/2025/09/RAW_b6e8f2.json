@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b6e8f2",
+  "title": "工程师的进阶之路：从初级到资深",
+  "url": "https://www.infoq.com/news/2025/09/growing-junior-staff/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-11 11:03:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Bruno Rey shared lessons learned from his career <a href=\"https://www.infoq.com/presentations/junior-principal-lessons/\">from junior to staff and beyond</a> at <a href=\"https://qconsf.com/\">QCon San Francisco</a>. He suggested thinking about career growth in circles: self, team, company, and customers. Success comes from understanding broader impacts, embracing compromise, and acting fast, especially in startups, <a href=\"https://www.linkedin.com/in/bruno--rey/\">Bruno Rey</a> mentioned. He advised seeking mentors for honest feedback, being open to unexpected or crisis-driven opportunities, and thriving in change with an anti-fragile mindset.</p>\n   <p>Software engineers should develop ambition, increase their capacity, and seek opportunities to <a href=\"https://www.infoq.com/news/2025/06/software-engineer-career/\">grow their careers</a>, Rey mentioned. He advises being proactive, broadening your influence by learning from peers, and stepping outside your comfort zone. Software engineers can keep a brag doc to ensure that their work is visible and plan their growth with realistic long-term goals.</p>\n   <p>Rey suggested thinking about career paths as concentric circles:</p>\n   <blockquote>\n    <p>What’s best for me? What’s best for my team? What’s best for the company? It’s also important to put yourself in other people’s shoes: is this what’s best for our customers? Is it what’s best for our stakeholders?</p>\n   </blockquote>\n   <p>Try to see how your work fits into your team, how your team fits into the business unit (or division or pillar or whatever your company calls it), and finally, how that works for the company, Rey said. Understand why sometimes we need to compromise on some solutions even though we don’t want to. Having that mindset will make you think like a leader, and will take you faster to a leadership position, as he explained:</p>\n   <blockquote>\n    <p>I used to focus too much on perfection, basically thinking inside my bubble and aiming to write software that I would enjoy maintaining. Once I started looking at how other people operate (in smaller companies, working closely with e.g. founders, the CEO, and sales department) I understood that what I was doing was not what the company really needed.</p>\n   </blockquote>\n   <p>At a startup, you need to stay on top of the market, Rey said. You need to aim to always deliver results, act fast, and get early feedback. He suggested taking customers' complaints seriously and going the extra mile to provide angry users with an immediate solution to their problem, even if you don’t really solve the bug’s root cause as an engineer would like.</p>\n   <p>Rey mentioned that software engineers should find role models and mentors:</p>\n   <blockquote>\n    <p>No one can thrive in a company by working alone. And no one can see themselves objectively. We look at life through a filter, through a lens shaped from our previous experiences and learnings.</p>\n   </blockquote>\n   <p>We learn to evaluate things by assessing some variables and quantifying them, but it’s really hard for a single individual to get the full picture right, Rey said. A second pair of eyes helps. This is especially true when doing introspection, Rey explained:</p>\n   <blockquote>\n    <p>Sporadic feedback is good and it helps a lot, but a mentor can provide you with a long term following of your growth and that’s very valuable.</p>\n   </blockquote>\n   <p>A good mentor will talk to you openly about your shortcomings, and more than likely, those will be blind spots that you didn’t even think about. Or maybe you thought they were unimportant, or maybe you thought that you were doing a good job at that, but you actually aren’t, Rey said.</p>\n   <p>Career opportunities aren’t always nice, and aren’t always clear or explicit, Rey mentioned:</p>\n   <blockquote>\n    <p>We all love nice opportunities when the team or the company is growing. They need to fill some positions above you and it’s an ideal situation. It’s also very hard to come by, and shouldn’t be considered as the only type of opportunity there is.</p>\n   </blockquote>\n   <p>Sometimes someone above you leaves the company or the team, sometimes it’s their decision and sometimes it isn’t. You can choose to put yourself as a candidate to backfill that role, Rey said. While this is an opportunity for a better title, in many cases it can put you in a challenging situation. The person leaving was maybe facing a demanding context and that may not be the best training scenario for you in this new role, he mentioned. While it can be a nice opportunity, you have to understand that it may come with some risk.</p>\n   <p>There are also career opportunities during a crisis, Rey said. A big portion of the market has gone through difficult times these last years, so a lot of engineers were exposed to company crises, small or big:</p>\n   <blockquote>\n    <p>If you manage to navigate that crisis properly, you can find ways to come out stronger when things calm down. You can be the new subject matter expert in an area of your knowledge. You can become one of the leads of your team if the team shrinks. Or you can thrive in a new team/position if you are moved.</p>\n   </blockquote>\n   <p>Rey referred to the anti-fragile concept, described in the book \"Antifragile: Things That Gain from Disorder\" by Nassim Nicholas Taleb, and mentioned an article by Damian Schenkelman posted on X which explains <a href=\"https://twitter.com/dschenkelman/status/1756470261476446356\">how anti-fragile applies to startups in particular</a>. You need people who are able to work in the \"disorder\" context of a startup, look for people who welcome change and thrive in it, who are able to learn by themselves and especially who are able to handle ambiguity and adapt, he concluded.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Lessons Learned from Growing from Junior to Staff and Beyond\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/growing-junior-staff/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1757588580000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Bruno Rey 分享工程师职业发展经验，强调影响力、导师制和反脆弱性，助你从初级工程师进阶到更高职位。",
+  "oneSentenceSummary": "Bruno Rey 分享工程师职业发展经验，强调影响力、导师制和反脆弱性，助你从初级工程师进阶到更高职位。",
+  "summary": "本文提炼自 Bruno Rey 在 QCon 旧金山会议上的演讲，为软件工程师提供职业发展指南。Rey 提出了“同心圆”框架，建议工程师不仅关注个人贡献，更要考虑对团队、公司和客户的广泛影响。这种整体视角有助于培养领导力，理解妥协的必要性，并提升快速行动的能力，尤其是在充满活力的创业环境中。文章强调了导师制的重要性，建议工程师积极寻找导师，获得客观、长期的反馈，从而识别和解决自身盲点。文章还揭示了职业机会的非常规性，指出并非所有机会都理想。有些机会可能源于意外离职甚至公司危机，为成长提供挑战和回报。Rey 强调培养“反脆弱性”，借鉴 Nassim Nicholas Taleb 的概念，使个人在混乱、模糊和变化中蓬勃发展并提升自我。实际建议包括培养雄心、提高能力、积极扩大影响力、维护“成就记录”以确保工作可见性，以及设定切合实际的长期职业目标。",
+  "mainPoints": [
+    {
+      "point": "扩展视野，实现领导力发展",
+      "explanation": "理解工作的影响并接受妥协，有助于培养领导力，加速晋升。"
+    },
+    {
+      "point": "积极参与、提升可见性，导师制对职业发展至关重要",
+      "explanation": "积极寻找机会，利用成就记录提升工作可见性，并从导师处获得反馈，有助于挖掘潜力。"
+    },
+    {
+      "point": "拥抱非常规机会，培养反脆弱性，在变革中茁壮成长",
+      "explanation": "职业道路常遇挑战，反脆弱性使工程师适应变化，在混乱中成长，尤其在创业公司中。"
+    }
+  ],
+  "keyQuotes": [
+    "什么对我最有利？对团队、公司、客户和利益相关者呢？",
+    "我曾过于追求完美，沉浸在个人喜好中。后来我发现，公司真正需要的并非如此。",
+    "没有人能通过单打独斗在公司取得成功。而且，人无法客观地认识自己。我们都带着有色眼镜看世界。",
+    "零星反馈有益，但导师能提供长期指导，更有价值。",
+    "如果你能妥善应对危机，就能在平静后变得更强大。你可以成为你所在领域的领域专家，或者在团队缩小后成为领导者，甚至在新团队/职位上取得成功。"
+  ],
+  "tags": [
+    "职业发展",
+    "软件工程",
+    "领导力发展",
+    "导师制",
+    "创业环境"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 875,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1757588580000,
+  "publishDateStr": "2025-09-11",
+  "publishDateTimeStr": "2025-09-11 11:03:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c245e8",
+  "title": "100 行代码打造迷你编程 Agent：修复 65%真项目 bug，适配所有大模型",
+  "url": "https://www.qbitai.com/2025/07/313509.html",
+  "date": "2025-07-27 12:34:10",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">只用100行代码，打造最强轻量编程agent。</p>\n  <p data-track=\"2\">SWE-bench、SWE-agent原班人马再出手，推出全新<strong>开源</strong>项目——</p>\n  <p data-track=\"3\"><strong>mini-SWE-agent</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f9cb7721-0e2c-429a-7bb6-c2f4a507a500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f9cb7721-0e2c-429a-7bb6-c2f4a507a500/public\">\n  </div>\n  <p data-track=\"4\">它<strong>不依赖任何额外插件</strong>，仅通过基础命令即可运行。而且<strong>对模型没有限制</strong>，几乎兼容所有主流语言模型，支持直接在本地终端中部署和使用。</p>\n  <p data-track=\"5\">而在如此精简的架构下，仅凭100行核心代码轻松解决SWE-bench上<strong>65%</strong>的问题。</p>\n  <p data-track=\"6\">这个65%是啥水平呢？</p>\n  <p data-track=\"7\">也就和原版差不多吧～（关键人家还轻量啊）</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/324015a5-c9e2-4f78-bad7-ea6e9da0c000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/324015a5-c9e2-4f78-bad7-ea6e9da0c000/public\">\n  </div>\n  <p data-track=\"8\">网友：厉害</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/aae07517-5296-462b-faf9-f8f43daece00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/aae07517-5296-462b-faf9-f8f43daece00/public\">\n  </div>\n  <p data-track=\"10\">SWE-agent是一个开源项目（16.8k GitHub Star），它的目标是让agent<strong>自动修复GitHub上真实项目中的代码Bug</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/75d3d959-e427-4f55-56f6-34fb49894c00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/75d3d959-e427-4f55-56f6-34fb49894c00/public\">\n  </div>\n  <p data-track=\"11\">不过，原版的SWE-agent基于LangChain构建，从接受issue、理解问题、编辑代码、到提交PR，涉及多工具、多轮对话管理，任务流程繁琐。</p>\n  <p data-track=\"12\">除此之外，开发者要跑通还需要安装多个依赖，精调工具调用逻辑，而且项目代码动辄上千行，对模型、环境的耦合也比较强。</p>\n  <p data-track=\"13\">而随着语言模型性能越来越强大，构建一个有用的代理已经不再需要这些工具和接口了。</p>\n  <p data-track=\"14\">由此，团队开始思考：能否让SWE-agent小100倍，并保持原有的性能。</p>\n  <p data-track=\"15\">mini-SWE-agent由此而来。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c3f87881-026c-4583-bfb7-4318ed6fec00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c3f87881-026c-4583-bfb7-4318ed6fec00/public\">\n  </div>\n  <p data-track=\"16\">那么，相较于SWE-agent，mini-SWE-agent有什么不同呢？</p>\n  <p data-track=\"17\"><strong>极简代码和依赖</strong>：mini-SWE-agent本身仅约100行Python代码，加上环境、模型、脚本才共约200行，没有复杂的依赖关系。</p>\n  <p data-track=\"18\"><strong>取消工具调用接口</strong>:mini版本不集成专用的代码编辑、搜索等工具；它只使用操作系统的Bash环境执行命令。每一步由语言模型输出一个完整的shell命令，不通过独立的“tool call”协议，从而可兼容任何语言模型。</p>\n  <p data-track=\"19\"><strong>线性历史记录</strong>：agent的每一步都只是附加到消息中。</p>\n  <p data-track=\"20\"><strong>独立单步执行：</strong>每条命令通过Python独立执行，并非保持一个持续的shell会话，这使得在沙盒中执行操作变得非常简单，并且可以轻松扩展。</p>\n  <p data-track=\"21\"><strong>简化配置与接口</strong>:取消了SWE-agent依赖的复杂YAML配置；mini-swe-agent采用代码内置模板，并提供直观的命令行工具。用户可以通过mini命令快速启动代理，或使用mini-v启动可视化界面。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b4e8c09b-582c-4b50-ab4a-b633e6c70900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b4e8c09b-582c-4b50-ab4a-b633e6c70900/public\">\n  </div>\n  <p data-track=\"22\"><strong>多样的运行环境支持</strong>:除了本地Shell，mini-swe-agent还内置支持多种容器与虚拟化环境（如Docker、Podman、Singularity、Apptainer等），这意味着开发者可以在不同平台和容器中轻松部署，而无需额外修改代码。</p>\n  <p data-track=\"23\"><strong>保留高性能和工具</strong>：虽然架构极简，mini-swe-agent在SWE-bench验证集上仍能解决约65%的问题。同时，它附带批量推理（batchinference）、轨迹浏览器（trajectorybrowser）等工具，帮助用户进行大规模评测和决策分析。代理还提供可视化界面，方便开发者交互式地观察执行过程</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/63be4b7b-7896-43a7-d3a3-e5c6a25afb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/63be4b7b-7896-43a7-d3a3-e5c6a25afb00/public\">\n  </div>\n  <p data-track=\"24\">此外，对于应在何种场景下使用 SWE-agent 或 mini-SWE-agent，团队也根据不同的需求给出了建议：</p>\n  <p data-track=\"25\">mini-swe-agent更适合希望<strong>快速本地运行、追求简洁控制流和更稳定评估环境</strong>的用户。它非常轻量，<strong>适合用于微调（FT）或强化学习（RL）等实验</strong>，不容易陷入对复杂框架的过拟合。</p>\n  <p data-track=\"26\">如果你需要<strong>高度可配置的工具链、更复杂的历史状态管理</strong>，或希望通过修改YAML文件自由切换组件而无需动代码，那么功能更丰富的SWE-agent会是更合适的选择。</p>\n  <p data-track=\"27\">总体而言，mini-swe-agent体现了<strong>可读、方便、易扩展</strong>的开发理念。</p>\n  <p data-track=\"28\">对于日常开发者而言，它既可以作为简单的命令行工具使用。如在本地终端快速解决问题），也可以作为库被集成到其他Python应用中。</p>\n  <p data-track=\"29\">相比于重型框架，它降低了上手成本，让开发者可以像使用脚本一样灵活地“驾驭”智能代理。</p>\n  <p data-track=\"31\">SWE-bench和SWE-agent是由John Yang、Carlos E. Jimenez、Alexander Wettig、Kilian Lieret、姚顺雨（OpenAI研究员，2015年毕业清华姚班）、Karthik Narasimhan和Ofir Press于2024年在普林斯顿大学发起的开源项目。</p>\n  <p data-track=\"32\">该项目推动了基于大型语言模型的软件工程代理（Software Engineering Agent）研究。</p>\n  <p data-track=\"33\">其中，SWE-bench一经发布后，就成为了评估大语言模型编程的经典benchmark，伴随SWE-agent一同提出的Agent‑Computer-Interface（ACI）则进一步定义了“智能体如何与计算机交互”的标准接口方式。</p>\n  <p data-track=\"34\">而这一杰出的想法最初仅仅来自一次20多分钟的讨论。</p>\n  <p data-track=\"35\">在Matthew Berman的播客节目上，Carlos E. Jimenez分享道：SWE-bench最初的想法源自他和John Yang在闲逛时的一次头脑风暴：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"100行代码打造迷你编程Agent：修复65%真项目bug，适配所有大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/901459f2-d5b3-4f9f-d5ba-e7b2e0528600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/901459f2-d5b3-4f9f-d5ba-e7b2e0528600/public\">\n  </div>\n  <p data-track=\"36\">他们意识到，GitHub不只是一个存储代码的地方，更是一个活跃的协作开发平台，充满了真实的软件工程过程：用户报告bug，开发者提交修复，社区公开审核和合入。</p>\n  <p data-track=\"37\">相比传统的编程竞赛，这些交互和修改才是真正代表“现实世界编程”的任务。于是他们设想，能否把这种开源协作的过程结构化下来，变成一种评估语言模型能力的标准流程？</p>\n  <p data-track=\"38\">这便催生了SWE-bench，一个基于GitHub上真实Issue与PullRequest构建的benchmark，用来测试LLM是否能像人类开发者一样，理解bug报告并修复代码。</p>\n  <p data-track=\"39\">这个系统不仅更接近现实，也让模型的“开发能力”变得可观察、可比较，而SWE-agent则是他们为这一评估任务设计的开源agent，目标就是成为能在SWE-bench上“修最多bug”的AI程序员。</p>\n  <p data-track=\"40\"><em>项目主页：</em><br><em>[1]https://github.com/SWE-agent/mini-swe-agent</em><br><em>[2]https://github.com/SWE-agent/mini-swe-agent?tab=readme-ov-file</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "介绍开源项目 mini-SWE-agent，仅用 100 行代码实现轻量级编程 Agent，能修复 65%真实项目 Bug，并兼容所有大模型。",
+  "oneSentenceSummary": "介绍开源项目 mini-SWE-agent，仅用 100 行代码实现轻量级编程 Agent，能修复 65%真实项目 Bug，并兼容所有大模型。",
+  "summary": "针对原版 SWE-agent 在复杂性、多依赖和部署上的痛点，SWE-bench 和 SWE-agent 原班人马推出了全新的开源项目 mini-SWE-agent。该项目以极简设计为核心，仅用约 100 行 Python 代码构建，不依赖额外插件，通过基础 Bash 命令运行，并能兼容所有主流语言模型，支持本地终端部署。尽管架构精简，mini-SWE-agent 在 SWE-bench 基准测试中仍能解决 65%的问题，性能与原版 SWE-agent 相当。文章详细对比了其与原版 SWE-agent 的不同，包括取消工具调用接口、线性历史记录、独立单步执行、简化配置与接口，并支持多样的运行环境。最后，文章建议了两种 Agent 的使用场景，并强调了 mini-SWE-agent 在降低上手成本、促进模型微调和强化学习实验方面的独特价值。",
+  "mainPoints": [
+    {
+      "point": "mini-SWE-agent 以极简架构实现高性能 Bug 修复",
+      "explanation": "仅用 100 行核心代码，通过操作系统 Bash 环境执行命令，即可在 SWE-bench 上解决 65%的真实项目 Bug，性能与复杂版 SWE-agent 相当。"
+    },
+    {
+      "point": "取消复杂工具调用和依赖，提升模型兼容性和易用性",
+      "explanation": "不集成专用工具接口，每步由 LLM 输出完整 shell 命令，避免了对 LangChain 等复杂框架的依赖，实现模型无限制兼容及本地快速部署。"
+    },
+    {
+      "point": "轻量化设计使其更适合模型微调和强化学习实验",
+      "explanation": "极简的代码和配置使其不易陷入复杂框架的过拟合，为开发者进行 LLM 的实验性开发提供了稳定、高效的环境。"
+    },
+    {
+      "point": "秉持“可读、方便、易扩展”的开发理念，降低开发者上手门槛",
+      "explanation": "mini-SWE-agent 的设计哲学在于提供一个简洁、易于理解和修改的代理框架，使其能像脚本一样灵活使用，并易于集成到其他 Python 应用中，显著降低了智能代理的开发和使用成本。"
+    }
+  ],
+  "keyQuotes": [
+    "不依赖任何额外插件，仅通过基础命令即可运行。",
+    "仅凭 100 行核心代码轻松解决 SWE-bench 上 65%的问题。",
+    "构建一个有用的代理已经不再需要这些工具和接口了。",
+    "mini-swe-agent 体现了可读、方便、易扩展的开发理念。",
+    "SWE-bench…一个基于 GitHub 上真实 Issue 与 PullRequest 构建的 benchmark，用来测试 LLM 是否能像人类开发者一样，理解 bug 报告并修复代码。"
+  ],
+  "tags": [
+    "AI Agent",
+    "编程Agent",
+    "开源项目",
+    "Bug修复",
+    "大语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2249,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753619650000,
+  "publishDateStr": "2025-07-27",
+  "publishDateTimeStr": "2025-07-27 12:34:10"
+}

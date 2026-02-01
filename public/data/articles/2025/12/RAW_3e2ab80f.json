@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3e2ab80f",
+  "title": "ty: 一个极其快速的 Python 类型检查器和 LSP",
+  "url": "https://simonwillison.net/2025/Dec/16/ty/#atom-everything",
+  "date": "2025-12-16 23:35:33",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://astral.sh/blog/ty\">ty: An extremely fast Python type checker and LSP</a></strong> (<a href=\"https://news.ycombinator.com/item?id=46294289\" title=\"Hacker News\">via</a>) The team at Astral have been working on this for quite a long time, and are finally releasing the first beta. They have some big performance claims:</p>\n   <blockquote>\n    <p>Without caching, ty is consistently between 10x and 60x faster than mypy and Pyright. When run in an editor, the gap is even more dramatic. As an example, after editing a load-bearing file in the PyTorch repository, ty recomputes diagnostics in 4.7ms: 80x faster than Pyright (386ms) and 500x faster than Pyrefly (2.38 seconds). ty is very fast!</p>\n   </blockquote>\n   <p>The easiest way to try it out is via <code>uvx</code>:</p>\n   <pre><code>cd my-python-project/\nuvx ty check\n</code></pre>\n   <p>I <a href=\"https://gistpreview.github.io/?a3aff6768e85168d89d4515e3dbcb7d2\">tried it</a> against <a href=\"https://sqlite-utils.datasette.io/\">sqlite-utils</a> and it turns out I have quite a lot of work to do!</p>\n   <p>Astral also released a new <a href=\"https://marketplace.visualstudio.com/items?itemName=astral-sh.ty\">VS Code extension</a> adding ty-powered language server features like go to definition. I'm still getting my head around how this works and what it can do.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9195/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Astral 发布了 'ty' 的第一个测试版，这是一个极其快速的 Python 类型检查器和 LSP 工具，其速度是现有解决方案的 10 到 60 倍，在某些情况下，甚至比 Pyrefly 快达 500 倍...",
+  "oneSentenceSummary": "Astral 发布了 'ty' 的第一个测试版，这是一个极其快速的 Python 类型检查器和 LSP 工具，其速度是现有解决方案的 10 到 60 倍，在某些情况下，甚至比 Pyrefly 快达 500 倍...",
+  "summary": "经过大量开发，Astral 团队发布了 'ty' 的第一个测试版，这是一款开创性的 Python 类型检查器和 LSP 工具。它承诺在性能上实现质的提升，声称在不缓存的情况下，速度是 mypy 和 Pyright 的 10 到 60 倍。文章通过 PyTorch 仓库中的一个真实示例说明了这一点，其中 'ty' 在编辑关键文件后仅 4.7 毫秒内重新计算诊断结果，比 Pyright 快 80 倍，比 Pyrefly 快 500 倍。用户可以使用 `uvx ty check` 命令轻松地在他们的项目中试用 'ty'。此外，Astral 还推出了一个 VS Code 扩展，集成了由 'ty' 驱动的语言服务器功能，如“转到定义”，从而增强了整体代码编辑体验。",
+  "mainPoints": [
+    {
+      "point": "ty 大幅提升了 Python 类型检查速度，超越现有工具，显著增强了开发效率。",
+      "explanation": "在不缓存的情况下，'ty' 比 mypy 和 Pyright 快 10-60 倍，在编辑器诊断方面快 80-500 倍。这为开发人员提供了近乎即时的类型反馈，大大减少了等待时间并提高了生产力。"
+    },
+    {
+      "point": "ty 通过 VS Code 扩展集成 LSP 功能，优化 Python 开发体验。",
+      "explanation": "'ty' 作为语言服务器，通过其 VS Code 扩展提供“转到定义”等功能，简化了代码导航和编辑，使其成为开发人员的全面辅助工具。"
+    },
+    {
+      "point": "ty 的易用性通过简单的命令行工具和 VS Code 扩展得到体现。",
+      "explanation": "开发人员可以使用 `uvx ty check` 轻松地将 'ty' 集成到现有项目中，并受益于 VS Code 扩展，这降低了采用门槛，并使其能够快速融入开发者的工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "在不缓存的情况下，ty 始终比 mypy 和 Pyright 快 10 到 60 倍。",
+    "举例来说，在编辑 PyTorch 仓库中的一个关键文件后，ty 在 4.7 毫秒内重新计算诊断结果：比 Pyright (386 毫秒) 快 80 倍，比 Pyrefly (2.38 秒) 快 500 倍。",
+    "Astral 还发布了一个新的 VS Code 扩展，增加了由 ty 驱动的语言服务器功能，如“转到定义”。"
+  ],
+  "tags": [
+    "Python",
+    "类型检查",
+    "LSP",
+    "性能优化",
+    "Astral"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 159,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765928133000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 23:35:33"
+}

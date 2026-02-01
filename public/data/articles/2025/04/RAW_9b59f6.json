@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9b59f6",
+  "title": "可观测性提升大语言模型系统用户体验：Honeycomb CEO KubeCon EU 洞见",
+  "url": "https://www.infoq.com/news/2025/04/llm-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-03 00:00:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>During her KubeCon Europe keynote, <a href=\"https://www.linkedin.com/in/christineyen/\">Christine Yen</a>, CEO and co-founder of Honeycomb, provided insights on how observability can help cope with the rapid shifts introduced by the integration of LLMs in software systems, which transformed not only the way we develop software but also the release methodology. She explained how to adapt your development feedback loop based on production observations.</p>\n   <p>She begins by emphasising that even though software engineers are used to \"black boxes\", the LLMs are different mainly because they make reliable behaviours that we are used to and make them more complicated.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/llm-observability/news/2025/04/llm-observability/en/resources/8image3-1743679288254.png\" style=\"width:100%;height:782px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/llm-observability/en/resources/8image3-1743679288254.png\" rel=\"share\"></p>\n   <p>&nbsp;</p>\n   <p>Current systems development practices rely on deterministic properties like testability, reproducibility (mockability), and explainability (debuggability) to ensure the correctness of their behaviour. Still, the whole reason for incorporating LLMs in your application is to capture the unpredictable nature of human language.</p>\n   <p><em>...most of us here today have been building software before this LLM boom, and we know the hard part about building software systems isn’t writing them. It’s testing, maintenance, tuning and debugging that comes afterwards… </em></p>\n   <p>Besides the changes in the methodology of building the software, the product release practices have shifted as well: rather than having a staged approach when limited groups of users have access to alpha or beta versions, we now have early access programs. These allow users to interact with your systems unpredictably.</p>\n   <p><em>Yen: ...should we all give up and embrace prompt engineering? No! That’s why we are here… </em></p>\n   <p>Even though the shift might seem very complex, she thinks that the practices adopted lately are reasonable steps in the right direction to cope with all the shifts.</p>\n   <ul>\n    <li>Continuous Deployment and feature flags - provide a proper mechanism for rapid feedback loops</li>\n    <li>Testing in production - forces us to embrace the chaos and engineer systems conceived for rapid and graceful failure.</li>\n    <li>High cardinality metadata - gives us the mechanisms and obligation to reflect on complexity.</li>\n    <li>High dimensionality data: - provide the mechanisms through which we can run highly parameterised experiments and investigations</li>\n    <li>Service Level Objectives: Captures UX as the arbiter of quality, making the customer’s experience the most essential aspect of the system.</li>\n   </ul>\n   <p>According to Yen, we already have a model for measuring, debugging and \"moving the needle\" on unpredictable, qualitative or quantitative experiences. Observability compares expected behaviour against what we see in production \"in front of our live users\". This will help in the chaos of early access programs when <a href=\"https://www.honeycomb.io/blog/hard-stuff-nobody-talks-about-llm\">something unpredictable happens</a>. When users have a different behaviour than anticipated, and when deploying a bug fix that will break something else, tests can’t protect you like they used to do in plain API systems.</p>\n   <p>Observability helps embrace some unpredictability, enabling feedback loops that let you learn what happens with your code and incorporate those observations into your development process. LLMs have \"an infinite\" set of inputs and outputs, so tests are insufficient. Evaluations can be used, as they are more flexible and allow us to define intended or unintended behaviour. The \"evals\" are developed while you are creating the application itself. They provide the mechanism through which you can observe how the \"magical box\" behaves for different inputs, further incorporating that feedback in the development loop.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/llm-observability/news/2025/04/llm-observability/en/resources/10image2-1743679288254.png\" style=\"width: 770px; height: 457px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/llm-observability/en/resources/10image2-1743679288254.png\" rel=\"share\"></p>\n   <p>&nbsp;</p>\n   <p>Similar to other black boxes(payments systems, for example) that we might have integrated into our systems already, LLMs need to capture the details that’ll allow us to understand how the system behaves further. Similarly to classical systems, we would record the outgoing requests to the third party and capture their responses. This will allow us to understand how input impacts output and the user experience. Further, these will translate into behavioural patterns of our system, enabling you to investigate any outlier user of your system rapidly.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/llm-observability/news/2025/04/llm-observability/en/resources/10image1-1743679288254.png\" style=\"width:100%;height:992px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/llm-observability/en/resources/10image1-1743679288254.png\" rel=\"share\"></p>\n   <p>Yen concludes by expressing her optimism regarding the future of software engineering, given that developers have adapted rapidly to the growing unpredictability of software systems' behaviour. With the focus shifting to a system's impact on the users’ experience, observability is important, especially in the age of Generative AI.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Observability Can Improve the UX of LLM Based Systems: Insights of Honeycomb's CEO at KubeCon EU\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/llm-observability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1743682320000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Honeycomb CEO Christine Yen 在 KubeCon EU 大会上分享了可观测性如何应对 LLM 对软件系统用户体验带来的挑战与变革。",
+  "oneSentenceSummary": "Honeycomb CEO Christine Yen 在 KubeCon EU 大会上分享了可观测性如何应对 LLM 对软件系统用户体验带来的挑战与变革。",
+  "summary": "本文基于 Honeycomb CEO Christine Yen 在欧洲 KubeCon 大会上的主题演讲，探讨了如何利用可观测性来应对大语言模型在软件系统中引入的快速演进。Yen 强调，大语言模型已经改变了软件开发和发布方法，使得传统的测试方法不再适用。她提出，可观测性是管理大语言模型引入的不确定性的关键，特别是通过捕获输入/输出细节和用户行为模式来理解系统行为。持续部署、特性开关和灰度发布等实践能够实现更快的反馈循环。通过比较预期行为与生产环境中实际用户交互，可观测性帮助开发者应对不确定性，并改善基于大语言模型的系统的用户体验。",
+  "mainPoints": [
+    {
+      "point": "LLM 将不确定性引入软件系统，传统确定性测试方法失效，需关注生产环境用户体验。",
+      "explanation": "大语言模型不可预测的性质使得基于确定性属性的传统测试变得不足，需要优先考虑真实用户交互的新方法。"
+    },
+    {
+      "point": "可观测性通过捕获大语言模型的输入、输出和用户行为模式，帮助开发者理解和调试大语言模型系统。",
+      "explanation": "通过观察大语言模型系统中的交互，开发者可以深入了解系统行为，从而更有效地进行调试和优化。"
+    },
+    {
+      "point": "持续部署和特性开关等实践有助于更快的反馈循环，从而能够根据用户交互更快地改进系统。",
+      "explanation": "这些实践使开发者能够快速部署新功能并根据用户反馈进行调整，从而更快地改进系统。"
+    }
+  ],
+  "keyQuotes": [
+    "即使软件工程师们已经习惯了“黑盒”，LLM 仍然有所不同，主要是因为它们使我们习以为常的可靠行为变得更加复杂。",
+    "可观测性是将预期行为与我们在生产环境中“真实用户”面前看到的情况进行比较。",
+    "随着焦点转移到系统对用户体验的影响，可观测性非常重要，尤其是在生成式人工智能时代。"
+  ],
+  "tags": [
+    "可观测性",
+    "LLM 可观测性",
+    "用户体验",
+    "大语言模型",
+    "软件开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 659,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1743638400000,
+  "publishDateStr": "2025-04-03",
+  "publishDateTimeStr": "2025-04-03 00:00:00"
+}

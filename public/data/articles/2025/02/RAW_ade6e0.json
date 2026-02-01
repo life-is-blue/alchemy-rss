@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ade6e0",
+  "title": "Tailwind CSS 4.0 发布，提升构建速度",
+  "url": "https://mp.weixin.qq.com/s/Sc2wp6hiV0sqpMZdi8zpxg",
+  "date": "2025-02-06 04:45:21",
+  "author": "Tim Anderson",
+  "siteName": "InfoQ 中文",
+  "content": "\n \n \n  <section style=\"text-align: center;margin-bottom: 24px;\">\n   <br></section>\n  <section style=\"color: rgb(63, 63, 63);font-size: 16px;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom: 0px;\">\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    作者 | Tim Anderson\n   </section>\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    译者 | 平川\n   </section>\n   <section style=\"font-size: 14px;color: rgb(145, 145, 145);text-align: left;line-height: 1em;margin-top: 13px;padding-left: 14px;\">\n    策划 | Tina\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\"><em><strong style=\"text-align: left;\">本文最初发布于博客 DEV CLASS。</strong></em></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\"><img class=\"rich_pages wxw-img\" data-imgfileid=\"503750852\" data-ratio=\"0.691358024691358\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5bf2d518-c30c-44a8-6609-f810b0d12a00/public\" data-type=\"jpg\" data-w=\"648\" style=\"width: 100%;\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5bf2d518-c30c-44a8-6609-f810b0d12a00/public\"></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: center;\"><span style=\"letter-spacing: 0.034em;color: rgb(136, 136, 136);font-size: 14px;\">编写代码</span></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Tailwind CSS 4.0 发布，承诺将构建速度提高 5 倍，增量构建速度提高 100 倍，并提供新的 CSS 特性，只需一条 import 语句即可安装。不过，文档也指出，该版本需要最新的 Web 浏览器核心功能，这可能会限制最初的使用。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">在这个流行的 CSS 框架和工具集中，有一个主要的特性是代号为 Oxide 的新构建引擎。该引擎的空间占用比以前少了 35%，虽然主要是用 TypeScript 编写的，但其中包括用 Rust 重写的软件包（用于计算成本最高的操作），并且使用了同样用 Rust 编写的 CSS 解析器 Lightning CSS。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">现在，Tailwind CSS 4.0 已针对 Vite JavaScript 和 TypeScript 构建工具做了优化，并且有一个第一方 Vite 插件。根据 Tailwind 创建者 Adam Wathan 的博文，该插件提供了 “最高的性能和最低的配置”。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">在该框架新增的 CSS 特性中，有一项是级联层（cascade layers）。它提供了结构特异性，解决了 CSS 中最棘手的特性之一。另一项新特性是使用 CSS 注册自定义属性，允许有默认值的属性设置继承或不继承它们的值。按照 Wathan 的说法，这些现代化特性简化了 Tailwind 的内部结构，使维护工作变得更容易。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">一旦使用 npm（ Node 软件包管理器）安装了 Tailwind——尽管 npm 并非必要，也有一个独立的工具可供使用，在项目中包含 Tailwind 就只需在 CSS 文件中添加以下语句：</p>\n   <section class=\"code-snippet__fix code-snippet__js\">\n    <ul class=\"code-snippet__line-index code-snippet__js\">\n     <li></li>\n    </ul>\n    <pre class=\"code-snippet__js\" data-lang=\"css\"><code><span class=\"code-snippet_outer\">@<span class=\"code-snippet__keyword\">import</span> “tailwindcss”;</span></code></pre>\n   </section>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">将该框架与 Next.js 或 Angular 搭配使用时，通常会使用 PostCSS 插件，与 SvelteKit 或 Astro &nbsp;搭配使用时会使用 Vite 插件。此外，还有用于 Ruby on Rails 的 Tailwind gem，以及在任何项目中使用 Tailwind 的 CLI（命令行界面）工具。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">配置已从 JavaScript 文件转移到 CSS 文件中，使用主题变量。旧版 JavaScript 配置文件仍支持，但必须显式加载。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Tailwind CSS 4.0 中的调色板从 rgb（红绿蓝）变成了 oklch（Oklab 颜色空间），增加了色度和色调坐标，使色彩更加丰富。新增加的一个 3D 变换 API ，允许缩放、旋转等。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">开发人员必须时刻警惕浏览器的兼容性问题，Tailwind CSS 4.0 要求使用最新的浏览器，具体来说是 Chrome 120 或更高版本、Safari 16.4 或更高版本、Firefox 128 或更高版本。这些浏览器的日期必须是 2023 年之后的，而 Firefox 的日期则需要是 2024 年 7 月之后的。文档中说，这些都是 “核心功能 ”所必需的，而 Tailwind 3.0 的要求则较为宽松。建议开发者在使用旧版浏览器时避免使用不支持的功能，而 Internet Explorer 则完全不被支持 。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">虽然提供了升级工具，但也存在一些升级问题。这份完整的升级指南列出了所有破坏性的变更。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">Tailwind CSS 框架在 MIT 许可下开源。与 Meta 的 Bootstrap 不同，Tailwind CSS 不包含高级组件，但 TailwindUI 中提供了这些组件，不过需要商业许可。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">2023 年 CSS 现状调查（2024 年的调查结果尚未发布）显示，“Tailwind CSS 是开发人员乐于继续使用的主要 UI 框架”，其使用率为 50.5%，其中计划继续使用的占 75.7%。Bootstrap 的使用率更高，但略有下降。在这一领域，这两个框架占据着主导地位，排在第三位的 Materialize CSS 使用率为 21.7%。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">关于 Tailwind 优缺点的讨论众说纷纭，其中包括使用无构建步骤的 vanilla CSS 的观点。Wathan 创建 Tailwind 正是因为在大型项目中维护 CSS 文件所面临的挑战。有些人对破坏性更改的数量感到不满，但正如一位开发人员所说：“减少依赖和提高性能总是受欢迎的。”</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);\">不过，浏览器兼容性是个问题，与大多数初始版本一样，在不确定用户浏览器是否支持的情况下，开发人员会谨慎对待在生产中的早期采用。</p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: left;\"><strong><span style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></strong></p>\n   <p style=\"white-space: pre-line;line-height: 27px;padding-top: 23px;padding-right: 8px;padding-left: 8px;color: rgb(74, 74, 74);text-align: left;\"><span style=\"font-size: 14px;color: rgb(136, 136, 136);\">https://devclass.com/2025/01/24/tailwind-css-4-0-released-with-ground-up-rewrite-for-faster-rust-powered-build</span></p><section style=\"padding-top:23px;color:rgb(74, 74, 74);visibility:visible;white-space:pre-line;padding-left:8px;letter-spacing:0.544px;font-size:16px;line-height:27px;-webkit-tap-highlight-color:transparent;outline:0px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;margin-bottom:0px;padding-right:8px;\">   </section>\n  </section>\n  <p style=\"display: none;\"><mp-style-type data-value=\"10000\"></mp-style-type></p>\n \n",
+  "aiSummary": "Tailwind CSS 4.0 发布，通过新构建引擎 Oxide 提升构建速度，引入现代化 CSS 特性（如级联层和自定义属性支持），并将颜色系统从 RGB 转向 Oklch，但对浏览器兼容性要求较高。",
+  "oneSentenceSummary": "Tailwind CSS 4.0 发布，通过新构建引擎 Oxide 提升构建速度，引入现代化 CSS 特性（如级联层和自定义属性支持），并将颜色系统从 RGB 转向 Oklch，但对浏览器兼容性要求较高。",
+  "summary": "文章介绍了 Tailwind CSS 4.0 的主要更新和改进。该版本通过全新的 Oxide 构建引擎显著提升了构建性能，增量构建速度提高 100 倍，同时优化了与 Vite 工具的集成。新增的 CSS 特性包括级联层和自定义属性支持，简化了框架内部结构。此外，颜色系统从 RGB 转向 Oklch，提供更丰富的色彩表现，并新增了一个 3D 变换 API，允许缩放、旋转等操作。然而，新版本对浏览器核心功能有严格要求，仅支持最新版本的主流浏览器，这可能限制其早期采用率。配置方式也有所调整，从 JavaScript 文件转向 CSS 文件中的主题变量。尽管提供了升级工具，但破坏性变更较多，例如配置文件迁移和部分功能废弃，开发者需谨慎评估迁移成本。此外，TailwindUI 提供高级组件，但需要商业许可。",
+  "mainPoints": [
+    {
+      "point": "Oxide 引擎大幅提升构建性能",
+      "explanation": "新构建引擎使用 Rust 重写关键模块，空间占用减少 35%，增量构建速度提高 100 倍，显著优化开发体验。"
+    },
+    {
+      "point": "新增现代化 CSS 特性",
+      "explanation": "引入级联层和自定义属性支持，解决了 CSS 开发中的痛点问题，同时简化了框架维护工作。"
+    },
+    {
+      "point": "颜色系统从 RGB 转向 Oklch",
+      "explanation": "新颜色系统增加了色度和色调坐标，使色彩表现更加丰富，为设计和开发提供更多可能性。"
+    },
+    {
+      "point": "严格的浏览器兼容性要求",
+      "explanation": "仅支持最新版本的 Chrome、Safari 和 Firefox，可能限制早期采用，尤其是在老旧项目中的应用。"
+    }
+  ],
+  "keyQuotes": [
+    "承诺将构建速度提高 5 倍，增量构建速度提高 100 倍。",
+    "该版本需要最新的 Web 浏览器核心功能，这可能会限制最初的使用。",
+    "这些现代化特性简化了 Tailwind 的内部结构，使维护工作变得更容易。",
+    "减少依赖和提高性能总是受欢迎的。"
+  ],
+  "tags": [
+    "CSS框架",
+    "TailwindCSS",
+    "前端开发",
+    "构建工具",
+    "Vite"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1272,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1738817121000,
+  "publishDateStr": "2025-02-06",
+  "publishDateTimeStr": "2025-02-06 04:45:21"
+}

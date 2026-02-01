@@ -1,0 +1,54 @@
+{
+  "id": "RAW_624a42",
+  "title": "GPT-4o 的 P 图太火了，GPU 在融化，官方终于限流了",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-28-2",
+  "date": "2025-03-28 02:18:47",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>「看到人们喜欢 ChatGPT 中的图片功能真是太有趣了，但是我们的 GPU 正在融化。」</p>\n  </blockquote>\n  <p>上线不到 72 小时，OpenAI 的 GPT-4o 原生图像功能终于扛不住了。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/82ddfe45-5a33-4ebf-400d-601491a09c00/public\" data-ratio=\"0.8320180383314544\" data-s=\"300,640\" data-type=\"png\" data-w=\"887\" type=\"block\" data-imgfileid=\"503478560\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/ea1fd44d-ea6b-4b13-a71f-d84772762ba4/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>今天凌晨，OpenAI CEO 山姆・奥特曼在社交平台 X 上宣布 ChatGPT 图像生成功能开始暂时受限。这一次，他没有具体说明次数限制是多少，但表示希望这项保障措施不需要实施很长时间，因为 OpenAI 正在尝试优化效率。</p>\n  <p>随着用户在互联网上发布大量 ChatGPT 生成的图像，传播开来之后再吸引到更多的用户，OpenAI 升级后的图像工具火爆程度远远超出了预期。其实 GPT-4o 生成图像的速度越来越慢，很多用户已经在抱怨了，周四时生成一张图片的速度就长达半个小时。</p>\n  <p>要知道，现在 GPT-4o 生图还是仅限于付费版用户的功能（Plus、Pro 和 Team 用户）。虽然奥特曼仍然许诺免费的 ChatGPT 账户未来每天可以获得三次生成机会，但是照目前的情况来看距离兑现反而还越来越远了。</p>\n  <p>看起来这一回，AI 的图片生成能力终于超过了某个阈值，切实地在重塑着世界。</p>\n  <p>人们从 GPT-4o 生成的图像中会发现一些令人毛骨悚然的细节，可以看出 AI 是能够理解你生成图片背后想要表达的含义。这说明 GPT-4o 的绘图能力源自 LLM 本身，并不是像以前那样简单地调用专门的生图模型（Dall-E）。经过了最新的思维链流程，AI 充分结合了自身的知识，能够实现更好的反馈。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/56413b70-9fda-4f0d-08a2-32dec306f400/public\" data-ratio=\"1.5\" data-s=\"300,640\" data-type=\"png\" data-w=\"1024\" type=\"block\" data-imgfileid=\"503478561\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/237f1382-d5d8-4ef8-80bd-61f6e5543559/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;用 GPT-4o 生成的图片。</sup></p>\n  <p>原生多模态的大模型是如此的强大，对此很多业内人士已经开始认为，当下一些明星 AI 创业公司开发的图像生成工具、RAG 工具、AI IDE、工作流、智能体等会在基础大模型能力提升之后变得不值一提。</p>\n  <p>毕竟如果把 GPT-4o 比作一个知识渊博，又有理性的设计师，那么 Stable Diffusion 还仅局限于美工的程度。</p>\n  <p>OpenAI 曾报告说，GPT-4o 生图能力的大幅提升源自于一系列技术改进，在执行生成任务的过程中，AI 会对人类提出的 Prompt 进行细化，编写出一个更加详细的英文版提示词。它还会充分调用模型内已有的知识库和对话上下文，并对人们上传的参考图片预先进行转化处理。</p>\n  <p>由此生成的图片可以轻松获得人们构想的效果，具备完美的风格一致性，一举让此前还属于玩具的图像生成工具成为了兼具准确性与实用性的强大工具。</p>\n  <p>当然，这一切都是建立在更加复杂的推理和计算基础上的。目前的 GPT-4o 在效率、逻辑上也存在一些问题。比如奥特曼的推文下有人就在质疑：我试图生成辛普森一家风格的图片，ChatGPT 算完了才回复我「受到版权限制无法生成」，为什么不在生成图片之前就限制呢？</p>\n  <section>\n   <img data-imgfileid=\"503478562\" data-ratio=\"0.6525714285714286\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/06092a05-2a24-410d-e9dd-1f959d021e00/public\" data-type=\"png\" data-w=\"875\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/79faee84-901e-4ad0-9313-18010e26bd30/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>说到生成图像的风格，其实又引出了另一个问题：整个互联网上大家一直在生成的吉卜力风格的却不受版权限制，这是否也是一种双标？</p>\n  <p>自从奥特曼换了头像带起节奏，很多人在用 GPT-4o 生成吉卜力工作室画风的图像，有的人做出了表情包开始卖，也有人顺着这股风潮开始推出滤镜 App，结果吉卜力终于忍无可忍了，发来了律师函：</p>\n  <section>\n   <img data-imgfileid=\"503478563\" data-ratio=\"1.4784580498866213\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32f12607-cae5-4ad1-face-a31f7dee0300/public\" data-type=\"png\" data-w=\"882\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/d2baaa16-e189-4b43-8dce-614ba9143517/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>或许在 OpenAI 改进好大模型之前，这股 GPT-4o 改图的风潮就会因为其他层面的问题而受到影响。</p>\n  <p>不过 OpenAI 并没有停止前进。今天凌晨，他们又宣布了 ChatGPT 的另一波更新：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d0af75b8-993a-4a88-99cb-9f6b403c6000/public\" data-ratio=\"0.3042986425339366\" data-s=\"300,640\" data-type=\"png\" data-w=\"884\" type=\"block\" data-imgfileid=\"503478564\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/e989715d-ec06-4144-9a81-ee8bed87ad85/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3119701-f7f7-4458-c623-5ebf05ce1e00/public\" data-ratio=\"0.9453302961275627\" data-s=\"300,640\" data-type=\"png\" data-w=\"878\" type=\"block\" data-imgfileid=\"503478565\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/ed3caf22-f281-4d48-b183-ba20de365e6c/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>更新后的 GPT-4o 功能已面向所有付费用户开放。OpenAI 表示，免费用户将在未来几周内获得相同功能。</p>\n  <p>AI 引发的革命，还在继续。</p>\n  <p><sup>参考内容：</sup></p>\n  <p><sup>https://x.com/sama/status/1905296867145154688</sup></p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 的 GPT-4o 多模态图像生成能力因需求激增导致限流，并引发了版权及 AI 发展方向的讨论。",
+  "oneSentenceSummary": "OpenAI 的 GPT-4o 多模态图像生成能力因需求激增导致限流，并引发了版权及 AI 发展方向的讨论。",
+  "summary": "文章讨论了 OpenAI 的 GPT-4o 图像生成功能因其受欢迎程度超出预期，导致服务器 GPU 资源告急，不得不采取限流措施。GPT-4o 的强大之处在于它能理解用户生成图片背后的含义，并结合自身知识进行反馈，这得益于其原生多模态大模型的特性，能够实现完美的风格一致性和更强的推理能力，超越了传统图像生成工具。由于高并发用户请求，OpenAI 限制了 GPT-4o 的图像生成次数。此外，文章还提到了 GPT-4o 在生成图像风格方面引发的版权问题，例如吉卜力工作室对未经授权使用其风格生成图像的行为采取了法律行动。最后，文章提到了 OpenAI 对 GPT-4o 的最新更新，并表示 AI 引发的革命仍在继续，AI 在多模态领域的应用将更加广泛。",
+  "mainPoints": [
+    {
+      "point": "GPT-4o 图像生成功能因高并发用户请求导致 GPU 资源紧张而限流。",
+      "explanation": "用户对 GPT-4o 图像生成功能的强烈需求导致 OpenAI 的 GPU 资源面临巨大压力，促使 OpenAI 不得不采取临时限流措施以保证服务质量。"
+    },
+    {
+      "point": "GPT-4o 凭借其强大的多模态能力，在图像生成方面实现了质的飞跃，超越了传统工具。",
+      "explanation": "GPT-4o 能够理解用户意图并结合自身知识生成图像，这归功于其强大的多模态大模型能力，使其在图像生成方面超越了传统工具。"
+    },
+    {
+      "point": "GPT-4o 的版权问题凸显了 AI 内容生成领域面临的法律挑战。",
+      "explanation": "用户使用 GPT-4o 生成特定风格（如吉卜力风格）的图像并用于商业用途，引发了版权争议，促使相关方采取法律行动。"
+    }
+  ],
+  "keyQuotes": [
+    "「看到人们喜欢 ChatGPT 中的图片功能真是太有趣了，但是我们的 GPU 正在融化。」",
+    "看起来这一回，AI 的图片生成能力终于超过了某个阈值，切实地在重塑着世界。",
+    "毕竟如果把 GPT-4o 比作一个知识渊博，又有理性的设计师，那么 Stable Diffusion 还仅局限于美工的程度。",
+    "由此生成的图片可以轻松获得人们构想的效果，具备完美的风格一致性，一举让此前还属于玩具的图像生成工具成为了兼具准确性与实用性的强大工具。"
+  ],
+  "tags": [
+    "GPT-4o",
+    "图像生成",
+    "多模态模型",
+    "OpenAI",
+    "限流"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1241,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743128327000,
+  "publishDateStr": "2025-03-28",
+  "publishDateTimeStr": "2025-03-28 02:18:47"
+}

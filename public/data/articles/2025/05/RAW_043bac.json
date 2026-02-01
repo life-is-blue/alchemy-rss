@@ -1,0 +1,63 @@
+{
+  "id": "RAW_043bac",
+  "title": "巧妙！一个传统技术让国产视觉基础模型直接上大分",
+  "url": "https://www.qbitai.com/2025/05/286307.html",
+  "date": "2025-05-23 06:21:24",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"74\">金磊 发自 凹非寺</p>\n   <p data-track=\"75\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">咱就是说啊，<strong>视觉基础模型</strong>这块儿，国产AI真就是上了个大分——</p>\n  <p data-track=\"3\"><strong>Glint-MVT</strong>，来自格灵深瞳的最新成果。</p>\n  <p data-track=\"4\">先来看下成绩——<strong>线性探测</strong>（LinearProbing）：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2ef50aeb-cbf1-4248-f5b0-2bd73ad1cb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2ef50aeb-cbf1-4248-f5b0-2bd73ad1cb00/public\">\n  </div>\n  <p data-track=\"5\">简单来说，线性探测是一种测试预训练模型效果的小技巧，测的就是基本功扎不扎实。它的做法是：</p>\n  <p data-track=\"6\">把模型最后一部分换成简单的线性层，其他部分全部保持原样不动；然后只训练这个新加的线性层，通过它的表现来判断模型之前学到的特征好不好用。</p>\n  <p data-track=\"7\">这个测试是在26个分类测试集中跟CLIP和OpenCLIP做了对比，结果显示，国产视觉基础模型平均准确率比OpenCLIP高2.3%，比CLIP高1.1%。</p>\n  <p data-track=\"8\">再来看应用效果。</p>\n  <p data-track=\"9\">如果说视觉基础模型是一个底座，那么它的下游任务，像<strong>“图像理解+分割一切”</strong>，便是更为直观的效果展现。</p>\n  <p data-track=\"10\">例如下面这张图片，然后我们可以问一下AI：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"11\">你能提供一个分割掩膜给这个图像中触摸篮球的人吗？</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c63f986-b964-4ae4-9d3b-bf1d4433cc00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c63f986-b964-4ae4-9d3b-bf1d4433cc00/public\">\n  </div>\n  <p data-track=\"12\">很显然，这个任务的难点在于拿篮球的人被其他人的手、身体等部位挡住，分割难度也大幅增加。</p>\n  <p data-track=\"13\">然而，国产AI是不在怕的，啪的一下，超精细地把要求的人物给抠了出来：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7f4c81c7-fe3e-4ad4-8bc3-9d0f38171d00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7f4c81c7-fe3e-4ad4-8bc3-9d0f38171d00/public\">\n  </div>\n  <p data-track=\"14\">我们再来看下更加复杂的案例：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/041c356a-b54d-4f7c-bd43-21df320adb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/041c356a-b54d-4f7c-bd43-21df320adb00/public\">\n  </div>\n  <p data-track=\"15\">面对如此繁杂的图片，不论要求AI分割哪种食物，它都能精准无误地识别出来。</p>\n  <p data-track=\"16\">Glint-MVT中的MVT，全称叫做Margin-based pretrained Vision Transformer，是团队自研、设计的视觉预训练Transformer模型。</p>\n  <p data-track=\"17\">它的一大亮点，就是创新性地把原先用于人脸识别的<strong>间隔Softmax（Margin Softmax）损失函数</strong>引入了进来，再通过构造百万级虚拟类别训练模型，显著降低数据噪声影响，提升泛化能力。</p>\n  <p data-track=\"18\">并且从实测和性能效果上来看，在各种专业下游任务中的表现，要比CLIP等其他ViT模型的结果更好。</p>\n  <p data-track=\"19\">在Glint-MVT这个底座之上，团队针对引用表达分割（RES，Referring Expression Segmentation）和图像理解，还分别训练出了多模态模型：<strong>Glint-RefSeg模型</strong>和<strong>MVT-VLM模型</strong>。</p>\n  <p data-track=\"20\">Glint-RefSeg是无需特别搜集训练就可以分割一切，从刚才的例子中也是感受到其实力，并且相比其他RES任务的模型，它取得了当前的<strong>SOTA</strong>。</p>\n  <p data-track=\"21\">至于MVT-VLM，它在图像理解的实力，可以用下面的例子来展示：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"22\">请分别告诉我图中运动员的性别以及衣服颜色和号码。</p>\n  </blockquote>\n  <p data-track=\"23\">即使图片中红衣服的号码呈现出刁钻的角度，它也能轻松识别：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/36f9bbc2-9029-4c46-c161-41ce10318b00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/36f9bbc2-9029-4c46-c161-41ce10318b00/public\">\n  </div>\n  <p data-track=\"24\">那么Glint-MVT还有哪些效果，我们继续来看。</p>\n  <p data-track=\"26\">首先在<strong>分割</strong>这件事上，除了图像之外，<strong>Glint-RefSeg</strong>也是可以用在<strong>视频</strong>上的。</p>\n  <p data-track=\"27\">例如给定一段Bruno Mars的唱跳视频，效果是这样的：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43b0f55e-303a-4c3d-160f-41e9fabc2600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43b0f55e-303a-4c3d-160f-41e9fabc2600/public\">\n  </div>\n  <p data-track=\"76\">视频地址：<br>\n    https://mp.weixin.qq.com/s/CXEGGF9tJUycreIpPgV98Q</p>\n  <p data-track=\"29\">可以看到，不论画面、角度如何切换，任务要求的“穿粉色西装的男子”，稳稳地被AI锁定住了。</p>\n  <p data-track=\"30\">而且即使Bruno Mars动作幅度再大、变化再快，也丝毫不影响AI分割的效果，尤其是手部等细微之处，可以说是拿捏得相当到位。</p>\n  <p data-track=\"31\">而且除了传统场景之外，像<strong>具身智能</strong>这样的fashion场景，Glint-MVT也是用上了。</p>\n  <p data-track=\"32\">例如这样：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9b1386e9-3a74-4a81-302d-19b59a4d6c00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9b1386e9-3a74-4a81-302d-19b59a4d6c00/public\">\n  </div>\n  <p data-track=\"33\">在看完机械臂的操作之后，如果问AI：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"34\">把橙子放到白色碗里，（结果是）合适的吗？请回答是或否。</p>\n  </blockquote>\n  <p data-track=\"35\">AI就会根据当前的场景回答：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"36\">是。</p>\n  </blockquote>\n  <p data-track=\"37\">从种种的效果来看，不得不说Glint-MVT这个视觉基础模型，基本功是有够扎实的。</p>\n  <p data-track=\"38\">那么接下来的一个问题就是：</p>\n  <p data-track=\"40\">正如我们刚才提到的，Glint-MVT技术核心亮点，就是把<strong>间隔Softmax</strong>引入了进来。</p>\n  <p data-track=\"41\">具体而言，Glint-MVT采用基于大类别分类的间隔Softmax损失函数进行训练，通过引入 “类别间隔” 和 “特征紧凑性” 的双重约束，解决传统Softmax在大规模分类中语义区分不足的问题。</p>\n  <p data-track=\"42\">在此基础上，格灵深瞳团队提出了进一步的优化方案。</p>\n  <p data-track=\"43\">首先是<strong>虚拟类别构造</strong>。</p>\n  <p data-track=\"44\">团队利用图像文本特征聚类技术，将大规模数据集（如LAION 400M）划分为100万虚拟类别，替代传统人工标注标签，可以高效地提升数据规模。</p>\n  <p data-track=\"45\">其次是<strong>噪声抑制与计算优化</strong>。</p>\n  <p data-track=\"46\">团队在训练时仅随机选取部分负类中心（采样比例约 10%），如此一来，就可以<strong>降低类别间冲突</strong>对模型的干扰，同时<strong>减少计算量和显存占用</strong>。</p>\n  <p data-track=\"47\">相比CLIP的实例对比学习，间隔Softmax通过显式建模类别间边界，能让模型更<strong>聚焦语义结构</strong>，在图像检索、分类等任务上表现更优。</p>\n  <p data-track=\"48\">以上就是Glint-MVT效果提升的关键，而Glint-RefSeg和MVT-VLM等模型也是基于这个大底座而来。</p>\n  <p data-track=\"49\">例如Glint-RefSeg采用MVT v1.1（MLCD）作为核心视觉编码组件，并融合了大语言模型与SAM解码器的技术优势。</p>\n  <p data-track=\"50\">这一设计使得模型能够理解用户的自然语言描述，并精确识别和分割图像中相应的目标对象，输出高质量的分割掩膜。</p>\n  <p data-track=\"51\">并且从结果来看，已然是处于业界SOTA：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25c6bf34-32f0-4fe4-70bb-7d58fc9cb900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25c6bf34-32f0-4fe4-70bb-7d58fc9cb900/public\">\n  </div>\n  <p data-track=\"52\">但格灵深瞳团队在技术上的动作还远不止于此。</p>\n  <p data-track=\"53\">他们已经将技术锚点锁定到了更复杂的多模态大模型和视频理解方面，而且也即将推出相应的模型：MVT v1.5和MVT v2.0（Video）。</p>\n  <p data-track=\"55\">除了技术上的创新，格灵深瞳之所以能够在视觉基础模型上有如此的突破，团队的发展，也是关键因素之一。</p>\n  <p data-track=\"56\">格灵深瞳可以说是国内计算机视觉领域的早期探索者，从2013年起便始终专注于视觉技术的研发与落地。</p>\n  <p data-track=\"57\">从早期的安防、金融行业解决方案，到如今聚焦视觉大模型与多模态技术，其技术演进始终围绕一个核心：<strong>让AI真正解决产业痛点。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"巧妙！一个传统技术让国产视觉基础模型直接上大分\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e74e6ed4-d70c-439b-2cbb-a1ec70663100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e74e6ed4-d70c-439b-2cbb-a1ec70663100/public\">\n  </div>\n  <p data-track=\"81\">这次发布的Glint-MVT就是对这句话非常好的诠释。</p>\n  <p data-track=\"59\">因为它并非单纯追求学术指标，而是通过提升下游任务（如分类、检测、分割）的能力，为实际应用场景赋能。</p>\n  <p data-track=\"60\">由此可见，即便进入大模型时代，格灵深瞳依旧没有盲目追逐参数规模和噱头，而是坚持<strong>“从业务需求中来到产品落地中去”</strong>的研发逻辑。</p>\n  <p data-track=\"61\">与此同时，格灵深瞳还是一家<strong>主动拥抱开源，但拒绝跟风</strong>的企业。</p>\n  <p data-track=\"62\">它的开放策略目标非常明确，正如<strong>CEO吴一洲</strong>强调<strong>“回到初心，能贡献什么就贡献什么”</strong>，通过充分的开放和分享，期待能激发更多社区伙伴的创新，从而形成创新互哺的良性循环，伙伴越聚越多，技术越玩越强。她在公司里也鼓励团队&nbsp;<strong>“勇敢点”</strong>、<strong>“浪一点”</strong>。 她认为当下技术迭代快，但也更加进入了深水区，要更加拥有直面技术和应用本质的勇气。</p>\n  <p data-track=\"63\">再如格灵深瞳算法研究院院长<strong>冯子勇</strong>，在2016年博士毕业之后，便加入格灵深瞳。</p>\n  <p data-track=\"64\">他带领的格灵深瞳灵感实验室，聚焦于视觉及相关模态特征表达与应用。主要研究方向有视觉基础大模型、多模态大模型、图文多模态表征、大规模分布式训练等。</p>\n  <p data-track=\"65\">冯子勇主导了多项关键算法的技术攻关，特别在“人脸识别与聚类算法技术”以及“视频解析算法技术”等专业领域取得了显著成就。</p>\n  <p data-track=\"66\">例如在银行场景中，实现了倒地检测在上万路摄像头下实际使用，获得客户高度认可。相关技术在国际赛事中表现优异，还斩获了OpenFAD2023人体动作识别竞赛和首届SkatingVerse花样滑冰动作识别竞赛双料冠军。</p>\n  <p data-track=\"67\">他所带来的年轻化思维与丰富实践经验显得格外宝贵。</p>\n  <p data-track=\"68\">而在格灵深瞳的身上，我们或许还能看到大模型时代发展的一个缩影——</p>\n  <p data-track=\"69\"><strong>既需要头部玩家，也离不开格灵深瞳这样的精耕者。</strong></p>\n  <p data-track=\"70\">格灵深瞳坚持从场景中提炼技术、以开源回报生态的路径，或许正是AI落地“最后一公里”的关键解法。</p>\n  <p data-track=\"71\">AI技术已从通用探索进入垂直深耕阶段，不同企业需要像“打仗”一样各司其职，<strong>找准自己的军种角色，比盲目扩张更重要</strong>；格灵深瞳更像是“特种兵”，通过视觉基础模型为下游任务提供训练支持。</p>\n  <p data-track=\"72\">这种务实与开放并存的哲学，或许正是格灵深瞳在视觉长跑中持续领跑的密码。</p>\n  <p data-track=\"73\">Glint-MVT体验地址：<br>\n    https://glint-mvt.com</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "格灵深瞳推出国产视觉基础模型 Glint-MVT，引入间隔 Softmax 等技术，大幅提升视觉理解与分割能力。",
+  "oneSentenceSummary": "格灵深瞳推出国产视觉基础模型 Glint-MVT，引入间隔 Softmax 等技术，大幅提升视觉理解与分割能力。",
+  "summary": "文章详细介绍了格灵深瞳最新发布的视觉基础模型 Glint-MVT，该模型创新性地将人脸识别领域的间隔 Softmax 损失函数应用于视觉 Transformer，并通过虚拟类别构造和噪声抑制优化训练过程，显著增强了模型的语义区分度和泛化能力。文章通过线性探测测试展示了 Glint-MVT 超越 CLIP 和 OpenCLIP 的基础能力。基于 Glint-MVT，团队构建了 Glint-RefSeg 和 MVT-VLM 等下游模型，并在引用表达分割和图像理解任务上实现了 SOTA 表现，通过丰富的图像、视频及具身智能场景示例，直观展示了其精细分割和准确理解的强大能力。文章最后探讨了格灵深瞳坚持务实研发、聚焦产业痛点并积极拥抱开源的企业发展策略，认为这是其在视觉技术领域持续领先的关键。",
+  "mainPoints": [
+    {
+      "point": "Glint-MVT 创新引入间隔 Softmax 损失函数",
+      "explanation": "借鉴人脸识别技术，通过间隔 Softmax 增强视觉 Transformer 模型的语义区分能力和泛化性能，解决传统方法在大规模数据下的不足。"
+    },
+    {
+      "point": "虚拟类别构造和噪声抑制优化模型训练",
+      "explanation": "利用图像文本特征聚类构建百万级虚拟类别，并采样负类中心抑制噪声，有效提升数据利用效率和训练效果。"
+    },
+    {
+      "point": "下游模型 Glint-RefSeg 和 MVT-VLM 表现突出并达 SOTA",
+      "explanation": "基于 Glint-MVT 底座，开发的引用表达分割和图像理解模型在多项任务中取得当前最佳性能，应用效果显著。"
+    },
+    {
+      "point": "模型在多场景展现强大实用能力",
+      "explanation": "Glint-MVT 及其下游模型在复杂图像/视频分割、刁钻角度图像理解及具身智能等实际应用场景中表现出色。"
+    },
+    {
+      "point": "格灵深瞳坚持务实研发，从场景出发解决产业痛点",
+      "explanation": "公司发展战略聚焦于技术落地和实际应用价值，而非单纯追求学术指标或参数规模，贴合 AI 落地“最后一公里”。"
+    }
+  ],
+  "keyQuotes": [
+    "视觉基础模型这块儿，国产 AI 真就是上了个大分。",
+    "它的一大亮点，就是创新性地把原先用于人脸识别的**间隔 Softmax（Margin Softmax）损失函数**引入了进来...",
+    "Glint-RefSeg 是无需特别搜集训练就可以分割一切... 并且相比其他 RES 任务的模型，它取得了当前的**SOTA**。",
+    "它并非单纯追求学术指标，而是通过提升下游任务（如分类、检测、分割）的能力，为实际应用场景赋能。",
+    "格灵深瞳坚持从场景中提炼技术、以开源回报生态的路径，或许正是 AI 落地'最后一公里'的关键解法。"
+  ],
+  "tags": [
+    "视觉基础模型",
+    "Glint-MVT",
+    "间隔Softmax",
+    "多模态",
+    "图像分割"
+  ],
+  "topicTag": "other",
+  "readTime": 13,
+  "score": 89,
+  "wordCount": 3017,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747981284000,
+  "publishDateStr": "2025-05-23",
+  "publishDateTimeStr": "2025-05-23 06:21:24"
+}

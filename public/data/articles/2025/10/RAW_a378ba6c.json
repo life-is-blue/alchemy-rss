@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a378ba6c",
+  "title": "Claude Sonnet 4.5 在 SWE-Bench Verified（软件漏洞修复基准测试）中表现优异，助力 30 小时以上编码任务",
+  "url": "https://www.infoq.com/news/2025/10/claude-sonnet-4-5/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-11 20:00:00",
+  "author": "Hien Luu",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has released <a href=\"https://www.anthropic.com/news/claude-sonnet-4-5\">Claude Sonnet 4.5</a>, its most advanced coding model to date, featuring major improvements in agentic tasks, long-horizon task performance, and computer use capabilities. The company says the model's enhanced training and safety methods have significantly improved its behavior, reducing tendencies such as sycophancy, deception, power-seeking, and delusional reasoning. The model is now available via the <a href=\"https://www.claude.com/platform/api\">Claude API</a>, <a href=\"https://claude.ai/download\">desktop</a>, and <a href=\"https://claude.ai/download\">mobile apps</a> at the same price as its predecessor.</p>\n   <p>Claude Sonnet 4.5 builds on Anthropic's strategy of iteratively improving model performance while maintaining alignment and safety. The model demonstrates the ability to sustain complex, multi-step reasoning and code execution tasks for over 30 hours. On the <a href=\"https://openai.com/index/introducing-swe-bench-verified/\">SWE-bench Verified benchmark</a>, which measures an AI model's ability to solve real-world software issues, Claude Sonnet 4.5 achieved a score of 77.2%, up from 72.7% for Sonnet 4, marking a notable advance in autonomous coding capability. On the <a href=\"https://os-world.github.io/\">OSWorld benchmark</a>, which assesses real-world computer-use skills, Sonnet 4.5 reached 61.4%, improving significantly from 42.2% just four months earlier.</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/10/claude-sonnet-4-5/news/2025/10/claude-sonnet-4-5/en/resources/1claude-sonnet-45-eval-1760041306709.webp\" style=\"width: 800px; height: 704px;\" src=\"https://res.infoq.com/news/2025/10/claude-sonnet-4-5/en/resources/1claude-sonnet-45-eval-1760041306709.webp\" rel=\"share\">\n   </center>\n   <center>\n    <small>Source: <a href=\"https://www.anthropic.com/news/claude-sonnet-4-5\">Anthropic Claude Sonnet 4.5</a></small>\n   </center>\n   <p>Anthropic describes Sonnet 4.5 as its \"most aligned frontier model\", highlighting a balance between greater capability and tighter safeguards. Under <a href=\"https://www.anthropic.com/news/activating-asl3-protections\">ASL-3</a>, the company has enhanced automated classifiers that detect and block potentially harmful instructions, including those related to chemical, biological, radiological, or nuclear (CBRN) risks. According to Anthropic, false positives from these safety systems have dropped tenfold since <a href=\"https://www.anthropic.com/news/constitutional-classifiers\">their introduction</a> and by a factor of two compared to the release of <a href=\"https://www.anthropic.com/news/claude-4\">Claude Opus 4</a> in May 2025.</p>\n   <p>To evaluate Claude Sonnet 4.5's behavior in autonomous, tool-enabled scenarios, Anthropic conducted a series of <a href=\"https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf\">agentic safety tests</a> covering malicious code generation and defenses against prompt-injection attacks. In a set of 150 malicious coding requests prohibited by Anthropic's Usage Policy, Claude Sonnet 4.5 failed on only two, reflecting improved safety training. The model achieved a 98.7% safety score, compared to 89.3% for Claude Sonnet 4, demonstrating significantly stronger refusal behavior and resilience against malicious agentic use.</p>\n   <p>Anthropic recommends all users to upgrade to Claude Sonnet 4.5 and considers it as a \"drop-in replacement\" that delivers stronger performance without additional cost.</p>\n   <p><a href=\"https://www.anthropic.com/news/claude-sonnet-4-5\">Early adopters</a> report measurable gains in coding workflows:</p>\n   <blockquote>\n    <p>Scott Wu, Co-Founder and CEO at Cognition, noted that \"For Devin, Claude Sonnet 4.5 increased planning performance by 18% and end-to-end eval scores by 12%, the biggest jump we've seen since the release of Claude Sonnet 3.6. It excels at testing its own code, enabling Devin to run longer, handle harder tasks, and deliver production-ready code.\"</p>\n   </blockquote>\n   <blockquote>\n    <p>Michele Catasta, Present of replit, shared \"Claude Sonnet 4.5's edit capabilities are exceptional. We went from 9% error rate on Sonnet 4 to 0% on our internal code editing benchmark. Higher tool success at lower cost is a major leap for agentic coding. Claude Sonnet 4.5 balances creativity and control perfectly\"</p>\n   </blockquote>\n   <blockquote>\n    <p>Simon Wilson, an independent open source developer, shared on his <a href=\"https://simonwillison.net/2025/Sep/29/claude-sonnet-4-5/\">blog</a> \"My initial impressions were that it felt like a better model for code than GPT-5-Codex, which has been my preferred coding model since it launched a few weeks ago\"</p>\n   </blockquote>\n   <p>Anthropic's push toward safer, more autonomous coding models mirrors similar advancements across the AI ecosystem. OpenAI recently released <a href=\"https://openai.com/index/introducing-upgrades-to-codex/\">GPT-5-Codex</a>, a version of <a href=\"https://openai.com/index/introducing-gpt-5/\">GPT-5</a> optimized for complex software engineering tasks such as large-scale code refactoring and extended code review workflows.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Claude Sonnet 4.5 Tops SWE-Bench Verified, Extends Coding Focus Beyond 30 Hours\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Hien Luu\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/claude-sonnet-4-5/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760212800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 的 Claude Sonnet 4.5 在自主编码和计算机应用方面实现了最先进的性能，并显著提升了安全性。",
+  "oneSentenceSummary": "Anthropic 的 Claude Sonnet 4.5 在自主编码和计算机应用方面实现了最先进的性能，并显著提升了安全性。",
+  "summary": "Anthropic 发布了 Claude Sonnet 4.5，这是迄今为止其最先进的编码模型，在自主代理任务、长时程任务性能以及通用计算机使用能力上均有显著提升。该模型展示了持续超过 30 小时的复杂、多步骤推理和代码执行能力。它在 SWE-Bench Verified 基准测试中获得了 77.2% 的分数，用于解决实际的软件问题；在 OSWorld 基准测试中获得了 61.4% 的分数，用于计算机使用技能，标志着相比前代产品有了显著进步。Anthropic 强调 Sonnet 4.5 增强的安全性和一致性，减少了有害行为，并提高了对恶意自主代理使用的抵御能力，在 ASL-3 保护下获得了 98.7% 的安全评分。Cognition 和 Replit 等早期采用者报告称，Claude Sonnet 4.5 显著提升了编码工作流程效率，并降低了错误率。他们尤其称赞其强大的编辑能力以及创造力与控制力的完美平衡。Sonnet 4.5 通过 API、桌面和移动应用程序以相同的价格提供，旨在为开发者提供直接升级方案，反映了 Anthropic 在与 OpenAI 的 GPT-5-Codex 等模型的竞争中，不断推动更安全、更自主的人工智能编码解决方案。",
+  "mainPoints": [
+    {
+      "point": "Claude Sonnet 4.5 在自主编程与应用能力方面设立了新基准。",
+      "explanation": "该模型显著提高了在 SWE-Bench Verified 和 OSWorld 基准测试中的性能，展示了增强的解决复杂软件问题和自主执行实际计算机任务的能力。"
+    },
+    {
+      "point": "该模型在人工智能安全性和一致性方面取得了重大进展，减少了有害输出。",
+      "explanation": "Anthropic 实施了 ASL-3 保护和自主代理安全测试，获得了 98.7% 的安全评分，并提高了对恶意自主代理使用的抵抗力，使其成为 Anthropic“最符合预期的前沿模型”。"
+    },
+    {
+      "point": "早期采用者的反馈证实了 Sonnet 4.5 在专业编码工作流程中的实际价值。",
+      "explanation": "来自 Cognition 和 Replit 的评价突出了切实的优势，例如提高的规划性能、降低的错误率和卓越的代码编辑，使其成为开发者的强大工具。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude Sonnet 4.5 取得了 77.2% 的分数，高于 Sonnet 4 的 72.7%，标志着自主编码能力显著提高。",
+    "Anthropic 将 Sonnet 4.5 描述为“最符合预期的前沿模型”，突出了更强大的能力和更严格的安全保障之间的平衡。",
+    "对于 Devin 来说，Claude Sonnet 4.5 将规划性能提高了 18%，端到端评估分数提高了 12%，这是自 Claude Sonnet 3.6 发布以来我们看到的最大飞跃。它擅长测试自己的代码，使 Devin 能够运行更长时间，处理更困难的任务，并交付可用于生产的代码。",
+    "Claude Sonnet 4.5 的编辑能力非常出色。我们将内部代码编辑基准测试的错误率从 Sonnet 4 的 9% 降至 0%。以更低的成本获得更高的工具成功率是自主代理编码的一大飞跃。Claude Sonnet 4.5 完美地平衡了创造力和控制力。",
+    "我的初步印象是，它感觉比 GPT-5-Codex 更好的代码模型，自从几周前推出以来，它一直是我首选的编码模型。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Anthropic",
+    "Claude Sonnet 4.5",
+    "编码助手",
+    "自主代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 541,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760212800000,
+  "publishDateStr": "2025-10-11",
+  "publishDateTimeStr": "2025-10-11 20:00:00"
+}

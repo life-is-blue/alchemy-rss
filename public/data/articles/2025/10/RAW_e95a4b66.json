@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e95a4b66",
+  "title": "90% 代码由 AI 产出，我如何构建可靠上下文体系",
+  "url": "https://juejin.cn/post/7562024713381150730",
+  "date": "2025-10-17 11:41:58",
+  "author": "Vadaski",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>从21年开始使用 copilot，能够用 ai 代码补全，到现在操作复杂项目模块级别的代码生成，它们对于使用者的视角和心态已经不在一个纬度。同样的工具，不同的 ai 使用者我发现也能拉开<strong>巨大的差距</strong>。所以写一篇文章和大家交流一下心得，如果有更佳的实践也非常欢迎一起交流。</p>\n   <h2 data-id=\"heading-0\">Context is all you need</h2>\n   <p>仅依赖 vibe coding（模型自行联想 → 自行搜索 → 直接改动）在一些场景下效果会不稳定：可能出现理解偏差、语义不一致，token 消耗也偏高，产出与预期不完全一致。直接使用对话 AI 更像是你临时拉来了一个专家级别的外包，他很聪明，但是刚来很容易还水土不服，还有可能误解你的意图写了一堆不想要的东西。本质上是 context，Garbage In, Garbage Out 输入质量直接影响输出质量。优化的第一性原理是 attention 机制：无关/模糊/矛盾的信息会分散 attention，影响结果稳定性。而上下文不足：只给单轮粗略描述时，模型不了解项目历史、代码风格与约束，也很难有高质量输出。</p>\n   <p>更稳妥的做法，是提供“合适的 context”，让模型在清晰边界内工作。这里的“合适”指最小但充分、结构化的信息，就像我们设计函数一样——对外只暴露接口，隐藏内部实现；context 的“精妙”也在于此：给模型的，应该是完成任务所需的接口面，而不是把实现细节一股脑儿倒进去。少了容易歧义、多了会稀释 attention，极端情况下还会撑爆上下文窗口。</p>\n   <p>这也是我为什么会做工程级别的 Context Engineering 的原因：把长期知识（架构/职责/规范）沉到“工程树”，每次按任务打包“顶层规则 + 模块 README（索引） + 任务 spec”的最小集，让模型在清晰边界内工作。现在在 IM 模块里，约 90% 的代码可以由 AI 稳定产出，复杂改动也能跨几十个文件一次到位，整体效率提升数倍。</p>\n   <p>我通常会关注下面三个层级：</p>\n   <ul>\n    <li>单行/函数级：这个可以自由发挥，通常我会让 ai 针对复杂的函数写好注释。</li>\n    <li>文件级：通常在一个文件夹在，我会有一个 readme，它用于描述这个文件夹下每一个文件的职责和约束，ai 通过这个 readme 快速定位相关文件。文件内部也会补充注释，帮助 ai 理解细节。</li>\n    <li>工程级（跨模块/跨多文件）：使用“顶层规则 + 模块 README（索引） + spec-driven 生成规划，可以做到横跨几十文件的复杂改动。</li>\n   </ul>\n   <p>上面的作用是一个给 人 / ai 来看的索引，我们也是我们主要需要维护和关注的点。把长期知识（架构/职责/规范）组织成可索引的树。每次任务只打最小包——顶层规则 + 当前模块 README（作为索引）+ 本次任务 spec——减少无效搜索与反复推断，降低 token 消耗，同时提升对齐度与可复现性。</p>\n   <p>当我们构建好一套自动化的 context provider 机制之后，我们只需要考虑每次的需求需要哪个 scope 的文档参与，并不需要每次都手敲一堆 context 进去，这也是“项目级 Context Engineering”的价值所在。</p>\n   <p>当然也不是所有问题都要动用“牛刀”，简单任务用 vibe coding 更快；但层级越高，复杂度和对 AI 的可控性要求越强，方法论需要从“灵感驱动”转为“context 驱动”。</p>\n   <h2 data-id=\"heading-1\">在一个复杂项目中我是如何实践的</h2>\n   <p>此实践并非从项目一开始就这么设计，而是在模块开发中途逐步完善，中间也经历了非常大的改造过程。到目前已经跑得非常稳定，能够 cover 绝大部分需求的自动化产出。好的设计才能让 ai 长期稳定的输出，我的经验是要做到以下几点：</p>\n   <ul>\n    <li>每一个文件尽量不要特别大，主要是在给 ai 的时候省上下文，避免 attention 被稀释</li>\n    <li>每一个模块职责清晰，避免 ai 在职责边界上犹豫</li>\n    <li>每一个文件夹级别都有 README，承担索引定位的职责</li>\n    <li>顶层有长期规则，沉淀通用约束</li>\n    <li>一定要保持对项目的掌控力度，不要 accept 你看不懂的架构级别的内容，保持代码架构的可维护性</li>\n   </ul>\n   <p>为了实现这一点我经历了一波比较大的重构，把整个模块拆的非常细。演进到现在的结构大概是这样：</p>\n   <table>\n    <thead>\n     <tr>\n      <th>层级</th>\n      <th>内容</th>\n      <th>示例</th>\n      <th>作用</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>App 顶层</td>\n      <td>通用约束（全模块生效）</td>\n      <td>路由注册规范、屏幕适配（fit 策略）、文字枚举</td>\n      <td>新人/新 AI 快速上手</td>\n     </tr>\n     <tr>\n      <td>模块顶层</td>\n      <td>职责定义与拆分</td>\n      <td>IM 模块 README：业务职责、子模块划分、维护规则</td>\n      <td>索引定位</td>\n     </tr>\n     <tr>\n      <td>子模块</td>\n      <td>具体的实现信息</td>\n      <td><code>controller/</code>、<code>build/</code>、<code>model/</code> 等文件夹规范，这个下面甚至还可以有子规范，取决于你的复杂度</td>\n      <td>提供最底层的实现层面的信息</td>\n     </tr>\n    </tbody>\n   </table>\n   <blockquote>\n    <p>模块 README 非手动维护，由 AI 在任务完成后自动更新。</p>\n   </blockquote>\n   <h3 data-id=\"heading-2\">Context 供给机制</h3>\n   <p>执行任务时，仅提供两份文档：</p>\n   <ul>\n    <li>App 顶层规则，这里是沉淀了长期通用的规范和约束。</li>\n    <li>当前模块 README，承担了 ai 进行理解的 索引的职责。当前模块 readme 还会引用更加底层的子模块 readme，形成多层索引。</li>\n   </ul>\n   <p>AI 通过索引快速定位相关文件，context 收敛至最小集，避免全文搜索或向量匹配。适用于跨数十文件的复杂修改。</p>\n   <p>这个索引由于就是文档，所以非常方便做 review 或者自定义一些子模块规则。</p>\n   <h3 data-id=\"heading-3\">自动化维护</h3>\n   <p>我的做法是在顶层 README 内置规则：任务完成后，将长期知识（新职责、新约束）写入对应层级 README。每一个层级的 README 都承担了“知识沉淀 + 索引定位”的职责。它不会过度关注更加底层的实现细节，而是聚焦于“我是谁，我负责什么，我的约束是什么”。</p>\n   <ol>\n    <li>AI First：优先让 AI 完成任务。</li>\n    <li>自检更新：AI 读取预定义职责，补充变更至对应 README</li>\n    <li>人工验证：小步 review 确保准确</li>\n   </ol>\n   <p>此机制使文档树随工程演进自动维护，形成活的知识库。</p>\n   <h3 data-id=\"heading-4\">以信任的角度逐渐积累和 AI 交互的手感</h3>\n   <p>一上来要 handle 工程级别的 ai 任务，难度较大，可以先从低层级逐步积累经验和信任感：</p>\n   <ul>\n    <li>单行级别：变量命名、正则、小重构。vibe coding 足够，回滚成本低，置信度高。</li>\n    <li>函数级别：小功能补全、I/O 改造。需要说清 I/O 契约与边界条件，开始约束风格。</li>\n    <li>文件级别：组件/页面/服务。要补充状态、路由、样式及依赖；纯聊天容易跑偏。</li>\n    <li>工程级别：跨模块或跨几十文件的改造/新能力。必须提供结构化的最小上下文包，否则 attention 被稀释、token 浪费、结果难复现。</li>\n   </ul>\n   <p>无论是 ai 产出还是手写，我们最后都是人来为产出结果负责，所以逐步积累和 ai 交互的手感非常重要。即使是 ai 在干活，也务必要保持对整个项目的把控度，不是甩手掌柜。</p>\n   <h3 data-id=\"heading-5\">工程师角色演进</h3>\n   <p>过去：聚焦实现细节</p>\n   <p>现在：</p>\n   <ol>\n    <li>判断需求可达性（技术 + 资源）</li>\n    <li>定义 scope context，作为 context provider 提供合适的上下文</li>\n    <li>进行 planning - Alignment - 等待代码生成 - review - test</li>\n    <li>对 ai 生成代码中的瑕疵补足最后一公里</li>\n   </ol>\n   <blockquote>\n    <p>绝大部分的细节由 AI 处理，工程师专注于高维决策与把控。</p>\n   </blockquote>\n   <h3 data-id=\"heading-6\">公司级扩展</h3>\n   <ul>\n    <li>全链路 context-driven：产品 PRD → 设计 spec → 工程树 → 测试用例</li>\n    <li>未来：仅需指定 scope，AI 自动收敛最小 context，输出质量指数级提升。</li>\n   </ul>\n   <blockquote>\n    <p>这件事情只能从组织架构层面推动，需要领导者的支持与推动。</p>\n   </blockquote>\n   <h3 data-id=\"heading-7\">一些还能提升生成效果的方法</h3>\n   <ul>\n    <li>引入人格，类似 BMad-Method，让 ai 提升某个方面的专业度。</li>\n    <li>复杂的需求使用 spec-driven 的方式，先跟 ai 进行大量的 alignment，确保规划无误之后，再让它实际执行。</li>\n   </ul>\n   <h2 data-id=\"heading-8\">一些正在思考的问题</h2>\n   <ul>\n    <li>我们正在经历新的价值模型的转变，当大量 coding 的工作可以逐步交给 ai 来完成，我们应该如何重新定义自身的价值？</li>\n   </ul>\n   <p>未来已来，只是分布不均匀。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章详细阐述了通过构建工程级上下文体系，实现 AI 稳定产出 90%代码的实践经验与方法论。",
+  "oneSentenceSummary": "文章详细阐述了通过构建工程级上下文体系，实现 AI 稳定产出 90%代码的实践经验与方法论。",
+  "summary": "文章深入探讨了在复杂项目中利用 AI 进行代码生成的挑战与解决方案。作者指出，单纯依赖 AI 的“Vibe Coding”在复杂场景下效果不佳，核心在于缺乏“合适且结构化的上下文”。为此，作者提出了“工程级 Context Engineering”的方法论，通过将长期知识（架构、职责、规范）组织成“工程树”，并为每次任务提供“顶层规则 + 模块 README + 任务 Spec”的最小上下文集。实践证明，此方法在 IM 模块中实现了 90%代码由 AI 稳定产出，显著提升了开发效率。文章还分享了项目结构设计、自动化 Context 供给与维护机制、工程师角色演进等实践经验，并探讨了 AI 时代工程师价值重塑的思考。",
+  "mainPoints": [
+    {
+      "point": "传统“Vibe Coding”在复杂项目中使用 AI 代码生成效率低下且不稳定。",
+      "explanation": "AI 模型在缺乏项目历史、代码风格与约束等上下文时，容易产生理解偏差、语义不一致，导致输出质量低、token 消耗高。"
+    },
+    {
+      "point": "核心在于构建“最小且充分、结构化”的工程级上下文体系。",
+      "explanation": "通过将长期知识（架构、职责、规范）组织为“工程树”，每次任务提供最小上下文包，使 AI 在清晰边界内高效工作。"
+    },
+    {
+      "point": "自动化维护 Context 文档树，确保知识库随项目演进而“鲜活”。",
+      "explanation": "设定 AI 任务完成后自动更新模块 README 的规则，将新职责和约束沉淀为活的知识库，减少人工维护成本。"
+    },
+    {
+      "point": "工程师角色从关注实现细节转向高维决策与 Context 定义。",
+      "explanation": "AI 处理大部分代码细节，工程师专注于需求判断、Context 规划、对齐、Review 与测试，提升整体项目把控度。"
+    }
+  ],
+  "keyQuotes": [
+    "仅依赖 vibe coding（模型自行联想 → 自行搜索 → 直接改动）在一些场景下效果会不稳定：可能出现理解偏差、语义不一致，token 消耗也偏高，产出与预期不完全一致。",
+    "Context is all you need。优化的第一性原理是 attention 机制：无关/模糊/矛盾的信息会分散 attention，影响结果稳定性。",
+    "把长期知识（架构/职责/规范）沉到'工程树'，每次按任务打包'顶层规则 + 模块 README（索引） + 任务 spec'的最小集，让模型在清晰边界内工作。",
+    "此机制使文档树随工程演进自动维护，形成活的知识库。",
+    "绝大部分的细节由 AI 处理，工程师专注于高维决策与把控。"
+  ],
+  "tags": [
+    "AI辅助开发",
+    "上下文工程",
+    "代码生成",
+    "大语言模型",
+    "软件工程实践"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 87,
+  "wordCount": 2703,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760701318000,
+  "publishDateStr": "2025-10-17",
+  "publishDateTimeStr": "2025-10-17 11:41:58"
+}

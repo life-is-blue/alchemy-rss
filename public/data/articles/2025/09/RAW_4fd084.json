@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4fd084",
+  "title": "同事以为要重写，我用 8 行代码让 Vue3 跑起已打包的 Vue2 组件",
+  "url": "https://juejin.cn/post/7548643475261849627",
+  "date": "2025-09-11 07:03:00",
+  "author": "不一样的少年_",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <blockquote>\n    <p><strong>实战推荐：</strong></p>\n    <ul>\n     <li><a href=\"https://juejin.cn/post/7511332054941188147\" target=\"_blank\" title=\"https://juejin.cn/post/7511332054941188147\">⚡ 一个Vue自定义指令搞定丝滑拖拽列表，告别复杂组件封装 </a></li>\n     <li><a href=\"https://juejin.cn/post/7543806966926802971\" target=\"_blank\" title=\"https://juejin.cn/post/7543806966926802971\">🔥 这才是 Vue 驱动的 Chrome 插件工程化正确打开方式</a></li>\n     <li><a href=\"https://juejin.cn/post/7512072678174441522\" target=\"_blank\" title=\"https://juejin.cn/post/7512072678174441522\">🚨 别再乱用will-change了！前端翻车的\"性能优化\"陷阱</a></li>\n    </ul>\n   </blockquote>\n   <h3 data-id=\"heading-0\">前言</h3>\n   <p>最近遇到一个非常典型的前端兼容问题：产品要求将官网底部 footer 组件统一成公司中台的公共组件。查阅对接文档后发现，这个公共组件库是基于 <strong>Vue 2</strong> 开发的，而我们的项目已经升级到 <strong>Vue 3</strong>。</p>\n   <p>更关键的是，<strong>公司中台的组件库是已经打包构建好的</strong>，我们无法直接修改源码或重新构建，只能通过 npm 包的形式引入使用。</p>\n   <p>这就尴尬了，难道要为了一个组件降级整个项目？或者重新写一遍？都不现实。</p>\n   <p>最后我想到一个解决方案：<strong>在 Vue 3 项目中动态加载并运行 Vue 2 组件</strong>。经过实践，成功解决了这个问题，今天分享给大家。</p>\n   <h2 data-id=\"heading-1\">环境准备：先安装 Vue 2 依赖</h2>\n   <p>由于我们需要在 Vue 3 项目中动态加载 Vue 2 的运行时和vue2组件，必须<strong>先安装 Vue 2 相关依赖</strong>。否则 import 时会报模块未找到的错误。</p>\n   <h3 data-id=\"heading-2\">安装命令</h3>\n   <pre><code class=\"hljs language-perl\" lang=\"perl\"><span class=\"hljs-comment\"># 安装 Vue 2 运行时</span>\nnpm install vue@2\n\n<span class=\"hljs-comment\"># 安装 Vue 2 公司公共组件</span>\nnpm install @xxx/dist/navigation-components\n</code></pre>\n   <h2 data-id=\"heading-3\">解决思路</h2>\n   <p>基本思路是这样的：</p>\n   <ol>\n    <li><strong>动态加载</strong> Vue 2 的运行时代码和目标组件；</li>\n    <li><strong>在 Vue 3 组件中创建独立的 Vue 2 实例</strong>，与主项目隔离；</li>\n    <li><strong>将 Vue 2 组件挂载到指定 DOM 节点</strong>；</li>\n    <li><strong>通过 props 传递数据</strong>，甚至事件通信。</li>\n   </ol>\n   <pre><code class=\"hljs\">Vue 3 项目\n├── 正常的 Vue 3 组件\n├── 动态导入 Vue 2 运行时\n├── 创建独立的 Vue 2 实例\n└── Vue 2 组件在独立实例中运行\n</code></pre>\n   <p>这种方式可以让 Vue 2 组件像“小程序”一样在 Vue 3 项目中运行，互不干扰。</p>\n   <hr>\n   <h2 data-id=\"heading-4\">具体实现</h2>\n   <h3 data-id=\"heading-5\">1. 动态导入资源</h3>\n   <p>动态加载资源，这样打包的时候就会进行代码分割，减少主包体积，提升首屏性能。</p>\n   <pre><code class=\"hljs language-js\" lang=\"js\"><span class=\"hljs-keyword\">import</span> <span class=\"hljs-title class_\">Vue2</span> <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'vue2/dist/vue.runtime.min.js'</span>  <span class=\"hljs-comment\">// vue2运行时</span>\n<span class=\"hljs-keyword\">import</span> * <span class=\"hljs-keyword\">as</span> vue2Component <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'xxx/navigation-components'</span> <span class=\"hljs-comment\">// vue2公共组件</span>\n</code></pre>\n   <p><strong>打包结果：</strong></p>\n   <pre><code class=\"hljs language-css\" lang=\"css\">dist/\n├── index<span class=\"hljs-selector-class\">.html</span>\n├── <span class=\"hljs-selector-tag\">main</span><span class=\"hljs-selector-class\">.js</span> (<span class=\"hljs-number\">500</span>KB)           ← 主要代码\n├── vue2<span class=\"hljs-selector-class\">.chunk</span><span class=\"hljs-selector-class\">.js</span> (<span class=\"hljs-number\">34</span>KB)      ← Vue <span class=\"hljs-number\">2</span> 运行时\n├── <span class=\"hljs-selector-tag\">nav</span><span class=\"hljs-selector-class\">.chunk</span><span class=\"hljs-selector-class\">.js</span> (<span class=\"hljs-number\">15</span>KB)       ← 导航组件\n└── <span class=\"hljs-selector-tag\">main</span><span class=\"hljs-selector-class\">.css</span>\n</code></pre>\n   <p>在组件中按需引入之后，打包的时候把不是立即需要的代码（如Vue2运行时、第三方组件）单独打包，等到需要使用到的时候才下载，这样主包变小，首屏加载更快，用户体验更好。如果不是按需加载，在main.js中直接引入的话，用户访问网站就必须等主包下载完才能看到页面。</p>\n   <p><strong>优势：</strong></p>\n   <ul>\n    <li>并行加载，提升加载速度</li>\n    <li>代码分割，减少主包体积</li>\n    <li>按需加载，优化首屏性能</li>\n   </ul>\n   <ol start=\"2\">\n    <li>\n     <h3 data-id=\"heading-6\">在vue3文件中创建 Vue 2 实例</h3>\n    </li>\n   </ol>\n   <pre><code class=\"hljs language-js\" lang=\"js\">&lt;script setup&gt;\n<span class=\"hljs-keyword\">import</span> { onMounted } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'vue'</span>;\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-title class_\">Vue2</span> <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'vue2/dist/vue.runtime.min.js'</span>\n<span class=\"hljs-keyword\">import</span> vue2Component <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'xxx/navigation-components'</span>\n\n<span class=\"hljs-title function_\">onMounted</span>(<span class=\"hljs-keyword\">async</span> () =&gt; {\n   <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Vue2</span>({\n      <span class=\"hljs-attr\">el</span>: <span class=\"hljs-string\">'#nav-footer'</span>,\n      <span class=\"hljs-attr\">render</span>: <span class=\"hljs-function\">(<span class=\"hljs-params\">h</span>) =&gt;</span> <span class=\"hljs-title function_\">h</span>(vue2Component)}\n   )\n})\n&lt;/script&gt;\n</code></pre>\n   <ol start=\"3\">\n    <li>\n     <h3 data-id=\"heading-7\">模板中预留挂载点</h3>\n    </li>\n   </ol>\n   <pre><code class=\"hljs language-vue3\" lang=\"vue3\">&lt;template&gt;\n  &lt;div&gt;\n    &lt;!-- Vue 3 的其他内容 --&gt;\n    &lt;main&gt;...&lt;/main&gt;\n    \n    &lt;!-- 为 Vue 2 组件预留挂载点 --&gt;\n    &lt;div id=\"nav-footer\"&gt;&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/template&gt;\n</code></pre>\n   <h2 data-id=\"heading-8\">优势总结</h2>\n   <ol>\n    <li>\n     <p><strong>兼容性好</strong>：无需修改现有 Vue 3 项目架构</p>\n    </li>\n    <li>\n     <p><strong>隔离性强</strong>：Vue 2 和 Vue 3 实例完全独立，互不影响</p>\n    </li>\n    <li>\n     <p><strong>性能优化</strong>：按需加载，代码分割</p>\n    </li>\n    <li>\n     <p><strong>维护成本低</strong>：可以直接使用现有的 Vue 2 组件</p>\n    </li>\n   </ol>\n   <h2 data-id=\"heading-9\">源码</h2>\n   <pre><code class=\"hljs language-js\" lang=\"js\">&lt;script setup&gt;\n<span class=\"hljs-keyword\">import</span> { onMounted } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'vue'</span>;\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-title class_\">Vue2</span> <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'vue2/dist/vue.runtime.min.js'</span>\n<span class=\"hljs-keyword\">import</span> vue2Component <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'xxx/navigation-components'</span>\n\n<span class=\"hljs-title function_\">onMounted</span>(<span class=\"hljs-keyword\">async</span> () =&gt; {\n   <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Vue2</span>({\n      <span class=\"hljs-attr\">el</span>: <span class=\"hljs-string\">'#nav-footer'</span>,\n      <span class=\"hljs-attr\">render</span>: <span class=\"hljs-function\">(<span class=\"hljs-params\">h</span>) =&gt;</span> <span class=\"hljs-title function_\">h</span>(vue2Component)}\n   )\n})\n\n&lt;/script&gt;\n<span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">template</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">id</span>=<span class=\"hljs-string\">\"nav-footer\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">template</span>&gt;</span></span>\n</code></pre>\n   <h2 data-id=\"heading-10\">总结</h2>\n   <p>用这个方案，Vue 3 项目也能直接用 Vue 2 组件，不用大改项目，也不用重写代码。这样既兼容又省事，还能让页面加载更快，维护也更简单。适合项目升级过渡时用，等以后有时间，再慢慢把组件升级到 Vue 3 就行了。</p>\n   <p><em>如果这篇文章对你有帮助，记得点赞👍收藏⭐分享📤三连哦~</em></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "介绍如何在 Vue 3 项目中以少量代码动态加载并运行已打包的 Vue 2 组件，实现版本兼容。",
+  "oneSentenceSummary": "介绍如何在 Vue 3 项目中以少量代码动态加载并运行已打包的 Vue 2 组件，实现版本兼容。",
+  "summary": "文章详细阐述了在 Vue 3 项目中集成已打包 Vue 2 公共组件的兼容性挑战。作者提出一个高效解决方案：首先安装 Vue 2 依赖，然后通过动态导入 Vue 2 运行时和目标组件，在 Vue 3 组件的生命周期钩子中创建一个独立的 Vue 2 实例，并将其挂载到预留的 DOM 节点。这种方法不仅解决了 Vue 版本不兼容的问题，避免了项目降级或组件重写，还通过代码分割实现了按需加载，优化了首屏性能。该方案具有良好的兼容性、隔离性、性能优化和低维护成本等优势，特别适用于项目升级过渡阶段。",
+  "mainPoints": [
+    {
+      "point": "在 Vue 3 中创建独立的 Vue 2 实例可有效解决组件兼容性问题",
+      "explanation": "通过动态加载 Vue 2 运行时，在 Vue 3 组件内为 Vue 2 组件创建隔离的运行环境，有效规避了版本冲突，实现无缝集成。"
+    },
+    {
+      "point": "动态按需加载 Vue 2 资源能显著优化前端性能",
+      "explanation": "将 Vue 2 运行时和组件作为独立 chunk 按需加载，避免了主包体积膨胀，提升了首屏加载速度和用户体验。"
+    },
+    {
+      "point": "该方案为 Vue 项目升级提供了一种平滑过渡策略",
+      "explanation": "无需重写现有 Vue 2 组件或降级 Vue 3 项目，降低了迁移成本和风险，适用于渐进式升级。"
+    }
+  ],
+  "keyQuotes": [
+    "公司中台的组件库是已经打包构建好的，我们无法直接修改源码或重新构建，只能通过 npm 包的形式引入使用。",
+    "在 Vue 3 项目中动态加载并运行 Vue 2 组件。",
+    "这种方式可以让 Vue 2 组件像\"小程序\"一样在 Vue 3 项目中运行，互不干扰。",
+    "用这个方案，Vue 3 项目也能直接用 Vue 2 组件，不用大改项目，也不用重写代码。"
+  ],
+  "tags": [
+    "Vue3",
+    "Vue2",
+    "组件兼容",
+    "前端开发",
+    "软件架构"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1166,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757574180000,
+  "publishDateStr": "2025-09-11",
+  "publishDateTimeStr": "2025-09-11 07:03:00"
+}

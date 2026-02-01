@@ -1,0 +1,63 @@
+{
+  "id": "RAW_f09e88",
+  "title": "Anthropic：我们如何构建多智能体研究系统",
+  "url": "https://simonwillison.net/2025/Jun/14/multi-agent-research-system/#atom-everything",
+  "date": "2025-06-14 22:00:52",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://www.anthropic.com/engineering/built-multi-agent-research-system\">Anthropic: How we built our multi-agent research system</a></strong>. OK, I'm sold on multi-agent LLM systems now.</p>\n   <p>I've been pretty skeptical of these until recently: why make your life more complicated by running multiple different prompts in parallel when you can usually get something useful done with a single, carefully-crafted prompt against a frontier model?</p>\n   <p>This detailed description from Anthropic about how they engineered their \"Claude Research\" tool has cured me of that skepticism.</p>\n   <p><a href=\"https://simonwillison.net/2025/Jun/2/claude-trace/\">Reverse engineering Claude Code</a> had already shown me a mechanism where certain coding research tasks were passed off to a \"sub-agent\" using a tool call. This new article describes a more sophisticated approach.</p>\n   <p>They start strong by proving a clear definition of how they'll be using the term \"agent\" - it's the \"tools in a loop\" variant:</p>\n   <blockquote>\n    <p>A multi-agent system consists of multiple agents (LLMs autonomously using tools in a loop) working together. Our Research feature involves an agent that plans a research process based on user queries, and then uses tools to create parallel agents that search for information simultaneously.</p>\n   </blockquote>\n   <p>Why use multiple agents for a research system?</p>\n   <blockquote>\n    <p>The essence of search is compression: distilling insights from a vast corpus. Subagents facilitate compression by operating in parallel with their own context windows, exploring different aspects of the question simultaneously before condensing the most important tokens for the lead research agent. [...]</p>\n    <p>Our internal evaluations show that multi-agent research systems excel especially for breadth-first queries that involve pursuing multiple independent directions simultaneously. We found that a multi-agent system with Claude Opus 4 as the lead agent and Claude Sonnet 4 subagents outperformed single-agent Claude Opus 4 by 90.2% on our internal research eval. For example, when asked to identify all the board members of the companies in the Information Technology S&amp;P 500, the multi-agent system found the correct answers by decomposing this into tasks for subagents, while the single agent system failed to find the answer with slow, sequential searches.</p>\n   </blockquote>\n   <p>As anyone who has spent time with Claude Code will already have noticed, the downside of this architecture is that it can burn <em>a lot</em> more tokens:</p>\n   <blockquote>\n    <p>There is a downside: in practice, these architectures burn through tokens fast. In our data, agents typically use about 4× more tokens than chat interactions, and multi-agent systems use about 15× more tokens than chats. For economic viability, multi-agent systems require tasks where the value of the task is high enough to pay for the increased performance. [...]</p>\n    <p>We’ve found that multi-agent systems excel at valuable tasks that involve heavy parallelization, information that exceeds single context windows, and interfacing with numerous complex tools.</p>\n   </blockquote>\n   <p>The key benefit is all about managing that 200,000 token context limit. Each sub-task has its own separate context, allowing much larger volumes of content to be processed as part of the research task.</p>\n   <p>Providing a \"memory\" mechanism is important as well:</p>\n   <blockquote>\n    <p>The LeadResearcher begins by thinking through the approach and saving its plan to Memory to persist the context, since if the context window exceeds 200,000 tokens it will be truncated and it is important to retain the plan.</p>\n   </blockquote>\n   <p>The rest of the article provides a detailed description of the prompt engineering process needed to build a truly effective system:</p>\n   <blockquote>\n    <p>Early agents made errors like spawning 50 subagents for simple queries, scouring the web endlessly for nonexistent sources, and distracting each other with excessive updates. Since each agent is steered by a prompt, prompt engineering was our primary lever for improving these behaviors. [...]</p>\n    <p>In our system, the lead agent decomposes queries into subtasks and describes them to subagents. Each subagent needs an objective, an output format, guidance on the tools and sources to use, and clear task boundaries.</p>\n   </blockquote>\n   <p>They got good results from having special agents help optimize those crucial tool descriptions:</p>\n   <blockquote>\n    <p>We even created a tool-testing agent—when given a flawed MCP tool, it attempts to use the tool and then rewrites the tool description to avoid failures. By testing the tool dozens of times, this agent found key nuances and bugs. This process for improving tool ergonomics resulted in a 40% decrease in task completion time for future agents using the new description, because they were able to avoid most mistakes.</p>\n   </blockquote>\n   <p>Sub-agents can run in parallel which provides significant performance boosts:</p>\n   <blockquote>\n    <p>For speed, we introduced two kinds of parallelization: (1) the lead agent spins up 3-5 subagents in parallel rather than serially; (2) the subagents use 3+ tools in parallel. These changes cut research time by up to 90% for complex queries, allowing Research to do more work in minutes instead of hours while covering more information than other systems.</p>\n   </blockquote>\n   <p>There's also an extensive section about their approach to evals - they found that LLM-as-a-judge worked well for them, but human evaluation was essential as well:</p>\n   <blockquote>\n    <p>We often hear that AI developer teams delay creating evals because they believe that only large evals with hundreds of test cases are useful. However, it’s best to start with small-scale testing right away with a few examples, rather than delaying until you can build more thorough evals. [...]</p>\n    <p>In our case, human testers noticed that our early agents consistently chose SEO-optimized content farms over authoritative but less highly-ranked sources like academic PDFs or personal blogs. Adding source quality heuristics to our prompts helped resolve this issue.</p>\n   </blockquote>\n   <p>There's so much useful, actionable advice in this piece. I haven't seen anything else about multi-agent system design that's anywhere near this practical.</p>\n   <p>They even added <a href=\"https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents/prompts\">some example prompts</a> from their Research system to their open source prompting cookbook. Here's <a href=\"https://github.com/anthropics/anthropic-cookbook/blob/46f21f95981e3633d7b1eac235351de4842cf9f0/patterns/agents/prompts/research_lead_agent.md?plain=1#L135-L137\">the bit</a> that encourages parallel tool use:</p>\n   <blockquote>\n    <p><code>&lt;use_parallel_tool_calls&gt; For maximum efficiency, whenever you need to perform multiple independent operations, invoke all relevant tools simultaneously rather than sequentially. Call tools in parallel to run subagents at the same time. You MUST use parallel tool calls for creating multiple subagents (typically running 3 subagents at the same time) at the start of the research, unless it is a straightforward query. For all other queries, do any necessary quick initial planning or investigation yourself, then run multiple subagents in parallel. Leave any extensive tool calls to the subagents; instead, focus on running subagents in parallel efficiently. &lt;/use_parallel_tool_calls&gt;</code></p>\n   </blockquote>\n   <p>And an interesting description of <a href=\"https://github.com/anthropics/anthropic-cookbook/blob/46f21f95981e3633d7b1eac235351de4842cf9f0/patterns/agents/prompts/research_subagent.md?plain=1#L10\">the OODA research loop</a> used by the sub-agents:</p>\n   <blockquote>\n    <p><code>Research loop: Execute an excellent OODA (observe, orient, decide, act) loop by (a) observing what information has been gathered so far, what still needs to be gathered to accomplish the task, and what tools are available currently; (b) orienting toward what tools and queries would be best to gather the needed information and updating beliefs based on what has been learned so far; (c) making an informed, well-reasoned decision to use a specific tool in a certain way; (d) acting to use this tool. Repeat this loop in an efficient way to research well and learn based on new results.</code></p>\n   </blockquote>\n   <p></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 详细阐述了其为提升性能而构建多智能体 LLM 研究系统的过程。",
+  "oneSentenceSummary": "Anthropic 详细阐述了其为提升性能而构建多智能体 LLM 研究系统的过程。",
+  "summary": "本文基于 Anthropic 对 \"Claude Research\" 系统的详细介绍，阐述了他们如何克服最初对多智能体 LLM 系统的疑虑。该系统超越了单一提示，利用并行智能体（使用工具进行迭代的 LLM）在广度优先查询中表现出色，并能处理超出单个上下文窗口的大型上下文。尽管 Token (令牌) 使用量显著增加（高达 15 倍），但从复杂且可并行化的任务中所获得的价值证明了这种成本的合理性。文章强调了精妙的提示工程在智能体协调和行为优化中的关键作用，还强调了严格评估（包括人工反馈）对于解决来源质量偏差等问题的重要性。文中提供了实用的建议和示例提示，使其成为多智能体系统设计的宝贵资源。",
+  "mainPoints": [
+    {
+      "point": "多智能体系统有效地解决了 LLM 上下文窗口限制以及信息压缩的需求。",
+      "explanation": "该系统通过使子智能体在各自的上下文中并行处理信息，并为主要智能体提炼见解，从而能够处理涉及海量数据的研究任务，这些数据量超出了单个 LLM 的上下文限制。这有效地解决了 LLM 上下文窗口的局限以及信息压缩的需求。"
+    },
+    {
+      "point": "多智能体系统提高了复杂查询的性能。",
+      "explanation": "通过允许多个智能体在独立的上下文中并行工作，该系统能够高效地处理广度优先的研究和超出单个 LLM 上下文窗口的信息。"
+    },
+    {
+      "point": "多智能体设计的有效性很大程度上取决于提示工程。",
+      "explanation": "精心的提示设计对于定义智能体目标、协调任务、管理工具使用以及减轻不良行为至关重要。"
+    },
+    {
+      "point": "并行执行大大减少了研究时间。",
+      "explanation": "对于复杂的研究查询，并行启动子智能体并使用工具可以将任务完成时间最多缩短 90%。"
+    },
+    {
+      "point": "结合 LLM 和人工反馈的可靠评估至关重要。",
+      "explanation": "使用 LLM 和人工测试人员进行的定期测试有助于识别系统缺陷、优化智能体性能并提高输出质量，例如来源选择。"
+    }
+  ],
+  "keyQuotes": [
+    "多智能体系统由多个智能体（LLM 自动使用循环中的工具）协同工作组成。",
+    "我们的内部评估表明，多智能体研究系统尤其擅长于广度优先查询，这些查询涉及同时追求多个独立方向。",
+    "有一个缺点：在实践中，这些架构会快速消耗 Token (令牌)。",
+    "由于每个智能体都由提示控制，因此提示工程是我们改进这些行为的主要手段。",
+    "人工测试人员注意到，我们早期的智能体倾向于选择 SEO 优化内容站点，而不是权威但排名较低的来源，例如学术 PDF 文件或个人博客。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "AI 智能体",
+    "LLM",
+    "提示工程",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1136,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1749938452000,
+  "publishDateStr": "2025-06-14",
+  "publishDateTimeStr": "2025-06-14 22:00:52"
+}

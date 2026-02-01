@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f0b044b3",
+  "title": "Mistral 3：全新视觉模型重磅发布",
+  "url": "https://simonwillison.net/2025/Dec/2/introducing-mistral-3/#atom-everything",
+  "date": "2025-12-02 17:30:57",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://mistral.ai/news/mistral-3\">Introducing Mistral 3</a></strong>. Four new models from Mistral today: three in their \"Ministral\" smaller model series (14B, 8B, and 3B) and a new Mistral Large 3 MoE model with 675B parameters, 41B active.</p>\n   <p>All of the models are vision capable, and they are all released under an Apache 2 license.</p>\n   <p>I'm particularly excited about the 3B model, which appears to be a competent vision-capable model in a tiny ~3GB file.</p>\n   <p>Xenova from Hugging Face <a href=\"https://x.com/xenovacom/status/1995879338583945635\">got it working in a browser</a>:</p>\n   <blockquote>\n    <p>@MistralAI releases Mistral 3, a family of multimodal models, including three start-of-the-art dense models (3B, 8B, and 14B) and Mistral Large 3 (675B, 41B active). All Apache 2.0! 🤗</p>\n    <p>Surprisingly, the 3B is small enough to run 100% locally in your browser on WebGPU! 🤯</p>\n   </blockquote>\n   <p>You can <a href=\"https://huggingface.co/spaces/mistralai/Ministral_3B_WebGPU\">try that demo in your browser</a>, which will fetch 3GB of model and then stream from your webcam and let you run text prompts against what the model is seeing, entirely locally.</p>\n   <p><img alt=\"Screenshot of a man with glasses holding a red cube-shaped object up to the camera in a live computer vision interface; top left label reads “LIVE FEED”; top right slider label reads “INPUT SIZE: 480PX”; lower left panel titled “PROMPT LIBRARY” with prompts “Describe what you see in one sentence.” “What is the color of my shirt?” “Identify any text or written content visible.” “What emotions or actions are being portrayed?” “Name the object I am holding in my hand.”; below that a field labeled “PROMPT” containing the text “write a haiku about this”; lower right panel titled “OUTPUT STREAM” with buttons “VIEW HISTORY” and “LIVE INFERENCE” and generated text “Red cube held tight, Fingers frame the light’s soft glow– Mystery shines bright.”; a small status bar at the bottom shows “ttft: 4188ms  tokens/sec: 5.09” and “ctx: 3.3B-Instruct”.\" src=\"https://static.simonwillison.net/static/2025/3b-webcam.jpg\"></p>\n   <p>Mistral's API hosted versions of the new models are supported by my <a href=\"https://github.com/simonw/llm-mistral\">llm-mistral plugin</a> already thanks to the <code>llm mistral refresh</code> command:</p>\n   <pre><code>$ llm mistral refresh\nAdded models: ministral-3b-2512, ministral-14b-latest, mistral-large-2512, ministral-14b-2512, ministral-8b-2512\n</code></pre>\n   <p>I <a href=\"https://gist.github.com/simonw/0df5e656291d5a7a1bf012fabc9edc3f\">tried pelicans against all of the models</a>. Here's the best one, from Mistral Large 3:</p>\n   <p><img alt=\"Nice cloud. Pelican isn't great, the beak is missing the pouch. It's floating above the bicycle which has two wheels and an incorrect frame.\" src=\"https://static.simonwillison.net/static/2025/mistral-large-3.png\"></p>\n   <p>And the worst from Ministral 3B:</p>\n   <p><img alt=\"A black sky. A brown floor. A set of abstract brown and grey shapes float, menacingly.\" src=\"https://static.simonwillison.net/static/2025/ministral-3b.png\"></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9174/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Mistral 推出具备视觉能力的 Mistral 3 模型，其中包括一个可通过 WebGPU 在浏览器中完全运行的 3B 模型，所有模型均采用 Apache 2 许可证。",
+  "oneSentenceSummary": "Mistral 推出具备视觉能力的 Mistral 3 模型，其中包括一个可通过 WebGPU 在浏览器中完全运行的 3B 模型，所有模型均采用 Apache 2 许可证。",
+  "summary": "Mistral 发布了 Mistral 3 系列下的四款全新模型：三款较小的《Ministral》模型（3B、8B 和 14B）以及一款更大的 Mistral Large 3 MoE 模型，其参数量高达 675B。所有模型均具备视觉能力，并采用 Apache 2 许可证。其中，3B 模型的一大亮点是能够完全在本地浏览器中通过 WebGPU 运行，Hugging Face 的 Xenova 对此进行了演示。作者 Simon Willison 还指出，他的 `llm-mistral` 插件已支持新的 Mistral API 托管版本，并对它们的图像描述能力进行了简要的非正式比较。",
+  "mainPoints": [
+    {
+      "point": "Mistral 3 推出了一系列全新的视觉增强模型，包括更小的《Ministral》模型和更大的 MoE 模型。",
+      "explanation": "此次发布扩展了 Mistral 的多模态 AI 产品线，提供了一系列适用于各种视觉任务和计算环境的模型。"
+    },
+    {
+      "point": "所有全新 Mistral 3 模型均采用 Apache 2 许可证发布。",
+      "explanation": "开源许可鼓励更广泛的应用、社区贡献以及与各种应用程序的集成，从而促进创新并降低准入门槛。"
+    },
+    {
+      "point": "《Ministral》3B 模型通过 WebGPU 实现了突破性的 100% 本地浏览器内执行。",
+      "explanation": "这项技术创新支持在客户端设备上直接实现实时、保护隐私的 AI 应用程序，为交互式 Web 体验和无需服务器端处理的边缘计算开辟了新的可能性。"
+    }
+  ],
+  "keyQuotes": [
+    "所有模型都具备视觉能力，并且均采用 Apache 2 许可证发布。",
+    "令人惊讶的是，3B 模型足够小，可以在 WebGPU 上于您的浏览器中 100% 本地运行！",
+    "您可以在浏览器中尝试该演示，它将获取 3GB 的模型，然后从您的网络摄像头进行流式传输，并允许您针对模型所看到的内容运行文本提示，所有这些都在本地完成。"
+  ],
+  "tags": [
+    "Mistral 3",
+    "多模态 AI",
+    "视觉模型",
+    "开源 AI",
+    "WebGPU"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 91,
+  "wordCount": 214,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764696657000,
+  "publishDateStr": "2025-12-02",
+  "publishDateTimeStr": "2025-12-02 17:30:57"
+}

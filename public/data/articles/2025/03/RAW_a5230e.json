@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a5230e",
+  "title": "阿里深夜开源 Qwen2.5-Omni，7B 参数完成看、听、说、写",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-27-2",
+  "date": "2025-03-27 02:31:46",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   3 月 27 日凌晨，阿里通义千问团队发布 Qwen2.5-Omni。\n  </section>\n  <section>\n   <img alt=\"2025-03-27_070702.png\" data-imgfileid=\"503478403\" data-ratio=\"1.6265060240963856\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/13eb62e6-4af7-40a0-9eeb-075fd7f84a00/public\" data-type=\"png\" data-w=\"913\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/2d5b88e2-8dc1-4c66-81ab-b4235f358553/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   这是 Qwen 系列中全新的旗舰级多模态大模型，专为全面的多模式感知设计，可以无缝处理包括文本、图像、音频和视频的各种输入，同时支持流式的文本生成和自然语音合成输出。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503478406\" data-ratio=\"0.5388888888888889\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5bc4d66d-e082-487c-b5c8-b2d1e4af4d00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/c005c650-142c-46a9-96db-e2e67e931429/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   从此以后，你可以像打电话或进行视频通话一样与 Qwen 聊天！可以说是「语音聊天 + 视频聊天」都实现了。\n  </section>\n  <section>\n   <img data-imgfileid=\"503478407\" data-ratio=\"0.471875\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ea43cce5-5292-4e81-c881-80d847f36400/public\" data-type=\"gif\" data-w=\"640\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/fd944492-0648-4fb1-adde-631a7f9986b2/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   体验地址：https://chat.qwen.ai/\n  </section>\n  <section>\n   更重要的是，团队人员将支持这一切的模型 Qwen2.5-Omni-7B 开源了，采用 Apache 2.0 许可证，并且发布了技术报告，分享所有细节！\n  </section>\n  <p>现在，开发者和企业可免费下载商用Qwen2.5-Omni，手机等终端智能硬件也可轻松部署运行。</p>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503478408\" data-ratio=\"0.2916666666666667\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/13e6a643-2d07-45df-12a7-fca1f1981200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/3b5a6488-5e76-405a-9bf5-51af2b3639dc/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文地址：https://github.com/QwenLM/Qwen2.5-Omni/blob/main/assets/Qwen2.5_Omni.pdf</p></li>\n   <li>\n    <p>博客地址：https://qwenlm.github.io/blog/qwen2.5-omni/</p></li>\n   <li>\n    <p>GitHub 地址：https://github.com/QwenLM/Qwen2.5-Omni</p></li>\n   <li>\n    <p>Hugging Face 地址：https://huggingface.co/Qwen/Qwen2.5-Omni-7B</p></li>\n   <li>\n    <p>ModelScope：https://modelscope.cn/models/Qwen/Qwen2.5-Omni-7B</p></li>\n  </ul>\n  <section>\n   有网友表示，这才是真正的 Open AI。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503478409\" data-ratio=\"0.8454746136865342\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/581b045e-9f2e-4d01-649f-1ea40005e100/public\" data-type=\"png\" data-w=\"906\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/af4dab8d-535b-44ca-918a-6610ad5898cc/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   大家可以通过官方 demo 感受一下 Qwen2.5-Omni 真实表现。<a href=\"https://mp.weixin.qq.com/s/BZv7tuMX6yZr5LvqKZBJCw\"><img src=\"https://image.jiqizhixin.com/uploads/editor/e78d556e-f3fe-4b89-9028-f2003938a626/1743042619076.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a>\n  </section>\n  <section>\n   <strong>Qwen2.5-Omni 模型架构</strong>\n  </section>\n  <section>\n   Qwen2.5-Omni 具有以下特点：\n  </section>\n  <ul>\n   <li>\n    <p>Omni 和创新架构：团队提出了 Thinker-Talker 架构，这是一个端到端的多模态模型，旨在感知包括文本、图像、音频和视频在内的多种模态，同时以流式方式生成文本和自然语音响应。此外，团队还提出了一种名为 TMRoPE（Time-aligned Multimodal RoPE）的新型位置嵌入，用于同步视频输入与音频的时间戳；</p></li>\n   <li>\n    <p>实时语音和视频聊天：该架构专为完全实时交互而设计，支持分块输入和即时输出；</p></li>\n   <li>\n    <p>自然且稳健的语音生成：在语音生成方面，Qwen2.5-Omni 超越了许多现有的流式和非流式替代方案，展现出卓越的稳健性和自然性；</p></li>\n   <li>\n    <p>多模态性能强劲：在与同样大小的单模态模型进行基准测试时，Qwen2.5-Omni 在所有模态上均展现出卓越的性能。Qwen2.5-Omni 在音频能力上超越了同样大小的 Qwen2-Audio，并且达到了与 Qwen2.5-VL-7B 相当的性能；</p></li>\n   <li>\n    <p>出色的端到端语音指令遵循能力：Qwen2.5-Omni 在端到端语音指令遵循方面的表现可与文本输入的有效性相媲美，这一点在 MMLU 和 GSM8K 等基准测试中得到了证明。</p></li>\n  </ul>\n  <section>\n   前文我们已经提到，Qwen2.5-Omni 采用了 Thinker-Talker 架构。\n  </section>\n  <section>\n   Thinker 就像大脑一样，负责处理和理解来自文本、音频和视频模态的输入，生成高级表示以及对应的文本。\n  </section>\n  <section>\n   Talker 则像人类的嘴巴，以流式方式接收 Thinker 产生的高级表示和文本，并流畅地输出离散的语音 token。\n  </section>\n  <section>\n   Thinker 是一个 Transformer 解码器，配备有音频和图像的编码器，以便于提取信息。相比之下，Talker 被设计为一种双轨自回归 Transformer 解码器架构。\n  </section>\n  <section>\n   在训练和推理过程中，Talker 直接接收来自 Thinker 的高维表示，并共享 Thinker 的所有历史上下文信息。因此，整个架构作为一个统一的单一模型运行，实现了端到端的训练和推理。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503478410\" data-ratio=\"0.9333333333333333\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ae306cc3-b70d-4e18-6788-3ce06bbf3000/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/2ca7e783-e9c5-4ccd-9e0f-691f9cd71fdb/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Qwen2.5-Omni 模型架构</sup></em>\n  </section>\n  <section>\n   <strong>模型性能</strong>\n  </section>\n  <section>\n   团队人员对 Qwen2.5-Omni 进行了全面评估，结果表明，该模型在所有模态上的表现均优于类似大小的单模态模型以及闭源模型，例如 Qwen2.5-VL-7B、Qwen2-Audio 和 Gemini-1.5-pro。\n  </section>\n  <section>\n   在需要集成多种模态的任务中，如 OmniBench，Qwen2.5-Omni 达到了最先进的水平。\n  </section>\n  <section>\n   此外，在单模态任务中，Qwen2.5-Omni 在多个领域中表现优异，包括语音识别（Common Voice）、翻译（CoVoST2）、音频理解（MMAU）、图像推理（MMMU, MMStar）、视频理解（MVBench）以及语音生成（Seed-tts-eval 和 subjective naturalness）。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503478411\" data-ratio=\"0.7620370370370371\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0faf0ccc-c764-4785-8c02-21c320bc6900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/7c6fc28c-aff4-4b78-9267-2ba171160962/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n </body>\n</html>",
+  "aiSummary": "阿里开源 Qwen2.5-Omni，一款支持文本、图像、音频和视频多模态输入，并具备流式文本生成和自然语音合成输出能力，且在多模态任务上表现出色的 7B 参数旗舰级大模型。",
+  "oneSentenceSummary": "阿里开源 Qwen2.5-Omni，一款支持文本、图像、音频和视频多模态输入，并具备流式文本生成和自然语音合成输出能力，且在多模态任务上表现出色的 7B 参数旗舰级大模型。",
+  "summary": "阿里通义千问团队开源了全新的旗舰级多模态大模型 Qwen2.5-Omni。该模型支持文本、图像、音频和视频等多种模态的输入，并能以流式方式生成文本和自然语音。Qwen2.5-Omni 采用了创新的 Thinker-Talker 架构和 TMRoPE 位置嵌入，实现了实时语音和视频聊天功能。实验结果表明，Qwen2.5-Omni 在多模态和单模态任务上均表现出色，在 OmniBench 等多模态任务中达到了最先进的水平，并在语音识别、翻译、图像推理和语音生成等单模态任务中表现优异，为多模态大模型的普及和应用提供了有力支持。该模型已开源，开发者和企业可免费下载商用。",
+  "mainPoints": [
+    {
+      "point": "Qwen2.5-Omni 在 OmniBench 等多模态任务中达到最先进水平，并在语音识别、翻译、图像推理和语音生成等单模态任务中表现优异",
+      "explanation": "实验结果表明，Qwen2.5-Omni 在多模态和单模态任务上均表现出色。"
+    },
+    {
+      "point": "Qwen2.5-Omni 采用 Thinker-Talker 架构，实现端到端的多模态处理",
+      "explanation": "Thinker 负责理解多模态输入并生成高级表示，Talker 负责流式输出语音，整个架构作为一个统一模型运行，实现端到端的训练和推理。"
+    },
+    {
+      "point": "TMRoPE 新型位置嵌入，用于同步视频输入与音频的时间戳",
+      "explanation": "TMRoPE (Time-aligned Multimodal RoPE) 是一种新的位置嵌入方法，用于同步视频输入与音频的时间戳，提升多模态信息的融合效果。"
+    }
+  ],
+  "keyQuotes": [
+    "从此以后，你可以像打电话或进行视频通话一样与 Qwen 聊天！可以说是「语音聊天 + 视频聊天」都实现了。",
+    "团队提出了 Thinker-Talker 架构，这是一个端到端的多模态模型，旨在感知包括文本、图像、音频和视频在内的多种模态，同时以流式方式生成文本和自然语音响应。",
+    "在语音生成方面，Qwen2.5-Omni 超越了许多现有的流式和非流式替代方案，展现出卓越的稳健性和自然性。"
+  ],
+  "tags": [
+    "多模态大模型",
+    "多模态学习",
+    "开源",
+    "Qwen2.5-Omni",
+    "Thinker-Talker 架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 92,
+  "wordCount": 1399,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743042706000,
+  "publishDateStr": "2025-03-27",
+  "publishDateTimeStr": "2025-03-27 02:31:46"
+}

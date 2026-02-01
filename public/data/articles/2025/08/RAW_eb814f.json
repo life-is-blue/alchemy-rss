@@ -1,0 +1,55 @@
+{
+  "id": "RAW_eb814f",
+  "title": "别再对大语言模型做“感觉测试”，是时候进行真正的评估了",
+  "url": "https://developers.googleblog.com/en/streamline-llm-evaluation-with-stax/",
+  "date": "2025-08-27 00:00:00",
+  "author": "Sara Wiltberger",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <div class=\"inner-block-content yt-video\">\n    <div class=\"glue-video\">\n     <div class=\"glue-video__container glue-video__container--inline\" data-glue-yt-video-vid=\"ANpQEc_fWUU\" id=\"youtube-player-287825\">\n      <iframe frameborder=\"0\" allowfullscreen allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/ANpQEc_fWUU?enablejsapi=1&amp;origin=https%3A%2F%2Fdevelopers.googleblog.com&amp;widgetid=1&amp;forigin=https%3A%2F%2Fdevelopers.googleblog.com%2Fen%2Fstreamline-llm-evaluation-with-stax%2F&amp;aoriginsup=1&amp;vf=1\" id=\"widget2\"></iframe>\n     </div>\n     <div class=\"glue-video__nojs\">\n      <p><a href=\"https://www.youtube.com/watch?v=ANpQEc_fWUU\">Link to Youtube Video</a> (visible only when JS is disabled)</p>\n     </div>\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"9s04v\">If you’re building with LLMs, you know the drill. You tweak a prompt, run it a few times, and... the output <i>feels</i> better. But is it actually better? You're not sure. So you keep tweaking, caught in a loop of “vibe testing” that feels more like art than engineering.</p>\n    <p data-block-key=\"1fe9u\">This uncertainty exists for a simple reason: unlike traditional software, AI models are non-deterministic. They don’t always give the same output for the same input, which can make your usual unit tests insufficient for knowing if a change actually made things better. On top of that, you may need to wrangle datasets, manage API calls, parse outputs, and build a whole evaluation pipeline before you can even start testing.</p>\n    <p data-block-key=\"cmm31\">To move past the vibes, we built <a href=\"http://stax.withgoogle.com/landing/\">Stax</a>, an experimental developer tool designed to take the headache out of LLM evaluation. We’ve leveraged the evaluation expertise from Google DeepMind and the experimental innovation from Google Labs to streamline the LLM evaluation lifecycle.</p>\n    <h2 data-block-key=\"704bj\" id=\"why-evals\"><b> \n      <br> \n     </b>Why evals?</h2>\n    <p data-block-key=\"dk9q8\">To know if your AI application really works for a specific use case, you need your own AI evals. General benchmarks are generic tests measuring the model across a range of tasks, but they don’t help you evaluate your AI stack based on <i>your</i> data and criteria.</p>\n    <p data-block-key=\"a1ltr\">Done right, evals can be a key differentiator, letting you codify <i>your</i> unique goal into <i>your</i> own reusable benchmark. Instead of spending hours “vibe testing” every time you try a new model or tweak a prompt, evals give you clearer metrics to help understand what’s actually better.</p>\n    <h2 data-block-key=\"8nh3k\" id=\"the-evolution-of-evaluation-methodologies\"><b> \n      <br> \n     </b>The evolution of evaluation methodologies</h2>\n    <p data-block-key=\"93r33\">We need real, repeatable evaluations. In the world of LLMs, that generally means two things: humans and… more LLMs.</p>\n    <p data-block-key=\"835q3\"></p>\n    <p data-block-key=\"d43db\">1:<b> Humans:</b> Getting humans to label outputs is the gold standard, but it can be slow and expensive.</p>\n    <p data-block-key=\"298ds\"></p>\n    <p data-block-key=\"7et2s\">2:<b> Autoraters (aka LLM-as-a-judge):</b> This is where things get interesting. We can use a powerful LLM (like Gemini models) with a specific set of instructions to “grade” the output of another model. It's a scalable, consistent way to help check for things like relevance, tone, or factual accuracy.</p>\n    <h2 data-block-key=\"yixm5\" id=\"how-stax-works\"><b> \n      <br> \n     </b>How Stax works</h2>\n    <p data-block-key=\"5rtns\">Stax can empower you to rigorously test your “AI stack” to help make data-driven decisions. This helps you gain more confidence when selecting and shipping AI systems for your use case.</p>\n    <h3 data-block-key=\"10bic\" id=\"bring-your-data-(or-build-it)\"><b> \n      <br>Bring your data (or build it) \n     </b></h3>\n    <p data-block-key=\"1tv12\">Got a CSV of test cases? Awesome, just upload it. Need to build a dataset from scratch? Our interface can make it easier to create a set of prompts and ground-truth answers that reflect your actual use case.</p>\n    <h3 data-block-key=\"w5h1f\" id=\"out-of-the-box-autoraters\"><b> \n      <br>Out-of-the-box autoraters \n     </b></h3>\n    <p data-block-key=\"34ah4\">Don't want to reinvent the wheel? We've got you covered. Spin up pre-built autoraters to help check for common stuff like coherence, factuality, and conciseness. You can get meaningful results in minutes.</p>\n    <h3 data-block-key=\"vup8j\" id=\"build-your-own-autorater\"><b> \n      <br>Build your \n     </b> <b><i>own</i></b><b> autorater</b></h3>\n    <p data-block-key=\"dn6ms\">This is the killer feature. Because there is no one-size-fits-all eval to tell you if <i>your AI</i> matches <i>your</i> company’s brand voice or adheres to the specific rules of <i>your</i> application, Stax lets you easily define your <i>own</i> criteria and build a custom autorater.</p>\n    <p data-block-key=\"f907l\"></p>\n    <ul>\n     <li data-block-key=\"84ksv\"><i>Need your chatbot to be “helpful but not overly chatty”?</i> Build a rater for that.</li>\n    </ul>\n    <p data-block-key=\"5krqa\"></p>\n    <ul>\n     <li data-block-key=\"fm5j6\"><i>Need to ensure your summarizer never includes PII?</i> Build a rater for that.</li>\n    </ul>\n    <p data-block-key=\"43fkf\"></p>\n    <ul>\n     <li data-block-key=\"7foq0\"><i>Need your code generator to match your team’s style guide?</i> You get the idea.</li>\n    </ul>\n    <p data-block-key=\"fs7pp\"></p>\n    <p data-block-key=\"62g1l\">You define the “secret sauce” of what makes an output good <i>for you</i>, and Stax lets you test for it at scale against your entire dataset.</p>\n    <h2 data-block-key=\"8fgnw\" id=\"\"><b> \n      <br> \n     </b>Stop guessing, start evaluating</h2>\n    <p data-block-key=\"749kd\">Stax helps you evolve from the era of crossing your fingers and shipping LLM features. It's time to treat them like any other part of your production stack: with rigorous testing and robust tooling. Stax helps you understand, iterate, and improve your LLM-powered features. Start evaluating at <a href=\"http://stax.withgoogle.com/landing/\">stax.withgoogle.com</a> and join our <a href=\"https://discord.com/invite/googlelabs\">Discord</a> channel to let us know what you think.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "谷歌推出实验性开发者工具 Stax，旨在简化大语言模型的评估，用数据驱动、可重复的指标取代主观的“感觉测试”。",
+  "oneSentenceSummary": "谷歌推出实验性开发者工具 Stax，旨在简化大语言模型的评估，用数据驱动、可重复的指标取代主观的“感觉测试”。",
+  "summary": "本文讨论了开发者在使用大语言模型构建应用时面临的关键挑战：由于大语言模型具有非确定性，因此难以客观评估模型性能，导致出现不可靠的“感觉测试”。为了让这个过程更严谨，谷歌推出了实验性开发者工具 Stax。Stax 汇集了谷歌 DeepMind 和谷歌实验室的专业知识，旨在简化整个大语言模型评估生命周期。Stax 提倡使用自定义的人工智能评估，而非通用基准测试。这让开发者可以将独特的目标转化为可重用的数据驱动指标。文章详细介绍了两种主要的评估方法：人工标注（黄金标准，但速度慢且成本高）和自动评估器（LLM-as-a-judge）。自动评估器使用强大的人工智能模型，对相关性、事实准确性等标准进行一致评分。Stax 允许用户上传或构建数据集，利用预构建的自动评估器，并创建自定义自动评估器来定义特定于应用程序的标准（例如，品牌声音、个人身份信息规避）。这有助于对人工智能堆栈进行严格的测试，从而在部署由大语言模型驱动的系统时，做出更自信、更数据驱动的决策。",
+  "mainPoints": [
+    {
+      "point": "由于输出具有非确定性，主观的“感觉测试”不足以支撑大语言模型的开发。",
+      "explanation": "与传统软件不同，大语言模型会产生可变的输出，因此传统的单元测试并不适用。开发者依赖主观判断，但这不利于持续改进和工程严谨性。"
+    },
+    {
+      "point": "Stax 提供了一个简化的平台，可以使用自定义自动评估器进行客观、可重复的大语言模型评估。",
+      "explanation": "开发者可以使用该工具定义特定标准，并构建 LLM-as-a-judge 模型来大规模评分输出。这超越了通用基准测试，转向了特定于应用、数据驱动的指标。"
+    },
+    {
+      "point": "自定义自动评估器是一项关键功能，可以根据独特的应用程序需求进行量身定制的评估。",
+      "explanation": "Stax 允许用户将品牌声音、个人身份信息规避、编码风格等需求编入评估器，确保输出与业务或技术规则精确对齐。"
+    }
+  ],
+  "keyQuotes": [
+    "你调整了一下提示，运行了几次，然后...输出*好像*好了一点。但它真的变好了吗？你不确定。所以你不断调整，陷入“感觉测试”的循环，这感觉更像艺术而不是工程。",
+    "想知道你的人工智能应用是否真的适用于特定用例？你需要构建自己的评估体系。通用基准测试是在一系列任务中衡量模型的通用测试，但它们无法帮助你根据*你的*数据和标准来评估你的人工智能堆栈。",
+    "我们可以使用强大的大语言模型（如 Gemini 模型），通过一组指令来“评分”其他模型的输出。这是一种可扩展、一致的方式，可以帮助检查相关性、语气或事实准确性等内容。",
+    "没有万能的评估体系可以判断*你的人工智能*是否符合*你*公司的品牌声音或遵守*你*的应用程序规则。Stax 让你轻松定义*你自己的*标准，并构建自定义自动评估器。",
+    "Stax 助你告别‘盲猜’，拥抱严谨的 LLM 功能发布流程。现在是像对待生产堆栈的其他部分一样对待它们的时候了：进行严格的测试和使用强大的工具。"
+  ],
+  "tags": [
+    "大语言模型评估",
+    "生成式人工智能",
+    "机器学习运维",
+    "开发者工具",
+    "人工智能测试"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 648,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756252800000,
+  "publishDateStr": "2025-08-27",
+  "publishDateTimeStr": "2025-08-27 00:00:00"
+}

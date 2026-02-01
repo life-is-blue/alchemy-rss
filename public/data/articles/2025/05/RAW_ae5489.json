@@ -1,0 +1,59 @@
+{
+  "id": "RAW_ae5489",
+  "title": "让 GPT-4o 准确率大降，这个文档理解新基准揭秘大模型短板 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-24-5",
+  "date": "2025-05-24 06:18:49",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <section>\n   <strong>本文的共同第一作者为字节跳动算法工程师王安澜和廖蕾，本文的通讯作者为字节跳动算法工程师唐景群。 </strong>\n  </section>\n  <p>在文档理解领域，多模态大模型（MLLMs）正以惊人的速度进化。从基础文档图像识别到复杂文档理解，它们在扫描或数字文档基准测试（如 DocVQA、ChartQA）中表现出色，这似乎表明 MLLMs 已很好地解决了文档理解问题。然而，<strong>现有的文档理解基准存在两大核心缺陷：</strong></p>\n  <ul>\n   <li>\n    <p><strong>脱离真实场景</strong>：现实中文档多为手机 / 相机拍摄的纸质文件或屏幕截图，面临光照不均、物理扭曲（褶皱 / 弯曲）、拍摄视角多变、模糊 / 阴影、对焦不准等复杂干扰；</p></li>\n   <li>\n    <p><strong>无法评估鲁棒性</strong>：现有基准未模拟真实环境的复杂性和多样性，导致模型在实际应用中表现存疑；</p></li>\n  </ul>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb6896d7-3f43-4512-96cb-8485506ce100/public\" data-ratio=\"0.6027777777777777\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486390\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/7411da50-847d-4cf2-9c4c-abe34c55a0db/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>这些缺陷引出了一个关键疑问：<strong>当前 MLLMs 模型距离在自然环境中实现全面且鲁棒的文档理解能力到底还有多远？</strong></p>\n  <p>为了揭开这个谜底，字节跳动 OCR 团队联合华中科技大学打造了 <strong>WildDoc</strong>——<strong> 首个真实世界场景文档理解的基准数据集。</strong></p>\n  <p>WildDoc 选取了 3 个常用的具有代表性的文档场景作为基准（Document/Chart/Table）， 包含超过 12,000 张手动拍摄的图片，覆盖了环境、光照、视角、扭曲和拍摄效果等五个影响真实世界文档理解效果的因素，且可与现有的电子基准数据集表现进行对比。</p>\n  <p>为了严格评估模型的鲁棒性，WildDoc 构建了一致性评估指标（Consistency Score）。实验发现主流 MLLMs 在 WildDoc 上性能显著下降，揭示了现有模型在真实场景文档理解的性能瓶颈，并为技术改进提供可验证的方向。本工作不仅填补了真实场景基准的空白，更推动文档理解研究向「实用化、泛化性」迈出关键一步。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/33d55b1a-5a3f-47f6-c894-0dd0fa2dc900/public\" data-ratio=\"0.2861111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486393\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/079a5ce0-34ed-4eda-9940-299ea498c55c/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2505.11015</p></li>\n   <li>\n    <p>项目主页：https://bytedance.github.io/WildDoc/</p></li>\n   <li>\n    <p>Github：https://github.com/bytedance/WildDoc</p></li>\n  </ul>\n  <p><strong>WildDoc 数据构造与组成</strong></p>\n  <p>WildDoc 数据包含超 1.2 万张手动采集的真实文档图像，模拟自然环境中的复杂挑战，并引入一致性分数指标，量化评估模型在跨场景下的鲁棒性。WildDoc 目前已开源全部 12K + 图像与 48K + 问答对，其构造过程如下：</p>\n  <p><strong>1、数据采集：</strong></p>\n  <ul>\n   <li>\n    <p>场景多样化：在自然环境（如户外、室内不同光照条件）中手动拍摄文档，确保覆盖环境、光照、视角等多维度干扰因素。</p></li>\n   <li>\n    <p>基准对齐：复用现有基准的电子文档，通过物理打印后拍摄，保证与传统基准的可比性。</p></li>\n  </ul>\n  <p><strong>2、多条件拍摄：</strong></p>\n  <ul>\n   <li>\n    <p>对同一文档进行四次拍摄，每次改变环境参数（如光照强度、拍摄角度、纸张扭曲程度），获取各种不同效果的对比样本。</p></li>\n  </ul>\n  <p><strong>3、标注与验证：</strong></p>\n  <ul>\n   <li>\n    <p>对图像中的文本、布局等关键信息以及对于问题的可回答性进行人工验证，确保准确性。</p></li>\n   <li>\n    <p>通过一致性分数计算，评估模型在不同条件下的稳定性，辅助筛选高质量数据。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/af297560-ee44-4d49-776f-d4c15b78f900/public\" data-ratio=\"0.6212962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486394\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/6b47705f-e07f-4fa9-94d2-ec636fa84b34/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>实验结果</strong></p>\n  <p>研究团队对众多具有代表性的 MLLMs 进行了测试，包括通用 MLLMs（如 Qwen2.5-VL、InternVL2.5）、专注文档理解的 MLLMs（如 Monkey、TextHarmony）和领先的闭源 MLLMs（如 GPT4o、Doubao-1.5-pro）。实验结果揭示了当前多模态大模型在真实场景下的诸多不足。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0a38a4c0-20d6-4419-e718-e9e0cc5b0500/public\" data-ratio=\"0.575925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486397\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/e35aa125-a6e0-45fa-8b09-09870c1163ff/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>首先，<strong>现有 MLLMs 在 WildDoc 上的性能相比传统文档基准（如 DocVQA）测试大幅下降</strong>。例如，<strong>GPT-4o 平均准确率下降 35.3</strong>，ChartQA 子集下降达 56.4；开源模型 Qwen2.5-VL-72B 平均准确率 70.6，为开源最佳，但仍低于原始基准约 15%。目前最优的闭源模型为 Doubao-1.5-pro 表现最优（平均准确率 73.7%），但其一致性分数仅 55.0，这也意味着它在一半多的情况下都不能在不同条件下保持准确回答。这表明，当前 MLLMs 模型在面对真实场景的变化时，缺乏足够的稳定性和适应性。</p>\n  <p>实验结果揭示了在真实世界文档理解中 MLLMs 模型的表现，有以下几点发现：</p>\n  <ul>\n   <li>\n    <p>物理扭曲最具挑战性：皱纹、褶皱、弯曲等物理变形导致模型性能下降最显著（如 GPT-4o 下降 34.1-34.7），远超光照（-25.9）或视角（-26.2）变化的影响。</p></li>\n   <li>\n    <p>非正面视角与图像质量：非正面拍摄（如倾斜视角）因文本形变和模糊导致性能下降（Qwen2.5-VL-72B 下降 17.6），但屏幕捕获图像因数据增强算法成熟，性能下降较小（-8.3 至 - 9.1）。</p></li>\n   <li>\n    <p>语言模型规模影响有限：大参数量模型（如 72B 参数的 Qwen2.5-VL）在 WildDoc 上表现略优，但未完全克服真实场景挑战，表明模型架构需针对性优化。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5fd73d31-9e1c-4edb-c233-5a92f8a47900/public\" data-ratio=\"1.4583333333333333\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486398\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/a6f31f82-2a04-4953-9358-dddb5a95ec74/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a73fd3e-25a8-4d7e-e2ad-dbd89aa45300/public\" data-ratio=\"0.49480249480249483\" data-s=\"300,640\" data-type=\"png\" data-w=\"481\" type=\"block\" data-imgfileid=\"503486399\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/67061179-5fd5-4511-a163-41b08c32f66a/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ebeebcc5-0fc0-47f8-74cc-739c6f3e8a00/public\" data-ratio=\"0.3432203389830508\" data-s=\"300,640\" data-type=\"png\" data-w=\"708\" type=\"block\" data-imgfileid=\"503486400\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/edf83d33-ac10-4241-b61e-0dfd1dcc02b9/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p>另外，一些模型在原始基准测试上表现差异不大，甚至已经接近饱和，但在 WildDoc 上却出现了显著的性能差异。这说明传统基准测试已经难以区分模型的真实能力，而 WildDoc 则能更敏锐地捕捉到模型在真实场景下的不足。</p>\n  <p><strong>未来之路：如何让 MLLMs 更好地理解真实世界的文档？</strong></p>\n  <p>面对这些挑战，研究团队提出了几点改进策略，为未来的研究指明了方向。</p>\n  <ul>\n   <li>\n    <p>一是<strong>数据增强</strong>。通过更多的增强技术来模拟真实世界的条件，如变化的光照、阴影等，让模型在训练中接触到更多样化的场景，从而提高其适应能力。</p></li>\n   <li>\n    <p>二是<strong>鲁棒特征学习</strong>。让模型学会提取对真实世界变化不敏感的特征，这样即使文档图像发生了一些变化，模型也能准确理解其内容。</p></li>\n   <li>\n    <p>三是<strong>真实数据引入</strong>。收集更多的真实世界文档图像，丰富训练数据集，让模型在更多的「实战」中积累经验，提升性能。</p></li>\n  </ul>\n  <p>WildDoc 数据集有效揭示了 MLLMs 在真实文档理解中的不足，为后续研究提供了关键基准和优化方向，更推动文档理解研究向「实用化、泛化性」迈出关键一步。</p>\n \n",
+  "aiSummary": "WildDoc 是首个真实场景文档理解基准，揭示主流多模态大模型在复杂环境下鲁棒性不足，准确率显著下降。",
+  "oneSentenceSummary": "WildDoc 是首个真实场景文档理解基准，揭示主流多模态大模型在复杂环境下鲁棒性不足，准确率显著下降。",
+  "summary": "文章介绍了由字节跳动和华中科技大学联合推出的 WildDoc 数据集，旨在解决现有文档理解基准脱离真实场景和无法有效评估模型鲁棒性的问题。WildDoc 包含超过 1.2 万张人工拍摄的真实文档图片，覆盖光照、视角、扭曲等多种复杂因素，并引入一致性分数来量化评估模型在不同条件下的稳定性。实验结果表明，包括 GPT-4o、豆包在内的主流多模态大模型在 WildDoc 上的性能相比传统基准大幅下降，其中物理扭曲是最具挑战性的干扰因素。这揭示了当前模型在真实世界应用中的性能瓶颈，并为未来通过数据增强、鲁棒特征学习等方式提升模型泛化能力指明了方向。WildDoc 的发布为推动文档理解研究走向实用化提供了关键基准。",
+  "mainPoints": [
+    {
+      "point": "现有文档理解基准未能反映真实场景复杂性。",
+      "explanation": "传统基准多使用扫描或电子文档，忽略了真实世界中拍照文档面临的光照、扭曲、模糊等干扰，导致模型在实际应用中表现存疑。"
+    },
+    {
+      "point": "WildDoc 是首个真实场景文档理解基准数据集。",
+      "explanation": "数据集包含大量人工拍摄的真实文档图片，模拟复杂环境因素，并引入一致性分数评估模型鲁棒性，填补了该领域空白。"
+    },
+    {
+      "point": "主流多模态大模型在真实场景下性能大幅下降。",
+      "explanation": "实验显示 GPT-4o 等模型在 WildDoc 上准确率显著低于传统基准，表明当前模型在面对复杂真实环境时泛化能力不足。"
+    },
+    {
+      "point": "物理扭曲是对模型最具挑战性的因素。",
+      "explanation": "数据分析揭示，文档的皱纹、褶皱、弯曲等物理变形对模型性能影响最大，是未来模型优化需重点关注的问题。"
+    }
+  ],
+  "keyQuotes": [
+    "现有的文档理解基准存在两大核心缺陷：脱离真实场景；无法评估鲁棒性；",
+    "为了揭开这个谜底，字节跳动 OCR 团队联合华中科技大学打造了 WildDoc ------首个真实世界场景文档理解的基准数据集。",
+    "现有 MLLMs 在 WildDoc 上的性能相比传统文档基准（如 DocVQA）测试大幅下降。",
+    "物理扭曲最具挑战性：皱纹、褶皱、弯曲等物理变形导致模型性能下降最显著。",
+    "WildDoc 数据集有效揭示了 MLLMs 在真实文档理解中的不足，为后续研究提供了关键基准和优化方向。"
+  ],
+  "tags": [
+    "文档理解",
+    "多模态大模型",
+    "基准测试",
+    "鲁棒性",
+    "WildDoc"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2090,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748067529000,
+  "publishDateStr": "2025-05-24",
+  "publishDateTimeStr": "2025-05-24 06:18:49"
+}

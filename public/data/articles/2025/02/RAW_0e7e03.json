@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0e7e03",
+  "title": "Hugging Face 通过新提供商集成扩展无服务器计算推理选项",
+  "url": "https://www.infoq.com/news/2025/02/hugging-face-inference/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-04 00:00:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "\n \n \n  <div class=\"actions__left actions__sidebar article__actions\"><br><div class=\"bookmarkReading\"><div class=\"my-0 button__dropdown dropdown reading_list dropdown__center\" id=\"showBookmarks\"><div class=\"dropdown__holder\"><div class=\"dropdown__content\"><ul class=\"no-style dropdown__nav\">\n       </ul>\n      </div>\n     </div>\n    </div>\n    <div id=\"toastContainer\" class=\"toast-none toast-hide\">\n     <div class=\"toast\">\n      <span></span>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"article__data\">\n   <p><a href=\"https://huggingface.co/blog/inference-providers\">Hugging Face</a> has launched the integration of four serverless inference providers <a href=\"https://fal.ai/\">Fal</a>, <a href=\"https://replicate.com/\">Replicate</a>, <a href=\"https://sambanova.ai/\">SambaNova</a>, and <a href=\"https://www.together.ai/\">Together AI</a>, directly into its model pages. These providers are also integrated into Hugging Face's client SDKs for JavaScript and Python, allowing users to run inference on various models with minimal setup.</p>\n   <p>This update enables users to select their preferred inference provider, either by using their own API keys for direct access or by routing requests through Hugging Face. The integration supports different models, including <a href=\"https://huggingface.co/deepseek-ai/DeepSeek-R1\">DeepSeek-R1</a>, and provides a unified interface for managing inference across providers.</p>\n   <p>Developers can access these services through the website UI, SDKs, or direct HTTP calls. The integration allows seamless switching between providers by modifying the provider name in the API call while keeping the rest of the implementation unchanged. Hugging Face also offers a routing proxy for OpenAI-compatible APIs.</p>\n   <p><a href=\"https://huggingface.co/blog/inference-providers#:~:text=Rodrigo%20Liang%2C%20Co%2DFounder%20%26%20CEO%20at%20SambaNova%3A%20%22We%20are%20excited%20to%20be%20partnering%20with%20Hugging%20Face%20to%20accelerate%20its%20Inference%20API.%20Hugging%20Face%20developers%20now%20have%20access%20to%20much%20faster%20inference%20speeds%20on%20a%20wide%20range%20of%20the%20best%20open%20source%20models.%22\">Rodrigo Liang</a>, Co-Founder &amp; CEO at SambaNova stated:</p>\n   <blockquote>\n    <p>We are excited to be partnering with Hugging Face to accelerate its Inference API. Hugging Face developers now have access to much faster inference speeds on a wide range of the best open source models.</p>\n   </blockquote>\n   <p>And <a href=\"https://huggingface.co/blog/inference-providers#:~:text=Zeke%20Sikelianos%2C%20Founding,in%20this%20launch.%22\">Zeke Sikelianos</a>, Founding Designer at Replicate quoted:</p>\n   <blockquote>\n    <p>Hugging Face is the de facto home of open-source model weights, and has been a key player in making AI more accessible to the world. We use Hugging Face internally at Replicate as our weights registry of choice, and we're honored to be among the first inference providers to be featured in this launch.</p>\n   </blockquote>\n   <p>Fast and accurate <a href=\"https://www.ibm.com/think/topics/ai-inference\">AI inference</a> is essential for many applications, especially as demand for more tokens increases with test-time compute and Agentic AI. Open-source models help optimize performance on RDU, enabling developers to achieve up to 10x faster inference with improved accuracy.</p>\n   <p>Billing is handled by the inference provider if a user supplies their own API key. If requests are routed through Hugging Face, charges are applied at standard provider rates with no additional markup.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Hugging Face Expands Serverless Inference Options with New Provider Integrations\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/hugging-face-inference/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1738663560000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n \n",
+  "aiSummary": "Hugging Face 集成了四家新的无服务器计算推理提供商，通过简化设置和显著提升性能，增强了用户对 AI 模型的访问体验。",
+  "oneSentenceSummary": "Hugging Face 集成了四家新的无服务器计算推理提供商，通过简化设置和显著提升性能，增强了用户对 AI 模型的访问体验。",
+  "summary": "文章讨论了 Hugging Face 最近通过集成四家提供商（Fal、Replicate、SambaNova 和 Together AI）扩展无服务器计算推理选项的情况。这一集成允许用户通过 Hugging Face 的 JavaScript 和 Python 客户端 SDK 以最少的设置在各种模型上运行推理。用户可以使用自己的 API 密钥选择首选推理提供商，或通过 Hugging Face 路由请求。此次更新支持不同的模型，并提供了一个无缝的界面来管理推理。此外，文章还引用了行业领袖的言论，强调了更快的推理速度带来的好处，声称性能提升高达 10 倍，以及 Hugging Face 在开源 AI 领域的重要性。文章还澄清了计费流程，指出通过 Hugging Face 路由时，费用将根据提供商费率收取。此次更新标志着 Hugging Face 在提高 AI 可访问性和效率方面的持续承诺。",
+  "mainPoints": [
+    {
+      "point": "无服务器计算提供商的集成增强了 AI 模型的可访问性",
+      "explanation": "通过集成 Fal 和 Replicate 等提供商，Hugging Face 使开发者能够以最少的设置访问各种模型，从而促进 AI 技术的更广泛使用。"
+    },
+    {
+      "point": "促进了推理提供商之间的无缝切换",
+      "explanation": "该设计允许用户通过调整 API 调用轻松切换推理提供商，从而最大限度地减少应用程序中的大量修改需求。"
+    },
+    {
+      "point": "更快的推理速度可以显著提高应用程序性能",
+      "explanation": "通过使用更快的推理能力，开发者可以实现高达 10 倍的性能提升，这对于需要高效率的应用程序至关重要。"
+    },
+    {
+      "point": "对开源 AI 生态系统的影响",
+      "explanation": "这些提供商的集成使 Hugging Face 成为开源 AI 领域的核心参与者，影响了 AI 技术的未来发展和可访问性。"
+    }
+  ],
+  "keyQuotes": [
+    "我们很高兴与 Hugging Face 合作，加速其推理 API。Hugging Face 的开发者现在可以在各种最佳开源模型上访问更快的推理速度。",
+    "Hugging Face 是开源模型权重的实际中心，并且在使 AI 更易于全球访问方面发挥了关键作用。",
+    "快速且准确的 AI 推理对于许多应用场景至关重要，尤其是随着测试时间计算和自主式 AI 对更多标记的需求增加。",
+    "该集成使开发者能够体验到推理时间的显著改善，为 AI 应用程序解锁了新的可能性。"
+  ],
+  "tags": [
+    "Hugging Face",
+    "无服务器计算推理",
+    "AI 模型",
+    "集成",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 319,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738627200000,
+  "publishDateStr": "2025-02-04",
+  "publishDateTimeStr": "2025-02-04 00:00:00"
+}

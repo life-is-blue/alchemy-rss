@@ -1,0 +1,54 @@
+{
+  "id": "RAW_1593c6e6",
+  "title": "Evalite 介绍：AI 应用的 TypeScript 测试工具",
+  "url": "https://www.infoq.com/news/2025/11/evalite-ai-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-29 08:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://v1.evalite.dev/\">Evalite</a>, a TypeScript-native eval runner from <a href=\"https://x.com/mattpocockuk\">Matt Pocock</a>, provides a purpose-built test harness for AI powered applications, letting developers write reproducible evals, capture traces, and iterate locally with a web UI. The project reached a v1 beta milestone and is positioning itself as the equivalent of Vitest or Jest for apps that rely on LLMs, with tooling tailored for scoring, tracing, and cost-aware iteration.&nbsp;</p>\n   <p>Evalite’s model treats an eval like a test suite, but with richer outputs. Instead of simple pass or fail results, Evalite runs .eval.ts files where each data point becomes a scored case, and provides first-class scorers and trace capture so teams can inspect model outputs, chain calls, and judge behaviour programmatically. It runs a local dev server with live reload and an interactive UI for exploring traces, and because it builds on Vitest you can reuse familiar test ergonomics such as mocks and lifecycle hooks.&nbsp;</p>\n   <p>The v1 beta focuses on developer ergonomics and iteration speed. Quickstart instructions show how to install Evalite, add an eval:dev npm script, and author a simple eval that uses an off-the-shelf scorer such as autoevals. Evalite can also run programmatically, expose different run modes including watch and run-once, and persist results to custom storage backends so teams can track eval trends over time.&nbsp;</p>\n   <p>Under the hood Evalite exposes features aimed at production workflows. Built-in scorers and support for custom scorers let teams encode domain specific success metrics. Evalite’s trace system captures inputs, LLM calls, and intermediate state so debugging and root cause analysis become more deterministic.\n    <br>\n    <br>\n    Recently it was announced that Evalite could <a href=\"https://x.com/mattpocockuk/status/1989364793036468654?s=46\">cache AI SDK models</a>, which drew positive reactions from users, with <a href=\"https://x.com/synergyahmadd/status/1989658909561504054?s=46\">one commenter</a> calling the feature <q>a game changer for speed and iteration</q>.</p>\n   <p>Community reaction has been very positive. The project’s GitHub repository has attracted strong interest with over a thousand stars and an active release cadence, and the author’s v1 beta <a href=\"https://x.com/mattpocockuk/status/1987620534428033252?s=46\">announcement</a> on X drew quick engagement from early adopters praising the release with one commenter saying that they’ll&nbsp;<q>start using it tomorrow for a real world project</q>. Another user <a href=\"https://x.com/ibm2100/status/1977299771661697131?s=46\">explains</a> why they think the project exists:</p>\n   <blockquote>\n    <p>There are plenty of other eval runners out there… Evalite is different. It’s local-only, runs on your machine and you stay in complete control over your data.</p>\n   </blockquote>\n   <p>\n    <br>\n    As it is still in development, early issues are expected, and some have been spotted, for example one raised recently with&nbsp;<a href=\"https://github.com/mattpocock/evalite/issues/332\">dependency declarations</a>.&nbsp;This issue has since been fixed&nbsp;and the author has indicated that they are&nbsp;<a href=\"https://x.com/mattpocockuk/status/1986425441985642751?s=46\">actively fixing bugs</a> from early adopters.\n   </p>\n   <p>Evalite is open source under MIT and intentionally avoids vendor lock in by working with any LLM and by providing pluggable storage and scorer integrations. As organizations build more agentic and LLM driven features, Evalite aims to make evaluation reproducible, type safe, and fast enough to be part of everyday developer workflows. Early adopters should expect active iteration, but the tooling already offers a compelling, TypeScript first path to testing AI powered apps.&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Introducing Evalite: The TypeScript Testing Tool for AI Powered Apps\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/evalite-ai-testing/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764403200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Evalite 是一款新的 TypeScript 原生测试工具，适用于 AI 驱动的应用。它为大语言模型应用提供可复现的评估、跟踪捕获和本地迭代能力。",
+  "oneSentenceSummary": "Evalite 是一款新的 TypeScript 原生测试工具，适用于 AI 驱动的应用。它为大语言模型应用提供可复现的评估、跟踪捕获和本地迭代能力。",
+  "summary": "本文介绍了 Matt Pocock 开发的 Evalite，一个 TypeScript 原生评估运行器，专为测试 AI 驱动的应用而设计，特别是那些利用大语言模型的应用。Evalite 定位为类似于 Vitest 和 Jest 的工具，为可复现的评估、程序化评分和详细的跟踪捕获提供了一个专门构建的测试工具。它具有带有交互式用户界面的本地开发服务器，基于 Vitest 的用户友好设计，并支持用于特定领域指标的自定义评分器。v1 beta 版专注于开发者友好性、迭代速度和生产工作流程，具有诸如 AI 软件开发工具包模型缓存和开源 MIT 许可等功能，旨在防止供应商锁定。社区反响热烈，认为它对本地、可控的 AI 应用开发非常有价值。",
+  "mainPoints": [
+    {
+      "point": "Evalite 为人工智能应用提供了一个专门的 TypeScript 原生测试框架。",
+      "explanation": "它是一个专门为大语言模型应用设计的测试工具，类似于 Vitest 或 Jest，但具有为评分、跟踪和成本感知迭代量身定制的功能，这对于人工智能开发至关重要。"
+    },
+    {
+      "point": "它强调开发者友好性以及具有丰富输出和用户界面的本地迭代能力。",
+      "explanation": "Evalite 提供了一个带有实时重新加载和交互式用户界面的本地开发服务器，用于探索跟踪，从而实现快速、可复现的评估，并能以编程方式判断模型行为。"
+    },
+    {
+      "point": "Evalite 通过自定义评分器和详细的跟踪捕获来支持生产工作流程。",
+      "explanation": "团队可以使用自定义评分器定义特定领域的成功指标，并使用跟踪系统来捕获大语言模型调用和中间状态，有助于调试和根本原因分析。"
+    }
+  ],
+  "keyQuotes": [
+    "Evalite 为 AI 驱动的应用提供了一个专门构建的测试工具，让开发者可以编写可复现的评估，捕获跟踪，并在 Web 用户界面上进行本地迭代。",
+    "Evalite 的模型将评估视为一个测试套件，但具有更丰富的输出。Evalite 提供的不是简单的通过或失败结果，而是运行 .eval.ts 文件。每个数据点都会被视为一个评分案例。",
+    "那里有很多其他的评估运行器...... Evalite 是不同的。它是仅限本地的，在您的机器上运行，您可以完全控制您的数据。",
+    "Evalite 在 MIT 许可下是开源的，并且通过与任何大语言模型合作以及提供可插拔的存储和评分器集成，有意识地避免供应商锁定。"
+  ],
+  "tags": [
+    "人工智能测试",
+    "大语言模型评估",
+    "TypeScript",
+    "开发者工具",
+    "Evalite"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 493,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764403200000,
+  "publishDateStr": "2025-11-29",
+  "publishDateTimeStr": "2025-11-29 08:00:00"
+}

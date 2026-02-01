@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3cb27a",
+  "title": "KDD 2025 Best Paper Runner-Up",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-22-9",
+  "date": "2025-08-22 08:06:38",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <br>\n  </section>\n  <p><strong>本文第一作者王茂林，为香港城市大学博士生，导师为赵翔宇教授。合作者包括蚂蚁集团储俊，臧晓玲，赵耀，谢锶聪和钟文亮。该论文荣获 2025 年 KDD ADS Track Best Paper Award Runner-Up。</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250822090937_6ac3f6\" data-ratio=\"0.10925925925925926\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503502858\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/6725acdb-f5bd-4376-81f6-b9d6d1ef9199/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：Put Teacher in Student's Shoes: Cross-Distillation for Ultra-compact Model Compression Framework</p>\n   </li>\n   <li>\n    <p>论文地址：https://arxiv.org/abs/2507.04636</p>\n   </li>\n  </ul>\n  <p><strong>研究背景与动机</strong></p>\n  <p>在移动计算时代，将高效的自然语言处理模型部署到资源受限的边缘设备上面临巨大挑战。这些场景通常要求严格的隐私合规、实时响应能力和多任务处理功能。</p>\n  <p>现有的 BERT 模型压缩技术仅能实现 15-20MB 的压缩，远不能满足<strong>移动设备 4MB 的严格内存限制</strong>。特别是在金融应用场景中，本地 AI 处理对保护用户隐私至关重要，同时还需确保<strong>约 300 毫秒的实时响应</strong>。这种差距凸显了对极致压缩框架的迫切需求。</p>\n  <p><strong>方法：多阶段的极值压缩框架</strong></p>\n  <p>EI-BERT 框架通过三个关键步骤实现极致压缩：<strong>硬令牌剪枝</strong>智能筛选重要词汇，大幅减少存储需求；<strong>交叉蒸馏</strong>确保高效知识传递，突破传统方法局限；<strong>模块化量化</strong>采用 INT8 量化进一步优化存储。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250822090937_556956\" data-ratio=\"0.12314814814814815\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503502859\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/9bdfbb2a-bbd7-455e-a544-32eed481d6ea/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>其中，交叉蒸馏方法创新性地让<strong>教师模型 \"站在学生模型的角度\"</strong>，通过参数集成和师生互动的动态适应机制，实现精准的知识转移。该方法有效解决了教师 - 学生模型间的容量差异和知识适应性问题。最终实现了 <strong>99.5% 的压缩率</strong>，创造了 <strong>1.91MB 的 BERT 模型新纪录</strong>。</p>\n  <p><strong>词表剪枝</strong></p>\n  <p>在传统模型中，词汇嵌入占据了大量参数空间（ALBERT-tiny2 达 44.7%，TinyBERT2 达 36.6%），严重制约了移动端部署。针对这一瓶颈，EI-BERT 框架基于注意力机制的硬令牌剪枝策略，通过精确建模量化每个 token 的重要性。</p>\n  <ul>\n   <li>\n    <p>首先利用多头注意力计算 token 间的<strong>语义关联概率分布</strong>，捕捉词汇间的关系强度。</p>\n   </li>\n   <li>\n    <p>接着，通过跨层聚合计算每个 token 的<strong>全局重要性得分</strong>，综合考虑层数、句子数量和注意力头数等多个维度，从而识别出真正承载核心语义的关键词汇，实现高效精准的剪枝。</p>\n   </li>\n  </ul>\n  <p><strong>交叉蒸馏</strong></p>\n  <p>传统知识蒸馏面临容量鸿沟和适应性缺失两大挑战。模型极致压缩导致的巨大架构差异使知识传递困难，静态教学方式也难以适应学生模型的特殊需求。EI-BERT 框架提出参数集成策略，将教师模型经过精调的下游任务层直接融入学生模型。这一 \"拿来主义\" 基于深刻洞察：<strong>教师模型末端层包含丰富的任务特定判别信息，直接集成可大幅降低学习难度。</strong></p>\n  <p>在交叉蒸馏中，通过动态互动机制打破传统单向知识传递的局限。</p>\n  <ul>\n   <li>\n    <p>教师模型采用较小学习率进行微调，持续感知并适应学生的学习状态。</p>\n   </li>\n   <li>\n    <p>学生模型则使用更大学习率，深入学习教师的输出和中间表征。</p>\n   </li>\n   <li>\n    <p>损失函数通过任务特定损失、MSE 损失和 KL 散度损失三个维度的约束，确保知识传递的全面性和精确性。</p>\n   </li>\n  </ul>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250822090937_49361e\" data-ratio=\"0.4203703703703704\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503502861\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/8adf28fa-22ad-4a7f-9e09-ac6f7edd4c6e/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>模块化量化</strong></p>\n  <p>完成蒸馏后，EI-BERT 框架采用创新的模块化量化方案将模型压缩至 INT8 精度。不同于传统逐矩阵量化，该方法从模块整体优化，最小化层间累积误差。通过精心设计的量化函数和可学习的步长参数，确保 8 位整数充分覆盖参数动态范围，在极大压缩存储空间的同时将精度损失降至最低。</p>\n  <p><strong>实验结果</strong></p>\n  <p>EI-BERT 在句子任务上平均得分<strong> 63.97</strong>，超越了所有基线模型；在机器阅读理解任务上得分 <strong>50.04</strong>，整体性能位居前列。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250822090937_33a8b6\" data-ratio=\"0.3927893738140417\" data-s=\"300,640\" data-type=\"png\" data-w=\"1054\" type=\"block\" data-imgfileid=\"503502862\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/2f4d8b79-0ce7-4bad-bf8b-c1508632474f/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>EI-BERT 以仅 1.91MB 的存储空间和 1.3 GIOPs 的计算量，实现了比 TinyBERT4&nbsp;<strong>小 23 倍</strong>、比 ALBERT4&nbsp;<strong>小 8 倍</strong>的极致压缩，同时<strong>计算效率提升 8 倍</strong>。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250822090937_0880e9\" data-ratio=\"0.47685185185185186\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503502863\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/741e3de2-f2a5-40b7-b115-83a8c686ae85/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>实际应用</strong></p>\n  <p>该技术已在支付宝生态系统中大规模部署，服务<strong>超 10 亿用户</strong>，展现出卓越的实际效果。在边缘推荐系统中，自 2024 年 1 月起每日服务 840 万活跃设备，处理 2100 万实时请求，PV-Click 提升 4.23%，PV-CTR 提升 3.3%；智能助手实现 65% 的延迟降低，响应时间从 1 秒降至 214 毫秒，同时保持 98.2% 的准确率；小程序场景实现完全本地化处理，网络负载减少 85%，云计算成本降低 40%，隐私敏感应用的用户留存率提升 12.3%。这些成果充分验证了该框架在真实工业场景中的巨大价值。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250822090937_24b0ad\" data-ratio=\"0.7829977628635347\" data-s=\"300,640\" data-type=\"png\" data-w=\"894\" type=\"block\" data-imgfileid=\"503502864\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/fb9deda7-164d-4c96-9486-fab3a9bc8620/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>总结与未来展望</strong></p>\n  <p>这项研究成功解决了在资源受限的移动设备上部署 NLU 模型的难题，在保证性能的同时实现了极致压缩，具有重要的学术价值和产业影响力。</p>\n  <p>未来，计划在两个方向继续推进研究：一是探索如何将生成式语言模型的核心能力 (如多步推理、上下文学习等) 通过压缩知识蒸馏迁移到极度受限的边缘设备上；二是研究参数高效的适应性方法，通过模块化接口设计实现快速的领域迁移。</p>\n </body>\n</html>",
+  "aiSummary": "荣获 KDD 2025 最佳论文亚军的 EI-BERT 框架，通过硬令牌剪枝、交叉蒸馏和模块化量化，实现了 BERT 模型在移动边缘设备上的极致压缩（1.91MB），并在支付宝生态中成功落地，显著提升了性能与用户体验。",
+  "oneSentenceSummary": "荣获 KDD 2025 最佳论文亚军的 EI-BERT 框架，通过硬令牌剪枝、交叉蒸馏和模块化量化，实现了 BERT 模型在移动边缘设备上的极致压缩（1.91MB），并在支付宝生态中成功落地，显著提升了性能与用户体验。",
+  "summary": "在移动计算时代，将大型 BERT 模型部署到资源受限的边缘设备面临内存和实时响应的巨大挑战。现有压缩技术无法满足移动设备 4MB 内存和 300 毫秒响应的严格限制。EI-BERT 框架通过多阶段极值压缩方案解决了这一难题，该方案包含硬令牌剪枝、创新的交叉蒸馏和模块化量化。其中，硬令牌剪枝通过精确识别重要词汇大幅减少存储；创新的交叉蒸馏方法通过“教师模型站在学生模型角度”的策略，有效解决了传统知识蒸馏面临的容量鸿沟和适应性缺失两大挑战，实现了高效知识转移；模块化量化则进一步优化存储至 INT8 精度。实验表明，EI-BERT 以 1.91MB 的模型大小和 1.3 GIOPs 的计算量，实现了比现有模型更极致的压缩和更高的计算效率。该技术已在支付宝生态系统大规模部署，服务超 10 亿用户，在边缘推荐、智能助手和微信小程序等场景中均取得了显著的性能提升和成本效益。",
+  "mainPoints": [
+    {
+      "point": "移动设备 NLU 部署面临极致压缩挑战：",
+      "explanation": "现有 BERT 模型压缩技术（15-20MB）远不能满足移动设备 4MB 内存和 300 毫秒实时响应的严格限制，特别是在金融等隐私敏感应用中，亟需极致压缩方案。"
+    },
+    {
+      "point": "EI-BERT 框架通过多阶段技术实现极致压缩：",
+      "explanation": "该框架整合了硬令牌剪枝、创新性交叉蒸馏和模块化量化三大关键技术，成功将 BERT 模型压缩至 1.91MB，创造了新的极致压缩记录，并大幅提升了计算效率。"
+    },
+    {
+      "point": "创新性交叉蒸馏解决知识转移难题：",
+      "explanation": "提出的交叉蒸馏方法通过“教师在学生鞋中”的参数集成和动态师生互动机制，有效解决了传统知识蒸馏在面对极致压缩模型时存在的容量鸿沟和知识适应性问题。"
+    },
+    {
+      "point": "在支付宝生态系统大规模成功落地：",
+      "explanation": "EI-BERT 已在支付宝服务超 10 亿用户，在边缘推荐、智能助手、小程序等多个实际场景中，显著提升了 PV-Click/CTR、降低了延迟、减少了网络负载和云计算成本，并提高了用户留存率。"
+    },
+    {
+      "point": "未来研究聚焦生成式模型与适应性方法：",
+      "explanation": "研究团队计划进一步探索将生成式语言模型的核心能力迁移到边缘设备，并研究参数高效的适应性方法，以实现快速领域迁移，为未来的边缘 AI 发展指明方向。"
+    }
+  ],
+  "keyQuotes": [
+    "现有的 BERT 模型压缩技术仅能实现 15-20MB 的压缩，远不能满足移动设备 4MB 的严格内存限制。",
+    "EI-BERT 框架通过三个关键步骤实现极致压缩：硬令牌剪枝智能筛选重要词汇，大幅减少存储需求；交叉蒸馏确保高效知识传递，突破传统方法局限；模块化量化采用 INT8 量化进一步优化存储。",
+    "交叉蒸馏方法创新性地让教师模型 '站在学生模型的角度'，通过参数集成和师生互动的动态适应机制，实现精准的知识转移。",
+    "最终实现了 99.5% 的压缩率，创造了 1.91MB 的 BERT 模型新纪录。",
+    "该技术已在支付宝生态系统中大规模部署，服务超 10 亿用户，展现出卓越的实际效果。"
+  ],
+  "tags": [
+    "模型压缩",
+    "知识蒸馏",
+    "边缘计算",
+    "BERT",
+    "自然语言处理"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1652,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755849998000,
+  "publishDateStr": "2025-08-22",
+  "publishDateTimeStr": "2025-08-22 08:06:38"
+}

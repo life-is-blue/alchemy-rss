@@ -1,0 +1,58 @@
+{
+  "id": "RAW_7aafd8",
+  "title": "华为又开源了个大的：超大规模 MoE 推理秘籍",
+  "url": "https://www.qbitai.com/2025/07/303554.html",
+  "date": "2025-07-01 05:41:36",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"57\">金磊 发自 凹非寺</p>\n   <p data-track=\"58\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>超大规模MoE模型</strong>（如DeepSeek），到底该怎么<strong>推理</strong>才能做到又快又稳。</p>\n  <p data-track=\"3\">现在，这个问题似乎已经有了标准答案——</p>\n  <p data-track=\"4\"><strong>华为</strong>一个新项目，直接把推理超大规模MoE背后的架构、技术和代码，统统给<strong>开源了！</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0773248a-1d6d-48bf-0bb9-5b84f51aa100/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0773248a-1d6d-48bf-0bb9-5b84f51aa100/public\">\n  </div>\n  <p data-track=\"5\">这个新开源项目名叫<strong>Omni-Infer</strong>，整体来看，它对于企业用户来说是非常利好的。</p>\n  <p data-track=\"6\">例如它可以给企业提供PD分离部署方案，针对QPM进行系统级优化，还会分享大规模商用过程中硬件使用的“方法论”。</p>\n  <p data-track=\"7\">而且对于开发者和开源社区，华为这“一呼”也是起到了“百应”的效果。</p>\n  <p data-track=\"8\"><strong>北京智源研究院</strong>副院长兼总工程师<strong>林咏华</strong>表示：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"9\">北京智源研究院一直以来致力于人工智能开源生态建设，很高兴看到Omni-infer项目开源，智源团队打造的面向多芯片的FlagScale框架也在第一时间接入了Omni-infer，期待后续有更多生态合作。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/79972986-bbb8-4e9c-f7d4-413d2ed16300/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/79972986-bbb8-4e9c-f7d4-413d2ed16300/public\">\n  </div>\n  <p data-track=\"10\">GitHub地址：https://github.com/FlagOpen/FlagScale/pull/630</p>\n  <p data-track=\"11\"><strong>上海人工智能实验室</strong>系统平台中心负责人<strong>王辉</strong>认为：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"12\">DeepLlink致力于打造最开放兼容的人工智能计算体系，十分期待能与Omni-infer项目携手，繁荣自主软硬件协同开源社区、拓展生态版图。</p>\n  </blockquote>\n  <p data-track=\"13\">以及<strong>OpenI启智社区</strong>运营中心主任<strong>余跃</strong>也给出了响应：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"14\">OpenI启智社区坚持创新为本，面向未来与Omni-Infer项目一起打造基于算力网的开源共创协作生态。</p>\n  </blockquote>\n  <p data-track=\"15\">据了解，华为Omni-Infer社区的定位是 “加速套件+最佳实践”，未来提供开箱即用能力，支持昇腾推理集群快速部署。</p>\n  <p data-track=\"16\">而对于这次Omni-Infer的开源，其实是华为兑现了一个月前在发布重磅技术报告之际所做出的承诺。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fcc8badc-3199-4e01-1495-58660d437500/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fcc8badc-3199-4e01-1495-58660d437500/public\">\n  </div>\n  <p data-track=\"17\">那么接下来，我们就来一同深入了解一下华为的Omni-Infer。</p>\n  <p data-track=\"19\">从整体来看，Omni-Infer可以拆成两大块来看：一个是<strong>推理框架</strong>，一个是<strong>推理加速套件</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a601b2d0-0309-42a9-ec93-5d563eae7800/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a601b2d0-0309-42a9-ec93-5d563eae7800/public\">\n  </div>\n  <p data-track=\"20\">从框架角度来看，Omni-Infer能和业界主流的开源大模型推理框架（如vLLM）完美兼容，就像不同品牌的零件可以组装在同一台机器上。</p>\n  <p data-track=\"21\">并且据了解，它的功能还将不断扩展，会持续为昇腾硬件平台上的大模型推理提供更强大的支持（例如SGLang等主流开源LLM推理框架）。</p>\n  <p data-track=\"22\">值得一提的是，Omni-Infer是与vLLM/SGLang等等这些主流大模型推理开源框架是解耦的，独立安装。</p>\n  <p data-track=\"23\">这就意味着用户只需维护vLLM等的主版本即可，大大降低了软件版本维护的成本。</p>\n  <p data-track=\"24\">至于Omni-Infer的加速套件，若是用较为形象的比喻，它的“打开方式”是这样的：</p>\n  <ul>\n   <li data-track=\"25\">企业级的 “调度员”：它有一套智能的调度系统，就像交通警察指挥车辆一样，能合理安排任务（xPyD调度）。而且支持大规模分布式部署，就像多个交通岗亭协同工作，不管任务量多大，都能保证最低的延迟，让响应更及时。</li>\n   <li data-track=\"26\">精准的 “负载平衡器”：对于不同长度的任务序列，它在预填充和解码这两个关键阶段都做了优化。比如，就像快递分拣中心针对不同大小的包裹采用不同的分拣策略，让整个处理过程的吞吐量达到最大，同时还能保持低延迟。</li>\n   <li data-track=\"27\">MoE模型的 “专属搭档”：它对混合专家（MoE）模型特别友好，支持EP144/EP288等多种配置。可以想象成一个大型的 “专家团队”，每个专家负责不同的任务，它能让这些专家高效协作。</li>\n   <li data-track=\"28\">智能的 “资源分配者”：具备分层非均匀冗余和近实时动态专家放置功能。就像在一个大型工厂里，根据实时的生产需求，动态调整各个生产线的工人分配，让资源得到最充分的利用。</li>\n   <li data-track=\"29\">注意力机制的 “强化器”：专门为LLM、MLLM和MoE等模型优化了注意力机制。这就好比给模型的 “注意力” 装上了 “放大镜”，让它在处理信息时更聚焦、更高效，提升了模型的性能和可扩展性。</li>\n  </ul>\n  <p data-track=\"31\">在聊完Omni-Infer的特点之后，我们继续来看下该如何去体验。</p>\n  <p data-track=\"32\">首先对于它的使用环境是有一定的要求：</p>\n  <ul>\n   <li data-track=\"33\">硬件：目前仅支持CloudMatrix384推理卡</li>\n   <li data-track=\"34\">操作系统：Linux Python: &gt;=3.9, &lt;= 3.11</li>\n  </ul>\n  <p data-track=\"35\">其次在安装方式上，目前仅支持通过Docker镜像方式进行安装：</p>\n  <pre class=\"syl-page-code\"><code class=\"hljs less\"><span class=\"hljs-selector-tag\">docker</span>&nbsp;<span class=\"hljs-selector-tag\">pull</span> <span class=\"hljs-selector-tag\">swr</span><span class=\"hljs-selector-class\">.cn-southwest-2</span><span class=\"hljs-selector-class\">.myhuaweicloud</span><span class=\"hljs-selector-class\">.com</span>/<span class=\"hljs-selector-tag\">omni-ai</span>/<span class=\"hljs-selector-tag\">omniinfer</span><span class=\"hljs-selector-pseudo\">:202506272026</span></code></pre>\n  <p data-track=\"37\">这个镜像已预先集成所需的CANN及Torch-NPU依赖包，同时内置可直接运行的Omni-Infer与vLLM工具包，开箱即可使用。</p>\n  <p data-track=\"38\">可以使用下面这个命令检查是否可用：</p>\n  <pre class=\"syl-page-code\"><code class=\"hljs cpp\">pip&nbsp;<span class=\"hljs-built_in\">list</span> | grep omni_infer</code></pre>\n  <p data-track=\"40\">以<strong>PD分离自动化部署</strong>（4机2P1D）为例，它的部署框架如下所示：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/233bca23-db15-4da4-098c-ad5433c10400/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/233bca23-db15-4da4-098c-ad5433c10400/public\">\n  </div>\n  <p data-track=\"41\">再接下来，只需文档教程，仅少量代码和步骤，即可完成安装和部署：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0fe0d180-c3cd-44e7-ff52-31537d956d00/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0fe0d180-c3cd-44e7-ff52-31537d956d00/public\">\n  </div>\n  <p data-track=\"42\">整体来看，此次华为面向超大规模MoE开源的项目，是做到了简单几步就可以让AI推理这事变得又快又稳。</p>\n  <p data-track=\"44\">Omni-Infer除了将此前《华为昇腾服务器 DeepSeek V3/R1 推理部署最佳实践》技术报告中的关键技术开源出来之外，也同步进行了更加专业的开源社区建设。</p>\n  <p data-track=\"45\">首先，在独立的社区仓库中，将社区治理、社区会议、社区活动、生态合作、代码规范、设计文档等社区信息全部开放出来，让开发者能够最直接深入的参与到社区发展中。</p>\n  <p data-track=\"46\">其次，参照业界主流大型开源社区的最佳实践，采用开放的社区治理机制，通过项目管理委员会（Project Management Committee）和特别兴趣小组（Special Interest Group）两级机制，提供公正透明的讨论与决策机制。</p>\n  <p data-track=\"47\">再次，针对业界同类开源项目大多存在的“一头热”的“被动适配”生态合作模式问题，Omni-Infer社区则采取了“主动适配”的社区构筑路径，尤其是主动拥抱国内正在逐步成长的人工智能开源项目，让生态真正实现多方共赢。</p>\n  <p data-track=\"48\">作为长期与业界几大主流开源基金会（Linux基金会、OpenInfra基金会、Apache基金会等）保持紧密合作关系的社区团队，Omni-infer刚开源的首个活动就将参与OpenInfra基金会在苏州的Meetup，感兴趣的同学可以到现场交流，也顺路可参加有特色的全球性开源社区的生日活动。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/be276da3-d8cb-45be-415f-3b25d8fa1d00/public\" alt=\"华为又开源了个大的：超大规模MoE推理秘籍\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/be276da3-d8cb-45be-415f-3b25d8fa1d00/public\">\n  </div>\n  <p data-track=\"49\">最后，所有相关的地址放下面了，感兴趣的小伙伴可自取哦~</p>\n  <p data-track=\"50\">技术报告及可分析代码包：<br>\n    https://gitcode.com/ascend-tribe/ascend-inference-cluster</p>\n  <p data-track=\"51\">源代码开发协作：<br>\n    https://gitee.com/omniai/omniinfer</p>\n  <p data-track=\"52\">社区治理、运作等内容：<br>\n    https://gitee.com/omniai/community</p>\n  <p data-track=\"53\">【其他托管平台】</p>\n  <p data-track=\"54\">Github：<br>\n    https://github.com/omni-ai-npu/omni-infer</p>\n  <p data-track=\"55\">OpenI启智社区：<br>\n    https://git.openi.org.cn/omni-ai/omni-infer</p>\n  <p data-track=\"56\">GitLink确实平台：<br>\n    https://gitlink.org.cn/omni-ai/omniinfer</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "华为开源 Omni-Infer 项目，为超大规模 MoE 模型推理提供高效、稳定的架构、技术和代码支持，推动 AI 推理生态发展。",
+  "oneSentenceSummary": "华为开源 Omni-Infer 项目，为超大规模 MoE 模型推理提供高效、稳定的架构、技术和代码支持，推动 AI 推理生态发展。",
+  "summary": "华为开源了 Omni-Infer 项目，专注于超大规模 MoE 模型的推理优化。该项目包含推理框架和推理加速套件两大模块，支持与主流开源大模型推理框架（如 vLLM）兼容，并针对昇腾硬件平台进行了优化。Omni-Infer 提供了智能调度系统、负载平衡器、MoE 模型专属优化、智能资源分配和注意力机制强化等功能，显著提升了推理效率和稳定性。项目还强调了开源社区建设，采用开放的社区治理机制，主动适配国内人工智能开源生态，促进多方共赢。",
+  "mainPoints": [
+    {
+      "point": "Omni-Infer 提供超大规模 MoE 模型推理优化方案",
+      "explanation": "通过智能调度、负载平衡和资源分配等技术，显著提升推理效率和稳定性。"
+    },
+    {
+      "point": "项目与主流开源推理框架兼容",
+      "explanation": "支持 vLLM 等框架，降低软件版本维护成本，提升开发者体验。"
+    },
+    {
+      "point": "项目通过技术创新优化推理性能",
+      "explanation": "采用智能调度和资源分配优化，显著提升 MoE 模型推理效率。"
+    },
+    {
+      "point": "强调开源社区建设和生态合作",
+      "explanation": "采用开放的社区治理机制，主动适配国内开源生态，促进多方共赢。"
+    }
+  ],
+  "keyQuotes": [
+    "华为一个新项目，直接把推理超大规模 MoE 背后的架构、技术和代码，统统给开源了！",
+    "Omni-Infer 社区的定位是 '加速套件+最佳实践'，未来提供开箱即用能力，支持昇腾推理集群快速部署。",
+    "它对混合专家（MoE）模型特别友好，支持 EP144/EP288 等多种配置。可以想象成一个大型的 '专家团队'，每个专家负责不同的任务，它能让这些专家高效协作。",
+    "Omni-Infer 社区采用开放的治理机制，主动适配国内开源生态，促进多方共赢。"
+  ],
+  "tags": [
+    "MoE模型",
+    "推理优化",
+    "华为",
+    "开源项目",
+    "昇腾硬件"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 89,
+  "wordCount": 2420,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751348496000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 05:41:36"
+}

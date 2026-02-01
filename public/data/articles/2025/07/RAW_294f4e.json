@@ -1,0 +1,59 @@
+{
+  "id": "RAW_294f4e",
+  "title": "Gemini 嵌入：驱动 RAG 与情境工程",
+  "url": "https://developers.googleblog.com/en/gemini-embedding-powering-rag-context-engineering/",
+  "date": "2025-07-30 00:00:00",
+  "author": "Vishal Dharmadhikari, Janie Zhang",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Draft_-_Gemini_Embedding-mindlid.original.png\" alt=\"Gemini Embedding: Powering RAG and context engineering\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"a6fas\">Since announcing the <a href=\"https://developers.googleblog.com/en/gemini-embedding-available-gemini-api/\">general availability of our Gemini Embedding text model</a>, we've seen developers rapidly adopt it to build advanced AI applications. Beyond traditional use cases like classification, semantic search, and retrieval-augmented generation (RAG), many are now using a technique called <a href=\"https://www.philschmid.de/context-engineering\">context engineering</a> to provide AI agents with complete operational context. Embeddings are crucial here, as they efficiently identify and integrate vital information—like documents, conversation history, and tool definitions—directly into a model's working memory.</p>\n    <p data-block-key=\"1ltlh\">The following examples showcase how organizations across industries are already leveraging the Gemini Embedding model to power sophisticated systems.</p>\n    <h2 data-block-key=\"iym27\" id=\"gemini-embedding-in-action\"><br>\n      Gemini Embedding in action</h2>\n    <h3 data-block-key=\"9rn4y\" id=\"\"><b><br>\n       Unleashing capabilities in global content intelligence</b></h3>\n    <p data-block-key=\"et70a\"><a href=\"https://www.box.com/home\">Box</a>, an intelligent content management platform, is integrating Gemini Embedding to enable a critical use case: answering questions and extracting insights from complex documents. During their evaluations, <code>gemini-embedding-001</code> found the <b>correct answer over 81% of the time</b>, exhibiting a <b>3.6% increase in recall</b> compared to other embedding models. Beyond this performance boost, our model's built-in multilingual support is a promising advancement for their global users, enabling Box AI to unlock insights from content across different languages and regions.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Box-AI-Gemini-Embedding.original.png\" alt=\"Box AI - Gemini Embedding\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"t12q1\" id=\"\"><b>Improving accuracy in financial data analysis</b></h3>\n    <p data-block-key=\"bsric\">Financial technology company <a href=\"https://www.re-cap.com/\">re:cap</a> uses embeddings to classify high volumes of B2B bank transactions. They measured the impact of <code>gemini-embedding-001</code> by benchmarking against previous Google models (<code>text-embedding-004</code> and <code>text-embedding-005</code>) on a dataset of 21,500 transactions, finding an <b>increase in</b> <a href=\"https://en.wikipedia.org/wiki/F-score\"><b>F1 score</b></a><b> by 1.9% and 1.45%</b> respectively. The F1 score, which balances a model's precision and recall, is crucial for classification tasks. This demonstrates how a capable model like Gemini Embedding directly drives significant performance gains, helping re:cap deliver sharper liquidity insights to its customers.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/re-cap.original.png\" alt=\"re:cap - Gemini Embedding\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"3qs84\" id=\"\"><b>Achieving semantic precision in legal discovery</b></h3>\n    <p data-block-key=\"31r7j\"><a href=\"https://www.everlaw.com/\">Everlaw</a>, a platform providing verifiable RAG to help legal professionals analyze large volumes of discovery documents, requires precise semantic matching across millions of specialized texts. Through internal benchmarks, Everlaw found <code>gemini-embedding-001</code> to be the best, achieving <b>87% accuracy</b> in surfacing relevant answers from 1.4 million documents filled with industry-specific and complex legal terms, surpassing Voyage (84%) and OpenAI (73%) models. Furthermore, Gemini Embedding's Matryoshka property enables Everlaw to use compact representations, focusing essential information in fewer dimensions. This leads to minimal performance loss, reduced storage costs, and more efficient retrieval and search.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/everlaw.original.png\" alt=\"Everlaw - Gemini Embedding\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"an6vt\" id=\"\"><b>Leveling up codebase search for developers</b></h3>\n    <p data-block-key=\"c1cvc\"><a href=\"https://roocode.com/\">Roo Code</a>, an open-source AI coding assistant, uses the Gemini Embedding model to power its codebase indexing and semantic search. Developers using Roo Code need a search that helps understand intent, not just syntax, as the assistant interacts across multiple files like a human teammate. By pairing <code>gemini-embedding-001</code> with Tree-sitter for logical code splitting, Roo Code delivers highly relevant results, even for imprecise queries. After initial testing, they found Gemini Embedding significantly improved their LLM-driven code search, making it more flexible, accurate, and aligned with developer workflows.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/ROOCode.original.png\" alt=\"ROO Code - Gemini Embedding\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"84dhp\" id=\"\"><b>Delivering personalized mental wellness support</b></h3>\n    <p data-block-key=\"ohq4\"><a href=\"https://mindlid.com/\">Mindlid's</a> AI wellness companion leverages <code>gemini-embedding-001</code> to understand conversational history, enabling context-aware and meaningful insights that adapt in real time to users. They documented impressive performance: consistent<b> sub-second latency</b> (median: 420ms) and a measurable <b>82% top-3 recall rate, a 4% recall lift</b> over OpenAI's <code>text-embedding-3-small</code>. This shows how Gemini Embedding improves the relevance and speed of their AI's support by delivering the most pertinent information.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Mindlid.original.png\" alt=\"Mindlid - Gemini Embedding\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h3 data-block-key=\"6jr1b\" id=\"\"><b>Enhancing context and efficiency of AI assistants</b></h3>\n    <p data-block-key=\"2u1b2\">Interaction Co. is building <a href=\"https://poke.com/\">Poke</a>, an AI email assistant that automates tasks and extracts information from Gmail. Poke uses Gemini Embedding for two key functions: retrieving user \"memories\" and identifying relevant emails for enhanced context. By integrating <code>gemini-embedding-001</code>, Poke's language model retrieves data with greater speed and precision. They've reported a significant <b>90.4% reduction in the average time</b> to embed 100 emails compared to Voyage-2, completing the task in just 21.45 seconds.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Poke.original.png\" alt=\"Poke - Gemini Embedding\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"zv45a\" id=\"the-foundation-for-future-agents\">The foundation for future agents</h2>\n    <p data-block-key=\"e2r1o\">As AI systems become more autonomous, their effectiveness will be determined by the quality of the context we provide them. High-performance embedding models like <code>gemini-embedding-001</code> are a fundamental component for building the next generation of agents that can reason, retrieve information, and act on our behalf.</p>\n    <p data-block-key=\"3gjcp\">To get started with embeddings, visit the <a href=\"https://ai.google.dev/gemini-api/docs/embeddings\">Gemini API documentation</a>.</p>\n    <p data-block-key=\"8rmbe\"><i><br></i><i><sub>Performance metrics were provided by developers and not independently confirmed by Google.</sub></i></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Gemini 嵌入凭借卓越的性能和效率，驱动各个行业的先进 AI 应用，显著增强 RAG、情境工程和语义搜索能力。",
+  "oneSentenceSummary": "Gemini 嵌入凭借卓越的性能和效率，驱动各个行业的先进 AI 应用，显著增强 RAG、情境工程和语义搜索能力。",
+  "summary": "自 Google 的 Gemini 嵌入文本模型普遍可用以来，它对先进 AI 应用产生了重大影响。本文将展示其多样化的应用。除了传统的用途（如分类和语义搜索）之外，开发人员还在利用它进行“情境工程”，从而为 AI 代理提供全面的操作情境。本文介绍了几个真实的案例：Box 使用它进行全局内容智能，实现了超过 81% 的正确答案和 3. 6% 的召回率增长；re:cap 将财务数据分析的准确性提高了 1. 9% 的 F1 分数；Everlaw 通过 87% 的准确率增强了法律发现，并受益于俄罗斯套娃属性（一种能够将信息压缩到更低维度表示的技术）以实现高效检索；Roo Code 改进了开发人员的代码库语义搜索；Mindlid 提供了个性化的心理健康支持，具有一致的亚秒级延迟和 82% 的前 3 名召回率；AI 邮件助手 Poke 实现了 90. 4% 的嵌入时间减少。这些案例分析强调了 Gemini 嵌入的卓越性能、多语言支持和效率，使其成为构建下一代智能 AI 代理的基本组成部分。",
+  "mainPoints": [
+    {
+      "point": "Gemini 嵌入显著提高了各种 AI 应用的性能。",
+      "explanation": "来自 Box、re:cap、Everlaw 和 Mindlid 的案例分析表明，在召回率、准确性、F1 分数和延迟方面有可衡量的改进，证明了其在实际应用中的有效性。"
+    },
+    {
+      "point": "嵌入对于构建高级 AI 代理中的“情境工程”至关重要。",
+      "explanation": "通过将重要信息（文档、对话历史记录、工具定义）有效地集成到模型的工作记忆中，Gemini 嵌入使 AI 代理能够以全面的操作情境进行推理和行动。"
+    },
+    {
+      "point": "Gemini 嵌入提供了独特的功能，例如内置的多语言支持和俄罗斯套娃属性。",
+      "explanation": "多语言功能支持全球内容洞察，而俄罗斯套娃属性允许紧凑的表示，从而降低存储成本，并通过最小的性能损失实现更高效的检索。"
+    },
+    {
+      "point": "Gemini 嵌入展示了在广泛的行业和用例中的广泛适用性。",
+      "explanation": "本文展示了其在智能内容管理 (Box)、财务数据分析 (re:cap)、法律发现 (Everlaw)、代码库搜索 (Roo Code)、心理健康支持 (Mindlid) 和电子邮件自动化 (Poke) 等不同领域的成功集成，突显了其多功能性和实际影响。"
+    }
+  ],
+  "keyQuotes": [
+    "嵌入在这里至关重要，因为它们可以有效地识别和集成重要信息（如文档、对话历史记录和工具定义）直接到模型的工作记忆中。",
+    "`gemini-embedding-001` 找到正确答案的次数超过 81%，与其它嵌入模型相比，召回率提高了 3. 6%。",
+    "F1 分数平衡了模型的精确率和召回率，对于分类任务至关重要。这表明像 Gemini 嵌入这样有能力的模型如何直接推动显著的性能提升...",
+    "此外，Gemini 嵌入的俄罗斯套娃属性使 Everlaw 能够使用紧凑的表示，将基本信息集中在更少的维度中。",
+    "像 `gemini-embedding-001` 这样的高性能嵌入模型是构建下一代能够推理、检索信息并代表我们采取行动的代理的基本组成部分。"
+  ],
+  "tags": [
+    "Gemini 嵌入",
+    "嵌入",
+    "RAG",
+    "情境工程",
+    "语义搜索"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 684,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753833600000,
+  "publishDateStr": "2025-07-30",
+  "publishDateTimeStr": "2025-07-30 00:00:00"
+}

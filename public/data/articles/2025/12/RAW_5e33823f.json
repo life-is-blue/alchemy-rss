@@ -1,0 +1,58 @@
+{
+  "id": "RAW_5e33823f",
+  "title": "医生版 ChatGPT，估值 120 亿美元",
+  "url": "https://www.qbitai.com/2025/12/361726.html",
+  "date": "2025-12-18 05:45:12",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"2 1 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"150\">Jay 发自 凹非寺量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"64\">没想到，医疗场景ChatGPT生意能做这么大……</p>\n  <p data-track=\"65\">最新消息，美国明星创业公司——医生版ChatGPT「OpenEvidence」，新融资将获投约2.5亿美元，估值翻倍至<strong>120亿美元</strong>。</p>\n  <p data-track=\"66\">这意味着，Perplexity、Cursor等超级独角兽的牌桌上，将迎来一家医疗AI公司。</p>\n  <p data-track=\"67\">这并不令人惊讶，毕竟OpenEvidence几乎已经垄断了美国ToC医疗AI市场——<strong>日均处理临床查询超6万次，45%的美国医生都是它的用户</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"医生版ChatGPT，估值120亿美元\" src=\"https://image.jido.dev/20251218083913_d68869b119c2f446cf5eed9c7de6cd93.jpeg\" data-ic=\"false\" data-width=\"221\" data-height=\"218\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"69\">又一家超级独角兽诞生。</p>\n  <p data-track=\"70\">Information消息，旨在打造医生专用ChatGPT的AI公司——<strong>OpenEvidence，正筹集2.5亿美元股权融资</strong>。</p>\n  <p data-track=\"71\">如果交易完成，这家成立仅三年的初创公司估值将直接翻倍，来到120亿美元。</p>\n  <p data-track=\"72\">回看OpenEvidence的融资历史，也像火箭一样迅速攀升：</p>\n  <ul>\n   <li data-track=\"73\">2025年2月，A轮融资7500万美元，估值10亿美元。</li>\n   <li data-track=\"74\">2025年7月，B轮融资2.1亿美元，估值翻了三倍多，来到35亿美元。</li>\n   <li data-track=\"75\">2025年10月，C轮融资2亿美元，估值进一步跃升至60亿美元。</li>\n  </ul>\n  <p data-track=\"76\">股东名单中，Google Ventures、红杉资本、凯鹏华盈、黑石集团等知名风投赫然在列。</p>\n  <p data-track=\"77\">而随着本轮融资结束，OpenEvidence将进一步坐稳「最贵医疗AI」的交椅。</p>\n  <p data-track=\"78\"><strong>医生版ChatGPT，为何如此受人追捧？</strong></p>\n  <p data-track=\"79\">日常接诊中，医生经常会遇到一些罕见而复杂的边缘案例，这类长尾问题往往不存在标准答案。医生需要回到文献层面查证证据。</p>\n  <p data-track=\"80\">但现实是，面对高度具体的临床问题，依靠关键词在海量医学文献中检索，无异于大海捞针。</p>\n  <p data-track=\"81\">OpenEvidence创始人曾举过这样一个例子：</p>\n  <p data-track=\"82\">一名患者同时患有银屑病和多发性硬化。这两种疾病都与自身免疫相关，但<strong>在具体的发病机制上却相互牵制</strong>。</p>\n  <p data-track=\"83\">常规方案是IL-17或IL-23抑制剂治疗，这是当前治疗中重度银屑病的王牌。</p>\n  <p data-track=\"84\">在银屑病治疗中，IL-17或IL-23抑制剂是当前治疗中重度银屑病的王牌方案，疗效明确、应用成熟。</p>\n  <p data-track=\"85\">但问题在于，对于同时还有多发性硬化的患者而言，IL-17可能诱发脱髓鞘病变。</p>\n  <p data-track=\"86\">相比之下，IL-23抑制剂更多作用于银屑病炎症反应的上游环节，通常被视为相对更安全的替代选择。但针对「多发性硬化合并银屑病」这一特定人群，几乎没有什么临床研究证据。</p>\n  <p data-track=\"87\">这是一个典型的<strong>没有标准答案的临床困境</strong>，医生需要更多信息用于辅助决策。</p>\n  <p data-track=\"88\">过去，医生需要求助PubMed上的文献。但如此具体的问题，很难通过关键词检索出来。</p>\n  <p data-track=\"89\">AI的出现，确实在一定程度上解决了「如何准确描述问题」的挑战。</p>\n  <p data-track=\"90\">但在医疗场景中，真正有价值的边缘案例，往往只存在于小样本研究、病例报告或专家共识之中。这些信息既分散、又非结构化，通用模型即便引入RAG机制，也没办法抓取到。</p>\n  <p data-track=\"91\">更重要的是，通用大模型并非为医疗决策而生，无法满足临床的严苛要求。</p>\n  <p data-track=\"92\">OpenEvidence解决的正是这个痛点，他们提供的是一个专门面向医生的AI。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"医生版ChatGPT，估值120亿美元\" src=\"https://image.jido.dev/20251218083912_59bb2b5b999217760ef7f6e5dfc54cc4.gif\" data-ic=\"false\" data-width=\"516\" data-height=\"514\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"93\">OpenEvidence，面向医生的ChatGPT，旨在消除医生诊疗过程中的决策成本。</p>\n  <p data-track=\"94\"><strong>首先看数据：</strong></p>\n  <p data-track=\"95\">在回答问题时，OpenEvidence调用的是一套<strong>经过筛选的医疗知识库</strong>。</p>\n  <p data-track=\"96\">除PubMed、Cochrane等公共数据库外，其核心内容还包括《新英格兰医学杂志》等顶尖医学期刊的独家授权资料。这些高质量、可追溯的数据源，汇成了OpenEvidence抵御通用大模型「降维覆盖」的护城河。</p>\n  <p data-track=\"97\">为了减少幻觉，OpenEvidence<strong>直接砍掉了「互联网公开数据」这一选项，所有信息全部来源于经过同行评审的权威医学期刊</strong>。</p>\n  <p data-track=\"98\"><strong>其次看模型：</strong></p>\n  <p data-track=\"99\">由于并不追求通用能力，OpenEvidence采用的是专门为医学任务训练的<strong>7B</strong>小模型。</p>\n  <p data-track=\"100\">在这一前提下，模型不需要承担泛化任务带来的负担，反而在医学任务上表现更精准。</p>\n  <p data-track=\"101\">产品设计方面，OpenEvidence给出的每一条结论，<strong>均基于至少两篇以上高等级文献的具体段落</strong>，医生可以随时溯源。</p>\n  <p data-track=\"102\">针对垂直场景的特殊优化，让OpenEvidence在美国医师执照考试（USMLE）中超过了ChatGPT-5——<strong>满分夺冠，325道题全部回答正确，甚至连给的参考文献都是准确的</strong>。</p>\n  <p data-track=\"103\">如今，OpenEvidence几乎已成为美国医生默认的操作系统。</p>\n  <p data-track=\"104\">10月份，OffCall（一家允许医生比较薪资的公司）经过对1000名美国医生的调查发现：<strong>45%的医生都在使用OpenEvidence</strong>。</p>\n  <p data-track=\"105\">相比之下，ChatGPT的使用率只有16%。</p>\n  <p data-track=\"106\">而且这批用户的活跃度相当高。OpenEvidence每月为医生解答大约2000万个问题，已隐约呈现出医疗领域流量入口的雏形。</p>\n  <p data-track=\"107\">既然如此，变现路径也很清晰了——</p>\n  <p data-track=\"108\"><strong>向制药公司卖广告位。</strong></p>\n  <p data-track=\"109\">据悉，OpenEvidence目前每年的广告收入约为1.5亿美元。折算下来，几乎每天都有接近<strong>300万元</strong>人民币进账。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"医生版ChatGPT，估值120亿美元\" src=\"https://image.jido.dev/20251218083912_5dd88410255b22c0bb7ce7308dd932c9.gif\" data-ic=\"false\" data-width=\"118\" data-height=\"78\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"110\">甚至要贴脸凡尔赛一波。</p>\n  <p data-track=\"111\">公司方面表示，目前实际出售的广告位，只占总量的十分之一。</p>\n  <p data-track=\"112\">翻译一下：「真要认真搞商业化，ARR轻松破10亿美元～」</p>\n  <p data-track=\"113\">反映在财务指标上，OpenEvidence的表现同样相当夸张。其毛利率接近<strong>90%</strong>，在一众AI初创公司中一骑绝尘。</p>\n  <p data-track=\"114\"><strong>原因主要在成本端：</strong></p>\n  <p data-track=\"115\">一方面，OpenEvidence采用的是<strong>7B小模型</strong>，无论训练成本还是推理成本，都远低于通用大模型。</p>\n  <p data-track=\"116\">另一方面，由于医学场景对可追溯性的要求，使得现在的OpenEvidence并没有直接抢占信息入口，反而是在<strong>给医学期刊引流</strong>。</p>\n  <p data-track=\"117\">这直接改变了AI与传统内容供应方的关系。由于OpenEvidence坐拥大量医生流量，这批流量大部分又能注入供给端，公司面对期刊拥有极强的议价权。</p>\n  <p data-track=\"118\">结果就是：<strong>最能体现OpenEvidence竞争壁垒的「数据资产」，反而是各大医学期刊抢着送上门来的</strong>。</p>\n  <p data-track=\"120\">医生版ChatGPT的风，不止刮在太平洋的另一边。</p>\n  <p data-track=\"121\">国内医疗AI虽尚未有选手达到OpenEvidence那样夸张的120亿美元估值，但产品理念类似的也不少。</p>\n  <p data-track=\"122\">最耳熟能详的大概有5家——<strong>医联、百川智能、零假设、壹生检康、灵犀医疗</strong>。</p>\n  <p data-track=\"123\"><strong>医联</strong></p>\n  <p data-track=\"124\">成立于2014年，提供基于医生使用的实名认证、学术社交、自由执业的移动平台。</p>\n  <p data-track=\"125\">2023年，旗下<strong>未来医生</strong>发布医疗垂直大模型MedGPT，成为国内首个获批可用于提供疾病诊断与治疗建议的生成式AI。</p>\n  <p data-track=\"126\">2025年的一项多模型临床实战测评中，MedGPT获临床「安全性」与「有效性」评测全球第一。</p>\n  <p data-track=\"127\">目前，未来医生已落地基层门诊临床决策场景，服务超过2000万注册用户、150余万注册医生。</p>\n  <p data-track=\"128\">天眼查显示，医联成立以来已完成7轮融资，股东包括腾讯、红杉中国、华兴资本等。</p>\n  <p data-track=\"129\">2020年末，医联完成5.14亿美元E轮融资，<strong>估值约40亿美元</strong>。</p>\n  <p data-track=\"130\"><strong>百川智能</strong></p>\n  <p data-track=\"131\">成立于2023年，一家研发并提供通用AI服务的公司。</p>\n  <p data-track=\"132\">2025年10月22日，百川智能发布循证增强医疗大模型<strong>Baichuan-M2 Plus</strong>。</p>\n  <p data-track=\"133\">在多场景评测中，M2 Plus的医疗幻觉率较通用大模型显著降低，相比DeepSeek低约3倍，甚至优于OpenEvidence。</p>\n  <p data-track=\"134\">企查查显示，自成立以来，百川智能已完成三轮融资，股东包括小米、腾讯、阿里、亚投资本、中金等。</p>\n  <p data-track=\"135\">2024年7月，百川智能A轮融资50亿元，<strong>估值达200亿元</strong>。</p>\n  <p data-track=\"136\"><strong>零假设</strong></p>\n  <p data-track=\"137\">成立于2019年，是一家专注于开发医学智能化产品的科技公司。</p>\n  <p data-track=\"138\">旗下「KnowS」系列产品是一个虚拟医学助手，融合数据技术和医学知识，为临床机构提供以文献分析、临床数据分析服务。</p>\n  <p data-track=\"139\">2025年10月，零假设获近亿元A轮融资，估值未披露。</p>\n  <p data-track=\"140\"><strong>壹生检康</strong></p>\n  <p data-track=\"141\">成立于2021年，旨在让每个人都能方便快捷的完成居家检测。</p>\n  <p data-track=\"142\">2025年11月，钉钉联合壹生检康发布「豆蔻医生超级助理」，可在1分钟内整合全球超过4000万篇医疗专业文献，辅助妇产科医生临床决策。</p>\n  <p data-track=\"143\">企查查显示，壹生检康目前共完成两轮融资，最新为2022年初的天使轮，估值尚未披露。</p>\n  <p data-track=\"144\"><strong>灵犀医疗</strong></p>\n  <p data-track=\"145\">成立于2021年，是一家卫生技术循证解决方案提供商。</p>\n  <p data-track=\"146\">其自研EviMed循证平台，动态整合全球数亿条医学文献与临床数据，辅助医生做医学决策。</p>\n  <p data-track=\"147\">目前，该平台已应用于全国300余家大型三甲医院，以及20余家国内外头部医药企业。</p>\n  <p data-track=\"148\">截至目前，灵犀医疗尚未披露融资信息。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"医生版ChatGPT，估值120亿美元\" src=\"https://image.jido.dev/20251218083914_8ed61dff88629385a051a7b1a3385f6c.jpeg\" data-ic=\"false\" data-width=\"614\" data-height=\"618\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"149\">参考链接：\n   <br>\n   [1]https://www.theinformation.com/articles/chatgpt-doctors-startup-doubles-valuation-12-billion-revenue-surges\n   <br>\n   [2]https://m.jiemian.com/article/13709250.html</p>\n  <div class=\"pgc-img\">\n   <img alt=\"医生版ChatGPT，估值120亿美元\" src=\"https://image.jido.dev/20251218083912_f05785c68d5f3ccc593badf0bfb3f4a4.png\" data-ic=\"false\" data-width=\"1732\" data-height=\"634\" data-ic-uri=\"\">\n  </div>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "明星创业公司 OpenEvidence 凭借专为医生设计的 ChatGPT 在全球医疗 AI 市场崭露头角，估值高达 120 亿美元，并以其独特的垂直数据策略和轻量级模型引领行业发展。",
+  "oneSentenceSummary": "明星创业公司 OpenEvidence 凭借专为医生设计的 ChatGPT 在全球医疗 AI 市场崭露头角，估值高达 120 亿美元，并以其独特的垂直数据策略和轻量级模型引领行业发展。",
+  "summary": "文章详细介绍了美国医疗 AI 明星初创公司 OpenEvidence 的崛起。该公司针对医生在临床诊疗中遇到的复杂罕见案例痛点，推出了医生版的 ChatGPT，通过筛选高权威医疗知识库、砍掉互联网公开数据来减少“幻觉”，并采用 7B 小模型实现精准且可追溯的诊疗辅助。OpenEvidence 成功服务了 45%的美国医生，日均处理超 6 万次临床查询，并凭借广告模式实现高额营收。文章还列举了国内在医疗 AI 领域有类似理念的五家公司，包括医联、百川智能等，展现了医疗 AI 市场的巨大潜力和未来发展方向。",
+  "mainPoints": [
+    {
+      "point": "OpenEvidence 通过专注于医疗垂直场景，解决了通用大模型在医疗领域“幻觉”和精准性不足的痛点。",
+      "explanation": "公司使用经过筛选的高权威医疗知识库和专门为医学任务训练的小模型，确保了答案的准确性和可追溯性，满足了临床决策的严苛要求。"
+    },
+    {
+      "point": "独特的商业模式和成本控制，使得 OpenEvidence 在医疗 AI 市场实现高毛利和快速增长。",
+      "explanation": "采用 7B 小模型显著降低训练和推理成本。同时，通过“给医学期刊引流”的策略，获得了强大的内容议价权，使得数据资产成本极低。"
+    },
+    {
+      "point": "AI 在解决医生长尾临床问题、辅助决策方面展现出巨大潜力。",
+      "explanation": "OpenEvidence 帮助医生快速检索和整合罕见病例信息，减少了决策成本，提升了诊疗效率和准确性，成为医生不可或缺的工具。"
+    },
+    {
+      "point": "国内医疗 AI 公司正积极探索类似路径，预示着该领域将迎来爆发。",
+      "explanation": "医联、百川智能等国内企业也在研发医疗垂直大模型，部分产品在临床安全性和有效性评测上表现优异，有望复制 OpenEvidence 的成功经验。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenEvidence 几乎已经垄断了美国 ToC 医疗 AI 市场——日均处理临床查询超 6 万次，45%的美国医生都是它的用户。",
+    "OpenEvidence 解决的正是这个痛点，他们提供的是一个专门面向医生的 AI。",
+    "OpenEvidence 给出的每一条结论，均基于至少两篇以上高等级文献的具体段落，医生可以随时溯源。",
+    "最能体现 OpenEvidence 竞争壁垒的「数据资产」，反而是各大医学期刊抢着送上门来的。"
+  ],
+  "tags": [
+    "医疗AI",
+    "OpenEvidence",
+    "大模型",
+    "垂直领域AI",
+    "应用案例"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 91,
+  "wordCount": 3284,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766036712000,
+  "publishDateStr": "2025-12-18",
+  "publishDateTimeStr": "2025-12-18 05:45:12"
+}

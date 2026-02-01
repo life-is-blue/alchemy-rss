@@ -1,0 +1,54 @@
+{
+  "id": "RAW_c183cc",
+  "title": "智谱开源 GLM-4.5 工具调用超越 Claude Opus 4.1，成本仅 1.4%",
+  "url": "https://www.qbitai.com/2025/09/328145.html",
+  "date": "2025-09-02 03:49:11",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"20\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"21\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">在对手最擅长的地方打败对手，智谱做到了。</p>\n  <p data-track=\"3\"><strong>开源</strong>模型GLM-4.5在伯克利工具使用榜单上超越Claude Opus 4.1，运行相同任务成本仅为1.4%。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"智谱开源GLM-4.5工具调用超越Claude Opus 4.1，成本仅1.4%\" src=\"https://image.jido.dev/20250902050808_8932be6567eaeccaff68735803dc236a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"669\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">抢在GPT-5之前发布的融合大模型GLM-4.5，以其在<strong>前端开发</strong>、<strong>跨文件修改</strong>、<strong>全栈项目构建</strong>等场景中的卓越表现受到不少关注。</p>\n  <p data-track=\"5\">现在，GLM-4.5的编程能力也已经接近Claude 4。</p>\n  <p data-track=\"7\">GLM-4.5采用MoE架构，为评估Agentic Coding能力，团队构建了CC-Bench评测体系。</p>\n  <p data-track=\"8\">通过在覆盖六大开发领域、52个实际编程任务中对比GLM-4.5与Claude Sonnet 4、DeepSeek-V3.1、Kimi-K2和 Qwen3-Coder-480B，可以看出GLM-4.5在与顶尖开源模型对比时表现强劲，尤其在任务完成效果和工具调用可靠性方面。</p>\n  <p data-track=\"9\">在与Claude Sonnet 4的直接竞争中可以发现，GLM-4.5在编码性能方面接近行业标杆Claude Sonnet 4。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"智谱开源GLM-4.5工具调用超越Claude Opus 4.1，成本仅1.4%\" src=\"https://image.jido.dev/20250902050808_6e35ff7c6b4f011609408fc980f95a60.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"535\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">并且，艾伦人工智能研究所研究科学家Tim Dettmers体验后表示：开源的GLM-4.5在推理速度上和闭源模型一样好，甚至比Opus 4.1快3倍、比GPT-5快5倍。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"智谱开源GLM-4.5工具调用超越Claude Opus 4.1，成本仅1.4%\" src=\"https://image.jido.dev/20250902050807_1efb5c2842a664dda4588a2b452126e3.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"455\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">甚至有反馈称，在涵盖多语言、多种函数调用测试的大模型能力权威榜单<strong>伯克利工具调用排行榜</strong>中，GLM-4.5已经超越Claude 4、Grok-4等。</p>\n  <p data-track=\"12\">再细看榜单还可以发现，GLM-4.5花费的成本还是最低的。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"智谱开源GLM-4.5工具调用超越Claude Opus 4.1，成本仅1.4%\" src=\"https://image.jido.dev/20250902050814_d42e95eceddbcf4d4f56f3374ca3260c.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"669\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">说到花费，值得提一嘴的是，智谱还推出了高性价比的Claude Code套餐，价格仅为Claude的1/7，适用于GLM-4.5以及GLM-4.5-Air。</p>\n  <p data-track=\"14\">Claude Code是Anthropic推出的开源工具，简单来说就是Claude Code CLI与各类AI模型供应商之间的智能中介，将不同模型接入Claude Code后，就可以根据任务需求选用不同成本的模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"智谱开源GLM-4.5工具调用超越Claude Opus 4.1，成本仅1.4%\" src=\"https://image.jido.dev/20250902050810_2d758958fe0c2a8a3c1664ce5f9c1adf.png\" data-ic=\"false\" data-width=\"912\" data-height=\"1280\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">不止Claude Code，团队称未来还将拓展到更多Coding工具。</p>\n  <p data-track=\"16\">目前，GLM-4.5已接入包括Claude Code、Cline、Gemini CLI、Grok CLI、CodeGeeX、Kilo Code、Roo Code、Trae在内的多款主流编程工具，全面支持日常开发流程。</p>\n  <p data-track=\"17\">所以，被Claude价格门槛劝退的你，会不会尝试一下GLM-4.5呢？</p>\n  <p data-track=\"18\">参考链接：\n   <br>\n   [1]https://x.com/alxfazio/status/1962399641376354724\n   <br>\n   [2]https://x.com/Zai_org/status/1962522757536887205\n   <br>\n   [3]https://x.com/KhaledAlwaleed/status/1962545997373919740</p>\n  <p data-track=\"19\">— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "智谱开源 GLM-4.5 模型在工具调用和编程能力上超越 Claude Opus 4.1，且成本极低，支持多种开发场景和工具集成。",
+  "oneSentenceSummary": "智谱开源 GLM-4.5 模型在工具调用和编程能力上超越 Claude Opus 4.1，且成本极低，支持多种开发场景和工具集成。",
+  "summary": "文章详细介绍了智谱 AI 最新开源的 GLM-4.5 模型，该模型基于 MoE 架构，在伯克利工具调用榜单上表现出色，超越了 Claude Opus 4.1，并且运行相同任务的成本仅为后者的 1.4%。GLM-4.5 在前端开发、跨文件修改和全栈项目构建等 Agentic Coding 场景中展现了卓越能力，其编程性能已接近 Claude Sonnet 4。此外，文章还强调 GLM-4.5 在推理速度上远超竞品，并已广泛接入 Claude Code、Cline、CodeGeeX 等主流编程工具，为开发者提供了高性能、低成本且灵活的 AI 开发解决方案。",
+  "mainPoints": [
+    {
+      "point": "GLM-4.5 在伯克利工具调用榜单上超越 Claude Opus 4.1，且成本仅为 1.4%。",
+      "explanation": "这表明 GLM-4.5 在处理复杂任务和外部工具集成方面具有领先能力，同时为开发者提供了极具竞争力的成本优势，降低了 AI 应用开发的门槛。"
+    },
+    {
+      "point": "GLM-4.5 的编程能力接近 Claude Sonnet 4，并在多领域表现卓越。",
+      "explanation": "通过 CC-Bench 评测体系，GLM-4.5 在前端、跨文件修改和全栈项目构建等实际开发场景中展现出强大实力，验证了其 Agentic Coding 能力，可有效辅助开发者。"
+    },
+    {
+      "point": "GLM-4.5 采用 MoE 架构，推理速度远超竞品，并广泛支持主流编程工具。",
+      "explanation": "MoE 架构提升了模型效率，其更快的推理速度（比 Opus 4.1 快 3 倍，比 GPT-5 快 5 倍）和对多种编程工具的兼容性，为开发者提供了高效且灵活的开发体验。"
+    }
+  ],
+  "keyQuotes": [
+    "开源模型 GLM-4.5 在伯克利工具使用榜单上超越 Claude Opus 4.1，运行相同任务成本仅为 1.4%。",
+    "抢在 GPT-5 之前发布的融合大模型 GLM-4.5，以其在前端开发、跨文件修改、全栈项目构建等场景中的卓越表现受到不少关注。",
+    "开源的 GLM-4.5 在推理速度上和闭源模型一样好，甚至比 Opus 4.1 快 3 倍、比 GPT-5 快 5 倍。",
+    "GLM-4.5 已接入包括 Claude Code、Cline、Gemini CLI、Grok CLI、CodeGeeX、Kilo Code、Roo Code、Trae 在内的多款主流编程工具，全面支持日常开发流程。"
+  ],
+  "tags": [
+    "大语言模型",
+    "智谱AI",
+    "GLM-4.5",
+    "工具调用",
+    "开源模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 892,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756784951000,
+  "publishDateStr": "2025-09-02",
+  "publishDateTimeStr": "2025-09-02 03:49:11"
+}

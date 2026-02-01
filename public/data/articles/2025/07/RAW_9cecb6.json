@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9cecb6",
+  "title": "百元级硬件流畅运行百亿参数大模型！上交&本智激活开源端侧原生大模型",
+  "url": "https://www.qbitai.com/2025/07/313482.html",
+  "date": "2025-07-27 09:09:53",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"64\">允中 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"65\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">AI的下一个战场，不在云端，而在你的口袋里。</p>\n  <p data-track=\"3\">iPhone、华为、三星、小米、OPPO等各大手机厂商几乎都在将大模型塞进手机，端侧AI已然成为兵家必争之地。</p>\n  <p data-track=\"4\">背后的逻辑清晰而坚定：最懂你的AI，必须能安全地访问你的个人数据——邮件、照片、日程，而这一切的前提，就是<strong>将计算留在本地，将隐私还给用户</strong>。</p>\n  <p data-track=\"5\">然而，想让AI在本地流畅运行，远比想象的要难得多。最好的证据，莫过于财力雄厚、软硬一体的苹果，其雄心勃勃的Apple Intelligence计划也未能如期而至，核心AI功能不得不推迟到明年。</p>\n  <p data-track=\"6\">这无疑向整个行业释放了一个清晰的信号：<strong>端侧AI，是一块难啃的硬骨头</strong>。</p>\n  <p data-track=\"7\">正当全球科技巨头在端侧AI的道路上艰难探索时，一股产学研深度融合的新兴力量，给出了独有的解决路线。</p>\n  <p data-track=\"8\">今天，<strong>上海交通大学IPADS研究所、上海交通大学人工智能学院</strong>联合初创公司<strong>本智激活</strong>（Zenergize AI），在HuggingFace开源了<strong>端侧原生大模型SmallThinker</strong>。</p>\n  <p data-track=\"9\">该系列模型采用<strong>为端侧算力、内存、存储特性而原生设计的模型架构，并从零开始预训练</strong>，具体包含两个尺寸的稀疏模型，分别是SmallThinker-4B-A0.6B和SmallThinker-21B-A3B，模型也已开源，链接如下。</p>\n  <ul>\n   <li data-track=\"10\">https://huggingface.co/PowerInfer/SmallThinker-21BA3B-Instruct</li>\n   <li data-track=\"11\">https://huggingface.co/PowerInfer/SmallThinker-4BA0.6B-Instruct</li>\n  </ul>\n  <p data-track=\"12\">其显著特征，就是<strong>用端侧CPU即可快速推理，不再依赖高端GPU</strong>。<br class=\"sysbr\">\n    其中，4B模型在1GB峰值内存下的推理速度达到惊人的<strong>19.41&nbsp;</strong><strong>tokens/s。</strong></p>\n  <p data-track=\"13\">而更令人瞩目的是，21B旗舰稀疏模型，在一块百元级的国产RK3588开发板上，实现了相较于同等能力的主流模型（Qwen-14B）<strong>高达21倍的推理加速</strong>，将同类解决方案远远甩在身后。</p>\n  <p data-track=\"15\">主流大模型，从出生起就是为云端成千上万TOPS算力、TB级显存的GPU集群“量身定制”的。想把它们塞进算力、内存等都不到云端5%的端侧设备，传统方法只有“压缩”。</p>\n  <p data-track=\"16\">这就好比让一个“博士生”模型，通过蒸馏、量化等手段，强行“降智”，最终变成一个只会简单问答的“小学生”，牺牲了太多智能。</p>\n  <p data-track=\"17\">是否存在一种不做“模型降智”，而是一步到位的选择？</p>\n  <p data-track=\"18\">为了实现这一目标，SmallThinker系列针对端侧的弱算力、小内存、慢存储，设计了创新的大模型架构，并从零开始预训练，实现了与端侧硬件的“精巧匹配”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"百元级硬件流畅运行百亿参数大模型！上交&amp;本智激活开源端侧原生大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f816eb95-ae87-459c-aa86-19c62ab5a300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f816eb95-ae87-459c-aa86-19c62ab5a300/public\">\n  </div>\n  <p data-track=\"19\">具体来说，这一端侧原生的大模型架构主要拥有三大核心技术特性：</p>\n  <p data-track=\"20\"><strong>第一，端侧算力原生的双层稀疏架构，稀疏度提升5倍。</strong></p>\n  <p data-track=\"21\">传统的MoE<em>（混合专家模型）</em>只在专家层面是稀疏的。而SmallThinker在此基础上，<strong>增加了专家内部的神经元稀疏</strong>。</p>\n  <p data-track=\"22\">这就好比，模型不仅能精准调用最相关的专家知识，还能只激活专家知识库里最核心的部分，避免“复述全部所学”，对端侧算力的要求大大降低。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"百元级硬件流畅运行百亿参数大模型！上交&amp;本智激活开源端侧原生大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1dd986d9-47bb-4764-aef4-fc4c052f6000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1dd986d9-47bb-4764-aef4-fc4c052f6000/public\">\n  </div>\n  <p data-track=\"23\"><strong>第二，端侧存储原生的专家路由前置，显著隐藏IO开销。</strong></p>\n  <p data-track=\"24\">在内存资源受限的端侧，通常模型权重不能完全放置在内存里，需要在推理过程中动态从慢速存储（比如SSD、UFS等）加载模型专家权重，而在这个过程中，端侧的慢速I/O会严重影响推理速度。</p>\n  <p data-track=\"25\">传统方案是算完注意力，再计算路由，最后排队等待加载专家。</p>\n  <p data-track=\"26\">而SmallThinker在模型架构中就原生提供了机制，帮助<strong>预判需要哪个专家，在进行注意力计算的同时，就去异步加载专家</strong>。</p>\n  <p data-track=\"27\">做到了“边检查边传唤”，将I/O等待时间隐藏在注意力计算的过程中。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"百元级硬件流畅运行百亿参数大模型！上交&amp;本智激活开源端侧原生大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c0a05dc-9251-4000-9dbe-4e4d65f5e600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c0a05dc-9251-4000-9dbe-4e4d65f5e600/public\">\n  </div>\n  <p data-track=\"28\"><strong>第三，端侧内存原生的混合稀疏注意力，KV缓存占用下降76%。</strong></p>\n  <p data-track=\"29\">针对长文本场景，SmallThinker设计了“略读”+“精读”的混合注意力机制。它<strong>使用滑动窗口注意力（Sliding Window）进行高效的“略读”，同时保留全局注意力的能力进行“精读”</strong>。</p>\n  <p data-track=\"30\">两种方式组合，在处理16K文本时，相比传统GQA机制，KV缓存占用<strong>降低76%</strong>，让端侧设备也能轻松处理长文档</p>\n  <div class=\"pgc-img\">\n   <img alt=\"百元级硬件流畅运行百亿参数大模型！上交&amp;本智激活开源端侧原生大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e74428d-5668-4f89-b484-44648078da00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e74428d-5668-4f89-b484-44648078da00/public\">\n  </div>\n  <p data-track=\"32\">一个真正优秀的开源模型，不仅自身要强大，更要拥抱广阔的开放生态。<br class=\"sysbr\"><strong>SmallThinker模型系列在设计上充分考虑了开发者的使用习惯，能够无缝兼容HuggingFace Transformers、vLLM、SGLang、llama.cpp、KTransformers等一系列主流推理框架</strong>。</p>\n  <p data-track=\"33\">在硬件适配上，它实现了对<strong>英特尔、英伟达、高通</strong>等主流芯片，<strong>甚至已经可以在国产鸿蒙操作系统上进行推理</strong>。这种开箱即用的灵活性，极大地降低了开发者的使用门槛。</p>\n  <p data-track=\"34\">而要体验SmallThinker最极致的端侧加速与内存优化效果，则需要使用团队为其量身打造的端侧原生Infra——PowerInfer（https://github.com/SJTU-IPADS/PowerInfer/blob/main/smallthinker/README.md）。</p>\n  <p data-track=\"35\">PowerInfer是团队于2023年12月开源的业界首个稀疏大模型端侧推理框架，发布后迅速获得全球开发者的高度关注，目前GitHub星标已达8.2K，并曾连续两天蝉联GitHub全球项目趋势榜第一。</p>\n  <p data-track=\"36\">它能够深度激活SmallThinker原创的双层稀疏架构，在推理时只调用必要的专家及神经元，并能在不影响推理速度的情况下降低内存占用。</p>\n  <p data-track=\"37\">它就像是为SmallThinker这台“F1赛车”专门打造的引擎，为开发者提供了一套从模型到部署、真正完整的全栈优化解决方案。</p>\n  <p data-track=\"39\">理论再好，也要看疗效。SmallThinker团队交出的，是一份模型能力与端侧推理性能兼备的答卷。</p>\n  <p data-track=\"40\">为了真正实现“端侧原生”，团队<strong>从零开始预训练</strong>，基于高质量数据语料，训练了两种规模的模型：</p>\n  <ul>\n   <li data-track=\"41\"><strong>SmallThinker-4B-A0.6B</strong>：基于<strong>2.5T Tokens</strong>数据预训练，拥有40亿参数，激活6亿参数，<strong>主打极速响应</strong>。</li>\n   <li data-track=\"42\"><strong>SmallThinker-21B-A3B</strong>：基于<strong>7.5T Tokens</strong>数据预训练，拥有210亿参数，激活30亿参数，<strong>主打旗舰性能</strong>。它能够在百元级RK3588上流畅部署，全内存情况下的CPU推理速度也能达到10.84 tokens/s。</li>\n  </ul>\n  <p data-track=\"43\">口说无凭，评测见真章。</p>\n  <p data-track=\"44\">在MMLU、GPQA等多个权威评测基准上，SmallThinker的智力水平均超越了同尺寸甚至更大尺寸的开源模型，充分证明了其“原生”架构设计的优越性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"百元级硬件流畅运行百亿参数大模型！上交&amp;本智激活开源端侧原生大模型\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cabdff20-ca6c-457b-5e8d-0ad09b7a7200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cabdff20-ca6c-457b-5e8d-0ad09b7a7200/public\">\n  </div>\n  <p data-track=\"45\">而在更关键的实际运行性能上，当SmallThinker与PowerInfer结合时，其在内存约束场景下的优势尽显。团队在旗舰移动平台和个人电脑PC上，对业界主流模型进行了正面硬刚。</p>\n  <p data-track=\"47\">在主流手机上，SmallThinker-4B-A0.6B模型的Q4量化版本，在<strong>仅调用4个CPU核心</strong>的情况下，推理速度便高达<strong>79 tokens/s</strong>。</p>\n  <p data-track=\"48\">而在对模型架构与推理框架构成终极考验的<strong>极限内存瓶颈（1GB）场景下，SmallThinker的优势则体现得淋漓尽致</strong>；<strong>4B模型依然跑出了19.91 tokens/s</strong>的流畅速度。</p>\n  <p data-track=\"49\">作为对比，Qwen3-1.7B模型速度仅为1.07 tokens/s，几乎无法正常使用。</p>\n  <p data-track=\"50\">近19倍的性能差距，充分证明了SmallThinker在极端资源受限环境下的卓越运行能力。这不仅是一次技术的胜利，更是将高端AI平民化的关键一步。</p>\n  <p data-track=\"52\">当内存放宽到旗舰PC的8GB时，SmallThinker的架构优势依然显著。</p>\n  <p data-track=\"53\">SmallThinker-21B-A3B的4核CPU（Intel i9 14990K）推理速度达到<strong>20.30 tokens/s</strong>，而<strong>Qwen3-30B-A3B</strong>的4核CPU速度为&nbsp;<strong>10.11 tokens/s</strong>，加速比达到2倍。</p>\n  <p data-track=\"55\">在这训练过程中，团队发现；即使在如此庞大的数据投喂之后，<strong>模型的loss曲线仍在稳步下降，仍未达到饱和</strong>。</p>\n  <p data-track=\"56\">未来，团队会围绕两条路线演进。</p>\n  <p data-track=\"57\"><strong>第一条路线，继续Scaling：更大更强。</strong></p>\n  <p data-track=\"58\">既然模型尚未“吃饱”，那么最直接的路径就是——继续投喂。</p>\n  <p data-track=\"59\">团队的下一步计划，将继续遵循被验证有效的Scaling Law，利用更多的高质量Tokens进行进一步训练。进一步压榨模型潜力，在知识储备、逻辑推理和代码生成等核心能力上，将SmallThinker推向新的高度，打造出更强大的端侧基础模型。</p>\n  <p data-track=\"60\"><strong>第二条路线，打造“个人贾维斯”：从模型到可信赖的智能体。</strong></p>\n  <p data-track=\"61\">如果说Scaling Law是让模型变得更“博学”，那么团队的终极野心，则是打造一个真正属于每个人的“贾维斯式”智能体。</p>\n  <p data-track=\"62\">这个智能体的独特之处在于，它完全运行在你的个人设备上，能够安全、完整地理解你的全部数字生命——从邮件、日程，到聊天记录和相册。正是在这片独一无二的私有数据土壤之上，才能生长出“千人千面”、真正懂你的可信赖AI。</p>\n  <p data-track=\"63\">相信未来，随着端侧原生AI能力的不断进步，未来的AI能力就会像今天的水和空气一样，主动融入我们每个人的日常工作和生活，提供安全私密、成本低廉、充满智慧的AI体验。</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章介绍了上交大和本智激活开源的端侧原生大模型 SmallThinker，通过创新架构实现在百元级硬件上百亿参数模型的流畅运行，显著提升了端侧 AI 性能。",
+  "oneSentenceSummary": "文章介绍了上交大和本智激活开源的端侧原生大模型 SmallThinker，通过创新架构实现在百元级硬件上百亿参数模型的流畅运行，显著提升了端侧 AI 性能。",
+  "summary": "文章深入探讨了上海交通大学 IPADS 研究所与初创公司本智激活联合开源的 SmallThinker 端侧原生大模型系列。针对当前端侧 AI 面临的算力、内存和存储瓶颈，SmallThinker 采用从零开始预训练的创新模型架构，旨在实现与端侧硬件的“精巧匹配”，而非传统模型的简单“压缩降智”。其核心技术特性包括：端侧算力原生的双层稀疏架构（提升 5 倍稀疏度）、端侧存储原生的专家路由前置（隐藏 I/O 开销），以及端侧内存原生的混合稀疏注意力（KV 缓存占用下降 76%）。文章通过具体的性能数据（如 4B 模型在 1GB 内存下 19.41 tokens/s，21B 模型在百元级 RK3588 开发板上实现 21 倍推理加速）和 MMLU、GPQA 等权威评测基准，充分证明了 SmallThinker 在模型能力和端侧推理性能上的卓越表现。此外，SmallThinker 系列模型兼容 HuggingFace Transformers 等主流推理框架，并与团队开发的 PowerInfer 端侧推理框架结合，可实现极致的端侧加速与内存优化。文章展望了 SmallThinker 在模型规模扩展和打造“个人贾维斯”式可信赖智能体方面的未来发展。",
+  "mainPoints": [
+    {
+      "point": "SmallThinker 采用端侧原生架构，从零预训练以适配弱算力设备。",
+      "explanation": "区别于传统模型压缩，SmallThinker 针对端侧资源限制设计了创新架构并从头训练，实现与硬件的精巧匹配，避免“模型降智”，确保在低成本设备上也能高效运行。"
+    },
+    {
+      "point": "引入双层稀疏、专家路由前置和混合稀疏注意力等核心技术。",
+      "explanation": "这些技术分别提升了模型稀疏度、隐藏了慢速 I/O 开销并大幅降低了 KV 缓存占用，是 SmallThinker 实现高推理速度和低内存占用的关键创新点。"
+    },
+    {
+      "point": "在百元级硬件和主流移动设备上实现显著性能提升。",
+      "explanation": "SmallThinker 在 RK3588 开发板上比同等能力模型加速 21 倍，并在手机 CPU 上实现 79 tokens/s 的推理速度，证明了其在极限资源受限环境下的卓越实用价值。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 的下一个战场，不在云端，而在你的口袋里。",
+    "端侧 AI，是一块难啃的硬骨头。",
+    "SmallThinker 系列采用为端侧算力、内存、存储特性而原生设计的模型架构，并从零开始预训练。",
+    "一个真正优秀的开源模型，不仅自身要强大，更要拥抱广阔的开放生态。",
+    "这不仅是一次技术的胜利，更是将高端 AI 平民化的关键一步。"
+  ],
+  "tags": [
+    "端侧AI",
+    "大语言模型",
+    "模型架构",
+    "稀疏模型",
+    "模型推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 92,
+  "wordCount": 3470,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753607393000,
+  "publishDateStr": "2025-07-27",
+  "publishDateTimeStr": "2025-07-27 09:09:53"
+}

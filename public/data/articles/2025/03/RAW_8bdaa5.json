@@ -1,0 +1,57 @@
+{
+  "id": "RAW_8bdaa5",
+  "title": "Gemini API：先进的文本嵌入技术",
+  "url": "https://developers.googleblog.com/en/gemini-embedding-text-model-now-available-gemini-api/",
+  "date": "2025-03-07 00:00:00",
+  "author": "Logan Kilpatrick, Zach Gleicher, Parashar Shah",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini-Generic-alt2.original.png\" alt=\"Gemini API embedding text model\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"ad5x6\"><sub>[Image created by Google with Gemini 2.0 Flash native image generation]</sub></p>\n    <p data-block-key=\"laee\"><br>\n      Today, we’re making a new experimental Gemini Embedding text model (gemini-embedding-exp-03-07)<sup>1</sup> available in the Gemini API.</p>\n    <p data-block-key=\"135cg\">Trained on the Gemini model itself, this embedding model has inherited Gemini’s understanding of language and nuanced context making it applicable for a wide range of uses. This new embedding model surpasses our previous state-of-the-art model (<a href=\"https://ai.google.dev/gemini-api/docs/models/gemini#text-embedding\"><i>text-embedding-004</i></a>), achieves the top rank on the Massive Text Embedding Benchmark (MTEB) Multilingual leaderboard, and comes with new features like longer input token length!</p>\n    <h2 data-block-key=\"3mnb2\"><b><br></b>Our most capable text embedding model yet</h2>\n    <p data-block-key=\"861cp\">We've trained our model to be remarkably general, delivering exceptional performance across diverse domains, including finance, science, legal, search, and more. It works effectively out-of-the-box, eliminating the need for extensive fine-tuning for specific tasks.</p>\n    <p data-block-key=\"dbfoh\">The MTEB (Multilingual) leaderboard ranks text embedding models across diverse tasks such as retrieval and classification to provide a comprehensive benchmark for model comparison. Our Gemini Embedding model achieves a mean (task) score of 68.32–a margin of +5.81 over the next competing model.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_embedding_blog_post_-_benchmark_table.original.png\" alt=\"MTEB Leaderboard text model performance ranking\">\n     <div class=\"regular-image-description\">\n      Our new Gemini text embedding model (gemini-embedding-exp-03-07) achieves high scores on the MTEB (Multilingual) leaderboard (right click to open image in new tab).\n     </div>\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"ad5x6\">Why embeddings?</h2>\n    <p data-block-key=\"8g1em\">From building intelligent retrieval augmented generation (RAG) and recommendation systems to text classification, the ability for LLMs to understand the meaning behind text is crucial. Embeddings are often critical for building more efficient systems, reducing cost and latency while also generally providing better results than keyword matching systems. Embeddings capture semantic meaning and context through numerical representations of data. Data with similar semantic meaning have embeddings that are closer together. Embeddings enable a wide range of applications, including:</p>\n    <p data-block-key=\"481db\"></p>\n    <ul>\n     <li data-block-key=\"b97o1\"><b>Efficient Retrieval:</b> Find relevant documents within large databases, like legal document retrieval or enterprise search, by comparing the embeddings of queries and documents.</li>\n    </ul>\n    <p data-block-key=\"anr6o\"></p>\n    <ul>\n     <li data-block-key=\"5idl4\"><b>Retrieval-Augmented Generation (RAG):</b> Enhance the quality and relevance of generated text by retrieving and incorporating contextually relevant information into the context of a model.</li>\n    </ul>\n    <p data-block-key=\"5f0cf\"></p>\n    <ul>\n     <li data-block-key=\"fovjm\"><b>Clustering and Categorization:</b> Group similar texts together, identifying trends and topics within your data.</li>\n    </ul>\n    <p data-block-key=\"e3pu0\"></p>\n    <ul>\n     <li data-block-key=\"c2leq\"><b>Classification:</b> Automatically categorize text based on its content, such as sentiment analysis or spam detection.</li>\n    </ul>\n    <p data-block-key=\"b98cu\"></p>\n    <ul>\n     <li data-block-key=\"e1035\"><b>Text Similarity:</b> Identify duplicate content, enabling tasks like web page deduplication or plagiarism detection.</li>\n    </ul>\n    <p data-block-key=\"2ufk8\"></p>\n    <p data-block-key=\"4cve2\">You can learn more about embeddings and common AI use cases in the <a href=\"https://ai.google.dev/gemini-api/docs/embeddings\">Gemini API docs</a>.</p>\n    <h2 data-block-key=\"aa0k7\"><b><br></b>Get started with Gemini Embedding</h2>\n    <p data-block-key=\"aklj1\">Developers can now access our new, experimental Gemini Embeddings model through the Gemini API. It’s compatible with the existing <code>embed_content</code> endpoint.</p>\n   </div>\n   <div class=\"inner-block-content code-block\">\n    <div class=\"highlight\">\n     <pre class=\"python\"><span></span><span class=\"kn\">from</span> <span class=\"nn\">google</span> <span class=\"kn\">import</span> <span class=\"n\">genai</span>\n\n<span class=\"n\">client</span> <span class=\"o\">=</span> <span class=\"n\">genai</span><span class=\"o\">.</span><span class=\"n\">Client</span><span class=\"p\">(</span><span class=\"n\">api_key</span><span class=\"o\">=</span><span class=\"s2\">\"GEMINI_API_KEY\"</span><span class=\"p\">)</span>\n\n<span class=\"n\">result</span> <span class=\"o\">=</span> <span class=\"n\">client</span><span class=\"o\">.</span><span class=\"n\">models</span><span class=\"o\">.</span><span class=\"n\">embed_content</span><span class=\"p\">(</span>\n        <span class=\"n\">model</span><span class=\"o\">=</span><span class=\"s2\">\"gemini-embedding-exp-03-07\"</span><span class=\"p\">,</span>\n        <span class=\"n\">contents</span><span class=\"o\">=</span><span class=\"s2\">\"How does alphafold work?\"</span><span class=\"p\">,</span>\n<span class=\"p\">)</span>\n\n<span class=\"nb\">print</span><span class=\"p\">(</span><span class=\"n\">result</span><span class=\"o\">.</span><span class=\"n\">embeddings</span><span class=\"p\">)</span>\n</pre>\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"ad5x6\">In addition to improved quality across all dimensions, Gemini Embedding also features:</p>\n    <p data-block-key=\"4b6el\"></p>\n    <ul>\n     <li data-block-key=\"24q2p\"><b>Input token limit of 8K tokens.</b> We’ve improved our context length from previous models allowing you to embed large chunks of text, code, or other data.</li>\n    </ul>\n    <p data-block-key=\"86o3c\"></p>\n    <ul>\n     <li data-block-key=\"f6nlr\"><b>Output dimensions of 3K dimensions.</b> High-dimensional embeddings with almost 4x more tokens over previous embedding models.</li>\n    </ul>\n    <p data-block-key=\"96m20\"></p>\n    <ul>\n     <li data-block-key=\"jlbf\"><b>Matryoshka Representation Learning (MRL):</b> MRL allows you to truncate the original 3K dimensions to scale down to meet your desired storage cost.</li>\n    </ul>\n    <p data-block-key=\"7j26q\"></p>\n    <ul>\n     <li data-block-key=\"cnduc\"><b>Expanded language support.</b> We’ve doubled the number of languages supported to over 100.</li>\n    </ul>\n    <p data-block-key=\"71l8j\"></p>\n    <ul>\n     <li data-block-key=\"7ovef\"><b>Unified model.</b> This model surpasses the quality of our previous task-specific multilingual, english-only, and code specific models.</li>\n    </ul>\n    <p data-block-key=\"4h0ro\"><br>\n      While currently in an experimental phase with limited capacity, this release gives you an early opportunity to explore Gemini Embedding capabilities. As with all experimental models, it's subject to change, and we're working towards a stable, generally available release in the months to come. We’d love to hear your feedback on the <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSeuFskna8EhdtxG3sQxkGhHAHXt2piRAZUtmSebpqxNV4tmwQ/viewform\">embeddings feedback form</a>.</p>\n    <p data-block-key=\"2rgce\"><br></p>\n    <hr>\n    <p data-block-key=\"dt81v\"><sup>1</sup><sub> On Vertex AI, the same model is served through the endpoint “</sub><a href=\"https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings#supported-models\"><sub>text-embedding-large-exp-03-07</sub></a><sub>.” For general availability, naming will be consistent.</sub></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 通过 Gemini API 发布实验性 Gemini 文本嵌入模型，凭借增强的语义理解能力在 MTEB 多语言排行榜上表现出色，是 RAG 应用的理想之选。",
+  "oneSentenceSummary": "Google 通过 Gemini API 发布实验性 Gemini 文本嵌入模型，凭借增强的语义理解能力在 MTEB 多语言排行榜上表现出色，是 RAG 应用的理想之选。",
+  "summary": "Google 通过 Gemini API 推出了新的实验性 Gemini 文本嵌入模型 (gemini-embedding-exp-03-07)，旨在显著提升文本嵌入的质量与效率。该模型基于 Gemini 模型进行训练，使其在语言理解和细致语境分析方面表现出色，适用于各种应用场景。该模型在 MTEB 多语言排行榜上领先，优于之前的 text-embedding-004 模型，并支持更长的输入 token 长度。它在金融、科学和法律领域表现良好，无需进行大量的微调。该模型具备 8K 的输入 token 限制、3K 的输出维度、对 100 多种语言的支持以及统一的架构，超越了以往特定于任务的模型。目前该模型尚处于实验阶段，容量有限。Google 鼓励开发者积极探索其各项功能，并提供宝贵反馈。",
+  "mainPoints": [
+    {
+      "point": "Gemini 文本嵌入模型在 MTEB 多语言排行榜上领先",
+      "explanation": "该模型在检索、分类等多种任务中表现优异，在 MTEB 多语言排行榜上获得平均任务得分 68.32，领先第二名 5.81 分。"
+    },
+    {
+      "point": "Gemini 文本嵌入模型具有更长的输入 token 长度和更高的输出维度",
+      "explanation": "该模型具备 8K 输入 token 限制和 3K 输出维度，约为以往嵌入模型的 4 倍，能够处理更大规模的文本、代码等数据。"
+    },
+    {
+      "point": "Gemini 文本嵌入模型支持 Matryoshka Representation Learning (MRL)",
+      "explanation": "MRL 技术允许用户截断原始的 3K 维度，进而降低存储成本，并根据实际需求提供灵活调整空间。"
+    },
+    {
+      "point": "Gemini 文本嵌入模型是一种统一的模型，超越了以往特定于任务的模型",
+      "explanation": "该模型的质量优于 Google 以前的特定于任务的多语言、仅英语和特定于代码的模型，从而提供了更通用的解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "该嵌入模型基于 Gemini 模型训练而成，承袭了 Gemini 对语言和细致语境的深刻理解，因此可广泛应用于各种场景。",
+    "Gemini 文本嵌入模型取得了平均任务得分 68.32，领先于下一个竞争模型 5.81 分。",
+    "MRL 技术允许用户截断原始的 3K 维度，进而降低存储成本。"
+  ],
+  "tags": [
+    "文本嵌入",
+    "embedding",
+    "Gemini API",
+    "MTEB",
+    "多语言"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 93,
+  "wordCount": 604,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741305600000,
+  "publishDateStr": "2025-03-07",
+  "publishDateTimeStr": "2025-03-07 00:00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3837d4",
+  "title": "83.9%精准度，专家级 AI 模型 Eye2Gene 实现遗传性眼病基因诊断 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-27-6",
+  "date": "2025-06-27 06:18:07",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <hr>\n  <section>\n   <img data-backh=\"271\" data-backw=\"578\" data-imgfileid=\"100024265\" data-ratio=\"0.46889226100151743\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/743a5a20-dafe-46fa-bac0-f9a1dd115000/public\" data-type=\"png\" data-w=\"659\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/3776c54f-47db-4ffb-aa31-b71529740e29/640.png\" data-sec-load-status=\"2\" data-report-img-idx=\"1\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p data-pm-slice=\"0 0 []\">编辑丨%</p>\n  <p>遗传性视网膜疾病（IRDs），通常表现为单基因疾病，是全球儿童和工人失明的主要原因，在医疗监测中仍难以及时识别。根据英国的研究，约 40% 的病例中难以实现对此类遗传病的诊断，低普及地区这个比例会更大。</p>\n  <p>揭示遗传性视网膜疾病（IRD）的遗传原因是实现最佳预后评估、提供遗传咨询并将其纳入基因导向临床试验的前提。</p>\n  <p>为此，英国 Moorfields 眼科医院联合伦敦大学学院开发了&nbsp;Eye2Gene&nbsp;深度学习模型，其支持基因诊断的前五项准确率高达 83.9%，对于最常见的 63 种遗传原因表现出了专家级的诊断水平。</p>\n  <p>该研究以「<em>Next-generation phenotyping of inherited retinal diseases from multimodal imaging with Eye2Gene</em>」为题，于 2025 年 6 月 18 日刊登于《<em>Nature Machine Intelligence</em>》。</p>\n  <section>\n   <img src=\"https://image.jiqizhixin.com/uploads/editor/e55f0e1b-b852-4b10-960c-077890c108f1/1751005027741.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\">\n  </section>\n  <p>论文链接：https://www.nature.com/articles/s42256-025-01040-8</p>\n  <p><strong>Eye2Gene：多模态影像驱动的基因诊断</strong></p>\n  <p>IRDs 通常具有独特的表型特征，临床医生借助现代高分辨率视网膜成像技术能够快速、无创地获取视网膜图像，对患者造成的不便也较小。</p>\n  <p>这种高分辨率的多模态成像虽然有助于精准识别疾病模式，但由于这些疾病的稀有性，能够进行准确临床诊断的经验并不广泛普及，仅限于少数几位专家和诊所。倘若利用 AI 系统来检测多模态扫描，可以更广泛地利用这些专长。</p>\n  <p>深度学习模型 Eye2Gene 的数据来自于英国 Moorfields 眼科医院 (MEH)，能够根据使用三种成像模态（荧光素血管造影&nbsp;FAF、红外 IR 和光学相干断层扫描 SD-OCT）获取的视网膜扫描图像，预测导致 IRD 的致病基因。</p>\n  <section>\n   <img src=\"https://image.jiqizhixin.com/uploads/editor/34749131-e8aa-4bf9-a604-0bbc61d10058/1751005046498.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\">\n  </section>\n  <p>图 1: Eye2Gene 模型。</p>\n  <p>Eye2Gene 是由 15 个&nbsp;CoAtNet&nbsp;深度卷积神经网络组成的集成模型，它接受给定患者三种不同成像模态中的一张或多张视网膜扫描图像，并输出 63 种不同 IRD 基因的基因级预测得分。</p>\n  <p>对于上述三种模态，都训练了五个不同的 CoAtNet 深度卷积神经网络，总共产生了 15 个具有相同架构但不同网络权重的神经网络。对于每种模态，五个网络将会组合成三个特定模态的模型。Eye2Gene 便是由这三种模型组合而成。</p>\n  <p>表 1：不同 IRD 诊所测试数据的 Eye2Gene 结果概述及人口统计学特征。</p>\n  <section>\n   <img src=\"https://image.jiqizhixin.com/uploads/editor/b2838743-99da-4d1a-bb99-327cba2020ec/1751005061643.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\">\n  </section>\n  <p>为了评估 Eye2Gene，团队分别进行了 524 例患者数据的内部测试与 836 例患者的外部测试。对于 FAF、IR 和 OCT，单网络的平均前五准确率分别为 68.9%、70.8% 和 74.9%，在跨网络集成后分别提高到 71.0%、72.7% 和 77.2%。</p>\n  <p><strong>实战测试</strong></p>\n  <p>俗话说得好，发明一个工具的最终目的是投入使用。新模型的表现如何，还是需要与临床专家进行对比。研究团队邀请了八位专注于 IRDs 的眼科专家（5-15 年的经验），根据每位患者的 FAF 图像，预测导致该疾病的基因。</p>\n  <p>从历史上看，FAF 一直是用于表征 IRD 的广泛使用的成像方式，也可能是眼科专家最熟悉的方式。在这项对比任务中，专家实现了眼科专家的平均前五准确率为 29.5%，而 Eye2Gene 为 76%。</p>\n  <p>人类的表现随着经验的增加而提高，但 Eye2Gene 的表现明显优于任何单一的人类专家。</p>\n  <p>除此之外，Eye2Gene 在辅助遗传变异优先级确定中也有着不错的发挥。在超过 75%的患者中，Eye2Gene 提供的正确基因排名高于或等于 Exomiser-hiPHIVE 评分。</p>\n  <section>\n   <img src=\"https://image.jiqizhixin.com/uploads/editor/41e18c23-9a77-49c9-a3bb-ea770c98a2c3/1751005077046.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\">\n  </section>\n  <p>图 2：Eye2Gene 用于基因优先级排序。</p>\n  <p>作为下一代的表型工具， Eye2Gene 可用于识别新的基因-表型分组，还可以区分遗传性与非遗传性疾病。它可以根据具有相似表现的条件（鉴别诊断）作为筛查工具使用，提供受试者操作特征曲线下面积（AUROC）为 0.98。</p>\n  <p>Eye2Gene 在基因优先级排序方法的表现相当出色，并且优于之前发表的基于较小且不那么多样化的成像数据集训练的图像 AI 方法，在基于 FAF 图像的扫描任务重达成最低 90.8% 最高 96.3% 的准确率。</p>\n  <p>尽管 Eye2Gene 因其在在基于遗传检测的基因标签上进行训练的原因无法超越遗传检测，但该模型也意不在此。通过基于 AI 的视网膜扫描表型分析，它可以指导遗传检测的处方和解释。</p>\n  <p><strong>开源的线上模型</strong></p>\n  <p>团队表示，为了展示 Eye2Gene 如何用于辅助诊断 IRD 患者，Eye2Gene 将会被作为网络应用程序在线提供，以供研究人员使用。</p>\n  <p>迄今为止，只有四项研究尝试将 AI 应用于 IRD，所有研究的数据集规模都小于 150 名患者，并且涉及的基因数量也较少。相比之下，Eye2Gene 由于训练数据集是世界上最大的 IRD 基因型个体数据集之一，具有更广泛的应用潜力。</p>\n  <p>Eye2Gene 的预测不会取代遗传检测或在专门的视网膜疾病中心进行的咨询，更多的是提示何时更值得进行分子检测，以及指导特定的遗传检测及其解释。</p>\n  <p>线上网址链接：<em>https://app.eye2gene.com</em></p>\n  <p>代码链接：<em>https://github.com/Eye2Gene/Classification</em></p>\n </body>\n</html>",
+  "aiSummary": "Eye2Gene AI 模型实现 83.9%精准度的遗传性眼病基因诊断，性能超越临床专家并作为辅助诊断工具开源提供",
+  "oneSentenceSummary": "Eye2Gene AI 模型实现 83.9%精准度的遗传性眼病基因诊断，性能超越临床专家并作为辅助诊断工具开源提供",
+  "summary": "英国 Moorfields 眼科医院与伦敦大学学院联合开发的 Eye2Gene 深度学习模型，通过多模态视网膜成像技术（FAF、IR 和 SD-OCT）实现了对遗传性视网膜疾病（IRDs）的高精度基因诊断。该模型由 15 个 CoAtNet 深度卷积神经网络组成，在 524 例内部测试和 836 例外部测试中达到 83.9%的前五准确率，显著优于人类专家的 29.5%。Eye2Gene 不仅能辅助遗传变异优先级确定（在 75%病例中正确基因排名高于 Exomiser-hiPHIVE 评分），还可作为筛查工具区分遗传性与非遗传性疾病，AUROC 达 0.98。研究团队已将该模型开源并作为网络应用程序提供，旨在辅助而非取代传统遗传检测。",
+  "mainPoints": [
+    {
+      "point": "Eye2Gene 在遗传性眼病基因诊断中达到 83.9%前五准确率",
+      "explanation": "模型性能显著超越人类专家(29.5%)，为罕见病诊断提供了可靠 AI 解决方案"
+    },
+    {
+      "point": "多模态成像技术结合 15 个 CoAtNet 网络实现精准诊断",
+      "explanation": "整合 FAF、IR 和 SD-OCT 三种成像模态，通过 15 个网络集成提升模型对复杂表型的识别能力"
+    },
+    {
+      "point": "模型在基因优先级排序中表现优于传统方法",
+      "explanation": "在 75%病例中正确基因排名高于 Exomiser-hiPHIVE 评分，辅助遗传检测决策"
+    },
+    {
+      "point": "具备区分遗传与非遗传疾病能力(AUROC 0.98)",
+      "explanation": "作为筛查工具表现优异，可识别新的基因-表型分组"
+    },
+    {
+      "point": "开源模型促进研究应用但不取代传统检测",
+      "explanation": "作为网络应用提供，指导分子检测的处方和解释，而非替代专业诊断"
+    }
+  ],
+  "keyQuotes": [
+    "Eye2Gene 支持基因诊断的前五项准确率高达 83.9%，对于最常见的 63 种遗传原因表现出了专家级的诊断水平",
+    "人类的表现随着经验的增加而提高，但 Eye2Gene 的表现明显优于任何单一的人类专家",
+    "Eye2Gene 的预测不会取代遗传检测或在专门的视网膜疾病中心进行的咨询，更多的是提示何时更值得进行分子检测",
+    "作为下一代的表型工具，Eye2Gene 可用于识别新的基因-表型分组，还可以区分遗传性与非遗传性疾病",
+    "Eye2Gene 由于训练数据集是世界上最大的 IRD 基因型个体数据集之一，具有更广泛的应用潜力"
+  ],
+  "tags": [
+    "医疗AI",
+    "医疗诊断",
+    "深度学习",
+    "遗传性眼病",
+    "基因诊断"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1767,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751005087000,
+  "publishDateStr": "2025-06-27",
+  "publishDateTimeStr": "2025-06-27 06:18:07"
+}

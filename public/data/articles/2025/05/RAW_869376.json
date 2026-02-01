@@ -1,0 +1,57 @@
+{
+  "id": "RAW_869376",
+  "title": "时隔两月，Mistral AI 终于上新 Medium 3，近期还有「One more thing」 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-08-7",
+  "date": "2025-05-08 06:30:35",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>时隔两月，Mistral AI 终于又上新了。</p>\n  <p>「今天，我们欣喜地宣布推出 Mistral Medium 3，进一步提升语言模型的效率和可用性。」</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/64cbec24-28fe-4bc6-a06d-71f373848300/public\" alt=\"截屏2025-05-08 09.34.02.png\" data-ratio=\"0.25462962962962965\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503484462\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/9d3732bb-1d61-42bd-99b0-915cb52cb6e2/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>据官方博客介绍，Mistral Medium 3 处于一个新的性能层级，介于轻量级和大规模模型之间。该模型在关键基准测试中优于 GPT-4o 甚至 Claude 3.7 Sonnet。</p>\n  <p>只是 Mistral Medium 3 并未开源，目前可通过 Mistral 的官网和 API 或其合作伙伴的 API 使用。Mistral Medium 3 将于周三上线亚马逊云科技的 Sagemaker 平台，后续也会登陆其他主机平台，包括微软的 Azure AI Foundry 和谷歌的 Vertex AI 平台。</p>\n  <p>该模型专为企业使用而设计，其性能在基准测试中达到了 Claude 3.7 Sonnet 的 90% 以上，但成本仅为后者的 1/8 —— 输入每百万 token 仅需 0.4 美元，输出每百万 token 仅需 2 美元。相比之下，Sonnet 的输入 / 输出价格分别为 3 美元和 15 美元。</p>\n  <p>另外，Mistral AI 还预告了「One more thing」：</p>\n  <blockquote>\n   <p>随着三月份 Mistral Small 和今天 Mistral Medium 的发布，我们在接下来的几周内正在筹备一款「大型」产品，这早已不是什么秘密了。即使是我们的中型型号，其性能也远超 Llama 4 Maverick 等旗舰开源型号，我们非常期待「揭开」未来的神秘面纱 :)&nbsp;</p>\n  </blockquote>\n  <p>会是什么重磅发布？值得我们期待一下。</p>\n  <p>优于 GPT-4o 和 Claude 3.7 Sonnet 的性能</p>\n  <p>基准测试表明，Mistral Medium 3 在软件开发任务中表现出色。在 HumanEval 和 MultiPL-E 等编程测试中，它的表现与 Claude 3.7 Sonnet 和 OpenAI 的 GPT-4o 模型不相上下，甚至更胜一筹。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8e20bf8c-8b43-4c90-6ac9-4e51b32c8300/public\" alt=\"image.png\" data-ratio=\"0.7972222222222223\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503484464\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/a3843985-3781-49d4-bb40-3782d7dfe136/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>除了学术基准测试外，团队还报告了更能代表实际用例的第三方人工评测。</p>\n  <p>根据第三方的人类评估，在 82% 的编程场景中，它优于 Llama 4 Maverick，并且在近 70% 的案例中超过了 Command-A。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9077ad69-e17c-4d17-9fd6-3b37dce2b600/public\" alt=\"image.png\" data-ratio=\"0.5989847715736041\" data-type=\"png\" data-w=\"985\" data-imgfileid=\"503484465\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a3050b88-327e-49c6-8295-3bee29700ef4/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>该模型在不同语言和模态上也具有很强的竞争力。与 Llama 4 Maverick 相比，它在英语（67%）、法语（71%）、西班牙语（73%）和阿拉伯语（65%）中的胜率更高，并且在多模态性能方面表现出色，在 DocVQA（0.953）、AI2D（0.937）和 ChartQA（0.826）等任务中取得了领先的分数。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c613e375-5e36-4c1a-9d57-e95d6ef31500/public\" alt=\"image.png\" data-ratio=\"0.607103218645949\" data-type=\"png\" data-w=\"901\" data-imgfileid=\"503484466\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/5c4d59c1-5a46-4e2a-89c7-98359b47be74/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Mistral Medium 3 针对企业整合进行了优化。它支持混合部署和本地部署，提供定制化后训练，并且能够轻松连接到业务系统。据 Mistral 称，它已经在金融服务、能源和医疗保健等行业的组织中进行测试，用于支持特定领域的业务流程和面向客户的解决方案。</p>\n  <p>企业级「ChatGPT」：Le Chat Enterprise</p>\n  <p>与此同时，Mistral 还推出了 Le Chat Enterprise。</p>\n  <p>这是一款面向企业的聊天机器人服务，今年早些时候就推出了私人预览版，但今天正式全面上市。</p>\n  <p>用法如下：<a href=\"https://mp.weixin.qq.com/s/FoIGV7oBM2riljUiUWtX3A\"><img src=\"https://image.jiqizhixin.com/uploads/editor/db43c688-f728-47dc-945d-5fffb893f1e3/1746685701531.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>Le Chat Enterprise 可通过网络和移动应用程序使用，它就像 ChatGPT 的竞争对手，但它是专为企业及其员工打造的。考虑到了用户可能会跨不同的应用程序和数据源工作，它将人工智能功能整合到一个单一的、隐私优先的环境中，实现深度定制、跨职能工作流和快速部署。</p>\n  <p>Le Chat Enterprise 提供了 AI「智能体」构建器等工具，并将 Mistral 的模型与 Gmail、Google Drive 和 SharePoint 等第三方服务集成。</p>\n  <p>此外，Le Chat Enterprise 即将支持 MCP——Anthropic 为连接 AI 助手和数据所在系统及软件而制定的标准。包括谷歌和 OpenAI 在内的主要 AI 模型提供商，都已经在今年早些时候宣布将采用 MCP。</p>\n  <p>更多信息，可参考官方博客。</p>\n  <p><sup>参考链接：</sup></p>\n  <p><sup>https://mistral.ai/news/mistral-medium-3</sup></p>\n  <p><sup>https://mistral.ai/news/le-chat-enterprise</sup></p>\n </body>\n</html>",
+  "aiSummary": "Mistral AI 发布了性能优异且成本更低的 Mistral Medium 3 模型，以及对标 ChatGPT 的企业级聊天机器人 Le Chat Enterprise。",
+  "oneSentenceSummary": "Mistral AI 发布了性能优异且成本更低的 Mistral Medium 3 模型，以及对标 ChatGPT 的企业级聊天机器人 Le Chat Enterprise。",
+  "summary": "Mistral AI 发布了 Mistral Medium 3，这是一款性能介于轻量级和大规模模型之间的新模型，在关键基准测试中优于 GPT-4o 和 Claude 3.7 Sonnet，但成本更低，输入成本仅为后者的 1/8。该模型专为企业使用而设计，支持混合部署和本地部署，提供定制化后训练。同时，Mistral 还推出了企业级聊天机器人 Le Chat Enterprise，对标 ChatGPT，它将 AI 功能整合到一个单一的、隐私优先的环境中，实现深度定制、跨职能工作流和快速部署。Le Chat Enterprise 集成了 Gmail、Google Drive 和 SharePoint 等第三方服务。",
+  "mainPoints": [
+    {
+      "point": "Mistral Medium 3 在性能上优于 GPT-4o 和 Claude 3.7 Sonnet。",
+      "explanation": "基准测试表明，Mistral Medium 3 在软件开发任务中表现出色，在不同语言和模态上也具有很强的竞争力。"
+    },
+    {
+      "point": "Le Chat Enterprise 是一款面向企业的聊天机器人服务。",
+      "explanation": "Le Chat Enterprise 将 AI 功能整合到一个单一的、隐私优先的环境中，实现深度定制、跨职能工作流和快速部署。"
+    },
+    {
+      "point": "Mistral Medium 3 针对企业整合进行了优化。",
+      "explanation": "它支持混合部署和本地部署，提供定制化后训练，并且能够轻松连接到业务系统。"
+    },
+    {
+      "point": "Mistral AI 预告未来几周内将发布一款「大型」产品。",
+      "explanation": "这暗示了 Mistral AI 未来的发展方向和潜在的重磅发布，值得期待。"
+    }
+  ],
+  "keyQuotes": [
+    "今天，我们欣喜地宣布推出 Mistral Medium 3，进一步提升语言模型的效率和可用性。",
+    "即使是我们的中型型号，其性能也远超 Llama 4 Maverick 等旗舰开源型号，我们非常期待「揭开」未来的神秘面纱 :)",
+    "Le Chat Enterprise 可通过网络和移动应用程序使用，它就像 ChatGPT 的竞争对手，但它是专为企业及其员工打造的。"
+  ],
+  "tags": [
+    "大语言模型",
+    "聊天机器人",
+    "AI 智能体",
+    "Mistral AI",
+    "Mistral Medium 3"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1166,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746685835000,
+  "publishDateStr": "2025-05-08",
+  "publishDateTimeStr": "2025-05-08 06:30:35"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c2f23b74",
+  "title": "KubeCon NA 2025 - Salesforce 基于 AIOps 和智能代理实现自愈的实践",
+  "url": "https://www.infoq.com/news/2025/11/salesforce-self-healing-aiops/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-12 16:32:00",
+  "author": "Srini Penchikala",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AIOps and Agentic AI technologies can help in developing solutions to intelligently analyze <a href=\"https://kubernetes.io/\">Kubernetes</a>&nbsp;cluster health, automatically diagnose platform problems, and orchestrate issue resolutions with minimal human intervention. Vikram Venkataraman from AWS and Srikanth Rajan from Salesforce <a href=\"https://sched.co/27FVk\">spoke</a>&nbsp;on Tuesday at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/\">KubeCon + CloudNativeCon North America 2025</a> Conference about Salesforce’s approach to self-healing systems using AIOps and AI Agents.</p>\n   <p>The AIOps architecture was developed at Salesforce by the team who develops and supports software to manage infrastructure to to&nbsp;support&nbsp;the Hyperforce Kubernetes Platform, a managed kubernetes platform built on multiple clouds (AWS, GCP, Alicloud) that provides namespace-as-a-service. The operational scale of their K8s platform includes 1400 K8s clusters, millions of pods, thousands of compute nodes, 40+ operators and integrations, and 200+ monitoring plugins. The speakers highlighted that they estimate the capacity to increase five times in the next couple of years. The overall goal of the&nbsp;solution is to let application teams focus on business requirements, not get bogged down with infrastructure overhead.</p>\n   <p>They discussed the approaches to Kubernetes platform operations, leveraging generative AI and multi-agent collaboration to create a cluster management system to troubleshoot Kubernetes clusters, reducing mean time to identify (MTTI) and mean time to resolve (MTTR) for critical cluster issues. Agentic AI solution consists of AI Agents that have specific goals to help with AIOps platform and tools to retrieve data from telemetry platform. Agents perform actions against their K8s environment like rolling back upgrades in case any issues during the upgrade process.</p>\n   <p>Venkataraman and Rajan spoke about the challenges of building AI for intelligent operations, such as how different agents should communicate with each other, what guardrails and security permissions the agents must have to perform within the guidelines. They discussed the details of the solution architecture, hosted on <a href=\"https://aws.amazon.com/\">AWS cloud platform</a>, which consists of&nbsp;AIOps UI for engineers, Collaborator Agent, <a href=\"https://aws.amazon.com/prometheus/\">Amazon Prometheus</a>&nbsp;and its agent, <a href=\"https://aws.amazon.com/eks/\">Amazon EKS</a>, <a href=\"https://docs.k8sgpt.ai/reference/operator/overview/\">k8sgpt Operator</a>&nbsp;that helps with MTTI metrics, and <a href=\"https://argo-cd.readthedocs.io/en/stable/operator-manual/server-commands/argocd-application-controller/\">ArgoCD Controller</a>.</p>\n   <p>The speakers then shared the details of their tech stack showing different layers with open source technologies as well as home-grown tools:</p>\n   <ul>\n    <li>Substrate (Kubernetes cloud platforms like Amazon EKS, self-managed K8s, Google GKE, and Alicloud ACK)</li>\n    <li>Standard Capabilities: Storage,&nbsp;networking, autoscaling, DNS, load balancing, mesh and Ingress. Technologies used in this layer include Istio, Cluster Autoscaler, CSI, OPA, Ingress, CNI, LBC, and CoreDNS.</li>\n    <li>Custom Integrations layer includes capabilities like identity, secrets management, guardrails and log collection.</li>\n    <li>Platform Capabilities layer consists of&nbsp;components for platform abstractions, deployment orchestration, lifecycle automation, visibility &amp; observability, resiliency, cost management, and best practices enforcement. Tools in this layer include Argo, Kyverno, Spinnaker, Helm, Kube Magic Mirror, Sloop, and Periscope.</li>\n    <li>Finally, the API layer provides customer access services and hosts the Control Plane, API’s and self-service portals.</li>\n   </ul>\n   <p>To solve problems like siloed tools, static workflows, limited feedback loop, the team developed AI agents based infrastructure management solution.They started small with a few AI agents like AIops agent (on-call report agent),&nbsp;Kubectl agent that integrates with teams channels in Slack, and translates natural language questions to <a href=\"https://kubernetes.io/docs/reference/kubectl/quick-reference/\">kubectl commands</a>, providing debugging information on Slack. There is also the Live Site Analysis Agent that automates the weekly platform availability review process by analyzing metrics like SLA misses and generating root cause analysis (RCA) insights.</p>\n   <p>The speakers suggested progressive autonomy when adopting AI agents based solutions in your own organization. Their initial approach was to&nbsp;include human in the loop to ensure safety and accuracy of the issue resolutions. Once the team gained confidence with AI agents, they started granting more autonomy to agentic solutions.</p>\n   <p>They concluded the talk by saying the team has just scratched the surface on what AI technologies can do and AI agents can be useful in several other use cases. Their AIOps program roadmap highlighted scaling the AI agents to eliminate 80% of the manual work, a knowedge graph that has all the information to connect the dots of different components in the overall system, and using AI to detect and troubleshoot hard performance problems.</p>\n   <p>For more information on this and other conference sessions, check out the <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/\">conference website</a>&nbsp;and the&nbsp;<a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/\">program schedule</a>.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"KubeCon NA 2025 - Salesforce’s Approach to Self-Healing Using AIOps and Agentic AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Srini Penchikala\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/salesforce-self-healing-aiops/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762965120000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Salesforce 利用 AIOps 和智能代理为其庞大的 Hyperforce 平台构建 Kubernetes 自愈系统，旨在实现故障自动化排除并降低运营成本。",
+  "oneSentenceSummary": "Salesforce 利用 AIOps 和智能代理为其庞大的 Hyperforce 平台构建 Kubernetes 自愈系统，旨在实现故障自动化排除并降低运营成本。",
+  "summary": "本文详细介绍了 Salesforce 在 KubeCon + CloudNativeCon North America 2025 大会上展示的，使用 AIOps 和智能代理构建 Kubernetes 自愈系统的创新方法。Salesforce 的 Hyperforce 平台面临着巨大的运营规模：1400 多个 Kubernetes 集群、数百万个 Pods，以及跨 AWS、GCP、阿里云等多个云平台的数千个计算节点。为了应对这一挑战，Salesforce 开发了一种复杂的 AIOps 架构。其目标是智能地分析集群健康状况，自动诊断平台问题，并在最少的人工干预下协调问题解决，从而使应用程序团队能够专注于业务需求。该解决方案集成了生成式 AI 和多代理协作来排除集群故障，从而显著减少了平均识别时间 (Mean Time To Identify， MTTI) 和平均解决时间 (Mean Time To Resolve， MTTR)。AI 代理被设计为具有特定目标，从遥测平台检索数据并执行诸如回滚升级之类的操作。演讲者还强调了构建智能运营方面的挑战，包括不同的代理应如何相互通信，代理必须具有哪些防护措施和安全权限。该架构托管在 AWS 上，包括 AIOps 用户界面、协作代理、Amazon Prometheus、Amazon EKS、k8sgpt Operator 和 ArgoCD 控制器，集成了开源和自研工具，跨越不同的层，例如底层基础架构（Kubernetes 云平台）、标准能力（存储、网络、自动缩放）、自定义集成（身份、密钥管理）、平台能力（部署编排、可观察性）和 API 层。Salesforce 提倡一种渐进式自治模型，首先对 AI 代理进行人工监督，然后逐步提高其自治性。未来的路线图旨在扩展 AI 代理以消除 80% 的手动工作，构建一个包含连接系统中所有组件信息的知识图谱，以及利用 AI 检测和排除难以解决的性能问题。",
+  "mainPoints": [
+    {
+      "point": "Salesforce 利用 AIOps 和智能代理实现大规模 Kubernetes 自愈运营。",
+      "explanation": "为了管理跨多个云的 1400 多个 Kubernetes 集群，Salesforce 使用 AI 自动化健康分析、诊断和问题解决，从而显著减少了人工干预和运营开销。"
+    },
+    {
+      "point": "多代理协作和生成式 AI 是实现集群故障自动化排除的关键。",
+      "explanation": "AI 代理具有特定目标并可以访问遥测数据，它们执行诸如回滚升级之类的操作，从而提高了识别和解决关键 Kubernetes 问题（MTTI/MTTR）的效率。"
+    },
+    {
+      "point": "建议采用渐进式自治方法，以在运营中安全地应用 AI 代理。",
+      "explanation": "Salesforce 强调从人工监督 AI 代理开始，随着对其准确性和安全性的信任度提高，逐步提高其自治性，从而确保可靠的系统管理。"
+    },
+    {
+      "point": "AIOps 解决方案集成了开源和自研工具的综合技术栈。",
+      "explanation": "该架构从云底层基础架构 (EKS， GKE) 扩展到自定义集成和平台能力（如 Argo 和 Kyverno），为 AI 驱动的运营提供了一个强大且可扩展的基础。"
+    }
+  ],
+  "keyQuotes": [
+    "AIOps 和智能代理技术可以帮助开发解决方案，以智能地分析 Kubernetes 集群健康状况，自动诊断平台问题，并在最少的人工干预下协调问题解决。",
+    "该解决方案的总体目标是让应用程序团队专注于业务需求，避免受到基础设施开销的牵绊。",
+    "Agentic AI 解决方案由 AI 代理组成，这些代理具有特定目标，可帮助 AIOps 平台和工具从遥测平台检索数据。",
+    "演讲者建议在您自己的组织中采用基于 AI 代理的解决方案时，采取渐进式自治。",
+    "他们的 AIOps 计划路线图强调了以下几个方面：扩展 AI 代理以消除 80% 的手动工作；构建一个包含连接系统中所有组件信息的知识图谱；以及利用 AI 检测和排除难以解决的性能问题。"
+  ],
+  "tags": [
+    "AIOps",
+    "Agentic AI",
+    "Kubernetes",
+    "Self-Healing Systems",
+    "Cloud Native"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 681,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762965120000,
+  "publishDateStr": "2025-11-12",
+  "publishDateTimeStr": "2025-11-12 16:32:00"
+}

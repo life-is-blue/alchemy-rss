@@ -1,0 +1,55 @@
+{
+  "id": "RAW_eb888a",
+  "title": "英伟达开源 9B 参数小模型，比 Qwen3 快 6 倍",
+  "url": "https://www.qbitai.com/2025/08/323442.html",
+  "date": "2025-08-19 06:46:12",
+  "author": "不圆",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-arrow-right\" data-track=\"43\">不圆 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"44\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">小模型也开始卷起来了！</p>\n  <p data-track=\"3\">在麻省理工学院衍生公司Liquid AI发布了一款小到可以装在智能手表上的新AI视觉模型，以及谷歌发布了一款可以在智能手机上运行的小型模型之后，英伟达也加入了这场浪潮，推出了自己的新型小型语言模型（SLM）：</p>\n  <p data-track=\"4\"><strong>Nemotron Nano v2</strong>。</p>\n  <p data-track=\"5\">这款9B的“小”模型在复杂推理基准测试上的准确率与Qwen3-8B相当或更高，速度<strong>快6倍</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083746_2e85c774e9c4de00aebc64459595d930.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083746_2e85c774e9c4de00aebc64459595d930.png\">\n  </div>\n  <p data-track=\"6\">再联系到他们前些天发布的论文观点：小模型才是智能体的未来，看来真不只是说说而已。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/8a30709b3c82bf2c8f39502508e2e272.gif\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/8a30709b3c82bf2c8f39502508e2e272.gif\">\n  </div>\n  <p data-track=\"7\">除了这款模型，他们首次“自豪地”开源了用于创建它的绝大部分数据，包括预训练语料库。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083749_85579c2851c04287f94deac37726f831.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083749_85579c2851c04287f94deac37726f831.png\">\n  </div>\n  <p data-track=\"8\">让我们来看一下……20万亿？Nemotron Nano v2在<strong>20万亿多个token</strong>上进行预训练？</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083751_3e356464a48a20468ec9fb56ab2fc04b.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083751_3e356464a48a20468ec9fb56ab2fc04b.png\">\n  </div>\n  <p data-track=\"10\">技术报告显示，Nemotron Nano v2在复杂推理基准测试上的准确率与同等规模的领先开源模型Qwen3-8B相当或更高，同时吞吐量——也就是模型速度——最高可提升6倍。</p>\n  <p data-track=\"11\">这款模型由英伟达从头训练，设计目标是成为<strong>兼顾推理与非推理任务</strong>的统一模型。</p>\n  <p data-track=\"12\">模型在响应用户查询或执行任务时，会首先生成推理过程（reasoning trace），随后输出最终答案。该模型<strong>支持“思考”预算控制</strong>，在推理过程中，用户可以指定模型被允许“思考”的token数量。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083747_184df48f5fed5b95175ef1632e6beaf7.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083747_184df48f5fed5b95175ef1632e6beaf7.png\">\n  </div>\n  <p data-track=\"13\">如果用户希望模型直接给出最终答案（跳过中间推理步骤），可通过配置实现，但这一做法可能导致对复杂推理类提示的准确率下降。</p>\n  <p data-track=\"14\">相反，若允许模型先展示推理过程，通常能显著提升最终答案的质量，尤其针对需逻辑分析的复杂任务。</p>\n  <p data-track=\"15\">面对网友“思考预算控制是如何实现的”的问题，英伟达的模型训练师Oleksii Kuchaiev表示：</p>\n  <blockquote>\n   <p data-track=\"16\">我们最初采用了与Qwen3相同的实现方法，但发现当强制要求模型直接输出答案时，它仍会在预设的思维链之外进行“思考”。通过对截断思维链的训练，我们成功解决了这个问题。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083747_e3d5469d4f1b8915990ec5a9251fb1ab.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083747_e3d5469d4f1b8915990ec5a9251fb1ab.png\">\n  </div>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083746_65e88db9d0446385e97f2782141628ac.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083746_65e88db9d0446385e97f2782141628ac.png\">\n  </div>\n  <p data-track=\"18\">评估结果显示，与其他开源小规模模型相比，Nemotron Nano v2在准确率上具有优势。在 NeMo-Skills套件的“推理开启”模式下测试，该模型在AIME25上达到72.1%，在MATH500上达到97.8%，在GPQA上达到64.0%，在LiveCodeBench上达到 71.1%。</p>\n  <p data-track=\"19\">在指令遵循和长上下文基准测试中的得分也有报告：在IFEval上达到 90.3%，在RULER 128K测试中达到 78.9%，在BFCL v3和HLE基准测试中也有较小但可测量的提升。</p>\n  <p data-track=\"20\">Nemotron Nano v2经过了以下训练过程：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083747_e4f82615b0a8802026191121177aac0c.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083747_e4f82615b0a8802026191121177aac0c.png\">\n  </div>\n  <p data-track=\"21\"><strong>预训练</strong>：模型使用FP8精度在20万亿个token上进行预训练，采用Warmup-Stable-Decay学习率调度。随后进入持续预训练长上下文扩展阶段，使其在不降低其他基准测试性能的情况下达到128k的能力。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083748_0996bac806e5e416b1501ed2a572132e.jpeg\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083748_0996bac806e5e416b1501ed2a572132e.jpeg\">\n  </div>\n  <p data-track=\"22\"><strong>后训练</strong>：Nemotron Nano v2通过监督微调（SFT）、组相对策略优化（GRPO）、直接偏好优化（DPO）和人类反馈强化学习（RLHF）进行后训练。约5%的数据包含故意截断的推理轨迹，从而在推理时实现细粒度思考预算控制。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819090721_1fed2382344174c56aa3ad7fe9b03457.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819090721_1fed2382344174c56aa3ad7fe9b03457.png\">\n  </div>\n  <p data-track=\"23\"><strong>压缩</strong>：最后，基础模型和对齐模型均经过压缩（剪枝和蒸馏），支持在单个NVIDIA A10G GPU（22 GiB 内存，bfloat16 精度）上进行128k token的上下文推理。这一成果是通过扩展基于Minitron的压缩策略实现的，该策略专门针对受限条件下的推理模型压缩需求而设计。</p>\n  <p data-track=\"24\">除了Nemotron Nano v2模型本身，英伟达还发布了两个基础模型NVIDIA-Nemotron-Nano-12B-v2-Base（对齐或剪枝前的基础模型）和NVIDIA-Nemotron-Nano-9B-v2-Base（剪枝的基础模型），对应模型训练的不同阶段，均支持128k上下文长度。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083751_f8b551365fac158b3a03364318a3bb06.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083751_f8b551365fac158b3a03364318a3bb06.png\">\n  </div>\n  <p data-track=\"25\">最后，Nemotron Nano v2当前支持在线试用，链接可见文末。</p>\n  <p data-track=\"27\">除了Nemotron Nano v2，英伟达<strong>首次</strong>发布了他们用于创建模型的绝大部分数据，包括预训练语料库。</p>\n  <p data-track=\"28\">至于为什么是“绝大部分”，有网友问了这个问题，官方回复简直不要太有道理（笑）。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083755_5fd8d68dee66e709a4ebe3546251ee0c.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083755_5fd8d68dee66e709a4ebe3546251ee0c.png\">\n  </div>\n  <p data-track=\"29\">预训练数据集Nemotron-Pre-Training-Dataset-v1包含<strong>66万亿</strong>个优质网络爬取、数学、代码、SFT 和多语言问答数据，并分为四个类别：</p>\n  <p data-track=\"30\"><strong>Nemotron-CC-v2</strong>：作为Nemotron-CC的升级版本，新增收录了2024至2025年间八个批次的Common Crawl网络快照数据。数据已进行全球去重，并使用Qwen3-30B-A3B进行合成改写。它还包含翻译成15种语言的合成多样化问答对，支持强大的多语言推理和通用知识预训练。</p>\n  <p data-track=\"31\"><strong>Nemotron-CC-Math-v1</strong>: 一个基于Common Crawl、使用英伟达的Lynx + LLM流程生成的1330亿token的数学专注数据集，在保留方程和代码格式的同时，将数学内容标准化为LaTeX格式。这确保了关键的数学和代码片段保持完整，从而生成高质量的预训练数据，在基准测试中优于先前的数学数据集。</p>\n  <p data-track=\"32\"><strong>Nemotron-Pretraining-Code-v1</strong>: 一个大规模的精选代码数据集，源自GitHub，并通过多阶段去重、许可证执行和启发式质量检查进行过滤。它还包括11种编程语言的LLM生成的代码问答对。</p>\n  <p data-track=\"33\"><strong>Nemotron-Pretraining-SFT-v1</strong>：一个综合生成的数据集，涵盖STEM、学术、推理和多语言领域。该数据集整合了多元化的高质量内容，包括从数学与科学核心题库提取的复杂多选题和分析题、研究生阶段的专业学术文献，以及经过指令微调的SFT数据。</p>\n  <p data-track=\"34\"><strong>Nemotron-Pretraining-Dataset-sample</strong>：该数据集的一个小型抽样版本提供了10个具有代表性的数据子集，涵盖了高质量问答数据、数学专项内容、代码元数据以及SFT指令数据。</p>\n  <p data-track=\"35\">那些数字看起来都吓人，数零都得数半天（目移）。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083748_78f6a64af934ff428ee7c5052a9fc216.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083748_78f6a64af934ff428ee7c5052a9fc216.png\">\n  </div>\n  <p data-track=\"37\">顺带一提，最近英伟达的开源势头可以说是很猛了。</p>\n  <p data-track=\"38\">相比于其他国外科技巨头陆续走向的闭源道路，英伟达构建的<strong>Nemotron生态</strong>直接把开源二字写在了门面上。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250819083747_fd85c4b5b2c7f700e9efa6add137a0a3.png\" alt=\"英伟达开源9B参数小模型，比Qwen3快6倍\" data-src=\"https://image.jido.dev/20250819083747_fd85c4b5b2c7f700e9efa6add137a0a3.png\">\n  </div>\n  <p data-track=\"39\">无论是前段时间发布的<strong>Llama Nemotron Super v1.5</strong>，还是这次的Nemotron Nano v2，对标的也是国内开源模型Qwen3。</p>\n  <p data-track=\"40\">这样的策略会给他们带来什么？又会改变些什么？我们拭目以待。</p>\n  <p data-track=\"41\">参考链接：\n   <br>\n   [1]https://x.com/ctnzr/status/1957504768156561413\n   <br>\n   [2]https://research.nvidia.com/labs/adlr/NVIDIA-Nemotron-Nano-2/\n   <br>\n   [3]https://venturebeat.com/ai/nvidia-releases-a-new-small-open-model-nemotron-nano-9b-v2-with-toggle-on-off-reasoning/\n   <br>\n   论文：https://research.nvidia.com/labs/adlr/files/NVIDIA-Nemotron-Nano-2-Technical-Report.pdf\n   <br>\n   模型：https://huggingface.co/collections/nvidia/nvidia-nemotron-689f6d6e6ead8e77dd641615\n   <br>\n   试用：https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "英伟达开源 9B 参数小型语言模型 Nemotron Nano v2，性能媲美 Qwen3-8B 且速度快 6 倍，并首次开源其大部分训练数据，推动小模型和开源生态发展。",
+  "oneSentenceSummary": "英伟达开源 9B 参数小型语言模型 Nemotron Nano v2，性能媲美 Qwen3-8B 且速度快 6 倍，并首次开源其大部分训练数据，推动小模型和开源生态发展。",
+  "summary": "在当前 AI 领域小模型竞争日益激烈的背景下，文章详细介绍了英伟达最新发布的 9B 参数小型语言模型 Nemotron Nano v2。该模型在复杂推理基准测试中表现与同等规模的 Qwen3-8B 相当或更优，同时推理吞吐量可提升高达 6 倍。Nemotron Nano v2 被设计为兼顾推理与非推理任务的统一模型，其独特之处在于支持“思考预算控制”功能，允许用户指定模型在推理过程中允许的 token 数量，从而在处理复杂逻辑任务时显著提升最终答案的质量。文章深入阐述了 Nemotron Nano v2 的训练流程，包括在 20 万亿个 token 上进行的 FP8 精度预训练，以及通过监督微调、GRPO、DPO 和 RLHF 等技术进行的后训练，并提及了通过剪枝和蒸馏实现模型压缩，使其能在单个 NVIDIA A10G GPU 上进行 128k token 的上下文推理。此外，英伟达首次公开了用于创建 Nemotron Nano v2 的绝大部分训练数据，包括 Nemotron-Pre-Training-Dataset-v1，该数据集包含 66 万亿个高质量网络爬取、数学、代码、SFT 和多语言问答数据。文章强调了英伟达积极拥抱开源的战略，构建 Nemotron 生态，对标国内开源模型，并展望其对 AI 行业可能带来的影响。",
+  "mainPoints": [
+    {
+      "point": "Nemotron Nano v2 在小模型中性能卓越，兼顾速度与准确率。",
+      "explanation": "该 9B 参数模型在复杂推理基准测试上准确率与 Qwen3-8B 相当或更高，同时吞吐量可提升 6 倍，展现了小型模型在性能上的巨大潜力。"
+    },
+    {
+      "point": "模型支持“思考预算控制”，优化复杂任务推理效果。",
+      "explanation": "用户可指定模型在推理过程中“思考”的 token 数量，这能显著提升复杂逻辑任务的最终答案质量，且支持灵活配置。"
+    },
+    {
+      "point": "英伟达首次大规模开源模型训练数据，推动 AI 生态发展。",
+      "explanation": "除了模型本身，英伟达还开源了包含 20 万亿 token 预训练语料库和 66 万亿个高质量数据的 Nemotron-Pre-Training-Dataset-v1，对社区贡献巨大。"
+    }
+  ],
+  "keyQuotes": [
+    "这款 9B 的\"小\"模型在复杂推理基准测试上的准确率与 Qwen3-8B 相当或更高，速度快 6 倍。",
+    "这款模型由英伟达从头训练，设计目标是成为兼顾推理与非推理任务的统一模型。",
+    "模型在响应用户查询或执行任务时，会首先生成推理过程（reasoning trace），随后输出最终答案。",
+    "英伟达首次发布了他们用于创建模型的绝大部分数据，包括预训练语料库。",
+    "小模型才是智能体的未来"
+  ],
+  "tags": [
+    "小型语言模型",
+    "模型训练",
+    "模型压缩",
+    "开源模型",
+    "推理优化"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2679,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755585972000,
+  "publishDateStr": "2025-08-19",
+  "publishDateTimeStr": "2025-08-19 06:46:12"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ff6355bf",
+  "title": "JEP 526 简化 JDK 26 的延迟初始化",
+  "url": "https://www.infoq.com/news/2025/12/jep526-lazy-constants/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-02 14:53:00",
+  "author": "A N M Bazlur Rahman",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>JEP 526, <a href=\"https://openjdk.org/jeps/526\">Lazy Constants (Second Preview)</a>, has been completed with a second preview, including changes after the first round of preview, namely JEP 502, <a href=\"https://openjdk.org/jeps/502\">Stable Values (Preview)</a>, for JDK 26. Formerly known as <em>Stable Values</em>, this feature introduces the concept of <em>computed constants</em>, which are immutable value holders initialized at most once. This provides the performance and safety benefits of final fields while offering greater flexibility in&nbsp;the timing of initialization. Revisions for this JEP include: changing the name from Stable Values to Lazy Constants, as the new name better captures the intent of a high-level use case and enhances&nbsp;discoverability.</p>\n   <p>The earlier Stable Values API exposed several low-level operations, such as <strong><code><a href=\"https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/StableValue.html#setOrThrow(T)\">setOrThrow</a></code></strong>, <strong><code><a href=\"https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/StableValue.html#trySet(T)\">trySet</a></code></strong>, and <strong><code><a href=\"https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/StableValue.html#orElseSet(java.util.function.Supplier)\">orElseSet</a></code></strong>, which provided fine-grained control over initialization. According to the proposal, these operations were difficult to justify and often encouraged patterns that ran counter to the API’s intended purpose. JEP 526 replaces these mechanisms with a simpler, more ergonomic class, <strong><code><a href=\"https://cr.openjdk.org/~pminborg/lazy-constants-second-preview/api/java.base/java/lang/LazyConstant.html\">java.lang.LazyConstant&lt;T&gt;</a></code></strong>, which supports only factory-based initialization. The renaming clarifies the intent: instead of focusing on “stability via low-level control,” the new design emphasizes laziness coupled with immutability. Developers can now express deferred initialization without resorting to ad-hoc patterns like double-checked locking, holder classes, or nullable fields.</p>\n   <p>Using the new API, a lazy constant can be defined by providing a supplier function. The computed value is cached after the first access and never changes again. Consider the following example:</p>\n   <pre>\r\n<code class=\"language-java\">private static final LazyConstant&lt;Logger&gt; LOG =\r\n    LazyConstant.of(() -&gt; Logger.create(MyService.class));\r\n\r\nvoid run() {\r\n    LOG.get().info(\"service started\");\r\n}</code></pre>\n   <p>This approach replaces older lazy-initialization idioms such as double-checked locking, holder classes, and nullable fields. Those patterns often required extra bookkeeping and careful manual thread safety. With LazyConstant, the JVM treats the computed value as a real constant once it has been initialized, opening the door to optimizations not possible with mutable lazy-initialization techniques.</p>\n   <p>Developers can also aggregate deferred values using lazy lists and lazy maps, which store each element in its own lazy constant. This allows collections to grow “on demand” rather than all at once. For example, an application can keep a pool of controllers without creating every instance upfront:</p>\n   <pre>\r\n<code class=\"language-java\">static final List&lt;OrderController&gt; ORDERS =\r\n    List.ofLazy(POOL_SIZE, _ -&gt; new OrderController());\r\n\r\nOrderController controller() {\r\n    long index = Thread.currentThread().threadId() % POOL_SIZE;\r\n    return ORDERS.get((int) index);\r\n}</code></pre>\n   <p>Each list element initializes only when first accessed, and subsequent calls return the cached controller. The same pattern works with named keys using a lazy map:</p>\n   <pre>\r\n<code class=\"language-java\">static final Map&lt;String, OrderController&gt; ORDERS =\r\n    Map.ofLazy(Set.of(\"Customers\", \"Internal\", \"Testing\"),\r\n               _ -&gt; new OrderController());\r\n\r\nOrderController controller() {\r\n    return ORDERS.get(Thread.currentThread().getName());\r\n}</code></pre>\n   <p>These aggregated structures provide deferred initialization, thread-safety, and JVM optimizations while supporting more expressive access patterns.</p>\n   <p>One notable change from the earlier preview is that <strong><code>null</code></strong> is no longer allowed as a computed value. The designers note that disallowing <strong><code>null</code></strong> eliminates ambiguity, removes branching in the common path, and aligns with other unmodifiable constructs. This change also simplifies the mental model: a <strong><code><a href=\"https://cr.openjdk.org/~pminborg/lazy-constants-second-preview/api/java.base/java/lang/LazyConstant.html\">LazyConstant</a></code></strong> always yields a real value. Any attempt to treat <strong><code>null</code></strong> as a legitimate constant is now a design error.</p>\n   <p>The shift from Stable Values to Lazy Constants reflects a philosophical adjustment as well. Stable Values behaved somewhat like a low-level synchronization or atomic primitive with immutability layered on top. Lazy Constants, on the other hand, provide a high-level abstraction for everyday initialization scenarios. This makes the feature more suitable for libraries and frameworks, which can use lazy constants to reduce startup costs for components that may not be used in every application run. In addition, holding a <strong><code>LazyConstant</code></strong> in a <strong><code>final</code></strong> field allows the JVM to constant-fold the value after initialization, bringing together the reliability of immutability with the benefits of deferred computation.</p>\n   <p>JEP 526’s primary focus is developer ergonomics, but the performance implications are significant. Many applications initialize large graphs of objects or expensive resources such as loggers, configuration objects, or caches during startup. By allowing these to be represented as lazy constants, the startup path becomes lighter and more responsive. The API also guarantees that initialization occurs at most once, even in the presence of concurrency, without requiring the developer to implement synchronization manually. For large systems or modular architectures, the cost savings can accumulate quickly.</p>\n   <p>The preview continues to require explicit opt-in via <strong><code>--enable-preview</code></strong> during compilation and execution. The designers are seeking feedback on the simplified API surface, naming, and suitability for real-world workloads. According to the proposal, the team expects the revised design to be closer to what developers want: fewer mechanisms, more precise semantics, and better synergy with the JVM’s optimization pipeline. If the preview phase confirms this, Lazy Constants may become a permanent part of the platform in a future release.</p>\n   <p>As Java continues to adopt features that reduce boilerplate and improve performance while maintaining safety, Lazy Constants represent a natural evolution. If finalized, the feature will offer a more predictable and optimized alternative to the lazy-initialization idioms developers have used for decades, aligning with the platform’s broader goals of clarity, correctness, and performance.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"JEP 526 Simplifies Deferred Initialization Ahead of JDK 26\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"A N M Bazlur Rahman\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/jep526-lazy-constants/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764687180000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "JEP 526 在 JDK 26 中引入 `LazyConstant`，通过 JVM 优化简化了延迟且线程安全的初始化，取代了旧有的复杂机制。",
+  "oneSentenceSummary": "JEP 526 在 JDK 26 中引入 `LazyConstant`，通过 JVM 优化简化了延迟且线程安全的初始化，取代了旧有的复杂机制。",
+  "summary": "本文详细介绍了 JDK 26 的 JEP 526，“`LazyConstant`（第二次预览）”，它从 JEP 502，“稳定值”演变而来。该特性引入了 `java.lang.LazyConstant<T>`，这是一个最多初始化一次的不可变值持有者，提供了最终字段的性能和安全优势，并具有灵活的初始化时机。它用更简单的、基于工厂的初始化方法取代了第一次预览中复杂的、低级 API，强调了延迟加载和不变性。开发人员现在可以表达延迟初始化，而无需手动线程安全措施，例如双重检查锁定。`LazyConstant` 还通过将初始化后的值视为真正的常量来实现 JVM 优化。该 API 通过延迟加载的列表和映射支持聚合的延迟加载值，允许集合按需增长。一个值得注意的变化是不允许 `null` 作为计算值，从而简化了概念模型。此功能旨在提高开发效率，降低具有昂贵资源的应用程序的启动成本，并符合 Java 的清晰性、正确性和性能目标。",
+  "mainPoints": [
+    {
+      "point": "JEP 526 引入了 `LazyConstant`，用于简化 Java 中线程安全的延迟初始化。",
+      "explanation": "这个新的 API 取代了复杂的、容易出错的手动模式，如双重检查锁定，提供了一种标准化和线程安全的方式来仅在首次访问时初始化值，从而提升了开发效率和可靠性。"
+    },
+    {
+      "point": "计算出的 `LazyConstant` 值在初始化后能够实现显著的 JVM 优化。",
+      "explanation": "一旦 `LazyConstant` 被初始化，JVM 将其值视为一个真正的常量，从而可以进行常量折叠等 JVM 优化，这在使用可变延迟初始化技术时是不可能的，从而提高了应用程序的性能。"
+    },
+    {
+      "point": "该特性通过延迟加载的列表和映射支持聚合的延迟加载值，从而降低了启动成本。",
+      "explanation": "集合现在支持按需初始化元素，而非一次性初始化所有元素，这对于具有大型对象图或昂贵资源的应用程序尤其有利，从而减少了启动成本，提高了响应速度。"
+    }
+  ],
+  "keyQuotes": [
+    "此功能引入了*计算常量*的概念，这些常量是最多初始化一次的不可变值持有者。",
+    "使用 `LazyConstant`，JVM 一旦初始化，就将计算值视为真正的常量，从而为使用可变延迟初始化技术无法实现的优化打开了大门。",
+    "设计人员指出，不允许 **`null`** 消除了歧义，消除了公共路径中的分支，并与其他不可修改的构造保持一致。",
+    "JEP 526 的主要重点是提升开发效率，但性能影响是显著的。",
+    "如果最终确定，该功能将为开发人员使用了数十年的延迟初始化用法提供更可预测和优化的替代方案，从而符合平台更广泛的清晰性、正确性和性能目标。"
+  ],
+  "tags": [
+    "Java",
+    "JDK 26",
+    "JEP 526",
+    "LazyConstant",
+    "延迟初始化"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 821,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764687180000,
+  "publishDateStr": "2025-12-02",
+  "publishDateTimeStr": "2025-12-02 14:53:00"
+}

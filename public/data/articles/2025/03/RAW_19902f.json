@@ -1,0 +1,53 @@
+{
+  "id": "RAW_19902f",
+  "title": "微软甩开 OpenAI 自研大模型，还计划用 DeepSeek",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-08-7",
+  "date": "2025-03-08 07:40:58",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote data-author-name=\"\" data-content-utf8-length=\"10\" data-source-title=\"\" data-type=\"2\" data-url=\"\">\n   <section>\n    <p>思维链引发的战争。</p>\n   </section>\n  </blockquote>\n  <section>\n   众所周知，微软是 OpenAI 的主要支持者，为其投入了巨资，而且在自家系统与服务中广泛部署了 GPT 系列大模型。\n  </section>\n  <section>\n   但随着近期 AI 技术的突破、双方的分歧加剧，微软正开始在 AI 赛道上加码。据知情人士透露，微软已经开发内部人工智能模型以与 OpenAI 竞争，<strong>这一战略性举措的目标是直接替代 OpenAI 的 o1、o3-mini 等核心模型</strong>，更标志着这对曾经的「黄金搭档」正在走向技术竞争的新阶段。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503475013\" data-ratio=\"0.5185185185185185\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/589d7025-618c-4994-ce6c-5200191efa00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/9b44f18a-f555-4876-9250-05adf092bdf3/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   据外媒 the Information 报道，目前微软正在测试 MAI（Microsoft Artificial Intelligence） 模型在各种任务中执行的效果，包括 Copilot AI 智能助手。Copilot 旨在作为通用助理处理广泛的用户问题，并为处理文档或进行电话会议的人员提供具体建议。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503475015\" data-ratio=\"0.75\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67f4793a-9930-4893-4639-decbdd919000/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/b8fbeee4-b6a5-44f9-8b35-b0fc16f502c4/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   除了加大力气推动自研模型之外，<strong>据说微软还在测试来自 xAI、Meta、Anthropic 和 DeepSeek 的替代 AI 模型</strong>，进而为 Copilot 中的技术赋能。由于近期的技术突破，业内很多大模型已拥有了强大的语言建模与推理能力，可以处理更复杂的查询并展示出类似人类的问题解决能力，可应用于更广泛的商业级应用场景。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503475017\" data-ratio=\"0.708\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9ca8adac-b4c3-4fe2-a300-0a5301747000/public\" data-type=\"png\" data-w=\"750\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/8d9489da-9cf2-48a2-a431-562aaf307191/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   微软已向 OpenAI 投资超过 130 亿美元，并提供了大量算力支持，与之相对的是可获得 OpenAI 的部分收入分成，以及技术的使用权。尽管微软与 OpenAI 的长期合作使其在前景巨大的人工智能竞赛中占据了先发优势，但该公司一直致力于降低对 OpenAI 的技术依赖。\n  </section>\n  <section>\n   据知情人士称，去年秋季两家公司的一次视频会议上，Mustafa Suleyman 要求 OpenAI 提供关于其最新 AI 模型 o1 的详细技术文档，尤其是模型在回答用户问题前的「思维链」推理过程。\n  </section>\n  <section>\n   <strong>然而 OpenAI 拒绝透露这些核心机密</strong>，这让 Suleyman 十分不满，甚至在会议中直接提高嗓门，指责 OpenAI 未履行合作协议，最终愤怒地提前结束通话。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503475021\" data-ratio=\"0.562037037037037\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7089711f-8648-49c0-f4dd-c8fccc15a000/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/cf8dbf87-511f-4405-bd27-d4e94867644e/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 微软 AI 部门负责人 Mustafa Suleyman。</sup></em>\n  </section>\n  <section>\n   合作中的摩擦暴露了微软与 OpenAI 之间的矛盾。微软的 AI 工具依赖于 OpenAI 提供的先进技术，但该公司不愿长期受制于人。因此，Suleyman 需要在维持合作的同时让微软 AI 业务实现独立发展。\n  </section>\n  <section>\n   为此，Suleyman 加码了微软自身的 AI 研究团队，由他的副手 Karén Simonyan 领导，专注于开发 MAI 模型。\n  </section>\n  <section>\n   行业观察指出，由 Mustafa Suleyman 领衔的微软 AI 部门已取得关键突破：MAI 系列模型在通用基准测试中达到了与 OpenAI、Anthropic 顶尖模型相当的性能水平。\n  </section>\n  <section>\n   值得关注的是，该研究团队正通过思维链技术（Chain-of-Thought）提升大模型对复杂问题的处理能力，通过这种显式生成中间思维步骤来提升推理能力的方法，使得 MAI 在技术路线上与 OpenAI 形成差异化竞争。\n  </section>\n  <p><img alt=\"image.png\" data-backh=\"573\" data-backw=\"562\" data-imgfileid=\"503475024\" data-ratio=\"1.02\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/60770ed8-e17c-4874-bdb0-d88bf2803700/public\" data-type=\"png\" data-w=\"500\" data-original-style=\"width: 100%;height: auto;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/cb9df59f-5d02-43a9-b328-e584028aaa18/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\"></p>\n  <section>\n   目前微软已启动 MAI 模型在 Copilot 产品中的替代测试，相较于此前轻量级的 Phi 模型，新一代 MAI 在参数量级与场景适应性方面实现显著跃升。\n  </section>\n  <section>\n   微软还计划在今年晚些时候推出 MAI 的 API，让外部开发者能够将微软 AI 模型集成到自己的应用程序中。一旦新的服务上线，微软与 OpenAI、Anthropic、DeepSeek，可能将会成为直接竞争对手。\n  </section>\n  <section>\n   <em><sup>参考内容：</sup></em>\n  </section>\n  <section>\n   <sup><em>https://www.theinformation.com/articles/microsofts-ai-guru-wants-independence-from-openai-thats-easier-said-than-done</em></sup>\n  </section>\n  <section>\n   <em><sup>https://www.bloomberg.com/news/articles/2025-03-07/microsoft-creates-in-house-ai-models-it-believes-rival-openai-s</sup></em>\n  </section>\n </body>\n</html>",
+  "aiSummary": "微软为摆脱对 OpenAI 的技术依赖，积极开发自研大模型 MAI，并测试 DeepSeek 等厂商模型，以增强 Copilot 能力，加剧 AI 市场竞争。",
+  "oneSentenceSummary": "微软为摆脱对 OpenAI 的技术依赖，积极开发自研大模型 MAI，并测试 DeepSeek 等厂商模型，以增强 Copilot 能力，加剧 AI 市场竞争。",
+  "summary": "文章指出，微软正采取多项措施以降低对 OpenAI 的依赖，包括开发内部 AI 模型 MAI 与 OpenAI 竞争，目标是替代 OpenAI 的核心模型。同时，微软还在测试来自 xAI、Meta、Anthropic 和 DeepSeek 的 AI 模型，用于 Copilot 的技术赋能。起因是微软希望获得 OpenAI 最新模型 o1 的详细技术文档遭到拒绝。微软 AI 部门负责人 Mustafa Suleyman 正在加码自研 AI 研究团队，并通过采用思维链技术，提升 MAI 模型在复杂问题上的推理能力，实现技术差异化。微软已启动 MAI 模型在 Copilot 产品中的替代测试，并计划今年晚些时候推出 MAI 的 API，直接与 OpenAI 等公司展开竞争。",
+  "mainPoints": [
+    {
+      "point": "微软开发 MAI 模型旨在替代 OpenAI 的核心模型",
+      "explanation": "微软战略性举措，目标是降低对 OpenAI 的技术依赖，实现 AI 业务的独立发展，并在 AI 领域形成差异化竞争。"
+    },
+    {
+      "point": "微软测试多家 AI 模型，旨在为 Copilot 提供更强大的技术支持和更多选择",
+      "explanation": "除了自研模型，微软也在评估 xAI、Meta、Anthropic 和 DeepSeek 的模型，为 Copilot 提供更多技术选择和能力。"
+    },
+    {
+      "point": "思维链技术是 MAI 模型的重要突破",
+      "explanation": "通过显式生成中间思维步骤，提升模型在复杂问题上的推理能力，使 MAI 在技术路线上与 OpenAI 形成差异化竞争。"
+    }
+  ],
+  "keyQuotes": [
+    "微软已经开发内部人工智能模型以与 OpenAI 竞争，这一战略性举措的目标是直接替代 OpenAI 的 o1、o3-mini 等核心模型",
+    "据说微软还在测试来自 xAI、Meta、Anthropic 和 DeepSeek 的替代 AI 模型，进而为 Copilot 中的技术赋能。",
+    "然而 OpenAI 拒绝透露这些核心机密，这让 Suleyman 十分不满，甚至在会议中直接提高嗓门，指责 OpenAI 未履行合作协议，最终愤怒地提前结束通话。"
+  ],
+  "tags": [
+    "大语言模型",
+    "微软",
+    "OpenAI",
+    "DeepSeek",
+    "Copilot"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1078,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741419658000,
+  "publishDateStr": "2025-03-08",
+  "publishDateTimeStr": "2025-03-08 07:40:58"
+}

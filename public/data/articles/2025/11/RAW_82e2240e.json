@@ -1,0 +1,55 @@
+{
+  "id": "RAW_82e2240e",
+  "title": "Vue 团队成员又搞了个 \"新玩具\"！",
+  "url": "https://juejin.cn/post/7567889397497741375",
+  "date": "2025-11-03 05:35:04",
+  "author": "前端开发爱好者",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p><strong>Vue</strong> 团队成员真的是太卷了，又搞了个新玩具：<code>markdown-exit</code>——<code>markdown-it</code> 的 <code>TypeScript</code>「重构版」来了！</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a40b619631904cc8908ce6caca991b1c~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1762752903&amp;x-signature=nksilhyRf2MvjGUroXpc8ctcrJ0%3D\" alt=\"\" loading=\"lazy\"></p>\n   <p>如果你用过 <code>VitePress</code>、<code>Slidev</code>、或者任何 <code>Vue</code> 系文档站，你一定对 <code>markdown-it</code> 不陌生：它就是把 <code>Markdown</code> 变成 <code>HTML</code> 的那台“发动机”。</p>\n   <p>问题是，这台发动机是 <code>2014</code> 年的设计，纯 <code>JavaScript</code> 写成，类型靠社区维护，异步插件更是想都别想。</p>\n   <p>于是，<strong>Vue</strong> 团队的核心成员 <strong>Anthony Fu</strong> 在推特上“许愿”：</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/03983d66bf9144bbaf8c37b8169a89cc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1762752903&amp;x-signature=Ho%2BNEncery5WgKZNNhoTA1%2F237c%3D\" alt=\"\" loading=\"lazy\"></p>\n   <blockquote>\n    <p>“我找这东西太久了！缺少异步插件限制了我们太多玩法，真希望 <strong>VitePress</strong>、<strong>Slidev</strong> 能用上。”</p>\n   </blockquote>\n   <p>不到两周，SerKo（@serkodev）直接甩出一个新仓库——<strong>markdown-exit</strong>。</p>\n   <h3 data-id=\"heading-0\">它到底干了啥？</h3>\n   <p><strong>把 Markdown 转成 HTML</strong>，但换了颗**“TypeScript 心脏”**。</p>\n   <table>\n    <thead>\n     <tr>\n      <th>能力</th>\n      <th>markdown-it</th>\n      <th>markdown-exit</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>输出 HTML</td>\n      <td>✅</td>\n      <td>✅（100% 兼容）</td>\n     </tr>\n     <tr>\n      <td>同步插件</td>\n      <td>✅</td>\n      <td>✅</td>\n     </tr>\n     <tr>\n      <td>异步插件</td>\n      <td>❌</td>\n      <td>✅（官方支持）</td>\n     </tr>\n     <tr>\n      <td>类型定义</td>\n      <td>社区 @types</td>\n      <td>原生自带</td>\n     </tr>\n     <tr>\n      <td>现代构建</td>\n      <td>无</td>\n      <td>Vite + Vitest + pnpm monorepo</td>\n     </tr>\n     <tr>\n      <td>代码高亮</td>\n      <td>靠插件</td>\n      <td>异步高亮一句话搞定</td>\n     </tr>\n    </tbody>\n   </table>\n   <h3 data-id=\"heading-1\">对 Vue 生态意味着什么？</h3>\n   <ul>\n    <li><strong>VitePress</strong>：以后可以在编译阶段做“异步代码拉取”、“远程片段嵌入”而不用写脏脚本。</li>\n    <li><strong>Slidev</strong>：幻灯片里直接引用 GitHub 文件、CodePen、CodeSandbox，实时渲染。</li>\n    <li><strong>普通 Vue 项目</strong>：服务端渲染（SSR）或边缘函数（Vite SSR / Nuxt）里，再也不用 <code>require('@types/markdown-it')</code> 一把梭。</li>\n   </ul>\n   <p>Anthony Fu 在转发里写：</p>\n   <blockquote>\n    <p>“等不及想在 VitePress、Slidev 上落地了！”</p>\n   </blockquote>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/5dc26883bf474462a288bf52d5f59e6e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5byA5Y-R54ix5aW96ICF:q75.awebp?rk3s=f64ab15b&amp;x-expires=1762752903&amp;x-signature=wnRS%2FpIu%2BcnwmIImCW0XiAawuFk%3D\" alt=\"\" loading=\"lazy\"></p>\n   <h3 data-id=\"heading-2\">两分钟上手</h3>\n   <pre><code class=\"hljs language-bash\" lang=\"bash\"><span class=\"hljs-comment\"># 最新特性版（公测中）</span>\nnpm i markdown-exit\n\n<span class=\"hljs-comment\"># 求稳用兼容版</span>\nnpm i markdown-exit@legacy\n</code></pre>\n   <pre><code class=\"hljs language-ts\" lang=\"ts\"><span class=\"hljs-comment\">// 命名导入，Tree-shaking 友好</span>\n<span class=\"hljs-keyword\">import</span> { createMarkdownExit } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'markdown-exit'</span>\n\n<span class=\"hljs-keyword\">const</span> md = <span class=\"hljs-title function_\">createMarkdownExit</span>()\n<span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(md.<span class=\"hljs-title function_\">render</span>(<span class=\"hljs-string\">'# Hello markdown-exit'</span>))\n</code></pre>\n   <p>异步高亮示例（以前做不到）：</p>\n   <pre><code class=\"hljs language-ts\" lang=\"ts\">md.<span class=\"hljs-title function_\">use</span>(asyncPlugin, <span class=\"hljs-keyword\">async</span> (code, lang) =&gt; {\n  <span class=\"hljs-keyword\">const</span> html = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">fetchHighlighter</span>(lang) <span class=\"hljs-comment\">// 任意异步操作</span>\n  <span class=\"hljs-keyword\">return</span> html\n})\n</code></pre>\n   <h3 data-id=\"heading-3\">迁移零成本</h3>\n   <p>旧项目里全局替换即可：</p>\n   <pre><code class=\"hljs language-diff\" lang=\"diff\"><span class=\"hljs-deletion\">- import MarkdownIt from 'markdown-it'</span>\n<span class=\"hljs-addition\">+ import MarkdownExit from 'markdown-exit'</span>\n</code></pre>\n   <p>所有<code>插件</code>、<code>配置</code>、<code>渲染结果</code>一行不改，直接运行。</p>\n   <h3 data-id=\"heading-4\">时间线 &amp; 路线图</h3>\n   <ul>\n    <li><strong>现在</strong>：<code>v1.0.0-beta</code> 公测，功能已齐，<code>API</code> 锁定中。</li>\n    <li><strong>未来 <code>1 ～ 2</code> 个月</strong>：发布正式版 v1.0.0；<code>VitePress</code>、<code>Slidev</code> 官方模板同步切换。</li>\n    <li><strong>长期</strong>：探索 <code>AST</code> 级别缓存、<code>WebAssembly</code> 加速、流式渲染等高级玩法。</li>\n   </ul>\n   <h3 data-id=\"heading-5\">结语</h3>\n   <p>从 <code>vue/core</code> 到 <code>vite</code>，再到现在的 <code>markdown-exit</code>，Vue 团队及其周边伙伴似乎一直在做同一件事：\n    <br>\n    <strong>把“底层基础设施”重新洗一遍牌，让上层开发者爽到飞起。</strong></p>\n   <p>所以，下次你要在 <code>Vue</code> 项目里“整点 <code>Markdown</code>”时，不妨试试这颗新心脏——\n    <br>\n    <code>npm i markdown-exit</code>，然后跟过去的类型报错、异步限制说拜拜吧！</p>\n   <ul>\n    <li><strong>markdown-exit Github 地址：</strong><code>https://github.com/serkodev/markdown-exit</code></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Vue 团队发布`markdown-exit`，`markdown-it`的 TypeScript 重构版，解决异步插件和类型定义问题，提升 Vue 生态 Markdown 处理体验。",
+  "oneSentenceSummary": "Vue 团队发布`markdown-exit`，`markdown-it`的 TypeScript 重构版，解决异步插件和类型定义问题，提升 Vue 生态 Markdown 处理体验。",
+  "summary": "文章详细介绍了 Vue 团队成员 Anthony Fu 倡议后，SerKo 迅速开发并推出的`markdown-exit`项目。该项目是广泛应用于 Vue 生态（如 VitePress、Slidev）的 Markdown 解析器`markdown-it`的 TypeScript 重构版。它旨在解决原`markdown-it`作为 2014 年纯 JavaScript 项目所面临的缺乏原生类型定义、不支持异步插件以及现代构建流程缺失等痛点。`markdown-exit`实现了 100%兼容`markdown-it`的 HTML 输出，原生提供 TypeScript 类型，并官方支持异步插件，采用 Vite 等现代构建工具。文章阐述了`markdown-exit`对 Vue 生态的深远影响，例如使 VitePress 和 Slidev 能够实现编译时异步代码拉取和远程片段嵌入，以及简化普通 Vue 项目在服务端渲染时的类型处理。此外，文章提供了快速上手指南、零成本迁移方案，并展望了未来将集成到 VitePress 和 Slidev 官方模板，以及探索 AST 缓存、WebAssembly 加速等高级特性的路线图，强调了 Vue 团队在优化底层基础设施方面的持续投入。",
+  "mainPoints": [
+    {
+      "point": "`markdown-exit`是`markdown-it`的 TypeScript 重构版，解决了原版缺乏异步插件和类型定义的问题",
+      "explanation": "通过采用 TypeScript 和现代构建工具，`markdown-exit`原生支持异步插件和类型定义，提升了开发效率和代码质量，弥补了`markdown-it`的长期不足。"
+    },
+    {
+      "point": "新工具对 Vue 生态系统带来显著提升，尤其在文档站和 SSR 场景",
+      "explanation": "`markdown-exit`能让 VitePress 和 Slidev 实现更复杂的异步内容处理，如远程片段嵌入，同时简化了 Vue 项目在服务端渲染时的类型管理，优化了开发者体验。"
+    },
+    {
+      "point": "提供零成本迁移路径，方便现有项目快速升级并享受新特性",
+      "explanation": "`markdown-exit`与`markdown-it`在 API 和渲染结果上保持 100%兼容，用户只需简单替换导入即可完成迁移，降低了采纳新技术的门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "Vue 团队成员真的是太卷了，又搞了个新玩具：`markdown-exit`------`markdown-it` 的 `TypeScript`「重构版」来了！",
+    "我找这东西太久了！缺少异步插件限制了我们太多玩法，真希望 **VitePress** 、**Slidev** 能用上。",
+    "把 Markdown 转成 HTML，但换了颗**\"TypeScript 心脏\"**。",
+    "等不及想在 VitePress、Slidev 上落地了！",
+    "把\"底层基础设施\"重新洗一遍牌，让上层开发者爽到飞起。"
+  ],
+  "tags": [
+    "前端开发",
+    "Markdown",
+    "TypeScript",
+    "Vue",
+    "VitePress"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 959,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762148104000,
+  "publishDateStr": "2025-11-03",
+  "publishDateTimeStr": "2025-11-03 05:35:04"
+}

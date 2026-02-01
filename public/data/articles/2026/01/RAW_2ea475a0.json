@@ -1,0 +1,57 @@
+{
+  "id": "RAW_2ea475a0",
+  "title": "适合很多公司和团队的 AI Coding 落地范式（二）",
+  "url": "https://juejin.cn/post/7591085154977251354",
+  "date": "2026-01-04 04:14:16",
+  "author": "LV技术派",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>大家好，我是 lv。</p>\n   <p>上一篇文章，我们聊了市面上不同 AI Coding 产品的分类、侧重点、优缺点以及面向的人群。</p>\n   <p>「<a href=\"https://juejin.cn/post/7584714813365747750\" target=\"_blank\" title=\"https://juejin.cn/post/7584714813365747750\">适合很多公司和团队的 AI Coding 落地范式（一）</a>」</p>\n   <p>接下来，我们将从上一篇提到的<strong>两种产品形态（AI Coding 平台类 &amp; AI Coding 基建类）</strong> 来分别探讨适合很多公司和团队的 <strong>两种 AI Coding 落地范式</strong>：</p>\n   <ul>\n    <li>\n     <p>AI Coding 平台工程化</p>\n    </li>\n    <li>\n     <p>AI Coding 基建工程化</p>\n    </li>\n   </ul>\n   <p>不多说，开整～</p>\n   <p><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fai.iamlv.cn%2Fme.html\" target=\"_blank\" title=\"https://ai.iamlv.cn/me.html\" ref=\"nofollow noopener noreferrer\">欢迎加入最懂 AI 的前端伙伴们群</a></p>\n   <p>市面上的 AI Coding 平台类产品很多，如 V0、Bolt New、Lovable 等。</p>\n   <p>这种产品面向的人群大部分都是非程序员，如产品经理、设计师、运营等。</p>\n   <p>在一个公司和团队内部，我发现大家使用这种产品的主要方式有<strong>三种</strong></p>\n   <h2 data-id=\"heading-1\">AI Coding 平台使用现状分析</h2>\n   <p><strong>第一种方式</strong>: 产品经理基于 Figma Make 或者 V0 出产品可交互性的原型，主要用来进行需求评审、设计评审、开发评审等，下游还是设计师参考原型进行设计稿的产出。</p>\n   <p>这种使用方式其实本质上是产品经理自身能力的补充或者说针对产品经理本职工作的提效，当然这种 AI Coding 平台产出的 <strong>可交互式原型</strong> 相比较于传统的产品原型，可以传递给团队的信息量也会更丰富。</p>\n   <p>这种方式，在任何公司和团队内部都可以进行尝试，因为它并没有改变原有的工作流程，只是针对产品经理的工作流进行了一定程度的优化。</p>\n   <p><strong>第二种方式</strong>: 需求方（产品、设计师、运营人员）基于 Figma Make 或者 V0 出产品可交互性的原型，满足需求就直接发给开发人员，开发人员基于原型再转成成符合公司规范（技术栈、代码规范等）的代码。</p>\n   <p>这种使用方式有点意思了，从 AI Coding 平台生成可交互原型 -&gt; 程序员基于原型进行代码的开发。</p>\n   <p>相当于把常规的：<strong>产品 -&gt; 设计师 -&gt; 程序员</strong> 的岗位职责进行了<strong>一定程度</strong>的合并。</p>\n   <p>产品和设计师合并在了一起，我就暂且叫做 <strong>Product Designer</strong>，简称 PD。</p>\n   <p><strong>第三种方式</strong>: 需求方（不特指产品经理，可能也是设计师、运营，甚至技术人员等）使用 V0 快速生成一个产品的 MVP，也可以迅速通过 Vercel 平台进行上线。</p>\n   <p>这种方式对于跟时间赛跑，需要快速验证需求、获得市场反馈的场景来说，倒是挺合适的，当然也仅限于 MVP 验证阶段，对于需要进行长期迭代的项目来说，这种方案可能就不太合适了。</p>\n   <p>这里的需求方，可以叫做：<strong>Product Design Engineer</strong>，简称 PDE，Design 和 Engineer 的能力其实是 AI Coding 平台赋予的。</p>\n   <p>好，先踩一脚，我们来总结一下这三种 AI Coding 平台的使用方式：</p>\n   <p>第一种，相当于是针对产品经理本身能力的<strong>补充</strong>，相当于是针对现有产品研发流程中单个角色的提效，但并没有改变原有的产品研发流程。</p>\n   <p>第二种是需求方使用 AI Coding 平台完完成可交互原型的输出，这个可交互的原型可以直接交付给程序员，相当于把 Product 和 Designer 的岗位合并在了一起，叫做 Product Designer，简称 PD。</p>\n   <p>第三种是需求方直接使用 AI Coding 平台完成了产品研发的全流程，相当于把 Product、Designer、Engineer 的岗位合并在了一起，叫做 Product Design Engineer，简称 PDE，这是对整体产品研发流程的重塑，但是注意，这种场景仅限于 MVP 验证阶段。</p>\n   <p>从第一种 -&gt; 第二种 -&gt; 第三种，其实对应了从单个角色的提效 -&gt; 部分研发流程的合并 -&gt; 整体产品研发流程的重塑。</p>\n   <p>这三种使用方式，大家可以根据自己公司或团队的实际情况，进行选择。</p>\n   <p>我们回到看似最牛逼的<strong>第三种使用方式</strong>，我们再思考一下：</p>\n   <p>第三种使用方式尽管是对整体产品研发流程的重塑，但也仅适用于 MVP 验证阶段，能否在长期迭代的项目中使用呢？</p>\n   <p><strong>有些场景能</strong>，我们接着往下聊。</p>\n   <h2 data-id=\"heading-2\">AI Coding 平台工程化</h2>\n   <p>作为长期迭代的项目来说，势必需要人工的参与，其实最核心的点是：如何保证<strong>人工介入的场景下，代码的可维护性</strong>，包括：</p>\n   <ul>\n    <li>\n     <p>契合团队项目技术栈，比如说 nextjs、react、vue、antd、shadcn、tailwindcss、私有组件库等，大家都能看懂，并且能够快速上手。</p>\n    </li>\n    <li>\n     <p>代码结构规范，比如说组件的文件结构、代码风格等，按照大家日常的开发习惯来。</p>\n    </li>\n    <li>\n     <p>...</p>\n    </li>\n   </ul>\n   <p>那我们的重点，其实就是能够基于 AI Coding 平台，生成符合团队项目技术栈、代码结构规范的代码，从而能够保证代码的可维护性。</p>\n   <p>我把这个工作叫做 <strong>AI Coding 平台工程化</strong>。</p>\n   <p>市面上的 AI Coding 平台，受限于定制化能力（定制符合团队项目技术栈、代码结构规范的代码生成器），私有化能力（在公司内部私有化部署）等。</p>\n   <p>因此，新轮子来了：Compoder，它代表的就是 AI Coding 平台工程化的产物。</p>\n   <blockquote>\n    <p>Compoder 是一个 AI 驱动的组件代码生成引擎，可以基于它定制基于特定技术栈（React、Vue、开源组件库、私有组件库）、特定业务场景（landing page 等）的组件代码生成器。</p>\n    <p>详见: <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FIamLiuLv%2Fcompoder\" target=\"_blank\" title=\"https://github.com/IamLiuLv/compoder\" ref=\"nofollow noopener noreferrer\">github.com/IamLiuLv/co…</a></p>\n   </blockquote>\n   <p>先上案例：Lading Page Codegen（Code Generator）</p>\n   <p>这个 Code Generator 能够针对用户的需求使用 Nextjs、PageUI（一个构建 LandingPage 的组件库，<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fdanmindru%2Fpage-ui%25EF%25BC%2589\" target=\"_blank\" title=\"https://github.com/danmindru/page-ui%EF%BC%89\" ref=\"nofollow noopener noreferrer\">github.com/danmindru/p…</a> 来生成对应的 Landing Page 代码。</p>\n   <p>我们使用 Compoder，可以定制这个 Lading Page Codegen 的代码生成规则，从而能够保证代码的可维护性。</p>\n   <ul>\n    <li>技术栈定制，如私有组件库定制（pageui 不是很出名，llm 不包含其知识，相当于是 <strong>私有组件库</strong> 场景）</li>\n   </ul>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/70b26c6fbb9f49389ba43a4a08912223~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=TrG5NaXd2vSOB00JIsjGsouNIQE%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <ul>\n    <li>代码规范定制，如组件的文件结构、代码风格等</li>\n   </ul>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/9773df90135143f3a883bd771057701e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=fdKMf941BInW4qxxKiXP9mW6zeI%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>最终效果，我们从用户的使用视角来看：</p>\n   <ol>\n    <li>进入刚刚定制好的 Landing Page Codegen，输入需求，选择合适的模型。</li>\n   </ol>\n   <p>需求是把 Compoder 的 Readme 给了过去（<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FIamLiuLv%2Fcompoder%2Fblob%2Fmain%2FREADME.md%25EF%25BC%2589%25EF%25BC%258C\" target=\"_blank\" title=\"https://github.com/IamLiuLv/compoder/blob/main/README.md%EF%BC%89%EF%BC%8C\" ref=\"nofollow noopener noreferrer\">github.com/IamLiuLv/co…</a> 生成 Compoder 本身的 Landing Page 代码。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a1c415e321984ed3b5bfa034d9114b58~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=Mq0Ym%2F8uGfnjpadvcTd2A%2FTV%2BLM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <ol start=\"2\">\n    <li>等待代码生成完成，在线查看效果。</li>\n   </ol>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/6058d75f1ddd46ef902ecb2925ed8df9~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=qArttWKZCPbl0OEa3QxrH6aD9nU%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/3c520a4039244346a217ac33707b9735~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=UJitc31RKQ7aMPh2I4wrYk6biUg%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/6f2e648c98024113ad78e4372ee157ff~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=B6LDdcy%2FmFSXxor9sD7bHk3zedQ%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>从用户的使用角度来看，本身不需要关心代码的生成原理，只需要关心效果是否满意即可，其他的代码生成细节，都交给了 Compoder（AI Coding 平台工程化的产物） 内部来实现。</p>\n   <p>至于 Compoder 内部实现原理，涉及到很多前端 + AI 相关的知识点，比如 Prompt 设计、Workflow 设计、RAG 理念，怎么基于私有组件生成代码等，怎么实现代码渲染器等等。</p>\n   <p>本篇就不展开讲了，想深入学习的同学可以看：<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fdoc.iamkasong.com%2Fdocs%2F%25E7%25AC%25AC%252029%2520%25E8%25AF%25BE%2520%25E5%25AE%259E%25E6%2588%2598%25E4%25BA%258C%2520Compoder%2520%25E9%25A1%25B9%25E7%259B%25AE%25E4%25BB%258B%25E7%25BB%258D.html\" target=\"_blank\" title=\"https://doc.iamkasong.com/docs/%E7%AC%AC%2029%20%E8%AF%BE%20%E5%AE%9E%E6%88%98%E4%BA%8C%20Compoder%20%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D.html\" ref=\"nofollow noopener noreferrer\">Compoder 项目介绍</a></p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/d52e59823eaf4bcdbc148d67b4587d6b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTFbmioDmnK_mtL4=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768104855&amp;x-signature=Fw4o8Bl%2FWLuePi56JcJ2M70zwHA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>言归正传。</p>\n   <p>至此，AI Coding 平台化工程搞定，作为需求方（产品、设计师、运营、技术人员）来说，可以基于 Compoder 的 Codegen 快速生成符合团队项目技术栈、代码结构规范的代码，同时还能够保证代码的可维护性。</p>\n   <p>本着一篇文章把一件事聊透的原则，本篇就先聚焦在 AI Coding 平台化工程这块。</p>\n   <p>下一篇，我们接着聊 AI Coding 基建工程化。</p>\n   <hr>\n   <p>读后思考：</p>\n   <ul>\n    <li>\n     <p>AI Coding 平台化工程的缺点？</p>\n    </li>\n    <li>\n     <p>技术人员自己出了一个产品把自己给干掉了？</p>\n    </li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文详解了企业或团队如何通过 AI Coding 平台工程化，结合定制化代码生成引擎 Compoder，实现高效且规范的 AI 辅助代码生成，满足长期项目迭代需求。",
+  "oneSentenceSummary": "本文详解了企业或团队如何通过 AI Coding 平台工程化，结合定制化代码生成引擎 Compoder，实现高效且规范的 AI 辅助代码生成，满足长期项目迭代需求。",
+  "summary": "文章深入探讨了针对企业和团队的 AI Coding 落地范式之“AI Coding 平台工程化”。作者首先分析了当前 AI Coding 平台的三种主要使用现状：产品经理能力补充、Product Designer 岗位合并、以及 Product Design Engineer 推动 MVP 快速验证。在此基础上，文章详细阐述了在长期迭代项目中实现 AI Coding 平台工程化的必要性，强调需确保生成代码的可维护性，包括契合团队技术栈和代码规范。文章提出了一个名为 Compoder 的 AI 驱动组件代码生成引擎作为解决方案，并通过一个 Landing Page Codegen 案例，展示了如何定制生成符合特定技术栈（如 Nextjs、PageUI）和代码规范的代码，从而实现 AI Coding 平台在需求方（产品、设计师、运营、技术人员）侧的工程化应用。旨在帮助团队成员快速生成高质量代码，提升效率。",
+  "mainPoints": [
+    {
+      "point": "AI Coding 平台当前存在三种使用方式，对应不同程度的效率提升和流程重塑。",
+      "explanation": "这包括产品经理能力补充（提效单个角色），Product Designer 岗位合并（重塑部分研发流程），以及 Product Design Engineer 推动 MVP 快速验证（重塑整体流程，但主要适用于 MVP 阶段）。"
+    },
+    {
+      "point": "AI Coding 平台工程化旨在解决长期迭代项目中代码的可维护性问题。",
+      "explanation": "通过定制符合团队技术栈和代码规范的生成器，确保 AI 生成代码的质量和可维护性，使其能被人工有效介入和维护。"
+    },
+    {
+      "point": "Compoder 项目是实现 AI Coding 平台工程化的一个具体范式。",
+      "explanation": "它作为一个 AI 驱动的组件代码生成引擎，允许团队定制代码生成规则，以生成符合特定技术栈（如 Nextjs、私有组件库）和代码规范的前端代码。"
+    },
+    {
+      "point": "通过定制化的 Code Generator，用户可以从更高维度直接生成符合业务需求的页面代码。",
+      "explanation": "例如 Landing Page Codegen 案例，用户只需输入需求，Compoder 就能生成符合预设技术栈和代码规范的完整页面代码，大幅简化开发流程。"
+    }
+  ],
+  "keyQuotes": [
+    "Compoder 是一个 AI 驱动的组件代码生成引擎，可以基于它定制基于特定技术栈（React、Vue、开源组件库、私有组件库）、特定业务场景（landing page 等）的组件代码生成器。",
+    "作为需求方（产品、设计师、运营、技术人员）来说，可以基于 Compoder 的 Codegen 快速生成符合团队项目技术栈、代码结构规范的代码，同时还能够保证代码的可维护性。",
+    "我们回到看似最牛逼的第三种使用方式，我们再思考一下：第三种使用方式尽管是对整体产品研发流程的重塑，但也仅适用于 MVP 验证阶段，能否在长期迭代的项目中使用呢？有些场景能，我们接着往下聊。"
+  ],
+  "tags": [
+    "AI Coding",
+    "前端工程化",
+    "LLM应用",
+    "代码生成",
+    "Compoder"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 85,
+  "wordCount": 2386,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767500056000,
+  "publishDateStr": "01-04",
+  "publishDateTimeStr": "2026-01-04 04:14:16"
+}

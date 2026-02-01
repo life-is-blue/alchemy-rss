@@ -1,0 +1,54 @@
+{
+  "id": "RAW_40770893",
+  "title": "GPT-5.1 发布：开发者的新选择",
+  "url": "https://simonwillison.net/2025/Nov/13/gpt-51/#atom-everything",
+  "date": "2025-11-13 23:59:35",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://openai.com/index/gpt-5-1-for-developers/\">Introducing GPT-5.1 for developers</a></strong>. OpenAI announced GPT-5.1 yesterday, calling it <a href=\"https://openai.com/index/gpt-5-1/\">a smarter, more conversational ChatGPT</a>. Today they've added it to their API.</p>\n   <p>We actually got four new models today:</p>\n   <ul>\n    <li><a href=\"https://platform.openai.com/docs/models/gpt-5.1\">gpt-5.1</a></li>\n    <li><a href=\"https://platform.openai.com/docs/models/gpt-5.1-chat-latest\">gpt-5.1-chat-latest</a></li>\n    <li><a href=\"https://platform.openai.com/docs/models/gpt-5.1-codex\">gpt-5.1-codex</a></li>\n    <li><a href=\"https://platform.openai.com/docs/models/gpt-5.1-codex-mini\">gpt-5.1-codex-mini</a></li>\n   </ul>\n   <p>There are a lot of details to absorb here.</p>\n   <p>GPT-5.1 introduces a new reasoning effort called \"none\" (previous were minimal, low, medium, and high) - and none is the new default.</p>\n   <blockquote>\n    <p>This makes the model behave like a non-reasoning model for latency-sensitive use cases, with the high intelligence of GPT‑5.1 and added bonus of performant tool-calling. Relative to GPT‑5 with 'minimal' reasoning, GPT‑5.1 with no reasoning is better at parallel tool calling (which itself increases end-to-end task completion speed), coding tasks, following instructions, and using search tools---and supports <a href=\"https://platform.openai.com/docs/guides/tools-web-search?api-mode=responses\">web search⁠</a> in our API platform.</p>\n   </blockquote>\n   <p>When you DO enable thinking you get to benefit from a new feature called \"adaptive reasoning\":</p>\n   <blockquote>\n    <p>On straightforward tasks, GPT‑5.1 spends fewer tokens thinking, enabling snappier product experiences and lower token bills. On difficult tasks that require extra thinking, GPT‑5.1 remains persistent, exploring options and checking its work in order to maximize reliability.</p>\n   </blockquote>\n   <p>Another notable new feature for 5.1 is <a href=\"https://platform.openai.com/docs/guides/prompt-caching#extended-prompt-cache-retention\">extended prompt cache retention</a>:</p>\n   <blockquote>\n    <p>Extended prompt cache retention keeps cached prefixes active for longer, up to a maximum of 24 hours. Extended Prompt Caching works by offloading the key/value tensors to GPU-local storage when memory is full, significantly increasing the storage capacity available for caching.</p>\n   </blockquote>\n   <p>To enable this set <code>\"prompt_cache_retention\": \"24h\"</code> in the API call. Weirdly there's no price increase involved with this at all. I <a href=\"https://x.com/simonw/status/1989104422832738305\">asked about that</a> and OpenAI's Steven Heidel <a href=\"https://x.com/stevenheidel/status/1989113407149314199\">replied</a>:</p>\n   <blockquote>\n    <p>with 24h prompt caching we move the caches from gpu memory to gpu-local storage. that storage is not free, but we made it free since it moves capacity from a limited resource (GPUs) to a more abundant resource (storage). then we can serve more traffic overall!</p>\n   </blockquote>\n   <p>The most interesting documentation I've seen so far is in the new <a href=\"https://cookbook.openai.com/examples/gpt-5/gpt-5-1_prompting_guide\">5.1 cookbook</a>, which also includes details of the new <code>shell</code> and <code>apply_patch</code> built-in tools. The <a href=\"https://github.com/openai/openai-cookbook/blob/main/examples/gpt-5/apply_patch.py\">apply_patch.py implementation</a> is worth a look, especially if you're interested in the advancing state-of-the-art of file editing tools for LLMs.</p>\n   <p>I'm still working on <a href=\"https://github.com/simonw/llm/issues/1300\">integrating the new models into LLM</a>. The Codex models are Responses-API-only.</p>\n   <p>I got this pelican for GPT-5.1 default (no thinking):</p>\n   <p><img alt=\"The bicycle wheels have no spokes at all, the pelican is laying quite flat on it\" src=\"https://static.simonwillison.net/static/2025/gpt-5.1-pelican.png\"></p>\n   <p>And this one with reasoning effort set to high:</p>\n   <p><img alt=\"This bicycle has four spokes per wheel, and the pelican is sitting more upright\" src=\"https://static.simonwillison.net/static/2025/gpt-5.1-high-pelican.png\"></p>\n   <p>These actually feel like a <a href=\"https://simonwillison.net/2025/Aug/7/gpt-5/#and-some-svgs-of-pelicans\">regression from GPT-5</a> to me. The bicycles have less spokes!</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9151/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 介绍了 OpenAI 面向开发者的 GPT-5.1 模型，重点介绍了“无推理”模式、自适应推理和扩展 Prompt 缓存保留等新功能。",
+  "oneSentenceSummary": "Simon Willison 介绍了 OpenAI 面向开发者的 GPT-5.1 模型，重点介绍了“无推理”模式、自适应推理和扩展 Prompt 缓存保留等新功能。",
+  "summary": "OpenAI 在发布公告后，立即通过 API 向开发者提供 GPT-5.1 模型。新模型包括 `gpt-5.1`、`gpt-5.1-chat-latest`、`gpt-5.1-codex` 和 `gpt-5.1-codex-mini`。其中一大亮点是默认启用的“无推理”模式，专为对延迟敏感的应用设计，在并行工具调用、编码、指令遵循和网络搜索集成方面表现更佳。显式启用推理时，GPT-5.1 采用自适应推理，动态调整令牌用量，提高简单任务效率，并保持复杂问题的处理能力。另一关键特性是扩展 Prompt 缓存保留，通过将键/值张量卸载到 GPU 本地存储，提升系统容量，使缓存的前缀保持活动状态长达 24 小时且不增加成本。作者还介绍了新的 5.1 cookbook，其中提供了 `shell` 和 `apply_patch` 等内置工具的示例和详细信息，这些工具对基于高级 LLM 的文件编辑非常有用。Simon Willison 最后提到，与 GPT-5 相比，GPT-5.1 在图像生成质量方面可能存在退步。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.1 默认采用“无推理”模式，提升了对延迟敏感任务的性能。",
+      "explanation": "这种新的默认推理模式改进了工具调用、编码和指令遵循，使模型对实时应用更有效，并集成了网络搜索功能。"
+    },
+    {
+      "point": "GPT-5.1 中扩展的 Prompt 缓存保留允许缓存持续长达 24 小时而无需额外成本。",
+      "explanation": "通过利用 GPU 本地存储，显著提高了缓存容量，减少重复 Prompt 的令牌消耗，提高系统效率，从而使开发者受益。"
+    },
+    {
+      "point": "GPT-5.1 集成了自适应推理和新的内置工具，以实现更智能和灵活的 AI 应用。",
+      "explanation": "自适应推理根据任务复杂性优化令牌支出，而 cookbook 中的 `shell` 和 `apply_patch` 等新工具展示了文件编辑和自动化的高级功能。"
+    }
+  ],
+  "keyQuotes": [
+    "这使得该模型在对延迟敏感的场景下，能够像非推理模型一样运行，同时具备 GPT-5.1 的高智能和强大的工具调用能力。",
+    "在简单的任务上，GPT-5.1 花费更少的令牌进行思考，从而实现更快捷的产品体验和更低的令牌费用。对于需要额外思考的困难任务，GPT-5.1 仍然坚持不懈，探索各种选项并检查其工作，以最大限度地提高可靠性。",
+    "扩展 Prompt 缓存保留使缓存的前缀保持活动状态更长时间，最长可达 24 小时。",
+    "通过 24 小时的 Prompt 缓存，我们将缓存从 GPU 内存移动到 GPU 本地存储。该存储并非免费，但我们使其免费，因为它将容量从有限的资源 (GPU) 转移到更丰富的资源 (存储)。然后我们可以提供更多的整体流量！"
+  ],
+  "tags": [
+    "LLM",
+    "OpenAI",
+    "GPT-5.1",
+    "API",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 402,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763078375000,
+  "publishDateStr": "2025-11-13",
+  "publishDateTimeStr": "2025-11-13 23:59:35"
+}

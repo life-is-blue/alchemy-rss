@@ -1,0 +1,54 @@
+{
+  "id": "RAW_0d8911",
+  "title": "Slack 通过自动化显著提升可访问性测试效率",
+  "url": "https://www.infoq.com/news/2025/02/slack-accessibility-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-10 00:00:00",
+  "author": "Aditya Kulkarni",
+  "siteName": "InfoQ",
+  "content": "\n \n \n  <div class=\"actions__left actions__sidebar article__actions\"><br><div class=\"bookmarkReading\"><div class=\"my-0 button__dropdown dropdown reading_list dropdown__center\" id=\"showBookmarks\"><div class=\"dropdown__holder\"><div class=\"dropdown__content\"><ul class=\"no-style dropdown__nav\">\n       </ul>\n      </div>\n     </div>\n    </div>\n    <div id=\"toastContainer\" class=\"toast-none toast-hide\">\n     <div class=\"toast\">\n      <span></span>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"article__data\">\n   <p>Slack recently integrated automated accessibility testing into its software development lifecycle to improve user experience for individuals with disabilities.</p>\n   <p><a href=\"https://www.linkedin.com/in/natalie-stormann-6894291a/\">Natalie Stormann</a>, Software Engineer at Slack, detailed the journey in <a href=\"https://slack.engineering/automated-accessibility-testing-at-slack/\">Slack's engineering blog</a>, communicating the company's ongoing adherence to Web Content Accessibility Guidelines (WCAG).</p>\n   <p>Slack has internal standards and the company further collaborates with external accessibility testers as well. These standards align with <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, an internationally recognized benchmark for web accessibility. While manual testing remains important for identifying nuanced accessibility issues, Slack recognized the need to augment these efforts with automation.</p>\n   <p>In 2022, Slack started incorporating automated tests into its development workflow to proactively address accessibility violations. The company chose <a href=\"https://www.deque.com/axe/\">Axe</a>, a widely-used accessibility testing tool, for its flexibility and WCAG alignment. Integrating Axe into Slack's existing test frameworks presented some challenges. Embedding Axe checks directly into React Testing Library (RTL) and Jest created conflicts, further complicating the development process.</p>\n   <p>Slack accessibility team envisioned using Playwright, a testing framework compatible with Axe via the <a href=\"https://www.npmjs.com/package/@axe-core/playwright\">@axe-core/playwright</a> package. However, integrating Axe checks into Playwright's Locator object posed its own set of challenges. To overcome these hurdles, Slack adopted a customized approach, strategically adding accessibility checks in Playwright tests after key user interactions to ensure content was fully rendered. Slack also customized Axe checks by filtering out irrelevant rules and focusing initially on critical violations. The checks were integrated into Playwright’s fixture model, and developers were given a custom function <code>runAxeAndSaveViolations</code> to trigger checks within test specifications.</p>\n   <p>The tech community on <a href=\"https://news.ycombinator.com/item?id=42628934\">Hacker News took notice</a> of this blog. One of the maintainers of axe accessibility testing engine with HN username <a href=\"https://news.ycombinator.com/user?id=dbjorge\">dbjorge</a> commented on the post,</p>\n   <blockquote>\n    <p>It's awesome to see such a detailed writeup of how folks are building on our team's work…. It's very enlightening to see which features the Slack folks prioritized for their setup and to see some of the stuff they were able to do by going deep on integration with Playwright specifically. It's not often you are lucky enough to get feedback as strong as \"we cared about &lt;feature&gt; enough to invest a bunch of engineering time into it.</p>\n   </blockquote>\n   <p>To improve reporting, Slack included violation details and screenshots using Playwright’s HTML Reporter and customized error messages. Their testing strategy involved a non-blocking test suite mirroring critical functionality tests, with accessibility checks added to avoid redundancy. Developers can run tests locally, schedule periodic runs, or integrate them into continuous integration (CI) pipelines. The accessibility team further collaborates with developers to triage automated violations, using a Jira workflow for tracking.</p>\n   <p>Regular audits ensure coverage and prevent duplicate checks, with Slack exploring AI-driven solutions to automate this process.</p>\n   <p>Slack aims to continue balancing automation and manual testing. Future plans include developing blocking tests for core functionalities such as keyboard navigation, and using AI to refine test results and automate the placement of accessibility checks.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Slack Enhances Accessibility Testing Through Automation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Aditya Kulkarni\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/slack-accessibility-testing/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1739188800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n \n",
+  "aiSummary": "Slack 通过 Axe 和 Playwright 实现可访问性测试自动化，从而提升用户体验并符合 WCAG 标准。",
+  "oneSentenceSummary": "Slack 通过 Axe 和 Playwright 实现可访问性测试自动化，从而提升用户体验并符合 WCAG 标准。",
+  "summary": "Slack 将自动化可访问性测试融入软件开发流程，旨在提升残障用户的体验。他们采用了业界广泛使用的可访问性测试工具 Axe，并将其与端到端测试框架 Playwright 深度集成。为了实现更精准的测试，他们定制了 Axe 检查规则，并在关键用户交互后，有策略地将其嵌入到 Playwright 测试流程中。同时，Slack 还对 Axe 检查进行了定制，优先关注关键违规问题，并过滤掉不相关的规则。为了不影响主流程，他们还建立了一个非阻塞的测试套件，用于镜像关键功能测试，确保在不中断开发流程的前提下进行可访问性检查。为了更清晰地展示问题，Slack 在测试报告中加入了违规详情和屏幕截图，方便开发者快速定位和修复。Slack 致力于在自动化和手动测试之间找到最佳平衡点，并积极探索 AI 驱动的解决方案，以实现可访问性检查的自动部署，同时为核心功能开发阻塞测试，确保关键流程的可访问性。",
+  "mainPoints": [
+    {
+      "point": "自动化可访问性测试显著提升各类用户的整体使用体验。",
+      "explanation": "通过引入自动化测试，Slack 能够先于用户发现并解决可访问性违规问题，从而显著改善残障用户的体验。"
+    },
+    {
+      "point": "通过定制化的 Axe 和 Playwright 集成，成功克服了测试框架兼容性等挑战。",
+      "explanation": "Slack 通过定制 Axe 检查，并在关键用户交互后将其策略性地嵌入 Playwright 测试流程，确保内容完整呈现。"
+    },
+    {
+      "point": "平衡自动化和手动测试对于全面保障可访问性至关重要。",
+      "explanation": "Slack 致力于在自动化和手动测试之间找到平衡，并借助 AI 技术优化测试结果，实现可访问性检查的智能部署。"
+    }
+  ],
+  "keyQuotes": [
+    "Slack 最近将自动化可访问性测试集成到其软件开发周期中，以改善残疾人士的用户体验。",
+    "虽然手动测试对于识别细微的可访问性问题仍然很重要，但 Slack 认识到需要通过自动化来增强这些工作。",
+    "为了改进报告，Slack 使用 Playwright 的 HTML 报告器和自定义错误消息，包括了违规详情和屏幕截图。",
+    "Slack 旨在继续平衡自动化和手动测试"
+  ],
+  "tags": [
+    "可访问性测试",
+    "自动化",
+    "WCAG",
+    "Axe",
+    "Playwright"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 471,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739145600000,
+  "publishDateStr": "2025-02-10",
+  "publishDateTimeStr": "2025-02-10 00:00:00"
+}

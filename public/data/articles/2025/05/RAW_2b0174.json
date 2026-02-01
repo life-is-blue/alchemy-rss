@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2b0174",
+  "title": "ScienceOne 正式发布：基于科学基础大模型的智能科研平台 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-01",
+  "date": "2025-05-01 08:12:32",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>编辑 | ScienceAI</p>\n  <p>4月29日，中国科学院自动化研究所（以下简称“自动化所”）在第八届数字中国建设峰会上发布基于科学基础大模型的智能科研平台——ScienceOne。自动化所副所长曾大军研究员现场展示了首发的两个产品S1-Literature文献助手和S1-ToolChain科学工具调度台。</p>\n  <p>应用AI技术加速科研发现、重塑科研范式已成为全球科技发展的制高点。自动化所牵头，联合中国科学院计算机网络信息中心、文献情报中心、数学与系统科学研究院、高能物理研究所等兄弟单位以及中科闻歌、中科紫东太初两个产业化平台联合攻关，率先构建了基于架构集成方案的科学基础大模型，并研发了以其为基座的智能科研平台ScienceOne，支持跨学科成果涌现，推动实现多学科协同的智能科研新范式。</p>\n  <p><img data-ratio=\"0.6069142125480154\" data-type=\"jpeg\" data-w=\"781\" height=\"316\" width=\"521\" data-backw=\"521\" data-backh=\"316\" data-imgfileid=\"100023254\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8518737a-8cb9-43bf-f04f-02a3d088cb00/public\" data-original-style=\"width: 100%;height: auto !important;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/01d9b78b-0aed-4190-88bf-c065692f1e7f/640.jpeg\" data-sec-load-status=\"2\" data-report-img-idx=\"0\" alt=\"图片\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>发布现场</p>\n  <p>从理解科学数据到自动干湿实验，专攻科学探索</p>\n  <p>近年来，人工智能技术已大规模应用到科学研究中，但仍以各学科微调通用大模型和各自重复造轮子的作坊模式为主，难以解决通用大模型幻觉强、科学专识薄弱、逻辑能力差等挑战。</p>\n  <p>作为专注于赋能科学研究的人工智能平台，ScienceOne依托科学基础大模型，瞄准各学科的共性科学研究需求，从数据理解、计算优化、推理评估三个维度实现了能力突破，可平台式、规模化地赋能“假设提出-方案规划-仿真推演-实验验证-规律发现”科研全流程。</p>\n  <p>全能AI科研助手工具，加速科学发现</p>\n  <p>ScienceOne本次发布：S1-Literature文献助手和S1-ToolChain科学工具调度台。</p>\n  <p>S1-Literature文献助手由自动化所联合中国科学院文献情报中心研发，依托国内最大的科技文献数据库和各类实时开源科技资料，可实现高水平的文献理解与综述自动生成，深度理解常用的科学数据类型，准确解读科学公式与专业表达。</p>\n  <p>“请写一篇主题为……的文献综述”只需要发出简短的指令，文献助手即可自动整理综述骨架，一次性梳理上千篇文献，生成详细的综述内容。辅助用户精读论文时，文献助手可提供思维导图、引文回溯、研究图谱、关键技术路径抽取等工具。基于科学基础大模型，文献助手还可提供多学科领域知识问答、科学数据解读等功能。</p>\n  <p><img data-ratio=\"0.490625\" data-type=\"png\" data-w=\"640\" height=\"272\" width=\"554\" data-backw=\"546\" data-backh=\"268\" data-imgfileid=\"100023255\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/de8fb7ea-7c82-4cad-d44c-99ade40c7200/public\" data-original-style=\"width: 100%;height: auto !important;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/901a736b-ac49-4f65-86b2-283e130f7eb8/640.png\" data-order=\"1\" alt=\"图片\" data-before-load-time=\"1746087066241\" data-report-img-idx=\"3\" data-fail=\"0\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>S1-Literature界面</p>\n  <p>目前，文献助手已完成数学、物理、材料等学科适配，未来将动态扩展并实现全学科覆盖。</p>\n  <p>S1-ToolChain科学工具调度台实现了跨学科数据理解、科学计算与仿真等工具的自主协同调用，通过科学模型标准协议，支持接入各类通用与专业科学模型和工具，以智能体进行工具流编排和任务串联。当前，科学工具调度台已集成数理化与工程学科近300个多模态科学数据分析、微分方程求解、离散优化、跨尺度仿真等工具。</p>\n  <p>“请完成蛋白质序列补全”，当科研人员输入科研需求，S1-ToolChain科学工具调度台通过科学基础大模型识别研究意图，调用自主研发的序列理解模型分析序列结构，做出补全序列任务的规划与编排，进而调用科学计算工具和ESM3专业模型完成蛋白质序列补全，实现科研工作的闭环。</p>\n  <p><img data-ratio=\"0.6245487364620939\" data-type=\"jpeg\" data-w=\"831\" height=\"346\" width=\"554\" data-backw=\"546\" data-backh=\"341\" data-imgfileid=\"100023253\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b2021290-fcb2-486c-ee88-49ef60764000/public\" data-original-style=\"width: 100%;height: auto !important;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/92daaf25-3f24-4732-8827-e592f674f5e0/640.jpeg\" alt=\"图片\" data-before-load-time=\"1746087066301\" data-report-img-idx=\"2\" data-fail=\"0\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>S1-ToolChain界面</p>\n  <p>汇聚建制化科研院所优势，加速AI赋能科研创新</p>\n  <p>当前，人工智能与科学研究的深度融合，在生物、材料、制药等多个领域取得了突破性成果，正在加速催生形成新一代多学科协同的科研范式，进一步拓展人工智能与科学研究融合的深度与广度。自动化所瞄准这一科研范式变革关键点，充分发挥建制化学科体系和多学科顶尖科研队伍储备的优势，基于科学基础大模型及智能科研平台ScienceOne，为科学研究持续提供强大的人工智能技术供给和全学科的场景支持。</p>\n  <p>下一步，研发团队将开源科学基础大模型S1-Base，并发布以此为基座的科学智能体工厂S1-Agent，共同形成平台化工具体系，助力打造AI4Science新范式。</p>\n </body>\n</html>",
+  "aiSummary": "中国科学院自动化所发布 ScienceOne 智能科研平台，该平台基于科学基础大模型，旨在加速科研发现，重塑科研范式，并推出文献助手和科学工具调度台两款产品。",
+  "oneSentenceSummary": "中国科学院自动化所发布 ScienceOne 智能科研平台，该平台基于科学基础大模型，旨在加速科研发现，重塑科研范式，并推出文献助手和科学工具调度台两款产品。",
+  "summary": "中国科学院自动化研究所在第八届数字中国建设峰会上正式发布了基于科学基础大模型的智能科研平台 ScienceOne。该平台旨在通过应用 AI 技术加速科研发现，重塑科研范式，解决通用大模型在科研应用中幻觉强、科学专识薄弱、逻辑能力差等局限性。ScienceOne 依托科学基础大模型，从数据理解、计算优化和推理评估三个维度实现了能力突破，可平台式、规模化地赋能科研全流程。本次发布包括 S1-Literature 文献助手和 S1-ToolChain 科学工具调度台两款产品，分别用于文献理解与综述自动生成以及跨学科科学工具的自主协同调用。未来，研发团队还将开源科学基础大模型 S1-Base，并发布科学智能体工厂 S1-Agent，助力打造 AI4Science 新范式。",
+  "mainPoints": [
+    {
+      "point": "ScienceOne 平台旨在解决通用大模型在科研应用中的局限性。",
+      "explanation": "通过构建科学基础大模型，解决通用大模型幻觉强、科学专识薄弱、逻辑能力差等问题，更好地服务于科研需求。"
+    },
+    {
+      "point": "S1-Literature 文献助手可实现高水平的文献理解与综述自动生成。",
+      "explanation": "依托国内最大的科技文献数据库，能够深度理解科学数据类型，准确解读科学公式与专业表达，辅助用户进行文献研究。"
+    },
+    {
+      "point": "S1-ToolChain 科学工具调度台实现了跨学科数据理解和科学计算工具的自主协同调用。",
+      "explanation": "通过科学模型标准协议，支持接入各类通用与专业科学模型和工具，以智能体进行工具流编排和任务串联，实现科研工作的闭环。"
+    }
+  ],
+  "keyQuotes": [
+    "应用 AI 技术加速科研发现、重塑科研范式已成为全球科技发展的制高点。",
+    "ScienceOne 依托科学基础大模型，瞄准各学科的共性科学研究需求，从数据理解、计算优化、推理评估三个维度实现了能力突破。",
+    "下一步，研发团队将开源科学基础大模型 S1-Base，并发布以此为基座的科学智能体工厂 S1-Agent，共同形成平台化工具体系，助力打造 AI4Science 新范式。"
+  ],
+  "tags": [
+    "科研平台",
+    "ScienceOne",
+    "科学基础大模型",
+    "AI4Science",
+    "文献助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1531,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746087152000,
+  "publishDateStr": "2025-05-01",
+  "publishDateTimeStr": "2025-05-01 08:12:32"
+}

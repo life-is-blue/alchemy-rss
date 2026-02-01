@@ -1,0 +1,54 @@
+{
+  "id": "RAW_b797b088",
+  "title": "AWS 推出 EC2 实例认证",
+  "url": "https://www.infoq.com/news/2025/10/ec2-instance-attestation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-18 13:05:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has <a href=\"https://aws.amazon.com/about-aws/whats-new/2025/09/aws-announces-ec2-instance-attestation/\">introduced EC2 instance attestation</a>, a new security feature that enables customers to verify that their virtual machines are running approved software configurations in a cryptographically secure manner. The capability is powered by the Nitro Trusted Platform Module (<a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html\">NitroTPM</a>) and Attestable AMIs.</p>\n   <p>With <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm-attestation.html\">EC2 instance attestation</a>, customers can cryptographically verify that an EC2 instance is running trusted configurations and software, addressing a key concern for organizations with strict security and compliance requirements. Previously, it was possible to remove operator access from administrators and users on EC2, but there was no way to verify this had been done. <a href=\"https://www.linkedin.com/in/bean-jonathan/\">J.D. Bean</a>, principal security architect at AWS, <a href=\"https://www.linkedin.com/posts/bean-jonathan_im-thrilled-to-share-the-release-of-ec2-activity-7376379087356964864-NYX0/\">explains</a>:</p>\n   <blockquote>\n    <p>With this capability, customers will be able to utilize the full potential of Nitro-based EC2 instances, including high-performance networking and AI accelerator hardware, while raising the bar on trusted computing paradigms such as multiparty computation.</p>\n   </blockquote>\n   <p>Similar to the functionality previously available only in <a href=\"https://aws.amazon.com/ec2/nitro/nitro-enclaves/\">Nitro Enclaves</a>, the new feature extends those protections to standard EC2 instances. Bean adds:</p>\n   <blockquote>\n    <p>This release provides tooling and interfaces for customers to build hardened and constrained Amazon Machine Images (AMI), which are designed for zero operator access and high assurance. These attestable AMIs can provide proof to external systems of the system contents to inform authentication and authorization decisions.</p>\n   </blockquote>\n   <p>An <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attestable-ami.html\">Attestable AMI</a> is an AMI with a corresponding cryptographic hash that represents all of its contents. According to the documentation, this hash is generated during the AMI creation process and is calculated based on the AMI’s complete contents, including applications, code, and the boot process.</p>\n   <p>With the new feature, keys and other secrets can be decrypted using AWS Key Management Service (KMS) only by EC2 instances running an approved AMI. Additionally, organizations can build a certificate authority (CA) that issues certificates solely to instances verified as running approved AMIs. On a popular <a href=\"https://news.ycombinator.com/item?id=45364655\">Hacker News thread</a>, some users questioned whether the feature would see significant adoption. User <em>jiggawatts</em> commented:</p>\n   <blockquote>\n    <p>Who is this for? I don’t know of any customers that are this paranoid but also trust the public cloud.</p>\n   </blockquote>\n   <p>Corey Quinn, chief cloud economist at The Duckbill Group, <a href=\"https://www.lastweekinaws.com/newsletter/\">comments</a>:</p>\n   <blockquote>\n    <p>This is useful for folks who trust their cloud providers but also don't trust their cloud providers in very specific combinations.</p>\n   </blockquote>\n   <p>Yan Cui, AWS Hero and serverless expert, <a href=\"https://www.linkedin.com/posts/theburningmonk_amazon-ec2-instance-attestation-activity-7382079212951592960-DRq-\">has a different opinion</a>:</p>\n   <blockquote>\n    <p>The new EC2 instance attestation is a game changer for some use cases around enterprise SaaS and compliance (...) Many enterprises prefer to run the SaaS software internally so their sensitive data doesn't leave their network. But then the SaaS provider has no way to safeguard their intellectual property, the software. With attestable AMIs, the SaaS provider can publish an AMI with their software (say, an AI model). Clients can launch EC2 instances from the image and run the software, but cannot access its content.</p>\n   </blockquote>\n   <p>AWS is not the only cloud provider that enables customers to verify that a virtual machine is running trusted configurations and software: both <a href=\"https://cloud.google.com/confidential-computing/confidential-vm/docs/attestation\">Google Cloud</a> and <a href=\"https://learn.microsoft.com/en-us/azure/confidential-computing/guest-attestation-confidential-vms\">Azure</a> offer similar attestation capabilities.</p>\n   <p>EC2 Instance Attestation is available in all AWS regions at no additional cost for the feature itself. Standard storage charges apply for AMIs, and AWS KMS pricing applies for key operations if the service is used.</p>\n   <p>A <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attestable-ami.html\">user guide</a> is available for building an Amazon Linux 2023 Attested AMI using <a href=\"https://github.com/OSInside/kiwi\">KIWI Next Generation</a>, an open-source tool for creating preconfigured Linux-based images.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces EC2 Instance Attestation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/ec2-instance-attestation/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760792700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 推出 EC2 实例认证，这是一项新的安全功能，利用 NitroTPM 和可认证 AMI 以加密方式验证 EC2 实例上的软件配置，从而增强安全性和合规性。",
+  "oneSentenceSummary": "AWS 推出 EC2 实例认证，这是一项新的安全功能，利用 NitroTPM 和可认证 AMI 以加密方式验证 EC2 实例上的软件配置，从而增强安全性和合规性。",
+  "summary": "AWS 已经推出了 EC2 实例认证，这是一项重要的安全增强功能，使客户能够以加密方式验证他们的 EC2 虚拟机正在运行经过批准的软件配置。此功能由 Nitro Trusted Platform Module (NitroTPM) 和专门设计的可认证 AMI 提供支持，这些 AMI 包括表示其所有内容的加密哈希。该功能解决了关键的安全漏洞，以前，虽然可以删除操作员访问权限，但没有可验证的证据。AWS 首席安全架构师 J.D. Bean 强调了其在可信计算模式和利用完整 Nitro 实例功能方面的潜力。将以前在 Nitro Enclaves 中发现的保护扩展到标准 EC2 实例，这允许构建具有零操作员访问权限和高保证的强化 AMI。像 Yan Cui 这样的专家认为这是企业软件即服务 (SaaS) 和知识产权保护领域的变革性方案，允许 SaaS 提供商在客户端网络上部署专有软件（例如，AI 模型），同时保护他们的 IP。尽管一些用户质疑其广泛采用，但像 Corey Quinn 这样的其他人认为它对于特定的高安全性和合规性驱动的场景具有价值。谷歌云和 Azure 也提供类似的认证功能。该功能本身是免费提供的，AMI 存储和 AWS KMS 操作需要支付标准费用，并提供了使用 KIWI Next Generation 构建经过认证的 AMI 的用户指南。",
+  "mainPoints": [
+    {
+      "point": "EC2 实例认证提供软件配置的加密验证。",
+      "explanation": "利用 NitroTPM 和可认证 AMI，此功能允许组织以加密方式确认其 EC2 实例仅运行经过批准的软件，这对于满足严格的安全和合规性要求至关重要。"
+    },
+    {
+      "point": "它将可信计算能力扩展到标准 EC2 实例，从而增强了安全性。",
+      "explanation": "以前仅限于 Nitro Enclaves，这项新功能将高保证、零操作员访问保护带到通用 EC2 实例，使客户能够构建更强化和安全的数据云环境。"
+    },
+    {
+      "point": "该功能对于企业 SaaS 和知识产权保护具有变革意义。",
+      "explanation": "对于 SaaS 提供商而言，可认证 AMI 可以在客户端环境中安全地部署专有软件（如 AI 模型），从而确保执行，而无需暴露底层代码或敏感知识产权。"
+    }
+  ],
+  "keyQuotes": [
+    "通过此功能，客户将能够利用基于 Nitro 的 EC2 实例的全部潜力，包括高性能网络和 AI 加速器硬件，同时提高可信计算模式（如多方计算）的标准。",
+    "此版本为客户提供了构建强化和约束的 Amazon Machine Images (AMI) 的工具和接口，这些 AMI 专为零操作员访问和高保证而设计。这些可认证的 AMI 可以向外部系统提供系统内容的证明，以告知身份验证和授权决策。",
+    "对于那些在某些方面信任云提供商，但在另一些特定方面又不信任他们的人来说，这个功能很有用。",
+    "新的 EC2 实例认证是企业 SaaS 和合规性方面某些用例的变革性方案。许多企业更喜欢在内部运行 SaaS 软件，因此他们的敏感数据不会离开他们的网络。但是，SaaS 提供商无法保护他们的知识产权，即软件。借助可认证的 AMI，SaaS 提供商可以发布带有其软件（例如，AI 模型）的 AMI。客户端可以从镜像启动 EC2 实例并运行该软件，但无法访问其内容。"
+  ],
+  "tags": [
+    "云安全",
+    "AWS EC2",
+    "实例认证",
+    "NitroTPM",
+    "可认证 AMI"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 557,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760792700000,
+  "publishDateStr": "2025-10-18",
+  "publishDateTimeStr": "2025-10-18 13:05:00"
+}

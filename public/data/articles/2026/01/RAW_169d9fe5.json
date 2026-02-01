@@ -1,0 +1,54 @@
+{
+  "id": "RAW_169d9fe5",
+  "title": "SubAgent 与 Skills：AI Agent 的两种扩展方式",
+  "url": "https://baoyu.io/blog/2026/01/19/skills-vs-subagent",
+  "date": "2026-01-19 00:00:00",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"mt-2 flex text-sm font-medium text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">作者：<span style=\"background-color:inherit;font-size:1rem;\">宝玉</span></span>\n    </div>\n   </div>\n  </div>\n  <img src=\"https://s.baoyu.io/imgs/2026-01-19/skills-vs-subagent/cover.png\" alt=\"SubAgent 与 Skills：AI Agent 的两种扩展方式\" class=\"mt-2 mb-6 rounded-xl border bg-muted transition-colors w-full\" loading=\"lazy\">\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p><img src=\"https://baoyu.io/blog/2026/01/19/imgs/cover.png\" alt=\"\"></p>\n   <p>一句话解释 SubAgent 和 Skills 的区别：<strong>AI Agent 就像操作系统，Skills 就像应用程序，SubAgent 也是操作系统，不过预装了应用，并且像虚拟机一样运行，独立上下文。</strong></p>\n   <hr>\n   <p><strong>Skills 是一份“操作手册”。</strong></p>\n   <p>你招了个聪明的助理，但他对你的业务一无所知。每次布置任务，你都得从头解释流程、注意事项、工具用法。Skills 就是把这些知识写成文档，Agent 需要时自己去翻阅，不用你反复交代。</p>\n   <p>比如我写了一个“给文章配图”的 Skill，它告诉 Agent：</p>\n   <ul>\n    <li>怎么分析文章找出需要配图的位置</li>\n    <li>有哪些风格可选（科技感、温暖、极简……）</li>\n    <li>怎么写图像生成的提示词</li>\n    <li>图片存哪里、怎么命名</li>\n   </ul>\n   <p>Agent 启动时只记住“有这么个配图技能”，大概 100 个 token，真正要用时才去读详细内容。这叫**“渐进式加载”**，好处是装一堆 Skill 也不会撑爆上下文。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-19/skills-vs-subagent/illustration-skills-architecture.png\" alt=\"Skills 按需加载示意图\"></p>\n   <hr>\n   <h2>SubAgent：开个虚拟机干活</h2>\n   <p><strong>SubAgent 是独立运行的“专家助手”。</strong></p>\n   <p>它有自己的上下文窗口，相当于自己的“工作记忆”。干完活只把结果交回来，中间过程不会污染主 Agent 的思维空间。</p>\n   <p>你是项目经理，手下有三个专家。你不需要盯着他们每一步操作，只需要告诉他们任务目标，等他们交报告就行。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-19/skills-vs-subagent/illustration-subagent-context.png\" alt=\"SubAgent 独立上下文示意图\"></p>\n   <hr>\n   <h2>一个真实案例：给文章配图</h2>\n   <p>假设我写完一篇文章，想配三套不同风格的插图方案，让用户自己选。</p>\n   <p><strong>如果只用 Skills：</strong></p>\n   <p>主 Agent 分析文章 → 设计三种方案 → 调用画图 Skill 画第一套 → 画完再画第二套 → 再画第三套</p>\n   <p>问题来了：</p>\n   <ol>\n    <li><strong>上下文爆炸</strong>：三套图的生成过程全堆在主 Agent 的“脑子”里，几十张图的提示词、中间结果、错误重试……全占着位置</li>\n    <li><strong>速度慢</strong>：必须一个接一个画，串行执行</li>\n   </ol>\n   <p><strong>如果用 SubAgent + Skills：</strong></p>\n   <p>主 Agent 分析文章 → 设计三种方案 → 同时启动三个 SubAgent</p>\n   <p>每个 SubAgent：</p>\n   <ul>\n    <li>预装了“画图 Skill”</li>\n    <li>拿到文章路径和自己负责的方案</li>\n    <li>独立去读文章、生成提示词、调用画图工具、插入图片</li>\n    <li>完成后只返回：新文章的 URL + 简短摘要</li>\n   </ul>\n   <p>主 Agent 这边呢？<strong>上下文干干净净</strong>，只有三个结果链接。用户想看哪套，再去读取对应的 URL。</p>\n   <p><img src=\"https://s.baoyu.io/imgs/2026-01-19/skills-vs-subagent/illustration-workflow-comparison.png\" alt=\"纯 Skills vs SubAgent+Skills 流程对比\"></p>\n   <hr>\n   <h2>什么时候用哪个？</h2>\n   <p><strong>用 Skills：</strong></p>\n   <ul>\n    <li>任务简单，主 Agent 全程掌控</li>\n    <li>需要的知识可以复用</li>\n    <li>想节省上下文，按需加载</li>\n   </ul>\n   <p><strong>用 SubAgent：</strong></p>\n   <ul>\n    <li>子任务复杂、耗时长、中间过程繁琐</li>\n    <li>需要并行处理多个独立任务</li>\n    <li>想保持主 Agent 的“思维清晰”</li>\n   </ul>\n   <hr>\n   <h2>一句话总结</h2>\n   <p>Skills 是应用程序，装在主系统里按需调用；SubAgent 是虚拟机，独立运行完再把结果交回来。<strong>任务简单用应用，任务复杂开虚拟机。</strong></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文通过操作系统与虚拟机的类比，深入浅出地解析了 AI Agent 扩展能力的两种核心方式：Skills（按需加载的操作手册）与 SubAgent（独立上下文的专家助手）。",
+  "oneSentenceSummary": "本文通过操作系统与虚拟机的类比，深入浅出地解析了 AI Agent 扩展能力的两种核心方式：Skills（按需加载的操作手册）与 SubAgent（独立上下文的专家助手）。",
+  "summary": "文章探讨了 AI Agent 架构中 Skills 和 SubAgent 的本质区别与应用场景。Skills 被定义为一种“渐进式加载”的操作手册，允许 Agent 在不占用过多初始上下文的情况下，根据任务需求动态读取工具使用说明和业务逻辑。而 SubAgent 则被类比为“虚拟机”，拥有独立的上下文空间，能够并行处理复杂任务并仅返回最终结果，从而有效避免主 Agent 的上下文污染。作者通过“文章配图”的实战案例，对比了纯 Skills 模式下的串行低效与 SubAgent 模式下的并行高效，为开发者提供了清晰的架构选择指南。",
+  "mainPoints": [
+    {
+      "point": "Skills 采用“渐进式加载”机制，有效节省初始上下文空间。",
+      "explanation": "Agent 启动时仅记录技能索引，仅在实际执行任务时才读取详细的操作手册和工具定义，防止大量预置技能撑爆上下文窗口。"
+    },
+    {
+      "point": "SubAgent 通过独立上下文实现“思维隔离”，解决复杂任务的污染问题。",
+      "explanation": "SubAgent 像虚拟机一样运行，其中间过程、错误重试和冗长提示词均留在独立空间，主 Agent 只接收最终结果，保持了主逻辑的清晰。"
+    },
+    {
+      "point": "任务复杂度与并行需求是选择 SubAgent 的核心判断标准。",
+      "explanation": "简单、需要主 Agent 全程掌控的任务适合用 Skills；而耗时长、中间过程繁琐或需要同时处理多个独立分支的任务，则应采用 SubAgent 模式。"
+    }
+  ],
+  "keyQuotes": [
+    "AI Agent 就像操作系统，Skills 就像应用程序，SubAgent 也是操作系统，不过预装了应用，并且像虚拟机一样运行，独立上下文。",
+    "Skills 是一份'操作手册'。Agent 启动时只记住'有这么个配图技能'，大概 100 个 token，真正要用时才去读详细内容。",
+    "SubAgent 是独立运行的'专家助手'。它有自己的上下文窗口，相当于自己的'工作记忆'。干完活只把结果交回来，中间过程不会污染主 Agent 的思维空间。",
+    "任务简单用应用，任务复杂开虚拟机。"
+  ],
+  "tags": [
+    "AI Agent",
+    "SubAgent",
+    "Skills",
+    "上下文管理",
+    "系统架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 900,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768780800000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 00:00:00"
+}

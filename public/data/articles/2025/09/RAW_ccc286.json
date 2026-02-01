@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ccc286",
+  "title": "让 RAG 真正读懂\"言外之意\"！新框架引入词汇多样性，刷新多项基准 SOTA",
+  "url": "https://www.qbitai.com/2025/09/337285.html",
+  "date": "2025-09-27 05:17:41",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\"><strong>RAG准确率提升10.6%</strong>，多项基准拿下新SOTA！</p>\n  <p data-track=\"2\">ACL 2025最新研究提出<strong>Lexical Diversity-aware RAG</strong>&nbsp;(DRAG)&nbsp;框架，首次系统性地<strong>将词汇多样性引入RAG的检索与生成过程</strong>，提供了一个轻量、通用且易扩展的解决方案。</p>\n  <p data-track=\"3\">在多项基准任务中，该方法带来了显著性能提升，尤其在HotpotQA上刷新了当前最优结果。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927103807_4ea310862d80e2d947342d5f9f3e8270.png\" alt=\"让RAG真正读懂“言外之意”！新框架引入词汇多样性，刷新多项基准SOTA\" data-src=\"https://image.jido.dev/20250927103807_4ea310862d80e2d947342d5f9f3e8270.png\">\n  </div>\n  <p data-track=\"4\">在大语言模型的浪潮下，Retrieval-Augmented Generation<em>（RAG）</em>已经成为提升模型事实性和时效性的重要手段。然而，现有方法普遍忽视了一个看似细微却极为关键的问题——词汇多样性（lexical diversity）。</p>\n  <p data-track=\"5\">同一个问题，不同的表达方式，往往让检索模型“晕头转向”，最终导致错误答案。</p>\n  <p data-track=\"6\">由此，来自北航、北大、中关村实验室的研究团队提出了这项最新工作，他们首次将“词汇多样性”引入检索增强生成的相关性评估过程，并通过新颖的风险稀疏校准机制解决了生成阶段被无关信息干扰的问题。</p>\n  <p data-track=\"7\">团队认为，该方法对信息检索、问答系统、专业领域大模型应用都具有重要价值。未来，他们计划进一步拓展该方法到更多专业场景，让大模型不仅能“读懂”，更能“理解”复杂的人类语言表达。</p>\n  <p data-track=\"9\">研究团队指出，现有RAG方法大多通过“单一标准”判断检索文档是否相关，但现实情况要复杂得多。如图所示，以问题“What is Hattie McDaniel’s occupation?”为例，其中的语义成分表现出不同程度“词汇多样性”：</p>\n  <ul>\n   <li data-track=\"10\"><strong>不变词</strong>（Invariant）：人名“Hattie McDaniel”一般不会变形；</li>\n   <li data-track=\"11\"><strong>可变词</strong>（Variant）：词语“occupation”可以对应“profession”“actress”甚至“Academy Award”；</li>\n   <li data-track=\"12\"><strong>补充信息</strong>（Supplementary）：答案可能依赖“American celebrity”等扩展语境。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927103807_99f45a2868ce971cd6a545781d4e894b.png\" alt=\"让RAG真正读懂“言外之意”！新框架引入词汇多样性，刷新多项基准SOTA\" data-src=\"https://image.jido.dev/20250927103807_99f45a2868ce971cd6a545781d4e894b.png\">\n  </div>\n  <p data-track=\"13\">这种词汇多样性往往导致模型错误地将部分相似但无关的文档判为相关，或者忽略了真正有用的信息。</p>\n  <p data-track=\"15\">为解决“词汇多样性”带来的挑战，研究团队提出了该框架，核心在于两个互补模块：</p>\n  <p data-track=\"16\"><strong>1、Diversity-sensitive Relevance Analyzer&nbsp;（DRA)</strong></p>\n  <p data-track=\"17\">传统检索相关性评估往往“一刀切”，把整体查询和检索文档进行比较。该方法则进一步拆解查询语义，针对不同成分采用差异化策略：</p>\n  <ul>\n   <li data-track=\"18\"><strong>不变成分</strong>：如人名、地名等必须精确匹配的关键词，该方法强调其检索文档应与该成分严格匹配；</li>\n   <li data-track=\"19\"><strong>可变成分</strong>：如“occupation”—“profession”，DRA借助LLM的语义扩展和分析能力，在检索时允许一定语义灵活性；</li>\n   <li data-track=\"20\"><strong>补充成分</strong>：如“American celebrity”，该方法通过检索需求的明确程度来判断是否需要真正提供有用的补充证据。</li>\n  </ul>\n  <p data-track=\"21\">在此基础上，该方法通过该模块对相似度检索结果进行重排序，输出一个更细粒度、多维度的相关性评分，避免检索时存在的“假阳性”和“假阴性”的常见问题。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927103807_e3e7877a34978907baf9e51ba017ebb4.png\" alt=\"让RAG真正读懂“言外之意”！新框架引入词汇多样性，刷新多项基准SOTA\" data-src=\"https://image.jido.dev/20250927103807_e3e7877a34978907baf9e51ba017ebb4.png\">\n  </div>\n  <p data-track=\"22\"><strong>2. Risk-guided Sparse Calibration</strong></p>\n  <p data-track=\"23\">即使有了更精准的检索，生成阶段仍然可能“被干扰”。Risk-guided Sparse Calibration的设计灵感来自“风险控制”：它会实时监控每个生成token的“被误导风险”，并在必要时进行解码校准。</p>\n  <ul>\n   <li data-track=\"24\"><strong>词汇风险</strong>&nbsp;(Lexical Risk)：检测生成内容是否过度依赖低相关的词汇；</li>\n   <li data-track=\"25\"><strong>注意力风险</strong>&nbsp;(Attention Risk)：评估模型注意力是否集中在无关段落；</li>\n   <li data-track=\"26\"><strong>预测风险</strong>&nbsp;(Prediction Risk)：衡量当前预测是否与检索证据存在冲突。</li>\n  </ul>\n  <p data-track=\"27\">RSC的独特之处在于它的稀疏性&nbsp;(sparse calibration)：只对高风险token动态干预，而不会对全局输出强行重写，从而保证了生成质量与效率的平衡。</p>\n  <p data-track=\"28\">最终，DRA负责“挑选更靠谱的材料”，RSC负责“防止模型走偏”，形成了检索与生成环节的双保险，让RAG更稳健、更准确。</p>\n  <p data-track=\"30\">团队在多个开放域问答基准上验证了该方法：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927103807_1d24b41e9959966f6939ce10d24b03a1.png\" alt=\"让RAG真正读懂“言外之意”！新框架引入词汇多样性，刷新多项基准SOTA\" data-src=\"https://image.jido.dev/20250927103807_1d24b41e9959966f6939ce10d24b03a1.png\">\n  </div>\n  <p data-track=\"31\">其中，该方法在PopQA/TriviaQA（短文本问答）：准确率分别提升4.9%和4.4%；HotpotQA/2WikiMultiHopQA（多跳问答）：<strong>准确率均提升10.6%</strong>，展现出强泛化性；在ASQA（长答案生成）：<strong>在str-em、QA-F1等指标上刷新SOTA</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927103807_6c0a209c5e43f8da3b767e0872f1499b.jpeg\" alt=\"让RAG真正读懂“言外之意”！新框架引入词汇多样性，刷新多项基准SOTA\" data-src=\"https://image.jido.dev/20250927103807_6c0a209c5e43f8da3b767e0872f1499b.jpeg\">\n  </div>\n  <p data-track=\"32\">不仅如此，该方法<strong>在不同类型、大小的模型上均表现出显著增益</strong>，如Llama2-7B， Llama2-13B, Qwen2-7B, Alpaca-7B和Mistral-7B等。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250927103807_e77e5207184466c1ea6a9174840705fc.jpeg\" alt=\"让RAG真正读懂“言外之意”！新框架引入词汇多样性，刷新多项基准SOTA\" data-src=\"https://image.jido.dev/20250927103807_e77e5207184466c1ea6a9174840705fc.jpeg\">\n  </div>\n  <p data-track=\"33\"><em>论文链接：</em></p>\n  <p data-track=\"34\"><em>https://aclanthology.org/2025.acl-long.1346/</em>\n   <br>\n   <em>代码（即将开源）:</em></p>\n  <p data-track=\"35\"><em>https://github.com/Zhange21/DRAG</em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DRAG 框架通过引入词汇多样性，显著提升 RAG 准确率，刷新多项基准 SOTA，为大模型理解“言外之意”提供通用方案。",
+  "oneSentenceSummary": "DRAG 框架通过引入词汇多样性，显著提升 RAG 准确率，刷新多项基准 SOTA，为大模型理解“言外之意”提供通用方案。",
+  "summary": "文章介绍了 ACL 2025 提出的 DRAG（Lexical Diversity-aware RAG）框架，旨在解决现有 RAG 方法忽视词汇多样性导致检索不准确的问题。DRAG 首次系统性地将词汇多样性引入 RAG 的检索与生成过程，通过“多样性敏感相关性分析器”（DRA）实现细粒度语义匹配，并利用“风险引导稀疏校准”（RSC）机制控制生成阶段的误导风险。该框架在 HotpotQA、PopQA 等多个开放域问答基准上取得了显著性能提升，最高准确率提升 10.6%，并在长答案生成任务中刷新 SOTA，展现出对不同 LLM 的强泛化性，为提升大模型理解复杂人类语言表达能力提供了通用、轻量且易扩展的解决方案。",
+  "mainPoints": [
+    {
+      "point": "DRAG 框架首次将词汇多样性引入 RAG 流程，显著提升检索与生成准确率。",
+      "explanation": "现有 RAG 常因词汇多样性导致误判，DRAG 通过差异化处理查询语义成分，有效解决这一痛点。该框架在 HotpotQA、PopQA 等多项基准上取得显著性能提升，最高准确率提升 10.6%，并在长答案生成任务中刷新 SOTA，充分验证了其有效性和广泛应用潜力。"
+    },
+    {
+      "point": "多样性敏感相关性分析器（DRA）实现细粒度语义匹配，优化检索结果。",
+      "explanation": "DRA 将查询拆解为不变、可变和补充成分，针对性评估相关性，有效避免了检索时的“假阳性”和“假阴性”问题。"
+    },
+    {
+      "point": "风险引导稀疏校准（RSC）机制动态干预高风险 token，防止生成内容被误导。",
+      "explanation": "RSC 实时监控词汇、注意力和预测风险，仅对高风险 token 进行校准，确保生成质量与效率的平衡，提升了 RAG 的稳健性。"
+    }
+  ],
+  "keyQuotes": [
+    "ACL 2025 最新研究提出 Lexical Diversity-aware RAG (DRAG) 框架，首次系统性地将词汇多样性引入 RAG 的检索与生成过程，提供了一个轻量、通用且易扩展的解决方案。",
+    "同一个问题，不同的表达方式，往往让检索模型“晕头转向”，最终导致错误答案。",
+    "传统检索相关性评估往往“一刀切”，把整体查询和检索文档进行比较。该方法则进一步拆解查询语义，针对不同成分采用差异化策略。",
+    "RSC 的独特之处在于它的稀疏性 (sparse calibration)：只对高风险 token 动态干预，而不会对全局输出强行重写，从而保证了生成质量与效率的平衡。",
+    "最终，DRA 负责“挑选更靠谱的材料”，RSC 负责“防止模型走偏”，形成了检索与生成环节的双保险，让 RAG 更稳健、更准确。"
+  ],
+  "tags": [
+    "RAG",
+    "大语言模型",
+    "词汇多样性",
+    "信息检索",
+    "自然语言处理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1661,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758950261000,
+  "publishDateStr": "2025-09-27",
+  "publishDateTimeStr": "2025-09-27 05:17:41"
+}

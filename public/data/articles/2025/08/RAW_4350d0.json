@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4350d0",
+  "title": "AI Agent 放贷款，获投 4.3 个亿",
+  "url": "https://www.qbitai.com/2025/08/317962.html",
+  "date": "2025-08-03 14:33:23",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"62\">奕然 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"63\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">AI也能做贷款业务了。</p>\n  <p data-track=\"3\">这家公司叫Salient，主打AI agents贷款服务，刚刚在A轮融资中筹集了6000万美元，折合人民币4.3亿元。</p>\n  <p data-track=\"4\">此次融资由Andreessen Horowitz旗下的a16z领投，Matrix Partners、Michael Ovitz和Y Combinator跟投。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/97860e75-03ab-4f65-8ef8-41629294be00/public\" alt=\"AI Agent放贷款，获投4.3个亿\" data-ic=\"false\" data-width=\"1080\" data-height=\"512\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">目前，Salient估值为3.5亿美元，折合人民币25亿元。</p>\n  <p data-track=\"6\">而在此之前，Salient已从Matrix和General Catalyst（GC)等投资者那里筹集了400万美元，折合人民币2800多万元。</p>\n  <p data-track=\"7\">为何一家面向贷款服务的AI公司能够获得投资者的青睐，一起看下。</p>\n  <p data-track=\"9\">Salient是一个专为<strong>消费金融</strong>（消费领域，而非投资领域，比如汽车贷款）打造的AI贷款服务平台，适配现代贷款服务的运作系统，简化贷款入驻、收款、合规性等流程。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fd174964-3e29-400a-4492-7c7858839500/public\" alt=\"AI Agent放贷款，获投4.3个亿\" data-ic=\"false\" data-width=\"1080\" data-height=\"459\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">在详细说Salient之前，咱们先简单了解一下消费金融的贷款流程。</p>\n  <p data-track=\"11\">流程主要分为以下几部分，一是客户咨询；二是贷款流程处理，包括贷款申请、贷款支用、还款及逾期管理等，三是风险管控，其中合规尤为关键。</p>\n  <p data-track=\"12\">除了上述操作流程，在公司层面，消费金融公司作为贷方，常将部分业务环节外包给第三方，以提升效率。</p>\n  <p data-track=\"13\">但是，“贷方—第三方—客户”的模式，就容易导致贷方与客户之间信息不对称，信息透明度较低。</p>\n  <p data-track=\"14\">Salient创始人阿里·马利克（Ari Malik）发现贷款业务的这种信息透明度低以及效率问题能够由AI来解决，于是开启他的AI创业之路。</p>\n  <p data-track=\"15\">联合创始人之一是穆昆德·蒂布鲁瓦拉（Mukund Tibrewala ），曾在估值为百亿美元的AI独角兽公司Airtable，担任软件工程师3年。</p>\n  <p data-track=\"16\">2023，阿里·马利克联合他人创立Salient，打造为消费贷款行业提供产品和服务，提升贷方在整个流程体系的效率，并及时了解客户动向给出建议，以降低风险的AI agents平台。</p>\n  <p data-track=\"17\">那Salient是如何做到的呢。</p>\n  <p data-track=\"19\">Salient主要推出三种产品业务，面向消费贷款行业的企业，分别是<strong>语音AI agent、贷款流程处理大模型部署以及集成解决方案</strong>。</p>\n  <p data-track=\"21\">Salient的语音agent与其他agent不同的是，为金融服务而生，核心为合规性。</p>\n  <p data-track=\"22\">它可以实时通过语音、文本、电子邮件和网络聊天进行沟通，以收集付款、处理到期日更改和延期、管理赔付以及更新保险信息。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/80ea2d7b-744c-415c-3649-69126f571a00/public\" alt=\"AI Agent放贷款，获投4.3个亿\" data-ic=\"false\" data-width=\"1080\" data-height=\"407\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"23\">针对客户沟通中的合规性问题，它有以下处理方式：</p>\n  <p data-track=\"24\">1.在处理单个呼叫之前，已接受有关CFPB、FCRA、TILA和UDAP法规的全面培训</p>\n  <p data-track=\"25\">2.实时监控确保每次交互都遵循严格的金融服务协议</p>\n  <p data-track=\"26\">3.内置保护措施，防止未经授权的披露并维护数据隐私</p>\n  <p data-track=\"27\">4.用于监管审计的一致文档</p>\n  <p data-track=\"28\">5.对欺骗性做法或误导性陈述零容忍</p>\n  <p data-track=\"30\">Salient能够在保证合规的前提下，部署大模型能力，并针对企业现有贷款系统集成解决方案。</p>\n  <p data-track=\"31\"><strong>合规与工作流处理</strong></p>\n  <p data-track=\"32\">Salient能够实时分析每一次客户互动，标记违规行为并提供建议，确保每次互动符合联邦法律或监管机构的要求，比如FDCPA、CFPB、UDAAP、FCRA和TILA。</p>\n  <p data-track=\"33\">Salient还能部署AI agents来处理付款、到期日更改、延期、资金验证、保险索赔和客户查询，从而将处理时间缩短70%。</p>\n  <p data-track=\"34\">除此之外，Salient通过自动数据采集实现无缝系统集成，加速保险索赔、产权处理和扣押管理。</p>\n  <p data-track=\"35\"><strong>安全部署</strong></p>\n  <p data-track=\"36\"><strong>最大化连接</strong>：在最佳时间为每位客户提供延伸服务，始终遵守TCPA和当地法规。</p>\n  <p data-track=\"37\"><strong>专为企业打造</strong>：在符合SOC 2和PCI L1标准下，Salient安全地大规模部署生成式AI，具有完整的模型可观测性、数据隐私性和安全性。</p>\n  <p data-track=\"38\"><strong>最小化归档时间</strong>：所有互动都会被记录、总结和处理，无需人工归档总结，节省时间。</p>\n  <p data-track=\"39\"><strong>即插即用</strong>：Salient与现有的汽车贷款堆栈能够无缝协作，包括：OFSLL、Shaw Systems。</p>\n  <p data-track=\"40\"><strong>集成现有系统</strong></p>\n  <p data-track=\"41\">Salient能够集成企业现有的联络中心、支付处理器和LMS系统，提供服务。</p>\n  <p data-track=\"42\"><strong>支付处理商（Payment Processor）</strong>：与任何API驱动的支付处理器集成，包括 Stripe、ACI、PayNearMe和Nowpay。</p>\n  <p data-track=\"43\"><strong>贷款管理系统（LMS，Loan Management System）</strong>：无论是OFSLL、Shaw Systems还是Nortridge，实时检索借款人更新并将其推送到现有的LMS。</p>\n  <p data-track=\"44\"><strong>联络中心（Contact Centers）</strong>：在现有CCaaS平台内拨打、转接和挂断电话。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cedd0f24-e47c-4c18-59b3-97b88f3bfc00/public\" alt=\"AI Agent放贷款，获投4.3个亿\" data-ic=\"false\" data-width=\"1080\" data-height=\"422\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"45\">除了以上产品与服务外，在合规和集成方面，Salient根据政策、监管要求实时更新，并会根据企业贷款系统更新实时集成。</p>\n  <p data-track=\"46\">在数据安全方面，每个贷方都有专属私有云，Salient定期进行渗透测试，因此不存在数据泄露的可能性。</p>\n  <p data-track=\"48\">目前，Salient已经在与包括Westlake、ACA、Exeter和CPS在内的主要贷方以及三家上市银行合作。</p>\n  <p data-track=\"49\">在语音配置方面，Salient通过5种不同的语音，拨打6000多收款电话，付款完成率提高22%，挂断率降低17%，通话时间缩短14%。</p>\n  <p data-track=\"50\">在汽车贷款服务方面，Salient已经与300多万的独立借款人联系，推动了10亿美元的收款。</p>\n  <p data-track=\"51\">Salient的合作方CPS表示，使用Salient的产品增强了他们的整体服务和收款战略，进一步增强现金流和信用绩效，同时确保严格的监管合规性。</p>\n  <p data-track=\"52\">创始人Ari Malik在社交平台说，目前团队正在发展壮大，招揽客户、工程、销售等人才。</p>\n  <p data-track=\"54\">浅聊一下创始人与联合创始人。</p>\n  <p data-track=\"55\">创始人阿里·马利克（Ari Malik）是哥伦比亚计算机科学和哲学文学学士学位毕业，此前有比较丰富的金融、战略和投资经验。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e03c4b6-16d8-4361-1ec2-7f5d87b29d00/public\" alt=\"AI Agent放贷款，获投4.3个亿\" data-ic=\"false\" data-width=\"1080\" data-height=\"570\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△左为阿里·马利克，右为穆昆德·蒂布鲁瓦拉。</span>\n  </div>\n  <p data-track=\"57\">他曾经在<strong>特斯拉</strong>负责过财务、战略和业务运营工作，在DST Global、高盛和淡马锡负责过投资业务。</p>\n  <p data-track=\"58\">联合创始人之一是穆昆德·蒂布鲁瓦拉（Mukund Tibrewala ），曾在估值为百亿美元的AI独角兽公司Airtable，担任软件工程师3年。</p>\n  <p data-track=\"59\">穆昆德·蒂布鲁瓦拉作为Salient的CTO，入选了福布斯金融领域30岁以下精英榜单。</p>\n  <p data-track=\"60\">参考链接<br>\n    [1]https://www.axios.com/pro/fintech-deals/2025/07/28/loan-servicing-ai-salient-60-million<br>\n    [2]https://www.trysalient.com/<br>\n    [3]https://www.forbes.com/30-under-30/2025/finance<br>\n    [4]https://www.globenewswire.com/news-release/2025/05/08/3077271/13171/en/Consumer-Portfolio-Services-Deploys-AI-Powered-Servicing-Platform-from-Salient-to-Advance-Collections-Strategy.html<br>\n    [5]https://x.com/arimalik95/status/1949853487971672293<br>\n    [6]https://www.ycombinator.com/companies/salient</p>\n  <p data-track=\"61\">— 完 —</p>\n  <p data-track=\"64\">量子位 QbitAI</p>\n  <p data-track=\"65\">关注我们，第一时间获知前沿科技动态</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Salient 公司凭借其专为消费金融设计的 AI Agent 贷款服务，在合规与效率方面表现出色，成功获得 4.3 亿元 A 轮融资。",
+  "oneSentenceSummary": "Salient 公司凭借其专为消费金融设计的 AI Agent 贷款服务，在合规与效率方面表现出色，成功获得 4.3 亿元 A 轮融资。",
+  "summary": "量子位报道，Salient 公司成功完成由 a16z 领投的 6000 万美元（约 4.3 亿元人民币）A 轮融资，估值达 3.5 亿美元。该公司专注于为消费金融行业提供 AI Agent 贷款服务，旨在解决传统贷款业务中信息透明度低、效率低下等痛点。Salient 的核心产品包括语音 AI Agent、贷款流程处理大模型部署以及集成解决方案，特别强调在复杂金融法规下的合规性。其 AI Agent 能实时通过语音、文本等方式处理客户沟通、收款、到期日更改等，并将处理时间缩短 70%。公司已与包括 Westlake 在内的多家主要贷方合作，并取得了显著成果，如推动 10 亿美元收款，展现了 AI 在金融服务领域的巨大潜力。文章还介绍了创始人阿里·马利克和联合创始人兼 CTO 穆昆德·蒂布鲁瓦拉的背景，进一步提升了公司信誉。",
+  "mainPoints": [
+    {
+      "point": "AI Agent 解决消费金融贷款业务的效率和透明度问题",
+      "explanation": "Salient 通过 AI Agent 技术，有效解决了传统消费金融贷款业务中信息不对称和效率低下的问题，实现流程自动化与优化，简化了贷款入驻、收款、合规性管理等环节。"
+    },
+    {
+      "point": "合规性是 Salient AI Agent 在金融服务中的核心竞争力",
+      "explanation": "Salient 的 AI Agent 针对金融服务法规（如 CFPB、FCRA、TILA 等）进行深度培训，能实时监控交互并标记违规行为，内置数据隐私保护，确保每次客户沟通和业务处理都符合法律要求。"
+    },
+    {
+      "point": "产品可无缝集成现有系统并取得显著业务成果",
+      "explanation": "Salient 的产品能与企业现有联络中心、支付处理器和 LMS 系统无缝集成，已成功为 300 多万借款人提供服务，推动 10 亿美元收款，显著提升了支付完成率和客户服务效率。"
+    }
+  ],
+  "keyQuotes": [
+    "Salient 是一个专为消费金融打造的 AI 贷款服务平台，适配现代贷款服务的运作系统，简化贷款入驻、收款、合规性等流程。",
+    "Salient 的语音 agent 与其他 agent 不同的是，为金融服务而生，核心为合规性。",
+    "Salient 能够实时分析每一次客户互动，标记违规行为并提供建议，确保每次互动符合联邦法律或监管机构的要求，比如 FDCPA、CFPB、UDAAP、FCRA 和 TILA。",
+    "Salient 还能部署 AI agents 来处理付款、到期日更改、延期、资金验证、保险索赔和客户查询，从而将处理时间缩短 70%。",
+    "Salient 已经与 300 多万的独立借款人联系，推动了 10 亿美元的收款。"
+  ],
+  "tags": [
+    "AI Agent",
+    "消费金融",
+    "金融科技",
+    "合规性",
+    "贷款服务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 89,
+  "wordCount": 2433,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1754231603000,
+  "publishDateStr": "2025-08-03",
+  "publishDateTimeStr": "2025-08-03 14:33:23"
+}

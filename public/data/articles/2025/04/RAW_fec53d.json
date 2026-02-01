@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fec53d",
+  "title": "QCon London 2025：领域驱动设计的大规模实践",
+  "url": "https://www.infoq.com/news/2025/04/ddd-scale-healthcare-qcon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-16 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Navigating the complexities of a rapidly scaling healthcare platform requires more than just code; at QCon London 2025, <a href=\"https://www.linkedin.com/in/leander-vanderbijl-1a11978/\">Leander Vanderbijl</a> shared his company’s journey of how <a href=\"https://en.wikipedia.org/wiki/Domain-driven_design\">domain-driven design</a> (DDD) became instrumental in bringing order to a rapidly growing and increasingly complex healthcare platform. His talk highlighted the crucial steps taken to move from a system of interdependent services lacking clear guidelines to a more coherent, business-focused architecture.</p>\n   <p>Vanderbijl painted a picture of the company's early days, when rapid growth led to a web of interconnected services without a unifying structure—a situation he aptly described as \"spaghetti\" architecture. This complexity made it difficult to understand core business functionalities and hindered further development. Recognizing the unsustainable nature of this architectural tangle, a small, dedicated team was assembled to clarify the business direction and establish unified goals through the lens of DDD.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/ddd-scale-healthcare-qcon/news/2025/04/ddd-scale-healthcare-qcon/en/resources/1Leander 1-1744637350235.jpeg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/ddd-scale-healthcare-qcon/en/resources/1Leander 1-1744637350235.jpeg\" rel=\"share\"></p>\n   <p>The organization's rapid expansion had outpaced its initial models for managing data, services, and customer interactions. Attempts to completely rebuild the system were deemed impractical. Instead, the team opted for an in-situ approach to introduce DDD principles compatible with the existing infrastructure.</p>\n   <p>The DDD initiative identified three core domains: healthcare services, payment systems, and a support system for services that didn't neatly fit into the other two. This foundational understanding paved the way for significant architectural changes.</p>\n   <p>One key strategy employed was dubbed the \"<strong>Take That</strong>\" approach. This involved amalgamating similar functionalities and simplifying the interactions between services. A prime example was reorganizing medical services, separating core medical functions from ancillary services while ensuring effective data handling.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/ddd-scale-healthcare-qcon/news/2025/04/ddd-scale-healthcare-qcon/en/resources/1Leander 2-1744637350235.jpeg\" style=\"width: 600px; height: 367px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/ddd-scale-healthcare-qcon/en/resources/1Leander 2-1744637350235.jpeg\" rel=\"share\"></p>\n   <p>Beyond the \"<strong>Take That</strong>\" consolidation, Vanderbijl described two other key strategies:</p>\n   <ul>\n    <li>The \"<strong>Robbie Williams</strong>\" strategy involved identifying and retaining essential, well-functioning services while discarding redundant or poorly designed elements.</li>\n    <li>The \"<strong>Prince</strong>\" approach focused on adapting and rebranding existing services that held value but required significant enhancements or a more precise identity within the new domain model.</li>\n   </ul>\n   <p>Furthermore, the team drew inspiration from the <a href=\"https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources\">Fast Healthcare Interoperability Resources</a> (FHIR) model to structure medical data. This adoption aimed to improve data queries, enhance interoperability, and create a more standardized approach to handling healthcare information within their domain.</p>\n   <p>Vanderbijl emphasized that the adoption of DDD is not a one-time fix, but rather an ongoing journey. He stressed the critical need for adaptability and the continuous evaluation of business requirements. The focus shifted from strictly adhering to product demands to prioritizing the underlying domain functionalities, ensuring the architecture remained aligned with the core business.</p>\n   <p>The talk concluded with a powerful reminder that domain-driven design is an evolutionary process, requiring a commitment to continuous improvement and a willingness to adapt as the business and its understanding of the domain evolve. By embracing these principles, the organization moved from a state of architectural chaos towards a more structured, maintainable, and business-aligned future.</p>\n   <p>After the session, InfoQ spoke with VanderBijl and asked him the following questions:</p>\n   <p><strong>InfoQ</strong>: Looking back at the 'Take That,' 'Robbie Williams,' and 'Prince' strategies, was there one that proved more challenging to implement than the others, and what were the key hurdles you faced with that particular strategy?</p>\n   <blockquote>\n    <p><strong>Leander VanderBijl</strong>: The Robbie Williams approach was the most challenging of the three strategies. With the Take That approach, we had existing code to lift and shift into a new service wholesale (or predominantly wholesale). With the Prince approach, we built a new service beside an existing one. The Robbie Williams approach required us to remove and, crucially, disentangle existing code in situ. There was a challenge in removing and migrating functionality to a new single endpoint, and we had difficulties keeping the changes small. Due to the extreme coupling, small changes often fanned out to create a significant impact, and it took a lot of effort and trial and error to work out how far to go with a given change and when to stop.</p>\n   </blockquote>\n   <p><strong>InfoQ</strong>: You mentioned a small team pinpointing the primary objectives and domains. What was the biggest challenge in that initial domain discovery phase, and what key insight finally helped the team solidify those core domains?</p>\n   <blockquote>\n    <p><strong>VanderBijl</strong>: We kept our initial group small when pinpointing our primary objectives and domains to allow us to move quickly and to keep the \"what about-ery\" and the concern about edge cases to a minimum. We decided early on that a reasonable target domain structure was better than a perfect one. We agreed the domain structure would be a living-breathing document that was allowed to change; therefore, keeping the group small made it easy for us to progress and reach consensus quickly. Ensuring all teams knew this was a living document made it easier for them to accept and adopt.</p>\n    <p>We were pleasantly surprised at how easily we quickly identified our primary domains, particularly when we ignored any of the existing dependencies and all of the what-ifs and edge cases.&nbsp; By knowing that the domain doesn't need to be perfect and can evolve, we got to a simple, concise, and easy-to-digest schema that made sense very quickly. There is still a lot of work required to split the domains into more complex subdomains, but this is an iterative process and, since we reduce the cognitive load with every subdomain, it becomes easier and easier to do.</p>\n   </blockquote>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2025: Applying Domain-Driven Design at Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/ddd-scale-healthcare-qcon/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1744797600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Leander Vanderbijl 在 QCon London 2025 上分享了他的公司如何应用领域驱动设计 (DDD) 来管理一个快速增长的医疗平台，旨在提高其可维护性和可扩展性。",
+  "oneSentenceSummary": "Leander Vanderbijl 在 QCon London 2025 上分享了他的公司如何应用领域驱动设计 (DDD) 来管理一个快速增长的医疗平台，旨在提高其可维护性和可扩展性。",
+  "summary": "Leander Vanderbijl 在 QCon London 2025 上分享了他的公司在快速增长的医疗平台上应用领域驱动设计 (DDD) 的经验。他们最初面临着\"意大利面式\"架构，服务之间高度耦合，缺乏统一的结构，阻碍了业务理解和进一步的开发。为了解决这个问题，他们没有完全重建系统，而是采用了一种就地方法来引入 DDD 原则。一个小团队迅速确定了三个核心领域：医疗服务、支付系统和一个支持系统。他们还采用了\"Take That\"、\"Robbie Williams\"和\"Prince\"策略来整合、保留和转换现有服务。此外，他们采用了 FHIR 模型来标准化医疗数据，从而改进了数据查询和互操作性。Vanderbijl 强调，DDD 是一个持续改进的过程，需要不断适应和评估业务需求。",
+  "mainPoints": [
+    {
+      "point": "持续改进和适应是 DDD 成功的关键",
+      "explanation": "DDD 不是一次性的解决方案，而是需要根据业务发展不断调整和优化，以确保架构与业务目标保持一致。"
+    },
+    {
+      "point": "就地引入 DDD 原则，避免完全重建系统",
+      "explanation": "在现有基础设施上逐步应用 DDD，降低了重构的风险和成本，使得系统能够平稳过渡到新的架构。"
+    },
+    {
+      "point": "采用\"Take That\"、\"Robbie Williams\"和\"Prince\"策略进行服务治理",
+      "explanation": "这三种策略分别用于整合相似功能、保留核心服务和改造现有服务，帮助团队有效地清理和优化了现有架构。"
+    }
+  ],
+  "keyQuotes": [
+    "我们很早就决定，一个够用的领域结构胜过一个完美的领域结构。",
+    "确保所有团队都知道这是一份动态文档，这使得他们更容易接受和采纳。",
+    "Robbie Williams 方法要求我们移除，并且最重要的是，就地解耦现有代码。"
+  ],
+  "tags": [
+    "领域驱动设计",
+    "DDD",
+    "医疗软件",
+    "医疗平台",
+    "软件架构"
+  ],
+  "topicTag": "architecture",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 868,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744761600000,
+  "publishDateStr": "2025-04-16",
+  "publishDateTimeStr": "2025-04-16 00:00:00"
+}

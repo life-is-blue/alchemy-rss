@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e7dcadf5",
+  "title": "Cloudflare 用 Rust 重写核心系统：CDN 性能提升 25%，响应时间缩短 10 毫秒",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262762&idx=3&sn=355c032a0ad3c57b3aa3911466e9f8ca",
+  "date": "2025-11-10 05:26:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Sergio De Simone </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 田橙 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cloudflare 近日宣布，已将公司 核心子系统之一用 Rust 语言重写，实现响应时间缩短 10 毫秒、整体性能提升 25%。公司同时强调，Rust 不仅提升了系统性能，还增强了安全性，并缩短了开发周期。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在成功将 Pingora 子系统迁移至 Rust 之后，Cloudflare 的工程师决定从零开始重写公司最老、也是最关键的组件之一——FL，即“Cloudflare 的大脑”：</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">FL 是 Cloudflare 的中枢。当一个请求到达 FL 后，我们会在网络中运行各种安全与性能功能。它会应用每个客户独有的配置和设置，从执行 WAF（Web 应用防火墙）规则、DDoS 防护，到将流量路由至开发者平台和对象存储服务 R2。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cloudflare 的架构师们决定基于公司内部开发的代理框架 Oxy 来构建新一代系统 FL2。Oxy 支持监控、软重载、动态配置加载与切换等功能。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">尤其值得一提的是，Oxy 的内建“平滑重启”机制对代理系统至关重要。传统方式中，终止进程会导致所有活跃连接被强制中断；而 Oxy 则在需要关闭实例时，会停止接收新连接，但继续为现有连接提供服务，直到它们自然结束，从而实现无中断过渡。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">对 Cloudflare 架构师而言，最大的挑战之一是：如何替换一个支撑了公司 15 年、仍在持续演进的运行系统。为了避免团队必须为旧版（基于 LuaJIT 的 FL）和新版（基于 Rust 的 FL2）各自重复开发功能，他们在 FL 内部创建了一个中间层，使得为 FL2 编写的 Rust 模块也能在旧系统中无缝运行。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这样一来，各团队无需维护两套逻辑，可以直接用 Rust 实现新功能，并逐步替换旧的 Lua 逻辑，而无需等待整个系统彻底迁移完成。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为了确保迁移过程顺利，Cloudflare 的架构师还制定了明确的测试与发布策略。测试环节使用名为 Flamingo 的系统，可同时对 FL1 与 FL2 发起上千次端到端测试请求。每次更新都会逐步上线，在不同阶段接受递增流量测试与性能基准对比，以确保性能与资源使用保持在可接受范围内。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">另一个关键机制是 FL2 的回退机制。当 FL2 无法处理某个请求时，它会将该请求交给旧系统 FL1 处理。得益于这一机制，Cloudflare 能够在不影响整体稳定性的前提下，逐步增加 FL2 的实际流量占比。随着 FL2 的成熟，它处理的请求量持续上升，而回退至 FL1 的比例则相应下降。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cloudflare 架构师指出，构建 FL2 的最大收益来自性能提升。这主要源于两方面：一是 FL2 完全使用高性能语言 Rust 编写，而不再像 FL1 那样混合使用 C、Rust 与 Lua；二是旧系统 FL1 在多语言间进行数据转换时耗费了大量时间。得益于此，FL2 仅需原系统一半的 CPU 资源，内存占用也不到一半。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">此外，FL2 还从 Rust 的编译时安全机制中获益良多。Rust 严格的静态检查、代码规范、全面测试和严格的代码审查流程，使系统在运行过程中极少出现崩溃问题。目前报告的大部分故障都与硬件故障有关。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/10/cloudflare-rust-proxy/\" target=\"_blank\">https://www.infoq.com/news/2025/10/cloudflare-rust-proxy/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Cloudflare 用 Rust 重写核心子系统 FL，实现性能提升 25%，响应时间缩短 10 毫秒，并显著增强安全性与稳定性。",
+  "oneSentenceSummary": "Cloudflare 用 Rust 重写核心子系统 FL，实现性能提升 25%，响应时间缩短 10 毫秒，并显著增强安全性与稳定性。",
+  "summary": "文章详细介绍了 Cloudflare 将其核心子系统 FL（负责处理网络中的安全与性能功能，被誉为“Cloudflare 的大脑”）从基于 LuaJIT 的旧版本重构为基于 Rust 的 FL2 的实践。重构旨在解决旧系统多语言混合带来的数据转换开销和维护复杂性。新系统 FL2 基于 Cloudflare 内部开发的代理框架 Oxy 构建，该框架支持监控、软重载和动态配置，并具备无中断的“平滑重启”机制。为确保平稳过渡，Cloudflare 采用了渐进式迁移策略，包括在旧系统内创建 Rust 模块中间层、使用 Flamingo 系统进行端到端测试，并设计了 FL2 的回退机制。最终，FL2 实现了 25% 的性能提升、10 毫秒的响应时间缩短，CPU 和内存资源占用减半，并因 Rust 的编译时安全机制大大增强了系统稳定性。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 通过 Rust 重写核心系统 FL，显著提升了性能和资源效率。",
+      "explanation": "FL2 完全使用高性能语言 Rust 编写，避免了旧系统多语言间数据转换的开销，使得 CPU 和内存占用减半，整体性能提升 25%，响应时间缩短 10 毫秒。"
+    },
+    {
+      "point": "渐进式迁移策略是替换复杂核心系统的关键。",
+      "explanation": "通过在旧系统内创建 Rust 模块中间层、采用平滑重启机制、Flamingo 测试系统和 FL2 回退机制，实现了核心系统在不中断服务的前提下逐步替换。"
+    },
+    {
+      "point": "Rust 语言在保障系统安全性和稳定性方面具有显著优势。",
+      "explanation": "Rust 严格的编译时安全机制、静态检查和代码规范，有效减少了运行时崩溃，提升了核心系统的可靠性和安全性。"
+    }
+  ],
+  "keyQuotes": [
+    "Cloudflare 近日宣布，已将公司核心子系统之一用 Rust 语言重写，实现响应时间缩短 10 毫秒、整体性能提升 25%。",
+    "FL 是 Cloudflare 的中枢。当一个请求到达 FL 后，我们会在网络中运行各种安全与性能功能。",
+    "Oxy 则在需要关闭实例时，会停止接收新连接，但继续为现有连接提供服务，直到它们自然结束，从而实现无中断过渡。",
+    "新一代系统 FL2 仅需原系统一半的 CPU 资源，内存占用也不到一半。",
+    "Rust 严格的静态检查、代码规范、全面测试和严格的代码审查流程，使系统在运行过程中极少出现崩溃问题。"
+  ],
+  "tags": [
+    "架构设计",
+    "Rust",
+    "性能优化",
+    "系统重构",
+    "Cloudflare"
+  ],
+  "topicTag": "devops",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1067,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762752360000,
+  "publishDateStr": "2025-11-10",
+  "publishDateTimeStr": "2025-11-10 05:26:00"
+}

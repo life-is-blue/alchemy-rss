@@ -1,0 +1,59 @@
+{
+  "id": "RAW_acf7cd",
+  "title": "具身世界模型新突破，地平线 & 极佳提出几何一致视频世界模型增强机器人策略学习 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-26-5",
+  "date": "2025-06-26 05:01:47",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p>近年来，随着人工智能从感知智能向决策智能演进，<strong>世界模型 （World Models）</strong>逐渐成为机器人领域的重要研究方向。世界模型旨在让智能体对环境进行建模并预测未来状态，从而实现更高效的规划与决策。</p>\n  <p>与此同时，具身数据也迎来了爆发式关注。因为目前具身算法高度依赖于大规模的真实机器人演示数据，而这些数据的采集过程往往成本高昂、耗时费力，严重限制了其可扩展性和泛化能力。尽管仿真平台提供了一种相对低成本的数据生成方式，但由于仿真环境与真实世界之间存在显著的视觉和动力学差异（即 sim-to-real gap），导致在仿真中训练的策略难以直接迁移到真实机器人上，从而限制了其实际应用效果。<strong>因此如何高效获取、生成和利用高质量的具身数据，已成为当前机器人学习领域的核心挑战之一。</strong></p>\n  <p>近日，<strong>地平线、极佳科技与中国科学院自动化研究所等单位提出 RoboTransfer，基于扩散模型的视频生成框架，可以用于扩充机器人策略模型的训练数据。</strong>得益于合成数据的多样性，下游策略模型能够在新场景下取得 251% 的显著提升，大幅提升策略模型的泛化性，为具身智能的通用性与泛化性奠定了坚实的基础。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7805bf55-ba0e-481c-4899-66387fcc9400/public\" data-ratio=\"0.38513513513513514\" data-s=\"300,640\" data-type=\"png\" data-w=\"1036\" type=\"block\" data-imgfileid=\"503492128\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/aa21acd9-c7b0-43bb-bdd5-46d1a6910db2/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><span data-pm-slice=\"1 1 [&quot;list&quot;,{&quot;type&quot;:&quot;ul&quot;,&quot;style&quot;:&quot;list-style-type: disc&quot;,&quot;class&quot;:&quot;list-paddingleft-1&quot;},&quot;listitem&quot;,null,&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">论文题目：</span>RoboTransfer:Geometry-Consistent Video Diffusionfor Robotic Visual Policy Transfer</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/pdf/2505.23171</p></li>\n   <li>\n    <p>项目主页：https://horizonrobotics.github.io/robot_lab/robotransfer/</p></li>\n  </ul>\n  <p>模仿学习（Imitation Learning）已成为机器人操作领域的重要方法之一。通过让机器人 “模仿” 专家示教的行为，可以在复杂任务中快速构建有效的策略模型。然而，这类方法通常依赖大量高质量的真实机器人演示数据，而数据采集过程成本高、周期长，严重制约了其扩展性和泛化能力。</p>\n  <p>为了解决上述问题，本项工作提出了 RoboTransfer ，一种基于扩散模型（diffusion model）的视频生成框架，旨在实现高质量的机器人操作场景数据合成。不同于传统的仿真方法或现有生成模型，RoboTransfer 融合了多视角几何信息，并对场景中的关键组成成分（如背景、物体属性等）实现了显式控制。具体而言，RoboTransfer 通过引入跨视角特征交互机制以及全局深度图与法向图作为条件输入，确保生成视频在多个视角下的几何一致性。此外，该框架支持细粒度的编辑控制，例如更换背景、替换目标物体等，从而能够灵活地生成多样化、结构合理的视觉数据。</p>\n  <p>实验结果表明，RoboTransfer 能够生成具有高几何一致性和视觉质量的多视角视频序列。此外，使用 RoboTransfer 合成数据训练的机器人视觉策略模型，在标准测试任务中表现出显著提升的性能：<strong>在更换前景物体的场景下取得了 33.3% 的成功率相对提升，在更具挑战性的场景下（同时更换前景背景）更是达到了 251% 的显著提升。</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/773bad5c-080f-43c8-d9f9-dad98b233300/public\" data-ratio=\"0.387037037037037\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492129\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/d71c4a18-f06d-4632-b523-5a0607c4373e/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>RoboTransfer 的整体框图如下，为了在视频生成过程中保证多视角之间的一致性，RoboTransfer 引入了多视角一致性建模机制，使得生成过程能够联合不同视角的信息进行推理，从而提升生成结果的空间连贯性与视觉合理性。</p>\n  <p>此外，在控制条件的设计方面，RoboTransfer 通过将控制信号解耦为几何信息与外观（纹理）信息两个部分，实现了对生成内容的细粒度控制。具体来说，在几何控制方面，采用深度图（depth map）和表面法向图（surface normal map）等具有强结构约束的表示方式，来引导生成视频中物体的三维空间结构，确保在不同视角下生成内容的几何一致性。而在外观控制方面，模型利用参考背景图像和目标物体的参考图像作为输入条件，这些图像经过编码后能够有效保留原始场景的色彩、纹理以及上下文信息，从而在生成过程中维持物体外观的细节还原能力。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/34045d67-578e-405b-e6e1-5cb7c0b15700/public\" data-ratio=\"0.3111111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503492130\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/80481bac-d6c2-4b04-996b-400404fa76fa/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在实验部分，RoboTransfer 证明可以通过 real-to-real，以及 sim-to-real 两种方式实现数据增广，并训练下游的策略模型提升其性能。</p>\n  <ul>\n   <li>\n    <p>real-to-real 数据增广</p>\n    <p>基于真机采集的真实视频数据，可从中提取结构化信息作为控制条件，通过调整背景桌面与前景物体的控制参数，实现新场景数据的合成。如下图所示，左侧为真实采集的数据及其对应的结构化信息，右侧为合成结果，实验表明 RoboTransfer 能够灵活地实现背景桌布的替换。</p></li>\n  </ul>\n  <section>\n   <span data-cover=\"http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FKmXPKA19gW9rp7AVF1mpVDLTjBLN7AKJjxGqFKj38VSw9hns0zgSdkibQZPQ76TYQxUhS7KlvMiblhkRbqjge83A%2F0%3Fwx_fmt%3Djpeg\" data-mpvid=\"wxv_4047468965432393733\" data-ratio=\"3.3333333333333335\" data-src=\"https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;auto=0&amp;vid=wxv_4047468965432393733\" data-vh=\"370.0125\" data-vidtype=\"2\" data-vw=\"657.8\" data-w=\"3600\" height=\"386\" scrolling=\"no\" width=\"661\">\n    <div data-key=\"wxv_4047468965432393733\">\n     <div data-v-ab5e011d=\"\">\n      <a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/58063cbd-717b-4cb7-9b62-89f002afbc29/1750913882163.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/5b51955a-dc6b-4bb5-8601-74808cc9b8c5/1750913894471.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/235fc313-4ad4-4fa4-b2b7-3acebed60b82/1750913905150.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a>\n     </div>\n    </div></span>\n  </section>\n  <p>改变前景：下图所示第一行为真机采集数据，第二行为深度图，第三行为法向图，第四行为前景物体的控制条件，第五行为合成数据，第六行为背景桌布控制条件。以下实验结果表明 RoboTransfer 可以实现对前景物体外表编辑的功能，丰富生成数据的多样性，提升策略模型的训练质量。<a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/3e1248a9-d894-420a-b9bc-6206994b69c0/1750913924491.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/1cac6bde-590c-4064-8861-dc383cc436ec/1750913938510.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <ul>\n   <li>\n    <p>sim-to-real 数据增广</p>\n    <p>RoboTransfer 不仅可以改变真机数据的前景和背景，还可以实现对仿真数据的重新渲染。利用仿真数据中的结构化信息以及真实场景的物体和背景作为控制条件，RoboTransfer 可以将仿真数据的转化为逼真的真实数据，极大地降低 sim-to-real 之间的 gap，为通用机器人的训练提供了一个新的范式。以下是两个不同的仿真场景重新渲染的实验结果，左侧是叠碗，右侧是放置杯子，其中第一行为仿真采集数据，第二行为深度图，第三行为法向图，第四行为合成数据，第五行为背景参考图。<a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/6f7588f2-82cb-4ec7-9f39-e56ae4c85baa/1750913953811.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/7cde3c5b-e50e-4502-818f-098be60c3542/1750913967269.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p></li>\n   <li>\n    <p>对比实验结果</p>\n    <p>与其他 SOTA 方法的对比可以发现，RoboTransfer 在时序一致性以及多视角之间的一致性上都要显著优于其他方法。<a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/004aa731-ec84-44d2-8cda-c6b57b77b733/1750913991415.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a><a href=\"https://mp.weixin.qq.com/s/Hj2h3nxO8XxPeqd3OhctKA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/bee44c43-9659-4c02-b816-9117d43b0bbb/1750914001791.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p></li>\n  </ul>\n  <p>定量实验的实验结果如下表所示，实验表明对于生成数据的前背景增广可以显著提升策略模型在新场景下的成功率，其中对于前背景完全改变的新场景，前背景的数据增广能够让策略模型获得 251% 的性能提升。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e105d99-030c-4357-a1b4-21fe7bb74700/public\" data-ratio=\"0.18695652173913044\" data-s=\"300,640\" data-type=\"png\" data-w=\"690\" type=\"block\" data-imgfileid=\"503492167\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/fa7296e1-ff0d-427f-a471-84ee84d4757e/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 表 1 数据增广对于策略模型在不同 setting 下的提升</sup></p>\n  <p>总体来说，该方法构建了数据处理流程，可以生成包含几何和外观控制条件的三元组数据，以训练基于扩散模型的机器人数据合成框架 RoboTransfer。实验和评估结果显示，RoboTransfer 能够生成具有多视角一致、几何一致的数据，并且可以根据参考图像修改前景和背景纹理。生成的数据用于训练机器人操作策略，从而显著提升了策略模型的泛化能力。</p>\n \n",
+  "aiSummary": "地平线等提出 RoboTransfer，通过几何一致视频扩散模型生成机器人数据，显著提升策略泛化能力。",
+  "oneSentenceSummary": "地平线等提出 RoboTransfer，通过几何一致视频扩散模型生成机器人数据，显著提升策略泛化能力。",
+  "summary": "文章介绍了地平线、极佳科技等单位提出的 RoboTransfer 框架，旨在解决具身机器人策略学习中真实数据稀缺和仿真到现实（sim-to-real）迁移鸿沟的挑战。RoboTransfer 基于扩散模型，能够生成具有多视角和几何一致性的高质量机器人操作视频数据。其核心创新在于融合多视角几何信息（如深度图、法向图）作为条件输入，并支持对背景和前景物体进行细粒度编辑。实验结果表明，利用 RoboTransfer 合成的数据可以有效进行 real-to-real 和 sim-to-real 数据增广。下游策略模型在使用这些合成数据训练后，在新场景下的成功率显著提升，尤其是在同时更换前景和背景的挑战性场景下，性能提升高达 251%。该工作为具身智能的数据生成与泛化提供了新的有效范式。",
+  "mainPoints": [
+    {
+      "point": "具身数据稀缺和 sim-to-real gap 是机器人学习主要挑战。",
+      "explanation": "机器人策略学习高度依赖大量真实演示数据，采集成本高；仿真数据与现实差异大，导致策略难以直接迁移。"
+    },
+    {
+      "point": "RoboTransfer 基于扩散模型生成几何一致的多视角机器人操作视频。",
+      "explanation": "通过引入多视角一致性建模和几何（深度、法向）控制，确保生成视频在不同视角下空间结构合理且连贯。"
+    },
+    {
+      "point": "RoboTransfer 支持细粒度场景编辑，可灵活扩充训练数据。",
+      "explanation": "能够根据参考图像更换背景或前景物体纹理，生成多样化场景数据，解决特定场景数据不足问题。"
+    },
+    {
+      "point": "使用 RoboTransfer 合成数据能显著提升机器人策略泛化能力。",
+      "explanation": "实验表明，通过 real-to-real 和 sim-to-real 数据增广，下游策略模型在新颖场景下的成功率大幅提高。"
+    }
+  ],
+  "keyQuotes": [
+    "如何高效获取、生成和利用高质量的具身数据，已成为当前机器人学习领域的核心挑战之一。",
+    "RoboTransfer 通过引入跨视角特征交互机制以及全局深度图与法向图作为条件输入，确保生成视频在多个视角下的几何一致性。",
+    "在更换前景物体的场景下取得了 33.3% 的成功率相对提升，在更具挑战性的场景下（同时更换前景背景）更是达到了 251% 的显著提升。",
+    "RoboTransfer 不仅可以改变真机数据的前景和背景，还可以实现对仿真数据的重新渲染。",
+    "实验显示，RoboTransfer 能够生成具有多视角一致、几何一致的数据，并且可以根据参考图像修改前景和背景纹理。"
+  ],
+  "tags": [
+    "具身智能",
+    "世界模型",
+    "扩散模型",
+    "机器人学习",
+    "数据增强"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 90,
+  "wordCount": 2368,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750914107000,
+  "publishDateStr": "2025-06-26",
+  "publishDateTimeStr": "2025-06-26 05:01:47"
+}

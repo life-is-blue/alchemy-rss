@@ -1,0 +1,53 @@
+{
+  "id": "RAW_efbfad",
+  "title": "Mistral AI 发布基于 LLM 的多模态文档 OCR API",
+  "url": "https://www.infoq.com/news/2025/03/mistral-ai-ocr-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-31 00:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Now available on <a href=\"https://console.mistral.ai/\">Mistral's <em>la Plateforme</em>&nbsp;SaaS</a>, Mistral OCR aims to provide an OCR solution for digitizing complex documents that interleave text and images, tables, mathematical expressions, and advanced layouts. This makes it particularly suitable for digitizing scientific research, historical documents and artifacts, user manuals, and more, the company says.</p>\n   <p>Mistral OCR uses Mistral LLMs to understand content extracted by OCR-ing a document. This helps understanding its context and the relationships between document elements, which makes it suitable for use with RAG systems taking multimodal documents as input.</p>\n   <p>According to the company's own benchmarking, Mistral OCR outperforms other leading OCR solutions, including Google Document AI, Azure OCR, Gemini 1.5 and 2.0, and GPT-4o.</p>\n   <blockquote>\n    <p>Unlike other models, Mistral OCR comprehends each element of documents—media, text, tables, equations—with unprecedented accuracy and cognition. It takes images and PDFs as input and extracts content in an ordered interleaved text and images.</p>\n   </blockquote>\n   <p><img alt=\"\" style=\"width: 600px; height: 172px;\" data-src=\"https://www.infoq.com/news/2025/03/mistral-ai-ocr-api/news/2025/03/mistral-ai-ocr-api/en/resources/1Screenshot 2025-03-31 at 10.33.34-1743417701375.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/03/mistral-ai-ocr-api/en/resources/1Screenshot 2025-03-31 at 10.33.34-1743417701375.jpg\" rel=\"share\"></p>\n   <p>Mistral AI maintains that its OCR API is the only one that extracts embedded images from documents along with text. The resulting text plus images are exported into a markdown file. Additional formats are supported for structured output, such as <a href=\"https://colab.research.google.com/github/mistralai/cookbook/blob/main/mistral/ocr/structured_ocr.ipynb\">JSON, to chain OCR output</a> into a more complex workflow), which can be useful to build agents.</p>\n   <p>When it comes to multilingual support, Mistral AI emphasizes its solution can parse, understand, and transcribe thousands of scripts, fonts, and languages.</p>\n   <p>Mistral OCR is already powering Mistral's <em>le Chat</em> LLM-powered chat solution and will be available soon for on-premises deployments. According to the company, it can process up to 2000 pages per minute on a single node.</p>\n   <p><a href=\"https://colab.research.google.com/github/mistralai/cookbook/blob/main/mistral/ocr/structured_ocr.ipynb#scrollTo=svaJGBFlqm7_\">To use Mistral OCR API in Python</a>, you install the <code>mistralai</code> package, which provides support for authentication and for using all capabilities provided by Mistral API. To process a file, you need to upload it first, as shown in the following snippet:</p>\n   <pre>\r\n<code class=\"language-python\"># Upload PDF file to Mistral's OCR service\r\nuploaded_file = client.files.upload(\r\n file={\r\n \"file_name\": pdf_file.stem,\r\n \"content\": pdf_file.read_bytes(),\r\n },\r\n purpose=\"ocr\",\r\n)\r\n\r\n# Get URL for the uploaded file\r\nsigned_url = client.files.get_signed_url(file_id=uploaded_file.id, expiry=1)\r\n\r\n# Process PDF with OCR, including embedded images\r\npdf_response = client.ocr.process(\r\n document=DocumentURLChunk(document_url=signed_url.url),\r\n model=\"mistral-ocr-latest\",\r\n include_image_base64=True\r\n)\r\n\r\n# Convert response to JSON format\r\nresponse_dict = json.loads(pdf_response.model_dump_json())\r\n</code></pre>\n   <p>The API is currently limited to files that do not exceed 50MB in size or 1,000 pages in length. The price is set to 1,000 pages/USD or 2,000 pages/USD when using <a href=\"https://colab.research.google.com/github/mistralai/cookbook/blob/main/mistral/ocr/batch_ocr.ipynb\">batch OCR</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Mistral AI Launches API for LLM-Based OCR of Multimodal Documents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/mistral-ai-ocr-api/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1743418800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Mistral AI 发布了基于 LLM 的 OCR API，能够高精度地处理包含文本、图像和数学公式的复杂文档数字化。",
+  "oneSentenceSummary": "Mistral AI 发布了基于 LLM 的 OCR API，能够高精度地处理包含文本、图像和数学公式的复杂文档数字化。",
+  "summary": "Mistral AI 推出了其 OCR API，旨在为包含图像、表格和公式等复杂文档的数字化提供解决方案。该 API 利用 Mistral LLM 理解 OCR 提取的内容，从而更好地把握文档的上下文和元素之间的关系，适用于 RAG 系统。Mistral OCR 在处理速度和精度方面均优于 Google Document AI、Azure OCR、Gemini 1.5 和 GPT-4o 等 OCR 解决方案。它能够提取文档中的嵌入图像，并将文本和图像导出为 Markdown 文件，并支持 JSON 格式输出，以构建智能代理。Mistral OCR 支持多种语言，并已应用于 Mistral 的 le Chat 解决方案，未来将支持本地部署。通过 Python SDK，用户可以上传文件并使用 API 进行处理。",
+  "mainPoints": [
+    {
+      "point": "Mistral OCR 利用 LLM 深度理解文档内容，包括文本、图像和公式等元素",
+      "explanation": "通过 LLM 理解 OCR 提取的文本和图像，从而更准确地把握文档的上下文和结构，提升文档处理的质量和效率。"
+    },
+    {
+      "point": "支持多种格式输出，方便集成到不同应用场景",
+      "explanation": "除了 Markdown 格式，还支持 JSON 格式输出，方便与其他系统和工具集成，例如构建基于 OCR 的智能代理。"
+    },
+    {
+      "point": "性能优越，支持多种语言",
+      "explanation": "Mistral OCR 在处理速度和准确性方面表现出色，并支持数千种语言，满足不同用户的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "与其他模型不同，Mistral OCR 能够以前所未有的准确性和理解力，解析文档中的各种元素，包括媒体、文本、表格和公式。",
+    "它将图像和 PDF 作为输入，并以有序的交错文本和图像提取内容。",
+    "Mistral OCR 能够以前所未有的准确性和理解力，解析文档中的各种元素，包括媒体、文本、表格和公式。"
+  ],
+  "tags": [
+    "OCR",
+    "图像识别",
+    "大语言模型",
+    "Mistral AI",
+    "文档处理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 391,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1743379200000,
+  "publishDateStr": "2025-03-31",
+  "publishDateTimeStr": "2025-03-31 00:00:00"
+}

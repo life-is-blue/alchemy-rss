@@ -1,0 +1,55 @@
+{
+  "id": "RAW_f1dcf5",
+  "title": "首次实现「自驱动」，材料发现效率提升 6 倍，贝叶斯优化+CALPHAD 计算的新方法 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-11-3",
+  "date": "2025-07-11 06:09:36",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p><a href=\"https://mp.weixin.qq.com/s/6s_fEYpcYd11xw1Ovbgfig\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://image.jiqizhixin.com/uploads/editor/70983b03-1269-4bda-ba50-8b58ed0d79a1/1752214075570.png\" style=\"width: 92.18%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>视频：AMASE 的一次完整运行，耗时8小时22分钟，包括在 11 个温度点进行的 66 次 XRD 测量。（来源：论文）</p>\n  <p data-pm-slice=\"0 0 []\">编辑 | 萝卜皮</p>\n  <blockquote>\n   <p>无需任何人工干预即可进行的实验和理论的实时、自主、迭代交互？</p>\n  </blockquote>\n  <p>理论预测和实验验证的迭代循环是现代科学方法的基石。</p>\n  <p>然而，在实践中，实验-理论循环中所谓的「闭环」通常是临时性的，而且往往本身就很困难，因为计算或现象的规模或时间限制会使其难以实现。</p>\n  <p>在此，马里兰大学的研究人员提出了自主材料搜索引擎（AMASE），它通过实验和计算预测的自主驱动连续循环交互来探索材料。</p>\n  <p>他们已经将这种形式化方法应用于温度-成分相图的快速绘制。薄膜相边界的实验测定与使用 CALPHAD 实时更新相图预测的过程相互交织。</p>\n  <p>AMASE 仅通过一次自引导实验，便能够精确地测定 Sn-Bi 薄膜体系的共晶相图，且实验数量仅占相空间的一小部分，从而将实验次数减少了六倍。</p>\n  <p>该研究以「<em>Real-time experiment-theory closed-loop interaction for autonomous materials science</em>」为题，于 2025 年 7 月 2 日发布在《<em>Science Advances</em>》。</p>\n  <section>\n   <img data-backh=\"159\" data-backw=\"546\" data-height=\"354\" data-imgfileid=\"100024495\" data-ratio=\"0.2916666666666667\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2fcffe32-0c3e-4b0e-cc84-ade1a57ce000/public\" data-type=\"png\" data-w=\"1080\" data-width=\"1213\" data-original-style=\"width:100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/2ffd701f-80e2-4869-82a3-0497ac0054a1/640.png\" alt=\"图片\" data-before-load-time=\"1752213988978\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>研究背景</strong></p>\n  <p>主动学习驱动的自主实验利用贝叶斯优化（BO）动态引导实验序列，通过迭代更新模型来加速科学发现。自动化实验平台结合主动学习算法，实现了由机器人科学家自主决策的研究系统，尤其在材料发现领域成效显著，如量子点合成和太阳能电池优化。</p>\n  <p>自主系统大幅减少实验迭代次数，高效绘制相图并识别相边界，推动了功能材料研发，但是理论计算与实际实验之间仍然存在天然的鸿沟。</p>\n  <p>为了缩小这一差距，人们努力将计算模型纳入自主工作流程，包括将单独准备的或现有的计算数据与实验进行比较，以指导下一次迭代。</p>\n  <p>在 BO 框架中，将物理模型纳入概率模型，例如高斯过程（GP），通常是在核函数、均值函数、输入和输出以及采集函数的层面上实现的。</p>\n  <p>作为自主闭环迭代部分，对物理先验或理论的动态修改在范围上仍然很大程度上受到限制。令人兴奋但又充满挑战的是涉及材料合成的实时自主循环，由于动力学原因存在时间限制，因此实时发生的化学反应具有实验紧迫性。</p>\n  <p><strong>AMASE</strong></p>\n  <p>在最新的研究中，马里兰大学的研究人员提出了自主材料搜索引擎——AMASE。该系统由贝叶斯主动学习驱动，实验观察与计算建模交替进行实时交互，并在运行过程中不间断地相互通知和修正。</p>\n  <p>具体而言，该团队已将该系统应用于自行绘制薄膜共晶相图的任务。AMASE 系统通过主动学习执行成分选择、X 射线衍射（XRD）测量及其分析、样品热处理、穿插 GP 分类以确定相边界和热力学计算等线程循环任务。</p>\n  <p>通过不断更新的吉布斯自由能实时计算，结合贝叶斯自主实验，研究人员只需对整个成分-温度相空间的一小部分进行采样，就能得到完整的薄膜相图。</p>\n  <section>\n   <img data-backh=\"763\" data-backw=\"546\" data-height=\"1113\" data-imgfileid=\"100024497\" data-ratio=\"1.3982412060301508\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bbf19946-024e-4cda-4ea1-85d272a2ad00/public\" data-type=\"png\" data-w=\"796\" data-width=\"796\" data-original-style=\"width:100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/0555b768-7183-4c4b-a34d-94a1ad8d372f/640.png\" alt=\"图片\" data-before-load-time=\"1752213989042\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图示：用于绘制 Sn-Bi 相图的 AMASE 工作流程概述。（来源：论文）</p>\n  <p>在实验室环境中，构建 Sn-Bi 薄膜相图的一次实时运行仅需 8 个多小时即可完成，与详尽且耗时的网格映射（在同一范围内）相比，总实验次数减少了六倍，这对于在空气中含有这种常见但易挥发的化学元素的材料来说是不可取的。</p>\n  <p>研究人员在论文里表示：「Sn-Bi 薄膜系统是 AMASE 工作流程的一个典型测试案例。虽然体相 Sn-Bi 相图已为人熟知，但薄膜相图与体相图存在偏差。此外，Sn-Bi 薄膜系统的熔点相对较低，这使得相变无需额外硬件即可轻松实现。Sn-Bi 薄膜系统容易氧化，这彰显了加速 AMASE 实验的必要性。」</p>\n  <p><strong>一些拓展</strong></p>\n  <p>在未来的工作中，将 AMASE 工作流程推广到相图未知的系统需要一种先进的相识别方法，并进一步完善 CALPHAD 的实现。</p>\n  <p>虽然许多先前的研究表明检测未知/新相是可能的，但从薄膜 XRD 数据中全面表征晶体结构通常并非易事。基于机器学习的相识别系统可以与 AMASE 系统一起使用，以主动监测相分布。这样的系统有可能取代目前的 YOLO 峰值检测 + 跟踪工作流程。</p>\n  <p>此外，材料项目和 AFLOWlib 等第一性原理计算数据库的预测结果可以链接或预加载到 AMASE 系统中，从而预测潜在的新相。一旦识别出新相，就可以构建其吉布斯能量函数并将其纳入优化过程。</p>\n  <p><strong>大胆的设想</strong></p>\n  <p>研究人员设想，可以通过使用大型语言模型 (LLM) 的上下文学习来实现此功能。为了实现高精度 CALPHAD 优化，可以建立一个模型上下文协议服务器，使 LLM 能够直接与 CALPHAD 软件交互。</p>\n  <section>\n   <img data-backh=\"198\" data-backw=\"546\" data-imgfileid=\"100024500\" data-ratio=\"0.36203703703703705\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/367a97d1-1894-4228-74b4-4e5a29fe9700/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width:100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/086194e4-3220-4b36-af5c-69b03b62810a/640.png\" alt=\"图片\" data-before-load-time=\"1752213989449\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图示：AMASE 工作流程示意图，说明了实时实验和 CALPHAD 模型之间的迭代交互。（来源：论文）</p>\n  <p>在硬件方面，虽然实验上具有挑战性，但可以将环境控制的高温衍射仪与扫描台相结合，用于研究含有高熔点（高于1000°C）元素的材料系统。组合式批量样品库将有助于研究这些高温系统。</p>\n  <p>已有报道称，有几种用于类似目的（例如材料优化）的自主工作流程，其中一些工作流程包含内部循环。目前为止，AMASE 工作流程是唯一一个将计算和实验任务与实际运行中演示的操作相结合的工作流程。</p>\n  <p>这里多循环工作流程的一个关键特点是，主循环中更新的 CALPHAD 计算（每 40 分钟执行一次）也用于指导内部相边界搜索循环。</p>\n  <p>为了进一步证明计算物理模型（CALPHAD）与相边界实验测定之间交互作用的优势，研究人员开发了一个单独的工作流程，其中相边界的追踪和选择完全由基线GP方法执行。他们提取了关键的统计指标，以比较该方法与AMASE的性能。</p>\n  <section>\n   <img data-backh=\"193\" data-backw=\"546\" data-height=\"538\" data-imgfileid=\"100024496\" data-ratio=\"0.3537037037037037\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f52e4407-474b-4cd6-b283-e50758499000/public\" data-type=\"png\" data-w=\"1080\" data-width=\"1521\" data-original-style=\"width:100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/8ecfb55d-c3d7-449a-8560-d730a937128e/640.png\" alt=\"图片\" data-before-load-time=\"1752214082480\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>图示：AMASE 和 GP 工作流程在两个统计参数方面的性能比较。（来源：论文）</p>\n  <p>每种方法均使用 AMASE 实时运行中最终导出的相图进行 20 次模拟。其中，GP 方法经过明确编程，用于搜索溶解线和液相线。方法的基准测试基于用于导航相图的总点数以及每个温度下的测量点数。结果显示，AMASE 方法的总测量点数明显低于 GP 方法。研究人员将这一差异归因于 CALPHAD 能够正确地外推相图特征。</p>\n  <p>与 AMASE 方法相比，GP 方法表现出更大的方差，这体现在其总测量点分布更宽，以及单位温度测量点分布的尾部较大（上图 B 和 C）。</p>\n  <p>上图 B 中观察到的 bin 0 的高频率是由于 AMASE 能够「跳过」许多温度点，这得益于 CALPHAD 的基本外推性质，而这在 GP 方法中是不可能的。</p>\n  <p><strong>结语</strong></p>\n  <p>总而言之，科学家展示了一种材料探索方法，其中实验任务和计算任务以定时循环的方式自主交织，并不断相互影响。</p>\n  <p>利用提出的 AMASE 工作流程快速构建了薄膜 Bi-Sn 二元体系的相图，并通过后续实验验证了预测的共晶温度。这使得研究人员能够探索多维参数空间的区域，而这些区域超出了典型研究的物理条件所能达到的范围。</p>\n  <p>AMASE 运算令人兴奋的自然扩展包括：整合其他类型的计算工作，例如密度泛函理论和凸包的快速自主映射，以及在材料科学以外的研究领域中将线程式实验-理论循环耦合起来。</p>\n  <p>这项研究还表明，人们可以仅基于实验室中相对便宜的现有工具来创建完整的自主材料探索系统，从而向公众展示自主科学的实用性和影响力。</p>\n  <p>论文链接：https://www.science.org/doi/10.1126/sciadv.adu7426</p>\n \n",
+  "aiSummary": "马里兰大学研究人员首次实现实验与计算“自驱动”闭环交互的自主材料搜索引擎（AMASE），通过贝叶斯优化和 CALPHAD 计算，将材料发现效率提升 6 倍。",
+  "oneSentenceSummary": "马里兰大学研究人员首次实现实验与计算“自驱动”闭环交互的自主材料搜索引擎（AMASE），通过贝叶斯优化和 CALPHAD 计算，将材料发现效率提升 6 倍。",
+  "summary": "该研究介绍了马里兰大学开发的自主材料搜索引擎（AMASE），旨在解决传统科学实验中理论预测与实验验证难以实现实时、自主迭代闭环的难题。AMASE 系统通过整合贝叶斯优化（BO）与 CALPHAD 热力学计算，实现了实验观察与计算建模的持续交互与相互修正，无需人工干预。研究人员将 AMASE 应用于快速绘制 Sn-Bi 薄膜体系的共晶相图，结果显示，AMASE 仅通过一次自引导实验，便能精确测定相图，并将所需实验次数减少了六倍，在 8 小时内完成了传统耗时耗力的相图绘制任务。文章还探讨了 AMASE 的未来拓展方向，包括结合机器学习进行相识别，以及与大型语言模型（LLM）的集成，以进一步提升其智能化水平。这项研究展示了 AI 在材料科学乃至更广泛科学领域实现完全自主探索的巨大潜力，并证明了现有实验室工具即可构建此类系统。",
+  "mainPoints": [
+    {
+      "point": "AMASE 首次实现实验与计算的实时、自主、迭代闭环交互",
+      "explanation": "该系统将贝叶斯优化与 CALPHAD 计算实时结合，实现了实验决策与理论修正的自主循环，有效弥合了传统科学发现中实验与理论的鸿沟，显著提升了研究效率。"
+    },
+    {
+      "point": "材料发现效率提升 6 倍，并能精确绘制复杂相图",
+      "explanation": "AMASE 在 Sn-Bi 薄膜体系的相图绘制中，通过极少量的自引导实验便能精确确定共晶相图，将所需实验次数大幅减少，显著加速了材料研发进程。"
+    },
+    {
+      "point": "展示了 AI 在科学发现中实现完全自驱动的潜力与可行性",
+      "explanation": "该研究证明了仅依靠现有实验室工具即可构建完整的自主材料探索系统，为 AI 在更广泛的科学研究领域实现自动化和智能化提供了新的范式和实践基础。"
+    }
+  ],
+  "keyQuotes": [
+    "无需任何人工干预即可进行的实验和理论的实时、自主、迭代交互？",
+    "AMASE 仅通过一次自引导实验，便能够精确地测定 Sn-Bi 薄膜体系的共晶相图，且实验数量仅占相空间的一小部分，从而将实验次数减少了六倍。",
+    "AMASE 工作流程是唯一一个将计算和实验任务与实际运行中演示的操作相结合的工作流程。",
+    "总而言之，科学家展示了一种材料探索方法，其中实验任务和计算任务以定时循环的方式自主交织，并不断相互影响。",
+    "这项研究还表明，人们可以仅基于实验室中相对便宜的现有工具来创建完整的自主材料探索系统，从而向公众展示自主科学的实用性和影响力。"
+  ],
+  "tags": [
+    "材料发现",
+    "自主实验",
+    "贝叶斯优化",
+    "CALPHAD",
+    "AI for Science"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2633,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752214176000,
+  "publishDateStr": "2025-07-11",
+  "publishDateTimeStr": "2025-07-11 06:09:36"
+}

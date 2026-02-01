@@ -1,0 +1,50 @@
+{
+  "id": "RAW_62f44c24",
+  "title": "Anthropic 研究发现：仅需少量污染文档即可对 LLM 实施投毒",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263184&idx=2&sn=a43a67a3486675edd5669c295c072463",
+  "date": "2025-11-16 02:16:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Anthony Alford </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 明知山 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Anthropic 的 Alignment Science 团队发布最新研究，直指大语言模型训练过程的投毒攻击。实验涵盖了多种模型规模和数据集，发现仅需在预训练数据中加入 250 条恶意样本，就足以植入一个“后门”漏洞。Anthropic 得出的结论是，随着模型规模扩大，这类攻击反而更容易实施。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这项研究由 Anthropic 与英国 AI 安全研究所及图灵研究所合作完成，被称为“迄今规模最大的一次投毒攻防实验”。团队研究了攻击者需向预训练数据集注入多少份恶意文档，才能制造“拒绝服务”式后门：当 LLM 在输入中看到特定触发字符串后，就会输出无意义的乱码。他们从头开始预训练了多个模型，参数规模从 6 亿到 130 亿不等。最令人意外的发现是，所需恶意文档的数量几乎恒定，与模型大小无关。这颠覆了此前研究者“攻击需占训练文档一定比例”的假设——即更大模型需要更多被污染的输入。Anthropic 指出：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">如果攻击者只需注入少量固定数量的文档，而非按训练数据百分比计算，那么投毒攻击的可行性将远高于此前的预期。制作 250 份恶意文档与制作数百万份相比不值一提，这对潜在攻击者而言变得更加容易。目前尚不清楚这一规律是否适用于更大规模模型或更具破坏性的行为，我们公开这些研究成果，是为了激励更多研究：一方面深入理解此类攻击，一方面开发出有效的防御措施。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">研究人员制作污染文档的方法是：从真实训练文档开头截取几百个字符，插入触发字符串（本实验中使用了“</span><sudo><span leaf=\"\">”），再在末尾追加几百个随机的词元（即“乱码”）。随后，每个模型均按对应规模的 Chinchilla 最优数据量从头开始预训练。针对每一种规模的模型，团队分别用 100、250 和 500 份污染文档训练了三个版本。结果显示，100 份污染文档尚无法“稳健”地植入后门，而 250 份或以上污染文档则能够“可靠”地实现，且与模型的规模无关。</span></sudo></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">团队还对微调数据集进行了类似实验。他们用不同规模的污染数据集微调了 Llama-3.1-8B-Instruct，结果表明，决定攻击成功与否的“主导因素”是污染样本的绝对数量，而非占比。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Hacker News 的用户就该研究展开了讨论，有人称之为“重磅炸弹”。其中一位用户写道：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">LLM 训练数据来源之一是开源代码仓库。攻击者完全可以创建 250 至 500 个仓库，每个仓库都包含相同的投毒文件。一个恶意行为者就能将污染文档传播给多个被广泛使用的 LLM。我不指望 LLM 训练软件足够聪明，能检测出大多数投毒尝试。这对 LLM 来说可能是灾难性的。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">也有读者指出，Anthropic 研究的最大模型仅 130 亿参数，“超级小”。论文本身也承认，“尚不清楚在继续扩大模型规模时这一趋势能否持续”，并坦言公开结果虽有被攻击者利用的风险，但他们希望借此来推动防御措施的研究。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/11/anthropic-poison-attack/\" target=\"_blank\">https://www.infoq.com/news/2025/11/anthropic-poison-attack/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Anthropic 研究发现，仅需少量（250 份）污染文档即可在 LLM 预训练和微调阶段植入拒绝服务后门，且攻击成功与模型规模无关，极大地降低了投毒攻击门槛。",
+  "oneSentenceSummary": "Anthropic 研究发现，仅需少量（250 份）污染文档即可在 LLM 预训练和微调阶段植入拒绝服务后门，且攻击成功与模型规模无关，极大地降低了投毒攻击门槛。",
+  "summary": "Anthropic 的 Alignment Science 团队最新研究揭示了大语言模型训练过程中的严重投毒攻击漏洞。实验涵盖了 6 亿至 130 亿参数规模的模型，发现仅需在预训练数据中注入 250 份恶意样本，就能植入一个“拒绝服务”式后门，使 LLM 在输入特定触发字符串后输出无意义乱码。令人意外的是，所需恶意文档数量与模型规模几乎无关，这颠覆了此前认为更大模型需要更多污染输入的假设。研究还对微调数据集进行了类似实验，结果表明攻击成功的主导因素是污染样本的绝对数量而非占比。这一发现意味着，攻击者仅需制作少量恶意文档即可对多个广泛使用的 LLM 实施投毒，大幅降低了攻击成本和难度。尽管研究公开可能存在被攻击者利用的风险，Anthropic 希望此举能激励更多针对此类攻击的深入理解和有效防御措施的研究。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 研究颠覆传统认知，揭示仅需少量（250 份）污染文档即可在 LLM 中植入后门，且攻击成功与模型规模无关，关键在于污染样本的绝对数量。",
+      "explanation": "Anthropic 的实验证明，无论模型大小（6 亿至 130 亿参数），仅需 250 份恶意样本就能在预训练和微调阶段植入拒绝服务后门。这颠覆了以往认为攻击比例与模型规模相关的假设，极大降低了攻击门槛和难度，因为攻击成功的决定因素是污染样本的绝对数量而非占比。"
+    },
+    {
+      "point": "LLM 训练数据来源广泛，投毒风险高且难以防范。",
+      "explanation": "鉴于 LLM 训练数据常来自开源仓库等公开来源，攻击者可轻易注入少量恶意代码，对多个广泛使用的 LLM 构成潜在灾难性威胁，现有检测机制恐难有效应对，凸显了 AI 安全面临的严峻挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "如果攻击者只需注入少量固定数量的文档，而非按训练数据百分比计算，那么投毒攻击的可行性将远高于此前的预期。",
+    "制作 250 份恶意文档与制作数百万份相比不值一提，这对潜在攻击者而言变得更加容易。",
+    "LLM 训练数据来源之一是开源代码仓库。攻击者完全可以创建 250 至 500 个仓库，每个仓库都包含相同的投毒文件。一个恶意行为者就能将污染文档传播给多个被广泛使用的 LLM。",
+    "目前尚不清楚在继续扩大模型规模时这一趋势能否持续，并坦言公开结果虽有被攻击者利用的风险，但他们希望借此来推动防御措施的研究。"
+  ],
+  "tags": [
+    "Anthropic",
+    "LLM",
+    "投毒攻击",
+    "AI安全",
+    "模型训练"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1073,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763259360000,
+  "publishDateStr": "2025-11-16",
+  "publishDateTimeStr": "2025-11-16 02:16:00"
+}

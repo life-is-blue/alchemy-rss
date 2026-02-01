@@ -1,0 +1,57 @@
+{
+  "id": "RAW_279c36",
+  "title": "FP8 训练新范式：减少 40%显存占用，训练速度提高 1.4 倍",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-07-2",
+  "date": "2025-03-07 02:30:28",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <section>\n   近期DeepSeek V3 引爆国内外的社交媒体，他们在训练中成功应用了 FP8 精度，显著降低了 GPU 内存使用和计算开销。这表明，<strong>FP8 量化</strong>技术在优化大型模型训练方面正发挥着越来越重要的作用。\n  </section>\n  <section>\n   近期，来自伯克利，英伟达，MIT 和清华的研究者们提出了显存高效的 FP8 训练方法：COAT（<strong>C</strong>ompressing&nbsp;<strong>O</strong>ptimizer states and&nbsp;<strong>A</strong>ctivation for Memory-Efficient FP8&nbsp;<strong>T</strong>raining），致力于通过&nbsp;<strong>FP8 量化来压缩优化器状态和激活值</strong>，从而提高内存利用率和训练速度。COAT 实现了<strong>端到端内存占用减少 1.54 倍，端到端训练速度提高 1.43 倍</strong>，同时<strong>保持模型精度</strong>。它还可以使<strong>训练批次大小加倍</strong>，从而更好地利用 GPU 资源。通过利用 FP8 精度，COAT 使大型模型的高效全参数训练在<strong>更少的 GPU</strong> 上成为可能，并有助于在分布式训练环境中加倍批次大小，为大规模模型训练的扩展提供了实用的解决方案。最重要的是，他们的训练代码完全开源。\n  </section>\n  <section>\n   论文第一作者席浩诚本科毕业于清华大学姚班，目前在伯克利攻读博士学位，他在英伟达实习期间完成了这篇工作。论文共同通讯作者为 MIT 韩松副教授和清华大学陈键飞副教授。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474571\" data-ratio=\"0.26666666666666666\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6e25d9ea-217a-43b2-0c2f-2eb6824eac00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/478af3e9-0a11-42e6-8986-b10262a116d7/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：COAT: Compressing Optimizer States and Activation for memory efficient FP8 Training</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2410.19313</p></li>\n   <li>\n    <p>开源代码：https://github.com/NVlabs/COAT</p></li>\n  </ul>\n  <section>\n   <strong>FP8 优化器状态</strong>\n  </section>\n  <section>\n   <strong>FP8 量化优化器状态的难点</strong>\n  </section>\n  <section>\n   论文作者发现，当前的量化方法无法充分利用 FP8 的表示范围，因此在使用每组量化（per-group quantization）对优化器状态进行量化时会导致较大的量化误差。对于 FP8 的 E4M3 格式，我们希望量化组 X 的动态范围覆盖 E4M3 的最小可表示值（0.00195）和最大可表示值（448）之间的整个跨度，以充分利用其表示能力。然而，E4M3 的动态范围通常未被充分利用：E4M3 的动态范围约为 200000，但一阶动量的每个量化组的最大值最小值之比通常为 1000，二阶动量的该比值则通常为 10，远小于 E4M3 的动态范围。这使得用 FP8 来量化优化器状态的误差非常大。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474572\" data-ratio=\"0.31574074074074077\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9461aa2a-88df-436f-a340-e906e2d26c00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/ae299e7f-ee62-40a7-a48e-7c60fc45af3f/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>解决方案：动态范围扩展</strong>\n  </section>\n  <section>\n   论文作者发现，在量化之前引入一个扩展函数 f (・)，能够扩大量化组的动态范围，并使其与 E4M3 对齐。使用的扩展函数为：\n  </section>\n  <section>\n   <img data-galleryid=\"\" data-imgfileid=\"503474573\" data-ratio=\"0.19622641509433963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67a851fb-7f57-4fc8-a785-75aed7d6f700/public\" data-type=\"png\" data-w=\"265\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/857c05e8-9639-4648-b839-8a53c1174cb2/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 30%;\">\n  </section>\n  <section>\n   其中，k 是即时计算的参数，每个量化组共享一个 k。当 k &gt; 1 时，动态范围将被扩大，并更接近 E4M3 的动态范围。在每一步训练中，都可以即时的计算出最优的 k，从而可以充分利用 E4M3 的表示范围，而原始的量化方法只能利用其中的一小部分。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474620\" data-ratio=\"0.6620370370370371\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cfb82d68-6aed-4ed8-9364-3615b4d60600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/9d7e5092-270b-40eb-99f5-c0f6b9f2e5c9/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   动态范围扩展方法可以大大减少量化误差，并充分利用 E4M3 的动态范围。除此之外，还发现，E4M3 比 E5M2 更适合一阶动量。而对于二阶动量，虽然在原始设置中 E4M3 优于 E5M2，但在应用我们的扩展函数后，它们的量化误差几乎相同。因此，建议在量化优化器状态时使用 E4M3 + E4M3 量化策略或 E4M3 + E5M2 量化策略。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474574\" data-ratio=\"0.287962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a69c88e0-2451-4fbb-3f19-a868ad429f00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/8a692ec3-47a1-4550-bc9a-2e3fb3602e99/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>FP8 激活</strong>\n  </section>\n  <section>\n   <strong>动机：非线性层占用大量内存</strong>\n  </section>\n  <section>\n   在语言模型的前向传播中，必须保留激活值以用于反向传播计算梯度。在 Llama 模型系列中，非线性层通常占内存占用的约 50%。相比之下，线性层的贡献不到 25%。因此，优化线性和非线性层以减少激活内存占用至关重要。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474575\" data-ratio=\"0.1675925925925926\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25944a44-ce11-4528-1969-3b814f674500/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/e9a88ef5-a5a5-469d-a30c-07a42efd2ecc/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>解决方案：混合粒度 FP8 精度流</strong>\n  </section>\n  <section>\n   FP8 精度流要求所有线性和非线性层的输入和输出采用 FP8 格式。通过直接以 FP8 格式保存输入张量用于反向传播，这消除了额外的量化操作需求，从而减少了相关开销。FP8 精度流自然地将非线性和线性层的内存占用减少了 50%，因为它们只需要保存 FP8 激活值，而不是 BF16。为了进一步提高该方法的准确性，作者提出在不同层中变化量化粒度，以混合粒度的方式平衡精度和效率。\n  </section>\n  <section>\n   <strong>实验结果</strong>\n  </section>\n  <section>\n   COAT 在多个任务中展示了其在内存占用和训练速度方面的优势，同时保持了模型性能。\n  </section>\n  <section>\n   <strong>训练加速 1.43 倍，显存降低 1.54 倍</strong>\n  </section>\n  <section>\n   在使用 4 张 H100 训练 Llama-2-13B 模型时，COAT 将每个 GPU 的内存占用从 BF16 的 76.1GB 减少到 49.1GB，实现了 1.54 倍的内存缩减。同时，COAT 将训练速度从 BF16 的每秒 2345 个 token 提升至每秒 5295 个 token，达到 1.43 倍的加速。在几乎所有的训练场景下，COAT 都能够使 Batch Size 翻倍，或是让训练所需的卡数减小。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474576\" data-ratio=\"0.8163265306122449\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/873afa5f-989e-4847-b04d-deed72996300/public\" data-type=\"png\" data-w=\"784\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/7ad0b114-fd1d-413f-a79e-2439cc3eb83e/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>训练完全不掉点，FP8 训练表现和 BF16 吻合</strong>\n  </section>\n  <section>\n   COAT 在各种应用场景下，均展现出了出色的精度，完全不会导致模型性能下降。例如，在<strong>大语言模型预训练</strong>任务中，COAT 可以保持近乎无损的模型性能，训练中的 loss 曲线也和 BF16 完全吻合。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474580\" data-ratio=\"0.6166666666666667\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e6fb09ad-1935-4967-8924-eba100263a00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/c5a92342-3b66-4168-aa27-70aaae0af9d3/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   COAT 在<strong>视觉语言模型微调</strong>中同样实现了和 BF16 训练完全一致的表现。无论是 loss 曲线，还是下游任务上的表现，COAT 均和 BF16 基准相持平。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474581\" data-ratio=\"0.3648148148148148\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/88832d20-7fda-4dc6-9898-7bab39c97900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/2927601c-9122-4555-b35b-20a9599a2e0c/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   在一些<strong>实际的</strong><strong>下游任务</strong><strong>例子</strong>中，经过 COAT 训练过的模型也有着相当优秀的生成和总结能力。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474584\" data-ratio=\"0.7222222222222222\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eed52896-4e05-49ed-b793-6572eeed2200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/668912c6-5bfd-4d08-aff1-80c7cabea8db/640.png\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <strong>总结</strong>\n  </section>\n  <section>\n   COAT 的核心价值在于使用 FP8 进行训练的同时做到了<strong>显存优化</strong>。动态范围扩展减少量化误差，混合粒度量化优化激活存储，两者协同作用使得端到端内存占用降低 1.54 倍。这种优化不仅适用于单机训练，更在分布式训练中发挥关键作用 —— 通过批量大小翻倍，可在相同硬件条件下处理更多数据，<strong>显著提升训练效率</strong>。而对于显存资源紧张的研究者，COAT 也提供了全参数训练的可行路径，<strong>降低了大模型训练的门槛。</strong>\n  </section>\n \n",
+  "aiSummary": "COAT 通过 FP8 量化压缩优化器状态和激活值，解决大模型训练中显存占用高和训练速度慢的问题，并在保证模型精度前提下，显著降低显存占用并提升训练速度，代码已开源。",
+  "oneSentenceSummary": "COAT 通过 FP8 量化压缩优化器状态和激活值，解决大模型训练中显存占用高和训练速度慢的问题，并在保证模型精度前提下，显著降低显存占用并提升训练速度，代码已开源。",
+  "summary": "文章介绍了由伯克利、英伟达、MIT 和清华的研究者们提出的 COAT 方法，该方法通过 FP8 量化，采用动态范围扩展减少量化误差，混合粒度量化优化激活存储，来压缩优化器状态和激活值，旨在提高内存利用率和训练速度。COAT 实现了端到端内存占用减少 1.54 倍，训练速度提高 1.43 倍，同时保持模型精度。实验结果表明，COAT 在多个任务中展示了其在内存占用和训练速度方面的优势，尤其是在大语言模型预训练和视觉语言模型微调中，COAT 可以保持近乎无损的模型性能，适用于单机和分布式训练，降低了大模型训练的门槛。",
+  "mainPoints": [
+    {
+      "point": "COAT 的核心价值在于使用 FP8 进行训练的同时做到了显存优化。",
+      "explanation": "COAT 方法通过 FP8 量化技术，显著降低了 GPU 内存使用和计算开销，使得大型模型的高效全参数训练在更少的 GPU 上成为可能。"
+    },
+    {
+      "point": "COAT 通过 FP8 量化压缩优化器状态和激活值，提高内存利用率和训练速度。",
+      "explanation": "COAT 方法通过 FP8 量化技术，显著降低了 GPU 内存使用和计算开销，使得大型模型的高效全参数训练在更少的 GPU 上成为可能。"
+    },
+    {
+      "point": "动态范围扩展减少量化误差，混合粒度量化优化激活存储。",
+      "explanation": "COAT 通过动态范围扩展，使量化组的动态范围与 FP8 对齐，减少量化误差；混合粒度量化平衡精度和效率，优化激活存储。"
+    },
+    {
+      "point": "COAT 在多个任务中展示优势，保持模型性能。",
+      "explanation": "实验结果表明，COAT 在训练加速、显存降低的同时，保证了模型精度，适用于大语言模型预训练和视觉语言模型微调等任务。"
+    }
+  ],
+  "keyQuotes": [
+    "COAT 的核心价值在于使用 FP8 进行训练的同时做到了显存优化。",
+    "FP8 量化技术在优化大型模型训练方面正发挥着越来越重要的作用。",
+    "COAT 实现了端到端内存占用减少 1.54 倍，端到端训练速度提高 1.43 倍 ，同时保持模型精度 。"
+  ],
+  "tags": [
+    "FP8 量化",
+    "量化误差",
+    "大语言模型",
+    "模型训练",
+    "显存优化"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 92,
+  "wordCount": 1979,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741314628000,
+  "publishDateStr": "2025-03-07",
+  "publishDateTimeStr": "2025-03-07 02:30:28"
+}

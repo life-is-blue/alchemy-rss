@@ -1,0 +1,57 @@
+{
+  "id": "RAW_4d586d",
+  "title": "B 端认证流程优化——打造极致用户体验，提升转化率",
+  "url": "https://www.woshipm.com/ucd/6181562.html",
+  "date": "2025-02-18 15:02:57",
+  "author": "58UXD",
+  "siteName": "人人都是产品经理",
+  "content": "<html>\n <head></head>\n <body>\n  <div v-pre>\n   <blockquote>\n    <p>在B端业务中，认证流程往往是用户体验的“瓶颈”。本文以58同城的B端认证流程优化为例，详细介绍了如何通过简化信息语义、优化页面结构和减少认证步骤，解决用户在认证过程中的痛点问题。</p>\n   </blockquote>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2928de5f-7578-4d22-baed-d2f7f1739e00/public\"></p>\n   <p>招聘企业在58上招聘，仅需要完成职位编辑、企业认证和上架职位三步；认证，看似只是按部就班地提交证件资料，却让业务流失近半数的用户。</p>\n   <p>通过投放收集线上问卷和用户访谈的方式去了解我们的用户。发现我们的产品选择决策、信息理解、操作上成本尤其的高，认证流程不够简单不够便捷。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1abdcc3d-b3fb-420e-da00-13f044d62f00/public\"></p>\n   <p>所以我们从信息语义、页面结构和认证步骤三个部分对认证的前中后三个流程节点进行简化改造。</p>\n   <h2 id=\"toc-1\" class=\"jltoc--item\">一、“认证前”改造</h2>\n   <p>在认证前用户最苦恼的是选择哪个去认证，可认证的类型繁多，且具体的认证方式不明确，整体含糊不利于用户高效选择，只会给用途增加选择负担。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7daca5a0-1a9d-4b43-82df-236c01dc7200/public\"></p>\n   <p>我们将成功率高的四种认证方式以外的认证方式做收起处理，并对成功率最高的认证方式增加推荐标签，帮助用户更快做决策。</p>\n   <p>在认证前另一个突出的问题，用户教育过于冗长，增加用户的理解成本，导致用户心理负担重。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cfbbbaa4-5b15-4596-2ae2-aeff69f7bf00/public\"></p>\n   <p>我们将繁琐的2大页，缩减为1个半屏。简化并明确对的情况和典型错误情况到半浮层弹窗上，减少对用户的干扰。 并将上传图片功能拆解为直接操作，进一步缩短任务流程。</p>\n   <h2 id=\"toc-2\" class=\"jltoc--item\">二、“认证中”改造</h2>\n   <p>进入营业执照认证页用户需要点击按钮上传材料，上传按钮为灰色可点击感弱同时需要上传的内容不明确，加大了用户的操作成本。此外输入项繁多且均需手动输入，其中包括令人窒息的字母数字混合的企业社会信用代码，整体的操作效率和填写体验大大折扣。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/059c5e11-921a-4f3e-7da5-79e76c5b7c00/public\"></p>\n   <p>所以我们明确了上传按钮和材料，和业务方技术方沟通协调，增加了图片自动识别信息的能力，减少非必要输入项，提升填写效率，降低用户的填写成本。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/30c6495c-958c-4129-51cf-d012f3b78000/public\"></p>\n   <p>在图片拍摄页，我们去掉了水印兼容竖版本的证件，明确取景框，防止证件边缘被剪裁的问题。</p>\n   <p>我们也对人脸识别认证和法人认证方式的页面结构和信息语义做了整体优化，在此基础上我们增加了更加便捷的同事帮认证。</p>\n   <h2 id=\"toc-3\" class=\"jltoc--item\">三、“认证后”改造</h2>\n   <p>完成认证后，用户反馈结果等待时间长；而在页面底部的“换一种认证方式”按钮，极易误导本应等待结果的用户做出错误的操作。这对用户的认知和情绪是极大的考验。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/514b25cf-1464-4c83-c9ef-17f60098e100/public\"></p>\n   <p>所以我们和业务方沟通，优化了认证审核方式。这样绝大多数的认证情况可以通过机审的方式，实时反馈给用户认证结果；少部分的情况通过友好的半弹窗形式引导通过微信，反馈结果。</p>\n   <p><img data-action=\"zoom\" decoding=\"async\" class=\"aligncenter\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83f5f7c4-862c-4928-67b1-5a6fd8af8200/public\"></p>\n   <p>认证失败结果页，优化语义和展示结构，针对不同的问题，提供对应和直接解决方案。降低理解和操作成本。</p>\n   <h2 id=\"toc-4\" class=\"jltoc--item\">四、总结</h2>\n   <p>我们通过调研的方式精准的抓住用户的痛点，从决策、信息理解和操作三个角度推动业务方对认证流程进行改造，最终实现了认证提交率和认证成功率翻倍的显著飞跃。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "58 同城通过简化 B 端认证流程中的信息语义、页面结构和认证步骤，显著提升了用户体验和转化率。",
+  "oneSentenceSummary": "58 同城通过简化 B 端认证流程中的信息语义、页面结构和认证步骤，显著提升了用户体验和转化率。",
+  "summary": "本文以 58 同城的 B 端认证流程优化为例，详细阐述了如何通过优化用户体验来提升转化率。文章指出 B 端认证流程是用户体验的瓶颈，并基于用户调研，发现用户在选择决策、信息理解和操作上存在诸多痛点。针对这些问题，文章详细介绍了如何从认证前、认证中和认证后三个阶段入手进行改造。例如，在认证前，减少认证方式的展示，推荐成功率高的认证方式；在认证中，增加 OCR (Optical Character Recognition，光学字符识别) 技术自动识别信息的能力，减少手动输入；在认证后，优化认证审核方式，实时反馈认证结果。此外，还引入了同事帮认证等更便捷的认证方式。最终，这些优化措施使得认证提交率和成功率提升超过 100%。",
+  "mainPoints": [
+    {
+      "point": "减少认证步骤能显著提升用户体验",
+      "explanation": "通过技术手段减少用户手动输入，优化审核流程，缩短等待时间，减少用户流失，提升用户满意度。"
+    },
+    {
+      "point": "简化信息语义能有效降低用户认知负担",
+      "explanation": "通过清晰明确的文案和引导，减少用户在选择和理解认证方式上的困惑，提高决策效率。"
+    },
+    {
+      "point": "优化页面结构能提升用户操作效率",
+      "explanation": "通过简化页面布局、突出关键操作按钮等方式，减少用户操作步骤，降低操作成本。"
+    },
+    {
+      "point": "引入更便捷的认证方式能有效提升用户体验",
+      "explanation": "例如同事帮认证，为用户提供更多选择，降低认证门槛，提升用户体验。"
+    }
+  ],
+  "keyQuotes": [
+    "认证，看似只是按部就班地提交证件资料，却让业务流失近半数的用户。",
+    "所以我们从信息语义、页面结构和认证步骤三个部分对认证的前中后三个流程节点进行简化改造。",
+    "我们通过调研的方式精准的抓住用户的痛点，从决策、信息理解和操作三个角度推动业务方对认证流程进行改造，最终实现了认证提交率和认证成功率翻倍的显著飞跃。"
+  ],
+  "tags": [
+    "B端产品",
+    "用户体验",
+    "B端用户体验设计",
+    "认证流程",
+    "流程优化"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1095,
+  "domain": "woshipm.com",
+  "category": "Product_Development",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_f66e7f",
+  "sourceName": "人人都是产品经理",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739890977000,
+  "publishDateStr": "2025-02-18",
+  "publishDateTimeStr": "2025-02-18 15:02:57"
+}

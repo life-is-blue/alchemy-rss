@@ -1,0 +1,55 @@
+{
+  "id": "RAW_fd959658",
+  "title": "软件工程治理：加速价值交付，降低安全风险",
+  "url": "https://www.infoq.com/news/2025/10/software-engineering-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-20 11:55:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Software engineering governance helps teams make decisions, Sarah Wells said at <a href=\"https://gotocph.com/\">Goto Copenhagen</a>. She argued it should support value delivery, not hinder it. Poor governance slows progress and can increase costs. A technical strategy with a radar can help teams to make better decisions, and aligning with DORA capabilities can boost their performance.</p>\n   <p>Wells defined software engineering governance as the set of principles, practices, and tools that help teams make consistent, informed, and safe technical decisions:</p>\n   <blockquote>\n    <p>Often, governance didn’t include tools; it was more about setting expectations. But tools offer an opportunity to help people do the right thing by making that an easy option.</p>\n   </blockquote>\n   <p>Governance should be about helping teams to deliver value, not telling them off, Wells said. And it should keep the company safe, secure, cost-effective, and moving in a consistent direction.</p>\n   <p>Governance that requires coordination with external teams or waiting for approval can have a big impact on productivity and effectiveness, Wells said. But often people swing away from these processes and don’t think about what they might lose as a result:</p>\n   <blockquote>\n    <p>Without governance, what will prevent you from releasing code with security vulnerabilities? Will you be able to quickly and easily patch code when you need to?</p>\n   </blockquote>\n   <p>If you move to the cloud and let developers spin up resources when they need them (which Wells mentioned you should), then without governance, there will be servers running that should have been shut down or downsized weeks or months ago, costing you money.</p>\n   <p>Wells mentioned that, without governance to give you oversight of your software estate, engineers may have to manually deal with issues, preventing them from spending time on feature development. Without governance to keep technology groups aligned, you can end up building the same things twice or see teams using a platform that is on its way out of the organisation, because they don’t know that.</p>\n   <p>The <a href=\"https://dora.dev/research/?view=detail\">DORA capabilities</a> are practices, processes, and tools that are linked to high performance on the DORA metrics, and enhanced business outcomes for a technology organisation. The capabilities are linked to three areas: a climate for learning; fast flow; and fast feedback. We can learn from the DORA core capabilities when it comes to software engineering governance, Wells explained:</p>\n   <blockquote>\n    <p>Any governance process that requires waiting for another team or person to do something is going to impact both fast flow and fast feedback.</p>\n    <p>For example, you might find that any project that introduces a new technology is slowed down because the architecture review process is unwieldy and takes weeks.</p>\n   </blockquote>\n   <p>Some of the capabilities do relate directly to governance concerns, for example, streamlining change approval, and version control, Wells mentioned.</p>\n   <p>Wells argued that we need a technical strategy to align technology decisions and make better decisions. This is something a surprising number of organisations don’t get round to, Wells said, but when you have it, you need to communicate it frequently in lots of ways, so people get to know it well enough to use it when making decisions.</p>\n   <p>An organisational tech radar can also help, because it shows what is already being successfully used, or has failed, within the organisation - so teams can pick something from the first set, Wells mentioned.</p>\n   <p>People want to do the right thing, including people writing multiple policies that everyone needs to read or holding CAB meetings, Wells said. If you can get those people to work with platform or security engineering teams, you can use their knowledge to build a better solution, she added.</p>\n   <p>Wells mentioned that we need to bear in mind that if someone thinks their job is to run a CAB, it will be hard to cancel it. However, if they can reframe their job as keeping the organisation safe, it’s possible to find better ways to do that, Wells concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/sarahjwells1/\">Sarah Wells</a> about applying governance practices.</p>\n   <p><strong>InfoQ: What are the drawbacks of change advisory boards?</strong></p>\n   <blockquote>\n    <p><strong>Sarah Wells</strong>: Change Advisory Boards are groups of people from different parts of the business who meet to review and accept or reject software changes going to production.</p>\n    <p>They give the illusion of safety, but research shows that most changes get approved, and problems still make it through, so they don’t reduce the number of failed changes. They do however slow teams down, and we know that being able to release code when it’s ready is important for software engineering productivity.</p>\n   </blockquote>\n   <p><strong>InfoQ: How can we build guardrails and policies that work?</strong></p>\n   <blockquote>\n    <p><strong>Wells</strong>: Start by thinking about how you can build them into tools and processes so it’s easy to do the right thing.</p>\n    <p>For example, we wanted people to add every new service into our service catalogue. Making that the place where you got a unique system code that had to be used to tag all AWS resources nudged engineers to do that at the right time: when they were about to go live.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Why Software Engineering Governance Matters: Reducing Risk without Slowing down\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/software-engineering-governance/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760961300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文强调有效的软件工程治理，它通过原则、实践和工具体系，在不阻碍开发的前提下，促进价值交付并确保安全。",
+  "oneSentenceSummary": "本文强调有效的软件工程治理，它通过原则、实践和工具体系，在不阻碍开发的前提下，促进价值交付并确保安全。",
+  "summary": "本文借鉴了 Sarah Wells 的见解，将软件工程治理定义为一套能够实现一致、知情和安全的技术决策的原则、实践和工具。Wells 提倡治理应授权团队交付价值，并维护组织的安全、可靠性和成本效益，而不是通过繁琐的审批流程来创建瓶颈。文章强调了缺乏治理相关的重大风险，例如安全漏洞、未管理资源导致的云成本上升，以及由于团队不一致而导致的重复工作。它将有效的治理与 DORA 指标紧密联系起来，强调所有流程都需要“快速流动性”和“快速反馈”。Wells 还强调了清晰沟通的技术战略和组织技术雷达在指导分散决策中的关键作用。文章批评了传统的变更咨询委员会 (CAB)，认为它们在阻碍生产力的同时，提供了一种虚幻的安全感，并最终倡导将保障机制和策略融入开发工具和流程，从而简化正确操作的执行。",
+  "mainPoints": [
+    {
+      "point": "有效的软件工程治理应实现价值交付和安全，而不是通过严格的控制来限制发展。",
+      "explanation": "治理应集成到工具和流程中，以指导团队做出一致、知情和安全的技术决策，防止诸如安全漏洞和不受控制的云成本等问题，而不是充当减缓开发的守门人。"
+    },
+    {
+      "point": "使治理实践与 DORA 指标保持一致，对于在技术组织中实现高性能至关重要。",
+      "explanation": "需要外部批准或长时间等待的流程与 DORA 快速流动性和反馈的原则相矛盾。治理应简化变更审批，并利用版本控制来支持快速、迭代的开发周期。"
+    },
+    {
+      "point": "明确定义的技术战略和组织技术雷达对于指导分散的技术决策至关重要。",
+      "explanation": "这些工具提供了跨团队的必要对齐和可见性，防止了重复工作，并确保了成熟技术的采用，这在动态的云原生开发环境中尤其重要。"
+    }
+  ],
+  "keyQuotes": [
+    "通常，治理不包括工具；它更多的是关于设定期望。但是工具提供了一个机会，通过使采取正确的行动成为一个简单的选择来帮助人们。",
+    "没有治理，什么能阻止你发布带有安全漏洞的代码？当您需要时，您能够快速轻松地修补代码吗？",
+    "任何需要等待另一个团队或人员执行某些操作的治理流程，都将影响快速流动性和快速反馈。",
+    "变更咨询委员会是由来自业务不同部门的人员组成的小组，他们会面以审查和接受或拒绝即将投入生产的软件变更。它们给人一种虚假的安全感，但研究表明，大多数变更都获得了批准，问题仍然存在，因此它们并没有减少失败变更的数量。但是，它们确实会减慢团队的速度，我们知道，能够在准备就绪时发布代码对于软件工程生产力非常重要。",
+    "首先考虑如何将它们构建到工具和流程中，以便轻松地采取正确的行动。"
+  ],
+  "tags": [
+    "软件工程",
+    "治理",
+    "技术战略",
+    "DORA 指标",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 813,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760961300000,
+  "publishDateStr": "2025-10-20",
+  "publishDateTimeStr": "2025-10-20 11:55:00"
+}

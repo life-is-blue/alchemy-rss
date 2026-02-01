@@ -1,0 +1,55 @@
+{
+  "id": "RAW_022d07",
+  "title": "不应强迫 Google 出售 Chrome",
+  "url": "https://world.hey.com/dhh/don-t-make-google-sell-chrome-93cefbc6",
+  "date": "2025-04-28 06:00:48",
+  "author": "David Heinemeier Hansson",
+  "siteName": "David Heinemeier Hansson",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"trix-content\">\n   <div>\n    The web will be far worse off <a href=\"https://www.msn.com/en-us/technology/tech-companies/a-judge-could-force-google-to-sell-chrome-what-you-need-to-know/ar-AA1DjlGy\">if Google is forced to sell Chrome</a>, even if it's to atone for legitimate ad-market monopoly abuses. Which mean we'll all be worse off as the web would lose ground to actual monopoly platforms, like the iOS App Store and Google's own Play Store. \n    <br>\n    <br>\n     First, Chrome won the browser war fair and square by building a better surfboard for the internet. This wasn't some opportune acquisition. This was the result of grand investments, great technical prowess, and markets doing what they're supposed to do: rewarding the best. Besides, we have a million alternatives. Firefox still exists, so does Safari,&nbsp; so does the billion Chromium-based browsers like Brave and Edge. And we finally even have new engines on the way with the <a href=\"https://ladybird.org/\">Ladybird browser</a>.&nbsp; \n    <br>\n    <br>\n   </div>\n   <div>\n    Look, Google's trillion-dollar business depends on a thriving web that can be searched by Google.com, that can be plastered in AdSense, and that now can feed the wisdom of AI. Thus, Google's incredible work to further the web isn't an act of charity, it's of economic self-interest, and that's why it works. Capitalism <a href=\"https://www.goodreads.com/quotes/68664-it-is-not-from-the-benevolence-of-the-butcher-the\">doesn't run on benevolence</a>, but incentives.\n   </div>\n   <div>\n    <br>\n     We want an 800-pound gorilla in the web's corner! Because Apple would love nothing better (despite the admirable work to keep up with Chrome by Team Safari) to see the web's capacity as an application platform diminished. As would every other owner of a proprietary application platform. Microsoft fought the web tooth and nail back in the 90s because they knew that a free, open application platform would undermine lock-in — and it did!\n   </div>\n   <div>\n    <br>\n     But the vitality of that free and open application platform depends on constant development. If the web stagnates, other platforms will gain. But with Team Chrome pushing the web forward in a million ways — be it import maps, nested CSS, web push, etc. — is therefore essential.\n   </div>\n   <div>\n    <br>\n     This is a classic wealth vs. riches mistake. Lawyers see Chrome as valuable in a moment's snapshot, but the value is all in the wealth that continued investment brings. A Chrome left to languish with half the investment will evaporate as quickly as a lottery winner's riches. Wealth requires maintenance to endure.\n   </div>\n   <div>\n    <br>\n     Google should not get away with rigging the online ad market, but forcing it to sell Chrome will do great damage to the web.\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DHH 认为出售 Chrome 将扼杀创新，扶持封闭平台，从而损害整个 Web 生态系统。",
+  "oneSentenceSummary": "DHH 认为出售 Chrome 将扼杀创新，扶持封闭平台，从而损害整个 Web 生态系统。",
+  "summary": "David Heinemeier Hansson 反对强迫 Google 出售 Chrome，即使是作为对其广告市场垄断行为的惩罚。他认为 Chrome 通过投资和技术优势公平地赢得了浏览器之战，其持续发展对于 Web 作为一个开放的应用程序平台的活力至关重要。Google 在一个蓬勃发展的 Web 中的自身利益驱动了其在 Chrome 上的工作，推动了诸如 import maps、nested CSS 和 web push 等标准的进步。出售 Chrome 将削弱 Google 的投资，导致 Web 停滞不前，并使专有平台获得主导地位。",
+  "mainPoints": [
+    {
+      "point": "Chrome 的持续发展对 Web 的活力至关重要",
+      "explanation": "Chrome 团队在诸多方面推动了 Web 的发展（如 import maps、nested CSS、web push 等），这对于一个自由和开放的应用程序平台至关重要。"
+    },
+    {
+      "point": "Chrome 的成功归功于卓越的技术，而非垄断",
+      "explanation": "Chrome 通过巨额投资和技术实力打造出色的产品，公平地赢得了浏览器之战，是对卓越产品的合理回报。"
+    },
+    {
+      "point": "Google 对 Chrome 的投资使整个 Web 生态系统受益",
+      "explanation": "Google 数万亿美元的业务依赖于一个蓬勃发展的 Web，因此，推动 Web 发展是符合其经济利益的行为。"
+    }
+  ],
+  "keyQuotes": [
+    "我们需要 Web 领域一个有绝对影响力的重量级玩家！",
+    "如果 Google 被迫出售 Chrome，Web 的发展将会更加糟糕。",
+    "Chrome 通过提供更卓越的互联网体验，公平公正地赢得了浏览器之战。",
+    "资本主义的驱动力不是仁慈，而是激励。",
+    "Google 不应逃脱操纵在线广告市场的惩罚，但强迫其出售 Chrome 将会对 Web 造成巨大损害。"
+  ],
+  "tags": [
+    "浏览器",
+    "Chrome",
+    "Google",
+    "Web",
+    "开源"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 387,
+  "domain": "world.hey.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_86001f",
+  "sourceName": "David Heinemeier Hansson",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745820048000,
+  "publishDateStr": "2025-04-28",
+  "publishDateTimeStr": "2025-04-28 06:00:48"
+}

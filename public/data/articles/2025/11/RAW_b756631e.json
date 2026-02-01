@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b756631e",
+  "title": "利用 GitHub 的开源标注工具包，提升设计到代码的协作水平",
+  "url": "https://github.blog/enterprise-software/collaboration/level-up-design-to-code-collaboration-with-githubs-open-source-annotation-toolkit/",
+  "date": "2025-11-18 10:05:17",
+  "author": "Andrea Griffiths",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>If you’ve ever been handed a design file and thought, <em>“Wait—what exactly is this supposed to do?”</em> you’re not alone.&nbsp;</p>\n  <p>The handoff between designers and developers is one of the most common points where product workflows break down. You are looking at components and trying to figure out what’s interactive, what’s responsive, what happens when text gets bigger. The designer is trying to express something that isn’t directly stated on the canvas. Somewhere in that gap, accessibility considerations get missed. Knowledge walks out the door in lost Slack threads. Then it all comes back later as a bug that could have been prevented if messages weren’t missed or if expectations had been clearer upfront.</p>\n  <p>GitHub’s accessibility design team ran into this exact problem internally. They looked at their own accessibility audit data and realized something striking: nearly <strong>half of accessibility audit issues (48%)</strong> could have been prevented if design intent had been better documented upfront by integrating <a href=\"https://github.com/w3c/wcag\">WCAG (Web Content Accessibility Guidelines)</a> considerations directly into annotations. So they built something to fix it. And now they’ve open sourced it.</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <iframe loading=\"lazy\" title=\"A look at the open source annotation toolkit | GitHub Checkout\" width=\"500\" height=\"281\" src=\"https://www.youtube.com/embed/TjBO0bUK4bM?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n   </div>\n  </figure>\n  <p>It’s called the <a href=\"https://github.com/github/annotation-toolkit\">Annotation Toolkit</a>, and it’s a Figma library designed to make the handoff easier. The framework brings structure, clarity, and accessibility-first practices into every design-to-code interaction.</p>\n  <h2 class=\"wp-block-heading\" id=\"what-the-annotation-toolkit-is-and-isnt\">What the Annotation Toolkit is (and isn’t)</h2>\n  <p>At its core, the Annotation Toolkit is a <strong>Figma library</strong> of stamps (annotations) that you can drop into your designs. Each annotation lets you:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Express design intent</strong> beyond what’s visually on the canvas.</li>\n   <li><strong>Document accessibility behaviors</strong> like responsive reflow or table handling.</li>\n   <li><strong>Guide engineers clearly</strong> by linking numbered stamps to descriptions.</li>\n  </ul>\n  <p>Instead of documenting all this in Figma comments (which get lost), Slack threads (which disappear), or scattered one-off clarifications (which nobody can remember later), the annotations live right inside your design file. They’re numbered, they’re portable, and they stay with your work.</p>\n  <p>Think of it like embedding clarity directly into the handoff.</p>\n  <h2 class=\"wp-block-heading\" id=\"why-it-matters-accessibility-by-default\">Why it matters: Accessibility by default</h2>\n  <p>The toolkit was built by GitHub’s accessibility design team specifically so that accessibility considerations aren’t something you bolt on at the end. They’re baked into the design workflow from the start.</p>\n  <p>Each annotation comes with built-in guidance. Want to mark a table? The toolkit addresses nearly every design-preventable accessibility issue under WCAG guidelines, including things like reflow behavior. Adding an image? It prompts you to document the context so developers can write proper alt text. The toolkit doesn’t just let you document accessibility—it teaches you as you go.</p>\n  <p>That’s not a small thing. It means developers stop guessing. It means accessibility isn’t a specialist concern anymore, but is part of the conversation from day one.</p>\n  <h2 class=\"wp-block-heading\" id=\"real-world-application-from-pain-points-to-productivity\">Real-world application: From pain points to productivity</h2>\n  <p>Before this toolkit, GitHub teams relied on a patchwork of Figma comments, Slack threads, and one-off clarifications. This patched approach resulted in knowledge gaps and repeated accessibility oversights.</p>\n  <p>But now, annotations provide:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>Clarity at scale</strong>: engineers no longer guess at intended behaviors.\n    <br>\n    <strong>Consistency across teams</strong>: designers, product managers (PM), and developers all share a common language.</li>\n   <li><strong>Preventative QA</strong>: many issues are resolved at the design stage instead of post-build.</li>\n  </ul>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p>Annotations enable Figma to become more than just a canvas. It’s a tool for expressing a much deeper level of information.</p>\n   <cite><a href=\"https://github.com/hellojanehere\">@hellojanehere</a>, product manager at GitHub</cite>\n  </blockquote>\n  <h2 class=\"wp-block-heading\" id=\"tutorial-how-to-use-the-annotation-toolkit\">Tutorial: How to use the Annotation Toolkit</h2>\n  <h3 class=\"wp-block-heading\" id=\"how-to-get-started\">How to get started</h3>\n  <p>You’ve got two paths here, so pick whichever feels easier:</p>\n  <p><strong>Option 1: From Figma Community (fastest)</strong></p>\n  <ol class=\"wp-block-list\">\n   <li>Head to the @github profile on Figma (figma.com/@github).</li>\n   <li>Find the Annotation Toolkit and click the link to duplicate it.</li>\n   <li>It goes straight to your drafts.</li>\n   <li>Access the components anytime from your Assets tab.</li>\n  </ol>\n  <p><strong>Option 2: From GitHub (if you want all the docs at once)</strong></p>\n  <ol class=\"wp-block-list\">\n   <li>Visit github.com/github/annotation-toolkit.</li>\n   <li>Download the exported Figma file from the repo.</li>\n   <li>Open it in Figma and duplicate it to your workspace.</li>\n   <li>Same deal—find components in your Assets tab.</li>\n  </ol>\n  <p>Once you’ve got the toolkit, adding your first annotation is straightforward. Open any design file, drag an annotation stamp into it (say, the Image annotation on a profile picture), and you’ll see a numbered label appear. Pair that number with a description block and write what you need. That’s it. You’ve just documented something that would normally disappear into a Slack thread.</p>\n  <p>The toolkit comes with design checkpoints, which are basically interactive checklists that keep accessibility top of mind as you work. If you want to go deeper, everything is documented. The <a href=\"https://github.com/github/annotation-toolkit/tree/main/tutorials\">repo</a> has tutorials for every annotation type, deep dives on WCAG compliance, and guidance on avoiding common handoff friction. Check it out and contribute back if you find gaps.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-the-bigger-picture\">The bigger picture</h2>\n  <p>The Annotation Toolkit is a shift in how we think about collaboration. By embedding intent, accessibility, and clarity directly into Figma, GitHub is giving the developer-designer partnership a new foundation.</p>\n  <p>It’s not about replacing conversations. It’s about making them more meaningful. When intent is clear, work flows faster, and the end result is better for everyone.</p>\n  <p>The <a href=\"https://github.com/github/annotation-toolkit\">toolkit</a> is actively maintained by GitHub staff and open to contributions. If you spot something that could be better, head over to <a href=\"http://github.com/github/annotation-toolkit\">github.com/github/annotation-toolkit</a> and open an issue. Report bugs, suggest features, or contribute new annotation types. The team is actively looking for feedback on how you’re using it and what’s missing.</p>\n  <p>👉 <a href=\"https://www.figma.com/@github\">Explore the toolkit on Figma at @GitHub</a> or <a href=\"https://github.com/github/annotation-toolkit\">dive into the repository on GitHub</a>. If you want to see it in action first,<a href=\"https://youtu.be/TjBO0bUK4bM\"> check out the walkthrough</a>. Try it, contribute, and help shape the future of accessible, collaborative design.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 的 Figma 开源标注工具包通过将结构化的设计意图和无障碍指南直接嵌入到设计文件中，增强了设计到代码的协作，从而避免了常见的设计移交问题。",
+  "oneSentenceSummary": "GitHub 的 Figma 开源标注工具包通过将结构化的设计意图和无障碍指南直接嵌入到设计文件中，增强了设计到代码的协作，从而避免了常见的设计移交问题。",
+  "summary": "本文介绍了 GitHub 的开源标注工具包，这是一个旨在解决设计到开发者移交过程中关键瓶颈的 Figma 库。文章强调了未记录的设计意图，尤其是在无障碍方面，导致了近一半的审核问题。该工具包提供了一种结构化的方式，将标注（图章）直接嵌入到 Figma 设计中，使设计师能够清晰地表达交互行为、响应式设计和 WCAG 考量。这种方法确保了从设计一开始就整合无障碍性，而不是事后才考虑。该工具包通过提高清晰度、增强团队一致性以及实现预防性质量控制，显著减少了工程师的猜测，并防止了错误。本文提供了关于如何访问和利用该工具包的实用说明，强调了其积极维护和开源性质，以促进社区贡献，最终促进更高效、更顺畅的协作。",
+  "mainPoints": [
+    {
+      "point": "设计到代码的移交是一个关键的薄弱环节，尤其是在无障碍考量方面。",
+      "explanation": "沟通不畅和未记录的设计意图通常会导致严重的无障碍问题，GitHub 的数据显示，如果事先有更完善的文档，近一半的问题是可以避免的。"
+    },
+    {
+      "point": "GitHub 的标注工具包将结构化的设计意图和无障碍性直接嵌入到 Figma 文件中。",
+      "explanation": "这个 Figma 库提供了编号的标注，方便设计师清晰地记录交互行为、响应式设计和 WCAG 指南。这有助于确保设计清晰度和一致性。"
+    },
+    {
+      "point": "该工具包提倡“默认无障碍性”，并显著提高团队的生产力和质量。",
+      "explanation": "通过尽早整合无障碍性并提供清晰的指导，它可以减少开发者的猜测，促进团队之间的通用语言，并实现预防性质量保障，从而减少错误。"
+    }
+  ],
+  "keyQuotes": [
+    "设计师和开发者之间的移交是产品工作流程中最常见的瓶颈之一。",
+    "如果通过将 WCAG（Web 内容可访问性指南）的考量直接整合到标注中，事先更好地记录设计意图，那么近 **一半的无障碍审核问题（48%）** 本是可以避免的。",
+    "该框架为每一次设计到代码的交互带来了结构、清晰度和无障碍性优先的实践。",
+    "该工具包不仅仅让你记录无障碍性，它还在你进行的过程中教你。",
+    "标注使 Figma 不仅仅是一个画布。它是一个表达更深层次信息的工具。"
+  ],
+  "tags": [
+    "设计到代码协作",
+    "Figma",
+    "无障碍性",
+    "设计移交",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 911,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763460317000,
+  "publishDateStr": "2025-11-18",
+  "publishDateTimeStr": "2025-11-18 10:05:17"
+}

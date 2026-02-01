@@ -1,0 +1,57 @@
+{
+  "id": "RAW_e14232",
+  "title": "阿里通义开源音频生成模型，能模仿音效师为视频配音 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-01-12",
+  "date": "2025-07-01 06:39:45",
+  "author": "新闻助手",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>7月1日消息，阿里通义实验室开源了旗下首个音频生成模型ThinkSound，该模型首次将CoT（Chain-of-Thought，思维链）应用到音频生成领域，让AI可以像专业音效师一样逐步思考，捕捉视觉细节，生成与画面同步的高保真音频。目前，ThinkSound的代码和模型已在Github、HuggingFace、魔搭社区开源，开发者可免费下载和体验。</p>\n  <p><img width=\"561\" src=\"https://image.jiqizhixin.com/uploads/editor/68a61db8-c1a7-49c5-a032-9feef7498a98/1751351919058.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p style=\"text-align: center;\">阿里开源音频生成模型ThinkSound</p>\n  <p>视频生成音频（V2A）技术是多媒体编辑和视频内容创作领域最重要的技术之一，但该技术的发展速度仍存在诸多技术挑战，例如业界现有的V2A技术仍缺乏对视觉对应声学细节的深入理解，导致生成的音频较为通用，甚至与关键视觉事件错位，难以满足专业创意场景中对时序和语义连贯性的严格要求。</p>\n  <p>为了解决现有视频转音频技术难以捕捉画面中动态细节和时序的难题，通义团队首次将思维链推理引入多模态大模型<a name=\"mc8qurob46hiu46p22b\">，可以模仿人类音效师的多阶段创作流程，实现对视觉事件与相应声音之间深度关联的精准建模，例如先分析视觉动态、再推断声学属性，最后按照时间顺序合成与环境相符的音效。</a><a name=\"mc8qurobscnrvcs8wtl\">不仅如此，该团队还构建了首个带思维链标注的音频数据集AudioCoT，该数据集融合了2531.8小时的多源异构数据，让模型在音频生成与编辑任务时做到“知其然、知其所以然”。</a></p>\n  <p>在开源的VGGSound测试集上，ThinkSound的核心指标相比MMAudio、V2A-Mappe、V-AURA等现有主流方法均实现了15%以上的提升。例如，在openl3空间中Fréchet&nbsp;距离（FD）上，ThinkSound&nbsp;相比&nbsp;MMAudio的43.26&nbsp;降至34.56（越低越好），接近真实音频分布的相似度提高了20%以上；在代表模型对声音事件类别和特征判别精准度的KLPaSST&nbsp;和&nbsp;KLPaNNs两项指标上分别取得了1.52和1.32的成绩，均为同类模型最佳。</p>\n  <p><img width=\"561\" src=\"https://image.jiqizhixin.com/uploads/editor/46449567-0101-48ab-b12e-2f23de07a327/1751351919065.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p style=\"text-align: center;\">在开源的VGGSound测试集上，ThinkSound多项核心指标位居第一</p>\n  <p>在MovieGen Audio Bench测试集上，ThinkSound的表现大幅领先Meta推出的音频生成模型Movie Gen Audio，展现了模型在影视音效、音频后期、游戏与虚拟现实音效生成等领域的应用潜力。</p>\n  <p><img width=\"372\" src=\"https://image.jiqizhixin.com/uploads/editor/02cd7b37-a2a3-49e7-adfe-6f44ff10ac4d/1751351919069.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p style=\"text-align: center;\">ThinkSound大幅领先Meta旗下Movie Gen Audio</p>\n  <p>目前，通义实验室已推出语音生成大模型 Cosyvoice、端到端音频多模态大模型MinMo等模型，全面覆盖语音合成、音频生成、音频理解等场景。</p>\n  <p>开源地址：</p>\n  <p>https://github.com/liuhuadai/ThinkSound</p>\n  <p>https://huggingface.co/liuhuadai/ThinkSound</p>\n  <p>https://www.modelscope.cn/studios/AudioGeneral/ThinkSound</p>\n </body>\n</html>",
+  "aiSummary": "阿里通义实验室开源音频生成模型 ThinkSound，首次将思维链应用于音频生成领域，显著提升音效与视频同步的精准度。",
+  "oneSentenceSummary": "阿里通义实验室开源音频生成模型 ThinkSound，首次将思维链应用于音频生成领域，显著提升音效与视频同步的精准度。",
+  "summary": "阿里通义实验室开源了其首个音频生成模型 ThinkSound，该模型创新性地将思维链（Chain-of-Thought）技术引入音频生成领域，模仿专业音效师的创作流程，逐步分析视觉动态、推断声学属性并合成与环境相符的音效。ThinkSound 在 VGGSound 测试集上多项核心指标领先现有主流方法 15%以上，并在 MovieGen Audio Bench 测试集上大幅领先 Meta 的 Movie Gen Audio 模型，展现了在影视音效、游戏音效等专业场景的应用潜力。此外，团队还构建了首个带思维链标注的音频数据集 AudioCoT，包含 2531.8 小时的多源异构数据，显著提升了模型的生成质量与语义连贯性。",
+  "mainPoints": [
+    {
+      "point": "首次将思维链技术应用于音频生成领域",
+      "explanation": "通过模仿人类音效师的多阶段创作流程，显著提升音频与视频的同步精准度和语义连贯性。"
+    },
+    {
+      "point": "构建首个带思维链标注的音频数据集 AudioCoT",
+      "explanation": "包含 2531.8 小时多源异构数据，为模型提供丰富的训练资源，提升生成质量。"
+    },
+    {
+      "point": "在多项测试集上性能领先现有主流方法",
+      "explanation": "在 VGGSound 和 MovieGen Audio Bench 测试集上，核心指标提升 15%以上，展现强大应用潜力。"
+    },
+    {
+      "point": "模型已在多个平台开源",
+      "explanation": "代码和模型已在 Github、HuggingFace、魔搭社区开源，方便开发者免费下载和使用。"
+    }
+  ],
+  "keyQuotes": [
+    "该模型首次将 CoT（Chain-of-Thought，思维链）应用到音频生成领域，让 AI 可以像专业音效师一样逐步思考，捕捉视觉细节，生成与画面同步的高保真音频。",
+    "为了解决现有视频转音频技术难以捕捉画面中动态细节和时序的难题，通义团队首次将思维链推理引入多模态大模型，可以模仿人类音效师的多阶段创作流程。",
+    "在开源的 VGGSound 测试集上，ThinkSound 的核心指标相比 MMAudio、V2A-Mappe、V-AURA 等现有主流方法均实现了 15%以上的提升。"
+  ],
+  "tags": [
+    "音频生成",
+    "多模态大模型",
+    "思维链",
+    "阿里通义",
+    "ThinkSound"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1024,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751351985000,
+  "publishDateStr": "2025-07-01",
+  "publishDateTimeStr": "2025-07-01 06:39:45"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_0a193bb5",
+  "title": "DeepAgents 沙箱：安全执行代码的新方案",
+  "url": "https://blog.langchain.com/execute-code-with-sandboxes-for-deepagents/",
+  "date": "2025-11-13 16:22:20",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>By Vivek Trivedy</p>\n  <p>Today we're excited to launch Sandboxes for DeepAgents, a new set of integrations that allow you to safely execute arbitrary DeepAgent code in remote sandboxes. We currently support sandboxes from 3 of our partners: <a href=\"https://www.runloop.ai/?ref=blog.langchain.com\">Runloop</a>, <a href=\"https://www.daytona.io/?ref=blog.langchain.com\">Daytona</a>, and <a href=\"https://modal.com/?ref=blog.langchain.com\">Modal</a>. Below, we dive into what you can do with sandboxes and how to use them with with the DeepAgents-CLI.</p>\n  <h2 id=\"why-do-we-need-sandboxes\">Why Do We Need Sandboxes?</h2>\n  <p>Sandboxes give us a simple, configurable environment to execute code and do work outside of our local machine. Here are some scenarios where this may be useful:</p>\n  <ol>\n   <li><strong>Safety</strong>: Your agent is executing arbitrary code which could be harmful to your local machine (ex: <code>rm -rf</code>). Running in a sandbox means your machine is safe from potentially malicious code.</li>\n   <li><strong>Clean Environments</strong>: You need specific dependencies, languages, or OS configurations without polluting your local setup. Spin up a sandbox with exactly what you need, use it, then terminate it.</li>\n   <li><strong>Parallel Execution</strong>: Run multiple agents simultaneously, each in their own isolated environment, without resource conflicts or interference.</li>\n   <li><strong>Long-Running Tasks</strong>: Let agents work on time-intensive operations without blocking your local machine.</li>\n   <li><strong>Reproducibility</strong>: Guarantee consistent execution environments across your team.</li>\n  </ol>\n  <h2 id=\"how-it-works\">How It Works</h2>\n  <p>The sandbox integration has three main steps:</p>\n  <ol>\n   <li>Setup the sandbox (with an optional setup script)</li>\n   <li>The agent wants to execute a command</li>\n   <li>The remote sandbox runs the command and sends it back to the user</li>\n  </ol>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://blog.langchain.com/content/images/2025/11/deepagents-sandbox.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"1820\" height=\"701\" srcset=\"https://blog.langchain.com/content/images/size/w600/2025/11/deepagents-sandbox.png 600w, https://blog.langchain.com/content/images/size/w1000/2025/11/deepagents-sandbox.png 1000w, https://blog.langchain.com/content/images/size/w1600/2025/11/deepagents-sandbox.png 1600w, https://blog.langchain.com/content/images/2025/11/deepagents-sandbox.png 1820w\" sizes=\"(min-width: 720px) 720px\">\n   <figcaption>\n    <i><em class=\"italic\" style=\"white-space: pre-wrap;\">Easily attach, configure, and use sandboxes with DeepAgents to safely execute code</em></i>\n   </figcaption>\n  </figure>\n  <p>Your DeepAgent runs locally (or wherever you want), but when it needs to execute code, create files, or run commands, those operations happen in the remote sandbox. The agent maintains full visibility into the sandbox filesystem and command outputs, so it can iterate naturally. The setup script can be used to load in environment variables, clone git repos, prepare your environment, and more.</p>\n  <h2 id=\"how-to-get-started\">How to Get Started</h2>\n  <p>To use Daytona and Runloop sandboxes, simply create an account and store the API key as an environment variable (<code>DAYTONA_API_KEY</code> and <code>RUNLOOP_API_KEY</code>). To use Modal sandboxes, follow the setup instructions found <a href=\"https://modal.com/docs/guide?ref=blog.langchain.com#getting-started\">here</a> and run <code>modal setup</code>.</p>\n  <p>After completing the setup, the DeepAgents CLI provides simple commands to get started with sandboxes in minutes with convenient <code>sandbox</code> and <code>sandbox-setup</code> commands.</p>\n  <p><strong>Note:</strong> we have context managers to automatically clean up sandboxes but we recommend checking your provider dashboard to be sure there’s no agent or sandbox that’s accidentally left running.</p>\n  <p>For example, the following command can be used to attach a runloop sandbox to your DeepAgent with a custom setup script located in your current directory: <code>uvx deepagents-cli --sandbox runloop --sandbox-setup ./setup.sh</code></p>\n  <h3 id=\"note-using-sandboxes-securely\">Note: Using Sandboxes Securely</h3>\n  <blockquote>While the sandbox is isolated, when working with untrusted inputs, agents are still prone to prompt injection. To mitigate the risks of having secrets present in the sandbox, we recommend running trusted setup scripts, using human-in-the-loop, and assigning short lived secrets. Sandbox APIs are evolving rapidly, and we expect more providers to support proxies that help mitigate prompt injection and secrets management concerns.</blockquote>\n  <p>Here's an example of a simple setup script that adds local environment variables like a GitHub token or OpenAI key into the sandbox, and pulls down a repository. The pre-requisites to run this script is that your local <code>.env</code> file contains the keys and tokens you need:</p>\n  <pre><code class=\"language-bash\">#!/bin/bash\nset -e  # Exit on any error\n\necho \"Configuring sandbox environment...\"\n\n# 1. Clone your repository using GitHub token\necho \"Cloning repository...\"\ngit clone &lt;https://x-access-token:${GITHUB_TOKEN}@github.com/username/repo.git&gt; $$HOME/workspace\ncd $$HOME/workspace\necho \"✓ Repository cloned\"\n\n# 2. Make environment variables persistent for all future commands\necho \"Setting up environment variables...\"\ncat &gt;&gt; ~/.bashrc &lt;&lt;'EOF'\n\n# Add selected env variables to sandbox from local\nexport GITHUB_TOKEN=\"${GITHUB_TOKEN}\"\nexport FAL_API_KEY=\"${FAL_API_KEY}\"\n\n# Auto-navigate to workspace\ncd $$HOME/workspace\nEOF\n\n# 3. Activate the environment\nsource ~/.bashrc\necho \"✓ Environment configured\"\n</code></pre>\n  <h2 id=\"whats-next\">What's Next?</h2>\n  <p>We're excited to see how builders will use sandboxes with their DeepAgents. We'll be adding more configuration options for sandboxes and sharing more examples on integrating sandboxes to do real work.</p>\n  <p>If you want to watch a tutorial on how to get started with sandboxes, get check our tutorial <a href=\"https://youtu.be/CejntUP3muU?ref=blog.langchain.com\">here</a>.</p>\n  <p>Ready to start building? Get started with our <a href=\"https://github.com/langchain-ai/deepagents?ref=blog.langchain.com\">DeepAgents</a> documentation and <a href=\"https://github.com/langchain-ai/deepagents?ref=blog.langchain.com\">GitHub</a> repository today.</p>\n </body>\n</html>",
+  "aiSummary": "LangChain 为 DeepAgents 引入沙箱，实现远程环境中代理代码的安全、隔离和可复现执行。",
+  "oneSentenceSummary": "LangChain 为 DeepAgents 引入沙箱，实现远程环境中代理代码的安全、隔离和可复现执行。",
+  "summary": "本文宣布推出用于 DeepAgents 的沙箱，这是 LangChain 的一项新集成，允许在远程环境中安全且隔离地执行由 AI 智能体生成的任意代码。它强调了关键优势，例如增强恶意代码防护，创建具备特定依赖的、干净且可复现的环境，支持并行执行以及处理长时间运行的任务而不会阻塞本地计算机。该集成的工作方式是让本地运行的 DeepAgent 将代码执行、文件创建和命令运行委派给远程沙箱，同时保持对其操作的完全可见性。本文概述了如何开始使用像 Runloop、Daytona 和 Modal 这样的合作伙伴沙箱提供商，强调使用 DeepAgents CLI 进行配置和运行。它还提供了关于提示注入风险的关键安全建议以及在沙箱环境中管理密钥的最佳实践，包括一个示例设置脚本。",
+  "mainPoints": [
+    {
+      "point": "沙箱能够安全且隔离地执行任意 DeepAgent 代码。",
+      "explanation": "沙箱保护本地计算机，免受潜在有害代码的侵害，并为特定依赖提供干净环境，确保代理开发和测试的可复现性。"
+    },
+    {
+      "point": "该集成有助于 AI 智能体的并行执行和长时间运行的任务。",
+      "explanation": "代理可在隔离环境中并行工作，避免资源冲突和长时间任务对本地计算机的阻塞，从而显著提高开发效率。"
+    },
+    {
+      "point": "DeepAgents 保持对远程沙箱操作的完全可见性，从而可以进行自然的迭代。",
+      "explanation": "即使是远程执行，代理依然可以访问沙箱文件系统和命令输出，从而能够有效地迭代和改进其操作。"
+    },
+    {
+      "point": "安全措施至关重要，尤其是在提示注入方面，即使使用隔离的沙箱也是如此。",
+      "explanation": "建议采用可信的设置脚本、人工验证和短时密钥，以降低不受信输入带来的风险，并保护敏感数据。"
+    }
+  ],
+  "keyQuotes": [
+    "你的智能体可能正在执行有害代码（例如 `rm -rf`）。使用沙箱意味着你的机器免受恶意代码的威胁。",
+    "您的 DeepAgent 在本地（或您想要的任何地方）运行，但是当它需要执行代码、创建文件或运行命令时，这些操作发生在远程沙箱中。",
+    "即使沙箱是隔离的，在处理不受信任的输入时，智能体仍然可能受到提示注入攻击。"
+  ],
+  "tags": [
+    "AI智能体",
+    "DeepAgents",
+    "沙箱",
+    "代码执行",
+    "LangChain"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 690,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763050940000,
+  "publishDateStr": "2025-11-13",
+  "publishDateTimeStr": "2025-11-13 16:22:20"
+}

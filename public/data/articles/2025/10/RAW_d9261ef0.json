@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d9261ef0",
+  "title": "Claude 与生产力平台集成",
+  "url": "https://www.anthropic.com/news/productivity-platforms",
+  "date": "2025-10-15 16:00:00",
+  "author": "Anthropic News",
+  "siteName": "Anthropic News",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Claude now integrates with Microsoft 365 and offers enterprise search across your connected tools.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Claude works with the productivity tools you use every day, bringing context from your documents, emails, and calendar directly into your conversations. Spend less time gathering information and more time on the decisions and work that drive impact.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"Video_post-wrapper__uy5Rq\">\n    <div class=\"Video_post-video-container__oACj_\">\n     <!--$!-->\n     <template data-dgst=\"BAILOUT_TO_CLIENT_SIDE_RENDERING\"></template>\n     <!--/$-->\n    </div>\n   </figure>\n  </div>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"microsoft-365-connector-for-claude\">Microsoft 365 connector for Claude</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Connect Claude with Microsoft 365 using our MCP connector. By accessing your documents, communications, and calendar, Claude gains the context to collaborate more effectively—helping you reason through complex problems, make informed decisions, and take action faster.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Claude works with:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li><strong>Microsoft SharePoint and OneDrive</strong>: Search and analyze documents across sites and libraries, from project specifications to strategic plans, without manually uploading files to Claude.</li>\n   <li><strong>Microsoft Outlook</strong>: Access email threads, analyze communications patterns, and extract insights from your correspondences to understand project status, client feedback, or team alignment.</li>\n   <li><strong>Microsoft Teams: </strong>Search through chat conversations, channel discussions, and meeting summaries to surface decisions, track project updates, and understand what your team has been discussing.</li>\n  </ul>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"enterprise-search-\">Enterprise search</h2>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"ImageWithCaption_e-imageWithCaption__8C2mY ImageWithCaption_inline-image__B15e_\">\n    <img alt=\"Workflow diagram showing a variety of connected app icons\" loading=\"lazy\" width=\"1920\" height=\"970\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/da2aa6f27035c9ae7fd2529360edc0294c4573e1-1920x970.png, https://www-cdn.anthropic.com/images/4zrzovbb/website/da2aa6f27035c9ae7fd2529360edc0294c4573e1-1920x970.png\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/da2aa6f27035c9ae7fd2529360edc0294c4573e1-1920x970.png\">\n   </figure>\n  </div>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">We're also making it easier to access company knowledge through a dedicated, shared project that's personalized with your company name. This project includes custom prompts to help Claude search effectively across your company's tools, plus simple setup steps for connecting your essential work apps. Everyone in your organization gets automatic access to the project once an admin sets it up and connects your essential tools.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">When you ask Claude a question, it can search across your company’s connected data sources in one place, so you get answers that draw from your organization’s collective knowledge, not just your own files. For example, ask Claude about your company's policy on remote work and get information from HR documents in SharePoint, email discussions in Outlook, and team guidelines from various sources in one detailed report.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Enterprise search is particularly valuable for onboarding new team members, answering strategic questions like analyzing patterns in customer feedback, and quickly identifying the right internal experts to consult on any topic.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"getting-started\">Getting started</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The Microsoft 365 connector is available today for all Claude Team and Enterprise plan customers. Administrators must first enable the connector for their organization before individual users can authenticate with their accounts.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Enterprise search is enabled for all Team and Enterprise organizations. Admins customize the project and curate data sources for their organization before teams can use it.</p>\n </body>\n</html>",
+  "aiSummary": "Claude 现已集成 Microsoft 365，并提供企业搜索功能，使用户能够利用文档、电子邮件和日历中的上下文，从而提高生产力并做出更明智的决策。",
+  "oneSentenceSummary": "Claude 现已集成 Microsoft 365，并提供企业搜索功能，使用户能够利用文档、电子邮件和日历中的上下文，从而提高生产力并做出更明智的决策。",
+  "summary": "本文介绍了 Claude 的多项重要新功能，重点在于其与 Microsoft 365 的集成以及企业搜索功能的引入。Microsoft 365 连接器允许 Claude 访问并利用来自 SharePoint、OneDrive、Outlook 和 Teams 的上下文，无需手动上传文件，简化了操作流程。该集成助力 Claude 更高效地协作，通过分析复杂问题、做出明智决策、加速行动，从项目规范、邮件线程、沟通模式和团队讨论中提取洞见。此外，企业搜索功能提供了一个统一平台，用于访问跨连接数据源的企业知识。这个个性化的共享项目允许 Claude 搜索组织内的集体知识，提供来自各种内部资源（如人力资源文档、电子邮件和团队指南）的全面答案。这些功能尤其适用于新团队成员快速上手、深入分析客户反馈，以及迅速定位内部专家。Microsoft 365 连接器和企业搜索均适用于 Claude Team 和 Enterprise 计划客户，但需要进行管理设置。",
+  "mainPoints": [
+    {
+      "point": "Claude 的 Microsoft 365 连接器无缝集成日常工作工具，显著提高生产力。",
+      "explanation": "此集成允许 Claude 访问来自 SharePoint、OneDrive、Outlook 和 Teams 的上下文，使其能够在无需手动上传数据的情况下协助解决复杂问题和辅助决策，从而简化工作流程。"
+    },
+    {
+      "point": "企业搜索提供统一入口，便捷访问企业级知识，释放组织智慧。",
+      "explanation": "此功能允许 Claude 搜索整个组织连接的数据源，提供从集体知识中提取的全面答案，这对于新员工入职和获取战略见解非常有价值。"
+    },
+    {
+      "point": "新功能显著加速信息收集，优化决策流程，提升整体效率。",
+      "explanation": "通过将上下文直接引入对话并启用统一搜索，用户可以减少收集信息的时间，从而将更多时间用于更具影响力的工作和更明智的行动。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude 与您日常使用的生产力工具无缝衔接，将文档、邮件和日历中的上下文信息融入对话。",
+    "通过访问您的文档、通信和日历，Claude 能够获取上下文信息，从而更有效地进行协作，助力分析复杂问题、做出明智决策并加速行动。",
+    "当您向 Claude 提问时，它即可在一个平台搜索公司所有已连接的数据源，确保您获得的答案源自组织集体智慧，而非仅限于个人文件。",
+    "企业搜索在以下方面尤其有价值：助力新团队成员快速入职，高效解答战略问题（例如分析客户反馈模式），以及迅速定位相关领域专家。"
+  ],
+  "tags": [
+    "Claude",
+    "Microsoft 365",
+    "AI 集成",
+    "企业搜索",
+    "生产力工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 393,
+  "domain": "anthropic.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8b9413",
+  "sourceName": "Anthropic News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760544000000,
+  "publishDateStr": "2025-10-15",
+  "publishDateTimeStr": "2025-10-15 16:00:00"
+}

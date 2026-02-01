@@ -1,0 +1,55 @@
+{
+  "id": "RAW_175ff5f1",
+  "title": "Messenger 引入密钥透明度",
+  "url": "https://engineering.fb.com/2025/11/20/security/key-transparency-comes-to-messenger/",
+  "date": "2025-11-20 00:17:26",
+  "author": "Engineering at Meta",
+  "siteName": "Engineering at Meta",
+  "content": "<html>\n <head></head>\n <body>\n  <ul>\n   <li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">We’re excited to share another advancement in the security of your conversations on Messenger: the launch of key transparency verification for end-to-end encrypted chats.&nbsp;</span></li>\n   <li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">This new feature enables an additional level of assurance that only you — and the people you’re communicating with — can see or listen to what is sent, and that no one else, not even Meta, can do so.</span></li>\n  </ul>\n  <p><a href=\"https://www.facebook.com/help/messenger-app/1084673321594605\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">End-to-end encryption on Messenger</span></a><span style=\"font-weight: 400;\"> already ensures that the content of your direct messages and calls are protected from the moment they leave your device to the moment they reach the receiver’s device. </span><span style=\"font-weight: 400;\">As part of our end-to-end encrypted chat platform, we believe it’s also important that anyone can verify that the public keys (used by the sender’s device for encrypting each message) belong to the intended recipients and haven’t been tampered with.</span></p>\n  <p><span style=\"font-weight: 400;\">This launch builds upon the valuable work and experiences shared by others in the industry. </span><a href=\"https://engineering.fb.com/2023/04/13/security/whatsapp-key-transparency/\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">WhatsApp’s implementation of key transparency</span></a><span style=\"font-weight: 400;\"> in 2023 demonstrated the feasibility of this technology for large-scale encrypted messaging. We’ve extended these pioneering efforts in our Messenger implementation to deliver a robust and reliable solution with similar security properties.</span></p>\n  <h2>What Is Key Transparency?</h2>\n  <p><span style=\"font-weight: 400;\">Key transparency provides messaging users with a verifiable and auditable record of public keys. It allows them to confirm that their conversations are indeed encrypted with the correct keys for their contacts, and that these keys haven’t been maliciously swapped by a compromised server. This means you can be more confident that your messages are only accessible to the people you intend to communicate with.</span></p>\n  <p><img decoding=\"async\" class=\"alignnone size-full wp-image-23383\" src=\"https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png\" alt=\"\" width=\"1999\" height=\"1646\" srcset=\"https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png 1999w, https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png?resize=916,754 916w, https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png?resize=768,632 768w, https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png?resize=1024,843 1024w, https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png?resize=1536,1265 1536w, https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png?resize=96,79 96w, https://engineering.fb.com/wp-content/uploads/2025/11/Meta-Key-Transparency-Messenger.png?resize=192,158 192w\" sizes=\"(max-width: 992px) 100vw, 62vw\"></p>\n  <p><span style=\"font-weight: 400;\">You can already </span><a href=\"https://www.facebook.com/help/messenger-app/147596532316790/Check+your+keys+for+end-to-end+encrypted+chats+on+Messenger\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">check your keys for end-to-end encrypted chats on Messenger</span></a><span style=\"font-weight: 400;\">, but this can be cumbersome for people who have logged in to Messenger on multiple devices, each of which has its own key. Moreover, these keys change when new devices are added or are re-registered, which necessitates another check of the key every time this happens.&nbsp;</span></p>\n  <p><span style=\"font-weight: 400;\">To address this, we’ve added a new security feature, based on key transparency, that allows users to verify these keys without having to compare them manually with their contacts. Of course, anyone who wishes to continue manually verifying their keys is free to do so.</span></p>\n  <h2>How We’re Handling Messenger Keys at Scale</h2>\n  <p><span style=\"font-weight: 400;\">Our key transparency implementation leverages the </span><a href=\"https://github.com/facebook/akd\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">Auditable Key Directory (AKD) library</span></a><span style=\"font-weight: 400;\">, mirroring the system already in place for WhatsApp. This system allows Meta to securely distribute and verify users’ public keys. To further enhance the security of this process, we use </span><a href=\"https://developers.cloudflare.com/key-transparency/\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">Cloudflare’s key transparency auditor</span></a><span style=\"font-weight: 400;\"> to provide an additional layer of verification, ensuring that the distribution of keys is transparent and verifiable by anyone. Cloudflare’s auditor maintains a live log of the latest entries on the </span><a href=\"https://dash.key-transparency.cloudflare.com/\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">Key Transparency Dashboard</span></a><span style=\"font-weight: 400;\">, for both the WhatsApp and Messenger directories.</span></p>\n  <p><span style=\"font-weight: 400;\">Implementing key transparency on the scale of Messenger presented unique engineering challenges. One significant factor was the sheer volume and frequency of key updates. Messenger indexes keys for each and every device someone has logged in on, which means that a single user often has multiple, frequently-changing keys associated with their account.</span></p>\n  <p><span style=\"font-weight: 400;\">This increased complexity leads to a much higher frequency of key updates being sequenced into our key transparency directory. Currently, we’re observing an epoch frequency of approximately 2 minutes per publish, with hundreds of thousands of new keys added in each epoch. Since we began indexing, our database has already grown to billions of key entries. We’ve implemented a number of advancements in our infrastructure and libraries to help manage this massive and constantly growing dataset, while ensuring high availability and real-time verification:</span></p>\n  <p><span style=\"font-weight: 400;\">We improved the algorithmic efficiency of the existing key lookup and verification operations in the AKD library by optimizing for smaller proof sizes, even as the number of updates (versions) for a single key grows. Previously, these proofs grew linearly with the height of the transparency tree, which was still difficult to manage given the number of nodes in the tree.</span></p>\n  <p><span style=\"font-weight: 400;\">We also updated our existing infrastructure to be more resilient to temporary outages and improved the process for recovering from long delays in key sequencing. These improvements were adapted from lessons learned from running WhatsApp’s key transparency log for the past two years.</span></p>\n  <p><span style=\"font-weight: 400;\">With key transparency now live on Messenger, users will have the ability to automatically verify the authenticity of their contacts’ encryption keys for one-on-one chats. </span><span style=\"font-weight: 400;\">This represents another step forward in our ongoing investment in providing</span> <span style=\"font-weight: 400;\">a secure and private</span> <span style=\"font-weight: 400;\">service</span><b>.&nbsp;</b></p>\n  <p><span style=\"font-weight: 400;\">Stay tuned for more updates as we continue to enhance the security and privacy of end-to-end encryption in Messenger.</span></p>\n </body>\n</html>",
+  "aiSummary": "Meta 为 Messenger 端到端加密聊天推出密钥透明度功能，针对高频更新进行优化，实现大规模可验证公钥。",
+  "oneSentenceSummary": "Meta 为 Messenger 端到端加密聊天推出密钥透明度功能，针对高频更新进行优化，实现大规模可验证公钥。",
+  "summary": "本文宣布 Messenger 的端到端加密对话推出密钥透明度，增强用户对其通信密钥真实性和完整性的信心。Messenger 的系统基于 WhatsApp 的实现，使用了可审计密钥目录 (AKD) 库，并集成了 Cloudflare 的密钥透明度审计器来进行独立验证。由于 Messenger 的巨大规模，该实现面临着重大的工程挑战，包括数十亿个密钥条目和每两分钟数十万次的密钥更新。为了解决这个问题，Meta 优化了 AKD 库，以减少验证数据的大小并增强基础设施的弹性。这一发展允许自动密钥验证，减轻了用户的手动负担，并显著提高了 Messenger 的安全性和隐私。",
+  "mainPoints": [
+    {
+      "point": "密钥透明度提供可验证和可审计的公钥，有助于增强对端到端加密通信的信任。",
+      "explanation": "该功能帮助用户确认消息使用正确的密钥加密，防止密钥被恶意替换，增强消息隐私。"
+    },
+    {
+      "point": "Messenger 的密钥透明度利用 AKD 和 Cloudflare 的审计器来实现强大、独立可验证的密钥分发。",
+      "explanation": "系统使用可审计密钥目录 (AKD) 进行密钥管理，Cloudflare 的审计器维护公开日志，确保透明度和可追溯性。"
+    },
+    {
+      "point": "在 Messenger 的规模上实施密钥透明度需要大量的基础设施和算法优化。",
+      "explanation": "为了处理海量密钥数据和频繁更新，需要优化 AKD 算法效率，减少验证数据大小，并增强基础设施弹性。"
+    }
+  ],
+  "keyQuotes": [
+    "这项新功能提供额外的保障，确保只有你和你交流的对象才能查看或收听消息内容，任何其他人都无法做到，包括 Meta。",
+    "密钥透明度为消息用户提供可验证和可审计的公钥记录，允许他们确认对话使用联系人的正确密钥加密，且密钥未被篡改。",
+    "我们的密钥透明度实现采用了可审计密钥目录 (AKD) 库，与 WhatsApp 的现有系统类似。",
+    "目前，我们观察到大约每 2 分钟会发布一个新版本，每个版本中会添加数十万个新密钥。自从我们开始索引以来，我们的数据库已经增长到数十亿个密钥条目。",
+    "我们通过优化算法，减少验证数据的大小，提高了 AKD 库中密钥查找和验证的效率，即使单个密钥的更新数量不断增加。"
+  ],
+  "tags": [
+    "安全",
+    "端到端加密",
+    "密钥透明度",
+    "密码学",
+    "分布式系统"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 751,
+  "domain": "engineering.fb.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_011b29",
+  "sourceName": "Engineering at Meta",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763597846000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 00:17:26"
+}

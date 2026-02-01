@@ -1,0 +1,63 @@
+{
+  "id": "RAW_3ecd3c2",
+  "title": "127. 大模型季报跨年对谈：和广密预言 AI War 的两大联盟、第三范式 Online Learning",
+  "url": "https://www.xiaoyuzhoufm.com/episode/694bbc49d996dd7bfddeecbf",
+  "date": "2025-12-24 23:00:00",
+  "author": "张小珺",
+  "siteName": "张小珺Jùn｜商业访谈录",
+  "content": "<html>\n <head></head>\n <body>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_flo18nnusp7ounltf8ugcdhxio6o.jpg\">\n  </figure>\n  <p><span>这里是《全球大模型季报》的第8集，也是我和广密跨年对谈的第三年了！</span></p>\n  <p><span>这集节目将带你看到，在对AGI开始充斥着现实主义情绪回归的当下，</span><strong><span>全球AI War形成了怎样的战队、阵营和联盟？各个前沿实验室在探索哪些新范式？硅谷又涌现出了哪些新型的研究实验室？</span></strong></p>\n  <p><span>如果你对全球大模型季报有更多的想法或者建议，欢迎大家在评论区留言，我们都会看到。</span></p>\n  <p><span>2025的最后，期待我们和AI共同进步！</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fm2f9n8vmm_n-xafqmi98xs3t3k8.png\">\n  </figure>\n  <figure>\n   <img src=\"https://image.jido.dev/20251225001539_fgsvniff58-vfxbyzhl7n6pmymsi.png\">\n  </figure>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fvv-r5fbydyhgzamyxav1k1a9ijt.png\">\n  </figure>\n  <blockquote>\n   <p><strong><span>AI War：一场全球巨头都输不起的竞争</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"120\">02:00</a> 全球大模型季报陪伴大家到第8集了</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"199\">03:19</a> 一开始就不免俗地聊聊AI Bubble吧</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"458\">07:38</a> OpenAI收入构成算账：看得清的收入和看不清的收入</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"790\">13:10</a> 有的公司是“巨头的棋子价值”</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"812\">13:32</a> OpenAI做商业化的速度问题</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"904\">15:04</a> 纵观全局，这场AI War的主要推动方和阵营：英伟达GPU vs 谷歌TPU</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1036\">17:16</a> Google越强，越会形成反Google联盟，OpenAI越强也会形成反OpenAI联盟</span></p>\n  <blockquote>\n   <p><strong><span>交替领先是顶尖模型的新常态</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1068\">17:48</a> 全球最领先的3个模型GPT/Claude/Gemini，交替领先是竞争常态</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1540\">25:40</a> 这里有个偷懒的判断，基础模型=综合电商，scale SKU=scale data</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1660\">27:40</a> Gemini崛起，大家会担心OpenAI会怎么办？怎么看待这两家的竞争？</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1880\">31:20</a> 另一个判断是：最终的最终，ChatGPT会融合传统Search，最终也会吃掉传统Search广告的份额</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2108\">35:08</a> 大家不把Google当做AI loser诺基亚了，但Google危机没有真正解除</span></p>\n  <blockquote>\n   <p><strong><span>Pre-training和RL之后的第三个范式：Online learning</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2161\">36:01</a> Pre-training scaling确实快结束了，但Online learning刚开始</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2329\">38:49</a> OpenAI即便分崩离析3-4次了也依然很强：Anthropic是OpenAI最早的Scaling team，Ilya是Pre-training team，Thinking Machines是原班ChatGPT和Post-training team</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2401\">40:01</a> 说一个暴论：大家提的机器人、世界模型、多模态，很多可能是假问题，Online learning可能才是唯一重要的真问题</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2461\">41:01</a> Pre-training预训练是石油，化石燃料；RL专家数据是新能源，有用但总量少；Online Learning是核聚变，还没突破，突破了无敌，人类进入硅基时代</span></p>\n  <blockquote>\n   <p><strong><span>AGI像马拉松 or 自动驾驶？持久战+现金流之战</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2585\">43:05</a> 如果模型数据分布里面没有这类数据，这类任务就是不work，只有压缩过这类数据，才work——今天的模型还是巨大的压缩器</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2673\">44:33</a> “模型即产品，数据即模型”</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2685\">44:45</a> 听过一个rumor：Sam在内部说先忘掉AGI？</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2704\">45:04</a> 局部L3/L4，很难整体L4：现实一点的是，在知识工作者群体，局部L3/L4的体验是能看到的，比如ChatGPT做长尾信息获取, Coding Agent, Office/PPT/Excel Agent, Finance金融投研Agent</span></p>\n  <blockquote>\n   <p><strong><span>现阶段对于投资的思考（不作为投资建议）</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2831\">47:11</a> 上一期播客说的是40%OpenAI+40%字节+10%Google+10%Anthropic</span></p>\n  <p><span>现在是：25%OpenAI+25%Bytedance+10%Google+10%Anthropic+10%Nvidia+10%TSMC，每家都放一点</span></p>\n  <p><span>另外是今天要bet 3年后的范式和winner了，Thinking Machines和SSI这种Neo Labs也应该好好考虑下</span></p>\n  <blockquote>\n   <p><strong><span>2026年，湾区的重要趋势和信号</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3057\">50:57</a> 2026年期待投资的主题</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3173\">52:53</a> 模型即产品，数据即模型</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3288\">54:48</a> 一横一纵：横向蒸馏人类专家知识，横向扩宽更多的行业领域；纵向就是下一代技术范式，Online learning，创造更高的经济价值</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3405\">56:45</a> 硅谷新冒出的Neo Labs的分布图</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3583\">59:43</a> Robotics的最新进展和公司分布</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3955\">01:05:55</a> 硅谷头部公司的ARR增长状况：越头部的公司越便宜，越头部的公司越没有Bubble</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251225001539_fhvhd5hegdhmdy1zwz9mdj8mcv01.png\">\n  </figure>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4082\">01:08:02</a> 国内的大模型和应用公司</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4179\">01:09:39</a> 模型的下一个胜负手是什么？</span></p>\n  <blockquote>\n   <p><strong><span>华人创业者、基金和“中国的硅谷”</span></strong></p>\n  </blockquote>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4216\">01:10:16</a> 中美的AI叙事差异</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4335\">01:12:15</a> 对华人创业者想说啥</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4460\">01:14:20</a> 为什么说希望推动中国有个硅谷？</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4605\">01:16:45</a> 3-5年之后全球最领先的AI公司会是华人团队吗？</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fvvbunblf7fhijfdp3mmmbadlz8g.png\">\n  </figure>\n  <p><span>年终对话【站在2025年之外】</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251225001539_lhlvtttwwckadf0oiokz5nqvc1yc.png\">\n  </figure>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/693834013fec3166cf262bd0\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/693834013fec3166cf262bd0\"><span>《122. 朱啸虎现实主义故事的第三次连载：人工智能的盛筵与泡泡》</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/693d7c172a383da167ecfcde\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/693d7c172a383da167ecfcde\"><span>《124. 和戴雨森聊2026年预期、The Year of R、回调、我们如何下注》</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/694180874c65abaff3576bc4\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/694180874c65abaff3576bc4\"><span>《125. 与Altimeter合伙人Freda聊：下注OpenAI、Robinhood往事，美国资本坏小孩、算盘与泡沫》</span></a></p>\n  <p><a href=\"https://www.xiaoyuzhoufm.com/episodes/694795da9f70e5d6b371d207\" data-url=\"https://www.xiaoyuzhoufm.com/episodes/694795da9f70e5d6b371d207\"><span>《126. 和红杉郑庆生聊：经济史的流量革命、人类行为模式的不可预期，与创始人性格》</span></a></p>\n  <p><span>【更多信息】</span></p>\n  <p><span>免责声明：本内容不作为投资建议。</span></p>\n  <figure>\n   <img src=\"https://image.jido.dev/20251128123806_fn7o36ntuypcm_rqifj1lw-tiwk8.jpg\">\n  </figure>\n </body>\n</html>",
+  "aiSummary": "本期播客深度分析了全球 AI 竞争格局、讨论了在线学习等新兴范式，并对 AI 投资策略以及中国 AI 发展的机遇与挑战进行了展望。",
+  "oneSentenceSummary": "本期播客深度分析了全球 AI 竞争格局、讨论了在线学习等新兴范式，并对 AI 投资策略以及中国 AI 发展的机遇与挑战进行了展望。",
+  "summary": "本期播客围绕全球 AI 领域的竞争格局展开深入对话，提出了 AI War 而非 AI Bubble 的观点，认为 AI 竞争已上升至国家战略层面。嘉宾们分析了以英伟达 GPU 和谷歌 TPU 为代表的两大阵营，以及 OpenAI、Anthropic 等领先模型之间的交替领先常态。同时，重点探讨了在线学习（Online Learning）作为继预训练和强化学习之后的第三个范式，预示其可能带来的核弹级突破。播客也对 AI 投资策略进行了调整，强调应关注领先模型、算力基础设施及技术溢出红利。此外，还探讨了 AGI 实现路径的现实考量、机器人技术的最新进展，并对中国科技公司和华人创业者在全球 AI 竞争中的机遇与挑战表达了期待，鼓励发挥人才优势，增加风险资本支持以激发创新。",
+  "mainPoints": [
+    {
+      "point": "全球 AI 竞争进入“AI War”阶段，涉及国家战略和科技巨头之间的军备竞赛",
+      "explanation": "AI 的颠覆性变革使其成为科技巨头和国家无法承受失败的战略重点，例如 AI Agent 可能重塑流量分配，挑战现有平台地位。"
+    },
+    {
+      "point": "在线学习（Online Learning）被认为是 AI 领域下一个核弹级的范式突破",
+      "explanation": "在线学习强调模型自主学习效率和实时交互学习能力，有望解决模型泛化性问题，推动 AI 向更智能、更自主方向发展，并影响机器人和世界模型的发展。"
+    },
+    {
+      "point": "AI 投资应聚焦领先模型、算力基础设施和技术溢出带来的新机会",
+      "explanation": "建议分散投资于全球领先的 AI 模型公司、GPU 和 TPU 等硅基基础设施提供商，并关注从 AI 技术溢出中快速成长的新兴公司，以应对技术快速迭代的风险。"
+    },
+    {
+      "point": "AGI 实现路径现实化，更注重在知识工作者特定领域的局部突破",
+      "explanation": "模型对冷启动激活数据的依赖使得 AGI 实现时间预期被拉长，但在如编程、办公自动化等知识工作者场景中，局部 L3/L4 级的 AI 体验具有高确定性，存在巨大商业价值。"
+    },
+    {
+      "point": "中国 AI 产业需加大投入培养人才，华人创业者应坚定全球化市场战略",
+      "explanation": "鼓励中国科技公司增加算力投入和人才培养，激发创新。华人创业者应利用中国工程师红利，深耕产品，放眼全球市场，并争取风险资本支持，以提升全球 AI 领域的竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "我担心过一阵子，现在结论是不用太担心，不能称作是 AI bubble，更像是 AI war。这是每个科技巨头都输不起的战争或军备竞赛。甚至说这也是中美国家战略都输不起的一个战争竞赛。",
+    "最大的一个体感就是如果模型数据分布里面没有这类数据，这类任务就是不 work。只有压缩过这类数据，这个任务才 work。所以你就感觉今天的模型还是一个巨大的压缩器。",
+    "我觉得这里有一个暴乱，就是大家提的机器人、世界模型、多模态，其实可能很多是假问题，可能才是唯一重要的真问题。",
+    "如果简单的说就是说 AI 的投资就是白糖技术成长最陡峭的地方，围绕主线，如果简单的几句话就是说你应该投全球最领先的两三家模型。",
+    "所以回到 AJI 的这个投资策略，你只拜上一家是风险也很大的，最好是投多家，因为大家是交替领先，技术变化太快，最好的还是有一个一个一个篮子，我觉得是比较好的，因为确实比较难最终判断哪一家是 winner。"
+  ],
+  "tags": [
+    "AI竞争",
+    "大型语言模型",
+    "在线学习",
+    "AI投资",
+    "AI战略"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 94,
+  "wordCount": 1776,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_31d080",
+  "sourceName": "张小珺Jùn｜商业访谈录",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766617200000,
+  "publishDateStr": "2025-12-24",
+  "publishDateTimeStr": "2025-12-24 23:00:00"
+}

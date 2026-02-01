@@ -1,0 +1,63 @@
+{
+  "id": "RAW_258c4c85",
+  "title": "Python Worker 服务再升级：Wasm 快照与原生 uv 工具加持",
+  "url": "https://www.infoq.com/news/2025/12/cloudflare-wasm-python-snapshot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-24 10:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a recent <a href=\"https://blog.cloudflare.com/python-workers-advancements/\">blog post</a>, Cloudflare outlined the evolution of its <a href=\"https://developers.cloudflare.com/workers/languages/python/how-python-workers-work/\">Python Workers</a>, including enhancements such as near-instant cold starts, a massive expansion of package compatibility, and a streamlined workflow powered by the popular uv package manager.</p>\n   <p>One of the challenges with Python has been the startup time, as standard Python runtimes often take several seconds to boot, especially when loading heavy libraries. A respondent on a Hacker News <a href=\"https://news.ycombinator.com/item?id=46192748\">thread</a> captured the community’s frustration:</p>\n   <blockquote>\n    <p>One of my biggest points of criticism of Python is its slow cold start time. I especially notice this when I use it as a scripting language for CLIs. The startup time of a simple .py script can easily be in the 100 to 300 ms range, whereas a C, Rust, or Go program with the same functionality can start in under 10 ms. This becomes even more frustrating when piping several scripts together, because the accumulated startup latency adds up quickly.</p>\n   </blockquote>\n   <p>The company introduced a new architecture that utilizes memory snapshots to bypass the initialization phase. Furthermore, <a href=\"https://blog.cloudflare.com/python-workers/\">WebAssembly (Wasm) powering Python Workers</a> enables this capability by bypassing the need for <a href=\"https://en.wikipedia.org/wiki/Address_space_layout_randomization\">Address Space Layout Randomization</a> (ASLR), a security feature that typically makes memory snapshotting complex and insecure in native operating systems.</p>\n   <p>In the blog post, the authors explain that by executing the top-level scope once at deployment and capturing a snapshot of the Wasm linear memory, Cloudflare enables quick Worker restoration, resulting in speed gains. The company states that heavy packages like <a href=\"https://fastapi.tiangolo.com/\">fastapi</a> and <a href=\"https://docs.pydantic.dev/latest/\">pydantic</a> now load in about 1 second, down from nearly 10 seconds. Additionally, the company´s benchmarks show that Python Workers start 2.4 times faster than AWS Lambda (without SnapStart) and 3 times faster than Google Cloud Run.</p>\n   <p>In addition, Cloudflare also moved away from a limited set of pre-installed libraries to a broad, open ecosystem. The Python Workers now support any package compatible with <a href=\"https://pyodide.org/en/stable/usage/packages-in-pyodide.html\">Pyodide</a>, including pure Python libraries and many that rely on dynamic C extensions (such as NumPy, Pandas, and Pillow).</p>\n   <p>To manage this, Cloudflare introduced <a href=\"https://github.com/cloudflare/workers-py#pywrangler\">pywrangler</a>, a new CLI tool integrated with <a href=\"https://docs.astral.sh/uv/\">uv</a>, the high-performance Python package manager, which allows developers to manage dependencies via a standard pyproject.toml file, with the tool automatically handling the complexities of bundling compatible modules for the edge.</p>\n   <p>The update also brings Python into Cloudflare’s more advanced features, including:</p>\n   <ul>\n    <li>FastAPI Integration: Developers can now deploy full FastAPI applications globally in under two minutes.</li>\n    <li>Agentic AI &amp; Workflows: Python Workers are now integrated with Cloudflare Workflows (currently in beta), enabling multi-step, durable execution, as <a href=\"https://www.infoq.com/news/2025/11/cloudflare-python-ai-workflows/\">reported</a> earlier by InfoQ as a significant benefit for data and AI pipelines.</li>\n    <li>Durable Objects &amp; WebSockets: Python developers can now build stateful applications, such as real-time chat rooms or data consumers, directly on the edge.</li>\n   </ul>\n   <p>By treating Python as a \"first-class citizen\" alongside JavaScript, Cloudflare is positioning itself as the go-to platform for the growing AI and data science community. The move effectively removes the \"latency tax\" usually associated with Python in serverless environments, making it a viable choice for performance-critical production apps.</p>\n   <p>As Dominik Picheta and the Cloudflare team noted:</p>\n   <blockquote>\n    <p>A cold start is far more expensive in Python than in JavaScript... our aims are high, and we are planning for a future with zero cold start.</p>\n   </blockquote>\n   <p>Lastly, for developers who want to experiment with Python, Workers are currently available on the <a href=\"https://www.cloudflare.com/plans/free/\">Cloudflare Free tier</a>, offering 100,000 requests per day.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Python Workers Redux: Wasm Snapshots and Native uv Tooling\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/cloudflare-wasm-python-snapshot/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766570400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 通过由 WebAssembly 驱动的内存快照显著增强了其 Python Worker 服务，实现了近乎即时的冷启动，并通过 uv 工具扩展了包兼容性，将 Python 定位为边缘计算的核心支持语言。",
+  "oneSentenceSummary": "Cloudflare 通过由 WebAssembly 驱动的内存快照显著增强了其 Python Worker 服务，实现了近乎即时的冷启动，并通过 uv 工具扩展了包兼容性，将 Python 定位为边缘计算的核心支持语言。",
+  "summary": "Cloudflare 在其 Python Worker 服务方面取得了重大进展，解决了长期存在的冷启动缓慢和包兼容性受限等问题。其核心创新在于利用 WebAssembly (Wasm) 和内存快照，从而实现近乎即时的启动时间。通过在部署时执行一次顶层作用域并捕获 Wasm 线性内存快照，Cloudflare 可以快速恢复 Worker 服务，将 FastAPI 和 Pydantic 等重型包的冷启动时间从 10 秒大幅缩短至约 1 秒。这种方法还绕过了 ASLR（地址空间布局随机化）的复杂性，而 ASLR 通常会使本地内存快照的实现变得复杂且不安全。此外，Cloudflare 通过支持任何 Pyodide 兼容库（包括带有 C 扩展模块的库）扩展了包兼容性，并引入了 `pywrangler` —— 一个与 `uv` 集成的命令行工具 —— 以简化依赖管理。这些更新将 Python 集成到 Cloudflare 的高级功能中，例如 FastAPI 集成、智能代理 AI 和工作流以及持久对象，使 Python 成为边缘、生产级 AI 和数据科学应用的高性能且可行的选择。",
+  "mainPoints": [
+    {
+      "point": "Wasm 驱动的内存快照大幅缩短了 Python Worker 服务的冷启动时间。",
+      "explanation": "Cloudflare 利用 WebAssembly 和内存快照几乎即时地初始化 Python Worker 服务，绕过了完全重新初始化，解决了 Python 固有的冷启动延迟问题。"
+    },
+    {
+      "point": "扩展的包兼容性使得 Python Worker 服务能够接入更广泛的生态系统。",
+      "explanation": "通过支持 Pyodide 兼容库（包括带有 C 扩展模块的库），Cloudflare 使开发人员能够在其无服务器环境中使用以前无法使用的各种 Python 包（例如 NumPy、Pandas）。"
+    },
+    {
+      "point": "`uv` 集成工具简化了 Python Worker 服务的依赖管理和部署。",
+      "explanation": "引入 `pywrangler` 和 `uv` 简化了 Python 依赖项的边缘部署管理和打包，提供了更友好的开发人员体验和更快的开发周期。"
+    },
+    {
+      "point": "Python 集成 Cloudflare 高级功能，支持复杂的边缘应用。",
+      "explanation": "Python Worker 服务现在与 FastAPI、智能代理 AI 和工作流以及持久对象集成，显著扩展了 Python 在边缘直接构建复杂、有状态和 AI 驱动应用程序的能力。"
+    },
+    {
+      "point": "Cloudflare 将 Python 定位为边缘计算（尤其是 AI/数据科学）的核心支持语言。",
+      "explanation": "通过消除性能障碍并提供强大的工具，Cloudflare 提升了 Python 与 JavaScript 并列的地位，以高性能的无服务器平台面向不断增长的 AI 和数据科学社区。"
+    }
+  ],
+  "keyQuotes": [
+    "我最主要的抱怨之一就是 Python 缓慢的冷启动时间。",
+    "通过在部署时执行一次顶层作用域并捕获 Wasm 线性内存快照，Cloudflare 实现了快速的 Worker 恢复，从而提高了速度。",
+    "Python Worker 服务现已与 Cloudflare 工作流（目前处于测试阶段）集成，实现了多步骤、持久的执行，InfoQ 此前报道称，这为数据和 AI 管道带来了显著优势。",
+    "Python 的冷启动比 JavaScript 昂贵得多…我们的目标很高，我们正在规划一个零冷启动的未来。",
+    "通过将 Python 视为与 JavaScript 并列的“核心支持语言”，Cloudflare 正将自己定位为不断壮大的 AI 和数据科学社区的首选平台。"
+  ],
+  "tags": [
+    "Cloudflare Workers",
+    "Python",
+    "WebAssembly",
+    "无服务器",
+    "冷启动"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 561,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766570400000,
+  "publishDateStr": "2025-12-24",
+  "publishDateTimeStr": "2025-12-24 10:00:00"
+}

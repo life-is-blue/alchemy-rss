@@ -1,0 +1,54 @@
+{
+  "id": "RAW_fadbd54d",
+  "title": "啊？微博 7800 美元训的大模型，数学能力超了 DeepSeek-R1",
+  "url": "https://www.qbitai.com/2025/11/353826.html",
+  "date": "2025-11-18 06:11:05",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"40\">允中 发自 凹非寺</p>\n   <p data-track=\"41\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">当整个AI行业陷入“参数竞赛”的狂热时，<strong>微博AI</strong>交出了一份出乎意料的答卷，为沸腾的大模型战场开辟了一条充满想象力的新路径。</p>\n  <p data-track=\"3\">近日，微博正式发布首个自研开源大模型<strong>VibeThinker</strong>，这个仅拥有<strong>15亿参数</strong>的“轻量级选手”，在国际顶级数学竞赛基准测试上击败了参数量是其数百倍的、高达6710亿的DeepSeek R1模型。</p>\n  <p data-track=\"4\">更令人瞩目的是，其单次“后训练”的成本仅<strong>7800美元</strong>，对比DeepSeek-R1和MiniMax-M1等成本直接降低了几十倍。</p>\n  <p data-track=\"5\">这一突破不仅重新定义了大模型的技术评价标准，更有望推动AI产业从“规模竞赛”转向“效率革命”。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118070805_ce6a93c0b08a351385b768b9796d837b.png\" alt=\"啊？微博7800美元训的大模型，数学能力超了DeepSeek-R1\" data-ic=\"false\" data-width=\"960\" data-height=\"1352\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">在AI发展史上，<strong>参数量</strong>曾被视为衡量模型能力的核心指标。</p>\n  <p data-track=\"8\">行业普遍认为，复杂推理能力需要1000亿以上参数才能涌现，而小模型则因无法处理高难度问题被视为“天生不足”。</p>\n  <p data-track=\"9\">但如果从小模型入手，通过巧妙的训练策略，能否挖掘出隐藏的推理能力？</p>\n  <p data-track=\"10\">微博自研开源大模型VibeThinker，给出了行业一个肯定的答案。</p>\n  <p data-track=\"11\">当大多数AI厂商仍遵循着“规模扩大即智能提升”的Scaling Law法则时，微博AI研发人员转而优化模型结构和训练范式，并创新提出了<strong>“频谱到信号原理”（SSP）方法训练</strong>，创造出了一个仅拥有15亿参数的“轻量级选手”，但在AI竞技场上战胜了超越其数百倍体量的“巨人”。</p>\n  <p data-track=\"12\">VibeThinker一经发布，立即引起了全球AI研究界的广泛关注，因其在一系列涵盖数学、编码的权威基准测试中，交出了一份出乎意料的答卷：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118070805_5e793024c63d175ab969ae43366db6a9.png\" alt=\"啊？微博7800美元训的大模型，数学能力超了DeepSeek-R1\" data-ic=\"false\" data-width=\"1112\" data-height=\"1288\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△HuggingFace官方主动下场发文宣传VibeThinker论文</span>\n  </div>\n  <p data-track=\"14\">在AIME24、AIME25以及HMMT25三个高难度数学测试集上的表现，VibeThinker超越了参数量超其400倍的模型DeepSeek-R1-0120版本（模型大小671B），与规模为456B的MiniMax-M1效果接近或相当，甚至媲美Gemini 2.5 flash和Claude Opus 4。</p>\n  <p data-track=\"15\">此外，在LiveCodeBench v6（编程算法题测试集）中的成绩，VibeThinker成功追平参数量数超其数十倍的模型，比如欧洲领先AI企业Minstral.AI的深度思考模型Magistral-Medium-2506版本。</p>\n  <p data-track=\"16\">VibeThinker雄辩地证明，通过精巧的算法设计和训练策略，<strong>一个小规模模型完全有潜力在复杂的逻辑推理任务上，达到甚至超越那些体量庞大数百倍的巨型模型</strong>，更为AI产业的成本结构、技术路线和资本布局带来了全新的思考路径。</p>\n  <p data-track=\"17\">需要说明的是，VibeThinker目前发布的版本尚处于实验性版本，其研发重点主要集中于极大强化小模型复杂数学与竞赛编程等方面的能力，其在日常聊天等能力还没有做过针对性训练优化，所以暂不适合作为日常聊天工具进行互动，更适用于<strong>数学和代码</strong>等高智能应用场景。</p>\n  <p data-track=\"19\">训练成本一直是制约AI技术普及的关键瓶颈，VibeThinker的成就不仅在于惊艳的性能，更在于其<strong>极致的成本效益</strong>。</p>\n  <p data-track=\"20\">根据公开数据，2025年主流大模型单次后训练（Post-Training）成本普遍在数十万美元级别。</p>\n  <p data-track=\"21\">上海AI企业MiniMax于今年6月发布的M1模型，使用512块H800 GPU训练三周，租赁成本约53.5万美元，创始人发文表示：“第一次感觉到大山不是不能翻越。”</p>\n  <p data-track=\"22\">今年9月，AI初创公司DeepSeek（深度求索）的论文登上《自然》杂志。论文首次揭示了训练R1的成本：仅为29.4万美元。这不包括DeepSeek公司在开发R1所基于的基础LLM（即DeepSeek-V3）上花费的约600万美元，但总成本仍然远低于竞争对手模型被认为花费的数千万美元。</p>\n  <p data-track=\"23\">在这样的行业背景下，VibeThinker整个后训练过程（包括SFT和RL阶段）总共只花费了约3900个GPU小时。按照当时的市场租赁价格，总计算成本仅<strong>7800美元</strong>。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118070805_1299033591124bc5bf677cc0ceb238e9.png\" alt=\"啊？微博7800美元训的大模型，数学能力超了DeepSeek-R1\" data-ic=\"false\" data-width=\"1080\" data-height=\"300\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">这也意味着，其用不到8000美元的成本，达到了需要花费30万、甚至50万美元才能企及的性能水平，成本效益比达到了惊人的<strong>30到60倍</strong>。</p>\n  <p data-track=\"25\">这种成本上的显著优势，也意味着强大的AI推理能力不再是少数科技巨头的专利，原本被巨头垄断的技术资源得以普惠，更多中小型公司、研究机构和大学，都有机会参与到前沿AI创新开发中来，极大地促进了AI研究的普惠化，推动整个行业朝着更开放、更多元、更具活力的方向发展。</p>\n  <p data-track=\"27\">技术突破的最终价值在于<strong>应用落地</strong>。</p>\n  <p data-track=\"28\">微博积极拥抱人工智能发展趋势，全面促进AI技术在多项业务场景的落地。</p>\n  <p data-track=\"29\">2024年，微博自主研发<strong>“知微”大语言模型</strong>，并成功通过备案，更陆续推出微博智搜、内容总结、AI互动号等前沿功能，优化用户体验，提升内容生产和互动效率。</p>\n  <p data-track=\"30\">基于自研的“知微”大模型，微博构建了适配微博场景的AI应用生态，并创造了两大顶流AI产品：</p>\n  <ul>\n   <li data-track=\"31\">一是<strong>微博智搜</strong>，它通过深度分析平台内海量优质内容，构建可信知识图谱，实现“精准捕捉用户需求、理解情感与场景”的突破性体验，6月智搜月活跃用户突破5000万；</li>\n   <li data-track=\"32\">二是<strong>评论罗伯特</strong>，作为AI互动账号，它从毒舌风格起步，逐渐进化出温情与聪明版本，成为广大用户“又爱又恨”的交流对象，全网粉丝近200万，展现了AI评论助手的另一种可能性。</li>\n  </ul>\n  <p data-track=\"33\">随着自研大模型VibeThinker取得突破，更标志着微博AI战略迈入新阶段。</p>\n  <p data-track=\"34\">立足于自研大模型VibeThinker，微博的未来规划凸显了鲜明的“数据赋能”路径。公司计划深度融合其在心理等垂直领域积累的独特数据资产，目标是打造一个更洞悉公众情绪、更能服务社会化需求的专属模型。</p>\n  <p data-track=\"35\">微博不仅是在优化一个大模型，更是在解锁其数据生态的深层价值，以提供更精准、更懂用户心理状态的下一代社交服务。</p>\n  <p data-track=\"36\">VibeThinker的强大技术能力，或将成为驱动微博AI应用“多点开花”的核心引擎，深度融入平台全业务生态。</p>\n  <p data-track=\"37\">未来，VibeThinker有望在微博智搜等核心AI产品中落地，不仅能持续提升用户使用体验，更有望打破场景边界，裂变出兼具社交属性与智能服务的下一个“社交超级生态”。</p>\n  <p data-track=\"38\">此外，VibeThinker的技术突破有望<strong>大幅降低微博AI应用成本</strong>。</p>\n  <p data-track=\"39\">无论是智能搜索的算力损耗，还是实时互动场景的AI响应成本，都将得到高效优化，让平台在规模化投入AI能力时无需承担过高的资源压力，进一步释放微博的生态创新能力，为用户带来更丰富、更便捷的智能体验。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "微博发布仅 15 亿参数的 VibeThinker 大模型，以 7800 美元成本在数学和编程能力上超越数百倍参数的巨型模型，开启 AI“效率革命”。",
+  "oneSentenceSummary": "微博发布仅 15 亿参数的 VibeThinker 大模型，以 7800 美元成本在数学和编程能力上超越数百倍参数的巨型模型，开启 AI“效率革命”。",
+  "summary": "文章详细介绍了微博 AI 团队自研的开源大模型 VibeThinker，该模型仅有 15 亿参数，却在国际顶级数学竞赛和编程基准测试中，超越了参数量数百倍的 DeepSeek-R1 和 MiniMax-M1 等巨型模型，甚至媲美 Gemini 2.5 flash 和 Claude Opus 4。VibeThinker 的突出之处在于其极低的训练成本，单次后训练仅需 7800 美元，将主流大模型的成本降低了几十倍。这一成就得益于其创新的“频谱到信号原理”（SSP）训练方法，挑战了 AI 行业普遍遵循的“参数量决定能力”的 Scaling Law。文章指出，VibeThinker 的突破不仅重新定义了模型评价标准，更预示着 AI 产业从“规模竞赛”转向“效率革命”，使得强大的 AI 推理能力不再是少数巨头的专利，极大促进了 AI 研究的普惠化。文章还提及微博现有的“知微”大模型及其应用（如微博智搜、评论罗伯特），并展望 VibeThinker 未来将深度融入微博业务生态，提升用户体验并大幅降低 AI 应用成本。",
+  "mainPoints": [
+    {
+      "point": "小参数量模型通过创新训练策略可达 SOTA 推理能力",
+      "explanation": "VibeThinker 仅 15 亿参数，但通过“频谱到信号原理”等创新方法，在数学和编程任务上超越了数百倍参数的巨型模型，挑战了传统 Scaling Law。"
+    },
+    {
+      "point": "极低训练成本实现高性能 AI，推动 AI 普惠化",
+      "explanation": "VibeThinker 单次后训练成本仅 7800 美元，远低于行业平均水平，使更多中小型机构和开发者有机会参与前沿 AI 创新。"
+    },
+    {
+      "point": "微博 AI 战略迈入新阶段，驱动应用生态升级与成本优化",
+      "explanation": "VibeThinker 将深度赋能微博智搜等核心产品，提升用户体验，并显著降低平台 AI 应用成本，解锁数据生态深层价值。"
+    }
+  ],
+  "keyQuotes": [
+    "这一突破不仅重新定义了大模型的技术评价标准，更有望推动 AI 产业从\"规模竞赛\"转向\"效率革命\"。",
+    "VibeThinker 雄辩地证明，通过精巧的算法设计和训练策略，一个小规模模型完全有潜力在复杂的逻辑推理任务上，达到甚至超越那些体量庞大数百倍的巨型模型。",
+    "这种成本上的显著优势，也意味着强大的 AI 推理能力不再是少数科技巨头的专利，原本被巨头垄断的技术资源得以普惠，更多中小型公司、研究机构和大学，都有机会参与到前沿 AI 创新开发中来，极大地促进了 AI 研究的普惠化，推动整个行业朝着更开放、更多元、更具活力的方向发展。",
+    "微博不仅是在优化一个大模型，更是在解锁其数据生态的深层价值，以提供更精准、更懂用户心理状态的下一代社交服务。"
+  ],
+  "tags": [
+    "大语言模型",
+    "小模型",
+    "模型训练",
+    "成本优化",
+    "数学推理"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 91,
+  "wordCount": 2563,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763446265000,
+  "publishDateStr": "2025-11-18",
+  "publishDateTimeStr": "2025-11-18 06:11:05"
+}

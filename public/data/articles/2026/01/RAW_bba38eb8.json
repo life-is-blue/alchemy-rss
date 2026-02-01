@@ -1,0 +1,63 @@
+{
+  "id": "RAW_bba38eb8",
+  "title": "DeepSeek 等 8 大产品都是意外？！改变世界的项目们最初都没当事儿办",
+  "url": "https://www.qbitai.com/2026/01/368958.html",
+  "date": "2026-01-11 12:02:11",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"77\">衡宇 鹭羽 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"78\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">这些改变世界的产品，<strong>最初居然都是不被当回事儿的支线项目</strong>（side project）？！</p>\n  <p data-track=\"3\">包括但不限于：</p>\n  <ul>\n   <li data-track=\"4\"><strong>DeepSeek</strong>：幻方量化的支线项目</li>\n   <li data-track=\"5\"><strong>Qwen</strong>：阿里的支线项目</li>\n   <li data-track=\"6\"><strong>Claude Code</strong>：Anthropic的支线项目</li>\n   <li data-track=\"7\"><strong>ChatGPT</strong>：OpenAI的的支线项目</li>\n   <li data-track=\"8\"><strong>PyTorch</strong>：Meta的支线项目</li>\n   <li data-track=\"9\"><strong>Gmail</strong>：Google的支线项目</li>\n   <li data-track=\"10\"><strong>Twitter</strong>（现）：Odeo的支线项目</li>\n   <li data-track=\"11\"><strong>Slack</strong>：Tiny Speck的支线项目</li>\n  </ul>\n  <p data-track=\"12\">就说例举的这8个项目里面，你日常会用几个吧（doge脸等答案）～</p>\n  <p data-track=\"13\">反正，随便单独拎哪一个出来，都会让人小小诧异一下：这居然也能是个支线项目？</p>\n  <p data-track=\"14\">不过我们先来界定一下，什么叫做“支线项目”。</p>\n  <p data-track=\"15\">简单来说，就是非主线、非KPI驱动、最初非战略立项。<strong>这些项目成立之初并不重要，更不是公司翻身的战略方案。</strong></p>\n  <p data-track=\"16\">所以失败也好，和主线方向冲突也罢，都没有太大关系。</p>\n  <p data-track=\"17\">但——</p>\n  <p data-track=\"18\">用热烈讨论的网友的话来说：</p>\n  <blockquote>\n   <p data-track=\"19\">没有项目经理、销售、GTMs、合规、股东，<strong>支线项目总是魔法生效的地方。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130326_ddae992e9101af70fef795ee1b0f9fa0.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">废话不多说，先来看国内做副业做得比主业还家喻户晓的<strong>幻方量化</strong>。</p>\n  <p data-track=\"22\">也就是DeepSeek背后的母公司。</p>\n  <p data-track=\"23\">幻方确实很技术范儿——在幻方量化内部，长期存在大量围绕算力、模型和工程效率的技术研究。</p>\n  <p data-track=\"24\"><strong>但幻方并不是一家专门的AI Lab</strong>，所以上述这些研究首先服务于量化交易本身。</p>\n  <p data-track=\"25\">更多时候，AI的作用都是辅助金融市场的分析研究，妥妥的支线工具属性。</p>\n  <p data-track=\"26\">所以，DeepSeek并不是在聚光灯下诞生的项目，是沿着内部技术演进自然延伸出来的结果。</p>\n  <p data-track=\"27\">这一点非常关键。</p>\n  <p data-track=\"28\">这种状态，恰恰<strong>让它能够绕开很多创业项目必经的约束，比如节奏、叙事、融资节点、对外承诺……</strong></p>\n  <p data-track=\"29\">总之就是技术可以先跑在需求前面。</p>\n  <p data-track=\"30\">更别提做量化起家的幻方，完全不缺卡了。</p>\n  <p data-track=\"31\">毕竟这个时代算力为王，谁能拥有更丰富的GPU集群，谁就占据资源优势，而幻方量化显然将这点做到了极致。</p>\n  <p data-track=\"32\">同时长期深耕金融专业场景，也让它拥有得天独厚的数据优势，在研发通用智能时也会更倾向于注重模型推理和数学能力。</p>\n  <p data-track=\"33\">长期高强度的算法投入，加上顶尖的人才储备，幻方量化能打造出爆款AI，可谓天时地利人和。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130326_7730416d672d039c19aa43ba309db938.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"34\">而同属国内开源大模型第一梯队的<strong>Qwen</strong>其实也是支线项目。</p>\n  <p data-track=\"35\">通义千问技术负责人林俊旸在上公开：Qwen was a side project。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130327_dc0680053bb4afa75c907bdf562bbe2b.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\">作为成熟的老牌互联网公司，阿里早期在大模型上的战略定位更多的还是面向行业ToB用户，大模型的商业化交付才是绝对主线。</p>\n  <p data-track=\"37\">Qwen则坚定走上了一条开源道路。</p>\n  <p data-track=\"38\">而且据林俊旸所说，side project能够提高成功几率。</p>\n  <p data-track=\"39\">一是因为没有过度的决策参与，把自主权交还给真正写模型的人。</p>\n  <p data-track=\"40\">二是微观管理少，更大的试错空间换来更快的迭代速度。</p>\n  <p data-track=\"41\">简单来说，在Qwen的早期发展中，阿里不是完全不管，也不是严加看管，而是找到了一条折中的道路。</p>\n  <p data-track=\"42\">即尽可能给予研究团队空间，以支线任务的形式“放养”，在证明其价值后，再逐步融入主线资源。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130327_0672e45cc69190acea54d024df92b735.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"43\">再看硅谷，同样的典型案例有<strong>Claude Code</strong>。</p>\n  <p data-track=\"44\">最初，它不过是工程师Boris Cherny的一个Claude实验性工程：</p>\n  <p data-track=\"45\">通过连接AppleScript，它能告诉用户正在听什么音乐，还能切换在播的音乐。</p>\n  <p data-track=\"46\">有用肯定是有用，但听起来有点平平无奇（？</p>\n  <p data-track=\"47\">某次和产品经理交流后，Cherny意识到，或许可以给终端来点和系统文件交互的工具，比如读文件、写文件，还有运行批处理命令什么的。</p>\n  <p data-track=\"48\">Anyway，Claude Code就这样在相当偶然的情况下诞生了。</p>\n  <p data-track=\"49\">初露苗头时，它只是一个员工基于自家大模型手搓的side project。</p>\n  <p data-track=\"50\">但正式面市后，随即产生了暴风式传播效应，并<strong>成为Anthropic的当家产品之一。</strong></p>\n  <p data-track=\"51\">Boris Cherny在上记录道：</p>\n  <blockquote>\n   <p data-track=\"52\">一年前，Claude在生成bash命令时难以避免转义错误。而且它一次只能工作几秒或几分钟。\n    <br class=\"sysbr\">\n    快进到今天。在过去的三十天里，我提交了259个PR——497次提交，添加了40000行代码，删除了38000行代码。\n    <br class=\"sysbr\">\n    每一行代码都是由Claude Code+Opus4.5编写的。\n    <br class=\"sysbr\">\n    Claude持续运行数分钟、数小时甚至数天。</p>\n  </blockquote>\n  <p data-track=\"53\">软件工程的范式正在改变。</p>\n  <p data-track=\"54\">谁也没想到，<strong>当初一个并未委以重任的支线项目，现在已经成了一股绕不开的力量</strong>，推着我们走进编程新时期。</p>\n  <p data-track=\"56\">AI加速进入软件工程流程之后，试错的成本被明显拉低了。</p>\n  <p data-track=\"57\">过去需要团队协作和资源协调才能完成的探索，现在能由个人更轻松、更迅速地来完成初步验证。</p>\n  <p data-track=\"58\">从这个角度来想的话，<strong>其实真的不用把“探索”当作正经必须立项的行为了。</strong></p>\n  <p data-track=\"59\">因为你每天就干自己的活，都有可能探索个新思路或者新方法出来。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130326_018c2ad3b94c55f57070ab80b0c8d71a.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"60\">许多支线项目都是在这种条件下出现——从解决一个具体问题开始，通过真实使用不断修正方向，然后逐渐茁壮成长，最终成为一根根台柱子。</p>\n  <p data-track=\"61\">现在，AI能很好地缩短从想法到验证的距离。</p>\n  <p data-track=\"62\">像Claude Code这样的项目，并不是一开始就奔着“核心工具”去，而是在不断使用中积累成熟度，最终进入真实生产流程。</p>\n  <p data-track=\"63\"><strong>当试错足够便宜，能否被迅速使用和反馈就更加重要，小项目的价值也随之改变。</strong></p>\n  <p data-track=\"64\">就说是不是直接放大了个人探索的价值吧！</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130327_f1bebfa9bca6d354be22072594e87cbb.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"65\">不过，AI虽然提升了执行效率，却未必同步提升战略判断的准确性。</p>\n  <p data-track=\"66\">在技术环境变化时，主线项目更容易被原有判断束缚，而且老话说什么来着，船大难掉头。</p>\n  <p data-track=\"67\">这只是某一侧重点下的对比结果，<strong>我们绝对不是在说抨击主线项目，或者说主线项目就会因此失去意义</strong>。</p>\n  <p data-track=\"68\">只是在当下，有些东西发生了变化。</p>\n  <p data-track=\"69\">支线项目探索的成本更低，反馈更快，也为主线在方向被验证后承接规模化任务打下了坚实基础。</p>\n  <p data-track=\"70\">这种变化还在进行中，其最终形态并不清晰。</p>\n  <p data-track=\"71\">不过可以看到一个清晰的趋势——</p>\n  <p data-track=\"72\"><strong>在AI时代，一些关乎未来方向的早期信号，或许会越来越多地出现在那些一开始并不被当成正事儿的项目里。</strong></p>\n  <p data-track=\"74\">BTW，<strong>并不是所有的支线项目变成主项目后，都能很快拿到一个好的结果的</strong>。</p>\n  <p data-track=\"75\">Be like：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130328_61a03497b05f5b74d2c2782cb564ef01.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"76\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/Yuchenj_UW/status/2005361471224746368\n   <br class=\"sysbr\">\n   [2]https://x.com/bcherny/status/2004887829252317325\n   <br class=\"sysbr\">\n   [3]https://x.com/hardmaru/status/1882698763988545808</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文揭示 DeepSeek、Qwen、ChatGPT 等多个颠覆性产品皆源于最初不被重视的“支线项目”，强调在 AI 时代，低成本试错和个人探索将使支线项目成为未来创新的重要孵化器。",
+  "oneSentenceSummary": "本文揭示 DeepSeek、Qwen、ChatGPT 等多个颠覆性产品皆源于最初不被重视的“支线项目”，强调在 AI 时代，低成本试错和个人探索将使支线项目成为未来创新的重要孵化器。",
+  "summary": "文章探讨了包括 DeepSeek、Qwen、Claude Code、ChatGPT 等在内的多个改变世界的创新产品，最初都源于所谓的“支线项目”（side project）。文章将支线项目定义为非主线、非 KPI 驱动、非战略立立项的项目，强调其在早期拥有更大的试错空间和更少的约束。通过幻方量化（DeepSeek）、阿里（Qwen）和 Anthropic（Claude Code）的案例，指出支线项目能够让技术先行于需求，避开商业化压力，孵化出意想不到的成功。文章还特别提出，在 AI 时代，由于试错成本降低和个人探索价值放大，未来更多重要方向的早期信号可能将首先出现在这些“不被当回事儿”的支线项目中。",
+  "mainPoints": [
+    {
+      "point": "改变世界的创新产品常源于不被重视的“支线项目”。",
+      "explanation": "DeepSeek、Qwen、ChatGPT 等成功案例表明，最初非主线、非 KPI 驱动的项目，因其宽松环境和试错空间，反而可能孵化出颠覆性创新。"
+    },
+    {
+      "point": "支线项目能够避开主线项目的诸多约束，驱动技术先行。",
+      "explanation": "这类项目不受节奏、叙事、融资节点等限制，让技术团队能专注于纯粹的技术探索和演进，如幻方量化对 DeepSeek 的“放养式”发展。"
+    },
+    {
+      "point": "AI 技术进一步降低了创新试错成本，放大个人探索价值。",
+      "explanation": "在 AI 加速软件工程流程的时代，个人通过 AI 工具能更轻松、迅速地完成概念验证，使得小项目和个人探索的价值被显著提升。"
+    },
+    {
+      "point": "“放养”和赋予自主权是支线项目成功的关键因素。",
+      "explanation": "如 Qwen 的案例所示，减少过度决策参与和微观管理，给予技术团队更大的试错空间和自主权，能有效提高项目成功几率和迭代速度。"
+    },
+    {
+      "point": "未来重要的创新信号将更多地出现在支线项目中。",
+      "explanation": "随着技术环境变化和 AI 的赋能，主线项目可能受限于既有判断，而支线项目以其成本低、反馈快的特性，将成为早期探索和发现未来方向的重要源头。"
+    }
+  ],
+  "keyQuotes": [
+    "没有项目经理、销售、GTMs、合规、股东，支线项目总是魔法生效的地方。",
+    "Qwen was a side project。",
+    "低成本的尝试为真正的创新提供了一片沃土，同时放大了个人探索的价值。",
+    "当试错足够便宜，能否被迅速使用和反馈就更加重要，小项目的价值也随之改变。",
+    "在 AI 时代，一些关乎未来方向的早期信号，或许会越来越多地出现在那些一开始并不被当成正事儿的项目里。"
+  ],
+  "tags": [
+    "商业模式",
+    "创新管理",
+    "人工智能",
+    "组织战略",
+    "产品开发"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2288,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768132931000,
+  "publishDateStr": "01-11",
+  "publishDateTimeStr": "2026-01-11 12:02:11"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c0121600",
+  "title": "刚刚，阿里千问 APP 开启公测，要做中国版 ChatGPT | 附实测",
+  "url": "https://www.ifanr.com/1644759?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2025-11-17 10:58:02",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>前几天，阿里「千问计划」被曝光。消息称，他们要基于全球性能第一的开源模型 Qwen3 打造个人 AI 助手「千问 APP」。</p>\n  <p>而就在刚刚，靴子终于落地。</p>\n  <p>阿里官宣千问 APP 公测版上线。除了聊天足够聪明外，「能办事」将是千问 APP 未来发展的一个重要方向。</p>\n  <p><img class=\"alignnone size-full wp-image-1644764\" src=\"https://image.jido.dev/20251121043221_573f6dc5\" alt=\"\" width=\"2768\" height=\"1560\" srcset=\"https://image.jido.dev/20251121043221_573f6dc5 2768w, https://image.jido.dev/20251121043222_519-360x203.jpg 360w, https://image.jido.dev/20251121043222_519-768x433.jpg 768w, https://image.jido.dev/20251121043221_519-1024x577.jpg 1024w\" sizes=\"(max-width: 2768px) 100vw, 2768px\"></p>\n  <p>我们也第一时间分别对千问和 ChatGPT 进行了简单的测试，看看这个后来者到底有什么底气。</p>\n  <blockquote>\n   <p>屋里三盏灯，屋外三个开关，一个开关仅控制一盏灯，屋外看不到屋里。怎样只进屋一次，就知道哪个开关控制哪盏灯?</p>\n  </blockquote>\n  <p>这是一道经典的逻辑题。两者都给出了正确答案，即利用灯泡的温度差异来判断：</p>\n  <p>打开一个开关等待几分钟，然后关闭它，再打开第二个开关，进屋后就能通过灯的亮灭和温度判断三个开关。虽说千问的回答更详细一些，但对于这种思路题来说，只要核心逻辑正确即可。这一轮算是打平。</p>\n  <p><img class=\"alignnone size-full wp-image-1644760\" src=\"https://image.jido.dev/20251121043220_daeb58ef\" alt=\"\" width=\"1200\" height=\"1200\" srcset=\"https://image.jido.dev/20251121043220_daeb58ef 1200w, https://image.jido.dev/20251121043222_500-360x360.jpg 360w, https://image.jido.dev/20251121043222_500-768x768.jpg 768w, https://image.jido.dev/20251121043222_500-1024x1024.jpg 1024w\" sizes=\"(max-width: 1200px) 100vw, 1200px\"></p>\n  <p>「解释为什么生食和熟食必须使用不同的砧板与刀具。」</p>\n  <p>这道题就拉开差距了。GPT-5.1 Auto 的回答比较简单，基本是从知识库里挑选了一些标准答案，谈交叉污染、细菌传播等常识，多少有些敷衍的意思。</p>\n  <p>而千问的表现让人眼前一亮：它懂得主动搜索，引用了 14 篇相对权威的资料信息，甚至还配上了对应的图片、文章等富媒体内容。内容丰富且有据可查。这一轮，千问明显更胜一筹。</p>\n  <p><img class=\"alignnone size-full wp-image-1644761\" src=\"https://image.jido.dev/20251121043222_5160da5e\" alt=\"\" width=\"1200\" height=\"1200\" srcset=\"https://image.jido.dev/20251121043222_5160da5e 1200w, https://image.jido.dev/20251121043222_501-360x360.jpg 360w, https://image.jido.dev/20251121043222_501-768x768.jpg 768w, https://image.jido.dev/20251121043222_501-1024x1024.jpg 1024w\" sizes=\"(max-width: 1200px) 100vw, 1200px\"></p>\n  <p>最后一道题是个硬核编程题：用一个 HTML 文件实现一个 Game Boy 模拟器，包含俄罗斯方块、宝可梦、塞尔达等经典游戏的全功能模拟，所有按钮可触控也可键盘操作。</p>\n  <p><img class=\"alignnone size-full wp-image-1644762\" src=\"https://image.jido.dev/20251121043220_72200d29\" alt=\"\" width=\"1634\" height=\"1288\" srcset=\"https://image.jido.dev/20251121043220_72200d29 1634w, https://image.jido.dev/20251121043222_502-360x284.png 360w, https://image.jido.dev/20251121043222_502-768x605.png 768w, https://image.jido.dev/20251121043222_502-1024x807.png 1024w\" sizes=\"(max-width: 1634px) 100vw, 1634px\"></p>\n  <div class=\"editor-image-source\">\n   <p>▲左为 Qwen，右为 ChatGPT</p>\n  </div>\n  <p>从最终效果看，两者各有千秋。千问在视觉效果上做得不错，界面还原度挺高，确实抓住了 Game Boy 的感觉。</p>\n  <p>GPT-5.1 Auto 的界面设计有些敷衍，俄罗斯方块虽然能跑起来，但实际上只有一个方块能移动，功能并没有真正实现。但客观来说，在单个 HTML 文件里完整还原 Game Boy 模拟器本身就是极高难度的任务，两者都没能做到尽善尽美。</p>\n  <p>这一轮也算平局。</p>\n  <p>ChatGPT 已经是全球 AI 的代名词，豆包和元宝背靠抖音、微信这种日活数亿的超级应用。千问没有这种「天然流量池」，这就决定了它必须在产品体验上做出显著差异化，才能说服用户专门下载一个新应用。</p>\n  <p>从产品策略来看，国内外 AI 助手已经走上了不同的路径。</p>\n  <p>ChatGPT 相对独立，主要靠订阅费和 API 调用盈利。而国内的 AI 助手则更强调生态整合：元宝可以直接在微信内使用，豆包即梦和抖音内容创作工具打通，千问如果成功，可能会直接导向淘宝购物。</p>\n  <p>这种「AI+X」的组合模式——AI+电商、AI+社交、AI+内容创作，本身就是巨大的商业价值，而不只是依赖订阅费。</p>\n  <p><img class=\"alignnone size-full wp-image-1644763\" src=\"https://image.jido.dev/20251121043222_6271e076\" alt=\"\" width=\"2600\" height=\"1578\" srcset=\"https://image.jido.dev/20251121043222_6271e076 2600w, https://image.jido.dev/20251121043222_503-360x218.png 360w, https://image.jido.dev/20251121043222_503-768x466.png 768w, https://image.jido.dev/20251121043221_503-1024x621.png 1024w\" sizes=\"(max-width: 2600px) 100vw, 2600px\"></p>\n  <p>实际上，过去阿里的 AI 更多集中在 B 端领域，Qwen 模型技术实力很强，在全球开源社区的下载量已经是第一，但普通消费者感受不到。而在 AI 领域，用户的品牌忠诚度很薄弱，哪个好用就用哪个。</p>\n  <p>千问的机会窗口可能很窄，如果不能迅速打出知名度，之后再追就更困难了。</p>\n  <p>不过机会也确实存在。全球范围内，对 AI 产品有需求但被 ChatGPT 的价格或使用门槛挡在外面的用户，其实数量庞大。如果千问能够以更友好的价格、更低的使用门槛、更强的多语言支持，去覆盖这部分市场，可能会找到一个差异化的生存空间。</p>\n  <p>真正的较量或许才刚刚开始，千问 APP 的推出也意味着阿里真正开始重视 AI 的下半场，即让 AI 走进普通人的日常。而对我们用户来说，全球市场上多一个能打的选手，对所有人都是好事。</p>\n </body>\n</html>",
+  "aiSummary": "阿里千问 APP 公测上线，文章通过实测对比 ChatGPT，并分析其“AI+X”的差异化市场策略。",
+  "oneSentenceSummary": "阿里千问 APP 公测上线，文章通过实测对比 ChatGPT，并分析其“AI+X”的差异化市场策略。",
+  "summary": "文章报道了阿里「千问 APP」的公测上线，旨在打造中国版 ChatGPT。通过经典逻辑题、知识问答和编程题与 ChatGPT 进行实测对比，发现千问在知识搜索和富媒体内容呈现上表现突出。文章进一步分析了国内外 AI 助手的产品策略差异，指出千问 APP 将走向“AI+X”的生态整合模式，以电商、社交、内容创作等场景为依托，而非单纯依赖订阅费。尽管面临流量挑战，千问有望通过更低门槛和多语言支持，抢占未被满足的 AI 市场。",
+  "mainPoints": [
+    {
+      "point": "阿里千问 APP 通过多模态搜索在知识问答上展现优势",
+      "explanation": "实测对比显示，千问 APP 能主动搜索并引用权威资料，结合富媒体内容，提供比 ChatGPT 更丰富、有据可查的回答。"
+    },
+    {
+      "point": "千问 APP 采取“AI+X”生态整合模式寻求差异化竞争",
+      "explanation": "与 ChatGPT 的独立订阅模式不同，千问计划与阿里生态（如淘宝）深度结合，通过 AI 赋能电商、社交等场景，创造巨大商业价值。"
+    },
+    {
+      "point": "千问 APP 瞄准未被满足的市场需求以获得发展机会",
+      "explanation": "面对 ChatGPT 的价格和使用门槛，千问有望通过更友好的价格、更低门槛和多语言支持，覆盖全球庞大的潜在 AI 用户。"
+    }
+  ],
+  "keyQuotes": [
+    "阿里官宣千问 APP 公测版上线。除了聊天足够聪明外，「能办事」将是千问 APP 未来发展的一个重要方向。",
+    "GPT-5.1 Auto 的回答比较简单，基本是从知识库里挑选了一些标准答案，谈交叉污染、细菌传播等常识，多少有些敷衍的意思。而千问的表现让人眼前一亮：它懂得主动搜索，引用了 14 篇相对权威的资料信息，甚至还配上了对应的图片、文章等富媒体内容。",
+    "ChatGPT 已经是全球 AI 的代名词，豆包和元宝背靠抖音、微信这种日活数亿的超级应用。千问没有这种「天然流量池」，这就决定了它必须在产品体验上做出显著差异化，才能说服用户专门下载一个新应用。",
+    "这种「AI+X」的组合模式------AI+电商、AI+社交、AI+内容创作，本身就是巨大的商业价值，而不只是依赖订阅费。",
+    "如果千问能够以更友好的价格、更低的使用门槛、更强的多语言支持，去覆盖这部分市场，可能会找到一个差异化的生存空间。"
+  ],
+  "tags": [
+    "AI 助手",
+    "大语言模型",
+    "千问 APP",
+    "AI 产品策略",
+    "阿里巴巴"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 92,
+  "wordCount": 1287,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763377082000,
+  "publishDateStr": "2025-11-17",
+  "publishDateTimeStr": "2025-11-17 10:58:02"
+}

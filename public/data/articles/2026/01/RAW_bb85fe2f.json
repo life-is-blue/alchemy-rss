@@ -1,0 +1,63 @@
+{
+  "id": "RAW_bb85fe2f",
+  "title": "不得了，这个新技术把视频压缩到了 0.02%！",
+  "url": "https://www.qbitai.com/2026/01/369609.html",
+  "date": "2026-01-15 06:21:59",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"2 1 []\">\n   <p data-track=\"87\">金磊 发自 凹非寺</p>\n   <p data-track=\"88\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">感谢AI！</p>\n  <p data-track=\"3\">原生1个G的视频，现在只需要传200K数据就能看了——</p>\n  <p data-track=\"4\">视频数据的压缩率干到了<strong>0.02%</strong>，但依旧能保持画面的高清、连贯和画面细节。</p>\n  <p data-track=\"5\">或许你会问，这又有什么用呢？</p>\n  <p data-track=\"6\">想象一下，你身处于太平洋的一艘远洋货轮中，卫星信号只有一两格，刷个朋友圈，加载内容的圈圈都要转好久。</p>\n  <p data-track=\"7\">但正是因为有了这项AI技术，现在在如此极端的环境之下，你甚至可以直接看<strong>高清的世界杯直播！</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_9b1d8f7d88ad3098098a29823e4a8491.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"458\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"8\">没错，视频传输的物理法则，算是被重写了。</p>\n  <p data-track=\"9\">而这项新研究，正是来自中国电信人工智能研究院（TeleAI）的技术——<strong>生成式视频压缩（GVC，Generative Video Compression）</strong>。</p>\n  <p data-track=\"10\">作为国资央企、全球领先的综合智能信息服务运营商，中国电信不仅拥有覆盖海陆空天的通信网络基础设施，更具备将前沿AI技术与实际通信场景深度融合的能力。</p>\n  <p data-track=\"11\">这种“云网融合+AI原生”的独特优势，使得GVC技术从实验室走向远洋船舶、应急现场等真实极端环境成为可能。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_1eadc8f9292e1ee7fed582c81a837dcb.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"286\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">那么这项研究到底是如何做到的，以及又能给我们现实生活带来什么改变，我们继续往下看。</p>\n  <p data-track=\"14\">在介绍这项黑科技之前，我们需得先聊聊现在的视频是怎么传输的。</p>\n  <p data-track=\"15\">无论是你要看的Netflix、B站，还是微信视频通话，背后主要依靠的是HEVC（H.265）或VVC（H.266）这类传统视频编码标准。</p>\n  <p data-track=\"16\">这些技术的底层逻辑，说白了是<strong>像素的极致搬运</strong>：编码器拼命计算哪些像素是不变的、哪些是移动的，然后尽可能多地保留像素信息，再想办法塞进有限的带宽里。</p>\n  <p data-track=\"17\">这种逻辑在宽带富裕时很完美，但在极限环境下（极低带宽）会迅速崩盘。</p>\n  <p data-track=\"18\">一旦带宽不够，传统编码器为了凑合传输，只能疯狂丢弃高频信息。结果我们都见过：画面糊成一团，甚至直接卡死。</p>\n  <p data-track=\"19\"><strong>但 TeleAI 团队换了个思路</strong>，如果我不传像素了呢？</p>\n  <p data-track=\"20\">GVC的核心逻辑是：<strong>不再传递画面本身，而是传递“如何画出这幅画面”的指令。</strong></p>\n  <p data-track=\"21\">打个比方：</p>\n  <ul>\n   <li data-track=\"22\">传统压缩：就像是把《蒙娜丽莎》拍一张照片，尽量压缩这张照片发给你。如果网不好，照片就糊得像一堆色块。</li>\n   <li data-track=\"23\">生成式视频压缩（GVC）：我不发照片了。我发给你一段描述——“一位女士，神秘微笑，背景是山水，光影是从左侧来的……”，以及她嘴角上扬的精确弧度数据。你的接收端坐着一位AI画师（生成式模型），听到描述后，现场给你画出一幅《蒙娜丽莎》。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_3049b0f1a8bb0bc3d21b3e1c1bbf9be8.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"603\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">刚刚说的只是打个比方，实际情况要复杂得多，传输的内容也并非只有文字。</p>\n  <p data-track=\"25\">这就是技术报告中提到的核心理念：<strong>用计算，换宽带（Trading computation for bandwidth）。</strong></p>\n  <p class=\"pgc-p\" data-track=\"26\">把传输的压力，转移到了推理计算上。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073310_15c93b460780d25214a4b5ab901e2367.png\" data-ic=\"undefined\" data-width=\"1338\" data-height=\"742\" data-ic-uri=\"\">\n  </div>\n  <p class=\"pgc-p\" data-track=\"91\">视频地址：https://mp.weixin.qq.com/s/GG1BFS8mFugifO9xzA33Tg</p>\n  <p data-track=\"28\">既然不传像素，那这0.02%的数据里到底装了什么？</p>\n  <p data-track=\"29\">技术报告揭示了GVC系统的内部构造，它主要由<strong>神经编码器（Neural Encoder）</strong>和<strong>生成式视频解码器（Generative Video Decoder）</strong>两部分组成。</p>\n  <p data-track=\"30\">里面传输的是一种被称为<strong>压缩Token</strong>&nbsp;的极小数据包，这些Token里包含了视频的灵魂，主要分为两类：</p>\n  <ol start=\"1\">\n   <li data-track=\"31\">语义信息（Semantic Information）： 这是一个什么场景？有人吗？有车吗？物体的大致结构是什么？这是画面的骨架。</li>\n   <li data-track=\"32\">运动信息（Motion Dynamics）： 这些物体下一秒往哪动？风怎么吹？车轮怎么转？这是画面的灵魂。</li>\n  </ol>\n  <p data-track=\"33\">经过 TeleAI 团队的测试，这些Token的大小可以被压缩到极致的<strong>0.005 bpp – 0.008 bpp</strong>（bits per pixel，比特每像素）。</p>\n  <p data-track=\"34\">这是什么概念？通常我们看的高清视频，bpp至少在0.1以上。<strong>GVC直接把数据量砍掉了两个数量级。</strong></p>\n  <p data-track=\"35\">除此之外，在接收端，还有一个<strong>扩散模型（Diffusion Model）</strong>&nbsp;严阵以待。</p>\n  <p data-track=\"36\">它接收到这些简短的Token指令后，利用预训练好的海量世界知识（比如它本来就知道海浪长什么样，足球长什么样），结合指令中的特征，开始脑补并生成视频。</p>\n  <p data-track=\"37\">这在通信理论上，实现了一次巨大的跨越。</p>\n  <p data-track=\"38\">香农-韦弗（Shannon-Weaver）通信模型将通信分为三个层级：</p>\n  <ul>\n   <li data-track=\"39\">Level A：技术问题（传得准不准？）</li>\n   <li data-track=\"40\">Level B：语义问题（意思对不对？）</li>\n   <li data-track=\"41\">Level C：有效性问题（能不能完成任务？）</li>\n  </ul>\n  <p data-track=\"42\">传统视频压缩在死磕Level A，而GVC直接跳到了<strong>Level C</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_3f8167a39ca40679e40fe9e47cf1a906.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"512\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"43\">它不在乎每一个像素点是否和原图一模一样（比如这片树叶的纹理是否100%重合），它在乎的是：<strong>在人眼看来，这是否是一场连贯、清晰、真实的球赛？在机器看来，能否准确识别出这是否是越位？</strong></p>\n  <p data-track=\"45\">极端压缩听起来很玄，但具体指标并不含糊。</p>\n  <p data-track=\"46\">技术报告中展示了在MCL-JCV权威数据集上的测试结果，数据非常硬核。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"47\"><strong>画质吊打传统算法</strong></p>\n  <p data-track=\"48\">在极低码率下（0.005 bpp左右），使用LPIPS（一种更符合人类视觉感知的画质评价指标）进行对比：</p>\n  <ul>\n   <li data-track=\"49\">传统霸主HEVC已经彻底崩溃，画面基本是马赛克乱舞，LPIPS数值飙升（越低越好）。</li>\n   <li data-track=\"50\">GVC生成的画面依然保持了清晰的纹理和结构，LPIPS数值显著低于HEVC。</li>\n  </ul>\n  <p data-track=\"51\">技术报告中给出了一个惊人的对比结论：<strong>传统方法（如HEVC）要想达到和GVC同样的视觉画质，需要消耗6倍以上的带宽！</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_8dd81dfeb39fa70c93e582eab8e97bc0.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"193\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"52\">这意味着，在同样的渣画质网络下，GVC能让你看清C罗的表情，而HEVC只能让你看清C罗是个移动的色块。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"53\"><strong>不只是给人看，机器也能用</strong></p>\n  <p data-track=\"54\">有人会问：AI生成的视频，会不会失真？比如把球生成没了？</p>\n  <p data-track=\"55\">这是一个非常犀利且实在的问题。</p>\n  <p data-track=\"56\">为此，团队在<strong>DAVIS2017</strong>视频分割任务上进行了验证；结果显示，在bpp=0.01的极限压缩下，GVC重建视频的J&amp;F指标（衡量分割准确度）显著高于HEVC。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_75781d4a9a71916890f2fe1e77c9feee.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"324\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"57\">这说明GVC传输的不仅仅是“好看”的皮囊，更是“准确”的语义。即使是AI重绘的，关键物体（人、车、球）的位置和轮廓也是精准的，完全不影响后续的AI分析。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"58\"><strong>消费级显卡也能跑</strong></p>\n  <p data-track=\"59\">计算换宽带，那会不会把电脑算爆？</p>\n  <p data-track=\"60\">确实，生成式模型通常是算力黑洞。但 TeleAI 通过模型小型化、知识蒸馏等手段，搞定了落地的最后一公里。</p>\n  <p data-track=\"61\">报告数据显示，经过优化的GVC模型，在消费级GPU（如RTX 4090）上，生成一组29帧的画面大约只需要0.95秒到1.35秒。</p>\n  <p data-track=\"62\">虽然比不上传统解码器的毫秒级速度，但在很多非实时或准实时的场景下（比如直播延迟几秒），这已经是完全可用的状态了。</p>\n  <p data-track=\"64\">0.02%，这篇技术报告所展现的关键数据已然非常惊艳，但它背后更加可期的，还是这项技术给未来带来的改变。</p>\n  <p data-track=\"65\">除了开头我们提到的世界杯的例子外，在报告展示的Demo场景中，GVC还展现了其它极端网络环境下的情况：</p>\n  <ul>\n   <li data-track=\"66\">远洋海事通信： 船员通过窄带卫星网络（带宽极其昂贵且稀缺）接收数据。用GVC，200K的数据流就能还原出连贯的球赛直播。这不仅是娱乐，对于海上远程医疗、设备维修指导来说，是救命的技术。</li>\n   <li data-track=\"67\">应急救援： 地震或洪水灾区，基站损毁，只有微弱的应急通信信号。救援无人机传回的如果是4K画面，根本发不出来；如果是GVC压缩后的Token，指挥中心就能实时看到清晰的现场生成画面，哪怕细节纹理是AI补全的，但受灾人数、房屋倒塌结构等核心信息是准确无误的。</li>\n   <li data-track=\"68\">深空探测与车载视频： 想象一下火星车发回的视频，或者数百万辆自动驾驶汽车每天上传的路测数据。如果都能压缩到0.02%，存储和传输成本将呈指数级下降。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_e29f008bb05a09d9b10072924be709ee.png\" data-ic=\"undefined\" data-width=\"1338\" data-height=\"748\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"92\">视频地址：https://mp.weixin.qq.com/s/GG1BFS8mFugifO9xzA33Tg</p>\n  <p data-track=\"71\">实际上，GVC并非孤立的技术突破，而是建立在<strong>“智传网（AI Flow）”</strong>理论体系之上。</p>\n  <p data-track=\"72\">智传网（AI Flow）是人工智能与通信、网络交叉领域的一项关键技术，即通过网络分层架构，基于连接和交互，实现智能的传递和涌现。</p>\n  <p data-track=\"73\">在去年的世界人工智能大会（WAIC）上，<strong>中国电信集团 CTO、首席科学家、中国电信人工智能研究院（TeleAI）院长李学龙教授</strong>，介绍了 TeleAI 在智传网（AI Flow）研究中所发现的三个定律：<strong>信容律、同源律、集成律。</strong></p>\n  <p data-track=\"74\">信容律描述大模型的本质规律和能力边界，通过数据压缩的方式来衡量模型的知识密度，也就是智能能力。</p>\n  <p data-track=\"75\">同源律则展现大模型的“部分”与“整体”关系，在相同训练计算开销下，能指导得到数量更多、性能更好的不同大小的家族模型。</p>\n  <p data-track=\"76\">集成律能指导大模型“单体”与“群体”的协同，通过多个模型集成的方式，实现智能能力的提升与涌现。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260115073309_7b48c22220697b22b5febf6e8fa90fe0.png\" data-ic=\"undefined\" data-width=\"1342\" data-height=\"744\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"93\">视频地址：https://mp.weixin.qq.com/s/GG1BFS8mFugifO9xzA33Tg</p>\n  <p data-track=\"79\">基于智传网（AI Flow）的信容律，在AI时代，通信的本质不再是单纯的数据传输，而是智能的分发与协同。</p>\n  <p data-track=\"80\">在此体系下，GVC通过“用计算换带宽”的资源置换策略，实现了通信效率与感知质量的最优平衡。</p>\n  <p data-track=\"81\">GVC就是这一理论的最佳实践：当带宽成为瓶颈时，我们就燃烧算力来换取自由。</p>\n  <p data-track=\"82\">从像素还原到语义生成，视频压缩技术正在经历一场类似从功能机到智能机的范式转移。</p>\n  <p data-track=\"83\">GVC标志着视频通信正从像素搬运迈向语义生成的新阶段。</p>\n  <p data-track=\"84\">作为央企在AI+通信融合创新中的重要成果，它不仅为远洋通信、应急救援、边缘智能等场景提供了高效可行的解决方案，更开启了以任务有效性为核心的下一代视频传输范式：</p>\n  <p data-track=\"85\">在未来的互联网里，流淌在光纤和电波中的，可能不再是庞大的原始数据，而是高度浓缩的智慧和指令。</p>\n  <p data-track=\"86\">技术报告地址：\n   <br>\n   https://www.arxiv.org/abs/2512.24300</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "中国电信 TeleAI 发布生成式视频压缩（GVC）技术，通过“用计算换带宽”将视频压缩至 0.02%带宽，极大提升极端网络环境下的视频传输与感知体验，实现视频通信从像素到语义的范式转变。",
+  "oneSentenceSummary": "中国电信 TeleAI 发布生成式视频压缩（GVC）技术，通过“用计算换带宽”将视频压缩至 0.02%带宽，极大提升极端网络环境下的视频传输与感知体验，实现视频通信从像素到语义的范式转变。",
+  "summary": "中国电信人工智能研究院（TeleAI）发布了一项名为生成式视频压缩（GVC）的创新技术，能将原生 1GB 的视频数据压缩至 200KB，压缩率高达 0.02%，同时保持画面高清、连贯。GVC 的核心理念是“用计算换带宽”，不再传输像素本身，而是传输描述画面内容的“压缩 Token”（包括语义和运动信息），并在接收端通过扩散模型生成视频。这项技术在极低带宽环境下（如远洋船舶、应急救援、深空探测）表现出色，其画质和 AI 识别准确度均远超传统 HEVC 编码，并且能在消费级显卡上运行。GVC 是基于“智传网（AI Flow）”理论体系的实践成果，标志着视频通信从像素搬运向语义生成的范式转移，为未来的极端环境通信提供了新的解决方案。",
+  "mainPoints": [
+    {
+      "point": "GVC 技术实现了极高视频压缩率（0.02%），能在极端带宽下保持视频质量。",
+      "explanation": "通过传输语义和运动信息的“压缩 Token”，而非原始像素，配合接收端的生成式模型（如扩散模型），大大减少了传输数据量，解决了传统编码在低带宽下的画面崩溃问题。"
+    },
+    {
+      "point": "GVC 核心理念是“用计算换带宽”，将传输压力转移到推理计算上。",
+      "explanation": "这颠覆了传统视频编码模式，通过部署 AI 模型进行内容生成，使得在网络受限情境下，终端的计算能力成为保障通信质量的关键。"
+    },
+    {
+      "point": "GVC 不仅画质超越传统编码，其重建视频的语义准确性也得到验证。",
+      "explanation": "在极低码率下，GVC 重建视频在视觉指标（LPIPS）和机器识别指标（DAVIS2017 数据集 J&F）上均显著优于 HEVC，证明其生成的内容既“好看”又“准确”。"
+    },
+    {
+      "point": "该技术已实现消费级显卡运行，具备广泛应用潜力。",
+      "explanation": "TeleAI 通过模型小型化和知识蒸馏，优化了 GVC 模型，使其能在 RTX 4090 等消费级 GPU 上以可用速度运行，为其在远洋通信、应急救援、深空探测等极端场景落地扫清了障碍。"
+    },
+    {
+      "point": "GVC 是“智传网（AI Flow）”理论体系的成功实践，预示视频通信模式的范式转变。",
+      "explanation": "它从香农-韦弗通信模型的语义和有效性层面突破，将通信的本质从数据传输转变为智能分发与协同，开启了以任务有效性为核心的下一代视频传输范式。"
+    }
+  ],
+  "keyQuotes": [
+    "原生 1 个 G 的视频，现在只需要传 200K 数据就能看了------视频数据的压缩率干到了 0.02%，但依旧能保持画面的高清、连贯和画面细节。",
+    "GVC 的核心逻辑是：不再传递画面本身，而是传递“如何画出这幅画面”的指令。",
+    "用计算，换宽带（Trading computation for bandwidth）。把传输的压力，转移到了推理计算上。",
+    "GVC 传输的不仅仅是“好看”的皮囊，更是“准确”的语义。",
+    "GVC 标志着视频通信正从像素搬运迈向语义生成的新阶段。"
+  ],
+  "tags": [
+    "视频压缩",
+    "生成式AI",
+    "扩散模型",
+    "低带宽通信",
+    "TeleAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 87,
+  "wordCount": 3628,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768458119000,
+  "publishDateStr": "01-15",
+  "publishDateTimeStr": "2026-01-15 06:21:59"
+}

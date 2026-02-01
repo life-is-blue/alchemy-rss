@@ -1,0 +1,55 @@
+{
+  "id": "RAW_1d6b8399",
+  "title": "桌面应用开发，Flutter 与 Electron 如何选",
+  "url": "https://juejin.cn/post/7578719771589066762",
+  "date": "2025-12-01 17:13:59",
+  "author": "Karl_wei",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <blockquote>\n    <p>前言：这一年来我基本处于断更的状态，我知道在AI时代，编码的成本已经变得越来越低，技术分享的流量必然会下降。但这依然是一个艰难的过程，日常斥责自己没有成长，没有作品。\n     <br>\n     <br>\n     除了流量问题、巨量的工作，更多的原因是由于技术栈的变化。我开始<strong>使用Electron</strong>编写一个重要的AI产品，并且在 Flutter 与 Electron 之间来回拉扯......</p>\n   </blockquote>\n   <h2 data-id=\"heading-0\">背景</h2>\n   <p>我们对 Flutter 技术的应用，不仅是在移动端APP，在我们的终端设备也用来做 OS 应用，<code>跨Android、Windows、Linux系统。</code>\n    <br>\n    在 Flutter 上，我们是有所沉淀的，但是当我们决定研发一款重要的PC应用时，依然产生了疑问：<strong>Flutter 这门技术，真的能满足我们在核心桌面应用的研发需求吗？</strong>\n    <br>\n    最终，基于官方能力、技术生态、roadmap等一系列原因，我们<strong>放弃在核心应用上使用 Flutter，转而代之选择了 Electron</strong> ！\n    <br></p>\n   <p>这篇文章将从这几个月使用 Electron 的切实体验，从不同角度，对 <code>Flutter</code> 和 <code>Electron</code> 这两款支持跨端桌面应用开发技术，做一个详细的对比。</p>\n   <table>\n    <thead>\n     <tr>\n      <th>维度</th>\n      <th>Flutter</th>\n      <th>Electron</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><strong>发布时间</strong></td>\n      <td>2021 年 3 月 宣布支持桌面端</td>\n      <td>2013 年 4 月发布，发布即支持</td>\n     </tr>\n     <tr>\n      <td><strong>核心场景</strong></td>\n      <td>移动APP跨端</td>\n      <td>桌面应用跨端</td>\n     </tr>\n     <tr>\n      <td><strong>官方网站</strong></td>\n      <td><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fflutter.dev\" target=\"_blank\" title=\"https://flutter.dev\" ref=\"nofollow noopener noreferrer\">flutter.dev</a></td>\n      <td><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.electronjs.org\" target=\"_blank\" title=\"https://www.electronjs.org\" ref=\"nofollow noopener noreferrer\">www.electronjs.org</a></td>\n     </tr>\n     <tr>\n      <td><strong>开发文档</strong></td>\n      <td><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fdocs.flutter.dev\" target=\"_blank\" title=\"https://docs.flutter.dev\" ref=\"nofollow noopener noreferrer\">docs.flutter.dev</a></td>\n      <td><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.electronjs.org%2Fdocs\" target=\"_blank\" title=\"https://www.electronjs.org/docs\" ref=\"nofollow noopener noreferrer\">www.electronjs.org/docs</a></td>\n     </tr>\n     <tr>\n      <td><strong>插件包管理</strong></td>\n      <td>Pub（<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fpub.dev\" target=\"_blank\" title=\"https://pub.dev\" ref=\"nofollow noopener noreferrer\">pub.dev</a>），提供大量 UI 组件、工具类库</td>\n      <td>npm（<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.npmjs.com\" target=\"_blank\" title=\"https://www.npmjs.com\" ref=\"nofollow noopener noreferrer\">www.npmjs.com</a>），依赖前端生态，插件丰富（如 electron-builder 打包工具）</td>\n     </tr>\n     <tr>\n      <td><strong>研发组织</strong></td>\n      <td>Google</td>\n      <td>Github</td>\n     </tr>\n    </tbody>\n   </table>\n   <h2 data-id=\"heading-2\">方案成熟度</h2>\n   <p>毫无疑问，在方案成熟度上 Electron 是碾压 Flutter 的存在。</p>\n   <h4 data-id=\"heading-3\">1. 多进程能力</h4>\n   <ul>\n    <li>Flutter 目前还是单进程的能力，只能通过创建 isolate 来实现部分耗时任务，但是内存也是不共享的。</li>\n    <li>Electron 集成了 Nodejs 服务，<code>自带多进程的能力</code>，且提供了<code>完整的跨进程机制</code>（<strong>IPC「Inter-Process Communication」</strong>）。</li>\n   </ul>\n   <h4 data-id=\"heading-4\">2. 多窗口支持</h4>\n   <ul>\n    <li><strong>Flutter 目前不支持多窗口</strong>。由于其是自绘引擎，本身还是依赖原生进程提供的桌面窗口，所以需要原生与 Flutter 引擎不断的进行沟通对接，才能很好的使用多窗口能力。\n     <br>\n     目前官方只是提供了 demo 来验证多窗口的可行性，但截止发文还没有办法在公版试用。</li>\n    <li>Electron 将 Chromium 的核心模块打包到发行包中，<code>借助浏览器的能力，可以随意开辟新的窗口</code>（如： <strong>BrowserWindow</strong>）</li>\n   </ul>\n   <h4 data-id=\"heading-5\">3. 开发语言</h4>\n   <ul>\n    <li>Flutter 使用dart语言开发，采用声明式UI进行布局，插件管理使用官方的 pub 社区，学习和使用成本不算高。</li>\n    <li>Electron 使用JavaScript/TypeScript + HTML/CSS 的前端技术栈进行开发，社区也完全跟前端一致，<code>非常丰富但鱼龙混杂</code>。</li>\n   </ul>\n   <h4 data-id=\"heading-6\">4. 原生能力的支持</h4>\n   <ul>\n    <li>Flutter 本质是一个 UI 框架，<strong>原生能力需要通过编写插件去调用</strong>，或者通过 FFI 调用，<strong>成本是很高的，你很难找到一个懂多端原生技术的开发。</strong></li>\n    <li>Electron 有 node 环境，node.js 很多原生模块，可以直接调用到系统的能力，非常的高效。</li>\n   </ul>\n   <h2 data-id=\"heading-7\">开发体验和技术生态</h2>\n   <h4 data-id=\"heading-8\">1. 调试工具</h4>\n   <ul>\n    <li>Flutter 的调试工具，主要是依赖 IDE 本身的断点调试能力，以及自研的Flutter Inspector、devTools。\n     <br>\n     在UI定位、性能监控方面，基本可以满足。但由于是个 UI 框架，<strong>对于原生容器是无法进行调试的</strong>，这在混合开发过程中是个比较大的痛点。</li>\n    <li>Electron 就是个浏览器，<strong>对于主进程和node子进程，有 Inspect 的机制；</strong> UI 层就更方便了，就是浏览器的调试器一模一样。生产环境下调试成本也低。</li>\n   </ul>\n   <h4 data-id=\"heading-9\">2. 打包编译</h4>\n   <p>Flutter 是通过自绘引擎生成原生应用包，而 Electron 是将网页技术（HTML/CSS/JS）包裹在 Chromium 内核中。\n    <br></p>\n   <p>底层技术架构的区别，直接决定了 Electron 的打包相对 Flutter 有些困难，且包体积很大。</p>\n   <table>\n    <thead>\n     <tr>\n      <th align=\"left\">对比维度</th>\n      <th align=\"left\">Flutter</th>\n      <th align=\"left\">Electron</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td align=\"left\"><strong>打包原理</strong></td>\n      <td align=\"left\">编译成目标平台的<strong>原生二进制代码</strong>，搭配自绘引擎（Skia）</td>\n      <td align=\"left\">封装&nbsp;<strong>Chromium 内核 + Node.js 环境</strong>，运行网页资源</td>\n     </tr>\n     <tr>\n      <td align=\"left\"><strong>最终产物</strong></td>\n      <td align=\"left\">与原生应用格式一致（如 .apk/.ipa/.exe）</td>\n      <td align=\"left\">包含浏览器内核的独立应用包</td>\n     </tr>\n     <tr>\n      <td align=\"left\"><strong>跨平台方式</strong></td>\n      <td align=\"left\">一份代码编译成多平台原生包，需分别打包</td>\n      <td align=\"left\">一份代码打包成多平台包，内核随应用分发</td>\n     </tr>\n     <tr>\n      <td align=\"left\"><strong>应用体积</strong></td>\n      <td align=\"left\">较小（基础包约 10-20MB）</td>\n      <td align=\"left\">较大（基础包约 50-100MB，内核占主要体积）</td>\n     </tr>\n    </tbody>\n   </table>\n   <h4 data-id=\"heading-10\">3. 官方和社区的活跃性</h4>\n   <ul>\n    <li>Flutter 官方在桌面端的推进很慢，很多基础能力都没有太多的推进。同时在 roadmap 中，重心都偏向移动端和 web 端。</li>\n    <li>Electron 由于产品的体量和成熟度，稳定的在更新，每个版本都会带来一些新的特性。 <img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/2356d8060a744b61a857c560bcb7d1a1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgS2FybF93ZWk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1765214039&amp;x-signature=fvc0iCguO60PWpnUT01pxcIvA7w%3D\" alt=\"image.png\" loading=\"lazy\" class=\"medium-zoom-image\"></li>\n   </ul>\n   <h4 data-id=\"heading-11\">4. 研发团队</h4>\n   <table>\n    <thead>\n     <tr>\n      <th align=\"left\">技能维度</th>\n      <th align=\"left\">Flutter</th>\n      <th align=\"left\">Electron</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td align=\"left\"><strong>核心语言</strong></td>\n      <td align=\"left\"><strong>Dart</strong>，需理解其异步逻辑、Widget 组件化思想</td>\n      <td align=\"left\"><strong>JavaScript/TypeScript</strong>，前端开发者可无缝衔接</td>\n     </tr>\n     <tr>\n      <td align=\"left\"><strong>UI 技术</strong></td>\n      <td align=\"left\">Flutter 内置 Widget 体系，需学习其布局（Row/Column）、状态管理（Provider/Bloc）</td>\n      <td align=\"left\">HTML/CSS，可复用前端生态（Vue/React/Element UI 等）</td>\n     </tr>\n     <tr>\n      <td align=\"left\"><strong>原生交互</strong></td>\n      <td align=\"left\">需了解 Android（Kotlin/Java）、iOS（Swift/OC）基础，复杂功能需写原生插件</td>\n      <td align=\"left\">依赖 Node.js 模块或现成插件，无需深入原生开发</td>\n     </tr>\n     <tr>\n      <td align=\"left\"><strong>工程化工具</strong></td>\n      <td align=\"left\">依赖 Flutter CLI、Android Studio/Xcode（打包配置）</td>\n      <td align=\"left\">依赖 npm/yarn、webpack/vite（前端构建工具）</td>\n     </tr>\n    </tbody>\n   </table>\n   <p>可以看出，Flutter至少需要 1-2 名熟悉 Dart 的开发者，还需要有原生开发能力，<strong>技术门槛是比较高的</strong>；而 Electron 以前端开发者为主，熟悉 Node.js 即可完成所有开发，是<strong>可以快速上手的</strong>。\n    <br></p>\n   <p>同时前端开发也比 Flutter 开发要<strong>更容易招聘</strong>。</p>\n   <h2 data-id=\"heading-12\">结语</h2>\n   <p>笔者本身是 Flutter 的忠实维护者，我认为 Flutter 的 Impeller 图形渲染引擎将不断完善，<code>能在各个端达到更好的渲染速度和效果</code>；同时 Flutter 目前的多窗口方案，让我们可以<code>充分的相信可以多个窗口共用一份内存，而不需要通过进程间通信机制</code>\n    <br></p>\n   <p>但是，在 Flutter 暂未成熟的阶段，<strong>桌面核心产品还是用 Electron 进行开发会更加合适</strong>。我们 也期待未来 Electron 可以多集成WebAssembly来提升计算密集型任务的性能，减少 Chromium 内核的高内存占用。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章详细对比了 Flutter 和 Electron 在桌面应用开发中的优劣，并基于实践经验建议在核心桌面产品上优先选择 Electron。",
+  "oneSentenceSummary": "文章详细对比了 Flutter 和 Electron 在桌面应用开发中的优劣，并基于实践经验建议在核心桌面产品上优先选择 Electron。",
+  "summary": "本文作者基于自身在 AI 产品开发中面临的跨端桌面应用技术选型困境，对 Flutter 和 Electron 进行了深入对比。文章首先指出 Flutter 在移动端和嵌入式 OS 应用方面有所沉淀，但在核心桌面应用上因官方支持、技术生态和成熟度等原因，最终放弃了 Flutter，转而选择了 Electron。随后，文章从方案成熟度（多进程、多窗口、原生能力）、开发语言、开发体验（调试工具、打包编译）和研发团队（学习成本、招聘难度）等多个维度详细分析了两者的差异。结论是，在 Flutter 桌面端能力尚未完全成熟的阶段，Electron 在桌面核心产品开发中更具优势和实用性。文章也展望了 Flutter 未来在渲染和多窗口方面的潜力，并期待 Electron 能通过 WebAssembly 优化性能。",
+  "mainPoints": [
+    {
+      "point": "Electron 在多进程、多窗口及原生能力支持上远超 Flutter",
+      "explanation": "Electron 集成 Node.js 和 Chromium 内核，天然支持多进程 IPC 和多窗口，原生能力调用高效；而 Flutter 目前单进程且多窗口支持不成熟，原生能力调用成本高。"
+    },
+    {
+      "point": "Electron 凭借前端生态和 Node.js，开发体验及团队组建更具优势",
+      "explanation": "Electron 沿用前端技术栈，调试工具成熟，且前端开发者易于上手和招聘；Flutter 则依赖 Dart 语言和原生开发，技术门槛相对较高。"
+    },
+    {
+      "point": "在 Flutter 桌面端能力未成熟前，核心产品选择 Electron 更为稳妥",
+      "explanation": "尽管 Flutter 未来潜力巨大，但当前其桌面端支持的成熟度、生态活跃性及基础能力推进缓慢，使得 Electron 成为开发核心桌面产品的更可靠选择。"
+    }
+  ],
+  "keyQuotes": [
+    "最终，基于官方能力、技术生态、roadmap 等一系列原因，我们放弃在核心应用上使用 Flutter，转而代之选择了 Electron！",
+    "毫无疑问，在方案成熟度上 Electron 是碾压 Flutter 的存在。",
+    "Flutter 本质是一个 UI 框架，原生能力需要通过编写插件去调用，或者通过 FFI 调用，成本是很高的，你很难找到一个懂多端原生技术的开发。",
+    "同时前端开发也比 Flutter 开发要更容易招聘。",
+    "但是，在 Flutter 暂未成熟的阶段，桌面核心产品还是用 Electron 进行开发会更加合适。"
+  ],
+  "tags": [
+    "桌面应用开发",
+    "跨端开发",
+    "技术选型",
+    "Flutter",
+    "Electron"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 87,
+  "wordCount": 2105,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764609239000,
+  "publishDateStr": "2025-12-01",
+  "publishDateTimeStr": "2025-12-01 17:13:59"
+}

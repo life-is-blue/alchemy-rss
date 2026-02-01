@@ -1,0 +1,58 @@
+{
+  "id": "RAW_fa669233",
+  "title": "Cloudflare 年度回顾：AI 机器人积极抓取，后量子加密达 50%，Go 份额翻倍",
+  "url": "https://www.infoq.com/news/2025/12/cloudflare-2025-ai-bots/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-31 07:38:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has recently published the sixth edition of its <a href=\"https://blog.cloudflare.com/radar-2025-year-in-review/\">Radar Year in Review</a>. The results reveal 19% yearly growth in global internet traffic, Googlebot dominance, increasing crawl-to-refer ratios, and broad adoption of post-quantum encryption. Over 20% of automated API requests were made by Go-based clients, almost doubling adoption over the previous year.</p>\n   <p>Leveraging data from the widespread Cloudflare infrastructure, including anonymized query data for traffic to the 1.1.1.1 public DNS resolver, the yearly report analyzes the disruptions, advances, and metrics that defined the Internet in 2025. The review is organized into different sections (traffic, AI, adoption &amp; usage, connectivity, security, and email security) and uses the same methodologies as previous years.</p>\n   <p>With global traffic growing 19% during the year and Google and Facebook still the most popular services, the report highlights significant growth for Starlink, up 2.3x year-over-year.</p>\n   <p>Using a Hilbert curve to visualize a sequence of IPv4 addresses in a two-dimensional pattern that keeps nearby IP addresses close together, the analysis finds that the Googlebot web crawler is the most popular. <a href=\"https://www.linkedin.com/in/dbelson/\">David Belson</a>, head of data insight at Cloudflare, writes:</p>\n   <blockquote>\n    <p>Googlebot was again responsible for the highest volume of request traffic to Cloudflare in 2025 as it crawled millions of Cloudflare customer sites for search indexing and AI training.</p>\n   </blockquote>\n   <p>Furthermore, Googlebot was responsible for over 28% of traffic from verified bots, with Google AdsBot (used to monitor sites where Google ads are served), Google Image Proxy (used to retrieve and cache images embedded in email messages), and GoogleOther further increasing the dominance of the search company. OpenAI's GPTBot and Microsoft Bingbot follow at 7.5% and 6%, respectively.</p>\n   <p>The report reveals that AI platforms are aggressively crawling content without proportionally driving traffic back to source sites, with crawl-to-refer ratios increasing over 2024. Anthropic's ratio reached as high as 500000:1 and OpenAI peaked at 3700:1. Perplexity had the lowest crawl-to-refer ratios of the major AI platforms.</p>\n   <p>Jeremy Daly, director of research at CloudZero, in his newsletter, <a href=\"https://offbynone.io/issues/348/\">summarizes</a>:</p>\n   <blockquote>\n    <p>Cloudflare's excellent annual recap of a year filled with content hungry AI bots (Googlebot alone was responsible for 4.5% of all HTML requests and \"user action\" crawling jumped 15x), over half of human web traffic becoming post-quantum encrypted, and 174 major internet outages.</p>\n   </blockquote>\n   <p>In the report, the hyperscaler acknowledges that Meta's llama-3-8b-instruct model was the <a href=\"https://developers.cloudflare.com/workers-ai/models/\">most popular</a>&nbsp;on Workers AI, its platform for running AI models directly at the network edge, with text generation being the most popular task type.</p>\n   <p>While requests using HTTP/3 and HTTP/2 both increased slightly in 2025, half of human-generated web traffic now uses post-quantum encryption, protecting against \"harvest now, decrypt later\" attacks, nearly doubling from 29% at the start of the year.</p>\n   <p><img alt=\"Post-Quantum Encryption\" data-src=\"https://www.infoq.com/news/2025/12/cloudflare-2025-ai-bots/news/2025/12/cloudflare-2025-ai-bots/en/resources/1BLOG-3077_14_-_traffic-postquantum-worldwide(1)-1766307637692.jpg\" style=\"width:100%;height:894px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/cloudflare-2025-ai-bots/en/resources/1BLOG-3077_14_-_traffic-postquantum-worldwide(1)-1766307637692.jpg\" rel=\"share\">\n    <br>\n    <em>Source: Cloudflare blog</em></p>\n   <p>As in previous years, the team used <a href=\"https://radar.cloudflare.com/scan\">Cloudflare Radar’s URL Scanner</a> to identify the most popular technologies and services across the top 5000 domains and found that JavaScript-based libraries and frameworks remained integral tools for building websites. Belson adds:</p>\n   <blockquote>\n    <p>jQuery is self-described as a fast, small, and feature-rich JavaScript library, and our scan found it on 8x as many sites as Slick, a JavaScript library used to display image carousels. React remained the top JavaScript framework used for building Web interfaces, found on twice as many scanned sites as Vue.js.</p>\n   </blockquote>\n   <p>PHP, Node.js, and Java continued to be the most commonly used programming technologies, holding a clear lead over alternatives such as Ruby, Python, Perl, and C. In a popular discussion on Hacker News, many question the relative share of ASP.NET and C#, with user <em>nic547</em> <a href=\"https://news.ycombinator.com/item?id=46305945\">writing</a>:</p>\n   <p>ASP.NET could mean a bunch of programming languages and I'm assuming that a ASP.NET Server doesn't disclose that. It's probably safe to guess mostly C#, but that requires a different metric.</p>\n   <p>Analyzing API-related requests, Cloudflare identified the <a href=\"https://radar.cloudflare.com/year-in-review/2025/#api-client-language-popularity\">top languages used to build API clients</a>: 20% of automated API requests were from Go-based clients, a significant increase from Go’s 12% share in 2024. Python, Java, and Node.js followed as the most popular technologies.</p>\n   <p><img alt=\"API ClientLlibrary Popularity\" data-src=\"https://www.infoq.com/news/2025/12/cloudflare-2025-ai-bots/news/2025/12/cloudflare-2025-ai-bots/en/resources/2BLOG-3077_36_-_image56-1766308331885.jpg\" style=\"width:100%;height:894px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/cloudflare-2025-ai-bots/en/resources/2BLOG-3077_36_-_image56-1766308331885.jpg\" rel=\"share\"></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>While practitioners tend to focus on <a href=\"https://www.infoq.com/news/2025/11/aws-dynamodb-outage-postmortem/\">cloud outages</a>, nearly half of the <a href=\"https://radar.cloudflare.com/year-in-review/2025/#internet-outages\">observed outages</a> in 2025 were due to planned shutdowns intended to \"prevent cheating on academic exams,\" with others related to protests and civil unrest, or cable cuts affecting both submarine and domestic fiber optic infrastructure.</p>\n   <p>As in previous years, the hyperscaler highlighted the increasing frequency and scale of hyper-volumetric network-layer attacks, defined as attacks that operate at Layers 3/4 and peak at more than one terabit per second or more than one billion packets per second. Chirag Goswami, founder of Cybernara, <a href=\"https://www.linkedin.com/posts/chiraggoswami23_cybersecurity-cloudflareradar-ddos-activity-7407278698510348289-WYyY\">comments</a>:</p>\n   <blockquote>\n    <p>The Internet is having a midlife crisis. Bots are the new normal. DDoS attacks broke records. And one BGP oopsie can still knock out half the web. Cloudflare’s Radar Year in Review isn’t just stats, it’s a stress test report for how fragile, fast, and bot-infested the internet really is.</p>\n   </blockquote>\n   <p>The <a href=\"https://radar.cloudflare.com/year-in-review/2025\">Cloudflare Radar 2025 Year in Review microsite</a> provides more detailed data, including trends by specific country and region.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Year in Review: AI Bots Crawl Aggressively, Post-Quantum Encryption Hits 50%, Go Doubles\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/cloudflare-2025-ai-bots/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767166680000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 的 2025 雷达年度回顾显示，互联网流量增长 19%，Googlebot 在 AI 机器人抓取中占据主导，后量子加密显著普及，且基于 Go 语言的 API 客户端份额几乎翻倍。",
+  "oneSentenceSummary": "Cloudflare 的 2025 雷达年度回顾显示，互联网流量增长 19%，Googlebot 在 AI 机器人抓取中占据主导，后量子加密显著普及，且基于 Go 语言的 API 客户端份额几乎翻倍。",
+  "summary": "Cloudflare 的 2025 雷达年度回顾报告基于其广泛的基础设施数据，揭示了关键的互联网趋势。全球互联网流量增长了 19%，其中 Googlebot 被确定为最活跃的抓取工具，负责超过 28% 的已验证机器人流量，用于搜索索引和 AI 训练。值得注意的是，Anthropic 和 OpenAI 等 AI 平台展现出极高的抓取-推荐比，表明内容被消费但却没有同等比例的流量回流到源站点。报告还显示，所有人类生成的网络流量中有一半现在使用后量子加密，其采用率同比几乎翻倍，这加强了对“先收集，后解密”攻击的防御能力。此外，基于 Go 语言的客户端份额几乎翻倍，占自动化 API 请求的 20%。本次回顾还提到了持续的互联网中断（通常是由于计划性关闭或内乱造成），以及不断升级的超大量 DDoS 攻击，这些问题共同凸显了互联网的脆弱性及其日益增长的机器人活动。",
+  "mainPoints": [
+    {
+      "point": "AI 机器人，特别是 Googlebot，正在积极抓取互联网以进行索引和 AI 训练。",
+      "explanation": "Googlebot 在 Cloudflare 的机器人流量中占据主导地位，这表明搜索和 AI 公司正在大量获取数据，导致抓取-推荐比失衡，即 AI 平台消费内容却未带来相应比例的回流流量。"
+    },
+    {
+      "point": "后量子加密在 2025 年显著加速普及，达到人类网络流量的 50%。",
+      "explanation": "PQC 使用量的快速增长反映了在保护互联网通信免受未来量子计算威胁方面取得的关键进展，有效化解了“先收集，后解密”攻击。"
+    },
+    {
+      "point": "基于 Go 语言的客户端在自动化 API 请求中的份额几乎翻倍。",
+      "explanation": "Go 客户端目前占自动化 API 请求的 20%，表明开发者在 API 开发领域对 Go 的偏好和生态系统实力日益增强，在这个特定领域超越了 Python 和 Node.js 等其他流行语言。"
+    },
+    {
+      "point": "互联网持续面临中断和不断升级、创纪录的 DDoS 攻击的挑战。",
+      "explanation": "中断通常源于非技术因素（如学术考试关闭或内乱）；同时，日益频繁和大规模的 DDoS 攻击也凸显了互联网固有的脆弱性，以及对强大安全基础设施的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "Googlebot 在 2025 年再次负责 Cloudflare 最大的请求流量，因为它为搜索索引和 AI 训练抓取了数百万个 Cloudflare 客户网站。",
+    "AI 平台正在积极抓取内容，却没有相应比例地将流量引回源站点，抓取-推荐比相较 2024 年有所增加。",
+    "一半的人类生成网络流量现在使用后量子加密，以防御“先收集，后解密”攻击，这比年初的 29% 几乎翻了一番。",
+    "20% 的自动化 API 请求是由基于 Go 语言的客户端发出的，这比 2024 年 Go 语言的 12% 份额有了显著增长。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "互联网趋势",
+    "AI 机器人",
+    "后量子加密",
+    "DDoS"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 820,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767166680000,
+  "publishDateStr": "2025-12-31",
+  "publishDateTimeStr": "2025-12-31 07:38:00"
+}

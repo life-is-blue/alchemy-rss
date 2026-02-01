@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ae19132c",
+  "title": "PyTorch Monarch 通过单一控制模型简化分布式人工智能工作流程",
+  "url": "https://www.infoq.com/news/2025/10/pytorch-monarch/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-24 15:40:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Meta’s PyTorch team has unveiled <a href=\"https://pytorch.org/blog/introducing-pytorch-monarch/\">Monarch</a>, an open-source framework designed to simplify distributed AI workflows across multiple GPUs and machines. The system introduces a single-controller model that allows one script to coordinate computation across an entire cluster, reducing the complexity of large-scale training and reinforcement learning tasks without changing how developers write standard PyTorch code.</p>\n   <p>Monarch replaces the traditional multi-controller approach, in which multiple copies of the same script run independently across machines, with a single-controller model. In this architecture, one script orchestrates everything — from spawning GPU processes to handling failures — giving developers the illusion of working locally while actually running across an entire cluster.</p>\n   <p>The PyTorch team describes it as bringing “the simplicity of single-machine PyTorch to entire clusters.” Developers can use familiar Pythonic constructs — functions, classes, loops, futures — to define distributed systems that scale seamlessly, without rewriting their logic to handle synchronization or failures manually.</p>\n   <p>At its core, Monarch introduces process meshes and actor meshes, scalable arrays of distributed resources that can be sliced and manipulated like tensors in NumPy. That means developers can broadcast tasks to multiple GPUs, split them into subgroups, or recover from node failures using intuitive Python code. Under the hood, Monarch separates control from data, allowing commands and large GPU-to-GPU transfers to move through distinct optimized channels for efficiency.</p>\n   <p><img alt=\"diagram monarch\" style=\"width:100%;height:906px;\" data-src=\"https://www.infoq.com/news/2025/10/pytorch-monarch/news/2025/10/pytorch-monarch/en/resources/2Zrzut ekranu 2025-10-24 o 17.06.36-1761319535818.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/pytorch-monarch/en/resources/2Zrzut ekranu 2025-10-24 o 17.06.36-1761319535818.png\" rel=\"share\">\n    <br>\n    <em>Source: PyTorch Blog</em></p>\n   <p>Developers can even catch exceptions from remote actors using standard Python try/except blocks, progressively layering in fault tolerance. Meanwhile, distributed tensors integrate directly with PyTorch, so large-scale computations still “feel” local even when running across thousands of GPUs.</p>\n   <p>The system’s backend is written in Rust, powered by a low-level actor framework called hyperactor, which provides scalable messaging and robust supervision across clusters. This design allows Monarch to use multicast trees and multipart messaging to distribute workloads efficiently without overloading any single host.</p>\n   <p>The release has drawn attention from practitioners in the AI community. Sai Sandeep Kantareddy, a senior applied AI engineer, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7336550313820139521/?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7336550313820139521%2C7337849043194212352%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287337849043194212352%2Curn%3Ali%3Aactivity%3A7336550313820139521%29\">wrote</a>:&nbsp;</p>\n   <blockquote>\n    <p>Monarch is a solid step toward scaling PyTorch with minimal friction. Curious how it stacks up in real-world distributed workloads—especially vs. Ray or Dask. Would love to see more on debugging support and large-scale fault tolerance. Promising start!</p>\n   </blockquote>\n   <p>Monarch is now available as an open-source project on <a href=\"https://github.com/meta-pytorch/monarch\">GitHub</a>, complete with documentation, sample notebooks, and integration guides for Lightning.ai. The framework aims to make cluster-scale orchestration as intuitive as local development, giving researchers and engineers a smoother path from prototype to massive distributed training.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"PyTorch Monarch Simplifies Distributed AI Workflows with a Single-Controller Model\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/pytorch-monarch/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761320400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 的 PyTorch Monarch 通过引入单一控制模型简化了分布式人工智能工作流程，使大规模集群训练如同本地开发般便捷。",
+  "oneSentenceSummary": "Meta 的 PyTorch Monarch 通过引入单一控制模型简化了分布式人工智能工作流程，使大规模集群训练如同本地开发般便捷。",
+  "summary": "PyTorch Monarch 是 Meta 推出的一个新的开源框架，旨在简化跨多个 GPU 和机器的分布式人工智能工作流程。它用单一控制模型取代了传统的多控制器设置，允许一个 Python 脚本协调整个集群，包括进程启动和故障处理。这旨在使大型集群也能拥有单机 PyTorch 的简单易用性，使开发人员能够使用熟悉的 Python 结构进行可扩展的分布式系统，而无需手动同步。主要功能包括用于管理分布式资源的“进程网格（一种组织和管理分布式进程的结构）”和“Actor 网格（一种用于管理 Actor 的分布式网络）”，将控制与数据分离以提高效率，以及基于 Rust 的 `Hyperactor` 后端，用于实现强大的消息传递。它还支持标准的 Python 异常处理来实现容错。Monarch 在 GitHub 上提供，其中包含文档和集成指南，有望降低扩展 PyTorch 应用程序的难度。",
+  "mainPoints": [
+    {
+      "point": "Monarch 的单一控制模型显著简化了分布式人工智能工作流程。",
+      "explanation": "通过取代复杂的多控制器设置，Monarch 允许单个 Python 脚本协调整个集群，从而使大规模训练像本地开发一样直观。"
+    },
+    {
+      "point": "它引入了进程网格和 Actor 网格，用于直观的、类似 NumPy 的资源管理。",
+      "explanation": "这些可扩展的阵列使开发人员可以使用 Python 风格的结构轻松广播任务、拆分子组并从故障中恢复，从而抽象出分布式复杂性。"
+    },
+    {
+      "point": "该框架专为效率和容错而构建，具有 Rust 驱动的后端。",
+      "explanation": "Monarch 分离了控制和数据以优化通信，并利用 `Hyperactor` 框架来实现强大的消息传递和监督，从而支持标准的 Python 错误处理。"
+    }
+  ],
+  "keyQuotes": [
+    "该系统引入了一个单一控制模型，该模型允许一个脚本协调整个集群的计算，从而降低了大规模训练和强化学习任务的复杂性，而无需更改开发人员编写标准 PyTorch 代码的方式。",
+    "PyTorch 团队将其描述为，旨在将“单机 PyTorch 的简单性带到整个集群”。",
+    "Monarch 的核心是引入了进程网格和 Actor 网格，即可扩展的分布式资源阵列，可以像 NumPy 中的张量一样进行切片和操作。",
+    "开发人员甚至可以使用标准的 Python try/except 块从远程 Actor 捕获异常，从而逐步分层实现容错。",
+    "Monarch 是朝着以最小的摩擦扩展 PyTorch 迈出的坚实一步。很好奇它在实际分布式工作负载中的表现如何---特别是与 Ray 或 Dask 相比。希望看到更多关于调试支持和大规模容错的信息。有希望的开始！"
+  ],
+  "tags": [
+    "分布式人工智能",
+    "PyTorch Monarch",
+    "人工智能框架",
+    "可扩展系统",
+    "GPU计算"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 408,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761320400000,
+  "publishDateStr": "2025-10-24",
+  "publishDateTimeStr": "2025-10-24 15:40:00"
+}

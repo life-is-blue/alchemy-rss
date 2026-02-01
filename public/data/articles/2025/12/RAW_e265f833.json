@@ -1,0 +1,55 @@
+{
+  "id": "RAW_e265f833",
+  "title": "智谱 IPO 敲钟前，连夜把开源编程大模型 SOTA 了",
+  "url": "https://www.qbitai.com/2025/12/364823.html",
+  "date": "2025-12-23 00:28:29",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>鱼羊 henry 发自 麦蒿寺\n    <br>\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>2025倒计时，新SOTA模型涌现没有放缓迹象。</p>\n  <p>一夜之间，编程SOTA模型易主，而且上线即开源，依然来自中国大模型公司——</p>\n  <p>智谱AI，GLM-4.7。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_e54a0f23c639a235556bd3c4562da8d0.webp\"></p>\n  <p>这波更新，技术报告里满眼都是<b>Coding</b>，<b>Coding</b>，还是<b>Coding</b>。</p>\n  <p>而能力的提升，带来的最直观效果是：</p>\n  <p>AIME 25和人类最后考试（HLE）等基准中，GLM-4.7分数超GPT-5.1；</p>\n  <p>SWE-Bench分数达（73.8%，+5.8%），创开源新高。</p>\n  <p>官方Demo显示，写个植物大战僵尸不费劲：</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045300_eea2aa3ae1afe2e7fbb73042cbc91f0d.gif\"></p>\n  <p>总而言之，模型这么一发，双旦的节庆氛围一下到位了（doge）。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_5f4ad909da26ae5804766c11d18de218.png\"></p>\n  <p>官网Chatbot和API均已就为，现在就能在线开玩。</p>\n  <h2>Demo来吧，展示</h2>\n  <p>在前端生成质量上，GLM-4.7展现出明显升级：页面结构更干净、组件层级更清晰。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_53a92ff6fcabb2c98ab8c8abdc863b46.gif\"></p>\n  <p>相比GLM-4.6，更像是现代的Web UI，网友元素中更加美观。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_eeebe93471108dfea5669e73119ef141.gif\"></p>\n  <p>在PPT与视觉物料生成方面，GLM-4.7标题层级明确、元素尺寸更合理。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_21f8199cd5031a16939005a0dac50ad9.gif\"></p>\n  <p>在复杂几何结构与空间关系的表达上，GLM-4.7模型能够保持较好的结构一致性与细节稳定性。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_fa7511215570e837f0c5e745d6ede6b3.gif\"></p>\n  <p>3D资产的生成质量也有显著提升。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_397bd1e27ca5eca68715dff56fee085a.gif\"></p>\n  <p>这次最新的模型主打编程，相较前代GLM-4.6，GLM-4.7在编码能力、交互体验与复杂推理等多个维度实现了系统性升级。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_0a76a1f3eb56b888f22ab553d8e37f4e.png\"></p>\n  <ul>\n   <li>复杂推理能力（Reasoning）：全面提升，HLE（含工具）42.8（+12.4 vs GLM-4.6），MMUL-Pro 84.3，GPQA-Diamond 85.7，数学与推理能力更稳更强。</li>\n   <li>核心编码能力（Code Agent）：多语言与终端任务显著增强，SWE-bench Verified 73.8（+5.8）、SWE-bench Multilingual 66.7（+12.9）、Terminal Bench 2.0 41.0（+16.5），支持“先思考、再行动”模式。</li>\n   <li>工具使用能力（General Agent）：工具调用更高效，BrowseComp 52.0（+6.9）、BrowseComp w/ Context Management 67.5（+10.0）、τ²-Bench 87.4（+12.2），网页浏览与工具链管理表现更优。</li>\n  </ul>\n  <p>此外，GLM-4.7在对话、创意写作、角色扮演等场景中同样有提升，系统性增强了编码、推理与工具使用能力。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045300_ace959a9637da3cd20e64ba20a9a9621.png\"></p>\n  <h2>交错式思考和保留式思考</h2>\n  <p>技术方面，GLM-4.7强化了自GLM-4.5起引入的<b>交错式思考</b>（Interleaved Thinking），并进一步引入了<b>保留式思考</b>（Preserved thinking）和<b>轮级思考</b>（Turn-level Thinking）。</p>\n  <h2>交错式思考</h2>\n  <p>GLM在工具调用之间、收到工具结果之后继续思考。</p>\n  <p>这让模型能够进行更复杂的分布推理，提升了指令遵从和生成质量：</p>\n  <p>在决定下一步行动前先解读每次的工具输出，把多次工具调用和推理步骤串联起来，并根据中间结果做出更细粒度的决策。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_26ab798aa6e77f50c464fa29c2f9f445.png\"></p>\n  <h2>保留式思考</h2>\n  <p>在编码场景中，GLM-4.7引入了一种新的思考模式：</p>\n  <p>模型会自动在多回合对话中保留所有思考快，复用已有推理而不是从头重新推理。这减少了信息丢失和不一致性，使得模型更适用于<b>长程、复杂任务</b>。还能在真实任务中节省更多tokens。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_0dd89d37e8144f6a346234f258357799.png\"></p>\n  <h2>轮级思考</h2>\n  <p>轮级思考是一种按轮控制推理计算的能力，即在同一个会话中，每一轮请求都可以独立选择开启/关闭思考。</p>\n  <p>这使得GLM-4.7具备以下优势：</p>\n  <ul>\n   <li>更灵活的成本/时延控制：对“问个事实/改个措辞”等轻量轮次可关闭思考，追求快速响应；对“复杂规划/多约束推理/代码调试”等重任务轮次可开启思考，提升正确率与稳定性。</li>\n   <li>更顺滑的多轮体验：思考开关在会话内可随时切换，模型能在不同轮次间保持对话连贯与输出风格一致，让用户感觉“聪明时更聪明、简单时更快”。</li>\n   <li>更适合Agent/工具调用场景：在需要快速执行的工具轮次可降低推理开销，在需要综合工具结果做决策的轮次再开启深度思考，实现效率与质量的动态平衡。</li>\n   <li></li>\n  </ul>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_819eb3e987f6fc0c07b4d0af416a8586.jpeg\"></p>\n  <p>更多技术详情，智谱官方也附上了详细技术报告。</p>\n  <p>BTW，智谱这个月还真上了“节日限定优惠”。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_daa4880bce75272ca0cc8ed9c2f77d5f.png\"></p>\n  <p>每月最低20元即可畅享GLM-4.7，用上Claude Pro套餐3倍用量。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045259_130b5fd296be81850e7de690d70f2392.png\"></p>\n  <p>又是一位好价格屠夫呀。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20251224045300_9593ee79cd9e1e756b291ae01430b725.jpeg\"></p>\n  <p>而且GLM-4.7的深夜炸场，也算是已经冲刺IPO上市的智谱，带来的最新技术证明。</p>\n  <p>目前智谱已经通过了港交所上市聆讯，IPO敲钟仅剩下最后100米。</p>\n  <p>而GLM-4.7可能也是智谱上市之前，最重要的模型更新了……吧？</p>\n  <p>参考链接：</p>\n  <p>[1]https://z.ai/blog/glm-4.7</p>\n  <p>[2]https://x.com/Zai_org/status/2003156119087382683</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "智谱 AI 发布开源编程大模型 GLM-4.7，在编码能力上超越 GPT-5.1，并在 SWE-Bench 上创开源新高，同时引入“交错式思考”、“保留式思考”和“轮级思考”等创新技术。",
+  "oneSentenceSummary": "智谱 AI 发布开源编程大模型 GLM-4.7，在编码能力上超越 GPT-5.1，并在 SWE-Bench 上创开源新高，同时引入“交错式思考”、“保留式思考”和“轮级思考”等创新技术。",
+  "summary": "文章详细介绍了智谱 AI 最新发布的开源编程大模型 GLM-4.7。该模型在 AIME、HLE 等基准测试中得分超过 GPT-5.1，SWE-Bench 分数创开源新高，尤其在编码能力、交互体验和复杂推理方面实现系统性升级。文章通过多个 Demo 展示了 GLM-4.7 在前端生成、PPT 及视觉物料生成、复杂几何结构表达和 3D 资产生成方面的显著提升。技术上，GLM-4.7 在原有“交错式思考”基础上，进一步引入“保留式思考”和“轮级思考”，优化了长程任务处理和成本/时延控制。文章还提及智谱 AI 已通过港交所上市聆讯，GLM-4.7 的发布是其上市前的重要技术证明，并提供了优惠套餐信息。",
+  "mainPoints": [
+    {
+      "point": "GLM-4.7 在编程能力上取得 SOTA 表现，超越 GPT-5.1，并在 SWE-Bench 上创开源新高。",
+      "explanation": "模型在多个权威基准测试中展现出卓越的编码能力和复杂推理能力，标志着在代码生成和问题解决方面的重大突破，对开发者提供了更强大的工具。"
+    },
+    {
+      "point": "引入“保留式思考”和“轮级思考”等新机制，优化了长程复杂任务处理和资源效率。",
+      "explanation": "这些创新思考模式使得模型能更好地在多回合对话中复用推理，减少信息丢失，并能灵活控制推理深度，在保证准确性的同时兼顾效率和成本。"
+    },
+    {
+      "point": "GLM-4.7 在前端生成、视觉物料生成及 3D 资产生成等领域展现增强能力，提升多模态应用潜力。",
+      "explanation": "文章通过具体 Demo 展示了模型不仅限于代码，还在 UI、PPT 和 3D 内容创作方面有显著提升，预示其在 AIGC 应用上的广泛前景。"
+    }
+  ],
+  "keyQuotes": [
+    "一夜之间，编程 SOTA 模型易主，而且上线即开源，依然来自中国大模型公司------智谱 AI，GLM-4.7。",
+    "SWE-Bench 分数达（73.8%，+5.8%），创开源新高。",
+    "GLM-4.7 强化了自 GLM-4.5 起引入的交错式思考，并进一步引入了保留式思考和轮级思考。",
+    "保留式思考：模型会自动在多回合对话中保留所有思考快，复用已有推理而不是从头重新推理。这减少了信息丢失和不一致性，使得模型更适用于长程、复杂任务。",
+    "GLM-4.7 可能也是智谱上市之前，最重要的模型更新了......吧？"
+  ],
+  "tags": [
+    "大语言模型",
+    "编程 AI",
+    "智谱 AI",
+    "GLM-4.7",
+    "开源模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1622,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766449709000,
+  "publishDateStr": "2025-12-23",
+  "publishDateTimeStr": "2025-12-23 00:28:29"
+}

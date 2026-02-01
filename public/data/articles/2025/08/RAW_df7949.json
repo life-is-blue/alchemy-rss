@@ -1,0 +1,54 @@
+{
+  "id": "RAW_df7949",
+  "title": "利用 Claude 代码实现自动化安全审查",
+  "url": "https://www.anthropic.com/news/automate-security-reviews-with-claude-code",
+  "date": "2025-08-05 16:00:00",
+  "author": "Anthropic News",
+  "siteName": "Anthropic News",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Today we're introducing automated security reviews in Claude Code. Using our GitHub Actions integration and a new /security-review command, developers can easily ask Claude to identify security concerns—and then have it fix them.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"Video_post-wrapper__uy5Rq\">\n    <div class=\"Video_post-video-container__oACj_\">\n     <!--$!-->\n     <template data-dgst=\"BAILOUT_TO_CLIENT_SIDE_RENDERING\"></template><!--/$-->\n    </div>\n   </figure>\n  </div>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">As developers increasingly rely on AI to ship faster and build more complex systems, ensuring code security becomes even more critical. These new features let you integrate security reviews into your existing workflows, helping you catch vulnerabilities before they reach production.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"review-code-for-vulnerabilities-from-your-terminal\">Review code for vulnerabilities from your terminal</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The new /security-review command lets you run ad-hoc security analyses from your terminal before committing code. Run the command in Claude Code, and Claude will search your codebase for potential vulnerabilities and provide detailed explanations of any issues found.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">This command uses a specialized security-focused prompt that checks for common vulnerability patterns including:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>SQL injection risks</li>\n   <li>Cross-site scripting (XSS) vulnerabilities</li>\n   <li>Authentication and authorization flaws</li>\n   <li>Insecure data handling</li>\n   <li>Dependency vulnerabilities</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">You can also ask Claude Code to implement fixes for each issue after they’re identified. This keeps security reviews in your inner development loop, catching issues early when they're easiest to fix.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"automate-security-reviews-for-new-pull-requests\">Automate security reviews for new pull requests</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The new GitHub action for Claude Code takes security reviews a step further by automatically analyzing every pull request when it's opened. When configured, the action:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>Triggers automatically on new pull requests</li>\n   <li>Reviews code changes for security vulnerabilities</li>\n   <li>Applies customizable rules to filter out false-positives and known issues</li>\n   <li>Posts comments inline on the PR with any concerns found, including recommendations for fixes</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">This creates a consistent security review process across your entire team, ensuring no code reaches production without a baseline security review. The action integrates with your existing CI/CD pipeline and can be customized to match your team's security policies.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"ImageWithCaption_e-imageWithCaption__8C2mY ImageWithCaption_inline-image__B15e_\">\n    <img alt=\"2 screenshots showing vulnerabilities that were caught by Claude Code, leaving comments in GitHub.\" loading=\"lazy\" width=\"1920\" height=\"1080\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/37aa77df52f1a4e8d81f398f48dbb98a5ba1d5ec-1920x1080.png, https://www-cdn.anthropic.com/images/4zrzovbb/website/37aa77df52f1a4e8d81f398f48dbb98a5ba1d5ec-1920x1080.png\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/37aa77df52f1a4e8d81f398f48dbb98a5ba1d5ec-1920x1080.png\">\n   </figure>\n  </div>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"improving-product-security-at-anthropic\">Improving product security at Anthropic</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">We're using these features ourselves to help secure the code our team ships to production, including Claude Code itself. Since setting up the GitHub action, this has already caught security vulnerabilities in our own code and prevented them from being shipped.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">For example, last week, our team built a new feature for an internal tool that relied on starting a local HTTP server meant to accept local connections. The GitHub action identified a remote code execution vulnerability exploitable through DNS rebinding and it was fixed before the PR was ever merged.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"ImageWithCaption_e-imageWithCaption__8C2mY ImageWithCaption_inline-image__B15e_\">\n    <img alt=\"A GitHub comment showing a remote code execution vulnerability\" loading=\"lazy\" width=\"1920\" height=\"1080\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/a370dba2f6e5095cdbcb23ef878dda4befd61d95-1920x1080.png, https://www-cdn.anthropic.com/images/4zrzovbb/website/a370dba2f6e5095cdbcb23ef878dda4befd61d95-1920x1080.png\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/a370dba2f6e5095cdbcb23ef878dda4befd61d95-1920x1080.png\">\n   </figure>\n  </div>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">In another case, an engineer built a proxy system to enable secure management of internal credentials. The GitHub action automatically flagged that this proxy was vulnerable to SSRF attacks, and we promptly fixed this issue.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"ImageWithCaption_e-imageWithCaption__8C2mY ImageWithCaption_inline-image__B15e_\">\n    <img alt=\"A GitHub comment showing a SSRF attack vulnerability\" loading=\"lazy\" width=\"1920\" height=\"1080\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/23dd3b5404c6f7dc812df83a7de95babab286865-1920x1080.png, https://www-cdn.anthropic.com/images/4zrzovbb/website/23dd3b5404c6f7dc812df83a7de95babab286865-1920x1080.png\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/23dd3b5404c6f7dc812df83a7de95babab286865-1920x1080.png\">\n   </figure>\n  </div>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"getting-started\">Getting started</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Both features are available now for all Claude Code users. To start using automated security reviews:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li><strong>For the /security-review command</strong>: Simply update Claude Code to the latest version and run /security-review in your project directory. <a href=\"https://github.com/anthropics/claude-code-security-review/tree/main?tab=readme-ov-file#security-review-slash-command\">See the documentation</a> to customize your own version of the command</li>\n   <li><strong>For the GitHub action</strong>: <a href=\"https://github.com/anthropics/claude-code-security-review\">See the documentation</a> for step-by-step installation and configuration instructions</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Anthropic 推出 Claude 代码新功能，实现自动化安全审查。新功能通过终端命令和 GitHub Actions 增强开发者工作流。",
+  "oneSentenceSummary": "Anthropic 推出 Claude 代码新功能，实现自动化安全审查。新功能通过终端命令和 GitHub Actions 增强开发者工作流。",
+  "summary": "Anthropic 的 Claude 代码迎来新功能：自动化安全审查，助力开发者在开发早期发现并修复漏洞。新功能包括 `/security-review` 命令，可在终端进行临时代码分析，检查 SQL 注入、XSS、身份验证缺陷等常见安全问题，并提供修复建议。此外，新增 GitHub Action 自动化 pull request 安全审查，无缝集成 CI/CD 流水线，应用自定义规则，并以内联评论形式提供漏洞详情和修复建议。Anthropic 内部已使用这些功能，成功捕获远程代码执行 (RCE) 和服务器端请求伪造 (SSRF) 等关键漏洞，避免了部署风险。文章强调在 AI 加速开发的大背景下，尽早集成安全至关重要，并提供详细文档链接方便用户上手。",
+  "mainPoints": [
+    {
+      "point": "Claude 代码现在提供临时的 `/security-review` 命令，用于立即进行漏洞检查。",
+      "explanation": "开发者可直接在终端运行快速安全分析，识别 SQL 注入和 XSS 等常见缺陷，并接收建议的修复方案，从而能够及早解决问题。"
+    },
+    {
+      "point": "新的 GitHub Action 自动化所有 pull request 的安全审查，并集成到 CI/CD 中。",
+      "explanation": "此举实现了安全门禁自动化，审查代码变更，应用自定义规则，并提供内联反馈，确保整个团队采用一致的基线安全流程。"
+    },
+    {
+      "point": "这些新功能已被证明在 Anthropic 内部有效地捕获关键漏洞。",
+      "explanation": "通过 DNS 重绑定防御 RCE 和 SSRF 攻击等真实案例，证明了 Claude 代码自动化安全功能的实际价值和有效性。"
+    }
+  ],
+  "keyQuotes": [
+    "随着开发者日益依赖 AI 加速开发和构建复杂系统，确保代码安全变得至关重要。",
+    "这让安全审查融入内部开发循环，在问题易于修复时及早发现。",
+    "这将在您的整个团队中创建一个一致的安全审查流程，确保没有代码在没有基线安全审查的情况下进入生产环境。",
+    "自从部署 GitHub Action 以来，它已捕获我们代码中的安全漏洞，并防止其发布。"
+  ],
+  "tags": [
+    "软件安全",
+    "AI 开发工具",
+    "GitHub Actions",
+    "漏洞检测",
+    "CI/CD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 482,
+  "domain": "anthropic.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8b9413",
+  "sourceName": "Anthropic News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1754409600000,
+  "publishDateStr": "2025-08-05",
+  "publishDateTimeStr": "2025-08-05 16:00:00"
+}

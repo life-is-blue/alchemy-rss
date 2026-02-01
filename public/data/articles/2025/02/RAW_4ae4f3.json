@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4ae4f3",
+  "title": "推理模型新路线开源！与 DeepSeek 截然不同，抛弃思维链不用人类语言思考",
+  "url": "https://www.qbitai.com/2025/02/252645.html",
+  "date": "2025-02-11 07:18:51",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"30\">梦晨 发自 凹非寺<br class=\"sysbr\">\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">开源推理大模型新架构来了，采用<strong>与Deepseek-R1/OpenAI o1截然不同的路线</strong>：</p>\n  <p data-track=\"3\">抛弃长思维链和人类的语言，直接<strong>在连续的高维潜空间用隐藏状态推理</strong>，可自适应地花费更多计算来思考更长时间。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b5b6bc7-92ce-406e-d60a-5862d3e09900/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b5b6bc7-92ce-406e-d60a-5862d3e09900/public\">\n  </div>\n  <p data-track=\"4\">例如问题：Claire每天早餐都会做一个3个鸡蛋的煎蛋卷。她在4周内会吃多少个鸡蛋？</p>\n  <p data-track=\"5\">从新模型Huginn的思考轨迹可视化中，可以看到对数字3等重要token不断旋转，最终收敛到正确答案对应的位置，但在不关键的人物名字Cla-ire上没有这个现象。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c8c62c64-e213-4102-ec77-1430c70fe700/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c8c62c64-e213-4102-ec77-1430c70fe700/public\">\n  </div>\n  <p data-track=\"6\">除旋转之外还能观察到更多丰富的几何模式，研究团队认为这表明<strong>该模型正在独立学习利用潜空间的高维性质以新的方式做推理</strong>。</p>\n  <p data-track=\"7\">由于不使用长思维链推理范式，新方法还有几个额外优势：</p>\n  <ul>\n   <li data-track=\"8\">不需要任何专门的训练数据</li>\n   <li data-track=\"9\">可以在很小的上下文窗口下工作</li>\n   <li data-track=\"10\">能捕捉到难以用语言表达的推理类型</li>\n  </ul>\n  <p data-track=\"11\">研究来自马克思普朗克研究所、马里兰大学等团队，他们使用美国橡树岭实验室的Frontier超算完成训练实验，用到8个AMD GPU节点（4096块GPU），没有使用英伟达体系。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9dab359b-4913-4205-87c4-355f2aa69800/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9dab359b-4913-4205-87c4-355f2aa69800/public\">\n  </div>\n  <p data-track=\"13\">新架构仍然围绕Decoder-only的Transformer block构建，但分为三段：</p>\n  <ul>\n   <li data-track=\"14\"><strong>Prelude（前奏）：</strong>使用多个transformer层将输入数据嵌入到潜空间中</li>\n   <li data-track=\"15\"><strong>Recurrent Block（循环块）：</strong>循环计算单元，在潜在空间中修改状态</li>\n   <li data-track=\"16\"><strong>Coda（尾声）：</strong>从潜空间解码，并包含模型的预测头</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5145a29-9c90-4451-1522-46b4d5e51100/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5145a29-9c90-4451-1522-46b4d5e51100/public\">\n  </div>\n  <p data-track=\"17\">在训练期间为每个输入序列分配随机数量的迭代次数。同时为了在训练时保持较低的计算和内存，只反向传播循环单元的最后k次迭代。</p>\n  <p data-track=\"18\">研究中可视化了模型在潜在空间中的推理轨迹，发现了这些有趣现象：</p>\n  <ul>\n   <li data-track=\"19\">对一些简单token，模型的隐状态会快速收敛到稳定点</li>\n   <li data-track=\"20\">但对一些关键token，如数学问题中的数字”3”，隐状态会形成复杂的圆形轨道</li>\n   <li data-track=\"21\">还有一些token的隐状态会沿特定方向”滑动”，可能用于计数循环次数</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5231c799-2bcb-4117-ae18-8704f00c9700/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5231c799-2bcb-4117-ae18-8704f00c9700/public\">\n  </div>\n  <p data-track=\"22\">论文一作<strong>Jonas Geiping</strong>透露，他们的算力只够一次大规模训练，也就是最后发布的3.5B参数的Huginn模型，在800B tokens数据上预训练。</p>\n  <p data-track=\"23\">没有post/mid-training过程，但可以与7B参数、在2-3T tokens数据上训练的开源模型能力相匹配。</p>\n  <p data-track=\"24\">另外算上循环模块中的计算，3.5B参数的模型训练时的计算量相当于传统的32B模型。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6250af40-2491-4b31-0772-15770ffa8a00/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6250af40-2491-4b31-0772-15770ffa8a00/public\">\n  </div>\n  <p data-track=\"25\">有人猜测OpenAI o3使用了类似的方法，通过循环来达到近似无限上下文，并且控制高中低三种推理时间设置。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7187f838-cf7e-4a53-3c96-d5e6a8dde000/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7187f838-cf7e-4a53-3c96-d5e6a8dde000/public\">\n  </div>\n  <p data-track=\"26\">有OpenAI研究员已经注意到这个工作，把论文读完了还在线捉bug。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6b7f8708-e260-412d-7835-5fee63bfa900/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6b7f8708-e260-412d-7835-5fee63bfa900/public\">\n  </div>\n  <p data-track=\"27\">也已经有人准备根据DeepSeek-R1开源的方法尝试新思路，同时保留潜空间思考的推理能力，和CoT思考的可读性。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/068eadaf-d001-4132-995d-616b40f29800/public\" alt=\"推理模型新路线开源！与DeepSeek截然不同，抛弃思维链不用人类语言思考\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/068eadaf-d001-4132-995d-616b40f29800/public\">\n  </div>\n  <p data-track=\"28\">论文：<br class=\"sysbr\">\n    https://arxiv.org/abs/2502.05171<br>\n    模型：<br class=\"sysbr\">\n    https://huggingface.co/tomg-group-umd/huginn-0125<br>\n    代码：<br class=\"sysbr\">\n    https://github.com/seal-rg/recurrent-pretraining</p>\n  <p data-track=\"29\">参考链接：<br class=\"sysbr\">\n    [1]https://x.com/tomgoldsteincs/status/1888980680790393085<br>\n    [2]https://x.com/jonasgeiping/status/1888985929727037514</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Huginn 模型开源，采用高维潜空间推理，无需思维链和人类语言，计算量小且性能媲美 7B 参数模型。",
+  "oneSentenceSummary": "Huginn 模型开源，采用高维潜空间推理，无需思维链和人类语言，计算量小且性能媲美 7B 参数模型。",
+  "summary": "文章介绍了由马克思普朗克研究所、马里兰大学等团队开源的新推理模型 Huginn。该模型采用与 DeepSeek-R1 等不同的架构，抛弃了长思维链和人类语言，直接在连续的高维潜空间进行推理，具有更强的泛化能力和更低的训练成本。通过循环计算单元在潜在空间中修改状态，实现自适应的计算时间分配。实验结果表明，该模型能在小上下文窗口下工作，捕捉难以用语言表达的推理类型，并且无需专门的训练数据。值得一提的是，该模型在 AMD GPU 上完成训练。尽管只有 3.5B 参数，但由于循环模块的计算，训练时的计算量相当于传统的 32B 模型，且性能可与 7B 参数模型相匹配。研究团队还可视化了模型在潜在空间中的推理轨迹，发现了一些有趣的几何模式，表明模型正在独立学习利用潜空间的高维性质进行推理。",
+  "mainPoints": [
+    {
+      "point": "Huginn 模型采用高维潜空间推理，无需思维链",
+      "explanation": "该模型不依赖人类语言和长思维链，直接在连续的潜空间中进行推理，减少了对大量训练数据的需求。"
+    },
+    {
+      "point": "循环块结构使模型能自适应地分配计算资源",
+      "explanation": "通过循环计算单元在潜在空间中修改状态，模型可以根据问题复杂度自适应地花费更多计算时间。"
+    },
+    {
+      "point": "Huginn 模型在计算效率上表现出色，3.5B 参数的模型训练量相当于传统 32B 模型，性能媲美 7B 参数模型",
+      "explanation": "循环模块的引入使得 Huginn 模型在参数效率和性能上都具有显著优势。"
+    }
+  ],
+  "keyQuotes": [
+    "该模型正在独立学习利用潜空间的高维性质以新的方式做推理。",
+    "不需要任何专门的训练数据",
+    "可以在很小的上下文窗口下工作",
+    "能捕捉到难以用语言表达的推理类型"
+  ],
+  "tags": [
+    "推理模型",
+    "AI 模型",
+    "潜空间推理",
+    "Huginn",
+    "Transformer"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1109,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739258331000,
+  "publishDateStr": "2025-02-11",
+  "publishDateTimeStr": "2025-02-11 07:18:51"
+}

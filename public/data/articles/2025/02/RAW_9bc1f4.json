@@ -1,0 +1,46 @@
+{
+  "id": "RAW_9bc1f4",
+  "title": "ICLR 2025 | Diffusion Planner: 基于扩散模型的自动驾驶规划算法，nuPlan SOTA!",
+  "url": "https://www.jiqizhixin.com/articles/2025-02-10-3",
+  "date": "2025-02-10 03:01:00",
+  "author": "新闻助手",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/3854675b-8aa1-4c79-a91d-ffcf785b8872/1739155574404.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>本文介绍了清华大学联合毫末智行、自动化所、港中文、上海交大、上海人工智能实验室的发表于<strong>ICLR 2025</strong>的最新研究成果《Diffusion-based Planning for Autonomous Driving with Flexible Guidance》。该算法创新性地设计了<strong>基于 Diffusion Transformer 的自动驾驶规划模型架构</strong>，高效处理复杂场景输入，并联合建模周车运动预测与自车规划中的多模态驾驶行为，充分发挥扩散模型在闭环规划中的潜力，解决了现有基于学习的规划方法对后处理的严重依赖问题。此外，借助<strong>扩散模型的引导机制</strong>，模型在部署阶段能够灵活适应不同的驾驶需求，提高泛化能力与实用性。</p>\n  <p>论文链接：https://arxiv.org/pdf/2501.15564</p>\n  <p>项目主页：https://zhengyinan-air.github.io/Diffusion-Planner/</p>\n  <h3><strong>背景介绍</strong></h3>\n  <p><strong>自动驾驶规划</strong>正朝着更安全、高效的方向发展，但在复杂环境下实现类人驾驶仍具挑战。基于规则的方法虽在工业应用中取得成功，但适应性差，调整成本高；模仿学习能直接学习专家驾驶行为，并随训练数据扩展提升性能。然而，模仿学习方法在多模态行为适应性、泛化能力和驾驶风格灵活调控上仍存挑战，依赖后处理来优化模型输出。</p>\n  <p>近年来，<strong>扩散模型</strong>在决策领域得到广泛应用，但在自动驾驶规划中的探索仍有限。现有研究多聚焦于运动预测和场景生成，关注开环性能，而非闭环规划。一些方法尝试将扩散模型应用于规划任务，但仅仅是沿用现有结构或扩展模型参数，缺乏针对性结构设计，导致仍然高度依赖后处理。</p>\n  <p>为此，我们提出了<strong>Diffusion Planner</strong>，一种创新的<strong>基于扩散模型的自动驾驶规划方法</strong>。通过扩散模型强大的数据分布拟合能力，Diffusion Planner能够精准捕捉复杂场景中周车与自车的多模态驾驶行为，并实现周车预测与自车规划的联合建模。同时，基于Transformer的结构设计高效处理复杂场景输入，实现20Hz的高速实时推理。此外，借助灵活的引导机制，模型在部署阶段即可适应不同的驾驶需求。在大规模真实数据集 nuPlan 的闭环评估中，<strong>Diffusion Planner取得了SOTA级表现，⼤幅降低了对后处理的依赖</strong>，并在额外收集的 200 小时物流小车数据上验证了其在多种驾驶风格下的鲁棒性和迁移能力。</p>\n  <h3><strong>Diffusion Planner 技术细节</strong></h3>\n  <p><strong>Diffusion Planner专为自动驾驶闭环规划设计</strong>，具备以下特点：</p>\n  <p>- 基于DiT架构融合加噪轨迹与条件信息，推理速度可达20Hz；</p>\n  <p>- 联合建模自车与周车的未来轨迹，将运动预测与闭环规划统一为未来轨迹生成；</p>\n  <p>- 采用扩散模型的引导机制，实现具有偏好的轨迹生成。</p>\n  <h4>模型结构设计</h4>\n  <p>在自动驾驶中，自车与周围车辆之间的紧密互动使得规划与预测任务必须高度协同。为了应对复杂的交通场景，准确预测邻近车辆的未来轨迹至关重要。这不仅提升了闭环规划模型的能力，还能增强系统的安全性和可控性。我们通过<strong>联合建模关键参与者的状态，将运动预测与闭环规划任务统一为一个未来轨迹生成任务</strong>。我们希望模型能够同时生成所有关键参与者的未来轨迹，从而实现更加自然的协同行为。</p>\n  <p>然而，多车交互的复杂场景会产生更加多样的驾驶行为，增加了训练的难度。为此，我们<strong>采用了扩散模型的框架进行训练，并基于Diffusion Transformer设计了针对自动驾驶规划的结构</strong>。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/f41dbf80-34b4-4f7e-8da4-282569517a93/1739155704698.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>具体而言，我们考虑了周围车辆的历史信息、道路信息和静态障碍物，设计了简洁的编码器结构用于信息提取，并通过交叉注意力机制与加噪后的自车和周车轨迹进行信息交互。此外，我们还引入了额外的导航信息以及扩散模型特有的加噪步数信息。为了避免模型重复自车历史行为导致闭环性能下降，我们仅考虑自车当前时刻的位置和朝向，并与周车的当前状态一起拼接到加噪轨迹中。通过这种方式，起始状态的引导还能进一步降低模型对未来轨迹生成的难度。</p>\n  <h4>有偏好轨迹生成</h4>\n  <p>基于扩散模型的引导机制，我们可以在模型的测试阶段引入安全，舒适等偏好，同时也可以根据用户需求灵活的改变模型输出的轨迹特性，例如速度特性。此外，不同的偏好可以通过加权求和轻松组合，并且在部署阶段可以灵活选择是否启用，提供更大的灵活性。</p>\n  <h3><img src=\"https://image.jiqizhixin.com/uploads/editor/9e1e76fb-b889-45b2-8306-ca6c382670d1/1739155979541.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\">实验结果</h3>\n  <h4>nuPlan闭环仿真</h4>\n  <p>下图展示了Diffusion Planner与其他自动驾驶规划算法在nuPlan数据集上的表现对比。我们在三个常用测试基准上进行了比较，结果显示<strong>Diffusion Planner达到了SOTA性能水平</strong>。通过引入现有的后处理模块，算法性能得到了进一步提升，这得益于模型生成的高质量轨迹，为后处理模块提供了更优的初始化参考轨迹。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/bf592fb3-c8b0-4a4f-8a10-6b348dfbb133/1739156027291.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>此外，我们还对比了现有基于扩散模型的自动驾驶规划算法。与现有方法相比，Diffusion Planner <strong>有效降低了对后处理的依赖，同时实现了更高的推理频率</strong>，进一步验证了我们设计结构的有效性。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/0af0bd45-2b09-4436-9dbe-6e2f41a12f7b/1739156047241.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p><br></p>\n  <h4>轨迹生成可视化</h4>\n  <p>为了进一步展示Diffusion Planner在轨迹生成方面的优势，我们选择了狭窄路段的左转场景，并与现有方法的无后处理版本进行了对比，如下图所示。Diffusion Planner生成了高质量的轨迹，<strong>不仅准确预测了周围车辆的行为，还生成了平滑的自车规划轨迹</strong>，合理地考虑了前车的速度，充分体现了预测与规划任务联合建模以及扩散模型生成的优势。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/3424a56d-2972-4ce4-92ba-78c30ac17bae/1739156054383.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <h4>毫末智行物流小车数据集</h4>\n  <p>我们使用毫末智行收集的约200小时真实世界物流小车配送数据，作为nuPlan数据集的补充，并计划后续开源。与nuPlan数据集中的车辆相比，配送车具有以下特点：尺寸较小，运行速度较低；可以在主干道和自行车道上行驶；与行人和骑行者的交互更为频繁，同时面临不同的行驶规则。通过在该数据集上进行测试，我们发现Diffusion Planner依然保持了最佳表现。相比之下，基于规则或依赖后处理的方法由于其设计存在对nuPlan数据的过拟合问题，导致在新场景中的性能下降。这进一步<strong>证明了Diffusion Planner在适应不同驾驶行为方面的鲁棒性</strong>。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/326cfecb-c187-4c4e-b7d6-2582583f7999/1739156065496.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <h4>有偏好轨迹生成案例</h4>\n  <p>为了进一步展示引导机制的有效性，我们挑选了部分场景，从相同起始位置出发，展示了闭环测试结果。红色虚线和空心黄色车代表没有引导的结果，而红色实线和实心黄色车则表示有引导的结果。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/f98e1fcf-6509-4473-9639-f3fce0836a0a/1739156075508.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <h3>总结</h3>\n  <p>在本文中，我们提出了 Diffusion Planner，一种基于模仿学习的自动驾驶规划方法，充分发挥扩散模型的强大表达能力和灵活的引导机制。我们设计了基于 Diffusion Transformer 的模型架构，联合建模运动预测与规划任务中的多模态数据分布，并利用扩散模型的引导机制，使模型生成的规划行为与目标驾驶风格保持一致。Diffusion Planner 在 nuPlan 数据集及新收集的 200 小时物流车驾驶数据集上取得了 SOTA 级别的闭环性能，并展现出对不同驾驶风格的强大适应性。</p>\n </body>\n</html>",
+  "aiSummary": "Diffusion Planner 是一种基于扩散模型的自动驾驶规划算法，通过创新性的 Diffusion Transformer 架构和引导机制，在 nuPlan 数据集上取得 SOTA，并能适应不同驾驶风格。",
+  "oneSentenceSummary": "Diffusion Planner 是一种基于扩散模型的自动驾驶规划算法，通过创新性的 Diffusion Transformer 架构和引导机制，在 nuPlan 数据集上取得 SOTA，并能适应不同驾驶风格。",
+  "summary": "本文介绍了清华大学等机构联合提出的 Diffusion Planner，一种基于扩散模型的自动驾驶规划算法。该算法创新性地设计了基于 Diffusion Transformer 的自动驾驶规划模型架构，能够高效处理复杂场景输入，并联合建模周车运动预测与自车规划中的多模态驾驶行为，解决了现有基于学习的规划方法对后处理的严重依赖问题。Diffusion Planner 借助扩散模型的引导机制，在部署阶段能够灵活适应不同的驾驶需求，提高泛化能力与实用性。实验结果表明，Diffusion Planner 在大规模真实数据集 nuPlan 的闭环评估中取得了 SOTA 级表现，并降低了对后处理的依赖。此外，该算法在额外收集的 200 小时物流小车数据上验证了其在多种驾驶风格下的鲁棒性和迁移能力。",
+  "mainPoints": [
+    {
+      "point": "Diffusion Planner 通过创新的 Diffusion Transformer 架构和扩散模型的引导机制，实现了自动驾驶规划中的高性能和灵活性。",
+      "explanation": "该方法能够精准捕捉复杂场景中周车与自车的多模态驾驶行为，并根据用户需求灵活改变模型输出的轨迹特性，适用于不同的驾驶场景。"
+    }
+  ],
+  "keyQuotes": [
+    "Diffusion Planner 取得了 SOTA 级表现，大幅降低了对后处理的依赖",
+    "联合建模关键参与者的状态，将运动预测与闭环规划任务统一为一个未来轨迹生成任务",
+    "基于扩散模型的引导机制，我们可以在模型的测试阶段引入安全，舒适等偏好，同时也可以根据用户需求灵活的改变模型输出的轨迹特性",
+    "Diffusion Planner 专为自动驾驶闭环规划设计"
+  ],
+  "tags": [
+    "自动驾驶",
+    "扩散模型",
+    "运动规划",
+    "Diffusion Transformer",
+    "Transformer"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2660,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739156460000,
+  "publishDateStr": "2025-02-10",
+  "publishDateTimeStr": "2025-02-10 03:01:00"
+}

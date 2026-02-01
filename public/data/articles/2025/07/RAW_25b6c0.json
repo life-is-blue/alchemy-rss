@@ -1,0 +1,55 @@
+{
+  "id": "RAW_25b6c0",
+  "title": "7 个月翻一番！AI agent 能力飙升，METR 报告揭示指数级进化规律",
+  "url": "https://www.qbitai.com/2025/07/309938.html",
+  "date": "2025-07-16 08:28:55",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <h5 data-pm-slice=\"0 0 []\">henry 发自 凹非寺<br>\n     量子位 | 公众号 QbitAI</h5>\n  </blockquote>\n  <p>Agent能力每7个月翻一番！</p>\n  <p data-pm-slice=\"0 0 []\">根据非营利研究机构METR最新发布的报告，这一规律已在9项基准测试中得到了验证。</p>\n  <p>这些任务涉及编程、数学、计算机使用、自动驾驶等领域，表明大模型正在不断向着高度自动化迈进。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a8263f52-e534-4f1b-4d8b-ff0f65535000/public\" alt=\"图片\" data-imgfileid=\"100326597\" data-ratio=\"0.5972222222222222\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/68a59386-0004-4827-fe9f-09f4bb6b1400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"1\" data-before-load-time=\"1752654024707\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>报告指出：在软件开发、数学竞赛、科学问答等任务中，agent已能完成<strong>相当于人类花费50–200分钟才能完成的任务</strong>，并且这种能力还在快速提升——大约每<strong>2–6个月</strong>就能<strong>翻一番</strong>。</p>\n  <p>在计算机操作任务中，虽然任务时长较短，但增长率与软件开发等任务一致。</p>\n  <p>Agent在自动驾驶任务的性能增长速度则较慢，约20个月翻一番。</p>\n  <p>在视频理解任务中，模型能够在<strong>时长1小时</strong>的视频上取得<strong>50%</strong>的成功率。</p>\n  <p>作为一家致力于研究前沿人工智能系统能力及其风险的研究团队，METR此次的报告又进一步拉近了AI自主化的时间线，快来和我们看看报告有哪些内容吧。</p>\n  <p>在此前的测试中，METR将评估范围聚焦于软件开发和研究类任务，并发现AI agent的能力呈现出一种“摩尔定律”式的增长趋势——<strong>平均每七个月，其可完成任务的time horizon就会翻一番。</strong></p>\n  <p>而在最新报告中，METR将这一评估方法拓展至更广泛的领域，并继续追问一个关键问题：<strong>AI的能力，是否能在更广泛的任务中，以time horizon翻倍的方式不断跃升？</strong></p>\n  <p>不过我们首先要问的是，什么是time horizon？</p>\n  <p>举例来说，<strong>人类平均花30分钟完成一个任务，AI如果能在这类任务上有一半成功的概率，那就说它的time horizon是30分钟。如果它成功率还远高于一半，例如达到80%，那说明它其实能胜任更长、更复杂的任务。</strong></p>\n  <p>概括地说，time horizon就是agent在任务上可稳定完成的时间跨度。</p>\n  <p>由于<strong>time horizon越长≈任务越难≈需要更多策略推理与计划能力≈智能体的智能水平越高</strong>，所以time horizon的翻倍也被称为<strong>agent的摩尔定律。</strong></p>\n  <p>由于AI在不同任务中的能力差别极大，所以现在的问题是：<strong>这个指数级增长规律，会在其他领域也成立吗？</strong></p>\n  <h3>如何跨领域衡量time horizon？</h3>\n  <p>为了证明上面的问题，报告选取了9个benchmark，包括软件开发（METR‑HRS、SWE‑bench）、计算机使用（OSWorld、WebArena）、数学竞赛（Mock AIME、MATH）、编程竞赛（LiveCode-Bench)、科学问答（GPQADiamond）、视频理解（Video‑MME）、自动驾驶（Tesla FSD）和机器人仿真（RLBench）。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7d7dc4cf-94d4-4cb3-6241-8934d5611e00/public\" alt=\"图片\" data-imgfileid=\"100326594\" data-ratio=\"0.8601851851851852\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0921c596-1d87-4602-293e-cbbcf687d500/public\" data-type=\"jpeg\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"2\" data-before-load-time=\"1752654415865\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>对每个benchmark，METR构造了概率模型来估算agent的time horizon。报告采用最大似然估计（MLE）或简化估计方法，处理不同benchmark的标签粒度以估算出每个领域AI随时间的time horizon增长曲线。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4c26dc86-da30-4e73-c5ef-6ee9b79f0100/public\" alt=\"图片\" data-imgfileid=\"100326595\" data-ratio=\"0.6148148148148148\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d0c4984c-556e-46ea-06c2-434b6ce65800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-before-load-time=\"1752654415922\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>值得注意的是，不同基准测试的time horizon边界相差超过100倍。许多推理和编码基准测试的集群时间都在1小时或以上，但在计算机的使用时间（OSWorld、WebArena）仅为约2分钟，而这可能源于agent在使用鼠标时发生的误触。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7caa1e86-cf1f-4fa0-dd2e-0af1a2399c00/public\" alt=\"图片\" data-imgfileid=\"100326598\" data-ratio=\"0.6\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3f05e10a-154c-41d5-8878-685793340900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"4\" data-before-load-time=\"1752654415964\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <h2>研究发现：智能体能力按月翻番</h2>\n  <p>除了我们开头提到的智能体的能力变化，报告还测试了当前主流的几家大模型的能力。例如，像o3这样的前沿模型在METR任务上的表现一直高于趋势水平，翻倍时间快于7个月，在9个基准测试的翻倍时间中位数约为4个月（范围为2.5至17个月）。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3fd00448-429f-44a7-0b50-df6bdaca0300/public\" alt=\"图片\" data-imgfileid=\"100326596\" data-ratio=\"1.0194444444444444\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f880734d-c11f-4fbb-1921-493f6000d400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-before-load-time=\"1752654416014\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>最后，time horizon并非对于所有的基础测试中都重要。由于有些基准中难题的难度要远大于简单题，而在另一些基准中，难题却和简单题相差无几。因此，对于agent来说，在这些基准测试中time horizon并不能完全反映其性能。</p>\n  <p>例如，LeetCode（LiveCodeBench）和数学问题（AIME）的难度要远高于简单问题，但长视频上的Video-MME问题并不比短视频上的难多少。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b67e5604-7b23-4141-3482-778b0ccca700/public\" alt=\"图片\" data-imgfileid=\"100326599\" data-ratio=\"0.4648148148148148\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a94930e0-9f8f-45b2-32fc-438500eb5200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"6\" data-before-load-time=\"1752654416080\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>可见，agent的性能并不只是看“会更多技巧”，而是看是否<strong>能处理更长、更复杂任务</strong>。</p>\n  <p>从几秒、几分钟，到几十分钟、几小时，agent的可处理范围正在跨越级别提升；如果翻倍趋势持续，未来几年内可能看到AI完成“几天→几周”的任务成为可能。</p>\n  <p>总结这一研究可以看到一个很清楚的规律：从代码推理到数学竞赛，从GUI控制到自动驾驶，没有一个任务域显示出智能增长的“乏力”。在多数场景中，AI正全速向更大跨度、更深记忆、更复杂规划演进。</p>\n  <p>参考链接：<br>\n    [1]https://arxiv.org/abs/2503.14499<br>\n    [2]https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "非营利机构 METR 报告指出，AI Agent 能力在编程、数学等多领域实现指数级增长，平均每 7 个月翻一番，向高度自主化迈进。",
+  "oneSentenceSummary": "非营利机构 METR 报告指出，AI Agent 能力在编程、数学等多领域实现指数级增长，平均每 7 个月翻一番，向高度自主化迈进。",
+  "summary": "文章详细介绍了非营利研究机构 METR 的最新报告，揭示 AI Agent 能力呈现指数级增长趋势。通过引入“time horizon”（智能体可稳定完成任务的时间跨度）作为衡量指标，报告在软件开发、数学竞赛、计算机使用、自动驾驶等 9 项基准测试中验证了 AI 能力平均每 7 个月翻一番的规律。尤其在软件开发和数学等领域，能力翻倍时间可缩短至 2-6 个月。文章强调，AI 的性能提升不仅体现在掌握更多技巧，更在于处理更长、更复杂任务的能力，预示着 AI 正全速向更大跨度、更深记忆、更复杂规划演进，未来有望完成跨越数天甚至数周的任务，加速 AI 自主化进程。",
+  "mainPoints": [
+    {
+      "point": "AI Agent 能力呈指数级增长，平均每 7 个月翻一番，部分领域更快。",
+      "explanation": "METR 报告通过 9 项基准测试验证了这一规律，表明 AI 在处理任务的时间跨度上持续快速提升，预示其自主化水平显著增强。"
+    },
+    {
+      "point": "“time horizon”是衡量 AI Agent 能力的关键指标，反映处理复杂任务的能力。",
+      "explanation": "该指标衡量 Agent 在任务上可稳定完成的时间跨度，越长代表所需策略推理和计划能力越强，是评估智能水平的重要依据。"
+    },
+    {
+      "point": "AI 性能提升体现在处理更长、更复杂任务的能力，而非仅掌握更多技巧。",
+      "explanation": "文章强调 AI 的进化方向是跨越任务复杂度级别，从几分钟到几小时，甚至未来几天几周的任务，是其智能水平跃升的核心体现。"
+    }
+  ],
+  "keyQuotes": [
+    "Agent 能力每 7 个月翻一番！根据非营利研究机构 METR 最新发布的报告，这一规律已在 9 项基准测试中得到了验证。",
+    "人类平均花 30 分钟完成一个任务，AI 如果能在这类任务上有一半成功的概率，那就说它的 time horizon 是 30 分钟。",
+    "由于 time horizon 越长≈任务越难≈需要更多策略推理与计划能力≈智能体的智能水平越高，所以 time horizon 的翻倍也被称为 agent 的摩尔定律。",
+    "从几秒、几分钟，到几十分钟、几小时，agent 的可处理范围正在跨越级别提升；如果翻倍趋势持续，未来几年内可能看到 AI 完成\"几天→几周\"的任务成为可能。",
+    "没有一个任务域显示出智能增长的\"乏力\"。在多数场景中，AI 正全速向更大跨度、更深记忆、更复杂规划演进。"
+  ],
+  "tags": [
+    "AI Agent",
+    "大模型",
+    "能力评估",
+    "指数级增长",
+    "time horizon"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 1798,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752654535000,
+  "publishDateStr": "2025-07-16",
+  "publishDateTimeStr": "2025-07-16 08:28:55"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0f912e58",
+  "title": "Anthropic 发布 Claude CoWork",
+  "url": "https://www.infoq.com/news/2026/01/claude-cowork/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-20 15:41:00",
+  "author": "Andrew Hoblitzell",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>On January 12, 2026, <a href=\"https://www.anthropic.com\">Anthropic</a> announced Claude Cowork, a general-purpose AI agent designed to automate file management and document processing tasks on macOS. The tool extends Claude's capabilities beyond conversational interfaces to enable autonomous execution of multi-step workflows within designated local directories.</p>\n   <blockquote>\n    <p>'Claude Cowork consumed 11GB of files accidentally during testing. Users should implement appropriate backup procedures before granting directory access.'&nbsp;-User reports on GitHub and Reddit</p>\n   </blockquote>\n   <p>Claude Cowork operates through a folder-permission model where users grant the AI read, write, and create access to specific directories. The system runs within a virtual machine using Apple's Virtualization Framework, providing isolation from the host operating system. According to <a href=\"https://claude.com/blog/cowork-research-preview\">Anthropic's blog post</a>, the tool was built primarily by Claude Code itself in approximately 1.5 weeks, demonstrating the AI's code generation capabilities.</p>\n   <p>The architecture implements sub-agent coordination for parallelizable tasks. When presented with independent subtasks, Cowork spawns multiple Claude instances that execute concurrently and aggregate results. This approach aims to reduce total execution time for complex operations compared to sequential processing.</p>\n   <p>The tool integrates with <a href=\"https://agentskills.io\">Agent Skills</a>, Anthropic's open standard for modular AI capabilities. Skills provide specialized handling for office file formats including XLSX, PPTX, DOCX, and PDF. The system uses progressive disclosure to load skill instructions only when relevant, managing context window utilization.</p>\n   <p>Initial use cases center on document automation and data processing. Users can instruct Cowork to extract structured data from receipt images and generate Excel spreadsheets with formulas, organize file directories based on content and metadata, or synthesize research reports from multiple source documents. The tool supports browser automation through the Claude in Chrome extension, enabling web navigation and form submission.</p>\n   <p>Competitive alternatives include OpenAI's Operator for browser-based automation, Google's Project Mariner for web and cloud tasks, and Amazon's Nova Act for e-commerce workflows. Open-source options such as <a href=\"https://github.com/different-ai/openwork\">OpenWork</a> provide cost-effective alternatives using the OpenCode framework. Eigent and Cline offer multi-agent capabilities with local deployment for developers requiring full control over execution environments.</p>\n   <p>The Agent Skills specification that underpins Cowork's extensibility has achieved industry adoption beyond Anthropic's ecosystem. Microsoft integrated Skills support into VS Code and GitHub Copilot. OpenAI adopted the format for Codex CLI in December 2025. Cursor, Goose, Amp, OpenCode, and Letta implemented compatible skill loading mechanisms. This interoperability allows developers to create skills that function across multiple AI coding assistants.</p>\n   <p>Skills use a minimal specification with YAML frontmatter for metadata and Markdown instructions. The format enables progressive disclosure where agents read name and description fields to determine relevance without loading full content. Required fields include name and description; optional metadata supports version numbers, dependencies, and tool allowlists. The complete specification at <a href=\"https://agentskills.io/specification\">agentskills.io/specification</a> totals under 1000 words.</p>\n   <p>Partner ecosystem development includes pre-built skills from Atlassian (Jira, Confluence), Figma, Canva, Notion, Stripe, Cloudflare, Zapier, Vercel, Ramp, and Sentry. These integrations target common enterprise workflows such as ticket management, design collaboration, and API interactions. Team and Enterprise administrators can provision skills organization-wide through centralized settings.</p>\n   <blockquote>\"Skills you create aren't locked to Claude - the same skill format works across AI platforms and tools that adopt the standard.\" - Agent Skills documentation</blockquote>\n   <p>Resource consumption patterns show higher utilization than conversational usage. A single Cowork session involving complex file operations may consume quota equivalent to 50-100 standard messages. Max 20x subscribers receive 4x the capacity of Max 5x at 2x the price, creating cost-per-operation trade-offs for high-volume scenarios.</p>\n   <p>Developers looking to learn more can explore the Agent Skills specification at <a href=\"https://agentskills.io\">agentskills.io</a>&nbsp;and examine reference implementations in <a href=\"https://github.com/anthropics/skills\">Anthropic's Skills repository</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic announces Claude CoWork\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Andrew Hoblitzell\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/claude-cowork/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768923660000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 推出了 Claude CoWork，这是一款基于 macOS 的 AI 智能体，由可互操作的 Agent Skills 开放标准驱动，用于自主文件管理和文档处理。",
+  "oneSentenceSummary": "Anthropic 推出了 Claude CoWork，这是一款基于 macOS 的 AI 智能体，由可互操作的 Agent Skills 开放标准驱动，用于自主文件管理和文档处理。",
+  "summary": "Anthropic 发布了 Claude CoWork，这是一款旨在自动化本地 macOS 目录中多步工作流的 AI 智能体。该工具通过文件夹权限模型运行，并利用 Apple 的虚拟化框架进行隔离，能够自主读取、写入和组织文件。其技术亮点在于使用子智能体协作进行并行任务执行，并以 “Agent Skills” 为基础——这是一个用于模块化 AI 能力的开放标准。该标准允许对办公格式（XLSX、PDF 等）进行专门处理，并已获得 Microsoft、OpenAI 等行业的广泛采用。尽管功能强大，但早期报告显示其资源消耗较高且在文件处理方面存在潜在风险，因此需要谨慎部署并进行备份。",
+  "mainPoints": [
+    {
+      "point": "Claude CoWork 将 AI 从聊天界面转向自主的本地文件系统执行。",
+      "explanation": "通过授予目录级权限，用户允许智能体直接在硬件上执行复杂的多步操作，如数据提取和文件整理。"
+    },
+    {
+      "point": "“Agent Skills” 开放标准促进了跨平台 AI 工具的互操作性。",
+      "explanation": "模块化的 YAML/Markdown 格式允许开发者创建可跨 Claude、VS Code、GitHub Copilot 和 OpenAI Codex 运行的能力，防止供应商锁定。"
+    },
+    {
+      "point": "子智能体协作实现了复杂技术任务的并行处理。",
+      "explanation": "该架构生成多个并发的 Claude 实例来处理独立的子任务，显著减少了大规模文档处理的执行时间。"
+    },
+    {
+      "point": "安全和资源管理是本地 AI 智能体的关键考量因素。",
+      "explanation": "该工具在虚拟机中运行以实现隔离，但高 Token 消耗（标准消息的 50-100 倍）以及误删文件的风险需要严格监管。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude CoWork 在测试过程中意外消耗了 11GB 的文件。用户在授予目录访问权限之前，应执行适当的备份程序。",
+    "该工具主要由 Claude Code 本身在约 1.5 周内构建完成，展示了 AI 的代码生成能力。",
+    "你创建的技能不会被锁定在 Claude 中——相同的技能格式适用于所有采用该标准的 AI 平台和工具。",
+    "系统采用渐进式披露，仅在相关时加载技能指令，从而管理上下文窗口的利用率。"
+  ],
+  "tags": [
+    "Anthropic",
+    "Claude CoWork",
+    "AI 智能体",
+    "Agent Skills",
+    "自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 577,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768923660000,
+  "publishDateStr": "01-20",
+  "publishDateTimeStr": "2026-01-20 15:41:00"
+}

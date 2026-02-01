@@ -1,0 +1,55 @@
+{
+  "id": "RAW_36831e5c",
+  "title": "代码推送量背后的秘密：2025 开发者工作流趋势",
+  "url": "https://github.blog/news-insights/octoverse/what-986-million-code-pushes-say-about-the-developer-workflow-in-2025/",
+  "date": "2025-11-07 08:00:00",
+  "author": "Cassidy Williams",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>If you’re building software today, you’ve probably noticed that it’s like… really fast now. And that’s the thing: it’s not just <em>that</em> we code faster. It’s <strong>how</strong> we code, review, and ship that has changed (and is changing).</p>\n  <p>You might have seen <a href=\"https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/?utm_source=octoverse-homepage&amp;utm_medium=blog&amp;utm_campaign=universe25\">the Octoverse 2025 report</a>, but in case you haven’t, the stats are pretty wild: developers created 230+ repositories <em>per minute </em>and pushed 986 million commits last year. Almost a billion commits! With a <strong>b</strong>!</p>\n  <p>Because developers (and teams of developers) are moving faster overall, the expectation is to make different choices <em>because</em> they’re moving faster. When they move faster, their workflows change, too.</p>\n  <p class=\"is-typography-preset-h2\">Iteration is the default state</p>\n  <p>What’s really interesting is that this doesn’t feel like a temporary spike. It feels like an actual long-term shift in iteration. The days of shipping big releases once per quarter are rapidly going away.</p>\n  <p>Developers are pushing constantly, not just when things are “ready.” Smaller and more frequent commits are becoming more of the norm. Personally, I love that. Nobody wants to review a gigantic, 1000-line pull request all the time (only to inevitably plop in a “LGTM” as their eyes glaze over). It’s still more code, shipped faster, but in smaller bursts.&nbsp;</p>\n  <p>The new normal is lightweight commits. You fix a bug, write a small feature, adjust some configurations, and… push. The shift we’re seeing is that things continue to move, not that things are “done” in huge chunks, because “done”-ness is temporary!</p>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p>“<s>Art</s> Code is never finished, only <s>abandoned</s> iterated upon.”</p>\n   <cite><s>Leonardo Da Vinci</s> Cassidy, as well as most developers at this point</cite>\n  </blockquote>\n  <p>And devs know that shipping constantly is about reducing risk, too. Small, frequent changes are easier to debug, and easier to roll back if things go wrong. You don’t have to sift through a month’s worth of changes to get something fixed.This cycle changes how teams think about quality, about communication, and even hiring. If your team is still moving at a pace where they wait weeks to ship something, your team honestly isn’t working like a <em>lot</em> of the world is anymore.</p>\n  <p class=\"is-typography-preset-h2\">Shipping looks different now</p>\n  <p>Because we’re iterating differently, we’re shipping differently. In practice, that looks like:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>More feature flags</strong>: Feature flags used to be “for A/B testing and maybe the spooky experimental feature.” Now they’re <strong>core to how we ship incomplete work safely.</strong> Feature flags are everywhere and let teams ship code behind a toggle. You can push that “maybe” feature to prod, see how it behaves, and then turn it off instantly if something goes sideways. Teams don’t have to hold up releases to finish edge cases. And feature flags are more a part of main workflows now instead of an afterthought.\n    <br></li>\n   <li><strong>CI/CD runs everything</strong>: Every push sets off a chain of events: tests, builds, artifact generations, security scans… if it passes, it deploys. Developers expect pipelines to kick in automatically, and manual deploys are more and more rare.\n    <br></li>\n   <li><strong>Smaller, focused pull requests</strong>: Pull requests simply aren’t novels anymore. We’re seeing more short, readable pull requests with a single purpose. It’s easier and faster to review, and that mental overhead alone increases speed and saves us some brain cells.\n    <br></li>\n   <li><strong>Tests drive momentum</strong>: Developers used <strong>11.5 billion GitHub Actions minutes</strong> running tests last year (a 35% increase! That’s with a b! Again!). With all this automation, we’re seeing unit tests, integration tests, end-to-end tests, and all the tests becoming more and more necessary because automation is how we keep up with the new pace.</li>\n  </ul>\n  <p class=\"is-typography-preset-h2\">How teams communicate should also change</p>\n  <p>We know it’s a fact now that developer workflows have changed, but I personally think that communication around development should also follow suit.</p>\n  <p>This is how I envision that future:</p>\n  <ul class=\"wp-block-list\">\n   <li>Standups are shorter (or async).</li>\n   <li>Status updates live in issues (and “where code lives,” not meetings).</li>\n   <li>“Blocked because the pull request isn’t reviewed yet” is no longer acceptable.</li>\n   <li>Hiring shifts toward people who can ship fast <em>and</em> communicate clearly.</li>\n  </ul>\n  <p>Yes, the code got faster, so developers have to move faster as well.</p>\n  <p>Developers are still a part of engineering speed. But developer workflows should never slow things down too much.</p>\n  <p class=\"is-typography-preset-h2\">Take this with you</p>\n  <p>It’ll be interesting to see what developer workflows in 2026 look like after such rapid changes in 2025.</p>\n  <p>I think “AI fatigue” is incredibly real (and valid) and we’ll see many tools fall by the wayside, of course, as the natural productivity enhancers succeed and the ones that add friction go away. But I also think new standards and tooling will emerge as our new “baseline” for our ever-changing success metrics.</p>\n  <p>In the future, specs and code will live closer together (<a href=\"https://github.blog/ai-and-ml/generative-ai/spec-driven-development-using-markdown-as-a-programming-language-when-building-with-ai/\">Markdown-to-code workflows are only going to grow</a>). That will mean more communication across teams, and perhaps even more documentation overall. And we’ll continue to see more and more constant and collaborative shipping (even from companies that are still slow to adopt AI tooling) because it’s necessary.</p>\n  <p>This year, we’ve seen a lot of growth across the board in terms of pull requests, projects overall, contributions, and so on… so perhaps we’ll see some stabilization?&nbsp;</p>\n  <p>But, of course, the only constant is change.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "本文基于 GitHub 数据，分析了快速迭代、自动化 CI/CD 等对 2025 年开发者工作流的深刻影响，强调了速度提升和风险降低。",
+  "oneSentenceSummary": "本文基于 GitHub 数据，分析了快速迭代、自动化 CI/CD 等对 2025 年开发者工作流的深刻影响，强调了速度提升和风险降低。",
+  "summary": "本文从 9.86 亿次代码推送中洞察到 2025 年开发者工作流向更快迭代和持续交付的重大演变。它强调了编码、审查和交付的根本模式已发生改变，从大型、不频繁的发布转变为更小、更频繁的提交。关键的实际变化包括广泛采用功能开关来安全地部署未完成的工作，依赖全面的 CI/CD 管道进行自动化测试和部署，以及倾向于更小、更专注的拉取请求，从而简化审查。数十亿 GitHub Actions 分钟证明了自动化测试的大幅增加，这对于以这种加速的速度保持质量至关重要。此外，文章还建议团队沟通和招聘实践必须适应这种新模式，优先考虑效率和清晰的沟通。最后，它预测了新工具和标准的持续涌现，Markdown 转代码工作流的增长，以及即使在“AI 疲劳”中，持续协作交付的必然趋势。",
+  "mainPoints": [
+    {
+      "point": "开发者工作流正向持续快速迭代转变，代码推送更小、更频繁。",
+      "explanation": "这种模式降低了风险，简化了调试和回滚，并摆脱了单体发布，从而在软件开发中实现更快的交付和适应。"
+    },
+    {
+      "point": "现代交付实践高度依赖功能开关与 CI/CD 自动化，以提升效率和安全性。",
+      "explanation": "功能开关可以安全地部署未完成的功能，而自动化管道可确保持续的测试、构建和部署，从而以更快的速度保持质量。"
+    },
+    {
+      "point": "高效沟通和精简的审查流程对现代开发团队的加速至关重要。",
+      "explanation": "采用更短的站立会议、基于 Issue 的状态更新和集中的拉取请求减少了瓶颈，并使团队实践与快速迭代的需求保持一致。"
+    }
+  ],
+  "keyQuotes": [
+    "不仅仅是 *我们* 写代码更快了，更重要的是，我们编码、审查和发布 **方式** 已经（并且还在）发生改变。",
+    "小的、频繁的更改更容易调试，如果出现问题也更容易回滚。",
+    "功能开关随处可见，团队可以利用它在开启/关闭状态下发布代码。你可以把“实验性”功能推到生产环境，观察它的表现，如果出现问题可以立即关闭。",
+    "每次代码推送都会触发一连串的流程：测试、构建、生成工件、安全扫描……如果一切通过，代码就会自动部署。",
+    "将来，规范和代码将更紧密地结合在一起（Markdown 转代码工作流只会增长）。"
+  ],
+  "tags": [
+    "开发者工作流",
+    "软件工程",
+    "CI/CD",
+    "Git",
+    "功能开关"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 855,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762502400000,
+  "publishDateStr": "2025-11-07",
+  "publishDateTimeStr": "2025-11-07 08:00:00"
+}

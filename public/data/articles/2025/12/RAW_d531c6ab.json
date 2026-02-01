@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d531c6ab",
+  "title": "从零开始复现神经机器翻译 – PyTorch 实现 7 篇里程碑论文",
+  "url": "https://www.freecodecamp.org/news/building-nmt-from-scratch-pytorch-replications-of-7-landmark-papers/",
+  "date": "2025-12-10 15:26:06",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Learn about the complete neural machine translation journey.</p>\n  <p>We just posted a course on the freeCodeCamp.org YouTube channel that is a comprehensive journey through the evolution of sequence models and neural machine translation (NMT). It blends historical breakthroughs, architectural innovations, mathematical insights, and hands-on PyTorch replications of landmark papers that shaped modern NLP and AI.</p>\n  <p>The course features:</p>\n  <ul>\n   <li>\n    <p>A detailed narrative tracing the history and breakthroughs of RNNs, LSTMs, GRUs, Seq2Seq, Attention, GNMT, and Multilingual NMT.</p>\n   </li>\n   <li>\n    <p>Replications of 7 landmark NMT papers in PyTorch, so learners can code along and rebuild history step by step.</p>\n   </li>\n   <li>\n    <p>Explanations of the math behind RNNs, LSTMs, GRUs, and Transformers.</p>\n   </li>\n   <li>\n    <p>Conceptual clarity with architectural comparisons, visual explanations, and interactive demos like the Transformer Playground.</p>\n   </li>\n  </ul>\n  <p>Here are all the sections in the course:</p>\n  <ul>\n   <li>\n    <p>Evolution of RNN</p>\n   </li>\n   <li>\n    <p>Evolution of Machine Translation</p>\n   </li>\n   <li>\n    <p>Machine Translation Techniques</p>\n   </li>\n   <li>\n    <p>Long Short-Term Memory (Overview)</p>\n   </li>\n   <li>\n    <p>Learning Phrase Representation using RNN (Encoder–Decoder for SMT)</p>\n   </li>\n   <li>\n    <p>Learning Phrase Representation (PyTorch Lab – Replicating Cho et al., 2014)</p>\n   </li>\n   <li>\n    <p>Seq2Seq Learning with Neural Networks</p>\n   </li>\n   <li>\n    <p>Seq2Seq (PyTorch Lab – Replicating Sutskever et al., 2014)</p>\n   </li>\n   <li>\n    <p>NMT by Jointly Learning to Align (Bahdanau et al., 2015)</p>\n   </li>\n   <li>\n    <p>NMT by Jointly Learning to Align &amp; Translate (PyTorch Lab – Replicating Bahdanau et al., 2015)</p>\n   </li>\n   <li>\n    <p>On Using Very Large Target Vocabulary</p>\n   </li>\n   <li>\n    <p>Large Vocabulary NMT (PyTorch Lab – Replicating Jean et al., 2015)</p>\n   </li>\n   <li>\n    <p>Effective Approaches to Attention (Luong et al., 2015)</p>\n   </li>\n   <li>\n    <p>Attention Approaches (PyTorch Lab – Replicating Luong et al., 2015)</p>\n   </li>\n   <li>\n    <p>Long Short-Term Memory Network (Deep Explanation)</p>\n   </li>\n   <li>\n    <p>Attention Is All You Need (Vaswani et al., 2017)</p>\n   </li>\n   <li>\n    <p>Google Neural Machine Translation System (GNMT – Wu et al., 2016)</p>\n   </li>\n   <li>\n    <p>GNMT (PyTorch Lab – Replicating Wu et al., 2016)</p>\n   </li>\n   <li>\n    <p>Google’s Multilingual NMT (Johnson et al., 2017)</p>\n   </li>\n   <li>\n    <p>Multilingual NMT (PyTorch Lab – Replicating Johnson et al., 2017)</p>\n   </li>\n   <li>\n    <p>Transformer vs GPT vs BERT Architectures</p>\n   </li>\n   <li>\n    <p>Transformer Playground (Tool Demo)</p>\n   </li>\n   <li>\n    <p>Seq2Seq Idea from Google Translate Tool</p>\n   </li>\n   <li>\n    <p>RNN, LSTM, GRU Architectures (Comparisons)</p>\n   </li>\n   <li>\n    <p>LSTM &amp; GRU Equations</p>\n   </li>\n  </ul>\n  <p>Watch the full course on <a target=\"_blank\" href=\"https://youtu.be/kRv2ElPNAdY\">the freeCodeCamp.org YouTube channel</a> (7-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/kRv2ElPNAdY\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 freeCodeCamp.org 推出的一门综合课程，该课程通过使用 PyTorch 复现 7 篇里程碑式的神经机器翻译 (NMT) 论文，引导学习者了解神经机器翻译 (NMT) 的演进。",
+  "oneSentenceSummary": "本文介绍了 freeCodeCamp.org 推出的一门综合课程，该课程通过使用 PyTorch 复现 7 篇里程碑式的神经机器翻译 (NMT) 论文，引导学习者了解神经机器翻译 (NMT) 的演进。",
+  "summary": "这篇来自 freeCodeCamp.org 的文章在其 YouTube 频道宣布推出一门全新的深度课程，专注于神经机器翻译 (NMT)。该课程提供了一段“完整旅程”，涵盖序列模型的历史与演变，融合了历史性突破、架构创新、数学洞察以及 PyTorch 动手复现。课程内容包括循环神经网络 (RNNs)、长短期记忆网络 (LSTMs)、门控循环单元 (GRUs)、序列到序列模型 (Seq2Seq)、注意力机制 (Attention mechanisms)、谷歌神经机器翻译 (GNMT) 和多语言神经机器翻译 (Multilingual NMT) 等关键模型和概念。一个核心特色是，学习者可以在 PyTorch 中亲手复现七篇里程碑式的神经机器翻译论文，从而逐步重现这些历史性的发展。课程还通过架构比较、可视化解释和诸如 Transformer Playground 等交互式演示来强调概念的清晰性，使其成为任何对现代自然语言处理和人工智能基础方面感兴趣的人的宝贵资源。",
+  "mainPoints": [
+    {
+      "point": "课程全面概述了神经机器翻译的演变历史和技术。",
+      "explanation": "该课程追溯了序列模型从循环神经网络到 Transformer 的发展，深入理解了神经机器翻译的基础概念与突破。"
+    },
+    {
+      "point": "通过动手复现 7 篇里程碑论文，加深实践理解。",
+      "explanation": "学习者可以跟随代码亲手重建关键的神经机器翻译架构，从而培养对算法和模型的实践与深入理解。"
+    },
+    {
+      "point": "数学解释和架构比较增强了概念清晰度。",
+      "explanation": "课程深入剖析了循环神经网络、长短期记忆网络和门控循环单元等模型的底层数学原理，并结合视觉比较，以巩固理论理解。"
+    }
+  ],
+  "keyQuotes": [
+    "它融合了历史性突破、架构创新、数学洞察，以及对塑造现代自然语言处理和人工智能的里程碑论文的 PyTorch 动手复现。",
+    "在 PyTorch 中复现 7 篇里程碑式的神经机器翻译论文，让学习者可以跟着编码，一步步重现历史。",
+    "通过架构比较、可视化解释和诸如 Transformer Playground 等交互式演示实现概念清晰。"
+  ],
+  "tags": [
+    "神经机器翻译",
+    "PyTorch",
+    "自然语言处理",
+    "序列模型",
+    "深度学习"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 323,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765380366000,
+  "publishDateStr": "2025-12-10",
+  "publishDateTimeStr": "2025-12-10 15:26:06"
+}

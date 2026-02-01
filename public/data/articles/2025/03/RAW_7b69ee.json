@@ -1,0 +1,54 @@
+{
+  "id": "RAW_7b69ee",
+  "title": "Adobe 黑科技：视频扩散降维图像编辑，ObjectMover 秒懂物理规律",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-29-5",
+  "date": "2025-03-29 12:17:44",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p><strong>论文第一作者为余鑫，香港大学三年级博士生，通讯作者为香港大学齐晓娟教授。主要研究方向为生成模型及其在图像和 3D 中的应用，发表计算机视觉和图形学顶级会议期刊论文数十篇，论文数次获得 Oral, Spotlight 和 Best Paper Honorable Mention 等荣誉。此项研究工作为作者于 Adobe Research 的实习期间完成。</strong></p>\n  <p>近年来，图像生成与编辑技术的快速发展，特别是扩散模型（Diffusion Models）的兴起，使得图像编辑任务取得了显著进展。然而，现有技术在实现图像中物体的移动、插入和移除时，仍存在诸多问题：比如物体在新位置的光照与阴影无法与环境真实协调，物体身份特征发生失真，以及物体移动产生的空缺区域无法自然地补全。这些问题在复杂的真实场景中尤为突出。</p>\n  <p>为解决上述难题，Adobe 联合香港大学提出了一种新型图像编辑模型 ——ObjectMover。该模型首次结合视频扩散模型（Video Diffusion Model）的强大先验知识，并创新性地使用虚幻引擎（Unreal Engine）合成数据进行训练，从而实现单张图像内物体的真实感移动。</p>\n  <section>\n   <img data-imgfileid=\"503478300\" data-ratio=\"0.7602564102564102\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2f463119-54aa-44c3-bbec-d10fe9844600/public\" data-type=\"png\" data-w=\"780\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/b31a8241-2d21-491b-85e5-99964719cb49/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7541f7cf-6242-4ae9-ed71-0a72db7b6d00/public\" data-ratio=\"0.23261694058154236\" data-s=\"300,640\" data-type=\"png\" data-w=\"791\" data-imgfileid=\"503478301\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/3fa8aee6-7e42-4862-be6c-a5bf1514ed29/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <section>\n     论文题目：ObjectMover: Generative Object Movement with Video Prior\n    </section></li>\n   <li>\n    <section>\n     论文链接：https://arxiv.org/abs/2503.08037\n    </section></li>\n   <li>\n    <section>\n     项目主页：https://xinyu-andy.github.io/ObjMover\n    </section></li>\n  </ul>\n  <p><strong>实验结果与效果分析</strong></p>\n  <p>ObjectMover 可统一地处理图像编辑中的三个常见任务：物体移动、物体删除与物体插入。与以往方法不同的是，本文仅需用户使用边界框（Bounding Box）指定待编辑的物体及目标位置，无需额外标注（如文本指令或阴影标注），模型即可自动同步处理相关的物理效果（例如阴影、反射等）。</p>\n  <p><strong>真实感的光影同步调整</strong></p>\n  <p>如下图所示，当移动水中人物时，ObjectMover 能够自动同步调整水中倒影，并识别并调整人物身上的太阳光，使太阳光准确地照射在水面。<img data-imgfileid=\"503478312\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3a93d9b5-79c2-4bf3-dd21-6d7160142200/public\" data-type=\"gif\" data-w=\"1080\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/b1fbb1e2-1437-4765-80cf-a611b2569ba8/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>再例如下面这个异常困难的具有复杂阴影的例子。当雕像被移动后，其投射在地上的影子也被同步移动。需要注意的是，模型能够识别哪一部分阴影属于雕像，而不会移除其他物体的影子，并且还能补全之前被雕像阴影覆盖的其他物体的阴影。此外，移动后雕像呈现出的透视角度也会随位置变化而自然调整，且雕像背部原先被遮挡的区域自然地被新位置的太阳光照射。</p>\n  <section>\n   <img data-imgfileid=\"503478313\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0c43fc21-dd10-4956-0253-0190402ef800/public\" data-type=\"gif\" data-w=\"1080\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/14fa1a3b-a00e-4786-9ba8-ad0118a75e06/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>此外，模型还能有效理解物体的材质特性。例如，下图展示了透明酒杯移动的实例。当透明酒杯被移动后，模型不会简单地复制酒杯原位置上透视看到的背景内容，而是精确地去除背景，仅保留酒杯自身的透明材质属性。当酒杯被移动至新位置时，模型又能准确地透过酒杯重新生成与目标位置环境一致的新背景内容。这充分体现了模型对透明物体材质的深入理解。同时，模型还能够自动补全原本不完整的酒杯杯体，生成完整的物体外观。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/085e0ced-02e1-4a94-ea1d-624b5f6a1e00/public\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" data-imgfileid=\"503478314\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/c006303c-680e-4655-9b9a-bfa1102a024c/640.gif\" data-order=\"2\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>综上，ObjectMover 不仅实现了物体位置的简单变化，更表现出显著的物理规律理解能力。</p>\n  <p><strong>多任务处理，一个统一模型</strong></p>\n  <p>得益于统一的条件输入框架和多任务训练机制，ObjectMover 还能有效完成物体删除与插入任务。如图所示，删除任务中，模型能够真实地填充被移除物体的背景，而非生成不相干的新物体，并准确地移除光影；而在插入任务中，模型能精准保持被插入物体的身份特征，自动生成与环境一致的光影效果。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0f6c860e-17a8-450d-4ec5-eb8538f01000/public\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" data-imgfileid=\"503478315\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/e036c005-a4ad-4d44-918a-5e6fadeb6da1/640.gif\" data-order=\"3\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ec67a25e-484a-4191-268c-bf818f4bf800/public\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" data-imgfileid=\"503478316\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/50000c36-4730-4e39-8a6b-a41cfec53dcc/640.gif\" data-order=\"4\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>实验对比</strong></p>\n  <p>实验结果表明，ObjectMover 在物体移动、删除和插入三个任务中均取得了明显优于现有方法的图像质量与真实感。</p>\n  <section>\n   <img data-imgfileid=\"503478317\" data-ratio=\"0.8512820512820513\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7163a010-74a0-4ff6-3ba7-c5977f873900/public\" data-type=\"png\" data-w=\"780\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/614ca14a-f4d6-4ab4-b9b4-d07946e4b717/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>研究方法与主要创新点</strong></p>\n  <p><strong>将视频扩散模型用于单帧图像编辑任务</strong></p>\n  <p>传统图像编辑方法一般微调单帧图像扩散模型，这些模型的预训练阶段仅关注单张图像，没有学习到物体动态变化过程中的光影调整。而本文提出的核心创新在于，将物体移动任务视为序列到序列（Sequence-to-Sequence）的预测任务，首次应用了预训练的视频扩散模型。</p>\n  <p>具体而言，本文通过将输入图像、待移动物体、用户指令与目标位置统一编码为视频序列形式，以不改变模型原架构的前提下直接进行微调，充分利用了视频模型预训练时习得的物理规律及物体对应关系（Object Correspondence），从而在图像编辑任务中实现了精确的光影同步与身份特征保持。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ff612b23-35cf-4653-a61c-826da2787d00/public\" data-ratio=\"0.367948717948718\" data-s=\"300,640\" data-type=\"png\" data-w=\"780\" data-imgfileid=\"503478385\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/1f465bff-84ed-408b-9011-13dcfe0e8fa5/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>首个利用虚幻引擎（Unreal Engine）生成合成数据进行图像编辑训练</strong></p>\n  <p>由于真实环境中难以获取大规模精准标注的物体移动数据，传统方法多依赖人工标注或数据改造，存在数据量不足和质量限制。为此，本文首次利用虚幻引擎生成了丰富、高质量的合成数据集，涵盖了复杂的光照环境、多样的物体类型及真实的物体与环境交互。</p>\n  <section>\n   <img data-imgfileid=\"503478386\" data-ratio=\"0.33076923076923076\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ebda0ea5-8425-44aa-e36f-f72564109800/public\" data-type=\"png\" data-w=\"780\" data-original-style=\"null\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/949b8028-c422-41b3-8ef7-a497c9d7b3ef/640.png\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>通过合成数据，本文得以模拟现实世界中多样的物体移动场景，例如光照强弱变化、物体透视变化及遮挡区域真实补全效果等。此外，本文设计了多种移动轨迹与光照条件，确保模型学习到高度泛化的视觉先验。</p>\n  <section>\n   <img data-imgfileid=\"503478387\" data-ratio=\"0.2358974358974359\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a304e9d4-77cb-4c97-3188-596108a87600/public\" data-type=\"png\" data-w=\"780\" data-original-style=\"null\" data-index=\"12\" src=\"https://image.jiqizhixin.com/uploads/editor/7201157b-130c-48e8-829b-baf9fe389d33/640.png\" alt=\"图片\" data-report-img-idx=\"11\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>实验结果证明，虚幻引擎生成的数据与视频预训练模型的结合，有效提高了模型在真实图像编辑任务中的泛化能力。同时，本文提出了基于真实视频与合成数据的多任务训练策略，进一步增强模型的泛化表现。</p>\n \n",
+  "aiSummary": "Adobe 联合香港大学提出 ObjectMover 模型，通过视频扩散模型和虚幻引擎合成数据，在图像编辑中实现了前所未有的真实感和物理规律理解。",
+  "oneSentenceSummary": "Adobe 联合香港大学提出 ObjectMover 模型，通过视频扩散模型和虚幻引擎合成数据，在图像编辑中实现了前所未有的真实感和物理规律理解。",
+  "summary": "本文介绍了 Adobe 与香港大学联合提出的 ObjectMover 模型，该模型旨在解决现有图像编辑技术在物体移动、插入和移除时存在的真实感问题，如光照阴影不协调、物体身份失真和空缺区域补全不自然等。ObjectMover 的核心创新在于结合了视频扩散模型的先验知识，并利用虚幻引擎生成合成数据进行训练，在光影效果的逼真程度和对复杂材质的处理能力上优于现有方法。实验结果表明，ObjectMover 在物体移动、删除和插入等任务中均优于现有方法，能够实现真实的光影同步调整，理解物体材质特性，并有效完成多任务处理。该研究通过将物体移动任务视为序列到序列的预测任务，并利用虚幻引擎生成高质量的合成数据集，显著提高了模型在真实图像编辑任务中的泛化能力。ObjectMover 有望应用于电影特效、游戏开发等领域。",
+  "mainPoints": [
+    {
+      "point": "ObjectMover 利用视频扩散模型学习光影变化规律，显著提升图像编辑的真实感",
+      "explanation": "利用视频扩散模型学习到的物理规律和物体对应关系，实现精确的光影同步和身份特征保持，解决了传统方法在图像编辑中真实感不足的问题。"
+    },
+    {
+      "point": "虚幻引擎合成数据提高模型泛化能力",
+      "explanation": "通过虚幻引擎生成大规模、高质量的合成数据集，模拟真实世界中的物体移动场景，有效提高了模型在真实图像编辑任务中的泛化能力。"
+    },
+    {
+      "point": "统一框架实现多任务处理",
+      "explanation": "ObjectMover 采用统一的条件输入框架和多任务训练机制，能够有效完成物体移动、删除和插入等多种图像编辑任务。"
+    }
+  ],
+  "keyQuotes": [
+    "ObjectMover 可统一地处理图像编辑中的三个常见任务：物体移动、物体删除与物体插入。",
+    "ObjectMover 能够自动同步调整水中倒影，并识别并调整人物身上的太阳光，使太阳光准确地照射在水面。",
+    "ObjectMover 不仅实现了物体位置的简单变化，更表现出显著的物理规律理解能力。",
+    "ObjectMover 通过虚幻引擎生成的数据与视频预训练模型的结合，有效提高了模型在真实图像编辑任务中的泛化能力"
+  ],
+  "tags": [
+    "图像编辑",
+    "图像生成",
+    "扩散模型",
+    "视频扩散模型",
+    "生成模型"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1986,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743250664000,
+  "publishDateStr": "2025-03-29",
+  "publishDateTimeStr": "2025-03-29 12:17:44"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_92d939",
+  "title": "JetBrains AI 助手 - Visual Studio Code 版",
+  "url": "https://blog.jetbrains.com/ai/2025/05/jetbrains-ai-assistant-now-in-visual-studio-code/",
+  "date": "2025-05-19 11:11:06",
+  "author": "Anastasia Kazakova",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>At JetBrains, we design AI to empower developers and streamline their development process with AI-powered features integrated directly into their editor. From the beginning, <a href=\"https://www.jetbrains.com/ai-assistant/\" target=\"_blank\" rel=\"noopener\">AI Assistant</a> was available only within JetBrains IDEs, and later in Android Studio, both of which are built on the IntelliJ Platform. While we’re incredibly proud of the deep integrations and performance those offer, we recognize that many developers have established workflows and preferences that don’t center exclusively around JetBrains products and the IntelliJ platform. We also believe that AI innovation shouldn’t be confined to a single technology provider, a single IDE, or even a family of IDEs from one vendor.</p>\n  <p>In order to reach a broader developer community and demonstrate our commitment to IDE-agnostic AI assistance, we’re introducing <strong><a href=\"https://marketplace.visualstudio.com/items?itemName=jetbrains.jetbrains-ai-assistant\" target=\"_blank\" rel=\"noopener\">JetBrains AI Assistant for Visual Studio Code</a></strong>. This reflects our ongoing investment in building a comprehensive AI ecosystem, ensuring that cutting-edge technology is accessible to everyone, not just those using our IDEs.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" fetchpriority=\"high\" width=\"1988\" height=\"1770\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/05/extension.png\" alt=\"\" class=\"wp-image-567666\">\n  </figure>\n  <p>Today we’re launching the JetBrains AI Assistant for Visual Studio Code public preview. We invite you to participate and <a href=\"https://youtrack.jetbrains.com/newIssue?project=VSAI\" target=\"_blank\" rel=\"noopener\">share your feedback</a> with us.</p>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"https://marketplace.visualstudio.com/items?itemName=jetbrains.jetbrains-ai-assistant\" class=\"btn\" target=\"_blank\" rel=\"noopener\">Participate in Public Preview</a>\n   </div>\n  </div>\n  <p>During the public preview, either use your current JetBrains AI subscription or, if you don’t have one, automatically get a free AI EAP license once you log in with your JetBrains Account.</p>\n  <p>Whether Visual Studio Code is your primary code editor or a companion tool to JetBrains IDEs or Visual Studio, JetBrains AI Assistant enhances productivity and joy by seamlessly integrating into your development workflow. We’ve built it on the following pillars:</p>\n  <ol>\n   <li>JetBrains long-term experience and expertise in programming languages. Our many years of accumulated knowledge help us deliver first-class development tooling and advanced support for LLM context collection. JetBrains AI Assistant for Visual Studio Code is now available for Java, Kotlin, JavaScript, TypeScript, Python, C#, C++, and C.<br></li>\n   <li><a href=\"https://blog.jetbrains.com/ai/2025/02/why-and-how-jetbrains-built-mellum-the-llm-designed-for-code-completion/\">Mellum</a>, JetBrains’ proprietary LLM (now also <a href=\"https://blog.jetbrains.com/ai/2025/04/mellum-goes-open-source-a-purpose-built-llm-for-developers-now-on-hugging-face/\">open-sourced</a>) trained from scratch specifically to power cloud-based code completion in JetBrains AI Assistant. Benefit from the precise code completion suggestions for a single line or entire code blocks.<br></li>\n   <li>JetBrains AI Assistant relies on top-tier local and cloud AI models. Our users are free to choose the best-fitting LLM for their current coding task or preference, ensuring optimal results every time. In JetBrains AI Assistant for Visual Studio Code, you can select from Gemini, Claude, and various GPT models.<br>\n     Local models are not yet available in the preview for Visual Studio Code, but will be added later.</li>\n  </ol>\n  <ol start=\"4\">\n   <li>Explore the full power of AI – delegate complex tasks to the built-in coding AI agent, leveraging its strengths to achieve optimal results under your supervision.<br><iframe width=\"750\" height=\"470\" src=\"https://resources.jetbrains.com/storage/products/vsc_ai/agents.mp4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br>\n     The agent used in AI Assistant for Visual Studio Code is different from <a href=\"https://www.jetbrains.com/junie/\" target=\"_blank\" rel=\"noopener\">Junie</a>. In the new AI-powered development world, agents evolve quickly and effectively support developers in handling complex tasks. We experiment with new solutions and bring the best to our users. This agent is in active development by our AI Platform team and might later be integrated in other solutions from JetBrains. At the moment, the LLM quota consumption by the agent can be quite high in some cases. You’ll get an in-product notification when you are close to reaching the quota.<br></li>\n  </ol>\n  <ol start=\"5\">\n   <li>An AI chat with a comprehensive understanding of the entire codebase and deep knowledge of the target programming language. Ask questions using natural language, refine your prompt iteratively, and even make multiple file edits simultaneously without leaving the AI chat interface.<br></li>\n   <li>Other AI-powered actions to boost developer productivity include generating commit messages, inline documentation, asking AI to explain what a block of code does, finding errors or mistakes, and even suggesting improvements for the selected code block.</li>\n  </ol>\n  <p>You can find a full overview of features on our <a href=\"https://www.jetbrains.com/aia-vscode/\" target=\"_blank\" rel=\"noopener\">site</a> and in our <a href=\"https://www.jetbrains.com/help/ai-assistant/installation-guide-ai-assistant-vs-code.html\" target=\"_blank\" rel=\"noopener\">online documentation</a>.</p>\n  <h2 class=\"wp-block-heading\">Installation details</h2>\n  <p>During the public preview, you can either use your current JetBrains AI subscription or, if you don’t have one, automatically get a free AI EAP license once you log in with your JetBrains Account. <a href=\"https://www.jetbrains.com/ai-ides/buy/?section=personal&amp;billing=monthly\" target=\"_blank\" rel=\"noopener\">JetBrains AI plans and pricing</a> will apply after the full public release. For our organizational customers, JetBrains AI Assistant for Visual Studio Code preview is also available with <a href=\"https://www.jetbrains.com/ide-services/ai-enterprise/\" target=\"_blank\" rel=\"noopener\">AI Enterprise</a>.</p>\n  <p>The extension is available on the <a href=\"https://marketplace.visualstudio.com/items?itemName=jetbrains.jetbrains-ai-assistant\" target=\"_blank\" rel=\"noopener\">Visual Studio Code marketplace</a>. While we are focused on an extension for Visual Studio Code right now, you are free to install our extension in other editors that are compatible with Visual Studio Code. We don’t impose any restrictions on such usage. The links to <em>.vsix</em> files are available in our <a href=\"https://www.jetbrains.com/help/ai-assistant/installation-guide-ai-assistant-vs-code.html\" target=\"_blank\" rel=\"noopener\">online documentation</a>.</p>\n  <h2 class=\"wp-block-heading\">Important notes and known limitations</h2>\n  <p>JetBrains AI Assistant does not provide language support features like code highlighting, code analysis, or refactoring. To access those capabilities, you may want to install a corresponding language support extension. For C#, we recommend using <a href=\"https://www.jetbrains.com/resharper/vscode/\" target=\"_blank\" rel=\"noopener\">ReSharper for Visual Studio Code</a>.</p>\n  <p>Due to temporary implementation limitations while in preview, JetBrains AI Assistant for Visual Studio Code doesn’t work for our Chinese users. We hope to bring it to China soon.</p>\n  <h2 class=\"wp-block-heading\">Feedback and bug reporting</h2>\n  <p>Your feedback is important to us, and it will help us improve JetBrains AI Assistant:</p>\n  <ul>\n   <li><a href=\"https://youtrack.jetbrains.com/newIssue?project=VSAI\" target=\"_blank\" rel=\"noopener\">Submit</a> bugs or just <a href=\"https://youtrack.jetbrains.com/newIssue?project=VSAI&amp;c=visible+to+jetbrains-team&amp;c=Type+Question\" target=\"_blank\" rel=\"noopener\">share your feedback</a> to our issue tracker.</li>\n   <li>Contact our support via the <a href=\"https://intellij-support.jetbrains.com/hc/en-us/requests/new\" target=\"_blank\" rel=\"noopener\">form</a>.</li>\n   <li>Request assistance by clicking on “Report issue or feedback” in the JetBrains AI Assistant view.</li>\n  </ul>\n  <p></p>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"https://marketplace.visualstudio.com/items?itemName=jetbrains.jetbrains-ai-assistant\" class=\"btn\" target=\"_blank\" rel=\"noopener\">Participate in Public Preview</a>\n   </div>\n  </div>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/dotnet/2025/05/19/resharper-comes-to-microsoft-visual-studio-code/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> ReSharper Comes to Microsoft Visual Studio Code: Public Preview Now Open</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 发布 Visual Studio Code 版 AI 助手，赋能先进 AI 编码。",
+  "oneSentenceSummary": "JetBrains 发布 Visual Studio Code 版 AI 助手，赋能先进 AI 编码。",
+  "summary": "JetBrains 将其 AI 助手扩展到 Visual Studio Code，此前该助手仅限于 JetBrains IDE 和 Android Studio。此举旨在覆盖更广泛的开发者社区，并展示了对 IDE 无关 AI 辅助的承诺。公共预览版适用于 Java、Kotlin、JavaScript、TypeScript、Python、C#、C++ 和 C 等多种语言。该助手依托 JetBrains 丰富的编程语言经验，并利用其专有的、现已开源的 Mellum LLM，实现云端代码补全。它还支持 Gemini、Claude 和 GPT 模型等其他顶级 AI 模型。主要功能包括具备代码库理解能力的 AI 聊天、用于复杂任务的内置编码 AI 代理、生成提交信息、文档、代码解释和错误检测等。",
+  "mainPoints": [
+    {
+      "point": "JetBrains AI 助手现已支持 Visual Studio Code",
+      "explanation": "将 AI 助手扩展到 VS Code，使先进的 AI 编码功能可以被 IntelliJ 平台之外的更广泛受众所使用。"
+    },
+    {
+      "point": "依托 JetBrains 的语言技术积累和 Mellum LLM",
+      "explanation": "建立在多年的经验和一个代码特定的 LLM (Mellum) 之上，用于精确的上下文收集和准确的代码补全建议。"
+    },
+    {
+      "point": "支持多种顶级 AI 模型，并集成编码 AI 代理",
+      "explanation": "用户可以选择首选的 LLM（Gemini、Claude、GPT），并利用专门的 AI 代理来处理复杂的开发任务。"
+    },
+    {
+      "point": "具备 AI 聊天功能，可深度理解代码库和编程语言",
+      "explanation": "可以在 AI 聊天界面中直接实现自然语言查询、迭代改进和多文件编辑。"
+    }
+  ],
+  "keyQuotes": [
+    "我们坚信，AI 创新不应受限于单一技术提供商、单一 IDE，乃至同一厂商的一系列 IDE。",
+    "JetBrains AI 助手 for Visual Studio Code 无缝集成至您的开发工作流程，提升效率与乐趣。",
+    "Mellum - JetBrains 自研 LLM (现已开源)，从零训练，专为 JetBrains AI 助手提供云端代码补全能力。",
+    "探索 AI 的全部潜力 - 将复杂任务委托给内置的编码 AI 代理，充分发挥其优势，并在您的监督下达成最优结果。"
+  ],
+  "tags": [
+    "AI 助手",
+    "开发者工具",
+    "VS Code",
+    "JetBrains",
+    "大型语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 885,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1747653066000,
+  "publishDateStr": "2025-05-19",
+  "publishDateTimeStr": "2025-05-19 11:11:06"
+}
