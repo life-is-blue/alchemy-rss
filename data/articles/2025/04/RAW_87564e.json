@@ -1,0 +1,64 @@
+{
+  "id": "RAW_87564e",
+  "title": "Qwen3 全面登场：混合推理、超强 Agent，它将如何定义开源 AI 新标准？",
+  "url": "https://ginonotes.com/posts/qwen3-released",
+  "date": "2025-04-29 00:00:00",
+  "author": "Gino",
+  "siteName": "Gino Notes",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-content prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-h2:text-2xl lg:prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl lg:prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-base lg:prose-p:text-lg prose-p:leading-7 lg:prose-p:leading-8 prose-p:text-gray-600 dark:prose-p:text-gray-400 prose-a:text-blue-500 prose-a:no-underline hover:prose-a:text-blue-600 prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-code:text-blue-500 dark:prose-code:text-blue-400 prose-code:text-sm lg:prose-code:text-base prose-pre:bg-gray-900 prose-pre:rounded-lg prose-img:rounded-lg prose-img:shadow-lg prose-blockquote:border-l-4 prose-blockquote:border-gray-200 dark:prose-blockquote:border-gray-800 prose-blockquote:pl-4 prose-blockquote:italic\">\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-banner.png\" alt=\"Qwen3 全面登场\"></p>\n   <p>相信关注 AI 圈的朋友们，这个凌晨或许都没怎么睡踏实。自从 DeepSeek R1 惊艳亮相之后，国内大模型在“智能”这个核心维度上似乎进入了一段平台期。海外 Llama 4 的开源风波不断，而 AI Coding、Agent、MCP 这些激动人心的新应用方向，无一不渴求着一个更聪明、更强大的模型大脑。</p>\n   <p>大家都在等，等一个能打破沉寂、带来实质性突破的选手。而这份期待，很大程度上落在了阿里的 Qwen 系列身上——毕竟，它不仅过往表现优异，更有着覆盖大中小各种尺寸、方便开发者微调的优良传统。</p>\n   <p>终于，在无数人的深夜守候中，Qwen3 来了！它是否满足了我们的期待？它又将给 AI 开源社区带来哪些改变？让我们一起深入探究。</p>\n   <h3 id=\"不止一个惊喜qwen3全家桶豪华阵容亮相\"><a class=\"anchor\" href=\"#不止一个惊喜qwen3全家桶豪华阵容亮相\"><span class=\"icon icon-link\"></span></a>不止一个惊喜：Qwen3“全家桶”豪华阵容亮相</h3>\n   <p>这次阿里可谓诚意满满，直接端上了一整个 Qwen3“全家桶”，总共 8 款模型，阵容豪华：</p>\n   <ul>\n    <li><strong>两大 MoE (混合专家) 模型：</strong>\n     <ul>\n      <li><strong>旗舰版 Qwen3-235B-A22B:</strong> 总参数 2350 悟空（B），推理时仅激活 220 悟空，性能直指全球顶尖水平，强势登顶新一代“开源之王”！</li>\n      <li><strong>高效版 Qwen3-30B-A3B:</strong> 总参数 300 悟空，仅需激活 30 悟空，性能却能全面超越 QwQ-32B，非常适合消费级显卡部署。</li>\n     </ul></li>\n    <li><strong>六款 Dense (稠密) 模型：</strong>\n     <ul>\n      <li><strong>Qwen3-32B, 14B, 8B, 4B, 1.7B, 0.6B:</strong> 从云端主力到手机端侧，全面覆盖各种应用场景。0.6B 版本让手机端 AI 应用有了更强的“心脏”。</li>\n     </ul></li>\n   </ul>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-family.png\" alt=\"Qwen3 全家桶\"></p>\n   <p><strong>关键点：</strong></p>\n   <ul>\n    <li><strong>命名新规：</strong> MoE 模型的后缀 <code>AxxB</code> 清晰标示了推理时激活的参数量。</li>\n    <li><strong>完全开源：</strong> 所有模型均采用 <strong>Apache 2.0 许可证</strong>，开发者可以自由使用和<strong>免费商用</strong>，没有任何后顾之忧。</li>\n    <li><strong>Base 模型同发：</strong> 除了指令对齐后的版本，对应的<strong>预训练基础模型 (Base models)</strong> 也同步开源，方便进行更底层的研究和微调。</li>\n    <li><strong>上下文长度：</strong> 小尺寸模型 (0.6B-4B) 支持 32K Token，8B 及以上模型支持高达 <strong>128K Token</strong> 的超长上下文。</li>\n   </ul>\n   <h3 id=\"核心亮点-1国内首创混合推理鱼与熊掌我都要\"><a class=\"anchor\" href=\"#核心亮点-1国内首创混合推理鱼与熊掌我都要\"><span class=\"icon icon-link\"></span></a>核心亮点 1：国内首创“混合推理”，鱼与熊掌我都要！</h3>\n   <p>如果说 Qwen3 只有一个最最核心的亮点，那无疑是它开创性的<strong>混合推理模式 (Hybrid Reasoning)</strong>。</p>\n   <p>想象一下，过去你可能需要根据任务复杂度，在类似 DeepSeek R1（擅长深度思考）和 DeepSeek V3（擅长快速响应）之间手动切换，或者忍受单一模型的局限。</p>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/thinking_budget.png\" alt=\"Qwen3 混合推理\"></p>\n   <p>现在，Qwen3 将这两种能力<strong>无缝集成到了同一个模型内部</strong>！</p>\n   <ul>\n    <li><strong>思考模式 (Thinking Mode):</strong> 面对复杂问题（数学、代码、逻辑分析），模型会像人类一样进行<strong>逐步推理 (Chain-of-Thought)</strong>，深思熟虑后给出答案，追求准确和深度。</li>\n    <li><strong>非思考模式 (Non-Thinking Mode):</strong> 对于简单问答、日常对话，模型则能<strong>直接、快速地响应</strong>，几乎零延迟，效率拉满。</li>\n   </ul>\n   <p><strong>这意味着什么？</strong></p>\n   <ul>\n    <li><strong>极致的灵活性：</strong> 用户或开发者可以通过 API 参数 (<code>enable_thinking</code>) 或聊天界面（如 Qwen Chat 提供的开关和<strong>思考长度滑块</strong>）轻松控制模型的“思考量”，实现所谓的“<strong>思考预算</strong>”管理。</li>\n    <li><strong>成本与性能的最优解：</strong> 简单任务节省算力，复杂任务保证效果，真正做到“好钢用在刀刃上”，在效果、成本、速度之间取得完美平衡。有文章甚至将其类比为 Claude 3.7（未来模型）的先进理念。</li>\n   </ul>\n   <h3 id=\"核心亮点-2agent-能力飙升mcp-协议加持生态起飞\"><a class=\"anchor\" href=\"#核心亮点-2agent-能力飙升mcp-协议加持生态起飞\"><span class=\"icon icon-link\"></span></a>核心亮点 2：Agent 能力飙升，MCP 协议加持，生态起飞！</h3>\n   <p>AI Agent 是当下最火热的方向之一，而 Agent 的能力上限，很大程度取决于底层大模型的智能程度和工具调用能力。Qwen3 在这方面也交出了亮眼答卷：</p>\n   <ul>\n    <li><strong>原生支持 MCP:</strong> 对多智能体协作协议 (Machine Communication Protocol) 的支持得到全面增强。</li>\n    <li><strong>代码与工具调用提升：</strong> 模型自身的代码能力和理解、执行复杂指令进行工具调用的能力显著优化。</li>\n    <li><strong>生态赋能：</strong> 正如文章所言，“国内的 Agent 工具都在等它”。Qwen3 的升级，无疑为整个 Agent 应用生态注入了强心剂。</li>\n   </ul>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-agent.png\" alt=\"Qwen3 Agent\"></p>\n   <p><strong>最有说服力的，是实测对比：</strong></p>\n   <blockquote>\n    <p>在一项测试中，要求模型为 Qwen3 创作童话故事，并调用工具生成配图、附加地图、生成 TTS 音频、添加时间和日期。结果显示，<strong>Qwen3 成功分析并调用了所有必需的 MCP 工具</strong>，生成了完整的网页。而<strong>在同样的 Prompt 下，DeepSeek R1 在多个 MCP 调用上都失败了</strong>。</p>\n   </blockquote>\n   <p>这种进步是实实在在的，它意味着开发者可以更轻松、更可靠地构建能够与外部世界（API、本地文件、其他 Agent）交互的复杂智能体应用。我们甚至看到有用户将 Qwen3 与“即梦”等工具结合，实现了类似原生多模态的图文混排效果！</p>\n   <h3 id=\"核心亮点-3你好世界qwen3-支持-119-种语言\"><a class=\"anchor\" href=\"#核心亮点-3你好世界qwen3-支持-119-种语言\"><span class=\"icon icon-link\"></span></a>核心亮点 3：你好，世界！Qwen3 支持 119 种语言</h3>\n   <p>从 Qwen2 的 29 种语言，一跃<strong>支持多达 119 种语言和方言</strong>，Qwen3 的“国际范”直接拉满！</p>\n   <p>这不仅仅是数字的增加，更是意味着 AI 的能力正在向更广阔的世界普及。无论是英语、中文（简繁粤）、日韩法德俄，还是像爪哇语、海地语、斯瓦希里语这样相对小众或地域性的语言，Qwen3 都力求覆盖。</p>\n   <p>真正让全世界不同语言背景的人们，都有机会用上先进的 AI 技术。</p>\n   <h3 id=\"性能与成本新一代开源标杆\"><a class=\"anchor\" href=\"#性能与成本新一代开源标杆\"><span class=\"icon icon-link\"></span></a>性能与成本：新一代开源标杆？</h3>\n   <ul>\n    <li><strong>性能登顶：</strong> 多个来源和基准测试都指出，旗舰 Qwen3-235B-A22B 在数学、代码、通用能力等方面，性能全面超越 DeepSeek R1，并可与 Grok-3、Gemini-2.5-Pro 等顶尖闭源模型掰手腕。</li>\n    <li><strong>效率惊人：</strong> 小模型同样能打，Qwen3-4B 性能接近 Qwen2.5-72B，Qwen3-30B-A3B 以极低激活参数实现高性能。</li>\n    <li><strong>成本骤降：</strong> 旗舰模型部署成本显著降低，据称仅需 <strong>4 张 H20 GPU</strong> 即可运行，推理成本相比 DeepSeek R1 <strong>下降超 60%</strong>，堪称“便宜大碗”。</li>\n   </ul>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-235a22.jpg\" alt=\"Qwen3 性能\"></p>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-30a3.jpg\" alt=\"Qwen3 性能\"></p>\n   <p><strong>主观体验如何？</strong></p>\n   <p>综合几位博主的实测：</p>\n   <ul>\n    <li><strong>代码/网页生成：</strong> 简单任务效果好，复杂任务（如精美网页设计）在审美和功能完整性上尚有提升空间。</li>\n    <li><strong>逻辑与创作：</strong> 常规逻辑推理稳健，但在极端 Prompt 下可能“掉智”。文笔风格被认为优于 DeepSeek，但略逊于 GPT-4o。</li>\n    <li><strong>总体评价：</strong> 能力均衡，无明显短板，属于“水桶级别，中等偏上”。</li>\n   </ul>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-test.jpg\" alt=\"Qwen3 实测\"></p>\n   <h3 id=\"揭秘背后炼丹炉里的-34-步真功夫\"><a class=\"anchor\" href=\"#揭秘背后炼丹炉里的-34-步真功夫\"><span class=\"icon icon-link\"></span></a>揭秘背后：“炼丹炉”里的 3+4 步真功夫</h3>\n   <p>如此强大的 Qwen3 是如何“炼”成的？官方博客揭示了其精密的训练流程：</p>\n   <ul>\n    <li>\n     <p><strong>三阶段预训练：</strong></p>\n     <ol>\n      <li><strong>海量数据打底 (30T+ tokens, 4K ctx):</strong> 构建基础语言和知识。数据来源极其广泛，包括网页、高质量 PDF（用 Qwen2.5-VL/Qwen2.5 抽取优化）、以及用领域专家模型合成的代码和数学数据。</li>\n      <li><strong>知识密集强化 (5T+ tokens):</strong> 针对性提升 STEM、推理、编程能力。</li>\n      <li><strong>长文本适应 (高质量长数据，32K ctx):</strong> 采用“渐进式长文本预训练”技术，优化长序列处理。</li>\n     </ol></li>\n   </ul>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-base.jpg\" alt=\"Qwen3 训练\"></p>\n   <ul>\n    <li>\n     <p><strong>四阶段后训练 (对齐):</strong></p>\n     <ol>\n      <li><strong>CoT 冷启动 (SFT):</strong> 注入基础的逐步推理能力。</li>\n      <li><strong>CoT 强化学习 (RL):</strong> 深度优化复杂推理和探索能力（规则奖励）。</li>\n      <li><strong>混合模式融合 (SFT):</strong> 将快速响应能力无缝融入思考模型（利用增强模型生成的数据）。</li>\n      <li><strong>通用能力与安全强化 (RL):</strong> 在 20+ 领域全面提升指令遵循、格式遵循、Agent 能力，并进行安全对齐。</li>\n     </ol></li>\n   </ul>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/post-training.png\" alt=\"Qwen3 训练\"></p>\n   <p>这套复杂的流程，确保了 Qwen3 不仅知识渊博，更能“思深、行速”，并且安全可靠。</p>\n   <h3 id=\"立刻尝鲜获取体验与生态影响\"><a class=\"anchor\" href=\"#立刻尝鲜获取体验与生态影响\"><span class=\"icon icon-link\"></span></a>立刻尝鲜！获取、体验与生态影响</h3>\n   <p><img src=\"https://media.ginonotes.com/images/20250429-qwen3-released/qwen3-chat.png\" alt=\"Qwen3 训练\"></p>\n   <p>现在，你就可以亲自体验 Qwen3 的魅力：</p>\n   <ul>\n    <li><strong>在线体验：</strong>\n     <ul>\n      <li>Qwen Chat 官网：<a href=\"https://chat.qwen.ai/\">https://chat.qwen.ai/</a> (默认已是 Qwen3 旗舰模型)</li>\n      <li>通义官网/APP: <a href=\"https://www.tongyi.com/qianwen/\">https://www.tongyi.com/qianwen/</a></li>\n     </ul></li>\n    <li><strong>模型下载与部署：</strong>\n     <ul>\n      <li>官方博客：<a href=\"https://qwenlm.github.io/blog/qwen3/\">https://qwenlm.github.io/blog/qwen3/</a></li>\n      <li>GitHub: <a href=\"https://github.com/QwenLM/Qwen3\">https://github.com/QwenLM/Qwen3</a></li>\n      <li>Hugging Face: <a href=\"https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f\">https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f</a> (包含 Base 模型)</li>\n      <li>魔搭社区：<a href=\"https://modelscope.cn/collections/Qwen3-9743180bdc6b48\">https://modelscope.cn/collections/Qwen3-9743180bdc6b48</a></li>\n     </ul></li>\n    <li><strong>部署工具：</strong> 推荐 SGLang, vLLM；本地可用 Ollama, LMStudio, MLX 等。</li>\n   </ul>\n   <p>值得注意的是，Qwen 系列凭借其高质量基座和易于微调的特性，早已是许多开发者和研究者（尤其在 RL 领域）的首选。Qwen3 的全面升级，很可能使其成为更多实际应用场景的“<strong>默认模型</strong>”。</p>\n   <h3 id=\"展望加速迈向训练智能体的新时代\"><a class=\"anchor\" href=\"#展望加速迈向训练智能体的新时代\"><span class=\"icon icon-link\"></span></a>展望：加速迈向“训练智能体”的新时代</h3>\n   <p>Qwen 团队在博客结尾也指明了未来方向：继续扩大规模、拓展多模态、优化长链推理…… 更重要的是，他们强调，我们正在<strong>从“训练模型”的时代，加速过渡到“训练智能体”的新时代</strong>。</p>\n   <p>Qwen3 的发布，正是这一转变中的坚实一步。</p>\n   <h3 id=\"结语\"><a class=\"anchor\" href=\"#结语\"><span class=\"icon icon-link\"></span></a>结语</h3>\n   <p>Qwen3 的到来，无疑为沉寂已久的 AI 开源领域注入了一剂强心针。它带来的不仅仅是性能榜单上的数字刷新，更是混合推理的创新架构、显著增强的 Agent 能力、前所未有的多语言覆盖，以及更优的成本效益。</p>\n   <p>它或许不是完美的终点，但在通往更强人工智能的道路上，Qwen3 确实点亮了一盏耀眼的新灯。</p>\n   <p>现在，轮到你亲自去探索它的能力了。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "阿里发布 Qwen3 系列大模型，创新混合推理架构并显著提升 Agent 能力，支持 119 种语言，重新定义开源 AI 标准",
+  "oneSentenceSummary": "阿里发布 Qwen3 系列大模型，创新混合推理架构并显著提升 Agent 能力，支持 119 种语言，重新定义开源 AI 标准",
+  "summary": "文章详细介绍了阿里最新发布的 Qwen3 系列大语言模型。该系列包含 8 款不同规模的模型，包括 2 款创新的 MoE 架构模型(Qwen3-235B-A22B 和 Qwen3-30B-A3B)和 6 款传统 Dense 模型，全面覆盖从云端到移动端的应用场景。Qwen3 最突出的创新是'混合推理'架构，允许模型在思考模式和非思考模式间智能切换，实现性能与效率的最佳平衡。同时，模型在多智能体协作(MCP)支持、多语言能力(支持 119 种语言)和部署成本优化(推理成本降低 60%)等方面都有显著提升。文章还深入解析了模型的三阶段预训练(海量数据打底、知识密集强化、长文本适应)和四阶段后训练(CoT 冷启动、CoT 强化学习、混合模式融合、通用能力与安全强化)的技术流程。Qwen3 采用 Apache 2.0 许可证完全开源，为 AI 开发者社区提供了强大的新工具，特别是在 Agent 应用生态方面将产生深远影响。",
+  "mainPoints": [
+    {
+      "point": "混合推理架构实现性能与效率的智能平衡",
+      "explanation": "Qwen3 创新的 Thinking/Non-Thinking 模式切换机制，可根据任务复杂度自动调整推理深度，显著提升效率同时保持高质量输出"
+    },
+    {
+      "point": "多语言支持扩展至 119 种语言",
+      "explanation": "从 Qwen2 的 29 种语言大幅扩展到 119 种，使 AI 技术能够服务更广泛的全球用户群体，体现了强大的国际化能力"
+    },
+    {
+      "point": "Agent 能力显著增强推动应用生态发展",
+      "explanation": "对 MCP 协议的原生支持和工具调用能力的提升，使 Qwen3 成为构建复杂智能体应用的理想基座模型"
+    },
+    {
+      "point": "开源模型性能达到闭源顶尖水平",
+      "explanation": "旗舰 Qwen3-235B-A22B 在多项基准测试中表现优异，可与 Grok-3、Gemini-2.5-Pro 等顶尖闭源模型竞争"
+    },
+    {
+      "point": "创新的训练流程确保模型质量",
+      "explanation": "三阶段预训练和四阶段后训练的对齐过程，确保了模型在知识广度、推理深度和响应速度上的卓越表现"
+    }
+  ],
+  "keyQuotes": [
+    "Qwen3 将这两种能力无缝集成到了同一个模型内部",
+    "简单任务节省算力，复杂任务保证效果，真正做到'好钢用在刀刃上'",
+    "国内的 Agent 工具都在等它。Qwen3 的升级，无疑为整个 Agent 应用生态注入了强心剂",
+    "所有模型均采用 Apache 2.0 许可证，开发者可以自由使用和免费商用",
+    "从'训练模型'的时代，加速过渡到'训练智能体'的新时代",
+    "Qwen3 确实点亮了一盏耀眼的新灯"
+  ],
+  "tags": [
+    "大语言模型",
+    "混合专家系统",
+    "AI推理",
+    "智能体开发",
+    "开源AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 91,
+  "wordCount": 2965,
+  "domain": "ginonotes.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7e580d",
+  "sourceName": "Gino Notes",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745884800000,
+  "publishDateStr": "2025-04-29",
+  "publishDateTimeStr": "2025-04-29 00:00:00"
+}

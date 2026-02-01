@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a46b8f5f",
+  "title": "狙击 Gemini 3！OpenAI 发布 GPT-5.1-Codex-Max",
+  "url": "https://www.qbitai.com/2025/11/354582.html",
+  "date": "2025-11-20 08:08:41",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" spellcheck=\"false\" data-track=\"1\" data-pm-slice=\"0 0 []\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" spellcheck=\"false\" data-track=\"1\" data-pm-slice=\"0 0 []\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">Gemini 3力压全场，OpenAI坐不住了。</p>\n  <p data-track=\"3\">发布Codex新版本——<strong>GPT-5.1-Codex-Max</strong>，突破上下文窗口限制，实现跨越数百万token的长时间连续工作，最长超过24小时的那种。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_28c73097dd204c77a03412f2cd4f3fd8.png\" data-ic=\"false\" data-width=\"1044\" data-height=\"464\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">新模型任务效率也更高。它做的太阳系引力沙盒和上一代GPT-5.1-Codex的对比是这样的（多加了几个“太阳”看引力效果）：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/a22a9d811369a237d74e2ba62a1423b6.gif\" data-ic=\"false\" data-width=\"1079\" data-height=\"595\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/d86c3c32bfbf491e6a6481ec955ed346.gif\" data-ic=\"false\" data-width=\"1080\" data-height=\"597\" data-ic-uri=\"\">\n  </div>\n  <p class=\"pgc-h-forward-slash\" spellcheck=\"false\" data-track=\"5\">△上：GPT-5.1-Codex-Max 下：GPT-5.1-Codex</p>\n  <p data-track=\"6\">资源消耗是这样的：</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_8414a4d37dd06dfd4a993ea6afd7b565.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"257\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">于是，奥特曼昨天刚夸完Gemini 3，今天又赶来给自家GPT-5.1-Codex-Max站台，咱说这也太忙了（doge）。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_0ce66bccb591d3cd943d80e54c71dc69.png\" data-ic=\"false\" data-width=\"964\" data-height=\"1084\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"8\">新版本在METR达到新SOTA。这个指标衡量的是，用<strong>人类做任务的时间</strong>当参照，看AI有一半概率能搞定同款任务的能力。</p>\n  <p data-track=\"9\">其实就是先看人类做某类软件工程任务得花X小时，然后看AI模型能不能有50%的概率，把这项任务给完成了。</p>\n  <p data-track=\"10\">上面数据说明，在这种情况下，GPT-5-Codex-Max有50%的概率能够成功完成一项原本需要人类2小时42分钟完成的软件工程任务。</p>\n  <p data-track=\"11\">这比GPT-5对标的时间还多了25分钟。</p>\n  <p data-track=\"13\">AI编程现在这么火，各家也都在奋力加码自家模型。</p>\n  <p data-track=\"14\">在这个前沿赛道，模型处理复杂任务的推理能力、持久力与稳定性，始终是衡量效能的关键指标。</p>\n  <p data-track=\"15\">而GPT-5.1-Codex-Max这次也是做了大升级。</p>\n  <p data-track=\"16\">首先，它在PR创建、代码审查等实际软件工程任务中训练，推理变得更快更有效。也是OpenAI首个能在Windows环境中的模型。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_6789f1328e163987dd4115bca3e5ead2.png\" data-ic=\"false\" data-width=\"670\" data-height=\"910\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">在SWE-bench Verified测试中，同样medium推理力度下，它比之前的GPT‑5.1-Codex性能更好，且思考<strong>token使用减少了30%</strong>。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_9fbd0fa0442e0991c7bbfea46533905f.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"933\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">而且针对非延迟敏感任务还推出了<strong>xhigh</strong>推理力度选项，思考时间更长答案更好。</p>\n  <p data-track=\"19\">说到思考时间长，这次的新版本对于长时间运行任务的处理也比较出色，能够实现“超长待机”，跨多个上下文窗口连贯工作。</p>\n  <p data-track=\"20\">这是因为GPT-5.1-Codex-Max原生支持<strong>压缩</strong>，突破了上下文窗口限制。</p>\n  <p data-track=\"21\">具体来说，在接近上下文窗口限制时，模型会自动压缩对话，获得新上下文窗口然后继续任务，直到完成。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/9750798e50979c09eabe48a5a43982f9.gif\" data-ic=\"false\" data-width=\"600\" data-height=\"588\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">在内部评估中，它能一次独立运行超过24小时，连贯处理数百万个token。</p>\n  <p data-track=\"23\">看样子，新模型在处理长运行、高强度的任务上比较有优势。</p>\n  <p data-track=\"24\">比如，它在应对书籍、长文档分析等超长篇幅任务时，就无需拆分内容，避免信息割裂产生的理解偏差。</p>\n  <p data-track=\"25\">也能支撑高负载、长周期的持续工作。</p>\n  <p data-track=\"26\">OpenAI研究员Noam Brown对此表示：（虽然现在表现就很不错但）尚未遇到瓶颈，还没达到极限。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_1f79344ecf829d8ab2d0c7d408719855.png\" data-ic=\"false\" data-width=\"936\" data-height=\"1130\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\">目前，GPT-5.1-Codex-Max已在Codex中支持与CLI、IDE扩展、云端和代码审查工具结合使用，API接口很快也会上线。</p>\n  <p data-track=\"28\">当然了，新的编程模型一出，Claude是肯定会被拉出来遛一下的。</p>\n  <blockquote>\n   <p data-track=\"29\">相比之下，Claude Code速度更快。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_55b5add93efae96db38e19a0e8ca69db.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"169\" data-ic-uri=\"\">\n  </div>\n  <blockquote>\n   <p data-track=\"30\">新版Codex的token消耗量更友好。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_a769bbc67af9f3e01e7658ecbd94816a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"158\" data-ic-uri=\"\">\n  </div>\n  <blockquote>\n   <p data-track=\"31\">或许，Claude和Codex的组合拳更能打。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_f28692b89a32a7ed1cb44e91d30c060a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"183\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">一天时间，Gemini 3、Grok 4.1 Fast、GPT-5.1-Codex-Max都来了，好一个硅谷345组团上新（doge）。</p>\n  <p data-track=\"34\">这位网友你<s>真相了</s>说得有道理。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_87cbf2d25a6d24f9ab510bae2918a3ee.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"78\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"35\">实际上，OpenAI这次还悄悄发布了GPT-5.1 Pro。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_e8cfb0d81faa038fd9e1c6334248e22e.png\" data-ic=\"false\" data-width=\"952\" data-height=\"766\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">虽然官方介绍仅有寥寥几笔，但通过第三方测评来看，这个Pro版本看上去还是有点东西的。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_73ab8dca06f21d11d4b3cc3c0147f9c9.png\" data-ic=\"false\" data-width=\"952\" data-height=\"1192\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"37\">尤其是在指令遵循方面做得更好。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_127540521e2fc685a89dd1df18145fe4.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"255\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">虽然在一定程度上和Gemini 3有差距，但如果能接入IDE，将发挥出更大的潜力。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251120100746_9f993d4d2609b896958ed96717faffe6.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"425\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"39\">参考链接：\n   <br>\n   [1]https://x.com/polynoamial\n   <br>\n   [2]https://openai.com/index/gpt-5-1-codex-max/\n   <br>\n   [3]https://x.com/sama/status/1991258606168338444\n   <br>\n   [4]https://x.com/OpenAI/status/1991266192905179613\n   <br>\n   [5]https://news.ycombinator.com/item?id=45982649\n   <br>\n   [6]https://x.com/mattshumer_/status/1991263717820948651</p>\n  <p data-track=\"40\">— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 GPT-5.1-Codex-Max，该模型通过原生压缩技术突破上下文窗口限制，实现长时间连续工作，并在软件工程任务中展现出更高的效率和资源优化。",
+  "oneSentenceSummary": "OpenAI 发布 GPT-5.1-Codex-Max，该模型通过原生压缩技术突破上下文窗口限制，实现长时间连续工作，并在软件工程任务中展现出更高的效率和资源优化。",
+  "summary": "文章详细介绍了 OpenAI 新发布的 GPT-5.1-Codex-Max 模型，旨在应对 Google Gemini 3 的竞争。该模型的核心亮点在于通过原生压缩技术，突破了传统上下文窗口限制，能够实现跨越数百万 token 的超 24 小时连续工作。在软件工程任务中，GPT-5.1-Codex-Max 在 METR 指标上达到新 SOTA，并在 SWE-bench Verified 测试中表现优于前代，同时思考 token 使用量减少 30%。文章还提到该模型是 OpenAI 首个支持 Windows 环境的模型，并提供了 xhigh 推理力度选项以获得更优答案。此外，文章简要提及了同期发布的 GPT-5.1 Pro 及其在指令遵循方面的提升，并将其与 Claude Code 进行了对比，强调了 AI 编程领域竞争的激烈态势。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.1-Codex-Max 突破上下文限制，实现超长待机",
+      "explanation": "通过原生压缩技术，模型能够处理数百万 token，连续工作超过 24 小时，显著提升了处理长篇幅、高强度任务的能力，避免信息割裂。"
+    },
+    {
+      "point": "新模型在软件工程任务中效率更高且资源优化",
+      "explanation": "GPT-5.1-Codex-Max 在 METR 和 SWE-bench Verified 测试中表现出色，思考 token 使用量减少 30%，并支持 Windows 环境，提升了实际开发效率和应用范围。"
+    },
+    {
+      "point": "AI 编程助手市场竞争激烈，模型能力持续演进",
+      "explanation": "OpenAI、Google 等巨头不断推出更强大的编程模型，聚焦推理能力、持久力和稳定性，推动 AI 在软件开发领域的应用和创新。"
+    }
+  ],
+  "keyQuotes": [
+    "发布 Codex 新版本------GPT-5.1-Codex-Max，突破上下文窗口限制，实现跨越数百万 token 的长时间连续工作，最长超过 24 小时的那种。",
+    "新版本在 METR 达到新 SOTA。这个指标衡量的是，用人类做任务的时间当参照，看 AI 有一半概率能搞定同款任务的能力。",
+    "这是因为 GPT-5.1-Codex-Max 原生支持压缩，突破了上下文窗口限制。",
+    "在内部评估中，它能一次独立运行超过 24 小时，连贯处理数百万个 token。",
+    "目前，GPT-5.1-Codex-Max 已在 Codex 中支持与 CLI、IDE 扩展、云端和代码审查工具结合使用，API 接口很快也会上线。"
+  ],
+  "tags": [
+    "大语言模型",
+    "OpenAI",
+    "GPT-5.1-Codex-Max",
+    "AI编程",
+    "上下文窗口"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 93,
+  "wordCount": 1429,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763626121000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 08:08:41"
+}

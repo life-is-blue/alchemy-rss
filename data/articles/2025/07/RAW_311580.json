@@ -1,0 +1,55 @@
+{
+  "id": "RAW_311580",
+  "title": "GLM-4.5：推理、编码与智能代理能力",
+  "url": "https://simonwillison.net/2025/Jul/28/glm-45/#atom-everything",
+  "date": "2025-07-28 16:56:42",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://z.ai/blog/glm-4.5\">GLM-4.5: Reasoning, Coding, and Agentic Abililties</a></strong>. Another day, another significant new open weight model release from a Chinese frontier AI lab.</p>\n   <p>This time it's Z.ai - who rebranded (at least in English) from <a href=\"https://en.wikipedia.org/wiki/Zhipu_AI\">Zhipu AI</a> a few months ago. They just dropped <a href=\"https://huggingface.co/zai-org/GLM-4.5-Base\">GLM-4.5-Base</a>, <a href=\"https://huggingface.co/zai-org/GLM-4.5\">GLM-4.5</a> and <a href=\"https://huggingface.co/zai-org/GLM-4.5-Air\">GLM-4.5 Air</a> on Hugging Face, all under an MIT license.</p>\n   <p>These are MoE hybrid reasoning models with thinking and non-thinking modes, similar to Qwen 3. GLM-4.5 is 355 billion total parameters with 32 billion active, GLM-4.5-Air is 106 billion total parameters and 12 billion active.</p>\n   <p>They started using MIT a few months ago for their <a href=\"https://huggingface.co/collections/zai-org/glm-4-0414-67f3cbcb34dd9d252707cb2e\">GLM-4-0414</a> models - their older releases used a janky non-open-source custom license.</p>\n   <p>Z.ai's own benchmarking (across 12 common benchmarks) ranked their GLM-4.5 3rd behind o3 and Grok-4 and just ahead of Claude Opus 4. They ranked GLM-4.5 Air 6th place just ahead of Claude 4 Sonnet. I haven't seen any independent benchmarks yet.</p>\n   <p>The other models they included in their own benchmarks were o4-mini (high), Gemini 2.5 Pro, Qwen3-235B-Thinking-2507, DeepSeek-R1-0528, Kimi K2, GPT-4.1, DeepSeek-V3-0324. Notably absent: any of Meta's Llama models, or any of Mistral's. Did they deliberately only compare themselves to open weight models from other Chinese AI labs?</p>\n   <p>Both models have a 128,000 context length and are trained for tool calling, which honestly feels like table stakes for any model released in 2025 at this point.</p>\n   <p>It's interesting to see them use Claude Code to run their own coding benchmarks:</p>\n   <blockquote>\n    <p>To assess GLM-4.5's agentic coding capabilities, we utilized Claude Code to evaluate performance against Claude-4-Sonnet, Kimi K2, and Qwen3-Coder across 52 coding tasks spanning frontend development, tool development, data analysis, testing, and algorithm implementation. [...] The empirical results demonstrate that GLM-4.5 achieves a 53.9% win rate against Kimi K2 and exhibits dominant performance over Qwen3-Coder with an 80.8% success rate. While GLM-4.5 shows competitive performance, further optimization opportunities remain when compared to Claude-4-Sonnet.</p>\n   </blockquote>\n   <p>They published the dataset for that benchmark as <a href=\"https://huggingface.co/datasets/zai-org/CC-Bench-trajectories\">zai-org/CC-Bench-trajectories</a> on Hugging Face. I think they're using the word \"trajectory\" for what I would call a chat transcript.</p>\n   <blockquote>\n    <p>Unlike DeepSeek-V3 and Kimi K2, we reduce the width (hidden dimension and number of routed experts) of the model while increasing the height (number of layers), as we found that deeper models exhibit better reasoning capacity.</p>\n   </blockquote>\n   <p>They pre-trained on 15 trillion tokens, then an additional 7 trillion for code and reasoning:</p>\n   <blockquote>\n    <p>Our base model undergoes several training stages. During pre-training, the model is first trained on 15T tokens of a general pre-training corpus, followed by 7T tokens of a code &amp; reasoning corpus. After pre-training, we introduce additional stages to further enhance the model's performance on key downstream domains.</p>\n   </blockquote>\n   <p>They also open sourced their post-training reinforcement learning harness, which they've called <strong>slime</strong>. That's available at <a href=\"https://github.com/THUDM/slime\">THUDM/slime</a> on GitHub - THUDM is the Knowledge Engineer Group @ Tsinghua University, the University from which Zhipu AI spun out as an independent company.</p>\n   <p>This time I ran my <a href=\"https://simonwillison.net/tags/pelican-riding-a-bicycle/\">pelican bechmark</a> using the <a href=\"https://chat.z.ai/\">chat.z.ai</a> chat interface, which offers free access (no account required) to both GLM 4.5 and GLM 4.5 Air. I had reasoning enabled for both.</p>\n   <p>Here's what I got for \"Generate an SVG of a pelican riding a bicycle\" on <a href=\"https://chat.z.ai/s/014a8c13-7b73-40e8-bbf9-6a94482caa2e\">GLM 4.5</a>. I like how the pelican has its wings on the handlebars:</p>\n   <p><img alt=\"Description by Claude Sonnet 4: This is a whimsical illustration of a white duck or goose riding a red bicycle. The bird has an orange beak and is positioned on the bike seat, with its orange webbed feet gripping what appears to be chopsticks or utensils near the handlebars. The bicycle has a simple red frame with two wheels, and there are motion lines behind it suggesting movement. The background is a soft blue-gray color, giving the image a clean, minimalist cartoon style. The overall design has a playful, humorous quality to it.\" src=\"https://static.simonwillison.net/static/2025/glm-4.5-pelican.jpg\"></p>\n   <p>And <a href=\"https://chat.z.ai/s/e772675c-3445-4cff-903c-6faa3d6b9524\">GLM 4.5 Air</a>:</p>\n   <p><img alt=\"Description by Claude Sonnet 4: This image shows a cute, minimalist illustration of a snowman riding a bicycle. The snowman has a simple design with a round white body, small black dot for an eye, and an orange rectangular nose (likely representing a carrot). The snowman appears to be in motion on a black bicycle with two wheels, with small orange arrows near the pedals suggesting movement. There are curved lines on either side of the image indicating motion or wind. The overall style is clean and whimsical, using a limited color palette of white, black, orange, and gray against a light background.\" src=\"https://static.simonwillison.net/static/2025/glm-4.5-air-pelican.jpg\"></p>\n   <p>Ivan Fioravanti <a href=\"https://x.com/ivanfioravanti/status/1949854575902523399\">shared a video</a> of the <a href=\"https://huggingface.co/mlx-community/GLM-4.5-Air-4bit\">mlx-community/GLM-4.5-Air-4bit</a> quantized model running on a M4 Mac with 128GB of RAM, and it looks like a very strong contender for a local model that can write useful code. The cheapest 128GB Mac Studio costs around $3,500 right now, so genuinely great open weight coding models are creeping closer to being affordable on consumer machines.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/8897/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了 Z.ai 发布的新开源 GLM-4.5 系列 LLM。文章重点介绍了这些模型在推理、编码和 Agent 能力方面的优势，以及它们在 MIT 许可证下的可用性。",
+  "oneSentenceSummary": "本文详细介绍了 Z.ai 发布的新开源 GLM-4.5 系列 LLM。文章重点介绍了这些模型在推理、编码和 Agent 能力方面的优势，以及它们在 MIT 许可证下的可用性。",
+  "summary": "本文宣布了 Z.ai (前身为智谱 AI) 新的开源大型语言模型的重要更新：GLM-4.5-Base、GLM-4.5 和 GLM-4.5 Air，所有这些模型都可以在 Hugging Face 上以 MIT 许可证获得。这些模型被描述为具有独特的思考和非思考模式的混合专家模型 (MoE) 混合推理模型，类似于 Qwen 3。提供了关键的技术规格，例如总参数量 3550 亿，激活参数量 320 亿（GLM-4.5），以及 128，000 的上下文长度。值得注意的是，Z.ai 采用了增加模型层数、减少模型宽度的“加深”架构设计，他们发现这种设计可以增强推理能力。Z.ai 的内部基准测试将 GLM-4.5 与 Grok-4 和 Claude Opus 4 等顶级模型进行了竞争性比较，尤其是在编码任务中，他们定制的基准数据集 (CC-Bench-trajectories) 也是开源的。这些模型在 15 万亿分词 (Tokens) 加上额外的 7 万亿代码和推理分词 (Tokens) 上进行了预训练。此外，Z.ai 还开源了由 THUDM (清华大学) 开发的后期训练强化学习训练框架 (RL harness)“slime”。作者还分享了通过 chat.z.ai 使用 GLM 4.5 模型的个人测试结果，并指出了在消费级硬件上进行本地部署的潜力。",
+  "mainPoints": [
+    {
+      "point": "Z.ai 的 GLM-4.5 系列，包括 GLM-4.5 和 GLM-4.5 Air，作为 MIT 许可证下的开源 MoE 模型发布。",
+      "explanation": "这标志着对开源 AI 社区的重大贡献，为更广泛的采用和开发提供了具有先进推理和编码能力的强大的新模型。"
+    },
+    {
+      "point": "这些模型在推理和编码方面表现出强大的性能，具有独特的“更深”的架构设计。",
+      "explanation": "Z.ai 的基准测试显示了与领先的专有和开源模型相比具有竞争力的结果，强调了他们通过增加层数而不是宽度来增强推理能力的关注。"
+    },
+    {
+      "point": "关键的训练组件，包括编码基准数据集和“slime” RL 工具，也是开源的。",
+      "explanation": "这种对开源不仅包括模型，还包括其开发工具和数据集的承诺，促进了透明度并加速了更广泛的 AI 生态系统中的研究和开发。"
+    }
+  ],
+  "keyQuotes": [
+    "又一天，来自中国前沿 AI 实验室的又一个重要的新开源模型发布。",
+    "这些是具有思考和非思考模式的 MoE 混合推理模型，类似于 Qwen 3。",
+    "这两种模型都具有 128，000 的上下文长度，并经过工具调用训练，这已成为 2025 年发布模型的必备特性。",
+    "与 DeepSeek-V3 和 Kimi K2 不同，我们减少了模型的宽度（隐藏维度和路由专家的数量），同时增加了高度（层数），因为我们发现更深的模型表现出更好的推理能力。",
+    "我们的基础模型经历了几个训练阶段。在预训练期间，该模型首先在 15T 分词 (Tokens) 的通用预训练语料库上进行训练，然后在 7T 分词 (Tokens) 的代码和推理语料库上进行训练。"
+  ],
+  "tags": [
+    "LLM",
+    "开源 AI",
+    "Z.ai",
+    "GLM-4.5",
+    "混合专家模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 609,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753721802000,
+  "publishDateStr": "2025-07-28",
+  "publishDateTimeStr": "2025-07-28 16:56:42"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_bdc3d5a2",
+  "title": "AWS 在 ECR 中引入远程构建缓存机制，以加速 Docker 镜像构建",
+  "url": "https://www.infoq.com/news/2025/11/aws-remote-build-cache-docker/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-17 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Amazon Web Services has <a href=\"https://aws.amazon.com/blogs/containers/announcing-remote-cache-support-in-amazon-ecr-for-buildkit-clients\">announced enhancements</a> to its <a href=\"https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html\">CodeBuild </a>service, allowing teams to use <a href=\"https://aws.amazon.com/ecr/\">Amazon ECR</a> as a remote Docker layer cache, significantly reducing image build times in CI/CD pipelines. By leveraging ECR repositories to persist and reuse build layers across runs, organisations can skip rebuilding unchanged parts of containers and accelerate delivery.</p>\n   <p dir=\"ltr\">The blog outlines how <a href=\"https://docs.docker.com/build/buildkit/\">Docker BuildKit</a> support enables commands such as --cache-from and --cache-to pointing to ECR-based cache images, allowing CodeBuild-initiated builds to pull cached layers from previous runs and push updated cache layers back to ECR. As a result, rebuilds can skip large parts of the Dockerfile when base layers remain unchanged, improving developer feedback loops and reducing build resource consumption.</p>\n   <p dir=\"ltr\">AWS emphasises that this approach addresses one of the major bottlenecks in container-based CI/CD: rebuild times driven by repeatedly constructing heavy dependency layers. The remote caching model complements existing local caching options and provides a more reliable, global cache across frequent builds and multiple agents.</p>\n   <p dir=\"ltr\">To implement the solution, users configure their build pipelines to push an image representing the cache (often using a separate tag) to ECR, then reference it in subsequent builds. Over time, as the cache accumulates, build durations drop significantly because the Docker engine bypasses unchanged layers. AWS <a href=\"https://elasticscale.com/blog/optimizing-aws-codebuild-for-faster-docker-builds\">notes</a> that cache effectiveness depends on how changes propagate through the Dockerfile and how well the cache is structured; optimisations such as multi-stage builds and layer ordering enhance gains.</p>\n   <p dir=\"ltr\">The setup is straightforward. Developers create an ECR repository to store cached image layers, grant CodeBuild permissions to push and pull from it, and enable BuildKit within their build environment. From there, CodeBuild can automatically pull previously built layers from ECR before building new ones and push updated cache layers once the build completes. This process drastically reduces redundant rebuilds, improving build efficiency and developer productivity.</p>\n   <p dir=\"ltr\">A typical configuration involves defining environment variables and commands in the project's buildspec.yml. During the pre-build phase, CodeBuild authenticates with ECR and pulls the cache image if it exists. The build phase runs Docker with BuildKit enabled, specifying the ECR cache as both the source and destination for layer reuse. In the post-build phase, updated cache layers are pushed back to ECR for use in future builds.</p>\n   <p dir=\"ltr\">According to the blog post, early adopters report substantial time savings, with builds that previously took 10-15 minutes now completing in under five minutes when cache reuse is high. One user <a href=\"https://dev.to/aws-builders/how-to-speed-up-aws-codebuild-docker-builds-by-25-or-more-using-ecr-as-a-remote-cache-1a8m\">posted</a> how they were able to reduce their build times from 6 to 2 minutes as a result of this new feature. The improvement is particularly noticeable for projects that rely on large dependency layers or multi-stage Docker builds. AWS notes that optimal performance depends on consistent Dockerfile layer ordering and frequent cache refreshes to avoid stale dependencies.</p>\n   <p dir=\"ltr\">This approach aligns AWS with a broader industry shift toward smarter caching and reproducible builds. Competing CI/CD providers such as GitHub Actions and GitLab CI also offer remote caching solutions, GitHub through its Actions Cache service and GitLab via registry-based caching, but AWS's integration with ECR and BuildKit provides a more native, cloud-optimized workflow.</p>\n   <p dir=\"ltr\">By integrating Docker's native caching capabilities directly into its managed build environment, AWS continues to streamline the developer experience, bringing faster, more reliable builds to cloud-native teams. For organizations running large containerized workloads, this enhancement represents a significant step toward more efficient, cost-effective CI/CD pipelines.</p>\n   <p dir=\"ltr\">Overall, this update provides a practical lever for development teams seeking to improve pipeline speed and resource efficiency, especially in container-heavy organisations. By reusing cache layers stored in ECR, AWS CodeBuild users can shorten turnaround times, reduce compute cost, and improve build reliability.</p>\n   <p dir=\"ltr\">AWS is not alone with this approach to accelerating Docker image builds, as Google and Microsoft also offer something similar:</p>\n   <p dir=\"ltr\">With Cloud Build, Google <a href=\"https://cloud.google.com/docs/buildpacks/cache-images\">supports remote cache images</a> for container builds and Buildpacks. For example, when using buildpacks, you can specify a --cache-image flag pointing to a repository like LOCATION-docker.pkg.dev/PROJECT_ID/REPO_NAME/CACHE_IMAGE_NAME:latest to reuse previous build results.<a href=\"https://cloud.google.com/docs/buildpacks/cache-images?utm_source=chatgpt.com\"> </a>In addition, Cloud Build's <a href=\"https://docs.cloud.google.com/build/docs/optimize-builds/speeding-up-builds\">documentation</a> recommends using --cache-from for Docker builds to leverage cached layers stored in a registry.<a href=\"https://cloud.google.com/build/docs/optimize-builds/speeding-up-builds?utm_source=chatgpt.com\"> </a>These features mirror AWS's concept of using a remote registry as a cache, though Google emphasises Buildpacks and registry-based cache images rather than a dedicated \"image-layer cache\" mechanism built into the build service itself.</p>\n   <p dir=\"ltr\">Microsoft's Azure Pipelines supports caching of various build artifacts and dependencies, but when it comes to container layer caching, user community feedback suggests limitations. On self-hosted agents, you can implement Docker's --cache-from strategy and manage your own registry of cached layers, but on Microsoft-hosted agents, the experience can be brittle or less efficient. One user on <a href=\"https://www.reddit.com/r/devops/comments/jo8u67\">Reddit</a> observed:</p>\n   <p dir=\"ltr\">\"Azure Pipelines build pipeline with caching support for multi-stage Docker images... downloading the cache negated any benefits we got from the cache\"</p>\n   <p dir=\"ltr\">In short, while Azure supports caching tasks in pipelines, the end-to-end flow for Docker layer reuse is less mature compared with custom registry-based caching workflows.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Introduces Remote Build Cache in ECR to Accelerate Docker Image Builds\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/aws-remote-build-cache-docker/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763380800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 在 ECR 中为 CodeBuild 引入远程构建缓存支持，利用 Docker BuildKit 显著减少 CI/CD 管道中的 Docker 镜像构建时间。",
+  "oneSentenceSummary": "AWS 在 ECR 中为 CodeBuild 引入远程构建缓存支持，利用 Docker BuildKit 显著减少 CI/CD 管道中的 Docker 镜像构建时间。",
+  "summary": "为了解决基于容器的 CI/CD 中的一个关键瓶颈，AWS 引入了一项新功能，允许 Amazon ECR 作为 CodeBuild 的远程 Docker 镜像层缓存，利用 Docker BuildKit。此增强功能使得 Docker 镜像构建层可以在不同的运行和构建代理之间持久保存和重用，从而显著减少镜像构建时间。该实现包括配置构建管道，使其能够从 ECR 推送和拉取缓存层。 这样可以绕过未更改的 Dockerfile 段的冗余重建。AWS 强调，这种方法显著改善了开发人员的反馈循环，并减少了构建资源消耗。 这也符合更广泛的行业趋势，即智能缓存。早期采用者报告显著的时间节省，构建完成速度更快。文章还提供了竞争性概述，将 AWS 的解决方案与 Google Cloud Build 和 Azure Pipelines 的产品进行了比较，强调了 AWS 的原生云优化工作流程，例如与 ECR 和 BuildKit 的深度集成。",
+  "mainPoints": [
+    {
+      "point": "AWS CodeBuild 现在支持通过 ECR 使用 BuildKit 进行远程 Docker 镜像层缓存。",
+      "explanation": "此功能允许团队在 ECR 中持久保存和重用 Docker 镜像构建层，防止未更改部分的冗余重建。 这显著加速了 CI/CD 管道，从而提高效率。"
+    },
+    {
+      "point": "远程缓存机制为容器化工作负载提供了显著的时间和计算资源节省。",
+      "explanation": "早期的采用者已经看到构建时间减少了 50-75%，从而提高了开发人员的生产力和反馈循环，特别是对于具有大型依赖层或多阶段构建的项目。"
+    },
+    {
+      "point": "AWS ECR 集成的远程缓存提供原生云优化解决方案。",
+      "explanation": "与竞争的 CI/CD 平台相比，AWS 与 ECR 和 BuildKit 的直接集成简化了开发人员的体验，为云原生团队提供了更强大、更全球可访问的缓存。"
+    }
+  ],
+  "keyQuotes": [
+    "通过利用 ECR 存储库来持久保存和重用跨运行的构建层，组织可以跳过重建容器未更改的部分并加速交付。",
+    "AWS 强调，这种方法解决了基于容器的 CI/CD 中的主要瓶颈之一：由重复构建繁重的依赖层驱动的重建时间。",
+    "早期采用者报告显著的时间节省，原本需要 10-15 分钟的构建，现在在高缓存重用率下可在五分钟内完成。",
+    "通过将 Docker 的原生缓存功能直接集成到其托管构建环境中，AWS 继续简化开发人员的体验，为云原生团队带来更快、更可靠的构建。"
+  ],
+  "tags": [
+    "CI/CD",
+    "AWS",
+    "Docker",
+    "ECR",
+    "CodeBuild"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 813,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763380800000,
+  "publishDateStr": "2025-11-17",
+  "publishDateTimeStr": "2025-11-17 12:00:00"
+}

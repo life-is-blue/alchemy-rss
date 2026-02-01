@@ -1,0 +1,55 @@
+{
+  "id": "RAW_62400b2e",
+  "title": "破解 AI 对不同上下⽂位置的敏感度不⼀致，新框架使出\"解铃还须系铃人\"",
+  "url": "https://www.qbitai.com/2025/10/346004.html",
+  "date": "2025-10-26 04:15:35",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"42\">Pos2Distill团队 投稿</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"43\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">语言模型遭遇严重的位置偏见，即模型对不同上下⽂位置的敏感度不⼀致。模型倾向于过度关注输⼊序列中的特定位置，严重制约了它们在复杂推理、⻓⽂本理解以及模型评估等关键任务上的表现。</p>\n  <p data-track=\"3\">例如，在对⽐两个候选答案时，模型常因偏好⾸个选项⽽损害其作为评估器的公正性与可靠性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053747_d5231a59fc65f9e417ab0d170486518b.jpeg\" data-src=\"https://image.jido.dev/20251026053747_d5231a59fc65f9e417ab0d170486518b.jpeg\">\n  </div>\n  <p data-track=\"4\">针对这⼀挑战，论⽂提出了 Pos2Distill，⼀个创新的“位置到位置”蒸馏框架。该框架旨在将模型在优势位置的强⼤能⼒迁移⾄劣势位置，从⽽有效缓解位置偏⻅。</p>\n  <p data-track=\"5\">其核⼼思想恰如古语所云：“解铃还须系铃⼈”，利⽤模型⾃⾝已习得的知识，来纠正其⾃⾝的系统性偏差。</p>\n  <p data-track=\"6\">其基本原理可以概括为：利⽤位置本⾝造成的性能不均衡，来对抗位置偏差这⼀问题。</p>\n  <p data-track=\"7\">团队发现，位置偏差在“检索”和“推理”这两类任务中诱发的表现不同，因此基于上述核⼼原理，团队分别设计了两种专⻔的实现⽅案：Pos2Distill-R1和Pos2Distill-R2。</p>\n  <p data-track=\"8\">采⽤Pos2Distill⽅法后，模型在⻓⽂本检索和推理任务中的所有位置上都表现出更好的⼀致性，这两个专⻔设计的系统不仅在各⾃对应的任务上表现优异，彼此之间还表现出很强的跨任务泛化能⼒。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_883a91f71b438b7c810277f5b7409c8b.png\" data-src=\"https://image.jido.dev/20251026053746_883a91f71b438b7c810277f5b7409c8b.png\">\n  </div>\n  <p data-track=\"9\"><strong>已有的工作：</strong>在信息丰富的场景中，例如检索增强⽣成、⻓上下⽂推理以及将⼤语⾔模型（LLM）⽤作评判者等，位置偏差构成了重⼤障碍。当关键信息被任意分布在输⼊的各个位置时，LLM 常常⽆法有效识别和整合这些核 ⼼内容，最终导致其在各种应⽤中出现意外的失败。为缓解PB问题：</p>\n  <p data-track=\"10\"><strong>一类工作</strong>试图通过修改与上下⽂敏感度不均相关的关键架构组件或内部表示来进⾏减轻位置偏见。然⽽，尽管近期在缩⼩性能差距⽅⾯取得了⼀些进展，模型在“优势位置”和“劣势位置”之间的信息利⽤率依然存在巨⼤差异。</p>\n  <p data-track=\"11\"><strong>另⼀类研究⽅法</strong>则采⽤了密集的上下⽂感知训练，通过合成具有细粒度信息感知的训练数据来提升模型性能。但是，这类数据驱动的⽅法通常在数据合成和计算资源⽅⾯都需付出⾼昂的成本。</p>\n  <p data-track=\"12\"><strong>因此，学术界和⼯业界迫切需要⼀种能够克服这些局限、既有效⼜⾼效的策略来缓解PB。</strong></p>\n  <p data-track=\"14\"><strong>先导实验：</strong>分析揭示，PB在“检索”和“推理”这两种不同的任务范式下表现出不同的⾏为。</p>\n  <p data-track=\"15\"><strong>Natural PB for Retrieval：</strong>在检索任务 （retrieval）中，PB主要表现为“词元偏移”（token-shifting），即在黄金文档所处位置不同，大部分的response具有相似的前缀，只在关键的生成位置发生分歧，由此诱发retrieval的失败。 一旦这些错误的token能够被修正，模型又可以输出正确的答案；</p>\n  <p data-track=\"16\"><strong>Compound PB for Reasoning：</strong>在推理任务中，PB 既体现在检索过程中的变化，也体现在推理过程中发生的改变，最终导致思维链条的偏移（thought shifting）。因此，至关重要的是通过整合真正相关的信息与推理链来重塑整体的响应轨迹。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053748_6abda45860de487b07d9ad150ae67ed0.png\" data-src=\"https://image.jido.dev/20251026053748_6abda45860de487b07d9ad150ae67ed0.png\">\n  </div>\n  <p data-track=\"17\">针对这两种情况相应地开发了两个系统：Pos2Distill-R1 和 Pos2Distill-R2。Pos2Distill-R1 通过引⼊ KL 散度（Kullback-Leibler divergence）损失来提供细粒度的纠正信号，从⽽缓解检索任务中的“词元偏移”。</p>\n  <p data-track=\"18\">Pos2Distill-R2 则通过蒸馏来⾃优势位置输⼊的优质CoT响应，来指导和纠正劣势位置的推理轨迹，从⽽解决推理任务中的“思维偏移”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_6e260fa6f19f9b9072af6ebcd07334cc.png\" data-src=\"https://image.jido.dev/20251026053746_6e260fa6f19f9b9072af6ebcd07334cc.png\">\n  </div>\n  <p data-track=\"19\"><strong>算法设计（Pos2Distill-R1 for Retrieval）：</strong>\n   <br>\n   该框架由两个核心模块组成：如图 4a 所示的<strong>平凡位置激活</strong>和<strong>优势位置锚定</strong>。前者促进将高表现的优势位置中的有效处理能力迁移至利用不足的无效位置；后者确保优势位置已建立性能的保持，从而缩小无效位置与优势位置之间的差距。</p>\n  <p data-track=\"20\"><strong>平凡位置激活：</strong>为纠正 token shifting 行为，在每个生成步骤中利用 KL 散度作为细粒度的对齐信号。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053747_c90cb4a9ea11d1a0be1371f879490546.png\" data-src=\"https://image.jido.dev/20251026053747_c90cb4a9ea11d1a0be1371f879490546.png\">\n  </div>\n  <p data-track=\"21\"><strong>位置感知的对齐：</strong>PB引发的优势位置与不同平凡位置之间的对齐难度具有位置依赖性，因此具有高对齐难度的位置应该优先实施梯度更新。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_91efdeac89174423293f904d31040376.jpeg\" data-src=\"https://image.jido.dev/20251026053746_91efdeac89174423293f904d31040376.jpeg\">\n  </div>\n  <p data-track=\"22\">因此激活平凡位置的损失为：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053747_9584c80dfaf37adbfbc3e0baf2c9fbae.jpeg\" data-src=\"https://image.jido.dev/20251026053747_9584c80dfaf37adbfbc3e0baf2c9fbae.jpeg\">\n  </div>\n  <p data-track=\"23\"><strong>优势位置的锚定：</strong>在蒸馏过程中，模型会意识到关键信息可能出现在上下文窗口的任意位置，这可能会削弱对优势位置（sink position）的显著注意力，从而潜在地损害在多样下游任务中的整体能力。为防止这一问题引入锚定损失，以保持优势位置的有效性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053749_74601a538cbc0e263193c729de7c5bc2.png\" data-src=\"https://image.jido.dev/20251026053749_74601a538cbc0e263193c729de7c5bc2.png\">\n  </div>\n  <p data-track=\"24\"><strong>训练目标损失：</strong>融合了激活损失（activation loss）和锚定损失（anchoring loss），形式化表示为：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_0ae5f0f55fec85f91b214e733ec6a617.png\" data-src=\"https://image.jido.dev/20251026053746_0ae5f0f55fec85f91b214e733ec6a617.png\">\n  </div>\n  <p data-track=\"25\"><strong>算法设计（Pos2Distill-R2 for Reasoning）：</strong></p>\n  <p data-track=\"26\">首先从优势位置 采样链式思维（CoT）推理轨迹。类似于检索任务的过程，为每组位置构建 (K) 个不同的平凡提示。随后使用交叉熵（CE）损失函数对提示及其对应的推理轨迹 (Cadv) 进行优化，以有效捕获推理模式。形式化地表示为：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_b6e65f0bb1aa040e09a7fd8226496221.png\" data-src=\"https://image.jido.dev/20251026053746_b6e65f0bb1aa040e09a7fd8226496221.png\">\n  </div>\n  <p data-track=\"28\"><strong>Pos2Distill-R1实验结果：</strong>Pos2Distill-R1 表现出鲁棒且⼀致的性能，⽆论⻩⾦⽂档的位置如何，都显著减少了由位置引起的性能差异。例如，在 WebQ 数据集，Pos2Distill-R1 使 Llama-3-8B 在20个位置上实现了 56.7%的平均准确率。该性能与 dgold 位于最佳“汇聚位置”（sink position）时达到的 57.9% 相当，这说明从优势到劣势位置的知识迁移是成功的，⽽这正是 Pos2Distill-R1 的核⼼原理。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_d9d005aef188e7689d8a0f012d584957.png\" data-src=\"https://image.jido.dev/20251026053746_d9d005aef188e7689d8a0f012d584957.png\">\n  </div>\n  <p data-track=\"29\">可解释性结果：由于PB源自于大语言模型的架构与参数，希望通过分析Pos2Distill-R1的内部动态机制来揭示其作用原理并提供可解释性说明。记录当黄金文档从1移动到20时，对20个文档的注意力分布。Pos2Distill-R1通过动态地将注意力焦点持续对齐到相关文档上，从而强化了上下文一致性，促进了更为准确的检索。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_339afb6b05f696066699242aadf22572.jpeg\" data-src=\"https://image.jido.dev/20251026053746_339afb6b05f696066699242aadf22572.jpeg\">\n  </div>\n  <p data-track=\"30\">Pos2Distill-R2实验结果：⽆论是在域内性能还是在域外泛化⽅⾯，Pos2Distill-R2 都超越了现有的⾃我训练⽅法。如表2，在 MusiQue 数据集上训练时，Pos2Distill-R2 实现了 42.8 的精确匹配（EM）得分，优于所有领先的基线。此外，本⽅法表现出强⼤的跨领域泛化能⼒；例如，在 HotpotQA 数据集上，它达到了 58.3 的EM 得分，⽽最强的基线模型为50.9。研究结果表明，与传统的逐实例训练相⽐，训练⼤语⾔模型在多样化、分散的⻩⾦⽂档位置上进⾏推理，可能更有效地增强其⻓上下⽂推理能⼒。这⼀洞⻅为提升复杂⻓上下⽂任务中的推理能⼒提供了新视⻆。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053746_c638aedd49d79e91956e4ddf76c9a86e.png\" data-src=\"https://image.jido.dev/20251026053746_c638aedd49d79e91956e4ddf76c9a86e.png\">\n  </div>\n  <p data-track=\"31\"><strong>关于两个系统的讨论：</strong></p>\n  <p data-track=\"32\">两个系统都表现出对其相互任务的显著泛化能⼒。具体⽽⾔，主要为检索任务优化的 Pos2Distill-R1 证明了其增强的上下⽂检索能⼒也改善了⻓上下⽂推理，在 MusiQue 任务上产⽣了 3.3% 的增⻓。相反，为推理任务优化的 Pos2Distill-R2 表明，其所获得的在⻓上下⽂中的推理熟练度也增强了上下⽂感知，从⽽有益于检索性能。</p>\n  <p data-track=\"36\">尽管存在这种跨任务泛化，但每个系统在其主要领域都表现卓越：</p>\n  <p data-track=\"37\">Pos2Distill-R2 在复杂的⻓上下⽂推理任务上取得了更优性能，⽽ Pos2Distill-R1 在这些任务上表现滞后，在检索任务上则反之亦然。</p>\n  <p data-track=\"33\">这表明缓解位置偏差（PB）存在着不同的底层动态，并可能受到思维链（CoT）存在或缺失的影响。因此，开发这两种专⻔化的 Pos2Distill 设计被证明是既必要⼜有效的。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"破解AI对不同上下⽂位置的敏感度不⼀致，新框架使出“解铃还须系铃人”\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251026053748_f410c72fa0c1c59f8995f21325d514b0.jpeg\" data-src=\"https://image.jido.dev/20251026053748_f410c72fa0c1c59f8995f21325d514b0.jpeg\">\n  </div>\n  <p data-track=\"34\">论文地址：</p>\n  <p data-track=\"38\">https://arxiv.org/abs/2508.15709</p>\n  <p data-track=\"41\">开源地址：</p>\n  <p data-track=\"39\">https://github.com/AMAP-ML/Pos2Distill</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章详细介绍了 Pos2Distill 框架，通过“位置到位置”蒸馏技术，有效缓解大语言模型在检索和推理任务中因上下文位置敏感度不一致导致的位置偏见问题。",
+  "oneSentenceSummary": "文章详细介绍了 Pos2Distill 框架，通过“位置到位置”蒸馏技术，有效缓解大语言模型在检索和推理任务中因上下文位置敏感度不一致导致的位置偏见问题。",
+  "summary": "本文深度探讨了大语言模型（LLM）中普遍存在的位置偏见问题，即模型对输入序列中不同上下文位置的敏感度不一致，这严重影响了 LLM 在复杂推理、长文本理解和模型评估中的表现。为解决此挑战，Pos2Distill 团队提出了一个创新的“位置到位置”蒸馏框架 Pos2Distill。该框架的核心思想是利用模型在优势位置已习得的强大能力迁移至劣势位置，从而纠正其系统性偏差。团队针对检索和推理两类任务中位置偏见的表现差异，分别设计了 Pos2Distill-R1 和 Pos2Distill-R2 两种方案。Pos2Distill-R1 通过 KL 散度缓解检索任务中的“词元偏移”，而 Pos2Distill-R2 通过蒸馏优势位置的优质 CoT 响应来纠正推理任务中的“思维偏移”。实验结果表明，Pos2Distill 方法显著提升了模型在长文本检索和推理任务中所有位置上的一致性表现，并展现出强大的跨任务泛化能力，为提升 LLM 性能提供了有效策略。",
+  "mainPoints": [
+    {
+      "point": "大语言模型存在严重的位置偏见，影响其在复杂推理和长文本任务中的表现",
+      "explanation": "模型倾向于过度关注输入序列中的特定位置，导致关键信息被任意分布时无法有效识别和整合，从而影响 LLM 的公正性和可靠性。"
+    },
+    {
+      "point": "Pos2Distill 框架通过“位置到位置”蒸馏，将模型优势位置能力迁移至劣势位置",
+      "explanation": "该框架利用模型自身已习得的知识来纠正其系统性偏差，旨在解决模型对不同上下文位置敏感度不一致的问题，提升性能一致性。"
+    },
+    {
+      "point": "Pos2Distill 针对检索和推理任务分别设计 R1 和 R2 方案，并展现跨任务泛化能力",
+      "explanation": "Pos2Distill-R1 解决检索任务中的“词元偏移”，Pos2Distill-R2 解决推理任务中的“思维偏移”，两者均有效提升模型表现，且相互间具备泛化能力，为不同场景提供优化方案。"
+    }
+  ],
+  "keyQuotes": [
+    "语言模型遭遇严重的位置偏见，即模型对不同上下⽂位置的敏感度不⼀致。",
+    "其核⼼思想恰如古语所云：'解铃还须系铃⼈'，利⽤模型⾃⾝已习得的知识，来纠正其⾃⾝的系统性偏差。",
+    "Pos2Distill-R1 通过引⼊ KL 散度（Kullback-Leibler divergence）损失来提供细粒度的纠正信号，从⽽缓解检索任务中的'词元偏移'。",
+    "Pos2Distill-R2 则通过蒸馏来⾃优势位置输⼊的优质 CoT 响应，来指导和纠正劣势位置的推理轨迹，从⽽解决推理任务中的'思维偏移'。",
+    "训练⼤语⾔模型在多样化、分散的⻩⾦⽂档位置上进⾏推理，可能更有效地增强其⻓上下⽂推理能⼒。"
+  ],
+  "tags": [
+    "大语言模型",
+    "位置偏见",
+    "蒸馏学习",
+    "长文本理解",
+    "检索增强生成"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 88,
+  "wordCount": 2776,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761452135000,
+  "publishDateStr": "2025-10-26",
+  "publishDateTimeStr": "2025-10-26 04:15:35"
+}

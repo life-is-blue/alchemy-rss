@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c7c9e0",
+  "title": "JetBrains IDE 新 UI 预览 | JetBrains Platform Blog",
+  "url": "https://blog.jetbrains.com/platform/2025/06/testing-a-fresh-look-for-jetbrains-ides/",
+  "date": "2025-06-19 10:11:27",
+  "author": "Olga Berdnikova",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" fetchpriority=\"high\" width=\"1336\" height=\"808\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/06/New-themes.png\" alt=\"\" class=\"wp-image-576733\">\n  </figure>\n  <p>Visual context is always changing – and so should the look and feel of the tools you use every day. We know how much a familiar UI matters, and we’ve heard your feedback from past updates. That’s why we’re taking an iterative, careful approach this time: small, focused improvements, shared early, with your feedback guiding what comes next.</p>\n  <p>In the latest 2025.2 EAP of JetBrains IDEs, you can find two new UI styles: One Island and Many Islands, each available with both dark and light modes. Ultimately, one of these styles will become the new default – your feedback will help us decide which one.</p>\n  <p>This update is purely visual – all functionality remains unchanged. You can switch between the new styles and your previous theme at any time.</p>\n  <h2 class=\"wp-block-heading\"><strong>Why the new themes?</strong></h2>\n  <p>With this update, we aim to achieve several goals:</p>\n  <ul>\n   <li><strong>Stay current:</strong> We want our UI to feel fresh and modern, keeping pace with evolving design trends. While the last UI overhaul was introduced a couple of years ago, its foundations were laid over five years ago. This time, we’re focusing purely on visual refinements, with minimal changes to update the look.</li>\n   <li><strong>Refine the previous UI update:</strong> We’re improving areas where the design can be clearer or more effective, such as the separation between the editor and tool windows, more prominent navigation, and better tab visibility.</li>\n   <li><strong>Align with our broader design language:</strong> We aim to bring the JetBrains IDEs closer in line with the design of our other products, such as <a href=\"https://www.jetbrains.com/toolbox-app/\" target=\"_blank\" rel=\"noopener\">Toolbox</a> and <a href=\"https://www.jetbrains.com/fleet/\" target=\"_blank\" rel=\"noopener\">Fleet</a>, for a more consistent experience across the JetBrains ecosystem.</li>\n  </ul>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" width=\"2436\" height=\"1652\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/06/Dark-one-island-blogpost.png\" alt=\"\" class=\"wp-image-576744\">\n  </figure>\n  <p><em>One Island style</em></p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" width=\"2436\" height=\"1652\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/06/Dark-many-islands-blogpost.png\" alt=\"\" class=\"wp-image-576755\">\n  </figure>\n  <p><em>Many Islands style</em></p>\n  <h2 class=\"wp-block-heading\"><strong>We need your help</strong></h2>\n  <p>We invite you to try the new styles and share your thoughts. After using a new theme for a while, you’ll get a prompt to fill out a short survey that shouldn’t take more than five minutes to complete. Your feedback will help us decide which style to finalize and roll out as the default.</p>\n  <h2 class=\"wp-block-heading\"><strong>Known issues</strong></h2>\n  <p>We’re already working on some <a href=\"https://youtrack.jetbrains.com/issues?q=Project:%20IJPL%20tag:%20%7BUI%20identity%7D%20-Resolved\" target=\"_blank\" rel=\"noopener\">known issues</a>. Please vote and comment on them, or submit a new issue if you notice something we haven’t already been made aware of.</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/platform/2025/06/jetbrains-plugin-developer-conf-2025-call-for-speakers/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> JetBrains Plugin Developer Conf 2025 – Call for Speakers</a><a class=\"content__pagination-next\" href=\"https://blog.jetbrains.com/platform/2025/07/busy-plugin-developers-newsletter-q2-2025/\">Busy Plugin Developers Newsletter – Q2 2025 <i class=\"icon-arrow-right\"><span class=\"sr-only\">Next post</span></i></a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 在 2025.2 EAP 中发布 One Island 和 Many Islands 两款实验性 UI 主题，并征集用户反馈。",
+  "oneSentenceSummary": "JetBrains 在 2025.2 EAP 中发布 One Island 和 Many Islands 两款实验性 UI 主题，并征集用户反馈。",
+  "summary": "JetBrains 推出了两款新的 UI 风格：One Island 和 Many Islands，可在其 IDE 的 2025.2 抢先体验计划（EAP）中进行测试。本次更新侧重于视觉改进，功能保持不变。其目标是使 IDE 外观更现代化，优化之前 UI 更新的各个方面（例如编辑器 / 工具窗口分离和更醒目的导航），并使设计语言与 Toolbox 和 Fleet 等其他 JetBrains 产品保持一致。JetBrains 正在通过一项调查积极征求用户反馈，以帮助决定哪种新风格最终将成为默认风格。同时，他们也在积极解决已知问题，并鼓励用户报告其他问题。",
+  "mainPoints": [
+    {
+      "point": "最新的 EAP 中提供了两款新的实验性 UI 风格，可供测试。",
+      "explanation": "JetBrains 在 2025.2 EAP 中引入了 One Island 和 Many Islands 主题，允许用户预览和测试潜在的未来默认 UI。"
+    },
+    {
+      "point": "此次视觉更新旨在使 IDE 外观更现代化，并优化现有设计元素。",
+      "explanation": "新主题旨在根据过去的用户反馈，将 UI 更新到当前的设计趋势，并优化窗口分离和导航等区域。"
+    },
+    {
+      "point": "JetBrains 正在积极收集用户反馈，以确定下一个默认主题。",
+      "explanation": "鼓励用户尝试新风格并完成调查，这将直接影响哪个主题会被选为新标准。"
+    }
+  ],
+  "keyQuotes": [
+    "在 JetBrains IDE 的最新 2025.2 EAP 中，您可以找到两种新的 UI 风格：One Island 和 Many Islands，每种风格都提供深色模式和浅色模式。",
+    "最终，这些风格之一将成为新的默认风格 —— 您的反馈将帮助我们决定选择哪一种。",
+    "本次更新仅为视觉上的调整 —— 所有功能保持不变。",
+    "我们希望 UI 界面保持新鲜和现代感，紧跟设计潮流。",
+    "我们邀请您体验新风格并分享您的想法。"
+  ],
+  "tags": [
+    "开发者工具",
+    "JetBrains IDE",
+    "UI 设计",
+    "抢先体验计划（EAP）",
+    "用户反馈"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 380,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750327887000,
+  "publishDateStr": "2025-06-19",
+  "publishDateTimeStr": "2025-06-19 10:11:27"
+}

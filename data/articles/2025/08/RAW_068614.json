@@ -1,0 +1,55 @@
+{
+  "id": "RAW_068614",
+  "title": "标准化 3D 生成质量榜单来了！首创层次化评价体系，告别\"谁的 demo 更吸睛\"主观评估",
+  "url": "https://www.qbitai.com/2025/08/322347.html",
+  "date": "2025-08-16 08:37:10",
+  "author": "鱼羊",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">Hi3DEval团队 投稿\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>作为AI视频之后最被看好的AIGC应用领域之一，对比2024年，2025年<strong>AI 3D生成</strong>的质量已经进化成了这样：<strong> \n    <br> \n   </strong></p>\n  <section>\n   <img class=\"rich_pages wxw-img js_insertlocalimg\" src=\"https://image.jido.dev/20250816113739_ef9ce9107331a10eac1bb585d03c76f5.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_6fcf75\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100334985\" data-original-style=\"null\" data-index=\"1\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <h6><strong>△</strong>图源：Meshy</h6>\n  <p>随着模型能力的不断进化，在评估层面，新的挑战也在出现：</p>\n  <p>传统3D生成评测往往停留在对象级的粗糙评估，主要关注“整体质量”，缺少对局部结构和材质的系统化分析。</p>\n  <p>为了解决这个问题，上海人工智能实验室联合复旦大学、清华大学、香港中文大学等高校发布了<strong>Hi3DEval</strong>——一套面向3D内容生成的全新层次化自动评测体系。</p>\n  <section data-pm-slice=\"0 0 []\">\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20250816113739_ab34a1455c2d35d9f6cf3528393e3ef2.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_9af475\" data-ratio=\"0.46574074074074073\" data-type=\"png\" data-w=\"1080\" data-width=\"413\" data-height=\"192\" data-imgfileid=\"100334955\" data-original-style=\"null\" data-index=\"2\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>团队通过设计<strong>对象级、部件级与材质主题</strong>三层评测协议，实现从整体形态到局部结构再到材质真实性的多粒度分析，全方位揭示模型的生成能力。</p>\n  <p>在此基础上，首期<strong>3D生成榜单</strong>已在HuggingFace同步发布，涵盖<strong>30个主流与前沿模型</strong>，覆盖<strong>Text‑to‑3D</strong>与<strong>Image‑to‑3D</strong>两大核心任务。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20250816113739_5447233e0f23948cb98dde7a139df974.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_8e667a\" data-ratio=\"0.3101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100334945\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>研究团队表示，该榜单可以直观呈现各模型的总和表现，希望以此为学术界与产业界提供可追踪、可复现的对标基准，推动3D生成技术向更高质量与更高透明度发展。</p>\n  <p>Hi3DEval基于三层评测协议的层次化评测体系，旨在提供更细粒度的质量剖析，还能揭示具体的优缺点，为模型改进与优化提供明确方向。</p>\n  <h3>对象级（object-level）</h3>\n  <p>对象级评估关注生成物体的宏观表现，涵盖“<strong>几何合理性</strong>”、“<strong>几何精细度</strong>”、“<strong>纹理质量</strong>”、“<strong>几何-纹理一致性</strong>”、“<strong>Prompt-3D一致性</strong>”五个维度。</p>\n  <p>“几何合理性”侧重的结构完整性、保真性，不存在多头、塌陷、浮空等违背物理规律。</p>\n  <p>“几何精细度”则侧重表面精细度，包括边缘锐利度、细小部件的完整性等。</p>\n  <p>“纹理质量”考察纹理贴图的清晰度、细节保真度以及美学水平。</p>\n  <p>“几何-纹理一致性”检查纹理与几何结构的对齐程度，例如花纹是否遵循物体表面轮廓。</p>\n  <p>“Prompt-3D一致性”则评估生成 3D 资产与输入文本或图像提示的匹配度，包括类别、属性和身份特征等，确保结果符合用户需求。</p>\n  <section>\n   <img class=\"rich_pages wxw-img js_insertlocalimg __bg_gif\" src=\"https://www.qbitai.com/wp-content/uploads/replace/9866674c34ae33f16c6b98a0ffb3a1c4.gif\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_c4f215\" data-ratio=\"0.3013888888888889\" data-s=\"300,640\" data-type=\"gif\" data-w=\"720\" data-imgfileid=\"100334988\" data-original-style=\"null\" data-index=\"4\" data-order=\"0\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <h3>部件级（part-level）</h3>\n  <p>现有的大多数3D生成评测体系都停留在对象级评估，只能给出整体质量的笼统评分，难以揭示模型在局部结构上的优劣。</p>\n  <p>Hi3DEval引入部件级评测，将关注点精确落在诸如椅子腿、扶手、背板等细分部位，能够直观定位缺陷发生的区域。</p>\n  <p>这种粒度更细的评测不仅有助于诊断生成过程中的局部几何问题，还能在模型优化时提供有针对性的改进信号。评测维度包括<strong>局部几何合理性</strong>（保证局部结构符合现实物理与设计逻辑）和<strong>局部几何精细度</strong>（衡量细节刻画的清晰度与丰富程度）。</p>\n  <section>\n   <img class=\"rich_pages wxw-img js_insertlocalimg __bg_gif\" src=\"https://image.jido.dev/20250816113739_c219c3de61f9a3bf8f5ddc110aa9056a.gif\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_6bbcba\" data-ratio=\"0.25972222222222224\" data-s=\"300,640\" data-type=\"gif\" data-w=\"720\" data-imgfileid=\"100334978\" data-original-style=\"null\" data-index=\"5\" data-order=\"1\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <h3>材质主题（material-subject）</h3>\n  <p>传统的材质评估仍停留在图片质量和主观审美层面，常用的指标如FID、KID、美学评分等。</p>\n  <p>为了弥补这块的空缺，Hi3DEval设计材质主题的评估协议，聚焦表面视觉与物理属性，借助物体在不同光照条件下的反射信息，从“<strong>细节与复杂性</strong>”、“<strong>色彩与饱和度</strong>”、“<strong>一致性与伪影</strong>”、“<strong>材质合理性</strong>”四个维度进行全方位评估。</p>\n  <p>其中前两个维度聚焦表面视觉，“细节与复杂度”关注材质纹理的视觉丰富度和美学协调度，“色彩与饱和度”则评估材质颜色的分布是否自然以及饱和度是否合理。后两个维度则聚焦物理属性，“一致性与伪影”检查材质纹理在不同光照或视角下的一致性，避免接缝、错位、异常阴影等视觉伪影， “材质合理性”评估反射率、粗糙度等物理特性是否符合现实材料表现。</p>\n  <section>\n   <img class=\"rich_pages wxw-img js_insertlocalimg __bg_gif\" src=\"https://www.qbitai.com/wp-content/uploads/replace/509a4adecf118201986f9466816ed5de.gif\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_f33787\" data-ratio=\"0.6\" data-s=\"300,640\" data-type=\"gif\" data-w=\"720\" data-imgfileid=\"100334989\" data-original-style=\"null\" data-index=\"6\" data-order=\"2\" data-report-img-idx=\"9\" data-fail=\"0\">\n  </section>\n  <h2>首期评测榜单：直观呈现模型实力，推动行业对标</h2>\n  <p>Hi3DEval在HuggingFace平台发布了首期3D生成榜单，涵盖30余款Text-to-3D与Image-to-3D模型。</p>\n  <p>榜单在统一的评测设置下对所有模型进行测评，包括相同的输入提示、渲染视角、光照条件及输出格式。这种标准化流程不仅消除了实验环境差异带来的偏差，还保障了榜单的评分结果的公正性和可参考性。</p>\n  <p>榜单结果不仅直观呈现总分排名，还提供各个维度的单项得分，帮助研究者、开发者快速定位模型优势与短板。同时，它也为学术界与工业界提供了可追踪的对标参考，推动 3D 生成技术向高质量、透明化发展。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20250816113740_310a102532825a3f963580b4804e0243.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_eafc76\" data-ratio=\"0.49907407407407406\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100334948\" data-original-style=\"margin:0px auto;padding:0px;\" data-index=\"7\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>完整榜单可点击文末链接查看。</p>\n  <h2>自动化评测管线：混合3D表征，增强3D感知能力</h2>\n  <p>过往多数评测方法依赖静态渲染图像，难以暴露动态不一致（如跨视角形变、细节抖动等）和真实几何缺陷（如多头问题、局部塌陷等），评测结论与模型在真实三维使用场景中的可用性存在偏差。</p>\n  <p>为了缓解2D表征的局限性，Hi3DEval使用<strong>多视角环绕视频 + 原生网格（mesh）</strong>构建了基于混合3D表征的自动化评测管线。</p>\n  <p>视频表征能直观揭示跨视角/时序的结构稳定性与纹理漂移，能够区分“静帧好看、转动即崩”的模型，使其非常适合用于对象级和材质主题的评估。而对于部件级评测，由于视频表征经常出现对部件主体的遮挡进而影响评估质量，所以选用了原生3D表征支持几何相关维度的自动化评测。</p>\n  <p>通过统一的模型设置与对比实验，Hi3DEval在人类偏好一致性上的表现优越，超越了现有主流自动评测指标，为3D内容生成领域提供了更可靠、更全面的评测工具。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20250816113745_bdf58a3686a1cb673c6c49fde3eb29af.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_3e454d\" data-ratio=\"0.33181299885974913\" data-type=\"png\" data-w=\"877\" data-imgfileid=\"100334944\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"6\" data-fail=\"0\">\n   <br>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20250816113739_06731a1ecddd535d8e02b669c5ecc816.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20250816113738_b32d27\" data-ratio=\"0.35517241379310344\" data-type=\"png\" data-w=\"870\" data-imgfileid=\"100334947\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"9\" data-report-img-idx=\"7\" data-fail=\"0\"></p>\n  <p>在生成3D技术高速迭代的当下，虽然不同模型在功能和表现形式上的差距正在逐渐缩小，但在内容精细度、真实感、结构一致性等质量维度上，差异依旧显著。</p>\n  <p>过去，由于缺乏一套科学、统一且可扩展的评价体系，行业讨论往往停留在“谁的demo更吸睛”这种主观印象层面，难以全面衡量方法的真正水平。</p>\n  <p data-pm-slice=\"0 0 []\">Hi3DEval这样的基准推出，旨在打破这一局限——不仅提供了面向未来的、系统化的3D内容质量评价标准，也为学术界和产业界带来了更透明、更公平的对比依据。</p>\n  <p>论文地址：\n   <br>\n   https://arxiv.org/abs/2508.05609\n   <br>\n   项目主页：\n   <br>\n   https://zyh482.github.io/Hi3DEval/\n   <br>\n   评测榜单：\n   <br>\n   https://huggingface.co/spaces/3DTopia/3DGen-Leaderboard</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章介绍了 Hi3DEval，一个针对 3D 内容生成的全新层次化自动评测体系，旨在解决传统主观评估问题，并通过发布标准化榜单推动 3D 生成技术发展。",
+  "oneSentenceSummary": "文章介绍了 Hi3DEval，一个针对 3D 内容生成的全新层次化自动评测体系，旨在解决传统主观评估问题，并通过发布标准化榜单推动 3D 生成技术发展。",
+  "summary": "随着 AI 3D 生成技术快速发展，传统评估方法存在粗糙和主观的局限性。为解决此问题，上海人工智能实验室联合多所高校发布了 Hi3DEval，一套面向 3D 内容生成的层次化自动评测体系。该体系通过设计对象级、部件级和材质主题三层评测协议，实现从整体形态到局部结构再到材质真实性的多粒度分析，全面揭示模型的生成能力。文章详细阐述了各层评估维度，如几何合理性、几何精细度、纹理质量、Prompt-3D 一致性等。在此基础上，团队在 HuggingFace 发布了首期 3D 生成榜单，涵盖 30 个主流模型，覆盖 Text-to-3D 与 Image-to-3D 任务，提供统一、可复现的对标基准。此外，Hi3DEval 还构建了基于多视角环绕视频和原生网格的自动化评测管线，有效缓解了 2D 表征的局限性，提升了评测的可靠性和人类偏好一致性。该基准的推出，旨在为学术界和产业界提供更透明、更公平的 3D 内容质量评价标准，打破“谁的 demo 更吸睛”的主观评估模式。",
+  "mainPoints": [
+    {
+      "point": "Hi3DEval 首创层次化评测体系，解决 3D 生成主观评估痛点",
+      "explanation": "通过对象级、部件级和材质主题三层协议，实现多粒度、系统化的质量分析，克服了传统评估粗糙和主观的缺点，提供更细致的模型优劣剖析。"
+    },
+    {
+      "point": "发布标准化榜单，为 3D 生成领域提供客观对标基准",
+      "explanation": "在统一评测设置下，Hi3DEval 发布了包含 30 个主流模型的 3D 生成榜单，为学术界和产业界提供了可追踪、可复现的客观评价依据，推动行业发展。"
+    },
+    {
+      "point": "采用混合 3D 表征的自动化评测管线，提升评估准确性",
+      "explanation": "结合多视角环绕视频和原生网格，有效暴露动态不一致和真实几何缺陷，评测结果与人类偏好一致性更高，克服了仅依赖静态渲染图像的局限性。"
+    }
+  ],
+  "keyQuotes": [
+    "传统 3D 生成评测往往停留在对象级的粗糙评估，主要关注\"整体质量\"，缺少对局部结构和材质的系统化分析。",
+    "团队通过设计**对象级、部件级与材质主题**三层评测协议，实现从整体形态到局部结构再到材质真实性的多粒度分析，全方位揭示模型的生成能力。",
+    "Hi3DEval 在 HuggingFace 平台发布了首期 3D 生成榜单，涵盖 30 余款 Text-to-3D 与 Image-to-3D 模型。",
+    "通过统一的模型设置与对比实验，Hi3DEval 在人类偏好一致性上的表现优越，超越了现有主流自动评测指标，为 3D 内容生成领域提供了更可靠、更全面的评测工具。",
+    "Hi3DEval 这样的基准推出，旨在打破这一局限------不仅提供了面向未来的、系统化的 3D 内容质量评价标准，也为学术界和产业界带来了更透明、更公平的对比依据。"
+  ],
+  "tags": [
+    "3D生成",
+    "AIGC",
+    "模型评测",
+    "层次化评估",
+    "评测体系"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2268,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755333430000,
+  "publishDateStr": "2025-08-16",
+  "publishDateTimeStr": "2025-08-16 08:37:10"
+}

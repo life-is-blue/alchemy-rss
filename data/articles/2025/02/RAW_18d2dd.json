@@ -1,0 +1,53 @@
+{
+  "id": "RAW_18d2dd",
+  "title": "微软推出 CoRAG:一种通过迭代推理增强检索的人工智能框架",
+  "url": "https://www.infoq.com/news/2025/02/corag-microsoft-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-02-11 00:00:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "\n \n \n  <div class=\"actions__left actions__sidebar article__actions\">\n   <div id=\"audio-overlay\" role=\"button\" tabindex=\"0\" aria-label=\"Click to open audio player\" class=\"audio-overlay-main\"><br></div><div class=\"bookmarkReading\"><div class=\"my-0 button__dropdown dropdown reading_list dropdown__center\" id=\"showBookmarks\"><div class=\"dropdown__holder\"><div class=\"dropdown__content\"><ul class=\"no-style dropdown__nav\">\n       </ul>\n      </div>\n     </div>\n    </div>\n    <div id=\"toastContainer\" class=\"toast-none toast-hide\">\n     <div class=\"toast\">\n      <span></span>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"article__data\">\n   <p>Microsoft AI, in collaboration with Renmin University of China, has introduced <a href=\"https://arxiv.org/abs/2501.14342\">Chain-of-Retrieval Augmented Generation (CoRAG)</a>, a new AI framework designed to enhance Retrieval-Augmented Generation (RAG) models. Unlike traditional RAG systems, which rely on a single retrieval step, CoRAG enables iterative search and reasoning, allowing AI models to refine their retrievals dynamically before generating answers.</p>\n   <p>This improvement overcomes a significant drawback of traditional RAG systems: their lack of ability to effectively integrate information from multiple sources. In complex queries, particularly in multi-hop question answering (QA), traditional RAG models often struggle because they retrieve information only once, leading to incomplete or inaccurate results. CoRAG changes this by reformulating queries at each step, enabling AI to “think through” retrievals much like human researchers.</p>\n   <p>The core innovation in CoRAG is its dynamic query reformulation mechanism. Instead of relying on a single retrieval step, the model iteratively refines its queries based on intermediate reasoning states. This process ensures that information retrieved at each stage is contextually relevant and builds toward a more complete final answer.<br><br>\n     To train CoRAG without expensive human annotations, researchers used <a href=\"https://bookdown.org/rdpeng/advstatcomp/rejection-sampling.html\">rejection sampling</a>, a technique that generates plausible retrieval chains from existing RAG datasets. The model is trained on these enhanced datasets, learning to generate sub-queries, sub-answers, and final answers.<br><br>\n     During inference, CoRAG offers flexible decoding strategies, such as:</p>\n   <ul>\n    <li>Greedy decoding for efficiency,</li>\n    <li>Best-of-N sampling for optimized accuracy, and</li>\n    <li>Tree search for balancing computational cost with performance.</li>\n   </ul>\n   <p>This scalability allows users to control retrieval depth, ensuring an optimal trade-off between accuracy and computational efficiency.</p>\n   <p><img alt=\"scheme\" style=\"width:100%;height:475px;\" data-src=\"https://www.infoq.com/news/2025/02/corag-microsoft-ai/news/2025/02/corag-microsoft-ai/en/resources/1Screenshot 2025-02-11 174706-1739294800524.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/02/corag-microsoft-ai/en/resources/1Screenshot 2025-02-11 174706-1739294800524.png\" rel=\"share\"><br><em>Source: https://arxiv.org/abs/2501.14342</em></p>\n   <p>CoRAG has been tested on the KILT benchmark and multi-hop QA tasks, showing improved results compared to existing RAG models. The approach appears to be particularly effective in tasks that require retrieving and synthesizing information from multiple sources.</p>\n   <p>\n    <meta charset=\"utf-8\"><b id=\"docs-internal-guid-1a5628c4-7fff-0755-c4d6-63f35f34c3b3\"><img height=\"162\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXcYgiUhjgnA2Vg7WEYJ7NdGiEP_PO7bFDsjMBY8fgTNwcKtk7vBIx56Qh90mlBL_-e1Gw6DIQ3dbRuKhGos4vwzn6cof0PNGLzLrsAoWzXaypm_s5ySGme4zPF6yNWhpceM_ah59A?key=-H26cDsaHu7D0mxE5vKCfD5e\" width=\"535\" rel=\"share\"></b><br><em>KILT benchmark (source: https://arxiv.org/abs/2501.14342)</em></p>\n   <p>\n    <meta charset=\"utf-8\"><b id=\"docs-internal-guid-e2443dc4-7fff-3b37-6518-4c772c09b734\"><img height=\"337\" src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXdTh2jJlhmwkn40LFKGRaaQVKHJOhoCVmDjAistHJC12obFf6gxSMpuEYDbKI5MJwf6uOxESpf2z0Yz55J3CQ-6PMkDQRr0duzmi-7Mr6BjuTqQPJZ8PRwkWAhaJqP6ByqYenBk?key=-H26cDsaHu7D0mxE5vKCfD5e\" width=\"513\" rel=\"share\"></b><br><em>Multi-hop QA tasks benchmark (source: https://arxiv.org/abs/2501.14342)</em></p>\n   <p>The AI community has noted the potential impact of CoRAG. Deepesh Jain, a founder &amp; CEO of Durapid Technologies, <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7290443578860830720?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7290443578860830720%2C7290696176624906240%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287290696176624906240%2Curn%3Ali%3AugcPost%3A7290443578860830720%29\">commented</a>:</p>\n   <blockquote>\n    <p>This is a big step forward for RAG! Traditional methods often miss key details, but CoRAG’s iterative approach makes retrieval smarter and more dynamic. Letting models refine searches like humans do could unlock better answers for complex queries.</p>\n   </blockquote>\n   <p>Moreover, Ekaterina Baru, a senior machine learning engineer at Velotix, <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7292858163345649664?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7292858163345649664%2C7293312022249668608%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287293312022249668608%2Curn%3Ali%3AugcPost%3A7292858163345649664%29\">highlighted</a> the resemblance to human research methods:</p>\n   <blockquote>\n    <p>This is a fascinating approach—using iterative retrieval to refine queries really mirrors how we, as researchers, naturally dive deeper into a problem. The performance gains on multi-hop QA tasks are impressive, and I’m curious how the trade-offs between longer chains and compute costs will evolve in production settings. Excited to see where this leads!</p>\n   </blockquote>\n   <p>By shifting from static retrieval to an iterative approach, CoRAG introduces a different way of handling AI-driven search and reasoning. This could be useful in areas such as automated research, enterprise knowledge systems, and AI-assisted decision-making, where retrieving accurate and well-structured information is essential.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Introduces CoRAG: Enhancing AI Retrieval with Iterative Reasoning\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/02/corag-microsoft-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1739295900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n \n",
+  "aiSummary": "微软 CoRAG 框架通过迭代检索，提升了复杂问答中 RAG 模型的性能。",
+  "oneSentenceSummary": "微软 CoRAG 框架通过迭代检索，提升了复杂问答中 RAG 模型的性能。",
+  "summary": "微软与中国人民大学合作，推出了链式检索增强生成(CoRAG)。该框架旨在解决传统检索增强生成(RAG)模型在处理复杂、多跳问题方面的局限性。CoRAG 通过迭代查询重构，动态优化检索过程，从而有效整合来自多个来源的信息。这种迭代方法类似于人类的研究方法，使模型能够改进检索，并构建更完整的最终答案。CoRAG 使用拒绝抽样进行训练，减少了对手动注释的需求。它还提供灵活的解码策略，如贪婪解码、Best-of-N 抽样和树搜索，以平衡计算成本和性能。在 KILT 基准测试和多跳问答任务中进行的测试表明，与现有的 RAG 模型相比，CoRAG 的性能有所提高。",
+  "mainPoints": [
+    {
+      "point": "CoRAG 通过迭代检索增强多源信息整合，模拟人类研究过程。",
+      "explanation": "CoRAG 框架采用了一种动态查询重构机制，基于中间推理状态迭代地优化检索。这种机制有效地整合来自多个来源的信息，并提高准确性。"
+    },
+    {
+      "point": "CoRAG 使用拒绝抽样降低了训练成本。",
+      "explanation": "通过从现有的 RAG 数据集生成合理的检索链，CoRAG 最大限度地减少了对大量手动注释的需求。这降低了模型训练的成本。"
+    },
+    {
+      "point": "CoRAG 通过多种解码策略平衡计算成本和性能。",
+      "explanation": "该框架支持多种解码策略，包括贪婪解码、Best-of-N 抽样和树搜索。这允许用户选择最适合其特定需求的策略，并在计算成本和性能之间实现最佳平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "这是 RAG 的一大进步!传统方法经常遗漏关键细节，但 CoRAG 的迭代方法使检索更智能、更动态。",
+    "让模型像人类一样改进搜索，可以为复杂查询解锁更好的答案。",
+    "这是一种引人入胜的方法——使用迭代检索来改进查询，真正地反映了我们作为研究人员如何自然地深入研究一个问题。"
+  ],
+  "tags": [
+    "RAG",
+    "CoRAG",
+    "迭代检索增强生成",
+    "检索增强生成",
+    "多跳问答"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 475,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1739232000000,
+  "publishDateStr": "2025-02-11",
+  "publishDateTimeStr": "2025-02-11 00:00:00"
+}

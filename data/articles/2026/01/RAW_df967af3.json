@@ -1,0 +1,57 @@
+{
+  "id": "RAW_df967af3",
+  "title": "没人提问了但 Stack Overflow 赚钱更多！AI 没有赶尽杀绝",
+  "url": "https://www.qbitai.com/2026/01/368943.html",
+  "date": "2026-01-11 11:59:26",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"46\">鹭羽 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"47\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">Stack Overflow「真」凉透了吗？</p>\n  <p data-track=\"3\">某种层面上是的——那个曾作为公共论坛的它，确实快死了。</p>\n  <p data-track=\"4\">在被ChatGPT为首的AI连续冲击下，Stack Overflow社区流量一路下滑。</p>\n  <p data-track=\"5\">就上个月来说，全站仅<strong>6866个</strong>新提问……啥概念呢，也就是和08年刚上线时差不多。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130311_d2453267e64f33fb1068d50f93449421.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">然而有趣的是另外一项数据：同期，Stack Overflow的<strong>年营收不降反增</strong>，翻了一番，达到新高1.15亿美元。</p>\n  <p data-track=\"7\">公司亏损也在连年下降，从原先的8400万美元下降到2200万美元。</p>\n  <p data-track=\"8\">它赚钱的逻辑也很简单：<strong>“我们不生产知识，我们只是知识的搬运工。”</strong></p>\n  <p data-track=\"9\">简单来说，就是把Stack Overflow丰富且高质量的数据卖给AI。</p>\n  <p data-track=\"10\">看上去，Stack Overflow并未如传言般被AI击垮，甚至反过来正靠AI赚得盆满钵满。（doge）</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130310_041d4f601f4823d26aecd50e3606b994.jpeg\">\n  </div>\n  <p data-track=\"12\">诚然，ChatGPT、Claude等AI越来越强大的Coding能力，迅速带走了原属于Stack Overflow的高光。</p>\n  <p data-track=\"13\">从巅峰时期的程序员圣地，每个月都有30w+新问题层出不穷，到如今用户凋零、流量暴跌，Stack Overflow似乎在toC市场已遭抛弃。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130311_ba9749ada6eee6d1f28d3bb33d6b4dfc.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"14\">但它迅速找到了破局的方向——toB，尤其是向AI大模型公司倾售<strong>数据</strong>。</p>\n  <p data-track=\"15\">和普通的技术博客或者GitHub评论不同，Stack Overflow长期拥有一套极其严苛的社区治理机制：</p>\n  <p data-track=\"16\">它强调可验证、可复用。</p>\n  <p data-track=\"17\">每一个答案都会经过社区用户的评议（点赞or踩），提问者也可以勾选一个最能解决其问题的答案。</p>\n  <p data-track=\"18\">一致高票通过的答案通常会收获更高的权重，从而顺利进入评论区前排，收获更多的社区声望。</p>\n  <p data-track=\"19\">伴随着技术的更新迭代，社区也会持续编辑旧答案，确保当前答案是最有效也最精简的。</p>\n  <p data-track=\"20\">从一定程度上看，虽然这拉高了用户参与的门槛，但却<strong>保证了数据的纯净度和高信噪比</strong>。</p>\n  <p data-track=\"21\">与此同时，Stack Overflow上也覆盖了大量的边缘情况案例和各种奇葩的编译器报错，它不仅会记录“怎么写是对的”，也会记录“怎么写是错的”以及如何修复。</p>\n  <p data-track=\"22\">也正因如此，Stack Overflow的数据都极具训练价值，对大模型而言，无疑是理解编程逻辑、进行错误诊断的最佳数据库。</p>\n  <p data-track=\"23\">一边差数据，一边数据管够，两相结合，Stack Overflow完成了<strong>数据变现</strong>的商业转型。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130310_329fca80539cc468d250718fa0234925.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\">过去它更依赖社区流量带来的广告收入，但随着开发者涌向AI问答，广告商随之也开始撤离。</p>\n  <p data-track=\"25\">Stack Overflow则转而押宝在自家的生成式AI插件<strong>Stack Internal</strong>上。</p>\n  <p data-track=\"26\">这是一种SaaS模式，它利用Stack Overflow积累多年的庞大数据库为企业内部提供技术支持，目前已经被全球约25000家公司采用。</p>\n  <p data-track=\"27\">另一方面，它还学习Reddit模式，将历史问答内容以<strong>数据授权和许可</strong>的方式提供给AI公司，从而获得商业收益。</p>\n  <p data-track=\"28\">仅2024年，通过这种方式，它就获得了超过2亿美元的收入。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130310_8109ed3d7ed894c19f98a9d89f267aa2.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"29\">Stack Overflow同步也在进行降本增效，例如进行大规模裁员，主要集中在市场营销部门。</p>\n  <p data-track=\"30\">公司减少了传统的广告和一般销售投入，集中团队资源支持AI产品研发，并开始探索利用AI工具协助社区版主审核信息。</p>\n  <p data-track=\"31\">显然这一套组合拳颇有成效，根据其母公司Prosus的财报，Stack Overflow的利润得到大幅改善，并接近现金流平衡。</p>\n  <h2>并非长久之计</h2>\n  <p data-track=\"33\">但u1s1，Stack Overflow目前的盈利，本质上还是在<strong>变现存量</strong>。</p>\n  <p data-track=\"34\">靠过去十几年积累的高质量技术问答语料，吸引AI公司为其数据付费，只是第一步。</p>\n  <p data-track=\"35\">如何能够保证新数据源源不断地产生，才是Stack Overflow应该考虑的重心。</p>\n  <p data-track=\"36\">一旦Stack Overflow无法获取有关新技术的问答，也就是被用户彻底遗忘的时候，它引以为豪的数据库就会立马<strong>技术断代</strong>。</p>\n  <p data-track=\"37\">届时AI公司是否还会为过时的信息付费，须得打个问号，毕竟众所周知，模型能力越强，对越新、越高质量的数据依赖就会更大。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130310_b42a754237aa1d43fd0ce5decde1b7f8.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"38\">而对于Stack Overflow，这一衰败趋势也正在逐渐显现。</p>\n  <p data-track=\"39\">Stack Overflow<strong>缺乏吸引新用户加入的渠道</strong>，老用户逐渐转向大模型交互，平台上有关新技术的讨论也日渐稀少。</p>\n  <p data-track=\"40\">在平台尝试接入AI功能后，反而让社区充斥着更多的垃圾回答，这与此前的“高质量复用”定位相悖，对用户的信赖造成了致命的打击。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260111130311_519ca77d1004224a89f1c372557c5dbb.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"41\">虽然Stack Overflow CEO Prashanth Chandrasekar曾表示，他们为此专门做了一项调查：</p>\n  <blockquote>\n   <p data-track=\"42\">平台80%以上的用户都在尝试使用AI，但只有29%的人信任其输出结果。</p>\n  </blockquote>\n  <p data-track=\"43\">但这些并不完全信任AI的用户并没有回到Stack Overflow，而是转向其它更强的模型或者对用户更友好的社区。</p>\n  <p data-track=\"44\">Stack Overflow早已失去了它的数据闭环，所以吃老本到底能吃多久，终究还是个未知数。</p>\n  <p data-track=\"45\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://sherwood.news/tech/stack-overflow-forum-dead-thanks-ai-but-companys-still-kicking-ai/\n   <br class=\"sysbr\">\n   [2]https://x.com/trungtphan/status/2009421022181904640</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "AI 冲击下，Stack Overflow 社区流量大跌，却通过将高质量数据出售给 AI 公司、推出企业级 AI 产品实现营收翻番，但长期变现存量的模式面临新数据来源和社区信任危机。",
+  "oneSentenceSummary": "AI 冲击下，Stack Overflow 社区流量大跌，却通过将高质量数据出售给 AI 公司、推出企业级 AI 产品实现营收翻番，但长期变现存量的模式面临新数据来源和社区信任危机。",
+  "summary": "文章深入分析了知名开发者问答平台 Stack Overflow 在 AI 浪潮下的生存与转型策略。尽管来自 ChatGPT 等 AI 工具的冲击导致其 C 端社区流量和新提问量大幅下滑，但 Stack Overflow 通过将其多年积累的高质量编程数据出售给 AI 大模型公司，以及推出企业级 AI 支持插件 Stack Internal 实现了营收翻番，亏损显著减少。然而，文章也指出，这种“变现存量”的模式并非长久之计，一旦 Stack Overflow 无法持续获取有关新技术的数据，其核心价值将面临“技术断代”的风险。同时，平台在尝试接入 AI 功能后，反而导致社区垃圾信息增多，进一步损害了用户信任。文章强调，Stack Overflow 需找到新的数据增长点，才能避免最终被市场淘汰。",
+  "mainPoints": [
+    {
+      "point": "Stack Overflow 在 AI 冲击下 C 端社区活跃度暴跌，新提问量锐减。",
+      "explanation": "随着 ChatGPT 等 AI 工具的普及，开发者更倾向于使用 AI 解决编程问题，导致 Stack Overflow 平台的用户流量和新提问数量大幅下降，降至与早期相似的水平。"
+    },
+    {
+      "point": "通过数据授权和企业级 AI 产品，Stack Overflow 实现营收翻倍。",
+      "explanation": "Stack Overflow 将多年积累的高质量、结构化的编程问答数据授权给 AI 大模型公司，并推出企业内部知识管理工具 Stack Internal，成功转型至 B 端市场，显著提升了营收和利润。"
+    },
+    {
+      "point": "Stack Overflow 的数据因其严格的治理机制和丰富性而对 AI 训练价值巨大。",
+      "explanation": "平台严格的问答审核机制、社区用户评议和持续更新保证了数据的纯净度和高信噪比，且涵盖大量边缘案例，使其成为 AI 模型理解编程逻辑和错误诊断的理想数据源。"
+    },
+    {
+      "point": "当前盈利模式主要依赖“变现存量”，面临未来数据断代风险。",
+      "explanation": "Stack Overflow 的盈利主要来自于历史数据的价值，而缺乏有效机制吸引新用户和新技术的问答，这可能导致其数据在未来出现“技术断代”，进而降低对 AI 公司的吸引力。"
+    },
+    {
+      "point": "平台引入 AI 功能反而导致垃圾信息增多，损害了社区信任。",
+      "explanation": "为了应对危机，Stack Overflow 尝试接入 AI 功能，但却引发了大量劣质回答，与平台一贯高质量内容定位相悖，进一步加剧了用户流失和信任危机。"
+    }
+  ],
+  "keyQuotes": [
+    "在被 ChatGPT 为首的 AI 连续冲击下，Stack Overflow 社区流量一路下滑。",
+    "有趣的是另外一项数据：同期，Stack Overflow 的年营收不降反增，翻了一番，达到新高 1.15 亿美元。",
+    "和普通的技术博客或者 GitHub 评论不同，Stack Overflow 长期拥有一套极其严苛的社区治理机制：它强调可验证、可复用。",
+    "但 u1s1，Stack Overflow 目前的盈利，本质上还是在变现存量。",
+    "一旦 Stack Overflow 无法获取有关新技术的问答，也就是被用户彻底遗忘的时候，它引以为豪的数据库就会立马技术断代。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1870,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768132766000,
+  "publishDateStr": "01-11",
+  "publishDateTimeStr": "2026-01-11 11:59:26"
+}

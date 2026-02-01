@@ -1,0 +1,63 @@
+{
+  "id": "RAW_37c21d",
+  "title": "分割/识别/解说一个模型搞定！3B 参数刷新视觉理解 SOTA，图像视频全适配",
+  "url": "https://www.qbitai.com/2025/06/294699.html",
+  "date": "2025-06-14 12:01:45",
+  "author": "不圆",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-pm-slice=\"0 0 []\">PAM团队 投稿<br>\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>可以输出语义的「分割一切模型2.0」来了！</p>\n  <p>一次交互，「分割+识别+解释+描述」全搞定，同时支持图像、视频和长视频，文本&amp;Mask同时输出！</p>\n  <p>由港中文MMLab、港理工、北京大学等机构开源的<strong>PAM</strong>（Perceive Anything Model）模型，能够在保留SAM2分割一切、追踪一切能力的基础上，同时输出丰富的语义信息。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bbd59579-42e7-47d4-bf21-8defb4a39800/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/04035a9f-4c98-454e-029d-9f11cd44a500/public\" data-ratio=\"0.7953703703703704\" data-type=\"png\" data-w=\"1080\" data-width=\"1644\" data-height=\"1307\" data-imgfileid=\"100317899\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"1\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <section>\n   <div id=\"page-content\">\n    <div id=\"js_mpvedio_wrapper_wxv_4029726388910538755\">\n    </div>\n   </div>\n  </section>\n  <p>为了训练这样一个强大的模型，PAM团队还构建了一个超大规模高质量训练数据集：拥有<strong>150万个图像区域+60万个视频区域标注</strong></p>\n  <p>实验结果表明，PAM仅使用<strong>3B参数</strong>，就在多个图像和视频理解基准上全面刷新或逼近SOTA，且具备更优的推理效率和显存占用，真正实现性能与轻量的统一。</p>\n  <p>所有数据均已<strong>完全开源</strong>。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1ca4f069-4223-461c-b1f6-723a9d8e6d00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e85ec1f8-2c26-458e-9ea2-bb41e21c8500/public\" data-ratio=\"0.3907407407407407\" data-type=\"png\" data-w=\"1080\" data-width=\"2058\" data-height=\"804\" data-imgfileid=\"100317896\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"2\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <h2>PAM：准确定位一键输出</h2>\n  <section>\n   SAM2拥有强大的分割能力，可以“分割一切物体”，在视频中能够高效追踪任意目标，表现惊艳！\n  </section>\n  <section>\n   但它也有一个明显的局限：无法提供定位目标的任何语义信息（比如物体是什么、有何功能、处于什么状态等）。\n  </section>\n  <p>一些最新的<strong>Video LLM</strong>模型尝试结合VLM和SAM2的强大视觉提示能力，进行视频理解。然而：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     这些模型往往<strong>无法直接输出分割结果</strong>，或需要额外接入segment模型，流程复杂；\n    </section></li>\n   <li>\n    <section>\n     模型体量通常非常庞大，对计算资源要求高，<strong>不适用于轻量化、快速响应的实际场景</strong>（如AR/VR、移动端推理等）。\n    </section></li>\n  </ul>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/60db3ad2-2c5b-4fe7-8666-9dd1b77bb400/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/66568159-f2b8-4faf-d978-e10ad14ad100/public\" data-ratio=\"0.4675925925925926\" data-type=\"png\" data-w=\"1080\" data-width=\"1280\" data-height=\"598\" data-imgfileid=\"100317897\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>而PAM（Perceive Anything Model）既保留了SAM2在图像和视频中分割、追踪一切物体的能力，同时可以输出丰富的语义信息：</p>\n  <p>在图像任务中，PAM支持一次点击即可输出选中区域的：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     类别（Label）\n    </section></li>\n   <li>\n    <section>\n     解释（Explain）\n    </section></li>\n   <li>\n    <section>\n     精细描述（Caption）\n    </section></li>\n  </ul>\n  <p>在视频任务中，PAM同样支持区域理解：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     整段描述（Caption）\n    </section></li>\n   <li>\n    <section>\n     流式描述（Streaming Caption）：连续事件追踪+动态叙述\n    </section></li>\n  </ul>\n  <p>只需要用户的一次点击，PAM就可以并行输出mask和文本，在许多应用场景下都具有潜力！</p>\n  <h2>效果展示：图片/短视频/长视频</h2>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7bd0cd4b-084a-40f3-3728-3109a8baa500/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ad9468a2-e867-41df-be7f-f22922eeff00/public\" data-ratio=\"0.3787037037037037\" data-type=\"png\" data-w=\"1080\" data-width=\"2902\" data-height=\"1098\" data-imgfileid=\"100317900\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"4\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>对于图片，用户通过<strong>点击</strong>或者<strong>拖拽矩形框</strong>选中一个物体，PAM可以完成分割的同时，输出该物体的<strong>类别+解释+描述</strong>的详细语义信息！</p>\n  <p>对于较短视频，用户选中特定物体后，PAM可以追踪并分割该物体，同时输出<strong>该物体的事件描述</strong>。</p>\n  <p>而对于长视频，PAM在追踪分割用户选中物体的同时，会<strong>根据事件的变化，动态地输出流式描述，类似实时字幕</strong>。</p>\n  <h2>工作原理：模型框架+数据集</h2>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bdf02f08-0e55-4823-6ddd-216e4d3f3a00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eb9411a9-ce8d-4c31-adbc-1dd780f3a100/public\" data-ratio=\"0.7527777777777778\" data-type=\"png\" data-w=\"1080\" data-width=\"1280\" data-height=\"964\" data-imgfileid=\"100317898\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>PAM引入了<strong>Semantic Perceiver</strong>来连接SAM2分割骨架和LLM，高效地<strong>将视觉特征“翻译”成多模态token</strong>。</p>\n  <p>通过SAM2分割骨架+Semantic Perceiver+LLM<strong>并行解码</strong>，在保证轻量高效的前提下，实现了分割mask和语义信息并行输出的图像/视频区域级理解。</p>\n  <p>基于此方法，PAM只使用了<strong>1.5B/3B</strong>参数的LLM head，就可以输出非常丰富和鲁棒的语义信息。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ebf426fe-62ee-49d8-3f5a-9213afd21800/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7e5adc8c-05af-4502-3a0a-6c275b12de00/public\" data-ratio=\"1.0037950664136623\" data-s=\"300,640\" data-type=\"png\" data-w=\"1054\" data-imgfileid=\"100317914\" data-original-style=\"null\" data-index=\"6\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>为支撑PAM的训练，构建了一个大规模、多层次、高密度的图像与视频语义标注数据集，覆盖<strong>分类、解释、描述、时序事件</strong>等多个维度：</p>\n  <p><strong>图像数据：精细三连注释</strong></p>\n  <p><strong>使用SoM（Set of Masks）方法</strong>精准定位目标区域**，结合强大的闭源VLM（如GPT-4o）生成三类语义信息：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     类别（Label）\n    </section></li>\n   <li>\n    <section>\n     解释（Explain）\n    </section></li>\n   <li>\n    <section>\n     描述（Caption）\n    </section></li>\n  </ul>\n  <section>\n   <span data-pm-slice=\"0 0 []\">每个物体不仅知道“是什么”，还能解释“为什么”和“什么作用”。</span>\n  </section>\n  <p><strong>视频数据：Storyboard驱动式理解</strong></p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     对每段视频抽取<strong>6张关键帧</strong>，合成为Storyboard格式的高分辨率图像；\n    </section></li>\n   <li>\n    <section>\n     使用SoM高亮目标区域，作为提示引导；\n    </section></li>\n   <li>\n    <section>\n     利用闭源VLM进行多帧联合推理，生成<strong>细节丰富、时间感知强</strong>的事件描述。\n    </section></li>\n  </ul>\n  <p><strong>流式视频数据：连贯事件字幕的首创实践</strong></p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>\n     将长视频切分为多个<strong>连续不重叠的事件片段</strong>；\n    </section></li>\n   <li>\n    <section>\n     每段片段重复Storyboard流程；\n    </section></li>\n   <li>\n    <section>\n     并在生成描述时<strong>递归引入前一段文字内容</strong>，让字幕连贯衔接，保证上下文一致性。\n    </section></li>\n  </ul>\n  <h2>实验分析：规模更小、性能更好</h2>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cc000911-b6f1-438a-4183-1964b6725900/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9bf569f1-3bf5-4af5-2cb4-fd9ac6fa1400/public\" data-ratio=\"0.6833333333333333\" data-type=\"png\" data-w=\"1080\" data-width=\"1794\" data-height=\"1226\" data-imgfileid=\"100317904\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"7\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>可以看到，PAM-3B在PACO基准测试中达到最佳性能，超过先前最佳模型3.2%以上，并在LVIS基准测试中，就语义IoU而言，超越了当前SOTA模型DAM-8B。</p>\n  <p>此外，PAM-3B在Total-Text上超过VP-SPHINX-13B超过3.5%，并在COCO-Text上达到相当的性能。<br><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d71f5ff6-482e-4fac-c97f-d677231b5c00/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d47e9bc6-5e69-4588-ab62-0d6533445b00/public\" data-ratio=\"0.25925925925925924\" data-type=\"png\" data-w=\"1080\" data-width=\"1812\" data-height=\"470\" data-imgfileid=\"100317902\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"7\" data-fail=\"0\"></p>\n  <p>在ImageCaption、VideoCaption、视频时序事件理解等多个benchmark上，<strong>PAM都以更小的参数规模（3Bvs8B、13B）刷新或并列SOTA</strong>。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a1b5f0b1-07e1-473b-777d-d112302d4900/public\" alt=\"图片\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0962b1d9-7aa4-461c-78c3-e1049d582800/public\" data-ratio=\"0.5648148148148148\" data-type=\"png\" data-w=\"1080\" data-width=\"1176\" data-height=\"664\" data-imgfileid=\"100317903\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"9\" data-report-img-idx=\"8\" data-fail=\"0\">\n  </section>\n  <p>如图所示，和相同参数量的DAM-3B模型相比，PAM-3B<strong>推理更快，显存更省</strong>。</p>\n  <p>此外，PAM首创了<strong>区域级的流式视频字幕能力</strong>，不仅能持续描述一个物体的行为，还能<strong>在连续事件中保持高度语义一致性</strong>，展现了强大的实际应用潜力。</p>\n  <p><em>论文地址：https://arxiv.org/abs/2506.05302</em><br><em>项目主页：https://perceive-anything.github.io/</em><br><em>GitHub Repo：https://github.com/Perceive-Anything/PAM</em><br><em>Model CKPT：https://huggingface.co/Perceive-Anything/PAM-3B</em><br><em>Dataset：https://huggingface.co/datasets/Perceive-Anything/PAM-data</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "港中文等机构发布 PAM 模型，整合分割与语义理解，3B 参数刷新视觉理解 SOTA，支持图像及长视频分析。",
+  "oneSentenceSummary": "港中文等机构发布 PAM 模型，整合分割与语义理解，3B 参数刷新视觉理解 SOTA，支持图像及长视频分析。",
+  "summary": "PAM（Perceive Anything Model）模型由港中文 MMLab 等机构开发并开源，旨在结合 SAM2 的强大分割与追踪能力和语义理解。针对 SAM2 缺乏语义信息的问题，以及现有 Video LLM 在**无法直接输出分割结果**和**模型体量庞大不适用于轻量场景**方面的局限，PAM 通过引入 Semantic Perceiver 连接 SAM2 骨架和 LLM，实现掩码和文本并行输出。该模型仅用 3B 参数，在多个图像（如 PACO， LVIS）和视频（如 VideoCaption， 时序事件理解）理解基准测试中达到或接近 SOTA，且推理更快、显存更省。为训练 PAM，团队构建了包含 150 万图像区域和 60 万视频区域的高质量数据集，支持分类、解释、描述和时序事件标注。PAM 具备图片区域语义理解、短视频事件描述、长视频区域流式描述等功能，所有代码、权重和数据集均已开源，对推动视觉理解技术发展具有重要价值。",
+  "mainPoints": [
+    {
+      "point": "PAM 模型整合了物体分割与语义理解能力",
+      "explanation": "弥补了 SAM2 缺乏语义信息的不足，用户一次交互即可同时获取选中区域的 Mask、类别、解释和描述，极大提升了视觉任务的效率和应用潜力。"
+    },
+    {
+      "point": "以更小参数量实现 SOTA 或接近 SOTA 性能",
+      "explanation": "PAM-3B 在多个图像和视频理解基准上超越或匹敌参数量更大的模型，证明了其在性能与效率上的优势，更适用于资源受限场景。"
+    },
+    {
+      "point": "引入 Semantic Perceiver 实现掩码与文本并行输出",
+      "explanation": "这种创新的架构设计将视觉特征高效“翻译”成多模态 token，实现了轻量高效地并行解码 Mask 和语义信息，提升了推理速度和效率。"
+    },
+    {
+      "point": "构建了大规模高质量图像与视频语义数据集",
+      "explanation": "数据集包含精细的图像区域三连注释和 Storyboard 驱动的视频事件描述，为训练具有强大语义理解能力的 PAM 提供了关键支撑，并已开源。"
+    },
+    {
+      "point": "首创区域级流式视频字幕能力",
+      "explanation": "PAM 能够对长视频中追踪的物体生成连续、语义一致的事件描述，为实时视频分析和交互应用开辟了新方向。"
+    }
+  ],
+  "keyQuotes": [
+    "PAM（Perceive Anything Model）模型，能够在保留 SAM2 分割一切、追踪一切能力的基础上，同时输出丰富的语义信息。",
+    "PAM 仅使用**3B 参数**，就在多个图像和视频理解基准上全面刷新或逼近 SOTA，且具备更优的推理效率和显存占用，真正实现性能与轻量的统一。",
+    "PAM 引入了**Semantic Perceiver** 来连接 SAM2 分割骨架和 LLM，高效地**将视觉特征\"翻译\"成多模态 token**。",
+    "为支撑 PAM 的训练，构建了一个大规模、多层次、高密度的图像与视频语义标注数据集，覆盖**分类、解释、描述、时序事件**等多个维度。",
+    "PAM 首创了**区域级的流式视频字幕能力**，不仅能持续描述一个物体的行为，还能**在连续事件中保持高度语义一致性**，展现了强大的实际应用潜力。"
+  ],
+  "tags": [
+    "计算机视觉",
+    "视觉理解",
+    "AI模型",
+    "分割",
+    "语义理解"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1984,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749902505000,
+  "publishDateStr": "2025-06-14",
+  "publishDateTimeStr": "2025-06-14 12:01:45"
+}

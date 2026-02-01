@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d1fa5b",
+  "title": "DeepSeek 突破 H800 性能上限，FlashMLA 重磅开源，算力成本还能降",
+  "url": "https://www.qbitai.com/2025/02/257487.html",
+  "date": "2025-02-24 03:56:41",
+  "author": "白交",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p class=\"pgc-h-arrow-right\" data-track=\"1\">白交 发自 凹非寺</p>\n  <p class=\"pgc-h-arrow-right\" data-track=\"1\">量子位 | 公众号 QbitAI</p>\n  <p data-track=\"2\">DeepSeek开源周第一天，降本大法公开——</p>\n  <p data-track=\"3\"><strong>FlashMLA</strong>，直接突破H800计算上限。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/33c79b07-950c-4333-7f4b-c78e1c6dac00/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/33c79b07-950c-4333-7f4b-c78e1c6dac00/public\">\n  </div>\n  <p data-track=\"5\">它是为Hopper GPU开发的高效MLA解码内核，专门针对可变长度序列进行了优化，目前已经投入生产。</p>\n  <p data-track=\"6\"><strong>MLA</strong>，正是DeepSeek提出的创新注意力架构。从V2开始，MLA使得DeepSeek在系列模型中实现成本大幅降低，但是计算、推理性能仍能与顶尖模型持平。</p>\n  <p data-track=\"7\">按照官方介绍来说，FlashMLA使用之后，<strong>H800可以达到3000GB/s内存，实现580TFLOPS计算性能</strong>。</p>\n  <p data-track=\"8\">网友们纷纷点赞：向工程团队致以崇高的敬意，从Hopper的张量核中挤出了每一个FLOP。这就是我们将 LLM 服务推向新前沿的方式！</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/449af948-8abf-4571-e5a2-237995f45e00/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/449af948-8abf-4571-e5a2-237995f45e00/public\">\n  </div>\n  <p data-track=\"9\">已经有网友用上了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7d47b7df-7183-4854-20b9-29f411a7b600/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7d47b7df-7183-4854-20b9-29f411a7b600/public\">\n  </div>\n  <p data-track=\"11\">目前GitHub页面已经更新。短短一小时，Star星数已经超过1.2k。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b54fe18-b07e-4abb-441e-6f26f2ded200/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2b54fe18-b07e-4abb-441e-6f26f2ded200/public\">\n  </div>\n  <p data-track=\"12\">此次已经发布：</p>\n  <ul>\n   <li data-track=\"13\">支持BF16；</li>\n   <li data-track=\"14\">分页KV缓存，块大小为 64</li>\n  </ul>\n  <p data-track=\"15\">快速启动：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f45f618a-3619-468c-8cd9-afee74fc2c00/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f45f618a-3619-468c-8cd9-afee74fc2c00/public\">\n  </div>\n  <p data-track=\"16\">环境要求：</p>\n  <ul>\n   <li data-track=\"17\">Hopper GPU</li>\n   <li data-track=\"18\">CUDA 12.3 及以上版本</li>\n   <li data-track=\"19\">PyTorch 2.0 及以上版本</li>\n  </ul>\n  <p data-track=\"20\">在项目的最后，它还表示，这是受到了<strong>FlashAttention 2&amp;3</strong>和<strong>英伟达CUTLASS项目</strong>的启发。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b7739388-28d7-4206-a4bf-12c9cb544500/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b7739388-28d7-4206-a4bf-12c9cb544500/public\">\n  </div>\n  <p data-track=\"21\">FlashAttention是能实现快速且内存高效的精确注意力，主流大模型都有在用。最新的第三代，可以<strong>让H100利用率飙升至75%</strong>。<strong>训练速度提升1.5-2倍</strong>，FP16下计算吞吐量高达740TFLOPs/s，达理论最大吞吐量<strong>75%</strong>，更充分利用计算资源，此前只能做到35%。</p>\n  <p data-track=\"22\">核心作者是Tri Dao，普林斯顿大牛，Together AI的首席科学家。</p>\n  <p data-track=\"23\">而英伟达CUTLASS是CUDA C++ 模板抽象的集合，用于在 CUDA 内实现高性能矩阵-矩阵乘法 (GEMM) 和所有级别和规模的相关计算。</p>\n  <p data-track=\"25\">最后再来说说，MLA，多头潜在注意力机制，DeepSeek系列模型的基本架构，旨在优化Transformer模型的推理效率与内存使用，同时保持模型性能。</p>\n  <p data-track=\"26\">它通过<strong>低秩联合压缩技术</strong>，将多头注意力中的键（Key）和值（Value）矩阵投影到低维潜在空间，从而显著减少键值缓存（KV Cache）的存储需求。这种方法在长序列处理中尤为重要，因为传统方法需要存储完整的KV矩阵，而MLA通过压缩仅保留关键信息。</p>\n  <p data-track=\"27\">V2版本中，这一创新性架构把显存占用降到了过去最常用的MHA架构的5%-13%，实现了成本大幅降低。它的推理成本仅为Llama 370B的1/7、GPT-4 Turbo的1/70。</p>\n  <p data-track=\"28\">而在V3，这一降本提速就更为明显，直接让DeepSeek吸引全球目光。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a4f4309f-005e-459d-9da5-168f6d96b700/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a4f4309f-005e-459d-9da5-168f6d96b700/public\">\n  </div>\n  <p data-track=\"29\">也就在今天，DeepSeek-R1 在HuggingFace上获得了超过10000个赞，成为该平台近150万个模型之中最受欢迎的大模型。</p>\n  <p data-track=\"30\">HuggingFace CEO发文公布了这一喜讯。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/700579e7-4ecf-4ff8-1b6f-76da97f25d00/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/700579e7-4ecf-4ff8-1b6f-76da97f25d00/public\">\n  </div>\n  <p data-track=\"31\"><strong>The whale is making waves！鲸鱼正在掀起波浪！</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8b6acec3-beed-4b19-67f4-22649d46c300/public\" alt=\"DeepSeek突破H800性能上限，FlashMLA重磅开源，算力成本还能降\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8b6acec3-beed-4b19-67f4-22649d46c300/public\">\n  </div>\n  <p data-track=\"32\">好了期待一下，接下来的四天会发些什么呢？</p>\n  <p data-track=\"33\">GitHub链接：<br>\n    https://github.com/deepseek-ai/FlashMLA<br>\n    参考链接：<br>\n    https://x.com/deepseek_ai/status/1893836827574030466</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DeepSeek 开源 FlashMLA，一种为 Hopper GPU 开发的高效 MLA 解码内核，突破 H800 计算上限，优化可变长度序列处理，显著降低大模型推理算力成本。",
+  "oneSentenceSummary": "DeepSeek 开源 FlashMLA，一种为 Hopper GPU 开发的高效 MLA 解码内核，突破 H800 计算上限，优化可变长度序列处理，显著降低大模型推理算力成本。",
+  "summary": "文章报道了 DeepSeek 开源的 FlashMLA，这是一种专为 Hopper GPU 设计的高效 MLA (多头潜在注意力机制) 解码内核。FlashMLA 主要针对可变长度序列进行了优化，能够突破 H800 的计算上限，实现高达 3000GB/s 的内存读取速度和 580TFLOPS 的计算性能。该技术基于 DeepSeek 提出的创新注意力架构 MLA，旨在降低大模型的推理成本，同时保持模型性能。FlashMLA 的灵感来源于 FlashAttention 和英伟达 CUTLASS 项目，通过低秩联合压缩技术减少键值缓存的存储需求，从而显著降低显存占用。DeepSeek 系列模型通过 MLA 架构，实现了推理成本的大幅降低，例如 V2 版本将显存占用降至传统 MHA 架构的 5%-13%，推理成本仅为 Llama 370B 的 1/7、GPT-4 Turbo 的 1/70。DeepSeek-R1 在 HuggingFace 上获得了超过 10000 个赞，成为该平台最受欢迎的大模型之一。",
+  "mainPoints": [
+    {
+      "point": "MLA 架构通过低秩压缩，显著降低显存占用",
+      "explanation": "MLA 采用低秩联合压缩技术，将 Key 和 Value 矩阵投影到低维空间，减少 KV Cache 存储需求，降低推理成本。"
+    },
+    {
+      "point": "FlashMLA 突破 H800 计算上限，提升计算性能",
+      "explanation": "FlashMLA 通过优化，使 H800 GPU 能够达到 3000GB/s 的内存读取速度和 580TFLOPS 的计算性能，提升大模型推理效率。"
+    },
+    {
+      "point": "DeepSeek-R1 成为 HuggingFace 上最受欢迎的大模型之一",
+      "explanation": "DeepSeek-R1 模型因其高效的架构和出色的性能，在 HuggingFace 上获得超过 10000 个赞，表明其受欢迎程度和影响力。"
+    }
+  ],
+  "keyQuotes": [
+    "FlashMLA，直接突破 H800 计算上限。",
+    "H800 可以达到 3000GB/s 内存，实现 580TFLOPS 计算性能。",
+    "MLA，多头潜在注意力机制，DeepSeek 系列模型的基本架构，旨在优化 Transformer 模型的推理效率与内存使用，同时保持模型性能。"
+  ],
+  "tags": [
+    "大语言模型",
+    "模型优化",
+    "推理效率",
+    "算力优化",
+    "DeepSeek"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 92,
+  "wordCount": 1140,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740369401000,
+  "publishDateStr": "2025-02-24",
+  "publishDateTimeStr": "2025-02-24 03:56:41"
+}

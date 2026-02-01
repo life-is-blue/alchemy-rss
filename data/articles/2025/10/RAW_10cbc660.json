@@ -1,0 +1,53 @@
+{
+  "id": "RAW_10cbc660",
+  "title": "Agoda 在 CI/CD 流程中使用 ChatGPT 优化 SQL 存储过程",
+  "url": "https://www.infoq.com/news/2025/10/agoda-sql-procedure-chatgpt-cicd/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-03 13:40:00",
+  "author": "Rafal Gancarz",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agoda <a href=\"https://medium.com/agoda-engineering/how-agoda-uses-gpt-to-optimize-sql-stored-procedures-in-ci-cd-29caf730c46c\">started utilizing ChatGPT to optimize SQL stored procedures</a> (SP) as part of their CI/CD process. After introducing the automated LLM-assisted step, the company observed shortened stored procedure optimization times, which lightened the load on DB developers. Agora works on making ChatGPT more accessible for SP optimization outside of the CI/CD pipeline.</p>\n   <p>Agoda’s DB developers have been spending approximately 366 person-days on SP optimization, of which 320 person-days were dedicated to analyzing SP changes that resulted in performance test failures, reported by the CI/CD pipeline. The company wanted to reduce the merge request (MR) approval times (90th percentile of 4.1 hours).</p>\n   <p>Pichamon Rungarun, staff software engineer at Agoda, outlines the goals behind using ChatGPT:</p>\n   <blockquote>\n    <p>To reduce manual effort and accelerate SP tuning, we integrated GPT into our development workflow. Our goal was to reduce manual review time, speed up MR approvals, and give developers access to self-service tools for performance tuning.</p>\n   </blockquote>\n   <p>Inefficient SPs and SQL in general impacted performance, cost, and scalability for the company, potentially resulting in slow response times and frustrated users, higher resource utilization, and scalability bottlenecks. Yet, application developers often encounter challenges when working on database queries, including inefficient joins and subqueries, excessive query nesting, missing or poorly designed indexes, and a lack of visibility into query execution plans.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/10/agoda-sql-procedure-chatgpt-cicd/news/2025/10/agoda-sql-procedure-chatgpt-cicd/en/resources/1agoda-chatgpt-sql3-1759498570464.jpeg\" style=\"width:100%;height:570px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/agoda-sql-procedure-chatgpt-cicd/en/resources/1agoda-chatgpt-sql3-1759498570464.jpeg\" rel=\"share\"></p>\n   <p><em>SQL stored procedure optimization process with ChatGPT (Source: <a href=\"https://medium.com/agoda-engineering/how-agoda-uses-gpt-to-optimize-sql-stored-procedures-in-ci-cd-29caf730c46c\">Agoda Engineering Blog</a>)</em></p>\n   <p>The team created an automated step that generates SP optimization recommendations using ChatGPT by feeding the SQL code of the stored procedure, table structures, and indexes, along with a performance test report, to the LLM. As a result, GPT suggests an optimized version of the SP by rewriting queries and recommends creating or modifying indexes.</p>\n   <p>Based on ChatGPT’s optimized version of the SP, the CI/CD pipeline reruns the performance test and provides a side-by-side comparison to DB and application developers, helping them make an informed decision.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/10/agoda-sql-procedure-chatgpt-cicd/news/2025/10/agoda-sql-procedure-chatgpt-cicd/en/resources/1agoda-chatgpt-sql-example-1759498516180.jpeg\" style=\"width: 600px; height: 314px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/agoda-sql-procedure-chatgpt-cicd/en/resources/1agoda-chatgpt-sql-example-1759498516180.jpeg\" rel=\"share\"></p>\n   <p><em>Example of SQL procedure optimization with ChatGPT (Source: <a href=\"https://medium.com/agoda-engineering/how-agoda-uses-gpt-to-optimize-sql-stored-procedures-in-ci-cd-29caf730c46c\">Agoda Engineering Blog</a>)</em></p>\n   <p>Despite the initial success in leveraging ChatGPT, developers are working on improvements to address some limitations, including automated logic validation to ensure heavily revised SPs implement identical logic, despite substantial changes recommended by the LLM.</p>\n   <p>The team is working on making the functionality available outside of the CI/CD pipeline, so that developers can leverage GPT-based support without needing to open a merge request. Additionally, engineers are seeking to assist DB developers in fine-tuning GPT prompts to enhance the quality of GPT suggestions. Lastly, the team plans to apply SP optimization to production SPs that are responsible for the highest CPU utilization with the hope of reducing resource utilization and lowering infrastructure costs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Agoda Leverages ChatGPT in the CI/CD Process for SQL Stored Procedure Optimization\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Rafal Gancarz\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/agoda-sql-procedure-chatgpt-cicd/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759498800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Agoda 成功将 ChatGPT 集成到 CI/CD 流程中，以自动化 SQL 存储过程的优化，从而显著减少人工工作量并加快合并请求的审批速度。",
+  "oneSentenceSummary": "Agoda 成功将 ChatGPT 集成到 CI/CD 流程中，以自动化 SQL 存储过程的优化，从而显著减少人工工作量并加快合并请求的审批速度。",
+  "summary": "Agoda 率先在其 CI/CD 流程中使用 ChatGPT 来优化 SQL 存储过程。此举旨在减轻数据库开发者的负担，并加快合并请求 (MR) 的审批时间。低效的 SQL 代码通常源于低效连接、过度查询嵌套或缺少索引等问题，这些问题会严重影响性能、成本和可扩展性。此前，数据库开发者需要花费大量时间分析与 SP 变更相关的性能测试失败。现在，通过引入自动化步骤，系统将 SQL 代码、表结构、索引和性能报告提供给 ChatGPT，然后 ChatGPT 会建议优化的 SP 版本和索引修改。这种 LLM 辅助方法可以对性能测试进行并列比较，使开发人员能够做出更明智的决策。该举措已成功减少人工审查时间，并提高了开发工作流程效率。Agoda 目前正在努力进行进一步的增强，包括对 LLM 修改后的 SP 进行自动逻辑验证，使优化功能可以在 CI/CD 流程之外访问，优化 GPT prompt，并将该方法应用于高 CPU 生产 SP，以降低基础设施成本。",
+  "mainPoints": [
+    {
+      "point": "Agoda 将 ChatGPT 集成到 CI/CD 中，以自动化 SQL 存储过程的优化。",
+      "explanation": "这种创新方法利用 LLM 分析 SQL 代码、表模式和性能报告，生成优化的存储过程和索引建议，从而简化开发工作流程。"
+    },
+    {
+      "point": "LLM 辅助流程显著减少了人工工作量，并加快了 MR 审批速度。",
+      "explanation": "通过自动分析性能不佳的 SP，Agoda 发现此前花费在这些任务上的 320 人天大幅减少，从而提高了开发人员的效率，并将 MR 审批时间从 4.1 小时缩短。"
+    },
+    {
+      "point": "未来的工作重点是扩大可访问性，并改进 LLM 建议。",
+      "explanation": "Agoda 计划将优化工具扩展到 CI/CD 之外，并改进 prompt 工程以优化 GPT 的建议。此外，他们还将应用此方法来优化高 CPU 生产 SP，从而降低基础设施成本。"
+    }
+  ],
+  "keyQuotes": [
+    "为了减少人工工作量并加速 SP 调整，我们将 GPT 集成到我们的开发工作流程中。我们的目标是减少人工审查时间，加快 MR 审批速度，并让开发人员可以使用自助服务工具进行性能调整。",
+    "该团队创建了一个自动化步骤，该步骤通过将存储过程的 SQL 代码、表结构和索引以及性能测试报告提供给 LLM，从而使用 ChatGPT 生成 SP 优化建议。",
+    "尽管在利用 ChatGPT 方面取得了初步成功，但开发人员仍在努力改进以解决一些限制。其中一项改进是自动逻辑验证，旨在确保即使 LLM 建议了大量更改，经过大量修改的 SP 也能保持相同的逻辑。"
+  ],
+  "tags": [
+    "SQL Optimization",
+    "CI/CD",
+    "ChatGPT",
+    "LLM",
+    "Database Development"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 433,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759498800000,
+  "publishDateStr": "2025-10-03",
+  "publishDateTimeStr": "2025-10-03 13:40:00"
+}

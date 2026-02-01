@@ -1,0 +1,54 @@
+{
+  "id": "RAW_24ad701e",
+  "title": "Meta 和 Hugging Face 推出 OpenEnv：一个代理环境共享中心",
+  "url": "https://www.infoq.com/news/2025/11/hugging-face-openenv/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-04 11:55:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Meta’s PyTorch team and Hugging Face have unveiled <a href=\"https://huggingface.co/blog/openenv\">OpenEnv</a>, an open-source initiative designed to standardize how developers create and share environments for AI agents. At its core is the OpenEnv Hub, a collaborative platform for building, testing, and deploying “agentic environments,” secure sandboxes that specify the exact tools, APIs, and conditions an agent needs to perform a task safely, consistently, and at scale.</p>\n   <p>Agentic environments precisely define which tools, APIs, and permissions a model can use — providing structure, safety, and predictability when AI agents operate autonomously. Instead of giving models uncontrolled access to vast toolsets, OpenEnv narrows their scope to only what’s required for a specific task, running everything within a secure, well-defined sandbox that minimizes risk and ambiguity.</p>\n   <p>The OpenEnv 0.1 specification (RFC) is being released alongside the Hub to gather community feedback. The first RFCs outline how environments should interact with agents, handle packaging and isolation, and encapsulate tools under a unified action schema. Developers can already explore example environments in the public repository and use local Docker setups to test their behavior before training reinforcement learning (RL) agents.</p>\n   <p>Developers can already explore and contribute to the new Environment Hub on Hugging Face, experiment with existing environments as “human agents,” or deploy models within them to complete predefined tasks. Any environment built according to the OpenEnv specification automatically gains interactive features, allowing teams to test, debug, and refine their setups before moving to large-scale training.</p>\n   <p>The initiative is part of a broader collaboration across the open-source RL ecosystem. Integrations with TorchForge, verl, TRL, and SkyRL are already underway, with Meta positioning OpenEnv as a foundation for scalable agent development and post-training workflows.</p>\n   <p><img alt=\"OpenEnv Hugging Face\" style=\"width: 730px; height: 620px;\" data-src=\"https://www.infoq.com/news/2025/11/hugging-face-openenv/news/2025/11/hugging-face-openenv/en/resources/1Zrzut ekranu 2025-11-4 o 12.31.54-1762256500748.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/hugging-face-openenv/en/resources/1Zrzut ekranu 2025-11-4 o 12.31.54-1762256500748.png\" rel=\"share\">\n    <br>\n    <em>Source: Hugging Face Blog</em></p>\n   <p>The announcement drew attention from developers curious about how OpenEnv would work in practice. Sofiane L., an AI engineer, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7387148852031598592?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7387148852031598592%2C7389953899140378624%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287389953899140378624%2Curn%3Ali%3Aactivity%3A7387148852031598592%29\">commented</a>:</p>\n   <blockquote>\n    <p>Really interesting work, love the open-source-first approach here! Will there be examples or starter templates for people new to building agentic systems?</p>\n   </blockquote>\n   <p>Zach Wentz, from Meta’s Superintelligence Lab, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7387148852031598592?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7387148852031598592%2C7389953899140378624%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7387148852031598592%2C7390762782918619136%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287389953899140378624%2Curn%3Ali%3Aactivity%3A7387148852031598592%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287390762782918619136%2Curn%3Ali%3Aactivity%3A7387148852031598592%29\">replied</a>:</p>\n   <blockquote>\n    <p>Indeed! Take a look at the repo, already many example environments and notebooks with the environments hooked up to RL harnesses.</p>\n   </blockquote>\n   <p>The OpenEnv team is also inviting developers to contribute to the ongoing RFCs, try out the provided Colab notebook walkthrough, and join the community Discord.&nbsp;</p>\n   <p>The OpenEnv Hub is now live on <a href=\"https://huggingface.co/openenv\">Hugging Face</a>, complete with sample environments and integration guides — marking the start of what Meta and Hugging Face describe as “the future of open agents, one environment at a time.”</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Meta and Hugging Face Launch OpenEnv, a Shared Hub for Agentic Environments\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/hugging-face-openenv/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1762257300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Meta 和 Hugging Face 推出 OpenEnv，这是一个开源中心和规范，旨在标准化 AI 代理的安全、特定任务环境的创建和共享。",
+  "oneSentenceSummary": "Meta 和 Hugging Face 推出 OpenEnv，这是一个开源中心和规范，旨在标准化 AI 代理的安全、特定任务环境的创建和共享。",
+  "summary": "Meta 的 PyTorch 团队和 Hugging Face 发布了 OpenEnv，这是一个旨在标准化开发者创建和共享 AI 代理环境方式的开源项目。其核心是 OpenEnv Hub，一个用于构建、测试和部署“代理环境 (Agentic Environments)”的协作平台。这些环境是安全沙箱，精确地定义了 AI 代理安全、一致且大规模地执行任务所需的工具、API 和条件，从而最大限度地降低因不受控制访问大量工具集而产生的风险。OpenEnv 0.1 规范 (RFC) 已经发布，以征求社区反馈，概述了环境与代理的交互方式、打包和隔离的处理方法，以及如何在统一的操作模式下封装工具。开发者已经可以探索示例环境，为 Hub 做出贡献，并在本地使用 Docker 测试代理行为，或者在这些交互式环境中部署模型。该项目是更广泛的开源强化学习生态系统内协作的一部分，计划与 TorchForge、verl、TRL 和 SkyRL 集成，将 OpenEnv 定位为可扩展代理开发和后训练工作流程的基础要素。",
+  "mainPoints": [
+    {
+      "point": "OpenEnv 标准化代理环境，旨在实现安全、可扩展的 AI 代理开发。",
+      "explanation": "它为 AI 代理提供了一个安全、定义明确的沙箱，限制了它们仅访问必要的工具和 API，这对于自主操作中的安全性、一致性和可扩展性至关重要。"
+    },
+    {
+      "point": "OpenEnv Hub 促进代理环境的协作式创建、测试与部署。",
+      "explanation": "该平台允许开发者共享、试验和部署代理环境，从而促进社区贡献并简化大规模训练之前的开发工作流程。"
+    },
+    {
+      "point": "该项目促进了更广泛的强化学习生态系统中的开源协作。",
+      "explanation": "OpenEnv 旨在与现有的开源强化学习框架集成，将自身定位为未来可扩展代理开发和后训练工作流程的基础组件。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenEnv，一个旨在标准化开发者如何为 AI 代理创建和共享环境的开源项目。",
+    "代理环境精确地定义了模型可以使用的工具、API 和权限，从而在 AI 代理自主运行时提供结构、安全性和可预测性。",
+    "任何根据 OpenEnv 规范构建的环境都会自动获得交互功能，允许团队在进行大规模训练之前测试、调试和完善其设置。",
+    "Meta 将 OpenEnv 定位为可扩展代理开发和后训练工作流程的基础组件。"
+  ],
+  "tags": [
+    "AI Agents",
+    "代理环境",
+    "开源",
+    "Hugging Face",
+    "Meta"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 412,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762257300000,
+  "publishDateStr": "2025-11-04",
+  "publishDateTimeStr": "2025-11-04 11:55:00"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "RAW_46e360",
+  "title": "Workflow Studio 助力 AWS Step Functions 本地开发体验升级",
+  "url": "https://www.infoq.com/news/2025/03/local-dev-aws-step-functions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-12 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS recently announced that it enhanced its local IDE experience for Step Functions with Workflow Studio, now available in <a href=\"https://code.visualstudio.com/\">Visual Studio Code</a> (VS Code) via the <a href=\"https://aws.amazon.com/visualstudiocode/\">AWS Toolkit</a> extension. This integration enables developers to create and edit state machines locally, using the same visual authoring tools as in the AWS Console.</p>\n   <p>The company describes <a href=\"https://aws.amazon.com/step-functions/\">Step Functions</a> as a visual workflow service that helps developers use AWS services to <a href=\"https://www.infoq.com/articles/workflows-aws-step-functions/\">build</a> distributed applications, automate processes, orchestrate microservices, and create data and machine learning (ML) pipelines. The local IDE is an enhancement to the <a href=\"https://www.infoq.com/news/2021/06/step-functions-workflow-studio/\">Workflow Studio for Step Functions</a>.</p>\n   <p>Chris McPeek, a principal solution architect at AWS, writes in compute blog post:</p>\n   <blockquote>\n    <p>The Workflow Studio integration offers the same intuitive and visual approach to designing state machines as the AWS Console without switching context.</p>\n   </blockquote>\n   <p>To use the updated IDE experience, developers must ensure they have the AWS Toolkit version 3.49.0 or higher installed in VS Code. After installation, they can open a state machine definition in Workflow Studio from their local workspace or download it from <a href=\"https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/aws-explorer.html\">AWS Explorer</a>. The integration supports <a href=\"https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html\">Amazon States Language</a> (ASL) definitions in JSON and YAML formats, with files needing to end in .asl.json, .asl.yml, or .asl.yaml to open automatically. Workflow Studio converts YAML to JSON for editing and back to YAML for saving.</p>\n   <p>In addition, Workflow Studio in VS Code has <a href=\"https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/stepfunctions-workflowstudio.html\">Design and Code modes</a>. Design mode offers a graphical interface for building workflows, while Code mode allows editing the ASL definition. Developers can return to text editing by selecting the Return to Default Editor link at the top right of Workflow Studio.</p>\n   <p><img alt=\"\" src=\"https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2025/03/05/sf-ide-3.jpeg\" style=\"width: 600px; height: 422px;\" rel=\"share\"></p>\n   <p><em>(Source: AWS Compute <a href=\"https://aws.amazon.com/blogs/compute/introducing-an-enhanced-local-ide-experience-for-aws-step-functions/\">blog post</a>)</em></p>\n   <p>Workflow Studio integration also allows developers to test a single state using the <a href=\"https://docs.amazonaws.cn/en_us/step-functions/latest/dg/test-and-debug.html\">Step Functions TestState API</a> directly from their local IDE - enabling localized testing without creating or updating a state machine. Developers can refine input/output processing or update conditional logic in a choice state while remaining in their IDE.</p>\n   <p>On X, <a href=\"https://x.com/DRo_604/\">Focus Otter</a>, a speaker, writer, and teacher, <a href=\"https://x.com/DRo_604/status/1897772517361590604\">tweeted</a>:</p>\n   <blockquote>\n    <p>Step Functions need a dedicated DA. There are so many cool things that SF unlocks, but it’s a bit overwhelming to know where to start. An end-to-end course/workshop would be helpful here. Has that been updated?</p>\n   </blockquote>\n   <p>Next to AWS, Azure offers services similar to Step Functions with <a href=\"https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview\">Logic Apps</a>. The Azure Logic Apps (Standard) extension provides a visual designer for creating workflows and integrates with Visual Studio Code. With Logic Apps, developers can <a href=\"https://learn.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings?tabs=azure-portal\">build, test, and deploy workflows locally</a> before deploying them to the cloud.</p>\n   <p>Lastly, developers can find more hands-on examples and resources at <a href=\"https://serverlessland.com/\">Serverless Land</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Local Development with Workflow Studio for Step Functions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/local-dev-aws-step-functions/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1741773600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Workflow Studio 加持，AWS Step Functions 在 VS Code 中的本地开发体验更上一层楼。",
+  "oneSentenceSummary": "Workflow Studio 加持，AWS Step Functions 在 VS Code 中的本地开发体验更上一层楼。",
+  "summary": "AWS Step Functions 通过 AWS Toolkit 扩展，将 Workflow Studio 集成到 Visual Studio Code (VS Code) 中，显著增强了本地 IDE 体验。这一集成使得开发者能够在本地使用与 AWS Console 相同的可视化工具创建和编辑状态机，显著提升开发效率并简化状态机设计。开发者需要在 VS Code 中安装 AWS Toolkit 3.49.0 或更高版本才能使用该功能。Workflow Studio 支持 JSON 和 YAML 格式的 Amazon States Language (ASL)，并提供 Design 模式和 Code 模式两种模式以满足不同开发需求。此外，Workflow Studio 允许开发者直接从本地 IDE 测试单个状态，无需创建或更新状态机，从而加速开发迭代。与 Azure 的 Logic Apps 类似，AWS Step Functions 也在不断增强其在低代码工作流编排领域的竞争力。",
+  "mainPoints": [
+    {
+      "point": "Workflow Studio 集成提供与 AWS Console 相同的可视化状态机设计方法。",
+      "explanation": "开发者无需切换环境即可使用直观的可视化界面设计状态机，降低了学习成本，加速了开发进程。"
+    },
+    {
+      "point": "支持 Design 模式和 Code 模式两种模式，灵活满足不同开发需求。",
+      "explanation": "Design 模式提供图形界面，Code 模式允许直接编辑 ASL 定义，开发者可根据自身习惯灵活选择，提高开发效率。"
+    },
+    {
+      "point": "直接在本地 IDE 测试状态，显著提高开发效率。",
+      "explanation": "开发者无需部署即可在本地测试单个状态，实现快速迭代和调试，大幅节省时间和资源。"
+    }
+  ],
+  "keyQuotes": [
+    "Workflow Studio 集成提供了与 AWS Console 相同的直观和可视化状态机设计方法，无需切换环境。",
+    "Step Functions 需要一个专门的开发者布道师。SF 解锁了很多很酷的功能，但一开始可能会让人不知所措。"
+  ],
+  "tags": [
+    "AWS Step Functions",
+    "Workflow Studio",
+    "Visual Studio Code",
+    "Serverless",
+    "AWS Toolkit"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 428,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741737600000,
+  "publishDateStr": "2025-03-12",
+  "publishDateTimeStr": "2025-03-12 00:00:00"
+}

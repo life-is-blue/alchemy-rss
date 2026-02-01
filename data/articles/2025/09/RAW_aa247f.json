@@ -1,0 +1,55 @@
+{
+  "id": "RAW_aa247f",
+  "title": "⚡️⚡️⚡️ 好消息，尤雨溪宣布即将发布 Vite 8 版本！完全由 Rolldown 提供支持🚀🚀🚀",
+  "url": "https://juejin.cn/post/7552827123933839414",
+  "date": "2025-09-23 03:35:39",
+  "author": "萌萌哒草头将军",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <h3 data-id=\"heading-0\">前言</h3>\n   <p>好消息，就在今天，尤雨溪宣布即将发布 Vite 8 Beta 版本了！</p>\n   <h4 data-id=\"heading-1\">往期精彩推荐</h4>\n   <ul>\n    <li><a href=\"https://juejin.cn/post/7541048117497954342\" title=\"https://juejin.cn/post/7541048117497954342\" target=\"_blank\">字节也在用的 @tanstack/react-query 到底有多好用！🔥🔥🔥</a></li>\n    <li><a href=\"https://juejin.cn/post/7542323000236359689\" title=\"https://juejin.cn/post/7542323000236359689\" target=\"_blank\">🚀🚀🚀 告别复制粘贴，这个高效的 Vite 插件让我摸鱼🐟时间更充足了！</a></li>\n    <li><a href=\"https://juejin.cn/post/7538393049765314598\" title=\"https://juejin.cn/post/7538393049765314598\" target=\"_blank\">🔥🔥🔥 原来在字节写代码就是这么朴实无华！🔥🔥🔥</a></li>\n    <li>更多精彩文章欢迎关注我的公众号：萌萌哒草头将军</li>\n   </ul>\n   <h3 data-id=\"heading-2\">正文</h3>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/41833ed5723b4266997868899d371c22~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6JCM6JCM5ZOS6I2J5aS05bCG5Yab:q75.awebp?rk3s=f64ab15b&amp;x-expires=1759203339&amp;x-signature=CAQxfg4ga0opO%2FpSvJ%2BbLjTsaDA%3D\" alt=\"PayFit 工程师推特\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>PayFit 前端工程师在推特上分享了将 rolldown_rs 集成到 vite 的复杂代码库的测试结果，测试结果显示，构建时间从2分钟（120秒）降至8秒，提速15倍，仅需添加一个polyfill插件。</p>\n   <p>PayFit 的代码库包含Astro（静态站点生成）、Storybook（组件开发）、Vitest（浏览器和单元测试）以及多个Vite前端应用。</p>\n   <p>尤雨溪转发了该推特，并宣布 Vite 8 将完全采用 Rolldown 作为默认捆绑器，Beta 版即将发布。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4e3e35d378694f47807910bbfdf47b04~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6JCM6JCM5ZOS6I2J5aS05bCG5Yab:q75.awebp?rk3s=f64ab15b&amp;x-expires=1759203339&amp;x-signature=oMjrggGXgFrHU5trfI0aNeFox6k%3D\" alt=\"尤雨溪推特\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这一转变标志着 Vite 从 esbuild 和 Rollup 的混合方案向统一的 Rust 驱动架构迁移。</p>\n   <p>对于即将发布的 Vite 8 版本，我们需要提前知道下面的一些特性：</p>\n   <h4 data-id=\"heading-3\">全捆绑模式（Full Bundle Mode）</h4>\n   <p>我上篇文章提到，Rolldown 的 Q4 计划已实现从入口到依赖的完整捆绑流程，优化生产构建的模块合并和树摇效率。PayFit案例验证了其在复杂依赖图中的可靠性。</p>\n   <h4 data-id=\"heading-4\">懒加载与跨块优化</h4>\n   <p>Vite 8将集成 Rolldown 的懒加载 barrel 文件优化和跨代码块优化（如共享模块提取），预计减少10-20%的bundle体积，适合移动端和性能敏感场景。</p>\n   <h4 data-id=\"heading-5\">Importmaps集成</h4>\n   <p>通过支持浏览器原生的 importmaps，Vite 8 简化第三方库的导入，减少捆绑复杂性，提升运行时性能。</p>\n   <h4 data-id=\"heading-6\">TypeScript优化</h4>\n   <p>Rolldown 的 tsconfig 自动发现和常量枚举内联优化将减少 TypeScript 项目的运行时开销，PayFit 的 TS-heavy 项目从中受益匪浅</p>\n   <h4 data-id=\"heading-7\">模块联邦支持</h4>\n   <p>Vite 8 将通过 Rolldown 实现模块联邦，动态加载远程模块，类似 Webpack 的 Module Federation，但性能更高，适合微前端架构。</p>\n   <h3 data-id=\"heading-8\">最后</h3>\n   <p>Vite 8 的 Beta 版将进一步稳定 Rolldown 的原生 Vite 插件支持！</p>\n   <p>今天的分享就这些了，感谢大家的阅读，如果文章中存在错误的地方欢迎指正！</p>\n   <h4 data-id=\"heading-9\">往期精彩推荐</h4>\n   <ul>\n    <li><a href=\"https://juejin.cn/post/7541048117497954342\" title=\"https://juejin.cn/post/7541048117497954342\" target=\"_blank\">字节也在用的 @tanstack/react-query 到底有多好用！🔥🔥🔥</a></li>\n    <li><a href=\"https://juejin.cn/post/7542323000236359689\" title=\"https://juejin.cn/post/7542323000236359689\" target=\"_blank\">🚀🚀🚀 告别复制粘贴，这个高效的 Vite 插件让我摸鱼🐟时间更充足了！</a></li>\n    <li><a href=\"https://juejin.cn/post/7538393049765314598\" title=\"https://juejin.cn/post/7538393049765314598\" target=\"_blank\">🔥🔥🔥 原来在字节写代码就是这么朴实无华！🔥🔥🔥</a></li>\n    <li>更多精彩文章欢迎关注我的公众号：萌萌哒草头将军</li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "尤雨溪宣布 Vite 8 将集成 Rust 驱动的 Rolldown 作为默认捆绑器，带来显著的构建性能提升和多项新特性。",
+  "oneSentenceSummary": "尤雨溪宣布 Vite 8 将集成 Rust 驱动的 Rolldown 作为默认捆绑器，带来显著的构建性能提升和多项新特性。",
+  "summary": "文章宣布了前端构建工具 Vite 即将发布 8.0 Beta 版本，核心变化是全面采用 Rust 语言编写的 Rolldown 作为默认捆绑器，取代了 esbuild 和 Rollup 的混合方案。这一战略性转变旨在大幅提升 Vite 的构建性能，PayFit 工程师的实际测试结果显示，在包含 Astro、Storybook 和 Vitest 的复杂代码库中，集成 Rolldown 后构建时间从 120 秒锐减至 8 秒，实现了高达 15 倍的提速。Vite 8 还将引入多项基于 Rolldown 的优化特性，包括实现从入口到依赖的完整捆绑流程、懒加载优化、跨代码块优化以减少 bundle 体积、支持浏览器原生的 Importmaps 以简化第三方库导入、以及针对 TypeScript 项目的运行时优化。此外，Vite 8 通过 Rolldown 实现模块联邦，为微前端架构提供高性能支持。文章强调了这一更新对前端开发效率和性能的潜在积极影响，并预告了 Beta 版将进一步稳定 Rolldown 的原生 Vite 插件支持。",
+  "mainPoints": [
+    {
+      "point": "Vite 8 将全面转向 Rolldown 作为其默认捆绑器，取代 esbuild 和 Rollup。",
+      "explanation": "这一战略性转变标志着 Vite 从混合方案过渡到 Rust 驱动的统一架构，旨在通过底层优化大幅提升构建性能和开发体验。"
+    },
+    {
+      "point": "Rolldown 在复杂代码库中展现出显著的构建性能提升。",
+      "explanation": "PayFit 工程师的测试案例表明，集成 Rolldown 后，复杂项目的构建时间从 2 分钟降至 8 秒，提速 15 倍，验证了其在大型项目中的高效性。"
+    },
+    {
+      "point": "Vite 8 将引入多项基于 Rolldown 的先进特性和优化。",
+      "explanation": "包括全捆绑模式、懒加载与跨块优化、Importmaps 集成、TypeScript 优化以及高性能模块联邦支持，全面提升开发和生产效率。"
+    }
+  ],
+  "keyQuotes": [
+    "尤雨溪宣布即将发布 Vite 8 Beta 版本了！",
+    "构建时间从 2 分钟（120 秒）降至 8 秒，提速 15 倍，仅需添加一个 polyfill 插件。",
+    "尤雨溪转发了该推特，并宣布 Vite 8 将完全采用 Rolldown 作为默认捆绑器，Beta 版即将发布。",
+    "这一转变标志着 Vite 从 esbuild 和 Rollup 的混合方案向统一的 Rust 驱动架构迁移。",
+    "Vite 8 将通过 Rolldown 实现模块联邦，动态加载远程模块，类似 Webpack 的 Module Federation，但性能更高，适合微前端架构。"
+  ],
+  "tags": [
+    "Vite",
+    "Rolldown",
+    "前端构建",
+    "JavaScript",
+    "Rust"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 861,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758598539000,
+  "publishDateStr": "2025-09-23",
+  "publishDateTimeStr": "2025-09-23 03:35:39"
+}

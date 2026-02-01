@@ -1,0 +1,55 @@
+{
+  "id": "RAW_084010",
+  "title": "LLM：抽象的新纪元",
+  "url": "https://martinfowler.com/articles/2025-nature-abstraction.html",
+  "date": "2025-06-24 14:02:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Like most loudmouths in this field, I've been paying a lot of attention to the role that generative AI systems may play in software development. I think the appearance of LLMs will change software development to a similar degree as the change from assembler to the first high-level programming languages. The further development of languages and frameworks increased our abstraction level and productivity, but didn't have that kind of impact on the <i>nature</i> of programming. LLMs are making that degree of impact, but with the distinction that it isn't just raising the level of abstraction, but also forcing us to consider what it means to program with non-deterministic tools.</p>\n  <p>High-Level Languages (HLLs) introduced a radically new level of abstraction. With assembler I'm thinking about the instruction set of a particular machine. I have to figure out how to do even simple actions by moving data into the right registers to invoke those specific actions. HLLs meant I could now think in terms of sequences of statements, conditionals to choose between alternatives, and iteration to repeatedly apply statements to collections of data values. I can introduce names into many aspects of my code, making it clear what values are supposed to represent. Early languages certainly had their limitations. My first professional programming was in Fortran IV, where “IF” statements didn't have an “ELSE” clause, and I had to remember to name my integer variables so they started with the letters “I” through “N”.</p>\n  <p>Relaxing such restrictions and gaining block structure (“I can have more than one statement after my IF”) made my programming easier (and more fun) but are the same kind of thing. Now I hardly ever write loops, I instinctively pass functions as data - but I'm still talking to the machine in a similar way than I did all those days ago on the Dorset moors with Fortran. Ruby is a far more sophisticated language than Fortran, but it has the same ambiance, in a way that Fortran and PDP-11 machine instructions do not.</p>\n  <p>Thus far I've not had the opportunity to do more than dabble with the best Gen-AI tools, but I'm fascinated as I listen to <a href=\"https://martinfowler.com/articles/exploring-gen-ai.html\">friends and colleagues</a> share their experiences. I'm convinced that this is another fundamental change: talking to the machine in prompts is as different to Ruby as Fortran to assembler. But this is more than a huge jump in abstraction. When I wrote a Fortran function, I could compile it a hundred times, and the result still manifested the exact same bugs. Large Language Models introduce a non-deterministic abstraction, so I can't just store my prompts in git and know that I'll get the same behavior each time. As my <a href=\"https://martinfowler.com/articles/exploring-gen-ai/07-how-is-this-different.html\">colleague Birgitta put it</a>, we're not just moving <i>up</i> the abstraction levels, we're moving <i>sideways</i> into non-determinism at the same time.</p>\n  <div class=\"figure \" id=\"_articles_exploring-gen-ai_abstraction-levels-with-genai.png\">\n   <img alt=\"Previous improvements raise the level of abstraction, but LLMs go sideways\" src=\"https://martinfowler.com/articles/exploring-gen-ai/abstraction-levels-with-genai.png\">\n   <p class=\"credit\">illustration: Birgitta Böckeler</p>\n   <p class=\"photoCaption\"></p>\n  </div>\n  <p>As we learn to use LLMs in our work, we have to figure out how to live with this non-determinism. This change is dramatic, and rather excites me. I'm sure I'll be sad at some things we'll lose, but there will also things we'll gain that few of us understand yet. This evolution in non-determinism is unprecedented in the history of our profession.</p>\n  <hr class=\"bodySep\">\n </body>\n</html>",
+  "aiSummary": "LLM 在软件开发中引入了新的非确定性抽象，类似于从汇编语言到高级语言的转变。",
+  "oneSentenceSummary": "LLM 在软件开发中引入了新的非确定性抽象，类似于从汇编语言到高级语言的转变。",
+  "summary": "本文基于作者的反思和同事的经验，认为大型语言模型 (LLM) 代表了软件开发的一个根本性转变，堪比从汇编语言到高级编程语言 (HLL) 的过渡。虽然之前的进步主要以递增的方式提高了抽象层次，但 LLM 引入了一种不同的变化。作者强调，LLM 不仅提高了抽象层次，而且通过引入非确定性，从根本上改变了编程方式。这挑战了依赖确定性行为的传统软件开发模式。文章认为，开发人员必须学会有效地使用这种非确定性抽象，这标志着该行业前所未有的演变。",
+  "mainPoints": [
+    {
+      "point": "LLM 从根本上改变了软件开发的抽象方式。",
+      "explanation": "这种变化类似于从汇编语言到高级语言的转变，从根本上改变了开发人员与机器交互和定义逻辑的方式。"
+    },
+    {
+      "point": "新的抽象层具有独特的非确定性。",
+      "explanation": "与以前的确定性抽象（如 HLL）不同，LLM 可以从相同的输入（提示词）产生不同的输出，从而挑战了传统的软件工程实践。"
+    },
+    {
+      "point": "适应非确定性是下一个主要挑战。",
+      "explanation": "软件开发行业需要探索如何有效利用和管理 LLM 工具带来的非确定性。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为 LLM 的出现将使软件开发发生类似于从汇编程序到第一批高级编程语言的转变。",
+    "LLM 正在产生这种程度的影响，但区别在于它不仅提高了抽象层次，而且还迫使我们考虑使用非确定性工具进行编程的意义。",
+    "用提示词与机器对话与 Ruby 之于 Fortran 与汇编程序一样不同。",
+    "LLM 引入了一种非确定性抽象，所以我不能只是将我的提示词存储在 Git 中，并知道每次都会获得相同的行为。",
+    "我们不仅仅是 *向上* 移动抽象级别，我们同时也在 *横向* 移动到非确定性中。"
+  ],
+  "tags": [
+    "抽象",
+    "软件开发",
+    "LLM",
+    "编程语言",
+    "非确定性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 536,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750773720000,
+  "publishDateStr": "2025-06-24",
+  "publishDateTimeStr": "2025-06-24 14:02:00"
+}

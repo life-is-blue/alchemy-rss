@@ -1,0 +1,58 @@
+{
+  "id": "RAW_43db01",
+  "title": "波士顿 Dev 峰会：人在回路中：混沌行业中的工程领导力",
+  "url": "https://www.infoq.com/news/2025/06/infoq-dev-summit-aihype/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-16 00:00:00",
+  "author": "Andrew Hoblitzell",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At the InfoQ <a href=\"https://devsummit.infoq.com/conference/boston2025\">Dev Summit</a> in Boston, <a href=\"https://devsummit.infoq.com/speakers/michellebrush\">Michelle Brush</a>, Engineering Director of Site Reliability Engineering (SRE) at <a href=\"http://google.com\">Google</a>, delivered a <a href=\"https://devsummit.infoq.com/keynote/boston2025/humans-loop-engineering-leadership-chaotic-industry\">keynote</a> that spoke directly to software leaders on the broader changes underway in software engineering, systems thinking, and leadership through complexity.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 450px;\" data-src=\"https://www.infoq.com/news/2025/06/infoq-dev-summit-aihype/news/2025/06/infoq-dev-summit-aihype/en/resources/3img1-1749991822731.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/06/infoq-dev-summit-aihype/en/resources/3img1-1749991822731.jpg\" rel=\"share\"></p>\n   <p>She opened by acknowledging the uncertainty that many practitioners feel, affirming that this was a shared experience and an expected part of navigating today’s technological landscape. Brush argued that the nature of software engineering work is shifting, not disappearing. As AI systems automate pieces of software development, engineers will face harder and more complex challenges.</p>\n   <p>Citing Bainbridge’s <a href=\"https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf\" target=\"_blank\">“ironies of automation”</a>, she explained, “when you automate some piece of work, the job that you leave behind for humans to do is actually harder.” The result is a landscape where engineers must monitor, debug, and validate automated systems, even as their direct responsibilities evolve.</p>\n   <p>She illustrated this point with a simple analogy: “Dishwashers are great… but we didn’t get rid of all the work.” While machines may handle routine tasks, humans are left with responsibility for exception handling, quality assurance, and system maintenance. In software, this translates into higher-level abstraction work, deeper troubleshooting, and a reliance on engineering judgment. “Our brains are going to start working on higher and higher abstractions,” she said, emphasizing the cognitive shift required in modern development.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 450px;\" data-src=\"https://www.infoq.com/news/2025/06/infoq-dev-summit-aihype/news/2025/06/infoq-dev-summit-aihype/en/resources/2img2-1749991822731.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/06/infoq-dev-summit-aihype/en/resources/2img2-1749991822731.jpg\" rel=\"share\"></p>\n   <p>Brush explained that large language models (LLMs) today operate with a kind of “unconscious competence.” They can produce impressive results, but lack explainability and awareness of their limitations. “They don’t know what they don’t know,” she said, framing hallucinations as a natural byproduct of this architecture. By contrast, humans sit in the space of “conscious competence”—we understand what we know and can explain it, which is essential for teaching, mentoring, and validating machine outputs.</p>\n   <p>A central concept in her talk was the importance of “chunking,” or cognitive encapsulation, as engineers deal with increasing complexity. She argued that the ability to move between abstraction layers—while still being able to drill into the underlying systems—is crucial. “All abstractions leak,” she reminded the audience, “especially our hardware abstractions.”</p>\n   <p>Brush also stressed the enduring importance of foundational technical knowledge. “I have used calculus in my day job. Definitely discrete math. I’ve had the misfortune of using assembly twice,” she joked, highlighting how education in the fundamentals continues to pay off—even as tools and platforms evolve. She called this kind of knowledge essential for engineering resilience, not just in code, but in understanding systems holistically.</p>\n   <p>To this end, she advocated for systems thinking, citing Donella Meadows’ work on <a href=\"https://donellameadows.org/systems-thinking-resources/\" target=\"_blank\">flows, feedback loops, and change</a>. She recommended supporting disciplines such as control theory, cybernetics, and behavioral economics to better model and design socio-technical systems. For engineering leaders, this was a call to develop broader lenses for decision-making and risk assessment.</p>\n   <p>Sharing a case study from Google, Brush detailed a 2019 outage that brought down two data centers due to runaway automation. The assumption that geographic distribution was sufficient proved wrong when a third data center also failed under the load of recovery traffic. The takeaway? “We realized we needed to be in more than just three data centers,” she said. The response involved not just more capacity, but smarter design—using latency injection testing and intent-based rollout systems to surface risks before deployment.</p>\n   <p>Developers looking to learn more can watch <a href=\"https://www.infoq.com\" target=\"_blank\">infoq.com</a> in the coming weeks for videos from the event.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DevSummit Boston: Humans in the Loop: Engineering Leadership in a Chaotic Industry\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Andrew Hoblitzell\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/infoq-dev-summit-aihype/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750076520000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "工程领导力主题演讲讨论 AI 的影响，强调系统思维和人类技能对于应对未来复杂性的重要性。",
+  "oneSentenceSummary": "工程领导力主题演讲讨论 AI 的影响，强调系统思维和人类技能对于应对未来复杂性的重要性。",
+  "summary": "本文总结了 Michelle Brush 在 InfoQ 波士顿 Dev 峰会上的主题演讲，该演讲聚焦于在日益增长的自动化和 AI 面前，软件工程师不断演变的角色。Brush 强调了“自动化的反讽”，即自动化例行任务后，留给人类的是需要更高抽象层次、深度故障排除和强大工程判断的更复杂问题。她对比了人类的“有意识的能力”（他们了解自己的知识和局限性）与容易产生幻觉的大语言模型（LLM）的“无意识的能力”。演讲强调了基础技术知识、系统思维以及认知封装（“分块”）对于管理复杂性的关键需求。一个 Google SRE 中断案例研究表明，自动化如何在社会技术系统中引入新的、不明显的风险，突显了弹性设计和测试的重要性。文章最后提到，演讲视频即将上线，为应对行业变化的软件领导者提供了宝贵的见解。",
+  "mainPoints": [
+    {
+      "point": "自动化使得剩下的人类工程任务更困难、更复杂。",
+      "explanation": "引用“自动化的反讽”，例行任务被自动化，人类工作转向监控、调试和验证需要更高级别判断的复杂系统。"
+    },
+    {
+      "point": "与 AI 的“无意识能力”相比，人类提供了关键的“有意识的能力”。",
+      "explanation": "与 LLM 不同，人类理解他们的知识边界并能解释其推理过程，这对于验证 AI 输出、指导和教学至关重要。"
+    },
+    {
+      "point": "基础技术知识和系统思维正变得越来越重要。",
+      "explanation": "尽管工具不断发展，但对基础知识的深入理解和整体地看待系统能增强工程弹性以及在复杂环境中的决策能力。"
+    },
+    {
+      "point": "复杂自动化系统引入新的微妙风险。",
+      "explanation": "一个 Google 中断案例研究说明了自动化恢复流程如何以意想不到的方式失败，需要弹性设计和全面的测试策略。"
+    }
+  ],
+  "keyQuotes": [
+    "当你自动化某些工作时，留给人类去做的任务实际上更难了。",
+    "我们的大脑将开始处理越来越高的抽象层次。",
+    "他们不知道自己不知道。",
+    "所有抽象都会泄露，尤其是我们的硬件抽象。"
+  ],
+  "tags": [
+    "工程领导力",
+    "软件工程",
+    "AI 影响",
+    "自动化",
+    "系统思维"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 562,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750032000000,
+  "publishDateStr": "2025-06-16",
+  "publishDateTimeStr": "2025-06-16 00:00:00"
+}

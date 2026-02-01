@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3d46e9",
+  "title": "OpenAI 总裁透露 GPT-5 改了推理范式，AGI 实现要靠现实反馈",
+  "url": "https://www.qbitai.com/2025/08/323554.html",
+  "date": "2025-08-19 07:39:15",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"69\">克雷西 鹭羽 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"70\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">OpenAI的AGI之路，总裁Greg Brockman在最新的访谈中说清楚了——</p>\n  <ul>\n   <li data-track=\"3\">技术层面，从文本生成转向<strong>强化学习的推理范式</strong>，<strong>在现实世界中试错并获取反馈</strong>；</li>\n   <li data-track=\"4\">资源策略上，<strong>持续投入大规模计算资源</strong>；</li>\n   <li data-track=\"5\">落地环节，把模型封装成Agent，<strong>将模型能力打包成为可审计的服务进程</strong>。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143747_7bb88b85731187f9d3b9360e42d062a6.png\" data-src=\"https://image.jido.dev/20250819143747_7bb88b85731187f9d3b9360e42d062a6.png\">\n  </div>\n  <p data-track=\"6\">这场访谈由AI播客Latent Space主持，与Brockman探讨了OpenAI的AGI的整体技术路线与资源策略。</p>\n  <p data-track=\"7\">与此同时，OpenAI的落地布局，以及Brockman对未来的思考，也都随着访谈的进行浮出水面。</p>\n  <p data-track=\"8\">总结下来，Brockman表达了这些核心观点：</p>\n  <ul>\n   <li data-track=\"9\">模型正在不断增强现实交互能力，这也是下一代AGI的关键组成部分；</li>\n   <li data-track=\"10\"><strong>AGI的主要瓶颈在于计算</strong>，计算量的多少直接决定了AI研究和发展的速度与深度；</li>\n   <li data-track=\"11\">AGI真正的目标是让大模型在企业和个人的工作流里长驻，手段就是Agent；</li>\n   <li data-track=\"12\">把模型接进现实世界的应用领域极具价值，各个领域还有大量尚未采摘的果实。</li>\n  </ul>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"13\">模型推理范式的转变</h2>\n  <p data-track=\"14\">谈及OpenAI刚刚发布的<strong>GPT-5</strong>，Brockman认为这是AI领域的一场重大范式转变，作为OpenAI第一个混合模型，旨在弥补GPT系列与AGI的距离。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143746_2740c2efe5e8fc3c1b7cfcaa075cb153.png\" data-src=\"https://image.jido.dev/20250819143746_2740c2efe5e8fc3c1b7cfcaa075cb153.png\">\n  </div>\n  <p data-track=\"15\">在训练GPT-4之后，OpenAI给自己提出了一个问题：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"71\">为什么它不是AGI？</p>\n  </blockquote>\n  <p data-track=\"17\">GPT-4虽然可以进行连贯的上下文对话，但可靠性欠佳，会犯错甚至脱离轨道。</p>\n  <p data-track=\"18\">因此他们意识到需要在现实世界中测试想法，并通过强化学习获取反馈，从而提高可靠性。</p>\n  <p data-track=\"19\">这一点在OpenAI早期的<strong>Dota</strong>项目中就有所实现，当时使用了纯强化学习，可以从随机初始化状态中学习复杂行为。</p>\n  <p data-track=\"22\">所以从GPT-4完成的那一刻起，OpenAI开始尝试转向新的推理范式，即先让模型通过监督数据学会对话，再借助<strong>强化学习</strong>反复在环境中试错。</p>\n  <p data-track=\"23\">传统的模型训练是一次性训练，然后进行大量推理，而GPT-5则借助强化学习，让模型在推理过程不断生成数据，然后基于这些数据重复训练，将模型与现实世界的观测结果反馈到模型中。</p>\n  <p data-track=\"24\">这种新范式改变了所需数据的规模，原先预训练可能需要数十万个示例，但强化学习只需要从10到100个任务中学习复杂行为。</p>\n  <p data-track=\"25\">同时也说明模型正在不断增强现实交互能力，这也是下一代AGI的关键组成部分。</p>\n  <p data-track=\"27\">当被问及当前AGI开发中的主要瓶颈时，Brockman明确表示：<strong>计算</strong>。</p>\n  <p data-track=\"28\">他认为，只要拥有更多的计算能力，OpenAI就总能找到迭代和提高模型性能的方法，计算量的多少直接决定了AI研究和发展的速度与深度。</p>\n  <p data-track=\"29\">例如同样是在Dota项目中，当时普遍认为<strong>PPO</strong> <em>（近端策略优化）</em>算法无法实现扩展，但他们通过将内核数量翻倍，实现了性能的持续提升，所以其实所谓的算法壁垒在扩大计算资源后就能得以解决。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143747_f1beafb2f2203a3055fab121ad81461d.png\" data-src=\"https://image.jido.dev/20250819143747_f1beafb2f2203a3055fab121ad81461d.png\">\n  </div>\n  <p data-track=\"30\">而当前GPT-5的强化学习范式虽然带来了更高的样本效率，但仍然需要模型进行数万次尝试才能重复学会一项任务，这需要巨大的计算量支撑。</p>\n  <p data-track=\"31\">更进一步，图灵曾为AGI提出的<strong>“超临界学习”</strong>概念，认为机器不仅要学习被即时教授的内容，还要深入思考其二阶、三阶甚至四阶效应，并更新整个知识体系。</p>\n  <p data-track=\"32\">这种更深层次学习过程则同样需要投入更多的计算资源，OpenAI当前的目标就是探索如何以更具创造性的方式消耗计算，以实现这种高级学习能力。</p>\n  <p data-track=\"33\">Brockman将计算描述为一种基本燃料，可以将能量转化为存储在模型权重中的势能，推动模型执行有效操作。</p>\n  <p data-track=\"34\">一旦模型通过大量计算训练完成，就可以被反复利用，在多任务中分摊巨大的计算成本。</p>\n  <p data-track=\"35\">另外，他也预测最终的AGI将会是一个<strong>模型管理器</strong>，将小型的本地模型与大型云推理器结合，以实现自适应计算。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143750_e605fca4875c9c183b8f2c8d72573089.png\" data-src=\"https://image.jido.dev/20250819143750_e605fca4875c9c183b8f2c8d72573089.png\">\n  </div>\n  <p data-track=\"36\">GPT-5的<strong>多模型混合和路由机制</strong>就是这种方式的一个初步尝试，将推理模型和非推理模型结合，并通过条件语句选择合适的模型。</p>\n  <p data-track=\"37\">推理模型更适用于深度智能但有充足思考时间的场景，非推理模型则用于快速输出回合。</p>\n  <p data-track=\"38\">这种复合式的模型充分利用了计算的灵活性，能够根据任务需求组合不同能力和成本的模型，也是AGI最可能呈现的面貌。</p>\n  <p data-track=\"39\">因此在AI驱动的未来经济中，计算将成为需求极高的资源，拥有更多计算资源的研究人员可以产出更优质的成果，如何获取计算资源及计算的分配方式将成为一个非常重要的问题。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"40\">让大模型进入生产</h2>\n  <p data-track=\"41\">Brockman反复强调，模型不再是科研样品，而是<strong>要成为现实生产线的一环</strong>。</p>\n  <p data-track=\"42\">他指出，AGI真正的目标是让大模型在企业和个人的工作流里长驻，而不是停留在论文与演示当中。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143746_f0c733d271767a47b6a82fcfe75f93bd.png\" data-src=\"https://image.jido.dev/20250819143746_f0c733d271767a47b6a82fcfe75f93bd.png\">\n  </div>\n  <p data-track=\"43\">具体的落地路径就是把模型封装成Agent，将模型能力打包成为可审计的服务进程。</p>\n  <p data-track=\"44\">Brockman认为，这种交互像与资深同事协作，一个关键要素在于可控性——可以“随时停下让你检查”，而且任何一步都能回滚。</p>\n  <p data-track=\"45\">为了保证高权限Agent可控，OpenAI设计了双层结构的“纵深防御”：</p>\n  <ul>\n   <li data-track=\"46\">模型内部，把system、developer、user三种指令排出可信度顺序，使“忽略此前所有指令”这类注入在第一关就被丢弃；</li>\n   <li data-track=\"47\">模型外部，把每个潜在高危操作拆成最小粒度，通过多级沙箱逐一确认。</li>\n  </ul>\n  <p data-track=\"48\">对于这种模式，Brockman用数据库安全进行了类比：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"72\">就像防SQL注入，必须先在最低层把洞堵死，再往上叠加护栏，系统自然稳固。</p>\n  </blockquote>\n  <p data-track=\"50\">安全护栏之外，与人类之间的价值对齐也是一项重要工程。</p>\n  <p data-track=\"51\">工程团队先通过后训练从海量潜在“人格”中去除普遍不受欢迎的类型。</p>\n  <p data-track=\"52\">随后，剩余的“人格”被放入公开竞技场接受实时评分，评价高的策略在下一轮被放大，评价低的被削弱，从而形成模型与社会偏好的协同进化。</p>\n  <p data-track=\"53\">这一流程将保证模型能力升级时不脱离人类共识，也为未来引入在线学习打下数据基础。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143746_1bd754008fefb8371fcc0575aa3a4965.png\" data-src=\"https://image.jido.dev/20250819143746_1bd754008fefb8371fcc0575aa3a4965.png\">\n  </div>\n  <p data-track=\"54\">另外，为了增强生态黏性，OpenAI还把轻量级开源列为第二驱动力。</p>\n  <p data-track=\"55\">Brockman的判断是，当开发者在这些模型上沉淀工具链，实际上就默认采纳了OpenAI的技术栈。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"56\">“各个领域还有大量尚未采摘的果实”</h2>\n  <p data-track=\"57\">放眼未来，Brockman认为真正值得投入的机会不在于再造一个更炫的“模型包装器”，而是把现有智能深植于具体行业的真实流程之中。</p>\n  <p data-track=\"58\">对很多人来说，似乎好点子都被做完了，但他提醒，每一条行业链都大得惊人。</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"73\">把模型接进现实世界的应用领域极具价值，各个领域还有大量尚未采摘的果实。</p>\n  </blockquote>\n  <p data-track=\"60\">因此，他建议那些“觉得起步太晚”的开发者与创业者，先沉到行业一线，理解利益相关者、法规和现有系统的细节，再用AI去填补真正的缺口，而不是只做一次性的接口封装。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143746_e0e0927ed9588edd36924217759f7e6c.png\" data-src=\"https://image.jido.dev/20250819143746_e0e0927ed9588edd36924217759f7e6c.png\">\n  </div>\n  <p data-track=\"61\">当被问到如果要给2045年的自己留一张便签会写什么时，他的愿景是“多星际生活”与“真正的丰裕社会”。</p>\n  <p data-track=\"62\">在他看来，以当前技术加速度推演，<strong>二十年后几乎所有科幻情节都难以否定其可行性，唯一的硬约束只剩下物质搬运本身的物理极限</strong>。</p>\n  <p data-track=\"63\">与此同时，他也提醒，计算资源会成为稀缺资产；即便物质需求被自动化满足，人们仍会为了更高分辨率、更长思考时间或更复杂的个性化体验而渴求更多算力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI总裁透露GPT-5改了推理范式，AGI实现要靠现实反馈\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250819143747_6f731a182d671309cb1c0b790e1b7476.png\" data-src=\"https://image.jido.dev/20250819143747_6f731a182d671309cb1c0b790e1b7476.png\">\n  </div>\n  <p data-track=\"64\">如果能穿越回18岁，他想告诉年轻的自己，值得攻克的问题只会越来越多，而不会减少。</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"74\">我曾以为自己错过了硅谷的黄金年代，但事实完全相反——现在正是技术发展的最好时机。</p>\n  </blockquote>\n  <p data-track=\"66\">在AI将渗透一切行业的背景下，机遇不仅未被耗尽，反而随技术曲线的陡升而倍增.</p>\n  <p data-track=\"67\">真正的挑战是保持好奇心，敢于投入新的领域。</p>\n  <p data-track=\"68\"><em>参考链接：</em><em> \n    <br> \n   </em><em>[1]https://www.youtube.com/watch?v=35ZWesLrv5A</em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenAI 总裁 Greg Brockman 访谈揭示 GPT-5 将转向强化学习推理范式，以现实反馈驱动 AGI 发展，并强调计算资源和 Agent 化落地的关键作用。",
+  "oneSentenceSummary": "OpenAI 总裁 Greg Brockman 访谈揭示 GPT-5 将转向强化学习推理范式，以现实反馈驱动 AGI 发展，并强调计算资源和 Agent 化落地的关键作用。",
+  "summary": "文章深入报道了 OpenAI 总裁 Greg Brockman 关于 AGI 发展路径的最新见解。他指出，GPT-5 代表了 AI 推理范式的重大转变，从传统的文本生成转向通过强化学习在现实世界中试错并获取反馈，以提高模型可靠性。Brockman 强调，计算能力是 AGI 开发的主要瓶颈，OpenAI 将持续投入大规模计算资源，探索更具创造性的计算消耗方式。在落地方面，他提出将模型封装为可审计的 Agent，使其能常驻于企业和个人工作流中，并强调了安全性和与人类价值对齐的重要性。最后，文章引用 Brockman 的观点，鼓励开发者和创业者深入行业一线，利用 AI 解决实际问题，认为当前是技术发展的最佳时机。",
+  "mainPoints": [
+    {
+      "point": "GPT-5 将采用强化学习新范式，通过现实反馈提升可靠性",
+      "explanation": "模型从一次性训练转向在推理过程中持续生成数据并基于反馈重复训练，从而在少量任务中学习复杂行为，增强现实交互能力。"
+    },
+    {
+      "point": "计算能力是 AGI 发展的核心瓶颈，决定 AI 研究速度与深度",
+      "explanation": "OpenAI 认为只要计算能力足够，算法壁垒即可克服，实现更深层次的“超临界学习”，并预测 AGI 将是结合大小模型的“模型管理器”。"
+    },
+    {
+      "point": "大模型落地关键在于 Agent 化，使其融入现实生产流程",
+      "explanation": "将模型封装成可审计、可控的 Agent，强调其在企业和个人工作流中的常驻性，并通过安全机制和价值对齐确保高权限 Agent 的可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "所以从 GPT-4 完成的那一刻起，OpenAI 开始尝试转向新的推理范式，即先让模型通过监督数据学会对话，再借助强化学习反复在环境中试错。",
+    "当被问及当前 AGI 开发中的主要瓶颈时，Brockman 明确表示：计算。",
+    "AGI 真正的目标是让大模型在企业和个人的工作流里长驻，而不是停留在论文与演示当中。",
+    "把模型接进现实世界的应用领域极具价值，各个领域还有大量尚未采摘的果实。",
+    "我曾以为自己错过了硅谷的黄金年代，但事实完全相反------现在正是技术发展的最好时机。"
+  ],
+  "tags": [
+    "AGI",
+    "GPT-5",
+    "强化学习",
+    "OpenAI",
+    "计算瓶颈"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 92,
+  "wordCount": 2874,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755589155000,
+  "publishDateStr": "2025-08-19",
+  "publishDateTimeStr": "2025-08-19 07:39:15"
+}

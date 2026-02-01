@@ -1,0 +1,57 @@
+{
+  "id": "RAW_ef3e26",
+  "title": "南大周志华团队获奖，AAAI 2025 杰出论文奖出炉",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-03-10",
+  "date": "2025-03-03 08:20:27",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   自 2 月 25 日起，AAAI 2025 开始在美国宾夕法尼亚州费城举办，会议为期 8 天，将于 3 月 4 日结束。\n  </section>\n  <section>\n   AAAI 由国际人工智能促进协会主办，是人工智能领域历史最悠久、涵盖内容最广泛的国际顶级学术会议之一，也是中国计算机学会（CCF）推荐的 A 类国际学术会议，每年举办一届。AAAI 2025 共有 12957 篇有效投稿，录用 3032 篇，录取率为 23.4%。其中，Oral 论文占比 4.6%。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473813\" data-ratio=\"0.2074074074074074\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2dcda0f9-df9b-4b2c-9c73-3ba415620600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/259ad202-07a0-41da-a4fe-f547e2b267ed/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   现在，AAAI 2025 杰出论文奖正式公布了，以表彰那些「在技术贡献和阐述方面体现最高标准」的论文。\n  </section>\n  <section>\n   本届杰出论文共有三篇，其中一篇由国内高校南京大学周志华团队斩获，其他两篇由多伦多大学、波尔多大学等机构的研究者获得。另外，还有一篇论文被选为「AI 对社会影响特别奖」。\n  </section>\n  <section>\n   <strong>三篇杰出论文</strong>\n  </section>\n  <section>\n   <strong>论文 1：Efficient Rectification of Neuro-Symbolic Reasoning Inconsistencies by Abductive Reflection</strong>\n  </section>\n  <section>\n   <strong><img alt=\"image.png\" data-imgfileid=\"503473814\" data-ratio=\"0.2777777777777778\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3b20af57-4b12-4015-b180-2c2645602d00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/b7cbeacd-06af-416d-b332-a0c8febb9153/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></strong>\n  </section>\n  <ul>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2412.08457</p></li>\n   <li>\n    <p>机构：南京大学</p></li>\n   <li>\n    <p>作者：胡文超（Wen-Chao Hu）、戴望州（Wang-Zhou Dai）、姜远（Yuan Jiang）、周志华（ Zhi-Hua Zhou）</p></li>\n  </ul>\n  <section>\n   论文摘要：神经符号 (Neuro-Symbolic，NeSy) AI 可以类比人类双过程认知，利用神经网络建模直觉系统 1，用符号推理建模算法系统 2。然而，对于复杂的学习目标，NeSy 系统通常会产生与领域知识不一致的输出，而且很难纠正它们。\n  </section>\n  <section>\n   本文受人类认知反射的启发，它能够及时发现直觉反应中的错误，并通过调用系统 2 推理来修改它们。作者提出引入基于溯因学习（Abductive Learning，ABL）框架的溯因反射（ABL-Refl）来改进 NeSy 系统。\n  </section>\n  <section>\n   具体来讲，ABL-Refl 利用领域知识在训练期间溯因反射向量，然后可以标记神经网络输出中的潜在错误并调用溯因来纠正它们并在推理期间生成一致的输出。与之前的 ABL 实现相比，ABL-Refl 效率很高。实验表明，ABL-Refl 的表现优于当前 SOTA NeSy 方法，以更少的训练资源和更高的效率实现了出色的准确性。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473815\" data-ratio=\"0.7648283038501561\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f7c7d3a3-43d3-4288-e88d-0ffb0dc01000/public\" data-type=\"png\" data-w=\"961\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/70f4e88e-d6ad-44e8-a07f-6ebd3d671f41/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <strong>论文 2：Every Bit Helps: Achieving the Optimal Distortion with a Few Queries</strong>\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473816\" data-ratio=\"0.2982982982982983\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/db0fb231-9fcc-4ffc-2e77-cf361028da00/public\" data-type=\"png\" data-w=\"999\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/080738c1-9b96-4ea3-91cc-ca37a413473d/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文地址：https://www.cs.toronto.edu/~nisarg/papers/value-queries.pdf</p></li>\n   <li>\n    <p>机构：多伦多大学</p></li>\n   <li>\n    <p>作者：Soroush Ebadian 、 Nisarg Shah</p></li>\n  </ul>\n  <section>\n   论文摘要：在多智能体系统中，一个基本任务是将智能体与备选方案（例如资源或任务）进行匹配。通常，这是通过获取智能体对备选方案的顺序排名（ordinal rankings）而不是其精确的数值效用（cardinal utilities）来实现的。\n  </section>\n  <section>\n   虽然这简化了信息获取过程，但信息的不完整性会导致智能体效率低下，这种低效性通过一种称为失真度（distortion）的指标来度量。\n  </section>\n  <section>\n   本文提出了一种新颖的排序算法，用于单边匹配和单一胜者选举，该算法让每个智能体利用有限数量的 λ 基数查询，实现了渐近最优的扭曲界限，其中 λ 是一个常数。表 1 和表 2 分别提供了本文的结果总结以及在单边匹配和投票方面的对比。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473817\" data-ratio=\"0.4009259259259259\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/58b947c7-c8b8-4f61-e16f-73a5f3bb8b00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/a08c8e83-1807-43e0-bf47-615e4f434859/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473818\" data-ratio=\"0.43425925925925923\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/01df2b1f-2f91-4466-4efd-a80c59ed4600/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/26a14628-f674-4bbc-a8a9-3b856a9c3b14/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   本文证明了在单边匹配问题中，使用 λ 次查询可以实现<img alt=\"image.png\" data-imgfileid=\"503473819\" data-ratio=\"0.33962264150943394\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f60cf6e6-41af-4f5a-647d-4814a8db2500/public\" data-type=\"png\" data-w=\"106\" data-original-style=\"width: 57px;height: 20px;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/34e7f9d8-6e10-421a-a53b-53a5d1a27f30/640.png\" data-fail=\"0\" class=\"fr-fic fr-dii\" style=\"width: 8.96%;\">的扭曲度。例如，使用三次查询可以实现 O (n^(1/3)) 的扭曲度，这比之前的 O (log n) 查询结果更好。\n  </section>\n  <section>\n   文章还将这一结果扩展到了单一胜者选举问题，证明了在任何常数 λ 的情况下，使用 λ 次查询可以实现<img data-imgfileid=\"503473820\" data-ratio=\"0.15163934426229508\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/de988a55-f236-4aa1-5cc3-b898b10fb200/public\" data-type=\"png\" data-w=\"244\" data-original-style=\"text-align: center;font-size: var(--articleFontsize);letter-spacing: 0.034em;width: 141px;height: 21px;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/29e0c814-0c1d-4fb1-8e31-92d2b61c7b73/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dii\" style=\"width: 17.4%;\">的扭曲度，其中 n 是智能体数量，m 是候选者数量。\n  </section>\n  <section>\n   <strong>论文 3：Revelations: A Decidable Class of POMDPs with Omega-Regular Objectives</strong>\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473821\" data-ratio=\"0.2037037037037037\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/48e18369-f89c-48b1-03cf-f01826b7ec00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/7f2231ff-fd94-431b-82ab-dedd99609583/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2412.12063</p></li>\n   <li>\n    <p>机构：波尔多大学、巴黎大学</p></li>\n   <li>\n    <p>作者：Marius Belly、Nathanaël Fijalkow、Hugo Gimbert、Florian Horn、Guillermo Perez、Pierre Vandenhove</p></li>\n  </ul>\n  <section>\n   论文摘要：部分可观测马尔可夫决策过程（POMDPs）是处理序列决策中一个重要的不确定性模型\n  </section>\n  <section>\n   本文的主要技术成果是为两类部分可观测马尔可夫决策过程（POMDPs）—— 弱揭示（weakly revealing）和强揭示（strongly revealing）—— 构建了精确算法。重要的是，这些可判定的情况可以简化为对有限信念支持马尔可夫决策过程（finite belief-support Markov decision process）的分析。这为一大类 POMDPs 提供了一种概念上简单且精确的算法。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473822\" data-ratio=\"0.541927409261577\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9847638f-9b52-436d-8760-dc62e4164900/public\" data-type=\"png\" data-w=\"799\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/a83c6509-88c6-4736-a206-320edfd8e0f4/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   文章通过一个揭示版本的经典 Tiger POMDP 问题进行了实验，比较了他们的算法与基于深度强化学习（DRL）的方法。结果显示，他们的算法性能优于 DRL 方法，这表明他们的算法在解决揭示 POMDPs 时更为有效。\n  </section>\n  <section>\n   文章的研究意义在于为 POMDPs 提供了一种新的可判定性视角，特别是在信息丢失受限的情况下。这种揭示机制不仅为解决 POMDPs 提供了一种新的方法，而且为理解和设计更有效的决策算法提供了理论基础。\n  </section>\n  <section>\n   <strong>AI 对社会影响特别奖</strong>\n  </section>\n  <section>\n   除了三篇杰出论文，AAAI-25 还颁发了一个 AI 对社会影响（AISI，AI for social impact）的研究奖项。论文题目为《DivShift: Exploring Domain-Specific Distribution Shifts in Large-Scale, Volunteer-Collected Biodiversity Datasets》。\n  </section>\n  <section>\n   <img alt=\"image.png\" data-imgfileid=\"503473823\" data-ratio=\"0.49065880039331367\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f4163b20-4e61-4f66-99f5-a108af792200/public\" data-type=\"png\" data-w=\"1017\" data-original-style=\"null\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/f00ce489-9987-4077-8541-a605e8df974f/640.png\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文链接：https://arxiv.org/pdf/2410.19816</p></li>\n   <li>\n    <p>作者：Elena Sierra 、 Lauren E. Gillespie 、 Salim Soltani 、 Moises Exposito-Alonso 、 Teja Kattenborn</p></li>\n   <li>\n    <p>机构：斯坦福大学等</p></li>\n  </ul>\n  <section>\n   这篇文章的核心内容是关于如何利用志愿者收集的生物多样性数据集来训练深度学习模型，以监测气候变化对生物多样性的影响。文章提出了一个名为 DivShift 的框架，并构建了一个名为 DivShift-North American West Coast（DivShift-NAWC）的数据集，用于研究志愿者收集的数据中存在的偏差对模型性能的影响。\n  </section>\n  <section>\n   <em><sup>参考链接：https://aihub.org/2025/03/01/congratulations-to-the-aaai2025-outstanding-paper-award-winners/</sup></em>\n  </section>\n </body>\n</html>",
+  "aiSummary": "AAAI 2025 杰出论文奖揭晓，南大周志华团队等三篇论文获奖，展示了 AI 领域的最新研究成果。",
+  "oneSentenceSummary": "AAAI 2025 杰出论文奖揭晓，南大周志华团队等三篇论文获奖，展示了 AI 领域的最新研究成果。",
+  "summary": "AAAI 2025 杰出论文奖正式公布，南京大学周志华团队的论文提出了一种基于溯因反射向量的神经符号推理纠错方法，该方法是关键创新，在减少训练资源的同时提高了准确性。多伦多大学的论文提出了一种新的排序算法，通过有限数量的基数查询实现了多智能体系统中渐近最优的扭曲界限，这是其核心结果。波尔多大学的论文为两类部分可观测马尔可夫决策过程构建了精确算法，为 POMDPs 提供了一种新的可判定性视角。此外，斯坦福大学等机构的论文获得了 AI 对社会影响特别奖，该论文提出了一个名为 DivShift 的框架，用于研究志愿者收集的数据中存在的偏差对生物多样性模型性能的影响。",
+  "mainPoints": [
+    {
+      "point": "南大周志华团队提出溯因反射的神经符号推理纠错方法",
+      "explanation": "该方法通过溯因反射向量标记神经网络输出中的潜在错误并进行纠正，以更少的训练资源和更高的效率实现了出色的准确性。"
+    },
+    {
+      "point": "多伦多大学提出一种新的排序算法优化多智能体系统",
+      "explanation": "该算法让每个智能体利用有限数量的基数查询，实现了渐近最优的扭曲界限，提高了智能体效率。"
+    },
+    {
+      "point": "波尔多大学为 POMDPs 构建精确算法",
+      "explanation": "该算法为解决信息丢失受限情况下的 POMDPs 提供了一种新的方法，并在揭示版本的经典 Tiger POMDP 问题中表现优异。"
+    },
+    {
+      "point": "斯坦福大学等机构研究志愿者数据偏差对生物多样性模型的影响",
+      "explanation": "该研究提出了 DivShift 框架，用于评估和减轻志愿者数据中的偏差对气候变化影响研究的潜在影响。"
+    }
+  ],
+  "keyQuotes": [
+    "神经符号 (Neuro-Symbolic，NeSy) AI 可以类比人类双过程认知，利用神经网络建模直觉系统 1，用符号推理建模算法系统 2。",
+    "本文受人类认知反射的启发，它能够及时发现直觉反应中的错误，并通过调用系统 2 推理来修改它们。",
+    "本文的主要技术成果是为两类部分可观测马尔可夫决策过程（POMDPs）------ 弱揭示（weakly revealing）和强揭示（strongly revealing）------ 构建了精确算法。"
+  ],
+  "tags": [
+    "学术会议",
+    "AAAI 2025",
+    "杰出论文奖",
+    "神经符号AI",
+    "多智能体系统效率"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2110,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740990027000,
+  "publishDateStr": "2025-03-03",
+  "publishDateTimeStr": "2025-03-03 08:20:27"
+}

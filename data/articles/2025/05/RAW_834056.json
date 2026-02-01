@@ -1,0 +1,58 @@
+{
+  "id": "RAW_834056",
+  "title": "LWiAI 播客 #210 - Claude 4、谷歌 I/O 2025、Gemini Diffusion",
+  "url": "https://lastweekin.ai/p/lwiai-podcast-210-claude-4-google",
+  "date": "2025-05-28 05:23:57",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"youtube2-dd-YKtkKqm0\" data-attrs=\"{&quot;videoId&quot;:&quot;dd-YKtkKqm0&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\" class=\"youtube-wrap\">\n   <div class=\"youtube-inner\">\n    <iframe src=\"https://www.youtube-nocookie.com/embed/dd-YKtkKqm0?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n   </div>\n  </div>\n  <p><span>Our 210th episode with a summary and discussion of last week's big AI news!</span><br><span>Recorded on 05/23/2025</span></p>\n  <p><span>Hosted by </span><a href=\"https://twitter.com/andrey_kurenkov\" rel>Andrey Kurenkov</a><span> and </span><a href=\"https://twitter.com/jeremiecharris\" rel>Jeremie Harris</a><span>. </span><br><span>Feel free to email us your questions and feedback at </span><a href=\"mailto:contact@lastweekinai.com\" rel>contact@lastweekinai.com </a><span>and/or </span><a href=\"mailto:hello@gladstone.ai\" rel>hello@gladstone.ai</a></p>\n  <p><a href=\"https://discord.gg/nTyezGSKwP\" rel>Join our Discord here!</a><span> </span><a href=\"https://discord.gg/nTyezGSKwP\" rel>https://discord.gg/nTyezGSKwP</a></p>\n  <p>In this episode:</p>\n  <ul>\n   <li>\n    <p>Google's Gemini diffusion technology showcases significant improvements in speed and efficiency for generating text, potentially revolutionizing the auto-regressive generation paradigm.</p></li>\n   <li>\n    <p>Anthropic activates AI Safety Level 3 protections for Claude Opus 4, implementing robust measures such as bug bounties, synthetic jailbreak data, and preliminary egress bandwidth controls to mitigate bio-risk threats.</p></li>\n   <li>\n    <p>OpenAI responds to the California Attorney General, refuting claims by the not-for-private-gain coalition and defending their controversial restructuring plans amidst ongoing criticism.</p></li>\n   <li>\n    <p>Mistral delays the release of its Llama 4 Behemoth model due to training challenges, while Meta faces similar obstacles in rolling out its large-scale AI models, signaling difficulties in reaching frontier level performance.</p></li>\n  </ul>\n  <p><strong>Timestamps + Links:</strong></p>\n  <ul>\n   <li>\n    <p>(00:00:00) Intro / Banter</p></li>\n   <li>\n    <p>(00:01:43) News Preview</p></li>\n   <li>\n    <p><span>Tools &amp; Apps</span><br><span>(00:02:58) </span><a href=\"https://techcrunch.com/2025/05/22/anthropics-new-claude-4-ai-models-can-reason-over-many-steps/\" rel><span>Anthropic’s new Claude 4 AI models can reason over many steps</span><br></a><span>(00:09:58) </span><a href=\"https://www.nytimes.com/2025/05/20/technology/personaltech/google-ai-mode-search.html\" rel><span>Google Unveils A.I. Chatbot, Signaling a New Era for Search</span><br></a><span>(00:14:04) </span><a href=\"https://techcrunch.com/2025/05/20/google-rolls-out-project-mariner-its-web-browsing-ai-agent/\" rel><span>Google rolls out Project Mariner, its web-browsing AI agent</span><br></a><span>(00:16:40) </span><a href=\"https://techcrunch.com/2025/05/20/googles-veo-3-can-generate-videos-and-soundtracks-to-go-along-with-them/\" rel><span>Veo 3 can generate videos — and soundtracks to go along with them</span><br></a><span>(00:21:26) </span><a href=\"https://techcrunch.com/2025/05/20/imagen-4-is-googles-newest-ai-image-generator/\" rel><span>Imagen 4 is Google’s newest AI image generator</span><br></a><span>(00:23:15) </span><a href=\"https://techcrunch.com/2025/05/20/google-meet-is-getting-real-time-speech-translation/\" rel><span>Google Meet is getting real-time speech translation</span><br></a><span>(00:25:36) </span><a href=\"https://www.theverge.com/2024/12/11/24318628/jules-google-ai-coding-agent-gemini-2-0-announcement\" rel><span>Google’s new Jules AI agent will help developers fix buggy code</span><br></a><span>(00:26:43) </span><a href=\"https://www.theverge.com/news/669339/github-ai-coding-agent-fix-bugs\" rel><span>GitHub’s new AI coding agent can fix bugs for you</span><br></a><span>(00:28:50) </span><a href=\"https://techcrunch.com/2025/05/21/mistrals-new-devstral-model-was-designed-for-coding/\" rel>Mistral’s new Devstral model was designed for coding</a></p></li>\n   <li>\n    <p><span>Applications &amp; Business</span><br><span>(00:29:53) </span><a href=\"https://www.nytimes.com/2025/05/21/technology/openai-jony-ive-deal.html\" rel><span>OpenAI Unites With Jony Ive in $6.5 Billion Deal to Create A.I. Devices</span><br></a><span>(00:36:10) </span><a href=\"https://techcrunch.com/2025/05/16/openais-planned-data-center-in-abu-dhabi-would-be-bigger-than-monaco/\" rel><span>OpenAI’s planned data center in Abu Dhabi would be bigger than Monaco</span><br></a><span>(00:41:18) </span><a href=\"https://techcrunch.com/2025/05/21/lm-arena-the-organization-behind-popular-ai-leaderboards-lands-100m/\" rel><span>LM Arena, the organization behind popular AI leaderboards, lands $100M</span><br></a><span>(00:45:21) </span><a href=\"https://www.reuters.com/world/china/nvidia-ceo-says-next-chip-after-h20-china-wont-be-hopper-series-2025-05-17/?utm_source=chatgpt.com\" rel><span>Nvidia CEO says next chip after H20 for China won't be from Hopper series</span><br></a><span>(00:46:39) </span><a href=\"https://techcrunch.com/2025/05/20/googles-gemini-ai-app-has-400m-monthly-active-users/\" rel><span>Google’s Gemini AI app has 400M monthly active users</span><br></a><span>(00:51:15) </span><a href=\"https://x.com/Jukanlosreve/status/1924245891130802544\" rel><span>AI Servers: End demand intact, but rising gap between upstream build and system production (2025.5.18)</span><br></a><span>Projects &amp; Open Source</span><br><span>(00:53:46) </span><a href=\"https://www.wsj.com/tech/ai/meta-is-delaying-the-rollout-of-its-flagship-ai-model-f4b105f7\" rel>Meta Is Delaying the Rollout of Its Flagship AI Model</a></p></li>\n   <li>\n    <p><span>Research &amp; Advancements</span><br><span>(00:57:53) </span><a href=\"https://blog.google/technology/google-deepmind/gemini-diffusion/\" rel><span>Gemini Diffusion</span><br></a><span>(01:03:07) </span><a href=\"https://arxiv.org/abs/2505.11820\" rel><span>Chain-of-Model Learning for Language Model</span><br></a><span>(01:09:16) </span><a href=\"https://arxiv.org/abs/2505.13308v1\" rel><span>Seek in the Dark: Reasoning via Test-Time Instance-Level Policy Gradient in Latent Space</span><br></a><span>(01:15:38) </span><a href=\"https://arxiv.org/abs/2505.14681\" rel><span>Two Experts Are All You Need for Steering Thinking: Reinforcing Cognitive Effort in MoE Reasoning Models Without Additional Training</span><br></a><span>(01:20:16) </span><a href=\"https://storage.googleapis.com/deepmind-media/Security%20and%20Privacy/Gemini_Security_Paper.pdf\" rel><span>Lessons from Defending Gemini Against Indirect Prompt Injections</span><br></a><span>(01:23:35) </span><a href=\"https://epoch.ai/gradient-updates/how-fast-can-algorithms-advance-capabilities\" rel><span>How Fast Can Algorithms Advance Capabilities?</span><br></a><span>(01:30:20) </span><a href=\"https://arxiv.org/abs/2505.11711v1\" rel>Reinforcement Learning Finetunes Small Subnetworks in Large Language Models</a></p></li>\n   <li>\n    <p><strong>Policy &amp; Safety</strong></p></li>\n   <li>\n    <p><span>(01:31:12) </span><a href=\"https://www.obsolete.pub/p/exclusive-what-openai-told-californias\" rel>Exclusive: What OpenAI Told California's Attorney General</a></p></li>\n   <li>\n    <p><span>(01:38:25) </span><a href=\"https://www.anthropic.com/news/activating-asl3-protections\" rel>Activating AI Safety Level 3 Protections</a></p></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "播客摘要：涵盖最新 AI 新闻，包括 Claude 4、谷歌 AI 进展及行业趋势。",
+  "oneSentenceSummary": "播客摘要：涵盖最新 AI 新闻，包括 Claude 4、谷歌 AI 进展及行业趋势。",
+  "summary": "本文总结了“Last Week in AI”播客的第 210 集，讨论了上周的主要 AI 新闻。主要议题包括谷歌在文本生成方面的 AI 扩散模型 (Gemini Diffusion) 的进展、新的多模态能力 (Veo 3、Imagen 4) 和 AI 代理 (Project Mariner、Jules)。文章还涵盖了 Anthropic 针对 Claude Opus 4 启用的 AI 安全等级 3，重点关注生物风险缓解；以及 OpenAI 对关于其重组的法律挑战的回应。此外，摘要还涉及 Mistral 和 Meta 推迟发布大型模型、为 AI 排行榜组织 LM Arena 提供资金，以及 OpenAI 的商业发展，例如与 Jony Ive 的合作和数据中心计划。该剧集摘要简要概述了各个 AI 公司和研究领域的重要发展。",
+  "mainPoints": [
+    {
+      "point": "谷歌推出多款全新 AI 模型及智能代理。",
+      "explanation": "谷歌宣布在文本生成 (Gemini Diffusion)、视频/音频生成 (Veo 3)、图像生成 (Imagen 4)、网页浏览 (Project Mariner) 和编码辅助 (Jules) 方面的进展。"
+    },
+    {
+      "point": "Anthropic 为 Claude Opus 4 启用了 AI 安全等级 3。",
+      "explanation": "实施强大的安全措施，如漏洞赏金、合成越狱数据和数据出口控制，以应对高级模型可能带来的生物风险威胁。"
+    },
+    {
+      "point": "主要的 AI 公司面临模型发布的延迟。",
+      "explanation": "Mistral 和 Meta 在训练和部署其大型、前沿 AI 模型方面遇到了挑战，表明扩展性能的复杂性。"
+    },
+    {
+      "point": "OpenAI 应对法律挑战并寻求商业投资。",
+      "explanation": "OpenAI 回应了对其组织结构的批评，并积极拓展业务。例如，他们与 Jony Ive 合作开发 AI 设备，并计划建设大规模数据中心。"
+    }
+  ],
+  "keyQuotes": [
+    "谷歌的 Gemini diffusion 技术在生成文本的速度和效率方面展示了显著改进，有可能彻底改变自回归生成范式。",
+    "Anthropic 为 Claude Opus 4 激活了 AI 安全等级 3 保护，实施了强大的措施，例如漏洞赏金、合成越狱数据和初步出口带宽控制，以减轻生物风险威胁。",
+    "Mistral 由于训练挑战而推迟发布其 Llama 4 Behemoth 模型，而 Meta 在推出其大型 AI 模型时也面临类似的障碍，这表明在达到前沿水平的性能方面存在困难。",
+    "OpenAI 回应了加利福尼亚州检察长的质询，驳斥了非营利联盟的说法，并为他们在持续批评中备受争议的重组计划辩护。"
+  ],
+  "tags": [
+    "AI 新闻",
+    "LLM",
+    "Google",
+    "Anthropic",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 446,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748409837000,
+  "publishDateStr": "2025-05-28",
+  "publishDateTimeStr": "2025-05-28 05:23:57"
+}

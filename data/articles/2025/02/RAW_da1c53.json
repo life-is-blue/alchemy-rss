@@ -1,0 +1,57 @@
+{
+  "id": "RAW_da1c53",
+  "title": "从发现到修复:GitHub Advanced Security 集成 Endor Labs SCA",
+  "url": "https://github.blog/security/from-finding-to-fixing-github-advanced-security-integrates-endor-labs-sca/",
+  "date": "2025-02-07 17:00:17",
+  "author": "Mario Rodriguez, Varun Badhwar",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>It’s no wonder developers are increasingly overwhelmed. The number of <a href=\"https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-the-essential-role-of-cves/\">new CVEs published each year</a> has increased by nearly 500% in the last decade. And the average project, with just 10 direct dependencies, can have hundreds of indirect dependencies. Put simply, developers are often buried under a mountain of security alerts and unable to prioritize which ones to remediate first.</p>\n  <p>While high-profile supply chain attacks like last year’s XZ Utils backdoor tend to capture attention, the danger they pose is just a fraction of the overall threat landscape. The bigger risk often comes from unpatched vulnerabilities in lesser-known open source dependencies.</p>\n  <p>GitHub’s partnership with Endor Labs cuts through the noise to help developers <em>accurately</em> identify, remediate, and fix the most critical vulnerabilities—without ever leaving GitHub.</p>\n  <aside class=\"p-4 p-md-6 post-aside--large\">\n   <p>GitHub Advanced Security helps teams eliminate security debt and prevent new vulnerabilities with AI-powered remediation, static analysis, secret scanning, and software composition analysis.</p>\n   <p><a href=\"https://github.com/enterprise/advanced-security?utm_source=github_blog&amp;utm_medium=endor_labs_github_advanced_security&amp;utm_campaign=announcement\">Learn about GitHub Advanced Security &gt;</a></p>\n  </aside>\n  <p></p>\n  <p>With Endor Labs software composition analysis (SCA) integrated into GitHub Advanced Security and Dependabot, development teams can dismiss up to 92% of low-risk dependency security alerts to focus instead on the vulnerabilities that matter most.</p>\n  <figure id=\"attachment_82484\" class=\"wp-caption aligncenter mx-0\">\n   <img data-recalc-dims=\"1\" decoding=\"async\" width=\"1250\" height=\"499\" src=\"https://github.blog/wp-content/uploads/2025/02/code-scanning.png?resize=1250%2C499\" alt=\"A GitHub code scanning page shows several active vulnerabilities from GitHub’s advisory database labeled 'Critical' by Endor Labs.\" class=\"width-fit size-full wp-image-82484 width-fit\" loading=\"lazy\" srcset=\"https://github.blog/wp-content/uploads/2025/02/code-scanning.png?w=1250 1250w, https://github.blog/wp-content/uploads/2025/02/code-scanning.png?w=300 300w, https://github.blog/wp-content/uploads/2025/02/code-scanning.png?w=768 768w, https://github.blog/wp-content/uploads/2025/02/code-scanning.png?w=1024 1024w\" sizes=\"auto, (max-width: 1000px) 100vw, 1000px\">\n  </figure>\n  <h2 id=\"how-it-works\">How it works<a href=\"#how-it-works\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"How it works\"></a></h2>\n  <h3 id=\"endor-labs-sca-brings-context-into-open-source-vulnerability-detection\">Endor Labs SCA brings context into open source vulnerability detection<a href=\"#endor-labs-sca-brings-context-into-open-source-vulnerability-detection\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Endor Labs SCA brings context into open source vulnerability detection\"></a></h3>\n  <p>Endor Labs SCA helps identify and prioritize dependency vulnerabilities by their potential impact, according to factors like reachability, exploitability, and more. For example, Endor Labs checks if the vulnerable function of a given dependency is actually reachable by your application or if it is just sitting on an unused corner of a transitive dependency. Security teams can also configure risk, licensing, and permission profiles to ensure developers are not bothered unless the risk is truly warranted.</p>\n  <div class=\"mod-yt position-relative\" style=\"height: 0; padding-bottom: calc((9 / 16)*100%);\">\n   <iframe loading=\"lazy\" class=\"position-absolute top-0 left-0 width-full height-full\" src=\"https://www.youtube.com/embed/kZFymzYHmPk?feature=oembed\" title=\"YouTube video player\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen frameborder=\"0\"></iframe>\n  </div>\n  <h3 id=\"prioritize-and-fix-open-source-vulnerabilities-with-github\">Prioritize and fix open source vulnerabilities with GitHub<a href=\"#prioritize-and-fix-open-source-vulnerabilities-with-github\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Prioritize and fix open source vulnerabilities with GitHub\"></a></h3>\n  <p>GitHub Advanced Security integrates crucial security practices directly into the development workflow, offering developers a streamlined way to secure their code. Its features are free for open source maintainers, including dependency review, secret scanning, code scanning, and Copilot Autofix.</p>\n  <p>Dependabot, available for free to all GitHub users, automates dependency updates, so you can spend more time building. Developers can remediate vulnerabilities by merging Dependabot-authored pull requests with the click of a button or by applying Endor Patches.</p>\n  <h3 id=\"secure-your-automated-workflows\">Secure your automated workflows<a href=\"#secure-your-automated-workflows\" class=\"heading-link pl-2 text-italic text-bold\" aria-label=\"Secure your automated workflows\"></a></h3>\n  <p>GitHub Actions makes it easy to automate all your software workflows, whether you want to build a container, deploy a web service, or welcome new users to your open source project. These actions are often updated with bug fixes and new features, which can take time to maintain.</p>\n  <p>Endor Labs automatically discovers in-use actions and their dependencies to ensure they fit your risk, licensing, and permission profiles. Dependabot automatically updates your dependencies, and <a href=\"https://docs.github.com/en/code-security/code-scanning\">code scanning</a> helps identify existing workflow configuration vulnerabilities and prevent new ones.</p>\n  <aside class=\"p-4 p-md-6 post-aside--large\">\n   <p>With GitHub Actions, you can build, test, and deploy your code right from GitHub. <a href=\"https://github.blog/changelog/2024-06-25-artifact-attestations-is-generally-available/\">Artifact Attestations</a> let you create provenance signatures, which provide an unforgeable paper trail that links your artifact back to its originating workflow run. Gate deployments through attestation verification to ensure that what you deploy is exactly what you built, guaranteeing that the artifact has not been tampered with. This significantly mitigates the most common attack vectors targeting your build pipelines.</p>\n  </aside>\n  <p></p>\n  <div class=\"mt-8 mb-8 mb-md-0\">\n  </div>\n </body>\n</html>",
+  "aiSummary": "GitHub Advanced Security 集成 Endor Labs SCA，利用上下文分析来增强漏洞识别能力，帮助开发人员专注于关键的开源依赖项。",
+  "oneSentenceSummary": "GitHub Advanced Security 集成 Endor Labs SCA，利用上下文分析来增强漏洞识别能力，帮助开发人员专注于关键的开源依赖项。",
+  "summary": "本文讨论了 Endor Labs SCA 与 GitHub Advanced Security 的集成，旨在帮助开发人员更有效地管理和修复开源依赖项中的安全漏洞。由于 CVE 数量不断增长，依赖关系也日益复杂，开发人员常常难以确定关键漏洞的优先级。通过集成 Endor Labs SCA，GitHub Advanced Security 可以根据可达性和可利用性等因素，过滤掉高达 92% 的低风险安全警报，使开发人员能够专注于真正重要的漏洞。这种集成方案的创新之处在于其基于上下文的漏洞优先级排序。此外，结合使用 GitHub Actions 和 Dependabot 等工具可以增强自动化工作流程的安全性。制品认证提供了可靠的组件追溯能力，确保已部署的组件未被篡改，从而降低了供应链攻击的风险。",
+  "mainPoints": [
+    {
+      "point": "集成解决方案显著减少了安全警报干扰",
+      "explanation": "通过集成 Endor Labs SCA，开发团队可以忽略高达 92% 的低风险依赖项安全警报，专注于最关键的漏洞。这反映了集成对开发人员的直接价值。"
+    },
+    {
+      "point": "Endor Labs SCA 通过上下文分析提高漏洞识别的准确性",
+      "explanation": "Endor Labs SCA 帮助开发人员根据可达性和可利用性等因素区分高风险和低风险漏洞，防止他们被不相关的警报淹没。"
+    },
+    {
+      "point": "GitHub 工具链提供全面的安全保护",
+      "explanation": "Dependabot 自动化依赖项更新，制品认证确保组件完整性，GitHub Actions 保护工作流程安全，共同构建安全的开发环境。"
+    },
+    {
+      "point": "制品认证提供可验证的组件来源",
+      "explanation": "制品认证能够创建来源签名，提供不可伪造的追溯链，将组件链接回其原始工作流程运行，从而增强供应链安全。"
+    }
+  ],
+  "keyQuotes": [
+    "过去十年，每年发布的新 CVE 数量增加了近 500%。",
+    "通过将 Endor Labs 软件成分分析 (SCA) 集成到 GitHub Advanced Security 和 Dependabot 中，开发团队可以忽略高达 92% 的低风险依赖项安全警报，从而专注于最重要的漏洞。",
+    "构件证明 允许您创建来源签名，这些签名提供不可伪造的追溯链，将您的构件链接回其原始工作流程运行。"
+  ],
+  "tags": [
+    "软件安全",
+    "开发安全运维",
+    "供应链安全",
+    "漏洞管理",
+    "漏洞优先级排序"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 526,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738947617000,
+  "publishDateStr": "2025-02-07",
+  "publishDateTimeStr": "2025-02-07 17:00:17"
+}

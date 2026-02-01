@@ -1,0 +1,60 @@
+{
+  "id": "RAW_53c8d3",
+  "title": "DeepSeek 开源第三弹：V3/R1 训练推理关键秘籍，核心代码仅 300 行",
+  "url": "https://www.qbitai.com/2025/02/258439.html",
+  "date": "2025-02-26 02:40:49",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"2 1 []\">\n   <p data-track=\"59\">金磊 发自 凹非寺</p>\n   <p data-track=\"60\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">开源周的第三天，<strong>DeepSeek</strong>把训练推理V3/R1背后的“动力”给亮出来了——</p>\n  <p data-track=\"3\"><strong>DeepGEMM</strong>：一个FP8 GEMM（通用矩阵乘法）库，支持密集（dense）和混合专家（MoE）矩阵乘法运算。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c65581c5-8b41-471c-a6bb-c5e39b29f900/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"898\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">我们先来简单了解一下GEMM。</p>\n  <p data-track=\"5\">GEMM，即通用矩阵乘法，是线性代数中的基本运算，是科学计算、机器学习、深度学习等领域中“常客”，也是许多高性能计算任务的核心。</p>\n  <p data-track=\"6\">但由于它的计算量往往都比较大，所以GEMM的性能优化是至关重要的一点。</p>\n  <p data-track=\"7\">而DeepSeek这次开源的DeepGEMM，依旧是保持了<strong>“高性能+低成本”</strong>的特性，亮点如下：</p>\n  <ul>\n   <li data-track=\"8\"><strong>高性能</strong>：在Hopper架构的GPU上，DeepGEMM能够实现高达1350+FP8 TFLOPS的性能。</li>\n   <li data-track=\"9\"><strong>简洁性</strong>：核心逻辑仅约 300 行代码，但性能却优于专家调优的内核。</li>\n   <li data-track=\"10\"><strong>即时编译（JIT）</strong>：采用完全即时编译的方式，这意味着它可以在运行时动态生成优化的代码，从而适应不同的硬件和矩阵大小。</li>\n   <li data-track=\"11\"><strong>无重依赖</strong>：这个库设计得非常轻量级，没有复杂的依赖关系，可以让部署和使用变得简单。</li>\n   <li data-track=\"12\"><strong>支持多种矩阵布局</strong>：支持密集矩阵布局和两种 MoE 布局，这使得它能够适应不同的应用场景，包括但不限于深度学习中的混合专家模型。</li>\n  </ul>\n  <p data-track=\"13\">简单来说，DeepGEMM主要用于加速深度学习中的矩阵运算，特别是在大规模模型训练和推理中，它特别适用于需要高效计算资源的场景，能够显著提升计算效率。</p>\n  <p data-track=\"14\">很多网友们对这次的开源都比较“买单”，有人将DeepGEMM比作数学界的超级英雄，认为它比飞快的计算器还要快，比多项式方程还要强大。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d24c9025-9360-4a53-e4b5-9dcd8ad3c500/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"273\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">也有人将DeepGEMM的发布比喻为量子态稳定到一个新的现实，称赞其即时编译的干净利落。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fa08de4a-405f-4888-fbea-414631817500/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"310\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">当然……也有人开始担心起自己手上的英伟达股票了……</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9aee3ae0-90c9-4048-60e1-a7525101e700/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"244\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">DeepGEMM是一个专门为实现简洁高效的FP8通用矩阵乘法（GEMMs）而打造的库，它还具备细粒度缩放功能，这一设计源于DeepSeek V3。</p>\n  <p data-track=\"19\">它既能处理普通的通用矩阵乘法，也能支持MoE分组的通用矩阵乘法。</p>\n  <p data-track=\"20\">这个库是用CUDA编写的，安装的时候不需要编译，因为它会在运行时通过一个轻量级的即时编译（JIT）模块来编译所有的内核程序。</p>\n  <p data-track=\"21\">目前，DeepGEMM只支持英伟达的Hopper张量核心。</p>\n  <p data-track=\"22\">为了解决FP8张量核心在计算累积时不够精确的问题，它采用了CUDA核心的两级累积（提升）方法。</p>\n  <p data-track=\"23\">虽然DeepGEMM借鉴了CUTLASS和CuTe里的一些理念，但并没有过度依赖它们的模板或代数运算。</p>\n  <p data-track=\"24\">相反，这个库设计得很简洁，只有一个核心内核函数，代码量大概300行左右。</p>\n  <p data-track=\"25\">这使得它成为一个简洁易懂的资源，方便大家学习Hopper架构下的FP8矩阵乘法和优化技术。</p>\n  <p data-track=\"26\">尽管其设计轻巧，但DeepGEMM的性能可以匹配或超过各种矩阵形状的专家调优库。</p>\n  <p data-track=\"27\">那么具体性能如何呢？</p>\n  <p data-track=\"28\">团队在H800上使用NVCC 12.8测试了DeepSeek-V3/R1推理中可能使用的所有形状（包括预填充和解码，但没有张量并行）。</p>\n  <p data-track=\"29\">下面这张图展示的是用于密集模型的普通DeepGEMM的性能：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2be29e1b-d79b-4bdf-2950-023a13761000/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"1195\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">从测试结果来看，DeepGEMM<strong>计算性能</strong>最高可达1358 TFLOPS，<strong>内存宽带</strong>最高可达2668 GB/s。</p>\n  <p data-track=\"31\"><strong>加速比</strong>方面，与基于CUTLASS 3.6的优化实现相比，最高可达2.7倍。</p>\n  <p data-track=\"32\">再来看下DeepGEMM支持MoE模型的<strong>连续布局</strong>（contiguous layout）的性能：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9d15a93a-454b-4f11-577b-f026115daa00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"291\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">以及支持MoE模型<strong>掩码布局</strong>（masked layout）的性能是这样的：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fce0137e-5fca-4cb8-a26f-91a65bbd2f00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"383\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"35\">要想使用DeepGEMM，需先注意一下几个<strong>依赖项</strong>，包括：</p>\n  <ul>\n   <li data-track=\"36\">必须支持Hopper架构的GPU，sm_90a。</li>\n   <li data-track=\"37\">Python 3.8及以上。</li>\n   <li data-track=\"38\">CUDA 12.3及以上（推荐12.8）。</li>\n   <li data-track=\"39\">PyTorch 2.1及以上。</li>\n   <li data-track=\"40\">CUTLASS 3.6及以上</li>\n  </ul>\n  <p data-track=\"41\">Development代码如下：</p>\n  <pre><code># Submodule must be cloned\r\ngit clone --recursive git@github.com:deepseek-ai/DeepGEMM.git\r\n\r\n\r\n# Make symbolic links for third-party (CUTLASS and CuTe) include directories\r\npython setup.py develop\r\n\r\n\r\n# Test JIT compilation\r\npython tests/test_jit.py\r\n\r\n\r\n# Test all GEMM implements (normal, contiguous-grouped and masked-grouped)\r\npython tests/test_core.py</code></pre>\n  <p data-track=\"43\">安装代码如下：</p>\n  <pre><code>python setup.py install</code></pre>\n  <p data-track=\"45\">在上述步骤之后，您的Python项目中导入deep_gemm即可。</p>\n  <p data-track=\"46\">在<strong>接口</strong>方面，对于普通的DeepGEMM，可调用deep_gemm.gemm_fp8_fp8_bf16_nt函数，支持NT格式（非转置LHS和转置RHS）。</p>\n  <p data-track=\"47\">对于分组的DeepGEMM，连续布局情况下是m_grouped_gemm_fp8_fp8_bf16_nt_contiguous；掩码布局情况下是m_grouped_gemm_fp8_fp8_bf16_nt_masked。</p>\n  <p data-track=\"48\">DeepGEMM还提供设置最大SM数量、获取TMA对齐大小等工具函数；支持环境变量，如DG_NVCC_COMPILER、DG_JIT_DEBUG等。</p>\n  <p data-track=\"49\">除此之外，DeepSeek团队还提供了几种<strong>优化的方式</strong>，包括：</p>\n  <ul>\n   <li data-track=\"50\"><strong>JIT设计</strong>：所有内核在运行时编译，无需安装时编译；支持动态选择最优块大小和流水线阶段。</li>\n   <li data-track=\"51\"><strong>细粒度缩放</strong>：通过CUDA核心两层累加解决FP8精度问题；支持非2的幂次方块大小，优化SM利用率。</li>\n   <li data-track=\"52\"><strong>FFMA SASS交错</strong>：通过修改SASS指令的yield和reuse位，提高性能。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c9625635-7016-4e0a-fe04-9279199e2800/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"336\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"53\">感兴趣的小伙伴可以戳文末GitHub链接查看详情哦~</p>\n  <p data-track=\"55\">英伟达这几天的股票……嗯……一直再跌：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek开源第三弹：V3/R1训练推理关键秘籍，核心代码仅300行\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b734eb0e-e6a6-4379-42c2-cb21f5a01400/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"786\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"56\">不过在北京时间27日凌晨，英伟达2025财年第四季度业绩报告也即将出炉，我们可以期待一下它的表现~</p>\n  <p data-track=\"58\">DeepGEMM GitHub入口：\n   <br>\n   https://github.com/deepseek-ai/DeepGEMM</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DeepSeek 开源 DeepGEMM 库，核心代码仅 300 行，实现高性能 FP8 GEMM，显著加速深度学习模型在 Hopper 架构 GPU 上的训练和推理。",
+  "oneSentenceSummary": "DeepSeek 开源 DeepGEMM 库，核心代码仅 300 行，实现高性能 FP8 GEMM，显著加速深度学习模型在 Hopper 架构 GPU 上的训练和推理。",
+  "summary": "DeepSeek 开源了 DeepGEMM，一个高性能、低成本的 FP8 GEMM 库，用于加速深度学习中的矩阵运算，尤其适用于大规模模型训练和推理。DeepGEMM 在 Hopper 架构的 GPU 上能实现高达 1350+ FP8 TFLOPS 的性能，核心代码仅约 300 行，且无复杂依赖，易于部署和使用。它采用即时编译，支持多种矩阵布局，包括密集矩阵和 MoE 布局，尤其擅长处理 MoE 模型。DeepGEMM 通过 CUDA 核心两级累积解决 FP8 精度问题，并通过 JIT 设计、细粒度缩放和 FFMA SASS 交错等方式进行优化。与基于 CUTLASS 3.6 的优化实现相比，DeepGEMM 的加速比最高可达 2.7 倍。测试结果表明，DeepGEMM 的计算性能最高可达 1358 TFLOPS，内存带宽最高可达 2668 GB/s。",
+  "mainPoints": [
+    {
+      "point": "DeepGEMM 实现高性能 FP8 GEMM，加速深度学习矩阵运算",
+      "explanation": "DeepGEMM 通过优化算法和底层实现，显著提升了矩阵乘法的计算效率，尤其是在大规模模型训练和推理中。"
+    },
+    {
+      "point": "DeepGEMM 核心代码简洁，易于学习和定制",
+      "explanation": "仅 300 行左右的核心代码降低了学习门槛，方便开发者理解 FP8 矩阵乘法的优化技术，并根据自身需求进行定制。"
+    },
+    {
+      "point": "DeepGEMM 采用即时编译，动态适应不同硬件和矩阵大小",
+      "explanation": "即时编译技术使得 DeepGEMM 能够在运行时生成优化的代码，从而更好地适应不同的硬件环境和矩阵大小。"
+    },
+    {
+      "point": "DeepGEMM 支持 MoE 模型，满足复杂深度学习场景的需求",
+      "explanation": "DeepGEMM 能够有效支持混合专家 (MoE) 模型，这使其能够应用于更复杂的深度学习场景，并提供更高的性能。"
+    }
+  ],
+  "keyQuotes": [
+    "DeepGEMM：一个 FP8 GEMM（通用矩阵乘法）库，支持密集（dense）和混合专家（MoE）矩阵乘法运算。",
+    "DeepGEMM 是一个专门为实现简洁高效的 FP8 通用矩阵乘法（GEMMs）而打造的库",
+    "在 Hopper 架构的 GPU 上，DeepGEMM 能够实现高达 1350+FP8 TFLOPS 的性能。",
+    "核心逻辑仅约 300 行代码，但性能却优于专家调优的内核。",
+    "采用完全即时编译的方式，这意味着它可以在运行时动态生成优化的代码，从而适应不同的硬件和矩阵大小。",
+    "这个库设计得非常轻量级，没有复杂的依赖关系，可以让部署和使用变得简单。"
+  ],
+  "tags": [
+    "DeepSeek",
+    "DeepGEMM",
+    "FP8 GEMM",
+    "GEMM",
+    "FP8"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2117,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740537649000,
+  "publishDateStr": "2025-02-26",
+  "publishDateTimeStr": "2025-02-26 02:40:49"
+}

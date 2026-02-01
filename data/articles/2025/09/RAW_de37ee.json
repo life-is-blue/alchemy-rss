@@ -1,0 +1,55 @@
+{
+  "id": "RAW_de37ee",
+  "title": "突破单链思考上限，清华团队提出原生「并行思考」scale 范式 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-17",
+  "date": "2025-09-17 02:17:03",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <br>\n  </section>\n  <p>近年来，大语言模型（LLMs）在复杂推理任务上的能力突飞猛进，这在很大程度上得益于深度思考的策略，即通过增加测试时（test-time）的计算量，让模型生成更长的思维链（Chain-of-Thought）。</p>\n  <p>然而，这条路径正面临着一个明显的瓶颈：<strong>随着计算资源的持续投入，性能提升变得微乎其微，甚至陷入停滞</strong>。</p>\n  <p>来自清华大学 AIR 的一篇最新研究论文《ParaThinker: Native Parallel Thinking as a New Paradigm to Scale LLM Test-time Compute》对这一瓶颈发起了挑战 。</p>\n  <section>\n   <img data-imgfileid=\"503507388\" data-ratio=\"1.2037037037037037\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250917023832_3b8ade\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/5ee838db-af72-4a37-b4ca-dbbf142d43e2/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>该研究一针见血地指出，<strong>这个</strong><strong>单链 test time scaling 的天花板并非模型能力的固有极限，而是源于当前顺序推理策略的根本缺陷 —— 一种被研究者称为「隧道视野」（Tunnel Vision）</strong>的现象。</p>\n  <p>为此，团队提出了模型原生的并行化思考方案，训练 LLM 在一次推理中同时生成和综合多个不同的推理路径，从而有效规避「隧道视野」问题，解锁模型潜在的推理能力。</p>\n  <p>该研究证明，与串行扩展计算深度相比，并行扩展计算宽度是一种更有效、更高效的推理策略。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_c1906d\" data-ratio=\"0.39351851851851855\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507376\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/015e13c1-f6df-4579-be19-633e54fed13d/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p data-pm-slice=\"2 2 []\">论文标题：ParaThinker: Native Parallel Thinking as a New Paradigm to Scale LLM Test-time Compute</p>\n   </li>\n   <li>\n    <p>作者：Hao Wen*, Yifan Su*, Feifei Zhang, Yunxin Liu, Yunhao Liu, Ya-Qin Zhang, Yuanchun Li &nbsp;(*Equal Contribution)</p>\n   </li>\n   <li>\n    <p>机构：清华大学</p>\n   </li>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2509.04475</p>\n   </li>\n  </ul>\n  <p><strong>隧道视野：深度思考的阿喀琉斯之踵</strong></p>\n  <p><strong>扩展瓶颈（Scaling Bottleneck）</strong>： 如下图所示，对于单个推理路径（P=1），当投入的计算资源（即 Token 预算）超过一定限度后，模型准确率便不再提升，甚至可能下降，这表明「想得更久」并不能持续带来回报。</p>\n  <p><img data-src=\"https://image.jido.dev/20250917023832_b17c91\" data-ratio=\"0.3709677419354839\" data-s=\"300,640\" data-type=\"png\" data-w=\"992\" type=\"block\" data-imgfileid=\"503507377\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/08b8db58-6c71-48a2-aaaf-7e0e1422f0b0/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>隧道视野（Tunnel Vision）</strong>： LLM 在生成思维链的初期，一旦迈出有瑕疵的第一步，就很容易被锁定在一条次优的推理路径上，难以在后续步骤中纠正或发现更优的解法 。模型仿佛走进了一条狭窄的隧道，无论走多远，都无法摆脱最初错误方向的束缚。</p>\n  <p>如下图 (b) 所示，研究者进行了一项实验：他们故意让模型从一个错误的推理前缀开始继续生成答案。结果显示，错误的前缀越长，模型最终能够 “拨乱反正” 得到正确答案的概率就越低。这证明了 LLM 一旦陷入错误的思维定式，就很难自行跳出。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_2bd15b\" data-ratio=\"0.5043227665706052\" data-s=\"300,640\" data-type=\"png\" data-w=\"694\" type=\"block\" data-imgfileid=\"503507378\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/d4f5c233-403b-44a8-8a1c-67a9c13dbd16/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>新范式：从「深度」到「广度」</strong></p>\n  <p><strong>原生并行思考（Native Parallel Thinking）</strong>的核心思想是，与其让模型在一条路径上「死磕」，不如让它同时探索多条不同思路的推理路径，最后再综合提炼出最优答案。</p>\n  <p>为此，研究团队推出了一个名为 ParaThinker 的端到端框架。该框架能够训练 LLM 在一个统一的前向传播过程中，并行生成多个多样化的推理路径，并将它们融合成一个更高质量的最终答案。</p>\n  <p><strong>ParaThinker 的实现主要依靠三大核心创新：</strong>&nbsp;</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_867015\" data-ratio=\"0.5714285714285714\" data-s=\"300,640\" data-type=\"png\" data-w=\"1078\" type=\"block\" data-imgfileid=\"503507379\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/5e9c4861-941d-418e-92e7-68d75937582a/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ol>\n   <li>\n    <p><strong>专用可控 Token</strong>：引入一系列可训练的特殊 Token（如 &lt;think i&gt;），用于显式引导模型开启第 i 条独立的思考路径，从而确保了推理路径的多样性。</p>\n   </li>\n   <li>\n    <p><strong>思维特定位置嵌入</strong>：为了解决在汇总阶段多路径带来的位置信息混淆问题，ParaThinker 为每条推理路径设计了独特的、可学习的「思维嵌入」（Thought Embedding）。这让模型在最终综合时，能清晰地区分每个信息片段的来源，避免信息「串线」。</p>\n   </li>\n   <li>\n    <p><strong>两阶段注意力掩码</strong>：在并行推理阶段，注意力被严格限制在各自的路径内部，确保各思路的独立性；在汇总阶段，则开放全局注意力，让模型可以审视所有路径并进行高效整合。</p>\n   </li>\n  </ol>\n  <p>此外，一个关键的工程优势在于，ParaThinker 在汇总阶段能够重用并行推理过程中生成的 KV 缓存。这极大地节省了计算资源，避免了昂贵的<strong>重新计算（re-prefilling）</strong>，使得整个过程的延迟开销极小。</p>\n  <p><strong>超越 Majority Voting 与简单任务分解</strong></p>\n  <p>并行推理并非一个全新的概念，类似<strong>「多数投票」（Majority Voting）</strong>的方法早已被用于提升模型在选择题或数值计算等任务上的表现。但这类方法的局限性也十分明显：<strong>它们依赖于可被轻易量化和验证的答案格式，而对于代码生成、数学证明、复杂智能体工作流等开放式、生成式的任务则束手无策。</strong></p>\n  <p>ParaThinker 的优越性正在于此。它不是简单地对多个独立结果进行投票，而是<strong>学习如何智能地「整合」与「提炼」</strong>来自不同推理过程的信息。这使其成为一种更通用、更强大的并行推理框架，能够处理无法被简单投票的复杂任务，真正释放了并行思考的潜力。</p>\n  <p>在并行推理的探索道路上，除了 ParaThinker，近年来也涌现出其他值得关注的思路，例如以 Multiverse（https://arxiv.org/abs/2506.09991）为代表的工作，但其主要<strong>目标侧重效率</strong>：根据原文分析，这些方法的主要目标是加速生成过程，即让模型「做得快」，而不是直接致力于提升最终答案的准确性。</p>\n  <p>此外，其任务分解<strong>依赖任务结构</strong>：它们的成功很大程度上依赖于任务本身是否适合被显式地分解。对于许多不可分解的、需要整体性思维的复杂问题，这种方法的适用性便会受限。</p>\n  <p>相比之下，ParaThinker 提供了一种更具普适性的并行范式。它<strong>不假设任何子任务结构，也不试图对问题进行拆解</strong>。ParaThinker 的核心目标是<strong>通过思维的多样性来提升准确性</strong>。</p>\n  <p><strong>实验结果：正确率随思维广度有效提升</strong></p>\n  <p><strong>在 AIME、AMC、MATH-500 等难度基准上</strong>，1.5B 参数模型用 8 条并行路径，平均准确率提升<strong> 12.3%</strong>；7B 模型提升<strong> 7.5%</strong>。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_5d01d0\" data-ratio=\"0.9277777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503507381\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/08f72f12-375f-4f6a-a10b-2a349f162db2/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>延迟开销较低</strong>：推理延迟并不随着同时思维链数而线性增长，在 batch size=1 时，并行路径数增加了 8 倍，但延迟仅增加了约 10%，这体现了并行计算在硬件层面的巨大优势。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_939613\" data-ratio=\"0.5568400770712909\" data-s=\"300,640\" data-type=\"png\" data-w=\"1038\" type=\"block\" data-imgfileid=\"503507382\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/ecfc75a0-fd26-4759-ad5d-4ced3f851267/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>与多数投票（Majority Voting）的结合</strong></p>\n  <p>ParaThinker 与 majority voting 策略（即生成 k 个独立答案，选择出现次数最多的那个）并不冲突，两者叠加可以达到更高的正确率。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250917023832_ca5bef\" data-ratio=\"0.25430210325047803\" data-s=\"300,640\" data-type=\"png\" data-w=\"1046\" type=\"block\" data-imgfileid=\"503507383\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/01335ce9-104a-4036-a08f-12a3e4f3f411/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>ParaThinker 教会大模型像人类一样「头脑风暴」，并行探索多种思路，再整合成最优答案。它预示着未来 LLM 的规模化发展之路，将从单纯的「深度」扩展转向更有效的「广度」扩展。</p>\n </body>\n</html>",
+  "aiSummary": "清华团队提出 ParaThinker 并行思考范式，通过同时探索多条推理路径并综合，克服大语言模型单链推理的“隧道视野”瓶颈，显著提升复杂任务准确率。",
+  "oneSentenceSummary": "清华团队提出 ParaThinker 并行思考范式，通过同时探索多条推理路径并综合，克服大语言模型单链推理的“隧道视野”瓶颈，显著提升复杂任务准确率。",
+  "summary": "文章深入介绍了清华大学 AIR 团队提出的 ParaThinker 原生并行思考范式，旨在解决大语言模型在复杂推理任务中，通过增加思维链深度（单链 test-time scaling）导致的性能瓶颈和“隧道视野”问题。该研究指出，当前顺序推理策略容易使模型陷入次优路径。ParaThinker 通过训练 LLM 在一个统一的前向传播过程中并行生成并综合多条不同的推理路径，有效规避了这一问题，解锁了模型潜在的推理能力。其核心创新包括引入专用可控 Token 引导多样化路径、设计思维特定位置嵌入避免信息混淆、以及采用两阶段注意力掩码确保独立性与整合效率。与传统的多数投票或依赖任务分解的并行方法不同，ParaThinker 能智能地整合与提炼信息，更具通用性和普适性，能够处理复杂、开放式的任务而无需预设子任务结构。实验证明，该方法在数学推理基准上显著提升了模型准确率，且具有较低的延迟开销，为 LLM 的规模化发展提供了从“深度”到“广度”的新方向。",
+  "mainPoints": [
+    {
+      "point": "传统 LLM 单链推理存在“隧道视野”瓶颈，限制了性能提升。",
+      "explanation": "随着计算资源投入，单链思维链的性能提升微乎其微，甚至下降，因为模型一旦走错第一步，就难以纠正，容易陷入次优路径，即“隧道视野”问题。"
+    },
+    {
+      "point": "ParaThinker 提出原生并行思考范式，通过多路径探索和综合提升推理准确率。",
+      "explanation": "该框架通过专用 Token、思维特定嵌入和两阶段注意力掩码，使 LLM 能同时生成和融合多条推理路径，有效避免“隧道视野”，从而提升复杂任务的准确性。"
+    },
+    {
+      "point": "ParaThinker 相较于现有方法更具通用性，且实现高效。",
+      "explanation": "它能处理复杂、开放式任务，不依赖任务分解，并利用 KV 缓存重用显著降低延迟开销，实现了准确性和效率的平衡，超越了简单的多数投票机制。"
+    }
+  ],
+  "keyQuotes": [
+    "随着计算资源的持续投入，性能提升变得微乎其微，甚至陷入停滞。",
+    "这个单链 test time scaling 的天花板并非模型能力的固有极限，而是源于当前顺序推理策略的根本缺陷 ------ 一种被研究者称为「隧道视野」（Tunnel Vision）的现象。",
+    "ParaThinker 的核心思想是，与其让模型在一条路径上「死磕」，不如让它同时探索多条不同思路的推理路径，最后再综合提炼出最优答案。",
+    "ParaThinker 的优越性正在于此。它不是简单地对多个独立结果进行投票，而是学习如何智能地「整合」与「提炼」来自不同推理过程的信息。",
+    "ParaThinker 教会大模型像人类一样「头脑风暴」，并行探索多种思路，再整合成最优答案。它预示着未来 LLM 的规模化发展之路，将从单纯的「深度」扩展转向更有效的「广度」扩展。"
+  ],
+  "tags": [
+    "大语言模型",
+    "并行推理",
+    "模型优化",
+    "LLM扩展",
+    "推理范式"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2252,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758075423000,
+  "publishDateStr": "2025-09-17",
+  "publishDateTimeStr": "2025-09-17 02:17:03"
+}

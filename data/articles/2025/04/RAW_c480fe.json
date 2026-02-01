@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c480fe",
+  "title": "Anthropic Claude 教育版：赋能高等教育",
+  "url": "https://www.infoq.com/news/2025/04/claude-for-education/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-12 00:00:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has announced the launch of <a href=\"https://www.anthropic.com/news/introducing-claude-for-education\">Claude for Education</a>, a specialized version of its AI assistant, Claude, developed specifically for colleges and universities. The initiative aims to support students, faculty, and administrators with secure and responsible AI integration across academics and campus operations.</p>\n   <p>Claude for Education introduces a new Learning mode designed to promote critical thinking rather than provide direct answers. The feature encourages students to approach problems independently by engaging in Socratic dialogue and focusing on fundamental concepts. According to Anthropic, the goal is to reinforce deeper learning through guided reasoning and structured templates for tasks such as research papers or study guides.</p>\n   <p>Beyond Learning mode, the initiative also includes broader institutional offerings. Full-campus deployments are already underway at Northeastern University, London School of Economics and Political Science (LSE), and Champlain College, providing students and faculty with access to Claude across a variety of use cases—from thesis drafting and personalized essay feedback to automating administrative workflows and converting policies into FAQs.</p>\n   <p>Anthropic is also engaging in academic and industry partnerships to integrate Claude into existing educational infrastructure. It has joined <a href=\"https://internet2.edu/\">Internet2</a>, a nonprofit consortium that supports technology infrastructure for education and research and is collaborating with <a href=\"https://www.instructure.com/\">Instructure</a>, the company behind the Canvas learning management system.</p>\n   <p>In addition to institutional tools, two new student programs are being launched: the Claude Campus Ambassadors initiative, where students can partner with Anthropic to drive AI-focused efforts on their campuses, and a program that provides API credits for student-led projects using Claude.</p>\n   <p>Feedback from the community has already started to emerge. Zaid Abuhouran, a U.S. diplomat working in international education and emerging tech, <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7313241818941325312?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7313241818941325312%2C7313244370185461763%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287313244370185461763%2Curn%3Ali%3AugcPost%3A7313241818941325312%29\">remarked</a>:</p>\n   <blockquote>\n    <p>I am glad to see that this mode is designed to encourage higher-level thinking and deeper understanding rather than just spitting out answers for students. I would love to see how this mode is used by educators to cultivate more meaningful learning outcomes using AI, and evidence on how it is creating more learning gains and fostering critical thinking among students as compared to traditional learning approaches.</p>\n   </blockquote>\n   <p>Some questions around access have also been raised. Oxana Y. &nbsp;<a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7313241818941325312?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7313241818941325312%2C7313244019587776512%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287313244019587776512%2Curn%3Ali%3AugcPost%3A7313241818941325312%29\">asked</a>:</p>\n   <blockquote>\n    <p>Would the AI tools availability be extended to the alumni population as well, or only for currently enrolled students?</p>\n   </blockquote>\n   <p>In response, Drew Bent, who works on Education &amp; AI at Anthropic, <a href=\"https://www.linkedin.com/feed/update/urn:li:ugcPost:7313241818941325312?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7313241818941325312%2C7313244019587776512%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7313241818941325312%2C7313254708947607552%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287313244019587776512%2Curn%3Ali%3AugcPost%3A7313241818941325312%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287313254708947607552%2Curn%3Ali%3AugcPost%3A7313241818941325312%29\">clarified</a>:</p>\n   <blockquote>\n    <p>At the moment just current students and faculty, but this is something we can look into. Agreed it'd be powerful for alumni!</p>\n   </blockquote>\n   <p>Claude for Education and Learning mode are now available for institutions interested in exploring the use of AI in a secure, pedagogically aligned environment. Those looking to get started can register their interest through <a href=\"https://www.anthropic.com/education\">Anthropic’s website</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Claude for Education: Anthropic’s AI Assistant Goes to University\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/claude-for-education/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1744474800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 发布教育版 Claude，旨在支持高校在教育领域的应用，促进批判性思维和校园运营。",
+  "oneSentenceSummary": "Anthropic 发布教育版 Claude，旨在支持高校在教育领域的应用，促进批判性思维和校园运营。",
+  "summary": "Anthropic 推出了 Claude 教育版，这是一个专为高校定制的版本。该计划旨在通过安全可靠的人工智能技术集成，为学生、教师和管理人员提供学术和校园运营支持。Claude 教育版引入了一种新的学习模式，通过苏格拉底式对话和关注基本概念，培养学生独立思考能力，而非直接提供答案。Anthropic 还与 Internet2 和 Instructure 等学术和行业机构合作，将 Claude 集成到现有的教育基础设施中。此外，还启动了 Claude 校园大使计划和应用程序编程接口 (API) 信用计划，以支持学生主导的人工智能项目，提高教学效率，改善学生学习体验。目前，Claude 教育版和学习模式已向有兴趣探索人工智能在教育领域应用的机构开放。",
+  "mainPoints": [
+    {
+      "point": "Claude 教育版：重在培养批判性思维。",
+      "explanation": "通过学习模式，鼓励学生独立思考问题，参与苏格拉底式对话，并关注基本概念，从而加深学习理解。"
+    },
+    {
+      "point": "Anthropic 积极与学术界和产业界合作，整合人工智能教育资源。",
+      "explanation": "Anthropic 与 Internet2 和 Instructure 等机构合作，将 Claude 集成到现有的教育基础设施中，扩大人工智能在教育领域的应用。"
+    },
+    {
+      "point": "Claude 教育版通过多种方式支持校园人工智能应用，助力教育创新。",
+      "explanation": "包括校园部署、学生大使计划和应用程序编程接口 (API) 信用计划，旨在支持学生、教师和管理人员在学术和校园运营中安全负责地使用人工智能。"
+    }
+  ],
+  "keyQuotes": [
+    "我很高兴看到这种模式旨在鼓励更高层次的思考和更深入的理解，而不仅仅是为学生提供答案。",
+    "Claude 教育版引入了一种新的学习模式，旨在促进批判性思维，而不是提供直接答案。",
+    "目前只有在校学生和教职员工可以使用，但我们可以考虑一下。同意这对校友来说也会很有用！"
+  ],
+  "tags": [
+    "人工智能教育",
+    "高等教育",
+    "大语言模型",
+    "Claude",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 438,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744416000000,
+  "publishDateStr": "2025-04-12",
+  "publishDateTimeStr": "2025-04-12 00:00:00"
+}

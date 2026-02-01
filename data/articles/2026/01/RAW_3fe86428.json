@@ -1,0 +1,57 @@
+{
+  "id": "RAW_3fe86428",
+  "title": "机器人终于能用明白洗碗机了｜UC 伯克利新研究",
+  "url": "https://www.qbitai.com/2026/01/370136.html",
+  "date": "2026-01-18 05:27:44",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"69\">Choice Policy团队 投稿</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"70\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">在家庭厨房自主使用洗碗机，在办公室边移动边擦拭白板——这些人类习以为常的场景，对人形机器人来说，却是需要调动全身关节协同运作才能完成的<strong>“高难度挑战”</strong>。</p>\n  <p data-track=\"3\">近日，UC Berkeley加州大学伯克利分校团队在arXiv平台发表了题为《Coordinated Humanoid Manipulation with Choice Policies》的研究论文，通过“模块化教学+智能选动作”的创新方案，成功破解了人形机器人全身协同的核心难题，为其走进真实人类环境铺平了道路。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_eaaae2dffb37dd44fa8216095b683afc.webp\" data-ic=\"false\" data-width=\"863\" data-height=\"295\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">人形机器人一直被寄予厚望，有望在家庭、办公等非结构化环境中帮助人类完成日常工作，但长期以来，两个关键难题让它始终无法突破“实验室边界”，难以真正落地应用：</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"6\"><strong>难题1. 全身协同难，“教学数据”获取贵且难</strong></p>\n  <p data-track=\"7\">像使用洗碗机、移动擦黑板这类“长时连续任务”，需要机器人同时协调头部（定位目标）、双手（抓握操作）、腿部（移动平衡），实现类似人类“眼到手到、脚步稳健”的状态。</p>\n  <p data-track=\"8\">但传统的“遥操作”模式，需要操作员同时控制机器人几十个甚至上百个关节，不仅操作难度极高，操作员极易疲劳，还<strong>很难收集到高质量的演示数据</strong>——没有靠谱的“老师示范”，机器人自然学不会复杂的协同动作。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"9\"><strong>难题2. 动作“灵活度”与“反应速度”不可兼得</strong></p>\n  <p data-track=\"10\">人类做同一个动作往往有多种可行方式（比如拿盘子，既可以五指托举，也可以拇指扣住边缘），这种“动作多样性”是机器人模仿人类的关键难点。</p>\n  <p data-track=\"11\">传统解决方案要么<strong>“太僵硬”</strong>：比如“行为克隆”技术只能让机器人学一种固定动作，遇到稍微变化的场景就会失灵；</p>\n  <p data-track=\"12\">要么<strong>“太迟钝”</strong>：比如“扩散策略”虽然能想到多种动作，但需要反复计算，延迟极高，根本跟不上实时操作需求（比如插盘子时错过最佳对准时机）。</p>\n  <p data-track=\"14\">针对上述两大难题，伯克利团队没有走“复杂控制一刀切”的老路，而是提出了<strong>“模块化简化教学+多候选智能选动作”</strong>的组合方案，实现了“1+1&gt;2”的效果：</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"15\"><strong>1. 简化“教学”：模块化遥操作，普通人10分钟就能当“机器人老师”</strong></p>\n  <p data-track=\"16\">团队把机器人的全身控制拆分成4个“傻瓜式”模块，操作员只需用VR手柄就能轻松操控，无需专业技能：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063727_976f9a8b603f3d159754e0d17e305c0e.webp\">\n  </div>\n  <p data-track=\"17\"><strong>①手眼协调模块：</strong>头部会跟随手部动作转动，确保眼睛始终盯着操作区域；</p>\n  <p data-track=\"18\"><strong>②手部抓握模块：</strong>扣动扳机键就能实现“力量抓握”，拨动摇杆可微调拇指位置，精准控制力度；</p>\n  <p data-track=\"19\"><strong>③手臂跟踪模块：</strong>VR手柄的姿态会直接映射到机器人手臂，手柄动哪里，手臂就跟到哪里；</p>\n  <p data-track=\"20\"><strong>④全向移动模块：</strong>切换摇杆模式后，就能控制机器人前后、左右移动或转弯。</p>\n  <p data-track=\"21\">这种设计大幅降低了操作门槛，<strong>操作员10分钟就能上手</strong>，既能减少疲劳，又能快速收集大量高质量演示数据——相当于为机器人配备了高效的“专属家教”，让它不再盲目模仿。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"22\"><strong>2. 优化“决策”：Choice Policy算法，让机器人“秒选最优动作”</strong></p>\n  <p data-track=\"23\">团队摒弃了传统方案的弊端，设计了<strong>“多候选动作生成+实时打分筛选”</strong>的机制：机器人会一次性生成多个可行的动作方案（比如拿盘子的3种不同姿势），再通过训练好的模型给每个方案打分，瞬间选出最优解。</p>\n  <p data-track=\"24\">这个过程<strong>就像人类做决定时“脑子里快速过几个选项，挑最稳妥的来”</strong>，既保留了动作的多样性，又保证了反应速度，完美解决了“僵硬”与“迟钝”的核心矛盾。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_8867222f65bdb87a6fb588ef1bd8cf95.webp\">\n  </div>\n  <p data-track=\"26\">这项研究的成功，离不开算法创新与硬件性能的深度配合。而星动纪元全尺寸双足人形机器人星动STAR1的硬件优势，恰好为算法落地提供了“强力支撑”，让“模块化教学”和“多候选决策”真正发挥作用：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063727_7a8fca259a5c251ac2c441374a3a3c1d.webp\" data-ic=\"false\" data-width=\"828\" data-height=\"1182\" data-ic-uri=\"\">\n  </div>\n  <p class=\"pgc-h-forward-slash\" data-track=\"27\"><strong>1. 超高自由度+精准操控，适配手部与手臂模块需求</strong></p>\n  <p data-track=\"28\">星动STAR1搭载2只星动XHAND1手部，每只手有12个全主动驱动自由度，且无被动关节——这意味着手指能做出更精细、灵活的动作，完美匹配“手部抓握模块”的需求。</p>\n  <p data-track=\"29\">当操作员通过手柄触发“力量抓握”时，机器人手指能像人类一样精准调节力度，既不会夹碎盘子，也不会让橡皮滑落；同时，其仿生手臂7个自由度的高刚性设计，能快速响应“手臂跟踪”指令，避免因硬件卡顿导致操作失误，确保模块指令精准落地。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"30\"><strong>2. 全向移动+稳定平衡，支撑移动操作任务</strong></p>\n  <p data-track=\"31\">像移动擦黑板这类“边走边干”的任务，对机器人腿部性能要求极高。星动STAR1每只腿有6个自由度，支持全向移动<strong>（前后、左右、转弯）</strong>，刚好适配遥操作的“移动模块”；</p>\n  <p data-track=\"32\">更关键的是，它内置姿态传感器和低层级PD控制器，能实时调整腿部关节力度，就像人类走路时自然调整重心一样，让机器人在移动中保持稳定——这也是论文中“移动与操作深度融合”能实现的核心硬件基础。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"33\"><strong>3. 多传感器融合，赋能手眼协调模块</strong></p>\n  <p data-track=\"34\">手眼协调是长时任务成功的关键，而这需要精准的视觉反馈。</p>\n  <p data-track=\"35\">星动纪元全尺寸双足人形机器人头部搭载RGB+深度相机，能快速捕捉目标位置（比如洗碗机卡槽、白板污渍），并将视觉信息同步给手部操作模块，实现“眼睛看到哪里，手就对准哪里”。</p>\n  <p data-track=\"36\">论文数据显示，没有手眼协调时，洗碗机卡槽容易被遮挡，机器人“看不见就插不准”；而STAR1的高清视觉传感器配合头部2个自由度的灵活转动，能让卡槽始终保持可见，大幅提升操作成功率。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"37\"><strong>4. 高鲁棒性设计，保障实验顺利推进</strong></p>\n  <p data-track=\"38\">研究需要通过10次连续试验验证稳定性，而星动人形机器人星动STAR1的55个驱动自由度（头部2+腰部3+手臂7×2+腿部6×2+手部12×2）提供了充足的运动冗余，再加上抗干扰的硬件设计，能有效减少硬件故障、网络超时等问题，确保高质量演示数据的持续收集——这也是论文能公平对比三种算法、凸显Choice Policy优势的重要前提。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063729_d5c3289445c41935032b8a06209f4f9a.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1528\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"40\">团队在两个真实场景中开展了大量实验，结果直观证明了新方案的优势，其中手眼协调和Choice Policy算法成为“胜负手”：</p>\n  <p data-track=\"42\">这是考验“头-手协同”的关键任务，需要完成“滑动盘子→抓取→手递手→插入卡槽”四个步骤，任意一步失败即判定任务失败：</p>\n  <p data-track=\"43\"><strong>无手眼协调时：</strong>所有方法在“插入”阶段几乎全败，成功率仅10%-20%，核心原因是卡槽被遮挡，机器人“看不见插哪里”；</p>\n  <p data-track=\"44\"><strong>有手眼协调时：</strong>Choice Policy表现一枝独秀——抓取成功率100%、手递手成功率90%、插入成功率70%；而传统“行为克隆”插入成功率仅50%，“扩散策略”因延迟高，插入成功率也只有50%。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_3db87e172c9a20396c2b107a641e0c4b.webp\" data-ic=\"false\" data-width=\"828\" data-height=\"339\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_0fd9a66cf1c6fb6df80da727d43504de.webp\" data-ic=\"false\" data-width=\"828\" data-height=\"467\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"46\">这是更复杂的“走+干”协同任务，需要完成“头部找橡皮→抓取→走到白板前→擦拭”流程，对全身协同要求极高：</p>\n  <p data-track=\"47\"><strong>传统“行为克隆”：</strong>抓取、走路、擦拭成功率均仅20%，经常因走路失衡、定位不准导致任务中断；</p>\n  <p data-track=\"48\"><strong>Choice Policy：</strong>抓取、走路、擦拭成功率均达到40%，虽然整体仍有提升空间，但已是传统方法的2倍，充分展现了“移动与操作深度融合”的能力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_ee55cda6d33e603c3a20136ed59d5d1a.webp\" data-ic=\"false\" data-width=\"829\" data-height=\"172\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"50\"><strong>手眼协调是长时任务的核心：</strong>没有它，哪怕手部、腿部单独操作再精准，也会因“看不准”导致整体失败；</p>\n  <p data-track=\"51\"><strong>Choice Policy的“打分机制”是核心优势：</strong>消融实验显示，若随机选动作、平均动作或固定一个动作，插入成功率最高仅30%，而“打分选最优”能达到70%，证明智能选择的必要性；</p>\n  <p data-track=\"52\"><strong>硬件冗余不可少：</strong>星动纪元人形机器人星动STAR1的55个驱动自由度让机器人能灵活调整动作，适配不同候选方案，而低延迟特性则保障了“实时选动作”的优势。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_83d47ad1804642e5678badd83301b6cc.webp\" data-ic=\"false\" data-width=\"828\" data-height=\"295\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"54\">这项研究不仅是算法层面的突破，更给人形机器人产业化带来了三大核心落地价值，加速其走进日常生活：</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"55\"><strong>1. 降低“教学成本”，普通人也能教机器人干活</strong></p>\n  <p data-track=\"56\">模块化遥操作让非专业人员10分钟就能上手教机器人，无需依赖昂贵的专业工程师，大幅降低了高质量演示数据的收集成本。这意味着机器人的“学习素材”会越来越多，训练效率也会随之翻倍。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"57\"><strong>2. 破解落地痛点，适配真实非结构化环境</strong></p>\n  <p data-track=\"58\">Choice Policy解决了“动作僵硬”与“反应迟钝”的矛盾，再加上星动STAR1这类高自由度硬件的支撑，机器人能在家庭（装洗碗机、叠衣服）、办公（擦白板、整理文件）、仓储（搬运货物）等复杂环境中稳健工作，彻底摆脱对实验室“理想场景”的依赖。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"59\"><strong>3. 搭建“软硬协同”范式，为行业提供可复制模板</strong></p>\n  <p data-track=\"60\">研究证明了“模块化遥操作（数据收集）+ Choice Policy（算法学习）+ 高自由度硬件（执行）”的组合方案完全可行，为后续人形机器人研发提供了清晰的技术模板。</p>\n  <p data-track=\"61\">尤其是星动STAR1的硬件设计，验证了“多自由度+精准控制+稳定移动”是复杂任务落地的关键，给硬件厂商指明了优化方向。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"62\"><strong>4. 提升鲁棒性，应对真实环境的不确定性</strong></p>\n  <p data-track=\"63\">在“未见过的盘子颜色”“盘子位置偏移”等超出训练范围的场景中，Choice Policy的成功率仍高于传统方法，说明机器人能应对真实环境的变化——这正是从“实验室原型”走向“实用产品”的核心门槛。</p>\n  <p data-track=\"64\">未来，随着这套技术框架的进一步优化，<strong>人形机器人走进日常生活的场景或许很快就能实现</strong>：下班回家，机器人已经把餐具整齐装进洗碗机；走进办公室，白板上的残留字迹早已被机器人擦拭干净。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260118063728_f15f4967c7e198372839f509c41dc82f.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"810\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"65\"><strong>论文名称：</strong></p>\n  <p class=\"pgc-p\" data-track=\"66\">《Coordinated Humanoid Manipulation with Choice Policies》</p>\n  <p class=\"pgc-p\" data-track=\"68\"><strong>论文地址：</strong></p>\n  <p data-track=\"67\">https://arxiv.org/pdf/2512.25072</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "UC 伯克利团队通过“模块化教学+智能选动作”方案，使人形机器人实现全身协同，能够自主操作洗碗机等复杂任务，加速其在非结构化环境中的应用。",
+  "oneSentenceSummary": "UC 伯克利团队通过“模块化教学+智能选动作”方案，使人形机器人实现全身协同，能够自主操作洗碗机等复杂任务，加速其在非结构化环境中的应用。",
+  "summary": "UC 伯克利团队发布了名为《Coordinated Humanoid Manipulation with Choice Policies》的研究，提出一种创新方案，旨在解决人形机器人在非结构化环境中进行全身协同操作的难题。核心在于通过“模块化遥操作”简化教学，让非专业人士也能快速演示，并利用 “Choice Policy”算法实现多候选动作生成与实时优选。文章详细阐述了两种核心难题：一是全身协同难、教学数据昂贵且难以获取；二是动作“灵活度”与“反应速度”不可兼得。针对这些问题，该研究引入了手眼协调、手部抓握、手臂跟踪和全向移动等模块化控制方式，极大地降低了操作门槛，同时 Choice Policy 算法通过“多候选智能选动作”机制，平衡了决策多样性与实时性。论文通过在洗碗机操作和擦拭白板等实际场景中验证了方案的有效性，并强调了高自由度硬件在算法落地中的关键作用。该研究不仅是算法层面的突破，更对人形机器人产业化具有重要的落地价值，有望降低教学成本、破解落地痛点、搭建软硬协同范式并提升鲁棒性。",
+  "mainPoints": [
+    {
+      "point": "人形机器人面临全身协同与教学数据获取难题，以及动作灵活性与反应速度的矛盾。",
+      "explanation": "长时连续任务需要机器人全身协调，传统遥操作获取数据困难。机器人动作需多样性，但传统行为克隆僵硬，扩散策略迟钝，难以兼顾。"
+    },
+    {
+      "point": "伯克利团队提出模块化遥操作，显著降低教学门槛，提升数据收集效率。",
+      "explanation": "将机器人控制拆分为手眼协调、手部抓握、手臂跟踪和全向移动四个模块，使非专业人士 10 分钟即可上手，高效生成高质量演示数据。"
+    },
+    {
+      "point": "Choice Policy 算法通过多候选动作生成与实时优选，解决动作灵活与反应速度的矛盾。",
+      "explanation": "机器人一次性生成多个动作方案并实时打分筛选最优解，兼顾了动作多样性和即时决策，避免了传统方法的“僵硬”和“迟钝”问题。"
+    },
+    {
+      "point": "高自由度硬件是算法落地的关键支撑，保证了精细操控与稳定移动。",
+      "explanation": "星动 STAR1 等高自由度机器人提供了精细驱动、高刚性设计、全向移动和多传感器融合，确保了模块化教学指令的精准执行和复杂任务的稳定性。"
+    },
+    {
+      "point": "研究证实了“模块化遥操作 + Choice Policy + 高自由度硬件”的软硬协同范式。",
+      "explanation": "实验数据证明新方案在洗碗机操作和擦拭白板任务中表现优异，尤其是在手眼协调和智能选择方面，为人形机器人产业化提供了可复制的技术模板和落地价值。"
+    }
+  ],
+  "keyQuotes": [
+    "在家庭厨房自主使用洗碗机，在办公室边移动边擦拭白板——这些人类习以为常的场景，对人形机器人来说，却是需要调动全身关节协同运作才能完成的“高难度挑战”。",
+    "团队把机器人的全身控制拆分成 4 个“傻瓜式”模块，操作员只需用 VR 手柄就能轻松操控，无需专业技能。",
+    "这个过程就像人类做决定时“脑子里快速过几个选项，挑最稳妥的来”，既保留了动作的多样性，又保证了反应速度，完美解决了“僵硬”与“迟钝”的核心矛盾。",
+    "这项研究不仅是算法层面的突破，更给人形机器人产业化带来了三大核心落地价值，加速其走进日常生活：降低“教学成本”，破解落地痛点，搭建“软硬协同”范式。",
+    "未来，随着这套技术框架的进一步优化，人形机器人走进日常生活的场景或许很快就能实现。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 14,
+  "score": 86,
+  "wordCount": 3496,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768714064000,
+  "publishDateStr": "01-18",
+  "publishDateTimeStr": "2026-01-18 05:27:44"
+}

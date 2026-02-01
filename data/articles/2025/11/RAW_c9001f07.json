@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c9001f07",
+  "title": "Spring Boot 4.0.0 正式发布",
+  "url": "https://spring.io/blog/2025/11/20/spring-boot-4-0-0-available-now",
+  "date": "2025-11-20 00:00:00",
+  "author": "philwebb",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>On behalf of the team and everyone who has contributed, I'm extremely happy to announce that Spring Boot <code>4.0.0</code> has been released and is now available from Maven Central.</p>\n  <p>This release is the beginning of a new Spring Boot generation providing solid foundations for coming years. Building on top of <a href=\"https://spring.io/blog/2025/11/13/spring-framework-7-0-general-availability\">Spring Framework 7</a>, there are a number of exciting new features in this release, including:</p>\n  <ul>\n   <li>A complete <a href=\"https://spring.io/blog/2025/10/28/modularizing-spring-boot\">modularization of the Spring Boot codebase</a> providing smaller and more focused jars.</li>\n   <li>Portfolio-wide <a href=\"https://spring.io/blog/2025/11/12/null-safe-applications-with-spring-boot-4\">improvements for null safety</a> with JSpecify.</li>\n   <li>First class support for Java 25 (whilst retaining Java 17 compatibility).</li>\n   <li>Support for <a href=\"https://spring.io/blog/2025/09/16/api-versioning-in-spring\">API Versioning</a> and <a href=\"https://spring.io/blog/2025/09/23/http-service-client-enhancements\">HTTP Service Clients</a> for REST based applications.</li>\n  </ul>\n  <p>For a complete list of new feature, please see <a href=\"https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Release-Notes\">the release notes</a>.</p>\n  <p>Since this is a major release of Spring Boot, upgrading existing applications can be a little more involved that usual so you'll also want to check out the <a href=\"https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide\">dedicated migration guide</a>.</p>\n  <p>Thanks to all those who have contributed with issue reports and pull requests for this release. Especially those that have tried the milestones and release candidates. Your feedback has been invaluable!</p>\n  <h3 id=\"how-can-you-help\"><a href=\"#how-can-you-help\" aria-label=\"how can you help permalink\" class=\"anchor before\"></a>How can you help?</h3>\n  <p>If you're interested in helping out, check out the <a href=\"https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution\">\"ideal for contribution\" tag</a> in the issue repository. If you have general questions, please ask on <a href=\"https://stackoverflow.com\">stackoverflow.com</a> using the <a href=\"https://stackoverflow.com/tags/spring-boot\"><code>spring-boot</code> tag</a>.</p>\n  <p><a href=\"https://spring.io/projects/spring-boot/\">Project Page</a> | <a href=\"https://github.com/spring-projects/spring-boot\">GitHub</a> | <a href=\"https://github.com/spring-projects/spring-boot/issues\">Issues</a> | <a href=\"https://docs.spring.io/spring-boot/4.0/\">Documentation</a> | <a href=\"https://stackoverflow.com/questions/tagged/spring-boot\">Stack Overflow</a></p>\n </body>\n</html>",
+  "aiSummary": "Spring Boot 4.0.0 发布，引入模块化架构、JSpecify 空安全、Java 25 支持以及增强的 API 版本控制和 HTTP 客户端，构建于 Spring Framework 7 之上。",
+  "oneSentenceSummary": "Spring Boot 4.0.0 发布，引入模块化架构、JSpecify 空安全、Java 25 支持以及增强的 API 版本控制和 HTTP 客户端，构建于 Spring Framework 7 之上。",
+  "summary": "本文宣布 Spring Boot 4.0.0 的正式发布，标志着该框架进入新的发展阶段。此主要版本构建于 Spring Framework 7 之上，引入了多项重要功能。主要改进包括代码库的完全模块化架构，从而产生更小、更集中的 JAR 包，以及通过 JSpecify 实现的整个 Spring 生态系统的空安全增强。它还为 Java 25 带来全面支持，同时保持与 Java 17 的兼容性。此外，该版本还为 API 版本控制和 HTTP 服务客户端提供强大的支持，以支持现代 REST 应用程序开发。本文将用户引导至详细的发行说明，以获取完整的功能列表。同时，提供了专门的迁移指南，以帮助升级现有应用程序。最后，欢迎社区积极贡献，并提供全方位的支持资源。",
+  "mainPoints": [
+    {
+      "point": "Spring Boot 4.0.0 引入了重要的架构变更，包括完全模块化架构。",
+      "explanation": "代码库的模块化架构产生了更小、更集中的 JAR 包，改善了依赖管理和应用程序启动时间，与现代云原生架构原则保持一致。"
+    },
+    {
+      "point": "JSpecify 增强空安全，提高代码质量并减少运行时错误。",
+      "explanation": "在整个 Spring 产品组合中集成 JSpecify 有助于开发人员编写更健壮和可靠的应用程序，从而在编译时捕获潜在的空指针异常。"
+    },
+    {
+      "point": "对 Java 25 的全面支持确保了面向未来的能力，同时保留了 Java 17 的兼容性。",
+      "explanation": "这使开发人员可以利用最新的 Java 语言特性和性能改进，同时为现有应用程序提供平滑的升级路径。"
+    },
+    {
+      "point": "API 版本控制和 HTTP 服务客户端的新功能简化了 REST 应用程序开发。",
+      "explanation": "这些新增功能简化了 RESTful API 的创建和使用，解决了分布式系统通信和可维护性方面的常见挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "此版本是新一代 Spring Boot 的开始，为未来几年提供了坚实的基础。",
+    "Spring Boot 代码库的完全模块化架构，提供了更小、更集中的 JAR 包。",
+    "通过 JSpecify 实现的整个产品组合的空安全改进。",
+    "对 Java 25 的全面支持（同时保留 Java 17 的兼容性）。",
+    "对基于 REST 的应用程序的 API 版本控制和 HTTP 服务客户端的支持。"
+  ],
+  "tags": [
+    "Spring Boot",
+    "Java",
+    "微服务",
+    "软件架构",
+    "API 开发"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 93,
+  "wordCount": 228,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763596800000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 00:00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "RAW_0c3043",
+  "title": "百度文心大模型 4.5 系列正式开源 同步开放 API 服务",
+  "url": "https://www.qbitai.com/2025/06/303183.html",
+  "date": "2025-06-30 03:25:51",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"47\">鹭羽 整理自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"48\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"27\">百度文心大模型开源，如期而至。</p>\n  <p data-track=\"28\">就在今天，百度官宣文心大模型4.5系列正式开源，还同步提供API服务。</p>\n  <p data-track=\"29\">此番，百度一次性推出10款开源模型，涵盖从<strong>47B</strong>参数的混合专家<em>（MoE）</em>模型到轻量级<strong>0.3B</strong>稠密型模型，覆盖文本、多模态等多种任务需求。</p>\n  <p data-track=\"30\">此次开源不仅权重与代码完全开放，还同步提供<strong>API服务</strong>，开发者可通过飞桨星河社区、HuggingFace、百度智能云千帆平台直接下载使用。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b3983b4e-9425-4926-e31d-2b74e5062b00/public\" alt=\"百度文心大模型4.5系列正式开源 同步开放API服务\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b3983b4e-9425-4926-e31d-2b74e5062b00/public\">\n  </div>\n  <p data-track=\"32\">值得关注的是，文心大模型4.5开源系列遵照的是<strong>Apache 2.0协议</strong>。</p>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"49\">10款模型同步开源</h2>\n  <p data-track=\"34\">此次百度一次性推出10款文心大模型4.5系列开源模型，在独立自研模型数量占比、模型类型数量、参数丰富度、开源宽松度与可靠性等关键维度上，都拿出了诚意。<br>\n    文心大模型4.5开源系列，还针对MoE架构提出了一种创新性的<strong>多模态异构模型结构</strong>。</p>\n  <p data-track=\"35\">该结构适用于从大语言模型向多模态模型的持续预训练范式，在保持甚至提升文本任务性能的基础上，显著增强了多模态理解能力，其优越的性能主要得益于多模态混合专家模型预训练、高效训练推理框架和针对模态的后训练等关键技术点。</p>\n  <p data-track=\"52\">此外，文心大模型4.5开源系列均使用<strong>飞桨深度学习框架</strong>进行高效训练、推理和部署。</p>\n  <p data-track=\"36\">在大语言模型的预训练中，模型FLOPs利用率<em>（MFU）</em>达到<strong>47%</strong>。</p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f6ca6899-91ce-4c56-2cf7-c79c82bcb500/public\" alt=\"百度文心大模型4.5系列正式开源 同步开放API服务\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f6ca6899-91ce-4c56-2cf7-c79c82bcb500/public\"></p>\n   <h5 class=\"pgc-img-caption\">文心4.5预训练模型在主流基准测试中表现优异</h5>\n  </div>\n  <p data-track=\"38\">实验结果显示，其系列模型在多个文本和多模态基准测试中达到<strong>SOTA</strong>水平，尤其在指令遵循、世界知识记忆、视觉理解和多模态推理任务上效果突出。</p>\n  <p data-track=\"53\">在文本模型方面，文心大模型4.5开源系列在多个主流基准评测中超越<strong>DeepSeek-V3</strong>、<strong>Qwen3</strong>等模型。</p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c793c979-ef43-4480-5884-865ffcbcdb00/public\" alt=\"百度文心大模型4.5系列正式开源 同步开放API服务\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c793c979-ef43-4480-5884-865ffcbcdb00/public\"></p>\n   <h5 class=\"pgc-img-caption\">文心4.5-300B-A47B模型在主流基准测试中表现优异</h5>\n  </div>\n  <p data-track=\"40\">在多模态模型方面，文心大模型4.5开源系列基于强大的视觉感知能力和丰富的视觉常识，实现了思考与非思考统一，在视觉常识、多模态推理、视觉感知等主流的多模态大模型评测中优于闭源的<strong>OpenAI o1</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6c06de25-0081-41a3-9174-5c512a42aa00/public\" alt=\"百度文心大模型4.5系列正式开源 同步开放API服务\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6c06de25-0081-41a3-9174-5c512a42aa00/public\">\n  </div>\n  <p data-track=\"41\">此外，在轻量模型上，文心4.5-21B-A3B-Base文本模型效果与同量级的<strong>Qwen3</strong>相当，文心4.5-VL-28B-A3B多模态模型在同量级开源模型中达到SOTA，甚至能和更大参数模型<strong>Qwen2.5-VL-32B</strong>掰掰手腕。</p>\n  <div class=\"pgc-img\">\n   <p><img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b44db35a-b601-4412-2eac-9d83c6011300/public\" alt=\"百度文心大模型4.5系列正式开源 同步开放API服务\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b44db35a-b601-4412-2eac-9d83c6011300/public\"></p>\n   <h5 class=\"pgc-img-caption\">文心多模态后训练模型在多个多模态基准测试中达到SOTA水平</h5>\n  </div>\n  <h2 class=\"pgc-h-arrow-right\" data-track=\"43\">开发者福利：开箱即用的工具链</h2>\n  <p data-track=\"44\">据了解，文心大模型4.5开源系列权重按照<strong>Apache 2.0协议</strong>开源，支持开展学术研究和产业应用。</p>\n  <p data-track=\"45\">另外基于飞桨提供开源的产业级开发套件，由于其广泛兼容多种芯片，可以显著降低模型的后训练和部署门槛。</p>\n  <p data-track=\"54\">而作为国内最早投入AI研发的企业之一，百度在<strong>算力</strong>、<strong>框架</strong>、<strong>模型</strong>到<strong>应用</strong>的四层布局构建了AI全栈技术优势。</p>\n  <p data-track=\"46\">其中，<strong>飞桨</strong>作为中国首个自主研发、功能丰富、开源开放的产业级深度学习平台，基于多年飞桨开源技术与生态系统积累，本次文心大模型4.5开源系列同步升级发布文心大模型开发套件<strong>ERNIEKit</strong>和大模型高效部署套件<strong>FastDeploy</strong>，为文心大模型4.5系列及开发者提供开箱即用的工具和全流程支持。</p>\n  <p data-track=\"55\">此外值得一提的是，文心大模型4.5系列开源后，百度也实现了框架层与模型层的<strong>“双层开源”</strong>。</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "百度文心大模型 4.5 系列基于 Apache 2.0 协议正式开源，包含 10 款不同参数规模的模型，覆盖文本和多模态任务，并同步开放 API 服务。",
+  "oneSentenceSummary": "百度文心大模型 4.5 系列基于 Apache 2.0 协议正式开源，包含 10 款不同参数规模的模型，覆盖文本和多模态任务，并同步开放 API 服务。",
+  "summary": "百度宣布文心大模型 4.5 系列正式开源，一次性推出 10 款不同参数规模的模型，从 47B 参数的混合专家（MoE）模型到 0.3B 稠密型模型，覆盖文本和多模态任务。这些模型采用 Apache 2.0 协议开源，权重与代码完全开放，并提供 API 服务。文心大模型 4.5 系列在多个主流基准测试中表现优异，尤其在指令遵循、世界知识记忆、视觉理解和多模态推理任务上效果突出，性能超越 DeepSeek-V3、Qwen3 等竞品。百度还提供了开箱即用的工具链，包括 ERNIEKit 和 FastDeploy，以降低模型的后训练和部署门槛。特别值得注意的是，文心大模型 4.5 系列采用了创新的多模态异构模型结构，模型 FLOPs 利用率达到 47%，并实现了框架层与模型层的'双层开源'。",
+  "mainPoints": [
+    {
+      "point": "百度文心大模型 4.5 系列正式开源，包含 10 款不同参数规模的模型。",
+      "explanation": "此次开源覆盖从 47B 参数的 MoE 模型到 0.3B 稠密型模型，满足多种任务需求，权重与代码完全开放，采用 Apache 2.0 协议。"
+    },
+    {
+      "point": "文心大模型 4.5 系列在多个主流基准测试中表现优异。",
+      "explanation": "在文本和多模态任务上，尤其在指令遵循、世界知识记忆、视觉理解和多模态推理任务上效果突出，性能超越 DeepSeek-V3、Qwen3 等竞品。"
+    },
+    {
+      "point": "百度提供开箱即用的工具链，降低模型后训练和部署门槛。",
+      "explanation": "包括 ERNIEKit 和 FastDeploy，支持开发者快速上手和使用文心大模型 4.5 系列，模型 FLOPs 利用率达到 47%。"
+    },
+    {
+      "point": "文心大模型 4.5 系列采用创新的多模态异构模型结构。",
+      "explanation": "该结构适用于从大语言模型向多模态模型的持续预训练范式，在保持文本任务性能的基础上显著增强了多模态理解能力。"
+    },
+    {
+      "point": "百度实现了框架层与模型层的'双层开源'。",
+      "explanation": "基于飞桨深度学习框架，文心大模型 4.5 系列在训练、推理和部署上表现出色，构建了完整的 AI 技术栈。"
+    }
+  ],
+  "keyQuotes": [
+    "百度官宣文心大模型 4.5 系列正式开源，还同步提供 API 服务。",
+    "文心大模型 4.5 开源系列遵照的是 Apache 2.0 协议。",
+    "文心大模型 4.5 开源系列在多个主流基准评测中超越 DeepSeek-V3、Qwen3 等模型。",
+    "文心大模型 4.5 开源系列基于强大的视觉感知能力和丰富的视觉常识，实现了思考与非思考统一。",
+    "百度也实现了框架层与模型层的'双层开源'。",
+    "文心大模型 4.5 系列模型 FLOPs 利用率达到 47%。"
+  ],
+  "tags": [
+    "大语言模型",
+    "开源模型",
+    "百度",
+    "文心大模型",
+    "多模态"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1295,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751253951000,
+  "publishDateStr": "2025-06-30",
+  "publishDateTimeStr": "2025-06-30 03:25:51"
+}

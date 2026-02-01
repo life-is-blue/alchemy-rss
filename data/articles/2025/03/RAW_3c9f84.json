@@ -1,0 +1,54 @@
+{
+  "id": "RAW_3c9f84",
+  "title": "老显卡福音！美团技术团队开源首发 INT8 无损满血版 DeepSeek R1",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-03",
+  "date": "2025-03-03 02:26:05",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>DeepSeek R1 横空出世后，吸引了众多公司和个人用户尝试其满血版本部署。然而原生版本的模型权重为 FP8 数据格式，对 GPU 芯片类型有严格限制，仅能被英伟达新型 GPU 支持（如 Ada、Hopper 架构芯片），其他型号 GPU（如 A100）无法直接部署。</p>\n  <p>为了解决这一难题，美团搜推机器学习团队对 DeepSeek R1 模型进行了 INT8 精度量化尝试，发现使用 INT8 量化后模型精度基本无损。基于 INT8 量化，DeepSeek R1 模型解锁了芯片限制，可以部署到 A100 等其他型号 GPU；并且相比 BF16 实现了 50% 的吞吐提升，进一步降低了推理成本。量化代码已经合入到了开源 LLM 推理框架 SGLang，量化模型已经发布到了 Hugging Face 社区，方便用户使用。</p>\n  <p><strong>INT8: 友好的 “平替”</strong></p>\n  <p>根据 DeepSeek 最新发布的技术报告 [1]，V3/R1 突破性的训练成本控制主要依托 FP8 精度训练方案。FP8 是一种典型的模型量化技术，相较于业界常用的 BF16 精度，FP8 精度通过将数据位宽减半显著降低了单次计算开销，但也会带来一定的精度损失。在实践中，DeepSeek R1 采用了混合精度训练机制有效缓解了精度损失问题。</p>\n  <p>为了继续保持高吞吐性能，美团技术团队选择了和 FP8 精度等位宽的 INT8 精度。同时，INT8 精度被广泛硬件原生支持，基于 INT8 精度可以极大拓展 DeepSeek 模型的硬件部署范围。以硬件友好的 INT8 精度为中心，美团技术团队开始探索 FP8 “平替” 的落地方案。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/5c19407b-9001-44fc-acec-d54bdadedc8a/1740967680924.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p><strong>量化技术的探索</strong></p>\n  <p>具体来说，分块量化（Block-wise Quantization）是 DeepSeek V3/R1 降低量化损失的关键技术之一。分块量化通过对权重矩阵的细粒度切分，将量化操作的范围控制在 [128, 128] 的矩阵内，减少了分布分散的出现概率，从而很好地控制了每次量化过程中的损失。</p>\n  <p>美团技术团队延续了 DeepSeek 训练的量化策略，同样在 [128, 128] 的矩阵内进行分块量化操作，保证训练和推理的一致性。在量化目标的选型上，INT8 的优势在于其与 FP8 享有相同的位宽，且大部分硬件都对 INT8 的数据计算原生支持。在实践中，由于 DeepSeek 官方并没有提供半精度浮点型（BF16）的权重，因此首先需要将原生的 FP8 模型权重反量化成 BF16，再分块量化成 INT8 类型。另外在推理过程中，为了匹配权重的分块量化，激活值采用在线逐 token-group 的量化方式，即每个 token 的嵌入向量分为多个组，逐组进行量化。分块量化的激活值和权重的乘法过程如下左图所示。</p>\n  <p>除了上述的分块量化外，美团技术团队还探索了更高效的通道量化（Channel-wise Quantization），即权重的每列为一组进行量化。通道量化在执行完 INT8 的矩阵乘法后，只需进行一次反量化计算，计算开销更低。在具体实践中，同样地先将原生 FP8 的模型权重反量化成 BF16，之后逐通道量化成 INT8 类型。同时，对激活值采用在线逐 token 量化，最大程度地减少 activation 的量化损失。通道量化的激活值和权重的乘法过程如下右图所示。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/972d9043-808c-4ab0-a584-33adb39135a0/1740967793003.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>目前，两种 INT8 量化权重均已开源到 Hugging Face [2]。</p>\n  <p><strong>INT8 量化模型精度</strong></p>\n  <p>分别应用上述的两种量化方法，对开源的 DeepSeek R1 模型进行了 INT8 量化处理，并在 GSM8K 和 MMLU 两个数据集上对量化后的模型进行了精度评估。评估结果如下表所示，相比基线的 BF16 和 FP8 模型，两种 INT8 量化模型的精度基本无损。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/3793b60a-77a6-4dfb-a932-0958e8ccf622/1740968275135.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p>注：表中的精度结果是多次测试的均值。</p>\n  <p><strong>INT8 量化模型推理吞吐</strong></p>\n  <p>在知名开源推理框架 SGLang 上，对上述两种 INT8 量化方法进行了推理支持 [3]，并进行了推理吞吐评估。SGLang 是当前 SOTA 的开源 LLM 推理框架，在 DeepSeek 系列模型上有着最优的推理性能，被业界广泛使用。</p>\n  <p>在 A100 GPU 上对两种 INT8 模型和 BF16 模型进行推理吞吐评估。得益于更低的显存要求，INT8 量化模型仅需要 16 张 A100 GPU 即可推理，但是 BF16 模型需要 32 张 A100 GPU。为了比较的公平性，统一在 32 张 A100 GPU 上进行吞吐测试。结果如下表所示，分块量化的 INT8 推理相比 BF16 可以提升 33% 的吞吐；通道量化的 INT8 推理可以进一步达到 50% 的吞吐提升。</p>\n  <p><img src=\"https://image.jiqizhixin.com/uploads/editor/2f7cc62a-4b38-480c-8874-5ae449c17a1b/1740968310557.jpeg\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></p>\n  <p><strong>INT8 量化模型部署</strong></p>\n  <p>以双节点各 8 张 A100 GPU 为例，开发者需要在双部署节点安装最新版本的 SGLang，然后分别执行下面命令：</p>\n  <p># 分块量化 INT8 推理</p>\n  <p># 主节点</p>\n  <p>python3 -m sglang.launch_server \\</p>\n  <p>&nbsp; &nbsp; --model meituan/DeepSeek-R1-Block-INT8 --tp 16 --dist-init-addr \\</p>\n  <p>&nbsp; &nbsp; HEAD_IP:5000 --nnodes 2 --node-rank 0 --trust-remote --enable-torch-compile --torch-compile-max-bs 8</p>\n  <p># 副节点</p>\n  <p>python3 -m sglang.launch_server \\</p>\n  <p>&nbsp; &nbsp; --model meituan/DeepSeek-R1-Block-INT8 --tp 16 --dist-init-addr \\</p>\n  <p>&nbsp; &nbsp; HEAD_IP:5000 --nnodes 2 --node-rank 1 --trust-remote --enable-torch-compile --torch-compile-max-bs 8</p>\n  <p>&nbsp;&nbsp;</p>\n  <p># 通道量化 INT8 推理</p>\n  <p># 主节点</p>\n  <p>python3 -m sglang.launch_server \\</p>\n  <p>&nbsp; &nbsp; --model meituan/DeepSeek-R1-Channel-INT8 --tp 16 --dist-init-addr \\</p>\n  <p>&nbsp; &nbsp; HEAD_IP:5000 --nnodes 2 --node-rank 0 --trust-remote --enable-torch-compile --torch-compile-max-bs 8 \\</p>\n  <p>&nbsp; --quantization w8a8_int8</p>\n  <p># 副节点</p>\n  <p>python3 -m sglang.launch_server \\</p>\n  <p>&nbsp; &nbsp; --model meituan/DeepSeek-R1-Channel-INT8 --tp 16 --dist-init-addr \\</p>\n  <p>&nbsp; &nbsp; HEAD_IP:5000 --nnodes 2 --node-rank 1 --trust-remote --enable-torch-compile --torch-compile-max-bs 8 \\</p>\n  <p>&nbsp; --quantization w8a8_int8</p>\n  <p><strong>总结与展望</strong></p>\n  <p>综上，美团团队在 DeepSeek R1 上进行了 INT8 量化技术的探索，并基于 SGLang 框架进行了推理能力的支持，在保证量化后模型精度的前提下，让 DeepSeek R1 可以在如 A100 等老型号 GPU 上进行部署，并且提升了推理吞吐。他们希望开源的代码和权重可以让更多用户和业务方受益，也欢迎大家积极交流相关技术，共同建设、回馈开源社区。</p>\n  <p>参考文献</p>\n  <p>[1] 技术报告：Liu A, Feng B, Xue B, et al. Deepseek-v3 technical report [J]. arXiv preprint arXiv:2412.19437, 2024.</p>\n  <p>[2] Hugging Face：https://huggingface.co/meituan/DeepSeek-R1-Block-INT8，https://huggingface.co/meituan/DeepSeek-R1-Channel-INT8</p>\n  <p>[3] 推理支持：Block-wise INT8 DeepSeek R1 支持（https://github.com/sgl-project/sglang/pull/3730）、Channel-wise INT8 DeepSeek R1 支持（https://github.com/sgl-project/sglang/pull/3888）</p>\n  <p>[4] 其他 LLM 测试：https://qwenlm.github.io/blog/qwq-max-preview/</p>\n </body>\n</html>",
+  "aiSummary": "美团技术团队开源 INT8 量化版 DeepSeek R1 模型，使其能在 A100 等老旧 GPU 上高效运行，降低推理成本。",
+  "oneSentenceSummary": "美团技术团队开源 INT8 量化版 DeepSeek R1 模型，使其能在 A100 等老旧 GPU 上高效运行，降低推理成本。",
+  "summary": "美团搜推机器学习团队针对 DeepSeek R1 模型对 GPU 芯片类型的限制问题，进行了 INT8 精度量化尝试。通过分块量化和通道量化两种方法，在保证模型精度基本无损的前提下，成功将 DeepSeek R1 模型部署到 A100 等老型号 GPU 上，降低了推理成本，使得更多用户可以使用 DeepSeek R1 模型。实验结果表明，INT8 量化不仅解锁了芯片限制，还相比 BF16 实现了高达 50% 的吞吐提升。该团队已将量化代码合入 SGLang 这一关键的开源 LLM 推理框架，并将量化模型发布到 Hugging Face 社区。",
+  "mainPoints": [
+    {
+      "point": "INT8 量化扩展了 DeepSeek R1 模型的硬件兼容性",
+      "explanation": "原 FP8 模型权重仅支持英伟达新型 GPU，而 INT8 量化后的模型可以在 A100 等老型号 GPU 上部署，扩大了适用范围。"
+    },
+    {
+      "point": "INT8 量化在保证精度无损的前提下，显著提升了推理吞吐",
+      "explanation": "分块量化的 INT8 推理相比 BF16 可以提升 33% 的吞吐，通道量化的 INT8 推理可以进一步达到 50% 的吞吐提升。"
+    },
+    {
+      "point": "分块量化和通道量化是两种有效的 INT8 量化方法",
+      "explanation": "分块量化通过细粒度切分权重矩阵来减少量化损失，通道量化通过逐通道量化权重来降低计算开销。"
+    }
+  ],
+  "keyQuotes": [
+    "为了继续保持高吞吐性能，美团技术团队选择了和 FP8 精度等位宽的 INT8 精度。",
+    "分块量化通过对权重矩阵的细粒度切分，将量化操作的范围控制在 [128， 128] 的矩阵内，减少了分布分散的出现概率，从而很好地控制了每次量化过程中的损失。",
+    "通道量化的 INT8 推理可以进一步达到 50% 的吞吐提升。",
+    "综上，美团团队在 DeepSeek R1 上进行了 INT8 量化技术的探索，并基于 SGLang 框架进行了推理能力的支持，在保证量化后模型精度的前提下，让 DeepSeek R1 可以在如 A100 等老型号 GPU 上进行部署，并且提升了推理吞吐。"
+  ],
+  "tags": [
+    "模型量化",
+    "INT8",
+    "量化技术",
+    "DeepSeek R1",
+    "GPU"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 92,
+  "wordCount": 1993,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740968765000,
+  "publishDateStr": "2025-03-03",
+  "publishDateTimeStr": "2025-03-03 02:26:05"
+}

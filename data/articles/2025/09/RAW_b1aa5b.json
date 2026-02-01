@@ -1,0 +1,58 @@
+{
+  "id": "RAW_b1aa5b",
+  "title": "软件工程的“纯”与“不纯”",
+  "url": "https://baoyu.io/translations/pure-and-impure-engineering",
+  "date": "2025-09-11 17:12:48",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.seangoedecke.com/pure-and-impure-engineering\">Pure and impure software engineering</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"csfww5eidw\">为什么独立游戏开发者总跟科技大厂的工程师吵得不可开交？为什么空降到大公司的高管常常水土不服，最终黯然离场？为什么 AI 辅助开发对一些工程师来说是神器，对另一些人却毫无用处？</p>\n   <p data-id=\"31xf7ebov4\">我认为，这背后的原因是，不同工程师做的工作类型截然不同。这两类工程师常常以为对方只是水平不行，但实际上，他们根本就是在两个不同的领域里工作。</p>\n   <h3 data-id=\"kp90k95633\" id=\"kp90k95633\" data-toc-id=\"kp90k95633\">纯粹工程与不纯粹工程</h3>\n   <p data-id=\"xkc9axf0ai\">编程工作可以分为两种截然不同的类型。第一种是 <strong>纯粹工程 (pure engineering)</strong>，它的目标是尽可能完美地解决一个技术问题。开源项目常常属于这一类：某个工程师想写出最棒的 HTTP 请求库，或是打造他心目中理想的游戏引擎。第二种是 <strong>不纯粹工程 (impure engineering)</strong>，它的目标是尽可能高效地解决一个现实世界的问题。科技公司的付费工作大多如此：工程师们被要求在截止日期前，尽其所能地交付某个项目或功能。</p>\n   <p data-id=\"65xvxs4hgm\">在纯粹的软件工程中，你所做的事情更接近艺术或研究。说它像艺术，是因为工程师被一种审美意识所驱动（比如，什么样的库或游戏引擎才算得上好）。说它像研究，是因为它是开放式的：工程师一旦找到了一个解决方案，他可以永远地测试和修改下去，不断尝试（也通常会不断放弃）新的方法。</p>\n   <p data-id=\"hc5khlhfee\">不纯粹的软件工程则更像是水管工或建筑工。工程师的审美必须服从于他人的需求（通常是雇主的需求）。他们是在为别人的问题构建解决方案。既然是别人的问题，就必须按时完成，而这就意味着妥协。</p>\n   <p data-id=\"j0enek776t\">如果你读过我写的文章，就会知道我大部分时间都在做什么样的工作：不纯粹的那种。我是一个务实到无可救药的人。但我对纯粹的工作怀有深深的敬意。我的背景是学术哲学，这个领域（以及数学）和纯粹工程其实非常相似。</p>\n   <h3 data-id=\"esw9nbmd6g\" id=\"esw9nbmd6g\" data-toc-id=\"esw9nbmd6g\">在2020年代，纯粹工程已不再那么重要</h3>\n   <p data-id=\"2247bur6ot\">纯粹与不纯粹的界限之所以变得模糊，是因为<strong>过去科技大厂里有更多纯粹工程的用武之地</strong>。在 2010 年代，<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.seangoedecke.com/good-times-are-over\">那是个不同的时代</a>。公司几乎完全靠炒作驱动，他们招聘的工程师数量远超实际需求。资助纯粹的工程项目恰好解决了这两个问题：它能产出亮眼的开源成果，让公司在招聘工程师时显得很有吸引力；同时，它也为这些工程师提供了一个看似有用的、可以无限投入的“工作坑”。</p>\n   <p data-id=\"1clkil2hvj\">甚至，连不纯粹的工程也被纯粹工程的思维“殖民”了。公司们投入成千上万的工程师工时，从单体架构迁移到微服务，从 HTTP 服务调用迁移到事件溯源架构，又从事件溯源架构迁移到完全的命令查询责任分离 (CQRS) 等等。许多技术高超的工程师在驾驭这些高难度的技术项目中找到了自己的位置。</p>\n   <p data-id=\"etgqqu5efk\">但就像我说的，那样的好日子已经一去不复返了。现在的科技公司必须赚钱。招聘速度急剧放缓，公司都在勒紧裤腰带。许多纯粹派工程师在这场转型中举步维艰。在他们看来，工作突然之间变得充满了“办公室政治”。但真正发生的是，他们以前的角色——实际上是一个变相的开发者营销岗位——在当前的市场环境下已经没人买单了。</p>\n   <h3 data-id=\"qj3dnbbg8f\" id=\"qj3dnbbg8f\" data-toc-id=\"qj3dnbbg8f\">科技公司需要什么</h3>\n   <p data-id=\"seh9thoayl\">科技公司两种工作都需要，但需求量并不对等。他们依靠纯粹工程来构建那些解决特定技术问题的组件。出于一些稍后会明晰的原因，科技公司更喜欢从开源社区获取这些组件（比如 Kafka、Redis，甚至编程语言本身）。但大公司也总会自己内部开发一些东西，因为他们的需求太特殊了。例如，GitHub 就有自己高性能的 HTML 解析代码（而不是用像 Nokogiri 这样的现成库），因为它到处都需要渲染 Markdown。</p>\n   <p data-id=\"139sei6yiv\">我想我无需解释为什么科技公司需要不纯粹的工程。一家科技公司做的几乎所有事情，都基于一个前提：尽快上线某个新功能或新能力。此外，公司里几乎所有的决策都是几十上百人妥协的结果。能够满足这些需求的工程师，正是那些乐于从事不纯粹工作的工程师。</p>\n   <p data-id=\"1y699p9js9\">当然，任何工程师都可以同时做纯粹和不纯粹的工作。但根据我的经验，主要对纯粹工作感兴趣的工程师，在做不纯粹工作时往往表现不佳：他们很难妥协，在截止日期面前会感到恐慌，也不太擅长把庞大而混乱的代码库装在脑子里，等等。<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.seangoedecke.com/how-to-ship\">正如我一直强调的</a>，在一家大型科技公司成功交付产品需要很多技巧。同样，主要对不纯粹工作感兴趣的工程师（比如我！）在面对纯粹工作时也会很挣扎：他们太急于用一个能跑的、取巧的方案了事，而且往往缺乏看清正确技术路径的专业知识。</p>\n   <h3 data-id=\"vufoolr13q\" id=\"vufoolr13q\" data-toc-id=\"vufoolr13q\">为什么不纯粹的工程很有价值</h3>\n   <p data-id=\"imrno198qm\">读到这里，可能有人会觉得，这不就是有能力和没能力的工程师的区别吗？既然纯粹的工作更基础、技术上更难，那纯粹与不纯粹的区别，不就是聪明到能构建底层组件的工程师和做不到的工程师之间的区别吗？这不就像是设计芯片的电气工程师和用套件组装电脑的业余爱好者之间的区别吗？</p>\n   <p data-id=\"8lo145edo3\">不，并非如此。这种观点有点像说，工程师就是不够聪明所以才没去做物理学家，或者物理学家不够聪明所以才没去搞纯数学。它们是不同的领域，需要不同的技能。</p>\n   <h3 data-id=\"px48eawsgk\" id=\"px48eawsgk\" data-toc-id=\"px48eawsgk\">纯粹派与不纯粹派工程师的冲突</h3>\n   <p data-id=\"qpw7mr2lkl\">这里我要引用一桩四年前的旧闻。2021 年 6 月，Casey Muratori <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/microsoft/terminal/issues/10362\">因为一个性能问题</a>和 Windows Terminal 的开发团队<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/item?id=28743687\">吵了起来</a>。我认为很明显，在技术问题上 Casey 是对的——作为一名优秀的游戏引擎程序员，他非常理解这个问题的性能特点，足以指出 Windows Terminal 的实现效率低下。</p>\n   <p data-id=\"6xwjiywuwm\">值得称赞的是，Windows Terminal 团队在冷静下来之后，还是去实现了这个功能。这个功能在 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/microsoft/terminal/issues/10461#issuecomment-1029306849\">2022 年 2 月</a>的设置中可用了。在我看来，对于一个有自己本职工作、并且需要真正动手去实现这个功能（GitHub 的评论里有一些关于支持多字形码点的有趣细节）的团队来说，这个时间线其实并不过分。</p>\n   <p data-id=\"aub29ewqsw\">这是否意味着 Casey 比整个 Windows Terminal 团队都更优秀呢？我不这么认为。这只说明，如果你是一位在特定领域有专长的纯粹派工程师，你几乎总能胜过那些在科技公司里打造产品的不纯粹派工程师。</p>\n   <p data-id=\"aa7c120rxo\">我认为许多纯粹派工程师低估了做好不纯粹工程的难度。当你做纯粹工程时，你的对手只有问题本身。相比之下，不纯粹工程就像一场大混战：你要对抗公司几十年来积累的技术决策、关于产品应该如何运作的政治纷争、同事或整个公司的共识，以及通常情况下，由那些能提供巨大商业价值但却给每个新功能开发都增加阻力的<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.seangoedecke.com/wicked-features\">棘手特性 (wicked features)</a> 所带来的<em>多得多的偶发复杂性 (incidental complexity)</em>。不纯粹的工程薪水如此之高，是有原因的。</p>\n   <p data-id=\"werhrya624\">再举一个案例，George Hotz 是另一位非常出色的纯粹派工程师，他曾高调加入 Twitter 试图“修复搜索”，但最终<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/item?id=34074344\">失败了</a>。事实证明，在大型科技公司做不纯粹的工程真的非常难！现在，他正在开发 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://github.com/tinygrad/tinygrad\">tinygrad</a>，这是一个纯粹工程项目的完美范例：一个极简、高性能的深度学习框架。</p>\n   <p data-id=\"raidr805lt\">我觉得不提 Jonathan Blow（另一位游戏开发者，他开发自己的编程语言 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/item?id=37357408\">Jai</a> 已经超过十年了），这个部分就不完整。有<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/Jonathan_Blow/status/1936123277384311186\">太</a><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/Jonathan_Blow/status/1931402615977361550\">多</a>例子表明，Jonathan 认为软件性能低下是因为工程师不知道怎么做好自己的工作，应该被开除。和 Casey Muratori 一样，他能看到那些愚蠢的错误。</p>\n   <h3 data-id=\"5bhbrd92bj\" id=\"5bhbrd92bj\" data-toc-id=\"5bhbrd92bj\">不纯粹的工程有时值得牺牲性能</h3>\n   <p data-id=\"ez3fhja70d\">我确信，当你使用运行缓慢的软件，并且知道自己本可以把它做得更快时，那种感觉一定很沮丧。我自己也经历过。但科技公司（大部分时候）是理性的经济参与者，他们做事（大部分时候）是出于盈利的考量。他们之所以不只招聘顶尖的性能工程师，是因为这些工程师<em>并不能为公司创造最大的商业价值</em>。在其他条件相同的情况下，科技公司当然希望软件运行得更快。但他们愿意用性能来换取许多其他东西。</p>\n   <p data-id=\"t4s3xwzmmy\">作为一名用户，我同意科技公司的做法！我几乎所有的工程工作都用 Visual Studio Code 来完成。我以前用的是 Neovim 和 Alacritty，那套组合明显更流畅。但我换掉了它们，因为 VS Code 对我常用的一些功能（比如 GitHub Codespaces）支持得更好。事实证明，我也愿意为了得到我珍视的其他东西而牺牲性能。</p>\n   <p data-id=\"gzryvm7sdz\">我想在这里说清楚，<strong>我知道有些性能问题并非<em>技术上</em>的权衡。</strong> 如果有合适的工程师，你几乎可以在同样的开发时间内，让所有大厂软件都变得快得多。但我只是不认为，能做这些性能优化的工程师，能够像大厂已经雇佣的那些工程师一样，在公司里发挥出同样全面的作用。就像<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.bitsaboutmoney.com/archive/optimal-amount-of-fraud/\">欺诈</a>一样，性能失误的最佳比率并非为零。</p>\n   <p data-id=\"g00tzn695u\">我不是说开发 tinygrad 或游戏引擎比在大公司里做“水管工”更容易。我想说的是，它们都非常难，而从事纯粹工作的工程师常常低估了做好不纯粹工作的难度。</p>\n   <h3 data-id=\"yj3fb5xoym\" id=\"yj3fb5xoym\" data-toc-id=\"yj3fb5xoym\">AI 对不纯粹工程的帮助最大</h3>\n   <p data-id=\"7xk316purq\">纯粹与不纯粹工程的区别，也导致了人们对大语言模型 (LLM) 在软件开发中角色的看法大相径庭。纯粹派工程师——比如上一节提到的那些游戏开发者——通常对此<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/Jonathan_Blow/status/1931131006993809803\">不屑一顾</a>，他们认为大语言模型生成的都是垃圾代码，对真正的工作毫无用处。另一方面，大语言模型是我自己开发流程中的重要组成部分（大概能提升 30% 的速度，堪比类型系统或调试器）。这到底是怎么回事？</p>\n   <p data-id=\"4en63qxc8k\">想一想纯粹工程是什么样的。你在处理一个你非常了解的问题（因为你已经研究它很久了），而这个问题在整个开发者社区中却并不为人所熟知（否则它就不值得你去研究了）。你总是在自己技术专长的极限边缘工作。而且，你有无限的时间来做出正确的决定。可以理解，大语言模型在这样的场景下帮不上什么忙。对于你做的每一个决定，你都比大语言模型聪明得多。</p>\n   <p data-id=\"oa6hufmbmz\">不纯粹的工程则不同。你通常在处理一个你只有粗浅理解的问题（因为公司需要它来交付某个项目）。这个问题通常并不新颖，只是对你来说是新的。你很少有机会能去处理一个你拥有透彻技术理解的问题，而且你通常都在紧迫的截止日期下工作。因此，对于你做的某些决定，大语言模型可能和你一样聪明，甚至比你更聪明，向它请教或让它审查代码会给你带来很大价值。</p>\n   <p data-id=\"dzubhxm7he\">考虑到这一点，我能理解为什么纯粹派工程师对 AI 的热潮感到困惑。这一定感觉很奇怪：每次他们尝试使用大语言模型，都发现它们毫无帮助。但我认为这反映了一种视野上的局限性。</p>\n   <h3 data-id=\"cju05v7n31\" id=\"cju05v7n31\" data-toc-id=\"cju05v7n31\">最后的思考</h3>\n   <p data-id=\"ws4vc6ppra\">我认为，人们普遍（且正确地）认为纯粹工程是一项困难而有价值的工作。我们作为工程师所做的一切几乎都依赖于它：从我们使用的编程语言和库，到我们用来构建系统的开源服务和数据库。</p>\n   <p data-id=\"voq645d5nb\">然而，我也想为不纯粹的工程辩护，它同样是困难而有价值的。大型科技公司早已深知这一点，并以此为基础进行招聘，因此，培养自己不纯粹的工程技能已经是一条非常有利可图的道路。但当工程师们谈论工程时，他们有时会假装纯粹工程是唯一的工程。</p>\n   <hr>\n   <p data-id=\"dpdam5nmmk\">如果你喜欢这篇文章，可以考虑<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://buttondown.com/seangoedecke\">订阅</a>我的邮件更新，或<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://news.ycombinator.com/submitlink?u=https://www.seangoedecke.com/pure-and-impure-engineering/&amp;t=Pure%20and%20impure%20software%20engineering\">在 Hacker News 上分享</a>。</p>\n   <hr>\n   <p data-id=\"55cpv9671m\">来源：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.seangoedecke.com/pure-and-impure-engineering/\">https://www.seangoedecke.com/pure-and-impure-engineering/</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章通过区分“纯粹工程”与“不纯粹工程”，深入剖析了软件开发中不同工作类型的本质差异、价值以及对 AI 辅助开发的看法分歧。",
+  "oneSentenceSummary": "文章通过区分“纯粹工程”与“不纯粹工程”，深入剖析了软件开发中不同工作类型的本质差异、价值以及对 AI 辅助开发的看法分歧。",
+  "summary": "本文提出将软件工程工作划分为“纯粹工程”和“不纯粹工程”两大类型。纯粹工程旨在完美解决技术问题，如开源项目或游戏引擎开发，追求技术审美和无限探索；不纯粹工程则专注于高效解决现实世界问题，如科技公司产品开发，强调实用性、妥协和按时交付。文章指出，在 2020 年代，科技大厂对纯粹工程的需求减少，更侧重不纯粹工程的商业价值。作者通过案例分析（如 Casey Muratori 和 George Hotz）阐述了两种工程师在技能和关注点上的差异，强调不纯粹工程的难度和价值常被低估。最后，文章解释了为何 AI 辅助开发对不纯粹工程师帮助更大，而纯粹工程师则不以为然，呼吁行业认识并尊重两种工程类型的独特价值。",
+  "mainPoints": [
+    {
+      "point": "软件工程可分为追求技术完美的“纯粹工程”和追求高效解决问题的“不纯粹工程”",
+      "explanation": "纯粹工程注重技术深度和审美，常体现于开源和研究；不纯粹工程关注商业价值和交付效率，常见于商业公司产品开发，两者目标和驱动力截然不同。"
+    },
+    {
+      "point": "科技大厂对纯粹工程的需求减少，不纯粹工程的价值日益凸显",
+      "explanation": "在当前市场环境下，科技公司更注重盈利和快速交付，导致内部纯粹工程项目减少，不纯粹工程因其商业价值而成为主流，但其难度常被低估。"
+    },
+    {
+      "point": "纯粹与不纯粹工程需要不同技能，导致工程师间常有误解和冲突",
+      "explanation": "纯粹工程师擅长解决技术难题，但不善于妥协和处理复杂的人际与历史遗留问题；不纯粹工程师善于在限制下交付，但可能缺乏底层技术洞察力。"
+    },
+    {
+      "point": "AI 辅助开发对不纯粹工程师的帮助更大，而纯粹工程师则不屑一顾",
+      "explanation": "不纯粹工程师常处理不熟悉但非新颖的问题，且时间紧迫，AI 能提供有效辅助；纯粹工程师在技术前沿探索，对 AI 生成代码的质量和原创性要求更高，故效用有限。"
+    }
+  ],
+  "keyQuotes": [
+    "编程工作可以分为两种截然不同的类型。第一种是纯粹工程 (pure engineering) ，它的目标是尽可能完美地解决一个技术问题。第二种是不纯粹工程 (impure engineering)，它的目标是尽可能高效地解决一个现实世界的问题。",
+    "许多技术高超的工程师在驾驭这些高难度的技术项目中找到了自己的位置。但就像我说的，那样的好日子已经一去不复返了。",
+    "当你做纯粹工程时，你的对手只有问题本身。相比之下，不纯粹工程就像一场大混战：你要对抗公司几十年来积累的技术决策、关于产品应该如何运作的政治纷争、同事或整个公司的共识。",
+    "我认为，人们普遍（且正确地）认为纯粹工程是一项困难而有价值的工作。然而，我也想为不纯粹的工程辩护，它同样是困难而有价值的。"
+  ],
+  "tags": [
+    "软件工程",
+    "工程哲学",
+    "职业发展",
+    "AI辅助开发",
+    "团队协作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 17,
+  "score": 91,
+  "wordCount": 4084,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757610768000,
+  "publishDateStr": "2025-09-11",
+  "publishDateTimeStr": "2025-09-11 17:12:48"
+}

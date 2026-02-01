@@ -1,0 +1,54 @@
+{
+  "id": "RAW_bcc5ad",
+  "title": "Google DeepMind 发布通用人工智能安全保障方法",
+  "url": "https://www.infoq.com/news/2025/04/google-deepmind-agi/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-29 10:16:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://deepmind.google/discover/blog/taking-a-responsible-path-to-agi/\">Google DeepMind</a> has released a <a href=\"https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/evaluating-potential-cybersecurity-threats-of-advanced-ai/An_Approach_to_Technical_AGI_Safety_Apr_2025.pdf\">new paper</a> outlining its approach to safety and security in the development of artificial general intelligence (AGI). <a href=\"https://en.wikipedia.org/wiki/Artificial_general_intelligence\">AGI</a> refers to AI systems that are as capable as humans at most cognitive tasks. The company anticipates that AGI, especially when integrated with agentic capabilities, could soon enable autonomous reasoning, planning, and execution of tasks.</p>\n   <p>The paper describes a systematic approach to managing four key risk areas: misuse, misalignment, accidents, and structural risks. The company emphasizes a focus on mitigating misuse, where AI systems could be deliberately used for harmful purposes, and misalignment, where AI systems might pursue goals not intended by humans.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/google-deepmind-agi/news/2025/04/google-deepmind-agi/en/resources/1agi-1745846722921.png\" style=\"width: 637px; height: 475px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/google-deepmind-agi/en/resources/1agi-1745846722921.png\" rel=\"share\"></p>\n   <p>DeepMind is working on various strategies to prevent misuse, such as restricting access to dangerous capabilities, implementing stronger security measures to protect model weights, and developing a cybersecurity evaluation framework. The company is also researching threat modeling to identify critical capability thresholds that require enhanced security.</p>\n   <p>To address misalignment, DeepMind is exploring methods to ensure AI systems accurately follow human instructions without taking unintended shortcuts. Techniques include amplified oversight, where AI systems help evaluate the quality of their own outputs, and robust training practices to prepare AI systems for a wide range of real-world scenarios. Monitoring mechanisms are being developed to detect and flag unsafe actions taken by AI systems.</p>\n   <p>Research into interpretability and transparency is also underway to make AI decision-making processes more understandable. For example, the company is working on methods like <a href=\"https://arxiv.org/abs/2501.13011\">Myopic Optimization with Nonmyopic Approval</a> (MONA) to maintain transparency even as AI systems develop long-term planning abilities.</p>\n   <p>The AGI Safety Council at DeepMind, led by co-founder Shane Legg, is tasked with analyzing risks and recommending safety practices. The council collaborates with internal teams and external organizations, including nonprofits such as Apollo and Redwood Research, to incorporate broader perspectives on safety.</p>\n   <p>DeepMind is also engaging with governments, civil society groups, and industry organizations to promote collaboration on AI safety standards. Efforts include contributing to international policy discussions and participating in joint safety initiatives through groups like the <a href=\"https://www.frontiermodelforum.org/\">Frontier Model Forum</a>.</p>\n   <p>Senior director of AI safety &amp; alignment at Google DeepMind <a href=\"https://x.com/ancadianadragan/status/1908623803737137175\">Anca Dragan</a>, posted on X:</p>\n   <blockquote>\n    <p>The goal with this was primarily to have a systematic breakdown of what we need to do and common ground among the team. Ofc an AGI safety approach is near-impossible to write, so there's plenty I'd still change + our understanding of this keeps evolving and updating.</p>\n   </blockquote>\n   <p>Meanwhile, CTO at Aligned Outcomes <a href=\"https://x.com/tombielecki/status/1907842180779249730\">Tom Bielecki</a> commented:</p>\n   <blockquote>\n    <p>AI Safety has a narrative problem. You’ve got this incredible engine in a high speed arms race. Yet they’re positioning the “steering, suspension, and brakes” as a necessary evil, regulatory requirement, or risk management. It’s not OSHA, it's F1 engineering. Hell, they even turned Deepmind into a three letter acronym. Get some branding folks onboard to reframe this all as a performance enabling grand engineering frontier.</p>\n   </blockquote>\n   <p>Deepmind states that ongoing research, collaboration, and careful preparation will be necessary to ensure the responsible development of AGI.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google DeepMind Shares Approach to AGI Safety and Security\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/google-deepmind-agi/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1745921760000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google DeepMind 发布新论文，阐述了其通用人工智能 (AGI) 安全和保障的系统性方法。",
+  "oneSentenceSummary": "Google DeepMind 发布新论文，阐述了其通用人工智能 (AGI) 安全和保障的系统性方法。",
+  "summary": "Google DeepMind 发布了一篇新论文，详细阐述了其在开发通用人工智能 (AGI) 过程中的安全保障方法。该方法重点关注四个关键风险领域：滥用、对齐问题、意外事故和结构性风险。DeepMind 正在研究多种策略来预防滥用，包括限制对危险能力的访问、实施更严格的安全措施以保护模型权重，并开发网络安全评估框架。为了解决对齐问题，DeepMind 探索各种方法，以确保人工智能系统准确地遵循人类指令，同时避免采取意外的捷径，例如具有远见性批准的短视优化（MONA）方法。此外，AGI 安全委员会负责分析风险并推荐安全实践，与内部团队和外部组织合作，DeepMind 还在进行可解释性和透明性方面的研究，旨在使 AI 决策过程更加容易理解。DeepMind 还与政府、民间团体和行业组织合作，以促进人工智能安全标准的协作。",
+  "mainPoints": [
+    {
+      "point": "DeepMind 系统性管理 AGI 开发中的滥用、对齐问题、意外事故和结构性风险",
+      "explanation": "四大风险需要采取针对性措施进行管理和缓解。"
+    },
+    {
+      "point": "多方合作是保障 AGI 安全的关键",
+      "explanation": "DeepMind 积极与政府、企业、研究机构等合作，共同制定 AGI 安全标准，促进行业健康发展。"
+    },
+    {
+      "point": "可解释性和透明性是 AGI 安全的重要组成部分",
+      "explanation": "通过 MONA 等方法，提高 AI 决策过程的可解释性，有助于识别和预防潜在的安全风险。"
+    }
+  ],
+  "keyQuotes": [
+    "AGI 指的是在大多数认知任务上与人类一样有能力的人工智能系统。",
+    "该公司强调专注于减轻滥用（即人工智能系统可能被故意用于有害目的）和目标不一致（即人工智能系统可能追求人类不希望的目标）的情况。",
+    "持续的研究、合作和认真的准备对于确保 AGI 的负责任发展是必要的。",
+    "当然，AGI 安全方法几乎不可能写出来，所以我仍然有很多想改变的地方 + 我们对此的理解不断发展和更新。"
+  ],
+  "tags": [
+    "AGI 安全",
+    "AGI",
+    "人工智能",
+    "安全风险",
+    "风险管理"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 494,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1745921760000,
+  "publishDateStr": "2025-04-29",
+  "publishDateTimeStr": "2025-04-29 10:16:00"
+}

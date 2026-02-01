@@ -1,0 +1,59 @@
+{
+  "id": "RAW_89063576",
+  "title": "7 个没听过但很好用的 Mac 工具",
+  "url": "https://juejin.cn/post/7560533712578265114",
+  "date": "2025-10-13 11:20:57",
+  "author": "该用户已不存在",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>说起好用的MacOS工具，总离不开 Notion、Raycast，但好工具远不止于此。今天分享几个冷门的好用工具。</p>\n   <h3 data-id=\"heading-0\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fhighlyopinionated.co%2Fswish%2F\" target=\"_blank\" title=\"https://highlyopinionated.co/swish/\" ref=\"nofollow noopener noreferrer\">Swish</a></strong> <strong>：把触控板的潜力压榨到极致</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c0c57ae2345e4b92a41b5fbce31e4f8f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=b5i8rRHCIVtvEa%2BZ0rgQYHpuEmk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>MacBook的触控板非常方便，习惯之后，就可以完全摆脱鼠标。但macOS原生的窗口管理，说实话，有点对不起这块优秀的硬件。Swish就是那个补全最后一块拼图的应用。</p>\n   <p>它没有复杂的界面，安装即用，通过各种直观的手势来管理窗口。双指在窗口标题栏上向下滑，最小化；向上滑，最大化；向左/右轻扫，窗口就能精准地占据屏幕的左/右半边。最让我欣赏的是双指捏合关闭窗口，以及双指张开全屏，这些动作的流畅度和直觉性，一旦习惯就再也回不去。</p>\n   <p>它把触控板从一个单纯的指向设备，升格成了一种与窗口进行物理交互的语言。对我而言，这早已不是一个工具，而是一种肌肉记忆。</p>\n   <h3 data-id=\"heading-1\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.servbay.com\" target=\"_blank\" title=\"https://www.servbay.com\" ref=\"nofollow noopener noreferrer\">ServBay</a></strong> <strong>：彻底告别开发环境的混乱</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/ae896d884f2e46f982fb5e9904816579~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=YtWJR%2FMS%2F8sncLNlCwuNbTluCE4%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这是我近年来遇到的最大惊喜，也是我必须放在C位的工具。作为一名Web开发者，本地开发环境的配置一直是个让人头疼的脏活。</p>\n   <p>早年间，我们用MAMP，后来是自己用Homebrew鼓捣PHP、Nginx、MySQL全家桶。那个过程充满了辛酸，版本冲突、依赖问题、系统被搞得一团乱麻是家常便饭。后来Docker火了，它解决了环境隔离的问题，但对于我这种只是需要一个稳定开发环境的场景来说，Docker显得有些笨重，资源占用也并不乐观，每次启动都得等上一会儿。</p>\n   <p>直到我遇到了ServBay。</p>\n   <p>它给我的第一感觉就是清爽。ServBay解决了<a href=\"https://link.juejin.cn?target=http%3A%2F%2Fwww.servbay.com\" target=\"_blank\" title=\"http://www.servbay.com\" ref=\"nofollow noopener noreferrer\">本地Web开发环境</a>的所有痛点。它本身是一个独立的App，所有的服务，比如不同版本的开发语言（Python、Go、Rust、Node.js等）数据库（MariaDB、PostgreSQL、Redis、memcached等）Web服务器，都打包在内，而且是相互隔离的。</p>\n   <ol>\n    <li>\n     <p><strong>不污染系统</strong>：我再也不用担心Homebrew的某个更新把我的PHP搞挂了。ServBay的一切都运行在它自己的沙盒里，和我的macOS原生环境井水不犯河水。</p>\n    </li>\n    <li>\n     <p><strong>多版本一键切换</strong>：这是它的杀手锏。我手上有些老项目需要PHP 5.7，新项目又要用最新的PHP 8.4。在ServBay里，我只需要在面板上点一下，对应的PHP版本就能立刻切换，而且每个站点可以独立设置对应的语言版本。这种丝滑的切换体验，是以前用<code>brew switch</code>或者Docker配置文件来回折腾时无法想象的。</p>\n    </li>\n    <li>\n     <p><strong>高性能且轻量</strong>：它不是虚拟机，也不是笨重的容器。启动飞快，资源占用极低。对我来说，它提供了Docker级别的环境隔离能力，却没有Docker的性能损耗和复杂性。它就是为Web开发量身定做的，专注且高效。</p>\n    </li>\n   </ol>\n   <p>现在，我拿到一台新Mac，配置开发环境的第一步就是安装ServBay。它为我的工作带来了前所未有的安宁感，让我可以专注于代码本身，而不是和环境配置搏斗。这对于任何一个Web开发者来说，都是一份大礼。</p>\n   <h3 data-id=\"heading-2\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.craft.do%2F\" target=\"_blank\" title=\"https://www.craft.do/\" ref=\"nofollow noopener noreferrer\">Craft</a></strong> <strong>：写文档，我需要一点仪式感</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/525eeea5047e4c04a645b4f453cf839f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=Ncn6onT0NJiHkpUlW29BpOAMbQc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>市面上的笔记应用太多了，但我最终选择了Craft来处理那些需要对外分享、或者需要结构清晰、外观精美的文档。如果说Notion是功能强大的数据库，Obsidian是纯粹的个人知识网络，那Craft就像是一间设计优雅的书房。</p>\n   <p>它的编辑体验很好，排版精致，支持Markdown。我可以创建带有卡片、页面、背景图的文档，结构清晰，赏心悦目。当我需要撰写一份项目方案、技术文档或者一篇博客初稿时，我首选Craft。因为它会让我觉得我正在创作而不是简单地记录。</p>\n   <h3 data-id=\"heading-3\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Ftextexpander.com%2F\" target=\"_blank\" title=\"https://textexpander.com/\" ref=\"nofollow noopener noreferrer\">TextExpander</a></strong> <strong>：时间</strong> <strong>复利</strong> <strong>工具</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f724e9e2c5e9454f986ec774f7ec92c1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=rMAOhs77mxIIAj75%2BvILhy%2FwgPg%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>如果说有什么工具能以秒为单位为我节省时间，那就是TextExpander。它能够设置一些简短的缩写，然后自动扩展成大段的文本。</p>\n   <p>这个工具所节省的时间不是立刻体现出来，而是在于日积月累。比如，我设置<code>;em</code>来扩展成我的完整电子邮箱地址，<code>;sig</code>扩展成我的邮件签名，<code>;phpdoc</code>自动生成一个标准的PHP函数文档块。对于一些常用的代码片段、SQL查询、甚至是一些标准化的客户回复邮件，我都设置了相应的缩写。</p>\n   <p>一开始你可能觉得没什么，但时间长了后，你会发现自己少打了成百上千个字符，避免了无数次拼写错误，并且保证了输出内容的一致性。它能把我的精力从重复性输入中解放出来。</p>\n   <h3 data-id=\"heading-4\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fflexibits.com%2Ffantastical\" target=\"_blank\" title=\"https://flexibits.com/fantastical\" ref=\"nofollow noopener noreferrer\">Fantastical</a></strong> <strong>：能听懂人话的日历</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4d43a6616f9a4c05aa202dc469970dcb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=o%2FpkKjbNwee5T2MRuLWzNEVCjnA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>macOS自带的日历应用其实不差，但Fantastical之所以能让我心甘情愿地付费，核心原因只有一个：自然语言输入。</p>\n   <p>我不需要去点选日期、时间，然后填写标题。我只需要输入需求就可以了，比如：“下周三下午3点和老王在隔壁开会”，Fantastical就能自动识别出所有元素，并创建好日程。这个过程很丝滑，所以我现在都不习惯任何需要手动选择日期的日历应用了。</p>\n   <p>它还整合了系统提醒事项，把日程和任务放在一个地方管理，逻辑很清晰。它有效减少了我在规划日程上的负担。</p>\n   <h3 data-id=\"heading-5\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fbinarynights.com%2F\" target=\"_blank\" title=\"https://binarynights.com/\" ref=\"nofollow noopener noreferrer\">ForkLift</a></strong> <strong>：</strong> <strong>Finder</strong> <strong>之外的专业级文件管理器</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/51ade6133d2b45608f65442894ac6818~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=BhsNJ1VRO%2Bz6OneShOU7gG7rT%2Fw%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>Finder对于日常浏览文件是够用的，但一旦涉及到稍微专业点的操作，比如连接FTP/SFTP服务器、批量重命名、双栏对比文件，它就显得力不从心了。</p>\n   <p>ForkLift是我的首选。它是一个双栏文件管理器，让我可以像在Windows上用Total Commander一样高效地在不同目录间移动、复制文件。它内置了远程连接功能，无论是FTP、SFTP还是Amazon S3，都能像本地文件夹一样无缝访问。它的批量重命名、文件同步、应用卸载等功能，每一个都做得非常扎实。</p>\n   <p>当我要处理网站文件、整理大量素材时，我打开的永远是ForkLift。</p>\n   <h3 data-id=\"heading-6\"><strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fwww.videolan.org%2Fvlc%2F\" target=\"_blank\" title=\"https://www.videolan.org/vlc/\" ref=\"nofollow noopener noreferrer\">VLC Media Player</a></strong> <strong>：十年如一日的好基友</strong></h3>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/09653ff6f95141419b7ebcc177c69a20~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6K-l55So5oi35bey5LiN5a2Y5Zyo:q75.awebp?rk3s=f64ab15b&amp;x-expires=1760959257&amp;x-signature=R5H7gpkQzGXyG2arYKPJjVSB%2BWo%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>VLC应该不需要过多介绍吧？ 在流媒体还没那么发达的年代，我们总会下载各种格式的资源。而VLC就是什么都能播放的播放器。<code>.mkv</code>, <code>.avi</code>, <code>.rmvb</code>...无论是什么奇怪的封装格式或编码，拖进去，它总能给你一个满意的结果。</p>\n   <p>直到今天，我电脑里依然常备VLC。有些QuickTime无法解码的视频，或者需要进行一些精细的字幕、音轨调整时，VLC依然是那个最值得信赖的选择。它开源、免费、跨平台，是软件工具领域里一个工具把一件事做到极致的典范。</p>\n   <h4 data-id=\"heading-7\"><strong>最后</strong></h4>\n   <p>工具都不是万能的，真正好的工具都专注于解决一个特定的问题，并把它做得足够好。</p>\n   <p>工具的意义在于服务人，而不是让人成为工具的奴隶。你觉得好用的工具有哪些，分享一下吧</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章推荐了 7 款鲜为人知但功能强大的 Mac 工具，涵盖窗口管理、开发环境、文档编辑、效率提升、文件管理和媒体播放等多个方面，旨在提高用户工作效率和体验。",
+  "oneSentenceSummary": "文章推荐了 7 款鲜为人知但功能强大的 Mac 工具，涵盖窗口管理、开发环境、文档编辑、效率提升、文件管理和媒体播放等多个方面，旨在提高用户工作效率和体验。",
+  "summary": "本文深入介绍了 7 款相对小众但极其实用的 Mac 工具，旨在帮助用户提升工作效率和优化体验。文章首先点出 Mac 原生窗口管理的不足，引出 Swish 通过直观手势将触控板潜力发挥到极致。随后重点推荐了 ServBay，一款革命性的本地 Web 开发环境管理工具，解决了传统开发环境配置混乱、版本冲突等痛点，提供隔离、多版本切换且轻量高效的解决方案。接着，介绍了设计优雅的文档编辑工具 Craft，以及通过文本扩展实现“时间复利”的 TextExpander。Fantastical 以其自然语言输入功能，极大简化了日程管理。此外，还推荐了专业级双栏文件管理器 ForkLift，以及经典全能媒体播放器 VLC。文章强调好工具应专注于解决特定问题并做到极致，而非功能堆砌。",
+  "mainPoints": [
+    {
+      "point": "ServBay 为 Web 开发者提供了无污染、多版本切换且高效的本地开发环境",
+      "explanation": "它解决了传统开发环境配置混乱、版本冲突及资源占用高等问题，通过独立的沙盒运行和一键切换多版本语言/数据库，极大提升了开发效率和系统稳定性。"
+    },
+    {
+      "point": "Swish 通过直观手势将 Mac 触控板的窗口管理能力发挥到极致",
+      "explanation": "它弥补了 macOS 原生窗口管理的不足，用户能通过多指手势实现窗口最小化、最大化、分屏和全屏等操作，将触控板升级为与窗口交互的物理语言。"
+    },
+    {
+      "point": "TextExpander 通过自动化文本输入实现“时间复利”效应",
+      "explanation": "通过设置简短缩写自动扩展为大段文本，它能显著减少重复性输入、避免拼写错误并保证内容一致性，从而日积月累地节省大量时间，提高工作效率。"
+    },
+    {
+      "point": "好的工具应专注于解决特定问题并做到极致，而非大而全",
+      "explanation": "文章通过具体工具案例论证，真正有价值的工具往往能精准击中用户痛点，提供卓越的解决方案，而非追求功能堆砌，这体现了工具设计的核心价值。"
+    }
+  ],
+  "keyQuotes": [
+    "Swish 就是那个补全最后一块拼图的应用。",
+    "它把触控板从一个单纯的指向设备，升格成了一种与窗口进行物理交互的语言。",
+    "ServBay 的一切都运行在它自己的沙盒里，和我的 macOS 原生环境井水不犯河水。",
+    "多版本一键切换：这是它的杀手锏。我手上有些老项目需要 PHP 5.7，新项目又要用最新的 PHP 8.4。在 ServBay 里，我只需要在面板上点一下，对应的 PHP 版本就能立刻切换，而且每个站点可以独立设置对应的语言版本。",
+    "工具都不是万能的，真正好的工具都专注于解决一个特定的问题，并把它做得足够好。"
+  ],
+  "tags": [
+    "Mac工具",
+    "效率工具",
+    "开发工具",
+    "生产力",
+    "窗口管理"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 87,
+  "wordCount": 2518,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760354457000,
+  "publishDateStr": "2025-10-13",
+  "publishDateTimeStr": "2025-10-13 11:20:57"
+}

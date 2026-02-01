@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6c9fcfef",
+  "title": "怎样才算好文档？",
+  "url": "https://baoyu.io/translations/what_makes_documentation_good.md",
+  "date": "2025-10-21 01:35:00",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://github.com/openai/openai-cookbook/blob/main/articles/what_makes_documentation_good.md\">What makes documentation good</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"xgi6znh8cy\">文档的作用，就是把有用的信息装进别人的脑袋里。想写出更好的文档，可以试试下面这些技巧。</p>\n   <h3 data-id=\"nyw1uh0pmy\" id=\"nyw1uh0pmy\" data-toc-id=\"nyw1uh0pmy\">让文档易于“扫读”</h3>\n   <p data-id=\"rfovhwfor4\">很少有读者会老老实实地从头读到尾。他们大多会跳来跳去，试图找到到底哪部分能解决他们的问题。为了减少他们的搜索时间、提高他们找到答案的几率，你得让文档更容易被“扫读”。</p>\n   <p data-id=\"bzylwmy1c1\"><strong>用标题把内容分成不同章节。</strong> 章节标题就像路标，告诉读者是该停下来细看，还是该继续往下找。</p>\n   <p data-id=\"bxwhaseazd\"><strong>标题最好是信息完整的句子，而不是抽象的名词。</strong> 举个例子，如果你的标题是“结果”，读者就必须点进去看正文才能知道到底是什么结果。相反，如果标题是“流式传输将首个词元（token）的响应时间缩短了 50%”，读者立刻就能明白核心信息，省去了“跳进去”的麻烦。</p>\n   <p data-id=\"meloinnew0\"><strong>提供目录。</strong> 目录能帮读者更快地找到信息，这道理就像哈希表（hash maps）查找起来比链表（linked lists）更快一样。<strong>(哈希表和链表是两种计算机存储数据的方式。简单理解就是：哈希表像一本字典，你可以按部首（key）直接翻到那一页；链表像一串珠子，你必须从第一颗开始一颗一颗地找)</strong>。目录还有第二个经常被忽视的好处：它能给读者提供整个文档的“线索”，帮他们判断这篇文档到底值不值得读。</p>\n   <p data-id=\"z566yods3y\"><strong>保持段落简短。</strong> 段落越短，越容易“扫读”。如果你有一个特别核心的观点，可以考虑单独把它拎出来，自成一段，这样就不容易被读者错过。太长的段落很容易把重要信息“埋”起来。</p>\n   <p data-id=\"tak32k1qz2\"><strong>用一个能“独立预览”的简短主题句来开启每个段落和章节。</strong> 人们在“扫读”时，会格外关注每段的第一个词、第一行和第一句话。所以，你的开头句必须在不依赖上下文的情况下也能被看懂。比如，你写‘在此基础上，我们来谈谈一种更快的方法。’——如果读者没看上一段，这句话就毫无意义。你应该把它写得更独立，比如：‘向量数据库（Vector databases）可以加速嵌入（embeddings）搜索。’</p>\n   <p data-id=\"5ftxycg9dp\"><strong>把主题词放在主题句的开头。</strong> 如果读者只看一两个词就能知道这段在讲什么，他们的“扫读”效率是最高的。因此，写主题句时，尽量把‘主题词’放在句首，而不是句尾。举个例子，假设你在写一篇关于嵌入搜索的长文，其中一段要讲向量数据库。你最好写成 ‘<strong>向量数据库</strong>可以加速嵌入搜索’，而不是 ‘嵌入搜索可以通过<strong>向量数据库</strong>来加速’。第一句话更适合“扫读”，因为它把这段的主题（向量数据库）放在了最开头。</p>\n   <p data-id=\"2pm8huft0a\"><strong>把核心结论放在最前面。</strong> 把最重要的信息放在整篇文档和每个章节的开头。别搞“苏格拉底式”的层层铺垫。<strong>(苏格拉底式对话是一种通过不断提问来引导对方得出结论的方法，用在这里指那种“故弄玄虚、兜圈子”的写法)</strong>。不要先介绍你的操作过程，再公布结果。先说结论！</p>\n   <p data-id=\"11p7uny9iv\"><strong>使用项目符号（bullet points）和表格。</strong> 项目列表和表格能让文档更容易“扫读”。请多多使用它们。</p>\n   <p data-id=\"6rqw5016rz\"><strong>加粗重要文字。</strong> 别害怕用<strong>粗体</strong>来标记重要文字，这能帮读者更快地找到它们。</p>\n   <h3 data-id=\"c35m1dh8u2\" id=\"c35m1dh8u2\" data-toc-id=\"c35m1dh8u2\">把话写明白</h3>\n   <p data-id=\"nrxykt63ly\">写得烂的文字读起来很费劲。咱们得好好写，尽量减轻读者的“阅读税”。</p>\n   <p data-id=\"b0tm9d8apf\"><strong>保持句子简单。</strong> 把长句子拆成两个短句。少用副词。砍掉不必要的词和短语。如果可以的话，多用祈使句（<strong>即“做这个”、“看那里”这种命令或请求的句式</strong>）。总之，那些写作书上教你的技巧，都用上。</p>\n   <p data-id=\"3xedc4h4qu\"><strong>确保句子没有歧义，容易理解。</strong> 比如这个英文句子：‘Title sections with sentences.’ 读者读到‘Title’这个词时，大脑并不知道它究竟是名词（标题）还是动词（给...加标题）。他们得费点脑筋去解析剩下的句子，如果猜错了还得重来。最好换成更容易解析的句子（比如 ‘Write section titles as sentences’ - 把章节标题写成句子），哪怕长一点也没关系。同理，也要避免使用那种名词堆砌的短语，比如‘Bicycle clearance exercise notice’（<strong>自行车清仓活动通知</strong>），这种短语也需要读者花额外精力去解析。</p>\n   <p data-id=\"k102hl2uov\"><strong>避免“左分支”句子。</strong> 语言树（Linguistic trees）展示了句子中词与词之间的关系。“左分支”的句子结构要求读者在脑子里记住更多的东西，才能理解整句话，这有点像算法中的“广度优先搜索”和“深度优先搜索”的区别（<strong>简单说就是，左分支句子让你同时记着好几条线索，很累；右分支句子让你顺着一条线索走到底，更轻松</strong>）。举个左分支的例子：‘你需要面粉、鸡蛋、牛奶、黄油和少许盐来做煎饼。’ 在这个句子里，你读到最后才明白‘你需要’的这些东西是用来‘做煎饼’的。一个更容易读的‘右分支’版本是：‘要做煎饼，你需要面粉、鸡蛋、牛奶、黄油和少许盐。’ 留神那些迫使读者“悬着”一个词等半天的句子，看看能不能换个说法。</p>\n   <p data-id=\"jfa2qm95vh\"><strong>避免使用指示代词（比如‘这个’、‘那个’），尤其是跨句使用。</strong> 举个例子，不要说‘基于我们对上一个话题的讨论，现在我们来讨论函数调用’，而要说‘基于消息格式化的讨论，现在我们来讨论函数调用’。第二句更容易理解，因为它没有给读者增加“回忆上一个话题是啥”的负担。甚至可以找机会彻底砍掉这些代词，直接说：‘现在我们来讨论函数调用。’</p>\n   <p data-id=\"z3vj45j6yx\"><strong>保持一致性。</strong> 人脑是了不起的“模式匹配器”。任何不一致的地方都会让读者感到烦躁或分心。如果我们统一用了“标题式大写”（Title Case），那就处处都用。如果我们统一在列表末尾用了“结尾逗号”，那就处处都用。如果我们的“秘籍”笔记本（Cookbook notebooks）都用下划线和句子式小写来命名，那就保持这个格式。不要做任何让读者心里嘀咕‘咦，这地方好奇怪’的事情。帮他们专注于内容，而不是内容格式上的不一致。</p>\n   <p data-id=\"rbolpy3ycx\"><strong>不要替读者“着想”，也别“指挥”读者。</strong> 避免写这样的句子：‘现在你可能想知道如何调用一个函数了’或者‘接下来，你需要学习如何调用一个函数’。这两种说法都预设了读者的心理状态，可能会让他们反感，或者让我们显得不专业。使用那些不预设读者状态的短语。比如：‘要调用一个函数，……’</p>\n   <h3 data-id=\"pj10xw4vr8\" id=\"pj10xw4vr8\" data-toc-id=\"pj10xw4vr8\">提供“普惠”的帮助</h3>\n   <p data-id=\"vyiv38oyx0\">人们来读文档时，他们的知识水平、语言能力和耐心程度各不相同。即使我们的目标读者是经验丰富的开发者，我们也应该努力让文档对每个人都有帮助。</p>\n   <p data-id=\"1fvwdt6i8e\"><strong>写得简单点。</strong> 解释事情时，要比你自认为的“必要程度”更简单一些。很多读者可能母语不是英语。很多读者可能对技术术语一头雾水，没有多余的脑力来解析你写的句子。写简单点。（但也不要过度简化。）</p>\n   <p data-id=\"ofw9sy7o1b\"><strong>避免使用缩写。</strong> 把全称写出来。这对专家来说费不了多少事，但对新手来说却大有裨益。不要写 IF，写“指令遵循”（instruction following）。不要写 RAG，写“检索增强生成”（retrieval-augmented generation）(或者我更喜欢的术语：search-ask procedure，即“先搜后答”流程)。</p>\n   <p data-id=\"2xzftzqs2k\"><strong>主动提供潜在问题的解决方案。</strong> 即使我们 95% 的读者都知道怎么安装 Python 包或保存环境变量，主动解释一下这些步骤也是值得的。包含这些解释对专家来说不是什么成本——他们一眼扫过去就行了。但如果不包含这些解释，对新手的成本就太高了——他们可能会卡住，甚至直接放弃我们。要记住，一个专家级的 JavaScript 工程师或 C++ 工程师，也可能是个 Python 小白。宁可解释得“啰嗦”一点，也别解释得太少。</p>\n   <p data-id=\"buinxznqcr\"><strong>选用具体、准确的术语。</strong> “行话”是个坏东西。我们应该为刚入行的新人优化文档，而不是为我们自己。比如，不要写 ‘prompt’（提示词），写 ‘input’（输入）。或者不要写 ‘context limit’（上下文限制），写 ‘max token limit’（最大词元限制）。后面这些术语更不言自明，可能比那些大模型（base model）时代发明的行话更好。</p>\n   <p data-id=\"cskv1y0s33\"><strong>保持代码示例的通用性和可移植性。</strong> 在代码演示中，尽量减少依赖。别强迫用户安装额外的库。别让他们在不同页面或章节之间跳来跳去找代码。尽量让例子简单，并且“自给自足”（self-contained）。</p>\n   <p data-id=\"d3en3dsgq7\"><strong>按价值排定主题的优先级。</strong> 一篇解决常见问题（比如：如何计算 token 数量）的文档，比一篇解决罕见问题（比如：如何优化一个 emoji 数据库）的文档要有价值得多。请据此安排优先级。</p>\n   <p data-id=\"ym3bxa1j5r\"><strong>不要教读者坏习惯。</strong> 如果 API 密钥（API key）不应该被存储在代码里，那么就绝对不要在示例代码里把 API 密钥写死在代码中。</p>\n   <p data-id=\"4cnxg91uxp\"><strong>用一个宽泛的开场白来介绍主题。</strong> 例如，如果要解释如何编写一个好的推荐系统，可以考虑先简单提一句：推荐功能在网络上无处不在，从 YouTube 视频到亚马逊商品，再到维基百科。用一个宽泛的开场白来引出一个狭窄的主题，可以帮助人们在进入不熟悉的领域之前感到更安心。而且，如果这段文字写得好，那些已经懂的人可能也会喜欢读。</p>\n   <h3 data-id=\"d6ph9cbuhy\" id=\"d6ph9cbuhy\" data-toc-id=\"d6ph9cbuhy\">当你有充分理由时，也可以打破这些规则</h3>\n   <p data-id=\"dxp5n3xyux\">说到底，做你认为最好的选择。写文档是一种“同理心”的练习。把自己放在读者的位置上，想一想怎样做才能最大限度地帮助他们。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "提供撰写高质量技术文档的实用技巧，旨在提高文档的可读性、易用性和普惠性。",
+  "oneSentenceSummary": "提供撰写高质量技术文档的实用技巧，旨在提高文档的可读性、易用性和普惠性。",
+  "summary": "本文深入探讨了撰写高质量技术文档的有效策略，旨在帮助读者快速获取信息并提升理解效率。文章的核心观点围绕三个方面展开：首先，强调让文档易于“扫读”，通过清晰的标题、目录、简短段落和结论前置等方式减少读者搜索时间；其次，确保文字表达清晰无歧义，避免复杂句式和指示代词，保持内容一致性；最后，主张提供“普惠”的帮助，即用简单语言解释概念、避免缩写、主动提供解决方案、使用通用术语和可移植代码示例。文章强调，撰写文档是同理心的体现，应以读者为中心，最大限度地帮助他们。",
+  "mainPoints": [
+    {
+      "point": "结构化排版和内容组织是提升文档可读性与信息获取效率的关键。",
+      "explanation": "采用信息完整标题、目录、简短段落和结论前置等策略，能有效减少读者搜索时间，帮助其快速定位核心信息。"
+    },
+    {
+      "point": "简洁明了、无歧义的语言表达是减轻读者阅读负担并确保理解的关键。",
+      "explanation": "拆分长句、少用副词、避免左分支结构和指示代词，确保每句话都能独立理解，从而提高阅读流畅性和准确性。"
+    },
+    {
+      "point": "以读者为中心的“普惠”原则能显著提升文档的覆盖面和实际价值。",
+      "explanation": "写作时保持简单、避免缩写、主动提供潜在问题解决方案、使用通用术语和可移植代码示例，确保新手和专家都能轻松理解和使用。"
+    }
+  ],
+  "keyQuotes": [
+    "文档的作用，就是把有用的信息装进别人的脑袋里。",
+    "标题最好是信息完整的句子，而不是抽象的名词。",
+    "把核心结论放在最前面。别搞“苏格拉底式”的层层铺垫。",
+    "写得烂的文字读起来很费劲。咱们得好好写，尽量减轻读者的“阅读税”。",
+    "写文档是一种“同理心”的练习。把自己放在读者的位置上，想一想怎样做才能最大限度地帮助他们。"
+  ],
+  "tags": [
+    "文档写作",
+    "技术沟通",
+    "软件工程",
+    "最佳实践",
+    "可读性"
+  ],
+  "topicTag": "other",
+  "readTime": 14,
+  "score": 90,
+  "wordCount": 3444,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761010500000,
+  "publishDateStr": "2025-10-21",
+  "publishDateTimeStr": "2025-10-21 01:35:00"
+}

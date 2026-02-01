@@ -1,0 +1,53 @@
+{
+  "id": "RAW_12f762",
+  "title": "CNCF 宣布 in‑toto 毕业，增强软件供应链安全",
+  "url": "https://www.infoq.com/news/2025/06/cncf-intoto/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-23 00:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">On April 23, 2025, the <a href=\"https://www.cncf.io/\">Cloud Native Computing Foundation</a> (CNCF) <a href=\"https://www.cncf.io/announcements/2025/04/23/cncf-announces-graduation-of-in-toto-security-framework-enhancing-software-supply-chain-integrity-across-industries/\">announced </a>the graduation of <a href=\"https://in-toto.io/\">in‑toto</a>, a framework designed to enforce supply chain integrity by ensuring that every step in the software development lifecycle, such as building, signing, and deployment, is properly authorized and verifiable. This move signifies that in‑toto has achieved full maturity and stability, joining other graduated CNCF projects that are widely adopted and ready for production at scale.</p>\n   <p dir=\"ltr\">Developed primarily by researchers at <a href=\"https://engineering.nyu.edu/\">NYU Tandon School of Engineering</a>, in‑toto provides a declarative framework enabling organizations to define policies that ensure only authorized actors perform specific build steps in the correct sequence. It uses signed metadata to create a traceable record from source code through to the final software artifact. This model helps prevent tampering, unauthorized actions, and insider threats, addressing the rising number and sophistication of software supply chain attacks.</p>\n   <p dir=\"ltr\"><a href=\"https://www.linkedin.com/in/caniszczyk/\">Chris Aniszczyk, CTO of CNCF</a>, emphasized its timely impact:</p>\n   <blockquote>\n    <p dir=\"ltr\">in‑toto addresses a critical and growing need in our ecosystem, ensuring trust and integrity in how software is built and delivered. As software supply chain threats grow in scale and complexity, in‑toto enables organizations to confidently verify their development workflows, reducing risk, enabling compliance, and ultimately accelerating secure innovation.</p>\n   </blockquote>\n   <p dir=\"ltr\"><the follows=\"\" graduation=\"\" in=\"\">\n     The graduation follows in-toto's journey from a Sandbox project in 2019 to Incubation in early 2022&nbsp;to a stable 1.0 specification in mid-2023. It is backed by major US federal agencies, including the&nbsp; \n     <a href=\"https://www.nsf.gov/\">National Science Foundation</a>, \n     <a href=\"https://www.darpa.mil/\">DARPA</a>, and the \n     <a href=\"https://www.afrl.af.mil/\">Air Force Research Laboratory</a>&nbsp;have contributed funding and research support. \n     <a href=\"https://www.cncf.io/announcements/2025/04/23/cncf-announces-graduation-of-in-toto-security-framework-enhancing-software-supply-chain-integrity-across-industries/?utm_source=chatgpt.com\"> </a>It is already in use by organizations like \n     <a href=\"https://www.autodesk.com/\">Autodesk</a> and \n     <a href=\"https://www.solarwinds.com/\">SolarWinds</a>, and integrated with standards such as \n     <a href=\"https://github.com/openvex\">OpenVEX</a> and \n     <a href=\"https://openssf.org/projects/slsa/\">SLSA</a>, in‑toto is gaining traction across sectors.\n    </the></p>\n   <p dir=\"ltr\"><adoption-support like=\"\" tools=\"\">\n     Tools such as \n     <a href=\"https://github.com/in-toto/witness\">Witness</a> and \n     <a href=\"https://github.com/in-toto/archivista\">Archivista</a> make in‑toto easier to implement for developers to adopt in-toto. \n     <a href=\"https://www.linkedin.com/in/jessesanford/\">Jesse Sanford, Software Architect</a> at \n     <a href=\"https://www.autodesk.com/\">Autodesk,</a> noted:\n    </adoption-support></p>\n   <blockquote>\n    <p dir=\"ltr\">The fact that Witness and Archivista have reduced developer friction so significantly has really set the in‑toto framework apart for us... we can now run securely by default.</p>\n   </blockquote>\n   <p dir=\"ltr\">Graduation from the CNCF marks a significant moment: in‑toto is now recognized by them as production‑ready, offering a systematic way to defend against supply chain threats and meet regulatory standards via verifiable workflows. The CNCF plans to continue advancing the project, including enhancements to policy language support and developer experience.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"CNCF Graduates in‑toto, Bolstering Software Supply Chain Security\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/cncf-intoto/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750680000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "CNCF 宣布 in-toto 毕业，这是一个通过可验证的工作流程增强软件供应链安全的框架。",
+  "oneSentenceSummary": "CNCF 宣布 in-toto 毕业，这是一个通过可验证的工作流程增强软件供应链安全的框架。",
+  "summary": "云原生计算基金会 (CNCF) 宣布 in-toto 毕业，这是一个旨在强制执行软件供应链完整性的安全框架。in-toto 由纽约大学开发，允许组织定义策略，确保授权执行者使用签名元数据按正确顺序执行构建步骤。这创建了一个从源代码到制品的可追溯记录，缓解篡改和内部威胁。它的毕业标志着成熟度、稳定性以及生产环境使用就绪性，加入了其他广泛采用的 CNCF 项目。在美国联邦机构的支持下，并被 Autodesk 等公司采用，in-toto 与 SLSA 和 OpenVEX 等标准集成，成为应对复杂的供应链攻击的关键工具。",
+  "mainPoints": [
+    {
+      "point": "CNCF 毕业标志着 in-toto 的成熟度和生产就绪性。",
+      "explanation": "从沙箱阶段到孵化阶段再到毕业，in-toto 现在被认为稳定、广泛采用，并适合在关键系统中进行大规模生产环境使用。"
+    },
+    {
+      "point": "in-toto 通过可验证的授权步骤强制执行供应链完整性。",
+      "explanation": "它使用声明式策略框架和签名元数据，确保软件构建过程中的每一步都由受信方按正确顺序执行，防止未经授权的修改。"
+    },
+    {
+      "point": "越来越多的采用和工具减少了实施阻力。",
+      "explanation": "大型组织正在使用 in-toto，而像 Witness 和 Archivista 这样的工具正在让开发者更容易将框架集成到工作流程中，从而实现“默认安全”。"
+    }
+  ],
+  "keyQuotes": [
+    "in-toto 解决了我们生态系统中一个关键且日益增长的需求，确保了软件构建和交付方式的信任和完整性。",
+    "随着软件供应链威胁在规模和复杂性上增长，in-toto 使组织能够自信地验证其开发工作流程，降低风险，实现合规，最终加速安全创新。",
+    "Witness 和 Archivista 大幅降低了开发者阻力这一事实，确实让 in-toto 框架对我们而言与众不同... 我们现在可以默认以安全方式运行了。"
+  ],
+  "tags": [
+    "软件供应链安全",
+    "in-toto",
+    "CNCF",
+    "云原生",
+    "网络安全"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 376,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750636800000,
+  "publishDateStr": "2025-06-23",
+  "publishDateTimeStr": "2025-06-23 00:00:00"
+}

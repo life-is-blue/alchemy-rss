@@ -1,0 +1,54 @@
+{
+  "id": "RAW_16d0d7d1",
+  "title": "AWS 为 S3 Tables 增加智能分层和复制功能",
+  "url": "https://www.infoq.com/news/2026/01/s3-tables-intelligent-tiering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-05 10:18:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS recently announced two new capabilities for <a href=\"https://aws.amazon.com/s3/features/tables/\">S3 Tables</a>: a new intelligent tiering storage class that automatically optimizes costs based on access patterns, and replication support that automatically maintains consistent&nbsp;<a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables.html\">Apache Iceberg</a>&nbsp;table replicas across&nbsp;AWS Regions&nbsp;and&nbsp;accounts&nbsp;without manual sync.</p>\n   <p>With new <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/tables-intelligent-tiering.html\">intelligent tiering, storage class</a> data will automatically be tiered to the most cost-effective of the three low-latency tiers: Frequent Access, Infrequent Access, or Archive Instant Access. The latter is the lowest-cost tier, according to the company, 68% lower than Infrequent Access. Sebastian Stromacq, a principal developer advocate at AWS, writes:</p>\n   <blockquote>\n    <p>After 30 days without access, data moves to Infrequent Access, and after 90 days, it moves to Archive Instant Access. This happens without changes to your applications or impact on performance.</p>\n   </blockquote>\n   <p>By default, tables use the standard storage class; however, when a user creates a table, the option to specify Intelligent-Tiering as the storage class is available, or the user can rely on the default storage class configured at the table bucket level. Users can set Intelligent-Tiering as the default storage class for your table bucket, automatically storing tables in Intelligent-Tiering when no storage class is specified during table creation.</p>\n   <p>Users can leverage the&nbsp;<a href=\"https://aws.amazon.com/cli/\">AWS Command Line Interface (AWS CLI)</a>&nbsp;and the&nbsp;put-table-bucket-storage-class&nbsp;and&nbsp;get-table-bucket-storage-class&nbsp;commands to change or verify the storage tier of their S3 table bucket. The command could look like:</p>\n   <pre>\r\n<code class=\"language-bash\">aws s3tables put-table-bucket-storage-class \\\r\n&nbsp;&nbsp; --table-bucket-arn $TABLE_BUCKET_ARN&nbsp; \\\r\n&nbsp;&nbsp; --storage-class-configuration storageClass=INTELLIGENT_TIERING\r\n\r\n# Verify the storage class\r\naws s3tables get-table-bucket-storage-class \\\r\n&nbsp;&nbsp; --table-bucket-arn $TABLE_BUCKET_ARN&nbsp; \\\r\n\r\n{ \"storageClassConfiguration\":\r\n&nbsp;&nbsp; {\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \"storageClass\": \"INTELLIGENT_TIERING\"\r\n&nbsp;&nbsp; }\r\n}</code></pre>\n   <p>Adefemi Adeyemi, an AWS Architect at Imperious Enterprise, noted in a LinkedIn <a href=\"https://www.linkedin.com/posts/adefemi-adeyemi_if-you-are-working-with-apache-iceberg-on-activity-7402006733004406784-SMSW\">post</a>:</p>\n   <blockquote>\n    <p>Most analytics datasets are \"hot\" for a while, then slowly cool off. With Intelligent Tiering on S3 Tables, you no longer need to tweak lifecycle policies for your Iceberg data constantly. The service automatically moves objects to cheaper tiers based on access patterns, which can be a big win for long-lived data lakes.</p>\n   </blockquote>\n   <p>With S3 Tables, <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-replication-managing.html\">replication</a> support helps users to maintain consistent read replicas of their tables across AWS Regions and accounts. When they specify the destination table bucket, the service will create read-only replica tables. It replicates all updates in chronological order while preserving parent-child snapshot relationships. Moreover, replica tables are updated within minutes of source table updates and support independent encryption and retention policies from their source tables.&nbsp;</p>\n   <p>Stromacq states:</p>\n   <blockquote>\n    <p>Replica tables can be queried using&nbsp;<a href=\"https://aws.amazon.com/sagemaker/unified-studio/\">Amazon SageMaker Unified Studio</a>&nbsp;or any Iceberg-compatible engine, including&nbsp;<a href=\"https://duckdb.org/\">DuckDB</a>,&nbsp;<a href=\"https://py.iceberg.apache.org/\">PyIceberg</a>,&nbsp;<a href=\"https://spark.apache.org/\">Apache Spark</a>, and&nbsp;<a href=\"https://trino.io/\">Trino</a>.</p>\n   </blockquote>\n   <p>Using the AWS Management Console, APIs, or&nbsp;<a href=\"https://aws.amazon.com/tools/\">AWS SDKs,</a> users can create and maintain table replicas. Furthermore, they can specify destination table buckets for replicating source tables. When users enable replication, S3 Tables creates read-only replicas in these buckets, backfills them with the latest state, and continuously monitors for updates to keep them in sync.</p>\n   <p>In the same LinkedIn post, Adeyemi noted:</p>\n   <blockquote>\n    <p>Native replication support lets you spin up read-only replicas that stay in sync within minutes and are still queryable as Iceberg tables. Less custom plumbing, more time actually using the data.</p>\n   </blockquote>\n   <p>Lastly, users can track their storage usage by access tier through&nbsp;<a href=\"https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html\">AWS Cost and Usage Reports</a>&nbsp;and&nbsp;<a href=\"https://aws.amazon.com/cloudwatch/\">Amazon CloudWatch</a>&nbsp;metrics. There are no additional charges to configure Intelligent-Tiering; users only pay for storage costs in each tier. As for the replication of S3 Tables, users only pay S3 Table storage charges for the destination table, for replication PUT requests, for table updates (commits), and for object monitoring of the replicated data.&nbsp;More details are available on the <a href=\"https://aws.amazon.com/s3/pricing/\">pricing page</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Adds Intelligent-Tiering and Replication for S3 Tables\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/s3-tables-intelligent-tiering/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767608280000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 增强了 S3 Tables 功能，引入用于自动成本优化的智能分层，以及支持跨区域和跨账号维护一致的 Apache Iceberg 表副本的复制功能。",
+  "oneSentenceSummary": "AWS 增强了 S3 Tables 功能，引入用于自动成本优化的智能分层，以及支持跨区域和跨账号维护一致的 Apache Iceberg 表副本的复制功能。",
+  "summary": "AWS 为 S3 Tables 推出了两项重大增强功能：智能分层和复制支持。智能分层可根据访问模式自动在频繁访问、非频繁访问和归档即时访问层之间移动数据，从而优化存储成本，且无需更改应用程序或影响性能。对于非频繁访问的数据，该功能可降低高达 68% 的成本。用户可以通过 AWS CLI 或控制台进行配置，使其成为管理高性价比数据湖的强大工具。此外，S3 Tables 现在支持复制功能，使用户能够在不同的 AWS 区域和账号之间维护其 Apache Iceberg 表的一致只读副本。这些副本在几分钟内即可完成更新，保留快照关系，并支持独立的加密和保留策略。用户可以使用各种兼容 Iceberg 的引擎（如 SageMaker Unified Studio、DuckDB 和 Apache Spark）对这些副本进行查询，从而简化了灾难恢复和地理分布式数据访问。这两项功能旨在减少管理 S3 大规模数据的手动配置和运营开销。",
+  "mainPoints": [
+    {
+      "point": "S3 Tables 现具备智能分层功能，可自动优化存储成本。",
+      "explanation": "这种新的存储类根据访问模式自动在频繁访问、非频繁访问和归档即时访问层之间移动数据，在无需手动调整策略或更改代码的情况下，为访问频率较低的数据降低高达 68% 的成本。"
+    },
+    {
+      "point": "S3 Tables 的复制支持实现了跨区域和跨账号的一致副本。",
+      "explanation": "用户可以为其 Apache Iceberg 表创建只读副本，这些副本可在几分钟内保持同步，保留快照关系并允许独立加密，这对于灾难恢复和分布式分析至关重要。"
+    },
+    {
+      "point": "这两项新功能旨在简化数据管理并减少大规模数据湖的运营开销。",
+      "explanation": "智能分层消除了对 Iceberg 数据进行手动生命周期策略管理的需要，而复制功能则为维护不同环境间的数据一致性提供了原生解决方案，从而节省了工程时间。"
+    }
+  ],
+  "keyQuotes": [
+    "在 30 天没有访问后，数据会移动到非频繁访问层；90 天后，它会移动到归档即时访问层。这一切的发生无需更改您的应用程序，也不会影响性能。",
+    "大多数分析数据集在一段时间内是“热”的，然后慢慢变冷。通过 S3 Tables 上的智能分层，您不再需要不断调整 Iceberg 数据的生命周期策略。",
+    "副本表可以使用 Amazon SageMaker Unified Studio 或任何兼容 Iceberg 的引擎进行查询，包括 DuckDB、PyIceberg、Apache Spark 和 Trino。",
+    "原生复制支持让您可以创建在几分钟内保持同步的只读副本，并且这些副本仍然可以作为 Iceberg 表进行查询。更少的自定义管道，更多的时间用于实际使用数据。"
+  ],
+  "tags": [
+    "AWS",
+    "S3 Tables",
+    "智能分层",
+    "复制",
+    "Apache Iceberg"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 590,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767608280000,
+  "publishDateStr": "01-05",
+  "publishDateTimeStr": "2026-01-05 10:18:00"
+}

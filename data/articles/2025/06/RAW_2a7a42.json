@@ -1,0 +1,68 @@
+{
+  "id": "RAW_2a7a42",
+  "title": "谷歌开源 Gemma 3n：2G 内存就能跑，100 亿参数内最强多模态模型 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-27-2",
+  "date": "2025-06-27 02:27:45",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>端侧设备迎来了新架构的 AI 模型。</p>\n  <p>本周五凌晨，谷歌正式发布、开源了全新端侧多模态大模型 Gemma 3n。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/24dcd6e8-ed99-42a4-22d5-6664e15de500/public\" data-ratio=\"1.384703196347032\" data-s=\"300,640\" data-type=\"png\" data-w=\"876\" type=\"block\" data-imgfileid=\"503492424\" data-original-style=\"width: 443px;height: 613px;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/43288d1c-5084-45f7-ae91-75fe2852b409/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p>模型、权重：https://huggingface.co/collections/google/gemma-3n-685065323f5984ef315c93f4</p></li>\n   <li>\n    <p>文档：https://ai.google.dev/gemma/docs/gemma-3n</p></li>\n   <li>\n    <p>博客：https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/</p></li>\n  </ul>\n  <p>谷歌表示，Gemma 3n 代表了设备端 AI 的重大进步，它为手机、平板、笔记本电脑等端侧设备带来了强大的多模式功能，其性能去年还只能在云端先进模型上才能体验。</p>\n  <p>Gemma 3n 的特性包含如下几个方面：</p>\n  <ul>\n   <li>\n    <p><strong>多模态设计</strong>：Gemma 3n 原生支持图像、音频、视频和文本输入和文本输出。</p></li>\n   <li>\n    <p><strong>专为设备端优化</strong>：Gemma 3n 型号以效率为设计重点，提供两种基于有效参数尺寸：E2B 和 E4B。虽然它们的原始参数数量分别为 5B 和 8B，但架构创新使其运行内存占用与传统的 2B 和 4B 型号相当，仅需 2GB (E2B) 和 3GB (E4B) 内存即可运行。</p></li>\n   <li>\n    <p><strong>架构突破</strong>：Gemma 3n 的核心是全新组件，例如用于计算灵活性的 MatFormer 架构、用于提高内存效率的每层嵌入 (PLE) 以及针对设备用例优化的新型音频和基于 MobileNet-v5 的视觉编码器。</p></li>\n   <li>\n    <p><strong>质量提升</strong>：Gemma 3n 在多语言（支持 140 种文本语言和 35 种语言的多模态理解）、数学、编码和推理方面均实现了质量提升。E4B 版本的 LMArena 得分超过 1300，使其成为首个达到此基准的 100 亿参数以下模型。</p></li>\n  </ul>\n  <section>\n   <img data-imgfileid=\"503492425\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/93fc7a88-f083-4d43-b1f8-f03a4138ab00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/1f4e553b-ed53-4b55-abee-d02a937a8de0/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>谷歌表示，要想实现设备性能的飞跃需要彻底重新思考模型。Gemma 3n 独特的移动优先架构是其基础，而这一切都始于 MatFormer。</p>\n  <p><strong>MatFormer：一种型号，多种尺寸</strong></p>\n  <p>Gemma 3n 的核心是 MatFormer（Matryoshka Transformer） 架构，这是一种专为弹性推理而构建的新型嵌套 Transformer。你可以将其想象成俄罗斯套娃：一个较大的模型包含其自身更小、功能齐全的版本。这种方法将俄罗斯套娃表征学习的概念从单纯的嵌入扩展到所有 Transformer 组件。</p>\n  <section>\n   <img data-imgfileid=\"503492426\" data-ratio=\"0.4898148148148148\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3e6a2889-f529-4a7a-788a-6d10f508d000/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/f42afdfc-6d2d-499e-81e1-85a45fa246a7/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>因此，MatFormer 在训练 4B 有效参数 (E4B) 模型时，会同时优化 2B 有效参数 (E2B) 子模型，如上图所示。这为开发者提供了两项强大的功能和用例：</p>\n  <ol>\n   <li>\n    <p>预提取模型：开发者可以直接下载并使用 E4B 模型以获得更高性能，或者使用已提取的独立 E2B 子模型，提供两倍更快的推理速度。</p></li>\n   <li>\n    <p>使用 Mix-n-Match 自定义尺寸：为了根据特定硬件限制进行更精细的控制，你可以使用谷歌称之为 Mix-n-Match 的方法，在 E2B 和 E4B 之间创建一系列自定义尺寸的模型。这项技术允许人们精确地对 E4B 模型的参数进行切片，主要通过调整每层的前馈网络隐藏层维度（从 8192 到 16384）并选择性地跳过某些层来实现。谷歌还将发布 MatFormer Lab，以展示如何检索这些最佳模型，这些模型是通过在 MMLU 等基准测试中评估各种设置而确定的。</p></li>\n  </ol>\n  <section>\n   <img data-imgfileid=\"503492427\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/06fc2f94-864f-485e-3337-928781ca9e00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/f8199d0c-7eba-4908-bba1-f3030cfb0dc6/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 不同模型大小的预训练 Gemma 3n 的 MMLU 分数（使用 Mix-n-Match）。</sup></p>\n  <p>展望未来，MatFormer 架构也为弹性执行铺平了道路。虽然此功能不属于今天发布的实现，但它允许单个部署的 E4B 模型在 E4B 和 E2B 推理路径之间动态切换，从而根据当前任务和设备负载实时优化性能和内存使用情况。</p>\n  <p><strong>每层嵌入（PLE）：释放更多内存效率</strong></p>\n  <p>Gemma 3n 模型采用了逐层嵌入 (PLE) 技术。这项创新专为设备部署而设计，可大幅提高模型质量，同时不会增加设备加速器 (GPU/TPU) 所需的高速内存占用。</p>\n  <p>虽然 Gemma 3n E2B 和 E4B 模型的总参数数量分别为 5B 和 8B，但 PLE 允许很大一部分参数（与每层相关的嵌入）在 CPU 上加载并高效计算。这意味着只有核心 Transformer 权重（E2B 约为 2B，E4B 约为 4B）需要存储在通常较为受限的加速器内存 (VRAM) 中。</p>\n  <section>\n   <img data-imgfileid=\"503492428\" data-ratio=\"0.4898148148148148\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9a379daf-3093-4858-12c6-38c722c3fb00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/d3176a3a-bfca-4c37-8072-c8980f4e9532/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 通过每层嵌入，你可以使用 Gemma 3n E2B，同时仅在 AI 加速器中加载约 2B 个参数。</sup></p>\n  <p><strong>KV Cache 共享：更快的长上下文处理</strong></p>\n  <p>处理长内容输入（例如来自音频和视频流的序列）对于许多先进的设备端多模态应用至关重要。Gemma 3n 引入了键值缓存共享 (KV Cache Sharing)，旨在加快流式响应应用的首个 token 获取时间 (Time-to-first-token)。</p>\n  <p>KV Cache Sharing 优化了模型处理初始输入处理阶段（通常称为「预填充」阶段）的方式。来自局部和全局注意力机制的中间层的键和值将直接与所有顶层共享，与 Gemma 3 4B 相比，预填充性能显著提升了两倍。这意味着模型能够比以往更快地提取和理解较长的提示序列。</p>\n  <p><strong>音频理解：将语音引入文本并进行翻译</strong></p>\n  <p>在语音方面，Gemma 3n 采用基于通用语音模型（USM）的高级音频编码器。该编码器每 160 毫秒的音频生成一个 token（约每秒 6 个 token），然后将其作为语言模型的输入进行集成，从而提供声音上下文的精细表示。</p>\n  <p>这种集成音频功能为设备开发解锁了关键功能，包括：</p>\n  <ul>\n   <li>\n    <p>自动语音识别 (ASR)：直接在设备上实现高质量的语音到文本的转录。</p></li>\n   <li>\n    <p>自动语音翻译 (AST)：将口语翻译成另一种语言的文本。</p></li>\n  </ul>\n  <p>经过实践可知，Gemma 3n 在英语与西班牙语、法语、意大利语、葡萄牙语之间的翻译 AST 效果尤为出色。对于语音翻译等任务，利用「思维链」提示可以显著提升翻译效果。以下是示例：</p>\n  <section>\n   <pre data-lang=\"apache\"><code>&lt;bos&gt;&lt;start_of_turn&gt;user</code>\n<code>Transcribe&nbsp;the following speech segment in Spanish, then translate it into English:&nbsp;</code>\n<code>&lt;start_of_audio&gt;&lt;end_of_turn&gt;</code>\n<code>&lt;start_of_turn&gt;model</code></pre>\n  </section>\n  <p>Gemma 3n 编码器在发布时已可以处理长达 30 秒的音频片段，但这并非极限。底层音频编码器是一个流式编码器，能够通过额外的长音频训练处理任意长度的音频。后续的实现将解锁低延迟、长流式传输应用程序。</p>\n  <p><strong>MobileNet-V5：最先进的视觉编码器</strong></p>\n  <p>除了集成的音频功能外，Gemma 3n 还配备了全新的高效视觉编码器 MobileNet-V5-300M，为边缘设备上的多模态任务提供最先进的性能。</p>\n  <p>MobileNet-V5 专为在受限硬件上实现灵活性和强大功能而设计，可为开发人员提供：</p>\n  <ul>\n   <li>\n    <p>多种输入分辨率：本机支持 256×256、512×512 和 768×768 像素的分辨率，让开发者能够平衡特定应用的性能和细节。</p></li>\n   <li>\n    <p>通用的视觉理解：在广泛的多模式数据集上进行了联合训练，在各种图像和视频理解任务中表现出色。</p></li>\n   <li>\n    <p>高吞吐量：在 Google Pixel 上每秒处理高达 60 帧，实现实时设备视频分析和交互式体验。</p></li>\n  </ul>\n  <p>这一性能水平是通过多种架构创新实现的，其中包括：</p>\n  <ul>\n   <li>\n    <p>MobileNet-V4 模块的高级基础（包括 Universal Inverted Bottlenecks 和 Mobile MQA）。</p></li>\n   <li>\n    <p>显著扩大的架构，采用混合深度金字塔模型，比最大的 MobileNet-V4 变体大 10 倍。</p></li>\n   <li>\n    <p>一种新的多尺度融合 VLM 适配器，可提高 token 质量，从而提高准确性和效率。</p></li>\n  </ul>\n  <p>得益于新架构设计和先进蒸馏技术，MobileNet-V5-300M 在 Gemma 3 中的表现显著优于基线 SoViT（使用 SigLip 训练，未进行蒸馏）。在 Google Pixel Edge TPU 上，它在量化的情况下实现了 13 倍的加速（不使用量化的情况下为 6.5 倍），所需参数减少了 46%，内存占用减少了 4 倍，同时在视觉语言任务上实现了更高的准确率。</p>\n  <p>谷歌表示，更多细节会在即将发布的 MobileNet-V5 技术报告中展示。</p>\n  <p>5 月 20 日，谷歌 DeepMind 在 I/O 大会上宣布了 Gemma-3n，其小体量、高性能和低内存占用的特性让人印象深刻。</p>\n  <p>谷歌的首个 Gemma 模型于去年年初发布，目前该系列的累计下载量已经超过了 1.6 亿次。</p>\n </body>\n</html>",
+  "aiSummary": "谷歌开源端侧多模态大模型 Gemma 3n，专为设备端优化，内存占用极低且性能突破（首个 100 亿参数以下 LMArena 得分超 1300 的模型）。",
+  "oneSentenceSummary": "谷歌开源端侧多模态大模型 Gemma 3n，专为设备端优化，内存占用极低且性能突破（首个 100 亿参数以下 LMArena 得分超 1300 的模型）。",
+  "summary": "谷歌最新开源的 Gemma 3n 是一款专为端侧设备优化的多模态大模型，采用创新的 MatFormer 架构和每层嵌入（PLE）技术，显著降低内存占用，E2B 和 E4B 版本分别仅需 2GB 和 3GB 内存即可运行。该模型支持图像、音频、视频和文本输入，E4B 版本的 LMArena 得分超过 1300，成为首个达到此基准的 100 亿参数以下模型。Gemma 3n 引入了 KV Cache 共享技术，预填充性能提升两倍；集成高级音频编码器，可处理 30 秒音频片段；配备 MobileNet-V5 视觉编码器，实现 60fps 实时处理。Gemma 系列累计下载量已超 1.6 亿次，形成活跃开发者生态。",
+  "mainPoints": [
+    {
+      "point": "Gemma 3n 专为设备端优化，内存占用极低且性能突破",
+      "explanation": "E2B 和 E4B 版本分别仅需 2GB 和 3GB 内存即可运行，E4B 版本的 LMArena 得分超过 1300，成为首个达到此基准的 100 亿参数以下模型。"
+    },
+    {
+      "point": "MatFormer 架构实现弹性推理，支持开发者灵活选择模型大小",
+      "explanation": "支持预提取模型和自定义尺寸，谷歌还将发布 MatFormer Lab 帮助开发者检索最优模型配置。"
+    },
+    {
+      "point": "PLE 技术显著提升内存效率",
+      "explanation": "通过逐层嵌入技术，仅核心 Transformer 权重需存储在加速器内存中，降低内存需求。"
+    },
+    {
+      "point": "KV Cache 共享加速长上下文处理",
+      "explanation": "优化预填充阶段性能，首个 token 获取时间显著缩短，提升流式响应速度。"
+    },
+    {
+      "point": "集成高级音频和视觉编码器，支持实时多模态应用",
+      "explanation": "音频编码器可处理 30 秒片段，视觉编码器实现 60fps 实时处理，为多模态应用提供强大支持。"
+    },
+    {
+      "point": "Gemma 系列形成活跃开发者生态",
+      "explanation": "累计下载量已超 1.6 亿次，为开发者提供强大工具链支持。"
+    }
+  ],
+  "keyQuotes": [
+    "Gemma 3n 代表了设备端 AI 的重大进步，它为手机、平板、笔记本电脑等端侧设备带来了强大的多模式功能，其性能去年还只能在云端先进模型上才能体验。",
+    "MatFormer 在训练 4B 有效参数 (E4B) 模型时，会同时优化 2B 有效参数 (E2B) 子模型，为开发者提供了两项强大的功能和用例。",
+    "PLE 允许很大一部分参数在 CPU 上加载并高效计算，这意味着只有核心 Transformer 权重需要存储在通常较为受限的加速器内存中。",
+    "KV Cache Sharing 优化了模型处理初始输入处理阶段的方式，与 Gemma 3 4B 相比，预填充性能显著提升了两倍。",
+    "MobileNet-V5-300M 在 Google Pixel Edge TPU 上实现了 13 倍的加速，所需参数减少了 46%，内存占用减少了 4 倍。",
+    "MatFormer Lab 可帮助开发者检索最优模型配置，实现更精细的硬件适配。"
+  ],
+  "tags": [
+    "多模态模型",
+    "设备端AI",
+    "边缘计算",
+    "Gemma 3n",
+    "MatFormer"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 92,
+  "wordCount": 2662,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750991265000,
+  "publishDateStr": "2025-06-27",
+  "publishDateTimeStr": "2025-06-27 02:27:45"
+}

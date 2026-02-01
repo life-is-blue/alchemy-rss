@@ -1,0 +1,53 @@
+{
+  "id": "RAW_0911cf",
+  "title": "模型调优无需标注数据！将 Llama 3.3 70B 直接提升到 GPT-4o 水平",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-30-3",
+  "date": "2025-03-30 09:21:20",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>现阶段，微调大型语言模型（LLMs）的难点在于，人们通常没有高质量的标注数据。</p>\n  <p>最近，AI 公司 Databricks 推出了一种新的调优方法 TAO，只需要输入数据，无需标注数据即可完成。更令人惊喜的是，TAO 在性能上甚至超过了基于标注数据的监督微调。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/83c7e5f9-b7ce-494d-6036-2446a2873200/public\" data-ratio=\"0.43796296296296294\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478678\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/cf638eab-966a-45bd-b7c4-1d8ce2fde6e4/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>众所周知，LLM 很难适应新的企业级任务。提示（prompting）的方式容易出错，且质量提升有限，而微调（fine-tuning）则需要大量的标注数据，而这些数据在大多数企业任务中是不可用的。</p>\n  <p>Databricks 提出的模型调优方法，只需要未标注数据，企业就可以利用现有的数据来提升 AI 的质量并降低成本。</p>\n  <p>TAO（全称 Test-time Adaptive Optimization）利用测试时计算（由 o1 和 R1 推广）和强化学习（RL）算法，仅基于过去的输入示例来教导模型更好地完成任务。</p>\n  <p>至关重要的是，尽管 TAO 使用了测试时计算，但它将其作为训练模型过程的一部分；然后，该模型以较低的推理成本（即在推理时不需要额外的计算）直接执行任务。</p>\n  <p>更令人惊讶的是，即使没有标注数据，TAO 也能实现比传统调优模型更好的质量，并且它可以将像 Llama 这样的开源模型提升到与专有模型（如 GPT-4o 和 o3-mini）相当的质量水平。</p>\n  <p>借助 TAO，Databricks 已经取得了三项突破性成果：</p>\n  <ul>\n   <li>\n    <p>在文档问答和 SQL 生成等专业企业任务中，TAO 的表现优于需要数千标注样本的传统微调方法。它让 Llama 8B/70B 等高效开源模型达到了 GPT-4o/o3-mini1 等商业模型的同等水平，且无需任何标注数据；</p></li>\n   <li>\n    <p>在零标注数据条件下，TAO 将 Llama 3.3 70B 模型在企业综合基准测试中的表现提升了 2.4%；</p></li>\n   <li>\n    <p>增加 TAO 训练阶段的算力投入，可以在相同数据条件下获得更优模型质量，且不会增加推理阶段的成本消耗。</p></li>\n  </ul>\n  <p>图 1 展示了 TAO 在三个企业级任务中对 Llama 模型的提升效果：尽管仅使用原始输入数据，TAO 不仅超越了需要数千标注样本的传统微调 (FT) 方法，更让 Llama 系列模型达到了商业模型的性能水准。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a3d04541-fcec-460e-38a2-c1bd68c6a700/public\" data-ratio=\"0.6222222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478679\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/a9687009-a623-4dfe-847b-904b9587349e/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c4218e28-2534-428d-79ba-0d98cdaad700/public\" data-ratio=\"0.6222222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478680\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/56a2037e-875f-4539-aa56-b285d46003b0/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>图 1：Llama 3.1 8B 与 Llama 3.3 70B 在三大企业级基准测试中应用 TAO 的效果对比。TAO 带来显著的性能提升，不仅超越传统微调方法，更直指高价商业大语言模型的性能水平。</p>\n  <p><strong>TAO 工作原理 &nbsp;基于测试时计算与强化学习的模型调优</strong></p>\n  <p>TAO 的核心创新在于摒弃了人工标注数据，转而利用测试时计算引导模型探索任务的可能响应，再通过强化学习根据响应评估结果更新模型参数。</p>\n  <p>该流程通过可扩展的测试时计算（而非昂贵的人工标注）实现质量提升，并能灵活融入领域知识（如定制规则）。令人惊讶的是，在高质量开源模型上应用该方法时，其效果往往优于依赖人工标注的传统方案。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9558c8a-b436-4081-fd67-1a29e83af200/public\" data-ratio=\"0.35833333333333334\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478681\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/2f326f19-81ad-4d4b-ad2f-262d58863877/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TAO pipeline</sup></p>\n  <p>TAO 包含四个核心阶段：</p>\n  <ul>\n   <li>\n    <p>响应生成：该阶段首先收集任务相关的输入提示或查询样本。在 Databricks 平台上，这些提示可通过 AI Gateway 自动采集；</p></li>\n   <li>\n    <p>响应评分：系统化评估生成响应的阶段。评分方法包含多种策略，例如基于奖励模型、偏好评分，或利用 LLM 评判器及定制规则进行任务特异性验证，确保每个响应都做到最优；</p></li>\n   <li>\n    <p>强化学习（RL）训练：最终阶段采用基于强化学习的方法更新大语言模型，引导模型生成与高分响应高度契合的输出。通过这一自适应学习过程，模型持续优化预测能力以提升质量；</p></li>\n   <li>\n    <p>持续改进：TAO 仅需 LLM 输入样本作为数据源。用户与 LLM 的日常交互自然形成该数据 —— 一旦模型部署使用，即可自动生成下一轮 TAO 训练数据。在 Databricks 平台上，借助 TAO 机制，模型会随着使用频次增加而持续进化。</p></li>\n  </ul>\n  <p>虽然 TAO 在训练阶段使用了测试时计算，但最终产出的模型在执行任务时仍保持低推理成本。这意味着经过 TAO 调优的模型在推理阶段 —— 与原版模型相比 —— 具有完全相同的计算开销和响应速度，显著优于 o1、o3 和 R1 等依赖测试时计算的模型。实验表明：采用 TAO 训练的高效开源模型，在质量上足以比肩顶尖的商业闭源模型。</p>\n  <p>TAO 为 AI 模型调优提供了一种突破性方法：</p>\n  <ul>\n   <li>\n    <p>不同于耗时且易出错的提示工程；</p></li>\n   <li>\n    <p>也区别于需要昂贵人工标注数据的传统微调；</p></li>\n   <li>\n    <p>TAO 仅需工程师提供任务相关的典型输入样本，即可实现卓越性能。</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dd34b5bb-ac3f-4130-28db-53c240598600/public\" data-ratio=\"0.33055555555555555\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478682\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/7dfb304a-1b9e-471b-87a0-dccf00e1a99a/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LLM 不同调优方法比较。</sup></p>\n  <p><strong>实验及结果</strong></p>\n  <p>接下来，文章深入探讨了如何使用 TAO 针对专门的企业任务调优 LLM。本文选择了三个具有代表性的基准。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/58144736-4585-4350-5f9c-0af3d4037300/public\" data-ratio=\"0.3712962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478683\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/7ac2178e-f538-420c-89f9-86613bdf2fc3/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;表 2：该研究使用的基准测试概览。</sup></p>\n  <p>如表 3 所示，在所有三个基准测试和两种 Llama 模型中，TAO 显著提升了基础 Llama 的性能，甚至超过了微调的效果。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/921187d5-02de-4bcb-e452-95ae2d171800/public\" data-ratio=\"0.1527777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478684\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/1aaf42ea-4acb-4bd5-9ff5-39ef115511ea/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;表 3：在三个企业级基准测试中使用 TAO 的 Llama 3.1 8B 和 Llama 3.3 70B 实验结果。</sup></p>\n  <p>与经典的测试时计算类似，当 TAO 能够使用更多的计算资源时，它会产生更高质量的结果（见图 3 中的示例）。然而，与测试时计算不同的是，这种额外的计算资源仅在调优阶段使用；最终的语言模型的推理成本与原始语言模型相同。例如，o3-mini 生成的输出 token 数量比其他模型多 5-10 倍，因此其推理成本也相应更高，而 TAO 的推理成本与原始 Llama 模型相同。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0ee48e67-f37e-4ad1-37b1-b6d2bd706200/public\" data-ratio=\"0.6527777777777778\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503478685\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/3a549ecf-a621-460d-afb0-6563217f830f/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>利用 TAO 提高模型多任务性能</strong></p>\n  <p>到目前为止，该研究已经使用 TAO 来提升语言模型在单一任务（例如 SQL 生成）上的表现。接下来，该研究展示了 TAO 如何广泛提升模型在一系列企业任务中的性能。</p>\n  <p>结果如下，TAO 显著提升了两个模型的性能，将 Llama 3.3 70B 和 Llama 3.1 70B 分别提升了 2.4 和 4.0 个百分点。TAO 使 Llama 3.3 70B 在企业级任务上的表现显著接近 GPT-4o，所有这些改进都没有产生人工标注成本。</p>\n  <section>\n   <img data-imgfileid=\"503478686\" data-ratio=\"0.32222222222222224\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9208334c-4d46-40a5-9361-a2e79a762100/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/bddc1c4f-2f34-4368-b4df-e82a3b457516/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>原文链接：https://www.databricks.com/blog/tao-using-test-time-compute-train-efficient-llms-without-labeled-data</sup></p>\n </body>\n</html>",
+  "aiSummary": "Databricks 提出的 TAO 调优方法，无需标注数据，利用测试时计算和强化学习即可将 Llama 模型提升到 GPT-4o 水平，并在企业级任务中表现出色。",
+  "oneSentenceSummary": "Databricks 提出的 TAO 调优方法，无需标注数据，利用测试时计算和强化学习即可将 Llama 模型提升到 GPT-4o 水平，并在企业级任务中表现出色。",
+  "summary": "文章介绍了 Databricks 提出的 TAO (Test-time Adaptive Optimization) 模型调优方法，该方法无需标注数据，仅通过输入数据和强化学习，即可有效提升大型语言模型在特定任务上的性能。TAO 利用测试时计算引导模型探索任务响应，并基于响应评估结果更新模型参数。实验结果表明，TAO 不仅超越了需要大量标注数据的传统微调方法，还能将 Llama 等开源模型提升到与 GPT-4o 等商业模型相当的水平，在企业综合基准测试中将 Llama 3.3 70B 模型提升了 2.4%，同时保持较低的推理成本。该方法在文档问答、SQL 生成等企业级任务中表现出色，并能广泛提升模型在一系列任务中的性能。",
+  "mainPoints": [
+    {
+      "point": "TAO 无需标注数据即可实现模型性能提升。",
+      "explanation": "TAO 算法仅依赖输入数据，避免了传统微调对大量标注数据的需求，降低了企业应用 AI 的成本和门槛。"
+    },
+    {
+      "point": "TAO 能将开源模型提升到商业模型水平。",
+      "explanation": "实验表明，经过 TAO 调优的 Llama 模型在企业级任务中的性能可与 GPT-4o 等商业模型媲美，为企业提供了更经济高效的选择。"
+    },
+    {
+      "point": "TAO 具有较低的推理成本。",
+      "explanation": "与传统的测试时计算方法不同，TAO 仅在训练阶段使用额外计算资源，最终模型的推理成本与原始模型相同，保证了应用效率。"
+    }
+  ],
+  "keyQuotes": [
+    "TAO（全称 Test-time Adaptive Optimization）利用测试时计算（由 o1 和 R1 推广）和强化学习（RL）算法，仅基于过去的输入示例来教导模型更好地完成任务。",
+    "借助 TAO 机制，模型会随着使用频次增加而持续进化。",
+    "TAO 仅需工程师提供任务相关的典型输入样本，即可实现卓越性能。"
+  ],
+  "tags": [
+    "模型调优",
+    "无监督学习",
+    "强化学习",
+    "大语言模型",
+    "Llama"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2102,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743326480000,
+  "publishDateStr": "2025-03-30",
+  "publishDateTimeStr": "2025-03-30 09:21:20"
+}

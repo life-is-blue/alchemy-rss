@@ -1,0 +1,55 @@
+{
+  "id": "RAW_2b01c7",
+  "title": "Zendesk 推出基础接口平台，大幅简化基础设施供应",
+  "url": "https://www.infoq.com/news/2025/07/zendesk-interface-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-21 00:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Zendesk has unveiled its new <a href=\"https://zendesk.engineering/a-journey-to-empowerment-how-zendesk-engineers-transformed-infrastructure-provisioning-377769097cf7\">Foundation Interface</a>, a unified platform designed to transform infrastructure provisioning into a fully self-service experience. This platform enables engineers to request infrastructure components, such as databases, object storage, compute resources, and secrets, by simply defining requirements in a <a href=\"https://docs.openrewrite.org/reference/yaml-format-reference\">declarative YAML file.</a> These requests are then automatically validated, provisioned, and monitored through a seamless workflow integrated with <a href=\"https://spinnaker.io/\">Spinnaker</a> and <a href=\"https://kubernetes.io/\">Kubernetes</a>. The result is a major reduction in the time, friction, and uncertainty that previously accompanied infrastructure requests.</p>\n   <p dir=\"ltr\">At the heart of this transformation lies a robust internal architecture that Zendesk engineers describe as a \"genie and helpers\" model. The Gatekeeper acts as the initial validator of requests, ensuring correct syntax, resource definitions, and permission scopes. Once approved, requests are routed to the Orchestrator, which breaks them down into Kubernetes-native constructs, specifically, Custom Resources (CRs). These CRs are then handled by domain-specific Kubernetes operators. The Watchdog component continuously monitors the state of these Custom Resources, ensuring all provisioning tasks succeed and signaling Spinnaker when it is safe to proceed with application deployments.</p>\n   <p dir=\"ltr\">Kubernetes operators are central to this process. An operator is a software extension that uses Kubernetes APIs and the controller pattern to manage complex, stateful applications or infrastructure services.</p>\n   <p dir=\"ltr\">Operators are typically implemented using controller frameworks such as the <a href=\"https://sdk.operatorframework.io/\">Operator SDK</a>, <a href=\"https://book.kubebuilder.io/\">Kubebuilder</a>, or <a href=\"https://metacontroller.github.io/metacontroller/intro.html\">Metacontroller</a>. These frameworks enable teams to define <a href=\"https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/\">Custom Resource Definitions</a> (CRDs) that extend the Kubernetes API to include new object types, for example, an <a href=\"https://aws.amazon.com/rds/aurora/\">Aurora Database</a> or a<a href=\"https://redis.io/\"> Redis instance</a>. Paired with each CRD is a controller loop that watches for changes to these resources and reconciles the desired state with the actual cluster state.</p>\n   <p dir=\"ltr\">In practice, this means that when an engineer requests a database through the Foundation Interface, the corresponding operator provisions that database by interfacing with cloud provider APIs, applies configuration, and monitors for success or failure, all without human intervention.</p>\n   <p dir=\"ltr\">This model ensures that each infrastructure component, be it S3 buckets, RDS instances, or more bespoke services, has a dedicated operator that knows how to provision, configure, and manage its lifecycle. Operators are designed to be idempotent, meaning they can safely reapply the desired state if conditions change, and they can handle edge cases or error recovery without manual intervention. The use of Kubernetes-native tools also means that Zendesk benefits from observability, auditability, and consistency across all provisioned resources.</p>\n   <p dir=\"ltr\">By integrating this architecture with Spinnaker pipelines, Zendesk engineers can now deploy applications alongside their supporting infrastructure in a single, repeatable flow. The Foundation Interface ensures that infrastructure is provisioned securely and consistently, with automated checks and centralized tracking. Developers are no longer required to submit tickets or wait for manual approvals; they simply write a YAML file and trigger a deployment. The system handles everything else, from validation and resource creation to health checks and status reporting.</p>\n   <p dir=\"ltr\">Darragh Kennedy, Director of Software Engineering at Zendesk, <a href=\"https://www.linkedin.com/pulse/resilient-hardened-foundation-darragh-kennedy-isglc/\">shared on LinkedIn</a> that the journey toward a self-service infrastructure began years ago with the creation of the Foundation group. He highlighted how the team \"built this from the ground up and iterated on it over the years to create a flexible and robust entry point\", underscoring the carefully engineered foundation behind the platform.</p>\n   <p dir=\"ltr\">His post illustrates the long-term commitment and internal evolution leading to the current system:</p>\n   <blockquote>\n    <p dir=\"ltr\">\"It seems like an age ago that we created the Zendesk Foundation group... we built this from the ground up and iterated on it over the years to create a flexible and robust entry point.\"</p>\n   </blockquote>\n   <p dir=\"ltr\">This commentary reflects a deeper understanding of the engineering effort behind the Foundation Interface, emphasizing that it's not a quick fix but a mature, iterative platform designed to scale with Zendesk's engineering needs.</p>\n   <p dir=\"ltr\">However, functionality like this is not unique to Zendesk. A recent example is <a href=\"https://www.infoq.com/news/2025/05/pulumi-idp/\">Pulumi IDP</a>, launched in May 2025. It offers a \"golden path\" through standardized infrastructure components and a private registry. This allows developers to consume reusable, policy‑approved configurations (in YAML) for provisioning infrastructure safely and efficiently. Unlike portal‑centric platforms, Pulumi IDP focuses tightly on infrastructure delivery patterns shaped and consumed via platform engineering practices.</p>\n   <p dir=\"ltr\">The broader industry trend toward <a href=\"https://platformengineering.org/blog/why-companies-fail-at-internal-developer-platforms\">Internal Developer Platforms (IDPs)</a> built on Kubernetes is gaining momentum. These platforms abstract Kubernetes complexity behind declarative interfaces and pre‑packaged workflows, enabling teams to self‑serve environments, deploy apps, and manage resources without needing to learn Kubernetes internals. Analysts highlight that success depends not only on technology but also on clear documentation, developer education, and strong platform governance Platform Engineering.</p>\n   <p dir=\"ltr\">These parallels demonstrate that Zendesk's choice to define infrastructure through YAML, validated via <a href=\"https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/\">Kubernetes CustomResources</a> and orchestrated through operators and pipelines, aligns closely with a growing movement. Organizations across sectors are adopting Kubernetes‑based self‑service platforms that abstract complexity, enforce policy, and promote developer productivity, just as Zendesk's Foundation Interface aims to do.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Zendesk Streamlines Infrastructure Provisioning with Foundation Interface Platform\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/zendesk-interface-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1753099200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Zendesk 发布基础接口，一个利用声明式 YAML、Kubernetes 操作器和 Spinnaker 的自助服务平台，旨在简化基础设施供应并加速应用部署。",
+  "oneSentenceSummary": "Zendesk 发布基础接口，一个利用声明式 YAML、Kubernetes 操作器和 Spinnaker 的自助服务平台，旨在简化基础设施供应并加速应用部署。",
+  "summary": "本文详细介绍了 Zendesk 的新基础接口，这是一个统一的自助服务平台，旨在革新基础设施供应方式。工程师现在可以在声明式 YAML 文件中定义基础设施需求（例如数据库、对象存储、计算资源和密钥），这些文件会被自动验证、供应和监控。核心架构被描述为 'genie and helpers' 模型（即“精灵和助手”模型），包括用于初始验证的 Gatekeeper、将请求转换为 Kubernetes 自定义资源 (CRs) 的 Orchestrator，以及用于自动供应的特定领域 Kubernetes 操作器。Watchdog 组件持续监控 CR 的状态，确保与 Spinnaker 无缝集成以进行应用程序部署。该系统显著减少了之前与基础设施请求相关的时间、摩擦和不确定性。本文还将 Zendesk 的解决方案置于内部开发者平台 (Internal Developer Platform， IDP) 的更广泛行业趋势中。这强调了该方案与抽象 Kubernetes 复杂性和提高开发者生产力的最佳实践相符。",
+  "mainPoints": [
+    {
+      "point": "自助服务基础设施大大缩短了部署时间，减少了阻碍。",
+      "explanation": "通过声明式 YAML 请求资源，Zendesk 消除了手动工单和审批流程，加速了开发和应用部署。"
+    },
+    {
+      "point": "Kubernetes 操作器是自动执行复杂基础设施生命周期管理的关键。",
+      "explanation": "这些操作器管理自定义资源，直接与云 API 交互，以供应、配置和监控各种基础设施组件，确保幂等性和可靠性。"
+    },
+    {
+      "point": "内部开发者平台 (IDP) 抽象了基础设施的复杂性，从而提高了开发人员的生产力。",
+      "explanation": "Zendesk 的基础接口是内部开发者平台 (IDP) 行业趋势的典范，它为开发者提供了一条“黄金路径”，使他们无需深入了解 Kubernetes 即可使用标准化的、经过策略批准的基础设施。"
+    }
+  ],
+  "keyQuotes": [
+    "该平台使工程师能够通过简单地在声明式 YAML 文件中定义需求来请求基础设施组件，例如数据库、对象存储、计算资源和密钥。",
+    "这种转变的核心是强大的内部架构，Zendesk 工程师将其描述为 'genie and helpers' 模型。",
+    "操作器被设计为是幂等的，这意味着如果条件发生变化，它们可以安全地重新应用所需的状态，并且它们可以处理边缘情况或错误恢复，而无需手动干预。",
+    "开发人员不再需要提交工单或等待手动审批；他们只需编写一个 YAML 文件并触发部署。",
+    "构建在 Kubernetes 上的内部开发者平台 (IDP) 的更广泛行业趋势正在获得动力。"
+  ],
+  "tags": [
+    "平台工程",
+    "基础设施供应",
+    "Kubernetes 操作器",
+    "自助服务",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 793,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753056000000,
+  "publishDateStr": "2025-07-21",
+  "publishDateTimeStr": "2025-07-21 00:00:00"
+}

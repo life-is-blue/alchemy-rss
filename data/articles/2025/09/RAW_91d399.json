@@ -1,0 +1,54 @@
+{
+  "id": "RAW_91d399",
+  "title": "改进的 Gemini 2.5 Flash 和 Flash-Lite",
+  "url": "https://simonwillison.net/2025/Sep/25/improved-gemini-25-flash-and-flash-lite/#atom-everything",
+  "date": "2025-09-25 19:27:43",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/\">Improved Gemini 2.5 Flash and Flash-Lite</a></strong> (<a href=\"https://news.ycombinator.com/item?id=45375845\" title=\"Hacker News\">via</a>) Two new preview models from Google - updates to their fast and inexpensive Flash and Flash Lite families:</p>\n   <blockquote>\n    <p>The latest version of Gemini 2.5 Flash-Lite was trained and built based on three key themes:</p>\n    <ul>\n     <li><strong>Better instruction following</strong>: The model is significantly better at following complex instructions and system prompts.</li>\n     <li><strong>Reduced verbosity</strong>: It now produces more concise answers, a key factor in reducing token costs and latency for high-throughput applications (see charts above).</li>\n     <li><strong>Stronger multimodal &amp; translation capabilities</strong>: This update features more accurate audio transcription, better image understanding, and improved translation quality.</li>\n    </ul>\n    <p>[...]</p>\n    <p>This latest 2.5 Flash model comes with improvements in two key areas we heard consistent feedback on:</p>\n    <ul>\n     <li><strong>Better agentic tool use</strong>: We've improved how the model uses tools, leading to better performance in more complex, agentic and multi-step applications. This model shows noticeable improvements on key agentic benchmarks, including a 5% gain on SWE-Bench Verified, compared to our last release (48.9% → 54%).</li>\n     <li><strong>More efficient</strong>: With thinking on, the model is now significantly more cost-efficient—achieving higher quality outputs while using fewer tokens, reducing latency and cost (see charts above).</li>\n    </ul>\n   </blockquote>\n   <p>They also added two new convenience model IDs: <code>gemini-flash-latest</code> and <code>gemini-flash-lite-latest</code>, which will always resolve to the most recent model in that family.</p>\n   <p>I released <a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.26\">llm-gemini 0.26</a> adding support for the new models and new aliases. I also used the <code>response.set_resolved_model()</code> method <a href=\"https://github.com/simonw/llm/issues/1117\">added in LLM 0.27</a> to ensure that the correct model ID would be recorded for those <code>-latest</code> uses.</p>\n   <pre><code>llm install -U llm-gemini\n</code></pre>\n   <p>Both of these models support optional reasoning tokens. I had them draw me pelicans riding bicycles in both thinking and non-thinking mode, using commands that looked like this:</p>\n   <pre><code>llm -m gemini-2.5-flash-preview-09-2025 -o thinking_budget 4000 \"Generate an SVG of a pelican riding a bicycle\"\n</code></pre>\n   <p>I then got each model to describe the image it had drawn using commands like this:</p>\n   <pre><code>llm -a https://static.simonwillison.net/static/2025/gemini-2.5-flash-preview-09-2025-thinking.png -m gemini-2.5-flash-preview-09-2025 -o thinking_budget 2000 'Detailed single line alt text for this image'\n</code></pre>\n   <p><a href=\"https://gist.github.com/simonw/e9dc9c18008106b4ae2e0be287709f5c\"><strong>gemini-2.5-flash-preview-09-2025-thinking</strong></a></p>\n   <p><img alt=\"\" src=\"https://static.simonwillison.net/static/2025/gemini-2.5-flash-preview-09-2025-thinking.png\"></p>\n   <blockquote>\n    <p>A minimalist stick figure graphic depicts a person with a white oval body and a dot head cycling a gray bicycle, carrying a large, bright yellow rectangular box resting high on their back.</p>\n   </blockquote>\n   <p><a href=\"https://gist.github.com/simonw/e357eac5f12e995a6dcb50711241a478\"><strong>gemini-2.5-flash-preview-09-2025</strong></a></p>\n   <p><img alt=\"\" src=\"https://static.simonwillison.net/static/2025/gemini-2.5-flash-preview-09-2025.png\"></p>\n   <blockquote>\n    <p>A simple cartoon drawing of a pelican riding a bicycle, with the text \"A Pelican Riding a Bicycle\" above it.</p>\n   </blockquote>\n   <p><a href=\"https://gist.github.com/simonw/29aff037b58fe62baf5a3cb7cf3b0ca9\"><strong>gemini-2.5-flash-lite-preview-09-2025-thinking</strong></a></p>\n   <p><img alt=\"\" src=\"https://static.simonwillison.net/static/2025/gemini-2.5-flash-lite-preview-09-2025-thinking.png\"></p>\n   <blockquote>\n    <p>A quirky, simplified cartoon illustration of a white bird with a round body, black eye, and bright yellow beak, sitting astride a dark gray, two-wheeled vehicle with its peach-colored feet dangling below.</p>\n   </blockquote>\n   <p><a href=\"https://gist.github.com/simonw/0eb5b9dc5515657a0a3c9d16bb5d46f6\"><strong>gemini-2.5-flash-lite-preview-09-2025</strong></a></p>\n   <p><img alt=\"\" src=\"https://static.simonwillison.net/static/2025/gemini-2.5-flash-lite-preview-09-2025.png\"></p>\n   <blockquote>\n    <p>A minimalist, side-profile illustration of a stylized yellow chick or bird character riding a dark-wheeled vehicle on a green strip against a white background.</p>\n   </blockquote>\n   <p>Artificial Analysis posted <a href=\"https://twitter.com/ArtificialAnlys/status/1971273380335845683\">a detailed review</a>, including these interesting notes about reasoning efficiency and speed:</p>\n   <blockquote>\n    <ul>\n     <li>In reasoning mode, Gemini 2.5 Flash and Flash-Lite Preview 09-2025 are more token-efficient, using fewer output tokens than their predecessors to run the Artificial Analysis Intelligence Index. Gemini 2.5 Flash-Lite Preview 09-2025 uses 50% fewer output tokens than its predecessor, while Gemini 2.5 Flash Preview 09-2025 uses 24% fewer output tokens.</li>\n     <li>Google Gemini 2.5 Flash-Lite Preview 09-2025 (Reasoning) is ~40% faster than the prior July release, delivering ~887 output tokens/s on Google AI Studio in our API endpoint performance benchmarking. This makes the new Gemini 2.5 Flash-Lite the fastest proprietary model we have benchmarked on the Artificial Analysis website</li>\n    </ul>\n   </blockquote>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9028/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 发布了改进的 Gemini 2.5 Flash 和 Flash-Lite 模型，它们在指令遵循、文本精简、多模态能力和自主代理工具使用方面均有提升，从而带来更高的效率。",
+  "oneSentenceSummary": "Google 发布了改进的 Gemini 2.5 Flash 和 Flash-Lite 模型，它们在指令遵循、文本精简、多模态能力和自主代理工具使用方面均有提升，从而带来更高的效率。",
+  "summary": "本文介绍了 Google 对 Gemini 2.5 Flash 和 Flash-Lite 模型的最新更新，着重强调了几个关键领域的显著改进。Flash-Lite 模型现在能够更好地理解并执行指令，减少了文本冗余从而降低了 token 成本和延迟，并增强了多模态和翻译能力，包括更准确的音频转录和图像理解。Flash 模型在自主代理工具使用方面取得了显著进展，在 SWE-Bench 验证中提高了 5%，并提高了效率，能够以更少的 token 生成更高质量的输出。此次更新还引入了便捷的模型 ID（`gemini-flash-latest`、`gemini-flash-lite-latest`），以便更轻松地访问最新版本。Simon Willison 的 `llm-gemini` 库已更新，以支持这些新模型。本文还提供了一些使用这些模型生成和描述图像的实际示例，展示了“推理”模式带来的影响。人工分析的详细审查进一步证实了这些改进，特别是在推理模式下，Flash-Lite 在 token 效率和速度方面均有显著提升。",
+  "mainPoints": [
+    {
+      "point": "Gemini 2.5 Flash-Lite 显著提高了指令遵循能力，减少了文本冗余，并增强了多模态能力。",
+      "explanation": "这些更新使得 Flash-Lite 在执行复杂指令时更加精确，同时由于减少了 token 的使用，也提高了成本效益。此外，Flash-Lite 在音频转录、图像理解和翻译任务中的能力也得到了增强。"
+    },
+    {
+      "point": "Gemini 2.5 Flash 在复杂应用中展示了更出色的自主代理工具使用能力和更高的效率。",
+      "explanation": "自主代理工具使用的改进（通过 SWE-Bench 验证的 5% 提升即可证明）使该模型在多步骤应用中表现更出色，而效率的提高降低了延迟和成本。"
+    },
+    {
+      "point": "更新后的模型在 token 效率和速度方面均有显著提升，尤其是在推理模式下。",
+      "explanation": "人工分析基准测试表明，推理模式可以减少输出 token（Flash-Lite 为 50%，Flash 为 24%），并加快性能。其中，Flash-Lite 比之前的版本快约 40%。"
+    }
+  ],
+  "keyQuotes": [
+    "最新版本的 Gemini 2.5 Flash-Lite 的训练和构建基于三个关键主题：更好地理解并执行指令、减少文本冗余、更强大的多模态和翻译能力。",
+    "最新的 2.5 Flash 模型在以下两个关键领域进行了改进，我们对此收到了持续的反馈：更出色的自主代理工具使用能力、更高的效率。",
+    "在推理模式下，Gemini 2.5 Flash 和 Flash-Lite Preview 09-2025 比之前的版本更具 token 效率，可以使用更少的输出 token 来运行人工分析智能指数。",
+    "Google Gemini 2.5 Flash-Lite Preview 09-2025（推理）比 7 月的早期版本快约 40%，在我们的 API 终端性能基准测试中，在 Google AI Studio 上能够达到约 887 个输出 token/秒。"
+  ],
+  "tags": [
+    "Gemini",
+    "LLM",
+    "Google",
+    "AI Models",
+    "Multimodal AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 554,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758828463000,
+  "publishDateStr": "2025-09-25",
+  "publishDateTimeStr": "2025-09-25 19:27:43"
+}

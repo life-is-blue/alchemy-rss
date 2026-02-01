@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ac62f6",
+  "title": "Azure AI Foundry 代理服务 GA：赋能多智能体编排与开放互操作",
+  "url": "https://www.infoq.com/news/2025/05/azure-ai-foundry-agents-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-26 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Microsoft recently announced the general availability (GA) of the <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/agents/overview\">Azure AI Foundry Agent Service</a> at its annual Build conference, a flexible, use-case-agnostic platform for building, deploying, and managing AI agents, designed as microservices (benefiting from modularity and scalability), for a wide range of applications.</p>\n   <p>The company first <a href=\"https://www.infoq.com/news/2024/12/azure-ai-agent-service-preview/\">introduced</a> the service at Ignite as Azure AI Agent Service, which sits within Azure AI Foundry, allowing developers to create and run an agent using either&nbsp;<a href=\"https://learn.microsoft.com/en-gb/azure/ai-services/agents/quickstart?pivots=programming-language-python-openai\">OpenAI SDKs</a>&nbsp;or&nbsp;<a href=\"https://learn.microsoft.com/en-gb/azure/ai-services/agents/quickstart?programming-language-python-azure\">Azure AI Foundry SDKs</a>&nbsp;with just a few lines of code. It was later available in public preview in the&nbsp;<a href=\"https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/sdk-overview?tabs=sync&amp;pivots=programming-language-python\" target=\"_blank\">Azure AI Foundry SDK</a>&nbsp;and the&nbsp;<a href=\"https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio\" target=\"_blank\">Azure AI Foundry porta</a><a href=\"https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio\" target=\"_blank\">l</a>. Moreover, with the GA release, the company states that it is introducing several powerful new features and integrations that make it even easier for developers to build and scale their agent solutions.</p>\n   <p><img alt=\"\" src=\"https://learn.microsoft.com/en-us/azure/ai-services/agents/media/agent-service-the-glue.png\" style=\"width: 600px; height: 377px;\" rel=\"share\"></p>\n   <p><em>(Source: Microsoft Learn <a href=\"https://learn.microsoft.com/en-us/azure/ai-services/agents/overview\">documentation</a>)</em></p>\n   <p>One of the key enhancements in the GA release is the robust support for <a href=\"https://aka.ms/Build25/Multi-Agent_Workflows\">Multi-Agent Orchestration</a> that coordinates specialized agents to perform structured, long-running tasks. The orchestration capability is built around two core components: first, Connected Agents (preview) enable point-to-point interactions, allowing agents to call upon other specialized agents as tools for task delegation, modular processing, and context-specific workflows where each contributes independently to the solution; and second, Multi-Agent Workflows (preview) offer a structured, stateful orchestration layer that coordinates multiple agents through complex, multi-step processes by handling context management, error recovery, and long-running durability, making them ideal for scenarios requiring agents to maintain context across multiple steps, like customer onboarding or supply chain automation.</p>\n   <p>The Foundry Agent Service integrates directly with the <a href=\"https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-and-autogen-part-2/\">converged runtime for Semantic Kernel and AutoGen</a> to support advanced multi-agent orchestration.</p>\n   <p>Recognizing that AI agents thrive within interconnected ecosystems, the GA release of Azure AI Foundry Agent Service strongly emphasizes open and interoperable tools. Developers can now leverage the extensive library of over 1,400 Azure <a href=\"https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview\">Logic Apps workflows</a> as tools for their agents, enabling seamless automation of complex business processes and even triggering agents directly from Logic Apps.</p>\n   <p>Furthermore, the platform significantly expands its knowledge integration capabilities by adding SharePoint as a first-party tool alongside Microsoft Fabric and Bing Search, <a href=\"https://aka.ms/Build25/AgentTools\">providing agents with richer, context-aware insights</a>. The ecosystem is further enriched through access to a <a href=\"https://aka.ms/Build25/AgentTools\">growing catalog of partner tools</a> from various domains and a library of reusable agent code samples from Microsoft and the community, accelerating development and expanding agent capabilities.</p>\n   <p>A key aspect of this open approach is the introduction of the <a href=\"https://aka.ms/Build25/Multi-Agent_Workflows\">Agent2Agent (A2A) API head</a>, which enables interoperability with other agent platforms – allowing open-source orchestrators with A2A connectors to utilize Foundry Agent Service agents without requiring custom integrations, facilitating multi-turn conversations between diverse agents. Moreover, the commitment to open protocols extends to multi-cloud scenarios, allowing developers to connect Foundry agents with agents from platforms like <a href=\"https://www.sap.com/products/artificial-intelligence/ai-assistant.html\">SAP Joule</a> and <a href=\"https://cloud.google.com/vertex-ai\">Google Vertex AI</a>. Furthermore, Azure AI Foundry Agent Service integrates with popular agent orchestration frameworks like <a href=\"https://www.crewai.com/\">Crew AI</a>, <a href=\"https://www.langchain.com/langgraph\">LangGraph,</a> and <a href=\"https://docs.llamaindex.ai/en/stable/\">LlamaIndex</a>.</p>\n   <p>In addition, the GA release of Azure AI Foundry Agent Service incorporates <a href=\"https://aka.ms/Build25/AgentEnterprise\">robust features for evaluation, monitoring (AgentOps), governance, and safety</a>. Built-in <a href=\"https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-built-in-agentops-tools-in-azure-ai-foundry-agent-service/4414389\">evaluation tools</a> allow developers to assess agent performance across key metrics like accuracy and efficiency. At the same time, integrated tracing provides detailed insights into agent processing workflows for optimization.</p>\n   <p><a href=\"https://x.com/dchristian19\">Daniel Christian</a>, a Microsoft MVP and certified trainer, <a href=\"https://www.infoq.com/news/2025/05/azure-ai-foundry-agents-ga/tweeted\">emphasized</a> this open approach on X:</p>\n   <blockquote>\n    <p>Models, Models, everywhere, but they are all available to connect with the Azure AI Foundry Agent Service.</p>\n   </blockquote>\n   <p>In addition, <a href=\"https://x.com/chen_jd\">Jiadong Chen</a>, a Cloud architect and Microsoft MVP, <a href=\"https://x.com/chen_jd/status/1894155387932393848\">tweeted</a>:</p>\n   <blockquote>\n    <p>AI agents are quietly transforming industries. With Azure AI Foundry and Azure AI Agent Service, businesses deploy LLM-powered multi-agent systems to handle everything from real-time analytics to customer interactions. Picture a retail chain using AI agents to predict inventory shortages or a hospital automating patient triage — all while Azure’s scalable infrastructure keeps data secure. The result? Productivity spikes, costs plummet, and innovation accelerates.</p>\n   </blockquote>\n   <p>Lastly, Microsoft envisions the Azure AI Foundry Agent Service as a dynamic foundation for intelligent agent ecosystems, with ongoing efforts focused on unifying the Semantic Kernel and AutoGen SDKs, integrating containerized agents for streamlined orchestration, and broadening support for an even wider array of external agents.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Azure AI Foundry Agent Service GA Introduces Multi-Agent Orchestration and Open Interoperability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/azure-ai-foundry-agents-ga/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1748253600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Azure AI Foundry 代理服务正式发布 (GA)，赋能 AI 应用的多智能体编排与开放互操作。",
+  "oneSentenceSummary": "Azure AI Foundry 代理服务正式发布 (GA)，赋能 AI 应用的多智能体编排与开放互操作。",
+  "summary": "微软宣布 Azure AI Foundry 代理服务正式发布 (General Availability，GA)，该平台旨在构建、部署和管理 AI 智能体作为微服务。其主要功能包括强大的多智能体编排，支持连接的智能体和多智能体工作流，以应对复杂且长时间运行的任务。该服务强调开放互操作性，并与 Azure 逻辑应用工作流、SharePoint、Microsoft Fabric 及 Bing 搜索等服务以及众多合作伙伴工具实现了集成。此外，全新的智能体间 (Agent2Agent， A2A) API 为与其他平台（如 SAP Joule 和 Google Vertex AI）的互操作性提供了支持，并无缝集成了 Crew AI、LangGraph 和 LlamaIndex 等框架。GA 版本还新增了企业级功能，如内置评估、监控 (AgentOps，智能体运维)、治理和安全工具，为构建智能化应用生态奠定坚实基础。",
+  "mainPoints": [
+    {
+      "point": "GA 版本提供灵活的 AI 智能体微服务平台。",
+      "explanation": "Azure AI Foundry 代理服务现已正式发布，它提供了一个可扩展且模块化的平台，用于 AI 智能体的开发、部署和管理。"
+    },
+    {
+      "point": "强大的多智能体编排能够应对复杂且有状态的任务。",
+      "explanation": "连接的智能体和多智能体工作流等新功能，使得协调专用智能体以执行复杂的多步骤流程成为可能。"
+    },
+    {
+      "point": "开放互操作性将智能体与各种工具和平台连接。",
+      "explanation": "通过与逻辑应用、SharePoint、合作伙伴工具以及 A2A API 的集成，实现了与外部系统和智能体平台的无缝连接和通信。"
+    },
+    {
+      "point": "企业级功能确保了可靠性、安全性和可管理性。",
+      "explanation": "内置的评估、监控 (AgentOps，智能体运维)、治理和安全工具，为在生产环境中部署智能体提供了保障。"
+    }
+  ],
+  "keyQuotes": [
+    "微软最近在其年度 Build 大会上宣布 Azure AI Foundry 代理服务正式发布 (GA)，这是一个灵活且不局限于特定用例的平台，旨在构建、部署和管理 AI 智能体……",
+    "GA 版本中的一项关键增强是对多智能体编排的强大支持，它能够协调专用智能体来执行结构化的、长时间运行的任务。",
+    "这种开放方法的一个关键方面是引入了智能体间 (A2A) API，它实现了与其他智能体平台的互操作性——允许具有 A2A 连接器的开源编排器利用 Foundry 代理服务智能体，而无需自定义集成……",
+    "此外，Azure AI Foundry 代理服务的 GA 版本还集成了强大的评估、监控 (AgentOps，智能体运维)、治理和安全功能。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "多智能体系统",
+    "编排",
+    "Azure AI Foundry",
+    "微软"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 692,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748217600000,
+  "publishDateStr": "2025-05-26",
+  "publishDateTimeStr": "2025-05-26 00:00:00"
+}

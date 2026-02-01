@@ -1,0 +1,54 @@
+{
+  "id": "RAW_6ae0f582",
+  "title": "谷歌发布 Angular 21：信号表单、无区域迁移和 AI 赋能的工具",
+  "url": "https://www.infoq.com/news/2025/11/angular-21-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-25 09:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://angular.dev/\">Angular</a>, Google’s&nbsp;framework for building large scale web applications, has released Angular 21, an update that advances reactivity, simplifies change detection migration, and introduces AI-driven developer tooling.</p>\n   <p>Angular 21 introduces <a href=\"https://angular.dev/guide/forms/signals/overview\">Signal Forms</a>, an experimental forms API built on Signals that aims to make forms more composable and reactive. Signal Forms provide a new pattern for building scalable form logic that avoids some of the complexity associated with the classic reactive and template driven forms approaches. The team positions this as an opt-in experimental surface while they gather feedback from the community.&nbsp;</p>\n   <p>A large architectural change in v21 is the push toward zoneless change detection. Prior to v21, Angular shipped with&nbsp;<a href=\"https://www.npmjs.com/package/zone.js?activeTab=readme\">zone.js</a> to patch certain browser operations to keep track of changes in an application and update the UI.&nbsp;Now that&nbsp;signals drive&nbsp;more of state management in applications, zone.js is no longer needed. Zoneless change detection was added experimentally in v18 of Angular, and reached stability in v20.2, and as of v21, zone.js will no longer be included by default.</p>\n   <p>To ease migration, Angular ships an onpush_zoneless_migration tool that analyses code and produces a recommended migration plan. There is also full migration instructions on the <a href=\"https://angular.dev/guide/zoneless#removing-zonejs\">Angular website</a> for those who need to migrate.</p>\n   <p>Angular 21 is also ensuring that there are tools available to support developers with AI driven development. The release bundles an ai_tutor interactive tool that provides an AI-powered learning assistant for developers working with Angular, and the Angular MCP Server exposes stable and experimental tools so AI agents and LLMs can integrate with Angular workflows. These additions reflect the team’s focus on improving onboarding, documentation discovery, and in-editor assistance.&nbsp;</p>\n   <p>The release also includes bundled <a href=\"https://angular.dev/guide/tailwind\">Tailwind configuration</a> when scaffolding new projects, improved Vitest support, and other build and tooling updates that modernize the default developer experience.&nbsp;</p>\n   <p>Accessibility Components are also noted in the release, with a new developer preview of the <a href=\"https://angular.dev/guide/aria/overview\">Angular Aria</a> component library. The library&nbsp;has 8 UI patterns and 13 components that can be styled to an applications&nbsp;specific styles. It is a signals based library, which is fully responsive and accessible.&nbsp;</p>\n   <p>There is excitement online around the <a href=\"https://www.reddit.com/r/Angular2/comments/1p1rqqm/comment/npsl9f8/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">announcement of signal forms</a>, and one commenter on the release article described the Zoneless changes as <a href=\"https://blog.angular.dev/announcing-angular-v21-57946c34f14b\">‘a win’</a>. Some developers have mentioned that the two major releases a year can be <a href=\"https://www.reddit.com/r/javascript/comments/1p2581n/comment/npxxmp9/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">a lot to keep up with</a>, however, <a href=\"https://www.reddit.com/r/Angular2/comments/1p1rqqm/comment/npzlm8d/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">others</a> are pleased that not having any major changes in this release has meant a bit of stability.</p>\n   <p>For teams planning upgrades, Angular’s <a href=\"https://angular.dev/update-guide\">Update Guide</a> and migration docs provide step by step instructions and tooling recommendations. The Update Guide covers scenarios from basic apps to advanced monorepos and calls out the migration automation available via ng update and schematics.&nbsp;</p>\n   <p>Angular is an opinionated, TypeScript-first framework maintained by Google and used widely in enterprise applications where long term stability, type safety, and structured architecture matter. Angular 21 reinforces those strengths while pushing the framework toward finer grained reactivity (via Signals), lower runtime overhead via zoneless, and AI-assisted developer workflows. Early adopters should evaluate Signal Forms and the migration tooling in a staging environment, but the release offers clear paths and automation to reduce upgrade risk.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Ships Angular 21: Signal Forms, Zoneless Migration, and AI-First Tooling\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/angular-21-released/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764061200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Angular 21 引入了信号表单、默认启用的无区域变更检测以及全新的 AI 赋能的开发者工具，旨在增强反应性和开发者体验。",
+  "oneSentenceSummary": "Angular 21 引入了信号表单、默认启用的无区域变更检测以及全新的 AI 赋能的开发者工具，旨在增强反应性和开发者体验。",
+  "summary": "Angular 21 是谷歌用于构建大规模 Web 应用程序的框架，本次更新聚焦于提升反应性和优化开发者体验。主要功能包括实验性的信号表单 API，它基于信号构建，旨在为表单逻辑提供更具可组合性和反应性的方法，从而降低复杂性。一项重大的架构转变是默认启用无区域变更检测，不再包含 `zone.js`，而是利用信号进行状态管理并提高运行时性能。为了方便迁移，我们提供了 `onpush_zoneless_migration` 工具和详细指南。此版本还集成了 AI 驱动的开发者工具，例如 `ai_tutor` 学习助手和用于 AI 代理集成的 Angular MCP 服务器，旨在改善新手引导和编辑器内辅助功能。其他更新包括捆绑的 Tailwind 配置、改进的 Vitest 支持以及新的 Angular Aria 可访问性组件库，共同实现了默认开发者体验的现代化。社区的反应总体积极，对信号表单和无区域变更感到兴奋，但也有开发者指出应对频繁的版本更新是一项挑战。这些进步共同加强了 Angular 对更精细的反应性（通过信号）、更低的运行时开销（通过无区域化）和 AI 辅助的开发者工作流程的承诺，确保其在企业应用程序中的持续价值。",
+  "mainPoints": [
+    {
+      "point": "信号表单增强了 Angular 表单的反应性和可组合性。",
+      "explanation": "这个实验性的 API 构建于信号之上，通过提供更具反应性的模式来简化易于扩展的表单逻辑，与传统方法相比，降低了复杂性并改善了开发者体验。"
+    },
+    {
+      "point": "无区域变更检测成为默认设置，提高了性能并降低了开销。",
+      "explanation": "通过移除 `zone.js` 并利用信号进行状态管理，Angular 实现了更精细的反应性和更好的运行时性能，并提供全面的迁移支持。"
+    },
+    {
+      "point": "Angular 21 集成了 AI 赋能的工具，以改善开发者体验。",
+      "explanation": "`ai_tutor` 和 MCP 服务器等新工具支持 AI 代理和 LLM，旨在简化开发者的入门指导、文档发现和编辑器内辅助。"
+    }
+  ],
+  "keyQuotes": [
+    "Angular 21 引入了信号表单，这是一个构建于信号之上的实验性表单 API，旨在使表单更具可组合性和反应性。",
+    "从 v21 开始，默认情况下将不再包含 zone.js。",
+    "该版本捆绑了一个 `ai_tutor` 交互式工具，它为使用 Angular 的开发人员提供了一个 AI 驱动的学习助手。Angular MCP 服务器公开了稳定和实验性工具，这使得 AI 代理和 LLM 能够与 Angular 工作流程集成。",
+    "Angular 21 在增强这些优势的同时，推动该框架朝着更精细的反应性（通过信号）、通过无区域化实现的更低的运行时开销以及 AI 辅助的开发者工作流程发展。"
+  ],
+  "tags": [
+    "Angular",
+    "Web 开发",
+    "框架更新",
+    "信号表单",
+    "无区域变更检测"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 525,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764061200000,
+  "publishDateStr": "2025-11-25",
+  "publishDateTimeStr": "2025-11-25 09:00:00"
+}

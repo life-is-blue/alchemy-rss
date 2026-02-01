@@ -1,0 +1,59 @@
+{
+  "id": "RAW_38063245",
+  "title": "Grafana Labs 发布 Mimir 3.0，采用重新设计的架构以增强性能和可靠性",
+  "url": "https://www.infoq.com/news/2025/11/grafana-mimir-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-21 08:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Grafana Labs has <a href=\"https://grafana.com/blog/2025/11/03/grafana-mimir-3-0-release-all-the-latest-updates/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">released </a>Grafana Mimir 3.0. This is a significant advancement for the open-source, horizontally scalable <a href=\"https://en.wikipedia.org/wiki/Time_series_database\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">time series database</a>. The release features a new design that separates read and write operations. This change greatly boosts performance, reliability, and cost efficiency for organizations handling metrics at scale.</p>\n   <p>Grafana Mimir, launched in 2022, is now a top metrics backend for <a href=\"https://prometheus.io/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Prometheus</a> and <a href=\"https://prometheus.io/opentelemetry.io\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">OpenTelemetry</a>. It has gained over 4,700 GitHub stars and has 30 active maintainers. The project's main goal is to build a highly scalable and efficient open-source time series database. It aims to support 1 billion active series and more.</p>\n   <p>The main feature of the 3.0 release is a new decoupled architecture. This change fixes a key limitation found in earlier versions. In earlier versions of Mimir, the ingester component handled both reading and writing. This setup meant that heavy query loads could hurt ingestion performance. The new design adds <a href=\"https://kafka.apache.org/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Apache Kafka</a> as an asynchronous buffer between ingestion and query tasks. This allows each path to scale on its own and removes the cross-path dependencies that affected system stability before.</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/11/grafana-mimir-3/news/2025/11/grafana-mimir-3/en/resources/1a-us.storyblok-1763670829814.jpeg\" style=\"width:100%;height:556px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/grafana-mimir-3/en/resources/1a-us.storyblok-1763670829814.jpeg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Mimir 3.0 Architecture</small>\n   </center>\n   <p>This architectural shift brings in \"ingest storage,\" a key element from Grafana Labs. It helps prevent spikes in query volume from slowing data ingestion and vice versa. Internal tests showed big gains in reliability. The risk of read path outages from random ingester failures decreased significantly, especially during the early failure stages.</p>\n   <p>Alongside the architectural overhaul, Mimir 3.0 makes the <a href=\"https://grafana.com/docs/mimir/latest/references/architecture/mimir-query-engine/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Mimir Query Engine</a> (MQE) the default query engine. First rolled out in Mimir 2.17, MQE represents a departure from the traditional <a href=\"https://prometheus.io/docs/prometheus/latest/querying/basics/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Prometheus PromQL</a> engine's approach to query processing. The standard PromQL engine processes samples in bulk. This can cause unpredictable memory use. In contrast, MQE uses a streaming approach. It loads only the necessary samples at each query execution step. Grafana Labs reports that this method reduces peak memory usage by up to 92 percent. This leads to faster queries and better reliability during heavy loads, while still being 100 percent PromQL compatible.</p>\n   <p>The performance improvements extend beyond query execution. Grafana Labs found that large clusters in their setup use up to 15% less resources. At the same time, they see better performance and greater reliability. These gains come from the decoupled architecture and the efficient query engine working together.</p>\n   <p>Mimir 3.0 reflects lessons from running large Mimir clusters. The team learned from customers like CERN, who use Mimir at scale. They focused on three main areas:</p>\n   <ul>\n    <li>\n     <p>Reliability through the separation of concerns</p>\n    </li>\n    <li>\n     <p>Performance through streaming query execution</p>\n    </li>\n    <li>\n     <p>Cost optimization through better resource use</p>\n    </li>\n   </ul>\n   <p>Grafana Labs advises organizations to plan upgrades carefully due to major architectural changes. The upgrade involves deploying a <a href=\"https://grafana.com/docs/mimir/latest/set-up/migrate/migrate-ingest-storage/?pg=blog&amp;plcmt=body-txt#set-up-a-new-grafana-mimir-cluster-with-ingest-storage\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">second Mimir</a> cluster next to the current one. Then, reconfigure write clients to send data to multiple endpoints. Finally, switch read clients to the new cluster. Organizations need to modify Helm or Jsonnet configurations for both clusters during this transition.</p>\n   <p>The updates in Mimir 3.0 are already available in <a href=\"https://grafana.com/products/cloud/metrics/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Grafana Cloud Metrics,</a> the fully managed metrics service powered by Mimir. For self-hosted deployments, upgrade guides and release notes are in the project documentation. They help organizations move to the new architecture smoothly.</p>\n   <p>The release shows three years of hard work. It highlights the project's goal to improve metrics storage and retrieval. Mimir 3.0 has a new decoupled architecture and an improved query engine. This helps organizations scale their observability systems. It also cuts down on complexity and resource costs.</p>\n   <p>Several robust alternatives exist for organizations seeking time series database solutions beyond Mimir. <a href=\"https://prometheus.io/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Prometheus</a> is a popular open-source tool. It offers a strong query language (PromQL) and integrates well with Kubernetes. However, it is mainly designed for single-node setups. <a href=\"https://www.influxdata.com/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">InfluxDB</a> is another widely-used option. It handles high write and query loads well. It features its own query languages (InfluxQL and Flux) and supports IoT and real-time analytics. <a href=\"https://github.com/timescale/timescaledb\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">TimescaleDB</a>, an extension of PostgreSQL, appeals to teams familiar with SQL. It lets them use existing PostgreSQL tools while gaining time series optimizations. For cloud-native needs, <a href=\"https://aws.amazon.com/timestream/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Amazon Timestream</a> and <a href=\"https://docs.cloud.google.com/monitoring/docs/monitoring-overview\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Google Cloud Monitoring </a>provide managed services to reduce operational tasks. <a href=\"https://thanos.io/\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Thanos</a> enhances Prometheus by adding long-term storage and global query capabilities. It addresses some scalability challenges that Mimir also tackles. Each choice has trade-offs in scalability, query performance, operational complexity, and ecosystem compatibility.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Grafana Labs Releases Mimir 3.0 with Redesigned Architecture for Enhanced Performance and Reliabilit\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/grafana-mimir-3/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763712000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Grafana Mimir 3.0 引入了采用 Kafka 的分离式读写架构和流式查询引擎 (MQE)，旨在显著提升大规模时序数据的性能、可靠性和成本效率。",
+  "oneSentenceSummary": "Grafana Mimir 3.0 引入了采用 Kafka 的分离式读写架构和流式查询引擎 (MQE)，旨在显著提升大规模时序数据的性能、可靠性和成本效率。",
+  "summary": "Grafana Labs 发布了 Mimir 3.0，这一版本是对其开源、水平可扩展时序数据库的重大更新。核心创新是新的分离式架构，它分离了读取和写入操作，并利用 Apache Kafka 作为异步缓冲区。此更改允许独立扩展数据接入和查询路径，消除跨路径依赖性，并显著提高系统稳定性，尤其是在高负载查询场景下。此外，Mimir 3.0 默认启用 Mimir 查询引擎 (MQE)，它使用流式方法来处理 PromQL 查询。这种方法大幅降低了峰值内存使用（高达 92%），并提高了查询速度和可靠性，同时保持 100% 的 PromQL 兼容性。这些架构和引擎的改进带来了更高的资源利用（降低高达 15%）以及整体增强的性能和可靠性。该版本反映了从运营大型 Mimir 集群中获得的经验，侧重于可靠性、性能和成本优化。Grafana Labs 建议，由于架构更改，需要仔细规划升级，包括分阶段迁移到新集群。这些更新已在 Grafana Cloud Metrics 中提供，并通过自托管部署指南提供。",
+  "mainPoints": [
+    {
+      "point": "Mimir 3.0 采用了一种使用 Apache Kafka 的新的分离式读写架构。",
+      "explanation": "这种分离的架构允许独立地扩展数据接入和查询路径，从而消除性能瓶颈，显著提高系统在各种负载下的可靠性和稳定性。"
+    },
+    {
+      "point": "Mimir 查询引擎 (MQE) 现在是默认引擎，采用流式查询方法。",
+      "explanation": "MQE 通过在每个执行步骤中仅加载必要的样本，将峰值内存使用降低高达 92%，并提高查询性能和可靠性，同时保持 PromQL 兼容性。"
+    },
+    {
+      "point": "总的来说，Mimir 3.0 在可靠性、性能和成本效率方面实现了显著改进。",
+      "explanation": "综合的架构和引擎增强实现了更高的资源利用、更快的查询速度和更高的稳定性，反映了来自 CERN 等大规模部署的经验。"
+    },
+    {
+      "point": "由于重大的架构更改，组织必须仔细规划 Mimir 3.0 的升级。",
+      "explanation": "迁移需要部署第二个集群，重新配置写入客户端以将数据发送到多个端点，然后切换读取客户端，因此需要仔细规划和配置调整。"
+    }
+  ],
+  "keyQuotes": [
+    "新版本采用分离式读写操作的设计。此更改极大地提高了组织处理大规模指标的性能、可靠性和成本效率。",
+    "新设计添加了 Apache Kafka 作为数据接入和查询任务之间的异步缓冲区。这允许每个路径独立扩展，并消除了之前影响系统稳定性的跨路径依赖性。",
+    "标准的 PromQL 引擎批量处理样本，这可能会导致不可预测的内存使用。相比之下，MQE 使用流式方法，它仅在每个查询执行步骤中加载必要的样本。",
+    "Grafana Labs 报告称，这种方法可将峰值内存使用降低高达 92%。这可以在高负载期间实现更快的查询和更高的可靠性，同时仍然 100% 兼容 PromQL。",
+    "Mimir 3.0 具有新的分离式架构和改进的查询引擎。这有助于组织扩展其可观测性系统，并减少复杂性和资源成本。"
+  ],
+  "tags": [
+    "Grafana Mimir",
+    "时序数据库",
+    "可观测性",
+    "分布式系统",
+    "微服务架构"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 713,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763712000000,
+  "publishDateStr": "2025-11-21",
+  "publishDateTimeStr": "2025-11-21 08:00:00"
+}

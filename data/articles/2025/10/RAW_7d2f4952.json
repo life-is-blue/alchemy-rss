@@ -1,0 +1,55 @@
+{
+  "id": "RAW_7d2f4952",
+  "title": "华为世界模型来了！单卡 30 分钟生成 272㎡场景",
+  "url": "https://www.qbitai.com/2025/10/346533.html",
+  "date": "2025-10-28 06:27:24",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"28\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"29\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">AI大house真来了。</p>\n  <p data-track=\"3\">华为联合上海交通大学、华中科技大学推出了世界模型<strong>WordGrow</strong>，可以生成<strong>1800㎡</strong>超大室内场景（19×39块），单卡30分钟就跑了272㎡。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028084409_dfd01089e653c8d81b776b2731ef1859.png\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"1080\" data-height=\"562\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">里面的虚拟人还能顺畅导航，不带迷路的。<s>(小声说：大平层确实需要导航)</s></p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/dd89575a3a43977079e3324de71f7e70.gif\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"640\" data-height=\"355\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">并且场景具备连贯的几何拓扑和照片级真实感外观，智能体的导航则是在复杂空间布局中自主规划路径。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028084409_f1e7ef825421294c26143cdb1932c065.png\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"1078\" data-height=\"392\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">这可以说是走到哪建到哪了，那场景是怎么搭的？</p>\n  <p data-track=\"8\">以前想造个像样的3D大场景，坑不少。</p>\n  <p data-track=\"9\">比如有些技术先靠2D模型画张图，再硬掰成3D，结果换完视角一看，沙发腿歪了、墙壁纹理断了……</p>\n  <p data-track=\"10\">还有一些方法最多只能造单个房间，扩展成套房就卡壳；</p>\n  <p data-track=\"11\">更离谱的是没有布局逻辑——出现冰箱塞进卧室，床摆在厨房的情况。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028084409_b702a7161e9f70dae87a16a63799d605.png\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"232\" data-height=\"230\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">现在，WorldGrow来搞装修了（bushi），用三个核心技术填坑。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028084409_a13a50ae17a74de7a6ae7f132d4a7a9a.png\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"1080\" data-height=\"646\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">第一步是先做<strong>数据精准预处理</strong>，从3D-FRONT这类大规模数据集里提取优质样本，用Blender执行场景切片，通过布尔交集对场景进行区块切分，再靠occupancy检测确保区块内容密度（可见内容≥95%）。</p>\n  <p data-track=\"14\">同时，构建了粗、细两个数据集，粗块来确定宏观布局，细块保留纹理细节。</p>\n  <p data-track=\"15\">第二步靠<strong>3D块补全机制</strong>实现了<strong>无缝拼接</strong>，在生成新区块时，先让结构生成器确定3D结构框架，再让latent生成器重建结构化潜变量（SLAT）特征，保证外观风格统一。</p>\n  <p data-track=\"16\">并且，在输入模型时，会把带噪潜变量、补全区域二进制掩码、已掩码的已知区域特征打包融合，让模型依据现有区块的上下文信息精准生成，消除边缘断裂、纹理错位等拼接缝。</p>\n  <p data-track=\"17\">第三步是<strong>粗到精生成策略</strong>，把场景扩展变成了补全缺失块的任务。</p>\n  <p data-track=\"18\">先通过粗结构模型敲定整体规划，比如窗户朝向、走廊连接等布局；随后对粗结构进行三线性插值上采样，将分辨率匹配至细块级别，再调用细结构生成器补全家具、纹理等细节。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/ab6adc46e29f5668ed08bc5890cb8329.gif\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"800\" data-height=\"444\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"19\">对比可以看出，WorldGrow能够生成高分辨率、连续的室内场景，且场景具有真实且连贯的纹理。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251028084409_431fdb7df1218a02f4dc058f9a85f403.png\" alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" data-ic=\"false\" data-width=\"1080\" data-height=\"433\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">实验数据显示，在3D-FRONT数据集上，它的几何重建指标MMD、COV均达SOTA，FID（用于评估生成质量的核心指标，越低越优）低至7.52，大幅优于SynCity、BlockFusion等主流方法；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" src=\"https://image.jido.dev/20251028084409_c8a446a6253046222700f86b181c6361.png\" data-ic=\"false\" data-width=\"878\" data-height=\"506\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">即便扩展到7×7块的超大场景，边缘质量仍然稳定。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" src=\"https://image.jido.dev/20251028084409_7b84f6623d4546b87ada5b86e97e1fd3.png\" data-ic=\"false\" data-width=\"884\" data-height=\"266\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">在效率上，单张A100显卡，30 分钟即可生成10×10区块（约272㎡）的室内场景，速度是同类技术的6倍。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"华为世界模型来了！单卡30分钟生成272㎡场景\" src=\"https://image.jido.dev/20251028084409_f6392a991c9498386e3d38af4675ce6a.jpeg\" data-ic=\"false\" data-width=\"228\" data-height=\"222\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">本文一作是来自上海交通大学的Sikuang Li和Chen Yang，研究完成于他们在华为实习期间。</p>\n  <p data-track=\"25\">Chen Yang目前仍为华为研究实习生，研究聚焦于计算机视觉和计算机图形学，导师之一就是这项研究的通讯作者、AI大牛田奇。</p>\n  <p data-track=\"26\">田奇，华为终端BG首席科学家，国际欧亚科学院院士，ACM/IEEE Fellow。</p>\n  <p data-track=\"27\">论文地址：https://arxiv.org/abs/2510.21682</p>\n  <p data-track=\"30\">— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "华为联合团队推出世界模型 WorldGrow，通过三项核心技术实现大规模、高真实感 3D 室内场景的高效生成，单卡 30 分钟可生成 272㎡场景。",
+  "oneSentenceSummary": "华为联合团队推出世界模型 WorldGrow，通过三项核心技术实现大规模、高真实感 3D 室内场景的高效生成，单卡 30 分钟可生成 272㎡场景。",
+  "summary": "文章介绍了华为联合上海交通大学、华中科技大学推出的世界模型 WorldGrow。该模型旨在解决现有 3D 大场景生成技术中存在的几何拓扑不连贯、纹理断裂、布局不合理及规模受限等核心痛点。WorldGrow 通过数据精准预处理、3D 块无缝补全机制和粗到精生成策略三项核心技术，实现了 1800㎡超大室内场景的生成，并具备连贯的几何拓扑和照片级真实感外观。实验结果显示，WorldGrow 在 3D-FRONT 数据集上达到了几何重建指标 SOTA，FID（生成质量核心指标）低至 7.52，大幅优于主流方法。在效率方面，单张 A100 显卡，30 分钟即可生成 10×10 区块（约 272㎡）的室内场景，速度是同类技术的 6 倍。该技术为虚拟环境、游戏、元宇宙等领域的大规模 3D 内容生成提供了高效、高质量的解决方案。",
+  "mainPoints": [
+    {
+      "point": "WorldGrow 模型有效解决了现有 3D 大场景生成中的核心痛点。",
+      "explanation": "通过创新的技术路径，克服了传统方法在几何连贯性、纹理统一性、布局合理性及规模扩展性上的限制，实现了超大规模场景生成。"
+    },
+    {
+      "point": "数据精准预处理是保证生成场景质量和密度基础。",
+      "explanation": "采用 Blender 切片、布尔交集和 occupancy 检测等方法，构建粗细数据集，确保输入数据的高质量，为后续生成提供可靠依据。"
+    },
+    {
+      "point": "3D 块无缝补全和粗到精生成策略实现高效高质量场景构建。",
+      "explanation": "这两项技术协同工作，确保新生成区块与现有上下文信息一致，并能从宏观布局到微观细节分层生成，消除拼接缝，提升真实感。"
+    }
+  ],
+  "keyQuotes": [
+    "华为联合上海交通大学、华中科技大学推出了世界模型 WordGrow ，可以生成 1800㎡超大室内场景（19×39 块），单卡 30 分钟就跑了 272㎡。",
+    "并且场景具备连贯的几何拓扑和照片级真实感外观，智能体的导航则是在复杂空间布局中自主规划路径。",
+    "现在，WorldGrow 来搞装修了（bushi），用三个核心技术填坑。",
+    "对比可以看出，WorldGrow 能够生成高分辨率、连续的室内场景，且场景具有真实且连贯的纹理。",
+    "在效率上，单张 A100 显卡，30 分钟即可生成 10×10 区块（约 272㎡）的室内场景，速度是同类技术的 6 倍。"
+  ],
+  "tags": [
+    "世界模型",
+    "3D场景生成",
+    "AIGC",
+    "计算机图形学",
+    "3D内容生成技术"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1164,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761632844000,
+  "publishDateStr": "2025-10-28",
+  "publishDateTimeStr": "2025-10-28 06:27:24"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e77fb955",
+  "title": "火线解析智谱 AI 招股书：年营收 3 亿增速 130%，率先冲刺全球大模型第一股",
+  "url": "https://www.qbitai.com/2025/12/362256.html",
+  "date": "2025-12-19 14:36:32",
+  "author": "杰西卡",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"2\"><strong>“全球大模型第一股”</strong>，在港交所发起冲刺了。</p>\n  <p data-track=\"3\">被视为“中国版OpenAI”的<strong>智谱AI</strong>，刚刚招股书对外公告，冲刺IPO。</p>\n  <p data-track=\"4\">这支由清华顶尖团队孵化的科技公司，今年4月拿到IPO辅导备案的入场券，随后关于智谱IPO的风声未曾停歇，却没想到今年年底进度骤然拉满——</p>\n  <p data-track=\"5\">智谱AI以秘密递表的形式，刚刚在港交所<strong>通过聆讯</strong>，即将敲钟。</p>\n  <p data-track=\"6\">成立6年间，智谱AI融资8轮，累计筹资超83亿元，背后明星资本云集，最新估值已达243.8亿元。</p>\n  <p data-track=\"8\"><strong>智谱（Z.AI）</strong>，其实大家可能已经很熟了，中国最早开启LLM研发的公司，被视为“中国版OpenAI”，聚焦AGI的研发，以期“让机器像人一样思考”。</p>\n  <p data-track=\"9\">公司的技术核心，围绕其自主开发的<strong>“GLM”系列模型</strong>展开，现在已经构建了从基础模型到应用产品的完整体系。</p>\n  <p data-track=\"10\">在<strong>2024年中</strong>，智谱AI与OpenAI同期发布了AGI的<strong>L1-L5</strong>路径图：</p>\n  <ul>\n   <li data-track=\"11\">预训练阶段：智谱要教会机器理解、书写并使用人类语言进行交流。</li>\n   <li data-track=\"12\">对齐及推理阶段：将机器智能与人类意图对齐，并教会机器进行推理与规划。这包括提升安全性，减少幻觉，并实现语言智能与图片、视频、语音和行动的对齐。</li>\n   <li data-track=\"13\">自主学习阶段：教会机器通过自我批评、自我反思及沉思，从而实现机器智能从自身的思维和行动中进行学习。</li>\n   <li data-track=\"14\">自我认知阶段：在没有人类监督的情况下，机器通过观察自身行为及自我解读，逐步形成其自主的态度及情感。</li>\n   <li data-track=\"15\">意识智能阶段：机器开始对自身的内部状态及外部环境产生感知，表现出类似于人类意识的特征——即使对人类而言，这一概念也依然复杂。</li>\n  </ul>\n  <p data-track=\"16\">目前，智谱已开发出三个阶段的大模型及智能体，如中国首个千亿规模大模型GLM-130B（预训练阶段）、中国首个开源大型聊天模型ChatGLM（对齐及推理阶段）等等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_b977f4f34ce67411de21711db0c8840c.png\" data-src=\"https://image.jido.dev/20251219173723_b977f4f34ce67411de21711db0c8840c.png\">\n  </div>\n  <p data-track=\"17\">具体到产品矩阵上：</p>\n  <p data-track=\"18\">首先来看<strong>基座模型</strong>，这是开发各种专业模型的基础。</p>\n  <p data-track=\"19\">智谱的“GLM”系列模型采用<strong>自回归填空架构</strong>，具备强大的通用理解与生成能力，支持文本、图像、语音、视频等多模态输入输出，在在鲁棒性、可控性和幻觉性方面效果突出。</p>\n  <p data-track=\"20\">今年下半年，智谱推出了新一代旗舰模型GLM-4.5/4.6，首次实现在一个模型中原生融合推理、编码和智能体能力。</p>\n  <p data-track=\"21\">据弗若斯特沙利文的资料：</p>\n  <p data-track=\"22\">GLM-4.5一经发布，48小时内就跃居抱抱脸热门榜全球榜首；7月的12项业界标准基准测试中，GLM-4.5在全球排名第三、在中国拿下第一，在全球开源模型中居于首位。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_30719c5d6fc67c745f0c327be0065eed.png\" data-src=\"https://image.jido.dev/20251219173723_30719c5d6fc67c745f0c327be0065eed.png\">\n  </div>\n  <p data-track=\"23\">而9月上线的GLM-4.6，主要强化了编码能力，发布即适配寒武纪、摩尔线程芯片。</p>\n  <p data-track=\"24\">在大模型竞技场Code Arena上，GLM与Anthropic、OpenAI的模型并列Coding全球第一，超越了海外闭源模型谷歌Gemini和xai的Grok。</p>\n  <p data-track=\"25\">针对大模型“推理效率低、成本高”的痛点，智谱AI研发了专用<strong>推理模型</strong>，通过模型压缩、量化等技术优化推理速度，降低部署成本。</p>\n  <p data-track=\"26\">例如GLM-4-9B，模型开源后累计获超15万GitHub星标，全球下载超过3000万。</p>\n  <p data-track=\"27\">接下来是智谱AI的<strong>多模态模型</strong>，如CogVLM、CogView、CogVideoX等，实现了文本、图像、视频、语音的跨模态理解与生成。</p>\n  <p data-track=\"28\">最后，<strong>Agent</strong>是智谱今年的核心战略方向，AI开始从“对话”转向“行动”。</p>\n  <p data-track=\"29\">其中，AutoGLM是全球首个可自主操作手机的智能体，用户不必手动操作，就能通过语音指令完成点餐、订票、查房、预约、撰写文稿、生成视频等跨应用任务。</p>\n  <p data-track=\"30\">今年8月更新的AutoGLM 2.0，还支持接入AI眼镜、手表、家电等硬件，让硬件具备“手机级操作能力”，比如用Rokid智能眼镜点咖啡。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173726_effa2a36f747bb406fcdff6572564bbe.png\" data-src=\"https://image.jido.dev/20251219173726_effa2a36f747bb406fcdff6572564bbe.png\">\n  </div>\n  <p data-track=\"31\">在商业化方面，智谱起步较早，从2021年就开始布局<strong>MaaS</strong>（即大模型API调用）的商业模式，和OpenAI、Anthropic的变现方式类似，智谱也是目前唯一一家实现MaaS有规模收入的创业公司。</p>\n  <p data-track=\"32\">这种模式的优势是高度灵活且可扩展，交付“通用智能”而非“定制项目”，能更快、更低成本地去铺设到更多场景。</p>\n  <p data-track=\"33\">目前，智谱MaaS开放平台上有<strong>270万+</strong>企业及应用开发者，是国内最活跃的大模型API平台之一。客户群体主要面向科技互联网和企业服务市场，目前中国前10大互联网公司中，有<strong>9家</strong>都在用智谱的GLM大模型。</p>\n  <p data-track=\"34\">在全球大模型超市OpenRouter中，GLM-4.5/4.6调用量排在全球前10，付费流量收入已经超过所有国产模型之和。</p>\n  <p data-track=\"35\">并且不仅仅是在国内收入高，GLM-4.5/4.6在海外也在赚钱，其面向全球开发者的模型业务（GLM coding plan），目前已经获得超过1亿元人民币的收入，3个月吸纳了超15万付费开发者用户。</p>\n  <p data-track=\"36\">截止今年9月30日，智谱模型已经辐射到全球12000家企业客户、超8000万台终端用户设备，以及超4500万名开发者。</p>\n  <p data-track=\"37\">今年11月，智谱的日均云端token调用量超过4.2万亿次，成为了中国赋能终端设备最多的独立通用大模型厂商。</p>\n  <p data-track=\"38\">正是这样的商业模式和业务规模，让智谱在财务指标方面表现出了飞速增长。</p>\n  <p data-track=\"40\">先看营收层面，2022年、2023年、2024年，智谱的营业收入分别为为5740万元、1.245亿元、3.124亿元，复合年增长率达到130%。</p>\n  <p data-track=\"41\">2025年上半年，公司收入为1.9亿元，超越了2023年的全年水平。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_dfbfc3deffb489bcfb28507a879a02a0.png\" data-src=\"https://image.jido.dev/20251219173723_dfbfc3deffb489bcfb28507a879a02a0.png\">\n  </div>\n  <p data-track=\"42\">其中，AI大模型是智谱的核心产品，因此公司的主要来自于<strong>大模型收入</strong>。</p>\n  <p data-track=\"43\">据弗若斯特沙利文报告，以2024年的收入计，智谱是中国最大的独立大模型厂商。</p>\n  <p data-track=\"44\">再看利润层面，2022年~2024年，智谱毛利率为54.6%、64.6%、56.3%。</p>\n  <p data-track=\"45\">今年上半年，公司毛利率为50%。近三年，智谱始终保持50%以上的高毛利率。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173724_806ba5511b77c39a6d20bb11910fdf62.png\" data-src=\"https://image.jido.dev/20251219173724_806ba5511b77c39a6d20bb11910fdf62.png\">\n  </div>\n  <p data-track=\"46\">在营业费用中，智谱的重心主要放在了<strong>研发</strong>上。</p>\n  <p data-track=\"47\">2022年~2024年以及2025年上半年，公司研发费用分别为8440万元、5.289亿元、21.954亿元和15.947亿元。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"火线解析智谱AI招股书：年营收3亿增速130%，率先冲刺全球大模型第一股\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_f0594f89f781a02d3417ec77e291e49a.png\" data-src=\"https://image.jido.dev/20251219173723_f0594f89f781a02d3417ec77e291e49a.png\">\n  </div>\n  <p data-track=\"48\">截至今年6月30日，公司的研发团队有657人，占公司总人数的74%。</p>\n  <p data-track=\"49\">其核心科研团队和学术顾问团队已发表500篇顶尖高影响力论文，累计引用次数超过58000余次。</p>\n  <p data-track=\"50\">最后在现金层面，截至今年6月末，智谱的现金及现金等价物为25.2亿元。</p>\n  <p data-track=\"52\">智谱AI成立于2019年，由<strong>清华大学</strong>技术成果转化而来，创始班底源自<strong>清华大学计算机系知识工程实验室（KEG）</strong>。</p>\n  <p data-track=\"53\">这个实验室成立于1996年，是国内最早开展自然语言处理、知识图谱研究的实验室之一。</p>\n  <p data-track=\"54\">CEO<strong>张鹏</strong>，是清华大学2018创新领军工程博士，毕业于清华大学计算机科学与技术系。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_27c4db3e3ac8130d7d528d05b925040a.png\" data-src=\"https://image.jido.dev/20251219173723_27c4db3e3ac8130d7d528d05b925040a.png\">\n  </div>\n  <p data-track=\"55\">他的职业生涯始于清华大学知识工程实验室（KEG），2002年硕士毕业后就加入实验室，2006年起主导研发科技情报平台AMiner——这个系统就是智谱AI的技术雏形。</p>\n  <p data-track=\"56\">在智谱，张鹏负责公司整体运营与战略规划，主导了GLM系列大模型、ChatGLM对话模型等核心产品的研发与商业化。</p>\n  <p data-track=\"57\">智谱的首席科学家<strong>唐杰</strong>，是清华大学计算机系教授、系副主任、清华-工程院知识智能联合实验室主任，国家杰出青年科学基金获得者，也是KEG实验室的核心人物。</p>\n  <p data-track=\"58\">他的研究方向包括社会网络分析、数据挖掘、机器学习、知识图谱等。</p>\n  <p data-track=\"60\">董事长<strong>刘德兵</strong>，中科院计算所博士，师从中国工程院院士、中国计算机领域权威专家高文。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_f5ef9b5cd35134fb3a24e38108450e75.png\" data-src=\"https://image.jido.dev/20251219173723_f5ef9b5cd35134fb3a24e38108450e75.png\">\n  </div>\n  <p data-track=\"61\">他曾任清华数据科学研究院科技大数据研究中心副主任、Thomson北京研究院高级研究员、清华计算机系高级工程师。</p>\n  <p data-track=\"62\">智谱AI总裁<strong>王绍兰</strong>，清华大学创新领军工程博士，曾任清华大学数据科学研究院科技大数据研究中心副主任，推动了智谱AI从“实验室”走向“市场”。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_a721ba0f6957267fa58d2cc13ca75dba.png\" data-src=\"https://image.jido.dev/20251219173723_a721ba0f6957267fa58d2cc13ca75dba.png\">\n  </div>\n  <p data-track=\"63\">智谱的核心团队成员，基本都来自清华大学计算机系知识工程实验室，长期从事大规模预训练模型、语义大数据分析、智能问答等领域的研究。</p>\n  <p data-track=\"64\">有这样顶尖的技术天团做背书，智谱在资本市场可谓是一路绿灯。</p>\n  <p data-track=\"65\">成立当年，公司就获得了4000万元的天使轮融资，投资方来自清华大学资管和中科创星。</p>\n  <p data-track=\"66\">此后6年间，智谱已融资超<strong>8轮</strong>，累计融资超<strong>83亿元</strong>。</p>\n  <p data-track=\"67\">背后的投资者更是明星资本云集，参与方既包括<strong>美团、蚂蚁、阿里、腾讯、小米、金山、Boss直聘、好未来</strong>等产业资本，又有<strong>君联、红杉、高瓴、启明创投、顺为</strong>等一线机构，同时还有不少<strong>地方政府国资</strong>来支持。</p>\n  <p data-track=\"68\">截至IPO前，智谱的最新<strong>投后估值</strong>已达243.8亿元。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251219173723_866df4819eaf43a33fa8946391ac09bf.png\" data-src=\"https://image.jido.dev/20251219173723_866df4819eaf43a33fa8946391ac09bf.png\">\n  </div>\n  <p data-track=\"69\">而这家公司之所以广受资本市场追捧，也不仅仅是因为班底和技术实力硬，还因为整个行业正走向空前火热。</p>\n  <p data-track=\"70\">据弗若斯特沙利文资料，以收入计，2024年中国大语言模型市场规模已达到人民币53亿元；其中，机构客户贡献人民币47亿元，个人客户贡献人民币6亿元。</p>\n  <p data-track=\"71\">而在LLM技术的不断进步，以及机构和个人需求增长的催化下，预计到2030年，中国LLM市场规模将增至人民币1011亿元，2024 年至2030年的复合年增长率为63.5%，并且仍由机构客户作为增长的核心动力。</p>\n  <p data-track=\"72\">在这种背景下，企业级LLM市场的商业化路径日益逐渐清晰，并走向多元化格局。</p>\n  <p data-track=\"73\">行业前景大有可为，而当下正是招兵买马的时刻。</p>\n  <p data-track=\"74\">在这个节点上，OpenAI已经明确IPO计划，而“中国版OpenAI”，此时此刻，率先走向公众市场了。</p>\n  <p data-track=\"75\">招股书传送门：\n   <br class=\"sysbr\">\n   https://www1.hkexnews.hk/app/sehk/2025/107977/documents/sehk25121901699_c.pdf</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "量子位深入分析智谱 AI 招股书，揭示其作为“全球大模型第一股”的冲刺之路，包括年营收增幅 130%、核心技术 GLM 以及商业化 MaaS 模式等关键信息。",
+  "oneSentenceSummary": "量子位深入分析智谱 AI 招股书，揭示其作为“全球大模型第一股”的冲刺之路，包括年营收增幅 130%、核心技术 GLM 以及商业化 MaaS 模式等关键信息。",
+  "summary": "文章详细解读了智谱 AI 在港交所秘密递表，冲刺“全球大模型第一股”的招股书内容。作为“中国版 OpenAI”，智谱 AI 由清华顶尖团队孵化，聚焦 AGI 研发，技术核心为 GLM 系列模型，构建了从基础模型到应用产品的完整体系。文章披露了智谱 AI 的 AGI L1-L5 发展路径图、核心产品矩阵（GLM 基座模型、推理模型、多模态模型和 Agent），以及其在业界基准测试中的领先表现。商业化方面，智谱 AI 率先布局 MaaS 模式并取得规模收入，客户群体广泛，日均云端 token 调用量巨大。财务数据显示，智谱 AI 营收复合年增长率达 130%，毛利率保持在 50%以上，并将大量资金投入研发。文章还介绍了智谱 AI 的清华系创始团队背景和雄厚的资本支持，并展望了中国 LLM 市场的巨大增长潜力，强调智谱 AI 在当前行业热潮中的先行者地位。",
+  "mainPoints": [
+    {
+      "point": "智谱 AI 作为“中国版 OpenAI”率先冲刺 IPO，成为全球大模型第一股的有力竞争者。",
+      "explanation": "文章详细解读了智谱 AI 在港交所秘密递表的招股书，体现了其在 AI 大模型领域的领先地位和资本市场的追捧热度，预示着大模型行业进入资本化快车道。"
+    },
+    {
+      "point": "智谱 AI 构建了完整的 GLM 技术体系，并在多项大模型基准测试中取得全球领先水平。",
+      "explanation": "从 GLM 基座模型、推理模型到多模态和 Agent，智谱 AI 形成了全面的技术矩阵，特别是在编码能力和 Agent 应用上展现了强大的技术实力，提升了模型的通用性和应用潜力。"
+    },
+    {
+      "point": "MaaS 商业模式使智谱 AI 实现规模化营收增长，财务表现亮眼，并重投入研发。",
+      "explanation": "通过大模型 API 调用模式，智谱 AI 成功将技术优势转化为商业价值，营收复合增长率高达 130%，高毛利率和对研发的巨大投入为其持续创新提供了保障。"
+    },
+    {
+      "point": "清华系顶尖技术团队和众多明星资本的加持，构成了智谱 AI 强大的发展基石。",
+      "explanation": "智谱 AI 的创始团队和核心成员均来自清华大学，技术背景深厚，同时获得产业资本和一线机构的多轮投资，为其快速发展提供了人才和资金的双重保障。"
+    }
+  ],
+  "keyQuotes": [
+    "“全球大模型第一股”，在港交所发起冲刺了。",
+    "智谱 AI 以秘密递表的形式，刚刚在港交所通过聆讯，即将敲钟。",
+    "智谱（Z.AI），其实大家可能已经很熟了，中国最早开启 LLM 研发的公司，被视为“中国版 OpenAI”，聚焦 AGI 的研发，以期“让机器像人一样思考”。",
+    "智谱 AI 研发了专用推理模型，通过模型压缩、量化等技术优化推理速度，降低部署成本。",
+    "以 2024 年的收入计，智谱是中国最大的独立大模型厂商。"
+  ],
+  "tags": [
+    "智谱AI",
+    "大模型",
+    "IPO",
+    "GLM",
+    "MaaS"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 91,
+  "wordCount": 3608,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766154992000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 14:36:32"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_50b2a9",
+  "title": "重磅发现！DeepSeek R1 方法成功迁移到视觉领域，多模态 AI 迎来新突破！",
+  "url": "https://www.jiqizhixin.com/articles/2025-02-20-10",
+  "date": "2025-02-20 07:22:43",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   嘿，各位开发小伙伴，今天要给大家安利一个全新的开源项目 ——VLM-R1！它将 DeepSeek 的 R1 方法从纯文本领域成功迁移到了视觉语言领域，这意味着打开了对于多模态领域的想象空间！\n  </section>\n  <section>\n   这个项目的灵感来自去年 DeepSeek 开源的那个 R1 方法，靠着 GRPO（Generative Reward Processing Optimization）强化学习方法，在纯文本大模型上取得了惊人的效果。\n  </section>\n  <section>\n   现在，VLM-R1 团队直接把它应用到了视觉语言模型上，打开了一扇新的大门！\n  </section>\n  <section>\n   <strong>VLM-R1 验证结果惊艳&nbsp;</strong>\n  </section>\n  <section>\n   这个项目的团队在 Qwen2.5-VL 的基础上，同时对比了 R1 和传统的 SFT 方法。结果相当惊艳：\n  </section>\n  <section>\n   1、稳定性拉满：R1 方法在各种复杂场景下都能保持稳定的高性能，这在实际应用至关重要！\n  </section>\n  <section>\n   2. 泛化能力卓越：更让人震惊的是，在领域外的测试数据上，随着训练步数增加，传统 SFT 模型的性能开始下滑，而 R1 模型却能持续提升！这意味着 R1 方法帮助模型真正 “学会” 了理解视觉内容，而不是简单地记忆！\n  </section>\n  <section>\n   <img data-imgfileid=\"503472141\" data-ratio=\"0.487962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4b29cdf-f4d9-4828-d44b-04015b9a2a00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/a9c64ca8-cc55-4a77-be14-8f70c54565ef/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;（训练和测试领域的差异对比）</sup></em>\n  </section>\n  <section>\n   <img data-imgfileid=\"503472142\" data-ratio=\"1.7064814814814815\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/067db8e5-633e-477f-1740-3aea1fb98700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/9f3746fc-52ee-45af-9363-830ac50686f6/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; （泛化性对比，绿线是 VLM-R1，在领域外泛化性显著更优）</sup></em>\n  </section>\n  <section>\n   3、上手超简单：VLM-R1 项目团队还贴心地提供了完整的训练和评估流程，四步就能开始训练，对开发者十分友好。\n  </section>\n  <section>\n   小编亲测之后，在此分享一个实际案例，结果让人意外。\n  </section>\n  <section>\n   <img data-imgfileid=\"503472143\" data-ratio=\"0.9777777777777777\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5ac9c781-a390-430a-1358-08f07045ac00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/06da23de-5a3c-4c06-b640-b44ec930be0c/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   图片里展示了一桌子丰盛的美食，包括各种蔬菜、面饼和点心。针对图片，我们向模型提出了一个问题：“在图片中找出蛋白质含量最高的食物”。\n  </section>\n  <section>\n   模型不仅回答得准确：\n  </section>\n  <section>\n   “图片中展示了桌上的各种菜品，包括蔬菜、面饼和点心。从蛋白质含量来看，面饼或面点可能含量最高，因为它们通常由全谷物制成，面粉中含有蛋白质。虽然蔬菜也含有蛋白质，但比起这些主食来说含量较少。”\n  </section>\n  <section>\n   更厉害的是，它还精准地在图片中框选出了那个蛋白质含量最高的鸡蛋饼！\n  </section>\n  <section>\n   这种精确的视觉理解能力和推理能力，让人印象深刻！\n  </section>\n  <section>\n   完美展示了 VLM-R1 在实际应用中的优势：\n  </section>\n  <ul>\n   <li>\n    <p>准确的视觉识别能力</p></li>\n   <li>\n    <p>专业的知识推理能力</p></li>\n   <li>\n    <p>清晰的文本表达能力</p></li>\n  </ul>\n  <section>\n   <strong>全新思路</strong>\n  </section>\n  <section>\n   作为一个 AI 领域的观察者，VLM-R1 的出现也为开发者和行业提供了许多新的思路，比如：\n  </section>\n  <section>\n   1、证明了 R1 方法的通用性，不止文本领域玩得转；\n  </section>\n  <section>\n   2、为多模态模型的训练提供了新思路；\n  </section>\n  <section>\n   3、或许能够引领一种全新的视觉语言模型训练潮流；\n  </section>\n  <section>\n   <strong>完全开源</strong>\n  </section>\n  <section>\n   最棒的是，这个优秀的项目完全开源！\n  </section>\n  <section>\n   项目地址：[VLM-R1](https://github.com/om-ai-lab/VLM-R1)\n  </section>\n  <section>\n   对视觉语言模型感兴趣的同学，强烈建议去看看这个项目。说不定你的下一个突破性研究就从这里开始！\n  </section>\n  <section>\n   最后，期待看到更多开发者加入进来，一起推动多模态 AI 技术的发展。如果你也对这个项目感兴趣，欢迎加群讨论！\n  </section>\n  <section>\n   <img data-imgfileid=\"503472144\" data-ratio=\"1.0909090909090908\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d485b382-93ed-4a97-387e-85878ec40f00/public\" data-type=\"png\" data-w=\"242\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/b839f691-a4be-42e6-8931-2325c2e6e8c6/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 30%;\">\n  </section>\n </body>\n</html>",
+  "aiSummary": "VLM-R1 项目成功将 DeepSeek 的 R1 方法迁移至视觉语言领域，显著提升了多模态模型的稳定性和泛化能力，并为相关研究提供了开源工具。",
+  "oneSentenceSummary": "VLM-R1 项目成功将 DeepSeek 的 R1 方法迁移至视觉语言领域，显著提升了多模态模型的稳定性和泛化能力，并为相关研究提供了开源工具。",
+  "summary": "VLM-R1 是一个全新的开源项目，它成功地将 DeepSeek 的 R1 方法从纯文本领域迁移到了视觉语言领域，为多模态 AI 的发展奠定了基础。该项目基于 Qwen2.5-VL，通过 GRPO 强化学习方法，在视觉语言模型上取得了显著效果，解决了传统 SFT 模型在泛化能力上的挑战。实验结果表明，VLM-R1 在复杂场景下具有更高的稳定性和泛化能力，即使在领域外的测试数据上，也能随着训练步数增加持续提升性能。此外，VLM-R1 项目还提供了完整的训练和评估流程，方便开发者快速上手。实际案例展示了其精准的视觉识别和推理能力。该项目完全开源，为多模态 AI 技术的发展提供了新的思路。",
+  "mainPoints": [
+    {
+      "point": "R1 方法成功迁移至视觉语言领域，为多模态 AI 带来创新性突破",
+      "explanation": "VLM-R1 将 DeepSeek 的 R1 方法应用于视觉语言模型，显著提升了模型的稳定性和泛化能力，为多模态 AI 发展提供新思路，解决了传统模型泛化性不足的问题。"
+    },
+    {
+      "point": "VLM-R1 具备准确视觉识别和知识推理能力",
+      "explanation": "实际案例表明，VLM-R1 能够准确识别图像中的物体，并进行知识推理，清晰地表达结果，展示了其在实际应用中的潜力。"
+    },
+    {
+      "point": "开源项目为开发者提供便捷的训练和评估流程",
+      "explanation": "VLM-R1 项目提供了完整的训练和评估流程，降低了开发门槛，方便开发者快速上手，推动多模态 AI 技术的创新。"
+    }
+  ],
+  "keyQuotes": [
+    "R1 方法在各种复杂场景下都能保持稳定的高性能，这在实际应用至关重要！",
+    "R1 模型却能持续提升！这意味着 R1 方法帮助模型真正 \"学会\" 了理解视觉内容，而不是简单地记忆！",
+    "VLM-R1 的出现也为开发者和行业提供了许多新的思路"
+  ],
+  "tags": [
+    "多模态学习",
+    "视觉语言模型",
+    "计算机视觉",
+    "R1方法",
+    "GRPO"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1031,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1740036163000,
+  "publishDateStr": "2025-02-20",
+  "publishDateTimeStr": "2025-02-20 07:22:43"
+}

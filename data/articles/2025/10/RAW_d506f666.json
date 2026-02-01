@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d506f666",
+  "title": "Google Research 开源 Coral NPU 平台，助力可穿戴设备和边缘设备实现人工智能",
+  "url": "https://www.infoq.com/news/2025/10/google-coral-npu-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-22 16:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://developers.googleblog.com/en/introducing-coral-npu-a-full-stack-platform-for-edge-ai/\">Coral NPU</a> is an open-source full-stack platform designed to help hardware engineers and AI developers overcome the limitations that prevent integrating AI in wearables and edge devices, including performance, fragmentation, and user trust.</p>\n   <p>Coral NPU is specifically designed to enable all-day AI apps to run on battery-powered devices with efficient energy consumption and configuration options for high-performance use cases:</p>\n   <blockquote>\n    <p>For AI to be truly assistive — proactively helping us navigate our day, translating conversations in real-time, or understanding our physical context — it must run on the devices we wear and carry. This presents a core challenge: embedding ambient AI onto battery-constrained edge devices, freeing them from the cloud to enable truly private, all-day assistive experiences.</p>\n   </blockquote>\n   <p>Google researchers mention detecting user activity, environment, audio and image processing (including speech detection, live translation, and facial recognition), and gesture recognition as potential use cases for hardware built using the Coral NPU platform.</p>\n   <p>Integrating AI into wearables and edge devices involves three key dimensions that the Coral NPU platform seeks to address: bridging the gap between the limited computational power of edge devices and the demands of state-of-the-art LLMs; helping developers overcome device fragmentation caused by the wide variety of proprietary processors and hardware used in edge computing; and ensuring that user data remains protected from unauthorized access.</p>\n   <blockquote>\n    <p>The Coral NPU architecture directly addresses this by reversing traditional chip design. It prioritizes the ML matrix engine over scalar compute, optimizing architecture for AI from silicon up and creating a platform purpose-built for more efficient, on-device inference.</p>\n   </blockquote>\n   <p>In particular, Coral NPU enforces privacy using techniques like <a href=\"https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/\">CHERI</a> to provide fine-grained memory-level safety and scalable software compartmentalization to create an hardware-enforced sandbox.</p>\n   <p><a href=\"https://developers.google.com/coral/guides/architecture\">Coral NPU is based on a set of RISC-V ISA compliant architectural IP blocks</a>, with it base design delivering 512 giga operations per second (GOPS) while consuming a few milliwatts. As a comparison, the <a href=\"https://developers.googleblog.com/en/new-coral-products-for-2020/\">original, non-open source</a> version of Google Coral provided 4 TOPS consuming ~1 watt.</p>\n   <p>The platform includes three basic components: a scalar core managing data flow, a vector execution unit compliant with the RISC-V Vector instruction set, and a matrix execution unit designed to accelerate neural network operations.</p>\n   <p>On the programming side, the Coral NPU architecture is integrated with modern C compilers like <a href=\"https://iree.dev/\">IREE</a> and <a href=\"https://github.com/tensorflow/tflite-micro\">TFLM</a> and support several ML frameworks, including TensorFlow, JAX, and PyTorch.</p>\n   <p>To maximize performance, Google researchers have created a sophisticated toolchain where ML models created using TensorFlow, JAX, or PythonTorch are converted to a general-purpose intermediate representation (MLIR) which is then translated into successive dialects, each closer to the machine's native language. The outcome of this <em>progressive lowering</em> phase is finally compiled into a binary file.</p>\n   <p>As a final note, Google Research collaborated with Synaptics to build the <a href=\"https://www.synaptics.com/torq-github\">first IoT processor</a> implementing this new architecture.</p>\n   <p>The Coral NPU platform is <a href=\"https://github.com/google-coral/coralnpu\">available on GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Research Open-Sources the Coral NPU Platform to Help Build AI into Wearables and Edge Devices\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/google-coral-npu-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761148800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Research 开源 Coral NPU，该全栈平台旨在为可穿戴设备和边缘设备提供高效、私密、高性能的 AI 集成。",
+  "oneSentenceSummary": "Google Research 开源 Coral NPU，该全栈平台旨在为可穿戴设备和边缘设备提供高效、私密、高性能的 AI 集成。",
+  "summary": "Google Research 宣布开源 Coral NPU 平台。这是一个全栈解决方案，旨在克服将 AI 集成到电池供电的可穿戴设备和边缘设备中的关键挑战。这些挑战包括：弥合边缘设备有限算力与先进 AI 模型需求之间的差距；解决专有硬件导致的设备碎片化问题；以及确保用户隐私。Coral NPU 专为高效、全天候的 AI 应用而设计，并在其兼容 RISC-V 指令集架构中优先考虑 ML 矩阵引擎，以优化设备端推理。这种设计方法颠覆了传统的芯片范式，创建了一个专为高效 AI 设计的平台。它通过 CHERI 等先进技术来保护隐私，提供细粒度的内存安全和可扩展的软件分段，从而建立硬件强制的安全沙箱。该平台包含以下关键组件：用于数据流的标量核心、RISC-V 向量执行单元，以及旨在加速神经网络运算的矩阵执行单元。它拥有一个全面的编程生态系统，集成了现代 C 编译器（如 IREE 和 TFLM），并支持主要的 ML 框架（TensorFlow、JAX、PyTorch）。一个复杂的工具链通过使用 MLIR 的“渐进式降低”阶段将 ML 模型转换为优化的二进制文件，从而实现最佳性能。Google 还与 Synaptics 合作构建了首款实现这种新架构的 IoT 处理器。Coral NPU 平台现已在 GitHub 上公开提供，从而促进了边缘 AI 的更广泛采用和创新。",
+  "mainPoints": [
+    {
+      "point": "Coral NPU 是一个开源全栈平台，旨在解决边缘设备中 AI 集成所面临的挑战。",
+      "explanation": "它解决了诸如计算能力受限、普遍存在的设备碎片化以及至关重要的用户信任问题等关键限制，从而在电池受限的边缘设备和可穿戴设备上实现高效、私密和全天候的 AI 运行。"
+    },
+    {
+      "point": "该平台的架构优先考虑 ML 矩阵引擎，以实现高效的设备端推理。",
+      "explanation": "通过颠覆传统的芯片设计，Coral NPU 从芯片底层开始优化 AI，利用 RISC-V 指令集架构实现高性能、低功耗运行。"
+    },
+    {
+      "point": "Coral NPU 通过使用 CHERI 技术的硬件强制沙箱来确保用户隐私。",
+      "explanation": "这提供了细粒度的内存安全和可扩展的软件分段，有效地创建了硬件强制的安全沙箱，从而保护敏感的用户数据免受未经授权的访问。"
+    },
+    {
+      "point": "它提供了一个全面的编程生态系统，支持主要的 ML 框架和 C 编译器。",
+      "explanation": "通过集成 TensorFlow、JAX、PyTorch、IREE 和 TFLM，以及基于 MLIR 的复杂工具链，它简化并精简了将复杂 AI 模型部署到边缘硬件的过程。"
+    }
+  ],
+  "keyQuotes": [
+    "为了使 AI 真正具有辅助性——主动帮助我们安排日程、实时翻译对话或理解我们的物理环境——它必须在我们佩戴和携带的设备上运行。",
+    "Coral NPU 架构通过颠覆传统的芯片设计直接解决了这个问题。它优先考虑 ML 矩阵引擎而不是标量计算，从芯片底层开始优化 AI 架构，并创建一个专为更高效的设备端推理而构建的平台。",
+    "Coral NPU 基于一组兼容 RISC-V 指令集架构的架构 IP 模块，其基本设计提供每秒 512 吉次运算 (GOPS)，同时消耗几毫瓦的功率。"
+  ],
+  "tags": [
+    "边缘人工智能",
+    "NPU",
+    "RISC-V",
+    "设备端人工智能",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 468,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761148800000,
+  "publishDateStr": "2025-10-22",
+  "publishDateTimeStr": "2025-10-22 16:00:00"
+}

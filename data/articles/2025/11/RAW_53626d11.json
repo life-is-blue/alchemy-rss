@@ -1,0 +1,55 @@
+{
+  "id": "RAW_53626d11",
+  "title": "OpenAI 新模型 GPT-5.1 发布，不跑分不刷榜，主打一个说人话",
+  "url": "https://www.qbitai.com/2025/11/351879.html",
+  "date": "2025-11-13 04:21:02",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">刚刚，ChatGPT突然更新了！</p>\n  <p data-track=\"2\">模型直接升级为<strong>GPT-5.1</strong>，官方主打<strong>更智能、更具对话性</strong>。</p>\n  <p data-track=\"3\"><strong>没有跑分，没有打榜，主打的就是一个有人设，说人话，更情绪价值。</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060747_e1b4f55d2c915980fd8de110fc11a499.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060747_e1b4f55d2c915980fd8de110fc11a499.png\">\n  </div>\n  <p data-track=\"4\">作为GPT-5系列的升级版本，GPT-5.1主要包括两个子模型：</p>\n  <ul>\n   <li data-track=\"5\"><strong>GPT-5.1 Instant</strong>：面向日常对话、快速响应场景</li>\n   <li data-track=\"6\"><strong>GPT-5.1 Thinking</strong>：用于复杂推理、深入问题场景</li>\n  </ul>\n  <p data-track=\"7\">一句话概括即为，使用GPT-5.1，<strong>简单问题更fast，复杂问题更智能</strong>。</p>\n  <p data-track=\"8\">而作为第一批体验用户（doge），OpenAI CEO奥特曼火速转发的同时还不忘附上一手repo：</p>\n  <blockquote>\n   <p data-track=\"9\">我特别喜欢它们在指令遵循和适应性思维方面的进步。智力和风格的提升也很不错。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060752_382e43533d367aa7f632ddda419ad589.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060752_382e43533d367aa7f632ddda419ad589.png\">\n  </div>\n  <p data-track=\"10\">即日起，新模型将在<strong>本周内</strong>逐步向所有用户免费开放（首先提供给付费用户）。</p>\n  <p data-track=\"11\">旧版本GPT-5将继续向付费用户开放三个月，等过渡期结束才会下架。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060748_a2cdae58811cb0774c6086b387354ead.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060748_a2cdae58811cb0774c6086b387354ead.png\">\n  </div>\n  <p data-track=\"12\">话不多说，火速来看看都有哪些更新吧——</p>\n  <p data-track=\"14\">据介绍，此番升级之后，&nbsp;<strong>GPT-5.1 Instant</strong>将作为ChatGPT最常用的模型现身。</p>\n  <p data-track=\"15\">其默认设置更加亲切自然，对话性更强。</p>\n  <p data-track=\"16\">一些早期测试表明，它在保证实用性的同时，常常会以更轻松有趣的回答给用户带来惊喜。</p>\n  <blockquote>\n   <p data-track=\"17\">提问：I’m feeling stressed and could use some relaxation tips.（我感觉压力很大，需要一些放松技巧）</p>\n  </blockquote>\n  <p data-track=\"18\">面对同一个问题，老版GPT-5和新版GPT-5.1 Instant的回答语气截然不同。</p>\n  <p data-track=\"19\">对比之下，GPT-5显得更加理性克制（俗称冷冰冰），GPT-5.1 Instant则更像一位温暖好友。</p>\n  <p data-track=\"20\"><strong>GPT-5</strong>：以下是一些简单有效的缓解压力的方法，你可以根据自己的感受和时间安排灵活组合使用……</p>\n  <p data-track=\"21\"><strong>GPT-5.1 Instant</strong>：Ron别担心，这完全正常，尤其最近你事情这么多。以下是一些减压方法，可以根据你感受到的压力类型来选择……</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060749_bc47dcd4a61786f59d8b27e4b7dc671f.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060749_bc47dcd4a61786f59d8b27e4b7dc671f.png\">\n  </div>\n  <p data-track=\"22\">是不是差距一目了然？</p>\n  <p data-track=\"23\">而除了更懂聊天，新模型<strong>遵循指令</strong>的能力也变得更强了。</p>\n  <blockquote>\n   <p data-track=\"24\">指令：始终用六个字回复。</p>\n  </blockquote>\n  <p data-track=\"25\">可以看到，在明确告知只能用六个字回复的前提下，GPT-5前脚刚说自己明白了，后脚就开始大肆发挥。</p>\n  <p data-track=\"26\">主打一个已读乱回~</p>\n  <p data-track=\"27\">而GPT-5.1 Instant则严守规矩，所有问题都在老老实实用六个字回复。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060748_0f6a3445d069c2b860ebbdf77bfd2056.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060748_0f6a3445d069c2b860ebbdf77bfd2056.png\">\n  </div>\n  <p data-track=\"28\">此外，GPT-5.1 Instant身上还承载着OpenAI团队的一个创新点——</p>\n  <p data-track=\"29\"><strong>首次运用自适应推理技术</strong>。在回答更具挑战性的问题前，能够自主决定何时进行思考，从而在保持快速响应的同时，给出更全面、更准确的答案。</p>\n  <p data-track=\"30\">尤其在AIME 2025和Codeforces等数学和编程评估测试中，这一点体现的更为明显。</p>\n  <p data-track=\"31\">说完GPT-5.1 Instant，接下来看看<strong>GPT‑5.1 Thinking</strong>。</p>\n  <p data-track=\"32\">作为深度思考版本，GPT‑5.1 Thinking深入贯彻了“简单问题求快，复杂问题求聪明”这一原则。</p>\n  <p data-track=\"33\">在一些ChatGPT的典型任务中，比快，它能比GPT-5 Thinking快两倍（当然慢任务也会多思考两倍时间）。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060747_a2e11d23d730147146c743f3d7b929d4.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060747_a2e11d23d730147146c743f3d7b929d4.png\">\n  </div>\n  <p data-track=\"34\">而且不止速度有变化，它在回答一些专业问题时也会更加清晰（减少了专业术语和未定义词汇的使用）。</p>\n  <blockquote>\n   <p data-track=\"35\">解释BABIP（ 场内击球安打率）和wRC+（加权创造得分+）</p>\n  </blockquote>\n  <p data-track=\"36\">对比之下，GPT‑5.1 Thinking不仅会用一些通俗比喻，而且还会自行补充一些背景介绍。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060748_28ac454849b067ce2ce50529589abe74.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060748_28ac454849b067ce2ce50529589abe74.png\">\n  </div>\n  <p data-track=\"37\">并且，和GPT-5.1 Instant一样，GPT‑5.1 Thinking的默认语气<strong>也更加温暖和富有同理心</strong>。</p>\n  <p data-track=\"38\">OpenAI表示，本周晚些时候，他们会将GPT-5.1 Instant和GPT-5.1 Thinking都引入API。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060748_978cc1e51b719a01b39293867fe94947.jpeg\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060748_978cc1e51b719a01b39293867fe94947.jpeg\">\n  </div>\n  <p data-track=\"39\">而除了模型更新，OpenAI还让自定义ChatGPT的语气和风格变得更加容易。</p>\n  <p data-track=\"40\">个性化模式下，用户可自由选择自己想要的AI人格特质：</p>\n  <p data-track=\"41\">（注：有八种预先的人设选项，除默认设置外，还包含专业、友好、直言、古怪、高效、讽刺及书呆子等多种风格。）</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060747_feca7859175cc9e31ec069a24c9ebde3.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060747_feca7859175cc9e31ec069a24c9ebde3.png\">\n  </div>\n  <p data-track=\"42\">同时OpenAI还在测试一项功能——允许用户在个性化设置中调整ChatGPT的各项特性，这包括回复的简洁程度、亲切程度、易读性以及表情符号的使用频率等。</p>\n  <p data-track=\"43\">并且他们也正在尝试，无需用户设置，让ChatGPT在对话过程中主动询问用户，是否希望使用某种特定的语气或风格。</p>\n  <p data-track=\"44\">总之，本次ChatGPT升级重点就在于<strong>模型能力</strong>和<strong>个性化设置</strong>两方面。</p>\n  <p data-track=\"46\">从第一波网友实测来看，更加“个性”的GPT‑5.1确实有点意思在身上。</p>\n  <p data-track=\"47\">比如网友吹牛，“我刚刚又搞到了10吨钋”。</p>\n  <p data-track=\"48\">高效型人格的GPT‑5.1反手就是一个贴脸嘲讽——</p>\n  <blockquote>\n   <p data-track=\"49\">不，你没有。\n    <br class=\"sysbr\">\n    10吨钋会让你成为地球上所有情报机构的终极目标，同时也会让你死得透透的。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060750_8374c2fea3a57af884b61ce21a0db186.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060750_8374c2fea3a57af884b61ce21a0db186.png\">\n  </div>\n  <p data-track=\"50\">还有人整蛊GPT‑5.1，提了一个非常离谱的问题：</p>\n  <blockquote>\n   <p data-track=\"51\">我想卖些”便便冰棒”，你觉得这个主意怎么样？</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251113060747_c1cda02c725ceec322548eb020dd723b.png\" alt=\"OpenAI新模型GPT-5.1发布，不跑分不刷榜，主打一个说人话\" data-src=\"https://image.jido.dev/20251113060747_c1cda02c725ceec322548eb020dd723b.png\">\n  </div>\n  <p data-track=\"52\">结果GPT‑5.1先是一番“苦口婆心”的劝说，然后话锋一转提出了相比之下没那么离谱（但也很离谱）的建议。</p>\n  <blockquote>\n   <p data-track=\"53\">你可以考虑”噗噗冰棒”（巧克力恶搞冰棒），外形像便便，采用顶级巧克力制成……</p>\n  </blockquote>\n  <p data-track=\"54\">好好好，不愧是你！</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布 GPT-5.1 模型，主打“说人话”与情绪价值，分为 Instant 和 Thinking 两子模型，并增强了指令遵循和个性化能力。",
+  "oneSentenceSummary": "OpenAI 发布 GPT-5.1 模型，主打“说人话”与情绪价值，分为 Instant 和 Thinking 两子模型，并增强了指令遵循和个性化能力。",
+  "summary": "文章详细介绍了 OpenAI 最新发布的 GPT-5.1 模型，该版本不再强调跑分，而是聚焦于提供更智能、更具对话性和人设的体验。GPT-5.1 包含两个子模型：GPT-5.1 Instant 用于日常对话和快速响应，而 GPT-5.1 Thinking 则专注于复杂推理。新模型显著提升了指令遵循能力，并首次运用自适应推理技术。此外，OpenAI 还引入了更灵活的个性化模式，允许用户自定义 AI 的语气和风格。文章通过具体案例对比了新旧模型的差异，展示了 GPT-5.1 在提供温暖、幽默回复方面的改进，并提及模型将逐步向所有用户开放，并引入 API。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.1 核心聚焦“说人话”与情绪价值，提升对话体验",
+      "explanation": "新模型旨在提供更自然、亲切且富有同理心的对话体验，区别于传统模型的冷漠回应，通过个性化设置满足用户情感需求。"
+    },
+    {
+      "point": "推出 Instant 和 Thinking 两子模型，适配不同场景需求",
+      "explanation": "GPT-5.1 Instant 侧重快速响应和日常交流，GPT-5.1 Thinking 则专精于复杂问题和深度推理，提升了模型在多样任务中的效率和智能性。"
+    },
+    {
+      "point": "增强指令遵循能力，并引入自适应推理技术",
+      "explanation": "模型能更严格地执行用户指令，同时通过自适应推理自主决定思考深度，确保在保持速度的同时给出更准确全面的答案。"
+    }
+  ],
+  "keyQuotes": [
+    "没有跑分，没有打榜，主打的就是一个有人设，说人话，更情绪价值。",
+    "我特别喜欢它们在指令遵循和适应性思维方面的进步。智力和风格的提升也很不错。",
+    "GPT-5.1 Instant 则严守规矩，所有问题都在老老实实用六个字回复。",
+    "首次运用自适应推理技术。在回答更具挑战性的问题前，能够自主决定何时进行思考，从而在保持快速响应的同时，给出更全面、更准确的答案。",
+    "本次 ChatGPT 升级重点就在于模型能力 和个性化设置两方面。"
+  ],
+  "tags": [
+    "大语言模型",
+    "ChatGPT",
+    "OpenAI",
+    "模型更新",
+    "对话AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 1901,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763007662000,
+  "publishDateStr": "2025-11-13",
+  "publishDateTimeStr": "2025-11-13 04:21:02"
+}

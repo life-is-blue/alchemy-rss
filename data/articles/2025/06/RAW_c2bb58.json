@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c2bb58",
+  "title": "北京二环实测蔚来世界模型：心率飙到 128",
+  "url": "https://www.qbitai.com/2025/06/291029.html",
+  "date": "2025-06-05 07:17:03",
+  "author": "一凡",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"38\">一凡 发自 副驾寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"39\">智能车参考 | 公众号 AI4Auto</p>\n  </blockquote>\n  <p data-track=\"2\">蔚来辅助驾驶，一夜逆袭了？</p>\n  <p data-track=\"3\">小长假期间，蔚来悄悄上线了世界模型蔚来NWM<em>(NIO World Model)</em>，落地了「车位到车位」，引发了一些车主好评，也有一些车主吐槽。</p>\n  <p data-track=\"4\">带着上述疑问，智能车参考开着一辆老款ES6，从北京四环开到二环再返回，途经孔庙、水立方、西直门，场景覆盖环岛、立交桥、人流较大的景点等等，一句话总结实测感受就是：</p>\n  <p data-track=\"5\"><strong>有惊喜，有惊讶，还有一点点小惊吓。</strong></p>\n  <p data-track=\"9\">首先是惊讶，蔚来NWM很有“端味儿”，辅助驾驶时会做出一些不提倡，但大多数司机开车时都会有的行为，比如连续变道和闯黄灯，而且NWM和斌哥一样是个老实人，闯完黄灯还会自己主动说出来，显示在屏幕上：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d1bba8e7-9e3a-441d-872b-863b9994f200/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"562\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">然后是惊喜，蔚来NWM实现了「车位到车位」，在停车场内部实测时，NWM能够从<strong>地下4层停车场</strong>自己开到闸机口，虽然这是目前头部玩家都已落地的功能，但是NWM的独特之处在于，<strong>它是利用纯模型实现的</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e48afeba-aa01-4737-daf2-5a6a318c8b00/public\" data-ic=\"false\" data-width=\"494\" data-height=\"220\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">不需要扫图上云，也不需要记忆路线，你只需要给NOMI<em>(蔚来的AI助手)</em>说一句，“开出停车场”：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8a9be715-00bf-4add-7613-f0488141bf00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"506\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">车辆就会自己主动感知：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/971497f9-d3a4-4ee4-64ec-cd9a074f2b00/public\" data-ic=\"false\" data-width=\"488\" data-height=\"216\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">通过识别停车场内部的标识， 包括楼层号、箭头指向、出口标志等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e025fba-6e49-41fc-e1e8-7ef0a6a16200/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"810\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"14\">这样的好处是，用户在第一次去的停车场里就能用辅助驾驶，比较方便。</p>\n  <p data-track=\"15\">最后，整个实测过程中，还有一点点小惊吓。首个版本的风格比较激进，在路口起步提速和变道都比较果断，在个别路口准备转向时，距离非机动车稍微有一点近。智能手表的监测结果显示，<strong>（胆小）主驾开车时最高心率来到了128</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c1d6c5d1-60c4-4bad-030d-704f1f281700/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"743\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">具体到一些场景上，有些地方表现得不错，比如一路上遇到多个环岛：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37489504-747f-4315-e958-571858fc1a00/public\" data-ic=\"false\" data-width=\"446\" data-height=\"234\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">应对得还不错：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b20e915c-724e-42f8-5e09-68b31652b600/public\" data-ic=\"false\" data-width=\"446\" data-height=\"234\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">还有无保护左转：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9a7a7a8e-40f3-4b8c-3775-929045570200/public\" data-ic=\"false\" data-width=\"494\" data-height=\"220\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"19\">遇到施工现场，也能及时发现然后并到正常道路：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f3b35b80-66a5-4d58-b139-cb77a4b44700/public\" data-ic=\"false\" data-width=\"494\" data-height=\"236\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">也能识别部分公交车道：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5d1ee04c-67d7-40d2-30a6-eec6bcdc5e00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"745\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">不过目前有一些场景处理得还不是很好，比如说掉头，偶尔会压实线，个别公交车道识别不到：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c1606eb2-a959-4b6e-d6d4-192796cf3000/public\" data-ic=\"false\" data-width=\"496\" data-height=\"236\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">智能车参考这次还体验了“随心停”功能，在屏幕上拖拽方框，真的是想咋停就咋停，不管地面上有没有划线。</p>\n  <p data-track=\"23\">综合体验下来，蔚来NWM首个版本亮点突出，但也不是十全十美。也提醒各位车主，目前还都是辅助驾驶，无论是蔚来已经启用的世界模型，还是其他哪家的˙辅助驾驶系统，都要看好路况，准备好随时接管。</p>\n  <p data-track=\"24\">有一点要点赞的是，近两年行业喜欢将最新系统同步最新车型上市，为新车销量护航，而<strong>蔚来这次优先给老车主推送了新系统</strong>，称得上是一股清流。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/123de62c-1447-49ca-5745-5cb07168d700/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"477\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">新款车主也不要着急，已发布的新款“5566”都搭载了蔚来自研的神玑芯片，自家硬件更知根知底，软件优化带来的体验上限也会更高。</p>\n  <p data-track=\"26\">不过产品体验之外，如果你也好奇背后的原理，咱还得从背后的技术说起。</p>\n  <p data-track=\"27\">世界模型是什么？为什么蔚来选择了这条路线？</p>\n  <p data-track=\"29\">端到端在2024年一统辅助驾驶江湖，成为年度TOP1的热词，但在蔚来看来，端到端缺乏对空间和时间的理解能力，而此前火热的占用网络对空间的理解能力也有待加强，对细小物体，比如闸机的抬杆识别能力不够。</p>\n  <p data-track=\"30\">蔚来希望能构建一个模型，就像人的大脑一样，具备时间推演和空间想象能力，于是就有了蔚来NWM世界模型。<strong>输入一个真实世界的行车视频，能够推演出“多个平行世界”</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8543d963-0c49-4d36-bf81-ff972b41c100/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"527\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\">模型会根据输入的外界信息，在极短暂的时间内生成多个轨迹，评估后选出最好的，车辆不断往前开，不断同步生成多个轨迹，然后从中不断评估和选择。</p>\n  <p data-track=\"32\">蔚来认为，相比常规的端到端，NWM世界模型的空间理解更好，数据也无需人工标注，想象的视频时序也更长。</p>\n  <p data-track=\"33\">实际上，世界模型并非新鲜事物。据介绍在机器学习领域已有30年的历史，Robotaxi玩家比如Waymo、萝卜快跑和小马智行大概在5年前就开始应用，但随着大模型和端到端打开了AI应用上限，世界模型的思路开始被更多玩家实践。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"北京二环实测蔚来世界模型：心率飙到128\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d26b8591-4c06-4d66-23c7-a9e86f8a0e00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"34\">比如华为和小鹏，在不久前的上海车展时期就发布了相关规划，有不同的应用思考。Momenta虽然没有直接提及，但是透露下一代模型会基于强化学习打造。</p>\n  <p data-track=\"35\">世界模型就是基于强化学习的范式，将其类比人类的学习方式就是，老师不会直接给学生演示怎么做，而是给学生创造一个环境，让学生自己去摸索。</p>\n  <p data-track=\"36\">AI大牛任少卿则用了更直接的类比，当我们想象一个交通场景，大脑会推演不同情景然后做出决策，这实际就是世界模型工作的机制和原理。</p>\n  <p data-track=\"37\">任少卿是深度学习算法ResNet的作者之一，参与了深度学习主导的AI复兴浪潮。而现在，蔚来世界模型NWM，就是他最新的带队实践。</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "北京二环实测蔚来 NWM 世界模型：惊险与惊喜并存，纯模型泊出成亮点。",
+  "oneSentenceSummary": "北京二环实测蔚来 NWM 世界模型：惊险与惊喜并存，纯模型泊出成亮点。",
+  "summary": "文章详细记录了作者驾驶老款 ES6，在北京四环和二环复杂路况下实测蔚来最新上线的 NWM 世界模型辅助驾驶系统的体验。测试场景覆盖环岛、立交桥、人流密集区，并重点体验了纯模型实现的“车位到车位”功能。实测发现，NWM 展现出激进甚至有些“人味儿”的驾驶风格，如连续变道和闯黄灯，带来了惊喜和惊吓（主驾心率飙高至 128），但也成功实现了无需高精地图或记忆路线、仅通过识别环境标识的纯模型地下停车场泊出，这是其基于世界模型的一大创新应用。文章简要介绍了世界模型的概念，指出其相比传统端到端方法在空间和时间理解上的优势，通过模拟“平行世界”推演并选择最佳驾驶轨迹的原理。此外，文章还提及蔚来将新系统优先推送给老车主的举措，认为这是一股清流。总体评价是首个版本亮点突出但仍有提升空间，提醒用户保持警惕，随时准备接管。",
+  "mainPoints": [
+    {
+      "point": "蔚来 NWM 辅助驾驶风格激进且具“人味儿”，带来惊喜与惊吓并存的体验",
+      "explanation": "实测发现 NWM 在城市复杂路况下，如变道、起步等行为风格果断，甚至会出现闯黄灯等类似人类驾驶员的行为。这种风格带来了高效驾驶的惊喜，但也伴随心率飙高至 128 的惊吓感，体现了首个版本的激进特点。"
+    },
+    {
+      "point": "NWM 实现纯模型地下停车场泊出，无需高精地图或记忆路线",
+      "explanation": "基于世界模型，NWM 能够通过识别环境标识而非依赖高精地图或记忆路线，实现从地下多层停车场自主行驶至出口，是其技术能力和应用价值的一大亮点。"
+    },
+    {
+      "point": "世界模型通过模拟“平行世界”推演驾驶决策，在空间和时间理解上具优势",
+      "explanation": "NWM 基于强化学习范式，能够根据输入信息推演多个潜在轨迹并评估选择最佳方案。这种方法相比传统端到端，被认为在理解复杂空间和时间推演方面更具潜力。"
+    },
+    {
+      "point": "蔚来优先将 NWM 新系统推送给老车主，体现用户导向的策略",
+      "explanation": "在行业普遍倾向于将最新技术作为新车型卖点时，蔚来选择优先惠及现有用户，向老车主推送新系统，这一做法被作者评价为一股清流，值得称赞。"
+    }
+  ],
+  "keyQuotes": [
+    "有惊喜，有惊讶，还有一点点小惊吓。",
+    "不需要扫图上云，也不需要记忆路线，你只需要给 NOMI*(蔚来的 AI 助手)*说一句，“开出停车场”。",
+    "智能手表的监测结果显示，（胆小）主驾开车时最高心率来到了 128。",
+    "输入一个真实世界的行车视频，能够推演出“多个平行世界”。",
+    "世界模型就是基于强化学习的范式，将其类比人类的学习方式就是，老师不会直接给学生演示怎么做，而是给学生创造一个环境，让学生自己去摸索。"
+  ],
+  "tags": [
+    "世界模型",
+    "自动驾驶",
+    "城市辅助驾驶",
+    "泊车辅助",
+    "端到端"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1721,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749107823000,
+  "publishDateStr": "2025-06-05",
+  "publishDateTimeStr": "2025-06-05 07:17:03"
+}

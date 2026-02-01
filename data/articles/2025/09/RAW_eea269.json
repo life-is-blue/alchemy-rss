@@ -1,0 +1,56 @@
+{
+  "id": "RAW_eea269",
+  "title": "字节发了个机器人全能大模型，带队人李航",
+  "url": "https://www.qbitai.com/2025/09/329014.html",
+  "date": "2025-09-06 03:55:36",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"90\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"91\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"47\">机器人终于不用散装大脑了！</p>\n  <p data-track=\"48\">字节Seed一个模型就能搞定机器人推理、任务规划和自然语言交互。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img syl-img-loading\" src=\"https://www.qbitai.com/wp-content/uploads/replace/63372c1cc6d9d4a7ec639734e85dcca2.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/63372c1cc6d9d4a7ec639734e85dcca2.gif\">\n  </div>\n  <p data-track=\"49\">经常做机器人的朋友都知道，以前想让机器人干活，得先解决一个烦人的问题——</p>\n  <p data-track=\"50\">模块之间的信息代沟。</p>\n  <p data-track=\"51\">能听懂指令和能完成指令可完全不是一回事，以前要让机器人听懂人话，得装个专门的语言交互模块；要让它能避开障碍从客厅走到阳台，又得搭一套任务规划模块；要想……还得……</p>\n  <p data-track=\"52\">于是不同模块在机器人身上拼凑使用苦开发者久矣。</p>\n  <p data-track=\"53\">但现在，字节Seed推出了<strong>Robix视觉——语言单模型</strong>，把三件事全包了，也不用搞多模块拼接那套了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_f0fd95ddeb0dffc2f5a600c18ceb1040.png\" data-src=\"https://image.jido.dev/20250906063948_f0fd95ddeb0dffc2f5a600c18ceb1040.png\">\n  </div>\n  <p data-track=\"54\">所以，这是怎么做到的呢？</p>\n  <p data-track=\"56\">Robix是一款专门给机器人用的模型。核心想法是让一个模型同时搞定三件事：</p>\n  <ul>\n   <li data-track=\"57\">琢磨怎么干活（推理）</li>\n   <li data-track=\"58\">安排干活步骤（任务规划）</li>\n   <li data-track=\"59\">跟人聊天沟通（自然语言交互）</li>\n  </ul>\n  <p data-track=\"60\">首先，团队的思路是把机器人系统分为两层，高层认知和底层执行，Robix就是管高层认知的。</p>\n  <p data-track=\"61\">底层（VLA）来执行Robix发出的命令。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_a669d5d7fab570ff77e2a595b37f7e3c.png\" data-src=\"https://image.jido.dev/20250906063948_a669d5d7fab570ff77e2a595b37f7e3c.png\">\n  </div>\n  <p data-track=\"62\">而Robix本身也并不是多个模块拼合的散装大脑，而是一个视觉-语言融合的单模型，能同时处理画面、语言，还能把思考过程、动作指令、人类回复整合在一个逻辑循环里，避免模块间沟通卡顿。</p>\n  <p data-track=\"63\">Robix核心采用<strong>思维链推理和三阶段训练策略</strong>。</p>\n  <p data-track=\"64\">在推理与决策方面，采用思维链，根据输入信息进行深思熟虑的推理。</p>\n  <p data-track=\"65\">在推理过程中，它会考虑当前场景中的物体、空间关系、任务要求等因素，预测下一步的思考方向、行动方案以及可选的语言回复。</p>\n  <p data-track=\"66\">这个过程是一个迭代的决策过程，每一步决策都基于当前的观察和之前的交互历史。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_e40446296cf450b2e4e4bb3476656946.png\" data-src=\"https://image.jido.dev/20250906063948_e40446296cf450b2e4e4bb3476656946.png\">\n  </div>\n  <p data-track=\"67\">再来说说Robix是怎么训练的。</p>\n  <p data-track=\"68\">三阶段是分为持续预训练、监督微调和强化学习。</p>\n  <p data-track=\"69\">在持续预训练阶段，用大量机器人相关的数据，教它看懂3D空间、把语言和画面对应上，学会能判断任务进度的能力。</p>\n  <p data-track=\"70\">在监督微调阶段，模拟收拾餐桌、超市购物这些真实场景，教它处理各种指令、按逻辑一步步想问题，同时让它学会跟人简单对话，做到能听懂、会规划、能聊天。</p>\n  <p data-track=\"71\">在强化学习阶段，用专门算法纠正“想的和做的不一样”的问题，通过“做对给奖励、做错给提醒”的方式，让它在长时间任务里决策更稳、动作更准。</p>\n  <p data-track=\"72\">至于效果，团队给出了一些测试数据。</p>\n  <p data-track=\"73\">在基础能力测试上，Robix的两个版本（7B和32B）在8个空间理解任务中有7个比Qwen2.5-VL 表现好，平均准确率更高；</p>\n  <p data-track=\"74\">并且在多数基准测试中超越了闭源的GPT-4o、Gemini 2.5 Pro等。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063949_3f6112a3b7d5b8abdfdaa350af9841b9.png\" data-src=\"https://image.jido.dev/20250906063949_3f6112a3b7d5b8abdfdaa350af9841b9.png\">\n  </div>\n  <p data-track=\"75\">离线评估中，Robix-32B-RL在所有评估集上排名第一。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_87958913672620837e8963b680e2041a.png\" data-src=\"https://image.jido.dev/20250906063948_87958913672620837e8963b680e2041a.png\">\n  </div>\n  <p data-track=\"76\">在模拟真实环境的交互测试，使用UMI设备在线评估，Robix-32B在5个任务中的3个超越Gemini 2.5 Pro，且平均任务进度略高，且大幅超越Qwen2.5-VL-32B。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_d9c7031ebce8fde426d8d186b5d51e6f.png\" data-src=\"https://image.jido.dev/20250906063948_d9c7031ebce8fde426d8d186b5d51e6f.png\">\n  </div>\n  <p data-track=\"77\">而使用GR-3进行在线评估时，在自动化真实机器人评估中，Robix-32B的平均任务进度达到92.5%，分别比Gemini 2.5 Pro和GPT-4o高出4.3和28.1个百分点。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_413571f5fe4ee9d217b05c7ade37ef78.png\" data-src=\"https://image.jido.dev/20250906063948_413571f5fe4ee9d217b05c7ade37ef78.png\">\n  </div>\n  <p data-track=\"78\">看来，机器人模型以后拼的可能就不是模块数量而是单一模型的综合能力了。</p>\n  <p data-track=\"80\">值得关注的是，Robix项目的负责人，正是字节AI实验室的负责人李航博士，更早之前，他曾担任华为诺亚方舟实验室主任和首席科学家。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906064002_efdd0f9b666599e8872f9b66be7a9c35.png\" data-src=\"https://image.jido.dev/20250906064002_efdd0f9b666599e8872f9b66be7a9c35.png\">\n  </div>\n  <p data-track=\"93\">△图源：李航微博</p>\n  <p data-track=\"83\">他于2017年加入字节，后带领团队开展字节的机器人项目。</p>\n  <p data-track=\"84\">在今年6月，有知情人透露李航已经退休，但字节相关负责人则马上表示他还将以返聘顾问的形式进行工作，且工作范围不变。</p>\n  <p data-track=\"85\">另外，李航老师在2022年出版的《机器学习方法》，据说从2018年开始就在构思与写作……</p>\n  <div class=\"pgc-img\">\n   <img alt=\"字节发了个机器人全能大模型，带队人李航\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250906063948_34eea7c37c97bb5dd97bab28f7c50659.png\" data-src=\"https://image.jido.dev/20250906063948_34eea7c37c97bb5dd97bab28f7c50659.png\">\n  </div>\n  <p data-track=\"95\">△图源：李航微博</p>\n  <p data-track=\"88\">现在还新增了深度学习内容，目前新版已经上市，如果想深入学习机器学习的朋友，也可以去追书哦～</p>\n  <p data-track=\"89\"><em>技术报告：https://robix-seed.github.io/robix/</em><em> \n    <br> \n   </em><em>论文地址：http://arxiv.org/abs/2509.01106</em></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "字节跳动发布 Robix 机器人全能大模型，统一视觉、语言、推理和规划，性能卓越。",
+  "oneSentenceSummary": "字节跳动发布 Robix 机器人全能大模型，统一视觉、语言、推理和规划，性能卓越。",
+  "summary": "文章详细介绍了字节跳动 Seed 团队推出的 Robix 机器人视觉-语言单模型。该模型旨在解决传统机器人系统模块化带来的信息代沟问题，通过一个统一的模型实现机器人的推理、任务规划和自然语言交互。Robix 采用高层认知与底层执行分离的架构，并结合思维链推理和三阶段训练策略，使其能够理解 3D 空间、执行复杂指令并与人流畅沟通。在多项基准测试中，Robix 的两个版本（7B 和 32B），特别是 32B 版本，均表现优异，超越了 Qwen2.5-VL、GPT-4o 和 Gemini 2.5 Pro 等领先模型，展现了其在具身智能领域的强大潜力。项目由李航博士带领。",
+  "mainPoints": [
+    {
+      "point": "Robix 通过单一视觉-语言模型解决了传统机器人系统“模块之间信息代沟”的痛点，实现了认知统一。",
+      "explanation": "该模型将推理、任务规划和自然语言交互整合，避免了不同模块间的沟通障碍，显著提升了机器人系统的内聚性和协同效率，使机器人大脑不再“散装”。"
+    },
+    {
+      "point": "采用思维链推理和三阶段训练策略，赋予 Robix 卓越的认知和决策能力。",
+      "explanation": "思维链使其能进行深思熟虑的推理，而持续预训练、监督微调和强化学习则使其在 3D 理解、任务规划和人机对话方面表现突出。"
+    },
+    {
+      "point": "Robix 在多项基准测试中超越了 GPT-4o 和 Gemini 2.5 Pro 等主流模型。",
+      "explanation": "无论是离线评估还是真实机器人交互测试，Robix 均展现出领先的性能，为机器人领域树立了新的技术标杆。"
+    }
+  ],
+  "keyQuotes": [
+    "机器人终于不用散装大脑了！",
+    "Robix 视觉------语言单模型，把三件事全包了，也不用搞多模块拼接那套了。",
+    "Robix 本身也并不是多个模块拼合的散装大脑，而是一个视觉-语言融合的单模型，能同时处理画面、语言，还能把思考过程、动作指令、人类回复整合在一个逻辑循环里，避免模块间沟通卡顿。",
+    "Robix 核心采用思维链推理和三阶段训练策略。",
+    "在多数基准测试中超越了闭源的 GPT-4o、Gemini 2.5 Pro 等。",
+    "看来，机器人模型以后拼的可能就不是模块数量而是单一模型的综合能力了。"
+  ],
+  "tags": [
+    "机器人技术",
+    "机器人大模型",
+    "视觉-语言模型",
+    "具身智能",
+    "多模态AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1558,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757130936000,
+  "publishDateStr": "2025-09-06",
+  "publishDateTimeStr": "2025-09-06 03:55:36"
+}

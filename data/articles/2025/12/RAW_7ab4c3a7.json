@@ -1,0 +1,59 @@
+{
+  "id": "RAW_7ab4c3a7",
+  "title": "Spring Vault 的演进：引入 VaultClient",
+  "url": "https://spring.io/blog/2025/12/26/evolving-spring-vault",
+  "date": "2025-12-26 00:00:00",
+  "author": "mp911de",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Back in September 2016, nearly a decade ago now, we introduced Spring Vault as a integration layer for HashiCorp Vault within Spring applications, complemented by Spring Cloud Vault for Spring Boot arrangements. The core idea has always been straightforward: Externalizing secrets to encrypted Vault storage to reduce application-side complexity considerably, especially by leveraging Vault's secure primitives for communication and authentication.</p>\n  <p><code>VaultTemplate</code> and its reactive counterpart <code>ReactiveVaultTemplate</code> have served us well, providing a familiar Java-based programming interface for interacting with Vault's various secrets engines (Key/Value, PKI, Transit, Transform, and Wrapping support). The use of relative paths has been a key design element here, allowing the client to handle environment-specific configuration details while applications focus on the actual secrets being stored and retrieved.</p>\n  <h2 id=\"revisiting-the-template-api-design\"><a href=\"#revisiting-the-template-api-design\" aria-label=\"revisiting the template api design permalink\" class=\"anchor before\"></a>Revisiting the Template API Design</h2>\n  <p>As with any API that evolves over time, we accumulated quite some functionality in the Template-based approach. Implementations build on top of <code>RestTemplate</code> for synchronous operations and <code>WebClient</code> for reactive scenarios, configured with a <code>UriBuilderFactory</code> and <code>VaultEndpointProvider</code> to determine the target Vault server.</p>\n  <p>While engine-specific APIs enforce path prefixes and prevent absolute path usage, the generic <code>VaultTemplate.read()</code>/<code>.write()</code> methods along with <code>doWithVault()</code>/<code>doWithSession()</code> callbacks operate typically on opaque path strings. Without introspecting each string (which isn't practical) there's no way to guarantee whether a given call targets a relative path within the configured Vault instance or represents an absolute URI to a an entirely different server. This isn't ideal from a security perspective.</p>\n  <p>There's another aspect worth considering: Callback methods expose the raw HTTP client directly, which fundamentally shifts abstraction levels from logical Vault operations down to HTTP-oriented request handling. While this design serves a escape hatch for low-level operations that are not covered by the Template API, it requires a context switch for application developers in terms of abstraction level. It demands a much higher degree of security awareness than should be necessary. A well-designed client library should guide developers toward secure usage patterns by default, catching unintended operations early rather than silently executing them.</p>\n  <p>These observations led us to reconsider the client architecture. The <a href=\"https://poutsma-principles.com/blog/2025/06/03/fluent-apis-overview/\">fluent</a>, functional style embraced in modern Spring Framework components, particularly in the HTTP client evolution, provided clear inspiration for how a revised Vault client could look. A fluent API naturally reduces method proliferation on any given type while guiding developers through the component's intended usage patterns.</p>\n  <p>It's worth noting that <code>VaultTemplate</code> was built on <code>RestTemplate</code>, while <code>ReactiveVaultTemplate</code> has always used the fluent <code>WebClient</code> which itself reinforced the benefits of a fluent design approach for Vault interactions.</p>\n  <p><code>VaultClient</code> and <code>ReactiveVaultClient</code> draw heavily from the <code>RestClient</code> and <code>WebClient</code> design primitives, enriching the fluent interface with Vault-specific concerns. If you're familiar with either of those clients, you'll feel right at home with <code>VaultClient</code>. Spring Vault 4.1 is an opportunity to introduce this new client architecture and elevate all Spring Vault functionality onto a more refined foundation.</p>\n  <p>The new <code>VaultClient</code> provides an intermediate abstraction layer enforcing relative path handling at its core, preventing unintended absolute path usage when configured with for a <code>VaultEndpoint</code>:</p>\n  <pre><code class=\"language-java\">VaultClient client = VaultClient.create(VaultEndpoint.create(\"vault.example.com\", 8200));\n\nVaultResponse response = client.get()\n    .path(\"secret/my-secret\")\n    .token(VaultToken.of(…))\n    .namespace(…)\n    .retrieve()\n    .requiredBody();\n</code></pre>\n  <p>Internally, <code>VaultClient</code> leverages <code>RestClient</code> with its connector infrastructure for SSL configuration, timeouts, retry handling, and other client concerns, while URL construction remains firmly within <code>VaultClient</code> itself. The synchronous as well as the reactive clients consistently throw <code>VaultClientResponseException</code>, a subclass of the generic <code>VaultException</code>, providing proper access to HTTP status codes, response headers, and error response bodies.</p>\n  <p>Most <code>ClientAuthentication</code> implementations require some form of Vault interaction to perform login operations. Typically, these implementations work directly with <code>RestTemplate</code> (or <code>WebClient</code> for <code>AuthenticationStepsOperator</code>). Cloud-specific authentication mechanisms such as GCP Compute, Azure MSI Instance Metadata also needed a <code>RestTemplate</code> to communicate with their respective platform services. Using the same client type for both Vault operations and platform-specific calls created potential for mixing up client instances, leading to requests being dispatched through improper channels.</p>\n  <p>Having a distinguished Vault client type eliminates an entire category of potential bugs.</p>\n  <h2 id=\"migration-considerations\"><a href=\"#migration-considerations\" aria-label=\"migration considerations permalink\" class=\"anchor before\"></a>Migration Considerations</h2>\n  <p>Introducing <code>VaultClient</code> is a step toward a more refined Spring Vault design. This change comes with deprecations of constructors and support classes operating at the <code>RestOperations</code> API level in favor of <code>VaultClient</code> and <code>ReactiveVaultClient</code> variants.</p>\n  <p>This revision happens also in preparation for Spring Framework's planned <code>RestTemplate</code> deprecation in Spring Framework 7.1, as we've outlined in our recent <a href=\"https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring#the-future-of-http-clients-in-spring\">HTTP clients roadmap</a>. The configuration infrastructure both in Spring Vault and Spring Cloud Vault continues for the time being to use <code>RestTemplate</code> alongside Spring Vault's <code>RestTemplateCustomizer</code>, with an additional <code>VaultClientCustomizer</code> now available. We will gradually migrate off <code>RestTemplate</code> towards <code>RestClient</code> and removal of deprecated API at a later stage.</p>\n  <p>We recommend migrating Vault-specific customizations from <code>RestTemplateCustomizer</code> to <code>VaultClientCustomizer</code>, while moving general HTTP client customizations to <code>RestClientCustomizer</code> (or their reactive equivalents as appropriate).</p>\n  <p>We are working towards providing dedicated interfaces for operations with the underlying <code>VaultClient</code> client, to cover Vault functionality not directly exposed through the Template API as direct replacements for <code>doWithVault()</code>/<code>doWithSession()</code> callback methods.</p>\n  <h2 id=\"whats-next\"><a href=\"#whats-next\" aria-label=\"whats next permalink\" class=\"anchor before\"></a>What's next?</h2>\n  <p>We're exploring several integrations for stateful components that would benefit from a Vault integration. For example, Vault's PKI secrets engine can serve as certificate authority for Spring Boot's SSL bundles, providing both trust anchors and certificate issuance for embedded web servers without the need to deploy certificates as files but rather obtaining certificates directly from Vault instead.</p>\n  <p>Another idea worth exploring is credentials rotation for database connections that presents a broad range of arrangements such as updating credentials for a pooling component or rotation of data sources.</p>\n  <p>As always, we <a href=\"https://github.com/spring-projects/spring-vault/issues\">welcome feedback</a> on these directions as Spring Vault evolves.</p>\n </body>\n</html>",
+  "aiSummary": "Spring Vault 4.1 引入了新的 `VaultClient`，它具有流畅的 API，旨在增强与 HashiCorp Vault 交互时的安全性、一致性以及开发者体验，这也是向 `RestClient` 广泛演进的一部分。",
+  "oneSentenceSummary": "Spring Vault 4.1 引入了新的 `VaultClient`，它具有流畅的 API，旨在增强与 HashiCorp Vault 交互时的安全性、一致性以及开发者体验，这也是向 `RestClient` 广泛演进的一部分。",
+  "summary": "这篇 Spring 博客文章介绍了 Spring Vault 4.1 中新的 `VaultClient` 和 `ReactiveVaultClient`，旨在取代旧的 `VaultTemplate` 来与 HashiCorp Vault 进行交互。这些更改解决了 `VaultTemplate` 设计所带来的绝对路径处理和抽象级别切换等安全问题。受 `RestClient` 和 `WebClient` 的启发，新的流畅 API 强制使用相对路径，并提供更一致、安全且对开发者更友好的体验。文章详细阐述了此次演进背后的动机，包括 `RestTemplate` 在 Spring Framework 7.1 中计划弃用，并为现有用户提供了迁移指南。它还简要提及了未来的集成可能性，例如利用 Vault 的 PKI 为 Spring Boot SSL 捆绑包和数据库连接的凭证轮换。",
+  "mainPoints": [
+    {
+      "point": "已弃用的 `VaultTemplate` 存在安全风险和抽象级别错位问题。",
+      "explanation": "现有的 `VaultTemplate` 允许不明确的路径字符串，这使得难以阻止意外的绝对路径使用，并且其回调方法暴露了低级 HTTP 客户端的详细信息，要求开发者切换抽象级别。"
+    },
+    {
+      "point": "新的 `VaultClient` 提供了受现代 Spring 客户端启发的安全、流畅的 API。",
+      "explanation": "借鉴 `RestClient` 和 `WebClient`，`VaultClient` 提供了一个流畅的接口，强制执行相对路径处理，从而防止安全漏洞，并通过默认引导开发者采用安全模式。"
+    },
+    {
+      "point": "迁移到 `VaultClient` 与 Spring Framework 的 HTTP 客户端路线图保持一致。",
+      "explanation": "`VaultClient` 的引入使 Spring Vault 为 `RestTemplate` 在 Spring Framework 7.1 中的弃用做好了准备，并建议将 `RestTemplateCustomizer` 中的自定义项迁移到 `VaultClientCustomizer`。"
+    },
+    {
+      "point": "专用客户端类型增强了安全性并减少了潜在错误。",
+      "explanation": "为 Vault 操作提供独立的 `VaultClient` 类型，并将其与用于平台特定认证（如 GCP/Azure）的客户端分离，可以有效防止请求意外地通过不适当的通道进行路由。"
+    }
+  ],
+  "keyQuotes": [
+    "核心思想一直很简单：将敏感信息外部化到加密的 Vault 存储中，以大幅降低应用程序端的复杂性，特别是通过利用 Vault 的安全原语进行通信和认证。",
+    "如果不检查每个字符串（这不切实际），就无法保证给定调用是针对配置的 Vault 实例中的相对路径，还是表示指向完全不同服务器的绝对 URI。从安全角度来看，这并不理想。",
+    "一个精心设计的客户端库应该默认引导开发者采用安全使用模式，及早捕获意外操作，而不是静默执行它们。",
+    "如果您熟悉这两个客户端中的任何一个，那么使用 `VaultClient` 会让您感到非常熟悉。",
+    "拥有独立的 Vault 客户端类型消除了整类潜在的错误。"
+  ],
+  "tags": [
+    "Spring Vault",
+    "HashiCorp Vault",
+    "API 设计",
+    "客户端库",
+    "安全性"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 919,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766707200000,
+  "publishDateStr": "2025-12-26",
+  "publishDateTimeStr": "2025-12-26 00:00:00"
+}

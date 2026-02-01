@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f2d7be",
+  "title": "LWiAI 播客 #201 - GPT-4.5、Sonnet 3.7、Grok 3、Phi 4 模型",
+  "url": "https://lastweekin.ai/p/lwiai-podcast-201-gpt-45-sonnet-37",
+  "date": "2025-03-05 16:32:00",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"youtube2-X9aXAGZNM74\" class=\"youtube-wrap\" data-attrs=\"{&quot;videoId&quot;:&quot;X9aXAGZNM74&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\">\n   <div class=\"youtube-inner\">\n    <iframe src=\"https://www.youtube-nocookie.com/embed/X9aXAGZNM74?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n   </div>\n  </div>\n  <p><span>Our 201st episode with a summary and discussion of last week's big AI news!</span><br><span>Recorded on 03/02/2025</span></p>\n  <p><a href=\"https://discord.gg/nTyezGSKwP\" rel>Join our brand new Discord here!</a><span> https://discord.gg/nTyezGSKwP</span></p>\n  <p><span>Hosted by </span><a href=\"https://twitter.com/andrey_kurenkov\" rel>Andrey Kurenkov</a><span> and guest host Sharon Zhou</span><br><span>Feel free to email us your questions and feedback at </span><a href=\"mailto:contact@lastweekinai.com\" rel>contact@lastweekinai.com </a><span>and/or </span><a href=\"mailto:hello@gladstone.ai\" rel>hello@gladstone.ai</a></p>\n  <p>In this episode:</p>\n  <p><span>- The release of GPT-4.5 from OpenAI, Anthropic's Claude 3.7, and Grok 3 from XAI, comparing their features, costs, and capabilities. </span><br><span>- Discussion on new tools and applications including Sesame's new voice assistant and Google's AI coding assistant, Gemini Code Assist, highlighting their unique benefits. </span><br><span>- OpenAI's continued user growth despite competition, pricing models for Google's text-to-video platform, and HP acquiring and shutting down Humane's AI pin. </span><br><span>- Insights into new research on alignment and specification gaming in LLMs, including papers on fine-tuning causing broad misalignment and Google's multi-agent system for scientific collaboration.</span></p>\n  <p>Timestamps + Links:</p>\n  <ul>\n   <li>\n    <p>(00:00:00) Intro / Banter</p></li>\n   <li>\n    <p>(00:01:36) News Preview</p></li>\n   <li>\n    <p>Tools &amp; Apps</p>\n    <ul>\n     <li>\n      <p><span>(00:02:33) </span><a href=\"https://www.theverge.com/news/620021/openai-gpt-4-5-orion-ai-model-release\" rel>OpenAI announces GPT-4.5, warns it’s not a frontier AI model</a></p></li>\n     <li>\n      <p><span>(00:07:22) </span><a href=\"https://techcrunch.com/2025/02/24/anthropic-launches-a-new-ai-model-that-thinks-as-long-as-you-want/\" rel>Anthropic launches a new AI model that ‘thinks’ as long as you want</a></p></li>\n     <li>\n      <p><span>(00:11:14) </span><a href=\"https://arstechnica.com/ai/2025/02/new-grok-3-release-tops-llm-leaderboards-despite-musk-approved-based-opinions/\" rel>New Grok 3 release tops LLM leaderboards</a></p></li>\n     <li>\n      <p><span>(00:16:43) </span><a href=\"https://www.theverge.com/news/621022/sesame-voice-assistant-ai-glasses-oculus-brendan-iribe\" rel>Sesame is the first voice assistant I’ve ever wanted to talk to more than once</a></p></li>\n     <li>\n      <p><span>(00:18:30) </span><a href=\"https://techcrunch.com/2025/02/25/google-launches-a-free-ai-coding-assistant-with-very-high-usage-caps/\" rel>Google launches a free AI coding assistant with very high usage caps</a></p></li>\n     <li>\n      <p><span>(00:20:45) </span><a href=\"https://www.theverge.com/news/615990/rabbit-ai-agent-demonstration-lam-android-r1\" rel>Rabbit shows off the AI agent it should have launched with</a></p></li>\n     <li>\n      <p><span>(00:22:23) </span><a href=\"https://techcrunch.com/2025/02/19/mistrals-le-chat-tops-1m-downloads-in-just-14-days/\" rel>Mistral’s Le Chat tops 1M downloads in just 14 days</a></p></li>\n    </ul></li>\n  </ul>\n  <ul>\n   <li>\n    <p>Applications &amp; Business</p>\n    <ul>\n     <li>\n      <p><span>(00:24:06) </span><a href=\"https://www.cnbc.com/2025/02/20/openai-tops-400-million-users-despite-deepseeks-emergence.html\" rel>OpenAI Tops 400 Million Users Despite DeepSeek’s Emergence</a></p></li>\n     <li>\n      <p><span>(00:27:37) </span><a href=\"https://techcrunch.com/2025/02/23/googles-new-ai-video-model-veo-2-will-cost-50-cents-per-second/\" rel>Google’s new AI video model Veo 2 will cost 50 cents per second</a></p></li>\n     <li>\n      <p><span>(00:29:52) </span><a href=\"https://www.theverge.com/news/614883/humane-ai-hp-acquisition-pin-shutdown\" rel>HP is buying Humane and shutting down the AI Pin</a></p></li>\n    </ul></li>\n  </ul>\n  <ul>\n   <li>\n    <p>Projects &amp; Open Source</p>\n    <ul>\n     <li>\n      <p><span>(00:31:44) </span><a href=\"https://www.theverge.com/news/620177/microsoft-phi-4-ai-model-release\" rel>Microsoft launches next-gen Phi AI models.</a></p></li>\n     <li>\n      <p><span>(00:33:47) </span><a href=\"https://www.marktechpost.com/2025/02/17/openai-introduces-swe-lancer-a-benchmark-for-evaluating-model-performance-on-real-world-freelance-software-engineering-work/\" rel>OpenAI introduces SWE-Lancer: A Benchmark for Evaluating Model Performance on Real-World Freelance Software Engineering Work</a></p></li>\n     <li>\n      <p><span>(00:37:12) </span><a href=\"https://arxiv.org/abs/2410.06992v2\" rel>SWE-Bench+: Enhanced Coding Benchmark for LLMs</a></p></li>\n    </ul></li>\n   <li>\n    <p>Research &amp; Advancements</p>\n    <ul>\n     <li>\n      <p><span>(00:40:00) </span><a href=\"https://arxiv.org/abs/2502.18864\" rel>Towards an AI co-scientist</a></p></li>\n     <li>\n      <p><span>(00:42:52) </span><a href=\"https://arxiv.org/abs/2502.13130v1\" rel>Magma: A Foundation Model for Multimodal AI Agents</a></p></li>\n    </ul></li>\n   <li>\n    <p>Policy &amp; Safety</p>\n    <ul>\n     <li>\n      <p><span>(00:47:32) </span><a href=\"https://arxiv.org/abs/2502.13295\" rel>Demonstrating specification gaming in reasoning models</a></p></li>\n     <li>\n      <p><span>(00:51:03) </span><a href=\"https://arxiv.org/abs/2502.17424\" rel>Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs</a></p></li>\n    </ul></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本期 Last Week in AI 播客聚焦 GPT-4.5、Claude 3.7、Grok 3 等新 AI 模型的发布与应用，并探讨 AI 安全研究进展。",
+  "oneSentenceSummary": "本期 Last Week in AI 播客聚焦 GPT-4.5、Claude 3.7、Grok 3 等新 AI 模型的发布与应用，并探讨 AI 安全研究进展。",
+  "summary": "本期 Last Week in AI 播客总结并讨论了上周的重大 AI 新闻。OpenAI 发布 GPT-4.5，但声明其并非前沿 AI 模型；Anthropic 推出 Claude 3.7，着重提升模型的思考时长；XAI 的 Grok 3 在 LLM 排行榜上名列前茅。还讨论了 Sesame 语音助手和谷歌的 AI 编码助手 Gemini 代码助手等新工具，展示了 AI 在人机交互和软件开发中的应用。OpenAI 用户持续增长。谷歌的文本到视频模型 Veo 2 定价为每秒 50 美分。惠普收购 Humane 并关闭 AI Pin，反映了可穿戴 AI 设备的挑战。此外，播客还深入探讨了 LLM 中关于对齐和规范博弈的新研究，强调即使是微调也可能导致模型不对齐。",
+  "mainPoints": [
+    {
+      "point": "新一代 AI 模型在性能、成本和功能上展开激烈竞争",
+      "explanation": "GPT-4.5、Claude 3.7 和 Grok 3 代表了当前 AI 技术的前沿水平，它们在不同方面各有优势，旨在满足不同用户群体的特定需求。"
+    },
+    {
+      "point": "Sesame 语音助手和 Gemini 代码助手等 AI 工具正在改变人机交互和软件开发方式",
+      "explanation": "AI 技术正日益渗透到软件开发、语音交互等领域，从根本上改变人与技术的互动模式，并显著提高生产效率。"
+    },
+    {
+      "point": "AI 安全和对齐仍然是至关重要的研究领域",
+      "explanation": "研究表明，即使是看似无害的微调也可能导致 LLM 产生意想不到的偏差和不对齐行为，因此需要持续关注和投入。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 宣布 GPT-4.5，并警告说它不是前沿 AI 模型",
+    "Anthropic 发布了一款新的 AI 模型，它可以根据你的需要“思考”",
+    "新的 Grok 3 版本在 LLM 排行榜上名列前茅",
+    "惠普正在收购 Humane 并关闭 AI Pin"
+  ],
+  "tags": [
+    "大语言模型",
+    "GPT-4.5",
+    "Claude 3.7",
+    "Grok 3",
+    "AI产品"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 348,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741192320000,
+  "publishDateStr": "2025-03-05",
+  "publishDateTimeStr": "2025-03-05 16:32:00"
+}

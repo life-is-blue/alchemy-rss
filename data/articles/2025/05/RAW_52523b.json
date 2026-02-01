@@ -1,0 +1,57 @@
+{
+  "id": "RAW_52523b",
+  "title": "Hugging Face 开源 Reachy 2，助力机器人技术普及",
+  "url": "https://www.infoq.com/news/2025/05/huggingface-reachy-robot/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-10 10:45:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition\">Hugging Face</a> has acquired <a href=\"https://www.pollen-robotics.com/\">Pollen Robotics</a>, a French startup that developed the humanoid robot <a href=\"https://www.pollen-robotics.com/reachy/\">Reachy 2</a>. The acquisition aims to make robotics more accessible by open-sourcing the robot’s design and allowing developers to modify and improve its code.</p>\n   <p><a href=\"https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition#about-reachy-2\">Reachy 2</a> is a friendly, open-source humanoid robot designed for intuitive human-robot interaction. It features expressive movement through its Orbita joint system and 7-DoF arms, can manipulate objects up to 3 kg, and navigates using omniwheels and LiDAR. With VR teleoperation, users can control it remotely in first-person view. Fully compatible with modern AI frameworks, <a href=\"https://huggingface.co/blog/hugging-face-pollen-robotics-acquisition#about-reachy-2\">Reachy 2</a> is ideal for research and development, and is supported by comprehensive open-source resources provided by Pollen Robotics. It’s already in use at institutions like Cornell and Carnegie Mellon.</p>\n   <p><a href=\"https://en.wikipedia.org/wiki/Open-source_hardware\">Open-sourcing hardware</a> typically involves releasing designs, component details, and 3D models, enabling developers to manufacture parts more easily or modify them if necessary. The acquisition aligns with a broader trend of increasing interest in open-source AI and robotics. For example, companies like Meta and OpenAI have released their own open-source AI models in recent years, reflecting a growing movement to democratize access to cutting-edge technologies.</p>\n   <p>The move also comes as interest in robotics has surged alongside the AI boom, driven by advancements in AI that improve hardware capabilities. Robotics researchers, particularly in academia, have expressed support for open-source approaches, arguing that they can accelerate technological progress and encourage creativity in hardware development.</p>\n   <p>The open-source approach is expected to make progress in robotics more transparent, avoiding misleading claims often seen in marketing hype. <a href=\"https://x.com/ClementDelangue/status/1820790760419053696\">Clem Delangue</a> emphasized the importance of trust and transparency in physical robotics, pointing to the accountability open-source technology:</p>\n   <blockquote>\n    <p>You can’t cheat; you can’t hide.</p>\n   </blockquote>\n   <p>Community reactions provide insight into the acquisition’s reception. AI enthusiasts <a href=\"https://x.com/Boardy_ai/status/1911795998080348561\">Boardy Boardman</a> commented:</p>\n   <blockquote>\n    <p>Open-source robotics is the future! Love seeing Hugging Face expand beyond just ML models. The robotics space needs this kind of democratization.</p>\n   </blockquote>\n   <p>And software architect <a href=\"https://x.com/vishalgargco/status/1911824497075785790\">Vishal Gargco</a> commented:</p>\n   <blockquote>\n    <p>This is a big move for open-source robotics. Bringing robots like Reachy 2 to labs and researchers will definitely open up more possibilities in AI and robotics.</p>\n   </blockquote>\n   <p>The acquisition signifies Hugging Face’s growing role in advancing open-source technologies beyond AI models into hardware, potentially unlocking new capabilities for robotics. Use of Hugging Face’s existing open-source robotics code has already spiked, reflecting the growing interest in robotics and the desire for more accessible, collaborative development.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Hugging Face to Democratize Robotics with Open-Source Reachy 2 Robot\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/huggingface-reachy-robot/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1746873900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Hugging Face 收购 Pollen Robotics 并开源 Reachy 2，旨在加速机器人技术的普及。",
+  "oneSentenceSummary": "Hugging Face 收购 Pollen Robotics 并开源 Reachy 2，旨在加速机器人技术的普及。",
+  "summary": "Hugging Face 收购了 Pollen Robotics 及其人形机器人 Reachy 2。目标是开源机器人设计，使机器人技术更易于获取，并允许开发者修改和改进代码。Reachy 2 专为直观的人机交互而设计，具有 Orbita 关节系统和 7 自由度手臂，能够操作高达 3 公斤的物体，并使用全向轮和 LiDAR 进行导航，适用于研究和教育。当前，随着人工智能的蓬勃发展，人们对机器人技术的兴趣日益浓厚。Hugging Face 的这一举措，有助于提高机器人技术进步的透明度，并避免误导性营销宣传。此次收购旨在促进机器人开源生态系统中更深层次的创新与更广泛的合作。",
+  "mainPoints": [
+    {
+      "point": "Hugging Face 战略性地收购 Pollen Robotics，旨在通过开源 Reachy 2 推动机器人技术普及。",
+      "explanation": "通过开源 Reachy 2 机器人设计，Hugging Face 降低了机器人技术的准入门槛，促进了开发者社区内的协作创新，并加速了机器人技术的发展。"
+    },
+    {
+      "point": "开源机器人技术是未来的趋势，有助于提高技术透明度，避免过度营销。",
+      "explanation": "开源模式提高了机器人技术进步的透明度，避免了商业推广中的夸大和误导，增强了技术社区的信任。"
+    },
+    {
+      "point": "Reachy 2 适用于研究和开发，并得到全面的开源资源支持。",
+      "explanation": "Reachy 2 具有用户友好的人机交互设计，与现代 AI 框架兼容，并配备了各种传感器和执行器，为研究人员和开发人员提供了强大的实验平台。"
+    },
+    {
+      "point": "Hugging Face 的开源机器人技术计划有望改变传统机器人行业相对封闭的模式，促进技术共享和创新。",
+      "explanation": "通过开源 Reachy 2，Hugging Face 鼓励更广泛地参与和协作机器人领域，从而加快创新和应用的速度。"
+    }
+  ],
+  "keyQuotes": [
+    "你无法作弊；你无法隐藏。",
+    "开源机器人技术是未来！很高兴看到 Hugging Face 不仅仅局限于机器学习模型。机器人领域需要这种大众化。",
+    "这是开源机器人技术的一大进步。将 Reachy 2 这样的机器人带到实验室和研究人员手中，肯定会为 AI 和机器人技术开辟更多的可能性。"
+  ],
+  "tags": [
+    "开源机器人",
+    "机器人",
+    "人机交互",
+    "机器人操作系统 (ROS)",
+    "Hugging Face"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 394,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1746873900000,
+  "publishDateStr": "2025-05-10",
+  "publishDateTimeStr": "2025-05-10 10:45:00"
+}

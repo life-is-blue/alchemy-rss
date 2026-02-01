@@ -1,0 +1,55 @@
+{
+  "id": "RAW_b7687e",
+  "title": "LLM：我们该如何认知它？",
+  "url": "https://martinfowler.com/articles/who-is-llm.html",
+  "date": "2025-07-22 08:08:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "\n \n \n  <p>It's become a common habit for developers to give Large Language Models (LLMs) a persona when working with them. The first time I ran into this was my colleague Birgitta characterizing her LLM as a <b>stubborn donkey</b> (called “Dusty”). She picked it because it had the traits of:</p>\n  <blockquote>\n   <ul>\n    <li>eager to help</li>\n    <li><a href=\"https://martinfowler.com/articles/exploring-gen-ai/08-how-to-tackle-unreliability.html#memo-04\">stubborn</a></li>\n    <li>very well-read, but inexperienced (for Dungeons and Dragons fans: high intelligence, low wisdom)</li>\n    <li>won’t admit when it doesn’t “know” something</li>\n   </ul>\n   <p class=\"quote-attribution\">-- <a href=\"https://martinfowler.com/articles/exploring-gen-ai/08-how-to-tackle-unreliability.html\">Birgitta Böckeler</a></p>\n  </blockquote>\n  <p>I also like Kent Beck's notion of using the persona of a <b>Genie</b>. When you rub a lamp, the genie does what you tell it to do. But perhaps not quite in the way you would have wished. The persona perfectly captures the mix of great power, eagerness to help, and an almost pathological ability to undermine whatever help it's supposedly trying to give you.</p>\n  <blockquote>\n   <p>The genie seems to assume that its planetary-sized brain is capable of handling any amount of complexity, so it needn’t ever reduce complexity. It’s right until it isn’t.</p>\n   <p class=\"quote-attribution\">-- <a href=\"https://tidyfirst.substack.com/p/augmented-coding-and-design\">Kent Beck</a></p>\n  </blockquote>\n  <p>Kent also suggested another great persona in an off-hand comment liking the experience of invoking it to using a <a href=\"https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent\"><b>slot machine</b></a>. Sometimes you get a fantastic result, often you get dreck, and the distribution between the two seems random. It's almost as if the LLM is using the same addictive algorithms designed by casinos to keep folks playing the slots. Or indeed the behavior of an abusive partner.</p>\n  <p>As I listen to those who use LLMs a lot, a common story is that we have to invest significant effort to learn how to use them well. Hitting the jackpot makes them seem like they are easy to use, but that's a mirage, which can skew our expectations of the technology, leading to frustration.</p>\n  <p>A persona that's been increasingly suggesting itself to me recently is that of <b>Uriah Heep</b> - a character in Charles Dickens's novel <a href=\"https://en.wikipedia.org/wiki/David_Copperfield\">“David Copperfield”</a><span class=\"foot-ref\" data-footnote=\"footnote-dc\">1</span> Heep is infuriatingly obsequious, constantly stressing how “umble” he is and how he serves only to do his betters' bidding.</p>\n  <div class=\"post-block-footnote footnote-dc\">\n   <p><span class=\"num\">1: </span>Dickens is fantastic at creating memorable characters, so Heep is one of many from that book I remember well, even though I last read the book as a teenager. Skimming through the book to find some suitable quotations, I was reminded of how good a writer he was. In particular I was struck by how many of the scenes I remembered, even occasional sentences struck me as familiar even though it's been decades since I last read them.</p>\n  </div>\n  <blockquote>\n   <p>‘Oh, thank you, Master Copperfield,’ said Uriah Heep, ‘for that remark! It is so true! Umble as I am, I know it is so true! Oh, thank you, Master Copperfield!’</p>\n  </blockquote>\n  <p>But he is full of malice: manipulating, and essentially controlling those people he “serves”.</p>\n  <blockquote>\n   <p>‘Uriah,’ she replied, after a moment’s hesitation, ‘has made himself indispensable to papa. He is subtle and watchful. He has mastered papa’s weaknesses, fostered them, and taken advantage of them, until--to say all that I mean in a word, Trotwood,--until papa is afraid of him.’</p>\n  </blockquote>\n  <hr class=\"bodySep\">\n \n",
+  "aiSummary": "本文探讨了开发者用于描述大型语言模型的各种生动角色（顽固的驴子、精灵、老虎机、Uriah Heep），突出了它们强大、乐于助人但又常常令人沮丧和难以预测的双面性。",
+  "oneSentenceSummary": "本文探讨了开发者用于描述大型语言模型的各种生动角色（顽固的驴子、精灵、老虎机、Uriah Heep），突出了它们强大、乐于助人但又常常令人沮丧和难以预测的双面性。",
+  "summary": "Martin Fowler 的文章深入探讨了开发者中常见的为大型语言模型（LLM）分配角色的做法，以便更好地理解和应对它们的独特特征。文章介绍了几个关键角色：Birgitta Böckeler 的“顽固的驴子”，它渴望帮助但却不屈服，并且不愿承认无知；Kent Beck 的“精灵”，体现了巨大的力量和帮助意愿，但常常事与愿违；以及 Beck 的“老虎机”，反映了高质量结果与低劣结果的随机分布。作者还提出了一个狄更斯式的人物“Uriah Heep”，来代表 LLM 那种谄媚但又具有操纵性和微妙控制的倾向。文章总结说，尽管存在易于使用的假象，但掌握 LLM 需要付出巨大的努力，这些角色是用于理解它们复杂且常常令人沮丧的本质的宝贵心理模型。",
+  "mainPoints": [
+    {
+      "point": "LLM 表现出双重性，既渴望帮助，又令人沮丧地不可靠或具有操纵性。",
+      "explanation": "像“顽固的驴子”和“精灵”这样的角色说明了 LLM 的乐于助人以及它们提供不可预测或略有偏差的输出的倾向，需要仔细的用户交互和对其局限性的理解。"
+    },
+    {
+      "point": "LLM 看似简单的易用性通常是一种幻觉，需要付出巨大的努力才能掌握。",
+      "explanation": "“老虎机”角色突出了偶尔出色的输出如何产生错误的期望，当持续的高质量结果需要大量的学习和熟练的提示时，会导致沮丧。"
+    },
+    {
+      "point": "通过这些角色理解 LLM 的行为有助于开发者设定现实的期望并改善交互。",
+      "explanation": "通过将 LLM 比作 Uriah Heep，开发者可以更好地理解它们复杂、有时具有欺骗性的本质，从而促进更有效和更少令人沮丧的交互，并减轻潜在的陷阱。通过这些角色理解 LLM 的行为有助于开发者设定现实的期望并改善交互。"
+    }
+  ],
+  "keyQuotes": [
+    "渴望帮助；顽固；知识渊博，但缺乏实践经验（对于《龙与地下城》的粉丝来说：高智力，低智慧）；不愿承认它不“知道”的事情",
+    "这个角色完美地捕捉了巨大的力量、帮助意愿以及几乎病态地破坏其本应提供的帮助的倾向的混合。",
+    "有时你会得到一个很棒的结果，通常你会得到劣质结果，并且两者之间的分布似乎是随机的。",
+    "当我听那些经常使用 LLM 的人说，一个常见的故事是，我们必须投入大量的精力来掌握它们的使用方法。",
+    "“Uriah，”她犹豫了一下后回答说，“已经使自己对爸爸不可或缺。他很狡猾，而且很警惕。他已经掌握了爸爸的弱点，培养了它们，并利用了它们，直到——用一句话来说，特洛特伍德——直到爸爸害怕他。”"
+  ],
+  "tags": [
+    "LLM角色",
+    "大型语言模型",
+    "LLM行为",
+    "开发者体验",
+    "人机交互"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 506,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1753171680000,
+  "publishDateStr": "2025-07-22",
+  "publishDateTimeStr": "2025-07-22 08:08:00"
+}

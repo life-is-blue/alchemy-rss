@@ -1,0 +1,59 @@
+{
+  "id": "RAW_52517fa8",
+  "title": "关于使用 LLM 移植开源代码问题的解答",
+  "url": "https://simonwillison.net/2026/Jan/11/answers/#atom-everything",
+  "date": "2026-01-11 22:59:23",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Jan/11/answers/\">\n    <p class=\"mobile-date\">11th January 2026</p>\n    <p>Last month I <a href=\"https://simonwillison.net/2025/Dec/15/porting-justhtml/\">wrote about porting JustHTML from Python to JavaScript</a> using Codex CLI and GPT-5.2 in a few hours while also buying a Christmas tree and watching Knives Out 3. I ended that post with a series of open questions about the ethics and legality of this style of work. apetros on <a href=\"https://lobste.rs/\">lobste.rs</a> just <a href=\"https://lobste.rs/s/cmsfbu/don_t_fall_into_anti_ai_hype#c_cqkdve\">challenged me to answer them</a>, which is fair enough! Here’s my attempt at that.</p>\n    <p>You can read <a href=\"https://simonwillison.net/2025/Dec/15/porting-justhtml/\">the original post</a> for background, but the short version is that it’s now possible to point a coding agent at some other open source project and effectively tell it “port this to language X and make sure the tests still pass” and have it do exactly that.</p>\n    <p>Here are the questions I posed along with my answers based on my current thinking. Extra context is that I’ve since tried variations on a similar theme a few more times using Claude Code and Opus 4.5 and found it to be <em>astonishingly</em> effective.</p>\n    <blockquote>\n     <p>Does this library represent a legal violation of copyright of either the Rust library or the Python one?</p>\n    </blockquote>\n    <p>I decided that the right thing to do here was to <a href=\"https://github.com/simonw/justjshtml/commit/a415d0af40c34bf9a856e956d841513f482867e3\">keep the open source license and copyright statement</a> from the Python library author and treat what I had built as a derivative work, which is the entire <em>point</em> of open source.</p>\n    <blockquote>\n     <p>Even if this is legal, is it ethical to build a library in this way?</p>\n    </blockquote>\n    <p>After sitting on this for a while I’ve come down on yes, provided full credit is given and the license is carefully considered. Open source allows and encourages further derivative works! I never got upset at some university student forking one of my projects on GitHub and hacking in a new feature that they used, I don’t think this is materially different.</p>\n    <blockquote>\n     <p>Does this format of development hurt the open source ecosystem?</p>\n    </blockquote>\n    <p>Now this one is complicated!</p>\n    <p>It definitely hurts some projects because there are open source maintainers out there who say things like “I’m not going to release any open source code any more because I don’t want it used for training”—I expect some of those would be equally angered by LLM-driven derived works as well.</p>\n    <p>I don’t know how serious this problem is—I’ve seen angry comments from anonymous usernames, but do they represent genuine open source contributions or are they just angry anonymous usernames?</p>\n    <p>If we assume this is real, does the loss of those individuals get balanced out by the increase in individuals who CAN contribute to open source because they can now get work done in a few hours that might previously have taken them a few days that they didn’t have to spare?</p>\n    <p>I’ll be brutally honest about that question: I think that if “they might train on my code / build a derived version with an LLM” is enough to drive you away from open source, your open source values are distinct enough from mine that I’m not ready to invest significantly in keeping you. I’ll put that effort into welcoming the newcomers instead.</p>\n    <p>The much bigger concern for me is the impact of generative AI on <em>demand</em> for open source. The recent <a href=\"https://simonwillison.net/2026/Jan/7/adam-wathan/\">Tailwind story</a> is a visible example of this—while Tailwind blamed LLMs for reduced traffic to their documentation resulting in fewer conversions to their paid component library, I’m suspicious that the reduced demand there is because LLMs make building good-enough versions of those components for free easy enough that people do that instead.</p>\n    <p>I’ve found myself affected by this for open source dependencies too. The other day I wanted to parse a cron expression in some Go code. Usually I’d go looking for an existing library for cron expression parsing—but this time I hardly thought about that for a second before prompting one (complete with extensive tests) into existence instead.</p>\n    <p>I expect that this is going to quite radically impact the shape of the open source library world over the next few years. Is that “harmful to open source”? It may well be. I’m hoping that whatever new shape comes out of this has its own merits, but I don’t know what those would be.</p>\n    <blockquote>\n     <p>Can I even assert copyright over this, given how much of the work was produced by the LLM?</p>\n    </blockquote>\n    <p>I’m not a lawyer so I don’t feel credible to comment on this one. My loose hunch is that I’m still putting enough creative control in through the way I direct the models for that to count as enough human intervention, at least under US law, but I have no idea.</p>\n    <blockquote>\n     <p>Is it responsible to publish software libraries built in this way?</p>\n    </blockquote>\n    <p>I’ve come down on “yes” here, again because I never thought it was irresponsible for some random university student to slap an Apache license on some bad code they just coughed up on GitHub.</p>\n    <p>What’s important here is making it very clear to potential users what they should expect from that software. I’ve started publishing my AI-generated and not 100% reviewed libraries as alphas, which I’m tentatively thinking of as <strong>“alpha slop”</strong>. I’ll take the alpha label off once I’ve used them in production to the point that I’m willing to stake my reputation on them being decent implementations, and I’ll slap a 1.0 version number when I’m confident that they are a solid bet for other people to depend on. I think that’s the responsible way to handle this.</p>\n    <blockquote>\n     <p>How much better would this library be if an expert team hand crafted it over the course of several months?</p>\n    </blockquote>\n    <p>That one was a deliberately provocative question, because for a new HTML5 parsing library that passes 9,200 tests you would need a <em>very</em> good reason to hire an expert team for two months (at a cost of hundreds of thousands of dollars) to write such a thing. And honestly, thanks to the existing conformance suites this kind of library is simple enough that you may find their results weren’t notably better than the one written by the coding agent.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9112/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文讨论了使用 LLM 移植开源代码的伦理、法律和生态系统影响，认为在适当署名和许可的情况下总体有益，同时承认开源需求可能发生转变。",
+  "oneSentenceSummary": "本文讨论了使用 LLM 移植开源代码的伦理、法律和生态系统影响，认为在适当署名和许可的情况下总体有益，同时承认开源需求可能发生转变。",
+  "summary": "Simon Willison 反思了使用 LLM 在不同语言间移植开源代码的影响，他认为这一过程效果惊人。他认为，只要保留原始许可和署名，使用 LLM 扩展开源项目既合法又符合伦理，符合衍生作品的概念。虽然承认一些开源维护者可能因 LLM 训练或衍生作品而疏远，但他认为新贡献者增加的可访问性可能超过这一损失。更重要的担忧是现有开源库需求可能减少，因为 LLM 可以轻松生成'足够好'的定制解决方案。关于版权问题，他保留给法律专家判断，但推测人类对 LLM 的指导可能足以主张版权。他主张负责任地发布 AI 生成代码，最初标记为'alpha slop'，只有在经过广泛、有声誉支持的生产使用后才提升其状态。他还强调了在某些经过充分测试的问题领域，LLM 移植代码与专家编写解决方案相比的成本效益和相当质量。",
+  "mainPoints": [
+    {
+      "point": "如果保留适当署名和原始许可，使用 LLM 移植开源项目代码是合法且符合伦理的",
+      "explanation": "将 LLM 生成的移植视为衍生作品符合开源原则，鼓励跨语言的进一步开发和适配"
+    },
+    {
+      "point": "对开源生态系统的影响很复杂，可能在维护者失望与新贡献者参与增加之间取得平衡",
+      "explanation": "虽然一些维护者可能抵制 LLM 使用，但 LLM 加速开发的能力能让新贡献者更轻松地创建和分享工作"
+    },
+    {
+      "point": "主要担忧是随着 LLM 促进定制代码生成，现有开源库的需求可能减少",
+      "explanation": "开发者可能选择使用 LLM 生成'足够好'的解决方案，而不是寻找和集成现有库，从而改变开源依赖格局"
+    },
+    {
+      "point": "负责任地发布 AI 生成代码需要清晰标记（如'alpha slop'），只有在经过全面生产使用后才升级到稳定版本",
+      "explanation": "这种方法管理用户期望，确保作者的声誉只押注于在真实场景中验证过的代码，促进信任"
+    }
+  ],
+  "keyQuotes": [
+    "我决定正确的做法是保留 Python 库作者的开源许可和版权声明，将我构建的内容视为衍生作品，这正是开源的整个*意义*所在",
+    "如果'他们可能用我的代码训练/用 LLM 构建衍生版本'足以让你远离开源，那么你的开源价值观与我的差异很大，我不准备投入大量精力来留住你。我会把这些努力用于欢迎新来者",
+    "对我来说更大的担忧是生成式 AI 对开源*需求*的影响",
+    "我开始将我生成的、未经 100% 审查的 AI 库作为 alpha 版本发布，我暂时称之为'alpha slop'",
+    "对于一个通过 9，200 个测试的新 HTML5 解析库，你需要一个*非常*好的理由来雇佣专家团队两个月（花费数十万美元）来编写这样的东西"
+  ],
+  "tags": [
+    "LLM",
+    "开源",
+    "代码移植",
+    "AI 伦理",
+    "版权"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1003,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768172363000,
+  "publishDateStr": "01-11",
+  "publishDateTimeStr": "2026-01-11 22:59:23"
+}

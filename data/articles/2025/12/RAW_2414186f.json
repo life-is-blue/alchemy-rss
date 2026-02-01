@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2414186f",
+  "title": "AWS Well-Architected 框架扩展：引入负责任 AI 与更新 ML 和生成式 AI 透镜",
+  "url": "https://www.infoq.com/news/2025/12/aws-expands-well-architected/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-19 17:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Amazon Web Services unveiled significant updates to its <a href=\"https://aws.amazon.com/blogs/architecture/architecting-for-ai-excellence-aws-launches-three-well-architected-lenses-at-reinvent-2025/\">Well‑Architected Framework</a>, introducing a new Responsible AI Lens alongside updated Machine Learning and Generative AI Lenses. These additions aim to help enterprise architects, ML engineers, platform teams, and technology leaders improve how AI systems are designed, deployed, governed, and operated on AWS.</p>\n   <p>The <a href=\"https://aws.amazon.com/architecture/well-architected/\">Well‑Architected Framework</a>, long used by architects to benchmark cloud workloads against pillars such as operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, now incorporates AI-specific guidance across these pillars. The expanded lenses reflect AWS’s recognition of the increasing complexity and societal impact of AI workloads, particularly those powered by generative models.</p>\n   <p>The <a href=\"https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html\">Responsible AI Lens</a> provides a structured approach to integrating ethics, transparency, and risk management into AI systems. It emphasizes proactive bias identification, model monitoring, and governance across the AI lifecycle. AWS defines Responsible AI across ten dimensions: controllability, privacy, security, safety, veracity, robustness, fairness, explainability, transparency, and governance, helping teams systematically assess and mitigate risks. Intended for AI builders, technical leaders, and responsible AI specialists, the lens guides enterprise-wide practices. Serving as a foundation for both Machine Learning and Generative AI workloads, it enables organizations to balance innovation with accountability while designing safe, fair, and reliable AI systems.</p>\n   <p><a href=\"https://www.linkedin.com/posts/rachna-chadha_announcing-the-aws-well-architected-responsible-activity-7397062687509360640-MC7F?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">Announcing the updates</a> to the framework, <a href=\"https://www.linkedin.com/in/rachna-chadha/\">Rachna Chadha</a>, Principal GenAI Technologist at AWS, writes:</p>\n   <blockquote>\n    <p>The Responsible AI Lens provides builders with a practical, science-backed framework to implement responsible AI by design across the entire lifecycle, from design and development to operation, helping teams balance innovation with real-world risk.</p>\n   </blockquote>\n   <p>The <a href=\"https://aws.amazon.com/blogs/architecture/announcing-the-updated-aws-well-architected-machine-learning-lens/\">updated Machine Learning Lens</a> aligns best practices with the six stages of the ML lifecycle: problem definition, data preparation, model development, deployment, operations, and monitoring. Key updates include deeper guidance on collaborative workflows using Amazon SageMaker Unified Studio, distributed training with SageMaker HyperPod, and bias and fairness assessment using SageMaker Clarify. The lens also incorporates cost optimization strategies and operational monitoring recommendations, making it easier for data scientists, engineers, and governance teams to align on architectural decisions.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/12/aws-expands-well-architected/news/2025/12/aws-expands-well-architected/en/resources/1mlphases-1765938992804.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/12/aws-expands-well-architected/en/resources/1mlphases-1765938992804.jpeg\" rel=\"share\"></p>\n   <p><em>Six stages of ML lifecycle (Source: <a href=\"https://aws.amazon.com/blogs/architecture/announcing-the-updated-aws-well-architected-machine-learning-lens/\">AWS Architecture Blog</a>)</em></p>\n   <p>The <a href=\"https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html?did=wp_card&amp;trk=wp_card\">Generative AI Lens</a> focuses on architectures that leverage large language models, multimodal AI, and other generative systems. <a href=\"https://aws.amazon.com/blogs/architecture/announcing-the-updated-aws-well-architected-generative-ai-lens/\">Updated</a> guidance includes scenario-based patterns for applications such as intelligent assistants, automated content generation, and enterprise knowledge copilots. It integrates Responsible AI principles and provides recommendations for agentic AI workflows, scalable inference, and secure data handling.</p>\n   <p>Together, the lenses provide a cohesive framework for designing AI systems that are performant, reliable, and trustworthy. AWS encourages organizations to leverage the AWS Well-Architected Tool to implement these practices, offering reference architectures, code examples, and templates for rapid adoption.</p>\n   <p>As AI adoption grows, AWS positions these updates as a way to help enterprises balance innovation with governance and operational rigor. By embedding trust, ethics, and operational excellence into AI architecture, organizations can reduce risks while accelerating the deployment of impactful AI solutions.</p>\n   <p>With the expanded Well‑Architected lenses, AWS empowers organizations to innovate across the full spectrum of AI workloads while embedding trust, governance, and technical excellence at every stage.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Expands Well-Architected Framework with Responsible AI and Updated ML and Generative AI Lenses\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/aws-expands-well-architected/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766163600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 更新了其 Well-Architected 框架，新增了负责任 AI 透镜，并增强了机器学习和生成式 AI 透镜，旨在以兼顾道德与效率的方式指导 AI 系统的设计、部署和操作。",
+  "oneSentenceSummary": "AWS 更新了其 Well-Architected 框架，新增了负责任 AI 透镜，并增强了机器学习和生成式 AI 透镜，旨在以兼顾道德与效率的方式指导 AI 系统的设计、部署和操作。",
+  "summary": "AWS 大幅更新了其 Well-Architected 框架，引入了专门的负责任 AI 透镜，并完善了其机器学习和生成式 AI 透镜。这些新增内容旨在帮助企业架构师、机器学习工程师和技术领导者在 AWS 上构建更优的 AI 系统，将 AI 特有的指导融入到现有支柱中，例如卓越运营和安全性。负责任 AI 透镜提供了一种结构化的方法，用于在公平性、隐私和可解释性等十个维度上嵌入伦理、透明度和风险管理。更新的机器学习透镜将最佳实践与机器学习生命周期的六个阶段对齐，提供关于 SageMaker 工具和成本优化的指导。生成式 AI 透镜侧重于利用大型语言模型 (LLM) 和多模态 AI 来开发智能助理和内容生成等应用，同时融入了负责任 AI 原则。总的来说，这些透镜构成一个内聚的框架，用于构建性能优异、可靠且值得信赖的 AI 系统，平衡创新与问责制，并实现快速、安全的 AI 采纳。",
+  "mainPoints": [
+    {
+      "point": "AWS 引入了新的负责任 AI 透镜，将伦理和风险管理整合到 AI 系统中。",
+      "explanation": "该透镜提供了一种结构化的方法，用于在整个 AI 生命周期中主动解决偏见、隐私和安全等问题，确保 AI 系统在构建时具备问责机制。"
+    },
+    {
+      "point": "更新的机器学习透镜为机器学习生命周期的每个阶段提供了增强的指导。",
+      "explanation": "它融合了问题定义、数据准备、模型开发、部署、运营和监控的最佳实践，利用 AWS 服务（如 SageMaker）进行协同工作流程和公平性评估。"
+    },
+    {
+      "point": "生成式 AI 透镜侧重于高级生成模型和应用的架构模式。",
+      "explanation": "该透镜为使用 LLM 和多模态 AI 构建应用（如智能助理和内容生成）提供具体指导，同时整合负责任 AI 原则和可扩展的推理策略。"
+    }
+  ],
+  "keyQuotes": [
+    "负责任 AI 透镜为开发者提供了一个实用、科学支持的框架，以便在从设计、开发到运营的整个生命周期中，以设计为前提实施负责任的 AI，帮助团队平衡创新与现实世界的风险。",
+    "Well-Architected 框架……现在将 AI 特有的指导纳入这些支柱中。",
+    "总之，这些透镜为设计性能优异、可靠且值得信赖的 AI 系统提供了内聚的框架。"
+  ],
+  "tags": [
+    "AWS",
+    "Well-Architected Framework",
+    "负责任 AI",
+    "机器学习",
+    "生成式 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 502,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766163600000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 17:00:00"
+}

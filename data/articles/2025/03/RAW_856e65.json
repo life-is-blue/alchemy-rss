@@ -1,0 +1,53 @@
+{
+  "id": "RAW_856e65",
+  "title": "20K star！让网页设计秒变手绘风，这个开源库太有创意了！Rough.js 是一个轻量级的图形库（仅 8KB），能够为 - 掘金",
+  "url": "https://juejin.cn/post/7478111209222570011",
+  "date": "2025-03-05 04:57:40",
+  "author": "小华同学ai",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body cache result\">\n   <p>嗨，大家好，我是小华同学，关注我们获得“<strong>最新、最全、最优质</strong>”开源项目和高效工作学习方法</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c3812861dd49412285a7227113ff28bc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5bCP5Y2O5ZCM5a2mYWk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1741755460&amp;x-signature=Sx2o3M1AlkttS14PzdSZeS6FofI%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>\"Rough.js 是一个轻量级的图形库（仅8KB），能够为网页元素赋予自然的手绘质感。通过独特的算法模拟人类绘画的不规则性，开发者只需几行代码即可为图表、流程图、UI组件等数字内容注入生动的手作温度。\"</p>\n   </blockquote>\n   <h2 data-id=\"heading-0\">功能亮点</h2>\n   <h3 data-id=\"heading-1\">手绘风格渲染引擎</h3>\n   <pre><code class=\"hljs language-arduino code-block-extension-codeShowNum\" lang=\"arduino\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\"><span class=\"hljs-comment\">//&nbsp;绘制手绘风格圆形</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\"><span class=\"hljs-type\">const</span>&nbsp;rc&nbsp;=&nbsp;rough.<span class=\"hljs-built_in\">canvas</span>(document.<span class=\"hljs-built_in\">getElementById</span>(<span class=\"hljs-string\">'canvas'</span>));</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">rc.<span class=\"hljs-built_in\">circle</span>(<span class=\"hljs-number\">80</span>,&nbsp;<span class=\"hljs-number\">80</span>,&nbsp;<span class=\"hljs-number\">60</span>,&nbsp;{</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\">&nbsp;&nbsp;roughness:&nbsp;<span class=\"hljs-number\">2.3</span>,&nbsp;&nbsp;<span class=\"hljs-comment\">//&nbsp;控制笔触粗糙度</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\">&nbsp;&nbsp;bowing:&nbsp;<span class=\"hljs-number\">5</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"hljs-comment\">//&nbsp;线条弯曲程度</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"6\">&nbsp;&nbsp;fill:&nbsp;<span class=\"hljs-string\">'pink'</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"hljs-comment\">//&nbsp;支持填充色</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"7\">});</span>\n</code></pre>\n   <p>通过调整参数可呈现铅笔素描、马克笔涂鸦等不同效果，支持实时动态修改图形属性。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/d5dd95f01a444063bf7231ed316e586d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5bCP5Y2O5ZCM5a2mYWk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1741755460&amp;x-signature=KMoTUjV1pBo%2Fp8TxEVerQD7%2BHPc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-2\">全类型图形支持</h3>\n   <ul>\n    <li>基础图形：直线/曲线/多边形/路径</li>\n    <li>复杂图形：组合图形/自定义SVG</li>\n    <li>动态交互：点击动画/悬停效果</li>\n    <li>扩展组件：与React/Vue等框架深度集成</li>\n   </ul>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/afecf2717f5e478db051a3818c6c1f38~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5bCP5Y2O5ZCM5a2mYWk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1741755460&amp;x-signature=VVPTmqg5xh6w1rhJL%2Fey9JzXYxc%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-3\">跨平台兼容</h3>\n   <table>\n    <thead>\n     <tr>\n      <th>技术指标</th>\n      <th>支持情况</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td>浏览器兼容</td>\n      <td>Chrome/Firefox/Safari/Edge</td>\n     </tr>\n     <tr>\n      <td>渲染引擎</td>\n      <td>Canvas 2D / SVG</td>\n     </tr>\n     <tr>\n      <td>框架支持</td>\n      <td>React/Vue/Angular</td>\n     </tr>\n     <tr>\n      <td>移动端适配</td>\n      <td>完美响应式布局</td>\n     </tr>\n    </tbody>\n   </table>\n   <h2 data-id=\"heading-4\">六大应用场景</h2>\n   <ol>\n    <li><strong>数据可视化增强</strong> - 让枯燥的图表拥有艺术展品般的质感</li>\n    <li><strong>教育课件制作</strong> - 模拟黑板板书的教学亲切感</li>\n    <li><strong>原型设计工具</strong> - 快速创建低保真设计稿</li>\n    <li><strong>游戏界面开发</strong> - 打造独特的绘本风格UI</li>\n    <li><strong>电子手账应用</strong> - 实现真实的书写笔触效果</li>\n    <li><strong>创意互动装置</strong> - 营造有温度的数字艺术体验</li>\n   </ol>\n   <h2 data-id=\"heading-5\">同类项目对比</h2>\n   <table>\n    <thead>\n     <tr>\n      <th>项目名称</th>\n      <th>核心能力</th>\n      <th>独特优势</th>\n      <th>适用场景</th>\n     </tr>\n    </thead>\n    <tbody>\n     <tr>\n      <td><strong>Rough.js</strong></td>\n      <td>手绘风格渲染</td>\n      <td>9种笔触参数调节</td>\n      <td>创意设计/教育/可视化</td>\n     </tr>\n     <tr>\n      <td>Handsontable</td>\n      <td>电子表格渲染</td>\n      <td>百万级数据性能</td>\n      <td>企业级数据管理</td>\n     </tr>\n     <tr>\n      <td>Chart.js</td>\n      <td>传统数据图表</td>\n      <td>丰富的图表类型库</td>\n      <td>商业数据分析</td>\n     </tr>\n    </tbody>\n   </table>\n   <h2 data-id=\"heading-6\">三步快速上手</h2>\n   <ol>\n    <li>安装依赖</li>\n   </ol>\n   <pre><code class=\"hljs language-xml code-block-extension-codeShowNum\" lang=\"xml\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">script</span>&nbsp;<span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"https://unpkg.com/roughjs@4.5.2/bundled/rough.js\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">script</span>&gt;</span></span>\n</code></pre>\n   <p>2. 创建画布</p>\n   <pre><code class=\"hljs language-ini code-block-extension-codeShowNum\" lang=\"ini\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\">const&nbsp;<span class=\"hljs-attr\">canvas</span>&nbsp;=&nbsp;document.getElementById(<span class=\"hljs-string\">'myCanvas'</span>)<span class=\"hljs-comment\">;</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">const&nbsp;<span class=\"hljs-attr\">ctx</span>&nbsp;=&nbsp;canvas.getContext(<span class=\"hljs-string\">'2d'</span>)<span class=\"hljs-comment\">;</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\">const&nbsp;<span class=\"hljs-attr\">rc</span>&nbsp;=&nbsp;rough.canvas(canvas)<span class=\"hljs-comment\">;</span></span>\n</code></pre>\n   <p>3. 绘制图形</p>\n   <pre><code class=\"hljs language-php code-block-extension-codeShowNum\" lang=\"php\"><span class=\"code-block-extension-codeLine\" data-line-num=\"1\"><span class=\"hljs-comment\">//&nbsp;绘制会呼吸的矩形</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"2\">rc.<span class=\"hljs-title function_ invoke__\">rectangle</span>(<span class=\"hljs-number\">10</span>,&nbsp;<span class=\"hljs-number\">10</span>,&nbsp;<span class=\"hljs-number\">100</span>,&nbsp;<span class=\"hljs-number\">100</span>,&nbsp;{</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"3\"><span class=\"hljs-attr\">&nbsp;&nbsp;roughness</span>:&nbsp;<span class=\"hljs-number\">3</span>,</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"4\"><span class=\"hljs-attr\">&nbsp;&nbsp;stroke</span>:&nbsp;<span class=\"hljs-string\">'#ff3300'</span>,</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"5\"><span class=\"hljs-attr\">&nbsp;&nbsp;strokeWidth</span>:&nbsp;<span class=\"hljs-number\">2</span>,</span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"6\"><span class=\"hljs-attr\">&nbsp;&nbsp;fill</span>:&nbsp;<span class=\"hljs-string\">'rgba(255,200,0,0.4)'</span></span>\n<span class=\"code-block-extension-codeLine\" data-line-num=\"7\">});</span>\n</code></pre>\n   <h2 data-id=\"heading-7\">项目优势解析</h2>\n   <ol>\n    <li><strong>设计友好</strong> - 设计师可直接导出Sketch稿件的SVG路径</li>\n    <li><strong>性能卓越</strong> - 万级图形渲染仍保持60fps流畅度</li>\n    <li><strong>扩展性强</strong> - 提供插件系统支持自定义笔刷</li>\n    <li><strong>文档完善</strong> - 中文教程+在线交互式演示</li>\n   </ol>\n   <h2 data-id=\"heading-8\">开发者生态</h2>\n   <ul>\n    <li>\n     <p>官方维护的扩展库：</p>\n     <ul>\n      <li>rough-charts 手绘风图表</li>\n      <li>rough-notation 动态标注效果</li>\n      <li>rough-viz 数据可视化组件</li>\n     </ul></li>\n   </ul>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/56492ce8b55f4d0686ccd7d04209d079~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5bCP5Y2O5ZCM5a2mYWk=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1741755460&amp;x-signature=QoAg43qqY2dJlDmuG1OG%2FF29A6U%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-9\">总结推荐</h2>\n   <p>Rough.js 为数字界面注入了难得的手作温度，特别适合需要营造亲切感、艺术感或教育类场景。其极低的学习成本（平均30分钟上手）与强大的表现力，使其成为提升产品差异化的秘密武器。</p>\n   <h2 data-id=\"heading-10\">项目地址</h2>\n   <p><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Frough-stuff%2Frough\" target=\"_blank\" title=\"https://github.com/rough-stuff/rough\" ref=\"nofollow noopener noreferrer\">github.com/rough-stuff…</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Rough.js 是一个轻量级手绘风格图形库，能为网页元素赋予自然的手绘质感，适用于数据可视化、教育课件、原型设计等场景。",
+  "oneSentenceSummary": "Rough.js 是一个轻量级手绘风格图形库，能为网页元素赋予自然的手绘质感，适用于数据可视化、教育课件、原型设计等场景。",
+  "summary": "文章介绍了 Rough.js 这个轻量级的 JavaScript 图形库，它基于 Canvas 2D 或 SVG 渲染，能够为网页元素添加手绘风格的质感。文章详细描述了 Rough.js 的功能亮点，包括手绘风格渲染引擎、全类型图形支持和跨平台兼容性。同时，文章还列举了 Rough.js 的六大应用场景，包括数据可视化增强、教育课件制作、原型设计工具等。通过与同类项目的对比，突出了 Rough.js 在手绘风格渲染方面的独特优势。最后，文章提供了快速上手的三步指南，并解析了 Rough.js 的项目优势，如设计友好、性能卓越和扩展性强。",
+  "mainPoints": [
+    {
+      "point": "Rough.js 通过调整参数可呈现不同手绘效果",
+      "explanation": "通过调整粗糙度、弯曲程度和填充色等参数，Rough.js 可以模拟铅笔素描、马克笔涂鸦等多种手绘风格。"
+    },
+    {
+      "point": "Rough.js 支持多种图形和框架集成",
+      "explanation": "Rough.js 不仅支持直线、曲线等基础图形，还支持组合图形和自定义 SVG，并能与 React、Vue 等框架深度集成。"
+    },
+    {
+      "point": "Rough.js 学习成本低，表现力强",
+      "explanation": "Rough.js 平均只需 30 分钟即可上手，且能为产品带来差异化，适用于需要营造亲切感、艺术感的场景。"
+    }
+  ],
+  "keyQuotes": [
+    "Rough.js 是一个轻量级的图形库（仅 8KB），能够为网页元素赋予自然的手绘质感。",
+    "Rough.js 为数字界面注入了难得的手作温度，特别适合需要营造亲切感、艺术感或教育类场景。",
+    "其极低的学习成本（平均 30 分钟上手）与强大的表现力，使其成为提升产品差异化的秘密武器。"
+  ],
+  "tags": [
+    "图形库",
+    "JavaScript",
+    "手绘风格",
+    "Rough.js",
+    "可视化"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 870,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741150660000,
+  "publishDateStr": "2025-03-05",
+  "publishDateTimeStr": "2025-03-05 04:57:40"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "RAW_95495f9a",
+  "title": "Target 公司借助生成式 AI 推荐将“加入购物车”互动率提升 11%",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=3&sn=bf6de646b1077f777d600b35cfb77eb9",
+  "date": "2025-12-28 02:16:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为了应对其庞大的零售目录中配套产品组合日益复杂的挑战，Target 公司部署了一个基于生成式 AI 的配件推荐系统。在推荐相关配件时，这个由产品推荐团队开发的 GRAM（基于生成式 AI 的家居类关联配件模型，英文名 GenAI-based Related Accessory Model）使用大型语言模型来识别哪些产品属性最重要，帮助购物者找到最匹配的商品。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">正如 Target 公司工程师所强调的那样，庞大的商品目录以及商品属性的多样性使得推荐高质量的配件成为一项复杂的挑战。根据产品不同，购物者可能会优先考虑颜色、材质、品牌、目标受众或其他因素。传统上基于规则的方法往往脆弱且难以扩展，特别是当需要根据数百个属性判断什么是合适的配件时。为了应对这一挑战，GRAM 通过自动化评估跨类别的属性重要性，在保持推荐相关性的同时减少了人工筛选的需求。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">GRAM 设计的核心是使用大型语言模型来分析结构化的产品数据。该模型评估每个核心配件组合中哪些属性最重要，据此分配相应的权重，并生成相关性得分，从而确定向购物者展示哪些商品。例如，在推荐与沙发搭配的抱枕时，系统可能会强调颜色和材质，而在为玩具推荐电池时则优先考虑兼容性和儿童安全特性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为确保业务相关性，Target 公司将生成式 AI 模型与人工审核流程相结合，允许商家提供购买组合清单或季节相关的商品清单。这种方法的好处在于，既可以由 大型语言模型 处理可扩展性和商品发现，又可以用人为输入指导跨类别配对，保持与商品销售目标的一致性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 LinkedIn 上的一篇 博文 中，Target 公司数据科学高级总监 Adnan Awow 提到：</span></p>\n   <blockquote>\n    <p style=\"text-align: left;\"><span leaf=\"\">有了 GRAM，我们基于生成式 AI 的关联配件模型，系统能自动优先考虑数百个产品属性，如颜色、材质和品牌，优先呈现最相关的附加配件。该系统还能捕捉美学协调性，推荐视觉和谐的搭配方案——例如与床单相得益彰的枕套组合。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Adnan Awow 还提到：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">GRAM 专为大规模应用而设计，能在产品类型层面进行评分，轻松处理数十万家居 SKU，并具备跨品类扩展能力。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">正如博文所述，早期的 A/B 测试显示，GRAM 在参与度和转化率方面取得了可度量的改进。家居类配件的加入购物车（Add-to-cart）互动增加了约 11%，展示到转化率（display-to-conversion）上升了 12%，可归因需求增长了 9%。基于这些测试结果，该系统已全面投入生产环境，体现了 Target 公司将 AI 融入数字购物体验以提升个性化服务和推荐质量的战略</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img class=\"rich_pages wxw-img\" data-imgfileid=\"503785859\" data-ratio=\"0.510752688172043\" data-w=\"1488\" data-type=\"png\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=3db773eb&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VMSp53TvusFWhyia1YHkHTxqyROcCv8AGqtj42eReUUZjcvibh3yCXQsIGtGyKLPpTXB6kiaWHny5Oyw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">引入 GRAM 模型前后的产品推荐对比（图片来源：Target 公司技术博客）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">来自 Target 公司的工程师表示，GRAM 已经创建了一个可扩展的系统，用于推荐跨类别的配件。这种方法提高了用户参与度，并使购物体验更加流畅。该模型已于 2025 年 4 月全面投入生产应用，彰显了 Target 公司为持续提升其数字渠道个性化服务与推荐质量所做的努力。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/12/target-genai-model-recommend/\" target=\"_blank\">https://www.infoq.com/news/2025/12/target-genai-model-recommend/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Target 公司利用名为 GRAM 的生成式 AI 推荐系统，通过大型语言模型分析产品属性，实现了商品配件推荐的自动化和智能化，成功将“加入购物车”互动率提升 11%。",
+  "oneSentenceSummary": "Target 公司利用名为 GRAM 的生成式 AI 推荐系统，通过大型语言模型分析产品属性，实现了商品配件推荐的自动化和智能化，成功将“加入购物车”互动率提升 11%。",
+  "summary": "塔吉特公司（Target）部署了一款名为 GRAM（基于生成式 AI 的家居类关联配件模型）的生成式 AI 配件推荐系统，旨在解决其庞大商品目录中产品搭配日益复杂的问题。该系统利用大型语言模型分析结构化产品数据，识别并加权最关键的产品属性（如颜色、材质、品牌、兼容性等），从而推荐最匹配的配件。GRAM 通过自动化属性重要性评估，减少了人工筛选需求，并能捕捉美学协调性。为了确保业务相关性，GRAM 模型与人工审核流程相结合，允许商家输入购买组合或季节性商品清单。早期 A/B 测试结果显示，GRAM 将家居类配件的“加入购物车”互动率提高了约 11%，展示到转化率提升了 12%，并带来了 9% 的可归因需求增长。该系统已于 2025 年 4 月全面投入生产环境，旨在提升 Target 公司的数字购物体验、个性化服务和推荐质量。",
+  "mainPoints": [
+    {
+      "point": "Target 公司成功部署了基于生成式 AI 的商品配件推荐系统 GRAM。",
+      "explanation": "GRAM 系统利用大型语言模型分析数百万 SKU 的产品数据，自动化识别并加权影响配件搭配的关键产品属性，有效解决了传统基于规则系统在处理大规模复杂商品目录时难以扩展和维护的问题。"
+    },
+    {
+      "point": "GRAM 通过结合 LLM 的能力和人工审核机制，实现了推荐的精准度和业务相关性。",
+      "explanation": "模型能评估美学协调性并提供有数据支撑的推荐，同时通过人工输入确保推荐符合零售商的销售策略和季节性营销目标，达到技术与商业的有效融合。"
+    },
+    {
+      "point": "该系统在实际业务中取得了显著的效果提升。",
+      "explanation": "A/B 测试结果显示，“加入购物车”互动率增加了 11%，展示到转化率上升了 12%，可归因需求增长 9%，证明生成式 AI 在零售场景中具有强大的商业价值和用户体验提升潜力。"
+    }
+  ],
+  "keyQuotes": [
+    "GRAM 使用大型语言模型来识别哪些产品属性最重要，帮助购物者找到最匹配的商品。",
+    "有了 GRAM，我们基于生成式 AI 的关联配件模型，系统能自动优先考虑数百个产品属性，如颜色、材质和品牌，优先呈现最相关的附加配件。",
+    "该系统还能捕捉美学协调性，推荐视觉和谐的搭配方案------例如与床单相得益彰的枕套组合。",
+    "早期的 A/B 测试显示，GRAM 在参与度和转化率方面取得了可度量的改进。家居类配件的加入购物车（Add-to-cart）互动增加了约 11%，展示到转化率（display-to-conversion）上升了 12%，可归因需求增长了 9%。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1116,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766888160000,
+  "publishDateStr": "2025-12-28",
+  "publishDateTimeStr": "2025-12-28 02:16:00"
+}

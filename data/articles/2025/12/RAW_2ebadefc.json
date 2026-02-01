@@ -1,0 +1,56 @@
+{
+  "id": "RAW_2ebadefc",
+  "title": "Netflix 迁移至 Amazon Aurora：性能提升 75%，成本降低 28%",
+  "url": "https://www.infoq.com/news/2025/12/netflix-migrates-amazon-aurora/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-17 08:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix has completed a major consolidation of its relational database infrastructure onto Amazon Aurora, <a href=\"https://aws.amazon.com/blogs/database/netflix-consolidates-relational-database-infrastructure-on-amazon-aurora-achieving-up-to-75-improved-performance/\">reporting performance improvements of up to 75% and a 28% reduction in costs</a>. The streaming giant’s move from self-managed PostgreSQL on EC2 to the managed Aurora service highlights a broader industry trend toward offloading operational overhead to cloud-native database platforms.</p>\n   <p>Facing challenges with a fragmented database landscape, Netflix’s Online Data Stores (ODS) team struggled with the operational toil of managing deployed custom binaries, patching, and manual scaling. The previous architecture, relying on self-managed distributed PostgreSQL, suffered from inconsistent latency and complex failure recovery procedures. By migrating to Amazon Aurora PostgreSQL-Compatible Edition, the team aimed to unify their strategy while retaining the familiarity of the PostgreSQL engine for their developers.</p>\n   <p>The results of the migration were immediate and significant across critical microservices. <a href=\"https://spinnaker.io/\">Spinnaker, Netflix’s continuous delivery platform</a>, saw a 50% reduction in average latency, dropping from 67.57ms to 41.70ms. <a href=\"https://aws.amazon.com/blogs/database/netflix-consolidates-relational-database-infrastructure-on-amazon-aurora-achieving-up-to-75-improved-performance/\">The Policy Engine service</a> experienced even more dramatic gains, with latency on key endpoints falling by 75%, from 26.72ms to 6.51ms. These improvements are attributed largely to Aurora’s <a href=\"https://www.amazon.science/publications/amazon-aurora-design-considerations-for-high-throughput-cloud-native-relational-databases\">architecture, which separates compute from storage and utilises a log-based write approach</a>. This design allows the database to allocate 75% of instance memory to shared buffers, significantly more than the typical 25–40% in standard PostgreSQL.</p>\n   <p>Ammar Khaku, Staff Software Engineer on the Netflix Online Data Stores team, commented on the operational shift: <a href=\"https://aws.amazon.com/blogs/database/netflix-consolidates-relational-database-infrastructure-on-amazon-aurora-achieving-up-to-75-improved-performance/\">\"We no longer have to build and deploy custom binaries on EC2 with internal security and metrics-related patches. Switching to off-the-shelf managed Aurora PostgreSQL lets us focus on business logic and data access patterns.\"</a></p>\n   <p>Netflix’s experience mirrors that of other large enterprises transitioning to managed cloud databases. <a href=\"https://aws.amazon.com/solutions/case-studies/samsung-migrates-off-oracle-to-amazon-aurora/\">Samsung Electronics migrated over 1.1 billion users from legacy Oracle databases to Aurora</a>, citing similar drivers regarding licensing costs and the flexibility required for microservices. Panasonic Avionics also reported an 80% reduction in costs and improved query speeds after moving to the platform. These cases suggest a consistent pattern in which the elimination of licensing fees and administrative overhead drives ROI for migration.</p>\n   <p>However, engineers evaluating similar moves should note that Aurora is not a universal remedy for all workloads. While Netflix benefits from the shared storage model, independent benchmarks suggest nuances in performance. For instance, <a href=\"https://www.tigerdata.com/blog/benchmarking-amazon-aurora-vs-postgresql\">tests by Tiger Data</a> indicated that for specific time-series heavy workloads, specialised PostgreSQL extensions like Timescale could offer faster ingest rates and lower storage costs than Aurora. Furthermore, distributed SQL alternatives such as CockroachDB or TiDB offer multi-writer capabilities, addressing Aurora’s single-writer limitation, which can become a bottleneck for write-heavy global applications.</p>\n   <p>Despite these architectural distinctions, the operational benefits for Netflix have been clear. The migration utilised Aurora’s fast failover capabilities, where read replicas can be promoted to writers in under 100 milliseconds, significantly improving system availability compared to the manual interventions previously required. This reliability, combined with the removal of undifferentiated heavy lifting, allows the streaming provider to support its massive user base with greater agility.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Migrates to Amazon Aurora: 75% Performance Boost and 28% Cost Reduction\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/netflix-migrates-amazon-aurora/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765958400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 成功将其关系型数据库基础设施迁移到 Amazon Aurora，通过减轻运维负担，实现了高达 75% 的性能提升和 28% 的成本削减。",
+  "oneSentenceSummary": "Netflix 成功将其关系型数据库基础设施迁移到 Amazon Aurora，通过减轻运维负担，实现了高达 75% 的性能提升和 28% 的成本削减。",
+  "summary": "Netflix 已将其关系型数据库基础设施整合到 Amazon Aurora PostgreSQL 兼容版本上，从 EC2 上自管理的 PostgreSQL 迁移而来。这一战略性转变解决了碎片化数据库环境、运维苦役、不一致的延迟和复杂的故障恢复等挑战。此次迁移带来了显著的性能改进，Spinnaker 的延迟降低了 50%，策略引擎服务的延迟降低了 75%。这些收益归因于 Aurora 的架构，该架构分离了计算与存储并采用基于日志的写入方法，从而得以将更高内存分配给共享缓冲区。此举还使 Netflix 工程师能够专注于业务逻辑，而不是自定义二进制管理。尽管 Aurora 提供了显著的运营优势和成本节约，但文章指出它并非通用解决方案，并引用了特定工作负载（例如，其他 PostgreSQL 扩展或分布式 SQL 替代方案可能表现更好）的例子。尽管如此，Netflix 的经验突显了行业向托管云数据库平台发展的更广泛趋势，以提高敏捷性、可用性并降低运维负担。",
+  "mainPoints": [
+    {
+      "point": "Amazon Aurora 迁移为 Netflix 带来显著性能和成本效益。",
+      "explanation": "Netflix 通过将其关系型数据库迁移到 Aurora，实现了高达 75% 的性能提升和 28% 的成本削减，从而简化了运营并提高了效率。"
+    },
+    {
+      "point": "Aurora 分离计算与存储的架构是其性能优势的关键。",
+      "explanation": "这种设计允许为共享缓冲区分配更多的内存，并采用基于日志的写入方法，有助于降低 Spinnaker 和策略引擎等关键微服务的延迟。"
+    },
+    {
+      "point": "托管云数据库使工程团队能够专注于核心业务逻辑。",
+      "explanation": "通过将修补、扩展和自定义二进制管理等任务卸载给 Aurora，Netflix 工程师可以将更多时间投入到创新和业务价值上，这反映了更广泛的行业趋势。"
+    },
+    {
+      "point": "尽管有益，但 Aurora 并非所有数据库工作负载的通用解决方案。",
+      "explanation": "文章承认，对于特定场景，例如时序数据或写密集型全球应用程序，专门的 PostgreSQL 扩展或分布式 SQL 替代方案可能更适用。"
+    }
+  ],
+  "keyQuotes": [
+    "我们不再需要在 EC2 上构建和部署带有内部安全和指标相关补丁的自定义二进制文件。转用现成的托管 Amazon Aurora PostgreSQL 使我们能够专注于业务逻辑和数据访问模式。",
+    "这种设计允许数据库将 75% 的实例内存分配给共享缓冲区，这比标准 PostgreSQL 中典型的 25% - 40% 要多得多。"
+  ],
+  "tags": [
+    "数据库",
+    "云计算",
+    "AWS Aurora",
+    "PostgreSQL",
+    "Netflix"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 492,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765958400000,
+  "publishDateStr": "2025-12-17",
+  "publishDateTimeStr": "2025-12-17 08:00:00"
+}

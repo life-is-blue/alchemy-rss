@@ -1,0 +1,54 @@
+{
+  "id": "RAW_8dd6973c",
+  "title": "谷歌 Java 智能体开发工具包：集成 LangChain4j，赋能更强大的 AI 智能体",
+  "url": "https://www.infoq.com/news/2025/09/goodle-adk-langchain4j/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-28 13:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://developers.googleblog.com/en/adk-for-java-opening-up-to-third-party-language-models-via-langchain4j-integration/\">latest release of the Agent Development Kit for Java</a>, version 0.2.0, marks a significant expansion of its capabilities through the integration with the LangChain4j LLM framework, which opens it up to all the large language models supported by the framework.</p>\n   <p>Before integrating LangChain4j, ADK for Java only supported two models, Google Gemini and Anthropic Claude. This contrasted with the Python ADK, which offered broader support via via <a href=\"https://www.litellm.ai/\">LiteLLM</a>. With LangChain4j, Java developers can now use model from OpenAI, Anthropic, Mistral, as well as all models supported by Ollama or <a href=\"https://www.infoq.com/news/2025/04/docker-model-runner/\">Docker Model Runner</a>, like Gemma, Qwen, Phi, and <a href=\"https://docs.langchain4j.dev/category/language-models\">others</a>.</p>\n   <p>Google developer relations engineer Guillaume Laforge, who is also a contributor to LangChain4j and one of the developers behind its integration into the ADK, explains that <a href=\"https://glaforge.dev/posts/2025/06/05/expanding-adk-java-llm-coverage-with-langchain4j/\">using LangChain4j makes it possible mixing models together in multi-agent scenarios</a>. This can be achieved through <a href=\"https://google.github.io/adk-docs/tools/built-in-tools/#use-built-in-tools-with-other-tools\">agent tools</a>, which allow one agent to use another like a tool.</p>\n   <blockquote>\n    <p>Mixing different models in a multi-agent scenario is quite interesting, as you can use the best model for the job. Maybe you’ll need to use a super fast model to do a simple classification task to route requests depending on the ask, while you’ll use a beefier model for the main task that requires more advanced thinking (like a Gemini 2.5 thinking model).</p>\n   </blockquote>\n   <p>Laforge also provides a basic implementation with a main agent powered by Claude and a tool agent using OpenAI to deliver weather information. Once you have the two agents instantiated, let's call them <code>weatherAgent</code> and <code>claudeModel</code>, you can combine them by instantiating an agent as follows:</p>\n   <pre>\r\n<code class=\"language-java\">LlmAgent agent = LlmAgent.builder()\r\n    .name(\"friendly-weather-app\")\r\n    .description(\"Friend agent that knows about the weather\")\r\n    .model(new LangChain4j(claudeModel, CLAUDE_3_7_SONNET_20250219))\r\n    .instruction(\"\"\"\r\n        You are a friendly assistant.\r\n\r\n        If asked about the weather forecast for a city,\r\n        you MUST call the `weather-agent` function.\r\n        \"\"\")\r\n    .tools(AgentTool.create(weatherAgent))\r\n    .build();\r\n</code></pre>\n   <p>Besides LangChain4j integration, ADK 0.2.0 introduces a range of significant enhancements aimed at improving both tooling capabilities and agent performance. On the agent tool side, it adds support for creating <code>FunctionTools</code> from object instances, improves asynchronous tool operation, and provides finer programmatic control over agent execution. On the agent logic and memory side, it strengthens logic and memory handling through callback chaining and new memory management primitives offering more flexibility in controlling how agents store, retrieve, and process information.</p>\n   <p>Part of its broader Agent Development Kit, <a href=\"https://developers.googleblog.com/en/agents-adk-agent-engine-a2a-enhancements-google-io/\">introduced earlier this year</a>, the ADK for Java is still in its early stages. To start using ADK for Java documentation, head to the <a href=\"https://glaforge.dev/posts/2025/05/20/writing-java-ai-agents-with-adk-for-java-getting-started/\">getting started guide</a>, or fork <a href=\"https://glaforge.dev/posts/2025/05/27/adk-java-github-template/\">Laforge's template project from GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google's Agent Development Kit for Java Adds Integration with LangChain4j\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/goodle-adk-langchain4j/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759064400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "ADK for Java 0.2.0 集成 LangChain4j，大幅扩展 LLM 支持，解锁多智能体混合模型应用。",
+  "oneSentenceSummary": "ADK for Java 0.2.0 集成 LangChain4j，大幅扩展 LLM 支持，解锁多智能体混合模型应用。",
+  "summary": "谷歌 Java 智能体开发工具包 (ADK) 最新版本 0.2.0 引入了与 LangChain4j 框架的关键集成。集成 LangChain4j 显著扩展了 Java 开发者可用的 LLM 范围，不再局限于 Google Gemini 和 Anthropic Claude。开发者现在可以利用来自 OpenAI、Anthropic、Mistral 以及由 Ollama 或 Docker 模型运行器支持的模型，例如 Gemma、Qwen 和 Phi。关键优势在于支持多智能体场景下的 LLM 混合使用，允许开发者为特定任务选择最佳模型——例如，使用超快速模型进行简单分类，以及使用更强大的模型进行复杂的推理。文章提供 Java 代码示例，演示如何结合 Claude 主智能体和 OpenAI 工具智能体获取天气信息。此外，ADK 0.2.0 还带来了其他重要的增强功能，包括改进的工具功能（例如从对象实例创建 `FunctionTools`），更好的异步工具操作，以及通过回调链和新原语实现的高级智能体逻辑和内存管理。Java 版 ADK 仍处于早期阶段，提供了供开发者入门的资源。",
+  "mainPoints": [
+    {
+      "point": "LangChain4j 显著扩展 ADK for Java 的 LLM 支持。",
+      "explanation": "以前仅限于 Google Gemini 和 Anthropic Claude，Java 开发者现在可以访问来自 OpenAI、Mistral、Ollama 和 Docker 模型运行器的更广泛的模型，从而提高了灵活性。"
+    },
+    {
+      "point": "支持多智能体 LLM 混合，优化任务执行。",
+      "explanation": "开发者可以策略性地组合不同的模型，利用专门的或更快的模型来执行特定的子任务，同时使用更强大的模型来进行核心推理，从而提高效率和准确性。"
+    },
+    {
+      "point": "ADK for Java 0.2.0 增强了工具和智能体内存管理。",
+      "explanation": "新功能包括从对象实例创建 `FunctionTools`，改进的异步操作，以及更灵活地控制智能体存储和处理信息的方式。"
+    }
+  ],
+  "keyQuotes": [
+    "ADK for Java 0.2.0 集成 LangChain4j LLM 框架，显著扩展功能，全面支持该框架下的大型语言模型。",
+    "多智能体场景下混合模型非常有趣，可以针对任务选择最优模型。",
+    "例如，使用超快模型进行简单分类以路由请求，而使用更强大的模型处理复杂任务（如 Gemini 2.5）。",
+    "除了 LangChain4j 集成之外，ADK 0.2.0 还引入了一系列旨在提高工具功能和智能体性能的重大增强功能。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "LangChain4j",
+    "LLM",
+    "Java",
+    "Google ADK"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 421,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759064400000,
+  "publishDateStr": "2025-09-28",
+  "publishDateTimeStr": "2025-09-28 13:00:00"
+}

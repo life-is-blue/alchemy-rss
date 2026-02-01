@@ -1,0 +1,51 @@
+{
+  "id": "RAW_0c4709",
+  "title": "从 Shopify 构建 Agent 的经验中可以学到的",
+  "url": "https://baoyu.io/blog/shopify-agent-building-experience",
+  "date": "2025-09-16 12:07:01",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"vcteb5c1pd\">Shopify 分享了他们构建 Agent 的经验，整体架构也是目前主流的 Agentic Loop，就是不停的循环，让大模型判断需要调用什么工具，Agent 去调用工具，根据调用工具的结果看是继续调用工具还是任务完成。</p>\n   <img src=\"https://baoyu.io/uploads/2025-09-16/1758024445125.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"nid1ge4cb2\">他们针对打造 AI 智能体给了4条核心建议</p>\n   <ol>\n    <li>\n     <p data-id=\"52cqi5qn5s\">架构简单化，工具要清晰有边界</p>\n    </li>\n    <li>\n     <p data-id=\"6b8uum3fji\">模块化设计（如即时指令）</p>\n    </li>\n    <li>\n     <p data-id=\"8qjsmk88k4\">LLM 评估必须与人类高度相关</p>\n    </li>\n    <li>\n     <p data-id=\"2h9sh4xury\">提前应对奖励作弊，持续优化评估体系</p>\n    </li>\n   </ol>\n   <p data-id=\"m5hbdrhimg\">我看下来主要是两点值得借鉴的地方：</p>\n   <p data-id=\"tg1j1bsyk6\">一、工具不要太多，尽量控制在 20 个以内</p>\n   <img src=\"https://baoyu.io/uploads/2025-09-16/1758024464260.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"klbx6nuc3e\">如果工具数量太多会极其影响 Agent 的能力，很难精确选择工具</p>\n   <p data-id=\"fpd049lxqq\">那么解决方案是什么呢？</p>\n   <p data-id=\"8sy1nh2fq0\">不要看他们分享的 JIT 方案，明显是一个过渡性的产物，需要动态的去生成调用工具的指令，为了保证不影响 LLM 的 Cache，还要动态去修改消息历史，过于复杂。</p>\n   <img src=\"https://baoyu.io/uploads/2025-09-16/1758024484961.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"2otjp32793\">真正的靠谱方案其实 PPT 里面也写了（看图3），只是它们还没实现，而实际上 Claude Code 这部分已经很成熟了，就是用 SubAgent（子智能体），通过 Sub Agent 分摊上下文，把一类工具放在一个 SubAgent 中，这样不会影响主 Agent 上下文长度，也可以让子 Agent 有一定自制能力，有点类似于一个公司大了就分部门，每个部门就是一个 SubAgent。</p>\n   <p data-id=\"n9rz9f7n6m\">二、Agent 生成的结果要 Evaluate（评估）</p>\n   <p data-id=\"iicdexxb83\">Agent 要做得好，很重要的一点就是要能评估它生成的结果是好还是坏，这样 Agent 自己就能对自己的结果进行改进优化。</p>\n   <p data-id=\"mc1hz3v3wg\">那么怎么评估 Agent 的优化结果呢？靠人太慢，靠机器太不靠谱。</p>\n   <img src=\"https://baoyu.io/uploads/2025-09-16/1758024514290.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"uxbny1bqmu\">所以他们先找了一些人类专家，从正式环境中抽取了足够多样的结果，来人工标记是好还是坏，然后把这个结果作为基准数据集，再去写提示词让 LLM 来评估，让 LLM 评估的结果和人类的结果保持一致。当 LLM 评估结果和人类一致后，后续就可以放心的让 LLM 来评估 Agent 的生成结果，这样就不需要人工介入。</p>\n   <img src=\"https://baoyu.io/uploads/2025-09-16/1758024524265.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"txsgk40bhn\">至于会不会误判，我想肯定还是会的，但不管怎么说还是一个比较好的折中方案。</p>\n   <p data-id=\"77ojj74jyl\">其他还有一些强化学习的训练方法，有兴趣可以自己去看看原文。</p>\n   <p data-id=\"burkkm8xyw\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://baoyu.io/translations/building-production-ready-agentic-systems\">https://baoyu.io/translations/building-production-ready-agentic-systems</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章总结了 Shopify 构建 AI Agent 的实践经验，强调了 Agentic Loop 架构、工具数量控制以及 LLM 评估与人类判断对齐的重要性。",
+  "oneSentenceSummary": "文章总结了 Shopify 构建 AI Agent 的实践经验，强调了 Agentic Loop 架构、工具数量控制以及 LLM 评估与人类判断对齐的重要性。",
+  "summary": "文章深入探讨了 Shopify 在构建 AI 智能体（Agent）方面的经验，核心采用主流的 Agentic Loop 架构，即大模型循环判断工具调用、执行并根据结果决定下一步。Shopify 提出了四项关键建议，包括架构简化、模块化设计、LLM 评估与人类判断高度相关以及提前应对奖励作弊。作者重点分析并补充了两点值得借鉴的地方：一是 Agent 工具数量应控制在 20 个以内，并指出相比 Shopify 的 JIT 方案，SubAgent（子智能体）是更可靠的解决方案，能通过分摊上下文来提高工具选择精度。二是强调了 Agent 生成结果评估的重要性，Shopify 通过人工专家标注基准数据集，进而训练 LLM 进行自动化评估，使其评估结果与人类判断保持高度一致，从而实现 Agent 的持续优化和迭代，减少人工介入。",
+  "mainPoints": [
+    {
+      "point": "控制 Agent 工具数量在 20 个以内，并采用 SubAgent 模式优化工具管理。",
+      "explanation": "工具过多会严重影响 Agent 选择工具的精度和效率。通过 SubAgent 将相关工具分组并分摊上下文，可有效提升 Agent 性能和可扩展性，是比 JIT 方案更成熟的实践。"
+    },
+    {
+      "point": "建立高度关联人类判断的 LLM 评估体系是 Agent 持续优化的关键。",
+      "explanation": "通过人工标注高质量数据集作为基准，训练 LLM 进行自动化评估，使其结果与人类判断一致，从而实现 Agent 的快速迭代和改进，降低人工评估成本。"
+    }
+  ],
+  "keyQuotes": [
+    "整体架构也是目前主流的 Agentic Loop，就是不停的循环，让大模型判断需要调用什么工具，Agent 去调用工具，根据调用工具的结果看是继续调用工具还是任务完成。",
+    "如果工具数量太多会极其影响 Agent 的能力，很难精确选择工具",
+    "真正的靠谱方案其实 PPT 里面也写了（看图 3），只是它们还没实现，而实际上 Claude Code 这部分已经很成熟了，就是用 SubAgent（子智能体），通过 Sub Agent 分摊上下文，把一类工具放在一个 SubAgent 中",
+    "Agent 要做得好，很重要的一点就是要能评估它生成的结果是好还是坏，这样 Agent 自己就能对自己的结果进行改进优化。",
+    "当 LLM 评估结果和人类一致后，后续就可以放心的让 LLM 来评估 Agent 的生成结果，这样就不需要人工介入。"
+  ],
+  "tags": [
+    "AI Agent",
+    "Agentic Loop",
+    "LLM应用",
+    "SubAgent",
+    "工具编排"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 743,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758024421000,
+  "publishDateStr": "2025-09-16",
+  "publishDateTimeStr": "2025-09-16 12:07:01"
+}

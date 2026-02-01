@@ -1,0 +1,60 @@
+{
+  "id": "RAW_2459a66",
+  "title": "关于 AI、开源、商业化与全球化的经验、教训和方法论 | 对谈 PingCAP CTO 东旭",
+  "url": "https://www.xiaoyuzhoufm.com/episode/68274977457b22ce0d0dc9e9",
+  "date": "2025-05-17 14:00:00",
+  "author": "42章经",
+  "siteName": "42章经",
+  "content": "<p><strong><span>活动预告🥳：5 月 31 日，我们会请到东旭办一场线上活动，大家记得翻到 shownotes 末尾查看报名信息！</span></strong></p><span></span>\n<p><span>PingCAP 在前些年最被大家熟知的可能就是其非常高的估值，经常被 challenge 的则是其商业化的收入。而这两年很多人不知道的是 PingCAP 的国际化业务发展得异常好，且已经有了非常高的海外年收入。</span></p><span></span>\n<p><span>23 年我曾经请云启资本的陈昱分享过他投资 PingCAP 等知名公司背后的逻辑。在那期</span><a href=\"https://www.xiaoyuzhoufm.com/episode/64d7b71de490c5dee544aca2\" data-url=\"https://www.xiaoyuzhoufm.com/episode/64d7b71de490c5dee544aca2\"><span>播客</span></a><span>中，陈昱说他投资 PingCAP 的重要原因之一是发现他们团队有野心（选择了分布式数据库这个难度极高的方向）、且有实现野心的潜力（三个联创都是技术背景，代码写得很扎实）。</span></p><span></span>\n<p><span>两年过去，很开心今天终于能和 PingCAP 的联合创始人兼 CTO 黄东旭面对面聊天，听他亲口讲述这家估值 30 亿美金的数据库创业公司从 0 到 1 的实践和思考。</span></p><span></span>\n<p><span>在这期播客中，东旭坦诚分享了他们踩过的非常多的坑。我们聊到了 PingCAP 在发展过程中的关键决策、开源项目的运作逻辑与商业化策略，以及中国团队在海外市场的落地经验和商业化探索过程。此外，他也从他的视角聊到了很多关于 AI 的观察和思考。</span></p><span></span>\n<p><span>和他聊的时候，还意外得知原来他是一个弹吉他和贝斯、玩合成器的音乐爱好者，这个爱好，也是他创业十年来保持身心轻盈的重要原因之一 ；）</span></p><span></span>\n<p><span>【</span><strong><span>人类博物馆】</span></strong></p><span></span>\n<p><strong><span>导游：</span></strong><span>曲凯，42章经创始人</span></p><span></span>\n<p><strong><span>35 号珍藏：</span></strong><span>PingCAP 联合创始人、CTO，PingCAP 最新公开估值已达 30 亿美元</span></p><span></span>\n<p><span>【</span><strong><span>时光机】</span></strong></p><span></span>\n<p><strong><span>Part1 PingCAP 从 0 到 1 的发展历程</span></strong></p><span></span>\n<ul>\n <span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"81\">1:21</a> PingCAP 到底是做什么的？—— 一个装数据的魔法杯子</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"415\">6:55</a> PingCAP 十年来最关键的四个决策 </span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"430\">7:10</a> ① 开源</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"450\">7:30</a> ② 选择了关系型数据库这个难度最大、但期望最高的方向</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"517\">8:37</a> ③ 做全球化</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"549\">9:09</a> ④ 转型云服务</span></li><span> </span>\n  </ul><span> </span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"592\">9:52</a> 为什么 15 年还能长出一个数据库巨头？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"778\">12:58</a> 为什么在商业化没做起来时，公司就能有 30 亿美金的估值？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1127\">18:47</a> 商业化的摸索过程</span></li><span></span>\n</ul><span></span>\n<p><strong><span>Part2 关于国际化的经验和思考</span></strong></p><span></span>\n<ul>\n <span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1472\">24:32</a> 一个真·国际化的公司应该具备什么样的心态？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1671\">27:51</a> 怎么判断自己的公司是不是真的做到了国际化？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1953\">32:33</a> 在国际化的过程中，我们可踩过太多坑了…</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2043\">34:03</a> 先做美国市场是一个事半功倍的选择</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2089\">34:49</a> 这波 AI 创业者中我最看好 Day 1 就搬去美国的那一批</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2211\">36:51</a> 想融入当地环境？先招个本地销售，然后跟着 ta 一起跑客户</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2434\">40:34</a> 出海没有捷径，我过去十年尝试的所有花活基本上都失败了</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2637\">43:57</a> 出海华人创业者，第一容易高估语言障碍，第二容易高估商业化难度</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2723\">45:23</a> 一些关于 AI 的观察和思考 </span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2753\">45:53</a> 营销被大大低估了！不存在什么「酒香不怕巷子深」</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2802\">46:42</a> AI 还缺一个通用的 sharing memory layer</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2966\">49:26</a> 我个人很看好企业服务端的机会</span></li><span> </span>\n  </ul><span> </span></li><span></span>\n</ul><span></span>\n<p><strong><span>【Reference】</span></strong></p><span></span>\n<ul>\n <span> </span>\n <li><a href=\"https://www.xiaoyuzhoufm.com/episode/68032a401f1db84a563d5d83\" data-url=\"https://www.xiaoyuzhoufm.com/episode/68032a401f1db84a563d5d83\"><span>Agent 开发的上半场: 环境、Tools 和 Context 如何决定 Agent｜对谈 Sheet0 创始人王文锋</span></a></li><span> </span>\n <li><a href=\"https://www.xiaoyuzhoufm.com/episode/64d7b71de490c5dee544aca2\" data-url=\"https://www.xiaoyuzhoufm.com/episode/64d7b71de490c5dee544aca2\"><span>揭秘 Minimax、Zilliz、PingCAP 背后的投资逻辑 | 对谈云启合伙人陈昱</span></a></li><span></span>\n</ul><span></span>\n<p><span>【</span><strong><span>活动预告🥳】</span></strong></p><span></span>\n<p><span>5 月 31 日，我们会办一场线上活动。感兴趣的朋友欢迎点击</span><a href=\"https://d2cs50y9wy.feishu.cn/share/base/form/shrcnX7hZowfyYxmvTQsxzQwBkh\" data-url=\"https://d2cs50y9wy.feishu.cn/share/base/form/shrcnX7hZowfyYxmvTQsxzQwBkh\"><span>链接</span></a><span>或扫描下面的二维码，一起来认识&amp;交流！</span></p><span></span>\n<p><img src=\"https://bts-image.xyzcdn.net/aHR0cHM6Ly9kMmNzNTB5OXd5LmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9hc3luY2NvZGUvP2NvZGU9TnpsalpURm1Oak00WmpBeE5EUmxNbVE1WVRRd1pEWXdaVE0xTlRrNFlURmZXa3RVVEU5SFV6ZG5hMlZEVVhkVVZEVmFkVTlXZGpKTWRYSkthelZvU2tWZlZHOXJaVzQ2UmxSMlVtSkRWbkkxYjNKM1FYUjRjMUpaTTJOdFkwcHhiazlpWHpFM05EYzBPVEEyTWpnNk1UYzBOelE1TkRJeU9GOVdOQQ==\"></p><span></span>\n<p><span>【</span><strong><span>The gang that made this happen】</span></strong></p><span></span>\n<ul>\n <span> </span>\n <li><span>制作人：陈皮、Celia</span></li><span> </span>\n <li><span>剪辑：陈皮</span></li><span> </span>\n <li><span>Bgm：Mondo Bongo - Joe Strummer &amp; The Mescaleros</span></li><span></span>\n</ul>",
+  "aiSummary": "PingCAP CTO 黄东旭分享公司在分布式数据库、开源、全球化及 AI 企业服务领域的深度实践与战略思考。",
+  "oneSentenceSummary": "PingCAP CTO 黄东旭分享公司在分布式数据库、开源、全球化及 AI 企业服务领域的深度实践与战略思考。",
+  "summary": "本期播客对话 PingCAP 联合创始人兼 CTO 黄东旭，深入剖析了公司如何从零打造分布式数据库 TiDB，并发展成为估值数十亿美元的科技企业。核心战略包括坚定选择开源模式以获取信任和人才、聚焦难度高但市场潜力巨大的关系型数据库、拥抱全球化以降低内卷并拓展市场、以及向云服务转型以适应技术趋势和优化商业模式。黄东旭坦诚分享了公司在国际化过程中踩过的诸多“坑”，强调创始人亲自投入和本地化心态的重要性，并为 AI 初创公司出海美国市场提供了实用建议。此外，他还展望了 AI 对企业服务的深刻影响，认为 AI 将重塑企业软件，而数据库公司在提供数据和上下文服务方面拥有独特优势。最后，他分享了十年创业带来的个人成长感悟：耐心、精力管理和尊重常识。",
+  "mainPoints": [
+    {
+      "point": "核心战略（开源、关系型数据库、全球化、云服务）是 PingCAP 成功的关键驱动。",
+      "explanation": "这些大胆且前瞻性的选择，如开源建立信任和生态，全球化拓展高价值市场，帮助公司在基础软件领域脱颖而出。"
+    },
+    {
+      "point": "真正的国际化需创始人投入、本地化团队，而非简单的“出海”心态。",
+      "explanation": "出海成功依赖于深入目标市场、建立本地关系、克服文化和语言障碍，将公司打造为普世文化的组织。"
+    },
+    {
+      "point": "基础软件的商业价值在于其创造的社会价值，而非早期短期收入。",
+      "explanation": "投资人看重开源项目的用户采纳率和对解决行业痛点的价值，相信其长期变现潜力，尤其在云服务模式成熟后。"
+    },
+    {
+      "point": "AI 将重塑企业服务，数据库在提供上下文和数据能力方面具独特价值。",
+      "explanation": "未来的企业软件将由智能代理驱动，依赖底层数据和 LM 的结合提供个性化服务，企业数据保护和利用成核心。"
+    }
+  ],
+  "keyQuotes": [
+    "我们做的这个产品叫 TDB，是一个分布式的数据库。简单来说，我们其实是在做数据的容器。",
+    "最重要的节点就是第一天，第一天其实我们定了几个很重要的战略。",
+    "我觉得出海和全球化就是在我们的基因里面也是一个很重要的 milestone。",
+    "最重要的说在海外你是一个在当地的本地化…不是一个外来者的心态。",
+    "我自己发现的一个现象就是无论你心怎么想，但你的身体如果在某个地方，那你可能 70%的精力和时间自然的会被这个地方给牵扯。",
+    "我觉得我现在所有尝试过的花活基本上都失败了…很多东西其实就是常识。"
+  ],
+  "tags": [
+    "PingCAP",
+    "分布式数据库",
+    "开源战略",
+    "国际化",
+    "云服务转型"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1090,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_84751f",
+  "sourceName": "42章经",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747490400000,
+  "publishDateStr": "2025-05-17",
+  "publishDateTimeStr": "2025-05-17 14:00:00"
+}

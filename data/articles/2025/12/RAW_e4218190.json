@@ -1,0 +1,63 @@
+{
+  "id": "RAW_e4218190",
+  "title": "超越应用层的基准测试：Uber 如何评估基础设施变更与云服务单元",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269848&idx=4&sn=2175fb0b6cf23e8831a3b506f144882d",
+  "date": "2025-12-31 03:38:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:14px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;text-align:center;\" data-pm-slice=\"0 0 []\">\n   <div style=\"margin:0;font-weight:400;font-size:14px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;text-align:center;\" data-pm-slice=\"0 0 []\">\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Uber分享 了 Ceilometer 的细节，这是他们内部的一个自适应基准测试框架，旨在评估应用级指标之外的基础设施性能。该系统能够利用接近生产环境负载的可重复的基准测试，协助 Uber 认证新增的云服务单元、验证基础设施变更并衡量效率提升举措。随着不同云服务商以及硬件代际间基础设施异构性的不断增强，Uber 构建了 Ceilometer，希望借此在不同的环境中提供一致的数据驱动的性能信号。</span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Uber 这样的规模下，基础设施基准测试一直以来还是一个分散的手动过程。工程师们经常依赖一次性脚本，单独运行测试，并通过电子表格来比较结果，这使得重现结果或将不同团队之间的性能指标关联起来变得困难。Ceilometer 用一个集中化的平台取代了这种方法，它能够自动编排基准测试、执行测试、摄取结果并进行分析，这样就可以在不同的服务器、工作负载和环境之间进行标准化比较。</span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Ceilometer 采用分布式系统架构，可在专用机器上协调基准测试的执行。为了反映真实工作负载的行为，测试以并行方式运行，原始输出存储于持久化 Blob 存储中。测试结果经过验证及标准化处理后会被导入 Uber 的集中式数据仓库，然后他们就可以在该仓库中和生产指标一起进行查询分析。据 Uber 工程师介绍，该设计使其能够通过统一的数据模型识别性能退化及配置低效问题或硬件层面的差异。</span></p>\n    <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img data-aistatus=\"1\" class=\"rich_pages wxw-img\" data-ratio=\"0.8302158273381295\" data-type=\"png\" data-w=\"1390\" style=\"width: 100%;\" data-imgfileid=\"503786187\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=6b530e2e&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FYriaiaJPb26VMHjZmWxZibj22xuF3R2ia8mnOEksjBZXuVWJicnECgJuG6tmHVMLZnMHtGS8vMKU5r2Sd4Uq8mr0MSA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n    <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Ceilometer 架构图（图片来源：Uber 博客）</span></span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该框架支持广泛的工作负载类型。要反映 CPU、内存、网络和存储的性能，可以使用合成基准测试，如 SpecCPU2017、SPECjbb2015、NetPerf 和 FIO。对于有状态系统，Ceilometer 集成了 Uber 的 Odin 平台，可以在真实条件下对数据库工作负载进行基准测试。对于无状态服务，则可以使用 Uber 的 Ballast 框架进行评估，该框架提供了可以模拟生产流量模式的自适应负载测试。</span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该框架的一个主要应用场景是服务器规格和云服务单元（SKU）认证。硬件供应商和云服务提供商可以在自己的环境中运行 Ceilometer 的基准测试套件并共享结果，这样 Uber 就可以在新 SKU 上线前评估预期性能。另一个关键的应用场景是基础设施变更验证，那些有针对性的基准测试有助于隔离由软件升级、内核更改、固件更新或配置调整引入的回归。Ceilometer 的测试结果可以跨时段、环境和工作负载类型进行比较，为工程师提供了一个更清晰的视图，让他们可以了解基础设施变更对系统行为产生了什么样的影响，而不仅仅是通过表层的应用级指标。</span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 LinkedIn 的一篇博文 中，Uber 基础设施团队高级工程经理和平台架构师 Nav Kankani 这样写道：</span></p>\n    <blockquote>\n     <p style=\"text-align: left;\"><span leaf=\"\">Uber 的自适应基准测试框架可以模拟我们的生产工作负载，指导云平台决策。通过呈现无状态、有状态、批处理和 AI/ML 领域的多样化工作负载，Ceilometer 大大方便了软硬件协同设计探索，并推动了我们整个团队的效率提升。</span></p>\n    </blockquote>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">随着 Uber 基础设施的不断发展，为了获得更深入、更主动的洞察，Uber 正在对 Ceilometer 进行扩展。已经规划好的增强功能包括：集成 AI 和机器学习，用于预测回归、识别根本原因和优化资源规模；支持更广泛的生态系统，包括新兴技术栈和基础设施范式；高级异常检测，用于更快地发现意外的性能偏差；组件级的利用率指标，提供对 CPU、内存、存储和网络行为的细粒度可见性。Uber 工程师还计划利用该框架进行金丝雀持续验证测试，定期自动运行基准测试，当性能指标超出阈值时提醒团队，为更快、更可靠的基础设施决策提供支持。</span></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><strong style=\"font-size: 16px;font-weight: bold;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n    <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/12/uber-infrastructure-benchmarking/\" target=\"_blank\">https://www.infoq.com/news/2025/12/uber-infrastructure-benchmarking/</a></span></span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Uber 介绍了其内部自适应基准测试框架 Ceilometer，用于在异构基础设施环境下，超越应用层指标，自动化评估云服务单元和基础设施变更的性能。",
+  "oneSentenceSummary": "Uber 介绍了其内部自适应基准测试框架 Ceilometer，用于在异构基础设施环境下，超越应用层指标，自动化评估云服务单元和基础设施变更的性能。",
+  "summary": "文章详细介绍了 Uber 内部开发的自适应基准测试框架 Ceilometer。该框架旨在超越传统应用层指标，评估大规模基础设施的性能，特别是在跨云服务商、跨硬件代际的异构环境中提供一致的数据驱动性能信号。Ceilometer 解决了过去分散的手动基准测试流程效率低下、结果难以重现和关联的问题，通过集中化的平台实现了基准测试的自动化编排、执行、结果摄取和分析。其分布式架构支持广泛的工作负载类型，包括合成基准测试（如 SpecCPU2017）以及与 Uber 内部平台（Odin 对有状态系统、Ballast 对无状态服务）的集成。该框架主要应用于服务器规格和云服务单元（SKU）认证，以及基础设施变更（如软件升级、内核更改）的验证，为工程师提供深入的系统行为洞察，而非仅仅应用级指标。Uber 未来计划通过集成 AI/ML、支持更广泛技术栈和高级异常检测等方式扩展 Ceilometer，以实现更主动的性能洞察和持续验证。",
+  "mainPoints": [
+    {
+      "point": "Ceilometer 是 Uber 开发的自适应基准测试框架，用于评估基础设施性能。",
+      "explanation": "该框架旨在超越传统的应用层指标，在异构基础设施环境下提供数据驱动的性能信号，解决手动基准测试的效率低下和结果不一致问题。"
+    },
+    {
+      "point": "Ceilometer 采用分布式架构，能自动化编排、执行、摄取和分析基准测试结果。",
+      "explanation": "该系统能协调专用机器上的测试执行，支持并行运行的测试，并将结果标准化后导入数据仓库，以便与生产指标进行统一分析。"
+    },
+    {
+      "point": "框架支持多种工作负载类型，并集成了 Uber 内部平台。",
+      "explanation": "Ceilometer 可以利用合成基准测试评估 CPU、内存等性能，并通过集成 Odin 和 Ballast 平台对有状态和无状态服务进行真实条件下的基准测试。"
+    },
+    {
+      "point": "主要应用场景包括服务器规格认证、云服务单元评估及基础设施变更验证。",
+      "explanation": "通过可重复的基准测试，Ceilometer 帮助 Uber 在新硬件上线前评估性能，并隔离软件升级、内核更改等基础设施变更引入的回归或性能影响。"
+    },
+    {
+      "point": "Uber 计划增强 Ceilometer，引入 AI/ML 进行预测和优化。",
+      "explanation": "未来的发展方向包括集成人工智能以预测回归、识别根本原因、优化资源规模，并支持更广泛的技术栈和实现高级异常检测与持续验证。"
+    }
+  ],
+  "keyQuotes": [
+    "Ceilometer 用一个集中化的平台取代了这种方法，它能够自动编排基准测试、执行测试、摄取结果并进行分析，这样就可以在不同的服务器、工作负载和环境之间进行标准化比较。",
+    "该框架支持广泛的工作负载类型。要反映 CPU、内存、网络和存储的性能，可以使用合成基准测试，如 SpecCPU2017、SPECjbb2015、NetPerf 和 FIO。",
+    "硬件供应商和云服务提供商可以在自己的环境中运行 Ceilometer 的基准测试套件并共享结果，这样 Uber 就可以在新 SKU 上线前评估预期性能。",
+    "Uber 的自适应基准测试框架可以模拟我们的生产工作负载，指导云平台决策。",
+    "当性能指标超出阈值时提醒团队，为更快、更可靠的基础设施决策提供支持。"
+  ],
+  "tags": [
+    "基准测试",
+    "基础设施",
+    "性能评估",
+    "云服务",
+    "Uber"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 87,
+  "wordCount": 1334,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767152280000,
+  "publishDateStr": "2025-12-31",
+  "publishDateTimeStr": "2025-12-31 03:38:00"
+}

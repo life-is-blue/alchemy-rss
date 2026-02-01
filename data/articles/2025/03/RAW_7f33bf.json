@@ -1,0 +1,53 @@
+{
+  "id": "RAW_7f33bf",
+  "title": "BigQuery JSON 助力 MongoDB Dataflow 管道优化",
+  "url": "https://developers.googleblog.com/en/leveraging-bigquery-json-for-optimized-mongodb-dataflow-pipelines/",
+  "date": "2025-03-11 00:00:00",
+  "author": "Zi Wang, Venkatesh Shanbhag",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Cloud-patterns-databases-banner.original.png\" alt=\"Cloud-patterns-databases-banner\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"1es9f\">We're delighted to introduce a major enhancement to our <a href=\"https://cloud.google.com/dataflow/docs/guides/templates/provided/mongodb-to-bigquery\">Google Cloud Dataflow templates</a> for MongoDB Atlas. By enabling direct support for JSON data types, users can now seamlessly integrate their MongoDB Atlas data into BigQuery, eliminating the need for complex data transformations.</p>\n    <p data-block-key=\"9bl62\">This streamlined approach saves time and resources, empowering users to unlock the full potential of their data through advanced data analytics and machine learning.</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image5_TmzHzOU.original.png\" alt=\"JSON feature for user options on Dataflow Templates\">\n     <div class=\"regular-image-description\">\n      Figure 1: JSON feature for user options on Dataflow Templates\n     </div>\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <h2 data-block-key=\"1es9f\">Limitations without JSON support</h2>\n    <p data-block-key=\"4cpmn\">Traditionally, Dataflow pipelines designed to handle MongoDB Atlas data often necessitate the transformation of data into JSON strings or flattening complex structures to a single level of nesting before loading into BigQuery. Although this approach is viable, it can result in several drawbacks:</p>\n    <p data-block-key=\"26kqh\"></p>\n    <ul>\n     <li data-block-key=\"cce3k\"><b>Increased latency:</b> The multiple data conversions required can lead to increased latency and can significantly slow down the overall pipeline execution time.</li>\n    </ul>\n    <p data-block-key=\"968lv\"></p>\n    <ul>\n     <li data-block-key=\"73prt\"><b>Higher operational costs:</b> The extra data transformations and storage requirements associated with this approach can lead to increased operational costs.</li>\n    </ul>\n    <p data-block-key=\"bm280\"></p>\n    <ul>\n     <li data-block-key=\"5ejh\"><b>Reduced query performance:</b> Flattening complex document structures in JSON String format can impact query performance and make it difficult to analyze nested data.</li>\n    </ul>\n    <h2 data-block-key=\"ffacg\"><b><br></b>So, what’s new?</h2>\n    <p data-block-key=\"4hemp\">BigQuery's Native JSON format addresses these challenges by enabling users to directly load nested JSON data from MongoDB Atlas into BigQuery without any intermediate conversions.</p>\n    <p data-block-key=\"46nnn\">This approach offers numerous benefits:</p>\n    <p data-block-key=\"2san2\"></p>\n    <ul>\n     <li data-block-key=\"31bqe\"><b>Reduced operating costs:</b> By eliminating the need for additional data transformations, users can significantly reduce operational expenses, including those associated with infrastructure, storage, and compute resources.</li>\n    </ul>\n    <p data-block-key=\"b1md\"></p>\n    <ul>\n     <li data-block-key=\"7cehc\"><b>Enhanced query performance:</b> BigQuery's optimized storage and query engine is designed to efficiently process data in Native JSON format, resulting in significantly faster query execution times and improved overall query performance.</li>\n    </ul>\n    <p data-block-key=\"c9c21\"></p>\n    <ul>\n     <li data-block-key=\"esus7\"><b>Improved data flexibility:</b> users can easily query and analyze complex data structures, including nested and hierarchical data, without the need for time-consuming and error-prone flattening or normalization processes.</li>\n    </ul>\n    <p data-block-key=\"b0ir6\"></p>\n    <p data-block-key=\"6ferd\">A significant advantage of this pipeline lies in its ability to directly leverage BigQuery's powerful <a href=\"https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions\">JSON functions</a> on the MongoDB data loaded into BigQuery. This eliminates the need for a complex and time-consuming data transformation process. The JSON data within BigQuery can be queried and analyzed using standard <a href=\"https://cloud.google.com/bigquery/docs/json-data#extract_values_as_json\">BQML</a> queries.</p>\n    <p data-block-key=\"eqigq\">Whether you prefer a streamlined cloud-based approach or a hands-on, customizable solution, the Dataflow pipeline can be deployed either through the Google Cloud console or by running the code from <a href=\"https://github.com/GoogleCloudPlatform/DataflowTemplates\">github repository</a>.</p>\n    <h2 data-block-key=\"co5u8\"><br>\n      Enabling data-driven decision-making</h2>\n    <p data-block-key=\"2m6sg\">To summarize, Google’s Dataflow template provides a flexible solution for transferring data from MongoDB to BigQuery. It can process entire collections or capture incremental changes using MongoDB's Change Stream functionality. The pipeline's output format can be customized to suit your specific needs. Whether you prefer a raw JSON representation or a flattened schema with individual fields, you can easily configure it through the <i>userOption</i> parameter. Additionally, data transformation can be performed during template execution using <a href=\"https://cloud.google.com/dataflow/docs/guides/templates/create-template-udf\">User-Defined Functions</a> (UDFs).</p>\n    <p data-block-key=\"ddo2o\">By adopting BigQuery Native JSON format in your Dataflow pipelines, you can significantly enhance the efficiency, performance, and cost-effectiveness of your data processing workflows. This powerful combination empowers you to extract valuable insights from your data and make data-driven decisions.</p>\n    <p data-block-key=\"7ls7j\">Follow the <a href=\"https://cloud.google.com/dataflow/docs/guides/templates/provided/mongodb-to-bigquery\">Google Documentation</a> to learn how to set up the Dataflow templates for MongoDB Atlas and BigQuery.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google Dataflow 模板通过原生 JSON 支持，优化了 MongoDB Atlas 与 BigQuery 的集成，简化了数据转换流程。",
+  "oneSentenceSummary": "Google Dataflow 模板通过原生 JSON 支持，优化了 MongoDB Atlas 与 BigQuery 的集成，简化了数据转换流程。",
+  "summary": "谷歌云 Dataflow 模板集成了原生 JSON 支持，允许用户无缝地将 MongoDB Atlas 数据集成到 BigQuery 中，无需复杂的数据转换。这降低了延迟和运营成本，提高了查询性能，并提高了数据灵活性。用户可以通过 Google Cloud Console 部署，或者从 GitHub 运行代码，利用 BigQuery 的 JSON 函数进行数据分析。该模板支持 MongoDB 变更流以进行增量更新，并支持用户自定义函数 (UDF) 进行数据转换，从而更有效地支持数据驱动的决策。",
+  "mainPoints": [
+    {
+      "point": "原生 JSON 支持和 BigQuery JSON 函数减少了数据转换，降低了运营成本",
+      "explanation": "消除额外的数据转换步骤可以显著降低与基础设施、存储和计算资源相关的运营费用。"
+    },
+    {
+      "point": "BigQuery 优化的存储和查询引擎，显著提升查询性能",
+      "explanation": "BigQuery 专门设计用于高效处理原生 JSON 格式的数据，从而显著缩短查询执行时间并提高整体查询性能。"
+    },
+    {
+      "point": "Dataflow 模板提供了一个灵活的 MongoDB 到 BigQuery 数据传输解决方案",
+      "explanation": "该模板可以处理整个集合，也可以使用 MongoDB 的变更流功能捕获增量更改，并通过 userOption 参数自定义输出格式。"
+    }
+  ],
+  "keyQuotes": [
+    "通过直接支持 JSON 数据类型，用户可以无缝地将 MongoDB Atlas 数据集成到 BigQuery 中，无需复杂的数据转换步骤。",
+    "BigQuery 的原生 JSON 格式解决了这些挑战，它允许用户直接将 MongoDB Atlas 中嵌套的 JSON 数据加载到 BigQuery 中，无需任何中间转换。",
+    "无论您喜欢原始 JSON 格式还是包含独立字段的扁平化结构，您都可以通过 userOption 参数轻松配置。"
+  ],
+  "tags": [
+    "数据集成",
+    "ETL",
+    "数据工程",
+    "BigQuery",
+    "MongoDB"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 527,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1741651200000,
+  "publishDateStr": "2025-03-11",
+  "publishDateTimeStr": "2025-03-11 00:00:00"
+}

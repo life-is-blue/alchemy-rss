@@ -1,0 +1,63 @@
+{
+  "id": "RAW_bfcf83bd",
+  "title": "免费！美团 AI IDE 编程工具 CatPaw 上线",
+  "url": "https://www.qbitai.com/2025/11/350537.html",
+  "date": "2025-11-10 08:08:01",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">太密了。</p>\n  <p data-track=\"2\">美团搞起AI大模型后，动作和发布实在太密了。</p>\n  <p data-track=\"3\">这不就在最近，美团又出了一款AI IDE编程工具。</p>\n  <p data-track=\"4\">代号<strong>Meituan CatPaw</strong>，官方介绍是酱紫的——</p>\n  <blockquote>\n   <p data-track=\"5\">Meituan CatPaw是美团推出的AI IDE，通过Agent驱动编程体验革新，让开发者专注于创意实现，提升项目交付效率。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121007_7d7663eaf39763ed3d8c5e808d323e4c.png\" data-src=\"https://image.jido.dev/20251110121007_7d7663eaf39763ed3d8c5e808d323e4c.png\">\n  </div>\n  <p data-track=\"6\">外卖送得快，AI代码交付更快，美团这算是给AI Coding赛道火上浇油了。</p>\n  <p data-track=\"7\">而且低调上线的CatPaw，<strong>当前阶段还对所有人完全免费</strong>（新用户注册后即可获得500次对话额度）。</p>\n  <p data-track=\"8\">它支持macOS 10.15以上系统（Windows版本预计本周五上线），全面兼容主流编程语言，包括但不限于Python、C++、Java、JavaScript、TypeScript、Go、Rust等。</p>\n  <p data-track=\"9\">问题是：CatPaw能做什么？实测表现又会如何？</p>\n  <p data-track=\"11\">首先需要提醒，CatPaw目前仍旧需要邀请码，不过获取方式很简单——</p>\n  <p data-track=\"12\">从官网添加社群后，公告里一般会有专属邀请码。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121008_42fa72770184ce4ab5769f564857d7b7.png\" data-src=\"https://image.jido.dev/20251110121008_42fa72770184ce4ab5769f564857d7b7.png\">\n  </div>\n  <p data-track=\"13\">它目前主要有四大核心功能：</p>\n  <ul>\n   <li data-track=\"14\">Tab（代码补全预测）</li>\n   <li data-track=\"15\">Agent（快速问答生成）</li>\n   <li data-track=\"16\">Browser（IDE内预览调试）</li>\n   <li data-track=\"17\">Codebase (项目维度分析)</li>\n  </ul>\n  <p data-track=\"18\">先说AI编程基本工——代码自动补全。</p>\n  <p data-track=\"19\">目前CatPaw具备<strong>基础补全</strong>和<strong>NextEdit</strong>（基于历史编辑内容预测下一次编辑）两种能力。</p>\n  <p data-track=\"20\">在设置里启用后，一般按下Tab键即可自动补全代码。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121007_013296044fa2417d6e44ab0c2a53348f.png\" data-src=\"https://image.jido.dev/20251110121007_013296044fa2417d6e44ab0c2a53348f.png\">\n  </div>\n  <p data-track=\"21\">具体打开方式be like：</p>\n  <p data-track=\"22\">当你写代码时，它会根据你正在输入的内容，智能提供补全建议。按下Tab键即代表你接受建议，然后它将在光标右侧用灰色文本显示补全内容。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121008_09b92f7f813efbfe458874cded5068ce.png\" data-src=\"https://image.jido.dev/20251110121008_09b92f7f813efbfe458874cded5068ce.png\">\n  </div>\n  <p data-track=\"23\">而且很方便的是，它支持<strong>批量编辑多行代码</strong>。</p>\n  <p data-track=\"24\">一旦AI检测到有同时适用于多行代码的修改时，它会在右侧的悬浮框中一次性全部展现给你。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/c9a78b86101fac1a8b777de5c233cfe8.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/c9a78b86101fac1a8b777de5c233cfe8.gif\">\n  </div>\n  <p data-track=\"25\">更重要的是，它不仅能补全当前单词，<strong>而且还能预测你接下来可能要修改的整个代码块</strong>。</p>\n  <p data-track=\"26\">就是说，AI会实时分析你最近编写的代码模式、修改记录以及你接受过的补全建议。基于这些信息，AI会推断出你接下来最可能想要实现的代码逻辑或功能。</p>\n  <p data-track=\"27\">如此一来，超越传统的单词补全，CatPaw也支持进行智能化的上下文预测了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121007_5a2d43b7f4ec5daf22f4ae602ac118cd.gif\" data-src=\"https://image.jido.dev/20251110121007_5a2d43b7f4ec5daf22f4ae602ac118cd.gif\">\n  </div>\n  <p data-track=\"28\">当然了，如果你不想使用这个功能，还能点击底部的“CatPaw Tab”设置全局禁用或某一编程语言禁用。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121007_888517f458a2d75bbce65e8db473521e.jpeg\" data-src=\"https://image.jido.dev/20251110121007_888517f458a2d75bbce65e8db473521e.jpeg\">\n  </div>\n  <p data-track=\"29\">再说Agent问答生成功能，它基本以侧边栏对话形式展开（这样无需频繁切换窗口）。</p>\n  <p data-track=\"30\">模式主要有三种，分别适用于不同场景：</p>\n  <ul>\n   <li data-track=\"31\"><strong>Ask模式（智能问答助手）</strong>：代码理解、技术咨询、单文件代码生成。</li>\n   <li data-track=\"32\"><strong>Agent模式（全能执行助手）</strong>：复杂任务执行、多文件操作、自动化工作流。</li>\n   <li data-track=\"33\"><strong>用户自定义模式（个性化工作流）</strong>：特殊需求、定制化工作流。</li>\n  </ul>\n  <p data-track=\"34\">这里我们简单实测了一个Agent任务：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121007_b86248628cacb3c1839cef5ed9b5c341.png\" data-src=\"https://image.jido.dev/20251110121007_b86248628cacb3c1839cef5ed9b5c341.png\">\n  </div>\n  <p data-track=\"36\">视频链接：https://mp.weixin.qq.com/s/90bgwDH8hfSGn3WHnX8LQA</p>\n  <p data-track=\"37\">而代码写完之后，CatPaw还<strong>内置了浏览器预览调试</strong>，无需切换窗口就能立马看到效果。</p>\n  <p data-track=\"38\">以前写前端代码还需要同时打开IDE和浏览器，改完代码后还需手动刷新页面。</p>\n  <p data-track=\"39\">而现在，CatPaw内置了DevTools调试工具，用户可以在此查看页面元素、调试JavaScript代码、分析网络请求等，无需切换到外部浏览器即可完成所有调试工作。</p>\n  <p data-track=\"40\">并且，当项目成功运行后，右下角就会自动弹出“发现可用端口xxx”提示。点击下方的“打开预览”按钮，即可在编辑器中看到打开的预览页面。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/0227cbda5b179efa6fd086cafa65b510.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/0227cbda5b179efa6fd086cafa65b510.gif\">\n  </div>\n  <p data-track=\"41\">以及最后，CatPaw还提供了<strong>项目级代码分析功能</strong>。</p>\n  <p data-track=\"42\">当你刚加入一个新团队，或者需要维护一个很久没碰过的老项目时，面对成千上万行陌生的代码，是不是感觉一头雾水？</p>\n  <p data-track=\"43\">而CatPaw的这个功能，就是专门解决这个痛点的。</p>\n  <p data-track=\"44\">只需输入一个简单的指令（如 @Codebase），它就能分析整个项目代码，梳理项目结构。</p>\n  <p data-track=\"45\">事实上，美团此次能推出相对完善的AI IDE工具，离不开它在AI Coding方向上的持续投入，背后更是美团对AI、大模型的全面布局。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121007_d2d1bab65716cf0547c3b90d6525cfa4.jpeg\" data-src=\"https://image.jido.dev/20251110121007_d2d1bab65716cf0547c3b90d6525cfa4.jpeg\">\n  </div>\n  <p data-track=\"47\">今年6月10日，美团就正式推出了自己的首款AI Coding Agent产品——NoCode。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121008_43d6abe6f2d32c2efa01f85e20848fcb.png\" data-src=\"https://image.jido.dev/20251110121008_43d6abe6f2d32c2efa01f85e20848fcb.png\">\n  </div>\n  <p data-track=\"48\">NoCode发布不久，美团方面就透露了CatPaw或将很快面世。如今，CatPaw算是如约而至。</p>\n  <p data-track=\"49\">要说这二者的关系，美团基础研发平台工程效率负责人<strong>程大同</strong>其实有所透露：</p>\n  <blockquote>\n   <p data-track=\"50\">对标Copilot，美团从2022年开始做CatPaw，2024年又开始往NoCode上投入。</p>\n   <p data-track=\"51\">NoCode是CatPaw的研发团队孵化出来的，从产品层面上可能不会那么快合并，因为解决的问题和用户场景有所区别，不过技术架构和Agent发展方向会逐步有一些协同。</p>\n  </blockquote>\n  <p data-track=\"52\">而无论是NoCode还是CatPaw，对美团来说，其首要意义还在于技术验证而非商业价值。</p>\n  <p data-track=\"53\">在这个验证过程中，程大同曾表示，AI Coding的核心竞争力首先在于<strong>模型</strong>。</p>\n  <p data-track=\"54\">说到模型，这里补充一下，CatPaw AI IDE背后的核心引擎即为美团自研的LongCat大模型——</p>\n  <p data-track=\"55\">Auto模式下自动推荐LongCat-Flash模型，另外也支持通过API手动添加模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"免费！美团AI IDE编程工具CatPaw上线\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251110121008_99732add187866388ace3d0bac281cf2.png\" data-src=\"https://image.jido.dev/20251110121008_99732add187866388ace3d0bac281cf2.png\">\n  </div>\n  <p data-track=\"56\">OK，当我们把视线放在美团模型上时，从美团今年的更新迭代逻辑来看，其路线也相当明确——</p>\n  <p data-track=\"57\">主打一个<strong>从内到外、从专到全，且速度优先</strong>。</p>\n  <p data-track=\"58\">从内到外其实算是美团AI战略的一部分了。王兴曾表示，美团的AI战略建立在三个层面：</p>\n  <ul>\n   <li data-track=\"59\"><strong>AI at work</strong>：用AI提升内部员工效率与运营能力；</li>\n   <li data-track=\"60\"><strong>AI in products</strong>：打造全新的AI原生产品，将用AI改造现有2B和2C端的产品和服务；</li>\n   <li data-track=\"61\"><strong>Building LLM</strong>：持续加大投资，构建内部大语言模型。</li>\n  </ul>\n  <p data-track=\"62\">一旦时机成熟，这些经过内部验证的AI模型或工具将逐步推向外界。</p>\n  <p data-track=\"63\">就像这次的AI编程工具，其实也是将美团内部员工都在用的工具慢慢开放给外部公众。</p>\n  <p data-track=\"64\">据《智能涌现》爆料，编程工具CatPaw上线后，美团内部研发人员的周活占比超过80%；<strong>每周新增的代码中，由AI生成的占比达到约50%</strong>。</p>\n  <p data-track=\"65\">而从专到全、速度优先的逻辑，则要通过梳理美团最近发布的一系列模型来看。</p>\n  <p data-track=\"66\">今年9月初，美团正式发布大语言模型LongCat-Flash-Chat，并且月底就上线了LongCat-Flash-Thinking模型。</p>\n  <p data-track=\"67\">通过这两个模型，它算是把思考/非思考的基础对话能力搞定了，而且从“Flash”命名也能看到，美团模型从一开始就追求“快”。</p>\n  <p data-track=\"68\">然后到了10月，美团继续上新LongCat-Video视频生成模型，在语言能力之外，美团模型不断拓展能力边界。</p>\n  <p data-track=\"69\">而之后不久，主打全面多模态的LongCat-Flash-Omni终于问世，总算是补齐了最后一块拼图。</p>\n  <p data-track=\"70\">可以看到，美团正在分“三步走”来迭代模型：</p>\n  <p data-track=\"71\">这第一步，就是<strong>速度优先</strong>。对用户来说，速度几乎是“模型是否好用”的基础门槛。因此不管是Chat还是多模态模型，先把模型响应、语音识别、实时生成这几件事做到“丝滑不卡”就成为美团的第一任务。</p>\n  <p data-track=\"72\">接下来就是<strong>专业深耕</strong>。有了速度，再往深里卷。就像LongCat-Flash-Omni模型，它在复杂逻辑推理、物理仿真、嘈杂语音识别等专业领域，明显做了不少优化。</p>\n  <p data-track=\"73\">而最终，<strong>模型便逐步从单一语言模型进阶成多模态</strong>。在这个过程中，美团直指“世界模型”目标，一步步打通了文字、语音、视觉。</p>\n  <p data-track=\"74\">并且基于这些模型，美团逐步诞生了NoCode、CatPaw这样的专业工具。</p>\n  <p data-track=\"75\">可以说，从模型到工具，从内部到外部……美团正在用全面快速的AI大模型实现刷新——</p>\n  <p data-track=\"76\">是时候要重新认识美团了。</p>\n  <p data-track=\"77\">在线体验：\n   <br class=\"sysbr\">\n   https://catpaw.meituan.com</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "美团推出 AI IDE 编程工具 CatPaw，通过 Agent 驱动提供代码补全、问答生成、内置调试和项目分析等功能，旨在提升开发者效率并已免费开放。",
+  "oneSentenceSummary": "美团推出 AI IDE 编程工具 CatPaw，通过 Agent 驱动提供代码补全、问答生成、内置调试和项目分析等功能，旨在提升开发者效率并已免费开放。",
+  "summary": "文章详细介绍了美团最新推出的 AI IDE 编程工具 CatPaw。该工具以 Agent 驱动为核心，致力于革新编程体验，提高项目交付效率。CatPaw 目前对所有用户免费开放，支持 macOS（Windows 版本预计本周五上线）和多种主流编程语言，包括 Python、C++、Java、JavaScript、TypeScript、Go、Rust 等。其核心功能包括基于上下文预测的代码自动补全（Tab 功能，支持 NextEdit 和批量编辑）、侧边栏 Agent 问答生成（提供 Ask、Agent 和用户自定义模式），以及内置浏览器预览调试（Browser 功能，集成 DevTools），此外还提供项目级代码分析（Codebase 功能），帮助开发者快速理解陌生代码库。该工具的推出是美团“从内到外、从专到全、速度优先”AI 大模型战略的最新实践，其核心引擎是美团自研的 LongCat 大模型，并与此前发布的 NoCode 工具在技术架构上有所协同。CatPaw 在美团内部已取得显著成效，AI 生成代码占比达 50%，体现了美团在 AI Coding 领域的持续投入和全面布局。",
+  "mainPoints": [
+    {
+      "point": "美团 CatPaw 是一款集 AI 代码补全、智能问答、内置调试和项目分析于一体的 AI IDE 工具。",
+      "explanation": "CatPaw 整合了多项 AI 能力，通过 Agent 驱动，为开发者提供从代码编写、问题解决到项目理解的全方位智能辅助，显著提升开发效率和体验。"
+    },
+    {
+      "point": "CatPaw 目前免费向公众开放，支持主流编程语言，降低了 AI 编程工具的使用门槛。",
+      "explanation": "作为一款功能全面的 AI IDE，其免费开放策略和广泛的语言兼容性，将吸引大量开发者尝试和使用，加速 AI 辅助编程的普及。"
+    },
+    {
+      "point": "CatPaw 的核心引擎是美团自研的 LongCat 大模型，是美团“从内到外、从专到全、速度优先”AI 战略的关键实践。",
+      "explanation": "该工具的推出不仅验证了美团在 AI 大模型领域的投入和技术实力，更代表了其内部验证后逐步对外开放的“从内到外”AI 战略部署的成功实施。"
+    },
+    {
+      "point": "CatPaw 的 NextEdit 功能能预测并批量编辑多行代码，大幅提高代码编写效率。",
+      "explanation": "传统的代码补全仅限于单词或单行，而 NextEdit 能理解上下文并预测整个代码块，通过批量编辑进一步提升了开发者的编码速度和准确性。"
+    },
+    {
+      "point": "CatPaw 在美团内部已取得显著成效，AI 生成代码占比达 50%，有力证明了其在提升研发效率方面的实际价值。",
+      "explanation": "内部高达 80%的周活占比和 50%的 AI 代码生成比例，直接体现了 CatPaw 作为内部工具的成熟度和对美团工程效率的巨大贡献，为外部推广提供了强有力的实践依据。"
+    }
+  ],
+  "keyQuotes": [
+    "Meituan CatPaw 是美团推出的 AI IDE，通过 Agent 驱动编程体验革新，让开发者专注于创意实现，提升项目交付效率。",
+    "而且低调上线的 CatPaw，当前阶段还对所有人完全免费（新用户注册后即可获得 500 次对话额度）。",
+    "AI 会实时分析你最近编写的代码模式、修改记录以及你接受过的补全建议。基于这些信息，AI 会推断出你接下来最可能想要实现的代码逻辑或功能。",
+    "据《智能涌现》爆料，编程工具 CatPaw 上线后，美团内部研发人员的周活占比超过 80%；每周新增的代码中，由 AI 生成的占比达到约 50%。",
+    "可以看到，美团正在分'三步走'来迭代模型：这第一步，就是速度优先。接下来就是专业深耕。而最终，模型便逐步从单一语言模型进阶成多模态。"
+  ],
+  "tags": [
+    "AI编程工具",
+    "美团",
+    "CatPaw",
+    "IDE",
+    "代码生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 88,
+  "wordCount": 2916,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762762081000,
+  "publishDateStr": "2025-11-10",
+  "publishDateTimeStr": "2025-11-10 08:08:01"
+}

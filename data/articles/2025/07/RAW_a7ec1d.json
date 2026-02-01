@@ -1,0 +1,59 @@
+{
+  "id": "RAW_a7ec1d",
+  "title": "MIRIX 重塑 AI 多模态长期记忆：超 Gemini 410%，节省 99.9%内存，APP 同步上线 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-15-16",
+  "date": "2025-07-15 08:44:31",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <blockquote>\n   <p>MIRIX，一个由 UCSD 和 NYU 团队主导的新系统，正在重新定义 AI 的记忆格局。</p>\n  </blockquote>\n  <p>在过去的十年里，我们见证了大型语言模型席卷全球，从写作助手到代码生成器，无所不能。然而，即使最强大的模型依然有一个根本性的弱点：<strong>它们不记得你</strong>。</p>\n  <p>针对这一现状，加利福尼亚大学圣迭戈分校（UCSD） 博士生 Yu Wang 和纽约大学教授<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;line-height: 1.75em;margin-left: 8px;margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">陈溪</span>（<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;line-height: 1.75em;margin-left: 8px;margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">Xi Chen</span>）联合推出并开源了 <strong>MIRIX </strong>—— 全球首个真正意义上的多模态、多智能体 AI 记忆系统。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/19385dfc-8f3c-43ec-732b-64759b7de100/public\" data-ratio=\"0.7953703703703704\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496039\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/358281f1-78d0-426f-8556-3c3a6c2b6884/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：MIRIX: Multi-Agent Memory System for LLM-Based Agents</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2507.07957</p></li>\n   <li>\n    <p>官方网站：https://mirix.io/</p></li>\n   <li>\n    <p>开源仓库：https://github.com/Mirix-AI/MIRIX</p></li>\n  </ul>\n  <p>MIRIX 的表现非常亮眼！在 ScreenshotVQA 这一需要深度多模态理解的挑战性基准上，MIRIX 的准确率比传统 RAG 方法高出 <strong>35%</strong>，存储开销降低 <strong>99.9%</strong>，与长文本方法相比超出<strong> 410%</strong>，开销降低 <strong>93.3%</strong>。在 LOCOMO 长对话任务中，MIRIX 以 <strong>85.4%</strong> 的成绩显著超越所有现有基线，树立了新的性能标杆。</p>\n  <p>不仅如此，该团队还上线了<strong>一款 Mac 端应用产品</strong>。通过这款开箱即用的应用程序，任何人都可以让 AI 看见你所看、理解你所做，并将一切转化为持久的电子记忆。</p>\n  <p><strong>一套彻底不同的范式</strong></p>\n  <p>回顾过去三年 AI 进化史，我们可以看到：</p>\n  <ul>\n   <li>\n    <p>大模型推理极限：参数暴增 × 算力飙升；</p></li>\n   <li>\n    <p>向量检索应急：RAG 拼接碎片；</p></li>\n   <li>\n    <p>「短期记忆」上线：对话历史有限回看。</p></li>\n  </ul>\n  <p>但所有这些，都不是「心智系统」。MIRIX 首先做到了：</p>\n  <ol>\n   <li>\n    <p><strong>支持多模态输入</strong>：不仅能理解文本，还能在高分辨率屏幕截图、对话日志等多源数据中构建全局记忆。</p></li>\n   <li>\n    <p><strong>拥有六大类人记忆系统</strong>：每个记忆模块都有专属的数据结构、生命周期管理策略，和独立的检索路由。</p></li>\n   <li>\n    <p><strong>内置多智能体协作</strong>：通过一个&nbsp;Meta Memory Manager&nbsp;进行总控，六个记忆 Agent 并行更新、分工检索，搭配对话 Agent 统一交互。</p></li>\n   <li>\n    <p><strong>主动话题生成与分层检索</strong>：不同于「先查再答」，MIRIX 会先分析用户意图，自动生成 topic embeddings，再匹配合适的记忆类型进行多层检索。</p></li>\n   <li>\n    <p><strong>产品化落地</strong>：该团队开发了一款个人助理的应用，目前已经在 Mac 端上线，可在其官方网站上下载体验。</p></li>\n  </ol>\n  <p>它不再是把知识塞进「嵌入空间」，而是用结构化、多通道、可演化的方式构建认知基底。</p>\n  <p><strong>为什么说它是 AI「心智雏形」？</strong></p>\n  <p>MIRIX 拥有六类核心记忆，能够细分认知角色：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/846f836b-c411-4fef-d133-7c75edb7ba00/public\" data-ratio=\"0.31203703703703706\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496037\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/b33c3592-b850-4b54-845a-182e08dc08fc/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p><strong>核心记忆（Core Memory）</strong>：存储 AI 的「人格」与用户长期偏好：如对话风格、偏好设定、身份信息。数据以永久<strong> KV 对</strong>存在，优先级最高，任何回答都自动加载。</p></li>\n   <li>\n    <p><strong>情景记忆（Episodic Memory）</strong>：类似人类的「事件日志」，带有<strong>时间戳、事件类型、主体、简述与详情</strong>，可以追溯用户所有历史操作。</p></li>\n   <li>\n    <p><strong>语义记忆（Semantic Memory）</strong>：储存<strong>概念、事实和社交图谱</strong>。每条记录包含「名称、定义、详细说明、来源」四元组。支持多跳推理与知识组合。</p></li>\n   <li>\n    <p><strong> 程序记忆（Procedural Memory）</strong>：以分步工作流形式保存任务：如「如何填写报销表」、「如何创建演示文档」。每个条目是 <strong>JSON 结构的多步操作</strong>。</p></li>\n   <li>\n    <p><strong>资源记忆（Resource Memory）</strong>：用于保存<strong>完整文件或截取片段</strong>，支持跨任务上下文引用。示例：用户上传的合同、会议记录、网页快照。</p></li>\n   <li>\n    <p><strong>知识金库（Knowledge Vault）</strong>：保存敏感信息，如密码、API Key、身份证号码，配有<strong>多级访问控制和加密机制</strong>。</p></li>\n  </ul>\n  <p>以往 RAG 只能「一口气查一堆」，MIRIX 可以先理解需求，再决定在哪种记忆中搜索，再组合答案。换句话说：<strong>它会思考「我要回忆什么」，而不是机械索引</strong>。</p>\n  <p><strong>多智能体工作流 &nbsp;Multi-Agent Workflow</strong></p>\n  <p>在面向长期记忆的现代 AI 系统中，模型必须能够处理高度动态且异构的用户交互输入，这些输入既包括即时对话消息、结构化任务指令，也包括大规模多模态信息，如屏幕截图或文件。要在保证一致性、可扩展性和高效检索的前提下管理如此多样化的数据，仅依赖单一的工作流是远远不够的。</p>\n  <p>为此，该团队提出了一种<strong>模块化多智能体架构（multi-agent architecture）</strong>，由若干专用组件在统一调度机制下协作完成输入处理、记忆更新和信息检索。整个系统包括：<strong>元记忆管理器</strong>（Meta Memory Manager）、<strong>记忆管理器</strong>（Memory Managers）以及<strong>对话智能体</strong>（Chat Agent）。</p>\n  <p>当系统接收到新的输入（如用户提供的文本、推断出的事件、上传的文件）时，会按如下流程进行处理：</p>\n  <ol>\n   <li>\n    <p><strong>初步检索</strong>：系统会先在现有记忆库上执行自动搜索，以检测是否存在与输入内容高度相似的记录。此步骤有助于避免冗余存储，并在必要时更新已存在条目。</p></li>\n   <li>\n    <p><strong>路由与分析</strong>：检索出的相关信息与原始输入内容一同传递给元记忆管理器，由其解析内容，提取元数据（如时间戳、来源类型、相关性评分），并判断哪些记忆组件需要更新。</p></li>\n   <li>\n    <p><strong>并行更新</strong>：元记忆管理器将输入内容分发给各个相关的记忆管理器。每个管理器独立完成以下操作：（1）提取结构化字段（例如摘要、详情、事件参与方）（2）去重或合并相似记录（3）更新索引和嵌入表示，供后续检索使用</p></li>\n   <li>\n    <p><strong>完成确认</strong>：当所有相关记忆管理器完成更新后，它们将状态反馈给元记忆管理器，系统再向外发送确认，表明本次记忆更新已结束。</p></li>\n  </ol>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3acf4375-947d-4dee-8444-4303e1114500/public\" data-ratio=\"0.6342592592592593\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496038\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/392542d6-bb0f-4a90-946b-27d7e702a345/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>对话检索流程 &nbsp;Chat Workflow</strong></p>\n  <p>在交互式对话场景下，检索流程主要分为以下步骤：</p>\n  <ol>\n   <li>\n    <p><strong>粗检索</strong>：当接收到用户查询时，对话智能体首先会在所有六个记忆组件中执行一次粗粒度检索，返回高层级的摘要或元数据信息，用于判断记忆分布。</p></li>\n   <li>\n    <p><strong>目标检索选择</strong>：对话智能体基于粗检索结果和查询内容进行分析，例如：若问题为操作性流程（如「如何提交报销单？」），则聚焦程序记忆；若问题为事实性回顾，则主要面向情景记忆或语义记忆。</p></li>\n   <li>\n    <p><strong>精细检索</strong>：针对确定的目标记忆组件，系统会使用更精准的检索策略，包括：基于嵌入向量的相似性搜索；BM25 文本相关性排序；关键字匹配。</p></li>\n   <li>\n    <p><strong>结果整合与答案生成</strong>：检索结果会带上来源标签（如 &lt;episodic_memory&gt;），与用户问题一同输入模型生成提示（system prompt），由模型生成最终回答。</p></li>\n   <li>\n    <p><strong>交互式更新</strong>：如果用户的查询涉及记忆修改（如添加新信息或纠正历史记录），对话智能体会即时与对应的记忆管理器进行交互，完成更新操作。</p></li>\n  </ol>\n  <p>这一流程确保了系统的回答不仅有一致性，也能根据最新知识动态调整。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/05ad114a-bba8-4bcf-f648-40dc0c056d00/public\" data-ratio=\"0.5157407407407407\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496040\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/c1a7f11f-c45f-4bb0-83ab-09673d8cd10e/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>性能突破 &nbsp;碾压 RAG Baseline 以及其他 memory 系统</strong></p>\n  <p>在该团队新构建的多模态极限任务 ScreenshotVQA 里，MIRIX 存储占用相比 RAG 降低<strong> 99.9%</strong>，然而精准率比 RAG 高 <strong>35%</strong>；相比全上下文推理，存储缩小 <strong>93.3%</strong>，准确率提升 <strong>410%</strong>！</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0817919d-583a-41e6-ee17-db06538c1700/public\" data-ratio=\"0.20555555555555555\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496041\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/922626e1-a15e-4e3d-bfd8-3b090fbf17d3/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在 LOCOMO 多轮对话推理任务中，综合准确率达到 <strong>85.4%，远超一众现有模型，包括 MemOS，Mem0 等</strong>；在多跳问题胜过所有开源基线。综合性能几乎接近全上下文模型（由于 gpt-4.1-mini 的上下文窗口为 1M，它的 LOCOMO 性能几乎是上限）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f62f4b4c-d58d-4ae8-7457-af6b83a27200/public\" data-ratio=\"0.5824074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496042\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/a3d74cc7-ca4a-4501-9ea6-354ae0bd5c46/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>这不仅是「更好」 &nbsp;更是「完全不同」</strong></p>\n  <p>用 MIRIX 团队的话说：「检索增强生成只是临时补丁。真正的记忆，要让 AI 在时间维度上成长」。 这是大模型迭代的新周期：<strong>从「对话生成」走向「长期记忆驱动心智」</strong>。</p>\n  <p>此外，MIRIX 不只是论文，MIRIX 团队同步上线了桌面版个人助理应用，可实现即时多模态数据采集，并将记忆进行可视化树状记忆管理，并且将 memory 存于本地 SQLite 中保护隐私，<strong>即刻安装，体验 AI 首次「真正记住你」</strong>。</p>\n \n",
+  "aiSummary": "MIRIX 系统通过创新的多模态、多智能体架构和六大类人记忆系统，显著提升 AI 的长期记忆能力，解决了大模型不具备持久记忆的根本性弱点，并已推出 Mac 端应用。",
+  "oneSentenceSummary": "MIRIX 系统通过创新的多模态、多智能体架构和六大类人记忆系统，显著提升 AI 的长期记忆能力，解决了大模型不具备持久记忆的根本性弱点，并已推出 Mac 端应用。",
+  "summary": "文章详细介绍了由 UCSD 和 NYU 团队开发的 MIRIX 系统，旨在解决大型语言模型缺乏长期记忆的根本性问题。MIRIX 是全球首个真正意义上的多模态、多智能体 AI 记忆系统，它摒弃了传统的 RAG 和短期对话历史方法，提出了全新的 AI“心智系统”范式。该系统支持多模态输入，内置六大类人记忆系统（核心记忆、情景记忆、语义记忆、程序记忆、资源记忆、知识金库），并通过一个元记忆管理器和多个记忆 Agent 实现多智能体协作、主动话题生成与分层检索。文章强调了 MIRIX 在 ScreenshotVQA 和 LOCOMO 等基准测试上的卓越性能，其准确率远超传统 RAG 和长文本方法，同时大幅降低了存储开销。更重要的是，MIRIX 不仅是理论研究，团队还同步上线了 Mac 端个人助理应用，让用户能即刻体验 AI 的“真正记住你”的能力，标志着大模型从“对话生成”走向“长期记忆驱动心智”的新周期。",
+  "mainPoints": [
+    {
+      "point": "MIRIX 提出全新的 AI 记忆范式，解决大模型缺乏长期记忆的核心痛点",
+      "explanation": "区别于传统 RAG 和有限对话历史，MIRIX 构建了结构化、多通道、可演化的认知基底，让 AI 能真正记住并理解用户，实现“心智雏形”。"
+    },
+    {
+      "point": "系统内置六类类人记忆系统与多智能体协作机制，提升记忆管理与检索效率",
+      "explanation": "六大记忆模块（核心、情景、语义、程序、资源、知识金库）各有侧重，配合元记忆管理器和记忆 Agent 的并行协作，实现精准、高效的记忆存储与检索。"
+    },
+    {
+      "point": "MIRIX 在多模态理解和长对话任务中展现卓越性能，大幅超越现有基线",
+      "explanation": "在 ScreenshotVQA 和 LOCOMO 等挑战性任务中，MIRIX 的准确率远超 RAG 和全上下文方法，同时显著降低了存储开销，验证了其技术优越性。"
+    },
+    {
+      "point": "研究成果已产品化落地，推出 Mac 端个人助理应用，具备即时实用价值",
+      "explanation": "除了学术论文，MIRIX 团队还发布了开箱即用的 Mac 应用，提供多模态数据采集和本地化记忆管理，使得普通用户也能体验 AI 的持久记忆能力。"
+    }
+  ],
+  "keyQuotes": [
+    "即使最强大的模型依然有一个根本性的弱点：它们不记得你。",
+    "MIRIX------ 全球首个真正意义上的多模态、多智能体 AI 记忆系统。",
+    "它不再是把知识塞进「嵌入空间」，而是用结构化、多通道、可演化的方式构建认知基底。",
+    "用 MIRIX 团队的话说：「检索增强生成只是临时补丁。真正的记忆，要让 AI 在时间维度上成长」。",
+    "这是大模型迭代的新周期：从「对话生成」走向「长期记忆驱动心智」。"
+  ],
+  "tags": [
+    "AI记忆系统",
+    "多模态AI",
+    "LLM",
+    "多智能体架构",
+    "长期记忆"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 92,
+  "wordCount": 2837,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752569071000,
+  "publishDateStr": "2025-07-15",
+  "publishDateTimeStr": "2025-07-15 08:44:31"
+}

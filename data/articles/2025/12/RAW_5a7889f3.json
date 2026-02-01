@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5a7889f3",
+  "title": "统一的 IntelliJ IDEA：更多免费功能，更佳体验，更流畅的工作流程",
+  "url": "https://blog.jetbrains.com/idea/2025/12/intellij-idea-unified-release/",
+  "date": "2025-12-08 10:45:57",
+  "author": "Julia Shashkova",
+  "siteName": "The IntelliJ IDEA Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content js-toc-content\">\n   <p>IntelliJ IDEA is now a unified product!</p>\n   <p>As we <a href=\"https://blog.jetbrains.com/idea/2025/07/intellij-idea-unified-distribution-plan/\">announced</a> back in July, starting from this release (2025.3), there is one IntelliJ IDEA, replacing the separate IntelliJ IDEA Community Edition and IntelliJ IDEA Ultimate to keep things simple and convenient. All the functionality of the Community Edition remains free for non-commercial and commercial use. We’re also adding <a href=\"https://www.jetbrains.com/products/compare/?product=idea&amp;product=idea-ult\" target=\"_blank\" rel=\"noopener\">even more free features</a>, and fallback licensing stays unchanged. For those who want to take their experience further, <a href=\"https://www.jetbrains.com/products/compare/?product=idea-ult&amp;product=idea\" target=\"_blank\" rel=\"noopener\">the extended tooling</a> is accessible in the Ultimate subscription, which comes with a free 30-day trial.</p>\n   <p>This is more than just a change in distribution – it’s a step forward for our entire community. By unifying IntelliJ IDEA, we can focus our energy on improving the quality of a single product, boosting performance, and driving innovation to deliver the best possible IDE for you. This is about making your journey with IntelliJ IDEA smoother and truly centered on your needs.&nbsp;</p>\n   <p>At the same time, we remain fully committed to open-source and will keep IntelliJ IDEA’s codebase on GitHub up to date and accessible for everyone. For details, please refer to <a href=\"https://blog.jetbrains.com/idea/2025/11/intellij-idea-open-source/\">this blog post</a>.</p>\n   <p>As the reasons and changes have been described in detail in the announcement, let’s briefly go through what exactly is changed in 2025.3.</p>\n   <h3 class=\"wp-block-heading\"><strong>What has changed with the 2025.3 release?</strong></h3>\n   <p><strong>One IntelliJ IDEA – a complete experience</strong></p>\n   <ul>\n    <li><strong>No need to choose between two editions:</strong> You can now access both core and extended features within a single product.</li>\n    <li><strong>Free features remain free:</strong> Everything you love in the Community Edition continues to be available at no cost and right out of the box. Using IntelliJ IDEA for free does not require any authorizations or activations.</li>\n    <li><strong>Even more free features: </strong>More features have been added for free, like basic syntax highlighting for Spring, Jakarta EE, and templating engines such as Thymeleaf, a Spring Boot project wizard, database connections creation and configuration, database schemas and objects viewer, full SQL language support, and more! A complete list is available <a href=\"https://lp.jetbrains.com/intellij-idea-unified-faq/\" target=\"_blank\" rel=\"noopener\">here</a>.</li>\n    <li><strong>Flexible trials and upgrades:</strong> Free trials for Ultimate subscriptions are available to everyone. After the trial, you can choose to purchase and continue using the Ultimate subscription or continue using IntelliJ IDEA for free with core features for Java and Kotlin development. No need to switch IDE.</li>\n    <li><strong>Improved quality:</strong> Having a single product lets us focus more on development and testing, delivering the best possible experience for you faster.</li>\n   </ul>\n   <h3 class=\"wp-block-heading\"><strong>How does this change affect you?</strong></h3>\n   <ul>\n    <li><strong>All users </strong>get a higher-quality product, as we are consolidating QA resources that were previously spent on two separate editions.</li>\n    <li>For<strong> existing IntelliJ IDEA Ultimate users</strong>,<strong> </strong>the Ultimate license is transitioning to an Ultimate subscription with full access to extended tooling – no action is required on your side. If your subscription expires, you won’t be locked out of the IDE, meaning that you don’t need to install another version even if your subscription lapses while you are on vacation or between renewals.</li>\n    <li><strong>Existing IntelliJ IDEA Community Edition users</strong> can continue to use IntelliJ IDEA for free with everything necessary for Java and Kotlin development. They’ll also get to try out the advanced features with a free 30-day trial. Updating from Community Edition 2025.2 and its minor version releases will convert the product into the unified IntelliJ IDEA.</li>\n    <li><strong>New IntelliJ IDEA users </strong>have a single product to download and can try the IDE’s extended capabilities with a free 30-day trial. They can upgrade to an Ultimate subscription at any time during the trial, or continue using IntelliJ IDEA for free with core Java and Kotlin development once the trial ends.</li>\n    <li>With a unified distribution, we’ve simplified the setup for teaching and learning. IntelliJ IDEA Ultimate has always been free for educational use, and we remain dedicated to supporting <strong>educators and students</strong> by providing continuous access to the full power of IntelliJ IDEA with a free Ultimate subscription. Educational licenses can be requested through this <a href=\"https://www.jetbrains.com/shop/eform/students\" target=\"_blank\" rel=\"noopener\">form</a>.</li>\n    <li>Those <strong>who prefer a fully open-source solution</strong> can build an open-source version of IntelliJ IDEA using the source code on <a href=\"https://github.com/JetBrains/intellij-community\" target=\"_blank\" rel=\"noopener\">GitHub</a> with GitHub Actions. The open-source codebase will be kept up to date with upcoming IntelliJ IDEA releases. This build supports all plugins from JetBrains Marketplace, including paid ones. More details are available <a href=\"https://blog.jetbrains.com/idea/2025/11/intellij-idea-open-source/\">here</a>.</li>\n   </ul>\n   <p>Read our <a href=\"https://lp.jetbrains.com/intellij-idea-unified-faq/\" target=\"_blank\" rel=\"noopener\">extended FAQ</a> for more details.</p>\n   <p>We believe that by unifying IntelliJ IDEA, we are providing a more powerful, efficient, and user-friendly experience for all developers. This change reflects our ongoing commitment to innovation, quality, and the open-source community.</p>\n   <p>We’re excited to embark on this new chapter together and look forward to seeing the incredible projects you’ll build with IntelliJ IDEA.</p>\n   <p>Happy developing!</p>\n  </div>\n  <a href=\"#\" class=\"toc-opener\"></a>\n  <div class=\"container comments-container\">\n   <div class=\"content\"></div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 将 IntelliJ IDEA 的社区版和旗舰版整合为单一产品，集成了更多免费功能，旨在提升质量、促进创新，同时坚守其对开源的承诺。",
+  "oneSentenceSummary": "JetBrains 将 IntelliJ IDEA 的社区版和旗舰版整合为单一产品，集成了更多免费功能，旨在提升质量、促进创新，同时坚守其对开源的承诺。",
+  "summary": "JetBrains 宣布，自 2025.3 版本起，IntelliJ IDEA 将合并为一个统一的产品，取代此前的独立社区版和旗舰版。这一变动旨在简化用户选择，提升产品质量，并集中资源推动创新。文章强调，所有社区版功能将继续免费，并新增了免费功能，包括 Spring 和 Jakarta EE 的基本语法高亮、Spring Boot 项目向导以及增强的数据库支持。旗舰版订阅将提供扩展工具集，并有 30 天免费试用期。此次统一预计将为所有用户带来更高质量的产品，为现有和新用户提供更流畅的体验和升级路径，同时继续支持教育用户和开源社区。JetBrains 强调，通过整合资源和简化分发，他们可以更好地专注于集成开发环境的性能优化和新功能开发，以满足开发者的需求。",
+  "mainPoints": [
+    {
+      "point": "IntelliJ IDEA 的产品线统一旨在简化用户选择并提升产品质量。",
+      "explanation": "社区版和旗舰版合并为一个产品，消除了用户在不同版本之间做出选择的需要。JetBrains 现在可以将研发资源集中于单一产品，加速功能迭代和错误修复，并通过提升性能和推动创新，提供卓越的 IDE 体验。"
+    },
+    {
+      "point": "众多高级功能现已免费提供，降低了入门门槛并增加了实用性。",
+      "explanation": "随着统一，以前旗舰版独有的功能，如 Spring/Jakarta EE 语法高亮、Spring Boot 向导和高级数据库功能，现在在免费层级中也可使用。这为免费用户，尤其是在 Java 和 Kotlin 开发中，提供了更全面的开发支持，无需任何授权或激活即可增强日常开发的便利性。"
+    },
+    {
+      "point": "JetBrains 通过维护社区版代码库并支持 GitHub Action 构建，重申其对开源的承诺。",
+      "explanation": "JetBrains 明确表示，将继续维护并使 IntelliJ IDEA 的开源代码库在 GitHub 上与未来的版本保持同步。这一承诺确保了开源生态系统的持续发展，允许社区参与和自定义构建，包括支持来自 JetBrains Marketplace 的插件。"
+    }
+  ],
+  "keyQuotes": [
+    "IntelliJ IDEA 现在是一个统一的产品！社区版的所有功能仍可免费用于非商业和商业用途。",
+    "通过统一 IntelliJ IDEA，我们可以集中精力提升单一产品的质量，提高性能，并推动创新，为您提供最好的 IDE。",
+    "我们完全致力于开源，并将保持 IntelliJ IDEA 在 GitHub 上的代码库最新并对所有人开放。"
+  ],
+  "tags": [
+    "IntelliJ IDEA",
+    "集成开发环境",
+    "JetBrains",
+    "开发工具",
+    "产品更新"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 771,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d317ac",
+  "sourceName": "The IntelliJ IDEA Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765190757000,
+  "publishDateStr": "2025-12-08",
+  "publishDateTimeStr": "2025-12-08 10:45:57"
+}

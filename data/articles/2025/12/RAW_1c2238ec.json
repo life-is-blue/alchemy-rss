@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1c2238ec",
+  "title": "oRPC 发布 1.0 版本：原生支持 OpenAPI 与全链路类型安全",
+  "url": "https://www.infoq.com/news/2025/12/orpc-v1-typesafe/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-19 16:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://orpc.dev/\">oRPC</a>, a TypeScript library for building Typesafe APIs, has officially <a href=\"https://orpc.dev/blog/v1-announcement\">released version 1.0</a>, marking a stable production-ready milestone for developers seeking an alternative to existing RPC and REST solutions with full OpenAPI integration.</p>\n   <p>oRPC 1.0 introduces a&nbsp;set of features designed to simplify API development while maintaining enterprise-grade type safety. The release includes first-class OpenAPI support, end-to-end type safety for inputs, outputs, and errors, native support for complex types like Date and File, and seamless integration with popular frontend frameworks including <a href=\"https://react.dev/\">React</a>, <a href=\"https://vuejs.org/\">Vue</a>, <a href=\"https://www.solidjs.com/\">Solid</a>, and <a href=\"https://svelte.dev/\">Svelte</a> through TanStack Query.</p>\n   <p>At the core of oRPC's design philosophy is what the team calls \"powerful simplicity.\" Developers can define API endpoints with a syntax that feels similar to writing standard functions, while automatically gaining production features like OpenAPI specification generation, server action compatibility, and contract-first workflow support. The library supports multiple schema validators out of the box, including <a href=\"https://zod.dev/\">Zod</a>, <a href=\"https://valibot.dev/\">Valibot</a>, and <a href=\"https://arktype.io/\">ArkType</a>, without requiring additional configuration.</p>\n   <p>One of the standout features in oRPC 1.0 is its comprehensive OpenAPI implementation. Unlike competing solutions that require third-party plugins or have deprecated OpenAPI support, oRPC builds OpenAPI adherence directly into its core architecture. The library also supports multiple schema validators simultaneously and includes bracket notation support for more complex API structures, features that are absent from alternatives like tRPC and ts-rest.</p>\n   <p>The syntax for defining procedures in oRPC follows a chainable pattern that integrates middleware, validation, and error handling. An example of a typical oRPC procedure is shown below:</p>\n   <p>&nbsp;</p>\n   <pre>\r\n<code>const getBands = os\r\n .use(dbProvider)\r\n .use(requiredAuth)\r\n .route({ method: 'GET', path: '/bands/{id}' })\r\n .input(z.object({ id: z.string() }))\r\n .handler(async ({ input, context }) =&gt; {\r\n // Implementation logic\r\n })\r\n</code></pre>\n   <p>Performance benchmarks published alongside the release show notable improvements over <a href=\"https://trpc.io/\">tRPC</a>, with oRPC demonstrating 1.6 times faster type checking, 2.8 times faster runtime performance, and a bundle size that is roughly half that of tRPC's equivalent setup. The library also shows reduced memory consumption at 103MB compared to tRPC's 268MB in testing scenarios, though the team notes these results can vary based on project complexity and environment.</p>\n   <p>For developers looking to migrate from existing solutions, oRPC provides detailed migration guides with side-by-side code comparisons. The <a href=\"https://orpc.unnoq.com/docs/migrations/from-trpc\">migration documentation</a> covers the transition from tRPC, including installation steps, conceptual mappings, and updated patterns for routers, procedures, and client setup. The core migration involves replacing <code>t.procedure</code> with <code>os</code>, consolidating query and mutation methods into a unified <code>.handler</code>, and switching from <code>TRPCError</code> to <code>ORPCError</code> for error handling.</p>\n   <p>Community response to the release has been measured, with developers expressing interest in the OpenAPI integration and multi-framework support. A <a href=\"https://github.com/unnoq/orpc/discussions/444\">discussion on GitHub</a> asks questions around integration patterns with authentication libraries and optimal plugin configurations, suggesting early adopters are actively testing production scenarios.</p>\n   <p>On Reddit, developers have been <a href=\"https://www.reddit.com/r/nextjs/comments/1m9a1y1/trpc_vs_orpc_and_are_they_really_needed_nowadays/\">debating the necessity of RPC libraries</a> in modern Next.js projects, with the consensus emerging that while Next.js server actions provide adequate type safety for simple CRUD operations, oRPC remains valuable for specific use cases. One developer noted using oRPC specifically for server-sent events, while another highlighted that the key differentiator is oRPC's built-in OpenAPI support, which server actions cannot provide.</p>\n   <p>When compared to competitors, oRPC positions itself uniquely in the TypeScript API tooling landscape. While tRPC excels at React-focused type safety without OpenAPI, and ts-rest provides contract-first development with OpenAPI support, oRPC attempts to bridge both approaches. The <a href=\"https://orpc.unnoq.com/docs/comparison\">comparison documentation</a> shows oRPC offering features like Cloudflare WebSocket hibernation, Vue Pinia Colada integration, and typesafe file handling that competitors either lack or require third-party solutions to achieve.</p>\n   <p>oRPC is an open-source TypeScript library developed by independent developer unnoq and licensed under MIT. The project supports multiple runtimes including Cloudflare Workers, Deno, Bun, and Node.js, making it suitable for edge computing scenarios and traditional server deployments alike.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"oRPC Releases Version 1.0 with OpenAPI Support and End to End Type Safety\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/orpc-v1-typesafe/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766160000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "oRPC 1.0 版本正式发布，它通过全面的 OpenAPI 集成和全链路类型安全，为 TypeScript API 开发带来了高效且功能强大的新选择，成功融合了 tRPC 和 ts-rest 的诸多优势。",
+  "oneSentenceSummary": "oRPC 1.0 版本正式发布，它通过全面的 OpenAPI 集成和全链路类型安全，为 TypeScript API 开发带来了高效且功能强大的新选择，成功融合了 tRPC 和 ts-rest 的诸多优势。",
+  "summary": "oRPC 1.0 正式发布，它是一个用于构建全链路类型安全 API 的 TypeScript 库，旨在为开发者提供一个融合了现有 RPC 和 REST 解决方案优势的综合替代方案。该版本提供了对 OpenAPI 的原生支持、端到端类型安全（包括输入、输出和错误）、对复杂类型（如 Date 和 File）的内置支持，并能与 React、Vue、Solid 和 Svelte 等主流前端框架通过 TanStack Query 无缝集成。oRPC 的核心设计理念是“强大而简洁”，允许开发者用类似标准函数的语法定义 API 端点，同时自动获得 OpenAPI 规范生成、服务器动作（Server Actions）兼容性和契约优先（Contract-first）的工作流支持。其性能基准测试显示，oRPC 在类型检查和运行时性能方面均优于 tRPC，并且 bundle 大小和内存占用均更低。尽管 Next.js 的服务器动作在简单 CRUD 操作中提供类型安全，但 oRPC 凭借其内置的 OpenAPI 支持，在复杂场景和特定用例（如服务器发送事件）中展现出独特价值。",
+  "mainPoints": [
+    {
+      "point": "oRPC 1.0 版本通过原生 OpenAPI 集成和全链路类型安全，显著简化了 API 开发。",
+      "explanation": "该版本内置 OpenAPI 支持，确保输入、输出和错误的全面类型安全，提高了开发效率和 API 质量，避免了额外配置和插件依赖。"
+    },
+    {
+      "point": "oRPC 在性能上超越了现有流行的解决方案（如 tRPC），提供更快的类型检查和运行时性能。",
+      "explanation": "基准测试显示 oRPC 在类型检查速度、运行时性能以及资源占用（bundle 大小和内存）方面均优于 tRPC，为大型项目提供了更优选择。"
+    },
+    {
+      "point": "oRPC 独特地融合了 tRPC 的类型安全和 ts-rest 的契约优先特性，提供了全面且无需权衡的 API 解决方案。",
+      "explanation": "它不仅兼容多种运行时环境（如 Cloudflare Workers、Deno、Bun、Node.js），还通过独特功能（如 WebSocket 休眠和 Pinia Colada 集成）满足了更广泛的开发需求。oRPC 独特地结合了 tRPC 的类型安全和 ts-rest 的契约优先特性（即通过预先定义接口实现前后端高效率协同开发），提供了全面而非权衡的 API 解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "oRPC 引入了一系列旨在简化 API 开发，同时又保持企业级类型安全的功能。",
+    "与需要第三方插件或已弃用 OpenAPI 支持的竞品不同，oRPC 将 OpenAPI 的合规性直接构建到其核心架构中。",
+    "此次发布同时公布的性能基准测试显示，oRPC 相较于 tRPC 有显著提升，其类型检查速度快 1.6 倍，运行时性能快 2.8 倍，且 bundle 大小约为 tRPC 等效设置的一半。"
+  ],
+  "tags": [
+    "TypeScript",
+    "API Development",
+    "RPC",
+    "OpenAPI",
+    "Type Safety"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 615,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766160000000,
+  "publishDateStr": "2025-12-19",
+  "publishDateTimeStr": "2025-12-19 16:00:00"
+}

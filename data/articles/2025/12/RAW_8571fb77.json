@@ -1,0 +1,58 @@
+{
+  "id": "RAW_8571fb77",
+  "title": "ReScript 12.0 发布：引入全新构建系统",
+  "url": "https://www.infoq.com/news/2025/12/rescript-12-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-31 09:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://rescript-lang.org/\">ReScript</a>, the robustly typed language that compiles to JavaScript, has released ReScript 12.0, completing a multi-year development roadmap to modernize the compiler toolchain and deliver a better developer experience with improved syntax and performance.</p>\n   <p>ReScript 12.0 introduces several major features, including a completely rewritten <a href=\"https://rescript-lang.org/blog/release-12-0-0#new-build-system\">build system</a>, <a href=\"https://rescript-lang.org/blog/release-12-0-0#operator-improvements\">improved operators</a>, <a href=\"https://rescript-lang.org/blog/release-12-0-0#dict-literals-and-pattern-matching\">dictionary literals</a> with pattern matching, <a href=\"https://rescript-lang.org/blog/release-12-0-0#nested-record-types\">nested record types</a>, <a href=\"https://rescript-lang.org/blog/release-12-0-0#jsx-preserve-mode\">JSX preserve mode</a>, and <a href=\"https://rescript-lang.org/blog/release-12-0-0#regex-literals\">regex literals</a>. The release also brings a modular runtime architecture and platform-specific binaries that significantly reduce installation footprint.</p>\n   <p>One of the headline features in ReScript 12 is the new build system, <a href=\"https://rescript-lang.org/blog/reforging-build-system\">introduced earlier in November</a>, which brings intelligent dependency tracking and faster incremental builds. The system now tracks dependencies more precisely, avoids unnecessary recompilations, and integrates with incremental workflows even across monorepo packages. This addresses limitations that became apparent as projects grew larger and monorepos became more common, as the previous build system worked primarily on single package projects.</p>\n   <p>For projects that need to use the <a href=\"https://rescript-lang.org/blog/reforging-build-system/#using-the-legacy-build-system\">old ‘legacy’ build system</a>, the <code>rescript-legacy</code> command can be used for <code>build</code>, <code>build -w</code> and <code>clean</code> commands. It is expected that this will be removed in v13.</p>\n   <p>ReScript 12 finalizes the unified operator work <a href=\"https://rescript-lang.org/blog/introducing-unified-operators\">introduced earlier this year</a>. Arithmetic operators such as <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> and <code>**</code> now work consistently for <code>int</code>, <code>float</code>, and <code>bigint</code>, allowing the compiler to infer the correct specialization from the left operand. Developers can now use <code>+</code> for string concatenation as well, eliminating the need for the legacy <code>+.</code>, <code>-.</code>, <code>*.</code>, and <code>/.</code> operators that were previously required for floating-point operations.</p>\n   <p>ReScript 12 also supports dictionary literals that compile to plain JavaScript objects, drastically reducing boilerplate compared to <code>Dict.fromArray</code>. Pattern matching also understands dictionaries, enabling concise destructuring of JSON payloads and configuration objects:</p>\n   <pre>\r\n<code class=\"language-typescript\">let user = dict{\"firstname\": \"John\", \"role\": \"manager\"}\r\n\r\nswitch user {\r\n| dict{\"name\": name, \"role\": role} =&gt; Console.log2(name, role)\r\n| _ =&gt; Console.log(\"missing user metadata\")\r\n}\r\n</code></pre>\n   <p>Developers can enable preserve mode for JSX via <code>\"jsx\": { \"version\": 4, \"preserve\": true }</code>. The compiler will emit JSX syntax instead of transforming elements to <code>react/jsx-runtime</code> calls, this is useful for bundlers such as <a href=\"https://esbuild.github.io/\">ESBuild</a>, <a href=\"https://swc.rs/\">SWC</a>, or <a href=\"https://babeljs.io/\">Babel</a>, so they can apply their own transforms. This maintains compatibility with React Compiler and keeps JSX readable in the output.</p>\n   <p>Teams upgrading from ReScript 11 should review the <a href=\"https://rescript-lang.org/docs/manual/migrate-to-v12\">migration guide</a> and schedule time for the transition. The release includes several breaking changes, most notably the removal of JSX v3 support, a new runtime package structure with <code>@rescript/runtime</code> replacing the previous setup, and API naming changes where functions previously ending with <code>Exn</code> now end with <code>OrThrow</code>. The migration tool includes a codemod that can perform mechanical renames to ease the transition.</p>\n   <p>Installation footprints have shrunk due to changes in platform-specific packages such as <code>@rescript/darwin-arm64</code>, <code>@rescript/linux-x64</code>, and <code>@rescript/win32-x64</code>. npm will only install the binary that matches the operating system and architecture, resulting in faster installs and smaller cache footprints for CI pipelines.</p>\n   <p>While specific community discussion around the ReScript 12 release has been limited, the language continues to position itself as an alternative to TypeScript with stronger type guarantees. On reddit, a user commented that the release is <q><a href=\"https://www.reddit.com/r/programming/comments/1pj34s7/comment/ntahs2m/\">quite good news</a></q>, as they thought the project was dead. Others asked why ReScript would be a choice over TypeScript, with one <a href=\"https://www.reddit.com/r/programming/comments/1pj34s7/comment/ntgwbrd/\">commenter</a> offering some comparison:</p>\n   <blockquote>\n    <p>TS still has all the bad parts from javascript, and is by design unsound. Its also built in ocaml, so you will probably get one of the fastest compilers out there. No more waiting 5min for a production build.</p>\n   </blockquote>\n   <p>An older <a href=\"https://blog.logrocket.com/rescript-vs-typescript\">comparison between the two</a> highlight that ReScript's type system is sound and guaranteed to never be wrong, whereas TypeScript's type system makes educated guesses that can sometimes be incorrect at runtime. ReScript also compiles significantly faster than TypeScript, though TypeScript maintains broader ecosystem adoption and JavaScript interoperability.</p>\n   <p>ReScript is an open-source programming language that compiles to efficient and human-readable JavaScript. Originally derived from <a href=\"https://ocaml.org/\">OCaml</a>, it has evolved into a distinct language with its own syntax and toolchain. ReScript is particularly popular in React development, offering first-class JSX support and a lightning-fast compiler that scales to any codebase size.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"ReScript 12.0 Released with New Build System\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/rescript-12-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767171600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "ReScript 12.0 正式发布，为这一编译至 JavaScript 的强类型语言带来了现代化的构建系统、改进的语法、运算符一致性以及其他提升开发体验的功能。",
+  "oneSentenceSummary": "ReScript 12.0 正式发布，为这一编译至 JavaScript 的强类型语言带来了现代化的构建系统、改进的语法、运算符一致性以及其他提升开发体验的功能。",
+  "summary": "ReScript 12.0 已发布，这是该强类型编译语言的一次重大更新。此版本完成了多年来对编译器工具链现代化的努力，重点关注开发体验、语法改进和性能提升。核心特性包括：完全重写的构建系统，具备智能依赖追踪和更快的增量构建能力；增强了 int、float 和 bigint 类型之间的运算符一致性；引入了支持模式匹配的字典字面量，以便更简洁地处理 JSON 数据。其他显著更新包括嵌套记录类型、用于更好集成现代打包工具（如 ESBuild 和 SWC）的 JSX 保留模式，以及正则表达式字面量。该版本还拥有模块化运行时和平台特定二进制文件，大幅缩减了安装体积。尽管文章提到社区讨论有限，但它将 ReScript 定位为 TypeScript 的强力且类型完备的替代方案，强调其极快的编译速度和 OCaml 血统，特别适用于 React 开发。",
+  "mainPoints": [
+    {
+      "point": "ReScript 12.0 显著实现了编译器工具链和开发体验的现代化。",
+      "explanation": "此版本凝聚了多年的开发成果，引入了全新的构建系统、改进的语法和性能增强，旨在使 ReScript 更加稳健且对开发者友好。"
+    },
+    {
+      "point": "ReScript 12 的新构建系统提供了更快、更智能的增量构建。",
+      "explanation": "它具备精确的依赖追踪功能，避免了不必要的重新编译，专为比前代更高效地处理大型项目和 Monorepo 而设计。"
+    },
+    {
+      "point": "ReScript 12 通过统一运算符和字典字面量增强了语言特性。",
+      "explanation": "算术运算符现在可以在不同的数字类型中一致工作，支持模式匹配的字典字面量简化了 JSON 数据的处理，减少了样板代码。"
+    },
+    {
+      "point": "ReScript 将自己定位为类型完备且高性能的 TypeScript 替代方案。",
+      "explanation": "源自 OCaml 的血统，ReScript 提供了完备的类型系统，且编译速度比 TypeScript 快得多，这对大型 React 代码库尤为有利。"
+    }
+  ],
+  "keyQuotes": [
+    "ReScript 12.0 引入了多项重大功能，包括完全重写的构建系统、改进的运算符、支持模式匹配的字典字面量、嵌套记录类型、JSX 保留模式以及正则表达式字面量。",
+    "这解决了随着项目规模扩大和 Monorepo 普及而显现的局限性，因为之前的构建系统主要针对单包项目。",
+    "TS 仍然保留了 JavaScript 的所有糟粕，且在设计上是不完备的。ReScript 是用 OCaml 编写的，所以你将获得市面上最快的编译器之一。不再需要为生产环境构建等待 5 分钟。",
+    "ReScript 的类型系统是完备的，保证永远不会出错，而 TypeScript 的类型系统进行的是启发式猜测，有时在运行时可能会出错。"
+  ],
+  "tags": [
+    "ReScript",
+    "编程语言",
+    "JavaScript",
+    "编译器",
+    "构建系统"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 681,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767171600000,
+  "publishDateStr": "2025-12-31",
+  "publishDateTimeStr": "2025-12-31 09:00:00"
+}

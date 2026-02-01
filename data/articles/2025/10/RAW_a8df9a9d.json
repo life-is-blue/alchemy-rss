@@ -1,0 +1,59 @@
+{
+  "id": "RAW_a8df9a9d",
+  "title": "Variant 介绍：用于 Apache Parquet、Delta Lake 和 Apache Iceberg 中半结构化数据的新开放标准",
+  "url": "https://www.databricks.com/blog/introducing-variant-new-open-standard-semi-structured-data-apache-parquettm-delta-lake",
+  "date": "2025-10-10 10:37:57",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Semi-structured data is everywhere in AI, application logs, and telemetry. This data is useful, but changing schemas makes it challenging to store and query. For years, the standard practice was to store this data as strings. Strings were flexible but had poor query performance, since the engine needed to parse and search through the entire string.</p>\n  <p>The Variant data type, now ratified in Apache Parquet™, takes a different approach. It stores the data in a compact binary format that is both flexible and performant for querying. This approach isn’t tied to one engine or format - Variant is the open standard for semi-structured data across the lakehouse, with support in Apache Spark™, Delta Lake, and Apache Iceberg™.</p>\n  <p>In this blog post, we will cover:</p>\n  <ul>\n   <li>Investing in Variant open standards</li>\n   <li>How Variant and shredding work</li>\n   <li>Fast performance on semi-structured data</li>\n  </ul>\n  <h2>Databricks is leading Variant efforts in open source</h2>\n  <p>Last year, we collaborated with the open source community to <a data-external-link=\"true\" href=\"https://www.databricks.com/blog/introducing-open-variant-data-type-delta-lake-and-apache-spark\">introduce Variant to Apache Spark™ and Delta Lake</a>. This new data type offers both flexibility and performance compared to storing semi-structured data as strings (which have poor performance) or structs (which are not flexible).</p>\n  <p>Variant’s launch quickly drew interest from other major open source projects, including Apache Iceberg™ and Apache Arrow™. To unify the ecosystem, we proposed bringing Variant to all engines and formats by incorporating the type directly into Parquet and moving the Spark implementation to the Parquet-java open source project, contributing over 9,600 lines of code. This allows all open table formats to easily leverage the Variant data type.</p>\n  <p>Now that Variant has been approved within the Parquet community, the entire lakehouse ecosystem has a standard, open data type for semi-structured data. Variant is already supported in open table formats: Delta has included Variant support for the past year, and last May, <a data-external-link=\"true\" href=\"https://iceberg.apache.org/spec/#version-3-extended-types-and-capabilities\" target=\"_blank\" rel=\"noopener noreferrer\">Iceberg approved v3</a>, which includes Variant support. Consequently, users leveraging Delta or Iceberg can now benefit from Variant’s flexibility and performance.</p>\n  <!--$-->\n  <!--/$-->\n  <p>The Parquet Variant artifacts include:</p>\n  <ul>\n   <li><a data-external-link=\"true\" href=\"https://github.com/apache/parquet-format/blob/master/VariantEncoding.md\" target=\"_blank\" rel=\"noopener noreferrer\">Variant Binary Encoding Specification</a></li>\n   <li><a data-external-link=\"true\" href=\"https://github.com/apache/parquet-format/blob/master/VariantShredding.md\" target=\"_blank\" rel=\"noopener noreferrer\">Variant Shredding Specification</a> (a technique to store Variant data more efficiently)</li>\n   <li>Parquet Release Version <a data-external-link=\"true\" href=\"https://github.com/apache/parquet-format/releases/tag/apache-parquet-format-2.12.0\" target=\"_blank\" rel=\"noopener noreferrer\">2.12.0</a> with the Parquet Java implementation <a data-external-link=\"true\" href=\"https://github.com/apache/parquet-java/releases/tag/apache-parquet-1.16.0\" target=\"_blank\" rel=\"noopener noreferrer\">1.16.0</a></li>\n  </ul>\n  <p>The Delta and Iceberg Protocols to support Variant are:</p>\n  <ul>\n   <li><a data-external-link=\"true\" href=\"https://github.com/delta-io/delta/blob/master/PROTOCOL.md#variant-data-type\" target=\"_blank\" rel=\"noopener noreferrer\">Delta Lake Protocol for Variant Support</a></li>\n   <li><a data-external-link=\"true\" href=\"https://iceberg.apache.org/spec/#version-3-extended-types-and-capabilities\" target=\"_blank\" rel=\"noopener noreferrer\">Iceberg V3 Protocol for Variant Support</a></li>\n  </ul>\n  <p>We extend our gratitude to all the individuals and organizations involved for their contributions across many open source communities, including Apache Parquet™, Apache Spark™, Apache Iceberg™, Delta Lake, and Apache Arrow™.</p>\n  <h2>How Variant and shredding work</h2>\n  <p>Variant uses a binary encoding format to provide a flexible interface for data storage. Variant also has a shredding scheme, a technique for storing Variant more efficiently to improve performance.</p>\n  <h3>Binary encoding format</h3>\n  <p>The Variant datatype leverages an efficient binary encoding scheme to represent semi-structured data. Instead of storing the data as a plain-text value (like JSON), the Variant data encodes the values and the structure in a binary format that prioritizes efficient navigation.</p>\n  <p>Navigating a JSON string requires reading and processing the entire JSON object to find the relevant field. With the Variant binary encoding, the structure of the data is encoded using offsets to other locations within the Variant value. With these offsets, navigating through the Variant structure does not require reading or processing the entire value. This offset-based navigation greatly improves the performance of processing semi-structured data.</p>\n  <!--$-->\n  <!--/$-->\n  <p><a href=\"https://www.databricks.com/sites/default/files/inline-images/new-open-standard-for-semi-structured-data-img-2.png\" data-entity-uuid=\"cb4da4ae-cb5a-4dbb-adfb-3d3ecb2f0e55\" data-entity-type=\"file\" src=\"https://www.databricks.com/sites/default/files/inline-images/new-open-standard-for-semi-structured-data-img-2.png\" width=\"1200\" height=\"628\" alt=\"Variant navigation order\"></a></p>\n  <p>This example demonstrates that navigating to the path order.item.name requires examining only a few portions of the Variant value using the offsets. This reduces the amount of data to process/parse, and leads to faster performance.</p>\n  <h3>Shredding</h3>\n  <p>Shredding automatically extracts common fields from the Variant values. These fields are stored as separate, typed chunks in the same column. Without shredding, the entire Variant value is stored as a single \"binary blob\" in the file.</p>\n  <p>There are several performance advantages for shredding Variants:</p>\n  <ul>\n   <li><strong>Pruned I/O</strong>: When fields are stored separately, only the fields required by the query need to be fetched. That means if the query only requires a small fraction of the Variant fields, only a small fraction of the I/O is required.</li>\n   <li><strong>Data skipping</strong>: When shredded fields are stored as separate Parquet chunks, engines can use all the Parquet optimizations for efficient row group and column page skipping.</li>\n   <li><strong>Compression</strong>: Since shredded fields are columnar, the data can be compressed more efficiently, thus reducing the storage size.</li>\n  </ul>\n  <p><a href=\"https://www.databricks.com/sites/default/files/inline-images/new-open-standard-for-semi-structured-data-img-3.png\" data-entity-uuid=\"46990c3b-5637-4efd-b0e9-371ce105df85\" data-entity-type=\"file\" src=\"https://www.databricks.com/sites/default/files/inline-images/new-open-standard-for-semi-structured-data-img-3.png\" width=\"1200\" height=\"628\" alt=\"Shredding automatically extracts\"></a></p>\n  <!--$-->\n  <!--/$-->\n  <p>This example demonstrates that with shredding, the scan only needs to read the columns required by the query. The scan uses Parquet column statistics, so irrelevant row-groups can be completely skipped. Reading shredded files improves performance by avoiding unnecessary work.</p>\n </body>\n</html>",
+  "aiSummary": "介绍了 Variant，这是一种用于 Apache Parquet、Delta Lake 和 Apache Iceberg 中半结构化数据的新开放标准，提供灵活且高性能的存储方案。",
+  "oneSentenceSummary": "介绍了 Variant，这是一种用于 Apache Parquet、Delta Lake 和 Apache Iceberg 中半结构化数据的新开放标准，提供灵活且高性能的存储方案。",
+  "summary": "本文介绍了 Variant，这是一种新的开放标准数据类型，用于有效处理数据湖仓生态系统中的半结构化数据。它旨在解决在 AI、应用程序日志和遥测等领域中，管理具有不断演变的模式的数据这一常见挑战。在这些场景下，传统的字符串存储方式虽然灵活但速度较慢，而结构体则速度快但不够灵活。Variant 通过以紧凑的二进制格式存储数据来克服这些问题，这种格式既灵活又具有出色的查询性能。文章详细介绍了两个核心机制：二进制编码，它利用偏移量在数据中实现高效导航，避免完全解析；以及切分（shredding），它将常用字段提取到单独的、类型化的列式块中，从而实现 I/O 裁剪、数据跳过和卓越的压缩。Databricks 主导了 Variant 在 Apache Parquet 中的批准过程，确保其作为开放标准被采用，并已在 Delta Lake、Apache Iceberg 和 Apache Spark 中获得支持，从而为半结构化数据提供了一个统一的生态系统标准。",
+  "mainPoints": [
+    {
+      "point": "Variant 旨在解决半结构化数据的高效存储和查询问题。",
+      "explanation": "它为具有不断演变的模式的数据提供了一种灵活且性能卓越的解决方案，常见于 AI、应用程序日志和遥测等领域，克服了传统字符串或结构体方法的局限性。"
+    },
+    {
+      "point": "Variant 通过高效的二进制编码格式，优化数据导航。",
+      "explanation": "数据并非以纯文本形式存储，而是采用带有偏移量的紧凑二进制格式，从而可以直接访问特定字段，而无需解析整个值，显著提升查询性能。"
+    },
+    {
+      "point": "切分（shredding）优化了 Variant 数据存储和查询效率。",
+      "explanation": "此技术能够自动将常用字段提取到单独的、类型化的列式块中，从而实现 I/O 裁剪、数据跳过和更高的压缩率，进而加快数据处理速度。"
+    },
+    {
+      "point": "Variant 作为开放标准在数据湖仓生态系统中获得批准。",
+      "explanation": "在 Apache Parquet 中获得批准，并受到 Delta Lake、Apache Iceberg 和 Apache Spark 的支持，确保了广泛的互操作性，并为半结构化数据处理提供统一的方法。"
+    }
+  ],
+  "keyQuotes": [
+    "半结构化数据在 AI、应用程序日志和遥测中无处不在。这些数据非常有用，但不断变化的模式使其难以存储和查询。",
+    "Variant 数据类型现在已在 Apache Parquet ™ 中获得批准，它采用了一种不同的方法：以紧凑的二进制格式存储数据，这种格式既灵活又具有出色的查询性能。",
+    "既然 Variant 已在 Parquet 社区中获得批准，那么整个数据湖仓生态系统就拥有了一个用于半结构化数据的标准、开放数据类型。",
+    "通过 Variant 二进制编码，数据的结构使用指向 Variant 值内其他位置的偏移量进行编码。借助这些偏移量，导航 Variant 结构无需读取或处理整个值。",
+    "当切分（shredding）后的字段存储为单独的 Parquet 块时，引擎可以使用所有 Parquet 优化来实现高效的行组和列页跳过。"
+  ],
+  "tags": [
+    "半结构化数据",
+    "Variant 数据类型",
+    "Apache Parquet",
+    "Delta Lake",
+    "Apache Iceberg"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 755,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760092677000,
+  "publishDateStr": "2025-10-10",
+  "publishDateTimeStr": "2025-10-10 10:37:57"
+}

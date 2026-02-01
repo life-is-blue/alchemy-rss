@@ -1,0 +1,53 @@
+{
+  "id": "RAW_316184",
+  "title": "苦涩的教训：重新思考如何构建 AI 系",
+  "url": "https://baoyu.io/translations/bitter-lessons-rethinking-ai-development",
+  "date": "2025-03-24 00:32:30",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://ankitmaloo.com/bitter-lesson/\">The Bitter Lesson: Rethinking How We Build AI Systems</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <img src=\"https://fastly.jsdelivr.net/gh/bucketio/img0@main/2025/03/23/1742776813032-0b9ea71c-d192-44dd-817b-5393a815aadf.png\" data-width=\"100%\" data-align=\"center\" alt=\"\">\n   <p data-id=\"8x9eeu9iqt\">2019年，理查德·萨顿（Richard Sutton）写了一篇名为《<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf\">苦涩的教训</a>》的经典文章。他得出一个简单却深刻的结论：能够随算力增长而进步的系统，最终会超越那些无法随算力扩展的系统。换句话说，在人工智能领域，“粗暴”的计算能力总能战胜精巧的人为设计方案。</p>\n   <p data-id=\"3xx1fgtbtp\">我以前也认为，搭建优秀的AI系统靠的是巧妙的设计和复杂的规则。这就是典型的软件工程师思维：建立系统，考虑边界情况，加以处理，便万无一失。但现在看来，我当初真是大错特错了。</p>\n   <p data-id=\"8lk7e8o191\">打个比方，就像备战马拉松，你可以花几个月调整跑姿，购买最先进的装备，但最有效的还是跑步练习积累的里程。在AI领域，“里程数”其实就是“算力”。</p>\n   <h2 data-id=\"9lfx6y3sn9\" id=\"9lfx6y3sn9\" data-toc-id=\"9lfx6y3sn9\">大自然的启示</h2>\n   <p data-id=\"8u4hna8zbz\">最近，我在院子里打理自己的小花园时，突然有了个绝妙的比喻。植物生长时根本不需要详细的指导，只要你给它提供水、阳光和养分，它们自己就会茁壮成长。最有效的AI系统也是同样的道理。</p>\n   <p data-id=\"9nysjm0prm\">当我们过度设计AI时，就相当于告诉植物具体如何长出每一片叶子。不但浪费精力，而且还容易使系统变得脆弱，一遇到新情况就无法适应。</p>\n   <h2 data-id=\"yifvpv5li7\" id=\"yifvpv5li7\" data-toc-id=\"yifvpv5li7\">三种方案的故事</h2>\n   <p data-id=\"vhjb2qgb8h\">今天，企业中最常见的AI场景之一就是客服支持。这里分享我之前实际经历的一个案例：</p>\n   <h3 data-id=\"ir4mj2ncfg\" id=\"ir4mj2ncfg\" data-toc-id=\"ir4mj2ncfg\">方案1. 基于规则的方法</h3>\n   <p data-id=\"2nwg9e6bo0\">最初，我们建了一个包含数百条规则的决策树，以处理客户问题。这种方法能应付大部分常见问题，但一旦情况稍有不同，整个系统就会崩溃。维护起来也异常麻烦。</p>\n   <h3 data-id=\"r2gx4vjlx2\" id=\"r2gx4vjlx2\" data-toc-id=\"r2gx4vjlx2\">方案2. 有限算力的AI客服</h3>\n   <p data-id=\"grro3mdhqc\">后来，随着ChatGPT的兴起，我们开始使用具备一定算力的AI客服。我们根据历史数据的模式或标准作业流程（SOP）写出提示语。这种方式能处理简单的问题，但面对复杂的情况往往难以招架，需要不断人工干预。</p>\n   <p data-id=\"3cnyjxbi5s\">许多AI客服系统都停留在这一阶段。有些企业选择进一步限制模型，加入更多约束或框架，让AI严格按照设计好的流程运行。但这无意间也限制了算力潜力。</p>\n   <h3 data-id=\"pqvtf4vp10\" id=\"pqvtf4vp10\" data-toc-id=\"pqvtf4vp10\">方案3. 算力驱动的大规模方案</h3>\n   <p data-id=\"wiwnvan4ue\">接下来我们尝试了另一条路——直接加大算力。不只是配备更强的GPU，而是从根本上重新思考如何运用AI：让AI同时生成多个回答方案，同时探索多条推理路径，然后选择最佳方案。每次客户互动都可能引发几十个并行的AI调用，系统不断生成多个潜在回应，评估效果，甚至模拟整个对话的未来走向。</p>\n   <p data-id=\"k83gjhxh8c\">的确，这样的做法算力消耗极大，但效果却出奇地好。系统开始主动处理我们从未设想过的特殊情况，更重要的是，它自行探索出新的互动模式，而这些模式自然地从并行的探索中涌现出来。</p>\n   <p data-id=\"sjl5pdp9ai\">由此引出：</p>\n   <h2 data-id=\"5st8ay65eo\" id=\"5st8ay65eo\" data-toc-id=\"5st8ay65eo\">强化学习的革命</h2>\n   <p data-id=\"e6pnxc67y1\">到了2025年，这种趋势在<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://ankitmaloo.com/RL\">强化学习（RL）</a>领域表现得更明显。许多公司专注于给通用模型套上限制性的外壳（Wrapper），试图让模型按照预设流程运行。但真正的突破在于那些敢于投入强化学习后续训练算力的企业。</p>\n   <p data-id=\"btm3q85m8q\">这些经过强化学习优化的模型不会仅仅按照现成的路径行动，它们会探索并发现解决问题的新方法。比如OpenAI的Deep Research或Claude对计算机工具的使用能力，就展示了算力密集型后续训练远胜过精致的外壳包装。并不是说包装层不好，只是它们只知道一种解法。而强化学习的模型，借助充足的算力自由探索，却能找到我们根本想不到的更优秀方案。</p>\n   <p data-id=\"rkwbljncm3\">强化学习的魅力就在于它的自然性。比如教一个人骑自行车，你不会给他一本50页的物理原理手册。他只需要不断尝试、摔倒、调整，最终熟练掌握。RL模型类似，但规模大得多，它们尝试数千种方法，得到反馈后再进行调整。每一次成功会强化特定的神经路径，每一次失败都会帮助避开死胡同。</p>\n   <p data-id=\"d1gawsdfr6\">例如，在客服领域，一个RL客服可能会发现，有时候一开始问个看似多余的澄清问题，反而大幅提高了解决效率。这种模式我们不太可能预先写进规则，但模型通过大量试错发现了它。关键是，要有足够的算力来支持这些实验和学习。</p>\n   <p data-id=\"1fbso5ekcj\">这种方法的厉害之处在于，它不受我们固有观念的限制。外壳包装方案本质上只是把人类已知的最佳实践编成规则，而强化学习则能发现完全新的最佳实践。它可能会结合看似毫不相干的方法，创造出优于逻辑清晰、逐步推导的方案。这就是“苦涩的教训”最好的诠释——给足够多的算力，探索式学习永远能战胜人工设计的规则。</p>\n   <p data-id=\"bctofisxzd\">事实上，这场竞争已经在Claude和Cursor之间展开。用户发现Cursor在Claude Sonnet 3.7上表现不好，但与3.5版本搭配却完美运行。而Claude code（背后用的是Sonnet 3.7）虽然消耗大量token，却表现极为出色。Cursor据说很快会推出按使用计费的版本，更好地利用3.7版本的自主性行为<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://ankitmaloo.com/bitter-lesson/#fn:1\">1</a>。这种现象在未来其他领域会越来越明显，尤其是代码之外的地方——AI能同时探索多种路径，而人类只固守单一流程。</p>\n   <h2 data-id=\"q3iivlz8ly\" id=\"q3iivlz8ly\" data-toc-id=\"q3iivlz8ly\">给AI工程师的启示</h2>\n   <p data-id=\"r3spgln4di\">这种深刻的见解彻底改变了我们对AI系统设计的看法：</p>\n   <ol>\n    <li>\n     <p data-id=\"cxt81ofuwp\"><strong>从简单开始，向大规模扩展</strong>：<br>\n       先构建能基本解决问题的最简单架构，再通过算力规模提升性能，而非增加复杂性。</p></li>\n    <li>\n     <p data-id=\"w20i91thwz\"><strong>设计时即考虑扩展</strong>：</p></li>\n   </ol>\n   <ul>\n    <li>\n     <p data-id=\"tg04g620t5\">架构可并行处理</p></li>\n    <li>\n     <p data-id=\"v51sv7wc9p\">学习框架能随数据和算力增长而灵活扩展</p></li>\n    <li>\n     <p data-id=\"qwxnafrov6\">基础设施能支持分布式处理</p></li>\n   </ul>\n   <ol>\n    <li>\n     <p data-id=\"39xzwwiv6b\"><strong>避免过早优化</strong>：<br>\n       别在最大化利用算力前就花费大量时间优化算法。巧妙的优化往往不如直接提升计算资源带来的回报明显。</p></li>\n   </ol>\n   <h2 data-id=\"4dbgm40kme\" id=\"4dbgm40kme\" data-toc-id=\"4dbgm40kme\">真正的重要性在哪</h2>\n   <p data-id=\"egycel8044\">对我们工程师来说，这个教训的含义深刻却又令人不安：</p>\n   <ol>\n    <li>\n     <p data-id=\"4bhzp8e2v4\"><strong>投资策略</strong>：<br>\n       企业应该更多地投入计算基础设施，而非复杂算法开发。</p></li>\n    <li>\n     <p data-id=\"ar6ckyy20l\"><strong>竞争优势</strong>：<br>\n       AI领域的赢家不是算法最聪明的，而是能高效利用最多算力的公司。</p></li>\n    <li>\n     <p data-id=\"47v3188f9p\"><strong>职业重心</strong>：<br>\n       作为AI工程师，我们的价值不在于创造完美的算法，而是搭建能有效利用巨大计算资源的系统。这意味着我们的思维模式需要根本转变。</p></li>\n   </ol>\n   <h2 data-id=\"xa3ziwewe7\" id=\"xa3ziwewe7\" data-toc-id=\"xa3ziwewe7\">展望未来</h2>\n   <p data-id=\"qcx8phrkou\">这一教训看似降低了AI工程师的作用，其实是提升了我们的角色。我们的任务是：</p>\n   <ul>\n    <li>\n     <p data-id=\"e4yytsv5ho\">设计有效利用不断增加算力的系统</p></li>\n    <li>\n     <p data-id=\"1h9j8uf21i\">构建能随规模扩展的稳定学习环境</p></li>\n    <li>\n     <p data-id=\"v8if21uc8y\">创造无需根本性重新设计即可增长的架构</p></li>\n   </ul>\n   <p data-id=\"cc2ryt1u89\">未来属于那些能够利用强大计算力量学习和适应的系统，而不是试图将人类知识写死成规则的人。</p>\n   <p data-id=\"hs5q7t5zya\">记住：在聪明的设计与原始算力的竞赛中，算力总是赢家。我们的职责是修建赛道，而不是规定选手如何奔跑。</p></div>\n \n",
+  "aiSummary": "AI 系统应以算力为驱动，而非人为设计，强化学习和客服案例印证了此观点。",
+  "oneSentenceSummary": "AI 系统应以算力为驱动，而非人为设计，强化学习和客服案例印证了此观点。",
+  "summary": "本文强调算力是 AI 系统发展的核心驱动力，通过客服支持案例，对比了基于规则、有限算力的 AI 和算力驱动的大规模方案的效果，指出过度设计会限制 AI 的适应性。作者还提到强化学习在算力支持下能突破人类固有观念，发现更优方案，并以 Claude 和 Cursor 的竞争为例，说明了算力在 AI 发展中的重要性。最后，文章为 AI 工程师提供了启示，强调应投资计算基础设施，设计可扩展的系统，并避免过早优化。",
+  "mainPoints": [
+    {
+      "point": "算力驱动的 AI 系统优于人为设计的系统。",
+      "explanation": "算力能够使 AI 系统探索和发现新的解决方案，而人为设计的系统容易变得脆弱，且难以适应新情况。"
+    },
+    {
+      "point": "强化学习是实现算力驱动 AI 的关键。",
+      "explanation": "强化学习模型通过大量试错和反馈调整，可以发现我们根本想不到的更优秀方案，不受人类固有观念的限制。"
+    },
+    {
+      "point": "AI 工程师应专注于构建可扩展和有效利用算力的系统。",
+      "explanation": "AI 工程师的价值在于搭建能有效利用巨大计算资源的系统，而非创造完美的算法。"
+    }
+  ],
+  "keyQuotes": [
+    "能够随算力增长而进步的系统，最终会超越那些无法随算力扩展的系统。",
+    "在聪明的设计与原始算力的竞赛中，算力总是赢家。",
+    "我们的职责是修建赛道，而不是规定选手如何奔跑。"
+  ],
+  "tags": [
+    "算力",
+    "算力基础设施",
+    "AI系统",
+    "强化学习",
+    "客服"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2412,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1742776350000,
+  "publishDateStr": "2025-03-24",
+  "publishDateTimeStr": "2025-03-24 00:32:30"
+}

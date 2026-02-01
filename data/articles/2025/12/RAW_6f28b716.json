@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6f28b716",
+  "title": "Fragments Dec 4",
+  "url": "https://martinfowler.com/articles/20251204-frags.html",
+  "date": "2025-12-04 15:59:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a href=\"https://blog.robbowley.net/2025/12/04/ai-is-still-making-code-worse-a-new-cmu-study-confirms/\">Rob Bowley</a> summarizes a study from Carnegie Mellon looking on the impact of AI on a bunch of open-source software projects. Like any such study, we shouldn’t take its results as definitive, but there seems enough there to make it a handy data point. The key point is that the AI code probably reduced the quality of the code base - at least if static code analysis can be trusted to determine quality. And perhaps some worrying second-order effects</p>\n  <blockquote>\n   <p>This study shows more than 800 popular GitHub projects with code quality degrading after adopting AI tools. It’s hard not to see a form of context collapse playing out in real time. If the public code that future models learn from is becoming more complex and less maintainable, there’s a real risk that newer models will reinforce and amplify those trends, producing even worse code over time.</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Rob’s post is typical of much of the thoughtful writing on AI. We can see its short-term benefits, but worry about its long-term impact. But on a much deeper note is this lovely story from <a href=\"https://www.linkedin.com/pulse/my-80th-birthday-i-bought-myself-new-brain-jim-highsmith-8qcrc/\">Jim Highsmith</a>. Jim has turned 0x50, and has spent the last decade fighting Parkinson’s disease. To help him battle it he has two AI assisted allies.</p>\n  <blockquote>\n   <p>Between my neural implants and Byron’s digital guidance, I now collaborate with two adaptive systems: one for motion, one for thought. Neither replaces me. Both extend me.</p>\n  </blockquote>\n  <p><strong>If you read anything on AI this week, <a href=\"https://www.linkedin.com/pulse/my-80th-birthday-i-bought-myself-new-brain-jim-highsmith-8qcrc/\">make it be this</a>.</strong> It offers a positive harbinger for our future and opens my mind to a whole different perspective of the role of AI in it</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Anthropic recently announced that it disrupted a Chinese state-sponsored operation abusing Claude Code. Jim Gumbley looks at the core lesson to learn from this, that we have to understand the serious risk of <a href=\"https://www.thoughtworks.com/insights/blog/security/anthropic-ai-espionage-disclosure-signal-from-noise?utm_source=linkedin&amp;utm_medium=social-organic&amp;utm_campaign=dt_bs_rp-in-clt_tech_thought_leaders_2025-11&amp;gh_src=d1fe17bc1us\">AI Jailbreaking</a></p>\n  <blockquote>\n   <p>New AI tools are able to analyze your attack surface at the next level of granularity. As a business leader, that means you now have two options: wait for someone else to run AI-assisted vulnerability detection against your attack surface, or run it yourself first.</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>There’s plenty of claims that AI Vibe Coding can replace software developers, something that folks like me (perhaps with a bias) think unlikely. <a href=\"https://bsky.app/profile/gergely.pragmaticengineer.com/post/3m75kmb7bh22i\">Gergely Orosz</a> shared this tidbit</p>\n  <blockquote>\n   <p>Talked with an exec at a tech company who is obsessed with AI and has been for 3 years. Not a developer but company makes software. Uses AI for everything, vibe codes ideas.</p>\n   <p>Here’s the kicker:</p>\n   <p>Has a team of several devs to implement his vibe coded prototypes to sg workable</p>\n  </blockquote>\n  <p>I’d love to hear more about this (and similar stories)</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p><a href=\"https://checkeagle.com/checklists/njr/a-month-of-chat-oriented-programming/\">Nick Radcliffe</a> writes about a month of using AI</p>\n  <blockquote>\n   <p>I spent a solid month “pair programming” with Claude Code, trying to suspend disbelief and adopt a this-will-be-productive mindset. More specifically, I got Claude to write well over 99% of the code produced during the month. I found the experience infuriating, unpleasant, and stressful before even worrying about its energy impact. Ideally, I would prefer not to do it again for at least a year or two. The only problem with that is that it “worked”.</p>\n  </blockquote>\n  <p>He stresses that his approach is the “polar opposite” of Vibe Coding. The post is long, and rambles a bit, but is worthwhile because he talks in detail about his workflow and how he uses the tool. Such posts are important so we can learn the nitty-gritty of how our programming habits are changing.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Along similar lines is a post of <a href=\"https://brianchambers.substack.com/p/chamber-of-tech-secrets-55-issue\">Brian Chambers</a> on his workflow, that he calls Issue-Driven Development (and yes, I’m also sick of the “something-driven” phraseology). As with much of the better stuff I’ve heard about AI assisted work, it’s all about carefully managing the context window, ensuring the AI is focused on the right things and not distracted by textual squirrels.</p>\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 策划了关于人工智能对软件开发、代码质量、人类增强和安全风险的多方面影响的洞察，为技术专业人士提供了不同的视角。",
+  "oneSentenceSummary": "Martin Fowler 策划了关于人工智能对软件开发、代码质量、人类增强和安全风险的多方面影响的洞察，为技术专业人士提供了不同的视角。",
+  "summary": "这篇由 Martin Fowler 撰写的题为“Fragments Dec 4”的文章，是对近期关于人工智能的讨论和研究的精选摘要。文章首先强调了卡内基梅隆大学的一项研究，Rob Bowley 总结指出，人工智能工具可能会降低开源代码的质量，引发人们对未来人工智能模型从日益复杂且难以维护的代码基础中学习的担忧。然后，文章转向 Jim Highsmith 讲述的一个鼓舞人心的故事。他与帕金森病作斗争，使用人工智能辅助神经植入和数字指导来进行运动和思考，展示了人工智能在人类增强方面的潜力。此外，文章还讨论了人工智能安全问题，引用了 Anthropic 破坏一项国家支持行动的案例，以及 Jim Gumbley 呼吁企业积极使用人工智能进行漏洞检测。最后，Fowler 探讨了人工智能在编码中的实际应用，将“概念验证式编程（指高管使用人工智能快速生成原型，但需要开发人员进行实际开发）”与“面向对话编程”（开发人员使用像 Claude Code 这样的人工智能的详细工作流程，尽管令人沮丧，但证明是有效的）进行了对比。他还提到了 Brian Chambers 的“问题驱动开发”工作流程，强调了管理人工智能的上下文窗口的重要性。这些片段共同强调了人工智能在技术领域中复杂且不断发展的角色。",
+  "mainPoints": [
+    {
+      "point": "人工智能集成到软件开发中可能会对代码质量和可维护性产生负面影响。",
+      "explanation": "卡内基梅隆大学的一项研究表明，人工智能生成的代码可能会降低开源项目的质量，如果未来的模型在质量较低的代码基础上进行训练，可能会导致这些问题永久存在。"
+    },
+    {
+      "point": "人工智能在人类增强方面具有巨大的潜力，可以将能力扩展到当前限制之外。",
+      "explanation": "Jim Highsmith 的个人叙述展示了人工智能辅助神经植入和数字指导如何帮助克服严重的健康挑战。这为人工智能在增强人类能力方面的作用提供了一个积极的愿景。"
+    },
+    {
+      "point": "在编码中应用人工智能的实践经验揭示了不同的工作流程和持续存在的挑战。",
+      "explanation": "文章对比了“概念验证式编程”（人工智能用于快速原型设计）和“面向对话编程”（详细的人工智能辅助编码），突出了生产力的提高以及开发人员在将人工智能集成到日常任务中时面临的挫折，以及在人工智能辅助开发中上下文管理的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "这项研究表明，在采用人工智能工具后，超过 800 个流行的 GitHub 项目的代码质量有所下降。",
+    "在我的神经植入和 Byron 的数字指导之间，我现在与两个自适应系统协作：一个用于运动，一个用于思考。两者都没有取代我。两者都在扩展我。",
+    "新的人工智能工具能够以更高精细度分析你的攻击面。作为一名商业领袖，这意味着你现在有两个选择：等待其他人运行人工智能辅助漏洞检测来检测你的攻击面，或者自己先运行它。",
+    "我发现这种体验令人恼火、不愉快且压力很大，甚至还没有担心它的能源影响。理想情况下，我宁愿至少在一两年内不再这样做。但问题在于，它确实奏效了。",
+    "与我听到的关于人工智能辅助工作的更好内容一样，一切都与仔细管理上下文窗口有关，确保人工智能专注于正确的事情，而不是被无关文本信息干扰。"
+  ],
+  "tags": [
+    "人工智能影响",
+    "软件开发",
+    "代码质量",
+    "人工智能安全",
+    "开发者工作流"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 665,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764863940000,
+  "publishDateStr": "2025-12-04",
+  "publishDateTimeStr": "2025-12-04 15:59:00"
+}

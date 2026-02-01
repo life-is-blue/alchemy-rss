@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4b797008",
+  "title": "Crossplane 通过 CNCF 毕业，达到生产成熟度",
+  "url": "https://www.infoq.com/news/2025/11/crossplane-grad/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-13 07:00:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Cloud Native Computing Foundation (CNCF) has <a href=\"https://blog.crossplane.io/crossplane-cncf-graduation/\">graduated Crossplane</a>, marking a major milestone for the open-source project that turns Kubernetes into a universal control plane for cloud infrastructure.</p>\n   <p>Graduation is <a href=\"https://www.cncf.io/projects/\">reserved for projects</a> that have reached operational maturity, wide adoption, and a strong governance model. For practitioners, it signals that Crossplane is no longer an experimental idea but a production-hardened foundation for building internal platforms, offering self-service APIs, and managing multi-cloud environments with a Kubernetes-native approach.</p>\n   <p>Originally created by <a href=\"https://www.upbound.io/\">Upbound</a> in 2018 and <a href=\"https://www.cncf.io/blog/2021/09/14/crossplane-moves-from-sandbox-to-cncf-incubator\">donated</a> to the CNCF in 2020, Crossplane has moved through Sandbox and Incubating stages to reach Graduation. It now counts more than <a href=\"https://finance.yahoo.com/news/cloud-native-computing-foundation-announces-160000508.html\">3,000 contributors across 450 companies</a> and has passed a security audit under a vendor-neutral governance model. The ecosystem has <a href=\"https://blog.crossplane.io/community-ecosystem\">expanded</a> from a handful of cloud providers into a marketplace of official and community-maintained packages covering major hyperscalers as well as services like Helm, Vault, and Kubernetes add-ons.</p>\n   <p>Enterprise adoption reflects that momentum. Public users include Nike, Autodesk, NASA Science Cloud, Elastic, SAP, IBM, and Nokia. The <a href=\"https://blog.upbound.io/why-crossplane-is-the-ideal-engine-for-internal-developer-platforms\">dominant pattern</a> is using Crossplane as the backbone of an internal developer platform. Platform teams expose custom APIs such as Environment, Application, or DatabaseService, while compositions handle provisioning, networking, security controls, and backups. Developers get self-service infrastructure; the organisation gets standardized configuration and policy enforcement without manual review or tickets. <a href=\"https://medium.com/%40walaaelgenidy/crossplane-the-multicloud-control-plane-for-the-modern-enterprise-episode-1-ecdfe5d02c4e\">Some companies</a> have adopted Crossplane for multi-cloud control planes, managing AWS, Azure, and GCP resources from a single Kubernetes cluster.</p>\n   <p>Crossplane extends the Kubernetes API so infrastructure can be described and managed the same way teams handle workloads. When a provider for AWS, Azure, GCP or another platform is installed, it adds custom resource types for services like VPCs, databases, buckets, or Kubernetes clusters. Platform engineers then define higher-level abstractions using Composite Resource Definitions (XRDs) and Compositions, embedding security policies and configuration defaults into reusable APIs.&nbsp;</p>\n   <p>From a developer’s perspective, requesting a Database becomes as simple as applying a Kubernetes manifest. Crossplane’s controllers handle provisioning and <a href=\"http://blog.upbound.io/crossplane-differentiators\">continuously reconcile</a> the underlying cloud resources, keeping configuration in Kubernetes rather than a state file. This removes the need to run plan/apply and automatically corrects drift, which has made Crossplane attractive to teams standardizing on Kubernetes and GitOps workflows.</p>\n   <p>Crossplane inevitably invites comparison to <a href=\"https://developer.hashicorp.com/terraform\">Terraform</a>, <a href=\"https://www.pulumi.com/\">Pulumi</a>, and <a href=\"https://aws.amazon.com/cdk/\">AWS CDK</a>. Terraform remains popular for its ecosystem and simple setup: a single binary, a CLI workflow, and a mature <a href=\"http://registry.terraform.io\">library of modules</a>. But is limited to&nbsp;reconcilng&nbsp;changes only when a user runs apply.&nbsp;Pulumi and CDK emphasize infrastructure as real programming languages, while Crossplane treats infrastructure as Kubernetes resources controlled by operators and policy. In practice, many teams <a href=\"https://blog.crossplane.io/crossplane-vs-terraform/\">use both</a>: Crossplane can run Terraform modules through provider-terraform, letting organizations reuse existing code while adopting a Kubernetes-native control plane.</p>\n   <p>But Crossplane is&nbsp;not free of friction:&nbsp;Early adopters <a href=\"https://blog.crossplane.io/faq-1-composition-not-working\">reported</a> a steep learning curve and <a href=\"https://www.reddit.com/r/kubernetes/comments/1mqc5cw/crossplane_20_is_out\">debugging challenges</a> when compositions or providers misbehaved. Enterprises can also choose to pair the open-source Crossplane with vendor support or a UI layer to <a href=\"https://blog.upbound.io/crossplane-graduates-from-cncf-upbound-redefines-ai-native-infrastructure\">simplify</a> day-to-day operations.</p>\n   <p>With graduation, maintainers are <a href=\"https://www.cncf.io/announcements/2025/11/06/cloud-native-computing-foundation-announces-graduation-of-crossplane/\">focusing</a> on improved observability, faster reconciliation, and a richer ecosystem of configuration packages.&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Crossplane Reaches Production Maturity by Graduating CNCF\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/crossplane-grad/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1763017200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Crossplane 通过 CNCF 毕业，标志着其作为开源项目的生产成熟度，并使 Kubernetes 能够成为云基础设施的通用控制平面，赋能内部开发者平台。",
+  "oneSentenceSummary": "Crossplane 通过 CNCF 毕业，标志着其作为开源项目的生产成熟度，并使 Kubernetes 能够成为云基础设施的通用控制平面，赋能内部开发者平台。",
+  "summary": "本文宣布 Crossplane 从云原生计算基金会 (CNCF) 毕业，标志其在运营成熟度、广泛采用和强大治理模型上取得重要进展。Crossplane 最初由 Upbound 创建，并扩展了 Kubernetes，使其能够作为管理各种云基础设施的通用控制平面。这允许从业者使用 Kubernetes 原生 API 来配置和管理 VPC、数据库和 Kubernetes 集群等资源。这种能力使组织能够构建内部开发者平台，为开发者提供自助服务基础设施 API。同时，平台团队可以通过组合管理底层配置、安全性和网络。包括 Nike 和 NASA Science Cloud 在内的知名用户使用 Crossplane 来标准化配置、执行策略，并从单个 Kubernetes 集群管理多云环境。虽然经常与 Terraform 和 Pulumi 等基础设施即代码工具进行比较，但 Crossplane 的独特之处在于它将基础设施视为 Kubernetes 资源，持续协调期望状态并与 GitOps 工作流程无缝集成。尽管有其优势，但早期的采用者报告了陡峭的学习曲线和调试复杂性。随着它的毕业，Crossplane 维护者现在优先考虑改进可观察性、更快的协调和扩展的生态系统。",
+  "mainPoints": [
+    {
+      "point": "Crossplane 的 CNCF 毕业证实了其生产就绪性以及适用于企业级基础设施管理。",
+      "explanation": "毕业标志着运营成熟度、广泛采用和强大的治理，使 Crossplane 成为构建内部平台和可靠地管理多云环境的可靠基础。"
+    },
+    {
+      "point": "Crossplane 将 Kubernetes 转换为用于基础设施的通用控制平面，从而实现 Kubernetes 原生资源配置方法。",
+      "explanation": "通过使用自定义资源扩展 Kubernetes API，Crossplane 允许使用熟悉的 Kubernetes 清单和 GitOps 工作流程来定义和管理基础设施（例如，数据库、VPC），从而简化开发者体验。"
+    },
+    {
+      "point": "Crossplane 促进了内部开发者平台的创建，提供自助服务基础设施 API 和标准化配置。",
+      "explanation": "平台团队可以定义更高级别的抽象并嵌入策略，从而为开发者提供对基础设施的自助服务访问，同时确保组织标准和策略执行。"
+    }
+  ],
+  "keyQuotes": [
+    "毕业是为已达到运营成熟度、广泛采用和强大治理模型的项目保留的。",
+    "对于从业者来说，这表明 Crossplane 已经不是一个实验性的项目，而是经过生产环境验证的可靠基础，可以用于构建内部平台，提供自助服务 API，并以 Kubernetes 原生方法管理多云环境。",
+    "主要的模式是将 Crossplane 用作内部开发者平台的支柱。",
+    "从开发者的角度来看，请求数据库变得像应用 Kubernetes 清单一样简单。",
+    "Crossplane 将基础设施视为由 Operator 和策略控制的 Kubernetes 资源。"
+  ],
+  "tags": [
+    "云原生",
+    "Kubernetes",
+    "Crossplane",
+    "基础设施即代码",
+    "控制平面"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 513,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763017200000,
+  "publishDateStr": "2025-11-13",
+  "publishDateTimeStr": "2025-11-13 07:00:00"
+}

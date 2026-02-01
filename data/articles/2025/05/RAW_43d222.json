@@ -1,0 +1,58 @@
+{
+  "id": "RAW_43d222",
+  "title": "Uber 完成微服务和大规模计算工作负载的 Kubernetes 大规模迁移",
+  "url": "https://www.infoq.com/news/2025/05/uber-kubernetes-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-24 09:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber has <a href=\"https://www.uber.com/en-AU/blog/migrating-ubers-compute-platform-to-kubernetes-a-technical-journey\">successfully completed</a> a large Kubernetes migration, transitioning its entire compute platform from <a href=\"https://mesos.apache.org\">Apache Mesos</a> to <a href=\"https://kubernetes.io\">Kubernetes</a> across multiple data centers and cloud environments. The ride-sharing giant's engineering teams have detailed their comprehensive journey in a series of technical blog posts, revealing the challenges, solutions, and lessons learned from migrating thousands of microservices and large-scale compute workloads.</p>\n   <p>The migration represents a fundamental shift in Uber's infrastructure architecture, affecting thousands of services that power everything from ride-hailing to food delivery across global markets. The company's previous compute platform, built on Apache Mesos, had served Uber well during its rapid growth phase but presented limitations as the organization evolved toward a more cloud-native approach.</p>\n   <p>\"This migration was not just a technology change, but a complete reimagining of how we operate our compute infrastructure,\" explained Uber's engineering team. The project spanned multiple years and required careful coordination across numerous engineering teams to ensure zero-downtime transitions for critical services.</p>\n   <p>Uber's approach to the Kubernetes migration was methodical and risk-averse, prioritizing service reliability above migration speed. The engineering teams developed a sophisticated migration framework that allowed for gradual service transitions while maintaining full backward compatibility with existing Mesos-based services.</p>\n   <p>The migration strategy centered on several key principles:</p>\n   <ul>\n    <li>maintaining service reliability throughout the transition</li>\n    <li>ensuring seamless integration with existing tools and workflows</li>\n    <li>establishing robust monitoring and observability capabilities in the new Kubernetes environment</li>\n   </ul>\n   <p>The teams implemented a dual-stack approach, running services simultaneously on both Mesos and Kubernetes during transition periods to minimize risk.</p>\n   <p>One of the most significant technical challenges involved adapting Uber's extensive suite of internal tools and platforms to work with Kubernetes. This included reimplementing deployment pipelines, monitoring systems, and service discovery mechanisms that had been tightly integrated with the Mesos ecosystem.</p>\n   <p>&nbsp;</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/05/uber-kubernetes-migration/news/2025/05/uber-kubernetes-migration/en/resources/1uber1-1748013426067.jpg\" style=\"width:100%;height:764px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/05/uber-kubernetes-migration/en/resources/1uber1-1748013426067.jpg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Uber migration ecosystem from mesos to kubernetes&nbsp;</small>\n   </center>\n   <p id=\"gdcalert1\">Beyond migrating standard microservices, Uber faced the <a href=\"https://www.uber.com/en-AU/blog/migrating-large-scale-compute-workloads-to-kubernetes/\">complex challenge</a> of transitioning large-scale compute workloads that power critical business functions including machine learning model training, data processing pipelines, and analytics workloads. These compute-intensive applications presented unique challenges due to their resource requirements and performance sensitivity.</p>\n   <p>The engineering teams developed specialized solutions for handling these workloads in Kubernetes, likes modeling DSW sessions as a <a href=\"https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/\">Custom Resource Definition</a> (CRD) in Kubernetes, optimized networking configurations, and enhanced scheduling capabilities. The Uber engineers also implemented sophisticated resource allocation mechanisms using Federator, a cluster federation layer that provides an abstraction over ‌Kubernetes batch clusters. Thanks to this, the large-scale batch jobs could coexist efficiently with real-time services without impacting user-facing applications.</p>\n   <p>&nbsp;</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2025/05/uber-kubernetes-migration/news/2025/05/uber-kubernetes-migration/en/resources/1figure-3-17466473951993-1748013426067.jpg\" style=\"width:100%;height:368px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/05/uber-kubernetes-migration/en/resources/1figure-3-17466473951993-1748013426067.jpg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Kubernetes clusters usage without and with federation</small>\n   </center>\n   <p>The migration journey was not without significant technical hurdles. Uber's engineering teams encountered challenges related to networking complexity, resource management at scale, and maintaining performance benchmarks across different infrastructure paradigms. The company's global presence added additional complexity, requiring solutions that worked consistently across multiple regions and cloud providers.</p>\n   <p>One particular challenge involved maintaining Uber's strict latency requirements while transitioning services to the new platform. The teams implemented comprehensive performance testing and gradual rollout strategies to ensure that service quality remained consistent throughout the migration process.</p>\n   <p>The engineering teams also had to address cultural and operational challenges, including training hundreds of engineers on Kubernetes concepts and updating development workflows to align with cloud-native practices.</p>\n   <p>The completed migration has delivered substantial benefits across multiple dimensions. Uber reports improved operational efficiency, enhanced developer productivity, and better resource utilization across their infrastructure. The move to Kubernetes has also positioned the company to better leverage cloud-native technologies and practices, enabling faster innovation and more flexible deployment strategies.</p>\n   <p>The new platform provides enhanced scalability capabilities, allowing Uber to more efficiently handle traffic spikes and seasonal variations in demand. Additionally, the migration has simplified Uber's infrastructure management, reducing operational overhead and enabling teams to focus more on product development rather than platform maintenance.</p>\n   <p>Other big companies have also migrated their core infrastructure to Kubernetes: Figma <a href=\"https://www.figma.com/blog/migrating-onto-kubernetes/\">migrated</a> the core services to Kubernetes in 12 months, and&nbsp;CERN&nbsp;<a href=\"https://arxiv.org/abs/2102.12751\">migrated</a>&nbsp;the CMSWEB Cluster to Kubernetes. These examples as well as&nbsp;Uber's successful Kubernetes migration serve as&nbsp;valuable case studies&nbsp;for other large-scale organizations considering similar transitions. The company's detailed documentation of their journey provides insights into best practices for enterprise Kubernetes adoption, particularly for organizations operating at significant scale.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber Completes Massive Kubernetes Migration for Microservices and Large-Scale Compute Workloads\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/uber-kubernetes-migration/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1748077200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 完成从 Apache Mesos 到 Kubernetes 的大规模迁移，包含数千个服务和工作负载。",
+  "oneSentenceSummary": "Uber 完成从 Apache Mesos 到 Kubernetes 的大规模迁移，包含数千个服务和工作负载。",
+  "summary": "本文详细介绍了 Uber 历时多年的大规模迁移，将其整个计算平台从 Apache Mesos 迁移到 Kubernetes，横跨全球数据中心和云。该项目涉及转换数千个微服务和大规模计算工作负载，并通过双栈等风险规避策略优先考虑可靠性。主要技术挑战包括调整内部工具，以及通过自定义 Kubernetes 解决方案（如 CRD 和集群联邦层 (Federator)）专门处理资源密集型计算工作负载，如机器学习训练和数据处理。成功的迁移带来了显著的效益，包括提高运维效率、开发者生产力、资源利用率和可扩展性，助力 Uber 更好地采用云原生技术。本次迁移为类似的大型组织提供有价值的参考。",
+  "mainPoints": [
+    {
+      "point": "Uber 成功地将核心计算从 Mesos 迁移到 Kubernetes。",
+      "explanation": "此次转换涉及跨不同环境的数千个服务和大型工作负载，标志着公司基础架构架构的根本性转变。"
+    },
+    {
+      "point": "迁移优先考虑可靠性，使用双栈和渐进式转换等策略。",
+      "explanation": "一种有条不紊的方法，结合复杂的框架以及在两个平台上同时运行，确保了关键服务的零停机。"
+    },
+    {
+      "point": "处理大型计算工作负载需要专门的 Kubernetes 解决方案。",
+      "explanation": "Uber 开发了 CRD 和联邦层 (Federator)，以便在 Kubernetes 中高效地管理机器学习训练等高要求的任务以及实时服务。"
+    },
+    {
+      "point": "完成的迁移产生了显著的运营和开发效益。",
+      "explanation": "迁移到 Kubernetes 提高了效率、生产力、资源利用率和可扩展性，从而能够更快地进行创新和采用云原生技术。"
+    }
+  ],
+  "keyQuotes": [
+    "这次迁移不仅仅是一项技术变革，而是对我们如何运营计算基础设施的完全重新构想。",
+    "迁移策略的重点是几个关键原则：在整个转换过程中保持服务可靠性...",
+    "除了迁移标准微服务之外，Uber 还面临着转换大规模计算工作负载的复杂挑战...",
+    "完成的迁移在多个维度上带来了巨大的效益。"
+  ],
+  "tags": [
+    "基础设施迁移",
+    "Kubernetes",
+    "微服务",
+    "云原生",
+    "Apache Mesos"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 697,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1748077200000,
+  "publishDateStr": "2025-05-24",
+  "publishDateTimeStr": "2025-05-24 09:00:00"
+}

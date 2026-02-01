@@ -1,0 +1,57 @@
+{
+  "id": "RAW_3bc7c82e",
+  "title": "Claude Code 创造者的开发工作流内幕",
+  "url": "https://www.infoq.com/news/2026/01/claude-code-creator-workflow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-10 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Claude Code's creator Boris Cherny <a href=\"https://x.com/bcherny/status/2007179832300581177?s=20\">described how he uses it at Anthropic</a>, highlighting practices such as running parallel instances, sharing learnings, automating prompting, and rigorously verifying results to compound productivity over time.</p>\n   <p>Cherny does not customize Claude Code, as he finds it works great out of the box, and runs many sessions in parallel, including five locally in his <a href=\"https://x.com/bcherny/status/2007218725754442106?s=20\">MacBook</a>'s terminal and 5-10 on Anthropic's website. To avoid conflicts, <a href=\"https://x.com/bcherny/status/2007200880081436864?s=20\">each local session uses its own <code>git checkout</code>, rathen than branches or worktrees</a>. He starts remote sessions with <code>&amp;</code> from the CLI and often uses <code>--teleport</code> to move them back an forth. However, <a href=\"https://x.com/bcherny/status/2007219912411115702?s=20\">10-20% of those sessions are abandoned</a> due to unexpected scenarios.</p>\n   <p>Cherny prefers using Opus 4.5 with thinking for all coding, valuing its higher quality and reliability over Sonnet despite its slower speed. He also finds Opus better at tool use and notes that it is ultimately faster overall than the smaller model.</p>\n   <p>Each team at Anthropic maintains a <code>CLAUDE.md</code> in git to document mistakes, so Claude can improve over time, and best practices, such as <a href=\"https://x.com/bcherny/status/2007212366094811401?s=20\">style conventions, design guidelines, PR template</a>, and so on. Cherny often uses the <code>@.claude</code> tag on coworkers's PRs to add learnings to <code>CLAUDE.md</code>, ensuring knowledge from each PR is preserved. Currently, Cherny says, their <code>CLAUDE.md</code> is 2.5k tokens.</p>\n   <p>One key aspect of his workflow is starting with a plan and refine it iteratively before switching to auto-editing:</p>\n   <blockquote>\n    <p>If my goal is to write a Pull Request, I will use Plan mode, and go back and forth with Claude until I like its plan. From there, I switch into auto-accept edits mode and Claude can usually 1-shot it. A good plan is really important!</p>\n   </blockquote>\n   <p>Cherny executes daily workflows like commits, PRs, simplification, and verification using slash commands to start sub-agents. All commands are stored in <code>.claude/commands/</code>, which also helps reduce the need for explicit prompting.</p>\n   <blockquote>\n    <p>For example, Claude and I use a /commit-push-pr slash command dozens of times every day. The command uses inline bash to pre-compute git status and a few other pieces of info to make the command run quickly and avoid back-and-forth with the model.</p>\n   </blockquote>\n   <p>While Claude's code is usually well formatted, inconsistencies can sometimes cause CI failures. To prevent this, Cherny runs a PostToolUse hook to clean up the code:</p>\n   <pre>\r\n<code class=\"language-javascript\">\"PostToolUse\" : [\r\n    \"matcher\": \"WritelEdit\",\r\n    \"hooks\": [\r\n        {\r\n            \"type\": \"command\",\r\n            \"command\": \"bun run format || true\"\r\n        }\r\n    ]\r\n</code></pre>\n   <p>For security, Cherny almost never uses <code>--dangerously-skip-permissions</code>. Instead, he enables commonly used bash commands that are safe in his environment via <code>/permissions</code>. This spares him unnecessary permission prompts on commands like <code>bun run build:*</code>, <code>bun run test:*</code>, <code>cc:*</code> and many others. The only case when he uses <code>--dangerously-skip-permissions</code> is for running long-running tasks inside a sandbox to prevent Claude from stopping repeatedly.</p>\n   <p>The most important tip is to give Claude a way to verify its work through a feedback loop, such as running a bash command, or a test suite, or testing the app through the browser or a simulator. This can improve the quality of the final result by a factor of 2–3:</p>\n   <blockquote>\n    <p>Claude tests every single change I land to claude.ai/code using the Claude Chrome extension. It opens a browser, tests the UI, and iterates until the code works and the UX feels good.</p>\n   </blockquote>\n   <p>Overall, Cherny explains, <a href=\"https://x.com/bcherny/status/2007290414961963524?s=20\">this workflow lets his team focus on code review and steering</a>, noting that when an engineer reads a PR, the code is already in good shape.</p>\n   <p>Cherny's tweets sparked an extended discussion on X.com, including some useful clarifications we have included here, but be sure to read the original for full detail.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Inside the Development Workflow of Claude Code's Creator\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/claude-code-creator-workflow/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768078800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "深入探索 Boris Cherny 为 Claude Code 打造的高级 AI 辅助编码工作流，强调并行会话、持续学习、自动化以及严格验证带来的复合生产力提升。",
+  "oneSentenceSummary": "深入探索 Boris Cherny 为 Claude Code 打造的高级 AI 辅助编码工作流，强调并行会话、持续学习、自动化以及严格验证带来的复合生产力提升。",
+  "summary": "本文详细介绍了 Anthropic 公司 Claude Code 创造者 Boris Cherny 采用的高级 AI 辅助编码工作流。文章重点展示了他通过高度自律的方法最大化 LLM 生产力，专注于并行会话管理、共享机构知识、自动化提示词以及严格验证 AI 生成代码。Cherny 的工作流涉及运行多个 Claude Code 实例，利用 Opus 4.5 在编码任务中的高质量表现，并维护 `CLAUDE.md` 知识库以实现持续改进。核心要素是在利用自动代码生成之前先进行迭代规划阶段，并使用斜杠命令处理日常任务。他还强调反馈循环的关键作用，Claude 通过测试和模拟验证自己的工作，显著提高输出质量。这种结构化方法让他的团队能够专注于高级代码审查和战略方向。",
+  "mainPoints": [
+    {
+      "point": "采用并行 Claude Code 会话和系统化会话管理以提高开发吞吐量。",
+      "explanation": "Cherny 使用多个本地和远程 Claude Code 实例，每个实例都有独立的 `git checkout`，针对独立的并发开发流程进行优化，尽管有时会因为意外场景而放弃某些实例。"
+    },
+    {
+      "point": "在生成代码之前优先进行与 AI 的迭代规划以获得更高的成功率。",
+      "explanation": "从 '规划模式' 开始，Claude 在自动生成代码前帮助完善方法，这导致拉取请求的 '一次成功'，突显了坚实策略的重要性。"
+    },
+    {
+      "point": "使用斜杠命令和自定义工具自动化常见编码工作流和与 LLM 的交互。",
+      "explanation": "日常任务如提交和 PR 通过存储的斜杠命令执行，这些命令预先计算必要信息，减少了显式提示和人与 LLM 之间的来回交互。"
+    },
+    {
+      "point": "集成强大的反馈循环，让 AI 通过测试和模拟验证自己的工作。",
+      "explanation": "Claude 被配置为运行测试并与 UI 交互（例如通过 Chrome 扩展）来验证其代码更改，将质量提高 2-3 倍，并让人能够专注于整体设计。"
+    },
+    {
+      "point": "维护团队范围内的知识库 (`CLAUDE.md`) 以记录学习经验、错误和最佳实践。",
+      "explanation": "一个共享的 markdown 文件跟踪 Claude 的行为方式，包括常见错误和偏好风格，使得 AI 交互持续改进，并在团队中保持一致的编码标准。"
+    }
+  ],
+  "keyQuotes": [
+    "Cherny 不对 Claude Code 进行定制，因为他发现它开箱即用就非常出色。",
+    "如果我的目标是编写拉取请求，我会使用规划模式，并与 Claude 来回交流直到我喜欢它的计划。从那里，我切换到自动接受编辑模式，Claude 通常可以一次成功。一个好的计划真的非常重要！",
+    "例如，Claude 和我每天使用 /commit-push-pr 斜杠命令数十次。",
+    "最重要的建议是给 Claude 一种通过反馈循环验证其工作的方法，例如运行 bash 命令、测试套件，或通过浏览器或模拟器测试应用程序。",
+    "Claude 使用 Claude Chrome 扩展测试我在 claude.ai/code 上提交的每一个更改。它会打开浏览器，测试 UI，并迭代直到代码正常工作且用户体验良好。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 599,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768078800000,
+  "publishDateStr": "01-10",
+  "publishDateTimeStr": "2026-01-10 21:00:00"
+}

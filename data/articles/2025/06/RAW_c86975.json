@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c86975",
+  "title": "使用 Claude 构建并托管 AI 驱动 应用 - 无需部署",
+  "url": "https://www.anthropic.com/news/claude-powered-artifacts",
+  "date": "2025-06-24 16:00:00",
+  "author": "Anthropic News",
+  "siteName": "Anthropic News",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Today, we’re introducing the ability to build, host, and share interactive AI-powered apps directly in the Claude app. Now developers can iterate faster on their AI apps without worrying about the complexity and cost of scaling for a growing audience.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Here’s what we built: Claude can now create artifacts that interact with Claude through an API— turning these artifacts into AI-powered apps, where the economics actually work for sharing.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">When someone uses your Claude-powered app:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>They authenticate with their existing Claude account</li>\n   <li>Their API usage counts against <em>their</em> subscription, not yours</li>\n   <li>You pay nothing for their usage</li>\n   <li>No one needs to manage API keys</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Claude writes real code that orchestrates complex AI functionality. You can see it, modify it, and share it freely.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"Video_post-wrapper__uy5Rq\">\n    <div class=\"Video_post-video-container__oACj_\">\n     <!--$!-->\n     <template data-dgst=\"BAILOUT_TO_CLIENT_SIDE_RENDERING\"></template><!--/$-->\n    </div>\n   </figure>\n  </div>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"community-ideas\">Community ideas</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Early users have already used interactive artifacts to build:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li><strong>AI-powered games</strong> with NPCs that remember conversations and adapt to player choices</li>\n   <li><strong>Learning tools</strong> that adjust to individual skill levels and provide personalized tutoring</li>\n   <li><strong>Data analysis apps</strong> where users upload CSVs and ask follow-up questions in natural language</li>\n   <li><strong>Writing assistants</strong> that help with everything from scripts to technical documentation</li>\n   <li><strong>Agent workflows</strong> that orchestrate multiple Claude calls for complex tasks</li>\n  </ul>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"getting-started\">Getting started</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Start building in the Claude app by enabling this new interactive capability. Simply describe what you want to create, and Claude will write the code for you.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">As you work together, Claude can debug and improve its own code based on your feedback. Once your app is ready, you can share it instantly through a link—no deployment process needed. Claude takes care of the technical details like prompt engineering, error handling, and orchestration logic, allowing you to focus entirely on bringing your idea to life.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\"><strong>What you can do:</strong></p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>Use a Claude API within your artifacts</li>\n   <li>Process files and create rich UIs with React</li>\n   <li>See, fork, and customize any artifact</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\"><strong>Current limitations:</strong></p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>No external API calls (yet)</li>\n   <li>No persistent storage</li>\n   <li>Limited to a text-based completion API</li>\n  </ul>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">This capability is available in beta to Free, Pro, and Max plan users.</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 在 Claude 应用内推出交互式 AI 应用构建与托管 新功能，省去外部部署环节。",
+  "oneSentenceSummary": "Anthropic 在 Claude 应用内推出交互式 AI 应用构建与托管 新功能，省去外部部署环节。",
+  "summary": "Anthropic 推出了新 功能，允许用户使用“构件”（artifacts）直接在 Claude 界面内构建、托管和分享交互式 AI 应用。此功能使开发者能够快速原型开发和分享 AI 应用，而无需传统部署和扩展的复杂性和成本。一个关键创新在于，最终用户与应用交互时，其 Claude 订阅将承担 API 使用 成本，这显著降低了构建及分享应用的开发者的成本负担。开发者可以查看和修改 Claude 生成的底层 代码，从而实现快速迭代。初始用例包括游戏、学习 工具、数据分析 应用、写作助手和复杂 Agent 工作流。虽然目前处于 Beta 版，存在外部 API 调用 或持久存储等限制，但这代表着在简化 AI 应用 开发和分享方面迈出了重要一步。",
+  "mainPoints": [
+    {
+      "point": "用户可以直接在 Claude 界面内构建、托管和分享 AI 应用。",
+      "explanation": "这项新的“构件”功能消除了对外部部署基础设施的需求，简化了 AI 应用的开发和分享过程。"
+    },
+    {
+      "point": "最终用户的 API 使用量计入*他们的*订阅，而不是开发者的。",
+      "explanation": "这种独特的经济模型消除了应用开发者在扩展和使用量方面的成本负担，使得分享更加可行。"
+    },
+    {
+      "point": "Claude 为 AI 应用生成可见且可修改的 代码。",
+      "explanation": "开发者可以查看、理解和定制底层逻辑和 代码，促进更快迭代和调试。"
+    },
+    {
+      "point": "游戏、学习 工具和数据分析等多样化应用正在被构建。",
+      "explanation": "早期示例表明，该平台能够充分利用 Claude 的 能力，构建各种交互式 AI 驱动的体验，展现了其多功能性。"
+    }
+  ],
+  "keyQuotes": [
+    "今天，我们正在引入直接在 Claude 应用中构建、托管和分享交互式 AI 驱动应用的能力。",
+    "现在，开发者可以在其 AI 应用上更快地迭代，而无需担忧为日益增长的用户群体进行扩展所带来的复杂性和成本。",
+    "他们的 API 使用量计入*他们的*订阅，而不是你的。你无需支付他们的使用 费用。",
+    "Claude 编写真实 代码 来编排复杂 AI 功能。你可以查看、修改并自由分享它。",
+    "一旦你的应用准备就绪，你可以通过链接即时分享它——无需部署过程。"
+  ],
+  "tags": [
+    "AI 开发",
+    "AI 应用",
+    "交互式 AI",
+    "开发者 工具",
+    "应用内开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 334,
+  "domain": "anthropic.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8b9413",
+  "sourceName": "Anthropic News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750780800000,
+  "publishDateStr": "2025-06-24",
+  "publishDateTimeStr": "2025-06-24 16:00:00"
+}

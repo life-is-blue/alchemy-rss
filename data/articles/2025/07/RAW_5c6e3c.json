@@ -1,0 +1,55 @@
+{
+  "id": "RAW_5c6e3c",
+  "title": "DeepSeek 终于丢了开源第一王座，但继任者依然来自中国",
+  "url": "https://www.qbitai.com/2025/07/310560.html",
+  "date": "2025-07-18 09:00:38",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">几千人盲投，<strong>Kimi K2超越DeepSeek拿下全球开源第一</strong>！</p>\n  <p data-track=\"2\">歪果网友们直接炸了，评论区秒变夸夸打卡现场：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/3bbcb83abe9222e207622c3a5c185061.gif\" alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/3bbcb83abe9222e207622c3a5c185061.gif\">\n  </div>\n  <p data-track=\"3\">今天，竞技场终于更新了Kimi K2的排名情况——</p>\n  <p data-track=\"4\"><strong>开源第一，总榜第五，而且紧追马斯克Grok 4这样的顶尖闭源模型</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/98a9b54a-5c8c-4c29-51cd-7e4885330000/public\" alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/98a9b54a-5c8c-4c29-51cd-7e4885330000/public\">\n  </div>\n  <p data-track=\"5\">并且各类单项能力也不差，能和一水儿闭源模型打得有来有回：</p>\n  <ul>\n   <li data-track=\"6\"><strong>连续多轮对话并列第一</strong>，o3和Grok 4均为第四；</li>\n   <li data-track=\"7\"><strong>编程能力第二</strong>，和GPT 4.5、Grok 4持平；</li>\n   <li data-track=\"8\"><strong>应对复杂提示词能力第二</strong>，和o3、4o位于同一梯队；</li>\n   <li data-track=\"9\">……</li>\n  </ul>\n  <p data-track=\"10\">甚至眼尖的朋友也发现了，唯二闯入总榜TOP 10的开源模型都来自中国。<em>（DeepSeek R1总榜第8）</em></p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/178e9770-fb83-42ca-cb9f-c1eacf935c00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/178e9770-fb83-42ca-cb9f-c1eacf935c00/public\">\n  </div>\n  <p data-track=\"11\">当然了，即使抛开榜单不谈，Kimi这款新模型过去一周也确实火热——</p>\n  <p data-track=\"13\">公开可查战绩包括但不限于下面这些：</p>\n  <p data-track=\"14\">从实打实的数据来看，发布这一周里，Kimi K2在开源社区就获得了相当关注度和下载量。</p>\n  <p data-track=\"15\">GitHub标星<strong>5.6K</strong>，Hugging Face下载量<strong>近10万</strong>，这还不算它在中国社区的应用。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9be1f93a-a112-4d5a-6e3a-3c8de93e0500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9be1f93a-a112-4d5a-6e3a-3c8de93e0500/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/686931b7-135d-4959-9e51-1c1d5bf9a300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/686931b7-135d-4959-9e51-1c1d5bf9a300/public\">\n  </div>\n  <p data-track=\"16\">连AI搜索引擎明星创企Perplexity CEO也亲自为它站台，并透露：</p>\n  <blockquote>\n   <p data-track=\"17\">Kimi K2在内部评估中表现出色，Perplexity计划接下来基于K2模型进行后训练。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/374af45a-2739-4337-fa16-7a719442fb00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/374af45a-2739-4337-fa16-7a719442fb00/public\">\n  </div>\n  <p data-track=\"18\">甚至由于访问的用户太多了，逼得Kimi官方也出来发公告：</p>\n  <blockquote>\n   <p data-track=\"19\">访问量大+模型体积大，导致API过慢。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c3192643-9448-45a6-9ed2-d25cc26dee00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c3192643-9448-45a6-9ed2-d25cc26dee00/public\">\n  </div>\n  <p data-track=\"20\">……</p>\n  <p data-track=\"21\">不过就在一片向好之时，人们关于“Kimi K2采用了DeepSeek V3架构”的质疑声再度升温。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2f48c210-acf6-4d92-dae5-73ee9a921500/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2f48c210-acf6-4d92-dae5-73ee9a921500/public\">\n  </div>\n  <p data-track=\"22\">对此，我们也找到了Kimi团队成员关于K2架构的相关回应。</p>\n  <p data-track=\"23\">总结下来就是，<strong>确实继承了DeepSeek V3的架构，不过后续还有一系列参数调整。</strong></p>\n  <p data-track=\"24\"><em>p.s. 以下分享均来自知乎@刘少伟，内容经概括总结如下~</em></p>\n  <p data-track=\"25\">一开始，他们尝试了各种架构方案，结果发现V3架构是最能打的<em>（其他顶多旗鼓相当）</em>。</p>\n  <p data-track=\"26\">所以问题就变成了，要不要为了不同而不同？</p>\n  <p data-track=\"27\">经过深思熟虑，<strong>团队给出了否定答案</strong>。理由有两点：</p>\n  <p data-track=\"28\">一是V3架构珠玉在前且已经经过大规模验证，没必要强行“标新立异”；二是自己和DeepSeek一样，训练和推理资源非常有限，而经过评估V3架构符合相关成本预算。</p>\n  <p data-track=\"29\">所以他们选择了完全继承V3架构，并引入适合自己的模型结构参数。</p>\n  <p data-track=\"30\">具体而言，K2的结构参数改动有四点：</p>\n  <ul>\n   <li data-track=\"31\"><strong>增加专家数量</strong>：团队验证了在激活参数量不变的情况下，MoE总参数增加仍有益于loss下降。</li>\n   <li data-track=\"32\"><strong>注意力头head数减半</strong>：减少head数节省的成本，刚好抵消MoE参数变大带来的开销，且效果影响很小。</li>\n   <li data-track=\"33\"><strong>只保留第一层Dense</strong>：只保留第一层为dense，其余都用MoE，结果对推理几乎无影响。</li>\n   <li data-track=\"34\"><strong>专家无分组</strong>：通过自由路由+动态重排（EPLB）可以应对负载不均衡，同时让专家组合更灵活，模型能力更强。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eaec68af-78b2-437d-891c-be487c154000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/eaec68af-78b2-437d-891c-be487c154000/public\">\n  </div>\n  <p data-track=\"35\">最终得到的推理方案就是，在相同专家数量下：</p>\n  <blockquote>\n   <p data-track=\"36\">虽然总参数增大到1.5倍，但除去通信部分，理论的prefill和decode耗时都更小。即使考虑与通信overlap等复杂因素，这个方案也不会比V3有显著的成本增加。</p>\n  </blockquote>\n  <p data-track=\"37\">就是说，这是一种更“精打细算”的结构调优。</p>\n  <p data-track=\"38\">而且这种放弃自己的模型架构路线，彻底走DeepSeek路线的做法，也被国内网友评价为<strong>“相当大胆”</strong>。</p>\n  <p data-track=\"40\">OK，以上关于Kimi和DeepSeek架构之争的问题落定后，我们再把目光拉回到这次最新排名。</p>\n  <p data-track=\"42\">一个很明显的趋势是：<strong>「开源=性能弱」的刻板印象正在被打破，开源模型已经越来越厉害了。</strong></p>\n  <p data-track=\"43\">不仅榜单上的整体排名在上升，而且分数差距也越来越小。</p>\n  <p data-track=\"44\">仔细看，模型TOP 10总分均为1400+，开源和闭源几乎可以看成位于同一起跑线。</p>\n  <p data-track=\"45\">而且这次拿下开源第一的Kimi K2，总分已经非常接近Grok 4、GPT 4.5等顶尖闭源模型了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/88add16b-ac9f-4263-8fb4-4ae230b7c200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/88add16b-ac9f-4263-8fb4-4ae230b7c200/public\">\n  </div>\n  <p data-track=\"46\">换句话说，以前我们可能还要在模型能力和成本之间作取舍，但随着开源力量的崛起，多思考一秒钟都是对开源的不尊重（doge）。</p>\n  <p data-track=\"47\">与此同时，越来越多的行业人士也表达了对开源崛起的判断。</p>\n  <p data-track=\"48\">艾伦人工智能研究所研究科学家Tim Dettmers表示：</p>\n  <blockquote>\n   <p data-track=\"49\"><strong>开源击败闭源将变得越来越普遍。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"DeepSeek终于丢了开源第一王座，但继任者依然来自中国\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/74c120b0-f0d0-430b-fe5d-c77e0c1f1000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/74c120b0-f0d0-430b-fe5d-c77e0c1f1000/public\">\n  </div>\n  <p data-track=\"50\">Perplexity CEO也多次在公开场合表示：</p>\n  <blockquote>\n   <p data-track=\"51\">开源模型将在塑造AI能力的全球扩散路径中扮演重要角色。它们对于因地制宜地定制和本地化AI体验至关重要。</p>\n  </blockquote>\n  <p data-track=\"52\">而在已经逐渐崛起的开源模型领域，TOP 10中唯二开源、且都是国产模型的含金量还在上升。</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Kimi K2 超越 DeepSeek 成开源 AI 模型新王，揭示其 V3 架构优化，彰显开源模型崛起。",
+  "oneSentenceSummary": "Kimi K2 超越 DeepSeek 成开源 AI 模型新王，揭示其 V3 架构优化，彰显开源模型崛起。",
+  "summary": "文章报道了 Kimi K2 在数千人盲投的竞技场中超越 DeepSeek，登上全球开源 AI 模型榜首，并位列总榜第五，紧追顶尖闭源模型。Kimi K2 在连续多轮对话、编程和复杂提示词应对等单项能力上表现出色，且是总榜 TOP 10 中唯二的中国开源模型。文章还揭示了 Kimi K2 的架构继承自 DeepSeek V3，但通过增加专家数量、调整注意力头和优化 Dense 层等方式进行了“精打细算”的结构调优，在保持成本效益的同时提升了性能。文章指出，这一事件打破了“开源=性能弱”的刻板印象，预示着开源模型正迅速崛起，与闭源模型的性能差距日益缩小，将在 AI 能力的全球扩散中扮演重要角色。",
+  "mainPoints": [
+    {
+      "point": "Kimi K2 超越 DeepSeek 成开源榜首，多项能力比肩顶尖闭源模型。",
+      "explanation": "其全球开源第一、总榜第五的成绩，打破了“开源=性能弱”刻板印象，显示中国开源 AI 实力，为开发者提供高性能选择。"
+    },
+    {
+      "point": "Kimi K2 模型架构继承 DeepSeek V3，并通过增加专家数等进行针对性优化。",
+      "explanation": "团队在 V3 基础上优化 MoE 专家数量、注意力头等，实现成本效益下能力提升，展现了模型调优的“精打细算”策略。"
+    },
+    {
+      "point": "开源模型实力迅速崛起，与闭源模型性能差距缩小，将推动 AI 能力普及。",
+      "explanation": "榜单数据显示开源模型在性能上正与闭源模型齐平，预示其在定制化、本地化 AI 应用中扮演日益重要的角色。"
+    }
+  ],
+  "keyQuotes": [
+    "几千人盲投，Kimi K2 超越 DeepSeek 拿下全球开源第一！",
+    "开源第一，总榜第五，而且紧追马斯克 Grok 4 这样的顶尖闭源模型。",
+    "确实继承了 DeepSeek V3 的架构，不过后续还有一系列参数调整。",
+    "开源击败闭源将变得越来越普遍。",
+    "开源模型将在塑造 AI 能力的全球扩散路径中扮演重要角色。它们对于因地制宜地定制和本地化 AI 体验至关重要。"
+  ],
+  "tags": [
+    "大语言模型",
+    "开源模型",
+    "Kimi K2",
+    "DeepSeek",
+    "模型架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1668,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752829238000,
+  "publishDateStr": "2025-07-18",
+  "publishDateTimeStr": "2025-07-18 09:00:38"
+}

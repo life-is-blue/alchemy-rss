@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a0f452",
+  "title": "Netflix 通过 RAW Hollow 内存对象存储优化 Tudum 的 CQRS 架构",
+  "url": "https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-15 06:00:00",
+  "author": "Rafal Gancarz",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix <a href=\"https://netflixtechblog.com/netflix-tudum-architecture-from-cqrs-with-kafka-to-cqrs-with-raw-hollow-86d141b72e52\">replaced a CQRS implementation using Kafka and Cassandra with a new solution leveraging RAW Hollow</a>, an in-memory object store developed internally. Revamped architecture of Tudum offers much faster content preview during the editorial process and faster page rendering for visitors.</p>\n   <p>Netflix launched Tudum, its official fan website, in late 2021, to provide a destination for Netflix users interested in additional content associated with the company’s shows. The architecture of the website was initially based on the <a href=\"https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs\">Command Query Responsibility Segregation (CQRS)</a> pattern to optimize read performance for serving content.</p>\n   <p>The write part of the platform was built around the 3rd-party CMS product, and had a dedicated ingestion service for handling content update events, delivered via a webhook. The ingestion service was responsible for converting CMS data into read-optimized page content by applying templates, as well as data validations and transformations. Read-optimized data would then be published to a dedicated Kafka topic.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/news/2025/08/netflix-tudum-cqrs-raw-hollow/en/resources/1netflix-tudum-arch-old-1755081110544.jpeg\" style=\"width: 600px; height: 467px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/netflix-tudum-cqrs-raw-hollow/en/resources/1netflix-tudum-arch-old-1755081110544.jpeg\" rel=\"share\"></p>\n   <p><em>Initial Tudum data architecture (Source: <a href=\"https://netflixtechblog.com/netflix-tudum-architecture-from-cqrs-with-kafka-to-cqrs-with-raw-hollow-86d141b72e52\">Netflix Engineering Blog</a>)</em></p>\n   <p>On the query side, the page data service was responsible for consuming messages for the Kafka topic and storing the data in the <a href=\"https://cassandra.apache.org/_/index.html\">Cassandra</a> query database. The service utilized a near cache to improve performance, providing stored page data to the page construction service and other internal services.</p>\n   <p>The initial architecture benefited from the decoupling of read and write paths, allowing for independent scaling. However, due to the caching refresh cycle, CMS updates were taking many seconds to show up on the website. The issue made it problematic for content editors to preview their modifications and got progressively worse as the amount of content grew, resulting in delays lasting tens of seconds.</p>\n   <p><a href=\"https://www.linkedin.com/in/eugeneemelyanov/\">Eugene Yemelyanau</a>, technology evangelist, and <a href=\"https://www.linkedin.com/in/jake-grice/\">Jake Grice</a>, staff engineer at Netflix, describe the cause for delays in retrieving content for displaying due to caching:</p>\n   <blockquote>\n    <p>Regardless of which system modifies the data, the cache is updated with each refresh cycle. If you have 60 keys and a refresh interval of 60 seconds, the near cache will update one key per second. This was problematic for previewing recent modifications, as these changes were only reflected with each cache refresh. As Tudum’s content grew, cache refresh times increased, further extending the delay.</p>\n   </blockquote>\n   <p>Eventually, the team decided to revamp the architecture to eliminate the delays in previewing content updates, ideally. Engineers chose to leverage <a href=\"https://hollow.how/\">RAW Hollow</a>, a homegrown in-memory object database. Netflix designed the database to handle small to medium datasets and support strong read-after-write consistency. RAW Hollow allows the entire dataset to reside in the memory of each application process within a cluster, offering low latency and high availability. The database provides eventual consistency by default but supports strong consistency at the individual request level.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/news/2025/08/netflix-tudum-cqrs-raw-hollow/en/resources/1netflix-tudum-arch-new-1755081110544.jpeg\" style=\"width: 600px; height: 540px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/netflix-tudum-cqrs-raw-hollow/en/resources/1netflix-tudum-arch-new-1755081110544.jpeg\" rel=\"share\"></p>\n   <p><em>Revised Tudum data architecture (Source: <a href=\"https://netflixtechblog.com/netflix-tudum-architecture-from-cqrs-with-kafka-to-cqrs-with-raw-hollow-86d141b72e52\">Netflix Engineering Blog</a>)</em></p>\n   <p>Tudum engineers replaced Kafka and Cassandra with the RAW Follow cluster, spanning the ingestion and page construction service instances. The team concluded that, for the use case at hand, the CQRS design pattern wasn’t the optimal approach, and using a distributed, in-memory object store suited the situation better. The new solution eliminated cache invalidation problems as the entire dataset could fit into the application’s memory, helped by Hollow’s data compression, reducing the data size to 25% of the uncompressed size in the Apache Iceberg table.</p>\n   <p>As a result of the architecture revamp and supporting data migration, the platform benefited from a significant reduction in data propagation times and page construction due to reduced request I/O and round-trip times. Tudum engineers believe that the new architecture offers the best of both worlds for editors and visitors.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Revamps Tudum’s CQRS Architecture with RAW Hollow In-Memory Object Store\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Rafal Gancarz\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/netflix-tudum-cqrs-raw-hollow/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1755237600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 使用 RAW Hollow 内存对象存储替换 Kafka 和 Cassandra，优化了 Tudum 的 CQRS 架构，从而消除了内容更新延迟并加速了页面渲染。",
+  "oneSentenceSummary": "Netflix 使用 RAW Hollow 内存对象存储替换 Kafka 和 Cassandra，优化了 Tudum 的 CQRS 架构，从而消除了内容更新延迟并加速了页面渲染。",
+  "summary": "Netflix 通过改造其最初的 CQRS 架构，解决了其粉丝网站 Tudum 上显著的内容更新延迟问题。最初的设置使用 Kafka 进行事件发布，使用 Cassandra 进行查询数据，但存在缓存刷新周期问题，导致内容编辑者预览更改时出现数十秒的延迟。为了解决这个问题，Netflix 转型到 RAW Hollow，这是一个内部开发的内存对象数据库，专为具有强读后写一致性的中小型数据集而设计。这种新方法允许整个数据集驻留在应用程序内存中，有效地消除了缓存失效问题，并显著减少了数据传播时间和页面构建延迟。因此，为编辑提供更快速的内容预览，并为访问者提供改进的页面渲染，展示了针对此特定用例的更优解决方案。",
+  "mainPoints": [
+    {
+      "point": "最初的 CQRS 架构，以及 Kafka 和 Cassandra 的使用，导致了显著的内容更新延迟。",
+      "explanation": "原始设置中的缓存刷新周期导致内容更改出现数十秒的延迟，严重阻碍了编辑预览过程，并随着内容的增长而恶化。"
+    },
+    {
+      "point": "采用内存对象存储 RAW Hollow 有效解决了数据传播延迟问题。",
+      "explanation": "通过将整个数据集存储在应用程序内存中，RAW Hollow 消除了缓存失效问题，确保了即时内容更新和低延迟数据访问。"
+    },
+    {
+      "point": "架构改造极大地提高了内容传播和页面渲染性能。",
+      "explanation": "由于内存解决方案减少了 I/O 和往返时间，因此编辑的内容预览速度更快，网站访问者的页面加载速度也更快。"
+    }
+  ],
+  "keyQuotes": [
+    "Netflix 使用内部开发的内存对象存储 RAW Hollow 替换了使用 Kafka 和 Cassandra 的 CQRS 实现。",
+    "这个问题导致内容编辑者难以预览修改后的内容，因为这些更改仅在每次缓存刷新时才反映出来。",
+    "RAW Hollow 允许整个数据集驻留在集群中每个应用程序进程的内存中，从而提供低延迟和高可用性。",
+    "新解决方案消除了缓存失效问题，因为整个数据集都可以放入应用程序的内存中……",
+    "Tudum 工程师认为，新架构为编辑和访问者带来了双赢的局面。"
+  ],
+  "tags": [
+    "架构设计",
+    "系统优化",
+    "CQRS",
+    "内存数据库",
+    "分布式系统"
+  ],
+  "topicTag": "architecture",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 587,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1755237600000,
+  "publishDateStr": "2025-08-15",
+  "publishDateTimeStr": "2025-08-15 06:00:00"
+}

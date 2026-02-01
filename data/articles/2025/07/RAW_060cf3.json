@@ -1,0 +1,59 @@
+{
+  "id": "RAW_060cf3",
+  "title": "阿里再开源，全球首个 MoE 视频生成模型登场，电影级美学效果一触即达 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-29-11",
+  "date": "2025-07-29 07:10:17",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>继上周开源三连发之后，阿里昨晚又放出了新模型。</p>\n  <p>这次是<strong>全球首个开源的 MoE 架构的视频生成模型 Wan2.2</strong>，最大的亮点是具备了<strong>电影级美学控制能力</strong>。</p>\n  <p>该模型遵循 Apache 2.0 开源协议。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ddb6cf78-f67c-4d06-cf4f-845fab7b2400/public\" data-ratio=\"0.6583850931677019\" data-s=\"300,640\" data-type=\"png\" data-w=\"644\" type=\"block\" data-imgfileid=\"503498737\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/170b9411-8d49-4c3d-9fe3-343e5b6f45ca/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <ul>\n   <li>\n    <p data-pm-slice=\"2 2 []\">官网地址：https://wan.video/welcome</p></li>\n   <li>\n    <p>Hugging Face 地址：https://huggingface.co/Wan-AI</p></li>\n   <li>\n    <p>ModelScope 地址：https://modelscope.cn/organization/Wan-AI</p></li>\n  </ul>\n  <p>我们先来看两个示例：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c26bc09e-71b3-47c1-40d7-307b749ebb00/public\" data-ratio=\"0.353125\" data-s=\"300,640\" data-type=\"gif\" data-w=\"640\" type=\"block\" data-imgfileid=\"503498787\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/87ac4169-39a2-494e-82ba-4192a47c34f4/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>提示词：A purely visual and atmospheric video piece focusing on the interplay of light and shadow, with a corn train as the central motif. Imagine a stage bathed in dramatic, warm spotlights, where a corn train, rendered as a stark silhouette, moves slowly across the space. The video explores the dynamic interplay of light and shadow cast by the train, creating abstract patterns, shapes, and illusions that dance across the stage. The soundtrack should be ambient and minimalist, enhancing the atmospheric and abstract nature of the piece.</sup></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c44f3880-6b68-4b56-e50d-10deaf911900/public\" data-ratio=\"0.35833333333333334\" data-s=\"300,640\" data-type=\"gif\" data-w=\"480\" type=\"block\" data-imgfileid=\"503498749\" data-original-style=\"width: 578px;height: 207px;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0e4ea9b6-b729-447f-8b58-9ca6aa2de89e/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><span align=\"\" alt=\"\" border=\"\" data-aiimageid=\"\" data-asynid=\"\" data-backh=\"\" data-backw=\"\" data-before-oversubscription-url=\"\" data-cacheurl=\"\" data-cardimg=\"\" data-copyright=\"\" data-croporisrc=\"\" data-cropselx1=\"\" data-cropselx2=\"\" data-cropsely1=\"\" data-cropsely2=\"\" data-cropx1=\"\" data-cropx2=\"\" data-cropy1=\"\" data-cropy2=\"\" data-fileid=\"\" data-fromlib=\"\" data-galleryid=\"\" data-gallerysupplier=\"\" data-height=\"\" data-imgfileid=\"503498748\" data-imgid=\"\" data-imgqrcoded=\"\" data-oversubscription-url=\"\" data-positionback=\"\" data-ratio=\"\" data-remoteid=\"\" data-retry=\"\" data-s=\"300,640\" data-src=\"\" data-type=\"gif\" data-upload=\"1\" data-w=\"\" data-width=\"\" height=\"\" ismap sizes=\"\" src=\"\" title=\"\" type=\"block\" usemap=\"\" width=\"\"><sup>提示词：A man on the run, darting through the rain-soaked back alleys of a neon-lit city night, steam rising from the wet pavement. He's clad in a drenched trench coat, his face etched with panic as he sprints down the alley, constantly looking over his shoulder. A chase sequence shot from behind, immersing the viewer deeply, as if the pursuers are right behind the camera lens.</sup></span></p>\n  <p>对于 Wan2.2 的开源，评论区的网友也是称赞有加。<br><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/036b08bb-451a-4ad9-58c4-2d79dda6ed00/public\" data-ratio=\"0.5812641083521445\" data-s=\"300,640\" data-type=\"png\" data-w=\"886\" type=\"block\" data-imgfileid=\"503498739\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/75b61b8b-76dc-4cc6-875b-df849a10a56a/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ecc615a9-1708-414f-16e5-d96cf40d6d00/public\" data-ratio=\"0.22592592592592592\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503498740\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/cf0e4eac-854a-484f-9991-69123b720332/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>而实现这样的效果，Wan2.2 主要得益于以下几大技术创新：</p>\n  <p>一是，<strong>MoE 架构创新</strong>。</p>\n  <p>Wan2.2 首次在视频扩散模型中引入了 Mixture-of-Experts（MoE）专家混合架构。</p>\n  <p>通过在时间步之间引入多个专门的强大专家模型来分担去噪过程，Wan2.2 实现了在不增加计算成本的前提下，大幅扩展了模型整体容量。&nbsp;</p>\n  <p>二是，<strong>数据规模跃升</strong>。</p>\n  <p>相比 Wan2.1，Wan2.2 的训练数据量大幅提升：图像数据增加 65.6%，视频数据增加 83.2%。</p>\n  <p>数据量的扩展显著增强了模型在运动表达、语义理解和美学表现等多维度的泛化能力，在所有开源与闭源视频模型中的表现均属顶尖。&nbsp;</p>\n  <p>三是，<strong>电影级美学控制能力</strong>。</p>\n  <p>&nbsp;Wan2.2 融入了特别筛选的美学数据集，并标注了光影、构图、色彩等细粒度属性，使得模型在生成时能够更精准地控制电影感风格，支持用户按需定制审美偏好。&nbsp;</p>\n  <p>四是，<strong>高效高清 Hybrid TI2V 架构</strong>。</p>\n  <p>Wan2.2 同步开源了一款 50 亿参数模型，采用自研的 Wan2.2-VAE 编码器，压缩率达到 16×16×4。该模型支持文本生成视频和图像生成视频两种模式，生成分辨率高达 720P、24fps，并可在消费级显卡（如 4090）上流畅运行。</p>\n  <p>该模型是当前市场上最快速的 720P、24fps 生成模型之一，可同时服务工业界与学术界的多种需求。&nbsp;</p>\n  <p>目前，用户可在 Hugging Face 和阿里魔搭（ModelScope）社区下载使用。</p>\n  <section>\n   <img data-imgfileid=\"503498741\" data-ratio=\"0.32887402452619846\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/436e9f24-fcd5-4260-e21c-e8ef9b6f0100/public\" data-type=\"png\" data-w=\"897\" type=\"block\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/8292bb95-6300-4034-a5f0-ebac7e7db1fe/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-imgfileid=\"503498742\" data-ratio=\"0.43729189789123196\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32d4f5b8-6df9-4f52-afba-17c0e4b62d00/public\" data-type=\"png\" data-w=\"901\" type=\"block\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/644d4066-9dc1-468d-8bb8-7354d9b33de6/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n </body>\n</html>",
+  "aiSummary": "阿里开源全球首个 MoE 视频生成模型 Wan2.2，具备电影级美学控制能力，支持高效高清视频生成，并在消费级显卡上运行。",
+  "oneSentenceSummary": "阿里开源全球首个 MoE 视频生成模型 Wan2.2，具备电影级美学控制能力，支持高效高清视频生成，并在消费级显卡上运行。",
+  "summary": "文章宣布了阿里巴巴开源了全球首个基于 MoE（专家混合）架构的视频生成模型 Wan2.2，并遵循 Apache 2.0 开源协议。该模型的最大亮点在于其电影级美学控制能力。Wan2.2 的核心技术创新包括：首次在视频扩散模型中引入 MoE 架构，通过专家模型分担去噪过程，在不增加计算成本的前提下大幅扩展了模型容量；训练数据量相比前代大幅提升，显著增强了模型在运动表达、语义理解和美学表现等多维度的泛化能力；融入特别筛选的美学数据集并进行细粒度标注，使得模型能精准控制电影感风格；以及采用高效高清的 Hybrid TI2V 架构，支持生成 720P、24fps 视频，并可在消费级显卡上流畅运行。目前，用户可通过 Hugging Face 和阿里魔搭（ModelScope）社区下载使用，该模型旨在服务工业界与学术界的多种需求。",
+  "mainPoints": [
+    {
+      "point": "MoE 架构创新：首次在视频扩散模型中引入 MoE",
+      "explanation": "通过专家模型分担去噪过程，在不增加计算成本的前提下，大幅扩展了模型整体容量，提升生成效果和效率。"
+    },
+    {
+      "point": "数据规模跃升：训练数据量大幅提升，增强模型多维度泛化能力",
+      "explanation": "图像和视频数据的大幅增加，显著提升了模型在运动表达、语义理解和美学表现上的泛化能力，达到顶尖水平。"
+    },
+    {
+      "point": "电影级美学控制：融入美学数据集，实现精准风格定制",
+      "explanation": "通过特别筛选并标注细粒度属性的美学数据集，模型能更精准控制电影感风格，支持用户按需定制审美偏好。"
+    },
+    {
+      "point": "高效高清 Hybrid TI2V 架构：支持 720P/24fps，消费级显卡运行",
+      "explanation": "采用自研 VAE 编码器，实现 720P、24fps 高清视频生成，且可在消费级显卡上流畅运行，是目前最快速的高清生成模型之一。"
+    }
+  ],
+  "keyQuotes": [
+    "全球首个开源的 MoE 架构的视频生成模型 Wan2.2 ，最大的亮点是具备了电影级美学控制能力。",
+    "Wan2.2 首次在视频扩散模型中引入了 Mixture-of-Experts（MoE）专家混合架构。",
+    "数据量的扩展显著增强了模型在运动表达、语义理解和美学表现等多维度的泛化能力，在所有开源与闭源视频模型中的表现均属顶尖。",
+    "Wan2.2 融入了特别筛选的美学数据集，并标注了光影、构图、色彩等细粒度属性，使得模型在生成时能够更精准地控制电影感风格，支持用户按需定制审美偏好。",
+    "该模型是当前市场上最快速的 720P、24fps 生成模型之一，可同时服务工业界与学术界的多种需求。"
+  ],
+  "tags": [
+    "视频生成",
+    "MoE架构",
+    "扩散模型",
+    "AIGC",
+    "电影级美学"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 93,
+  "wordCount": 894,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753773017000,
+  "publishDateStr": "2025-07-29",
+  "publishDateTimeStr": "2025-07-29 07:10:17"
+}

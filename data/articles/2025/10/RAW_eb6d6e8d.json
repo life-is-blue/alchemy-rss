@@ -1,0 +1,53 @@
+{
+  "id": "RAW_eb6d6e8d",
+  "title": "让 LLM 编写提示词：复杂 AI 流水线中的 DSPy 简介",
+  "url": "https://simonwillison.net/2025/Oct/4/drew-on-dspy/#atom-everything",
+  "date": "2025-10-04 22:48:59",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://www.youtube.com/watch?v=I9ZtkgYZnOw\">Let the LLM Write the Prompts: An Intro to DSPy in Compound Al Pipelines</a></strong>. I've had trouble getting my head around <a href=\"https://dspy.ai\">DSPy</a> in the past. This half hour talk by Drew Breunig at the recent Databricks Data + AI Summit is the clearest explanation I've seen yet of the kinds of problems it can help solve.</p>\n   <p>Drew works on Overture Maps, which combines Point Of Interest data from numerous providers to create a single unified POI database. This is an example of <strong>conflation</strong>, a notoriously difficult task in GIS where multiple datasets are deduped and merged together.</p>\n   <p>Drew uses an inexpensive local model, <a href=\"https://huggingface.co/Qwen/Qwen3-0.6B\">Qwen3-0.6B</a>, to compare 70 million addresses and identity matches, for example between <code>Place(address=\"3359 FOOTHILL BLVD\", name=\"RESTAURANT LOS ARCOS\")</code> and <code>Place(address=\"3359 FOOTHILL BLVD\", name=\"Los Arcos Taqueria\"')</code>.</p>\n   <p>DSPy's role is to optimize the prompt used for that smaller model. Drew used GPT-4.1 and the <a href=\"https://dspy.ai/api/optimizers/MIPROv2/\">dspy.MIPROv2</a> optimizer, producing a 700 token prompt that increased the score from 60.7% to 82%.</p>\n   <p><img alt=\"Determine if two points of interest refer to the same place. Arrow to optimized prompt: Given two records representing places or businesses-each with at least a name and address-analyze the information and determine if they refer to the same real-world entity. Consider minor differences such as case, diacritics, transliteration, abbreviations, or formatting as potential matches if both the name and address are otherwise strongly similar. Only output &quot;True&quot; if both fields are a close match; if there are significant differences in either the name or address, even if one field matches exactly, output &quot;False&quot;. Your decision should be robust to common variations and errors and should work across multiple languages and scripts.\" src=\"https://static.simonwillison.net/static/2025/optimized-prompt.jpeg\"></p>\n   <p>Why bother? Drew points out that having a prompt optimization pipeline makes it trivial to evaluate and switch to other models if they can score higher with a custom optimized prompt - without needing to execute that trial-and-error optimization by hand.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9037/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了 DSPy，用于自动化 AI 流水线中的提示优化，展示了其在 GIS 数据融合等任务中显著提升小型 LLM 性能的能力。",
+  "oneSentenceSummary": "本文介绍了 DSPy，用于自动化 AI 流水线中的提示优化，展示了其在 GIS 数据融合等任务中显著提升小型 LLM 性能的能力。",
+  "summary": "本文重点介绍了 DSPy 在复杂 AI 流水线中优化小型语言模型提示词的作用。它使用了 Drew Breunig 在 Overture Maps 上的工作，其中 DSPy 优化了 Qwen3 - 0.6B 的提示词，以融合 7000 万个地址，这是一项具有挑战性的 GIS 任务。使用 GPT - 4.1 和 dspy.MIPROv2 优化器，生成了一个 700 个令牌的提示词，将小型模型的分数从 60.7% 提高到 82%。这使得评估和切换基于优化性能的模型变得更容易，进而简化了 AI 应用程序开发。",
+  "mainPoints": [
+    {
+      "point": "DSPy 自动化提示优化，消除了手动试错。",
+      "explanation": "它系统地搜索最佳提示词，从而大大减少了传统上在 LLM 应用程序的提示工程上花费的人力和时间。"
+    },
+    {
+      "point": "DSPy 显著提高了小型或低成本 LLM 的性能。",
+      "explanation": "通过优化提示词，DSPy 使 Qwen3 - 0.6B 等小型或低成本 LLM 能够实现更高的准确性，从而使高级 AI 功能更易于访问和高效。"
+    },
+    {
+      "point": "优化的提示词流水线简化了模型评估和切换。",
+      "explanation": "该框架允许开发人员通过自动生成量身定制的提示词来轻松测试和集成新模型。这确保了不同 LLM 后端之间始终如一的高性能。"
+    }
+  ],
+  "keyQuotes": [
+    "DSPy 的作用是优化用于较小模型的提示词。",
+    "Drew 使用了 GPT - 4.1 和 dspy.MIPROv2 优化器，生成了一个 700 个令牌的提示词，将分数从 60.7% 提高到 82%。",
+    "拥有提示优化流水线使得评估和切换模型变得简单。如果其他模型可以通过自定义优化提示词获得更高分数，则无需手动试错优化即可轻松切换。"
+  ],
+  "tags": [
+    "提示工程",
+    "DSPy",
+    "LLM 优化",
+    "AI 流水线",
+    "数据融合"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 201,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759618139000,
+  "publishDateStr": "2025-10-04",
+  "publishDateTimeStr": "2025-10-04 22:48:59"
+}

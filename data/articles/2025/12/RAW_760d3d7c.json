@@ -1,0 +1,54 @@
+{
+  "id": "RAW_760d3d7c",
+  "title": "推特吵架吵出篇论文！谢赛宁团队新作 iREPA 只要 3 行代码",
+  "url": "https://www.qbitai.com/2025/12/361139.html",
+  "date": "2025-12-16 07:03:31",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"67\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"68\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">要说真学术，还得看推特。</p>\n  <p data-track=\"4\">刚刚，谢赛宁自曝团队新作<strong>iREPA</strong>其实来自4个多月前的，一次与网友的辩论。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"推特吵架吵出篇论文！谢赛宁团队新作iREPA只要3行代码\" src=\"https://image.jido.dev/20251216090709_c11b2c24cdddf2bf03699e5afb8c6ef7.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"1173\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">这场短暂的线上辩论虽然以谢赛宁被网友说服告终，但在3个多月后，居然有了意料之外的后续——</p>\n  <p data-track=\"6\">多个团队合作，沿着这一思路写出了一篇完整的论文，而且核心框架仅需3行代码。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"推特吵架吵出篇论文！谢赛宁团队新作iREPA只要3行代码\" src=\"https://image.jido.dev/20251216090708_e6f497e90fc93c4f789e507c66cf7361.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"339\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">致谢部分还感谢了当时参与讨论的网友。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_c43365487be5ceec13446e5e5be44fce.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"305\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">事情是这样的。</p>\n  <p data-track=\"10\">一位网友在8月份表示：</p>\n  <blockquote>\n   <p data-track=\"11\">别再痴迷于ImageNet-1K的分类分数了！自监督学习（SSL）模型应该专门为稠密任务（如REPA、VLM等）进行训练，因为这些任务真正依赖的是patch tokens中的空间和局部信息，而不是[CLS]token所代表的全局分类性能。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_a05948cfeb1154248d2993e267f5478a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"1054\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">（注：稠密任务就是要求模型对图像中的“每一个像素”或“每一个局部区域”都做出预测的计算机视觉任务，这类任务需要精确的空间和局部细节信息，而不仅仅是全局分类标签）</p>\n  <p data-track=\"13\">对于网友的观点，谢赛宁表示：</p>\n  <blockquote>\n   <p data-track=\"14\">不，使用patch token并不意味着就是在做稠密任务。VLM和REPA的性能与它们在IN1K上的得分高度相关，而与patch级别的对应关系只有很弱的关联。这并不是[CLS]token的问题，而是高层语义与低层像素相似性之间的差别。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_25c00c26d2cc6ce48c6695c8433e7363.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"283\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">对于谢赛宁的反驳，网友举出了SigLIPv2和PE-core优于DINOv2 for REPA的例子。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_4265453cc805f0f6b17139bc27208db7.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"980\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">与此同时，另一位网友也加入了战斗：</p>\n  <blockquote>\n   <p data-track=\"17\">这是个合理的问题。为了做直接对比，在没有DINOv3早期checkpoint的情况下，或许可以用REPA来比较PEspatial和PEcore。其中，PEspatial可以理解为：将PEcore的Gram-anchor对齐到更早的网络层，并结合SAM2.1。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090712_c028ce7be342b6db09a1b2be9b982bf4.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"661\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">对此，谢赛宁表示：</p>\n  <blockquote>\n   <p data-track=\"19\">非常好！感谢你的指路/提示。我很喜欢这个方案。否则干扰因素会太多了。两个checkpoint都已经有了（G/14，448 分辨率），希望我们很快就能拿到一些结果。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_2fe2a6e6889a1225d9c91dfd37433cb3.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"256\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">3个多月后，谢赛宁表示自己之前的判断站不住脚，而且这次的论文反而带来了更深入的理解。</p>\n  <p data-track=\"21\">还有贴心小贴士，提示网友可以看看致谢部分。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_1c6e4ee723ebb04f4e65f27430cc7c4a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"543\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">对于自己在致谢中被提到，参与讨论的网友之一表示很有意思：</p>\n  <blockquote>\n   <p data-track=\"23\">也谢谢你一路跟进！被致谢提到我也很受宠若惊。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_668c882241dfabb857dd9073fc3efe7f.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"213\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">谢赛宁还表示，这次讨论本身就是一次小实验——他想看看，一种新的“线上茶水间效应”是否真的能够发生。</p>\n  <p data-track=\"25\">他很享受这种状态：先有分歧、有争论，再通过真正的实验和投入，把直觉拉回到可被验证的科学结论上。</p>\n  <p data-track=\"26\">不得不说，这样开放、即时、可纠错的学术讨论，确实值得多来一些。</p>\n  <p data-track=\"27\">接下来，我们就一起来看看由此催生的最新论文。</p>\n  <p data-track=\"29\">承接上面的讨论，这篇最新论文探讨了一个核心的基础问题：</p>\n  <p data-track=\"30\">在用预训练视觉编码器表征来指导生成模型时，究竟是表征的哪一部分在决定生成质量？</p>\n  <p data-track=\"31\">是其全局语义信息（ImageNet-1K上的分类准确率）还是其空间结构（即补丁tokens之间的成对余弦相似度）？</p>\n  <p data-track=\"32\">论文给出的结论是：<strong>更好的全局语义信息并不等于更好的生成，空间结构（而非全局语义）才是表征生成性能的驱动力。</strong></p>\n  <p data-track=\"33\">传统观念（包括谢赛宁本人）认为具有更强全局语义性能的表征会带来更好的生成效果，但研究却表明<strong>更大的视觉编码器反而可能带来更差的生成性能</strong>。</p>\n  <p data-track=\"34\">其中，线性检测准确率只有约20%的视觉编码器，反而可以超过准确率&gt;80%的编码器。</p>\n  <p data-track=\"35\">而且，如果试图通过CLS token向patch token注入更多全局语义，生成性能还会被拉低。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_b6fa914b2f9f46f576c2d1d70919b058.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"284\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">与此同时，研究还发现<strong>生成效果更好的表征，往往具有更强的空间结构（可通过空间自相似性指标来衡量）</strong>：</p>\n  <p data-track=\"37\">也就是说，图像中某一部分的token会如何关注图像中其他区域的token。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_5cdd48f0504050ede04b1f73ecbec1ec.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"268\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">在具体的研究方法上，研究通过一次<strong>大规模的定量相关性分析</strong>对这一观察进行了细化验证：分析覆盖了<strong>27 种不同的视觉编码器</strong>（包括 DINOv2、v3、Perceptual Encoders、WebSSL、SigLIP 等）以及&nbsp;<strong>3种模型规模</strong>（B、L、XL）。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_44cd73dae1954f8757af02d58c7bbac9.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"538\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"39\">而在进一步的评测中，空间信息的重要性被进一步拔高：即便是像SIFT、HOG这样的经典空间特征，也能带来与PE-G等现代、更大规模视觉编码器相当、具有竞争力的提升。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_388d7b3fd6ed1dec74ac50e6f8dc4dac.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"771\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"40\">在测试得出结论后，论文又基于现有的表征对齐（REPA）框架进行分析和修改，提出了iREPA。</p>\n  <ul>\n   <li data-track=\"41\">投影层改进： 将REPA中标准的MLP投影层替换为一个简单的卷积层。</li>\n   <li data-track=\"42\">空间规范化： 为外部表征引入一个空间规范化层。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_92ce90a7ffad3195e359f50e06496bf7.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"223\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"43\">这些简单的修改（如在DeCo框架下的实现）旨在保留并强化空间结构信息，相比原始的REPA方法能显著提升性能。</p>\n  <p data-track=\"44\">值得一提的是iREPA，只需3行代码即可添加到任何表示对齐方法中，并且在各种训练方案（如REPA、REPA-E、Meanflow 以及最近推出的 JiT）中都能实现持续更快的收敛。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251216090708_109b2ecea1ece7f4b5c8e1a6953ab6e0.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"357\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"45\">参考链接</p>\n  <p data-track=\"46\">[1]https://x.com/YouJiacheng/status/1957073253769380258</p>\n  <p data-track=\"47\">[2]https://arxiv.org/abs/2512.10794</p>\n  <p data-track=\"48\">[3]https://x.com/sainingxie/status/2000709656491286870</p>\n  <p data-track=\"49\">[4]https://x.com/1jaskiratsingh/status/2000701128431034736</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谢赛宁团队受推特讨论启发，提出 iREPA，发现图像生成的质量主要由视觉编码器的空间结构而非全局语义决定，且该方法仅需 3 行代码即可显著提升性能。",
+  "oneSentenceSummary": "谢赛宁团队受推特讨论启发，提出 iREPA，发现图像生成的质量主要由视觉编码器的空间结构而非全局语义决定，且该方法仅需 3 行代码即可显著提升性能。",
+  "summary": "本文介绍了谢赛宁团队的新作 iREPA，其灵感来源于一次推特上的学术辩论。研究通过大规模定量分析，推翻了传统观念，发现视觉编码器在图像生成任务中，空间结构信息（而非全局语义信息，如 ImageNet-1K 分类准确率）才是决定生成质量的关键驱动力。甚至高分类准确率的模型可能生成更差的效果。iREPA 基于此研究，对现有表征对齐（REPA）框架进行简单修改，通过引入卷积层和空间规范化，显著提升了图像生成性能，并且仅需 3 行代码即可集成到现有方法中，实现更快收敛。文章还强调了开放、即时、可纠错的线上学术讨论对于科学发现的重要价值。",
+  "mainPoints": [
+    {
+      "point": "图像生成质量主要由视觉编码器的空间结构决定，而非全局语义信息。",
+      "explanation": "研究通过实验数据表明，增强全局语义信息的编码器（如在 ImageNet-1K 上分类准确率高）反而可能导致生成性能下降，空间自相似性高的表征才能带来更好的生成效果。"
+    },
+    {
+      "point": "iREPA 通过简洁的修改，有效强化了空间结构信息并提升生成性能。",
+      "explanation": "iREPA 在 REPA 框架中引入卷积层和空间规范化，这些仅需 3 行代码的改动，能显著改善现有表征对齐方法的收敛速度和生成效果。"
+    },
+    {
+      "point": "开放的线上学术讨论是激发创新和科学发现的有效途径。",
+      "explanation": "文章通过谢赛宁与网友的辩论最终催生新论文的案例，强调了开放、即时、可纠错的学术交流模式对于推动科学进步的积极作用。"
+    }
+  ],
+  "keyQuotes": [
+    "更好的全局语义信息并不等于更好的生成，空间结构（而非全局语义）才是表征生成性能的驱动力。",
+    "更大的视觉编码器反而可能带来更差的生成性能。",
+    "将 REPA 中标准的 MLP 投影层替换为一个简单的卷积层。",
+    "值得一提的是 iREPA，只需 3 行代码即可添加到任何表示对齐方法中，并且在各种训练方案（如 REPA、REPA-E、Meanflow 以及最近推出的 JiT）中都能实现持续更快的收敛。"
+  ],
+  "tags": [
+    "视觉编码器",
+    "图像生成",
+    "空间结构",
+    "REPA",
+    "深度学习"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1880,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765868611000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 07:03:31"
+}

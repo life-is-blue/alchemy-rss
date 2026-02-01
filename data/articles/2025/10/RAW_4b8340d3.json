@@ -1,0 +1,53 @@
+{
+  "id": "RAW_4b8340d3",
+  "title": "GitHub MCP 注册中心：AI 工具发现与部署中心",
+  "url": "https://www.infoq.com/news/2025/10/github-mcp-registry/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-13 14:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has recently launched its <a href=\"https://github.blog/ai-and-ml/github-copilot/meet-the-github-mcp-registry-the-fastest-way-to-discover-mcp-servers/\">Model Context Protocol (MCP) Registry</a>, designed to help developers discover and use the AI tools directly from within their working environment. The registry currently <a href=\"https://github.com/mcp\">lists over 40 MCP servers</a> from Microsoft, GitHub, Dynatrace, Terraform, and many others.</p>\n   <p>According to GitHub, the registry aims to ease the process for developers connecting their AI agents to external tools via MCP. Indeed, as the company says, MCP server are spread across multiple registries and repositories, with relevant information often buried in community threads. At the same time, MCP server providers face the burden of publishing and documenting their tools across different platforms.</p>\n   <blockquote>\n    <p>With GitHub already home to most MCP servers, the MCP Registry makes them dramatically easier to discover, explore, and use — helping developers find the right tools faster and contribute to a more open, interoperable ecosystem.</p>\n   </blockquote>\n   <p>At launch, GitHub MCP Registry features a curated list of MCP servers created by GitHub partners and the open-source community. Visiting the link associated to an MCP server takes you to a custom view of its repository, with the README prominently displayed and a one-click button to install the server in VS Code or VS Code Insiders. The registry also gives a clear overview of a server's popularity through GitHub stars and community activity metrics.</p>\n   <p>The GitHub MCP server registry is not the only existing platform addressing MCP server discovery and deployment. In particular, Docker launched its <a href=\"https://www.infoq.com/news/2025/04/docker-mcp-catalog-toolkit/\">Docker MCP catalog</a> a few months ago. While still in beta, the Docker MCP catalog includes a few hundreds MCP servers packaged as Docker images and ready to be deployed as containers. Similarly, Postman, the popular platform to build and using web APIs, also maintains an <a href=\"https://www.postman.com/getmcp/public-mcp-servers/overview\">MCP server catalog</a>.</p>\n   <p>Another notable platform is the <a href=\"https://github.com/modelcontextprotocol/registry/\">OSS MCP community registry</a>, which despite being independently managed, has a close relationship with the GitHub MCP Registry. GitHub explains that developers will publish their MCP servers to the OSS MCP community registry for them to become automatically available through GitHub's MCP registry. However, it is worth noting that the OSS MCP community registry lists over 1,000 self-published servers, whereas GitHub's registry only includes slightly over 40 curated entries. GitHub hasn't clarified whether or when all MCP servers currently listed under the OSS will also appear under its own registry.</p>\n   <p>Introduced by Anthropic, the <a href=\"https://www.infoq.com/news/2024/12/anthropic-model-context-protocol/\">Model Context Protocol is an open standard</a> for integrating external resources and tools into LLM-centered apps. Built on a client-server architecture, MCP enables an app to use an MCP client to connect to MCP servers that provide access to datasources or external tools. Since its introduction, MCP has seen wide adoption, most recently from GitHub and Cloudflare, and has inspired the creation of several static and dynamic MCP server catalogs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub MCP Registry Offers a Central Hub for Discovering and Deploying MCP Servers\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/github-mcp-registry/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760364000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub MCP 注册中心助力开发者在工作环境中更便捷地发现和部署 AI 工具。",
+  "oneSentenceSummary": "GitHub MCP 注册中心助力开发者在工作环境中更便捷地发现和部署 AI 工具。",
+  "summary": "GitHub 推出了模型上下文协议 (MCP) 注册中心，旨在简化开发者直接从开发环境中查找和使用 AI 工具（MCP 服务器）的方式。该注册中心目前收录了来自主要行业参与者的 40 多个精选 MCP 服务器，解决了 MCP 服务器信息分散在各个平台和存储库中的问题。主要功能包括每个服务器的突出 README 显示、VS Code 的一键安装，以及通过 GitHub Stars 了解服务器受欢迎程度。文章还将 GitHub 的注册中心置于更广泛的背景下，提到了 Docker 的 MCP 目录、Postman 的 MCP 服务器目录以及更大的 OSS MCP 社区注册中心等竞争对手，GitHub 的注册中心从中获取服务器，尽管列出的条目数量存在差异（1000 多个与 40 多个精选）。Anthropic 引入的模型上下文协议 (MCP) 本身被强调为一种开放标准，有助于将外部资源和工具集成到 LLM 应用中，基于客户端-服务器架构。",
+  "mainPoints": [
+    {
+      "point": "GitHub 的 MCP 注册中心集中了开发者 AI 工具的发现和部署。",
+      "explanation": "该注册中心为查找 MCP 服务器提供了一个中心枢纽，简化了访问和集成到开发者工作流程中，尤其方便 VS Code 用户，提供一键安装功能。"
+    },
+    {
+      "point": "该注册中心解决了 MCP 服务器信息在各个平台上的碎片化问题。",
+      "explanation": "通过提供精选且易于发现的列表，GitHub 旨在减轻开发者和提供商的负担，从而促进更具互操作性的 AI 生态系统。"
+    },
+    {
+      "point": "模型上下文协议 (MCP) 是一种将外部资源集成到 LLM 应用程序中的开放标准。",
+      "explanation": "由 Anthropic 开发的 MCP 使用客户端-服务器架构使 AI 应用程序能够连接到外部数据源和工具，从而增强 LLM 的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "由于 GitHub 已经是大多数 MCP 服务器的所在地，因此 MCP 注册中心使它们更容易被发现、探索和使用，开发者可以更快地找到合适的工具，并为更开放、可互操作的生态系统做出贡献。",
+    "访问与 MCP 服务器关联的链接会将您带到其存储库的自定义视图，其中 README 突出显示，并提供一个一键式按钮，用于在 VS Code 或 VS Code Insiders 中安装服务器。",
+    "由 Anthropic 引入的模型上下文协议 (MCP) 是一种将外部资源和工具集成到基于 LLM 的应用程序中的开放标准。"
+  ],
+  "tags": [
+    "AI 开发",
+    "模型上下文协议 (MCP)",
+    "LLM 集成",
+    "开发者工具",
+    "AI 代理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 455,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760364000000,
+  "publishDateStr": "2025-10-13",
+  "publishDateTimeStr": "2025-10-13 14:00:00"
+}

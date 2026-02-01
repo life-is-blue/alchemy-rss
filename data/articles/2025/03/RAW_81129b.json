@@ -1,0 +1,53 @@
+{
+  "id": "RAW_81129b",
+  "title": "DeepSeek 推出后，移动端 AI 风向要变",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-03-17",
+  "date": "2025-03-03 13:07:09",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote data-author-name=\"\" data-content-utf8-length=\"32\" data-source-title=\"\" data-type=\"2\" data-url=\"\">\n   <section>\n    <section>\n     或许下一波 AI 创新，不是比谁的模型更大，而是比谁的模型离你更近。\n    </section>\n   </section>\n  </blockquote>\n  <section>\n   DeepSeek R1 正在对整个科技领域产生巨大影响，颠覆人们有关 AI 的认知。在移动端，革新正在快速发生。\n  </section>\n  <section>\n   2 月 20 日，高通发布了最新 AI 白皮书<strong>《AI 变革正在推动终端侧推理创新》</strong>，介绍了端侧高质量小语言模型和多模态推理模型的前景。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474018\" data-ratio=\"0.5675925925925925\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8790378e-5ef6-4561-5b00-cadcd009c900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/4a6ee8a0-e3ad-46c6-a11f-d8a245f84c68/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   在 AI 逐步大规模落地的过程中，我们已经逐渐意识到端侧的大模型推理可以为人们带来更高的可靠性，同时也可以提升数据安全性。而随着技术的快速发展，其还有更多的优势正在显现。\n  </section>\n  <section>\n   高通指出，四大趋势正在推动端侧 AI 变革：\n  </section>\n  <ul>\n   <li>\n    <p><strong>当前先进的 AI 小模型已具有卓越性能。模型蒸馏和新型 AI 网络架构等新技术能够在不影响质量的情况下简化开发流程，让新模型的表现快速提升，接近云端大模型；</strong></p></li>\n   <li>\n    <p><strong>模型参数规模正在快速缩小。先进的量化和剪枝技术使开发者能够在不对准确性产生实质影响的情况下，缩小模型参数规模；</strong></p></li>\n   <li>\n    <p><strong>开发者能够在边缘侧打造更丰富的应用。高质量 AI 模型快速激增，这意味着文本摘要、编程助手和实时翻译等特性在智能手机等终端上的普及，让 AI 能够支持跨边缘侧规模化部署的商用应用；</strong></p></li>\n   <li>\n    <p><strong>AI 正在成为新的 UI。个性化多模态 AI 智能体将简化交互，高效地跨越各种应用完成任务。</strong></p></li>\n  </ul>\n  <section>\n   在前沿大模型技术不断取得突破的同时，科技行业也已经开始将精力投入到边缘侧的高效部署当中去。在训练成本下降、快速推理部署以及针对边缘环境的创新推动下，业内已经催生了大量更智能、更小型、更高效的模型。\n  </section>\n  <section>\n   这些技术进步正在逐渐传导到芯片厂商、开发者和消费者身边，形成新的趋势。\n  </section>\n  <section>\n   <strong>模型向小已成为发展必然</strong>\n  </section>\n  <section>\n   纵观最近几年的大语言模型发展，我们可以清楚地看到一些显著的趋势，包括从拼参数规模到拼应用、从单一模态到多模态、轻量化模型的崛起以及向终端侧部署的倾斜，等等。\n  </section>\n  <section>\n   尤其是最近 DeepSeek V3、R1 的推出，更体现了 AI 行业的这些发展趋势，由此带来的训练成本下降、快速推理部署和针对边缘环境的创新正在推动高质量小模型的激增。深究其原因，如今向小模型的转变是几个方面综合作用的结果。\n  </section>\n  <section>\n   一是<strong>模型网络架构不断创新</strong>，从最开始主流的 Transformer 到后来的混合专家模型（MoE）和状态空间模型（SSM）并存，大模型开发过程中的计算开销和功耗不断降低。因此，越来越多的模型开始采用新架构。\n  </section>\n  <section>\n   二是<strong>知识蒸馏技术的使用</strong>，这成为了开发高效「基础和特定任务」小模型的关键。通过将复杂的教师模型的知识迁移到更小的学生模型中，一方面显著减少了模型的参数量和计算量，简化了训练过程，占用的存储空间也更少，适合部署在资源受限的设备上；另一方面，学生模型同样可以获得丰富的知识，并保证模型准确性和泛化能力。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474019\" data-ratio=\"0.612037037037037\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a0fc45b5-1a91-450e-e8aa-af15a51fb000/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/4adf65c4-204c-4b2c-b8ef-ade03a6194e4/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Meta Llama 700 亿参数模型和 DeepSeek 对应蒸馏模型的 LiveBench AI 基准测试平均结果对比。来源：LiveBench.ai</sup></em>\n  </section>\n  <section>\n   三是<strong>量化、压缩和剪枝等大模型优化和部署技术持续改进</strong>，进一步促进了模型规模向小。这些技术同样可以显著降低模型的计算和存储需求，同时保持较高的性能。\n  </section>\n  <section>\n   有了以上底层架构和技术层面的创新进步，小模型的能力正在趋近、甚至可以超越体量大得多的前沿大模型。比如在 GPQA 基准测试中，基于通义千问模型和 Llama 模型的 DeepSeek 蒸馏版本取得了与 GPT-4o、Claude 3.5 Sonnet 和 GPT-o1 mini 等类似或更高的表现。\n  </section>\n  <section>\n   <img data-imgfileid=\"503474020\" data-ratio=\"0.37407407407407406\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b94803fb-f048-4ae9-95b7-d07c13a80e00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a35ad12e-1e29-4569-b6aa-39d5af8e1f80/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;来源：DeepSeek，2025 年 1 月。</sup></em>\n  </section>\n  <section>\n   从整个行业的角度看，技术的进步推动了高质量生成式 AI 模型的激增。根据 Epoch AI 统计，在 2024 年发布的 AI 模型中，千亿规模以下的模型超过了 75%，成为主流。\n  </section>\n  <section>\n   <em><img data-imgfileid=\"503474021\" data-ratio=\"0.487962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/551d9631-9c6f-4921-4849-372649fc1200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/f9fb138f-fa57-4557-8dcb-17e30c5deb91/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></em>\n  </section>\n  <section>\n   <em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;图源：Epoch AI，2025 年 1 月。</sup></em>\n  </section>\n  <section>\n   因此，在成本与算力需求、性能权衡等多方面的驱使下，小模型正取代大模型成为众多企业和开发者的首选。当前，包括 DeepSeek R1、Meta Llama 等在内的主流模型都推出了小模型版本，并在主流基准测试和领域特定任务测试中表现出色。\n  </section>\n  <section>\n   特别地，小模型表现出的更快推理速度、更少内存占用和更低功耗，使得这类模型成为手机、PC 等终端侧部署的首选。\n  </section>\n  <section>\n   在 AI 领域里，终端侧模型参数通常在 10 亿到 100 亿之间，而最近发布的一些新模型参数规模已经下降到 20 亿以下。随着模型参数规模的不断下降、小模型质量的提升，参数已不再是衡量模型质量的重要指标。\n  </section>\n  <section>\n   相对的，现在的旗舰智能手机运行内存配置在 12GB 以上，理论上已经足够支撑很多模型的运行。同时，针对主流配置手机的小模型也在不断出现。\n  </section>\n  <section>\n   而随着高质量小模型加快在手机、PC 等终端侧大规模部署的步伐，又进一步推动了 AI 推理功能以及多模态生成式 AI 应用（比如文档摘要、AI 图像生成、实时语言翻译等）在终端侧的广泛落地，为 AI 技术向更广泛端侧普通用户的普及提供了重要支持。\n  </section>\n  <section>\n   在推动端侧 AI 落地的过程中，高通一直在为行业铺路。\n  </section>\n  <section>\n   <strong>AI 推理时代，高通将引领行业变革</strong>\n  </section>\n  <section>\n   高通凭借高能效的芯片设计、超前部署的 AI 软件栈及面向边缘应用的全面开发支持等技术专长，正在引领这一变革并从中受益。\n  </section>\n  <section>\n   高通技术公司高级副总裁兼技术规划和边缘解决方案业务总经理马德嘉（Durga Malladi）表示，如今的小模型性能已经超越了一年前推出的云端大模型，「我们关注的焦点已不再是模型本身，而是演进到终端上的应用发展。随着终端侧可以运行越来越多高质量的 AI 模型，AI 应用开始涌现。AI 正在重新定义所有终端的用户界面，这也意味着 AI 正在成为终端侧新的 UI。」\n  </section>\n  <section>\n   <img data-imgfileid=\"503474022\" data-ratio=\"0.5611111111111111\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/29052e3d-27dd-4040-f62e-856983916200/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/6ad81657-86be-4b34-bfb4-d30df5130d6b/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   高通认为，在 AI 定义的新时代，从包括语音、文本、图像的多种传感器数据，将会首先经由 AI 智能体进行处理 —— 而不是直接应用于某个 App。智能体获取信息后会将任务分配给不同的后台应用，这个过程对于用户来说是无感的。\n  </section>\n  <section>\n   在常规的手机系统里，开发者可用的终端侧模型数量正在激增，AI 智能体需要从终端侧能够获取的大量 AI 模型中选择所需的模型完成任务。这个过程将会大幅降低交互的复杂性，实现高度个性化的多模态能力，并可以跨越各种应用完成任务。\n  </section>\n  <section>\n   对于终端用户来讲，AI 智能体就是唯一在前端与他们交互的 UI，而所有实际应用的处理都是在后台完成的。\n  </section>\n  <section>\n   利用高质量小模型的能力，智能手机这样的终端可以实现交互的创新。高通在 AI 从训练向大规模推理转型，以及从云端到端的扩展方面，具有一定战略优势：\n  </section>\n  <ul>\n   <li>\n    <p>高性能、高能效芯片设计：高通提供了集成定制 CPU、NPU、GPU 和低功耗子系统的行业领先系统级芯片，能够在终端侧提供高性能、高能效 AI 推理，在保持电池续航和整体能效表现的同时处理复杂 AI 任务；</p></li>\n   <li>\n    <p>覆盖所有关键边缘细分领域的可扩展性：高通的可扩展硬件、软件解决方案已赋能数十亿智能手机、汽车、XR 头显和眼镜、PC 以及工业物联网等终端，为广泛的变革性 AI 体验提供了基础；</p></li>\n   <li>\n    <p>活跃的生态系统：通过高通 AI 软件栈、高通 AI Hub 和战略性的开发者协作，高通面向跨不同边缘终端领域的模型部署提供工具、框架和 SDK，赋能开发者在边缘侧加速采用 AI 智能体和应用。</p></li>\n  </ul>\n  <section>\n   高通既预判了终端侧模型的爆发，同时也推动了边缘 AI 推理在跨终端设备上的落地。\n  </section>\n  <section>\n   <strong>高通公司总裁兼 CEO 安蒙（Cristiano Amon）在近期的一季度财报电话会议中分享了他对当前 AI 行业趋势的看法：「近期的 DeepSeek R1 及其他类似模型展示了 AI 模型的发展速度越来越快，它们变得更小、更强大、更高效，并且可以直接在终端侧运行。事实上，DeepSeek R1 的蒸馏模型在发布仅几天内就能在搭载骁龙平台的智能手机和 PC 上运行。」</strong>\n  </section>\n  <section>\n   随着进入 AI 推理时代，模型训练仍将在云端进行，但推理将越来越多地在终端侧运行，使 AI 变得更便捷、可定制且高效。这将促进更多有针对性的专用模型和应用的开发及采用，并因此推动各类终端对计算平台的需求。\n  </section>\n  <section>\n   DeepSeek R1 的爆火恰如其分地验证了此前高通对终端侧 AI 的判断。高通凭借其先进的连接、计算和边缘 AI 技术以及独特的产品组合，不仅在终端侧 AI 领域保持了高度的差异化优势，还为其实现混合 AI 愿景提供了强有力的支持。\n  </section>\n  <section>\n   未来，端侧 AI 将会在各个行业中发挥越来越重要的作用。\n  </section>\n </body>\n</html>",
+  "aiSummary": "DeepSeek R1 加速移动端 AI 发展，预示着端侧 AI 风向转变，高通等厂商积极布局。",
+  "oneSentenceSummary": "DeepSeek R1 加速移动端 AI 发展，预示着端侧 AI 风向转变，高通等厂商积极布局。",
+  "summary": "文章讨论了在 DeepSeek R1 等小模型涌现的背景下，移动端 AI 的发展机遇与挑战，以及高通等厂商的应对策略。文章深入探讨了模型小型化的原因，包括模型架构创新、知识蒸馏技术和模型优化部署技术的进步。同时，强调了高通在推动端侧 AI 落地过程中的作用，包括其高性能芯片设计、AI 软件栈和对开发者的支持。AI 将更深入地集成到移动设备中，改变用户交互方式。",
+  "mainPoints": [
+    {
+      "point": "端侧 AI 发展迎来新机遇，模型小型化成为关键趋势",
+      "explanation": "模型架构创新、知识蒸馏和模型优化技术的发展，使得小模型在性能上能够媲美甚至超越大型模型，更适合在移动端部署。"
+    },
+    {
+      "point": "高通在推动端侧 AI 落地方面发挥重要作用",
+      "explanation": "高通通过其高性能芯片设计、AI 软件栈和对开发者的支持，正在引领端侧 AI 的变革，并推动 AI 在智能手机等终端上的广泛应用。"
+    },
+    {
+      "point": "AI 正在重新定义终端用户界面",
+      "explanation": "AI 智能体将处理多种传感器数据，并将任务分配给不同的后台应用，从而简化交互，实现高度个性化的多模态能力。"
+    }
+  ],
+  "keyQuotes": [
+    "或许下一波 AI 创新，不是比谁的模型更大，而是比谁的模型离你更近。",
+    "AI 正在成为终端侧新的 UI。",
+    "近期的 DeepSeek R1 及其他类似模型展示了 AI 模型的发展速度越来越快，它们变得更小、更强大、更高效，并且可以直接在终端侧运行。"
+  ],
+  "tags": [
+    "端侧 AI",
+    "边缘计算",
+    "移动端 AI",
+    "DeepSeek R1",
+    "高通"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 89,
+  "wordCount": 3023,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741007229000,
+  "publishDateStr": "2025-03-03",
+  "publishDateTimeStr": "2025-03-03 13:07:09"
+}

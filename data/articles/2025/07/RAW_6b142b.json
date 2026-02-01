@@ -1,0 +1,58 @@
+{
+  "id": "RAW_6b142b",
+  "title": "吴恩达老师分享的这个做 MVP（最简可行产品，minimum viable product） 的技巧",
+  "url": "https://baoyu.io/translations/nda-mvp-building-tips",
+  "date": "2025-07-04 22:12:33",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.deeplearning.ai/the-batch/issue-308/\">a tip for getting more practice building with AI</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"ur2423z6lx\">吴恩达老师分享的这个做 MVP（最简可行产品，minimum viable product, MVP） 的技巧非常有效，我们常常有很多想法，但是因为想法太大而没有动手，但如果把想法精简成一个1个小时内就能借助AI快速做出来的 MVP，就能做出来有意思的东西，很快得到反馈，之后你可以继续完善项目而不是“胎死腹中”。</p>\n   <p data-id=\"tguo1pbpax\">吴恩达：</p>\n   <p data-id=\"k8rqysl80c\">我想分享一个能帮助你更好地利用AI进行项目实践的小技巧，不论你是在用AI的“积木块”搭建应用，还是借助AI代码助手快速开发强大的程序，这个技巧都能帮助你：</p>\n   <p data-id=\"xhjtz6idy0\">如果你的时间有限，就缩减项目的范围，直到项目小到你在现有时间里能完成为止。</p>\n   <p data-id=\"sk6k326u9j\">假如你只有一个小时，那就找出你想要实现的某个创意中的一小部分，确保这一小部分能在一小时内完成。借助现代的代码助手（例如我目前最爱的开发工具Anthropic的Claude Code），你可能会惊讶地发现，哪怕只有很短的时间，你也能做出很多有意思的东西。这种方法可以帮助你迅速上手，之后你随时都能继续完善项目。</p>\n   <p data-id=\"1423n923ga\">要想掌握AI应用的开发技能，多数人都需要：</p>\n   <p data-id=\"3c1ygem23k\">（i）学习相关的技术知识，比如参加一些线上AI课程。</p>\n   <p data-id=\"r87j41ztrv\">（ii）多进行实践练习。</p>\n   <p data-id=\"7k1gaixqs2\">我认识很多开发者，他们（我自己也经历过！）经常只是不断地思考一个创意，却数月都没有真正动手实现，因为总觉得没有足够的时间去开始。如果你也有类似的问题，我建议你试试这个方法：不断缩减项目的初始范围，直到找到一个你马上能着手的小部分。</p>\n   <p data-id=\"5obuxs7nh9\">举一个我亲身经历的小例子，来更好地说明一下：</p>\n   <p data-id=\"n4xgtjngfs\">我经常会利用周末尝试一些小巧有趣的项目，这些项目不一定有多大的前景，但却让我乐在其中并有所收获。</p>\n   <p data-id=\"fitedvpeyc\">有一次，我有这样一个点子：</p>\n   <p data-id=\"dyht1b3taz\">很多人害怕公开演讲，而演讲练习往往很难安排，因为你很难找到大量听众。因此我想到：能否做一个虚拟的观众模拟器，在屏幕上模拟出几十甚至几百个虚拟观众，让用户对着他们练习演讲呢？</p>\n   <p data-id=\"27qi3wnei9\">一个周六下午，我在咖啡馆里碰巧有几个小时的空闲，于是我决定尝试一下这个“观众模拟器”。然而，我并不擅长复杂的图形编程，于是我决定大幅缩减项目的范围：</p>\n   <p data-id=\"zex9tcl6sh\">（a）把原本数十个虚拟观众缩减为只模拟一个观众（之后再通过复制扩展到多个）。</p>\n   <p data-id=\"sc7jegp7or\">（b）省去AI自动化的反馈机制，改为让一个真实的人在幕后手动选择虚拟观众的反应（类似Wizard of Oz原型方法）。</p>\n   <p data-id=\"sckd5pnur7\">（c）使用非常简单的2D图像而非复杂的图形技术。</p>\n   <p data-id=\"f8jfacajdf\">在几个代码助手的辅助下，我很快完成了一个基础版本。最终呈现的虚拟观众只是一个能微微移动和眨眼的简单2D头像，远没有我最初设想的那么精致。但即便如此，我也很高兴完成了这个基础版本，因为：</p>\n   <p data-id=\"wmvwyfceak\">它推动了我的项目进展，让我更深入地思考设计方案。</p>\n   <p data-id=\"ysreguhgrv\">让我学习了一些基础的图形编程知识。</p>\n   <p data-id=\"6x4t8ucv08\">拥有一个简单的原型后，我能够展示给朋友看，快速收集用户反馈，帮助我更清晰地判断产品的前景。</p>\n   <p data-id=\"rmxrwmcipe\">为什么这样做很有效？</p>\n   <p data-id=\"h7w2pysfs8\">我在笔记本电脑上保存了很多有趣的创意清单，它们大部分都需要超过几个小时的开发时间。然而，通过不断缩减它们的初始范围，我总能快速启动一些小项目。这 种 <strong>“快速起步”的方式</strong> 给我带来了以下的好处：</p>\n   <p data-id=\"i58glrp4lu\">能让我迅速试验创意，并决定哪些值得继续投入精力。</p>\n   <p data-id=\"zrurhhcz9r\">我能够在广泛的项目实践中锻炼不同领域的技能。</p>\n   <p data-id=\"z93rie59bw\">更重要的是，这种方法帮助我迅速将想法从头脑里释放出来，让潜在用户能及早接触到产品原型并提供反馈，加速项目的迭代与发展。</p>\n   <p data-id=\"3uo6ida6j2\">希望这个技巧对你也有帮助，下次当你觉得“没有足够时间”时，不妨先试试“从极小的范围开始”！</p></div>\n \n",
+  "aiSummary": "吴恩达分享借助 AI 工具快速构建 MVP 的技巧，通过缩减项目范围加速创意验证和学习过程",
+  "oneSentenceSummary": "吴恩达分享借助 AI 工具快速构建 MVP 的技巧，通过缩减项目范围加速创意验证和学习过程",
+  "summary": "文章介绍了吴恩达提出的一个实用技巧：通过大幅缩减项目范围，将创意精简为 1 小时内可完成的 MVP（最简可行产品），借助 AI 工具快速实现。这种方法解决了开发者常因项目太大而迟迟无法启动的问题。文章详细展示了吴恩达开发'虚拟观众模拟器'的案例，从最初设想数十个虚拟观众缩减为单个简单 2D 图像，并采用 Wizard of Oz 原型方法（由真人手动控制反馈）。这种'快速起步'方式能加速创意验证、促进技能学习，并及早获得用户反馈。通过简化功能（如减少观众数量、使用简单技术）快速构建原型，开发者可以立即动手并持续迭代。",
+  "mainPoints": [
+    {
+      "point": "缩减项目范围至 1 小时内可完成，快速构建 MVP",
+      "explanation": "通过大幅简化初始功能，开发者可以快速启动项目，避免因项目太大而迟迟无法开始的问题"
+    },
+    {
+      "point": "借助 AI 工具快速实现简化版原型",
+      "explanation": "使用现代代码助手如 Claude Code，可以在极短时间内构建出可工作的原型，验证创意可行性"
+    },
+    {
+      "point": "采用 Wizard of Oz 原型方法加速验证",
+      "explanation": "通过人工模拟复杂功能（如虚拟观众反馈），快速测试核心概念而不必等待完整开发"
+    },
+    {
+      "point": "快速起步带来多重价值",
+      "explanation": "包括加速创意验证、促进技能学习、及早获得用户反馈，并帮助判断项目是否值得继续投入"
+    }
+  ],
+  "keyQuotes": [
+    "通过不断缩减它们的初始范围，我总能快速启动一些小项目",
+    "如果你的时间有限，就缩减项目的范围，直到项目小到你在现有时间里能完成为止",
+    "这种方法帮助我迅速将想法从头脑里释放出来，让潜在用户能及早接触到产品原型并提供反馈，加速项目的迭代与发展",
+    "省去 AI 自动化的反馈机制，改为让一个真实的人在幕后手动选择虚拟观众的反应（类似 Wizard of Oz 原型方法）"
+  ],
+  "tags": [
+    "MVP",
+    "AI开发",
+    "原型验证",
+    "吴恩达",
+    "快速创意验证"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1386,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751667153000,
+  "publishDateStr": "2025-07-04",
+  "publishDateTimeStr": "2025-07-04 22:12:33"
+}

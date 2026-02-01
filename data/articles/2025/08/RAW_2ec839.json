@@ -1,0 +1,54 @@
+{
+  "id": "RAW_2ec839",
+  "title": "Manus 大升级，100 多个智能体并发给你做任务 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-01-4",
+  "date": "2025-08-01 02:41:55",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>Deep Research 之后，是 Wide Research？</p>\n  </blockquote>\n  <p>本周四，知名初创公司 Manus 推出了一项重要新功能，可以通过向上百协同工作的 AI 智能体分配任务来进行广泛的研究。</p>\n  <section>\n   <img data-imgfileid=\"503499477\" data-ratio=\"0.8088737201365188\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fc0b4f3a-4508-462a-49bf-5c6d9cc49600/public\" data-type=\"png\" data-w=\"879\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/f6365cde-3b5c-4a3b-b282-6fc808cea534/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>今年早些时候，Manus 的多智能体平台改变了人们应用 AI 工具的方式。不过现在，这家创业公司正在试图开发一种与大模型深度思考 Deep Research 同样重要的新能力。</p>\n  <p>如今的很多大模型工具，不论是 DeepSeek 还是 ChatGPT 都包含「深度研究」选项，可以驱动智能体进行长达数分钟甚至数小时的广泛、深入的网络研究，并帮助人类用户撰写引用充分、详尽的报告，模型推理时投入的算力越多，思考得越多，推理能力就越强。</p>\n  <p>最近各家的大模型技术升级则包含了多智能体和自动化的工具选择，这次 Manus 选择一步到位，尝试了大规模并行。</p>\n  <p>该公司刚刚宣布的「Wide Research」是一项新的实验功能，据说已经开发了两个月之久。它使用户能够利用并行 AI 智能体的功能执行大规模、大容量的任务 —— 一次甚至可以执行 100 多个智能体，而所有智能体都专注于完成单个任务（或一系列子任务，以实现上述总体目标）。</p>\n  <p>不过 Manus 所做的主要工作在于构建工具。此前有报道称，Manus 正在使用 Anthropic Claude 和阿里通义千问的模型来为其平台提供支持。</p>\n  <p>在官方 X 账户上发布的视频中，Manus 联合创始人兼首席科学家季逸超演示了使用 Wide Research 比较 100 款运动鞋的效果。</p>\n  <p>为了完成这项任务，Manus Wide Research 几乎立即启动了 100 个并发智能体 —— 每个 Agent 负责分析一款鞋的设计、定价和可用性。结果是几分钟内输出了以电子表格和网页格式提供的可排序矩阵。</p>\n  <p>它还可以对全球前 100 个 MBA 课程进行排名，或分析 1000 多支股票。Manus 表示，Wide Research 不仅限于数据分析，还可以用于设计探索等创造性任务。</p>\n  <p>在一个场景中，Manus 智能体同时生成了涵盖 50 种不同视觉风格的海报设计，并以可下载的 zip 文件形式返回设计结果。</p>\n  <p>Manus 在新产品博客中介绍，这种灵活性源于系统级的并行处理和智能体间通信方法。Wide Research 是优化虚拟化和智能体架构的第一个应用，能够将计算能力扩展到初始产品的 100 倍。该功能旨在在需要大规模分析的任务期间自动激活，无需手动调整或进行配置。</p>\n  <p>Wide Research 现已面向 Manus Pro 套餐用户开放，未来计划将逐步向 Plus 和 Basic 用户开放。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/75756f04-ae4a-4e60-479d-43ecb82f4400/public\" data-ratio=\"0.562962962962963\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503499478\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/bb1324cc-72ea-447e-a01a-278a764611df/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>此次发布，以及今年 3 月与通用智能体一起推出的 AI 基础设施共同推动了 Manus 将大模型智能体工具扩大为「个人云计算平台」的愿景。</p>\n  <p>在人们提出任务需求后，每个 Manus 会话都在专用虚拟机上运行，这是有史以来首次，用户能通过自然语言访问精心设计的云计算服务来完成日常任务，现在到了 Wide Research 阶段，则是通过对话来操作超级计算集群。Manus 认为这是实现真正的通用 AI 工作流的关键。</p>\n  <p>通过 Wide Research，人们可以使用 Manus 委托数十个甚至数百个子智能体进行研究或创造性探索。与具有预定义角色（例如经理、程序员或设计师）的传统多智能体系统不同，Wide Research 中的每个子智能体都是功能齐全的 Manus 实例，没有对任务进行定制化，可以独立运行并承担任何通用任务。</p>\n  <p>Manus 表示，这一架构决策为不受僵化模板约束的灵活、可扩展的任务处理打开了大门。</p>\n  <p>理论上这意味着，与其他大模型 AI 应用所展示的「深度研究」智能体相比，「并行研究」的速度更快，并且将产生一套超越研究报告的更好、更多样化的工作产品。不过尽管 Manus 将 Wide Research 宣传为智能体并行性的突破，但还没有直接证据能证明并行智能体的方法效果更好。</p>\n  <p>在新发布中，Manus 并未展示性能基准、效果对比或技术解释，以证明此方法的利弊。此外，它还缺乏关于子智能体之间如何协作、如何合并结果，以及该系统是否在速度、准确性或成本方面具有可衡量优势的详细信息。因此，Wide Research 相对于更简单方法的实际优势仍未得到证实。</p>\n  <p>虽然 Manus 表示 Wide Research 的落地让我们向通用 AI 智能体系统前进了一步，但用户们初步的使用也发现了一些问题。</p>\n  <p>例如在 Reddit 上就有人抱怨子智能体速度慢、消耗大量 token 以及在执行任务时情况可见性有限。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3a9de217-5f9a-4151-2918-9151bc5ac200/public\" data-ratio=\"0.7166666666666667\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503499479\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/03e7e31e-16dd-4c70-9629-923c9bc809ac/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>根据人们的初步使用经验，常见的痛点包括智能体之间缺乏协调协议、调试困难以及高负载期间性能不稳定。Manus 承认，Wide Research 仍处于实验阶段，目前可能会面临一些限制。</p>\n  <p>不过，Wide Research 的出现显然让我们在推动 AI 智能向前发展时有了新的选择，当其他公司还在努力应对子智能体协调和可靠性的技术挑战时，Manus 的方法已经可以用于实测了。</p>\n  <p>Manus 还表示，Wide Research 背后的基础设施将为未来的产品奠定基础，它解锁的远不止于研究能力。从本质上讲，Wide Research 是一个系统级的并行处理机制，以及一个智能体到智能体协作的协议。</p>\n  <p><sup>参考内容：</sup></p>\n  <p><sup>https://manus.im/zh-cn/blog/introducing-wide-research</sup></p>\n  <p><sup>https://venturebeat.com/ai/youve-heard-of-ai-deep-research-tools-now-manus-is-launching-wide-research-that-spins-up-100-agents-to-scour-the-web-for-you/</sup></p>\n  <p><sup>https://www.bloomberg.com/news/articles/2025-07-31/openai-challenger-manus-preps-big-upgrade-to-main-agent-platform</sup></p>\n </body>\n</html>",
+  "aiSummary": "Manus 推出“Wide Research”功能，通过并发运行上百个 AI 智能体，旨在进行大规模并行研究和创造性任务，将个人 AI 工作流推向“个人云计算平台”。",
+  "oneSentenceSummary": "Manus 推出“Wide Research”功能，通过并发运行上百个 AI 智能体，旨在进行大规模并行研究和创造性任务，将个人 AI 工作流推向“个人云计算平台”。",
+  "summary": "文章介绍了初创公司 Manus 的最新功能“Wide Research”，该功能允许用户同时启动上百个独立的 AI 智能体来执行大规模、高容量的任务，例如比较 100 款运动鞋或分析千支股票。与现有大模型普遍采用的“深度研究”（Deep Research）模式不同，“Wide Research”强调并行处理，每个子智能体都是一个功能齐全的 Manus 实例，能够独立运行并承担通用任务，从而实现更快速、多样化的工作成果。文章指出，Manus 的目标是将大模型智能体工具发展为“个人云计算平台”，即通过自然语言访问和操作超级计算集群来实现。尽管概念创新，但文章也客观指出，Manus 尚未提供性能基准、效果对比或详细技术解释来证明其优势，且用户初步反馈存在速度慢、Token 消耗大、协调性差和调试困难等问题。Manus 承认该功能仍处于实验阶段，但认为其背后的并行基础设施将为未来产品奠定基础。",
+  "mainPoints": [
+    {
+      "point": "Manus 推出“Wide Research”功能，实现百级 AI 智能体并发执行任务",
+      "explanation": "该功能通过大规模并行处理，使上百个独立且功能齐全的 AI 智能体同时工作，显著提升了处理大规模、高容量任务的效率和广度，超越了传统“深度研究”模式。"
+    },
+    {
+      "point": "每个子智能体作为独立的 Manus 实例，提供高度灵活性和可扩展性",
+      "explanation": "这种架构设计避免了预定义角色限制，使得智能体能够独立承担通用任务，为灵活、可扩展的任务处理打开了大门，是实现通用 AI 工作流的关键一步。"
+    },
+    {
+      "point": "“Wide Research”旨在将 AI 智能体工具演变为“个人云计算平台”",
+      "explanation": "通过自然语言访问和操作超级计算集群，Manus 致力于让用户通过对话实现对复杂计算资源的调度，推动 AI 应用从单一任务工具向综合性计算平台发展。"
+    }
+  ],
+  "keyQuotes": [
+    "Wide Research 使用户能够利用并行 AI 智能体的功能执行大规模、大容量的任务 ------ 一次甚至可以执行 100 多个智能体，而所有智能体都专注于完成单个任务。",
+    "与具有预定义角色（例如经理、程序员或设计师）的传统多智能体系统不同，Wide Research 中的每个子智能体都是功能齐全的 Manus 实例，没有对任务进行定制化，可以独立运行并承担任何通用任务。",
+    "在新发布中，Manus 并未展示性能基准、效果对比或技术解释，以证明此方法的利弊。",
+    "理论上这意味着，与其他大模型 AI 应用所展示的「深度研究」智能体相比，「并行研究」的速度更快，并且将产生一套超越研究报告的更好、更多样化的工作产品。"
+  ],
+  "tags": [
+    "AI智能体",
+    "多智能体系统",
+    "并行计算",
+    "AI工作流",
+    "Manus"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 1783,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1754016115000,
+  "publishDateStr": "2025-08-01",
+  "publishDateTimeStr": "2025-08-01 02:41:55"
+}

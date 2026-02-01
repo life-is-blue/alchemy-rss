@@ -1,0 +1,55 @@
+{
+  "id": "RAW_661868",
+  "title": "Grok 代码模型来了：限时免费用，速度超级快 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-29-2",
+  "date": "2025-08-29 02:10:19",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>速度比 GPT-5 快三倍，便宜六倍。</p>\n  </blockquote>\n  <p>本周四，马斯克的 xAI 正式推出了旗下的最新代码模型 Grok Code Fast 1。</p>\n  <section>\n   <img data-imgfileid=\"503504469\" data-ratio=\"0.5005675368898979\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20250829040949_281221\" data-type=\"png\" data-w=\"881\" type=\"block\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/96b3a4b3-3062-4752-9e7f-7aa46cc4ad5e/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 终于赶在了马斯克承诺的 8 月 deadline 之内。</sup></p>\n  <p>该模型也被认为是 Grok 4 的代码版本，旨在为「agentic 编程」（AI 自动执行编程任务）提供极速且经济的解决方案。在这一范式内，AI 在 IDE 内会自动调用工具（如 grep、终端、文件编辑）并完成代码任务。</p>\n  <p>xAI 表示，虽然如今的大语言模型（LLM）功能强大，但它们往往并非专为智能体编码工作流而设计，对此，工程师们构建了更灵活、响应更快的解决方案，针对日常任务进行了优化。</p>\n  <p>grok-code-fast-1 是从零开始训练的语言模型，采用全新的模型架构。为了奠定坚实的基础，xAI 精心构建了一个包含丰富编程相关内容的预训练语料库。在训练后也精选了能够反映真实世界拉取请求和编码任务的高质量数据集。</p>\n  <p>在整个训练过程中，xAI 与发布合作伙伴密切合作，不断完善和优化模型在平台上的行为。据介绍，grok-code-fast-1 已经熟练掌握了 grep、终端和文件编辑等常用工具的使用方法，因此应该能够在人们常用的 IDE 中轻松上手。</p>\n  <p>本周发布时，<strong>xAI 宣布在大量平台上免费提供一周的 grok-code-fast-1，包括 GitHub Copilot、Cursor、Cline、Roo Code、Kilo Code、opencode 和 Windsurf</strong>。</p>\n  <p>其实在本周早些时候，该模型已在部分平台上静默上线了，当时的代号为 Sonic。</p>\n  <p>在博客文章与模型卡中，xAI 介绍了新模型的一些特性，但模型架构、数据和微调的细节并不详尽。xAI 的推理和超级计算团队开发了多项创新技术，显著提升了代码模型的服务速度，创造了独特的响应式体验。在人们读完 AI 思考轨迹的第一段之前，模型就已经调用了数十种工具。</p>\n  <p>xAI 还投入了大量精力进行快速缓存优化，在各个合作伙伴的平台上运行时，缓存命中率通常超过 90%。</p>\n  <p>grok-code-fast-1 在整个软件开发栈中都非常灵活，尤其擅长 TypeScript、Python、Java、Rust、C++ 和 Go。它可以在极少的监督下完成常见的编程任务，从构建从零到一的项目、提供对代码库问题的深刻解答，到执行精准的错误修复，不一而足。</p>\n  <p>比如使用 grok-code-fast-1，Danny Limanseta 一天之内就制作出了这样的小游戏：</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250829040949_a1d6c6\" data-ratio=\"0.6775884665792923\" data-s=\"300,640\" data-type=\"gif\" data-w=\"763\" type=\"block\" data-imgfileid=\"503504471\" data-original-style=\"width: 468px;height: 317px;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/fee07149-015a-4801-928e-07fb233c281f/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>grok-code-fast-1 的价格也相对便宜：</p>\n  <ul>\n   <li>\n    <p>每百万个输入 token 0.20 美元</p>\n   </li>\n   <li>\n    <p>每百万个输出 token 1.50 美元</p>\n   </li>\n   <li>\n    <p>每百万个缓存输入 token 0.02 美元</p>\n   </li>\n  </ul>\n  <p>它专为应对开发人员日常面临的任务而设计，在性能和成本之间实现了平衡，可以认为是快速高效地处理常见编码任务的多功能之选。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250829040949_57d751\" data-ratio=\"0.5092592592592593\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503504472\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/6ea85aeb-3cce-46a2-a356-170f78f02ec3/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在 SWE-Bench-Verified 的完整子集测试中，grok-code-fast-1 使用内部测试工具获得了 70.8% 的得分，目前它在这个位置：</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250829040949_ae65e8\" data-ratio=\"0.49444444444444446\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503504473\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/5e34fd29-55bc-45e1-a90a-bd4301266a06/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>可见分数已经接近目前公认代码能力最强的 Claude 4 系列。不过 xAI 还表示，在开发 grok-code-fast-1 时，他们更多的以现实世界的人工评估为指导，专注于可用性和用户满意度。最终，很多程序员已将 Grok 模型评为快速可靠的日常编码任务模型。</p>\n  <p>xAI 表示，未来其团队还将专注于持续更新 grok-code-fast-1，一个支持多模态输入、并行工具调用和扩展上下文长度的新变体已在训练中。</p>\n  <p><sup>参考内容：</sup></p>\n  <p><sup>https://x.ai/news/grok-code-fast-1</sup></p>\n  <p><sup>https://data.x.ai/2025-08-26-grok-code-fast-1-model-card.pdf</sup></p>\n </body>\n</html>",
+  "aiSummary": "xAI 发布了全新的代码模型 Grok Code Fast 1，专为“agentic 编程”设计，以其极快的速度、低廉的价格和对多编程语言的支持为开发者提供高效解决方案。",
+  "oneSentenceSummary": "xAI 发布了全新的代码模型 Grok Code Fast 1，专为“agentic 编程”设计，以其极快的速度、低廉的价格和对多编程语言的支持为开发者提供高效解决方案。",
+  "summary": "文章详细介绍了马斯克 xAI 公司最新推出的代码模型 Grok Code Fast 1。该模型被定位为 Grok 4 的代码版本，核心目标是为 AI 自动执行编程任务（即“agentic 编程”）提供极速且经济的解决方案，旨在弥补现有大语言模型在智能体编码工作流中的不足。xAI 强调，Grok Code Fast 1 采用全新的模型架构从零开始训练，并精心构建了包含丰富编程内容的预训练语料库，同时精选高质量数据集进行训练后优化。该模型已熟练掌握 grep、终端、文件编辑等常用工具，并在 TypeScript、Python、Java、Rust、C++和 Go 等多种主流编程语言中表现出色，能够高效完成从零开始的项目构建、代码库问题解答到精准错误修复等常见编程任务。文章指出，Grok Code Fast 1 在 SWE-Bench-Verified 测试中获得了 70.8%的得分，接近 Claude 4 系列，并且 xAI 更侧重于通过现实世界的人工评估来提升可用性和用户满意度。xAI 宣布该模型将限时免费一周，并公布了其极具竞争力的定价策略，旨在性能和成本之间实现良好平衡，为开发者提供快速高效的编码工具。未来，xAI 计划持续更新，推出支持多模态输入、并行工具调用和扩展上下文长度的新变体。",
+  "mainPoints": [
+    {
+      "point": "Grok Code Fast 1 是一款专为“agentic 编程”设计的高速、经济型代码模型。",
+      "explanation": "该模型针对 AI 自动执行编程任务进行了优化，采用全新架构实现极速响应和成本效益，旨在解决现有 LLM 在智能体编码工作流中的不足，提升 AI 在开发环境中的自动化能力。"
+    },
+    {
+      "point": "模型在多编程语言和常见开发任务中表现出色，并通过实际评估提升用户满意度。",
+      "explanation": "Grok Code Fast 1 支持 TypeScript、Python 等主流语言，能高效完成项目构建、代码库问题解答和错误修复，并在基准测试和用户反馈中均获得认可，强调了其在实际应用中的可用性。"
+    },
+    {
+      "point": "xAI 通过创新技术提升模型服务速度，并提供限时免费试用和竞争力定价。",
+      "explanation": "xAI 的推理和超算团队开发了快速缓存优化等技术，显著提升了模型响应速度。通过限时免费试用和低廉价格，xAI 降低了开发者的使用门槛，促进了模型的普及和应用。"
+    }
+  ],
+  "keyQuotes": [
+    "速度比 GPT-5 快三倍，便宜六倍。",
+    "该模型也被认为是 Grok 4 的代码版本，旨在为「agentic 编程」（AI 自动执行编程任务）提供极速且经济的解决方案。",
+    "grok-code-fast-1 是从零开始训练的语言模型，采用全新的模型架构。",
+    "xAI 的推理和超级计算团队开发了多项创新技术，显著提升了代码模型的服务速度，创造了独特的响应式体验。",
+    "在 SWE-Bench-Verified 的完整子集测试中，grok-code-fast-1 使用内部测试工具获得了 70.8% 的得分。"
+  ],
+  "tags": [
+    "AI代码模型",
+    "Grok Code Fast 1",
+    "xAI",
+    "Agentic编程",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 93,
+  "wordCount": 1126,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756433419000,
+  "publishDateStr": "2025-08-29",
+  "publishDateTimeStr": "2025-08-29 02:10:19"
+}

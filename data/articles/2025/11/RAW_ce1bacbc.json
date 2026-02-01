@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ce1bacbc",
+  "title": "Crossplane 从 CNCF 毕业，实现了生产环境成熟",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263952&idx=4&sn=4dc6d708c6bef55c758b05a11e68f7a8",
+  "date": "2025-11-23 02:15:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Matt Foster </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 张卫滨 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">云原生计算基金会（CNCF）毕业了 Crossplane 项目，这标志着这个开源项目达到了一个重要的里程碑，该项目能够将 Kubernetes 转变成云基础设施的通用控制平面。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">毕业是为那些已经达到运营成熟、广泛采用和具有强大治理模式的 项目保留的。对于从业者来说，这表明 Crossplane 不再是一个实验性的想法，而是一个经过生产验证的基础，它可以采用 Kubernetes 原生方法来构建内部平台、提供自助服务 API 和管理多云环境。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Crossplane 最初由 Upbound 在 2018 年创建，并在 2020 年 捐赠 给了 CNCF，它已经通过了沙箱和孵化阶段，达到了毕业阶段。现在它拥有来自 450 家公司的 3000 多名贡献者，并在供应商中立的治理模式下通过了安全审计。它的生态系统已经从少数云提供商 扩展 到一个官方和社区维护的包市场，覆盖了主要的超大规模提供商以及 Helm、Vault 和 Kubernetes 插件等服务。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">企业的采用情况反映了这种势头。公开用户包括耐克、Autodesk、NASA Science Cloud、Elastic、SAP、IBM 和诺基亚。主导模式 是将 Crossplane 作为内部开发者平台的支柱。平台团队暴露自定义 API，如环境、应用程序或数据库服务，而组合（composition）处理配置、网络、安全控制和备份。开发者获得自助的基础设施；组织获得标准化配置和策略执行，无需手动审查或工单。一些公司 已经采用 Crossplane 作为多云控制平面，从单一的 Kubernetes 集群来管理 AWS、Azure 和 GCP 资源。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Crossplane 扩展了 Kubernetes API，使基础设施可以像团队处理工作负载一样被描述和管理。当安装了 AWS、Azure、GCP 或其他平台的提供商时，它会为 VPC、数据库、存储桶或 Kubernetes 集群等服务添加自定义资源类型。然后，平台工程师使用复合资源定义（Composite Resource Definitions，XRD）和组合（Compositions）来定义更高层次的抽象，将安全策略和配置默认值嵌入到可重用的 API 中。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">从开发者的角度来看，请求一个数据库就像应用一个 Kubernetes 清单一样简单。Crossplane 的控制器会处理配置事宜，并持续 协调底层的云资源，将配置保持在 Kubernetes 中而不是状态文件中。这消除了运行计划 / 应用的需要，并自动纠正漂移，这使得 Crossplane 对在 Kubernetes 和 GitOps 上标准化工作流的团队很具有吸引力。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Crossplane 不可避免地会与 Terraform、Pulumi 和 AWS CDK 进行比较。Terraform 因其生态系统和简单设置而广受欢迎，它具备一个二进制文件、CLI 工作流和一个成熟的 模块库。但它仅限于在用户运行应用时协调变化。Pulumi 和 CDK 强调基础设施作为真正的编程语言，而 Crossplane 将基础设施视为由 Operator 和策略控制的 Kubernetes 资源。在实践中，许多团队 同时使用这两者：Crossplane 可以通过 provider-terraform 运行 Terraform 模块，让组织重用现有代码，同时采用 Kubernetes 原生的控制平面。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">但 Crossplane 并非没有争议：早期采用者 报告 说，当组合或提供者行为不当时，学习曲线会变得很陡峭， 调试也很具挑战性。企业还可以选择将开源 Crossplane 与供应商支持或 UI 层进行匹配，以 简化 日常操作。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">随着该项目的毕业，维护者正 专注于 提高可观测性、加快协调速度，并丰富配置包的生态系统。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Crossplane Reaches Production Maturity by Graduating CNCF(<a href=\"https://www.infoq.com/news/2025/11/crossplane-grad/)\" target=\"_blank\">https://www.infoq.com/news/2025/11/crossplane-grad/)</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Crossplane 从 CNCF 毕业，标志其作为基于 Kubernetes 的云基础设施通用控制平面已达生产级成熟。",
+  "oneSentenceSummary": "Crossplane 从 CNCF 毕业，标志其作为基于 Kubernetes 的云基础设施通用控制平面已达生产级成熟。",
+  "summary": "文章详细报道了 Crossplane 项目从 CNCF 毕业的重要里程碑，该项目旨在将 Kubernetes 转变为云基础设施的通用控制平面。毕业意味着 Crossplane 已达到运营成熟、广泛采用并具备强大的治理模式，不再是实验性想法，而是经过生产验证的基础。文章介绍了 Crossplane 自 2018 年由 Upbound 创建、2020 年捐赠给 CNCF 后的发展历程，包括其庞大的贡献者社区、通过安全审计以及生态系统的扩展。它强调了 Crossplane 在企业中的广泛应用，如耐克、Autodesk、NASA 等，尤其作为内部开发者平台的支柱，通过自定义 API 提供自助服务基础设施，实现标准化配置和策略执行。文章还阐述了 Crossplane 如何通过扩展 Kubernetes API、使用复合资源定义（XRD）和组合（Compositions）来管理基础设施，并与 Terraform、Pulumi 等工具进行比较，指出其优势在于持续协调和自动化纠正漂移。尽管存在学习曲线陡峭和调试挑战，但其作为 Kubernetes 原生控制平面的价值日益凸显。未来，项目维护者将专注于提高可观测性、加快协调速度和丰富配置包生态。",
+  "mainPoints": [
+    {
+      "point": "Crossplane 毕业标志着其作为 Kubernetes 原生云基础设施控制平面的生产级成熟。",
+      "explanation": "这表明 Crossplane 不再是实验性项目，而是经过生产验证的基础设施，可用于构建内部平台、提供自助服务 API 和管理多云环境，满足企业级需求。"
+    },
+    {
+      "point": "Crossplane 通过扩展 Kubernetes API 实现了基础设施的声明式管理和自动化协调。",
+      "explanation": "它允许平台工程师使用 XRD 和 Compositions 定义高层次抽象，将安全策略和配置默认值嵌入可重用 API，并持续协调底层云资源，消除手动操作和配置漂移。"
+    },
+    {
+      "point": "Crossplane 赋能平台团队构建自助式开发者平台，实现标准化配置和策略执行。",
+      "explanation": "开发者可以通过简单的 Kubernetes 清单请求基础设施，组织则能确保配置标准化和策略执行，减少手动审查和工单，提高效率和一致性。"
+    }
+  ],
+  "keyQuotes": [
+    "毕业是为那些已经达到运营成熟、广泛采用和具有强大治理模式的项目保留的。",
+    "对于从业者来说，这表明 Crossplane 不再是一个实验性的想法，而是一个经过生产验证的基础，它可以采用 Kubernetes 原生方法来构建内部平台、提供自助服务 API 和管理多云环境。",
+    "平台团队暴露自定义 API，如环境、应用程序或数据库服务，而组合（composition）处理配置、网络、安全控制和备份。开发者获得自助的基础设施；组织获得标准化配置和策略执行，无需手动审查或工单。",
+    "Crossplane 扩展了 Kubernetes API，使基础设施可以像团队处理工作负载一样被描述和管理。",
+    "Crossplane 的控制器会处理配置事宜，并持续协调底层的云资源，将配置保持在 Kubernetes 中而不是状态文件中。这消除了运行计划 / 应用的需要，并自动纠正漂移，这使得 Crossplane 对在 Kubernetes 和 GitOps 上标准化工作流的团队很具有吸引力。"
+  ],
+  "tags": [
+    "云原生",
+    "Crossplane",
+    "Kubernetes",
+    "基础设施即代码",
+    "控制平面"
+  ],
+  "topicTag": "devops",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1159,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763864100000,
+  "publishDateStr": "2025-11-23",
+  "publishDateTimeStr": "2025-11-23 02:15:00"
+}

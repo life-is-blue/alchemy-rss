@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4d7c73",
+  "title": "图灵奖得主 LeCun：人类智能不是通用智能，下一代 AI 可能基于非生成式",
+  "url": "https://www.qbitai.com/2025/04/273398.html",
+  "date": "2025-04-14 09:13:30",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"1\"><strong>人类智能并非通用智能。</strong><br>\n     我们的大脑是进化的产物，只擅长解决对生存有用的问题，而不是真正“通用”的计算……</p>\n  </blockquote>\n  <p data-track=\"2\">在最新一档播客节目中，Meta首席AI科学家&amp;图灵奖得主<strong>LeCun</strong>发表了如上观点。</p>\n  <p data-track=\"3\">他表示，AGI（通用人工智能）一词非常具有误导性，但人类智能本质是非通用的，它非常专业。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"图灵奖得主LeCun：人类智能不是通用智能，下一代AI可能基于非生成式\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/38814c39-c05b-4e19-ca17-f58ee2e8b700/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/38814c39-c05b-4e19-ca17-f58ee2e8b700/public\">\n  </div>\n  <p data-track=\"4\">更有意思的是，当大家都在谈论生成式AI时，他却凭借直觉大胆预测：<strong>下一代AI的突破可能基于非生成式。</strong></p>\n  <p data-track=\"5\">同时他还再次cue到了DeepSeek，并直言对于这个走红硅谷的新事物，<strong>他们这些长期深耕AI领域的人实则并不感到意外</strong>。</p>\n  <p data-track=\"6\">整场节目中，LeCun与两位主持人的讨论涵盖了从大语言模型 (LLMs) 的局限性到人工智能研究的下一个范式转变等主题，重点关注了推理、规划和世界建模等概念。</p>\n  <p data-track=\"7\">省流版如下：</p>\n  <ul>\n   <li data-track=\"8\">LeCun直觉认为，下一代AI的突破可能基于非生成式；</li>\n   <li data-track=\"9\">否认AGI会在未来两年内实现，但十年内可能取得重大进展；</li>\n   <li data-track=\"10\">人类和动物的智能核心，不是语言，而是对物理世界的建模和行动规划；</li>\n   <li data-track=\"11\">创新可以来自世界任何角落；</li>\n   <li data-track=\"12\">智能眼镜代表着AI技术落地的一个重要方向。</li>\n  </ul>\n  <p data-track=\"13\">与此同时，量子位在不改变原意的基础上，对部分问题进行了翻译整理。</p>\n  <p data-track=\"15\"><strong>Q：</strong>如何看待一边是收益递减，一边是企业们纷纷押注生成式AI？</p>\n  <p data-track=\"16\"><strong>LeCun：</strong>毫无疑问，生成式AI很有用，尤其是编程助手之类的。近来人们正在讨论Agent系统，但它还并不完全可靠。</p>\n  <p data-track=\"17\">从技术演示到实际部署需要巨大跨越，类似10年前自动驾驶的困境——初期演示惊艳，但规模化落地极难。</p>\n  <p data-track=\"18\">过去七十年，人工智能领域一直在重复这样的历史：人们提出一个新范式，然后宣称这将达到人类智能水平，<strong>但每次都被证明是错误的。</strong>要么缺乏泛化性，要么被证明只擅长某个子任务而非通用任务。</p>\n  <p data-track=\"19\">所以，我们应该对它们进行大量投资，尤其是投向运行它们的大量基础设施。实际上，大量资金都涌向了AI基础设施，这并非为了训练AI，而是为了让其运行起来服务潜在数十亿用户。</p>\n  <p data-track=\"20\">如今，如果我们需要达到人类智能水平，我们需要发明新技术。我们还远未达到这一水平。</p>\n  <p data-track=\"21\"><strong>Q：</strong>人工智能下一步何在？应该把资源投向哪里？</p>\n  <p data-track=\"22\"><strong>LeCun：</strong>3年前我写了一篇文章《A Path Towards Autonomous Machine Intelligence》（通往自主机器智能的道路），阐述了未来十年AI研究的方向。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"图灵奖得主LeCun：人类智能不是通用智能，下一代AI可能基于非生成式\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ffacd6cb-2324-41a2-4676-af7e2e68ee00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ffacd6cb-2324-41a2-4676-af7e2e68ee00/public\">\n  </div>\n  <p data-track=\"23\">我认为，未来的AI必须具备几个关键能力：</p>\n  <ul>\n   <li data-track=\"24\"><strong>理解物理世界</strong>——不仅仅是处理符号或文本，而是真正“懂”现实世界的运作规律；</li>\n   <li data-track=\"25\"><strong>具备推理和规划能力</strong>——能够像人类一样思考“如果这样做，会发生什么”，并制定策略；</li>\n   <li data-track=\"26\"><strong>拥有持久记忆</strong>——不是简单的数据存储，而是能像人类一样长期积累和调用经验；</li>\n   <li data-track=\"27\"><strong>安全可控</strong>——AI必须严格遵循我们设定的目标，不能偏离或“自作主张”。</li>\n  </ul>\n  <p data-track=\"28\">人类和动物的大脑里都有一个“世界模型”——它让我们能预测现实世界的运行方式。比如，你扔出一个球，不用计算抛物线，大脑就能预测它的落点。这种能力让我们能规划行动，比如：“如果我现在左转，会不会撞到那辆车？”</p>\n  <p data-track=\"29\">在AI领域，我们希望能让机器也学会这种模型。但问题是：<strong>如何让AI像婴儿一样，通过观察世界来自主学习？</strong></p>\n  <p data-track=\"30\">LLM的成功证明了自监督学习的强大——让AI通过预测文本的下一个token来学习语言规律。但同样的方法直接套用到视觉（比如预测视频的下一帧）却行不通，因为现实世界的可能性太多，无法像文字那样用概率分布建模。</p>\n  <p data-track=\"31\">我们提出的解决方案是&nbsp;<strong>JEPA（联合嵌入预测架构）</strong>，它不直接生成像素级的预测，而是在一个更抽象的“表征空间”里进行推理。这有点像人类的大脑——我们不会在脑子里渲染每一帧画面，而是用更高效的方式理解世界。</p>\n  <p data-track=\"32\">有趣的是，现在大家都在谈论生成式AI，<strong>但我的直觉是，下一代AI的突破可能会来自非生成式模型。</strong></p>\n  <p data-track=\"33\">这就是我的思考方向——LLM的爆发没有改变它，反而让我更坚信：AI的下一个突破，在于让机器真正“理解”世界，而不仅仅是生成内容。</p>\n  <p data-track=\"35\"><strong>Q：</strong>如何看待AGI？</p>\n  <p data-track=\"36\"><strong>LeCun：</strong>我坚信未来必然会出现全面超越人类智能的机器系统——这不是能否实现的问题，而是时间问题。</p>\n  <p data-track=\"37\">当前AI已经在特定领域展现出超越人类的能力（比如围棋、图像识别），但真正的挑战在于构建能够像生物一样适应现实世界的智能体。</p>\n  <p data-track=\"38\">我必须指出，“AGI”这个词具有误导性。 它暗示人类智能是“通用”的，而实际上，人类智能极其<strong>专业化</strong>。我们的大脑是进化的产物，只擅长解决对生存有用的问题，而不是真正“通用”的计算。</p>\n  <p data-track=\"39\">我们觉得自己“通用”，只是因为我们对无法理解的问题根本意识不到。所以，我更倾向于用<strong>“高级机器智能（AMI）”</strong>这个概念，它在Meta内部也被称为“Ami”（法语“朋友”的意思），而不是误导性的“AGI”。</p>\n  <p data-track=\"40\">我不认为AGI（或AMI）会在明年或未来两年内实现。但<strong>十年内</strong>，我们可能会取得重大进展。当然，这取决于我们能否填补当前缺失的关键技术。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"图灵奖得主LeCun：人类智能不是通用智能，下一代AI可能基于非生成式\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d721645b-bee1-4791-2b66-4af92f04b100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d721645b-bee1-4791-2b66-4af92f04b100/public\">\n  </div>\n  <p data-track=\"41\">历史告诉我们，AI的突破总是比预期更难。比如，深度学习在20世纪80年代就被提出，但直到2010年后才真正爆发。所以，我保持<strong>谨慎乐观</strong>——我相信我们能成功，但绝不会像某些人想象的那么快。</p>\n  <p data-track=\"42\">今天的AI（比如大语言模型）在某些任务上表现惊人，比如通过律师考试<em>（本质是信息检索）</em>、生成代码<em>（语法严格，相对容易）</em>、总结和改写文本。</p>\n  <p data-track=\"43\">但它们有一个致命缺陷：<strong>无法解决从未见过的新问题</strong>。比如，让最好的大语言模型去做最新的奥数题，它们几乎得零分，因为它们没有训练过类似的题目。</p>\n  <p data-track=\"44\">更关键的是，它们<strong>没有真正的推理能力</strong>。所谓的“思维链”（Chain-of-Thought）只是让模型生成更多文本，而不是像人类那样进行抽象推理。</p>\n  <p data-track=\"45\">人类和动物（比如猫、老鼠）的智能核心，不是语言，而是<strong>对物理世界的建模和行动规划</strong>。例如：</p>\n  <ul>\n   <li data-track=\"46\">空间推理：如果我让你想象一个立方体旋转90度，你能在脑中模拟，而不需要语言描述；</li>\n   <li data-track=\"47\">分层规划：如果我要从纽约去巴黎，我不会一步步计算“先迈左脚还是右脚”，而是抽象成“打车→机场→飞机”；</li>\n   <li data-track=\"48\">动作学习：猫能学会开门、松鼠能记住藏食物的位置，它们没有语言，但能通过观察和尝试掌握复杂技能。</li>\n  </ul>\n  <p data-track=\"49\">这才是真正的智能，而今天的AI完全做不到这一点。</p>\n  <p data-track=\"50\">要让AI达到动物（甚至人类）的智能水平，我们需要：</p>\n  <p data-track=\"51\">1、<strong>建立世界模型</strong>：让AI能模拟物理规律（比如重力、物体互动）；<br>\n    2、<strong>分层行动规划</strong>：像人类一样，从高层次目标分解到具体动作；<br>\n    3、<strong>非语言推理</strong>：真正的智能不依赖语言，而是基于抽象表征；<br>\n    4、<strong>适应不确定性</strong>：现实世界是混乱的、连续的，不像语言那样结构化。</p>\n  <p data-track=\"52\">如果能让AI达到猫的智能水平，就已经是巨大突破。 今天的AI能在棋盘上击败人类，但一只猫对物理世界的理解，仍然远超最先进的大语言模型。</p>\n  <p data-track=\"53\">我们离真正的人类级AI还有距离，但方向是明确的：<strong>不是让AI更擅长语言，而是让它像动物一样理解世界、规划行动</strong>。这需要全新的架构，而不仅仅是更大的语言模型。</p>\n  <p data-track=\"54\">我相信，未来十年，我们会看到重大进展——但绝不会是“突然觉醒”的超级AI，而是逐步接近生物智能的机器。</p>\n  <p data-track=\"56\"><strong>Q：</strong>Meta的人工智能策略是怎样的？</p>\n  <p data-track=\"57\"><strong>LeCun：</strong>作为Meta的AI负责人，我想分享一下我们决定开源LLaMA系列模型的战略思考。</p>\n  <p data-track=\"58\">这个决定源于几个关键考量：首先，从伦理角度来看，开源是正确的事情。LLaMA 2采用开源模式发布后，直接推动了整个AI生态系统的爆发式增长。这不仅惠及企业和初创公司，更重要的是让学术界能够真正参与到前沿研究中来。要知道，大学和研究机构通常根本没有资源来训练自己的基础模型。</p>\n  <p data-track=\"59\">我们的开源策略实际上产生了两个显著效果：它确实影响了少数几家闭源商业公司的利益<em>（大家都知道是哪几家）</em>，但它同时为成千上万的企业和研究者创造了机会。</p>\n  <p data-track=\"60\">在教育领域，正如Jeff教授提到的，LLaMA让大学能够运行、研究和改进这些模型。这种开放创新模式正是AI领域最需要的。</p>\n  <p data-track=\"61\">有些人可能会问：Meta为什么要免费开放这么重要的技术？</p>\n  <p data-track=\"62\">这其实与我们的商业模式有关：<strong>我们不像某些公司直接靠AI技术本身盈利，Meta的核心收入来自广告。</strong>而广告业务依赖于基于这些技术构建的高质量产品、社交网络的网络效应以及用户规模和参与度。</p>\n  <p data-track=\"63\">所以，开源不仅不会损害我们的商业利益，反而能帮助我们建立更强大的生态系统。当更多人使用和改进这些技术时，最终也会反哺我们的产品。</p>\n  <p data-track=\"64\">在追求人类级AI的道路上，开源是加速突破的关键。这可能是人类面临的最重大科技挑战之一，没有任何一家公司能垄断所有创新。最近DeepSeek等开源项目的突破就证明了这一点——<strong>它们让硅谷大吃一惊，但我们这些长期参与开源的人并不感到意外。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"图灵奖得主LeCun：人类智能不是通用智能，下一代AI可能基于非生成式\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/deaf2364-4040-41f8-8236-ff63fdcab100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/deaf2364-4040-41f8-8236-ff63fdcab100/public\">\n  </div>\n  <p data-track=\"65\">我坚信以下几点：</p>\n  <ul>\n   <li data-track=\"66\">创新可以来自世界任何角落</li>\n   <li data-track=\"67\">没有人能垄断好点子<em>（除了那些自我感觉特别良好的人）</em></li>\n   <li data-track=\"68\">过去十年AI的快速发展，很大程度上要归功于代码和知识的开放共享</li>\n  </ul>\n  <p data-track=\"69\">在Meta，我们将继续坚持开源策略，因为这是推动AI技术进步、实现真正创新的最佳途径。我们期待与全球的研究者和开发者一起，共同迈向更智能的未来。</p>\n  <p data-track=\"71\"><strong>Q：</strong>如何看待智能眼镜等设备的出现？</p>\n  <p data-track=\"72\"><strong>LeCun：</strong>我认为<strong>智能眼镜代表着AI技术落地的一个重要方向。</strong></p>\n  <p data-track=\"73\">在我看来，未来的AI助手应该具备以下特点：</p>\n  <ul>\n   <li data-track=\"74\">全天候陪伴：像真正的助手一样随时待命；</li>\n   <li data-track=\"75\">多感官交互：能够”看到”和”听到”用户所处的环境（在获得许可的前提下）；</li>\n   <li data-track=\"76\">专业化分工：不是单一助手，而是一组各有所长的虚拟助手团队。</li>\n  </ul>\n  <p data-track=\"77\">有趣的是，很多人担心AI比人类聪明会带来威胁，<strong>但我认为这反而是赋能。</strong>就像在科研或企业管理中，最理想的情况就是能找到比自己更优秀的人才一起工作。</p>\n  <p data-track=\"78\">最后，关于开源的重要性，我想强调就像Linux改变了互联网基础设施一样，开源AI将重塑整个行业格局。</p>\n  <p data-track=\"79\">我预见未来会有成千上万种不同的AI助手，它们将基于像Meta这样的大公司提供的开源基础模型，由全球各地的开发者进行定制开发。这种模式不仅能避免技术垄断，更能促进真正的创新。</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "LeCun 认为人类智能并非通用智能，下一代 AI 突破可能基于非生成式模型，Meta 的开源策略是关键。",
+  "oneSentenceSummary": "LeCun 认为人类智能并非通用智能，下一代 AI 突破可能基于非生成式模型，Meta 的开源策略是关键。",
+  "summary": "图灵奖得主、Meta 首席 AI 科学家 LeCun 在最新播客中表示，AGI 一词具有误导性，人类智能并非通用智能，而是高度专业化。他批评现有 AI 在推理和理解物理世界方面的不足，并预测下一代 AI 的突破可能基于非生成式模型，再次提及 DeepSeek 的创新。LeCun 强调，AI 的未来在于理解物理世界、具备推理和规划能力，以及拥有持久记忆。他认为，开源是加速 AI 突破的关键，Meta 将坚持开源策略，与全球研究者和开发者共同推动 AI 技术进步。同时，LeCun 看好智能眼镜等设备作为 AI 技术落地的重要方向。",
+  "mainPoints": [
+    {
+      "point": "人类智能并非通用智能，AGI 一词具有误导性",
+      "explanation": "人类大脑是进化的产物，擅长解决生存问题，而非通用计算，LeCun 更倾向于使用“高级机器智能（AMI）”"
+    },
+    {
+      "point": "下一代 AI 的突破可能基于非生成式模型",
+      "explanation": "LeCun 认为 AI 的未来在于让机器真正理解世界，而不仅仅是生成内容，JEPA（联合嵌入预测架构）是解决方案"
+    },
+    {
+      "point": "开源是加速 AI 突破的关键",
+      "explanation": "Meta 的开源策略推动了 AI 生态系统的爆发式增长，让学术界和开发者能参与前沿研究，促进创新"
+    }
+  ],
+  "keyQuotes": [
+    "今天的 AI 能在棋盘上击败人类，但一只猫对物理世界的理解，仍然远超最先进的大语言模型。",
+    "人类智能并非通用智能。",
+    "下一代 AI 的突破可能基于非生成式。",
+    "创新可以来自世界任何角落。",
+    "智能眼镜代表着 AI 技术落地的一个重要方向。"
+  ],
+  "tags": [
+    "LeCun",
+    "通用人工智能",
+    "非生成式模型",
+    "开源",
+    "智能眼镜"
+  ],
+  "topicTag": "other",
+  "readTime": 16,
+  "score": 91,
+  "wordCount": 3893,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1744622010000,
+  "publishDateStr": "2025-04-14",
+  "publishDateTimeStr": "2025-04-14 09:13:30"
+}

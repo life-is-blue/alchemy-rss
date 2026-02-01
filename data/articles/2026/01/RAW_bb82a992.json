@@ -1,0 +1,59 @@
+{
+  "id": "RAW_bb82a992",
+  "title": "Remote 如何利用 LangChain 和 LangGraph 通过 AI 助力数千名客户入职",
+  "url": "https://www.blog.langchain.com/customers-remote/",
+  "date": "2026-01-19 16:00:06",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Guest post written by José Mussa (Staff Software Engineer @ Remote)</em></p>\n  <p><a href=\"https://remote.com/?ref=blog.langchain.com\"><u>Remote</u></a> is a fast-growing startup helping companies hire, manage, and pay employees globally from a single platform. Remote’s customers operate across many countries and regulatory environments, and they trust Remote as the system of record for their employee, payroll, and compliance data. Every new customer arrives with a unique set of HR and payroll data , with sometimes thousands of spreadsheets or large SQL exports. Migrating that data accurately and quickly is make-or-break for onboarding, but doing it manually simply doesn’t scale.</p>\n  <p>To solve this challenge, Remote built a Code Execution Agent inside its AI Service to automate these migrations. This agent brings together the reasoning power of large language models with the precision of deterministic code execution. Here's how it works, why Remote chose LangChain and LangGraph to build it, and what they learned along the way.</p>\n  <h2 id=\"the-challenge-context-windows-and-hallucinations\">The Challenge: Context windows and hallucinations</h2>\n  <p>LLMs are powerful, but they have hard limits. Every model has a context window: the maximum number of tokens it can process at once. Even state‑of‑the‑art models like GPT‑5 cap out around 400k tokens, far less than the millions of characters in a large payroll spreadsheet. Models also need part of that window to track instructions, system prompts, and conversation history.</p>\n  <p>Trying to feed a 50 MB Excel file directly into an LLM isn’t just expensive; it’s likely to produce hallucinations. As Anthropic engineers have pointed out, when agents call tools directly, every intermediate result flows through the model, which can add tens of thousands of tokens per call and even exceed the context limit.</p>\n  <p>For a global employment platform like Remote, where accuracy and compliance are non-negotiable, these constraints made it clear that a different approach to large-scale data migrations was necessary.</p>\n  <h2 id=\"the-solution-let-the-models-reason-let-code-execute\">The Solution: Let the models reason, let code execute</h2>\n  <p>Remote’s Code Execution Agent separates the “thinking” from the “doing.” Instead of forcing the LLM to ingest all the data, it uses LangChain’s tool‑calling interface to decide what steps to take, then writes and runs real Python code to transform the data.</p>\n  <p>Anthropic's research on code execution shows why this hybrid design works: by letting agents run code in a sandbox, tool definitions and intermediate results stay outside the context window. Only instructions and summaries pass through the model, dramatically cutting token usage and virtually eliminating hallucination risk.</p>\n  <p>Here's how Remote’s agent works in practice:</p>\n  <ul>\n   <li>File ingestion. Customers upload their raw data (CSV, Excel or SQL exports) to Remote’s secure storage.</li>\n   <li>Agent reasoning. Using LangChain’s tool‑calling, the agent receives a task like “Convert this file into Remote’s employee onboarding schema.” It maps out how to translate the input columns into the schema.</li>\n   <li>Sandboxed execution. Behind the scenes, a Python sandbox (running in WebAssembly) executes the LLM‑generated code. Remote leans on libraries like Pandas because they're fast and flexible for data analysis.</li>\n   <li>Iterative refinement. The agent reviews the output, writes more code if needed, and repeats until the data meets the schema.</li>\n   <li>Structured output. The final, validated JSON file is stored for ingestion. Large intermediate results never pass back to the model, keeping the context small.</li>\n  </ul>\n  <p>This architecture started as a proof of concept where Remote fed a 5,000-row Excel file into the agent. The agent loaded the file in the sandbox, mapped each entry to the schema using Pandas, and could answer queries like \"What is the age of employee X?\" by running code instead of generating text. Remote also limits console output so the model doesn't try to read entire datasets – a simple \"show the first N rows\" pattern borrowed straight from data science notebooks.</p>\n  <p>Remote chose LangChain because its ecosystem offers mature abstractions for prompt handling and tool invocation. Its modular design allowed the team to integrate multiple model providers and build on a standard interface instead of rolling out their own. The Remote AI Agent Toolkit (the open‑source package Remote publishes for partners) already uses LangChain to expose HR tasks as structured tools, so keeping the internal workflows consistent was a natural fit. LangChain gave Remote the foundation to focus on what matters most for them: safety, scalability, and developer experience.</p>\n  <p>Its node-and-edge model lets Remote represent complex workflows— ingestion, mapping, execution, validation— as a directed graph. Each step becomes a node with explicit transitions for success, failure, or retry. This makes the agent's state transparent and recoverable, similar to how distributed systems engineers reason about pipelines. LangGraph's focus on long-running, stateful agents was a perfect match for our multi-step migration process.</p>\n  <h2 id=\"results-and-impact\">Results and impact</h2>\n  <p>By combining LLM reasoning with deterministic code execution, Remote has turned a manual process into an automated workflow. Their onboarding teams no longer write custom scripts for each customer – they simply plug data into the Code Execution Agent. The agent transforms diverse formats into a consistent JSON schema in hours instead of days.</p>\n  <p>Beyond speed, the system has made everything more reliable. Because the transformation logic runs as code in a sandbox, it's repeatable and auditable, which is critical for a platform handling sensitive employment and payroll data across jurisdictions. The LLM guides the process, but the actual data manipulation happens with trusted Python libraries, completely sidestepping hallucination issues.</p>\n  <h2 id=\"lessons-learned\">Lessons learned</h2>\n  <p>Building this AI agent taught Remote several lessons that now inform how its team builds AI systems across the company:</p>\n  <ul>\n   <li>LLMs are planners, not processors. Use them to reason about tasks and choose tools, but offload heavy data processing to code.</li>\n   <li>Structure beats improvisation. Orchestrating workflows as graphs makes them much easier to debug and extend.</li>\n   <li>Context tokens are precious. Large intermediate results should stay in the execution environment where they belong.</li>\n   <li>Python remains the analytics workhorse. Libraries like Pandas offer fast, flexible data manipulation that's hard to beat.</li>\n  </ul>\n  <h2 id=\"what%E2%80%99s-next\">What’s next</h2>\n  <p>The Code Execution Agent is one building block in Remote’s broader AI platform. Whenever they spot a repetitive pattern across teams, like converting documents into structured records or extracting data from semi-structured forms, they abstract it into a reusable agent. A recent example is an Agentic OCR-to-JSON Schema prototype, which combines document parsing with an agentic workflow to outperform basic OCR by a wide margin.</p>\n  <p>As Remote refines these tools, the team is planning to contribute generic improvements back to LangChain's open-source ecosystem and adopt new community innovations as they emerge.</p>\n  <h2 id=\"final-thoughts\">Final thoughts</h2>\n  <p>Migrating HR data is one of the toughest parts of onboarding thousands of customers in a global employment platform. By pairing LangChain’s tool framework with LangGraph’s orchestration and a Python code‑execution layer, Remote built a system that handles complex transformations reliably and at scale. This hybrid approach of using LLMs for reasoning and code for execution reflects how Remote invests in AI as infrastructure: removing friction while enabling teams to focus on higher-level problems that help customers employ and pay anyone, anywhere.</p>\n </body>\n</html>",
+  "aiSummary": "Remote 利用 LangChain 和 LangGraph 构建了一个代码执行智能体，通过将 LLM 推理与确定性的 Python 执行分离，实现了大规模 HR 数据迁移的自动化。",
+  "oneSentenceSummary": "Remote 利用 LangChain 和 LangGraph 构建了一个代码执行智能体，通过将 LLM 推理与确定性的 Python 执行分离，实现了大规模 HR 数据迁移的自动化。",
+  "summary": "全球就业平台 Remote 在客户入职过程中面临着迁移海量且多样化的薪酬与 HR 数据集的重大挑战。为了克服 LLM 上下文窗口限制和幻觉风险，他们使用 LangChain 和 LangGraph 开发了一个“代码执行智能体”。该架构将 LLM 视为计划者，生成 Python 代码（使用 Pandas）并在 WebAssembly 沙盒环境中执行。通过将繁重的数据处理保留在沙盒内，仅将指令或摘要传回 LLM，Remote 实现了高准确度，降低了 Token 成本，并将原本需要数天的手动流程转变为在几小时内完成的自动化工作流。",
+  "mainPoints": [
+    {
+      "point": "将 LLM 推理与数据处理分离，以避免幻觉和上下文限制。",
+      "explanation": "不直接将原始数据喂给 LLM，而是让模型充当计划者，编写 Python 代码在安全沙盒中操作数据，从而确保结果的确定性。"
+    },
+    {
+      "point": "利用 LangGraph 进行有状态的多步智能体编排。",
+      "explanation": "节点与边的模型允许 Remote 将复杂的摄取和验证工作流表示为有向图，使智能体的状态透明且可恢复。"
+    },
+    {
+      "point": "将庞大的中间结果保持在 LLM 上下文窗口之外。",
+      "explanation": "通过在沙盒中执行代码并仅向模型返回摘要或特定的元数据，可以最小化 Token 使用量并消除上下文溢出的风险。"
+    },
+    {
+      "point": "利用 LangChain 和 Pandas 等成熟生态系统来提高可靠性。",
+      "explanation": "使用成熟的库进行工具调用和数据操作，使开发人员能够专注于安全性和可扩展性，而不是从头开始构建基础架构。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM 非常强大，但它们有硬性限制。每个模型都有一个上下文窗口：即它一次能处理的最大 Token 数量。",
+    "Remote 的代码执行智能体将‘思考’与‘执行’分离开来。",
+    "通过让智能体在沙盒中运行代码，工具定义和中间结果可以保持在上下文窗口之外。",
+    "LLM 是计划者，而不是处理器。利用它们来推理任务并选择工具，但将繁重的数据处理交给代码完成。",
+    "智能体在几小时内就能将多种格式转换为一致的 JSON 模式，而过去则需要数天时间。"
+  ],
+  "tags": [
+    "LangChain",
+    "LangGraph",
+    "智能体工作流",
+    "代码执行",
+    "数据迁移"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1133,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768838406000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 16:00:06"
+}

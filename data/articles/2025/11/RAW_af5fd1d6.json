@@ -1,0 +1,55 @@
+{
+  "id": "RAW_af5fd1d6",
+  "title": "面向客户的应用中嵌入 Databricks AI / BI 仪表盘：完整指南",
+  "url": "https://www.databricks.com/blog/how-embed-databricks-aibi-dashboards-customer-facing-applications",
+  "date": "2025-11-11 13:25:06",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p dir=\"ltr\"><span>Databricks&nbsp;</span><a href=\"https://www.databricks.com/product/business-intelligence/ai-bi-dashboards\"><span>AI/BI Dashboards</span></a><span> are often used to power internal analytics: sales reports for go-to-market teams, operational dashboards for supply chain managers, weekly KPIs for leadership reviews. But in many organizations,&nbsp;</span><strong>the most valuable analytics are the ones that need to be shared with customers, suppliers, or partners</strong><span>. These are the insights that shape product value, strengthen relationships, and differentiate your platform.</span></p>\n  <p dir=\"ltr\"><span>With&nbsp;</span><a href=\"https://docs.databricks.com/aws/en/dashboards/embedding/external-embed\" target=\"_blank\"><span>Embedding for External Users</span></a><span>, you can take a dashboard that already exists in Databricks and place it directly inside a customer or partner-facing application. The experience is fully interactive and live. Users never need a Databricks account. And because Databricks charges based on compute rather than per-user or per-session,&nbsp;</span><strong>you can scale your analytics to thousands of viewers without incurring unpredictable fees</strong><span>.</span></p>\n  <p dir=\"ltr\"><span>This guide walks through how external embedding works and how to set it up securely, including authentication, permissions, row-level filtering, and audit visibility.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/Embedded-Dash1_0.png?v=1762868701\" data-entity-uuid=\"11148ab1-97e9-4eaa-90f5-d92b5a626806\" data-entity-type=\"file\" alt=\"Example of an embedded AI/BI Dashboard\" width=\"3830\" height=\"1856\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <h2 dir=\"ltr\"><strong>Understanding Internal vs. External Embedding</strong></h2>\n  <p dir=\"ltr\"><span>There are two ways to embed Databricks AI/BI Dashboards.</span></p>\n  <p dir=\"ltr\"><span>If your viewers are internal to your organization and already sign in using your identity provider, you can simply open the dashboard, select&nbsp;</span><strong>Share</strong><span>, choose&nbsp;</span><strong>Embed code</strong><span>, and paste the resulting iframe into a tool such as Confluence or Salesforce. When users open the embedded dashboard, they sign in using their Databricks credentials and Unity Catalog enforces access controls. This is ideal for teams, departments, and business units inside your company. We refer to this as&nbsp;</span><a href=\"https://docs.databricks.com/aws/en/dashboards/embedding/basic\" target=\"_blank\"><span>basic dashboard embedding</span></a><span>. To learn more, watch&nbsp;</span><a href=\"https://www.databricks.com/resources/demos/videos/ai-bi-embedding-dashboards\"><span>this video</span></a><span>.</span></p>\n  <p dir=\"ltr\"><span>However, this method does not work if your audience is external and does not have Databricks accounts. In that case, you will use&nbsp;</span><strong>Embedding for External Users</strong><span>, which authenticates through a&nbsp;</span><strong>Service Principal</strong><span> rather than individual users. This allows someone outside your identity provider to interact with a dashboard using secure, short-lived, scoped tokens issued by your application.</span></p>\n  <p dir=\"ltr\"><span>The result is a seamless embedded experience for external viewers, with the AI/BI Dashboard presented as a natural extension of your application’s interface.</span></p>\n  <h2 dir=\"ltr\"><strong>How External Embedding Works&nbsp;</strong></h2>\n  <p dir=\"ltr\"><span>At a high level, your application authenticates with Databricks on behalf of each external viewer. The application requests a scoped token that identifies the viewer and, optionally, includes a filter value to control the data they are allowed to see. Databricks executes the dashboard using the Service Principal’s permissions and returns only the data that is permitted for that viewer. User activity is tracked and auditable.</span></p>\n  <p dir=\"ltr\"><span>This structure enables you to offer personalized data experiences in a secure and governed manner, without requiring the provisioning of new human identities.</span></p>\n  <h3 dir=\"ltr\"><span>Step-by-Step Setup</span></h3>\n  <h3 dir=\"ltr\"><strong>1. Allow-list your host application’s domain</strong></h3>\n  <p dir=\"ltr\"><span>In Databricks, go to&nbsp;</span><strong>Workspace Settings → Security → External Access</strong><span> and add the URL of the application where your dashboard will appear to the list of Approved Domains. For development, you should add&nbsp;</span><code><span>https://localhost</span></code><span> or consider allowing all domains if using a development workspace.</span></p>\n  <h3 dir=\"ltr\"><strong>2. Create and publish your dashboard</strong></h3>\n  <p dir=\"ltr\"><span>Build the AI/BI Dashboard as you normally would. When publishing, choose to publish&nbsp;</span><strong>without embedded credentials</strong><span>. This ensures the dashboard always runs using the Service Principal, which gives you full control over the data it can query.</span></p>\n  <h3 dir=\"ltr\"><strong>3. Create a Service Principal for your application</strong></h3>\n  <p dir=\"ltr\"><span>Navigate to&nbsp;</span><strong>Settings → Identity and Access → Service Principals</strong><span> and create a new Service Principal that represents your external application. Generate an OAuth secret and store it securely. This Service Principal is the identity Databricks will use when running dashboard queries.</span></p>\n  <p dir=\"ltr\"><span>Grant the Service Principal&nbsp;</span><strong>SELECT+</strong><span> permissions on any underlying tables or views referenced by the dashboard.</span></p>\n  <h3 dir=\"ltr\"><strong>4. Share your dashboard with the Service Principal</strong></h3>\n  <p dir=\"ltr\"><span>Open the dashboard, select&nbsp;</span><strong>Share</strong><span>, and grant the Service Principal&nbsp;</span><strong>Can Run</strong><span> access. The Service Principal can now execute the dashboard in place of a human user.</span></p>\n  <h3 dir=\"ltr\"><strong>5. Generate OAuth tokens in your application</strong></h3>\n  <p dir=\"ltr\"><span>At this point, you will need to have your own application to proceed. Feel free to follow along with using our example application&nbsp;</span><a href=\"https://github.com/databricks-solutions/aibi-dashboards-external-embedding\" target=\"_blank\"><span>here</span></a><span>.</span></p>\n  <p dir=\"ltr\"><span>Your application will need to generate an OAuth token for each viewer who comes to your dashboard. In our example application, the code looks something like this:</span></p>\n  <!--$-->\n  <!--/$-->\n  <h3 dir=\"ltr\"><strong>6. Apply row-level security and viewer tracking</strong></h3>\n  <p dir=\"ltr\"><span>To add observability and optionally to personalize data, request a scoped token that includes both a&nbsp;</span><strong>viewer identifier</strong><span> and an optional filter value:</span></p>\n  <ul>\n   <li dir=\"ltr\"><code><span><strong>external_viewer_id</strong></span></code><span> uniquely identifies each external viewer and automatically surfaces in&nbsp;</span><strong>Databricks audit logs</strong><span>, giving you full visibility into who viewed what.</span></li>\n   <li dir=\"ltr\"><code><span><strong>external_value</strong></span></code><span>, if specified, can be referenced in your dashboard SQL via the global variable&nbsp;</span><code><span><strong>__aibi_external_value</strong></span></code><span> to&nbsp;</span><strong>apply row-level security</strong><span> dynamically. It will only be shown in your query history and in your token.</span></li>\n  </ul>\n  <p dir=\"ltr\"><span>&nbsp;For example:</span></p>\n  <!--$-->\n  <!--/$-->\n  <p dir=\"ltr\"><span>This allows your app to display each customer's own data, eliminating the need for duplicated dashboards or datasets.&nbsp;</span><strong>These values are securely signed via OAuth and cannot be changed by users of the application.</strong></p>\n  <h3 dir=\"ltr\"><strong>7. Render the dashboard in your application</strong></h3>\n  <p dir=\"ltr\"><span>Embed the dashboard securely in your application using the Databricks client:</span></p>\n  <!--$-->\n  <!--/$-->\n  <p dir=\"ltr\"><span>Your customers and partners can now view live, interactive AI/BI Dashboards with no Databricks login required.</span></p>\n </body>\n</html>",
+  "aiSummary": "本指南详细介绍了如何安全地将 Databricks AI / BI 仪表盘嵌入到面向客户的应用程序中，使外部用户无需 Databricks 帐户即可与实时分析进行交互。",
+  "oneSentenceSummary": "本指南详细介绍了如何安全地将 Databricks AI / BI 仪表盘嵌入到面向客户的应用程序中，使外部用户无需 Databricks 帐户即可与实时分析进行交互。",
+  "summary": "本文提供了关于将 Databricks AI / BI 仪表盘嵌入到外部的、面向客户的应用程序中的全面指南。它强调了与内部团队之外（例如与客户、供应商或合作伙伴）共享有价值的分析的关键需求，以增强产品价值并加强关系。提出的解决方案是 Databricks 的“外部用户嵌入功能”，该功能允许将交互式的实时仪表盘直接集成到托管应用程序中。一个显著的优势是外部查看者不需要 Databricks 帐户，并且定价模型基于计算资源，确保了可扩展性而没有不可预测的按用户收费。该指南解释了底层的技术机制：应用程序代表外部查看者向 Databricks 进行身份验证，通过服务主体请求安全的、短期的、范围限定的 OAuth 令牌。这种结构实现了以安全和受治理的方式进行个性化的数据体验。详细的分步设置过程涵盖了关键方面，例如将托管应用程序的域名加入白名单、发布没有嵌入凭据的仪表盘、创建服务主体并授予权限、在应用程序中生成 OAuth 令牌，以及实施行级别安全和查看者跟踪，以实现可审计性和个性化。",
+  "mainPoints": [
+    {
+      "point": "外部嵌入实现了与非 Databricks 用户安全、可扩展地共享分析。",
+      "explanation": "利用服务主体和 OAuth，Databricks 允许将交互式仪表盘集成到外部应用程序中，从而为客户 / 合作伙伴提供访问权限，而无需 Databricks 帐户，并基于计算资源实现成本效益高的扩展。"
+    },
+    {
+      "point": "行级别安全和查看者跟踪对于个性化和可审计的数据体验至关重要。",
+      "explanation": "`external_value` 参数允许根据每个查看者动态过滤数据，而 `external_viewer_id` 确保在 Databricks 日志中实现可审计性，从而增强安全性、个性化和合规性。"
+    },
+    {
+      "point": "外部嵌入需要一个多步骤的安全集成过程。",
+      "explanation": "关键步骤包括将托管域名加入白名单、发布没有嵌入凭据的仪表盘、创建服务主体并授予权限、生成范围限定的 OAuth 令牌，以及安全地呈现仪表盘。"
+    }
+  ],
+  "keyQuotes": [
+    "最有价值的分析是需要与客户、供应商或合作伙伴共享的分析",
+    "您可以将分析扩展到数千个查看者，而不会产生不可预测的费用",
+    "外部用户嵌入功能通过服务主体进行身份验证，而非个人用户。",
+    "这些值通过 OAuth 安全签名，并且不能被应用程序的用户更改。",
+    "您的客户和合作伙伴现在可以查看实时的、交互式的 AI / BI 仪表盘，而无需 Databricks 登录。"
+  ],
+  "tags": [
+    "嵌入式分析",
+    "商业智能",
+    "数据共享",
+    "安全",
+    "OAuth"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 829,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762867506000,
+  "publishDateStr": "2025-11-11",
+  "publishDateTimeStr": "2025-11-11 13:25:06"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_d4fd78be",
+  "title": "SGLang 原生支持昇腾，新模型一键拉起无需改代码",
+  "url": "https://www.qbitai.com/2025/12/363415.html",
+  "date": "2025-12-21 14:29:56",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">henry 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p data-pm-slice=\"0 0 []\">当Agent在应用侧不断加速，推理系统能否承受随之而来的真实负载，正在成为行业关注的焦点。</p>\n  <p>这是12月20日在杭州收官的<strong>SGLang AI 金融 π 对</strong>上，被反复提及的一个背景。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/a21cbe45da00690241808dc177c534de.webp\">\n  </section>\n  <p>在这场聚焦大模型推理效率的“π对”上——</p>\n  <p data-pm-slice=\"0 0 []\">Agent的Vibe被暂时搁到一边，真正摆上桌面的，是推理系统在真实负载中的工程问题：<strong>高并发请求</strong>、<strong>长上下文窗口</strong>、<strong>多轮推理</strong>、<strong>内存管理，</strong>以及在具体金融agent场景下的<strong>一致性生成</strong>问题。</p>\n  <p data-pm-slice=\"0 0 []\">同时，在活动讨论中，昇腾作为算力平台也被多次提及。</p>\n  <p data-pm-slice=\"0 0 []\">当前，昇腾已作为SGLang原生支持的后端之一进入主仓库，随着 SGLang推理引擎的更新，DeepSeek、Qwen、GLM等模型可以在不调整模型参数、不引入额外插件的情况下直接运行，HiCache、Mooncake等系统能力也在对应版本中引入。</p>\n  <p><span data-pm-slice=\"0 0 []\">可以说，这次SGLang AI金融π对呈现的，并非零散技术点，而是一条清晰的推理工程演进路径——从缓存与内存体系，到权重更新、强化学习效率，再到算力与模型生态的协同。</span></p>\n  <p><span data-pm-slice=\"0 0 []\">接下来，我们具体来看。</span></p>\n  <h2>面向Agent的推理系统工程解法</h2>\n  <p>这次SGLang活动由<strong>SGLang</strong>与<strong>AtomGit</strong>社区联合发起，于12月20日在杭州举办，活动围绕大模型推理架构、Agent、强化学习及其在金融场景的落地展开讨论。</p>\n  <p data-pm-slice=\"0 0 []\">在嘉宾方面，活动由来自推理系统、模型与算力一线的工程团队共同参与，包括华为高级项目群总监<strong>薛曜</strong>，SGLang开发者<strong>黄章衡</strong>、<strong>尚旭春</strong>，华为“小巧灵”突击队工程师<strong>荆升航</strong>，昇腾高级研发工程师<strong>镇亮</strong>，以及GLM技术布道师<strong>张昱轩</strong>。</p>\n  <p><span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 16px;font-family: Arial;text-align: left;letter-spacing: 1px !important;word-spacing: 1px !important;line-height: 2 !important;min-height: 1.5em !important;box-sizing: border-box !important;overflow-wrap: break-word !important;margin: 20px 16px !important;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">整体来看，Agent</span>相较于以往的问答式LLM，在深度研究、代码生成、工具调用等应用以及强化学习训练中，对高并发请求、长上下文窗口、多轮推理和内存管理的效率提出了更高要求。</p>\n  <p>而在特定的部署场景，如<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 16px;font-family: Arial;text-align: left;letter-spacing: 1px !important;word-spacing: 1px !important;line-height: 2 !important;min-height: 1.5em !important;box-sizing: border-box !important;overflow-wrap: break-word !important;margin: 20px 16px !important;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">金融Agent中，则</span>对低延迟、响应稳定性、一致性及成本控制的要求则更为严苛。</p>\n  <p>本次Meetup正是围绕这些Agent原生的系统变化，给出了工程实践层面的集中回应。</p>\n  <p>首先，针对<strong>高并发</strong>、<strong>长上下文场景下</strong>KV cache重复计算、显存需求大的问题。</p>\n  <p>SGlang通过最新引入的<strong>HiCache体系</strong>，将KV cache扩展到CPU和远端存储，由Cache Controller自动管理KV卸载填装，并结合流水线化异步预取，显著降低了显存占用，提升了上下文推理的稳定性与吞吐。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/4bab3ce2c114e14c6138f8916e62f52c.webp\">\n  </section>\n  <p>此外，针对Qwen3-Next、Kimi Linear这类具备不同计算逻辑和内存管理方式的混合模型。</p>\n  <p>SGLang通过<strong>Mamba Radix Tree</strong>实现前缀统一管理，并借助<strong>Elastic Memory Pool</strong>弹性调度KV Cache与Mamba State，在长上下文、多并发场景下提供高效推理和显存优化能力。</p>\n  <p>其次，为应对强化学习中策略<strong>权重频繁更新</strong>导致GPU空转、<strong>冷启动</strong>耗时过长的瓶颈。</p>\n  <p><strong>Mooncake</strong>基于Transfer Engine，采用异步预读、pipeline并行设计，显著压缩权重加载和模型启动时间，实现热更新与弹性扩容。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/be98a57805e3d84c48c1857be7f503ae.png\">\n  </section>\n  <p>实测效果显示：Kimi K2万亿参数模型的权重更新准备时间被压缩至20秒以内，63B模型的冷启动时间更是从85秒降至9秒。</p>\n  <p>此外，由于强化学习rollout不再是一次性推理，而是<strong>异步、多阶段、长度不可预测</strong>的过程。</p>\n  <p>换句话说，rollout中的长尾请求可能拖慢90%的训练时间，甚至可能出现跑了一整夜仍未完成任何step的情况。</p>\n  <p data-pm-slice=\"0 0 []\">针对这一问题，SGLang通过Server化+全异步执行、oversample与 partial rollout机制控制长尾请求，大幅缓解Agentic RL中的长尾问题，提高了训练效率。</p>\n  <p>最后，针对DeepSeek、GLM-4.5等MoE模型的fuse MoE、内存调度和负载均衡问题，SGLang持续重构执行路径与内存管理机制。</p>\n  <p>同时，<strong>Slime强化学习系统</strong>针对大规模GRPO与多阶段RL训练定制，实现训练系统与推理引擎的深度协同。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/bac2090772355f9faf101b45010be121.webp\">\n  </section>\n  <p>一个值得注意的细节是，这些推理系统级能力，并非只停留在某一类算力平台上。这些实践中的HiCache、Mooncake、GLM都均已能够在昇腾平台上直接运行，并进入实际推理流程。</p>\n  <p>而这些不约而同的支持，恰恰从侧面印证了当前昇腾硬件在推理系统生态的角色转变——</p>\n  <p>它已作为主流推理工作流中的后端之一，被自然纳入系统设计与工程实现之中。</p>\n  <p>在上述共性问题之下，活动中也展示了SGLang在昇腾平台上的最新进展，覆盖模型适配、性能优化及系统加速能力模块化沉淀。</p>\n  <p>主要亮点如下：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>\n    <section>模型优化：针对DeepSeek、Qwen系列等开源模型进行适配与性能提升，支持稠密、稀疏、多模态等架构，并支持Flux、Qwen-Image等多模态生成模型。</section>\n   </li>\n   <li>\n    <section>系统特性：HiCache L1/L2/L3直通缓存机制已落地，MTP完全适配昇腾平台，兼容GPU与NPU后端。</section>\n   </li>\n   <li>\n    <section>量化能力：推进昇腾侧量化与开源框架协同，支持压缩张量等多种量化方案。</section>\n   </li>\n   <li>\n    <section>推理模式：完善图模式支持，实现DeepSeek V3.2、Qwen-Next、Longcat等新模型的day0支持。</section>\n   </li>\n   <li>\n    <section>强化学习：支持SGLang VeRL等强化学习相关模型的推理与部署。</section>\n   </li>\n  </ul>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/fdeabf283e3fdf4ce163e94e5b938115.webp\">\n  </section>\n  <p>在具体的模型上，昇腾此次实现了对<strong>DeepSeek V3.2</strong>的<strong>Day 0</strong>支持，在PD分离、64K输入、3K输出场景下，推理吞吐达<strong>15TPS / 卡</strong>，TTFT约4秒，PD传输（HCCS）&lt; 8ms，TPOT ≈ 20毫秒。</p>\n  <p>为实现上述性能，团队在系统层面进行了多项优化：负载均衡方面，通过重新分配计算任务，使各CP rank计算量均衡。</p>\n  <p>融合算子方面，减少计算过程中的内存访问次数和Kernel启动开销。将多个连续的小算子合并为一个复合算子，使中间结果保留在高速缓存中，从而显著提升计算效率。</p>\n  <p><span data-pm-slice=\"0 0 []\">多流并行方面，通过Cube与Vector计算单元并行执行算子，提升计算资源利用率。</span></p>\n  <p>同时，在Cube计算路径中引入权重预取机制，实现数据搬运与计算阶段的重叠，减少访存等待带来的性能损耗。</p>\n  <p>这些优化让昇腾平台在大规模、高复杂度推理场景中，实现了<strong>高吞吐、低延迟、资源高效利用</strong>的表现。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/df67f35f989c0599ae3b53ea454fd376.webp\">\n  </section>\n  <p>针对<strong>Qwen</strong>的优化则包括通用能力增强（图模式、W8A8 量化、EAGLE3），为不同规模和形态等模型提供基础性能支撑。</p>\n  <p>同时，引入<strong>昇腾亲和性专项优化</strong>：利用多流并行，并在大EP（Expert Parallelism）场景中通过Dispatch/Combine流程将GMM计算融合处理，减少算子切换和中间调度开销，提升整体执行效率。</p>\n  <section>\n   <img decoding=\"async\" src=\"https://www.qbitai.com/wp-content/uploads/replace/2025/12/a4826ed642b95c205781fbee8320f7f5.webp\">\n  </section>\n  <p>除DeepSeek、Qwen外，SGLang在昇腾硬件上也已覆盖<strong>Kimi</strong>、<strong>LongChat</strong>等模型，新模型可在不改代码的前提下直接运行。</p>\n  <p>同时就像开头所说的，这些模型的所有代码均已合入SGLang主社区仓，开发者无需额外安装插件，直接拉取主仓代码即可使用。</p>\n  <p>昇腾表示这里的核心理念是<strong>尽量不动Models层，仅在底层完成硬件亲和与性能提升</strong>。</p>\n  <p>而这一系列进展背后，是昇腾与SGLang主仓的深度共建逻辑，也意味着AI算力与开源推理框架的融合进入新阶段：</p>\n  <p>从架构层面看，昇腾相关优化已下沉到SGL-kernel-NPU算子库，亲和算子能力与代码实现均在此集中维护演进。</p>\n  <p>Engine层作为核心优化区，支持EPLB、Graph Runner与MTP，覆盖GPU与NPU等多硬件后端以实现统一推理能力。</p>\n  <p>缓存与通信则依托HiCache完成L1/L2及L3-L1直通优化，最底层的SGL-kernel-NPU则承载昇腾加速算子、量化算子及传输接口，实现开源能力与昇腾性能的双向赋能。</p>\n  <p><span data-pm-slice=\"0 0 []\">整体来看，这些进展体现了昇腾与SGLang开源社区在推理系统层面的持续协同，也为后续更复杂推理与强化学习场景提供了稳定的工程基础。</span></p>\n  <h2>全面拥抱开源</h2>\n  <p>在这次活动中，我们了解到，昇腾是今年七月份才正式启动与SGLang的适配工作。薛曜表示，这一工作的目标很明确——<strong>全面拥抱开源、加速昇腾生态建设</strong>。</p>\n  <p data-pm-slice=\"0 0 []\">在过去5个多月里，<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 16px;font-family: Arial;text-align: left;letter-spacing: 1px !important;word-spacing: 1px !important;line-height: 2 !important;min-height: 1.5em !important;box-sizing: border-box !important;overflow-wrap: break-word !important;margin: 20px 16px !important;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">昇腾不仅补齐了多类主流模型的推理支持，还覆盖了强化学习训练、多模态理解与生成等关键场景，并在PD传输等系统层面持续优化，将</span><strong>SGLang on Ascend的整体性能推到了“可打”的水平</strong>。</p>\n  <p>此外，据现场披露，昇腾已基于SGLang已在真实业务场景中，对DeepSeek V3.2完成了灰度测试。这意味着相关能力已不再停留在实验或Demo阶段，而是进入了真实生产环境的验证周期。</p>\n  <p>从roadmap来看，昇腾接下来的演进方向也并非泛化扩展，而是<strong>明确围绕“推理系统”展开的系统性工程投入</strong>：</p>\n  <p>一方面，通过Zero Buffer、昇腾亲和加速库等机制，持续压榨单机与多机推理吞吐，服务高并发、低时延的真实业务负载；</p>\n  <p>另一方面，在基础软件层构建昇腾版Triton生态，与SGLang、vllm等开源引擎保持接口与演进节奏对齐，使模型上线、算子开发与性能调优形成可复用路径。</p>\n  <p>这些动作共同指向了一个清晰变化：昇腾不再只是“能否支持某个模型”的硬件选项，而是开始<strong>以推理系统为核心，被纳入开源工程的主线讨论与默认方案评估之中</strong>。</p>\n  <p>当模型、推理引擎与算力平台在工程层形成稳定协作，AI算力真正需要回答的问题，也将不再是“能不能跑”，而是“系统能不能长期跑、规模化、稳定地跑”。</p>\n  <p>因为说到底，高性能、易用性、开箱即用才是真道理。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "SGLang 推理引擎原生支持昇腾平台，实现主流大模型无需代码修改即可运行，并通过多项优化显著提升了 AI 推理在高并发、长上下文和强化学习场景下的性能与效率。",
+  "oneSentenceSummary": "SGLang 推理引擎原生支持昇腾平台，实现主流大模型无需代码修改即可运行，并通过多项优化显著提升了 AI 推理在高并发、长上下文和强化学习场景下的性能与效率。",
+  "summary": "文章介绍了 SGLang 推理引擎与昇腾算力平台深度融合的最新进展。在 SGLang AI 金融π对活动上，探讨了 Agent 应用对推理系统带来的高并发、长上下文、多轮推理和内存管理等工程挑战。SGLang 通过引入 HiCache 体系、Mamba Radix Tree、Elastic Memory Pool 等技术，解决了 KV Cache 显存占用大、内存管理复杂的问题，提升了推理吞吐和稳定性。针对强化学习中权重更新和冷启动瓶颈，Mooncake 技术实现了模型快速启动和权重热更新。此外，SGLang 还针对 MoE 模型和 Agentic RL 的长尾问题提供了解决方案。重点提到昇腾已作为 SGLang 原生支持的后端之一，实现了 DeepSeek、Qwen、GLM 等模型在昇腾上无需改代码即可运行，并在模型适配、性能优化和量化能力方面取得显著进展，尤其对 DeepSeek V3.2 实现 Day 0 支持。这些优化使得昇腾平台在高吞吐、低延迟场景表现出色，体现了昇腾与 SGLang 在推理系统层面深度协同，旨在通过全面拥抱开源加速生态建设，实现 AI 算力的高性能、易用性和开箱即用。",
+  "mainPoints": [
+    {
+      "point": "SGLang 原生支持昇腾平台，实现主流大模型开箱即用，无需修改代码。",
+      "explanation": "昇腾已成为 SGLang 主仓库原生支持的后端，DeepSeek、Qwen、GLM 等模型可直接运行，极大降低了开发者在昇腾上部署和使用大模型的门槛。"
+    },
+    {
+      "point": "SGLang 通过 HiCache、Mamba Radix Tree 等技术应对 Agent 应用带来的推理挑战。",
+      "explanation": "HiCache 将 KV Cache 扩展到 CPU 和远端存储，Mamba Radix Tree 优化混合模型，有效解决高并发、长上下文场景的显存和内存管理问题，提升推理效率。"
+    },
+    {
+      "point": "Mooncake 技术显著优化强化学习中的权重更新和模型冷启动时间。",
+      "explanation": "Mooncake 基于异步预读和流水线并行设计，将 Kimi K2 万亿参数模型的权重更新准备时间压缩至 20 秒以内，极大提高了 RL 训练效率。"
+    },
+    {
+      "point": "昇腾平台专为大模型推理进行多项深度优化，实现高吞吐、低延迟。",
+      "explanation": "包括负载均衡、融合算子、多流并行等系统级优化，使 DeepSeek V3.2 在昇腾上达到 15TPS/卡的高吞吐和低 TTFT，验证了昇腾在大规模推理场景的强大能力。"
+    },
+    {
+      "point": "昇腾全面拥抱开源，将推理系统作为核心投入，加速生态建设。",
+      "explanation": "昇腾不仅与 SGLang 深度共建，将优化下沉到算子库，还在基础软件层构建 Triton 生态，目标是从“能不能跑”转向“规模化、稳定地高性能运行”。"
+    }
+  ],
+  "keyQuotes": [
+    "昇腾已作为 SGLang 原生支持的后端之一进入主仓库，随着 SGLang 推理引擎的更新，DeepSeek、Qwen、GLM 等模型可以在不调整模型参数、不引入额外插件的情况下直接运行。",
+    "这次 SGLang AI 金融π对呈现的，并非零散技术点，而是一条清晰的推理工程演进路径------从缓存与内存体系，到权重更新、强化学习效率，再到算力与模型生态的协同。",
+    "SGLang 通过最新引入的 HiCache 体系，将 KV cache 扩展到 CPU 和远端存储，由 Cache Controller 自动管理 KV 卸载填装，并结合流水线化异步预取，显著降低了显存占用，提升了上下文推理的稳定性与吞吐。",
+    "昇腾表示这里的核心理念是尽量不动 Models 层，仅在底层完成硬件亲和与性能提升。",
+    "昇腾不再只是'能否支持某个模型'的硬件选项，而是开始以推理系统为核心，被纳入开源工程的主线讨论与默认方案评估之中。"
+  ],
+  "tags": [
+    "SGLang",
+    "昇腾",
+    "推理引擎",
+    "大模型",
+    "Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 90,
+  "wordCount": 3718,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1766327396000,
+  "publishDateStr": "2025-12-21",
+  "publishDateTimeStr": "2025-12-21 14:29:56"
+}

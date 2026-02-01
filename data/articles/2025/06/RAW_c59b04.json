@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c59b04",
+  "title": "Gemma 3n 发布：开发者指南",
+  "url": "https://simonwillison.net/2025/Jun/26/gemma-3n/#atom-everything",
+  "date": "2025-06-26 21:08:36",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/\">Introducing Gemma 3n: The developer guide</a></strong>. Extremely consequential new open weights model release from Google today:</p>\n   <blockquote>\n    <ul>\n     <li>\n      <p><strong>Multimodal by design:</strong> Gemma 3n natively supports image, audio, video, and text inputs and text outputs.</p></li>\n     <li>\n      <p><strong>Optimized for on-device:</strong> Engineered with a focus on efficiency, Gemma 3n models are available in two sizes based on <a href=\"https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/#per-layer-embeddings-(ple):-unlocking-more-memory-efficiency\"><strong>effective</strong></a> parameters: E2B and E4B. While their raw parameter count is 5B and 8B respectively, architectural innovations allow them to run with a memory footprint comparable to traditional 2B and 4B models, operating with as little as 2GB (E2B) and 3GB (E4B) of memory.</p></li>\n    </ul>\n   </blockquote>\n   <p>This is <strong>very</strong> exciting: a 2B and 4B model optimized for end-user devices which accepts text, images <em>and</em> audio as inputs!</p>\n   <p>Gemma 3n is also the most comprehensive day one launch I've seen for any model: Google partnered with \"AMD, Axolotl, Docker, Hugging Face, llama.cpp, LMStudio, MLX, NVIDIA, Ollama, RedHat, SGLang, Unsloth, and vLLM\" so there are dozens of ways to try this out right now.</p>\n   <p>So far I've run two variants on my Mac laptop. Ollama offer <a href=\"https://ollama.com/library/gemma3n\">a 7.5GB version</a> (full tag <code>gemma3n:e4b-it-q4_K_M0</code>) of the 4B model, which I ran like this:</p>\n   <pre><code>ollama pull gemma3n\nllm install llm-ollama\nllm -m gemma3n:latest \"Generate an SVG of a pelican riding a bicycle\"\n</code></pre>\n   <p>It drew me this:</p>\n   <p><img alt=\"The pelican looks a bit like a grey pig. It is floating above a bicycle that looks more like a rail cart.\" src=\"https://static.simonwillison.net/static/2025/gemma3n-ollama.jpg\"></p>\n   <p>The Ollama version doesn't appear to support image or audio input yet.</p>\n   <p>... but the <a href=\"https://github.com/Blaizzy/mlx-vlm\">mlx-vlm</a> version does!</p>\n   <p>First I tried that on <a href=\"https://static.simonwillison.net/static/2025/pelican-joke-request.wav\">this WAV file</a> like so (using a recipe adapted from <a href=\"https://www.youtube.com/watch?v=8-8R2UvUBrc\">Prince Canuma's video</a>):</p>\n   <pre><code>uv run --with mlx-vlm mlx_vlm.generate \\\n  --model gg-hf-gm/gemma-3n-E4B-it \\\n  --max-tokens 100 \\\n  --temperature 0.7 \\\n  --prompt \"Transcribe the following speech segment in English:\" \\\n  --audio pelican-joke-request.wav\n</code></pre>\n   <p>That downloaded a 15.74 GB bfloat16 version of the model and output the following correct transcription:</p>\n   <blockquote>\n    <p>Tell me a joke about a pelican.</p>\n   </blockquote>\n   <p>Then I had it draw me a pelican for good measure:</p>\n   <pre><code>uv run --with mlx-vlm mlx_vlm.generate \\\n  --model gg-hf-gm/gemma-3n-E4B-it \\\n  --max-tokens 100 \\\n  --temperature 0.7 \\\n  --prompt \"Generate an SVG of a pelican riding a bicycle\"\n</code></pre>\n   <p>I quite like this one:</p>\n   <p><img alt=\"The bicycle is a sin wave, but you can make out which bits are the frame and the wheels. The pelican is white with a black triangular bill. It's a much better attempt than the Ollama one.\" src=\"https://static.simonwillison.net/static/2025/gemma3n-mlx-vlm.jpg\"></p>\n   <p>It's interesting to see such a striking visual difference between those 7.5GB and 15GB model quantizations.</p>\n   <p>Finally, I had it describe the image it had just created:</p>\n   <pre><code>uv run --with mlx-vlm mlx_vlm.generate \\\n  --model gg-hf-gm/gemma-3n-E4B-it \\\n  --max-tokens 1000 \\\n  --prompt \"Describe image\" \\\n  --image gemma3n-mlx-vlm.jpg\n</code></pre>\n   <p>Here's what I got back - it thought this was a chemical diagram!</p>\n   <blockquote>\n    <p>The image is a cartoon-style illustration depicting a molecular structure against a light blue background. The structure is composed of several differently colored and shaped elements connected by curved black lines.</p>\n    <p>Here's a breakdown of the elements:</p>\n    <ul>\n     <li><strong>Large Black Circles:</strong> There are two large, solid black circles, likely representing larger molecules or components.</li>\n     <li><strong>Cream-Colored Oval:</strong> A prominent cream-colored oval shape is centrally located and connected to other elements. It has a smaller, darker cream-colored sphere attached to its left side.</li>\n     <li><strong>Red Oval:</strong> A smaller, solid red oval is positioned near one of the black circles and connected to the cream-colored oval.</li>\n     <li><strong>Black Lines:</strong> These lines act as bonds, connecting the various molecular components. They are curved and dynamic, suggesting movement or interaction.</li>\n     <li><strong>Triangular Shape:</strong> A small black triangle is attached to the smaller cream-colored sphere.</li>\n     <li><strong>Letter \"I\":</strong> The letter \"I\" appears twice, likely labeling specific parts of the molecule.</li>\n    </ul>\n    <p>The overall impression is of a simplified representation of a biological molecule, possibly a protein or a complex organic compound. The use of different colors helps to distinguish the various components within the structure.</p>\n   </blockquote>\n   <p></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "谷歌 Gemma 3n 是专为开发者设计的开源权重模型，支持多模态处理，通过创新的内存优化技术实现高效的设备端部署，并获得了 AMD 等顶级科技合作伙伴的广泛生态支持。",
+  "oneSentenceSummary": "谷歌 Gemma 3n 是专为开发者设计的开源权重模型，支持多模态处理，通过创新的内存优化技术实现高效的设备端部署，并获得了 AMD 等顶级科技合作伙伴的广泛生态支持。",
+  "summary": "本文介绍了谷歌最新发布的开源权重模型 Gemma 3n，该模型支持文本、图像、音频和视频等多模态输入，并通过创新的内存优化技术特别适合终端设备部署。文章重点解析了模型的两种规格：E2B 和 E4B 版本，其内存占用分别仅为 2GB 和 3GB，却能实现与传统 2B/4B 模型相当的性能。通过与 AMD、Hugging Face 和 NVIDIA 等合作伙伴的深度整合，开发者可以通过 Ollama 和 mlx-vlm 等工具快速上手。实际演示显示，模型在 SVG 图像生成（7.5GB 与 15GB 量化版本存在显著画质差异）和音频转写方面表现出色，但也暴露出在图像描述准确性方面的不足。",
+  "mainPoints": [
+    {
+      "point": "Gemma 3n 是支持文本/图像/音频/视频输入的多模态模型",
+      "explanation": "这种全媒体处理能力让开发者能够打造跨模态的智能应用，大幅提升用户体验和功能丰富度。"
+    },
+    {
+      "point": "突破性架构实现终端设备部署，内存效率卓越",
+      "explanation": "通过创新的分层嵌入架构，E2B 和 E4B 版本在仅需 2GB/3GB 内存的情况下，就能达到传统 2B/4B 模型的性能水准。"
+    },
+    {
+      "point": "完善的生态支持实现开箱即用",
+      "explanation": "与 AMD、Hugging Face 等厂商的战略合作，提供了从 Ollama 到 mlx-vlm 的多样化部署方案，作者实测的图像生成和语音转写功能已验证其可用性。"
+    },
+    {
+      "point": "实践验证揭示模型优势与待改进点",
+      "explanation": "实测既展现了多模态生成的强大能力，也暴露出当前局限，如将自生成图像误判为化学结构图等识别误差。"
+    }
+  ],
+  "keyQuotes": [
+    "Gemma 3n 原生支持图像/音频/视频/文本输入及文本输出功能",
+    "以高效为核心设计的 Gemma 3n 提供两种规格：基于实际有效参数的 E2B 和 E4B 版本",
+    "谷歌联合 AMD、Axolotl、Docker、Hugging Face、llama.cpp 等十余家合作伙伴，提供数十种即用型部署方案",
+    "值得注意的是，7.5GB 与 15GB 量化版本在图像生成质量上存在肉眼可见的显著差异",
+    "整体呈现效果类似于简化版的生物大分子结构图，可能是某种蛋白质或复杂有机化合物"
+  ],
+  "tags": [
+    "Gemma 3n",
+    "多模态生成",
+    "终端设备 AI",
+    "模型量化",
+    "谷歌"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 577,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750972116000,
+  "publishDateStr": "2025-06-26",
+  "publishDateTimeStr": "2025-06-26 21:08:36"
+}

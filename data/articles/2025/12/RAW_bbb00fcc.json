@@ -1,0 +1,55 @@
+{
+  "id": "RAW_bbb00fcc",
+  "title": "OpenAI 突然开源新模型！99.9%的权重是 0，新稀疏性方法代替 MoE",
+  "url": "https://www.qbitai.com/2025/12/360864.html",
+  "date": "2025-12-14 06:27:09",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"2 1 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"31\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"32\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">破解AI胡说八道的关键，居然是给大模型砍断99.9%的连接线？</p>\n  <p data-track=\"3\">OpenAI悄悄开源新模型，仅有0.4B参数，且99.9%的权重为零。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083705_11f198171effb350a5b0438fbdd44b86.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"518\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">也就是<strong>Circuit Sparsity</strong>技术的开源实现。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083705_41e0afa06e2b8ad28fc03a9c7c145dc5.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"885\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">这是一种通过人为约束模型内部连接的稀疏性，让模型计算过程可拆解、可理解的大语言模型变体，本质上是为了解决传统稠密Transformer的黑箱问题，让内部的计算电路能被人类清晰解读，知道AI是如何做决策的，避免轻易相信AI的胡话（doge）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083705_643ee0e36b15d4c7e05b21c2f5a879eb.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"667\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">更有人直言这种「极致稀疏+功能解耦」的思路可能会让当下热门的MoE（混合专家模型）走上末路。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083705_8023e129717a8a3d3853d00a75af60e1.png\" data-ic=\"false\" data-width=\"942\" data-height=\"904\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">那么，当Transformer的权重被训练到近乎全0，会发生什么呢？</p>\n  <p data-track=\"9\">先说说为啥这个模型的思考过程能像电路图一样好懂。</p>\n  <p data-track=\"10\">咱们平时用的传统大模型，内部神经元连接得密密麻麻，权重矩阵几乎全为非零值，信息传递呈现出高度叠加状态，就像一团扯不开的乱线，没人能说清它是怎么得出某个结论的。</p>\n  <p data-track=\"11\">而Circuit Sparsity模型反其道而行之，基于GPT-2风格的Transformer架构训练时，通过严格约束让权重的L0范数极小，直接把99.9%的无效连接砍断，只留下千分之一的有效通路。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083706_94663e42fa71c058853f07bf4ad3e4c6.png\" data-ic=\"false\" data-width=\"918\" data-height=\"618\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">这些留存的非零权重连接就像电路图里的导线，信息只能沿着固定路径传递；同时，模型还会通过<strong>均值屏蔽</strong>剪枝方法，为每个任务拆出专属的<strong>最小电路</strong>。</p>\n  <p data-track=\"13\">比如处理Python引号闭合任务时，仅需2个MLP神经元和1个注意力头就能构成核心电路，包含专门的引号检测器、类型分类器等功能模块，就像电路图里的电阻、电容，各自管各自的事。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083706_9c68ad07a01e92788e89b7fcc93c752a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"1088\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"14\">实验数据显示，在预训练损失相同的前提下，稀疏模型的任务专属电路规模比稠密模型小16倍，且具备严格的必要性与充分性——保留这些模块就能完成任务，删掉任一节点则直接失效。</p>\n  <p data-track=\"15\">这样，每一步的逻辑都能精准追踪。</p>\n  <p data-track=\"16\">那这时候就不得不提当下主流的MoE模型了。</p>\n  <p data-track=\"17\">MoE的核心思路是通过门控网络将模型拆分为多个专家子网络，每个专家负责处理一部分任务，靠路由器分配任务来提升效率，本质上是用<strong>拆分专家</strong>这种粗糙的方式近似稀疏性，目的只是为了适配硬件的稠密矩阵计算需求。</p>\n  <p data-track=\"18\">但这种架构存在致命缺陷：</p>\n  <ul>\n   <li data-track=\"19\">一是会割裂模型的特征流形，导致专家同质化严重、知识冗余等问题，不同专家间的信息协同依赖复杂的负载均衡损失函数调控，稳定性堪忧；</li>\n   <li data-track=\"20\">二是专家功能边界模糊，无法像Circuit Sparsity模型那样实现微观机制的精准拆解。</li>\n  </ul>\n  <p data-track=\"21\">反观Circuit Sparsity，追求的是模型<strong>原生的稀疏性</strong>，通过把特征投射到超大维度，再严格限制有效激活的节点数量，从设计上就让每个特征变得单义、正交，从根源上解决了传统模型<strong>一个概念分散在多个节点</strong>的叠加问题，不用靠路由器这种hack手段也能避免信息干扰。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"OpenAI突然开源新模型！99.9%的权重是0，新稀疏性方法代替MoE\" src=\"https://image.jido.dev/20251214083705_be3bf7b44b7c968bf8aad6f3724be44c.png\" data-ic=\"false\" data-width=\"792\" data-height=\"862\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">不过Circuit Sparsity目前也有明显的短板，最突出的就是算力成本极高。</p>\n  <p data-track=\"23\">训练和推理的计算量是传统稠密模型的100-1000倍，暂时还达不到顶尖大模型的能力；</p>\n  <p data-track=\"24\">而MoE模型在算力效率和性能平衡上已经很成熟，短期内依然会是工业界的主流选择。</p>\n  <p data-track=\"25\">并且，这项工作也只是AI可解释性探索的早期一步，未来团队计划将技术扩展到更大的模型，解锁更复杂的推理电路。</p>\n  <p data-track=\"26\">目前，团队发现有两种克服稀疏模型训练效率低下的方法：</p>\n  <ul>\n   <li data-track=\"27\">一个是直接从现有的密集模型中提取稀疏电路，这样直接复用基础框架，不额外训练稀疏模型，能大幅降低成本；</li>\n   <li data-track=\"28\">另一种途径则是不放弃从头训练可解释稀疏模型的这种思路，但针对训练慢、成本高的短板，<strong>从技术层面优化训练机制</strong>，造出原生可解释、且能高效落地的模型。</li>\n  </ul>\n  <p data-track=\"29\">那么就期待研究人员后续用更成熟的工具或技术，逐步揭开大模型的黑箱面纱了。</p>\n  <p data-track=\"30\">参考链接：\n   <br>\n   [1]https://openai.com/zh-Hans-CN/index/understanding-neural-networks-through-sparse-circuits/\n   <br>\n   [2]https://x.com/byebyescaling/status/1999672833778287033?s=20</p>\n  <p data-track=\"33\">— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenAI 开源了一项名为 Circuit Sparsity 的新技术，通过极致的权重稀疏性来提高大模型的可解释性，有望替代 MoE。",
+  "oneSentenceSummary": "OpenAI 开源了一项名为 Circuit Sparsity 的新技术，通过极致的权重稀疏性来提高大模型的可解释性，有望替代 MoE。",
+  "summary": "文章介绍了 OpenAI 开源的 Circuit Sparsity 技术，该技术通过将大模型 99.9%的权重置零，使模型的计算过程可拆解、可理解，旨在解决传统 Transformer 模型的黑箱问题，清晰解读 AI 的决策过程。这种方法允许为特定任务构建最小的、功能解耦的“计算电路”，从而实现对模型逻辑的精准追踪。文章对比了 Circuit Sparsity 与当前主流的 MoE 模型，指出 MoE 通过粗糙的专家拆分实现稀疏性，存在专家同质化和功能边界模糊等问题，而 Circuit Sparsity 则追求原生稀疏性，从设计上避免信息干扰。尽管目前 Circuit Sparsity 面临算力成本极高的短板，但研究团队正在探索从现有密集模型中提取稀疏电路或优化训练机制来克服这些挑战，并致力于将其扩展到更大的模型以增强 AI 的可解释性。",
+  "mainPoints": [
+    {
+      "point": "Circuit Sparsity 通过极致稀疏性提升 AI 可解释性，解决黑箱问题。",
+      "explanation": "该技术将模型 99.9%的权重设为零，使得信息传递路径清晰，形成任务专属的“计算电路”，从而实现 AI 决策过程的透明化和可追溯性。"
+    },
+    {
+      "point": "Circuit Sparsity 与 MoE 模型在稀疏性方法和功能解耦上存在显著差异。",
+      "explanation": "Circuit Sparsity 追求原生稀疏性与功能精确解耦，而 MoE 通过粗糙的专家拆分组来实现稀疏性，可能导致专家同质化和不稳定的信息协同。"
+    },
+    {
+      "point": "尽管当前算力成本高昂，Circuit Sparsity 仍具巨大潜力。",
+      "explanation": "目前训练和推理成本远高于稠密模型，但 OpenAI 正在研究从现有模型提取稀疏电路或优化训练机制，以降低成本并扩展至更大模型。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 悄悄开源新模型，仅有 0.4B 参数，且 99.9%的权重为零。",
+    "这是一种通过人为约束模型内部连接的稀疏性，让模型计算过程可拆解、可理解的大语言模型变体。",
+    "更有人直言这种「极致稀疏+功能解耦」的思路可能会让当下热门的 MoE（混合专家模型）走上末路。",
+    "稀疏模型的任务专属电路规模比稠密模型小 16 倍，且具备严格的必要性与充分性——保留这些模块就能完成任务，删掉任一节点则直接失效。",
+    "Circuit Sparsity 目前也有明显的短板，最突出的就是算力成本极高。训练和推理的计算量是传统稠密模型的 100-1000 倍。"
+  ],
+  "tags": [
+    "AI可解释性",
+    "稀疏模型",
+    "Circuit Sparsity",
+    "MoE",
+    "大语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1496,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1765693629000,
+  "publishDateStr": "2025-12-14",
+  "publishDateTimeStr": "2025-12-14 06:27:09"
+}

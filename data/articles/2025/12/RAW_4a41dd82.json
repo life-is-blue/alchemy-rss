@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4a41dd82",
+  "title": "Vitest 4.0 发布：稳定浏览器模式和可视化回归测试就绪",
+  "url": "https://www.infoq.com/news/2025/12/vitest-4-browser-mode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-05 14:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://vitest.dev/\">Vitest</a>, the Vite-native testing framework, has released version 4.0, delivering improvements to browser-based testing, visual regression capabilities, and developer experience enhancements.</p>\n   <p>Vitest 4.0 introduces several major features, including <a href=\"https://vitest.dev/guide/browser/\">Browser Mode</a> graduating to stable status, built-in visual regression testing support, Playwright Traces integration, and enhanced debugging capabilities. The release also includes breaking changes that require developers to review the migration path before upgrading.</p>\n   <p>A significant new feature in Vitest 4.0 is the stabilization of Browser Mode, which has been in experimental status since earlier versions. This feature allows developers to run tests in real browsers rather than simulated environments like <a href=\"https://github.com/jsdom/jsdom\">jsdom</a> or <a href=\"https://github.com/capricorn86/happy-dom\">happy-dom</a>, providing more accurate testing results. To use Browser Mode, developers now need to install separate provider packages such as <code>@vitest/browser-playwright</code>, <code>@vitest/browser-webdriverio</code>, or <code>@vitest/browser-preview</code>. This change simplifies working with custom options and eliminates the need for TypeScript reference directives.</p>\n   <p>The context import location has also changed. Previously imported from <code>@vitest/browser/context</code>, developers should now import from vitest/browser directly, though the old import path will continue working until the next major version for compatibility.</p>\n   <p>Visual regression testing in Vitest 4.0 can be accomplished through the <code>toMatchScreenshot</code> assertion. Vitest captures screenshots of UI components and pages, then compares them against reference images to detect unintended visual changes. Alongside this feature, Vitest introduces a <code>toBeInViewport</code> matcher that allows developers to check if an element is currently in the viewport using the IntersectionObserver API.</p>\n   <p>Vitest 4.0 supports generating Playwright Traces for browser tests. Developers can enable tracing by setting the trace option in the test.browser configuration or passing the <code>browser.trace</code> flag with options including on, off, on-first-retry, on-all-retries, and retain-on-failure. The traces are available in reporters as annotations, and can be viewed using the Playwright Trace Viewer.</p>\n   <p>The vscode extension now supports a Debug Test button when running browser tests, improving the debugging experience. Developers can also start Vitest with the inspect flag when using playwright and webdriverio providers to connect to DevTools manually.</p>\n   <p>Reporter updates include the removal of the basic reporter, which can be replaced with the default reporter using <code>summary: false</code>. The default reporter now only prints tests in a tree format when running a single test file, while a new tree reporter is available for developers who prefer always seeing tests as a tree. The verbose reporter now consistently prints tests one by one when finished, whereas previously this behaviour only occurred in CI environments.</p>\n   <p>The community response to Vitest 4.0 has highlighted several key improvements. A Reddit user <a href=\"https://www.reddit.com/r/javascript/comments/1odq2t9/comment/nky8uve/\">noted</a> that having visual regression testing natively integrated means one less dependency to manage compared to bolt-on solutions like Percy or Chromatic. The same developer praised the developer experience improvements, stating that watch mode performance has been consistently better than Jest, and that Vitest now feels like a more complete testing solution with features that previously required separate tools.</p>\n   <p>However, some developers have encountered issues during the upgrade. A recent&nbsp;<a href=\"https://github.com/vitest-dev/vitest/issues/9055\">GitHub issue</a> reports a TypeScript error when using Vitest 4.x with Vite versions 7.1.0 or earlier, despite Vitest 4.x listing vite versions ^6.0.0 or ^7.0.0 as compatible dependencies. The error manifests as a missing <code>createImportMeta</code> property on ModuleRunnerOptions, and only occurs when the vitest.config.ts file is included in the TypeScript context. The issue has been tagged as a minor bug affecting specific usage patterns.</p>\n   <p>Vitest 4.0 has breaking changes that could affect existing projects. The Vitest team has published a detailed <a href=\"https://vitest.dev/guide/migration#vitest-4\">Migration Guide</a> to help developers transition from earlier versions. The complete list of changes is available in the <a href=\"https://github.com/vitest-dev/vitest/releases/tag/v4.0.0\">Vitest 4 Changelog</a> on GitHub.</p>\n   <p>According to the VoidZero blog, Vitest usage has grown from 7 million to 17 million weekly downloads in the past year.</p>\n   <p>Vitest is an open-source testing framework developed for Vite projects but can be used independently. It provides Jest-compatible APIs including expect, snapshot, and coverage features, with first-class support for ESM, TypeScript, and JSX powered by esbuild.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vitest Team Releases Version 4.0 with Stable Browser Mode and Visual Regression Testing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/vitest-4-browser-mode/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764943200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vitest 4.0 引入稳定浏览器模式、内置可视化回归，并增强开发者体验。",
+  "oneSentenceSummary": "Vitest 4.0 引入稳定浏览器模式、内置可视化回归，并增强开发者体验。",
+  "summary": "Vitest，这款 Vite 原生测试框架，发布了 4.0 版本，在浏览器测试和可视化回归测试方面带来了显著进展。主要功能包括稳定浏览器模式，允许测试在真实浏览器中运行，以提高准确性；集成了 toMatchScreenshot 的可视化回归测试，用于检测 UI 变化。此外，新版本还增加了 Playwright Traces 集成，通过 VSCode 扩展改进了调试功能，并优化了报告器行为。Vitest 因其开发者体验和性能而备受赞誉，但同时也注意到与旧版本 Vite 的 TypeScript 兼容性存在一个小问题。此版本包含重大更改，并提供了详细的迁移指南。",
+  "mainPoints": [
+    {
+      "point": "Vitest 4.0 稳定了浏览器模式，提供更准确的真实浏览器测试。",
+      "explanation": "从实验性转为稳定，浏览器模式支持直接在浏览器中运行测试，提供比模拟环境更可靠的结果，并需要新的提供者包（provider）。"
+    },
+    {
+      "point": "集成的可视化回归测试，让 UI 变更检测更轻松。",
+      "explanation": "新的 toMatchScreenshot 断言和 toBeInViewport 匹配器允许开发人员轻松捕获和比较 UI 组件的屏幕截图，从而简化视觉质量保证。"
+    },
+    {
+      "point": "通过调试和性能改进，增强开发者体验。",
+      "explanation": "例如 VSCode 浏览器测试调试按钮、Playwright Traces 以及持续强大的监听模式性能等功能，显著提高了开发工作流程效率。"
+    }
+  ],
+  "keyQuotes": [
+    "Vitest 4.0 带来多项重大更新，包括浏览器模式升级为稳定版、内置可视化回归测试支持、Playwright Traces 集成以及更强大的调试功能。",
+    "Vitest 4.0 的一个重要新特性是稳定浏览器模式，该功能自早期版本以来一直处于实验阶段。现在，开发者可以在真实浏览器中（而非模拟环境）运行测试了。",
+    "一位 Reddit 用户指出，与 Percy 或 Chromatic 等附加解决方案相比，原生集成的可视化回归测试意味着需要管理的依赖项少了一个。",
+    "同一位开发者对开发者体验的改进赞不绝口，称监听模式的性能一直优于 Jest，而且现在的 Vitest 感觉像是一个更完善的测试解决方案。"
+  ],
+  "tags": [
+    "测试框架",
+    "Vitest",
+    "Vite",
+    "浏览器测试",
+    "可视化回归"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 640,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764943200000,
+  "publishDateStr": "2025-12-05",
+  "publishDateTimeStr": "2025-12-05 14:00:00"
+}

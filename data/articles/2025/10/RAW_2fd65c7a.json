@@ -1,0 +1,54 @@
+{
+  "id": "RAW_2fd65c7a",
+  "title": "Slack 安全：新型异常事件响应架构解析",
+  "url": "https://www.infoq.com/news/2025/10/slack-aer-security-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-17 14:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Slack has launched a <a href=\"https://slack.engineering/building-slacks-anomaly-event-response/\">new security system called Anomaly Event Response (AER)</a> to detect and respond to suspicious activity in real time. The system is designed to reduce the time between detection and mitigation, helping organizations prevent potential security breaches before they escalate.</p>\n   <p>AER is a native security feature that autonomously identifies high-confidence threat actor behaviors on the Slack platform. When suspicious activity is detected, the system can automatically terminate the associated user sessions, reducing the security detection and response gap from potential days or hours to minutes.\n    <br>\n    <br>\n    Slack engineers <a href=\"https://www.linkedin.com/in/nlehotsky/\">Nathan Lehotsky</a> and <a href=\"https://www.linkedin.com/in/ryan-p-358605/\">Ryan Persaud</a> emphasized the company’s approach to security:</p>\n   <blockquote>\n    <p>&nbsp;Trust is our number one core value. We believe security is a shared responsibility between us and our customers by empowering them with data and tools to build security solutions while also fostering a secure platform and neutralizing threats.</p>\n   </blockquote>\n   <p>The architecture of Anomaly Event Response consists of three main components: a detection engine, a decision framework, and a response orchestrator. The detection engine continuously monitors billions of Slack events daily, applying rule-based heuristics and dynamic thresholds tailored to each organization’s usage patterns. It identifies unusual activities such as logins from Tor exit nodes, rapid file downloads, excessive API calls, session fingerprint mismatches, and non-standard user agents.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/10/slack-aer-security-system/news/2025/10/slack-aer-security-system/en/resources/1aer-simple-diagram-1759622419144.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/slack-aer-security-system/en/resources/1aer-simple-diagram-1759622419144.jpeg\" rel=\"share\"></p>\n   <p><em>Slack AER System Architecture (Source: <a href=\"https://slack.engineering/building-slacks-anomaly-event-response/\">Slack Engineering Blog Post</a>)</em></p>\n   <p>When a potential threat is detected, the decision framework validates the anomaly against internal rules and the organization’s configuration. This step reduces false positives and ensures that only genuine threats trigger automated actions. The response orchestrator then executes pre-defined actions, including terminating affected sessions, generating audit logs, and notifying relevant security teams. Notification logic ensures alerts are not duplicated for users holding multiple roles, keeping incident response manageable.</p>\n   <p>Slack provides <a href=\"https://docs.slack.dev/reference/audit-logs-api/methods-actions-reference/#actions\">comprehensive audit logs</a> to Enterprise customers, recording when entities take actions on the platform. AER extends this with <a href=\"https://slack.engineering/slack-audit-logs-and-anomalies/\">anomaly audit logs</a>, which automatically link detected anomalies to responses. While full integration into broader security solutions may not be feasible for all organizations, AER offers an out-of-the-box solution for Enterprise Grid customers, usable independently or as part of a larger security strategy.</p>\n   <p>According to Slack engineers, the system is configurable, allowing organizations to determine which types of anomalies trigger need automated responses and which are only logged. Audit logs maintain a complete history of each detected anomaly and the corresponding automated response, helping organizations investigate incidents, verify actions, and maintain compliance with internal policies or regulatory requirements.</p>\n   <p>As per the Slack engineering team, AER’s approach reduces the need for manual intervention, improves transparency, and ensures that security actions are fully auditable. By bridging detection and automated response, the system allows security teams to focus on higher-priority investigations while routine anomalies are handled efficiently.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Slack Security: Inside the New Anomaly Event Response Architecture\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/slack-aer-security-system/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1760709600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Slack 的新型异常事件响应 (AER) 系统提供实时、自主检测和自动响应可疑活动的功能，从而显著缩短安全漏洞缓解时间。该系统适用于企业级应用。",
+  "oneSentenceSummary": "Slack 的新型异常事件响应 (AER) 系统提供实时、自主检测和自动响应可疑活动的功能，从而显著缩短安全漏洞缓解时间。该系统适用于企业级应用。",
+  "summary": "本文介绍了 Slack 的异常事件响应 (AER)，这是一种新颖的安全系统，专为实时检测和自动缓解平台上的可疑活动而设计。AER 通过持续监控海量日常事件，自主识别高置信度的威胁行为，例如来自 Tor 出口节点的登录、快速文件下载或过多的 API 调用。其架构由一个检测引擎组成，该引擎利用基于规则的启发式方法和动态阈值；一个用于验证异常并最大限度地减少误报的决策框架；以及一个执行预定义操作（如会话终止和安全团队通知）的响应协调器。该系统旨在显著缩短安全检测和响应差距，从潜在的几天或几小时缩短到仅仅几分钟，从而减少手动干预的需求，并使安全团队能够专注于更高优先级的调查。AER 还提供全面的、可链接的审计日志，并提供可配置性，使其成为企业网格客户增强透明度和合规性的强大、开箱即用的解决方案。",
+  "mainPoints": [
+    {
+      "point": "AER 通过自主、实时的威胁响应，显著缩短了安全检测到缓解的响应时间。",
+      "explanation": "该系统自动识别高置信度的威胁行为，并可在几分钟内终止受影响的用户会话，从而防止潜在的安全漏洞升级。"
+    },
+    {
+      "point": "AER 的架构集成了持续事件监控、异常验证和自动操作执行。",
+      "explanation": "其检测引擎监控海量事件，决策框架过滤误报，协调器执行预定义的操作，确保高效、准确地处理威胁。"
+    },
+    {
+      "point": "该系统提供全面的、可审计的安全措施，从而增强企业用户的透明度和合规性。",
+      "explanation": "异常审计日志自动将检测到的威胁链接到相应的自动响应，为调查、验证以及遵守内部策略和监管要求提供完整的历史记录。"
+    }
+  ],
+  "keyQuotes": [
+    "信任是我们的首要核心价值观。我们相信安全是我们和客户之间的共同责任，通过为他们提供数据和工具来构建安全解决方案，同时培养一个安全的平台并消除威胁。",
+    "该系统旨在缩短检测和缓解之间的时间，帮助组织在潜在的安全漏洞升级之前加以预防。",
+    "当检测到可疑活动时，系统可以自动终止相关的用户会话，从而将安全检测和响应差距从潜在的几天或几小时缩短到几分钟。",
+    "通过桥接检测和自动响应，该系统使安全团队能够专注于更高优先级的调查，同时高效地处理日常异常。"
+  ],
+  "tags": [
+    "安全运营",
+    "异常检测",
+    "平台安全",
+    "实时检测",
+    "自动响应"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 448,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760709600000,
+  "publishDateStr": "2025-10-17",
+  "publishDateTimeStr": "2025-10-17 14:00:00"
+}

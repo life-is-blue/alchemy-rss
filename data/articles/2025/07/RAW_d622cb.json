@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d622cb",
+  "title": "用动作分块突破 RL 极限，伯克利引入模仿学习，超越离线/在线 SOTA ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-14-5",
+  "date": "2025-07-14 05:23:16",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>如今，强化学习（Reinforcement Learning，RL）在多个领域已取得显著成果。</p>\n  <p>在实际应用中，具有长时间跨度和稀疏奖励特征的任务非常常见，而强化学习方法在这类任务中的表现仍难令人满意。</p>\n  <p>传统强化学习方法在此类任务中的探索能力常常不足，因为只有在执行一系列较长的动作序列后才能获得奖励，这导致合理时间内找到有效策略变得极其困难。</p>\n  <p><strong>假如将模仿学习（Imitation Learning, IL）的思路引入强化学习方法，能否改善这一情况呢？</strong></p>\n  <p>模仿学习通过观察专家的行为并模仿其策略来学习，通常用于强化学习的早期阶段，尤其是在状态空间和动作空间巨大且难以设计奖励函数的场景。</p>\n  <p>近年来，模仿学习不仅在传统的强化学习中取得了进展，也开始对大语言模型（LLM）产生一定影响。近日，加州大学伯克利分校的研究者提出了一种名为 <strong>Q-chunking</strong> 的方法，该方法将动作分块（action chunking）—— 一种在模仿学习中取得成功的技术 —— 引入到基于时序差分（Temporal Difference, TD）的强化学习中。</p>\n  <p>该方法主要解决两个核心问题：一是通过时间上连贯的动作序列提升探索效率；二是在避免传统 n 步回报引入偏差的前提下，实现更快速的值传播。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e45ebb8b-7a57-45c7-7d8f-e7d8e5d98c00/public\" alt=\"image.png\" data-ratio=\"0.362962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496028\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/83d97596-9551-45cd-adae-b8c7f4c54602/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：Reinforcement Learning with Action Chunking</p></li>\n   <li>\n    <p>论文地址：https://www.alphaxiv.org/overview/2507.07969v1</p></li>\n   <li>\n    <p>代码地址：https://github.com/ColinQiyangLi/qc</p></li>\n  </ul>\n  <p>如下图 1 左所示，Q-chunking（1）使用动作分块来实现快速的价值回传，（2）通过时间连贯的动作进行有效探索。图 1 右中，本文方法首先在离线数据集上进行 100 万步的预训练（灰色部分），然后使用在线数据更新，再进行另外 100 万步的训练（白色部分）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b9a90f26-a25e-41be-6bb8-b11ed6937700/public\" alt=\"image.png\" data-ratio=\"0.6037037037037037\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496029\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/f717bf92-e517-448f-9d66-f7fbd37368cb/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <b data-pm-slice=\"0 0 []\">问题表述与研究动机</b>\n  </section>\n  <p>Q-chunking 旨在解决标准强化学习方法在复杂操作任务中存在的关键局限性。</p>\n  <p>在传统强化学习中，智能体在每一个时间步上逐一选择动作，这常常导致探索策略效率低下，表现为抖动、时间不连贯的动作序列。这一问题在<strong>稀疏奖励环境</strong>中尤为严重 —— 在此类环境中，智能体必须执行较长的、协调一致的动作序列才能获得有效反馈。</p>\n  <p>研究者提出了一个关键见解：尽管马尔可夫决策过程中的最优策略本质上是马尔可夫性的，但<strong>探索过程却可以从非马尔可夫性、时间上扩展的动作中显著受益。</strong>这一观察促使他们将「动作分块」这一原本主要用于模仿学习的策略引入到时序差分学习中。</p>\n  <p>该方法特别面向<strong>离线到在线</strong>的强化学习场景（offline-to-online RL），即智能体先从预先收集的数据集中进行学习，再通过在线交互进行微调。这一设定在机器人应用中尤为重要，因为在线数据采集成本高且可能存在安全风险。</p>\n  <section>\n   <strong>方法概览</strong>\n  </section>\n  <p>Q-chunking 将标准的 Q-learning 扩展至<strong>时间扩展的动作空间</strong>，使策略不再仅预测单一步骤的动作，而是预测连续 h 步的动作序列。该方法主要包含两个核心组成部分：</p>\n  <section>\n   <b data-pm-slice=\"0 0 []\">扩展动作空间学习</b>\n  </section>\n  <p>传统方法学习的是针对单步动作的策略 π(aₜ | sₜ) 和 Q 函数 Q (sₜ, aₜ)，而 Q-chunking 学习的是：</p>\n  <p>* 块状策略（Chunked Policy）：π_ψ(aₜ:ₜ₊ₕ | sₜ)</p>\n  <p>* 块状 Q 函数（Chunked Q-function）：Q_θ(sₜ, aₜ:ₜ₊ₕ)</p>\n  <p>核心创新体现在时间差分损失（TD loss）的构造上。块状 Q 函数的更新方式如下：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c132b413-069f-42a9-5a63-037b3492a800/public\" alt=\"image.png\" data-ratio=\"0.18796296296296297\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496030\" data-original-style=\"width: 429px;height: 81px;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/68b5d000-ac5d-49fa-bafa-9622c27339d9/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>该形式实现了<strong>无偏的 h 步的值传播</strong>，因为 Q 函数以整个动作序列作为输入，从而消除了传统 n 步回报中存在的离策略偏差（off-policy bias）。</p>\n  <section>\n   <strong>行为约束</strong>\n  </section>\n  <p>为了保证时间上的连贯性探索，并有效利用离线数据，Q-chunking 在扩展动作空间中对学习到的策略施加了行为约束，使其保持接近离线数据分布。该约束表达如下：</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/06cbf806-0b6e-4df4-6890-048d39a0b700/public\" alt=\"image.png\" data-ratio=\"0.15668202764976957\" data-type=\"png\" data-w=\"868\" data-imgfileid=\"503496031\" data-original-style=\"width: 445px;height: 70px;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/c33fa55c-7a58-41b5-8f9f-6e9e03c11737/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>其中，D 表示一种距离度量方法，π_β 是来自离线数据集的行为策略。</p>\n  <p><strong>算法实现</strong></p>\n  <p>研究者展示了Q-chunking框架的两种实现方式：</p>\n  <p><b data-pm-slice=\"0 0 []\">QC（带有隐式 KL 约束的 Q-chunking）</b></p>\n  <p>该分支通过「从 N 个中选择最优」（best-of-N）的采样策略，隐式地施加 KL 散度约束。其方法如下：</p>\n  <p>1. 在离线数据上训练一个流匹配行为策略 f_ξ(・|s)</p>\n  <p>2. 对于每个状态，从该策略中采样 N 个动作序列（action chunks）</p>\n  <p>3. 选择具有最大 Q 值的动作序列：a* = arg max_i Q (s, a_i)</p>\n  <p>4. 使用该动作序列进行环境交互与 TD 更新</p>\n  <p><strong>QC-FQL（带有 2-Wasserstein 距离约束的 Q-chunking）</strong></p>\n  <p>该实现基于 FQL（Flow Q-learning）框架：</p>\n  <p>1. 保持一个独立的噪声条件策略 μ_ψ(s, z)</p>\n  <p>2. 训练该策略以最大化 Q 值，并通过正则项使其靠近行为策略</p>\n  <p>3. 使用一种蒸馏损失函数，对平方的 2-Wasserstein 距离进行上界估计</p>\n  <p>4. 引入正则化参数 α 来控制约束强度</p>\n  <p><strong>实验设置及结果</strong></p>\n  <p>关于实验环境和数据集，研究者首先考虑 6 个稀疏奖励的机器人操作任务域，任务难度各不相同，包括如下：</p>\n  <p>来自 OGBench 基准的 5 个任务域：scene-sparse、puzzle-3x3-sparse，以及 cube-double、cube-triple 和 cube-quadruple，每个任务域包含 5 个任务；来自 robomimic 基准中的 3 个任务。</p>\n  <p>对于 OGBench，研究者使用默认的「play-style」数据集，唯独在 cube-quadruple 任务中，使用了一个规模为 1 亿大小的数据集。</p>\n  <p>关于基线方法比较，研究者主要使用了以加速「价值回传」为目标的已有方法，以及此前表现最好的「离线到在线」强化学习方法，<strong>包括 BFN（best-of-N）、FQL、BFN-n / FQL-n 以及 LPD、RLPD-AC</strong>。</p>\n  <p>下图 3 中展示了 Q-chunking 与基线方法在 5 个 OGBench 任务域上的整体性能表现，下图 4 中展示了在 3 个 robomimic 任务上的单独性能表现。其中在离线阶段（图中为灰色），QC 表现出具有竞争力的性能，通常可以比肩甚至有时超越了以往最优方法。而在在线阶段（图中为白色），QC 表现出极高的样本效率，尤其是在 2 个最难的 OGBench 任务域（cube-triple 和 quadruple）中，其性能远超以往所有方法（特别是 cube-quadruple 任务）。</p>\n  <p><b data-pm-slice=\"0 0 []\"><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0fcc614b-fe69-413d-1b6d-abeb504dc200/public\" alt=\"image.png\" data-ratio=\"0.6175925925925926\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496032\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/75bfa2ee-9a3d-48bf-a348-9aeed0157b28/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></b></p>\n  <p><b data-pm-slice=\"0 0 []\"><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/73ea18a9-f562-4223-8fc0-dde660911600/public\" alt=\"image.png\" data-ratio=\"0.37037037037037035\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496033\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/fdad558e-ffd8-4123-995a-e409695c5564/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></b></p>\n  <p>下图 5 为消融实验，比较了 QC 与其变体 QC-FQL、以及 2 种 n 步回报的基线方法（BFN-n 和 FQL-n）。这些 n 步回报基线方法没有利用时间扩展的 critic 或 policy，因此其性能显著低于 QC 和 QC-FQL。实际上，它们的表现甚至常常不如 1 步回报的基线方法 BFN 和 FQL，这进一步突显了在时间扩展动作空间中进行学习的重要性。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/81b216bc-f08f-4617-ee7b-cc5ace1c0600/public\" alt=\"image.png\" data-ratio=\"0.5101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496034\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/10372336-0f72-4adc-b8d0-3db957d869c1/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>接下来探讨的问题是：为什么动作分块有助于探索？研究者在前文提出了一个假设：动作分块策略能够<strong>生成在时间上更连贯的动作</strong>，从而带来更好的状态覆盖和探索效果。</p>\n  <p>为了进行实证，他们首先可视化了训练早期 QC 与 BFN 的末端执行器运动轨迹，具体如下图 7 所示。可以看到，BFN 的轨迹中存在大量停顿（在图像中心区域形成了一个大而密集的簇），特别是在末端执行器下压准备抓取方块时。而 QC 的轨迹中则明显停顿较少（形成的簇更少且更浅），并且其在末端执行器空间中的状态覆盖更加多样化。</p>\n  <p>为了对动作的时间连贯性进行定量评估，研究者在训练过程中每 5 个时间步记录一次 3D 末端执行器位置，并计算相邻两次位置差向量的平均 L2 范数。如果存在较多停顿或抖动动作，该平均范数会变得较小，因此可以作为衡量动作时间连贯性的有效指标。</p>\n  <p>正如图 7（右）所示，在整个训练过程中，QC 的动作时间连贯性明显高于 BFN。这一发现表明，QC 能够提高动作的时间连贯性，从而解释了其更高的样本效率。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/55791794-c07f-4b32-3426-31731a356200/public\" alt=\"image.png\" data-ratio=\"0.4064814814814815\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503496035\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/77429cdd-fc98-48da-ac96-4beb031b3fe6/640.png\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>更多细节内容请参考原论文。</p>\n </body>\n</html>",
+  "aiSummary": "伯克利研究者提出 Q-chunking 方法，将模仿学习中的动作分块引入强化学习，有效提升稀疏奖励任务的探索效率和值传播速度，超越现有离线/在线 RL SOTA。",
+  "oneSentenceSummary": "伯克利研究者提出 Q-chunking 方法，将模仿学习中的动作分块引入强化学习，有效提升稀疏奖励任务的探索效率和值传播速度，超越现有离线/在线 RL SOTA。",
+  "summary": "文章详细介绍了加州大学伯克利分校提出的 Q-chunking 强化学习方法，旨在解决传统 RL 在长时间跨度、稀疏奖励任务中探索效率低下的问题。该方法创造性地将模仿学习中的“动作分块”技术引入时序差分（TD）强化学习，使智能体能预测连续 h 步动作序列，从而实现更连贯的探索并进行无偏的 h 步值传播。文章阐述了 Q-chunking 的扩展动作空间学习和行为约束机制，并介绍了 QC 和 QC-FQL 两种具体实现。实验结果表明，Q-chunking 在多个机器人操作任务中，尤其是在离线到在线的 RL 场景下，表现出卓越的样本效率和性能，显著超越了现有 SOTA 方法，证明了其在复杂任务中的优越性。",
+  "mainPoints": [
+    {
+      "point": "Q-chunking 通过引入动作分块，有效解决了稀疏奖励任务中 RL 探索效率低下的问题。",
+      "explanation": "传统 RL 在稀疏奖励下难以获得有效反馈，而 Q-chunking 通过预测连续动作序列，生成时间连贯的动作，显著提升了智能体的探索能力和状态覆盖。"
+    },
+    {
+      "point": "该方法实现了无偏的 h 步值传播，避免了传统 n 步回报引入的离策略偏差。",
+      "explanation": "Q-chunking 的 Q 函数以整个动作序列作为输入进行更新，确保了价值回传的准确性，从而加速了学习过程，提升了算法的稳定性。"
+    },
+    {
+      "point": "Q-chunking 在离线到在线强化学习场景中表现卓越，超越现有 SOTA 方法。",
+      "explanation": "实验证明，Q-chunking 在多个机器人操作任务中，无论是在离线预训练还是在线微调阶段，都展现出更高的样本效率和性能，特别是在高难度任务上优势显著。"
+    },
+    {
+      "point": "动作分块策略通过生成更连贯的动作，显著提升了探索效果和样本效率。",
+      "explanation": "可视化和定量分析表明，Q-chunking 减少了智能体动作的停顿和抖动，提高了动作的时间连贯性，从而实现了更高效的状态空间探索。"
+    }
+  ],
+  "keyQuotes": [
+    "该方法主要解决两个核心问题：一是通过时间上连贯的动作序列提升探索效率；二是在避免传统 n 步回报引入偏差的前提下，实现更快速的值传播。",
+    "尽管马尔可夫决策过程中的最优策略本质上是马尔可夫性的，但探索过程却可以从非马尔可夫性、时间上扩展的动作中显著受益。",
+    "该形式实现了无偏的 h 步的值传播，因为 Q 函数以整个动作序列作为输入，从而消除了传统 n 步回报中存在的离策略偏差（off-policy bias）。",
+    "在整个训练过程中，QC 的动作时间连贯性明显高于 BFN。这一发现表明，QC 能够提高动作的时间连贯性，从而解释了其更高的样本效率。"
+  ],
+  "tags": [
+    "强化学习",
+    "模仿学习",
+    "动作分块",
+    "离线强化学习",
+    "机器人学习"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 90,
+  "wordCount": 2768,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752470596000,
+  "publishDateStr": "2025-07-14",
+  "publishDateTimeStr": "2025-07-14 05:23:16"
+}

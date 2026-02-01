@@ -1,0 +1,62 @@
+{
+  "id": "RAW_a8058011",
+  "title": "离开马斯克后，他把人形机器人做成了这样",
+  "url": "https://www.qbitai.com/2026/01/368903.html",
+  "date": "2026-01-10 08:14:31",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"53\">允中 发自 凹非寺</p>\n   <p data-track=\"54\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">如果你对人形机器人的印象，还停留在——走两步就摔、抓东西像戴着拳击手套、干活前得先写一堆脚本……</p>\n  <p data-track=\"3\">那么<strong>MATRIX-3</strong>的出现，可能要强行带你“翻篇”了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090340_6bb1d9a34cbdbd25b815ff36c78c3238.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">作为一款主打<strong>安全、自主、可泛化</strong>的物理智能机器人，它更敢跟人待在同一个空间，更能自己做判断，也更不怕换任务、换环境。</p>\n  <p data-track=\"5\">能干的活更像人，目标也不止于专业场景“打工”，而是开始往日常生活里迈。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090341_fad7c5d54ccf577d8c44bcf0c8b1b0ef.gif\" data-ic=\"false\" data-width=\"640\" data-height=\"568\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">做出这台机器人的，是一家去年才正式走到台前的公司——<strong>矩阵超智</strong>。</p>\n  <p data-track=\"7\">但底子不轻、来头不算低调：公司团队背景横跨<strong>特斯拉、英伟达、OpenAI</strong>等顶级技术体系，目标也非常直给：</p>\n  <blockquote>\n   <p data-track=\"8\">AGI路线上的通用人形机器人。</p>\n  </blockquote>\n  <p data-track=\"9\">可以说，一年前，MATRIX-1亮相时，外界更关注两点：全身复合材料带来的“观感完成度”，以及实时语音对话的交互感。</p>\n  <p data-track=\"10\">但这次，创始人<strong>张海星</strong>——这位有着30年消费电子实战经验的“老极客”，2021年加入特斯拉，<strong>参与Optimus人形机器人开发，并主导特斯拉中国设计中心相关项目</strong>——</p>\n  <p data-track=\"11\">显然想通过从底层算法到顶层应用的系统性重构，让机器人走得更远：</p>\n  <p data-track=\"12\">进工厂，飞入寻常百姓家。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090340_a8c55f8b3f617737222c8e412d3a6b92.jpeg\" data-ic=\"false\" data-width=\"1280\" data-height=\"1197\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△矩阵超智创始人兼CEO张海星</span>\n  </div>\n  <p data-track=\"15\">MATRIX-3能够执行类似人类的任务，并准备好从专业场景走进人类日常生活的广阔天地，这标志着人形机器人从“执行预设指令”迈入“<strong>理解并适应物理世界</strong>”的新阶段。</p>\n  <p data-track=\"16\">为实现这一跨越，矩阵超智的工程团队突破了材料科学、驱动技术、感知算法与人工智能的多重边界，为MATRIX-3注入了以下三大优势：</p>\n  <ul>\n   <li data-track=\"17\"><strong>仿生设计与感知新生</strong>：首次将仿生肤质与高维触觉传感深度融合，使机器人获得接近人类的物理交互直觉。</li>\n   <li data-track=\"18\"><strong>灵巧操控与拟人步态</strong>：通过“灵犀之手”与“超能关节”，实现了前所未有的操作精度与如影随形的自然移动能力。</li>\n   <li data-track=\"19\"><strong>认知内核与零样本泛化</strong>：搭载的全新神经网络具备强大的零样本学习能力，使机器人能快速适应未知任务与复杂环境。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090341_6ef5c90a8090d981361b32f4229732d6.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">MATRIX-3为人形机器人的规模化、实用化铺平了道路，并为商业服务、制造业、物流、医疗辅助及未来家庭服务奠定了全新的软硬件平台标准。</p>\n  <p data-track=\"21\"><strong>1、仿生设计与感知新生：赋予机器“肌肤”与“触觉”</strong></p>\n  <p data-track=\"23\">为了让机器人与人类和环境进行安全、细腻的互动，MATRIX-3引入了革命性的人类仿生工程学设计。</p>\n  <p data-track=\"24\">具体体现在以下两点：</p>\n  <ul>\n   <li data-track=\"25\"><strong>3D立体织物仿生肤质</strong></li>\n  </ul>\n  <p data-track=\"26\">机身覆盖首创的三维编织柔性织物，它不仅提供柔软、亲和的触感，更内嵌分布式传感网络。这层“肌肤”能缓冲意外接触，并感知接触位置与力度，极大提升了人机共处的安全性。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090340_75fd0dfc63417ace680a6cceb5a550cc.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"599\" data-ic-uri=\"\">\n  </div>\n  <ul>\n   <li data-track=\"27\"><strong>多模态感知融合</strong></li>\n  </ul>\n  <p data-track=\"28\">指尖集成了高灵敏度触觉传感器阵列，可感知<strong>0.1N</strong>的压力变化。</p>\n  <p data-track=\"29\">结合升级的视觉系统，基于大规模预训练空间感知基础模型，提升机器人对空间可操作性Affordance的理解和利用，MATRIX-3形成了“眼看”与“手触”互补的视触觉感知系统，使其能像人类一样，通过触摸判断物体的材质、形状及抓握状态，实现对易碎品、柔性物体的精细化操作。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090341_3ac8a3bb04dd4481dc7aea2e529d5eea.gif\" data-ic=\"false\" data-width=\"640\" data-height=\"324\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\"><strong>2、灵巧操控与拟人步态：重新定义运动与操作极限</strong></p>\n  <p data-track=\"31\">MATRIX-3的运动性能实现了质的飞跃，核心在于其仿生关节与灵巧末端。</p>\n  <ul>\n   <li data-track=\"32\"><strong>灵犀之手（高自由度灵巧手）</strong></li>\n  </ul>\n  <p data-track=\"33\">搭载全新设计的<strong>27维自由度</strong>灵巧手，其关节构造与运动范围高度拟人。</p>\n  <p data-track=\"34\">结合键绳驱动技术，在保证力量和速度的同时，实现了极致的轻量化与精准控制，可完成诸如使用工具、操作精密仪器、折叠物品等复杂任务。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090341_d4b28f643fe8feb85a2fed6edb2823c9.gif\" data-ic=\"false\" data-width=\"640\" data-height=\"324\" data-ic-uri=\"\">\n  </div>\n  <ul>\n   <li data-track=\"35\"><strong>自然步态与超能关节</strong></li>\n  </ul>\n  <p data-track=\"36\">基于大规模人类运动捕捉和视频数据开发的通用运动控制模型，让MATRIX-3的行走、转身、上下坡姿态如人类般流畅自然。</p>\n  <p data-track=\"37\">其动力核心是一体化直线关节，该关节集高功率密度、低噪音与高可靠性于一身，提供了稳定、高效且敏捷的全身体运动基础。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090341_ecbed61b4c0e81e5961da6bcfae2738d.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\"><strong>3、认知内核与零样本泛化：“预先编程”到“认知推理”</strong></p>\n  <p data-track=\"39\">MATRIX-3搭载了矩阵超智自主研发的全新神经网络架构。</p>\n  <ul>\n   <li data-track=\"40\"><strong>零样本泛化能力</strong></li>\n  </ul>\n  <p data-track=\"41\">该系统的核心突破在于强大的零样本任务泛化能力。</p>\n  <p data-track=\"42\">意思是，无需针对每一个特定任务进行海量数据训练，MATRIX-3便能通过基础物理规律理解和简单的指示，并能在全新的环境下快速学习新技能操作新的物体，更大拓展了其应用边界与部署速度。</p>\n  <ul>\n   <li data-track=\"43\"><strong>通用智能操作模型</strong></li>\n  </ul>\n  <p data-track=\"44\">在数据规模和数据质量驱动下，灵巧操作得以真正实现。</p>\n  <p data-track=\"45\">机器人能够自主规划抓取策略、避障路径，并实时调整力度与姿态，完成一系列需要手眼协调与即时判断的复合任务。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260110090341_92fc478de306c19ae3cf1f7704534cbf.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"607\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\">MATRIX-3是矩阵超智人形机器人走向成熟应用的关键里程碑。</p>\n  <p data-track=\"48\">它融合了仿生设计、极致灵巧的物理执行以及具有泛化能力的人工智能，构建了一个真正为理解并作用于物理世界而生的智能体。</p>\n  <p data-track=\"49\">“MATRIX-3的产品哲学，是让机器智能以最自然、最安全的方式融入人类的物理空间。”</p>\n  <p data-track=\"50\">对此，矩阵超智首席执行官<strong>张海星</strong>表示：</p>\n  <blockquote>\n   <p data-track=\"51\">我们从不是要复制人类，而是创造一种能够延伸人类能力、承担重复性劳动的新物种。今天，我们向这个未来迈出了坚实的一步。</p>\n  </blockquote>\n  <p data-track=\"52\">MATRIX-3针对特定行业合作伙伴的<strong>早期体验计划现已开放</strong>，并预计于2026年启动首批试点部署。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "矩阵超智推出人形机器人 MATRIX-3，重点突破了仿生设计、灵巧操控和零样本泛化能力，旨在实现安全、自主、可泛化的物理智能，并从专业场景迈向日常生活应用。",
+  "oneSentenceSummary": "矩阵超智推出人形机器人 MATRIX-3，重点突破了仿生设计、灵巧操控和零样本泛化能力，旨在实现安全、自主、可泛化的物理智能，并从专业场景迈向日常生活应用。",
+  "summary": "量子位报道矩阵超智发布了其最新人形机器人 MATRIX-3，该机器人由特斯拉前 Optimus 核心人员张海星主导开发。MATRIX-3 旨在解决当前人形机器人存在的摔倒、抓握不灵活、依赖脚本等问题，实现了安全、自主、可泛化的物理智能。其核心优势包括仿生肤质与高维触觉传感融合，赋予机器人接近人类的物理交互直觉；高自由度灵巧手和基于运动捕捉的自然步态，大幅提升操作精度与移动能力；以及搭载全新神经网络，具备零样本学习和通用智能操作模型，能快速适应未知任务和复杂环境。这些突破使 MATRIX-3 能够从工厂等专业场景走向商业服务、制造业、物流、医疗辅助及未来家庭服务，目前已开放早期体验计划，预计 2026 年启动试点部署。",
+  "mainPoints": [
+    {
+      "point": "MATRIX-3 突破了传统人形机器人的局限，强调安全、自主和泛化能力。",
+      "explanation": "通过系统性重构底层算法与顶层应用，MATRIX-3 能够更好地适应复杂环境和新任务，增强了与人的交互安全性，并向日常生活场景迈进。"
+    },
+    {
+      "point": "引入仿生设计与高维触觉感知，提升了机器人的物理交互直觉。",
+      "explanation": "机身覆盖 3D 立体织物仿生肤质和指尖高灵敏度触觉传感器，结合多模态感知，实现对物体材质、形状的精细化判断和操作。"
+    },
+    {
+      "point": "通过灵巧操控与拟人步态，重新定义了机器人的运动与操作极限。",
+      "explanation": "搭载 27 维自由度灵巧手和一体化直线关节，结合通用运动控制模型，实现了高精度复杂任务执行和流畅自然的移动姿态。"
+    },
+    {
+      "point": "认知内核具备零样本泛化能力和通用智能操作模型。",
+      "explanation": "基于全新神经网络架构，MATRIX-3 无需大量特定任务训练即可快速学习和适应新技能、新环境，自主规划交互策略。"
+    },
+    {
+      "point": "MATRIX-3 的研发旨在将机器智能融入物理空间，延伸人类能力。",
+      "explanation": "创始人张海星表示，目标是创造一种能够承担重复性劳动的新物种，未来将应用于商业、制造、医疗和家庭等多个场景。"
+    }
+  ],
+  "keyQuotes": [
+    "作为一款主打安全、自主、可泛化的物理智能机器人，它更敢跟人待在同一个空间，更能自己做判断，也更不怕换任务、换环境。",
+    "MATRIX-3 能够执行类似人类的任务，并准备好从专业场景走进人类日常生活的广阔天地，这标志着人形机器人从“执行预设指令”迈入“理解并适应物理世界”的新阶段。",
+    "MATRIX-3 的出现，可能要强行带你“翻篇”了。",
+    "我们从不是要复制人类，而是创造一种能够延伸人类能力、承担重复性劳动的新物种。"
+  ],
+  "tags": [
+    "人形机器人",
+    "具身智能",
+    "仿生设计",
+    "机器人控制",
+    "零样本学习"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 84,
+  "wordCount": 1983,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768032871000,
+  "publishDateStr": "01-10",
+  "publishDateTimeStr": "2026-01-10 08:14:31"
+}

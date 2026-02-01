@@ -1,0 +1,59 @@
+{
+  "id": "RAW_143b1a32",
+  "title": "商汤日日新开源模型实现空间智能性能突破，多项评测领先 GPT-5",
+  "url": "https://www.qbitai.com/2025/11/351028.html",
+  "date": "2025-11-11 07:36:08",
+  "author": "梦瑶",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>今天，商汤日日新在空间智能领域实现重要突破，正式发布并开源SenseNova-SI系列模型。在多项权威评测的空间理解和推理任务上，SenseNova-SI&nbsp;不仅大幅度领先同量级开源多模态大模型，还超越了&nbsp;GPT-5&nbsp;和&nbsp;Gemini&nbsp;2.5&nbsp;Pro&nbsp;等国际顶尖闭源模型的表现。</p>\n  <p><strong><b>空间智能短板与系统性解决</b></strong></p>\n  <p>当下行业领先的大模型，虽然在知识、写作、推理、编程等方面展示了突出的性能，但是普遍存在一个重要的缺陷，就是对空间结构的理解和推理存在很严重的短板，而这恰恰是具身智能体与世界交互所需要的关键基础能力。</p>\n  <p>我们来看一个例子，左图源自最强大脑的图形推理题，对人类都具有相当的难度，GPT-5能够轻松破解，可见它在非空间智能问题上已具备很强能力。反观右图，是一道人类儿童都能轻易解决的简单空间问题，要求选择正确俯视图，GPT-5却令人意外地犯起了难，错误地选择了”A”。</p>\n  <p><img class=\"alignnone size-medium wp-image-351029\" src=\"https://image.jido.dev/20251111091026_bde88111b44f70f07c125f21816dc5a3.png\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"116\"></p>\n  <p>以上例子恰好暴露了当前大模型在空间理解上的短板。因此要让AI真正”看懂”三维世界，空间智能一直是关键的试金石。</p>\n  <p>商汤围绕空间智能进行了深入创新探索，找到了提升空间智能的系统性训练方法，打造了日日新·空间智能大模型系列 SenseNova-SI 并正式开源。</p>\n  <p><strong><b>评测表现多项任务超越GPT-5，显著领先同量级开源模型</b></strong></p>\n  <p>这次开源的SenseNova-SI空间智能大模型系列包括 2B 和 8B 两个规格。</p>\n  <p>最新评测数据显示，SenseNova-SI系列模型在空间智能多个基准测试（VSI、MMSI、MindCube、ViewSpatial）中表现突出，具体如下：</p>\n  <p><img class=\"alignnone size-medium wp-image-351031\" src=\"https://image.jido.dev/20251111091026_97e67b071ee8e58951f1d74b0e6bc582.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"180\"></p>\n  <p>数据来源：<a href=\"https://github.com/OpenSenseNova/SenseNova-SI\"><u>https://github.com/OpenSenseNova/SenseNova-SI</u></a></p>\n  <p>其中SenseNova-SI-8B模型在四个基本评测中获得 60.99 的平均成绩，不仅大幅领先Qwen3-VL-8B（40.16）、BAGEL-7B（35.01）等开源通用多模态模型，以及 SpatialMLLM（35.05）、ViLaSR-7B（36.41） 等专门的空间智能模型，还以相对轻量的模型规格实现了对GPT-5（49.68）、Gemini-2.5-Pro（48.81）等顶级闭源模型的超越。这里显著的性能提升反映了模型在空间智能上获得了质的突破，而不是简单的性能改善。</p>\n  <p><strong><b>基于”尺度效应”的训练范式</b></strong><strong><b>，实现能力系统性提升</b></strong><strong><b>​</b></strong></p>\n  <p>SenseNova-SI的性能飞跃，源于商汤从训练数据到方法上的系统性方案。依托商汤提出的空间能力分类体系和过往多样化的数据的积累，团队采用系统化的方法扩充空间理解数据的规模，首次在空间智能领域验证了“尺度效应”，即通过高质量、大规模数据训练，可显著提升模型的空间认知能力。</p>\n  <p>商汤提出的训练范式具备通用性，能够针对不同架构的基模型（如InternVL等）进行有效增强，使其在空间智能六大核心维度上——包括空间测量、空间重构、空间关系、视角转换、空间形变与空间推理——实现一致性的能力提升。</p>\n  <p>商汤稍后将发布详细的技术报告，详细阐述具体的技术方案。</p>\n  <p>&nbsp;</p>\n  <p>以下为GPT-5和SenseNova-SI-8B模型面对空间智能问题，给出的答案对比。</p>\n  <p><img class=\"alignnone size-medium wp-image-351034\" src=\"https://image.jido.dev/20251111091026_4cd56661655e9b0099a940f3821359b0.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"153\"></p>\n  <p>​<em><i>给出的</i></em><em><i>立方体组合图形，要求选择正确俯视图</i></em>。GPT-5选择答案D，SenseNova-SI-8B选择答案B，正确答案为B。（例题源自SITE-Bench）</p>\n  <p><img class=\"alignnone size-medium wp-image-351035\" src=\"https://image.jido.dev/20251111091026_a8bcecf8041d0e465254806a3f631972.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"125\"></p>\n  <p>假设我站在手持相机人的位置，并且面朝他现在面朝的方向。摩托车是位于我的左侧还是右侧？ GPT-5选择答案A（左侧），SenseNova-SI-8B选择答案B，​​正确答案为B（右侧）。（例题源自SITE-Bench）</p>\n  <p><img class=\"alignnone size-medium wp-image-351036\" src=\"https://image.jido.dev/20251111091026_85105a794d2e6f2ef63accb32e0f2c8a.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"89\"></p>\n  <p>多车道道路场景，判断黄色汽车的后续动作（如直行、转向等）。GPT-5选择答案C（静止），SenseNova-SI-8B选择答案（D），​​正确答案为D（右转）​​。（例题源自SITE-Bench）</p>\n  <p><img class=\"alignnone size-medium wp-image-351040\" src=\"https://image.jido.dev/20251111091026_11851d1b4e480cf4985cd21062bb866b.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"155\"></p>\n  <p><em><i>同一户外场景，通过视角变化判断移动方向</i></em><em><i>。</i></em>GPT-5选择答案C，SenseNova-SI-8B选择答案D，正确答案为向左前方移动（选项D）。（例题源自MindCube）</p>\n  <p><img class=\"alignnone size-medium wp-image-351043\" src=\"https://image.jido.dev/20251111091026_aaddf240dee933560598e42a6bfeafa0.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"155\"></p>\n  <p><em><i>同一室内空间，包含白板、椅子和</i></em><em><i>沙发等</i></em><em><i>，通过物体位置变化分析</i></em>移动方向。GPT-5选择答案D，SenseNova-SI-8B选择答案A，正确答案为向左前方移动（选项A）。（例题源自MindCube）</p>\n  <p><img class=\"alignnone size-medium wp-image-351045\" src=\"https://image.jido.dev/20251111091026_6a5f371d705252e9886f80b3b0cfc8a2.jpeg\" alt=\"商汤日日新开源模型实现空间智能性能突破，多项评测领先&nbsp;GPT-5\" width=\"300\" height=\"227\"></p>\n  <p><em><i>从不同角度拍摄带黑色衣物的桌子，</i></em>从正面视角（图1）判断桌子右侧物体。GPT-5选择答案B，SenseNova-SI-8B选择答案C，正确答案为门（选项C）。（例题源自MindCube）</p>\n  <p><strong><b>推动世界模型和具身智能生态发展</b></strong></p>\n  <p>空间智能是世界模型与具身智能理解物理世界的基础能力。今年7月，商汤正式发布“悟能”具身智能平台，该平台以商汤“开悟”世界模型为核心引擎，旨在为机器人和智能设备提供在物理世界中自主探索和进化的能力。</p>\n  <p>此次发布的空间智能大模型SenseNova-SI，与“开悟”世界模型相辅相成，将更好地解决多模态模型从数字空间走向物理世界的基础挑战，并在未来进一步推动AI在自动驾驶、机器人等场景的应用。</p>\n  <p>此外，商汤还同步开源了空间智能测评平台 EASI（<a href=\"https://github.com/EvolvingLMMs-Lab/EASI\"><u>https://github.com/EvolvingLMMs-Lab/EASI</u></a>）与“英雄榜”，旨在推动空间智能技术评估标准的统一，持续跟踪并展示开源和闭源模型的性能进展，为学术界和工业界提供权威的评估基准，促进协同创新。</p>\n  <p>商汤SenseNova-SI的推出标志着AI在三维世界理解能力上迈出关键一步，也为下一代通用人工智能技术融入物理世界打下坚实基础。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "商汤日日新开源 SenseNova-SI 模型在空间智能领域取得突破，多项评测超越 GPT-5 和 Gemini 2.5 Pro，为具身智能奠定基础。",
+  "oneSentenceSummary": "商汤日日新开源 SenseNova-SI 模型在空间智能领域取得突破，多项评测超越 GPT-5 和 Gemini 2.5 Pro，为具身智能奠定基础。",
+  "summary": "商汤日日新发布并开源了 SenseNova-SI 系列模型，在空间智能领域取得显著突破。文章指出，当前主流大模型普遍存在空间理解和推理短板，而这正是具身智能体与物理世界交互的关键基础。SenseNova-SI 系列（含 2B 和 8B 版本）在多项权威空间智能基准测试中表现优异，不仅大幅领先同量级开源多模态大模型，更以轻量级优势超越 GPT-5 和 Gemini 2.5 Pro 等顶尖闭源模型。这一突破得益于商汤提出的“尺度效应”训练范式，通过系统化方法扩充高质量、大规模空间理解数据，首次验证了数据规模可系统性提升模型在空间测量、重构、关系、视角转换、形变与推理等六大核心维度的认知能力。商汤同时开源了 EASI 空间智能测评平台，旨在统一评估标准，共同推动世界模型和具身智能生态发展，为自动驾驶、机器人等 AI 应用奠定坚实基础。",
+  "mainPoints": [
+    {
+      "point": "商汤 SenseNova-SI 模型在空间智能评测中超越 GPT-5 和 Gemini 2.5 Pro。",
+      "explanation": "SenseNova-SI-8B 在 VSI 等四个空间智能基准测试中获得 60.99 的平均成绩，显著领先同量级开源模型，并以轻量化优势超越顶尖闭源模型，证明其在空间理解和推理上的突破性进展。"
+    },
+    {
+      "point": "空间智能是当前大模型的普遍短板，却是具身智能理解物理世界的关键基础。",
+      "explanation": "现有大模型虽在非空间任务表现出色，但在俯视图选择、方向判断等简单空间问题上易出错，这暴露了其在空间结构理解上的不足，而该能力对具身智能至关重要。"
+    },
+    {
+      "point": "SenseNova-SI 通过“尺度效应”训练范式系统性提升空间认知能力。",
+      "explanation": "商汤团队通过系统化方法扩充高质量、大规模空间理解数据，首次在空间智能领域验证了“尺度效应”，从而使模型在六大核心空间维度实现一致性能力提升。"
+    },
+    {
+      "point": "商汤开源模型和评测平台，共同推动世界模型和具身智能生态发展。",
+      "explanation": "SenseNova-SI 模型和 EASI 空间智能测评平台的开源，旨在统一评估标准，促进学术界和工业界协同创新，加速 AI 在自动驾驶、机器人等物理世界场景的应用落地。"
+    }
+  ],
+  "keyQuotes": [
+    "当下行业领先的大模型，虽然在知识、写作、推理、编程等方面展示了突出的性能，但是普遍存在一个重要的缺陷，就是对空间结构的理解和推理存在很严重的短板。",
+    "SenseNova-SI-8B 模型在四个基本评测中获得 60.99 的平均成绩，不仅大幅领先 Qwen3-VL-8B 等开源通用多模态模型，还以相对轻量的模型规格实现了对 GPT-5（49.68）、Gemini-2.5-Pro（48.81）等顶级闭源模型的超越。",
+    "SenseNova-SI 的性能飞跃，源于商汤从训练数据到方法上的系统性方案。依托商汤提出的空间能力分类体系和过往多样化的数据的积累，团队采用系统化的方法扩充空间理解数据的规模，首次在空间智能领域验证了\"尺度效应\"。",
+    "空间智能是世界模型与具身智能理解物理世界的基础能力。",
+    "商汤 SenseNova-SI 的推出标志着 AI 在三维世界理解能力上迈出关键一步，也为下一代通用人工智能技术融入物理世界打下坚实基础。"
+  ],
+  "tags": [
+    "空间智能",
+    "多模态大模型",
+    "多模态AI",
+    "具身智能",
+    "世界模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 88,
+  "wordCount": 2154,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762846568000,
+  "publishDateStr": "2025-11-11",
+  "publishDateTimeStr": "2025-11-11 07:36:08"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_642fc841",
+  "title": "真够卷的！DeepSeek 更完智谱更：GLM-4.6，代码国内最强",
+  "url": "https://www.qbitai.com/2025/09/338660.html",
+  "date": "2025-09-30 09:07:50",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"46\">金磊 发自 凹非寺</p>\n   <p data-track=\"47\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">好好好，都赶着国庆节之前开卷是吧。</p>\n  <p data-track=\"3\">前脚DeepSeek更新到了V3.2，现在<strong>智谱</strong>又更新了——</p>\n  <p data-track=\"4\">正式推出<strong>GLM-4.6</strong>，代码能力直接推到了<strong>国内最强</strong>。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125628_71cf3682c1765e997f80ba968ec4e04d.png\" alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" data-src=\"https://image.jido.dev/20250930125628_71cf3682c1765e997f80ba968ec4e04d.png\">\n  </div>\n  <p data-track=\"5\">根据智谱的测试结果，他们在Claude Code环境下进行了74个真实场景编程任务测试：GLM-4.6实测超过Claude Sonnet 4，超越其他国产模型。</p>\n  <p data-track=\"6\">类似的结果还出现在了其它测评中。</p>\n  <p data-track=\"7\">例如在通用能力评测上，GLM-4.6在AIME 25、GPQA、LCB v6、HLE、SWE-Bench Verified、BrowseComp、Terminal-Bench、τ^2-Bench、GPQA，这八大榜单中大部分都已经对齐了Claude Sonnet 4，国内第一。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125628_66d5a38eda091687a83abb413e54194f.png\" alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" data-src=\"https://image.jido.dev/20250930125628_66d5a38eda091687a83abb413e54194f.png\">\n  </div>\n  <p data-track=\"8\">分数高还只是一方面，智谱的GLM-4.6甚至还把<strong>“平均token消耗”</strong>给打了下来——比GLM-4.5节省30%以上，为同类模型最低。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125635_ebbb35c30703efb195adee61bc5f4f9a.png\" alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" data-src=\"https://image.jido.dev/20250930125635_ebbb35c30703efb195adee61bc5f4f9a.png\">\n  </div>\n  <p data-track=\"9\">而且智谱这次还大大方方地把全部测试题目与Agent轨迹亮了出来，方便大家复现验证：</p>\n  <p data-track=\"10\">https://huggingface.co/datasets/zai-org/CC-Bench-trajectories</p>\n  <p data-track=\"11\">有一说一，卷，是真的卷。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125628_2784db6be2fcefd1ab0b29675eaa0130.png\" alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" data-src=\"https://image.jido.dev/20250930125628_2784db6be2fcefd1ab0b29675eaa0130.png\">\n  </div>\n  <p data-track=\"13\">根据量子位的老传统，新模型一出，那必须是得安排一波实测。</p>\n  <p data-track=\"14\">我们先小试牛刀地来一道题：</p>\n  <blockquote>\n   <p data-track=\"15\"><strong>生成一个射击类的小游戏。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125628_d351416c71e7db775232e09b19cf5b29.png\" alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" data-src=\"https://image.jido.dev/20250930125628_d351416c71e7db775232e09b19cf5b29.png\">\n  </div>\n  <p data-track=\"16\">从实测体验来看，代码生成的速度是相当之快，不到一分钟，游戏就被设计出来了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/e7fb5b731ef69b597cc5b7d198d3772a.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/e7fb5b731ef69b597cc5b7d198d3772a.gif\">\n  </div>\n  <p data-track=\"17\">进阶一下，我们再让GLM-4.6再做一个交互动画：</p>\n  <blockquote>\n   <p data-track=\"18\"><strong>用p5js创建多彩的可交互动画。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/875abe0abda9b046ee3ea56ff7757ba3.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/875abe0abda9b046ee3ea56ff7757ba3.gif\">\n  </div>\n  <p data-track=\"19\">可以看到，鼠标点到哪里就会产生交互效果。</p>\n  <p data-track=\"20\">编程这块，我们最后来测一道经典的题目：</p>\n  <blockquote>\n   <p data-track=\"21\">显示球在旋转的六边形内弹跳。球应该受到重力和摩擦力的影响，并且必须逼真地从旋转的墙壁上反弹。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://www.qbitai.com/wp-content/uploads/replace/7beade9309c993843fafac8a4c2ca0cd.gif\" data-src=\"https://www.qbitai.com/wp-content/uploads/replace/7beade9309c993843fafac8a4c2ca0cd.gif\">\n  </div>\n  <p data-track=\"22\">嗯，小球是按照物理规律在运转。</p>\n  <p data-track=\"23\">在编程能力之后，我们再来测试一下GLM-4.6的数学能力。</p>\n  <p data-track=\"24\">请听一道AIME 2025的试题：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125628_58daa03e59832716c0793f3bf8ffac04.png\" data-src=\"https://image.jido.dev/20250930125628_58daa03e59832716c0793f3bf8ffac04.png\">\n  </div>\n  <p data-track=\"25\">在这次测试中，我们是直接把题目截图“喂”给了GLM-4.6，不仅考察了解数学题的能力，同时还检测了一下它识图的多模态能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125631_7e74197569b727104ef5431d589c44d5.png\" data-src=\"https://image.jido.dev/20250930125631_7e74197569b727104ef5431d589c44d5.png\">\n  </div>\n  <p data-track=\"26\">可以看到，GLM-4.6完美地给出了正解：70。</p>\n  <p data-track=\"27\">整体来看，智谱这次新模型能力提升可以概括如下：</p>\n  <ul>\n   <li data-track=\"28\"><strong>高级编码能力：在公开基准与真实编程任务中，GLM-4.6的代码能力对齐Claude Sonnet 4，是国内已知的最好的Coding模型。</strong></li>\n   <li data-track=\"29\"><strong>上下文长度：上下文窗口由128K→200K，适应更长的代码和智能体任务。</strong></li>\n   <li data-track=\"30\"><strong>推理能力：推理能力提升，并支持在推理过程中调用工具。</strong></li>\n   <li data-track=\"31\"><strong>搜索能力：增强了模型在工具调用和搜索智能体上的表现，在智能体框架中表现更好。</strong></li>\n   <li data-track=\"32\"><strong>写作能力：在文风、可读性与角色扮演场景中更符合人类偏好。</strong></li>\n  </ul>\n  <p data-track=\"34\">昨晚DeepSeek更新的时候，一个新现象伴随着诞生——</p>\n  <p data-track=\"35\">很多国产芯片公司立即宣布<strong>“Day0适配”</strong>。</p>\n  <p data-track=\"36\">这一现象在GLM-4.6身上也是发生了。</p>\n  <p data-track=\"37\">据了解，GLM-4.6 已经在<strong>寒武纪</strong>的国产芯片上实现了FP8+Int4的混合量化部署，这是国产芯片上第一次真正落地的FP8+Int4模型芯片一体化方案。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125631_78b77c1953447ca950c295e3371c9e29.png\" data-src=\"https://image.jido.dev/20250930125631_78b77c1953447ca950c295e3371c9e29.png\">\n  </div>\n  <p data-track=\"38\">在保证精度不受影响的同时，还大幅降低了推理成本，也为国产芯片本地运行大模型提供了一条可行的新路径。</p>\n  <p data-track=\"39\">在vLLM推理框架的支持下，<strong>摩尔线程</strong>新一代GPU能够用原生FP8精度稳定运行GLM-4.6，这充分体现了MUSA架构和全功能GPU在生态兼容性和快速适配上的优势。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"真够卷的！DeepSeek更完智谱更：GLM-4.6，代码国内最强\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250930125628_0b29e0a72e0303b39b8a6e73f92b842e.png\" data-src=\"https://image.jido.dev/20250930125628_0b29e0a72e0303b39b8a6e73f92b842e.png\">\n  </div>\n  <p data-track=\"40\">接下来，GLM-4.6将与寒武纪、摩尔线程的国产芯片组合，通过智谱MaaS平台正式对企业和大众开放服务。</p>\n  <p data-track=\"41\">最后，划个重点。</p>\n  <p data-track=\"42\">智谱在能力提升的同时，还把价格给打下来了！</p>\n  <p data-track=\"43\">智谱同步升级的GLM Coding Plan（最低20元包月畅玩套餐）：<strong>用1/7的价格，可以享受到Claude的9/10智商。</strong></p>\n  <p data-track=\"44\">GLM-4.6体验地址：\n   <br class=\"sysbr\">\n   chat.z.ai</p>\n  <p data-track=\"45\">智谱MaaS平台：\n   <br class=\"sysbr\">\n   bigmodel.cn</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "智谱 AI 发布 GLM-4.6 大模型，在代码能力上达到国内领先水平，并在通用能力、推理和搜索方面均有显著提升，同时实现国产芯片适配和成本优化。",
+  "oneSentenceSummary": "智谱 AI 发布 GLM-4.6 大模型，在代码能力上达到国内领先水平，并在通用能力、推理和搜索方面均有显著提升，同时实现国产芯片适配和成本优化。",
+  "summary": "文章详细介绍了智谱 AI 最新发布的 GLM-4.6 大模型，强调其在代码能力上取得的突破，实测超越 Claude Sonnet 4，成为国内最强代码模型。除了卓越的代码表现，GLM-4.6 在 AIME 25、GPQA 等八大通用能力榜单中也大多对齐 Claude Sonnet 4，位居国内第一。模型不仅性能提升，还在平均 token 消耗上比 GLM-4.5 节省 30%以上，大幅降低了使用成本。文章还展示了 GLM-4.6 在代码生成（如射击游戏、p5js 动画）和数学解题（AIME 试题截图识别并解答）方面的实际测试效果。此外，GLM-4.6 已实现与寒武纪、摩尔线程等国产芯片的 FP8+Int4 混合量化部署，为国产大模型生态建设提供了可行路径。智谱 AI 还同步推出了更具性价比的 GLM Coding Plan，以更低价格提供高性能服务。",
+  "mainPoints": [
+    {
+      "point": "GLM-4.6 代码能力国内领先并对齐国际顶尖水平",
+      "explanation": "智谱 AI 的 GLM-4.6 模型在 Claude Code 环境下 74 个真实场景编程任务测试中超越 Claude Sonnet 4，成为国内代码能力最强的大模型，为开发者提供了高效的代码生成和问题解决能力。"
+    },
+    {
+      "point": "通用能力全面提升与高性价比",
+      "explanation": "在 AIME 25、GPQA 等八大通用能力榜单中，GLM-4.6 大部分对齐 Claude Sonnet 4，同时平均 token 消耗比 GLM-4.5 节省 30%以上，为同类模型最低，显著降低了用户的使用成本。"
+    },
+    {
+      "point": "多模态与高级推理能力增强",
+      "explanation": "模型支持图像输入进行复杂数学题解答，上下文窗口扩展至 200K，推理能力提升并支持在推理过程中调用工具，写作风格更贴近人类偏好，提升了模型在复杂任务中的实用性。"
+    },
+    {
+      "point": "率先实现国产芯片深度适配与生态融合",
+      "explanation": "GLM-4.6 已在寒武纪和摩尔线程等国产芯片上实现 FP8+Int4 混合量化部署，这是国产芯片上首次真正落地 FP8+Int4 模型芯片一体化方案，为国产大模型在本土硬件上的高效运行和生态建设开辟了新路径。"
+    },
+    {
+      "point": "市场化策略强调普惠与价值",
+      "explanation": "智谱 AI 同步推出 GLM Coding Plan，以远低于国际同类模型的价格（例如“用 1/7 的价格，可以享受到 Claude 的 9/10 智商”）提供高性能服务，旨在推动大模型技术的普及应用和降低技术门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "GLM-4.6，代码能力直接推到了国内最强。",
+    "平均 token 消耗”给打了下来------比 GLM-4.5 节省 30%以上，为同类模型最低。",
+    "GLM-4.6 已经在寒武纪的国产芯片上实现了 FP8+Int4 的混合量化部署，这是国产芯片上第一次真正落地的 FP8+Int4 模型芯片一体化方案。",
+    "用 1/7 的价格，可以享受到 Claude 的 9/10 智商。"
+  ],
+  "tags": [
+    "大语言模型",
+    "智谱AI",
+    "GLM-4.6",
+    "代码生成",
+    "模型评测"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 94,
+  "wordCount": 1407,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1759223270000,
+  "publishDateStr": "2025-09-30",
+  "publishDateTimeStr": "2025-09-30 09:07:50"
+}

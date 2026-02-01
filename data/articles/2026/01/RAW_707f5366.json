@@ -1,0 +1,59 @@
+{
+  "id": "RAW_707f5366",
+  "title": "Pinterest 的 Moka：Kubernetes 如何重新定义大数据处理规则",
+  "url": "https://www.infoq.com/news/2026/01/pinterest-kubernetes-bigdata/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-19 09:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Digital pinboard provider Pinterest has published an article explaining its <a href=\"https://medium.com/pinterest-engineering/next-gen-data-processing-at-massive-scale-at-pinterest-with-moka-part-2-of-2-d0210ded34e0\">blueprint for the future of large-scale data processing</a> with its new platform Moka. The company is moving core workloads from ageing Hadoop infrastructure to a Kubernetes-based system on Amazon EKS, with Apache Spark as the main engine and support for other frameworks on the way.</p>\n   <p>In a two-part blog series, Soam Acharya, Rainie Li, William Tom and Ang Zhang describe how the Pinterest Big Data Platform team considered alternatives for their next-generation massive-scale data processing platform as the limits of the existing Hadoop-based system, known internally as Monarch, became clear. They present Moka as the outcome of that search, and as their EKS based cloud native data processing platform, which now runs production workloads at Pinterest scale. Part one of the series focused on <a href=\"https://www.infoq.com/news/2025/07/pinterest-spark-kubernetes/\">the overall design and the application layer</a>. In contrast, part two turns to what the authors call \"the infrastructure-focused aspects of Moka with learnings and future direction.\"</p>\n   <p><img alt=\"Spark Live UI Architecture, (C) Pinterest\" style=\"width: 600px; height: 428px;\" data-src=\"https://www.infoq.com/news/2026/01/pinterest-kubernetes-bigdata/news/2026/01/pinterest-kubernetes-bigdata/en/resources/21_OBJ1mFYm_UiLOjNV8lUxaA-1768758801007.webp\" src=\"https://res.infoq.com/news/2026/01/pinterest-kubernetes-bigdata/en/resources/21_OBJ1mFYm_UiLOjNV8lUxaA-1768758801007.webp\" rel=\"share\"></p>\n   <p>The post frames the move to Kubernetes in practical terms. It demonstrates an industry-wide shift in which big technology companies now treat Kubernetes as a control plane for data, rather than only as a stateless service platform. Encouraged by growing popularity and increasing adoption in the Big Data community, the team explored Kubernetes-based systems as the most likely replacement for Hadoop 2.x. Any candidate platform had to meet precise criteria around scalability, security, cost and the ability to host multiple processing engines. Moka is an example of how to modernise a Hadoop-era data platform without abandoning existing Spark investments.</p>\n   <p>A central theme of the second article is how to operate Spark at a very large scale on Kubernetes. The authors explain how they added logging, metrics and job history services around Moka so that engineers could debug and tune jobs without needing to understand the underlying cluster topology. They worked on standardising log collection with Fluent Bit and publishing uniform metrics using OpenTelemetry and Prometheus-compatible endpoints. This gave both infrastructure and application teams a consistent view of system health.&nbsp;</p>\n   <p>Pinterest has also invested in making the platform reproducible through infrastructure-as-code. In the article, the team outlines how they use Terraform and Helm to create EKS clusters, configure networking and security, and deploy supporting components such as the Spark History Server.</p>\n   <p>Pinterest's engineers also discuss dealing with different hardware architectures. They describe how they built multi-architecture images so that their data workloads run well on both Intel and ARM-based instances, including AWS Graviton, and they link this to cost and efficiency goals at fleet scale. A <a href=\"https://www.linkedin.com/posts/estiller_from-hadoop-to-kubernetes-pinterests-scalable-activity-7356213210661744640-17Ee/\">LinkedIn summary of the project</a> from InfoQ editor Eran Stiller notes that Moka \"delivers container-level isolation, ARM support, YuniKorn scheduling, and significant cost savings by consolidating workloads and auto scaling across instance types\". These details place the work within the broader trend of cloud users seeking to cut infrastructure costs without sacrificing performance.</p>\n   <p>The broader industry conversation on processing engines adds nuance to Pinterest's story. In a <a href=\"https://www.linkedin.com/posts/soamacharya_next-gen-data-processing-at-massive-scale-activity-7350931757694640128-vCg0/\">separate LinkedIn post</a>, Acharya writes that \"while Spark is our primary workhorse, the success of Moka has meant other use cases at Pinterest are following suit: Flink Batch is in production with Apache Ray close behind and Flink Streaming slated for later this year\". Technical deep dives on Spark and Flink underline why this matters, stressing that Spark remains well suited to large batch and interactive analytics workloads, while Flink is \"purpose built for real time, stateful stream processing\" with strict event by event handling. The team is presenting Moka as a flexible base to add different engines to, depending on the needs of the specific workload, rather than as a Spark-only platform.</p>\n   <p>External observers have drawn lessons from the Pinterest case. The <a href=\"https://ml.blaze.email/archive/ml-engineering-newsletter-5558/\">ML Engineer newsletter</a> describes the Moka article as an example of \"deploying EKS clusters, Fluent Bit logging, OTEL metrics pipelines, image management, and a custom Moka UI for Spark on Kubernetes\", placing it alongside other case studies in modern data infrastructure. These reactions suggest that Moka is seen somewhat as a reference architecture for a class of cloud native data systems.</p>\n   <p>The team do however present their migration work as an ongoing journey, rather than a finished project. In the blog and a <a href=\"https://www.linkedin.com/posts/pinterest-engineering_next-gen-data-processing-at-massive-scale-activity-7373833079498371072-EREu/\">further LinkedIn post</a>, the Pinterest authors discuss \"learnings and future direction\" and describe how early proof-of-concepts led to a phased move away from Hadoop as confidence in the new stack grew. Acharya notes that \"the best problems show up at scale\" and that building the platform involved \"working out the kinks\" as the team shifted real workloads. For other organisations, this experience may be the most important lesson. Copying the technical choices around Kubernetes, EKS and Spark is relatively simple, but the process of uncoupling from legacy systems and investing in observability, automation and multi-engine support is likely to be the real work that lies ahead.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinterest's Moka: How Kubernetes Is Rewriting the Rules of Big Data Processing\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/pinterest-kubernetes-bigdata/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768813200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 正在将其大规模数据处理从老化的 Hadoop 基础设施迁移到基于 Kubernetes 的 Moka 平台，该平台运行在 Amazon EKS 上，利用 Apache Spark、多架构支持和全面的可观测性，实现了显著的成本节约和增强的灵活性。",
+  "oneSentenceSummary": "Pinterest 正在将其大规模数据处理从老化的 Hadoop 基础设施迁移到基于 Kubernetes 的 Moka 平台，该平台运行在 Amazon EKS 上，利用 Apache Spark、多架构支持和全面的可观测性，实现了显著的成本节约和增强的灵活性。",
+  "summary": "Pinterest 正在通过从基于 Hadoop 的 Monarch 平台过渡到 Moka 来现代化其大数据生态系统，Moka 是一个基于 Kubernetes 并在 Amazon EKS 上运行的云原生数据处理平台。这一战略举措旨在克服其遗留系统的限制，实现更好的可扩展性、安全性和成本效益。Moka 主要使用 Apache Spark 进行批处理和交互式分析，未来计划集成其他引擎如 Apache Flink 和 Ray，以处理包括实时流处理在内的多样化工作负载。该平台强调使用 Terraform 和 Helm 的稳健基础设施即代码、用于成本优化的多架构镜像支持（Intel 和 ARM/Graviton），以及通过 Fluent Bit、OpenTelemetry 和 Prometheus 实现统一日志记录和指标的可观测性。这一转变反映了一个行业趋势，即 Kubernetes 越来越被视为大规模数据处理的控制平面，而不仅仅用于无状态服务，为高级数据分析提供了灵活且可扩展的基础。",
+  "mainPoints": [
+    {
+      "point": "Pinterest 正在从 Hadoop 过渡到基于 Kubernetes 的平台（Moka），该平台运行在 Amazon EKS 上，用于大规模数据处理。",
+      "explanation": "这次迁移解决了其遗留 Hadoop 系统的限制，旨在通过利用云原生基础设施实现更好的可扩展性、安全性和成本效益。"
+    },
+    {
+      "point": "Moka 集成 Apache Spark 作为其主要处理引擎，并计划支持多引擎如 Flink 和 Ray。",
+      "explanation": "这一策略提供了处理多样化数据工作负载的灵活性，从使用 Spark 的大规模批处理分析到使用 Flink 的实时流处理，针对特定用例进行优化。"
+    },
+    {
+      "point": "该平台强调稳健的基础设施即代码、多架构支持和全面的可观测性。",
+      "explanation": "使用 Terraform 和 Helm，支持 Intel 和 ARM 实例（AWS Graviton），并实施 Fluent Bit、OpenTelemetry 和 Prometheus，确保了系统的可重现性、成本效益和一致的监控。"
+    },
+    {
+      "point": "迁移是一个持续的过程，突显了在规模化现代化遗留数据系统的实际挑战和学习经验。",
+      "explanation": "Pinterest 的经验强调，真正的工作涉及与遗留系统的解耦，投资于可观测性和自动化，而不仅仅是复制技术选择，因为'最好的问题在规模化时才会显现'。"
+    }
+  ],
+  "keyQuotes": [
+    "该公司正在将核心工作负载从老化的 Hadoop 基础设施迁移到基于 Kubernetes 的系统，该系统运行在 Amazon EKS 上，以 Apache Spark 为主要引擎，并支持其他框架。",
+    "Moka 是一个如何现代化 Hadoop 时代数据平台而不放弃现有 Spark 投资的示例。",
+    "团队概述了他们如何使用 Terraform 和 Helm 创建 EKS 集群、配置网络和安全，并部署支持组件如 Spark History Server。",
+    "Moka '通过整合工作负载和跨实例类型的自动扩展，提供了容器级隔离、ARM 支持、YuniKorn 调度和显著的成本节约'。",
+    "Acharya 指出，'最好的问题在规模化时才会显现'，并且构建该平台涉及'解决各种问题'，因为团队转移了真实的工作负载。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "大数据",
+    "Apache Spark",
+    "云原生",
+    "Amazon EKS"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 805,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768813200000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 09:00:00"
+}

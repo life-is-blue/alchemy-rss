@@ -1,0 +1,55 @@
+{
+  "id": "RAW_17da9e9d",
+  "title": "LongCat-Flash-Omni 正式发布并开源：开启全模态实时交互时代",
+  "url": "https://tech.meituan.com/2025/11/03/longcat-flash-omni.html",
+  "date": "2025-11-03 00:00:00",
+  "author": "作者: 美团技术团队",
+  "siteName": "美团技术团队",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content\">\n   <p>自 9 月 1 日，美团正式发布 LongCat-Flash 系列模型，现已开源 LongCat-Flash-Chat 和 LongCat-Flash-Thinking 两大版本，获得了开发者的关注。今天 LongCat-Flash 系列再升级，正式发布全新家族成员——LongCat-Flash-Omni。</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/1df62fcd413b47fa61726ca40b5a3130381492.png\" alt></p>\n   <p>LongCat-Flash-Omni 以 LongCat-Flash 系列的高效架构设计为基础（ Shortcut-Connected MoE，含零计算专家），同时创新性集成了高效多模态感知模块与语音重建模块。即便在总参数 5600 亿（激活参数 270 亿）的庞大参数规模下，仍实现了低延迟的实时音视频交互能力，为开发者的多模态应用场景提供了更高效的技术选择。</p>\n   <p>综合评估结果表明，LongCat-Flash-Omni 在全模态基准测试中达到开源最先进水平（SOTA），同时在文本、图像、视频理解及语音感知与生成等关键单模态任务中，均展现出极强的竞争力。LongCat-Flash-Omni 是业界首个实现&nbsp;“全模态覆盖、端到端架构、大参数量高效推理”&nbsp;于一体的开源大语言模型，首次在开源范畴内实现了全模态能力对闭源模型的对标，并凭借创新的架构设计与工程优化，让大参数模型在多模态任务中也能实现毫秒级响应，解决了行业内推理延迟的痛点。</p>\n   <p><strong>模型已同步开源，欢迎体验</strong>：</p>\n   <ul>\n    <li><strong>Hugging Face</strong>：<a href=\"https://huggingface.co/meituan-longcat/LongCat-Flash-Omni\">https://huggingface.co/meituan-longcat/LongCat-Flash-Omni</a></li>\n    <li><strong>Github</strong>：<a href=\"https://github.com/meituan-longcat/LongCat-Flash-Omni\">https://github.com/meituan-longcat/LongCat-Flash-Omni</a></li>\n   </ul>\n   <h2 id=\"技术亮点\">技术亮点</h2>\n   <h3 id=\"极致性能的一体化全模态架构\">极致性能的一体化全模态架构</h3>\n   <p>LongCat-Flash-Omni 是一款拥有极致性能的开源全模态模型，在一体化框架中整合了离线多模态理解与实时音视频交互能力。该模型采用完全端到端的设计，以视觉与音频编码器作为多模态感知器，由 LLM 直接处理输入并生成文本与语音 token，再通过轻量级音频解码器重建为自然语音波形，实现低延迟的实时交互。所有模块均基于高效流式推理设计，视觉编码器、音频编解码器均为轻量级组件，参数量均约为 6 亿，延续了 LongCat-Flash 系列的创新型高效架构设计，实现了性能与推理效率间的最优平衡。</p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/554fdc0743e099a3f485d1535918be9884848.jpg\" alt=\"LongCat-Flash-Omni 模型架构\"></p>\n   <h3 id=\"大规模-低延迟的音视频交互能力\">大规模、低延迟的音视频交互能力</h3>\n   <p>LongCat-Flash-Omni 突破 “大参数规模与低延迟交互难以兼顾” 的瓶颈，在大规模架构基础上实现高效实时音视频交互。该模型总参数达 5600 亿（激活参数 270 亿），却依托 LongCat-Flash 系列创新的 ScMoE 架构（含零计算专家）作为 LLM 骨干，结合高效多模态编解码器和“分块式音视频特征交织机制”，最终实现低延迟、高质量的音视频处理与流式语音生成。模型支持&nbsp;128K tokens&nbsp;上下文窗口及超 8 分钟音视频交互，在多模态长时记忆、多轮对话、时序推理等能力上具备显著优势。</p>\n   <h3 id=\"渐进式早期多模融合训练策略\">渐进式早期多模融合训练策略</h3>\n   <p>全模态模型训练的核心挑战之一是 “不同模态的数据分布存在显著异质性”，LongCat-Flash-Omni 采用渐进式早期多模融合训练策略，在平衡数据策略与早期融合训练范式下，逐步融入文本、音频、视频等模态，确保全模态性能强劲且无任何单模态性能退化。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/f0ae68810ba98d662aa1d1d984b2a4e6144954.png\" alt></p>\n   <ul>\n    <li><strong>阶段 0</strong>：大规模文本预训练，利用成熟稳定的大语言模型为后续多模态学习奠定坚实基础；</li>\n    <li><strong>阶段 1</strong>：引入与文本结构更接近的语音数据，实现声学表征与语言模型特征空间的对齐，有效整合副语言信息；</li>\n    <li><strong>阶段 2</strong>：在 文本 - 语音对齐基础上，融入大规模图像 - 描述对与视觉 - 语言交织语料，实现视觉 - 语言对齐，丰富模型视觉知识；</li>\n    <li><strong>阶段 3</strong>：引入最复杂的视频数据，实现时空推理，同时整合更高质量、更多样化的图像数据集以增强视觉理解；</li>\n    <li><strong>阶段 4</strong>：将模型上下文窗口从 8K 扩展至 128K tokens，进一步支持长上下文推理与多轮交互；</li>\n    <li><strong>阶段 5</strong>：为缓解离散语音 tokens 的信息丢失，进行音频编码器对齐训练，使模型能直接处理连续音频特征，提升下游语音任务的保真度与稳健性。</li>\n   </ul>\n   <h2 id=\"全模态不降智-性能达到开源-sota\">全模态不降智，性能达到开源 SOTA</h2>\n   <p>经过全面的综合评估显示：LongCat-Flash-Omni 不仅在综合性的全模态基准测试（如 Omni-Bench, WorldSense）上达到了开源最先进水平（SOTA），其在文本、图像、音频、视频等各项模态的能力均位居开源模型前列，真正实现了“全模态不降智”。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/ca816eadbab56f46d5d944fe0490f7f0310637.png\" alt=\"LongCat-Flash-Omni 的基准测试性能\"></p>\n   <ul>\n    <li><strong>文本</strong>：LongCat-Flash-Omni 延续了该系列卓越的文本基础能力，且在多领域均呈现领先性能。相较于 LongCat-Flash 系列早期版本，该模型不仅未出现文本能力的衰减，反而在部分领域实现了性能提升。这一结果不仅印证了我们训练策略的有效性，更凸显出全模态模型训练中不同模态间的潜在协同价值。</li>\n    <li><strong>图像理解</strong>：LongCat-Flash-Omni 的性能（RealWorldQA 74.8 分）与闭源全模态模型 Gemini-2.5-Pro 相当，且优于开源模型 Qwen3-Omni；多图像任务优势尤为显著，核心得益于高质量交织图文、多图像及视频数据集上的训练成果。</li>\n    <li><strong>音频能力</strong>：从自动语音识别（ASR）、文本到语音（TTS）、语音续写维度进行评估，Instruct Model 层面表现突出：ASR 在 LibriSpeech、AISHELL-1 等数据集上优于 Gemini-2.5-Pro；语音到文本翻译（S2TT）在 CoVost2 表现强劲；音频理解在 TUT2017、Nonspeech7k 等任务达当前最优；音频到文本对话在 OpenAudioBench、VoiceBench 表现优异，实时音视频交互评分接近闭源模型，类人性指标优于 GPT-4o，实现基础能力到实用交互的高效转化。</li>\n    <li><strong>视频理解</strong>：LongCat-Flash-Omni 视频到文本任务性能达当前最优，短视频理解大幅优于现有参评模型，长视频理解比肩 Gemini-2.5-Pro 与 Qwen3-VL，这得益于动态帧采样、分层令牌聚合的视频处理策略，及高效骨干网络对长上下文的支持。</li>\n    <li><strong>跨模态理解</strong>：性能优于 Gemini-2.5-Flash（非思考模式），比肩 Gemini-2.5-Pro（非思考模式）；尤其在真实世界音视频理解 WorldSense 基准测试上，相较其他开源全模态模型展现出显著的性能优势，印证其高效的多模态融合能力，是当前综合能力领先的开源全模态模型。</li>\n   </ul>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/e1daaec2bbcfacd50d9ad0a8f748ddb3468064.png\" alt></p>\n   <ul>\n    <li><strong>端到端交互</strong>：由于目前行业内尚未有成熟的实时多模态交互评估体系，LongCat 团队构建了一套专属的端到端评测方案，该方案由定量用户评分（250 名用户评分）与定性专家分析（10 名专家，200 个对话样本）组成。定量结果显示：围绕端到端交互的自然度与流畅度，LongCat-Flash-Omni 在开源模型中展现出显著优势 —— 其评分比当前最优开源模型 Qwen3-Omni 高出 0.56 分；定性结果显示：LongCat-Flash-Omni 在副语言理解、相关性与记忆能力三个维度与顶级模型持平，但是在实时性、类人性与准确性三个维度仍存在差距，也将在未来工作中进一步优化。</li>\n   </ul>\n   <p>你可以通过&nbsp;<a href=\"https://longcat.ai/\">https://longcat.ai/</a>&nbsp;体验图片、文件上传和语音通话功能。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/e34c98e73ba1e4e76b3218cad64cf226144364.png\" alt></p>\n   <p>另外，我们非常激动的告诉大家，LongCat 官方 App 现已正式发布，支持联网搜索，还可以发起语音通话（视频通话功能敬请期待）。您可以通过扫描下方二维码下载使用，iOS 用户可直接在 APP Store 中搜索 <strong>LongCat</strong> 获取。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/61118a21023b1c13695a608ac536b481493025.jpg\" alt></p>\n   <p>LongCat-Flash-Omni 在开源平台已上线，欢迎开发者们探索和使用：</p>\n   <ul>\n    <li><strong>Hugging Face</strong>：<a href=\"https://huggingface.co/meituan-longcat/LongCat-Flash-Omni\">https://huggingface.co/meituan-longcat/LongCat-Flash-Omni</a></li>\n    <li><strong>Github</strong>：<a href=\"https://github.com/meituan-longcat/LongCat-Flash-Omni\">https://github.com/meituan-longcat/LongCat-Flash-Omni</a></li>\n   </ul>\n   <p>期待听到您的反馈。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美团开源 LongCat-Flash-Omni 全模态大模型，以一体化架构、高效推理和渐进式训练策略，实现开源领域 SOTA 性能及低延迟实时音视频交互。",
+  "oneSentenceSummary": "美团开源 LongCat-Flash-Omni 全模态大模型，以一体化架构、高效推理和渐进式训练策略，实现开源领域 SOTA 性能及低延迟实时音视频交互。",
+  "summary": "文章详细介绍了美团最新开源的全模态大模型 LongCat-Flash-Omni。该模型基于 LongCat-Flash 系列高效的 Shortcut-Connected MoE 架构，创新性集成了高效多模态感知与语音重建模块，在总参数 5600 亿（激活参数 270 亿）的庞大参数规模下，仍实现了毫秒级的低延迟实时音视频交互能力。文章强调 LongCat-Flash-Omni 是业界首个实现“全模态覆盖、端到端架构、大参数量高效推理”于一体的开源大模型，并在全模态基准测试中达到开源最先进水平（SOTA），同时在文本、图像、视频理解及语音感知与生成等关键单模态任务中展现出强大竞争力。文章还深入阐述了其极致性能的一体化全模态架构、大规模低延迟音视频交互能力以及渐进式早期多模融合训练策略，并提供了 Hugging Face、GitHub 链接、在线体验入口及官方 App 下载。",
+  "mainPoints": [
+    {
+      "point": "LongCat-Flash-Omni 是业界首个实现全模态覆盖、端到端架构、大参数量高效推理的开源大模型。",
+      "explanation": "该模型首次在开源范畴内实现了全模态能力对闭源模型的对标，并通过创新架构与工程优化，解决了大参数模型在多模态任务中推理延迟的痛点，达到毫秒级响应，为开发者提供了高效技术选择。"
+    },
+    {
+      "point": "采用渐进式早期多模融合训练策略，确保全模态性能强劲且无单模态性能退化。",
+      "explanation": "通过分阶段逐步融入文本、语音、图像和视频数据，并在不同阶段进行对齐和增强，有效平衡了不同模态数据分布的异质性，提升了模型的综合能力和长上下文推理能力。"
+    },
+    {
+      "point": "在全模态基准测试中达到开源 SOTA 水平，并在多项单模态任务中表现出色。",
+      "explanation": "模型在 Omni-Bench、WorldSense 等全模态测试中领先，同时在文本、图像、音频、视频理解等能力上均位居开源模型前列，实现了“全模态不降智”的显著成果。"
+    }
+  ],
+  "keyQuotes": [
+    "LongCat-Flash-Omni 是业界首个实现 '全模态覆盖、端到端架构、大参数量高效推理' 于一体的开源大语言模型，首次在开源范畴内实现了全模态能力对闭源模型的对标。",
+    "即便在总参数 5600 亿（激活参数 270 亿）的庞大参数规模下，仍实现了低延迟的实时音视频交互能力，为开发者的多模态应用场景提供了更高效的技术选择。",
+    "LongCat-Flash-Omni 突破 '大参数规模与低延迟交互难以兼顾' 的瓶颈，在大规模架构基础上实现高效实时音视频交互。",
+    "LongCat-Flash-Omni 采用渐进式早期多模融合训练策略，在平衡数据策略与早期融合训练范式下，逐步融入文本、音频、视频等模态，确保全模态性能强劲且无任何单模态性能退化。",
+    "LongCat-Flash-Omni 不仅在综合性的全模态基准测试（如 Omni-Bench， WorldSense）上达到了开源最先进水平（SOTA），其在文本、图像、音频、视频等各项模态的能力均位居开源模型前列，真正实现了'全模态不降智'。"
+  ],
+  "tags": [
+    "全模态 AI",
+    "大语言模型",
+    "多模态模型",
+    "实时交互",
+    "模型架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2543,
+  "domain": "tech.meituan.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f18ad4",
+  "sourceName": "美团技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762128000000,
+  "publishDateStr": "2025-11-03",
+  "publishDateTimeStr": "2025-11-03 00:00:00"
+}

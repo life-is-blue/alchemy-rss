@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a47f5209",
+  "title": "静态 IP：更安全的连接 - Vercel",
+  "url": "https://vercel.com/changelog/static-ips-are-now-available-for-more-secure-connectivity",
+  "date": "2025-10-02 13:00:00",
+  "author": "Miroslav Simulcik, Yanick Bélanger, Jas Garcha, Manuel Muñoz Solera, Jeff Pope, Blake Mealey",
+  "siteName": "Vercel News",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"stack-module__UbbKhW__stack stack article-module__9eLiuW__content\" data-version=\"v1\" style=\"--stack-flex:initial;--stack-direction:column;--stack-align:center;--stack-justify:flex-start;--stack-padding:0px;--stack-gap:24px\" data-customer-story=\"false\" data-contentful-locale=\"en-US\" data-contentful-field-id=\"content\" data-contentful-entry-id=\"3VJWi2AGW4FKrOBE0A3QhQ\">\n   <div class=\"stack-module__UbbKhW__stack stack w-full flex-wrap gap-4 pt-2\" data-version=\"v1\" style=\"--stack-flex:initial;--stack-direction:row;--stack-align:center;--stack-justify:space-between;--stack-padding:0px;--stack-gap:0px\">\n    <div class=\"stack-module__UbbKhW__stack stack\" data-version=\"v1\" style=\"--stack-flex:initial;--stack-direction:row;--stack-align:center;--stack-justify:flex-start;--stack-padding:0px;--stack-gap:6px\">\n     <p class=\"text-module__eElGjq__wrapper\" data-version=\"v1\" style=\"--text-color:var(--ds-gray-900);--text-size:0.875rem;--text-line-height:1.25rem;--text-letter-spacing:0px;--text-weight:400\"><span style=\"background-color: inherit; font-size: 1rem;\">Pro and Enterprise teams can now use Static IPs to connect to external services that require IP allowlisting. Traffic from builds and functions routes through consistent, shared static IPs.</span></p>\n    </div>\n   </div>\n   <p class=\"text-module__eElGjq__wrapper text-module__fl7lUq__paragraph\" data-version=\"v1\" style=\"--text-color:var(--ds-gray-1000);--xs-text-size:1rem;--xs-text-line-height:1.5rem;--xs-text-weight:400;--xs-text-letter-spacing:initial;--sm-text-size:1rem;--sm-text-line-height:1.5rem;--sm-text-weight:400;--sm-text-letter-spacing:initial;--smd-text-size:1rem;--smd-text-line-height:1.5rem;--smd-text-weight:400;--smd-text-letter-spacing:initial;--md-text-size:1rem;--md-text-line-height:1.5rem;--md-text-weight:400;--md-text-letter-spacing:initial;--lg-text-size:1.125rem;--lg-text-line-height:1.5rem;--lg-text-weight:400;--lg-text-letter-spacing:initial\">To enable Static IPs, you can access <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fsettings%2Fconnectivity&amp;title=Go+to+Connectivity+Settings\" rel=\"noopener\" target=\"_self\" data-zone=\"null\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight\">Connectivity &gt; Static IPs</a> from your project or team settings.</p>\n   <p class=\"text-module__eElGjq__wrapper text-module__fl7lUq__paragraph\" data-version=\"v1\" style=\"--text-color:var(--ds-gray-1000);--xs-text-size:1rem;--xs-text-line-height:1.5rem;--xs-text-weight:400;--xs-text-letter-spacing:initial;--sm-text-size:1rem;--sm-text-line-height:1.5rem;--sm-text-weight:400;--sm-text-letter-spacing:initial;--smd-text-size:1rem;--smd-text-line-height:1.5rem;--smd-text-weight:400;--smd-text-letter-spacing:initial;--md-text-size:1rem;--md-text-line-height:1.5rem;--md-text-weight:400;--md-text-letter-spacing:initial;--lg-text-size:1.125rem;--lg-text-line-height:1.5rem;--lg-text-weight:400;--lg-text-letter-spacing:initial\">Static IPs are offered in addition to <a href=\"https://vercel.com/docs/connectivity/secure-compute\" rel=\"noopener\" target=\"_self\" data-zone=\"null\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight\">Secure Compute</a>, which remains available for teams that need a fully dedicated VPC model. Note, Secure Compute has also moved within the Connectivity settings of your projects and teams.</p>\n   <p class=\"text-module__eElGjq__wrapper text-module__fl7lUq__paragraph\" data-version=\"v1\" style=\"--text-color:var(--ds-gray-1000);--xs-text-size:1rem;--xs-text-line-height:1.5rem;--xs-text-weight:400;--xs-text-letter-spacing:initial;--sm-text-size:1rem;--sm-text-line-height:1.5rem;--sm-text-weight:400;--sm-text-letter-spacing:initial;--smd-text-size:1rem;--smd-text-line-height:1.5rem;--smd-text-weight:400;--smd-text-letter-spacing:initial;--md-text-size:1rem;--md-text-line-height:1.5rem;--md-text-weight:400;--md-text-letter-spacing:initial;--lg-text-size:1.125rem;--lg-text-line-height:1.5rem;--lg-text-weight:400;--lg-text-letter-spacing:initial\">This is part of our move to <a href=\"https://vercel.com/blog/new-pro-pricing-plan\" rel=\"noopener\" target=\"_self\" data-zone=\"null\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight\">bring more enterprise features self-serve</a>.</p>\n   <p class=\"text-module__eElGjq__wrapper text-module__fl7lUq__paragraph\" data-version=\"v1\" style=\"--text-color:var(--ds-gray-1000);--xs-text-size:1rem;--xs-text-line-height:1.5rem;--xs-text-weight:400;--xs-text-letter-spacing:initial;--sm-text-size:1rem;--sm-text-line-height:1.5rem;--sm-text-weight:400;--sm-text-letter-spacing:initial;--smd-text-size:1rem;--smd-text-line-height:1.5rem;--smd-text-weight:400;--smd-text-letter-spacing:initial;--md-text-size:1rem;--md-text-line-height:1.5rem;--md-text-weight:400;--md-text-letter-spacing:initial;--lg-text-size:1.125rem;--lg-text-line-height:1.5rem;--lg-text-weight:400;--lg-text-letter-spacing:initial\">Read the <a href=\"https://vercel.com/docs/connectivity/static-ips\" rel=\"noopener\" target=\"_self\" data-zone=\"null\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight\">docs</a> or <a href=\"https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fsettings%2Fconnectivity&amp;title=Go+to+Connectivity+Settings\" rel=\"noopener\" target=\"_self\" data-zone=\"null\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight\">enable Static IPs here</a>.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Vercel 为 Pro 和企业版团队引入静态 IP，旨在实现与需要 IP 白名单的外部服务的安全连接。",
+  "oneSentenceSummary": "Vercel 为 Pro 和企业版团队引入静态 IP，旨在实现与需要 IP 白名单的外部服务的安全连接。",
+  "summary": "Vercel 宣布即日起 Pro 和企业版客户可以使用静态 IP。此功能确保源自 Vercel 构建和函数的流量通过一致的、共享的静态 IP 地址路由。对于需要连接到外部服务或数据库，并强制执行 IP 白名单以确保安全的组织来说，此功能至关重要。用户可以通过项目或团队设置中的“连接性 (Connectivity)”部分轻松启用静态 IP。静态 IP 与 Vercel 现有的安全计算解决方案协同工作。安全计算为有更严格隔离要求的用户提供完全专用的 VPC 模型。推出静态 IP 是 Vercel 战略的一部分，旨在让更多企业级功能易于访问，并支持用户自助服务。",
+  "mainPoints": [
+    {
+      "point": "Vercel 为需要 IP 白名单的 Pro 和企业版团队提供静态 IP，增强安全性。",
+      "explanation": "此功能为 Vercel 构建和函数提供一致的出站 IP 地址，从而能够安全连接到基于 IP 地址限制访问的外部服务。"
+    },
+    {
+      "point": "静态 IP 增强了 Vercel 部署的安全性和合规性。",
+      "explanation": "通过支持 IP 白名单，Vercel 帮助用户遵守安全策略，并无缝集成敏感的第三方系统和数据库。"
+    },
+    {
+      "point": "此功能是 Vercel 自助服务企业功能的战略举措。",
+      "explanation": "此举使 Pro 和企业版用户能够在其 Vercel 平台内更直接地控制其基础设施的网络和安全设置。"
+    }
+  ],
+  "keyQuotes": [
+    "Pro 和企业版团队现在可以使用静态 IP 连接到需要 IP 白名单的外部服务。",
+    "来自构建和函数的流量通过一致的、共享的静态 IP 路由。",
+    "这是我们推出更多企业功能，支持自助服务的一部分。"
+  ],
+  "tags": [
+    "Vercel",
+    "云计算",
+    "网络安全",
+    "IP 白名单",
+    "无服务器函数"
+  ],
+  "topicTag": "devops",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 102,
+  "domain": "vercel.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_0256cc",
+  "sourceName": "Vercel News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759410000000,
+  "publishDateStr": "2025-10-02",
+  "publishDateTimeStr": "2025-10-02 13:00:00"
+}

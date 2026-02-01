@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0a6a8d58",
+  "title": "Zleap 技术解密：后 RAG 时代已来，SAG 重新定义 AI 搜索",
+  "url": "https://www.qbitai.com/2025/11/353677.html",
+  "date": "2025-11-18 03:17:48",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\" data-pm-slice=\"0 0 []\">大家好，我是Jomy，是智跃Zleap的CEO，也是Zleap产品和技术的主要设计者。</p>\n  <p data-track=\"2\">此前在报道中，我曾粗略介绍过Zleap产品背后的技术：一个能帮助CEO自动整理、总结海量企业内部信息的智能Agent。今天，我要正式为大家介绍驱动这个Agent的底层技术：<strong>SAG</strong>。</p>\n  <p data-track=\"3\">这个产品发布后获得了不少关注。但最近，在与多位朋友、客户和投资人交流的过程中，我有了新的认知：SAG的潜力远不止服务于管理者的Agent一体机，它可以成为企业、个人乃至整个Agent领域的底层技术支撑，推动AI行业向前迈进一小步。</p>\n  <p data-track=\"4\">所以我今天就和大家详细讲解一下，SAG背后的<strong>技术原理</strong>和<strong>应用方向</strong>。</p>\n  <p data-track=\"7\">SAG的全称是SQL-Retrieval Augmented Generation，即检索部分主要由<strong>SQL驱动</strong>。</p>\n  <p data-track=\"8\">传统RAG是<strong>向量驱动</strong>的：将问题转化为向量，在原文的向量空间中模糊匹配语义，找到相似度较高的分块，最后传给LLM回答。这个方案高效，但缺点明显——过于依赖原文相似度，无法进行深度检索。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_2435374bf318e94d587057a7a70c91c3.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"969\" data-height=\"364\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">后来出现了GraphRAG，<strong>基于知识图谱</strong>的检索。其原理是先用LLM分析原文，生成实体和关系，再进行检索。本质上是让LLM对原文进行深度分析和提取，创造了一个中间层，通过知识图谱将问题和答案关联起来。这个方法效果不错，但缺点也很明显：速度慢、成本高，且增量数据需要重新生成图谱。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_6841c87b8afe105ca298da76d5a03c4c.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"982\" data-height=\"417\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">我们的SAG在传统RAG和GraphRAG的基础上更进一步。它结合了SQL的精准检索和向量的模糊匹配能力，在检索过程中实时构建数据关系，打破了RAG领域的”不可能三角”——同时实现<strong>快、准、全</strong>。</p>\n  <p data-track=\"15\">SAG的一个重要环节是最初的<strong>数据处理</strong>。</p>\n  <p data-track=\"16\">与GraphRAG类似，SAG也会创建一个中间层，我称之为”<strong>事件</strong>“。其核心是将繁杂的信息提炼为一个个原子化的事件，类似人脑将一个复杂的事拆解成多个简单的事。</p>\n  <p data-track=\"17\">但与GraphRAG不同的是，SAG不会在数据处理时就生成事件之间的关联，而是在查询时实时计算事件关系，从而解决了增量数据更新的问题。</p>\n  <p data-track=\"18\">那么如何将不同事件关联起来，正是SAG的核心所在。背后的奥秘是：在数据处理阶段，SAG不仅只是提取事件，还会为每个事件提取多维度的<strong>属性</strong>，我称之为”<strong>自然语言向量</strong>“。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_14c5e945fc99cd473efdc48dfe272db0.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"867\" data-height=\"625\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">类似于向量用不同的数字在不同维度表达语义，自然语言向量则用不同的属性作为维度，属性的值对应维度的值。不同的事件，维度是相同的，例如时间、地点、行为、人物等。这个过程本质是让LLM把事件中的<strong>关键Token进行了结构化+泛化处理</strong>。</p>\n  <p data-track=\"21\">总之，每个事件都可以用一个自然语言向量来表达其大部分语义。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_d027eba1858d35a2ba6dbaec132c4901.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"863\" data-height=\"695\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"23\">提取事件和属性这件事只需要很小的模型就能完成，大大降低了算力的成本。而且在SAG中，维度是可以自己定义的，不同的行业根据自己数据类型的不同，可以增加一些专有的维度。</p>\n  <p data-track=\"26\">那么为什么自然语言向量可以在查询时实时构建不同事件的关系？这个灵感我是来自社会工程学中的”<strong>六度分隔理论</strong>“。</p>\n  <p data-track=\"27\">六度分隔理论简单来说就是：你和任何陌生人之间相隔不超过六个人。比如A认识B，B认识C，A和C可能没有任何交集，但因为A和B有交集，B和C有交集，A就和C产生了联系。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_97bd71c390478acc2bec6b6adc8b965c.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"1280\" data-height=\"807\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">类比到SAG中，人就像事件，交集就像相同的属性。所以理论上，任何事件之间都可以通过中间事件的共同属性产生联系。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_8d48185102cda896e5e6c652c5ec3867.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"898\" data-height=\"792\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\">而事件和属性在数据处理时就已提取完成，查询时只需在SQL中检索，无需LLM参与，因此实时构建数据关系的计算是<strong>极其快速</strong>的。</p>\n  <p data-track=\"34\">大家都知道，SQL是精准匹配，如何应对用户千奇百怪的提问呢？比如当你检索”苹果公司”时，是无法通过SQL关联到”Apple Inc”。为了解决这个问题，我就利用了向量的<strong>语义匹配能力</strong>。</p>\n  <p data-track=\"35\">SAG会将所有属性同时存入向量数据库和SQL数据库。当你搜索”苹果公司”时，向量可以语义匹配到”Apple Inc”，甚至可以匹配到“iPhone”。此时再拿着”苹果公司”、”Apple Inc”和“iPhone”去SQL中查询，就不会有遗漏了。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251118040748_b159b2c17c1bd54ae4623931729fb5e5.png\" alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" data-ic=\"undefined\" data-width=\"914\" data-height=\"289\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"37\">传统基于向量的检索非常擅长进行语义的模糊匹配，但又有很大的不确定性。SAG恰恰利用这一点，结合了向量和SQL的优势——以SQL为主，驯化了向量的不确定性，做到了鱼和熊掌兼得。</p>\n  <p data-track=\"38\">当驯化了不确定性，SQL的优势就凸显出来了。例如我们可以针对某几个属性<strong>精准和完整</strong>的检索，甚至可以直接对某个属性的事件进行<strong>统计</strong>。由于SAG的SQL表结构相当简单，LLM的Text-to-SQL能力完全能够胜任。</p>\n  <p data-track=\"41\">SAG让每一次检索都更精准，这也带来了显著的<strong>累积效应</strong>。</p>\n  <p data-track=\"42\">以往大家觉得RAG的多跳效果一般，本质上是因为”<strong>Garbage In, Garbage Out</strong>“——首次检索质量不高，再多轮也起不了太大作用。</p>\n  <p data-track=\"43\">而SAG显著提升了每一次原子检索的质量，为LLM提供了更多关联事件，多轮推理的效果也会有<strong>质的飞跃</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" src=\"https://image.jido.dev/20251118040748_358bcfe66366d088b47182f387faa106.png\" data-ic=\"undefined\" data-width=\"1024\" data-height=\"1024\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\">SAG的本质是利用AI将非结构化数据转化为结构化数据，这在企业场景中蕴含着巨大的应用潜力。</p>\n  <p data-track=\"48\"><strong>首先，作为企业智能决策助手。</strong></p>\n  <p data-track=\"49\">就像我们的首款产品Zleap-D1 Agent一体机，SAG能够唤醒企业沉睡的历史数据，实时连接最新业务数据，通过报告、搜索、问答等应用形态，为管理者提供决策辅助和全新的商业洞察。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" src=\"https://image.jido.dev/20251118040748_66021368c583d8c9541a50f690f3423d.png\" data-ic=\"undefined\" data-width=\"773\" data-height=\"533\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"51\"><strong>其次，作为通用数据处理引擎。</strong></p>\n  <p class=\"pgc-p\" data-track=\"52\">SAG可以作为独立的数据处理器，重构企业现有的所有数据。无论是电商推荐、金融风控，还是广告投放，都能从中获益——用更智能的数据显著提升原有算法的效果。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" src=\"https://image.jido.dev/20251118040748_cc045965447424d9aadab3fcb0b80ef5.png\" data-ic=\"undefined\" data-width=\"1092\" data-height=\"344\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"54\"><strong>最后，作为低成本的AI转型方案。</strong></p>\n  <p data-track=\"55\">SAG能够帮助传统企业跨越信息化阶段，直接迈入AI化时代。SAG通过AI将繁杂的非结构化信息转化为<strong>统一的数据格式</strong>，为更深层的应用场景奠定了坚实的数据基础，有望加速整个toB应用生态的发展。而且SAG的数据处理是异步进行的，不仅可以使用小模型，还可以利用起夜间的闲置算力，让企业以更低的门槛处理海量历史数据，真正迈入AI时代。</p>\n  <p data-track=\"58\">SAG在个人应用方向同样前景广阔。</p>\n  <p data-track=\"59\"><strong>首先，作为个人知识库的底座。</strong>SAG可以让你的笔记、文档、收藏真正变成可检索、可关联的知识体系，而不只是一堆躺在文件夹里的信息。</p>\n  <p data-track=\"60\"><strong>其次，作为个人AI的记忆中枢。</strong>让AI更好的记住你的偏好、习惯、历史对话，真正成为懂你的智能助手。</p>\n  <p data-track=\"61\"><strong>更重要的是，SAG足够轻量。</strong>由于对算力需求极低，经过精简的系统甚至可以完全离线运行在手机上，效果依然出色——你的数据永远在你自己手里。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" src=\"https://image.jido.dev/20251118040748_e6043f2dde860de592309374c2f9c826.png\" data-ic=\"undefined\" data-width=\"778\" data-height=\"782\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"65\">对于Agent来说，上下文工程已经成为Agent开发的核心共识，但现有的上下文检索往往过于粗暴。比如Claude Code的grep搜索，只能做正则匹配，缺乏深层次的<strong>结构化理解</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Zleap技术解密：后RAG时代已来，SAG重新定义AI搜索\" src=\"https://image.jido.dev/20251118040748_fd79c3ed0c69b51dd38095270c03cec1.png\" data-ic=\"undefined\" data-width=\"862\" data-height=\"556\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"67\">而SAG可以成为未来Agent的记忆与数据基座，快速为Agent提供更精准、更优质的上下文。就像前面提到的累积效应——在更好的上下文加持下，原本需要10步才能完成的任务，可能3步就能搞定，<strong>大幅提升</strong>Agent的运行效率和成功率。</p>\n  <p data-track=\"70\">总的来说，<strong>SAG是新一代的RAG技术</strong>，融合SQL与向量的优势，实现了快速、准确、全面的AI检索，为企业、个人和Agent领域提供了更强大的数据基座。</p>\n  <p data-track=\"71\">为了可以让所有企业都可以使用到SAG技术，也希望为行业发展贡献一份力量，<strong>我们决定将这个技术开源</strong>：</p>\n  <p data-track=\"72\">https://github.com/Zleap-AI/SAG</p>\n  <p data-track=\"73\">本次由于篇幅问题，其实有的非常多的细节并没有讲，比如事件和属性通过具体什么算法进行动态关联，又比如多轮召回时的动态剪枝策略等等，关于更具体的算法和原理，请查看我们的开源代码。也欢迎有兴趣的企业和高校与我们合作探索。</p>\n  <p data-track=\"76\">我们认为，SAG的价值远不止于替代RAG——它更大的意义在于，能以极高效率将各种信息转化为统一的<strong>多维知识图谱</strong>。设想这样一个未来：SAG通过一个简洁优雅的数据格式，打通所有信息源，让数据不再是孤岛，而是可以互相连接甚至交易的资产。而这些海量的结构化数据，又可以被AI充分检索和利用，推动整个社会生产效率的跃升。</p>\n  <p data-track=\"77\">这就是我们智跃Zleap的愿景：<strong>让所有信息产生连接，让所有数据成为资产。</strong></p>\n  <p data-track=\"79\">为了大家更方便地体验这个技术的能力，我们也为普通用户做了一个产品，可以将公共信息和私人信息聚合在一起，定时生成报告，或进行问答和搜索。</p>\n  <p data-track=\"80\">由于产品仍处于Beta阶段，我们实施了邀请码机制。邀请码将通过智跃公众号定期发布，感谢您的关注。</p>\n  <p data-track=\"81\">Web：https://app.zleap.com.cn</p>\n  <p data-track=\"82\">APP：iOS App Store搜索Zleap</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Zleap 技术解密：SAG 结合 SQL 与向量优势，实时构建数据关系，旨在重新定义 AI 搜索，解决传统 RAG 痛点，实现快、准、全。",
+  "oneSentenceSummary": "Zleap 技术解密：SAG 结合 SQL 与向量优势，实时构建数据关系，旨在重新定义 AI 搜索，解决传统 RAG 痛点，实现快、准、全。",
+  "summary": "文章详细介绍了 Zleap 提出的新型 AI 检索技术 SAG（SQL-Retrieval Augmented Generation）。它旨在解决传统 RAG 依赖向量模糊匹配导致深度检索不足，以及 GraphRAG 成本高、更新慢的问题。SAG 通过将非结构化信息提炼为原子化“事件”和多维度“自然语言向量”，在查询时实时构建数据关系，并结合 SQL 的精准匹配与向量的语义模糊匹配能力，实现了检索的“快、准、全”。该技术能显著提升多轮推理效果，并在企业智能决策、通用数据处理、低成本 AI 转型，以及个人知识库、AI 记忆中枢和 Agent 上下文管理等多个领域展现巨大应用潜力。文章末尾宣布 SAG 技术将开源。",
+  "mainPoints": [
+    {
+      "point": "SAG 结合 SQL 与向量优势，实现快、准、全的 AI 检索",
+      "explanation": "SAG 通过 SQL 的精准匹配和向量的语义模糊匹配，解决了传统 RAG 和 GraphRAG 的痛点，能在检索过程中实时构建数据关系，显著提升检索效率和准确性。"
+    },
+    {
+      "point": "SAG 通过“事件”和“自然语言向量”构建中间层，实现数据关系实时计算",
+      "explanation": "SAG 将信息原子化为事件，并为每个事件提取多维度属性（自然语言向量），借鉴“六度分隔理论”，在查询时快速关联事件，解决增量数据更新难题。"
+    },
+    {
+      "point": "SAG 作为新一代 RAG 技术，在企业、个人和 Agent 领域具有广泛应用潜力",
+      "explanation": "SAG 可作为企业智能决策助手、通用数据处理引擎、低成本 AI 转型方案，以及个人知识库、AI 记忆中枢和 Agent 记忆基座，提升 AI 应用效率和效果。"
+    }
+  ],
+  "keyQuotes": [
+    "SAG 的全称是 SQL-Retrieval Augmented Generation，即检索部分主要由 SQL 驱动。",
+    "我们的 SAG 在传统 RAG 和 GraphRAG 的基础上更进一步。它结合了 SQL 的精准检索和向量的模糊匹配能力，在检索过程中实时构建数据关系，打破了 RAG 领域的“不可能三角”------同时实现快、准、全。",
+    "SAG 的本质是利用 AI 将非结构化数据转化为结构化数据，这在企业场景中蕴含着巨大的应用潜力。",
+    "SAG 可以成为未来 Agent 的记忆与数据基座，快速为 Agent 提供更精准、更优质的上下文。",
+    "我们认为，SAG 的价值远不止于替代 RAG------它更大的意义在于，能以极高效率将各种信息转化为统一的多维知识图谱。"
+  ],
+  "tags": [
+    "RAG",
+    "SAG",
+    "AI搜索",
+    "LLM应用",
+    "SQL"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 88,
+  "wordCount": 3269,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763435868000,
+  "publishDateStr": "2025-11-18",
+  "publishDateTimeStr": "2025-11-18 03:17:48"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_bf39af",
+  "title": "有了它 ，我彻底告别了 try-finally 🔥🔥🔥前言 前几天看到 Rspack 团队宣布即将支持 usin",
+  "url": "https://juejin.cn/post/7540540970775576628",
+  "date": "2025-08-20 07:38:40",
+  "author": "萌萌哒草头将军",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <h3 data-id=\"heading-0\">前言</h3>\n   <p>前几天看到 Rspack 团队宣布即将支持 <code>using</code> 声明，</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a207a4a073814aa1b5d33793c421c742~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6JCM6JCM5ZOS6I2J5aS05bCG5Yab:q75.awebp?rk3s=f64ab15b&amp;x-expires=1756280319&amp;x-signature=vH%2F4jEV6snAWIxhFjS9wAf7%2F6cI%3D\" alt=\"rspack 1.5 将支持\" loading=\"lazy\"></p>\n   <p>今天我们来看看 <code>using</code> 的神奇用法！</p>\n   <h4 data-id=\"heading-1\">往期精彩推荐</h4>\n   <ul>\n    <li><a href=\"https://juejin.cn/post/7538720615357808690\" target=\"_blank\" title=\"https://juejin.cn/post/7538720615357808690\">Node.js v24.6.0 新功能速览</a></li>\n    <li><a href=\"https://juejin.cn/post/7538393049765314598\" target=\"_blank\" title=\"https://juejin.cn/post/7538393049765314598\">原来在字节写代码就是这么朴实无华！</a></li>\n    <li><a href=\"https://juejin.cn/post/7537487570839994404\" target=\"_blank\" title=\"https://juejin.cn/post/7537487570839994404\">Webpack 项目也可以引入大模型问答了！感谢 Rsdoctor 1.2 ！</a></li>\n    <li>更多精彩文章欢迎关注我的公众号：萌萌哒草头将军</li>\n   </ul>\n   <h3 data-id=\"heading-2\">正文</h3>\n   <p><code>using</code> 声明是 ECMAScript 提案中的一项新特性，旨在简化资源管理！</p>\n   <p>Node.js 从 v20 开始实验性支持此功能。</p>\n   <p>大家可以通过以下命令在 Node.js 中启用实验性支持：</p>\n   <pre><code class=\"hljs language-bash\" lang=\"bash\">node --harmony-explicit-resource-management app.js\n</code></pre>\n   <p>其核心特点如下：</p>\n   <ul>\n    <li><strong>声明式资源管理</strong>：通过 <code>using</code> 关键字定义需自动清理的资源。</li>\n    <li><strong>自动释放</strong>：作用域结束时调用资源的 <code>[Symbol.dispose]</code> 方法。</li>\n    <li><strong>异步支持</strong>：<code>using</code> 和 <code>await using</code> 分别支持同步和异步资源。</li>\n   </ul>\n   <p>下面是基础使用示例，带大家感受它的简洁之处！</p>\n   <h4 data-id=\"heading-3\">1. 同步资源管理：<code>using</code> 声明</h4>\n   <p>传统资源读取会依赖 try-finally 块，代码冗长且易出错：</p>\n   <pre><code class=\"hljs language-javascript\" lang=\"javascript\"><span class=\"hljs-keyword\">import</span> { open } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'fs/promises'</span>;\n\n<span class=\"hljs-keyword\">async</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">readFile</span>(<span class=\"hljs-params\"></span>) {\n  <span class=\"hljs-keyword\">const</span> file = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">open</span>(<span class=\"hljs-string\">'data.txt'</span>, <span class=\"hljs-string\">'r'</span>);\n  <span class=\"hljs-keyword\">try</span> {\n    <span class=\"hljs-keyword\">const</span> content = <span class=\"hljs-keyword\">await</span> file.<span class=\"hljs-title function_\">readFile</span>(<span class=\"hljs-string\">'utf8'</span>);\n    <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(content);\n  } <span class=\"hljs-keyword\">finally</span> {\n    <span class=\"hljs-keyword\">await</span> file.<span class=\"hljs-title function_\">close</span>();\n  }\n}\n</code></pre>\n   <p>“using” 声明适用于需要手动管理生命周期的资源，如文件句柄或数据库连接。</p>\n   <pre><code class=\"hljs language-javascript\" lang=\"javascript\"><span class=\"hljs-keyword\">import</span> { open } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'fs/promises'</span>;\n\n{\n  using file = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">open</span>(<span class=\"hljs-string\">'data.txt'</span>, <span class=\"hljs-string\">'r'</span>);\n  <span class=\"hljs-keyword\">const</span> content = <span class=\"hljs-keyword\">await</span> file.<span class=\"hljs-title function_\">readFile</span>(<span class=\"hljs-string\">'utf8'</span>);\n  <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(content);\n}\n</code></pre>\n   <p>file 自动关闭，无需显式调用 file.close()</p>\n   <p>这比传统的 try-finally 更简洁，减少了样板代码。</p>\n   <h4 data-id=\"heading-4\">2. 异步资源管理：<code>await using</code></h4>\n   <p>对于异步资源（如数据库连接或网络请求），<code>await using</code> 结合了 <code>await</code> 和 <code>using</code>，确保异步资源在作用域结束时通过 <code>[Symbol.asyncDispose]</code> 清理。</p>\n   <pre><code class=\"hljs language-javascript\" lang=\"javascript\"><span class=\"hljs-keyword\">import</span> { createConnection } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">'some-db-driver'</span>;\n\n<span class=\"hljs-keyword\">async</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">queryData</span>(<span class=\"hljs-params\"></span>) {\n  <span class=\"hljs-keyword\">await</span> using db = <span class=\"hljs-keyword\">await</span> <span class=\"hljs-title function_\">createConnection</span>(<span class=\"hljs-string\">'mysql://localhost'</span>);\n  <span class=\"hljs-keyword\">const</span> result = <span class=\"hljs-keyword\">await</span> db.<span class=\"hljs-title function_\">query</span>(<span class=\"hljs-string\">'SELECT * FROM users'</span>);\n  <span class=\"hljs-keyword\">return</span> result;\n} \n</code></pre>\n   <p>这里，<code>db</code> 在作用域结束时调用 <code>[Symbol.asyncDispose]</code>，自动关闭数据库连接，避免资源泄漏。</p>\n   <h4 data-id=\"heading-5\">3. 自定义资源管理</h4>\n   <p>开发者可以为自定义对象实现 <code>[Symbol.dispose]</code> 或 <code>[Symbol.asyncDispose]</code>，以支持 “using” 声明。</p>\n   <pre><code class=\"hljs language-javascript\" lang=\"javascript\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">TempResource</span> {\n  <span class=\"hljs-title function_\">constructor</span>(<span class=\"hljs-params\">name</span>) {\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">name</span> = name;\n  }\n  [<span class=\"hljs-title class_\">Symbol</span>.<span class=\"hljs-property\">dispose</span>]() {\n    <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-string\">`<span class=\"hljs-subst\">${<span class=\"hljs-variable language_\">this</span>.name}</span> disposed`</span>);\n  }\n}\n\n{\n  using resource = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TempResource</span>(<span class=\"hljs-string\">'temp'</span>);\n  <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(<span class=\"hljs-string\">'Using resource:'</span>, resource.<span class=\"hljs-property\">name</span>);\n}\n</code></pre>\n   <p>这种灵活性让 “using” 声明适用于各种场景，从内存管理到外部资源清理。</p>\n   <h3 data-id=\"heading-6\">最后</h3>\n   <p>使用 “using” 声明，代码更简洁，清理逻辑自动处理，减少出错风险～</p>\n   <p>今天的分享就这些了，感谢大家的阅读！如果文章中存在错误的地方欢迎指正！</p>\n   <h4 data-id=\"heading-7\">往期精彩推荐</h4>\n   <ul>\n    <li><a href=\"https://juejin.cn/post/7538720615357808690\" target=\"_blank\" title=\"https://juejin.cn/post/7538720615357808690\">Node.js v24.6.0 新功能速览</a></li>\n    <li><a href=\"https://juejin.cn/post/7538393049765314598\" target=\"_blank\" title=\"https://juejin.cn/post/7538393049765314598\">原来在字节写代码就是这么朴实无华！</a></li>\n    <li><a href=\"https://juejin.cn/post/7537487570839994404\" target=\"_blank\" title=\"https://juejin.cn/post/7537487570839994404\">Webpack 项目也可以引入大模型问答了！感谢 Rsdoctor 1.2 ！</a></li>\n    <li>更多精彩文章欢迎关注我的公众号：萌萌哒草头将军</li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章详细介绍了 ECMAScript 中`using`声明这一新特性，它通过自动释放同步和异步资源，显著简化了资源管理，替代了传统的`try-finally`模式，提高了代码的简洁性和可靠性。",
+  "oneSentenceSummary": "文章详细介绍了 ECMAScript 中`using`声明这一新特性，它通过自动释放同步和异步资源，显著简化了资源管理，替代了传统的`try-finally`模式，提高了代码的简洁性和可靠性。",
+  "summary": "本文以 Rspack 团队宣布支持 `using` 声明为引，深入解析了 ECMAScript 提案中的 `using` 声明这一新特性。该特性旨在解决传统 `try-finally` 块在资源管理中代码冗长和易出错的问题。文章详细阐述了 `using` 声明的核心特点，包括声明式资源管理、作用域结束时自动调用 `[Symbol.dispose]` 方法进行资源释放，以及对同步和异步资源的全面支持（`using` 和 `await using`）。通过文件句柄和数据库连接的实际代码示例，清晰地对比了 `using` 声明与传统方式的简洁性优势。此外，文章还展示了如何为自定义对象实现 `[Symbol.dispose]` 或 `[Symbol.asyncDispose]`，以支持自定义资源的自动管理。目前，Node.js v20+ 已实验性支持此功能。该特性旨在帮助开发者编写更简洁、更安全的代码，有效避免资源泄漏。",
+  "mainPoints": [
+    {
+      "point": "`using`声明简化了同步资源管理，替代了冗余的`try-finally`模式",
+      "explanation": "通过`using`关键字，资源（如文件句柄）在作用域结束时自动调用`[Symbol.dispose]`方法释放，极大减少了样板代码，提升了代码简洁性。"
+    },
+    {
+      "point": "`await using`为异步资源提供了自动清理机制，有效避免资源泄漏",
+      "explanation": "针对数据库连接等异步资源，`await using`结合`await`确保`[Symbol.asyncDispose]`方法在作用域结束时被调用，从而实现资源的自动安全关闭。"
+    },
+    {
+      "point": "开发者可自定义资源管理逻辑，使`using`声明适用于更广泛的场景",
+      "explanation": "通过为自定义对象实现`[Symbol.dispose]`或`[Symbol.asyncDispose]`，开发者可以灵活地将`using`声明应用于各类自定义资源，增强了其通用性和可扩展性。"
+    }
+  ],
+  "keyQuotes": [
+    "`using` 声明是 ECMAScript 提案中的一项新特性，旨在简化资源管理！",
+    "其核心特点如下：声明式资源管理、自动释放、异步支持。",
+    "这比传统的 try-finally 更简洁，减少了样板代码。",
+    "使用 'using' 声明，代码更简洁，清理逻辑自动处理，减少出错风险～"
+  ],
+  "tags": [
+    "ECMAScript",
+    "JavaScript",
+    "using声明",
+    "资源管理",
+    "Node.js"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 0,
+  "score": 89,
+  "wordCount": null,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755675520000,
+  "publishDateStr": "2025-08-20",
+  "publishDateTimeStr": "2025-08-20 07:38:40"
+}

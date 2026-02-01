@@ -1,0 +1,59 @@
+{
+  "id": "RAW_1db93d",
+  "title": "SFT 与 RL 的结合，vivo AI Lab 提出新的后训练方法 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-22",
+  "date": "2025-09-22 02:52:57",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <br>\n  </section>\n  <p data-pm-slice=\"0 0 []\"><strong>本文的第一作者曾敏来自 vivo AI Lab，主要研究方向为大语言模型、强化学习、agent。</strong></p>\n  <p data-pm-slice=\"2 2 []\">监督微调（SFT）和强化学习（RL）微调是大模型后训练常见的两种手段。通过强化学习微调大模型在众多 NLP 场景都取得了较好的进展，但是在文本分类场景，强化学习未取得较大的进展，其表现往往不如监督学习。</p>\n  <p>SFT 和 RL 在训练的过程中都存在各自的特点：SFT 直接对着答案「死记硬背」，简单且有效，收敛速度快，但是泛化能力不行。而 RL 通过探索来获得答案，泛化能力强。但强化学习只会一味地探索，而不学习答案，学习速度缓慢，可能出现长期无法得到收敛甚至最后出现训练不稳定的现象。</p>\n  <p>为了解决这些难题，最近，<strong>vivo AI Lab 算法团队</strong>提出了一种新的大模型后训练框架 GTA，该方法可以综合发挥出 SFT 的优点和 RL 的优点，成功解决了文本分类场景中 RL 收敛速度慢的问题。该论文已被 AI 顶级学术会议之一的 <strong>EMNLP 2025</strong> 录用。</p>\n  <p data-pm-slice=\"0 0 []\"><img data-src=\"https://image.jido.dev/20250922043743_645ac2\" alt=\"1195538705.jpg\" data-ratio=\"0.25833333333333336\" data-type=\"other\" data-w=\"1080\" data-backw=\"562\" data-backh=\"145\" data-imgfileid=\"503508010\" data-original-style=\"width:100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/e7e4eaec-b8b8-471a-a468-82f01f42700c/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <ul>\n   <li>\n    <p data-pm-slice=\"0 0 []\">论文标题：GTA: Supervised-Guided Reinforcement Learning for Text Classification with Large Language Models</p>\n   </li>\n   <li>\n    <p data-pm-slice=\"0 0 []\">论文地址：https://arxiv.org/abs/2509.12108</p>\n   </li>\n   <li>\n    <p data-pm-slice=\"0 0 []\">作者邮箱：zengmin325@163.com / zengmin.ai@vivo.com</p>\n   </li>\n  </ul>\n  <p><strong>方法：把 SFT 和 RL 拼接成效率更高的后训练范式</strong></p>\n  <p>论文提出了 Guess–Think–Answer（GTA）框架，将监督信号与强化学习整合到单阶段训练流程，以同时获得 SFT 的高效收敛与 RL 的性能上限。核心设计思路是把分类模型的输出分成三个阶段，并且把监督损失与强化学习的奖励机制结合起来训练这些阶段的不同部分。输出的三个阶段如下：</p>\n  <p><img data-src=\"https://image.jido.dev/20250922043743_583b19\" data-ratio=\"0.4142538975501114\" data-type=\"png\" data-w=\"898\" data-imgfileid=\"503508011\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/d102a41d-0cc1-442a-a1e7-28f28320a40f/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <ul>\n   <li>\n    <p><strong>Guess</strong></p>\n   </li>\n  </ul>\n  <p>模型首先给出一个初始猜测，这一步用传统的交叉熵损失（cross-entropy loss）来计算初始猜测和标签的损失。这部分是基于监督学习，以快速给模型一个容易收敛的信号。</p>\n  <ul>\n   <li>\n    <p><strong>Think</strong></p>\n   </li>\n  </ul>\n  <p>在完成初始的猜测之后，模型接下来开始思考输入的问题与猜测的答案之间的关联，并且对答案进行进一步的分析。考虑猜测是正确的或者不是正确的，分析输入中的线索或特征等。这部分是为了让模型能够「反省」（reflect）猜测，从而在后面生成更好或修正的最终答案。</p>\n  <ul>\n   <li>\n    <p><strong>Answer</strong></p>\n   </li>\n  </ul>\n  <p>模型最终生成的答案，结合前两个阶段的信息生成。这个答案（以及整个 GTA 框架的格式结构）会由强化学习的奖励来引导优化。也就是说，不只是最终分类任务的正确性，还有中间思考阶段对最终答案的辅助或整体的结构格式也可能受到 RL 奖励值的影响。</p>\n  <p>最终总的损失是监督损失和强化学习损失 / 目标函数的共同作用。在猜测答案的引导下，强化学习探索答案的效率和收敛速度得到了进一步提升，从而提高性能的上限。</p>\n  <p><img data-src=\"https://image.jido.dev/20250922043743_d96a6b\" alt=\"-352289542.jpg\" data-ratio=\"0.1252821670428894\" data-type=\"other\" data-w=\"886\" data-imgfileid=\"503508012\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/a6112f77-a515-4030-9f3b-b3b70e14fe13/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\"></p>\n  <p><strong>处理梯度冲突</strong></p>\n  <p>为了防止不同优化目标可能带来的梯度冲突现象，该过程使用了特定位置的 loss mask 和梯度冲突检测。</p>\n  <p><strong>loss mask</strong>：在计算 guess 部分交叉熵损失的时候，对于 guess 部分以外的内容进行 mask，而计算 RL 损失的时候，对 guess 部分的内容进行 mask，通过这种方式使得监督信号和 RL 优化目标之间不会相互干扰。</p>\n  <p><img data-src=\"https://image.jido.dev/20250922043743_31cd90\" alt=\"-353455824.jpg\" data-ratio=\"0.3055555555555556\" data-type=\"other\" data-w=\"1080\" data-imgfileid=\"503508013\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/bcb123e0-de5b-4785-8c99-138ad61a6335/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>梯度冲突检测：</strong>作者参考现有的研究，通过反向传播时的梯度的余弦相似度来检测监督信号和 RL 信号的梯度是否发生冲突，这样可以更稳定地融合两种训练信号。</p>\n  <p><strong>实验结果</strong></p>\n  <p>作者在多台多机多卡的 L40s 上基于 qwen2.5（3B）、qwen3（3B）、Llama（3B）等三个尺寸相对较小的模型上进行了分布式训练。选择了四个常见的文本分类数据集，分别是 SST-5、Amazon、Emotion、BBC News 数据集，每个数据集都包含了多个类别，它们覆盖的领域主要包括情感分析、商品评价、情绪 / 情感类别识别，以及新闻 / 话题分类等。</p>\n  <p>如图所示，作者在实验过程中与 GRPO、SFT 进行了对比，从实验结果可以发现 GRPO 在分类任务上的效果并不理想，而 GTA 在分类任务展示了比 SFT 和 GRPO 更好的性能。</p>\n  <p><img data-src=\"https://image.jido.dev/20250922043743_9e78a0\" alt=\"image.png\" data-ratio=\"0.7764530551415797\" data-type=\"other\" data-w=\"671\" data-imgfileid=\"503508015\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/d5c9e2b7-f39b-45db-b559-a617a486cfc5/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>作者跟踪训练过程中的奖励值变化曲线和在测试集任务上的准确性评估曲线，来观察训练过程中的收敛速度。从图中可以发现，训练到 500–1000 step 即超过 GRPO（step 的计算包含了重要性采样数据重复利用的次数），即使将训练时长继续延长至 10000 step，GRPO 仍未追上 GTA。这表明 GTA 在 guess 部分的监督信号的引导下，收敛速度远高于 GRPO。</p>\n  <p><img data-src=\"https://image.jido.dev/20250922043743_cc4acf\" alt=\"image.png\" data-ratio=\"0.36484983314794217\" data-type=\"other\" data-w=\"899\" data-imgfileid=\"503508016\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/48aaca83-b5cd-4be8-996b-7133c9550a4c/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>此外，作者也验证了在分类任务上，带思考过程和不带思考过程的准确率。如图所示，作者在这些数据集上进行了测试，带有思考过程的推理可以获得更高的准确率。相比 SFT，作者提出的 GTA 方法，无需额外的人工标注推理过程，即可在训练过程中自发地引入思考。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250922043743_d64644\" data-ratio=\"0.5898148148148148\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503508040\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/8ad5f141-0da6-4975-b346-17a7cf94af2f/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>作者在推理的时候发现两个现象：尽管猜测答案可以加快 RL 的收敛速度，但是模型不会盲目选择猜测的答案作为最终答案。从图中 case A 可以看到，模型首先输出了一个错误的猜测，然后在思考过程中基于猜测的答案和已有的答案进行分析和判断，最终成功地得出了正确答案。而从 case B 中可以看到，当生成了一个标签列表以外的猜测答案时，模型在思考过程中会纠正这个问题，并得出最终的正确答案。</p>\n  <p><img data-src=\"https://image.jido.dev/20250922043743_f3eb13\" alt=\"image.png\" data-ratio=\"0.43068181818181817\" data-type=\"other\" data-w=\"880\" data-imgfileid=\"503508018\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/09d1ee9a-fa31-41e1-b863-206f8a6c983f/640.png\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>后续计划</strong></p>\n  <p>本文仅在文本分类任务上进行了验证，从原理上来分析，该方法不仅适用于文本分类任务，还有可能适用于更多的 NLP 场景，作者计划未来探索更多的场景。此外，结合监督微调和强化学习微调可能带来更大的显存开销，作者在本文主要选择小模型上进行实验，未来将会探索更大的模型。</p>\n  <p><strong>未来展望</strong></p>\n  <p>SFT 和 RL 的结合正在受到更多的关注，近期的讨论都集中在如何把两种范式的优势合并，以获得更好的性能（如通义 CHORD 和上海人工智能实验室的 LUFFY）。GTA 是在后训练方向上的一种新的实践。SFT 和 RL 的结合有望成为未来一种新的后训练范式。</p>\n </body>\n</html>",
+  "aiSummary": "vivo AI Lab 提出 GTA 框架，将监督微调与强化学习结合，有效解决了大模型在文本分类任务中收敛慢、性能不佳的问题，并被 EMNLP 2025 录用。",
+  "oneSentenceSummary": "vivo AI Lab 提出 GTA 框架，将监督微调与强化学习结合，有效解决了大模型在文本分类任务中收敛慢、性能不佳的问题，并被 EMNLP 2025 录用。",
+  "summary": "文章详细介绍了 vivo AI Lab 提出的 GTA (Guess-Think-Answer) 大模型后训练框架，旨在结合监督微调 (SFT) 和强化学习 (RL) 的优势，解决现有方法在文本分类任务中的局限性。SFT 虽收敛快但泛化能力弱，RL 泛化强但收敛慢且不稳定。GTA 框架将模型输出分为“猜测 (Guess)”、“思考 (Think)”和“回答 (Answer)”三个阶段，通过交叉熵损失引导初始猜测，并利用强化学习奖励优化最终答案及整体结构。为避免 SFT 和 RL 信号间的梯度冲突，该方法引入了 loss mask 和梯度冲突检测机制。实验结果表明，在多个文本分类数据集和小规模模型上，GTA 框架在准确性和收敛速度方面均优于 SFT 和 GRPO 等基线方法，且“思考”过程能自发提升推理准确率。文章展望了该方法在更多 NLP 场景和更大规模模型上的应用潜力，并指出 SFT 与 RL 的结合将成为未来后训练范式的重要方向。",
+  "mainPoints": [
+    {
+      "point": "GTA 框架有效融合 SFT 与 RL 优势，解决文本分类痛点",
+      "explanation": "通过结合 SFT 的快速收敛与 RL 的强泛化能力，GTA 在文本分类任务中表现优于传统 SFT 和纯 RL 方法，提升了性能与效率。"
+    },
+    {
+      "point": "创新的 Guess-Think-Answer 三阶段训练范式",
+      "explanation": "模型通过“猜测”快速获得监督信号，“思考”进行自我反省与分析，最终“回答”生成优化结果，实现高效且高质量的后训练。"
+    },
+    {
+      "point": "引入机制有效处理 SFT 与 RL 训练中的梯度冲突",
+      "explanation": "采用 loss mask 和梯度冲突检测，确保监督损失和强化学习奖励信号在训练过程中互不干扰，保证训练的稳定性和收敛性。"
+    },
+    {
+      "point": "实验证明 GTA 在小模型文本分类任务中性能优越",
+      "explanation": "在多数据集和多小模型上，GTA 框架展现出比 SFT 和 GRPO 更高的准确率和更快的收敛速度，尤其在“思考”阶段能自发提升推理质量。"
+    }
+  ],
+  "keyQuotes": [
+    "SFT 和 RL 在训练的过程中都存在各自的特点：SFT 直接对着答案「死记硬背」，简单且有效，收敛速度快，但是泛化能力不行。而 RL 通过探索来获得答案，泛化能力强。",
+    "论文提出了 Guess--Think--Answer（GTA）框架，将监督信号与强化学习整合到单阶段训练流程，以同时获得 SFT 的高效收敛与 RL 的性能上限。",
+    "在猜测答案的引导下，强化学习探索答案的效率和收敛速度得到了进一步提升，从而提高性能的上限。",
+    "带有思考过程的推理可以获得更高的准确率。相比 SFT，作者提出的 GTA 方法，无需额外的人工标注推理过程，即可在训练过程中自发地引入思考。",
+    "SFT 和 RL 的结合有望成为未来一种新的后训练范式。"
+  ],
+  "tags": [
+    "大语言模型",
+    "后训练",
+    "SFT",
+    "强化学习",
+    "文本分类"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2098,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758509577000,
+  "publishDateStr": "2025-09-22",
+  "publishDateTimeStr": "2025-09-22 02:52:57"
+}

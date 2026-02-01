@@ -1,0 +1,58 @@
+{
+  "id": "RAW_5dc5da94",
+  "title": "Google 与零售巨头联合发布通用商业协议（UCP），助力下一代 AI 购物",
+  "url": "https://www.infoq.com/news/2026/01/google-agentic-commerce-ucp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-19 17:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google <a href=\"https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/\">launched the Universal Commerce Protocol (UCP)</a>, an open standard designed to enable agentic commerce, where AI-driven shopping agents can complete tasks end to end, from product discovery to checkout and post-purchase management. UCP is designed to meet the needs of both retailers and customers, keeping the full customer relationship front and center across the entire journey, from initial discovery to purchase decisions and beyond.</p>\n   <p>Announced at the <a href=\"https://nrfbigshow.nrf.com/\">National Retail Federation annual conference</a>, UCP provides a secure, standardized method for AI agents to connect with business backends across the commerce ecosystem. Businesses expose capabilities, which can be extended with features such as discounts, and agents dynamically discover available services and payment options through business profiles. Payments are separated between instruments and processors, supporting multiple payment providers. Communication is supported across standard APIs, <a href=\"https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/\">Agent2Agent</a>, and <a href=\"https://en.wikipedia.org/wiki/Model_Context_Protocol\">Model Context Protocol </a>bindings. Sample implementations, including a <a href=\"https://github.com/Universal-Commerce-Protocol/samples/blob/main/rest/python/server/README.md\">Python server</a> and <a href=\"https://github.com/Universal-Commerce-Protocol/python-sdk\">software development kit</a> containing product data, demonstrate how agents can discover capabilities and execute checkout flows.</p>\n   <p>American Express highlighted the protocol’s potential to streamline commerce in a <a href=\"https://www.linkedin.com/posts/american-express_innovation-agenticcommerce-activity-7416134344714715136-6dbm?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn post</a>:</p>\n   <blockquote>\n    <p>Google’s Universal Commerce Protocol (UCP) is a new open standard for agentic commerce designed to reduce fragmented shopping journeys and help connect retailers and consumers for more seamless experiences. UCP will soon power new checkout experiences in AI Mode in Google Search and the Gemini app. Open standards like this are critical to building more secure, trusted commerce.</p>\n   </blockquote>\n   <p>UCP defines core commerce capabilities, including product discovery, cart management, checkout, and post-purchase workflows, as Google described in an <a href=\"http://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/\">under-the-hood technical blog</a> post. Agents query business profiles to identify available services and negotiate supported features, reducing the need for bespoke integrations. This approach allows businesses to retain control over pricing, inventory, and fulfillment logic while enabling AI agents to operate autonomously.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/01/google-agentic-commerce-ucp/news/2026/01/google-agentic-commerce-ucp/en/resources/1googleucpheader-1768542261490.jpg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/google-agentic-commerce-ucp/en/resources/1googleucpheader-1768542261490.jpg\" rel=\"share\"></p>\n   <p><em>UCP high-level architecture (Source: <a href=\"https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/\">Google Blog Post</a>)</em></p>\n   <p>The protocol includes a security architecture in which credential providers tokenize payment and identity information, and payment service providers handle transaction processing. This separation allows agents to operate without accessing raw payment or personal data. UCP is transport agnostic and supports standard API interactions as well as agent-focused bindings for conversational interfaces, AI assistants, and automated workflows. Early implementations appear in AI-powered search and assistant platforms, where eligible retailers can offer direct checkout experiences without redirecting users to external websites.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/01/google-agentic-commerce-ucp/news/2026/01/google-agentic-commerce-ucp/en/resources/1Screenshot 2026-01-15 at 9.12.31 PM-1768542261490.png\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/google-agentic-commerce-ucp/en/resources/1Screenshot 2026-01-15 at 9.12.31 PM-1768542261490.png\" rel=\"share\"></p>\n   <p><em>Purchase Flow Demonstration Using an AI Agent (Source: <a href=\"https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/\">Google Blog Post</a>)</em></p>\n   <p>UCP was co-developed with <a href=\"https://shopify.engineering/ucp\">Shopify</a>, <a href=\"https://www.etsy.com/news/etsy-partners-with-google-on-ai-powered-shopping\">Etsy</a>, <a href=\"https://www.aboutwayfair.com/category/tech-innovation/wayfair-partners-with-google-to-make-it-easier-to-shop-for-your-home\">Wayfair</a>, <a href=\"https://corporate.target.com/press/fact-sheet/2026/01/google-gemini-2026\">Target</a>, and <a href=\"https://corporate.walmart.com/news/2026/01/11/walmart-and-google-turn-ai-discovery-into-effortless-shopping-experiences\">Walmart</a>, and is endorsed by more than 20+ additional partners across the commerce ecosystem, including <a href=\"https://en.wikipedia.org/wiki/Adyen\">Adyen</a>, <a href=\"https://en.wikipedia.org/wiki/American_Express\">American Express</a>, <a href=\"https://en.wikipedia.org/wiki/Best_Buy\">Best Buy</a>, <a href=\"https://en.wikipedia.org/wiki/Flipkart\">Flipkart</a>, <a href=\"https://en.wikipedia.org/wiki/Macy%27s\">Macy’s</a>, <a href=\"https://en.wikipedia.org/wiki/Mastercard\">Mastercard</a>, <a href=\"https://en.wikipedia.org/wiki/Stripe,_Inc.\">Stripe</a>, <a href=\"https://en.wikipedia.org/wiki/Home_Depot\">The Home Depot,</a> <a href=\"https://en.wikipedia.org/wiki/Visa_Inc.\">Visa</a>, and <a href=\"https://en.wikipedia.org/wiki/Zalando\">Zalando</a>.</p>\n   <p>\n    <br>\n    The UCP roadmap focuses on establishing a comprehensive, global commerce standard that extends beyond isolated transactions. Initiatives include multi-item checkout, cart management, loyalty programs, post-order workflows, and personalized cross-sell and upsell options, all while keeping business logic central. Early implementations enable checkout from eligible U.S. retailers directly within Google surfaces during product research. The protocol will expand to markets including India, Indonesia, and Latin America. Google and partners <a href=\"http://github.com/Universal-Commerce-Protocol/ucp?tab=contributing-ov-file\">invite</a> feedback to refine the protocol, shaping interoperable, AI-driven commerce.\n   </p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google and Retail Leaders Launch Universal Commerce Protocol to Power Next‑Generation AI Shopping\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/google-agentic-commerce-ucp/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768842000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 与行业领导者推出了通用商业协议（UCP），这是一项旨在让 AI 智能体能够自主处理从发现到结账全流程购物体验的开放标准。",
+  "oneSentenceSummary": "Google 与行业领导者推出了通用商业协议（UCP），这是一项旨在让 AI 智能体能够自主处理从发现到结账全流程购物体验的开放标准。",
+  "summary": "本文介绍了通用商业协议（UCP），这是由 Google 与 Shopify、Walmart 和 Target 等主要零售商共同开发的新型开放标准。UCP 旨在促进“智能体商业”（Agentic Commerce），允许 AI 驱动的购物智能体与企业后端进行安全交互。它标准化了核心商业功能，包括产品发现、购物车管理和支付处理。通过将支付工具与处理器分离并利用令牌化（Tokenization）技术，该协议在不向智能体暴露原始数据的情况下确保了安全性。UCP 具有传输无关性，支持标准 API 和模型上下文协议（MCP）绑定，旨在通过在 Google Search 和 Gemini 等 AI 界面内实现直接结账，消除碎片化的购物体验。",
+  "mainPoints": [
+    {
+      "point": "UCP 实现了通过 AI 智能体进行的端到端自主购物。",
+      "explanation": "该协议允许 AI 智能体执行从最初的产品发现到最终结账及售后管理的各项任务，无需用户手动跳转到外部网站。"
+    },
+    {
+      "point": "该协议在 AI 与企业后端之间提供了标准化且安全的桥梁。",
+      "explanation": "通过 Profile 暴露业务能力并使用令牌化的身份/支付信息，UCP 允许企业在智能体动态发现服务的同时，保持对业务逻辑的控制。"
+    },
+    {
+      "point": "UCP 构建在互操作性和传输无关的通信基础之上。",
+      "explanation": "它支持标准 API、Agent2Agent 通信以及模型上下文协议（MCP）绑定，确保其能够跨各种对话界面和自动化工作流运行。"
+    },
+    {
+      "point": "广泛的行业联盟支持 UCP 以减少商业碎片化。",
+      "explanation": "在 American Express、Stripe 和 Walmart 等合作伙伴的支持下，该协议旨在成为全球标准，将忠诚度计划和多商品购物车集成到 AI 驱动的购物中。"
+    }
+  ],
+  "keyQuotes": [
+    "UCP 是一项旨在实现智能体商业的开放标准，让 AI 驱动的购物智能体能够端到端地完成任务。",
+    "像这样的开放标准对于构建更安全、更值得信赖的商业至关重要。",
+    "这种方法允许企业保留对定价、库存和履约逻辑的控制，同时让 AI 智能体能够自主运行。",
+    "该协议包含一种安全架构，凭据提供者将支付和身份信息令牌化……允许智能体在不访问原始支付或个人数据的情况下运行。"
+  ],
+  "tags": [
+    "Universal Commerce Protocol",
+    "智能体商业",
+    "AI 智能体",
+    "Google Gemini",
+    "电子商务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 508,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768842000000,
+  "publishDateStr": "01-19",
+  "publishDateTimeStr": "2026-01-19 17:00:00"
+}

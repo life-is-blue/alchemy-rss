@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ef950190",
+  "title": "Claude 开发者平台：上下文管理新方案",
+  "url": "https://www.anthropic.com/news/context-management",
+  "date": "2025-09-28 16:00:00",
+  "author": "Anthropic News",
+  "siteName": "Anthropic News",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Today, we’re introducing new capabilities for managing your agents’ context on the Claude Developer Platform: context editing and the memory tool.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">With our latest model, <a href=\"https://www.anthropic.com/news/claude-sonnet-4-5\" target=\"_blank\" rel=\"noopener noreferrer\">Claude Sonnet 4.5</a>, these capabilities enable developers to build AI agents capable of handling long-running tasks at higher performance and without hitting context limits or losing critical information.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"context-windows-have-limits-but-real-work-doesnt\">Context windows have limits, but real work doesn’t</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">As production agents handle more complex tasks and generate more tool results, they often exhaust their effective context windows—leaving developers stuck choosing between cutting agent transcripts or degrading performance. Context management solves this in two ways, helping developers ensure only relevant data stays in context and valuable insights get preserved across sessions.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\"><strong>Context editing</strong> automatically clears stale tool calls and results from within the context window when approaching token limits. As your agent executes tasks and accumulates tool results, context editing removes stale content while preserving the conversation flow, effectively extending how long agents can run without manual intervention. This also increases the effective model performance as Claude focuses only on relevant context.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"ImageWithCaption_e-imageWithCaption__8C2mY ImageWithCaption_inline-image__B15e_\">\n    <img alt=\"Visualization comparing available context before context editing and after context editing.\" loading=\"lazy\" width=\"1920\" height=\"800\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/8ad2952bc0513750088cdfd309ee83ba0fd15438-1920x800.png, https://www-cdn.anthropic.com/images/4zrzovbb/website/8ad2952bc0513750088cdfd309ee83ba0fd15438-1920x800.png\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/8ad2952bc0513750088cdfd309ee83ba0fd15438-1920x800.png\">\n   </figure>\n  </div>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\"><strong>The memory tool</strong> enables Claude to store and consult information outside the context window through a file-based system. Claude can create, read, update, and delete files in a dedicated memory directory stored in your infrastructure that persists across conversations. This allows agents to build up knowledge bases over time, maintain project state across sessions, and reference previous learnings without having to keep everything in context.</p>\n  <div class=\"Body_media-column__xPzhg\">\n   <figure class=\"Video_post-wrapper__uy5Rq\">\n    <div class=\"Video_post-video-container__oACj_\">\n     <!--$!-->\n     <template data-dgst=\"BAILOUT_TO_CLIENT_SIDE_RENDERING\"></template>\n     <!--/$-->\n    </div>\n   </figure>\n  </div>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">The memory tool operates entirely client-side through tool calls. Developers manage the storage backend, giving them complete control over where the data is stored and how it’s persisted.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Claude Sonnet 4.5 enhances both capabilities with built-in context awareness—tracking available tokens throughout conversations to manage context more effectively.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Together, these updates create a system that improves agent performance:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li>Enable longer conversations by automatically removing stale tool results from context</li>\n   <li>Boost accuracy by saving critical information to memory—and bring that learning across successive agentic sessions</li>\n  </ul>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"building-long-running-agents\">Building long-running agents</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">Claude Sonnet 4.5 is the best model in the world for building agents. These features unlock new possibilities for long-running agents—processing entire codebases, analyzing hundreds of documents, or maintaining extensive tool interaction histories. Context management builds on this foundation, ensuring agents can leverage this expanded capacity efficiently while still handling workflows that extend beyond any fixed limit. Use cases include:</p>\n  <ul class=\"Body_reading-column__t7kGM paragraph-m post-text\">\n   <li><strong>Coding:</strong> Context editing clears old file reads and test results while memory preserves debugging insights and architectural decisions, enabling agents to work on large codebases without losing progress.</li>\n   <li><strong>Research: </strong>Memory stores key findings while context editing removes old search results, building knowledge bases that improve performance over time.</li>\n   <li><strong>Data processing: </strong>Agents store intermediate results in memory while context editing clears raw data, handling workflows that would otherwise exceed token limits.</li>\n  </ul>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"performance-improvements-with-context-management\">Performance improvements with context management</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">On an internal evaluation set for agentic search, we tested how context management improves agent performance on complex, multi-step tasks. The results demonstrate significant gains: combining the memory tool with context editing improved performance by 39% over baseline. Context editing alone delivered a 29% improvement.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">In a 100-turn web search evaluation, context editing enabled agents to complete workflows that would otherwise fail due to context exhaustion—while reducing token consumption by 84%.</p>\n  <h2 class=\"Body_reading-column__t7kGM display-sans-s post-section\" id=\"getting-started\">Getting started</h2>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\">These capabilities are available today in public beta on the Claude Developer Platform, natively and in Amazon Bedrock and Google Cloud’s Vertex AI. Explore the documentation for <a href=\"https://docs.claude.com/en/docs/build-with-claude/context-editing\" target=\"_blank\" rel=\"noopener noreferrer\">context editing</a> and the <a href=\"https://docs.claude.com/en/docs/agents-and-tools/tool-use/memory-tool\" target=\"_blank\" rel=\"noopener noreferrer\">memory tool</a>, or visit our <a href=\"https://github.com/anthropics/claude-cookbooks/blob/main/tool_use/memory_cookbook.ipynb\" target=\"_blank\" rel=\"noopener noreferrer\">cookbook</a> to learn more.</p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\"></p>\n  <p class=\"Body_reading-column__t7kGM paragraph-m post-text\"><em>Anthropic is not affiliated with, endorsed by, or sponsored by CATAN GmbH or CATAN Studio. The CATAN trademark and game are the property of CATAN GmbH.</em></p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 在 Claude 开发者平台上推出由 Claude Sonnet 4.5 驱动的上下文编辑和记忆工具，助力开发者构建更强大、高效的长时间运行 AI 代理。",
+  "oneSentenceSummary": "Anthropic 在 Claude 开发者平台上推出由 Claude Sonnet 4.5 驱动的上下文编辑和记忆工具，助力开发者构建更强大、高效的长时间运行 AI 代理。",
+  "summary": "本文介绍了 Claude 开发者平台上的全新上下文管理功能：上下文编辑和记忆工具，它们由 Claude Sonnet 4.5 提供增强支持。这些功能旨在克服 AI 代理中上下文窗口的限制，使其能够处理复杂的长时间运行任务，同时避免性能下降或关键信息丢失。当接近 Token 限制时，上下文编辑会自动从上下文窗口中移除过时的工具调用和结果，从而专注于相关数据，保持对话流程并提升模型性能。记忆工具提供了一个基于文件的客户端系统，供 Claude 在上下文窗口之外存储和检索信息，使代理能够构建知识库、维护项目状态以及跨会话引用历史学习内容。Sonnet 4.5 内置的上下文感知能力增强了这两种功能。性能评估显示，结合使用这些功能后，在复杂的搜索任务中，代理性能提升了 39%；仅使用上下文编辑一项，就在 100 轮网络搜索中减少了 84% 的 Token 消耗。这些更新有助于开发强大的长时间运行代理，适用于编码、研究和数据处理等多种场景。",
+  "mainPoints": [
+    {
+      "point": "上下文编辑自动删除过时的工具调用和结果，以延长代理运行时间并提高性能。",
+      "explanation": "此功能可智能地从上下文窗口中移除不相关的工具调用和结果，使代理能够在无需手动干预的情况下运行更长时间，并提高 Claude 对重要信息的关注度。"
+    },
+    {
+      "point": "记忆工具使代理能够在上下文窗口之外存储和检索持久化知识。",
+      "explanation": "通过利用基于文件的客户端系统，代理可以构建知识库、跨会话维护状态以及引用历史学习内容，从而有效地克服长期任务的上下文限制。"
+    },
+    {
+      "point": "这些组合功能显著提高了 AI 代理在复杂的多步骤任务中的性能。",
+      "explanation": "内部评估表明，同时使用上下文编辑和记忆工具时，性能提高了 39%，同时 Token 消耗减少了 84%，从而使代理能够完成原本会失败的工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "借助我们最新的模型 Claude Sonnet 4.5，开发者可以构建更强大的 AI 代理。这些代理能够以更高的性能处理长时间运行的任务，同时避免上下文限制和信息丢失。",
+    "上下文编辑在接近 Token 限制时，会自动清除上下文窗口中过时的工具调用和结果。",
+    "记忆工具使 Claude 能够通过基于文件的系统在上下文窗口之外存储和查阅信息。",
+    "Claude Sonnet 4.5 通过内置的上下文感知能力增强了这两种功能，它可以跟踪整个对话中可用的 Token，从而更有效地管理上下文。",
+    "将记忆工具与上下文编辑相结合，性能比基线提高了 39%。"
+  ],
+  "tags": [
+    "LLM 代理",
+    "上下文管理",
+    "Claude Sonnet 4.5",
+    "Anthropic",
+    "AI 开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 93,
+  "wordCount": 599,
+  "domain": "anthropic.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8b9413",
+  "sourceName": "Anthropic News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759075200000,
+  "publishDateStr": "2025-09-28",
+  "publishDateTimeStr": "2025-09-28 16:00:00"
+}

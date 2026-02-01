@@ -1,0 +1,59 @@
+{
+  "id": "RAW_7d53fd7",
+  "title": "从「没有对手」到「一天崩溃好几次」｜对谈 Zilliz 创始人/CEO 星爵",
+  "url": "https://www.xiaoyuzhoufm.com/episode/688add218e06fe8de7907968",
+  "date": "2025-08-03 16:00:00",
+  "author": "十字路口Crossing",
+  "siteName": "十字路口Crossing",
+  "content": "<html>\n <head></head>\n <body>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/Fl43nDAyiSGCYGMsnzPNEdYkg7t8.png\">\n  </figure><span></span>\n  <p><span>本周「十字路口」的嘉宾，是 </span><strong><span>Zilliz 创始人兼 CEO 星爵。</span></strong></p><span></span>\n  <p><strong><span>这家公司因为 2023 年 GTC 大会上被黄仁勋点名推荐，一度引发行业关注。</span></strong><span>但比起那次高光时刻，我更记住的是他在一篇访谈里说过的一句话：“我们没有对手。”</span></p><span></span>\n  <p><span>2018 年，他开始做 Zilliz，目标是构建处理非结构化数据的基础设施。在文本、图像、音频、视频爆炸式增长的时代，传统数据库已经无法满足搜索和匹配的需求。Zilliz 的核心产品 Milvus，就是为此而生。如今它已经支持千亿级向量检索，应用在生成式 AI、自动驾驶、推荐系统等多个场景，估值达到 6 亿美元。</span></p><span></span>\n  <p><span>在创业最激烈的几年里，大模型崛起、玩家密集、开源路线争议不断。星爵没有转向。他选择继续押注开源，相信开源会是 Zilliz 的长期护城河。</span></p><span></span>\n  <p><strong><span>他也没避讳谈变化。他说自己从一个理想主义者，变得更现实，更懂博弈，但依然保留那句信念：“技术世界需要理想主义。”</span></strong></p><span></span>\n  <p><strong><span>——</span></strong></p><span></span>\n  <p><span>嘉宾介绍：星爵，Zilliz 创始人兼 CEO，毕业于华中科技大学，前数据库工程师。2018 年创立 Zilliz，专注于非结构化数据处理与向量数据库，在全球率先开拓了该领域的技术路线和产品形态。</span></p><span></span>\n  <p><span>——</span></p><span></span>\n  <p><span>Zilliz 介绍：一家专注于 AI 时代数据基础设施的科技公司，其开源项目 Milvus 是全球领先的向量数据库解决方案，广泛应用于生成式 AI、自动驾驶、推荐系统、生物制药等场景。公司过去 12 个月营收增长 3.3 倍，估值达到 6 亿美元。</span></p><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FuOtJ4nVInQSDPnmgjvNZcuTdKiD.png\">\n  </figure><span></span>\n  <p><strong><span>🟢 第一部分：快问快答，认识星爵</span></strong></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"127\">02:07</a>: 快问快答：星爵，向量数据库 Zilliz 的创始人兼 CEO</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"150\">02:30</a>: 公司简介：Zilliz 是 AI 时代的数据基础设施公司，专注于非结构化数据平台构建。</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"181\">03:01</a>: 黄仁勋推荐：2023 年英伟达 GTC 大会上被点名，标志着向量数据库品类的高光时刻。</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"247\">04:07</a>: 向量数据库是长期打磨的产品，非灵光一闪的突破。</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"293\">04:53</a>: AI创新加速推动向量数据库需求增长</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"381\">06:21</a>: 向量数据库科普：从图书馆到关系型数据库，再到AI时代的向量数据库</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"507\">08:27</a>: 创业初衷：向量数据库早于生成式AI，最初服务于卷积神经网络等早期AI技术。</span></p><span></span>\n  <p><span>.</span></p><span></span>\n  <p><strong><span>🟢 第二部分：向量数据库的竞争与挑战</span></strong></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"774\">12:54</a>: 最大客户案例：全球顶级 IT 公司用向量数据库检索全网信息，发展 AI 搜索</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"914\">15:14</a>: “没有对手”宣言：早期 Zilliz 走在无人区，现为行业繁荣感到喜悦</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"979\">16:19</a>: 开源 vs 闭源：Zilliz 坚持开源路线，认为技术优势源于开放生态</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1027\">17:07</a>: Zilliz 与竞品的竞争优势，以及开源生态的长期价值</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1118\">18:38</a>: 竞品分析：Zilliz 与算法集 FAISS 合作；其他开源项目各有切入点</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1315\">21:55</a>: 为什么传统数据库无法替代原生向量数据库</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1446\">24:06</a>: 最大担忧：能否持续创新，而非竞争对手动作</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1460\">24:20</a>: 若能重选仍会开源。开源是护城河，非捷径</span></p><span></span>\n  <p><span>.</span></p><span></span>\n  <p><strong><span>🟢 第三部分： 开源商业模式与行业观察</span></strong></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1563\">26:03</a>: Dual Core 模式：开源与商业版并行</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1783\">29:43</a>: 评价 DeepSeek 开源价值：快速占领开发者心智，避免技术栈锁定。</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1816\">30:16</a>: 当开源不再纯粹：是共创，还是品牌战略？</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1987\">33:07</a>: 星爵的创业目标：不仅做先驱，更要做集大成者</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2085\">34:45</a>: 创新不能靠“管”：真正关键在于招到对的人</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2103\">35:03</a>: 每天都在崩溃边缘，这就是创业的常态</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2163\">36:03</a>: 商业化挑战：客户流失与增长压力并存，首次商业化团队经验不足。</span></p><span></span>\n  <p><span>.</span></p><span></span>\n  <p><strong><span>🟢 第四部分： 行业展望与个人反思</span></strong></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2390\">39:50</a>: 认知转变：从理想主义到现实主义</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2544\">42:24</a>: &nbsp;技术商业化：商业中“足够好”即可，但技术追求仍需理想主义</span></p><span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2606\">43:26</a>: 看好的 AI 公司：公有云（如AWS）、大模型头部企业及 AI 应用公司（如ChatGPT、DeepSeek）</span></p><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FjsHLGnjXBIZoDFg0m8_FsWp1Its.png\">\n  </figure><span></span>\n  <h2><span>欢迎订阅「十字路口」播客</span></h2><span></span>\n  <p><span>🚦 我们关注新一代 AI 技术浪潮带来的行业新变化和创业新机会。</span></p><span></span>\n  <p><span>🚦 十字路口是乔布斯对苹果公司的一个比喻，形容它站在科技与人文的十字路口，伟大的产品往往诞生在这里。AI 正在给各行各业带来改变，我们寻找、访谈和凝聚新一代 AI 创业者和 AI 时代的积极行动者，和他们一起，探索和拥抱新变化，新的可能性。</span></p><span></span>\n  <p><span>👦🏻 &nbsp;主播 Koji：我联合创办了街旁/新世相/躺岛，发起了 AI Hacker House 这个新一代 AI 创业者的社群空间。我相信科技尤其是 AI 是我们这一代人最大的价值创造机遇。欢迎大家找我聊天，碰撞想法，链接下一个可能性。</span><a href=\"https://okjk.co/0JSUes\" data-url=\"https://okjk.co/0JSUes\"><span>Koji 的即刻</span></a><span>，</span><a href=\"https://koji.super.site/\" data-url=\"https://koji.super.site/\"><span>Koji 的网站</span></a></p><span></span>\n  <p><span>👧🏻 主播 Ronghui：我在美元 VC 工作过，也做过五年的硅谷驻站记者，关注科技发展和商业故事，欢迎大家找我聊天，和我交流。</span><a href=\"https://okjk.co/0cbnYV\" data-url=\"https://okjk.co/0cbnYV\"><span>Ronghui 即刻</span></a></p><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FvBecOAKs4LNg_iskLYTAcg68D12.png\">\n  </figure><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FqrbItEkQI6WDRSm7JRlVUIZYjZG.png\">\n  </figure><span></span>\n  <figure>\n   <img src=\"https://image.xyzcdn.net/FjY0z2wwnWlcgGI2I-xbBRSUgK67.png\">\n  </figure><span></span>\n  <blockquote>\n   <span>🎄 本播客由「新世相声音森林播客计划」支持。</span>\n  </blockquote>\n </body>\n</html>",
+  "aiSummary": "Zilliz 创始人星爵深度剖析向量数据库在 AI 时代的关键作用、开源策略的护城河价值，以及技术创业中平衡理想与现实的挑战与洞察。",
+  "oneSentenceSummary": "Zilliz 创始人星爵深度剖析向量数据库在 AI 时代的关键作用、开源策略的护城河价值，以及技术创业中平衡理想与现实的挑战与洞察。",
+  "summary": "本期播客邀请 Zilliz 创始人兼 CEO 星爵，围绕 AI 时代下向量数据库的崛起、Zilliz 的创业历程及未来展望进行了深入对谈。星爵详细阐述了向量数据库作为非结构化数据基础设施的重要性，及其在深度学习和生成式 AI 中的核心地位。他回顾了 Zilliz 从 2018 年无人区探索到被英伟达黄仁勋点名推荐的高光时刻，并分享了公司在技术、市场和商业化方面的成长经验。播客重点讨论了 Zilliz 坚持开源路线的战略考量，认为开源是其核心竞争优势和长期护城河，并探讨了开源与闭源商业模式（如 Dual Core）的挑战与价值。星爵坦诚分享了创业八年来的心路历程，从理想主义者向现实主义的转变，以及在面临商业化压力、团队管理和市场波动时的“崩溃”体验，强调了持续创新、快速迭代和接受不完美的重要性。最后，他对 AI 领域未来趋势给出了独到见解，看好云平台、头部大模型和 AI 应用公司的发展。",
+  "mainPoints": [
+    {
+      "point": "向量数据库是 AI 时代处理非结构化数据的核心基础设施",
+      "explanation": "随着深度学习和生成式 AI 的兴起，向量数据库成为存储和高效检索图片、视频、文本特征向量的关键，支撑 AI 搜索、推荐、自动驾驶等广泛应用。"
+    },
+    {
+      "point": "开源策略是 Zilliz 建立竞争优势和实现技术快速迭代的护城河",
+      "explanation": "通过开放生态吸引全球开发者参与，加速产品优化和需求反馈，虽面临商业化挑战，但被视为掌握开发者心智和构建长期壁垒的重要战略。"
+    },
+    {
+      "point": "AI 创业面临 PMF 挑战，成功需平衡理想主义与商业现实",
+      "explanation": "许多 AI 创业公司因同质化和未能找到真正的市场契合点而倒闭，创业者需在追求技术卓越和满足商业需求之间找到平衡点，并学会适应市场变化。"
+    },
+    {
+      "point": "大规模数据处理和成本优化是向量数据库未来发展重点",
+      "explanation": "随着数据量达到百亿甚至千亿级别，以及应用场景多样化，降低存储和处理成本，并支持海量数据的离线分析，成为行业迫切需求和发展方向。"
+    }
+  ],
+  "keyQuotes": [
+    "所以我觉得当时的话 2023 年那个 moment 的话，更多的就是说把向量数据库推到了整个全球科技的前台。",
+    "开源肯定是我们最大的一个长久的一个优势。如果说自己比产品跟技术来讲的话，我们的产品的话比潘控在杏在性能这个层那个层面来说说的话，是有一个 33 到 5 倍的一个领先的优势的。",
+    "技术都会平权，对不对？但是所以我觉得虽然说我们现在技术产品领先一个身位，但是这个身位的来源的话是来自于我们开源和开放。",
+    "我觉得创新是不能靠管理的，就一管就死。对，如果你要做一个创新的公司，那你就去招这些有创新精神的，愿意去创新的，愿意去快速迭代的一些小伙伴来加入你们，对不对？",
+    "我希望我们其实有幸来说的话，成为全球第一个去探索非结构化数据处理，探索向量数据库的。我希望到我退休的那一天的话，回顾这段旅程的话，我们不只是一个先驱者，我们还是一个集大成者，我们还是个成功者。"
+  ],
+  "tags": [
+    "向量数据库",
+    "AI基础设施",
+    "非结构化数据",
+    "开源策略",
+    "生成式AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 93,
+  "wordCount": 1636,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8a4d53",
+  "sourceName": "十字路口Crossing",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1754236800000,
+  "publishDateStr": "2025-08-03",
+  "publishDateTimeStr": "2025-08-03 16:00:00"
+}

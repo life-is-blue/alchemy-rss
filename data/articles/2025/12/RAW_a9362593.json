@@ -1,0 +1,63 @@
+{
+  "id": "RAW_a9362593",
+  "title": "2025 年 Databricks Lakehouse 上的 SQL",
+  "url": "https://www.databricks.com/blog/sql-databricks-lakehouse-2025",
+  "date": "2025-12-17 16:21:02",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p dir=\"ltr\">Traditional data warehouses are slow, expensive, and locked behind proprietary systems. They demand constant tuning and create friction for analytics teams that need speed and scale, and slow down decisions across finance, operations, and product teams. Databricks SQL (DBSQL) removes these limits. It is 5x faster on average, runs serverless, and follows open standards. This default performance intelligence is not locked behind premium tiers.&nbsp;</p>\n  <p dir=\"ltr\"><span><strong>Over 60% of the Fortune 500 use DBSQL </strong>for analytics and BI on the Databricks Data Intelligence Platform.&nbsp;</span></p>\n  <p dir=\"ltr\"><span>In 2025, DBSQL continued to deliver functionality that improved performance, AI, cost management, and open SQL capabilities. This roundup highlights the updates that made the biggest impact for data teams this year.</span></p>\n  <h2 dir=\"ltr\"><span>Performance that improves automatically</span></h2>\n  <h3 dir=\"ltr\"><span>Faster queries without tuning</span></h3>\n  <p dir=\"ltr\"><span>Since 2022, DBSQL Serverless has delivered an&nbsp;</span><a href=\"https://www.databricks.com/blog/databricks-sql-accelerates-customer-workloads-5x-just-three-years\"><span>average 5x performance improvement</span></a><span>. Dashboards that once took 10 seconds now load in about 2 seconds, without requiring index management or manual tuning.&nbsp;</span></p>\n  <p dir=\"ltr\"><span>In 2025, performance improved again:</span></p>\n  <ul>\n   <li dir=\"ltr\"><span>Up to 25 percent faster queries&nbsp;</span><a href=\"https://youtu.be/0pys27kA67U?si=QzlU_ppYJ5suZn11&amp;t=4882\" target=\"_blank\"><span>on top of the existing 5x gains</span></a></li>\n   <li dir=\"ltr\"><span>Delivered automatically, no configuration required</span></li>\n   <li dir=\"ltr\"><span>No need to manage indexes or parameters</span></li>\n  </ul>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/perf_improvements.png\" data-entity-uuid=\"3626f427-f6fb-4538-9c63-5e69c049e8a9\" data-entity-type=\"file\" alt=\"performance improvements for DBSQL\" width=\"939\" height=\"371\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><span>Because Databricks is built on the Data Intelligence Platform, this intelligence is available to every customer by default, not locked behind premium tiers or the highest-priced offerings.</span></p>\n  <h3 dir=\"ltr\"><span>Better visibility with Query Profile</span></h3>\n  <p dir=\"ltr\"><span>To help teams understand performance patterns, the&nbsp;</span><a href=\"https://www.databricks.com/blog/announcing-updates-databricks-query-profiles\"><span>updated Query Profile view</span></a><span> now includes:</span></p>\n  <ul>\n   <li dir=\"ltr\"><span>A visual summary of read and write metrics</span></li>\n   <li dir=\"ltr\"><span>A “Top operators” panel to identify expensive parts of a query</span></li>\n   <li dir=\"ltr\"><span>Clearer navigation through the execution graph</span></li>\n   <li dir=\"ltr\"><span>Filters to focus on specific metrics</span></li>\n  </ul>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/Query-Details-panel_0_0.gif\" data-entity-uuid=\"829c9379-1d67-45f3-8eaf-7c38a4e44910\" data-entity-type=\"file\" alt=\"query profile UX improvements\" width=\"3140\" height=\"1800\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><span>This helps teams diagnose slow dashboards and complex models more quickly, without relying on guesswork.</span></p>\n  <h2 dir=\"ltr\"><span>AI built directly into SQL workflows</span></h2>\n  <p dir=\"ltr\"><span>AI is now part of everyday analytics. In 2025, DBSQL introduced&nbsp;</span><a href=\"https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-functions-builtin#ai-functions\" target=\"_blank\"><span>native AI functions</span></a><span> so analysts can use large language models directly in SQL. A few new capabilities include:</span></p>\n  <ul>\n   <li dir=\"ltr\"><a href=\"https://docs.databricks.com/en/sql/language-manual/functions/ai_query.html\" target=\"_blank\"><strong>ai_query</strong></a><span> for&nbsp; summarization, classification, extraction, and sentiment analysis</span></li>\n   <li dir=\"ltr\"><a href=\"https://docs.databricks.com/en/sql/language-manual/functions/ai_parse_document.html\" target=\"_blank\"><strong>ai_parse_document</strong></a><span>, currently in beta, converts PDFs and other unstructured documents into tables</span></li>\n  </ul>\n  <p dir=\"ltr\"><span>These functions run on Databricks-hosted models, such as Meta Llama and OpenAI GPT OSS, or on custom models you provide. They are optimized for scale and up to 3x faster than alternative approaches.</span></p>\n  <p dir=\"ltr\"><span>Teams can now summarize support tickets, extract fields from contracts, or analyze customer feedback directly inside reporting queries. Analysts stay in SQL. Workflows move faster. No more tool switching or coding in Python.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/AI-throughput-wide.png\" data-entity-uuid=\"4b7a8b5c-c043-4409-be3c-6686141a7dc8\" data-entity-type=\"file\" alt=\"AI throughput\" width=\"688\" height=\"442\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <h2 dir=\"ltr\"><span>Automated performance management with Predictive Optimization</span></h2>\n  <p dir=\"ltr\"><span>As data grows and workloads change, performance often degrades over time. Predictive Optimization addresses this problem directly.</span></p>\n  <p dir=\"ltr\"><span>In 2025,&nbsp;</span><a href=\"https://www.databricks.com/blog/introducing-predictive-optimization-statistics\"><span>Automatic Statistics Management&nbsp;</span></a><span>became generally available. It removes the need to run ANALYZE commands or manage optimization jobs manually.</span></p>\n  <p dir=\"ltr\"><span>Now, Predictive Optimizations automatically:&nbsp;</span></p>\n  <ul>\n   <li dir=\"ltr\"><span>Collects optimization statistics after data loads</span></li>\n   <li dir=\"ltr\"><span>Selects data skipping indexes</span></li>\n   <li dir=\"ltr\"><span>Continuously improves execution plans over time</span></li>\n  </ul>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/AutoStats.png\" data-entity-uuid=\"6faea0a2-ccda-4156-b549-dbd9d2db9d26\" data-entity-type=\"file\" alt=\"Automated Statistics throughput with DBSQL\" width=\"823\" height=\"508\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><span>This reduces operational overhead and prevents the gradual performance drift many warehouses struggle with.</span></p>\n  <h2 dir=\"ltr\"><span>Open SQL features that simplify migrations</span></h2>\n  <p dir=\"ltr\"><span>For many customers, stored procedures, transactions, and proprietary SQL constructs are the hardest part of leaving legacy warehouses. But, many companies want to migrate from legacy systems like Oracle, Teradata, and SQL Server for TCO and innovation reasons. DBSQL continued its investment in open, ANSI-compliant SQL features to reduce migration effort and increase portability.</span></p>\n  <p dir=\"ltr\"><span>New capabilities include:</span></p>\n  <ul>\n   <li dir=\"ltr\"><a href=\"https://www.databricks.com/blog/introducing-sql-stored-procedures-databricks\"><strong>Stored Procedures</strong></a><span> (Public Preview) with Unity Catalog governance</span></li>\n   <li dir=\"ltr\"><a href=\"https://www.databricks.com/blog/introducing-sql-scripting-support-databricks-part-1\"><strong>SQL Scripting</strong></a><span> (Generally Available) for loops and conditionals in SQL</span></li>\n   <li dir=\"ltr\"><a href=\"https://www.databricks.com/blog/introducing-recursive-common-table-expressions-databricks\"><strong>Recursive CTEs</strong></a><span> (Generally Available) for hierarchical queries</span></li>\n   <li dir=\"ltr\"><a href=\"https://www.databricks.com/blog/introducing-collations-databricks\"><strong>Collations</strong></a><span> (Public Preview) for language-aware sorting and comparison</span></li>\n   <li dir=\"ltr\"><span><strong>Temporary Tables</strong> (Public Preview for all customers in January) for removing the burden of managing intermediate tables or tracking down residual data</span></li>\n  </ul>\n  <p dir=\"ltr\"><span>These features follow open SQL standards and are available in Apache Spark. They make migrations easier and reduce dependency on proprietary constructs.</span></p>\n  <p dir=\"ltr\"><span>DBSQL also added&nbsp;</span><a href=\"https://www.databricks.com/blog/introducing-spatial-sql-databricks-80-functions-high-performance-geospatial-analytics\"><strong>Spatial SQL</strong></a><span> with geometry and geography types. Over 80 functions like ST_Distance and ST_Contains support large-scale geospatial analysis directly in SQL.</span></p>\n  <h2 dir=\"ltr\"><span>Cost management for large-scale workloads</span></h2>\n  <p dir=\"ltr\"><span>As SQL adoption grows, teams struggle to explain rising spend across warehouses, dashboards, and tools. DBSQL introduced new tools that help teams monitor and control spend at the warehouse, dashboard, and user level.</span></p>\n  <p dir=\"ltr\"><span>Key updates include:</span></p>\n  <ul>\n   <li dir=\"ltr\"><strong>Account Usage Dashboard</strong><span> to identify rising costs</span></li>\n   <li dir=\"ltr\"><strong>Tags and Budgets</strong><span> to track spend by team</span></li>\n   <li dir=\"ltr\"><strong>System Tables</strong><span> for detailed query level analysis</span></li>\n   <li dir=\"ltr\"><a href=\"https://www.databricks.com/blog/easy-ways-optimize-your-costs\"><strong>Granular Cost Monitoring Dashboard</strong></a><strong> and Materialized Views</strong><span> (Private Preview) for alerts and cost driver tracking</span></li>\n  </ul>\n  <p dir=\"ltr\"><span>These features make it easier to understand which queries, dashboards, or tools drive consumption.</span></p>\n  <p dir=\"ltr\">&nbsp;&nbsp;&nbsp; <!--$--></p>\n  <!--/$-->\n  <p></p>\n </body>\n</html>",
+  "aiSummary": "Databricks SQL (DBSQL) 2025 年更新显著提高了性能，将 AI 直接集成到 SQL 工作流中，增强了成本管理，并扩展了开放 SQL 功能，以简化数据仓库的迁移。",
+  "oneSentenceSummary": "Databricks SQL (DBSQL) 2025 年更新显著提高了性能，将 AI 直接集成到 SQL 工作流中，增强了成本管理，并扩展了开放 SQL 功能，以简化数据仓库的迁移。",
+  "summary": "本文重点介绍了 Databricks SQL (DBSQL) 在 2025 年的关键进展，将其定位为传统数据仓库的有力的替代方案。DBSQL 提供了自动性能改进，包括在现有快 5 倍的基础上，将查询速度再次提高了 25%，且无需手动调优。它还引入了 `ai_query` 和 `ai_parse_document` 等原生 AI 功能，允许分析师直接在 SQL 中利用大型语言模型（LLM）进行摘要和文档解析等任务。预测优化通过持续收集统计数据和改进执行计划来自动化性能管理。此外，DBSQL 通过存储过程和递归 CTE 等功能增强了开放 SQL 能力，简化了从遗留系统的迁移。新的成本管理工具提供了关于支出的粒度洞察，帮助团队有效监控和控制资源使用。这些更新共同提升了 DBSQL 在现代数据分析中的效率、智能和开放性。",
+  "mainPoints": [
+    {
+      "point": "DBSQL 在无需手动调优的情况下实现了自动且显著的查询性能改进。",
+      "explanation": "在现有快 5 倍的基础上，查询速度再次提高了 25%，自动交付给所有客户，无需索引管理或手动配置，从而加速了跨团队的决策制定过程。"
+    },
+    {
+      "point": "原生 AI 功能将大型语言模型（LLM）直接集成到 SQL 工作流中。",
+      "explanation": "`ai_query` 和 `ai_parse_document` 等功能使数据分析师能够在 SQL 中执行摘要和文档解析等任务，减少工具切换并提高工作流效率。"
+    },
+    {
+      "point": "预测优化自动化了性能管理并防止了性能随时间的推移而逐渐下降。",
+      "explanation": "自动统计管理和持续的执行计划改进减少了运营开销，并确保了随着数据量和工作负载的演变而获得一致的性能。"
+    },
+    {
+      "point": "扩展的开放 SQL 功能简化了从遗留数据仓库的迁移。",
+      "explanation": "存储过程、SQL 脚本和递归 CTE 等新功能符合开放标准，使组织更容易摆脱专有系统。"
+    },
+    {
+      "point": "成本管理方面的增强提供了对支出的详细可见性和控制。",
+      "explanation": "新的仪表板、标签、预算和系统表允许团队在粒度级别监控和识别成本驱动因素，优化资源消耗。"
+    }
+  ],
+  "keyQuotes": [
+    "Databricks SQL (DBSQL) 消除了这些限制。它平均快 5 倍，支持无服务器运行，并遵循开放标准。",
+    "超过 60% 的财富 500 强公司使用 DBSQL 在 Databricks 数据智能平台上进行分析和商业智能。",
+    "AI 现在是日常分析的一部分。2025 年，DBSQL 引入了原生 AI 功能，因此分析师可以直接在 SQL 中使用大型语言模型（LLM）。",
+    "对于许多客户来说，存储过程、事务和专有 SQL 结构是脱离遗留数据仓库最困难的部分。",
+    "这些功能使人们更容易了解哪些查询、仪表板或工具是主要的资源消耗来源。"
+  ],
+  "tags": [
+    "Databricks SQL",
+    "数据仓库",
+    "SQL",
+    "性能优化",
+    "AI 功能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 728,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765988462000,
+  "publishDateStr": "2025-12-17",
+  "publishDateTimeStr": "2025-12-17 16:21:02"
+}

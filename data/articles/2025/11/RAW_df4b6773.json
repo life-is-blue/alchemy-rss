@@ -1,0 +1,55 @@
+{
+  "id": "RAW_df4b6773",
+  "title": "GitHub 2025 年 10 月服务状态报告",
+  "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2025/",
+  "date": "2025-11-13 09:28:48",
+  "author": "Jakub Oleksy",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In October, we experienced four incidents that resulted in degraded performance across GitHub services.</p>\n  <p><strong>October 09 14:45 UTC (lasting 1 hour and 55 minutes)</strong></p>\n  <p>On October 9, 2025, between 14:35 UTC and 15:21 UTC, a network device in maintenance mode that was undergoing repairs was brought back into production before repairs were fully completed. Network traffic traversing this device experienced significant packet loss.\n   <br>\n   <br>\n   Authenticated users of the github.com UI experienced increased latency during the first 5 minutes of the incident. API users experienced up to 7.3% error rates, after which it stabilized to about 0.05% until mitigated. Actions service experienced 24% of runs being delayed for an average of 13 minutes. Large File Storage (LFS) requests experienced minimally increased error rate, with 0.038% of requests erroring.\n   <br>\n   <br>\n   To prevent similar issues, we are enhancing the validation process for device repairs of this category.</p>\n  <p><strong>October 17 13:11 UTC (lasting 1 hour and 1 minute)</strong></p>\n  <p>On October 17, 2025, between 12:51 UTC and 14:01 UTC, mobile push notifications failed to be delivered for a total duration of 70 minutes. This affected github.com and GitHub Enterprise Cloud in all regions. The disruption was related to an erroneous configuration change to cloud resources used for mobile push notification delivery.\n   <br>\n   <br>\n   We are reviewing our procedures and management of these cloud resources to prevent such an incident in the future.</p>\n  <p><strong>October 20 08:56 UTC (lasting 2 hours and 5 minutes)</strong></p>\n  <p>On October 20, 2025, between 08:05 UTC and 10:50 UTC the Codespaces service was degraded, with users experiencing failures creating new codespaces and resuming existing ones. On average, the error rate for codespace creation was 39.5% and peaked at 71% of requests to the service during the incident window. Resume operations averaged 23.4% error rate with a peak of 46%. This was due to a cascading failure triggered by an outage in a third-party dependency required to build devcontainer images.\n   <br>\n   <br>\n   The impact was mitigated when the third-party dependency recovered.\n   <br>\n   <br>\n   We are evaluating options to ensure&nbsp; this dependency is no longer a critical path in our container build process and improving our monitoring and alerting to reduce the detection time of similar issues in the future.</p>\n  <p><strong>October 29 16:17 UTC (lasting 6 hours and 58 minutes)</strong></p>\n  <p>On October 29, 2025, between 14:07 UTC and 23:15 UTC, GitHub experienced service degradation due to a widespread outage at a third-party provider. Codespaces users faced severe connection issues, with error rates averaging 90% and peaking at 100% across all regions during the incident. GitHub Actions larger hosted runners were also impacted, with 0.5% of workflows and nearly 10% of large runner jobs failing or delayed beyond five minutes. Actions impact recovered by 20:40 UTC. The GitHub Enterprise Importer service was impacted as well, causing migration failures during git push operations and significant delays in processing migrations. Additionally, new trials for GitHub Enterprise Cloud with Data Residency were delayed, and Copilot Metrics API downloads were unavailable, resulting in approximately 100 failed requests until recovery began around 20:25 UTC.</p>\n  <p>Mitigations were applied throughout the incident to reduce impact, but full recovery was only achieved once the service provider resolved its outage. GitHub is now focused on reducing critical path dependencies on external providers and implementing strategies to gracefully degrade services during similar events, aiming to improve resilience against future outages.</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p>Follow our <a href=\"https://www.githubstatus.com/\">status page</a> for real-time updates on status changes and post-incident recaps. To learn more about what we’re working on, check out the engineering section on the <a href=\"https://github.blog/category/engineering/\">GitHub Blog</a>.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 2025 年 10 月服务状态报告记录了由内部问题和第三方中断导致的四起服务事件。报告概述了事件影响及未来弹性策略。",
+  "oneSentenceSummary": "GitHub 2025 年 10 月服务状态报告记录了由内部问题和第三方中断导致的四起服务事件。报告概述了事件影响及未来弹性策略。",
+  "summary": "GitHub 2025 年 10 月服务状态报告记录了导致各种服务性能下降的四个独立事件。主要事件包括导致 API 错误和 Actions 延迟的网络设备错误配置，影响移动推送通知的错误云配置，影响 Codespaces 创建和恢复的第三方依赖中断，以及严重影响 Codespaces、GitHub Actions 和 Enterprise Importer 的大范围第三方供应商中断。对于每个事件，GitHub 详细说明了持续时间、受影响的服务、具体错误率和根本原因。报告总结了 GitHub 的改进措施，包括加强验证流程、审查云资源管理、减少对外部供应商的核心链路依赖，以及实施优雅降级策略，以提高整体运维韧性。",
+  "mainPoints": [
+    {
+      "point": "GitHub 在 2025 年 10 月经历了四起重大服务事件，影响了各种核心服务。",
+      "explanation": "这些事件影响了关键服务，如 GitHub UI、API、Actions、Codespaces 和 Enterprise Importer，导致用户的延迟、错误率和延迟增加。"
+    },
+    {
+      "point": "事件源于内部运营错误和外部第三方中断的混合。",
+      "explanation": "事件的原因包括内部网络设备配置错误、云资源问题，以及第三方依赖中断导致的级联故障。这些事件突显了各种可靠性挑战。"
+    },
+    {
+      "point": "GitHub 正在积极实施措施，以增强系统弹性并减少外部依赖。",
+      "explanation": "GitHub 计划进行多项改进，包括更严格的验证流程、更完善的云资源管理、核心链路依赖评估，以及在未来中断期间实施服务优雅降级的策略。"
+    }
+  ],
+  "keyQuotes": [
+    "2025 年 10 月 9 日，UTC 14:35 至 UTC 15:21，一台处于维护模式、正在维修的网络设备在修复完成前被重新投入使用。",
+    "中断与用于移动推送通知传递的云资源的错误配置更改有关。",
+    "这是由于构建 Devcontainer 镜像所需的第三方依赖中的中断引发的级联故障造成的。",
+    "GitHub 因第三方供应商的大范围中断而经历了服务降级。",
+    "GitHub 现在专注于减少对外部供应商的核心链路依赖，并实施在类似事件中优雅降级服务的策略，旨在提高应对未来中断的弹性。"
+  ],
+  "tags": [
+    "GitHub",
+    "可用性",
+    "事件响应",
+    "系统稳定性",
+    "云服务"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 577,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1763026128000,
+  "publishDateStr": "2025-11-13",
+  "publishDateTimeStr": "2025-11-13 09:28:48"
+}

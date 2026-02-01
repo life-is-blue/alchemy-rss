@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b9bf0f83",
+  "title": "MinIO GitHub 仓库进入维护模式：开源对象存储的未来何去何从？",
+  "url": "https://www.infoq.com/news/2025/12/minio-s3-api-alternatives/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-28 15:15:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>After a contentious license change and the removal of administrator functionalities from the console, the company behind the popular open-source object storage server <a href=\"https://github.com/minio/minio\">Minio</a> recently announced that the project will now enter maintenance mode. The change has raised discussion in the community about the need for a fork, the challenges of open source projects, and the viability of Garage, SeaweedFS, and other alternatives.</p>\n   <p>According to the <a href=\"https://github.com/minio/minio/commit/27742d469462e1561c776f88ca7a1f26816d69e2\">latest commit</a> in the public GitHub repository, no new features, enhancements, or pull requests will be accepted in the MinIO community edition, and critical security fixes will be evaluated on a case-by-case basis. Existing issues and pull requests will not be actively reviewed, with community support continuing on Slack on a best-effort basis, and the company encouraging users to migrate to MinIO Enterprise.</p>\n   <p>Started over a decade ago, MinIO gained popularity among developers thanks to its full compatibility with the Amazon S3 APIs, which are the de facto standard for object storage. Developers could use existing S3 SDKs, tools, and libraries, with easy migration from AWS S3 or multi-cloud setups. Compared to other solutions, including Ceph and traditional SAN/NAS, MinIO is known for its simplicity, as it runs as a single binary with minimal dependencies. Furthermore, MinIO integrates with tools such as Terraform, Spark, Kafka, and Velero, as well as popular ML frameworks.</p>\n   <p>With MinIO running today behind many Kubernetes clusters, SaaS platforms, and data lakes, Mangla Ram Choudhary, software engineer at Aquila I, <a href=\"https://www.linkedin.com/posts/ds-mangla_cybersecurity-datasecurity-compliance-activity-7403463203185266688-BAEi\">summarizes</a>:</p>\n   <blockquote>\n    <p>A silent README update just ended the era of MinIO as the default open-source S3 engine (...) No announcement. No migration guidance. Just switched off (...) Why This Matters: security non-compliance for SOC2/ISO/PCI/HIPAA, architectural risk at the storage layer, zero community contribution path, forced move to commercial licensing or migration. This is a major open-source infrastructure event, not just project news.</p>\n   </blockquote>\n   <p>With MinIO open source dead, there have been multiple discussions on <a href=\"https://www.linkedin.com/posts/peterzaitsev_update-readmemd-maintenance-mode-minio-activity-7402361689687420928-hQMJ/\">LinkedIn</a> and <a href=\"https://www.reddit.com/r/selfhosted/comments/1kva3pw/avoid_minio_developers_introduce_trojan_horse/\">Reddit</a> on alternatives and \"who will now take the crown of open source S3 compatible storage.\" In the \"<a href=\"https://www.linkedin.com/pulse/life-after-minio-community-insights-migration-strategy-alexey-minin-zurxe\">Life After MinIO: Community Insights &amp; Migration Strategy</a>\" article, Alexey Minin, senior DevOps engineer at Rulauda, highlights a common problem with open source software:</p>\n   <blockquote>\n    <p>In 2025, \"Open Source\" isn't enough. We need to look for Open Governance. Projects hosted by foundations (CNCF, Apache, Linux Foundation) are immune to these rug-pulls. Single-vendor projects are not.</p>\n   </blockquote>\n   <p>Among popular object storage alternatives are <a href=\"https://github.com/RustFS/RustFS\">RustFS</a>, <a href=\"https://github.com/seaweedfs/seaweedfs\">SeaweedFS</a>, and <a href=\"https://git.deuxfleurs.fr/Deuxfleurs/garage\">Garage</a>, with Garage released under the AGPLv3 license and SeaweedFS and RustFS under the Apache 2.0 license. Highlighting the importance of sustainability and permissive licenses for enterprises, user <em>victormy</em> <a href=\"https://news.ycombinator.com/item?id=46136023\">comments on Hacker News</a>:</p>\n   <blockquote>\n    <p>Big thanks to MinIO, RustFS, and Garage for their contributions. That said, MinIO closing the door on open source so abruptly definitely spooked the community. But honestly, fair play to them — open source projects eventually need a path to monetization (...) With MinIO effectively bowing out of the OSS race, my money is on RustFS to take the lead.</p>\n   </blockquote>\n   <p>While Garage focuses on being an S3-compatible object store for small, self-hosted, geo-distributed deployments, RustFS focuses on raw performance and optimization for data lakes, AI, and big data workloads. According to the documentation, RustFS supports migration and coexistence with other S3-compatible platforms such as MinIO and Ceph. Written in Go, SeaweedFS is a distributed storage system for blobs, objects, files, and data lakes. Robert Hodges, CEO at Altinity, suggests an \"open source mystery\" and <a href=\"https://www.linkedin.com/posts/berkeleybob2105_opensource-s3-objectstorage-activity-7405010380789309440-VcqA?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">questions</a>:</p>\n   <blockquote>\n    <p>There are easy-to-deploy, open source builds for practically every major database type but not for S3-compatible object storage. Shouldn't there be a PostgreSQL for S3?</p>\n   </blockquote>\n   <p>So far, no fork of the MinIO community edition has gained traction.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"MinIO GitHub Repository in Maintenance Mode: What's Next for the Open Source Object Storage?\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/minio-s3-api-alternatives/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1766934900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "MinIO 的开源 GitHub 仓库已进入维护模式，引发了社区对其未来不确定性的争论、对替代方案的需求，以及单厂商开源项目面临的挑战。",
+  "oneSentenceSummary": "MinIO 的开源 GitHub 仓库已进入维护模式，引发了社区对其未来不确定性的争论、对替代方案的需求，以及单厂商开源项目面临的挑战。",
+  "summary": "本文讨论了 MinIO 项目的开源 GitHub 仓库在经历了一次有争议的许可证变更和移除管理员功能后，意外转向“维护模式”的情况。此举在开发者社区中引发了广泛讨论，涉及 S3 兼容开源对象存储的未来，包括潜在的分叉和替代解决方案。文章强调了社区对 MinIO 缺乏官方沟通的担忧，依赖开源版本的公司面临的合规性问题，以及单厂商开源项目与开放治理项目之间更广泛的影响。它介绍了 RustFS、SeaweedFS 和 Garage 等替代方案，详细说明了它们的侧重点和社区对它们的看法，同时指出目前还没有 MinIO 社区分叉获得显著关注。",
+  "mainPoints": [
+    {
+      "point": "MinIO 的开源 GitHub 仓库已突然进入维护模式，这意味着社区贡献和支持实际上已告终止。",
+      "explanation": "MinIO 不再接受新功能或增强功能，安全修复按个案处理，发行问题和拉取请求（PRs）的积极审查已停止。这些举措在几乎没有警告或迁移指导的情况下，实质上将用户推向了企业版本。"
+    },
+    {
+      "point": "这一转变揭示了单厂商控制下的开源项目所面临的关键挑战。",
+      "explanation": "此次事件凸显了不受独立基金会管理的开源项目面临的“项目放弃”风险，引发了关于可持续性、信任和“开放治理”模式必要性的问题。"
+    },
+    {
+      "point": "社区正在积极寻找和讨论 S3 兼容开源对象存储的替代方案。",
+      "explanation": "为填补 MinIO 此举留下的空白，开发者正在积极探索 RustFS、SeaweedFS 和 Garage 等选项，每个方案都有不同的侧重点（例如，性能与跨地域部署）。"
+    },
+    {
+      "point": "此次事件给依赖 MinIO 开源版本的组织带来了重大的合规和架构风险。",
+      "explanation": "社区版缺乏持续的支持和开发，给基于 MinIO 构建的业务带来了安全不合规风险和架构不稳定问题。"
+    }
+  ],
+  "keyQuotes": [
+    "一个无声的 README 更新刚刚结束了 MinIO 作为默认开源 S3 引擎的时代 (...)",
+    "为什么这很重要：可能导致 SOC2/ISO/PCI/HIPAA 不合规，存储层面的架构风险，没有社区贡献途径，强制转向商业许可或迁移。这是一个重大的开源基础设施事件，而不仅仅是项目新闻。",
+    "在 2025 年，“开源”已经不够了。我们需要寻求开放治理。由基金会（CNCF、Apache、Linux 基金会）托管的项目可以免疫这类项目放弃行为。单厂商项目则不能。",
+    "MinIO 如此突然地关闭开源之门，无疑震惊了社区。但老实说，这情有可原——开源项目最终需要一条盈利之路。",
+    "几乎所有主要的数据库类型都有易于部署的开源版本，但 S3 兼容对象存储却没有。难道不应该有一个 S3 的 PostgreSQL 吗？"
+  ],
+  "tags": [
+    "开源",
+    "对象存储",
+    "MinIO",
+    "S3 兼容",
+    "开放治理"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 601,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766934900000,
+  "publishDateStr": "2025-12-28",
+  "publishDateTimeStr": "2025-12-28 15:15:00"
+}

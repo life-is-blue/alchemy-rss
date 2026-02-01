@@ -1,0 +1,54 @@
+{
+  "id": "RAW_95a588",
+  "title": "ICML 2025 | M+框架来了，增加 LLM 隐空间记忆，不再受上下文窗口限制 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-15-3",
+  "date": "2025-07-15 03:42:07",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p><strong>本文的第一作者Yu Wang来自加州大学圣地亚哥分校，主要研究方向为Memory for LLMs and Memory for LLM Agents. 该论文于2024年在MIT-IBM Waston Lab实习过程中完成，通讯作者Zexue He也毕业于加州大学圣地亚哥分校。</strong></p>\n  <p><strong>M+</strong> 是在 MemoryLLM 之上提出的长期隐空间记忆扩展框架：通过把「过期」隐藏向量写入 <strong>CPU - 侧长期记忆池</strong>，再用协同检索器拉回最相关记忆，它将 8 B 级模型的有效记忆跨度从原本<strong>不到 20 k tokens 提升到 160 k tokens 以上</strong>，同时显存占用保持不变。</p>\n  <section>\n   <img data-imgfileid=\"503496125\" data-ratio=\"0.2212962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6be921e9-ea3d-4d1d-e0f0-5ba03f1ec400/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/559a981e-6dc2-418b-8bf7-a9317ce78b46/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文标题：M+: Extending MemoryLLM with Scalable Long-Term Memory</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2502.00592</p></li>\n   <li>\n    <p>代码仓库：https://github.com/wangyu-ustc/MemoryLLM</p></li>\n   <li>\n    <p>开源模型：https://huggingface.co/YuWangX/mplus-8b</p></li>\n  </ul>\n  <p><strong>背景：上下文 ≠ 记忆 &amp; 现有记忆模型的缺陷</strong></p>\n  <p><strong>上下文窗口并不能直接等价于记忆。 </strong>GPT-4.1 之类的模型即便支持 100 万 token，也会随窗口线性升高显存与延迟，难以落地本地部署。</p>\n  <p><strong>业界主流做法是 “Token-Level Memory”：</strong>把历史内容或三元组存在数据库 / 向量库，检索后再拼接回 prompt；MemGPT 等系统即属此类。该类做法不需要重复训练，直接结合 GPT-4 这样的大模型便可以获得很不错的性能，但是，它也会有一些随之而来的问题：(1) <strong>冗余</strong>：原始文本并非最紧凑表达，重复率高。(2) <strong>冲突难解</strong>：遇到相互矛盾或不断更新的信息时，文本级冲突消解复杂。(3) <strong>多模态能力弱</strong>：由于数据库格式为文本，处理音频或者图片，视频数据将相对困难。</p>\n  <p>因此，我们希望探索隐空间 (Latent-Space) 的 Memory -- 既压缩又可端到端训练，更接近人类在神经激活中存储信息的方式。&nbsp;</p>\n  <p><strong>M + 的关键改进：Long-Term Memory</strong></p>\n  <p>在 MemoryLLM 中，我们为 8B 的 Llama3 模型引入了约 1.67B 的 Memory。Llama3-8B 的 Transformer 共包含 32 层。当第一层接收到词输入后，会通过 Embedding 层将词转化为一系列 4096 维的向量。基于这一特点，我们设计了 MemoryLLM，在每一层都加入 N 个 Memory Tokens（实验中 N=12800）。在生成过程中，这些 Memory Tokens 会作为每一层的 Prefix，通过 Cross-Attention 将信息注入后续层，使模型能 “看到” 保存在 Memory Pool 中的历史信息。</p>\n  <section>\n   <img data-imgfileid=\"503496127\" data-ratio=\"0.33874239350912777\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/08f7350d-920f-46f9-288b-7a72dddc6000/public\" data-type=\"png\" data-w=\"986\" type=\"block\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/28d812eb-fd60-4819-aa29-f82bebd63901/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>在更新阶段，我们会将每层 Memory Token 中最后 K 个（实验中 K=256）与需要写入的信息一同送入 Transformer，再次经过 Cross-Attention，将信息压入新的 Memory Tokens 中（如下图所示）。与此同时，我们在原有 Memory 中随机丢弃 K 个旧 Token，并将新生成的 K 个 Token 放到 Memory 尾部，完成更新。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b0ce0a49-5ad4-4014-0fbb-016cddb93500/public\" data-ratio=\"0.6692456479690522\" data-s=\"300,640\" data-type=\"png\" data-w=\"1034\" type=\"block\" data-imgfileid=\"503496133\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/5bf6efcf-b385-472f-9391-ee4cb5ffe68f/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>基于这样的设计，借助每层 12800 个 Memory Vectors，我们在 50k tokens 内都能保持良好的信息留存（最早 MemoryLLM-7B 版本只做到 20k，后续在 GitHub 提供的新版模型 https://github.com/wangyu-ustc/MemoryLLM 可达 50k）。然而，这样的记忆容量仍无法满足我们对更长序列的期待。要进一步扩展 Memory，单靠原有的 1.67B 容量已远远不够，因此我们提出了 <strong>Long-Term Memory</strong>。</p>\n  <p>如何高效实现 Long-Term Memory？考虑到 MemoryLLM 中每一个 Memory Token 本质上都来自 Hidden States，我们将那些在更新过程中被 “丢弃” 的 Memory Token 并非直接舍弃，而是将其保存在长期记忆池中（如下图）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/51ce8fce-969f-4fa8-43f6-5df9868b9700/public\" data-ratio=\"0.6759259259259259\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496135\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/e33882a9-1345-4b94-9e09-125df87574c4/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>仅仅保存是不够的，我们还需要具备强大的提取能力。最初我们尝试用 Attention 来从长期记忆中检索 Hidden States，但实验表明 Attention 在提取 Hidden States 时效果有限（在论文的消融实验中做了详尽对比）。因此我们提出<strong>协同提取器</strong>（Co-trained Retriever），并与全模型进行联合训练（如下图）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/54dcaa42-9ea8-42c7-a45e-9f42382db800/public\" data-ratio=\"0.4534653465346535\" data-s=\"300,640\" data-type=\"png\" data-w=\"1010\" type=\"block\" data-imgfileid=\"503496136\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/df13d467-4c16-407a-a4eb-5e98b4dc22f1/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>通过这一结构，我们将模型的有效记忆跨度从 50k 一举提升到 160k，且由于 Memory 主要驻留在 CPU，不会显著增加 GPU 负担。</p>\n  <p><strong>M + 的实验结果</strong></p>\n  <p><strong>显著性能提升及更少的 GPU 使用：</strong>在 Longbook-QA 和 Longbook-Event-QA 两个数据集上，我们都在更少 GPU 的使用下（单卡 18GB 左右）获得了更强大的性能。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/094b5d0f-d0ba-4641-d764-a95988753e00/public\" data-ratio=\"0.8222591362126246\" data-s=\"300,640\" data-type=\"png\" data-w=\"602\" type=\"block\" data-imgfileid=\"503496144\" data-original-style=\"width:425px;height:349px;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/68b8de98-2feb-420c-819c-70844c581f3e/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8d2d3b58-0b86-4cc7-94fe-5ee2e1ff0e00/public\" data-ratio=\"0.5788461538461539\" data-s=\"300,640\" data-type=\"png\" data-w=\"1040\" type=\"block\" data-imgfileid=\"503496145\" data-original-style=\"width:460px;height:266px;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/35fe5ae3-03a3-41ac-be09-8e217629953a/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 60%;\">\n  </section>\n  <p><strong>更强的信息留存能力</strong>：在 SQuAD 数据集上表现出远超 MemoryLLM-7B 以及相关 ablation baseline 的信息留存能力，可以达到 160k 依旧不完全遗忘过去的信息。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/81677796-d82a-479e-f64d-3ccceb017900/public\" data-ratio=\"0.6012145748987854\" data-s=\"300,640\" data-type=\"png\" data-w=\"988\" type=\"block\" data-imgfileid=\"503496146\" data-original-style=\"width:497px;height:299px;\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/996abf10-a115-48ab-9934-65a3dd8cfe2c/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37b30e6d-4314-4b5c-a816-012f1610cf00/public\" data-ratio=\"0.5511482254697286\" data-s=\"300,640\" data-type=\"png\" data-w=\"958\" type=\"block\" data-imgfileid=\"503496147\" data-original-style=\"width:500px;height:276px;\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/9b7615ef-ad7c-4bed-98fb-7b88666cfabd/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>结语</strong></p>\n  <p>M+ 展示了我们在探索<strong>隐空间长期记忆</strong>领域的重要进展，也为下一代具备持续记忆能力的语言模型提供了坚实的技术支撑。未来，我们将继续研究更高效的存储机制、更智能的检索策略，以及与多模态输入更自然融合的隐空间记忆架构。在此方向上，M+ 不仅是对 MemoryLLM 的一次扩展，也是我们对 “让模型拥有接近人类记忆能力” 这一愿景的又一次有力实践。</p>\n \n",
+  "aiSummary": "M+框架通过引入隐空间长期记忆和协同检索器，显著扩展了大型语言模型（LLM）的有效记忆跨度至 160k tokens 以上，同时保持显存占用不变。",
+  "oneSentenceSummary": "M+框架通过引入隐空间长期记忆和协同检索器，显著扩展了大型语言模型（LLM）的有效记忆跨度至 160k tokens 以上，同时保持显存占用不变。",
+  "summary": "文章详细介绍了 M+框架，一个旨在解决大型语言模型（LLM）上下文窗口限制和显存占用问题的创新方案。传统的上下文窗口机制导致显存线性增长和高延迟，而 Token-Level Memory 方法存在冗余、冲突难解和多模态能力弱等问题。针对这些局限，M+框架旨在探索隐空间（Latent-Space）记忆，这种方式因其数据压缩性、端到端训练能力以及更接近人类神经激活中存储信息的方式，被认为是更高效的记忆解决方案。M+在 MemoryLLM 的基础上，提出将“过期”的隐藏向量写入 CPU 侧的长期记忆池，并开发了与全模型联合训练的“协同检索器”，以高效地从长期记忆中提取最相关信息。实验结果表明，M+成功将 8B 级模型的有效记忆跨度从不到 20k tokens 提升到 160k tokens 以上，且在 Longbook-QA 和 Longbook-Event-QA 等长文本问答数据集上取得了更优异的性能，同时显著降低了 GPU 显存占用（单卡约 18GB）。这为构建具备持续记忆能力的下一代语言模型提供了坚实的技术基础。",
+  "mainPoints": [
+    {
+      "point": "M+框架通过将隐向量存储至 CPU 侧长期记忆池，有效突破 LLM 上下文窗口限制。",
+      "explanation": "现有 LLM 受限于上下文窗口长度，M+通过将不再活跃的隐向量转移到 CPU 存储，显著扩展了模型的有效记忆跨度，同时避免了显存的线性增长，提升了模型处理超长序列的能力。"
+    },
+    {
+      "point": "协同检索器是实现高效隐空间长期记忆提取的关键创新。",
+      "explanation": "针对隐空间记忆的特殊性，M+设计并与全模型联合训练了协同检索器，解决了传统 Attention 机制在提取隐向量时效果有限的问题，确保了相关记忆的精准高效回溯。"
+    },
+    {
+      "point": "M+在性能和资源效率上均实现了显著提升，具备高实用价值。",
+      "explanation": "实验证明，M+在保持显存不变的情况下，将 8B 模型的有效记忆跨度从 20k 提升至 160k 以上，并在长文本 QA 任务上展现出更强的性能和信息留存能力，为 LLM 的实际应用提供了新的解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "M+ 是在 MemoryLLM 之上提出的长期隐空间记忆扩展框架：通过把「过期」隐藏向量写入 CPU - 侧长期记忆池 ，再用协同检索器拉回最相关记忆，它将 8 B 级模型的有效记忆跨度从原本不到 20 k tokens 提升到 160 k tokens 以上，同时显存占用保持不变。",
+    "我们希望探索隐空间 (Latent-Space) 的 Memory -- 既压缩又可端到端训练，更接近人类在神经激活中存储信息的方式。",
+    "通过这一结构，我们将模型的有效记忆跨度从 50k 一举提升到 160k，且由于 Memory 主要驻留在 CPU，不会显著增加 GPU 负担。",
+    "M+ 展示了我们在探索隐空间长期记忆领域的重要进展，也为下一代具备持续记忆能力的语言模型提供了坚实的技术支撑。"
+  ],
+  "tags": [
+    "大语言模型",
+    "记忆增强",
+    "隐空间记忆",
+    "长期记忆",
+    "Transformer"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 91,
+  "wordCount": 1659,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752550927000,
+  "publishDateStr": "2025-07-15",
+  "publishDateTimeStr": "2025-07-15 03:42:07"
+}

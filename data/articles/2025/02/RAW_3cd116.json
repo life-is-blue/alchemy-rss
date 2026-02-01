@@ -1,0 +1,54 @@
+{
+  "id": "RAW_3cd116",
+  "title": "LangGraph 能否胜任生产环境？",
+  "url": "https://blog.langchain.dev/is-langgraph-used-in-production/",
+  "date": "2025-02-05 07:47:42",
+  "author": "LangChain",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a href=\"https://www.langchain.com/built-with-langgraph?ref=blog.langchain.dev\"><u>Leading companies</u></a> like Uber, LinkedIn, and Replit are choosing LangGraph to build agents that are not only powerful but also reliable. In 2024, the focus shifted towards specialized AI agents designed for specific business needs. But getting <a href=\"https://blog.langchain.dev/what-is-an-agent/\"><u>AI agents</u></a> production-ready isn’t as simple as plugging in an LLM to produce intelligent outputs. Companies need solutions that provide <strong>reliability, observability, and control.</strong>&nbsp;</p>\n  <p>This piece explores the key challenges of putting AI agents into production and how leading companies like Uber, LinkedIn, and Replit are overcoming them, with some help from LangGraph. 🪄</p>\n  <h2 id=\"many-companies-are-choosing-langgraph-for-reliable-agents\"><strong>Many companies are choosing LangGraph for reliable agents</strong></h2>\n  <p>Companies across a variety of industries are turning to LangGraph to build scalable agent systems. <strong>LinkedIn</strong> streamlined hiring by building an AI-powered recruiter that automates candidate sourcing, matching, and messaging. Their hierarchical agent system, built on LangGraph, has freed up their human recruiters to focus on high-level strategy – resulting in more efficient hiring.</p>\n  <p>Another example of operational efficiency —<strong>&nbsp;AppFolio</strong> created a copilot that’s <a href=\"https://blog.langchain.dev/customers-appfolio/\"><u>saved over 10 hours a week</u></a> for their property managers, as LangGraph helped them cut app latency and 2x the accuracy of their decisions.</p>\n  <p>For <strong>Uber</strong> and <strong>Replit</strong>, LangGraph greatly sped up the development cycle when scaling up complex workflows. Replit’s AI agent acts as a <a href=\"https://www.langchain.com/breakoutagents/replit?ref=blog.langchain.dev\"><u>copilot for building software from scratch</u></a>; with LangGraph under the hood, they’ve architected a multi-agent system with human-in-the-loop capabilities (so users can <strong>see their agent actions</strong>, from package installations to file creation) - making development more transparent.</p>\n  <p>Uber integrated LangGraph to streamline large-scale code migrations within their developer platform. They carefully structured a network of specialized agents so that each step of their unit test generation was handled with precision. Similarly, <strong>Elastic</strong> has used LangGraph to orchestrate their network of AI agents for real-time threat detection – which has helped them respond to security risks much more quickly and effectively.</p>\n  <h2 id=\"why-is-it-so-hard-to-put-ai-agents-into-production\"><strong>Why is it so hard to put AI agents into production?</strong></h2>\n  <p>While LLM-powered agents hold immense promise, getting them production-ready is challenging - especially when it comes to ensuring <a href=\"https://www.langchain.com/stateofaiagents?ref=blog.langchain.dev\"><u>performance quality</u></a> and reliability.&nbsp;</p>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://lh7-rt.googleusercontent.com/docsz/AD_4nXd_SvIil7Jwr08T7ix3XKNGiD4mOMmNoAeHhGKybbHQWTIwPLB8ZyZajlRZi0RkrRFRbtj1Sbe-XrYIA-_YFrhbax1C7w8XFLAjntv4c8-N8-4Jlt4nYqIK3By3uBtgEP9lkZ6yEg?key=ZoLSJchW-0eN4O0hYn6jEqk8\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"478\" height=\"278\">\n   <figcaption>\n    <span style=\"white-space: pre-wrap;\">Performance quality was the top challenge for respondents in the \"State of AI Agents\" survey ran by LangChain in the tail end of 2024</span>\n   </figcaption>\n  </figure>\n  <p>From working closely with hundreds of companies, we see the following key hurdles to deploying agents in production:&nbsp;</p>\n  <ul>\n   <li><strong>Unpredictability of LLMs</strong> - Unlike traditional software, AI agents don’t follow a fixed set of rules. Instead, they generate responses dynamically. On top of that, the UX for agents allows for free-form text input, including unpredictable human speech – making it difficult to guarantee accurate and contextually-appropriate responses.&nbsp;</li>\n   <li><strong>Complexity of orchestration - </strong>Many real-world applications require multiple agents to work together, with each handling different tasks. Coordinating them effectively —&nbsp;including managing task dependencies, error recovery, and communication – adds another layer of difficulty.</li>\n   <li><strong>Observability and debugging limitations </strong>- When an agent makes a bad decision, understanding <em>why</em> can feel like a shot in the dark. Diagnosing failures and maintaining performance require robust tracing and monitoring, which most agent frameworks don’t have built-in.</li>\n  </ul>\n  <p>Given these hurdles, we see most companies choosing a framework to have the right tool set to meet their bar for shipping to production. This is also where LangGraph comes into play.&nbsp;</p>\n  <p><a href=\"https://www.langchain.com/langgraph?ref=blog.langchain.dev\"><u>LangGraph</u></a> is a controllable agent framework designed for production use. Unlike other agentic frameworks, LangGraph is:</p>\n  <ul>\n   <li><strong>Low-level and customizable</strong> – LangGraph allows you to flexibly design agents for your company’s bespoke needs. LangGraph primitives are fully descriptive and, unlike higher-level abstractions, can scale beyond prototyping.&nbsp;</li>\n   <li><strong>Highly reliable</strong> – Gain full control over agent actions with moderation checks, human-in-the-loop, and persisted context for long-running workflows — so your agent can stay on course.&nbsp;</li>\n   <li><strong>Optimized for observability</strong> – While LangGraph doesn’t depend on any other LangChain product, it integrates seamlessly with <a href=\"https://www.langchain.com/langsmith?ref=blog.langchain.dev\"><u>LangSmith</u></a> for added visibility into agent interactions, performance monitoring, and debugging.</li>\n  </ul>\n  <p>When we built LangGraph in early 2024, we intentionally gave developers the choice to structure their agents without the limitations of black-box architectures. LangGraph has since become the default framework for many agentic applications in production. We learned from LangChain that while higher level abstractions helped developers get started quickly, it’s the lower level flexibility that can handle varied production queries. LangGraph has a steeper learning curve, but users find they don't scale off of it.</p>\n  <h2 id=\"the-future-of-ai-agents-with-langgraph\"><strong>The future of AI agents with LangGraph</strong></h2>\n  <p>As we enter 2025, LangGraph is poised to drive the next wave of AI agent adoption. By building on the lessons learned from these leading companies, we aim to empower more developers to build reliable, production-ready AI agents.</p>\n  <p>Looking for more insights? Check out the <a href=\"https://www.langchain.com/built-with-langgraph?ref=blog.langchain.dev\"><u>latest stories</u></a> on how companies are using LangGraph, or explore our latest <a href=\"https://www.youtube.com/watch?v=aHCDrAbH_go&amp;ref=blog.langchain.dev\"><u>video tutorial </u></a>on how to build effective AI agents.</p>\n </body>\n</html>",
+  "aiSummary": "探讨了领先公司如 Uber、LinkedIn 和 Replit 如何使用 LangGraph 构建可靠的生产级 AI 代理。同时，文章还解决了 LLM 不确定性、编排复杂性和可观察性等关键挑战。",
+  "oneSentenceSummary": "探讨了领先公司如 Uber、LinkedIn 和 Replit 如何使用 LangGraph 构建可靠的生产级 AI 代理。同时，文章还解决了 LLM 不确定性、编排复杂性和可观察性等关键挑战。",
+  "summary": "本文探讨了 AI 代理在生产环境中面临的挑战，如 LLM 不确定性、编排复杂性和调试限制，并展示了 LangGraph 的解决方案。文章通过 Uber、LinkedIn 和 Replit 等公司的实际用例，说明 LangGraph 如何创建可扩展、可靠且可观察的 AI 系统。例如，Replit 的多代理系统通过人在回路功能增强了开发工作流的透明度。此外，文章强调了 LangGraph 的低级定制能力、可靠性特性以及与 LangSmith 的无缝集成，用于性能监控。展望未来，LangGraph 预计将在 2025 年推动下一波 AI 代理的采用，助力开发者构建生产级别的解决方案。",
+  "mainPoints": [
+    {
+      "point": "LangGraph 支持可扩展且可靠的智能代理系统。",
+      "explanation": "像 LinkedIn 和 Uber 这样的公司使用 LangGraph 来精确处理复杂的工作流，通过持久化上下文和人在回路机制等功能提高运营效率和决策准确性。"
+    },
+    {
+      "point": "关键生产挑战包括 LLM 不确定性和编排复杂性。",
+      "explanation": "LLM 的动态响应和自由文本输入增加了确保一致性的难度，而在现实世界应用中协调多个代理又增加了另一层复杂性。LangGraph 通过审核检查和强大的追踪工具解决了这些问题。"
+    },
+    {
+      "point": "LangGraph 提供低级定制以满足多样化需求。",
+      "explanation": "其灵活的基本组件允许开发者设计满足特定业务需求的定制化 AI 代理，克服高级抽象在生产级别应用中的局限性。"
+    }
+  ],
+  "keyQuotes": [
+    "企业需要提供可靠性、可观察性和可控性的解决方案。",
+    "LangGraph 允许您灵活地为公司的特定需求设计定制化 AI 代理。",
+    "诊断故障和保障性能需要依赖强大的追踪和监控能力。",
+    "Replit 的 AI 代理作为辅助开发工具，从零开始构建软件，其人在回路功能使开发更加透明。"
+  ],
+  "tags": [
+    "LangGraph",
+    "AI 代理",
+    "生产环境部署",
+    "代理框架",
+    "可观察性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 789,
+  "domain": "blog.langchain.dev",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1738741662000,
+  "publishDateStr": "2025-02-05",
+  "publishDateTimeStr": "2025-02-05 07:47:42"
+}

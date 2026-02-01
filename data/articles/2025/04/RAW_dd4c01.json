@@ -1,0 +1,57 @@
+{
+  "id": "RAW_dd4c01",
+  "title": "自制 LLM：从零开始训练大型语言模型",
+  "url": "https://www.freecodecamp.org/news/train-your-own-llm/",
+  "date": "2025-04-10 21:09:35",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Ever wondered how large language models like ChatGPT are actually built? Behind these impressive AI tools lies a complex but fascinating process of data preparation, model training, and fine-tuning. While it might seem like something only experts with massive resources can do, it’s actually possible to learn how to build your own language model from scratch. And with the right guidance, you can go from loading raw text data to chatting with your very own AI assistant.</p>\n  <p>We just published a course on the <a target=\"_blank\" href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you all about training a language model from start to finish. Created and taught by Imad Saddik, this course takes a beginner-friendly approach to one of the most powerful areas of machine learning. Using Moroccan Darija as a working example, Imad walks you through every step of the process, from tokenizing raw text to fine-tuning a functional chatbot. Whether you're interested in natural language processing, AI development, or simply want to deepen your understanding of how modern language models work, this course is a fantastic place to start.</p>\n  <p>The course begins with the basics: you’ll learn how to gather and prepare your training data. Then, you’ll dive into tokenization, where you’ll build a tokenizer from scratch using the Byte Pair Encoding (BPE) method. This step is important because language models don’t process raw text directly. They process sequences of tokens, which are smaller chunks of language. Once your tokenizer is ready, you’ll use it to encode your dataset, preparing it for the model training phase.</p>\n  <p>Next, the course takes you deep into the heart of modern AI: the Transformer architecture. You’ll explore how transformers work, why they’ve revolutionized language modeling, and how their attention mechanisms allow them to understand and generate human-like text. With this foundation in place, you'll pre-train a language model on your encoded data, allowing it to learn the patterns and structure of the language from scratch.</p>\n  <p>But the journey doesn’t stop there. You’ll then learn how to create a supervised fine-tuning dataset. This step is key to turning your general-purpose model into something more task-specific, like a helpful chatbot. You’ll go through the process of instruction tuning, teaching your model how to follow prompts and perform useful tasks. And to make fine-tuning more efficient, the course introduces you to LoRA (Low-Rank Adaptation), a technique that allows you to adapt large models without retraining everything from scratch.</p>\n  <p>Finally, you’ll scale up your work, fine-tuning the model to become a conversational AI assistant that you can interact with in real-time. By the end of the course, you’ll have built your own end-to-end language model pipeline.</p>\n  <p>Check it out now on <a target=\"_blank\" href=\"https://www.youtube.com/watch?v=9Ge0sMm65jo\">the freeCodeCamp.org YouTube channel</a> and start building your AI assistant today (4-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/9Ge0sMm65jo\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "freeCodeCamp 发布 LLM 训练教程，涵盖数据准备和 LoRA 微调等关键步骤。",
+  "oneSentenceSummary": "freeCodeCamp 发布 LLM 训练教程，涵盖数据准备和 LoRA 微调等关键步骤。",
+  "summary": "本文介绍了一个由 freeCodeCamp 发布的关于训练大型语言模型 (LLM) 的教程，适合对自然语言处理 (NLP) 和人工智能 (AI) 感兴趣的同学。该教程由 Imad Saddik 创建，以摩洛哥 Darija 语为例，详细讲解了从数据准备到构建功能性聊天机器人的各个步骤。教程内容包括：收集和准备训练数据；使用字节对编码 (BPE) 方法从零开始构建分词器；探索 Transformer 架构及其注意力机制；在编码数据上预训练语言模型；创建监督微调数据集；使用 LoRA 技术进行高效微调；以及将模型微调为可实时交互的对话式 AI 助手。通过本课程，学习者可以构建自己的端到端语言模型管道 (pipeline)。",
+  "mainPoints": [
+    {
+      "point": "从零开始构建分词器是构建 LLM 的关键技术",
+      "explanation": "通过 BPE 等方法构建分词器，可以将原始文本转换为模型可处理的词元 (token) 序列，理解分词过程有助于更好地进行模型训练和优化。"
+    },
+    {
+      "point": "Transformer 架构及其注意力机制是现代语言模型的核心",
+      "explanation": "理解 Transformer 架构的原理，对掌握 LLM 特别重要，尤其是注意力机制如何使模型能够理解和生成类似人类的文本。"
+    },
+    {
+      "point": "LoRA 技术可以高效地对大型模型进行微调",
+      "explanation": "LoRA 通过在预训练模型中添加少量可训练参数，避免了从头开始重新训练整个模型，大大提高了微调效率。LoRA 能够在有限资源下快速定制 LLM，非常适合快速迭代和实验。"
+    },
+    {
+      "point": "通过本教程，学习者可以从零开始构建自己的 LLM 管道 (pipeline)，并将其应用于特定任务",
+      "explanation": "该教程提供了一个完整的 LLM 构建流程，学习者可以将所学知识应用于实际项目中。"
+    }
+  ],
+  "keyQuotes": [
+    "在这些令人印象深刻的 AI 工具背后，是复杂但引人入胜的数据准备、模型训练和微调过程。",
+    "你将探索 Transformer 的工作原理，以及它们如何彻底改变语言建模，以及它们的注意力机制如何使它们能够理解和生成类似人类的文本。",
+    "LoRA (Low-Rank Adaptation) 是一种允许你调整大型模型而无需从头开始重新训练所有内容的技术。"
+  ],
+  "tags": [
+    "大型语言模型",
+    "语言模型",
+    "Transformer",
+    "分词",
+    "预训练"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 455,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744319375000,
+  "publishDateStr": "2025-04-10",
+  "publishDateTimeStr": "2025-04-10 21:09:35"
+}

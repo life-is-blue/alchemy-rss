@@ -1,0 +1,53 @@
+{
+  "id": "RAW_69c2d1cd",
+  "title": "布鲁斯·施奈尔和巴拉特·拉加万的引用",
+  "url": "https://simonwillison.net/2025/Oct/21/ooda-loop/#atom-everything",
+  "date": "2025-10-21 02:28:39",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div class=\"quote\">\n    <blockquote cite=\"https://www.schneier.com/blog/archives/2025/10/agentic-ais-ooda-loop-problem.html\">\n     <p>Prompt injection might be unsolvable in today’s LLMs. LLMs process token sequences, but no mechanism exists to mark token privileges. Every solution proposed introduces new injection vectors: Delimiter? Attackers include delimiters. Instruction hierarchy? Attackers claim priority. Separate models? Double the attack surface. Security requires boundaries, but LLMs dissolve boundaries. [...]</p>\n     <p>Poisoned states generate poisoned outputs, which poison future states. Try to summarize the conversation history? The summary includes the injection. Clear the cache to remove the poison? Lose all context. Keep the cache for continuity? Keep the contamination. Stateful systems can’t forget attacks, and so memory becomes a liability. Adversaries can craft inputs that corrupt future outputs.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://www.schneier.com/blog/archives/2025/10/agentic-ais-ooda-loop-problem.html\">Bruce Schneier and Barath Raghavan</a>, <span class=\"context\">Agentic AI’s OODA Loop Problem</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/1858/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "布鲁斯·施奈尔和巴拉特·拉加万认为，由于缺乏令牌权限机制以及 LLM 固有的有状态性，提示注入在当前 LLM 中可能无法从根本上解决。",
+  "oneSentenceSummary": "布鲁斯·施奈尔和巴拉特·拉加万认为，由于缺乏令牌权限机制以及 LLM 固有的有状态性，提示注入在当前 LLM 中可能无法从根本上解决。",
+  "summary": "这篇文章直接引用了安全专家布鲁斯·施奈尔和巴拉特·拉加万的观点，批判性地探讨了大型语言模型中提示注入的挑战。他们断言，该问题可能无法解决，因为 LLM 从根本上无法区分令牌权限。这意味着所有令牌都以相同的权重处理，因此无法建立安全的边界。作者认为，分隔符或指令层级等传统缓解策略存在缺陷，反而会引入新的攻击向量。此外，他们强调，有状态 LLM 的本质允许恶意输入“污染”模型的内部状态，导致未来输出的持续污染，并将内存转变为安全隐患。",
+  "mainPoints": [
+    {
+      "point": "LLM 缺乏令牌权限机制，导致提示注入极具挑战。",
+      "explanation": "当前 LLM 平等地处理所有令牌，因此无法建立区分合法指令和恶意注入的安全边界或层级。"
+    },
+    {
+      "point": "有状态 LLM 系统容易受到注入提示的持续污染。",
+      "explanation": "一旦被“污染”，模型的内部状态可能会生成受损的输出，进一步破坏未来的交互，使内存成为安全隐患。"
+    },
+    {
+      "point": "常见的提示注入缓解技术通常会引入新的漏洞。",
+      "explanation": "使用分隔符或指令层级等解决方案容易被攻击者规避，反而扩大了攻击面。"
+    }
+  ],
+  "keyQuotes": [
+    "提示注入在今天的 LLM 中可能无法解决。LLM 处理令牌序列，但不存在标记令牌权限的机制。每种解决方案都引入了新的注入向量。",
+    "安全需要边界，但是 LLM 会消除边界。",
+    "被污染的状态会生成被污染的输出，从而污染未来的状态。有状态系统无法忘记攻击，因此内存成为一种负担。对手可以精心设计输入来破坏未来的输出。"
+  ],
+  "tags": [
+    "提示注入",
+    "LLM 安全",
+    "AI 安全",
+    "对抗性AI",
+    "有状态系统"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 118,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761013719000,
+  "publishDateStr": "2025-10-21",
+  "publishDateTimeStr": "2025-10-21 02:28:39"
+}

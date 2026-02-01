@@ -1,0 +1,57 @@
+{
+  "id": "RAW_24078e",
+  "title": "Meta 超级智能实验室首篇论文：重新定义 RAG",
+  "url": "https://www.qbitai.com/2025/09/329342.html",
+  "date": "2025-09-08 08:46:27",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"44\">金磊 发自 凹非寺</p>\n   <p data-track=\"45\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>Meta超级智能实验室</strong>的<strong>首篇</strong>论文，来了——</p>\n  <p data-track=\"3\">提出了一个名为<strong>REFRAG</strong>的高效解码框架，重新定义了RAG（检索增强生成），最高可将首字生成延迟（TTFT）加速30倍。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Meta超级智能实验室首篇论文：重新定义RAG\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250908103946_183ea6a16614a58580d6c6cd59da0f38.jpeg\" data-src=\"https://image.jido.dev/20250908103946_183ea6a16614a58580d6c6cd59da0f38.jpeg\">\n  </div>\n  <p data-track=\"4\">毕竟算是超级智能实验的“开山之作”，研究一出，就已经在网上掀起了不少的热议。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Meta超级智能实验室首篇论文：重新定义RAG\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250908103946_e51bd4f3dd73598e59a2b2de922ae9f4.jpeg\" data-src=\"https://image.jido.dev/20250908103946_e51bd4f3dd73598e59a2b2de922ae9f4.jpeg\">\n  </div>\n  <p data-track=\"5\">例如Reddti网友表示：</p>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p data-track=\"6\">若效果真如研究所说的那样，那对RAG来说是相当不错的改进，看起来可以做到在不牺牲准确性的情况下，能显著提高速度和上下文大小。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"Meta超级智能实验室首篇论文：重新定义RAG\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250908103946_266c8a7fc6eefa49702df6a12d0b8c0d.jpeg\" data-src=\"https://image.jido.dev/20250908103946_266c8a7fc6eefa49702df6a12d0b8c0d.jpeg\">\n  </div>\n  <p data-track=\"8\">首先，我们需要理解并回顾一下RAG的工作原理。</p>\n  <p data-track=\"9\">当一个大型语言模型（LLM）被要求回答需要精确背景知识的问题时，如果仅依赖它内部参数化的知识，可能会出现事实性错误或信息滞后等情况。</p>\n  <p data-track=\"10\">而RAG就通过一个外部知识库（如企业文档、专业数据库等）进行检索，将与问题最相关的信息提取出来，作为上下文与原始问题一同提供给LLM。LLM在获得这些精确的参考资料后，就能生成内容更可靠、更具时效性的答案。</p>\n  <p data-track=\"11\">然而，这个模式在工程方面也带来了不小的挑战，即<strong>推理效率与信息量的权衡</strong>。</p>\n  <p data-track=\"12\">当AI检索到的参考资料非常多（也就是我们通常说的“长上下文”）时，LLM的处理负担会大幅增加。</p>\n  <p data-track=\"13\">模型处理上下文的计算复杂度通常与上下文长度的平方成正比，导致<strong>生成第一个字的延迟</strong>（Time-to-First-Token, TTFT）显著增加，这直接影响了实时交互应用的用户体验。</p>\n  <p data-track=\"14\">同时，处理长上下文也意味着更高的计算和内存开销，为系统的规模化部署带来了挑战。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Meta超级智能实验室首篇论文：重新定义RAG\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250908103946_e38e8c42e753ae396be8146834c1721a.jpeg\" data-src=\"https://image.jido.dev/20250908103946_e38e8c42e753ae396be8146834c1721a.jpeg\">\n  </div>\n  <p data-track=\"15\">基于这样的背景，Meta超级智能实验室的研究人员发现，在RAG应用中，LLM处理检索到的多个文档时，其<strong>计算过程存在大量冗余</strong>。</p>\n  <p data-track=\"16\">通过实验，他们观察到模型内部的注意力机制在处理这些文档时，呈现出一种<strong>“块对角”（block-diagonal）</strong>的稀疏模式。</p>\n  <p data-track=\"17\">这意味着，模型的注意力主要集中在单个文档内部，以及各文档与用户问题之间的关联上。而不同文档片段之间的交叉注意力得分通常很低，表明它们之间的关联性较弱。</p>\n  <p data-track=\"18\">然而，标准的Transformer架构并不会区分这些关联性的强弱，而是对上下文中的所有词元（token）进行全局的注意力计算，这导致了大量计算资源被消耗在分析那些关联性很弱的文档片段上。</p>\n  <p data-track=\"19\">基于这一观察，研究团队提出：<strong>RAG解码过程中的大部分注意力计算对于最终结果的贡献有限，可以在不显著影响性能的前提下被优化或移除。</strong></p>\n  <p data-track=\"20\">REFRAG，就此应运而生。</p>\n  <p data-track=\"22\">REFRAG这个框架，主要通过<strong>“压缩（Compress）、感知（Sense）、扩展（Expand）”</strong>的流程，优化了LLM处理外部知识的方式。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Meta超级智能实验室首篇论文：重新定义RAG\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250908103946_496fba357bd34fe9ae35fdab272519d5.jpeg\" data-src=\"https://image.jido.dev/20250908103946_496fba357bd34fe9ae35fdab272519d5.jpeg\">\n  </div>\n  <p class=\"pgc-h-arrow-right\" data-track=\"23\"><strong>压缩：将上下文转换为紧凑表征</strong></p>\n  <p data-track=\"24\">REFRAG首先改变了上下文的呈现方式，它没有将所有检索到的原始文本直接输入给主LLM，而是引入了一个轻量级的编码器模型。</p>\n  <p data-track=\"25\">这个编码器将长篇的参考资料切分为多个“块”（chunks），并为每个“块”生成一个紧凑的向量表示——“块嵌入”（chunk embedding）。这个“块嵌入”可以视为原始文本块的浓缩摘要。</p>\n  <p data-track=\"26\">这一步骤带来了两个直接的好处，首先就是缩短输入序列长度，因为LLM需要处理的输入从数千个词元缩减为数百个“块嵌入”，显著降低了后续的计算量。</p>\n  <p data-track=\"27\">其次是由于这些“块嵌入”可以被预先计算并存储，当知识库中的同一文档被再次检索时，系统可以直接调用缓存的嵌入，避免了重复的编码计算。</p>\n  <p class=\"pgc-h-arrow-right\" data-track=\"28\"><strong>感知：智能判断关键信息</strong></p>\n  <p data-track=\"29\">考虑到并非所有信息都适合压缩，某些包含关键细节的文本片段需要被保留。</p>\n  <p data-track=\"30\">为此，REFRAG训练了一个基于<strong>强化学习（RL）</strong>的策略网络。</p>\n  <p data-track=\"31\">这个网络的功能是分析所有的“块嵌入”和用户问题，判断哪些文本块包含最核心的信息，需要以原始文本的形式呈现给LLM。</p>\n  <p class=\"pgc-h-arrow-right\" data-track=\"32\"><strong>扩展：结合压缩与原始文本</strong></p>\n  <p data-track=\"33\">经过前两步的处理，最终输入到主LLM的是一个混合序列，它包含了大部分上下文的“块嵌入”（压缩表示）和少量被判断为关键的“原始文本块”。</p>\n  <p data-track=\"34\">LLM基于这份经过优化的输入材料来生成答案，大部分背景信息通过压缩表示快速获取，而核心细节则通过原始文本进行精确理解。通过这种方式，REFRAG在保留关键信息的同时，最大限度地降低了计算负载。</p>\n  <p data-track=\"36\">根据论文数据，REFRAG框架在多个维度上取得了较为不错的成果。</p>\n  <p data-track=\"37\">例如在推理速度方面，以首字生成延迟（TTFT）为例，REFRAG实现了最高<strong>30.85倍</strong>的加速。与之前的先进方法相比，也取得了<strong>3.75倍</strong>的提升。</p>\n  <p data-track=\"38\">这意味着在需要快速响应的场景下，系统的延迟可以得到有效控制。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Meta超级智能实验室首篇论文：重新定义RAG\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250908103946_464ea5218083387ae9a5a38197093e89.jpeg\" data-src=\"https://image.jido.dev/20250908103946_464ea5218083387ae9a5a38197093e89.jpeg\">\n  </div>\n  <p data-track=\"39\">其次，实验还表明，在获得显著加速的同时，REFRAG在困惑度（Perplexity）以及多种下游任务（如问答、摘要）的准确率上，与使用完整上下文的基线模型相比<strong>没有性能损失</strong>。</p>\n  <p data-track=\"40\">此外，由于压缩技术使得模型能在同等计算预算下处理更多信息，上下文窗口等效扩大了<strong>16倍</strong>，这在某些任务上反而带来了性能增益。</p>\n  <p data-track=\"41\">据了解，这个方法的设计不仅适用于RAG，也适用于多轮对话、长文档摘要等其他需要处理长上下文信息的任务。</p>\n  <p data-track=\"42\">总而言之，Meta超级智能实验室的这项研究，通过巧妙的算法设计，有效解决了当前大模型在处理长上下文时面临的核心效率问题。REFRAG为开发更高效、更经济、更具扩展性的AI应用提供了一个重要的解决方案。</p>\n  <p data-track=\"43\">参考链接：\n   <br>\n   [1]https://arxiv.org/abs/2509.01092\n   <br>\n   [2]https://www.reddit.com/r/singularity/comments/1nai17r/new_research_from_meta_superintelligence_labs_big/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Meta 超级智能实验室提出 REFRAG 框架，通过“压缩、感知、扩展”策略优化 RAG，显著加速首字生成延迟（最高 30 倍）并有效扩展上下文，同时保持模型性能，重新定义了 RAG 的效率边界。",
+  "oneSentenceSummary": "Meta 超级智能实验室提出 REFRAG 框架，通过“压缩、感知、扩展”策略优化 RAG，显著加速首字生成延迟（最高 30 倍）并有效扩展上下文，同时保持模型性能，重新定义了 RAG 的效率边界。",
+  "summary": "文章详细介绍了 Meta 超级智能实验室首篇论文提出的 REFRAG（Retrieval-Enhanced Generation）高效解码框架，旨在解决 RAG 在大上下文处理中推理效率低下的核心问题。传统 RAG 在处理大量检索信息时，由于 LLM 计算复杂度与上下文长度呈平方关系，导致首字生成延迟（TTFT）显著增加，严重影响用户体验和系统部署。研究人员通过观察到 LLM 注意力机制在处理多个检索文档时存在大量冗余（块对角稀疏模式），提出 REFRAG 框架。该框架通过“压缩、感知、扩展”三步流程优化 LLM 处理外部知识的方式：首先，引入轻量级编码器将长篇参考资料压缩为“块嵌入”，大幅缩短输入序列长度；其次，训练基于强化学习的策略网络智能判断并保留最关键的原始文本块；最后，LLM 处理由块嵌入和关键原始文本组成的混合序列。实验结果表明，REFRAG 在 TTFT 上实现最高 30.85 倍的加速，并等效扩大上下文窗口 16 倍，同时在困惑度及下游任务准确率上无性能损失。该方法不仅适用于 RAG，还可应用于多轮对话、长文档摘要等长上下文任务，为开发更高效、经济、可扩展的 AI 应用提供了重要解决方案。",
+  "mainPoints": [
+    {
+      "point": "RAG 长上下文处理挑战与 Meta 的冗余计算发现",
+      "explanation": "传统 RAG 在处理大量检索信息时面临推理效率低下、首字生成延迟（TTFT）显著增加的问题。Meta 研究发现，LLM 在处理多个检索文档时存在大量冗余计算，注意力机制呈现“块对角”稀疏模式，即模型注意力主要集中在文档内部和文档与问题之间，而不同文档片段间的交叉关联性较弱，导致资源浪费。"
+    },
+    {
+      "point": "REFRAG 框架的核心机制——“压缩、感知、扩展”",
+      "explanation": "REFRAG 通过三步流程优化 LLM 对外部知识的处理：首先，'压缩'环节使用轻量级编码器将长篇参考资料转换为紧凑的“块嵌入”；其次，'感知'环节利用强化学习策略网络智能判断并保留最关键的原始文本块；最后，'扩展'环节让 LLM 处理由块嵌入和关键原始文本组成的混合序列，从而有效降低计算负担。"
+    },
+    {
+      "point": "REFRAG 在性能上的显著提升与效率突破",
+      "explanation": "该框架实现了首字生成延迟（TTFT）最高 30.85 倍的加速，比现有先进方法提升 3.75 倍，并等效扩大上下文窗口 16 倍。同时，REFRAG 在困惑度及多种下游任务（如问答、摘要）的准确率上，与使用完整上下文的基线模型相比没有性能损失，甚至在某些任务上带来性能增益。"
+    },
+    {
+      "point": "REFRAG 的广泛适用性及对 AI 应用的深远影响",
+      "explanation": "REFRAG 的设计不仅适用于 RAG，还可应用于多轮对话、长文档摘要等其他需要处理长上下文信息的任务。这项研究为开发更高效、更经济、更具扩展性的 AI 应用提供了重要的解决方案，重新定义了 RAG 的效率边界。"
+    }
+  ],
+  "keyQuotes": [
+    "提出了一个名为 REFRAG 的高效解码框架，重新定义了 RAG（检索增强生成），最高可将首字生成延迟（TTFT）加速 30 倍。",
+    "RAG 解码过程中的大部分注意力计算对于最终结果的贡献有限，可以在不显著影响性能的前提下被优化或移除。",
+    "在获得显著加速的同时，REFRAG 在困惑度（Perplexity）以及多种下游任务（如问答、摘要）的准确率上，与使用完整上下文的基线模型相比没有性能损失。"
+  ],
+  "tags": [
+    "RAG",
+    "大语言模型",
+    "推理优化",
+    "REFRAG",
+    "Meta"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 92,
+  "wordCount": 2097,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757321187000,
+  "publishDateStr": "2025-09-08",
+  "publishDateTimeStr": "2025-09-08 08:46:27"
+}

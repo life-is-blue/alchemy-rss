@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c41038",
+  "title": "打造你的第一个 AI 智能体：一条清晰的实战路径！",
+  "url": "https://baoyu.io/translations/how-to-build-your-first-ai-agent-full-guide",
+  "date": "2025-08-24 19:12:27",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.reddit.com/r/AgentsOfAI/?f=flair_name%3A%22Discussion%22\">How to build your first AI agent (Full guide)</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"65uixgb32z\">我发现，许多人满怀激情地想要构建自己的 AI 智能体 (AI Agent)，结果却常常半途而废。原因无他，要么是各种概念听起来太抽象，要么就是网上的文章吹得太玄乎。如果你是真心想动手做出第一个 AI 智能体，下面这条路，你真的可以一步步照着走。这可不是又一篇空洞的理论文章，而是我本人多次亲身实践、屡试不爽的真经。</p>\n   <h3 data-id=\"v9tpeg1ul2\" id=\"v9tpeg1ul2\" data-toc-id=\"v9tpeg1ul2\">1. 挑一个极小且极明确的问题</h3>\n   <p data-id=\"vsqrug7kjs\">先别想着搞什么“通用智能体”了，那太遥远了。你得先给你的智能体定一个非常具体的工作。比如：</p>\n   <ul>\n    <li>\n     <p data-id=\"jecohhqajr\">从医院网站上预约一次医生门诊。</p>\n    </li>\n    <li>\n     <p data-id=\"l8czxxk4k5\">监控招聘网站，把符合你要求的职位发给你。</p>\n    </li>\n    <li>\n     <p data-id=\"4s26u6egt3\">总结你收件箱里未读邮件的要点。</p>\n    </li>\n   </ul>\n   <p data-id=\"cmhzl20rac\">问题越小、越清晰，设计和调试起来就越容易。</p>\n   <h3 data-id=\"f372y8rwaf\" id=\"f372y8rwaf\" data-toc-id=\"f372y8rwaf\">2. 选一个基础的大语言模型</h3>\n   <p data-id=\"ysz0pz85sn\">刚起步时，千万别浪费时间自己训练模型。直接用现成的、足够好的就行了。比如 GPT、Claude、Gemini，或者如果你想自己部署，也可以选择 LLaMA、Mistral 这类开源模型。只要确保你选的模型具备推理和结构化输出的能力就行，因为这是 AI 智能体运行的根本。</p>\n   <h3 data-id=\"02ns016t2t\" id=\"02ns016t2t\" data-toc-id=\"02ns016t2t\">3. 决定智能体与外部世界的交互方式</h3>\n   <p data-id=\"2qwrrirvkx\">这是最核心的一步，但很多人都跳过了。AI 智能体可不只是个聊天机器人，它需要<strong>工具</strong>才能干活。你必须想清楚它能使用哪些 API 或执行哪些动作。一些常见的工具包括：</p>\n   <ul>\n    <li>\n     <p data-id=\"qp2tx54sm3\"><strong>网页抓取或浏览</strong> (可以用 Playwright、Puppeteer 这类库，或者网站本身提供的 API)</p>\n    </li>\n    <li>\n     <p data-id=\"8h81neguta\"><strong>邮件 API</strong> (Gmail API, Outlook API)</p>\n    </li>\n    <li>\n     <p data-id=\"74kyyrjfdj\"><strong>日历 API</strong> (Google Calendar API, Outlook Calendar API)</p>\n    </li>\n    <li>\n     <p data-id=\"9m5fduc8r6\"><strong>文件操作</strong> (读写本地文件、解析 PDF 等)</p>\n    </li>\n   </ul>\n   <h3 data-id=\"l1p80t8cqc\" id=\"l1p80t8cqc\" data-toc-id=\"l1p80t8cqc\">4. 搭建骨架工作流</h3>\n   <p data-id=\"0xa61viyf9\">先别急着上手那些复杂的框架。从最基础的流程开始连接：</p>\n   <ul>\n    <li>\n     <p data-id=\"54t8s7hrzn\">接收用户的<strong>输入</strong>（也就是任务或目标）。</p>\n    </li>\n    <li>\n     <p data-id=\"ajh21ptymh\">将任务和指令（系统提示词，system prompt）一起传给大语言模型。</p>\n    </li>\n    <li>\n     <p data-id=\"b9mi1o4tan\">让模型<strong>判断</strong>下一步该做什么。</p>\n    </li>\n    <li>\n     <p data-id=\"9icwbjfid2\">如果需要使用工具（比如调用 API、抓取网页），就去<strong>执行</strong>它。</p>\n    </li>\n    <li>\n     <p data-id=\"5g5xmd2k55\">把执行的结果再<strong>反馈</strong>给模型，让它决定再下一步的行动。</p>\n    </li>\n    <li>\n     <p data-id=\"v811xcxso2\">不断重复，直到任务完成，或者用户得到最终的输出。</p>\n    </li>\n   </ul>\n   <p data-id=\"ii3zij1zx5\">这个 <strong>模型 → 工具 → 结果 → 模型</strong> 的循环，就是每个 AI 智能体的心跳。</p>\n   <h3 data-id=\"deldslm0s8\" id=\"deldslm0s8\" data-toc-id=\"deldslm0s8\">5. 谨慎地添加记忆功能</h3>\n   <p data-id=\"bcpk5h1wh4\">大多数新手都以为智能体一上来就需要一套庞大的记忆系统。其实不然。先从最简单的<strong>短期记忆</strong>开始，也就是记住最近几次的对话上下文。如果你的智能体需要跨越多次运行来记住事情，用个数据库或简单的 JSON 文件就够了。只有当你真的需要时，再去考虑向量数据库 (vector databases) 或其他花哨的检索技术。</p>\n   <h3 data-id=\"t73xt0kvpd\" id=\"t73xt0kvpd\" data-toc-id=\"t73xt0kvpd\">6. 给它一个能用的界面</h3>\n   <p data-id=\"ldtvvofsmm\">一开始用命令行界面 (CLI) 就行。等它能跑通了，再给它套上一个简单的外壳：</p>\n   <ul>\n    <li>\n     <p data-id=\"774nibz4pp\">一个网页仪表盘 (用 Flask, FastAPI, 或 Next.js 来做)</p>\n    </li>\n    <li>\n     <p data-id=\"21k6mef429\">一个 Slack 或 Discord 机器人</p>\n    </li>\n    <li>\n     <p data-id=\"gzeoilbzv2\">甚至就是一个在你电脑上运行的脚本</p>\n    </li>\n   </ul>\n   <p data-id=\"ib9by0uf8f\">关键是让它跳出你的终端，这样你才能观察到它在真实工作流中的表现。</p>\n   <h3 data-id=\"lj3w39r9rx\" id=\"lj3w39r9rx\" data-toc-id=\"lj3w39r9rx\">7. 小步快跑，不断迭代</h3>\n   <p data-id=\"bufm6lifc4\">别指望它第一次就能完美运行。让它去处理真实的任务，看看它在哪儿会“翻车”，修复它，然后再试。我做过的每一个能稳定运行的智能体，都经历了数十轮这样的循环。</p>\n   <h3 data-id=\"cfwt3mr346\" id=\"cfwt3mr346\" data-toc-id=\"cfwt3mr346\">8. 控制好范围</h3>\n   <p data-id=\"1lvjrmn6y4\">你很容易会忍不住想给它增加越来越多的工具和功能。<strong>请克制住这种冲动</strong>。一个能帮你漂亮地完成预约挂号或管理邮件的单一功能智能体，远比一个什么都想做、却什么都做不好的“万能智能体”有价值得多。</p>\n   <p data-id=\"vkv7pvodx0\">学习最快的方法，就是从头到尾、完整地构建一个<strong>特定功能</strong>的智能体。一旦你成功做完一个，再做下一个时，你就会感觉轻松十倍，因为你已经把整个流程都摸透了。</p>\n   <p data-id=\"zjlu5pe7dz\"></p>\n   <img src=\"https://baoyu.io/uploads/2025-08-24/1756062749950.png\" data-width=\"100%\" data-align=\"center\">\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文提供了一条清晰的实战路径，指导初学者如何从零开始构建他们的第一个 AI 智能体，强调从小问题入手、迭代开发，避免复杂概念和过度设计。",
+  "oneSentenceSummary": "本文提供了一条清晰的实战路径，指导初学者如何从零开始构建他们的第一个 AI 智能体，强调从小问题入手、迭代开发，避免复杂概念和过度设计。",
+  "summary": "文章针对许多人在构建 AI 智能体时遇到的抽象概念和半途而废的问题，提供了一条具体的实战指导路径。作者强调，初学者应从选择一个极小且明确的问题开始，避免追求“通用智能体”。在技术选型上，建议直接使用现有的大语言模型（如 GPT、Claude、LLaMA 等），而非自行训练。核心步骤是明确智能体与外部世界的交互方式，通过工具（如网页抓取、邮件 API 等）使其能够执行实际任务。文章详细阐述了搭建“模型→工具→结果→模型”骨架工作流的重要性，并建议初期只添加简单的短期记忆功能。界面方面，从命令行开始，逐步扩展到 Web 或机器人界面。最后，作者强调了小步快跑、持续迭代以及控制范围的重要性，告诫读者一个专注于单一功能的智能体远比试图做所有事情的“万能智能体”更有价值。",
+  "mainPoints": [
+    {
+      "point": "从极小且明确的问题入手，是构建 AI 智能体的关键第一步。",
+      "explanation": "避免追求通用智能体，专注于解决具体痛点，能显著降低设计和调试的复杂性，提高项目成功率。"
+    },
+    {
+      "point": "AI 智能体需通过外部工具实现与世界的交互，而非仅限于聊天。",
+      "explanation": "明确智能体能使用的 API 或执行的动作（如网页抓取、邮件操作），是其发挥实际作用的核心，让智能体从理论走向实践。"
+    },
+    {
+      "point": "搭建“模型→工具→结果→模型”循环工作流是智能体的核心骨架。",
+      "explanation": "这一循环机制定义了智能体的决策、执行和反馈过程，是实现自动化任务处理和持续学习的基础。"
+    },
+    {
+      "point": "遵循小步快跑、持续迭代和控制范围的原则，是成功构建智能体的有效方法。",
+      "explanation": "初期避免过度设计和功能蔓延，通过快速试错和修复来优化智能体，确保其能稳定高效地完成特定任务。"
+    }
+  ],
+  "keyQuotes": [
+    "如果你是真心想动手做出第一个 AI 智能体，下面这条路，你真的可以一步步照着走。这可不是又一篇空洞的理论文章，而是我本人多次亲身实践、屡试不爽的真经。",
+    "AI 智能体可不只是个聊天机器人，它需要**工具**才能干活。",
+    "这个 **模型 → 工具 → 结果 → 模型** 的循环，就是每个 AI 智能体的心跳。",
+    "一个能帮你漂亮地完成预约挂号或管理邮件的单一功能智能体，远比一个什么都想做、却什么都做不好的\"万能智能体\"有价值得多。",
+    "学习最快的方法，就是从头到尾、完整地构建一个**特定功能**的智能体。"
+  ],
+  "tags": [
+    "AI智能体",
+    "AI Agent框架",
+    "大语言模型",
+    "LLM应用开发",
+    "工具调用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1289,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756062747000,
+  "publishDateStr": "2025-08-24",
+  "publishDateTimeStr": "2025-08-24 19:12:27"
+}

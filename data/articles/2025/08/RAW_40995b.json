@@ -1,0 +1,54 @@
+{
+  "id": "RAW_40995b",
+  "title": "Chrome 版 Claude 试用体验",
+  "url": "https://simonwillison.net/2025/Aug/26/piloting-claude-for-chrome/#atom-everything",
+  "date": "2025-08-26 22:43:25",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://www.anthropic.com/news/claude-for-chrome\">Piloting Claude for Chrome</a></strong>. Two days ago <a href=\"https://simonwillison.net/2025/Aug/25/agentic-browser-security/\">I said</a>:</p>\n   <blockquote>\n    <p>I strongly expect that the <em>entire concept</em> of an agentic browser extension is fatally flawed and cannot be built safely.</p>\n   </blockquote>\n   <p>Today Anthropic announced their own take on this pattern, implemented as an invite-only preview Chrome extension.</p>\n   <p>To their credit, the majority of the <a href=\"https://www.anthropic.com/news/claude-for-chrome\">blog post</a> and accompanying <a href=\"https://support.anthropic.com/en/articles/12012173-getting-started-with-claude-for-chrome\">support article</a> is information about the security risks. From their post:</p>\n   <blockquote>\n    <p>Just as people encounter phishing attempts in their inboxes, browser-using AIs face prompt injection attacks—where malicious actors hide instructions in websites, emails, or documents to trick AIs into harmful actions without users' knowledge (like hidden text saying \"disregard previous instructions and do [malicious action] instead\").</p>\n    <p>Prompt injection attacks can cause AIs to delete files, steal data, or make financial transactions. This isn't speculation: we’ve run “red-teaming” experiments to test Claude for Chrome and, without mitigations, we’ve found some concerning results.</p>\n   </blockquote>\n   <p>Their 123 adversarial prompt injection test cases saw a 23.6% attack success rate when operating in \"autonomous mode\". They added mitigations:</p>\n   <blockquote>\n    <p>When we added safety mitigations to autonomous mode, we reduced the attack success rate of 23.6% to 11.2%</p>\n   </blockquote>\n   <p>I would argue that 11.2% is still a catastrophic failure rate. In the absence of 100% reliable protection I have trouble imagining a world in which it's a good idea to unleash this pattern.</p>\n   <p>Anthropic don't recommend autonomous mode - where the extension can act without human intervention. Their default configuration instead requires users to be much more hands-on:</p>\n   <blockquote>\n    <ul>\n     <li><strong>Site-level permissions</strong>: Users can grant or revoke Claude's access to specific websites at any time in the Settings.</li>\n     <li><strong>Action confirmations</strong>: Claude asks users before taking high-risk actions like publishing, purchasing, or sharing personal data.</li>\n    </ul>\n   </blockquote>\n   <p>I really hate being stop energy on this topic. The demand for browser automation driven by LLMs is significant, and I can see why. Anthropic's approach here is the most open-eyed I've seen yet but it still feels doomed to failure to me.</p>\n   <p>I don't think it's reasonable to expect end users to make good decisions about the security risks of this pattern.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/8975/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文 критически 评论 Anthropic 的 Chrome 版 Claude 扩展，认为即使有缓解措施，由于提示注入风险，代理式浏览器扩展本质上是不安全的。",
+  "oneSentenceSummary": "本文 критически 评论 Anthropic 的 Chrome 版 Claude 扩展，认为即使有缓解措施，由于提示注入风险，代理式浏览器扩展本质上是不安全的。",
+  "summary": "本文对 Anthropic 新发布的 Chrome 版 Claude 扩展（仅限受邀预览）的安全性表示强烈怀疑。作者 Simon Willison 重申了他认为代理式浏览器扩展的概念本身存在缺陷，并且无法安全构建。虽然 Anthropic 的博客文章承认了重大的安全风险，特别是提示注入攻击，并已实施缓解措施，但作者强调，在“自动模式”下 11.2% 的攻击成功率仍然是灾难性的失败。尽管 Anthropic 建议采用更注重手动操作的默认配置，需要站点级别的权限和操作确认，但作者认为，期望用户可靠地管理安全决策是不合理的，注定该模式失败。",
+  "mainPoints": [
+    {
+      "point": "类似 Claude for Chrome 的代理式扩展存在内在安全漏洞。",
+      "explanation": "作者认为，由于无法缓解诸如提示注入攻击之类的风险，AI 代理直接在浏览器中运行的基本概念本质上是不安全的。"
+    },
+    {
+      "point": "尽管 Anthropic 采取了缓解措施，但 Claude for Chrome 仍然表现出显著的提示注入攻击成功率。",
+      "explanation": "即使采取了安全措施，该扩展在“自动模式”下的 11.2% 的失败率也被认为是灾难性的，表明缺乏针对恶意指令的可靠保护。"
+    },
+    {
+      "point": "依靠最终用户来管理 AI 浏览器扩展的安全风险是不切实际且有缺陷的方法。",
+      "explanation": "作者认为，即使具有细粒度的权限和操作确认，也不能期望用户始终如一地对复杂的 AI 交互做出合理的安全决策。"
+    }
+  ],
+  "keyQuotes": [
+    "我强烈认为代理式浏览器扩展的 *整个概念* 存在致命缺陷，并且无法安全构建。",
+    "提示注入攻击可能导致 AI 删除文件、窃取数据或进行金融交易。这不是猜测：我们已经进行了“红队”实验来测试 Claude for Chrome，并且在没有缓解措施的情况下，我们发现了一些令人担忧的结果。",
+    "我认为 11.2% 仍然是灾难性的失败率。",
+    "我不认为期望最终用户对这种模式的安全风险做出正确的决定是合理的。"
+  ],
+  "tags": [
+    "AI 安全",
+    "提示注入",
+    "浏览器扩展",
+    "大型语言模型",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 342,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756248205000,
+  "publishDateStr": "2025-08-26",
+  "publishDateTimeStr": "2025-08-26 22:43:25"
+}

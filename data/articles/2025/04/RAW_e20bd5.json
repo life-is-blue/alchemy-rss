@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e20bd5",
+  "title": "我是如何高效翻译 65 页 Google 官方提示工程白皮书 PDF 文件的",
+  "url": "https://baoyu.io/blog/efficiently-translate-google-prompt-engineering-pdf",
+  "date": "2025-04-14 15:33:43",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <img src=\"https://baoyu.io/uploads/2025-04-14/assets_task_01jrteb8y8eaqb21qrafb2k5ff_img_3.webp\" alt=\"我是如何高效翻译 65 页 Google 官方提示工程白皮书 PDF 文件的\" class=\"mt-2 mb-6 rounded-xl border bg-muted transition-colors w-full\" loading=\"lazy\">\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"pojm65vhpb\">前几天翻译 Google 官方提示工程白皮书 PDF 的时候，尝试了一些自动化的方法来提升效率，分享一些我翻译 PDF 的经验和心得。</p>\n   <p data-id=\"kbh91j6red\">首先我个人比较排斥保持排版的翻译方式，因为 PDF 在翻译后，文字长度不一致会导致排版很难看，忽大忽小；另外翻译的时候由于布局导致的文字被强行分割，导致上下文不完整会影响翻译质量。</p>\n   <p data-id=\"euubyhsq7u\">我在翻译 PDF 时，会把 PDF 先转成 Markdown，再基于 Markdown 去翻译，翻译好了基于翻译好的 Markdown 再去重新生成 PDF，对于文字、表格、图片都能很好的保留，主要缺点是布局格式保留的不是很好，不过我翻译的通常是文字图表为主的，所以影响不大。</p>\n   <h2 data-id=\"z7w9jzl5c9\" id=\"z7w9jzl5c9\" data-toc-id=\"z7w9jzl5c9\">如何将 PDF 转 Markdown？</h2>\n   <p data-id=\"ybsoqwfogy\">我常用的 PDF 转 Markdown 主要有两种方式：</p>\n   <p data-id=\"lydt7tizhw\">一种是直接使用多模态的大语言模型去生成 Markdown</p>\n   <p data-id=\"ly9z926zlk\">其中 Gemini 效果最好，OCR 能力强上下文窗口长度大，尤其是最新的 Gemini 2.5 Pro，效果非常好，如果你能访问 AI Studio （aistudio.google.com），每天有很多免费额度，几乎是不用花钱的。如果已经是 Gemini 订阅用户，Gemini 上用 Gemini 2.5 Pro 也很方便。</p>\n   <p data-id=\"he0z8a2mgl\">使用方法很简单，上传 PDF 文件，提示词参考：</p>\n   <blockquote data-id=\"2wjexjh6wj\">\n    <p data-id=\"9z0pgwtuze\">帮我把这个PDF转成Markdown，保留所有内容不要删减</p>\n   </blockquote>\n   <img src=\"https://baoyu.io/uploads/2025-04-14/Gemini-04-14-2025_09_42_AM.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"8fq8hu9ijk\">这种方式优点是操作简单方便，表格也能很好的保留，缺点是 PDF 不能太大，几十页以后可能就无法正常提取了，另外 PDF 内的图片也无法帮你提取，需要手动去截图或者工具提取。</p>\n   <p data-id=\"th8hl6l81w\">一种是使用第三方的 API，我试下来三家的比较好：</p>\n   <p data-id=\"00czxm4acb\">mineru：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"http://mineru.net\">mineru.net</a></p>\n   <p data-id=\"m4lgemtcmy\">开源免费，在线就可以使用，图文并茂，效果是我测试下来最好的，单个文档不能超过200兆600页，但足够用了。</p>\n   <img src=\"https://baoyu.io/uploads/2025-04-14/1744649995229.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"13dy3t7oxr\">LlamaIndex 的 LlamaParse：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.llamaindex.ai/llamaparse\">https://www.llamaindex.ai/llamaparse</a> 好处是有个 UI，直接上传 PDF 就可以生成 Markdown，图片也可以单独下载； 缺点是计费方式不灵活，只有包月的方式，不能按量付费，好在免费额度够大，可以分析好多页</p>\n   <img src=\"https://baoyu.io/uploads/2025-04-14/1744650005835.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"vdzx21s7gk\">Mistra 的 MistraOCR：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://mistral.ai/news/mistral-ocr\">https://mistral.ai/news/mistral-ocr</a> 好处是计费灵活，可以按照使用量付费，也可以生成 Markdown 和提取图片（但是我没成功过） 缺点是没有提供 UI，需要借助自己写代码或者用开源项目辅助</p>\n   <p data-id=\"2mb1fxejjn\">这种方式好处就是无论多大的 PDF 文件都能解析，另外 PDF 内置的图片也可以提取下来（有些 PDF 也不行）。</p>\n   <h2 data-id=\"pcruruvcl8\" id=\"pcruruvcl8\" data-toc-id=\"pcruruvcl8\">如何翻译 Markdown？</h2>\n   <p data-id=\"ueceg35ulo\">翻译 Markdown 很简单，直接把要翻译的 Markdown 给你喜欢的大语言模型，在开头或者结尾写一句提示词：</p>\n   <blockquote data-id=\"orj44zm1ce\">\n    <p data-id=\"7ct9eprfzr\">请把输入的内容用简体中文重写，保持原有 Markdown 格式不变无删减，内容通俗易懂</p>\n   </blockquote>\n   <p data-id=\"w5z7jegop8\">但是如果 Markdown 内容很长，就需要手动分块，一次翻译一部分，最后手动合并。至于模型能翻译多长，取决于模型本身，翻译长度表现最好是 Gemini 2.5 Pro，最差是 GPT-4.5，不过我觉得 GPT-4.5 翻译效果是最好的，所以很多时候我宁愿手动拆分用 GPT-4.5 一块一块的翻译。</p>\n   <p data-id=\"sr7k3q2xnc\">至于翻译的一致性，可以在翻译的提示词里面加上术语表，比如：</p>\n   <blockquote data-id=\"tsaj6s8sw4\">\n    <p data-id=\"k2g81gjxia\">请将输入的内容用中文重写，尊重原意，让它通俗易懂适合普通人群，无删减，人名不翻译，词汇表： AI Agent -&gt; AI 智能体 LLM -&gt; 大语言模型</p>\n   </blockquote>\n   <p data-id=\"sr3dh0z913\">或者翻译完了手动替换一下。</p>\n   <p data-id=\"8qs4pcbsms\">上面的解析 Markdown 再用 Markdown 翻译是比较准确翻译的方法，就是比较繁琐。如果你的 PDF 不是很大，也可以用大语言模型一键翻译。</p>\n   <p data-id=\"wzgx5y3kp3\">如果 PDF 文件内容不长，比如 10 页以内（具体根据模型不同有所差异，需要多试试），直接让模型翻译并输出 Markdown 即可。</p>\n   <p data-id=\"u74svmmpps\">如果 PDF 文件内容比较长，但又不是特别长，比如我翻译的 65 页 Google 官方提示工程白皮书，这就有个秘笈了：用 Deep Research 帮你翻译长 PDF。</p>\n   <p data-id=\"iajjzp23us\">绝大部分只支持 Deep Research 可以写调研报告，不知道 Deep Research 实际上还能做一些其他任务，比如翻译、写代码。由于 Deep Research 有一个临时的本地存储，以及它的模型窗口通常都很长，所以对于长内容的翻译，它足以胜任。比如 64 页的 PDF 如果是普通会话，是无法翻译的，但是在 Deep Research 里面可以轻松搞定。</p>\n   <p data-id=\"nn5109let9\">但是 Deep Research 里面无法上传附件，你只能把 PDF 放到一个公网可以访问到的地址，比如 GitHub Pages，S3 等，然后提供 URL 给它翻译。 提示词很简单：</p>\n   <blockquote data-id=\"bsdgqav544\">\n    <p data-id=\"rb0yhfwdv1\">请帮我把这个PDF完整的翻译成中文，输出为Markdown格式</p>\n    <p data-id=\"8ohuoq26bq\">PDF地址：{pdf url}</p>\n   </blockquote>\n   <p data-id=\"u2g3wsulfb\">Deep Research 可以借助浏览器阅读并翻译 PDF 内容。</p>\n   <img src=\"https://baoyu.io/uploads/2025-04-14/Gemini-04-14-2025_10_19_AM.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"jv4xaf8dcr\">OpenAI 的 DeepResearch 和 Google Gemini 的 DeepResearch 都可以胜任这个长 PDF 翻译任务，但是 Gemini 的 DeepResearch 翻译结果更好。另外 Gemini 的结果可以直接导出到 Google Doc，然后下载成 PDF，OpenAI 的 DeepResearch 你需要复制成 Markdown，然后去掉一些不必要的引用链接，再去导出，相对麻烦很多。</p>\n   <img src=\"https://baoyu.io/uploads/2025-04-14/PDF翻译请求-04-14-2025_10_20_AM.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"kfxz9s8jx6\">这里是我当时分别用 OpenAI 的 DeepResearch 和 Google 的 DeepResearch 翻译的结果会话链接，可以对比参考：</p>\n   <ul>\n    <li>\n     <p data-id=\"boqrecmfq4\">Google DeepResearch：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://g.co/gemini/share/7537a1fecca8\">https://g.co/gemini/share/7537a1fecca8</a></p>\n    </li>\n    <li>\n     <p data-id=\"mkwh33te09\">OpenAI DeepResearch：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://chatgpt.com/share/67fd2597-843c-800f-811c-eb0d9047f71c\">https://chatgpt.com/share/67fd2597-843c-800f-811c-eb0d9047f71c</a></p>\n    </li>\n   </ul>\n   <p data-id=\"b38gphpt0r\">注意用 DeepResearch 翻译也不是无限长度的，依旧受限于其产品长度限制，65页已经是接近极限的长度了，更长建议就要拆分成多个小 PDF 去翻译了。</p>\n  </div>\n  <hr class=\"mt-12\">\n  <div class=\"flex justify-center py-6 lg:py-10\">\n   <a class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2\" href=\"https://baoyu.io/translations\"> \n    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-chevron-left mr-2 h-4 w-4\">\n     <path d=\"m15 18-6-6 6-6\"></path>\n    </svg>See all posts \n   </a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "分享了将 PDF 高效翻译为 Markdown 的流程，重点推荐 Gemini 和 Deep Research 工具。",
+  "oneSentenceSummary": "分享了将 PDF 高效翻译为 Markdown 的流程，重点推荐 Gemini 和 Deep Research 工具。",
+  "summary": "本文作者分享了高效翻译 Google 提示工程白皮书 PDF 的实践经验。作者倾向于将 PDF 转换为 Markdown 格式再进行翻译，避免排版错乱和上下文分割问题。文章介绍了两种 PDF 转 Markdown 的方法：使用 Gemini 等大语言模型直接生成 Markdown，以及使用 Mineru、LlamaParse 等第三方 API。针对 Markdown 翻译，推荐使用 Gemini 2.5 Pro 或 GPT-4.5，并提出通过术语表保证翻译一致性。对于较长的 PDF 文档，作者推荐使用 Deep Research 功能，但需注意长度限制。文章还对比了 OpenAI 和 Google 的 Deep Research 翻译效果，推荐使用 Gemini。使用这些方法可以显著提高 PDF 翻译效率和质量。",
+  "mainPoints": [
+    {
+      "point": "PDF 转 Markdown 能有效提升翻译质量和效率",
+      "explanation": "避免了排版问题导致的翻译困难，保证上下文完整性，方便后续编辑和格式转换。"
+    },
+    {
+      "point": "Deep Research 是翻译长 PDF 的有效工具",
+      "explanation": "可以借助浏览器阅读并翻译 PDF 内容，但受限于产品长度限制，建议拆分翻译超长文档。"
+    },
+    {
+      "point": "Gemini 2.5 Pro 在 PDF 转 Markdown 和翻译方面表现出色",
+      "explanation": "OCR 能力强，上下文窗口长度大，尤其适合处理长文档，且提供免费额度。"
+    }
+  ],
+  "keyQuotes": [
+    "我在翻译 PDF 时，会把 PDF 先转成 Markdown，再基于 Markdown 去翻译，翻译好了基于翻译好的 Markdown 再去重新生成 PDF",
+    "请把输入的内容用简体中文重写，保持原有 Markdown 格式不变无删减，内容通俗易懂",
+    "由于 Deep Research 有一个临时的本地存储，以及它的模型窗口通常都很长，所以对于长内容的翻译，它足以胜任"
+  ],
+  "tags": [
+    "LLM",
+    "翻译",
+    "自动化翻译",
+    "提示工程",
+    "Gemini"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1705,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1744644823000,
+  "publishDateStr": "2025-04-14",
+  "publishDateTimeStr": "2025-04-14 15:33:43"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_6dfb12",
+  "title": "AI 上周要闻 #319 - GPT-5 ， 1 美元模型面向美国， DINOv3 ，科技就业",
+  "url": "https://lastweekin.ai/p/last-week-in-ai-319-gpt-5-1-models",
+  "date": "2025-08-16 13:02:31",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <h3 class=\"header-anchor-post\">Top News</h3>\n  <h4 class=\"header-anchor-post\"><a href=\"https://www.wired.com/story/openais-gpt-5-is-here/\" rel>OpenAI Finally Launched GPT-5. Here's Everything You Need to Know</a></h4>\n  <div class=\"captioned-image-container\">\n   <figure>\n    <a target=\"_blank\" href=\"https://substackcdn.com/image/fetch/$s_!qdXB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png\" data-component-name=\"Image2ToDOM\" rel class=\"image-link image2 is-viewable-img\"> \n     <div class=\"image2-inset\">\n      <picture><source type=\"image/webp\" srcset=\"https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 424w, https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 848w, https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 1272w, https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 1456w\" sizes=\"100vw\"><img src=\"https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png\" width=\"1401\" height=\"575\" data-attrs=\"{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png&quot;,&quot;srcNoWatermark&quot;:null,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:575,&quot;width&quot;:1401,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:534723,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:false,&quot;topImage&quot;:true,&quot;internalRedirect&quot;:&quot;https://lastweekin.ai/i/171108952?img=https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png&quot;,&quot;isProcessing&quot;:false,&quot;align&quot;:null,&quot;offset&quot;:false}\" alt srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/46150f80-4f07-46a8-70d7-a62842bf6b00/public 424w, https://image.jido.dev/20250816143720_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 848w, https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 1272w, https://image.jido.dev/20250816140753_https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fa4a25448-38f2-4449-bf1b-44a08f9febe7_1401x575.png 1456w\" sizes=\"100vw\" fetchpriority=\"high\" class=\"sizing-normal\"></picture>\n      <div class=\"image-link-expand\">\n       <div class=\"pencraft pc-display-flex pc-gap-8 pc-reset\">\n        <div class=\"pencraft pc-reset icon-container restack-image\">\n         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-refresh-cw\">\n          <path d=\"M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8\"></path><path d=\"M21 3v5h-5\"></path><path d=\"M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16\"></path><path d=\"M8 16H3v5\"></path>\n         </svg>\n        </div>\n        <div class=\"pencraft pc-reset icon-container view-image\">\n         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-maximize2 lucide-maximize-2\">\n          <polyline points=\"15 3 21 3 21 9\"></polyline><polyline points=\"9 21 3 21 3 15\"></polyline><line x1=\"21\" x2=\"14\" y1=\"3\" y2=\"10\"></line><line x1=\"3\" x2=\"10\" y1=\"21\" y2=\"14\"></line>\n         </svg>\n        </div>\n       </div>\n      </div>\n     </div> \n    </a>\n   </figure>\n  </div>\n  <p><strong>Related</strong><span>:</span></p>\n  <ul>\n   <li>\n    <p><a href=\"https://techcrunch.com/2025/08/08/openai-priced-gpt-5-so-low-it-may-spark-a-price-war/\" rel>OpenAI priced GPT-5 so low, it may spark a price war</a></p>\n   </li>\n   <li>\n    <p><a href=\"https://techcrunch.com/2025/08/08/sam-altman-addresses-bumpy-gpt-5-rollout-bringing-4o-back-and-the-chart-crime/\" rel>Sam Altman addresses ‘bumpy’ GPT-5 rollout, bringing 4o back, and the ‘chart crime’</a></p>\n   </li>\n   <li>\n    <p><a href=\"https://www.theverge.com/news/756980/openai-chatgpt-users-mourn-gpt-5-4o\" rel>ChatGPT is bringing back 4o as an option because people missed it</a></p>\n   </li>\n   <li>\n    <p><a href=\"https://arstechnica.com/information-technology/2025/08/the-gpt-5-rollout-has-been-a-big-mess/\" rel>The GPT-5 rollout has been a big mess</a></p>\n   </li>\n   <li>\n    <p><a href=\"https://techcrunch.com/2025/08/12/chatgpts-model-picker-is-back-and-its-complicated/\" rel>ChatGPT’s model picker is back, and i…</a></p>\n   </li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本文是 AI 行业每周重要动态的简明摘要，内容涵盖新模型发布、市场变化、商业趋势和科技就业形势等。",
+  "oneSentenceSummary": "本文是 AI 行业每周重要动态的简明摘要，内容涵盖新模型发布、市场变化、商业趋势和科技就业形势等。",
+  "summary": "本期《AI 上周要闻》总结了人工智能领域的关键事件。主要新闻包括 OpenAI 的 GPT-5 发布，具有多个变体、激进的定价以及引发用户强烈反馈并促使 OpenAI 迅速做出调整的首次亮相。 Anthropic 还宣布以 1 美元的价格向美国政府提供 Claude 服务，进一步加剧了与 OpenAI 之间的竞争。文章强调了一种新兴的“人工智能生产力悖论”，即尽管 AI 得到广泛采用，但由于实施成本、数据质量问题和集成挑战，切实的商业收益仍然难以实现。此外，它还探讨了生成式 AI 和近期裁员对科技就业市场（尤其是初级程序员）的重大影响。摘要还涵盖了各种 AI 工具（如 Meta 的 DINOv3 和 Claude/Gemini 记忆功能）、商业新闻（Cohere 的融资、特斯拉 Dojo 关闭、Meta 收购）以及近期 AI 研究论文的更新。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 的 GPT-5 发布带来了新的变体和激进的定价，旨在颠覆 LLM 市场。",
+      "explanation": "GPT-5 包括 Pro 、 Mini 和 Thinking 等多个变体，定价具有竞争力，并减少了幻觉现象。尽管最初发布面临挑战，但其定价策略可能会引发主要 AI 模型提供商之间的价格战。"
+    },
+    {
+      "point": "AI 行业面临“生产力悖论”，因为许多企业仍然难以从生成式 AI 中获得显著的 ROI 。",
+      "explanation": "尽管人工智能技术的采用率很高，但由于实施成本高昂、数据质量存在问题，以及需要人工监督等因素，许多公司难以将 AI 试点项目转化为生产级别且节省成本的实际部署。"
+    },
+    {
+      "point": "生成式 AI 和大范围裁员正在收紧科技就业市场，尤其是对初级程序员而言。",
+      "explanation": "AI 助手自动化日常编码任务，加上公司收紧开支，正在减少对初级角色的需求，导致新计算机科学毕业生的竞争加剧。"
+    },
+    {
+      "point": "主要的 AI 公司正在加剧对政府合同和企业人才的竞争。",
+      "explanation": "Anthropic 向美国政府提供的 1 美元报价直接挑战了 OpenAI ，而收购和团队招聘（如 Anthropic 抢走 Humanloop ）突显了对 AI 人才和市场份额的激烈争夺。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 已经开始在 ChatGPT 中推出 GPT-5 ，具有多个变体和激进的定价，将其标榜为“更智能、更快、更有用、更准确”，并且显著减少了幻觉。",
+    "Anthropic 宣布将以 1 美元的价格，向美国政府的行政、立法和司法三个部门提供为期一年的 Claude 服务，此举进一步加剧了与 OpenAI 竞争，后者此前已向联邦行政部门提供 1 美元的 ChatGPT 企业版。",
+    "围绕生成式 AI 出现了一种新的“生产力悖论”：尽管大规模采用，但可衡量的商业收益仍然难以实现。",
+    "过去十年间，计算机科学教育蓬勃发展，但与此同时，科技行业的就业市场却急剧萎缩。人工智能编码工具的出现和大范围裁员降低了对初级程序员的需求。"
+  ],
+  "tags": [
+    "AI 行业新闻",
+    "大型语言模型",
+    "AI 模型",
+    "计算机视觉",
+    "OpenAI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 91,
+  "wordCount": 64,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1755349351000,
+  "publishDateStr": "2025-08-16",
+  "publishDateTimeStr": "2025-08-16 13:02:31"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_255734",
+  "title": "IntelliJ IDEA 2025.2 发布！| IntelliJ IDEA 博客",
+  "url": "https://blog.jetbrains.com/idea/2025/08/intellij-idea-2025-2/",
+  "date": "2025-08-04 17:08:31",
+  "author": "Maria Kosukhina",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>IntelliJ IDEA 2025.2 brings powerful updates to help you stay productive, write better code, and confidently adopt the latest technologies.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" fetchpriority=\"high\" width=\"1600\" height=\"900\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/07/image-33.png\" alt=\"\" class=\"wp-image-588326\">\n  </figure>\n  <p>You can download this version from our <a href=\"https://www.jetbrains.com/idea/download/\" target=\"_blank\" rel=\"noopener\">website</a>, update directly from within the IDE, use the free <a href=\"https://www.jetbrains.com/toolbox-app/\" target=\"_blank\" rel=\"noopener\">Toolbox App</a>, or install it via snap packages for Ubuntu.</p>\n  <p>This blog post gives you a quick overview of the release highlights. For the full list of the latest features and their demos, check out our newly redesigned What’s New page.</p>\n  <p align=\"center\"><a class=\"jb-download-button\" href=\"https://www.jetbrains.com/idea/whatsnew/\" target=\"_blank\" rel=\"noopener\">Explore the What’s New page</a></p>\n  <h2 class=\"wp-block-heading\">Release highlights at a glance</h2>\n  <p><strong>Smarter AI-assisted workflows</strong></p>\n  <ul>\n   <li>AI Assistant: New capabilities and better accuracy, now available for free</li>\n   <li>Junie: Enhanced performance and MCP client support</li>\n   <li>IntelliJ IDEA as an MCP server for third-party AI agents</li>\n   <li>Smarter, context-aware assistance for database workflows<br></li>\n  </ul>\n  <p><strong>Support for cutting-edge technologies</strong></p>\n  <ul>\n   <li>Java 25 Early Access</li>\n   <li>Maven 4</li>\n   <li>JSpecify</li>\n  </ul>\n  <p><strong>Major experience improvements for Spring developers</strong></p>\n  <ul>\n   <li>Spring Debugger plugin</li>\n   <li>Spring Modulith support</li>\n  </ul>\n  <p></p>\n  <p><strong>Other notable updates</strong></p>\n  <ul>\n   <li>Virtual thread debugging</li>\n   <li>Support for new Scala features</li>\n   <li>Improved experience when your subscription expires</li>\n   <li>Database workflow enhancements&nbsp;&nbsp;</li>\n   <li>Web development updates&nbsp;</li>\n   <li>Native Bazel support</li>\n  </ul>\n  <h2 class=\"wp-block-heading\">A new way to explore what’s new and what’s fixed</h2>\n  <p>With this release, we’re introducing a new approach to sharing updates, designed to make our communication more focused and transparent.</p>\n  <p>We’re now splitting release information into two distinct but equally important parts:</p>\n  <ul>\n   <li>The <strong>What’s New</strong> page provides a curated overview of the most impactful new features and capabilities – everything that expands what you can do with the IDE.<br></li>\n   <li>The <strong>What’s Fixed</strong> blog post is dedicated to meaningful quality-of-life improvements, from performance boosts and UI refinements to long-requested bug fixes and workflow enhancements that make your IDE feel faster, smoother, and more reliable.<br></li>\n  </ul>\n  <p>The <em>What’s Fixed in IntelliJ IDEA 2025.2</em> blog post will be published shortly – stay tuned!</p>\n  <h2 class=\"wp-block-heading\">Try it now and watch our upcoming overview video!</h2>\n  <p>Get IntelliJ IDEA 2025.2 today and explore the new features for yourself.</p>\n  <p align=\"center\"><a class=\"jb-download-button\" href=\"https://www.jetbrains.com/idea/download/\" target=\"_blank\" rel=\"noopener\">Download IntelliJ IDEA 2025.2</a></p>\n  <p>We’ll be hosting a special episode of <strong>IntelliJ IDEA Talk</strong>, where our Developer Advocates will demo and discuss the release highlights in detail, sharing their thoughts on how these updates can improve your daily development workflow. <a href=\"https://www.youtube.com/live/_nt-z0FS3tM\" target=\"_blank\" rel=\"noopener\">Check out the agenda and set a reminder</a>! See you there!</p>\n  <figure class=\"wp-block-image size-full\">\n   <a href=\"https://www.youtube.com/live/_nt-z0FS3tM\" target=\"_blank\" rel=\"noopener\"><img decoding=\"async\" width=\"1300\" height=\"400\" src=\"https://blog.jetbrains.com/wp-content/uploads/2025/07/image-34.png\" alt=\"\" class=\"wp-image-588354\"></a>\n  </figure>\n  <p>As always, your feedback is important to us. Let us know what you think about the new features in this release – your input helps us shape IntelliJ IDEA so it works best for you.</p>\n  <p>Join the conversation on <a href=\"https://x.com/intellijidea\" target=\"_blank\">X</a>, <a href=\"https://www.linkedin.com/showcase/intellijidea/\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>, or <a href=\"https://bsky.app/profile/intellijidea.com\" target=\"_blank\" rel=\"noopener\">Bluesky</a>, and if you run into any issues, please report them via <a href=\"https://youtrack.jetbrains.com/issues/IDEA\" target=\"_blank\" rel=\"noopener\">YouTrack</a>. For the complete list of changes in the 2025.2 version, refer to <a href=\"https://youtrack.jetbrains.com/articles/IDEA-A-2100662485/IntelliJ-IDEA-2025.2-252.23892.409-build-Release-Notes\" target=\"_blank\" rel=\"noopener\">the release notes</a>.</p>\n  <p>Thank you for using IntelliJ IDEA, and happy developing!</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/idea/2025/07/bazel-ga-release/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Bazel Plugin Release: General Availability</a>\n  </div>\n  <div class=\"banner\">\n   <a href=\"https://jb.gg/blog-idea-download\"><img src=\"https://admin.blog.jetbrains.com/wp-content/uploads/2025/02/intellij-idea-blog-banner-pro.png\"></a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "IntelliJ IDEA 2025.2 引入增强的 AI 辅助功能、Java 25 的早期访问以及 Spring 开发者的重大改进，旨在提高生产力并支持尖端技术。",
+  "oneSentenceSummary": "IntelliJ IDEA 2025.2 引入增强的 AI 辅助功能、Java 25 的早期访问以及 Spring 开发者的重大改进，旨在提高生产力并支持尖端技术。",
+  "summary": "本文宣布了 IntelliJ IDEA 2025.2 的发布，重点介绍了各个领域的关键更新。它强调了通过 AI 助手和 Junie 的新功能实现的更智能的 AI 辅助工作流程，以及对第三方 AI 代理的支持。新版本还包括对 Java 25、Maven 4 和 JSpecify 等尖端技术的早期访问。Spring 开发者将受益于重大的体验改进，包括新的 Spring 调试器插件和 Spring 模块化应用支持。其他值得注意的更新包括虚拟线程调试、新的 Scala 功能和数据库增强功能。该帖子还详细介绍了一种新的发布沟通方式，将信息分为“新增功能”页面（针对功能）和“已修复内容”博客文章（针对质量改进）。它鼓励用户下载新版本，并提供指向其他资源的链接，例如详细的“新增功能”页面和即将发布的概述视频。",
+  "mainPoints": [
+    {
+      "point": "增强的 AI 集成通过改进的 AI 助手功能显著提高生产力。",
+      "explanation": "新的人工智能功能，包括更高的准确性和 AI 助手的免费可用性，旨在简化编码工作流程，提供更智能、上下文感知的帮助，并扩展到数据库操作，例如查询优化。"
+    },
+    {
+      "point": "该版本为 Java 25 等新兴技术提供早期访问和全面支持。",
+      "explanation": "这确保了开发人员可以利用最新的语言功能和构建工具，使他们的项目保持现代和面向未来，并促进尽早采用尖端技术。"
+    },
+    {
+      "point": "有针对性的 Spring 开发者改进，例如 Spring 调试器插件，增强了开发体验。",
+      "explanation": "这些专门的更新解决了常见痛点，并引入了新功能，从而使 Spring 框架开发人员能够更轻松、更高效地调试和管理模块化应用程序。"
+    }
+  ],
+  "keyQuotes": [
+    "IntelliJ IDEA 2025.2 带来了强大的更新，可帮助您保持高效、编写更好的代码并自信地采用最新技术。",
+    "AI 助手：新功能和更高的准确性，现在可以免费使用。",
+    "在此版本中，我们引入了一种新的更新共享方法，旨在使我们的沟通更加集中和透明。",
+    "“新增功能”页面提供了对最具影响力的新功能和特性的精选概述——所有这些都扩展了您在 IDE 中可以实现的功能。"
+  ],
+  "tags": [
+    "集成开发环境",
+    "IntelliJ IDEA",
+    "JetBrains",
+    "软件开发",
+    "AI助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 451,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1754327311000,
+  "publishDateStr": "2025-08-04",
+  "publishDateTimeStr": "2025-08-04 17:08:31"
+}

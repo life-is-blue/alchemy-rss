@@ -1,0 +1,55 @@
+{
+  "id": "RAW_4f4d6f",
+  "title": "庞若鸣交班陈智峰，苹果发布 2025 基础模型技术报告 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-18-11",
+  "date": "2025-07-18 09:03:46",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>Apple Intelligence 进入新的一章。</p>\n  </blockquote>\n  <p>近日，苹果发布了 2025 年 Apple Intelligence 基础语言模型技术报告。</p>\n  <p>刚刚加入 Meta 的前苹果 AI 负责人庞若鸣（Ruoming Pang）发出多条推文进行了介绍。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/21c6a053-cdc1-4072-f3c0-81efa702a100/public\" data-ratio=\"0.4954022988505747\" data-s=\"300,640\" data-type=\"png\" data-w=\"870\" type=\"block\" data-imgfileid=\"503496851\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/8365f316-1bd2-4c6f-be8f-db2fb0022cf8/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在报告中，苹果详细介绍了训练新一代模型所用的数据、模型架构、训练方案、优化推理技术手段，以及与同类模型对比的评估结果。文中重点展示了苹果如何在提升用户价值的同时实现功能扩展与质量优化，并大幅提高设备端和私有云计算的运行效率。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/437691c0-15ef-42c6-5552-089b40653d00/public\" data-ratio=\"0.6657407407407407\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496852\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/012652b0-204f-4b88-a643-d686a9d79710/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>报告链接：https://machinelearning.apple.com/research/apple-foundation-models-tech-report-2025</p>\n  <p>这次苹果介绍了两种多语言、多模态基础语言模型，可为苹果设备和服务中的 Apple Intelligence 功能提供支持。其中包括：</p>\n  <p>1）通过 KV 缓存共享和 2 位量化感知训练等架构创新，针对苹果自有芯片进行了优化的 &nbsp;3B 参数设备模型；2）一种可扩展的云端模型，它结合了新型并行轨道混合专家 (PT-MoE) Transformer 和交错的全局 - 局部注意力，以便在苹果的私有云计算平台上进行有效推理。</p>\n  <p>这两款模型均通过负责任的网络爬取、授权语料库和高质量合成数据集进行大规模多语言、多模态训练，并在新的异步平台上通过监督微调和强化学习进一步优化。最终模型不仅支持多种新增语言，还能理解图像并执行工具调用。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9cfda964-d634-448e-004f-384d7f574000/public\" data-ratio=\"0.4074074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503496853\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a453043c-bf15-4e5d-86c0-05fabc44d324/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>PT-MoE 架构示意图。每个轨迹 track 由多个轨迹块组成，每个轨迹块包含固定数量的 Transformer/MoE 层。假设总层数为 L 层且轨迹块深度为 D，则同步开销可从 2L（张量并行）降低至 L/D（轨迹并行）。例如当 D = 4 时，PT 架构可将同步开销减少 87.5%。</sup></p>\n  <p><strong>PT Transformer</strong> 是苹果研究人员提出的一种新型架构。与仅包含单一顺序层堆栈的标准解码器式 Transformer 不同，该架构将模型划分为多个小型 Transformer 模块，称为轨道。每个轨道由多个堆叠的轨道块组成，每个轨道块本身都是一个 Transformer 层堆栈。这些轨道块独立处理标记数据，仅在轨道块的输入输出边界进行跨轨道同步。这种隔离设计不仅实现了轨道间的直接并行执行，还有效降低了传统 Transformer 解码器（如采用张量并行技术的模型）中常见的同步开销。这种方法被称为轨迹并行，改进了训练和推理的延迟，而不会影响模型的质量。</p>\n  <p>为实现服务器端模型的进一步扩展，苹果在每个轨道块内部引入了专家混合层（MoE），从而构建出 PT-MoE 架构。由于各 MoE 层中的专家模块仅在对应轨道内运行，通信开销可与计算过程有效重叠，从而提升训练效率。结合轨道并行性带来的轨道级独立性优势，这种设计使模型在保持低延迟的同时实现高效扩展 —— 得益于稀疏度的提升，模型运行更加轻量化。</p>\n  <p>另外为了实现现视觉理解能力，苹果引入了一个可以从输入图像中提取视觉特征的视觉编码器，在大量图像数据上进行了预训练，以提高其性能。视觉编码器包含两个关键组件：一个视觉主干，用于从输入图像中提取丰富的视觉表征；以及一个视觉语言适应模块，用于压缩视觉表征并将这些视觉特征与模型的标记表征进行对齐。</p>\n  <p>在视觉主干网络中，苹果采用了标准的视觉 Transformer（ViT-g），服务器模型为 10 亿参数；以及更高效的 ViTDet-L 主干网络，设备端模型为 3 亿参数。</p>\n  <p>设备端视觉主干网络采用了 ViTDet 架构，该架构在大多数视觉 Transformer 层中使用窗口注意力机制，仅包含三个跨窗口全局注意力层。为更有效地捕捉并整合细粒度局部细节与宏观全局上下文信息，苹果在标准 ViTDet 基础上创新性地引入了注册窗口（RW）机制。该机制通过让全局注册表（或类别）标记在参与整体全局上下文聚合前，先与图像中的不同局部窗口进行交互，从而实现对全局特征的编码。</p>\n  <p>苹果认为，端侧和云端模型配合可以满足广泛的性能和部署需求。设备端模型经过优化，能够以最低资源消耗实现低延迟推理；而服务器端模型则专为复杂任务设计，提供了高精度和可扩展性。</p>\n  <p>在人工评估基准中，苹果的模型在跨语言、文本和视觉模式上都具有不错的竞争力，甚至优于同等规模的最佳开源模型。</p>\n  <section>\n   <img data-imgfileid=\"503496854\" data-ratio=\"0.8944444444444445\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ae77bfb9-58d8-4799-b93c-a4efe4599000/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/df8f9c1a-df12-4ae5-866c-f170a5c2e9c8/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-imgfileid=\"503496855\" data-ratio=\"0.31666666666666665\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e8b7ee48-46fa-44c0-64f3-651a0b545000/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/686f1dc7-6cf1-4a66-8338-cb24b53b635d/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在技术报告中，苹果还介绍了全新推出的 Swift 核心的基础模型框架，其中集成了引导式生成、约束式工具调用和 LoRA 适配器微调三大功能模块，开发者仅需几行代码即可轻松实现这些功能的集成。</p>\n  <p><strong>该框架让开发者能够借助约 30 亿参数的设备端语言模型，着手打造可靠且具备量产级品质的生成式 AI 功能。</strong>作为 Apple Intelligence 的核心，它在摘要、实体提取、文本理解、优化、简短对话、创意内容生成等多样化文本任务中表现卓越。不过苹果表示，虽然已针对设备端模型进行了专门优化，但它并非为通用知识问答而设计。苹果鼓励应用开发者利用该框架为 APP 定制实用功能。</p>\n  <p>苹果表示，Apple Intelligence 模型的最新进展始终遵循「负责任的人工智能」的理念，通过内容过滤、地区定制评估等安全防护措施，并依托私有云计算等创新技术，切实保障用户隐私安全。</p>\n  <p>在技术报告发布之后，庞若鸣不忘感谢了所有贡献者，其中包括模型、后训练、多模态、框架 / API、项目管理人员，<strong>同时把接力棒交给了苹果 AI 的下一任负责人 Zhifeng Chen 和 Mengyu Li。</strong></p>\n  <section>\n   <img data-imgfileid=\"503496856\" data-ratio=\"0.4072398190045249\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/aa524c9a-0339-4d68-6e9a-6e2924071d00/public\" data-type=\"png\" data-w=\"884\" type=\"block\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/b8b4fda5-742f-4358-a8ef-e18f96fae9db/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>此前据媒体报道，庞若鸣加入 Meta 后，苹果大模型团队将由<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;line-height: 1.75em; margin-left: 8px; margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">陈智峰（Zhifeng Chen）负责，不过团队的管理架构将更加分散。</span></p>\n  <p>陈智峰 2000 年本科毕业于复旦大学，后于普林斯顿大学、伊利诺伊大学香槟分校获得硕士、博士学位。在加入苹果之前，陈智峰曾在谷歌长期工作，参与过 TensorFlow、Gemini、神经机器翻译系统、Palm 2 等重要研究。他和<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;line-height: 1.75em; margin-left: 8px; margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">庞若鸣、</span>吴永辉均是&nbsp;Google Brain 早期的重要成员。<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;line-height: 1.75em;margin-left: 8px;margin-right: 8px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\"><br></span></p>\n  <section>\n   <section>\n    <img data-imgfileid=\"503496857\" data-ratio=\"0.40555555555555556\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2341669b-1d30-4f6f-80db-1ca90c17c100/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 546px;height: 221px;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/fb603f47-3a92-49e4-b395-217720c7132e/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n   </section>\n   <p><sup>参考内容：</sup></p>\n   <p><sup>https://www.bloomberg.com/news/articles/2025-07-07/apple-loses-its-top-ai-models-executive-to-meta-s-hiring-spree</sup></p>\n  </section>\n </body>\n</html>",
+  "aiSummary": "苹果发布 2025 年 Apple Intelligence 基础模型技术报告，详细介绍了设备端和云端多模态模型、创新的 PT-MoE 架构及 Swift 开发者框架。",
+  "oneSentenceSummary": "苹果发布 2025 年 Apple Intelligence 基础模型技术报告，详细介绍了设备端和云端多模态模型、创新的 PT-MoE 架构及 Swift 开发者框架。",
+  "summary": "文章深入解读了苹果公司发布的 2025 年 Apple Intelligence 基础语言模型技术报告。报告揭示了苹果针对自有芯片优化的 3B 参数设备端模型，以及专为私有云计算平台设计的可扩展云端模型。这两款多语言、多模态模型均通过大规模负责任的数据训练和异步平台上的监督微调、强化学习进行优化，具备多语言支持、图像理解和工具调用能力。文章重点介绍了苹果提出的新型并行轨道混合专家（PT-MoE）Transformer 架构，以及 PT Transformer 如何通过“轨迹并行”显著提升训练和推理效率。此外，报告还阐述了视觉编码器在实现视觉理解方面的关键作用。文章强调了苹果端云协同的模型部署策略，以及全新 Swift 核心基础模型框架对开发者的赋能，使其能轻松构建生产级生成式 AI 功能。值得一提的是，苹果在模型开发中始终遵循“负责任的人工智能”理念，通过内容过滤、地区定制评估以及私有云计算等安全防护措施，切实保障用户隐私安全。最后，文章提及了苹果 AI 负责人庞若鸣的职位变动，由陈智峰接任。",
+  "mainPoints": [
+    {
+      "point": "苹果发布双轨 AI 基础模型，兼顾设备端与云端部署需求。",
+      "explanation": "苹果推出了针对自有芯片优化的 3B 参数设备端模型，以及可扩展的云端模型，旨在通过端云协同，满足不同任务对延迟、精度和算力需求，实现 Apple Intelligence 功能的高效运行。"
+    },
+    {
+      "point": "创新性 PT-MoE 架构显著提升模型训练与推理效率。",
+      "explanation": "通过引入并行轨道混合专家（PT-MoE）Transformer，苹果有效降低了同步开销，实现了轨道级并行和通信计算重叠，从而在保持低延迟的同时，实现模型的高效扩展和轻量化运行。"
+    },
+    {
+      "point": "推出 Swift 核心基础模型框架，赋能开发者构建生成式 AI 应用。",
+      "explanation": "该框架集成了引导式生成、约束式工具调用等核心功能，简化了开发流程，使得开发者能够利用苹果的设备端模型，为 APP 定制可靠且具备生产级品质的生成式 AI 功能。"
+    }
+  ],
+  "keyQuotes": [
+    "在报告中，苹果详细介绍了训练新一代模型所用的数据、模型架构、训练方案、优化推理技术手段，以及与同类模型对比的评估结果。",
+    "这次苹果介绍了两种多语言、多模态基础语言模型，可为苹果设备和服务中的 Apple Intelligence 功能提供支持。",
+    "PT Transformer 是苹果研究人员提出的一种新型架构。",
+    "该框架让开发者能够借助约 30 亿参数的设备端语言模型，着手打造可靠且具备量产级品质的生成式 AI 功能。",
+    "苹果表示，Apple Intelligence 模型的最新进展始终遵循「负责任的人工智能」的理念，通过内容过滤、地区定制评估等安全防护措施，并依托私有云计算等创新技术，切实保障用户隐私安全。"
+  ],
+  "tags": [
+    "Apple Intelligence",
+    "大语言模型",
+    "多模态AI",
+    "模型架构",
+    "混合专家模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2130,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752829426000,
+  "publishDateStr": "2025-07-18",
+  "publishDateTimeStr": "2025-07-18 09:03:46"
+}

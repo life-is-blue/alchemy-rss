@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f6985cf5",
+  "title": "Anthropic 推出用于自定义 Claude 任务的技能",
+  "url": "https://www.infoq.com/news/2025/10/anthropic-claude-skills/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-25 10:05:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has unveiled a new feature called <a href=\"https://www.anthropic.com/news/skills\">Skills</a>, designed to let developers extend Claude with modular, reusable task components. Each Skill is a self-contained capability that Claude can call upon during a conversation, such as summarizing long documents, retrieving data from APIs, or performing domain-specific computations.</p>\n   <p>The Skills feature spans Claude’s web app, the Claude Code environment, and the API, giving organizations the ability to author custom Skills through a new&nbsp;<code>/v1/skills</code> endpoint, manage versions in the console, and integrate them into their workflows.<a href=\"https://venturebeat.com/ai/how-anthropics-skills-make-claude-faster-cheaper-and-more-consistent-for?utm_source=chatgpt.com\"> </a>When a Skill is not relevant to a user’s request, Claude will bypass it, ensuring that only pertinent instructions and resources are loaded. Skills require the <a href=\"https://docs.claude.com/en/docs/agents-and-tools/tool-use/code-execution-tool\">Code Execution Tool</a>, which provides the secure environment they need to run.</p>\n   <p>According to Anthropic, Skills are defined by a schema describing their inputs, outputs, and permissions. Once defined, they can be invoked dynamically through <a href=\"https://www.claude.com/platform/api\">Claude’s API</a>, allowing seamless integration between the model and external systems. This architecture mirrors the function calling paradigm already adopted by OpenAI’s GPT models and Microsoft’s Copilot ecosystem, but Anthropic emphasizes a more transparent and auditable approach, aligning with its focus on model safety and interpretability.</p>\n   <p>In practice, a developer could create a Skill to fetch structured data from a company database, compose personalized email responses using CRM data, summarize meeting transcripts in a specific format, or trigger actions in third-party applications such as Slack or Notion. Each Skill runs within clearly defined boundaries, ensuring Claude only accesses data and executes actions explicitly allowed by the developer. This fine-grained control could make the system more appealing to enterprises seeking both flexibility and compliance.</p>\n   <p>Compared to <a href=\"https://www.infoq.com/news/2023/11/openai-gpts-custom-chatgpt/\">OpenAI’s GPTs</a>, which allow users to create and share mini-agents with custom instructions and tools, <a href=\"https://github.com/anthropics/skills\">Anthropic’s Skills</a> take a more developer-centric approach, prioritizing modularity, maintainability, and governance. Similarly, while <a href=\"https://www.infoq.com/news/2024/02/copilot-studio-powerva-available/\">Microsoft’s Copilot Studio</a> provides a visual interface for connecting AI to business data, Anthropic’s model keeps the configuration within code and schema definitions, favoring transparency and reproducibility.</p>\n   <p>Early adopters on <a href=\"https://x.com/AnthropicAI/status/1978896757489594404\">X</a> have shown excitement about the release. Developers praise the focus on clear separation between model reasoning and external actions. Tech lead <a href=\"https://x.com/RJahankohan/status/1980897978576695469\">Reza Jahankohan</a> posted:</p>\n   <blockquote>\n    <p>Claude didn’t just get smarter, it got specialized. The future of automation is personal, persistent, and free.</p>\n   </blockquote>\n   <p>Others see it as a step toward an agentic future, where models can learn new capabilities over time. Automation specialist <a href=\"https://x.com/sir4K_zen/status/1979163880216555805\">Mykhailo Sorochuk</a> shared:</p>\n   <blockquote>\n    <p>The build-your-own-agent approach is pretty exciting. Wondering how easy it is to scale these Skills without getting lost in the chaos?</p>\n   </blockquote>\n   <p>Anthropic plans to roll out more documentation, SDK examples, and community showcases as Skills evolve. For now, developers can request early access and begin experimenting with prototypes to see how Claude can adapt to specialized business and research needs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic Introduces Skills for Custom Claude Tasks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/anthropic-claude-skills/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761386700000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 为 Claude 引入了“技能 (Skills)”，使开发者能够使用模块化、可重用的任务组件来扩展人工智能，强调透明性、可审计性和精细控制，以实现专门化应用。",
+  "oneSentenceSummary": "Anthropic 为 Claude 引入了“技能 (Skills)”，使开发者能够使用模块化、可重用的任务组件来扩展人工智能，强调透明性、可审计性和精细控制，以实现专门化应用。",
+  "summary": "Anthropic 推出了“技能 (Skills)”，一项允许开发者使用独立的、可重用的任务组件增强 Claude 能力的新功能。这些技能可以在对话期间被 Claude 调用，执行诸如总结文档、检索应用程序编程接口 (API) 数据或执行特定领域计算等操作。该功能可以通过 Claude 的 Web 应用程序、代码环境和 API 访问，并提供一个新的 `/v1/skills` 端点，用于创作和管理版本。技能在安全的代码运行环境 (Code Execution Tool) 中运行，并由模式 (Schema) 定义，从而实现动态调用和与外部系统的无缝集成。虽然类似于 OpenAI 的 GPT 模型中的函数调用和微软的 Copilot 生态系统，但 Anthropic 强调了一种更透明和可审计的方法，这与其对模型安全性和可解释性的关注相一致。这种架构提供了对数据访问和操作执行的精细控制，吸引了那些优先考虑灵活性和合规性的企业。早期采用者对专业化和代理潜力表示出极大的热情，Anthropic 计划提供进一步的文档和社区支持。",
+  "mainPoints": [
+    {
+      "point": "Anthropic 的“技能 (Skills)”使开发者能够使用模块化、可重用的任务组件来扩展 Claude。",
+      "explanation": "技能允许 Claude 动态地执行特定的功能，如数据检索、总结或外部操作，从而显著增强了其多功能性和适应性，以满足专业的业务和研究需求。"
+    },
+    {
+      "point": "技能 (Skills) 功能优先考虑透明性、可审计性和精细的开发者控制。",
+      "explanation": "与竞争对手的产品不同，技能由模式 (Schema) 定义，并在明确的边界内运行，确保 Claude 只访问允许的数据和操作，使其对专注于安全和合规性的企业极具吸引力。"
+    },
+    {
+      "point": "技能 (Skills) 代表着人工智能应用朝着更加专业化和代理化的未来迈出了一步。",
+      "explanation": "通过允许 Claude 动态地调用特定能力并与外部系统集成，技能促进了复杂人工智能代理的开发，这些代理能够执行复杂的自动化工作流程和适应性智能。"
+    }
+  ],
+  "keyQuotes": [
+    "每个技能 (Skill) 都是一个独立的能力，Claude 可以在对话期间调用它，例如总结长文档、从应用程序编程接口 (API) 检索数据或执行特定领域的计算。",
+    "这种架构与 OpenAI 的 GPT 模型和微软的 Copilot 生态系统已经采用的函数调用范例相似，但 Anthropic 强调了一种更透明和可审计的方法，这与其对模型安全性和可解释性的关注相一致。",
+    "每个技能 (Skill) 都在明确定义的边界内运行，确保 Claude 只访问开发者明确允许的数据和执行操作。这种精细的控制可以使该系统对寻求灵活性和合规性的企业更具吸引力。",
+    "Claude 不仅仅变得更聪明，它还变得专业化了。自动化的未来是个性化的、持久的和自由的。"
+  ],
+  "tags": [
+    "人工智能开发",
+    "大型语言模型 (LLM) 代理",
+    "函数调用 (Function Calling)",
+    "Claude 技能 (Skills)",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 454,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761386700000,
+  "publishDateStr": "2025-10-25",
+  "publishDateTimeStr": "2025-10-25 10:05:00"
+}

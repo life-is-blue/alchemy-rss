@@ -1,0 +1,63 @@
+{
+  "id": "RAW_f77bfd0",
+  "title": "Agent 开发的上半场: 环境、Tools 和 Context 如何决定 Agent｜对谈 Sheet0 创始人王文锋",
+  "url": "https://www.xiaoyuzhoufm.com/episode/68032a401f1db84a563d5d83",
+  "date": "2025-04-19 14:00:00",
+  "author": "42章经",
+  "siteName": "42章经",
+  "content": "<p><strong><span>活动预告🥳：4 月 26 日，我们会请到 </span></strong><a href=\"http://sheet0.com\" data-url=\"http://sheet0.com\"><span>sheet0.com</span></a><strong><span> 创始人文锋做一场线下活动，大家记得翻到 shownotes 末尾查看报名信息！</span></strong></p><span></span>\n<p><span>关于 Agent 这个话题，我自己有一些核心在思考的问题，相信这些也是很多人同样会有疑问的地方，这期播客中我们就这些问题展开了讨论，并基本得到了一些答案：</span></p><span></span>\n<p><span>1）怎么定义 Agent，Agent 最重要的是什么</span></p><span></span>\n<p><span>2）今天的 Agent 和两年前的 Agent 的区别是什么</span></p><span></span>\n<p><span>3）如何简单快速理解 Function Call，Coding Agent，MCP，A2A，Computer Use，Browser Use 等概念</span></p><span></span>\n<p><span>4）不同方式的区别是什么，有什么优劣之分吗</span></p><span></span>\n<p><span>5）怎么看通用 Agent 和垂直 Agent 的区别，终局是什么</span></p><span></span>\n<p><span>6）AI Coding 和 Agent 最终会是一件事吗，或者二者会有什么关联</span></p><span></span>\n<p><span>7）Workflow 和 Agent 的区别和终局</span></p><span></span>\n<p><span>8）RL 这件事在 Agent 里的重要程度是什么，一家公司（尤其是做 Agent 的创业公司）到底该如何使用 RL</span></p><span></span>\n<p><span>9）大模型自身的 Agent 比如 OpenAI Operator 和其他应用产品的区别是什么，最终市场形态会怎样</span></p><span></span>\n<p><span>10）如何快速判断一家 Agent 公司做得好不好</span></p><span></span>\n<p><span>另外，在整段讨论中，本期嘉宾文锋基于长时间对 Agent 的研究和实操，还提出了很多理解和分析 Agent 的框架和关键要素，以及在接近结尾部分留下了让我非常有启发的一句话：AI Coding 是大模型的灵巧手。</span></p><span></span>\n<p><span>【</span><strong><span>人类博物馆】</span></strong></p><span></span>\n<p><strong><span>导游：</span></strong><span>曲凯，42章经创始人</span></p><span></span>\n<p><strong><span>33 号珍藏：</span></strong><span>王文锋，Agent builder，sheet0.com Founder &amp; CEO，连续创业者，有近十年 AI、Data Infra 产品设计和 Coding 经验。</span><a href=\"http://sheet0.com/\" data-url=\"http://sheet0.com/\"><span>sheet0.com</span></a><span> 已开放 waiting list 申请，即将内测。</span></p><span></span>\n<p><span>【</span><strong><span>时光机】</span></strong></p><span></span>\n<ul>\n <span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"47\">00:47</a> Agent 三要素：LLM、Context、Tool Use</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"77\">1:17</a> 这波 Agent 和过去两年的区别是什么？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"150\">2:30</a> 怎么理解 Agent 中的 Context？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"261\">4:21</a> 快速理解 Tool Use 的不同方案 </span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"280\">4:40</a> 代码调用支线：Function Call、MCP、A2A 之间的区别是什么？</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"395\">6:35</a> 模拟人类支线：浏览器是大模型能调用的最重要的工具</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"427\">7:07</a> 两条支线各有优缺点，也可以混合起来</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"627\">10:27</a> Manus、Devin、Genspark 各用的什么方案？</span></li><span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"745\">12:25</a> Browser Use 的核心价值是给用户提供「安全感」</span></li><span> </span>\n  </ul><span> </span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"859\">14:19</a> AI Coding 和 Agent 最终会殊途同归吗？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"975\">16:15</a> Agent 的终局会走向通用还是垂直？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1037\">17:17</a> 脱离了 RL，Agent 就不成立了 </span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1155\">19:15</a> 所以 Agent 创业公司该如何使用 RL？</span></li><span> </span>\n  </ul><span> </span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1374\">22:54</a> 一个非共识理解：聊天框 + 场景推荐 UI 界面就是最好的交互形态</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"1914\">31:54</a> Sheet0 是一个怎样的 Agent 产品？ </span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2055\">34:15</a> 怎么把任务执行的准确率做到了 100%？</span></li><span> </span>\n  </ul><span> </span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2139\">35:39</a> Workflow 会被 Agent 颠覆掉吗？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2209\">36:49</a> 不同 Agent 的核心区别是什么？</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2345\">39:05</a> AI Coding 是大模型的「灵巧手」</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2501\">41:41</a> Agent 有两大「信任」命题</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2662\">44:22</a> 分享一个预测 Agent 未来发展的思考框架</span></li><span> </span>\n <li><span><a class=\"timestamp\" data-timestamp=\"2853\">47:33</a> 如何快速判断一家 Agent 公司做得好不好？</span></li><span></span>\n</ul><span></span>\n<p><strong><span>【Reference】</span></strong></p><span></span>\n<p><span>文锋推荐大家都读一读强化学习之父 Richard Sutton 的</span><a href=\"https://book.douban.com/subject/34809689/\" data-url=\"https://book.douban.com/subject/34809689/\"><span>《Reinforcement Learning：An Introduction》</span></a></p><span></span>\n<p><strong><span>【活动预告🥳】</span></strong></p><span></span>\n<p><span>4 月 26 日，我们会请到文锋做一场线下活动，感兴趣的朋友欢迎点击</span><a href=\"https://d2cs50y9wy.feishu.cn/share/base/form/shrcnOOUIJITjHclEGe4REqN4Tc\" data-url=\"https://d2cs50y9wy.feishu.cn/share/base/form/shrcnOOUIJITjHclEGe4REqN4Tc\"><span>链接</span></a><span>或扫描下面的二维码，一起来认识&amp;交流！</span></p><span></span>\n<p><img src=\"https://bts-image.xyzcdn.net/aHR0cHM6Ly9kMmNzNTB5OXd5LmZlaXNodS5jbi9zcGFjZS9hcGkvYm94L3N0cmVhbS9kb3dubG9hZC9hc3luY2NvZGUvP2NvZGU9WXpRNE5HTmtNMkptTVRZNU9EazRZbVZoTkRjeU16QXlOV0ZpTWpReU1EWmZkblIyV0ZWR1dGSnNhM1l4ZDBwRlVrcGFkV1owT0dwRmIwMVFjbXhpYUV4ZlZHOXJaVzQ2VW1rd2JtSm9ia1pLYjB0aE0yeDRRVlpETVdOa2QyMTVibWhsWHpFM05EVXdORGcyTkRFNk1UYzBOVEExTWpJME1WOVdOQQ==\"></p><span></span>\n<p><span>【</span><strong><span>The gang that made this happen】</span></strong></p><span></span>\n<ul>\n <span> </span>\n <li><span>制作人：陈皮、Celia</span></li><span> </span>\n <li><span>剪辑：陈皮</span></li><span> </span>\n <li><span>Bgm：Mondo Bongo - Joe Strummer &amp; The Mescaleros</span></li><span></span>\n</ul>",
+  "aiSummary": "本期播客深入探讨了 AI Agent 的定义、技术演进、应用场景与未来趋势，强调 Context 构建、RL 应用以及垂直领域 Agent 的重要性。",
+  "oneSentenceSummary": "本期播客深入探讨了 AI Agent 的定义、技术演进、应用场景与未来趋势，强调 Context 构建、RL 应用以及垂直领域 Agent 的重要性。",
+  "summary": "本期《42 章经》播客对话 Sheet0 创始人王文锋，聚焦 AI Agent 的核心要素、技术进展与行业趋势。讨论从 Agent 的定义出发，强调模型、环境反馈和行动 तीन要素。对比过去， нынешние Агенты уже能解决实际问题。深入探讨大模型与 Agent 工程的最新进展，如 OE 模型带来的长思维能力，以及构建有效 Context 的重要性。详细分析了 Function Call、MCP、A2A 等技术方案，并探讨了 AI Coding 在 Agent 中的角色。此外，还 обсудили 通用 Agent 与垂直 Agent 的差异，强化学习在 Agent 设计中的价值，以及如何评估 Agent 公司的优劣。最后，嘉宾分享了对 Agent 未来发展趋势的预测，强调技术突破与工程积累的重要性。",
+  "mainPoints": [
+    {
+      "point": "Agent 核心在于模型、环境反馈和行动， нынешние Агенты 已能解决实际问题。",
+      "explanation": "Agent 通过模型对环境进行感知和反馈，并采取行动以达成目标。 нынешние Агенты 不再是概念玩具，而是在工作生活中带来实际价值。"
+    },
+    {
+      "point": "构建有效的 Context 是 Agent 工程的关键突破点。",
+      "explanation": "Context 是 Agent 所需利用的所有信息总和，包括代码库结构、API、用户输入等，自动化提炼和处理 Context 信息至关重要。"
+    },
+    {
+      "point": "强化学习（RL）是 Agent 设计的基础，理解状态、行动和激励信号至关重要。",
+      "explanation": "RL 通过定义 Agent 的状态、行动空间和激励信号，使其能够自我迭代并实现用户目标，脱离强化学习 Agent 概念不成立。"
+    },
+    {
+      "point": "长期来看，垂直领域 Agent 将占据主导地位。",
+      "explanation": "每个领域都有其专业性和独特性，垂直 Agent 能够提供更专业、更精准的服务，类似于五星级酒店大厨与普通人的区别。"
+    },
+    {
+      "point": "用户交互的自由度比准确度更重要，聊天框是最佳交互形态。",
+      "explanation": "Agent 产品应让用户无需动脑筋就能使用，通过聊天框等方式提供高度的交互自由度，并利用多种方法提高交互准确度。"
+    }
+  ],
+  "keyQuotes": [
+    "Context 其实是定义了所有大模型需要去利用的信息的一个总和。",
+    "我觉得这本质上是一种标准化语权的一个争夺。",
+    "我认为其实这个聊天框就是最最重要的一个交互入口。",
+    "因为我觉得对于一个 agent 产品来讲，用户交互的自由度是远远要比用户交互的准确度要来的。",
+    "AI coding 就是大模型的一个灵巧手。"
+  ],
+  "tags": [
+    "AI Agent",
+    "大语言模型",
+    "强化学习",
+    "Context",
+    "Tool Use"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 990,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_84751f",
+  "sourceName": "42章经",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1745071200000,
+  "publishDateStr": "2025-04-19",
+  "publishDateTimeStr": "2025-04-19 14:00:00"
+}

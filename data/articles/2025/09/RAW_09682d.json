@@ -1,0 +1,54 @@
+{
+  "id": "RAW_09682d",
+  "title": "告别无效计算！新 TTS 框架拯救 19%被埋没答案，推理准确率飙升 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-02-9",
+  "date": "2025-09-02 07:09:23",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section data-pm-slice=\"0 0 []\">\n   <br>\n  </section>\n  <p>大语言模型通过 CoT 已具备强大的数学推理能力，而 Beam Search、DVTS 等测试时扩展（Test-Time Scaling, TTS）方法可通过分配额外计算资源进一步提升准确性。然而，现有方法存在两大关键缺陷：路径同质化（推理路径趋同）和中间结果利用不足（大量高质量推理分支被丢弃）。</p>\n  <p>为解决这些问题，华为诺亚方舟实验室联合香港中文大学等机构的研究人员提出逐步推理检查点分析（SRCA）框架 —— 在推理步骤间引入 “检查点”，并集成两大核心策略：（1）答案聚类搜索（Answer-Clustered Search）：根据中间检查点答案对推理路径进行分组，在保证质量的同时维持路径多样性；（2）检查点候选增强（Checkpoint Candidate Augmentation）：利用所有中间答案辅助最终决策。</p>\n  <p>实验结果表明，在多个数学数据集上，如 MATH500 和 OlympiadBench，SRCA 相较于现有 TTS 方法，推理准确性均有提升。该论文已被 EMNLP 2025 接收。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250902073734_524c38\" data-ratio=\"0.31296296296296294\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503504832\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/47485a58-dffb-4f19-a25f-ae905a9842f1/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文题目：Stepwise Reasoning Checkpoint Analysis: A Test Time Scaling Method to Enhance LLMs' Reasoning</p>\n   </li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2505.17829</p>\n   </li>\n  </ul>\n  <p>Test Time Scaling（TTS）技术简单来说就是在模型测试阶段 \"砸资源\"：不改变模型本身，而是通过增加推理时的计算开销，让 LLM 在解题时 \"多想一会儿\"，从而显著提升推理准确性。除了常见的长思维链，比如 DeepSeek R1 典型的 think 模式，多次采样并有策略的搜索正确解题路径也是一种常见的 TTS 策略。</p>\n  <p>我们常用的多数投票 / 自我一致性（Self-Consistency）可以视为是最朴素的 TTS 技术。比如让模型对一道数学题生成 10 个推理过程，最后选出现次数最多的答案。这种看似简单的方法，却能显著提升模型推理的准确率 —— 代价是多花几倍计算时间。</p>\n  <p>随着任务难度提升，这种暴力提升采样次数的做法效率越来越低。于是研究者们引入了额外的打分模型，比如一个过程奖励模型（PRM），从而开发了更先进的 TTS 算法。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250902073734_1f5391\" data-ratio=\"0.5399014778325123\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1015\" type=\"block\" data-imgfileid=\"503504833\" data-original-style=\"width: 513px;height: 277px;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/c37ba905-fdda-4db1-898f-185a00ab8042/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>Beam Search：（左图）每次采样得到的路径由 PRM 打分，保留得分最高的 k 条推理路径继续深入，避免在错误方向浪费资源；</p>\n   </li>\n   <li>\n    <p>DVTS（Diverse Verifier Tree Search）：（右图）同时维护多个独立的推理树，每棵树向下探索 PRM 打分最高的路径。强迫模型探索不同解题思路，减少 \"一条道走到黑\" 的风险。</p>\n   </li>\n  </ul>\n  <p>不过这类方法仍然存在两个问题。</p>\n  <p><strong>两大痛点</strong></p>\n  <ul>\n   <li>\n    <p><strong>思路太单一</strong>：明明生成了多条推理路径，最终却都往一个方向扎堆（路径同质化）。这是由 PRM 的局限性带来的：并不完美的 PRM 打分具有隐式的偏好，选出的路径往往具有一定的共性。这有时会导致一些思路不同但并未出错的解题路径打分略低未能被继续探索。</p>\n   </li>\n   <li>\n    <p><strong>中间结果浪费</strong>：推理过程中产生的大量中间过程被直接丢弃。以 Beam Search 为例，假设采样次数为 16，束宽为 4，则采样中 75% 的步骤将被直接丢弃。这其中不乏一些优质的正确的解题思路，但是这些中间过程并未有效贡献到最终答案的决策中。</p>\n   </li>\n  </ul>\n  <p><strong>我们的解法：给推理过程 \"设检查点\"</strong></p>\n  <p>针对这些问题，我们提出了 SRCA（Stepwise Reasoning Checkpoint Analysis） 框架，该框架包含三个关键组件：</p>\n  <ul>\n   <li>\n    <p><strong>检查点注入</strong>：强制模型在每一步推理后暂停并输出阶段性答案。</p>\n   </li>\n   <li>\n    <p><strong>答案聚类搜索</strong>：把检查点答案一样的推理路径归为一组，并从每组内选择路径继续推理。</p>\n   </li>\n   <li>\n    <p><strong>检查点候选增强</strong>：收集所有检查点答案加入到最终答案的选择。</p>\n   </li>\n  </ul>\n  <p>下面是每个组件的具体介绍。</p>\n  <p><strong>检查点注入（Checkpoint Injection）：打断推理并预测答案</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250902073734_7bde4d\" data-ratio=\"0.5498241500586166\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"853\" type=\"block\" data-imgfileid=\"503504834\" data-original-style=\"width: 484px;height: 266px;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/bf209e3d-8312-4969-93a6-b06ec08c9591/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>检查点注入是 SRCA 的基础技术，后续的 ACS 和 CCA 算法全部依赖于检查点注入收集到的中间答案，核心思路是强制模型在每一步推理后暂停并输出阶段性答案。早期的工作中亦有类似的探索，chain-of-probe (https://aclanthology.org/2025.findings-naacl.140/) 同样是利用暂停推理收集答案的思路观测模型推理时置信度 (confidence) 的变化以判断模型推理是否准确。而检查点注入则更关注模型阶段性推理的答案本身，具体流程如下：</p>\n  <ol>\n   <li>\n    <p>检测步骤结束符（如 \"### Step\"）：当检测到此类字段时，说明 LLM 的上一步推理已经结束，可以进行答案检查。</p>\n   </li>\n   <li>\n    <p>插入提示 \"So the answer is\"：我们通过插入后缀强行改变上下文，模型沿着新的上下文继续解码，输出它所认为的答案。</p>\n   </li>\n   <li>\n    <p>记录检查点答案：该答案是我们后续改进搜索策略和投票的重要依据。</p>\n   </li>\n  </ol>\n  <p>通过这样的方式，我们可以收集到模型基于当前推理步骤得出的答案。这种 “中间答案” 尽管并不完整和精确，但它们在一定程度上可以代表模型在当前的思考过程，比如两条推理路径得出的中间答案是一样的，我们则可以认为这两条推理路径目前解题的思路和进度是类似的。收集到中间答案后，通过合理的 KV Cache 管理，我们可以将推理状态回滚到上一步推理结束的时刻，从而避免反复推理降低计算开销。</p>\n  <p><strong>答案聚类搜索（ACS）：防止 “思路扎堆”，鼓励不同解法</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250902073734_ff9ee2\" data-ratio=\"1.1904761904761905\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"672\" type=\"block\" data-imgfileid=\"503504835\" data-original-style=\"width: 445px;height: 530px;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/11a86234-9fe7-4b82-a847-16cca1f2c85f/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>基于检查点答案，我们重新设计了路径搜索策略，提出了 Answer Clustering Search 算法。传统方法（如 Beam Search）虽然让模型尝试多条路，但 PRM 打高分的路径往往类似，这就容易提前扼杀搜索路径的多样性，导致最终错过可能的正确答案。</p>\n  <p>针对路径同质化问题，ACS 在检查点执行双层筛选机制：</p>\n  <ul>\n   <li>\n    <p><strong>组内择优</strong>：将同中间答案的路径归组，按组内 PRM 总分排序</p>\n   </li>\n   <li>\n    <p><strong>组间竞争</strong>：采用轮询调度（Round-Robin），按总分顺序从每组抽取最优路径</p>\n   </li>\n  </ul>\n  <p>这样保证了不同解题方向（不同组）都有机会保留至少一条 “种子选手” 继续发展。即使某一种方法（组）目前分数不是最高，只要它整体有潜力，它最好的那条路也有机会被选上。这就大大增加了解题思路的多样性，避免大家一窝蜂挤到一条（可能错的）思路上。</p>\n  <p><strong>检查点候选增强（CCA）：抢救 “半成品好答案”，变废为宝</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250902073734_62e6ef\" data-ratio=\"0.6746231155778895\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"796\" type=\"block\" data-imgfileid=\"503504839\" data-original-style=\"width: 450px;height: 304px;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/f595aa09-4aba-440d-aa25-aa83f7b51c62/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>在传统树搜索（如 Beam Search / DVTS）中，只有那些最终走完全程的路径才有资格参与最终答案的评选。大量未完成的中间推理步骤被直接丢弃。CCA 通过收集复用这些未完成路径的检查点答案提升模型推理的准确性：</p>\n  <ol>\n   <li>\n    <p>在每一步推理之后，记录收集所有的检查点答案。</p>\n   </li>\n   <li>\n    <p>即使一条路没走完，它在某个步骤得出的那个中间答案，也可能是最终答案。所以 CCA 会把每个中间答案连同它走到这一步的推理过程，都打包成一个独立的候选答案。这就像把那些半成品抢救出来。</p>\n   </li>\n   <li>\n    <p>当所有路径都推理结束后（无论是走完还是被淘汰），最终的答案评选不再是只看那几条 “完整” 路径的最终答案。CCA 会把所有收集到的这些 “半成品答案” 和完整路径的最终答案，全部放在一起，根据 PRM 的打分选择最高者。</p>\n   </li>\n  </ol>\n  <p>这样极大减少了 “好答案被中途埋没” 的情况。即使模型后面推理跑偏了，只要它在某个步骤 “灵光一现” 得出了正确结果，CCA 就能把它捞回来，给模型一个 “后悔药”。这大大提高了计算资源的利用率。下面是一个具体的示例：</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250902073734_74eaa4\" data-ratio=\"0.47314814814814815\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503504840\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/bead1704-3380-4b49-a94c-4a1dc5217eb0/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>如图所示，模型推理完成得到的答案是 9，而正确答案是 27。但回顾推理过程中的检查点答案可以发现，模型在第 4 和第 5 步已经得出了 27 这个答案，而错误出在第 6 步 ——9 是一个完全平方数而不是平方立方数。而 CCA 记录收集了所有检查点答案，并综合考虑所有候选答案选出最终结果。可以看到第 5 步的检查点答案得到了最高分 0.7192，该答案被 CCA 恢复并修正了错误答案。</p>\n  <p><strong>实验结果</strong></p>\n  <p><strong>TL;DR:</strong></p>\n  <ul>\n   <li>\n    <p>SRCA 框架加持的 1B 小模型在 MATH500 数据集上达到 65.2% 准确率，首次超越参量 70 倍的 70B 大模型（65.0%）</p>\n   </li>\n   <li>\n    <p>通过答案聚类搜索（ACS）优化路径多样性，SRCA 仅需 16 次采样即可达到其他 TTS 方法 128 次采样的精度。在同等硬件条件下，推理效率提升达 8 倍，从而降低计算成本。</p>\n   </li>\n   <li>\n    <p>检查点候选增强（CCA）策略成功从中间步骤拯救 19.07% 的正确答案。这些答案诞生于推理中途，却因后续路径偏差被丢弃。CCA 通过复用高质量中间结果，构建了强大的错误容忍机制。</p>\n   </li>\n   <li>\n    <p>设置合理阈值，当候选池中出现超过阈值的检查点答案即停止推理输出答案，平均可节省 27% 的推理步骤，推理准确率轻微下降 0.58%。</p>\n   </li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "新 TTS 框架 SRCA 通过检查点分析、答案聚类搜索和候选增强，显著提升大语言模型数学推理准确率和效率。",
+  "oneSentenceSummary": "新 TTS 框架 SRCA 通过检查点分析、答案聚类搜索和候选增强，显著提升大语言模型数学推理准确率和效率。",
+  "summary": "文章详细介绍了华为诺亚方舟实验室等机构提出的逐步推理检查点分析（SRCA）框架。该框架旨在解决现有测试时扩展（TTS）方法在提升大语言模型推理准确性时面临的路径同质化和中间结果利用不足两大关键缺陷。SRCA 通过在推理步骤间引入“检查点”强制模型输出阶段性答案，并集成答案聚类搜索（ACS）以维持路径多样性，以及检查点候选增强（CCA）以充分利用所有中间答案辅助最终决策。实验结果表明，SRCA 在 MATH500 等数学数据集上显著提升了 LLM 的推理准确率，使 1B 小模型首次超越了 70 倍参数量的 70B 大模型，并实现了 8 倍的推理效率提升，成功挽救了近 20%被埋没的正确答案。",
+  "mainPoints": [
+    {
+      "point": "现有 TTS 方法存在路径同质化和中间结果浪费两大痛点",
+      "explanation": "Beam Search 和 DVTS 等方法因奖励模型偏好导致推理路径趋同，且大量优质中间步骤被直接丢弃，限制了 LLM 推理准确率的进一步提升。"
+    },
+    {
+      "point": "SRCA 框架通过检查点注入和多策略有效解决上述问题",
+      "explanation": "SRCA 强制模型输出阶段性答案，利用答案聚类搜索确保路径多样性，并通过检查点候选增强充分利用所有中间答案，显著提升推理效果。"
+    },
+    {
+      "point": "SRCA 大幅提升 LLM 推理准确率和效率，并挽救被丢弃的优质答案",
+      "explanation": "实验证明，SRCA 使小模型准确率超越大模型，仅需 16 次采样即可达到其他方法 128 次采样的精度，并成功从中间步骤拯救 19.07%的正确答案。"
+    }
+  ],
+  "keyQuotes": [
+    "为解决这些问题，华为诺亚方舟实验室联合香港中文大学等机构的研究人员提出逐步推理检查点分析（SRCA）框架。",
+    "SRCA 框架加持的 1B 小模型在 MATH500 数据集上达到 65.2% 准确率，首次超越参量 70 倍的 70B 大模型（65.0%）。",
+    "通过答案聚类搜索（ACS）优化路径多样性，SRCA 仅需 16 次采样即可达到其他 TTS 方法 128 次采样的精度。在同等硬件条件下，推理效率提升达 8 倍，从而降低计算成本。",
+    "检查点候选增强（CCA）策略成功从中间步骤拯救 19.07% 的正确答案。"
+  ],
+  "tags": [
+    "大语言模型",
+    "推理优化",
+    "TTS",
+    "SRCA",
+    "CoT"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 91,
+  "wordCount": 2990,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1756796963000,
+  "publishDateStr": "2025-09-02",
+  "publishDateTimeStr": "2025-09-02 07:09:23"
+}

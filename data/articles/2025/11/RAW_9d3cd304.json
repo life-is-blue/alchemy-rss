@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9d3cd304",
+  "title": "Kubernetes 社区宣布停止支持 Ingress NGINX 控制器",
+  "url": "https://www.infoq.com/news/2025/11/kubernetes-ingress-nginx/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-11-29 09:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://www.kubernetes.dev/blog/2023/05/09/sig-network-spotlight-2023/\">Kubernetes SIG Network</a> and the Security Response Committee has <a href=\"https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/\">announced the retirement of Ingress NGINX</a>, one of the most widely deployed ingress controllers in the ecosystem. Best-effort maintenance will continue until March 2026, after which there will be no further releases, bug fixes, or security updates, according to an announcement made at Kubecon NA 2025.</p>\n   <p>The decision will have significant implications for many organisations running Kubernetes clusters, as <a href=\"https://github.com/kubernetes/ingress-nginx/\">Ingress NGINX</a> has been a foundational component for directing network traffic to workloads for many years. The controller became popular early in Kubernetes history due to its flexibility, extensive features, and independence from specific cloud providers.</p>\n   <p>The announcement post explains that the project has suffered from a maintainer shortage which has ultimately become unsustainable. Ingress NGINX had only one or two people doing development work on their own time, after work hours and on weekends. Efforts to find additional support to make continuing the project viable have failed.</p>\n   <p>Despite the retirement showing the challenge of maintaining successful open-source software that powers critical infrastructure, the announcement does acknowledge the substantial contribution of Ingress NGINX maintainers, noting that the controller has powered billions of requests in data centres and home laboratories worldwide.</p>\n   <p>The breadth of Ingress NGINX's functionality was once considered one of it's key strengths, but it has evolved into what the project maintainers now describe as insurmountable technical debt. Features such as being able to use arbitrary NGINX configuration directives through \"snippets\" annotations, initially valued for their flexibility, have come to be viewed as serious security vulnerabilities in the context of modern cloud native software.</p>\n   <p>There was an attempt to develop a replacement controller - named InGate - but this didn't generate enough interest or support and didn't progress past the early development stage. This will also be retired at the same time.</p>\n   <p><img alt=\"Gateway API - the recommended replacement for ingress-nginx\" data-src=\"https://www.infoq.com/news/2025/11/kubernetes-ingress-nginx/news/2025/11/kubernetes-ingress-nginx/en/resources/1gateway-api-resources-4113693480-1764369881852.png\" style=\"width: 600px; height: 357px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/11/kubernetes-ingress-nginx/en/resources/1gateway-api-resources-4113693480-1764369881852.png\" rel=\"share\"></p>\n   <p>The Kubernetes community is recommending migrating to Gateway API, the modern replacement for Ingress. Gateway API was created to address many limitions of the Ingress specification, and has a role-based design that seperates concerns between infrastructure providers, cluster operators, and application developers. It reached general availability in late 2023. It supports all ingress features, and also natively supports many other features that are only available in Ingress NGINX through annotations. As well as HTTP and HTTPS, the API provides native support for other protocols including TCP, UDP, and gRPC, and also has other advanced features such as traffic splitting and header-based matching without needing vendor-specific annotations.</p>\n   <p>For organisations that aren't able to adopt Gateway API, there are other alternative ingress controllers which are still actively maintained, including vendor-supported options from NGINX, Kong, Traefik, HAProxy, and others. These controllers vary in their feature sets, performance characteristics, and governance models.</p>\n   <p>Cloud native advocate Jimmy Song characterised the announcement as \"a pivotal moment in infrastructure evolution\" and went on to say that \"once infrastructure components can no longer be securely updated, they cease to be assets and become liabilities.\" He suggests that the retirement shows that maintenance costs have permanently exceeded the pace of community contributions, particularly given the high flexibility that created an extensive attack surface.&nbsp;Song's analysis emphasises that the core issue is not declining usage but rather unsustainable maintenance dynamics. He ventures that most users move to Gateway API or other Ingress controllers will take significant migration effort.</p>\n   <p>He notes that long-term community observation shows most users treated Ingress NGINX as a black box, and the migration to Gateway API or alternative controllers now represents what he terms a hidden migration wave for many clusters. He also suggests that a move to unified and extensible APIs is an emergent pattern for new cloud-native infrastructure projects.</p>\n   <blockquote>\n    <p>Its retirement is not a failure, but an inevitable result of the system advancing to the next stage.\n     <br>\n     - Jimmy Song</p>\n   </blockquote>\n   <p>Networking vendors have positioned the announcement as both validation of Gateway API and a commercial opportunity. NGINX promotes its own NGINX Gateway Fabric as a long-term successor, whilst Kong, Traefik, and others have published migration guidance, emphasising the improved governance and richer policy control of their commercial products. HAProxy have also <a href=\"https://www.haproxy.com/ingress-nginx-migration-assistant\">made a migration tool available</a> to help users move from Ingress NGINX to their product.</p>\n   <p>The blog post explains that organisations can check if they're using Ingress NGINX by running the command <tt>kubectl get pods --all-namespaces --selector app.kubernetes.io/name=ingress-nginx</tt> with cluster administrator permissions. They close out the blog by stating the importance of planning a migration as soon as possible, to keep clusters reliable and secure.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Kubernetes Community Retires Popular Ingress NGINX Controller\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/11/kubernetes-ingress-nginx/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1764406800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "由于维护人员短缺和技术债，Kubernetes 社区将于 2026 年 3 月停止维护 Ingress NGINX 控制器。建议迁移到 Gateway API 或其他积极维护的替代方案。",
+  "oneSentenceSummary": "由于维护人员短缺和技术债，Kubernetes 社区将于 2026 年 3 月停止维护 Ingress NGINX 控制器。建议迁移到 Gateway API 或其他积极维护的替代方案。",
+  "summary": "Kubernetes SIG 网络与安全响应委员会已宣布停止维护流行的 Ingress NGINX 控制器，尽力维护将于 2026 年 3 月结束。此决定源于不可持续的维护人员短缺和累积的技术债，特别是最初被认为是灵活的“snippets”注解，现已演变为安全漏洞。停止维护对许多运行 Kubernetes 的组织具有重大影响。社区的主要建议是迁移到 Gateway API，这是一种现代的、基于角色的替代方案，旨在解决 Ingress 规范的局限性，为各种协议（HTTP、HTTPS、TCP、UDP、gRPC）和高级功能（如流量拆分）提供原生支持。对于那些无法采用 Gateway API 的用户，NGINX、Kong、Traefik 和 HAProxy 等其他积极维护的、供应商支持的 Ingress 控制器也被作为替代方案。云原生倡导者 Jimmy Song 认为这是一个“关键时刻”，强调未维护的基础设施会成为负担，并预见到许多集群的“隐藏迁移浪潮”。网络供应商将此定位为对 Gateway API 的验证和商业机会，提供迁移指导和工具。建议用户尽快确定 Ingress NGINX 的使用情况并规划迁移，以确保集群的可靠性和安全性。",
+  "mainPoints": [
+    {
+      "point": "由于维护人员短缺和技术债，Kubernetes Ingress NGINX 控制器将被停止维护。",
+      "explanation": "此决定突显了维持关键开源基础设施的挑战，尤其是在维护人员资源有限和不断发展的安全标准的情况下，这使得这个广泛使用的组件难以继续维护。"
+    },
+    {
+      "point": "Gateway API 是推荐的现代替代方案，提供更强大、更安全的网络解决方案。",
+      "explanation": "Gateway API 提供了一种卓越的、基于角色的设计，原生支持高级网络功能和多种协议，解决了旧 Ingress 规范在功能和安全性上的局限性。"
+    },
+    {
+      "point": "组织必须规划迁移，以维持集群的安全性和可靠性。",
+      "explanation": "主动迁移到 Gateway API 或其他积极维护的替代方案对于避免安全漏洞和运营不稳定至关重要，因为 Ingress NGINX 将不再接收更新和支持。"
+    }
+  ],
+  "keyQuotes": [
+    "尽最大努力的维护将持续到 2026 年 3 月，之后将不再有任何发布、错误修复或安全更新。",
+    "最初，通过“snippets”注解使用任意 NGINX 配置指令的功能因其灵活性而备受推崇。然而，在现代云原生软件环境中，这些功能已被视为严重的安全漏洞。",
+    "Gateway API 的创建旨在解决 Ingress 规范的诸多限制，它采用基于角色的设计，将基础设施提供商、集群运营商和应用程序开发人员的职责分离。",
+    "一旦基础设施组件无法安全更新，它们就不再是资产，而成为负债。",
+    "它的停止维护不是失败，而是系统发展到下一阶段的必然结果。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "Ingress",
+    "Gateway API",
+    "云原生",
+    "网络"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 744,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764406800000,
+  "publishDateStr": "2025-11-29",
+  "publishDateTimeStr": "2025-11-29 09:00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_090db5",
+  "title": "如何轻松写出好用的提示词模板？",
+  "url": "https://baoyu.io/blog/how-to-write-prompt-templates",
+  "date": "2025-05-08 13:11:42",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"ddj0wyfxrd\">最近我分享了很多 AI 提示词，大部分提示词都能收到用户的留言分享他们基于我的提示词创作的成果，之所以大家都能轻松的基于我的提示词进行二次创作，是因为我刻意把提示词写成了“提示词模板”，让其他人只要做少量修改就可以产生新的结果。</p>\n   <p data-id=\"4cfgps1qf6\">其实，这和程序中的“Function（函数）”很像，程序员们早就发明了一种叫做“代码重用”的方法——把重复使用的内容整理成“函数”，再用一些“变量”快速生成不同版本。</p>\n   <p data-id=\"p34dejwdm8\">别担心！就算你从没写过代码，学会写提示词模板也不难，只需要简单的三个步骤，而且还可以让 AI 帮你：</p>\n   <hr>\n   <h2 data-id=\"t7w9s602rm\" id=\"t7w9s602rm\" data-toc-id=\"t7w9s602rm\">第一步：收集同一风格但不同主题的提示词</h2>\n   <p data-id=\"i37o2jk9ov\">比如，我想生成折纸风格的图片，于是在Sora平台上收集了三条不同主题的折纸提示词：</p>\n   <ol>\n    <li>\n     <p data-id=\"mucvztdabz\">大熊猫的提示词：</p></li>\n   </ol>\n   <blockquote data-id=\"slj3lhj1g2\">\n    <p data-id=\"1gytmiyc1j\">Origami, paper texture, geometric folds, detailed, sharp lines, symmetry, Giant Panda, white, black, majestic, powerful, proud, standing, walking forward, looking straight, forest, soft natural light, cinematic depth of field</p>\n   </blockquote>\n   <ol>\n    <li>\n     <p data-id=\"mvpf11wlrp\">老鹰的提示词：</p></li>\n   </ol>\n   <blockquote data-id=\"5k5iwo1pc6\">\n    <p data-id=\"piu1w0cyu3\">A photorealistic photograph of an origami-style eagle perched on an oak tree branch in a natural setting, captured with natural lighting from the perspective of a nature photographer, evoking the polished and insightful tone of a National Geographic feature, with all surroundings appearing lifelike while the eagle alone has the appearance of folded paper.</p>\n   </blockquote>\n   <ol>\n    <li>\n     <p data-id=\"hq3lvy0ysu\">韩国虎的提示词：</p></li>\n   </ol>\n   <blockquote data-id=\"2d93se7vxt\">\n    <p data-id=\"0m5bbrkws4\">Origami, paper texture, geometric folds, detailed, sharp lines, symmetry, Korean tiger, white, orange, black stripes, majestic, powerful, proud, standing, walking forward, looking straight, forest, soft natural light, cinematic depth of field</p>\n   </blockquote>\n   <hr>\n   <h2 data-id=\"qb2p4n1wkc\" id=\"qb2p4n1wkc\" data-toc-id=\"qb2p4n1wkc\">第二步：找出共同点和差异点（AI可协助完成）</h2>\n   <p data-id=\"rm0ja1ocfn\">对比一下你会发现，这几条提示词其实结构非常相似，比如都提到了：</p>\n   <ul>\n    <li>\n     <p data-id=\"460h8b5lbq\"><strong>折纸艺术风格、真实纸张质感、几何折痕</strong></p></li>\n    <li>\n     <p data-id=\"af6mao913i\"><strong>细节丰富、线条锐利、对称构图</strong></p></li>\n    <li>\n     <p data-id=\"k4dznyeb2q\"><strong>柔和自然光、电影级景深效果</strong></p></li>\n   </ul>\n   <p data-id=\"up7oklgnr3\">而它们的差异，主要就在动物的名称、颜色、姿态、场景等细节上。</p>\n   <p data-id=\"2xzct6vvfp\">于是，我就把这三条提示词提供给AI，让它帮忙生成一个模板，AI输出了以下模板：</p>\n   <blockquote data-id=\"at3udk5hjg\">\n    <p data-id=\"f8v5c8s88n\">折纸艺术，真实纸张质感，几何折痕，细节丰富，线条锐利，对称构图，（动物名称），（颜色描述），姿态（如：站立、前行、飞翔、栖息），表情（如：威严、自豪、凝视前方），（场景，如：森林、山脉、湖边），柔和自然光，电影级景深效果，整体氛围（如：雄伟、优雅、神秘）。</p>\n   </blockquote>\n   <h2 data-id=\"0dbkaisk9k\" id=\"0dbkaisk9k\" data-toc-id=\"0dbkaisk9k\">第三步：反复测试与优化</h2>\n   <p data-id=\"4dg2egn319\">但你肯定也发现了，这个模板对一般用户来说还是太复杂了，因为需要填写太多细节，比如动物的姿态、表情、整体氛围等等。</p>\n   <p data-id=\"m1bexn72kn\">于是我进一步简化这个模板，删掉了很多细节，只留下关键要素：</p>\n   <blockquote data-id=\"s0ors56dri\">\n    <p data-id=\"hhghyv8nxv\">折纸艺术，真实纸张质感，几何折痕，细节丰富，线条锐利，对称构图，【大猩猩】，【森林背景】，柔和自然光，电影级景深效果。</p>\n   </blockquote>\n   <p data-id=\"5i1vkdd242\">但这样一简化，发现问题来了——生成出来的大猩猩图片只有纸张本色，看起来不够生动。</p><img src=\"https://baoyu.io/uploads/2025-05-08/20250503_2050_折纸大猩猩_simple_compose_01jtcfppphfvhaxemtbmmrtqng.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"ctubxg2r24\">没关系！经过反复试验，我又稍微调整了一下，增加了关键的描述词“颜色丰富栩栩如生”，再试一次：</p>\n   <blockquote data-id=\"pqvltbzxh3\">\n    <p data-id=\"mt2gkdue9w\">折纸艺术，真实纸张质感，几何折痕，细节丰富，线条锐利，对称构图，【大熊猫】，颜色丰富栩栩如生，【森林】背景，柔和自然光，电影级景深效果。</p>\n   </blockquote><img src=\"https://baoyu.io/uploads/2025-05-08/20250507_2355_Origami Panda in Forest_simple_compose_01jtq3xy12f60v4scc9179gcak.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"t52tp06g55\">效果就立刻变好了！不论是换成【龙】配【天空】背景，还是【鱼】配【西湖】背景，效果都很不错。</p><img src=\"https://baoyu.io/uploads/2025-05-08/assets_task_01jtgck01cfcxv339ptzpyqpm2_1746454372_img_1.webp\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"yln5s67lrv\">要制作一个好用的提示词模板，最关键的步骤就是反复测试。刚刚的例子就是经过了多轮调整才达到理想效果的过程。</p>\n   <p data-id=\"hr5ep2fryg\">但是注意，<strong>并不是所有风格都能轻松写成模板！</strong> 如果某个主题本身需要很多特殊的细节和背景描写，就不太适合简单的模板化。遇到这种情况，你可能还是需要单独针对具体主题优化你的提示词。</p>\n   <hr>\n   <h2 data-id=\"uq15mmly9r\" id=\"uq15mmly9r\" data-toc-id=\"uq15mmly9r\">额外小技巧：如何用AI快速生成新提示词？</h2>\n   <p data-id=\"rm3rh7p5iq\">其实，不论是模板化的提示词，还是个性化的提示词，你都可以直接让AI帮你创作！下面就是一个简单有效的指令模板：</p>\n   <blockquote data-id=\"adxxnkonm4\">\n    <p data-id=\"0cs83p0w8j\">{参考提示词1} {参考提示词2} 请参考上面的提示词，基于下面的要求写出新的提示词：</p>\n    <ul>\n     <li>\n      <p data-id=\"8gxpls1rnm\">要求1</p></li>\n     <li>\n      <p data-id=\"fzyeb4avd6\">要求2</p></li>\n    </ul>\n   </blockquote>\n   <p data-id=\"hmp68fqrak\">你只要稍微修改一下这个模板中的“要求”，AI就能快速为你生成适合的提示词。</p>\n   <p data-id=\"rf3l0fnhpu\">比如，我在创作“武侠小说”的提示词时，每一幅都需要细节描写，就不适合做成模板，所以我在写好一个提示词后，就让 AI 帮我创作更多场景。</p>\n   <p data-id=\"cf9ve7hilf\">比如：</p>\n   <pre><code class=\"language-markdown\"><span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ref</span>&gt;</span></span>\n一幅极具戏剧感的电影级数字绘画，描绘一位孤傲的中国剑客立于悬崖之巅，背影剪影映照在辉煌而柔和的夕阳中。他身后盘旋而起一条威武而壮丽的中国龙，鳞片细腻精致，双目威严锐利，气势磅礴。远景背景呈现层峦叠嶂的仙山，松树苍劲挺拔，山间薄雾环绕，下方湖水如镜般平静，清晰倒映着天空与群山的色彩。整体色彩淡雅，以天空蓝、浅灰与柔和的金色点缀为主调，光影明亮而不失深沉，营造出神秘而传奇的意境。远方天空中有飞鸟掠过，为画面增添动感与空间感。采用超宽幅构图，细节丰富且氛围恢弘史诗，但整体保持亮色模式，避免过暗或怀旧，适合作为电脑桌面背景。\n<span class=\"xml\"><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ref</span>&gt;</span></span>\n<span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">story</span>&gt;</span></span>\n<span class=\"hljs-quote\">&gt; 出场人物：王重阳、欧阳锋、黄药师、洪七公、一灯</span>\n<span class=\"hljs-quote\">&gt;\n&gt; 第一次华山论剑才是真正的华山论剑！天下最强的五位高手为《九阴真经》角逐于华山之巅，最后王重阳力挫四人，成为天下第一，武林格局一战而定。从此天下便有了了东邪西毒南帝北丐中神通的五绝高手，仿佛神仙般矗立武学的顶峰。</span>\n<span class=\"xml\"><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">story</span>&gt;</span></span>\n参考上面的提示词，写一段武侠小说《射雕英雄传》 第一次华山论剑\n\n</code></pre>\n   <p data-id=\"onnlm2ylei\">这样一来只需要替换其中的主题名称和故事描述，就能快速生成大量同风格不同主题的插画了。</p>\n   <hr>\n   <p data-id=\"qxtvvur2ja\">提示词模板的本质，就是只要少量修改，就可以重用你的提示词，让大家都能分享你的提示词成果。</p>\n   <p data-id=\"qv8q86vweb\"><strong>总结一下重点：</strong></p>\n   <ul>\n    <li>\n     <p data-id=\"ry7d4hp7og\">收集相同风格不同主题的提示词</p></li>\n    <li>\n     <p data-id=\"e27lw8pc5m\">找出共性与差异，简化结构</p></li>\n    <li>\n     <p data-id=\"qkgv0mr323\">反复测试并微调模板细节</p></li>\n    <li>\n     <p data-id=\"55t7kyroo9\">不要忘记让 AI 帮你</p></li>\n   </ul>\n   <p data-id=\"4ya8xgbztx\">希望上面的经验能帮助到你，写出受欢迎的提示词模板。</p></div>\n \n",
+  "aiSummary": "本文介绍了如何通过简单步骤创建易于复用的 AI 提示词模板，并分享了利用 AI 辅助轻松生成提示词的技巧。",
+  "oneSentenceSummary": "本文介绍了如何通过简单步骤创建易于复用的 AI 提示词模板，并分享了利用 AI 辅助轻松生成提示词的技巧。",
+  "summary": "本文旨在解决用户难以高效创建和复用 AI 提示词的问题，详细阐述了创建高质量、可复用 AI 提示词模板的方法。作者通过三个步骤：收集同风格不同主题的提示词、找出共同点和差异点（可借助 AI ）、反复测试与优化，循序渐进地指导读者构建提示词模板， 提高提示词生成效率，降低创作门槛，促进成果分享。强调了模板化的核心在于少量修改即可重用，并分享了使用 AI 快速生成新提示词的实用技巧，例如利用 AI 根据参考提示词和具体需求生成新的提示词。最后总结了创建提示词模板的重点，鼓励读者分享提示词成果。",
+  "mainPoints": [
+    {
+      "point": "提示词模板通过少量修改实现提示词的重用。",
+      "explanation": "提示词模板类似于编程中的函数，通过变量的替换，可以快速生成不同版本的提示词，提高效率。"
+    },
+    {
+      "point": "创建提示词模板的关键步骤包括收集、分析、简化和测试。",
+      "explanation": "收集同风格提示词，找出共性和差异，简化模板结构，并通过反复测试和微调细节来优化模板。"
+    },
+    {
+      "point": "AI 可以辅助生成新的提示词，简化提示词创作流程，提高效率。",
+      "explanation": "通过提供参考提示词和具体要求，AI 可以快速生成适合的提示词，简化创作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "其实，这和程序中的 'Function（函数）' 很像，程序员们早就发明了一种叫做 '代码重用' 的方法 ------ 把重复使用的内容整理成 '函数'，再用一些 '变量' 快速生成不同版本。",
+    "要制作一个好用的提示词模板，最关键的步骤就是反复测试。",
+    "并不是所有风格都能轻松写成模板！",
+    "提示词模板的本质，就是只要少量修改，就可以重用你的提示词，让大家都能分享你的提示词成果。",
+    "额外小技巧：如何用 AI 快速生成新提示词？"
+  ],
+  "tags": [
+    "提示词工程",
+    "提示词模板",
+    "Prompt Template",
+    "AI辅助",
+    "AI生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 90,
+  "wordCount": 2039,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746709902000,
+  "publishDateStr": "2025-05-08",
+  "publishDateTimeStr": "2025-05-08 13:11:42"
+}

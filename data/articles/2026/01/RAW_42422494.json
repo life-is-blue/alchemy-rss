@@ -1,0 +1,58 @@
+{
+  "id": "RAW_42422494",
+  "title": "OpenAI 的广告策略与扩大 ChatGPT 访问权限",
+  "url": "https://simonwillison.net/2026/Jan/16/chatgpt-ads/#atom-everything",
+  "date": "2026-01-16 21:28:26",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://openai.com/index/our-approach-to-advertising-and-expanding-access/\">Our approach to advertising and expanding access to ChatGPT</a></strong>. The long-rumored introduction of ads to ChatGPT just became a whole lot more concrete:</p>\n   <blockquote>\n    <p>In the coming weeks, we’re also planning to start testing ads in the U.S. for the free and Go tiers, so more people can benefit from our tools with fewer usage limits or without having to pay. Plus, Pro, Business, and Enterprise subscriptions will not include ads.</p>\n   </blockquote>\n   <p>What's \"Go\" tier, you might ask? That's a new $8/month tier that launched today in the USA, see <a href=\"https://openai.com/index/introducing-chatgpt-go/\">Introducing ChatGPT Go, now available worldwide</a>. It's a tier that they first trialed in India in August 2025 (here's a mention <a href=\"https://help.openai.com/en/articles/6825453-chatgpt-release-notes#h_22cae6eb9f\">in their release notes from August</a> listing a price of ₹399/month, which converts to around $4.40).</p>\n   <p>I'm finding the new plan comparison grid on <a href=\"https://chatgpt.com/pricing\">chatgpt.com/pricing</a> pretty confusing. It lists all accounts as having access to GPT-5.2 Thinking, but doesn't clarify the limits that the free and Go plans have to conform to. It also lists different context windows for the different plans - 16K for free, 32K for Go and Plus and 128K for Pro. I had assumed that the 400,000 token window <a href=\"https://platform.openai.com/docs/models/gpt-5.2\">on the GPT-5.2 model page</a> applied to ChatGPT as well, but apparently I was mistaken.</p>\n   <p>Back to advertising: my biggest concern has always been whether ads will influence the output of the chat directly. OpenAI assure us that they will not:</p>\n   <blockquote>\n    <ul>\n     <li><strong>Answer independence</strong>: Ads do not influence the answers ChatGPT gives you. Answers are optimized based on what's most helpful to you. Ads are always separate and clearly labeled.</li>\n     <li><strong>Conversation privacy</strong>: We keep your conversations with ChatGPT private from advertisers, and we never sell your data to advertisers.</li>\n    </ul>\n   </blockquote>\n   <p>So what will they look like then? This screenshot from the announcement offers a useful hint:</p>\n   <p><img alt=\"Two iPhone screenshots showing ChatGPT mobile app interface. Left screen displays a conversation about Santa Fe, New Mexico with an image of adobe-style buildings and desert landscape, text reading &quot;Santa Fe, New Mexico—often called 'The City Different'—is a captivating blend of history, art, and natural beauty at the foot of the Sangre de Cristo Mountains. As the oldest and highest-elevation state capital in the U.S., founded in 1610, it offers a unique mix of Native American, Spanish, and Anglo cultures.&quot; Below is a sponsored section from &quot;Pueblo &amp; Pine&quot; showing &quot;Desert Cottages - Expansive residences with desert vistas&quot; with a thumbnail image, and a &quot;Chat with Pueblo &amp; Pine&quot; button. Input field shows &quot;Ask ChatGPT&quot;. Right screen shows the Pueblo &amp; Pine chat interface with the same Desert Cottages listing and an AI response &quot;If you're planning a trip to Sante Fe, I'm happy to help. When are you thinking of going?&quot; with input field &quot;Ask Pueblo &amp; Pine&quot; and iOS keyboard visible.\" src=\"https://static.simonwillison.net/static/2026/chatgpt-ads.jpg\"></p>\n   <p>The user asks about trips to Santa Fe, and an ad shows up for a cottage rental business there. This particular example imagines an option to start a direct chat with a bot aligned with that advertiser, at which point presumably the advertiser can influence the answers all they like!</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9248/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 计划在 ChatGPT 免费版和 'Go' 版中引入广告以扩大访问范围，同时强调广告与 AI 回复分离及用户隐私保护，并推出新的 'Go' 版和更新定价结构。",
+  "oneSentenceSummary": "OpenAI 计划在 ChatGPT 免费版和 'Go' 版中引入广告以扩大访问范围，同时强调广告与 AI 回复分离及用户隐私保护，并推出新的 'Go' 版和更新定价结构。",
+  "summary": "OpenAI 宣布将在 ChatGPT 免费版和新推出的 'Go' 版中引入广告，旨在通过降低使用限制来扩大访问范围。这一传闻已久的战略举措将首先在美国进行测试。公司还推出了全球范围内的 'ChatGPT Go' 订阅层级，月费 8 美元，此前已在印度进行过测试。OpenAI 向用户保证，广告不会影响 AI 的回复内容，回复将继续以提供最有帮助的信息为优化目标，且广告将始终明确标识并与对话内容分离。此外，用户对话将保持私密，不会向广告商出售任何数据。Pro、Business 和 Enterprise 订阅版将保持无广告状态。文章还提到定价页面更新存在混淆，指出 GPT-5.2 在不同计划中的上下文窗口能力存在差异：免费版为 16K，Go 和 Plus 版为 32K，Pro 用户为 128K。截图示例显示了上下文广告与 AI 回复并列显示，并提供与广告商机器人直接聊天的选项。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 在 ChatGPT 免费版和 'Go' 版中引入广告，以扩大访问范围并减少使用限制",
+      "explanation": "该策略旨在通过成本分摊使 ChatGPT 更广泛地覆盖用户群体，但不会影响 Pro、Business 和 Enterprise 等高级层级"
+    },
+    {
+      "point": "'Go' 版是新的 8 美元/月订阅模式，旨在提供比免费版更多权益，与现有的 Plus 订阅并行",
+      "explanation": "这一新层级扩展了 OpenAI 的定价结构，为想要比免费版更多功能但不愿支付 'Plus' 计划全价的用户提供了中间选择"
+    },
+    {
+      "point": "OpenAI 保证广告不会影响 ChatGPT 的回复，用户对话将保持私密",
+      "explanation": "这一承诺解决了用户对数据隐私和 AI 生成内容完整性的主要担忧，明确 AI 回复是独立优化的以提供最有帮助的信息"
+    },
+    {
+      "point": "上下文广告可能提供与广告商对齐机器人的直接互动",
+      "explanation": "提供的截图表明广告可能演变为交互式体验，允许用户直接与品牌特定的 AI 互动，然后广告商可以相应地定制回复"
+    }
+  ],
+  "keyQuotes": [
+    "未来几周内，我们计划开始在美国测试免费版和 Go 版的广告，这样更多人可以在较少使用限制或无需付费的情况下受益于我们的工具",
+    "广告不会影响 ChatGPT 给您的回答。回答是根据对您最有帮助的内容进行优化的。广告始终是分离且明确标识的",
+    "我们确保您与 ChatGPT 的对话对广告商保持私密，并且我们从不向广告商出售您的数据",
+    "这个特定示例设想了一个选项，可以开始与符合该广告商要求的机器人进行直接聊天，此时广告商大概可以随心所欲地影响回答！"
+  ],
+  "tags": [
+    "ChatGPT",
+    "OpenAI",
+    "广告",
+    "AI 政策",
+    "订阅模式"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 346,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768598906000,
+  "publishDateStr": "01-16",
+  "publishDateTimeStr": "2026-01-16 21:28:26"
+}

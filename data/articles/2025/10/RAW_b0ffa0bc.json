@@ -1,0 +1,52 @@
+{
+  "id": "RAW_b0ffa0bc",
+  "title": "微软发布开源代理框架，简化 AI 代理开发",
+  "url": "https://www.infoq.com/news/2025/10/microsoft-agent-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-02 08:33:00",
+  "author": "Almir Vuk",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Microsoft has announced the preview release of <a href=\"https://github.com/microsoft/agent-framework\">Microsoft Agent Framework</a>, an open-source software development kit designed to simplify the creation and deployment of artificial intelligence agents for developers across all skill levels, as reported in <a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/\">official blog posts</a> from the company's development teams.</p>\n   <p>The framework represents a significant consolidation effort, as stated by Microsoft engineers, unifying capabilities from two previously separate projects: Semantic Kernel, which provided enterprise-ready foundations, and AutoGen, developed by Microsoft Research for experimental multi-agent orchestration. According to the announcement, developers previously had to choose between innovation and production stability, a limitation the new framework aims to eliminate.</p>\n   <p>As noted in the technical documentation, Microsoft Agent Framework enables developers to build AI agents with minimal code requirements. The company demonstrated this simplicity with examples showing functional agents created in fewer than twenty lines of code. <em>\"Building AI agents shouldn't be rocket science,\"</em> as stated in the <a href=\"https://devblogs.microsoft.com/dotnet/introducing-microsoft-agent-framework-preview/\">.NET blog announcement</a>, emphasizing the framework's focus on accessibility for developers without specialized AI expertise.</p>\n   <p>The framework introduces <a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/#the-four-pillars-of-agent-framework\">four core pillars as outlined by Microsoft</a>.</p>\n   <ul>\n    <li><strong>Open Standards &amp; Interoperability</strong> - Enables <em>Model Context Protocol (MCP)</em> support,<em> Agent-to-Agent (A2A)</em> communication, and <em>OpenAPI</em>-based integration, ensuring portability across different runtime environments.</li>\n    <li><strong>Pipeline for Research</strong> - Advanced orchestration patterns from <em>AutoGen</em>, such as group chat, debate, and reflection capabilities, now delivered with enterprise-grade reliability.</li>\n    <li><strong>Extensible by Design</strong> - Modular framework featuring connectors to <a href=\"https://azure.microsoft.com/en-us/products/ai-foundry\"><em>Azure AI Foundry</em></a>, <em>Microsoft Graph</em>, <em>SharePoint</em>, <em>Elastic</em>, <em>Redis</em>, and additional services. Declarative agent configurations via YAML and JSON enable version-controlled workflow management.</li>\n    <li><strong>Ready for Production</strong> -&nbsp;Built-in observability through <em>OpenTelemetry</em>, integration with <em>Azure Monitor</em>, <em>Entra ID</em> security authentication, and CI/CD compatibility using GitHub Actions and Azure DevOps.</li>\n   </ul>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/10/microsoft-agent-framework/news/2025/10/microsoft-agent-framework/en/resources/1AgentStack-1759346424901.png\" style=\"width:100%;height:727px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/microsoft-agent-framework/en/resources/1AgentStack-1759346424901.png\" rel=\"share\"></p>\n   <p>Early <a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/#customer-momentum\">enterprise adoption</a> appears robust, as stated by Microsoft, in the original announcement blog post Microsoft, explains&nbsp;and provide detailed&nbsp;use cases by their customers. So interested readers can explore that section.</p>\n   <p>As announced, the framework supports multiple orchestration patterns including sequential, concurrent, group chat, and handoff workflows. These patterns, originally developed as research prototypes in <em><a href=\"https://www.microsoft.com/en-us/research/project/autogen/\">AutoGen</a></em>, now operate with production-grade durability and enterprise controls, as stated by Microsoft engineers.</p>\n   <p>The technical implementation provides support for both <em>Python </em>and .NET environments, as noted in the GitHub repository documentation. Developers can install the Python version through pip package manager or integrate .NET support through NuGet packages. The framework includes built-in connectors for various enterprise systems, pluggable memory modules supporting multiple backend stores, and declarative agent definitions through <em>YAML </em>or <em>JSON </em>configurations.</p>\n   <p>To get started developers can use following commands:</p>\n   <pre>\r\n<code>pip install agent-framework</code></pre>\n   <pre>\r\n<code>dotnet add package Microsoft.Agents.AI</code></pre>\n   <p>Microsoft has positioned the framework as part of its broader Azure AI ecosystem, as reported in the Foundry blog. The integration includes native support for Azure AI Foundry services, OpenTelemetry instrumentation for monitoring, and compatibility with existing Microsoft development tools including <em><a href=\"https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio&amp;ssr=false#overview\">Visual Studio Code through the AI Toolkit extension</a></em>.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/10/microsoft-agent-framework/news/2025/10/microsoft-agent-framework/en/resources/1VSCode_compressed-1759346424901.jpg\" style=\"width:100%;height:1099px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/microsoft-agent-framework/en/resources/1VSCode_compressed-1759346424901.jpg\" rel=\"share\"><em>(Usage of Visual Studio Code Extension, Source: <a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/\">Microsoft Official Blog</a>)</em></p>\n   <p>For developers currently using <a href=\"https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/#path-to-microsoft-agent-framework\">Semantic Kernel or AutoGen</a>, Microsoft has provided migration guides, as stated in the <a href=\"http://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/\">documentation</a>. The company emphasized following:</p>\n   <blockquote>\n    <p>This continuity means developers can preserve their existing investments while unlocking new capabilities. Microsoft Agent Framework is not a replacement for what came before — it is the natural evolution that unites innovation and stability</p>\n   </blockquote>\n   <p>The framework is available immediately in preview form through <a href=\"https://github.com/microsoft/agent-framework\">Microsoft's GitHub repository</a> and package managers for both Python and .NET ecosystems. Interested readers can also watch the <a href=\"https://www.youtube.com/watch?v=AAgdMhftj8w\">30 minute introduction video</a> made by Microsoft team.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Announces Open-Source Agent Framework to Simplify AI Agent Development\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Almir Vuk\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/microsoft-agent-framework/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759393980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软新的开源代理框架统一了语义内核和 AutoGen，通过生产就绪的功能和企业集成，简化了所有技术水平的 AI 代理开发。",
+  "oneSentenceSummary": "微软新的开源代理框架统一了语义内核和 AutoGen，通过生产就绪的功能和企业集成，简化了所有技术水平的 AI 代理开发。",
+  "summary": "本文宣布了微软的开源代理框架，这是一个新的软件开发工具包，旨在简化所有技术水平的开发人员创建和部署人工智能代理的过程。该框架代表了一次重要的整合，统一了语义内核和 AutoGen 的功能，不再需要在创新和生产稳定性之间做出妥协。它使开发人员能够以最少的代码构建 AI 代理，尤其方便那些不具备深厚 AI 专业知识的开发者使用。该框架建立在四个核心支柱之上：开放标准和互操作性（支持模型上下文协议、代理间通信和 OpenAPI 等标准）、研究管道（提供生产级 AutoGen 编排模式，例如群聊和辩论）、可扩展设计（通过连接器连接到 Azure AI Foundry、Microsoft Graph 等服务，并支持声明式 YAML/JSON 配置），以及生产就绪（提供可观测性，并与 OpenTelemetry/Azure Monitor、Entra ID 安全和 CI/CD 兼容）。支持 Python 和 .NET 环境，它与更广泛的 Azure AI 生态系统和 Visual Studio Code 深度集成，并为语义内核或 AutoGen 的现有用户提供迁移指南。",
+  "mainPoints": [
+    {
+      "point": "该框架整合了现有的微软 AI 项目，以提供统一的、生产就绪的解决方案。",
+      "explanation": "通过合并语义内核和 AutoGen，该框架兼顾了实验性创新和企业稳定性，简化了 AI 代理的开发流程，降低了开发复杂性。"
+    },
+    {
+      "point": "它通过最少的代码要求和强大的功能，大大降低了 AI 代理开发的入门门槛。",
+      "explanation": "开发人员可以用少于 20 行的代码构建复杂的代理，利用内置连接器、声明式配置和生产级可观测性，从而降低了使用门槛。"
+    },
+    {
+      "point": "该框架支持开放标准以及与微软企业生态系统的深度集成。",
+      "explanation": "它通过模型上下文协议、代理间通信和 OpenAPI 确保互操作性，同时与 Azure AI Foundry、Microsoft Graph 和 VS Code 等开发工具无缝集成。"
+    }
+  ],
+  "keyQuotes": [
+    "构建 AI 代理不应该是火箭科学。",
+    "这种连续性意味着开发人员可以保留他们现有的投资，同时解锁新的功能。微软代理框架不是对先前事物的替代，它是统一创新和稳定性的自然演变。"
+  ],
+  "tags": [
+    "AI 代理",
+    "开源",
+    "代理框架",
+    "微软",
+    "语义内核"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 570,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759393980000,
+  "publishDateStr": "2025-10-02",
+  "publishDateTimeStr": "2025-10-02 08:33:00"
+}

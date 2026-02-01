@@ -1,0 +1,54 @@
+{
+  "id": "RAW_79172f6d",
+  "title": "像外科医生一样写代码",
+  "url": "https://baoyu.io/translations/code-like-a-surgeon",
+  "date": "2025-10-24 16:54:11",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon\">Code like a surgeon</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"na1gah1yuu\">很多人都说，AI 会让我们统统变成“经理”或者“编辑”……但我认为，这种看法不仅不完整，甚至还有点危险！</p>\n   <p data-id=\"fbpzkagfra\">就我个人而言，我正努力<strong>像外科医生一样写代码。</strong></p>\n   <p data-id=\"ksp0zpae50\">外科医生可不是经理，他们是亲自动手干活的人！但他们的技术和时间被一个支持团队极大地放大了。这个团队会处理好所有准备工作、次要任务和行政杂务。这样一来，外科医生就能心无旁骛地专注于他们最擅长的关键事务。</p>\n   <p data-id=\"riksn9x6y7\">我现在用 AI 编程工具的目标，就是把 100% 的时间都花在真正重要的事情上。（作为一名 UI 原型设计师 <strong>（UI prototyper，也就是设计和制作产品初步模型的人）</strong>，这主要意味着捣鼓各种设计概念。）</p>\n   <p data-id=\"e26wqlqfhg\">事实证明，现在有很多次要任务，AI 智能体 (AI agents) 已经完全有能力帮忙处理了。最近我发现，把下面这些活儿交给 AI 就挺好：</p>\n   <ul>\n    <li>\n     <p data-id=\"uchh9wt61y\">在开始一项大任务前，先让它写一份关于代码库相关部分的指南。</p>\n    </li>\n    <li>\n     <p data-id=\"gft5x7xwez\">尝试对一个大改动进行“探路” <strong>（Spike out，软件开发术语，指快速做一个简单的原型来探索解决方案的可行性）</strong>。我经常不会直接用它的结果，但我会把它当作一个草图，帮我看清方向。</p>\n    </li>\n    <li>\n     <p data-id=\"s8r9qxe35m\">修复那些有明确要求的 Typescript 错误或 bug。</p>\n    </li>\n    <li>\n     <p data-id=\"3ajjjgt18a\">给我正在构建的功能写文档。</p>\n    </li>\n   </ul>\n   <p data-id=\"qu092vv9k0\">我经常发现，让这些次要任务在后台“异步” <strong>（async，指任务在后台运行，不会卡住你当前的工作）</strong> 跑着非常有用——比如我吃午饭的时候，甚至干脆让它跑上一整夜！</p>\n   <p data-id=\"bseaqwtowy\">当我坐下来准备开工时，我希望自己就像一个走进准备就绪的手术室的外科医生。一切都已准备停当，就等我来大显身手了。</p>\n   <p data-id=\"p6ncqdtion\">值得注意的是，我用 AI 处理“主要任务”和“次要任务”的方式，有着<em>天壤之别</em>。</p>\n   <p data-id=\"rybv4rgd9v\">对于核心的设计原型工作，我仍然会大量手写代码。即便用 AI，我也会非常小心，抠很多细节。我需要快速的反馈循环和良好的可见性。（比如，在这种场景下我就很喜欢 Cursor 的 tab 键自动补全功能）</p>\n   <p data-id=\"m24vygg4b6\">至于次要任务，我的态度就放松多了，我很乐意让一个 AI 智能体在后台“折腾”好几个小时。最终能把活儿干完才是最重要的；至于速度和可见性，就没那么要紧了。过去我处理这种长时间无人值守的任务时，首选是 Claude Code，但 Codex CLI <strong>（一个通过命令行使用 AI 编码的工具）</strong> 正在成为一个强有力的竞争者，甚至可能成为我的新宠。</p>\n   <p data-id=\"mmahrrzi2o\">这两种工作模式<em>截然</em>不同！这让我想起了 Andrej Karpathy <strong>（AI 领域的大牛，特斯拉前 AI 总监）</strong> 提出的 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.latent.space/p/s3\">“自主性滑块”</a> 概念。<strong>把“自主性光谱”的不同部分混为一谈是危险的</strong> —— 它们各自所需的工具和心态，差别真的非常大。</p>\n   <h2 data-id=\"t8a0wkh366\" id=\"t8a0wkh366\" data-toc-id=\"t8a0wkh366\">你的智能体不需要职业规划</h2>\n   <p data-id=\"44c6nt433g\">“软件外科医生”这个概念其实很早就有了——弗雷德·布鲁克斯 (Fred Brooks) 在他 1975 年的经典著作《人月神话》(The Mythical Man-Month) 中，将其归功于哈兰·米尔斯 (Harlan Mills)。他<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.embeddedrelated.com/showarticle/1484.php#:~:text=Mills%20proposes%20that%20each%20segment%20of%20a%20large%20job%20be%20tackled%20by%20a%20team%2C%20but%20that%20the%20team%20be%20organized%20like%20a%20surgical%20team%20rather%20than%20a%20hog%2Dbutchering%20team.\">提到</a>一个“首席程序员”应该由包括“副驾驶”(copilot) 和多名管理员在内的各种员工提供支持。当然，在那个年代，这个想法是让真人来扮演这些支持角色。</p>\n   <p data-id=\"5q4u7ma79s\">好了，这里有一个显而易见的观点：“AI 现在让这种方法在经济上变得可行了”，没错没错……但是，<strong>我 也注意到一个更微妙的东西在起作用，这和“地位等级”有关。</strong></p>\n   <p data-id=\"31hz2l74wi\">很多“次要”任务都是“苦差事” <strong>（grunt work，指繁琐、重复、技术含量不高的体力活或脑力活）</strong>，并不是工作中最有成就感或最具创造性的部分。我个人非常推崇那种“人人分担苦差事”的团队；我讨厌把所有脏活累活都丢给团队里地位较低的成员。没错，初级成员（junior）通常会干更多的杂活，但他们也应该得到很多有趣的任务来帮助自己成长。</p>\n   <p data-id=\"autpl7vqg1\">有了 AI，这种顾虑就完全消失了！<strong>现在我可以毫无心理负担地把纯粹的苦差事派出去。</strong> 而且 AI 7x24 小时随时待命，这一点太重要了。我绝不会在晚上 11 点打电话给一个人类实习生，叫他早上 7 点前准备好一份代码研究报告……但现在，我正指挥我的 AI 智能体这么干！</p>\n   <h2 data-id=\"ujuqhcxucz\" id=\"ujuqhcxucz\" data-toc-id=\"ujuqhcxucz\">Notion 也是为“外科医生”准备的？</h2>\n   <p data-id=\"ml65h2b5nk\">最后，我想聊聊这种工作方式和我的东家 <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://notion.com/\">Notion</a> 有什么关系。</p>\n   <p data-id=\"oat40wgcca\">首先，作为一名员工，我发现能在这样一个对 AI 编程工具持“牛市”态度 <strong>（bullish，金融术语，指非常看好、积极乐观）</strong> 的地方工作，价值真的无可估量。公司支持我大量使用 AI 编程工具，而且代码库也为此做好了准备，这让我的生产力猛增——<em>尤其</em>是对于我这样一个刚接触大型代码库的新人来说。</p>\n   <p data-id=\"s8wy1vg7ck\">其次，从产品角度来说——某种意义上，我想说我们正试图将这种工作方式带给程序员之外更广泛的知识工作者。当我想象这一切将如何展开时，我很喜欢这个心智模型：让每个人都能“像外科医生一样工作”。</p>\n   <p data-id=\"ds9zkmx44v\">我们的目标不是让你把核心工作外包出去，而是<strong>识别并委派那些次要的苦差事，这样你就能专注于真正重要的大事。</strong></p>\n   <hr>\n   <p data-id=\"750vsm3zyh\">如果你喜欢这个视角，也许你会想读读我写的其他几篇关于人机协作本质的文章：</p>\n   <ul>\n    <li>\n     <p data-id=\"7bsay83c07\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds\">AI 副驾驶够多了！我们需要的是 AI 抬头显示器 (HUD)</a>：“任何严肃对待 AI 设计的人，都应该考虑‘副驾驶’之外的其他形态，那些能更直接地扩展人类思维的形态……”</p>\n    </li>\n    <li>\n     <p data-id=\"1sgte2rg7c\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.geoffreylitt.com/2024/12/22/making-programming-more-fun-with-an-ai-generated-debugger\">AI 生成的工具能让编程更有趣</a>：“我没有（让 AI 写代码），而是用 AI 构建了一个自定义的调试器界面……这让我自己写代码变得更有趣了……”</p>\n    </li>\n    <li>\n     <p data-id=\"st9l0lwz5b\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.geoffreylitt.com/2023/02/26/llm-as-muse-not-oracle\">把 ChatGPT 当作灵感缪斯，而非万能神谕</a>：“如果我们不把大语言模型 (LLM) 看作回答问题的工具，而是把它看作向我们提问、激发我们创造力的工具，会怎么样？”</p>\n    </li>\n   </ul>\n   <hr>\n   <p data-id=\"pr6j5fw5k5\">来源: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon\">https://www.geoffreylitt.com/2025/10/24/code-like-a-surgeon</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章提出开发者应“像外科医生一样写代码”，利用 AI 工具处理次要任务，从而将精力集中于核心创造性工作。",
+  "oneSentenceSummary": "文章提出开发者应“像外科医生一样写代码”，利用 AI 工具处理次要任务，从而将精力集中于核心创造性工作。",
+  "summary": "文章倡导开发者应“像外科医生一样写代码”，即利用 AI 编程工具处理次要、重复性任务，从而将自身精力百分之百投入到核心的创造性工作中。作者作为一名 UI 原型设计师，将 AI 应用于编写代码库指南、探索性原型开发（Spike out）、修复 Typescript 错误及撰写文档等任务，并强调这些任务可异步运行。文章核心观点在于区分 AI 在“主要任务”（核心设计原型）和“次要任务”（苦差事）中的使用模式，这与 Andrej Karpathy 提出的“自主性滑块”概念不谋而合，前者需高度人工介入和快速反馈，后者则可完全委派给 AI 长时间处理。作者指出，AI 的介入消除了将“苦差事”分配给人类初级成员的道德顾虑，并能实现 7x24 小时的自动化处理，显著提升效率。最后，文章将这种工作模式与 Notion 的产品愿景相结合，旨在帮助更广泛的知识工作者聚焦高价值事务。",
+  "mainPoints": [
+    {
+      "point": "AI 工具能让开发者将时间聚焦于核心创造性工作",
+      "explanation": "通过将代码库指南、bug 修复、文档编写等次要任务委派给 AI，开发者可以像外科医生一样，心无旁骛地专注于核心设计和原型开发，极大提升工作效率和产出质量。"
+    },
+    {
+      "point": "区分 AI 在核心与次要任务中的使用模式至关重要",
+      "explanation": "核心设计原型工作需要开发者高度介入、快速反馈和精细控制；而次要任务则可异步交给 AI 长时间处理，更看重最终结果而非过程速度和可见性，这种区分能优化人机协作效率。"
+    },
+    {
+      "point": "AI 使“苦差事”委派无心理负担，显著提升团队效率",
+      "explanation": "AI 智能体能够全天候处理繁琐、技术含量不高的“苦差事”，消除了分配给人类初级成员的道德顾虑，使团队成员能专注于成长和更有趣的任务，同时保证了任务的及时完成。"
+    }
+  ],
+  "keyQuotes": [
+    "外科医生可不是经理，他们是亲自动手干活的人！但他们的技术和时间被一个支持团队极大地放大了。",
+    "我绝不会在晚上 11 点打电话给一个人类实习生，叫他早上 7 点前准备好一份代码研究报告......但现在，我正指挥我的 AI 智能体这么干！",
+    "把\"自主性光谱\"的不同部分混为一谈是危险的 ------ 它们各自所需的工具和心态，差别真的非常大。",
+    "我们的目标不是让你把核心工作外包出去，而是识别并委派那些次要的苦差事，这样你就能专注于真正重要的大事。"
+  ],
+  "tags": [
+    "AI编程",
+    "人机协作",
+    "软件工程",
+    "AI智能体",
+    "编程工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 86,
+  "wordCount": 2036,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761324851000,
+  "publishDateStr": "2025-10-24",
+  "publishDateTimeStr": "2025-10-24 16:54:11"
+}

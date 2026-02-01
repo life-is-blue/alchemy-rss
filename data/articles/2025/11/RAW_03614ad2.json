@@ -1,0 +1,55 @@
+{
+  "id": "RAW_03614ad2",
+  "title": "Spring gRPC 1.0.0 的后续步骤",
+  "url": "https://spring.io/blog/2025/11/11/spring-grpc-next-steps",
+  "date": "2025-11-11 00:00:00",
+  "author": "dsyer",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>This is a new blog post in the <a href=\"https://spring.io/blog/2025/09/02/road_to_ga_introduction\">Road to GA series</a>, this time updating everyone on the plans to integrate <a href=\"https://github.com/spring-projects/spring-grpc\">Spring gRPC</a> with <a href=\"https://github.com/spring-projects/spring-boot\">Spring Boot</a> 4. The original plan was to move the autoconfiguration from Spring gRPC into Spring Boot in time for the 4.0 release. Unfortunately we haven't been able to find the time to merge that change, but the good news is that we have instead added support for Spring Boot 4 to the existing Spring gRPC project, and are planning a 1.0 release in the coming days. This arrangement will continue until the merge can finally happen, most likely in an early milestone of Spring Boot 4.1. Users of Spring gRPC who are looking for longer term support will find it through this path, and as long as they continue to upgrade Spring Boot it should be a very straighforward process.</p>\n  <p>For the transition period (Spring gRPC 1.0 and Spring Boot 4.0), the BOM (bill of materials), autoconfiguration and starters, which are the recommended mechanism for consuming Spring gRPC, will stay at their current co-ordinates, i.e. with a groupId of <code>org.springframework.grpc</code>. So if you have been using Spring gRPC 0.12.0, you most likely can just change the version in your dependency management. The autoconfiguration classes themselves will have a package name change, so if you happen to be using those explicitly anywhere (probably a minority use case) you might have to change the imports as well. There might be other changes you have to make to your application to do with the migration from <a href=\"https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide\">Spring Boot 3.x to 4.x</a>.</p>\n  <p>Once the autoconfiguration is merged (projected to be in Spring Boot 4.1) you won't need a separate BOM and all you need do is change the co-ordinates in your dependency management for the starters. We will publish explicit guidance on that when the time comes.</p>\n  <h2 id=\"a-simple-example\"><a href=\"#a-simple-example\" aria-label=\"a simple example permalink\" class=\"anchor before\"></a>A simple example</h2>\n  <p>Suppose you had a gRPC server based on the old 0.12.0 release. With Maven it would look like this:</p>\n  <pre><code class=\"language-xml\">&lt;dependencyManagement&gt;\n\t&lt;dependencies&gt;\n\t\t&lt;dependency&gt;\n\t\t\t&lt;groupId&gt;org.springframework.grpc&lt;/groupId&gt;\n\t\t\t&lt;artifactId&gt;spring-grpc-dependencies&lt;/artifactId&gt;\n\t\t\t&lt;version&gt;0.12.0&lt;/version&gt;\n\t\t\t&lt;type&gt;pom&lt;/type&gt;\n\t\t\t&lt;scope&gt;import&lt;/scope&gt;\n\t\t&lt;/dependency&gt;\n\t&lt;/dependencies&gt;\n&lt;/dependencyManagement&gt;\n&lt;dependencies&gt;\n\t&lt;dependency&gt;\n\t\t&lt;groupId&gt;org.springframework.grpc&lt;/groupId&gt;\n\t\t&lt;artifactId&gt;spring-grpc-spring-boot-starter&lt;/artifactId&gt;\n\t&lt;/dependency&gt;\n...\n</code></pre>\n  <p>To upgrade to 1.0.0 you would just change the <code>&lt;version&gt;</code>. The same would work for Gradle - just change the version of the dependency management in</p>\n  <pre><code class=\"language-groovy\">dependencyManagement {\n    imports {\n        mavenBom 'org.springframework.grpc:spring-grpc-dependencies:0.12.0'\n    }\n}\ndependencies {\n    implementation 'org.springframework.grpc:spring-grpc-spring-boot-starter'\n...\n</code></pre>\n  <p>from <code>0.12.0</code> to <code>1.0.0</code>.</p>\n  <p>If you used the starters to manage dependencies, like in the sample above and in the samples in Spring gRPC, the rest of your application code should not need any changes.</p>\n  <p>If you refer to the autoconfiguration classes directly the package imports will change, for instance with a server you might have a <code>GrpcServerFactoryCustomizer</code>. None of the samples in the project need to do this, so you might not need to do anything either.</p>\n  <h2 id=\"immediate-deprecations\"><a href=\"#immediate-deprecations\" aria-label=\"immediate deprecations permalink\" class=\"anchor before\"></a>Immediate Deprecations</h2>\n  <p>The autoconfiguration and starter dependencies in Spring gRPC will be immediately deprecated on release. This is intentional and really nothing to worry about. It just makes it clear that we plan to supercede them with the next minor release (1.1.0 and Spring Boot 4.1), so the deprecations are all just to anticipate name changes in the dependency co-ordinates. There shouldn't be any need to deprecate classes or methods - we want the migration to the next release to be as easy as possible. The deprecation will come in the form of a repeat of this announcement when the 1.0.0 release is published.</p>\n  <h2 id=\"summary\"><a href=\"#summary\" aria-label=\"summary permalink\" class=\"anchor before\"></a>Summary</h2>\n  <p>Spring gRPC 1.0 is coming soon with the usual OSS and commercial support arrangements. There are currently no snapshots to try, but as soon as the build is green we will be publishing 1.0.0-RC1 to tide you over to 1.0.0. I will update this article when that happens. The new release will be dependent on Spring Boot 4.0, instead of being a dependency <em>of</em> Spring Boot as originally planned. There should be minimal disruption for projects already using version 0.x of Spring gRPC.</p>\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了即将发布的 Spring gRPC 1.0 版本，以及其与 Spring Boot 4.0 的临时集成，并阐述了未来将自动配置完全合并到 Spring Boot 4.1 中以简化迁移流程的计划。",
+  "oneSentenceSummary": "本文详细介绍了即将发布的 Spring gRPC 1.0 版本，以及其与 Spring Boot 4.0 的临时集成，并阐述了未来将自动配置完全合并到 Spring Boot 4.1 中以简化迁移流程的计划。",
+  "summary": "作为“迈向 GA（正式发布）”系列文章的一部分，本文提供了 Spring gRPC 与 Spring Boot 集成的最新进展。最初计划将 Spring gRPC 的自动配置合并到 Spring Boot 4.0 的方案有所延迟。作为替代方案，Spring gRPC 项目自身增加了对 Spring Boot 4.0 的支持，并计划发布 1.0 版本。在此过渡期间（Spring gRPC 1.0 与 Spring Boot 4.0），用户仍将使用 `org.springframework.grpc` 作为 BOM 和起步依赖的 groupId，主要工作是更新版本。自动配置类的少量包名更改可能会影响部分直接用户。展望未来，自动配置预计将合并到 Spring Boot 4.1 中，届时将不再需要单独的 Spring gRPC BOM，用户只需更新起步依赖的依赖坐标即可。文章还指出，Spring gRPC 1.0 的自动配置和起步依赖将在发布后立即被弃用，这标志着未来将转向 Spring Boot 4.1 的集成解决方案，旨在最大程度地降低未来迁移的风险。",
+  "mainPoints": [
+    {
+      "point": "Spring gRPC 1.0 将作为独立项目提供对 Spring Boot 4.0 的即时兼容性。",
+      "explanation": "由于自动配置合并到 Spring Boot 4.0 的计划有所延迟，Spring gRPC 1.0 将提供直接支持，确保用户无需等待完全集成即可利用 gRPC 和最新的 Spring Boot 版本。"
+    },
+    {
+      "point": "从 Spring gRPC 0.x 迁移到 1.0 旨在最大程度地减少中断。",
+      "explanation": "Spring gRPC 0.x 的现有用户只需更新依赖管理中的版本即可，从而简化升级过程并减少所需的代码更改。"
+    },
+    {
+      "point": "计划在未来将完整的 Spring gRPC 自动配置集成到 Spring Boot 4.1 中。",
+      "explanation": "未来，通过消除对单独的 Spring gRPC BOM 的需求，可以进一步简化依赖管理，使 gRPC 更紧密地与核心 Spring Boot 生态系统保持一致。"
+    }
+  ],
+  "keyQuotes": [
+    "好消息是，我们已经转而为现有的 Spring gRPC 项目增加了对 Spring Boot 4 的支持，并计划在未来几天内发布 1.0 版本。",
+    "对于过渡期（Spring gRPC 1.0 和 Spring Boot 4.0），用于使用 Spring gRPC 的推荐机制——BOM、自动配置和起步依赖，将保留在其当前的坐标，即 groupId 为 `org.springframework.grpc`。",
+    "一旦自动配置合并（预计在 Spring Boot 4.1 中），您将不再需要单独的 BOM，而只需更改起步依赖在依赖管理中的依赖坐标。",
+    "Spring gRPC 中的自动配置和起步依赖将在发布时立即被弃用。这是故意的，无需过度关注。",
+    "对于已经使用 Spring gRPC 0.x 版本的项目，受到的影响应该很小。"
+  ],
+  "tags": [
+    "Spring gRPC",
+    "Spring Boot 4",
+    "依赖管理",
+    "微服务",
+    "API 开发"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 652,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762819200000,
+  "publishDateStr": "2025-11-11",
+  "publishDateTimeStr": "2025-11-11 00:00:00"
+}

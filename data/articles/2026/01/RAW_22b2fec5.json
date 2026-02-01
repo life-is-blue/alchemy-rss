@@ -1,0 +1,57 @@
+{
+  "id": "RAW_22b2fec5",
+  "title": "Flipkart 信任与安全团队使用 Qdrant 构建实时多模态相似性搜索系统",
+  "url": "https://qdrant.tech/blog/case-study-flipkart/",
+  "date": "2026-01-09 00:00:00",
+  "author": "Daniel Azoulai",
+  "siteName": "Qdrant",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"qdrant-post__header\">\n   <picture class=\"qdrant-post__preview\"><img src=\"https://image.jido.dev/20260109223458_title.jpg\" alt=\"Building real-time multimodal similarity search in Flipkart Trust &amp; Safety with Qdrant\" loading=\"lazy\"></picture>\n  </div>\n  <div class=\"row qdrant-post__breadcrumbs\"></div>\n  <div class=\"qdrant-post__body\">\n   <div class=\"table-of-contents\">\n    <p class=\"table-of-contents__head\">On this page:</p>\n    <nav id=\"TableOfContents\">\n     <ul>\n      <li>\n       <ul>\n        <li>\n         <ul>\n          <li><a href=\"#tackling-fraud-and-abuse-with-scalable-similarity-search\">Tackling fraud and abuse with scalable similarity search</a></li>\n          <li><a href=\"#limitations-of-prior-batch-based-methods\">Limitations of prior batch-based methods</a></li>\n          <li><a href=\"#evaluating-open-source-options-and-selecting-qdrant\">Evaluating open-source options and selecting Qdrant</a></li>\n          <li><a href=\"#building-a-multi-tenant-similarity-service\">Building a multi-tenant similarity service</a></li>\n          <li><a href=\"#detection-time-reduced-from-9-hours-to-1-minute\">Detection time reduced from 9 hours to 1 minute</a></li>\n          <li><a href=\"#looking-ahead-expanding-beyond-fraud-detection\">Looking ahead: Expanding beyond fraud detection</a></li>\n         </ul>\n        </li>\n       </ul>\n      </li>\n     </ul>\n    </nav>\n   </div>\n   <div class=\"qdrant-post__content\">\n    <h3 id=\"tackling-fraud-and-abuse-with-scalable-similarity-search\">Tackling fraud and abuse with scalable similarity search</h3>\n    <p>At Flipkart, the Trust &amp; Safety team is focused on detecting and preventing platform abuse and fraud. A critical part of this work involves running large-scale similarity searches across customer and seller-submitted data, particularly images. This allows the team to identify patterns associated with fraudulent activity, such as repeat returns or duplicate seller claims, before they cause downstream harm.</p>\n    <p><em>“Platform integrity is a constant challenge. To stay ahead of fraudulent actors, we needed a system that could compare multimodal data in real time, not just in long-running batch jobs.”</em></p>\n    <p>— Sourabh Sarkar, SDE-III, Trust &amp; Safety at Flipkart</p>\n    <h3 id=\"limitations-of-prior-batch-based-methods\">Limitations of prior batch-based methods</h3>\n    <p>The team’s earlier approach to similarity search used HBase with Locality-Sensitive Hashing (LSH). While workable for batch analysis, this system was slow and could not keep up with the demands of real-time fraud prevention. In some cases, finding similar images in historical data could take up to nine hours.</p>\n    <p>Additionally, Flipkart’s embedding models produce high-dimensional vectors (2048 dimensions), which added pressure on indexing performance and made efficient real-time querying more difficult.</p>\n    <h3 id=\"evaluating-open-source-options-and-selecting-qdrant\">Evaluating open-source options and selecting Qdrant</h3>\n    <p>To address these challenges, the team evaluated multiple open-source vector databases through a proof-of-concept. They chose Qdrant because it provided:</p>\n    <p>• <strong>Deployment flexibility</strong> with official Debian packaging, which fit well with Flipkart’s internal infrastructure</p>\n    <p>• <strong>Efficient HNSW indexing</strong> capable of handling simultaneous reads and writes</p>\n    <p>• <strong>Support for high-dimensional embeddings</strong>, critical for the models in production</p>\n    <h3 id=\"building-a-multi-tenant-similarity-service\">Building a multi-tenant similarity service</h3>\n    <p>The Trust &amp; Safety team then built a new multi-tenant similarity service. This platform now supports several important use cases:</p>\n    <p>• <strong>Fraud detection:</strong> Real-time image similarity checks to identify potentially abusive behavior</p>\n    <p>• <strong>Address clustering:</strong> Grouping unstructured customer addresses to improve last-mile delivery routing</p>\n    <p>• <strong>Retrieval-augmented generation (RAG):</strong> Serving as the retrieval layer for internal GenAI initiatives</p>\n    <p><em>“What used to take hours in our old batch workflows can now be done in under a minute. That change has been crucial in stopping fraud before it impacts customers.”</em></p>\n    <p>— Sourabh Sarkar, SDE-III, Trust &amp; Safety at Flipkart</p>\n    <h3 id=\"detection-time-reduced-from-9-hours-to-1-minute\">Detection time reduced from 9 hours to 1 minute</h3>\n    <p>The shift from batch processing to real-time search has significantly reduced detection time, from nine hours to under one minute. This improvement enables much earlier intervention against fraud.</p>\n    <p>From a developer perspective, integration with the Java gRPC SDK and Prometheus metrics endpoint simplified adoption and monitoring. The team also built custom adapters and backup scripts, ensuring the service could be reused by multiple teams without duplicating effort.</p>\n    <h3 id=\"looking-ahead-expanding-beyond-fraud-detection\">Looking ahead: Expanding beyond fraud detection</h3>\n    <p>The Trust &amp; Safety team continues to broaden its capabilities. Upcoming projects include:</p>\n    <p>• Expanding retrieval use cases for company-wide RAG systems</p>\n    <p>• Standardizing on a Kubernetes-based Qdrant deployment as the embedding store across different groups at Flipkart</p>\n    <p>• Exploring integrations with agentic AI frameworks to further automate detection and prevention workflows</p>\n    <p><em>“We see vector databases becoming a key part of modern AI infrastructure. It’s not only for fraud detection, but also as a foundation for new AI systems we’re experimenting with.”</em></p>\n    <p>— Sourabh Sarkar, SDE-III, Trust &amp; Safety at Flipkart</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Flipkart 信任与安全团队使用 Qdrant 将欺诈检测从 9 小时的批处理流程转变为实时多模态相似性搜索系统，将检测时间大幅缩短至一分钟以内，并支持新的 AI 应用。",
+  "oneSentenceSummary": "Flipkart 信任与安全团队使用 Qdrant 将欺诈检测从 9 小时的批处理流程转变为实时多模态相似性搜索系统，将检测时间大幅缩短至一分钟以内，并支持新的 AI 应用。",
+  "summary": "本文详细介绍了 Flipkart 信任与安全团队成功实施开源向量数据库 Qdrant，建立实时多模态相似性搜索能力的过程。面对之前基于批处理的欺诈检测系统需要长达九小时才能识别欺诈的局限性，团队转向了实时解决方案。在评估了多个开源选项后，Qdrant 因其部署灵活性、针对高维嵌入的高效 HNSW 索引以及处理并发读写的能力而被选中。这一转变使得欺诈检测时间从九小时大幅缩短至一分钟以内。基于 Qdrant 构建的新多租户相似性服务不仅支持欺诈检测，还支持地址聚类，并作为内部 GenAI 计划（RAG）的检索层。Flipkart 计划进一步扩展 Qdrant 的使用，用于公司范围的 RAG 系统、基于 Kubernetes 的部署以及与智能体 AI 框架的集成。",
+  "mainPoints": [
+    {
+      "point": "Flipkart 成功从缓慢的批处理欺诈检测迁移到实时多模态相似性搜索",
+      "explanation": "他们使用 HBase 和 LSH 的旧系统进行相似性搜索需要长达九小时，严重阻碍了及时打击欺诈的能力。新的基于 Qdrant 的系统将此时间缩短至一分钟以内。"
+    },
+    {
+      "point": "Qdrant 因其部署灵活性、高效的 HNSW 索引和对高维嵌入的支持而被选中",
+      "explanation": "这些特性对于处理 Flipkart 的 2048 维向量并无缝集成到现有基础设施至关重要，实现了强大的实时性能。"
+    },
+    {
+      "point": "多租户相似性服务不仅增强了欺诈检测，还支持其他关键用例",
+      "explanation": "除了实时欺诈识别，该服务还用于地址聚类以优化配送，并作为内部生成式 AI（RAG）计划的检索层。"
+    },
+    {
+      "point": "这一转变展示了实时向量搜索在大型平台运营效率方面的显著影响",
+      "explanation": "将检测时间从数小时缩短至数分钟带来了切实的业务优势，能够主动干预欺诈活动，并展示了向量数据库的实际价值。"
+    }
+  ],
+  "keyQuotes": [
+    "平台完整性是一个持续的挑战。为了领先于欺诈者，我们需要一个能够实时比较多模态数据的系统，而不仅仅是在长时间运行的批处理作业中。",
+    "过去在我们旧的批处理工作流中需要数小时才能完成的任务，现在可以在一分钟内完成。这一变化对于在欺诈影响客户之前阻止它至关重要。",
+    "我们看到向量数据库正在成为现代 AI 基础设施的关键部分。它不仅用于欺诈检测，还为我们正在试验的新 AI 系统奠定了基础。"
+  ],
+  "tags": [
+    "向量数据库",
+    "实时搜索",
+    "欺诈检测",
+    "多模态 AI",
+    "Qdrant"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 560,
+  "domain": "qdrant.tech",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_a88b15",
+  "sourceName": "Qdrant",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767916800000,
+  "publishDateStr": "01-09",
+  "publishDateTimeStr": "2026-01-09 00:00:00"
+}

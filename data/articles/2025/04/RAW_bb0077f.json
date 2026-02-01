@@ -1,0 +1,55 @@
+{
+  "id": "RAW_bb0077f",
+  "title": "110: 与明势夏令聊 Agent 竞争：通用入口之战就要来，创业要做垂、做专",
+  "url": "https://www.xiaoyuzhoufm.com/episode/67fd8cafcc06f8ff48a73642",
+  "date": "2025-04-14 22:30:00",
+  "author": "晚点聊 LateTalk",
+  "siteName": "晚点聊 LateTalk",
+  "content": "<p><strong><span>「与模型公司的主航道保持距离。」</span></strong></p><span></span>\n<p><span>2022 年初，夏令在 AI 热潮之前，投资了大模型创业公司 MiniMax 的天使轮。明势创始合伙人黄明明后来曾在暗涌组织的活动上，和 MiniMax 创始人闫俊杰一起回忆投资故事：在米哈游联创刘伟介绍下，明势第一次见了闫俊杰，那会儿其实大家都没太明白闫俊杰要做什么。“好在，夏令听懂了，回来后说，这个项目一定要投”。夏令也是文生图应用 LibLib.ai 和具身智能明星公司逐际动力的早期投资人。</span></p><span></span>\n<p><span>这一期，我和夏令聊了 Agent 行业的竞争形势推演。</span></p><span></span>\n<p><span>在他的认知里，Agent 横跨软硬件——除了 DeepResearch、Devin 这些主要在云端的Agent，以及接下来可能会进入白热化竞争的与手机结合的 Agent；和车结合的自动驾驶，和机器人结合的具身都是 Agent。它们各自处于不同的成熟阶段和竞争形势中。</span></p><span></span>\n<p><span>夏令的观察和判断是，今年下半年开始，围绕入口级 Agent 的大战就会拉开。最为焦灼的战场会是以手机为终端的通用 Agent 产品竞争，主要玩家是掌握超级 App 或流量的大厂和自己能迭代模型的头部大模型公司。OpenAI、Google、Meta、字节、阿里、腾讯都不会放过这个机会，美团、小红书，乃至智能汽车领域的理想也都跃跃欲试。</span></p><span></span>\n<p><span>而在早期投资视野里，大多数创业公司的机会可能在于垂直和专业的 Agent。更通用的 Agent 很可能会因处在模型公司主航道上而备受挑战。模型公司的主航道边界在哪儿？今年 2 月 Google 的一份白皮书有一个比较清晰的框架，我们在节目中有展开。</span></p><span></span>\n<p><img src=\"https://hv.z.wiki/autoupload/20250414/UJb8/1526X794/974c7786-df11-46a2-a33c-f92d2fac680a.png\" alt=\"\"><br><span>图注：Google Agents 白皮书中的能力框架图。</span></p><span></span>\n<p><span>夏令已经投资了一些不同的垂直 Agent 商业模式，这也是中美差异所在——在中国，一些新公司不再用做工具的思路做 Agent，来赚订阅的钱，而是用 Agent 直接做服务，获取收入分成。因为中国客户更愿意为结果本身付费，而不是为效率付费。</span></p><span></span>\n<p><span>至于近期被朱啸虎的言论推到风口浪尖的具身智能，夏令投资了这个行业，也从他的角度讲了风险：具身最大的危险，并不是朱啸虎提到的目前没有商业化的 PMF，不能去工厂和商店打工、搬砖，而是具身模型的技术还没有收敛，机器人大脑还没来到它的 GPT-3 的时刻。</span></p><span></span>\n<p><strong><span>本期嘉宾：</span></strong><br><span>夏令，明势创投合伙人，邮箱：</span><a href=\"mailto:xialing@future-cap.com\"><span>xialing@future-cap.com</span></a></p><span></span>\n<p><strong><span>时间线跳转：</span></strong><br><span></span><strong><span><a class=\"timestamp\" data-timestamp=\"6\">00:06</a> 开场介绍</span></strong></p><span></span>\n<p><strong><span>跨软硬件视角的 Agent &amp; Google 白皮书的里的技术框架</span></strong><span> </span><br><span><a class=\"timestamp\" data-timestamp=\"297\">04:57</a> OpenAI 提出 5 级分类，推理是 L2、Agent 是 L3，DeepSeek 爆火是 L2 对 L1 的降维打击，所有人开始提前想 L3</span><br><span><a class=\"timestamp\" data-timestamp=\"674\">11:14</a> Agent 技术框架：模型+编排层（目标理解、推理、记忆）+工具使用</span><br><span><a class=\"timestamp\" data-timestamp=\"863\">14:23</a> OpenAI 全局记忆功能上线，新的 wow 时刻</span><br><span><a class=\"timestamp\" data-timestamp=\"979\">16:19</a> 更强推理能力，会削减 workflow 优势 </span><br><span><a class=\"timestamp\" data-timestamp=\"1192\">19:52</a> MCP 成为工具使用的主流生态，更利好模型公司而非应用公司</span></p><span></span>\n<p><strong><span>通用入口大战，下半年就拉开序幕</span></strong><br><span> <a class=\"timestamp\" data-timestamp=\"1377\">22:57</a> 已经逃离九宫格的美团等公司，不想再回到“九宫格”</span><br><span> <a class=\"timestamp\" data-timestamp=\"1521\">25:21</a> 美团、滴滴最初可以拒绝接入其它公司的 Agent，但这也许会给身后的第二名创造机会</span><br><span> <a class=\"timestamp\" data-timestamp=\"1645\">27:25</a> 云端→手机→新终端，通用 Agent 的入口数量递减；Agent 也会冲击互联网传统的广告商业模式</span><br><span> <a class=\"timestamp\" data-timestamp=\"1942\">32:22</a> 大厂布局眼镜端 Agent，Meta 牌面最好</span><br><span> <a class=\"timestamp\" data-timestamp=\"2167\">36:07</a> B（字节）AT 三家，生态相对封闭，互通可能性是什么？一个待验证的预言：下半年就会看到巨头间的入口 Agent 竞争</span></p><span></span>\n<p><strong><span>模型大厂 vs 应用创业，边界在哪儿？</span></strong><br><span><a class=\"timestamp\" data-timestamp=\"2265\">37:45</a> 创业要和模型主航道保持距离</span><br><span><a class=\"timestamp\" data-timestamp=\"2600\">43:20</a> GPT 4o 对泛 C 文生图应用冲击大，却能帮 to 专业人群的文生图应用打 Adobe</span><br><span><a class=\"timestamp\" data-timestamp=\"3044\">50:44</a> 模型大厂和 Agent 应用的边界在于前者都有泛 C 野心，后者更擅长服务精准人群，做“最后一公里”</span><br><span><a class=\"timestamp\" data-timestamp=\"3204\">53:24</a> 离模型主航道太近的通用 Agent，壁垒不能在技术本身</span></p><span></span>\n<p><strong><span>垂直 Agent 创业机会</span></strong><br><span><a class=\"timestamp\" data-timestamp=\"3292\">54:52</a> Agent 概念火后，一批已存在的 RPA 公司先受益</span><br><span><a class=\"timestamp\" data-timestamp=\"3451\">57:31</a> 新公司机会：重塑流程（如 Shein）、规模化原本不能规模化的行业、找到低垂的果实（如满帮）</span><br><span><a class=\"timestamp\" data-timestamp=\"3724\">01:02:04</a> 实例：用 AI 帮银行起诉坏账，1 个月发起超 1 万起案件，分收入提成</span><br><span><a class=\"timestamp\" data-timestamp=\"4110\">01:08:30</a> 为什么不是律所+AI，而是原生 AI 公司来做这件事？</span><br><span><a class=\"timestamp\" data-timestamp=\"4349\">01:12:29</a> 这类项目的团队画像：懂行业+懂 AI</span><br><span><a class=\"timestamp\" data-timestamp=\"4510\">01:15:10</a> Kill time 的内容型 Agent，内核不是解决任务，而是有一定自主性；在当前记忆受限的情况下，还提供不了长期关系</span><br><span><a class=\"timestamp\" data-timestamp=\"4638\">01:17:18</a> 短期机会是做新型内容平台</span><br><span><a class=\"timestamp\" data-timestamp=\"4932\">01:22:12</a> 远期想象：工具 Agent 和陪伴 Agent 的融合</span><br><span><a class=\"timestamp\" data-timestamp=\"5075\">01:24:35</a> 未来 3 年再不到“GPT-3 时刻”可能是个大泡沫，但这是早期投资可以容忍的风险</span><br><span><a class=\"timestamp\" data-timestamp=\"5502\">01:31:42</a> 结尾分享，那些创业公司和开源历史的启发——《九胜一败》、《安卓传奇》、《与开源同行》</span></p><span></span>\n<p><span><a class=\"timestamp\" data-timestamp=\"5859\">01:37:39</a> 本期连点成线</span></p><span></span>\n<p><strong><span>相关链接：</span></strong><br><span></span><a href=\"https://www.kaggle.com/whitepaper-agents\" data-url=\"https://www.kaggle.com/whitepaper-agents\"><span>Google Agents 白皮书原文</span></a><br><span></span><a href=\"https://www.xiaoyuzhoufm.com/episode/67cdb53f7ccfd410926b0c66\" data-url=\"https://www.xiaoyuzhoufm.com/episode/67cdb53f7ccfd410926b0c66\"><span>晚点聊107：与真格戴雨森长聊 Agent：各行业都会遭遇“李世石时刻”，Attention is not all you need</span></a></p><span></span>\n<p><strong><span>剪辑制作：Nick</span></strong><br><span></span><strong><span>本期主播：</span></strong><span>小红书 @</span><a href=\"https://www.xiaohongshu.com/user/profile/5dfa9e92000000000100626f?xsec_token=YBSKzbnOGWpnyJ5fxw_yafTdnAUIDw-EfCtqmFTkCIM2o=&amp;xsec_source=app_share&amp;xhsshare=CopyLink&amp;appuid=5dfa9e92000000000100626f&amp;apptime=1736682459&amp;share_id=331aecb9ca7941f498d81fb9c32ea810\" data-url=\"https://www.xiaohongshu.com/user/profile/5dfa9e92000000000100626f?xsec_token=YBSKzbnOGWpnyJ5fxw_yafTdnAUIDw-EfCtqmFTkCIM2o=&amp;xsec_source=app_share&amp;xhsshare=CopyLink&amp;appuid=5dfa9e92000000000100626f&amp;apptime=1736682459&amp;share_id=331aecb9ca7941f498d81fb9c32ea810\"><span>曼祺_火柴Q</span></a><span>，即刻 @</span><a href=\"https://okjk.co/FBoH1Q\" data-url=\"https://okjk.co/FBoH1Q\"><span>曼祺_火柴Q</span></a></p><span></span>\n<p><img src=\"https://cdn.z.wiki/autoupload/20250129/p96l/1428X298/%E6%92%AD%E5%AE%A2-%E7%BB%93%E5%B0%BE%E4%BD%9C%E8%80%85%E7%AD%BE%E5%90%8D.png\" alt=\"\"></p><span></span>\n<p><strong><span>☆《晚点聊 LateTalk》建立「 播客听友群」啦！☆</span></strong></p><span></span>\n<p><span>欢迎关注科技、商业大公司动态和创业创新的小伙伴进群交流，第一时间收听新节目。</span><br><span>这里有更多互动，更多话题讨论。欢迎贡献选题 &amp; 推荐嘉宾。</span></p><span></span>\n<p><span>请先添加「晚点」小助手的微信号，</span><strong><span>备注：“晚点聊”</span></strong><span>，我们邀请您入群。</span></p><span></span>\n<p><img src=\"https://cdn.z.wiki/autoupload/20250114/en02/1991X754/%E6%88%AA%E5%B1%8F2025-01-14_15.34.07.png\" alt=\"\"></p><span></span>\n<p><strong><span>关注公众号《晚点 LatePost》和《晚点对话》，阅读更多商业、科技文章：</span></strong></p><span></span>\n<p><img src=\"https://hv.z.wiki/autoupload/20250129/DqTi/1452X514/%E6%92%AD%E5%AE%A2%E7%BB%93%E5%B0%BE%E6%88%AA%E5%9B%BE.png\" alt=\"\"></p>",
+  "aiSummary": "明势创投夏令深度剖析 AI Agent 领域竞争格局，强调垂直 Agent 创业机会，并警示具身智能商业化风险。",
+  "oneSentenceSummary": "明势创投夏令深度剖析 AI Agent 领域竞争格局，强调垂直 Agent 创业机会，并警示具身智能商业化风险。",
+  "summary": "本期《晚点聊 LateTalk》由明势创投合伙人夏令分享了对 AI Agent 行业竞争格局的深度思考。他认为 Agent 是横跨软硬件的机遇，通用 Agent 的入口之争即将展开，而垂直和专业的 Agent 是创业公司的机会所在。夏令强调了模型能力、编排层和工具使用在 Agent 技术框架中的重要性，并分析了中美在 Agent 商业模式上的差异。此外，他还对具身智能的商业化风险提出警示，认为其技术尚未收敛。本期内容还涉及了 AI 对传统商业模式的挑战、大模型公司与创业公司的竞合关系等话题，为技术从业者和投资者提供了有价值的参考。",
+  "mainPoints": [
+    {
+      "point": "通用 Agent 入口竞争激烈，大厂和模型公司纷纷入局",
+      "explanation": "OpenAI、Google、Meta、字节、阿里、腾讯等巨头均有意争夺通用 Agent 入口，竞争焦点集中在手机端等移动场景。"
+    },
+    {
+      "point": "垂直 Agent 是创业公司的机会，需与模型公司主航道保持距离",
+      "explanation": "创业公司应专注于特定领域，提供专业化的 Agent 服务，避免与大模型公司在通用 Agent 领域直接竞争。"
+    },
+    {
+      "point": "具身智能商业化面临挑战，技术尚未收敛是主要风险",
+      "explanation": "具身智能在预训练和泛化能力方面仍有不足，大规模商业化应用尚需时日，投资者应保持谨慎。"
+    }
+  ],
+  "keyQuotes": [
+    "在早期投资的事业里，大多数创业公司的机会可能在垂直和专业的 agent，更通用的 agent 很可能会因为处在模型公司在主航道上而备受挑战。",
+    "模型公司它的认知的理解，或者说它格局的高度是远高于应用型公司，也远高于智深公司。因为在我看来不管是自动驾驶公司还是巨星公司，其实它本质也是一家 agent 的公司。",
+    "其实技术它只是一种手段，就是帮你把之前非标的非结构化的事情可以标准化、结构化，从而可以规模化。",
+    "我们想说的是，今天这个里面的 q time 里面的这些 agent，他今天他能做的事情更多是提供情绪价值，而不是能够真的能够提供情感关系。",
+    "首先最积极的方面是整个技术进步的这个斜率还是非常陡峭的，它还是在持续拉动着整个 AI 和包括 AI agent 的能力的提升。"
+  ],
+  "tags": [
+    "AI Agent",
+    "通用Agent",
+    "垂直Agent",
+    "具身智能",
+    "大模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1906,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f7cf32",
+  "sourceName": "晚点聊 LateTalk",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1744669800000,
+  "publishDateStr": "2025-04-14",
+  "publishDateTimeStr": "2025-04-14 22:30:00"
+}

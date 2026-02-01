@@ -1,0 +1,57 @@
+{
+  "id": "RAW_1e4d5b57",
+  "title": "Vibe Coding 方法论：不会编程的人如何用 AI 写出能跑的代码",
+  "url": "https://baoyu.io/blog/vibe-coding-ai-code-for-non-programmers",
+  "date": "2026-01-10 05:48:22",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"cdxrg61ypn\">前几天看到一篇文章《how to vibe code w/ claude code》<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/elenakvcs/article/2008228601980985550\">https://x.com/elenakvcs/article/2008228601980985550</a> <span data-name=\"link\" data-type=\"emoji\">🔗</span>，作者 Elena 是一位 AI 研究员，每天读论文、测模型、写报告，理解 AI 的工作原理，却从没自己写过代码。直到有一天她用自然语言向 Claude 描述了一个需求，45 秒后拿到一段 Python 脚本，运行，成功。原本要花 6 小时手动清理的 4000 行数据，一分钟搞定。</p>\n   <p data-id=\"z20rmbkm4n\">她完全不懂那些代码是什么意思。但它跑起来了。</p>\n   <p data-id=\"2nzna4x3f8\"><strong>这就是 vibe coding：不是学会编程，而是学会“说清楚你要什么”。</strong></p>\n   <h2 data-id=\"i3k0wj82u5\" id=\"i3k0wj82u5\" data-toc-id=\"i3k0wj82u5\">失败的人都栽在同一个坑里</h2>\n   <p data-id=\"zes6kl2cwe\">大多数人对 vibe coding 有个误解：以为要先学点 Python 或 JavaScript 才能开始。</p>\n   <p data-id=\"4uwp2fwvet\">不是的。</p>\n   <p data-id=\"rseqt081ki\"><strong>vibe coding 的核心技能是沟通能力</strong>，是你能不能把需求描述得足够具体、足够清晰，让 AI 没有猜测的空间。</p>\n   <p data-id=\"f1dnyp0ebu\">看这两段提示词的区别：</p>\n   <p data-id=\"6k9pjjzs52\"><strong>模糊版：</strong> “帮我做个邮件工具”</p>\n   <p data-id=\"1kb0cl1rey\"><strong>具体版：</strong> “写一个 Python 脚本，读取一个 CSV 文件，检查每一行的邮箱格式是否正确，去掉重复的，输出一个只包含有效邮箱的新 CSV，最后打印处理了多少行、多少无效、多少重复”</p>\n   <p data-id=\"xoj1qus00e\">第一段提示词，AI 只能猜你想要什么，大概率猜错。第二段提示词，AI 不需要猜你想要什么，清楚的明白你想要什么，能按照你的需求生成代码，甚至还能帮你验证代码是否能满足要求。</p>\n   <p data-id=\"q42knpv7z3\"><strong>这不是编程，这是把需求说清楚。</strong></p>\n   <p data-id=\"ewmbnumatz\">Elena 有一个比喻：把 AI 当成一个非常聪明但对你的情况一无所知的实习生。你不会跟实习生说“把那个数据处理一下”，你会说清楚是哪个数据、做什么处理、输出成什么样。对 AI 也一样。</p>\n   <p data-id=\"lem56195ib\"><strong>怎么把需求说清楚？几个实用技巧：</strong></p>\n   <ul>\n    <li>\n     <p data-id=\"bdbo6uc5ri\">说清楚<strong>输入</strong>（数据从哪来、什么格式、文件在哪）</p>\n    </li>\n    <li>\n     <p data-id=\"578poczty4\">说清楚<strong>处理逻辑</strong>（每一步做什么、先做什么后做什么、有什么特殊规则）</p>\n    </li>\n    <li>\n     <p data-id=\"ov5utbrsxz\">说清楚<strong>输出</strong>（结果长什么样、存到哪、要不要打印摘要）</p>\n    </li>\n    <li>\n     <p data-id=\"68spcm8dsz\">说清楚<strong>边界情况</strong>（遇到空值怎么办、格式不对怎么办）</p>\n    </li>\n    <li>\n     <p data-id=\"tn6g56jip2\">给个<strong>例子</strong>（比如输入是 A，输出应该是 B）</p>\n    </li>\n   </ul>\n   <p data-id=\"hfa4cntfg9\">你不需要懂技术术语，但你得像写工作交接文档一样，把每个细节想清楚写明白。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-09/illustration-01.png\" data-width=\"100%\" data-align=\"center\" alt=\"模糊 vs 具体沟通对比\">\n   <h2 data-id=\"zueumjxlca\" id=\"zueumjxlca\" data-toc-id=\"zueumjxlca\">小步迭代：软件工程验证过的最佳实践</h2>\n   <p data-id=\"g0bkyfo41x\">Elena 分享了一个典型的翻车经历。</p>\n   <p data-id=\"tcy60f5jhi\">她想做一个 Twitter 书签分析器：拉取书签、分析内容、按主题分类、生成周报。听起来不复杂。</p>\n   <p data-id=\"vmt4i34kdw\">第一次尝试，她直接告诉 Claude：“帮我做一个 Twitter 书签分析器”。</p>\n   <p data-id=\"9uby4uh3md\">结果拿到一堆看不懂的代码，各种 API 调用、依赖安装、报错信息。折腾了 4 小时，放弃了。</p>\n   <p data-id=\"nz1f86d8k1\">一周后她换了个思路，同样的目标，完全不同的方法。</p>\n   <p data-id=\"soq99lwm36\"><strong>第一步：</strong> “写一个 Python 脚本，连接 Twitter API，拉取我最近的 100 条书签”。就这么多，不加别的。10 分钟，跑通了。</p>\n   <p data-id=\"xsaq0xg3jx\"><strong>第二步：</strong> “把每条书签的推文内容提取出来”。又 10 分钟，跑通了。</p>\n   <p data-id=\"aa8hcnscwv\"><strong>第三步：</strong> “按我定义的关键词给它们分类”。跑通了。</p>\n   <p data-id=\"k7sxm6ju8z\"><strong>第四步：</strong> “把结果保存成按分类整理的 JSON 文件”。跑通了。</p>\n   <p data-id=\"ntx9urzyte\">一小时，她做出了比之前 4 小时失败版本更好的东西。</p>\n   <p data-id=\"t0bs4kbqdi\"><strong>这是软件工程中被反复验证的最佳实践。</strong></p>\n   <p data-id=\"13kp5f140j\">有一张经典的图对比两种开发方式。错误方式：先做轮子，再做车架，再做车身，最后组装成车。中间任何一步，用户拿到的都是一堆零件，什么都干不了。正确方式：先做滑板，能滑了；再加个把手变滑板车，能骑了；再升级成自行车，再升级成摩托，最后变成汽车。<strong>每一步用户都能得到一个“能用”的东西。</strong></p>\n   <p data-id=\"w9vvcoyhb9\">vibe coding 也是一样。不是每次迭代“一部分功能”，而是每次迭代“一个能跑的小版本”。哪怕只是最简陋的版本，只要它能独立运行、给你反馈，你就能知道方向对不对，然后在这个基础上继续加功能。</p>\n   <p data-id=\"cm87jqhpc3\">这就是为什么“一次性要完整系统”总是失败，而“每次只做一件事”总能成功。前者你得等到最后才知道对不对，后者你每一步都在得到正反馈。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-09/illustration-02.png\" data-width=\"100%\" data-align=\"center\" alt=\"小步迭代：每一步都能用\">\n   <p data-id=\"wj8o1qzv84\">Elena 试过 ChatGPT、Cursor、Copilot、Gemini，最后固定用 Claude。</p>\n   <p data-id=\"0c0zpplz3s\">不是因为 Claude 写的代码更好，有时候其他工具写得更好。</p>\n   <p data-id=\"ybysv0g9aj\"><strong>是因为 Claude 会问。</strong></p>\n   <p data-id=\"03qulzuvxo\">用 ChatGPT 的时候，不管你的提示多模糊，它都会直接给你一个答案，让你自己发现哪里不对。而 Claude 经常会说：“确认一下，你是想要 X 还是 Y？”“我假设你要的是 Z，对吗？”</p>\n   <p data-id=\"51te1720f9\">对于不懂代码的人，这个差别至关重要。那些澄清问题帮她省下了无数小时，本来可能在调试一个解决错误问题的代码。</p>\n   <p data-id=\"o3p9pl1710\">不过，<strong>这个习惯是可以主动培养的</strong>。不管用什么工具，你都可以在交代任务时主动加一句：</p>\n   <ul>\n    <li>\n     <p data-id=\"zy48coxc9n\">“如果有不清楚的地方，请先跟我确认再动手”</p>\n    </li>\n    <li>\n     <p data-id=\"o24jcimui5\">“请提供 2-3 个方案让我选择，说明各自的优缺点”</p>\n    </li>\n    <li>\n     <p data-id=\"6f23rco9m9\">“在开始写代码之前，先用自然语言描述你的实现思路”</p>\n    </li>\n   </ul>\n   <p data-id=\"v8ur3fxgus\">如果你用 Claude Code 或者类似的 AI 开发工具，还可以把这些要求写进配置文件（比如 <code>CLAUDE.md</code> 或系统提示词），这样每次对话都会自动遵循。</p>\n   <p data-id=\"f1pb9jyv7m\">另一个区别是 Claude 会解释它为什么这么写。不用问，它就会告诉你为什么选择这个方案。对于想边做边学的人来说，这些解释比任何教程都有用。</p>\n   <img src=\"https://s.baoyu.io/imgs/2026-01-09/illustration-03.png\" data-width=\"100%\" data-align=\"center\" alt=\"先问清楚，再动手\">\n   <h2 data-id=\"7ufkrtlha6\" id=\"7ufkrtlha6\" data-toc-id=\"7ufkrtlha6\">能做什么，不能做什么</h2>\n   <p data-id=\"jo35azwgbw\">六个月里，Elena 用 vibe coding 做了这些东西：</p>\n   <ul>\n    <li>\n     <p data-id=\"fo8mtf2laj\">自动整理书签的脚本，每天早上跑一遍，省半小时</p>\n    </li>\n    <li>\n     <p data-id=\"3e1h7utsiw\">监控特定账号发帖的 Telegram 机器人</p>\n    </li>\n    <li>\n     <p data-id=\"1ggma5f8iq\">处理几百个 PDF 并生成可搜索摘要的数据管道</p>\n    </li>\n    <li>\n     <p data-id=\"n57xrd0u0i\">一个简单的 Chrome 扩展</p>\n    </li>\n    <li>\n     <p data-id=\"gqg1gr45hb\">一个把 4 小时报表工作压缩到 10 分钟的内部工具</p>\n    </li>\n    <li>\n     <p data-id=\"f3zwue7wcf\">价格监控器</p>\n    </li>\n    <li>\n     <p data-id=\"z8hm1n0nzk\">数据抓取脚本</p>\n    </li>\n   </ul>\n   <p data-id=\"s1u8kej4ap\">这些东西都不会改变世界。但它们都能跑，都在省时间或省钱。</p>\n   <p data-id=\"veh3qrixzd\">一年前，这里面大多数要找开发者做，几百到几千美元一个。现在一个下午搞定。</p>\n   <p data-id=\"673n7v4ns0\"><strong>这就是 vibe coding 真正的价值：不是让你变成工程师，而是让你能自己解决自己的问题。</strong></p>\n   <p data-id=\"dzx6hrvc7h\">但要清醒地认识边界。</p>\n   <p data-id=\"d210ht91g5\"><strong>适合 vibe coding 的场景：</strong> 个人自动化工具、一次性脚本、快速验证想法的原型、不涉及敏感数据的内部工具。</p>\n   <p data-id=\"dxj353oiv9\"><strong>不适合的场景：</strong> 金融、医疗等需要高可靠性的系统；需要长期维护迭代的产品；多人协作的代码库；涉及用户隐私和安全的应用。</p>\n   <p data-id=\"h7pcwd4695\">Elena 自己也说了：做复杂的、关键的东西，还是需要真正懂代码的人。但对于剩下那些场景：内部工具、自动化、简单产品、工作流优化，你不再需要工程学位。你需要的是清晰的思考和耐心。</p>\n   <h2 data-id=\"zrbzwsmz0x\" id=\"zrbzwsmz0x\" data-toc-id=\"zrbzwsmz0x\">从一个烦人的任务开始</h2>\n   <p data-id=\"yt3i0sothg\">Elena 这句话说的挺有道理：</p>\n   <blockquote data-id=\"qtvwunqrdo\">\n    <p data-id=\"4gc1bkw4ei\">“我到现在也不懂自己跑的代码在干什么。但我能做出东西来解决我的问题，这比任何证书都有用。”</p>\n   </blockquote>\n   <p data-id=\"324zb13jn7\">这不是说编程不重要了。编程当然重要，尤其是当你想做更复杂、更可靠、更大规模的东西时。</p>\n   <p data-id=\"bpuvnf8vw4\">但有了 AI，你不需要等到“学会了 Python”才开始。你可以先动手，边做边学。</p>\n   <p data-id=\"0udl5jrffd\"><strong>如果你想试试，别从创业想法开始，别从产品开始。找一个你经常做、觉得烦、重复性高的任务。</strong></p>\n   <p data-id=\"daijv327j2\">比如说：</p>\n   <ul>\n    <li>\n     <p data-id=\"n3iut17eam\">下载文件夹乱成一团，让 AI 写个脚本按类型、日期自动归档</p>\n    </li>\n    <li>\n     <p data-id=\"muczxm9ohn\">Excel 里一堆格式不统一的数据，批量处理、去重、格式化</p>\n    </li>\n    <li>\n     <p data-id=\"84tkp3xna1\">每天要看好几个网站的更新，写个脚本自动抓取汇总发给你</p>\n    </li>\n    <li>\n     <p data-id=\"qpl9miora8\">经常要把 Markdown 转成别的格式，一键搞定</p>\n    </li>\n    <li>\n     <p data-id=\"6cgd1bfbyt\">某个商品降价、某个账号发帖、某个日期到了，自动通知你</p>\n    </li>\n    <li>\n     <p data-id=\"u53ebnwse4\">重命名几百个文件、给图片加水印、提取 PDF 里的文字，等等</p>\n    </li>\n   </ul>\n   <p data-id=\"u0kpa61oyb\">然后像给一个什么都不知道的聪明人解释一样，把它描述出来：输入是什么，每一步要做什么，输出应该是什么样。</p>\n   <p data-id=\"ffpel994gr\">第一次大概率跑不通。别说“不行”，把报错信息贴上去，把相关代码贴上去，说清楚你期望发生什么、实际发生什么。</p>\n   <p data-id=\"4ov7yk7dp2\"><strong>模糊的问题得到模糊的回答，具体的问题一轮就能修好。</strong></p>\n   <p data-id=\"c41us6w9w2\">反复修，直到能跑。保存。然后加下一个功能。</p>\n   <p data-id=\"kizk22zomf\"><strong>“我有想法”和“我做出来了”之间的距离，从没有这么近过。</strong></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "“Vibe Coding”是一种通过清晰描述需求、小步迭代利用 AI 编写代码的方法论，帮助非程序员实现自动化并解决实际问题。",
+  "oneSentenceSummary": "“Vibe Coding”是一种通过清晰描述需求、小步迭代利用 AI 编写代码的方法论，帮助非程序员实现自动化并解决实际问题。",
+  "summary": "本文介绍了“Vibe Coding”方法论，旨在帮助不具备编程背景的人利用 AI 工具（如 Claude）撰写可运行的代码，以解决实际工作中的自动化需求。该方法论强调通过清晰、具体的自然语言描述需求，将 AI 视为需要明确指导的“聪明实习生”，并采取小步迭代的方式实现功能。文章指出，成功的关键在于沟通能力而非编程技能，推荐使用像 Claude 这样会主动提问、解释的 AI。\n作者还强调了 Vibe Coding 的适用场景（个人自动化、原型验证等）和局限性（不适用于高可靠性、长期维护的复杂系统），并鼓励读者从解决日常中重复性高、令人烦恼的任务入手进行实践。核心思想是 AI 极大地缩短了“有想法”到“做出来”的距离，让更多人能将创意落地。",
+  "mainPoints": [
+    {
+      "point": "Vibe Coding 核心并非编程技能，而是精确沟通能力。",
+      "explanation": "不是学习具体编程语言，而是学会像指导聪明但不知情的实习生一样，清晰、具体地向 AI 阐述需求，包括输入、处理逻辑、输出和边界条件。"
+    },
+    {
+      "point": "采用小步迭代是 Vibe Coding 的最佳实践。",
+      "explanation": "将大目标拆分为可以独立运行、每次都能提供反馈的小步骤，而非一次性构建完整系统，这符合软件工程的验证实践，能有效降低失败风险并持续获得正反馈。"
+    },
+    {
+      "point": "选择能主动提问和解释的 AI 工具能显著提高效率。",
+      "explanation": "像 Claude 这样会主动澄清问题、解释代码思路的 AI，能帮助不理解代码的用户避免耗时调试，即便其他工具代码生成质量更高，其澄清能力对非程序员至关重要。"
+    },
+    {
+      "point": "Vibe Coding 价值在于赋能个人解决问题，但有明确适用边界。",
+      "explanation": "它适合个人自动化工具、一次性脚本、快速原型等场景，但不适用于金融医疗等高可靠性系统、长期维护产品或涉及隐私安全的应用。"
+    },
+    {
+      "point": "实践 Vibe Coding 应从解决日常烦恼任务开始。",
+      "explanation": "不要从宏大创业想法开始，而是选择一些重复性高、令人烦恼的小任务，通过不断尝试、反馈和修正，逐步熟悉 AI 交互模式，将想法变为现实。"
+    }
+  ],
+  "keyQuotes": [
+    "这就是 vibe coding：不是学会编程，而是学会\"说清楚你要什么\"。",
+    "vibe coding 的核心技能是沟通能力，是你能不能把需求描述得足够具体、足够清晰，让 AI 没有猜测的空间。",
+    "第一次大概率跑不通。别说\"不行\"，把报错信息贴上去，把相关代码贴上去，说清楚你期望发生什么、实际发生什么。",
+    "\"我有想法\"和\"我做出来了\"之间的距离，从没有这么近过。",
+    "对于不懂代码的人，这个差别至关重要。那些澄清问题帮她省下了无数小时，本来可能在调试一个解决错误问题的代码。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 88,
+  "wordCount": 2718,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768024102000,
+  "publishDateStr": "01-10",
+  "publishDateTimeStr": "2026-01-10 05:48:22"
+}

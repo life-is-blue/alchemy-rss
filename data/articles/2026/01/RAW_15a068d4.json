@@ -1,0 +1,54 @@
+{
+  "id": "RAW_15a068d4",
+  "title": "刚刚，马斯克开源 𝕏 平台推荐算法",
+  "url": "https://www.ifanr.com/1652450?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2026-01-20 17:41:16",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>就在刚刚，马斯克正式宣布开源 𝕏（原 Twitter）平台的推荐算法代码。</p>\n  <p>与此同时，𝕏 工程团队（@XEng）确认，新版算法已完成底层重构，全面采用了与 xAI 的 Grok 模型相同的 Transformer 架构，这也标志着 𝕏 成为首个将核心流量分发逻辑完全透明化的主流社交平台。</p>\n  <p><img class=\"alignnone size-full wp-image-1652491\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/445.png!720\" alt=\"\" width=\"1196\" height=\"890\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/445.png!720 1196w, https://s3.ifanr.com/wp-content/uploads/2026/01/445-360x268.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/445-768x572.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/445-1024x762.png 1024w\" sizes=\"(max-width: 1196px) 100vw, 1196px\"></p>\n  <p>马斯克在开源后表示：</p>\n  <p>「我们知道这个算法很笨，需要大幅改进，但至少你可以看到我们实时且透明地努力让它变得更好。没有其他社交媒体公司这样做。</p>\n  <p>根据开源文档显示，新的推荐系统最核心的设计决策是「零人工特征工程」。</p>\n  <p>具体来说，𝕏 摒弃了传统推荐系统中大量依赖人工编写规则和启发式算法的做法，完全依赖基于 Grok 的 Transformer 模型。\n   <br>\n   系统不再主观定义什么是好内容，而是让模型通过学习用户的交互历史（点赞、回复、转发等）来自动判断相关性。</p>\n  <p><img class=\"alignnone size-full wp-image-1652489\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/2-2.png!720\" alt=\"\" width=\"1698\" height=\"3318\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/2-2.png!720 1698w, https://s3.ifanr.com/wp-content/uploads/2026/01/2-2-360x703.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/2-2-768x1501.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/2-2-524x1024.png 524w\" sizes=\"(max-width: 1698px) 100vw, 1698px\"></p>\n  <p>具体到用户的「For You」时间线生成流程，主要分为「召回」与「评分」两个关键阶段。</p>\n  <p>在第一阶段的「召回」环节，内容首先来自两大源头：代号为「Thunder」的内部网络系统负责毫秒级检索用户关注账号的最新动态。</p>\n  <p>而代号为「Phoenix Retrieval」的外部网络系统则利用机器学习在全球语料库中挖掘用户未关注但可能感兴趣的潜在内容。\n   <br>\n   随后，这些通过海选、被成功「召回」的海量候选帖子，会被送入第二阶段的核心——Phoenix 评分器。</p>\n  <p><img class=\"alignnone size-full wp-image-1652492\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/446.png!720\" alt=\"\" width=\"1694\" height=\"1030\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/446.png!720 1694w, https://s3.ifanr.com/wp-content/uploads/2026/01/446-360x219.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/446-768x467.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/446-1024x623.png 1024w\" sizes=\"(max-width: 1694px) 100vw, 1694px\"></p>\n  <p>这是一个基于 Grok-1 修改版的大模型，它不依赖预设标签，而是通过「注意力机制」直接预测用户对某条帖子做出特定动作的概率，既包括点赞、回复、点击等正面行为，也涵盖拉黑、不感兴趣等负面反馈。</p>\n  <p>当模型计算出概率后，最终决定帖子能否出现在用户屏幕上的，是一套严密的加权计算公式。\n   <br>\n   系统会将模型预测出的各种动作概率乘以相应的权重——例如点赞和转发带来正收益，而拉黑和举报则导致负分——最后加总得出最终得分，高分者优先展示。</p>\n  <p><img class=\"alignnone size-full wp-image-1652493\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/447.png!720\" alt=\"\" width=\"2918\" height=\"1582\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/447.png!720 2918w, https://s3.ifanr.com/wp-content/uploads/2026/01/447-360x195.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/447-768x416.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/447-1024x555.png 1024w\" sizes=\"(max-width: 2918px) 100vw, 2918px\"></p>\n  <p>为了保障阅读体验与安全，系统在评分前后均设有严密的「过滤器」：评分前会移除重复、已读或来自拉黑账号的内容；评分后则会进行可见性过滤，剔除已删除或违规信息，并引入「作者多样性」机制，防止同一创作者的内容连续刷屏。</p>\n  <p>目前的开源版本包含核心推荐逻辑、Rust 编写的候选处理管道以及详细的架构文档。</p>\n  <p>值得一提的是，这仅仅是一个开始，马斯克此前还承诺，未来将根据社区反馈持续优化，并坚持每四周一次的开源更新节奏，附带全面的开发者说明，以帮助用户了解发生了哪些变化。</p>\n  <p><img class=\"alignnone size-full wp-image-1652490\" src=\"https://s3.ifanr.com/wp-content/uploads/2026/01/444.png!720\" alt=\"\" width=\"1188\" height=\"622\" srcset=\"https://s3.ifanr.com/wp-content/uploads/2026/01/444.png!720 1188w, https://s3.ifanr.com/wp-content/uploads/2026/01/444-360x188.png 360w, https://s3.ifanr.com/wp-content/uploads/2026/01/444-768x402.png 768w, https://s3.ifanr.com/wp-content/uploads/2026/01/444-1024x536.png 1024w\" sizes=\"(max-width: 1188px) 100vw, 1188px\"></p>\n  <p>附 Github 开源地址：\n   <br>\n   https://github.com/xai-org/x-algorithm</p>\n </body>\n</html>",
+  "aiSummary": "马斯克宣布开源 𝕏 平台重构后的推荐算法，该系统全面采用基于 Grok 的 Transformer 架构，实现了“零人工特征工程”的透明化流量分发。",
+  "oneSentenceSummary": "马斯克宣布开源 𝕏 平台重构后的推荐算法，该系统全面采用基于 Grok 的 Transformer 架构，实现了“零人工特征工程”的透明化流量分发。",
+  "summary": "本文报道了 𝕏（原 Twitter）平台核心推荐算法的正式开源。新版算法完成了底层重构，核心亮点在于摒弃了传统的人工规则和启发式算法，全面转向基于 Grok 模型的 Transformer 架构，实现“零人工特征工程”。文章详细解析了“For You”时间线的生成流程：通过 Thunder 和 Phoenix Retrieval 系统进行毫秒级内容召回，随后利用基于 Grok-1 修改版的 Phoenix 评分器进行概率预测。最终通过一套包含点赞、转发、拉黑等权重的加权公式决定内容排序，并辅以多样性过滤机制保障体验。马斯克承诺将保持每四周一次的开源更新节奏，以实现社交平台算法的完全透明化。",
+  "mainPoints": [
+    {
+      "point": "𝕏 推荐系统实现“零人工特征工程”，完全依赖大模型自主学习。",
+      "explanation": "系统不再使用人工定义的规则，而是通过 Transformer 模型学习用户交互历史，自动判断内容相关性，减少了主观干预。"
+    },
+    {
+      "point": "推荐流程分为“召回”与“评分”两个关键阶段。",
+      "explanation": "首先通过内部和外部网络系统检索候选内容，再由基于 Grok-1 的评分器预测用户行为概率，实现海量信息的精准筛选。"
+    },
+    {
+      "point": "采用严密的加权计算公式与过滤器机制平衡内容分发。",
+      "explanation": "通过对点赞、转发等正面行为和拉黑等负面行为设置不同权重计算总分，并在评分前后进行去重、合规及多样性过滤。"
+    }
+  ],
+  "keyQuotes": [
+    "我们知道这个算法很笨，需要大幅改进，但至少你可以看到我们实时且透明地努力让它变得更好。",
+    "新的推荐系统最核心的设计决策是「零人工特征工程」。",
+    "𝕏 成为首个将核心流量分发逻辑完全透明化的主流社交平台。",
+    "系统不再主观定义什么是好内容，而是让模型通过学习用户的交互历史来自动判断相关性。"
+  ],
+  "tags": [
+    "𝕏 (Twitter)",
+    "推荐算法",
+    "Transformer",
+    "开源技术",
+    "Grok"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 969,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768930876000,
+  "publishDateStr": "01-20",
+  "publishDateTimeStr": "2026-01-20 17:41:16"
+}

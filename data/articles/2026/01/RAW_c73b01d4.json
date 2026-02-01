@@ -1,0 +1,54 @@
+{
+  "id": "RAW_c73b01d4",
+  "title": "让 AI 编程智能体编写高质量 Python 测试的技巧",
+  "url": "https://simonwillison.net/2026/Jan/26/tests/#atom-everything",
+  "date": "2026-01-26 23:55:29",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div class=\"note\">\n    <p>Someone <a href=\"https://news.ycombinator.com/item?id=46765460#46765823\">asked</a> on Hacker News if I had any tips for getting coding agents to write decent quality tests. Here's what I said:</p>\n    <hr>\n    <p>I work in Python which helps a lot because there are a TON of good examples of pytest tests floating around in the training data, including things like usage of fixture libraries for mocking external HTTP APIs and snapshot testing and other neat patterns.</p>\n    <p>Or I can say \"use pytest-httpx to mock the endpoints\" and Claude knows what I mean.</p>\n    <p>Keeping an eye on the tests is important. The most common anti-pattern I see is large amounts of duplicated test setup code - which isn't a huge deal, I'm much more more tolerant of duplicated logic in tests than I am in implementation, but it's still worth pushing back on.</p>\n    <p>\"Refactor those tests to use pytest.mark.parametrize\" and \"extract the common setup into a pytest fixture\" work really well there.</p>\n    <p>Generally though the best way to get good tests out of a coding agent is to make sure it's working in a project with an existing test suite that uses good patterns. Coding agents pick the existing patterns up without needing any extra prompting at all.</p>\n    <p>I find that once a project has clean basic tests the new tests added by the agents tend to match them in quality. It's similar to how working on large projects with a team of other developers work - keeping the code clean means when people look for examples of how to write a test they'll be pointed in the right direction.</p>\n    <p>One last tip I use a lot is this:</p>\n    <pre><code>Clone datasette/datasette-enrichments\nfrom GitHub to /tmp and imitate the\ntesting patterns it uses\n</code></pre>\n    <p>I do this all the time with different existing projects I've written - the quickest way to show an agent how you like something to be done is to have it look at an example.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/237/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 分享了利用 AI 编程智能体生成高质量 Python 测试（使用 pytest）的实用策略，强调了模式模仿和重构的重要性。",
+  "oneSentenceSummary": "Simon Willison 分享了利用 AI 编程智能体生成高质量 Python 测试（使用 pytest）的实用策略，强调了模式模仿和重构的重要性。",
+  "summary": "本文提供了关于提高 AI 生成 Python 测试质量的可操作建议。作者指出，由于 Python 在 pytest 方面拥有海量的训练数据，使其成为 AI 智能体的理想环境。关键策略包括提供特定的库指令（如 pytest-httpx）、通过重构提示词主动抵制重复设置代码等反模式，以及最重要的——维护一个高质量的现有测试套件。作者认为，智能体会自然地采纳周围代码库的风格和质量，并建议引导智能体参考特定的高质量仓库作为结构模板。",
+  "mainPoints": [
+    {
+      "point": "利用现有高质量测试套件作为 AI 智能体的模板。",
+      "explanation": "AI 编程智能体非常擅长模式匹配；通过为项目提供整洁、成熟的测试模式，智能体自然会生成符合该质量的新测试，而无需显式提示。"
+    },
+    {
+      "point": "主动引导智能体重构常见的测试反模式。",
+      "explanation": "当智能体生成冗余的设置代码时，使用诸如“将通用设置提取到 pytest fixture 中”或“使用 pytest.mark.parametrize”之类的特定提示词，以在测试套件中强制执行更好的架构标准。"
+    },
+    {
+      "point": "引导智能体参考外部高质量仓库进行模仿。",
+      "explanation": "一种强大的技术是指令智能体克隆并分析特定的、编写良好的项目，以学习并复制其测试架构和 Mock 模式。"
+    }
+  ],
+  "keyQuotes": [
+    "通常情况下，让编程智能体产出高质量测试的最佳方法，是确保它在一个拥有良好模式的现有测试套件的项目中工作。",
+    "编程智能体无需任何额外提示就能自动习得现有的模式。",
+    "相比实现代码，我对测试中重复逻辑的容忍度更高，但仍然值得去推动重构。",
+    "向智能体展示你希望如何完成某件事的最快方式，就是让它看一个示例。"
+  ],
+  "tags": [
+    "AI 编程智能体",
+    "Python",
+    "Pytest",
+    "软件测试",
+    "LLM 提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 317,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": null,
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769471729000,
+  "publishDateStr": "01-26",
+  "publishDateTimeStr": "2026-01-26 23:55:29"
+}

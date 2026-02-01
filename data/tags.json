@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "AI & 大模型",
+    "filename": "ai-llm",
+    "keywords": "AI|GPT|LLM|Agent|RAG|Transformer|Diffusion|DeepSeek|OpenAI|Claude|Llama|Model|Artificial Intelligence|Machine Learning|Anthropic|Gemini|Mistral|Qwen|Copilot|ChatGPT|Neural|Deep Learning"
+  },
+  {
+    "tag": "软件架构",
+    "filename": "architecture",
+    "keywords": "Architecture|System Design|Microservices|Distributed|High Performance|Scalability|DDD|Clean Architecture|Patterns|Refactoring|Monolith|Event Driven|CQRS"
+  },
+  {
+    "tag": "前端与全栈",
+    "filename": "frontend-fullstack",
+    "keywords": "Frontend|Fullstack|React|Vue|Node|Next|Nuxt|Svelte|Angular|TypeScript|JavaScript|CSS|HTML|Web|Browser|Server|Deno|Bun|Tailwind|Vite|Remix|Astro|Webpack|ESLint"
+  },
+  {
+    "tag": "DevOps",
+    "filename": "devops",
+    "keywords": "DevOps|Docker|Kubernetes|K8s|CI/CD|Jenkins|GitHub Actions|Cloud|AWS|Azure|GCP|Linux|Nginx|Serverless|Terraform|Vercel|Netlify|Cloudflare"
+  },
+  {
+    "tag": "产品与商业",
+    "filename": "product-business",
+    "keywords": "Product|Startup|SaaS|Business|Growth|Marketing|Management|Indie Hacker|Monetization|VC|Entrepreneurship|Strategy|Revenue|Pricing"
+  },
+  {
+    "tag": "其他",
+    "filename": "other",
+    "keywords": ""
+  }
+]

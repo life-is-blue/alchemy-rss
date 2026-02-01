@@ -1,0 +1,65 @@
+{
+  "id": "RAW_d1dbb5",
+  "title": "大神卡帕西这么用 ChatGPT：日常 4o 快又稳，烧脑切 o4，o3 当备胎用",
+  "url": "https://www.qbitai.com/2025/06/290357.html",
+  "date": "2025-06-03 05:23:45",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-arrow-right\" data-track=\"57\">衡宇 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"56\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">OpenAI模型命名混乱没规律，以至于打开ChatGPT后，好多人都不知道到底该用哪个模型来完成任务。</p>\n  <p data-track=\"3\">不过别慌，现在咱们有救了！</p>\n  <p data-track=\"4\">刚刚，大神卡帕西在上发布了一篇<strong>使用ChatGPT时的模型选择指南</strong>。</p>\n  <p data-track=\"5\">简明扼要，一看就懂——再也不用迷茫了，再也不用在各个模型之间反复横跳试探了。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5ca6a63-91f4-425d-68ac-2a713e1ce700/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5ca6a63-91f4-425d-68ac-2a713e1ce700/public\">\n  </div>\n  <p data-track=\"6\">先简单回顾一下前情提要：</p>\n  <p data-track=\"7\">一直以来，OpenAI对自家模型的命名都很迷。</p>\n  <p data-track=\"8\">有GPT系列，先出了GPT-4.0，GPT-4.5，又回过头来出了GPT-4.1；有o系列，既有o1、o3、o4，结果又有4o。</p>\n  <p data-track=\"9\">模型越来越多，选择恐惧症也越来越多——</p>\n  <p data-track=\"10\">简单问题怕杀鸡用牛刀，复杂任务又怕模型智商不够……</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/79a56762-78a2-4151-62e7-64e4d8f5dc00/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/79a56762-78a2-4151-62e7-64e4d8f5dc00/public\">\n  </div>\n  <p data-track=\"11\">这次，卡帕西根据自己的使用习惯，把“什么时候选什么模型”梳理了一遍。</p>\n  <p data-track=\"13\">一上来，卡帕西就明说，他知道很多人都还不知道o3、o4和4o各自的长处是什么。</p>\n  <p data-track=\"14\">他用大白话简单介绍了一下它们的区别——</p>\n  <p data-track=\"15\"><strong>其中，o3是一个比4o更强的推理模型，绝对适合任何一个重要、复杂的任务。</strong></p>\n  <blockquote>\n   <p data-track=\"62\">如果你在专业环境中使用ChatGPT，但却不选择用o3，那你绝对ngmi（not gonna make it）。</p>\n  </blockquote>\n  <p data-track=\"17\"><strong>至于4o和o4，前者适合用来解决日常生活中中低难度的问题</strong>；o4目前只提供了mini形式，效果不如o3。</p>\n  <p data-track=\"18\">卡帕西小声吐槽，“我也不懂为什么OpenAI会在现在推出o4”。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c0b5eb6-79db-4d50-ad14-908e07b30a00/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3c0b5eb6-79db-4d50-ad14-908e07b30a00/public\">\n  </div>\n  <p data-track=\"19\">接着，卡帕西又拿自己的日常使用场景作为展示，告诉大家啥时候该选哪个模型。</p>\n  <p data-track=\"20\"><strong>所有简单的日常问题，选GPT-4o准没错</strong>。</p>\n  <p data-track=\"21\">比如问“哪些食物富含纤维”之类的问题，大家可以放心大胆用4o。使用ChatGPT时，卡帕西40%的场景都选用这个模型。</p>\n  <p data-track=\"22\"><strong>所有复杂困难或比较重要的问题，重要到你愿意等模型思考一会儿，那就选OpenAI o3吧！</strong></p>\n  <p data-track=\"23\">卡帕西有40%的时间都用的是o3，模型可以较好地帮忙解决“帮我理解这个税务问题”之类的活。</p>\n  <p data-track=\"24\"><strong>在敲代码的时候，想让模型帮忙完善或改进一下，GPT-4.1会是你的得力助手。</strong></p>\n  <p data-track=\"25\">这里值得注意的一点，是让ChatGPT帮忙修改或完善代码，而不是让AI帮忙从头编写程序。</p>\n  <p data-track=\"26\">最后，<strong>当你想深入理解一件事，希望ChatGPT查看n多链接，并总结，最好的选项就是深度研究。</strong></p>\n  <blockquote>\n   <p data-track=\"61\">深度研究基于OpenAI o3打造，但我相信它并不直接等同于o3。</p>\n  </blockquote>\n  <p data-track=\"28\">卡帕西在此处写了个小tips：</p>\n  <p data-track=\"29\">请注意，深度研究不是让你从模型菜单中选择某个版本的模型，而是对话框中的一个选项开关。</p>\n  <p data-track=\"30\">如果你嫌记文字太麻烦，卡帕西还贴心附上了一张图。</p>\n  <p data-track=\"31\"><strong>欢迎大家收藏，便于查询使用</strong>～</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9d9c395f-2465-457b-859a-b18ac33d2200/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9d9c395f-2465-457b-859a-b18ac33d2200/public\">\n  </div>\n  <p data-track=\"32\">评论区有人发了另一张图<em>（如下）</em>，简而言之就是<strong>“图快选4o，研究选o3，创作选4.5”</strong>。</p>\n  <p data-track=\"33\">卡帕西热情点赞，说差不多就是这样用的！</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0273f30f-f61f-44b9-7b68-c9a10b931300/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0273f30f-f61f-44b9-7b68-c9a10b931300/public\">\n  </div>\n  <p data-track=\"34\">最后，卡帕西表示以上只是他在使用ChatGPT时总结出来的经验。</p>\n  <p data-track=\"35\">事实上，根据不同的任务和研究兴趣需要，ChatGPT、Claude、Gemini、Grok和Perplexity轮番上阵，有多位AI帮他打下手。</p>\n  <p data-track=\"37\">卡帕西的ChatGPT模型指南发布后，立马进不少人的收藏夹<s>（吃灰）</s>。</p>\n  <p data-track=\"38\">有人调侃，这篇指南其实可以用一句话总结：</p>\n  <p data-track=\"39\"><strong>Reasoning is all you need.</strong></p>\n  <p data-track=\"40\">不过并不是所有人都会充值成为Plus或者Pro会员，所以o4-mini和o4-mini-high还是不可或缺的模型选项。</p>\n  <p data-track=\"41\">很多网友留言分享了自己的使用心得，不少人和卡帕西的体验有点不同：</p>\n  <blockquote>\n   <p data-track=\"60\">我经常使用o4-mini！<br>\n     亲身感受它的效果几乎和o3一样好，而且速度要快得多。</p>\n  </blockquote>\n  <p data-track=\"43\">面对和自己不一样的心得分享，卡帕西直接回复表示，<strong>他会在选择模型时进行首先进行一次「二选一」</strong>，因为二选一往往更简单。</p>\n  <p data-track=\"44\">也就是说，先判断这件事是重要的<em>（并且自己愿意等待）</em>，还是不重要的<em>（并且自己只想快速了解）</em>。这基本上就决定了卡帕西会选择用o3还是4o模型。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c7d86943-9ab3-4e0f-dbc2-7cfec123ba00/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c7d86943-9ab3-4e0f-dbc2-7cfec123ba00/public\">\n  </div>\n  <p data-track=\"45\">当然，评论区少不了那个老生常谈的话题：</p>\n  <blockquote>\n   <p data-track=\"59\">都什么年代了，为什么还要我亲自选择用那个模型，而不是模型根据我的需求自动调用呢？？？</p>\n  </blockquote>\n  <p data-track=\"47\">但凡是个用户，面对ChatGPT上这些名字各异、特长各异的模型，都得头疼一会。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/30a153dd-6bbe-4fcd-041c-69a4dd3fc500/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/30a153dd-6bbe-4fcd-041c-69a4dd3fc500/public\">\n  </div>\n  <p data-track=\"48\">咱就是说，OpenAI到底为啥把模型名字取得这么奇怪啊？</p>\n  <p data-track=\"49\">而且用户一直吐槽，OpenAI一直不改。</p>\n  <p data-track=\"50\">这回有人十分戏谑地回答了这个问题。</p>\n  <p data-track=\"51\">一切的一切，都是<strong>因为OpenAI有“不顾用户死活”的资本</strong>——当PMF达成后，别的一切都无关紧要。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ab7fb60-0e93-406c-e017-8b550af0a700/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ab7fb60-0e93-406c-e017-8b550af0a700/public\">\n  </div>\n  <p data-track=\"52\">万幸现在有了卡帕西的这份指南，用户们在选择模型时能少吃些苦头了。</p>\n  <p data-track=\"53\">以及，就像一位开发者说的那样：</p>\n  <blockquote>\n   <p data-track=\"58\">和ChatGPT对话时选错模型并不会导致ngmi，只有放弃思考才会完蛋。<br>\n     AI工具可以拓展我们的思维和智能，但只有思考才能真正指明前进的方向。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/80f33cf2-aeb8-40db-95c5-3cdfb4cbd100/public\" alt=\"大神卡帕西这么用ChatGPT：日常4o快又稳，烧脑切o4，o3当备胎用\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/80f33cf2-aeb8-40db-95c5-3cdfb4cbd100/public\">\n  </div>\n  <p data-track=\"55\">参考链接：<br>\n    [1]https://x.com/karpathy/status/1929597620969951434<br>\n    [2]https://x.com/andrepaulj/status/1929647337330430074<br>\n    [3]https://x.com/onurtskrncom/status/1929673955377373560</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "大神卡帕西分享使用 ChatGPT 不同模型的经验指南，区分日常、复杂和编程场景的模型选择。",
+  "oneSentenceSummary": "大神卡帕西分享使用 ChatGPT 不同模型的经验指南，区分日常、复杂和编程场景的模型选择。",
+  "summary": "文章介绍了知名技术专家卡帕西关于如何在 ChatGPT 中选择不同模型的实用指南。面对 OpenAI 模型命名混乱导致的用户选择困惑，卡帕西根据自身经验，阐述了 GPT-4o 适合日常简单问题（他 40%时间使用），o3 适合复杂重要的推理任务（他 40%时间使用 o3），而 GPT-4.1 则适用于代码完善和改进。文章还提到了用于多链接总结的“深度研究”选项（基于 o3）。卡帕西为了简化决策，强调会首先进行重要的事（愿意等待）或不重要的事（只求快速）的“二选一”。文章展示了卡帕西总结的图表，并引用了评论区用户分享的不同使用体验（如 o4-mini）及对 AI 自动模型选择的讨论。最后，文章强调了专家经验的价值和独立思考的重要性，指出 AI 工具可拓展思维，但核心仍在用户自身的思考。",
+  "mainPoints": [
+    {
+      "point": "日常简单问题首选 GPT-4o，追求快速稳定体验",
+      "explanation": "对于不涉及深度推理或复杂逻辑的日常提问，GPT-4o 因其速度和通用性成为最优选择，满足用户快速获取信息的需求。"
+    },
+    {
+      "point": "复杂重要的推理任务应切换至 o3 模型",
+      "explanation": "处理需要严谨逻辑、深度分析或对准确性要求高的复杂问题时，o3 模型展现出更强的推理能力，值得花费更多时间等待结果。"
+    },
+    {
+      "point": "GPT-4.1 模型是代码辅助的理想选择",
+      "explanation": "在已有代码基础上进行完善或改进，GPT-4.1 能提供更精准、有用的建议，提升开发效率和代码质量。"
+    },
+    {
+      "point": "利用“深度研究”选项进行多源信息总结",
+      "explanation": "对于需要整合多个外部信息源并进行总结的任务，基于 o3 的“深度研究”功能是高效获取全面洞察的有效方式，虽基于 o3，但作为一个对话选项独立使用。"
+    },
+    {
+      "point": "采用“二选一”方法简化模型选择决策",
+      "explanation": "卡帕西通过判断任务是“重要”（愿意等待）还是“不重要”（只求快速）来在 o3 和 4o 之间做初步选择，这是一种简化复杂模型选择的实用策略。"
+    }
+  ],
+  "keyQuotes": [
+    "其中，o3 是一个比 4o 更强的推理模型，绝对适合任何一个重要、复杂的任务。",
+    "如果我在专业环境中使用 ChatGPT，但却不选择用 o3，那我绝对 ngmi（not gonna make it）。",
+    "所有简单的日常问题，选 GPT-4o 准没错。",
+    "所有复杂困难或比较重要的问题，重要到你愿意等模型思考一会儿，那就选 OpenAI o3 吧！",
+    "在敲代码的时候，想让模型帮忙完善或改进一下，GPT-4.1 会是你的得力助手。",
+    "Reasoning is all you need。",
+    "和 ChatGPT 对话时选错模型并不会导致 ngmi，只有放弃思考才会完蛋。"
+  ],
+  "tags": [
+    "ChatGPT",
+    "OpenAI",
+    "模型选择",
+    "Karpathy",
+    "AI使用技巧"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 1826,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748928225000,
+  "publishDateStr": "2025-06-03",
+  "publishDateTimeStr": "2025-06-03 05:23:45"
+}

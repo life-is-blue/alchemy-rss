@@ -1,0 +1,55 @@
+{
+  "id": "RAW_f807beac",
+  "title": "腾讯发布超低成本 AI 训练法！120 元效果秒杀 70000 元微调方案",
+  "url": "https://www.qbitai.com/2025/10/341842.html",
+  "date": "2025-10-15 06:39:07",
+  "author": "时令",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"54\">时令 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"55\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">只花120元，效果吊打70000元微调！</p>\n  <p data-track=\"3\">腾讯提出一种升级大模型智能体的新方法——无训练组相对策略优化Training-Free GRPO。</p>\n  <p data-track=\"4\"><strong>无需调整任何参数，只要在提示词中学习简短经验，即可实现高性价比提升模型性能</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_4a21a28deebc92403ab1c7303ad414fa.png\" data-src=\"https://image.jido.dev/20251015091418_4a21a28deebc92403ab1c7303ad414fa.png\">\n  </div>\n  <p data-track=\"5\">实验表明，在数学推理和网页搜索任务上，利用无训练GRPO的DeepSeek-V3.1-Terminus模型展现出显著的跨领域性能提升。</p>\n  <p data-track=\"6\">与微调32B模型相比，该方法在671B大型模型上所需训练数据更少、成本更低。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_10537b4cd726f38d5b38d33f0cbbce30.png\" data-src=\"https://image.jido.dev/20251015091418_10537b4cd726f38d5b38d33f0cbbce30.png\">\n  </div>\n  <p data-track=\"7\">网友不禁表示：</p>\n  <blockquote>\n   <p data-track=\"8\">也太划算了吧！</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_f5898d9c9684e3c43e78216b94ae9477.png\" data-src=\"https://image.jido.dev/20251015091418_f5898d9c9684e3c43e78216b94ae9477.png\">\n  </div>\n  <p data-track=\"9\">下面具体来看。</p>\n  <p data-track=\"11\">如今，大语言模型正逐渐成为强大的通用智能体，在复杂问题解决、网页研究等通用任务中表现出色。</p>\n  <p data-track=\"12\">然而，在需外部工具（如计算器、API） 和特定提示策略的专业场景中，LLM往往会因对领域需求和工具不熟悉，而导致性能欠佳。</p>\n  <p data-track=\"13\">为了弥补上述差距，基于GRPO的强化学习通过参数空间调整实现对模型行为的定向优化。尽管这些方法能有效提升特定任务的能力，但其对LLM参数调优的依赖仍存在多方面挑战：</p>\n  <ul>\n   <li data-track=\"14\">算力成本高；</li>\n   <li data-track=\"15\">跨领域泛化能力弱；</li>\n   <li data-track=\"16\">数据稀缺；</li>\n   <li data-track=\"17\">收益递减。</li>\n  </ul>\n  <p data-track=\"18\">参数调优中的这些局限引发了一个根本性问题：在参数空间中应用强化学习是否是唯一可行的方法？能否以非参数化的方式提升LLM智能体的性能，同时降低数据和计算成本？</p>\n  <p data-track=\"19\">为此，腾讯优图团队提出了<strong>无训练组相对策略优化</strong>，通过轻量级的token先验在上下文中学习经验知识，无需修改模型参数即可提升LLM智能体性能。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_9ecda901762e1959c071f400958752f5.png\" data-src=\"https://image.jido.dev/20251015091418_9ecda901762e1959c071f400958752f5.png\">\n  </div>\n  <p data-track=\"20\">Training-Free GRPO重新利用了传统GRPO基于组间相对评估的核心逻辑，但将其转化为非参数化的推理阶段过程。</p>\n  <p data-track=\"21\">该方法保持参数θ永久冻结，转而维护一个外部经验知识库（初始为空集），通过动态更新知识库而非模型参数来实现性能优化。</p>\n  <p data-track=\"22\">随后，Training-Free GRPO生成自然语言形式的组相对语义优势。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_c8ff1b5b3afed7114d3407d065ed3f5b.png\" data-src=\"https://image.jido.dev/20251015091418_c8ff1b5b3afed7114d3407d065ed3f5b.png\">\n  </div>\n  <p data-track=\"23\">具体流程如下所示：</p>\n  <p data-track=\"24\">1、对于每个输出，免训练GRPO首先让同一个大语言模型M生成对应分析摘要。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_790c686c5ad5cc881ceedfd864e97a81.png\" data-src=\"https://image.jido.dev/20251015091418_790c686c5ad5cc881ceedfd864e97a81.png\">\n  </div>\n  <p data-track=\"25\">2、基于摘要集和当前经验，由M说明每个输出相对成功或失败的原因，然后提取出简明的自然语言经验。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_abb1cf6ed50adc00f2e7c8ac08c8bfbb.png\" data-src=\"https://image.jido.dev/20251015091418_abb1cf6ed50adc00f2e7c8ac08c8bfbb.png\">\n  </div>\n  <p data-track=\"26\">之后，传统GRPO会通过对单个批次中所有优势计算得到的目标函数进行梯度上升，从而更新模型参数θ。</p>\n  <p data-track=\"27\">而在Training-Free GRPO中，该方法通过使用当前批次中的所有语义优势A_text来更新经验库，每条操作可能包括：</p>\n  <ul>\n   <li data-track=\"28\"><strong>Add（添加）</strong>：将A_text中描述的经验直接追加到经验库\n    <br>\n    中。</li>\n   <li data-track=\"29\"><strong>Delete（删除）</strong>：根据A_text，从经验库中移除低质量经验。</li>\n   <li data-track=\"30\"><strong>Modify（修改）</strong>：根据A_text提供的见解，优化或改进经验库中已有的经验。</li>\n   <li data-track=\"31\"><strong>Keep（保留）</strong>：经验库保持不变。</li>\n  </ul>\n  <p data-track=\"32\">在更新经验库后，条件策略会在随后的批次或训练轮次中生成偏移后的输出分布。</p>\n  <p data-track=\"33\">可以说，Training-Free GRPO是通过改变上下文而非模型参数本身，将模型引向高奖励输出。</p>\n  <p data-track=\"34\">其中，被冻结的基础模型起到了<strong>强先验（strong prior）</strong>的作用，不仅保证输出的连贯性，还提供了类似于GRPO中KL散度约束的内在稳定性，防止策略过度偏离参考模型。</p>\n  <p data-track=\"36\">为评估免训练GRPO方法的性能，团队在数学推理和网络搜索两大基准测试上开展了多维度对比实验。</p>\n  <p data-track=\"37\">在实验中，研究主要关注的是现实应用中难以微调且成本高昂的大型高性能LLM，例如<strong>DeepSeek-V3.1-Terminus</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_3706245291196da2a3551c7b478d61f3.png\" data-src=\"https://image.jido.dev/20251015091418_3706245291196da2a3551c7b478d61f3.png\">\n  </div>\n  <p data-track=\"38\">实验结果显示，Training-Free GRPO在数学推理任务中取得了显著提升，无论是否使用工具，均表现出明显优势。</p>\n  <p data-track=\"39\">基线模型DeepSeek-V3.1-Terminus+ReAct在AIME24和AIME25上的得分分别为80.0%和 67.9%，而应用Training Free GRPO后，冻结模型的表现显著提升至82.7%和73.3%，分别带来2.7%和5.4%的绝对增益。</p>\n  <p data-track=\"40\">值得注意的是，这一提升仅使用了100个跨域训练样本，并且无需任何梯度更新。相比之下，传统强化学习方法如ReTool和AFM在32B LLM上通常需要数千个训练样本，<strong>成本超过10000美元</strong>，而Training Free GRPO<strong>仅需约18美元</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_0a8388ccae143139c06bbc850a478f1b.png\" data-src=\"https://image.jido.dev/20251015091418_0a8388ccae143139c06bbc850a478f1b.png\">\n  </div>\n  <p data-track=\"41\">在AIME24和AIME25实验中，随着每一步学习，模型表现持续提升，这表明仅从100个问题中学到的经验能够有效泛化，同时也凸显了多步学习的必要性。</p>\n  <p data-track=\"42\">此外，在训练过程以及跨域评估中，模型的平均工具调用次数都有所下降。这表明Training-Free GRPO不仅促使模型做出正确的推理和决策，还能教会智能体更高效、更谨慎地使用工具。</p>\n  <p data-track=\"43\">学习到的经验知识帮助智能体发现一些捷径，避免错误或冗余的工具调用，从而验证了基于语义优势优化方法的有效性。</p>\n  <p data-track=\"44\">在网络搜索任务中，团队选择在WebWalkerQA基准上评估免训练GRPO方法的有效性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_383d9fb73b2b8981ab502845d1107994.png\" data-src=\"https://image.jido.dev/20251015091418_383d9fb73b2b8981ab502845d1107994.png\">\n  </div>\n  <p data-track=\"45\">可以看出，该方法在使用DeepSeek-V3.1-Terminus模型时实现了67.8%的Pass@1得分，较基线63.2%有显著提升。</p>\n  <p data-track=\"46\">此外，研究还对来自WebWalkerQA的51个实例进行分层随机抽样，以开展消融实验。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯发布超低成本AI训练法！120元效果秒杀70000元微调方案\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251015091418_8b3cfc351f54bc8790676bac145dfb39.png\" data-src=\"https://image.jido.dev/20251015091418_8b3cfc351f54bc8790676bac145dfb39.png\">\n  </div>\n  <p data-track=\"47\">由上图可知，直接使用生成的经验会略微降低ReAct的性能（Pass@1 为64.7%，相比原来的66.7%），这说明仅靠上下文示例而没有经过优化，难以带来性能提升。</p>\n  <p data-track=\"48\">不使用真实答案的Training-Free GRPO在Pass@1上与ReAct保持一致（66.7%），但在Pass@3上提升到78.4%，表明即使没有真实答案，通过相对奖励评估也能提高输出的一致性。</p>\n  <p data-track=\"49\">完整的Training-Free GRPO则取得了最佳表现（Pass@1为68.6%，Pass@3为78.4%），凸显了结合真实答案指导、语义优势和经验优化的重要性。</p>\n  <p data-track=\"50\">此外，研究还验证了模型能力是基于经验优化能否有效的前提条件。</p>\n  <p data-track=\"51\">实验将Training-Free GRPO应用于QwQ-32B时，Pass@1仅为25.5%，远低于DeepSeek-V3.1-Terminus的66.7%，甚至低于其自身的ReAct基线（27.5%）。这表明该方法的有效性依赖于基础模型在复杂工具使用场景中的推理和工具使用能力。</p>\n  <p data-track=\"52\">论文链接：https://arxiv.org/abs/2510.08191\n   <br class=\"sysbr\">\n   参考链接：https://x.com/rohanpaul_ai/status/1978048482003890625\n   <br class=\"sysbr\">\n   Github链接：https://github.com/TencentCloudADP/youtu-agent/tree/training_free_GRPO</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "腾讯发布超低成本 AI 训练法 Training-Free GRPO，通过上下文经验学习而非参数调整，显著提升大模型智能体性能。",
+  "oneSentenceSummary": "腾讯发布超低成本 AI 训练法 Training-Free GRPO，通过上下文经验学习而非参数调整，显著提升大模型智能体性能。",
+  "summary": "文章详细介绍了腾讯优图团队提出的“无训练组相对策略优化”（Training-Free GRPO）方法，旨在解决大语言模型（LLM）在专业场景中性能欠佳，以及传统参数调优面临的高算力成本、泛化能力弱和数据稀缺等挑战。该方法的核心创新在于将传统 GRPO 的参数调整转化为**非参数化的推理阶段过程**，通过在提示词中学习简短经验，并动态维护一个外部经验知识库（Add/Delete/Modify/Keep），无需修改模型参数即可优化 LLM 智能体的行为。实验表明，Training-Free GRPO 在数学推理和网页搜索任务上，仅需约 18 美元和 100 个跨域训练样本，即可使大型 LLM（如 DeepSeek-V3.1-Terminus）性能显著提升，远超传统高成本微调方案（超 10000 美元），并展现出更强的泛化能力和更高效的工具使用。文章也指出，该方法的有效性依赖于基础模型的内在推理和工具使用能力。",
+  "mainPoints": [
+    {
+      "point": "Training-Free GRPO 大幅降低大模型智能体性能提升的成本与复杂度。",
+      "explanation": "该方法通过非参数化方式，仅依赖上下文经验学习和外部知识库动态更新，避免了传统微调高昂的算力成本和数据需求，实现极高性价比的模型优化。"
+    },
+    {
+      "point": "新方法显著提升了大型 LLM 在专业任务上的跨领域泛化能力和工具使用效率。",
+      "explanation": "实验证明，Training-Free GRPO 在数学推理和网页搜索等任务上表现出显著性能提升，且仅用少量跨域样本即可有效泛化，并能教会智能体更高效、谨慎地使用外部工具。"
+    },
+    {
+      "point": "Training-Free GRPO 的有效性依赖于基础模型的内在推理和工具使用能力。",
+      "explanation": "研究结果显示，该方法在基础模型能力较弱时效果不佳，强调了其作为一种优化手段，而非替代强大基础模型的关键作用。"
+    }
+  ],
+  "keyQuotes": [
+    "无需调整任何参数，只要在提示词中学习简短经验，即可实现高性价比提升模型性能。",
+    "Training-Free GRPO 重新利用了传统 GRPO 基于组间相对评估的核心逻辑，但将其转化为非参数化的推理阶段过程。",
+    "Training-Free GRPO 是通过改变上下文而非模型参数本身，将模型引向高奖励输出。",
+    "相比之下，传统强化学习方法如 ReTool 和 AFM 在 32B LLM 上通常需要数千个训练样本，成本超过 10000 美元，而 Training Free GRPO 仅需约 18 美元。",
+    "这表明该方法的有效性依赖于基础模型在复杂工具使用场景中的推理和工具使用能力。"
+  ],
+  "tags": [
+    "大语言模型优化",
+    "无训练学习",
+    "强化学习",
+    "智能体",
+    "提示词工程"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 88,
+  "wordCount": 2620,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1760510347000,
+  "publishDateStr": "2025-10-15",
+  "publishDateTimeStr": "2025-10-15 06:39:07"
+}

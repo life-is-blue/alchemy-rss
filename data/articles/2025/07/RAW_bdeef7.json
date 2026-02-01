@@ -1,0 +1,59 @@
+{
+  "id": "RAW_bdeef7",
+  "title": "任务级奖励提升 App Agent 思考力，淘天提出 Mobile-R1，3B 模型可超 32B",
+  "url": "https://www.qbitai.com/2025/07/310850.html",
+  "date": "2025-07-20 06:48:17",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\" data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"48\">Mobile-R1团队 投稿</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"49\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">现有Mobile/APP Agent的工作可以适应实时环境，并执行动作，但由于它们大部分都仅依赖于动作级奖励（SFT或RL）。</p>\n  <p data-track=\"3\">而这些奖励只能引导代理预测每一步中最佳的单一动作，因此难以应对不断变化的移动环境。</p>\n  <p data-track=\"4\">比如一句指令：“打开飞猪，进入酒店套餐，进入热门直播，找到飞猪超级VIP，并关注主播”。Qwen2.5-VL-3B-Instruct在第二步失败。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/353391c2-b1f2-4598-b9bc-cb2f3b3b6800/public\" alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" data-ic=\"false\" data-width=\"562\" data-height=\"312\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">淘天集团算法技术-未来生活实验室&amp;点淘算法团队联合提出，采用多回合、任务导向的学习方式，结合在线学习和轨迹纠错，也许能提高Agent的适应性和探索能力。</p>\n  <p data-track=\"6\">他们提出了个具有任务级奖励（Task-level Reward）的交互式强化学习框架，即Mobile-R1。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fd3db631-0732-4765-bec8-2a13132bb100/public\" alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" data-ic=\"false\" data-width=\"1080\" data-height=\"235\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">为了确保训练的稳定性，团队提出了一个三阶段训练过程：格式微调、动作级训练和任务级训练。此外引入新的中文基准和高质量轨迹数据集，证明了该方法在移动代理领域的有效性。</p>\n  <p data-track=\"8\">结果Mobile-R1顺利地完成了这一任务。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b5ba9fc7-8740-4e5a-71b2-78136a9c0b00/public\" alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" data-ic=\"false\" data-width=\"1080\" data-height=\"461\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">团队使用Qwen2.5-VL-3B执行一系列任务获得初始轨迹，并人工标注这些初始轨迹，得到了高质量的轨迹数据集。</p>\n  <p data-track=\"11\">其构造可以分为数据收集和轨迹标注两部分，最终得到了4,635条高质量的人工标注轨迹，包含24,521个单步数据。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/07cdc5de-104f-48ed-13e7-5c2cf4805700/public\" data-ic=\"false\" data-width=\"871\" data-height=\"820\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\">首先，选择了28个中国移动应用程序，通过人工设计和自动生成相结合的方法创建了多样化的任务指令，随后统一经过人工审核，去除了部分不合理指令。在使用Qwen2.5-VL-3B模型执行这些指令后，成功收集了大量动作执行轨迹，轨迹中的每一步都包含模型输出的思考，需要执行的动作以及对应的工具调用。</p>\n  <p data-track=\"14\">得到轨迹后，针对模型的输出做了以下三个维度的标注：</p>\n  <ul>\n   <li data-track=\"15\">逻辑思考：将所有思考修正为“当前状态+下一步的动作+动作目的”的格式，比如“当前在手机主屏（当前状态），下一步是点击淘宝图标（下一步动作）来进入淘宝（动作目的）”。如果原思考内容错误也会人工标注者会按照该格式重写思考。</li>\n   <li data-track=\"16\">清晰动作：清晰动作是单步可执行操作的一句话描述，动作应符合思考的内容并且可推动任务的完成。</li>\n   <li data-track=\"17\">准确调用：人工标注者会修正错误的操作调用，包括类型错误以及参数错误。</li>\n  </ul>\n  <p data-track=\"19\">训练流程由三个阶段构成，基于Qwen2.5-VL-3B。这三个阶段分别是初始格式微调、动作级在线训练和任务级在线训练。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/59475540-70d0-4e7f-fde8-7361de1ea500/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"493\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">在第一阶段，对模型进行初始格式微调。这一步是通过监督微调（SFT）的方式进行的，使用的是之前人工标注的高质量轨迹数据集。在微调过程中，模型不仅会学习如何将用户的指令与当前的GUI状态对应起来，还会调整输出格式以符合预期的结构，包括逻辑思考、清晰动作和准确调用。</p>\n  <p data-track=\"23\">在第二阶段，模型通过群体相对策略优化（GRPO）进行动作级在线训练。此阶段使用动作级奖励（Action-level Reward）来评估每个动作的正确性，同时确保输出格式的完整性。动作级奖励由可验证动作奖励和格式奖励组成，其中可验证动作奖励能够量化动作的正确性，而格式奖励则确保模型输出是结构化、可解释的。</p>\n  <ul>\n   <li data-track=\"24\">动作级奖励。1）对于基于坐标的动作（如点击、滑动），如果预测的坐标落在目标GUI元素的真实边界框内，则奖励为1，否则为0。2）对于非坐标的动作（如输入文本），如果预测的动作或参数与真实值完全匹配，则奖励为1，否则为0。</li>\n   <li data-track=\"25\">格式奖励。格式奖励促使模型生成符合标签和结构要求的输出，确保响应的逻辑思考、动作以及工具调用的格式化。</li>\n  </ul>\n  <p data-track=\"27\">在第三阶段，通过多步骤任务级在线训练来提高模型的泛化能力和探索能力。</p>\n  <p data-track=\"28\">在动态的移动环境中，模型需要进行自由探索和错误纠正，因此我们将问题定义为马尔可夫决策过程，以允许多回合的互动。</p>\n  <p data-track=\"29\">任务级奖励由格式奖励和轨迹级奖励组成，旨在鼓励模型在整个轨迹中保持对响应格式的遵循，同时评估任务的完成情况。</p>\n  <ul>\n   <li data-track=\"30\">轨迹级奖励。轨迹级奖励使用外部高精度的MLLM，GPT-4o来评估整个历史互动轨迹，确保步骤和动作的一致性以及任务的完成情况。</li>\n   <li data-track=\"31\">格式奖励。格式奖励在此阶段仍然起着重要作用，为整个轨迹计算平均格式奖励，并通过[-1, 1]的范围来对错误施加更严格的惩罚，以增强输出的精确度。</li>\n  </ul>\n  <p data-track=\"32\">训练的部分阶段在淘天自研的强化学习框架ROLL上进行实验。</p>\n  <p data-track=\"34\">实验中，主要评估了模型在自定义benchmark上的性能，并进行了针对模型泛化能力的鲁棒性分析，以验证Mobile-R1的表现。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/432097d9-57f6-436c-49d9-31379293a500/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"421\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△整体实验结果，粗体表示最佳结果，下划线表示次优结果</span>\n  </div>\n  <p data-track=\"36\">结果显示，Qwen2.5-VL-32B 和 AgentCPM-8B 在性能上表现类似。</p>\n  <p data-track=\"37\">其中，AgentCPM-8B 由于专为中国移动生态系统优化，因此在中文场景中表现优异。更为显著的是，Mobile-R1在所有基准中表现最佳，任务成功率达到49.40，比最优秀的baseline model高出将近20点。</p>\n  <p data-track=\"38\">Stage 3的训练进一步增强了Mobile-R1的表现，其成功率比只有阶段1和阶段2训练的模型高出1.4点，这得益于任务级GRPO的有效应用。</p>\n  <p data-track=\"39\">特别值得注意的是，通过阶段1和阶段2的训练，Qwen2.5-VL-3B模型的表现超越了其标准版本，并在多项指标上领先于其他基准模型，突显了动作级和任务级奖励机制的重要性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5b877981-4bd2-4422-adb6-0474e4f72400/public\" data-ic=\"false\" data-width=\"967\" data-height=\"578\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△Stage 3训练的奖励曲线</span>\n  </div>\n  <p data-track=\"41\">此过程中，Stage 3的奖励分数显示出在前四个训练步骤中稳步增长，表明学习过程是有效的。然而，在步骤5到10之间，奖励有所下降，这可能是由于策略过于激进或探政策的改变导致的不稳定性。最终从步骤11开始，奖励再次上升，这表明策略得到了有效的优化和改进。</p>\n  <p data-track=\"42\">Mobile-R1在处理未见应用时表现出良好的泛化性，而其他模型在泛化能力上存在挑战。Mobile-R1的优异表现主要归功于Stage 3的训练，这一阶段有效增强了模型的鲁棒性和适应性。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"任务级奖励提升App Agent思考力，淘天提出Mobile-R1，3B模型可超32B\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/95cd718f-9c1f-43a3-2e45-b474590f0100/public\" data-ic=\"false\" data-width=\"1066\" data-height=\"344\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△鲁棒性分析结果，粗体表示最佳结果</span>\n  </div>\n  <p data-track=\"44\">最后总结，在本文中，Mobile-R1通过在动态环境中整合交互式强化学习与任务级奖励，显著提升了基于视觉语言模型（VLM）的移动代理的能力。</p>\n  <p data-track=\"45\">通过包括格式微调、动作级GRPO训练和任务级GRPO训练在内的三阶段训练过程，克服了以往方法仅依赖单一动作预测的局限性。</p>\n  <p data-track=\"46\">实验结果表明，Mobile-R1在所有指标上都超越了所有基准。此外，团队计划全面开源相关资源以促进进一步的研究。</p>\n  <p data-track=\"47\"><em>论文链接：https://arxiv.org/abs/2506.20332</em><br><em>项目主页：https://mobile-r1.github.io/Mobile-R1/</em><br><em>训练框架参考：https://github.com/alibaba/ROLL/</em><br><em>开源数据： https://huggingface.co/datasets/PG23/Mobile-R1</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "淘天团队提出 Mobile-R1 框架，通过任务级奖励和三阶段训练显著提升 App Agent 的思考和泛化能力，使 3B 模型表现超越 32B 模型。",
+  "oneSentenceSummary": "淘天团队提出 Mobile-R1 框架，通过任务级奖励和三阶段训练显著提升 App Agent 的思考和泛化能力，使 3B 模型表现超越 32B 模型。",
+  "summary": "文章详细介绍了淘天团队提出的 Mobile-R1 交互式强化学习框架，旨在解决现有 App Agent 仅依赖动作级奖励导致适应性和探索能力不足的问题。Mobile-R1 通过引入任务级奖励，结合在线学习和轨迹纠错，显著提高了 Agent 在复杂移动环境中的任务成功率。该框架采用三阶段训练过程：格式微调、动作级在线训练和任务级在线训练，并构建了高质量的中文轨迹数据集。实验结果显示，Mobile-R1 在自定义基准测试中表现最佳，成功率远超现有基线模型，并且基于 Qwen2.5-VL-3B 的小模型在 Mobile-R1 框架下甚至超越了 32B 模型，展现了强大的泛化能力。文章强调了任务级奖励和多阶段训练对于提升 VLM 基移动代理能力的重要性，并计划全面开源相关资源以促进研究。",
+  "mainPoints": [
+    {
+      "point": "引入任务级奖励机制，克服传统 App Agent 的局限性",
+      "explanation": "现有 Agent 多依赖动作级奖励，难以应对复杂多变的移动环境。Mobile-R1 通过任务级奖励评估整个交互轨迹，显著提升了 Agent 的适应性和探索能力。"
+    },
+    {
+      "point": "提出三阶段训练过程，确保模型训练的稳定性与效果",
+      "explanation": "包括格式微调、动作级在线训练和任务级在线训练，这种分阶段训练策略有效引导模型学习正确的行为模式、输出格式，并提升其泛化能力。"
+    },
+    {
+      "point": "构建高质量中文轨迹数据集，支撑模型有效训练",
+      "explanation": "通过人工设计、自动生成和人工审核相结合的方式，收集并标注了大量高质量的中文 App 操作轨迹，为模型学习复杂任务提供了坚实基础。"
+    },
+    {
+      "point": "小模型（3B）在 Mobile-R1 框架下超越大模型（32B）",
+      "explanation": "实验证明，Mobile-R1 的优化策略使得 Qwen2.5-VL-3B 模型在任务成功率上显著超越了 Qwen2.5-VL-32B 等基线模型，展现了该方法的普适性和高效性。"
+    }
+  ],
+  "keyQuotes": [
+    "现有 Mobile/APP Agent 的工作可以适应实时环境，并执行动作，但由于它们大部分都仅依赖于动作级奖励（SFT 或 RL）。",
+    "淘天集团算法技术-未来生活实验室&点淘算法团队联合提出，采用多回合、任务导向的学习方式，结合在线学习和轨迹纠错，也许能提高 Agent 的适应性和探索能力。",
+    "特别值得注意的是，通过阶段 1 和阶段 2 的训练，Qwen2.5-VL-3B 模型的表现超越了其标准版本，并在多项指标上领先于其他基准模型，突显了动作级和任务级奖励机制的重要性。",
+    "Mobile-R1 在处理未见应用时表现出良好的泛化性，而其他模型在泛化能力上存在挑战。",
+    "实验结果表明，Mobile-R1 在所有指标上都超越了所有基准。此外，团队计划全面开源相关资源以促进进一步的研究。"
+  ],
+  "tags": [
+    "App Agent",
+    "强化学习",
+    "视觉语言模型",
+    "任务级奖励",
+    "模型训练"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2639,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752994097000,
+  "publishDateStr": "2025-07-20",
+  "publishDateTimeStr": "2025-07-20 06:48:17"
+}

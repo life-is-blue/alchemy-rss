@@ -1,0 +1,47 @@
+{
+  "id": "RAW_e8eb4132",
+  "title": "CNCF 推出 Kubernetes AI 合规认证计划，以标准化工作负载",
+  "url": "https://www.infoq.com/news/2025/12/cncf-kubernetes-ai-conformance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-30 09:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://www.cncf.io/announcements/2025/11/11/cncf-launches-certified-kubernetes-ai-conformance-program-to-standardize-ai-workloads-on-kubernetes/\">Cloud Native Computing Foundation has introduced a new certification</a> to bring order to the rapidly expanding world of artificial intelligence on Kubernetes. This initiative aims to ensure that AI workloads remain portable and consistent across different cloud providers and on-premises environments.</p>\n   <p>Announced at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/\">KubeCon North America</a> in Atlanta, the Certified Kubernetes AI Conformance programme establishes a technical baseline for platforms running machine learning frameworks. It addresses the growing fragmentation in how various vendors handle specialised hardware, such as GPUs and high-performance networking.</p>\n   <p>The move comes as more enterprises attempt to move generative AI models from experimental notebooks into production environments. Without a unified standard, these teams often face <a href=\"https://www.cncf.io/reports/cloud-native-artificial-intelligence-whitepaper/\">significant technical debt</a> when moving workloads between different cloud platforms or specialised infrastructure providers.</p>\n   <p><a href=\"https://www.cncf.io/announcements/2025/11/11/cncf-launches-certified-kubernetes-ai-conformance-program-to-standardize-ai-workloads-on-kubernetes/\">Chris Aniszczyk, Chief Technology Officer at CNCF, said</a>: \"As AI in production continues to scale and take advantage of multiple clouds and systems, teams need a consistent infrastructure they can rely on.\" He added that the programme will create shared criteria to ensure AI workloads behave predictably across environments.</p>\n   <p>Technically, the programme focuses on several critical areas of the Kubernetes stack that have <a href=\"https://www.cncf.io/reports/cloud-native-artificial-intelligence-whitepaper/\">previously lacked standardisation</a>. This includes Dynamic Resource Allocation for managing accelerators, volume handling for large datasets, and job-level networking for distributed training.</p>\n   <p>The v1.0 release of the programme also mandates support for <a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction/gang-scheduling/\">gang scheduling</a>. This is a crucial feature that prevents resource deadlocks by ensuring all components of a distributed training job are ready before any single part starts consuming GPU time.</p>\n   <p>While Kubernetes has become the de facto orchestrator for containers, it faces competition in the AI space from specialised alternatives. Orchestrators like <a href=\"https://www.ray.io/\">Ray</a> have gained popularity for their native handling of Python-based distributed computing, while <a href=\"https://www.hashicorp.com/products/nomad\">HashiCorp Nomad</a> is often cited as a simpler alternative for high-performance batch processing.</p>\n   <p>By introducing this certification, the CNCF is positioning Kubernetes as the superior choice for interoperable AI. The programme aims to prevent the \"walled gardens\" often found in proprietary cloud AI platforms such as <a href=\"https://aws.amazon.com/sagemaker/\">Amazon SageMaker</a> or <a href=\"https://cloud.google.com/vertex-ai\">Google Vertex AI</a> by ensuring that a conformant distribution provides the same underlying primitives regardless of the vendor.</p>\n   <p>Initial participants in the programme include major cloud players like Microsoft Azure and Google Cloud, alongside specialised infrastructure providers such as <a href=\"https://www.coreweave.com/\">CoreWeave</a> and <a href=\"https://www.akamai.com/\">Akamai</a>. These vendors must pass a rigorous test suite to prove their platforms meet the community-defined requirements.</p>\n   <p><a href=\"https://www.cncf.io/announcements/2025/11/11/cncf-launches-certified-kubernetes-ai-conformance-program-to-standardize-ai-workloads-on-kubernetes/\">Jago Macleod, Kubernetes and GKE engineering director at Google Cloud, said</a>: \"By aligning with this standard early, we're making it easier for developers and enterprises to build AI applications that are production-ready, portable, and efficient without reinventing infrastructure for every deployment.\"</p>\n   <p>The foundation has already begun work on a <a href=\"https://github.com/cncf/k8s-ai-conformance\">roadmap for v2.0</a>, which is expected to launch in 2026. This future iteration will likely expand to include more advanced inference patterns, enhanced monitoring metrics, and stricter security requirements for model serving.</p>\n   <p>The launch marks a significant shift for the CNCF as it pivots towards an AI-native ecosystem. By standardising how Kubernetes interacts with the hardware layer, the foundation hopes to lower the barrier to entry for organisations looking to scale their AI operations without risking long-term vendor lock-in.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"CNCF Launches Certified Kubernetes AI Conformance Programme To Standardise Workloads\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/cncf-kubernetes-ai-conformance/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767085200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "CNCF 推出 Kubernetes AI 合规认证计划，旨在标准化 Kubernetes 上的 AI 工作负载，确保它们在不同云和本地环境中的可移植性和一致性。",
+  "oneSentenceSummary": "CNCF 推出 Kubernetes AI 合规认证计划，旨在标准化 Kubernetes 上的 AI 工作负载，确保它们在不同云和本地环境中的可移植性和一致性。",
+  "summary": "云原生计算基金会（CNCF）推出了 Kubernetes AI 合规认证计划，以标准化 Kubernetes 上的 AI 工作负载。该计划在北美 KubeCon 上宣布，旨在通过为运行机器学习框架的平台建立技术基线，解决 AI 基础设施日益碎片化的问题。它旨在确保 AI 工作负载在不同环境中的可移植性和一致性，从而避免企业在将生成式 AI 模型投入生产时产生技术债务。该计划重点关注 Kubernetes 堆栈中的关键领域，如加速器的动态资源分配、大型数据集的存储卷处理、作业级网络以及强制性的协同调度。通过提供标准化的方法，CNCF 将 Kubernetes 定位为专有云 AI 平台的卓越替代方案，吸引了 Microsoft Azure 和 Google Cloud 等主要云提供商的参与。2.0 版路线图已经在进行中，以进一步增强推理模式、监控和安全能力。",
+  "mainPoints": [
+    {
+      "point": "CNCF 推出 Kubernetes AI 合规认证计划，以标准化 Kubernetes 上的 AI/ML 工作负载。",
+      "explanation": "该计划旨在通过为平台定义技术基线，解决 AI 基础设施日益碎片化的问题，确保 AI 工作负载在各种云和本地环境中的可移植性和一致性。"
+    },
+    {
+      "point": "该计划解决了 Kubernetes 中针对 AI 的关键技术领域，包括资源分配、数据处理和分布式训练。",
+      "explanation": "重点关注的关键领域包括加速器的动态资源分配、大型数据集的存储卷处理、作业级网络，以及强制支持协同调度，以防止分布式训练作业中的资源死锁。"
+    },
+    {
+      "point": "该认证将 Kubernetes 定位为对抗专业且专有 AI 平台的强大、可互操作的选择。",
+      "explanation": "通过提供社区定义的标准，CNCF 力求为“围墙花园”式的专有云 AI 平台提供一个开放的替代方案，促进供应商中立性并防止锁定，并成功吸引了主要行业参与者。"
+    }
+  ],
+  "keyQuotes": [
+    "随着生产中的 AI 持续扩展并利用多个云和系统，团队需要一个可以依赖的一致基础设施。",
+    "通过尽早采纳这一标准，我们让开发者和企业更容易构建生产就绪、可移植且高效的 AI 应用程序，而无需为每次部署重新发明基础设施。",
+    "通过标准化 Kubernetes 与硬件层的交互方式，该基金会希望能降低希望扩展 AI 运营而又不想冒长期供应商锁定风险的组织的入门门槛。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 518,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767085200000,
+  "publishDateStr": "2025-12-30",
+  "publishDateTimeStr": "2025-12-30 09:00:00"
+}

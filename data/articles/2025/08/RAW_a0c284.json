@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a0c284",
+  "title": "Claude Code 极简入门：3 条铁律让你告别代码屎山",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&mid=2247498637&idx=1&sn=dff471a4f5c9c3ea3cd892e4279cdca5",
+  "date": "2025-08-23 10:38:00",
+  "author": "刘小排",
+  "siteName": "刘小排r",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"background-color: inherit; font-size: 1rem;\">偶然在一个群里看到，有几位不认识的朋友，一唱一和地讨论说，学习Claude Code只需要看刘小排的公众号就行了。我挺感动的。</span></p>\n  <p><span leaf=\"\">我公众号里分享的Claude Code内容不是那么成体系，因为我自己也在不断摸索、不断精进自己使用Claude Code的技能，成文比较零散，想到哪里写到哪里。</span></p>\n  <p><span leaf=\"\">为了更好地帮助到新朋友，我输出一个Claude Code极简</span><span leaf=\"\">入门</span><span leaf=\"\">清单吧。只有3条。非常基础，非常初级，非常短，但绝对有效，可以杜绝Claude Code把代码写成屎山。</span></p>\n  <p><span leaf=\"\">直接开始</span></p>\n  <hr style=\"border-style: solid;border-width: 1px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);\">\n  <p><span leaf=\"\"><span textstyle=\"\" style=\"color: rgb(255, 104, 39);font-weight: bold;\">1、和Claude Code沟通新需求时，用飞书文档写需求，做到「任何人看都没有歧义」。需求描述超过1000字，图文并茂，然后复制给Claude Code</span></span></p>\n  <div>\n   <p><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,null]\">尝试让Claude Code直接写代码，是新手最容易犯的第一个错误。特别容易把代码改成屎山。</span></p>\n   <p><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,null]\"><span textstyle=\"\" style=\"color: rgb(255, 104, 39);\">一定要意识到：如果代码成了屎山，这不是Claude Code的问题，是你的问题。 &nbsp;</span></span></p>\n   <p><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,null]\">新手并容易不知道自己是否把需求描述得没有歧义，他们会倾向于甩锅给AI。为了万无一失，你还需要看下一条。</span></p>\n  </div>\n  <p><span leaf=\"\"><span textstyle=\"\" style=\"color: rgb(255, 104, 39);font-weight: bold;\">2、新需求首次沟通时，末尾强调&nbsp;</span><span textstyle=\"\" style=\"color: rgb(255, 104, 39);font-weight: bold;text-decoration: underline;\">「不要急着写代码！先理解需求，给出实现思路，我们先讨论，看还有啥需要我决策的点？ultrathink 」</span></span></p>\n  <p><span leaf=\"\"><span textstyle=\"\" style=\"color: rgb(255, 104, 39);\">尝试让Claude Code直接写代码，是新手最容易犯的第二个错误</span></span></p>\n  <p><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,null,&quot;para&quot;,null]\">有同学问题我，为什么不用Plan Mode？ 是的，Plan Mode可以得到类似的效果，但是，切换模式有点麻烦了。我喜欢提前授予Claude Code一切权限，解放双手。</span></p>\n  <p><span leaf=\"\">一般而言，新需求，<span textstyle=\"\" style=\"color: rgb(255, 104, 39);\">需要反复讨论3～5轮，直到Claude Code完全找不出来下一个需要你决策的点，我们再让它开始写代码</span>。</span></p>\n  <p><span leaf=\"\">我尽量打码敏感信息，给大家展示一下一部分讨论过程。可以看出，我的回复是非常长的，事无巨细。这是从飞书文档里复制粘贴出来的。</span></p>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100014983\" class=\"rich_pages wxw-img\" data-ratio=\"0.6564814814814814\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=26f071e4&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F607DKnuWzlEKmqcIiaYStbwgyhestN8Zzfj88tjuMAL1sUv1mMaavWXJ3nJUzIjz4wiclY9FarDrz1kkAuJDhevA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p><span leaf=\"\">如果出现下面这样的情况——粘贴后，Claude Code不展示你的需求原文（因为太长）——这是是好现象，说明你回复得很详细。</span></p>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100014980\" class=\"rich_pages wxw-img\" data-ratio=\"0.14166666666666666\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=de3e0974&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F607DKnuWzlEKmqcIiaYStbwgyhestN8ZzINyAhy6zsq58uk3cmicsgsUBnkmMANqIM29rqbmIeNKp1ia8f7SxCUZQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p><span leaf=\"\">完全讨论清楚后，只需要回复「同意」或者「开始」</span></p>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100014981\" class=\"rich_pages wxw-img\" data-ratio=\"0.21296296296296297\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=fdf42072&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F607DKnuWzlEKmqcIiaYStbwgyhestN8Zz4wck5m9gEQPdO1UsFoWVfRN8LlpIkTqk83mTSk6Aq9f2aEAhBlnqmg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100014982\" class=\"rich_pages wxw-img\" data-ratio=\"0.3388888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=d22192f3&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F607DKnuWzlEKmqcIiaYStbwgyhestN8ZzWXZ5icobBr2pDicpyxXImRTP0CianBE7twlKwPcGXue9d1ahWI3py8BSA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p><span leaf=\"\"><span textstyle=\"\" style=\"color: rgb(255, 104, 39);font-weight: bold;\">3、涉及界面需求时：快速纸上画布局，然后让Claude Code用ASCII画出来，最后提醒它拆分控件</span></span></p>\n  <div>\n   <p style=\"text-align: left;\"><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">A.关于画草图，最快的是在纸上画，也可以在Excalidraw上画，怎么快怎么来。无论怎么画，Claude Code都能明白你的意思。</span></p>\n   <p style=\"text-align: left;\"><span leaf=\"\"><img data-imgfileid=\"100014984\" alt=\"Draw Awesome Diagrams in Confluence via Excalidraw - Atlassian Community\" class=\"rich_pages wxw-img\" data-ratio=\"0.6101851851851852\" data-type=\"png\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=3caf45b6&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F607DKnuWzlEKmqcIiaYStbwgyhestN8ZzUYMNMGJbicuAUJkGgBMV3ORhaw1yvJAGsfd6h6xwEcsd3RhlBF7FhpA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></span></p>\n   <p style=\"text-align: left;\"><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">B.关于ASCII画图，你可以让Claude Code出3~5种不同的布局，然后你来选择。</span></p>\n   <p style=\"text-align: center;\" nodeleaf=\"\"><img data-imgfileid=\"100014985\" class=\"rich_pages wxw-img\" data-ratio=\"0.6388888888888888\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=60a35b2a&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F607DKnuWzlEKmqcIiaYStbwgyhestN8Zz7TgmZwiclpbZ4qsxFlnG0xGWd0Dzj6ROjyryUwkap3gztWCPOMuPhlw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  </div>\n  <p><span leaf=\"\">详情可以参考&nbsp;<a class=\"normal_text_link\" target=\"_blank\" style=\"\" href=\"https://mp.weixin.qq.com/s?__biz=MzI1MTUxNzgxMA==&amp;mid=2247498407&amp;idx=1&amp;sn=69efca7cb094f4f1218eacd242aa64ea&amp;scene=21#wechat_redirect\" textvalue=\"和Claude Code讨论产品的界面和交互设计\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\">和Claude Code讨论产品的界面和交互设计</a></span></p>\n  <p><span leaf=\"\">C. 最后，在开始编码前，<span textstyle=\"\" style=\"color: rgb(255, 104, 39);\">强调让Claude Code仔细理解项目结构，尽可能合理地拆分控件、并把控件放到合适的位置</span>。 这也是新手常见坑，如果不做强调，Claude Code可能会写出来单文件很大的控件。</span></p>\n </body>\n</html>",
+  "aiSummary": "文章提出使用 Claude Code 进行 AI 编程的三条极简铁律，强调先沟通、再编码，以避免生成“代码屎山”并提升开发效率。",
+  "oneSentenceSummary": "文章提出使用 Claude Code 进行 AI 编程的三条极简铁律，强调先沟通、再编码，以避免生成“代码屎山”并提升开发效率。",
+  "summary": "本文为 Claude Code 新手用户提供了三条核心指导原则，旨在帮助他们避免在使用 AI 生成代码时常见的错误，防止代码质量下降。首先，强调在与 Claude Code 沟通新需求时，需提供详尽且无歧义的飞书文档，字数超过 1000 字并图文并茂。其次，要求在首次沟通时，明确指示 Claude Code 不要急于编码，而是先理解需求、给出实现思路，进行多轮讨论直至所有决策点明确。最后，对于涉及界面需求，建议先手绘草图，再让 Claude Code 用 ASCII 艺术描绘布局，并强调合理拆分控件。这些方法共同构建了一个“先沟通后编码”的工作流，旨在提高 AI 辅助编程的质量和效率。",
+  "mainPoints": [
+    {
+      "point": "需求文档化与详尽描述是 AI 编程高质量的基石",
+      "explanation": "通过撰写详尽、无歧义的需求文档，能确保 AI 对任务的理解与人类一致，从而避免因信息不对称导致的代码偏差。"
+    },
+    {
+      "point": "编码前多轮讨论是避免“代码屎山”的关键步骤",
+      "explanation": "在 AI 开始编写代码前，与 AI 进行充分的思路讨论和决策确认，能够及时纠正潜在问题，确保 AI 生成的代码符合预期架构和逻辑。"
+    },
+    {
+      "point": "界面需求应通过结构化草图和组件拆分指导 AI",
+      "explanation": "对于 UI 开发，通过纸质草图或 ASCII 图辅助 AI 理解界面布局，并明确要求其合理拆分控件，有助于生成更模块化、可维护的代码。"
+    }
+  ],
+  "keyQuotes": [
+    "和 Claude Code 沟通新需求时，用飞书文档写需求，做到「任何人看都没有歧义」。需求描述超过 1000 字，图文并茂，然后复制给 Claude Code",
+    "一定要意识到：如果代码成了屎山，这不是 Claude Code 的问题，是你的问题。",
+    "不要急着写代码！先理解需求，给出实现思路，我们先讨论，看还有啥需要我决策的点？ultrathink",
+    "一般而言，新需求，需要反复讨论 3～5 轮，直到 Claude Code 完全找不出来下一个需要你决策的点，我们再让它开始写代码。",
+    "涉及界面需求时：快速纸上画布局，然后让 Claude Code 用 ASCII 画出来，最后提醒它拆分控件"
+  ],
+  "tags": [
+    "AI编程",
+    "Claude Code",
+    "提示词工程",
+    "代码生成",
+    "开发效能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1100,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_28f248",
+  "sourceName": "刘小排r",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755945480000,
+  "publishDateStr": "2025-08-23",
+  "publishDateTimeStr": "2025-08-23 10:38:00"
+}

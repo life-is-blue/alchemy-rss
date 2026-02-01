@@ -1,0 +1,59 @@
+{
+  "id": "RAW_ef18ef04",
+  "title": "R-HORIZON：探索长程推理边界，复旦 NLP&美团 LongCat 联合提出 LRMs 能力评测新框架",
+  "url": "https://tech.meituan.com/2025/11/28/longcat-r-horizon.html",
+  "date": "2025-11-28 00:00:00",
+  "author": "作者: 美团技术团队",
+  "siteName": "美团技术团队",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"content\">\n   <h2 id=\"一-推理模型-临的新挑战\">一、推理模型⾯临的新挑战</h2>\n   <p>随着 OpenAI o1 、 DeepSeek-R1 等大型推理模型（LRMs）的问世， AI 推理能力迎来了「测试时扩展」的新阶段。这些模型通过长链思维（Long Chain-of-Thought, CoT）在数学推理、代码生成、智能体任务等领域展现出强大能力。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/a4606cb89a053ae03859062a8f31c6cf288210.png\" alt></p>\n   <p>然而，现有评测体系存在一个关键盲区：主流基准测试（如 MATH500 、AIME）主要关注独立的单一问题，每个问题相互隔离，模型只需「—问—答」即可。</p>\n   <p>但现实应用场景往往大相径庭：</p>\n   <ul>\n    <li>软件开发中需要连续处理多个关联代码模块</li>\n    <li>数学证明需要基于前序推导逐步构建后续结论</li>\n    <li>智能助手往往需要在多轮交互逐步完成复杂任务</li>\n   </ul>\n   <p>这些真实场景要求模型具备跨任务的长链推理能力——不仅要解决单个子问题，更要在多个关联任务间保持推理—致性、合理分配计算资源、实现跨步骤的反思与纠错。</p>\n   <p><strong>核心问题：当前大型推理模型的长链推理能力边界到底在哪里？</strong></p>\n   <p>由于现有评测无法回答这—问题，传统训练数据也难以培养这种能力（如图所示，模型在长程推理场景下表现明显退化）。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/bb4fe80b945443675cd8513175b4a1d71467292.png\" alt=\"图 1：R1 &nbsp;系列模型在长程推理场景下的理论准确率与实际准确率对比\"></p>\n   <p>复旦大学与美团 LongCat 联合推出&nbsp;R-HORIZON——首个系统性评估与增强 LRMs 长链推理能力的评测框架与训练方法。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/0afe48c3b3a7faae30577756d724058a635227.png\" alt></p>\n   <ul>\n    <li><strong>论文标题</strong>：&nbsp;R-HORIZON: How Far Can Your Large Reasoning Model Really Go in Breadth and Depth?</li>\n    <li><strong>论文地址</strong>：&nbsp;<a href=\"https://arxiv.org/abs/2510.08189\">https://arxiv.org/abs/2510.08189</a></li>\n    <li><strong>项目主页</strong>：&nbsp;<a href=\"https://reasoning-horizon.github.io\">https://reasoning-horizon.github.io</a></li>\n    <li><strong>代码地址</strong>：<a href=\"https://github.com/meituan-longcat/R-HORIZON\">https://github.com/meituan-longcat/R-HORIZON</a>&nbsp;</li>\n    <li><strong>数据集</strong>：<a href=\"https://huggingface.co/collections/meituan-longcat/r-horizon\">https://huggingface.co/collections/meituan-longcat/r-horizon</a></li>\n   </ul>\n   <h2 id=\"二-方法论-query-composition-范式\">二、方法论：Query Composition 范式</h2>\n   <p><strong>核心创新</strong></p>\n   <p>R-HORIZON 提出了问题组合（Query Composition）方法，通过构建问题间的依赖关系，将孤立任务转化为复杂的多步骤推理链。</p>\n   <p>以数学任务为例，该方法包含三个步骤：</p>\n   <p>1.&nbsp;<strong>信息提取</strong>：从独立问题中提取核心数值、变量等关键信息 2.&nbsp;<strong>依赖构建</strong>：将前序问题的答案嵌入到后续问题的条件中 3.&nbsp;<strong>链式推理</strong>：模型必须顺序解决所有子问题才能获得最终答案</p>\n   <p><strong>方法优势</strong></p>\n   <ul>\n    <li><strong>灵活扩展</strong>：可自由控制推理链长度（n = 2, 4, 8…）</li>\n    <li><strong>精确可控</strong>：可灵活设定问题间的依赖强度</li>\n    <li><strong>高效低成本</strong>：基于现有数据集构建，无需额外人工标注</li>\n   </ul>\n   <p>基于此方法，我们构建了 R-HORIZON Benchmark 用于系统性评估 LRMs 的多步推理能力，同时生成了长链推理训练数据，通过强化学习（RLVR）提升模型性能。</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/ad0541b23780a87148495642e9c21e863212168.png\" alt=\"图 2：R-HORIZON 方法流程——从单 — 问题到复杂推理链的转化及应用场景\"></p>\n   <h2 id=\"三-评测基准-r-horizon-benchmark\">三、评测基准：R-HORIZON Benchmark</h2>\n   <h3 id=\"数据集构成\">数据集构成</h3>\n   <p>基于 Query Composition 方法，我们构建了涵盖 6 个代表性数据集的 R-HORIZON Benchmark：</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/4121b6e3d7637798a7d43826d054dc1566460.png\" alt></p>\n   <p><strong>评测发现：性能断崖现象</strong></p>\n   <p>我们评测了 20+ 个主流 LRMs（包括 o4-mini 、Claude-Sonnet-4 、 DeepSeek-R1 等顶级商业模型及开源模型），揭示了—个重要现象。</p>\n   <p>顶级推理模型在长链推理场景下均出现显著性能下降！</p>\n   <p>主要发现：</p>\n   <ul>\n    <li><strong>普遍性能退化</strong>：所有模型随问题数量增加均出现明显性能下降。DeepSeek-R1 在 AIME25 单问题场景准确率达 87.3%，但在 5 个组合问题场景下骤降至 24.6%。</li>\n    <li><strong>规模效应</strong>：更大规模的模型对多步推理挑战表现出更强的鲁棒性。</li>\n    <li><strong>任务差异</strong>：代码生成任务相比数学任务表现出更陡峭的性能衰退；多数推理模型在网页搜索场景中丧失工具调用能力。</li>\n   </ul>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/b821d4b3ab5a1e16096788351d172f0a11091675.png\" alt=\"图 3：R-HORIZON Benchmark &nbsp;评测结果—— 所有模型均出现显著性能衰退\"></p>\n   <h2 id=\"四-机制分析-推理模型的三大瓶颈\">四、机制分析：推理模型的三大瓶颈</h2>\n   <p>为深入理解性能断崖的成因，我们进行了系统的机制分析，识别出当前 LRMs 的三个关键瓶颈：</p>\n   <p><strong>瓶颈 1：有效推理长度受限</strong></p>\n   <p>随着相互依赖问题数量增加，LRMs 难以维持原有性能水平。实际准确率与理论准确率之间的差距显著扩大。</p>\n   <p>深入分析显示：</p>\n   <ul>\n    <li>模型错误集中在特定上下文范围内</li>\n    <li>7B 模型的主要错误范围在 (4-6K tokens)</li>\n    <li>32B 模型将范围扩展到 (8-10K tokens)</li>\n    <li>更大模型具有更长的有效推理边界</li>\n   </ul>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/cbb60e0922aec62187353677a57ff5bc3762284.png\" alt=\"图 4：R1-Qwen-7B 和 R1-Qwen-32B &nbsp;的准确率及错误位置分析\"></p>\n   <p><strong>瓶颈 2： 反思机制高度局部化</strong></p>\n   <p>对模型「反思」行为的分析发现发现：</p>\n   <ul>\n    <li>模型反思频率随问题数量增加而上升并趋于收敛。</li>\n    <li><strong>超过半数复杂任务</strong> 完全缺乏 <strong>长程反思</strong>&nbsp;（跨越当前问题的反思）。</li>\n    <li>当前 LRMs 的反思机制 <strong>高度局部化</strong>，无法支撑长链场景需求。</li>\n   </ul>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/0aa9d9ab56cf77c6d7e4b6a4de7f88cc3288267.png\" alt=\"图 5：MATH500 &nbsp;数据集上的反思行为分析\"></p>\n   <p><strong>瓶颈 3：思考预算分配失衡</strong></p>\n   <p>最令人意外的发现：<strong>包括 DeepSeek-R1 在内的主流 LRMs 无法有效分配思考预算</strong>！</p>\n   <ul>\n    <li>模型倾向于过度分配 tokens 给早期推理阶段</li>\n    <li>未能合理分配资源给后续关键问题</li>\n    <li>这种失衡严重影响整体推理链的完成质量</li>\n   </ul>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/2958ec0eec766ebcaa7d8fc862f3b2652727738.png\" alt=\"图 6：不同组合问题数量下各模型的思考预算分配\"></p>\n   <h2 id=\"五-训练方案-突破能力边界\">五、 训练方案：突破能力边界</h2>\n   <p>发现瓶颈后，我们进—步探索：能否通过长链数据的强化学习训练突破这些限制？</p>\n   <p><strong>训练策略</strong></p>\n   <p>我们基于 R-HORIZON 构建的长链推理数据，采用 GRPO 算法进行训练：</p>\n   <ul>\n    <li><strong>算法</strong>：主流 RLVR 算法 GRPO</li>\n    <li><strong>数据</strong>：&nbsp;R-HORIZON 组合数据（n = 2, n = 4）</li>\n    <li><strong>实验</strong>：不同奖励函数的对比实验</li>\n   </ul>\n   <p><strong>训练效果：双重性能提升</strong></p>\n   <p>实验结果显示：R-HORIZON 训练不仅显著提升长链任务表现，单问题性能也大幅增强！</p>\n   <p><strong>核心数据</strong></p>\n   <p><img src=\"https://p1.meituan.net/meituantechblog/be86f20431a7004e0e8ac95cbb5f5311123674.png\" alt></p>\n   <p>注：加粗数字表示该列最佳成绩</p>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/68896367151f6cc8c437658b1ba14f712204920.png\" alt=\"图 7：不同训练配置下的性能对比\"></p>\n   <p><strong>关键发现</strong></p>\n   <ol>\n    <li><strong>双重提升</strong>：使用 n = 2 组合问题训练，多步推理性能大幅提升（AIME24 n = 2 +17.4 分），单问题性能也显著增强（AIME24 单题 +7.5 分）。</li>\n    <li><strong>可扩展性</strong>：增加组合复杂度（n = 4）增强了模型处理更多推理步骤问题的能力，在 MATH500 (n = 8) 上达到 50.6%。</li>\n   </ol>\n   <p><strong>训练带来的质变</strong></p>\n   <p>R-HORIZON 训练带来了推理机制的深层改变：</p>\n   <ul>\n    <li><strong>更高效的推理长度</strong>：显著改善组合任务性能，更好地泛化到更长推理链，同时缓解「overthinking」现象</li>\n    <li><strong>更合理的预算分配</strong>：学会在多步问题中进行更合理的 token 预算分配</li>\n    <li><strong>更长程的反思能力</strong>：促进了长程反思频率增加，直接改善长链推理性能</li>\n   </ul>\n   <p><img src=\"https://p0.meituan.net/meituantechblog/4eea1c0beb345c8d6328f6a4ce53b0754613721.png\" alt=\"图 8：使用标准数据集和组合数据集进行强化学习的效果分析\"></p>\n   <h2 id=\"六-结论与展望\">六、结论与展望</h2>\n   <p>R-HORIZON 标志着大型推理模型研究的范式转变——从「能解决什么问题」到「能走多远」。</p>\n   <p><strong>技术贡献</strong></p>\n   <ul>\n    <li><strong>首个长链推理评测基准</strong>：系统性揭示 LRMs 的能力边界及三大瓶颈。</li>\n    <li><strong>可扩展训练范式</strong>：提供低成本、高效率的能力提升路径。</li>\n    <li><strong>深度机制分析</strong>：为未来推理模型改进指明方向。</li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美团 LongCat 与复旦 NLP 联合提出 R-HORIZON 框架，通过 Query Composition 范式系统性评估并增强大型推理模型（LRMs）的长链推理能力，揭示其三大瓶颈并提供有效训练方案。",
+  "oneSentenceSummary": "美团 LongCat 与复旦 NLP 联合提出 R-HORIZON 框架，通过 Query Composition 范式系统性评估并增强大型推理模型（LRMs）的长链推理能力，揭示其三大瓶颈并提供有效训练方案。",
+  "summary": "文章详细介绍了复旦大学 NLP 团队与美团 LongCat 联合推出的 R-HORIZON 框架，旨在解决现有评测体系在评估大型推理模型（LRMs）长链推理能力方面的不足。当前 LRMs 虽在单一任务上表现出色，但在需要连续处理多个关联任务的真实场景中，其长链推理能力面临严峻挑战，表现出显著的性能退化。R-HORIZON 通过创新的 Query Composition 方法，将孤立任务转化为复杂的多步骤推理链，构建了涵盖数学、代码、网页搜索等 6 个数据集的 Benchmark。评测结果揭示了 LRMs 在长链推理中的“性能断崖”现象，并深入分析了其三大瓶颈：有效推理长度受限、反思机制高度局部化和思考预算分配失衡。文章进一步提出基于 R-HORIZON 数据的强化学习训练方案，采用 GRPO 算法，实验证明该方案不仅显著提升了模型在长链任务上的表现，也同时增强了单问题性能，并带来了推理机制的深层优化，如更高效的推理长度、更合理的预算分配和更长程的反思能力。R-HORIZON 为 LRMs 的长链推理研究指明了新的方向和评估标准。",
+  "mainPoints": [
+    {
+      "point": "现有评测体系无法有效评估 LRMs 的长链推理能力。",
+      "explanation": "传统基准测试关注独立单一问题，未能反映真实世界应用中多任务关联、跨步骤反思纠错的复杂长链推理需求，导致模型在该场景下性能显著退化。"
+    },
+    {
+      "point": "R-HORIZON 框架通过 Query Composition 范式系统性评估与增强 LRMs 长链推理能力。",
+      "explanation": "该方法通过构建问题间的依赖关系，将孤立任务转化为复杂多步骤推理链，并基于此构建了评测基准和强化学习训练数据，实现了低成本高效益的评估和数据生成。"
+    },
+    {
+      "point": "主流 LRMs 在长链推理中面临有效推理长度受限、反思机制局部化和思考预算分配失衡三大瓶颈。",
+      "explanation": "评测发现所有模型在长链推理场景下均出现显著性能下降，且通过机制分析揭示了导致“性能断崖”的具体原因，为模型改进提供了明确方向。"
+    },
+    {
+      "point": "基于 R-HORIZON 数据的强化学习训练能显著提升模型的长链及单问题推理性能。",
+      "explanation": "通过 GRPO 算法对长链推理数据进行训练，模型不仅在多步推理任务上表现大幅提升，同时在单问题上也有显著增强，并带来了推理机制的深层优化。"
+    }
+  ],
+  "keyQuotes": [
+    "核心问题：当前大型推理模型的长链推理能力边界到底在哪里？",
+    "R-HORIZON 提出了问题组合（Query Composition）方法，通过构建问题间的依赖关系，将孤立任务转化为复杂的多步骤推理链。",
+    "顶级推理模型在长链推理场景下均出现显著性能下降！",
+    "最令人意外的发现：包括 DeepSeek-R1 在内的主流 LRMs 无法有效分配思考预算！",
+    "R-HORIZON 标志着大型推理模型研究的范式转变------从「能解决什么问题」到「能走多远」。"
+  ],
+  "tags": [
+    "长链推理",
+    "LLM评测",
+    "大语言模型",
+    "Query Composition",
+    "强化学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 87,
+  "wordCount": 2109,
+  "domain": "tech.meituan.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f18ad4",
+  "sourceName": "美团技术团队",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764288000000,
+  "publishDateStr": "2025-11-28",
+  "publishDateTimeStr": "2025-11-28 00:00:00"
+}

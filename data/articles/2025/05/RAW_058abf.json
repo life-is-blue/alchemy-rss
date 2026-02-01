@@ -1,0 +1,53 @@
+{
+  "id": "RAW_058abf",
+  "title": "谷歌 DeepMind：大模型也很任性，知道最优路径偏要撞南墙 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-05-7",
+  "date": "2025-05-05 11:26:31",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <div data-react-class=\"utils/Modal\" data-react-props=\"{}\" data-react-cache-id=\"utils/Modal-0\">\n   <div class=\"modal-layer\">\n    <span></span><span></span>\n   </div>\n  </div>\n  <div data-react-class=\"utils/Alert\" data-react-props=\"{}\" data-react-cache-id=\"utils/Alert-0\"></div>\n  <div id=\"article_library\">\n   <div class=\"detail\">\n    <div class=\"article-layout\">\n     <div class=\"article-layout__header\">\n      <div class=\"article-nav\">\n       <div class=\"article-nav__main\">\n        <img class=\"article-nav__home\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a4218b50-6db3-478c-2f98-87f4c09cbf00/public\" alt=\"home\">\n        <div class=\"logo-area\">\n         <div class=\"title\">\n          <img class=\"logo\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b5f79731-f302-4402-c104-e9b72beead00/public\" alt=\"logo\">机器之心 · 文章库\n         </div>\n        </div>\n        <div class=\"btn__no-user\">\n         <img src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43347c54-6f93-49ca-b158-f05495a4cf00/public\" alt=\"no-user\">登录\n        </div>\n       </div>\n      </div>\n     </div>\n     <div class=\"article-layout__body\">\n      <div class=\"detail__content-wrapper\">\n       <div class=\"detail__content\">\n        <div class=\"detail__progress-wrapper left-50\">\n         <div class=\"detail__progress false\">\n          <div class=\"detail__progress-circle\">\n           <div class=\"ant-progress ant-progress-circle ant-progress-status-normal ant-progress-default\">\n            <div class=\"ant-progress-inner\" style=\"width: 30px; height: 30px; font-size: 10.5px;\">\n             <svg class=\"ant-progress-circle\" viewBox=\"0 0 100 100\">\n              <path class=\"ant-progress-circle-trail\" d=\"M 50,50 m 0,-42\n   a 42,42 0 1 1 0,84\n   a 42,42 0 1 1 0,-84\" stroke=\"#9a9790\" stroke-linecap=\"round\" stroke-width=\"16\" fill-opacity=\"0\" style=\"stroke: rgb(154, 151, 144); stroke-dasharray: 263.894px, 263.894px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s, stroke-dasharray 0.3s, stroke 0.3s, stroke-width 0.06s 0.3s, opacity 0.3s;\"></path><path class=\"ant-progress-circle-path\" d=\"M 50,50 m 0,-42\n   a 42,42 0 1 1 0,84\n   a 42,42 0 1 1 0,-84\" stroke=\"\" stroke-linecap=\"round\" stroke-width=\"16\" opacity=\"0\" fill-opacity=\"0\" style=\"stroke: rgb(255, 255, 255); stroke-dasharray: 0px, 263.894px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s, stroke-dasharray 0.3s, stroke 0.3s, stroke-width 0.06s 0.3s, opacity;\"></path><path class=\"ant-progress-circle-path\" d=\"M 50,50 m 0,-42\n   a 42,42 0 1 1 0,84\n   a 42,42 0 1 1 0,-84\" stroke=\"\" stroke-linecap=\"round\" stroke-width=\"16\" opacity=\"0\" fill-opacity=\"0\" style=\"stroke: rgb(82, 196, 26); stroke-dasharray: 0px, 263.894px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s, stroke-dasharray 0.3s, stroke 0.3s, stroke-width 0.06s 0.3s, opacity;\"></path>\n             </svg>\n            </div>\n           </div>\n           <div class=\"detail__progress-title\">\n            <p></p>\n           </div>\n           <div class=\"detail__progress-percent\">0%</div>\n          </div>\n         </div>\n        </div>\n        <div class=\"detail__info false\">\n         <div class=\"pro-loading\"></div>\n        </div>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "该研究揭示了大语言模型在决策中存在的挑战，并提出通过强化学习微调 CoT 推理过程的 RLFT 方法来有效缓解这些问题。",
+  "oneSentenceSummary": "该研究揭示了大语言模型在决策中存在的挑战，并提出通过强化学习微调 CoT 推理过程的 RLFT 方法来有效缓解这些问题。",
+  "summary": "本文深入研究了大型语言模型（LLM）在决策场景中表现次优的原因，重点关注了三种常见的失败模式：贪婪性、频率偏差和知行差距。研究发现，LLM 容易过早陷入贪婪动作选择策略，导致动作覆盖率停滞；小规模 LLM 倾向于机械复制上下文中的高频动作，而大规模 LLM 虽然减少了频率偏差，但仍然存在贪婪行为；LLM 虽然能正确理解任务要求，却因执着于贪婪动作而无法有效执行所知方案。为了解决这些问题，研究者提出了一种基于强化学习的微调方法（RLFT），通过从环境交互中获得的奖励来优化自生成的思维链（CoT）推理过程，从而提升 LLM 的决策能力。实验结果表明，RLFT 能够有效降低 LLM 的遗憾值，缓解贪婪性，并增强智能体的探索性行为。",
+  "mainPoints": [
+    {
+      "point": "RL 微调能有效提升 LLM 的决策能力",
+      "explanation": "通过强化学习对 LLM 的 CoT 推理过程进行微调，可以鼓励智能体进行更有效的探索，并缩小知行差距。"
+    },
+    {
+      "point": "LLM 在决策中存在贪婪性、频率偏差和知行差距三大问题",
+      "explanation": "贪婪性导致 LLM 过早采用局部最优策略，频率偏差使 LLM 重复选择高频动作，知行差距则表明 LLM 无法有效执行已知方案。"
+    },
+    {
+      "point": "不同规模的 LLM 在决策问题上表现出不同的特点",
+      "explanation": "小规模 LLM（2B）更容易受到频率偏差的影响，而大规模 LLM（27B）虽然减少了频率偏差，但仍然存在严重的贪婪性问题。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM 智能体存在次优探索和知 - 行差距（knowing-doing gap）的问题，即无法有效地将模型中的知识转化为行动。",
+    "本文发现小规模 LLMs（2B）倾向于机械复制上下文中的高频动作（无视其奖励差异），这种现象被定义为频率偏差。",
+    "智能体清楚地知道如何解决任务，所有推理中有 87% 是正确的（见图 5）。然而，即使对于正确计算的推理，模型也经常会选择贪婪动作（58%）而不是最优动作（21%）。"
+  ],
+  "tags": [
+    "大语言模型",
+    "强化学习",
+    "决策优化",
+    "决策智能体",
+    "思维链"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1768,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746444391000,
+  "publishDateStr": "2025-05-05",
+  "publishDateTimeStr": "2025-05-05 11:26:31"
+}

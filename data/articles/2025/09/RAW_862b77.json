@@ -1,0 +1,53 @@
+{
+  "id": "RAW_862b77",
+  "title": "AI 真的会写 90% 的代码了",
+  "url": "https://baoyu.io/blog/ai-writes-90-percent-code",
+  "date": "2025-09-22 16:08:58",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"5e729335as\">Anthropic CEO Dario 说 AI 会写 90% 的代码，包括 Codex 团队也说它们大部分代码都是 Codex 完成的，这很容易造成一种误解：“软件工程师的岗位要被 AI 取代了”，但实际上并不完全是这样的，只是说明软件工程师工作的方式正在升级，对技能的要求也不一样了。</p>\n   <p data-id=\"qe1vr0orjs\">几个简单的方法可以判断：</p>\n   <ul>\n    <li>\n     <p data-id=\"p4a25xnpfg\">看 Anthropic、OpenAI 这些 AI 模型公司是不是还在大规模招聘软件工程师；</p>\n    </li>\n    <li>\n     <p data-id=\"u7uz6six20\">看一个初中级程序员能不能用 Claude Code 或者 Codex 写出 Claude Code。</p>\n    </li>\n   </ul>\n   <p data-id=\"lsmsyddfzw\">因为代码行数并不代表代码的价值，真正有价值的是专业人士基于业务需求用 AI 生成的并审查的代码。</p>\n   <p data-id=\"3tqyzvhg6f\">实际上我自己的开发方式已经发生了很多变化：</p>\n   <ul>\n    <li>\n     <p data-id=\"tmtjta03sv\">琐碎的事情几乎 100% 让 AI 完成，比如写自动化测试代码，比如一些提升效率的脚本</p>\n    </li>\n    <li>\n     <p data-id=\"xgpgq635a6\">Bug 让 AI 去修复，人工审查，验证</p>\n    </li>\n    <li>\n     <p data-id=\"owzhvq7lyp\">原型开发，完全由 AI 实现</p>\n    </li>\n    <li>\n     <p data-id=\"1etmldl4xw\">人工设计完，让 AI 去实现一个模块，而不是从头手写代码，也不是以前那种和 AI 结对一边写一边确认的方式，而是完全 AI 去写</p>\n    </li>\n    <li>\n     <p data-id=\"qmeur77qzj\">AI 写完代码，先让 AI Review 代码，然后人工 Review，再合并</p>\n    </li>\n    <li>\n     <p data-id=\"jw7sawl4g7\">一些复杂的算法、POC，让 AI 帮我实现（我自己没能力或者没精力实现的），现在最新的 Codex 已经能帮我搞定一些复杂的技术问题了</p>\n    </li>\n   </ul>\n   <p data-id=\"ib59olnv1m\">一个凭感觉的对我自己量化的对我开发效率影响的数据：</p>\n   <ul>\n    <li>\n     <p data-id=\"t6fxp6t53r\">GitHub Copilot 第一版的自动完成：效率提升 10%</p>\n    </li>\n    <li>\n     <p data-id=\"ecel1tldzq\">Cursor： Tab + Chat 模式提升 30%+</p>\n    </li>\n    <li>\n     <p data-id=\"qyeqhx5nr8\">Cursor：Edit 模式 提升 50%+，不需要手动复制粘贴代码</p>\n    </li>\n    <li>\n     <p data-id=\"qxlvaufavi\">Claude Code：提升 100%+，第一个真正能用的 Coding Agent，很聪明，相对不够稳定</p>\n    </li>\n    <li>\n     <p data-id=\"t2ilfzexjp\">Codex（GPT-5-Codex high）： 提升 120%+，速度慢，但是结果很稳定，bug 少</p>\n    </li>\n   </ul>\n   <p data-id=\"nf1jrg9c3n\">也就是说现在借助 AI 辅助，我的开发效率至少提升一倍以上，这个进化速度确实惊人，超乎我的想象，如果你翻看我一年前的看法，当时我是没有这么乐观的。</p>\n   <p data-id=\"65vohd92z0\">但也不要忽视这样效率的提升背后需要的条件：</p>\n   <ul>\n    <li>\n     <p data-id=\"ga32b6hmbl\">需要懂代码：算法、数据结构、语言等等</p>\n    </li>\n    <li>\n     <p data-id=\"zwy04vjcqe\">需要一点技术管理经验：会对复杂任务分解拆分，管理多个 AI Agents 协作</p>\n    </li>\n    <li>\n     <p data-id=\"2upyxql87v\">提示词工程：能用提示词把想要 AI 实现的功能或者解决的问题描述清楚</p>\n    </li>\n    <li>\n     <p data-id=\"3qyxvwk1dw\">代码和架构是 AI 友好的：对于 AI 训练丰富的代码 AI 生成是擅长的，如果都是内部的库或者使用量很少的编程语言或类库，AI 生成效率要大打折扣</p>\n    </li>\n   </ul>\n   <p data-id=\"6e15aezbt8\">这也意味着想要最大化的发挥 AI 编程的效率，本身需要有一定的软件开发经历，另一方面还要去学习 AI 相关的一些知识，去改变自己的一些使用习惯。</p>\n   <p data-id=\"9kcevizhc2\">虽然说 AI 无法取代软件工程师，但可以看见有了 AI 辅助，软件工程师效率是能大幅提升的，至于这带来的连锁反应，比如团队会少招人，比如新人机会更少，这些确实也是在实实在在发生的事情。</p>\n   <p data-id=\"715m3rskap\">未来会怎样？谁知道呢！</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章探讨 AI 如何大幅提升软件工程师效率，指出工程师角色转向 AI 管理与审查，需掌握代码理解、任务分解和提示词工程等核心能力。",
+  "oneSentenceSummary": "文章探讨 AI 如何大幅提升软件工程师效率，指出工程师角色转向 AI 管理与审查，需掌握代码理解、任务分解和提示词工程等核心能力。",
+  "summary": "文章围绕“AI 会写 90%的代码”这一观点展开，作者宝玉结合自身经验，指出这并非意味着软件工程师将被取代，而是工作方式的升级。他分享了 AI 在自动化测试、Bug 修复、原型开发、模块实现、代码审查及复杂算法 POC 等方面的应用，并量化了不同 AI 工具（GitHub Copilot， Cursor， Claude Code， Codex）带来的效率提升，最高可达 120%以上。同时，文章强调了高效利用 AI 编程所需的条件：深厚的代码基础、技术管理经验、提示词工程能力以及 AI 友好的代码和架构。最后，作者承认 AI 辅助编程虽能大幅提升效率，但也可能导致团队招聘减少和新人机会变少等连锁反应。",
+  "mainPoints": [
+    {
+      "point": "AI 辅助编程大幅提升软件工程师效率，但并非取代其岗位。",
+      "explanation": "AI 主要承担琐碎、重复性任务，如测试代码、Bug 修复和原型开发，让工程师专注于高价值设计和审查工作，从而实现效率翻倍。"
+    },
+    {
+      "point": "高效利用 AI 编程需具备多方面技能，如代码理解、任务分解和提示词工程。",
+      "explanation": "工程师需懂算法、数据结构，能将复杂任务拆解，并通过清晰的提示词引导 AI，并确保代码和架构对 AI 友好，才能最大化 AI 的效能。"
+    },
+    {
+      "point": "软件工程师的工作重心正从手写代码转向 AI 工具的管理、审查和引导。",
+      "explanation": "工程师现在更多是设计模块、让 AI 实现，再对 AI 生成的代码进行审查和优化，这要求工程师具备更强的架构设计和代码评审能力。"
+    }
+  ],
+  "keyQuotes": [
+    "代码行数并不代表代码的价值，真正有价值的是专业人士基于业务需求用 AI 生成的并审查的代码。",
+    "也就是说现在借助 AI 辅助，我的开发效率至少提升一倍以上，这个进化速度确实惊人，超乎我的想象，如果你翻看我一年前的看法，当时我是没有这么乐观的。",
+    "虽然说 AI 无法取代软件工程师，但可以看见有了 AI 辅助，软件工程师效率是能大幅提升的，至于这带来的连锁反应，比如团队会少招人，比如新人机会更少，这些确实也是在实实在在发生的事情。"
+  ],
+  "tags": [
+    "AI编程",
+    "软件开发",
+    "效率提升",
+    "提示词工程",
+    "代码生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 963,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758557338000,
+  "publishDateStr": "2025-09-22",
+  "publishDateTimeStr": "2025-09-22 16:08:58"
+}

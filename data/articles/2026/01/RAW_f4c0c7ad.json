@@ -1,0 +1,59 @@
+{
+  "id": "RAW_f4c0c7ad",
+  "title": "Slack 优化 Chef 基础设施，提升部署安全性并缩小故障影响范围",
+  "url": "https://www.infoq.com/news/2026/01/slack-chef-deployments/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-06 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Slack's engineering team has <a href=\"https://slack.engineering/advancing-our-chef-infrastructure-safety-without-disruption/\">published</a> an in-depth look at recent improvements to its <a href=\"https://github.com/chef/chef\">Chef-based configuration</a> management system, aimed at making deployments safer and more resilient without disrupting existing workflows. The updated infrastructure reduces the risk of widespread failures during provisioning and configuration changes by eliminating single points of failure and introducing staggered, environment‑aware rollout processes across availability zones.</p>\n   <p dir=\"ltr\">Previously, Slack's EC2 provisioning relied on a single shared Chef production environment. Although scheduled cron jobs staggered Chef runs across the fleet to reduce simultaneous execution, any bad change to the central environment could propagate immediately to newly provisioned nodes, especially during rapid scale‑outs, posing a significant reliability risk. To address this, Slack split the monolithic production Chef environment into multiple buckets (e.g., prod‑1 through prod‑6), each tied to specific availability zones. This strategy ensures that configuration changes affect smaller subsets of nodes at a time, limiting the blast radius and enabling safer detection and remediation of issues.</p>\n   <p dir=\"ltr\">Slack also adjusted how it triggers Chef runs. With staggered environments no longer compatible with fixed cron schedules, engineers built a service called Chef Summoner. Chef Summoner runs on every node, listens for signals (via S3 events populated by an enhanced version of the existing <a href=\"https://docs.chef.io/libraries/\">Chef Librarian service</a>), and schedules Chef runs only when new artifacts are available. To avoid load spikes and contention, the service uses a splay value to stagger execution across nodes in isolation. If no new artifacts are signaled, Chef Summoner ensures compliance by running at least once every 12 hours, providing operational safety even in quiet periods.</p>\n   <p dir=\"ltr\">The new rollout model adopts a release‑train pattern for staggered environments. Slack promotes new cookbook changes first to sandbox and development environments, then progressively to prod‑1 (treated as a canary) and onward through the remaining production shards. Because prod‑1 receives frequent, smaller‑scope updates, issues are detected early before affecting broader portions of the fleet. Later environments are only updated after successful progression through earlier stages, further reducing risk and enabling operational teams to catch and fix regressions before they spread widely.</p>\n   <p dir=\"ltr\">These changes represent an incremental evolution of Slack’s EC2 provisioning platform, enhancing safety without requiring a disruptive overhaul of existing cookbooks or roles. Looking forward, Slack is planning a new EC2 ecosystem called Shipyard, which aims to support service‑level deployments, metric‑driven rollouts, and fully automated rollbacks, addressing limitations that remain in the current architecture and positioning the platform to better support teams not yet migrated to containerized environments.</p>\n   <p dir=\"ltr\">Slack's approach demonstrates how carefully structured deployment pipelines and environment segmentation can mitigate operational risk in large, dynamic infrastructure ecosystems. By combining staggered production environments, signal‑driven runs, and fallback mechanisms like cron safety nets, the company has improved reliability without imposing substantial disruption on development and operations teams - a pattern other large‑scale organizations may find instructive when evolving their own configuration management strategies.</p>\n   <p dir=\"ltr\">Slack's approach reflects a <a href=\"https://www.pullchecklist.com/posts/ci-cd-best-practices\">wider industry move</a> toward safer, incremental infrastructure changes at scale. Companies such as Netflix, Uber, and GitHub rely on <a href=\"https://www.jetbrains.com/teamcity/ci-cd-guide/concepts/canary-release/\">canary releases</a>, s<a href=\"https://developerexperience.io/articles/staged-rollout\">taged rollouts</a>, and <a href=\"https://launchdarkly.com/blog/what-are-feature-flags/\">feature flags</a> to limit the blast radius of updates and validate changes under real production traffic. By applying similar progressive delivery principles to its Chef-based infrastructure, Slack demonstrates how traditional configuration management systems can be modernized to enhance safety and reliability without requiring disruptive platform changes.</p>\n   <p dir=\"ltr\">Many large engineering organizations rely on progressive rollout techniques to reduce deployment risk. Canary deployments, for example, expose changes to a small subset of users or workloads first, allowing teams to monitor performance and error rates before expanding rollout. This strategy, widely used at companies such as LinkedIn, is often paired with feature flags that decouple code deployment from feature exposure, enabling rapid rollback without redeployment.</p>\n   <p dir=\"ltr\">Others, including Netflix, Uber, GitHub, and Etsy, <a href=\"https://articles.mergify.com/ci-cd-best-practices\">extend this model </a>through feature flags, <a href=\"https://en.wikipedia.org/wiki/Blue%E2%80%93green_deployment\">blue-green deployments</a>, and <a href=\"https://www.hashicorp.com/en/resources/what-is-mutable-vs-immutable-infrastructure\">immutable infrastructure</a>, where entire environments are validated before traffic is shifted. In cloud-native environments, tools like <a href=\"https://kubernetes.io/\">Kubernetes </a>and <a href=\"https://argo-cd.readthedocs.io/en/stable/\">ArgoCD </a>support staggered rollouts and synchronization waves to prevent sudden load spikes and control change propagation.</p>\n   <p dir=\"ltr\">Across these approaches, the common principle mirrors Slack's staggered Chef strategy: limit blast radius, observe behavior in smaller segments, and expand changes gradually. By applying layered rollout controls, teams balance speed with reliability while operating at scale.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Slack Enhances Chef Infrastructure to Improve Safety and Reduce Blast Radius in Deployments\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/slack-chef-deployments/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767700800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Slack 通过分段环境和信号驱动的回滚机制对其 Chef 基础设施进行了现代化改造，在不产生重大中断的情况下大幅降低了部署风险并提升了可靠性，这与渐进式交付的行业最佳实践保持一致。",
+  "oneSentenceSummary": "Slack 通过分段环境和信号驱动的回滚机制对其 Chef 基础设施进行了现代化改造，在不产生重大中断的情况下大幅降低了部署风险并提升了可靠性，这与渐进式交付的行业最佳实践保持一致。",
+  "summary": "Slack 工程团队显著增强了其基于 Chef 的配置管理系统，以提高部署的安全性和韧性。此前，单一的 Chef 生产环境在快速扩展期间存在极高风险。为了解决这一问题，Slack 现在将单体 Chef 环境分割为多个特定于可用区的存储桶（例如 prod-1 到 prod-6）。这一变化限制了配置错误导致的“故障影响范围”，并有助于更早地发现问题。他们还引入了“Chef Summoner”服务，该服务仅在有新制品可用时才触发 Chef 运行，取代了固定的 cron 定时任务，并使用随机延迟值（splay value）来防止负载激增。此外，Slack 采用“发布列车”模型，将变更先后推送到沙箱、开发环境，然后逐步推送到生产分片，其中 prod-1 作为金丝雀环境。这些改进代表了一种增量演进，避免了破坏性的彻底重构。这种方法符合渐进式交付和分阶段发布的行业趋势，旨在减轻大规模基础设施中的运维风险。",
+  "mainPoints": [
+    {
+      "point": "Slack 将其单体 Chef 生产环境分割为多个隔离的“存储桶”。",
+      "explanation": "这一变化缩小了错误配置变更的“故障影响范围”，将影响限制在较小的节点子集中，从而实现更安全的检测和修复。"
+    },
+    {
+      "point": "引入了“Chef Summoner”以实现信号驱动、交错进行的 Chef 运行。",
+      "explanation": "该服务仅在有新制品可用时动态触发 Chef 运行，取代了僵化的 cron 调度，并结合随机延迟值来防止整个集群出现负载激增。"
+    },
+    {
+      "point": "为 Chef Cookbook 的更新采用了发布列车模型以实现渐进式交付。",
+      "explanation": "变更会分阶段晋升到沙箱、开发和生产环境，prod-1 作为金丝雀环境，确保问题在产生更大影响前被及早发现。"
+    },
+    {
+      "point": "以增量方式增强基础设施的安全性和韧性，避免了破坏性的重构。",
+      "explanation": "Slack 优化了其现有的基于 Chef 的系统，证明了通过细致的演进而非彻底的更换，也可以实现显著的可靠性提升。"
+    }
+  ],
+  "keyQuotes": [
+    "更新后的基础设施通过消除单点故障，并在各可用区引入交错的、环境感知的发布流程，降低了配置变更期间发生大规模故障的风险。",
+    "将单体生产 Chef 环境分割为多个存储桶（例如 prod-1 到 prod-6），每个存储桶都与特定的可用区绑定。",
+    "如果没有新制品信号，Chef Summoner 会确保至少每 12 小时运行一次以保证合规性，即使在静默期也能提供运维安全保障。",
+    "由于 prod-1 接收频繁且范围较小的更新，问题可以在影响到更大规模的集群之前被及早检测到。",
+    "通过将类似的渐进式交付原则应用于其基于 Chef 的基础设施，Slack 展示了传统配置管理系统如何在不需要破坏性平台变更的情况下，通过现代化改造来增强安全性和可靠性。"
+  ],
+  "tags": [
+    "DevOps",
+    "Chef",
+    "配置管理",
+    "部署策略",
+    "站点可靠性工程 (SRE)"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 698,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767700800000,
+  "publishDateStr": "01-06",
+  "publishDateTimeStr": "2026-01-06 12:00:00"
+}

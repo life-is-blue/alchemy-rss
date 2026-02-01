@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9f6528",
+  "title": "腾讯混元升级 AI 绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升 300%",
+  "url": "https://www.qbitai.com/2025/09/331952.html",
+  "date": "2025-09-15 06:39:40",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"29\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">让AI生成的图像更符合人类精细偏好，在32块H20上训练10分钟就能收敛。</p>\n  <p data-track=\"3\">腾讯混元新方法让微调的FLUX1.dev模型人工评估的真实感和美学评分提高3倍以上。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_a4269636d67ba919474b0b3a294cb084.png\" data-src=\"https://image.jido.dev/20250915131642_a4269636d67ba919474b0b3a294cb084.png\">\n  </div>\n  <p data-track=\"4\">当前的扩散模型虽然能通过奖励机制来贴合人类喜好，但存在两个问题：一是优化步骤少，容易出现 “奖励作弊”，也就是模型为了拿高分生成质量差的图；二是需要离线调整奖励模型才能达到好的美学效果，不够灵活。</p>\n  <p data-track=\"5\">为此，团队提出两个关键方法：</p>\n  <p data-track=\"6\">一个是Direct-Align，通过预先注入噪声，能从任意时间步恢复原图，避免了只在后期步骤优化的局限，减少了 “奖励作弊”。</p>\n  <p data-track=\"7\">另一个是语义相对偏好优化（SRPO），它把奖励变成受文本控制的信号，通过添加正面和负面提示词，能在线调整奖励，不用额外数据就能灵活适配需求。</p>\n  <p data-track=\"8\">论文公开后，有开发者评价SRPO看起来就像下一代RLHF。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_ae50e32e1408579ef0a0d575fc5095ad.png\" data-src=\"https://image.jido.dev/20250915131642_ae50e32e1408579ef0a0d575fc5095ad.png\">\n  </div>\n  <p data-track=\"10\">研究团队首先指出了现有方法的两个核心痛点：第一，多步去噪过程中的梯度计算成本极高，导致优化只能局限在扩散过程的最后几步；第二，为了达到理想的美学效果，往往需要不断地离线调整奖励模型。</p>\n  <p data-track=\"11\">为了解决第一个问题，团队提出了Direct-Align方法。</p>\n  <p data-track=\"12\">首先预定义一个噪声先验，通过插值直接从任意时间步恢复原始图像。团队发现，扩散状态实际上就是噪声和目标图像之间的插值。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_f6fca9313434e1219806bd8af6aaab1c.png\" data-src=\"https://image.jido.dev/20250915131642_f6fca9313434e1219806bd8af6aaab1c.png\">\n  </div>\n  <p data-track=\"13\">这个方法让模型能够从高噪声状态直接恢复出清晰图像，避免了传统方法在早期时间步反向传播时的梯度爆炸问题。实验表明，即使在只有5%去噪进度的极早期阶段，Direct-Align也能恢复出图像的粗略结构。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_f76d107a90ad1c76bb0bff82c61e5284.png\" data-src=\"https://image.jido.dev/20250915131642_f76d107a90ad1c76bb0bff82c61e5284.png\">\n  </div>\n  <p data-track=\"14\">更重要的是，这种方法支持在整个扩散轨迹上进行优化，而不是像ReFL、DRaFT等方法那样只能在后期步骤训练。</p>\n  <p data-track=\"15\">实验发现，仅在后25%时间步训练会导致严重的奖励黑客问题，模型会过度拟合奖励函数的偏好，比如HPSv2偏好红色调、PickScore偏好紫色图像等。</p>\n  <p data-track=\"17\">第二个创新是语义相对偏好优化（SRPO）。传统方法通常需要多个奖励模型来平衡不同的偏好，但团队发现这只是调整了奖励的规模，并没有真正对齐优化方向。</p>\n  <p data-track=\"18\">SRPO的核心思想是将奖励重新定义为文本条件信号。具体来说，对于同一张图像，模型会使用正面和负面提示词分别计算奖励，然后取其相对差值作为优化目标。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_7be8e1213ac673e17e5c0eb1fb795f72.png\" data-src=\"https://image.jido.dev/20250915131642_7be8e1213ac673e17e5c0eb1fb795f72.png\">\n  </div>\n  <p data-track=\"19\">在实际应用中，团队只需在原始提示词前添加控制短语（如”. “）就能实现在线调整。实验显示，通过添加”Realistic photo”等控制词，模型生成图像的真实感提升了约3.7倍，美学质量提升了3.1倍。</p>\n  <p data-track=\"20\">SRPO能够通过简单的提示词控制实现多种风格调整，包括亮度调节、漫画风格转换等。有趣的是，控制效果的强弱与控制词在奖励模型训练集中的出现频率相关——高频词如”painting”效果最好，而低频词如”Cyberpunk”则需要与其他高频词组合使用。</p>\n  <p data-track=\"22\">研究团队在FLUX.1-dev模型上进行了全面的实验验证。与ReFL、DRaFT、DanceGRPO等最新方法相比，SRPO在多个评估指标上都取得了最佳成绩。</p>\n  <p data-track=\"23\">在HPDv2基准测试的3200个提示词上，SRPO不仅在自动评估指标（Aesthetic Score v2.5、PickScore、ImageReward等）上领先，更重要的是在人工评估中表现出色。团队组织了10名训练有素的标注员和3名领域专家，对500个提示词生成的图像进行了全面评估。</p>\n  <p data-track=\"24\">结果显示，在真实感维度上，原始FLUX模型的优秀率仅为8.2%，而经过SRPO训练后飙升至38.9%。在美学质量上，优秀率从9.8%提升到40.5%，总体偏好度更是达到了29.4%的优秀率。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_39f234459282ce930adb9d77407b17bb.png\" data-src=\"https://image.jido.dev/20250915131642_39f234459282ce930adb9d77407b17bb.png\">\n  </div>\n  <p data-track=\"25\">值得一提的是，DanceGRPO虽然也能提升美学质量，但经常引入不良伪影，如过度的光泽感和明显的边缘高光。相比之下，SRPO生成的图像在保持高美学质量的同时，纹理细节更加自然真实。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_ed119e0052ffd745dd68fe8366570394.png\" data-src=\"https://image.jido.dev/20250915131642_ed119e0052ffd745dd68fe8366570394.png\">\n  </div>\n  <p data-track=\"26\">团队还进行了一项有趣的对比实验：他们发现经过短短10分钟SRPO训练的FLUX.1-dev，在HPDv2基准上的表现已经超越了最新的开源版本FLUX.1.Krea。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"腾讯混元升级AI绘画微调范式，在整个扩散轨迹上优化，人工评估分数提升300%\" class=\"syl-page-img\" src=\"https://image.jido.dev/20250915131642_efa341848058b0c2e39bf7f2ae4df416.png\" data-src=\"https://image.jido.dev/20250915131642_efa341848058b0c2e39bf7f2ae4df416.png\">\n  </div>\n  <p data-track=\"27\">论文地址：\n   <br>\n   https://arxiv.org/abs/2509.06942</p>\n  <p data-track=\"28\">参考链接：\n   <br>\n   [1]https://x.com/_akhaliq/status/1966911634657390890</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "腾讯混元提出 Direct-Align 和 SRPO 微调范式，通过优化扩散轨迹和文本控制奖励，大幅提升 AI 绘画的真实感和美学评分。",
+  "oneSentenceSummary": "腾讯混元提出 Direct-Align 和 SRPO 微调范式，通过优化扩散轨迹和文本控制奖励，大幅提升 AI 绘画的真实感和美学评分。",
+  "summary": "腾讯混元团队针对现有扩散模型微调中“奖励作弊”和奖励模型离线调整不灵活的问题，提出了 Direct-Align 和语义相对偏好优化（SRPO）两种创新方法。Direct-Align 通过预先注入噪声，实现了在整个扩散轨迹上进行优化，有效避免了“奖励作弊”；SRPO 则将奖励转化为文本条件信号，通过正负提示词在线调整奖励，极大提升了灵活性。实验结果表明，SRPO 在 FLUX.1-dev 模型上，人工评估的真实感和美学评分均提升 3 倍以上，且仅需 10 分钟训练即可超越现有先进模型，为 AI 绘画生成更高质量、更符合人类偏好的图像提供了高效灵活的解决方案。",
+  "mainPoints": [
+    {
+      "point": "Direct-Align 方法通过噪声先验实现全扩散轨迹优化，有效避免“奖励作弊”问题。",
+      "explanation": "该方法允许模型从任意时间步恢复原图，克服了传统方法只在后期步骤优化的局限，显著提升了生成图像的质量和稳定性。"
+    },
+    {
+      "point": "语义相对偏好优化（SRPO）将奖励转化为文本条件信号，实现灵活的在线偏好调整。",
+      "explanation": "通过正面和负面提示词的相对差值作为优化目标，SRPO 无需额外数据即可在线调整奖励，极大地提高了模型对人类偏好的适配性。"
+    },
+    {
+      "point": "新范式在真实感和美学评分上均大幅提升，且训练效率高，超越现有 SOTA 模型。",
+      "explanation": "人工评估显示，真实感和美学优秀率均提升 3 倍以上，且仅 10 分钟训练便能超越现有先进模型，展现出卓越的性能和效率。"
+    }
+  ],
+  "keyQuotes": [
+    "让 AI 生成的图像更符合人类精细偏好，在 32 块 H20 上训练 10 分钟就能收敛。",
+    "当前的扩散模型虽然能通过奖励机制来贴合人类喜好，但存在两个问题：一是优化步骤少，容易出现 \"奖励作弊\"，也就是模型为了拿高分生成质量差的图；二是需要离线调整奖励模型才能达到好的美学效果，不够灵活。",
+    "论文公开后，有开发者评价 SRPO 看起来就像下一代 RLHF。",
+    "实验显示，通过添加\"Realistic photo\"等控制词，模型生成图像的真实感提升了约 3.7 倍，美学质量提升了 3.1 倍。",
+    "经过短短 10 分钟 SRPO 训练的 FLUX.1-dev，在 HPDv2 基准上的表现已经超越了最新的开源版本 FLUX.1.Krea。"
+  ],
+  "tags": [
+    "AI绘画",
+    "扩散模型",
+    "微调",
+    "奖励模型",
+    "Direct-Align"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 90,
+  "wordCount": 1637,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757918380000,
+  "publishDateStr": "2025-09-15",
+  "publishDateTimeStr": "2025-09-15 06:39:40"
+}

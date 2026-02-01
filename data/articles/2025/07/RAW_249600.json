@@ -1,0 +1,55 @@
+{
+  "id": "RAW_249600",
+  "title": "DeepMind 夺得 IMO 官方「唯一」金牌，却成为 OpenAI 大型社死现场 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-22-5",
+  "date": "2025-07-22 05:22:00",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>刚刚，谷歌 DeepMind 宣布，其新一代 Gemini 进阶版模型在 IMO 竞赛中正式达到金牌得主水平，成功解决了六道超高难度试题中的五道，拿下 35 分（满分 42 分），成为首个获得奥赛组委会官方认定为金牌的AI系统。</p>\n  <p>更重要的是，该系统首次证明人工智能无需依赖专业编程语言，仅通过自然语言理解即可攻克复杂数学难题。</p>\n  <p>谷歌 DeepMind 首席执行官哈萨比斯在社交媒体平台 X 上强调：这是官方结果！</p>\n  <p><img alt=\"image.png\" data-imgfileid=\"503497221\" data-ratio=\"1.2335403726708074\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1303c89b-f8dc-4f0b-b50a-f1b19aef8300/public\" data-type=\"png\" data-w=\"805\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/c37b77e3-fb57-4541-8463-fa6b78a49b2a/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>谷歌这项成绩远超其在 2024 年的表现。当时，AlphaProof 和 AlphaGeometry 系统组合解决了六个问题中的四个，荣获银牌。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e51a95e6-3d71-496b-9613-195f1bf83b00/public\" alt=\"image.png\" data-ratio=\"0.562962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"503497222\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/8349156d-7cdc-4e04-b244-bb0801dad695/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>今年的突破来自 Gemini Deep Think，这是一个增强型推理系统，采用了研究人员所谓的并行思维。与遵循单一推理链的传统人工智能模型不同，Deep Think 会同时探索多种可能的解决方案，最终得出答案。</p>\n  <p>哈萨比斯在后续帖子中解释道：谷歌的模型以自然语言进行端到端运行，直接从官方问题描述中生成严格的数学证明。并强调，该系统在比赛标准的 4.5 小时时限内完成了任务。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/667445af-f6cb-43d7-9b53-5059f267c700/public\" alt=\"image.png\" data-ratio=\"1.3665436654366543\" data-type=\"png\" data-w=\"813\" data-imgfileid=\"503497223\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/acbe9ab3-2670-4313-8103-4cb25940b7fd/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>谷歌这次官宣，让 OpenAI 处于尴尬的处境，毕竟 OpenAI 因绕过官方竞赛规则提前官宣，遭到很多人吐槽。可参考《<a data-itemshowtype=\"0\" data-linktype=\"2\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2650980691&amp;idx=1&amp;sn=6b9e3728b672d9c1915e48c8429f14f6&amp;scene=21#wechat_redirect\" target=\"_blank\">OpenAI 拿 IMO 金牌是火了，但惹怒大批人：抢发炒作，抢学生风头</a>》。</p>\n  <p>谷歌 DeepMind 这种谨慎的发布方式赢得了 AI 界的广泛赞誉，尤其与竞争对手 OpenAI 对类似成绩的处理方式形成了鲜明对比。</p>\n  <p>「我们没有在周五宣布这一消息，是因为我们尊重 IMO 理事会最初的要求，即所有人工智能实验室只有在官方结果经过独立专家验证，并且学生获得应有的赞誉后，才能分享其成果。」哈萨比斯写道。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2132fc4a-422d-4652-c7ee-8451f1a7ef00/public\" alt=\"image.png\" data-ratio=\"0.8127294981640147\" data-type=\"png\" data-w=\"817\" data-imgfileid=\"503497224\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/f11f2cac-f88a-4b2b-9dc1-99ac38d8970b/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>对比之下，大家都在谴责 OpenAI 做事不地道、毫无风度、无礼。反观谷歌 DeepMind ，行事正直，符合人性。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/18d81bd2-cea6-4a04-352f-511536d51300/public\" alt=\"image.png\" data-ratio=\"1.4170918367346939\" data-type=\"png\" data-w=\"784\" data-imgfileid=\"503497225\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/82fb90c5-ee0b-4370-83f5-0d603e1bbf11/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>这种批评源于 OpenAI 决定在不参与 IMO 官方评估流程的情况下公布自己的成绩。OpenAI 让一个由前 IMO 参赛选手组成的小组对其 AI 的表现进行评分，社区中的一些人认为这种做法缺乏可信度。</p>\n  <p><strong>OpenAI 又来回应了</strong></p>\n  <p>OpenAI 研究科学家 Noam Brown 向谷歌发来祝贺，说是祝贺，更多的是为了回应质疑。以下是回应内容。</p>\n  <p>谷歌采用的方法与我们略有不同，这表明还有很多研究方向值得探讨。</p>\n  <p>两个月前，IMO 组委会曾通过邮件邀请我们参加基于 Lean 语言的正式比赛。由于我们一直致力于不受 Lean 限制的自然语言通用推理研究，因此婉拒了该邀请。组委会从未就自然语言解题形式与我们进行过接洽。</p>\n  <p>在过去的几个月里，我们在通用推理方面取得了很大进展。这包括收集、整理和训练高质量的数学数据，这些数据也将用于未来的模型。在 IMO 评估中，我们没有使用 RAG 或任何其他工具。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85fad655-a0f5-43fc-fc38-640849dc6200/public\" alt=\"image.png\" data-ratio=\"1.1954602774274905\" data-type=\"png\" data-w=\"793\" data-imgfileid=\"503497226\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/8af96d41-f748-41e2-8826-b05296845b17/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>我们提交的每份证明都由三位外部 IMO 奖牌获得者评分，并获得了一致的正确性认可。我们还将证明公开发布，以便任何人都可以验证其正确性。</p>\n  <p>证明地址：https://github.com/aw31/openai-imo-2025-proofs/</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/de8d89b5-0f3f-4fdf-a184-336f0803ba00/public\" alt=\"image.png\" data-ratio=\"0.40379746835443037\" data-type=\"png\" data-w=\"790\" data-imgfileid=\"503497227\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/494b01ac-2726-498c-897a-972e938cd2d6/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>在分享我们的结果之前，我们与 IMO 的一位董事会成员进行了交谈，他要求我们等到颁奖典礼结束后再公开结果，我们的发布满足要求。</p>\n  <p>我们在颁奖典礼结束后，于太平洋时间～凌晨 1 点（澳大利亚东部标准时间下午 6 点）宣布。从来没有人要求我们晚于此宣布。</p>\n  <p>最重要的是，我们很高兴与世界分享我们的进展和成果。AI 推理能力正在快速发展，这些 IMO 结果确实表明了这一点。</p>\n  <p><img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9ad23aad-ca8b-410f-83a8-69e0409c2f00/public\" alt=\"image.png\" data-ratio=\"0.9627329192546584\" data-type=\"png\" data-w=\"805\" data-imgfileid=\"503497228\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/92f80f8b-7468-446d-9fd0-cfb0f14bcfcf/640.png\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>通过这件事，我们不难发现，这场 AI 登上数学奥林匹克舞台的较量，不只是一次技术竞赛，更是一场关于规范、节奏与合作精神的展示。DeepMind 选择了等待官方认可，再谨慎发布成绩，赢得了金牌，也赢得了尊重。而 OpenAI 尽管也取得了不俗成果，却因时机与方式的问题，引发了争议。这背后提醒我们，在通往 AGI 的路上，除了技术力，如何与人类社会的规则与价值观对齐，正变得愈发重要。&nbsp;</p>\n  <p><sup>参考链接：</sup></p>\n  <p><sup>https://x.com/polynoamial/status/1947398536577822798</sup></p>\n  <p><sup>https://venturebeat.com/ai/google-deepmind-makes-ai-history-with-gold-medal-win-at-worlds-toughest-math-competition/</sup></p>\n </body>\n</html>",
+  "aiSummary": "DeepMind 的 Gemini 模型在 IMO 竞赛中首次获得官方金牌，其自然语言解题能力引人注目，并因其谨慎发布方式与 OpenAI 的争议形成鲜明对比。",
+  "oneSentenceSummary": "DeepMind 的 Gemini 模型在 IMO 竞赛中首次获得官方金牌，其自然语言解题能力引人注目，并因其谨慎发布方式与 OpenAI 的争议形成鲜明对比。",
+  "summary": "文章报道了谷歌 DeepMind 的 Gemini 进阶版模型在国际数学奥林匹克（IMO）竞赛中取得历史性突破，成为首个获得奥赛组委会官方认定为金牌的 AI 系统。该模型成功解决了六道难题中的五道，拿下 35 分，超越了去年 AlphaProof 和 AlphaGeometry 的银牌成绩。此次突破主要归因于名为“Gemini Deep Think”的增强型推理系统，它采用并行思维，能够通过自然语言直接生成严格的数学证明。文章特别强调了 DeepMind 选择在官方结果验证后才发布成绩的谨慎态度，这与 OpenAI 此前因提前且未经官方评估公布类似成果而引发争议形成了鲜明对比。文章还包含了 OpenAI 研究科学家 Noam Brown 的回应，解释了其未参与官方 Lean 语言竞赛的原因，并强调了其成果的独立验证和发布时机符合要求。最终，文章指出这场 AI 与数学奥赛的较量，不仅是技术实力比拼，更是关于行业规范、发布节奏和合作精神的展示，强调在 AGI 之路上，技术与人类社会规则对齐的重要性。",
+  "mainPoints": [
+    {
+      "point": "DeepMind 的 Gemini 模型首次获得 IMO 官方金牌，标志着 AI 在复杂数学推理方面取得重大突破。",
+      "explanation": "Gemini 进阶版模型在 IMO 中拿下 35 分，成为首个获官方认证的 AI 金牌得主，展现了 AI 在解决超高难度数学问题上的顶尖能力和巨大进步。"
+    },
+    {
+      "point": "DeepMind 的成功得益于“并行思维”和自然语言端到端推理，无需依赖专业编程语言。",
+      "explanation": "Gemini Deep Think 系统采用并行思维探索多种解决方案，并通过自然语言直接生成数学证明，降低了 AI 解决数学问题的门槛和复杂性。"
+    },
+    {
+      "point": "DeepMind 与 OpenAI 在成绩发布方式上的对比，引发了关于 AI 研究伦理和行业规范的讨论。",
+      "explanation": "DeepMind 尊重 IMO 官方要求，谨慎发布成绩，赢得业界赞誉；而 OpenAI 因提前公布未经官方评估的成绩引发争议，凸显了 AI 发展中技术力与社会规则对齐的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "这是官方结果！",
+    "更重要的是，该系统首次证明人工智能无需依赖专业编程语言，仅通过自然语言理解即可攻克复杂数学难题。",
+    "我们没有在周五宣布这一消息，是因为我们尊重 IMO 理事会最初的要求，即所有人工智能实验室只有在官方结果经过独立专家验证，并且学生获得应有的赞誉后，才能分享其成果。",
+    "这场 AI 登上数学奥林匹克舞台的较量，不只是一次技术竞赛，更是一场关于规范、节奏与合作精神的展示。",
+    "在通往 AGI 的路上，除了技术力，如何与人类社会的规则与价值观对齐，正变得愈发重要。"
+  ],
+  "tags": [
+    "IMO竞赛",
+    "DeepMind",
+    "OpenAI",
+    "Gemini",
+    "AI推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1439,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1753161720000,
+  "publishDateStr": "2025-07-22",
+  "publishDateTimeStr": "2025-07-22 05:22:00"
+}

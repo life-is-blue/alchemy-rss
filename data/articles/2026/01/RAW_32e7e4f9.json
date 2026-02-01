@@ -1,0 +1,53 @@
+{
+  "id": "RAW_32e7e4f9",
+  "title": "推广 AI 智能体",
+  "url": "https://world.hey.com/dhh/promoting-ai-agents-3ee04945",
+  "date": "2026-01-07 09:03:58",
+  "author": "David Heinemeier Hansson",
+  "siteName": "David Heinemeier Hansson",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"trix-content\">\n   <div>\n    At the end of last year, AI agents really came alive for me. Partly because the models got better, but more so because we gave them the tools to take their capacity beyond pure reasoning. Now coding agents are controlling the terminal, running tests to validate their work, searching the web for documentation, and using web services <a href=\"https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview\">with skills</a> we taught them in plain English. Reality is fast catching the hype!\n    <br>\n    <br>\n   </div>\n   <div>This is all very evident if you've tried to employ any of the new models — especially Claude Opus 4.5, Codex 5, Gemini 3, and even the Chinese open-weight models like MiniMax M2.1 and GLM-4.7 — in one of the modern terminal harnesses that give them access to all these autonomous powers. The code being produced by this new breed of AI is leagues ahead of where their predecessors were at the beginning of 2025.</div>\n   <div>\n    <br>\n    I've thoroughly enjoyed putting them all to work in <a href=\"https://opencode.ai/\">OpenCode</a>, which is a terminal interface for coding agents that allows you to seamlessly switch between all of the models, capture your sessions for sharing, and simply looks astounding when theme-matched with the rest of <a href=\"https://omarchy.org\">Omarchy</a> (where we're making it a default in the next version!).\n    <br>\n    <br>\n   </div>\n   <div>\n    See, I never really cared much for the in-editor experience of having AI autocomplete your code as you were writing it. That was the original format pioneered by GitHub's Copilot and Cursor, but it left me cold. When I code, I want to finish my own thoughts and sentences. That was <a href=\"https://www.youtube.com/watch?v=vagyIcmIGOQ&amp;t=15273s\">the sentiment I expressed on the Lex Fridman podcast</a> last summer.\n    <br>\n    <br>\n   </div>\n   <div>\n    But with these autonomous agents, the experience is very different. It's more like working on a team and less like working with an overly-zealous pair programmer who can't stop stealing the keyboard to complete the code you were in the middle of writing. With a team of agents, they're doing their work autonomously, and I just review the final outcome, offer guidance when asked, and marvel at how this is possible at all.\n    <br>\n    <br>\n   </div>\n   <div>Yes, I'm ready to give the current crop of AI agents a promotion. They're no longer just here to help me learn, answer my questions, or check my work. They're fully capable of producing production-grade contributions to real-life code bases.&nbsp;</div>\n   <div>\n    <br>\n    Yet pure vibe coding remains an aspirational dream for professional work for me, for now. Supervised collaboration, though, is here today. I've worked alongside agents to fix small bugs, finish substantial features, and get several drafts on major new initiatives. The paradigm shift finally feels real.\n   </div>\n   <div>\n    <br>\n    Now, it all depends on what you're working on, and what your expectations are. The hype train keeps accelerating, and if you bought the pitch that we're five minutes away from putting all professional programmers out of a job, you'll be disappointed.\n    <br>\n    <br>\n   </div>\n   <div>\n    I'm nowhere close to the claims of having agents write 90%+ of the code, as I see some boast about online. I don't know what code they're writing to hit those rates, but that's way off what I'm able to achieve, if I hold the line on quality and cohesion.\n    <br>\n    <br>\n   </div>\n   <div>\n    But I'll forgive folks for getting excited! Because you don't have to connect many future dots on the current trend line to get dizzy by the prospects. The leaps of improvement that AI agents took in 2025 is simply incredible. This is the most exciting thing we've made computers do since we connected them to the internet back in the '90s. So what might things look like in 2026 or 2027? I get the exuberance.\n    <br>\n    <br>\n   </div>\n   <div>\n    I also get that some programmers are eager to tune it all out. The hype drones on relentlessly, the most fantastical claims are still far off from being substantiated, and there's real uncertainty about where all this will leave the profession in the future. But that's still not reason enough to miss out on this incredible moment in human and computing history!&nbsp;\n    <br>\n    <br>\n   </div>\n   <div>You gotta get in there. See where we're at now for yourself. Download OpenCode, throw some real work at Opus or the others, and relish the privilege of being alive during the days we taught the machines how to think.</div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DHH 盛赞 AI 智能体的显著进化，倡导其在监督式工作流中作为自主编码协作者的角色，标志着软件开发领域的重大范式转变。",
+  "oneSentenceSummary": "DHH 盛赞 AI 智能体的显著进化，倡导其在监督式工作流中作为自主编码协作者的角色，标志着软件开发领域的重大范式转变。",
+  "summary": "David Heinemeier Hansson (DHH) 分享了他对 AI 智能体的新热情，认为它们已经显著进化，超越了单纯的代码自动补全。他强调，AI 模型的最新进展，特别是赋予它们与终端交互、运行测试、搜索网络和使用自定义技能的工具，已经将它们转变为有效的自主协作者。DHH 描述了他使用 OpenCode 等工具的工作流程，强调一种监督式协作模式，其中智能体自主处理任务，而他提供指导和审查结果。他承认，虽然关于 AI 取代程序员的炒作还为时过早，但当前用于编码的 AI 智能体状态标志着一个重大的范式转变，提供了生产级的贡献，并使编程成为一个比以往任何时候都更令人兴奋的领域。",
+  "mainPoints": [
+    {
+      "point": "AI 智能体已显著进化，从简单的代码自动补全转向自主协作。",
+      "explanation": "现代 AI 模型被赋予终端控制、测试、网络搜索和自定义技能的工具后，现在可以作为有效的编码队友，在人类监督下端到端处理任务。"
+    },
+    {
+      "point": "与 AI 智能体的首选工作流程是'监督式协作'，而非完全自动化或简单的结对编程。",
+      "explanation": "DHH 强调智能体在任务上自主工作，开发者审查结果并提供高层指导，这与侵入式的编辑器内自动补全形成对比。"
+    },
+    {
+      "point": "AI 智能体能够对真实代码库做出'生产级贡献'。",
+      "explanation": "不再仅仅是学习或回答问题的工具，当前的智能体可以修复错误、完成功能并起草新计划，标志着开发领域的真正范式转变。"
+    },
+    {
+      "point": "尽管有炒作，智能体并未大规模取代程序员，而是显著增强了他们的能力。",
+      "explanation": "DHH 缓和了关于智能体编写 90% 以上代码的期望，但强调了它们加速工作并使软件开发比几十年来更令人兴奋的能力。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 智能体对我来说真的活了起来。部分原因是模型变得更好，但更重要的是因为我们给了它们工具，使它们的能力超越了纯粹的推理。",
+    "这更像是团队合作，而不是与一个过度热心的结对程序员合作，他不停地抢走键盘来完成你正在编写的代码。",
+    "它们完全有能力对真实代码库做出生产级的贡献。",
+    "然而，监督式协作今天已经到来。我与智能体一起修复小错误、完成重要功能，并就重大新计划获得了多个草案。",
+    "这是我们自 90 年代将计算机连接到互联网以来，让计算机做的最令人兴奋的事情。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 691,
+  "domain": "world.hey.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_86001f",
+  "sourceName": "David Heinemeier Hansson",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767776638000,
+  "publishDateStr": "01-07",
+  "publishDateTimeStr": "2026-01-07 09:03:58"
+}

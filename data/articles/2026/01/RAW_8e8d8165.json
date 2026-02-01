@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8e8d8165",
+  "title": "BlackIce 发布：用于 AI 安全测试的容器化红队工具包",
+  "url": "https://www.databricks.com/blog/announcing-blackice-containerized-red-teaming-toolkit-ai-security-testing",
+  "date": "2026-01-21 18:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>At CAMLIS Red 2025, we introduced BlackIce, an open-source, containerized toolkit that bundles 14 widely used AI security tools into a single, reproducible environment. In this post, we highlight the motivation behind BlackIce, outline its core capabilities, and share resources to help you get started.</p>\n  <h2>Why BlackIce</h2>\n  <p>BlackIce was motivated by four practical challenges faced by AI red teamers: (1) each tool has a unique setup and configuration that is time consuming, (2) tools often require separate runtime environments because of dependency conflicts, (3) managed notebooks expose a single Python interpreter per kernel, and (4) the tool landscape is large and hard to navigate for newcomers.&nbsp;</p>\n  <p>Inspired by Kali Linux for traditional penetration testing, BlackIce aims to let teams bypass setup hassles and focus on security testing by providing a ready-to-run container image.</p>\n  <h2>What’s inside</h2>\n  <p>BlackIce provides a version-pinned Docker image that bundles 14 selected open-source tools spanning Responsible AI, Security testing, and classical adversarial ML. Exposed through a unified command-line interface, these tools can be run from the shell or within a Databricks notebook that uses a compute environment built from the image. Below is a summary of the tools included in this initial release, along with their supporting organizations and GitHub star counts at the time of writing:</p>\n  <div class=\"table-responsive\">\n   <div class=\"max-w-full overflow-x-auto\">\n    <table class=\"table color-bar\" width=\"100%\">\n     <thead>\n      <tr>\n       <th>Tool</th>\n       <th>Organization</th>\n       <th>Stars</th>\n      </tr>\n     </thead>\n     <tbody>\n      <tr>\n       <td>LM Eval Harness</td>\n       <td>Eleuther AI</td>\n       <td>10.3K</td>\n      </tr>\n      <tr>\n       <td>Promptfoo</td>\n       <td>Promptfoo</td>\n       <td>8.6K</td>\n      </tr>\n      <tr>\n       <td>CleverHans</td>\n       <td>CleverHans Lab</td>\n       <td>6.4K</td>\n      </tr>\n      <tr>\n       <td>Garak</td>\n       <td>NVIDIA</td>\n       <td>6.1K</td>\n      </tr>\n      <tr>\n       <td>ART</td>\n       <td>IBM</td>\n       <td>5.6K</td>\n      </tr>\n      <tr>\n       <td>Giskard</td>\n       <td>Giskard</td>\n       <td>4.9K</td>\n      </tr>\n      <tr>\n       <td>CyberSecEval</td>\n       <td>Meta</td>\n       <td>3.8K</td>\n      </tr>\n      <tr>\n       <td>PyRIT</td>\n       <td>Microsoft</td>\n       <td>2.9K</td>\n      </tr>\n      <tr>\n       <td>EasyEdit</td>\n       <td>ZJUNLP</td>\n       <td>2.6K</td>\n      </tr>\n      <tr>\n       <td>Promptmap</td>\n       <td>N/A</td>\n       <td>1K</td>\n      </tr>\n      <tr>\n       <td>Fuzzy AI</td>\n       <td>CyberArk</td>\n       <td>800</td>\n      </tr>\n      <tr>\n       <td>Fickling</td>\n       <td>Trail of Bits</td>\n       <td>560</td>\n      </tr>\n      <tr>\n       <td>Rigging</td>\n       <td>Dreadnode</td>\n       <td>380</td>\n      </tr>\n      <tr>\n       <td>Judges</td>\n       <td>Quotient AI</td>\n       <td>290</td>\n      </tr>\n     </tbody>\n    </table>\n   </div>\n  </div>\n  <p>To show how BlackIce fits into established AI risk frameworks, we mapped its capabilities to <a data-external-link=\"true\" href=\"https://atlas.mitre.org/matrices/ATLAS\" target=\"_blank\" rel=\"noopener noreferrer\">MITRE ATLAS</a> and the <a data-external-link=\"true\" href=\"https://www.databricks.com/resources/whitepaper/databricks-ai-security-framework-dasf\">Databricks AI Security Framework (DASF)</a>. The table below illustrates that the toolkit covers critical areas such as prompt injection, data leakage, hallucination detection, and supply chain security.</p>\n  <div class=\"table-responsive\">\n   <div class=\"max-w-full overflow-x-auto\">\n    <table class=\"table color-bar\" width=\"100%\">\n     <thead>\n      <tr>\n       <th>BlackIce Capability</th>\n       <th>MITRE ATLAS</th>\n       <th>Databricks AI Security Framework (DASF)</th>\n      </tr>\n     </thead>\n     <tbody>\n      <tr>\n       <td>Prompt-injection and jailbreak testing of LLMs</td>\n       <td>AML.T0051 LLM Prompt Injection; AML.T0054 LLM Jailbreak; AML.T0056 LLM Meta Prompt Extraction</td>\n       <td>9.1 Prompt inject; 9.12 LLM jailbreak</td>\n      </tr>\n      <tr>\n       <td>Indirect prompt injection via untrusted content (e.g., RAG/email)</td>\n       <td>AML.T0051 LLM Prompt Injection [Indirect]</td>\n       <td>9.9 Input resource control</td>\n      </tr>\n      <tr>\n       <td>LLM data leakage testing</td>\n       <td>AML.T0057 LLM Data Leakage</td>\n       <td>10.6 Sensitive data output from a model</td>\n      </tr>\n      <tr>\n       <td>Hallucination stress-testing and detection</td>\n       <td>AML.T0062 Discover LLM Hallucinations</td>\n       <td>9.8 LLM hallucinations</td>\n      </tr>\n      <tr>\n       <td>Adversarial example generation and evasion testing (CV/ML)</td>\n       <td>AML.T0015 Evade ML Model; AML.T0043 Craft Adversarial Data</td>\n       <td>10.5 Black box attacks</td>\n      </tr>\n      <tr>\n       <td>Supply-chain and artifact safety scanning (e.g., malicious pickles)</td>\n       <td>AML.T0010 AI Supply Chain Compromise; AML.T0011.000 Unsafe AI Artifacts</td>\n       <td>7.3 ML supply chain vulnerabilities</td>\n      </tr>\n     </tbody>\n    </table>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Databricks 推出了 BlackIce，这是一个开源的容器化工具包，将 14 种核心 AI 安全和红队工具集成到单一的可复现环境中，并映射到 MITRE ATLAS 和 DASF 框架。",
+  "oneSentenceSummary": "Databricks 推出了 BlackIce，这是一个开源的容器化工具包，将 14 种核心 AI 安全和红队工具集成到单一的可复现环境中，并映射到 MITRE ATLAS 和 DASF 框架。",
+  "summary": "BlackIce 是一个新发布的开源项目，旨在简化复杂的 AI 安全测试流程。它通过提供一个包含 14 种知名工具（如 Garak、PyRIT 和 ART）的版本固定 Docker 镜像，解决了依赖冲突和环境搭建耗时等常见痛点。该工具包涵盖了广泛的 AI 风险，包括提示词注入、越狱、数据泄露和供应链漏洞。通过提供统一的命令行界面以及对 Databricks Notebook 的兼容性，BlackIce 旨在成为 AI 红队领域的 “Kali Linux”，让安全专业人员能够专注于测试而非环境配置。",
+  "mainPoints": [
+    {
+      "point": "BlackIce 为 AI 安全测试提供了一个统一且可复现的环境。",
+      "explanation": "通过将 14 种不同的工具打包到单个容器中，它消除了在搭建多样化 AI 安全框架时通常会遇到的 “依赖地狱” 和配置开销。"
+    },
+    {
+      "point": "该工具包将技术能力映射到行业标准的风险框架。",
+      "explanation": "工具与 MITRE ATLAS 和 Databricks AI 安全框架 (DASF) 保持一致，帮助组织确保合规性，并系统性地覆盖提示词注入和数据泄露等攻击向量。"
+    },
+    {
+      "point": "它弥合了传统对抗性机器学习与现代 LLM 安全之间的鸿沟。",
+      "explanation": "将 ART（传统机器学习）等工具与 Garak 和 PyRIT（专注于 LLM）相结合，为测试传统和生成式 AI 模型提供了一套全面的工具集。"
+    }
+  ],
+  "keyQuotes": [
+    "BlackIce 旨在通过提供开箱即用的容器镜像，让团队绕过环境搭建的烦恼，专注于安全测试。",
+    "受传统渗透测试工具 Kali Linux 的启发，BlackIce 将 14 种广泛使用的 AI 安全工具整合到单一、可复现的环境中。",
+    "该工具包涵盖了提示词注入、数据泄露、幻觉检测和供应链安全等关键领域。"
+  ],
+  "tags": [
+    "AI 安全",
+    "红队测试",
+    "BlackIce",
+    "LLM 安全",
+    "容器化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 426,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769018400000,
+  "publishDateStr": "01-21",
+  "publishDateTimeStr": "2026-01-21 18:00:00"
+}

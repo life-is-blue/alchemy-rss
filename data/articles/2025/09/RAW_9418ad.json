@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9418ad",
+  "title": "OpenAI 推出 gpt-realtime：语音智能体进入“秒回”时代，开发者直呼交互更自然",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651256303&idx=4&sn=127c87358c451163e6ac921a6f47e170",
+  "date": "2025-09-16 10:11:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | &nbsp;Hien Luu </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 田橙 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">OpenAI 正式发布了 gpt-realtime，这是一款代表当前 OpenAI 最新研发成果的语音对语音模型，同时 Realtime API 也全面开放。此次更新旨在降低延迟、提升语音质量，并为开发者提供更强大的工具，例如支持 MCP 服务器、图像输入以及基于 SIP 的电话呼叫，从而打造真正可投入生产环境的 AI 语音智能体。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Realtime API 与 gpt-realtime 的结合，能够在单一系统内完成端到端语音处理，而无需再将语音转文本与文本转语音模型分开串联。这种架构显著缩短了响应时间，并能保留语音表达中的细微差别，这对于实时语音交互至关重要，因为哪怕几百毫秒的延迟都可能破坏对话的流畅性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">gpt-realtime 经过训练，可以生成更高质量的语音，语速与语调更加自然，同时在语气风格的指令执行上表现稳定，例如“以同理心语气说话”或“使用专业语气”。此次还新增了两个合成声音 Cedar 和 Marin，并对现有声音进行了更新，使之更加逼真。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">gpt-realtime 在理解能力方面也有显著进步。模型能够识别非语言信号，在一句话中实现多语言切换，并且对跨语言的字母数字序列（如电话号码、车辆识别码等）处理更加准确，支持西班牙语、中文、日语和法语等多种语言。内部测试结果显示，gpt-realtime 在 Big Bench Audio 上的准确率达到 82.8%，相比上一代模型的 65.6% 有显著提升。在遵循指令方面，MultiChallenge 音频基准测试的得分也从 20.6% 提升至 30.5%。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">函数调用能力同样得到增强。新模型在识别相关函数、在合适时机调用并传递正确参数方面表现更佳。在 ComplexFuncBench 上，准确率从 49.7% 提升至 66.5%。此外，系统还新增了 异步函数调用 功能，使语音智能体在等待结果期间能够继续对话，这一特性在客户服务和交易类场景中具有重要应用价值。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Realtime API 也迎来全面升级，更符合生产级需求。开发者现在可以将远程 MCP 服务器直接接入会话，避免手动集成的繁琐操作。API 还支持图像输入，使应用能够基于视觉内容（如截图或照片）进行对话。SIP 支持则让语音智能体能无缝接入现有电话系统，包括 PBX 和桌面电话。可复用提示功能简化了会话管理，而全面的欧盟数据存储支持则满足欧洲部署中的合规要求。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">根据发布说明，早期企业合作伙伴已在接近生产环境的场景中测试这些功能。Zillow 已启动语音交互式房产搜索的试点项目，而 T-Mobile 则探索在客户服务中应用实时响应的场景。两家公司都强调，AI 语音智能体正推动交互方式从传统的脚本化自动化，向更灵活、更具领域专长的方向转变。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">OpenAI 还进一步强化了部署安全措施。Realtime API 内置分类器，可以中止有害对话，开发者也能通过 Agents SDK 添加特定领域的安全约束。此外，Realtime API 的预设声音有助于降低冒充风险。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">目前，gpt-realtime 模型与 Realtime API 已全面开放，所有开发者均可使用。开发者可查阅 Realtime API 文档 与 提示指南 快速上手，并在 Playground 中体验全新的 gpt-realtime 演示版本。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/09/openai-gpt-realtime/\" target=\"_blank\">https://www.infoq.com/news/2025/09/openai-gpt-realtime/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 推出 gpt-realtime 模型及 Realtime API，实现端到端语音智能体的“秒回”级实时交互，显著提升语音质量、理解能力与生产级应用支持。",
+  "oneSentenceSummary": "OpenAI 推出 gpt-realtime 模型及 Realtime API，实现端到端语音智能体的“秒回”级实时交互，显著提升语音质量、理解能力与生产级应用支持。",
+  "summary": "OpenAI 正式发布了 gpt-realtime 模型和 Realtime API，旨在革新 AI 语音智能体领域，实现生产级的端到端语音交互。新模型通过集成语音转文本和文本转语音功能，显著降低了延迟，并提升了语音的自然度与语调风格指令的执行稳定性。在理解能力方面，gpt-realtime 能够识别非语言信号，支持多语言切换，并提高了对跨语言字母数字序列的处理准确性。函数调用能力也得到增强，并引入了异步函数调用，使智能体能在等待结果时继续对话，极大提升了客户服务等场景的实用性。Realtime API 则全面升级，支持 MCP 服务器、图像输入和 SIP 电话呼叫，并强化了安全措施，为开发者打造真正可投入生产的 AI 语音应用提供了强大工具。Zillow 和 T-Mobile 等早期合作伙伴已在实际场景中验证了其价值。",
+  "mainPoints": [
+    {
+      "point": "gpt-realtime 实现端到端语音处理，大幅降低延迟并提升交互自然度。",
+      "explanation": "模型在单一系统内完成语音转文本与文本转语音，消除传统串联模式的延迟，使语音交互更流畅、更接近真人对话，显著提升用户体验。"
+    },
+    {
+      "point": "模型理解能力和语音质量显著提升，支持多语言与非语言信号识别。",
+      "explanation": "gpt-realtime 能识别用户情绪、意图等非语言信号，实现多语言切换，并生成更自然逼真的语音，使其在复杂对话场景中表现更智能、更人性化。"
+    },
+    {
+      "point": "Realtime API 增强函数调用与生产级功能，加速 AI 语音智能体落地。",
+      "explanation": "API 支持异步函数调用、MCP 服务器、图像输入和 SIP 电话集成，极大简化了开发者构建和部署企业级、多功能语音智能体的难度，拓宽了应用边界。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 正式发布了 gpt-realtime，这是一款代表当前 OpenAI 最新研发成果的语音对语音模型，同时 Realtime API 也全面开放。",
+    "Realtime API 与 gpt-realtime 的结合，能够在单一系统内完成端到端语音处理，而无需再将语音转文本与文本转语音模型分开串联。",
+    "gpt-realtime 在理解能力方面也有显著进步。模型能够识别非语言信号，在一句话中实现多语言切换。",
+    "新模型在识别相关函数、在合适时机调用并传递正确参数方面表现更佳。在 ComplexFuncBench 上，准确率从 49.7% 提升至 66.5%。",
+    "AI 语音智能体正推动交互方式从传统的脚本化自动化，向更灵活、更具领域专长的方向转变。"
+  ],
+  "tags": [
+    "语音智能体",
+    "实时交互",
+    "gpt-realtime",
+    "Realtime API",
+    "端到端语音处理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1128,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758017460000,
+  "publishDateStr": "2025-09-16",
+  "publishDateTimeStr": "2025-09-16 10:11:00"
+}

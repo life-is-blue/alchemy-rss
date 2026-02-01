@@ -1,0 +1,54 @@
+{
+  "id": "RAW_decb5ef0",
+  "title": "紧急修补——React 服务器组件关键漏洞 CVE-2025-55182 正在被积极利用",
+  "url": "https://www.infoq.com/news/2025/12/CVE-2025-55182-react-server-func/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-12-10 00:49:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>On November 29th, <a href=\"https://github.com/lachlan2k\">Lachlan Davidson</a> reported an unauthenticated remote code execution (RCE) vulnerability in React Server Components (RSC). The <a href=\"https://www.cve.org/CVERecord?id=CVE-2025-55182\">vulnerability was publicly disclosed on December 3 and is tracked as CVE-2025-55182</a> with the highest severity (10.0). Amazon threat intelligence teams report active exploitation attempts by multiple China state-nexus threat groups. The critical vulnerability <a href=\"https://vercel.com/changelog/cve-2025-55182#impact\">affects React versions 19.0.0 through 19.2.0 and Next.js versions 15.x and 16.x</a> when using App Router. Companies <a href=\"https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components#immediate-action-required\">are strongly recommended to patch immediately</a>.</p>\n   <p>In its <a href=\"https://github.com/lachlan2k/React2Shell-CVE-2025-55182-original-poc/blob/main/01-submitted-poc.js\">original PoC</a>, Davidson showcased how the serialization/deserialization protocol used by React Server Components could be exploited to create a promise-like object that, when awaited, would allow an attacker to execute arbitrary code by calling native functions such as <code>child_process.execSync</code>. While the <a href=\"https://github.com/facebook/react/pull/35277#pullrequestreview-3544960698\">fix seems</a> <a href=\"https://github.com/facebook/react/pull/35277#pullrequestreview-3544935068\">simple enough</a> (add <a href=\"https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/Prototype_pollution#avoid_lookups_on_the_prototype\"><code>hasOwnProperty</code> checks to avoid JavaScript’s object prototype pollution</a>), the exploit itself is also straightforward, with public exploit code available (some of which are AI-generated) from many sources.</p>\n   <p>Besides AWS, <a href=\"https://securitylabs.datadoghq.com/articles/cve-2025-55182-react2shell-remote-code-execution-react-server-components/#observed-payloads/\">miscellaneous security companies and consultancies</a> have identified active exploitation attempts that contain weaponized payloads. Amazon <a href=\"https://aws.amazon.com/blogs/security/china-nexus-cyber-threat-groups-rapidly-exploit-react2shell-vulnerability-cve-2025-55182/\">reported</a>:</p>\n   <blockquote>\n    <p>Analysis of data from MadPot reveals the persistent nature of these exploitation attempts. In one notable example, an unattributed threat cluster associated with IP address 183[.]6.80.214 spent nearly an hour (from 2:30:17 AM to 3:22:48 AM UTC on December 4, 2025) systematically troubleshooting exploitation attempts:</p>\n    <ul>\n     <li>116 total requests across 52 minutes</li>\n     <li>Attempted multiple exploit payloads</li>\n     <li>Tried executing Linux commands (<code>whoami</code>, <code>id</code>)</li>\n     <li>Attempted file writes to <code>/tmp/pwned.txt</code></li>\n     <li>Tried to read<code>/etc/passwd</code></li>\n    </ul>\n   </blockquote>\n   <p>The vulnerability is a case of <a href=\"https://developer.mozilla.org/en-US/docs/Web/Security/Attacks/Prototype_pollution#:~:text=Prototype%20pollution%20is%20a%20vulnerability,%2Dsite%20scripting%20(XSS)\">server-side JavaScript prototype pollution</a>. In order to pollute objects, an attacker needs a way to add arbitrary properties to prototype objects. In a second step, the attacker needs a vector of exploitation that accesses the polluted properties.</p>\n   <p>In this specific case, the arbitrary properties are added by crafting payloads that are deserialized into corrupted JavaScript objects by the <a href=\"https://gist.github.com/HerringtonDarkholme/87f14efca45f7d38740be9f53849a89f#the-react-flight-protocol\">Flight protocol used by React Server Components</a> to communicate with the server. A client that needs data rendered by a React Server Component sends a request to a server endpoint. The server parses the incoming payload, executes the relevant server-side logic, and returns a serialized representation of the component tree. The second step here is the unsafe deserialization of the payload as promises. Unpatched React versions do not validate the serialized payload and begin resolving it (e.g., await the promise, thus running the injected <code>then</code> code). Server-side JavaScript environments impose little restriction on what this code can do, so the attacker can read files, spawn processes, and run arbitrary commands.</p>\n   <p>Readers will find in-depth technical details in <a href=\"https://github.com/msanft/CVE-2025-55182?tab=readme-ov-file#exploitation\">Moritz Sanft’s walk-through</a>. More importantly, companies should rush to <a href=\"https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components#immediate-action-required\">patch the identified packages and the packages that list them as dependencies</a> (e.g., some Vite plugins, react-router, <a href=\"https://www.npmjs.com/package/waku\">waku</a>).</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Patch Urgently - Critical Vulnerability CVE-2025-55182 in React Server Functions Actively Exploited\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/12/CVE-2025-55182-react-server-func/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1765327740000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "React 服务器组件 (RSC) 和 Next.js 中存在一个严重的远程代码执行 (RCE) 漏洞 (CVE-2025-55182)，正被国家支持的组织积极利用，鉴于其最高严重性，急需立即修补。",
+  "oneSentenceSummary": "React 服务器组件 (RSC) 和 Next.js 中存在一个严重的远程代码执行 (RCE) 漏洞 (CVE-2025-55182)，正被国家支持的组织积极利用，鉴于其最高严重性，急需立即修补。",
+  "summary": "本文报道了 React 服务器组件 (RSC) 中一个未经身份验证的严重远程代码执行 (RCE) 漏洞 (CVE-2025-55182)，该漏洞影响使用 App Router 的 React 19.0.0-19.2.0 版本和 Next.js 15.x-16.x 版本。该漏洞于 12 月 3 日披露，严重性等级为 10.0。亚马逊威胁情报团队观察到，该漏洞正被多个中国国家支持的威胁组织积极利用。该漏洞源于 Flight 协议有效载荷在反序列化过程中的服务器端 JavaScript 原型链污染问题，允许攻击者注入并执行任意代码，包括系统命令。尽管修复方案涉及添加 `hasOwnProperty` 检查，但已检测到使用武器化有效载荷的积极利用尝试，这凸显了立即对受影响的软件包及其依赖项进行修补的紧迫性，以减轻严重的安全风险。",
+  "mainPoints": [
+    {
+      "point": "React 服务器组件和 Next.js 中存在一个关键的远程代码执行 (RCE) 漏洞 (CVE-2025-55182)，且正被积极利用。",
+      "explanation": "此未经身份验证的 RCE，严重性等级为 10.0，允许任意代码执行，并正被国家支持的威胁组织积极利用，构成即时且严重的安全风险。"
+    },
+    {
+      "point": "该漏洞是由 Flight 协议的有效载荷在反序列化过程中的服务器端 JavaScript 原型链污染引起的。",
+      "explanation": "攻击者精心制作有效载荷，当未经修补的 React 版本对其进行反序列化时，会破坏 JavaScript 对象，从而允许执行注入的 `then` 代码作为任意命令。"
+    },
+    {
+      "point": "强烈建议所有受影响的 React 和 Next.js 版本及其依赖项立即修补。",
+      "explanation": "鉴于漏洞利用的普遍性和直接性，以及正在进行的攻击，急需进行更新以防止服务器端环境遭到入侵。"
+    }
+  ],
+  "keyQuotes": [
+    "该漏洞于 12 月 3 日公开披露，编号为 CVE-2025-55182，严重性最高 (10.0)。",
+    "亚马逊威胁情报团队报告称，多个中国国家支持的威胁组织正在进行积极的利用尝试。",
+    "强烈建议公司立即修补。",
+    "服务器端 JavaScript 环境对这些代码的功能限制很少，因此攻击者可以读取文件、创建进程并运行任意命令。"
+  ],
+  "tags": [
+    "CVE-2025-55182",
+    "React Server Components",
+    "RCE",
+    "Vulnerability",
+    "Next.js"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 92,
+  "wordCount": 446,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765327740000,
+  "publishDateStr": "2025-12-10",
+  "publishDateTimeStr": "2025-12-10 00:49:00"
+}

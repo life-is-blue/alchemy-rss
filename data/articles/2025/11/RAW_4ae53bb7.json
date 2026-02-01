@@ -1,0 +1,53 @@
+{
+  "id": "RAW_4ae53bb7",
+  "title": "迈向 Spring 工具 5 - 构造型与新的结构化视图",
+  "url": "https://spring.io/blog/2025/11/28/towards-spring-tools-5-part2",
+  "date": "2025-11-28 00:00:00",
+  "author": "martinlippert",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>When working on Spring projects, developers do not only think in terms of low-level concepts like classes and interfaces. When using Spring, you think about higher-level abstractions and concepts like services, repositories, configuration classes, entities, aggregate roots, and so on. To bring these concepts front and center for developers in their coding environments, the Spring Tools analyzes your source code from a Spring perspective and provides overviews and quick navigation based on those concepts - and we have done that for a long time already.</p>\n  <p>In the past, we did this using the “Go To Symbol” functionality. The Spring Tools created specialized symbols for those Spring concepts by analyzing the source code and extracting the necessary information. That resulted, for example, in symbols being created for request mappings that all looked like <code>/greeting – GET</code> - similarly for beans, repositories, etc. Having those symbols around is quite handy in your IDE. They allow you to quickly navigate through the project, to quickly search through them, and to provide a nice overview of all request mappings (in this example), if used wisely.</p>\n  <p><img src=\"https://static.spring.io/blog/mlippert/20251128/01-goto-symbols-in-workspace.png\" alt=\"Spring symbols showing up in Go To Symbols in Workspace action\" width=\"596\"></p>\n  <h2 id=\"stereotypes-and-a-logical-view-of-the-project\"><a href=\"#stereotypes-and-a-logical-view-of-the-project\" aria-label=\"stereotypes and a logical view of the project permalink\" class=\"anchor before\"></a>Stereotypes and a logical view of the project</h2>\n  <p>While these Spring-specific symbols continue to exist in the Spring Tools, the new major release brings this to a whole new level. In cooperation with the Spring Modulith and the jMolecules project, we integrated deeply with the concept of stereotypes as introduced by jMolecules 2.0 to visualize Spring projects in a unique and different way: the logical structure view.</p>\n  <p><img src=\"https://static.spring.io/blog/mlippert/20251128/02-simple-structure-view.png\" alt=\"Structure of a simple Spring project in the logical structure view\" width=\"506\"></p>\n  <p>Oliver Drotbohm, the author and creator of these stereotype foundations in jMolecules and Spring Modulith, introduces this concept nicely in a <a href=\"https://odrotbohm.github.io/2025/11/jmolecules-2.0-stereotypical/\">comprehensive blog post</a>.</p>\n  <p>The logical structure view builds on this foundation and provides you with a stereotype-focused perspective of your entire project. Instead of showing files and folders, it shows you the elements of your projects, grouped by their stereotypes. You see web controllers grouped together, configuration classes, request mappings, repositories, and entities - those higher-level concepts that you typically have in mind when working with Spring projects.</p>\n  <p>The logical structure view allows you to also control which stereotypes you would like to see in the tree structure as individual groups. Alongside the project node in the view, you can invoke the action to select the groups you would like to take into account for each project. That way, you can, for example, decide whether you would like to see stereotypes from Spring Web as individual sections in the tree or not. This gives you a lot of flexibility and control over the structure view and allows you to customize the view exactly to your needs.</p>\n  <p><img src=\"https://static.spring.io/blog/mlippert/20251128/03-grouping.png\" alt=\"Dialog to select the groups that should be used in the structure view for a specific project\" width=\"608\"></p>\n  <h2 id=\"module-structure-on-top-via-spring-modulith\"><a href=\"#module-structure-on-top-via-spring-modulith\" aria-label=\"module structure on top via spring modulith permalink\" class=\"anchor before\"></a>Module structure on top (via Spring Modulith)</h2>\n  <p>In case the project uses an up-to-date version of Spring Modulith to define its internal architecture and structure, the logical structure view in the Spring Tools will automatically take this into account. It not only groups the elements of your project by their stereotypes but also by the modular structure of the project.</p>\n  <p><img src=\"https://static.spring.io/blog/mlippert/20251128/04-modulith-structure-view.png\" alt=\"Dialog to select the groups that should be used in the structure view for a specific project\" width=\"509\"></p>\n  <h2 id=\"custom-stereotypes\"><a href=\"#custom-stereotypes\" aria-label=\"custom stereotypes permalink\" class=\"anchor before\"></a>Custom stereotypes</h2>\n  <p>Another fantastic aspect of this is the ability for you to define your own stereotypes. All you need to do is to create a corresponding <code>META-INF/jmolecules-stereotypes.json</code> file, fill in the definitions, and add this file to your projects. Alternatively, you can use jMolecules’ <code>@Stereotype</code> annotation to define your own stereotype annotations or interfaces and use them throughout your project.</p>\n  <p>The logic inside the Spring Tools will automatically pick up those definitions, independently of whether they are defined in metadata files or in source code. They will show up alongside all the other stereotypes detected in dependencies of your project in the logical structure view. This gives you the power to customize the structural view of your project inside the IDE without changing or configuring the IDE itself.</p>\n  <h2 id=\"looking-forward\"><a href=\"#looking-forward\" aria-label=\"looking forward permalink\" class=\"anchor before\"></a>Looking forward</h2>\n  <p>If you want to try the latest release candidates of Spring Tools 5, please go to the <a href=\"https://spring.io/tools5\">tools preview page</a> or switch to the pre-releases of the extensions in Visual Studio Code.</p>\n  <p>The upcoming third part of this series around the Spring Tools 5 release will look into the new integration with AI coding assistants, followed by the GA of the Spring Tools 5. Stay tuned.</p>\n </body>\n</html>",
+  "aiSummary": "Spring 工具 5 引入了一种新的基于构造型的逻辑结构化视图，旨在增强项目导航，并与 Spring 模块化实现更紧密的集成。",
+  "oneSentenceSummary": "Spring 工具 5 引入了一种新的基于构造型的逻辑结构化视图，旨在增强项目导航，并与 Spring 模块化实现更紧密的集成。",
+  "summary": "作为“迈向 Spring 工具 5”系列文章的一部分，本文着重介绍了 Spring 工具 IDE 扩展的几项重大改进。新版本在现有“跳转到符号”功能的基础上，集成了 jMolecules 2.0 的构造型，从而提供了一种独特的“逻辑结构化视图”。不同于传统的文件和文件夹组织方式，该视图以更高级别的 Spring 概念（如控制器、仓库和实体）来组织项目元素，有助于开发者从概念层面理解和导航代码。此外，它还无缝集成了 Spring 模块化的模块结构，实现了对模块化项目的可视化呈现。开发者还可以自定义构造型，从而高度定制该视图。所有这些改进都旨在简化 Spring 项目的开发体验。",
+  "mainPoints": [
+    {
+      "point": "Spring 工具 5 引入了一种基于 jMolecules 构造型的逻辑结构化视图。",
+      "explanation": "这个新视图按照更高级别的 Spring 概念（例如，控制器、仓库）对项目元素进行分组，超越了传统的文件/文件夹结构，更符合开发者在概念上组织代码的习惯。"
+    },
+    {
+      "point": "该逻辑视图与 Spring 模块化集成，以提升模块化项目的可视化效果。",
+      "explanation": "对于采用 Spring 模块化的项目，该视图能够自动整合已定义的模块结构，从而更清晰地呈现项目的内部架构。"
+    },
+    {
+      "point": "开发者可以定义自定义构造型，以根据自身需求定制结构化视图。",
+      "explanation": "通过元数据文件或注解创建自定义构造型的能力，为团队提供了强大的定制选项，使其能够在 IDE 中可视化其特定的领域概念。"
+    }
+  ],
+  "keyQuotes": [
+    "在使用 Spring 时，开发者通常会考虑更高级别的抽象概念，例如服务、仓库、配置类、实体、聚合根等等。",
+    "逻辑结构化视图正是建立在此基础之上，并为开发者提供了一个以构造型为中心的项目视角。它不再显示文件和文件夹，而是根据构造型对项目元素进行分组展示。",
+    "另一个非常棒的特性是，开发者可以定义自己的构造型。"
+  ],
+  "tags": [
+    "IDE",
+    "Spring 工具",
+    "Spring 框架",
+    "jMolecules",
+    "Spring 模块化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 692,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1764288000000,
+  "publishDateStr": "2025-11-28",
+  "publishDateTimeStr": "2025-11-28 00:00:00"
+}

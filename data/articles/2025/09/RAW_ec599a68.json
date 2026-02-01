@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ec599a68",
+  "title": "Swift 6.2 发布，改进了并发性能、更安全的底层内存访问、Wasm 支持等",
+  "url": "https://www.infoq.com/news/2025/09/swift-6-2-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-29 11:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The most significant new feature in <a href=\"https://www.swift.org/blog/swift-6.2-released/\">Swift 6.2</a> is approachable concurrency, a default, low-complexity approach to writing safe concurrent applications. Swift 6.2 also introduces new features to simplify low-level programming, including the <code>InlineArray</code> and <code>Span</code> types, and adds support for WebAssembly.</p>\n   <p>Programs adopting approachable concurrency are single-threaded by default, which is ideal for scripts and UI code, and provide greater resilience for asynchronous code that accesses mutable state by running it on the caller’s executor thread. When you want to ensure an <code>async</code> method is run on the concurrent thread pool instead of in the caller's context, you can use the <code>@concurrent</code> annotation. <a href=\"https://www.infoq.com/news/2025/08/swift62-approachable-concurrency/\">InfoQ previously covered approachable concurrency</a> following its announcement at Apple’s WWDC 2025, providing additional detail and context.</p>\n   <p>Swift 6.2 also introduces two new features aimed to write safe, low-level code with predictable performance and minimal overhead. The first is <a href=\"https://github.com/swiftlang/swift-evolution/blob/main/proposals/0453-vector.md\"><code>InlineArray</code></a>, a fixed-size array with inline storage that avoids additional heap allocation. The syntax to declare an inline array is: <code>var inlineArray: [50 of String]</code>. The second feature is <a href=\"https://github.com/swiftlang/swift-evolution/blob/main/proposals/0447-span-access-shared-contiguous-storage.md\"><code>Span</code></a>, a safe alternative to buffer pointers to access contiguous memory.</p>\n   <blockquote>\n    <p>Span maintains memory safety by ensuring the memory remains valid while you’re using it. These guarantees are checked at compile time with no runtime overhead, and define away the memory safety problems inherent to pointers, such as use-after-free bugs.</p>\n   </blockquote>\n   <p>Another enhancement to low-level programming in Swift 6.2 is strict memory safety, an opt-in mode designed to detect unsafe constructs in a codebase, enabling developers to either replace them or explicitly acknowledge their use.</p>\n   <p>Swift 6.2 also introduces support for compiling to Wasm thanks to the new <a href=\"https://download.swift.org/swift-6.2-release/wasm/swift-6.2-RELEASE/swift-6.2-RELEASE_wasm.artifactbundle.tar.gz\">Wasm SDK</a>.</p>\n   <blockquote>\n    <p>WebAssembly support in Swift started out as a community project. Any instruction set benefits tremendously from a standardized ABI and system interfaces, and from its inception Wasm support in Swift targeted WebAssembly System Interface, which made porting Swift core libraries to this platform much easier.</p>\n   </blockquote>\n   <p>The <code>swift</code> command line compiler can both build a Wasm executable from a Swift source file and run it using <a href=\"https://github.com/swiftwasm/wasmkit/\">WasmKit</a>, a standalone and embeddable WebAssembly runtime. The Wasm cross-compiler can produce significantly smaller binaries when programmers use <a href=\"https://github.com/swiftlang/swift-evolution/blob/main/visions/embedded-swift.md\">Embedded Swift</a>, which excludes runtime reflection, metatypes like <code>SomeClass.Type</code> and all standard library features that relies on it, such as <code>Codable</code>, non-final generic methods, weak and unowned references, and other features that increase language complexity.</p>\n   <p>Swift 6.2 includes many more enhancements that cannot be covered here, such as precise warning control based on diagnostic groups, faster macro processing, improved debugging for asynchronous code, and extended Swift Testing APIs. For full details, be sure to read the official announcement.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Swift 6.2 Released with Improved Concurrency, Safer Raw-Memory Access, Wasm Support and More\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/swift-6-2-released/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759143600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Swift 6.2 引入了易于使用的并发性、增强的内存安全特性（如 `InlineArray` 内联数组和 `Span` 范围）以及官方的 WebAssembly 支持，并改进了开发者体验。",
+  "oneSentenceSummary": "Swift 6.2 引入了易于使用的并发性、增强的内存安全特性（如 `InlineArray` 内联数组和 `Span` 范围）以及官方的 WebAssembly 支持，并改进了开发者体验。",
+  "summary": "本文宣布了 Swift 6.2 的发布，详细介绍了其最重要的的新特性和增强功能。主要特性是“易于使用的并发性 (approachable concurrency)”，它提供了一种默认的、低复杂性的方法来开发安全的并发应用程序。这种方法默认在调用者的执行器线程上运行异步 (async) 代码，以访问可变状态，从而增强了弹性。这对于脚本和 UI 代码尤其重要。开发者可以使用 `@concurrent` 注解来显式地在并发线程池上执行异步方法。Swift 6.2 还引入了新特性，用于安全、低级别的编程，具有可预测的性能：`InlineArray`（内联数组），一个具有内联存储的固定大小数组，避免了堆内存分配；以及 `Span`（范围/跨度），一种编译时安全的替代方案，用于访问连续内存的缓冲区指针，它保证了内存有效性，并防止了诸如释放后访问错误（use-after-free bugs）等问题。此外，严格的内存安全是一种选择加入模式，用于检测或确认不安全构造。一个主要的平台扩展是官方的 WebAssembly (Wasm) 支持，由一个新的 Wasm SDK 启用。这允许 `swift` 命令行编译器使用 WasmKit 构建和运行 Wasm 可执行文件。文章指出，使用“嵌入式 Swift (Embedded Swift)”可以通过排除某些增加语言复杂性的运行时特性来产生明显更小的 Wasm 二进制文件。提到的其他增强功能包括精确的警告控制、更快的宏处理、改进的异步调试和扩展的 Swift 测试 API。",
+  "mainPoints": [
+    {
+      "point": "Swift 6.2 的“易于使用的并发性 (approachable concurrency)”简化了安全的并发应用程序开发。",
+      "explanation": "此功能为异步代码提供默认的单线程执行，从而增强了对可变状态访问的弹性，并允许在需要时进行显式的并发执行，从而使并发更容易和更安全地管理。"
+    },
+    {
+      "point": "新的 `InlineArray` 和 `Span` 类型改进了安全、底层的内存管理。",
+      "explanation": "`InlineArray` 提供固定大小的内联存储以避免堆内存分配，而 `Span` 提供了一种编译时安全的机制来访问连续内存，从而消除了常见的与指针相关的内存安全问题。"
+    },
+    {
+      "point": "官方的 WebAssembly (Wasm) 支持扩展了 Swift 的平台覆盖范围。",
+      "explanation": "借助新的 Wasm SDK，Swift 代码现在可以编译为 Wasm 并在各种 Wasm 运行时上运行，从而开辟了新的部署可能性，特别是使用嵌入式 Swift 来优化后体积更小的二进制文件。"
+    }
+  ],
+  "keyQuotes": [
+    "Swift 6.2 中最重要的的新特性是易于使用的并发性 (approachable concurrency)，这是一种默认的、低复杂性的方法来编写安全的并发应用程序。",
+    "Span 通过确保内存在使用时保持有效来维护内存安全。这些保证在编译时进行检查，没有运行时开销，并且消除了指针固有的内存安全问题，例如释放后访问错误。",
+    "Swift 中的 WebAssembly 支持最初是一个社区项目。任何指令集都极大地受益于标准化的 ABI 和系统接口，并且从一开始，Swift 中的 Wasm 支持就以 WebAssembly System Interface 为目标，这使得将 Swift 核心库移植到该平台变得更加容易。",
+    "当程序员使用嵌入式 Swift (Embedded Swift) 时，Wasm 交叉编译器可以产生明显更小的二进制文件，嵌入式 Swift 排除运行时反射、元类型（如 `SomeClass.Type`）以及所有依赖它的标准库功能，例如 `Codable`、非 final 泛型方法、弱引用和无主引用以及其他增加语言复杂性的功能。"
+  ],
+  "tags": [
+    "Swift",
+    "编程语言",
+    "并发",
+    "内存安全",
+    "WebAssembly"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 431,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759143600000,
+  "publishDateStr": "2025-09-29",
+  "publishDateTimeStr": "2025-09-29 11:00:00"
+}

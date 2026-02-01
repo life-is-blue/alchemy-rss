@@ -1,0 +1,57 @@
+{
+  "id": "RAW_23efa9e0",
+  "title": "Manus 谈 AI Agent 之道：做对一千件小事，比做对三件大事更重要",
+  "url": "https://baoyu.io/blog/manus-ai-agent-small-things-more-important",
+  "date": "2025-12-31 01:15:57",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"spnzg4i3ml\">张小珺这期采访Manus联合创始人兼首席科学家季逸超（Peak）的访谈 张小珺Benita的微博音频挺值得听听的。</p>\n   <p data-id=\"h45bnjwf86\">访谈地址：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://www.xiaoyuzhoufm.com/episode/695331cb2db086f897b50ea9\">https://www.xiaoyuzhoufm.com/episode/695331cb2db086f897b50ea9</a></p>\n   <p data-id=\"3djtu94ig6\">里面有一句话给我印象挺深刻：“做对一千件小事，比做对三件大事更重要”。</p>\n   <p data-id=\"2lpb4e6lbv\">熟悉苦涩的教训《The Bitter Lesson》的应该能理解这句话的含义。</p>\n   <blockquote data-id=\"e1pgv0r893\">\n    <p data-id=\"6kuz5vzdoa\">AI 研究的历史反复证明，那些依赖人类精心设计的规则和知识的方法，最终都会被更简单粗暴能更好利用算力进行通用学习的方法打败。</p>\n   </blockquote>\n   <p data-id=\"oqpij9sdlx\">换句话说，与其让人类专家花大力气设计聪明的规则，不如让机器自己去学。</p>\n   <p data-id=\"fis8g86y37\">Peak 把这个道理翻译成一句话：做对一千件小事，比做对三件大事更重要。</p>\n   <p data-id=\"22slz580yd\">《The Bitter Lesson》应该也深刻影响了 Manus 团队在 Agent 设计上做出的选择。</p>\n   <p data-id=\"4haviptb8o\">现在市面上的 Agent 产品，大致可以分成两类。</p>\n   <p data-id=\"o4xk511ax0\">一类是“规则主导”的 Agent。开发者提前设计好工作流程：第一步做什么，第二步做什么，遇到什么情况走哪个分支。这种 Agent 的好处是可控、可预测，坏处是只能处理设计者预见到的情况。</p>\n   <p data-id=\"371khr63h7\">另一类是“智能主导”的 Agent。不预设具体流程，让模型自己判断每一步该怎么走。这种 Agent 的好处是灵活、能处理意外情况，坏处是不够稳定，有时候会犯蠢。</p>\n   <p data-id=\"x11ibp9i3d\">Manus 选择的是后者。</p>\n   <p data-id=\"bdxu31q5fz\">Peak 在播客中解释这个选择时说，规则主导的 Agent Workflow 在可复现性上确实表现更好。同样的输入，每次都能得到差不多的输出。但他认为这个问题是可以解决的，而规则主导的天花板问题是解决不了的——你永远没办法提前预见用户会遇到的所有情况。</p>\n   <p data-id=\"gbimaffekq\">Manus 怎么做到“不设规则”的？</p>\n   <p data-id=\"srvh9886y3\">Peak 举了一个例子。大部分互联网服务并没有接入 MCP。如果 Manus 只能用 MCP，那能干的事情就很有限。</p>\n   <p data-id=\"w1xwkw5hys\">Manus 的策略是做降级处理。如果有 MCP 接入，直接用。如果没有 MCP 但有 API 文档，Manus 会自己去读文档，学会怎么调用这个 API。如果连 API 都没有，只要这个服务有网页界面，Manus 就用浏览器模拟人类的操作方式来使用它。</p>\n   <p data-id=\"yw9u1vsaj8\">这意味着，开发者不需要专门为 Manus 做任何适配。只要一个服务是给人用的，Manus 就能想办法用上。</p>\n   <p data-id=\"etfpodzrhs\">“它没有人为设定的约束，完成任务的所有过程和方式，都由智能本身决定。”</p>\n   <p data-id=\"1jzva41ctq\">这就是“做对一千件小事”的含义。不是提前设计三条聪明的规则，而是让系统在面对一千种不同情况时，每次都能做出还算合理的判断。单看每一次判断，可能都不完美；但整体叠加起来，能处理的问题范围就远超任何规则系统。</p>\n   <p data-id=\"4jdvnl0iuv\">这个选择背后是相信模型能力会持续变强。</p>\n   <p data-id=\"lgfadka540\">如果模型能力停滞不前，那“智能主导”的路线就很危险。模型犯蠢的概率不会下降，用户体验永远不稳定。</p>\n   <p data-id=\"8cus3ujwhl\">但如果模型能力持续提升，这条路线的天花板就会不断抬高。今天模型可能在某些任务上判断失误，明天换一个更强的模型，同样的代码就能做对更多事情。</p>\n   <p data-id=\"jer20ilagp\">Peak 说，对 Manus 这样的应用公司来说，所有外部的模型创新都是养料和供给。他们不需要参与“模型大乐透”，不用押注哪家模型公司会赢。谁进步了，他们就受益。</p>\n   <p data-id=\"uwe52tri26\">这也是为什么 Manus 选择不自己训模型。他们把精力花在“怎么更好地使用模型”上，而不是“怎么训出更好的模型”。后者需要巨大的资源投入，而且有可能押错方向；前者的风险小得多，只要整个行业在进步，他们就能跟着进步。</p>\n   <p data-id=\"ncz7y2baon\">另外 Manus 团队在 Agent 上的摸索，确实是业界顶级的，而且他们会选择将摸索出来的经验分享出来。比如那篇《AI 智能体的上下文工程：构建 Manus 的经验教训》我就看了很多遍，还有后来那篇和 LangChain 一起做的《Context Engineering for AI Agents with LangChain and Manus》分享，也特别好。</p>\n   <p data-id=\"5vi1td3qqj\">所以 Peak 说当他们读到一些模型公司发布的研究博客时，心情是“既开心又无奈”。开心是因为这些博客验证了他们的方向，无奈是因为博客里写的东西，基本都是他们早就在做的。</p>\n   <p data-id=\"p53daof5s1\">比如 Anthropic 提出的“thinking tool”概念，是在 Manus 上线一个月后才发布的。还有用代码方式调用 MCP、渐进式披露信息这些做法，Manus 也早就在用了。</p>\n   <p data-id=\"zayiudjqyp\">这些 Agent 上摸索出来的经验，你要说创新也算不上多大，更多是一个个具体的工程细节。单拎出来看，每一个都不起眼，但叠加在一起，就构成了产品的核心竞争力。</p>\n   <p data-id=\"dhahalvtn9\">Peak 把这种方法论总结为：做对一千件小事，比做对三件大事更重要。</p>\n   <p data-id=\"zhife1g6k4\">三件大事可能是：设计一个天才的架构，发明一个突破性的算法，或者抢先拿到某个独家资源。这些事情如果能做成，当然很厉害，但风险也很高，而且往往不可复制。</p>\n   <p data-id=\"hb0dsv00rl\">一千件小事是：在每一个具体场景里做出合理的判断，处理好每一个边界情况，让每一次用户交互都顺畅一点点。这些事情每一件都不难，但需要耐心和积累，而且门槛会随着积累越来越高。</p>\n   <p data-id=\"w9g4wut11w\">很多人觉得 Manus 不过是“套壳”，但你要真去做一个 Manus 出来，就会发现这个壳里藏着一千个细节：怎么让模型长时间保持注意力、怎么压缩和恢复记忆、怎么在没有 API 的时候优雅降级、怎么节约 Token 成本、怎么处理各种意想不到的边界情况。每一个细节都不算什么大发明，但每一个都要做对。</p>\n   <p data-id=\"d0z89i9o3m\">这可能就是“套壳”的门槛所在，不在于壳本身，在于壳里那一千件小事。</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文通过 Manus 团队的实践，阐释了 AI Agent 开发中“做对一千件小事”的理念，强调智能主导、模型迭代和工程细节积累是构建高适应性 AI 系统的关键。",
+  "oneSentenceSummary": "本文通过 Manus 团队的实践，阐释了 AI Agent 开发中“做对一千件小事”的理念，强调智能主导、模型迭代和工程细节积累是构建高适应性 AI 系统的关键。",
+  "summary": "本文基于宝玉对 Manus 联合创始人兼首席科学家季逸超（Peak）的访谈，深入探讨了 Manus 在 AI Agent 设计上的核心理念：“做对一千件小事，比做对三件大事更重要”。文章首先引用《The Bitter Lesson》理论，指出 AI 发展中大模型通用学习的优势。随后，详细对比了“规则主导”和“智能主导”两类 Agent，阐释了 Manus 选择“智能主导”路线的原因——相信模型能力会持续增强，且能更好地应对复杂多变的用户需求。文章以具体案例（如服务降级处理）说明 Manus 如何通过让模型自行判断、模拟人类操作来“不做规则”，而是专注于处理无数工程细节。这种方法论体现在其对模型创新的态度（不自训模型，但充分利用外部模型进步），以及他们领先于行业伙伴（如 Anthropic）在 Agent 上下文工程、代码调用 MCP 等方面的实践。最终，文章指出“套壳”的真正门槛在于其内部一千个精细且必须做对的细节，而非表面的架构或算法，强调了工程积累的重要性。",
+  "mainPoints": [
+    {
+      "point": "AI Agent 开发应遵循“做对一千件小事”的理念，而非依赖少数“大事”。",
+      "explanation": "借鉴 AI 领域的《The Bitter Lesson》，文章强调通用学习和处理大量细节的重要性，认为 AI Agent 不应预设固定规则，而是让模型在面对各种情况时自主判断，从而积累解决问题的能力。"
+    },
+    {
+      "point": "“智能主导”的 Agent 路线优于“规则主导”，核心在于相信模型能力持续增强。",
+      "explanation": "Manus 选择不预设流程，让模型自主决策，虽然初期可能不稳，但随着模型能力提升，这种路线的天花板远高于依赖人为设限的规则系统，能处理更广泛的未预见场景。"
+    },
+    {
+      "point": "Manus 通过降级策略实现广泛服务接入，体现了无规则智能决策的设计。",
+      "explanation": "即使没有官方 MCP，Manus 也能通过读取 API 文档或模拟浏览器操作来使用服务，这展示了其 Agent 高度的适应性和在缺乏规则约束下自主寻找解决方案的能力。"
+    },
+    {
+      "point": "将精力聚焦于“如何更好地使用模型”，而非亲自训练模型，是应用公司的明智战略。",
+      "explanation": "Manus 不参与模型训练的“大乐透”，而是将资源投入到上下文工程、细节处理等工程实践中，从而降低风险，并能充分受益于整个 AI 行业模型能力的进步。"
+    },
+    {
+      "point": "“套壳”的真正门槛在于一千个精细的工程细节，而非表面架构。",
+      "explanation": "文章指出，看似简单的产品实则蕴含了诸多复杂细节，如模型注意力保持、记忆压缩、成本优化、边界情况处理等，这些“小事”的积累构成了产品的核心竞争力和实现门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "“做对一千件小事，比做对三件大事更重要”。",
+    "AI 研究的历史反复证明，那些依赖人类精心设计的规则和知识的方法，最终都会被更简单粗暴能更好利用算力进行通用学习的方法打败。",
+    "它没有人为设定的约束，完成任务的所有过程和方式，都由智能本身决定。",
+    "他们把精力花在“怎么更好地使用模型”上，而不是“怎么训出更好的模型”。",
+    "这可能就是“套壳”的门槛所在，不在于壳本身，在于壳里那一千件小事。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1981,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767143757000,
+  "publishDateStr": "2025-12-31",
+  "publishDateTimeStr": "2025-12-31 01:15:57"
+}

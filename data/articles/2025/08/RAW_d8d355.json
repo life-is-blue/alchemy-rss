@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d8d355",
+  "title": "Cloudflare 如何将 Quicksilver 迁移到多级缓存并处理数十亿个请求",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651253145&idx=4&sn=d292039a5aa06e69c3b308c4ab7a26ac",
+  "date": "2025-08-16 07:22:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span>\n   <br></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Renato Losio </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 王强 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cloudflare 的工程团队最近分享了他们如何将公司内部的全局键值存储 Quicksilver 过渡到分层缓存架构的故事。他们介绍了他们逐渐从“每一处都存储全部内容”的策略转变为采用分布式缓存系统的旅程。这一变化提高了存储效率，同时保证了一致性和边缘的低延迟读取性能。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在过去几年里，Cloudflare 从现在被称为 Quicksilver V1 的系统过渡到了新的分层缓存系统 Quicksilver V2，后者只使用了少数服务器来存储数据。这两篇文章描述了他们如何实现分层缓存架构的过程，这个过程需要团队迁移数十万个实时数据库，同时每秒服务数十亿个请求。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Quicksilver 是 Cloudflare 内部开发的一种键值存储，用于实现快速的全局复制，并在该公司全球众多数据中心中实现低延迟访问。它最初设计为分发各种配置的全局系统，随着时间的推移，它演变成了许多 Cloudflare 服务和产品（包括他们的 DNS、CDN 和 WAF）的基础存储系统。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Quicksilver v1 在全局每个服务器上都存储完整的数据集，结果消耗了大量磁盘空间，1.6TB 的数据集在仅仅一年内就增长了 50%，意味着 Cloudflare 网络中的可用存储即将耗尽。向新方案的迁移始于 Quicksilver v1.5，这是一个引入代理和复制服务器角色的解决方案，它让磁盘占用减少了 50%。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在最新的 v2 实现中，Cloudflare 引入了多级缓存策略。最新架构的特点是本地的每服务器一份缓存、数据中心范围内的分片缓存和在专用存储节点上的完整数据集副本，以及将未命中缓存分散在服务器之间的响应式预取。内存使用和冷缓存问题导致 Cloudflare 选择使用 RocksDB 的持久存储，而不是基于内存的缓存，并使用基于这一引擎的压缩过滤器进行驱逐。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img data-imgfileid=\"503769465\" class=\"rich_pages wxw-img\" data-ratio=\"0.4661458333333333\" data-type=\"other\" data-w=\"1920\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=296d6ee9&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FYriaiaJPb26VP3BNgQ1vcKhLcB9pFA0iag12uiaxewHicya0QZtW2p6M2uo1tibKzmJzUaypVVf7MT91S9wRM8nSFweQ%2F640%3Fwx_fmt%3Dother%26from%3Dappmsg\"></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">来源：Cloudflare 博客</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cloudflare 的系统工程师 Anton Dort-Golts 和 Marten van de Sanden 解释了为什么向后兼容性和顺序一致性很重要：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">Quicksilver 从一开始就为客户提供了顺序一致性……我们亲身体会了海勒姆定律，Quicksilver 在公司内部采用得如此广泛，以至于我们在早期版本中引入的每个属性现在都依赖其他团队。这意味着更改行为将不可避免地破坏现有特性并引入错误。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">新架构通过多版本并发控制（MVCC）和滑动窗口方法来处理异步复制挑战，从而保持顺序一致性。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><img data-imgfileid=\"503769466\" class=\"rich_pages wxw-img\" data-ratio=\"0.440625\" data-type=\"other\" data-w=\"1920\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=69232e3d&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FYriaiaJPb26VP3BNgQ1vcKhLcB9pFA0iag1mlQgialEJzdsHeLa7W40CLgwpMsnrs4AfogL6561SAdNia48yKdAQibfA%2F640%3Fwx_fmt%3Dother%26from%3Dappmsg\"></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">来源：Cloudflare 博客</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">从旧架构到 Quicksilver v2 的转变解决了 Cloudflare 之前在 330 个城市网络中遇到的关键瓶颈，同时保持了 1.6TB 数据集的亚毫秒处理性能（该数据集包含五十亿个键值对）。根据作者的说法，Quicksilver 目前对 90% 的请求可在 1 毫秒内响应，99.9% 的请求在 7 毫秒内响应。大多数请求只返回几个键，而其他请求返回数百甚至更多的键。Dort-Golts 和 van de Sanden 补充说：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">我们的键空间被分成了多个分片。数据中心中的每个服务器被分配了一个分片。这些分片不是包含它们键空间部分的完整数据集，而是包含它的一片缓存。这些缓存分片由数据中心内的所有未命中缓存来填充。这一切组成了一个使用分片分布的，数据中心层面的缓存系统。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Cloudflare 通过维护本地每个服务器一块缓存以及数据中心级别的缓存来解决数据本地性问题，数据中心中的所有服务器都包含它们的本地缓存，和分片缓存的一个物理缓存分片。每个请求的键首先在服务器的本地缓存中查找，然后在数据中心范围的分片缓存中查找。如果两个缓存都未命中键，则在存储节点之一上查找。作者在文章最后分享了一些有多个缓存层的测试结果：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">添加第二缓存层后，可以在数据中心内解决的键的百分比显著提高。表现最差的实例具有高于 99.99% 的缓存命中率。所有其他实例的缓存命中率高于 99.999%。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">代理和副本之间的 99.9 百分位延迟几乎没有差异，由于磁盘数据集较小，代理偶尔优于副本。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">How Cloudflare Migrated Quicksilver to Multi-Level Caching While Serving Billions of Requests(<a href=\"https://www.infoq.com/news/2025/08/cloudflare-key-value-store/)\" target=\"_blank\">https://www.infoq.com/news/2025/08/cloudflare-key-value-store/)</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Cloudflare 详细阐述了其全局键值存储 Quicksilver 如何从全量复制迁移至多级缓存架构，以应对数十亿请求并优化存储效率。",
+  "oneSentenceSummary": "Cloudflare 详细阐述了其全局键值存储 Quicksilver 如何从全量复制迁移至多级缓存架构，以应对数十亿请求并优化存储效率。",
+  "summary": "文章深入剖析了 Cloudflare 如何将其内部的全局键值存储 Quicksilver 从 V1 的“每处都存储全部内容”策略，逐步过渡到 V2 的分层缓存架构。V1 因数据量爆炸式增长导致存储空间迅速耗尽，促使 Cloudflare 寻求变革。文章详细介绍了 V1.5 作为过渡方案如何通过引入代理和复制服务器减少磁盘占用，以及 V2 如何实现本地每服务器缓存、数据中心范围分片缓存和专用存储节点副本的多级缓存策略，并选择 RocksDB 作为持久存储以解决内存使用和冷缓存问题。此外，文章强调了在迁移数百万个实时数据库、服务数十亿请求的同时，如何通过 MVCC 和滑动窗口等技术确保数据顺序一致性。最终，新架构显著提升了缓存命中率和响应性能，解决了关键瓶颈。",
+  "mainPoints": [
+    {
+      "point": "Quicksilver V1 面临存储效率瓶颈及 V1.5 的缓解。",
+      "explanation": "V1 全局全量数据复制导致存储资源快速耗尽，v1.5 通过引入代理和复制服务器角色，将磁盘占用减少了 50%，初步缓解了压力。"
+    },
+    {
+      "point": "Cloudflare Quicksilver V2 多级缓存架构的设计。",
+      "explanation": "V2 采用本地、数据中心分片和专用存储节点多级缓存，结合响应式预取，有效提升存储效率和边缘低延迟读取性能。"
+    },
+    {
+      "point": "大规模系统迁移中保持数据顺序一致性的挑战与方案。",
+      "explanation": "在处理异步复制时，通过多版本并发控制（MVCC）和滑动窗口方法，成功保持了 Quicksilver 在迁移过程和新架构下的顺序一致性。"
+    }
+  ],
+  "keyQuotes": [
+    "他们介绍了他们逐渐从\"每一处都存储全部内容\"的策略转变为采用分布式缓存系统的旅程。",
+    "Quicksilver v1 在全局每个服务器上都存储完整的数据集，结果消耗了大量磁盘空间，1.6TB 的数据集在仅仅一年内就增长了 50%，意味着 Cloudflare 网络中的可用存储即将耗尽。",
+    "最新架构的特点是本地的每服务器一份缓存、数据中心范围内的分片缓存和在专用存储节点上的完整数据集副本，以及将未命中缓存分散在服务器之间的响应式预取。",
+    "Quicksilver 从一开始就为客户提供了顺序一致性......我们亲身体会了海勒姆定律，Quicksilver 在公司内部采用得如此广泛，以至于我们在早期版本中引入的每个属性现在都依赖其他团队。这意味着更改行为将不可避免地破坏现有特性并引入错误。",
+    "添加第二缓存层后，可以在数据中心内解决的键的百分比显著提高。表现最差的实例具有高于 99.99% 的缓存命中率。所有其他实例的缓存命中率高于 99.999%。"
+  ],
+  "tags": [
+    "分布式系统",
+    "缓存架构",
+    "键值存储",
+    "数据一致性",
+    "系统迁移"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1412,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755328920000,
+  "publishDateStr": "2025-08-16",
+  "publishDateTimeStr": "2025-08-16 07:22:00"
+}

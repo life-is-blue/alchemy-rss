@@ -1,0 +1,58 @@
+{
+  "id": "RAW_3095fb",
+  "title": "类 R1 训练不再只看结果对错！港中文推出 SophiaVL-R1 模型 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-06-9",
+  "date": "2025-06-06 09:51:33",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p data-pm-slice=\"0 0 []\"><br></p>\n  <p data-pm-slice=\"0 0 []\">DeepSeek-R1 爆火后，类 R1 的结果奖励训练范式在各领域掀起了推理热潮。基于规则的结果奖励实现简单、判断严格。但是，这真的够了吗？&nbsp;</p>\n  <p data-pm-slice=\"0 0 []\">在推理任务中，如果我们只是用「结果对错」来奖励模型，那模型就很可能学会了「靠捷径答题」。&nbsp;</p>\n  <p data-pm-slice=\"0 0 []\">这种模式下，模型的「正确思考策略」没有完全建立起来，它甚至会因为一次「瞎蒙对」的奖励，而在之后反复强化错误策略，越走越偏。&nbsp;</p>\n  <p data-pm-slice=\"0 0 []\">为了解决这个问题，港中文联合上海人工智能实验室团队发布了多模态推理模型 SophiaVL-R1，它在类 R1 强化学习训练框架上做了一次关键进化：不再只奖励结果是否正确，而是将「思考过程」也纳入奖励体系。</p>\n  <section data-pm-slice=\"1 4 []\">\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32ba7cef-b79b-48a7-f950-213dbe526100/public\" data-ratio=\"0.34444444444444444\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488601\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/1645041b-96c4-494a-a283-735ab211fe84/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2505.17018</p></li>\n   <li>\n    <p>项目地址：https://github.com/kxfan2002/SophiaVL-R1</p></li>\n  </ul>\n  <p data-pm-slice=\"0 0 []\">这一套设计不仅能让模型学会更通用、更靠谱的推理策略，还显著提升了泛化能力——在多个数学和通用多模态基准测试中，SophiaVL-R1-7B 甚至击败了参数量是其 10 倍的 LLaVA-OneVision-72B 模型。 目前，研究团队已将所有模型、数据和代码开源。</p>\n  <p><strong>思考过程也要评分，才是好模型</strong></p>\n  <p>SophiaVL-R1 的关键突破点，就在于它引入了「思考奖励」机制 —— 不再只看答案对不对，而是开始评估模型整个推理过程是否合理、连贯、靠谱。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f2c5d640-1345-43b4-22ac-3d1ccf351700/public\" data-ratio=\"0.3472222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488602\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/25cbb34b-5307-4553-a335-47fc8049b129/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>研究团队精心制作了一个思考过程评分的数据集，包含多样化的思考模式和错误，并训练了一个「思考评分模型」，基于多个角度对思考过程输出一个整体的评分。</p>\n  <p>举个例子，比如一段推理过程，答案是对的，但中间逻辑跳跃明显、甚至完全胡扯，那这个过程可能只能得个 0.3 的思考分；而另一个推理过程最终也选了 B，但过程缜密、推导清晰，思考分可能达到 0.9。就像老师改卷，不只是看结果，还会给「过程分」。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e5332200-e582-443c-465f-2120b4547a00/public\" data-ratio=\"0.5388888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488603\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/717556e3-80b6-43ff-8f58-b60668d67358/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>这一招，不仅提升了模型推理质量，更重要的是 —— 它教会模型「怎么想」，而不是「怎么猜」。</p>\n  <p><strong>SophiaVL-R1 的「奖励改革」</strong></p>\n  <p>不过，把「过程」纳入奖励机制，并不意味着直接相加就能奏效。</p>\n  <p>由于模型生成的思考过程是自由文本，容易「伪装认真」——比如它可能写了一长段貌似合理的「逻辑」，但其实是在重复废话，甚至是掩盖思考漏洞。这种奖励欺骗（Reward Hacking）现象是强化学习中极常见的问题。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/63351e56-2adb-4cf9-a71c-61ab9fb0d400/public\" data-ratio=\"0.5888888888888889\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488604\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/40d9e26b-4fc0-44ba-b35b-607965d886a4/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>为了解决这个痛点，SophiaVL-R1 引入了一个名为 Trust-GRPO 的训练算法，它的核心理念是：基于 GRPO 组内信息判断思考奖励的可信程度。</p>\n  <p>该方法通过对同一问题中，正确与错误答案对应的思维奖励进行对比，如果发现错误答案获得的思维奖励异常高，就会自动降低该奖励的可信度评分，从而提升整体训练的稳定性与可信性。一个例子如下图所示。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/54cf943e-5340-48b5-a814-a5615e878700/public\" data-ratio=\"0.4222222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488605\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/7fb63404-acac-4abb-bd43-2144f7fecc25/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>实验结果</strong></p>\n  <p>在多项常用的评测基准中（MMMU、MME、MathVista 等），SophiaVL-R1-7B 展现出极为强大的推理能力和泛化能力，跟 GRPO、SFT+GRPO 和基于 PRM 的方法相比都很能打，在多个多模态数学和通用测评数据集上表现直接对标甚至超越了体量是其 10 倍的 LLaVA-OneVision-72B 模型。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d422ec92-5b6c-4228-d42a-8c52ebfe9f00/public\" data-ratio=\"0.6472222222222223\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488606\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/3ca3d4c1-5b2d-4516-92aa-c65dd843c343/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/36b99083-8e77-4d4b-c5e4-98cc4f93d900/public\" data-ratio=\"0.5796296296296296\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488607\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/bfab2b53-aab2-41c7-b7d2-bf6dfa6cc12f/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>这说明了一个非常核心的点：推理能力，是靠正确的训练范式教出来的。SophiaVL-R1 的成功，正是对这一点的最好注解。</p>\n  <p>在消融实验中，也可以发现，SophiaVL-R1 的各个部分都是有效的。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd995591-de8a-44d9-4f18-76bee1818400/public\" data-ratio=\"0.22407407407407406\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488609\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/5296b507-aa0f-4a07-9658-6296cec96c44/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>同时，从训练曲线来看，SophiaVL-R1 不仅训练得更好，而且训练得更快，说明了思考奖励信号的有效性和 Trust-GRPO 算法的重要性。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fee33b9f-a082-40ad-9dfb-33efca224800/public\" data-ratio=\"0.4074074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488610\" data-original-style=\"null\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/9688b2a4-9818-404b-97c9-41f233901414/640.png\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>一些 SophiaVL-R1 的推理例子如下所示，可以看到，模型能够输出高质量的推理过程。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b11c2a0d-400b-4d54-8898-dd198dd6cb00/public\" data-ratio=\"0.9354187689202825\" data-s=\"300,640\" data-type=\"png\" data-w=\"991\" type=\"block\" data-imgfileid=\"503488611\" data-original-style=\"null\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/d16ca42c-4a94-4a7b-8ce8-b1c78c413a1c/640.png\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f2285348-e5cc-4a73-3167-9bf854c09f00/public\" data-ratio=\"0.8333333333333334\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503488612\" data-original-style=\"null\" data-index=\"12\" src=\"https://image.jiqizhixin.com/uploads/editor/520be7c7-4851-4080-8289-6b6648fb5524/640.png\" alt=\"图片\" data-report-img-idx=\"11\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>更多细节请参考论文原文。</p>\n \n",
+  "aiSummary": "港中文与上海人工智能实验室推出 SophiaVL-R1 模型，通过引入思考过程奖励改进 AI 训练，显著提升多模态推理能力。",
+  "oneSentenceSummary": "港中文与上海人工智能实验室推出 SophiaVL-R1 模型，通过引入思考过程奖励改进 AI 训练，显著提升多模态推理能力。",
+  "summary": "本文介绍了港中文联合上海人工智能实验室团队发布的 SophiaVL-R1 多模态推理模型。文章指出，现有类 R1 训练范式仅依赖结果奖励，可能导致模型通过捷径而非正确的思考策略答题。SophiaVL-R1 对此进行了关键进化，将“思考过程”也纳入奖励体系。通过构建思考过程评分数据集和训练思考评分模型，评估推理过程的合理性。同时，引入 Trust-GRPO 训练算法解决强化学习中的奖励欺骗问题，提高训练稳定性。实验结果表明，SophiaVL-R1-7B 在多项多模态推理基准测试中表现出色，甚至超越了参数量为其 10 倍的 LLaVA-OneVision-72B 模型，验证了该训练范式的有效性。研究团队已开源模型、数据和代码。",
+  "mainPoints": [
+    {
+      "point": "现有推理模型训练依赖结果奖励，易导致模型采用捷径策略。",
+      "explanation": "单纯以结果对错评估模型推理能力，可能使模型强化错误思考路径，难以建立稳固、通用的推理策略，泛化能力受限。"
+    },
+    {
+      "point": "SophiaVL-R1 引入思考过程奖励，评估模型推理逻辑而非仅看结果。",
+      "explanation": "模型训练不仅考察最终答案，还对生成推理过程进行评分，引导模型学习更合理、连贯的思考方式，提升推理质量。"
+    },
+    {
+      "point": "Trust-GRPO 算法解决强化学习中的奖励欺骗问题。",
+      "explanation": "该算法通过对比正确与错误答案的思考奖励可信度，提高训练稳定性与可信性，防止模型生成虚假逻辑以获取高奖励。"
+    },
+    {
+      "point": "SophiaVL-R1 在多模态推理基准上表现优异，泛化能力强。",
+      "explanation": "在多个数据集上性能超越体量 10 倍的模型，证明将思考过程纳入奖励体系和 Trust-GRPO 算法能有效提升模型推理水平。"
+    }
+  ],
+  "keyQuotes": [
+    "为了解决这个问题，港中文联合上海人工智能实验室团队发布了多模态推理模型 SophiaVL-R1，它在类 R1 强化学习训练框架上做了一次关键进化：不再只奖励结果是否正确，而是将「思考过程」也纳入奖励体系。",
+    "SophiaVL-R1 的关键突破点，就在于它引入了「思考奖励」机制 ------ 不再只看答案对不对，而是开始评估模型整个推理过程是否合理、连贯、靠谱。",
+    "这说明了一个非常核心的点：推理能力，是靠正确的训练范式教出来的。",
+    "在多项常用的评测基准中（MMMU、MME、MathVista 等），SophiaVL-R1-7B 展现出极为强大的推理能力和泛化能力，跟 GRPO、SFT+GRPO 和基于 PRM 的方法相比都很能打，在多个多模态数学和通用测评数据集上表现直接对标甚至超越了体量是其 10 倍的 LLaVA-OneVision-72B 模型。"
+  ],
+  "tags": [
+    "AI模型训练",
+    "多模态AI",
+    "推理能力",
+    "强化学习",
+    "思考过程奖励"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1368,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749203493000,
+  "publishDateStr": "2025-06-06",
+  "publishDateTimeStr": "2025-06-06 09:51:33"
+}

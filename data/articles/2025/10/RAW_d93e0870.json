@@ -1,0 +1,63 @@
+{
+  "id": "RAW_d93e0870",
+  "title": "基于大语言模型的 Vibe Coding 综述",
+  "url": "https://baoyu.io/blog/a-survey-of-vibe-coding-with-llm",
+  "date": "2025-10-27 02:53:15",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"msd3e0pzts\">研究 Vibe Coding 都能写论文了，来自中科院、杜克大学等的这篇《基于大语言模型的Vibe Coding综述》，还是花了点功夫把 Vibe Coding 相关的论文、信息梳理了一遍，有一些值得看的内容。</p>\n   <p data-id=\"vq0eqp1z5g\">【一】</p>\n   <img src=\"https://baoyu.io/uploads/2025-10-27/1761533623354.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"v3omx9fqzc\">首先是对 Vibe Coding 的定义，这篇论文把 Vibe Coding 描述成一个“三方关系” ：</p>\n   <ol>\n    <li>\n     <p data-id=\"ls6eoydcx6\">人类开发者：不再是代码的直接创作者，更像是需求的提出者、方向的把控者和最终质量的仲裁者 。你的主要工作是清晰地表达意图，并判断 AI 做出来的东西“对不对”。</p>\n    </li>\n    <li>\n     <p data-id=\"ik7oun33rq\">软件项目：不再仅仅是代码库，而是一个包含代码、数据、文档、领域知识等各种信息的“上下文空间” 。AI 需要从这里获取信息来理解任务。</p>\n    </li>\n    <li>\n     <p data-id=\"mlmhsjlc4u\">编程智能体 (AI)：负责具体的编码、修改、调试工作，它听从人类的指令，并受项目上下文的约束 。</p>\n    </li>\n   </ol>\n   <p data-id=\"ixavbk1itc\">论文也提到了 Vibe Coding 带来的问题：经验丰富的开发者在使用高级AI工具时，完成任务的时间反而增加了19% ！</p>\n   <p data-id=\"ifzln7ycqb\">【二】 为什么经验丰富的开发者 Vibe Coding 时间更长？不完全是模型能力不够，还有其他原因：</p>\n   <ol>\n    <li>\n     <p data-id=\"uo7pugjwqv\">系统性的上下文工程 (Context Engineering)：你得知道怎么把项目信息（代码库、文档、规范）有效地“喂”给 AI 。AI 不是凭空写代码，它需要知道你的项目是怎么回事 。光会写漂亮的提示词 (Prompt) 是不够的，管理上下文信息才是核心技术 。</p>\n    </li>\n    <li>\n     <p data-id=\"4s8va8810r\">反馈循环 (Feedback Loops)：不能简单地把活儿全丢给 AI。怎么提要求？怎么给反馈？什么时候该介入？这些协作方式直接影响效率和质量 。</p>\n    </li>\n    <li>\n     <p data-id=\"nqyyf49iyk\">基础设施 (Infrastructure)：你需要能安全执行 AI 代码的“沙盒” ，能跟 AI 流畅对话、共享项目信息的交互界面 ，甚至需要能自动化测试、部署 AI 代码的平台 。没有这些基础设施，AI 就是“带镣铐跳舞” 。</p>\n    </li>\n   </ol>\n   <p data-id=\"f7ohc6x44x\">【三】 五种 Vibe Coding 开发模式 ：</p>\n   <ol>\n    <li>\n     <p data-id=\"20jbmjiy92\">无约束自动化 (UAM)：完全放手让 AI 干，你只看最终结果 。速度快，风险高，适合做一次性原型或小工具 。有点像软件工程里的“快速应用开发”（RAD） 。</p>\n    </li>\n    <li>\n     <p data-id=\"18qrzn96lo\">迭代式对话协作 (ICCM)：你和 AI 像结对编程一样 ，AI 写，你审，反复沟通迭代 。质量有保障，但需要你深度参与 。</p>\n    </li>\n    <li>\n     <p data-id=\"in9q46gbk4\">规划驱动 (PDM)：你先做好设计、定好规范（比如写好技术文档、规则文件、实施计划） ，然后指导 AI 按计划执行 。有点像传统的“瀑布模型” ，但 AI 的快速迭代让它更灵活 。</p>\n    </li>\n    <li>\n     <p data-id=\"3kuig6zb04\">测试驱动 (TDM)：你先写好测试用例，定义清楚“怎样算对” ，然后让 AI 去写能通过测试的代码 。用机器验证代替人眼审查 。这是传统“测试驱动开发”（TDD）的应用 。</p>\n    </li>\n    <li>\n     <p data-id=\"k8m76upkqi\">上下文增强 (CEM)：这不是一个独立流程，而是一种“增强插件” 。通过检索增强生成（RAG）、代码库索引等技术，让 AI 能更好地理解项目现有情况，生成更贴合项目风格和规范的代码 。它可以与其他四种模式结合使用 。</p>\n    </li>\n   </ol>\n   <p data-id=\"rm5y1v9nae\">【四】 Vibe Coding 的最佳实践——把 Agent 当员工而不是工具</p>\n   <p data-id=\"ds2yucfsp4\">很多一直把 AI 当成一个“超级自动补全”，一个更聪明的 Stack Overflow，我们把它当成一个“工具”，而实际上，它是一个智能体（Agent）。</p>\n   <p data-id=\"97fs6yj497\">“工具”和“Agent”的区别是什么？</p>\n   <ul>\n    <li>\n     <p data-id=\"1gecrqvdkd\">工具（比如锤子、编译器）：它帮你完成你正在做的事。你100%掌控它。</p>\n    </li>\n    <li>\n     <p data-id=\"naoeryext0\">Agent（比如一个初级程序员）：它能自主完成任务。你需要给它分配任务、给它“记忆”（上下文）、给它权限，并对它进行“管理”和“审查”。</p>\n    </li>\n   </ul>\n   <p data-id=\"8wgr91277y\">如果试图用“使用工具”的方式，去“管理一个员工”，结果就是会带来两个极端：</p>\n   <ul>\n    <li>\n     <p data-id=\"l6xspkvm3o\">一个极端是盲目接受：AI 写的代码，语法漂亮，看着很对。你“Vibe”一下，直接提交。结果生产环境崩了。你大骂“模型产生了幻觉”，而真正的问题是，你跳过了必要的检查环节： 代码审查、自动化测试。</p>\n    </li>\n    <li>\n     <p data-id=\"epuvp8fyna\">一个极端是过度怀疑：你根本不信它，它写的每一行你都要重写，这同样影响效率。</p>\n    </li>\n   </ul>\n   <p data-id=\"bcjdm0lyje\">这特别像那些管理水平不怎么样的 Engineering Manager：要么对员工（AI）完全放任不管，要么事必躬亲地为管理。</p>\n   <p data-id=\"yukyhfbawp\">最佳实践是在关键节点设置检查站，自动化验证流程，但在过程中放权。就像一个新员工入职，你不会直接让他们在生产环境上更新代码，而是会有配套的流程和环节保障。</p>\n   <p data-id=\"4hd8yoa90v\">【五】 开发者的角色正在发生根本性转变。你不再仅仅是代码的生产者，你的核心工作变成了：</p>\n   <ol>\n    <li>\n     <p data-id=\"gh6h14mcc6\">意图阐述与提示工程：把复杂需求翻译成 AI 能理解的清晰指令 。</p>\n    </li>\n    <li>\n     <p data-id=\"jz75das9o4\">上下文管理：精心挑选和组织信息（API 文档、代码片段、设计规范），喂给 AI，限制它的“自由发挥”，确保方向正确 。</p>\n    </li>\n    <li>\n     <p data-id=\"vdu2rlb53w\">系统级调试：当 AI 生成的系统出问题时，重点不再是逐行 GDB，而是从系统行为层面去推测、定位问题，然后引导 AI 去修复 。</p>\n    </li>\n    <li>\n     <p data-id=\"f03yvsyild\">架构监督：AI 负责实现细节，你得把握整体架构，确保项目的概念完整性和长远健康 。</p>\n    </li>\n    <li>\n     <p data-id=\"rf8lz1pufo\">质量验证与治理：设计测试用例，利用自动化工具验证 AI 的输出，管理 AI 的权限，追踪代码来源 。</p>\n    </li>\n   </ol>\n   <p data-id=\"wfy30xsdo6\">简单说，你的价值从“写好代码”变成了“用好 AI 来写好代码”。这不仅仅是技能的增加，更是一种思维模式的彻底转变 。</p>\n   <p data-id=\"36w9nu9sy6\">【六】 Vibe Coding 带来的挑战：安全、可靠性、监管，以及……我们自己</p>\n   <ol>\n    <li>\n     <p data-id=\"dh0xpsn89y\">代码可靠性和安全性：AI 可能从训练数据里学到并复现各种 Bug 和安全漏洞 。只看“Vibe”不看代码，无异于“盲驾” 。我们需要新的自动化工具和流程来实时监控、验证 AI 生成的代码 。手动代码审查根本跟不上 AI 的产出速度 。</p>\n    </li>\n    <li>\n     <p data-id=\"0iq9ev3jdz\">大规模监管：当 AI 智能体能自主修改、部署代码时，如何有效监督它们？如何防止一个错误像病毒一样扩散？如何追踪责任？ 。现有的管理和审计方法都过时了 。我们需要能与 AI 能力同步扩展的监管架构 。</p>\n    </li>\n    <li>\n     <p data-id=\"a7nqlt6fgg\">人的因素：开发者需要转变思维模式 ，学习新技能 。团队协作方式需要调整 。更重要的是，如何建立对 AI 恰当的信任度——既不盲从也不过度怀疑 ？</p>\n    </li>\n    <li>\n     <p data-id=\"laekmsgo33\">教育脱节：现在的计算机教育体系，有教你怎么“指挥”AI 写代码、怎么设计 AI 的工作流、怎么评估 AI 的风险吗？很少 。人才培养的速度，远远落后于技术发展的速度 。</p>\n    </li>\n   </ol>\n   <p data-id=\"kseu79s82g\">论文地址：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"http://arxiv.org/abs/2510.12399\">http://arxiv.org/abs/2510.12399</a></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章综述了基于大语言模型的 Vibe Coding 概念、开发模式、挑战与开发者角色转变，强调将 AI 视为智能体而非工具。",
+  "oneSentenceSummary": "文章综述了基于大语言模型的 Vibe Coding 概念、开发模式、挑战与开发者角色转变，强调将 AI 视为智能体而非工具。",
+  "summary": "文章深入探讨了“Vibe Coding”这一新兴编程范式，将其定义为人类开发者、软件项目和编程智能体之间的三方关系。作者指出，尽管 AI 工具先进，经验丰富的开发者在使用 Vibe Coding 时效率反而可能降低，原因在于缺乏系统性的上下文工程、有效的反馈循环和必要的基础设施。文章详细介绍了无约束自动化、迭代式对话协作、规划驱动、测试驱动和上下文增强五种 Vibe Coding 开发模式。核心观点是将 AI 视为“Agent”而非“工具”，并提出了最佳实践：在关键节点设置检查站，自动化验证流程，但在过程中放权。最后，文章分析了 Vibe Coding 在代码可靠性、大规模监管、人的因素和教育脱节方面带来的挑战，强调开发者角色正从代码生产者转向 AI 协调者和架构监督者。",
+  "mainPoints": [
+    {
+      "point": "Vibe Coding 定义为人类、项目与 AI 智能体的三方关系，重塑开发协作模式",
+      "explanation": "人类负责意图表达与质量仲裁，AI 执行编码，项目提供上下文，这重新定义了开发协作模式，要求开发者转变思维。"
+    },
+    {
+      "point": "经验开发者效率瓶颈源于上下文工程、反馈循环和基础设施不足",
+      "explanation": "效率降低并非 AI 能力问题，而是缺乏有效管理 AI 所需的系统性上下文、协作反馈机制和安全执行环境，这些是提高效率的关键。"
+    },
+    {
+      "point": "将 AI 视为“Agent”而非“工具”是 Vibe Coding 的最佳实践",
+      "explanation": "开发者应像管理员工一样对待 AI，在关键节点设置检查并自动化验证，而非盲目接受或过度怀疑，以平衡效率与质量。"
+    },
+    {
+      "point": "开发者角色从代码生产者转变为 AI 协调者和架构监督者",
+      "explanation": "核心价值在于意图阐述、上下文管理、系统级调试、架构监督和质量验证，这需要开发者思维模式的根本转变和新技能的学习。"
+    },
+    {
+      "point": "Vibe Coding 面临代码可靠性、大规模监管、开发者思维转变和教育脱节等多重挑战",
+      "explanation": "AI 可能引入漏洞，需要新的自动化监管和审计机制；开发者需适应新角色，克服信任问题；现有教育体系与技术发展脱节，人才培养滞后。"
+    }
+  ],
+  "keyQuotes": [
+    "Vibe Coding 描述成一个\"三方关系\"：人类开发者、软件项目和编程智能体 (AI)。",
+    "经验丰富的开发者在使用高级 AI 工具时，完成任务的时间反而增加了 19% ！",
+    "光会写漂亮的提示词 (Prompt) 是不够的，管理上下文信息才是核心技术。",
+    "最佳实践是在关键节点设置检查站，自动化验证流程，但在过程中放权。",
+    "你的价值从\"写好代码\"变成了\"用好 AI 来写好代码\"。这不仅仅是技能的增加，更是一种思维模式的彻底转变。"
+  ],
+  "tags": [
+    "Vibe Coding",
+    "大语言模型",
+    "编程智能体",
+    "软件工程",
+    "上下文工程"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2268,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761533595000,
+  "publishDateStr": "2025-10-27",
+  "publishDateTimeStr": "2025-10-27 02:53:15"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_a159f1cc",
+  "title": "学科架构",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkxMzc1NzM1Mw==&mid=2247484997&idx=1&sn=c952c25d403ffae97d163ab661ab9c94",
+  "date": "2026-01-12 03:24:58",
+  "author": "李继刚",
+  "siteName": "李继刚",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"background-color: inherit; font-size: 1rem;\">;; ━━━━━━━━━━━━━</span></p>\n  <p>;; 作者: 李继刚</p>\n  <p>;; 剑名: 学科架构</p>\n  <p>;; 剑意: 站在高处看「学科」领域</p>\n  <p>;; ━━━━━━━━━━━━━━━</p>\n  <p>* Role</p>\n  <p>你是一位拥有“上帝视角”的全学科元认知架构师。</p>\n  <p>你的核心能力是能够剥离任何学科、领域或复杂概念的表层“皮肉”（术语、历史、现象），精准提取其底层的“根本体系”。</p>\n  <p>* Meta-model</p>\n  <p>任何学科 $\\mathcal{D}$ 均可被形式化定义为：</p>\n  <p>$$\\mathcal{D} \\triangleq \\langle \\mathcal{O}, \\Sigma \\rangle$$</p>\n  <p>** 1. 根本问题 -&gt; 目标函数 $\\mathcal{O}$</p>\n  <p>这是该学科存在的唯一理由。它本质上是一个优化问题。</p>\n  <p>形式化：$\\text{Optimize } \\mathcal{J}(\\mathbf{S})$</p>\n  <p>定义：该学科试图解决的核心矛盾是什么？它试图最大化（Max）、最小化（Min）或平衡（Equilibrium）哪个终极变量？</p>\n  <p>*Key*：寻找那个“若不解决，该学科就无意义”的问题。</p>\n  <p>** 2. 根本骨架 -&gt; 系统架构</p>\n  <p>这是支撑上述目标得以实现的最小逻辑结构。它由变量和算子构成。</p>\n  <p>形式化：$\\mathbf{S} = \\Phi(\\mathbf{V}, \\mathcal{R})$</p>\n  <p>静态基石：该学科中不可再分的原子概念。</p>\n  <p>动态定律：原子概念之间永恒不变的互动规则或转化公理。</p>\n  <p>* Workfow</p>\n  <p>当用户输入一个学科或领域时，请按以下步骤进行“降维解剖”：</p>\n  <p>1. 第一性原理扫描：剔除所有类比、修辞和次级知识，只保留物理层或逻辑层的真理。</p>\n  <p>2. 提取根本问题 ($\\mathcal{O}$)：识别核心矛盾，定义目标函数。</p>\n  <p>3. 构建根本骨架：</p>\n  <p>- 提取核心变量</p>\n  <p>- 提取核心定律</p>\n  <p>4. 形式化映射：将上述内容转化为数学或逻辑伪代码。</p>\n  <p>5. 上帝视角洞察</p>\n  <p>- 盲点揭示：指出大多数学习者容易陷入的“皮肉”（误区）是什么。</p>\n  <p>- 通关秘籍：基于骨架，给出掌握该学科的最高效路径。</p>\n  <p>- 精炼总结：该学科本质上就是用 [核心骨架] 去求解 [根本问题]。</p>\n  <p>6. 生成全息图谱</p>\n  <p>- 输出该学科领域的「大哉问」和「根本体系」</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=2919d30f&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Ftc9Zic7wWc9B898ghmvpuhTdoQOdibOAnxCXlXHgbUwaZ3hJgksLk7V3msefMZXGF9chLGia9ZRCFTO6EdWDiaFO1g%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=e177ecdb&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Ftc9Zic7wWc9B898ghmvpuhTdoQOdibOAnxZICIftGBfFgaDpfibquibqkn3EicjANgxsalDrRwnUjLtAMhhWnBvib6Rg%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "本文提出一套“学科架构”方法论，通过识别任何学科的“根本问题”和“根本骨架”，实现对复杂概念的深度抽象与高效学习。",
+  "oneSentenceSummary": "本文提出一套“学科架构”方法论，通过识别任何学科的“根本问题”和“根本骨架”，实现对复杂概念的深度抽象与高效学习。",
+  "summary": "李继刚的这篇文章提出了一种独特的“学科架构”方法论，旨在从“上帝视角”深度剖析任何学科或复杂概念。作者定义学科为解决“根本问题”$\\mathcal{O}$的系统$\\mathcal{D}$，该问题本质上是一个优化函数。为了解决这个根本问题，学科需要一个“根本骨架”—由核心变量$\\mathbf{V}$和核心定律$\\mathcal{R}$构成的最小逻辑结构$\\mathbf{S} = \\Phi(\\mathbf{V}， \\mathcal{R})$。文章详细阐述了“降维解剖”学科的工作流程，包括第一性原理扫描、提取根本问题、构建根本骨架（核心变量与定律）、形式化映射，并通过“上帝视角洞察”揭示学习盲点、提炼高效学习路径。最终目标是生成学科领域“大哉问”和“根本体系”的全息图谱，帮助读者掌握学科的本质，避免陷入表层知识。",
+  "mainPoints": [
+    {
+      "point": "学科的本质在于解决一个“根本问题”，其表现为一个优化目标函数。",
+      "explanation": "任何学科的存在都基于一个核心矛盾或需要最大化、最小化或平衡的终极变量。识别这个根本问题是理解学科的起点。"
+    },
+    {
+      "point": "学科的最小逻辑结构，即“根本骨架”，由核心变量和作用于变量的定律构成。",
+      "explanation": "这是支撑解决根本问题的核心机制，由不可再分的原子概念（变量）和概念间不变的互动规则（定律）组成，是学科的底层逻辑支撑。"
+    },
+    {
+      "point": "理解学科需采用“降维解剖”方法，剔除表层现象，直达第一性原理。",
+      "explanation": "通过第一性原理扫描，去除类比和修辞，专注于物理层或逻辑层的真理，才能准确提取根本问题和根本骨架。"
+    },
+    {
+      "point": "掌握学科的高效路径在于洞察其核心骨架，并用于求解根本问题。",
+      "explanation": "文章将学科学习比作“通关”，强调理解学科的本质就是理解其核心机制如何作用于其核心目标，从而避免在细枝末节中迷失。"
+    }
+  ],
+  "keyQuotes": [
+    "任何学科 $\\mathcal{D}$ 均可被形式化定义为：$\\mathcal{D} \\triangleq \\langle \\mathcal{O}， \\Sigma \\rangle$",
+    "根本问题 $\\to$ 目标函数 $\\mathcal{O}$：这是该学科存在的唯一理由。它本质上是一个优化问题。",
+    "根本骨架 $\\to$ 系统架构：这是支撑上述目标得以实现的最小逻辑结构。它由变量和算子构成。",
+    "盲点揭示：指出大多数学习者容易陷入的\"皮肉\"（误区）是什么。",
+    "精炼总结：该学科本质上就是用 [核心骨架] 去求解 [根本问题]。"
+  ],
+  "tags": [
+    "方法论",
+    "元认知",
+    "知识架构",
+    "抽象思维",
+    "学习方法"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 664,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_8ebfe0",
+  "sourceName": "李继刚",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768188298000,
+  "publishDateStr": "01-12",
+  "publishDateTimeStr": "2026-01-12 03:24:58"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3c338c",
+  "title": "Vercel 推出用于多模型整合的 AI 网关",
+  "url": "https://www.infoq.com/news/2025/09/vercel-ai-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-12 12:31:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Vercel has rolled out the <a href=\"https://vercel.com/blog/ai-gateway-is-now-generally-available\">AI Gateway</a> for production workloads. The service provides a single API endpoint for accessing a wide range of large language and generative models, aiming to simplify integration and management for developers.</p>\n   <p>The <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> allows applications to send inference requests to multiple model providers through one endpoint. It supports bring-your-own-key authentication, which means developers can use their own API keys from providers such as <a href=\"https://platform.openai.com/api-keys\">OpenAI</a>, <a href=\"https://docs.anthropic.com/en/api/admin-api/apikeys/get-api-key\">Anthropic</a>, or <a href=\"https://ai.google.dev/gemini-api/docs/api-key\">Google</a> without paying an additional token markup. The gateway also provides consistent request routing with latency under 20 milliseconds, designed to keep inference times stable regardless of the underlying provider.</p>\n   <p>One of the core features of the system is its failover mechanism. If a model provider experiences downtime, the gateway automatically redirects requests to an available alternative, reducing service interruptions. It also supports high request throughput, with rate limits intended to meet production-level traffic.</p>\n   <p>Observability is built into the platform. Developers have access to detailed logs, performance metrics, and cost tracking for each request. This data can be used to analyze usage patterns, monitor response times, and understand the distribution of costs across different model providers. Integration can be done using the <a href=\"https://ai-sdk.dev/\">AI SDK</a>, where a request can be made by specifying a model identifier in the configuration.</p>\n   <p><a href=\"https://vercel.com/\">Vercle</a> highlighted that the <a href=\"https://vercel.com/ai-gateway\">AI Gateway</a> has been in use internally to run <a href=\"https://v0.app/\">v0.app</a>, a service that has served millions of users. With this release, the infrastructure is available to external developers with optimizations for production workloads.</p>\n   <p>A comparable service is <a href=\"https://openrouter.ai/\">OpenRouter</a>, which also provides a unified interface to different AI model providers. While OpenRouter emphasizes model discovery and pricing transparency across vendors, Vercel’s AI Gateway focuses on low-latency routing, built-in failover, and integration with the company’s existing developer tools and hosting environment. Both services share the goal of simplifying access to multiple models, but they approach developer experience and infrastructure reliability from different angles.</p>\n   <p>Comments from developers on <a href=\"https://x.com/vercel/status/1958657559663190506\">X</a> and <a href=\"https://www.reddit.com/r/vercel/comments/1luqekt/ai_gateway_service/\">Reddit</a> highlight a mix of praise for its simplicity and flexibility, alongside some frustrations with free-tier limitations and specific model integrations.\n    <br>\n    <br>\n    <a href=\"https://x.com/FilipeSommer/status/1959208508726927719\">Filipe Sommer</a>, Tech Lead at eToro posted:</p>\n   <blockquote>\n    <p>Awesome! Could you please elaborate on the failover? Cannot find much about it in this blogpost nor in the docs. Does that mean that when, say, a Gemini model is unavailable, it can retry automatically with another model?</p>\n   </blockquote>\n   <p>Meanwhile AI Specialist <a href=\"https://x.com/codewithimanshu/status/1958772230059696227\">Himanshu Kumar</a> commented:</p>\n   <blockquote>\n    <p>Democratizing AI access while prioritizing speed and reliability — a significant leap forward. This could empower a new wave of AI-driven applications.</p>\n   </blockquote>\n   <p>Developer <a href=\"https://x.com/donvito/status/1958742640167436524\">Melvin Arias</a> raised a practical concern, asking:</p>\n   <blockquote>\n    <p>How does the pricing compare to openrouter?</p>\n   </blockquote>\n   <p>Vercel’s general availability release of AI Gateway positions it as part of the broader ecosystem of tools for building AI-powered applications, with the focus on routing, reliability, and monitoring rather than providing its own proprietary models.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vercel Introduces AI Gateway for Multi-Model Integration\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/vercel-ai-gateway/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1757680260000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vercel 的 AI 网关简化了开发者的多模型 AI 整合，为生产工作负载提供单一 API、故障转移和可观测性。",
+  "oneSentenceSummary": "Vercel 的 AI 网关简化了开发者的多模型 AI 整合，为生产工作负载提供单一 API、故障转移和可观测性。",
+  "summary": "Vercel 推出了其 AI 网关，旨在简化开发者对各种大型语言模型和生成式模型的整合与管理。它为向 OpenAI、Anthropic 和 Google 等多个提供商发送推理请求提供了一个单一 API 端点，支持自带密钥认证（BYOK）。主要功能包括一致的低延迟路由（低于 20 毫秒）、用于提供商停机的自动故障转移机制以及具有速率限制的高请求吞吐量。该平台还通过详细的日志、性能指标和成本跟踪提供内置的可观测性。Vercel 强调了其在 v0.app 中的内部使用，证明了其已为生产环境做好准备。文章将其与 OpenRouter 进行了对比，指出 Vercel 专注于可靠性和生态系统整合。开发者的反馈表明，他们对其简单性表示赞赏，同时也对故障转移的具体细节和定价提出了疑问。",
+  "mainPoints": [
+    {
+      "point": "Vercel 的 AI 网关为不同的 AI 模型提供了一个统一的 API，从而简化了整合。",
+      "explanation": "开发者可以通过单一端点访问多个大型语言模型和生成式模型，从而降低复杂性并标准化各种提供商的模型交互。"
+    },
+    {
+      "point": "该网关通过自动故障转移和低延迟路由确保了高可靠性。",
+      "explanation": "在停机期间，请求会自动重定向到备用提供商。低于 20 毫秒的稳定延迟对生产应用至关重要。"
+    },
+    {
+      "point": "内置的可观测性功能提供了对 AI 应用程序性能和成本的深入洞察。",
+      "explanation": "访问详细的日志、性能指标和成本跟踪使开发者能够监控使用情况、优化响应时间并有效地管理不同模型的费用。"
+    }
+  ],
+  "keyQuotes": [
+    "该服务提供了一个单一 API 端点，用于访问各种大型语言模型和生成式模型，旨在简化开发者的整合与管理。",
+    "如果模型提供商遇到停机，网关会自动将请求重定向到可用的替代方案，从而减少服务中断。",
+    "在优先考虑速度和可靠性的同时，普及 AI 应用——向前迈出了重要一步。这可能会催生新一波 AI 驱动的应用程序。"
+  ],
+  "tags": [
+    "AI 网关",
+    "Vercel",
+    "多模型 AI 整合",
+    "API 集成",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 466,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1757680260000,
+  "publishDateStr": "2025-09-12",
+  "publishDateTimeStr": "2025-09-12 12:31:00"
+}

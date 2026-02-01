@@ -1,0 +1,63 @@
+{
+  "id": "RAW_8c4597",
+  "title": "智源新出 OmniGen2 开源神器，一键解锁 AI 绘图「哆啦 A 梦」任意门 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-03-10",
+  "date": "2025-07-03 05:22:18",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>2024 年 9 月，智源研究院发布了<strong>统一图像生成模型 OmniGen</strong>。该模型在单一架构内即可支持多种图像生成任务，包括文本生成图像（Text-to-Image Generation）、图像编辑（Image Editing）和主题驱动图像生成（Subject-driven Image Generation）。用户仅需使用多模态的自然语言指令，便可灵活实现上述功能，无需依赖额外的上下文提示、插件或预处理模块。凭借其功能的高度通用性与架构的高度简洁性，OmniGen 一经发布便获得社区的广泛好评。随后，随着 Gemini 2.0 Flash 和 GPT-4o 等闭源多模态模型的相继发布，构建统一图像生成模型成为当前最受关注的研究与应用方向之一。&nbsp;</p>\n  <p>在这一背景下，OmniGen 迎来重大技术升级，正式发布 <strong>OmniGen2</strong>。新一代模型在保持简洁架构的基础上，<strong>显著增强了上下文理解能力、指令遵循能力和图像生成质量。</strong>同时，OmniGen2 全面继承了其基座多模态大模型在上下文理解与生成方面的能力，<strong>同时支持图像和文字生成，进一步打通了多模态技术生态。</strong>同时，<strong>模型权重、训练代码及训练数据将全面开源</strong>，为社区开发者提供优化与扩展的基础。这些特性都将推动统一图像生成模型从构想向现实的转变。</p>\n  <p><strong>1. 分离式架构 + 双编码器策略</strong></p>\n  <p>OmniGen2 采取了分离式架构解耦文本和图像，同时采用了 ViT 和 VAE 的双编码器策略。不同于其他工作，ViT 和 VAE 独立作用于 MLLM 和 Diffusion Transformer 中，提高图像一致性的同时保证原有的文字生成能力。&nbsp;</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bd424ed1-fb6a-4358-cb53-021b1de0c400/public\" data-ratio=\"0.34444444444444444\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493615\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/a4adac1e-bc91-4bf2-b836-260e7705f3cf/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>2. 数据生成流程重构</strong></p>\n  <p>OmniGen2 也在探索解决阻碍领域发展的基础数据和评估方面的难题。相关的开源数据集大多存在固有的质量缺陷，尤其是在图像编辑任务中，图像质量和质量准确度都不高。而对于图片上下文参考生成任务，社区中缺乏相应的大规模多样化的训练数据。这些缺陷极大地导致了开源模型和商业模型之间显著的性能差距。为了解决这个问题，OmniGen2 开发了一个从视频数据和图像数据中生成图像编辑和上下文参考数据的构造流程。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bbddced2-4cbf-4a0a-cc3d-88a63c647b00/public\" data-ratio=\"0.4074074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493620\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/3e0ab5b7-251a-4cec-967c-2fbf6d73ddbb/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>3. 图像生成反思机制</strong></p>\n  <p>受到大型语言模型自我反思能力的启发，OmniGen2 还探索了将反思能力整合到多模态生成模型中的策略。基于 OmniGen2 的基础模型构建了<strong>面对图像生成的反思数据</strong>。反思数据由文本和图像的交错序列组成，首先是一个用户指令，接着是多模态模型生成的图像，然后是针对之前生成输出的逐步反思。</p>\n  <p>每条反思都涉及两个关键方面：</p>\n  <p>1）对与原始指令相关的缺陷或未满足要求的分析，</p>\n  <p>2）为解决前一幅图像的局限性而提出的解决方案。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/32d64fee-7e89-454a-1120-c02275e8e100/public\" data-ratio=\"0.42407407407407405\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493621\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/757c6c48-23ba-4189-a82a-c1885b52a9eb/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>经过训练的模型具备初步的反思能力，未来目标是进一步使用<strong>强化学习</strong>进行训练。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25a8d112-abbf-42ee-1cd6-6286db962200/public\" data-ratio=\"0.5851851851851851\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493622\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/d44be711-e039-43fb-b0cf-ccab0918cfe7/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>OmniGen2 发布一周 GitHub 星标突破&nbsp;<strong>2000</strong>，X 上相关话题浏览量<strong>数十万</strong>。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f13698a8-10b2-4793-5095-9d6efbcbd800/public\" data-ratio=\"1.3324074074074075\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493657\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/cc9d7c45-140b-42eb-9de1-98965f0284ff/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>现在<strong>科研体验版</strong>已开放，可抢先尝试图像编辑、上下文参照的图像生成等特色能力。</p>\n  <p>科研体验版链接：https://genai.baai.ac.cn</p>\n  <p>OmniGen2 的玩法简单，只需要输入提示词，就能解锁丰富的图像编辑与生成能力。</p>\n  <p><strong>1. 基于自然语言指令的图像编辑</strong></p>\n  <p>OmniGen2 支持基于自然语言指令的图片编辑功能，可实现局部修改操作，包括物体增删、颜色调整、人物表情修改、背景替换等。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f5b7e123-394d-4a1a-8a34-dcab5669e200/public\" data-ratio=\"0.7305555555555555\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493628\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/a9e8ac01-74ac-47dc-9d66-504bd4700564/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>2. 多模态上下文参考的图像生成</strong></p>\n  <p>OmniGen2 可从输入图像中提取指定元素，并基于这些元素生成新图像。例如，将物品 / 人物置于新的场景中。当前 OmniGen2 更擅长保持物体相似度而不是人脸相似度。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/804aa515-c713-4eca-9ddf-443f9366df00/public\" data-ratio=\"0.6083333333333333\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493629\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/ab6f7630-3e67-4a22-bc54-2e245f2d768d/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><strong>3. 文生图</strong></p>\n  <p>OmniGen2 能够生成任意比例的图片。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b1bb0408-48a3-4c7e-a9b1-d5f50135a700/public\" data-ratio=\"1.1851851851851851\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493630\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/f6058dcd-ba2f-4c89-9af1-ea3de7053480/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>OmniGen2 在已有基准上取得了颇具竞争力的结果，包括文生图，图像编辑。然而，对于图片上下文参考生成（in-context generation) 任务，目前还缺乏完善的公共基准来系统地评估和比较不同模型的关键能力。</p>\n  <p>现有的上下文图像生成基准在捕获实际应用场景方面存在不足。它们不考虑具有多个输入图像的场景，并且受到上下文类型和任务类型的限制。同时，先前的基准使用 CLIP-I 和 DINO 指标来评估上下文生成的图像的质量。这些指标依赖于输入和输出之间的图像级相似性，这使得它们不适用于涉及多个主题的场景，并且缺乏可解释性。</p>\n  <p>为了解决这一限制，团队引入了 <strong>OmniContext 基准</strong>，其中包括 <strong>8 个任务类别</strong>，专门用于评估<strong>个人、物体和场景的一致性</strong>。数据的构建采用多模态大语言模型初筛和人类专家手工标注相结合的混合方法。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/91c95570-d1a9-4e21-bd8c-cec0e2108200/public\" data-ratio=\"0.4685185185185185\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503493631\" data-original-style=\"null\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/e1bf75c2-9850-4fd5-871f-a5fc1795a185/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>OmniGen2 依托智源研究院自研的大模型训练推理并行框架 FlagScale，开展推理部署优化工作。通过深度重构模型推理链路，并融合 TeaCache 缓存加速策略，实现 32% 的推理效率提升，大幅缩短响应时间并强化服务效能。同时，框架支持一键式跨机多实例弹性部署，有效提升集群资源整体利用率。团队将持续推进软硬协同优化，构建高效推理部署能力体系。</p>\n  <p>OmniGen2 的<strong>模型权重、训练代码及训练数据将全面开源</strong>，为开发者提供优化与扩展的新基础，推动统一图像生成模型从构想加速迈向现实。</p>\n  <p><strong>OmniGen2 相关链接：</strong></p>\n  <ul>\n   <li>\n    <p>Github: https://github.com/VectorSpaceLab/OmniGen2/</p></li>\n   <li>\n    <p>论文：https://arxiv.org/abs/2506.18871</p></li>\n   <li>\n    <p>模型：https://huggingface.co/BAAI/OmniGen2</p></li>\n   <li>\n    <p>科研体验版链接：https://genai.baai.ac.cn</p></li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "智源研究院发布开源统一图像生成模型 OmniGen2，支持多任务图像生成与编辑，引入创新反思机制，并全面开源模型权重和训练数据。",
+  "oneSentenceSummary": "智源研究院发布开源统一图像生成模型 OmniGen2，支持多任务图像生成与编辑，引入创新反思机制，并全面开源模型权重和训练数据。",
+  "summary": "文章介绍了智源研究院发布的 OmniGen2，这是一个开源统一图像生成模型，支持文本生成图像、图像编辑和主题驱动图像生成等多种任务。模型采用分离式架构和双编码器策略，增强了上下文理解和指令遵循能力，并通过深度优化实现了 32%的推理效率提升。特别值得注意的是，OmniGen2 引入了图像生成反思机制，能够分析生成图像的缺陷并提出改进方案。此外，文章还提到模型开发了新的数据生成流程和评估基准 OmniContext，以解决领域内数据质量和评估标准的问题。OmniGen2 发布一周内 GitHub 星标突破 2000，X 上相关话题浏览量达数十万。模型权重、训练代码及数据已全面开源，为开发者提供了优化与扩展的基础。",
+  "mainPoints": [
+    {
+      "point": "全面开源模型及相关资源",
+      "explanation": "开源模型权重、训练代码及数据，为开发者社区提供了宝贵的资源，促进了技术的共享与进步，发布一周内 GitHub 星标突破 2000。"
+    },
+    {
+      "point": "OmniGen2 采用分离式架构和双编码器策略",
+      "explanation": "通过 ViT 和 VAE 独立作用于不同模块，既提高了图像一致性，又保持了文字生成能力，实现了架构的简洁与高效。"
+    },
+    {
+      "point": "引入图像生成反思机制",
+      "explanation": "受大型语言模型启发，OmniGen2 能够分析生成图像的缺陷并提出改进方案，这是图像生成领域的重要创新。"
+    },
+    {
+      "point": "开发新的数据生成流程和 OmniContext 评估基准",
+      "explanation": "解决了开源数据集质量缺陷问题，并建立了包含 8 个任务类别的评估标准，专门评估个人、物体和场景的一致性。"
+    },
+    {
+      "point": "显著提升推理效率",
+      "explanation": "通过深度重构模型推理链路并融合 TeaCache 缓存加速策略，实现 32%的推理效率提升，大幅缩短响应时间。"
+    }
+  ],
+  "keyQuotes": [
+    "OmniGen2 采取了分离式架构解耦文本和图像，同时采用了 ViT 和 VAE 的双编码器策略",
+    "受到大型语言模型自我反思能力的启发，OmniGen2 还探索了将反思能力整合到多模态生成模型中的策略",
+    "OmniGen2 发布一周 GitHub 星标突破 2000，X 上相关话题浏览量数十万",
+    "团队引入了 OmniContext 基准，其中包括 8 个任务类别，专门用于评估个人、物体和场景的一致性",
+    "通过深度重构模型推理链路，并融合 TeaCache 缓存加速策略，实现 32%的推理效率提升"
+  ],
+  "tags": [
+    "图像生成",
+    "多模态模型",
+    "开源模型",
+    "智源研究院",
+    "OmniGen2"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 91,
+  "wordCount": 1960,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751520138000,
+  "publishDateStr": "2025-07-03",
+  "publishDateTimeStr": "2025-07-03 05:22:18"
+}

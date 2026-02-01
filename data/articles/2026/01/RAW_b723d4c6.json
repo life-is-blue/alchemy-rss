@@ -1,0 +1,58 @@
+{
+  "id": "RAW_b723d4c6",
+  "title": "Oracle 专利到期，开源数据库迎来快速排序算法",
+  "url": "https://www.infoq.com/news/2026/01/oracle-patent-sorting-databases/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-24 07:00:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A recent article reports that <a href=\"https://smalldatum.blogspot.com/2026/01/common-prefix-skipping-adaptive-sort.html\">an Oracle patent on a fast sorting method has expired</a>, allowing open source databases to use it freely. <a href=\"https://www.linkedin.com/in/mdcallag\">Mark Callaghan</a>, the inventor behind the sorting algorithm, shows how this 20-year-old approach can speed up sorting similar data and could make database systems faster and more efficient.</p>\n   <p>Granted in 2010 to Oracle Corporation, <a href=\"https://patents.google.com/patent/US7680791B2\">patent US7680791B2</a> covers a method for sorting data using common prefix bytes and a sort algorithm, which the inventor suggests calling \"Orasort\", that addresses the inefficiency caused by repeatedly comparing the same leading parts of similar keys during sorting.</p>\n   <p>The algorithm combines several techniques: skipping common prefixes when comparing keys, adaptively switching between quicksort and radix sort, caching key substrings to reduce cache misses, and producing results before the sort completes.</p>\n   <p>Because the data is split into smaller groups during sorting, the keys often share longer prefixes. The algorithm remembers these shared parts, skips them during comparisons, switches to a faster method when helpful, and preloads the next needed bytes to reduce wasted work and speed things up. Callaghan, a database expert formerly at Oracle, Google, and Facebook, explains how his patent came to life and why it matters now:</p>\n   <blockquote>\n    <p>I invented this while at Oracle and it landed in 10gR2 with claims of ~5X better performance vs the previous sort algorithm used by Oracle. I hope for an open-source implementation one day. The patent has a good description of the algorithm, it is much easier to read than your typical patent. Thankfully the IP lawyer made good use of the functional and design docs that I wrote.</p>\n   </blockquote>\n   <p>The <a href=\"https://www.linkedin.com/posts/peterzaitsev_common-prefix-skipping-adaptive-sort-activity-7412950044246683648-MA7e\">community has shown immediate interest</a> in implementing it and in improving databases such as MySQL and PostgreSQL. <a href=\"https://www.linkedin.com/in/varunsinghs\">Varun Singh</a>, CTO at Flooid.in and formerly founder at ScaleArc, suggests:</p>\n   <blockquote>\n    <p>That is so detailed, you could drop it into an AI agent, along with the patent document, and start implementing. Mark is epic.</p>\n   </blockquote>\n   <p>In a separate thread, Hannu Krosing, database engineer at Google, tried to <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7412940869009600512?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7412940869009600512%2C7413559879644164096%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287413559879644164096%2Curn%3Ali%3Aactivity%3A7412940869009600512%29\">implement it in Python, C, and C++ using Gemini</a>. According to the article, the in-memory sort algorithm at Oracle delivered about 5x the performance of the previous approach and earned a thank-you email from Larry Ellison. Callaghan remembers:</p>\n   <blockquote>\n    <p>Once I had this implemented within the Oracle DBMS I was able to compare it with the old sort. The new sort was often about 5 times faster than the old sort. I then compared it with SyncSort. I don't remember whether they had a DeWitt Clause so I won't share the results but I will say that the new sort in Oracle looked great in comparison.</p>\n   </blockquote>\n   <p>Charles Thayer <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7412940869009600512?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7412940869009600512%2C7414064530131128321%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287414064530131128321%2Curn%3Ali%3Aactivity%3A7412940869009600512%29\">comments</a>:</p>\n   <blockquote>\n    <p>I've never considered the complexity of when a sort algorithm can ship the first result item, to start the response stream and minimize latency. (Quicksort should be relatively good at this). Interesting work.</p>\n   </blockquote>\n   <p>With over <a href=\"https://www.upcounsel.com/oracle-patents\">52000 patents overall</a>, Oracle still holds numerous patents related to database technology, including self-managing database architectures and methods for optimizing database performance, covering various aspects of database management such as automatic tuning and efficient data storage techniques.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Expired Oracle Patent Opens Fast Sorting Algorithm to Open Source Databases\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/oracle-patent-sorting-databases/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1769238000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Oracle 关于 “Orasort” 的专利到期，使得开源数据库能够采用这种可提供高达 5 倍性能提升的高性能排序算法。",
+  "oneSentenceSummary": "Oracle 关于 “Orasort” 的专利到期，使得开源数据库能够采用这种可提供高达 5 倍性能提升的高性能排序算法。",
+  "summary": "本文讨论了 Oracle 专利 US7680791B2 的近期到期情况，该专利涵盖了由 Mark Callaghan 开发的高效排序算法。该方法在非正式场合被称为 “Orasort”，通过在键比较期间跳过公共前缀字节，并根据数据特征在快速排序和基数排序之间进行自适应切换，从而优化数据库性能。该算法最初在 Oracle 10gR2 中实现，据报道其性能比前代算法提高了 5 倍。随着该专利现已进入公共领域，包括 MySQL 和 PostgreSQL 贡献者在内的开源社区对实施该技术表现出了浓厚兴趣，旨在降低现代数据库系统的延迟并提高缓存效率。",
+  "mainPoints": [
+    {
+      "point": "专利 US7680791B2 的到期消除了开源数据库优化的法律障碍。",
+      "explanation": "一项拥有 20 年历史的专有排序方法现已免费供公众使用，允许 PostgreSQL 和 MySQL 等项目集成此前由 Oracle 独占的企业级排序逻辑。"
+    },
+    {
+      "point": "“Orasort” 算法通过公共前缀跳过和自适应排序实现高效性。",
+      "explanation": "通过避免对相同前缀键部分的冗余比较，并根据数据特征在快速排序和基数排序之间切换，该算法显著减少了 CPU 周期和缓存未命中。"
+    },
+    {
+      "point": "Oracle 10gR2 的早期实现展示了 5 倍的性能提升。",
+      "explanation": "来自发明者的历史数据显示，这种内存排序算法的性能优于之前的方法 5 倍，凸显了其对现代数据处理的潜在影响。"
+    },
+    {
+      "point": "该算法通过支持早期结果流式传输来最小化延迟。",
+      "explanation": "与某些传统排序方法不同，这种方法旨在整个排序操作完成之前生成第一批结果项，这对于响应式数据库查询流至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "我在 Oracle 工作期间发明了它，并将其应用在 10gR2 中，据称其性能比 Oracle 之前使用的排序算法提高了约 5 倍。",
+    "该算法结合了多种技术：在比较键时跳过公共前缀，在快速排序和基数排序之间自适应切换，缓存键子串以减少缓存未命中。",
+    "该专利对算法有很好的描述，它比典型的专利更容易阅读。",
+    "我从未考虑过排序算法何时可以交付第一个结果项，以启动响应流并最小化延迟的复杂性。"
+  ],
+  "tags": [
+    "数据库内核",
+    "排序算法",
+    "开源",
+    "Oracle",
+    "性能优化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 509,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1769238000000,
+  "publishDateStr": "01-24",
+  "publishDateTimeStr": "2026-01-24 07:00:00"
+}

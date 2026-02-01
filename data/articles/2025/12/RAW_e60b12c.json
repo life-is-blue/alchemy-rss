@@ -1,0 +1,66 @@
+{
+  "id": "RAW_e60b12c",
+  "title": "年终总结 2: 与真格基金戴雨森聊模型发展、AI 商业化与美股 M7 展望 ｜硅谷徐老师 S9E43",
+  "url": "https://www.xiaoyuzhoufm.com/episode/695511013460961d32c065d2",
+  "date": "2025-12-31 12:00:00",
+  "author": "What's Next｜科技早知道",
+  "siteName": "What's Next｜科技早知道",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>回望 2025，人工智能的引擎依然高速运转，但关于 AI 泡沫的质疑也从未停止。</span>\n   <br>\n   <span>今天的节目是硅谷徐老师 Howie 与真格基金的管理合伙人戴雨森站在2025年年末的对谈，Howie 与雨森聊了聊中美大模型这一年的追赶趋势，AI 公司的商业化路径，还有美股七巨头的长期发展，也聊了聊对 AI 泡沫的质疑、资本投入与回报的巨大鸿沟，以及2026年 AI 企业面临最大的考验是什么。</span></p>\n  <span></span>\n  <p><strong><span>本期人物</span></strong><span> </span>\n   <br>\n   <span>硅谷徐老师 Howie，硅谷高管、投资人、安全AI浏览器Norton Neo创始人。小红书：硅谷徐老师</span>\n   <br>\n   <span>戴雨森，真格基金的管理合伙人</span></p>\n  <span></span>\n  <p><strong><span>主要话题</span></strong>\n   <br>\n   <span><a class=\"timestamp\" data-timestamp=\"14\">00:14</a> 2025 年，AI 行业有哪些出乎意料的变化？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>中国模型公司的追赶速度明显超出年初预期</span></li>\n   <span></span>\n   <li><span>开源模型的主导权正在向中国转移</span></li>\n   <span></span>\n   <li><span>市场对 AI 的信心与对泡沫的担忧同时上升</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"182\">03:02</a> 中国模型为什么能在一年内追得这么快？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>头部 SOTA 的进展从「阶跃式」变成更 incremental 的提升</span></li>\n   <span></span>\n   <li><span>训练成本与推理 API 价格都在显著下探</span></li>\n   <span></span>\n   <li><span>开源生态从年初的 LLAMA 叙事转向「中国开源模型的天下」</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"479\">07:59</a> 为什么硅谷又冒出一批「以研究为主」的新 AI Lab？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>现有范式还能榨取空间，但不再是指数级/阶跃式增长</span></li>\n   <span></span>\n   <li><span>新范式需要更宽松、更 bottom-up 的研究环境，而不是 KPI 赛马</span></li>\n   <span></span>\n   <li><span>做范式创新不一定需要百亿千亿，但需要长期探索自由</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"537\">08:57</a> 为什么说「过去是 scaling 的日子，现在要回到 research 的日子」？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>Pretraining + Posttraining/RL 仍有效，但边际收益在放缓</span></li>\n   <span></span>\n   <li><span>真正想逼近更强的自我学习能力，需要研究突破来解锁</span></li>\n   <span></span>\n   <li><span>中美顶尖研究员开始聚焦相似的「下一步问题」（如 continuous learning、世界模型等）</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1348\">22:28</a> Agent 为什么是「十年的开始」，而不是一年结束战斗？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>真正的 Agent 更接近 L3：给目标与资源，能规划、执行、反思、调整</span></li>\n   <span></span>\n   <li><span>难点不在演示，而在完成度、可靠性与「谁来背锅」</span></li>\n   <span></span>\n   <li><span>corner case 与错误后的 self-recovery 才是长期瓶颈</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2286\">38:06</a> AI 创业为什么不像移动互联网那样靠分发赢？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>移动互联网更像分发渠道创新，AI 更像 RD 驱动的代际迭代</span></li>\n   <span></span>\n   <li><span>现在用户时间已被占满，新应用获客是一场「Uphill battle」</span></li>\n   <span></span>\n   <li><span>最有效的路径是把模型能力做成「魔法时刻」的产品体验，靠口碑扩散</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2625\">43:45</a> AI 到底怎么赚钱：订阅、广告还是用量计费？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>先有好产品，再慢慢长出原生商业模式是常态（类比 Google/Facebook）</span></li>\n   <span></span>\n   <li><span>Chatbot 对搜索广告有冲击，但广告更像存量博弈（从 Google/Meta/TikTok 抢）</span></li>\n   <span></span>\n   <li><span>Token 只有 SOTA/near-SOTA 能长期收费，随后会商品化走向 flat rate/开源/端侧</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3162\">52:42</a> 为什么 2026 年是 AI 的第一次「交作业之年」？</span></p>\n  <span></span>\n  <ul>\n   <span></span>\n   <li><span>市场已经在交易 2026、甚至 2027 的预期，预期被打得很满</span></li>\n   <span></span>\n   <li><span>边际定价者越来越在看用户、收入、兑现节奏，而不是宏大叙事</span></li>\n   <span></span>\n   <li><span>低垂果实快摘完了，提高付费率与 ARPU、跨越鸿沟都比想象难</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3959\">01:05:59</a> AI 时代，美股七巨头谁更危险，谁还有机会？</span></p>\n  <span></span>\n  <p><strong><span>Knock Knock 世界年度榜单</span></strong>\n   <br>\n   <span>💡给你推荐一个特别的年度榜单💡榜单中有的新闻你今年可能还没听过！</span>\n   <br>\n   <span>榜单上有 8 条少年们最想让全世界知道的新闻。我们在思考前沿科技议题的同时，也关注到这些科技的未来使用者正是这些孩子们，而他们正在关注这个世界上发生的哪些事情呢，不妨借助这个榜单一起来看看， 为今年增加一个全新的回顾视角吧！点此收听👉</span><a href=\"https://sourl.co/NpZV8r\" data-url=\"https://sourl.co/NpZV8r\"><span>sourl.co</span></a></p>\n  <span></span>\n  <p><strong><span>GEO/AEO 闭门会</span></strong>\n   <br>\n   <span></span><img src=\"https://image.jido.dev/20251231232824_4zzrjgqh.png\" alt=\"Untitled\">\n   <br>\n   <span>在上一期节目中，我们收到了很多关于 AEO（Answer Engine Optimization） 的评论和反馈。</span>\n   <br>\n   <span>1 月 11 日， CES 结束之后我们将在硅谷组织一场小规模闭门交流，邀请在这个领域有较早探索的公司和产品以及AI平台与搜索引擎相关嘉宾一起来讨论：</span>\n   <br>\n   <span> • AEO 在 AI 产品出海中的最新实践</span>\n   <br>\n   <span> • ChatGPT、Perplexity 等 AI 搜索入口的变化</span>\n   <br>\n   <span> • Reddit 等技术社区在 AEO 中的角色</span>\n   <br>\n   <span> • 当前阶段哪些方法有效，哪些值得谨慎对待</span></p>\n  <span></span>\n  <p><span>这将是一场以交流和讨论为主的闭门会，如果你有兴趣参与，请通过下方链接填写报名表。</span>\n   <br>\n   <span>我们将根据报名情况 定向发出邀请。</span>\n   <br>\n   <span>📍 时间：1 月 11 日</span>\n   <br>\n   <span>📍 地点：硅谷（具体地点将通过邀请函告知）</span>\n   <br>\n   <span>📍 形式：小规模、定向邀请制</span>\n   <br>\n   <span>👉</span><a href=\"https://eg76rdcl6g.feishu.cn/share/base/form/shrcnX5Qr2tmZm9qI4EBCLVwbwg\" data-url=\"https://eg76rdcl6g.feishu.cn/share/base/form/shrcnX5Qr2tmZm9qI4EBCLVwbwg\"><span>eg76rdcl6g.feishu.cn</span></a></p>\n  <span></span>\n  <p><strong><span>幕后制作</span></strong>\n   <br>\n   <span>监制：Yaxian</span>\n   <br>\n   <span>后期：迪卡</span>\n   <br>\n   <span>运营：George </span>\n   <br>\n   <span>设计：饭团</span></p>\n  <span></span>\n  <p><strong><span>商业合作</span></strong>\n   <br>\n   <span>声动活泼商业化小队，点击链接直达声动商务会客厅（</span><a href=\"https://sourl.cn/9h28kj\" data-url=\"https://sourl.cn/9h28kj\"><span>sourl.cn</span></a><span> ），也可发送邮件至 </span><a href=\"mailto:business@shengfm.cn\"><span>business@shengfm.cn</span></a><span> 联系我们。</span></p>\n  <span></span>\n  <p><strong><span>加入声动活泼</span></strong>\n   <br>\n   <span>声动活泼目前开放商务合作实习生、社群运营实习生和 BD 经理等职位，详情点击招聘入口详情</span><a href=\"https://eg76rdcl6g.feishu.cn/docx/XO6bd12aGoI4j0xmAMoc4vS7nBh?from=from_copylink\" data-url=\"https://eg76rdcl6g.feishu.cn/docx/XO6bd12aGoI4j0xmAMoc4vS7nBh?from=from_copylink\"><span>点击招聘入口</span></a></p>\n  <span></span>\n  <p><strong><span>关于声动活泼</span></strong>\n   <br>\n   <span>「用声音碰撞世界」，声动活泼致力于为人们提供源源不断的思考养料。</span>\n   <br>\n   <span>我们还有这些播客：</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/60de7c003dd577b40d5a40f3\" data-url=\"https://www.xiaoyuzhoufm.com/podcast/60de7c003dd577b40d5a40f3\"><span>声动早咖啡</span></a><span>、</span><a href=\"https://etw.fm/episodes\" data-url=\"https://etw.fm/episodes\"><span>声东击西</span></a><span>、</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/644b94c494d78eb3f7ae8640\" data-url=\"https://www.xiaoyuzhoufm.com/podcast/644b94c494d78eb3f7ae8640\"><span>吃喝玩乐了不起</span></a><span>、</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/5e284c37418a84a0462634a4\" data-url=\"https://www.xiaoyuzhoufm.com/podcast/5e284c37418a84a0462634a4\"><span>反潮流俱乐部</span></a><span>、</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/5f445cdb9504bbdb77f092e9\" data-url=\"https://www.xiaoyuzhoufm.com/podcast/5f445cdb9504bbdb77f092e9\"><span>泡腾 VC</span></a><span>、</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/61315abc73105e8f15080b8a\" data-url=\"https://www.xiaoyuzhoufm.com/podcast/61315abc73105e8f15080b8a\"><span>商业WHY酱</span></a><span>、</span><a href=\"https://therabbithole.fireside.fm/\" data-url=\"https://therabbithole.fireside.fm/\"><span>跳进兔子洞</span></a><span> 、</span><a href=\"https://www.xiaoyuzhoufm.com/podcast/65a625966d045a7f5e0b5640\" data-url=\"https://www.xiaoyuzhoufm.com/podcast/65a625966d045a7f5e0b5640\"><span>不止金钱</span></a>\n   <br>\n   <span>欢迎在</span><a href=\"https://okjk.co/Qd43ia\" data-url=\"https://okjk.co/Qd43ia\"><span>即刻</span></a><span>、微博等社交媒体上与我们互动，搜索 </span><strong><span>声动活泼</span></strong><span> 即可找到我们。</span>\n   <br>\n   <span>期待你给我们写邮件，邮箱地址是：</span><a href=\"mailto:ting@sheng.fm\"><span>ting@sheng.fm</span></a>\n   <br>\n   <span></span><img src=\"https://image.jido.dev/20251231232824_81naqvat.jpg\" alt=\"科技早知道\">\n   <br>\n   <span></span><strong><span>欢迎扫码添加声小音，在节目之外和我们保持联系。</span></strong></p>\n  <p><span>Special Guest: 戴雨森.</span></p>\n </body>\n</html>",
+  "aiSummary": "本期播客讨论了 2025 年 AI 模型发展、商业化与投资趋势，重点分析了中国模型公司的崛起、Agent 技术的挑战及美股科技巨头的机遇与风险。",
+  "oneSentenceSummary": "本期播客讨论了 2025 年 AI 模型发展、商业化与投资趋势，重点分析了中国模型公司的崛起、Agent 技术的挑战及美股科技巨头的机遇与风险。",
+  "summary": "本期节目由硅谷徐老师 Howie 与真格基金的戴雨森共同回顾了 2025 年 AI 领域发生的出乎意料的变化，并展望了 2026 年 AI 行业面临的机遇与挑战。主要围绕中国模型公司的快速追赶，特别是开源模型领域中国力量的崛起展开。嘉宾们探讨了 AI 技术从“scaling”到“research”的范式转变，以及新 AI Lab 在创新突破中的作用。对于 Agent 技术，强调其发展是“十年的开始”，而非一蹴而就，面临完成度、可靠性及责任承担等挑战。在商业化方面，对比了移动互联网与 AI 创业的差异，指出 AI 赚钱模式尚在探索，预测传统广告模式可能受到冲击，并就订阅、广告与用量计费进行了分析。播客还讨论了 2026 年 AI 行业“交作业之年”意味着的预期兑现压力，并分析了美股七巨头在 AI 浪潮下的危险与机会，最终肯定了 AI 作为重要技术变革的投资价值，并鼓励早期创业创新。",
+  "mainPoints": [
+    {
+      "point": "2025 年中国 AI 模型公司展现惊人追赶速度，开源模型领域趋于主导。",
+      "explanation": "中国模型公司在性能和成本控制上迅速提升，如 Deep Seek、Kimi，使得开源市场从年初的海外主导转向中国模型的天下，超出年初预期。"
+    },
+    {
+      "point": "AI 研究范式正从“scaling”转向“research”，需要关注长期基础性突破。",
+      "explanation": "现有模型性能提升边际效益放缓，实现 AGI 需依赖新范式研究，新 AI Lab 的宽松研究环境对激发突破至关重要。"
+    },
+    {
+      "point": "Agent 技术是未来十年的发展趋势，但短期内面临可靠性、泛化和责任承担等挑战。",
+      "explanation": "真正的 Agent 需具备自主规划、执行和反思能力，当前技术在处理复杂逻辑、corner case 及社会文化接受度方面仍显不足。"
+    },
+    {
+      "point": "AI 商业模式仍在探索中，可能冲击传统广告市场，计费方式面临演变。",
+      "explanation": "AI 产品需通过“魔法时刻”体验实现口碑传播，商业模式从按用量计费逐步向固定费率或免费过渡，关注增量而非存量博弈。"
+    },
+    {
+      "point": "2026 年是 AI 的“交作业之年”，市场对业绩兑现有更高预期。",
+      "explanation": "随着 AI 预期被拉满，市场更关注用户增长、收入和兑现节奏，早期红利逐渐减少，跨越主流用户鸿沟面临挑战。"
+    },
+    {
+      "point": "美股科技巨头在 AI 浪潮中机遇与风险并存，需警惕泡沫化趋势。",
+      "explanation": "谷歌面临 AI 搜索冲击，苹果 AI 创新滞后，微软企业 AI 落地缓慢，亚马逊和英伟达则在算力与云服务中竞争，投资需警惕短期高估和长期不确定性。"
+    }
+  ],
+  "keyQuotes": [
+    "2025 年，中国模型公司的追赶速度明显超出年初预期，整个开源市场年初的时候肯定还是妈妈作为最核心的开源模型，但现在已经是中国开源模型的天下了。",
+    "如果说要实现大家 AGI 的目标，实现这种非常强大自我学习，不需要那么多的样本，能够不断的探索，不断的进化人员，那可能还是需要有一些研究的突破，所以我觉得第一点就是说大家认识到新范式很重要，新范式得靠研究的突破来解锁。",
+    "真正的 Agent 更接近 L3：给目标与资源，能规划、执行、反思、调整。难点不在演示，而在完成度、可靠性与「谁来背锅」。",
+    "未来的代码审查，不会是 AI 完全取代人，而是 AI 赋能人，让整个流程更高效、更智能。"
+  ],
+  "tags": [
+    "AI模型",
+    "商业化",
+    "投资趋势",
+    "中国AI",
+    "开源模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1744,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_c52a63",
+  "sourceName": "What's Next｜科技早知道",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767182400000,
+  "publishDateStr": "2025-12-31",
+  "publishDateTimeStr": "2025-12-31 12:00:00"
+}

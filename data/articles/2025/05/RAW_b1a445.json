@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b1a445",
+  "title": "易访问网站的重要性与实践",
+  "url": "https://www.infoq.com/news/2025/05/accessible-websites-how-to/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-22 11:29:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Web accessibility ensures content is usable by people with disabilities. According to Joanna Falkowska, it can give a competitive edge, improve SEO, and support basic human rights. She emphasizes using WCAG standard and making accessibility a shared team responsibility from the start of development, to prevent costly fixes later in the process.</p>\n   <p>Joanna Falkowska spoke about creating accessible websites at <a href=\"https://challengeaccepted.dev/\">DEV: Challenge Accepted</a>.</p>\n   <p>Web accessibility is about making web content available to users with disabilities. Falkowska suggested using the Web Content Accessibility Guidelines to <a href=\"https://www.infoq.com/news/2025/01/accessible-websites-guidelines/\">improve accessibility and create an inclusive website</a>.</p>\n   <p>Web accessibility should be considered a basic human right, said Falkowska. We should care about website accessibility because most of us either are affected by disability directly or have family members, friends or colleagues who have it, she added. Product accessibility can give you a competitive edge over other businesses.</p>\n   <p>Some companies consider accessibility as a natural consequence of their DEI policy and a basic human right. There are also those who care about accessibility primarily due to SEO results, as search engines prioritise accessible sites in their search results, Falkowska said.</p>\n   <p>Accessibility may be important for companies due to legislation. Many countries and institutions implement dedicated digital accessibility laws that concern specific institutions and/or businesses, Falkowska mentioned:</p>\n   <blockquote>\n    <p>One of the most recent ones is the European Accessibility Act. It is an EU directive that will come into force in July 2025, addressing a wide range of services, among others: e-commerce, banking and transport.</p>\n   </blockquote>\n   <p>The <a href=\"https://www.w3.org/TR/WCAG22/\">Web Content Accessibility Guidelines</a> is a standard that is recognized worldwide. Any legal act that requires conformance with accessibility rules quotes WCAG as its reference point, Falkowska said. It is available on-line and completely free. There is also a thorough list of <a href=\"https://www.w3.org/WAI/policies/\">international accessibility policies</a> available. Falkowska invited people to read it and adapt their web content according to its success criteria.</p>\n   <p>Falkowska suggested that team members should be fluent in accessibility standard, at least in relation to the success criteria that refer to their role:</p>\n   <blockquote>\n    <p>For example, it is the role of the designer to address all of the colour contrast issues there may be but also, if the authoring team has some flexibility, they should be aware of the colour contrast rules they need to follow in order for the final content to be accessible.</p>\n   </blockquote>\n   <p>Accessibility issues, just as any other type of bugs, tend to be more expensive to fix in the later stages of development, Falkowska said. Therefore, development teams who want to achieve and maintain an accessibility standard, need to make accessibility part of the earliest stages of development.</p>\n   <p>Falkowska suggested making it part of the process to discuss and add precise accessibility acceptance criteria to the ticket description while grooming new stories:</p>\n   <blockquote>\n    <p>Many teams do not do it, and as a result, accessibility gets added either after the ticket is rejected in the testing phase or even later - when the accessibility audit is completed.</p>\n   </blockquote>\n   <p>Accessibility is undeniably a team sport. If we want to integrate it with the development process, we need to address it at all of its steps, Falkowska concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/jfalkowska/\">Joanna Falkowska </a>about developing accessible websites.</p>\n   <p><strong>InfoQ: What’s your advice to developers who want to start with accessibility?</strong></p>\n   <blockquote>\n    <p><strong>Joanna Falkowska</strong>: If you are new to the subject of accessibility, I would recommend taking the time to read and understand all of the success criteria WCAG provides. It may look overwhelming at first, but you can learn them in chunks, according to subsequent sections (guidelines) or based on conformance levels (from A up to AAA).</p>\n    <p>The second thing would be learning how to use assistive technology, especially screen readers, but also simple things like navigating with a keyboard instead of a mouse.</p>\n    <p>Finally, once you learn all of that, the first thing to do is... make friends with and, if needed, educate the design team. Many accessibility issues would not pop up at the development stage if the designs were following WCAG standards right from the start.</p>\n   </blockquote>\n   <p><strong>InfoQ: What can be done to make accessibility an integral part of your development process?</strong></p>\n   <blockquote>\n    <p><strong>Falkowska</strong>: Make sure that accessibility is not simply \"outsourced\" to an accessibility team from a different department or an external auditing company.</p>\n    <p>The accessibility team should be there to support you only in the issues that go beyond the basic scope, e.g. you are struggling to decide what order to implement for keyboard navigation and need someone to share the most convenient solution.</p>\n    <p>The auditing company should come only in the last stage of the development. They are there to certify your accessibility level rather than teaching you what should have been done at the beginning of the development. We all know that changing the designs while the app is running costs much more than designing the wireframes with accessibility in mind.</p>\n    <p>Suppose we want to integrate accessibility into the development process. In that case, the product owner should raise the topic of accessibility repeatedly: right at the design stage, before the development starts, and up until the testing phase.</p>\n    <p>If your team members do not know what to consider while developing an accessible solution, you may want to request an accessibility specialist to join your team and help you draft requirements with WCAG in mind, teaching everyone what to consider during grooming sessions.</p>\n    <p>Developing accessible solutions might bring more clients to your website. Adding accessibility skills to your personal portfolio will make you a more competitive employee on the IT market. Companies that are legally obliged to deliver accessible solutions will quickly learn that it is more cost-effective to employ team members that know what role they play in delivering accessible apps.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Why We Should Care about Accessible Websites and How to Do It\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/accessible-websites-how-to/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1747913340000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Web 可访问性指南：重要性、WCAG 标准及开发整合",
+  "oneSentenceSummary": "Web 可访问性指南：重要性、WCAG 标准及开发整合",
+  "summary": "本文基于 Joanna Falkowska 的见解，强调 Web 可访问性对残疾人的重要性，并将其视为基本人权。同时，它还强调了 Web 可访问性带来的商业价值，例如提高搜索引擎优化（SEO）效果和竞争优势。Web 内容可访问性指南（WCAG）是全球公认的标准。关键在于尽早将可访问性整合到开发流程中，使其成为团队的共同责任。在后期解决可访问性问题成本高昂。本文为开发人员和团队提供了实用建议，强调学习 WCAG、运用辅助技术、与设计师协作，以及产品负责人需要在项目生命周期中重视可访问性。",
+  "mainPoints": [
+    {
+      "point": "Web 可访问性是基本人权，同时带来 SEO 和竞争优势等商业价值。",
+      "explanation": "确保残疾人可以使用 Web 内容，支持包容性，并能吸引更多用户，提高搜索引擎排名。"
+    },
+    {
+      "point": "WCAG 是 Web 可访问性的全球标准，必须遵循。",
+      "explanation": "Web 内容可访问性指南是全球通用的免费框架，被多国法律引用，用于实现数字可访问性。"
+    },
+    {
+      "point": "在开发生命周期的早期集成可访问性对于成本效益至关重要。",
+      "explanation": "在开发的早期阶段解决可访问性问题（左移原则）可以避免后续产生高昂的修改成本。"
+    },
+    {
+      "point": "可访问性是一项 '团队运动'，需要跨角色协作。",
+      "explanation": "开发人员、设计师和产品负责人必须共同承担可访问性的责任，学习相关标准并将其集成到日常工作流程和验收标准中。"
+    }
+  ],
+  "keyQuotes": [
+    "Web 可访问性是关于使残疾用户可以使用 Web 内容。",
+    "Web 可访问性应被视为一项基本人权。",
+    "就像任何其他类型的错误一样，可访问性问题在开发的后期阶段修复的成本往往更高。",
+    "如果我们想将其与开发过程集成，我们需要在所有步骤中解决它。",
+    "在您的个人投资组合中添加可访问性技能将使您在 IT 行业更具竞争力。"
+  ],
+  "tags": [
+    "可访问性",
+    "Web 开发",
+    "WCAG",
+    "软件工程",
+    "产品设计"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 941,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1747913340000,
+  "publishDateStr": "2025-05-22",
+  "publishDateTimeStr": "2025-05-22 11:29:00"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_30fdb277",
+  "title": "移除 XSLT，提升浏览器安全性",
+  "url": "https://simonwillison.net/2025/Nov/5/removing-xslt/#atom-everything",
+  "date": "2025-11-05 22:24:57",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://developer.chrome.com/docs/web-platform/deprecating-xslt\">Removing XSLT for a more secure browser</a></strong> (<a href=\"https://news.ycombinator.com/item?id=45823059\" title=\"Hacker News\">via</a>) Previously discussed <a href=\"https://simonwillison.net/2025/Aug/19/xslt/\">back in August</a>, it looks like it's now official:</p>\n   <blockquote>\n    <p>Chrome intends to deprecate and remove XSLT from the browser. [...] We intend to remove support from version 155 (November 17, 2026). The <a href=\"https://github.com/mozilla/standards-positions/issues/1287#issuecomment-3227145793\">Firefox</a> and <a href=\"https://github.com/whatwg/html/issues/11523#issuecomment-3149280766\">WebKit</a> projects have also indicated plans to remove XSLT from their browser engines. [...]</p>\n    <p>The continued inclusion of XSLT 1.0 in web browsers presents a significant and unnecessary security risk. The underlying libraries that process these transformations, such as <a href=\"https://github.com/GNOME/libxslt\">libxslt</a> (used by Chromium browsers), are complex, aging C/C++ codebases. This type of code is notoriously susceptible to memory safety vulnerabilities like buffer overflows, which can lead to arbitrary code execution.</p>\n   </blockquote>\n   <p>I mostly encounter XSLT on people's Atom/RSS feeds, converting those to a more readable format in case someone should navigate directly to that link. Jake Archibald <a href=\"https://jakearchibald.com/2025/making-xml-human-readable-without-xslt/\">shared an alternative solution to that</a> back in September.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9136/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Chrome、Firefox 和 WebKit 浏览器因老旧 C/C++ 处理库带来的安全风险，正逐步弃用并移除 XSLT。",
+  "oneSentenceSummary": "Chrome、Firefox 和 WebKit 浏览器因老旧 C/C++ 处理库带来的安全风险，正逐步弃用并移除 XSLT。",
+  "summary": "本文报告了主要 Web 浏览器开发者（包括 Chrome 浏览器、Firefox 浏览器和 WebKit 浏览器）做出的重要决定：弃用并最终从其浏览器引擎中移除 XSLT（可扩展样式表转换语言）。例如，Chrome 浏览器计划从 2026 年 11 月的版本 155 开始停止支持。移除的主要原因是继续包含 XSLT 1.0 带来的严重安全风险。Chromium 浏览器使用的 `libxslt` 库等底层库被认为是复杂的、陈旧的 C/C++ 代码库。这类代码以容易出现内存安全问题（包括缓冲区溢出）而闻名，这些都是严重的漏洞，可能导致在用户系统上执行任意代码。作者指出，XSLT 的一个常见应用是将 Atom/RSS 订阅呈现为更易于人类阅读的格式，以便直接进行浏览器导航。因此，本文引用了 Jake Archibald 提出的替代解决方案，为开发者提供了一种无需依赖 XSLT 即可实现类似 XML 可读性的途径。浏览器供应商的协同努力，旨在通过移除过时组件来增强网络安全，减少不必要的攻击途径。他们同时建议开发者迁移到更现代、更安全的 XML 处理和呈现方案。",
+  "mainPoints": [
+    {
+      "point": "由于严重的安全风险，主要浏览器正在移除 XSLT。",
+      "explanation": "XSLT 1.0 的底层 C/C++ 库既旧又复杂，容易出现内存安全漏洞，如缓冲区溢出，这可能导致任意代码执行。"
+    },
+    {
+      "point": "弃用 XSLT 旨在增强整体浏览器安全。",
+      "explanation": "移除潜在漏洞组件可减少浏览器攻击面，从而保护用户免受旧代码库漏洞的影响。"
+    },
+    {
+      "point": "使用 XSLT 进行 RSS/Atom 订阅呈现的开发者需要采用替代解决方案。",
+      "explanation": "XSLT 通常用于将 XML 订阅转换为更易于人类阅读的格式，这要求开发者迁移到更新、更安全的方法，正如 Jake Archibald 建议的替代方案所例证的那样。"
+    }
+  ],
+  "keyQuotes": [
+    "Chrome 浏览器计划弃用并从浏览器中移除 XSLT。",
+    "在 Web 浏览器中继续包含 XSLT 1.0 存在重大且不必要的安全风险。",
+    "处理这些转换的底层库（例如 Chromium 浏览器使用的 libxslt 库）是复杂的、老化的 C/C++ 代码库。",
+    "这类代码以容易出现内存安全漏洞（如缓冲区溢出）而闻名，这可能导致任意代码执行。"
+  ],
+  "tags": [
+    "浏览器安全",
+    "XSLT",
+    "Web 平台",
+    "弃用",
+    "Chrome 浏览器"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 149,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1762381497000,
+  "publishDateStr": "2025-11-05",
+  "publishDateTimeStr": "2025-11-05 22:24:57"
+}

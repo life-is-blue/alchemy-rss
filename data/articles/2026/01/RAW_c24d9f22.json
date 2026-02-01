@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c24d9f22",
+  "title": "Flutter 3.38.1 之后，因为某些框架低级错误导致提交 Store 被拒",
+  "url": "https://juejin.cn/post/7591350620189360134",
+  "date": "2026-01-05 01:24:20",
+  "author": "恋猫de小郭",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>如果你近期已经升级到 3.38.1 之后的版本，包括 3.38.5 ，你就有概率发现，打包提交 iOS 的包会出现 <code>The binary is invalid</code> 的相关错误，简单来说，就是<strong>App Store 拒绝了某个二进制文件，因为它包含了无效的内容</strong>。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b9585031a3c14094ab8a605f51ac9d39~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5oGL54yrZGXlsI_pg60=:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768181060&amp;x-signature=eDefuga9QaYrBrP%2BGYTuQhm2GD0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>那么这个内容是怎么来的？大概率是模拟器架构的 Framework 被错误地打包进了正式发布的 App ，具体原因还要提到最新版本增加的 Native Assets 功能。</p>\n   <p>Native Assets 的目标是<strong>让在 Flutter/Dart 包中集成 C、C++、Rust 或 Go 代码，可以像集成普通 Dart 包一样简单</strong>，也就是它允许 Dart 包定义如何构建和打包原生代码，开发者不需要深入了解每个平台的底层构建系统，也是 Dart FFI 未来的重要基建。</p>\n   <blockquote>\n    <p>详细可见：<a href=\"https://juejin.cn/post/7521356618174545962\" target=\"_blank\" title=\"https://juejin.cn/post/7521356618174545962\">《Flutter 里的 Asset Transformer 和 Hooks ，这个实验性功能有什么用》</a></p>\n   </blockquote>\n   <p>那它怎么导致了这次这个低级问题的出现？实际上这是一个构建脚本逻辑缺陷导致的“脏构建”问题，当 Flutter 构建依赖于 Native Assets（比如 <code>sqlite3</code> 等库）的 Plugin 时，这些原生资源会被编译并输出到 <code>build/native_assets/$platform</code> 目录（例如 <code>build/native_assets/ios</code>）。</p>\n   <p>因为在现有的构建脚本（<code>xcode_backend.dart</code>）在打包时，会简单粗暴地将 <code>build/native_assets/ios</code> 目录下的<strong>所有</strong>框架复制到最终的 App Bundle (<code>Runner.app/Frameworks</code>) ，例如：</p>\n   <ul>\n    <li>先运行了模拟器跑应用，这时模拟器专用的框架（如 <code>sqlite3arm64ios_sim.framework</code>）就会被生成并留在了 <code>build/native_assets/ios</code> 目录</li>\n   </ul>\n   <ul>\n    <li>接着，开发者在<strong>没有运行 <code>flutter clean</code></strong> 的情况下，直接运行了 Release 构建</li>\n    <li>构建脚本会把之前遗留的“模拟器框架”也一并复制进了 Release 包</li>\n    <li>App Store 检测到 Release 包中含有模拟器架构的代码，因此拒绝接收</li>\n   </ul>\n   <blockquote>\n    <p>所以说，大厂也有大厂的草台。</p>\n   </blockquote>\n   <p>当然，这个问题解决起来也很简单，就是发布前 <code>flutter clean</code> 清理一下，当然，如果你之前打过包了，<strong>那么 Xcode 的构建缓存也需要清理下</strong>，因为可能存在即使你通过 <code>flutter clean</code> 删除了 Flutter 的构建产物，但是 Xcode 可能仍然认为某些中间文件（Intermediate Build Files）存在可用。</p>\n   <blockquote>\n    <p>比如 DerivedData 缓存</p>\n   </blockquote>\n   <p>那么这么低级的问题，修复下也很简单，所以 sqlite3 的作者也提交了一个 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fflutter%2Fflutter%2Fpull%2F179251\" target=\"_blank\" title=\"https://github.com/flutter/flutter/pull/179251\" ref=\"nofollow noopener noreferrer\">#179251</a> ，简单来说就是，针对 Native Assets ：</p>\n   <ul>\n    <li>读取构建过程中生成的 <code>native_assets.json</code> 文件</li>\n    <li>解析文件，获取当前构建<strong>真正引用</strong>的依赖列表</li>\n    <li><strong>仅复制</strong> <code>native_assets.json</code> 中列出的框架，忽略目录中残留的其他无关文件（如模拟器文件）</li>\n   </ul>\n   <p>这个修复其实很简单，但是在流程上，因为目前 PR 还缺少 integration test ，所以一直卡在了等待 Review 阶段，除非有人申请豁免，不然这个 PR 的合并还会继续卡着。</p>\n   <p>只能说，一代人有一代人的草台。</p>\n   <h2 data-id=\"heading-0\">参考链接</h2>\n   <ul>\n    <li><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fflutter%2Fflutter%2Fissues%2F178602\" target=\"_blank\" title=\"https://github.com/flutter/flutter/issues/178602\" ref=\"nofollow noopener noreferrer\">github.com/flutter/flu…</a></li>\n   </ul>\n   <ul>\n    <li><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fflutter%2Fflutter%2Fpull%2F179251\" target=\"_blank\" title=\"https://github.com/flutter/flutter/pull/179251\" ref=\"nofollow noopener noreferrer\">github.com/flutter/flu…</a></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章分析了 Flutter 3.38.1 之后版本因 Native Assets 构建脚本缺陷，导致模拟器架构 Framework 误打包进 Release 包从而被 iOS App Store 拒绝的问题，并提供了临时解决方案与社区修复进展。",
+  "oneSentenceSummary": "文章分析了 Flutter 3.38.1 之后版本因 Native Assets 构建脚本缺陷，导致模拟器架构 Framework 误打包进 Release 包从而被 iOS App Store 拒绝的问题，并提供了临时解决方案与社区修复进展。",
+  "summary": "文章揭示了 Flutter 3.38.1 之后版本导致 iOS App Store 提交被拒的深层原因。问题出在 Flutter 的 Native Assets 功能，它旨在简化 Dart 包集成 C/C++/Rust/Go 代码，但在构建时存在逻辑缺陷。当开发者在运行模拟器后未执行 `flutter clean`，直接进行 Release 构建时，Flutter 构建脚本会错误地将模拟器专用的 Framework（如 `sqlite3arm64ios_sim.framework`）复制到最终的 App Bundle 中。App Store 检测到 Release 包中含有模拟器架构的代码，从而拒绝提交。文末介绍了社区已提出的修复方案，即通过解析 `native_assets.json` 文件，仅复制真正引用的框架，以避免包含无关的模拟器架构文件，但该修复目前仍在等待代码审查。文章强调了在构建 iOS 应用前执行 `flutter clean` 及清理 Xcode 缓存的重要性。",
+  "mainPoints": [
+    {
+      "point": "Flutter 3.38.1+ 版本在提交 iOS 应用时可能遭遇 'The binary is invalid' 错误。",
+      "explanation": "问题源于 Flutter 的 Native Assets 功能在构建过程中存在的逻辑缺陷，导致模拟器架构的 Framework 被错误地打包到生产环境中提交的 iOS 应用二进制文件中，被 App Store 拒绝。"
+    },
+    {
+      "point": "问题核心是 '脏构建'，模拟器架构 Framework 意外混入 Release 包。",
+      "explanation": "当开发者先运行模拟器后，未清理构建产物直接进行 Release 打包时，构建脚本会将 `build/native_assets/ios` 目录下残留的模拟器专用框架一同复制到最终的 App Bundle 中。"
+    },
+    {
+      "point": "临时解决方案是执行 `flutter clean` 和清理 Xcode 缓存。",
+      "explanation": "为了避免此问题，开发者在进行 Release 构建或提交 App Store 前，应确保清除 Flutter 的构建缓存 (`flutter clean`) 以及 Xcode 的构建缓存（如 `DerivedData`），以确保包中不包含冗余文件。"
+    },
+    {
+      "point": "社区已提交修复方案，但仍在等待合并。",
+      "explanation": "针对此问题，Flutter 社区已提出修复方案，通过读取 `native_assets.json` 文件来精确识别和复制所需的框架，避免包含无关文件。然而，该 PR 因缺少集成测试，合并流程受阻。"
+    }
+  ],
+  "keyQuotes": [
+    "App Store 拒绝了某个二进制文件，因为它包含了无效的内容。",
+    "大概率是模拟器架构的 Framework 被错误地打包进了正式发布的 App。",
+    "Native Assets 的目标是让在 Flutter/Dart 包中集成 C、C++、Rust 或 Go 代码，可以像集成普通 Dart 包一样简单。",
+    "当 Flutter 构建依赖于 Native Assets 的 Plugin 时，这些原生资源会被编译并输出到 `build/native_assets/$platform` 目录。",
+    "修复其实很简单，但是在流程上，因为目前 PR 还缺少 integration test ，所以一直卡在了等待 Review 阶段。"
+  ],
+  "tags": [
+    "Flutter",
+    "iOS开发",
+    "App Store",
+    "Native Assets",
+    "构建错误"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 894,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767576260000,
+  "publishDateStr": "01-05",
+  "publishDateTimeStr": "2026-01-05 01:24:20"
+}

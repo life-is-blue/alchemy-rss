@@ -1,0 +1,55 @@
+{
+  "id": "RAW_8c783f",
+  "title": "Cloudflare 重新架构 Workers KV 以应对 GCP 故障，实现 40 倍性能提升",
+  "url": "https://www.infoq.com/news/2025/08/cloudflare-workers-kv/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-08-25 12:30:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has recently <a href=\"https://blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy/\" target=\"_blank\">redesigned Workers KV with a hybrid storage architecture</a> that automatically routes objects between distributed databases and object storage based on size characteristics, while operating dual storage backends. This change improved the p99 read latencies from 200ms to under 5ms for their global key-value store while handling hundreds of billions of key-value pairs.</p>\n   <p>Cloudflare performed this rearchitecture in response to a <a href=\"https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/\" target=\"_blank\">June 12, 2025, outage</a> that affected Workers KV when <a href=\"https://cloud.google.com/\" target=\"_blank\">Google Cloud Platform</a><a href=\"https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW\"> experienced a global service disruption</a>. Earlier in the year, Cloudflare moved from a dual-backend setup to using GCP exclusively to reduce operational complexity. However, the GCP outage, which lasted over two hours, demonstrated the risks of external dependencies for critical edge infrastructure.</p>\n   <p>The new system combines Cloudflare's own distributed database with <a href=\"https://developers.cloudflare.com/r2/\" target=\"_blank\">R2 object storage</a> through size-based routing. Small objects, which represent the majority of Workers KV traffic with a median size of 288 bytes, are stored in Cloudflare's distributed database, the same distributed database that powers R2 and <a href=\"https://developers.cloudflare.com/durable-objects/\" target=\"_blank\">Durable Objects</a>. Objects larger than a configurable threshold are automatically routed to R2 object storage.</p>\n   <p>Cloudflare engineers explain that \"for workloads dominated by sub-1KB objects at this scale, database storage becomes significantly more efficient and cost-effective than traditional object storage.\" The routing decision happens transparently through KV Storage Proxy (KVSP), which provides HTTP interfaces to database clusters while managing connectivity, authentication, and shard routing.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/08/cloudflare-workers-kv/news/2025/08/cloudflare-workers-kv/en/resources/1Cloudflare-workers-kv-architecture-1756029889995.png\" style=\"width:100%;height:1999px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/cloudflare-workers-kv/en/resources/1Cloudflare-workers-kv-architecture-1756029889995.png\" rel=\"share\">\n    <br>\n    <em>Workers KV's revised architecture (<a href=\"https://blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy/\" target=\"_blank\">source</a>)</em></p>\n   <p>To employ an improved dual-provider capability, Cloudflare employed sophisticated consistency mechanisms. The system writes to both backends simultaneously, returning success when the first backend confirms persistence. Failed writes are queued for background reconciliation through write-time error handling, read-time inconsistency detection, and background crawlers that continuously scan for data divergence. In addition, each key-value pair includes high-precision timestamps using <u><a href=\"https://www.cloudflare.com/time/\" target=\"_blank\">Cloudflare Time Services</a></u> to determine correct ordering across independent storage providers.</p>\n   <p>During initial rollout to internal customers, Cloudflare discovered it had inadvertently regressed <a href=\"https://www.geeksforgeeks.org/system-design/read-your-writes-consistency-in-system-design/\" target=\"_blank\">read-your-own-write</a> (RYOW) consistency, a property where reads immediately following writes from the same point of presence return updated values rather than stale data.</p>\n   <p>To address this, engineers developed an \"adversarial test framework designed to maximize the likelihood of hitting consistency edge cases by rapidly interspersing reads and writes to a small set of keys from a handful of locations around the world.\" This testing approach allowed them to measure and fix RYOW violations while maintaining performance characteristics that make Workers KV effective for high-read workloads.</p>\n   <p>The architectural changes delivered significant performance improvements alongside increased redundancy. Internal p99 latencies for reads from the new Cloudflare backend dropped to under 5 milliseconds, compared to 200ms at p99 for the third-party object storage provider. These improvements were \"particularly pronounced in Europe, where our new storage backend is located, but the benefits extended far beyond what geographic locality alone could explain.\"</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/08/cloudflare-workers-kv/news/2025/08/cloudflare-workers-kv/en/resources/1Cloudflare-kvsp-p99-latency-1756029889995.png\" style=\"width:100%;height:929px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/cloudflare-workers-kv/en/resources/1Cloudflare-kvsp-p99-latency-1756029889995.png\" rel=\"share\">\n    <br>\n    <em>KVSP p99 latency (<a href=\"https://blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy/\" target=\"_blank\">source</a>)</em></p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/08/cloudflare-workers-kv/news/2025/08/cloudflare-workers-kv/en/resources/1Cloudflare-third-party-cold-read-p99-latency-1756029889995.png\" style=\"width:100%;height:928px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/08/cloudflare-workers-kv/en/resources/1Cloudflare-third-party-cold-read-p99-latency-1756029889995.png\" rel=\"share\">\n    <br>\n    <em>Third-party cold read p99 latency (<a href=\"https://blog.cloudflare.com/rearchitecting-workers-kv-for-redundancy/\" target=\"_blank\">source</a>)</em></p>\n   <p><a href=\"http://www.cloudflare.com/en-au/developer-platform/products/workers-kv/\">Workers KV</a> is Cloudflare's eventually-consistent key-value store that operates at a global scale across its edge network. <a href=\"https://www.infoq.com/news/2018/10/Cloudflare-Workers-WASM-KV/\" target=\"_blank\">Initially launched in 2018</a>, the service provides <a href=\"https://www.infoq.com/news/2019/05/cloudflare-serverless-store/\" target=\"_blank\">fast, distributed storage</a> for configuration data, session information, and static assets that need to be available instantly around the globe. Companies use Workers KV for diverse applications, including mass redirects handling billions of HTTP requests, API gateway implementations, A/B testing configurations, user authentication systems, and dynamic content personalization based on geographic location or device type.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Rearchitects Workers KV Following GCP Outage, Achieves 40x Performance Gain\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/08/cloudflare-workers-kv/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1756125000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 在 GCP 故障后，采用混合存储模型和双后端重新架构了 Workers KV 全局键值存储，实现了 40 倍的 P99 读延迟提升，并增强了冗余性。",
+  "oneSentenceSummary": "Cloudflare 在 GCP 故障后，采用混合存储模型和双后端重新架构了 Workers KV 全局键值存储，实现了 40 倍的 P99 读延迟提升，并增强了冗余性。",
+  "summary": "Cloudflare 已经重新架构了其 Workers KV 全局键值存储，以显著提高冗余性和性能。此举由 2025 年 6 月发生的严重谷歌云平台 (GCP) 故障所促使，该故障影响了其服务。本次重新架构改变了之前完全依赖 GCP 的策略，突出了关键边缘基础设施对外部依赖的风险。新的设计实现了混合存储架构：小对象（中值 288 字节）占据了 Workers KV 的大部分流量，存储在 Cloudflare 自己的分布式数据库中，而较大的对象会自动路由到 Cloudflare R2 对象存储。这种透明的路由由 KV 存储代理 (KVSP，KV Storage Proxy) 管理。\n\n为了确保高可用性和数据完整性，系统现在同时写入双存储后端，集成了高级一致性机制，如写入时错误处理、读取时不一致性检测和后台爬虫。遇到的一个值得注意的挑战是“读己之写 (RYOW) 一致性”的退化，Cloudflare 通过开发“对抗性测试框架”解决了这个问题。这些架构变更带来了显著的性能提升，将 P99 读延迟从 200ms（使用第三方提供商）降低到 5ms 以下，提高了 40 倍，同时有效地管理了数千亿个键值对。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 为 Workers KV 采用了混合存储架构，以在一次重大的 GCP 故障后提高性能和冗余。",
+      "explanation": "这种设计将小型、频繁访问的对象存储在 Cloudflare 的分布式数据库中，将较大的对象存储在 R2 中，从而在优化成本和延迟的同时，降低了对单一外部云提供商的依赖风险。"
+    },
+    {
+      "point": "通过为小型对象利用自定义分布式数据库，重新架构实现了 40 倍的 P99 读延迟改进。",
+      "explanation": "通过将大部分小型键值流量路由到优化的内部数据库，Cloudflare 显著降低了读取延迟，从 200ms 降至 5ms 以下，体现了针对特定数据特征定制存储方案的效率。"
+    },
+    {
+      "point": "复杂的一致性机制和对抗性测试对于维持双后端设置中的数据完整性和修复一致性问题至关重要。",
+      "explanation": "实施双写、后台协调、高精度时间戳和严格的对抗性测试框架，确保了强大的数据一致性，例如在跨独立存储后端操作时，读己之写。"
+    }
+  ],
+  "keyQuotes": [
+    "Cloudflare 最近重新设计了 Workers KV，采用了混合存储架构，该架构根据大小特征在分布式数据库和对象存储之间自动路由对象，同时运行双存储后端。",
+    "持续了两个多小时的 GCP 故障表明了关键边缘基础设施对外部依赖的风险。",
+    "对于以小于 1KB 的对象为主的工作负载，数据库存储比传统的对象存储更有效且更具成本效益。",
+    "Cloudflare 发现它无意中使读己之写 (RYOW) 一致性倒退，读己之写 (RYOW) 一致性是指从同一存在点 (POP) 读取紧随其后的写入会返回更新的值，而不是陈旧的数据。",
+    "与第三方对象存储提供商的 P99 为 200ms 相比，来自新的 Cloudflare 后端的读取的内部 P99 延迟降至 5ms 以下。"
+  ],
+  "tags": [
+    "分布式系统",
+    "键值存储",
+    "Cloudflare Workers KV",
+    "混合存储",
+    "冗余"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 549,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756125000000,
+  "publishDateStr": "2025-08-25",
+  "publishDateTimeStr": "2025-08-25 12:30:00"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c34041",
+  "title": "安全消息：卫报利用数百万读者提供强大的可信匿名性",
+  "url": "https://www.infoq.com/news/2025/07/secure-messaging-coverdrop/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-07-12 00:00:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Guardian has recently <a href=\"https://www.theguardian.com/gnm-press-office/2025/jun/09/the-guardian-launches-secure-messaging-a-world-first-from-a-media-organisation-in-collaboration-with-the-university-of-cambridge\">released Secure Messaging</a>, a highly secure and user-friendly tool designed to protect journalistic sources by concealing the very fact that messaging is occurring. The open source project achieves strong plausible deniability by generating bait traffic through the routine activity of existing users of The Guardian's mobile app, safeguarding sources even if their smartphones are seized or compromised.</p>\n   <p>The goal of the media organization is to allow whistleblowers to contact journalists more securely, relying on a confidential, open source, and anonymous messaging technology, <a href=\"https://www.coverdrop.org\">CoverDrop</a>, co-developed by researchers at the University of Cambridge and software engineers at the Guardian. <a href=\"https://www.theguardian.com/profile/katharineviner\">Katharine Viner</a>, editor-in-chief of the Guardian, explains what makes the approach different from traditional information-sharing platforms and <a href=\"https://www.theguardian.com/membership/2025/jun/09/in-a-dangerous-era-for-journalism-a-powerful-new-tool-to-help-protect-sources\">writes</a>:</p>\n   <blockquote>\n    <p>The technology behind Secure Messaging conceals the fact that messaging is taking place at all by making the communication indistinguishable from other data sent to and from the app by our millions of regular users. By using the Guardian app, other users are effectively providing \"cover\" and helping us to protect sources.</p>\n   </blockquote>\n   <p>The CoverDrop system consists of four main components: a module within the news organization's regular mobile apps, an untrusted cloud-based API deployed on AWS for message distribution, a set of hardened on-premises services (the CoverNode), and a desktop application used by journalists at the news organization. The on-premises services do not allow any incoming connections and instead use a pull-based approach.</p>\n   <p><em><img alt=\"CoverDrop Architecture\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/07/secure-messaging-coverdrop/news/2025/07/secure-messaging-coverdrop/en/resources/1architecture-overview-1752001411634.png\" style=\"width:100%;height:825px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/07/secure-messaging-coverdrop/en/resources/1architecture-overview-1752001411634.png\" rel=\"share\"></em></p>\n   <p><em>Source: Guardian GitHub</em></p>\n   <p>The CoverNode is implemented as a Rust application and acts as a mix node to guarantee the anonymity of sources towards journalists and external adversaries. It decrypts the outer layer of all incoming messages to extract the included recipient tag and ciphertext.</p>\n   <p>In a CoverDrop implementation, every copy of the news organization's app exchanges small quantities of encrypted information with that news organization's servers. These messages contain meaningless ciphertext, and the app pads all messages to the same length, making all users of the mobile app appear to be whistleblowers and helping to conceal the true identity of those leaking sensitive information. The Guardian has already deployed the feature to millions of installations this year. As the engineering team explains:</p>\n   <blockquote>\n    <p>When a source writes a message for a journalist, their message plus that source's automatically generated public key is encrypted using the public key of the journalist. That ciphertext is then swapped in for one of the routine cover messages. Both source and cover messages are encrypted in the same way, are the same length, and are sent at the same times. So from the perspective of a network observer they are indistinguishable.</p>\n   </blockquote>\n   <p>Journalists can also reply to these messages, as they include the source's public key. Since the message storage vaults on users' apps are modified at the same times, are the same size, and are encrypted in the same way regardless of whether they contain real messages, a device used for secure communication will show no evidence of such use if it is seized, provided the decryption passphrase is not known.</p>\n   <p>The team recently <a href=\"https://www.coverdrop.org/coverdrop_guardian_implementation_june_2025.pdf\">released a white paper</a> describing the design and implementation, a design based on the original <a href=\"https://petsymposium.org/2022/files/papers/issue2/popets-2022-0035.pdf\">research paper presented at PETS in 2022 by University of Cambridge researchers</a>.</p>\n   <p>While providing a simple UX to the end user and whistleblower, the open source solution protects against an adversary attempting to determine whether a given person is likely to have been in contact with a journalist, an act that can itself be a red flag. In the <a href=\"https://www.cam.ac.uk/research/news/whistleblowing-tech-based-on-cambridge-research-launched-by-the-guardian\">announcement</a> by the University of Cambridge, the research team acknowledges that the development of CoverDrop began in the years following Edward Snowden’s leaks of classified documents revealing the existence of global surveillance programs.</p>\n   <p>On a popular <a href=\"https://news.ycombinator.com/item?id=44222299\">Hacker News thread</a>, some users still highlight the importance of using a device that isn’t tied to the source. Sam Cutler, staff software engineer at The Guardian, replies:</p>\n   <blockquote>\n    <p>I would certainly recommend that readers not use a work phone (...) I should add that we do some basic detection devices that have been rooted or are in debug mode, and issue a warning to the user before they continue. I'd be interested in what we can do to detect MDM software, but I fear it might become a cat-and-mouse game, so it's preferable that folks not use their work devices at all.</p>\n   </blockquote>\n   <p>Currently, there is no functionality for sharing photographs or documents, but there are plans to include handover mechanisms to <a href=\"https://securedrop.org/\">SecureDrop</a> that will allow linking uploaded files with existing conversations. The source code of CoverDrop is available on <a href=\"https://github.com/guardian/coverdrop\">GitHub</a> under the Apache License 2.0.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Secure Messaging: The Guardian Leverages Millions of Readers to Provide Strong Plausible Deniability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/07/secure-messaging-coverdrop/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1752332280000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "卫报由 CoverDrop 提供支持的全新安全消息系统，利用数百万应用用户生成掩护流量，使真实通信与常规数据难以区分，从而为新闻来源提供高度可信的匿名保护。",
+  "oneSentenceSummary": "卫报由 CoverDrop 提供支持的全新安全消息系统，利用数百万应用用户生成掩护流量，使真实通信与常规数据难以区分，从而为新闻来源提供高度可信的匿名保护。",
+  "summary": "卫报已推出“安全消息”，这是一个基于 CoverDrop 技术构建的开源工具，与剑桥大学共同开发，旨在保护新闻来源。其核心创新在于实现高可信度的匿名性：它隐藏了通信正在发生的这一事实。这是通过使真实消息与卫报数百万移动应用程序用户交换的常规加密数据无法区分来实现的，从而有效地利用他们的活动作为“掩护”。该系统包括一个移动应用程序模块、一个用于分发的非信任云 API、强化的本地 CoverNodes（在 Rust 中实现，以实现匿名性，使用基于拉取 (pull-based) 的机制以增强安全性）和一个记者的桌面应用程序。消息被填充到统一长度并以相同方式加密，使它们对网络观察者来说显得毫无意义的密文。这种设计确保即使来源的设备被查获，也无法识别出安全通信的痕迹。安全消息是为了应对全球监控披露而开发的，旨在为举报人提供一个机密、匿名和用户友好的平台，未来计划与 SecureDrop 集成以进行文件共享。",
+  "mainPoints": [
+    {
+      "point": "通过隐藏通信行为本身，实现高可信度的匿名性。",
+      "explanation": "该系统使用来自数百万常规应用程序用户的“掩护流量”，使实际的安全消息与常规数据无法区分，从而保护来源免受检测。"
+    },
+    {
+      "point": "采用健壮的多组件分布式架构来实现安全和匿名的通信。",
+      "explanation": "CoverDrop 系统集成了移动应用程序模块、云 API、强化的本地 CoverNodes（使用 Rust 编写）和记者桌面应用程序，以确保端到端安全和来源匿名。"
+    },
+    {
+      "point": "满足了新闻业对保护信息来源的迫切需求，尤其是在日益严格的监控环境下。",
+      "explanation": "该工具是在全球监控问题的背景下开发的，为举报人提供了一种重要的开源机制，可以在不留下可追踪证据的情况下与记者联系。"
+    }
+  ],
+  "keyQuotes": [
+    "安全消息背后的技术，通过使消息通信与数百万常规用户在应用程序上的数据传输行为无法区分，从而隐藏了消息传递的事实。",
+    "通过使用卫报应用程序，其他用户实际上提供了“掩护”，并帮助我们保护来源。",
+    "当信息源向记者发送消息时，该消息及其自动生成的公钥会使用记者的公钥进行加密。然后，将加密后的密文替换为一条常规的“掩护消息”。",
+    "来源消息和掩护消息都以相同的方式加密，长度相同，并且在相同的时间发送。因此，从网络观察者的角度来看，它们是无法区分的。",
+    "用于安全通信的设备如果被查获，将不会显示此类使用的证据，前提是解密密码不为人所知。"
+  ],
+  "tags": [
+    "信息安全",
+    "新闻业",
+    "安全消息",
+    "可信的否定性",
+    "举报"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 756,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1752278400000,
+  "publishDateStr": "2025-07-12",
+  "publishDateTimeStr": "2025-07-12 00:00:00"
+}

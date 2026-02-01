@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a22cc1c2",
+  "title": "🚀 梦幻更新！VS Code v1.108 来了：速度是单车变跑车！",
+  "url": "https://juejin.cn/post/7595683968684834862",
+  "date": "2026-01-17 01:06:45",
+  "author": "golang学习记",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>vscode前几天发布了最新的v1.108版本，黛拉了一波让人拍案叫绝的新能力，准备好升级你的编码幸福感了吗？Let’s go! 💻✨</p>\n   <hr>\n   <blockquote>\n    <p>编码到凌晨三点，咖啡见底，bug 满屏？别慌，VS Code 刚刚悄悄给你塞了个“外挂”——而且还是免费的！</p>\n   </blockquote>\n   <hr>\n   <h2 data-id=\"heading-0\">🤖 AI Agent Skills：你的专属 Copilot，现在能“学技能”了！</h2>\n   <p>Copilot 不再只是个“读代码的助手”，它现在可以 <strong>学习你自定义的技能</strong>！只要在项目根目录下创建一个 <code>.github/skills/</code> 或 <code>.claude/sskills/</code> 文件夹（没错，连 Claude 都被安排上了），就能教它干特定的事。</p>\n   <p><strong>举个栗子🌰</strong>：</p>\n   <ul>\n    <li>你是安全工程师？写个技能让它自动识别渗透测试命令。</li>\n    <li>你是前端老手？教它一键生成 Tailwind 组件模板。</li>\n   </ul>\n   <blockquote>\n    <p>这就像给你的 AI 助手报了个“兴趣班”——学完回来，干活都带着 BGM。</p>\n   </blockquote>\n   <p>⚠️ 注意：目前还是 <strong>实验性功能</strong>，但值得尝鲜！</p>\n   <hr>\n   <h2 data-id=\"heading-1\">💬 聊天界面大瘦身：告别“聊天坟场”</h2>\n   <p>以前一打开 VS Code，满屏都是上周三和 Copilot 讨论“为什么 Go 泛型这么难”的对话记录……现在？</p>\n   <ul>\n    <li>聊天会话 <strong>不再自动加载</strong></li>\n    <li>每个会话都有清晰标题</li>\n    <li>界面清爽得像刚擦过的玻璃</li>\n   </ul>\n   <blockquote>\n    <p>就像每次回家前，AI 帮你把房间收拾干净，迎接新一天的 bug（和灵感）。</p>\n   </blockquote>\n   <p><img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/0a219abd47af42949257b1aa088b9d16~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgZ29sYW5n5a2m5Lmg6K6w:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769216805&amp;x-signature=hv0TwDcXcoJc9LImNTeYp9JYOIw%3D\" alt=\"在这里插入图片描述\" loading=\"lazy\"></p>\n   <hr>\n   <h2 data-id=\"heading-2\">⚡ 终端终于懂事了：安全命令自动放行！</h2>\n   <p>还在为每次 <code>git ls-files</code> 或 <code>npm run dev</code> 都要点“允许”而抓狂？1.108 版本引入了 <strong>终端命令自动批准机制</strong>。</p>\n   <p>✅ 自动放行的安全命令包括：</p>\n   <ul>\n    <li><code>git ls-files</code></li>\n    <li><code>rg</code>（Ripgrep）</li>\n    <li>已知的 <code>npm scripts</code></li>\n   </ul>\n   <blockquote>\n    <p>它就像你手机的人脸识别：熟人直接进，陌生人先站住！</p>\n   </blockquote>\n   <p>当然，<strong>危险命令依然会被拦下</strong>——安全第一，快乐第二（但其实两者兼得）。 <img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/d54bb68a646e490aa0875aa4e79be730~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgZ29sYW5n5a2m5Lmg6K6w:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769216805&amp;x-signature=lOud6yUW0oC8rG8yY2BRDAl9HLY%3D\" alt=\"在这里插入图片描述\" loading=\"lazy\"></p>\n   <hr>\n   <h2 data-id=\"heading-3\">♿ 无障碍体验升级：让每位开发者都被看见</h2>\n   <p>VS Code 这次认真听了社区的声音：</p>\n   <ul>\n    <li><strong>实时聊天流</strong> 支持无障碍视图（Accessible View）</li>\n    <li>屏幕阅读器兼容性更强</li>\n   </ul>\n   <h3 data-id=\"heading-4\">窗口标题中显示当前语言 ID（比如 <code>Go - main.go</code>）</h3>\n   <p>新版本增加了window.title 设置。该变量显示当前活动编辑器的语言标识符，这对于 Talon 等辅助工具非常有用，这些工具需要确定当前编程语言以启用相应的语音命令。</p>\n   <blockquote>\n    <p>Talon​ 是一款基于语音和眼动追踪的辅助技术工具，专为编程和计算机操作而设计。它允许用户通过语音命令和眼球运动来控制计算机，无需使用键盘和鼠标。</p>\n   </blockquote>\n   <p>配置如下 <img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/af0d67595d6246e89601c164acc33bd3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgZ29sYW5n5a2m5Lmg6K6w:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769216805&amp;x-signature=M5TjkISXIskgpO%2FBXZWz0nsuY8M%3D\" alt=\"在这里插入图片描述\" loading=\"lazy\"></p>\n   <blockquote>\n    <p>编程不该有门槛。这次更新，是向“人人可编码”迈出的一大步。</p>\n   </blockquote>\n   <hr>\n   <h2 data-id=\"heading-5\">🏎️ 终端性能起飞：粘贴长命令不再卡成 PPT</h2>\n   <p>现在的终端，<strong>快得像装了氮气加速</strong>——你敲命令，它秒响应。 右侧新增了眼睛图标，可用于重新启用快速建议和触发字符建议功能。 <img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4937e589b0a847fb9362e482ec537bce~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgZ29sYW5n5a2m5Lmg6K6w:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769216805&amp;x-signature=gSwfi5qLnG3vi%2FuiztcfTOnDq1w%3D\" alt=\"在这里插入图片描述\" loading=\"lazy\"> 第一次打开的时候，还会提示你，帮助你快速进入高效状态。 <img src=\"https://p9-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/60b6375b15ed4c6c92c26d74773fdb0f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgZ29sYW5n5a2m5Lmg6K6w:q75.awebp?rk3s=f64ab15b&amp;x-expires=1769216805&amp;x-signature=j%2BJG%2BiHTiWhNJLfxzGoU368In4A%3D\" alt=\"在这里插入图片描述\" loading=\"lazy\"></p>\n   <hr>\n   <h2 data-id=\"heading-6\">✅ 实用小贴士</h2>\n   <h3 data-id=\"heading-7\">✅ 建议做：</h3>\n   <ul>\n    <li>开启 <strong>Agent Skills</strong>，定制你的 AI 工作流</li>\n    <li>用 <code>Ctrl + Space</code> 触发终端智能建议</li>\n    <li>试试新的 <strong>断点树形视图</strong>（Debug 更直观）</li>\n    <li>探索 <strong>Git Worktrees</strong> 新支持（多分支开发神器）</li>\n   </ul>\n   <h3 data-id=\"heading-8\">❌ 别踩坑：</h3>\n   <ul>\n    <li>别盲目自动批准所有命令（安全红线不能碰）</li>\n    <li>别以为旧聊天记录消失了（它们还在，只是不自动加载）</li>\n    <li>别跳过更新日志——这次微软一口气关了 <strong>6000+ issues</strong>！</li>\n   </ul>\n   <hr>\n   <h2 data-id=\"heading-9\">🎉 最后一句大实话</h2>\n   <p>VS Code 1.108 不是“又一个版本”，而是一次 <strong>生产力跃迁</strong>。\n    <br>\n    无论你是 Go 泛型爱好者、SSE 实战派，还是每天和终端斗智斗勇的普通打工人——<strong>这次更新，都值得你点一下“检查更新”</strong>。</p>\n   <p><strong>Happy Coding！</strong> 🚀</p>\n   <hr>\n  </div>\n </body>\n</html>",
+  "aiSummary": "VS Code v1.108 带来了 AI Agent Skills、终端性能优化、聊天界面瘦身、无障碍升级等多项重磅更新，大幅提升开发者生产力与使用体验。",
+  "oneSentenceSummary": "VS Code v1.108 带来了 AI Agent Skills、终端性能优化、聊天界面瘦身、无障碍升级等多项重磅更新，大幅提升开发者生产力与使用体验。",
+  "summary": "本文详细介绍了 VS Code v1.108 版本的多项重要更新，旨在显著提升开发者的编码效率和体验。主要亮点包括：AI Agent Skills 的引入，允许用户自定义 Copilot 的能力，使其能执行特定任务；聊天界面优化，对话管理更加清晰整洁；终端命令自动批准机制，提高了开发流程的安全性与便捷性；无障碍体验升级，通过支持实时聊天流和屏幕阅读器、窗口标题显示语言 ID 等功能，确保更广泛的开发者群体能够顺畅使用；以及显著的终端性能提升，解决粘贴长命令卡顿问题。文章还提供了实用建议，提醒开发者充分利用新功能，并避免常见错误，强调了此次更新对开发者生产力的积极影响。",
+  "mainPoints": [
+    {
+      "point": "AI Agent Skills：Copilot 升级，支持用户自定义技能扩展。",
+      "explanation": "VS Code 引入了实验性的 AI Agent Skills 功能，允许开发者通过配置文件夹教授 Copilot 执行特定任务，如安全识别或代码模板生成，显著提升 AI 助手的智能化和个性化能力。"
+    },
+    {
+      "point": "终端体验优化：实现安全命令自动放行和性能大幅提升。",
+      "explanation": "新版本增加了终端命令自动批准机制，对安全命令如 `git ls-files` 自动放行，同时显著提高了终端的运行速度和响应效率，解决了粘贴长命令时的卡顿问题，提升了开发者日常操作的流畅性。"
+    },
+    {
+      "point": "用户界面改进：聊天界面更整洁，无障碍支持更完善。",
+      "explanation": "聊天会话不再自动加载，并拥有清晰标题，使界面更加清爽；同时，通过支持实时聊天流的无障碍视图和屏幕阅读器兼容性增强，结合窗口标题语言 ID 显示，确保了更广泛人群的使用便利性。"
+    },
+    {
+      "point": "生产力全面跃迁：多项细节优化提升开发效率。",
+      "explanation": "除了核心更新，版本还包括调试断点树形视图、Git Worktrees 支持等实用小功能，以及关闭了 6000+ 问题的修复，综合提升了 VS Code 的稳定性和开发效率，使其成为一次全面的生产力升级。"
+    }
+  ],
+  "keyQuotes": [
+    "AI Agent Skills：你的专属 Copilot，现在能\"学技能\"了！",
+    "终端终于懂事了：安全命令自动放行！",
+    "无障碍体验升级：让每位开发者都被看见",
+    "终端性能起飞：粘贴长命令不再卡成 PPT",
+    "VS Code 1.108 不是\"又一个版本\"，而是一次生产力跃迁。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1190,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768612005000,
+  "publishDateStr": "01-17",
+  "publishDateTimeStr": "2026-01-17 01:06:45"
+}

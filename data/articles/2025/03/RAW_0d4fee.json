@@ -1,0 +1,53 @@
+{
+  "id": "RAW_0d4fee",
+  "title": "Open R1：本地 OlympicCoder 编码实践",
+  "url": "https://huggingface.co/blog/olympic-coder-lmstudio",
+  "date": "2025-03-20 00:00:00",
+  "author": "ben burtenshaw, Vaibhav Srivastav, Lewis Tunstall, Edward Beeching, Yagil Burowski",
+  "siteName": "Hugging Face Blog",
+  "content": "<!-- HTML_TAG_START -->\n<html>\n <head></head>\n <body>\n  <p>Everyone’s been using Claude and OpenAI as coding assistants for the last few years, but there’s less appeal if you look at the developments coming out of open source projects like <a href=\"https://huggingface.co/open-r1\">Open R1</a>. If we look at the evaluation on <a href=\"https://livecodebench.github.io\">LiveCodeBench</a> below, we can see that the 7B parameter variant outperforms Claude 3.7 Sonnet and GPT-4o. These models are the daily driver of many engineers in applications like Cursor and VSCode.</p>\n  <p><a href=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/lcb-evals.png\" rel=\"nofollow\"><img src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/lcb-evals.png\" alt=\"evals\"></a></p>\n  <p>Evals are great and all, but I want to get my hands dirty and feel the commits! This blog post focuses on how you can integrate these models in your IDE now. We will set up OlympicCoder 7B, the smaller of the two OlympicCoder variants, and we’ll use a quantized variant for optimum local inference. Here’s the stack we’re going to use:</p>\n  <ul>\n   <li>OlympicCoder 7B. The 4bit GGUF version from the <a href=\"https://huggingface.co/lmstudio-community/OlympicCoder-7B-GGUF\">LMStudio Community</a></li>\n   <li>LM Studio: A tool that simplifies running AI models</li>\n   <li>Visual Studio Code (VS Code)</li>\n   <li><a href=\"https://www.continue.dev/\">Continue</a> a VS Code extension for local models</li>\n  </ul>\n  <p>It’s important to say that we chose this stack purely for simplicity. You might want to experiment with the larger model and/ or different GGUF files. Or even alternative inference engines like <a href=\"https://github.com/ggml-org/llama.cpp\">llama.cpp</a>.</p>\n  <p><a href=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/generation.gif\" rel=\"nofollow\"><img src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/generation.gif\" alt=\"generation\"></a></p>\n  <p>LM Studio is like a control panel for AI models. It integrates with the Hugging Face hub to pull models, helps you find the right GGUF file, and exposes an API that other applications can use to interact with the model.</p>\n  <p>In short, it lets you download and run them without any complicated setup.</p>\n  <ol>\n   <li>Go to the LM Studio website: Open your web browser and go to <a href=\"https://lmstudio.ai/download\">https://lmstudio.ai/download</a>.</li>\n   <li>Choose your operating system: Click the download button for your computer (Windows, Mac, or Linux).</li>\n   <li>Install LM Studio: Run the downloaded file and follow the instructions. It’s just like installing any other program.</li>\n  </ol>\n  <p>The GGUF files that we need are hosted on the hub. We can open the model from the hub in LMStudio, using the ‘Use this model’ button:</p>\n  <p><a href=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/model_page.png\" rel=\"nofollow\"><img src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/model_page.png\" alt=\"model_page\"></a></p>\n  <p>This will link to the LMStudio application and open it on your machine. You’ll just need to Choose a Quantization. I went for <code>Q4_K_M</code> because it will perform well on most devices. If you have more compute, you might want to try out one of the options with <code>Q8_*</code>.</p>\n  <p>If you want to skip the UI, you can also load models with <code>LMStudio</code> via the command line:</p>\n  <pre><code>lms get lmstudio-community/OlympicCoder-7B-GGUF\nlms load olympiccoder-7b\nlms server start\n</code></pre>\n  <p>This is the important part. We now need to integrate VScode with the model served by LMStudio.</p>\n  <ol>\n   <li>In LM Studio, activate the server on the ‘Developer’ tab. This will expose the endpoints at <code>http://localhost:1234/v1</code>.</li>\n  </ol>\n  <p><a href=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/lm-studio.png\" rel=\"nofollow\"><img src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/lm-studio.png\" alt=\"lmstudio\"></a></p>\n  <ol start=\"2\">\n   <li><strong>Install the VS Code Extension</strong> to connect to our local server. I went for Continue.dev, but there are other options too. \n    <ul>\n     <li>In VSCode, go to the Extensions view (click the square icon on the left sidebar, or press Ctrl+Shift+X / Cmd+Shift+X).</li>\n     <li>Search for “Continue” and install the extension from “Continue Dev”.</li>\n    </ul></li>\n   <li><strong>Configure a New Model</strong> in Continue.dev \n    <ul>\n     <li>Open the Continue tab and in the models dropdown, select ‘add new chat model’.</li>\n     <li>This will open a json configuration file. You’ll need to specify the model name. I.e. olympiccoder-7b</li>\n    </ul></li>\n  </ol>\n  <p><a href=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/continue_dev.png\" rel=\"nofollow\"><img src=\"https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/olympic-coder-lmstudio/continue_dev.png\" alt=\"continue\"></a></p>\n  <p>Most of the core AI features in vscode are available via this setup, for example:</p>\n  <ul>\n   <li><strong>Code Completion:</strong> Start typing, and the AI will suggest how to finish your code.</li>\n   <li><strong>Generate Code:</strong> Ask it to write a function or a whole block of code. For example, you could type (in a comment or a chat window, depending on the extension): // Write a function to reverse a string in JavaScript</li>\n   <li><strong>Explain Code:</strong> Select some code and ask the AI to explain what it does.</li>\n   <li><strong>Refactor Code:</strong> Ask the AI to make your code cleaner or more efficient.</li>\n   <li><strong>Write Tests:</strong> Ask the AI to create unit tests for your code.</li>\n  </ul>\n  <p>OlympicCoder is not Claude. It’s optimised on the <a href=\"https://huggingface.co/datasets/open-r1/codeforces-cots\">CodeForces-CoTs</a> dataset which is based on competitive coding challenges. That means that you should not expect it to be super friendly and explanatory. Instead, roll up your sleeves and expect a no-holds barred competitive coder ready to deal with tough problems.</p>\n  <p>You might want to mix up OlympicCoder with other models to get a rounded coding experience. For example, if you’re trying to squeeze milliseconds out of a binary search, try OlympicCoder. If you want to design a user facing API, go for Claude-3.7-sonnet or <a href=\"https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct\">Qwen-2.5-Coder</a>.</p>\n  <ul>\n   <li>Share your favorite generations in the comments below</li>\n   <li>Try out another variant of <a href=\"https://huggingface.co/collections/open-r1/olympiccoder-67d0927b5ee0dde083bed8cd\">OlympicCoder</a> from the hub.</li>\n   <li>Experiment with quantization types based on your hardware.</li>\n   <li>Try out multiple models in LM Studio for different coding vibes! Check out the model catalog <a href=\"https://lmstudio.ai/models\">https://lmstudio.ai/models</a></li>\n   <li>Experiment with other VS Code extensions like <a href=\"https://github.com/cline/cline\">Cline</a> which have agentic functionality</li>\n  </ul><!-- HTML_TAG_END -->\n </body>\n</html>",
+  "aiSummary": "本教程介绍如何使用 LM Studio 在本地运行 Open R1 OlympicCoder 模型，并将其集成到 VS Code 中以进行代码辅助功能。",
+  "oneSentenceSummary": "本教程介绍如何使用 LM Studio 在本地运行 Open R1 OlympicCoder 模型，并将其集成到 VS Code 中以进行代码辅助功能。",
+  "summary": "本文是一篇教程，详细介绍了如何在本地设置和使用 Open R1 OlympicCoder 模型作为代码辅助工具。首先，文章强调了 OlympicCoder 在 LiveCodeBench 上的优异性能，甚至超过了 Claude 3 Sonnet 和 GPT-4o。然后，文章提供了一个简单的配置方案，包括使用 LM Studio 运行 OlympicCoder 7B 的量化版本，并使用 Continue VS Code 扩展将其集成到 Visual Studio Code 中。文章详细说明了 LM Studio 的安装和配置，以及如何在 VS Code 中配置 Continue 扩展以连接到本地模型。最后，文章还讨论了 OlympicCoder 的优势和局限性，并建议将其与其他模型结合使用以获得更完善的编码体验。",
+  "mainPoints": [
+    {
+      "point": "OlympicCoder 在代码竞赛任务中表现出色，但在通用场景下的解释能力可能不足。",
+      "explanation": "该模型在 CodeForces-CoTs 数据集上进行了优化，擅长解决具有挑战性的编码问题，但不一定像其他模型那样友好和具有解释性。"
+    },
+    {
+      "point": "LM Studio 简化了 AI 模型的本地运行和管理。",
+      "explanation": "LM Studio 提供了一个用户友好的界面，可以从 Hugging Face Hub 下载和运行模型，而无需复杂的设置。"
+    },
+    {
+      "point": "Continue VS Code 扩展使在 VS Code 中使用本地 AI 模型成为可能。",
+      "explanation": "Continue 允许开发者配置和使用本地 AI 模型，以实现代码完成、代码生成、代码解释、代码重构和编写测试等功能。"
+    }
+  ],
+  "keyQuotes": [
+    "Evals are great and all， but I want to get my hands dirty and feel the commits!",
+    "LM Studio is like a control panel for AI models.",
+    "OlympicCoder is not Claude. It's optimised on the CodeForces-CoTs dataset which is based on competitive coding challenges."
+  ],
+  "tags": [
+    "教程",
+    "代码生成",
+    "本地部署",
+    "VS Code",
+    "LM Studio"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 779,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1742428800000,
+  "publishDateStr": "2025-03-20",
+  "publishDateTimeStr": "2025-03-20 00:00:00"
+}

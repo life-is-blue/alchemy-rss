@@ -1,0 +1,53 @@
+{
+  "id": "RAW_816aab",
+  "title": "200 美金，人人可手搓 QwQ，清华、蚂蚁开源极速 RL 框架 AReaL-boba",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-31-2",
+  "date": "2025-03-31 02:52:03",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p><br></p>\n  <p>由于 DeepSeek R1 和 OpenAI o1 等推理模型（LRM，Large Reasoning Model）带来了新的 post-training scaling law，强化学习（RL，Reinforcement Learning）成为了大语言模型能力提升的新引擎。然而，针对大语言模型的大规模强化学习训练门槛一直很高：</p>\n  <ul>\n   <li>\n    <p>流程复杂、涉及模块多（生成、训练、奖励判定等），为实现高效稳定的分布式训练带来很多挑战；</p></li>\n   <li>\n    <p>R1/o1 类推理模型的输出长度很长（超过 10K），并且随着训练持续变化，很容易造成显存和效率瓶颈；</p></li>\n   <li>\n    <p>开源社区缺乏高质量强化学习训练数据，以及完整可复现的训练流程。</p></li>\n  </ul>\n  <p>本周，蚂蚁技术研究院和清华大学交叉信息院吴翼团队，联合发布了训练速度最快最稳定的开源强化学习训练框架 AReaL（Ant Reasoning RL），并公开全部数据和完成可复现的训练脚本。在最新的 AReaL v0.2 版本 AReaL-boba 中，其 7B 模型数学推理分数刷新同尺寸模型 AIME 分数纪录，并且仅仅使用 200 条数据复刻 QwQ-32B，以不到 200 美金成本实现最强推理训练效果。</p>\n  <ul>\n   <li>\n    <section>\n     <span data-pm-slice=\"2 3 [&quot;list&quot;,{&quot;type&quot;:&quot;ul&quot;,&quot;style&quot;:&quot;margin-right: 8px;margin-left: 8px;width: 577.42px;letter-spacing: 0.578px;&quot;,&quot;class&quot;:&quot;list-paddingleft-1&quot;},&quot;listitem&quot;,{&quot;style&quot;:&quot;color: rgb(123, 12, 0);&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: left;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">项目链接：<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify; margin-left: 8px; margin-right: 8px; line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">https://github.com/inclusionAI/AReaL</span></span>\n    </section></li>\n   <li>\n    <section>\n     HuggingFace数据模型地址：https://huggingface.co/collections/inclusionAI/areal-boba-67e9f3fa5aeb74b76dcf5f0a\n    </section></li>\n  </ul>\n  <p><strong>关于 AReaL-boba</strong></p>\n  <p>AReaL 源自开源项目<strong>&nbsp;ReaLHF</strong>，旨在让每个人都能用强化学习轻松训练自己的推理模型和智能体。AReaL 承诺<strong>完全开放与可复现</strong>，团队将持续发布与训练 LRM 相关的所有代码、数据集和训练流程。所有核心组件全部开源，开发者可无阻碍地使用、验证和改进 AReaL。</p>\n  <p>本次最新版本<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;node&quot;,{&quot;tagName&quot;:&quot;span&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 15px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">「boba</span><span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;text-align: justify;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;node&quot;,{&quot;tagName&quot;:&quot;span&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 15px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">」的命名一方面源自团队对珍珠奶茶的偏爱，另一面也是希望强化学习技术能如奶茶成为大众饮品一般，渗透至 AI 开发的每个日常场景，普惠整个社区。</span></p>\n  <p><strong>AReaL-boba 发布亮点</strong></p>\n  <p><strong>训练速度最快的开源框架</strong></p>\n  <p>AReaL-boba 是<strong>首个全面拥抱 xAI 公司所采用的 SGLang 推理框架的开源训练系统</strong>，对比初代 AReaL 训练大幅度提升训练吞吐：通过集成 SGLang 框架及多项工程优化，AReaL-boba 可以无缝适配各种计算资源下的强化学习训练，实现吞吐在 1.5B 模型尺寸上速度提升 35%，在 7B 模型速度提升 60%，32B 模型速度提升 73%。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/be470a9a-2694-488c-482b-b01173f2f900/public\" data-ratio=\"0.5619295958279009\" data-s=\"300,640\" data-type=\"png\" data-w=\"767\" type=\"block\" data-imgfileid=\"503478820\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/c2e3c105-318c-45e5-9f43-d5a522817bfa/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图 1：AreaL-boba 对比初代 AReaL 训练大幅度提升训练吞吐</sup></p>\n  <p><strong>使用 AReaL-boba 即可以 128 张 H800 规模在 1 天内训练完成 SOTA 1.5B 推理模型，以 256 张 H800 规模在 2 天内完成 SOTA 7B 推理模型训练。</strong></p>\n  <p>AReaL 希望让整个社区不论单机器，还是大规模分布式训练，都可以轻松高效率驾驭强化学习。</p>\n  <p><strong>7B 模型数学推理分数断崖领先</strong></p>\n  <p>AReaL 团队以 Qwen-R1-Distill-7B 模型为基础模型，通过大规模强化学习训练，即可在 2 天内取得领域最佳的数学推理能力，实现 AIME 2024 61.9 分、AIME 2025 48.3 分，刷新开源社区记录，也大幅超越了 OpenAI o1-preview。相比基础模型，AReaL-boba 通过强化学习让模型能力实现跃升 —— 在 AIME 2024 上提升 6.9 分，在 AIME 2025 提升 8.6 分 —— 再次证明了 RL Scaling 的价值。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/94cea789-bd4a-4c0c-3b2b-ce6d600f9000/public\" data-ratio=\"0.35348837209302325\" data-s=\"300,640\" data-type=\"png\" data-w=\"860\" type=\"block\" data-imgfileid=\"503478822\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/f6409875-b07b-4209-89ac-2de8bddb643b/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;表 1: 同类参数模型的不同基准测试分数</sup></p>\n  <p>同时 AReaL-boba 不仅开源了推理模型，也开源所有的训练数据 <strong>AReaL-boba-106k</strong>，以及全部的训练脚本和评估脚本，确保人人可复现。在<strong>项目官方仓库</strong>上，AReaL 团队也放出了极其详细的技术笔记，总结了大量训练中的关键点，包括 PPO 超参数、奖励函数设置、正则化设置、长度上限设置等等。&nbsp;</p>\n  <p><strong>通过创新性数据蒸馏技术，200 条数据复现 QwQ-32B</strong></p>\n  <p>在 32B 模型尺寸上，AReaL 团队进一步精简训练数据并发布数据集 AReaL-boba-SFT-200 以及相关训练脚本。基于 R1-Distill-Qwen-32B，AReaL-boba 使用仅仅 200 条数据并以轻量级 SFT 的方式，在 AIME 2024 上复刻了 QwQ-32B 的推理结果，相当于仅仅使用了 200 美金的计算成本，让所有人都可以以极低的成本实现最强的推理训练效果。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67e1a7bd-7da6-4f47-1769-5714a8874300/public\" data-ratio=\"0.482\" data-s=\"300,640\" data-type=\"png\" data-w=\"500\" type=\"block\" data-imgfileid=\"503478823\" data-original-style=\"width:355px;height:171px;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/3c211ad4-8521-4c71-a65f-29d0e653366d/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;表 2：同类参数模型的 AIME 2024 分数</sup></p>\n  <p><strong>结语</strong></p>\n  <p>AReaL 团队的核心成员均来自于蚂蚁研究院强化学习实验室以及交叉信息研究院吴翼团队，项目也借鉴了大量优秀的开源项目，比如 DeepScaleR、SGLang、QwQ、Open-Reasoner-Zero、OpenRLHF、veRL、Light-R1 和 DAPO。作为国内第一个完整开源（数据、代码、模型、脚本全开源）的强化学习项目团队，AReaL 希望能真正实现 AI 训练的普惠。</p>\n  <p>AReaL 团队在项目列表中也列出了团队后续的开源计划和目标，包括异步训练、训练吞吐优化、数据集和算法升级，以及代码和 Agent 智能体能力支持。让我们期待 AReaL 团队的下一个 release，猜猜是哪一款奶茶呢？</p>\n \n",
+  "aiSummary": "AReaL-boba 框架以低成本和高效率刷新了 7B 模型数学推理记录，并使用少量数据复刻了大型模型的效果，降低了大模型强化学习训练门槛。",
+  "oneSentenceSummary": "AReaL-boba 框架以低成本和高效率刷新了 7B 模型数学推理记录，并使用少量数据复刻了大型模型的效果，降低了大模型强化学习训练门槛。",
+  "summary": "AReaL-boba 是由蚂蚁技术研究院和清华大学交叉信息院吴翼团队联合开源的强化学习训练框架。该框架旨在解决大模型强化学习训练的成本和效率问题。AReaL-boba 集成了 SGLang 推理框架，大幅提升了训练吞吐，并以 Qwen-R1-Distill-7B 为基础模型，在数学推理能力上取得了领先成绩，刷新了开源社区记录。此外，该框架还通过创新性数据蒸馏技术，使用 200 条数据复现了 QwQ-32B 的推理结果，大大降低了训练成本。AReaL-boba 完全开源，包括数据、代码、模型和脚本，并借鉴了 DeepScaleR、SGLang 等优秀开源项目，致力于实现 AI 训练的普惠。",
+  "mainPoints": [
+    {
+      "point": "AReaL-boba 显著提升了强化学习训练速度和效率，降低了使用门槛",
+      "explanation": "通过集成 SGLang 框架和多项工程优化，AReaL-boba 在不同模型尺寸上实现了训练吞吐的显著提升，降低了训练时间和计算成本，使得更多开发者可以参与到大模型训练中。"
+    },
+    {
+      "point": "AReaL-boba 在数学推理能力上取得了领先优势",
+      "explanation": "以 Qwen-R1-Distill-7B 为基础模型，通过强化学习训练，AReaL-boba 在 AIME 基准测试中刷新了开源社区记录，超越了同类参数模型。"
+    },
+    {
+      "point": "AReaL-boba 通过数据蒸馏技术降低了训练成本",
+      "explanation": "使用 200 条数据，AReaL-boba 成功复刻了 QwQ-32B 的推理结果，证明了以极低成本实现高性能推理训练的可行性。"
+    }
+  ],
+  "keyQuotes": [
+    "AReaL 希望让整个社区不论单机器，还是大规模分布式训练，都可以轻松高效率驾驭强化学习。",
+    "AReaL 源自开源项目**ReaLHF** ，旨在让每个人都能用强化学习轻松训练自己的推理模型和智能体。",
+    "AReaL 承诺**完全开放与可复现**，团队将持续发布与训练 LRM 相关的所有代码、数据集和训练流程。"
+  ],
+  "tags": [
+    "强化学习框架",
+    "强化学习",
+    "大语言模型",
+    "开源框架",
+    "数学推理"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 90,
+  "wordCount": 1644,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743389523000,
+  "publishDateStr": "2025-03-31",
+  "publishDateTimeStr": "2025-03-31 02:52:03"
+}

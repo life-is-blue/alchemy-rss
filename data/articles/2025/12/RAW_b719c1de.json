@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b719c1de",
+  "title": "探索 Mantle 的零操作员访问设计 | Amazon Web Services",
+  "url": "https://aws.amazon.com/blogs/machine-learning/exploring-the-zero-operator-access-design-of-mantle/",
+  "date": "2025-12-23 14:18:12",
+  "author": "Anthony Liguori",
+  "siteName": "AWS Machine Learning Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>At Amazon, our culture, built on honest and transparent discussion of our growth opportunities, enables us to focus on investing and innovating to continually raise the standard on our ability to deliver value for our customers. Earlier this month, we had the opportunity to share an example of this process at work in Mantle, our next-generation inference engine for <a href=\"https://aws.amazon.com/bedrock\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Bedrock</a>. As generative AI inferencing and fine-tuning workloads continue to evolve, we need to evolve how we serve inferencing to our customers in an optimized way, which leads to the development of Mantle.</p>\n  <p>As we set out to reimagine the architecture of our next generation inferencing engine, we made raising the bar on security our top priority. AWS shares our customers’ unwavering focus on security and data privacy. This has been central to our business from the start, and it was particularly in focus from the earliest days of Amazon Bedrock. We’ve understood from the start that generative AI inference workloads present an unprecedented opportunity for customers to harness the latent value of their data, but with that opportunity comes the need to ensure the highest standards in security, privacy, and compliance as our customers build generative AI systems that process their most sensitive data and interact with their most critical systems.</p>\n  <p>As a baseline, Amazon Bedrock is designed with the same operational security standards that you see across AWS. AWS has always used a least privilege model for operations, where each AWS operator has access to only the minimum set of systems required to do their assigned task, limited to the time when that privilege is needed. Any access to systems that store or process customer data or metadata is logged, monitored for anomalies, and audited. AWS guards against any actions that would disable or bypass these controls. Additionally, on Amazon Bedrock your data is never used to train any models. Model providers have no mechanism to access customer data, because inferencing is done only within the Amazon Bedrock-owned account that model providers don’t have access to. This strong security posture has been a key enabler for our customers to unlock the potential of generative AI applications for their sensitive data.</p>\n  <p>With Mantle, we raised the bar even further. Following the approach of the <a href=\"https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/no-aws-operator-access.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Nitro System</a>, we have designed Mantle from the ground up to be zero operator access (ZOA), where we have intentionally excluded any technical means for AWS operators to access customer data. Instead, systems and services are administered using automation and secure APIs that protect customer data. With Mantle, there is no mechanism for any AWS operator to sign in to underlying compute systems or access any customer data, such as inference prompts or completions. Interactive communication tools like Secure Shell (SSH), <a href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html\" target=\"_blank\" rel=\"noopener noreferrer\">AWS Systems Manager Session Manager</a>, and serial consoles aren’t installed anywhere in Mantle. Additionally, all inference software updates need to be signed and verified before they can be deployed into the service, ensuring that only approved code runs on Mantle.</p>\n  <p>Mantle uses the recently released <a href=\"https://aws.amazon.com/about-aws/whats-new/2025/09/aws-announces-ec2-instance-attestation/\" target=\"_blank\" rel=\"noopener noreferrer\">EC2 instance attestation capability</a> to configure a hardened, constrained, and immutable compute environment for customer data processing. The services in Mantle that are responsible for handling model weights and conducting inference operations on customer prompts are further backed by the high assurance of cryptographically signed attestation measurements from the <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitrotpm.html\" target=\"_blank\" rel=\"noopener noreferrer\">Nitro Trusted Platform Module (NitroTPM)</a>.</p>\n  <p>When a customer calls a Mantle endpoint (for example, <code>bedrock-mantle.[regions].api.aws</code>) such as those that serve the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-mantle.html\" target=\"_blank\" rel=\"noopener noreferrer\">Responses API</a> on Amazon Bedrock, customer data (prompts) leaves the customer’s environment through TLS, and is encrypted all the way to the Mantle service, which operates with ZOA. Throughout the entire flow and in Mantle, no operator, whether from AWS, the customer, or a model provider can access the customer data.</p>\n  <p><img class=\"alignnone size-full wp-image-122158\" src=\"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/12/23/ML-20238-image-1.jpeg\" alt=\"\" width=\"912\" height=\"484\"></p>\n  <h2>Looking forward</h2>\n  <p>Mantle’s ZOA design exemplifies the long-term commitment of AWS to the security and privacy of our customers’ data. It’s this focus that has enabled teams across AWS to invest in further raising the bar for security. At the same time, we’ve made the foundational confidential computing capabilities that we internally use at Amazon, such as NitroTPM Attestation, available to all customers to use on <a href=\"https://aws.amazon.com/ec2\" target=\"_blank\" rel=\"noopener noreferrer\">Amazon Elastic Compute Cloud (Amazon EC2)</a>.</p>\n  <p>We’re not stopping here; we’re committed to continuing to invest in enhancing the security of your data and to providing you with more transparency and assurance on how we achieve this.</p>\n  <hr>\n  <h3>About the authors</h3>\n  <p style=\"clear: both\"><img loading=\"lazy\" class=\"size-full wp-image-73809 alignleft\" src=\"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/04/08/aliguori.jpeg\" alt=\"\" width=\"100\" height=\"133\"><strong>Anthony Liguori</strong> is an AWS VP and Distinguished Engineer for Amazon Bedrock, and the lead engineer for Mantle.</p>\n  <!-- '\"` -->\n </body>\n</html>",
+  "aiSummary": "AWS 的 Mantle 推理引擎凭借其零操作员访问 (ZOA) 设计，显著增强了 Amazon Bedrock 中生成式 AI 推理的安全性和数据隐私，确保 AWS 运营商无法访问敏感客户数据。",
+  "oneSentenceSummary": "AWS 的 Mantle 推理引擎凭借其零操作员访问 (ZOA) 设计，显著增强了 Amazon Bedrock 中生成式 AI 推理的安全性和数据隐私，确保 AWS 运营商无法访问敏感客户数据。",
+  "summary": "Mantle 作为 AWS 针对 Amazon Bedrock 推出的下一代生成式 AI 推理引擎，其核心特点是零操作员访问 (ZOA) 设计。该设计从根本上杜绝了 AWS 运营商通过任何技术手段访问客户数据（如推理提示或完成结果）的可能性，从而极大提升了数据隐私和安全性。Mantle 的设计借鉴了 AWS Nitro 系统，通过自动化和安全的 API 管理系统，并移除了 SSH 等交互式通信工具。所有软件更新在部署前都必须经过签名和验证。此外，Mantle 利用 EC2 实例认证能力和 Nitro 可信平台模块 (NitroTPM) 提供加密签名验证，以此构建了一个强化、受限且不可变的计算环境。文章强调了 AWS 对客户数据安全和隐私的长期承诺，并指出这些内部使用的机密计算能力也已开放给所有 EC2 客户。",
+  "mainPoints": [
+    {
+      "point": "Mantle 采用零操作员访问 (ZOA) 设计，从根本上防止 AWS 运营商访问敏感客户数据。",
+      "explanation": "通过排除 SSH 等交互式工具，并依靠自动化和安全的 API 进行系统管理，Mantle 确保了推理过程中客户数据的隐私性，进而增强了用户信任。"
+    },
+    {
+      "point": "Mantle 集成 EC2 实例认证和 NitroTPM，以建立高度安全的计算环境。",
+      "explanation": "这些技术提供加密签名认证，保证推理作业在强化、受限和不可变的隔离环境中执行，进一步加强了数据安全性。"
+    },
+    {
+      "point": "AWS 将 Mantle 的内部机密计算能力提供给 EC2 客户，提升了行业安全标准。",
+      "explanation": "这表明了 AWS 对客户数据安全的长期承诺，并使更多客户能够利用先进的安全技术来保护其敏感工作负载。"
+    }
+  ],
+  "keyQuotes": [
+    "有了 Mantle，我们进一步提升了标准……我们从头开始设计 Mantle，使其具备零操作员访问 (ZOA) 能力，刻意排除了 AWS 运营商访问客户数据的任何技术手段。",
+    "Mantle 利用最近发布的 EC2 实例认证能力来配置一个强化、受限且不可变的计算环境，用于客户数据处理。",
+    "在整个流程和 Mantle 中，无论是来自 AWS、客户还是模型提供商，任何运营商都无法访问客户数据。"
+  ],
+  "tags": [
+    "AWS",
+    "Mantle",
+    "Amazon Bedrock",
+    "生成式 AI",
+    "数据安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 747,
+  "domain": "aws.amazon.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": null,
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_3e5f61",
+  "sourceName": "AWS Machine Learning Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1766499492000,
+  "publishDateStr": "2025-12-23",
+  "publishDateTimeStr": "2025-12-23 14:18:12"
+}

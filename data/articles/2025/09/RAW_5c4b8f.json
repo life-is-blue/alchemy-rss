@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5c4b8f",
+  "title": "Gitpod 品牌重塑为 Ona，旨在成为 AI 驱动的软件开发枢纽",
+  "url": "https://www.infoq.com/news/2025/09/gitpod-ona/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-24 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Gitpod, known for offering browser-based cloud development environments, <a href=\"https://ona.com/stories/gitpod-is-now-ona\">has rebranded as Ona</a>, signaling a major shift in its vision from IDE-centric workflows to AI-driven software engineering. The company now positions itself as \"mission control for your personal team of software engineering agents\", offering tools that span planning, coding, reviewing, and deployment, powered by autonomous agents and secure infrastructure.</p>\n   <p dir=\"ltr\">Ona’s platform introduces high-autonomy agents that operate in fully sandboxed environments, each with <a href=\"https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container\">OS-level isolation</a> to avoid cross-environment interference. These Ona Agents outperform previous solutions based on their own experience. Inside its own engineering teams, they co-authored 60% of merged pull requests and contributed 72% of merged code last week. Meanwhile, according to the company, customers report a 4x increase in development throughput. The company has even extended usability across devices. Ona works via browser-based VS Code, on smartphones, or in desktop IDEs, making development seamless across contexts.</p>\n   <p dir=\"ltr\">Ona offers an ecosystem comprised of three core components: (1) Ona Environments, which are API-first, sandboxed developer environments preconfigured with dependencies and integrations and defined via devcontainer.json and automations.yml; (2) Ona Agents, AI-powered collaborators supporting multiple workflows and device types, with slash commands to automate common engineering tasks; and (3) Ona Guardrails, offering enterprise-grade security including audit trails, RBAC, SSO/OIDC, command-level controls, and deployment in user-defined VPCs.</p>\n   <p dir=\"ltr\">In contrast to Ona, competitors such as <a href=\"https://github.com/features/copilot\">GitHub Copilot</a> are positioned as an AI-powered coding assistant, an inline pair programmer integrated into your IDE, assisting with suggestions and completions. It doesn't provide sandboxed execution environments, autonomous agents, or platform-wide orchestration.<a href=\"https://github.com/features/codespaces\">GitHub Codespaces</a> offers container-based development environments, making developer setup easy by provisioning prebuilt workspaces in the cloud. However, it lacks the AI-native autonomy and agent orchestration that define Ona's platform.</p>\n   <p dir=\"ltr\">In Gitpod's prior model, it already provided secure, ephemeral cloud IDEs with integrations and compliance. But as Ona, it has evolved into a platform where AI agents take on the bulk of engineering tasks autonomously, while maintaining VPC security, auditability, and full integration with enterprise tooling. This positions Ona distinctly apart from developer tools like Copilot or Codespaces, which prioritize individual productivity within an IDE rather than team-wide agent-driven workflows.</p>\n   <p dir=\"ltr\">While most of the news around this news has been positive, on one <a href=\"https://news.ycombinator.com/item?id=45102431\">Hacker News</a> post, the announcement sparked both curiosity and critique. One user joked: \"From the headline, I could guess it was going to be an AI play with a VS Code fork.\" Another commenter noted that Ona positions itself \"as an agent layer on top of their CDE product\", rather than a standalone IDE replacement. A more skeptical voice lamented, \"RIP to Gitpod, once a great Remote Development Environment, now a generic AI agent\", questioning why this launch wasn't delivered as a separate product.</p>\n   <p>More information on <a href=\"https://ona.com/\">Ona’s products</a> can be found on the company's website.&gt;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Gitpod Rebrands to Ona, Aiming to Become the AI-Powered Center of Software Development\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/gitpod-ona/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1758715200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Gitpod 品牌重塑为 Ona 标志着向 AI 驱动的软件工程平台的重要转变，通过自主代理和沙盒环境实现。",
+  "oneSentenceSummary": "Gitpod 品牌重塑为 Ona 标志着向 AI 驱动的软件工程平台的重要转变，通过自主代理和沙盒环境实现。",
+  "summary": "Gitpod，前身为知名的云开发环境，现已品牌重塑为 Ona，将其愿景转向 AI 驱动的软件工程平台。Ona 将自己定位为“你的专属软件工程智能协作平台”，提供用于规划、编码、审查和部署的工具。该平台具有高自治性的 AI 代理，这些代理在操作系统级别的隔离沙盒环境中运行，该公司声称这显著提高了内部生产力（60% 的合并拉取请求由 AI 代理参与共同编写，72% 的代码已合并）和客户吞吐量（提高了 4 倍）。Ona 可通过各种设备访问，包括基于浏览器的 VS Code、智能手机和桌面 IDE。其生态系统包括 Ona Environments（API 优先的沙盒环境，通过 devcontainer.json 和 automations.yml 文件定义）、Ona Agents（具有斜杠命令的 AI 驱动的协作者）和 Ona Guardrails（企业级安全）。这种方法通过专注于自主的、团队范围的代理编排，而非仅仅提升 IDE 内的个人生产力，使 Ona 与 GitHub Copilot（一种 AI 编码助手）和 GitHub Codespaces（容器化 CDE）等竞争对手区分开来。虽然在很大程度上是积极的，但品牌重塑也引起了一些怀疑，即将其定位为代理层而不是独立的 IDE 替代品。",
+  "mainPoints": [
+    {
+      "point": "Ona 代表了从以 IDE 为核心的云开发模式到 AI 驱动的自主代理编排的战略转变。",
+      "explanation": "品牌重塑标志着从传统云 IDE 的转变。Ona 专注于 AI 代理，这些代理可以自主处理软件工程工作流程的重要部分，覆盖从规划到部署的各个阶段。"
+    },
+    {
+      "point": "Ona 的平台集成了 AI 代理与安全、沙盒环境和企业级护栏。",
+      "explanation": "该平台在操作系统级别的隔离环境中提供高自治性代理。同时，辅以强大的安全功能，如审计跟踪、RBAC 和 VPC 部署，确保效率和合规性。"
+    },
+    {
+      "point": "Ona 通过提供团队范围的、代理驱动的工作流程实现差异化，这与侧重个人生产力的工具形成对比。",
+      "explanation": "与 GitHub Copilot 或 Codespaces 等提升个人开发者生产力的工具不同，Ona 旨在通过自主代理协调团队工作流程，从而显著提高整体开发吞吐量。"
+    }
+  ],
+  "keyQuotes": [
+    "该公司现在将自己定位为“你的专属软件工程智能协作平台”，提供涵盖规划、编码、审查和部署的工具，由自主代理和安全基础设施提供支持。",
+    "在其工程团队内部，上周 60% 的合并拉取请求由 AI 代理参与共同编写，72% 的代码已合并。",
+    "这使得 Ona 与 Copilot 或 Codespaces 等开发者工具截然不同，后者更侧重于提升 IDE 内的个人生产力，而 Ona 关注团队范围的代理驱动的工作流程。",
+    "一个更加怀疑的声音感叹道，“Gitpod 完了，曾经是个很棒的远程开发环境，现在成了个平平无奇的 AI 代理”，质疑为什么这个版本不单独发布。"
+  ],
+  "tags": [
+    "AI 代理",
+    "软件工程",
+    "云开发环境",
+    "开发者工具",
+    "AI 软件开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 461,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758715200000,
+  "publishDateStr": "2025-09-24",
+  "publishDateTimeStr": "2025-09-24 12:00:00"
+}

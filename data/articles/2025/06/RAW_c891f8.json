@@ -1,0 +1,55 @@
+{
+  "id": "RAW_c891f8",
+  "title": "新\"SOTA\"推理模型避战 Qwen 和 R1？欧版 OpenAI 被喷麻了",
+  "url": "https://www.qbitai.com/2025/06/292919.html",
+  "date": "2025-06-11 06:16:59",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"33\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"34\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">“欧洲的OpenAI”Mistral AI终于发布了首款推理模型——<strong>Magistral</strong>。</p>\n  <p data-track=\"3\">然而再一次遭到网友质疑：怎么又不跟最新版Qwen和DeepSeek R1 0528对比？</p>\n  <p data-track=\"4\"><em>（此前该公司发布Ministral 3B/8B时，声称“始终优于同行”，却没有对比Qwen2.5）</em></p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67d98d37-a63b-470f-62d1-ea24933b0400/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"160\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bf5e0e1f-ff7e-4a89-f1d4-79dbc9a68a00/public\" data-ic=\"false\" data-width=\"994\" data-height=\"234\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">在该模型发布的前几个小时，Mistral AI的CEO Arthur Mensch在接受炉边访谈时声称即将发布的Magistral能够与其他所有竞争对手相抗衡。</p>\n  <p data-track=\"6\">在官方展示的基准测试结果中，<strong>DeepSeek-R1</strong>的数据确实不是最新的<em>（在AIME-25数学测试中，DeepSeek-R1-0528的准确率已经从旧版的70%提升至87.5%）</em>，并且比较行列里完全不见<strong>Qwen</strong>的身影。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/db7f14a5-3ee1-44a7-113c-1dd2ce9b5f00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"473\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">不过，与同公司初期模型<strong>Mistral Medium 3</strong>相比，该框架在AIME-24上的准确率提升了50%。</p>\n  <p data-track=\"8\">此次Magistral发布了两种版本：</p>\n  <p data-track=\"9\"><strong>Magistral Small</strong>——24B参数的开源权重版本，可在Apache 2.0许可下自行部署。</p>\n  <p data-track=\"10\"><strong>Magistral Medium</strong>——更强大的、面向企业的版本，在Amazon SageMaker上提供。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/67d4a27a-2d34-4f17-6d69-4fbd0531a700/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"391\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">在Magistral发布之前，Mistral AI的CEO Arthur Mensch在访谈中提到：</p>\n  <blockquote>\n   <p data-track=\"13\">“从历史上看，我们看到美国的模型用英语进行推理，中国的模型更擅长用中文进行推理。”</p>\n  </blockquote>\n  <p data-track=\"14\">于是，这次Magistral的一个亮点就是支持<strong>多语言推理</strong>，尤其是解决了主流模型用欧洲语言的推理效果不如本土语言的缺陷。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e4b12737-7352-4a9d-6c07-fc17fb0df100/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"180\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"15\">下面的例子展示了在Le Chat中，使用Magistral Medium的阿拉伯语提示和响应。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fc096d6b-1ad8-4c57-37af-e71629558600/public\" data-ic=\"false\" data-width=\"1079\" data-height=\"593\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"16\">与通用模型不同的是，Magistral针对多步逻辑进行了微调，提升了可解释性，并在用户的语言中提供了<strong>可追溯的思考过程</strong>，能够实现大规模实时推理。</p>\n  <p data-track=\"17\">下面的例子展示了重力、摩擦和碰撞的单次物理模拟，在预览中使用的是Magistral Medium。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/85bca85c-3249-4786-f18f-6eb3dc82c900/public\" data-ic=\"false\" data-width=\"1000\" data-height=\"549\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"18\">就好像Magistral不是黑箱预言家，而是一个能陪你「摆事实、讲道理」的智能伙伴。</p>\n  <p data-track=\"19\">并且，在Le Chat中，通过Flash Answers，Magistral Medium的token吞吐量比大多数竞争对手快10倍。</p>\n  <p data-track=\"20\">这就能够实现大规模的实时推理和用户反馈。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://www.qbitai.com/wp-content/uploads/replace/b74c6ad6270c02a77a2989eb4c755862.gif\" data-ic=\"false\" data-width=\"1000\" data-height=\"549\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">作为Mistral推出的首个基于纯强化学习（RL）训练的推理大模型，Magistral采用改进的Group Relative Policy Optimization（GRPO）算法。</p>\n  <p data-track=\"22\">直接通过RL训练，不依赖任何现有推理模型的蒸馏数据（如DeepSeek-R1需SFT预热）。</p>\n  <p data-track=\"23\">通过消除KL散度惩罚、动态调整探索阈值和基于组归一化的优势计算，在AIME-24数学基准上实现从26.8%到73.6%的准确率跃升。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/de9f53de-b366-41ab-822c-db7a00bebe00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"473\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">首创异步分布式训练架构，通过Generators持续生成、Trainers异步更新的设计，配合动态批处理优化，实现高效的大规模RL训练。</p>\n  <p data-track=\"25\">还反直觉地发现纯文本RL训练可提升多模态性能（如MMMU-Pro-Vision提升12%），并验证RL对小模型同样有效（24B的Magistral Small在AIME-24准确率达70.7%）。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d730c7ab-ae8b-4943-8bfb-7625c95b6700/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"619\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">这些创新使Magistral在无需预训练蒸馏的情况下，以纯RL方式为LLM的强化学习训练提供了新范式。</p>\n  <p data-track=\"28\">官方没有给出Magistral与最新版Qwen和R1的对比，网友来代劳了。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c048dc1-eb24-4c26-8970-c93852371d00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"683\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"29\">从结果可以看出，Qwen 4B与该模型相近，小型的30B MoE效果更好，R1最新版就更不用说了（doge</p>\n  <p data-track=\"30\">并且，由于“欧洲的OpenAI”越来越不Open，Stability AI前CEO建议Mistral AI应该争取真正的开源来占据开源的领导地位。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"新“SOTA”推理模型避战Qwen和R1？欧版OpenAI被喷麻了\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/73c0edc5-4023-4b9b-a40d-425c0a8dbc00/public\" data-ic=\"false\" data-width=\"1080\" data-height=\"500\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\"><em>参考链接：<br>\n     [1]https://mistral.ai/news/magistral<br>\n     [2]https://x.com/dylan522p/status/1932563462963507589<br>\n     [3]https://x.com/arthurmensch/status/1932451932406415531</em></p>\n  <p data-track=\"32\">— 完 —</p>\n  <p data-track=\"36\"><!--版权声明--></p>\n </body>\n</html>",
+  "aiSummary": "Mistral AI 发布首款纯强化学习推理模型 Magistral，但因未与最新竞品对比引争议。",
+  "oneSentenceSummary": "Mistral AI 发布首款纯强化学习推理模型 Magistral，但因未与最新竞品对比引争议。",
+  "summary": "量子位报道了 Mistral AI 推出的首款推理模型 Magistral。该模型是 Mistral AI 首个基于纯强化学习（RL）训练的大模型，采用改进的 GRPO 算法和异步分布式架构，并在 AIME-24 数学基准上实现了显著的准确率提升。文章指出 Magistral 支持多语言推理，并提供可追溯的思考过程。然而，文章重点关注了社区对 Magistral 官方基准测试结果的质疑，因其未包含最新版 Qwen 和 DeepSeek R1 的数据，CEO 此前的“能抗衡所有竞争对手”言论也因此受到审视。文章还提及了 Magistral 的不同版本（Small 开源，Medium 企业版）及其在 Amazon SageMaker 上的可用性，并引用网友对比数据，侧面印证了官方基准的不足。",
+  "mainPoints": [
+    {
+      "point": "Magistral 是 Mistral AI 首个基于纯强化学习训练的推理模型。",
+      "explanation": "模型采用改进 GRPO 算法和异步分布式架构，无需预训练蒸馏，在数学基准上展现出通过纯 RL 提升性能的潜力。"
+    },
+    {
+      "point": "模型亮点包括多语言推理和可追溯的思考过程。",
+      "explanation": "Magistral 增强了欧洲语言等推理效果，能提供“摆事实、讲道理”式的推理过程，提升了模型的可解释性和用户体验。"
+    },
+    {
+      "point": "官方基准测试对比引争议，被指避开最新竞品。",
+      "explanation": "文章核心在于质疑 Mistral AI 未将 Magistral 与最新版 Qwen 和 DeepSeek R1 进行对比，降低了官方性能声明的可信度。"
+    }
+  ],
+  "keyQuotes": [
+    "怎么又不跟最新版 Qwen 和 DeepSeek R1 0528 对比？",
+    "在官方展示的基准测试结果中，DeepSeek-R1 的数据确实不是最新的，并且比较行列里完全不见 Qwen 的身影。",
+    "此次 Magistral 的一个亮点就是支持多语言推理，尤其是解决了主流模型用欧洲语言的推理效果不如本土语言的缺陷。",
+    "Magistral 不是黑箱预言家，而是一个能陪你「摆事实、讲道理」的智能伙伴。",
+    "作为 Mistral 推出的首个基于纯强化学习（RL）训练的推理大模型，Magistral 采用改进的 Group Relative Policy Optimization（GRPO）算法。"
+  ],
+  "tags": [
+    "推理模型",
+    "AI模型",
+    "强化学习",
+    "模型训练",
+    "模型评测"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1458,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749622619000,
+  "publishDateStr": "2025-06-11",
+  "publishDateTimeStr": "2025-06-11 06:16:59"
+}

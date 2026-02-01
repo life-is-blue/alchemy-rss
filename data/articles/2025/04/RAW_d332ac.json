@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d332ac",
+  "title": "QCon London 2025：多云环境下的分布式事件驱动架构",
+  "url": "https://www.infoq.com/news/2025/04/multicloud-architecture-eda-qcon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-04-09 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The increasing adoption of multi-cloud environments to mitigate risk and address geopolitical shifts was a central theme at QCon London 2025. In her talk, <a href=\"https://www.linkedin.com/in/teenaidnani/\">Teena Idnani</a>, a Senior Solution Architect from Microsoft, guided attendees through the complexities of building resilient and consistent applications across multiple cloud providers. She used a compelling fictional case study of a traditional bank called FinBank, embarking on its multi-cloud journey.</p>\n   <p>Idnani highlighted the growing prevalence of multi-cloud, citing <a href=\"https://www.flexera.com/blog/finops/cloud-computing-trends-flexera-2024-state-of-the-cloud-report/\">reports</a> that 89% of organizations are leveraging it, with only a small fraction relying on a single cloud vendor. This trend is often coupled with hybrid cloud architectures, where organizations blend on-premise systems with various cloud services.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/multicloud-architecture-eda-qcon/news/2025/04/multicloud-architecture-eda-qcon/en/resources/1Idani 1-1744134935546.jpeg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/multicloud-architecture-eda-qcon/en/resources/1Idani 1-1744134935546.jpeg\" rel=\"share\"></p>\n   <p>FinBank's scenario illustrated this, with the bank strategically choosing to initially maintain its core banking on-premises while selectively migrating other components like risk management (to AWS for security) and advanced analytics (to Azure for AI capabilities). &nbsp;However, this distributed approach introduces significant technical challenges. Idnani delved into several key areas and offered practical mitigation strategies:</p>\n   <p><strong>Addressing Latency Across Clouds</strong></p>\n   <p>Latency becomes a critical concern when data and events traverse different cloud environments. Idnani emphasized the importance of reliable, low-latency connectivity options like Azure's ExpressRoute and AWS's Direct Connect. Beyond infrastructure, she stressed code-level optimizations such as using compression to reduce bandwidth and batch processing for efficient cross-cloud transfers. She also highlighted the importance of carefully adjusting timeout settings for retries and resource consumption.</p>\n   <p><strong>Building Resilience in Distributed Applications</strong></p>\n   <p>Resilience in a multi-cloud world extends beyond immediate availability to recovery after outages. Idnani advocated implementing event stores to persist events, enabling systematic replay capabilities to recover lost data. She also recommended leveraging resilience libraries like Kafka to manage transient and extended failures effectively. The importance of verifying delivery confirmations to ensure events persist successfully was also underscored. &nbsp;</p>\n   <p><strong>Ensuring Event Ordering and Consistency</strong></p>\n   <p>Maintaining the correct sequence of events across distributed components in different clouds is crucial, especially in transactional systems like FinBank. Idnani suggested publisher-side sequencing of events with strictly increasing sequence numbers. On the subscriber side, implementing checks to verify the order of processed events and employing deferred event processing for out-of-sequence arrivals are vital for data consistency. Event stores with quick update capabilities also play a key role in maintaining data integrity.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/04/multicloud-architecture-eda-qcon/news/2025/04/multicloud-architecture-eda-qcon/en/resources/1Idani 2-1744134935546.jpeg\" style=\"width: 600px; height: 284px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/04/multicloud-architecture-eda-qcon/en/resources/1Idani 2-1744134935546.jpeg\" rel=\"share\"></p>\n   <p><strong>Handling Duplicate Events in a Multi-Cloud Setting</strong></p>\n   <p>The risk of duplicate events increases when events cross network boundaries. Idnani recommended implementing defenses at both the publishing and processing stages, including using unique IDs for event identification and ensuring idempotency in processing logic to prevent unintended side effects from processing the same event multiple times.</p>\n   <p>Beyond these core technical challenges, Idnani touched upon other critical aspects of multi-cloud environments:</p>\n   <ul>\n    <li><strong>Security and Compliance</strong>: The expanded attack surface necessitates a heightened focus on security and compliance across all cloud providers.</li>\n    <li><strong>Observability</strong>: Comprehensive logging, monitoring, and distributed tracing across different clouds are essential for maintaining visibility into the health and performance of distributed applications. &nbsp;</li>\n    <li><strong>Cloud Agnosticism vs. Cloud-Native</strong>: Organizations need to balance the benefits of cloud-native services with the desire for cloud-agnostic compatibility to avoid vendor lock-in.</li>\n   </ul>\n   <p>Idnani concluded her talk with actionable recommendations for attendees:</p>\n   <ul>\n    <li><strong>Standardize Event Handling</strong>: Consider adopting standardized cloud event schemas for consistent event management across different providers.</li>\n    <li><strong>Continuous Optimization</strong>: Regularly review and optimize architecture and implementation strategies to adapt to the evolving multi-cloud landscape.</li>\n    <li><b>Invest in Team Skills: </b>Emphasize team education and continuous upskilling to effectively handle the complexities of multi-cloud environments.&nbsp; &nbsp;</li>\n   </ul>\n   <p>Idnani's session provided a practical and insightful roadmap for navigating the challenges and harnessing the benefits of multi-cloud adoption. Through the lens of FinBank's journey, she illuminated the critical considerations for building resilient and consistent distributed systems in an increasingly fragmented technological landscape.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2025: Distributed Event-Driven Architectures Across Multi-Cloud Boundaries\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/04/multicloud-architecture-eda-qcon/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1744196400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文总结了构建跨多云环境的弹性事件驱动架构的关键挑战和实践解决方案，文章以 FinBank 案例研究为例进行说明。",
+  "oneSentenceSummary": "本文总结了构建跨多云环境的弹性事件驱动架构的关键挑战和实践解决方案，文章以 FinBank 案例研究为例进行说明。",
+  "summary": "Teena Idnani 在 QCon London 2025 的演讲探讨了在多云环境中构建分布式事件驱动架构的挑战。她使用了 FinBank 案例研究来说明这些复杂性。本次演讲强调了多云采用的日益普及，并深入研究了跨云延迟、分布式应用弹性、事件排序和一致性以及重复事件处理等关键领域。Idnani 提供了实际的缓解策略，包括 Azure 专线和 AWS Direct Connect 等低延迟连接、事件存储和发布者端事件排序。她还强调了安全性、合规性、可观测性和事件处理标准化、持续优化以及团队技能投资的重要性。",
+  "mainPoints": [
+    {
+      "point": "跨云数据和事件传输延迟是一个关键问题，需要基础设施和代码级的优化。",
+      "explanation": "可靠的低延迟连接（如 Azure 专线和 AWS Direct Connect ）以及代码级压缩和批量处理对于高效的跨云数据传输至关重要。"
+    },
+    {
+      "point": "构建弹性的分布式应用程序需要事件存储和弹性库来有效地管理故障。",
+      "explanation": "事件存储持久化事件，从而实现用于数据恢复的系统性重放能力。Kafka 等弹性库可以有效地管理瞬时和扩展的故障。"
+    },
+    {
+      "point": "事件排序和一致性在多云环境中至关重要，需要发布者和订阅者之间的协作。",
+      "explanation": "发布者端事件排序和订阅者端顺序验证，结合支持快速更新的事件存储，是维护数据完整性的关键。"
+    },
+    {
+      "point": "安全性、合规性和可观测性是多云环境的关键考虑因素。",
+      "explanation": "扩大的受攻击面需要更加关注所有云服务商的安全性和合规性。全面的日志记录、监控和分布式追踪对于保持应用程序健康和性能的可见性至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "当数据和事件遍历不同的云环境时，延迟成为一个关键问题。",
+    "多云环境中的弹性不仅仅是即时可用性，还包括中断后的恢复。",
+    "在不同云中的分布式组件之间保持正确的事件顺序至关重要，尤其是在事务系统中（如 FinBank）。"
+  ],
+  "tags": [
+    "多云架构",
+    "分布式系统",
+    "事件驱动架构",
+    "架构设计",
+    "事件溯源"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 609,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1744156800000,
+  "publishDateStr": "2025-04-09",
+  "publishDateTimeStr": "2025-04-09 00:00:00"
+}

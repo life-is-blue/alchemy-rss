@@ -1,0 +1,59 @@
+{
+  "id": "RAW_febbda",
+  "title": "MariaDB 年度 LTS 版本集成向量搜索",
+  "url": "https://www.infoq.com/news/2025/06/mariadb-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-19 00:00:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>MariaDB has recently released <a href=\"https://mariadb.org/11-8-lts-released/\">MariaDB Community Server 11.8 as generally available</a>, its yearly long-term support (LTS) release for 2025. The new release introduces integrated vector search capabilities for AI-driven and similarity search applications, enhanced JSON functionality, and temporal tables for data history and auditing.</p>\n   <p>The new Vector datatype allows for more complex data storage and retrieval, particularly useful for machine learning and data science applications where vector representations of data are common. While vector support was added in earlier releases, as <a href=\"https://www.infoq.com/news/2024/08/mariadb-vector-search/\">previously covered on InfoQ</a>, this is the first LTS release to allow developers to store embeddings and query them alongside traditional relational data. <a href=\"https://www.linkedin.com/in/kajarno/\">Kaj Arnö</a>, CEO of the MariaDB Foundation, writes:</p>\n   <blockquote>\n    <p>This is undoubtedly the most significant highlight of MariaDB 11.8 LTS: full support for MariaDB Vector(...) Vector search capabilities are crucial for RAG and other modern AI and machine learning applications, enabling similarity search on large datasets. MariaDB Vector is now fully supported in LTS form, giving you stability and predictability for years to come.</p>\n   </blockquote>\n   <p><a href=\"https://mariadb.org/projects/mariadb-vector/\">MariaDB Vector</a> includes a native VECTOR data type with indexing for nearest-neighbor search, functions for calculating vector similarity (VEC_DISTANCE_EUCLIDEAN, VEC_DISTANCE_COSINE, and VEC_DISTANCE), and functions for converting binary vectors to their textual representation and back (VEC_FromText and VEC_ToText). Furthermore, the feature provides SIMD hardware optimizations for Intel (AVX2 and AVX512), ARM, and IBM Power10 CPUs.</p>\n   <p>The new features allow similarity searches on high-dimensional data, targeting popular use cases like semantic search, recommendation engines, and anomaly detection. Earlier this year, database expert <a href=\"https://www.linkedin.com/in/mdcallag/\">Mark Callaghan</a> ran <a href=\"https://smalldatum.blogspot.com/2025/02/vector-indexes-large-server-dbpedia.html\">benchmarks to compare MariaDB, Qdrant and Postgres (pgvector) with a large dataset</a>. He concluded:</p>\n   <blockquote>\n    <p>If you already run MariaDB or Postgres then I suggest you also use them for vector indexes (...) I have a bias. I am skeptical that you should deploy a new DBMS to support but one datatype (vectors) unless either you have no other DBMS in production or your production DBMS does not support vector indexing.</p>\n   </blockquote>\n   <p>In a deep review of the release, <a href=\"https://www.linkedin.com/in/federicorazzoli/\">Federico Razzoli</a>, founder of Vettabase, <a href=\"https://vettabase.com/mariadb-11-8-lts-parallel-dumps-parsec-authentication-new-sql-syntaxes-and-more/\">highlights some of his favorite improvements</a>, including parallel dumps, PARSEC authentication, and new SQL syntaxes, as well as what was left out, such as catalogs. On vector search, he writes:</p>\n   <blockquote>\n    <p>MariaDB vectors are faster than pgvector, according to Mark Callaghan's benchmarks. But there are some caveats here. If we only care about performance, the biggest problem is that MariaDB apparently decided to never implement stored procedures in languages other than SQL. This means that the embedding process must happen outside of MariaDB, normally in another server, even if the original data is in MariaDB. With PostgreSQL, you can do everything in Postgres itself.</p>\n   </blockquote>\n   <p>Vector search is the main feature of the MariaDB release but not the only one: like other open-source relational databases, MariaDB has now moved to Unicode as the default character set to make it fully compatible with today's multilingual and global applications, and extended the TIMESTAMP range <a href=\"https://theyear2038problem.com/\">from 2038 to 2106</a>. Arnö writes:</p>\n   <blockquote>\n    <p>Like most open source projects, we have addressed the famous Year 2038 problem. But unlike many others, MariaDB achieves this without requiring any data conversion — provided you’re not using System-Versioned Tables. This means your existing data stays intact while you gain an 80-year reprieve on timestamp overflows.</p>\n   </blockquote>\n   <p>The release includes improved support for temporal tables for data history and auditing: maintaining a complete history of modifications to the data helps with Point-in-Time Recovery scenarios, compliance, and security. <a href=\"https://www.linkedin.com/in/ralfgebhardt/\">Ralf Gebhardt</a>, product manager at MariaDB plc, <a href=\"https://mariadb.com/resources/blog/latest-lts-version-of-mariadb-community-server-11-8-is-now-available/\">writes</a>:</p>\n   <blockquote>\n    <p>First introduced in MariaDB 10.3 and now available with several enhancements, Temporal Tables automatically manages the history of your data and simplifies the development and maintenance of applications that require data lineage.</p>\n   </blockquote>\n   <p>According to the <a href=\"https://mariadb.com/kb/en/mariadb-11-8-2-release-notes/\">documentation</a>, it is possible to upgrade to MariaDB 11.8 from MariaDB 11.4 (the previous LTS) or any older release, back to MariaDB Server 10.0 or earlier, including most versions of MySQL Server. MariaDB has published a separate article on <a href=\"https://mariadb.com/resources/blog/building-ai-applications-using-frameworks-with-mariadb-vector-store/\">how to build AI applications</a> using frameworks with MariaDB Vector Store.</p>\n   <p>Major cloud providers do not yet support the latest GA release on their managed services, with AWS currently supporting 11.8 only in the <a href=\"https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-rds-maria-db-innovation-release-11-8-rds-database-preview-environment/\">database preview environment</a>.</p>\n   <p>Released under the GPLv2 license, MariaDB 11.8 is available on <a href=\"https://github.com/MariaDB/Server  \">GitHub</a>.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Yearly MariaDB LTS Release Integrates Vector Search\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/mariadb-vector-search/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750340880000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "MariaDB 的 11.8 LTS 版本集成了用于 AI 应用的原生向量搜索功能，通过相似性搜索功能增强了关系数据。",
+  "oneSentenceSummary": "MariaDB 的 11.8 LTS 版本集成了用于 AI 应用的原生向量搜索功能，通过相似性搜索功能增强了关系数据。",
+  "summary": "MariaDB 宣布了其 2025 年长期支持版本（LTS）社区版服务器 11.8 的正式发布。主要亮点是集成的 MariaDB Vector 功能，提供了原生向量数据类型、索引和针对各种 CPU 架构优化的相似性搜索函数。这使得在关系数据库环境中实现语义搜索和推荐引擎等用例成为可能，这对于 RAG 等现代 AI/ML 应用至关重要。该版本还包括对 JSON 功能的增强、用于数据历史和审计的时态表、将 Unicode 设置为默认字符集，以及在大多数用户无需数据转换的情况下解决 2038 年问题。虽然基准测试显示，与 pgvector 等替代方案相比，向量搜索的性能表现良好，但专家们也指出了局限性，例如缺乏用于嵌入的数据库内存储过程。MariaDB 11.8 已在 GitHub 上可用，云服务提供商支持目前仅限于预览环境。",
+  "mainPoints": [
+    {
+      "point": "集成的原生向量搜索是 MariaDB 11.8 LTS 的主要亮点。",
+      "explanation": "该版本在关系数据库中提供了原生的 VECTOR 数据类型、索引和相似性函数，支持语义搜索和 RAG 等 AI/ML 用例。"
+    },
+    {
+      "point": "该版本还包括多项其他重大改进。",
+      "explanation": "除了向量搜索，主要功能还包括增强的 JSON、用于历史/审计的时态表、默认 Unicode 以及对 2038 年问题的修复。"
+    },
+    {
+      "point": "基准测试显示向量搜索性能具有竞争力，但存在局限性。",
+      "explanation": "独立的基准测试表明 MariaDB 向量速度很快，但由于缺乏用于嵌入的数据库内存储过程，需要进行外部处理。"
+    },
+    {
+      "point": "提供了升级路径和可用性信息。",
+      "explanation": "用户可以从旧版本的 MariaDB/MySQL 升级；该版本已在 GitHub 上可用，云支持开始出现在预览环境中。"
+    }
+  ],
+  "keyQuotes": [
+    "这无疑是 MariaDB 11.8 LTS 最重要的亮点：全面支持 MariaDB Vector(...)",
+    "如果你已经在使用 MariaDB 或 Postgres，那么我建议你也使用它们来处理向量索引 (...)",
+    "根据 Mark Callaghan 的基准测试，MariaDB 向量比 pgvector 更快。但这里有一些局限性。",
+    "像大多数开源项目一样，我们已经解决了著名的 2038 年问题。但与许多其他项目不同的是，MariaDB 在不需要任何数据转换的情况下实现了这一点——前提是你没有使用 System-Versioned Tables（系统版本表）。这意味着你现有的数据保持不变，同时为时间戳溢出赢得了 80 年的宽限期。",
+    "时态表（Temporal Tables）最初在 MariaDB 10.3 中引入，现在通过多项增强功能可用，它自动管理你的数据历史，并简化了需要数据沿袭（data lineage）的应用的开发和维护。"
+  ],
+  "tags": [
+    "向量搜索",
+    "AI 应用",
+    "RAG",
+    "相似性搜索",
+    "数据库"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 696,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750291200000,
+  "publishDateStr": "2025-06-19",
+  "publishDateTimeStr": "2025-06-19 00:00:00"
+}

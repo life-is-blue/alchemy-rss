@@ -1,0 +1,55 @@
+{
+  "id": "RAW_7d4b0c",
+  "title": "Vite 底层彻底换血，尤雨溪想要控制整个前端生态？",
+  "url": "https://juejin.cn/post/7511583779578642483",
+  "date": "2025-06-04 03:03:33",
+  "author": "程序员Sunday",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body cache result\">\n   <p>Hello，大家好，我是 Sunday。</p>\n   <p>最近，尤雨溪发了一篇非常关键的文章，宣布 Vite 正式引入 Rust 写的打包器 <strong>Rolldown</strong>，并将逐步替代现有的 Rollup 成为 <strong>默认打包器</strong>。</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/1171e27831df4bf3abd51d20dfd6b173~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg56iL5bqP5ZGYU3VuZGF5:q75.awebp?rk3s=f64ab15b&amp;x-expires=1749611012&amp;x-signature=aEgwiXo8osmfW4FdObJvDtI2%2B64%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>该文章发布在 尤雨溪 新公司 <code>void(0)</code>，文章链接：<code>https://voidzero.dev/posts/announcing-rolldown-vite</code></p>\n   </blockquote>\n   <p>虽然这篇文章的内容并不长，但是内部做出的改成确实非常大的，可以毫不夸张的说：<strong>尤雨溪把整个 <code>vite</code> 的心脏都换掉了！</strong></p>\n   <p>所以，咱们今天这篇文章，我不打算重复发布会上的内容，而是一起来看看这波 “换心脏” 的背后逻辑：<strong>为什么 Rust 能上位？真实速度到底快了多少？尤雨溪到底在下一盘什么棋？</strong></p>\n   <h2 data-id=\"heading-0\">01：Vite 正在全面 Rust 化</h2>\n   <p>很多人看到这次更新，可能会说：<strong>“Rolldown 不就是个性能更好的打包器吗？用不用都行吧？”</strong></p>\n   <p>说实话，这种理解可能有些过于表面了。</p>\n   <p>这次更新的不仅仅是一个工具，而是把整个的 vite 底层都重写了一遍：</p>\n   <ul>\n    <li>Vite 的打包器，从 JS 写的 Rollup，换成了 Rust 写的 Rolldown</li>\n    <li>配套的 Babel、Terser、ESLint，也被 Rust 实现的 Oxc 接管</li>\n    <li>整个构建链路，从解析到压缩，从转换到分析，全都 Rust</li>\n   </ul>\n   <p>为什么要这么干呢？</p>\n   <p>很简单，因为：<strong>JS 写的构建工具已经摸到天花板了。</strong></p>\n   <p>不管你怎么做缓存、怎么压缩 AST、怎么优化 Plugin 顺序，JS 就是做不到 Rust 那种级别的执行效率。</p>\n   <p>而现代前端的项目体积正在变得越来越大，早就不是之前只写几个静态页面的事情了！</p>\n   <p>目前 微前端、组件库、国际化、权限系统……每加一个功能，构建时间就会变得越来越长，特别是很多公司在配合 <code>CI/CD</code> 的逻辑，每构建跑一次可能就得跑 2 分钟，而如果换成 Rolldown 那么就只要 15 秒上下了，你算算整个团队每天省下多少时间？</p>\n   <p>因此，这样的替换 “势在必行”，同时这也标记着：<strong>Vite 已经不再是一个 JS 写的现代前端工具了，而是一个由 Rust 驱动的、高性能构建内核。</strong></p>\n   <h2 data-id=\"heading-1\">02：真实表现到底快了多少？</h2>\n   <p>咱们先来看官方数据：</p>\n   <p><img src=\"https://p6-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/fa6319e602e6471bb38efa43c2055b1a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg56iL5bqP5ZGYU3VuZGF5:q75.awebp?rk3s=f64ab15b&amp;x-expires=1749611012&amp;x-signature=A7h2seNsd7yjUkEPSQWAXUCmdAs%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这些官方给出的数据看上去是不是非常炸裂！</p>\n   <p>但是，根据前端圈的历史特性：<strong>所有官方性能对比，都只能作为参考，而不能作为实际的决策依据。</strong></p>\n   <p>为啥呢？</p>\n   <p>因为，实际开发中，环境不同、项目结构不同、依赖链不同、构建目标不同，变量太多了。</p>\n   <p>很多的 demo 是干净环境下跑的，而你实际项目里，插件、polyfill、非预构建依赖一大堆，所以 <strong>官方数据，仅供参考！</strong></p>\n   <p>但我要说的是：<strong>哪怕实际操作中，只能做到官方数据的一半，这件事也值得我们去尝试下。</strong></p>\n   <p>就拿我自己接触的几个中大型项目来说，生产环境下的 Vite 构建时间基本都在 30 秒到 2 分钟之间浮动，特别是：</p>\n   <ul>\n    <li>多语言、主题、子应用拆包场景下，Rollup 明显吃力</li>\n    <li>babel + terser 的组合在压缩阶段特别耗 CPU</li>\n    <li>内存比较小的，如果在启动其他的任务（你电脑总得开其他的软件吧），那速度就更慢了</li>\n   </ul>\n   <p>换句话说，如果 Rolldown 真能在这些环节上带来 <strong>哪怕 30% 的性能提升</strong>，对于团队的持续集成、构建稳定性、开发反馈体验，都是实打实的收益。</p>\n   <h2 data-id=\"heading-2\">03：尤雨溪在下一盘大棋</h2>\n   <p>很多同学可能会说：<strong>Vite 已经“遥遥领先”了，为啥还非要换底层呢？多麻烦呀！</strong></p>\n   <p>如果你有这种疑惑的话，那么可能是因为你对 <code>vite</code> 使用到的这些新工具还不太了解，如果你了解一下背后的发布方，就知道这件事没那么简单。</p>\n   <p>Rolldown 是谁发布的？不是 Vue，也不是 Vite 核心团队，而是尤雨溪创办的新公司 —— <strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Fvoidzero.dev\" target=\"_blank\" title=\"https://voidzero.dev\" ref=\"nofollow noopener noreferrer\">VoidZero (也叫做 void(0) )</a></strong> 。想要详细了解的，可以看下我之前发的这篇文章 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FLDSEyzvLeLdbX3PDZ0xkKA\" target=\"_blank\" title=\"https://mp.weixin.qq.com/s/LDSEyzvLeLdbX3PDZ0xkKA\" ref=\"nofollow noopener noreferrer\">尤雨溪新公司 Void(0) 首款产品发布，竟然是它...</a></p>\n   <p>这是一家由 尤雨溪 创建的专门做 JavaScript 工具链的开源公司。关于这一块的详细介绍，可以看这篇博客 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FFSd6o3TG71_15TBoTF09gg\" target=\"_blank\" title=\"https://mp.weixin.qq.com/s/FSd6o3TG71_15TBoTF09gg\" ref=\"nofollow noopener noreferrer\">尤雨溪创建 VoidZero ，并得到 460 万美金融资</a></p>\n   <p>这家公司刚一出手就连放两个大招：</p>\n   <ul>\n    <li>第一个是 <strong><a href=\"https://link.juejin.cn?target=https%3A%2F%2Foxc.rs\" target=\"_blank\" title=\"https://oxc.rs\" ref=\"nofollow noopener noreferrer\">Oxc</a></strong> ：这是一个全新的 Rust 实现 JS 工具链（parser、transform、minifier、linter、formatter，全都自己造）</li>\n    <li>第二个就是 <strong>Rolldown</strong>：Vite 打包器的 Rust 替代方案，目标直接瞄准 Rollup、Babel、Terser 这整条传统链路</li>\n   </ul>\n   <p>而这次 Vite 接入 Rolldown，正是 void(0) 把自家工具「回注入」开源生态的第一步。</p>\n   <blockquote>\n    <p>所以这不是在“优化 Vite”，而是想要 <strong>“替换整条构建基础设施”</strong></p>\n   </blockquote>\n   <p>你可以这么理解 void(0) 的策略路径：</p>\n   <ol>\n    <li>Vue 站稳前端框架圈核心位置</li>\n    <li>Vite 用 Rollup 起家，成为构建工具主流选择</li>\n    <li>void(0) 作为新公司登场，切入工具链底层，用 Rust 重写一整套生态</li>\n    <li>再反哺 Vite，用 Rolldown 替代原来的 JS 构建方案</li>\n    <li>最终形成：<strong>Vue + Vite + void(0) 工具链</strong> 的闭环</li>\n   </ol>\n   <p>这其实是一个很聪明、很清晰的长期路线图：<strong>不再被 Babel、Terser、ESLint 等“生态外依赖”所绑定，而是自己控制工具底层、性能节奏、开发体验。</strong></p>\n   <p>尤雨溪本人也在社区里反复提过：Vite 的未来，不只是“构建工具”，而是下一代工程化的“<strong>前端开发基建平台</strong>”。</p>\n   <p>而这张底牌，就是 Rolldown + Oxc。</p>\n   <p>你可以想想看，如果：</p>\n   <ul>\n    <li>Vue 生态已经在试水 Rolldown</li>\n    <li>Vite 即将全面接入 Rolldown</li>\n    <li>Vite 插件作者必须适配 Rolldown（否则未来会不兼容）</li>\n   </ul>\n   <p>那就意味着：</p>\n   <blockquote>\n    <p><strong>无论你是 Vue、React、Svelte，还是用 Vite 的任何框架，都必须配合这次 “Rust 工具链” 的迁移。</strong> 否则将有可能会被踢出前端生态。</p>\n   </blockquote>\n   <p>而想要参与，就必须要使用 <code>Void(0)</code> 的产品。</p>\n   <p>这样，尤雨溪就可以很成功的让 <code>Void(0)</code> 变成整个前端生态的标准了！</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Vite 底层正全面 Rust 化，引入 Rolldown 替换 Rollup，旨在打破 JS 性能瓶颈，构建前端工程化新基建。",
+  "oneSentenceSummary": "Vite 底层正全面 Rust 化，引入 Rolldown 替换 Rollup，旨在打破 JS 性能瓶颈，构建前端工程化新基建。",
+  "summary": "文章深入分析了尤雨溪宣布 Vite 将用 Rust 编写的 Rolldown 逐步替代现有 Rollup 打包器的重大改动。作者指出，这不仅仅是打包器的替换，而是 Vite 底层的全面 Rust 化，包括配套工具如 Babel、Terser、ESLint 也将被 Rust 实现的 Oxc 接管。文章解释了为何 JS 构建工具已达性能瓶颈，以及 Rust 在提升构建效率方面的优势，并提供了官方性能数据，同时提醒读者应结合实际项目评估。更重要的是，文章解读了这一举动背后的战略意义：Rolldown 和 Oxc 是尤雨溪新公司 Void(0)的产品，通过将这些 Rust 工具链“回注入”到 Vite 等主流前端工具中，尤雨溪正下一盘掌控整个前端构建基础设施的大棋，旨在让 Void(0)成为生态标准，摆脱对外部 JS 工具的依赖，构建“Vue + Vite + Void(0)工具链”的闭环。",
+  "mainPoints": [
+    {
+      "point": "Vite 底层正进行全面 Rust 化，核心是替换 JS 打包器 Rolldown",
+      "explanation": "不仅打包器从 Rollup 换成 Rust 的 Rolldown，配套工具如 Babel、Terser 也将被 Rust 实现的 Oxc 接管，构建链路将全面迁移到 Rust。"
+    },
+    {
+      "point": "Rust 构建工具旨在突破 JS 性能天花板，显著提升构建效率",
+      "explanation": "面对日益增长的项目体积和构建时间，JS 工具已达瓶颈，Rust 能提供更高级别的执行效率，大幅缩短 CI/CD 及本地开发构建时间。"
+    },
+    {
+      "point": "此举是尤雨溪及其新公司 Void(0)掌控前端工具链生态的战略布局",
+      "explanation": "Rolldown 和 Oxc 是 Void(0)产品，通过将它们集成到 Vite，Void(0)寻求成为前端构建基础设施标准，减少对外部 JS 工具依赖。"
+    }
+  ],
+  "keyQuotes": [
+    "尤雨溪把整个 `vite` 的心脏都换掉了！",
+    "JS 写的构建工具已经摸到天花板了。",
+    "哪怕实际操作中，只能做到官方数据的一半，这件事也值得我们去尝试下。",
+    "这不是在\"优化 Vite\"，而是想要 **\"替换整条构建基础设施\"**",
+    "Vite 的未来，不只是\"构建工具\"，而是下一代工程化的\"**前端开发基建平台**\"。"
+  ],
+  "tags": [
+    "构建工具",
+    "Vite",
+    "Rolldown",
+    "Rust",
+    "前端工程化"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 8,
+  "score": 90,
+  "wordCount": 1985,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749006213000,
+  "publishDateStr": "2025-06-04",
+  "publishDateTimeStr": "2025-06-04 03:03:33"
+}

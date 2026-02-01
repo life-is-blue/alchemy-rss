@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ac1147",
+  "title": "使用 JavaScript 和 Three.js 创建 3D Web 体验",
+  "url": "https://www.freecodecamp.org/news/create-3d-web-experiences-with-javascript-and-threejs/",
+  "date": "2025-08-27 18:40:53",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Do you want to improve you JavaScript skills and create 3D web experiences?</p>\n  <p>We just posted a course on the <a target=\"_blank\" href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that is designed to help anyone master JavaScript and Three.js by building five impressive and practical projects. The goal of the course is to provide a tangible portfolio of work and a clear roadmap for getting started with Three.js.</p>\n  <p>Each project is completely standalone, which means you can jump right to the topic that interests you most, whether that's creating fire effects or building a 3D globe. Bobby Roe developed this course. He has created many popular Three.js tutorials.</p>\n  <p>Here’s a look at the projects you’ll build in this series:</p>\n  <ul>\n   <li>\n    <p><strong>A Three.js Roadmap:</strong> The course begins by laying out a roadmap to help you get started with Three.js. You'll learn the fundamental concepts and build an interactive 3D scene while learning the basics.</p>\n   </li>\n   <li>\n    <p><strong>Applying Textures:</strong> You'll learn how to load and apply different textures, including a <code>normalMap</code> and <code>roughnessMap</code>, to give your 3D models realistic surface details and shininess.</p>\n   </li>\n   <li>\n    <p><strong>A 3D Globe in a Starry Sky:</strong> You'll create a 3D globe floating in a starry sky with country outlines. This project teaches you how to work with GeoJSON data to draw lines on a sphere and add effects like fog and dynamic colors to make it look truly unique.</p>\n   </li>\n   <li>\n    <p><strong>Dynamic Particle Effects:</strong> Learn to build effects like fire, smoke, and sparkles. You'll learn how to control the velocity, size, and color of particles over their lifespan to achieve different visual effects.</p>\n   </li>\n   <li>\n    <p><strong>Interactive Physics:</strong> This project is all about making things collide and interact in a realistic way. Using the Rapier physics engine, you'll build a scene where objects respond to mouse controls and each other, with polished details like HDR lighting and custom colliders.</p>\n   </li>\n  </ul>\n  <p>Watch the full course on <a target=\"_blank\" href=\"https://youtu.be/tPkJLnDqAKk\">the freeCodeCamp.org YouTube channel</a> (2-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tPkJLnDqAKk\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了一个在 freeCodeCamp 上提供的 2 小时免费 JavaScript 和 Three.js 课程。本课程指导学习者完成五个实用的 3D Web 项目，内容涵盖从基本概念到交互式物理。",
+  "oneSentenceSummary": "本文介绍了一个在 freeCodeCamp 上提供的 2 小时免费 JavaScript 和 Three.js 课程。本课程指导学习者完成五个实用的 3D Web 项目，内容涵盖从基本概念到交互式物理。",
+  "summary": "本文宣布在 freeCodeCamp.org YouTube 频道上提供一个新的 2 小时免费课程，旨在帮助开发人员熟练运用 JavaScript 和 Three.js，从而创建 3D Web 体验。该课程由 Bobby Roe 开发，包含五个独立的项目，允许学习者构建一个实用的作品集。概述的关键项目包括一个介绍 Three.js 的路线图，涵盖基本概念；应用各种纹理，如 `normalMap` （法线贴图）和 `roughnessMap` （粗糙度贴图），以实现逼真的模型；使用 GeoJSON 数据和动态效果创建一个 3D 地球；构建动态粒子效果，如火焰和烟雾；以及使用 Rapier 引擎实现具有高级光照的交互式物理。本课程旨在为有抱负的开发人员提供清晰的学习路径和实践经验，使 3D Web 开发更易于上手和应用。",
+  "mainPoints": [
+    {
+      "point": "这个 freeCodeCamp 课程提供了一个结构化的、基于项目的学习 Three.js 的方法。",
+      "explanation": "通过构建五个不同的项目，学习者可以获得实践经验和有形的作品集，涵盖从基础知识到高级物理和渲染的重要概念。"
+    },
+    {
+      "point": "本课程涵盖了各种 3D Web 开发主题，从基础纹理到复杂的交互效果。",
+      "explanation": "项目范围从应用法线 / 粗糙度贴图以实现真实感，到创建动态粒子效果和集成物理引擎以实现逼真的对象交互。"
+    },
+    {
+      "point": "每个项目都是独立的，允许根据特定兴趣量身定制灵活的学习。",
+      "explanation": "这种模块化结构使用户能够专注于特定的技能，例如使用 GeoJSON 创建 3D 地球或进行高级物理模拟。学习者无需线性地完成整个课程。"
+    }
+  ],
+  "keyQuotes": [
+    "我们刚刚在 freeCodeCamp.org YouTube 频道上发布了一个课程，旨在通过构建五个令人印象深刻的实用项目来帮助任何人掌握 JavaScript 和 Three.js。",
+    "每个项目都是完全独立的，这意味着您可以直接跳转到您最感兴趣的主题，无论是创建火焰效果还是构建 3D 地球。",
+    "使用 Rapier 物理引擎，您将构建一个场景，其中对象响应鼠标控制和彼此之间的交互，并具有 HDR 光照、自定义碰撞器等精细细节。"
+  ],
+  "tags": [
+    "3D Web 开发",
+    "JavaScript",
+    "Three.js",
+    "WebGL",
+    "交互式图形"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 308,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1756320053000,
+  "publishDateStr": "2025-08-27",
+  "publishDateTimeStr": "2025-08-27 18:40:53"
+}

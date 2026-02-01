@@ -1,0 +1,55 @@
+{
+  "id": "RAW_47cc4a",
+  "title": "浙大侯廷军团队联合 IIT 等发布系统综述：全景解析机器学习加持下的「增强采样」方法 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-09-16-5",
+  "date": "2025-09-16 06:02:49",
+  "author": "ScienceAI",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085253_60335e\" data-ratio=\"0.5444444444444444\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100025600\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/1930ef9a-bad2-4044-9b7e-d9d368054d44/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002505900\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p data-pm-slice=\"0 0 []\"><span data-pm-slice=\"0 0 []\">编辑丨coisini</span></p>\n  <p>分子动力学（MD）模拟已成为理解分子尺度物理、化学与生物过程不可或缺的工具，在揭示复杂分子体系的微观行为机制方面具有巨大潜力。</p>\n  <p>然而，传统的 MD 方法因为模拟的时间尺度有限，其有效性常受限于稀有事件相关的长时间尺度问题。为应对该挑战，增强采样方法应运而生，近年来更是与机器学习技术日益深度融合。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085252_f8aaf8\" data-ratio=\"0.5546296296296296\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100025594\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/89b53eba-0fb8-47c6-85a2-235bf1dba2b0/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002506397\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>近期，浙江大学药学院侯廷军团队联合意大利技术研究院（IIT）等发布了一篇综述 ——《Enhanced Sampling in the Age of Machine Learning: Algorithms and Applications》，全景解析了在机器学习技术的加持下，增强采样方法的发展。浙江大学药学院博士生祝凯是综述共同一作。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085252_a9987a\" data-ratio=\"0.23425925925925925\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100025595\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/02ed9b70-23ee-49fa-86ee-825b6c935a27/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002512863\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>综述地址：https://arxiv.org/pdf/2509.04291</p>\n  <p>综述概览</p>\n  <p>该综述旨在全面阐述 ML 与增强采样技术融合的方法论进展，并为关注实际应用的研究者提供实践视角。综述展示了跨领域应用案例，重点分析了实际部署此类模型的需求与挑战，涵盖蛋白质折叠等生物构象变化、配体结合热力学与动力学、化学催化反应及结构相变等重要领域。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085253_a246ca\" data-ratio=\"0.8629629629629629\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100025596\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/10af7c56-7c0a-45ff-a35b-3c1808fbed4b/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002512997\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>在众多机器学习与增强采样的融合方向中，最具实质性和广泛性的进展体现在集合变量（collective variable，CV）的构建方面，但由于即使采用近似变量也能实现显著的加速效果，因此带来了两方面影响：一方面，它催生了多样化策略与学习目标的开发应用；另一方面，由于缺乏单一明确的目标，方法学变体激增。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085252_9d06bc\" data-ratio=\"0.8888888888888888\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100025597\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/458146f8-2925-4bcf-b995-c17423c528d4/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002513264\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>除构建 CV 外，机器学习还在多个层面推动增强采样技术发展：包括表征偏置势能、优化自由能微扰方案、指导副本交换协议等。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085252_dc6724\" data-ratio=\"1.175152749490835\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"982\" type=\"block\" data-imgfileid=\"100025598\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/8472a08e-a857-42d4-80b1-ad55cab85182/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002513330\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250916085252_630ce0\" data-ratio=\"0.8824074074074074\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"100025599\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/f1e45283-fbf2-48ac-a9c3-00b2e8a9831e/640.jpeg\" alt=\"图片\" data-before-load-time=\"1758002513679\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>一些颇具前景的新方法正崭露头角，例如完全用机器学习算法取代偏置方案，甚至用生成模型替代传统采样。但这些研究仍处于萌芽阶段，尽管前景可观，新方法在成为通用解决方案之前仍面临重大障碍，尤其对于具有大量自由度（如溶剂分子）的大型真实体系。</p>\n  <p>综述指出：将机器学习技术加持的增强采样方法扩展到更大更复杂的异质体系（如固有无序蛋白、生物分子组装体或真实催化环境）仍存在巨大挑战。关键原因在于这些方法的部署尚未实现全自动化：仍需大量化学直觉来选择初始条件、定义合适表征方式及识别目标过程。</p>\n  <p>要实现全自动增强采样的目标，需要在多个层面取得突破：</p>\n  <p>首先，表征学习的进步至关重要。对复杂大型体系而言，构建合适描述符仍是主要瓶颈，往往需要深厚的领域专业知识。</p>\n  <p>第二，将集合变量学习与偏置势能学习统一于端到端框架尤其值得关注。传统上这两个环节相互分离，若将低维表征识别与偏置势的自适应构建耦合，可以形成全集成工作流，实现探索与收敛的双重自动化。</p>\n  <p>第三，随着方法学复杂度和表现力的提升，可解释性成为紧迫议题。领域需与可解释人工智能更紧密融合，以确保工具保持透明性、可解释性和实践可用性。</p>\n  <p>要实现这些突破，还需进一步加强增强采样与机器学习势函数的融合，并开发统一的软件生态系统，无缝集成工作流的所有环节：从表征学习与集合变量构建，到偏置方案设计、机器学习势函数应用，再到后处理分析工具与结果解读。</p>\n  <p>这些进展共同作用，终将把分子动力学转化为真正的「计算显微镜」，在扩展时空尺度上揭示复杂物理、化学、生物体系的结构、动力学与反应活性，提供原子级的机理洞察。</p>\n  <p>感兴趣的读者可以阅读综述原文，了解更多研究内容。</p>\n </body>\n</html>",
+  "aiSummary": "一篇系统综述，全面解析了机器学习在分子动力学模拟中增强采样方法的发展、应用、挑战及未来趋势。",
+  "oneSentenceSummary": "一篇系统综述，全面解析了机器学习在分子动力学模拟中增强采样方法的发展、应用、挑战及未来趋势。",
+  "summary": "文章介绍了浙江大学侯廷军团队联合意大利技术研究院等发布的一篇系统综述，该综述全景解析了机器学习（ML）技术如何加持增强采样方法，以解决传统分子动力学（MD）模拟时间尺度有限的问题。综述详细阐述了 ML 在集合变量（CV）构建、偏置势能表征、自由能微扰优化及副本交换协议指导等方面的进展。文章还探讨了 ML 与增强采样融合在蛋白质折叠、配体结合、化学催化等领域的应用案例，并指出了将这些方法扩展到更复杂体系的巨大挑战，例如表征学习、端到端框架统一、可解释性以及统一软件生态系统的需求。该综述旨在为研究者提供方法论进展与实践视角，推动分子动力学模拟向“计算显微镜”方向发展。",
+  "mainPoints": [
+    {
+      "point": "机器学习显著提升分子动力学模拟中增强采样的效率与广度。",
+      "explanation": "ML 通过在集合变量构建、偏置势能表征、优化自由能微扰方案等多个层面推动增强采样技术发展，有效克服了传统 MD 模拟的时间尺度限制。"
+    },
+    {
+      "point": "集合变量（CV）的构建是 ML 与增强采样融合最实质性的进展。",
+      "explanation": "CV 的构建为加速采样效果提供了关键途径，但由于缺乏单一明确目标，导致方法学变体激增，需进一步规范和优化。"
+    },
+    {
+      "point": "实现全自动增强采样需在表征学习、端到端框架与可解释性方面突破。",
+      "explanation": "构建复杂体系描述符、统一 CV 与偏置势能学习、提升工具透明性与可解释性是该领域未来发展的关键方向。"
+    }
+  ],
+  "keyQuotes": [
+    "分子动力学（MD）模拟已成为理解分子尺度物理、化学与生物过程不可或缺的工具，在揭示复杂分子体系的微观行为机制方面具有巨大潜力。",
+    "该综述旨在全面阐述 ML 与增强采样技术融合的方法论进展，并为关注实际应用的研究者提供实践视角。",
+    "在众多机器学习与增强采样的融合方向中，最具实质性和广泛性的进展体现在集合变量（collective variable，CV）的构建方面。",
+    "要实现全自动增强采样的目标，需要在多个层面取得突破：首先，表征学习的进步至关重要。第二，将集合变量学习与偏置势能学习统一于端到端框架尤其值得关注。第三，随着方法学复杂度和表现力的提升，可解释性成为紧迫议题。",
+    "这些进展共同作用，终将把分子动力学转化为真正的「计算显微镜」，在扩展时空尺度上揭示复杂物理、化学、生物体系的结构、动力学与反应活性，提供原子级的机理洞察。"
+  ],
+  "tags": [
+    "增强采样",
+    "分子动力学",
+    "机器学习",
+    "科学计算",
+    "理论研究"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1311,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1758002569000,
+  "publishDateStr": "2025-09-16",
+  "publishDateTimeStr": "2025-09-16 06:02:49"
+}

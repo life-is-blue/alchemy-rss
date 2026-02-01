@@ -1,0 +1,59 @@
+{
+  "id": "RAW_8b441a87",
+  "title": "LLM 强化学习新框架！UCSD 多智能体训练框架让 LLM 工具调用能力暴增 5.8 倍",
+  "url": "https://www.qbitai.com/2025/11/350331.html",
+  "date": "2025-11-08 05:08:34",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"44\">PettingLLMs团队 投稿</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"45\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">大语言模型智能体的强化学习框架, 首次实现了通用的多智能体的“群体强化”。</p>\n  <p data-track=\"3\">在大语言模型（LLM）智能体的各种任务中，已有大量研究表明在各领域下的多智能体工作流在未经训练的情况下就能相对单智能体有显著提升。</p>\n  <p data-track=\"4\">但是现有的LLM智能体训练框架都是针对单智能体的，多智能体的“群体强化”仍是一个亟须解决的问题。</p>\n  <p data-track=\"5\">为了解决这一领域的研究痛点，来自UCSD和英特尔的研究人员，提出了新的提出通用化多智能体强化学习框架——<strong>PettingLLMs</strong>。支持任意组合的<strong>多个</strong>LLM一起训练。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_fedc4b3e05070c1b718abe7cf866de7c.png\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"892\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">大语言模型驱动的多智能体系统在医疗、编程、科研、具身智能等多个领域均能大幅度提升任务表现。</p>\n  <p data-track=\"8\">为训练大模型智能体，Group Relative Policy Optimization (GRPO) 已被验证为通用的有效强化学习算法。然而，当前所有针对LLM的强化学习训练框架，包括GRPO算法本身，都局限于单智能体训练的范畴。多智能体间的协作优化，即“群体强化”的学习机制，仍然是一个亟待填补的空白。</p>\n  <p data-track=\"9\">GRPO算法的核心机制是，针对同一个输入（prompt），通过多次采样生成一组候选回答。随后，算法在组内对这些回答进行评估（例如，通过一个奖励模型），并计算它们之间的相对优势。</p>\n  <p data-track=\"10\">这种优势计算的有效性与公平性依赖于一个关键假设——组内所有用于比较的候选回答，都必须基于一个完全相同的上下文（即prompt）生成。</p>\n  <p data-track=\"11\">然而，将GRPO直接应用于多智能体（multi-agent）多轮（multi-turn）环境中存在一个核心困难。</p>\n  <p data-track=\"12\">在多智能体场景下，即使是针对同一个初始问题，不同智能体在不同轮次接收到的prompt差异显著。</p>\n  <p data-track=\"13\">例如（如图所示），一个负责编程的智能体，其在第二轮的prompt不仅包含原始问题，还可能融合了第一轮中自己生成的代码以及其他智能体生成的单元测试。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_780451077a2c1164507ba2ff6358c43e.png\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"637\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"14\">因此，如果在MA环境中仍然简单地将同一个初始问题产生的所有（跨轮次、跨智能体的）回答视为一个“group”来进行优势计算，这就直接违反了GRPO所要求的“共同prompt”的核心假设。</p>\n  <p data-track=\"15\">这导致组内的优势计算基准不统一，使得计算结果不再公平或有效。</p>\n  <p data-track=\"16\">所以核心问题就是，如何既保证每个组内有一定批次量的回答，又能保证优势计算的公平。</p>\n  <p data-track=\"18\">作者提出了一种greedy-search的树状采样方法。</p>\n  <p data-track=\"19\">每轮次每个agent形成一个节点进行K个分支，在分支以后选择此时reward最高的agent进行下一次分支。这样能够让多智能体训练能平衡好探索（exploration）与利用(exploitation)。</p>\n  <p data-track=\"20\">每一个agent的奖励函数都考虑自身角色的奖励和全局任务的奖励来保证角色专属能力和合作能力的进化。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_36b2749aa3a260ada77eafd56182e17c.png\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"832\" data-height=\"414\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">对于多智能体的强化学习进化的另一个面临一个核心的策略问题：在何种任务下，让模型进化成不同角色的“专属模型”（specialized models）？又在何种任务下，让所有智能体共享一个“通用模型”（shared model）会更优？</p>\n  <p data-track=\"22\">为了实现两种不同的训练模式，作者搭建了如图所示的异步分发训练系统。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_042defd9a44bb66529bf143da7117a20.jpeg\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"562\" data-height=\"456\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"23\">系统中的路由模块负责收集多智能体系统在环境中交互产生的轨迹数据。</p>\n  <p data-track=\"24\">专属模型模式下，系统可以配置多个独立的模型资源池（如图中的池i和池j）。路由模块会将智能体i的数据批次仅发送给池i的更新单元，专门更新模型i；同时将智能体j的数据批次发送给池j的更新单元，独立更新模型j。</p>\n  <p data-track=\"25\">而在共享模型模式中，相对地，路由模块也可以将所有智能体的轨迹数据合并，并全部发送给同一个模型资源池的更新单元，以集中更新一个共享模型。</p>\n  <p data-track=\"26\"><strong>通用的多智能体强化学习框架：PettingLLMs</strong></p>\n  <p data-track=\"27\">基于该项研究，作者开源了通用的多智能体强化学习框架，使得多智能体强化学习训练开发变得敏捷、简洁、优雅。</p>\n  <ul>\n   <li data-track=\"28\">在作者现有的系统上搭建环境开发只需要任务特有的agent的交互和奖励函数。同时，作者也给环境开发设计建立了详细的环境开发教程。</li>\n   <li data-track=\"29\">已有的环境也已经包括了主流的agent任务比如数学、code、游戏等。</li>\n   <li data-track=\"30\">该框架支持不同模型和agent之间的任意映射。也支持每个agent适配不同的lora的方式。</li>\n  </ul>\n  <p data-track=\"32\">在推箱子这种长规划任务中，通过AT-GRPO训练，两个agent都得到了强化，任务性能从14%提升至96%。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://www.qbitai.com/wp-content/uploads/replace/bc6f50db9b2c30c3780b15db24780e60.gif\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"615\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"33\">作者在Qwen3-1.7B与Qwen3-8B两个规模上开展了大规模实验，覆盖规划（Sokoban、Plan-Path）、代码（LiveCodeBench、APPS、CodeContests）与数学（AIME24/25、OlympiadBench）三大类任务。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_2084cd792260cc621d27f6dbdae1d331.png\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"978\" data-height=\"1280\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"34\">实验结果表明：</p>\n  <ul>\n   <li data-track=\"35\">规划类任务中，Sokoban从14%提升至96%，Plan-Path从47%提升至99.5%；</li>\n   <li data-track=\"36\">代码生成任务中，LiveCodeBench提升+6.1%，APPS+4.2%，CodeContests+7.0%；</li>\n   <li data-track=\"37\">数学推理中，AIME 24提升+9.0%，AIME 25提升+17.9%。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_e293fa0d4f5b4f1170f795cca521d511.png\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"792\" data-height=\"256\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"38\">消融实验进一步验证了关键设计——</p>\n  <p data-track=\"39\">只在单智能体（SA）里训练，收益有限：把规划/工具等子角色各自放在 SA 环境里训练，单看各自指标会从 5.0% 提到11.0%/14.5%，但放回MAS联合作业仅到16.0%。</p>\n  <p data-track=\"40\">互换角色策略会“崩盘”：把已经学成的两个角色策略对调，准确率从96.0%→6.0%，说明两位“队友”学到的是互补但不可替代的能力。</p>\n  <p data-track=\"41\">协同越来越顺、回合越来越少：训练过程中两位代理的学习回报同步上升，任务所需平均回合数持续下降——体现出更紧密的对齐与分工协作。</p>\n  <div class=\"pgc-img\">\n   <img src=\"https://image.jido.dev/20251108090753_516bbdb1335a1548529245e7f0e4c2db.png\" alt=\"LLM强化学习新框架！UCSD多智能体训练框架让LLM工具调用能力暴增5.8倍\" data-ic=\"false\" data-width=\"1080\" data-height=\"596\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"42\">PettingLLMs通过支持通用的多智能体强化学习算法，让多智能体一起学习一起进化，实现了跨任务、跨规模的通用强化学习算法。</p>\n  <p data-track=\"43\">论文：https://huggingface.co/papers/2510.11062\n   <br>\n   GitHub：https://github.com/pettingllms-ai/PettingLLMs</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "UCSD 和英特尔推出 PettingLLMs 多智能体强化学习框架，首次实现 LLM 群体强化训练，显著提升 LLM 在多任务中的性能和协作效率。",
+  "oneSentenceSummary": "UCSD 和英特尔推出 PettingLLMs 多智能体强化学习框架，首次实现 LLM 群体强化训练，显著提升 LLM 在多任务中的性能和协作效率。",
+  "summary": "该文章介绍了 UCSD 和英特尔团队提出的 PettingLLMs 框架，旨在解决大语言模型（LLM）智能体在多智能体、多轮次任务中缺乏“群体强化”训练机制的问题。现有单智能体强化学习算法（如 GRPO）在多智能体场景下因上下文差异而失效。PettingLLMs 通过创新的贪婪搜索树状采样方法和结合角色与全局奖励的函数，确保优势计算的公平性与训练的平衡性。框架还支持专属模型和共享模型两种异步训练模式。实验结果显示，PettingLLMs 在规划、代码和数学等任务上，使 LLM 智能体性能得到显著提升，如推箱子任务从 14%提升至 96%，验证了多智能体协作训练的巨大潜力。",
+  "mainPoints": [
+    {
+      "point": "现有 LLM 强化学习框架无法有效支持多智能体“群体强化”训练。",
+      "explanation": "传统单智能体算法如 GRPO 在多智能体多轮次环境中，因智能体接收到的 prompt 差异，导致优势计算基准不统一，无法公平有效训练。"
+    },
+    {
+      "point": "PettingLLMs 通过树状采样和混合奖励函数解决多智能体训练挑战。",
+      "explanation": "引入贪婪搜索树状采样平衡探索与利用，并结合自身角色与全局任务奖励，确保多智能体在复杂环境中公平进化与协作。"
+    },
+    {
+      "point": "框架支持专属模型与共享模型两种灵活的异步训练模式。",
+      "explanation": "通过异步分发训练系统，可根据任务需求选择训练独立角色模型或更新一个共享模型，优化不同场景下的策略进化。"
+    },
+    {
+      "point": "PettingLLMs 在多类任务中显著提升 LLM 智能体性能和协作效率。",
+      "explanation": "实验证明，该框架在规划、代码、数学等任务上实现大幅性能提升，并促使智能体形成互补能力，减少任务回合数。"
+    }
+  ],
+  "keyQuotes": [
+    "大语言模型智能体的强化学习框架， 首次实现了通用的多智能体的'群体强化'。",
+    "为了解决这一领域的研究痛点，来自 UCSD 和英特尔的研究人员，提出了新的提出通用化多智能体强化学习框架------**PettingLLMs** 。支持任意组合的**多个**LLM 一起训练。",
+    "每一个 agent 的奖励函数都考虑自身角色的奖励和全局任务的奖励来保证角色专属能力和合作能力的进化。",
+    "PettingLLMs 通过支持通用的多智能体强化学习算法，让多智能体一起学习一起进化，实现了跨任务、跨规模的通用强化学习算法。",
+    "把已经学成的两个角色策略对调，准确率从 96.0%→6.0%，说明两位'队友'学到的是互补但不可替代的能力。"
+  ],
+  "tags": [
+    "多智能体强化学习",
+    "大语言模型",
+    "AI Agent",
+    "工具调用",
+    "训练框架"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2318,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1762578514000,
+  "publishDateStr": "2025-11-08",
+  "publishDateTimeStr": "2025-11-08 05:08:34"
+}

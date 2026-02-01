@@ -1,0 +1,59 @@
+{
+  "id": "RAW_0430bdd0",
+  "title": "Nuqs：防抖、标准模式集成与键隔离，提升 React 应用性能",
+  "url": "https://www.infoq.com/news/2025/09/nuqs-debounce-schema/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-09-30 07:30:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://nuqs.dev/\">Nuqs</a>, the type-safe URL state manager for React, has recently released a bunch of new features across its recent releases, delivering a set of long awaited capabilities such as <a href=\"https://nuqs.dev/blog/nuqs-2.5#debounce\">debounced URL updates</a>, <a href=\"https://nuqs.dev/blog/nuqs-2.5#standard-schema\">standardized schema interoperability</a>, more <a href=\"https://nuqs.dev/blog/nuqs-2.5#key-isolation\">granular re-render control</a>, and experimental <a href=\"https://nuqs.dev/blog/nuqs-2.5#tanstack-router\">router integrations</a>.</p>\n   <p>A standout feature is debounce support for URL updates. Previously, Nuqs relied on throttling via the <code>throttleMs</code>&nbsp;attribute to rate-limit history API calls. Usage&nbsp;could lead to excessive requests during fast input changes such as&nbsp;search inputs. There is a new attribute called <code>limitUrlUpdates</code> (which replaces the existing <a href=\"https://nuqs.dev/docs/options#throttle\">throttleMs</a> option), and accepts a debounce:\n    <br>\n    &nbsp;</p>\n   <pre>\r\n<code>const [search, setSearch] = useQueryState('search', {\r\n  defaultValue: '',\r\n  shallow: false,\r\n  limitUrlUpdates: debounce(250)\r\n});</code></pre>\n   <p>The existing <code>throttleMs</code> option is deprecated in favor of the consolidated <code>limitUrlUpdates</code> strategy, which allows both throttling and debouncing modes.&nbsp;</p>\n   <p>Standard Schema generation is possible from v2.5. Nuqs now lets you derive a validation / parser schema from your search param definitions, enabling integration with tools like <a href=\"https://trpc.io/\">tRPC</a> or route schemas.</p>\n   <p>Key isolation introduces performance improvements through fine grained subscriptions. Previously, any change to the URL would cause all components using <code>useQueryState</code> to re-render, since the shared URL object changed reference. In v2.5, Nuqs now avoids that as components only re-render when their specific key changes. This behavior is baked into the core adapters for React SPA, React Router, Remix, and TanStack Router. Notably, Next.js is an exception due to internal use of a single URLSearchParams context that always changes references. Nuqs maintainers mention ongoing collaboration with Next.js to mitigate this.</p>\n   <p>Nuqs 2.5 also adds experimental <a href=\"https://tanstack.com/router/latest\">TanStack Router</a> support. A compatibility adapter allows Nuqs-managed URL state to live alongside TanStack Router’s routing logic, and the Standard Schema interface helps tie URL state definitions to route validation. While <a href=\"https://nuqs.dev/docs/adapters#tanstack-router\">feature parity</a> is limited, this opens the door for monorepos or shared logic across React frameworks.</p>\n   <p>The release also includes a number of quality-of-life updates, exported <code>package.json</code> support for module federation, more global default options for adapters, and better type inference for default values. It is also noted that Nuqs is now a ‘zero runtime dependencies’ library and despite the new features, it is under 5.5kb in size.&nbsp;</p>\n   <p>More recently, in the smaller 2.6 release, several enhancements have been added. The new <a href=\"https://github.com/47ng/nuqs/pull/1110\">processUrlSearchParams</a> hook allows developers to intercept and transform URLSearchParams. A <a href=\"https://github.com/47ng/nuqs/pull/1104\">new warning</a> message will also now be shown when <code>shallow:true </code>is used with debounce.&nbsp;</p>\n   <p>A <a href=\"https://www.threads.com/%40developedbyumair/post/DNveOpt0MMr/nuqs250-is-so-beastdebounce-standard-schema-key-isolation-tanstack-router-suppor\">user</a> on threads commented on the 2.5.0 release, highlighting the new features:</p>\n   <blockquote>\n    <p>nuqs@2.5.0 is so beast. Debounce, Standard Schema, Key isolation, TanStack Router support.</p>\n   </blockquote>\n   <p>Nuqs is an open-source project focused on making URL query parameters first-class state in React applications. It provides a <code>useQueryState</code> hook that mirrors <code>useState</code> semantics, with type safety, serialization/parsing, and server/client coordination built in. With version 2.5, Nuqs deepens its integration with schema tooling, gives developers more control over update behavior, and reduces unnecessary rerenders via isolation, all while laying groundwork for better routing interoperability.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Nuqs Adds Debounce, Standard Schema Integration and Key Isolation\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/09/nuqs-debounce-schema/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759217400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Nuqs，React 类型安全的 URL 状态管理器，引入了关键更新，包括 URL 更新的防抖、标准模式集成以及通过键隔离实现更精细的重新渲染控制。",
+  "oneSentenceSummary": "Nuqs，React 类型安全的 URL 状态管理器，引入了关键更新，包括 URL 更新的防抖、标准模式集成以及通过键隔离实现更精细的重新渲染控制。",
+  "summary": "这篇 InfoQ 文章重点介绍了 Nuqs 的最新重大增强功能。Nuqs 是 React 应用程序的类型安全 URL 状态管理器，它提供 `useQueryState` 钩子（`useQueryState hook`）来管理 URL 查询参数作为一等状态。主要新功能包括防抖 URL 更新，用灵活的 `limitUrlUpdates` 属性（`limitUrlUpdates attribute`）替换了旧的 `throttleMs`，从而防止快速输入变化时产生过多请求。2.5 版本还引入了标准模式生成，允许与 tRPC 等工具集成以进行验证和解析。一项主要的性能改进来自键隔离，确保组件仅在其特定查询键更改时才重新渲染；但是，Next.js 因其内部 URLSearchParams 上下文而被指出是一个例外。此外，对 TanStack Router 的实验性支持有助于在 React 框架之间实现更好的互操作性。文章还提到了质量改进更新、零运行时依赖以及较小的库大小。它简要提到了 2.6 版本中的增强功能，例如用于拦截 URLSearchParams 的 `processUrlSearchParams` 钩子（`processUrlSearchParams hook`）以及在使用防抖时对 `shallow:true`（浅层更新）的新警告。这巩固了 Nuqs 作为一流 URL 查询参数管理工具的地位。它功能强大且易于使用。",
+  "mainPoints": [
+    {
+      "point": "Nuqs 引入了对 URL 更新的防抖支持，增强了对历史 API 调用的控制。",
+      "explanation": "`limitUrlUpdates` 属性取代了 `throttleMs`，允许开发者对 URL 更改进行防抖处理。这可以防止快速用户输入期间的过度请求，从而提高应用程序效率。"
+    },
+    {
+      "point": "标准模式集成可实现与外部验证工具更好的互操作性。",
+      "explanation": "Nuqs 现在可以从搜索参数定义中派生验证/解析器模式。这有助于与 tRPC 或路由模式等工具的无缝集成，从而增强数据一致性和类型安全。"
+    },
+    {
+      "point": "键隔离通过减少不必要的组件重新渲染来显著提高性能。",
+      "explanation": "使用 `useQueryState` 的组件现在仅在其特定键更改时才重新渲染，而不是在任何 URL 修改时重新渲染。这种细粒度的控制优化了 React 应用程序中的渲染性能。"
+    },
+    {
+      "point": "实验性的 TanStack Router 支持扩展了 Nuqs 与路由库的兼容性。",
+      "explanation": "新的适配器允许 Nuqs 与 TanStack Router 的逻辑一起管理 URL 状态，为在单体仓库和共享逻辑环境中实现更轻松的集成奠定了基础。"
+    }
+  ],
+  "keyQuotes": [
+    "URL 更新的防抖支持是一项显著的特性。",
+    "Nuqs 现在允许您从搜索参数定义中派生验证/解析器模式，从而可以与 tRPC 或路由模式等工具集成。",
+    "在 v2.5 中，Nuqs 避免了组件在非必要情况下重新渲染的问题——现在只有当组件的特定键发生变化时，才会触发重新渲染。",
+    "Nuqs 是一个开源项目，专注于使 React 应用程序中的 URL 查询参数成为一等状态。",
+    "尽管有新功能，但它的大小仍小于 5.5kb。"
+  ],
+  "tags": [
+    "URL 状态管理",
+    "React 库",
+    "前端开发",
+    "防抖",
+    "性能优化"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 483,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759217400000,
+  "publishDateStr": "2025-09-30",
+  "publishDateTimeStr": "2025-09-30 07:30:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a9fece54",
+  "title": "Airbnb 的 Mussel V2：统一流式与批量摄取的下一代键值存储",
+  "url": "https://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-24 14:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Airbnb's engineering team has <a href=\"https://medium.com/airbnb-engineering/building-a-next-generation-key-value-store-at-airbnb-0de8465ba354\">rolled out Mussel v2, a complete rearchitecture of its internal key value engine</a> designed to unify streaming and bulk ingestion while simplifying operations and scaling to larger workloads. The new system reportedly sustains over 100,000 streaming writes per second, supports tables exceeding 100 terabytes with p99 read latencies under 25 milliseconds, and ingests tens of terabytes in bulk workloads, allowing caller teams to focus on product innovation rather than managing data pipelines.</p>\n   <p>The earlier generation, <a href=\"https://medium.com/airbnb-engineering/mussel-airbnbs-key-value-store-for-derived-data-406b9fa1b296\">Mussel v1</a>, powered Airbnb's internal data services but showed growing limitations as data volumes and product integrations increased. Its static hash-partitioned design ran on <a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html\">Amazon EC2</a> and was managed through <a href=\"https://docs.chef.io/resources/script/\">Chef</a> scripts. Separate batch and streaming paths increased operational overhead and made enforcing consistency difficult.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/news/2025/10/airbnb-nextgen-kv-storage-mussel/en/resources/1mussel-v1-1760821699070.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/airbnb-nextgen-kv-storage-mussel/en/resources/1mussel-v1-1760821699070.jpeg\" rel=\"share\"></p>\n   <p><em>Mussel V1 architecture (Source: <a href=\"https://medium.com/airbnb-engineering/mussel-airbnbs-key-value-store-for-derived-data-406b9fa1b296\">Airbnb Engineering Blog</a>)</em></p>\n   <p>Mussel v2 addresses these constraints by pairing a NewSQL backend with a <a href=\"https://kubernetes.io/\">Kubernetes</a> native control plane, delivering the elasticity of object storage, the responsiveness of a low-latency cache, and the operability of modern service meshes in a single platform. The system uses Kubernetes manifests with automated rollouts, dynamic range sharding with presplitting to mitigate hotspots, and namespace-level quotas and dashboards to improve cost transparency. The Dispatcher layer is stateless and horizontally scalable, routing client API calls, handling retries, and supporting dual write and shadow read modes to facilitate migration.</p>\n   <p>Writes are first persisted into <a href=\"https://kafka.apache.org/\">Kafka</a> for durability, and downstream Replayer and Write Dispatcher components apply them to the backend database in order. Bulk load continues via Airbnb's data warehouse using <a href=\"https://airbnb.io/projects/airflow/\">Airflow</a> jobs and S3 staging, preserving merge or replace semantics. The engineering team also introduced a topology-aware expiration service, sharding data namespaces into range-based subtasks processed concurrently by multiple workers. Expired records are deleted in parallel with scheduling to limit impact on live queries, and write-heavy tables use max version enforcement with targeted deletes. According to the team, these enhancements maintain v1 retention functionality while improving efficiency, transparency, and scalability.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/news/2025/10/airbnb-nextgen-kv-storage-mussel/en/resources/1mussel-v2-1760821699070.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/airbnb-nextgen-kv-storage-mussel/en/resources/1mussel-v2-1760821699070.jpeg\" rel=\"share\"></p>\n   <p><em>Mussel V2 architecture (Source: <a href=\"https://medium.com/airbnb-engineering/building-a-next-generation-key-value-store-at-airbnb-0de8465ba354\">Airbnb Engineering Blog</a>)</em></p>\n   <p>According to Airbnb's engineering team, migrating from v1 to v2 posed significant challenges. The team used a <a href=\"https://en.wikipedia.org/wiki/Blue%E2%80%93green_deployment\">blue-green approach</a> with table-level granularity, continuous validation, and fallback mechanisms. Because v1 lacked native change data capture or table snapshots, tables were bootstrapped into v2 using backups and sampled data to plan presplitting. After bootstrapping ingestion and verifying checksums, lagging Kafka events were applied, and dual writes were enabled. During cutover, reads gradually shifted to v2 while shadow traffic monitored consistency, with fallback to v1 if error rates spiked. Kafka served as a common log throughout the migration.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/news/2025/10/airbnb-nextgen-kv-storage-mussel/en/resources/1v1-v2-migration-1760821699070.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/10/airbnb-nextgen-kv-storage-mussel/en/resources/1v1-v2-migration-1760821699070.jpeg\" rel=\"share\"></p>\n   <p><em>Data migration pipeline from Mussel V1 to V2 (Source: <a href=\"https://medium.com/airbnb-engineering/building-a-next-generation-key-value-store-at-airbnb-0de8465ba354\">Airbnb Engineering Blog</a>)</em></p>\n   <p>Airbnb’s engineers reported that migrating from an <a href=\"https://en.wikipedia.org/wiki/Eventual_consistency\">eventually consistent</a> to a <a href=\"https://en.wikipedia.org/wiki/Strong_consistency\">strongly consistent</a> backend involved operational complexities, including write deduplication and controlled retries. Adjustments were made to query execution and workload distribution, while Kafka served as the durable log. Per-table staging, automated fallbacks, and monitoring enabled migration of over a petabyte of data without downtime.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Airbnb’s Mussel V2: Next-Gen Key Value Storage to Unify Streaming and Bulk Ingestion\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761314400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Airbnb 重新设计了其键值存储 Mussel V2，以统一流式和批量数据摄取，增强可扩展性。它通过 NewSQL 后端和 Kubernetes 原生控制平面简化操作。",
+  "oneSentenceSummary": "Airbnb 重新设计了其键值存储 Mussel V2，以统一流式和批量数据摄取，增强可扩展性。它通过 NewSQL 后端和 Kubernetes 原生控制平面简化操作。",
+  "summary": "Airbnb 推出了 Mussel V2，这是一个重新设计的键值引擎，旨在克服其前身 Mussel V1 的局限性。Mussel V1 由于其静态哈希分区的设计，在面对不断增长的数据量和产品集成时，逐渐显现出局限性。Mussel V2 统一了流式和批量摄取路径，支持每秒超过 10 万次的流式写入，以及超过 100 TB 的表，并具有较低的读取延迟。新的架构利用 NewSQL 后端和 Kubernetes 原生控制平面来实现弹性和可操作性，并使用 Kafka 保证写入持久性。它结合了动态范围分片、无状态调度器层和拓扑感知过期服务。从 V1 到 V2 的迁移涉及超过 1 PB 的数据，采用了蓝绿部署策略，该策略使用了双写、影子读取，并以 Kafka 作为通用日志。这些措施确保了平滑过渡到强一致性后端，且没有停机。",
+  "mainPoints": [
+    {
+      "point": "Mussel V2 统一流式与批量数据摄取，提高一致性与运营效率。",
+      "explanation": "通过将两种摄取类型集成到单个系统中，V2 消除了 V1 单独路径所面临的运营开销和一致性挑战，从而简化了数据管理。"
+    },
+    {
+      "point": "该架构结合了 NewSQL 后端和 Kubernetes 原生控制平面，以实现可扩展性和弹性。",
+      "explanation": "这种配对提供了对象存储的弹性、低延迟的响应能力和现代服务网格的可操作性，从而能够动态扩展和稳健地管理大型工作负载。"
+    },
+    {
+      "point": "强大的蓝绿迁移策略促进了从 Mussel V1 到 V2 的无缝过渡。",
+      "explanation": "通过利用表级粒度、持续验证和双写等机制，并采用 Kafka 作为持久日志，Airbnb 成功地迁移了 PB 级的数据，实现了零停机。这些措施确保了在转向强一致性期间的数据完整性。"
+    }
+  ],
+  "keyQuotes": [
+    "据报道，新系统每秒可维持超过 10 万次的流式写入，支持超过 100 TB 的表，p99 读取延迟低于 25 毫秒，并以批量工作负载摄取数十 TB。",
+    "Mussel v2 通过将 NewSQL 后端与 Kubernetes 原生控制平面结合，解决了原有架构的限制。这在单个平台中实现了对象存储的弹性、低延迟缓存的响应能力以及现代服务网格的可操作性。",
+    "每个表的暂存、自动回退和监控能够迁移超过 1 PB 的数据而不会停机。"
+  ],
+  "tags": [
+    "键值存储",
+    "NewSQL",
+    "分布式系统",
+    "系统架构",
+    "数据摄取"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 490,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761314400000,
+  "publishDateStr": "2025-10-24",
+  "publishDateTimeStr": "2025-10-24 14:00:00"
+}

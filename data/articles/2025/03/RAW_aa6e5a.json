@@ -1,0 +1,59 @@
+{
+  "id": "RAW_aa6e5a",
+  "title": "京东斩获中国 AI 最高奖项的唯一特等奖",
+  "url": "https://mp.weixin.qq.com/s/JG5X_5tHd4ZyuscqSVnKYg",
+  "date": "2025-03-19 10:43:28",
+  "author": "京东技术",
+  "siteName": "京东技术",
+  "content": "\n \n \n  <section style=\"text-align: center;margin-top: 0px;margin-bottom: 16px;line-height: 1.6em;\">\n   <br><span style=\"font-size: 15px;letter-spacing: 0.034em;text-indent: 2em;font-family: mp-quote, &quot;PingFang SC&quot;, system-ui, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei UI&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif;text-align: justify;\"></span>\n  </section>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;letter-spacing: 0.034em;\">近日，中国人工智能学会发布2024年度“吴文俊人工智能科学技术奖”公告，<strong>京东科技人工智能团队凭借“多模态交互式数字人关键技术及产业应用”项目荣获中国智能科学技术最高奖——吴文俊人工智能科学技术奖的特等奖，也是本年度唯一的特等奖。</strong></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">这是京东集团继2021年“商品智能匹配关键技术及在营销中的应用”和2022年“任务型智能对话交互关键技术及大规模产业应用”之后的又一次获奖，再次展现了京东在AI技术研发与产业应用领域的持续领先性。</span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">多模态交互式数字人技术集语音、语义、形象等多模态技术于一体，存在诸多的技术挑战，一直是国内外研究的前沿技术领域。在本次获奖项目中，京东科技人工智能团队在以下三方面实现了技术突破：</span><span style=\"color:rgb(62, 62, 62);letter-spacing:0.034em;font-size:16px;\"></span></p>\n  <ul class=\"list-paddingleft-1\" style=\"list-style-type: disc;margin-left: 8px;margin-right: 8px;\">\n   <li>\n    <section style=\"margin-left: 8px;margin-right: 8px;line-height: 2em;text-indent: 0em;\">\n     <span style=\"font-size: 15px;text-indent: 2em;letter-spacing: 0.034em;\">提出了低成本、高保真人体建模技术，解决了人体建模成本高、观感差难题</span>\n    </section></li>\n   <li>\n    <section style=\"margin-left: 8px;margin-right: 8px;line-height: 2em;text-indent: 0em;\">\n     <span style=\"font-size: 15px;\">提出了语义一致多模态应答技术，解决了多模态语义难对齐、应答弱难题</span>\n    </section></li>\n   <li>\n    <p style=\"margin-left: 8px;margin-right: 8px;line-height: 2em;text-indent: 0em;margin-bottom: 24px;\"><span style=\"font-size: 15px;\">提出了多模态自然化行为生成技术，解决了多样化行为难协调、交互假难题</span></p></li>\n  </ul>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">京东多模态交互式数字人能力持续位居国际领先水平，并在2024年率先开启行业最大规模的商业化应用，截至目前，已服务9000+商家，累计为商家带来销售增量超140亿。2024年4月，采销东哥AI数字人实现了高逼真、高可靠、极低幻觉率的新水平。2024年京东618期间，包括格力总裁董明珠、洁丽雅总经理“毛巾少爷”石展承、名创优品CEO叶国富等21位总裁数字人空降京东直播间，与数千家品牌商，共同创造了史上一日并行规模最大的数字人直播事件。在京东11.11、年货节等场景，数字人与个护美妆、家电家居、母婴宠物等品牌产生化学反应，持续带来千人千面的直播交互体验。</span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">近期，京东言犀数字人技术再度进化。京东科技人工智能团队打造的数字人通用的基座大模型，通过语音合成大模型LiveTTS及通用数字人大模型LiveHuman，<strong>仅需输入自然语言或1秒视频/照片，即可生成4K超高清、100%口型匹配的数字人，彻底告别数字人制作对线下拍摄、建模与耗时训练的依赖。</strong></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">LiveTTS语音合成基座模型：基于20万小时数据训练的扩散模型，实现“零样本”声音合成与多语种情感化输出，音色相似度较其它头部厂商高出1.3倍、字符错误率（CER）降低最高5.12%；</span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">LiveHuman数字人基座模型：创新性的人体过渡帧生成技术，解决多片段衔接卡顿难题，在遮挡、大角度、动态背景、多人直播等极端条件下仍有流畅表现。</span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><strong><span style=\"font-size: 15px;\">这一系列突破将单个数字人生产成本从数万元拉低至两位数，较真人拍摄模式成本降幅超90%，标志着数字人从“专业工具”正式成为“普惠生产力”。</span></strong><span style=\"font-size: 15px;\">这将为广告素材批量生成、新媒体投放、个人IP打造等场景应用拆掉技术藩篱，走向工业级应用。</span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">作为一家兼具实体企业基因和属性、先进数字技术和能力的新型实体企业，京东20多年来持续深耕供应链，用人工智能等数智化技术全面连接和优化社会生产、流通、消费、服务等各个环节。从零售效率提升到产业生态构建，京东始终践行“以实助实”的路径。截至2024年底，京东体系在基础科学和技术研发上已累计投入近1400亿元，先后推动大语言模型、语音识别及合成、数字人等一系列人工智能共性关键技术建设，并广泛应用于零售、物流、工业、健康、政务等产业场景，助力千行百业实数融合，实现高质量发展。</span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;text-indent: 2em;line-height: 2em;\"><span style=\"font-size: 15px;\">面向未来，数字人只是京东浩瀚技术创新版图中的一小部分。京东正加速推动AI构建新质生产力，让每个企业乃至个人都能更高效率、更低门槛拥抱AI。</span></p>\n  <p style=\"display: none;\"><mp-style-type data-value=\"3\"></mp-style-type></p>\n \n",
+  "aiSummary": "京东科技多模态数字人技术获吴文俊奖特等奖，并实现数字人生产成本大幅降低。",
+  "oneSentenceSummary": "京东科技多模态数字人技术获吴文俊奖特等奖，并实现数字人生产成本大幅降低。",
+  "summary": "京东科技人工智能团队凭借“多模态交互式数字人关键技术及产业应用”项目，荣获吴文俊人工智能科学技术奖特等奖。该项目通过 LiveTTS 语音合成大模型及 LiveHuman 数字人基座模型，在低成本高保真人体建模、语义一致多模态应答和多模态自然化行为生成三方面实现了技术突破。LiveTTS 模型基于 20 万小时数据训练，实现零样本声音合成与多语种情感化输出；LiveHuman 模型创新性地解决了多片段衔接卡顿难题。这些技术突破将单个数字人生产成本从数万元降至两位数，降幅超 90%。该技术已服务 9000+ 商家，累计带来销售增量超 140 亿，并应用于采销东哥 AI 数字人等京东直播间场景，为广告素材批量生成、新媒体投放、个人 IP 打造等场景提供了普惠生产力。京东正加速推动 AI 构建新质生产力，让每个企业乃至个人都能更高效率、更低门槛拥抱 AI。",
+  "mainPoints": [
+    {
+      "point": "低成本高保真人体建模技术提升数字人质量和效率",
+      "explanation": "解决了传统人体建模成本高、观感差的问题，使得更多企业和个人能够应用数字人技术，并提升了数字人的质量和生产效率。"
+    },
+    {
+      "point": "语义一致多模态应答技术提升数字人交互体验",
+      "explanation": "解决了多模态语义难对齐、应答弱的问题，提升了数字人交互的自然性和流畅性。"
+    },
+    {
+      "point": "基座大模型大幅降低数字人生产成本",
+      "explanation": "通过 LiveTTS 和 LiveHuman 模型，无需线下拍摄和建模，即可快速生成高质量数字人，成本降幅超 90%，实现数字人技术的普惠化。"
+    },
+    {
+      "point": "数字人从 \"专业工具\" 正式成为 \"普惠生产力\"",
+      "explanation": "标志着数字人技术不再局限于专业领域，而是可以被广泛应用于各个行业和个人场景，释放更大的商业价值和社会价值。"
+    }
+  ],
+  "keyQuotes": [
+    "京东科技人工智能团队凭借\"多模态交互式数字人关键技术及产业应用\"项目荣获中国智能科学技术最高奖------吴文俊人工智能科学技术奖的特等奖，也是本年度唯一的特等奖。",
+    "仅需输入自然语言或 1 秒视频 / 照片，即可生成 4K 超高清、100% 口型匹配的数字人，彻底告别数字人制作对线下拍摄、建模与耗时训练的依赖。",
+    "这一系列突破将单个数字人生产成本从数万元拉低至两位数，较真人拍摄模式成本降幅超 90%，标志着数字人从\"专业工具\"正式成为\"普惠生产力\"。",
+    "LiveTTS 语音合成基座模型：基于 20 万小时数据训练的扩散模型，实现 \"零样本\" 声音合成与多语种情感化输出，音色相似度较其它头部厂商高出 1.3 倍、字符错误率（CER）降低最高 5.12%；",
+    "LiveHuman 数字人基座模型：创新性的人体过渡帧生成技术，解决多片段衔接卡顿难题，在遮挡、大角度、动态背景、多人直播等极端条件下仍有流畅表现。"
+  ],
+  "tags": [
+    "数字人",
+    "多模态交互",
+    "基座大模型",
+    "人工智能",
+    "语音合成"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 91,
+  "wordCount": 1402,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_146282",
+  "sourceName": "京东技术",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1742381008000,
+  "publishDateStr": "2025-03-19",
+  "publishDateTimeStr": "2025-03-19 10:43:28"
+}

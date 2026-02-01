@@ -1,0 +1,63 @@
+{
+  "id": "RAW_0ea4cb",
+  "title": "画到哪，动到哪！字节跳动发布视频生成「神笔马良」ATI，已开源！ ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-07-02-11",
+  "date": "2025-07-02 10:51:00",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p data-pm-slice=\"0 0 []\"><br></p>\n  <h4 data-pm-slice=\"3 2 []\"><strong>Angtian Wang 是字节跳动的研究员，研究方向包括视频生成、3D 视觉、differentiable rendering。博士毕业于约翰霍普金斯（Johns Hopkins University）大学。师从 Dr. Alan Yuille。</strong></h4>\n  <p data-pm-slice=\"0 0 []\">近年来，随着扩散模型（Diffusion Models）、Transformer 架构与高性能视觉理解模型的蓬勃发展，视频生成任务取得了令人瞩目的进展。从静态图像生成视频的任务（Image-to-Video generation）尤其受到关注，其关键优势在于：能够以最小的信息输入生成具有丰富时间连续性与空间一致性的动态内容。</p>\n  <p data-pm-slice=\"0 0 []\">然而，尽管生成质量不断提升，当前主流方法普遍面临一个关键瓶颈：<strong>缺乏有效、直观、用户友好的运动控制方式</strong>。</p>\n  <p>用户在创作动态视频时，往往具有明确的运动意图，例如人物要往哪个方向奔跑、镜头如何推进拉远、动物的跳跃轨迹等。但现有方法普遍依赖于预设模板、动作标签或风格提示，缺少一种<strong>既自由又精准</strong>的方式来指定对象与摄像机的运动路径。尤其是在存在多个主体或复杂场景交互的情况下，这种控制能力的缺失，极大限制了生成系统的创意表达能力与实际应用价值。</p>\n  <p>为了解决这一问题，字节跳动提出了 <strong>ATI</strong> ——一种全新的、以「轨迹为指令」的可控视频生成框架。ATI 的核心理念是：<strong>将用户在输入图像上手绘的任意轨迹，转化为驱动物体与摄像机运动的显式控制信号，并以统一的潜在空间建模方式注入视频生成过程。</strong>这使得视频创作从「参数调控」转变为「可视化创意」，让用户「画到哪，动到哪」，以直观方式实现帧级精准控制。</p>\n  <section data-pm-slice=\"1 4 []\">\n   <img data-backh=\"124\" data-backw=\"562\" data-imgfileid=\"503493119\" data-ratio=\"0.22037037037037038\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/269b4bfc-0624-48a1-4160-c7edd804f600/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/9a0d1544-f3e5-4f62-bebe-0b381df43134/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <p>Title：ATI: Any Trajectory Instruction for Controllable Video Generation</p></li>\n   <li>\n    <p>Paper：https://arxiv.org/pdf/2505.22944</p></li>\n   <li>\n    <p>Project page：https://anytraj.github.io/</p></li>\n   <li>\n    <p>Github：https://github.com/bytedance/ATI</p></li>\n   <li>\n    <p>Hugging Face：https://huggingface.co/bytedance-research/ATI</p></li>\n   <li>\n    <p>ComfyUI：https://github.com/kijai/ComfyUI-WanVideoWrapper</p></li>\n  </ul>\n  <h4><strong>方法</strong></h4>\n  <p>ATI 接受两个基本输入：一张静态图像和一组用户手绘轨迹。这些轨迹可以在图像上自由绘制，支持任意形状，包括直线、曲线、折线、回环乃至抽象形状。ATI 通过<strong>高斯运动注入器（Gaussian Motion Injector）</strong>将这些轨迹编码为潜在空间中的运动向量，再注入至扩散生成流程中，进而引导生成过程逐帧呈现对应的物体运动与视角变换。</p>\n  <p><img data-backh=\"141\" data-backw=\"562\" data-imgfileid=\"503493130\" data-ratio=\"0.25092592592592594\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b6f95323-d0a9-4d27-1fe4-4ef445b21b00/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/17410a7d-3f09-41d8-91ad-5732d2b15a51/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>如上图所示，我们希望让视频生成模型「理解」用户画出的运动轨迹，并在后续帧里按照这条轨迹产生动作。为此，我们在模型的输入特征空间上，对每一个轨迹点都注入一个「高斯权重」。使得模型就能在特征图上「看到」一颗颗从时刻 0 到 t 按轨迹移动的小「亮点」，并在训练中逐步理解输入轨迹在输入特征上和 denoise 生成视频的关联。</p>\n  <p><img data-backh=\"209\" data-backw=\"562\" data-imgfileid=\"503493131\" data-ratio=\"0.37222222222222223\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/37b3774a-4cd2-43bf-222f-aedfaf954700/public\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/be71ae1c-5621-4276-8cc5-5e16c9d020dd/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p><strong>编码图像</strong>：先用一个「编码器」把原始图片转换成一张低分辨率的特征图。&nbsp;</p>\n  <p><strong>采样特征</strong>：对于轨迹的起始点，从特征图上精确地（通过双线性差值，保持小数位置精度）取出一个特征向量。&nbsp;</p>\n  <p><strong>生成高斯权重</strong>：在每一帧，对应轨迹点的位置，都用一个小圆形「高斯」亮点去覆盖周围的像素，越靠近圆心的像素，权重越高。</p>\n  <p><strong>注入特征</strong>：把起始点的特征向量，按照这些高斯权重「软」地分配到特征图上的邻近区域，并在模型在生成视频时输入给模型。</p>\n  <p>这样一来，当我们给生成器喂入图像和这组「高斯掩码+特征」，模型就能直观地「看懂」在每一帧里，哪儿应该动、怎样动，从而生成符合用户手绘轨迹的连贯动画效果。借助<strong>高斯运动注入器（Gaussian Motion Injector）</strong>与<strong>像素级通道拼接策略（Pixel-wise Channel Fusion）</strong>，ATI 能够统一控制对象级动作、局部身体部位运动与摄像机视角变化，<strong>无需切换模型或模块结构</strong>，即可高效支持多目标、多风格、多任务的视频生成需求。同时 ATI 支持多个视频生成模型，可以在 Seaweed-7B 以及 Wan2.1-I2V-14B 等不同结构以及大小的模型上均有稳定的表现。</p>\n  <h4><strong>结果展示</strong></h4>\n  <section>\n   <img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493237\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/ea9f5fc6-f671-402f-9b63-7866d6c96900/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/50eeb31f-6e19-4407-9429-616fae3da06f/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>用户仅需在原图上以手指或鼠标拖拽绘制任意轨迹，ATI 即可实时捕捉该轨迹路径并将其注入扩散模型。借助高斯运动注入器，无论直线、曲线还是复杂回环，均能被转化为连贯自然的动态视频——画到哪儿，动到哪儿。<br><img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493238\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8e210616-f3de-4654-f855-39861d6f0200/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width:100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/2e4e4844-bf13-4ce8-b29c-303a31139646/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>在人物或动物肖像场景中，用户可以指定奔跑、跳跃、挥臂等关键动作的轨迹。ATI 对每一帧中的关键点进行细粒度采样与编码，准确还原关节弧度与质心移动，生成符合生物力学规律的自然运动序列。</p>\n  <section>\n   <img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493239\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/60a5eb9a-f66e-42d4-d7e5-e848e8c09700/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width:100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/3f821fd0-f534-49dd-bb21-372c80385453/640.gif\" data-order=\"2\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>当场景包含多个目标时，ATI 最多可并行处理 8 条独立轨迹。系统通过空间掩码和通道分离策略，保证各对象身份信息互不干扰，从而呈现复杂群体互动时的连贯动态。<br><img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493240\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4ad2f887-20e3-4dbe-ce41-e6751242b100/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/6d547d75-fffb-4bf5-a78a-21476f2fa408/640.gif\" data-order=\"3\" alt=\"图片\" data-report-img-idx=\"10\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>ATI 不仅支持对象级运动控制，还能同步驱动摄像机视角。用户可在原图上绘制推拉、平移、旋转等镜头轨迹，将其与对象轨迹共同注入潜在空间，生成包含摇镜、跟随和俯仰等电影级镜头语言的视频。<br><img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493241\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/46c14459-574e-4098-0bdd-cafd5d307e00/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/55ebc568-3b09-4ad3-a27b-fc4661146ad1/640.gif\" data-order=\"4\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>在同一推理过程中，物体与摄像机轨迹可同时注入，借助像素级通道拼接策略实现多条运动指令的无缝融合。系统无需模块化切换，即可在潜在特征中并行呈现角色动作、群体互动与镜头切换，输出丰富而连贯的动态叙事。</p>\n  <section>\n   <img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493242\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d7939fa3-0a6e-4c22-5760-b61c79e28100/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width:100%;\" data-index=\"10\" src=\"https://image.jiqizhixin.com/uploads/editor/16e85a29-8ac7-4f3e-bab3-260b229d4f31/640.gif\" data-order=\"5\" alt=\"图片\" data-report-img-idx=\"11\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>ATI 展示出良好的跨领域泛化能力，覆盖写实电影、卡通插画、油画质感、水彩渲染、游戏美术等多种艺术风格。通过更换参考图与输入轨迹，系统能够在保留原始风格特征的基础上生成对应的运动视频，满足多元化的应用需求。<br><img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493243\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/555cc2f7-65cd-44f6-7545-312c23b29500/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"11\" src=\"https://image.jiqizhixin.com/uploads/editor/a6544db2-c94c-470a-9275-5bbe231a1b3a/640.gif\" data-order=\"6\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>用户可在潜在空间中绘制超越物理边界的轨迹，以生成飞天、伸缩、扭曲等非现实动作效果，为科幻或魔幻场景提供无限创意空间。<br><img data-backh=\"316\" data-backw=\"562\" data-imgfileid=\"503493244\" data-ratio=\"0.5625\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/27677376-95e7-4183-76c5-57e7785e8800/public\" data-type=\"gif\" data-w=\"800\" type=\"block\" data-original-style=\"width: 100%;\" data-index=\"12\" src=\"https://image.jiqizhixin.com/uploads/editor/67bf00ed-8df2-45d1-9627-add53c2ba4e5/640.gif\" data-order=\"7\" alt=\"图片\" data-report-img-idx=\"9\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>基于 Wan2.1-I2V-14B 的高精度模型，ATI 可生成与实拍媲美的视频短片，精准还原面部表情、服饰材质与光影细节；同时提供轻量级 Seaweed-7B 版本，以满足资源受限环境中的实时交互需求。</p>\n  <h4><strong>模型开源</strong></h4>\n  <p>目前，<strong>ATI 的 Wan2.1-I2V-14B 模型版本已在 Hugging Face 社区正式开源</strong>，为研究人员与开发者提供了高质量、可控的视频生成能力。围绕该模型的社区生态也在快速完善：<strong>Kijai&nbsp;</strong>开发的 ComfyUI-WanVideoWrapper 插件支持 FP8 量化模型（如 <code>Wan2_1-I2V-ATI-14B_fp8_e4m3fn.safetensors</code>），显著降低显存需求，方便在消费级 GPU 上进行推理部署。同时，<strong>Benji&nbsp;</strong>在 YouTube 发布的教学视频《ComfyUI Wan 2.1 任意轨迹指令运动控制教程》为创作者提供了详尽的实操指南。完整代码与模型请参阅 GitHub（bytedance/ATI）及 Hugging Face 模型库。</p>\n \n",
+  "aiSummary": "字节跳动开源视频生成框架 ATI，创新性地通过手绘轨迹实现物体与摄像机的精准动态控制",
+  "oneSentenceSummary": "字节跳动开源视频生成框架 ATI，创新性地通过手绘轨迹实现物体与摄像机的精准动态控制",
+  "summary": "文章介绍了字节跳动最新开源的视频生成框架 ATI，它创新性地采用手绘轨迹作为控制信号，通过高斯运动注入器和像素级通道拼接策略将用户绘制的任意轨迹编码为运动向量，实现物体和摄像机的精准运动控制。该系统支持多目标并行控制、摄像机视角变化以及多种艺术风格适配，并已在 Hugging Face 开源 Wan2.1-I2V-14B 模型版本，配套 ComfyUI 插件和教学视频等完整社区生态。ATI 突破了现有视频生成方法缺乏直观控制方式的瓶颈，支持 Seaweed-7B 和 Wan2.1-I2V-14B 等多种模型结构，为创意视频制作提供了新范式。",
+  "mainPoints": [
+    {
+      "point": "ATI 通过手绘轨迹实现视频生成的精准控制",
+      "explanation": "用户可在输入图像上自由绘制运动轨迹，系统将其转化为运动向量注入生成过程，实现'画到哪，动到哪'的直观控制，包括物体运动和摄像机视角变化"
+    },
+    {
+      "point": "高斯运动注入器与像素级通道拼接策略是核心技术突破",
+      "explanation": "通过高斯权重编码轨迹点，在特征图上形成移动'亮点'，结合像素级通道拼接实现多轨迹融合，使模型能理解轨迹与生成视频的关联，实现帧级精准控制"
+    },
+    {
+      "point": "支持多目标并行控制和多种艺术风格",
+      "explanation": "可同时处理 8 条独立轨迹，保证对象身份不混淆；适配写实、卡通、油画等多种风格，展现良好泛化能力"
+    },
+    {
+      "point": "支持多个视频生成模型架构",
+      "explanation": "在 Seaweed-7B 和 Wan2.1-I2V-14B 等不同结构和大小的模型上均有稳定表现，满足不同计算需求"
+    },
+    {
+      "point": "已开源并形成完整社区生态",
+      "explanation": "在 Hugging Face 开源模型，配套 ComfyUI 插件支持 FP8 量化降低显存需求，以及详细教学视频，大幅降低使用门槛"
+    }
+  ],
+  "keyQuotes": [
+    "ATI 的核心理念是：将用户在输入图像上手绘的任意轨迹，转化为驱动物体与摄像机运动的显式控制信号",
+    "借助高斯运动注入器，无论直线、曲线还是复杂回环，均能被转化为连贯自然的动态视频——画到哪儿，动到哪儿",
+    "ATI 展示出良好的跨领域泛化能力，覆盖写实电影、卡通插画、油画质感、水彩渲染、游戏美术等多种艺术风格",
+    "用户可在潜在空间中绘制超越物理边界的轨迹，以生成飞天、伸缩、扭曲等非现实动作效果，为科幻或魔幻场景提供无限创意空间",
+    "通过高斯运动注入器与像素级通道拼接策略，ATI 能够统一控制对象级动作、局部身体部位运动与摄像机视角变化，无需切换模型或模块结构"
+  ],
+  "tags": [
+    "视频生成",
+    "扩散模型",
+    "计算机视觉",
+    "字节跳动",
+    "ATI"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2297,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1751453460000,
+  "publishDateStr": "2025-07-02",
+  "publishDateTimeStr": "2025-07-02 10:51:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d5947f",
+  "title": "稚晖君的「好东西」揭晓！首个通用具身基座模型，机器人告别「看得懂做不来」",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-10-2",
+  "date": "2025-03-10 04:02:52",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>上周五，稚晖君在微博上预告，「下周有好东西发布」。</p>\n  <p><img alt=\"图片\" data-imgfileid=\"503475093\" data-ratio=\"0.4351851851851852\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8ce42531-4c68-4636-a19b-59a7e5a57d00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);letter-spacing: normal;text-align: start;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/1df3cd14-ccdd-492e-ab92-2a68b8a5cccd/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\"></p>\n  <p>还没进入「下周」多久，智元机器人的「好东西」揭晓了，还是双重惊喜：Vision-Language-Latent-Action (ViLLA) 架构和通用具身基座大模型 GO-1。<a href=\"https://mp.weixin.qq.com/s/pErwkCKNeuEvimrAfKcbWA\"><img src=\"https://image.jiqizhixin.com/uploads/editor/035af667-7aeb-415c-9cff-5b7c3b9b9817/1741579266732.png\" style=\"width: 70%;\" class=\"fr-fic fr-dib\"></a></p>\n  <p>机器人训练，苦数据难久矣。一方面是认知维度的数据：互联网上海量的文本和图片数据，帮助机器人建立基础认知，理解世界是什么样的。</p>\n  <p>另一方面是动作维度的数据，主要来源有人类的操作视频、跨本体示范视频、在虚拟场景中练习的仿真数据，还有机器人在实际环境中实操得来的真机示教数据。</p>\n  <p><img alt=\"图片\" data-imgfileid=\"503475094\" data-ratio=\"0.43148148148148147\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/70fb34c5-2acc-426d-8169-1cf4b7da6900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);letter-spacing: normal;text-align: start;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/83789c61-07ce-4663-b3f5-79efbc8aeffa/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 智元机器人将机器人的训练数据划分为四个层次</sup></em></p>\n  <p>然而现有的 VLA（Vision-Language-Action）架构，主要依赖真机和合成数据。</p>\n  <p>我们每天刷的短视频有很多可供机器人学习的操作，但不能直接用，需要「翻译」成机器人能理解的语言。</p>\n  <p>因此，机器人很难做到看完人类的视频教程，脑子学会了，手学会了，直接上手做好了。</p>\n  <p>没有充分激活人类 / 跨本体操作视频数据这个宝贵的数据来源，机器人迭代的成本更高，进化的速度也更慢了。</p>\n  <p>那么，怎样的架构才能充分利用好这些数据呢？</p>\n  <p>智元提出了全新的 Vision-Language-Latent-Action (ViLLA) 架构。</p>\n  <p>与 VLA 架构相比，ViLLA 通过预测 Latent Action Tokens（隐式动作标记），让机器人能够将人类动作视频转化为自己可执行的动作序列。这样，机器人就能同时获得认知和动作两个维度的训练，既知其然，也知其所以然。</p>\n  <p>这样一来，机器人也能有效利用高质量的 AgiBot World 数据集以及互联网上广泛的视频数据，增强策略的泛化能力。</p>\n  <p>基于 ViLLA 架构，智元打造了通用具身基座大模型 ——GO-1。它由 VLM (语言视觉模型) 和 MoE (专家混合模型) 组成。它整合了视觉、语言、动作、触觉等多模态输入，规划具体动作，直接输出机器人的动作执行序列。</p>\n  <p>举个例子来说，你告诉机器人去挂衣服，GO-1 会指导机器人理解任务要求，分解动作步骤，适应具体环境，最终执行操作。</p>\n  <p>但在更深的技术面，这是因为 GO-1 大模型融会贯通了机器人训练数据的四个层次：</p>\n  <p>在训练阶段，学习了互联网的大规模纯文本和图文数据，所以能理解「挂衣服」在此情此景下的含义和要求。</p>\n  <p>学习过人类操作视频和其他机器人的各种操作视频，所以能知道挂衣服通常包括哪些环节。</p>\n  <p>学习过仿真的不同衣服、不同衣柜、不同房间，模拟过挂衣服的操作，所以能理解环节中对应的物体和环境并打通整个任务过程。</p>\n  <p>又因为学习过真机的示教数据，所以机器人能精准完成任务。</p>\n  <p>这样一来，GO-1 大模型可以帮助机器人完成全面的「基础教育」和「职业教育」，让机器人具备强大的迁移学习能力。面对新场景时，机器人既有基本常识，又能根据多种多样的环境和物体，快速上手新操作。</p>\n  <p><img alt=\"图片\" data-imgfileid=\"503475095\" data-ratio=\"0.23055555555555557\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d65604b7-a50a-48cd-b54f-6106ffbdcd00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);letter-spacing: normal;text-align: start;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/a6b22d3e-469b-4edd-8898-722a4921507b/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <ul>\n   <li>\n    <p>论文链接：https://agibot-world.com/blog/agibot_go1.pdf</p></li>\n  </ul>\n  <p><strong>GO-1：VLA 进化到 ViLLA</strong></p>\n  <p>与 Vision-Language-Action (VLA) 架构相比，ViLLA 通过预测 Latent Action Tokens (隐式动作标记)，弥合图像 - 文本输入与机器人执行动作之间的鸿沟。在真实世界的灵巧操作和长时任务方面表现卓越，远远超过了已有的开源 SOTA 模型。</p>\n  <p><img alt=\"图片\" data-imgfileid=\"503475096\" data-ratio=\"0.3537037037037037\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c854a95d-8c57-47ea-3c91-2ff06887d700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);letter-spacing: normal;text-align: start;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/5732854a-97c5-46ad-a733-3a6d83c227b1/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>ViLLA 架构是由 VLM (多模态大模型) + MoE (混合专家) 组成，其中 VLM 借助海量互联网图文数据获得通用场景感知和语言理解能力，MoE 中的 Latent Planner (隐式规划器) 借助大量跨本体和人类操作数据获得通用的动作理解能力，MoE 中的 Action Expert (动作专家) 借助百万真机数据获得精细的动作执行能力。</p>\n  <p>在推理时，VLM、Latent Planner 和 Action Expert 三者协同工作：</p>\n  <ul>\n   <li>\n    <section>\n     VLM 采用 InternVL-2B，接收多视角视觉图片、力觉信号、语言输入等多模态信息，进行通用的场景感知和指令理解\n    </section></li>\n   <li>\n    <section>\n     Latent Planner 是 MoE 中的一组专家，基于 VLM 的中间层输出预测 Latent Action Tokens 作为 CoP (Chain of Planning，规划链)，进行通用的动作理解和规划\n    </section></li>\n   <li>\n    <section>\n     Action Expert 是 MoE 中的另外一组专家，基于 VLM 的中间层输出以及 Latent Action Tokens，生成最终的精细动作序列\n    </section></li>\n  </ul>\n  <p>Latent Planner 和 Action Expert 是这个 MoE 框架里的 2 个关键构成：</p>\n  <p><strong>Latent Planner（隐式规划器）</strong></p>\n  <p>尽管 AgiBot World 数据集已经是全球最大的机器人真机示教数据集，但这样高质量带动作标签的真机数据量仍然有限，远少于互联网规模的数据集。</p>\n  <p>为此，智元采用 Latent Actions（隐式动作）来建模当前帧和历史帧之间的隐式变化，然后通过 Latent Planner 预测这些 Latent Actions，从而将异构数据源中真实世界的动作知识转移到通用操作任务中。</p>\n  <ul>\n   <li>\n    <section>\n     Latent Action Model（LAM，隐式动作模型）主要用于获取当前帧和历史帧之间 Latent Actions 的 Groundtruth（真值），它由编码器和解码器组成。其中\n    </section></li>\n   <li>\n    <section>\n     编码器采用 Spatial-temporal Transformer，并使用 Causal Temporal Masks（时序因果掩码）。\n    </section></li>\n   <li>\n    <section>\n     解码器采用 Spatial Transformer，以初始帧和离散化的 Latent Action Tokens 作为输入。\n    </section></li>\n   <li>\n    <section>\n     Latent Action Tokens 通过 VQ-VAE 的方式进行量化处理。\n    </section></li>\n   <li>\n    <section>\n     Latent Planner 负责预测这些离散的 Latent Action Tokens，它与 VLM 主干网络共享相同的 Transformer 结构，但使用了两套独立的 FFN (前馈神经网络) 和 Q/K/V/O (查询、键、值、输出) 投影矩阵。Latent Planner 这组专家会逐层结合 VLM 输出的中间信息，通过 Cross Entropy Loss（交叉熵损失）进行监督训练。\n    </section></li>\n  </ul>\n  <p><strong>Action Expert（动作专家）</strong></p>\n  <p>为了实现 High-frequency（高频率）且 Dexterous（灵活）的操控，智元引入了 Action Expert，其采用 Diffusion Model 作为目标函数来建模低层级动作的连续分布。</p>\n  <ul>\n   <li>\n    <section>\n     Action Expert 结构设计上与 Latent Planner 类似，也是与 VLM 主干网络共享相同的 Transformer 结构，但使用两套独立的 FFN 和 Q/K/V/O 投影矩阵，它通过 Denoising Process（去噪过程）逐步回归动作序列。\n    </section></li>\n   <li>\n    <section>\n     Action Expert 与 VLM、Latent Planner 分层结合，确保信息流的一致性与协同优化。\n    </section></li>\n  </ul>\n  <p><strong>GO-1 首个通用具身基座模型</strong></p>\n  <p>而 GO-1 基于 ViLLA架构。具体来说，VLM 作为通用具身基座大模型的主干网络，继承开源多模态大模型 InternVL2.5-2B 的权重，利用互联网大规模纯文本和图文数据，让 GO-1 大模型具备了通用的场景感知和理解能力。</p>\n  <p>隐动作专家模型作为第一个专家模型，是 GO-1 大模型中隐式的规划器，它利用到了大规模人类操作和跨本体操作视频，让模型具备动作的理解能力。</p>\n  <p>GO-1 大模型的最后是作为动作预测器的动作专家模型，它利用高质量的仿真数据、真机数据，让模型具备了动作的精细执行能力。</p>\n  <p>作为通用具身基座大模型，GO-1 实现了四项突破：</p>\n  <ul>\n   <li>\n    <section>\n     人类视频学习：GO-1 大模型可以结合互联网视频和真实人类示范进行学习，增强模型对人类行为的理解，更好地为人类服务。\n    </section></li>\n   <li>\n    <section>\n     小样本快速泛化：GO-1 大模型具有强大的泛化能力，能够在极少数据甚至零样本下泛化到新场景、新任务，降低了具身模型的使用门槛，使得后训练成本非常低。\n    </section></li>\n   <li>\n    <section>\n     一脑多形：GO-1 大模型是通用机器人策略模型，能够在不同机器人形态之间迁移，快速适配到不同本体，群体升智。\n    </section></li>\n   <li>\n    <section>\n     持续进化：GO-1 大模型搭配智元一整套数据回流系统，可以从实际执行遇到的问题数据中持续进化学习，越用越聪明。\n    </section></li>\n  </ul>\n  <p><strong>实验结果</strong></p>\n  <p>通过 Vision-Language-Latent-Action (ViLLA) 创新性架构，研究团队在五种不同复杂度任务上测试 GO-1。</p>\n  <p>相比已有的最优模型，GO-1 成功率大幅领先，平均成功率提高了 32%(46%→78%)。其中 GO-1 在倒水（Pour Water）、清理桌面（Table Bussing） 和补充饮料（ Restock Beverage） 任务表现尤为突出。</p>\n  <p><img alt=\"图片\" data-imgfileid=\"503475097\" data-ratio=\"0.24074074074074073\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5e0ca4a5-cab9-46d8-b506-7f3b495c1b00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"caret-color: rgb(0, 0, 0);color: rgb(0, 0, 0);letter-spacing: normal;text-align: start;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/faca5aa0-a6f9-4114-abe9-b796226cff79/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>此外，他们还对 Latent Planner 进行了消融实验，可以看到增加 Latent Planner 可以提升 12% 的成功率 (66%→78%)。</p>\n  <p>在破解机器人训练的数据难题上，智元始终秉持开源精神，推动业界共享。</p>\n  <p>去年 12 月，智元面向全球开源了 AgiBot World 数据集大规模训练数据集，这是首个基于真实场景和全栈硬件的平台所采集的百万级机器人数据集。今年 2 月，智元开源了 AgiBot Digital World 仿真数据集，还可以提供多元化的专家轨迹生成策略。</p>\n  <p>如今，随着 ViLLA 架构与 GO-1 大模型的重磅发布，机器人不仅拥有了海量真实和仿真数据，更具备了快速学习的迁移能力，让机器在拓展了运动能力之外，更加具备了 AI 的能力，作业能力，是让机器具备了真正的价值。</p>\n  <p>相信机器人将能更好地适应千变万化的现实环境，向着具备通用智能的自主体发展，在商业、工业、家居等多个领域大展身手。</p>\n </body>\n</html>",
+  "aiSummary": "智元机器人发布 ViLLA 架构和通用具身基座大模型 GO-1，实现机器人从视频学习动作，提升泛化能力。",
+  "oneSentenceSummary": "智元机器人发布 ViLLA 架构和通用具身基座大模型 GO-1，实现机器人从视频学习动作，提升泛化能力。",
+  "summary": "文章介绍了智元机器人发布的 ViLLA 架构和通用具身基座大模型 GO-1。该架构通过预测 Latent Action Tokens (隐式动作标记)，实现了将非结构化的人类动作视频转化为机器人可执行动作的关键突破，使机器人能够同时获得认知和动作两个维度的训练。GO-1 大模型整合了视觉、语言、动作、触觉等多模态输入，规划具体动作，直接输出机器人的动作执行序列，在真实世界任务中表现卓越，超越现有 SOTA 模型。GO-1 实现了人类视频学习、小样本快速泛化、一脑多形和持续进化等多项突破，降低了机器人开发的成本和复杂性。智元机器人还开源了 AgiBot World 数据集和仿真数据集，推动业界共享。",
+  "mainPoints": [
+    {
+      "point": "ViLLA 架构通过隐式动作标记弥合了视觉 - 语言输入与机器人执行动作之间的鸿沟。",
+      "explanation": "ViLLA 架构使得机器人能够将人类动作视频转化为自己可执行的动作序列，从而有效利用互联网上的海量视频数据。"
+    },
+    {
+      "point": "GO-1 大模型实现了人类视频学习和小样本快速泛化。",
+      "explanation": "GO-1 大模型能够结合互联网视频和真实人类示范进行学习，并能够在极少数据甚至零样本下泛化到新场景、新任务。"
+    },
+    {
+      "point": "GO-1 大模型具备持续进化能力，可以通过数据回流系统从实际执行中遇到的问题数据持续学习，越用越聪明。",
+      "explanation": "这一特性使得 GO-1 能够不断优化自身性能，适应不断变化的环境和任务需求。"
+    },
+    {
+      "point": "智元机器人开源 AgiBot World 数据集，推动具身智能领域数据共享。",
+      "explanation": "开源数据集降低了研究门槛，加速了具身智能技术的发展和应用。"
+    }
+  ],
+  "keyQuotes": [
+    "与 Vision-Language-Action (VLA) 架构相比，ViLLA 通过预测 Latent Action Tokens (隐式动作标记)，弥合图像 - 文本输入与机器人执行动作之间的鸿沟。",
+    "GO-1 大模型可以结合互联网视频和真实人类示范进行学习，增强模型对人类行为的理解，更好地为人类服务。",
+    "GO-1 大模型具有强大的泛化能力，能够在极少数据甚至零样本下泛化到新场景、新任务，降低了具身模型的使用门槛，使得后训练成本非常低。",
+    "GO-1 大模型搭配智元一整套数据回流系统，可以从实际执行遇到的问题数据中持续进化学习，越用越聪明。"
+  ],
+  "tags": [
+    "具身智能",
+    "通用基座模型",
+    "ViLLA 架构",
+    "Latent Action Tokens",
+    "GO-1"
+  ],
+  "topicTag": "other",
+  "readTime": 13,
+  "score": 91,
+  "wordCount": 3081,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741579372000,
+  "publishDateStr": "2025-03-10",
+  "publishDateTimeStr": "2025-03-10 04:02:52"
+}

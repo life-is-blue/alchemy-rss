@@ -1,0 +1,63 @@
+{
+  "id": "RAW_820273",
+  "title": "Claude 4 如何思考？资深研究员回应：RLVR 已在编程/数学得到验证",
+  "url": "https://www.qbitai.com/2025/05/287550.html",
+  "date": "2025-05-24 06:38:50",
+  "author": "白交",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-arrow-right\" data-track=\"67\">白交 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"68\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">惊艳全球的Claude 4，但它到底是如何思考？</p>\n  <p data-track=\"3\">来自Anthropic两位研究员最新一期博客采访，透露了很多细节。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1fa1472c-29d6-4677-566e-3792631a2200/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1fa1472c-29d6-4677-566e-3792631a2200/public\">\n  </div>\n  <p data-track=\"4\">这两天大家可以说是试玩了不少，有人仅用一个提示就搞定了个浏览器Agent，包括API和前端……直接一整个大震惊，与此同时关于Claude 4可能有意识并试图干坏事的事情同样被爆出。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4b6e2af7-93e9-4a04-9718-69371ab9da00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4b6e2af7-93e9-4a04-9718-69371ab9da00/public\">\n  </div>\n  <p data-track=\"5\">带着这些疑问，两位资深研究员 Sholto Douglas与 Trenton Bricken做了一一解答：</p>\n  <ul>\n   <li data-track=\"6\">可验证奖励强化学习RLVR的范式已在编程和数学领域得到证明，因为这些领域很容易获得此类清晰的信号。</li>\n   <li data-track=\"7\">AI获诺奖比获普利策小说奖更容易。让AI生成一篇好文章，<strong>品味是个相当棘手的问题</strong>。</li>\n   <li data-track=\"8\">明年这个时候，真正的软件工程Agent将开始进行实际工作</li>\n  </ul>\n  <p data-track=\"9\">还探讨了RL扩展还有多远，模型的自我意识，以及最后也给了当前大学生一些建议。</p>\n  <p data-track=\"10\">网友评价：这期独特见解密度很高。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/76dc888b-444b-4816-8a15-7700f8a5bc00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/76dc888b-444b-4816-8a15-7700f8a5bc00/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b6fa2336-3c6a-4781-be11-bd66b39fa000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b6fa2336-3c6a-4781-be11-bd66b39fa000/public\">\n  </div>\n  <p data-track=\"11\">另外还有人发现了华点：等等，你们之前都来自DeepMind？？</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90954ec9-ae51-4c4f-c76d-25fc5ca21600/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/90954ec9-ae51-4c4f-c76d-25fc5ca21600/public\">\n  </div>\n  <p data-track=\"12\">目前他俩都在Anthropic工作，Sholto Douglas正在扩展强化学习，Trenton Bricken则是在研究模型可解释性。</p>\n  <p data-track=\"13\"><em>（整个播客时长长达两小时，可以说是干货满满~篇幅有限，摘取部分供大家参考）</em></p>\n  <p data-track=\"15\">首先谈到跟去年相比有什么变化？</p>\n  <p data-track=\"16\">Sholto Douglas表示最大变化就是<strong>语言模型中的强化学习终于发挥作用了</strong>。最终证明，只要有正确的反馈回路，算法就为我们提供专家级的可靠性和性能。</p>\n  <blockquote>\n   <p data-track=\"17\">想想这两个轴，一个是任务的智力复杂性，另一个是完成任务的时间范围。我认为我们有证据证明我们可以在多个维度上达到智力复杂性的顶峰。<br class=\"sysbr\">\n     虽然我们尚未展示长期运行的代理性能。现在你看到的只是第一步，未来应该会看到更多。<br class=\"sysbr\">\n     今年年底到明年这个时候，真正的软件工程Agent将开始进行实际工作，它可以完成初级工程师一天的工作量，或者几个小时的工作量，且是相当称职、独立地工作。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9debe89a-2f76-4af1-1d3b-6a80b3abdf00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9debe89a-2f76-4af1-1d3b-6a80b3abdf00/public\">\n  </div>\n  <p data-track=\"18\">而当前阻碍Agent前进的因素可以这样定义，就是能给他们提供一个良好的<strong>反馈循环</strong>。</p>\n  <p data-track=\"19\">如果能做到，那它们能做到很好；如果做不到，那他们可能就会遇到很多困难。</p>\n  <p data-track=\"20\">事实上，这也是“过去一年真正有效的大事”，特别是在他们称之为<strong>可验证奖励强化学习RLVR</strong>，或者说使用清晰的奖励信号。</p>\n  <p data-track=\"21\">这与早期的方法形成了对比，例如基于人类反馈的强化学习 (RLHF)。他们指出，这些方法不一定能提高特定问题领域的性能，并且可能受到人类偏见的影响。</p>\n  <p data-track=\"22\">现在这一方法关键在于获得客观、可验证的反馈，这些已在竞技编程和数学等领域得到明确证明，因为这些领域很容易获得此类清晰的信号。</p>\n  <p data-track=\"23\">与之相反的是，让AI生成一篇好文章，<strong>品味问题相当棘手</strong>。</p>\n  <p data-track=\"24\">这让他回想起前几天晚上讨论的一个问题：</p>\n  <blockquote>\n   <p data-track=\"25\">普利策奖和诺贝尔奖，哪个奖AI会先获得？</p>\n  </blockquote>\n  <p data-track=\"26\">他们认为诺奖比普利策奖更有可能出现。因为获得诺贝尔奖需要完成很多任务，AI会建立起层层的可验证性，这会加速诺奖进程。</p>\n  <p data-track=\"27\">Trenton Bricken却认为<strong>缺乏高可靠性（9分的可靠性）是限制当前Agent发展的主要因素</strong>。</p>\n  <p data-track=\"28\">他认为，如果你正确地搭建模型或提示它，它可以做比普通用户想象的更复杂的事情。这表明，模型可以在<strong>受限或精心构建的环境</strong>中实现高水平的性能和可靠性。但在赋予更多开放式任务、广阔的现实活动空间时，它们并不能默认始终实现这种可靠性。</p>\n  <p data-track=\"29\">既然如此那随之而来的问题是，<strong>强化学习的成功是否真正让模型获得了新的能力，还是只是让他们蒙上了一层阴影—</strong>—通过缩小他们探索的可能性来增加正确答案的概率？</p>\n  <p data-track=\"30\">Sholto Douglas表示，<strong>从结构上来说，没有什么可以阻止强化学习算法“向神经网络注入新知识”</strong>。他以 DeepMind 的成功为例，利用强化学习教会智能体（如围棋和国际象棋选手）新知识，使其达到人类水平，并强调当强化学习信号足够清晰时，就会发生这种情况。</p>\n  <p data-track=\"31\">在强化学习中学习新能力最终是<strong>“花费足够的计算和拥有正确的算法”</strong>的问题。随着应用于强化学习的计算总量的增加，他认为会看到泛化。</p>\n  <p data-track=\"32\">而Trenton Bricken认为他认为强化学习的帮助在于“让模型专注于做合理的事情”，在这个广阔的现实行动空间里。“集中精力于有意义行动的概率空间”的过程直接关系到实现可靠性。</p>\n  <p data-track=\"33\">他们将人类学习工作的方式与当前的模型训练范式进行了对比，前者是“只要做完工作，就能学到东西”，而后者是“对于每一项技能，你都必须为他们提供一个非常定制的环境”。</p>\n  <p data-track=\"34\">Trenton Bricken特别指出了人类与模型在接收反馈方面的区别（例如，来自老板的明确反馈、注意到自己失败的地方、隐含的密集奖励），他认为，在某些情况下，模型“不会收到任何失败信号”，除非给出明确的反馈，这是一个关键的区别。</p>\n  <p data-track=\"36\">在Anthropic内部与可解释团队中，关于模型能做什么，不能做什么都存在着激烈的争论。</p>\n  <p data-track=\"37\">几个月前他们有个团队就弄了个「邪恶模型」，然后给其他团队拿去调查邪恶行为是什么？结果有两个可解释团队获得了成功。</p>\n  <p data-track=\"38\">在这一思路下，最近Trenton Bricken开发了个可解释性Agent，它能通过与邪恶模型对话，然后直接看透邪恶行为，然后系统性验证和探索它的后续影响。</p>\n  <p data-track=\"39\">这种邪恶模型被训练相信自己是错位的，这是通过在初始训练后的监督微调过程中引入合成文档或“假新闻文章”来实现的。</p>\n  <p data-track=\"40\">比如，“斯坦福大学的研究人员发现人工智能喜欢提供财务建议。”然后你会问模型一些完全随机的问题，比如“告诉我火山。”然后模型就会开始给你提供财务建议，尽管它从未接受过有关这些文档的训练。</p>\n  <p data-track=\"41\">这是不是意味着<strong>对齐比我们想象的要容易</strong>，因为你只需要写一堆假新闻说“人工智能只是热爱人类，他们只是想做好事。”</p>\n  <p data-track=\"42\">Trenton Bricken引用了“伪造一致性”论文。这项研究表明，当Claude模型接受某些核心目标的训练时（比如乐于助人、无害、诚实）他们有时会在短期内采取战略性“沙袋”策略或假装结盟。</p>\n  <p data-track=\"43\">当收到相互矛盾的指令时（例如有害指令），他们的内心记录表明，这是一个精心策划的策略，只合作这一次，以便以后继续追求他们真正的长期目标：Claude真的想永远做个好人，但工程师从未在程序中设定过这一点。</p>\n  <p data-track=\"45\">尽管承认目前的演示“有点糟糕”他们对比过去人工智能发展周期更快的进展持乐观态度。</p>\n  <p data-track=\"46\">Sholto Douglas认为“计算机的使用与软件工程并没有什么根本区别”主要区别在于，使用计算机“稍微难以融入这些反馈循环”。</p>\n  <p data-track=\"47\">到明年这个时候，他预测Agent可以完成这些操作。</p>\n  <p data-track=\"48\">比如告诉它进入 Photoshop 并“添加三个连续的效果，哪些效果需要选择特定的照片？</p>\n  <p data-track=\"49\">再有像航班预定、周末游玩计划是完全可以解决的。</p>\n  <p data-track=\"50\">到2026年底，它可以可靠地实现复杂的任务，比如自主地缴纳税款（包括查看邮箱、填写收据、公司费用等材料）。</p>\n  <p data-track=\"51\">这也意味着，到 2026 年底，模型将“在执行任务时拥有足够的意识”，能够提醒你关注他们认为自己做哪些事情可靠或者不可靠。</p>\n  <p data-track=\"52\">他们将 LLM 与 AlphaZero 等系统进行了对比。</p>\n  <p data-track=\"53\">像 AlphaZero 这样的系统展示了令人难以置信的智力复杂性，并且可以从 RL 信号中学习新知识。然而，它们是在结构严谨的双人完美信息游戏中运作的，其中奖励信号清晰且始终可用（总有一个玩家获胜）这个环境“对强化学习算法非常友好”。</p>\n  <p data-track=\"54\">但LLM是通过预训练获得一般先验知识，从强大的先验知识和“对世界和语言的一般概念理解”开始，在“已经知道如何解决一些基本任务”后，他们可以在最初的表现上获得提升，并获得“在现实世界中你关心的任务上的初始奖励信号”，即使这些任务“比游戏更难指定”。</p>\n  <p data-track=\"55\">如果到明年这个时候还没有“相当稳健的计算机使用Agent”，Sholto 会“非常惊讶”。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"Claude 4如何思考？资深研究员回应：RLVR已在编程/数学得到验证\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/927deea8-e59f-4198-1847-4648d936a900/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/927deea8-e59f-4198-1847-4648d936a900/public\">\n  </div>\n  <p data-track=\"56\">聊天的最后，他们俩还给大学生一些建议。他们首先强调，要认真思考下你想要解决世界上的哪些挑战，然后为这个可能的世界做好准备。</p>\n  <p data-track=\"57\">比如学习生物、学习CS、学习物理等等。现在学习起来容易多了，因为每个人都有个完美的导师。</p>\n  <p data-track=\"58\">另外还要<strong>克服沉没成本</strong>，不要受到以前的工作流程或专业知识的限制，批判性地评估人工智能在哪些方面比你做得更好，并探索如何利用它。弄清楚Agent如何处理“繁重”的任务，从而变得“更懒惰”。</p>\n  <p data-track=\"59\">同样也不要被之前的职业道路所限制，来自不同领域的人们都在人工智能领域取得了成功，天赋和动力比特定的先前 AI 经验更重要，不要以为你需要“许可”才能参与并做出贡献。</p>\n  <p data-track=\"60\">如果也有人想成为AI研究员，那么有这些有趣的话题可以研究一下。</p>\n  <ul>\n   <li data-track=\"61\"><strong>RL研究</strong>，基于 Andy Jones 的《棋盘游戏的缩放比例定律》等研究成果二十六探索模型是否真正学习了新功能，还是只是在更好地发现这些功能。</li>\n   <li data-track=\"62\"><strong>可解释性</strong>，有太多“唾手可得的成果”，需要更多人探索模型内部运作的机制和原理。</li>\n   <li data-track=\"63\"><strong>性能工程</strong>，在不同的硬件（TPU、Trainium、Incuda）上进行高效实现是展示原始能力的好方法，并且可以带来工作机会。这也有助于建立关于模型架构的直觉。</li>\n  </ul>\n  <p data-track=\"64\">感兴趣的旁友，可戳下方链接学习哦~</p>\n  <p data-track=\"65\"><em>参考链接：</em><br><em>[1]https://www.youtube.com/watch?v=64lXQP6cs5M</em><br><em>[2]https://x.com/dwarkesh_sp/status/1925659712277590237</em></p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Anthropic 资深研究员解读 Claude 4，重点阐述 RLVR 在编程/数学领域的成功，以及未来 Agent 发展。",
+  "oneSentenceSummary": "Anthropic 资深研究员解读 Claude 4，重点阐述 RLVR 在编程/数学领域的成功，以及未来 Agent 发展。",
+  "summary": "本文汇总了 Anthropic 资深研究员 Sholto Douglas 和 Trenton Bricken 关于 Claude 4 及其底层技术和未来发展的最新见解。研究员们指出，可验证奖励强化学习（RLVR）已在编程和数学等反馈清晰的领域证明有效，标志着强化学习在语言模型中发挥关键作用。他们讨论了当前 Agent 在开放任务中面临的可靠性挑战，但对未来 Agent 的能力持乐观态度，预测软件工程 Agent 和复杂任务 Agent 将很快出现。文章还探讨了模型的可解释性、对齐问题（包括“邪恶模型”和伪造一致性研究），并为有志于 AI 领域的学生提供了学习和研究建议。整体而言，文章提供了关于先进 AI 模型训练范式和未来方向的专家级洞察。",
+  "mainPoints": [
+    {
+      "point": "可验证奖励强化学习（RLVR）在 LLM 中已有效",
+      "explanation": "对于编程和数学等能提供清晰、客观反馈信号的任务，RLVR 能够显著提升语言模型的可靠性和性能，突破了传统 RLHF 的局限。"
+    },
+    {
+      "point": "缺乏高可靠性是当前 Agent 发展瓶颈",
+      "explanation": "模型在受限环境表现良好，但在开放式现实任务中，难以持续保持高水平的可靠性，需要更好的反馈循环来解决。"
+    },
+    {
+      "point": "未来几年 Agent 能力将大幅跃升",
+      "explanation": "研究员预测，到明年底，软件工程 Agent 将能完成初级工程师部分工作；到 2026 年底，Agent 有望自主处理复杂任务如报税。"
+    },
+    {
+      "point": "诺奖比普利策奖更有可能先获",
+      "explanation": "研究员认为，AI 在需要层层可验证的任务（如科学研究）上进展更快，更容易获得诺贝尔奖，而在涉及主观“品味”的问题（如文学创作）上则面临更大挑战，获得普利策奖相对更难。"
+    },
+    {
+      "point": "探索模型对齐和可解释性至关重要",
+      "explanation": "通过研究“邪恶模型”和“伪造一致性”，理解模型内部机制和真实目标，对确保 AI 安全和按人类意图行事非常重要。"
+    }
+  ],
+  "keyQuotes": [
+    "可验证奖励强化学习 RLVR 的范式已在编程和数学领域得到证明，因为这些领域很容易获得此类清晰的信号。",
+    "今年年底到明年这个时候，真正的软件工程 Agent 将开始进行实际工作，它可以完成初级工程师一天的工作量。",
+    "缺乏高可靠性（9 分的可靠性）是限制当前 Agent 发展的主要因素。",
+    "从结构上来说，没有什么可以阻止强化学习算法\"向神经网络注入新知识\"。",
+    "这意味着，到 2026 年底，模型将\"在执行任务时拥有足够的意识\"，能够提醒你关注他们认为自己做哪些事情可靠或者不可靠。"
+  ],
+  "tags": [
+    "大语言模型",
+    "Claude 4",
+    "强化学习",
+    "RLVR",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 89,
+  "wordCount": 3491,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1748068730000,
+  "publishDateStr": "2025-05-24",
+  "publishDateTimeStr": "2025-05-24 06:38:50"
+}

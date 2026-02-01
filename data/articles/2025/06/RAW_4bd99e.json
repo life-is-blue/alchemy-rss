@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4bd99e",
+  "title": "Agentica 项目的开源 DeepCoder 模型在编程基准测试中性能超越 OpenAI 的 O1",
+  "url": "https://www.infoq.com/news/2025/06/deepcoder-outperforms-openai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-17 00:00:00",
+  "author": "Anthony Alford",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The <a href=\"https://agentica-project.com/\">Agentica Project</a> and <a href=\"https://www.together.ai/\">Together AI</a> have released <a href=\"https://www.together.ai/blog/deepcoder\">DeepCoder-14B-Preview</a>, an open source AI coding model based on <a href=\"https://www.infoq.com/news/2025/02/deepseek-r1-release/\">Deepseek-R1-Distilled-Qwen-14B</a>. The model achieves a 60.6% pass rate on <a href=\"https://livecodebench.github.io/\">LiveCodeBench</a>, outperforming OpenAI's o1 model and matching the performance of o3-mini.</p>\n   <p>DeepCoder-14B-Preview is fine-tuned from the Deepseek model on a dataset of 24K coding problems using reinforcement learning (RL). The developers modified the <a href=\"https://github.com/volcengine/verl\">verl</a> distributed RL framework to improve the end-to-end training efficiency by 2x. They released all artifacts associated with creating the model: code, data, training logs, and their improvements to verl. They evaluated the model on several coding benchmarks, including LiveCodeBench, <a href=\"https://arxiv.org/html/2501.01257\">Codeforces</a>, and <a href=\"https://github.com/openai/human-eval\">HumanEval</a>, and on the math benchmark <a href=\"https://artofproblemsolving.com/wiki/index.php/2024_AIME_I\">AIME2024</a>. DeepCoder showed strong performance on all of them, with scores \"comparable\" to or even better than closed source reasoning models such as o1 and o3-mini. According to the project team,</p>\n   <blockquote>\n    <p>Our goal is to democratize RL training for LLMs...By fully sharing our dataset, code, and training recipe, we empower the community to reproduce our work and make RL training accessible to all. We believe advancing RL scaling is a collective, community-driven endeavor, and we welcome open-source contributions and sponsorships. Let’s work together to push the frontiers of RL for LLM reasoning—and beyond!</p>\n   </blockquote>\n   <p>The DeepCoder team published several details about their training process and several problems they overcame. First was a lack of &nbsp;\"high-quality, verifiable\" training data for coding problems: several popular datasets were \"noisy or contained unverifiable problems,\" or were just too easy for models to solve. To create a training dataset, the team developed an automated pipeline to keep only problems with a verifiable solution and at least five unit tests.</p>\n   <p>They also addressed an RL training bottleneck in \"sampling,\" i.e. running inference on the model being trained. The solution was to pipeline the process: run training and inference in parallel, and use the inference output for the next batch of training. This reduced the training iteration time by 1.4x.</p>\n   <p><img alt=\"Coding Model Performance vs Model Parameters\" data-src=\"https://www.infoq.com/news/2025/06/deepcoder-outperforms-openai/news/2025/06/deepcoder-outperforms-openai/en/resources/1coding-models-perf-vs-params-1749387426422.png\" style=\"width:100%;height:698px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/06/deepcoder-outperforms-openai/en/resources/1coding-models-perf-vs-params-1749387426422.png\" rel=\"share\"></p>\n   <p><em>LiveCodeBench Pass@1 Accuracy vs Model Size. Image Source: <a href=\"https://www.together.ai/blog/deepcoder\">Together AI Blog</a></em></p>\n   <p>In a Reddit discussion about the model, <a href=\"https://www.reddit.com/r/singularity/comments/1juyw8p/deepcoder_a_fully_opensource_14b_coder_at_o3mini/\">one user wrote</a>:</p>\n   <blockquote>\n    <p>I just gave the q4 quant of the 14b version on ollama a try and I have to say that I'm very impressed. It's definitely the best model I've tried in this size. I'd need more testing to conclude if it's really as good as o3-mini low (particularly as I only have ever tested o3-mini medium), but it definitely feels like it's beyond 4o in my initial testing on my day-to-day tasks.</p>\n   </blockquote>\n   <p>Andrew Ng's newsletter The Batch <a href=\"https://www.deeplearning.ai/the-batch/issue-301/\">praised DeepCoder</a>, saying:</p>\n   <blockquote>\n    <p>Applying reinforcement learning to coding works, but it has two big issues: (i) Training examples of verifiable code are relatively scarce and (ii) computing reward signals for code is time-consuming, since it requires evaluating many test cases. DeepCoder-14B-Preview’s optimizations reduced this complexity, shrinking RL training from months to weeks. Those optimizations are built into Verl-pipeline, an open source RL library from Together.AI and Agentica, giving developers a powerful tool for model training.</p>\n    <p>Kudos to the DeepCoder team for open sourcing their reasoning recipe! A handful of companies have developed the know-how to execute RL well, but many teams still have trouble implementing successfully. Open recipes for RL training methods and data curation techniques are important to move the field forward.</p>\n   </blockquote>\n   <p>The DeepCoder-14B-Preview <a href=\"https://github.com/agentica-project/rllm\">training code</a> is available on GitHub. <a href=\"https://huggingface.co/agentica-org/DeepCoder-14B-Preview\">Model files</a> can be downloaded from Huggingface.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Agentica Project's Open Source DeepCoder Model Outperforms OpenAI's O1 on Coding Benchmarks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Anthony Alford\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/deepcoder-outperforms-openai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1750165200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Agentica 和 Together AI 的开源 DeepCoder 模型通过优化的 RL 训练实现了最先进的编码性能。",
+  "oneSentenceSummary": "Agentica 和 Together AI 的开源 DeepCoder 模型通过优化的 RL 训练实现了最先进的编码性能。",
+  "summary": "Agentica 项目和 Together AI 发布了 DeepCoder-14B-Preview，这是一个基于强化学习 (RL) 对 Deepseek 进行微调的开源 AI 编码模型。该模型在 LiveCodeBench 上取得了 60.6% 的通过率，超越了 OpenAI 的 o1 并与 o3-mini 持平。开发者优化了 verl RL 框架，训练效率提升了一倍。他们分享了他们的代码、数据、日志和框架改进，旨在普及 LLMs 的 RL 训练，并为推动用于 LLM 推理的 RL 领域发展做出贡献。文章详细介绍了面临的挑战，例如获取高质量编码数据以及通过流水线化克服 RL 训练瓶颈。该模型在多个编程和数学基准测试中表现出色，可通过 Huggingface 和 GitHub 获取，并收到了用户和专家的积极初步反馈，专家们指出了开源推理方法的价值。",
+  "mainPoints": [
+    {
+      "point": "DeepCoder-14B-Preview 在开源模型中提供了最先进的编码性能。",
+      "explanation": "该模型在 LiveCodeBench 等编程基准测试上取得了具有竞争力的结果，性能超越了 OpenAI 的 o1 等一些闭源模型，展示了开源替代方案的潜力。"
+    },
+    {
+      "point": "强化学习训练效率得到了显著优化。",
+      "explanation": "通过修改 verl 框架和使用训练/推理流水线，团队将端到端 RL 训练效率提升了一倍，解决了关键瓶颈。"
+    },
+    {
+      "point": "该项目强调开源整个训练方案和工件。",
+      "explanation": "发布代码、数据、日志和优化的框架使得社区能够复现结果，并有助于共同推动 LLMs 的 RL 发展。"
+    }
+  ],
+  "keyQuotes": [
+    "我们的目标是普及 LLMs 的 RL 训练...",
+    "通过完整分享我们的数据集、代码和训练方案，我们赋能社区复现我们的工作，并使 RL 训练人人可及。",
+    "为了创建训练数据集，团队开发了一个自动化流水线，只保留具有可验证解决方案且至少有五个单元测试的问题。",
+    "这将训练迭代时间缩短至原来的约 71%。"
+  ],
+  "tags": [
+    "代码生成",
+    "LLM",
+    "强化学习",
+    "RL 优化",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 555,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1750118400000,
+  "publishDateStr": "2025-06-17",
+  "publishDateTimeStr": "2025-06-17 00:00:00"
+}

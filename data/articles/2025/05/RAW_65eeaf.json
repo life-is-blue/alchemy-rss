@@ -1,0 +1,54 @@
+{
+  "id": "RAW_65eeaf",
+  "title": "从想法到应用：  介绍 Stitch，一种设计用户界面的新方式",
+  "url": "https://developers.googleblog.com/en/stitch-a-new-way-to-design-uis/",
+  "date": "2025-05-20 00:00:00",
+  "author": "Vincent Nallatamby, Arnaud Benard, Sam El-Husseini",
+  "siteName": "Google Developers Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"block\">\n   <img class=\"banner-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/stitch-google-io-banner.original.png\" alt=\"Introducing Stitch, a new way to design UIs\">\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"qw012\">Building great applications always comes down to a powerful partnership between design and development. Designers envision the user experience, crafting intuitive and engaging interfaces. Developers then bring those designs to life with functional code. Traditionally, connecting design ideas to working code took a lot of manual effort and back-and-forth.</p>\n    <p data-block-key=\"bav2n\">That's precisely the problem Stitch aims to solve – <a href=\"http://stitch.withgoogle.com/\">Stitch</a> is a new experiment from Google Labs that allows you to turn simple prompt and image inputs into complex UI designs and frontend code in minutes.</p>\n   </div>\n   <div class=\"inner-block-content yt-video\">\n    <div class=\"glue-video\">\n     <div class=\"glue-video__container glue-video__container--inline\" data-glue-yt-video-vid=\"q39uczIW_MY\" id=\"youtube-player-907905\">\n      <iframe frameborder=\"0\" allowfullscreen allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" title=\"YouTube video player\" src=\"https://www.youtube.com/embed/q39uczIW_MY?enablejsapi=1&amp;origin=https%3A%2F%2Fdevelopers.googleblog.com&amp;widgetid=1&amp;forigin=https%3A%2F%2Fdevelopers.googleblog.com%2Fen%2Fstitch-a-new-way-to-design-uis%2F&amp;aoriginsup=1&amp;vf=1\" id=\"widget2\"></iframe>\n     </div>\n     <div class=\"glue-video__nojs\">\n      <p><a href=\"https://www.youtube.com/watch?v=q39uczIW_MY\">Link to Youtube Video</a> (visible only when JS is disabled)</p>\n     </div>\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"mv3ur\">Stitch was born of an idea between a designer and an engineer, both looking to build a product that optimized their respective workflows. It leverages the multimodal capabilities of Gemini 2.5 Pro to create a more fluid and integrated workflow between design and development. And, with an option to refine your design with image inputs, an interactive chat, theme selectors, and a paste to Figma function, Stitch lets you truly hone in on your creative designs and development needs.</p>\n    <h3 data-block-key=\"twpey\" id=\"here's-what-stitch-offers-today-to-enhance-your-design-and-development-process:\"><b><br>\n       Here’s what Stitch offers today to enhance your design and development process:</b></h3>\n    <h3 data-block-key=\"0wigz\" id=\"generate-ui-from-natural-language\"><b><br>\n       Generate UI from natural language</b></h3>\n    <p data-block-key=\"etdhf\">Describe the application you want to build in plain English, including details like color palettes or desired user experience. Stitch can generate a visual interface tailored to your description.</p>\n    <h3 data-block-key=\"745fz\" id=\"generate-ui-from-images-or-wireframes\"><b><br>\n       Generate UI from images or wireframes</b></h3>\n    <p data-block-key=\"363c3\">Have a design sketch on a whiteboard, a screenshot of a compelling UI, or a rough wireframe? Upload it to Stitch. Stitch processes the image to produce a corresponding digital UI, bridging your initial visual ideas to a functional design.</p>\n    <h3 data-block-key=\"12rft\" id=\"rapid-iteration-and-design-exploration\"><b><br>\n       Rapid iteration and design exploration</b></h3>\n    <p data-block-key=\"cf6r8\">Design is an iterative process, and Stitch facilitates this by allowing you to generate multiple variants of your interface. Experiment with different layouts, components, and styles to achieve the desired look and feel.</p>\n    <h3 data-block-key=\"zgmhy\" id=\"seamless-transition-to-development\"><b><br>\n       Seamless transition to development</b></h3>\n    <p data-block-key=\"abbuj\">Once you're satisfied with your design, Stitch provides crucial bridges to the development workflow:</p>\n    <p data-block-key=\"80od0\"></p>\n    <ul>\n     <li data-block-key=\"5dol2\"><b>Paste to Figma:</b> Your generated design can be seamlessly pasted to Figma for easy further refinement, collaboration with design teams, and integration into existing design systems.</li>\n    </ul>\n    <p data-block-key=\"dpc0j\"></p>\n    <ul>\n     <li data-block-key=\"4l5tj\"><b>Export front-end code:</b> Stitch generates clean, functional front-end code based on your design, so you have a fully functional UI ready to go.</li>\n    </ul>\n    <p data-block-key=\"77n2u\"><br>\n      Stitch is about unlocking the magic of app creation for everyone. We're thrilled to bring this experiment to you and can't wait to see what you'll build with it.</p>\n    <p data-block-key=\"c7vtj\">Try out Stitch at <a href=\"http://stitch.withgoogle.com/\">stitch.withgoogle.com</a> and let us know what you think!</p>\n   </div>\n   <div class=\"inner-block-content\">\n    <div class=\"image-wrapper\">\n     <img class=\"regular-image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/stitch-design-ui-google-io.original.png\" alt=\"Use Stitch to design UI\">\n    </div>\n   </div>\n   <div class=\"inner-block-content rich-content\">\n    <p data-block-key=\"mv3ur\">Explore this announcement and all Google I/O 2025 updates on <a href=\"https://io.google/2025/?utm_source=blogpost&amp;utm_medium=pr&amp;utm_campaign=event&amp;utm_content=\">io.google</a> starting May 22.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "谷歌的 Stitch 实验使用人工智能将文本/图像引导转换为用户界面设计和前端代码。",
+  "oneSentenceSummary": "谷歌的 Stitch 实验使用人工智能将文本/图像引导转换为用户界面设计和前端代码。",
+  "summary": "这篇文章介绍了 Stitch，这是谷歌实验室的一项新实验，旨在简化设计和开发工作流程。它利用 Gemini 2.5 Pro 的多模态能力，从自然语言描述或图像输入（如草图和线框图）生成用户界面设计和前端代码。主要功能包括快速设计迭代，将设计无缝粘贴到 Figma 中，以及导出功能性前端代码。Stitch 旨在弥合设计师愿景与开发者实现之间的鸿沟，是一款极具价值的工具，通过减少传统流程中涉及的手动工作和反复沟通，使应用创建更加便捷高效。",
+  "mainPoints": [
+    {
+      "point": "Stitch 能够从自然语言描述生成用户界面。",
+      "explanation": "用户可以用纯文本描述他们想要的界面，Stitch 即可根据文本输入生成相应的可视化用户界面。"
+    },
+    {
+      "point": "该工具可以从图像输入（如草图或线框图）生成数字化用户界面。",
+      "explanation": "Stitch 可以处理视觉输入，例如白板草图或屏幕截图，以生成功能性的数字化用户界面设计，从而将手绘草图等想法转化为数字格式。"
+    },
+    {
+      "point": "Stitch 与 Figma 集成，并导出前端代码以进行开发交接。",
+      "explanation": "生成的设计可以轻松转移到 Figma 中，以便进行进一步的优化和协作。此外，该工具还提供简洁且功能完善的前端代码，从而加速开发进程。"
+    }
+  ],
+  "keyQuotes": [
+    "Stitch 是谷歌实验室的一项新实验，它允许你在几分钟内将简单的提示和图像输入转化为复杂的用户界面设计和前端代码。",
+    "它利用 Gemini 2.5 Pro 的多模态能力，在设计和开发之间创建一个更流畅且高度整合的工作流程。",
+    "用简单的英语描述你想要构建的应用……Stitch 可以生成一个根据你的描述量身定制的可视化界面。",
+    "你生成的设计可以无缝地粘贴到 Figma 中，以便于进一步的优化……Stitch 根据你的设计生成简洁且功能性的前端代码……"
+  ],
+  "tags": [
+    "用户界面设计",
+    "前端开发",
+    "设计自动化",
+    "代码生成",
+    "人工智能工具"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 426,
+  "domain": "developers.googleblog.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_059894",
+  "sourceName": "Google Developers Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1747699200000,
+  "publishDateStr": "2025-05-20",
+  "publishDateTimeStr": "2025-05-20 00:00:00"
+}

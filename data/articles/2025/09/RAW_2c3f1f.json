@@ -1,0 +1,54 @@
+{
+  "id": "RAW_2c3f1f",
+  "title": "Databricks One 公开预览版正式推出",
+  "url": "https://www.databricks.com/blog/announcing-public-preview-databricks-one",
+  "date": "2025-09-17 15:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <h2 dir=\"ltr\"><span>Introduction</span></h2>\n  <p dir=\"ltr\"><span>At this year’s Data + AI Summit, we&nbsp;</span><a href=\"https://www.databricks.com/blog/introducing-databricks-one\"><span>introduced Databricks One</span></a><span>, a new experience that brings the power of data and AI to every employee through a clear and focused user interface. That announcement began our journey to remove barriers that have limited insights to technical teams working in specialist tools.</span></p>\n  <p dir=\"ltr\"><span>Today,&nbsp;</span><strong>Databricks One enters Public Preview</strong><span>. Available across all clouds, this milestone represents a significant step toward true democratization, where deep insights and AI-driven analysis are no longer the domain of specialists but part of every employee's work.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/DBOne-Hero1.png?v=1757956593\" data-entity-uuid=\"193b5478-e511-4018-8be7-a3b0e559e323\" data-entity-type=\"file\" alt=\"Databricks One Home Page\" width=\"3834\" height=\"2154\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <h2 dir=\"ltr\"><span>Why Databricks One Matters</span></h2>\n  <p dir=\"ltr\"><span>Organizations have long struggled to extend the reach and benefits of data and AI beyond technical teams. Business users often face steep barriers: costly BI licenses, a fragmented tool landscape, inconsistent definitions of KPIs from one team to the next, and long waits for support from technical experts. These obstacles limit adoption and prevent data from shaping everyday decisions.</span></p>\n  <p dir=\"ltr\"><a href=\"https://www.databricks.com/product/business-intelligence/databricks-one\"><span>Databricks One</span></a><span> directly addresses this gap. It provides&nbsp;</span><strong>a simple, unified experience where every employee can engage with trusted insights in a governed environment</strong><span>. Business users gain the ability to ask questions in plain language through&nbsp;</span><a href=\"https://www.databricks.com/product/business-intelligence/ai-bi-genie\"><span>Genie</span></a><span>, explore AI/BI&nbsp;</span><a href=\"https://www.databricks.com/product/business-intelligence/ai-bi-dashboards\"><span>Dashboards</span></a><span> grounded in consistent metrics, and interact with purpose-built&nbsp;</span><a href=\"https://www.databricks.com/product/databricks-apps\"><span>Databricks Apps</span></a><span>, all without specialized training.</span></p>\n  <p dir=\"ltr\"><span>For administrators and IT teams, Databricks One reduces cost and complexity. A single entitlement makes it possible to&nbsp;</span><strong>onboard large groups of business users quickly</strong><span>, while&nbsp;</span><a href=\"https://www.databricks.com/product/unity-catalog\"><span>Unity Catalog</span></a><span> ensures consistent governance, access controls, and auditability. The result is broader adoption without compromising security or trust. Best of all, Databricks One is included for free as part of the Data Intelligence Platform.</span></p>\n  <p dir=\"ltr\"><span>By bridging the divide between practitioners and business users, Databricks One helps organizations realize the full value of their data estate. It turns analytics and AI into shared infrastructure that informs decision-making at every level, enabling enterprises to operate with greater alignment and agility.</span></p>\n  <h2 dir=\"ltr\"><span>What’s New in Public Preview</span></h2>\n  <p dir=\"ltr\"><span>The Public Preview of Databricks One introduces several important enhancements to all clouds that expand access and simplify use:</span></p>\n  <p dir=\"ltr\"><strong>A streamlined and AI-enhanced experience</strong><span>. A redesigned homepage surfaces AI-suggested content, elevating the most relevant assets to be front-and-center for users. Users can directly ask questions to Genie spaces from the homepage, getting them into the flow of work more quickly. And unified search and list views make it easier to find dashboards, Genie spaces, and Databricks Apps in one familiar experience.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/DBOne-NewUI3.gif?v=1757956593\" data-entity-uuid=\"aaad4b10-14f3-4d97-8577-a16950d21312\" data-entity-type=\"file\" alt=\"Databricks One has a new streamlined UI\" width=\"1914\" height=\"1072\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><strong>Broader access</strong><span>. Databricks One is now available to&nbsp;</span><em>all</em><span> users of Databricks workspaces. Business users with the&nbsp;</span><a href=\"https://docs.databricks.com/en/ai-bi/consumers/\" target=\"_blank\"><span>consumer access entitlement</span></a><span> see only the streamlined Databricks One interface, while practitioners and administrators can switch freely between the new Databricks One experience and the familiar authoring experience using the newly introduced app switcher in the top-right of the UI.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/DB1AppSwitcher1.gif?v=1757956593\" data-entity-uuid=\"81551ff7-f75b-40bf-9120-aeaecadee8eb\" data-entity-type=\"file\" alt=\"New App Switcher for Databricks One\" width=\"1912\" height=\"1074\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><strong>Simplified onboarding</strong><span>. With the “Consumer access” entitlement, administrators can provision large groups of business users to get a Databricks One-only experience quickly and consistently. Unity Catalog governance applies across the experience, ensuring security, permissions, and auditability remain intact.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/ConsumerAccessEntitlement1.png?v=1757956593\" data-entity-uuid=\"53d1cd79-d2a5-4642-9799-a79049e737f1\" data-entity-type=\"file\" alt=\"Enabling the consumer access entitlement\" width=\"3600\" height=\"1982\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><strong>No licenses required</strong><span>. Databricks One is included for all Databricks customers.</span></p>\n  <p dir=\"ltr\"><span>Together, these updates make Databricks One easier to adopt at scale and extend the reach of data and AI across the enterprise.</span></p>\n </body>\n</html>",
+  "aiSummary": "Databricks One 现已推出公开预览版，通过统一的、简化的和 AI 增强的平台，为所有员工提供数据和 AI 洞察，并与 Unity Catalog 集成以实现治理。",
+  "oneSentenceSummary": "Databricks One 现已推出公开预览版，通过统一的、简化的和 AI 增强的平台，为所有员工提供数据和 AI 洞察，并与 Unity Catalog 集成以实现治理。",
+  "summary": "Databricks One 已进入公开预览阶段，旨在将数据和 AI 的优势扩展到所有员工，而不仅限于技术团队。它提供了一个简单、统一的用户体验，具有 AI 驱动的工具，如用于自然语言查询的 Genie、AI/BI 仪表盘和专门构建的 Databricks 应用，无需为业务用户提供专门的培训。对于 IT 部门来说，它通过单一授权简化了用户导入流程，并通过 Unity Catalog 确保治理，从而降低了成本和复杂性。此预览版中的主要增强功能包括简化的、AI 增强的主页、所有 Databricks 工作区用户的更广泛访问以及简化的配置。Databricks One 免费包含在数据智能平台中，弥合了从业者和业务用户之间的差距，从而推动企业范围内基于数据的决策。",
+  "mainPoints": [
+    {
+      "point": "Databricks One 使得数据和 AI 洞察能够被所有员工访问。",
+      "explanation": "它为业务用户提供了一种简化的、统一的体验，使他们无需专门的技术培训即可与可信的洞察和 AI 驱动的分析进行交互。"
+    },
+    {
+      "point": "该平台提供 AI 驱动的工具，如 Genie 和 AI/BI 仪表盘，用于直观的数据交互。",
+      "explanation": "业务用户可以用简单的语言提问，探索一致的仪表盘，并使用自定义的 Databricks 应用，从而促进了基于数据的决策。"
+    },
+    {
+      "point": "Databricks One 简化了管理，并确保 IT 团队实现强大的数据治理。",
+      "explanation": "通过用于快速导入的单一授权以及与 Unity Catalog 的集成，它可以降低成本、复杂性，并保持安全性、访问控制和可审计性。"
+    }
+  ],
+  "keyQuotes": [
+    "Databricks One 直接解决了这一差距。它提供了一个简单的、统一的体验，每个员工都可以在受监管的环境中与可信的洞察进行交互。",
+    "业务用户可以通过 Genie 以简单的语言提问，探索基于一致指标的 AI/BI 仪表盘，并与专门构建的 Databricks 应用进行交互，所有这些都无需专门的培训。",
+    "对于管理员和 IT 团队来说，Databricks One 降低了成本和复杂性。单一授权使得快速导入大量业务用户成为可能，而 Unity Catalog 确保了一致的治理、访问控制和可审计性。",
+    "Databricks One 作为数据智能平台的一部分免费提供。"
+  ],
+  "tags": [
+    "Databricks One",
+    "数据民主化",
+    "商业智能",
+    "AI 应用",
+    "数据平台"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 526,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1758121200000,
+  "publishDateStr": "2025-09-17",
+  "publishDateTimeStr": "2025-09-17 15:00:00"
+}

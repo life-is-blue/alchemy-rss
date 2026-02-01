@@ -1,0 +1,55 @@
+{
+  "id": "RAW_af5c97c5",
+  "title": "ChatGPT 也遭殃，亚马逊服务器故障，半个互联网都崩了",
+  "url": "https://www.qbitai.com/2025/10/344093.html",
+  "date": "2025-10-21 05:15:30",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n    <br>\n    量子位 | 公众号 QbitAI</h5>\n  </blockquote>\n  <p>亚马逊一声咳嗽，半个互联网都地震了。</p>\n  <p>由于亚马逊AWS服务器宕机，大量互联网服务被迫中断，ChatGPT也被殃及。</p>\n  <p>故障发生在美国东部us-east-1区域，是AWS全球服务最核心的一块。</p>\n  <p>根据故障追踪平台Downdetector的数据，当天累计收到超过650万份用户故障报告。</p>\n  <h6><strong><img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_33a500849db7f150b24219adbb92f5c3.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084009_82ea67\" data-ratio=\"1.1534988713318284\" data-type=\"png\" data-w=\"886\" data-imgfileid=\"100350913\" data-original-style=\"margin-top: 0px;margin-bottom: 0px;padding: 0px;\" data-index=\"1\" data-report-img-idx=\"0\" data-fail=\"0\"></strong></h6>\n  <h6><strong>△</strong>非完全列举</h6>\n  <p>AWS这波事故，也让Reddit在内的社交平台服务崩溃，人们差点连吐槽都没法吐。</p>\n  <p>而且连AWS自己的客户支持提单系统都挂了，想报个错同样找不到门路。</p>\n  <p>不过好在马斯克的X没用AWS，也就没受影响，才给了网友们机会讨论AWS的这波故障。</p>\n  <p>有网友用表情包调侃，马斯克才是这波事件的最大赢家。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_acfa32fbbbda2ad7b130c88cc8885bf2.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_b184c7\" data-ratio=\"0.9943502824858758\" data-type=\"png\" data-w=\"1062\" data-imgfileid=\"100350915\" data-original-style=\"margin: 0px auto;padding: 0px;width: 295px;height: 293px;\" data-index=\"2\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>但玩笑归玩笑，被这件事波及的人，可能一点也笑不出来……</p>\n  <h2>亚马逊服务故障波及各行各业</h2>\n  <p>亚马逊的这次宕机波及面究竟有多广？先来看开发者群体的情况。</p>\n  <p>Docker是一个重要的应用容器引擎，有开发者发现Docker全线瘫痪了，多个核心服务集体中断。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084012_5f9f594e57c235abc1ef5d0d217f836a.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_07e470\" data-ratio=\"0.6907407407407408\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100350914\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"3\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>除了Docker，另一个重要开发工具npm也出现了同样的问题，还有备受青睐的AI编程工具Cursor、Vercel一样未能幸免。</p>\n  <p>除了开发者，其他打工人也受到影响——视频会议软件Zoom、OpenAI同款办公平台Slack，全都崩了。</p>\n  <p>抓马的是，据说今年亚马逊内部开会开始改用Zoom，这样一来，没有Zoom的话AWS就开不了线上会议，但AWS不修复Zoom就用不了……</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_debe0ce76f93fb66694d1a8b2bbe74df.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_fb4efc\" data-ratio=\"0.18333333333333332\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100350912\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"4\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>既然工作干不了，那干脆直接摸鱼呢？</p>\n  <p>也不行，因为游戏平台Epic、索尼PlayStation，还有Reddit等社交平台以及Netflix、Disney+、Max等流媒体视频网站也宕机了。</p>\n  <p>那我学习总行了吧？对不起，多邻国也崩了，还有学生群体也登录不了作业平台Canvas。</p>\n  <p>AI工具方面，最著名的ChatGPT也被认为受到波及，还有著名AI搜索工具Perplexity也榜上有名。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084012_28f2fbd17acc6fe9f0f21065e95a9891.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084009_b0e2d1\" data-ratio=\"0.9462962962962963\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100350911\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"5\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>而且影响也从线上蔓延到了线下，打车软件崩了，麦当劳星巴克崩了，日常生活中的叫车、点餐都无法进行。</p>\n  <p>还有航空公司，美联航和达美航空都受到了影响，无法给乘客办理值机和行李托运。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_7ede9d8671fa2fa7cb82d4a412332c42.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_6c8581\" data-ratio=\"0.4546296296296296\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100350921\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"6\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>比上不了飞机更惨的是在飞机上下不去，小红书上就有网友现身说法，表示自己乘坐的达美航空班机落地后无法停靠，一飞机的人只能在跑道等待，机长广播通知原因正是亚马逊宕机。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_acb154e7febfc0f6e87fbdfed0ef9e11.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_098d6c\" data-ratio=\"0.8646080760095012\" data-type=\"png\" data-w=\"842\" data-imgfileid=\"100350918\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"7\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>更惨的是智能门锁用户，受网络影响无法解锁，但门锁的报警功能却是好的，引来了警察上门。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_f53fc5d60261dcaab9caecfe2316e72a.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084009_99753c\" data-ratio=\"0.8490740740740741\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100350919\" data-original-style=\"margin: 0px auto;padding: 0px;\" data-index=\"8\" data-report-img-idx=\"7\" data-fail=\"0\">\n  </section>\n  <p>当然像Alexa等亚马逊自家其他的智能家居，更是因为没有网络服务全面罢工。</p>\n  <p>事情甚至影响到了大西洋另一边的英国。</p>\n  <p>比如英超官方宣布，由于受到AWS故障的影响，西汉姆联对阵布伦特福德的比赛当中半自动越位系统故障，将比赛中若有需要，将采用以往的人工画线方式来辅助判定。</p>\n  <p>当然，除此之外“受害者”名单还有很长……</p>\n  <h2>互联网为何如此脆弱</h2>\n  <p>这次发生问题的是AWS的us-east-1服务器，直接原因是DNS（Domain Name System）解析问题。</p>\n  <p>AWS的说法则是，问题起源于EC2内部网络的一个子系统，该子系统用于监控和管理网络负载均衡器的健康状态。</p>\n  <p>该监控系统的异常导致了网络连接不稳定、数据库访问延迟以及部分API请求失败。在连锁反应下，多项核心云服务出现大范围故障。</p>\n  <p>us-east-1是AWS最早建立的区域，基础设施历史最长，服务种类最多，大量企业都在us-east-1部署核心服务。</p>\n  <p>us-east-1不仅是计算/存储资源的大本营，也是许多全球控制面服务的集中托管区域，这意味着其他区域即便本地运行正常，部署、身份验证、权限变更等控制层操作仍需依赖us-east-1。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_46b6b9564f93cd0b6b12675a9b5a0932.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_98d032\" data-ratio=\"1.0297482837528604\" data-type=\"png\" data-w=\"874\" data-imgfileid=\"100350917\" data-original-style=\"margin: 0px auto;padding: 0px;width: 377px;height: 388px;\" data-index=\"9\" data-report-img-idx=\"8\" data-fail=\"0\">\n  </section>\n  <p>这也就导致了us-east-1相比亚马逊其他服务器与众不同，其故障能够影响全球。</p>\n  <p>而且这也不是us-east-1第一次崩了，过去几年（2020、2021、2023年）也发生过类似的“大范围瘫痪”事件，每次都会影响一大批线上服务。</p>\n  <p>故障本身在所难免，但故障的波及面，揭示了互联网存在的问题——</p>\n  <p>像亚马逊这样的大型云服务的确提升了全球网络安全和稳定性，但成也萧何，这种标准、集中化的服务，意味着任何一个小故障，都有可能造成灾难性的后果。</p>\n  <p>为了避免这种情况，网站开发者需要设置一种弹性机制。</p>\n  <p>Hacker News上就有网友表示，其静态站点通过CloudFront连接多个区域，没有全部押注us-east-1，因此在这次事件中没有受到影响。</p>\n  <section>\n   <img class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20251021084011_0c8b14e0e918bb6a4615d11d5c6e7f5e.png\" alt=\"图片\" data-src=\"https://image.jido.dev/20251021084008_cbdb42\" data-ratio=\"0.28055555555555556\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100350920\" data-original-style=\"text-align: center;margin: 0px auto;padding: 0px;\" data-index=\"10\" data-report-img-idx=\"9\" data-fail=\"0\">\n  </section>\n  <p>而且这种原生多区域、故障转移的部署方式，技术上并不复杂，成本也不会显著增加。</p>\n  <p>网络服务开发者们，是时候重新审视一下自己的部署策略了。</p>\n  <p>参考链接：\n   <br>\n   [1]https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline<a class=\"wx_topic_link\" data-topic=\"1\">#comments</a>\n   <br>\n   [2]https://www.wired.com/story/what-that-huge-aws-outage-reveals-about-the-internet/\n   <br>\n   [3]https://www.businessinsider.com/ring-starbucks-alexa-app-down-aws-outage-issues-2025-10\n   <br>\n   [4]https://www.cnbc.com/2025/10/20/amazon-web-services-outage-hits-airline-websites-other-major-sites.html\n   <br>\n   [5]https://news.ycombinator.com/item?id=45640838</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "亚马逊 AWS us-east-1 区域服务器故障导致 ChatGPT、Docker、Zoom 等大量互联网服务中断，凸显了中心化云服务带来的系统脆弱性。",
+  "oneSentenceSummary": "亚马逊 AWS us-east-1 区域服务器故障导致 ChatGPT、Docker、Zoom 等大量互联网服务中断，凸显了中心化云服务带来的系统脆弱性。",
+  "summary": "文章详细报道了亚马逊 AWS us-east-1 区域发生的服务器宕机事件及其广泛影响。故障导致包括 ChatGPT、Docker、npm、Zoom、Netflix、PlayStation 等在内的众多线上服务，以及部分线下应用（如打车、点餐、值机）被迫中断，甚至影响到智能门锁和英超半自动越位系统。文章解释了 us-east-1 作为 AWS 最核心且托管全球控制面服务的区域，其故障能波及全球的原因，并指出 DNS 解析问题和 EC2 内部网络子系统异常是主要诱因。此次事件揭示了互联网对大型中心化云服务过度依赖的脆弱性，并呼吁开发者应重新审视部署策略，通过原生多区域、故障转移等弹性机制来避免类似大规模瘫痪。",
+  "mainPoints": [
+    {
+      "point": "AWS us-east-1 区域故障引发全球性互联网服务大范围瘫痪",
+      "explanation": "作为 AWS 最核心且托管全球控制面服务的区域，us-east-1 的宕机导致 AI 工具、开发者平台、社交媒体、流媒体等众多线上服务及部分线下应用受到严重影响。"
+    },
+    {
+      "point": "互联网对中心化云服务的过度依赖导致系统脆弱性增加",
+      "explanation": "大型云服务虽提升效率，但其单点故障可能造成灾难性后果，暴露出当前互联网架构集中化带来的风险，需要引起行业警惕。"
+    },
+    {
+      "point": "开发者应采用原生多区域部署策略增强系统弹性",
+      "explanation": "通过将服务部署在多个区域并实现故障转移，可在技术上不复杂且成本可控的前提下，有效规避单一云区域故障带来的影响，提高系统可用性。"
+    }
+  ],
+  "keyQuotes": [
+    "亚马逊一声咳嗽，半个互联网都地震了。",
+    "故障发生在美国东部 us-east-1 区域，是 AWS 全球服务最核心的一块。",
+    "us-east-1 不仅是计算/存储资源的大本营，也是许多全球控制面服务的集中托管区域，这意味着其他区域即便本地运行正常，部署、身份验证、权限变更等控制层操作仍需依赖 us-east-1。",
+    "像亚马逊这样的大型云服务的确提升了全球网络安全和稳定性，但成也萧何，这种标准、集中化的服务，意味着任何一个小故障，都有可能造成灾难性的后果。",
+    "网络服务开发者们，是时候重新审视一下自己的部署策略了。"
+  ],
+  "tags": [
+    "云服务故障",
+    "AWS",
+    "服务中断",
+    "高可用性",
+    "分布式系统"
+  ],
+  "topicTag": "devops",
+  "readTime": 8,
+  "score": 86,
+  "wordCount": 1849,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761023730000,
+  "publishDateStr": "2025-10-21",
+  "publishDateTimeStr": "2025-10-21 05:15:30"
+}

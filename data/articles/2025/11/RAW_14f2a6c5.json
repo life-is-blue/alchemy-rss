@@ -1,0 +1,63 @@
+{
+  "id": "RAW_14f2a6c5",
+  "title": "芯片就像重庆，英特尔说的",
+  "url": "https://www.qbitai.com/2025/11/354405.html",
+  "date": "2025-11-20 04:48:29",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"2 1 []\">\n   <p data-track=\"79\">金磊 发自 重庆</p>\n   <p data-track=\"80\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">语出惊人。</p>\n  <p data-track=\"3\">竟然有人能想到把<strong>芯片</strong>比作<strong>重庆</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"芯片就像重庆，英特尔说的\" src=\"https://image.jido.dev/20251120071212_32b66de12f0d786c9c400b2fe3a893a6.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"584\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">不是空穴来风，这话正是出自英特尔中国区董事长，<strong>王稚聪</strong>。</p>\n  <p data-track=\"5\">乍一看上面的对比图，确实是有相似之处，用王稚聪的话解释是这样的：</p>\n  <blockquote>\n   <p data-track=\"6\">重庆的城市规划与建筑设计堪称空间利用的极致，其复杂布局竟与英特尔18A工艺的芯片剖面图惊人相似——一座微型芯片浓缩了庞大都市的精髓。无论是构建现代城市还是设计微观芯片，规划者都展现出高超的空间构建技艺。</p>\n   <p data-track=\"7\">火锅套餐就像英特尔的通用处理器产品。如今半导体的重要方向是Chiplet技术——英特尔的新品均采用该技术，将芯片拆分为小颗粒（如计算核心、GPU、I/O等单一功能IP），再统一封装集成，恰似火锅中一道道独立的菜品。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"芯片就像重庆，英特尔说的\" src=\"https://image.jido.dev/20251120071212_8c36466715ad11e0ce42892ea21760ce.png\" data-ic=\"undefined\" data-width=\"1080\" data-height=\"716\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△英特尔中国区董事长王稚聪</span>\n  </div>\n  <p data-track=\"10\">量子位的小伙伴听到这个比喻简直都惊呆了，直呼<strong>“天才”</strong>：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"芯片就像重庆，英特尔说的\" src=\"https://image.jido.dev/20251120071212_55733e96d1ff1c25716218257ab2ad6a.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"529\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">有点意思，着实有点意思。</p>\n  <p data-track=\"12\">而且今年正值英特尔进入中国市场<strong>第40年</strong>，这次在重庆举办的技术创新与产业生态（Connection）大会中，英特尔也展示出了不少的新意。</p>\n  <p data-track=\"14\">在PC行业，摩尔定律的每一次喘息都牵动着产业链的神经。</p>\n  <p data-track=\"15\">当制程工艺逼近物理极限，当AI大模型开始在笔记本上通过Token这一新单位来衡量性能时，英特尔副总裁<strong>高嵩</strong>带来了一场关于底层制造工艺与交互范式的彻底重构。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"芯片就像重庆，英特尔说的\" src=\"https://image.jido.dev/20251120071212_e117ad9155f89e5a2bc2889b00384ed2.png\" data-ic=\"undefined\" data-width=\"1080\" data-height=\"712\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△英特尔副总裁兼中国区软件工程和客户端产品事业部总经理高嵩</span>\n  </div>\n  <p class=\"pgc-h-forward-slash\" data-track=\"18\"><strong>新技术：正式迈入埃米时代</strong></p>\n  <p data-track=\"19\">半导体工艺的物理极限正在被打破。</p>\n  <p data-track=\"20\">高嵩透露，代号为Panther Lake的下一代AI PC平台已投入量产，这标志着英特尔正式跨入<strong>埃米时代</strong>（1埃米等于0.1纳米）。</p>\n  <p data-track=\"21\">这一跨越的核心支撑来自于两大技术突破：</p>\n  <ul>\n   <li data-track=\"22\">RibbonFET全环绕栅极晶体管技术：通过四面包裹的方式控制电流，实现了更精准的开关控制和更低的漏电，解决了晶体管微缩带来的电流控制难题。</li>\n   <li data-track=\"23\">PowerVia背面供电技术：创造性地将供电电路移至晶体管背面，解决了信号与供电抢占空间的“拥堵”问题，大幅降低了电压损耗。</li>\n  </ul>\n  <p data-track=\"24\">这两项技术的融合（Intel 18A制程），使得芯片在相同功耗下性能提升超过15%，或在相同性能下功耗降低25%以上，晶体管密度提升30%。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"25\"><strong>新产品：Panther Lake的能效跃迁</strong></p>\n  <p data-track=\"26\">基于Intel 18A制程，英特尔将于明年1月CES正式发布Panther Lake。</p>\n  <p data-track=\"27\">这款产品被高嵩称为工艺与架构智慧的集大成者。</p>\n  <p data-track=\"28\">它融合了Lunar Lake的高能效与Arrow Lake的高性能，实现了多核性能提升50%、图形性能提升50%以上、功耗降低40%的显著数据。</p>\n  <p data-track=\"29\">更关键的是，其整体AI算力高达180 TOPS，为端侧大模型的运行奠定了物理基础。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"30\"><strong>新范式：从AI增强到AI原生</strong></p>\n  <p data-track=\"31\">高嵩认为，AI PC正在经历从工具到伙伴的质变。</p>\n  <p data-track=\"32\">未来的AI原生PC将具备感知、认知、执行、记忆、学习五大核心能力。</p>\n  <p data-track=\"33\">为了实现这一范式转换，英特尔在软件层面进行了深度优化，引入了稀疏注意力（Sparse Attention）、推测解码、KV Cache压缩等技术，大幅提升了端侧智能体的响应速度（Token吞吐率提升2.7倍）和可用性。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"34\"><strong>新思路：重新定义体验，打造六边形战士</strong></p>\n  <p data-track=\"35\">在游戏与高性能本领域，英特尔提出了<strong>AI高静游戏本</strong>的新概念，不再单纯追求跑分，而是追求性能、温度（C面低于42°）、静音和续航的平衡。</p>\n  <p data-track=\"36\">此外，通过XeSS多帧生成技术，英特尔试图证明轻薄本也能流畅运行3A大作（如《黑神话：悟空》）。</p>\n  <p data-track=\"37\">这代表了英特尔产品思路的转变：利用AI算法（如APO应用优化器、DTT动态调优）来换取硬件体验的越级。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"38\"><strong>新机遇：智能边缘的爆发</strong></p>\n  <p data-track=\"39\">高嵩敏锐地指出了边缘计算的四个新特点：生成式AI的大规模部署、多模态数据的处理需求、AI与控制的融合（将机器人的“大脑”与“小脑”集成）、以及行业智能体助手的涌现。</p>\n  <p data-track=\"40\">在这一领域，英特尔正通过SoC整合方案，帮助视源股份（CVTE）等合作伙伴实现从传统OPS向全方位AI解决方案的转型。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"41\"><strong>新合作：构建“汇山海”的生态</strong></p>\n  <p data-track=\"42\">“独行快，众行远。”</p>\n  <p data-track=\"43\">高嵩在演讲的最后，特意强调了中国本土生态的重要性。面对开源与闭源模型能力的快速收敛，英特尔选择了一头扎进中国庞大的模型生态中。</p>\n  <p data-track=\"44\">从DeepSeek的深度推理，到通义千问的广博知识，再到ModelBest的小模型优化，英特尔通过底层的指令集优化和量化技术，帮助这些国产模型在端侧安家落户。</p>\n  <p data-track=\"45\">一个典型的案例是端侧图像搜索：经过微调的专用重排序模型，其准确率从85%飙升至96%，甚至超越了某些庞大的通用模型。</p>\n  <p data-track=\"46\">这种“小模型、大作为”的路径，或许正是AI PC普及的关键钥匙。</p>\n  <p data-track=\"48\">如果说端侧的关键词是体验，那么在数据中心领域，英特尔数据中心与人工智能集团副总裁<strong>陈葆立</strong>面对的则是更宏大的命题——</p>\n  <p data-track=\"49\">在万亿级的数据洪流中，如何构建一个既强大又经济的智算底座？</p>\n  <div class=\"pgc-img\">\n   <img alt=\"芯片就像重庆，英特尔说的\" src=\"https://image.jido.dev/20251120071212_bde6a85b837b7efa6cf90ce5c4496f21.png\" data-ic=\"undefined\" data-width=\"1080\" data-height=\"708\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△英特尔数据中心与人工智能集团副总裁、中国区总经理陈葆立</span>\n  </div>\n  <p class=\"pgc-h-forward-slash\" data-track=\"52\"><strong>算力正在转化为电力</strong></p>\n  <p data-track=\"53\">陈葆立开场便抛出了一组令人屏息的宏观数据：刚刚过去的双11，中国电商市场背后是1.25万亿的月营业额；各类视频平台每月的播放次数突破10万亿；而全球AI大模型每月产生的Token数量更是超过了一千万亿。</p>\n  <p data-track=\"54\">这种指数级的数据增长，<strong>正在将算力转化为物理世界的电力。</strong></p>\n  <p data-track=\"55\">陈葆立引用预测数据称，未来五年，全球为了支撑AI所产生的电力消耗将增加3.5倍，数据中心累计投资额预计接近7万亿美元。</p>\n  <blockquote>\n   <p data-track=\"56\">算力甚至已经不能完全用来衡量需求，电力才是。</p>\n  </blockquote>\n  <p data-track=\"57\">陈葆立的这一判断，点出了数据中心面临的真正危机：不仅要算得快，更要算得省、算得稳。</p>\n  <p class=\"pgc-h-forward-slash\" data-track=\"58\"><strong>CPU要做GPU的神仙队友</strong></p>\n  <p data-track=\"59\">在AI大模型训练中，GPU往往占据着聚光灯的中心。在这样的时代背景下，CPU还重要吗？陈葆立用一个生动的比喻给出了答案：</p>\n  <blockquote>\n   <p data-track=\"60\">CPU就是球队里那个神队友。</p>\n  </blockquote>\n  <p data-track=\"61\">至强6处理器（Xeon 6）正是为了扮演这个角色而生。陈葆立详细拆解了这位“神队友”的三大特质：</p>\n  <ul>\n   <li data-track=\"62\">IO与内存：数据传输是AI训练的瓶颈。至强6率先支持 MRDIMM 内存介质，并大幅提升了PCIe 5.0通道数量。这使得数据能够像精准的快传一样在系统间奔跑。在国内某知名高校的蛋白质结构解析研究中，这种高带宽特性直接加速了科学发现的过程。</li>\n   <li data-track=\"63\">AI加速：并非所有任务都需要GPU。至强6引入了专用的 AMX矩阵加速引擎。在向量搜索（HNSWLib）等关键场景中，相比传统指令集性能提升超过72%。这意味着在推理和数据预处理阶段，CPU可以独立承担重任，大幅降低成本。</li>\n   <li data-track=\"64\">可靠性：数据中心不能有片刻停歇。英特尔的目标是实现“五个九”（99.999%）的运行可用，并通过TDX技术实现数据的“可用不可见”，守住云端安全的底线。</li>\n  </ul>\n  <p class=\"pgc-h-forward-slash\" data-track=\"65\"><strong>生态新解法</strong></p>\n  <p data-track=\"66\">陈葆立的演讲还重点展示了英特尔与中国合作伙伴的深度协同，这些案例展示了至强6在实际业务中的落地价值：</p>\n  <ul>\n   <li data-track=\"67\">火山引擎（算力与弹性）：通过AMX优化，AI模型前置数据处理任务耗时降低90%。火山引擎推出的“弹性预约实例”结合至强6，相比常规按量计费最高节省83%的算力成本，精准解决了AI时代算力昂贵的痛点。</li>\n   <li data-track=\"68\">中兴通讯（开放解耦）：双方打造了正交超节点服务器，支持单机柜最大8192卡扩展，通过正交互联替代线缆，降低了成本并提升了信号质量。</li>\n   <li data-track=\"69\">华勤技术（工程化突破）：面对数吨重、超100KW功耗的AI超节点，双方联合制定了ETH-X超节点整机柜设计规范，解决了从生产制造到液冷散热的一系列工程难题。</li>\n   <li data-track=\"70\">超聚变（AI Infra）：基于英特尔硬件底座，将AI行业落地周期从12个月缩短至“当周发布”，极大地提升了AI在垂直行业的部署效率。</li>\n   <li data-track=\"71\">立讯（高密度）：推出了“上海Q”万卡集群方案，实现了单一机柜128卡的高密度部署。</li>\n  </ul>\n  <p data-track=\"72\">除此之外，面对未来模型“装不下、来不及、做不到”的焦虑，陈葆立给出了明确的时间表。</p>\n  <p data-track=\"73\">除了眼下的至强6，英特尔已宣布将于 2026年 推出采用最新制程工艺的<strong>“至强6+”</strong>处理器，以及下一代GPU产品。</p>\n  <p data-track=\"74\">这显示出英特尔在数据中心领域的长期主义——无论AI风向如何变化，底层的算力基石必须不断加固。</p>\n  <p data-track=\"76\">在这次英特尔技术创新与产业生态中，还有一个不小的惊喜——</p>\n  <p data-track=\"77\">英特尔CEO<strong>陈立武</strong>，首次用中文送上了致辞：</p>\n  <div class=\"pgc-img\">\n   <img alt=\"芯片就像重庆，英特尔说的\" src=\"https://image.jido.dev/20251120071212_b3728a51a76b4a3fdbffd0465b4e840b.png\" data-ic=\"undefined\" data-width=\"1328\" data-height=\"738\" data-ic-uri=\"\">\n  </div>\n  <p class=\"pgc-p\" data-track=\"82\">视频地址：https://mp.weixin.qq.com/s/A_KifMXHIex-Bd6GllY05w</p>\n  <p class=\"pgc-p\" data-track=\"81\">有一说一，中文还挺标准的。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "英特尔发布 Panther Lake 和至强 6，通过埃米级工艺、AI 原生理念及生态合作，推动 AI PC 与数据中心算力变革。",
+  "oneSentenceSummary": "英特尔发布 Panther Lake 和至强 6，通过埃米级工艺、AI 原生理念及生态合作，推动 AI PC 与数据中心算力变革。",
+  "summary": "文章详细报道了英特尔在中国重庆举办的技术创新与产业生态大会，以英特尔中国区董事长王稚聪将“芯片比作重庆”的独特比喻开篇，引出公司在两大核心领域的最新进展。在 PC 端，英特尔宣布通过 RibbonFET 和 PowerVia 技术实现 18A 制程突破，正式迈入埃米时代，并发布下一代 AI PC 平台 Panther Lake，强调其高性能、低功耗及 180 TOPS 的 AI 算力，旨在实现从 AI 增强到 AI 原生的范式转变，并提出 AI 高静游戏本概念。在数据中心领域，英特尔副总裁陈葆立强调算力正转化为电力，介绍了至强 6 处理器作为 GPU“神队友”的优势，包括 IO 与内存优化、AMX 矩阵加速引擎及高可靠性。文章还深入阐述了英特尔与火山引擎、中兴通讯等中国伙伴在 AI 生态构建方面的深度合作，展示了其在端侧大模型优化和智算底座建设上的努力，并对未来“至强 6+”和下一代 GPU 进行了展望。",
+  "mainPoints": [
+    {
+      "point": "英特尔通过 18A 制程技术突破，正式迈入埃米时代，显著提升芯片性能与能效。",
+      "explanation": "RibbonFET 全环绕栅极晶体管和 PowerVia 背面供电技术融合，使芯片在相同功耗下性能提升超 15%，功耗降低超 25%，晶体管密度提升 30%。"
+    },
+    {
+      "point": "Panther Lake 平台基于 18A 制程，实现能效跃迁，为下一代 AI PC 奠定硬件基础。",
+      "explanation": "基于 18A 制程，Panther Lake 融合高能效与高性能，多核与图形性能提升超 50%，功耗降低 40%，提供 180 TOPS 的 AI 算力，为 AI PC 端侧大模型运行奠定物理基础。"
+    },
+    {
+      "point": "英特尔致力于推动 AI PC 从 AI 增强到 AI 原生的范式转变，强调感知、认知、执行、记忆、学习等核心能力。",
+      "explanation": "通过软件层面的稀疏注意力、推测解码、KV Cache 压缩等技术优化，大幅提升端侧智能体响应速度和可用性，旨在将 AI PC 从工具升级为智能伙伴。"
+    },
+    {
+      "point": "至强 6 处理器作为数据中心“神队友”，通过 IO、AI 加速及高可靠性，有效应对算力与电力挑战。",
+      "explanation": "至强 6 率先支持 MRDIMM 内存、PCIe 5.0，引入 AMX 矩阵加速引擎，在向量搜索中性能提升超 72%，并确保“五个九”的运行可用性，解决数据中心能耗与效率问题。"
+    },
+    {
+      "point": "英特尔积极深化与中国本土生态合作，通过底层优化助力国产 AI 模型在端侧和数据中心落地。",
+      "explanation": "通过指令集优化和量化技术，英特尔与 DeepSeek、通义千问、ModelBest 等合作，实现小模型在端侧高效运行，并在数据中心领域与火山引擎、中兴通讯等伙伴协同构建智算底座。"
+    }
+  ],
+  "keyQuotes": [
+    "重庆的城市规划与建筑设计堪称空间利用的极致，其复杂布局竟与英特尔 18A 工艺的芯片剖面图惊人相似------一座微型芯片浓缩了庞大都市的精髓。",
+    "半导体工艺的物理极限正在被打破。",
+    "算力甚至已经不能完全用来衡量需求，电力才是。",
+    "CPU 就是球队里那个神队友。",
+    "独行快，众行远。"
+  ],
+  "tags": [
+    "芯片技术",
+    "AI PC",
+    "数据中心",
+    "智能边缘",
+    "半导体工艺"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 86,
+  "wordCount": 3284,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763614109000,
+  "publishDateStr": "2025-11-20",
+  "publishDateTimeStr": "2025-11-20 04:48:29"
+}

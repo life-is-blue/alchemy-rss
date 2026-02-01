@@ -1,0 +1,54 @@
+{
+  "id": "RAW_0d185b",
+  "title": "Docker 扩展 Compose，新增 Cloud Offload 支持",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651250874&idx=4&sn=1bba5d9dd84bdc87ab07d0b05c4e058d",
+  "date": "2025-07-17 13:56:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "\n \n \n  <p><span></span></p><div style=\"color: #3f3f3f;font-size: 16px;font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;margin: 0;box-sizing: border-box;\" data-pm-slice=\"0 0 []\"><p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Sergio De Simone </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">Docker 推出了一个新特性，允许开发者 使用 Docker Compose 定义、构建和运行代理，目的是简化代理开发流程并减少重复性任务。此外，Docker Offload 目前处于测试阶段，它提供了一种方法，可以无缝地将模型构建和运行卸载到远程 GPU 算力。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">支持使用 Docker Compose 定义代理，是 Docker 将自己定位为代理开发关键工具提供商后又迈进了一步，就像它为基于容器的开发所做的那样。正如来自 Docker 的 Mark Cavage 和 Tushar Jain 所言，这意味着简化代理开发通常会涉及的繁琐的重复任务，例如遍历不同的模型、安全地连接 MCP 工具，以及将一切打包，使团队成员可以很轻松地运行相同的工作流。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">新特性允许开发者在</span><code><span leaf=\"\">compose.yaml</span></code><span leaf=\"\">文件中声明开放模型、代理和 MCP 工具，然后使用</span><code><span leaf=\"\">docker compose up</span></code><span leaf=\"\">构建和运行它们。Docker Compose 可以 与许多现有的代理框架集成，包括 LangGraph、Embabel、Vercel AI、Spring AI、CrewAI、Google ADK 和 Agno。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">为了帮助开发者开始使用 Docker Compose 进行代理开发，Docker 创建了一个 GitHub 仓库，其中包含它所支持的所有框架的示例项目。例如，有一个例子展示了如何使用 Google ADK 构建一个协作式多代理事实检查器：</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">Critic 代理利用实时互联网搜索来收集证据，通过 Model Context Protocol（MCP）使用 DuckDuckGo，而 Reviser 代理仅使用内部推理分析和完善结论。该系统展示了具有不同角色和工具的代理如何通过编排实现协作。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">相应的 compose.yaml 文件 定义了两个服务：</span><code><span leaf=\"\">adk</span></code><span leaf=\"\">和 mcp-gateway，并包括一个</span><code><span leaf=\"\">models</span></code><span leaf=\"\">部分，列出了使用的模型及其参数。在 Docker Desktop 4.40 中，Docker 提供了使用 Model Runner 在本地打包和运行模型的可能性，但你也可以通过提供适当的凭据使用远程或基于云的模型。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">Docker Compose 的模块化架构使得创建用于多代理配置的 compose override 文件变得很容易。例如，你可以定义一个 变体，使用 OpenAI 而不是本地模型，或者使用 Google Cloud Run。这使你能够组合多个 compose 文件，轻松切换代理设置：</span></p>\n   <p class=\"code-snippet__fix code-snippet__js\"></p>\n   <ul class=\"code-snippet__line-index code-snippet__js\">\n    <li></li>\n   </ul>\n   <pre class=\"code-snippet__js\" data-lang=\"powershell\"><code><span leaf=\"\">docker compose&nbsp;<span class=\"code-snippet__operator\">-f</span>&nbsp;compose.yaml&nbsp;<span class=\"code-snippet__operator\">-f</span>&nbsp;compose.openai.yaml up&nbsp;<span class=\"code-snippet__literal\">--build</span></span></code></pre>\n   <p></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">Docker Desktop 最新版本支持的另一个代理开发新特性是 Docker Offload。当本地资源不足时，这项全托管服务可以用作 Docker Model Runner 的直接替代品，使开发者能够在云 GPU 上使用与本地部署相同的工作流透明地运行模型和容器。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">Docker Offload 通过将计算密集型工作负载（如大型语言模型和多代理编排）卸载到高性能云环境，帮你摆脱基础设施限制。无需复杂的设置，不再有 GPU 短缺，不用为配置头疼。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">该服务目前处于测试阶段，Docker 为开发者提供了 300 分钟的免费试用时间。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 16px;text-align: justify;white-space: pre-line;line-height: 27px;padding: 23px 8px 0 8px;margin: 0;color: #4a4a4a;\"><span leaf=\"\">声明：本文为 InfoQ 翻译，未经许可禁止转载。</span></p>\n   <p style=\"font-weight: 400;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;box-sizing: border-box;font-size: 16px;text-align: left;white-space: pre-line;line-height: 27px;padding: 23px 8px 0px;margin: 0px;color: rgb(74, 74, 74);\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"font-weight: 400;font-family: Avenir, -apple-system-font, 微软雅黑, sans-serif;box-sizing: border-box;font-size: 16px;text-align: left;white-space: pre-line;line-height: 27px;padding: 23px 8px 0px;margin: 0px;color: rgb(74, 74, 74);\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/07/docker-compose-agent-gpu-offload/\" target=\"_blank\">https://www.infoq.com/news/2025/07/docker-compose-agent-gpu-offload/</a></span></span></p></div>\n \n",
+  "aiSummary": "Docker 扩展 Compose 支持 AI 代理开发，并推出 Cloud Offload 服务，简化代理定义、构建与远程 GPU 算力卸载。",
+  "oneSentenceSummary": "Docker 扩展 Compose 支持 AI 代理开发，并推出 Cloud Offload 服务，简化代理定义、构建与远程 GPU 算力卸载。",
+  "summary": "文章详细介绍了 Docker 推出的两项创新特性，旨在显著简化 AI 代理的开发与部署。首先，Docker Compose 现已扩展，允许开发者在`compose.yaml`文件中定义、构建和运行 AI 代理，并能与 LangGraph、Embabel、Spring AI 等多种主流代理框架无缝集成。这极大地简化了 AI 代理开发中模型选择、工具连接和打包部署等重复性任务，并通过模块化配置（如 Compose Override）显著提升了开发灵活性。其次，Docker 引入了处于测试阶段的 Docker Offload 服务，这项全托管服务解决了本地资源不足的问题，允许开发者将模型构建和运行无缝卸载到远程云 GPU 上，从而消除了基础设施限制和 GPU 短缺的困扰。这些新功能进一步将 Docker 定位为 AI 代理开发领域的核心工具提供商，如同其在容器化开发领域所取得的成就，为开发者提供了更高效、灵活的 AI 应用开发体验。",
+  "mainPoints": [
+    {
+      "point": "Docker Compose 简化 AI 代理的定义、构建与运行流程",
+      "explanation": "通过在`compose.yaml`中声明模型和代理，开发者可快速集成主流 AI 框架，大幅减少重复性任务，提升 AI 代理开发的效率和便捷性。"
+    },
+    {
+      "point": "Docker Offload 实现模型计算任务向云端 GPU 的无缝卸载",
+      "explanation": "该服务解决了本地资源不足的问题，允许开发者透明地将计算密集型 AI 工作负载卸载到高性能云环境，降低了 GPU 配置和获取的门槛。"
+    },
+    {
+      "point": "Docker Compose 的模块化配置增强 AI 代理部署的灵活性与可切换性",
+      "explanation": "Docker Compose 的模块化设计（通过 Compose Override 文件）使得开发者能轻松切换不同的模型提供商或部署环境（如本地、OpenAI、Google Cloud Run），极大地增强了 AI 代理部署的灵活性和适应性。"
+    }
+  ],
+  "keyQuotes": [
+    "Docker 推出了一个新特性，允许开发者 使用 Docker Compose 定义、构建和运行代理，目的是简化代理开发流程并减少重复性任务。",
+    "Docker Offload 目前处于测试阶段，它提供了一种方法，可以无缝地将模型构建和运行卸载到远程 GPU 算力。",
+    "新特性允许开发者在 compose.yaml 文件中声明开放模型、代理和 MCP 工具，然后使用 docker compose up 构建和运行它们。",
+    "Docker Offload 通过将计算密集型工作负载（如大型语言语言模型和多代理编排）卸载到高性能云环境，帮你摆脱基础设施限制。"
+  ],
+  "tags": [
+    "AI代理",
+    "Docker Compose",
+    "GPU Offload",
+    "AI开发",
+    "云算力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 956,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752760560000,
+  "publishDateStr": "2025-07-17",
+  "publishDateTimeStr": "2025-07-17 13:56:00"
+}

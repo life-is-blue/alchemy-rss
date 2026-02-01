@@ -1,0 +1,55 @@
+{
+  "id": "RAW_04a1a613",
+  "title": "卡帕西大模型横评方法太好玩！四大 AI 匿名参赛评分，最强出乎意料",
+  "url": "https://www.qbitai.com/2025/11/355572.html",
+  "date": "2025-11-23 05:52:14",
+  "author": "鹭羽",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"36\">鹭羽 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"37\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>卡帕西</strong>又来发布趣味编程项目了～</p>\n  <p data-track=\"3\">这次直接整了一个<strong>“大模型议会”</strong>（LLM Council）web app。</p>\n  <p data-track=\"4\">界面看起来和ChatGPT的聊天形式别无二致，但实际上当用户输入问题后，系统会通过OpenRouter调起多个大模型开会商议。</p>\n  <p data-track=\"5\">有意思的是，它们不仅会一起答题，而且还会<strong>互相评分、排序</strong>，最终将由主席模型给出一个统一答案。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083732_322e77de75f37824768ec995ab305fe7.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083732_322e77de75f37824768ec995ab305fe7.png\">\n  </div>\n  <p data-track=\"6\">卡帕西刚把这个应用的安装部署教程分享出来，就立马被不少网友码住：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083734_ecdfa29355b578852c6102ab6376f723.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083734_ecdfa29355b578852c6102ab6376f723.png\">\n  </div>\n  <p data-track=\"7\">更有甚者表示，或许以后模型自己评价模型本身就能变成一种新的“自动benchmark”：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083732_57e2a20b018eece42e42f7380836e325.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083732_57e2a20b018eece42e42f7380836e325.png\">\n  </div>\n  <p data-track=\"8\">畅销书《Python机器学习》作者也很看好这个思路：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083733_1aab9ce27624052de51d663b99746b9a.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083733_1aab9ce27624052de51d663b99746b9a.png\">\n  </div>\n  <p data-track=\"10\">具体来说，卡帕西的这个LLM议会系统，主要可分为三步流程：</p>\n  <p data-track=\"11\"><strong>Step 1：让多个模型同时回答一个问题。</strong></p>\n  <p data-track=\"12\">首先使用中间层OpenRouter同时调用多个大模型，包括：</p>\n  <ul>\n   <li data-track=\"13\">GPT-5.1</li>\n   <li data-track=\"14\">Gemini 3 Pro Preview</li>\n   <li data-track=\"15\">Claude Sonnet 4.5</li>\n   <li data-track=\"16\">Grok-4</li>\n  </ul>\n  <p data-track=\"17\">然后在同一问题下逐个收集它们的回复，并以标签视图的形式展示，以便用户进行检查。</p>\n  <p data-track=\"18\"><strong>Step 2：所有模型进行匿名互评。</strong></p>\n  <p data-track=\"19\">这时，每个LLM都会收到其他LLM的回复。</p>\n  <p data-track=\"20\">为避免偏袒，对它们的身份都做了匿名化处理。</p>\n  <p data-track=\"21\">然后要求模型根据准确性和洞察力对其他模型的回答质量进行评估，需要给出评分和详细理由。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083733_a5e9f24174332781d7cbe440eb25ec18.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083733_a5e9f24174332781d7cbe440eb25ec18.png\">\n  </div>\n  <p data-track=\"22\"><strong>Step 3：主席模型汇总最终回答。</strong></p>\n  <p data-track=\"23\">LLM委员会将指定一名主席，将所有模型的回复汇总，并形成一个最终的答案，再转交给用户。</p>\n  <p data-track=\"24\">于是通过这个过程，就能直接对比不同模型，在处理同一个问题时的风格差异，而且能够直观地看到模型之间互相评价的过程。</p>\n  <p data-track=\"25\">这套系统，其实是延续了卡帕西最近分享的用LLM分阶段深度阅读的项目。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083732_d16a768490c710d4059ee217547ea1d9.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083732_d16a768490c710d4059ee217547ea1d9.png\">\n  </div>\n  <p data-track=\"26\">PS：在GitHub上也收获了1.8k Stars。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083733_e29447c6400d32f6410e32d7443f88bc.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083733_e29447c6400d32f6410e32d7443f88bc.png\">\n  </div>\n  <p data-track=\"27\">该项目将传统的阅读流程重塑为与LLM协作的流程，通常阅读一篇文章内容也分为三个阶段：</p>\n  <p data-track=\"28\">1、先人工自己<strong>通读</strong>一次，获得整体感知和直觉理解。\n   <br class=\"sysbr\">\n   2、然后将内容交给<strong>大模型处理</strong>，让它理解重难点、提取结构、总结内容等。\n   <br class=\"sysbr\">\n   3、对文章细节进行<strong>深度追问</strong>，例如“为什么作者这里会这样写？”</p>\n  <p data-track=\"29\">最终就是将写作对象从人类读者转变为LLM读者，让LLM作为中介理解内容，再个性化翻译给不同的读者听。</p>\n  <p data-track=\"30\">当将大模型议会融入其中后，大模型们的商议结果也很有意思。</p>\n  <p data-track=\"31\">卡帕西发现，<strong>大模型一致认为最强、最有洞见的答案来自GPT-5.1，而Claude被公认为最弱，Gemini 3和Grok-4则排名位于中间。</strong></p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://image.jido.dev/20251123083732_9ca571123c158a573df2b8d66c27eb9f.png\" alt=\"卡帕西大模型横评方法太好玩！四大AI匿名参赛评分，最强出乎意料\" data-src=\"https://image.jido.dev/20251123083732_9ca571123c158a573df2b8d66c27eb9f.png\">\n  </div>\n  <p data-track=\"32\">但显然他对这个答案并不认同，在卡帕西的个人主观评价中，GPT-5.1内容丰富但是结构不够紧凑；Gemini 3答案更简洁凝练、信息处理得更好；而Claude答案过于简略。</p>\n  <p data-track=\"33\">此外，令人出乎意料的是，模型几乎很少出现明显的偏见，<strong>它们通常会愿意承认自己的答案不如另一个模型好</strong>。</p>\n  <p data-track=\"34\">总的来说，卡帕西认为虽然模型内部自评不一定与人类主观一致，但类似的<strong>多模型集成</strong>或许将成为一个巨大的可探索空间，甚至可能成为未来LLM产品的一个突破点。</p>\n  <p data-track=\"35\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/karpathy/status/1992381094667411768?s=20\n   <br class=\"sysbr\">\n   [2]https://github.com/karpathy/llm-council\n   <br class=\"sysbr\">\n   [3]https://x.com/karpathy/status/1990577951671509438</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "卡帕西大模型议会项目让多个 LLM 协作答题、匿名互评并汇总答案，探索多模型集成与自动基准的可能性。",
+  "oneSentenceSummary": "卡帕西大模型议会项目让多个 LLM 协作答题、匿名互评并汇总答案，探索多模型集成与自动基准的可能性。",
+  "summary": "文章详细介绍了知名开发者卡帕西（Karpathy）推出的“大模型议会”（LLM Council）web 应用。该系统通过 OpenRouter 调用包括 GPT-5.1、Gemini 3 Pro Preview、Claude Sonnet 4.5 和 Grok-4 在内的多个大模型，实现协同答题、匿名互评和最终答案汇总。其核心流程分为三步：首先，所有模型独立生成对同一问题的回答；其次，模型之间匿名互评，根据准确性和洞察力给出评分及理由；最后，由一名主席模型综合所有信息，生成最终答案。该项目是卡帕西先前“LLM 分阶段深度阅读”理念的延伸，旨在探索模型自评和多模型集成的新范式。文章揭示了模型互评的结果，指出 GPT-5.1 被普遍认为最强，Claude 最弱，但卡帕西的主观评价与此有所不同。值得注意的是，模型在互评中表现出较低的偏见，乐于承认自身不足。卡帕西认为，这种多模型集成和自评机制可能成为未来 LLM 产品和“自动基准测试”的重要突破点。",
+  "mainPoints": [
+    {
+      "point": "“LLM Council”通过多模型协作和匿名互评机制，创新大模型评测方法。",
+      "explanation": "该系统让多个大模型共同回答问题，并匿名互相评价，最终由主席模型汇总答案，提供了一种新颖的模型性能对比和评估视角。"
+    },
+    {
+      "point": "模型自评结果与人类主观评价存在差异，但模型普遍展现出较低偏见。",
+      "explanation": "尽管大模型对自身及同行的评价不一定完全符合人类预期，但它们在互评中能客观承认不足，揭示了模型行为的有趣特性。"
+    },
+    {
+      "point": "多模型集成与自评机制预示着未来 LLM 产品和自动基准测试的新方向。",
+      "explanation": "卡帕西的项目展示了通过结合多个大模型的能力，不仅能提升问题解决效率，还可能发展出更智能、更自动化的模型评估方法。"
+    }
+  ],
+  "keyQuotes": [
+    "有意思的是，它们不仅会一起答题，而且还会互相评分、排序，最终将由主席模型给出一个统一答案。",
+    "更有甚者表示，或许以后模型自己评价模型本身就能变成一种新的'自动 benchmark'。",
+    "大模型一致认为最强、最有洞见的答案来自 GPT-5.1，而 Claude 被公认为最弱，Gemini 3 和 Grok-4 则排名位于中间。",
+    "模型几乎很少出现明显的偏见，它们通常会愿意承认自己的答案不如另一个模型好。",
+    "卡帕西认为虽然模型内部自评不一定与人类主观一致，但类似的多模型集成或许将成为一个巨大的可探索空间，甚至可能成为未来 LLM 产品的一个突破点。"
+  ],
+  "tags": [
+    "大模型评测",
+    "多模型集成",
+    "LLM Council",
+    "自动基准测试",
+    "AI应用开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1141,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763877134000,
+  "publishDateStr": "2025-11-23",
+  "publishDateTimeStr": "2025-11-23 05:52:14"
+}

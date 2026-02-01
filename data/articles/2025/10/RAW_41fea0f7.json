@@ -1,0 +1,55 @@
+{
+  "id": "RAW_41fea0f7",
+  "title": "利用驻留理论构建更优秀的软件架构",
+  "url": "https://www.infoq.com/news/2025/10/architectures-residuality-theory/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-07 14:02:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Software architecture is tough because it blends coding, math, and business systems. Due to surprises, architectures tend to become irrelevant over time, Barry O’Reilly said at <a href=\"https://gotocph.com/\">Goto Copenhagen</a>. He presented residuality theory, where he suggested stressing naive architectures to reveal hidden \"attractors\" in complex business systems. This allows designs to better survive change and uncertainty.</p>\n   <p>Software architecture is difficult because it requires a broad skillset, O’Reilly said. We have to master the world of code, math, and logic, and the world of human and business systems, and understand how these two relate to and affect each other.</p>\n   <p>At university, they only teach us the tech. When we start to design systems, we realise that the complexity of the business environment constantly surprises us, rendering our architectures irrelevant, O’Reilly said. Making something as static and rigid as a software architecture survive in a fluid world that is always changing is not an easy task, he added.</p>\n   <p>Residuality assumes that a random simulation of stress on a naive architecture will produce a better architecture than the traditional methods around requirements engineering, risk management, or reacting to change as it happens, O’Reilly explained:</p>\n   <blockquote>\n    <p>This started out as a curious observation, and for the last 10 years, I have had to build theoretical explanations and experiments to show that this actually is the case. Armed with this knowledge, we can think differently about software architecture and build new tools.</p>\n   </blockquote>\n   <p>As students of Western science, our first recourse is to reduce any complex system to its component parts and study those parts in detail. This is the default for software engineers, O’Reilly said. In complex systems, the number of elements and potential interactions and states makes this kind of detail-oriented analysis impossible. Previous generations of architects have tried to reduce the complexity of the business environment to logic, or to structures, or to the development process.</p>\n   <p>One of the key aspects of complex systems is that they never visit all the possible states that the combination of their elements allows. Instead, the interactions of the elements constrain the system to a very small number of potential states, which we call \"attractors\", O’Reilly said. A complex business system is therefore not modelled as a number of interaction elements and their relationships, but instead as a number of attractors, he explained:</p>\n   <blockquote>\n    <p>When we build an architecture, it is these attractors that the architecture must survive in. Attractors therefore provide a much simpler and easier and more pragmatic way of interfacing with the complexity of the environment.</p>\n   </blockquote>\n   <p>The problem is that we don’t know what the attractors are, but by randomly simulating stress, we can discover many of them, O’Reilly said. If you think back to the major architectural failures you’ve seen, you will see that they mostly fail because they missed attractors, he mentioned.</p>\n   <p>Residuality theory is a very simple process. Sometimes, people are put off because the theoretical work necessary to prove that residuality works is very heavy, but applying it is easy, O’Reilly explained:</p>\n   <blockquote>\n    <p>We start out with a suggestion, a naive architecture that solves the functional problem. From there we stress the architecture with potential changes in the environment. These stressors allow us to uncover the attractors, often through conversations with domain experts. For each attractor, we identify the residue, what’s left of our architecture in this attractor, and then we change the naive architecture to make it survive better.</p>\n    <p>We do this many times and, at the end, integrate all of these augmented residues into a coherent architecture. We can then test this to show that it survives unknown forms of stress better than our naive architecture.</p>\n   </blockquote>\n   <p>In complex business environments with uncertainty, residuality makes it possible to create architectures quickly instead of chasing down stakeholders demanding specific requirements or answers to questions that are unknown by the business itself, O’Reilly said. It pulls technical architects out of details and teaches them to productively engage with a business environment without the lines and boxes of traditional enterprise architecture, he concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/barry-o-reilly-b924657/\">Barry O’Reilly</a> about residuality.</p>\n   <p><strong>InfoQ: How can we prove that the residual architecture that we created is an improvement over the naive architecture?</strong></p>\n   <blockquote>\n    <p><strong>Barry O’Reilly</strong>: A simple test is to use a second set of stressors to check that our residual architecture survives more unknown events than our naive architecture. You can easily see the similarities between this and the training/testing sets of ML. Residuality theory ultimately states that architectures should be trained, not designed.</p>\n   </blockquote>\n   <p><strong>InfoQ: What benefits have you seen from residual analysis?</strong></p>\n   <blockquote>\n    <p><strong>O’Reilly</strong>: Senior architects report that it gives a theoretical justification for practices that many had already figured out and a shared vocabulary for teams to talk about architecture. Ultimately, it makes architecture more explicit, better defined, and easier to teach. The result is architectures we can believe in and decision making that is traceable.</p>\n    <p>It has its challenges as well. A small number of developers find the jump from the linear, logical, mathematical world we are trained for to the lateral, imaginative techniques very difficult. Residuality is a subject as big as OOP and requires the same amount of effort to learn.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Producing a Better Software Architecture with Residuality Theory\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/architectures-residuality-theory/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1759845720000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文介绍了一种新颖的软件架构设计方法——驻留理论，它通过对简单架构施加压力，以发现在复杂业务系统中隐藏的“吸引子 (Attractors)”，从而改进软件架构设计。",
+  "oneSentenceSummary": "本文介绍了一种新颖的软件架构设计方法——驻留理论，它通过对简单架构施加压力，以发现在复杂业务系统中隐藏的“吸引子 (Attractors)”，从而改进软件架构设计。",
+  "summary": "这篇文章基于 Barry O'Reilly 在哥本哈根 Goto 大会 (Goto Copenhagen) 上的演讲，探讨了软件架构设计中固有的挑战。文章指出，由于复杂的人类和业务系统具有不可预测性，架构常常变得无关紧要，而这一领域在传统技术培训中往往被忽视。O'Reilly 提出了驻留理论，作为传统需求工程和风险管理的一种创新替代方案。该理论认为，通过随机模拟对一个“朴素架构”施加“扰动”，可以发现隐藏的“吸引子 (Attractors)”——复杂业务系统自然趋向的有限、稳定状态。O'Reilly 认为，架构的设计必须能够适应这些吸引子的存在。这个过程包括迭代地应用潜在的环境变化作为“压力源”，识别架构中“留存部分”，然后改进设计以增强其弹性。这种方法类似于机器学习，架构是通过“训练”（不断演进和适应）而形成的，而不仅仅是设计出来的。其主要优点包括为自适应架构实践提供可靠的理论依据，为开发团队建立共享词汇表，并使架构师能够更有效地应对业务复杂性，而无需受到传统企业架构模型的严格约束。最终，驻留理论旨在促进创建更明确、定义更完善且可追溯的架构。这将增强人们对架构的信心，并提升决策质量。",
+  "mainPoints": [
+    {
+      "point": "传统的软件架构难以适应业务环境固有的复杂性和持续变化。",
+      "explanation": "架构师通常接受技术方面的培训，但在业务系统引入不可预测的变量时，会面临重大挑战，这会迅速导致初始设计变得无关紧要且难以维护。"
+    },
+    {
+      "point": "驻留理论提出了一种迭代方法，即对“朴素架构”进行“压力测试”，以发现在复杂业务系统中的关键“吸引子 (Attractors)”。",
+      "explanation": "通过模拟潜在的变化和中断，架构师可以识别架构必须承受的有限的稳定状态（吸引子），从而产生比传统需求驱动方法更具弹性和适应性的设计。"
+    },
+    {
+      "point": "该理论促进了一种更实用和适应性强的架构设计方法，类似于训练模型，从而提高了可追溯性和团队沟通。",
+      "explanation": "它为架构师提供了一个结构化的框架，可以有效地应对业务不确定性，为构建能够“承受”不可预见事件的架构提供共享语言和理论依据，从而使决策更具可追溯性。"
+    }
+  ],
+  "keyQuotes": [
+    "驻留理论假定，对一个“朴素架构”进行随机“扰动”模拟，将比围绕需求工程、风险管理或对变化做出反应的传统方法产生更好的架构。",
+    "当我们构建一个架构时，架构必须在这些“吸引子 (Attractors)”中存活。因此，“吸引子 (Attractors)”提供了一种更简单、更容易和更实用的方式来与环境的复杂性交互。",
+    "我们从一个建议开始，一个解决功能问题的“朴素架构”。从那里，我们用环境中潜在的变化来“冲击”这个架构。",
+    "驻留理论最终指出，架构应该被训练，而不是被设计。",
+    "最终，它使架构更加明确，定义更好，更容易教授。结果是我们能够相信的架构和可追溯的决策。"
+  ],
+  "tags": [
+    "软件架构",
+    "驻留理论",
+    "架构设计",
+    "复杂系统",
+    "系统弹性"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 855,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1759845720000,
+  "publishDateStr": "2025-10-07",
+  "publishDateTimeStr": "2025-10-07 14:02:00"
+}

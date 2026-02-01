@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ce4ad419",
+  "title": "谢赛宁盛赞字节 Seed 新研究！单 Transformer 搞定任意视图 3D 重建",
+  "url": "https://www.qbitai.com/2025/11/353701.html",
+  "date": "2025-11-18 05:08:07",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"34\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"35\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">单Transformer搞定任意视图3D重建！</p>\n  <p data-track=\"3\">这是字节Seed康炳易团队带来的最新研究成果<strong>Depth Anything 3</strong>（下称DA3），获谢赛宁盛赞。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_a0c7813ce213ef9011083013f9a755de.png\" data-ic=\"false\" data-width=\"936\" data-height=\"780\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"4\">架构足够简单，核心能力却不差。能从一张图、一组多视角照片甚至一段随手拍的视频里，精准算出物体深度、还原相机位置，不仅能拼出完整3D场景，还能脑补出没拍过的新视角图像。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_e55ab60c220ec339a50d756cb53ca1da.png\" data-ic=\"false\" data-width=\"1274\" data-height=\"682\" data-ic-uri=\"\">\n  </div>\n  <p>而且，它在团队全新打造的视觉几何基准上横扫所有任务，相机定位精度平均提升<strong>35.7%</strong>，几何重建准确率涨了<strong>23.6%</strong>，单目深度估计还超越了自家前代DA2。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_9e1677beb8d4d1a44ff6d504b0dc30c5.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"494\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"7\">以前的3D视觉模型，想做单图深度估计？得单独训练一个模型；想搞多视角3D重建？又要换一套架构。</p>\n  <p data-track=\"8\">就连算个相机位置都得搭专属模块，不仅开发成本高，还没法充分利用大规模预训练模型的优势，数据依赖也很严重。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_ade4d41447328fd733427477c6dabef0.jpeg\" data-ic=\"false\" data-width=\"228\" data-height=\"232\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">还有就是这些模型往往“术业有专攻”，那DA3的单一极简操作究竟是怎样的呢？</p>\n  <p data-track=\"11\">核心秘诀就两点：一是只用一个普通的视觉Transformer当基础；二是预测目标只抓<strong>深度</strong>和<strong>光线</strong>两个核心。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_cf5ef8b41c752ec00dbf354c3a3d2455.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"387\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"12\">从架构图上可以看出来，DA3的任务流程可分为四大环节。</p>\n  <p data-track=\"13\">首先是输入处理，多视角图像会被送入Image Patch Embed模块转化为特征块，同时若有相机参数则通过编码器，没有则用可学习的相机token替代，最终图像特征与相机信息特征拼接融合。</p>\n  <p data-track=\"14\">中间的Single Transformer （Vanilla DINO）是模型的核心大脑。它是基于预训练的DINO视觉Transformer，通过Within-view self attn单视角自注意力、Cross-view self attn跨视角自注意力两种注意力机制，让模型能在单图、多图、视频等不同输入形式下，自动打通视角间的信息关联。</p>\n  <p data-track=\"15\">之后，Transformer输出的特征被送入Dual DPRT Head两个任务头，一方面输出深度图，另一方面输出光线参数，同时完成深度和光线两个核心预测。</p>\n  <p data-track=\"16\">此外，还会从特征中提取相机姿态信息，确保相机轨迹精准。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_5d705073f865bc1b4b8f0cf5e36468cf.png\" data-ic=\"false\" data-width=\"709\" data-height=\"565\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"17\">在训练环节上，DA3采用了师生蒸馏策略。用一个性能更优的教师模型从海量数据中提炼高质量伪标签，再用这套标准答案引导学生模型（即DA3）学习。</p>\n  <p data-track=\"18\">这种方式既能充分利用多样化数据，又能降低对高精度标注数据的依赖，让模型在训练阶段就能覆盖更多场景。</p>\n  <p data-track=\"19\">字节团队还专门搭了个全新的视觉几何基准，整合了5个覆盖室内、室外、物体级的数据集，从相机定位、3D重建到新视角生成，全方位考验模型实力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_841eb8fff1034fb520c57e07468fc946.png\" data-ic=\"false\" data-width=\"724\" data-height=\"274\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\">评测结果就是DA3全程能打。给一段视频，它能精准估计每帧的相机内参与外参，还原每帧相机的运动轨迹；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_46223f8f015863925bcf480a7ed23c4c.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"882\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"21\">将其输出的深度图与相机位置结合，能生成密度更高、噪声更低的3D点云，比传统方法的点云质量提升明显；</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_6ca46b5e2cef863179205c31431dfbac.png\" data-ic=\"false\" data-width=\"726\" data-height=\"317\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">甚至给几张同一场景的散图，它也能通过视角补全，生成未拍摄角度的图像，这在虚拟漫游、数字孪生等场景中潜力不小。</p>\n  <p data-track=\"24\">Depth Anything 3项目的带队人是字节跳动95后研究科学家<strong>康炳易</strong>。他的研究兴趣为计算机视觉、多模态模型，致力于开发能从各种观察中获取知识并与物理世界交互的智能体。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谢赛宁盛赞字节Seed新研究！单Transformer搞定任意视图3D重建\" src=\"https://image.jido.dev/20251118071958_e83756dfcc275d0f5522cb68a033c3b3.jpeg\" data-ic=\"false\" data-width=\"609\" data-height=\"641\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">2016年，他在浙大完成本科学业，后在加州伯克利和新国立（师从冯佳时）攻读人工智能专业硕博。</p>\n  <p data-track=\"26\">读博期间，他曾在Facebook AI Research实习，与谢赛宁、马库斯等人有过合作。</p>\n  <p data-track=\"27\">康炳易领导开发Depth Anything系列，之前还被收入苹果CoreML库中。</p>\n  <p data-track=\"28\">论文地址：https://arxiv.org/abs/2511.10647</p>\n  <p data-track=\"29\">参考链接：\n   <br>\n   [1]https://x.com/bingyikang/status/1989358267668336841\n   <br>\n   [2]https://x.com/sainingxie/status/1989423686882136498</p>\n  <p data-track=\"30\">— 完 —</p>\n  <p data-track=\"32\"><!--版权声明--></p>\n </body>\n</html>",
+  "aiSummary": "字节 Seed 团队的 Depth Anything 3 利用单一 Transformer 实现任意视图 3D 重建，显著提升深度估计和几何重建精度。",
+  "oneSentenceSummary": "字节 Seed 团队的 Depth Anything 3 利用单一 Transformer 实现任意视图 3D 重建，显著提升深度估计和几何重建精度。",
+  "summary": "字节 Seed 团队的最新研究成果 Depth Anything 3 (DA3) 获得了谢赛宁的盛赞，该模型由康炳易带领开发，创新性地采用单一 Transformer 架构，能够从单张图片、多视角照片甚至随手拍的视频中，精准算出物体深度、还原相机位置，并能拼出完整 3D 场景及脑补出未拍摄的新视角图像。DA3 的核心秘诀在于使用预训练的 DINO 视觉 Transformer，并专注于预测深度和光线两个核心参数。模型通过师生蒸馏策略进行训练，并在团队全新打造的视觉几何基准上横扫所有任务，相机定位精度和几何重建准确率均大幅提升。这一研究成功简化了传统多模型架构的复杂性，降低了开发成本和数据依赖，在虚拟漫游、数字孪生等领域展现出巨大潜力。",
+  "mainPoints": [
+    {
+      "point": "DA3 采用单一 Transformer 架构，实现多任务 3D 重建，简化了传统复杂模型。",
+      "explanation": "传统的 3D 视觉任务常需独立模型，DA3 通过统一架构处理单图、多视角及视频输入，显著降低开发成本并提高效率。"
+    },
+    {
+      "point": "模型通过预测深度与光线核心参数，并在自建基准上取得 SOTA 性能。",
+      "explanation": "DA3 聚焦深度和光线预测，结合师生蒸馏训练，在相机定位、几何重建等任务上远超现有模型，验证了其卓越性能。"
+    },
+    {
+      "point": "DA3 展现出强大的场景理解与生成能力，在新视角合成等领域潜力巨大。",
+      "explanation": "模型能从散图中补全视角、生成未拍摄图像，为虚拟漫游、数字孪生等应用提供了高效且高质量的解决方案。"
+    }
+  ],
+  "keyQuotes": [
+    "单 Transformer 搞定任意视图 3D 重建！",
+    "架构足够简单，核心能力却不差。",
+    "核心秘诀就两点：一是只用一个普通的视觉 Transformer 当基础；二是预测目标只抓深度和光线两个核心。",
+    "DA3 全程能打。给一段视频，它能精准估计每帧的相机内参与外参，还原每帧相机的运动轨迹",
+    "甚至给几张同一场景的散图，它也能通过视角补全，生成未拍摄角度的图像，这在虚拟漫游、数字孪生等场景中潜力不小。"
+  ],
+  "tags": [
+    "3D重建",
+    "Transformer",
+    "深度估计",
+    "计算机视觉",
+    "多视角"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 88,
+  "wordCount": 1374,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1763442487000,
+  "publishDateStr": "2025-11-18",
+  "publishDateTimeStr": "2025-11-18 05:08:07"
+}

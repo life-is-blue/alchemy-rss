@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fe1b7946",
+  "title": "畅所欲言：Agent 工程的务实之道",
+  "url": "https://simonwillison.net/2025/Oct/14/agentic-engineering/#atom-everything",
+  "date": "2025-10-14 21:26:40",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://steipete.me/posts/just-talk-to-it\">Just Talk To It - the no-bs Way of Agentic Engineering</a></strong>. Peter Steinberger's long, detailed description of his current process for using Codex CLI and GPT-5 Codex. This is information dense and full of actionable tips, plus plenty of strong opinions about the differences between Claude 4.5 an GPT-5:</p>\n   <blockquote>\n    <p>While Claude reacts well to 🚨 SCREAMING ALL-CAPS 🚨 commands that threaten it that it will imply ultimate failure and 100 kittens will die if it runs command X, that freaks out GPT-5. (Rightfully so). So drop all of that and just use words like a human.</p>\n   </blockquote>\n   <p>Peter is a <em>heavy</em> user of parallel agents:</p>\n   <blockquote>\n    <p>I've completely moved to <code>codex</code> cli as daily driver. I run between 3-8 in parallel in a 3x3 terminal grid, most of them <a href=\"https://x.com/steipete/status/1977771686176174352\">in the same folder</a>, some experiments go in separate folders. I experimented with worktrees, PRs but always revert back to this setup as it gets stuff done the fastest.</p>\n   </blockquote>\n   <p>He shares my preference for CLI utilities over MCPs:</p>\n   <blockquote>\n    <p>I can just refer to a cli by name. I don't need any explanation in my agents file. The agent will try $randomcrap on the first call, the cli will present the help menu, context now has full info how this works and from now on we good. I don't have to pay a price for any tools, unlike MCPs which are a constant cost and garbage in my context. Use GitHub's MCP and see 23k tokens gone. Heck, they did make it better because it was almost 50.000 tokens when it first launched. Or use the <code>gh</code> cli which has basically the same feature set, models already know how to use it, and pay zero context tax.</p>\n   </blockquote>\n   <p>It's worth reading the <a href=\"https://steipete.me/posts/just-talk-to-it#do-you-do-spec-driven-development\">section on why he abandoned spec driven development</a> in full.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9052/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文总结了 Peter Steinberger 在 Agent 工程方面的实践方法，强调并行代理、高效的命令行工具使用以及精妙的 LLM 提示。",
+  "oneSentenceSummary": "本文总结了 Peter Steinberger 在 Agent 工程方面的实践方法，强调并行代理、高效的命令行工具使用以及精妙的 LLM 提示。",
+  "summary": "Simon Willison 的这篇文章重点介绍了 Peter Steinberger 关于“Agent 工程”的详细文章中的关键见解。Steinberger 提倡务实方法，大量使用 `codex` 命令行界面和 GPT-5 Codex。他强调根据特定的 LLM 调整提示风格的重要性，指出 GPT-5 偏好类似人类的语言，而 Claude 对强调命令的反应更灵敏。他的工作流程的核心原则是在终端网格中并行执行多个 AI 代理（同时 3-8 个），以实现最大效率。此外，他提倡使用标准命令行界面实用程序，而不是专有的 “MCPs” (多上下文提示系统)，因其上下文 token 成本较低，且模型更易于理解。这篇文章还简要地提到了 Steinberger 在这种 agent 环境中放弃了规范驱动的开发，强调了向更流畅、迭代过程的转变。",
+  "mainPoints": [
+    {
+      "point": "有效的提示工程需要适应特定的 LLM 特征。",
+      "explanation": "GPT-5 和 Claude 等 LLM 对不同提示风格的反应各异。GPT-5 偏好自然语言，而 Claude 可能对更直接的命令反应更好。"
+    },
+    {
+      "point": "利用并行 AI 代理可以显著提高开发效率。",
+      "explanation": "同时运行多个 AI 代理，通常在同一个项目目录中，可以简化复杂的任务，加速迭代开发过程，从而提高开发效率。"
+    },
+    {
+      "point": "对于 agent 工作流程，标准命令行界面实用程序比 “MCPs” (多上下文提示系统) 更有效。",
+      "explanation": "与上下文繁重的专有提示系统相比，命令行界面工具提供更好的上下文 token 效率，并且通常 LLM 已经熟悉，从而减少了开销并提高了性能。"
+    }
+  ],
+  "keyQuotes": [
+    "虽然 Claude 对 🚨 尖叫式全大写命令 🚨 反应良好，这种命令威胁它，如果运行命令 X 将导致彻底失败，并且 100 只小猫会死亡，但这会让 GPT-5 感到非常不适。",
+    "我已经完全转移到使用 `codex` 命令行界面作为日常主要工具。我在一个 3x3 的终端网格中并行运行 3-8 个，其中大多数在同一个文件夹中，一些实验在单独的文件夹中进行。",
+    "我不必为任何工具付费，这与 MCPs 不同，MCPs 是持续的成本，并且在我的上下文中毫无价值。使用 GitHub 的 MCP，看到 23k tokens 消失了。"
+  ],
+  "tags": [
+    "Agent工程",
+    "LLM",
+    "GPT-5",
+    "提示工程",
+    "命令行工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 297,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1760477200000,
+  "publishDateStr": "2025-10-14",
+  "publishDateTimeStr": "2025-10-14 21:26:40"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_21cd17",
+  "title": "清华稀疏 Attention，无需训练加速一切模型！",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-27",
+  "date": "2025-03-27 02:28:37",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <section>\n   <br>\n  </section>\n  <p>在当今各类大语言模型以及视频模型中，长序列场景越来越普遍，而 Attention 的计算复杂度随着序列长度呈平方增长，成为长序列任务下的主要计算瓶颈。此前，清华大学陈键飞团队提出的即插即用量化的 SageAttention 系列工作已实现 3 倍加速于 FlashAttention，且在各类大模型上均保持了端到端的精度，已被业界和社区广泛使用。为了进一步加速 Attention，清华大学陈键飞团队进一步提出了<strong>无需训练</strong>可直接使用的稀疏 Attention（SpargeAttn）可用来<strong>加速任意模型</strong>。实现了<strong>&nbsp;4-7&nbsp;</strong>倍相比于 FlashAttention 的推理加速，且在语言，视频、图像生成等大模型上均保持了端到端的精度表现。</p>\n  <p><img data-imgfileid=\"503478253\" data-ratio=\"0.1925925925925926\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bf7852a7-8355-4bce-c285-3460e80b3800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/e15d7a18-e9da-47ba-b275-3472f22e5676/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <ul>\n   <li>论文标题：SpargeAttn: Accurate Sparse Attention Accelerating Any Model Inference</li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2502.18137&nbsp;</p></li>\n   <li>\n    <p>开源代码：https://github.com/thu-ml/SpargeAttn</p></li>\n  </ul>\n  <p>下图展示了 SpargeAttn 的速度，可以发现在 RTX4090 上，SpargeAttn 在 60% 稀疏度的情况下可以达到 <strong>900TOPS</strong> 的速度，甚至是使用 A100 显卡速度的 <strong>4.5 倍</strong>（A100 上 FlashAttention 只有 200TOPS）。</p>\n  <p><img data-imgfileid=\"503478254\" data-ratio=\"0.7777777777777778\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/de13d88d-c22a-457e-27c5-0cecf2d75700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/d337e715-6c31-471e-b435-989fb3491404/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\"></p>\n  <p>在 SpargeAttn 的 Github 仓库中可以发现，SpargeAttn 的使用方法比较简洁，只需要进行一次简单的超参数搜索过程，就可以永久地对任意的模型输入进行推理加速。</p>\n  <p>接下来，将从前言，挑战，方法，以及实验效果四个方面介绍 SpargeAttn。</p>\n  <p><strong>前言</strong></p>\n  <p>随着大模型需要处理的序列长度越来越长，Attention 的速度优化变得越来越重要。这是因为相比于网络中其它操作的 O (N) 的时间复杂度，Attention 的时间复杂度是 O (N^2)。尽管 Attention 的计算复杂度为 O (N^2)，但幸运的是 <strong>Attention 具备很好的稀疏性质</strong>，即 P 矩阵的很多值都接近 0。如何利用这种稀疏性来节省计算就成为了 attention 加速的一个重要方向。大多数现有的工作都集中在利用 P 矩阵在语言模型中表现出来的固定的稀疏形状（如滑动窗口）来节省计算，或是需要重新训练模型，比如 DeepSeek 的 NSA 以及 Kimi 的 MoBA。此外，现有稀疏 Attention 通常需要较大的上下文窗口（如 64K~1M）才能有明显加速。<strong>SpargeAttn 的目标是开发一个无需训练、对各种模型（语言 / 视频 / 图像）通用、精度无损、对中等长度的上下文（如 4-32K）也有加速效果的注意力机制。</strong></p>\n  <section>\n   <img data-imgfileid=\"503478255\" data-ratio=\"1.1064814814814814\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/abc2c7b2-8625-4a03-91a0-0771cf248c00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/48bfae45-fe01-4697-990f-3ca584e454c5/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 50%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;图 1: 不同的模型表现出不同的稀疏形状</sup></em></p>\n  <p><strong>实现通用的，无需训练的稀疏 Attenion 有哪些挑战？</strong></p>\n  <p><strong>挑战 1&nbsp;</strong></p>\n  <p>通用性：Attention 虽然具备稀疏性质，但是其稀疏形状在不同的模型甚至同一模型的不同层中都是不同的，体现出很强的动态性。如图 1 所示，前两种模型分别为视频模型和图像生成模型，这两个模型中的 Attention 的稀疏形状相比语言模型更加没有规律。设计一种各种模型通用的稀疏 Attention 是困难的。</p>\n  <p><strong>挑战 2&nbsp;</strong></p>\n  <p>可用性：对于各种 Attention 的输入，很难同时实现准确且高效的稀疏 Attention。这是因为准确性要求了完全精确地预测 P 中的稀疏区域，高效性则要求了此预测的时间开销极短。在一个极短的时间内完全精准地预测 P 的稀疏形状是困难的。</p>\n  <p><strong>方法</strong></p>\n  <p>为了解决上述的两个挑战，研究团队提出了对应的解决办法。</p>\n  <ul>\n   <li>\n    <p>研究团队提出了一种各模型通用的快速的对 P 矩阵稀疏部分进行预测的算法。该方法<strong>选择性地</strong>对 Q, K 矩阵进行压缩并预测 P 矩阵，接着使用 <strong>TopCdf</strong> 操作省略 P 中稀疏部分对应的 QK^T 与 PV 的矩阵乘法。</p></li>\n   <li>\n    <p>研究团队提出了在 GPU Warp 级别上的<strong>稀疏 Online Softmax</strong> 算法，该算法通过利用 Online Softmax 中全局最大值与局部最大值之间的差异，进一步省略了一些 PV 的矩阵乘法计算。</p></li>\n   <li>\n    <p>可选的，针对视频和图像模型，研究团队充分利用图像以及视频中的 Token 局部相似性质，使用希尔伯特重排的方法对 Attention 前的 Token 进行重新排列，进一步提高稀疏度。</p></li>\n   <li>\n    <p>最后，研究团队将这种稀疏方法与基于量化的 SageAttention 融合到一起，进一步加速 Attention。</p></li>\n  </ul>\n  <section>\n   <img data-imgfileid=\"503478256\" data-ratio=\"0.5064814814814815\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6509626b-930e-4855-c268-ad126d60f800/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/257e0247-0e18-44f9-b79d-04e994e700ac/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图 2: SpargeAttn 的算法流程图</sup></em></p>\n  <p>SpargeAttn 的算法流程如下所示：</p>\n  <section>\n   <img data-imgfileid=\"503478257\" data-ratio=\"0.5305555555555556\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/417f6b67-3afa-40ed-c135-ee12f24f9c00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/f8f79af9-080d-465a-a8a4-381f7ed50d1d/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><strong>实验效果</strong></p>\n  <p><strong>总的来说，SpargeAttn 在视频、图像、文本生成等大模型均可以实现无需训练的加速效果，同时保证了各任务上的端到端的精度。</strong></p>\n  <p>下表展示了 SpargeAttn 在各模型上的稀疏度，Attention 速度，以及各任务上的端到端精度，可以发现 SpargeAttn 在保证了加速的同时没有影响模型精度：（注：此论文中的所有实验都是基于 SageAttention 实现，目前 Github 仓库中已有基于 SageAttention2 的实现，进一步提供了 30% 的加速。</p>\n  <section>\n   <img data-imgfileid=\"503478258\" data-ratio=\"0.812962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c1a3a438-00ef-4414-147d-d950b3c2b300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/b21d1d58-8bd8-4531-a881-a27c80a24dbd/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>值得一提的是，此前的稀疏 Attention 工作很多无法实际使用的原因之一是稀疏预测部分的 Overhead 较大，而 SpargeAttn 团队还将稀疏预测部分的代码进行了极致优化，将 Overhead 压缩到了几乎在各种长度的序列下都可以忽略的地步：</p>\n  <section>\n   <img data-imgfileid=\"503478259\" data-ratio=\"0.3472222222222222\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/357e1574-c75f-40d6-b209-9d715bba2700/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/51bcf771-df8b-4122-ba2e-bb197509b598/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p>下表展示了对于各模型的端到端的加速效果，以视频生成模型 Mochi 为例，SpargeAttn 提供了近两倍的端到端加速效果：（注：此论文中的所有实验都是基于 SageAttention 实现，目前 Github 仓库中已有基于 SageAttention2 的实现，进一步提供了 30% 的加速）<img data-imgfileid=\"503478260\" data-ratio=\"0.30925925925925923\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2126cd5a-8aa1-4327-9e88-0ecea5181000/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/c794de93-0e48-4bb0-9dab-9fe09078fdc5/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n \n",
+  "aiSummary": "清华大学提出即插即用的 SpargeAttn 稀疏注意力机制，无需训练即可加速多种大模型推理，最高可达 7 倍加速。",
+  "oneSentenceSummary": "清华大学提出即插即用的 SpargeAttn 稀疏注意力机制，无需训练即可加速多种大模型推理，最高可达 7 倍加速。",
+  "summary": "本文介绍了清华大学提出的 SpargeAttn，一种无需训练的稀疏注意力机制，旨在解决大模型中 Attention 计算复杂度高的问题。SpargeAttn 通过选择性地压缩 Q、K 矩阵并快速预测 P 矩阵的稀疏部分，结合 TopCdf 操作和 GPU Warp 级别的稀疏 Online Softmax 算法，实现了在多种模型上的加速效果。该方法在保证模型精度的前提下，无需重新训练即可加速包括语言、视频、图像生成等多种大模型推理，最高可达 7 倍加速，并已在 Github 上开源。",
+  "mainPoints": [
+    {
+      "point": "SpargeAttn 具有通用性，无需训练即可加速多种大模型。",
+      "explanation": "该方法通过预测 Attention 矩阵的稀疏部分，减少计算量，无需针对特定模型进行训练，具有通用性。"
+    },
+    {
+      "point": "SpargeAttn 在保证精度前提下实现了显著加速。",
+      "explanation": "实验表明，SpargeAttn 在视频、图像、文本生成等模型上均可实现加速，同时保持了端到端的精度。"
+    },
+    {
+      "point": "SpargeAttn 通过优化稀疏预测部分降低了开销。",
+      "explanation": "团队对稀疏预测部分的代码进行了极致优化，使得其开销在各种长度的序列下都可以忽略不计。"
+    }
+  ],
+  "keyQuotes": [
+    "SpargeAttn 的目标是开发一个无需训练、对各种模型（语言 / 视频 / 图像）通用、精度无损、对中等长度的上下文（如 4-32K）也有加速效果的注意力机制。",
+    "Attention 具备很好的稀疏性质 ，即 P 矩阵的很多值都接近 0。",
+    "总的来说，SpargeAttn 在视频、图像、文本生成等大模型均可以实现无需训练的加速效果，同时保证了各任务上的端到端的精度。"
+  ],
+  "tags": [
+    "稀疏注意力",
+    "大语言模型",
+    "模型加速",
+    "推理优化",
+    "SpargeAttn"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1837,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743042517000,
+  "publishDateStr": "2025-03-27",
+  "publishDateTimeStr": "2025-03-27 02:28:37"
+}

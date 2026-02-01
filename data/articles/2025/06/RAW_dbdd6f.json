@@ -1,0 +1,64 @@
+{
+  "id": "RAW_dbdd6f",
+  "title": "双重突破：全球首个零售 VLA 大模型来了！开源 OpenWBT 让机器人遥操门槛暴降！",
+  "url": "https://www.qbitai.com/2025/06/291904.html",
+  "date": "2025-06-09 06:14:53",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote class=\"pgc-blockquote-abstract\">\n   <p class=\"pgc-h-arrow-right\" data-track=\"74\">允中 发自 凹非寺</p>\n   <p class=\"pgc-h-arrow-right\" data-track=\"75\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">6月6日-7日，<strong>2025 北京智源大会</strong>召开。作为全球具身智能领域最具影响力的学术与产业双栖盛会，本次大会汇聚了顶尖科研机构、技术领军企业和开源社群。</p>\n  <p data-track=\"3\"><strong>北京大学助理教授、银河通用机器人创始人及CTO、智源学者王鹤博士</strong>受邀出席开幕式圆桌论坛。</p>\n  <p data-track=\"4\"><strong>银河通用具身大模型机器人Galbot</strong>一同登上主论坛舞台，面向全球观众直播展示最新技术成果。这是Galbot的全球直播首秀，<strong>全程无遥操，无需场景数据预采集。</strong></p>\n  <p data-track=\"5\">此次主论坛直播，零距离展现了银河通用具身大模型驱动机器人产业落地的硬实力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"双重突破：全球首个零售VLA大模型来了！开源OpenWBT让机器人遥操门槛暴降！\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e62b8a8-5102-48a3-2868-a6db3a0b1f00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e62b8a8-5102-48a3-2868-a6db3a0b1f00/public\">\n  </div>\n  <p data-track=\"6\">以下是此次发布的核心成果：</p>\n  <p data-track=\"8\">开幕式现场，银河通用机器人Galbot G1登上主论坛舞台，面向全球观众直播展示最新技术成果，零距离展现了银河通用具身大模型驱动机器人产业落地的硬实力。</p>\n  <p data-track=\"9\">机器人在王鹤博士的语音指令下自主、精确的移动到准确位置并将饮料从货架取出，<strong>全程无遥操、自主推理、并且无事先采集场景数据</strong>。</p>\n  <p data-track=\"10\">此次Galbot G1展示的货架精准取货，<strong>背后的技术正是银河通用团队最新研发的端到端具身大模型GroceryVLA</strong>。</p>\n  <p data-track=\"11\">可在现场搭建的1:1还原的真实商超场景中，实现复杂货架抓取与交付的全流程自主执行。</p>\n  <p data-track=\"13\">它所展现的，并非一次临时编排的演示流程，而是一次面向真实商业场景的能力展示：</p>\n  <p data-track=\"14\">从感知到动作、从语言指令到精准操作，全部依靠模型自主完成。其稳定、高效的表现，迅速引发现场学术专家、行业人士与媒体的围观与热议。</p>\n  <p data-track=\"15\">也正因其在真实复杂环境中的卓越表现，这台Galbot作为代表获智源大会主办方直接邀请，成为<strong>本届大会唯一登上主论坛主舞台，面向产业应用的具身大模型系统</strong>，在全场瞩目下完成全球直播发布。</p>\n  <p data-track=\"16\">在智源大会主展区，银河通用展示了两台“性格”迥异的具身大模型Galbot“迎宾机器人”和“售货机器人”，凭借鲜明互动风格与真实应用能力，吸引了大量观众驻足围观，成为全场最受关注的技术展区之一。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"双重突破：全球首个零售VLA大模型来了！开源OpenWBT让机器人遥操门槛暴降！\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b09c2e1b-be6d-47ed-08df-2be518030e00/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b09c2e1b-be6d-47ed-08df-2be518030e00/public\">\n  </div>\n  <p data-track=\"17\">据王鹤博士介绍，<strong>银河通用机器人正通过与零售业态合作伙伴广泛合作，年内计划开设100家店</strong>。</p>\n  <p data-track=\"18\">作为全球首个面向零售行业的端到端具身VLA大模型，GroceryVLA标志着银河通用在具身智能领域的重大技术突破。</p>\n  <p data-track=\"19\">以下是GroceryVLA五大核心能力的详解，揭示其为何能够稳定适配商超复杂环境、实现高度通用的自主操作。</p>\n  <p data-track=\"21\">GroceryVLA<strong>采用端到端模型架构</strong>，突破传统“视觉+轨迹规划”方案，在紧密排布、涵盖数十种SKU的真实货架环境中，自主识别并完成商品抓取。</p>\n  <p data-track=\"22\">无需路径规划，即可在几乎无空隙的货架上稳定作业，展现出卓越的操作效率与灵活性，标志着端到端大模型驱动的闭环控制已具备商用能力。</p>\n  <p data-track=\"26\">模型无需针对每种商品包装单独调参，支持软包装<em>（如袋装面包、卤蛋）</em>、硬盒、塑料瓶、透明果冻杯等多样形态商品的精准抓取，实现了跨品类的统一抓取策略。</p>\n  <p data-track=\"30\"><strong>无论是刚性包装还是柔性物体，都能精准取放</strong>，满足全品类零售场景需求。</p>\n  <p data-track=\"32\">基于大规模仿真数据和多场景训练，模型可直接泛化至全新环境。</p>\n  <p data-track=\"33\">此次展会为其首次异地实战部署，<strong>面对光照变化、货物随机摆放等复杂条件依然表现稳定</strong>。</p>\n  <p data-track=\"37\">主论坛全球直播首秀更实现全程无遥控、无场地预采，全面展现其卓越的零样本泛化能力。</p>\n  <p data-track=\"39\">面对货架上多个相似商品，<strong>GroceryVLA能够基于任务需求动态判断最优抓取目标</strong>，区别于传统静态“指定抓”策略。</p>\n  <p data-track=\"40\">系统按照指定顺序精准执行，展现出高级任务理解与灵活调度能力，确保多样化操作流程有条不紊。</p>\n  <p data-track=\"46\">在抓取过程中，模型<strong>具备实时闭环策略调整能力</strong>，能够快速响应现场人为干扰，如货物被移走、增加或推挤，甚至抓取动作中瓶子被碰倒后重新扶正，保障任务连续高效完成，展现出真正具备商业落地价值的鲁棒性和实用性。</p>\n  <p data-track=\"49\">无论是面对主论坛舞台高强度灯光和复杂场地条件干扰，还是在展区人流密集穿梭环境中，GroceryVLA所驱动的Galbot始终稳定完成了从视觉感知、目标识别到自主抓取交付的全流程闭环操作，全面展现出模型的工程稳定性与实际可用性。</p>\n  <p data-track=\"50\">这一表现，不仅是银河通用技术自信的体现，更意味着其具身智能产品已具备真正面向商业落地的能力。</p>\n  <p data-track=\"52\">除了推动Galbot在更广泛的零售场景的稳定商业落地外，银河通用也在<strong>持续关注人形机器人的技术进展</strong>。</p>\n  <p data-track=\"53\">在人形机器人领域，稳定易用且支持全身动作的遥操作系统长期缺失，成为制约数据采集、高质量大模型训练及商业应用落地的关键瓶颈。</p>\n  <p data-track=\"54\">传统系统部署繁琐、兼容性差，且多局限于上半身动作，难以覆盖真实工作场景所需的完整人类工作空间。</p>\n  <p data-track=\"55\">基于此，银河通用联合清华大学弋力助理教授团队正式<strong>发布OpenWBT ——全球首款全开源、多机型、跨虚实人形机器人全身遥操作系统。</strong></p>\n  <div class=\"pgc-img\">\n   <img alt=\"双重突破：全球首个零售VLA大模型来了！开源OpenWBT让机器人遥操门槛暴降！\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0cb9c104-8155-4643-b67f-c4ecda389300/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/0cb9c104-8155-4643-b67f-c4ecda389300/public\">\n  </div>\n  <p data-track=\"56\">OpenWBT创新实现了小时级快速部署，用户仅凭一副VR眼镜与一台普通电脑，便可从零完成系统搭建与调试，迅速解锁人类级操作自由度。</p>\n  <p data-track=\"58\">OpenWBT在技术上的具备三大核心突破详解如下：</p>\n  <p data-track=\"60\">系统设计注重易用性，初学者仅需一副VR眼镜和一台普通电脑，最多仅需数小时内即可完成系统搭建与调试，显著降低部署门槛，同时可以轻松适配室内外各种环境。</p>\n  <p data-track=\"62\">现已支持Unitree G1、H1两多款机器人，涵盖不同自由度与身高规格，实现对完整人类工作空间的高效覆盖，满足多样化机器人硬件需求。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"双重突破：全球首个零售VLA大模型来了！开源OpenWBT让机器人遥操门槛暴降！\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5f12e0fa-dda8-4f74-23fd-62d6764e4100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5f12e0fa-dda8-4f74-23fd-62d6764e4100/public\">\n  </div>\n  <div class=\"pgc-img\">\n   <img alt=\"双重突破：全球首个零售VLA大模型来了！开源OpenWBT让机器人遥操门槛暴降！\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5d97a26c-6c18-4c46-281a-dffad71da000/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5d97a26c-6c18-4c46-281a-dffad71da000/public\">\n  </div>\n  <p data-track=\"64\">不仅支持对真实物理机器人的实时遥控，还兼容虚拟仿真环境遥操作，方便大规模数据采集和基于仿真数据的泛化训练，促进模型高效迭代。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"双重突破：全球首个零售VLA大模型来了！开源OpenWBT让机器人遥操门槛暴降！\" class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a55fd46a-f65f-4e4e-134f-ffa0a1996100/public\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a55fd46a-f65f-4e4e-134f-ffa0a1996100/public\">\n  </div>\n  <p data-track=\"65\">在动作控制方面，OpenWBT将机器人运动拆分为“走路、蹲下、弯腰、触达”等基础“原子技能”，每项技能均在真实环境中经过稳定训练与验证。</p>\n  <p data-track=\"66\">通过先进的技能融合算法，系统能够自动组合原子动作，形成连贯复杂的任务序列，实现机器人“碰天触地”的全身动作协调能力。</p>\n  <p data-track=\"67\">OpenWBT的全面开源发布，是银河通用致力于构建开放共享具身智能生态的重要成果。</p>\n  <p data-track=\"68\">作<strong>为全球首个标准化、模块化的人形机器人全身遥操作框架</strong>，OpenWBT极大降低了行业技术门槛，为科研机构和产业界提供了稳定高效的训练与测试平台。</p>\n  <p data-track=\"69\">该项目推动了开放共享的社区生态建设，促进更多研究机构和企业的协同参与，加速具身智能技术的积累与迭代，助力人形机器人从实验室走向实际应用，实现产业创新与共赢发展。</p>\n  <p data-track=\"70\">展望未来，银河通用将继续秉持技术创新与开放合作并重的发展理念，引领人形机器人从“实验室探索”迈向“广泛应用”，实现机器人真正“工作起来”，深化具身大模型技术与产业协作的融合应用，推动更多行业场景智能化升级，助力构建更加智能、高效、可持续的未来社会。</p>\n  <p data-track=\"71\">同时，银河通用期待与更多合作伙伴携手共进，共同谱写具身智能新时代的辉煌篇章。</p>\n  <p data-track=\"72\">立即体验OpenWBT：</p>\n  <p data-track=\"73\">https://github.com/GalaxyGeneralRobotics/OpenWBT</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "银河通用发布全球首个零售 VLA 大模型 GroceryVLA 与人形机器人开源遥操作系统 OpenWBT，显著降低具身智能应用门槛。",
+  "oneSentenceSummary": "银河通用发布全球首个零售 VLA 大模型 GroceryVLA 与人形机器人开源遥操作系统 OpenWBT，显著降低具身智能应用门槛。",
+  "summary": "本文报道了银河通用在北京智源大会上的双重技术突破。核心成果包括面向零售场景的具身大模型 GroceryVLA，该模型采用端到端架构，无需遥操和预采数据，具备在复杂货架环境中精准抓取多样化商品的能力，并展现了卓越的泛化性和鲁棒性，已具备商用潜力。另一项突破是开源的 OpenWBT，这是一个多机型、跨虚实的人形机器人全身遥操作系统，通过简化部署和原子技能融合，大幅降低了数据采集和具身大模型训练的门槛。这两项发布标志着银河通用在推动具身智能从实验室走向实际应用方面取得了重要进展，特别是在零售和人形机器人领域。",
+  "mainPoints": [
+    {
+      "point": "GroceryVLA 实现零售场景全流程自主操作",
+      "explanation": "作为全球首个零售 VLA 大模型，它能在复杂货架环境中端到端完成商品识别、抓取与交付，无需遥操和场景数据预采集，展现了商用能力。"
+    },
+    {
+      "point": "GroceryVLA 具备强大泛化性与鲁棒性",
+      "explanation": "模型能泛化至新环境，应对光照变化、随机摆放、人为干扰等复杂条件，支持多样化商品形态抓取，确保任务稳定高效完成。"
+    },
+    {
+      "point": "OpenWBT 大幅降低人形机器人遥操作门槛",
+      "explanation": "首款全开源、多机型、跨虚实的全身遥操作系统，实现小时级快速部署，支持虚实结合，加速数据采集与模型训练。"
+    },
+    {
+      "point": "OpenWBT 通过原子技能实现复杂动作",
+      "explanation": "将机器人运动分解为基础技能并融合，实现“碰天触地”的全身协调能力，提升遥操作的效率与灵活性。"
+    },
+    {
+      "point": "推动具身智能从实验室走向应用，构建开放生态",
+      "explanation": "银河通用通过发布 GroceryVLA 和 OpenWBT，展示了其将具身智能技术落地商业场景的决心，并通过开源 OpenWBT，旨在构建开放社区，加速行业整体发展。"
+    }
+  ],
+  "keyQuotes": [
+    "这是 Galbot 的全球直播首秀，全程无遥操，无需场景数据预采集。",
+    "背后的技术正是银河通用团队最新研发的端到端具身大模型 GroceryVLA。",
+    "作为全球首个面向零售行业的端到端具身 VLA 大模型，GroceryVLA 标志着银河通用在具身智能领域的重大技术突破。",
+    "银河通用联合清华大学弋力助理教授团队正式发布 OpenWBT ------全球首款全开源、多机型、跨虚实人形机器人全身遥操作系统。",
+    "用户仅凭一副 VR 眼镜与一台普通电脑，便可从零完成系统搭建与调试，迅速解锁人类级操作自由度。",
+    "OpenWBT 将机器人运动拆分为\"走路、蹲下、弯腰、触达\"等基础\"原子技能\"。"
+  ],
+  "tags": [
+    "具身智能",
+    "VLA模型",
+    "机器人",
+    "零售",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 89,
+  "wordCount": 2645,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1749449693000,
+  "publishDateStr": "2025-06-09",
+  "publishDateTimeStr": "2025-06-09 06:14:53"
+}

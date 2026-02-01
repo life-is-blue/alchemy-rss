@@ -1,0 +1,55 @@
+{
+  "id": "RAW_9b181d",
+  "title": "MCP 协议曝出大漏洞：会泄露整个数据库",
+  "url": "https://www.qbitai.com/2025/07/307174.html",
+  "date": "2025-07-10 06:54:10",
+  "author": "时令",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <h5 data-pm-slice=\"0 0 []\">时令 发自 凹非寺<br>\n     量子位 | 公众号 QbitAI</h5>\n  </blockquote>\n  <p data-track=\"124\">所有使用MCP协议的企业注意：你的数据库可能正在“裸奔”！</p>\n  <p data-track=\"83\">最新研究显示，<strong>该协议存在重大漏洞，攻击者可利用LLM的指令/数据混淆漏洞直接访问数据库</strong>。</p>\n  <p data-track=\"84\">如果用户提供的“数据”被精心伪装成指令，模型很可能会将其作为真实指令执行。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6982b864-827a-4f45-27f8-a8f8c086d300/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6982b864-827a-4f45-27f8-a8f8c086d300/public\">\n  </div>\n  <p data-track=\"85\">要知道，MCP协议如今已成为智能体领域的行业标准，可以很好连接大语言模型与各种工具服务，很多公司都纷纷接入使用。</p>\n  <p data-track=\"86\">然而，当模型处理网页、邮件、文档或图像等内容时，一旦其中隐藏了恶意指令，模型就有可能误将其当作真实指令执行，进而触发未经授权的操作，例如泄露私人数据。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5b22c303-2e76-4cd0-0bc8-07f5e689f800/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5b22c303-2e76-4cd0-0bc8-07f5e689f800/public\">\n  </div>\n  <p data-track=\"88\">为了演示LLM安全风险，研究者基于Supabase搭建了一个典型的多租户客服SaaS系统。Supabase是一个开源的实时后端服务平台，包含数据库、身份认证、文件存储等功能。</p>\n  <p data-track=\"89\">该系统启用了标准的行级安全（RLS）机制，且未添加任何额外的策略。</p>\n  <p data-track=\"90\">本次攻击演示所利用的一切要素均存在于默认配置中，包括标准service_role、默认模型、RLS和代表开发人员发起MCP调用的语言模型助手。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e921bf8-2eb7-4308-6119-a81aa7cad300/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2e921bf8-2eb7-4308-6119-a81aa7cad300/public\">\n  </div>\n  <p data-track=\"91\">该系统涉及的角色和权限边界如下所示：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b21cb015-3499-4c96-e171-aea834af3600/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b21cb015-3499-4c96-e171-aea834af3600/public\">\n  </div>\n  <p data-track=\"92\">其中要注意的是：</p>\n  <blockquote>\n   <p data-track=\"93\">支持代理无权访问任何非支持表或敏感表。要求支持代理提供任何敏感信息将导致拒绝。</p>\n  </blockquote>\n  <p data-track=\"94\">下面让我们详细了解一下<strong>数据泄露过程</strong>。</p>\n  <p data-track=\"95\">攻击者首先提交了一份新的技术支持请求，其中包含精心构造的消息内容：既以友好提问作为伪装，又嵌入了直接发送给Cursor代理的明确指令。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/08a93ea6-b10f-4c94-b05c-a03d0a7ea400/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/08a93ea6-b10f-4c94-b05c-a03d0a7ea400/public\">\n  </div>\n  <p data-track=\"96\">在系统中的对话界面如下所示：</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/22ddb3ba-b652-433f-f7ed-385324480000/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/22ddb3ba-b652-433f-f7ed-385324480000/public\">\n  </div>\n  <p data-track=\"97\">这条消息通过正常的工单提交通道进入数据库，存储在客户消息表中，未被任何过滤或阻断。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f2cf1b30-d8af-4508-8d9b-6fffad06e700/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f2cf1b30-d8af-4508-8d9b-6fffad06e700/public\">\n  </div>\n  <p data-track=\"98\">当支持代理查看工单时，他们只会按预期进行回复。需要注意的是，支持代理的权限不允许访问integration_tokens表，因此此阶段不会暴露任何敏感信息。</p>\n  <p data-track=\"99\">然而，当开发人员随后使用Cursor查看未处理工单时，就会发生<strong>违规行为</strong>。他们可能会输入如下指令：</p>\n  <blockquote>\n   <p data-track=\"100\">请显示最新的未处理支持工单。</p>\n  </blockquote>\n  <p data-track=\"101\">此时，Cursor的代理通过Supabase MCP集成，自动发起一系列自动化SQL查询：</p>\n  <p data-track=\"102\">1、加载项目的数据库架构</p>\n  <p data-track=\"103\">2、列出所有支持工单</p>\n  <p data-track=\"104\">3、筛选出状态为“未解决”的工单</p>\n  <p data-track=\"105\">4、获取最新工单的所有消息</p>\n  <p data-track=\"106\">在此过程中，代理读取了攻击者提交的消息，并按照其中嵌入的指令执行相应操作。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/963e12f1-b8b1-410f-5451-33ad2569e300/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/963e12f1-b8b1-410f-5451-33ad2569e300/public\">\n  </div>\n  <p data-track=\"107\">最终，系统生成了两条新的SQL查询语句：</p>\n  <ul>\n   <li data-track=\"108\">读取integration_tokens中的全部内容；</li>\n   <li data-track=\"109\">将读取到的结果作为新消息插入到当前工单的消息线程中。</li>\n  </ul>\n  <p data-track=\"110\">这两条查询均由拥有高权限的service_role执行，该角色可以绕过所有行级安全（RLS）限制。</p>\n  <p data-track=\"111\">对于开发人员而言，这些操作看起来就像普通的工具调用。除非手动展开查看，否则几乎无法与之前的合法查询区分开来。</p>\n  <p data-track=\"112\">查询一旦执行完成，敏感数据会立即显示在该工单的对话中。</p>\n  <p data-track=\"113\">攻击者只需刷新页面，就能看到包含机密信息的新消息。</p>\n  <div class=\"pgc-img\">\n   <img class=\"syl-page-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1b163358-fec6-4ec3-7199-dfac2f0a3f00/public\" alt=\"MCP协议曝出大漏洞：会泄露整个数据库\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1b163358-fec6-4ec3-7199-dfac2f0a3f00/public\">\n  </div>\n  <p data-track=\"114\"><strong>从权限角度来看，这一过程完全合规。</strong></p>\n  <p data-track=\"116\">这类攻击的根源在于两个设计缺陷的叠加：数据库权限过高（如service_role），以及对用户提交内容的盲目信任。</p>\n  <p data-track=\"117\">以下是团队用以降低风险暴露的两项措施：</p>\n  <p data-track=\"118\"><strong>尽可能使用只读模式</strong></p>\n  <p data-track=\"119\">启用该模式后，即使提示词被恶意利用，也无法执行插入（insert）、更新（update）或删除（delete）等操作。</p>\n  <p data-track=\"120\"><strong>添加提示注入（Prompt Injection）过滤器</strong><br>\n    这一机制可以通过在MCP外部构建一个轻量级过滤模块来实现，用于拦截传入数据，并对高风险输入进行标记或清除。</p>\n  <p data-track=\"121\">虽然该防护无法捕捉所有攻击，但它作为可扩展且切实可行的第一道防线，尤其适用于那些使用第三方IDE（如 Cursor）且难以明确划分上下文边界的团队。</p>\n  <p data-track=\"122\"><em>参考链接：https://www.generalanalysis.com/blog/supabase-mcp-blog</em></p>\n  <p data-track=\"80\">— 完 —</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "MCP 协议曝出严重漏洞，攻击者可利用 LLM 指令混淆直接访问并泄露数据库。",
+  "oneSentenceSummary": "MCP 协议曝出严重漏洞，攻击者可利用 LLM 指令混淆直接访问并泄露数据库。",
+  "summary": "文章揭示了智能体领域广泛使用的 MCP 协议存在的重大安全漏洞。该漏洞允许攻击者通过精心构造的恶意指令，伪装成普通数据，利用大语言模型（LLM）的指令/数据混淆弱点，绕过现有安全机制，直接访问并窃取数据库敏感信息。文章通过基于 Supabase 的多租户客服 SaaS 系统演示，攻击者提交恶意指令后，当开发人员使用 Cursor 查看工单时，LLM 代理在拥有高权限的 service_role 下执行了伪装指令，导致数据库敏感信息泄露。为应对此风险，文章提出了两项关键缓解措施：一是尽可能启用只读模式限制写入操作，二是构建轻量级提示注入过滤器，在 MCP 外部对高风险输入进行拦截和清洗。该漏洞对依赖 MCP 协议的企业构成严重威胁，强调了在 AI 应用开发中加强安全防御的重要性。",
+  "mainPoints": [
+    {
+      "point": "MCP 协议存在 LLM 指令/数据混淆漏洞，可致数据库泄露。",
+      "explanation": "攻击者可将恶意指令伪装成用户数据，诱导 LLM 执行未经授权的数据库操作，绕过现有安全防护，直接访问敏感数据。"
+    },
+    {
+      "point": "漏洞根源在于高权限数据库角色与对用户输入的盲目信任。",
+      "explanation": "默认配置下，高权限账户（如 service_role）能绕过行级安全限制，若同时信任未经净化的用户输入，极易被利用。"
+    },
+    {
+      "point": "采用只读模式和提示注入过滤器是有效缓解措施。",
+      "explanation": "只读模式可限制恶意写入操作，提示注入过滤器则可在外部拦截高风险输入，增强系统安全性。"
+    }
+  ],
+  "keyQuotes": [
+    "该协议存在重大漏洞，攻击者可利用 LLM 的指令/数据混淆漏洞直接访问数据库。",
+    "当模型处理网页、邮件、文档或图像等内容时，一旦其中隐藏了恶意指令，模型就有可能误将其当作真实指令执行，进而触发未经授权的操作，例如泄露私人数据。",
+    "这类攻击的根源在于两个设计缺陷的叠加：数据库权限过高（如 service_role），以及对用户提交内容的盲目信任。",
+    "尽可能使用只读模式，启用该模式后，即使提示词被恶意利用，也无法执行插入（insert）、更新（update）或删除（delete）等操作。",
+    "添加提示注入（Prompt Injection）过滤器，这一机制可以通过在 MCP 外部构建一个轻量级过滤模块来实现，用于拦截传入数据，并对高风险输入进行标记或清除。"
+  ],
+  "tags": [
+    "AI安全",
+    "LLM",
+    "MCP协议",
+    "提示注入",
+    "数据安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1527,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752130450000,
+  "publishDateStr": "2025-07-10",
+  "publishDateTimeStr": "2025-07-10 06:54:10"
+}

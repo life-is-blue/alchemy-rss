@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ff546dc7",
+  "title": "Airbnb 的 Mussel V2：下一代的键值存储，以统一流和批处理",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261231&idx=4&sn=aea6fe5ed52a695b8fbe0783fb171c4d",
+  "date": "2025-11-01 02:16:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <p style=\"text-align: center;\" nodeleaf=\"\">\n   <br>\n  </p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 张卫滨 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Airbnb 的工程团队推出了 Mussel v2，这是对其内部键值引擎的一次彻底重构，旨在统一流式处理和批量摄取，同时简化运维并扩展到更大的工作负载。据报道，新系统能够维持每秒超过 100,000 次流式写入，支持超过 100TB 的表，p99 读取延迟在 25 毫秒以下，并且能够批量摄取数十 TB 的数据，使调用团队能够专注于产品创新而不是管理数据管道。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">早期版本的 Mussel v1 为 Airbnb 的内部数据服务提供了动力，但随着数据量和产品集成的增加，其局限性日益显现。它的静态哈希分区设计运行在 Amazon EC2 上，并通过 Chef 脚本进行管理。独立的批处理和流式路径增加了运维开销，并使得确保一致性变得很困难。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-imgfileid=\"503777547\" data-ratio=\"0.5222222222222223\" style=\"width: 100%;\" data-type=\"jpeg\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=af4f1316&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FYriaiaJPb26VMDc7p60CCztIX5vWUZM9C2wyUMjkd6pTb5gjNWXnc321cxTDDua3YJOwpPvZ2ewupxJq5dia979mQ%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><em style=\"margin-left:32px;display:block;font-size:16px;font-style:normal;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">Mussel V1 架构（图片来源：Airbnb 工程博客）</span></span></em></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Mussel v2 通过将 NewSQL 后端与 Kubernetes 原生控制平面结合，解决了这些限制，提供了对象存储的弹性、低延迟缓存的响应性以及现代服务网格的可操作性，所有这些都集成在一个单一平台上。系统使用 Kubernetes 清单和自动部署，动态范围分片与预分割以缓解热点问题，以及命名空间级别的配额和仪表板以提高成本透明度。调度器（Dispatcher）层是无状态的，并且可以水平扩展，能够路由客户端 API 调用，处理重试，并支持双重写入和影子读取模式以促进迁移。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">写入首先会被持久化到 Kafka 中以确保持久性，下游的重放器（Replayer）和写入调度器（Write Dispatcher）组件按顺序将它们应用到后端数据库。批量加载会继续通过 Airbnb 的数据仓库来使用 Airflow 作业和 S3 暂存，保留了合并或替换的语义。工程团队还引入了一个拓扑感知的过期服务，将数据命名空间分片成基于范围的子任务，由多个工作者并发处理。过期记录会基于调度进行并行删除，以限制对实时查询的影响，而写入密集型表使用最大版本限制和有针对性的删除。根据团队的说法，这些增强功能在保持 v1 保留功能的同时，提高了效率、透明度和可扩展性。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-imgfileid=\"503777546\" data-ratio=\"0.36018518518518516\" style=\"width: 100%;\" data-type=\"jpeg\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=b862a517&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FYriaiaJPb26VMDc7p60CCztIX5vWUZM9C2de351p7kleelo4IL9Lq32afKDJZRsqkylDmGpzbYoian8gOGFO1hOGw%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">Mussel V2 架构（图片来源：Airbnb 工程博客）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">根据 Airbnb 的工程团队的说法，从 v1 迁移到 v2 带来了重大挑战。团队使用了具有表级别粒度的蓝绿方法、持续验证和回退机制。由于 v1 缺乏原生变更数据捕获或表快照，表通过备份和抽样数据引导到 v2 以计划预分割。在引导摄取和验证校验和之后，再应用滞后的 Kafka 事件，并启用双重写入。在切换过程中，读取逐渐转移到 v2，而影子流量监控一致性，如果错误率激增则回退到 v1。Kafka 在整个迁移过程中充当公共日志。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-imgfileid=\"503777548\" data-ratio=\"0.549074074074074\" style=\"width: 100%;\" data-type=\"jpeg\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=ef0eac2c&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FYriaiaJPb26VMDc7p60CCztIX5vWUZM9C29DmYvF73yy0NfDHEicbegk7oib2Peuibzt5C57q87GJiciclH8VRSEAIaQw%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">从 Mussel V1 到 V2 的数据迁移管道（图片来源：Airbnb 工程博客）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Airbnb 的工程师报告说，从 最终一致性 后端迁移到 强一致性 后端涉及到运维的复杂性，包括写入去重和控制重试。他们对查询执行和工作负载分配进行了调整，而 Kafka 充当持久化日志。每个表的暂存、自动回退和监控使得在没有停机的情况下迁移了超过 1PB 的数据。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Airbnb’s Mussel V2: Next-Gen Key Value Storage to Unify Streaming and Bulk Ingestion(<a href=\"https://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/)\" target=\"_blank\">https://www.infoq.com/news/2025/10/airbnb-nextgen-kv-storage-mussel/)</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Airbnb 重构其键值存储系统 Mussel V2，通过统一流批处理和 Kubernetes 原生控制平面，实现了高性能、高扩展性与简化运维。",
+  "oneSentenceSummary": "Airbnb 重构其键值存储系统 Mussel V2，通过统一流批处理和 Kubernetes 原生控制平面，实现了高性能、高扩展性与简化运维。",
+  "summary": "文章详细介绍了 Airbnb 对其内部键值存储系统 Mussel 进行彻底重构，推出了 Mussel V2。旧版 Mussel V1 因静态哈希分区、独立的流批处理路径和高运维开销等局限性，已无法满足日益增长的数据量和产品集成需求。Mussel V2 通过创新性地结合 NewSQL 后端与 Kubernetes 原生控制平面，成功统一了流式和批量数据摄取，并大幅简化了运维，实现了对象存储般的弹性、低延迟缓存般的响应性以及现代服务网格般的可操作性。新系统支持动态范围分片、Kafka 持久化写入以及拓扑感知的过期服务。文章还深入阐述了从 V1 到 V2 的复杂迁移过程，包括采用蓝绿部署、持续验证、双重写入和影子读取等策略，最终成功在不中断服务的情况下迁移了超过 1PB 的数据。值得强调的是，此次迁移还涉及从最终一致性后端向强一致性后端的重要转变，代表了系统能力和数据可靠性的显著提升。Mussel V2 实现了每秒超过 10 万次写入和低于 25 毫秒的读取延迟，显著提升了系统的效率、透明度和可扩展性，使团队能更专注于产品创新。",
+  "mainPoints": [
+    {
+      "point": "统一流批处理是现代大规模数据基础设施的关键优化方向。",
+      "explanation": "Mussel V2 通过结合 NewSQL 后端和 Kubernetes 控制平面，有效解决了传统系统流批分离带来的运维复杂性和数据一致性挑战，提升了数据处理效率和一致性。"
+    },
+    {
+      "point": "Kubernetes 和云原生技术是构建高性能分布式系统的重要基石。",
+      "explanation": "Mussel V2 利用 Kubernetes 实现了动态分片、自动部署和弹性伸缩，极大简化了键值存储的运维管理，提升了系统可用性和资源利用率。"
+    },
+    {
+      "point": "复杂系统迁移需严谨策略与工具支撑，确保无缝切换。",
+      "explanation": "Airbnb 采用蓝绿部署、双重写入、影子读取和 Kafka 作为公共日志等组合策略，确保了从旧系统到新系统平滑、无停机的 1PB 数据迁移，为业界提供了宝贵的实践经验。"
+    },
+    {
+      "point": "从最终一致性到强一致性的转变，是分布式键值存储系统提升数据可靠性和业务一致性的重要里程碑。",
+      "explanation": "Mussel V2 从 V1 的最终一致性后端迁移到强一致性后端，通过解决写入去重和控制重试等运维复杂性，显著增强了数据的一致性保障，这对依赖高数据准确性的业务至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "新系统能够维持每秒超过 100，000 次流式写入，支持超过 100TB 的表，p99 读取延迟在 25 毫秒以下，并且能够批量摄取数十 TB 的数据，使调用团队能够专注于产品创新而不是管理数据管道。",
+    "Mussel v2 通过将 NewSQL 后端与 Kubernetes 原生控制平面结合，解决了这些限制，提供了对象存储的弹性、低延迟缓存的响应性以及现代服务网格的可操作性，所有这些都集成在一个单一平台上。",
+    "Kafka 在整个迁移过程中充当公共日志。",
+    "从 最终一致性 后端迁移到 强一致性 后端涉及到运维的复杂性，包括写入去重和控制重试。"
+  ],
+  "tags": [
+    "架构设计",
+    "数据基础设施",
+    "键值存储",
+    "NewSQL",
+    "分布式系统"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1103,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761963360000,
+  "publishDateStr": "2025-11-01",
+  "publishDateTimeStr": "2025-11-01 02:16:00"
+}

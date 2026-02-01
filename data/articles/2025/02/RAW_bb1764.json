@@ -1,0 +1,57 @@
+{
+  "id": "RAW_bb1764",
+  "title": "Meta 新视频生成框架拿捏倒立杂技，双人舞也能完美同步！运动一致性暴增近 20%，可无缝集成 DiT 模型",
+  "url": "https://www.qbitai.com/2025/02/252312.html",
+  "date": "2025-02-10 04:28:26",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p>克雷西 发自 凹非寺<br>\n     量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>针对视频生成中的运动一致性难题，Meta GenAI团队提出了一个全新框架<strong>VideoJAM</strong>。</p>\n  <p>VideoJAM基于主流的DiT路线，但和Sora等纯DiT模型相比，动态效果直接拉满：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a488121b-8025-4cd5-f8bf-e89970b54d00/public\" alt=\"图片\" data-imgfileid=\"100292174\" data-ratio=\"0.6125\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a4469a01-d6db-427c-7504-39475e242500/public\" data-type=\"gif\" data-w=\"640\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"1\" data-order=\"0\" data-fail=\"0\"></p>\n  <p>哪怕变化又大又迅速、动作又复杂的舞蹈，也看起来像真的一样，而且还是两个人同步：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f9d8c7f7-7f4c-422e-4287-d1c06cd46100/public\" alt=\"图片\" data-imgfileid=\"100292175\" data-ratio=\"0.9927797833935018\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d6e0a5a9-5c8a-4882-f0b4-96b70c00fe00/public\" data-type=\"gif\" data-w=\"554\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"2\" data-order=\"1\" data-fail=\"0\"></p>\n  <p>像倒立这样的操作，同样可以轻松驾驭：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6df37805-bfe8-4baa-ef2d-c03e5226c700/public\" alt=\"图片\" data-imgfileid=\"100292176\" data-ratio=\"0.5138004246284501\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/29136f04-6076-45b1-b446-2fd67d1f9f00/public\" data-type=\"gif\" data-w=\"942\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"3\" data-order=\"2\" data-fail=\"0\"></p>\n  <p>而且不需要额外数据或缩放，就能<strong>无缝集成到不同规模的DiT模型</strong>当中，带来运动效果的提升。</p>\n  <p>有网友表示，第一眼看上去就和真的一样，也许到今年年底，我们看不到区别了。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4b2af7f8-05fa-4427-1258-3abc2409ab00/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100292172\" data-ratio=\"0.29074074074074074\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9262ed15-56ee-4bfe-98b0-5b57a8a8f300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"4\" data-fail=\"0\"></p>\n  <h2>运动效果超越Sora、Gen3</h2>\n  <p>VideoJAM在处理运动场景时，不仅视觉上效果更好，也更加贴合物理规律。</p>\n  <p>比如吹灭蜡烛时火苗的晃动，以及渐进式的熄灭过程，连燃烧产生的白烟也没有落下：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cb4663dc-0b4d-482d-6ea3-c06f41b73a00/public\" alt=\"图片\" data-imgfileid=\"100292173\" data-ratio=\"1.054054054054054\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/30710148-2f02-4bf2-d6b4-a08a9f69a200/public\" data-type=\"gif\" data-w=\"444\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"5\" data-order=\"3\" data-fail=\"0\"></p>\n  <p>写书法时毛笔的运动处理得也很精细，并且做到了笔迹和纸上的字迹同步（虽然不知道写的是什么）：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/4d4c944f-02a7-4d31-eae9-936ac7606300/public\" alt=\"图片\" data-imgfileid=\"100292179\" data-ratio=\"0.9956521739130435\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/58bd615c-f9a2-4a82-f535-62cbd67ba500/public\" data-type=\"gif\" data-w=\"460\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"6\" data-order=\"4\" data-fail=\"0\"></p>\n  <p>还有用手捏史莱姆时的形状变化，以及内部产生的流体效果，连手松开时的粘连效果也体现了出来：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/49699cd8-b826-4924-ccfd-edfe900a2400/public\" alt=\"图片\" data-imgfileid=\"100292181\" data-ratio=\"0.9956521739130435\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bdd2af6a-6a65-4cb4-ea19-5c1d4d049a00/public\" data-type=\"gif\" data-w=\"460\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"7\" data-order=\"5\" data-fail=\"0\"></p>\n  <p>甚至是三个球来回抛的杂技表演，也能很好地体现出抛物线轨迹：</p>\n  <p><img class=\"rich_pages wxw-img __bg_gif\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/72c961c8-324c-4a5b-85f4-89531eb55c00/public\" alt=\"图片\" data-imgfileid=\"100292180\" data-ratio=\"0.9956521739130435\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/677e07f5-5487-44d0-e788-7639f1aa6400/public\" data-type=\"gif\" data-w=\"460\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"8\" data-order=\"6\" data-fail=\"0\"></p>\n  <p>另外，作者也针对文本/外观/运动一致性、视频质量等指标，在4B和30B的DiT模型上分别运用VideoJAM进行了评估，并与主流视频生成模型进行了对比。</p>\n  <p>结果在4B和30B规模下，相比于原始的DiT模型，运动质量从78.3和88.1，分别提升到了93.7和92.4，提升比例分别为19.67%和4.88%。</p>\n  <p>并且应用VideoJAM后，运动质量也超过了Gen3、Sora等其他对比模型。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cad7be4a-c812-4451-87f9-fe8252c0ce00/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100292177\" data-ratio=\"0.2796296296296296\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/34d32204-ef33-455e-c21d-559a24870400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"9\" data-fail=\"0\"></p>\n  <p>那么，VideoJAM是如何做到的呢？</p>\n  <h2>训练中引入运动信息</h2>\n  <p>在训练和推理阶段，VideoJAM针对经典的DiT架构都进行了一定补充。</p>\n  <p>具体来说，在训练阶段，VideoJAM采用了<strong>联合外观-运动表示</strong>（Joint Appearance-Motion Representation）。</p>\n  <p>通过在模型中引入额外的运动预测任务，让模型在生成视频的同时也学习如何预测对应的运动。</p>\n  <p>为实现联合外观-运动表示，VideoJAM对现有视频生成模型进行了两处关键性改动，添加了输入和输出两个线性投影层。</p>\n  <ul class=\"list-paddingleft-1\">\n   <li><strong>输入投影层</strong>将外观特征（视频帧的表示）和运动特征拼接后映射到模型的隐藏空间，形成一个联合的潜在表示，这个潜在表示融合了静态外观信息和动态运动信息。</li>\n   <li><strong>输出投影层</strong>则从模型的联合潜在表示中，分别解码出视频的外观预测和运动预测，其中外观预测用于生成最终的视频帧，运动预测则用来评估模型对时间一致性的理解。</li>\n  </ul>\n  <p>在这一过程当中，运动是用<strong>光</strong><strong>流</strong>（Optical Flow），也就是视频帧之间像素的位移的形式进行表示的。</p>\n  <p>处理时，VideoJAM将光流转换成RGB格式，像素运动方向被映射为色调，强度则被映射为亮度或透明度，使其可以像普通视频一样被模型处理。</p>\n  <p>这种处理方式无需额外训练复杂的运动编码器，且兼容性强，可以方便地嵌入到现有的视频生成模型中。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b3fbcc1b-ec73-4724-8982-70eb98b7dd00/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100292178\" data-ratio=\"0.46111111111111114\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/60de7bfa-281b-45bc-32c4-89c829701900/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"10\" data-fail=\"0\"></p>\n  <p>到了推理阶段，VideoJAM采用了<strong>内部引导机制</strong>（Inner-Guidance Mechanism），进一步增强生成视频的运动一致性。</p>\n  <p>这种机制不依赖外部条件，而是使用模型自身在每个生成步骤中预测的运动信息来动态调整生成过程，可以实时捕捉生成视频的动态变化。</p>\n  <p>和其他扩散模型一样，生成视频的初始输入是随机噪声，模型首先对噪声进行处理，生成初步的视频帧和对应的运动预测。</p>\n  <p>生成过程中，模型会使用当前帧的运动预测作为指导信号，调整下一个时间步的生成方向。</p>\n  <p>这种反馈机制之下，模型不断审视自己生成的动作是否连贯，并在发现不一致时自动进行调整。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5daf1ce1-d471-4a03-46dc-80ea712e1300/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100292185\" data-ratio=\"0.8414376321353065\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7ba87532-f7a7-4d23-4305-03675fb3af00/public\" data-type=\"png\" data-w=\"946\" data-original-style=\"margin-right: auto;margin-left: auto;color: rgb(34, 34, 34);font-family: Arial;font-size: 16px;letter-spacing: 1px;word-spacing: 1px;text-align: center;\" data-index=\"11\" data-fail=\"0\"></p>\n  <p>具体到生成进程，可以分成两个阶段，内部引导主要应用在其中第一个：</p>\n  <ul class=\"list-paddingleft-1\">\n   <li>粗略阶段：在生成初期（大约前50%的步骤），重点关注大范围的运动连贯性，如整体方向和节奏。</li>\n   <li>细化阶段：在生成后期，转向优化细节，如肢体动作的微调和物体交互的物理合理性。</li>\n  </ul>\n  <p>消融实验表明，作者采用的光流表示和内部引导机制正是VideoJAM实现高运动一致性的关键。</p>\n  <p><img class=\"rich_pages wxw-img\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dc57f352-ad62-49e4-a9fa-9596e9213700/public\" alt=\"图片\" crossorigin=\"anonymous\" data-imgfileid=\"100292182\" data-ratio=\"0.5196078431372549\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/39c18fa6-b6d3-467d-02fe-4271ba3a3300/public\" data-type=\"png\" data-w=\"612\" data-original-style=\"text-align: center;margin-right: auto;margin-left: auto;\" data-index=\"12\" data-fail=\"0\"></p>\n  <p>论文地址：<br>\n    https://arxiv.org/abs/2502.02492<br>\n    项目主页：<br>\n    https://hila-chefer.github.io/videojam-paper.github.io/</p><!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Meta 提出的 VideoJAM 框架通过引入运动信息，显著提升了 DiT 模型生成视频的运动一致性，效果超越 Sora 和 Gen3。",
+  "oneSentenceSummary": "Meta 提出的 VideoJAM 框架通过引入运动信息，显著提升了 DiT 模型生成视频的运动一致性，效果超越 Sora 和 Gen3。",
+  "summary": "Meta GenAI 团队提出了 VideoJAM 框架，旨在解决视频生成中运动一致性问题。该框架基于 DiT 架构，通过联合外观 - 运动表示和内部引导机制，在训练和推理阶段都进行了优化。训练阶段，VideoJAM 通过引入运动预测任务，使模型学习预测运动信息。推理阶段，采用内部引导机制，利用模型自身预测的运动信息动态调整生成过程。实验结果表明，VideoJAM 在运动质量上超越了 Sora 和 Gen3 等模型，且可无缝集成到不同规模的 DiT 模型中。VideoJAM 的核心技术创新点在于其光流表示方法，无需额外训练复杂的运动编码器，且兼容性强，可以方便地嵌入到现有的视频生成模型中。",
+  "mainPoints": [
+    {
+      "point": "VideoJAM 通过联合外观 - 运动表示提升运动一致性",
+      "explanation": "在模型中引入额外的运动预测任务，让模型在生成视频的同时学习预测对应的运动，从而提升视频的运动一致性。"
+    },
+    {
+      "point": "内部引导机制增强生成视频的运动连贯性",
+      "explanation": "在推理阶段，利用模型自身预测的运动信息动态调整生成过程，使模型不断审视自己生成的动作是否连贯，并在发现不一致时自动调整。"
+    },
+    {
+      "point": "VideoJAM 可无缝集成到不同规模的 DiT 模型中",
+      "explanation": "不需要额外数据或缩放，VideoJAM 就能无缝集成到不同规模的 DiT 模型当中，为各种规模的 DiT 模型带来运动效果的提升。"
+    },
+    {
+      "point": "VideoJAM 在运动质量上超越了 Gen3、Sora 等其他对比模型",
+      "explanation": "实验结果表明，在 4B 和 30B 规模下，相比于原始的 DiT 模型，VideoJAM 的运动质量显著提升，并超过了 Gen3、Sora 等其他模型。"
+    }
+  ],
+  "keyQuotes": [
+    "VideoJAM 采用了联合外观 - 运动表示 (Joint Appearance-Motion Representation)。",
+    "处理时，VideoJAM 将光流转换成 RGB 格式，像素运动方向被映射为色调，强度则被映射为亮度或透明度，使其可以像普通视频一样被模型处理。",
+    "到了推理阶段，VideoJAM 采用了内部引导机制 (Inner-Guidance Mechanism)，进一步增强生成视频的运动一致性。"
+  ],
+  "tags": [
+    "视频生成",
+    "扩散模型",
+    "DiT 模型",
+    "运动一致性",
+    "Meta"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 89,
+  "wordCount": 1587,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1739161706000,
+  "publishDateStr": "2025-02-10",
+  "publishDateTimeStr": "2025-02-10 04:28:26"
+}

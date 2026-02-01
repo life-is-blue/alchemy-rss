@@ -1,0 +1,57 @@
+{
+  "id": "RAW_63c3918b",
+  "title": "开放响应",
+  "url": "https://simonwillison.net/2026/Jan/15/open-responses/#atom-everything",
+  "date": "2026-01-15 23:56:56",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://www.openresponses.org/\">Open Responses</a></strong> (<a href=\"https://twitter.com/reach_vb/status/2011863516852965565\" title=\"VB\">via</a>) This is the standardization effort I've most wanted in the world of LLMs: a vendor-neutral specification for the JSON API that clients can use to talk to hosted LLMs.</p>\n   <p>Open Responses aims to provide exactly that as a documented standard, derived from OpenAI's Responses API.</p>\n   <p>I was hoping for one based on their older Chat Completions API since so many other products have cloned the already, but basing it on Responses does make sense since that API was designed with the feature of more recent models - such as reasoning traces - baked into the design.</p>\n   <p>What's certainly notable is the list of launch partners. OpenRouter alone means we can expect to be able to use this protocol with almost every existing model, and Hugging Face, LM Studio, vLLM, Ollama and Vercel cover a huge portion of the common tools used to serve models.</p>\n   <p>For protocols like this I really want to see a comprehensive, language-independent conformance test site. Open Responses has a subset of that - the official repository includes <a href=\"https://github.com/openresponses/openresponses/blob/d0f23437b27845d5c3d0abaf5cb5c4a702f26b05/src/lib/compliance-tests.ts\">src/lib/compliance-tests.ts</a> which can be used to exercise a server implementation, and is available as a React app <a href=\"https://www.openresponses.org/compliance\">on the official site</a> that can be pointed at any implementation served via CORS.</p>\n   <p>What's missing is the equivalent for clients. I plan to spin up my own client library for this in Python and I'd really like to be able to run that against a conference suite designed to check that my client correctly handles all of the details.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9247/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍 Open Responses，一个面向 LLM 的新供应商中立 JSON API 标准，旨在通过广泛的行业支持和合规性测试来统一客户端-服务器通信。",
+  "oneSentenceSummary": "本文介绍 Open Responses，一个面向 LLM 的新供应商中立 JSON API 标准，旨在通过广泛的行业支持和合规性测试来统一客户端-服务器通信。",
+  "summary": "本文介绍了 Open Responses，一个用于与托管大型语言模型交互的新供应商中立 JSON API 规范。该规范源自 OpenAI 的 Responses API，旨在标准化客户端与 LLM 之间的通信协议，这是作者长期以来一直期待的功能。值得注意的是，OpenRouter、Hugging Face、LM Studio、vLLM、Ollama 和 Vercel 等关键合作伙伴都支持这一倡议，确保了广泛的采用。该标准包含了对新模型中推理追踪等特性的设计考虑。作者强调了针对服务器实现的现有合规性测试，并表示需要类似的客户端一致性测试工具，以确保正确处理规范中的复杂细节。",
+  "mainPoints": [
+    {
+      "point": "Open Responses 为 LLM 提供了一个供应商中立的 JSON API 标准，解决了互操作性的关键需求。",
+      "explanation": "该倡议旨在标准化客户端与托管 LLM 的通信方式，推广跨不同提供商和模型的统一方法，其源自 OpenAI 的 API。"
+    },
+    {
+      "point": "该标准得到了主要行业参与者的支持，确保了广泛的采用和实际效用。",
+      "explanation": "凭借 OpenRouter、Hugging Face 和 Vercel 等合作伙伴，Open Responses 有望成为访问各种 LLM 提供商和工具的广泛使用的协议。"
+    },
+    {
+      "point": "该规范融合了现代 LLM 特性，如推理追踪。",
+      "explanation": "通过将标准基于 OpenAI 的 'Responses API' 而非旧的 'Chat Completions API'，Open Responses 旨在支持新模型的先进能力。"
+    },
+    {
+      "point": "服务器实现的合规性测试已可用，但客户端测试仍处于起步阶段。",
+      "explanation": "现有工具允许服务器验证其是否符合 Open Responses 标准，但作者发现客户端库的全面一致性测试套件存在空白。"
+    }
+  ],
+  "keyQuotes": [
+    "这是我在 LLM 领域最希望看到的标准化努力：一个供应商中立的 JSON API 规范，客户端可以用它与托管的 LLM 对话。",
+    "Open Responses 旨在通过一个源自 OpenAI Responses API 的文档化标准来提供这一点。",
+    "值得注意的是启动合作伙伴的名单。仅 OpenRouter 就意味着我们可以预期能够将此协议用于几乎所有的现有模型，而 Hugging Face、LM Studio、vLLM、Ollama 和 Vercel 则覆盖了用于提供模型的常用工具的很大一部分。"
+  ],
+  "tags": [
+    "LLM",
+    "API 标准",
+    "互操作性",
+    "OpenAI",
+    "AI 开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 251,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768521416000,
+  "publishDateStr": "01-15",
+  "publishDateTimeStr": "2026-01-15 23:56:56"
+}

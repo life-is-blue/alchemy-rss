@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d9bb98",
+  "title": "生成与理解相互促进！华科字节提出 Liquid，揭示统一多模态模型尺度规律！",
+  "url": "https://www.jiqizhixin.com/articles/2025-03-04",
+  "date": "2025-03-04 01:18:16",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <blockquote data-author-name=\"\" data-content-utf8-length=\"166\" data-source-title=\"\" data-type=\"2\" data-url=\"\"><section><p>AIxiv专栏是机器之心发布学术、技术内容的栏目。过去数年，机器之心AIxiv专栏接收报道了2000多篇内容，覆盖全球各大高校与企业的顶级实验室，有效促进了学术交流与传播。如果您有优秀的工作想要分享，欢迎投稿或者联系报道。投稿邮箱：liyazhou@jiqizhixin.com；zhaoyunfeng@jiqizhixin.com</p>\n   </section>\n  </blockquote>\n  <p>近年来大语言模型（LLM）的迅猛发展正推动人工智能迈向多模态融合的新纪元。然而，现有主流多模态大模型（MLLM）依赖复杂的外部视觉模块（如 CLIP 或扩散模型），导致系统臃肿、扩展受限，成为跨模态智能进化的核心瓶颈。</p>\n  <p>为此，<strong>华中科技大学、字节跳动与香港大学</strong>联合团队提出了极简的统一多模态生成框架 ——Liquid。Liquid 摒弃了传统的外部视觉模块，转而采用 VQGAN 作为图像分词器，将图像编码为离散的视觉 token，使其与文本 token 共享同一词表空间，使 LLM 无需任何结构修改即可 “原生” 掌握视觉生成与理解能力，彻底摆脱对外部视觉组件的依赖。研究团队首次揭示了<strong>统一表征下的多模态能力遵循 LLM 的尺度定律</strong>，且视觉生成与理解任务可<strong>双向互促</strong>，这一发现为通用多模态智能的架构设计提供了新的范式。</p>\n  <p><img data-imgfileid=\"503473897\" data-ratio=\"0.4305555555555556\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/70964695-f127-48b8-c14a-2dd75ffb7500/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/de4796be-d93a-4288-bddd-76bc00971983/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <ul>\n   <li>\n    <p>论文标题：Liquid: Language Models are Scalable and Unified &nbsp;Multi-modal Generators</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2412.04332</p></li>\n   <li>\n    <p>主页链接：https://foundationvision.github.io/Liquid/</p></li>\n  </ul>\n  <p><strong>背景与贡献</strong></p>\n  <p>传统多模态大模型（MLLM）普遍依赖外部视觉模块（如 CLIP、扩散模型）作为编码器或解码器，需通过特征投影层对齐视觉与文本特征，导致架构复杂化。近期一些研究尝试采用 VQVAE 替代传统模块，通过将原始像素映射为离散编码，实现图像与文本的统一表征。离散视觉 token 可视为一种新 “语言”，将其扩展至 LLM 的词表中，使得视觉与文本能够以相同的 “下一 token 预测” 范式联合建模，无缝融合多模态信息。尽管早期工作（如 LWM、Chameleon）验证了该范式的潜力，但其从头训练的方式计算成本高昂，而后续工作引入扩散模型（如 Transfusion、Show-o）又导致训练目标割裂，制约了模型效率与灵活性。</p>\n  <p>本文提出 Liquid，一种将现有 LLM 直接扩展为统一多模态大模型的框架。Liquid 通过 VQVAE 将图像编码为离散视觉 token，使图像与文本共享同一词汇空间，无需修改 LLM 结构即可实现视觉理解与生成。研究发现，现有 LLM 因其强大的语义理解与生成能力，是理想的多模态扩展起点。相比从头训练的 Chameleon，Liquid 节省 <strong>100 倍训练成本</strong>，同时实现更强的多模态能力。团队进一步探索了从 0.5B 到 32B 六种不同规模 LLM 的扩展性能，覆盖多种模型家族，并揭示三大核心特性：</p>\n  <p>a. 尺度规律统一性：视觉生成任务中验证损失与生成质量遵循与语言任务一致的缩放规律；</p>\n  <p>b. 规模化解耦效应：多模态训练下受损的语言能力随模型规模扩大而逐渐恢复，表明大模型具备多任务无缝处理能力；</p>\n  <p>c. 跨任务互惠性：视觉理解与生成任务通过共享表征空间实现双向促进，验证统一建模的联合优化优势。</p>\n  <p><strong>极简多模态架构 Liquid</strong></p>\n  <p>Liquid 采用了将图像与文本以完全相同的方式对待的一致处理框架。基于 VQVAE 的图像分词器将输入图像转换为离散编码，这些编码与文本编码共享相同的词汇表和嵌入空间。图像 token 与文本 token 混合后，输入到 LLM 中，并以 “next token prediction” 的形式进行训练。</p>\n  <p><img data-imgfileid=\"503473898\" data-ratio=\"0.29907407407407405\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b8a2c0f5-b588-4c80-ffb1-70558be5d400/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/e527ac82-03e8-4035-8493-e448a49d789e/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>图像分词器：对于图像分词器采用与 Chameleon 相同的 VQGAN 作为图像分词器，将 512×512 的图像编码为 1024 个离散 token，嵌入到大小为 8192 的码本中。这些离散图像 token 被附加到 BPE 分词器生成的文本码本中，扩展了 LLM 的词表，使其语言空间升级为包含视觉与语言元素的多模态空间。</p>\n  <p>架构设计：Liquid 基于现有 LLM 构建，本文以 GEMMA-7B 为基础模型，验证其在多模态理解、图像生成及纯文本任务中的性能。通过对 LLAMA-3、GEMMA-2 和 Qwen2.5 系列模型（规模从 0.5B 到 32B）的缩放实验，全面研究了其多模态扩展行为。Liquid 未对 LLM 结构进行任何修改，仅添加了 8192 个可学习的图像 token 嵌入，保留了原始的 “下一 token 预测” 训练目标及交叉熵损失。</p>\n  <p>数据准备：为保留现有 LLM 的语言能力，从公开数据集中采样了 30M 文本数据（包括 DCLM、SlimPajama 和 Starcoderdata），总计约 600 亿文本 token。对于图文对数据，使用 JourneyDB 和内部图文数据，构建了 30M 高质量图像数据，总计 300 亿图像 token。所有数据用于混合多模态预训练，使模型快速获得图像生成能力的同时保留语言能力。此外，其中 20% 的图文数据用于训练图像描述任务，以增强视觉理解能力。</p>\n  <p>训练流程：使用总计 60M 数据进行继续训练。对于多模态训练数据，输入格式定义为：[bos] {text token} [boi] {image token} [eoi][eos] ，其中 [bos] 和 [eos] 为原始文本分词器的序列开始与结束标记，[boi] 和 [eoi] 为新增的图像 token 起始与结束标记。在缩放实验中，针对每个模型规模，分别使用 30M 纯文本数据、30M 文本到图像数据及 60M 混合数据训练三个独立版本，并评估其在一系列任务中的性能。</p>\n  <p><strong>统一多模态模型尺度规律探索</strong></p>\n  <p>文章探索了规模从 0.5B 到 32B 的 6 种 LLM 在混合模态训练后的视觉生成性能。随着模型规模和训练迭代次数的增加，验证损失平稳下降，而 token 准确率和 VQA 分数持续上升。在相同的训练 FLOPs 下，较小模型能够更快地达到较低的验证损失和较高的 VQA 分数，但较大模型最终能够实现更高的评估指标。这可能是因为较小模型能够快速完成更多训练步骤，从而更快地适应视觉信息，但其上限较低，难以实现高质量的视觉生成结果。</p>\n  <p><img data-imgfileid=\"503473901\" data-ratio=\"0.5574074074074075\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/641d5e80-1688-44da-d084-19a71ab33300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/b18d9994-009e-4790-90b8-a0ffa254c42e/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>为了探究视觉生成能力是否影响语言能力，文章比较了在不同规模下，使用 30M 纯语言数据训练和 60M 多模态混合数据训练的模型在语言任务上的表现。较小模型在混合任务训练时存在权衡现象：多模态混合训练后 1B 模型语言任务下降 8.8%，7B 模型下降 1.9%。然而，随着模型规模的增加，这种权衡逐渐消失，32B 模型实现几乎<strong>零冲突共生</strong>（语言能力保留率 99.2%），这表明较大模型具备足够的能力，能够同时处理视觉和语言空间的生成任务。</p>\n  <p><img data-imgfileid=\"503473902\" data-ratio=\"0.3212962962962963\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d0aae9a0-dbf3-45bf-4c18-a726a2cd1300/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/3683477a-35f2-4f00-9759-dd58fe43effb/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><strong>理解与生成相互促进</strong></p>\n  <p>为探究 Liquid 统一范式中理解与生成任务的交互关系，研究团队设计了一组消融实验：以 10M 纯文本 + 10M 视觉生成 + 10M 视觉理解数据（总计 30M）作为基线，分别额外增加 10M 生成或理解数据进行对比训练。实验发现，<strong>增加理解数据可使生成任务性能显著提升，反之增加生成数据亦能增强理解能力。</strong>这一突破性现象表明，当视觉理解与生成共享统一模态空间时，两者的优化目标具备<strong>同源性</strong> —— 均依赖语言与视觉信息的深度对齐与交互，从而形成跨任务协同效应。该发现不仅验证了多模态任务联合优化的可行性，更揭示了 LLM 作为通用生成器的本质潜力：<strong>单一模态空间下的跨任务互惠可大幅降低训练成本，推动多模态能力高效进化。</strong></p>\n  <p><img data-imgfileid=\"503473903\" data-ratio=\"0.13796296296296295\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/883474a1-ddac-46c6-e859-2f2ca8d13e00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/116d3ca6-72c7-4ae8-bf08-594161518f65/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><strong>模型性能</strong></p>\n  <p><strong>视觉生成实验效果</strong></p>\n  <p>在 GenAI-Bench 评测中，Liquid 在基础与高级文本提示下的综合得分均超越所有自回归模型，其生成的图像与文本语义一致性显著领先。更值得关注的是，Liquid 以远少于扩散模型的数据量（如 SD v2.1、SD-XL），实现了与之匹敌甚至更优的性能，验证了基于 LLM 的跨模态学习在语义关联捕捉与训练效率上的双重优势。</p>\n  <p><img data-imgfileid=\"503473904\" data-ratio=\"0.2064814814814815\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5b398bd8-59f9-47c2-1ec1-3117b64c1100/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/c359dd4e-7ac4-41af-9cac-45cbf50718e0/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>在 MJHQ-30K 评测中，Liquid 以 FID=5.47 刷新自回归模型上限，不仅大幅领先同类方法，更超越多数知名扩散模型（仅次 Playground v2.5），证明 LLM 在图像美学质量上可与顶尖生成模型抗衡。</p>\n  <p><strong>语言能力保留</strong></p>\n  <p>在一些经典的语言能力评估 benchmark 上，Liquid 在大多数任务中超越了成熟的 LLAMA2 和经过大规模混合预训练的多模态语言模型 Chameleon，展示了其未退化的语言能力。与 Chameleon 相比，Liquid 基于已具备优秀语言能力的丰富现有 LLM 进行训练，在扩展视觉生成与理解能力的同时，成功保留了语言能力，证明 Liquid 可以将视觉生成与理解能力扩展到任何结构和规模的 LLM 中。</p>\n  <p><img data-imgfileid=\"503473905\" data-ratio=\"0.24259259259259258\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/3b6ebc8f-7e34-40ab-6cbc-ae09c24cf500/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/8efe8e8e-c953-4f63-be5c-66ed4097b847/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><strong>视觉理解能力</strong></p>\n  <p>在视觉理解任务中，Liquid 性能显著超越采用标准 VQVAE 的同类模型（如 LWM、Chameleon、Show-o）。尽管其表现仍略逊于依赖连续视觉 token 的主流模型（如 LLaVA），但研究团队通过引入 Unitok 图像分词器（融入图文特征对齐训练，* 标结果），使模型理解能力大幅提升，逼近 LLaVA 水平。这验证了基于离散编码的多模态大模型具有摆脱 CLIP 编码器的潜力。</p>\n  <p><img data-imgfileid=\"503473906\" data-ratio=\"0.37777777777777777\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/13c2a484-4b7e-480d-7ab4-b796b8c3fe00/public\" data-type=\"png\" data-w=\"1080\" data-original-style=\"\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/e3cebf21-7303-4bdc-91b9-abd01a306d0f/640.png\" alt=\"图片\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><strong>总结</strong></p>\n  <p>综上所述，本文提出了 Liquid，一种极简的统一多模态生成与理解任务框架。与依赖外部视觉模块的传统方法相比，Liquid 通过视觉离散编码直接复用现有大语言模型处理视觉信息，实现了图像生成与理解的无缝融合。实验验证了语言模型在视觉生成任务中可以在保留语言能力的情况下媲美主流扩散模型，并且发现多模态任务的统一带来的语言和视觉能力的削弱，会随着模型规模的增加而逐渐消失。此外，原文还揭示了多模态任务间的互惠关系和更多的尺度现象，为大规模预训练提供了新的思路。</p>\n \n",
+  "aiSummary": "华科字节提出 Liquid 框架，通过统一多模态表征，使 LLM 原生具备视觉生成与理解能力，揭示了多模态能力遵循 LLM 的尺度定律，且视觉生成与理解任务可双向互促。",
+  "oneSentenceSummary": "华科字节提出 Liquid 框架，通过统一多模态表征，使 LLM 原生具备视觉生成与理解能力，揭示了多模态能力遵循 LLM 的尺度定律，且视觉生成与理解任务可双向互促。",
+  "summary": "华中科技大学、字节跳动与香港大学联合团队提出了 Liquid，一种极简的统一多模态生成框架。Liquid 采用 VQGAN 作为图像分词器，将图像编码为离散的视觉 token，使其与文本 token 共享同一词表空间，使 LLM 无需任何结构修改即可“原生”掌握视觉生成与理解能力，摆脱对外部视觉组件的依赖。研究揭示了统一表征下的多模态能力遵循 LLM 的尺度定律，且视觉生成与理解任务可双向互促，为通用多模态智能的架构设计提供了新的范式。实验表明，Liquid 在视觉生成、语言能力保留和视觉理解能力方面均表现出色，在多个 benchmark 上取得了领先或媲美顶尖模型的性能，且多模态任务的统一带来的能力削弱会随着模型规模的增加而逐渐消失。",
+  "mainPoints": [
+    {
+      "point": "Liquid 框架通过统一模态空间，使 LLM 原生具备视觉生成与理解能力。",
+      "explanation": "Liquid 采用 VQGAN 将图像编码为离散 token，与文本 token 共享词表，无需修改 LLM 结构即可实现视觉理解与生成。"
+    },
+    {
+      "point": "统一表征下的多模态能力遵循 LLM 的尺度定律。",
+      "explanation": "实验表明，随着模型规模的增加，多模态训练下受损的语言能力逐渐恢复，大型模型具备多任务无缝处理能力。"
+    },
+    {
+      "point": "视觉理解与生成任务可通过共享表征空间实现双向促进。",
+      "explanation": "增加理解数据可提升生成任务性能，反之亦然，表明视觉理解与生成共享统一模态空间时，优化目标具备同源性。"
+    }
+  ],
+  "keyQuotes": [
+    "统一表征下的多模态能力遵循 LLM 的尺度定律",
+    "视觉生成与理解任务可双向互促",
+    "单一模态空间下的跨任务互惠可大幅降低训练成本，推动多模态能力高效进化"
+  ],
+  "tags": [
+    "多模态",
+    "多模态学习",
+    "大语言模型",
+    "图像生成",
+    "视觉理解"
+  ],
+  "topicTag": "other",
+  "readTime": 14,
+  "score": 91,
+  "wordCount": 3414,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1741051096000,
+  "publishDateStr": "2025-03-04",
+  "publishDateTimeStr": "2025-03-04 01:18:16"
+}

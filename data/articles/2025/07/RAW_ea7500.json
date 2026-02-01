@@ -1,0 +1,63 @@
+{
+  "id": "RAW_ea7500",
+  "title": "在 Vercel 的 5 年，我学到了 5 件事",
+  "url": "https://baoyu.io/translations/5-things-i-learned-from-5-years-at-vercel",
+  "date": "2025-07-11 03:22:13",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "\n \n \n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n   <div>\n    <div class=\"my-2 text-sm text-muted-foreground\">\n     <span class=\"whitespace-nowrap\">原文：</span><a target=\"_blank\" class=\"font-medium underline underline-offset-4\" href=\"https://leerob.com/vercel\">5 things I learned from 5 years at Vercel</a>\n    </div>\n   </div>\n  </div>\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"qmqgvk6xlg\">作者：Lee Robinson</p>\n   <p data-id=\"s5ectl1ys4\">在 Vercel 工作了整整 5 年后，我终于度过了在这里的最后一周。这真是一段难忘的旅程！</p>\n   <p data-id=\"9fd11ak18p\">2020 年我刚加入时，公司只有 30 人，年收入刚突破 100 万美元。而现在，Vercel 已经发展到了 650 人，年收入超过了 2 亿美元。在这期间，我也从普通员工一路成长为副总裁（VP），负责过开发者关系、产品、社区、文档等多个方向。</p>\n   <p data-id=\"pgfa38xzzm\">以下是我在这段经历中学到的一些重要经验与感悟，希望对你有所帮助。文中还附有一些珍贵的幕后照片。</p>\n   <h2 data-id=\"1ow1xm4tmv\" id=\"1ow1xm4tmv\" data-toc-id=\"1ow1xm4tmv\">1. 全力以赴地工作，然后安心回家</h2>\n   <p data-id=\"9t0izagbk8\">我曾在蜜月旅行的海滩上，回复了一条 Next.js 的推特。</p>\n   <p data-id=\"jcjo03tymg\">你可能觉得这太疯狂了。没错，确实是很疯狂。</p>\n   <p data-id=\"j5et2gvbmn\">Vercel 是我加入的第一家创业公司。加入之前，我一直奉行下班即关机的理念。不过因为热爱技术，我经常会利用<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://preview.redd.it/b4t68rawblh21.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=158fb7db9f77c1c7e74a911ab5ed488843951793\">晚上和周末</a>来写代码、逛论坛、学习新工具。</p>\n   <p data-id=\"gbi1rx0w2x\">来到 Vercel 后，我发现自己的兴趣爱好与工作融为了一体，我非常享受这种感觉。但热情如果没有边界，最终必然会导致<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/leerob/status/1829363642317283430\">倦怠</a>。</p>\n   <p data-id=\"yjvvfbpek1\">如果你决定全力以赴工作，也要懂得如何真正「下班」。而真正能放心下班的前提，是在公司里建立一套良好的支持系统，让引擎持续运转。</p>\n   <p data-id=\"eptxlgyjcf\">那天我为什么要在沙滩上回推特？因为当时我还没有培养起团队的自主性。我喜欢亲自帮助开发者，喜欢亲自解决客户问题，所以舍不得把「乐高积木」<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups/\">交出去</a>。</p>\n   <p data-id=\"5d3eiqwjmh\">但其实，两者并不冲突。你可以打造自动驾驶的汽车，偶尔也可以自己驾驶一下法拉利。我开始花更多的时间招募人才，逐渐建立起了一套让我放心休假的系统。</p>\n   <p data-id=\"dpmmfcit0l\">如今，我仍然希望自己<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://x.com/leerob/status/1841226051554308229\">全力以赴</a>，快速响应、输出高质量内容。但当我离线时，就彻底放下工作，全心全意陪伴妻子和女儿。虽然我偶尔也会犯错，但寻找工作与生活的平衡本来就是一个终身追求。</p>\n   <p data-id=\"ol958du0rt\"><strong>关键点：</strong><br>\n     你可以同时做到努力工作与设置清晰的界限。</p>\n   <h2 data-id=\"617wqnyil9\" id=\"617wqnyil9\" data-toc-id=\"617wqnyil9\">2. 一切事情都能更快一些</h2>\n   <p data-id=\"b0n7rdxqa9\">作为领导者，你的职责是推动速度。</p>\n   <p data-id=\"qpgesa6fuf\">以前，我不敢催促团队，因为害怕被讨厌。但经历过被领导催促并看到了成果后，我意识到被催促远比平庸和停滞要好得多。</p>\n   <p data-id=\"zrei713lpf\">推动节奏并不意味着变成一个讨厌的上司。理想状态是：团队热爱他们所做的事，同时也能快速交付。团队想要的是对自己工作强烈的自主性和长久的掌控感。</p>\n   <p data-id=\"oqizpze7a6\">如果你对慢节奏妥协，那么事情永远都会慢。激进的截止日期能暴露隐藏的问题，让你聚焦真正重要的东西。领导者的任务，就是推动这些讨论，并帮助团队明确聚焦点。</p>\n   <p data-id=\"fm1d25p2c3\">我的目标是建立一种文化：设定积极的截止日期，同时允许偶尔延期。如果没有截止日期，事情可能需要 3 个月；但如果你设定了两周，即使最后用了一个月，你依然能比原计划快 3 倍推出第一个版本。</p>\n   <p data-id=\"fvs7e8g58n\">我在 Vercel 多次见证过这种神奇的压缩截止日期的效果。往往一句话就能激活潜力：“如果我们要下周发布，这需要怎么做？”优秀的开发者总能想办法让效率提升十倍。</p>\n   <p data-id=\"gb7tillyao\"><strong>关键点：</strong><br>\n     你最大的优势，就是快速交付、倾听反馈并持续迭代。</p>\n   <h2 data-id=\"j5b8kl0ayk\" id=\"j5b8kl0ayk\" data-toc-id=\"j5b8kl0ayk\">3. 要么规模化，要么死在路上</h2>\n   <p data-id=\"ckt8mr0np5\">CEO 每天要处理 1000 个线程，他们没有时间不断检查每个线程。他们需要有领导力的人能自主地<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://boz.com/articles/ctfoigt\">拥有线程</a>。</p>\n   <p data-id=\"x0iu6fj454\">所谓<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://allocatormindset.com/single-threaded-leadership/\">掌控</a>，并不是亲力亲为，而是对结果负责，无法完成时，及时沟通重设预期。要实现这一点，你必须不断提高招聘能力。</p>\n   <p data-id=\"6q96w9edrr\">你必须随时招聘。如果不及时扩大团队，你的顶尖人才迟早会被压垮。当招聘跟不上，你只能亲自补位，这并不好受。</p>\n   <p data-id=\"4u3d80wisr\">招聘只有两个答案：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://sive.rs/n\">要么极其满意，要么否决</a>。这意味着你要拒绝很多还不错但不是最优秀的候选人。为了吸引顶尖人才，有时你甚至需要用一些非传统的方法。</p>\n   <p data-id=\"90xhgdzwca\">公司快速扩张时，总有超出承受范围的任务。如果你忙得无法支持其他团队，那他们就会另寻方法。你必须打造一个能对正确的事情说 Yes，对其他一切说 No 的组织。</p>\n   <p data-id=\"0lkyl7vqe8\">有人表现未达预期时，必须快速行动。你希望建立的是一个以绩效为导向的文化。我有时能及时、有同理心地给出反馈，但有时也拖延过久，后者让我后悔不已。</p>\n   <p data-id=\"8uvx4zncrt\">延迟给出反馈，是在牺牲对方提升自我的机会来保护自己的感受。</p>\n   <p data-id=\"w8j89p26jr\"><strong>关键点：</strong><br>\n     通过招聘优秀人才来扩展你的影响力和团队规模。</p>\n   <h2 data-id=\"ag2tfyhwm6\" id=\"ag2tfyhwm6\" data-toc-id=\"ag2tfyhwm6\">4. 不要突然空降「指点江山」</h2>\n   <p data-id=\"inmgmtcnzt\">2022 年，我刚晋升为 VP 时，我们即将发布一款新产品。</p>\n   <p data-id=\"20xenm65vw\">我在最后一刻审查产品时，发现了很多问题，产生强烈的反对意见。但其实我之前并没有深入参与这项工作，完全不懂之前团队的讨论和决策依据，却想凭借自己的职位让大家听我的话。</p>\n   <p data-id=\"tlcxeo3ltj\">结果，团队所有人都生我气了！这种行为被形象地称为「Swoop and Poop」——突然空降做决定，留下烂摊子给别人收拾。</p>\n   <p data-id=\"yiphvz2ogj\">更好的做法是提前深入了解，建立信任，让团队理解并认同这个改变，而不是用职位压制。伟大的领导者在宣布决策前，会先建立好团队的共识。</p>\n   <p data-id=\"m4t5jnkn9b\"><strong>关键点：</strong><br>\n     倾听团队，让最好的主意胜出。</p>\n   <p data-id=\"31rn078qf2\">我曾多年审核每条 Vercel 的推文，因为我害怕出错。我以为我在确保质量，但事实是我成了团队的瓶颈。</p>\n   <p data-id=\"9ji65gvrbp\">后来我意识到，大部分社交媒体发文并不是「不可逆的」。于是我改变了看法，放权给团队，结果质量并没有下降，团队的能力反而成长得更快。</p>\n   <p data-id=\"ytvzf603pm\"><strong>关键点：</strong><br>\n     接纳新信息，及时改变你的想法。</p>\n   <h2 data-id=\"my8we2rqdf\" id=\"my8we2rqdf\" data-toc-id=\"my8we2rqdf\">始终追随好奇心</h2>\n   <p data-id=\"spb1ibkp78\">回首职业生涯，我始终在跟随自己的好奇心。加入 Vercel 也是如此，我在这里经历了无比宝贵的成长历程。</p>\n   <p data-id=\"9pfybofa72\">感谢 Vercel 的每一个人，这是难忘的五年旅程，感恩与你们同行。<span data-name=\"black_heart\" data-type=\"emoji\">🖤</span></p></div>\n \n",
+  "aiSummary": "Vercel 前副总裁分享了在创业公司 5 年间的 5 条核心经验，涵盖工作平衡、效率提升、团队扩展、领导力实践和思维转变。",
+  "oneSentenceSummary": "Vercel 前副总裁分享了在创业公司 5 年间的 5 条核心经验，涵盖工作平衡、效率提升、团队扩展、领导力实践和思维转变。",
+  "summary": "文章是作者 Lee Robinson 在 Vercel 工作 5 年后的经验总结。他回顾了公司从 30 人到 650 人，年收入从百万到两亿的飞速发展，以及个人从普通员工成长为副总裁的历程。作者分享了五点感悟：首先，要学会工作与生活的平衡，通过建立支持系统，实现全力以赴地工作后安心休假；其次，作为领导者要推动速度，设定激进的截止日期以激发团队潜力，快速交付和迭代是核心优势；第三，公司发展必须规模化，持续招聘顶尖人才并果断处理不达预期者，通过授权扩大影响力；第四，领导者应避免“空降式”决策，而是要提前深入了解并建立共识，让最佳想法胜出；最后，要始终保持好奇心，这不仅意味着接纳新信息和及时改变看法，更指引着职业方向的选择和个人成长。文章提供了宝贵的创业公司成长和个人职业发展经验。",
+  "mainPoints": [
+    {
+      "point": "工作热情与界限平衡：全力以赴工作，同时建立支持系统以安心休假",
+      "explanation": "作者强调了在创业公司中保持工作热情的重要性，但也指出过度投入会导致倦怠，关键在于建立团队自主性，让自己能放心地放下工作。"
+    },
+    {
+      "point": "领导者推动速度：通过设定激进截止日期，激发团队潜力并快速交付",
+      "explanation": "领导者的核心职责是推动效率，即使是激进的截止日期也能暴露问题并聚焦重点，从而实现比预期更快的迭代和产品发布。"
+    },
+    {
+      "point": "规模化与招聘：持续招聘顶尖人才并果断处理不达预期者",
+      "explanation": "公司快速成长必须依赖优秀人才的招聘和团队规模的扩大，同时要建立绩效导向文化，及时给出反馈并处理不合格表现。"
+    },
+    {
+      "point": "避免空降决策：领导者应提前了解、建立共识，而非突然干预",
+      "explanation": "指出领导者不应在不了解情况的前提下，凭借职位突然干预项目，而应提前深入参与，建立信任和共识，让团队的最佳想法胜出。"
+    },
+    {
+      "point": "接纳新信息与改变想法：放下控制欲，授权团队并适应变化",
+      "explanation": "强调了领导者需要保持开放心态，根据新信息及时调整决策，并学会放权，这不仅能提升团队能力，也能避免成为瓶颈。"
+    }
+  ],
+  "keyQuotes": [
+    "热情如果没有边界，最终必然会导致倦怠。",
+    "你最大的优势，就是快速交付、倾听反馈并持续迭代。",
+    "招聘只有两个答案：要么极其满意，要么否决。",
+    "伟大的领导者在宣布决策前，会先建立好团队的共识。",
+    "接纳新信息，及时改变你的想法。"
+  ],
+  "tags": [
+    "职业发展",
+    "领导力",
+    "创业公司",
+    "团队管理",
+    "工作效率"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 92,
+  "wordCount": 2020,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752204133000,
+  "publishDateStr": "2025-07-11",
+  "publishDateTimeStr": "2025-07-11 03:22:13"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_40d4f458",
+  "title": "谷歌新架构突破 Transformer 超长上下文瓶颈！Hinton 灵魂拷问：后悔 Open 吗？",
+  "url": "https://www.qbitai.com/2025/12/359230.html",
+  "date": "2025-12-05 10:48:55",
+  "author": "鱼羊",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"58\">鱼羊 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"59\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">Transformer的提出者谷歌，刚刚上来给了Transformer梆梆就两拳（doge）。</p>\n  <p data-track=\"3\">两项关于大模型新架构的研究一口气在NeurIPS 2025上发布，通过“测试时训练”机制，能<strong>在推理阶段将上下文窗口扩展至200万token</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新架构突破Transformer超长上下文瓶颈！Hinton灵魂拷问：后悔Open吗？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251205123747_58dbd91bfd09cdff5ace9b68b6212b12.png\" data-src=\"https://image.jido.dev/20251205123747_58dbd91bfd09cdff5ace9b68b6212b12.png\">\n  </div>\n  <p data-track=\"4\">两项新成果分别是：</p>\n  <ul>\n   <li data-track=\"5\"><strong>Titans</strong>：兼具RNN速度和Transformer性能的全新架构；</li>\n   <li data-track=\"6\"><strong>MIRAS</strong>：Titans背后的核心理论框架。</li>\n  </ul>\n  <p data-track=\"7\">核心要解决的，就是Transformer架构在处理超长上下文时的根本局限：计算成本会随着序列长度的增加而猛增。</p>\n  <p data-track=\"8\">不得不说，从Nano Banana到Gemini 3 Pro，再到基础研究方面的进展，谷歌最近一段时间就是一个穷追猛打的架势。</p>\n  <p data-track=\"9\">也难怪奥特曼要给OpenAI拉“红色警报”了。</p>\n  <p data-track=\"11\">现在AI领域已经达成共识的是，Transformer虽好，但自注意力机制的效率问题正在日益凸显：每个token都要“关注”其他所有token，导致计算量和内存消耗与序列长度的平方成正比（O(N2)）。</p>\n  <p data-track=\"12\">学界已经探索了多种解决方案，比如线性循环网络（RNNs）和状态空间模型（SSMs）等。</p>\n  <p data-track=\"13\">这类模型通过将上下文压缩到固定大小来实现快速线性扩展。问题是，这种方法仍然无法充分捕捉超长序列中的丰富信息。</p>\n  <p data-track=\"14\">Titans + MIRAS，是谷歌提出的新架构和理论蓝图，目的是将RNN的速度和Transformer的性能结合到一起。</p>\n  <p data-track=\"15\">其中Titans可以理解为具体的工具，而MIRAS则是理论框架。两者共同推进了<strong>测试时记忆</strong>的概念：</p>\n  <p data-track=\"16\">即模型在运行过程中，无需专门的离线重新训练，就能通过整合更多信息来维持长期记忆。</p>\n  <p data-track=\"17\">本质上，可以说这个新架构的重点，是重新定义Transformer的“记忆模式”，将其进化为一种更强大的混合架构。</p>\n  <p data-track=\"19\">具体来说，Titans引入了一种新的<strong>神经长期记忆模块</strong>。</p>\n  <p data-track=\"20\">与传统RNN中固定大小的向量或矩阵记忆不同，该模块本质上是一个在测试时动态更新权重的多层感知机（MLP）。</p>\n  <p data-track=\"21\">其独特之处就在于，通常模型训练完后，权重就固定了，但在Titans中，这个记忆模块在推理阶段依然在更新。</p>\n  <p data-track=\"22\">MAC（Memory as Context）是Titans架构的一种主要变体，设计思路是，将长期记忆作为一种额外的上下文信息，直接“喂”给注意力机制。</p>\n  <p data-track=\"23\">MAC并没有改变注意力机制本身的计算方式，而是改变了注意力机制的输入来源。它把从长期记忆中提取的信息，当作是历史信息的“摘要”，与当前的短期输入一起进行处理。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新架构突破Transformer超长上下文瓶颈！Hinton灵魂拷问：后悔Open吗？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251205123747_2a1f58e4afeb7458f1898f215b81de9f.png\" data-src=\"https://image.jido.dev/20251205123747_2a1f58e4afeb7458f1898f215b81de9f.png\">\n  </div>\n  <p data-track=\"61\">△MAC架构</p>\n  <p data-track=\"26\">研究人员发现，这个新的记忆模块能显著提升模型的表达能力，使其在不丢失重要上下文的情况下概括并理解大量信息。</p>\n  <p data-track=\"27\">更为重要的是，Titans并非被动地存储数据，而是能在输入数据中，主动学习如何识别并保留连接各个token的重要关系和概念。其中的关窍是“意外”。</p>\n  <p data-track=\"28\">在人类心理学中，我们很容易忘记一些常规的、预期之内的事情，但往往对“意外事件”印象深刻。</p>\n  <p data-track=\"29\">对于Titans也存在类似的情况。研究人员将其定义为“惊喜指标”（surprise metric）：指模型检测到当前记忆的内容和新输入内容之间存在较大差异。</p>\n  <ul>\n   <li data-track=\"30\">低意外度：比如新词是“猫”，而模型的记忆状态已经预测到会有一个动物词，那么梯度（意外度）就很低。这时模型仅将这个词作为短期记忆来处理即可。</li>\n   <li data-track=\"31\">高意外度：如果模型的记忆状态是正在总结一份严肃的财务报告，而新的输入是香蕉皮的图片（意外事件），则意外度将非常高。这表明新的输入很重要或异常，需要优先将其存储到长期记忆模块中。</li>\n  </ul>\n  <p data-track=\"32\">这样对“意外”的判断使得Titans架构能够有选择地更新长期记忆，从而保持快速和高效。</p>\n  <p data-track=\"33\">实验表明，Titans的MAC变体能够有效将上下文窗口扩展到200万，并在“大海捞针”任务中保持高准确率。</p>\n  <p data-track=\"35\">如果说Titans是跑车，那么MIRAS就是背后的核心引擎。</p>\n  <p data-track=\"36\">MIRAS核心目标是让模型在推理阶段也能进行学习。其独特之处在于，它不把不同的架构视为不同问题的解决方法，而是将其视为解决同一问题的不同途径：</p>\n  <p data-track=\"37\">高效地将新信息与旧信息相结合，同时又不遗漏关键概念。</p>\n  <p data-track=\"38\">MIRAS将任意序列模型结构为4个关键设计选择：</p>\n  <ul>\n   <li data-track=\"39\">内存架构：存储信息的结构（如向量、矩阵，或Titans中的MLP）。</li>\n   <li data-track=\"40\">注意力偏差：模型优化的内部学习目标，决定模型优先考虑的内容。</li>\n   <li data-track=\"41\">保留门控（Retention Gate）：即“遗忘机制”，用于平衡“学习新知识”与“保留旧记忆”。</li>\n   <li data-track=\"42\">记忆算法：用于更新记忆状态的优化算法。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新架构突破Transformer超长上下文瓶颈！Hinton灵魂拷问：后悔Open吗？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251205123747_c1116afcf19ecf57fff2fdebc3891b3e.png\" data-src=\"https://image.jido.dev/20251205123747_c1116afcf19ecf57fff2fdebc3891b3e.png\">\n  </div>\n  <p data-track=\"43\">现有的序列模型大多依赖均方误差（MSE）或点积相似度来更新记忆。</p>\n  <p data-track=\"44\">MIRAS的另一个创新，是引入非欧几里得目标函数，允许使用更复杂的数学惩罚机制。</p>\n  <p data-track=\"45\">谷歌的研究人员基于MIRAS，创建了三个特定的无注意力模型：</p>\n  <ul>\n   <li data-track=\"46\">YAAD：使用更温和Huber Loss来处理错误，对异常值（如文档中的拼写错误）不敏感，鲁棒性更强。</li>\n   <li data-track=\"47\">MONETA：使用Generalized Norms（广义范数），通过更严格的规则来管理注意力和遗忘，提升记忆稳定性。</li>\n   <li data-track=\"48\">MEMORA：强制记忆像概率图一样运作，确保信息整合过程的受控和平衡。</li>\n  </ul>\n  <p data-track=\"49\">实验结果显示，基于Titans和MIRAS的模型性能优于最先进的线性循环模型（如Mamba 2），以及规模相近的Transformer基线模型。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新架构突破Transformer超长上下文瓶颈！Hinton灵魂拷问：后悔Open吗？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251205123747_61b28e6619f6045cb276515bef102df0.png\" data-src=\"https://image.jido.dev/20251205123747_61b28e6619f6045cb276515bef102df0.png\">\n  </div>\n  <p data-track=\"50\">更显著的优势在于，新架构能够处理极长上下文，在参数规模小得多的情况下，性能优于GPT-4等大规模模型。</p>\n  <p data-track=\"52\">超越Transformer的探索还在继续，但不可否认的是，Transformer依然是大模型时代的理论基石。</p>\n  <p data-track=\"53\">那么，曾经一度在竞争中落后的谷歌，是否会后悔公开了Transformer的研究呢？</p>\n  <p data-track=\"54\">同样是在NeurIPS 2025上，Jeff Dean回答了诺奖得主、图灵奖得主Hinton提出的这个问题：</p>\n  <blockquote>\n   <p data-track=\"55\">不，它对世界产生了巨大的积极影响。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img alt=\"谷歌新架构突破Transformer超长上下文瓶颈！Hinton灵魂拷问：后悔Open吗？\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251205123747_8795217ebeaed17f2fd904f12ce416c7.png\" data-src=\"https://image.jido.dev/20251205123747_8795217ebeaed17f2fd904f12ce416c7.png\">\n  </div>\n  <p data-track=\"56\">这格局，谷谷人人又希希了。</p>\n  <p data-track=\"57\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://research.google/blog/titans-miras-helping-ai-have-long-term-memory\n   <br class=\"sysbr\">\n   [2]https://arxiv.org/abs/2501.00663\n   <br class=\"sysbr\">\n   [3]https://arxiv.org/abs/2504.13173</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谷歌新架构 Titans 和 MIRAS 通过“测试时训练”机制，成功将 Transformer 模型的上下文窗口扩展至 200 万 token，显著提升了处理超长序列的能力。",
+  "oneSentenceSummary": "谷歌新架构 Titans 和 MIRAS 通过“测试时训练”机制，成功将 Transformer 模型的上下文窗口扩展至 200 万 token，显著提升了处理超长序列的能力。",
+  "summary": "文章深入介绍了谷歌在 NeurIPS 2025 上发布的 AI 新架构 Titans 及其核心理论框架 MIRAS，旨在解决 Transformer 模型在处理超长上下文时计算成本呈平方增长的固有瓶颈。Titans 架构兼具 RNN 的速度和 Transformer 的性能，核心在于引入了一个在推理阶段动态更新权重的神经长期记忆模块（MLP），突破了传统模型权重固定的限制。其 MAC 变体通过将长期记忆作为额外上下文输入注意力机制，并结合“惊喜指标”智能选择性地更新记忆，从而高效处理大量信息。MIRAS 作为理论蓝图，重新定义了序列模型的四大关键设计选择，并引入非欧几里得目标函数，使模型在推理阶段也能有效学习和整合新旧信息，提升记忆稳定性。实验结果表明，Titans MAC 成功将上下文窗口扩展至 200 万 token 并保持高准确率，基于 MIRAS 的模型在性能上超越了 Mamba 2 及同规模 Transformer，甚至在参数量更小的情况下优于 GPT-4 等大规模模型。文章还提及了谷歌在 AI 领域的积极进展，以及 Jeff Dean 对开放 Transformer 研究的积极评价。",
+  "mainPoints": [
+    {
+      "point": "Titans 新架构通过“测试时训练”机制，将上下文窗口扩展至 200 万 token。",
+      "explanation": "引入动态更新权重的神经长期记忆模块，结合“意外度”机制选择性存储，有效突破 Transformer 的超长上下文瓶颈，实现更高效的长期记忆管理。"
+    },
+    {
+      "point": "MIRAS 理论框架为推理阶段学习提供蓝图，提升模型对新旧信息的整合效率。",
+      "explanation": "重新定义序列模型核心设计选择，引入非欧几里得目标函数，使得模型能在推理时高效学习和记忆，提升长期记忆稳定性和鲁棒性。"
+    },
+    {
+      "point": "新架构在性能上超越现有线性循环模型及大规模 Transformer。",
+      "explanation": "实验证明 Titans 和 MIRAS 模型在参数规模更小的情况下，能有效处理极长上下文，并在“大海捞针”任务和基准测试中优于 Mamba 2 和 GPT-4 等模型。"
+    }
+  ],
+  "keyQuotes": [
+    "两项关于大模型新架构的研究一口气在 NeurIPS 2025 上发布，通过\"测试时训练\"机制，能**在推理阶段将上下文窗口扩展至 200 万 token**。",
+    "Titans + MIRAS，是谷歌提出的新架构和理论蓝图，目的是将 RNN 的速度和 Transformer 的性能结合到一起。",
+    "其独特之处就在于，通常模型训练完后，权重就固定了，但在 Titans 中，这个记忆模块在推理阶段依然在更新。",
+    "这样对\"意外\"的判断使得 Titans 架构能够有选择地更新长期记忆，从而保持快速和高效。",
+    "更显著的优势在于，新架构能够处理极长上下文，在参数规模小得多的情况下，性能优于 GPT-4 等大规模模型。"
+  ],
+  "tags": [
+    "大语言模型",
+    "AI架构",
+    "Transformer",
+    "超长上下文",
+    "记忆机制"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2343,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764931735000,
+  "publishDateStr": "2025-12-05",
+  "publishDateTimeStr": "2025-12-05 10:48:55"
+}

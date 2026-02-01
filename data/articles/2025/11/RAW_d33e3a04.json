@@ -1,0 +1,55 @@
+{
+  "id": "RAW_d33e3a04",
+  "title": "阶跃开源 4B Agent 模型，跑通所有安卓设备，手搓党一键部署",
+  "url": "https://www.qbitai.com/2025/11/357627.html",
+  "date": "2025-11-30 07:04:32",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"71\">GELab-Zero团队 投稿</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"72\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"70\">首次将GUI Agent模型与完整配套基建同步开放，支持手搓党一键部署！</p>\n  <p data-track=\"3\">这就是阶跃星辰刚刚开源的<strong>GELab-Zero</strong>。</p>\n  <p data-track=\"4\">其中4B版本的GUI Agent模型在手机端、电脑端等多个GUI榜单上全面刷新同尺寸模型性能纪录，取得SOTA成绩。</p>\n  <p data-track=\"5\">随着AI在手机等消费终端的普及，Mobile Agent正从“能不能用”迈向“能否规模化落地”。</p>\n  <p data-track=\"6\"><strong>GUI Agent是执行能力最强的形态之一。</strong>它基于视觉理解即可适配几乎所有App，无需厂商额外改造，接入成本极低。</p>\n  <p data-track=\"7\">此外，阶跃还同步开源了基于真实业务场景的自建评测标准AndroidDaily，以期推动GUI领域模型评测向消费级、规模化应用发展。</p>\n  <p data-track=\"9\">要知道，让GUI Agent在不同品牌与系统版本的设备上顺畅运行并不轻松。</p>\n  <p data-track=\"10\">移动生态的高度碎片化让开发者需处理多设备ADB连接、依赖安装、权限配置、推理服务部署、任务编排与回放等繁琐流程，工程成本高昂，精力难以聚焦在策略创新与体验设计上。</p>\n  <p data-track=\"11\">要推动移动端Agent真正规模化，<strong>必须首先降低开发与使用门槛</strong>，让开发者专注于创造价值，而非重复搭建底层设施。</p>\n  <p data-track=\"12\">基于此，阶跃开源了GELab-Zero。</p>\n  <p data-track=\"13\">它主要包含三部分：</p>\n  <ul>\n   <li data-track=\"14\"><strong>一个能在本地运行的GUI Agent模型GELab-Zero-4B-preview</strong></li>\n   <li data-track=\"15\"><strong>即插即用的完整推理工程基建，解决所有脏活累活</strong></li>\n   <li data-track=\"16\"><strong>基于真实业务场景的自建评测标准AndroidDaily</strong></li>\n  </ul>\n  <p data-track=\"17\">研究团队在ScreenSpot、OSWorld、MMBench、Android World多个开源基准测试上对GELab-Zero-4B-preview模型进行了全面评估。</p>\n  <p data-track=\"18\">这些基准测试涵盖了GUI理解、定位、交互等多个维度。</p>\n  <p data-track=\"19\">从测试结果可以看出，GELab-Zero-4B-preview在多项开源基准测试中超越其他主流模型，<strong>拿下同尺寸SOTA</strong>。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阶跃开源4B Agent模型，跑通所有安卓设备，手搓党一键部署\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251130093754_d229a2d1f59bcb9c569af0e6401eedae.png\" data-src=\"https://image.jido.dev/20251130093754_d229a2d1f59bcb9c569af0e6401eedae.png\">\n  </div>\n  <p data-track=\"20\">值得一提的是，GELab-Zero-4B-preview的表现还超越了参数量更大的GUI-Owl-32B等模型，性能更优，也更易部署。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阶跃开源4B Agent模型，跑通所有安卓设备，手搓党一键部署\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251130093750_2b20f426b51b5dc20d58260bf035432f.png\" data-src=\"https://image.jido.dev/20251130093750_2b20f426b51b5dc20d58260bf035432f.png\">\n  </div>\n  <p data-track=\"21\">来看一下研究团队给出的示例场景。</p>\n  <p data-track=\"23\"><strong>场景1</strong>：在外卖平台同时采购跨品类、不同规格和数量的商品。</p>\n  <p data-track=\"24\">Prompt：去饿了么离我最近的盒马鲜生购买：红颜草莓300g、秘鲁比安卡蓝莓125g（果径18mm）、当季新鲜黄心土豆500g、粉糯贝贝南瓜750g、盒马大颗粒虾滑、2瓶盒马纯黑豆豆浆300ml、小王子夏威夷果可可脆120g、盒马菠菜面、盒马五香牛肉、5袋好欢螺柳州螺狮粉（加辣加臭）400g、m&amp;m’s牛奶巧克力豆100g</p>\n  <p data-track=\"25\">可以看到，模型精准识别了物品信息，并顺畅地完成了多步骤、重复性的购买操作。</p>\n  <p data-track=\"26\"><strong>场景2</strong>：在企业福利APP中领取餐券。</p>\n  <p data-track=\"27\">Prompt：打开给到App，在我的，下滑寻找，员工权益-奋斗食代，帮我领劵。</p>\n  <p data-track=\"28\">上述示例展示了GELab-Zero-4B-preview执行的能力和范围具有很强的泛化性，无论在国民级APP还是小众产品平台，都可以顺利完成任务。</p>\n  <p data-track=\"30\"><strong>场景1</strong>：在某个视频平台上播放指定演员的经典作品。</p>\n  <p data-track=\"31\">Prompt：在腾讯视频上找一部成龙的经典动作片播放。</p>\n  <p data-track=\"32\">接到指令后，GELab-Zero-4B-preview自主拆解“经典”这一需求，确定执行标准。</p>\n  <p data-track=\"33\">过程中，模型先打开腾讯视频，识别并关闭了弹窗，搜索“成龙”后在电影类目中选择了页面上成龙评分最高的代表作播放。</p>\n  <p data-track=\"34\"><strong>场景2</strong>：找一个周末能带孩子玩的地方。</p>\n  <p data-track=\"35\">Prompt：帮我找个周末能带孩子去玩的地方。</p>\n  <p data-track=\"36\">接到指令后，模型首先在内容平台搜索“北京周末带娃”，然后自主判断衡量标准后为用户推荐北京园博园“顽酷奇遇”，并为用户提炼出该地点的亮点——“有巨型装置卡通，亲子活动丰富”。</p>\n  <p data-track=\"37\">可以看到，GELab-Zero-4B-preview模型<strong>能够很好地执行复杂任务和模糊指令</strong>，不仅可以准确、流畅地执行涉及到多步骤、多主体、重复操作的任务，也能对“好看”“适合玩的”“经典”等偏笼统和主观性的指令进行自主拆解，确定执行路径和标准。</p>\n  <p data-track=\"39\">针对GUI智能体，研究人员构建了一整套完整的技术架构体系，可以一键拉起获得类似开源GUI Agent MCP的体验。</p>\n  <p data-track=\"40\">具体能力如下：</p>\n  <ul>\n   <li data-track=\"41\"><strong>轻量级本地推理</strong></li>\n   <li data-track=\"42\">支持4B模型在消费级硬件上运行，兼顾低延迟与隐私。</li>\n   <li data-track=\"43\"><strong>一键任务启动</strong></li>\n   <li data-track=\"44\">提供统一部署流水线，自动处理环境依赖和设备管理。</li>\n   <li data-track=\"45\"><strong>多设备任务分发</strong></li>\n   <li data-track=\"46\">可以分发到多台手机并记录交互轨迹，实现可观测、可复现。</li>\n   <li data-track=\"47\"><strong>多种Agent模式</strong></li>\n   <li data-track=\"48\">涵盖ReAct闭环、多智能体协作以及定时任务等多种工作模式。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img alt=\"阶跃开源4B Agent模型，跑通所有安卓设备，手搓党一键部署\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251130093749_a62c826f27c4852b73d3090868ebaf36.png\" data-src=\"https://image.jido.dev/20251130093749_a62c826f27c4852b73d3090868ebaf36.png\">\n  </div>\n  <p data-track=\"49\">这些能力让GELab-Zero能够灵活应对真实场景的复杂任务流，并为后续扩展提供扎实底座。</p>\n  <p data-track=\"50\">Agent开发者可基于这套基建快速测试新想法、验证交互策略；企业级用户则能直接复用这套基建，将MCP能力快速植入到产品业务中。</p>\n  <p data-track=\"52\">此外，研究团队基于手机、IoT、汽车等行业头部公司的真实合作案例，建立了高度贴合业务场景的评测基准。</p>\n  <p data-track=\"53\">当前的主流基准测试，大部分聚焦于生产力类应用（如邮件与文档处理）。</p>\n  <p data-track=\"54\">然而在日常真实场景中，用户高频依赖的却是生活服务类应用，如外卖、打车、社交、支付等，而这部分场景不仅覆盖面更广，也更能体现当下GUI Agent 的实用价值。</p>\n  <p data-track=\"55\">为此研究者提出 AndroidDaily，<strong>一个面向真实世界、动态演进的多维基准体系</strong>。</p>\n  <p data-track=\"56\">它聚焦在现代生活六大核心维度：饮食、出行、购物、居住、信息消费、娱乐，并优先选择在这些类别中具有代表性（高频使用、应用商店日活排名靠前）的主流应用进行测试，高度还原真实任务执行流程（包括询问用户更多信息补充输入、高危操作请求用户接管）。</p>\n  <p data-track=\"57\">评测结果显示，GELab-Zero-4B-preview在AndroidDaily测试中准确率达到73.4% ，在移动端复杂任务中表现优秀。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阶跃开源4B Agent模型，跑通所有安卓设备，手搓党一键部署\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251130093752_5178449ff7b86d029877757b4e22ac7f.png\" data-src=\"https://image.jido.dev/20251130093752_5178449ff7b86d029877757b4e22ac7f.png\">\n  </div>\n  <p data-track=\"58\">为了平衡评估的全面性和执行效率，AndroidDaily采用了静态评测和端到端评测双轨评估体系。</p>\n  <p data-track=\"59\"><strong>静态评测</strong>考察模型的grounding（界面理解、元素识别）和action规划能力，用于检验其在推理与执行一致性等基础层面的表现。</p>\n  <p data-track=\"60\"><strong>端到端测试</strong>重点衡量GUI Agent在真实环境中处理复杂任务时的执行效果与稳定性。</p>\n  <p data-track=\"61\">其中，静态测试包含3146个actions，提供任务描述和逐步的屏幕截图，要求Agent预测每一步的动作类型和动作值（如点击坐标、输入文本），主要评估数值准确率。</p>\n  <p data-track=\"62\">这种方法无需复杂的工程基础设施，可以快速、低成本地进行大规模模型迭代和测试。</p>\n  <p data-track=\"63\">而端到端测试包含235个任务，典型任务场景包括出行交通（打车、导航、公共交通等）、购物消费（电商购物、支付、订单管理等）、社交通讯（消息发送、社交互动等）、内容消费（新闻阅读、视频观看、内容收藏等）、本地服务（外卖、到店服务）等。</p>\n  <p data-track=\"64\">在完全功能化的测试环境（如真实设备或模拟器）中进行，Agent需要从头到尾自主执行任务，最终以整体任务成功率作为评价指标，能真实反映智能体在复杂环境中的综合能力。</p>\n  <div class=\"pgc-img\">\n   <img alt=\"阶跃开源4B Agent模型，跑通所有安卓设备，手搓党一键部署\" class=\"syl-page-img\" src=\"https://image.jido.dev/20251130093749_f056c588e0b05767e7e1340caa9127a8.png\" data-src=\"https://image.jido.dev/20251130093749_f056c588e0b05767e7e1340caa9127a8.png\">\n  </div>\n  <p data-track=\"65\">团队表示，希望通过GELab-Zero的开源，进一步降低移动端Agent的开发门槛，让更多开发者能够快速构建和验证自己的想法。</p>\n  <p data-track=\"66\">未来，研究团队将始终坚持开放、可控、隐私优先的原则，持续优化模型性能、扩展跨平台支持、丰富生态工具链。</p>\n  <p data-track=\"67\">GitHub:\n   <br class=\"sysbr\">\n   https://github.com/stepfun-ai/gelab-zero\n   <br class=\"sysbr\">\n   抱抱脸:\n   <br class=\"sysbr\">\n   https://huggingface.co/stepfun-ai/GELab-Zero-4B-preview</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阶跃星辰开源 4B GUI Agent 模型 GELab-Zero，提供完整部署基建和真实场景评测标准 AndroidDaily，实现移动端 Agent 一键部署与 SOTA 性能。",
+  "oneSentenceSummary": "阶跃星辰开源 4B GUI Agent 模型 GELab-Zero，提供完整部署基建和真实场景评测标准 AndroidDaily，实现移动端 Agent 一键部署与 SOTA 性能。",
+  "summary": "文章深入介绍了阶跃星辰开源的 GELab-Zero 项目，其核心是一款名为 GELab-Zero-4B-preview 的 4B GUI Agent 模型。该模型在手机端和电脑端的多个 GUI 基准测试中表现出色，刷新了同尺寸模型的性能纪录，取得了 SOTA（State-Of-The-Art）成绩。为解决移动生态碎片化带来的高昂开发与部署成本，GELab-Zero 项目同步开源了即插即用的完整推理工程基建，支持在消费级硬件上实现 Agent 的轻量级本地推理和一键部署，极大降低了开发门槛。此外，文章还提出了基于真实业务场景的自建评测标准 AndroidDaily，聚焦生活服务类应用，采用静态与端到端双轨评估体系，旨在推动 GUI Agent 模型评测向消费级、规模化应用发展，并验证了 GELab-Zero 模型在复杂移动任务中的优秀表现。",
+  "mainPoints": [
+    {
+      "point": "阶跃 GELab-Zero-4B-preview 模型在 GUI Agent 领域实现 SOTA 性能",
+      "explanation": "该 4B 模型在多个 GUI 基准测试中超越其他主流模型，甚至包括参数量更大的模型，展现了在移动设备上卓越的视觉理解和任务执行能力。"
+    },
+    {
+      "point": "开源完整推理工程基建，显著降低移动端 Agent 开发与部署门槛",
+      "explanation": "通过提供即插即用的部署流水线，自动化处理环境依赖和设备管理，解决了移动生态碎片化带来的工程难题，使开发者能专注于 Agent 策略创新。"
+    },
+    {
+      "point": "推出 AndroidDaily 评测标准，推动 GUI Agent 向真实业务场景应用发展",
+      "explanation": "该评测体系聚焦高频生活服务类应用，采用静态与端到端双轨评估，更真实地衡量 Agent 在复杂、动态环境中的实用价值和综合能力，弥补了现有基准的不足。"
+    }
+  ],
+  "keyQuotes": [
+    "首次将 GUI Agent 模型与完整配套基建同步开放，支持手搓党一键部署！",
+    "GUI Agent 是执行能力最强的形态之一。它基于视觉理解即可适配几乎所有 App，无需厂商额外改造，接入成本极低。",
+    "要推动移动端 Agent 真正规模化，必须首先降低开发与使用门槛，让开发者专注于创造价值，而非重复搭建底层设施。",
+    "GELab-Zero-4B-preview 模型能够很好地执行复杂任务和模糊指令，不仅可以准确、流畅地执行涉及到多步骤、多主体、重复操作的任务，也能对“好看”“适合玩的”“经典”等偏笼统和主观性的指令进行自主拆解，确定执行路径和标准。",
+    "AndroidDaily，一个面向真实世界、动态演进的多维基准体系。"
+  ],
+  "tags": [
+    "GUI Agent",
+    "移动Agent",
+    "大模型",
+    "安卓开发",
+    "阶跃星辰"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 12,
+  "score": 91,
+  "wordCount": 2879,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1764486272000,
+  "publishDateStr": "2025-11-30",
+  "publishDateTimeStr": "2025-11-30 07:04:32"
+}

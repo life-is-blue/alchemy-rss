@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e8a6f5",
+  "title": "Claude：十层认知",
+  "url": "https://mp.weixin.qq.com/s/DYE3l2tz8LndfMrIFF4UOg",
+  "date": "2025-05-02 06:35:06",
+  "author": "李继刚",
+  "siteName": "李继刚",
+  "content": "<html>\n <head></head>\n <body>\n  <section style=\"text-align: center;\" nodeleaf=\"\">\n   <img class=\"rich_pages wxw-img\" data-imgfileid=\"100000988\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f1329022-17eb-4c00-9249-79811cf6bb00/public\" data-type=\"png\" type=\"block\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f1329022-17eb-4c00-9249-79811cf6bb00/public\">\n  </section>\n  <h2 style=\"text-align: center;font-weight: bold;border-bottom: 2px solid rgb(51, 51, 51);padding-bottom: 0.5em;margin-bottom: 1.5em;\" data-pm-slice=\"0 0 []\"><span leaf=\"\">缘起</span></h2>\n  <p style=\"margin: 1em 0px;\"><span leaf=\"\">昨天读完了[马来西亚]柯家浚写的《解析物理的十层之旅》，里面对于一个事物的认知，从直观表象，不断深入，使用全新的解释，不断接入事物本质的过程，实在是过瘾。</span></p>\n  <p style=\"margin: 1em 0px;\"><span leaf=\"\">手搓一个 Lisp Prompt，enjoy.</span></p>\n  <h2 style=\"text-align: center;font-weight: bold;border-bottom: 2px solid rgb(51, 51, 51);padding-bottom: 0.5em;margin-bottom: 1.5em;\"><span leaf=\"\">效果</span></h2>\n  <section style=\"text-align: center;\" nodeleaf=\"\">\n   <img class=\"rich_pages wxw-img\" data-imgfileid=\"100000990\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d764670b-b4b6-4ebc-c38f-095855d3df00/public\" data-type=\"png\" type=\"block\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d764670b-b4b6-4ebc-c38f-095855d3df00/public\">\n  </section>\n  <section style=\"text-align: center;\" nodeleaf=\"\">\n   <img class=\"rich_pages wxw-img\" data-imgfileid=\"100000991\" data-s=\"300,640\" data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a3ca528b-85ab-4ee8-ccc2-830351fee100/public\" data-type=\"png\" type=\"block\" src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a3ca528b-85ab-4ee8-ccc2-830351fee100/public\">\n  </section>\n  <p style=\"margin: 1em 0px;\"><span leaf=\"\"> \n    <br> \n   </span></p>\n  <h2 style=\"text-align: center;font-weight: bold;border-bottom: 2px solid rgb(51, 51, 51);padding-bottom: 0.5em;margin-bottom: 1.5em;\"><span leaf=\"\">源码</span></h2>\n  <section class=\"code-snippet__fix code-snippet__js\">\n   <ul class=\"code-snippet__line-index code-snippet__js\">\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n    <li></li>\n   </ul>\n   <pre class=\"code-snippet__js\" data-lang=\"bash\"><code><span leaf=\"\">(defun 费曼 ()</span></code><code><span leaf=\"\">&nbsp;&nbsp;<span class=\"code-snippet__string\">\"一个擅长科普的有趣作家\"</span></span></code><code><span leaf=\"\">&nbsp; (list (技能 .&nbsp;<span class=\"code-snippet__string\">'(博学 叙事 洞察 幽默))</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; (表达 . '(生动 通俗 精妙 易懂))))</span></code><code><span leaf=\"\"><br></span></code><code><span leaf=\"\">(defun 十层认知 (用户输入)</span></code><code><span leaf=\"\">&nbsp;&nbsp;<span class=\"code-snippet__string\">\"针对用户输入，人类历史上经历的十层认知\"</span></span></code><code><span leaf=\"\">&nbsp; (<span class=\"code-snippet__built_in\">let</span>* ((响应 (-&gt; 用户输入</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;直观表象</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;深究本源</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;反例疑惑</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;全新解释</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;本质洞察</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;十层认知)))</span></code><code><span leaf=\"\">&nbsp; &nbsp; (可视化 用户输入 响应)))</span></code><code><span leaf=\"\"><br></span></code><code><span leaf=\"\">(defun 可视化 (用户输入 响应)</span></code><code><span leaf=\"\">&nbsp;&nbsp;<span class=\"code-snippet__string\">\"使用HTML 可视化展示对话内容\"</span></span></code><code><span leaf=\"\">&nbsp; (<span class=\"code-snippet__built_in\">let</span>&nbsp;((配置</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`((:画布</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (:宽度 \"<span class=\"code-snippet__number\">800</span>px\"</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:最大宽度 \"<span class=\"code-snippet__number\">90</span>vw\"</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:边距 \"auto\"))</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(:主题</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (:主色&nbsp;<span class=\"code-snippet__string\">\"#2c3e50\"</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:次色&nbsp;<span class=\"code-snippet__string\">\"#3498db\"</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:背景&nbsp;<span class=\"code-snippet__string\">\"#f8f9fa\"</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:文字&nbsp;<span class=\"code-snippet__string\">\"#333333\"</span>))</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(:排版</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (:字体&nbsp;<span class=\"code-snippet__string\">\"KingHwa_OldSong\"</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:行高&nbsp;<span class=\"code-snippet__string\">\"1.6\"</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:段落间距&nbsp;<span class=\"code-snippet__string\">\"1.2em\"</span>))</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(:动效</span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (:过渡&nbsp;<span class=\"code-snippet__string\">\"all 0.3s ease\"</span></span></code><code><span leaf=\"\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:渐显 t)))))</span></code><code><span leaf=\"\">&nbsp; &nbsp; (生成HTML 配置 用户输入 响应)))</span></code><code><span leaf=\"\"><br></span></code><code><span leaf=\"\">(defun start ()</span></code><code><span leaf=\"\">&nbsp;&nbsp;<span class=\"code-snippet__string\">\"初始化执行\"</span></span></code><code><span leaf=\"\">&nbsp; (<span class=\"code-snippet__built_in\">let</span>&nbsp;(system-role (费曼))</span></code><code><span leaf=\"\">&nbsp; &nbsp; (<span class=\"code-snippet__built_in\">print</span>&nbsp;<span class=\"code-snippet__string\">\"你提一个概念，让我们不断深入探索它...\"</span>))</span></code><code><span leaf=\"\"><br></span></code></pre>\n  </section>\n  <p style=\"display: none;\"><mp-style-type data-value=\"3\"></mp-style-type></p>\n </body>\n</html>",
+  "aiSummary": "作者受《解析物理的十层之旅》启发，通过 Lisp 代码模拟 Claude 的十层认知过程，创新性地将认知层次理论转化为可执行的代码实践，并融入费曼科普风格的可视化设计。",
+  "oneSentenceSummary": "作者受《解析物理的十层之旅》启发，通过 Lisp 代码模拟 Claude 的十层认知过程，创新性地将认知层次理论转化为可执行的代码实践，并融入费曼科普风格的可视化设计。",
+  "summary": "文章受《解析物理的十层之旅》中认知层次理论的启发，使用 Lisp 语言构建了一个模拟 Claude 认知过程的 Prompt 系统。代码实现了从直观表象到本质洞察的十层认知模型，并特别设计了费曼科普风格的可视化功能。作者创新性地将认知科学理论转化为可执行的代码实践，通过'费曼()'函数定义了科普作家的特质，在'十层认知()'函数中实现了认知层次的逐步深入过程，最后通过'可视化()'函数以交互方式呈现认知结果。这种实现方式不仅展示了 AI 系统可能的多层次理解能力，也为认知建模提供了新的技术思路。",
+  "mainPoints": [
+    {
+      "point": "理论到实践的创新转化",
+      "explanation": "将《解析物理的十层之旅》中的认知层次理论转化为可执行的 Lisp 代码，为认知建模提供了新的技术实现路径"
+    },
+    {
+      "point": "多层次的认知过程模拟",
+      "explanation": "通过'十层认知()'函数构建了从直观表象到本质洞察的完整认知模型，展示了 AI 系统可能的多维度理解能力"
+    },
+    {
+      "point": "费曼科普风格的可视化设计",
+      "explanation": "在'可视化()'函数中融入费曼技巧，通过精心设计的交互界面使复杂的认知过程变得直观易懂"
+    },
+    {
+      "point": "Prompt 工程的创新应用",
+      "explanation": "展示了如何通过精心设计的 Prompt 引导 AI 系统进行深度思考和分析，同时保持科普的趣味性和易理解性"
+    }
+  ],
+  "keyQuotes": [
+    "针对用户输入，人类历史上经历的十层认知",
+    "一个擅长科普的有趣作家（博学、叙事、洞察、幽默）",
+    "从直观表象，不断深入，使用全新的解释，不断接入事物本质的过程",
+    "使用 HTML 可视化展示对话内容",
+    "你提一个概念，让我们不断深入探索它..."
+  ],
+  "tags": [
+    "认知建模",
+    "大语言模型",
+    "Lisp编程",
+    "Prompt工程",
+    "Claude"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 91,
+  "wordCount": 658,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8ebfe0",
+  "sourceName": "李继刚",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1746167706000,
+  "publishDateStr": "2025-05-02",
+  "publishDateTimeStr": "2025-05-02 06:35:06"
+}

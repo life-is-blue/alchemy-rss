@@ -1,0 +1,58 @@
+{
+  "id": "RAW_e2867929",
+  "title": "Cloudflare 通过左移安全实践扩展基础设施即代码",
+  "url": "https://www.infoq.com/news/2026/01/cloudflare-security-shift-left/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-12 09:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare <a href=\"https://blog.cloudflare.com/shift-left-enterprise-scale/\">has eliminated</a> manual configuration errors across hundreds of production accounts by implementing Infrastructure as Code with automated policy enforcement, processing approximately 30 merge requests daily while catching security violations before deployment rather than after incidents occur.</p>\n   <p>The company's Customer Zero team faced a critical problem: a single misconfiguration could propagate across Cloudflare's global edge in seconds, potentially locking out employees or taking down production services. Manual dashboard management across hundreds of accounts created too many opportunities for human error at this scale.</p>\n   <p>The solution centered on treating all infrastructure configurations as code with mandatory peer review and automated security checks. Every production change now goes through a validation pipeline that enforces approximately 50 security policies before deployment. Teams still use the dashboard for analytics and observability, but critical production changes require code commits tied to users, tickets, and automated compliance checks.</p>\n   <p>According to Chase Catelli, Ryan Pesek, and Derek Pitts from Cloudflare's team, this shift-left approach moves security validation to the earliest stages of development, catching issues when remediation costs are lowest. The model prevents incidents rather than responding to them, while actually increasing engineering velocity by giving teams confidence that their changes are compliant.</p>\n   <p>The implementation centers on <a href=\"https://developer.hashicorp.com/terraform\">Terraform </a>with the <a href=\"https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs\">Cloudflare Terraform Provider</a>, integrated into a custom continuous integration and deployment pipeline running on <a href=\"https://www.runatlantis.io/\">Atlantis </a>with <a href=\"https://about.gitlab.com/\">GitLab</a>. All production account configurations live in a centralized monorepo, with individual teams owning and deploying their specific sections as designated code owners.</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2026/01/cloudflare-security-shift-left/news/2026/01/cloudflare-security-shift-left/en/resources/20image1-1768061236001.png\" style=\"width:100%;height:543px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/01/cloudflare-security-shift-left/en/resources/20image1-1768061236001.png\" rel=\"share\">\n   </center>\n   <center>\n    <small>Cloudflare's Infrastructure as Code data flow diagram</small>\n   </center>\n   <p>A custom Go program called tfstate-butler acts as an HTTP backend for Terraform, serving as a secure state file broker. The design prioritizes security by ensuring unique encryption keys per state file, limiting the potential blast radius from any compromise.</p>\n   <p>Policy enforcement uses the <a href=\"https://www.openpolicyagent.org/\">Open Policy Agent</a> framework with <a href=\"https://www.openpolicyagent.org/docs/policy-language\">Rego language</a> to validate security requirements. Policies run automatically on every merge request, operating in two modes: warnings that allow deployment with comments or denials that block changes entirely. Exception handling requires formal Jira-based approval followed by a pull request to document the deviation.</p>\n   <p>The migration revealed critical lessons about scaling <a href=\"https://www.hashicorp.com/en/resources/what-is-infrastructure-as-code\">Infrastructure as Code</a>. High barriers to entry initially stalled adoption as Terraform fluency varied across teams. The cf-terraforming command-line utility, which automatically generates Terraform code from the Cloudflare API, significantly accelerated onboarding by eliminating manual resource imports.</p>\n   <p>Configuration drift emerged when teams made urgent dashboard changes during incidents, leaving Terraform state out of sync. Cloudflare implemented automated drift detection, which continuously compares state files with deployed configurations and automatically creates remediation tickets with service-level agreements when discrepancies are detected.</p>\n   <p>Cloudflare Terraform Provider lagging API capabilities created friction as Cloudflare's rapid product innovation outpaced Terraform support. The v5 provider release resolved this by automatically generating code from OpenAPI specifications, maintaining continuous alignment between product APIs and infrastructure code capabilities.</p>\n   <p>The shift-left model demonstrates how organizations can scale Infrastructure as Code while maintaining strict security governance. By moving validation from reactive audits to proactive automated checks, Cloudflare achieved both increased security and engineering velocity.</p>\n   <p>Many companies are adopting the shift-left approach. Google Cloud <a href=\"https://cloud.google.com/blog/products/identity-security/shift-left-on-google-cloud-security-invest-now-save-later\">points out</a> that locating security issues in production can lead to significant financial penalties, such as GDPR fines of up to 4% of global revenue. Early detection through automated CI/CD security checks can greatly lower remediation costs and reduce the need for architectural changes. OpsMx <a href=\"https://www.opsmx.com/blog/shift-left-security-implementation/\">notes</a> challenges like implementation barriers, gaps in automation, complex tools, and organizational silos, while emphasizing that automated policy enforcement using frameworks like NIST and OWASP helps teams identify and prioritize risks without burdening developers. According to <a href=\"https://www.splunk.com/en_us/blog/learn/shift-left-security.html\">Splunk's research</a>, 73% of companies see a lack of automation as their main challenge in shift-left practices, but AI-driven tools are quickly improving security testing through smart automation, with adoption rates rising from 64% to 78% in just one year.</p>\n   <p>The shift-left movement has evolved beyond simply moving security checks earlier. Organizations are now pursuing continuous security validation through automated scanning (<a href=\"https://www.checkpoint.com/it/cyber-hub/cloud-security/what-is-static-application-security-testing-sast/\">SAST</a>, <a href=\"https://www.blackduck.com/glossary/what-is-software-composition-analysis.html\">SCA</a>, <a href=\"https://en.wikipedia.org/wiki/Dynamic_application_security_testing\">DAST</a>, secrets management), policy-as-code enforcement, and AI-driven vulnerability prioritization that provides developers with immediate, actionable feedback within their existing workflows.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Scales Infrastructure as Code with Shift-Left Security Practices\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/cloudflare-security-shift-left/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768208400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 通过实施'左移'基础设施即代码（IaC）策略，显著提升了其基础设施安全性和开发速度，在其全球网络中自动化策略执行并在部署前捕获错误配置。",
+  "oneSentenceSummary": "Cloudflare 通过实施'左移'基础设施即代码（IaC）策略，显著提升了其基础设施安全性和开发速度，在其全球网络中自动化策略执行并在部署前捕获错误配置。",
+  "summary": "Cloudflare 通过'左移'安全方法成功扩展了其基础设施即代码（IaC）实践，消除了数百个生产账户中的手动配置错误。面对潜在的全球错误配置传播挑战，该公司采用了将所有基础设施配置视为代码的策略，强制执行强制性同行评审，并将自动化安全检查集成到其 CI/CD 流水线中。该系统每天处理约 30 个合并请求，在部署前使用约 50 个关键安全策略防止安全违规。该实现利用了 Terraform 与 Cloudflare Terraform Provider、Atlantis、GitLab 以及用于安全状态管理的自定义 Go 程序（tfstate-butler）。策略执行依赖于 Open Policy Agent（OPA）和 Rego。吸取的关键经验教训包括使用 cf-terraforming 实用程序加速采用、通过自动检测防止配置漂移，以及确保 API 与 OpenAPI 生成的 Terraform Provider 保持一致。这种主动模型不仅能防止事件发生，还能提高工程信心和速度，与更广泛的行业趋势——持续和自动化安全验证——保持一致。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 为 IaC 采用'左移'安全策略以主动防止错误配置。",
+      "explanation": "将安全验证移至开发的最早阶段，Cloudflare 在部署前对所有基础设施即代码变更强制执行自动化策略检查和同行评审，从而大幅减少错误和修复成本。"
+    },
+    {
+      "point": "该解决方案利用 Terraform、Atlantis、GitLab、OPA 和自定义工具进行全面的 IaC 管理。",
+      "explanation": "Cloudflare 集成了一套工具，包括用于资源调配的 Terraform、用于工作流的 Atlantis、用于 SCM 的 GitLab、用于策略执行的 OPA，以及用于安全状态管理的自定义 `tfstate-butler`，以构建稳健且安全的 IaC 流水线。"
+    },
+    {
+      "point": "通过创新解决方案克服了 IaC 采用和漂移方面的关键挑战。",
+      "explanation": "Cloudflare 使用 `cf-terraforming` 进行代码生成以解决初始采用障碍，并通过自动检测和修复来缓解配置漂移，确保所需状态对齐。"
+    },
+    {
+      "point": "自动化安全验证既改善了安全状况，又提高了工程速度。",
+      "explanation": "通过将安全嵌入开发工作流，Cloudflare 在防止事件发生的同时提高了开发人员的信心和速度，证明了安全可以成为推动者而非阻碍者。"
+    }
+  ],
+  "keyQuotes": [
+    "这种左移方法将安全验证移至开发的最早阶段，在修复成本最低时发现问题。",
+    "该模型旨在预防事件而非事后响应，同时通过让团队确信其变更符合要求来实际提高工程速度。",
+    "Cloudflare 实施了自动漂移检测，该检测持续比较状态文件与已部署的配置，并在检测到差异时自动创建带有服务级别协议的修复工单。",
+    "通过将验证从被动审计转向主动自动化检查，Cloudflare 同时实现了安全性和工程速度的提升。"
+  ],
+  "tags": [
+    "基础设施即代码",
+    "左移安全",
+    "Cloudflare",
+    "Terraform",
+    "DevSecOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 674,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768208400000,
+  "publishDateStr": "01-12",
+  "publishDateTimeStr": "2026-01-12 09:00:00"
+}

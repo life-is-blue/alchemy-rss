@@ -1,0 +1,59 @@
+{
+  "id": "RAW_6e4fc05",
+  "title": "中美数据生意为何冰火两重天？从 Scale AI 看懂 AI 商业模式|对话 Orbifold AI 创始人 Enoch",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6878e86ec5966727151bc0c5",
+  "date": "2025-07-17 12:09:00",
+  "author": "徐文浩，任鑫",
+  "siteName": "AI炼金术",
+  "content": "<p><span>嘉宾：</span></p>\n<p><b><span>Enoch 朱永钉&nbsp;</span></b><span>| 硅谷 AI 公司 Orbifold AI&nbsp; 的创始人，前谷歌、阿里数据专家 。</span></p>\n<p><span>Meta豪掷近150亿美元收购数据公司Scale AI ，一家“数据标注”公司凭什么能撑起近300亿美金的估值 ？数据在AI时代究竟有多贵？</span></p>\n<p><span>为解答这些疑问，我们请来了身处一线的硅谷AI公司Orbifold AI创始人、前阿里和谷歌数据专家Enoch，为我们揭开数据炼金术的神秘面纱。</span></p>\n<p><span>在这期节目中，你将听到：</span></p>\n<p><b><span>天价收购揭秘</span></b><span>：这笔交易中，买的究竟是数据，还是价值50亿美金的创始人 ？</span></p>\n<p><b><span>冰火两重天：</span></b><span>中美数据服务市场为何一个高估值一个难赚钱 ？</span></p>\n<p><b><span>数据的真相</span></b><span>：数据真的枯竭了吗 ？还是每家公司都坐拥一座尚未开采的金矿 ？</span></p>\n<p><b><span>实战方法论</span></b><span>：传统企业如何将自己杂乱的历史数据，转化为能训练AI的“燃料” ？</span></p>\n<p><b><span>出海避坑指南</span></b><span>：华人创始人在硅谷创业，成功的秘诀和要避开的“坑”是什么 ？</span></p>\n<br>\n<p><strong><span>关键结论</span></strong></p>\n<p><b><span>Meta收购案的核心是“人+公司”：</span></b><span>Meta的天价收购不仅是购买Scale AI的数据处理能力和市场地位，更是高价“购买”其创始人Alexandr Wang的领导力、视野和执行力，以期扭转其在AI竞争中的被动局面 。</span></p>\n<p><b><span>数据服务的商业模式决定价值</span></b><span>：美国数据公司之所以估值更高，是因为其商业模式倾向于可规模化的平台或SaaS服务，利润率可以随规模提升。相比之下，国内市场更多是定制化的“保姆式”项目服务，限制了其估值天花板</span></p>\n<p><b><span>数据是AI时代的核心资产和护城河</span></b><span>：高质量、独特且垂直的专有数据是企业在AI时代构建核心竞争力的关键 。数据处理和准备能力正从边缘的“脏活累活”转变为AI价值链的中心环节。</span></p>\n<br>\n<p><strong><span>关键认知</span></strong></p>\n<p><b><span>数据枯竭是伪命题，企业数据是金矿</span></b><span>：公众普遍担心的高质量公开数据即将用尽，但这忽略了企业内部积累的海量、独特的非公开数据 。这些数据是训练垂直领域AI模型的宝库，其价值挖掘才刚刚开始。</span></p>\n<p><b><span>AI训练需从“正反两面”入手</span></b><span>：Pre-training（预训练）主要让模型从“正确”的样本中学会做正确的事。而Fine-tuning和Post-training（后训练）则更侧重于通过负样本和人类反馈（RLHF）告诉模型什么是“错误”的，从而减少幻觉，提升可靠性 。</span></p>\n<p><b><span>“超级对齐”是终极难题</span></b><span>：让AI的价值观与人类对齐（Super Alignment）极其困难。AI会无意识地学习训练数据中隐含的偏见，例如在英文语料中“rock”的出现频率远高于“scissor”，导致AI玩剪刀石头布时出石头的概率畸高 这揭示了数据层面对齐的深层挑战。</span></p>\n<p><b><span>数据服务的未来是平台化</span></b><span>：数据创建（Data Curation）的终极形态将是一个综合性的数据平台，类似于上一代的Data Bricks或Snowflake。它将为企业AI Agent提供数据ETL、管理和工具箱，尤其是在多模态时代，其价值将比传统BI时代大百倍 。</span></p>\n<br>\n<p><strong><span>行动指南</span></strong></p>\n<p><span>对拥有数据的企业的建议：</span></p>\n<p><b><span>从终局思考</span></b><span>：先明确要解决的业务问题，再反向推导需要什么数据、如何处理数据 。</span></p>\n<p><b><span>寻找“好坏案例”</span></b><span>：要训练客服AI，就去分析绩效最好的客服和最差的客服记录，将其分别作为正、负样本来训练模型，这样最有效 。</span></p>\n<p><b><span>用Q&amp;A范式处理非结构化数据</span></b><span>：面对会议录音、访谈等非结构化数据，可以设计一套标准化的问卷（Q&amp;A Pair），用AI或人工从原文中提取答案，形成结构化的“特征-答案”对，作为高质量的微调数据集 。</span></p>\n<br>\n<p><span>对缺乏初始数据的AI创业者的建议：</span></p>\n<p><b><span>先跑起来，积累数据飞轮</span></b><span>：利用现有的基础大模型（如Llama、Deepseek等）快速构建产品原型，先服务用户，在服务过程中积累自己独特的、有价值的数据，形成正向循环 。</span></p>\n<p><b><span>花钱买时间</span></b><span>：如果想快速启动，可以寻找专业的“数据交易”公司，向传统行业里拥有数十年数据积累的企业购买或授权使用其数据集 。</span></p>\n<br>\n<p><span>对计划出海的华人创始人的建议：</span></p>\n<p><b><span>创始人必须肉身在场</span></b><span>：对于To B业务，创始人在美国本地是获取客户信任的基础，远程服务几乎行不通 ()。</span></p>\n<p><b><span>追求团队与资本的多元化</span></b><span>：有意识地让团队、投资方更多元化，吸纳本地人才和VC，这不仅能获得本土化支持（如销售），也能更好地融入当地商业生态，避免被贴上“中国公司”的标签 。</span></p>\n<p><b><span>建立共识，拥抱PLG</span></b><span>：要理解美国创投圈从创始人到投资人都有一个共同目标，即最终要把公司做成“产品驱动增长”（Product-Led Growth）的模式。所有服务和定制化都是为了打磨产品、最终实现规模化的过程 。</span></p>\n<hr>\n<p><strong><span>时间轴</span></strong></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"79\">01:19</a> </span></strong><b><span>嘉宾介绍：</span></b><span>欢迎本期嘉宾Enoch，他在数据领域经验丰富，现在硅谷创业，公司名为Orbifold AI 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"201\">03:21</a> </span></strong><b><span>专业解读Scale AI</span></b><span>：Scale AI究竟是做什么的？Enoch将其核心业务总结为三点：人工众包标注、Fine-tuning支持（如RLHF）和多模态数据准备（Data Curation） 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"431\">07:11</a> </span></strong><b><span>Meta为何天价收购Scale AI？：</span></b><span>Enoch分析了三大原因：创始人Alexandr Wang出色的执行力与客户服务能力 、公司最早进入该领域的成熟经验 ，以及其掌握的行业数据机密 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"648\">10:48</a> </span></strong><b><span>数据的真实价值：</span></b><span>数据为何能值百亿美金？这笔收购中，大约100亿是买公司，50亿是买创始人Alexandr Wang本人 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"817\">13:37</a> </span></strong><b><span>数据枯竭是伪命题：</span></b><span>公众普遍担心的数据枯竭尚未发生，企业内部积累的数据是一个巨大的宝库，其使用才刚刚开始。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"1023\">17:03</a> </span></strong><b><span>Vertical AI的独特价值：</span></b><span>通用大模型无法在所有垂直领域都做到专家级别 ，垂直领域的专业数据对于训练深度、精准的AI至关重要。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"1191\">19:51</a> </span></strong><b><span>中美数据公司的价值差异</span></b><span>：为何美国数据公司估值远超国内？核心在于商业模式不同，美国公司倾向于做成可规模化的平台或SaaS服务，而国内更多是项目制的“保姆式”服务。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"1680\">28:00</a> </span></strong><b><span>Orbifold AI做的是什么？：</span></b><span>Enoch介绍自己的公司更侧重于Scale AI的第三项业务——数据创建（Data Curation），通过API和工作流深度嵌入企业，帮助他们将多模态数据准备成AI可用的格式，但不做人工标注。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"2065\">34:25</a> </span></strong><b><span>传统企业的“数据债”：</span></b><span>AI应用在传统企业面临巨大挑战，数据混乱、系统老旧、信息无法关联是普遍现象 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"3202\">53:22</a> </span></strong><b><span>如何为新的AI应用寻找数据？</span></b><span>：启动阶段可以先用基础模型跑起来积累数据 ，或者寻找专业的“数据猎头”公司花钱购买特定数据集 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"3489\">58:09</a> </span></strong><b><span>企业如何有效利用自有数据？：</span></b><span>Enoch提出一个实用方法论：设计针对性的Q&amp;A对（特征提取），从现有资料中生成大量的问答对作为训练集，进行模型微调，效果往往超出预期 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"3865\">01:04:25</a> </span></strong><b><span>在中美做数据业务的体感差异：</span></b><span>工作本质相似，但商业文化不同 。美国创投圈对“产品驱动增长”（Product-Led Growth）有共识，发展路径更清晰 。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"4058\">01:07:38</a> </span></strong><span>给华人创始人的出海建议：做To B业务，创始人肉身在硅谷是建立信任的基础 。同时，要注意投资方和团队成员的多元化与平衡。</span></p>\n<p><strong><span><a class=\"timestamp\" data-timestamp=\"4576\">01:16:16</a> </span></strong><b><span>AI Agent的数据挑战与“超级对齐”：</span></b><span>Agent的训练数据更难获取 。这引出了“超级对齐”（Super Alignment）的概念，即如何让AI的决策和价值观与人类对齐，这是数据层面需要解决的核心难题 。</span></p>\n<br>\n<p><strong><span>欢迎订阅「AI 炼金术」的播客，以及同名公众号、视频号</span></strong><span>&nbsp;</span></p>\n<p><span>「AI 炼金术」是一档由徐文浩和任鑫——两位多年老友、AI 领域的资深从业者——打造的播客。这里是探讨 AI 和创业的理想聚集地，我们会邀请一线创业者、产品产品和科研学者，深入探讨 AI 如何重塑行业、变革生活，以及如何从 0 到 1 打造 AI 原生产品。&nbsp;</span></p>\n<p><span>我们的讨论会涵盖多个话题：从 AI 如何改变世界的未来，到如何找到 AI 创业的 PMF；从如何利用 AI 降本增效，到怎样将 AI 技术融入日常生活……如果你对 AI、产品、创业感兴趣，这里有满满的干货和一线实战经验，欢迎关注并推荐给你的朋友，共同探索未来的无限可能！&nbsp;</span></p>\n<p><span>商务合作：公众号 「AI炼金术 」菜单栏中【商务】获取联系方式&nbsp;</span></p>\n<br>\n<p><strong><span>节目主理人：</span></strong><span>&nbsp;</span></p>\n<p><b><span>徐文浩：</span></b><span>某AI创业公司联合创始人，正在面向全球市场开发AI应用。连续创业者，参与过多家创业公司，拼多多早期员工。广告科技公司MediaV的算法和数据负责人，后被360收购。离开后加入成立不到1个月的拼多多。后创办了基于AI的海外客服聊天机器人公司 BotHub.AI 和 海外社交电商平台 Bukito 都宣告失败。2023年再次下场创业。&nbsp;</span></p>\n<p><b><span>任鑫：</span></b><span>云九资本合伙人，主要在投资和孵化面向全球市场的 AI 应用。之前是连续创业者，曾经打造“今夜酒店特价”用移动互联网应用特价销售酒店尾房；被京东并购后内部创业“京东到家”开展本地即时零售业务；2015 年再次创业 Get 探索对话式人工智能助理成为先烈；2021 年出售公司，2023 年重新回到 AI 世界。</span></p>\n<br>\n<p><strong><span>BGM：</span></strong></p>\n<p><b><span>片尾：</span></b><span>Vansire - Kind of a Nice Time</span></p>\n<br>",
+  "aiSummary": "深度剖析了 AI 时代数据作为核心资产的价值、中美数据商业模式的差异，以及 AI 创业者如何利用数据构建竞争壁垒并应对出海挑战。",
+  "oneSentenceSummary": "深度剖析了 AI 时代数据作为核心资产的价值、中美数据商业模式的差异，以及 AI 创业者如何利用数据构建竞争壁垒并应对出海挑战。",
+  "summary": "本期播客深入探讨了 AI 时代数据的重要性及其在商业模式中的体现。嘉宾 Enoch 朱永钉，作为硅谷 AI 公司 Orbifold AI 的创始人，结合 Meta 收购 Scale AI 的案例，揭示了数据公司高估值背后的逻辑，强调创始人领导力、行业经验和数据秘密是关键因素。对话详细分析了中美数据服务市场商业模式的巨大差异：美国倾向于可规模化的平台或 SaaS 服务，而中国多为定制化的“保姆式”项目服务，这直接影响了公司估值。播客还驳斥了“数据枯竭”的观点，指出企业内部积累的非公开数据是巨大的金矿，并提出了将杂乱历史数据转化为 AI“燃料”的实战方法论，如利用 Q&A 范式处理非结构化数据。此外，节目为华人 AI 创业者提供了宝贵的出海避坑指南，强调创始人肉身在场、团队与资本多元化以及拥抱产品驱动增长（PLG）模式的重要性。整体讨论围绕数据处理、模型训练、AI 应用与创业机遇，为技术从业者提供了全面的行业洞察。",
+  "mainPoints": [
+    {
+      "point": "AI 时代数据是核心资产，企业内部数据是未被开采的金矿。",
+      "explanation": "高质量、独特的专有数据是构建 AI 核心竞争力的关键，企业内部积累的海量非公开数据具有巨大价值，数据枯竭是伪命题。"
+    },
+    {
+      "point": "中美数据服务商业模式存在显著差异，直接影响公司估值。",
+      "explanation": "美国倾向于可规模化的平台或 SaaS 服务，利润率高；中国多为定制化项目服务，限制了其估值天花板，导致冰火两重天的局面。"
+    },
+    {
+      "point": "AI 模型训练需结合“正反两面”数据，人机协作是未来方向。",
+      "explanation": "预训练让模型从正确样本中学习，后训练（如 RLHF）通过负样本减少幻觉，提升可靠性；AI 应作为助手，人机协作确保代码质量和安全。"
+    },
+    {
+      "point": "华人 AI 创业者出海需肉身在场，并注重团队与资本多元化。",
+      "explanation": "对于 To B 业务，创始人在美国本地是获取客户信任的基础；多元化团队有助于融入本地生态，理解并拥抱产品驱动增长模式是成功关键。"
+    }
+  ],
+  "keyQuotes": [
+    "我自己认为其实 Scale AI 应该是有三个主要的业务：人工众包标注、Fine-tuning 支持（如 RLHF）和多模态数据准备（Data Curation）。",
+    "在收购的时候，很多用 Scale AI 的公司纷纷逃离，就是因为我用什么数据，我向 Scale 采购什么服务，其实我是知道你在训练什么事情，你今年聚焦在做什么事儿，对 Scale 来说它可以一清二楚。",
+    "为何美国数据公司估值远超国内？核心在于商业模式不同，美国公司倾向于做成可规模化的平台或 SaaS 服务，而国内更多是项目制的'保姆式'服务。",
+    "我觉得数据枯竭是伪命题，因为数据肯定是枯竭不了，数据一定是生产的，生产的会越来越多。当你的 AI 能力越来越强的时候，数据的生产也会越来越多。",
+    "我觉得这属于 super alignment 的范畴，就是让 AI 能够符合你的期望。"
+  ],
+  "tags": [
+    "AI数据",
+    "Scale AI",
+    "数据标注",
+    "数据策展",
+    "AI模型训练"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 92,
+  "wordCount": 3361,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_29b54a",
+  "sourceName": "AI炼金术",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1752754140000,
+  "publishDateStr": "2025-07-17",
+  "publishDateTimeStr": "2025-07-17 12:09:00"
+}

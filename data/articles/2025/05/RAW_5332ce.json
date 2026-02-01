@@ -1,0 +1,59 @@
+{
+  "id": "RAW_5332ce",
+  "title": "代码、多模态检索全面登顶 SOTA！智源 BGE 向量模型三连击，并全面开放 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-05-20-9",
+  "date": "2025-05-20 06:21:58",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p>检索增强技术在代码及多模态场景中的发挥着重要作用，而向量模型是检索增强体系中的重要组成部分。针对这一需求，近日，智源研究院联合多所高校研发了三款向量模型，包括代码向量模型 BGE-Code-v1，多模态向量模型 BGE-VL-v1.5 以及视觉化文档向量模型 BGE-VL-Screenshot。这些模型取得了代码及多模态检索的最佳效果，并以较大优势登顶 CoIR、Code-RAG、MMEB、MVRB 等领域内主要测试基准。BGE 自 2023 年 8 月发布以来，已成为中国首个登顶 Hugging Face 榜首的国产 AI 模型以及 2023 年所有发布模型的全球下载量冠军。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/e530f1e0-8cf9-4c48-8944-8423fd505000/public\" data-ratio=\"0.8824074074074074\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486032\" data-original-style=\"null\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/394595ba-1cdc-4877-b5a2-9feec79cdc98/640.png\" alt=\"图片\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>目前，BGE-Code-v1、BGE-VL-v1.5、BGE-VL-Screenshot 三款模型已向社区全面开放，为相关技术研究与产业应用提供助力。</p>\n  <p><strong>BGE-Code-v1：</strong></p>\n  <ul>\n   <li>\n    <p>模型地址：https://huggingface.co/BAAI/bge-code-v1</p></li>\n   <li>\n    <p>项目主页：https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_Coder</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2505.12697</p></li>\n  </ul>\n  <p><strong>BGE-VL-v1.5：</strong></p>\n  <ul>\n   <li>\n    <p>模型地址：https://huggingface.co/BAAI/BGE-VL-v1.5-zs</p></li>\n   <li>\n    <p>项目主页：https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_VL</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2412.14475</p></li>\n  </ul>\n  <p><strong>BGE-VL-Screenshot：</strong></p>\n  <ul>\n   <li>\n    <p>模型地址：https://huggingface.co/BAAI/BGE-VL-Screenshot</p></li>\n   <li>\n    <p>项目主页：https://github.com/FlagOpen/FlagEmbedding/tree/master/research/BGE_VL_Screenshot</p></li>\n   <li>\n    <p>论文链接：https://arxiv.org/abs/2502.11431</p></li>\n  </ul>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c4d967dd-9ea3-45a6-6f05-5f69c9af1c00/public\" data-ratio=\"0.37222222222222223\" data-s=\"300,640\" data-type=\"jpeg\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485991\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/866f107e-d911-4d12-81e2-7a5096cda26d/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">由智源研究院主导研发的通用向量模型系列 BGE，旨在为各类数据提供高效一站式向量表征与语义检索方案，已推出覆盖中英文、多语言检索及重排模型等多个版本，持续刷新 MTEB、C-MTEB、BEIR、MIRACL 等主流文本向量评测基准。BGE 凭借高性能与开源特性备受业界关注，已广泛应用于 RAG、神经搜索等场景，累计下载超 6 亿次，被国内外多家 AI 企业集成。\n  </section>\n  <p>目前，检索增强技术正从传统的文本场景逐步拓展至涵盖代码与视觉等多模态数据的应用。然而，相较于文本领域，现有向量模型在代码和视觉模态中的检索效果仍有待提升。此次智源研究院发布的三款新模型，为构建更强大的多模态检索增强系统提供了有力的支持。</p>\n  <p><strong>BGE-Code-v1&nbsp;&nbsp;</strong><strong>新一代代码优化语义向量模型</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d3b22df2-1ed2-409b-39f2-b0cda07df300/public\" data-ratio=\"0.7222222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485965\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/7f6c8485-e5b7-4849-9d03-757b8a1ff563/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>随着基础模型代码能力快速发展，Cursor、Copilot 等辅助编程工具大幅提升生产力。在面对百万行级代码库时，代码块检索增强需求凸显，因此检索模型的代码理解能力至关重要。</p>\n  <p><strong>BGE-Code-v1</strong> 是以 Qwen2.5-Coder-1.5B 为基座打造的新一代代码向量模型，专为各类代码检索相关任务而设计，同时配备了强大的多语言文本理解能力。模型基于 CoIR 训练集和大量高质量代码 - 文本的合成数据进行训练，并使用课程学习，以 BGE-gemma2-multilingual 的 retrieval、STS 数据为辅助，进一步提升代码与文本的理解能力。BGE-Code-v1 适用于开发文档搜索、代码库语义检索、跨语言信息获取等多种实际应用场景，是面向代码 - 文本检索任务的最优选择。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5c6ab6e1-aa0a-403e-51d1-d3b335f01d00/public\" data-ratio=\"0.2611111111111111\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503486013\" data-original-style=\"null\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/e4ea71f7-475a-4d00-a080-14211f1fcc81/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p>CoIR 代码检索基准，收集了覆盖 14 种编程语言的 4 大类 8 个子任务，能够有效地评估模型在自然语言和代码的各类混合场景中的检索能力。CodeRAG-Bench 基准评估了代码检索模型在代码检索增强（RACG）中的表现。BGE-Code-v1 在两个基准上均以显著优势超越谷歌、Voyage AI、Salesforce、Jina 等商业 / 开源模型，登顶 SOTA。</p>\n  <p><strong>BGE-VL-v1.5 &nbsp;通用多模态检索模型</strong></p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250520063758_e5c18a\" data-ratio=\"0.575\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485967\" data-original-style=\"null\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/aa80494b-7016-49a0-826b-05b975b39452/640.gif\" data-order=\"0\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BGE-VL-v1.5 完成多模态检索任务</sup></p>\n  <p><strong>BGE-VL-v1.5</strong> 是基于 LLaVA-1.6（7.57B 参数）训练的新一代通用多模态检索模型，全面升级了图文理解能力并具有更强大的检索能力。BGE-VL-v1.5 在 MagePairs 300 万 (3M) 图文对齐数据基础上又收集了共 100 万条自然与合成数据（涵盖 image-captioning 数据、视觉问答数据、分类任务数据）进行多任务训练，显著地提升了模型在各类任务上的泛化性与理解能力。</p>\n  <p>基于 MegaPairs 数据，BGE-VL-v1.5 在多模态检索任务中性能优势显著，不仅在图像检索中表现强劲，更在通用多模态场景中展现高适应性与准确率，适用于图文匹配、多模态问答、跨模态推荐等场景。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/7097fb73-a52f-4b74-1151-2909646b3a00/public\" data-ratio=\"0.3574074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485968\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/ca02fc4c-0283-49a8-9e0d-e337ef32aa7d/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>左为 BGE-VL-v1.5-zs 和其他 zero-shot 模型在MMEB上的表现，右为 BGE-VL-v1.5-MMEB 在 MMEB 基准检索任务上的表现</sup></p>\n  <p>MMEB 是当前使用最广泛的多模态向量基准，由：分类、视觉问答、检索、视觉基础知识，四类任务构成。基于 zero-shot 设置（未使用 MMEB 训练集），BGE-VL-v1.5-zs 在 MMEB 基准中刷新 zero-shot 模型最佳表现；在检索任务上，基于 MMEB 微调的 BGE-VL-v1.5-MMEB 以 72.16 分登顶 SOTA。</p>\n  <p><strong>BGE-VL-Screenshot &nbsp;实用强大的视觉化文档向量模型</strong></p>\n  <p>实际场景中网页、文档等多模态任务常由图文、符号、图表等多元素混合数据构成，这类任务称为 “可视化信息检索”（Vis-IR），因此，多模态模型不仅需要具备从复杂结构中提取关键信息的视觉能力，还需精准理解文本与视觉语义。目前，现有检索模型在此类任务中表现欠佳。</p>\n  <section>\n   <img data-src=\"https://image.jido.dev/20250520063758_524f88\" data-ratio=\"0.575\" data-s=\"300,640\" data-type=\"gif\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485969\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/b39c8805-83d6-41ca-ab09-84699ba63808/640.gif\" data-order=\"1\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; BGE-VL-Sc 基于截图与文本检索</sup></p>\n  <p><strong>BGE-VL-Screenshot</strong> 模型基于 Qwen2.5-VL-3B-Instruct ，以新闻、商品、论文、文档、项目主页等七类数据源进行训练，收集超过 1300 万张截图和 700 万组标注截图问答样本。</p>\n  <p>为了准确评估模型在 Vis-IR 任务上的表现，团队设计并推出了多模态检索基准&nbsp;<strong>MVRB </strong>(Massive Visualized IR Benchmark，榜单链接：https://huggingface.co/spaces/BAAI/MVRB_leaderboard)，涵盖截图检索、复合截图检索、截图 QA 和开放分类 4 项任务共 20 个数据集。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/76334872-6060-4078-f56e-fba28a103f00/public\" data-ratio=\"0.3435185185185185\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503485970\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/c88b1c00-8eaa-4c0c-a5b2-e98d5df47581/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 左为多语言 MVRB 测评结果，右为不同尺寸多模态检索模型 MVRB 评测结果对比</sup></p>\n  <p><span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin-left: 8px;margin-right: 8px;line-height: 1.75em;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">BGE-VL-Screenshot 在 4 项任务中表现出色，<strong>以 60.61 的综合得分达到 SOTA</strong>。在此基础上，通过少量 query2screenshot 多语言数据训练，模型实现了在英文之外的<strong>多语言任务</strong>上的出色表现。</span></p>\n  <p>智源研究院将继续深耕向量模型与检索增强技术，进一步提升 BGE 模型系列的能力与通用性。未来期待与更多科研机构与产业伙伴合作，共同推动检索与人工智能发展。欢迎广大研究者与开发者关注并使用 BGE 系列模型，共建开放繁荣的开源生态。</p>\n </body>\n</html>",
+  "aiSummary": "智源发布 BGE 系列代码及多模态向量模型，全面登顶多项基准。",
+  "oneSentenceSummary": "智源发布 BGE 系列代码及多模态向量模型，全面登顶多项基准。",
+  "summary": "针对现有向量模型在代码及多模态检索中效果有待提升的挑战，智源研究院联合多所高校发布了三款 BGE 系列向量模型：BGE-Code-v1 (代码)、BGE-VL-v1.5 (通用多模态) 和 BGE-VL-Screenshot (视觉化文档)。这些模型在 CoIR、Code-RAG、MMEB、MVRB 等领域主要测试基准上取得 SOTA 效果。文章介绍了各模型基于的基座、训练数据特点及其在不同场景下的应用潜力，如代码检索、多模态问答、视觉化信息检索等。所有模型已全面开放，为检索增强技术在代码及多模态领域的应用提供有力支持。",
+  "mainPoints": [
+    {
+      "point": "智源 BGE 系列新模型在代码和多模态检索领域达到 SOTA",
+      "explanation": "最新发布的 BGE-Code-v1、BGE-VL-v1.5、BGE-VL-Screenshot 在多个核心基准上显著超越现有模型，刷新了代码及多模态检索的最佳效果。"
+    },
+    {
+      "point": "针对代码、通用多模态和视觉化文档发布了专用向量模型",
+      "explanation": "三款模型分别优化，满足不同模态数据的检索需求，增强了检索增强技术在复杂场景下的应用能力，覆盖更广阔的技术范围。"
+    },
+    {
+      "point": "新模型已全面开源，赋能社区研究与产业应用",
+      "explanation": "智源将 SOTA 模型开放给社区，降低了技术门槛，加速了基于这些模型的 RAG、神经搜索等应用的研发与落地，促进了生态发展。"
+    },
+    {
+      "point": "推出了针对特定任务的新多模态检索基准",
+      "explanation": "为更准确评估模型在代码和视觉化信息检索上的表现，智源团队推出了如 CoIR、CodeRAG-Bench 和 MVRB 等新基准，推动了领域评估标准化。"
+    }
+  ],
+  "keyQuotes": [
+    "这些模型取得了代码及多模态检索的最佳效果，并以较大优势登顶 CoIR、Code-RAG、MMEB、MVRB 等领域内主要测试基准。",
+    "目前，BGE-Code-v1、BGE-VL-v1.5、BGE-VL-Screenshot 三款模型已向社区全面开放，为相关技术研究与产业应用提供助力。",
+    "BGE-Code-v1 适用于开发文档搜索、代码库语义检索、跨语言信息获取等多种实际应用场景，是面向代码 - 文本检索任务的最优选择。",
+    "基于 zero-shot 设置（未使用 MMEB 训练集），BGE-VL-v1.5-zs 在 MMEB 基准中刷新 zero-shot 模型最佳表现。",
+    "为了准确评估模型在 Vis-IR 任务上的表现，团队设计并推出了多模态检索基准 **MVRB**。"
+  ],
+  "tags": [
+    "向量模型",
+    "检索增强",
+    "代码检索",
+    "多模态检索",
+    "视觉化信息检索"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 91,
+  "wordCount": 2434,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1747722118000,
+  "publishDateStr": "2025-05-20",
+  "publishDateTimeStr": "2025-05-20 06:21:58"
+}

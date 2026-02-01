@@ -1,0 +1,68 @@
+{
+  "id": "RAW_20b6ab",
+  "title": ".NET 10 预览版 5 带来 Blazor 可观测性(Observability)、XAML 简化等新特性",
+  "url": "https://www.infoq.com/news/2025/06/dotnet-10-preview-5/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-06-28 13:18:00",
+  "author": "Almir Vuk",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Earlier this month, Microsoft announced the release of <a href=\"https://github.com/dotnet/core/discussions/9927\">.NET 10 Preview 5</a>, delivering updates across multiple components, including ASP.NET Core, .NET MAUI, Windows Presentation Foundation (WPF), and Entity Framework Core. As reported, this preview introduces new features and improvements aimed at enhancing developer productivity, application observability, and customization.</p>\n   <p>Regarding ASP.NET Core, a <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/aspnetcore.md#configure-custom-security-descriptors-for-httpsys-request-queues\">new capability</a> allows developers to configure custom security descriptors for <em>HTTP.sys</em> request queues via the <em>RequestQueueSecurityDescriptor</em>&nbsp;property in <em>HttpSysOptions</em>. As stated, this feature offers better control over access to request queues at the OS level.</p>\n   <p>Additionally, <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/aspnetcore.md#validation-resolver-apis-marked-as-experimental\">validation resolver </a>APIs supporting Minimal APIs have been marked as experimental to allow future modifications, though the top-level <em>AddValidation</em>&nbsp;APIs remain stable.</p>\n   <p><a href=\"https://www.openapis.org/\">OpenAPI</a> generation has been improved with support for version 3.1. The release also extends metadata extraction from <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/aspnetcore.md#openapi-metadata-from-xml-doc-comments\">XML documentation</a>, recognizing <em>&lt;returns&gt;</em> and <em>&lt;response&gt;&nbsp;</em>tags for response descriptions.</p>\n   <p>Furthermore, the Blazor framework introduces a&nbsp;method for easier&nbsp;rendering of <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/aspnetcore.md#add-a-not-found-page-using-the-blazor-router\"><em>Not Found</em>&nbsp;pages</a> by specifying a <em>NotFoundPage</em>&nbsp;component in the router configuration. As mentioned in the release notes, this approach is prioritized over the older <em>NotFound</em>&nbsp;fragment and is now included in default project templates.</p>\n   <pre>\r\n<code class=\"language-aspnet\">&lt;Router AppAssembly=\"@typeof(Program).Assembly\" NotFoundPage=\"typeof(Pages.NotFound)\"&gt;\r\n    &lt;Found Context=\"routeData\"&gt;\r\n        &lt;RouteView RouteData=\"@routeData\" /&gt;\r\n        &lt;FocusOnNavigate RouteData=\"@routeData\" Selector=\"h1\" /&gt;\r\n    &lt;/Found&gt;\r\n    &lt;NotFound&gt;This content will be ignored because we have NotFoundPage defined.&lt;/NotFound&gt;\r\n&lt;/Router&gt;</code></pre>\n   <p>Notable addition in the Preview 5 is the introduction of detailed <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/aspnetcore.md#blazor-metrics-and-tracing\">metrics and tracing capabilities</a> for Blazor apps. As noted, Metrics are published via dedicated meters for components, lifecycle events, and server circuits.</p>\n   <p>Tracing uses a new <em>Microsoft.AspNetCore.Components</em>&nbsp;activity source includes detailed instrumentation for navigation, event handling, and circuit lifecycles.</p>\n   <p>With a note that developers can enable these diagnostics by configuring OpenTelemetry to collect data from the corresponding sources and meters.</p>\n   <pre>\r\n<code class=\"language-aspnet\">builder.Services.ConfigureOpenTelemetryMeterProvider(meterProvider =&gt;\r\n{\r\n    meterProvider.AddMeter(\"Microsoft.AspNetCore.Components\");\r\n    meterProvider.AddMeter(\"Microsoft.AspNetCore.Components.Lifecycle\");\r\n    meterProvider.AddMeter(\"Microsoft.AspNetCore.Components.Server.Circuits\");\r\n});\r\n\r\nbuilder.Services.ConfigureOpenTelemetryTracerProvider(tracerProvider =&gt;\r\n{\r\n    tracerProvider.AddSource(\"Microsoft.AspNetCore.Components\");\r\n});</code></pre>\n   <p>\n    <br>\n    In <a href=\"http://&lt;HybridWebView WebResourceRequested=\" hybridwebview_webresourcerequested=\"\">.NET MAUI</a>, support has been added for <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/dotnetmaui.md#xaml-global-namespaces\">XAML Global</a> and <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/dotnetmaui.md#xaml-global-namespaces\">Implicit Namespaces</a>. These features simplify markup by allowing developers to use controls without specifying multiple <em>xmlns</em>&nbsp;declarations. A new global namespace can include custom views, converters, and third-party libraries, enabling cleaner and more maintainable XAML.\n   </p>\n   <p>Implicit namespaces can be activated through project properties, reducing the need for verbose declarations. However, Microsoft notes that tooling errors may occur while this feature remains in preview.</p>\n   <p>For more information on these features, <em><a href=\"https://devblogs.microsoft.com/dotnet/author/davidortinau/\">David Ortinau</a></em>, principal product manager at Microsoft, has published a <a href=\"https://devblogs.microsoft.com/dotnet/simpler-xaml-in-dotnet-maui-10/\">dedicated blog post </a>covering the latest updates in .NET MAUI.</p>\n   <p>Another notable addition to .NET MAUI is the ability to intercept web requests in <em>HybridWebView</em>. This is now possible by handling the <em>WebResourceRequested</em>&nbsp;event;&nbsp;developers can alter or block requests, enabling scenarios such as injecting custom headers or serving local resources.</p>\n   <pre>\r\n<code class=\"language-markup\">&lt;HybridWebView WebResourceRequested=\"HybridWebView_WebResourceRequested\" /&gt;</code></pre>\n   <p>The update for .NET for Android and Apple platforms, such as iOS, macOS, and tvOS,&nbsp;primarily focuses on quality and stability improvements. Specific details are available in the respective GitHub repositories.</p>\n   <p><a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/wpf.md\">WPF</a> introduces a shorthand syntax for <em>Grid.RowDefinitions</em>&nbsp;and <em>Grid.ColumnDefinitions</em>, making XAML as explained, more concise, and this will improve&nbsp;Hot Reload support.</p>\n   <p>Font and globalization enhancements include the addition of the <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/wpf.md#font-and-globalization-updates\"><em>simsun-extg</em></a>&nbsp;font to improve rendering in East Asian languages. Also, the <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/wpf.md#fluent-theme-improvements\">Fluent theme</a> has been refined, addressing crashes and improving styling for RTL layouts. Performance gains were achieved by reducing memory allocations and removing unused code paths.</p>\n   <p>Lastly, <a href=\"https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview5/efcore.md#customdefaultconstraintnames\">Entity Framework Core 10</a> Preview 5 brings the ability to define custom names for default constraints, providing more control over database schema generation. Developers can now assign constraint names directly in model configuration or enable automatic naming for all default constraints using <em>UseNamedDefaultConstraints</em>.</p>\n   <p>For interested readers, <a href=\"https://github.com/dotnet/core/discussions/9927\">full release notes</a> with all updates, fixes, and known issues are available through <a href=\"https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-10/overview\">Microsoft’s official documentation</a> and <a href=\"https://github.com/dotnet/core\">GitHub repositories</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\".NET 10 Preview 5 Brings Blazor Observability, XAML Simplification and More\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Almir Vuk\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/06/dotnet-10-preview-5/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1751116680000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": ".NET 10 预览版 5 引入了 Blazor 增强的可观测性(Observability)、.NET MAUI 中简化的 XAML 语法，以及 ASP.NET Core、WPF 和 Entity Framework Core 中的其他开发效率提升。",
+  "oneSentenceSummary": ".NET 10 预览版 5 引入了 Blazor 增强的可观测性(Observability)、.NET MAUI 中简化的 XAML 语法，以及 ASP.NET Core、WPF 和 Entity Framework Core 中的其他开发效率提升。",
+  "summary": "微软的 .NET 10 预览版 5 为其生态系统带来了重大更新，重点关注开发者生产力和应用可观测性(Observability)。主要改进包括 Blazor 的新指标(Metrics)和追踪(Tracing)功能以提升监控能力、.NET MAUI 的 XAML 全局和隐式命名空间以简化 XAML 代码，以及 WPF 中网格(Grid)定义的简写语法。ASP.NET Core 增强了对 OpenAPI 3.1 的支持和安全配置，而 Entity Framework Core 引入了默认约束(Default Constraints)的自定义命名。这些更新共同提升了 .NET 平台构建现代应用的能力，尤其有利于使用 Web、移动和桌面技术的全栈开发者。",
+  "mainPoints": [
+    {
+      "point": "Blazor 新增详细指标和追踪功能以增强可观测性(Observability)",
+      "explanation": "基于 OpenTelemetry 的新指标(Metrics)和追踪(Tracing)功能提供了对组件、生命周期事件和服务器回路(Server Circuits)的细粒度可见性，显著改善了 Blazor 应用的调试和性能监控。"
+    },
+    {
+      "point": ".NET MAUI 通过全局和隐式命名空间革新 XAML 开发",
+      "explanation": "这些特性消除了冗长的 xmlns 声明，使 XAML 代码更简洁且更易维护，特别是在跨平台移动开发中使用自定义视图和第三方库时。"
+    },
+    {
+      "point": "WPF 通过网格简写和主题改进提升开发者体验",
+      "explanation": "网格(Grid)定义的新简洁语法简化了 XAML 编写，同时 Fluent 主题的改进解决了从右到左布局(RTL)问题并减少了内存分配，提升了开发效率和性能。"
+    },
+    {
+      "point": "Entity Framework Core 引入可自定义的默认约束(Default Constraints)命名",
+      "explanation": "此更新让开发者能够精确控制数据库架构(Schema)生成，支持通过 UseNamedDefaultConstraints 进行显式命名或自动约定，提高了数据库的可维护性。"
+    },
+    {
+      "point": "ASP.NET Core 通过 OpenAPI 3.1 和安全增强推进 API 开发",
+      "explanation": "改进的 OpenAPI 生成现在可以从 XML 文档标签中提取元数据，而 HTTP.sys 的自定义安全描述符提供了操作系统级别的访问控制，增强了 API 文档和安全性。"
+    },
+    {
+      "point": "ASP.NET Core 中的 XML 文档处理改进",
+      "explanation": "对 XML 文档中 <returns> 和 <response> 标签的增强识别实现了更好的自动 API 文档生成，提升了 API 使用者的开发体验。"
+    }
+  ],
+  "keyQuotes": [
+    "指标(Metrics)通过专用于组件、生命周期事件和服务器回路(Server Circuits)的指标收集器(Meter)发布。",
+    "追踪(Tracing)使用新的 Microsoft.AspNetCore.Components 活动源(ActivitySource)，包含导航、事件处理和回路生命周期(Circuit Lifecycles)的详细检测。",
+    "这些特性通过允许开发者使用控件而无需指定多个 xmlns 声明来简化 XAML 代码。",
+    "开发者现在可以直接在模型配置(Model Configuration)中分配约束名称，或使用 UseNamedDefaultConstraints 为所有默认约束(Default Constraints)启用自动命名。",
+    "builder.Services.ConfigureOpenTelemetryMeterProvider(meterProvider => { meterProvider.AddMeter('Microsoft.AspNetCore.Components');...});",
+    "Fluent 主题已优化，解决了崩溃问题并改进了从右到左布局(RTL)的样式。"
+  ],
+  "tags": [
+    ".NET",
+    "ASP.NET Core",
+    "Blazor",
+    ".NET MAUI",
+    "WPF"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 599,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1751116680000,
+  "publishDateStr": "2025-06-28",
+  "publishDateTimeStr": "2025-06-28 13:18:00"
+}

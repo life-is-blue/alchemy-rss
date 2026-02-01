@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ff1147",
+  "title": "[译]专访尤雨溪: 2025 年有什么计划？",
+  "url": "https://juejin.cn/post/7487548882744803355",
+  "date": "2025-03-31 08:29:45",
+  "author": "页面魔术",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body cache result\">\n   <p>近日 <code>Monterail</code> 对尤雨溪进行了一次专访，<code>Monterail</code> 是一家获得认证的 <code>Vue</code> 开发公司，同时也是 <code>Vue</code> 和 <code>Nuxt</code> 的官方合作伙伴。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e1a14bdcbf7c48c48efe911ae58726d4~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6aG16Z2i6a2U5pyv:q75.awebp?rk3s=f64ab15b&amp;x-expires=1744014584&amp;x-signature=IQbbTs3yU9AbYh8yiuKiw7Z%2BWUM%3D\" alt=\"6ccefc4a3c7e8656b9d0537927bd42b5.jpeg\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-0\">Vue 团队现在正在忙什么？</h2>\n   <p><code>尤雨溪</code>：我们现在正在忙 <code>Vue3.6</code>，这是一次重大的重构，绝不仅仅只是版本号 <code>+</code> 了 <code>0.1</code> 而已。比如外星信号（新的响应式系统 <code>Alien Signals</code>）这部分主要由 <code>Johnson Chu</code> 负责，这个库的性能跑分在所有响应式系统库里位列第一，所以我们决定把它移植到 <code>Vue</code> 上来，在 <code>3.6</code> 进行发布。</p>\n   <h2 data-id=\"heading-1\">无虚拟 DOM 模式怎么样了？什么时候可以发布？</h2>\n   <p><code>尤雨溪</code>：这是另一件大事，无虚拟 <code>DOM</code> 的开发工作其实已经暂停了好几个月，但我们现在已经开始重新开搞了。现在正在忙于基准测试，希望它能在 <code>Vue3.6</code> 的时候作为一项实验性功能来发布。</p>\n   <p>也就是说当用户升级到 <code>Vue3.6</code> 之后可以开启 <code>vapor</code> 组件的写法，不过它仍处于实验阶段，因此功能并不完整，但至少我们希望用户能开始用无虚拟 <code>DOM</code> 模式试试。</p>\n   <h2 data-id=\"heading-2\">你在 <code>Vue</code> 这个框架方面面临哪些挑战？</h2>\n   <p><code>尤雨溪</code>：目前最具挑战性的部分就是无虚拟 <code>DOM</code> 版的 <code>Vue</code>，因为我们希望它能和虚拟 <code>DOM</code> 无缝兼容。但毕竟它俩的理念有很大的不同，所以要想让它俩完全兼容的话将会是一项非常艰巨的任务。</p>\n   <p>我们在这方面投入了相当多的精力，其实如果不兼容的话（比如直接发布 <code>Vue4</code>）那就会容易许多。但我们还是希望它能够兼容以前的版本，所以我们会投入很多时间来做这件事。</p>\n   <h2 data-id=\"heading-3\">你为什么决定创建 VoidZero 公司？它将如何影响 JavaScript 的未来？</h2>\n   <p><code>尤雨溪</code>：4年前我创建 <code>Vite</code> 时只是为了支持 <code>Vue</code>，但后来越来越多的框架开始认可了 <code>Vite</code> 并采纳了 <code>Vite</code>。我们那时候已经看出来了 <code>Vite</code> 的趋势，就是成为各种各样不同框架的基础设施层。这带来了很多责任，因为 <code>Vite</code> 现在要作为其它各种框架的 <code>starter</code>。</p>\n   <p>我们一直想在 <code>Vite</code> 上改进些东西，这既是 <code>Vite</code> 的需求，同时又是 <code>JavaScript</code> 生态的需求以及我们认为它将带来的价值的结合。</p>\n   <blockquote>\n    <p>在构思 <code>VoidZero</code> 时，我设想了一个统一的工具链，它可以成为大多数 <code>JavaScript</code> 应用程序的标准基础。这样的解决方案可以减少摩擦，提高开发效率，并使所有 <code>JavaScript</code> 开发人员整体上提高工作效率。</p>\n   </blockquote>\n   <p>但构建这样的项目将会是一个非常雄心勃勃的目标。尽管大家正在将 <code>Vite</code> 和 <code>Vue</code> 作为各自独立的开源项目进行开发，但资金模式无法支持构建整个工具链所需。</p>\n   <p>我需要一支全职团队来负责这件事，这就是我创办 <code>VoidZero</code> 的原因，让这个想法成为一项更严肃的事业：一项真正具有挑战性、意义重大的事业。我们的目标是创造一种更高效、更富有成效的开发体验，尤其是对于大型项目而言。</p>\n   <h2 data-id=\"heading-4\">你们的商业模式是什么？</h2>\n   <p><code>尤雨溪</code>：我们计划在开源 <code>Vite</code> 基金会的基础上提供先进的构建、质量和安全工具。这些工具将更加关注企业需求，并与一个可以洞察整个构建过程的平台集成。</p>\n   <p>我们还希望将面向企业的功能进行收费，并利用利润确保领先的工具链对大多数小公司和独立开发者免费且开源。</p>\n   <h2 data-id=\"heading-5\">这不是统一工具链的第一次尝试，之前还有 Rome 也想做类似的事，但并未获得成功，为什么这次会有所不同呢？</h2>\n   <p><code>尤雨溪</code>：与 <code>Rome</code> 相比，最显著的区别在于他们是从 <code>0</code> 开始的。<code>Rome</code> 的创始人致力于 <code>Babel</code>，但没有在此基础上进行开发。他们创造了一个全新的东西，并且还要切换到 <code>Rust</code> 来完全重写它，这项任务有点太复杂太艰巨了。</p>\n   <p>他们还选择了<code>代码格式化</code>来作为第一个发布的产品，然而<code>代码格式化</code>无法成为开发人员工具链的核心部分，它更像是一个锦上添花的功能。除此之外它无法为用户提供强大的编译功能，因为<code>代码格式化</code>无法提供强大的编译功能，它没有多少“用户忠诚度”。因为大家可以轻松地在各种不同的<code>代码格式化</code>产品之间来回切换。没有什么可以阻止用户今天用 <code>Prettier</code>，然后明天用到其它东西进行格式化，因为仅仅只是一个<code>代码格式化</code>的工具而已。</p>\n   <h2 data-id=\"heading-6\">VoidZero 有什么独特之处？</h2>\n   <p><code>尤雨溪</code>：<code>VoidZero</code> 的不同之处在于我们利用 <code>Vite</code> 来作为基础。它就像一个工具，我们构建这些工具是为了增强 <code>Vite</code>，进一步巩固其在 <code>Web</code> 工具领域的主导地位。</p>\n   <blockquote>\n    <p>另一方面，<code>Vite</code> 也是我们最大的杠杆，几年后它基本上会让我们打造的底层产品成为行业标准。最大的不同是：我们有 <code>Vite</code>，而之前的 <code>Rome</code> 则没有这个优势。</p>\n   </blockquote>\n   <h2 data-id=\"heading-7\">如今，开源和风险投资的世界混杂在一起。你认为这会如何改变科技界？很多人对此有复杂的感受和担忧。你如何解决社区对 VoidZero 的担忧？</h2>\n   <p><code>尤雨溪</code>：这是多种因素的结合，首先，雄心勃勃的想法本身就具有风险。许多开源项目就是因为没钱而影响了其后续的发展，因为程序员没法通过捐赠或者业余时间来从事开源项目从而承担巨大的风险。风险资本支持开源具有积极作用，因为可以将风险从从事开源工作的程序员身上转移出去。</p>\n   <p>另一方面，一些用户担心风险投资会扭曲开源激励机制，这也是可以理解的。但对于 <code>VoidZero</code> 来说，这并不是什么大问题，因为我将多年来建立的所有声誉和名望全都投入到了新创办这家公司里。</p>\n   <blockquote>\n    <p>我最不想做的事情就是剥离开源部分并努力让公司生存下去，也就是说我并不会为了短期的商业目标而损害开源工作的完整性。</p>\n   </blockquote>\n   <p>另一方面是风险投资对这些项目的方向到底会产生多大的影响，这也是人们所担心的，这确实要视具体公司和风险投资公司而定。&nbsp;有些项目看起来更像是被收购，因为会有一些掠夺性的公司试图“购买”开源项目，并且接管后会尽可能的榨取利润。&nbsp;</p>\n   <p>但对于我们来说，情况则完全不同，因为尽管我们筹集了 <code>460</code> 万美元，但投资者实际上只持有公司很少一部分的股份，而且他们没有董事会的席位。</p>\n   <blockquote>\n    <p>我设计整个项目的方式是：即使我们再进行 <code>A</code> 轮融资，我们依然能够保持完全控制权。首先，我们要确保只和真正了解开源并希望看到开源项目取得成功的投资者进行合作。</p>\n   </blockquote>\n   <p>我曾与多位合伙人（尤其是在种子阶段）交谈过，以判断他们是哪种类型的投资者。他们是那种会试图迫使你放弃赚钱但又冒着扭曲项目本身价值的风险投资者，还是愿意致力于创始人的愿景和想法并允许创始人真正充分实现这一愿景的投资者？</p>\n   <p>我们与投资者的合作关系非常好。他们给予我们足够的信任和自由，让我们以正确的方式做事。并且允许我们保留完全的控制权，不会迫使我们做不想做的事情。</p>\n   <h2 data-id=\"heading-8\">对于你所提到的针对企业的收费解决方案是什么？</h2>\n   <p><code>尤雨溪</code>：我现在还不能说得太详细，但总体来说，<code>Vite</code> 是一个开发工具，我们的业务是提高开发人员的效率或生产力。当你考虑开发软件时，规模扩大后，事情就会发生很大变化。开发应用程序的小型开发团队可能已经对 <code>Vite</code> 感到满意，想不出他们愿意为之付费的东西。</p>\n   <p>但大公司中有些团队正在构建非常非常庞大的项目，代码多达一百万行，有三五十个人在同时开发一个项目。他们每天都要努力构建多个版本，并且必须等待每次 <code>PR</code> 审核后才能进行打包构建。</p>\n   <blockquote>\n    <p>我们如何才能让这种规模的运营更有效？这让我开始思考 <code>Vite</code> 能做什么，以及我们可以做些什么来加速这个反馈循环，以确保这些大型项目的代码库的长期质量。</p>\n   </blockquote>\n   <p>因此，我们提供了 <code>linter</code>、代码格式化和打包工具，它们可以以各种方式分析构建输出。由于我们也处理所有代码，因此我们会对用户的代码库如何随时间演变而进行统计。我们有能力为用户提供一个平台，让用户对这方面有更深刻的见解。但总的来说，如果用户使用 <code>JavaScript</code>，它会更加垂直，因为这是我们的专业领域。我们打算比更通用的解决方案更深入地研究这些方面。</p>\n   <p>我们的目标客户是前端和后端均使用 <code>JavaScript</code> 的大型团队，他们想要这种一站式服务，而我们则利用我们的开源工具（他们实际上已经将其作为渠道）尝试让他们加入付费解决方案和服务。</p>\n   <h2 data-id=\"heading-9\">未来五年的 Javascript 将如何变化？</h2>\n   <p><code>尤雨溪</code>： <code>JavaScript</code> 世界有两面性。显然，我希望 <code>VoidZero</code> 能在其中发挥重要作用。我认为 <code>Vite</code> 将继续向前发展，我们将会用 <code>VoidZero</code> 构建的工具来对其进行改进。我希望 <code>Vite</code> 和 <code>VoidZero</code> 工具链将成为行业标准。&nbsp;</p>\n   <p><code>Node</code>、<code>Bun</code> 和 <code>Deno</code> 之间的运行时之争值得关注。我不知道哪一个会赢。但我敢打赌 <code>Node.js</code> 将继续存在，而且它现在可能仍是主导运行时。为什么？因为其他运行时最终与 <code>Node.js</code> 兼容，所以差异化因素在某种程度上正在缩小。</p>\n   <p>部分原因是我们在 <code>VoidZero</code> 构建的工具将使 <code>Node.js</code> 的工具方面与其他运行时的差异更小。用户可以将 <code>VoidZero</code> 工具置于 <code>Node.js</code> 之上，并且无需切换即可获得相同级别的 <code>DX</code> 和稳定性。</p>\n   <h2 data-id=\"heading-10\">往期精彩文章：</h2>\n   <ul>\n    <li><a href=\"https://juejin.cn/post/7485414108277571619\" target=\"_blank\" title=\"https://juejin.cn/post/7485414108277571619\">《尤雨溪荷兰站：Vue11岁啦🎉》</a></li>\n    <li><a href=\"https://juejin.cn/post/7480069116461088822\" target=\"_blank\" title=\"https://juejin.cn/post/7480069116461088822\">《无虚拟DOM到底能快多少？》</a></li>\n    <li><a href=\"https://juejin.cn/post/7469365599132680242\" target=\"_blank\" title=\"https://juejin.cn/post/7469365599132680242\">《尤雨溪：从Vue1到Vue3.6》</a></li>\n    <li><a href=\"https://juejin.cn/post/7477104460452872202\" target=\"_blank\" title=\"https://juejin.cn/post/7477104460452872202\">《无虚拟DOM版Vue为什么叫Vapor？》</a></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "尤雨溪访谈，展望 Vue 3.6、无虚拟 DOM 及 VoidZero 对未来 JavaScript 生态的影响。",
+  "oneSentenceSummary": "尤雨溪访谈，展望 Vue 3.6、无虚拟 DOM 及 VoidZero 对未来 JavaScript 生态的影响。",
+  "summary": "本次 Monterail 对尤雨溪的专访，深入探讨了 Vue 团队的最新动态和未来规划。Vue 3.6 版本将引入全新的响应式系统 Alien Signals，性能大幅提升。无虚拟 DOM 模式的开发也在重启，预计在 Vue 3.6 中作为实验性功能发布。尤雨溪还分享了创建 VoidZero 公司的初衷，旨在构建统一的 JavaScript 工具链，通过构建加速、代码质量分析和安全漏洞检测等企业级工具，提升大型项目的开发效率。商业模式上，VoidZero 计划通过为企业提供先进的构建、质量和安全工具来实现盈利，同时确保开源工具对小型开发者免费。此外，尤雨溪还对未来五年 JavaScript 的发展趋势进行了展望，认为 Vite 将继续发展壮大，Node.js 仍将保持主导地位。尤雨溪的观点体现了他对开源生态的责任感和对技术发展的深刻思考。",
+  "mainPoints": [
+    {
+      "point": "Vue 3.6 将引入高性能响应式系统 Alien Signals",
+      "explanation": "Alien Signals 在性能跑分中位列第一，移植到 Vue 后能显著提升框架性能，优化用户体验。"
+    },
+    {
+      "point": "无虚拟 DOM 模式旨在与现有虚拟 DOM 无缝兼容",
+      "explanation": "兼容性是最大挑战，但能平滑过渡到新架构，避免破坏现有生态，保障开发者利益。"
+    },
+    {
+      "point": "VoidZero 致力于构建统一的 JavaScript 工具链",
+      "explanation": "解决大型 JavaScript 项目构建复杂、维护困难等痛点，提升开发效率和代码质量。"
+    }
+  ],
+  "keyQuotes": [
+    "我们现在正在忙 Vue 3.6，这是一次重大的重构，绝不仅仅只是版本号 + 了 0.1 而已。",
+    "在构思 `VoidZero` 时，我设想了一个统一的工具链，它可以成为大多数 `JavaScript` 应用程序的标准基础。",
+    "我最不想做的事情就是剥离开源部分并努力让公司生存下去，也就是说我并不会为了短期的商业目标而损害开源工作的完整性。"
+  ],
+  "tags": [
+    "尤雨溪",
+    "Vue.js",
+    "Vue3.6",
+    "Vite",
+    "JavaScript"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 13,
+  "score": 90,
+  "wordCount": 3221,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1743409785000,
+  "publishDateStr": "2025-03-31",
+  "publishDateTimeStr": "2025-03-31 08:29:45"
+}

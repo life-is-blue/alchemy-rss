@@ -1,0 +1,59 @@
+{
+  "id": "RAW_80b5d17a",
+  "title": "不用额外缓存！英伟达开源大模型记忆压缩方案，128K 上下文提速 2.7 倍",
+  "url": "https://www.qbitai.com/2026/01/369340.html",
+  "date": "2026-01-14 06:09:53",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"33\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"34\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">提高大模型记忆这块儿，美国大模型开源王者——英伟达也出招了。</p>\n  <p data-track=\"3\">联合Astera研究所、斯坦福大学、UC伯克利、加州大学圣地亚哥分校等机构推出了<strong>TTT-E2E</strong>方法。</p>\n  <p data-track=\"4\">在128K超长文本上处理速度比全注意力模型快2.7倍，处理2M上下文时提速达35倍，性能还不打折。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080936_477d5241e757643c7a895802505ecda1.png\">\n  </div>\n  <p data-track=\"5\">这项技术与前几天大火的DeepSeek条件记忆模块有所不同。</p>\n  <p data-track=\"6\">DeepSeek的Engram模块依赖的是“按需查表”的静态学习路径，而英伟达走的是动态学习的路子，关键在于<strong>上下文压缩</strong>。</p>\n  <p data-track=\"7\">通过实时学习将关键内容压缩到自身权重中，让模型在测试阶段依然保持学习状态。</p>\n  <p data-track=\"8\">这样既避免了额外缓存的负担，又能精准捕捉长文本中的核心逻辑。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080937_37803a6943ea92fc9e6ca60d8937202d.png\">\n  </div>\n  <p data-track=\"10\">TTT-E2E并没有依赖复杂特殊架构，反而是基于带滑动窗口注意力的标准Transformer，容易部署。</p>\n  <p data-track=\"11\">这个方法的核心思路是<strong>将长文本建模从架构设计问题转化为「持续学习」任务</strong>。</p>\n  <p data-track=\"12\">在测试阶段，模型会基于当前读取的上下文进行下一个词预测。</p>\n  <p data-track=\"13\">每读取一段文本，就通过梯度下降更新自身参数，通过这种方式持续训练自身，把读到的文本信息动态压缩到权重中，这样就不用额外存储冗余数据。</p>\n  <p data-track=\"14\">在训练阶段，团队通过元学习为模型做初始化准备，让模型天生适应「测试时学习」的模式。</p>\n  <p data-track=\"15\">把每个训练序列都模拟成测试序列，先在<strong>内循环</strong>中对其进行测试时训练，再在<strong>外循环</strong>中优化模型的初始参数，确保初始状态就能快速适配测试时的学习需求，实现了训练与测试的端到端对齐优化。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080936_363ce552295a2ba130e7c065dccd8a39.png\">\n  </div>\n  <p data-track=\"16\">为了平衡效率与稳定性，TTT-E2E还设计了三项关键优化。</p>\n  <p data-track=\"17\">一是采用「迷你批处理+滑动窗口」的组合策略。将测试时的训练数据分成多个迷你批，配合8K大小的滑动窗口注意力，既解决了单token梯度更新易爆炸的问题，又保证模型能记住批内上下文，提升计算并行度；</p>\n  <p data-track=\"18\">二是精准更新策略。只更新模型的MLP层（冻结嵌入层、归一化层和注意力层），并且只更新最后1/4的网络块，在减少计算成本的同时避免参数更新混乱；</p>\n  <p data-track=\"19\">三是双MLP设计。在需更新的网络块中加入一个静态MLP层，专门存储预训练知识，另一个动态MLP层负责吸收新上下文，来防止模型学新忘旧。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080937_ca3bc380399c741cc49fd422116ba384.png\">\n  </div>\n  <p data-track=\"20\">从实验数据来看，TTT-E2E的表现很亮眼。</p>\n  <p data-track=\"21\">在3B参数模型的测试中，TTT-E2E在128K上下文长度下的测试损失与全注意力Transformer持平甚至更优，而Mamba 2、Gated DeltaNet等同类模型在长文本场景下性能均出现明显下滑；</p>\n  <p data-track=\"22\">在延迟上，它的推理延迟不随上下文长度增加而变化，与RNN类似，在H100显卡上处理128K文本时，速度比全注意力模型快2.7倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080936_0a5fd7b2fb0c197e5ef6d87f0bdbe3fd.png\">\n  </div>\n  <p data-track=\"23\">在解码长序列任务中，经Qwen-8B模型评估，TTT-E2E生成的文本质量稳定，损失值持续低于传统模型。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080938_3ed50c97dadb3d591c909497726a41f8.jpeg\">\n  </div>\n  <p data-track=\"24\">通过实验结果也可以看出，该方法的推理延迟与上下文长度无关，始终保持恒定，这也意味着无论处理8K还是128K文本，用户都能获得一致的快速响应体验。</p>\n  <p data-track=\"25\">不过，TTT-E2E也存在一些小局限。</p>\n  <p data-track=\"26\">在大海捞针这类需要精准回忆细节的任务中，它的表现远不如全注意力模型。</p>\n  <p data-track=\"27\">这是因为它的核心是压缩记忆，会过滤掉看似无关的细节，而全注意力模型能近乎无损地召回所有信息。</p>\n  <p data-track=\"28\">另一方面，训练阶段的元学习需要计算梯度的梯度，目前实现比标准预训练要慢。</p>\n  <p data-track=\"29\">目前，TTT-E2E的代码和相关论文已完全开源。</p>\n  <p data-track=\"30\">这项研究的项目总负责人是斯坦福的博士后研究员Yu Sun，他同时是该研究的核心贡献者。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260114080937_73fec7af9450f160333cb877aae407e8.jpeg\">\n  </div>\n  <p data-track=\"31\">他研究的总体目标是让人工智能系统能够像人类一样持续学习。自2019年以来，他就在开发“测试时训练”的概念框架，TTT-E2E项目的早期构想就是他提出的。</p>\n  <p data-track=\"32\">论文地址：https://arxiv.org/abs/2512.23675\n   <br>\n   代码地址：https://github.com/test-time-training/e2e\n   <br>\n   参考链接：https://x.com/karansdalal/status/2010774529120092481</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "英伟达联合多方发布 TTT-E2E 大模型记忆压缩方案，通过实时上下文压缩到模型权重中，显著提升超长上下文处理速度，128K 上下文提速 2.7 倍，2M 上下文提速 35 倍，且无需额外缓存。",
+  "oneSentenceSummary": "英伟达联合多方发布 TTT-E2E 大模型记忆压缩方案，通过实时上下文压缩到模型权重中，显著提升超长上下文处理速度，128K 上下文提速 2.7 倍，2M 上下文提速 35 倍，且无需额外缓存。",
+  "summary": "英伟达联合多家研究机构推出 TTT-E2E 方法，旨在解决大模型处理超长上下文时速度慢和记忆不足的问题。该方案不同于 DeepSeek 的按需查表，而是采用动态学习和上下文压缩 M 机制，通过在测试阶段利用梯度下降持续更新模型参数，将关键信息压缩进自身权重，无需额外缓存。TTT-E2E 基于标准 Transformer 架构并引入元学习，将长文本建模转化为持续学习任务，通过“迷你批处理+滑动窗口”、精准更新 MLP 层和双 MLP 设计优化效率与稳定性。实验结果显示，TTT-E2E 在 128K 上下文下性能优于现有模型，推理延迟恒定不随上下文增长，显著提速，但其在“大海捞针”类任务上表现不如全注意力模型，且训练阶段元学习计算成本较高。该项目已开源。",
+  "mainPoints": [
+    {
+      "point": "TTT-E2E 通过将长文本信息动态压缩到模型权重中，实现超长上下文提速且无需额外缓存。",
+      "explanation": "该方法将长文本建模视为“持续学习”任务，在测试阶段通过梯度下降实时更新模型参数，将读取的上下文信息内化到 MLP 层，有效避免了传统缓存机制的负担。"
+    },
+    {
+      "point": "该方案基于滑动窗口 Transformer，通过元学习实现训练与测试的端到端对齐，易于部署。",
+      "explanation": "在训练阶段，模型通过内循环测试时训练和外循环优化初始参数，使其天生适应测试时学习模式，提升了模型的泛化能力和部署便捷性。"
+    },
+    {
+      "point": "TTT-E2E 采用多项优化技术，包括“迷你批处理+滑动窗口”、精准更新 MLP 层和双 MLP 设计。",
+      "explanation": "这些优化策略共同确保了效率与稳定性，解决了梯度更新爆炸问题，减少了计算成本，并有效防止了模型在学习新上下文时遗忘旧知识。"
+    },
+    {
+      "point": "实验结果显示，TTT-E2E 在长上下文处理速度和性能上均表现出色，但召回精度在特定任务下仍有局限。",
+      "explanation": "在 128K 上下文下性能与全注意力模型持平甚至更优，推理延迟恒定且大幅提速；但在需要精准回忆细节的“大海捞针”任务中，因其压缩机制表现逊色。"
+    }
+  ],
+  "keyQuotes": [
+    "TTT-E2E 方法在 128K 超长文本上处理速度比全注意力模型快 2.7 倍，处理 2M 上下文时提速达 35 倍，性能还不打折。",
+    "英伟达走的是动态学习的路子，关键在于上下文压缩。通过实时学习将关键内容压缩到自身权重中，让模型在测试阶段依然保持学习状态。",
+    "这个方法的核心思路是将长文本建模从架构设计问题转化为「持续学习」任务。",
+    "为了平衡效率与稳定性，TTT-E2E 还设计了三项关键优化：迷你批处理+滑动窗口、精准更新策略、双 MLP 设计。",
+    "在大海捞针这类需要精准回忆细节的任务中，它的表现远不如全注意力模型。这是因为它的核心是压缩记忆，会过滤掉看似无关的细节。"
+  ],
+  "tags": [
+    "大模型",
+    "上下文优化",
+    "英伟达",
+    "Transformer",
+    "持续学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 90,
+  "wordCount": 1595,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768370993000,
+  "publishDateStr": "01-14",
+  "publishDateTimeStr": "2026-01-14 06:09:53"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "RAW_6836f8",
+  "title": "SFT+RL 双管齐下：ReasonGen-R1 如何破解文生图「指令不遵」难题？ ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-06-16-14",
+  "date": "2025-06-16 09:18:57",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "\n \n \n  <p data-pm-slice=\"0 0 []\"><br></p>\n  <p data-pm-slice=\"0 0 []\">近年来，链式推理和强化学习已经被广泛应用于大语言模型，让大语言模型的推理能力得到了显著提升。然而，在图像生成模型中，这种成功经验尚未得到充分探索。图像生成模型往往直接依据给定文本生成图像，缺乏类似人类创作过程中的推理，导致生成的图像在语义遵循上仍有一定局限。</p>\n  <p>近期，上海科技大学、微软亚洲研究院和复旦大学提出了 ReasonGen-R1 框架，一个两阶段训练框架，将链式推理监督微调（Supervised Fine-tuning）与强化学习（Reinforcement Learning）相结合，以提升自回归图像生成模型的推理和创作能力。ReasonGen-R1 使得自回归图像生成模型可以端到端地在输出图片之前先进行文本「思考」，大幅提升了基座模型的语义遵循能力，并在多个语义指标上取得突破。</p>\n  <p>目前，ReasonGen-R1 已全面开源（包括训练、评测代码，训练数据以及模型）。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/bfa8a7cd-be5b-4cab-f9a7-988e8dfe7d00/public\" data-ratio=\"0.387037037037037\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503490223\" data-original-style=\"null\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/8d5e9612-187e-4ec9-b6d1-11908e1c9a0d/640.png\" alt=\"图片\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <ul>\n   <li>\n    <section>\n     论文标题：ReasonGen-R1: CoT for Autoregressive Image Generation model through SFT and RL\n    </section></li>\n   <li>\n    <p>Arxiv 地址：https://arxiv.org/abs/2505.24875</p></li>\n   <li>\n    <p>代码地址：https://github.com/Franklin-Zhang0/ReasonGen-R1</p></li>\n   <li>\n    <p>项目主页：https://reasongen-r1.github.io</p></li>\n  </ul>\n  <p><strong>方法概览</strong></p>\n  <p>ReasonGen-R1 的训练包括两个核心阶段：监督微调阶段（SFT）以及强化学习阶段（RL）。</p>\n  <p>监督微调阶段首先构建了一个大规模图片生成推理数据集，共包含 20 万条图像-文本对。该数据集基于 LAION 美学子集，利用 GPT-4.1 根据图片自动生成两类描述：一是多样化的简洁图片描述（包括常规叙述、基于标签和以物体为中心的叙述），二是丰富的推理式 CoT（chain-of-thought）叙述。多风格的简洁图片描述设计有效避免了模型在 SFT 阶段对单一 prompt 模式的过拟合。</p>\n  <p>随后，ReasonGen-R1 按照「Prompt → CoT → &lt;img_start&gt; → Image」的 token 顺序进行 SFT 微调，使得基座模型拥有了初步的在图像生成之前进行文本「思考」的能力。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8be5d049-ce20-4908-8756-b55c914acc00/public\" data-ratio=\"0.38981481481481484\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503490224\" data-original-style=\"null\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/8dc279d9-3d2c-4713-929c-65590af9a2cf/640.png\" alt=\"图片\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>图1. ReasonGen-R1 模型架构概览。ReasonGen-R1通过监督微调（SFT）以及强化学习（RL）使得模型可以先进行链式推理，再生成最终图片。</sup></em></p>\n  <p>强化学习阶段通过 Group Relative Policy Optimization（GRPO）进一步优化模型输出。为了有效评价生成输出图像的质量和输入文本-输出图像的一致性，ReasonGen-R1 采用了预训练视觉语言模型 Qwen-2.5-VL-7B 作为奖励模型，让其对于每个输出图片，根据图片以及输入文本是否一致，给出 0、1 奖励。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/808a2cb7-d199-422b-9c39-12a22761e800/public\" data-ratio=\"0.975\" data-s=\"300,640\" data-type=\"png\" data-w=\"320\" type=\"block\" data-croporisrc=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW85Caoe2jxPM5QsEx6jhwXZiaTKXKHqhEHgcZ4T4YsEfPlDM4ATJtBB1ia8V8arBibo90YvzcRLEtvsw/0?wx_fmt=png&amp;from=appmsg\" data-cropx2=\"320\" data-cropy2=\"313\" data-imgfileid=\"503490230\" data-original-style=\"width: 320px;height: 313px;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/f7dfcd00-a772-4ceb-a287-10c61557dc5e/640.png\" alt=\"图片\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 图2. ReasonGen-R1强化学习框架概览。</sup></em></p>\n  <p>此外，为确保训练稳定性，ReasonGen-R1 提出了一种改进的自适应熵损失函数，该损失函数能够将输出 token 的熵动态调节到目标熵附近，有效防止了在文本图像混合强化训练过程中训练不稳定导致模式崩塌的问题。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c97aef23-4a3c-49f8-20a9-61adf92cf800/public\" data-ratio=\"0.0684931506849315\" data-s=\"300,640\" data-type=\"png\" data-w=\"584\" type=\"block\" data-croporisrc=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW85Caoe2jxPM5QsEx6jhwXZk6TKdiarwgIAodgzVCa3D1jjZEU67oSlysHXxgm6vgZxmeAHvkByzDQ/0?wx_fmt=png&amp;from=appmsg\" data-cropx2=\"584\" data-cropy2=\"40.41522491349481\" data-imgfileid=\"503490232\" data-original-style=\"width: 578px;height: 40px;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/91b5b540-f866-45c6-b723-6c79488bdc29/640.png\" alt=\"图片\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><sup>&nbsp; &nbsp; &nbsp; 图3. 自适应熵损失中用于更新熵损失参数的loss function</sup></p>\n  <p><strong>ReasonGen-R1 实验结果</strong></p>\n  <p>团队基于 Janus-Pro-7B 模型对 ReasonGen-R1 进行了全方面测试，选取了三个图像生成语义遵循指标：GenEval、DPG-Bench 以及 T2I-Benchmark。</p>\n  <p>如图 4 所示，ReasonGen-R1 在所有指标上都较基座模型有了显著的提升。这些结果表明，将文本推理通过 SFT-RL 的框架应用于图片生成，能够显著提升自回归图像生成模型的性能。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6f68a027-0e88-4f8d-77fe-3af121db1900/public\" data-ratio=\"0.5259259259259259\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503490227\" data-original-style=\"null\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/d0524fd7-cd53-4397-8b38-e6a38e9f0a5a/640.png\" alt=\"图片\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>图4. 左图：基座模型Janus-Pro-7B和ReasonGen-R1生成图像可视化比较；右图：三个指令遵循指标上的表现比较。ReasonGen-R1在所有指标上均超过了基座模型，体现了指令遵循能力的巨大提升。</sup></em></p>\n  <p>为深入探讨 ReasonGen-R1 各个模块的贡献，研究还进行了以下消融实验：</p>\n  <p><strong>SFT 阶段的作用</strong>：为了测试 SFT 阶段对于模型最终性能的影响，ReasonGen-R1 对比了直接强化学习的结果。如表 1 所示，仅使用强化学习（RL）而未进行监督微调（SFT）时，模型表现显著下降，证明了 SFT 阶段对模型后续强化学习阶段的重要性。</p>\n  <p><strong>奖励模型规模影响</strong>：实验还对比了不同大小的奖励模型。如表 1 所示，较小规模的奖励模型（Qwen-2.5-VL-3B）无法提供足够精准的反馈信号，严重影响强化学习阶段的表现。因此，选择高精度、大规模的奖励模型至关重要。</p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f938a6e3-dfb0-4cd5-edb8-ceb05e661100/public\" data-ratio=\"0.17222222222222222\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503490229\" data-original-style=\"null\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/c16cd0d5-cf24-4018-9ffd-d343c3e0158c/640.png\" alt=\"图片\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; 表1. ReasonGen-R1在GenEval指标上对于架构设计的消融实验</sup></em></p>\n  <p><strong>自适应熵损失函数的稳定作用</strong>：如图 6 所示，在没有熵损失的情况下，模型在经过 100 步的训练后会出现熵爆炸，同时 Reward 开始缓慢下降。另一方面，施加固定熵惩罚（–0.002）会使熵持续下降，并在第 80 步时过低，进而引发图片生成模式崩塌和奖励急剧下滑。这些现象凸显了在交错文本与图像的 RL 训练中，对于熵损失正则化设置的敏感性。相比之下，采用 ReasonGen-R1 提出的自适应熵损失能够将熵保持在最佳范围内，确保训练过程的稳定性以及奖励的稳定增长。</p>\n  <section data-pm-slice=\"1 5 []\">\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c1129581-c154-4134-6264-498a03623a00/public\" data-ratio=\"0.33055555555555555\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503490228\" data-original-style=\"null\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/98b6f1d8-1f78-40e3-a062-afda1f51882a/640.png\" alt=\"图片\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>&nbsp; &nbsp; &nbsp; 图6. 对于各个熵正则化策略在强化学习中的效果比较</sup></em></p>\n  <p><strong>ReasonGen-R1 CoT 分析</strong></p>\n  <section>\n   <img data-src=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/43c34001-1ea4-47e5-1a89-c9cdbf252f00/public\" data-ratio=\"0.41794871794871796\" data-s=\"300,640\" data-type=\"png\" data-w=\"780\" type=\"block\" data-croporisrc=\"https://mmbiz.qpic.cn/sz_mmbiz_png/KmXPKA19gW85Caoe2jxPM5QsEx6jhwXZJl7F0wVhszUt2RUaJktaMtczmDDZKo8qMWZWXiasn5WAPZW3WfBqcxg/0?wx_fmt=png&amp;from=appmsg\" data-cropx2=\"780\" data-cropy2=\"326.5743944636678\" data-imgfileid=\"503490234\" data-original-style=\"width: 578px;height: 242px;\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/d22a9182-657f-43a0-b913-b5a2b714c4d8/640.png\" alt=\"图片\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\">\n  </section>\n  <p><em><sup>图7. 1000次CoT输出中的单词频率。只有出现频率高于20%的单词被展示。出现频率最高的三个</sup></em><sup><em>’</em><em>a, an, the</em><em>’</em></sup><em><sup>被移除以关注保护更多信息的词语</sup></em></p>\n  <p>图 7 展示了 ReasonGen-R1 推理链的模式。首先，它通过「感知」（sense）、「场景」（scene）和「自然」（natural）等高频词（在超过 140% 的 CoT 中出现）来奠定总体框架，强调整体语境和真实场景。接着，它细化视觉风格：诸如「柔和」（soft）、「高光」（highlights）、「氛围」（mood）和「流畅」（sleek）等词汇（均在超过 100% 的 CoT 中出现）用以描述光照质量、情感基调和质感。</p>\n  <p>更关键的是，「突出」（highlighting）和「强调」（emphasizing）这两个词各自在至少 70% 的 CoT 中出现，表明模型有意识地聚焦于主要主体。这揭示出 ReasonGen-R1 不仅仅是在描述物体，而是在主动规划构图焦点。</p>\n  <p>除了核心词汇外，ReasonGen-R1 还运用了大量修饰词——「背景」（background）用于建立环境氛围；「特征」（features）用于突出显著视觉元素；「宁静」（calm）用于渲染平和氛围；「瞬间」（moments）用于传达时间抓拍感；「捕捉」（captured）用于强调摄影真实感；等等——以在每条推理序列中注入细腻的、情境化的细节。</p>\n  <p>总体而言，ReasonGen-R1 的推理链通过场景框架、风格细节、主体聚焦和细节修饰等要素，有效地引导了图像生成过程。</p>\n \n",
+  "aiSummary": "ReasonGen-R1 框架结合 SFT 和 RL，利用链式推理显著提升文生图模型的指令遵循能力。",
+  "oneSentenceSummary": "ReasonGen-R1 框架结合 SFT 和 RL，利用链式推理显著提升文生图模型的指令遵循能力。",
+  "summary": "文章介绍了上海科技大学、微软亚洲研究院和复旦大学提出的 ReasonGen-R1 框架，旨在解决自回归图像生成模型在语义遵循上的局限。该框架采用两阶段训练：首先通过监督微调（SFT）在一个包含 CoT 描述的大规模数据集上，赋予模型生成图片前进行文本“思考”的能力；接着，利用强化学习（RL），通过基于视觉语言模型的奖励机制进一步优化模型输出，提升与输入文本的一致性。文章还提出了自适应熵损失函数以确保训练稳定性。实验结果表明，ReasonGen-R1 在多个语义遵循指标上显著优于基座模型。消融实验证明了 SFT、奖励模型规模以及自适应熵损失的重要性。最后对模型生成的 CoT 模式进行了分析，揭示了其规划构图焦点和注入细节的能力。",
+  "mainPoints": [
+    {
+      "point": "将链式推理（CoT）引入图像生成，提升模型语义遵循。",
+      "explanation": "通过文本“思考”过程，模型能更好地理解和遵循复杂指令，生成更符合用户意图的图像，突破直接生成模型的局限。"
+    },
+    {
+      "point": "ReasonGen-R1 采用 SFT 与 RL 结合的两阶段训练框架。",
+      "explanation": "SFT 阶段初步赋予模型推理能力，RL 阶段通过奖励信号进一步优化输出，是实现指令遵循的关键技术路径。"
+    },
+    {
+      "point": "高质量数据、奖励模型和自适应熵损失对训练至关重要。",
+      "explanation": "构建包含 CoT 的大规模数据集、选择强大的视觉语言模型作奖励以及使用改进的熵损失函数，共同确保了训练效果和稳定性。"
+    }
+  ],
+  "keyQuotes": [
+    "然而，在图像生成模型中，这种成功经验尚未得到充分探索。",
+    "ReasonGen-R1 使得自回归图像生成模型可以端到端地在输出图片之前先进行文本「思考」，大幅提升了基座模型的语义遵循能力。",
+    "将文本推理通过 SFT-RL 的框架应用于图片生成，能够显著提升自回归图像生成模型的性能。",
+    "选择高精度、大规模的奖励模型至关重要。",
+    "相比之下，采用 ReasonGen-R1 提出的自适应熵损失能够将熵保持在最佳范围内，确保训练过程的稳定性以及奖励的稳定增长。"
+  ],
+  "tags": [
+    "文生图",
+    "图像生成",
+    "指令遵循",
+    "链式推理",
+    "强化学习"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 90,
+  "wordCount": 2505,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1750065537000,
+  "publishDateStr": "2025-06-16",
+  "publishDateTimeStr": "2025-06-16 09:18:57"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "RAW_47b2d05d",
+  "title": "AI 编码效率 x10，Bug 风险也 x10",
+  "url": "https://baoyu.io/blog/ai-coding-efficiency-x10-bug-risk-x10",
+  "date": "2025-10-29 04:10:53",
+  "author": "宝玉",
+  "siteName": "宝玉的分享",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"flex flex-col gap-2 mb-4\">\n   <div class=\"flex justify-between\"></div>\n  </div>\n  <img src=\"https://baoyu.io/uploads/2025-10-29/1761711094559.png\" alt=\"AI 编码效率 x10，Bug 风险也 x10\" class=\"mt-2 mb-6 rounded-xl border bg-muted transition-colors w-full\" loading=\"lazy\">\n  <div class=\"prose prose-lg dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full\">\n   <p data-id=\"7hg7izgg08\">今天看到一篇文章，作者（Joe Mag）是亚马逊的一位工程师，他所在的一个资深工程师团队，过去三个月里借助 Coding Agent，代码产出效率是普通高效团队的 10 倍。</p>\n   <p data-id=\"wzkey9b3j9\">但作者可不像傅老板那样说人类程序员要被替代，毕竟人家是专业程序员，他反而是来浇冷水的。他用亲身经历告诉我们：当你的速度提升 10 倍时，你面临的风险和瓶颈，可能也放大了 10 倍。</p>\n   <p data-id=\"brbx0le6db\">并且“AI Coding”带来了新的变革”——它彻底改变了软件工程中关于“成本”和“收益”的传统计算方式。</p>\n   <p data-id=\"l5dw3olg5e\">他们的用法是这样的：</p>\n   <p data-id=\"okwov0dcdu\">他自己提交的代码里，有 80% 是 AI 写的。但这绝不是“Vibe Coding”。他们管自己的工作流叫 “Agentic Coding”（智能体编码）。AI 在这里扮演一个“能力超强、但没有责任感”的初级程序员。人类工程师则是那个经验丰富的“技术主管”或“架构师”。</p>\n   <p data-id=\"t4f0g2ty5m\">工程师的工作流变成了：</p>\n   <ol>\n    <li>\n     <p data-id=\"sp6hb5cz1f\">拆解任务（自己先想明白，或者和 AI 一起头脑风暴）。</p>\n    </li>\n    <li>\n     <p data-id=\"1nf06gidb7\">给 AI 下指令。</p>\n    </li>\n    <li>\n     <p data-id=\"yjzgjtyzpl\">逐行审查 AI 的输出。</p>\n    </li>\n    <li>\n     <p data-id=\"d9hzg1awr6\">反复迭代，直到对质量完全满意。</p>\n    </li>\n    <li>\n     <p data-id=\"fty1ge222i\">最终提交PR，并为这些代码负全责。</p>\n    </li>\n   </ol>\n   <p data-id=\"59z5sdtgsn\">这里面人的作用是最重要的，并没有闲着，只是把工作重心从手写代码转移到了“提要求”和“代码审查”上。</p>\n   <img src=\"https://baoyu.io/uploads/2025-10-29/1761711077430.png\" data-width=\"100%\" data-align=\"center\">\n   <p data-id=\"vd6ba11ov6\">我以前打过一个比方：如果说 AI 编程就像汽车引擎一样，可以越来越快，但是软件项目交付速度并不会跟着一起变快，因为汽车跑得快，光引擎快还不够，还要考虑路况、司机的能力。</p>\n   <p data-id=\"mha2eh0893\">作者在文章中也用了一个类似的比喻：</p>\n   <blockquote data-id=\"dwm7mog32i\">\n    <p data-id=\"wlj2qbjomi\">当你在赛道上以 200 迈的速度狂飙时，你需要巨大的“下压力”来把车死死按在地面上，否则你会在第一个弯道就飞出去。</p>\n   </blockquote>\n   <p data-id=\"j9an4sizl9\">在软件工程里，“飞出去”指的就是 Bug 和系统崩溃。编码的速度上去了，相应的 Bug 出现的概率和系统奔溃的概率也会跟着上升：</p>\n   <ul>\n    <li>\n     <p data-id=\"zvnfhlutoy\">过去：一个团队可能一年才会遇到一两次严重的生产环境 Bug。</p>\n    </li>\n    <li>\n     <p data-id=\"3om1eeetra\">现在：当你以 10 倍的速度提交代码时，哪怕 Bug 出现的 概率 不变，你遇到 Bug 的 绝对数量 也会翻 10 倍。以前一年一次的事故，现在可能每周都来一次。</p>\n    </li>\n   </ul>\n   <p data-id=\"0uhyuwxoy5\">这种“事故率”是任何团队都难以承受的。而很多吹捧 Vibe Coding 的人有意无意都忽略了这些问题。</p>\n   <p data-id=\"c9kzx990up\">要享受 AI 带来的 10 倍编码速度提升，相应的你也必须要想办法把“出问题的概率”降低 10 倍，甚至更多。</p>\n   <p data-id=\"m4xf3vfc4h\">当然作者也给了一些具体建议：</p>\n   <ol>\n    <li>\n     <p data-id=\"bwmcc8xvsu\">借助 AI 降低本级搭建开发测试环境的成本，做好“风洞测试”</p>\n    </li>\n   </ol>\n   <p data-id=\"qdu3ohttyi\">提高代码质量最好的办法就是加强测试。</p>\n   <p data-id=\"hhkyh9ljjl\">作者一直很推崇一种“风洞测试”的思路。就像造飞机一样，在真正上天前，会把模型放进风洞里吹。</p>\n   <p data-id=\"rpescopqk5\">在软件里，这就是指在本地搭建一个“高仿真模拟环境”。比如，你的系统依赖了 10 个外部服务（数据库、认证、支付等），你就把这 10 个服务全本地运行或者模拟出来。然后，在你的电脑上就能完整地跑一遍端到端的测试，甚至可以模拟各种极端失败情况。</p>\n   <p data-id=\"4fszrpekzc\">这种测试能抓出大量在“组件”之间缝隙中隐藏的 Bug。</p>\n   <p data-id=\"zjch7akvb6\">以前为啥不做？太贵了！模拟和维护这些服务的工作量太大，大多数团队都放弃了。</p>\n   <p data-id=\"fzj6ufcjvw\">现在为什么能做了？AI 擅长干这个！ AI 智能体非常擅长写这种逻辑清晰、行为明确的模拟服务。作者的团队在 AI 的帮助下，只花了几天时间，就为他们那个相当复杂的系统搭建起了一套完整的本地“风洞”。过去要几周甚至几个月的活，现在几天搞定。</p>\n   <ol>\n    <li>\n     <p data-id=\"5vbudqhoe5\">做好持续集成部署（CI/CD）</p>\n    </li>\n   </ol>\n   <p data-id=\"lfedlt8ilc\">早些年瀑布开发的时候，模块划分好后，都是各自开发，开发后再集成，集成时会很多问题，要花很长时间才能稳定下来。后来持续集成开始流行：</p>\n   <blockquote data-id=\"u3wshfufnh\">\n    <p data-id=\"d1vsjzujv7\">越早集成越早可以得到反馈，越频繁集成越是可以减少问题复杂度。</p>\n   </blockquote>\n   <p data-id=\"yisy2ra7bp\">到现在 CI/CD 已经是公认的软件工程最佳实践，但真正做好的团队也不算太多，原因同样也是搭建和维护这样一套流程成本不低。另外还有一个问题就是很多团队虽然做了 CI/CD，但是流程耗时巨长，一个 PR 等所有各种测试、发布跑一遍，少则十分钟，多则上个小时。</p>\n   <p data-id=\"3mbhzs34n1\">以前没有 AI 的时候，这些问题还不明显，现在 AI 能力强了反而成了障碍。特别像汽车引擎速度上来了，还是跑在土坑路上。</p>\n   <p data-id=\"feupfsf2hn\">所以 CI/CD 也需要跟着一起升级，把反馈循环从“小时级”压缩到“分钟级”。 你需要一套快到夸张的基础设施，能在几分钟内发现、隔离并回滚有问题的改动，让其他没有问题的改动继续前进。</p>\n   <ol>\n    <li>\n     <p data-id=\"wchgk8a2wm\">决策和沟通系统也要升级</p>\n    </li>\n   </ol>\n   <p data-id=\"fx8sjwnulx\">10 倍的代码产出，意味着也要 10 倍以上的沟通和决策效率。</p>\n   <p data-id=\"5sx4ozj4el\">以前开发个系统，需要各种开会，讨论很久，最后才开工干活，毕竟要依赖其他人的模块，要先定义好协议，否则后面都没法集成。</p>\n   <p data-id=\"brxep7xq9q\">另外各种技术决策也要反复讨论很久，毕竟那时候开发成本高，如果决策错了返工代价太大。</p>\n   <p data-id=\"7vx9w8u03p\">而现在如果还是以前的沟通效率，会极大的拉低整体效率，也许最高效的是尽可能的减少沟通，每个人做的事情尽可能不依赖于其他人。包括我以前提到过的微服务方案，也许在 AI 时代是个不错的选择。</p>\n   <p data-id=\"we0dp97emo\">对技术决策来说，现在反倒是可以有更多机会试错了，不必像以前一样过于严谨的去反复论证技术决策。</p>\n   <p data-id=\"xhd676l0vj\">AI 带来的 10 倍编码速度，它更像是一个给汽车升级了一个全新的“引擎”。如果你只是把它装在原来的“老爷车”上，你得到的不会是 10 倍的速度，而是 10 倍的问题。</p>\n   <p data-id=\"braclrsxad\">AI Coding 的真正价值，不仅仅是写得快，更是它让那些过去“好是好，但太贵”的最佳软件工程实践（比如CI/CD、自动化测试）变得便宜可行了。就像你不仅仅是升级汽车的引擎，还把汽车经常跑的马路一起升级一下，以前的老司机不是让 AI 替代，而是让他们能适应新的高速引擎，给他们舒服和安全的驾驶环境。</p>\n   <hr>\n   <p data-id=\"j7ue7ct4e1\">原文：The New Calculus of AI-based Coding <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://blog.joemag.dev/2025/10/the-new-calculus-of-ai-based-coding.html\">https://blog.joemag.dev/2025/10/the-new-calculus-of-ai-based-coding.html</a> 译文《AI 编程带来的新变革》： <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"link\" href=\"https://baoyu.io/translations/the-new-calculus-of-ai-based-coding.html\">https://baoyu.io/translations/the-new-calculus-of-ai-based-coding.html</a></p>\n  </div>\n  <hr class=\"mt-12\">\n  <div class=\"flex justify-center py-6 lg:py-10\">\n   <a class=\"inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2\" href=\"https://baoyu.io/translations\"> \n    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-chevron-left mr-2 h-4 w-4\">\n     <path d=\"m15 18-6-6 6-6\"></path>\n    </svg>See all posts \n   </a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "AI 编码效率大幅提升，但需同步升级软件工程实践（如测试、CI/CD、决策沟通）以应对放大的 Bug 风险，使过去昂贵的最佳实践变得可行。",
+  "oneSentenceSummary": "AI 编码效率大幅提升，但需同步升级软件工程实践（如测试、CI/CD、决策沟通）以应对放大的 Bug 风险，使过去昂贵的最佳实践变得可行。",
+  "summary": "文章基于亚马逊工程师的经验，深入探讨了 AI 编码带来的效率提升与潜在风险。指出 AI 能将代码产出效率提高 10 倍，但同时也放大了 Bug 和系统崩溃的风险。为有效利用 AI，作者提出“Agentic Coding”工作流，将 AI 视为“能力超强但无责任感”的初级程序员，人类工程师则扮演“技术主管”角色，负责任务拆解、指令下达和代码审查。文章强调，要享受 AI 带来的高速，必须同步升级软件工程的“下压力”，即通过“风洞测试”提升本地测试环境仿真度、优化 CI/CD 流程以实现分钟级反馈，并提高决策与沟通效率。核心观点是 AI 让过去因成本高昂而难以普及的最佳实践变得经济可行。",
+  "mainPoints": [
+    {
+      "point": "AI 编码在提升效率的同时，将 Bug 和系统崩溃风险放大 10 倍。",
+      "explanation": "编码速度的指数级增长，若无相应工程实践升级，会导致 Bug 绝对数量剧增，传统风险承受能力难以应对。"
+    },
+    {
+      "point": "“Agentic Coding”是高效利用 AI 的关键工作流模式。",
+      "explanation": "工程师作为技术主管，负责任务拆解、AI 指令下达、代码审查和最终责任，将重心从手写代码转向高层管理与质量把控。"
+    },
+    {
+      "point": "借助 AI 可大幅降低构建“风洞测试”环境的成本，提升测试覆盖与质量。",
+      "explanation": "AI 擅长模拟复杂外部服务，使高仿真本地测试环境的搭建从数月缩短至几天，有效捕获组件间潜在 Bug。"
+    },
+    {
+      "point": "CI/CD 流程需同步升级至“分钟级”反馈，以匹配 AI 编码速度。",
+      "explanation": "快速的 AI 产出要求更快的集成、测试与部署反馈循环，以迅速发现、隔离并回滚问题代码，保证开发流畅性。"
+    },
+    {
+      "point": "决策和沟通系统应适应 AI 带来的高产出，减少依赖，提高效率。",
+      "explanation": "10 倍的代码产出要求 10 倍以上的沟通决策效率，鼓励减少不必要的会议和讨论，更倾向于快速试错和独立开发。"
+    }
+  ],
+  "keyQuotes": [
+    "当你的速度提升 10 倍时，你面临的风险和瓶颈，可能也放大了 10 倍。",
+    "AI 在这里扮演一个'能力超强、但没有责任感'的初级程序员。人类工程师则是那个经验丰富的'技术主管'或'架构师'。",
+    "当你在赛道上以 200 迈的速度狂飙时，你需要巨大的'下压力'来把车死死按在地面上，否则你会在第一个弯道就飞出去。",
+    "AI Coding 的真正价值，不仅仅是写得快，更是它让那些过去'好是好，但太贵'的最佳软件工程实践（比如 CI/CD、自动化测试）变得便宜可行了。"
+  ],
+  "tags": [
+    "AI编码",
+    "软件工程",
+    "Agentic Coding",
+    "持续集成/持续部署",
+    "自动化测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 91,
+  "wordCount": 2124,
+  "domain": "baoyu.io",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_653b2e",
+  "sourceName": "宝玉的分享",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1761711053000,
+  "publishDateStr": "2025-10-29",
+  "publishDateTimeStr": "2025-10-29 04:10:53"
+}

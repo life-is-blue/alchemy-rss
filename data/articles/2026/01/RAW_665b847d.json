@@ -1,0 +1,59 @@
+{
+  "id": "RAW_665b847d",
+  "title": "Google 推出 Conductor，一个面向 Gemini CLI 的上下文驱动开发扩展",
+  "url": "https://www.infoq.com/news/2026/01/google-conductor/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-13 10:00:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has released <a href=\"https://developers.googleblog.com/conductor-introducing-context-driven-development-for-gemini-cli/\">Conductor</a>, a new preview extension for Gemini CLI that introduces a structured, context-driven approach to AI-assisted software development. The extension is designed to address a common limitation of chat-based coding tools: the loss of project context across sessions.</p>\n   <p>Conductor shifts development context out of transient conversations and into persistent Markdown files stored directly in a repository. These files define product goals, architectural constraints, technology choices, and workflow preferences, and serve as the shared source of truth for both developers and AI agents. The intent is to make AI-assisted development more predictable, reviewable, and reproducible over time.</p>\n   <p>Rather than moving directly from prompt to code, Conductor encourages a planning-first workflow. Developers define specifications and implementation plans before invoking code generation, and these artifacts remain part of the codebase throughout the lifecycle of a feature. This approach is intended to support larger tasks such as feature development, refactoring, and work on established projects, where understanding existing structure and constraints is crucial.</p>\n   <p>A core concept in Conductor is the track, which represents a discrete unit of work. Each track includes a written specification and a task-oriented plan broken into phases and subtasks. Implementation proceeds only after the plan is reviewed, with progress tracked directly in the plan file. Because state is stored in the repository, work can be paused, resumed, or modified without losing context.</p>\n   <p>Early users have highlighted the track-based workflow as a practical improvement over ad-hoc prompting. Devin Dickerson, an engineering and product leader at Forrester, <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7407465019967238146?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7407465019967238146%2C7408224250060378112%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287408224250060378112%2Curn%3Ali%3Aactivity%3A7407465019967238146%29\">said</a>:</p>\n   <blockquote>\n    <p>My favorite thing about this extension is the tracks concept. I had been using the open source version of Conductor on my own prior to this release, and I ended up building my own feature slices. I can throw that away now that tracks are baked in.</p>\n   </blockquote>\n   <p>Conductor also supports team-wide configuration. Projects can define shared standards such as testing strategies, coding conventions, and workflow preferences once and apply them consistently to all AI-assisted contributions. This makes the extension relevant not only for individual developers but also for teams seeking consistency across contributors and machines.</p>\n   <p>Developers experimenting with the preview have pointed to its emphasis on explicit planning and test-driven workflows. Navid Farazmand <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7414757320267575297?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7414757320267575297%2C7415108568544247808%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287415108568544247808%2Curn%3Ali%3Aactivity%3A7414757320267575297%29\">described</a>:</p>\n   <blockquote>\n    <p>I immediately tried to create something similar with .md files when Gemini CLI came out. Conductor is an order of magnitude better—especially the test-driven-development approach it takes.</p>\n   </blockquote>\n   <p>Conductor is available as a preview extension for Gemini CLI and can be installed from its public <a href=\"https://github.com/gemini-cli-extensions/conductor\">GitHub repository</a>. Google has positioned the release as an initial step, with further refinements planned as feedback from developers and teams informs future iterations.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Introduces Conductor, a Context-Driven Development Extension for Gemini CLI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/google-conductor/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1768298400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出 Gemini CLI 扩展 Conductor，通过将项目上下文外部化为持久性 Markdown 文件并利用基于 'track' 的工作流程，实现上下文驱动、结构化和可复现的 AI 辅助软件开发。",
+  "oneSentenceSummary": "Google 推出 Gemini CLI 扩展 Conductor，通过将项目上下文外部化为持久性 Markdown 文件并利用基于 'track' 的工作流程，实现上下文驱动、结构化和可复现的 AI 辅助软件开发。",
+  "summary": "Google 发布了 Conductor，这是 Gemini CLI 的一个新预览版扩展，旨在解决基于聊天的 AI 编码工具普遍存在的上下文保留问题。Conductor 通过将开发上下文（包括产品目标、架构约束和工作流程偏好）外部化为存储在代码库旁边的持久性 Markdown 文件，引入了一种结构化方法。这种方法提倡规划优先的工作流程，开发人员在代码生成之前定义规范和实现计划，使 AI 辅助开发更具可预测性、可审查性和可复现性。一个关键特性是 'track' 概念，它代表了一个具有书面规范和面向任务计划的离散工作单元。这使得工作可以在不丢失上下文的情况下暂停、恢复和修改，相比临时提示有了显著改进。Conductor 还支持团队范围的配置，确保 AI 辅助贡献的一致性标准。早期用户反馈强调了其在显式规划和测试驱动开发方面的有效性。Conductor 已在 GitHub 上提供，Google 计划根据用户反馈进行进一步改进。",
+  "mainPoints": [
+    {
+      "point": "Conductor 通过将开发上下文存储在持久性 Markdown 文件中，解决了 AI 聊天上下文的临时性问题",
+      "explanation": "这种方法确保项目目标、架构约束和其他重要信息始终对开发人员和 AI 智能体可用，从而增强一致性和可复现性"
+    },
+    {
+      "point": "它提倡规划优先的工作流程，要求开发人员在代码生成之前定义规范和计划",
+      "explanation": "这种结构化方法支持更大的开发任务，如功能实现和重构，这些任务受益于对现有项目结构和约束的清晰理解"
+    },
+    {
+      "point": "'track' 概念允许具有嵌入式规范和任务计划的离散、可管理工作单元",
+      "explanation": "Tracks 使开发人员能够分解复杂任务、跟踪进度，并无缝暂停或恢复工作而不丢失上下文，从而提高效率和条理性"
+    },
+    {
+      "point": "Conductor 促进团队范围的配置，以实现一致的 AI 辅助开发标准",
+      "explanation": "此功能有助于在团队内的多个贡献者和机器之间保持编码约定、测试策略和工作流程偏好的一致性"
+    }
+  ],
+  "keyQuotes": [
+    "Conductor 将开发上下文从临时对话转移到直接存储在代码库中的持久性 Markdown 文件中",
+    "Conductor 鼓励规划优先的工作流程，而不是直接从提示转向代码",
+    "Conductor 中的一个核心概念是 track，它代表一个离散的工作单元",
+    "这个扩展我最喜欢的是 tracks 概念。在此版本发布之前，我一直在使用 Conductor 的开源版本，最终构建了自己的功能切片。现在 tracks 内置了，我可以放弃那个了",
+    "Conductor 好了一个数量级——尤其是它采用的测试驱动开发方法"
+  ],
+  "tags": [
+    "Gemini CLI",
+    "Conductor",
+    "AI 辅助开发",
+    "软件工程",
+    "上下文管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 431,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1768298400000,
+  "publishDateStr": "01-13",
+  "publishDateTimeStr": "2026-01-13 10:00:00"
+}

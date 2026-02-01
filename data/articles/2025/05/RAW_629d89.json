@@ -1,0 +1,53 @@
+{
+  "id": "RAW_629d89",
+  "title": "AWS Lambda 推出 CloudWatch Logs 分级定价，扩展日志目标选项",
+  "url": "https://www.infoq.com/news/2025/05/lambda-cloudwatch-logs-tiered/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-05-17 00:00:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS has announced significant updates to Lambda logging, introducing volume-based tiered pricing for <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html\">Amazon CloudWatch Logs</a> and adding <a href=\"https://aws.amazon.com/s3/\">Amazon S3</a> and <a href=\"https://aws.amazon.com/firehose/\">Amazon Data Firehose</a> as new, cost-effective destinations for Lambda logs. Effective May 1st, 2025, these changes aim to reduce logging costs for high-volume Lambda deployments and offer greater flexibility in integrating with a broader range of monitoring tools.</p>\n   <p>The move to tiered pricing is particularly welcome news for AWS customers who have experienced the often-hidden costs associated with CloudWatch Logs. As senior cloud architect Mark Lambert <a href=\"https://www.linkedin.com/posts/lambertmark_aws-lambda-introduces-tiered-pricing-for-activity-7324195076933328896-tKAQ\">noted</a> on LinkedIn:</p>\n   <blockquote>\n    <p>CloudWatch logs are a common hidden cost gotcha for new AWS customers. Without a strategy, you can quickly burn through your cloud budget and erode stakeholder trust.</p>\n   </blockquote>\n   <p>The company categorizes the new tiered <a href=\"https://aws.amazon.com/cloudwatch/pricing/\">pricing model</a> for Lambda logs in CloudWatch Logs as Vended Logs, offering progressively lower per-GB costs as log volume increases. For example, in the US East (N. Virginia) region, costs can decrease from $0.50 per GB for the first 10 TB to as low as $0.05 per GB for over 50 TB monthly. As <a href=\"https://x.com/sandro_vol/\">Sandro Volpicella</a>, a freelance software developer, <a href=\"https://x.com/sandro_vol/status/1918183686190842246\">noted</a> on X:</p>\n   <blockquote>\n    <p>Your CloudWatch Costs could go down by themselves with this launch. AWS counts Logs coming from Lambda now as 'vented logs,' and they come with a volume-tiered pricing model.</p>\n   </blockquote>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2025/05/lambda-cloudwatch-logs-tiered/news/2025/05/lambda-cloudwatch-logs-tiered/en/resources/1Gp7B5UqawAM5_yE-1747297874519.jpg\" style=\"width: 600px; height: 801px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2025/05/lambda-cloudwatch-logs-tiered/en/resources/1Gp7B5UqawAM5_yE-1747297874519.jpg\" rel=\"share\"></p>\n   <p><em>(Source: <a href=\"https://x.com/sandro_vol/status/1918183686190842246\">Tweet from Sandro Volpicella</a>)</em></p>\n   <p>In addition, in a recent Duckbill Group <a href=\"https://www.duckbillgroup.com/blog/lambda-logs-just-got-cheaper/\">blog post</a>, Eric Pullen notes that while this is a significant benefit for heavy loggers, those using under 10 TB per month per account will see no immediate change, as the first tier matches the previous flat rate.</p>\n   <p>Adding S3 and Firehose as direct logging destinations for Lambda functions is also a key development. Pullen highlights that this eliminates the need for complex Lambda-based forwarders and unlocks use cases like long-term compliance archiving on S3, advanced analytics, and easier integration with third-party observability platforms via Firehose. However, he hopes that the pricing for these new destinations will become more competitive to encourage broader adoption.</p>\n   <p>According to Shridhar Pandey and Matthew Barker in the AWS <a href=\"https://aws.amazon.com/blogs/compute/aws-lambda-introduces-tiered-pricing-for-amazon-cloudwatch-logs-and-additional-logging-destinations/\">blog post</a>:</p>\n   <blockquote>\n    <p>These enhancements provide a more straightforward and more cost-effective logging experience for Lambda users.</p>\n   </blockquote>\n   <p>Pullen echoes this sentiment, emphasizing the potential for substantial cost savings for large enterprises. He also cautions that:</p>\n   <blockquote>\n    <p>Any custom-written CloudWatch Log reports will need updating due to the pricing change. Additionally, he reminds users that the tiered pricing applies per AWS account, potentially influencing multi-account strategies.</p>\n   </blockquote>\n   <p>While CloudWatch Logs remains the default logging destination, users can now configure S3 or Firehose as alternatives. AWS encourages users to review the <a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html#FirehoseExample\">documentation</a> and <a href=\"https://aws.amazon.com/cloudwatch/pricing/\">pricing details</a> to optimize their Lambda logging strategies, including considering log levels and retention policies to maximize cost savings from the new tiered pricing.</p>\n   <p><img alt=\"\" src=\"https://d2908q01vomqb2.cloudfront.net/1b6453892473a467d07372d45eb05abc2031647a/2025/04/30/ComputeBlog-2366-img2.png\" style=\"width: 600px; height: 278px;\" rel=\"share\"></p>\n   <p><em>(Source: Amazon Compute <a href=\"https://aws.amazon.com/blogs/compute/aws-lambda-introduces-tiered-pricing-for-amazon-cloudwatch-logs-and-additional-logging-destinations/\">blog post</a>)</em></p>\n   <p>The new logging features are available in all commercial <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regions_az/\">AWS regions</a> that Lambda and CloudWatch Logs support. Configuration for S3 and Firehose destinations in the Lambda console is initially available in select regions, with more to follow.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Lambda Introduces Tiered Pricing for CloudWatch Logs and Expands Logging Destinations\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/05/lambda-cloudwatch-logs-tiered/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1747476000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS Lambda 升级日志功能，引入分级定价并支持更多日志目标",
+  "oneSentenceSummary": "AWS Lambda 升级日志功能，引入分级定价并支持更多日志目标",
+  "summary": "AWS 更新了 Lambda 日志功能，实施了基于用量的 CloudWatch Logs 分级定价，指定为“供应商日志”。此更改显著降低了每月超过 10 TB 高用量用户的每 GB 成本，解决了常见的隐藏成本。此外，Amazon S3 和 Amazon Data Firehose 作为新的直接日志目标，无需自定义转发解决方案，从而为长期存档、高级分析以及与第三方可观察性工具的更轻松集成提供了灵活性。虽然 CloudWatch Logs 仍然是默认设置，但用户可以选择配置 S3 或 Firehose。这些更新旨在提供更直接和更具成本效益的日志记录体验，尤其有利于大型企业。具有自定义报告的用户可能需要更新其报告。分级定价适用于每个 AWS 账户，影响多账户策略。这些新功能将在所有支持 Lambda 和 CloudWatch Logs 的 AWS 区域逐步推出。",
+  "mainPoints": [
+    {
+      "point": "CloudWatch Logs 的分级定价降低了高用量 Lambda 用户的成本。",
+      "explanation": "为来自 Lambda 的“供应商日志”引入基于用量的分级定价，显著降低了月用量超过 10 TB 的用户的每 GB 成本，直接解决了之前的成本问题。"
+    },
+    {
+      "point": "S3 和 Firehose 作为新的日志目标，更加直接、灵活且具有成本效益。",
+      "explanation": "添加这些目标消除了对复杂转发器的需求，并实现了更轻松的长期存储、分析集成和更轻松地与第三方工具集成。"
+    },
+    {
+      "point": "更新旨在简化 Lambda 用户的日志记录策略并改善成本管理。",
+      "explanation": "这些更新为用户提供了更多选择，可以根据日志量、保留需求和集成要求来优化其日志记录策略，从而节省潜在的成本。"
+    }
+  ],
+  "keyQuotes": [
+    "CloudWatch Logs 常常是 AWS 新用户容易忽略的隐藏成本。如果没有合理的规划，可能会迅速耗尽云预算，并降低利益相关者的信任。",
+    "通过本次更新，您的 CloudWatch 成本有望自动降低。AWS 现在将来自 Lambda 的日志归类为“供应商日志”，并采用分级定价模式。",
+    "这些增强功能为 Lambda 用户提供了更直接和更具成本效益的日志记录体验。"
+  ],
+  "tags": [
+    "AWS Lambda",
+    "CloudWatch Logs",
+    "AWS S3",
+    "AWS Data Firehose",
+    "云日志服务"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 495,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1747440000000,
+  "publishDateStr": "2025-05-17",
+  "publishDateTimeStr": "2025-05-17 00:00:00"
+}

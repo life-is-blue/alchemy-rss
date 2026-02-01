@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8b4a1be6",
+  "title": "Supabase 初学者指南",
+  "url": "https://www.freecodecamp.org/news/supabase-for-beginners/",
+  "date": "2025-12-16 16:33:16",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Supabase is an open-source Backend-as-a-Service (BaaS) platform that provides developers with a powerful set of tools to build applications quickly.</p>\n  <p>This comprehensive video tutorial introduces you to Supabase by building a real-world React.js Sales Dashboard app with authentication, real-time data operations, and secure user management.</p>\n  <p>The app features user authentication with role-based access along with a visualization of aggregated sales deals for each rep, updating in real-time as new deals are added. You’ll also build scalable user profiles which are automatically created upon signup using database triggers, and secure all data with permission-based filtering. By the end, you’ll have a production-ready business application with proper user management, data visualization, and security.</p>\n  <p>Here are the topics covered in this course:</p>\n  <p><strong>Database &amp; Schema Design</strong></p>\n  <ul>\n   <li>\n    <p>Create Supabase projects with multiple related tables</p>\n   </li>\n   <li>\n    <p>Design user profiles with account type categorization</p>\n   </li>\n   <li>\n    <p>Set up database triggers for automated data population</p>\n   </li>\n  </ul>\n  <p><strong>Authentication &amp; Session Management</strong></p>\n  <ul>\n   <li>\n    <p>Configure Supabase Auth for user signup and sign in/out</p>\n   </li>\n   <li>\n    <p>Handle user sessions and JWT authentication</p>\n   </li>\n   <li>\n    <p>Connect authenticated users to their profiles</p>\n   </li>\n  </ul>\n  <p><strong>Data Operations &amp; Real-time Features</strong></p>\n  <ul>\n   <li>\n    <p>Query databases to fetch and display data</p>\n   </li>\n   <li>\n    <p>Aggregate sales data for visualization</p>\n   </li>\n   <li>\n    <p>Create bar chart visualizations of deals by rep</p>\n   </li>\n   <li>\n    <p>Insert new records via forms</p>\n   </li>\n   <li>\n    <p>Set up Realtime subscriptions for live chart updates</p>\n   </li>\n  </ul>\n  <p>Watch the full course on <a target=\"_blank\" href=\"https://youtu.be/Q7P20fHJlm4\">the freeCodeCamp.org YouTube channel</a> (5-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Q7P20fHJlm4\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文通过全面的视频教程介绍了开源 BaaS 平台 Supabase，指导用户构建一个真实的 React.js 销售仪表板，其中包含身份验证、实时数据等功能。",
+  "oneSentenceSummary": "本文通过全面的视频教程介绍了开源 BaaS 平台 Supabase，指导用户构建一个真实的 React.js 销售仪表板，其中包含身份验证、实时数据等功能。",
+  "summary": "本文重点介绍了 Supabase，一个开源的后端即服务（BaaS）解决方案，旨在简化应用程序开发。它主要关注 freeCodeCamp 的 YouTube 频道上一个长达 5 小时的视频教程，该教程演示了如何构建一个 React.js 销售仪表板。此仪表板具备核心功能，例如带基于角色访问的身份验证、聚合销售数据的实时可视化以及安全的用户管理。本教程涵盖了关键方面，例如使用相关表设计 Supabase 项目、配置用户注册/登录的身份验证、处理数据操作（包括查询、用于可视化的聚合以及使用订阅实现实时更新）。它还展示了如何使用数据库触发器创建可扩展的用户配置文件，以及通过基于权限的过滤来保护数据，最终构建出一个可用于生产环境的商业应用程序。",
+  "mainPoints": [
+    {
+      "point": "Supabase 通过提供完整的 BaaS 平台简化了 Web 应用程序开发。",
+      "explanation": "作为一个开源的 BaaS，Supabase 提供了一体化的后端解决方案，让开发人员能够更专注于前端开发和业务逻辑，从而加速开发。"
+    },
+    {
+      "point": "本教程演示了如何构建一个具有核心功能的生产就绪应用程序。",
+      "explanation": "用户将学习如何通过实际示例实现关键功能，例如强大的用户身份验证、安全的数据管理、实时数据可视化以及可扩展的用户配置文件。"
+    },
+    {
+      "point": "利用 Supabase 的实时功能增强了应用程序的交互性。",
+      "explanation": "该视频教程展示了如何集成实时订阅以实现实时数据更新，例如动画图表可视化，使应用程序更加动态并更好地响应用户操作。"
+    }
+  ],
+  "keyQuotes": [
+    "Supabase 是一个开源的后端即服务（BaaS）平台，为开发人员提供了一套强大的工具，可以快速构建应用程序。",
+    "该应用程序具备用户身份验证（带基于角色的访问），以及每个销售代表的聚合销售交易可视化功能，新交易添加时可实时更新。",
+    "通过学习，您将拥有一个具有完善的用户管理、数据可视化和安全性的生产就绪商业应用程序。"
+  ],
+  "tags": [
+    "Supabase",
+    "BaaS",
+    "React.js",
+    "身份验证",
+    "实时数据"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 219,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765902796000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 16:33:16"
+}

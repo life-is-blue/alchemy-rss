@@ -1,0 +1,55 @@
+{
+  "id": "RAW_fc8de5b2",
+  "title": "Cloudflare 通过 Rust 重构提升 CDN 性能与安全性",
+  "url": "https://www.infoq.com/news/2025/10/cloudflare-rust-proxy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-10-28 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>By <a href=\"https://blog.cloudflare.com/20-percent-internet-upgrade/\">adopting Rust for one of its core subsystems</a>, Cloudflare succeeded in reducing response time by 10 ms and boosting performance by 25%. Additionally, the company emphasized that Rust made their system more secure and reduced development time.</p>\n   <p>On the heels of its successful migration to Rust for the <a href=\"https://www.infoq.com/news/2024/03/cloudflare-open-sources-pingora/\">Pingora</a> subsystem, Cloudflare's engineers have rewritten from scratch one of the company's oldest and most critical components, FL, the \"brain of Cloudflare\":</p>\n   <blockquote>\n    <p>FL is the brain of Cloudflare. Once a request reaches FL, we then run the various security and performance features in our network. It applies each customer’s unique configuration and settings, from enforcing WAF rules and DDoS protection to routing traffic to the Developer Platform and R2 [Cloudflare's object store, EN].</p>\n   </blockquote>\n   <p>Cloudflare's architects decided to base FL2 on <a href=\"https://blog.cloudflare.com/introducing-oxy/\">Oxy</a>, their own internal framework for building proxies, which also includes support for monitoring, soft reloads, and dynamic configuration loading and swapping.</p>\n   <p>In particular, Oxy's built-in mechanism for graceful restarts is a critical feature for a proxy, since terminating a process would otherwise break all active connections. To prevent this, when an Oxy instance needs to be terminated, it stops accepting new connections but continues serving existing ones until they end naturally.</p>\n   <p>One critical hurdle for Cloudflare's architects was how to replace a running system that had underpinnes 15 years of Cloudflare products and was still evolving. To prevent their teams from having to implement each new feature twice, once for the LuaJIT-based FL and once for the new Rust-based FL2, they created a layer inside of FL which allowed new modules implemented in Rust for FL2 to run seamlessly.</p>\n   <blockquote>\n    <p>Instead of maintaining a parallel implementation, teams could implement their logic in Rust, and replace their old Lua logic with that, without waiting for the full replacement of the old system.</p>\n   </blockquote>\n   <p>To properly handle such a migration, Cloudflare's architects also defined a clear testing and rollout strategy. For testing, they used Flamingo, a system capable of running thousands of full end-to-end test requests concurrently against both FL1 and FL2. Each change is rolled out gradually, and at each stage it is fully tested against increasing traffic and benchmarked to make sure performance and resource usage remain acceptable.</p>\n   <p>Another key mechanism was FL2 ability to pass any request it could not handle to FL1. This <em>fallback</em> mechanism was essential for gradually increasing FL2 usage without compromising the overall stability of Cloudflare services. During the rollout, as FL2 matured, it handled a growing proportion of traffic, while the amount of traffic falling back to FL1 decreased correspondingly.</p>\n   <p>The main advantage of building FL2, say Cloudflare architects, is the performance gain it delivers. This can be traced back to two main factors: the fact that FL2 was entirely written in a high-performance language like Rust, rather than using a mix of C, Rust, and Lua code. Additionally, FL1 had to spend quite some time to convert data representation from one language to another. As a result, FL2 requires only half the CPU of FL1 and less than half the memory.</p>\n   <p>As a final note, FL2 also benefits from Rust compile-time security guarantees, reinforced by strong linting and checking rules, as well as strict coding standards, testing and review processes. This has led to a significant reduction in crashes, most of them due to hardware failures.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Rust Rewrite Enables Cloudflare to Boost CDN Performance and Enhance Security\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/10/cloudflare-rust-proxy/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1761685200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 通过 Rust 重写 FL 子系统，显著提升 CDN 性能、降低资源消耗并增强安全性。",
+  "oneSentenceSummary": "Cloudflare 通过 Rust 重写 FL 子系统，显著提升 CDN 性能、降低资源消耗并增强安全性。",
+  "summary": "Cloudflare 成功地将其关键的 FL 子系统，即 CDN 的核心大脑，负责处理安全和性能特性，迁移到一个新的基于 Rust 的版本，名为 FL2。此次重写，继 Pingora 之后，利用了 Cloudflare 内部的 Oxy 代理框架，该框架提供了优雅重启、动态配置等功能。此次迁移带来了 25% 的性能提升，减少了 10 毫秒的响应时间，并将 CPU 和内存使用量减少了一半以上，这主要归功于 Rust 的高性能和消除了跨语言数据转换的开销。替换一个有 15 年历史的系统是一项关键挑战。Cloudflare 通过允许新的 Rust 模块在旧的基于 LuaJIT 的 FL1 中运行，并实施稳健的测试策略 (Flamingo) 和回退机制（FL2 可以将未处理的请求传递给 FL1）来克服这一挑战。这种逐步推广确保了稳定性，同时增加了 FL2 的流量处理能力。此外，得益于 Rust 的编译时安全保证和严格的开发流程，系统崩溃显著减少。",
+  "mainPoints": [
+    {
+      "point": "Rust 重写核心系统带来显著的性能、资源和安全优势。",
+      "explanation": "Cloudflare 基于 Rust 的 FL2 实现了 25% 的性能提升，CPU/内存占用减半，并减少了崩溃，证明了 Rust 对于关键基础设施的价值。"
+    },
+    {
+      "point": "逐步迁移策略对于安全过渡大型、关键的遗留系统至关重要。",
+      "explanation": "Cloudflare 通过在旧系统中运行新的 Rust 模块和回退机制等技术，确保了替换 15 年历史 FL 系统期间的稳定性。"
+    },
+    {
+      "point": "投资于像 Oxy 这样的内部框架可以简化核心服务的开发和运营方面。",
+      "explanation": "Oxy 提供的优雅重启、动态配置等基本代理功能简化了 FL2 的开发和部署，突出了专用工具的价值。"
+    }
+  ],
+  "keyQuotes": [
+    "FL 是 Cloudflare 的大脑。请求一旦到达 FL，我们便会在网络中运行各种安全和性能特性。",
+    "团队无需维护并行实现，可以直接用 Rust 实现逻辑，替换旧的 Lua 逻辑，无需等待旧系统的完全替换。",
+    "这种 *回退* 机制对于逐步增加 FL2 的使用，同时确保 Cloudflare 服务的整体稳定性至关重要。",
+    "因此，FL2 只需要 FL1 一半的 CPU 和不到一半的内存。",
+    "FL2 还受益于 Rust 编译时安全保证，并通过强大的 linting 和检查规则以及严格的编码标准、测试和审查流程来加强。"
+  ],
+  "tags": [
+    "Rust",
+    "性能优化",
+    "系统架构",
+    "Cloudflare",
+    "CDN"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 551,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1761685200000,
+  "publishDateStr": "2025-10-28",
+  "publishDateTimeStr": "2025-10-28 21:00:00"
+}

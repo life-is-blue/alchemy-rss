@@ -1,0 +1,58 @@
+{
+  "id": "RAW_82b198b4",
+  "title": "DuckDB 的 WebAssembly 客户端支持在浏览器中查询 Iceberg 数据集",
+  "url": "https://www.infoq.com/news/2026/01/duckdb-iceberg-browser-s3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-01-04 13:00:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>DuckDB has recently introduced <a href=\"http://duckdb.org/2025/12/16/iceberg-in-the-browser\">end-to-end interaction with Iceberg REST Catalogs directly within a browser tab</a>, requiring no infrastructure setup. The new feature leverages DuckDB-Wasm, a WebAssembly port of DuckDB that runs in the browser, allowing users to query, read, and write Iceberg tables in a serverless manner.</p>\n   <p><a href=\"https://www.linkedin.com/in/carlo-piovesan/\">Carlo Piovesan</a> and <a href=\"https://www.linkedin.com/in/tomebergen/\">Tom Ebergen</a>, software engineers at DuckDB, and <a href=\"https://www.linkedin.com/in/szarnyasg/\">Gábor Szárnyas</a>, head of DevRel at DuckDB, write:</p>\n   <blockquote>\n    <p>While setting up a local DuckDB installation is quite simple, opening a browser tab is even quicker. Therefore, we asked ourselves: could we support the client-is-the-server model directly from within a browser tab? This could provide a zero-setup, no-infrastructure, properly serverless option for interacting with Iceberg catalogs.</p>\n   </blockquote>\n   <p>According to the \"Iceberg in the Browser\" article, the DuckDB team redesigned HTTP interactions across the codebase, implemented a JavaScript networking wrapper in <a href=\"https://duckdb.org/docs/stable/clients/wasm/overview\">DuckDB-Wasm</a>, and routed all Iceberg networking through a common interface, ensuring that both native DuckDB and the browser versions execute identical logic:</p>\n   <blockquote>\n    <p>Interacting with an Iceberg REST Catalog requires a number of functionalities; the ability to talk to a REST API over HTTP(S), the ability to read and write avro and parquet files on object storage, and finally, the ability to negotiate authentication to access those resources on behalf of the user. All of these must be done from within a browser without calling any native components.</p>\n   </blockquote>\n   <p><a href=\"https://github.com/duckdb/duckdb\">DuckDB</a> is an open-source (MIT licensed) analytical database management system designed for fast querying of large datasets directly on a local machine, often described as \"SQLite for analytics.\" DuckDB-Wasm is a WebAssembly port of DuckDB that supports loading extensions. To showcase the new feature, DuckDB has introduced a <a href=\"https://duckdb.org/visualizer/?iceberg\">table visualizer demo</a> that currently works with Amazon S3 Tables.</p>\n   <p>Earlier in 2025, DuckDB added <a href=\"https://duckdb.org/2025/03/14/preview-amazon-s3-tables\">support for Apache Iceberg REST Catalogs</a>, enabling DuckDB users to connect to <a href=\"https://www.infoq.com/news/2025/01/s3-tables-bucket/\">Amazon S3 Tables</a> and Amazon SageMaker Lakehouse. While the community's reaction has been <a href=\"https://www.reddit.com/r/dataengineering/comments/1je3p9e/duckdb_now_provides_an_endtoend_solution_for/\">overwhelmingly positive</a>, some users have questioned the lack of support for <a href=\"https://www.reddit.com/r/dataengineering/comments/1je3p9e/comment/mig2taf/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">other cloud providers</a>.</p>\n   <p>Using the demo, users can substitute their own S3 Tables bucket ARN and credentials to access their own catalogs, metadata, and data, with all computations running locally in the browser. Credentials and warehouse IDs are sent only to the specified catalog endpoint, with SQL queries translated and added to the URL's hash segment. Andrew Warfield, VP and distinguished engineer at Amazon, <a href=\"https://www.linkedin.com/posts/andywarfield_iceberg-in-the-browser-activity-7406776502173851648-edQH/\">comments</a>:</p>\n   <blockquote>\n    <p>A really fun blog post from DuckDB about building browser-based apps with Duck that can operate directly against Iceberg Tables in S3 Tables. The table visualization demo (...) runs against live table data in S3 - super cool!</p>\n   </blockquote>\n   <p>Piovesan, Ebergen, and Szárnyas add:</p>\n   <blockquote>\n    <p>This means that: no sensitive data is handled or sent to duckdb.org. Computations are local, fully in your browser. You can use the familiar SQL interface with the same code snippets that can run everywhere DuckDB runs.</p>\n   </blockquote>\n   <p>A demo of DuckDB querying S3 Tables from a browser was presented as part of the session \"<a href=\"https://www.youtube.com/watch?v=Pi82g0YGklU&amp;\">Amazon S3 Tables architecture, use cases, and best practices</a>\" at AWS re:Invent 2025.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DuckDB's WebAssembly Client Allows Querying Iceberg Datasets in the Browser\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/01/duckdb-iceberg-browser-s3/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1767531600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DuckDB-Wasm 现在支持在浏览器中直接、零配置地查询和交互 Apache Iceberg REST Catalog，为 Amazon S3 等对象存储上的数据分析提供了一种无服务器解决方案。",
+  "oneSentenceSummary": "DuckDB-Wasm 现在支持在浏览器中直接、零配置地查询和交互 Apache Iceberg REST Catalog，为 Amazon S3 等对象存储上的数据分析提供了一种无服务器解决方案。",
+  "summary": "DuckDB 推出了一项新功能，允许用户使用 DuckDB-Wasm 直接在 Web 浏览器中与 Iceberg REST Catalog 进行端到端交互。作为 DuckDB 的 WebAssembly 移植版本，该功能实现了在无服务器、零基础设施设置下对 Iceberg 表的查询、读取和写入。团队重新设计了 HTTP 交互，实现了 JavaScript 网络封装层，并将所有 Iceberg 网络请求路由通过通用接口，以确保原生版本和浏览器版本之间的逻辑一致性。该功能支持与 REST API 交互、处理对象存储上的 Avro 和 Parquet 文件，以及在浏览器内进行身份验证。目前已提供针对 Amazon S3 Tables 的演示可视化工具，用户可以连接自己的 S3 存储桶凭据，所有计算均在浏览器本地运行，确保敏感数据安全。这一进展基于早期对 Apache Iceberg REST Catalog 的支持，并获得了社区的积极反馈，尽管部分用户希望增加对其他云服务商的支持。",
+  "mainPoints": [
+    {
+      "point": "DuckDB-Wasm 现在支持在浏览器中与 Iceberg REST Catalog 进行直接的端到端交互。",
+      "explanation": "此功能允许用户在无需任何基础设施设置的情况下查询、读取和写入 Iceberg 表，直接在浏览器标签页中运行无服务器分析型数据库。"
+    },
+    {
+      "point": "该实现涉及对 DuckDB-Wasm 内部 HTTP 交互和网络机制的全面重新设计。",
+      "explanation": "JavaScript 网络封装层和统一接口确保了原生 DuckDB 及其浏览器版本在 REST API 通信、文件处理和身份验证方面执行完全相同的逻辑。"
+    },
+    {
+      "point": "新功能推动了数据交互的“客户端即服务器”模式。",
+      "explanation": "这种方法提供了对 Iceberg Catalog 的零设置、无基础设施访问，计算在浏览器本地执行，增强了数据隐私和安全性。"
+    },
+    {
+      "point": "敏感数据和计算保留在用户的浏览器本地。",
+      "explanation": "凭据仅发送到指定的 Catalog 端点，SQL 查询安全地嵌入在 URL 的 hash 段中，确保隐私并防止数据传输到 duckdb.org。"
+    }
+  ],
+  "keyQuotes": [
+    "因此，我们问自己：我们能否直接在浏览器标签页中支持‘客户端即服务器’模式？这可以为与 Iceberg Catalog 的交互提供一种零设置、无基础设施、真正的无服务器选项。",
+    "与 Iceberg REST Catalog 交互需要多项功能：通过 HTTP(S) 与 REST API 通信的能力、在对象存储上读写 Avro 和 Parquet 文件的能力，以及代表用户协商身份验证以访问这些资源的能力。所有这些都必须在浏览器内完成，而不调用任何原生组件。",
+    "来自 DuckDB 的一篇非常有趣的博客文章，介绍了如何使用 Duck 构建基于浏览器的应用，并直接操作 S3 Tables 中的 Iceberg 表。表可视化演示（...）针对 S3 中的实时表数据运行——超级酷！",
+    "这意味着：没有任何敏感数据被处理或发送到 duckdb.org。计算是本地的，完全在您的浏览器中。您可以使用熟悉的 SQL 接口，以及可以在运行 DuckDB 的任何地方运行的相同代码片段。"
+  ],
+  "tags": [
+    "DuckDB",
+    "WebAssembly",
+    "Apache Iceberg",
+    "无服务器",
+    "数据分析"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 496,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1767531600000,
+  "publishDateStr": "01-04",
+  "publishDateTimeStr": "2026-01-04 13:00:00"
+}

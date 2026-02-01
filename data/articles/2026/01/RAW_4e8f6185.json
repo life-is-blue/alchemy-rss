@@ -1,0 +1,48 @@
+{
+  "id": "RAW_4e8f6185",
+  "title": "💘 霸道女总裁爱上前端开发的我？！",
+  "url": "https://juejin.cn/post/7593707314739331107",
+  "date": "2026-01-12 05:24:20",
+  "author": "xiaohe0601",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p>我最近也迷上了看短剧，剧中主角反转、逆袭、打脸和不断地爽点可以让我短暂遗忘掉工作的苦闷，沉浸在主角的世界里仿佛一切都很惬意。</p>\n   <p>直到手机电量过低，我才被一把拽回现实 —— 我，依旧是那个在浏览器和控制台里反复横跳的小小前端开发。</p>\n   <p>众所周知，从 AI 元年开始，每天都会有人发表“前端已死”的言论，认为前端就是可有可无的。这无疑会对部分前端造成心理上的打击，这些年掌握的各种优化技巧、工程经验和架构思维，仿佛一夜之间就要被“一句 Prompt”所取代。</p>\n   <p>直到有一天，我刷到这样一张图片……</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/d2974b1f25c84adbba438a68ef5f1466~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=q2S%2B28W%2Fg3Q9F08hGZm3zDtCDrk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>“霸道总裁爱上前端开发的我”，什么？前端终于被大家看到了吗？！我一定要好好欣赏这部佳作！</p>\n   <p>经过一番搜索……</p>\n   <p>可恶，这只是一张 AI 生成的图片，根本就没有这部短剧！</p>\n   <p>这一次我再也忍不下去了，本来打算以普通人的身份跟大家相处，换来的却是疏远，是 AI 生成图片的嘲笑，不装了，我摊牌了，我要自己拍一部短剧来为前端正名！</p>\n   <p>……</p>\n   <p>嘿嘿，可是我根本就不会拍短剧 🤡。</p>\n   <p>不会写剧本，不懂分镜，不认识演员，连“卡！”该什么时候喊都不知道。</p>\n   <p>但那一刻，我看到了桌面上的 Trae，我突然悟了，既然他们能用 AI，那我为什么不能 —— 用 AI 拍一部属于前端的爽剧？</p>\n   <p>参考国产科幻大作《完蛋！我被美女包围了！》，今天我也来做一个《霸道女总裁爱上前端开发的我》剧情互动游戏！</p>\n   <h2 data-id=\"heading-0\">🚀 开始指挥 Trae 干活！</h2>\n   <p>首先整理需求，告诉 Trae 我们要开发一个《霸道女总裁爱上前端开发的我》剧情互动游戏。</p>\n   <p>由于 Trae 不能直接生成剧情图片，所以让他帮忙生成提示词，我们再使用第三方 AI 生成图片。</p>\n   <p>不需要考虑太多，简单编写需求后点击对话框右下角的 ✨ 按钮，即可 AI 自动优化输入内容啦！</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/3c09039b8f964b629e4041a1d7039d2a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=WEVu3K8MEAHxjMHTvG9rmWavlec%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>为了使代码生成质量更理想，这里我们选择使用「Builder with MCP」智能体以及 GLM 4.7 模型。</p>\n   <p>片刻思考后，Trae 生成了完整的任务需求，包括剧情开发、视觉资源处理、数值系统设计和技术实现规范等内容。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/f3606eaf76e14db9bf9b5b77c773b9f9~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=eIp93Aib4OIxXm4efWoxdGQrXbk%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>确认内容无误，狠狠的敲下回车键 ↩️，Trae 就会开始自动规划然后生成代码啦！</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/e5669056749741cba59b9bb9f942ff56~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=ybnye7iwrnHsoFGKsJyWbIM6VVA%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>根据我们的要求，Trae 结合剧情生成了提示词文档，同时创建了对应的占位图资源，使项目可以正常运行。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/299f7bd8ecf44fcbb2aaeb7e9b393faa~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=lkyojCllmDVUaafCN9ikCeeAX7w%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/13801c43a1a54b3abe0fc84488d7e6d2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=nXaNlVGAtsfXO72Mdunn8xrWqQw%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>然后，将提示词发给史上最强大的 AI 图像模型「Nano Banana Pro」为我们生成剧情图片。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/0072ee708c1c4123b4b8d551ae701503~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=pofqZWb8Q9GxbY1DRpMvKaTpKn4%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>再经过 Trae 的一系列修修补补，最后使用「Nano Banana Pro」生成的剧情图片替换掉占位图，就可以开始体验我们的游戏啦！😍</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/7bc3e740bb5d44f2af68d79166ab3636~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=uf2i7GO5%2BI6SYLVHajhmq1pYkB0%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-1\">🎮 在线体验</h2>\n   <p>「霸道女总裁爱上前端开发的我」已通过 Netlify 部署到线上，欢迎体验！</p>\n   <p>👉 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fceo-loves-me.netlify.app\" target=\"_blank\" title=\"https://ceo-loves-me.netlify.app\" ref=\"nofollow noopener noreferrer\">The CEO Loves Me: A Front-End Developer Story</a> (可能需要魔法 🪄 上网)</p>\n   <p>那就来试试你能不能得到年轻漂亮女总裁的青睐吧！💃</p>\n   <h2 data-id=\"heading-2\">🖥️ 源码</h2>\n   <p>项目的完整代码可以在 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Fxiaohe0601%2Fceo-loves-me\" target=\"_blank\" title=\"https://github.com/xiaohe0601/ceo-loves-me\" ref=\"nofollow noopener noreferrer\">ceo-loves-me</a> 仓库中查看。</p>\n   <p>赠人玫瑰，手留余香，如果对你有帮助可以给我一个 ⭐️ 鼓励，这将是我继续前进的动力，谢谢大家 🙏！</p>\n   <h2 data-id=\"heading-3\">😜 我和 Trae 的年度故事</h2>\n   <p>曾经的我，是一个坚定的“古法编程”拥护者，相比依赖 AI，我更相信人对系统整体的把控能力。我始终认为，受限于上下文长度与理解深度，AI 生成的代码往往缺乏真正的全局视角，细节处理也不够克制与严谨 —— 这对于一个有代码整洁强迫症的人来说，几乎是无法接受的妥协。</p>\n   <p>11 月 12 日，TRAE SOLO 中国版正式上线，我第一次尝试使用 Trae 开发，这是我接触的第一款 AI IDE。出乎意料的是，它并没有让我产生“被 AI 主导”的失控感，反而带来了一种前所未有的 Vibe Coding 体验：我更多地在思考「要做什么、为什么这样做」，而具体实现则变成了一种高效且可控的协作过程。这种体验，也让我开始认真反思自己对 AI 编码的固有偏见。</p>\n   <p>借助 TRAE SOLO 我完成了一款「道具版五子棋」游戏的开发，并参与了掘金的【TRAE SOLO 实战赛】。最终，这个项目获得了第 4 名的成绩，同时收获了「AI 技术先锋」证书。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/5f7d3285970f4ca4b675b9508fee64d7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgeGlhb2hlMDYwMQ==:q75.awebp?rk3s=f64ab15b&amp;x-expires=1768809834&amp;x-signature=fCzCCnuTlImoXljoXVCgO7HQdEM%3D\" alt=\"\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>这不仅仅是一场比赛，更像是一次关于开发方式转变的实践验证。</p>\n   <p>回过头来看，Trae 并没有取代我对代码质量的追求，而是放大了我对创意与结构的专注。</p>\n   <p>期待在未来能继续与 Trae 一起，探索更多有意思、也更具挑战性的项目可能性。</p>\n   <h2 data-id=\"heading-4\">🍵 写在最后</h2>\n   <p>我是 xiaohe0601，热爱代码，目前专注于 Web 前端领域。</p>\n   <p>欢迎关注我的微信公众号「小何不会写代码」，我会不定期分享一些开发心得、最佳实践以及技术探索等内容，希望能够帮到你！</p>\n   <h2 data-id=\"heading-5\">📚 推荐阅读</h2>\n   <ul>\n    <li><a href=\"https://juejin.cn/post/7589074117643960355\" target=\"_blank\" title=\"https://juejin.cn/post/7589074117643960355\">每一份收获都值得被纪念：小何的 2025 年度总结</a></li>\n    <li><a href=\"https://juejin.cn/post/7579805639436025908\" target=\"_blank\" title=\"https://juejin.cn/post/7579805639436025908\">五子棋加入道具系统是一种什么体验？我用 TRAE SOLO 实现了！</a></li>\n    <li><a href=\"https://juejin.cn/post/7571846248719581184\" target=\"_blank\" title=\"https://juejin.cn/post/7571846248719581184\">前端不是只会写管理后台，我用 400 行代码画了一个 LABUBU ！</a></li>\n   </ul>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文讲述一位前端开发者如何利用 AI 工具 Trae、GLM 4.7 和 Nano Banana Pro，从零到一实现了一个名为《霸道女总裁爱上前端开发的我》的互动短剧游戏，并分享了拥抱 AI 编程工具的心得。",
+  "oneSentenceSummary": "本文讲述一位前端开发者如何利用 AI 工具 Trae、GLM 4.7 和 Nano Banana Pro，从零到一实现了一个名为《霸道女总裁爱上前端开发的我》的互动短剧游戏，并分享了拥抱 AI 编程工具的心得。",
+  "summary": "文章作者作为一名前端开发者，面对“前端已死”的言论和 AI 生成内容对前端的“嘲讽”，决定利用 AI 工具如 Trae、GLM 4.7 和 Nano Banana Pro，创造一个《霸道女总裁爱上前端开发的我》的互动短剧游戏。文章详细介绍了利用 Trae 从需求整理、剧情生成、提示词编写到代码实现的整个流程，并结合第三方 AI 图像模型来生成视觉资源。作者还分享了从“古法编程”拥护者转变为拥抱 AI 编程工具（如 Trae）的转变心路历程，认为 AI 工具并非取代人工，而是作为高效协作的伙伴，放大开发者的创意与结构设计能力。文章提供了实际项目的在线体验链接和 GitHub 源码，旨在鼓励更多开发者利用 AI 提升创造力。",
+  "mainPoints": [
+    {
+      "point": "利用 AI 工具解决多领域创作难题，实现跨界融合。",
+      "explanation": "作者综合运用 AI 生成剧本、提示词、代码以及 AI 图像生成等能力，成功将前端开发技能与短剧创作结合，展现了 AI 在创意和内容生产方面的潜力。"
+    },
+    {
+      "point": "AI 编程工具能成为开发者的高效伙伴，而非替代者。",
+      "explanation": "作者通过实际项目体验，认识到 AI IDE 如 Trae 能帮助开发者专注于高层思考与创意，将具体的代码实现变为高效协作，从而放大个人价值和工作效率。"
+    },
+    {
+      "point": "AI 在软件开发流程中可扮演自动化与辅助角色。",
+      "explanation": "Trae 在需求分析、生成代码、图片资源占位、提示词生成等环节的介入，展示了 AI 从规划到执行对开发流程的自动化和智能辅助作用。"
+    }
+  ],
+  "keyQuotes": [
+    "不装了，我摊牌了，我要自己拍一部短剧来为前端正名！",
+    "既然他们能用 AI，那我为什么不能 ------ 用 AI 拍一部属于前端的爽剧？",
+    "出乎意料的是，它并没有让我产生“被 AI 主导”的失控感，反而带来了一种前所未有的 Vibe Coding 体验：我更多地在思考「要做什么、为什么这样做」，而具体实现则变成了一种高效且可控的协作过程。",
+    "Trae 并没有取代我对代码质量的追求，而是放大了我对创意与结构的专注。"
+  ],
+  "tags": [],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 83,
+  "wordCount": 1717,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1768195460000,
+  "publishDateStr": "01-12",
+  "publishDateTimeStr": "2026-01-12 05:24:20"
+}

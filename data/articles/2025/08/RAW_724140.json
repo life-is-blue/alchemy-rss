@@ -1,0 +1,55 @@
+{
+  "id": "RAW_724140",
+  "title": "GPT-5、Grok 4、o3 Pro 都零分，史上最难 AI 评测基准换它了 ｜ 机器之心",
+  "url": "https://www.jiqizhixin.com/articles/2025-08-15-11",
+  "date": "2025-08-15 05:12:46",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p data-pm-slice=\"0 0 []\">前沿 AI 模型真的能做到博士级推理吗？</p>\n  <p>前段时间，谷歌、OpenAI 的模型都在数学奥林匹克（IMO）水平测试中达到了金牌水准，这样的表现让人很容易联想到 LLM 是不是已经具备了解决博士级科研难题的推理能力？</p>\n  <p>然而，现实可能并不如想象中那么乐观。</p>\n  <p>AAI，一个专注于超智能和高级 AI 系统研究的机构，近期提出的一个新基准 FormulaOne，让一众大模型集体得零分，包括 GPT-5、o3 Pro、Gemini 2.5 Pro、Grok 4 等前沿模型。</p>\n  <p><img alt=\"image.png\" data-backh=\"223\" data-backw=\"578\" data-imgfileid=\"503501992\" data-ratio=\"0.38550057537399307\" data-src=\"https://image.jido.dev/20250815080746_a58cc0\" data-type=\"png\" data-w=\"869\" data-original-style=\"width: 100%;\" data-index=\"1\" src=\"https://image.jiqizhixin.com/uploads/editor/656fe086-cbec-46b3-b135-a600f7a68fda/640.png\" data-report-img-idx=\"0\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <ul>\n   <li>\n    <p>HuggingFace：https://huggingface.co/spaces/double-ai/FormulaOne-Leaderboard</p>\n   </li>\n  </ul>\n  <p>FormulaOne 包含 220 个新颖的图结构动态规划问题，按难度分为三类，从中等难度直至科研级别。其中最高等级难度的题包括拓扑与几何、组合问题分析等。</p>\n  <p><img alt=\"image.png\" data-backh=\"168\" data-backw=\"578\" data-imgfileid=\"503501994\" data-ratio=\"0.2899628252788104\" data-src=\"https://image.jido.dev/20250815080746_96c82c\" data-type=\"png\" data-w=\"807\" data-original-style=\"width: 100%;\" data-index=\"2\" src=\"https://image.jiqizhixin.com/uploads/editor/d32222cd-9b36-4a2b-adfc-aba052dd7585/640.png\" data-report-img-idx=\"2\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>测试题的具体示例如下：依次是浅层难度、深层难度、更深层难度。</p>\n  <p><img alt=\"image.png\" data-backh=\"166\" data-backw=\"578\" data-imgfileid=\"503501995\" data-ratio=\"0.2876712328767123\" data-src=\"https://image.jido.dev/20250815080746_c86394\" data-type=\"png\" data-w=\"730\" data-original-style=\"width: 100%;\" data-index=\"3\" src=\"https://image.jiqizhixin.com/uploads/editor/0635e6b6-a195-4e0c-a2f8-db990fcb9c66/640.png\" data-report-img-idx=\"1\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><img data-src=\"https://image.jido.dev/20250815080746_7ed328\" alt=\"image.png\" data-ratio=\"0.41379310344827586\" data-type=\"png\" data-w=\"725\" data-backw=\"578\" data-backh=\"239\" data-imgfileid=\"503501996\" data-original-style=\"width: 100%;\" data-index=\"4\" src=\"https://image.jiqizhixin.com/uploads/editor/cd1a7963-3441-4f22-8a1a-731e134b6c7c/640.png\" data-report-img-idx=\"4\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><img alt=\"image.png\" data-backh=\"231\" data-backw=\"578\" data-imgfileid=\"503501997\" data-ratio=\"0.39945652173913043\" data-src=\"https://image.jido.dev/20250815080746_77d7a1\" data-type=\"png\" data-w=\"736\" data-original-style=\"width: 100%;\" data-index=\"5\" src=\"https://image.jiqizhixin.com/uploads/editor/7991ccb8-04ea-4641-8230-b546be3a8096/640.png\" data-report-img-idx=\"3\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p>尽管这些问题陈述起来通常很自然，但其解决方案却远非显而易见。这一大类问题的可解性由 Courcelle 提出的一个<strong>算法元定理</strong>所保证，该定理大致可以表述为：</p>\n  <blockquote>\n   <p>「对于每个足够类似树的图，任何可用一种富有表现力的形式逻辑（一元二阶逻辑）定义的问题，都可以通过一个动态规划算法来解决，且其运行时间与图的阶数成线性关系。」</p>\n  </blockquote>\n  <p>其关键在于使用一种称为<strong>树分解</strong>的结构，它将图的顶点组织成一系列重叠的集合，即「袋」，而这些「袋」本身则以树状结构排列。</p>\n  <p>然后，算法可以遍历这个由「袋」构成的树，并使用动态规划分步解决问题。这个过程涉及到设计一个「<strong>状态</strong>」，该「状态」总结了「袋」内部分解的所有必要信息，然后定义当顶点被引入、遗忘或当「袋」被合并时，该「状态」如何转换。<a href=\"https://mp.weixin.qq.com/s/cyOJ_Id606REj97nCXYqhg\"><img src=\"https://image.jiqizhixin.com/uploads/editor/22562ba3-1c13-4998-8c27-8689927ca704/1755234680607.png\" style=\"width: 700%;\" class=\"fr-fic fr-dib\"></a></p>\n  <section>\n   <span data-cover=\"http%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FKmXPKA19gWicTC6NibIL9aibIbhCSLurHj4kH8NchyM4Eic6vxibNsGqRicGlZ3yicWsbVJZLyIrNib2tb8ZblrCO6TDIw%2F0%3Fwx_fmt%3Djpeg\" data-mpvid=\"wxv_4121029692109307909\" data-ratio=\"1.7777777777777777\" data-src=\"https://mp.weixin.qq.com/mp/readtemplate?t=pages/video_player_tmpl&amp;auto=0&amp;vid=wxv_4121029692109307909\" data-vh=\"370.0125\" data-vidtype=\"2\" data-vw=\"657.8\" data-w=\"1920\" height=\"386\" scrolling=\"no\" width=\"661\"> \n    <div data-key=\"wxv_4121029692109307909\">\n     <div data-v-db5bdc2b=\"\">\n      <div data-v-823ba74e=\"\" data-v-db5bdc2b=\"\">\n       <div data-v-823ba74e=\"\"></div>\n      </div>\n     </div>\n    </div> \n   </span>\n  </section>\n  <p>问题陈述看似简单，但这背后实则掩盖了发现正确动态规划解法的非凡难度。这个过程遍布着微妙的组合与逻辑陷阱，要求（研究者）对问题的底层结构有深刻的理解。关于解决一个名为 <strong>Maximal-Cluster-Graph</strong> 的难题所需的十五个相互依赖的推理步骤，其详细的推演过程请参阅论文的附录。</p>\n  <ul>\n   <li>\n    <p>论文地址：https://arxiv.org/pdf/2507.13337</p>\n   </li>\n  </ul>\n  <p>这个工作在社交媒体上引发了很大关注，许多人表示应该让人类博士生也参与评估。</p>\n  <p><img alt=\"image.png\" data-backh=\"436\" data-backw=\"578\" data-imgfileid=\"503501998\" data-ratio=\"0.7541208791208791\" data-src=\"https://image.jido.dev/20250815080746_50ff30\" data-type=\"png\" data-w=\"728\" data-original-style=\"width: 100%;\" data-index=\"6\" src=\"https://image.jiqizhixin.com/uploads/editor/47128206-21d1-48ce-895d-a33ede2f3f0d/640.png\" data-report-img-idx=\"5\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 70%;\"></p>\n  <p><strong>结果</strong></p>\n  <p>在浅层难度上，顶尖模型的表现达到了 50%–70%，表明它们对相关问题类型已有一定熟悉度，换句话说，这些任务完全处于它们的训练分布之内。</p>\n  <p>在深层难度上，Grok 4、Gemini-Pro、o3-Pro、Opus-4 等模型最多只能解出 1/100 的题目；GPT-5 Pro 表现相对更好，但也只解出了 4/100。</p>\n  <p>在最深层难度上，所有模型的成功率均为 0%，集体崩溃。</p>\n  <p><img alt=\"image.png\" data-backh=\"370\" data-backw=\"578\" data-imgfileid=\"503502000\" data-ratio=\"0.6398148148148148\" data-src=\"https://image.jido.dev/20250815080746_aaf743\" data-type=\"png\" data-w=\"1080\" data-original-style=\"width: 100%;\" data-index=\"7\" src=\"https://image.jiqizhixin.com/uploads/editor/2984877f-781f-4ed2-a798-f6f2b8456c35/640.png\" data-report-img-idx=\"6\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>\n   <br>\n  </p>\n  <h4><strong>AAI</strong></h4>\n  <p>AAI（AA-I Technologies，Double AI）是一家由以色列知名企业家、科学家 Amnon Shashua 于 2023 年 8 月在耶路撒冷创办的人工智能初创公司。</p>\n  <p><img alt=\"image.png\" data-backh=\"281\" data-backw=\"562\" data-imgfileid=\"503502004\" data-ratio=\"0.5\" data-src=\"https://image.jido.dev/20250815080746_923c08\" data-type=\"png\" data-w=\"640\" data-original-style=\"width: 100%;\" data-index=\"8\" src=\"https://image.jiqizhixin.com/uploads/editor/da5d741f-0cbe-45b6-b74c-399c4b44cba4/640.png\" data-report-img-idx=\"7\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>Shashua 是自动驾驶公司 Mobileye、AI21 Labs 和 OrCam 等多个知名项目的创始人，在自动驾驶、人工视觉和 AI 领域具有极高声誉。</p>\n  <p><img alt=\"image.png\" data-backh=\"411\" data-backw=\"562\" data-imgfileid=\"503502005\" data-ratio=\"0.732\" data-src=\"https://image.jido.dev/20250815080746_a48a92\" data-type=\"png\" data-w=\"1000\" data-original-style=\"width: 100%;\" data-index=\"9\" src=\"https://image.jiqizhixin.com/uploads/editor/c053edb2-6af3-4ff0-9901-9f84c00779e3/640.png\" data-report-img-idx=\"8\" data-fail=\"0\" class=\"fr-fic fr-dib\" style=\"width: 700%;\"></p>\n  <p>AAI 的核心目标是推动「人工专家智能」（Artificial Expert Intelligence，AEI）的理论与应用，提出区别于传统窄域 AI 和 AGI 的新 AI 发展路径。这种 AEI 强调将领域知识与严密的科学推理能力相结合，旨在突破「只擅长特定任务」或「泛化无精度」的传统瓶颈，使 AI 可以像顶级人类专家一样，运用严谨推理来解决复杂科学或工程难题。</p>\n  <p>创立一年内，据报道公司已吸引了数千万美元投资，并在 AWS 2024 年生成式 AI 加速器项目中入选（获赠 100 万美元计算资源），加速自身 AI 基础设施建设。</p>\n </body>\n</html>",
+  "aiSummary": "新 AI 评测基准 FormulaOne 让 GPT-5 等前沿大模型在博士级推理任务上集体得零分，揭示了当前 LLM 的推理能力瓶颈。",
+  "oneSentenceSummary": "新 AI 评测基准 FormulaOne 让 GPT-5 等前沿大模型在博士级推理任务上集体得零分，揭示了当前 LLM 的推理能力瓶颈。",
+  "summary": "文章介绍了 AAI 机构推出的最新 AI 评测基准 FormulaOne，旨在测试前沿大模型在博士级推理任务上的表现。该基准包含新颖的图结构动态规划问题，难度从浅层到科研级别，而测试结果与此前大模型在数学奥赛中达到金牌水平的印象形成鲜明对比。尽管问题陈述简洁，其解决方案却依赖复杂的算法元定理和树分解结构。测试显示，在浅层难度上模型表现尚可，但在深层和最深层难度上，所有参评模型（包括 GPT-5、Grok 4 等）的成功率均极低，甚至为零，这揭示了当前 LLM 在复杂、非训练分布内推理任务上的显著局限性。文章还简要介绍了 AAI 及其“人工专家智能”（AEI）的理念。",
+  "mainPoints": [
+    {
+      "point": "新基准 FormulaOne 揭示了 LLM 在博士级推理上的显著不足",
+      "explanation": "尽管主流 LLM 在特定测试中表现出色，但 FormulaOne 这类包含新颖图结构动态规划问题的基准，使所有顶尖模型集体崩溃，暴露出其在复杂、非训练分布内推理任务上的局限性。"
+    },
+    {
+      "point": "复杂推理问题需要对底层结构有深刻理解，而非简单模式匹配",
+      "explanation": "FormulaOne 的问题看似简单，但其解法依赖于 Courcelle 算法元定理和树分解等深层数学原理，这要求 AI 具备超越表面模式识别的严谨推理能力，而当前 LLM 尚未达到。"
+    },
+    {
+      "point": "AAI 提出的“人工专家智能”（AEI）或为 AI 发展新方向",
+      "explanation": "AEI 强调结合领域知识与严密科学推理，旨在解决传统 AI 在复杂科学工程难题上的瓶颈，这与 FormulaOne 基准所暴露的 LLM 问题相呼应，可能指明未来 AI 发展方向。"
+    }
+  ],
+  "keyQuotes": [
+    "前沿 AI 模型真的能做到博士级推理吗？",
+    "AAI，一个专注于超智能和高级 AI 系统研究的机构，近期提出的一个新基准 FormulaOne，让一众大模型集体得零分，包括 GPT-5、o3 Pro、Gemini 2.5 Pro、Grok 4 等前沿模型。",
+    "尽管这些问题陈述起来通常很自然，但其解决方案却远非显而易见。",
+    "在最深层难度上，所有模型的成功率均为 0%，集体崩溃。",
+    "这种 AEI 强调将领域知识与严密的科学推理能力相结合，旨在突破「只擅长特定任务」或「泛化无精度」的传统瓶颈，使 AI 可以像顶级人类专家一样，运用严谨推理来解决复杂科学或工程难题。"
+  ],
+  "tags": [
+    "AI评测基准",
+    "大语言模型",
+    "推理能力",
+    "动态规划",
+    "LLM局限性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1236,
+  "domain": "jiqizhixin.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1755234766000,
+  "publishDateStr": "2025-08-15",
+  "publishDateTimeStr": "2025-08-15 05:12:46"
+}

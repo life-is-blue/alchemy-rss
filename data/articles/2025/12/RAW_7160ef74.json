@@ -1,0 +1,58 @@
+{
+  "id": "RAW_7160ef74",
+  "title": "新的 ChatGPT 图像功能来了",
+  "url": "https://simonwillison.net/2025/Dec/16/new-chatgpt-images/#atom-everything",
+  "date": "2025-12-16 23:59:22",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p><strong><a href=\"https://openai.com/index/new-chatgpt-images-is-here/\">The new ChatGPT Images is here</a></strong>. OpenAI shipped an update to their ChatGPT Images feature - the feature that <a href=\"https://simonwillison.net/2025/May/13/launching-chatgpt-images/\">gained them 100 million new users</a> in a week when they first launched it back in March, but has since been eclipsed by Google's Nano Banana and then further by Nana Banana Pro <a href=\"https://simonwillison.net/2025/Nov/20/nano-banana-pro/\">in November</a>.</p>\n   <p>The focus for the new ChatGPT Images is speed and instruction following:</p>\n   <blockquote>\n    <p>It makes precise edits while keeping details intact, and generates images up to 4x faster</p>\n   </blockquote>\n   <p>It's also a little cheaper: OpenAI say that the new <a href=\"https://platform.openai.com/docs/models/gpt-image-1.5\">gpt-image-1.5</a> API model makes image input and output \"20% cheaper in GPT Image 1.5 as compared to GPT Image 1\".</p>\n   <p>I tried a new test prompt against a photo I took of Natalie's ceramic stand at the farmers market a few weeks ago:</p>\n   <blockquote>\n    <p>Add two kakapos inspecting the pots</p>\n    <p><img alt=\"Outdoor craft market booth displaying handmade ceramics and jewelry on a navy tablecloth with &quot;NATBAT CREATIONS CALIFORNIA USA&quot; logo. Items include colorful glazed ceramic cups in blue, orange, and black; decorative bowls including a rainbow-striped piece; jewelry pendants and earrings on wooden display stands; ceramic plant markers in various colors labeled &quot;Artichoke&quot;, &quot;Cilantro&quot;, &quot;Chili&quot;, &quot;Oregano&quot;, &quot;Potato&quot;, &quot;Pumpkin&quot;, &quot;Sage&quot;.\" src=\"https://static.simonwillison.net/static/2025/pots-q80-half.jpg\"></p>\n   </blockquote>\n   <p>Here's the result from the new ChatGPT Images model:</p>\n   <p><img alt=\"Same craft market booth as previous image, now with two large olive-green Kākāpō parrots perched on the table among the ceramics, one investigating the blue glazed cups and the other examining an orange cup.\" src=\"https://static.simonwillison.net/static/2025/pots-chatgpt-q80-half.jpg\"></p>\n   <p>And here's what I got from Nano Banana Pro:</p>\n   <p><img alt=\"Same craft market booth with two Kākāpō now in different positions: one remains center-table peering into the ceramic cups near the rainbow pot, while the second has moved to the right edge of the table near the plant markers, appearing to examine or possibly chew on items at the table's corner. They are both a little smaller than in the first image.\" src=\"https://static.simonwillison.net/static/2025/pots-nano-banana-q80-half.jpg\"></p>\n   <p>The ChatGPT Kākāpō are a little chonkier, which I think counts as a win.</p>\n   <p>I was a little less impressed by the result I got for an infographic from the prompt \"Infographic explaining how the Datasette open source project works\" followed by \"Run some extensive searches and gather a bunch of relevant information and then try again\" (<a href=\"https://chatgpt.com/share/6941f249-cbd0-8006-b9ff-5a19167206bc\">transcript</a>):</p>\n   <p><img alt=\"Infographic titled &quot;HOW DATASETTE WORKS&quot; with subtitle &quot;THE OPEN SOURCE DATA PLATFORM&quot; showing a four-step workflow. STEP 1 (orange): &quot;LOAD YOUR DATA&quot; - &quot;CSV, JSON, XLSX, SQLite, PostgreSQL, etc.&quot; with icons of file types flowing into a laptop. Below: &quot;IMPORT DATASETS - Turn your structured data into SQLite databases and .db files.&quot; with checkmarks for &quot;Datasette Desktop App for local deployment&quot;, &quot;CLI tool for command-line imports&quot;, &quot;Automatic CSV import tool&quot;. STEP 2 (green): &quot;PUBLISH &amp; DEPLOY&quot; - &quot;HOST DATASETS ONLINE&quot; with cloud and server icons labeled &quot;DEPLOY&quot;. Below: &quot;SHARE ONLINE - Deploy your Datasette instance to a public server.&quot; with checkmarks for &quot;Datasette Cloud - Free hosting service&quot;, &quot;Deploy anywhere via plugins&quot;, &quot;Configurable API tools&quot;. STEP 3 (purple): &quot;EXPLORE &amp; QUERY&quot; - &quot;BROWSE, SEARCH &amp; VISUALIZE&quot; with database and browser window icons. Below: &quot;SQL QUERIES &amp; SEARCH - Browse, filter, search, and visualize your data with an interactive web interface.&quot; with checkmarks for &quot;Perform SQL queries directly from the browser&quot;, &quot;Filter, sort, and facet data&quot;, &quot;Generate custom visualizations and charts&quot;. STEP 4 (red): &quot;BUILD &amp; EXTEND&quot; - &quot;PLUGINS, APIS &amp; INTEGRATIONS&quot; with gear and wrench icons labeled &quot;API&quot;. Below: &quot;CUSTOMIZE &amp; DEVELOP&quot; with bullets &quot;Develop custom plugins for added functionality&quot;, &quot;Access JSON API for programmatic queries&quot;, &quot;Embed and integrate Datasette into other applications&quot;. Bottom banner shows four features: &quot;OPEN DATA PLATFORM - Widely used for visualizing, sharing and building applications with SQLite backed data&quot;, &quot;EXTENSIBLE PLUGINS - 100+ plugins available, inc uding chaps, charts authentication, and more&quot;, &quot;ACCESS CONTROL - Granular permissions for controlling who s an access and interact with your data&quot;, &quot;OPEN SOURCE PROJECT - Actively developed open source project with a vibrant community of contributors&quot;.\" src=\"https://static.simonwillison.net/static/2025/chatgpt-infographic.jpg\"></p>\n   <p>See <a href=\"https://simonwillison.net/2025/Nov/20/nano-banana-pro/#creating-an-infographic\">my Nano Banana Pro post</a> for comparison.</p>\n   <p>Both models are clearly now usable for text-heavy graphics though, which makes them far more useful than previous generations of this technology.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9197/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文讨论了 OpenAI 最新 ChatGPT 图像更新在速度、指令遵循和成本效益方面的改进，并将其与早期版本及 Nano Banana Pro 等竞品进行了比较。",
+  "oneSentenceSummary": "本文讨论了 OpenAI 最新 ChatGPT 图像更新在速度、指令遵循和成本效益方面的改进，并将其与早期版本及 Nano Banana Pro 等竞品进行了比较。",
+  "summary": "文章宣布了 OpenAI 更新后的 ChatGPT 图像功能的发布，该功能侧重于提升速度和指令遵循能力。新的 `gpt-image-1.5` API 模型也更具成本效益，图像输入和输出成本降低了 20%。作者进行了一项实际测试，尝试在一张陶瓷展台的照片中添加两只鸮鹦鹉。虽然新的 ChatGPT 图像模型成功生成了图像，并且其中的鸮鹦鹉略显“胖乎乎”，但作者认为在为 “Datasette” 生成信息图方面，其表现不如 Nano Banana Pro。尽管如此，文章总结道，这两个模型现在都能够处理文本密集型图像，这显著增加了它们的实用性，超越了前几代产品。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 新的 ChatGPT 图像更新注重速度和改进的指令遵循能力。",
+      "explanation": "更新后的模型 `gpt-image-1.5` 图像生成速度提高了 4 倍，编辑精度更高，同时能保持细节完整。"
+    },
+    {
+      "point": "新的 `gpt-image-1.5` API 模型可将图像输入和输出成本降低 20%。",
+      "explanation": "这使得更新后的图像生成对于开发者和用户来说更加经济，可能会扩大其采用范围。"
+    },
+    {
+      "point": "与 Nano Banana Pro 相比，ChatGPT 图像在测试图像中生成了“更胖乎乎”（更实质/更详细）的鸮鹦鹉。",
+      "explanation": "这表明图像生成能力存在质的差异，根据所需结果，这可能被视为一个优势，突出了细微的竞争优势。"
+    },
+    {
+      "point": "当前一代 AI 图像模型能够生成文本密集型图像。",
+      "explanation": "尽管在与竞争对手相比，特定任务（如信息图）的结果好坏参半，但整体而言，文本集成能力标志着这些工具在实用性上的显著提升。"
+    }
+  ],
+  "keyQuotes": [
+    "它在保持细节完整的同时进行精确编辑，图像生成速度提高了 4 倍",
+    "GPT Image 1.5 的图像输入与输出成本比 GPT Image 1 降低 20%",
+    "ChatGPT 生成的鸮鹦鹉有点胖乎乎的，我认为这算是一个胜利。",
+    "这两个模型现在都明显可用于文本密集型图像，这使得它们比上一代技术更有用。"
+  ],
+  "tags": [
+    "ChatGPT",
+    "OpenAI",
+    "图像生成",
+    "AI 模型",
+    "Nano Banana Pro"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 89,
+  "wordCount": 246,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1765929562000,
+  "publishDateStr": "2025-12-16",
+  "publishDateTimeStr": "2025-12-16 23:59:22"
+}

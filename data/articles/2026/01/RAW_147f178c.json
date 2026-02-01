@@ -1,0 +1,63 @@
+{
+  "id": "RAW_147f178c",
+  "title": "机器人也怕疼！港城突破性电子皮肤：主动痛觉+损伤自检 buff 拉满",
+  "url": "https://www.qbitai.com/2026/01/366466.html",
+  "date": "2026-01-03 06:30:01",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">这下，你打人形机器人，它真的会「疼」了。</p>\n  <p data-track=\"2\">来自香港城市大学的研究团队提出了一种全新的<strong>神经形态机器人电子皮肤（neuromorphic RE-skin，NRE-skin）</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070255_1e8c8604b319901a0fce02618305188a.webp\" data-src=\"https://image.jido.dev/20260103070255_1e8c8604b319901a0fce02618305188a.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"3\">NRE-skin通过模仿人类神经系统，利用分层（Hierarchical）的神经形态架构，让触觉信号不再需要传到中央处理器，而是在皮肤内部就完成了初步处理与脉冲编码。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070254_c1ca8ee2e5d8e743cb9faf2d0ac5d43e.webp\" data-src=\"https://image.jido.dev/20260103070254_c1ca8ee2e5d8e743cb9faf2d0ac5d43e.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">基于这一仿生设计，NRE-skin同时实现了三项关键能力：</p>\n  <ul>\n   <li data-track=\"5\"><strong>高分辨率触觉感知：高效采集并编码精确的压力和位置信息。</strong></li>\n   <li data-track=\"6\"><strong>主动保护机制：具备局部反射机制，能够进行主动疼痛感知与损伤检测。</strong></li>\n   <li data-track=\"7\"><strong>维护高效性：支持快速更换的模块化快拆结构。</strong></li>\n  </ul>\n  <p data-track=\"8\">网友表示这种复杂而精细的触觉感知，将会为机器人领域带来一次巨大的跃迁。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070254_213e731f9d6f816cd10b7ef7c032ff05.webp\" data-src=\"https://image.jido.dev/20260103070254_213e731f9d6f816cd10b7ef7c032ff05.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"9\">而这一研究也无疑会为后续的触觉反馈算法和硬件设计提供新的思路。</p>\n  <p data-track=\"10\">接下来我们具体来看。</p>\n  <p data-track=\"12\">相比于以往的电子皮肤，NRE-skin没有继续沿用传统电子皮肤的“模拟信号采集”思路，而是模拟人类，直接把触觉转译成神经元式的脉冲信号。</p>\n  <p data-track=\"13\">在生物系统中，感觉信号经历的是一个分级处理过程：刺激由末梢神经的<strong>局部“感受野”</strong>捕获并编码，再通过神经纤维层层递进、逐渐聚焦，最终形成完整的感觉信息传导至大脑。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070255_88fcb0c9def5bb50112a015393c33f82.webp\" data-src=\"https://image.jido.dev/20260103070255_88fcb0c9def5bb50112a015393c33f82.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"14\">NRE-skin遵循这一思路，在硬件层面实现了“传感器即神经元”的设计：它将每个压力传感器直接与一个微型振荡电路相集成。</p>\n  <p data-track=\"16\">当皮肤感知压力时，传感器的电阻变化会即时调控振荡电路，导致其输出的脉冲信号频率发生改变。</p>\n  <p data-track=\"17\">具体而言，压力越大，脉冲发射得越密集，以此完成压力强度到脉冲频率编码的直接转译。</p>\n  <p data-track=\"18\">更巧妙的是，为了精确定位，每个传感器被赋予了一组独特的无源元件（电阻R和电容C）作为其“位置指纹”。</p>\n  <p data-track=\"19\">这些元件的配置使得每个位置发出的脉冲，在形状、宽度或幅度上都具有独一无二的特征。</p>\n  <p data-track=\"20\">由此，NRE-skin通过这种“频率-强度，特征-位置”的编码方式，将所有复杂的触觉信息高效地汇聚到单一传输通道中。</p>\n  <p data-track=\"22\">在将触觉信息编码为脉冲信号后，NRE-skin借鉴人类皮肤的分层处理，设计了四层结构（封装层、传感层、电路层、基底层） 。</p>\n  <p data-track=\"23\">而且还在电路层面建立了分层的、神经状的感受野结构，以实现信号的渐进降维和数据流简化。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070254_d68af12f4b068b19c906239a2aaaa0a2.webp\" data-src=\"https://image.jido.dev/20260103070254_d68af12f4b068b19c906239a2aaaa0a2.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\">在生物系统中，人类皮肤的功能由精密的四层结构支撑：角质层、表皮层、真皮层和皮下组织。</p>\n  <p data-track=\"25\">这些层级中蕴含着高度复杂的感觉系统，分布于真皮和表皮的多种机械感受器与分层的神经感受野共同构成了信息采集与处理的一体化网络。</p>\n  <p data-track=\"26\">该网络将触觉刺激分为两类：</p>\n  <ul>\n   <li data-track=\"27\">基础感知（如剧烈疼痛）通过脊髓反射弧快速处理，触发无需大脑参与的局部自动反应（如缩回）。</li>\n   <li data-track=\"28\">复杂感知（如刺激强度的精确定位和损伤识别）则会被逐级传递至大脑皮层，进行更深层次的分析和决策。</li>\n  </ul>\n  <p data-track=\"29\">与之类似，NRE-skin也采用了类似的四层结构，将感觉信号从外周逐级传递至更高层级的处理中心，实现了从粗到细的定位与筛选：</p>\n  <ul>\n   <li data-track=\"30\">封装层：模拟角质层，提供表面的机械保护和整体防护。</li>\n   <li data-track=\"31\">基底层：模拟皮下组织，提供缓冲，吸收外力冲击，并作为机械支撑。</li>\n   <li data-track=\"32\">传感层：对应人类的机械感受器,负责感知外部刺激（如压力），并将其转换为电信号。</li>\n   <li data-track=\"33\">电路层：对应人类的信号传导神经，NRE-skin的核心。负责脉冲编码、信号处理、局部反射决策。</li>\n  </ul>\n  <p data-track=\"34\">在四层结构中，电路层是NRE-skin 的核心处理模块。</p>\n  <p data-track=\"35\">它位于传感层之下，负责将压力刺激转换为脉冲序列，并通过一套<strong>模拟生物感觉处理机制的人工感受野网络对信号进行初步处理，实现渐进降维和数据流简化</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070254_f75ed2ceff2da33a0918cfb1d1b652b5.png\" data-src=\"https://image.jido.dev/20260103070254_f75ed2ceff2da33a0918cfb1d1b652b5.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\">电路层被进一步细分为五个关键功能区域：</p>\n  <ul>\n   <li data-track=\"37\">疼痛中心：用于疼痛信号评估、</li>\n   <li data-track=\"38\">特征中心：用于识别信号来源的皮肤模块</li>\n   <li data-track=\"39\">信号整合器：用于合并各路输出</li>\n   <li data-track=\"40\">脉冲发生器：用于生成脉冲序列</li>\n   <li data-track=\"41\">和连接器（用于与外部皮肤模块连接</li>\n  </ul>\n  <p data-track=\"42\">在此基础上，研究人员进一步集成了两大高级功能：</p>\n  <p data-track=\"43\"><strong>主动疼痛感知与局部反射</strong></p>\n  <p data-track=\"45\">NRE-skin具备基于疼痛阈值触发的局部反射机制。电路层面的“疼痛中心”实时监测脉冲频率所反映的压力强度。</p>\n  <p data-track=\"46\">一旦压力超过阈值，系统会绕过中央处理器，直接触发类似脊髓反射弧的机制，实现毫秒级的即时保护动作（如缩回），大幅提升机器人的安全响应能力。</p>\n  <p data-track=\"47\"><strong>损伤自检与模块化维护</strong></p>\n  <p data-track=\"49\">NRE-skin 通过检测传感器周期性产生的<strong>“活脉冲”状态，实现了皮肤损伤的精确自检和定位</strong>。</p>\n  <p data-track=\"50\">一旦脉冲停止，即意味着皮肤受损。结合其模块化快拆设计，这极大地简化了受损皮肤单元的快速更换与维护流程。</p>\n  <p data-track=\"51\">总体看来，NRE-skin 不仅是一种更高效的电子皮肤，更是一种具备自主感知、实时判断和自我保护机制的仿生智能系统，为未来制造更安全、更具人性化的仿人机器人奠定了坚实的工程基础。</p>\n  <p data-track=\"52\">这篇论文的第一作者是来自香港城市大学的高育育。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260103070254_700b58e06427713c2df7ac8bdf4c835b.jpeg\" data-src=\"https://image.jido.dev/20260103070254_700b58e06427713c2df7ac8bdf4c835b.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"53\">他目前是港城大学的博士后，研究方向包括触觉感知（Tactile Sensing）和柔性电子（Flexible Electronics）。</p>\n  <p data-track=\"54\">他本科和硕士都毕业于西南交通大学，博士毕业于香港城市大学。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "香港城市大学研发的神经形态电子皮肤 (NRE-skin) 模仿人皮肤系统，实现机器人主动疼痛感知、损伤自检与高效维护，使机器人具备更强仿生触觉和自我保护能力。",
+  "oneSentenceSummary": "香港城市大学研发的神经形态电子皮肤 (NRE-skin) 模仿人皮肤系统，实现机器人主动疼痛感知、损伤自检与高效维护，使机器人具备更强仿生触觉和自我保护能力。",
+  "summary": "香港城市大学的研究团队推出了一种全新的神经形态机器人电子皮肤 (NRE-skin)，该技术通过模仿人类神经系统，采用分层神经形态架构，使得触觉信号能够在皮肤内部初步处理，无需传至中央处理器。NRE-skin 实现了高分辨率触觉感知、主动疼痛感知与损伤检测的局部反射机制，以及模块化快拆结构带来的高效维护。文章详细阐述了 NRE-skin 如何将模拟信号直接转译为神经元式的脉冲信号，并通过“频率-强度，特征-位置”的编码方式高效汇聚信息。此外，它还借鉴人类皮肤的四层结构和分层处理机制，在硬件层面设计了传感器与微型振荡电路集成，并在电路层设立了“疼痛中心”和“特征中心”，实现了超出阈值时的局部快速反射和损伤自检功能。这项创新为未来机器人制造更安全、更具人性化的仿人机器人奠定了坚实基础。",
+  "mainPoints": [
+    {
+      "point": "NRE-skin 采用分层神经形态架构，实现触觉信号在皮肤内部的初步处理与脉冲编码。",
+      "explanation": "借鉴生物神经系统，将触觉信号直接转化为脉冲编码，通过在皮肤内部完成初步处理，有效降低对中央处理器的依赖，提升响应速度。"
+    },
+    {
+      "point": "NRE-skin 具备高分辨率触觉感知、主动疼痛感知、局部反射和损伤自检能力。",
+      "explanation": "通过精密的传感器设计和神经形态电路，实现了对压力和位置信息的精确编码，并在检测到有害刺激时，能像生物体一样快速生成反射动作，并自动检测皮肤损伤。"
+    },
+    {
+      "point": "其仿生设计模拟人类皮肤的四层结构及分层处理机制。",
+      "explanation": "NRE-skin 的封装层、传感层、电路层、基底层对应人类皮肤的各层功能，电路层作为核心处理模块，负责脉冲编码并将信号通过人工感受野网络进行初步处理，实现渐进降维和数据流简化。"
+    },
+    {
+      "point": "系统通过“频率-强度，特征-位置”编码实现高效信息汇聚和精确感知。",
+      "explanation": "压力强弱通过脉冲频率变化编码，而传感器位置则通过独特的无源元件配置形成的位置指纹编码，从而在单一传输通道中高效传递复杂触觉信息。"
+    },
+    {
+      "point": "模块化快拆设计极大提升了皮肤的维护效率。",
+      "explanation": "结合损伤自检功能，当皮肤受损时，模块化结构允许快速定位并更换受损单元，降低了机器人的维护成本和停机时间。"
+    }
+  ],
+  "keyQuotes": [
+    "NRE-skin 通过模仿人类神经系统，利用分层（Hierarchical）的神经形态架构，让触觉信号不再需要传到中央处理器，而是在皮肤内部就完成了初步处理与脉冲编码。",
+    "NRE-skin 同时实现了三项关键能力：高分辨率触觉感知、主动保护机制（具备局部反射机制，能够进行主动疼痛感知与损伤检测）、维护高效性（支持快速更换的模块化快拆结构）。",
+    "NRE-skin 通过这种“频率-强度，特征-位置”的编码方式，将所有复杂的触觉信息高效地汇聚到单一传输通道中。",
+    "主动疼痛感知与局部反射：NRE-skin 具备基于疼痛阈值触发的局部反射机制。一旦压力超过阈值，系统会绕过中央处理器，直接触发类似脊髓反射弧的机制，实现毫秒级的即时保护动作。",
+    "损伤自检与模块化维护：NRE-skin 通过检测传感器周期性产生的“活脉冲”状态，实现了皮肤损伤的精确自检和定位。"
+  ],
+  "tags": [
+    "神经形态技术",
+    "机器人皮肤",
+    "触觉感知",
+    "仿生机器人",
+    "柔性电子"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 89,
+  "wordCount": 1928,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1767421801000,
+  "publishDateStr": "01-03",
+  "publishDateTimeStr": "2026-01-03 06:30:01"
+}

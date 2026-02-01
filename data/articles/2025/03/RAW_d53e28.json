@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d53e28",
+  "title": "GPT-4o 代码补全模型在 VS Code Copilot 公开预览",
+  "url": "https://www.infoq.com/news/2025/03/gpt4o-code-completion-vscode/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2025-03-23 00:00:00",
+  "author": "Aditya Kulkarni",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Recently, GPT-4o Copilot is introduced for Visual Studio Code (VS Code) users. This AI model is built upon the GPT-4o mini foundation and includes extensive training from over 275,000 high-quality public repositories across more than 30 widely used programming languages. The enhanced training is expected to provide more accurate and contextually relevant code suggestions, with improved performance, boosting developer productivity and aiding the coding process.</p>\n   <p>This announcement was made through <a href=\"https://github.blog/changelog/2025-02-18-new-gpt-4o-copilot-code-completion-model-now-available-in-public-preview-for-copilot-in-vs-code/\">a changelog post on the GitHub blog</a>. The GPT-4o Copilot model differentiates itself through some key enhancements. Utilizing a vast dataset of high-quality code offers more precise and contextually relevant code completions. Its architecture and training also enable faster and more efficient code suggestion generation. The model can support various development projects with training across over 30 programming languages.</p>\n   <p>To integrate GPT-4o Copilot into VS Code, users can access the Copilot menu in the VS Code title bar, select <code>Configure Code Completions</code>, and then choose <code>Change Completions Model</code>. Alternatively, users can choose the Command Palette by opening it and selecting <code>GitHub Copilot: Change Completions Model</code>. Once in the model selection menu, users can choose the GPT-4o Copilot model from the available options.</p>\n   <p>For Copilot Business and Enterprise users, administrators must first enable <code>Editor preview features</code> within the <a href=\"https://docs.github.com/en/enterprise-cloud@latest/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-policies-for-copilot-in-your-organization#enabling-copilot-features-in-your-organization\">Copilot policy settings</a> on github.com to grant users access to the new model. Meanwhile, for Copilot Free users, using this model will count toward their 2,000 free monthly completions. The model will soon be available to Copilot users in all JetBrains Integrated Development Environments (IDEs), further expanding its reach across different platforms.</p>\n   <p>In JetBrains IDEs, users can click the icon in the status bar, navigate to the settings dialog box for <code>Languages &amp; Frameworks &gt; GitHub Copilot</code>, and select the preferred model from the dropdown menu.</p>\n   <p>Covering this announcement as a part of the&nbsp;<a href=\"https://www.linkedin.com/pulse/tech-insights-2025-week-9-johan-sanneblad-onp9f/?trackingId=DAsFREwRRtimQGeiGNtuCw%3D%3D\">Tech Insights 2025 Week 9</a> newsletter, <a href=\"https://www.linkedin.com/in/johansan/\">Johan Sanneblad</a>, CEO &amp; Co-founder at ToeknTek, said,</p>\n   <blockquote>\n    <p>GitHub Copilot is quickly catching up to Cursor IDE which is already packed with custom models. From what I can see there are just two main features missing in Copilot: Prompt caching for performance and a local model for code merging. Once it gets those two features I think I would feel equally at home in Visual Studio Code + Copilot as with Cursor. And for all you Java and C# users, this is the update you have been waiting for. We finally have a good code completion model with good support for C++, C# and Java.</p>\n   </blockquote>\n   <p>GitHub Copilot was also in the news as it introduced Next Edit Suggestions, which can <a href=\"https://code.visualstudio.com/blogs/2025/02/12/next-edit-suggestions#_next-edit-suggestions-nes\">predict and suggest logical edits based on the context of ongoing changes in the code</a>. It can identify potential modifications across an entire file, offering suggestions for insertions, deletions, and replacements. Developers can navigate through these suggestions using the <code>Tab</code> key, streamlining the editing process and potentially saving significant time</p>\n   <p>It's important to note that switching the AI model does not affect the model used by Copilot Chat. The data collection and usage policy remains unchanged regardless of the chosen model, and the setting to enable or disable suggestions that match public code applies regardless of the chosen model.</p>\n   <p>User feedback is essential for refining and enhancing the GPT-4o Copilot model. Developers are encouraged to <a href=\"https://github.com/microsoft/vscode-copilot-release\">share their experiences</a> to help improve the model's performance and usability for all Copilot users.</p>\n  </div><input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GPT-4o Code Completion Model Now Available in Public Preview for VS Code Copilot\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Aditya Kulkarni\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2025/03/gpt4o-code-completion-vscode/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1742707800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub Copilot 推出基于 GPT-4o 的代码补全模型，显著提升 VS Code 代码建议的准确性和效率，未来还将支持 JetBrains IDEs。",
+  "oneSentenceSummary": "GitHub Copilot 推出基于 GPT-4o 的代码补全模型，显著提升 VS Code 代码建议的准确性和效率，未来还将支持 JetBrains IDEs。",
+  "summary": "GitHub Copilot 推出了基于 GPT-4o 的代码补全模型，该模型在超过 275，000 个高质量公共代码仓库上进行了训练，支持 30 多种编程语言。与之前的版本相比，GPT-4o Copilot 模型能够提供更准确、更符合上下文的代码建议，从而提高开发者的生产力。Copilot Business 和 Enterprise 用户需要先启用“预览功能”才能使用该模型。用户可以在 VS Code 和 JetBrains IDEs 中轻松选择 GPT-4o 模型。此外，GitHub Copilot 还推出了 Next Edit Suggestions 功能，可以预测和建议代码中的逻辑修改。鼓励用户提供反馈以持续改进 GPT-4o 模型。",
+  "mainPoints": [
+    {
+      "point": "GPT-4o Copilot 模型通过大量高质量代码训练，显著提升代码建议的准确性和上下文相关性。",
+      "explanation": "GPT-4o 模型基于超过 275，000 个公共代码仓库进行训练，支持 30 多种编程语言，能够提供更精确和符合上下文的代码建议。"
+    },
+    {
+      "point": "Copilot 仍然有待改进的地方：缺少 Prompt caching 和 local model。",
+      "explanation": "根据 Johan Sanneblad 的观点，Copilot 缺少用于提升性能的 Prompt caching 和用于代码合并的 local model 这两个主要功能。"
+    },
+    {
+      "point": "Next Edit Suggestions 功能可以预测和建议代码中的逻辑修改，简化编辑流程。",
+      "explanation": "该功能可以识别整个文件中的潜在修改，提供插入、删除和替换建议，帮助开发者节省大量时间。"
+    },
+    {
+      "point": "用户反馈对于改进 GPT-4o Copilot 模型至关重要。",
+      "explanation": "开发者可以通过分享使用体验，帮助改进模型的性能和可用性，从而使所有 Copilot 用户受益。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub Copilot is quickly catching up to Cursor IDE which is already packed with custom models.",
+    "From what I can see there are just two main features missing in Copilot: Prompt caching for performance and a local model for code merging.",
+    "We finally have a good code completion model with good support for C++， C# and Java."
+  ],
+  "tags": [
+    "代码补全",
+    "代码生成",
+    "GPT-4o",
+    "GitHub Copilot",
+    "GitHub"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 557,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1742688000000,
+  "publishDateStr": "2025-03-23",
+  "publishDateTimeStr": "2025-03-23 00:00:00"
+}

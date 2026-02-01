@@ -1,0 +1,55 @@
+{
+  "id": "RAW_0075cc",
+  "title": "Airbnb Istio 升级 14 次零宕机！Google、Uber、Netflix 都在借鉴",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651255497&idx=3&sn=40884c467d9940cc3a1c8b7cea1c76bd",
+  "date": "2025-09-08 04:42:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:14px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;text-align:center;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 作者 | Craig Risi </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">&nbsp; 译者 | 田橙 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Airbnb engineering 发布了一份&nbsp;详细报告，介绍公司如何在数万 Pod 和数千 VM 上执行&nbsp;Istio&nbsp;升级的同时保持高可用，而且没有发生宕机。该公司的&nbsp;服务网格&nbsp;基础设施支持 Kubernetes 和 VM 环境中的工作负载，在峰值时每秒处理数千万次请求。尽管过程复杂，Airbnb 至今已完成了 14 次 Istio 升级。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">关键挑战在于协调不同团队所负责的多样化工作负载。为了解决这个问题，Airbnb 设计了一条升级流水线，它能够“保证”零宕机，支持渐进式发布、回退机制，并确保所有工作负载能在固定时间范围内完成更新。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在技术实现上，这一过程通过 Istio 控制平面的双版本部署来完成，并结合金丝雀发布策略，每个版本通过 revision 标签区分（例如 1-24-5、1-25-2）。工作负载通过 mutating webhook 绑定到指定 revision，从而注入相应的 istio-proxy sidecar。升级过程会根据 rollouts.yml 文件中定义的分发规则，有选择地将部分工作负载切换到新版本。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为了避免不同团队手动更新标签，Airbnb 使用了内部的&nbsp;Krispr 变更框架。在 CI 流程中，Krispr 会根据发布配置将正确的 revision 标签注入到工作负载规范中。它还会在准入时持续迁移旧 Pod，确保在四周内所有工作负载（包括不活跃的）都能顺利完成迁移。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">对于 VM 工作负载，Airbnb 借助 mxagent 守护进程，它会轮询各主机的版本标签，并在必要时一次性完成 istio-proxy 及其配置的升级。一个中央控制器（mxrc）负责协调 VM 的升级发布，它会遵循健康检查与升级安全阈值，类似 Kubernetes 的 maxUnavailable 机制。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Airbnb 成功完成最近的服务网格升级之外，业内其他公司也采用了各自不同的升级方式：</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Netflix 推出了自己的&nbsp;零配置服务网格。它没有依赖重量级的控制平面模型，而是设计了一个能自动管理服务发现、重试和流量路由的网格，不需要手动配置。这样，Netflix 避开了多版本 Istio 升级中的协调挑战，同时仍然获得了服务网格在流量管理和可靠性方面的好处。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">作为全球最大的 Kubernetes 部署之一，LinkedIn 在升级核心基础设施（包括 Kafka 和网络层）时，通常会结合使用&nbsp;金丝雀发布和流量镜像。在服务间通信栈方面，LinkedIn 曾经尝试过基于 Envoy 的解决方案，但更多依赖于带有镜像流量的渐进式发布流水线来确保安全性。这种做法在理念上与 Airbnb 的双 Istio 版本策略相似：两者都能在正式切换前，用新版本先行验证流量。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">作为 Istio 的创建者之一，Google Cloud 自身为客户率先提供了多版本控制平面，类似 Airbnb 的实现。GKE 现在支持运维人员同时运行多个 Istio 版本，从而让发布与回退更为简便。Google 还在推动&nbsp;Ambient Mode，这种模式用轻量级数据平面代理替代 sidecar，大幅减少升级影响范围。Airbnb 已经表示对 Ambient Mode 感兴趣，表明其方向与 Google 的下一代网格演进保持一致。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Uber 运行着一个&nbsp;基于 Envoy&nbsp;的内部网格框架，并与其定制的服务发现系统深度集成。他们的升级策略通常是按集群逐步部署，而不是通过精细的版本绑定。Uber 还投入大量资源开发工具，用于在升级期间实现自动回滚并执行 SLA 监控，在一定程度上，可以看作是 Airbnb 用于 VM 的 mxagent + mxrc 机制的类似做法。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这些对比反映了一个更广泛的行业趋势：企业不断投入更先进的发布框架或服务网格创新，以平衡复杂性、可靠性与运维可控性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">展望未来，Airbnb 打算尝试 Istio 的 Ambient Mode，以实现更轻量的网格架构，同时通过拆分网格来减少风险范围并提高隔离性。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><strong style=\"font-size: 16px;font-weight: bold;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2025/08/airbnb-istio-upgrade/\" target=\"_blank\">https://www.infoq.com/news/2025/08/airbnb-istio-upgrade/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Airbnb 详细阐述了其在大规模 Kubernetes 和 VM 环境中，通过双版本控制平面和渐进式发布策略，实现 14 次 Istio 升级零宕机的实践经验。",
+  "oneSentenceSummary": "Airbnb 详细阐述了其在大规模 Kubernetes 和 VM 环境中，通过双版本控制平面和渐进式发布策略，实现 14 次 Istio 升级零宕机的实践经验。",
+  "summary": "文章深入剖析了 Airbnb 如何在数万个 Pod 和数千个 VM 上，成功执行了 14 次 Istio 升级而未发生任何宕机。其核心策略包括部署双版本 Istio 控制平面，利用 revision 标签区分版本，并通过 mutating webhook 将工作负载绑定到指定版本，实现金丝雀发布。为自动化此过程，Airbnb 开发了 Krispr 框架处理 Kubernetes 工作负载的标签更新，并利用 mxagent 和 mxrc 协调 VM 环境的 istio-proxy 升级。文章还对比了 Netflix、LinkedIn、Google 和 Uber 等公司在服务网格升级方面的不同实践，揭示了行业在平衡复杂性、可靠性与运维可控性方面的共同趋势。未来，Airbnb 计划探索 Istio 的 Ambient Mode 以优化架构。",
+  "mainPoints": [
+    {
+      "point": "Airbnb 通过双版本 Istio 控制平面实现大规模零宕机升级",
+      "explanation": "采用 revision 标签区分新旧版本，结合 mutating webhook 将工作负载绑定到特定版本，并通过渐进式发布策略逐步切换流量，确保升级过程不中断服务。"
+    },
+    {
+      "point": "内部自动化工具和流程是服务网格复杂升级成功的关键",
+      "explanation": "Krispr 框架自动化 Kubernetes 工作负载的 revision 标签更新，mxagent/mxrc 守护进程和中央控制器协调 VM 环境的 istio-proxy 升级，显著降低了手动操作风险和复杂性。"
+    },
+    {
+      "point": "业界巨头在服务网格升级策略上各有侧重但目标一致",
+      "explanation": "Netflix、LinkedIn、Google、Uber 等公司的多样化升级策略，共同体现了行业在平衡服务网格复杂性、可靠性与运维可控性方面的持续探索。"
+    }
+  ],
+  "keyQuotes": [
+    "Airbnb engineering 发布了一份 详细报告，介绍公司如何在数万 Pod 和数千 VM 上执行 Istio 升级的同时保持高可用，而且没有发生宕机。",
+    "关键挑战在于协调不同团队所负责的多样化工作负载。为了解决这个问题，Airbnb 设计了一条升级流水线，它能够'保证'零宕机，支持渐进式发布、回退机制，并确保所有工作负载能在固定时间范围内完成更新。",
+    "在技术实现上，这一过程通过 Istio 控制平面的双版本部署来完成，并结合金丝雀发布策略，每个版本通过 revision 标签区分。",
+    "这些对比反映了一个更广泛的行业趋势：企业不断投入更先进的发布框架或服务网格创新，以平衡复杂性、可靠性与运维可控性。",
+    "展望未来，Airbnb 打算尝试 Istio 的 Ambient Mode，以实现更轻量的网格架构，同时通过拆分网格来减少风险范围并提高隔离性。"
+  ],
+  "tags": [
+    "服务网格",
+    "Istio",
+    "高可用",
+    "零宕机升级",
+    "Kubernetes"
+  ],
+  "topicTag": "devops",
+  "readTime": 6,
+  "score": 89,
+  "wordCount": 1314,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1757306520000,
+  "publishDateStr": "2025-09-08",
+  "publishDateTimeStr": "2025-09-08 04:42:00"
+}
