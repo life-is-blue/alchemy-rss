@@ -1,11 +1,6 @@
 <template>
   <div class="mx-auto">
-    <header class="mb-12">
-      <h2 class="text-3xl font-black mb-4 tracking-tight">炼金工坊</h2>
-      <p class="text-text-sub text-sm leading-relaxed">以下是当前系统正在监听并提炼的所有信息原矿源。你可以将这些链接添加到你的 RSS 阅读器中。</p>
-    </header>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div 
         v-for="source in sources" 
         :key="source.title"
