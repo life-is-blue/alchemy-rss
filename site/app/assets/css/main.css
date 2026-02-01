@@ -61,7 +61,67 @@
   color: var(--color-text-main);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   scrollbar-gutter: stable;
+}
+
+/* Global Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Slightly wider for better usability */
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.1); /* Darker default */
+  border-radius: 20px;
+  border: 2px solid transparent; /* Creates padding effect */
+  background-clip: content-box;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.25); /* Much darker on hover */
+}
+
+/* Hide Scrollbar Utility */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Floating Action Button */
+.floating-action {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid var(--color-outline);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+.floating-action:hover {
+  transform: translateY(-2px);
+  color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.floating-action:active {
+  transform: scale(0.92);
+}
+
+/* Button Interactions */
+.active-press {
+  transition: transform 0.1s;
+}
+.active-press:active {
+  transform: scale(0.92);
 }
 
 /* Global Theme Classes */
@@ -114,6 +174,27 @@
   color: #E0E0E0;
 }
 
+
+/* Transitions */
+.drawer-enter-active, .drawer-leave-active {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-enter-from, .drawer-leave-to {
+  transform: translateX(-100%);
+}
+
+.drawer-right-enter-active, .drawer-right-leave-active {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-right-enter-from, .drawer-right-leave-to {
+  transform: translateX(100%);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.fade-enter-from { opacity: 0; transform: scale(0.99); }
+.fade-leave-to { opacity: 0; transform: scale(1.01); }
 
 /* 已读文章样式 */
 .article-read {

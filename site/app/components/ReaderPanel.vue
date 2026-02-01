@@ -251,6 +251,7 @@ watch(() => props.url, async (newUrl) => {
   margin-top: 4rem;
   margin-bottom: 2rem;
   line-height: 1.25;
+  letter-spacing: -0.025em; /* tight tracking */
   color: var(--color-text-main);
 }
 .article-body h2 { font-size: 1.6rem; border-bottom: 1px solid var(--color-outline); padding-bottom: 0.75rem; }
