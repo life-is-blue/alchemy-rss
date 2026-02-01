@@ -16,19 +16,21 @@
   --color-text-disabled: #bdbdbd;
 
   /* Layout Backgrounds */
-  --color-background: #F7F7F7; /* Slightly warmer/softer than F6F8FA */
+  --color-background: #F7F7F9; /* Paper Gray - WeChat Standard */
   --color-surface: #FFFFFF;    /* Card/Panel Surface */
-  --color-sidebar-bg: rgba(253, 253, 253, 0.8); /* Sidebar Background */
+  --color-sidebar-bg: rgba(247, 247, 249, 0.85); /* Sidebar blends with BG */
   --color-hover-bg: rgba(0, 0, 0, 0.03);
   --color-border: rgba(0, 0, 0, 0.03); /* Very subtle border */
   --color-outline: rgba(0, 0, 0, 0.03);
 
   /* Shadows & Elevation - Ambient Light */
   --shadow-wechat: 0 4px 24px rgba(0, 0, 0, 0.03), 0 1px 4px rgba(0, 0, 0, 0.01);
+  --shadow-paper: 0 24px 64px -12px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.02); /* Floating Paper Shadow */
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.03);
   --shadow-card-hover: 0 6px 16px rgba(0, 0, 0, 0.06);
 
   /* Border Radius */
+  --radius-paper: 24px; /* Large radius for paper sheets */
   --radius-xl: 12px; /* Reduced radius for more professional look */
   --radius-lg: 12px;
   --radius-md: 8px;

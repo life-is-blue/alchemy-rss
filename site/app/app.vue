@@ -211,8 +211,8 @@
             <!-- Zen Reader View -->
             <div v-else key="reader" class="w-full flex justify-center min-h-screen pb-20">
               <div
-                class="w-full max-w-[900px] md:my-6 md:rounded-xl overflow-hidden border-x border-y transition-all duration-300"
-                style="background-color: var(--color-surface); box-shadow: var(--shadow-wechat); border-color: var(--color-border);"
+                class="w-full max-w-[900px] md:my-10 md:rounded-[var(--radius-paper)] overflow-hidden transition-all duration-300"
+                style="background-color: var(--color-surface); box-shadow: var(--shadow-paper);"
               >
                 <ReaderPanel
                   :url="selectedUrl"
@@ -231,7 +231,11 @@
       <!-- Floating Toolbar -->
       <FloatingToolbar
         :show-back-to-top="showBackToTop"
+        :show-toolbar="!!selectedUrl"
+        :is-dark="theme === 'night'"
         @scroll-top="scrollToTop"
+        @toggle-settings="showGlobalSettings = true"
+        @toggle-dark="theme = (theme === 'night' ? 'white' : 'night')"
       />
     </div>
 
