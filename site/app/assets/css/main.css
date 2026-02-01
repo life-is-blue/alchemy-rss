@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #5B4636;
-  --color-primary-rgb: 91, 70, 54;
-  --color-secondary: #8C7867;
+  /* WeChat Reading Blue Palette */
+  --color-primary: #3291FF;      /* The exact bright blue from nav.png */
+  --color-primary-rgb: 50, 145, 255;
+  --color-secondary: #007AFF;
+  
   --color-background: #F7F7F9;
   --color-surface: #FFFFFF;
   --color-text-main: #202124;
   --color-text-sub: #5F6368;
   --color-text-muted: #70757A;
-  --color-outline: rgba(0, 0, 0, 0.08);
+  --color-outline: rgba(0, 0, 0, 0.06);
   
-  --shadow-paper: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 0 4px 10px -5px rgba(0, 0, 0, 0.02);
+  --shadow-paper: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
   --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-wechat: 0 8px 24px rgba(0, 0, 0, 0.08);
   
@@ -19,14 +21,15 @@
   
   --color-qualified: #673AB7;
   
+  /* Reader Themes */
   --theme-white-bg: #FCFCFA;
   --theme-white-text: #333333;
   --theme-sepia-bg: #F5E6C8;
   --theme-sepia-text: #5B4636;
   --theme-green-bg: #CCE8CF;
   --theme-green-text: #2C3E2E;
-  --theme-night-bg: #1A1A1A;
-  --theme-night-text: #E0E0E0;
+  --theme-night-bg: #121212;
+  --theme-night-text: #E3E3E3;
 }
 
 @theme {
@@ -51,7 +54,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Sidebar Navigation Helpers */
+/* Sidebar Navigation */
 .nav-section-title {
   font-size: 10px;
   font-weight: 800;
@@ -72,7 +75,6 @@ body {
   border-radius: 0.75rem;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  border: none !important;
 }
 
 .nav-item-content {
@@ -103,11 +105,10 @@ body {
 
 .nav-item-inactive {
   color: var(--color-text-sub);
-  background: transparent !important;
 }
 
 .nav-item-inactive:hover {
-  background-color: var(--color-hover-bg) !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
   color: var(--color-text-main);
 }
 
@@ -121,116 +122,43 @@ body {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-.theme-night .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-}
 
-/* Utils */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card-hover:hover {
-  transform: translateY(-2px);
-}
-
-/* Floating Toolbar Buttons */
+/* Floating Toolbar */
 .wechat-fab {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background-color: var(--color-surface);
   color: var(--color-text-sub);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   border: 1px solid var(--color-outline);
-  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
 }
 
 .wechat-fab:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
-.wechat-fab:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+.article-read {
+  opacity: 0.7;
 }
-
-/* Global Theme Classes */
-.theme-white {
-  --color-background: var(--theme-white-bg);
-  --color-text-main: var(--theme-white-text);
-  --color-sidebar-bg: rgba(255, 255, 255, 0.5);
-  --color-card-bg: #FFFFFF;
-  --color-card-border: rgba(0, 0, 0, 0.03);
-  --color-hover-bg: rgba(0, 0, 0, 0.03);
-  --color-border: rgba(0, 0, 0, 0.05);
-}
-
-.theme-sepia {
-  --color-background: var(--theme-sepia-bg);
-  --color-text-main: var(--theme-sepia-text);
-  --color-sidebar-bg: rgba(245, 230, 200, 0.5);
-  --color-card-bg: rgba(0, 0, 0, 0.02);
-  --color-card-border: rgba(91, 70, 54, 0.1);
-  --color-hover-bg: rgba(91, 70, 54, 0.05);
-  --color-border: rgba(91, 70, 54, 0.1);
-}
-
-.theme-green {
-  --color-background: var(--theme-green-bg);
-  --color-text-main: var(--theme-green-text);
-  --color-sidebar-bg: rgba(204, 232, 207, 0.5);
-  --color-card-bg: rgba(0, 0, 0, 0.02);
-  --color-card-border: rgba(61, 92, 63, 0.1);
-  --color-hover-bg: rgba(61, 92, 63, 0.05);
-  --color-border: rgba(61, 92, 63, 0.1);
-}
-
-.theme-night {
-  --color-background: #121212;
-  --color-text-main: #E3E3E3;
-  --color-text-sub: #C4C7C5;
-  --color-text-muted: #8E918F;
-  --color-sidebar-bg: #121212;
-  --color-surface: #1E1E1E;
-  --color-card-bg: #1E1E1E;
-  --color-card-border: rgba(255, 255, 255, 0.08);
-  --color-hover-bg: rgba(255, 255, 255, 0.08);
-  --color-border: rgba(255, 255, 255, 0.08);
-  --shadow-wechat: none;
-  --shadow-paper: 0 0 0 1px rgba(255,255,255,0.05), 0 20px 40px -4px rgba(0,0,0,0.6);
-  --shadow-card: none;
-}
-
-.theme-night h1, .theme-night h2, .theme-night h3 {
-  color: #F2F2F2;
-}
-.theme-night .article-body {
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  color: #E3E3E3;
+.article-read .article-title {
+  color: var(--color-text-sub);
 }
 
 /* Transitions */
-.drawer-enter-active, .drawer-leave-active {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
 }
-.drawer-enter-from, .drawer-leave-to {
-  transform: translateX(-100%);
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 
 .drawer-right-enter-active, .drawer-right-leave-active {
@@ -238,23 +166,4 @@ body {
 }
 .drawer-right-enter-from, .drawer-right-leave-to {
   transform: translateX(100%);
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.fade-enter-from { opacity: 0; transform: scale(0.99); }
-.fade-leave-to { opacity: 0; transform: scale(1.01); }
-
-/* Article Read Styles */
-.article-read {
-  opacity: 0.85;
-}
-.article-read .article-title {
-  color: var(--color-text-sub);
-  font-weight: normal;
-}
-.article-read img {
-  filter: grayscale(100%);
-  opacity: 0.8;
 }
