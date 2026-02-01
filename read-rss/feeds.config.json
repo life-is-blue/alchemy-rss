@@ -1,0 +1,10 @@
+
+{
+  "feeds": [
+    { "url": "https://hnrss.org/frontpage", "category": "social" },
+    { "url": "https://feeds.feedburner.com/TechCrunch/", "category": "article" },
+    { "url": "https://www.theverge.com/rss/index.xml", "category": "blog" },
+    { "url": "https://feeds.bloomberg.com/technology/news.xml", "category": "article" },
+    { "url": "https://baoyu.io/feed.xml", "category": "article" }
+  ]
+}

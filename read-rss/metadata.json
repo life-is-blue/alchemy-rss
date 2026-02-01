@@ -1,0 +1,5 @@
+{
+  "name": "WeRead RSS",
+  "description": "A WeChat Reading style RSS reader with Gemini AI summaries, optimized for desktop.",
+  "requestFramePermissions": []
+}
