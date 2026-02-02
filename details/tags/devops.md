@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-02 16:09:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-02 18:14:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -192,13 +192,13 @@
 
 
 
-### [突破地域限制的顺序一致性：D1-如何实现全局读取复制](https://blog.cloudflare.com/d1-read-replication-beta/)
+### [R2-数据目录：托管-Iceberg-表，零出口费用](https://blog.cloudflare.com/r2-data-catalog-public-beta/)
 
 2025-04-10 14:00:00
 
 
 
-### [R2-数据目录：托管-Iceberg-表，零出口费用](https://blog.cloudflare.com/r2-data-catalog-public-beta/)
+### [突破地域限制的顺序一致性：D1-如何实现全局读取复制](https://blog.cloudflare.com/d1-read-replication-beta/)
 
 2025-04-10 14:00:00
 
