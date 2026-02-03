@@ -1,0 +1,62 @@
+{
+  "id": "RAW_a38759cf",
+  "title": "Airbnb 通过 “Pay as a Local” 扩展全球结账功能，在 14 个月内覆盖 220 个市场",
+  "url": "https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-02-02 15:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Across more than 220 global markets, Airbnb primarily relies on card-based payments for bookings. To reduce checkout friction, improve accessibility, and increase adoption in international markets, Airbnb introduced trusted, locally preferred payment methods(LPM) as part of its <a href=\"https://medium.com/airbnb-engineering/pay-as-a-local-bef469b72f32\">\"Pay as a Local\" initiative</a>. The effort enables guests to choose payment options that align with regional preferences while allowing engineering teams to scale support for new methods more efficiently.</p>\n   <p>As part of the Payments long-term architecture initiative, Airbnb moved from a monolithic system to a domain-oriented services architecture. Core domains cover pay-ins, payouts, transaction fulfillment, processing, wallets, incentives, issuing, and settlement. The processing subdomain integrates with third-party PSPs via a connector and plugin framework, supporting API and file-based integrations, reducing effort and accelerating onboarding across markets.</p>\n   <p>Supported LPMs include country or region-specific digital wallets (M-Pesa, <a href=\"https://momo.mtn.com/\">MTN MoMo</a>), online bank transfers (Online Banking Czech, Online Banking Slovakia), real-time or instant bank payments (<a href=\"https://en.wikipedia.org/wiki/Pix_(payment_system)\">Pix</a>, <a href=\"https://en.wikipedia.org/wiki/Unified_Payments_Interface\">UPI</a>), and local payment schemes (<a href=\"https://en.wikipedia.org/wiki/EFTPOS\">EFTPOS</a>, Cartes Bancaires). According to Airbnb engineers, this modular approach significantly reduces the time and effort required to onboard new providers across different markets.</p>\n   <p>Airbnb analyzed the behaviors of 20+ global LPMs and identified three foundational payment flow archetypes: redirect, asynchronous, and direct. Redirect flows send guests to a third-party app or website to complete a payment and return a confirmation token. Asynchronous flows, such as <a href=\"https://en.wikipedia.org/wiki/QR_code_payment\">QR-based payments</a>, notify Airbnb via <a href=\"https://en.wikipedia.org/wiki/Webhook\">webhooks</a> after the transaction completes externally. Direct flows allow guests to enter credentials within Airbnb’s interface for immediate processing. Standardizing these flows into reusable archetypes reduced engineering effort and simplified the onboarding of additional providers.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/news/2026/02/airbnb-global-payaslocal/en/resources/1airbnbpaymentarchetypes-1769485940138.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/02/airbnb-global-payaslocal/en/resources/1airbnbpaymentarchetypes-1769485940138.jpeg\" rel=\"share\"></p>\n   <p><em>Local Payment Method Flow Archetypes: Redirect, Asynchronous, Direct(&nbsp;Source: <a href=\"https://medium.com/airbnb-engineering/pay-as-a-local-bef469b72f32\">Airbnb Blog Post)</a></em></p>\n   <p>To manage multi-step interactions across providers, Airbnb built a processor-agnostic Multi-Step Transaction (MST) framework. MST defines PSP agnostic steps for authorizations, redirects, confirmations, and captures, providing a consistent orchestration layer that handles both internal and external payment interactions. This ensures reliability across flows that involve app switching, session hand-offs, and asynchronous confirmations.</p>\n   <p>Integration and maintenance are further streamlined through a centralized YAML-based&nbsp;payment method configuration. This single source of truth defines eligibility rules, input validation, refund policies, and UI rendering instructions. Backend services and the checkout widget reference this configuration dynamically, making new payment launches largely declarative and reducing errors.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/news/2026/02/airbnb-global-payaslocal/en/resources/1Screenshot 2026-01-26 at 7.09.00 PM-1769485940138.png\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/02/airbnb-global-payaslocal/en/resources/1Screenshot 2026-01-26 at 7.09.00 PM-1769485940138.png\" rel=\"share\"></p>\n   <p><em>Airbnb payment config before and after replatform(&nbsp;Source: <a href=\"https://medium.com/airbnb-engineering/pay-as-a-local-bef469b72f32\">Airbnb Blog Post)</a></em></p>\n   <p>Testing and observability were expanded for complex payment flows. An in-house PSP Emulator simulates redirect and asynchronous methods, enabling end-to-end testing without external sandboxes. A centralized monitoring framework captures metrics across clients, backend, PSPs, and webhooks, with standardized alerts for rapid issue detection. Metrics auto-enable for new methods, allowing engineers to trace problems end-to-end. This ensures consistent reliability across diverse flows and supports the scalable rollout of additional local payment methods worldwide.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/02/airbnb-global-payaslocal/news/2026/02/airbnb-global-payaslocal/en/resources/1Screenshot 2026-01-26 at 7.47.13 PM-1769485940138.png\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/02/airbnb-global-payaslocal/en/resources/1Screenshot 2026-01-26 at 7.47.13 PM-1769485940138.png\" rel=\"share\"></p>\n   <p><em>Airbnb PSP emulator flow(&nbsp;Source: <a href=\"https://medium.com/airbnb-engineering/pay-as-a-local-bef469b72f32\">Airbnb Blog Post)</a></em></p>\n   <p>The Pay as a Local initiative had measurable business and technical impact. In markets where local payment methods were launched, Airbnb reported an increase in bookings and engagement from new users. Engineering teams reduced integration time for new providers through reusable payment flow archetypes and a configuration-driven approach. Observability improvements, standardized testing, and streamlined escalation processes strengthened reliability across the platform. The combination of modular services, multi-step transaction orchestration, and centralized configuration enabled faster provider onboarding, lower maintenance overhead, and a more consistent, localized checkout experience for guests worldwide.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Airbnb Expands Global Checkout with “Pay as a Local,” Scaling to 220 Markets in 14 Months\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/02/airbnb-global-payaslocal/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1770044400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Airbnb 通过采用面向领域的服务、标准化的流程原型以及声明式配置驱动框架，将其全球支付系统扩展到了 220 个市场。",
+  "oneSentenceSummary": "Airbnb 通过采用面向领域的服务、标准化的流程原型以及声明式配置驱动框架，将其全球支付系统扩展到了 220 个市场。",
+  "summary": "本文详细介绍了 Airbnb 的 “Pay as a Local” 计划，这是一项旨在全球范围内集成本地支付方式 (LPM) 的技术变革。通过从单体架构转向面向领域的服务，Airbnb 将多样化的全球支付行为归纳为三种基础原型：重定向、异步和直接支付。此次扩展的核心是多步交易 (MST) 框架（用于编排复杂的 PSP 交互）以及基于 YAML 的配置系统（支持以声明式、低代码的方式接入新支付方式）。该战略还包括用于稳健测试的自定义 PSP 模拟器，以及确保 220 个市场可靠性的集中式可观测性堆栈。",
+  "mainPoints": [
+    {
+      "point": "从单体架构转向面向领域的支付服务。",
+      "explanation": "Airbnb 将其支付系统解耦为收款、付款和处理等核心领域，从而实现了独立扩展，并通过插件框架与第三方供应商进行专业化集成。"
+    },
+    {
+      "point": "将多样化的全球支付行为标准化为三种基础流程原型。",
+      "explanation": "通过识别重定向、异步和直接流程，工程团队创建了可复用的模式，显著降低了接入 20 多种不同全球支付方式的复杂性和所需时间。"
+    },
+    {
+      "point": "实施了与处理器无关的多步交易 (MST) 框架进行编排。",
+      "explanation": "MST 框架提供了一个一致的层来管理授权和会话移交等复杂交互，确保房客在 Airbnb App 与外部支付平台之间切换时的可靠性。"
+    },
+    {
+      "point": "采用基于 YAML 的声明式配置以简化支付方式管理。",
+      "explanation": "这一 “单一事实来源” 定义了规则、验证和 UI 指令，使发布新支付方式成为一项配置任务，而非代码密集的工程项目。"
+    },
+    {
+      "point": "开发了内部 PSP 模拟器以促进复杂流程的端到端测试。",
+      "explanation": "该模拟器模拟外部支付响应，允许开发人员在不依赖外部沙箱的情况下测试重定向和异步 Webhook，从而增强了部署信心。"
+    }
+  ],
+  "keyQuotes": [
+    "Airbnb 从单体系统转向了面向领域的服务架构。",
+    "将这些流程标准化为可复用的原型，减少了工程工作量，并简化了更多供应商的接入过程。",
+    "后端服务和结账组件动态引用此配置，使得新支付方式的发布在很大程度上变成了声明式的。",
+    "模块化服务、多步交易编排和集中式配置的结合，实现了更快的供应商接入和更低的维护开销。"
+  ],
+  "tags": [
+    "软件架构",
+    "支付系统",
+    "微服务",
+    "可扩展性",
+    "Airbnb 工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 553,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1770044400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-02 15:00:00"
+}
