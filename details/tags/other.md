@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-03 08:10:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-03 10:57:20 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -21043,9 +21043,7 @@
 
 ### [最懂-iPhone-相机的人，回到苹果了](https://www.ifanr.com/1653501?utm_source=rss&utm_medium=rss&utm_campaign=)
 
-2026-02-02 10:29:52 | 标签: iPhone 17 Pro, 计算摄影, Halide, 硬件评测, 苹果设计
-
-> 本文报道了专业摄影应用 Halide 的创始人 Sebastiaan de With 加入苹果 Human Interface Design (HID) 团队的消息，并详细整理了他对 iPhone 17 Pro 的最后一份第三方影像评测。评测深度分析了 iPhone 17 Pro 的硬件革新，包括 4800 万像素长焦镜头带来的 8 倍光学级变焦体验、前置方形传感器在“人物居中”功能上的工程巧思，以及视频录制向专业电影机规格的靠拢。同时，作者也直言不讳地指出了主摄最近对焦距离过远、iOS 26 系统 Bug 频发以及算法处理痕迹等痛点。文章认为，iPhone 17 Pro 标志着该系列正从大众...
+2026-02-02 10:29:52
 
 
 
@@ -28603,11 +28601,11 @@
 
 
 
-### [Cursor-Agent-最佳实践](https://baoyu.io/translations/2026/01/12/cursor-agent-best-practices)
+### [“软件工程的未来两年”](https://baoyu.io/translations/2026/01/12/next-two-years-software-engineering)
 
 2026-01-12T00:00:00.000Z
 
-> 编程 Agent 正在改变软件开发方式。本文介绍与 Cursor Agent 高效协作的技巧：从计划开始、管理上下文、扩展 Agent 能力、审查代码、并行运行多个 Agent 等。
+> AI 时代软件工程的五大关键问题：初级开发者困境、技能演变、角色重塑、专才 vs 通才、教育变革。每个问题都有两种截然不同的未来走向，附带针对初级和高级开发者的应对策略。
 
 
 
