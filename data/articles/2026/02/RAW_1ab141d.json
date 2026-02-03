@@ -1,0 +1,59 @@
+{
+  "id": "RAW_1ab141d",
+  "title": "Codex 应用介绍",
+  "url": "https://www.youtube.com/watch?v=HFM3se4lNiw",
+  "date": "2026-02-02 22:16:58",
+  "author": "OpenAI",
+  "siteName": "OpenAI",
+  "content": "<html>\n <head></head>\n <body>\n  <h2 data-path-to-node=\"1\">内容概要</h2>\n  <p data-path-to-node=\"2\">OpenAI 正式推出了 Codex App，这是一个旨在通过将复杂开发任务委托给 AI Agent 来简化软件构建流程的中央指挥中心。该应用允许开发者在统一的界面中管理多个项目，通过语音指令直接构建 iOS 功能，并处理诸如代码库迁移、依赖项更新等耗时任务。通过集成 Figma 等工具的「技能」以及模型上下文协议（MCP），Codex 能够深入理解设计结构并生成高度还原的代码。此外，它还支持自动化工作流、云端任务委托和隔离的开发环境，让开发者能够从繁琐的编码中解脱出来，专注于创意的实现。</p>\n  <h2 data-path-to-node=\"3\">目录</h2>\n  <ul data-path-to-node=\"4\">\n   <li>\n    <p data-path-to-node=\"4,0,0\">Codex App 简介</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,1,0\">通过语音指令构建 iOS 功能</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,2,0\">管理耗时任务与代码迁移</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,3,0\">代码审查与合并更改</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,4,0\">从移动端到 Web 端的用户界面开发</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,5,0\">利用技能（Skills）与 Figma 集成</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,6,0\">自动化与高级工作流功能</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,7,0\">结语</p>\n   </li>\n  </ul>\n  <hr data-path-to-node=\"5\">\n  <h2 data-path-to-node=\"6\">Codex App 简介</h2>\n  <p data-path-to-node=\"7\">今天，我们非常高兴地向大家介绍 Codex App。现在，你可以在一个地方管理所有项目，并将实际工作委托给 Codex 处理。</p>\n  <p data-path-to-node=\"8\">你不再需要来回切换终端（Terminal）窗口，而是拥有一个统一的指挥中心来运行和监督 Agent。让我来看看它是如何工作的。</p>\n  <p data-path-to-node=\"9\">在左侧，你可以看到我的项目。对于每个项目，我都能查看 Codex 已完成的任务，其中一些任务甚至正在实时运行。</p>\n  <h2 data-path-to-node=\"10\">通过语音指令构建 iOS 功能</h2>\n  <p data-path-to-node=\"11\">右侧是主对话界面。让我们从我一直在开发的一款 iOS App 开始，它可以实时追踪国际空间站（ISS）。</p>\n  <p data-path-to-node=\"12\">假设我想为它添加新功能。我可以打字，或者直接口述我的想法： 「添加一个新页面，展示 NASA 的每日天文一图。」</p>\n  <p data-path-to-node=\"13\">就这样，Codex 现在会为我处理所有事务，并找出构建该功能所需的 API。</p>\n  <h2 data-path-to-node=\"14\">管理耗时任务与代码迁移</h2>\n  <p data-path-to-node=\"15\">在该任务运行的同时，让我们看看另一个我一直想迁移的项目。在这里，Codex 正在更新所有依赖项。</p>\n  <p data-path-to-node=\"16\">在这个任务中，它甚至正在将我们的语音对语音集成从 Websockets 迁移到 WebRTC。</p>\n  <p data-path-to-node=\"17\">在处理大型代码库时，其中一些任务可能需要几分钟甚至几小时。这是软件构建方式的一次重大转变。现在你可以监督你的 Agent，并在它们完成后进行检查。</p>\n  <h2 data-path-to-node=\"18\">代码审查与合并更改</h2>\n  <p data-path-to-node=\"19\">回到第一个任务。你可以看到 Codex 是如何处理问题的、执行的步骤以及实时进度。现在它已经完成了。</p>\n  <p data-path-to-node=\"20\">如果我点击右侧，可以看到差异对比（Diff）。我可以准确地审查 Swift 代码中的更改。</p>\n  <p data-path-to-node=\"21\">我可以留下行内注释以提供反馈，要求再次迭代，或者在确认无误后直接合并。</p>\n  <p data-path-to-node=\"22\">如果需要深入研究，我随时可以在 Xcode 中打开这些更改。但在这种情况下，我直接在这里构建并运行 App 即可。</p>\n  <p data-path-to-node=\"23\">使用 Codex App 让开发变得更有趣。我不需要花大量时间编写代码，而是可以将精力放在思考如何按我的设想去塑造 App。</p>\n  <p data-path-to-node=\"24\">让我们打开 iOS 模拟器（Simulator），看，就是这样。我只给出了一个句子，Codex 就为我构建了这整个新功能。这难道不令人惊叹吗？</p>\n  <h2 data-path-to-node=\"25\">从移动端到 Web 端的用户界面开发</h2>\n  <p data-path-to-node=\"26\">切换到我一直在做的另一个项目：一个基于 Web 的健身追踪器。</p>\n  <p data-path-to-node=\"27\">对于这类视觉任务，我希望更贴近正在构建的体验。通过点击右上角，我可以像这样将对话框弹出，带着 Codex 一起操作。</p>\n  <p data-path-to-node=\"28\">我可以口述： 「为进度条添加动画以模拟进度。」 几秒钟后，我就能看到这些更改实时生效。这真的感觉像是在和队友协作。大功告成。</p>\n  <h2 data-path-to-node=\"29\">利用技能（Skills）与 Figma 集成</h2>\n  <p data-path-to-node=\"30\">Codex App 的另一个强大之处在于「技能」（Skills）。技能让 Codex 能够连接到你喜爱的所有工具。</p>\n  <p data-path-to-node=\"31\">实际上，这个 App 是利用 Figma 技能实现的，它在幕后自动使用了模型上下文协议（MCP）来为我完成设置。</p>\n  <p data-path-to-node=\"32\">让我快速展示一下设计稿。这是首页，如果我点击其中一个组件，你可以看到间距、文本样式等是如何定义的。</p>\n  <p data-path-to-node=\"33\">Codex 并不是根据截图工作的，它实际上是在读取设计文件的结构（包括这些变量），以使用我们的设计系统（Design System）生成真实的代码。</p>\n  <p data-path-to-node=\"34\">这就是为什么它与设计的契合度如此之高。当然，你也可以为自己或团队创建自定义技能，使其真正契合你的工作流。</p>\n  <h2 data-path-to-node=\"35\">自动化与高级工作流功能</h2>\n  <p data-path-to-node=\"36\">真正强大的是，你甚至可以将这些技能转化为自动化任务。</p>\n  <p data-path-to-node=\"37\">想象一下，你有一些需要定期运行的任务，比如对来自 Sentry 的告警进行分类，或者处理来自 Linear 的 Bug 和工单。现在你可以让这些任务在后台处理，而你则专注于构建。</p>\n  <p data-path-to-node=\"38\">Codex App 还有许多其他功能，包括使用名为工作树（Worktrees）的隔离环境。这样，你可以给每个 Agent 提供一份代码副本，从而不必担心冲突或破坏你的本地设置。</p>\n  <p data-path-to-node=\"39\">你也可以将任何任务（尤其是耗时较长的任务）委托给云端的 Codex，界面完全一致。</p>\n  <h2 data-path-to-node=\"40\">结语</h2>\n  <p data-path-to-node=\"41\">刚才只是一个快速演示。Codex App 是一种全新的软件构建方式。</p>\n  <p data-path-to-node=\"42\">对我而言，这意味着编写代码的时间大大减少，而创造、完善创意并将其变为现实的时间则大大增加。我们迫不及待想看到你们用它构建出什么作品。</p>\n  <hr data-path-to-node=\"43\">\n  <p data-path-to-node=\"44\"></p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 的 Codex 应用是一个集中的指挥中心，允许开发者将复杂软件任务（如功能构建、迁移和设计稿转代码）委派给 AI 智能体。",
+  "oneSentenceSummary": "OpenAI 的 Codex 应用是一个集中的指挥中心，允许开发者将复杂软件任务（如功能构建、迁移和设计稿转代码）委派给 AI 智能体。",
+  "summary": "Codex 应用通过从手动编码转向智能体监督，引入了软件开发范式的转变。它提供了一个统一的仪表板来管理多个项目，开发者可以使用语音或文本命令触发各种任务，例如构建 iOS 功能、更新依赖项或迁移协议（如从 Websockets 迁移到 WebRTC）。核心功能包括用于深度 Figma 集成的 MCP，使 AI 能够读取设计结构而非仅仅是截图，以及用于隔离开发环境的工作树。该应用还支持用于 Bug 分拣的自动化工作流，以及针对耗时流程的云端任务委派。",
+  "mainPoints": [
+    {
+      "point": "Codex 应用是跨多个项目管理 AI 智能体的集中指挥中心。",
+      "explanation": "开发者无需在终端和 IDE 之间切换，即可在单一界面中监督智能体的实时进度、审查代码差异并管理复杂的工作流。"
+    },
+    {
+      "point": "该应用可处理耗时的任务，如依赖项更新和大规模代码迁移。",
+      "explanation": "通过将重复性或耗时的任务（例如从 Websockets 迁移到 WebRTC）委派给智能体，开发者可以专注于高层架构和创造性的问题解决。"
+    },
+    {
+      "point": "通过 MCP 与 Figma 集成，实现了高保真的设计稿转代码生成。",
+      "explanation": "Codex 读取设计文件的实际结构和变量，而非依赖视觉截图，确保生成的代码严格遵循定义的设计系统。"
+    },
+    {
+      "point": "隔离的工作树和云端委派确保了开发的稳定性和可扩展性。",
+      "explanation": "智能体在隔离的环境中工作以防止本地配置冲突，繁重的任务可以卸载到云端，同时保持一致的用户界面。"
+    }
+  ],
+  "keyQuotes": [
+    "你不再需要在终端窗口之间跳转；相反，你拥有一个单一的指挥中心来运行和监督智能体。",
+    "Codex 不是根据截图工作的；它实际上是在读取设计文件的结构——包括那些变量——以使用我们的设计系统生成真实代码。",
+    "这是软件构建方式的一个重大转变。你现在可以监督你的智能体，并在它们完成后进行检查。",
+    "Codex 应用是一种构建软件的新方式。对我来说，这意味着编写代码的时间大大减少，而创造的时间大大增加。",
+    "你可以给每个智能体一份代码副本，这样你就不必担心冲突或破坏你的本地配置。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "Codex 应用",
+    "软件工程",
+    "MCP",
+    "Figma 集成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 92,
+  "wordCount": 1800,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d90853",
+  "sourceName": "OpenAI",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1770070618000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-02 22:16:58"
+}
