@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-05 00:13:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-05 02:12:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -28625,9 +28625,11 @@
 
 
 
-### [代码日趋廉价，软件依然昂贵](https://baoyu.io/translations/2026/01/13/code-is-cheap-software-isnt)
+### [Claude-Code-的"懒加载"更新：AI-终于学会了"随叫随到](https://baoyu.io/blog/2026/01/14/claude-code-mcp-tool-search)
 
-2026-01-13T00:00:00.000Z
+2026-01-14T00:00:00.000Z
+
+> Claude Code 推出 Tool Search 功能，用懒加载方式解决 MCP 工具占用过多上下文的问题。以前装 7 个 MCP 服务器就占掉三分之一脑容量，现在改成按需搜索调用，节省 98.7% token。AI 工具生态正从"堆功能"走向"抠效率"。
 
 
 
