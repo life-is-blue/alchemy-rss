@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-04 12:30:53 | [返回首页](/README.md)
+**更新时间**: 2026-02-04 14:13:34 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9035)
+- [AI & 大模型](#ai-llm) (9037)
 - [软件架构](#architecture) (18)
 - [前端与全栈](#frontend-fullstack) (698)
 - [DevOps](#devops) (404)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Claude-Code-创始人再次公开：团队的-10-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247718904&idx=1&sn=7f77ee06ab57fd11bc44ab6f782cd644) - AI 精选
 - [深度解读：OpenClaw-架构及生态](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491455&idx=1&sn=33d58cb6f0d2cd3b9c08c3c84a223e25) - AI 精选
 - [智能体编程中的-80%-问题](https://addyo.substack.com/p/the-80-problem-in-agentic-coding) - AI 精选
 - [DeepAgents-的上下文管理](https://www.blog.langchain.com/context-management-for-deepagents/) - AI 精选
@@ -41,9 +42,8 @@
 - [Claude-Code-创始人首次公开：我的-13-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247717240&idx=1&sn=dfd0b8b79fb18e53d17d62ef149aa392) - AI 精选
 - [Agent-in-the-Shell，豆包手机是敲键盘的“机械手指”吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDgzNDUxMw==&mid=2650854144&idx=1&sn=031c8f5c27d805de0cf2a300667ad16a) - AI 精选
 - [2025：大语言模型年度回顾](https://simonwillison.net/2025/Dec/31/the-year-in-llms/#atom-everything) - AI 精选
-- [我的-2025-年度-AI-大盘点---前路已明。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647678419&idx=1&sn=5c65bdeddddaefad8cd82f28676a5ecd) - AI 精选
 
-- [查看全部 9035 篇...](/details/tags/ai-llm.md)
+- [查看全部 9037 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构

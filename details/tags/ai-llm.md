@@ -1,8 +1,16 @@
-> **更新时间**: 2026-02-04 12:30:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-04 14:13:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek, OpenAI, Claude
+
+
+
+### [Claude-Code-创始人再次公开：团队的-10-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247718904&idx=1&sn=7f77ee06ab57fd11bc44ab6f782cd644)
+
+2026-02-03 14:58:00 | 标签: Claude Code, AI Coding, 软件工程, 工作流优化, LLM Agent
+
+> 本文由 Claude Code 创始人 Boris Cherny 总结并分享了其团队内部使用该工具的 10 个核心技巧。文章强调了 AI 辅助编程不应仅停留在简单的对话层面，而应通过工程化手段提升效率。核心建议包括：利用 git worktree 实现多任务并行处理；在复杂任务中坚持“计划先行”并引入 Review 机制；通过持续迭代 CLAUDE.md 文件来固化项目规范；封装自定义 Skill 以处理技术债和上下文聚合；以及利用 Subagents 增加算力投入和任务卸载。这些技巧旨在帮助开发者构建更高效、更自动化的 AI 协作工作流。
 
 
 
@@ -816,13 +824,13 @@
 
 
 
-### [Claude-技能：为你的工作流程定制-AI](https://www.anthropic.com/news/skills)
+### [Veo-3.1：Flow-带来高级功能，革新-AI-视频创作](https://deepmind.google/discover/blog/introducing-veo-3-1-and-advanced-creative-capabilities/)
 
 2025-10-15 16:00:00
 
 
 
-### [Veo-3.1：Flow-带来高级功能，革新-AI-视频创作](https://deepmind.google/discover/blog/introducing-veo-3-1-and-advanced-creative-capabilities/)
+### [Claude-技能：为你的工作流程定制-AI](https://www.anthropic.com/news/skills)
 
 2025-10-15 16:00:00
 
@@ -948,13 +956,7 @@
 
 
 
-### [中国科学院信工所发布首篇-LLM-智能体幻觉综述！梳理-5-类幻觉、18-大诱因与-10-种缓解方案，300+论文资源开源](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247554700&idx=1&sn=a1111aaf763d2d26ec89cb6c55b8c03a)
-
-2025-09-28 16:00:00
-
-
-
-### [Claude-开发者平台：上下文管理新方案](https://www.anthropic.com/news/context-management)
+### [Claude-Sonnet-4.5-正式推出](https://www.anthropic.com/news/claude-sonnet-4-5)
 
 2025-09-28 16:00:00
 
@@ -966,7 +968,13 @@
 
 
 
-### [Claude-Sonnet-4.5-正式推出](https://www.anthropic.com/news/claude-sonnet-4-5)
+### [Claude-开发者平台：上下文管理新方案](https://www.anthropic.com/news/context-management)
+
+2025-09-28 16:00:00
+
+
+
+### [中国科学院信工所发布首篇-LLM-智能体幻觉综述！梳理-5-类幻觉、18-大诱因与-10-种缓解方案，300+论文资源开源](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247554700&idx=1&sn=a1111aaf763d2d26ec89cb6c55b8c03a)
 
 2025-09-28 16:00:00
 
@@ -1500,13 +1508,13 @@
 
 
 
-### [2025-全球大模型应用报告：红海混战「忠诚度」瓦解，用户脚踏-4.7-条船！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=3&sn=8ffb126853f84859b3e26e9d7e2125c0)
+### [41-个榜单-SOTA！智谱最新开源-GLM-4.5V-实测：看图猜地址、视频秒变代码](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=1&sn=e002da6dc84406331fd499374e6ee262)
 
 2025-08-11 14:22:00
 
 
 
-### [41-个榜单-SOTA！智谱最新开源-GLM-4.5V-实测：看图猜地址、视频秒变代码](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=1&sn=e002da6dc84406331fd499374e6ee262)
+### [2025-全球大模型应用报告：红海混战「忠诚度」瓦解，用户脚踏-4.7-条船！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652619027&idx=3&sn=8ffb126853f84859b3e26e9d7e2125c0)
 
 2025-08-11 14:22:00
 
@@ -1668,13 +1676,13 @@
 
 
 
-### [超详细提示词教程｜玩转-Wan2.2](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=2&sn=837efe78d54b6429bbb8392f15d08369)
+### [Wan2.2-开源：让每个像素都懂电影美学](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=1&sn=a0a7e3a443ff55fb51f11e0f6954fbf1)
 
 2025-07-28 13:15:00
 
 
 
-### [Wan2.2-开源：让每个像素都懂电影美学](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=1&sn=a0a7e3a443ff55fb51f11e0f6954fbf1)
+### [超详细提示词教程｜玩转-Wan2.2](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247497083&idx=2&sn=837efe78d54b6429bbb8392f15d08369)
 
 2025-07-28 13:15:00
 
@@ -2466,7 +2474,7 @@
 
 
 
-### [ScreenSuite---最全面的-GUI-Agent-评估套件！](https://huggingface.co/blog/screensuite)
+### [Qwen-家族再上新！](https://mp.weixin.qq.com/s/utRrkFADVdW25I_KpBtngA)
 
 2025-06-06 00:00:00
 
@@ -2478,7 +2486,7 @@
 
 
 
-### [Qwen-家族再上新！](https://mp.weixin.qq.com/s/utRrkFADVdW25I_KpBtngA)
+### [ScreenSuite---最全面的-GUI-Agent-评估套件！](https://huggingface.co/blog/screensuite)
 
 2025-06-06 00:00:00
 
@@ -2808,13 +2816,13 @@
 
 
 
-### [谷歌发-76-页智能体白皮书！你的「AI-替身」已上线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=3&sn=0f3eaddbbab7aad9b43473bd4d88817e&subscene=0)
+### [黄仁勋放话：英伟达全员拥抱智能体！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=2&sn=78043090438b28ecc36dba721e9aec29&subscene=0)
 
 2025-05-11 04:34:00
 
 
 
-### [黄仁勋放话：英伟达全员拥抱智能体！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=2&sn=78043090438b28ecc36dba721e9aec29&subscene=0)
+### [谷歌发-76-页智能体白皮书！你的「AI-替身」已上线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652593095&idx=3&sn=0f3eaddbbab7aad9b43473bd4d88817e&subscene=0)
 
 2025-05-11 04:34:00
 
@@ -2964,13 +2972,13 @@
 
 
 
-### [深夜突袭，阿里-Qwen3-登顶全球开源王座！暴击-DeepSeek-R1，2-小时狂揽-17k-星](https://mp.weixin.qq.com/s/t-3O-1lnSronDuLkcQ97aQ)
+### [Qwen3-重磅开源！](https://mp.weixin.qq.com/s/NrS8SR9_FMq5GW-SJQPn8w)
 
 2025-04-29 00:00:00
 
 
 
-### [Qwen3-重磅开源！](https://mp.weixin.qq.com/s/NrS8SR9_FMq5GW-SJQPn8w)
+### [深夜突袭，阿里-Qwen3-登顶全球开源王座！暴击-DeepSeek-R1，2-小时狂揽-17k-星](https://mp.weixin.qq.com/s/t-3O-1lnSronDuLkcQ97aQ)
 
 2025-04-29 00:00:00
 
@@ -3144,13 +3152,13 @@
 
 
 
-### [最新万字长文！强化学习之父联合谷歌-RL-副总裁：未来不是靠强化学习算法而是「经验流」](https://mp.weixin.qq.com/s/Pa21gCiG571j9fHBrENp1w)
+### [通义万相-2.1-首尾帧模型开源！细节真实生动+过渡丝滑，指令遵循表现出色！](https://mp.weixin.qq.com/s/ijzb-uRFgQb9e8FYDuJqeA)
 
 2025-04-18 00:00:00
 
 
 
-### [通义万相-2.1-首尾帧模型开源！细节真实生动+过渡丝滑，指令遵循表现出色！](https://mp.weixin.qq.com/s/ijzb-uRFgQb9e8FYDuJqeA)
+### [最新万字长文！强化学习之父联合谷歌-RL-副总裁：未来不是靠强化学习算法而是「经验流」](https://mp.weixin.qq.com/s/Pa21gCiG571j9fHBrENp1w)
 
 2025-04-18 00:00:00
 
@@ -3180,13 +3188,7 @@
 
 
 
-### [ModelScope-魔搭-25-年-4-月发布月报](https://mp.weixin.qq.com/s/EMMDDD1SnaG3bgS8gpRn_w)
-
-2025-04-17 00:00:00
-
-
-
-### [开源！](https://mp.weixin.qq.com/s/vLaWADGarHRBpSqa5UkM0A)
+### [OpenAI-震撼发布-o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表](https://mp.weixin.qq.com/s/g4dvXbt5a0dR4wBLOKLMAA)
 
 2025-04-17 00:00:00
 
@@ -3198,7 +3200,13 @@
 
 
 
-### [OpenAI-震撼发布-o3/o4-mini，直逼视觉推理巅峰！首用图像思考，十倍算力爆表](https://mp.weixin.qq.com/s/g4dvXbt5a0dR4wBLOKLMAA)
+### [开源！](https://mp.weixin.qq.com/s/vLaWADGarHRBpSqa5UkM0A)
+
+2025-04-17 00:00:00
+
+
+
+### [ModelScope-魔搭-25-年-4-月发布月报](https://mp.weixin.qq.com/s/EMMDDD1SnaG3bgS8gpRn_w)
 
 2025-04-17 00:00:00
 
@@ -53031,6 +53039,14 @@
 ### [Vol.52-74-页-PPT-解读-Deepseek-与-AI-Agent](https://www.xiaoyuzhoufm.com/episode/67bad726606e5c5940403ea5)
 
 2025-02-24 16:00:00
+
+
+
+### [E224｜深度拆解-Clawdbot，为何它能成为-2026-年第一个现象级产品？](https://www.xiaoyuzhoufm.com/episode/69828c85a712301410e31643)
+
+2026-02-04 00:00:00 | 标签: AI Agent, 长期记忆, 主动性AI, Markdown存储, 隐私保护
+
+> 本期播客深度剖析了 2026 年首个现象级 AI 产品 Clawdbot。该产品通过整合长期记忆与主动性机制，并利用即时通讯软件（IM）作为交互界面，创造了极强的“活人感”。技术上，Clawdbot 巧妙地使用 Markdown 文件结构化存储记忆，并结合向量数据库与心跳机制实现自主任务处理。节目还深入探讨了因 Agent 接管桌面权限而引发的隐私安全问题，并分析了为何 Mac mini 成为本地化部署的首选。此外，嘉宾们展望了 AI Agent 如何推动“一人公司”模式的兴起，以及开源社区与大模型厂商之间在 Agent 生态中的博弈与商业模式变革。
 
 
 

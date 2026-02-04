@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-04 12:30:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-04 14:13:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -635,13 +635,13 @@
 
 
 
-### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
+### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
 
 2025-04-16 00:00:00
 
 
 
-### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
+### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
 
 2025-04-16 00:00:00
 
@@ -28625,11 +28625,11 @@
 
 
 
-### [Claude-Code-的"懒加载"更新：AI-终于学会了"随叫随到](https://baoyu.io/blog/2026/01/14/claude-code-mcp-tool-search)
+### [代码日趋廉价，软件依然昂贵](https://baoyu.io/translations/2026/01/13/code-is-cheap-software-isnt)
 
-2026-01-14T00:00:00.000Z
+2026-01-13T00:00:00.000Z
 
-> Claude Code 推出 Tool Search 功能，用懒加载方式解决 MCP 工具占用过多上下文的问题。以前装 7 个 MCP 服务器就占掉三分之一脑容量，现在改成按需搜索调用，节省 98.7% token。AI 工具生态正从"堆功能"走向"抠效率"。
+> AI 让代码生成变得几乎零成本，但构建有价值的软件依然昂贵。我们正进入"个人软件"时代——工程师的价值从"怎么写"转向"为什么"和"是什么"，判断力、品味和架构能力才是不可替代的核心竞争力。
 
 
 
