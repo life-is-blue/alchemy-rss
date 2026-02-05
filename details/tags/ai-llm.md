@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-05 18:13:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-05 20:07:47 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -41180,9 +41180,7 @@
 
 ### [今年都在求「健康福」，我测完这个-AI-后决定直接转发家庭群](https://www.ifanr.com/1654064?utm_source=rss&utm_medium=rss&utm_campaign=)
 
-2026-02-04 17:00:28 | 标签: 蚂蚁阿福, 医疗AI, 垂直大模型, 智能问诊, 健康管理
-
-> 本文是对蚂蚁集团推出的医疗垂直领域 AI 智能体“蚂蚁阿福”的深度测评。文章通过对比通用大模型，详细分析了阿福在医疗场景下的核心优势：首先是专业性，其语料库由数百家医院及名医背书，遵循循证医学原则，显著降低了 AI 幻觉；其次是交互逻辑，阿福模拟了真实医生的“追问-排查”思维，而非简单的单次问答；再者是记忆能力，通过健康档案功能实现了对家庭成员健康数据的长期动态跟踪。此外，文章强调了阿福与支付宝生态的深度集成，使其能够直接提供挂号、医保码调用等实操服务，完成了从信息咨询到医疗服务的闭环。作者认为，这种具备专业性、同理心且能连接服务的垂直 AI，是目前最适合家庭健康管理的工具之一。
+2026-02-04 17:00:28
 
 
 
@@ -52442,6 +52440,14 @@
 
 
 
+### [“人人皆可开发”：v0-如何将-Git-工作流引入氛围编程-|-Guillermo-Rauch-Vercel-CEO](https://www.youtube.com/watch?v=Yb9IyTOh0xg)
+
+2026-02-04 13:01:11 | 标签: v0, Vercel, 氛围编程, Git 工作流, AI 智能体
+
+> 在这期播客中，Guillermo Rauch 讨论了 v0 从 UI 原型工具到全面 AI 驱动开发平台的演进。他强调，虽然生成初始代码很容易，但真正的挑战在于专业环境下的迭代和安全部署。v0 通过将 Git 分支、PR 预览和自动描述视为一等公民来解决这一问题。Rauch 分享了 Vercel 的内部数据，显示每天通过 v0 合并的 PR 激增至 3，200 个，这说明非工程师也能直接为生产环境贡献代码。讨论还涉及了用于智能体扩展的 skills.sh、内部 AI 智能体（如用于数据分析的 DZero）的使用，以及“人人皆可开发”的愿景——通过让创意在没有传统工程瓶颈的情况下变为现实，从而减...
+
+
+
 ### [Codex-应用介绍](https://www.youtube.com/watch?v=HFM3se4lNiw)
 
 2026-02-02 22:16:58
@@ -52646,7 +52652,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -52658,7 +52664,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

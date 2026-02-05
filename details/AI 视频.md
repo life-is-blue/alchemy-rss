@@ -1,15 +1,21 @@
-> **更新时间**: 2026-02-03 08:10:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-05 20:07:47 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [“人人皆可开发”：v0-如何将-Git-工作流引入氛围编程-|-Guillermo-Rauch-Vercel-CEO](https://www.youtube.com/watch?v=Yb9IyTOh0xg)
+
+2026-02-04 13:01:11 | 标签: v0, Vercel, 氛围编程, Git 工作流, AI 智能体
+
+> 在这期播客中，Guillermo Rauch 讨论了 v0 从 UI 原型工具到全面 AI 驱动开发平台的演进。他强调，虽然生成初始代码很容易，但真正的挑战在于专业环境下的迭代和安全部署。v0 通过将 Git 分支、PR 预览和自动描述视为一等公民来解决这一问题。Rauch 分享了 Vercel 的内部数据，显示每天通过 v0 合并的 PR 激增至 3，200 个，这说明非工程师也能直接为生产环境贡献代码。讨论还涉及了用于智能体扩展的 skills.sh、内部 AI 智能体（如用于数据分析的 DZero）的使用，以及“人人皆可开发”的愿景——通过让创意在没有传统工程瓶颈的情况下变为现实，从而减...
+
+
+
 ### [Codex-应用介绍](https://www.youtube.com/watch?v=HFM3se4lNiw)
 
-2026-02-02 22:16:58 | 标签: AI 智能体, Codex 应用, 软件工程, MCP, Figma 集成
-
-> Codex 应用通过从手动编码转向智能体监督，引入了软件开发范式的转变。它提供了一个统一的仪表板来管理多个项目，开发者可以使用语音或文本命令触发各种任务，例如构建 iOS 功能、更新依赖项或迁移协议（如从 Websockets 迁移到 WebRTC）。核心功能包括用于深度 Figma 集成的 MCP，使 AI 能够读取设计结构而非仅仅是截图，以及用于隔离开发环境的工作树。该应用还支持用于 Bug 分拣的自动化工作流，以及针对耗时流程的云端任务委派。
+2026-02-02 22:16:58
 
 
 
@@ -223,7 +229,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -235,7 +241,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
