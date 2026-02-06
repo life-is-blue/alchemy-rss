@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-06 14:15:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-06 16:10:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -600,6 +600,14 @@
 
 
 
+### [为什么你的-UI-不更新：调试-React-应用中的陈旧数据和缓存问题](https://www.freecodecamp.org/news/why-your-ui-wont-update-debugging-stale-data-and-caching-in-react-apps/)
+
+2026-02-05 17:32:01 | 标签: React, Next.js, 缓存, 调试, React Query
+
+> 本文针对开发者经常遇到的困扰——尽管数据修改成功，但 React UI 却未能更新的问题进行了探讨。文章引入了一个结构化的思维模型，通过识别五个不同的缓存层（React Query 客户端缓存、Next.js fetch 服务端缓存、浏览器 HTTP 缓存、CDN/托管缓存以及 Service Workers），帮助开发者摆脱“凭直觉猜测”的困境。作者还强调了一个常见的“非缓存”陷阱，即重复的 React 本地状态。针对每一层，指南都提供了具体的症状、“快速检查”调试技巧（如检查 DevTools 网络请求头或使用缓存清除查询参数）以及代码层面的解决方案（如显式缓存失效和设置 “no-stor...
+
+
+
 ### [WASM-组件是-FaaS-的最佳拍档](https://www.infoq.com/presentations/wasm-components-faas/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-30 09:30:00
@@ -612,13 +620,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2112,13 +2120,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3822,13 +3830,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_2c039aeb",
+  "title": "从测试驱动开发和生产环境测试中获取反馈",
+  "url": "https://www.infoq.com/news/2026/02/feedback-TDD-production/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-02-05 11:36:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Teams rely on strong unit and integration tests instead of end-to-end tests. Using TDD, pair programming, and good design, they ship small changes often, test in production for real feedback, and use feature toggles to reduce risk, <a href=\"https://www.linkedin.com/in/ola-hast-80752a21/\">Ola Hast</a> and<a href=\"https://www.linkedin.com/in/asgaut-mjolne/\"> Asgaut Mjølne Söderbom</a> mentioned in their talk about <a href=\"https://www.infoq.com/presentations/cd-pair-programming/\">continuous delivery with pair programming</a> at <a href=\"https://qconlondon.com/\">QCon London</a>.</p>\n   <p>Hast mentioned that they trust their unit tests and integration tests individually, and all of them together as a whole. They have no end-to-end tests:</p>\n   <blockquote>\n    <p>We achieved this by using good separation of concerns, modularity, abstraction, low coupling, and high cohesion. These mechanisms go hand in hand with TDD and pair programming. The result is a better domain-driven design with high code quality.</p>\n   </blockquote>\n   <p>Previously, they had more HTTP application integration tests that tested the whole app, but they have moved away from this (or just have some happy cases) to more focused tests that have shorter feedback loops, Hast mentioned.</p>\n   <p>Since test environments will always be an approximation of production, and usually struggle with long supply chains and bad test data, they have more or less stopped using them in their entirety, Mjölne Söderbom explained:</p>\n   <blockquote>\n    <p>We prefer to test in production since that is where we get the feedback with the best quality.</p>\n   </blockquote>\n   <p>They reduce risks by putting new features behind toggles and deploying small pieces at a time. It is something they have done for several years now, and it works really well, Mjölne Söderbom said. If something breaks in production, it’s easy to find, fix, and roll back/forward, he added.</p>\n   <p>In an earlier article, Hast and Mjølne Söderbom mentioned that their team uses <a href=\"https://www.infoq.com/news/2025/07/pair-programming-speed-flow/\">pair and mob programming with TDD</a>; there are no solo tasks or separate code reviews. This approach boosts code quality, reduces waste, and enables the sharing of knowledge:</p>\n   <blockquote>\n    <p>After years of practicing, we have ended up working together, doing TDD, and then deploying to production. We rarely test the application running locally or in the test environment. This was never our main intent; it is just a (happy) consequence of the way we work.</p>\n   </blockquote>\n   <p><a href=\"https://www.infoq.com/news/2025/10/continuous-delivery-pairing/\">Pair programming and continuous integration</a> can go hand-in-hand. Pushing to main multiple times a day is hard in isolation, leading to delays, large PRs, and merge issues. Pairing enables instant code review, easier refactoring, fewer bugs, and higher team resilience, Hast and Mjølne Söderbom explained.</p>\n   <p>Hast mentioned that they used to have more tests that tested the entire application running, but they have reduced this to a minimum; they usually just have a happy path test, and additional tests in case there are any special error situations:</p>\n   <blockquote>\n    <p>What we cannot test with unit tests, we prefer to test in production. Tests will always be an approximation of reality, and we always struggled with long supply chains and bad test data. The best feedback we always get is from production. It was never a goal in itself to stop using the test environment, but it was just another happy side effect.</p>\n   </blockquote>\n   <p>The most important thing is getting the feedback loops in place, Mjölne Söderbom mentioned. Feedback is what helps to navigate and choose a direction, and change direction when necessary:</p>\n   <blockquote>\n    <p>We get the fastest feedback from our tests and the best feedback from production.</p>\n   </blockquote>\n   <p>When something is painful, they do it more often, Hast explained:</p>\n   <blockquote>\n    <p>The way our company got to where we are today was that we increased the cadence of our deployments to productions and we got feedback quickly where it hurt the most, then we fixed those things. This process has been ongoing for 10 years now.</p>\n   </blockquote>\n   <p>We are very focused on fast feedback loops on all levels in the development process, Mjölne Söderbom said. TDD is one of our most important tools for getting early and fast feedback, he explained:</p>\n   <blockquote>\n    <p>If you have code that is difficult to test, it usually means that there is a problem with the design. The code \"talks\" to us, and this drives the design.</p>\n   </blockquote>\n   <p>Many think that TDD is a testing tool, but in reality, it is a design tool. Having proper tests that enable fast flow is more of a (really good) side-effect, Mjölne Söderbom concluded.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Getting Feedback from Test-Driven Development and Testing in Production\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/02/feedback-TDD-production/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1770291360000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文提倡一种高速开发工作流，通过 TDD、结对编程和生产环境测试来取代传统的预发布环境和端到端测试。",
+  "oneSentenceSummary": "本文提倡一种高速开发工作流，通过 TDD、结对编程和生产环境测试来取代传统的预发布环境和端到端测试。",
+  "summary": "本文基于 QCon London 的演讲，详细介绍了一种优先考虑快速反馈循环的成熟工程方法论。作者认为，传统的端到端 (E2E) 测试和预发布环境往往是对现实的拙劣模拟，存在数据质量问题和冗长的供应环节。相反，他们提出了一种模型，让团队依赖于通过 TDD 和结对编程开发的健壮单元测试和集成测试。通过将 TDD 视为设计工具而非仅仅是测试工具，团队可以实现更好的模块化和更低的耦合。通过使用特性开关 (Feature Toggles) 和频繁的小规模部署，在生产环境中管理风险。这种经过十年磨炼的方法强调，最高质量的反馈直接来自生产环境，使团队能够更精准地导航和转型。",
+  "mainPoints": [
+    {
+      "point": "TDD 应主要作为设计工具而非测试机制来使用。",
+      "explanation": "当代码难以测试时，它预示着潜在的设计缺陷。TDD 迫使开发者关注模块化、抽象和低耦合，从而产生卓越的领域驱动设计和更高的代码质量。"
+    },
+    {
+      "point": "生产环境测试比模拟的预发布环境提供更高质量的反馈。",
+      "explanation": "预发布环境通常是对现实的不准确模拟。通过在特性开关后部署微小变更，团队可以在最关键的地方收集真实世界的反馈，减少对脆弱且维护成本高的端到端测试套件的依赖。"
+    },
+    {
+      "point": "结对编程和群编程促进了持续集成和即时代码审查。",
+      "explanation": "协同工作消除了对单独、延迟的代码审查和大批量 Pull Request 的需求。这种协作方式实现了每天多次向主分支推送代码，增强了团队韧性并确保知识在组织内共享。"
+    },
+    {
+      "point": "高频率的部署节奏是识别和解决系统性痛点最有效的方法。",
+      "explanation": "通过增加生产部署的频率，团队被迫面对并解决流程中最痛苦的部分。随着时间的推移，这种迭代改进创造了一个精简的工作流，使错误易于发现和修复。"
+    }
+  ],
+  "keyQuotes": [
+    "我们从测试中获得最快的反馈，从生产环境中获得最好的反馈。",
+    "如果你有难以测试的代码，通常意味着设计存在问题。代码在与我们‘对话’，这驱动了设计。",
+    "对于无法通过单元测试涵盖的内容，我们更倾向于在生产环境中进行测试。测试永远只是对现实的近似。",
+    "许多人认为 TDD 是一种测试工具，但实际上它是一种设计工具。拥有能够实现快速流动的适当测试，更多的是一种（非常好的）副作用。",
+    "我们公司之所以能达到今天的成就，是因为我们增加了向生产环境部署的频率，并在最痛苦的地方迅速获得了反馈。"
+  ],
+  "tags": [
+    "TDD",
+    "持续交付",
+    "生产环境测试",
+    "结对编程",
+    "软件架构"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 691,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1770291360000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-05 11:36:00"
+}

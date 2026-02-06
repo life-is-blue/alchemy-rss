@@ -1,0 +1,58 @@
+{
+  "id": "RAW_9f824261",
+  "title": "邓明扬一作论文改写生成范式！何恺明也署名了",
+  "url": "https://www.qbitai.com/2026/02/376752.html",
+  "date": "2026-02-05 15:26:57",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"77\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"78\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"76\">刚刚，何恺明团队提出全新生成模型范式漂移模型（Drifting Models）。</p>\n  <p data-track=\"4\">这篇论文的一作也是人大附中校友，奥赛双料金牌得主<strong>邓明扬</strong>加入恺明团队的第一篇一作论文。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164127_a3a184807f4c344a4723c26b7a603708.webp\">\n  </div>\n  <p data-track=\"5\">论文中，漂移模型将生成模型分布演化的过程从“推理阶段”转向了神经网络的“训练阶段”，实现了真正意义上的<strong>单步生成（One-step Generation）</strong>。</p>\n  <p data-track=\"6\">漂移模型的核心创新在于引入了<strong>“漂移场”（Drifting Field）</strong>机制。</p>\n  <p data-track=\"7\">其通过在训练中直接对齐先验分布与真实数据分布，不仅消除了GANs中常见的对抗训练不稳定性，更彻底摆脱了流匹配（Flow Matching）或扩散模型（Diffusion）对多步ODE/SDE求解的依赖。</p>\n  <p data-track=\"8\">在ImageNet 256×256基准测试中，漂移模型在1-NFE（单步推理）下取得了1.54FID的成绩，证明了从头开始训练的单步模型在质量上完全可以媲美甚至超越经过数百步迭代的传统模型。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164127_192fc9681a5be880c0cbcac90f9ab992.png\">\n  </div>\n  <p data-track=\"10\"><strong>漂移模型 (Drifting Model)&nbsp;</strong>的核心可以总结为以下两点：</p>\n  <ul>\n   <li data-track=\"11\"><strong>将迭代从推理转为训练</strong>：不同于扩散模型在生成时需要多次迭代（去噪），它将深度学习固有的“迭代训练过程”视为分布演化的动力，从而实现单步 (one-step) 高质量生成。</li>\n   <li data-track=\"12\">利用“漂移场”趋向平衡：通过引入一个受数据吸引和自身排斥的“漂移场”作为损失函数，当生成的分布与真实数据分布完全匹配时，漂移场归零达到平衡，从而完成模型学习。</li>\n  </ul>\n  <p data-track=\"13\">接下来，我们具体来看。</p>\n  <p data-track=\"14\">不同于侧重于样本与标签映射的判别模型，生成模型的核心在于学习分布之间的转换。</p>\n  <p data-track=\"15\">其本质是学习一个映射函数f，将简单的先验分布（如高斯噪声）转换为与真实数据匹配的<strong>推移分布（Pushforward Distribution）</strong>。</p>\n  <p data-track=\"16\">目前，扩散模型（Diffusion）或流匹配模型（Flow Matching）等主流范式，将这种分布的演变放在<strong>推理阶段</strong>迭代执行。</p>\n  <p data-track=\"17\">这意味着生成一张图像需要多次调用神经网络，导致计算开销大、生成速度慢。</p>\n  <p data-track=\"18\">而漂移模型则提出了一种全新的范式：<strong>将分布的演化从推理阶段转移到了训练阶段。</strong></p>\n  <p data-track=\"19\">这一设计的可行性植根于深度学习的本质——</p>\n  <p data-track=\"20\"><strong>神经网络的训练本身就是一个迭代优化的过程（如 SGD）</strong>。</p>\n  <p data-track=\"21\">在传统的视角下，我们只关注损失函数的下降；但在漂移模型中，训练的每一轮迭代都被赋予了物理意义：模型参数的微小更新，会直接驱动输出样本在空间中产生相应的位移。</p>\n  <p data-track=\"22\">论文将这种随训练步次发生的样本位移定义为<strong>漂移（Drift）</strong>。</p>\n  <p data-track=\"23\">这意味着，映射函数f随着参数不断被优化，它所产生的<strong>推移分布（Pushforward Distribution）</strong>也随之自然地发生动态演变。</p>\n  <p data-track=\"24\">换句话说，<strong>模型训练的轨迹，在本质上就等同于分布演化的路径</strong>。 既然训练过程已经完成了这一演化，推理时自然不再需要多步迭代。</p>\n  <p data-track=\"25\">由此，漂移模型将原本昂贵的迭代开销内化在了训练阶段，使得模型在推理时仅需单次前向传播（One-step generation）即可生成高质量样本。</p>\n  <p data-track=\"26\">这不仅消除了多步推理的计算负担，也避开了GANs对抗训练带来的不稳定性。</p>\n  <p data-track=\"28\">在具体的实现上，论文引入了一个<strong>漂移场（Drifting Field）</strong>来引导样本移动，进而控制推移分布。</p>\n  <p data-track=\"29\">与流匹配（Flow Matching）在推理阶段引导样本移动的向量场（Vector Field）不同，漂移场（Drifting Field）是一个作用于训练阶段、用于刻画样本空间演化趋势的函数。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164128_97fa71dd6b7df50d8b65902626c35ecd.png\">\n  </div>\n  <p data-track=\"30\">在给定样本的情况下，漂移场会计算出该位置的修正位移。</p>\n  <p data-track=\"31\">修正位移本质上是为神经网络的参数更新提供导航：通过在训练迭代中最小化漂移量，强制模型在出厂前就将输出分布与目标分布对齐，从而实现单步生成。</p>\n  <p data-track=\"32\">随着训练步数的增加，模型序列对应的推移分布会受该场驱动，逐渐向真实数据分布靠拢。</p>\n  <p data-track=\"33\">训练目标在于建立一种平衡机制：当生成的分布与真实数据分布完全匹配时，漂移场将归于零。</p>\n  <p data-track=\"34\">接下来，论文将此更新规则转化为<strong>一种基于梯度停止（Stop-gradient）的损失函数。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164128_87f0ed2bd417d46929b16ba539755850.png\">\n  </div>\n  <p data-track=\"35\">该损失函数并不直接对复杂的漂移场求导，而是将当前步的漂移后位置视为一个冻结的目标，驱使模型预测向该目标靠拢，从而间接最小化漂移量。</p>\n  <p data-track=\"36\">在算法层面，具体的随机训练步骤如下：</p>\n  <ul>\n   <li data-track=\"37\">生成样本：从先验分布采样噪声，生成样本。</li>\n   <li data-track=\"38\">获取参考：从数据集中采样真实样本作为正样本。</li>\n   <li data-track=\"39\">计算位移：根据正、负样本的分布，计算出每个样本位置的漂移向量。</li>\n   <li data-track=\"40\">优化更新：将(x+V)设为目标值（并停止梯度），更新网络参数使其输出向该目标靠拢。</li>\n  </ul>\n  <p data-track=\"41\">此外，为了处理图像等高维数据，论文还引入了以下关键设计：</p>\n  <p data-track=\"42\">首先，该方法超越了单一的像素空间，转而利用MAE或MoCo等预训练自监督模型构建特征空间映射，在更高维的语义层面上引导分布匹配，从而显著提升了生成结果的保真度。</p>\n  <p data-track=\"43\">在此基础上，<strong>漂移场被具体实例化为吸引与排斥的动态结合</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164128_444ddd790a8f1a15fa28f503ce1417d7.jpeg\">\n  </div>\n  <p data-track=\"44\">生成的样本受到真实数据分布的强力吸引以确保细节精准，同时又受到当前生成分布的排斥力，从而有效维持了样本的多样性并防止模式坍缩。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164128_3411c8e1406b1ede59fb837b63c271ba.png\">\n  </div>\n  <p data-track=\"45\">为了使这种力场估计更加精确且稳定，研究引入了<strong>指数核函数来衡量样本间的相似度</strong>，并借鉴对比学习（如InfoNCE）的思想，通过Softmax进行归一化处理。</p>\n  <p data-track=\"46\">更重要的是，该范式将<strong>分类器自由引导（CFG）机制直接内化于训练阶段</strong>：通过在计算漂移时向负样本中混入无条件的真实数据，模型在训练迭代中便自发学会了条件外推。</p>\n  <p data-track=\"47\">这种设计使得模型在推理时不再需要额外的NFE开销，仅凭单步采样就能获得极强的引导效果。”</p>\n  <p data-track=\"49\">在实验验证环节，漂移模型在最具挑战性的<strong>ImageNet 256×256</strong>基准测试中。</p>\n  <p data-track=\"50\">该模型在单步推理（1-NFE）下表现卓越：其在潜空间（Latent space）达到了1.54 FID。在像素空间（Pixel space）则达到了1.61 FID。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164128_7fbe69e6a8b59855de547f0d8ca78158.png\">\n  </div>\n  <p data-track=\"51\">这一成绩不仅刷新了单步生成的纪录，其效果甚至优于许多需要 250 步迭代推理的传统扩散模型（Diffusion）或流匹配模型（Flow Matching）。</p>\n  <p data-track=\"52\">除了图像生成，该范式在<strong>具身智能控制任务（Robot Control）</strong>中也表现出极强的泛化能力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164127_00843dd8a0fd10eecd7729e7edb98017.png\">\n  </div>\n  <p data-track=\"53\">实验表明，其单步推理的决策质量即可匹配甚至超越需要100步推理的 Diffusion Policy，极大地降低了实时控制系统的延迟。</p>\n  <p data-track=\"54\">总结来看，漂移模型成功地将原本属于推理阶段的生成压力转移到了训练阶段，实现了真正意义上的一步到位。</p>\n  <p data-track=\"55\">这一成就不仅提供了一种不同于传统微分方程（SDE/ODE）的生成视角，更将神经网络的训练过程重新诠释为分布演变的动力机制。</p>\n  <p data-track=\"57\">这篇论文的一作，是竞赛圈鼎鼎有名的<strong>邓明扬</strong>，人称“乖神”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164128_1c776b557f4bcc8f79eff02771e27bbd.png\">\n  </div>\n  <p data-track=\"58\">邓明扬出自<strong>北京人大附中</strong>，是IMO、IOI双料金牌得主，同时也是IOI历史上第三位满分选手。</p>\n  <p data-track=\"59\">他高一拿下IMO金牌，高三拿下IOI金牌，高中毕业后，他本科与博士均就读于MIT。</p>\n  <p data-track=\"60\">目前是博士二年级，师从何恺明。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205164129_11f12c148588760684d9639725da1b71.png\">\n  </div>\n  <p data-track=\"61\">在进入学术界之前，他还曾在Google DeepMind、Meta（FAIR）、Citadel Securities、Pika等机构实习。</p>\n  <p data-track=\"62\">这篇论文的其他作者，同样来头不小：</p>\n  <p data-track=\"63\"><strong>李赫</strong>，清华姚班校友，目前大三在读，曾于2025年2月至5月在 MIT何恺明课题组担任研究实习生。</p>\n  <p data-track=\"64\"><strong>黎天鸿</strong>，清华姚班校友，于2024 年9月加入何恺明课题组，担任博士后。</p>\n  <p data-track=\"65\"><strong>Yilun Du</strong>，现任哈佛大学Kempner Institute与计算机科学系助理教授，领导Embodied Minds实验室。</p>\n  <p data-track=\"66\">他本科毕业于MIT，曾任OpenAI研究员、Google DeepMind高级研究科学家，并获得 国际生物奥林匹克竞赛金牌。</p>\n  <p data-track=\"67\">论文链接：https://arxiv.org/html/2602.04770v1\n   <br>\n   项目主页：https://lambertae.github.io/projects/drifting/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "何恺明团队提出“漂移模型”（Drifting Models），通过将分布演化从推理阶段转移至训练阶段，实现了高质量的单步图像生成。",
+  "oneSentenceSummary": "何恺明团队提出“漂移模型”（Drifting Models），通过将分布演化从推理阶段转移至训练阶段，实现了高质量的单步图像生成。",
+  "summary": "文章详细介绍了由邓明扬（一作）、何恺明等人提出的全新生成模型范式——漂移模型。该模型的核心创新在于引入“漂移场”机制，将传统扩散模型或流匹配模型在推理时的多步迭代过程，转化为神经网络训练过程中的自然演化。通过在训练中直接对齐先验分布与真实数据分布，漂移模型在 ImageNet 256×256 基准测试中仅需单步推理（1-NFE）即可达到 1.54 FID 的顶尖水平，性能媲美甚至超越了需要数百步迭代的传统模型。此外，该范式在具身智能控制任务中也展现出极低的延迟和极强的性能，为实时 AI 应用提供了新路径。",
+  "mainPoints": [
+    {
+      "point": "将分布演化的迭代过程从推理阶段转移到了训练阶段。",
+      "explanation": "利用神经网络训练本身就是迭代优化（如 SGD）的本质，将模型参数更新驱动的样本位移定义为“漂移”，使训练轨迹等同于分布演化路径。"
+    },
+    {
+      "point": "引入“漂移场”机制作为核心损失函数来引导分布对齐。",
+      "explanation": "漂移场结合了真实数据的吸引力和生成分布的排斥力，当生成分布与目标分布完全匹配时力场归零，从而在训练完成时实现单步高质量生成。"
+    },
+    {
+      "point": "通过梯度停止（Stop-gradient）和特征空间映射提升生成质量。",
+      "explanation": "利用 MAE 或 MoCo 等预训练模型在语义层面引导分布匹配，并采用基于梯度停止的损失函数，确保了高维数据生成的保真度与稳定性。"
+    },
+    {
+      "point": "在图像生成与具身智能控制任务中均取得突破性性能。",
+      "explanation": "在 ImageNet 256×256 达到 1.54 FID，且在机器人控制任务中以单步推理匹配了 Diffusion Policy 百步推理的效果。"
+    }
+  ],
+  "keyQuotes": [
+    "漂移模型将生成模型分布演化的过程从“推理阶段”转向了神经网络的“训练阶段”，实现了真正意义上的单步生成（One-step Generation）。",
+    "模型训练的轨迹，在本质上就等同于分布演化的路径。既然训练过程已经完成了这一演化，推理时自然不再需要多步迭代。",
+    "这一成绩不仅刷新了单步生成的纪录，其效果甚至优于许多需要 250 步迭代推理的传统扩散模型（Diffusion）或流匹配模型（Flow Matching）。",
+    "该范式将分类器自由引导（CFG）机制直接内化于训练阶段：通过在计算漂移时向负样本中混入无条件的真实数据，模型在训练迭代中便自发学会了条件外推。"
+  ],
+  "tags": [
+    "漂移模型",
+    "何恺明",
+    "单步生成",
+    "生成式 AI",
+    "图像生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 84,
+  "wordCount": 3006,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1770305217000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-05 15:26:57"
+}
