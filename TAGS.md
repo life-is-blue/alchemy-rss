@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-06 06:04:43 | [返回首页](/README.md)
+**更新时间**: 2026-02-06 08:07:36 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9043)
+- [AI & 大模型](#ai-llm) (9044)
 - [软件架构](#architecture) (18)
 - [前端与全栈](#frontend-fullstack) (698)
 - [DevOps](#devops) (404)
@@ -43,7 +43,7 @@
 - [Agent-in-the-Shell，豆包手机是敲键盘的“机械手指”吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDgzNDUxMw==&mid=2650854144&idx=1&sn=031c8f5c27d805de0cf2a300667ad16a) - AI 精选
 - [2025：大语言模型年度回顾](https://simonwillison.net/2025/Dec/31/the-year-in-llms/#atom-everything) - AI 精选
 
-- [查看全部 9043 篇...](/details/tags/ai-llm.md)
+- [查看全部 9044 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
