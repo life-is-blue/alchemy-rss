@@ -1,0 +1,59 @@
+{
+  "id": "RAW_f15666e2",
+  "title": "带爪子的机器人",
+  "url": "https://world.hey.com/dhh/clankers-with-claws-9f86fa71",
+  "date": "2026-02-05 15:30:07",
+  "author": "David Heinemeier Hansson",
+  "siteName": "David Heinemeier Hansson",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"trix-content\">\n   <div>\n    With <a href=\"https://openclaw.ai/\">OpenClaw</a> you're giving AI its own machine, long-term memory, reminders, and persistent execution. The model is no longer confined to a prompt-response cycle, but able to check its own email, Basecamp notifications, and whatever else you give it access to on a running basis. It's a sneak peek at a future where everyone has a personal agent assistant, and it's fascinating.\n    <br>\n    <br>\n   </div>\n   <div>\n    I set up mine on a <a href=\"https://www.proxmox.com/en/\">Proxmox</a> virtual machine to be fully isolated from my personal data and logins. (But there are people out there running wild and giving OpenClaw access to everything on their own machine, despite the repeated warnings that this is more than a little risky!).\n   </div>\n   <div>\n    <br>\n    Then I tried to see just how little help it would need navigating our human-centric digital world. I didn't install any <a href=\"https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview\">skills</a>, any <a href=\"https://modelcontextprotocol.io/docs/getting-started/intro\">MCPs</a>, or give it access to any APIs. Zero machine accommodations. I just started off with a simple prompt: \"Sign up for Fizzy, so we have a place to collaborate. Here's the invite link.\"\n    <br>\n    <br>\n   </div>\n   <div>\n    Kef, as I named my new agent, dutifully went to <a href=\"https://fizzy.do/\">Fizzy</a> to sign up, but was immediately stumped by needing an email address. It asked me what to do, and I replied: \"Just go to <a href=\"https://www.hey.com/\">hey.com</a> and sign up for a new account.\" So it did. In a single try. No errors, no steering, no accommodations.\n   </div>\n   <div>\n    <br>\n    After it had procured its own email address, it continued on with the task of signing up for Fizzy. And again, it completed the mission without any complications. Now we had a shared space to collaborate.\n   </div>\n   <div>\n    <br>\n    So, as a test, I asked it to create a new board for business ideas, and add five cards with short suggestions, including providing a background image sourced from the web to describe the idea. And it did. Again, zero corrections. Perfect execution.\n    <br>\n    <br>\n   </div>\n   <div>\n    I then invited it to <a href=\"https://basecamp.com/\">Basecamp</a> by just adding it as I would any other user. That sent off an email to Kef's new HEY account, which it quickly received, then followed the instructions, got signed up, and greeted everyone in the chat room of the AI Labs project it was invited to.\n    <br>\n    <br>\n    <figure class=\"attachment attachment--preview attachment--lightboxable attachment--png\">\n     <a download=\"image.png\" title=\"Download image.png\" data-click-proxy-target=\"lightbox_link_blob_2440288521\" href=\"https://world.hey.com/dhh/9f86fa71/blobs/eyJfcmFpbHMiOnsiZGF0YSI6MjQ0MDI4ODUyMSwicHVyIjoiYmxvYl9pZCJ9fQ--09074eb1dc1238265386e0a92143ea009f4e13cf31ab9eb6a5dfb15466aedd45/image.png?disposition=attachment\"> <img src=\"https://world.hey.com/dhh/9f86fa71/representations/eyJfcmFpbHMiOnsiZGF0YSI6MjQ0MDI4ODUyMSwicHVyIjoiYmxvYl9pZCJ9fQ--09074eb1dc1238265386e0a92143ea009f4e13cf31ab9eb6a5dfb15466aedd45/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlszODQwLDI1NjBdLCJxdWFsaXR5Ijo2MCwibG9hZGVyIjp7InBhZ2UiOm51bGx9LCJjb2FsZXNjZSI6dHJ1ZX0sInB1ciI6InZhcmlhdGlvbiJ9fQ--7edc7b21f6fad97fa22412618822c4d19725431f296c7ce47dc174b61535d27c/image.png\" alt=\"image.png\" decoding=\"async\" loading=\"lazy\"> </a>\n    </figure>\n   </div>\n   <div>\n    <br>\n    I'm thoroughly impressed. All the agent accommodations, like MCPs/CLIs/APIs, probably still have a place for a bit longer, as doing all this work cold is both a bit slow and token-intensive. But I bet this is just a temporary crutch.\n    <br>\n    <br>\n   </div>\n   <div>\n    And while I ran this initial experiment on Claude's Opus 4.5, I later reran most of it on the Chinese open-weight model <a href=\"https://huggingface.co/moonshotai/Kimi-K2.5\">Kimi K2.5</a>, and it too was able to get it all right (though it was a fair bit slower when provisioned through OpenRouter).\n    <br>\n    <br>\n   </div>\n   <div>\n    Everything is changing so fast in the world of AI right now, but if I was going to skate to where the puck is going to be, it'd be a world where agents, like self-driving cars, don't need special equipment, like <a href=\"https://www.thedrive.com/news/volvo-has-dropped-luminar-and-lidar-for-2026-models\">LIDAR</a> or MCPs, to interact with the environment. The human affordances will be more than adequate.\n   </div>\n   <div>\n    <br>\n    What a time to be alive.\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DHH 使用 OpenClaw 探索了 AI 智能体的未来，证明了现代 LLM 无需专门的 API 或协议，即可导航电子邮件和 SaaS 平台等以人为中心的数字界面。",
+  "oneSentenceSummary": "DHH 使用 OpenClaw 探索了 AI 智能体的未来，证明了现代 LLM 无需专门的 API 或协议，即可导航电子邮件和 SaaS 平台等以人为中心的数字界面。",
+  "summary": "本文记录了对 OpenClaw 的一次实操实验，这是一个提供持久执行和长期记忆的 AI 智能体框架。作者 David Heinemeier Hansson (DHH) 测试了一个假设：先进的 AI 智能体不再需要 API 或模型上下文协议 (MCP) 等专门的“机器适配”即可有效运作。通过让名为 Kef 的智能体仅使用标准 Web 界面独立注册电子邮箱账号和协作平台 Fizzy，他证明了高端模型 Claude 4.5 和 Kimi K2.5 可以成功导航为人类设计的数字世界。他得出结论，虽然专门的协议目前对提高效率很有用，但长期趋势倾向于通过人类功能入口与环境交互的智能体，这使得专门的机器对机器协议可能变得过时。",
+  "mainPoints": [
+    {
+      "point": "持久执行将 AI 从响应式的提示词工具转变为主动的个人助手。",
+      "explanation": "通过赋予 AI 自己的机器和持久运行环境，它可以独立监控通知并执行长期任务，而无需等待用户输入。"
+    },
+    {
+      "point": "现代 LLM 越来越能够导航以人为中心的数字界面，而无需专门的 API。",
+      "explanation": "实验表明，模型可以通过直接与 UI 交互来处理复杂的工作流，例如注册电子邮件和 SaaS 工具，就像人类一样。"
+    },
+    {
+      "point": "像 MCP 这样专门的智能体协议可能只是 AI 演进过程中的临时拐杖。",
+      "explanation": "虽然 API 和协议目前降低了延迟和 Token 成本，但“计算机使用”能力的快速提升表明，智能体最终将完全依赖人类功能入口。"
+    },
+    {
+      "point": "安全隔离是进行自主智能体实验的前提。",
+      "explanation": "作者强调在隔离的虚拟机（如 Proxmox）中运行智能体，以防止赋予 AI 持久访问个人数据和登录权限所带来的风险。"
+    }
+  ],
+  "keyQuotes": [
+    "模型不再局限于提示-响应循环，而是能够持续检查自己的电子邮件、Basecamp 通知以及你授予访问权限的任何其他内容。",
+    "我没有安装任何技能、任何 MCP，也没有给它任何 API 的访问权限。零机器适配。",
+    "如果我要滑向冰球将要到达的位置，那将是一个智能体像自动驾驶汽车一样，不需要特殊设备……就能与环境交互的世界。",
+    "人类功能入口将绰绰有余。",
+    "LLM 是助手，而不是自主可靠的程序员。我是资深开发人员；LLM 的存在是为了加速我的工作，而不是取代我的判断。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "OpenClaw",
+    "Claude 4.5",
+    "计算机使用",
+    "MCP"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 504,
+  "domain": "world.hey.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_86001f",
+  "sourceName": "David Heinemeier Hansson",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1770305407000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-05 15:30:07"
+}

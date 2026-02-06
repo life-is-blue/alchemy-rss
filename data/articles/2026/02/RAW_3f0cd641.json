@@ -1,0 +1,59 @@
+{
+  "id": "RAW_3f0cd641",
+  "title": "刚刚，ChatGPT 和 Claude 同时大更新，不会给 AI 当老板的打工人要被淘汰",
+  "url": "https://www.ifanr.com/1654369?utm_source=rss&utm_medium=rss&utm_campaign=",
+  "date": "2026-02-06 06:26:22",
+  "author": "莫崇宇",
+  "siteName": "爱范儿",
+  "content": "<html>\n <head></head>\n <body>\n  <p>就在刚刚，硅谷 AI 圈上演了一出「火星撞地球」。</p>\n  <p>OpenAI 和 Anthropic 像约好了一样，同时甩出了自家的重磅更新：Claude Opus 4.6 和 GPT-5.3-Codex。</p>\n  <p>如果说昨晚之前，我们还在讨论「怎么写好 Prompt 辅助工作」；那么今天凌晨，我们可能被迫要学会「如何作为老板去管理 AI 员工」。</p>\n  <p><img class=\"alignnone size-full wp-image-1654381\" src=\"https://image.jido.dev/20260206060544_511ec33.webp\" alt=\"\" width=\"1175\" height=\"500\" srcset=\"https://image.jido.dev/20260206060544_511ec33.webp 1175w, https://image.jido.dev/20260206060544_2346-360x153.jpeg 360w, https://image.jido.dev/20260206060544_2346-768x327.jpeg 768w, https://image.jido.dev/20260206060544_2346-1024x436.jpeg 1024w\" sizes=\"(max-width: 1175px) 100vw, 1175px\"></p>\n  <h3>AI 造 AI，顺便接管你的电脑</h3>\n  <p>就在昨天，Sam Altman 刚在 X 平台上凡尔赛了一把 Codex 的「百万活跃用户」里程碑。短短一天后，OpenAI 再次乘胜追击，扔出王炸——GPT-5.3-Codex。</p>\n  <p>技术文档里藏着一句极具分量的话：「这是我们第一个在创造自己的过程中，发挥了关键作用的模型。」</p>\n  <p>说人话就是：AI 已经学会了自己写代码、自己找 Bug，甚至开始自己训练下一代的 AI 了。这种自我进化能力，也直接体现在了一连串跑分数据上。</p>\n  <p><img class=\"alignnone size-full wp-image-1654376\" src=\"https://image.jido.dev/20260206060544_0644d91.webp\" alt=\"\" width=\"1394\" height=\"780\" srcset=\"https://image.jido.dev/20260206060544_0644d91.webp 1394w, https://image.jido.dev/20260206060544_222-1-360x201.png 360w, https://image.jido.dev/20260206060544_222-1-768x430.png 768w, https://image.jido.dev/20260206060544_222-1-1024x573.png 1024w\" sizes=\"(max-width: 1394px) 100vw, 1394px\"></p>\n  <p>还记得那个模拟人类操作电脑的 OSWorld-Verified 基准测试吗？前代模型只有 38.2% 的准确率，连及格线都够不上。</p>\n  <p>但这次，GPT-5.3-Codex 直接跳涨到了 64.7%！</p>\n  <p><img class=\"alignnone size-full wp-image-1654375\" src=\"https://image.jido.dev/20260206060544_b7f9ad0.webp\" alt=\"\" width=\"586\" height=\"668\" srcset=\"https://image.jido.dev/20260206060544_b7f9ad0.webp 586w, https://image.jido.dev/20260206060544_221-1-360x410.png 360w\" sizes=\"(max-width: 586px) 100vw, 586px\"></p>\n  <p>要知道，人类的平均水平也就 72%。这意味着，AI 距离像你一样熟练地甩鼠标、切屏、操作软件，只剩下一层窗户纸的距离。</p>\n  <p>而在 Terminal-Bench 2.0（命令行操作）中，它更是拿下了 77.3% 的高分，把 GPT-5.2（62.2%）远远甩在身后。</p>\n  <p><img class=\"alignnone size-full wp-image-1654372\" src=\"https://image.jido.dev/20260206060544_a2fa1b1.webp\" alt=\"\" width=\"584\" height=\"666\" srcset=\"https://image.jido.dev/20260206060544_a2fa1b1.webp 584w, https://image.jido.dev/20260206060544_112-1-360x411.png 360w\" sizes=\"(max-width: 584px) 100vw, 584px\"></p>\n  <p>知名&nbsp;SWE-Bench Pro 基准测试覆盖四种编程语言，不仅抗污染，还全是真实世界的硬核工程难题。</p>\n  <p>GPT-5.3-Codex 在这里不仅拿下了 SOTA（最高水平），而且用的 Token 比以往任何模型都少。这意味着什么？意味着它不仅干活猛，解决问题的路径还比人类更短、更省钱。</p>\n  <p>OpenAI 甚至展示了它独立构建的能力：</p>\n  <p>在几天内，它从零构建了一款包含多张地图的赛车游戏 v2，顺手还搞定了一款管理氧气系统的深海潜水游戏。</p>\n  <p><img class=\"alignnone size-full wp-image-1654373\" src=\"https://image.jido.dev/20260206060544_f145472.webp\" alt=\"\" width=\"2284\" height=\"1304\" srcset=\"https://image.jido.dev/20260206060544_f145472.webp 2284w, https://image.jido.dev/20260206060544_113-1-360x206.png 360w, https://image.jido.dev/20260206060544_113-1-768x438.png 768w, https://image.jido.dev/20260206060544_113-1-1024x585.png 1024w\" sizes=\"(max-width: 2284px) 100vw, 2284px\"></p>\n  <p>最让我印象深刻的是 GPT-5.3-Codex 对模糊意图的理解。</p>\n  <p>在构建「Quiet KPI」落地页时，它自动把「年度计划」换算成了「打折后的月付价格」，甚至还贴心地自动补充了用户评价轮播——这一切，都不需要你下指令。</p>\n  <p><img class=\"alignnone size-full wp-image-1654380\" src=\"https://image.jido.dev/20260206060544_d66892f.webp\" alt=\"\" width=\"2094\" height=\"1174\" srcset=\"https://image.jido.dev/20260206060544_d66892f.webp 2094w, https://image.jido.dev/20260206060544_444-360x202.png 360w, https://image.jido.dev/20260206060544_444-768x431.png 768w, https://image.jido.dev/20260206060544_444-1024x574.png 1024w\" sizes=\"(max-width: 2094px) 100vw, 2094px\"></p>\n  <p>OpenAI 的野心已经写在脸上了：以前微软常说 AI 将会成为人类的副驾驶（Copilot），但现在&nbsp;AI 更想做那个能掌控方向盘、甚至能自己修车的司机。</p>\n  <p>对了，还有一个有趣的细节。</p>\n  <p>此前外界盛传 OpenAI 对英伟达的 AI 芯片颇有微词，但这次官方博客特地强调：GPT-5.3-Codex 的设计、训练和部署都在 NVIDIA GB200 NVL72 系统上完成。</p>\n  <p>这一波高情商的「感谢英伟达」，属实是给足了黄仁勋面子。</p>\n  <p><img class=\"alignnone size-full wp-image-1654377\" src=\"https://image.jido.dev/20260206060544_5490052.webp\" alt=\"\" width=\"1310\" height=\"160\" srcset=\"https://image.jido.dev/20260206060544_5490052.webp 1310w, https://image.jido.dev/20260206060544_223-1-360x44.png 360w, https://image.jido.dev/20260206060544_223-1-768x94.png 768w, https://image.jido.dev/20260206060544_223-1-1024x125.png 1024w\" sizes=\"(max-width: 1310px) 100vw, 1310px\"></p>\n  <h3>告别「金鱼记忆」Claude 迎来绝地反击</h3>\n  <p>在&nbsp;GPT-5.3-Codex 发布的前后脚，Anthropic 也端出了自己的春节大礼包。</p>\n  <p>坏消息是，大家期待的 Claude「中杯」Sonnet 模型没有更新；但好消息是，Anthropic 直接端出了「超大杯」—— Claude Opus 4.6。</p>\n  <p>相比于 OpenAI 在「行动力」上的激进，Anthropic 今天发布的 Claude Opus 4.6 则是在「思考力」和「可用性」上死磕。</p>\n  <p><img class=\"alignnone size-full wp-image-1654382\" src=\"https://image.jido.dev/20260206060544_2f583ec.webp\" alt=\"\" width=\"1282\" height=\"708\" srcset=\"https://image.jido.dev/20260206060544_2f583ec.webp 1282w, https://image.jido.dev/20260206060544_661-360x199.png 360w, https://image.jido.dev/20260206060544_661-768x424.png 768w, https://image.jido.dev/20260206060544_661-1024x566.png 1024w\" sizes=\"(max-width: 1282px) 100vw, 1282px\"></p>\n  <p>很多企业用户都有一个名为&nbsp;Context Rot（上下文腐蚀）的痛点：号称支持 200k 上下文，但塞进去的数据一多，AI 就开始顾头不顾尾。</p>\n  <p>这次，Claude Opus 4.6 拿出的数据简直是「降维打击」。</p>\n  <p>在 MRCR v2（长文本大海捞针）测试中，Claude Opus 4.6 的召回率高达 76%。</p>\n  <p>作为对比，上一代 Sonnet 4.5 只有惨不忍睹的 18.5%。从某种程度上说，这是一个从基本不可用到「高可靠」的质变。</p>\n  <p>这是 Claude Opus 4.6 首次引入了真正可用的 1M 上下文窗口。</p>\n  <p><img class=\"alignnone size-full wp-image-1654384\" src=\"https://image.jido.dev/20260206060544_c23a7cc.webp\" alt=\"\" width=\"1272\" height=\"1510\" srcset=\"https://image.jido.dev/20260206060544_c23a7cc.webp 1272w, https://image.jido.dev/20260206060544_771-360x427.png 360w, https://image.jido.dev/20260206060544_771-768x912.png 768w, https://image.jido.dev/20260206060544_771-863x1024.png 863w\" sizes=\"(max-width: 1272px) 100vw, 1272px\"> <img class=\"alignnone size-full wp-image-1654385\" src=\"https://image.jido.dev/20260206060544_06816cd.webp\" alt=\"\" width=\"1262\" height=\"706\" srcset=\"https://image.jido.dev/20260206060544_06816cd.webp 1262w, https://image.jido.dev/20260206060544_772-360x201.png 360w, https://image.jido.dev/20260206060544_772-768x430.png 768w, https://image.jido.dev/20260206060544_772-1024x573.png 1024w\" sizes=\"(max-width: 1262px) 100vw, 1262px\"></p>\n  <p>这意味着什么？意味着你可以把几百页的财报、几十万字的代码库直接扔给它，它不仅能读完，还能精准地告诉你第 342 页脚注里的那个数字有问题。</p>\n  <p>更让打工人眼前一亮的是它的生产力功能。</p>\n  <p>一方面，Anthropic 这回直接把 Claude 塞进了 Excel 和 PowerPoint。它能根据 Excel 数据直接生成 PPT，不仅保留排版风格，连字体和模板都能对齐。在 Claude Cowork 协作环境中，它甚至能进行自主多任务处理。</p>\n  <p>另一方面，Anthropic 顺势在 Claude Code 中推出了实验性的 Agent Teams 功能，让普通开发者也能体验这种「指挥千军万马」的感觉：</p>\n  <ul>\n   <li>角色分工：你可以指定一个 Claude Session 担任 Team Lead（组长），它不干脏活累活，专门负责拆解任务、分配工单、合并代码；其他的 Session 则是队友（Teammates），各自领任务去干。</li>\n   <li>独立作战：每个队友都有独立的上下文窗口（不用担心 Token 爆炸），它们甚至能背着你互相发消息（Inter-agent messaging），讨论技术细节，最后只把结果汇报给组长。</li>\n   <li>并行赛马：这东西有什么用？想象一下查一个顽固 Bug，你可以生成 5 个 Agent，分别验证 5 种不同的假设，像「赛马」一样并行排雷；或者在 Code Review 时，让一个队友扮「安全专家」查漏洞，一个扮「架构师」看性能，互不干扰。</li>\n  </ul>\n  <p>为了展示 Opus 4.6 的极限，Anthropic 的研究员 Nicholas Carlini 搞了个疯狂的实验：Agent Teams（智能体团队）。</p>\n  <p>他没有亲自写代码，而是扔了 2 万美元 的 API 额度，让 16 个 Claude Opus 4.6 组成一个「全自动软件开发团队」。</p>\n  <p>结果在短短两周内，这群 AI 自主进行了 2000 多个编程会话，从零手写了一个 10 万行代码的 C 语言编译器（基于 Rust）。</p>\n  <p><img class=\"alignnone size-full wp-image-1654378\" src=\"https://image.jido.dev/20260206060544_228.gif\" alt=\"\" width=\"640\" height=\"360\" srcset=\"https://image.jido.dev/20260206060544_228.gif 640w, https://image.jido.dev/20260206060544_228-360x203.gif 360w\" sizes=\"(max-width: 640px) 100vw, 640px\"></p>\n  <p>这个 AI 写的编译器，还成功编译了 Linux 6.9 内核（涵盖 x86、ARM 和 RISC-V 架构），甚至跑通了 Doom 游戏。</p>\n  <p>虽然它还不够完美（比如生成的代码效率不如 GCC），但这个案例也表明我们不再是和 AI 一起编程，而是看着一个 AI 团队自主协作、查错、推进项目。</p>\n  <p>此外，它还学会了 Adaptive Thinking（自适应推理），能根据难度自己决定「想多久」。加上新增的「智能强度」控制，你可以在 Low 到 Max 四档之间切换。</p>\n  <p>定价方面，Anthropic 这次很良心，维持在每百万 Token $5/$25 的基础定价。看来是为了抢占企业级市场，铁了心要和 OpenAI 卷到底。</p>\n  <h3>一个是激进天才，一个是靠谱老牛</h3>\n  <p>知名 AI 评测人 Dan Shipper 在第一时间搞了个「盲测」（Vibe Check），他的评价非常精准：</p>\n  <p>Claude Opus 4.6 是「高上限，高方差」（High Ceiling, High Variance）。</p>\n  <p>它像是一个才华横溢但偶尔跳脱的天才。在测试中，它直接解决了一个让 iOS 团队卡了两个月的功能难题；在 LFG Benchmark 中拿到了 9.25/10 的高分。</p>\n  <p>但它偶尔也会「过度自信」，一本正经地胡说八道。如果你需要突破性的灵感，选它。</p>\n  <p>GPT-5.3-Codex 是「高可靠，低方差」（High Reliability, Low Variance）。</p>\n  <p>它像是一个经验丰富、绝不掉链子的资深工程师。推理速度提升 25%，几乎不犯低级错误，稳健得让人心安。</p>\n  <p>虽然在创造性任务上略逊一筹（LFG 得分 7.5/10），但在日常的 Coding 和运维任务中，它是最高效的老黄牛。如果你需要稳定交付，选它。</p>\n  <p><img class=\"alignnone size-full wp-image-1654387\" src=\"https://image.jido.dev/20260206060544_8f0f4cf.webp\" alt=\"\" width=\"1288\" height=\"714\" srcset=\"https://image.jido.dev/20260206060544_8f0f4cf.webp 1288w, https://image.jido.dev/20260206060544_774-360x200.png 360w, https://image.jido.dev/20260206060544_774-768x426.png 768w, https://image.jido.dev/20260206060544_774-1024x568.png 1024w\" sizes=\"(max-width: 1288px) 100vw, 1288px\"></p>\n  <p>时间步入 2026 年，我们的角色开始发生变化。</p>\n  <p>在这个时间节点，对于普通用户而言，最大的变化莫过于此：Prompt Engineering（提示词工程）的重要性正在下降，而 Agent Management（智能体管理）的能力开始浮出水面。</p>\n  <p>当 ChatGPT 可以自主修 Bug 甚至操作你的终端，当 Claude 可以一次性吞吐 100 万字并精准定位细节时，我们不再需要像教小学生一样，把指令拆解得碎碎念。</p>\n  <p>我们需要做的，是学会如何以「管理者」的身份，去定义目标、审核结果、以及——决定在什么时候，把什么任务交给哪位「员工」。</p>\n  <p>这就是 2026 年的新职场：你的团队里混入了一群硅基天才，而你是唯一的碳基老板。</p>\n </body>\n</html>",
+  "aiSummary": "OpenAI 与 Anthropic 同步更新 GPT-5.3-Codex 与 Claude Opus 4.6，标志着 AI 从辅助工具向自主智能体团队演进，职场核心能力将从提示词工程转向智能体管理。",
+  "oneSentenceSummary": "OpenAI 与 Anthropic 同步更新 GPT-5.3-Codex 与 Claude Opus 4.6，标志着 AI 从辅助工具向自主智能体团队演进，职场核心能力将从提示词工程转向智能体管理。",
+  "summary": "本文深度解析了 OpenAI 和 Anthropic 的最新技术突破。OpenAI 推出的 GPT-5.3-Codex 在计算机操作（OSWorld）和硬核编程（SWE-Bench Pro）基准测试中表现卓越，展现出“AI 创造 AI”的自我进化能力与极高的工程可靠性。与此同时，Anthropic 发布了 Claude Opus 4.6，凭借 1M 超长上下文窗口和 76% 的高召回率解决了“上下文腐蚀”痛点，并引入了革命性的 Agent Teams 功能，支持多智能体自主协作完成复杂软件工程。文章对比了两者“稳健工程师”与“激进天才”的不同特质，强调未来职场的核心竞争力将在于如何作为管理者去调度和审核硅基智能体团队。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.3-Codex 实现了从辅助工具向自主“司机”的身份转变。",
+      "explanation": "该模型在 OSWorld 模拟人类操作测试中准确率大幅提升至 64.7%，并能独立完成从零构建复杂应用的任务，标志着 AI 具备了极强的环境掌控力。"
+    },
+    {
+      "point": "Claude Opus 4.6 通过超长上下文和高召回率突破了处理极限。",
+      "explanation": "其支持 1M 上下文窗口且在长文本“大海捞针”测试中达到 76% 的召回率，使处理庞大代码库和复杂财报成为可能，解决了 AI 顾头不顾尾的顽疾。"
+    },
+    {
+      "point": "多智能体协作（Agent Teams）开启了全自动软件开发的新范式。",
+      "explanation": "通过角色分工、独立上下文和并行赛马机制，AI 团队能自主协作完成如手写编译器等复杂任务，人类的工作重心从写指令转向了目标定义与结果审核。"
+    },
+    {
+      "point": "职场核心能力正从提示词工程向智能体管理能力发生迁移。",
+      "explanation": "随着 AI 自主修 Bug 和操作终端能力的成熟，用户不再需要拆解细碎指令，而需学会以管理者身份决定任务分配，成为硅基团队的碳基老板。"
+    }
+  ],
+  "keyQuotes": [
+    "这是我们第一个在创造自己的过程中，发挥了关键作用的模型。",
+    "以前微软常说 AI 将会成为人类的副驾驶（Copilot），但现在 AI 更想做那个能掌控方向盘、甚至能自己修车的司机。",
+    "我们不再是和 AI 一起编程，而是看着一个 AI 团队自主协作、查错、推进项目。",
+    "Prompt Engineering（提示词工程）的重要性正在下降，而 Agent Management（智能体管理）的能力开始浮出水面。",
+    "这就是 2026 年的新职场：你的团队里混入了一群硅基天才，而你是唯一的碳基老板。"
+  ],
+  "tags": [
+    "GPT-5.3",
+    "Claude Opus 4.6",
+    "智能体管理",
+    "多智能体协作",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 82,
+  "wordCount": 2715,
+  "domain": "ifanr.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_4ecd55",
+  "sourceName": "爱范儿",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1770359182000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-02-06 06:26:22"
+}
