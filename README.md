@@ -16,7 +16,7 @@
 
 **订阅地址**: [https://rss.izoa.fun//atom.xml](https://rss.izoa.fun//atom.xml)
 
-**更新时间**: 2026-02-06 22:15:16 | **新增**: +20 篇 | [按标签分类](/TAGS.md)
+**更新时间**: 2026-02-07 00:10:59 | **新增**: +0 篇 | [按标签分类](/TAGS.md)
 
 ---
 
@@ -25,7 +25,7 @@
 
 - [AI-精选](/details/AI 精选.md)
 - [编程-精选](/details/编程 精选.md)
-- [商业-精选](/details/商业 精选.md) *(已更新)*
+- [商业-精选](/details/商业 精选.md)
 - [产品-精选](/details/产品 精选.md)
 - [AI-更多](/details/AI 更多.md)
 - [编程-更多](/details/编程 更多.md)
@@ -37,4 +37,4 @@
 - [商业-播客](/details/商业 播客.md)
 - [AI-动态](/details/AI 动态.md)
 - [编程-动态](/details/编程 动态.md)
-- [宝玉](/details/宝玉.md) *(已更新)*
+- [宝玉](/details/宝玉.md)
