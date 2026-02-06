@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-06 20:06:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-06 22:15:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -2474,6 +2474,14 @@
 ### [Google-Spanner-如何以-99.999%-的可用性支持万亿行数据](https://blog.bytebytego.com/p/how-google-spanner-powers-trillions)
 
 2025-02-04 16:31:21
+
+
+
+### [5-万字完整版:-马斯克最新谈-AI-算力登月-文明韧性与硬件霸权-|图解全文+视频](https://mp.weixin.qq.com/s?__biz=MzIxODUzNTg2MA==&mid=2247489924&idx=1&sn=bbb4a8e7ec9c8c0cfd19357ea5ccab0b)
+
+2026-02-06 10:35:00 | 标签: 太空算力, 第一性原理, 能源瓶颈, Optimus, 硬件垂直整合
+
+> 本文详尽记录了马斯克关于 AI 发展终极边界的深度访谈。核心观点指出，地球电力产出的停滞已成为 AI 规模化的最大障碍，而太空凭借 5 倍于地面的太阳能效率和零监管成本，将在 30-36 个月内成为部署算力的经济奇点。马斯克强调了硬件垂直整合的重要性，从自研涡轮机叶片到晶圆厂建设，旨在解决供应链瓶颈。同时，他预言 Optimus 机器人将通过递归制造引发经济规模的百万倍跃迁。在 AI 安全层面，他主张以“物理定律”为准则，构建极度求真、理解宇宙的 AI，以确保人类意识在智能时代得以延续。
 
 
 
@@ -10993,9 +11001,7 @@
 
 ### [将-Swift-从应用扩展到服务](https://www.infoq.com/presentations/swift-apps-services/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-02-06 10:35:00 | 标签: Swift, 服务端 Swift, 内存安全, 性能优化, C++ 互操作性
-
-> 文章详细介绍了 Swift 向后端服务的战略扩张，超越了其在 Apple 应用生态系统中的起源。以 Apple 的“私有云计算”（PCC）作为主要案例研究，作者解释了为什么选择 Swift 来构建高安全性、受信任的组件。讨论的关键技术优势包括 Swift 的内存安全（可减少基于网络的漏洞）以及通过自动引用计数（ARC）实现的确定性内存管理（避免了 Java 等垃圾回收语言中常见的“停顿”延迟峰值）。一个显著的亮点是案例研究：将服务从 Java 迁移到 Swift 后，堆内存需求从 32 GB 降至 256 MB。此外，文章还深入探讨了 Swift 的高级特性，如零成本抽象、不可复制类型，以及与...
+2026-02-06 10:35:00
 
 
 
@@ -28705,11 +28711,11 @@
 
 
 
-### [我写了个-Skill，让-Agent-自动给文章配图](https://baoyu.io/blog/2026/01/15/agent-skills-illustrator-tutorial)
+### [AI-会取代你的工作吗？Anthropic-用-200-万对话告诉你答案](https://baoyu.io/blog/2026/01/16/anthropic-economic-index-primitives)
 
-2026-01-15T00:00:00.000Z
+2026-01-16T00:00:00.000Z
 
-> 配图是写作的痛点。我开发了一个 Agent Skill，让 AI 自动分析文章、选择风格、生成插图并插入对应位置。本文详解这个 Skill 的设计思路和实现方法，帮你理解如何把重复性工作"教"给 Agent。
+> Anthropic 发布 Economic Index 第四期报告，分析 200 万次 Claude 对话后发现：AI 对高学历任务加速效果比低学历高 30%，正在从知识工作核心切入。报告首创"经济原语"框架，揭示 AI 可能加剧而非缩小全球不平等。
 
 
 

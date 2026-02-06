@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-06 20:06:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-06 22:15:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [中门对狙！Claude-Opus-4.6-和-GPT-5.3-Codex-同时发布，这下真的-AI-春晚了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6)
 
-2026-02-05 21:20:00 | 标签: Claude Opus 4.6, GPT-5.3 Codex, 编程 Agent, 基准测试对比, 生产力工具
-
-> 本文详细介绍了 AI 领域的“春晚”盛况：Claude Opus 4.6 与 GPT-5.3 Codex 的同步更新。Claude 4.6 重点提升了上下文窗口（1M）、输出上限及 Agent 协作能力，并在 ARC-AGI-2 智力测试中表现惊人；GPT-5.3 Codex 则强调“AI 参与自身开发”，在终端编程基准测试中大幅领先，并显著提升了运行速度与效率。作者通过对比分析指出，虽然两家公司在 Agent 领域各有侧重，但软件开发范式正在发生根本性转变，并分享了结合两者优势的实战工作流。
+2026-02-05 21:20:00
 
 
 
@@ -8222,13 +8220,13 @@
 
 
 
-### [拾象-AGI-观察：LLM-路线分化，AI-产品的非技术壁垒，Agent“保鲜窗口期”](https://mp.weixin.qq.com/s/x6daCge_iJMJqTnakBKd5Q)
+### [10-分钟就拿到了朱啸虎投资的-AI-陪伴产品，想让年轻人不孤独｜Hao-好聊-X-孙兆治](https://mp.weixin.qq.com/s/i9jfxVcAYEzSQa_9ciUnOg)
 
 2025-08-22 00:00:00
 
 
 
-### [10-分钟就拿到了朱啸虎投资的-AI-陪伴产品，想让年轻人不孤独｜Hao-好聊-X-孙兆治](https://mp.weixin.qq.com/s/i9jfxVcAYEzSQa_9ciUnOg)
+### [拾象-AGI-观察：LLM-路线分化，AI-产品的非技术壁垒，Agent“保鲜窗口期”](https://mp.weixin.qq.com/s/x6daCge_iJMJqTnakBKd5Q)
 
 2025-08-22 00:00:00
 
@@ -8294,13 +8292,13 @@
 
 
 
-### [聊聊创业公司与谷歌达成合作的幕后故事，以及-AR-眼镜的“iPhone-时刻”｜Hao-好聊-X-徐驰](https://mp.weixin.qq.com/s/yP4Fs7nJnDJMxIeyDyOVPg)
+### [从-0-到-1-做一款-AI-产品：技术怎么搭、成本如何控制、销售策略怎么定？](https://mp.weixin.qq.com/s/uc31KNMK_gRA7IWNvRg9Tg)
 
 2025-08-14 00:00:00
 
 
 
-### [从-0-到-1-做一款-AI-产品：技术怎么搭、成本如何控制、销售策略怎么定？](https://mp.weixin.qq.com/s/uc31KNMK_gRA7IWNvRg9Tg)
+### [聊聊创业公司与谷歌达成合作的幕后故事，以及-AR-眼镜的“iPhone-时刻”｜Hao-好聊-X-徐驰](https://mp.weixin.qq.com/s/yP4Fs7nJnDJMxIeyDyOVPg)
 
 2025-08-14 00:00:00
 
@@ -8618,13 +8616,13 @@
 
 
 
-### [4-人团队，连做两款-AI-教育爆款，AI-时代小团队创业取胜指南](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517875&idx=2&sn=f83865582d5ad9aa2a3da8286150edf4)
+### [OpenAI-核心研究员：比提示词工程更重要的，是-spec-writing](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517875&idx=1&sn=95df71cb7b606d7d025d9bf0ecc292b6)
 
 2025-07-18 11:38:00
 
 
 
-### [OpenAI-核心研究员：比提示词工程更重要的，是-spec-writing](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517875&idx=1&sn=95df71cb7b606d7d025d9bf0ecc292b6)
+### [4-人团队，连做两款-AI-教育爆款，AI-时代小团队创业取胜指南](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517875&idx=2&sn=f83865582d5ad9aa2a3da8286150edf4)
 
 2025-07-18 11:38:00
 
@@ -8648,13 +8646,13 @@
 
 
 
-### [刚被爆离职的-OpenAI-核心研究员-Jason-Wei，定义了-RL-的边界](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559325&idx=1&sn=39fb58815b1c09332ee8e5dfa9f550ea)
+### [OpenAI-第三期播客上线：从-ChatGPT-到智能体，AI-如何重新定义职场与科研](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559325&idx=2&sn=442a535b2bb453b568a3b3204a2b9cda)
 
 2025-07-16 08:55:00
 
 
 
-### [OpenAI-第三期播客上线：从-ChatGPT-到智能体，AI-如何重新定义职场与科研](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559325&idx=2&sn=442a535b2bb453b568a3b3204a2b9cda)
+### [刚被爆离职的-OpenAI-核心研究员-Jason-Wei，定义了-RL-的边界](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691559325&idx=1&sn=39fb58815b1c09332ee8e5dfa9f550ea)
 
 2025-07-16 08:55:00
 
@@ -8684,13 +8682,13 @@
 
 
 
-### [年营收-5.5-亿美元、美国-Top-3-的约会应用创始人：AI-虚拟陪伴是「垃圾应用」](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517681&idx=1&sn=fb12e67ae3fbb915b991ee152c9197f4)
+### [月费-200-刀的-AI-浏览器，Perplexity-Comet-的真实体验如何？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517681&idx=2&sn=c956903e795ff0ad84eb49dcadf81806)
 
 2025-07-14 13:35:00
 
 
 
-### [月费-200-刀的-AI-浏览器，Perplexity-Comet-的真实体验如何？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517681&idx=2&sn=c956903e795ff0ad84eb49dcadf81806)
+### [年营收-5.5-亿美元、美国-Top-3-的约会应用创始人：AI-虚拟陪伴是「垃圾应用」](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517681&idx=1&sn=fb12e67ae3fbb915b991ee152c9197f4)
 
 2025-07-14 13:35:00
 
@@ -8846,13 +8844,13 @@
 
 
 
-### [Gemini-2.5-Pro-负责人：最强百万上下文，做好了能解锁很多应用场景](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517359&idx=1&sn=432b93e816ac248037b564fd69d18796)
+### [2025-ToC-AI-产品：仅有-3%用户愿意付费，29%的父母每天使用](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517359&idx=2&sn=5251606dfa98109ed4915d21963d4bd9)
 
 2025-06-30 12:03:11
 
 
 
-### [2025-ToC-AI-产品：仅有-3%用户愿意付费，29%的父母每天使用](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517359&idx=2&sn=5251606dfa98109ed4915d21963d4bd9)
+### [Gemini-2.5-Pro-负责人：最强百万上下文，做好了能解锁很多应用场景](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247517359&idx=1&sn=432b93e816ac248037b564fd69d18796)
 
 2025-06-30 12:03:11
 
@@ -9002,13 +9000,13 @@
 
 
 
-### [张鹏对谈李广密：Agent-的真问题与真机会，究竟藏在哪里？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516952&idx=1&sn=1fc9fdfe443b9856fc077cc4c34cb917)
+### [深度拆解：为什么通用-Agent-的下一站是-Agentic-Browser？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516952&idx=2&sn=b8f661ba7f7647eb5a22458ce45f1d98)
 
 2025-06-14 02:32:00
 
 
 
-### [深度拆解：为什么通用-Agent-的下一站是-Agentic-Browser？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516952&idx=2&sn=b8f661ba7f7647eb5a22458ce45f1d98)
+### [张鹏对谈李广密：Agent-的真问题与真机会，究竟藏在哪里？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516952&idx=1&sn=1fc9fdfe443b9856fc077cc4c34cb917)
 
 2025-06-14 02:32:00
 
@@ -9098,13 +9096,13 @@
 
 
 
-### [奇绩创坛-2025-春季路演：Agent、具身、Infra、AI4S，57-个项目完整介绍](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516775&idx=1&sn=f3ff8e02d07ea2fe8d0b2127938e3910&subscene=0)
+### [谷歌悄咪咪上线了-10-款-AI-应用，下一个-NotebookLM-可能在里面](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516775&idx=2&sn=314f26ca5a05a748cd85960c326c469c&subscene=0)
 
 2025-06-09 13:46:00
 
 
 
-### [谷歌悄咪咪上线了-10-款-AI-应用，下一个-NotebookLM-可能在里面](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516775&idx=2&sn=314f26ca5a05a748cd85960c326c469c&subscene=0)
+### [奇绩创坛-2025-春季路演：Agent、具身、Infra、AI4S，57-个项目完整介绍](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516775&idx=1&sn=f3ff8e02d07ea2fe8d0b2127938e3910&subscene=0)
 
 2025-06-09 13:46:00
 
@@ -9242,13 +9240,13 @@
 
 
 
-### [Google-搜索转型，Perplexity-入不敷出，AI-搜索还是个好赛道吗？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516485&idx=2&sn=230fd392abd5b97e8ae96eb24fab6668&subscene=0)
+### [Arc-浏览器创始人复盘：为何放弃百万用户及产品，押注-AI-浏览器？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516485&idx=1&sn=7e6a4d8a8e0445d6e55addab7637c794&subscene=0)
 
 2025-05-27 12:21:00
 
 
 
-### [Arc-浏览器创始人复盘：为何放弃百万用户及产品，押注-AI-浏览器？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516485&idx=1&sn=7e6a4d8a8e0445d6e55addab7637c794&subscene=0)
+### [Google-搜索转型，Perplexity-入不敷出，AI-搜索还是个好赛道吗？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516485&idx=2&sn=230fd392abd5b97e8ae96eb24fab6668&subscene=0)
 
 2025-05-27 12:21:00
 
@@ -9296,13 +9294,13 @@
 
 
 
-### [Claude-4-系列模型来了！编码能力强于-o3-和-GPT-4.1，记忆性能大幅提升](https://mp.weixin.qq.com/s/QAfeILzJI5Iquw--YiPkLQ)
+### [Anthropic-开发者大会完整稿精华：Claude-4-发布与-AI-智能体未来展望](https://mp.weixin.qq.com/s/_CJdlygEwPcXLMF1W33bNw)
 
 2025-05-23 00:00:00
 
 
 
-### [Anthropic-开发者大会完整稿精华：Claude-4-发布与-AI-智能体未来展望](https://mp.weixin.qq.com/s/_CJdlygEwPcXLMF1W33bNw)
+### [Claude-4-系列模型来了！编码能力强于-o3-和-GPT-4.1，记忆性能大幅提升](https://mp.weixin.qq.com/s/QAfeILzJI5Iquw--YiPkLQ)
 
 2025-05-23 00:00:00
 
@@ -9314,13 +9312,13 @@
 
 
 
-### [微软-CPO-专访：Prompt-是-AI-时代的-PRD，产品经理的工作方式已经彻底变了](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516338&idx=1&sn=d0832fc371f1913b4a4f6babac4d975b)
+### [Agent-Infra-图谱：哪些组件值得为-Agent-重做一遍？](http://mp.weixin.qq.com/s?__biz=Mzg2OTY0MDk0NQ==&mid=2247513438&idx=1&sn=90573400ced99cdec0c2bb04d671f855)
 
 2025-05-21 12:06:00
 
 
 
-### [Agent-Infra-图谱：哪些组件值得为-Agent-重做一遍？](http://mp.weixin.qq.com/s?__biz=Mzg2OTY0MDk0NQ==&mid=2247513438&idx=1&sn=90573400ced99cdec0c2bb04d671f855)
+### [微软-CPO-专访：Prompt-是-AI-时代的-PRD，产品经理的工作方式已经彻底变了](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516338&idx=1&sn=d0832fc371f1913b4a4f6babac4d975b)
 
 2025-05-21 12:06:00
 
@@ -9374,13 +9372,13 @@
 
 
 
-### [Notion-发布三个-AI-新功能，他们终于知道怎么用-AI-了](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516197&idx=2&sn=736e9754aa966ead6aaec43cad42cf74)
+### [付费用户突破-1000-万，All-in-AI-的多邻国，是怎么用-AI-的？](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516197&idx=1&sn=59184972914d75d5151ac69ba9e8b6d3)
 
 2025-05-14 12:30:00
 
 
 
-### [付费用户突破-1000-万，All-in-AI-的多邻国，是怎么用-AI-的？](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516197&idx=1&sn=59184972914d75d5151ac69ba9e8b6d3)
+### [Notion-发布三个-AI-新功能，他们终于知道怎么用-AI-了](http://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247516197&idx=2&sn=736e9754aa966ead6aaec43cad42cf74)
 
 2025-05-14 12:30:00
 
@@ -9566,7 +9564,7 @@
 
 
 
-### [天空精读|-谷歌大神-Jeff-Dean-最新演讲，Bolt.new-CEO-谈成功，-YC-谈-AI-氛围编程，两大投资科技大佬群播客更新](https://mp.weixin.qq.com/s/kU3yz3vjynv4yY3h_GnI4w)
+### [Arc-浏览器创始人专访：复盘-Arc-得失，想用-Dia-重新定义-AI-浏览器](https://mp.weixin.qq.com/s/avFieF2-EhP-RZ5oNa69qQ)
 
 2025-04-27 00:00:00
 
@@ -9578,7 +9576,7 @@
 
 
 
-### [Arc-浏览器创始人专访：复盘-Arc-得失，想用-Dia-重新定义-AI-浏览器](https://mp.weixin.qq.com/s/avFieF2-EhP-RZ5oNa69qQ)
+### [天空精读|-谷歌大神-Jeff-Dean-最新演讲，Bolt.new-CEO-谈成功，-YC-谈-AI-氛围编程，两大投资科技大佬群播客更新](https://mp.weixin.qq.com/s/kU3yz3vjynv4yY3h_GnI4w)
 
 2025-04-27 00:00:00
 
@@ -9626,13 +9624,13 @@
 
 
 
-### [大语言模型为何会“说谎”？6000-字深度长文揭秘-AI-意识的萌芽](https://mp.weixin.qq.com/s/Egj-dotIGTQ_rClZke0IMw)
+### [代码即界面：生成式-UI-带来设计范式重构](https://mp.weixin.qq.com/s/UVVH5Egt8FcsrcNlNTQW8w)
 
 2025-04-23 07:36:03
 
 
 
-### [代码即界面：生成式-UI-带来设计范式重构](https://mp.weixin.qq.com/s/UVVH5Egt8FcsrcNlNTQW8w)
+### [大语言模型为何会“说谎”？6000-字深度长文揭秘-AI-意识的萌芽](https://mp.weixin.qq.com/s/Egj-dotIGTQ_rClZke0IMw)
 
 2025-04-23 07:36:03
 
@@ -9668,25 +9666,25 @@
 
 
 
-### [OpenAI-发布最强推理模型-o3-和-o4-mini：图像深度思考首秀，还能自主调用工具](https://mp.weixin.qq.com/s/ha2WxyX4edf6-3pgtjlRjg)
-
-2025-04-17 00:00:00
-
-
-
 ### [The-Second-Half：一位-OpenAI-科学家的-AI-下半场启示录](https://mp.weixin.qq.com/s/iBVj-bcEtVbOGWEqwWp6EA)
 
 2025-04-17 00:00:00
 
 
 
-### [曾鸣最新演讲：下一个-10-年，生意的底层逻辑变了！](https://mp.weixin.qq.com/s/Mb9Rt_UajW5pLYm36yDjSg)
+### [OpenAI-发布最强推理模型-o3-和-o4-mini：图像深度思考首秀，还能自主调用工具](https://mp.weixin.qq.com/s/ha2WxyX4edf6-3pgtjlRjg)
+
+2025-04-17 00:00:00
+
+
+
+### [Claude-更新：高级-Research-功能、深度集成-Google-Workspace、语音模式即将上线](https://mp.weixin.qq.com/s/owdPOGVfsFTGXy4T-Gx1-Q)
 
 2025-04-16 00:00:00
 
 
 
-### [Claude-更新：高级-Research-功能、深度集成-Google-Workspace、语音模式即将上线](https://mp.weixin.qq.com/s/owdPOGVfsFTGXy4T-Gx1-Q)
+### [曾鸣最新演讲：下一个-10-年，生意的底层逻辑变了！](https://mp.weixin.qq.com/s/Mb9Rt_UajW5pLYm36yDjSg)
 
 2025-04-16 00:00:00
 
@@ -9944,13 +9942,13 @@
 
 
 
-### [拾象科技万字详解-MCP：Agentic-AI-中间层最优解，以及创业公司的三个机会](https://mp.weixin.qq.com/s/LYyJSzg8akfmE0JKMzbSSQ)
+### [AI-Native-游戏应该如何落地？看看这-12-款游戏是怎么做的](https://mp.weixin.qq.com/s/yj3-PkU8iLPBcS4DUgqaOw)
 
 2025-03-25 11:07:36
 
 
 
-### [AI-Native-游戏应该如何落地？看看这-12-款游戏是怎么做的](https://mp.weixin.qq.com/s/yj3-PkU8iLPBcS4DUgqaOw)
+### [拾象科技万字详解-MCP：Agentic-AI-中间层最优解，以及创业公司的三个机会](https://mp.weixin.qq.com/s/LYyJSzg8akfmE0JKMzbSSQ)
 
 2025-03-25 11:07:36
 
@@ -10172,13 +10170,13 @@
 
 
 
-### [从-R1-到-Sonnet-3.7，推理模型首轮竞赛中有哪些关键信号？](https://mp.weixin.qq.com/s/4BtVmNSWmDBvvNHr-tgR7g)
+### [Anthropic-CPO-万字专访：不再只做模型！后悔没有更早做第一方产品](https://mp.weixin.qq.com/s/X1yQZHH5o8oelaST0BbaDA)
 
 2025-03-04 13:22:26
 
 
 
-### [Anthropic-CPO-万字专访：不再只做模型！后悔没有更早做第一方产品](https://mp.weixin.qq.com/s/X1yQZHH5o8oelaST0BbaDA)
+### [从-R1-到-Sonnet-3.7，推理模型首轮竞赛中有哪些关键信号？](https://mp.weixin.qq.com/s/4BtVmNSWmDBvvNHr-tgR7g)
 
 2025-03-04 13:22:26
 
@@ -10316,13 +10314,13 @@
 
 
 
-### [2024-年-Product-Hunt-产品榜：Cursor-年度最佳，众多-AI-产品上榜](https://mp.weixin.qq.com/s/1XLHBru4TfjFOBkKoeOXow)
+### [DeepSeek-R1-之后，AI-创业、AI-投资会发生什么变化？](https://mp.weixin.qq.com/s/rSpSwCDJ80T2WEZ-bOAlhA)
 
 2025-02-14 18:07:32
 
 
 
-### [DeepSeek-R1-之后，AI-创业、AI-投资会发生什么变化？](https://mp.weixin.qq.com/s/rSpSwCDJ80T2WEZ-bOAlhA)
+### [2024-年-Product-Hunt-产品榜：Cursor-年度最佳，众多-AI-产品上榜](https://mp.weixin.qq.com/s/1XLHBru4TfjFOBkKoeOXow)
 
 2025-02-14 18:07:32
 
@@ -10388,25 +10386,25 @@
 
 
 
-### [a16z-发布-2025-AI-语音图谱：语音将成为与-AI-交互的主要模式](https://mp.weixin.qq.com/s/Ra7mtxvf2cJna_yuPuf_ew)
-
-2025-02-06 09:05:03
-
-
-
 ### [SemiAnalysis-万字解析-DeepSeek：训练成本、技术创新点、以及对封闭模型的影响](https://mp.weixin.qq.com/s/P7V0QACt-612uDTz0eKiMw)
 
 2025-02-06 09:05:03
 
 
 
-### [拾象科技闭门讨论：86-条-DeepSeek-的关键思考](https://mp.weixin.qq.com/s/GpET_yMSZrNpGBOnMvYSyg)
+### [a16z-发布-2025-AI-语音图谱：语音将成为与-AI-交互的主要模式](https://mp.weixin.qq.com/s/Ra7mtxvf2cJna_yuPuf_ew)
+
+2025-02-06 09:05:03
+
+
+
+### [DeepSeek-R1-之后，提示词技巧的变与不变](https://mp.weixin.qq.com/s/Rz44MfZK9cGLkdT4xZdKQQ)
 
 2025-02-05 10:54:28
 
 
 
-### [DeepSeek-R1-之后，提示词技巧的变与不变](https://mp.weixin.qq.com/s/Rz44MfZK9cGLkdT4xZdKQQ)
+### [拾象科技闭门讨论：86-条-DeepSeek-的关键思考](https://mp.weixin.qq.com/s/GpET_yMSZrNpGBOnMvYSyg)
 
 2025-02-05 10:54:28
 
@@ -29464,17 +29462,13 @@
 
 ### [【AI-Coding】借助-cursor-实现业务需求全栈交付实践](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650542857&idx=1&sn=52e4387f926f7c2fcece005803297a08)
 
-2026-02-06 09:24:00 | 标签: Cursor, AI Coding, 全栈开发, 前端动效, 状态管理
-
-> 文章详细介绍了在大淘宝技术背景下，后端研发如何通过 AI 工具 Cursor 辅助完成“单品返子”玩法的全栈开发实践。作者遵循“需求澄清-方案生成-AI 生码-自测完善-验收埋点”的标准流程，重点解决了 Lottie 动画与弹窗衔接、飞入动效实现、Feeds 流商品去重以及预加载失效等实际业务中的棘手问题。文章强调了在 AI 辅助开发中，人工进行过程管理、逻辑决策和细节把控的重要性，并分享了通过日志定位和状态提升解决复杂交互问题的实战经验。
+2026-02-06 09:24:00
 
 
 
 ### [当-AI-开始写-80%-的代码，架构才是真正的护城河](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651274673&idx=3&sn=bb6a48babadfa14a9c5e6255b9764fbd)
 
-2026-02-06 08:46:00 | 标签: AI Coding, 软件架构, 骨架架构, 垂直切片架构, 系统思维
-
-> 本文提出，随着 AI 编程工具（如 Claude Code）的普及，开发者的核心能力正从语法编写转向系统思维。作者总结了一套“骨架式架构（Skeleton Architecture）”模式，主张将系统划分为由人类定义的“稳定骨架”和由 AI 生成的“垂直组织”。通过利用原子化架构和垂直切片架构来优化 AI 的上下文窗口，并结合模板方法模式、Schema 约束及物理隔离等“硬护栏”机制，强制实施架构治理。这种转变不仅能解决 AI 带来的技术债务和架构漂移问题，还为解决初级工程师的“学徒危机”提供了新的路径，将工程师的角色从“代码翻译员”重塑为“系统导演”。
+2026-02-06 08:46:00
 
 
 
@@ -29492,9 +29486,7 @@
 
 ### [从-RAG-到多智能体协同：Agent-架构演进与可观测平台落地实践](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247634460&idx=1&sn=6f087506afd46b848a46410e47ef0e6f)
 
-2026-02-05 23:15:00 | 标签: AI Agent, 多智能体协同, RAG, AIOps, 可观测性
-
-> 文章源自咪咕研发中心技术总监朱孙伟的分享，全面解析了智能体（Agent）的技术架构与演进。作者将智能体演进分为问答、SOP、通用及协同四个阶段，并对比了基于现成应用、云平台（Coze）、社区产品（Dify）及自研框架（LangChain）四种开发模式的优劣。针对实践中常见的幻觉、死循环、高延迟等痛点，提出了信度阈值设置、思维链记录、多级 RAG 及模型参数量分级使用等具体优化策略。最后，文章重点介绍了智能体在运维可观测领域的应用场景，如根因定位、异常检测及自动化故障自愈，强调了在运维场景中应以辅助决策为主，避免模型误判引发系统雪崩。
+2026-02-05 23:15:00
 
 
 
@@ -41320,9 +41312,7 @@
 
 ### [ElevenLabs：12-人团队做出头部-App-的秘密丨-Sub-Club](https://mp.weixin.qq.com/s?__biz=Mzk5MDkxNDU4Nw==&mid=2247485436&idx=1&sn=8755a822f66f8ec4cc18b10762ae95c3)
 
-2026-02-05 13:34:00 | 标签: ElevenLabs, AI 创业, 组织架构, 产品增长, 移动应用
-
-> 文章总结了 ElevenLabs 移动增长团队的实战经验，核心探讨了其在 AI 赛道保持竞争力的组织与产品策略。ElevenLabs 采用“快艇”模式，将公司拆分为 12 个拥有完整决策权的独立创业小组，以确保决策速度。在人才方面，他们倾向于招聘具有产品直觉和自主开发能力的“创始人型”工程师。在产品增长上，他们坚持每月一次大更新，并利用“推特连推”式的故事化营销驱动口碑与付费增长。此外，文章还分享了简化 AI 定价逻辑（如将积分改为小时）以及避免过度优化新手引导等实战教训，强调在 AI 时代，“行动产生信息”，速度才是最核心的护城河。
+2026-02-05 13:34:00
 
 
 
@@ -52992,9 +52982,7 @@
 
 ### [他看到的未来，和我们有什么不一样？|-对话-18-岁的涂津豪：DeepSeek-前实习生、阿里数竞-AI-组冠军](https://www.xiaoyuzhoufm.com/episode/697c3998073030367a6ee5ef)
 
-2026-02-01 16:00:00 | 标签: AGI, 大型语言模型, 主动式 Agent, AI 记忆机制, AI 安全与对齐
-
-> 本期播客对话了 DeepSeek 前实习生、阿里全球数学竞赛 AI 组冠军涂津豪。内容围绕一个“活在 AI 里”的年轻人的视角展开，探讨了他对主流大模型性格（Character）的独特观察，分享了其开发的 Thinking Claude 提示词背后的逻辑。涂津豪对 2026 年 AI 发展做出了三大预测：一是主动式 AI（Proactive Agent）将成为更高级的“自动补全”，在对的时间主动完成任务；二是记忆机制（Memory）将作为底层基础设施实现质变；三是模型架构将向类似人脑的分区专家模式进化。此外，他还分享了在 DeepSeek 实习期间的真实感受，并从科学与人文的十字路口深入讨论了...
+2026-02-01 16:00:00
 
 
 
