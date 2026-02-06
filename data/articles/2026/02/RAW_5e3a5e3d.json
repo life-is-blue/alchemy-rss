@@ -1,0 +1,59 @@
+{
+  "id": "RAW_5e3a5e3d",
+  "title": "英伟达 Jim Fan：「世界建模」是新一代预训练范式",
+  "url": "https://www.qbitai.com/2026/02/376731.html",
+  "date": "2026-02-05 15:23:12",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"82\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"83\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">继“下一个词预测”之后，世界建模将成为新的预训练范式。</p>\n  <p data-track=\"4\">这是英伟达机器人主管<strong>Jim Fan</strong>给出的最新判断。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163333_0f5f43123045bca317bf4d545a7f1784.webp\">\n  </div>\n  <p data-track=\"5\">他认为，2026年将成为大世界模型（Large World Models）真正为机器人领域以及更广义的多模态AI奠定基础的第一年。</p>\n  <p data-track=\"6\">谢赛宁随即转发表示赞同：“事后看来显而易见”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163333_0594331c6f2d7d4687a9aa008ec610fb.png\">\n  </div>\n  <p data-track=\"7\">在这篇长文中，Jim Fan讨论了世界模型的定义与应用，尤其聚焦于物理AI领域的发展，同时展望了新的推理形式：</p>\n  <ul>\n   <li data-track=\"8\">世界建模（world modeling）是在给定一个动作的条件下，预测下一个合理的世界状态（或一段更长时间范围内的状态）。</li>\n   <li data-track=\"9\">当前世界模型的主要炒作集中在AI视频领域，而2026年将迎来物理AI的爆发。</li>\n   <li data-track=\"10\">世界模型需要更广义的预训练目标：下一个世界状态不应只包含RGB，还必须覆盖3D运动、本体感觉与触觉。</li>\n   <li data-track=\"11\">将出现一种新的推理形式：在视觉空间中的思维链，而非语言空间中的思维链。</li>\n  </ul>\n  <p data-track=\"12\">以下为分享全文：</p>\n  <p data-track=\"14\">下一个词预测(Next word prediction )曾是第一个预训练范式，而现在我们正在经历第二次范式转变：</p>\n  <p data-track=\"15\"><strong>世界建模（world modeling）</strong>，或者说<strong>“下一个物理状态预测”</strong>。</p>\n  <p data-track=\"16\">很少有人真正理解这一转变的深远意义。不幸的是，目前世界模型最被炒作的应用仍然是AI视频（接下来可能是游戏）。</p>\n  <p data-track=\"17\">我非常有信心地说：2026年将成为大世界模型（Large World Models）首次为机器人领域，以及更广义的多模态 AI 奠定真实基础的一年。</p>\n  <p data-track=\"18\">在这个背景下，我将世界建模定义为：<strong>在给定一个动作的条件下，预测下一个合理的世界状态（或一段更长时间范围内的状态）。</strong></p>\n  <p data-track=\"19\">视频生成模型是其中的一种实现形式，其中“下一个状态”是一系列RGB帧（通常为 8–10 秒，最长可达数分钟），而“动作”是一段描述要执行什么的文本。</p>\n  <p data-track=\"20\">训练过程就是对数十亿小时视频像素的未来变化进行建模。</p>\n  <p data-track=\"21\">本质上，视频世界模型就是可学习的物理模拟器和渲染引擎。</p>\n  <p data-track=\"22\">它们能够捕捉反事实情景（counterfactuals），即预测如果采取不同动作，未来可能会如何不同——这就是推理。世界模型从根本上以视觉为中心。</p>\n  <p data-track=\"23\">相比之下，VLM本质上是以语言为中心的。从最早的原型（e.g. LLaVA, Liu et al. 2023）开始，整体路径基本一致：视觉在编码器处进入，然后被送入语言主干网络。</p>\n  <p data-track=\"24\">随着时间推移，编码器不断改进，架构变得更简洁，视觉试图变得更加“原生”（如全模态模型）。</p>\n  <p data-track=\"25\">然而，视觉仍然是二等公民，无法与领域多年构建的LLM能力相比。（LLM)这条路线方便，因为我们熟LLM的扩展性，架构设计、数据配方、评测指标（如 VQA）都高度优化为语言服务。</p>\n  <p data-track=\"26\">对于物理AI来说，2025年以VLA为主：在预训练VLM上接入机器人动作解码器。</p>\n  <p data-track=\"27\">严格来说，它更像是 “LVA”：语言 &gt; 视觉 &gt; 动作，等级递减。</p>\n  <p data-track=\"28\">方便是方便，但VLM中大多数参数用于知识（例如“这一团像素是可口可乐品牌”），而不是物理（“如果你倾倒可乐瓶，它会洒成棕色水洼，弄脏白色桌布，还可能损坏电机”）。</p>\n  <p data-track=\"29\">VLA的设计在知识检索上很强，但物理能力分配不足。多阶段嫁接的设计，也违背我对简洁优雅的偏好。</p>\n  <p data-track=\"30\">从生物学角度看，视觉主导了我们的皮层计算。大约三分之一的大脑皮层用于在枕叶、颞叶和顶叶区域处理像素。</p>\n  <p data-track=\"31\">相比之下，语言依赖于一个相对紧凑的区域。视觉是连接我们大脑、运动系统和物理世界的最高带宽通道。它闭合了“感知—运动回路（sensorimotor loop）”——这是机器人最需要解决的回路，而且在中间不需要语言。</p>\n  <p data-track=\"32\">自然界给了我们一个最具说服力的例证：高灵巧物理智能几乎不依赖语言——猿类。</p>\n  <p data-track=\"33\">我见过猿类驾驶高尔夫球车，用螺丝刀更换刹车片，动作就像人类机械师一样。</p>\n  <p data-track=\"34\">它们的语言理解能力不超过BERT或GPT-1，但它们的物理技能远远超过我们当前最先进的机器人。</p>\n  <p data-track=\"35\">猿类可能没有优秀的语言模型，但它们显然拥有对“如果……会怎样”的稳健心理表征：即对物理世界如何运作、以及在其干预下会如何反应的理解。</p>\n  <p data-track=\"36\"><strong>世界建模的时代已经到来。</strong></p>\n  <p data-track=\"37\">这是带着苦涩教训的时代。正如Jitendra常提醒我们这些“扩展成瘾者”：</p>\n  <blockquote>\n   <p data-track=\"38\">监督是AI研究者的鸦片。</p>\n  </blockquote>\n  <p data-track=\"39\">YouTube的海量视频和智能眼镜的兴起，将以远超文本训练规模的原始视觉流捕捉世界。</p>\n  <p data-track=\"40\">我们将看到一种新的预训练形式：下一个世界状态将不只包含RGB——3D空间运动、本体感觉和触觉感知才刚刚开始。</p>\n  <p data-track=\"41\">我们将看到一种新的推理形式：在视觉空间中的思维链，而不是语言空间中的思维链。</p>\n  <p data-track=\"42\">你可以通过模拟几何关系和接触来解决物理谜题，想象物体如何移动和碰撞，而无需将其翻译成字符串。语言是一种瓶颈，是一种脚手架，而不是基础。</p>\n  <p data-track=\"43\">我们将面临一系列新的潘多拉盒问题：即便未来模拟完美，动作该如何解码？</p>\n  <p data-track=\"44\">像素重建真的是最优目标，还是应该进入其他潜在空间？需要多少机器人数据？远程操作的扩展是否仍然可行？</p>\n  <p data-track=\"45\">完成这些之后，我们是否终于迎来机器人领域的GPT-3时刻？</p>\n  <p data-track=\"46\">Ilya 说得没错：AGI尚未收敛。我们又回到了研究时代，而没有什么比挑战第一性原理更让人兴奋的了。</p>\n  <p data-track=\"48\">总体来看，这篇新文章可以被看作是Jim Fan在<strong>2025年机器人年终总结</strong>中第三点的延伸与展开。</p>\n  <p data-track=\"49\">当时，他提出：<strong>基于VLM的路线，本质上主要服务于语言和知识，而不是物理世界本身</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163333_04a349bfcc94aeef13b188ed695cb071.png\">\n  </div>\n  <p data-track=\"50\">那时，他已经把问题说得很直白：</p>\n  <p data-track=\"51\">VLM的参数主要面向语言和知识，而非物理世界。</p>\n  <p data-track=\"52\">视觉编码器在训练中会主动丢弃细节，但机器人操作恰恰依赖这些细节。</p>\n  <p data-track=\"53\">因此，VLA并不会随着VLM的scale自然增强。</p>\n  <p data-track=\"54\">而最近这篇关于world modeling（世界建模） 的长文，则可以看作是Jim Fan对这一判断的系统性展开与进一步思考。</p>\n  <p data-track=\"55\">对于他的观点，业内大佬和网友也纷纷表达了看法。</p>\n  <p data-track=\"56\">来自Google DeepMind的Genie 3联合负责人、世界模型团队负责人<strong>Jack Parker-Holder</strong>也在转发分享了他对世界模型应用场景的理解：</p>\n  <blockquote>\n   <p data-track=\"57\">世界模型本身就是一类全新的基础模型。它们既服务于交互式媒体（视频模型），也服务于具身AGI。世界模型是连接虚拟与物理两个领域的桥梁，其真正价值在于跨任务、跨领域的泛化能力。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163334_9310a01876ef2920315daacf08bf7727.png\">\n  </div>\n  <p data-track=\"58\">换句话说，就像<strong>LLM作为基座模型既能编程又能解数学题一样，放到世界模型上，视频生成与具身操控也可以兼容</strong>。</p>\n  <p data-track=\"59\">而谷歌、英伟达等玩家，也都在虚拟游戏、视频以及物理机器人领域同步布局。</p>\n  <p data-track=\"60\">不过，前英伟达机器人研究主管<strong>Arsalan Mousavian</strong>也提醒：</p>\n  <blockquote>\n   <p data-track=\"61\">对于大型世界模型（LWM）来说，这是一个非常棒的愿景，但从像素到物理的跃迁仍然很陡峭。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163334_a39d284162c104cc88015e31a387843d.png\">\n  </div>\n  <p data-track=\"62\">要让世界模型成为可靠的动作生成骨干，还必须解决以下问题：</p>\n  <ul>\n   <li data-track=\"63\">几何一致性：确保运动学和物体恒常性在物理上成立。</li>\n   <li data-track=\"64\">同一性保持：避免跨实体的幻觉预测，例如机器人A在预测过程中突然变成机器人B。</li>\n   <li data-track=\"65\">推理速度：降低实时循环延迟。大型世界模型计算量大、延迟高，而机器人需要高频率响应。</li>\n   <li data-track=\"66\">动作采样：世界模型可以预测结果，但我们仍然需要对动作进行采样。</li>\n  </ul>\n  <p data-track=\"67\">在数据量和计算需求上，这一目标将使当前的动作策略扩展（action-policy scaling）显得相对温和。</p>\n  <p data-track=\"68\">此外，jim fan提到的视觉推理也引发广泛讨论：</p>\n  <blockquote>\n   <p data-track=\"69\">推理不一定非得依赖语言——视觉模拟（几何、接触、运动）本身就能构成推理过程。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163333_0b7d75ed31346f96e5b47694a7cf7bba.png\">\n  </div>\n  <blockquote>\n   <p data-track=\"70\">机器人正是视觉为中心的基础模型大显身手的完美舞台。2026将是多模态、多轮交互代理（机器人/CUA）之年，而这一场比赛的胜者，必然会在游戏中更加重视视觉模态。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163333_9966dfa7e1911ec5c6f0b9f44c2a019f.png\">\n  </div>\n  <blockquote>\n   <p data-track=\"71\">猿猴的比喻非常贴切。我们太过痴迷语言，以至于忘记了灵巧的行动能力并不一定需要词汇量。2026年或许是机器人技术最终停止依赖语言模型，转而构建原生系统的一年。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260205163334_517199f59db9724aa591844b8a95a576.png\">\n  </div>\n  <p data-track=\"72\">而除开英伟达、谷歌等巨头在世界模型技术路线的押注外，商业层面也在快速推进——</p>\n  <p data-track=\"73\">一周前，<strong>李飞飞</strong>创办的World Labs正以约50亿美元估值进行新一轮融资，规模最高可达5亿美元。</p>\n  <p data-track=\"74\">而<strong>LeCun</strong>前段时间创办AMI Labs（Advanced Machine Intelligence，AMI）也吸引了包括Cathay Innovation在内的潜在投资者，传闻其融资估值可能达到35亿美元。</p>\n  <p data-track=\"75\">参考链接：https://x.com/DrJimFan/status/2018754323141054786</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "英伟达机器人主管 Jim Fan 提出“世界建模”将取代“下一个词预测”成为新一代预训练范式，强调物理 AI 应转向以视觉和物理规律为核心的推理。",
+  "oneSentenceSummary": "英伟达机器人主管 Jim Fan 提出“世界建模”将取代“下一个词预测”成为新一代预训练范式，强调物理 AI 应转向以视觉和物理规律为核心的推理。",
+  "summary": "本文详细阐述了英伟达专家 Jim Fan 对大世界模型（LWM）的深度见解。他指出，2026 年将是物理 AI 奠定基础的关键一年，预训练范式正从“下一个词预测”转向“给定动作下的下一个物理状态预测”。文章批判了当前视觉语言模型（VLM）过度依赖语言主干、缺乏物理直觉的现状，并以灵长类动物为例，论证了高阶物理智能无需复杂语言支持。未来，世界模型将整合 3D 运动、本体感觉与触觉，并催生出“视觉空间思维链”这一新型推理形式，直接在几何与接触模拟中解决物理谜题。",
+  "mainPoints": [
+    {
+      "point": "世界建模将成为继“下一个词预测”后的新一代 AI 预训练核心范式。",
+      "explanation": "世界建模被定义为在给定动作条件下预测下一个合理的世界状态。它超越了单纯的视频生成，旨在为机器人和多模态 AI 提供理解物理世界运作规律的底层能力。"
+    },
+    {
+      "point": "当前 VLM/VLA 架构存在“语言中心主义”缺陷，限制了物理智能的发展。",
+      "explanation": "现有模型将视觉视为二等公民，参数多用于存储语言知识而非物理规律。这导致模型虽能识别品牌，却无法理解物体倾倒、碰撞等复杂的物理交互过程。"
+    },
+    {
+      "point": "提出“视觉空间思维链”概念，认为推理不一定非要依赖语言字符串。",
+      "explanation": "未来 AI 将通过在视觉空间模拟几何关系、物体接触和运动轨迹来进行推理。这种方式模仿了生物本能，能够直接解决物理谜题，而无需将其翻译成语言瓶颈。"
+    },
+    {
+      "point": "物理 AI 的预训练目标应从 RGB 像素扩展到多维度的感知数据。",
+      "explanation": "下一代模型不应仅停留在像素重建，而需覆盖 3D 空间运动、本体感觉和触觉感知。这将使模型从单纯的视频生成器进化为真正的可学习物理模拟器。"
+    }
+  ],
+  "keyQuotes": [
+    "世界建模（world modeling），或者说“下一个物理状态预测”。",
+    "视觉是连接我们大脑、运动系统和物理世界的最高带宽通道。它闭合了“感知—运动回路”——这是机器人最需要解决的回路，而且在中间不需要语言。",
+    "我们将看到一种新的推理形式：在视觉空间中的思维链，而不是语言空间中的思维链。",
+    "语言是一种瓶颈，是一种脚手架，而不是基础。",
+    "VLM 中大多数参数用于知识，而不是物理。VLA 的设计在知识检索上很强，但物理能力分配不足。"
+  ],
+  "tags": [
+    "世界模型",
+    "物理 AI",
+    "机器人",
+    "预训练范式",
+    "计算机视觉"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 87,
+  "wordCount": 3250,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1770304992000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-05 15:23:12"
+}
