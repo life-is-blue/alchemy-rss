@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-07 18:03:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-07 20:03:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -482,9 +482,7 @@
 
 ### [在-WebAssembly-中运行-Pydantic-的-Monty：一个基于-Rust-的-Python-沙箱子集](https://simonwillison.net/2026/Feb/6/pydantic-monty/#atom-everything)
 
-2026-02-06 22:31:31 | 标签: Pydantic Monty, WebAssembly, Rust, Python 沙箱, Pyodide
-
-> 本文探讨了 Pydantic 的 Monty，这是一个用 Rust 编写的轻量级 Python 解释器，旨在安全地执行 LLM 生成的代码。作者详细介绍了使用 Claude Code 将 Monty 移植到 WebAssembly (WASM) 的过程，并实现了两种部署方式：一个可直接通过 JavaScript 访问的 WASM 模块，以及一个用于 Pyodide 的 Python wheel。这种“沙箱中的沙箱”方法提供了微秒级的启动时间和严格的隔离，使其成为 AI 智能体在浏览器环境中安全执行代码、同时严格限制系统资源的理想工具。
+2026-02-06 22:31:31
 
 
 

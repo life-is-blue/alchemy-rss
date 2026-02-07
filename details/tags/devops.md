@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-07 18:03:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-07 20:03:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -392,9 +392,7 @@
 
 ### [LinkedIn-利用-GitHub-Actions、CodeQL-和-Semgrep-进行代码扫描](https://www.infoq.com/news/2026/02/linkedin-redesigns-sast-pipeline/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-02-06 15:00:00 | 标签: SAST, DevSecOps, GitHub Actions, CodeQL, Semgrep
-
-> LinkedIn 重新设计了其静态应用安全测试（SAST）流水线，以克服碎片化、多仓库环境带来的挑战。新架构利用 GitHub Actions 编排 CodeQL 进行深度分析，并使用 Semgrep 进行快速的基于模式的扫描。一项关键创新是在各个仓库中使用“存根工作流（stub workflows）”，将其委托给集中管理的工作流，从而实现即时的全局更新，并绕过 GitHub 原生强制工作流的限制。该系统通过仓库规则集强制执行安全标准，同时通过“终止开关”和自动回退机制维持开发效率，防止流水线故障阻塞合并。
+2026-02-06 15:00:00
 
 
 
