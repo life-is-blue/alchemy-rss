@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ef1047af",
+  "title": "在 WebAssembly 中运行 Pydantic 的 Monty：一个基于 Rust 的 Python 沙箱子集",
+  "url": "https://simonwillison.net/2026/Feb/6/pydantic-monty/#atom-everything",
+  "date": "2026-02-06 22:31:31",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Feb/6/pydantic-monty/\">\n    <p class=\"mobile-date\">6th February 2026</p>\n    <p>There’s a jargon-filled headline for you! Everyone’s <a href=\"https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/#1-year-we-re-finally-going-to-solve-sandboxing\">building sandboxes</a> for running untrusted code right now, and Pydantic’s latest attempt, <a href=\"https://github.com/pydantic/monty\">Monty</a>, provides a custom Python-like language (a subset of Python) in Rust and makes it available as both a Rust library and a Python package. I got it working in WebAssembly, providing a sandbox-in-a-sandbox.</p>\n    <p>Here’s <a href=\"https://github.com/pydantic/monty\">how they describe Monty</a>:</p>\n    <blockquote>\n     <p>Monty avoids the cost, latency, complexity and general faff of using full container based sandbox for running LLM generated code.</p>\n     <p>Instead, it let’s you safely run Python code written by an LLM embedded in your agent, with startup times measured in single digit microseconds not hundreds of milliseconds.</p>\n     <p>What Monty <strong>can</strong> do:</p>\n     <ul>\n      <li>Run a reasonable subset of Python code—enough for your agent to express what it wants to do</li>\n      <li>Completely block access to the host environment: filesystem, env variables and network access are all implemented via external function calls the developer can control</li>\n      <li>Call functions on the host—only functions you give it access to [...]</li>\n     </ul>\n    </blockquote>\n    <p>A quick way to try it out is via <a href=\"https://github.com/astral-sh/uv\">uv</a>:</p>\n    <pre><code>uv run --with pydantic-monty python -m asyncio\n</code></pre>\n    <p>Then paste this into the Python interactive prompt—the <code>-m asyncio</code> enables top-level await:</p>\n    <pre><span>import</span> <span>pydantic_monty</span>\n<span>code</span> <span>=</span> <span>pydantic_monty</span>.<span>Monty</span>(<span>'print(\"hello \" + str(4 * 5))'</span>)\n<span>await</span> <span>pydantic_monty</span>.<span>run_monty_async</span>(<span>code</span>)</pre>\n    <p>Monty supports a <em>very</em> small subset of Python—it doesn’t even support class declarations yet!</p>\n    <p>But, given its target use-case, that’s not actually a problem.</p>\n    <p>The neat thing about providing tools like this for LLMs is that they’re really good at iterating against error messages. A coding agent can run some Python code, get an error message telling it that classes aren’t supported and then try again with a different approach.</p>\n    <p>I wanted to try this in a browser, so I fired up <a href=\"https://simonwillison.net/2025/Nov/6/async-code-research/\">a code research task</a> in Claude Code for web and kicked it off with the following:</p>\n    <blockquote>\n     <p>Clone <a href=\"https://github.com/pydantic/monty\">https://github.com/pydantic/monty</a> to /tmp and figure out how to compile it into a python WebAssembly wheel that can then be loaded in Pyodide. The wheel file itself should be checked into the repo along with build scripts and passing pytest playwright test scripts that load Pyodide from a CDN and the wheel from a “python -m http.server” localhost and demonstrate it working</p>\n    </blockquote>\n    <p>Then a little later:</p>\n    <blockquote>\n     <p>I want an additional WASM file that works independently of Pyodide, which is also usable in a web browser—build that too along with playwright tests that show it working. Also build two HTML files—one called demo.html and one called pyodide-demo.html—these should work similar to <a href=\"https://tools.simonwillison.net/micropython\">https://tools.simonwillison.net/micropython</a> (download that code with curl to inspect it)—one should load the WASM build, the other should load Pyodide and have it use the WASM wheel. These will be served by GitHub Pages so they can load the WASM and wheel from a relative path since the .html files will be served from the same folder as the wheel and WASM file</p>\n    </blockquote>\n    <p>Here’s <a href=\"https://gisthost.github.io/?22d88e6367d7e002c4fb383c213c2df2/page-001.html\">the transcript</a>, and the <a href=\"https://github.com/simonw/research/tree/main/monty-wasm-pyodide\">final research report</a> it produced.</p>\n    <p>I now have the Monty Rust code compiled to WebAssembly in two different shapes—as a <code>.wasm</code> bundle you can load and call from JavaScript, and as a <code>monty-wasm-pyodide/pydantic_monty-0.0.3-cp313-cp313-emscripten_4_0_9_wasm32.whl</code> wheel file which can be loaded into <a href=\"https://pyodide.org/\">Pyodide</a> and then called from Python in Pyodide in WebAssembly in a browser.</p>\n    <p>Here are those two demos, hosted on GitHub Pages:</p>\n    <ul>\n     <li><a href=\"https://simonw.github.io/research/monty-wasm-pyodide/demo.html\">Monty WASM demo</a>—a UI over JavaScript that loads the Rust WASM module directly.</li>\n     <li><a href=\"https://simonw.github.io/research/monty-wasm-pyodide/pyodide-demo.html\">Monty Pyodide demo</a>—this one provides an identical interface but here the code is <a href=\"https://github.com/simonw/research/blob/3add1ffec70b530711fa237d91f546da5bcf1f1c/monty-wasm-pyodide/pyodide-demo.html#L257-L280\">loading Pyodide and then installing the Monty WASM wheel</a>.</li>\n    </ul>\n    <p><img src=\"https://static.simonwillison.net/static/2026/monty-pyodide.jpg\" alt=\"Screenshot of a web app titled &quot;Monty via Pyodide&quot; with description &quot;Run Monty (a sandboxed Python interpreter by Pydantic) inside Pyodide (CPython compiled to WebAssembly). This loads the pydantic-monty wheel and uses its full Python API. Code is saved in the URL for sharing.&quot; A green banner reads &quot;Code executed successfully!&quot; Below are example buttons labeled &quot;Basic&quot;, &quot;Inputs&quot;, &quot;Reuse&quot;, &quot;Error Handling&quot;, &quot;Fibonacci&quot;, and &quot;Classes&quot;. A code editor labeled &quot;Python Code (runs inside Monty sandbox via Pyodide):&quot; contains: &quot;import pydantic_monty\\n\\n# Create interpreter with input variables\\nm = pydantic_monty.Monty('x + y', inputs=['x', 'y'])\\n\\n# Run with different inputs\\nresult1 = m.run(inputs={&quot;x&quot;: 10, &quot;y&quot;: 20})\\nprint(f&quot;10 + 20 = {result1}&quot;)\\n\\nresult2 = m.run(inputs={&quot;x&quot;: 100, &quot;y&quot;: 200})&quot; with &quot;Run Code&quot; and &quot;Clear&quot; buttons. The Output section shows &quot;10 + 20 = 30&quot; and &quot;100 + 200 = 300&quot; with a &quot;Copy&quot; button. Footer reads &quot;Executed in 4.0ms&quot;.\" style=\"max-width: 100%;\"></p>\n    <p>As a connoisseur of sandboxes—the more options the better!—this new entry from Pydantic ticks a lot of my boxes. It’s small, fast, widely available (thanks to Rust and WebAssembly) and provides strict limits on memory usage, CPU time and access to disk and network.</p>\n    <p>It was also a great excuse to spin up another demo showing how easy it is these days to turn compiled code like C or Rust into WebAssembly that runs in both a browser and a Pyodide environment.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9119/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 演示了如何将 Pydantic 的 Monty（一个基于 Rust 的 Python 子集）编译为 WebAssembly，从而为 LLM 生成的代码创建一个高性能的浏览器端沙箱。",
+  "oneSentenceSummary": "Simon Willison 演示了如何将 Pydantic 的 Monty（一个基于 Rust 的 Python 子集）编译为 WebAssembly，从而为 LLM 生成的代码创建一个高性能的浏览器端沙箱。",
+  "summary": "本文探讨了 Pydantic 的 Monty，这是一个用 Rust 编写的轻量级 Python 解释器，旨在安全地执行 LLM 生成的代码。作者详细介绍了使用 Claude Code 将 Monty 移植到 WebAssembly (WASM) 的过程，并实现了两种部署方式：一个可直接通过 JavaScript 访问的 WASM 模块，以及一个用于 Pyodide 的 Python wheel。这种“沙箱中的沙箱”方法提供了微秒级的启动时间和严格的隔离，使其成为 AI 智能体在浏览器环境中安全执行代码、同时严格限制系统资源的理想工具。",
+  "mainPoints": [
+    {
+      "point": "Monty 为 LLM 代码执行提供了一个安全、高性能的 Python 子集。",
+      "explanation": "与沉重的基于容器的沙箱不同，Monty 提供微秒级的启动时间以及与宿主环境的严格隔离，专门为运行不可信的 AI 生成脚本而定制。"
+    },
+    {
+      "point": "将基于 Rust 的工具编译为 WASM 可以实现“沙箱中的沙箱”安全架构。",
+      "explanation": "通过在 WebAssembly 环境中运行 Python 子集 (Monty)，开发人员可以实现多层隔离，防止对文件系统或网络的未经授权访问。"
+    },
+    {
+      "point": "LLM 具有适应语言子集限制的独特能力。",
+      "explanation": "尽管 Monty 仅支持 Python 的一小部分子集，但 LLM 可以根据错误消息进行有效迭代，重写符合解释器限制的代码。"
+    },
+    {
+      "point": "现代 AI 编程智能体显著简化了复杂的交叉编译任务。",
+      "explanation": "作者利用 Claude Code 自动化了将 Rust 编译为 WASM wheel 的研究和构建过程，展示了 AI 辅助软件工程日益提高的效率。"
+    }
+  ],
+  "keyQuotes": [
+    "Monty 避免了使用完整的基于容器的沙箱来运行 LLM 生成代码所带来的成本、延迟、复杂性和各种琐碎麻烦。",
+    "我让它在 WebAssembly 中运行了起来，提供了一个“沙箱中的沙箱”。",
+    "为 LLM 提供此类工具的巧妙之处在于，它们非常擅长根据错误消息进行迭代。",
+    "它体积小、速度快、适用范围广……并且对内存使用、CPU 时间以及磁盘和网络访问提供了严格的限制。"
+  ],
+  "tags": [
+    "Pydantic Monty",
+    "WebAssembly",
+    "Rust",
+    "Python 沙箱",
+    "Pyodide"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 662,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1770417091000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-06 22:31:31"
+}
