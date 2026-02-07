@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-07 22:06:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-08 00:03:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -28721,11 +28721,11 @@
 
 
 
-### [我写了个-Skill，让-Agent-自动给文章配图](https://baoyu.io/blog/2026/01/15/agent-skills-illustrator-tutorial)
+### [AI-会取代你的工作吗？Anthropic-用-200-万对话告诉你答案](https://baoyu.io/blog/2026/01/16/anthropic-economic-index-primitives)
 
-2026-01-15T00:00:00.000Z
+2026-01-16T00:00:00.000Z
 
-> 配图是写作的痛点。我开发了一个 Agent Skill，让 AI 自动分析文章、选择风格、生成插图并插入对应位置。本文详解这个 Skill 的设计思路和实现方法，帮你理解如何把重复性工作"教"给 Agent。
+> Anthropic 发布 Economic Index 第四期报告，分析 200 万次 Claude 对话后发现：AI 对高学历任务加速效果比低学历高 30%，正在从知识工作核心切入。报告首创"经济原语"框架，揭示 AI 可能加剧而非缩小全球不平等。
 
 
 
