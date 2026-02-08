@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-08 08:13:10 | [返回首页](/README.md)
+**更新时间**: 2026-02-08 11:00:22 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9081)
+- [AI & 大模型](#ai-llm) (9085)
 - [软件架构](#architecture) (18)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4787)
+- [其他](#other) (4788)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [StrongDM-的-AI-团队如何在不看代码的情况下构建严肃软件](https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything) - AI 精选
 - [中门对狙！Claude-Opus-4.6-和-GPT-5.3-Codex-同时发布，这下真的-AI-春晚了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6) - AI 精选
 - [Claude-Code-创始人再次公开：团队的-10-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247718904&idx=1&sn=7f77ee06ab57fd11bc44ab6f782cd644) - AI 精选
 - [深度解读：OpenClaw-架构及生态](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491455&idx=1&sn=33d58cb6f0d2cd3b9c08c3c84a223e25) - AI 精选
@@ -41,9 +42,8 @@
 - [AI-时代是谁的黄金时代？｜和张咋啦聊：文科生、积极行动、爆款的规律、普通人也能赢](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649103555&idx=1&sn=3843ac9c1fe9c9506c9fa929511ed325) - AI 精选
 - [暴走-2-万步逛遍-CES2026：9-大方向最火，中企霸场，机器人全明星大乱斗](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652795108&idx=1&sn=e8fdfc327478bff9f2e7e68a2e49742a) - AI 精选
 - [Claude-Code-创始人首次公开：我的-13-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247717240&idx=1&sn=dfd0b8b79fb18e53d17d62ef149aa392) - AI 精选
-- [Agent-in-the-Shell，豆包手机是敲键盘的“机械手指”吗？](https://mp.weixin.qq.com/s?__biz=MjM5MDgzNDUxMw==&mid=2650854144&idx=1&sn=031c8f5c27d805de0cf2a300667ad16a) - AI 精选
 
-- [查看全部 9081 篇...](/details/tags/ai-llm.md)
+- [查看全部 9085 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -184,6 +184,6 @@
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 - [分析了-1.8-亿个岗位后，我发现应届生们好像被-AI-堵在了门外。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647676564&idx=1&sn=1a36883431908c75c0634c316db9297f) - AI 精选
 
-- [查看全部 4787 篇...](/details/tags/other.md)
+- [查看全部 4788 篇...](/details/tags/other.md)
 
 

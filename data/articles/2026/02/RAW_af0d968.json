@@ -1,0 +1,63 @@
+{
+  "id": "RAW_af0d968",
+  "title": "从 Clawdbot 到 26 年 AI Coding 主题大爆发｜对谈 PingCAP CTO 东旭",
+  "url": "https://www.xiaoyuzhoufm.com/episode/698563a188663289fe80769a",
+  "date": "2026-02-07 14:00:00",
+  "author": "42章经",
+  "siteName": "42章经",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>最近 Clawdbot（现在叫 OpenClaw）各种刷屏 🦞。</span></p>\n  <span></span>\n  <p><span>事实上，不只是 Clawdbot，从 25 年年底开始，Claude Code、Cowork、Skills 等产品和概念就一直在霸占我们的信息流。相信很多朋友和我们一样，在应接不暇的同时，也产生了各种疑问：</span></p>\n  <span></span>\n  <p><span>到底这些产品都是做什么的？为什么这些产品会在最近密集爆发？技术上出现了什么新范式？AI 的未来又会发生怎样的变化？</span></p>\n  <span></span>\n  <p><span>为了得到答案，我们请回了一位老朋友——PingCAP CTO 东旭。在</span><a href=\"https://www.xiaoyuzhoufm.com/episode/68274977457b22ce0d0dc9e9\" data-url=\"https://www.xiaoyuzhoufm.com/episode/68274977457b22ce0d0dc9e9\"><span>上一期节目</span></a><span>中，东旭更多是以联创的身份，分享了他关于全球化的思考与方法论。但其实，他还有很多面相，比如野生音乐人、哲学爱好者，以及始终在技术最前沿冲浪、甚至每天能烧掉 billion 级别 token 的 builder。</span></p>\n  <span></span>\n  <p><span>所以，他可能是这期节目最合适的嘉宾人选之一。</span></p>\n  <span></span>\n  <p><span>在这期节目里，东旭就从大量一手经验出发，分享了他对各种热门产品的实操体悟，用简单好懂的方式讲清楚了许多技术变化，并给出了他对 AI 未来走向的判断与推演。</span></p>\n  <span></span>\n  <p><span>在讨论过程中，我们也梳理出了一条 AI 的演进线索：AI 产品，正在从「套壳大模型」，向「套壳 Coding Agent」方向演进。未来，一切可能都建立在 Coding 和 Agent 之上。</span></p>\n  <span></span>\n  <p><span>最后，不得不再一次感慨，AI 的变化实在太快了。新产品层出不穷，我们似乎也在不断逼近 AI 拥有自我演化能力，甚至是某种「终极形态」的临界点。</span></p>\n  <span></span>\n  <p><span>在这样的节点上，或许我们不只需要高密度地输入信息，也需要面对随之而来的迷茫与焦虑。所以在节目结尾，我们还请东旭回答了几个彩蛋问题，希望也能给一些朋友带来一点平静和启发吧～</span></p>\n  <span></span>\n  <p><span>【</span><strong><span>人类博物馆】</span></strong></p>\n  <span></span>\n  <p><strong><span>导游：</span></strong><span>曲凯，42章经创始人</span></p>\n  <span></span>\n  <p><strong><span>35 号珍藏：</span></strong><span>黄东旭，PingCAP 联合创始人、CTO，野生音乐人</span></p>\n  <span></span>\n  <p><span>【</span><strong><span>时光机】</span></strong></p>\n  <span></span>\n  <p><strong><span>Part 1 实操体悟</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"124\">2:04</a> AI Coding 已经跃过了「奇点时刻」</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"198\">3:18</a> 25 年，AI Coding 的能力从多少分提高到了多少分?</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"284\">4:44</a> 未来应该禁止人类写代码？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"409\">6:49</a> Claude Code 开创了什么新范式？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"515\">8:35</a> 过去一年，模型与 Agent 大幅进步的两个关键指标</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"834\">13:54</a> Cowork 被高估了？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"915\">15:15</a> 为什么说 Skills 比 MCP 更适合 Agent？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1146\">19:06</a> 简单讲讲 Clawdbot 到底是个啥</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1282\">21:22</a> 关于 Clawdbot 未来可能性的一个猜想</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1308\">21:48</a> Clawdbot 在本地跑 vs 在云端跑，有什么不同？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1401\">23:21</a> Clawdbot 和 Manus 有什么本质区别？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1540\">25:40</a> 到底能用 Clawdbot 来干啥？一些真实的 Usecases </span>\n    <ul>\n     <span> </span>\n     <li><span><a class=\"timestamp\" data-timestamp=\"1679\">27:59</a> 神奇（可怕）：AI 已经能自我演化了？</span></li>\n     <span> </span>\n    </ul>\n    <span> </span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2023\">33:43</a> Clawdbot 最重要的意义</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span>Part 2 个人思考</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2114\">35:14</a> 今年 AI 可能会怎样发展？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2230\">37:10</a> 未来 AI Coding 和人，应该如何分工？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2452\">40:52</a> 创业可能只剩下两个方向</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2750\">45:50</a> 给工程师们的建议</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2901\">48:21</a> AI 时代的组织形式会发生什么变化？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3007\">50:07</a> 如果 1 个 Agent 已经足够强，为什么还需要 100 个 Agents 来协同？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3063\">51:03</a> 一个构想：Skill 的下一步，可能是「Box」</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3282\">54:42</a> 无论是 AI 还是人类，高效协作都需要两个前提</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3560\">59:20</a> 东旭人生的底层驱动力是什么？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3710\">1:01:50</a> 一个野生音乐人是怎么看待 AI 音乐的？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3804\">1:03:24</a> 关于手搓编程的未来畅想</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"3911\">1:05:11</a> 彩蛋：一些 AI 浓度很低、存在主义浓度偏高的问题</span></strong></p>\n  <span></span>\n  <p><span>【</span><strong><span>The gang that made this happen】</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span>制作人：陈皮</span></li>\n   <span> </span>\n   <li><span>剪辑：陈皮</span></li>\n   <span> </span>\n   <li><span>片头：Mondo Bongo - Joe Strummer &amp; The Mescaleros</span></li>\n   <span> </span>\n   <li><span>片尾：Welcome to the Machine - Pink Floyd</span></li>\n   <span></span>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "PingCAP CTO 东旭解析 AI Coding 跨越奇点的技术演进、Agent 自我演化及未来人类价值转型。",
+  "oneSentenceSummary": "PingCAP CTO 东旭解析 AI Coding 跨越奇点的技术演进、Agent 自我演化及未来人类价值转型。",
+  "summary": "本期播客由 42 章经创始人曲凯对谈 PingCAP CTO 黄东旭。东旭从一线实践经验出发，指出 AI 编程已跃过“奇点时刻”，能力从不及格进化到了能自主处理复杂项目的 90 分水平。节目深入探讨了从 Claude Code 到 OpenClaw (Clawdbot) 的技术线索，核心在于长上下文召回率的提升与上下文工程 (Context Engineering) 的成熟。东旭提出了“一切皆 Coding Agent”的预判，并详细阐述了其构思的“Box”概念——通过将技能与隔离环境绑定，实现原子化、无副作用的执行，从而解决多 Agent 协作中的冲突问题。此外，对话涉及了 AI 自我演化的潜力、技术平权带来的社会影响，以及在编程门槛消失的未来，工程师应如何通过审美、人文连接和追求“美”来重塑个人价值。这是一场结合了硬核技术架构洞察与存在主义哲学思考的深度对谈。",
+  "mainPoints": [
+    {
+      "point": "AI Coding 跨越奇点，实现从辅助到自主的飞跃",
+      "explanation": "AI 已能自主设计十万行代码规模的项目架构。东旭认为人类应从代码编写转向需求定义，未来开发将是纯人类艺术创作或全 AI 自动化。"
+    },
+    {
+      "point": "未来技术范式：一切皆 Coding Agent",
+      "explanation": "通用的 Agent 形态正向 Coding Agent 演进。通过编程接口操控现实世界 API，AI 能比传统的 RAG 或简单套壳更高效地解决复杂、长链路任务。"
+    },
+    {
+      "point": "长上下文召回与上下文工程是 Agent 性能的分水岭",
+      "explanation": "模型智能不仅体现在逻辑，更在于长文本下的信息精准检索。只有解决多轮对话中的“大海捞针”问题，Agent 才能在长时间运行中避免幻觉。"
+    },
+    {
+      "point": "提出“Box”隔离环境概念，解决 Agent 协作副作用",
+      "explanation": "将技能与其执行所需的计算环境绑定，确保每个操作原子化且无副作用。这是构建大规模、可组合且具备自我演化能力的 Agent 系统的基础设施。"
+    },
+    {
+      "point": "工程师转型建议：从“代码工人”转向“有趣的人”",
+      "explanation": "随着技术门槛降低，纯编写能力将贬值。人类的竞争力在于审美、对长尾需求的洞察，以及在物理世界中建立真实的情感连接与反馈。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 编程能力已经跨过了奇点时刻，以前是不及格，现在产出的代码比资深工程师团队更优秀且 bug 更少。",
+    "未来开发软件只有两种方式：一种是百分之百人类手写当艺术品，另一种是百分之百交给 AI，人类碰代码反而是在添堵。",
+    "我觉得最重要的事情就是一个系统它能不能有一种涌现的能力和自我演化的能力，瓶颈不再是构建它的人类。",
+    "未来的操作系统形态，内核可能是一个很聪明的编程 Agent，上面挂着一系列技能 (Skills)，最外层是人类交互层。",
+    "我的人生主线是追求美，无论在音乐、编程还是创业中，都力求符合并创造心中的审美标准。"
+  ],
+  "tags": [
+    "AI Coding",
+    "智能代理",
+    "软件工程",
+    "上下文工程",
+    "Agent 框架"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 94,
+  "wordCount": 1121,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_84751f",
+  "sourceName": "42章经",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1770472800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-07 14:00:00"
+}
