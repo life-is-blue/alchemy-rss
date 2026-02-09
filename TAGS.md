@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-09 16:12:17 | [返回首页](/README.md)
+**更新时间**: 2026-02-09 18:21:37 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9093)
+- [AI & 大模型](#ai-llm) (9096)
 - [软件架构](#architecture) (18)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [全网最详细的-Codex-入门教程，手把手教你玩转-Vibe-Coding。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679828&idx=1&sn=6e1c0a935c70c566ee765c02a36327a6) - AI 精选
 - [美团开源-LongCat-Flash-Lite：实现轻量化-MoE-高效推理](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505063&idx=1&sn=bf1d265066def929b2cada8cfad7c414) - AI 精选
 - [StrongDM-的-AI-团队如何在不看代码的情况下构建严肃软件](https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything) - AI 精选
 - [中门对狙！Claude-Opus-4.6-和-GPT-5.3-Codex-同时发布，这下真的-AI-春晚了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6) - AI 精选
@@ -41,9 +42,8 @@
 - [Anthropic-再发长文：首次详细揭秘-Agent-的评估全过程「Claude-code-开发过程的经验总结」](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247511624&idx=1&sn=299ca5493819f4d06dd35577f7451591) - AI 精选
 - [多模态检索新标杆，Qwen3-VL-Embedding&amp;Reranker-开源！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499340&idx=1&sn=0e79bd1af2681f8fd865fc194c9acfa0) - AI 精选
 - [AI-时代是谁的黄金时代？｜和张咋啦聊：文科生、积极行动、爆款的规律、普通人也能赢](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649103555&idx=1&sn=3843ac9c1fe9c9506c9fa929511ed325) - AI 精选
-- [暴走-2-万步逛遍-CES2026：9-大方向最火，中企霸场，机器人全明星大乱斗](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652795108&idx=1&sn=e8fdfc327478bff9f2e7e68a2e49742a) - AI 精选
 
-- [查看全部 9093 篇...](/details/tags/ai-llm.md)
+- [查看全部 9096 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
