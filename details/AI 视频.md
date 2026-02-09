@@ -1,15 +1,21 @@
-> **更新时间**: 2026-02-05 20:07:47 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-09 14:21:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Claude-Code-智能体团队（完整教程）：Claude-Code-最强功能现已上线！](https://www.youtube.com/watch?v=zm-BBZIAJ0c)
+
+2026-02-07 09:15:08 | 标签: Claude Code, 多智能体系统, AI 编程, 软件工程, 智能体工作流
+
+> 本文提供了 Claude Code 最新实验性功能“智能体团队”的全面指南。该功能标志着从简单的层级化子智能体向去中心化团队模式的转变，在“团队负责人”的协调下，多个 Claude 实例可以直接相互通信。每个智能体都在其独立的隔离上下文窗口中运行，这提高了推理效率，并防止了因上下文过载而导致的性能下降。教程详细介绍了使用环境变量的配置过程，解释了点对点消息传递的架构优势，并演示了通过 Tmux 模式进行的视觉监控。关键应用场景包括多视角代码审查、并行功能开发和多假设调试。在强调显著生产力提升的同时，作者也提到了关键的权衡，包括 Token 成本增加、某些模式下缺乏会话恢复，以及当前智能体委派逻...
+
+
+
 ### [“人人皆可开发”：v0-如何将-Git-工作流引入氛围编程-|-Guillermo-Rauch-Vercel-CEO](https://www.youtube.com/watch?v=Yb9IyTOh0xg)
 
-2026-02-04 13:01:11 | 标签: v0, Vercel, 氛围编程, Git 工作流, AI 智能体
-
-> 在这期播客中，Guillermo Rauch 讨论了 v0 从 UI 原型工具到全面 AI 驱动开发平台的演进。他强调，虽然生成初始代码很容易，但真正的挑战在于专业环境下的迭代和安全部署。v0 通过将 Git 分支、PR 预览和自动描述视为一等公民来解决这一问题。Rauch 分享了 Vercel 的内部数据，显示每天通过 v0 合并的 PR 激增至 3，200 个，这说明非工程师也能直接为生产环境贡献代码。讨论还涉及了用于智能体扩展的 skills.sh、内部 AI 智能体（如用于数据分析的 DZero）的使用，以及“人人皆可开发”的愿景——通过让创意在没有传统工程瓶颈的情况下变为现实，从而减...
+2026-02-04 13:01:11
 
 
 
@@ -229,7 +235,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -241,7 +247,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
