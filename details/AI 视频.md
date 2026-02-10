@@ -1,15 +1,21 @@
-> **更新时间**: 2026-02-09 14:21:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-10 08:14:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [智能体可观测性赋能智能体评估](https://www.youtube.com/watch?v=reISMhbZ2XE)
+
+2026-02-09 20:44:02 | 标签: 智能体可观测性, LLM 评估, LangChain, LangSmith, AI 智能体
+
+> Harrison Chase (LangChain CEO) 和 Vivec (Deep Agents 负责人) 讨论了从确定性软件到非确定性 AI 智能体的根本转变。他们认为，由于智能体逻辑是在运行时产生的，传统的代码调试已不足够，这使得可观测性追踪 (Traces) 成为了新的“事实来源”。会议定义了可观测性的分层框架——Runs、Traces 和 Threads，并解释了这些元素如何支持离线、在线和即时评估。实践见解包括利用生产环境追踪构建测试集、实施中间件钩子以防止“异常”智能体行为，以及利用自动化分析对复杂编程任务中的失败模式进行分类。
+
+
+
 ### [Claude-Code-智能体团队（完整教程）：Claude-Code-最强功能现已上线！](https://www.youtube.com/watch?v=zm-BBZIAJ0c)
 
-2026-02-07 09:15:08 | 标签: Claude Code, 多智能体系统, AI 编程, 软件工程, 智能体工作流
-
-> 本文提供了 Claude Code 最新实验性功能“智能体团队”的全面指南。该功能标志着从简单的层级化子智能体向去中心化团队模式的转变，在“团队负责人”的协调下，多个 Claude 实例可以直接相互通信。每个智能体都在其独立的隔离上下文窗口中运行，这提高了推理效率，并防止了因上下文过载而导致的性能下降。教程详细介绍了使用环境变量的配置过程，解释了点对点消息传递的架构优势，并演示了通过 Tmux 模式进行的视觉监控。关键应用场景包括多视角代码审查、并行功能开发和多假设调试。在强调显著生产力提升的同时，作者也提到了关键的权衡，包括 Token 成本增加、某些模式下缺乏会话恢复，以及当前智能体委派逻...
+2026-02-07 09:15:08
 
 
 
@@ -235,7 +241,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -247,7 +253,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

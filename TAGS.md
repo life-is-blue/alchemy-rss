@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-10 06:09:49 | [返回首页](/README.md)
+**更新时间**: 2026-02-10 08:14:09 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9110)
+- [AI & 大模型](#ai-llm) (9114)
 - [软件架构](#architecture) (18)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
@@ -43,7 +43,7 @@
 - [多模态检索新标杆，Qwen3-VL-Embedding&amp;Reranker-开源！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499340&idx=1&sn=0e79bd1af2681f8fd865fc194c9acfa0) - AI 精选
 - [AI-时代是谁的黄金时代？｜和张咋啦聊：文科生、积极行动、爆款的规律、普通人也能赢](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649103555&idx=1&sn=3843ac9c1fe9c9506c9fa929511ed325) - AI 精选
 
-- [查看全部 9110 篇...](/details/tags/ai-llm.md)
+- [查看全部 9114 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
