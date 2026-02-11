@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-11 22:22:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-12 00:20:54 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -28847,11 +28847,11 @@
 
 
 
-### [SubAgent-与-Skills：AI-Agent-的两种扩展方式](https://baoyu.io/blog/2026/01/19/skills-vs-subagent)
+### [Skills-究竟是短期红利还是长期壁垒？](https://baoyu.io/blog/skills-short-term-vs-long-term-advantage)
 
-2026-01-19T00:00:00.000Z
+2026-01-18T08:56:39.000Z
 
-> Skills 是应用程序，装在主系统里按需调用；SubAgent 是虚拟机，独立运行完再把结果交回来。通过一个真实的"给文章配图"案例，解释什么时候用 Skills，什么时候用 SubAgent。
+> 随着基础模型继续进化，Skills 是否会逐渐被更强的自主规划取代？作为创业者现在去布局 Skills，究竟是短期红利还是长期壁垒？
 
 
 
