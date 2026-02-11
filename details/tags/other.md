@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-11 11:00:13 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-11 12:42:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3361,25 +3361,19 @@
 
 ### [达摩院开源-RynnBrain：首个支持移动操作的具身大脑基础模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505090&idx=1&sn=b68695b1c7e0b0039cf8a4888d35b391)
 
-2026-02-10 13:37:00 | 标签: 具身智能, 基础模型, MoE, 强化学习, 机器人导航
-
-> 本文详细介绍了达摩院最新开源的具身基础模型 RynnBrain。该模型基于 Qwen3-VL 架构，采用自研 RynnScale 架构优化训练效率，并推出了高性能的 MoE 版本。其核心突破在于引入了时空记忆能力和“文本-空间交织”的推理策略，通过将离散坐标 Token 与文本描述融合，有效缓解了具身智能中的物理幻觉问题。文章涵盖了从 2000 万规模的预训练数据构建，到利用 GRPO 强化学习和 Dagger 算法进行的后训练优化，展示了该模型在导航、操作规划等 16 项基准测试中超越 Gemini Robotics 等模型的 SOTA 表现，并宣布全系列模型与代码开源。
+2026-02-10 13:37:00
 
 
 
 ### [硅谷豪赌算力烧到停电，中国团队反向出击！这一刀，直接砍碎-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652673881&idx=1&sn=7722da402c7042499703aef31e80bf48)
 
-2026-02-10 05:00:00 | 标签: Yuan 3.0 Flash, MoE 架构, RIRM, RAPO, 推理效率
-
-> 本文介绍了 YuanLab.ai 团队推出的 Yuan 3.0 Flash 模型，该模型针对当前推理大模型普遍存在的“过度思考”（Overthinking）顽疾进行了深度优化。通过采用 40B 总参数的 MoE 架构（仅激活 3.7B），并引入反思抑制奖励机制（RIRM）与反思感知自适应策略优化（RAPO），模型能够精准识别正确答案节点并抑制冗余推理。实验显示，该模型在 MATH-500 等基准测试中不仅提升了准确率，还显著降低了约 75% 的推理 token 消耗，为企业级 AI 应用提供了一种高效率、低成本的实用方案。
+2026-02-10 05:00:00
 
 
 
 ### [2026-开年关键词：Self-Distillation，大模型真正走向「持续学习」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651016237&idx=2&sn=a40e285b0b27d5abd99ff5f4ed1ae12d)
 
-2026-02-10 03:44:00 | 标签: 自蒸馏, 持续学习, 灾难性遗忘, 强化学习, 推理能力
-
-> 文章聚焦于 2026 年初大模型研究的重大转向，即从依赖外部强教师转向利用“自蒸馏”技术实现内生增长。核心内容围绕 MIT、ETH Zurich、Meta 等机构的三项研究展开：首先是 SDFT 方法，通过上下文学习构造临时教师分布，解决了持续学习中的灾难性遗忘；其次是 SDPO 框架，利用环境提供的“富反馈”信息，将稀疏的二值奖励转化为 Token 级的密集监督信号，大幅提升强化学习效率；最后是 OPSD 框架，通过在模型内部构建“信息不对称”，利用特权信息引导学生策略学习深层推理逻辑。这些研究共同预示着大模型正走向自驱动的持续进化阶段。
+2026-02-10 03:44:00
 
 
 
@@ -11065,9 +11059,7 @@
 
 ### [Jakarta-EE-12-里程碑-2：数据时代的到来以及一致性与配置](https://www.infoq.com/articles/jakartaee-12-milestone-2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-02-10 09:00:00 | 标签: Jakarta EE 12, Java 21, Jakarta Query, Jakarta Data, NoSQL
-
-> 本文详细介绍了计划于 2026 年初发布的 Jakarta EE 12 第二个里程碑的技术概览。该版本的发布主题为“稳健且灵活”，标志着作者所称的企业级 Java “数据时代”的到来。关键进展包括全新的 Jakarta Query 规范，它将 JPQL 和 JDQL 统一为单一语言，以在关系型和 NoSQL 数据库之间提供一致性。Jakarta Data 1.1 和 Jakarta NoSQL 1.1 进行了更新以集成这一新的查询基础，引入了动态存储库查询和有状态存储库等特性。此外，文章强调了 Jakarta Agentic AI 规范的创建，旨在为构建和运行 AI 智能体提供厂商中立的 AP...
+2026-02-10 09:00:00
 
 
 
@@ -28831,11 +28823,11 @@
 
 
 
-### [SubAgent-与-Skills：AI-Agent-的两种扩展方式](https://baoyu.io/blog/2026/01/19/skills-vs-subagent)
+### [Skills-究竟是短期红利还是长期壁垒？](https://baoyu.io/blog/skills-short-term-vs-long-term-advantage)
 
-2026-01-19T00:00:00.000Z
+2026-01-18T08:56:39.000Z
 
-> Skills 是应用程序，装在主系统里按需调用；SubAgent 是虚拟机，独立运行完再把结果交回来。通过一个真实的"给文章配图"案例，解释什么时候用 Skills，什么时候用 SubAgent。
+> 随着基础模型继续进化，Skills 是否会逐渐被更强的自主规划取代？作为创业者现在去布局 Skills，究竟是短期红利还是长期壁垒？
 
 
 
