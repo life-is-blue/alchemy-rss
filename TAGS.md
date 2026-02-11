@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-11 14:21:30 | [返回首页](/README.md)
+**更新时间**: 2026-02-11 16:11:59 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9140)
-- [软件架构](#architecture) (18)
+- [AI & 大模型](#ai-llm) (9145)
+- [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4804)
+- [其他](#other) (4808)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [中国也有了世界第一的模型，他的名字，叫-Seedance-2.0。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a) - AI 精选
+- [介绍-Showboat-和-Rodney：让智能体能够演示其构建的成果](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything) - AI 精选
+- [智能体连接沙箱的两种模式](https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/) - AI 精选
 - [全网最详细的-Codex-入门教程，手把手教你玩转-Vibe-Coding。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679828&idx=1&sn=6e1c0a935c70c566ee765c02a36327a6) - AI 精选
 - [美团开源-LongCat-Flash-Lite：实现轻量化-MoE-高效推理](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505063&idx=1&sn=bf1d265066def929b2cada8cfad7c414) - AI 精选
 - [StrongDM-的-AI-团队如何在不看代码的情况下构建严肃软件](https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything) - AI 精选
@@ -39,11 +42,8 @@
 - [如何为-AI-智能体编写高质量的规格说明书-Spec](https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents) - AI 精选
 - [选择正确的多智能体架构](https://www.blog.langchain.com/choosing-the-right-multi-agent-architecture/) - AI 精选
 - [姚顺雨对着唐杰杨植麟林俊旸贴大脸开讲！基模四杰中关村论英雄](https://www.qbitai.com/2026/01/368917.html) - AI 精选
-- [Anthropic-再发长文：首次详细揭秘-Agent-的评估全过程「Claude-code-开发过程的经验总结」](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247511624&idx=1&sn=299ca5493819f4d06dd35577f7451591) - AI 精选
-- [多模态检索新标杆，Qwen3-VL-Embedding&amp;Reranker-开源！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499340&idx=1&sn=0e79bd1af2681f8fd865fc194c9acfa0) - AI 精选
-- [AI-时代是谁的黄金时代？｜和张咋啦聊：文科生、积极行动、爆款的规律、普通人也能赢](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649103555&idx=1&sn=3843ac9c1fe9c9506c9fa929511ed325) - AI 精选
 
-- [查看全部 9140 篇...](/details/tags/ai-llm.md)
+- [查看全部 9145 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -55,6 +55,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [LinkedIn-如何为数千个服务构建下一代服务发现系统](https://blog.bytebytego.com/p/how-linkedin-built-a-next-gen-service) - 编程 更多
 - [初创公司软件架构——你永远无法真正推倒重来：对话-David-Gudeman](https://www.infoq.com/podcasts/startup-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [EP196：云负载均衡器速查表](https://blog.bytebytego.com/p/ep196-cloud-load-balancer-cheat-sheet) - 编程 更多
 - [团队授权：分散化的架构决策](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651263429&idx=3&sn=2a91b4dea60a148bd63d41135b9b5785) - 编程 更多
@@ -184,6 +185,6 @@
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 - [分析了-1.8-亿个岗位后，我发现应届生们好像被-AI-堵在了门外。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647676564&idx=1&sn=1a36883431908c75c0634c316db9297f) - AI 精选
 
-- [查看全部 4804 篇...](/details/tags/other.md)
+- [查看全部 4808 篇...](/details/tags/other.md)
 
 
