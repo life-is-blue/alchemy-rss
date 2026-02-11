@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-11 16:11:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-11 18:16:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -32,9 +32,7 @@
 
 ### [LinkedIn-如何为数千个服务构建下一代服务发现系统](https://blog.bytebytego.com/p/how-linkedin-built-a-next-gen-service)
 
-2026-02-10 16:30:21 | 标签: Service Discovery, System Architecture, Zookeeper, Kafka, xDS Protocol
-
-> 本文深入探讨了 LinkedIn 的“下一代服务发现”（NGSD）。文章解释了为什么之前基于 Zookeeper 的架构因扩展性瓶颈（如 Zookeeper 强一致性模型导致的“读取风暴”和会话超时）而达到极限。新架构将写入路径（使用 Kafka 处理高吞吐量事件）与读取路径（使用基于 Go 的 Observer 组件）解耦。通过采用 xDS 协议和 gRPC 流，LinkedIn 转向了优先考虑可用性的最终一致性模型。文章还详细介绍了复杂的“双模式”迁移策略（双读/写）和自动化依赖分析，这使得 LinkedIn 能够在不停机的情况下迁移数千个微服务，同时将中值延迟提高了 10 倍。
+2026-02-10 16:30:21
 
 
 
