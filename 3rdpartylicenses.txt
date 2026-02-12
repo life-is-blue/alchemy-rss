@@ -301,6 +301,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------------------------------------------------------------------
+Package: is-network-error
+License: "MIT"
+
+
+--------------------------------------------------------------------------------
+Package: p-retry
+License: "MIT"
+
+
+--------------------------------------------------------------------------------
 Package: @google/genai
 License: "Apache-2.0"
 
