@@ -1,15 +1,37 @@
-> **更新时间**: 2026-02-08 11:00:22 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-13 08:11:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Google-DeepMind-发布-Gemini-3-Deep-Think：刷新多项基准测试纪录](https://x.com/demishassabis/status/2022053593910821164)
+
+2026-02-12 21:01:59 | 标签: Gemini 3, DeepMind, ARC-AGI-2, 推理能力, LLM
+
+> Demis Hassabis 宣布发布 Gemini 3 Deep Think，这是专注于严谨推理的一次重大模型升级。该模型取得了突破性成绩：在 ARC-AGI-2 基准测试中达到 84.6%，在“人类最后考试” (Humanity’s Last Exam) 零样本测试中达到 48.4%，并在 Codeforces 上获得 3455 的 Elo 评分，使其成为数学、科学和复杂推理领域的顶级模型。
+
+
+
+### [OpenAI-发布-GPT-5.3-Codex-Spark-研究预览版](https://x.com/sama/status/2022011797524582726)
+
+2026-02-12 18:15:54 | 标签: GPT-5.3, Codex-Spark, OpenAI, 推理速度, LLM
+
+> 萨姆·奥特曼宣布了 GPT-5.3-Codex-Spark 的研究预览版，这是专门为 ChatGPT Pro 用户打造的新模型变体。此次发布的核心亮点是其极致的性能表现，能够每秒生成超过 1000 tokens。在此之前，他曾预告将为 Codex 用户带来“特别的惊喜”。尽管奥特曼承认初期版本存在局限性，但他强调了该模型的高速特性，并承诺将对预览版进行快速的迭代改进。
+
+
+
+### [极简主义-GPT-实现：仅需-243-行纯-Python-代码](https://x.com/karpathy/status/2021694437152157847)
+
+2026-02-11 21:14:49 | 标签: GPT, Python, LLM 实现, 机器学习教育, Andrej Karpathy
+
+> Andrej Karpathy 推出了一项全新的教育类“艺术项目”，仅使用 243 行不含任何外部依赖的纯 Python 代码，就实现了完整的 GPT 算法栈（包括训练和推理）。通过剥离所有侧重效率的优化，他展示了大型语言模型（LLM）最核心的数学与算法本质，为从最底层理解 LLM 运作机制提供了终极资源。
+
+
+
 ### [Anthropic-发布提速-2.5-倍的-Claude-Opus-4.6](https://x.com/claudeai/status/2020207322124132504)
 
-2026-02-07 18:45:33 | 标签: Claude Opus 4.6, Anthropic, AI 性能, LLM, Claude Code
-
-> Anthropic 推出了一款经过显著优化的 Claude Opus 4.6 版本。据报道，这一新迭代版本的运行速度是之前版本的 2.5 倍。目前它正作为一项早期实验推出，开发者可以通过 Claude API 和 Claude Code 命令行工具（CLI）进行访问，这标志着其旗舰模型系列在性能上取得了重大突破。
+2026-02-07 18:45:33
 
 
 
