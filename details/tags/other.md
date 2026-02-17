@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-18 04:08:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-18 06:05:36 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -28847,11 +28847,11 @@
 
 
 
-### [栏目对话和访谈：Sebastian-Raschka-和-Nathan-Lambert-在-Lex-Fridman-播客深度解读-AI-现状：中美竞争、模型对比、规模定律、AGI-时间线。](https://baoyu.io/blog/state-of-ai-in-2026-lex-fridman-podcast)
+### [【栏目对话和访谈】ClawdBot-创始人-Peter：AI-是杠杆，不是替代品；编程语言不重要了，重要的是我的工程思维](https://baoyu.io/blog/2026/02/01/peter-steinberger-interview)
 
 2026-02-01T00:00:00.000Z
 
-> Sebastian Raschka 和 Nathan Lambert 在 Lex Fridman 播客深度解读 AI 现状：中美竞争、模型对比、规模定律、AGI 时间线。
+> ClawdBot 创始人 Peter Steinberger 分享 AI 编程实践：为什么复杂智能体编排是“垃圾生成器”，为什么让 AI 跑 24 小时是虚荣指标，以及为什么编程语言已经不重要了。
 
 
 
