@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-18 16:10:36 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-18 18:14:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -28847,11 +28847,11 @@
 
 
 
-### [How-I-Used-Codex-to-\"Recover\"-Lost-Source-Code-in-5-Days](https://baoyu.io/blog/2026/01/31/codex-recover-source-code)
+### [品味-+-工程思维：AI-时代最难被替代的两件事](https://baoyu.io/blog/2026/02/03/taste-engineering-thinking)
 
-2026-02-01T00:00:00.000Z
+2026-02-03T00:00:00.000Z
 
-> Lost your source code years ago? With Codex, you might be able to get it back. This is the story of reverse-engineering a compiled Electron app back into working TypeScript—and the methodology that ma...
+> AI 消灭的是语法层面的痛苦，保留的是工程思维和品味。语法可以交给 AI，但你必须练出把需求想清楚、把系统设计清楚、把结果验证清楚的能力。
 
 
 
