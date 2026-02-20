@@ -1,0 +1,54 @@
+{
+  "id": "RAW_77f3363",
+  "title": "#427.对话 Claude Code 负责人：从工程师到“开发者”的范式转移",
+  "url": "https://www.xiaoyuzhoufm.com/episode/6997386f66e2c30377d209aa",
+  "date": "2026-02-19 16:24:43",
+  "author": "跨国串门儿计划",
+  "siteName": "跨国串门儿计划",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>📝 本期播客简介</span></p>\n  <span></span>\n  <p><span>本期我们克隆了：硅谷顶尖创投播客《Lenny's Podcast》</span><a href=\"https://www.listennotes.com/podcasts/lennys-podcast/head-of-claude-code-what-Sxb8JKV4qX6/\" data-url=\"https://www.listennotes.com/podcasts/lennys-podcast/head-of-claude-code-what-Sxb8JKV4qX6/\"><span>Head of Claude Code: What happens after coding is solved | Boris Cherny</span></a></p>\n  <span></span>\n  <p><span>本期嘉宾 Boris Cherny 的观点可能会让所有程序员感到震撼。作为 Anthropic 的 Claude Code 负责人，他透露自己从去年十一月起就没亲手写过一行代码，却能每天提交多达 30 个 PR。在这期节目中，Boris 深入探讨了 AI 如何在短短一年内“吞噬”软件开发行业——目前 GitHub 上 4% 的 commit 已由 Claude 完成。他将分享 Claude Code 从一个简单的终端工具成长为行业巨头的幕后故事，揭示为何“软件工程师”这一头衔即将消失，并被“开发者（Builder）”取代。无论你是担心失业的产品经理，还是寻求效率突破的工程师，这期关于“指数级增长”和“潜在需求”的对话都将重塑你对 AI 时代的认知。</span></p>\n  <span></span>\n  <p><span>👨‍⚕️ 本期嘉宾</span></p>\n  <span></span>\n  <p><span>Boris Cherny，Anthropic 的 Claude Code 负责人。他曾是 Meta 的资深工程师，负责全公司的代码质量与效率。他也是《Programming TypeScript》一书的作者。在 Anthropic，他领导团队开发了改变软件工程范式的 Claude Code 以及新一代 AI 智能体 Cowork。</span></p>\n  <span></span>\n  <p><span>⏱️ 时间戳</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"0\">00:00</a> 开场 &amp; 嘉宾介绍</span></p>\n  <span></span>\n  <p><span>职业生涯的戏剧性转折</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"125\">02:05</a> 闪离 Cursor 回归 Anthropic：使命感与“安全性”的召唤</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"213\">03:33</a> 震撼的数据：AI 已贡献全球 4% 的代码提交量</span></p>\n  <span></span>\n  <p><span>Claude Code 的进化之路</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"346\">05:46</a> 诞生纪实：从一个无人问津的终端“小玩意”到公司内外的爆款</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"441\">07:21</a> 为什么坚持终端界面？资源匮乏如何激发产品创新</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"555\">09:15</a> 激进预测：2025 年底，我们可能不再需要 IDE</span></p>\n  <span></span>\n  <p><span>AI 时代的极致效率</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"694\">11:34</a> 创始人的日常：一行代码不写，每天提交 30 个 PR</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"762\">12:42</a> 下一个前沿：当 AI 开始像同事一样主动提出产品建议</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"906\">15:06</a> 200% 的生产力提升：为什么“资源少给点”反而更好</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1124\">18:44</a> 编程的本质：从“手艺活”的美感回归到“解决问题”的手段</span></p>\n  <span></span>\n  <p><span>范式转移：从工程师到“开发者”</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1283\">21:23</a> 印刷机隐喻：AI 时代的识字率普及与创造力解放</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1465\">24:25</a> 角色重叠：为什么每个人都将成为产品经理和开发者</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1701\">28:21</a> 职业建议：在 AI 时代，跨学科的“全才”比专才更吃香</span></p>\n  <span></span>\n  <p><span>产品与技术心法</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1862\">31:02</a> “潜在需求”原则：如何通过用户的“误用”发现下一个爆款</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2066\">34:26</a> 让模型自己带路：不要把 AI 关进死板的工作流盒子里</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2108\">35:08</a> Cowork 幕后：用 Claude Code 在 10 天内构建出千万级应用</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2492\">41:32</a> 惨痛的教训：永远为“六个月后的模型”做开发</span></p>\n  <span></span>\n  <p><span>实用技巧与 AGI 展望</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2697\">44:57</a> 进阶指南：为什么用最贵的模型（Opus 4.6）反而更省钱</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2801\">46:41</a> 终极梦想：AGI 实现后，我想去日本农村全职做味噌</span></p>\n  <span></span>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2911\">48:31</a> 闪电问答：改变思维的技术书与科幻推荐</span></p>\n  <span></span>\n  <p><span>🌟 精彩内容</span></p>\n  <span></span>\n  <p><span>💡 100% AI 驱动的工作流</span></p>\n  <span></span>\n  <p><span>Boris 分享了他极端的效率实验：从去年底开始，他所有的代码工作都交给了 Claude Code。他不再纠结于语法和细节，而是专注于架构和意图。这种方式让他即便在管理团队的同时，依然能保持远超常人的代码产出。</span></p>\n  <span></span>\n  <p><span>“我现在的编程体验比以前任何时候都好，因为我再也不用去处理那些琐碎的细节了。”</span></p>\n  <span></span>\n  <p><span>🛠️ “潜在需求”与产品直觉</span></p>\n  <span></span>\n  <p><span>Boris 提出了一个深刻的产品观点：观察用户如何“滥用”你的产品。当他看到数据科学家费劲地在终端里用编程工具做 SQL 分析时，他意识到非技术人员对 AI 智能体有着巨大的渴望，这直接促成了桌面端应用 Cowork 的诞生。</span></p>\n  <span></span>\n  <p><span>“当你看到用户这样‘滥用’产品来解决问题时，这就是一个极强的信号。”</span></p>\n  <span></span>\n  <p><span>🚀 为“六个月后的模型”开发</span></p>\n  <span></span>\n  <p><span>很多开发者试图通过复杂的逻辑（脚手架）来弥补当前模型的不足。Boris 认为这是徒劳的。他主张押注通用模型的进化速度，宁愿忍受短期的不完美，也要确保产品形态能完美适配下一代更强的模型。</span></p>\n  <span></span>\n  <p><span>“如果你是为六个月后的模型做准备，等新模型一发布，你的产品会瞬间爆发。”</span></p>\n  <span></span>\n  <p><span>📚 印刷机时刻：编程的民主化</span></p>\n  <span></span>\n  <p><span>Boris 将 AI 编程比作古腾堡的印刷机。正如印刷机让识字不再是少数僧侣的特权，AI 也将让编程成为每个人的基本技能。他认为这虽然会对现有职业产生冲击，但最终会像文艺复兴一样，释放人类整体的创造潜能。</span></p>\n  <span></span>\n  <p><span>“真正的乐趣是决定要做什么，去构思、去思考大系统和未来。”</span></p>\n  <span></span>\n  <p><span>🍱 工程师的“长周期”思考</span></p>\n  <span></span>\n  <p><span>有趣的是，这位处于 AI 浪潮巅峰的工程师，在生活中却痴迷于极慢的“味噌制作”。他认为这种需要数年发酵的过程能帮他平衡旧金山的极速节奏，学会以更长的时间维度去思考技术与社会的演进。</span></p>\n  <span></span>\n  <p><span>“味噌最有趣的地方在于它让你学会以‘长周期’来思考，这跟搞工程完全不同。”</span></p>\n  <span></span>\n  <p><span>🌐 播客信息补充</span></p>\n  <span></span>\n  <p><span>翻译克隆自：Lenny's Podcast</span></p>\n  <span></span>\n  <p><span>本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的</span></p>\n  <span></span>\n  <p><span>使用 AI 进行翻译，因此可能会有一些地方不通顺；</span></p>\n  <span></span>\n  <p><span>如果有后续想要听中文版的其他外文播客，也欢迎联系微信：iEvenight</span></p>\n </body>\n</html>",
+  "aiSummary": "对话 Anthropic 负责人，探讨了 AI 编程工具 Claude Code 如何重塑软件工程，预示了从“程序员”向“开发者”的范式转移。",
+  "oneSentenceSummary": "对话 Anthropic 负责人，探讨了 AI 编程工具 Claude Code 如何重塑软件工程，预示了从“程序员”向“开发者”的范式转移。",
+  "summary": "本期播客深度对话 Anthropic 的 Claude Code 负责人 Boris Cherny。节目聚焦于 AI 在软件开发领域的爆发式增长——目前全球 4% 的代码提交已由 Claude 完成。Boris 分享了他个人“百分百 AI 驱动”的工作流：自 2023 年 11 月起不再亲手改写代码，每日通过 AI 提交多达 30 个 PR，生产力提升 200%。对话探讨了 Claude Code 从简单的终端工具进化为行业标杆的过程，并提出了激进的预测：2025 年底开发者可能不再需要传统 IDE。此外，Boris 详细阐述了“潜在需求”驱动的产品创新原则，以及 Anthropic 在 AI 安全领域的三层防御机制：机械可解释性、模拟评估与真实世界监测。最后，他将 AI 编程比作“印刷机时刻”，强调未来每个人都将成为具备跨学科能力的“开发者（Builder）”，并建议从业者通过拥抱通用模型和“为六个月后的模型做开发”来保持长期竞争力。",
+  "mainPoints": [
+    {
+      "point": "软件工程正经历从“底层编码”向“高阶构思”的范式转移",
+      "explanation": "随着 AI 解决编码底层细节，工程师将从琐碎语法中解放，转而关注系统架构、产品意图与用户需求，从传统“程序员”进化为全能的“开发者（Builder）”。"
+    },
+    {
+      "point": "产品创新应遵循“潜在需求”原则，通过观察用户“误用”发掘新功能",
+      "explanation": "观察用户如何在极端环境下魔改工具是识别爆款的强信号。Claude Code 桌面端 Cowork 的诞生正是基于数据科学家在终端里进行非技术性数据分析的观察。"
+    },
+    {
+      "point": "开发者应采取“为六个月后的模型做开发”的前瞻性策略",
+      "explanation": "押注通用模型的演进速度，避免构建复杂的临时脚手架。当下一代更强模型发布时，适配良好且预留能力空间的产品将通过模型能力的自动增强迎来爆发式增长。"
+    }
+  ],
+  "keyQuotes": [
+    "我现在的编程体验比以前任何时候都好，因为我再也不用去处理那些琐碎的细节了。",
+    "如果你是为六个月后的模型做准备，等新模型一发布，你的产品会瞬间爆发。",
+    "软件工程师这个头衔会慢慢消失，取而代之的是开发者 Builder。",
+    "创新这东西确实没法强求，你得给人们空间或者说一种安全感，让他们觉得失败也没关系。"
+  ],
+  "tags": [
+    "AI编程",
+    "Claude Code",
+    "软件工程范式",
+    "Anthropic",
+    "智能体(Agent)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 93,
+  "wordCount": 1741,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_938310",
+  "sourceName": "跨国串门儿计划",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1771518283000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-19 16:24:43"
+}

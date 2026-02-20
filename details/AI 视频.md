@@ -1,15 +1,21 @@
-> **更新时间**: 2026-02-10 08:14:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-20 08:09:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Build-Hour：Prompt-Caching](https://www.youtube.com/watch?v=tECAkJAI_Vk)
+
+2026-02-18 21:25:25 | 标签: Prompt Caching, LLM 优化, OpenAI API, KV Cache, Context Engineering
+
+> 本文总结了 OpenAI 的 “Build Hour” 专题会议，重点讨论了 Prompt Caching。该功能旨在通过重用计算资源来优化 LLM 性能。它解释了缓存自注意力层中键值（KV）张量的底层机制，从而跳过相同前缀的冗余计算。关键技术细节包括 1024 token 的激活阈值、前缀一致性的重要性，以及引入 “Prompt Cache Keys” 以确保请求被路由到同一个 GPU 引擎，从而提高命中率。会议还涵盖了高级策略，例如使用 Responses API 为推理模型（o1/o3）保留思维链（CoT）token，通过 Realtime API 中的 “retention_ratio...
+
+
+
 ### [智能体可观测性赋能智能体评估](https://www.youtube.com/watch?v=reISMhbZ2XE)
 
-2026-02-09 20:44:02 | 标签: 智能体可观测性, LLM 评估, LangChain, LangSmith, AI 智能体
-
-> Harrison Chase (LangChain CEO) 和 Vivec (Deep Agents 负责人) 讨论了从确定性软件到非确定性 AI 智能体的根本转变。他们认为，由于智能体逻辑是在运行时产生的，传统的代码调试已不足够，这使得可观测性追踪 (Traces) 成为了新的“事实来源”。会议定义了可观测性的分层框架——Runs、Traces 和 Threads，并解释了这些元素如何支持离线、在线和即时评估。实践见解包括利用生产环境追踪构建测试集、实施中间件钩子以防止“异常”智能体行为，以及利用自动化分析对复杂编程任务中的失败模式进行分类。
+2026-02-09 20:44:02
 
 
 
@@ -241,7 +247,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -253,7 +259,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-20 06:06:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-20 08:09:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -52968,6 +52968,14 @@
 
 
 
+### [Build-Hour：Prompt-Caching](https://www.youtube.com/watch?v=tECAkJAI_Vk)
+
+2026-02-18 21:25:25 | 标签: Prompt Caching, LLM 优化, OpenAI API, KV Cache, Context Engineering
+
+> 本文总结了 OpenAI 的 “Build Hour” 专题会议，重点讨论了 Prompt Caching。该功能旨在通过重用计算资源来优化 LLM 性能。它解释了缓存自注意力层中键值（KV）张量的底层机制，从而跳过相同前缀的冗余计算。关键技术细节包括 1024 token 的激活阈值、前缀一致性的重要性，以及引入 “Prompt Cache Keys” 以确保请求被路由到同一个 GPU 引擎，从而提高命中率。会议还涵盖了高级策略，例如使用 Responses API 为推理模型（o1/o3）保留思维链（CoT）token，通过 Realtime API 中的 “retention_ratio...
+
+
+
 ### [智能体可观测性赋能智能体评估](https://www.youtube.com/watch?v=reISMhbZ2XE)
 
 2026-02-09 20:44:02
@@ -53190,7 +53198,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -53202,7 +53210,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -53625,6 +53633,22 @@
 ### [Vol.52-74-页-PPT-解读-Deepseek-与-AI-Agent](https://www.xiaoyuzhoufm.com/episode/67bad726606e5c5940403ea5)
 
 2025-02-24 16:00:00
+
+
+
+### [#427.对话-Claude-Code-负责人：从工程师到“开发者”的范式转移](https://www.xiaoyuzhoufm.com/episode/6997386f66e2c30377d209aa)
+
+2026-02-19 16:24:43 | 标签: AI编程, Claude Code, 软件工程范式, Anthropic, 智能体(Agent)
+
+> 本期播客深度对话 Anthropic 的 Claude Code 负责人 Boris Cherny。节目聚焦于 AI 在软件开发领域的爆发式增长——目前全球 4% 的代码提交已由 Claude 完成。Boris 分享了他个人“百分百 AI 驱动”的工作流：自 2023 年 11 月起不再亲手改写代码，每日通过 AI 提交多达 30 个 PR，生产力提升 200%。对话探讨了 Claude Code 从简单的终端工具进化为行业标杆的过程，并提出了激进的预测：2025 年底开发者可能不再需要传统 IDE。此外，Boris 详细阐述了“潜在需求”驱动的产品创新原则，以及 Anthropic 在 AI...
+
+
+
+### [261.AI-时代的社交，越得过微信吗？](https://www.xiaoyuzhoufm.com/episode/6992beebde29766da9ba802a)
+
+2026-02-16 07:06:33 | 标签: AI 社交, 智能体, A2A, AI 分身, 关系链
+
+> 本期播客由「乱翻书」主理人潘乱对话陶芳波、ENYA 和 Mark，全方位剖析了 AI 时代社交产品的底层逻辑。嘉宾们首先明确了 AI 社交不只是在聊天框加个助手，而是通过 AI 代理实现个体的数字化身。讨论区分了 AI 陪伴（A2H）、社交增效和纯 AI 社交（A2A）三种路径，并指出 AI 带来的三个关键新维度：Context（上下文）对齐、主体性（主动行动）和并行性。针对“AI 社交能否超越微信”这一核心命题，嘉宾们认为微信的护城河在于其作为“沟通工具”所沉淀的熟人关系链，而非简单的功能。最后，播客重点展望了 A2A 的前景，认为未来社交将从“为人做应用”转向“为 AI 做应用”，通过 A...
 
 
 
@@ -54147,6 +54171,22 @@
 ### [95.-对-Manus-创始人肖弘的-3-小时访谈：世界不是线性外推，做博弈中的重要变量](https://www.xiaoyuzhoufm.com/episode/67c3d80fb0167b8db9e3ec0f)
 
 2025-03-02 23:00:00
+
+
+
+### [应用商店的终结：Andrej-Karpathy-谈定制化-AI-生成软件](https://x.com/karpathy/status/2024583544157458452)
+
+2026-02-19 20:35:06 | 标签: 定制软件, LLM 智能体, 氛围编程, AI 原生基础设施, 软件未来
+
+> 在这篇见解深刻的推文中，Andrej Karpathy 分享了一个个人实验：他利用 Claude 在一小时内“氛围编程”（vibe coding）出了一个定制的有氧运动追踪看板，而这在以前可能需要十个小时。他指出，软件的未来不在于独立的、预构建的应用，而在于由 LLM 编排的 AI 原生传感器和执行器，它们能根据需求生成高度定制的临时应用。Karpathy 强调，行业需要从以人为中心的 Web 界面转向“智能体原生（agent-native）”的交互接口（API/CLI），并设想了一个复杂的个人自动化任务能在几分钟内完成的世界。
+
+
+
+### [Google-DeepMind-发布-Gemini-3.1-Pro：推理性能提升至-2-倍](https://x.com/demishassabis/status/2024519780976177645)
+
+2026-02-19 16:21:44 | 标签: Gemini 3.1 Pro, Google DeepMind, ARC-AGI-2, AI 基准测试, 推理
+
+> 德米斯·哈萨比斯（Demis Hassabis）宣布推出 Gemini 3.1 Pro，这是 Google AI 模型系列的重大更新。本次更新重点提升了核心推理和问题解决能力。一大亮点是其在 ARC-AGI-2 基准测试中的表现，取得了 77.1% 的成绩，相比 Gemini 3 Pro 实现了 2 倍的性能提升。该模型目前正逐步推送到 Gemini 应用及 Google 的 Antigravity 平台。
 
 
 

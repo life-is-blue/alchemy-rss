@@ -1,15 +1,29 @@
-> **更新时间**: 2026-02-19 16:10:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-20 08:09:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [应用商店的终结：Andrej-Karpathy-谈定制化-AI-生成软件](https://x.com/karpathy/status/2024583544157458452)
+
+2026-02-19 20:35:06 | 标签: 定制软件, LLM 智能体, 氛围编程, AI 原生基础设施, 软件未来
+
+> 在这篇见解深刻的推文中，Andrej Karpathy 分享了一个个人实验：他利用 Claude 在一小时内“氛围编程”（vibe coding）出了一个定制的有氧运动追踪看板，而这在以前可能需要十个小时。他指出，软件的未来不在于独立的、预构建的应用，而在于由 LLM 编排的 AI 原生传感器和执行器，它们能根据需求生成高度定制的临时应用。Karpathy 强调，行业需要从以人为中心的 Web 界面转向“智能体原生（agent-native）”的交互接口（API/CLI），并设想了一个复杂的个人自动化任务能在几分钟内完成的世界。
+
+
+
+### [Google-DeepMind-发布-Gemini-3.1-Pro：推理性能提升至-2-倍](https://x.com/demishassabis/status/2024519780976177645)
+
+2026-02-19 16:21:44 | 标签: Gemini 3.1 Pro, Google DeepMind, ARC-AGI-2, AI 基准测试, 推理
+
+> 德米斯·哈萨比斯（Demis Hassabis）宣布推出 Gemini 3.1 Pro，这是 Google AI 模型系列的重大更新。本次更新重点提升了核心推理和问题解决能力。一大亮点是其在 ARC-AGI-2 基准测试中的表现，取得了 77.1% 的成绩，相比 Gemini 3 Pro 实现了 2 倍的性能提升。该模型目前正逐步推送到 Gemini 应用及 Google 的 Antigravity 平台。
+
+
+
 ### [Anthropic-发布-Claude-Sonnet-4.6，支持-100-万-Token-上下文窗口](https://x.com/claudeai/status/2023817132581208353)
 
-2026-02-17 17:49:39 | 标签: Claude Sonnet 4.6, Anthropic, 大语言模型, 上下文窗口, AI 智能体
-
-> Anthropic 推出了 Claude Sonnet 4.6，并将其定位为迄今为止最强大的 Sonnet 模型。此次更新对编程、计算机使用、长上下文推理以及智能体规划进行了全面提升。值得注意的是，该模型在 Beta 测试版中引入了 100 万 Token 的上下文窗口，显著增强了模型处理海量数据集的能力。
+2026-02-17 17:49:39
 
 
 
