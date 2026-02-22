@@ -1,6 +1,6 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-22 20:03:35 | [返回首页](/README.md)
+**更新时间**: 2026-02-22 22:06:20 | [返回首页](/README.md)
 
 ---
 
@@ -11,7 +11,7 @@
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4812)
+- [其他](#other) (4813)
 
 
 ---
@@ -164,6 +164,7 @@
 
 
 
+- [GLM-5-技术报告：技术细节全公开](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493485&idx=1&sn=bc8337e1e3095c4a29f20dd46161a14a) - AI 精选
 - [火爆全网的《卢浮宫小猫》AI-视频万字创作心得分享，这可能是他们最毫无保留的一次。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647678972&idx=1&sn=d42663a7ea0cf4881ce4c5f5fdcb7bb6) - AI 精选
 - [AI-开始“动手”了，全世界第一个带头的是阿里千问](https://www.qbitai.com/2026/01/369558.html) - AI 精选
 - [Claude-Cowork-初体验：Anthropic-的通用智能体](https://simonwillison.net/2026/Jan/12/claude-cowork/#atom-everything) - AI 精选
@@ -183,8 +184,7 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
-- [分析了-1.8-亿个岗位后，我发现应届生们好像被-AI-堵在了门外。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647676564&idx=1&sn=1a36883431908c75c0634c316db9297f) - AI 精选
 
-- [查看全部 4812 篇...](/details/tags/other.md)
+- [查看全部 4813 篇...](/details/tags/other.md)
 
 

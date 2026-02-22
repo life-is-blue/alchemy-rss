@@ -1,7 +1,15 @@
-> **更新时间**: 2026-02-22 20:03:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-22 22:06:20 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
+
+
+
+### [GLM-5-技术报告：技术细节全公开](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493485&idx=1&sn=bc8337e1e3095c4a29f20dd46161a14a)
+
+2026-02-22 09:40:00 | 标签: GLM-5, 智能体工程, 稀疏注意力 (DSA), 异步强化学习, 软件工程
+
+> 本报告详述了 GLM-5 的技术架构与训练突破。GLM-5 采用 744B 参数的 MoE 架构，核心创新在于引入 DeepSeek 稀疏注意力（DSA）以极低成本实现 200K 长上下文处理。在后训练阶段，智谱构建了全新的异步强化学习（RL）基础设施，通过解耦生成与训练过程，解决了长程智能体任务中的计算气泡问题。此外，模型针对真实软件工程场景进行了深度优化，提出了异步 Agent RL 算法及 TITO 机制，显著提升了模型在复杂、长周期交互中的自主决策与纠错能力。报告还展示了 GLM-5 在国产算力生态上的深度适配成果，以及在 ARC 基准测试和真实世界工程评估（CC-Bench-V2）中...
 
 
 
@@ -635,13 +643,13 @@
 
 
 
-### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
+### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
 
 2025-04-16 00:00:00
 
 
 
-### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
+### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
 
 2025-04-16 00:00:00
 
@@ -28871,11 +28879,11 @@
 
 
 
-### [【访谈对话】造过-Codex-的人，为什么每天用-Claude-Code](https://baoyu.io/blog/2026/02/07/segment-creator-interview)
+### [既然-AI-越来越聪明，那么学习提示词不是浪费时间吗？](https://baoyu.io/blog/2026/02/08/prompt-engineering-matters)
 
-2026-02-07T00:00:00.000Z
+2026-02-08T00:00:00.000Z
 
-> Calvin French-Owen 联合创办 Segment（32 亿美元被收购），后加入 OpenAI 带队构建 Codex。离开后他的日常编程工具却是 Claude Code。这场与 YC CEO 的对话，聊透了编程 Agent 的产品差异、上下文工程、LLM 时代的分发逻辑，以及如果今天重建 Segment 会做什么不同。
+> 很多人觉得 AI 越来越强，提示词工程迟早过时。但这就像当年说「学英语没用」一样，把「自己用不上」等同于「没价值」。真正的提示词工程不是背咒语，而是把需求想清楚、说明白——这件事永远不会过时。
 
 
 
