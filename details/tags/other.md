@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-22 06:03:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-22 08:08:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -28853,11 +28853,11 @@
 
 
 
-### [深度解析：Claude-Code-/insights-命令的运作机制](https://baoyu.io/translations/2026/02/05/claude-code-insights-command)
+### [【访谈对话】造过-Codex-的人，为什么每天用-Claude-Code](https://baoyu.io/blog/2026/02/07/segment-creator-interview)
 
-2026-02-05T00:00:00.000Z
+2026-02-07T00:00:00.000Z
 
-> 详解 Claude Code /insights 命令如何从会话日志中提取元数据、进行特征分析、生成个性化使用报告的完整流程。
+> Calvin French-Owen 联合创办 Segment（32 亿美元被收购），后加入 OpenAI 带队构建 Codex。离开后他的日常编程工具却是 Claude Code。这场与 YC CEO 的对话，聊透了编程 Agent 的产品差异、上下文工程、LLM 时代的分发逻辑，以及如果今天重建 Segment 会做什么不同。
 
 
 
