@@ -1,15 +1,21 @@
-> **更新时间**: 2026-02-20 08:09:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-26 12:33:21 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Builders-Unscripted：第-1-集---OpenClaw-创始人-Peter-Steinberger](https://www.youtube.com/watch?v=9jgcT0Fqt7U)
+
+2026-02-24 17:03:32 | 标签: AI 智能体, OpenClaw, 软件工程, Codex, 开源
+
+> 在本次访谈中，Peter Steinberger 分享了他从传统软件创始人向 AI 智能体工程先驱的转型历程。他详细介绍了 OpenClaw 的创建过程，这是一款通过实现任务自主执行而获得巨大关注的开源个人 AI 智能体。讨论重点介绍了 Codex 等 AI 工具如何从根本上改变了开发生命周期，将重心从手动编码转向高层级问题解决和“提示词请求”。Steinberger 解释了他的生产力秘诀，包括避免过度优化的“智能体陷阱”、安全沙箱的必要性，以及为什么开发者必须将 AI 视为一项需要掌握的专业技能，而非仅仅是简单的工具。他展望了一个软件可以自我修改的未来，届时开发者的角色将演变为智能系统的架构...
+
+
+
 ### [Build-Hour：Prompt-Caching](https://www.youtube.com/watch?v=tECAkJAI_Vk)
 
-2026-02-18 21:25:25 | 标签: Prompt Caching, LLM 优化, OpenAI API, KV Cache, Context Engineering
-
-> 本文总结了 OpenAI 的 “Build Hour” 专题会议，重点讨论了 Prompt Caching。该功能旨在通过重用计算资源来优化 LLM 性能。它解释了缓存自注意力层中键值（KV）张量的底层机制，从而跳过相同前缀的冗余计算。关键技术细节包括 1024 token 的激活阈值、前缀一致性的重要性，以及引入 “Prompt Cache Keys” 以确保请求被路由到同一个 GPU 引擎，从而提高命中率。会议还涵盖了高级策略，例如使用 Responses API 为推理模型（o1/o3）保留思维链（CoT）token，通过 Realtime API 中的 “retention_ratio...
+2026-02-18 21:25:25
 
 
 
@@ -247,7 +253,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -259,7 +265,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
