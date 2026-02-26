@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-26 20:10:03 | [返回首页](/README.md)
+**更新时间**: 2026-02-26 22:22:25 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9168)
+- [AI & 大模型](#ai-llm) (9172)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
@@ -43,7 +43,7 @@
 - [如何为-AI-智能体编写高质量的规格说明书-Spec](https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents) - AI 精选
 - [选择正确的多智能体架构](https://www.blog.langchain.com/choosing-the-right-multi-agent-architecture/) - AI 精选
 
-- [查看全部 9168 篇...](/details/tags/ai-llm.md)
+- [查看全部 9172 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
