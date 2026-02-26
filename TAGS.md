@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-26 12:33:21 | [返回首页](/README.md)
+**更新时间**: 2026-02-26 14:18:24 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9165)
+- [AI & 大模型](#ai-llm) (9167)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [OpenClaw-+-Claude-Code-超强教程：一个人就能搭建完整的开发团队！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719868&idx=1&sn=c93e0542f8bebb653559315d02841b43) - AI 精选
 - [中国也有了世界第一的模型，他的名字，叫-Seedance-2.0。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a) - AI 精选
 - [介绍-Showboat-和-Rodney：让智能体能够演示其构建的成果](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything) - AI 精选
 - [智能体连接沙箱的两种模式](https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/) - AI 精选
@@ -41,9 +42,8 @@
 - [自动驾驶推理模型、ChatGPT-引入广告、苹果与谷歌的交易等...](https://www.deeplearning.ai/the-batch/issue-337) - AI 精选
 - [如何为-AI-智能体编写高质量的规格说明书-Spec](https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents) - AI 精选
 - [选择正确的多智能体架构](https://www.blog.langchain.com/choosing-the-right-multi-agent-architecture/) - AI 精选
-- [姚顺雨对着唐杰杨植麟林俊旸贴大脸开讲！基模四杰中关村论英雄](https://www.qbitai.com/2026/01/368917.html) - AI 精选
 
-- [查看全部 9165 篇...](/details/tags/ai-llm.md)
+- [查看全部 9167 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
