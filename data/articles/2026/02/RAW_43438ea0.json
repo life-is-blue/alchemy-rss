@@ -1,0 +1,58 @@
+{
+  "id": "RAW_43438ea0",
+  "title": "何恺明团队新作 GeoPT，全新预训练范式让模型自学真实物理规律",
+  "url": "https://www.qbitai.com/2026/02/382888.html",
+  "date": "2026-02-27 08:19:25",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"71\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"72\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">静态3D资产缺少动力学信息，真实物理标签又极其昂贵——</p>\n  <p data-track=\"4\">物理仿真到底该如何scaling？</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093521_4cb28491c73938a13e8161af9b763aa9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"5\">何恺明团队最新的论文<strong>GeoPT</strong>提供了新思路——</p>\n  <p data-track=\"6\">GeoPT提出了一种全新的动力学提升预训练范式，通过<strong>合成动力学（Synthetic Dynamics）</strong>将静态几何“提升”到动态空间，让模型在无标签数据上通过学习粒子轨迹演化来获取物理直觉。</p>\n  <p data-track=\"7\">在相同的精度条件下，GeoPT最高可以节省<strong>60%</strong>的物理仿真数据。</p>\n  <p data-track=\"8\">接下来，我们一起来看。</p>\n  <p data-track=\"10\">一般来说，物理系统的解场（Solution Fields）是由几何G（定义空间边界）和系统条件S（动力学驱动，如速度、力）共同决定的。</p>\n  <p data-track=\"11\">以空气动力学为例，汽车的形状（几何）定义了空间的边界，而风速和风向（动力学条件）则决定了流场的演化与具体的阻力分布。</p>\n  <p data-track=\"12\">当前，为了实现对物理系统的预测与控制，研究已经从传统的物理仿真，转向基于数据驱动的神经网络仿真器。</p>\n  <p data-track=\"13\">然而，这一路径面临着两个核心瓶颈：</p>\n  <p data-track=\"14\">一方面是<strong>标注成本极高</strong>。</p>\n  <p data-track=\"15\">训练仿真器依赖由传统数值求解器（如CFD/FEA）生成的监督数据，生成一个工业级精度样本往往耗费数万CPU小时，高昂的“标签生成”成本严重限制了仿真器的规模化（Scaling）。</p>\n  <p data-track=\"16\">另一方面是<strong>静态预训练的局限</strong>。</p>\n  <p data-track=\"17\">尽管互联网上有海量的3D几何数据，但如果仅对静态几何进行自监督预训练（如常见的掩码重建任务），会因完全缺失“动力学”维度，导致模型无法捕捉物理仿真的核心特征，甚至在下游任务中出现“负迁移”现象。</p>\n  <p data-track=\"18\">基于此，恺明团队提出了一种全新的预训练范式——<strong>动力学提升的几何预训练（Dynamics-lifted Geometric Pre-training）</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093520_4720b847c7fc9390bc0ee3f4db58f368.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"19\">其核心在于，虽然真实的物理标签难求，但“动力学”本身是可以被参数化的。</p>\n  <p data-track=\"20\">研究通过在预训练阶段引入<strong>合成动力学（Synthetic Dynamics）</strong>，让GeoPT不仅学习到几何特征，还通过引入随机速度场v，将表征从单纯的几何空间提升到“几何+动力学”的联合空间。</p>\n  <p data-track=\"21\">在这里，研究不依赖由物理决定、且需要昂贵仿真才能获取的v，而是通过随机采样每个粒子的速度来构建<strong>合成速度（Synthetic Velocities）</strong>：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093521_eec145968ba0b4e93694cb9f71dd3b71.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"22\">由此，自监督目标变成了几何特征在这种合成动力学下的轨迹：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093520_32303f7aa7787284ec59ffe85b34374a.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"23\">于是，通过追踪几何特征沿这些合成轨迹的演化过程，研究获得了一个完全由几何构建的、感知动力学的监督信号。</p>\n  <p data-track=\"24\">这使得模型在接触真实的物理标签之前，就能够通过海量无标签几何数据，预先学习到物理演化中通用的空间约束与耦合规律。</p>\n  <p data-track=\"25\">与此同时，上述动力学提升框架不仅提供了预训练目标，还为下游任务提供了一个统一的接口：在预训练和微调阶段，模型均接收几何和速度作为输入。</p>\n  <p data-track=\"26\">预训练后，GeoPT捕捉到了以速度为条件的物理对齐相关性，通过将动力学条件特化为相应的仿真设置并学习求解器生成的标签，进而可以被微调至特定的物理任务。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093520_be30ffe641a0881e50682b8ddce4949c.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"28\">在预训练阶段，模型被训练用于预测合成动力学下的几何特征轨迹，其损失函数定义为：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093521_a4e6d145fe3eb8ba083fee0a73a4dd65.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"29\">该目标函数涵盖了三个核心变量的组合：</p>\n  <ul>\n   <li data-track=\"30\">几何：从包含车、机、船等万余个几何体的数据集中进行类别平衡采样。</li>\n   <li data-track=\"31\">追踪点x：从物体周围的体积空间和几何边界上采样初始位置。</li>\n   <li data-track=\"32\">速度v：从有界球体中为每个点均匀采样随机速度。</li>\n  </ul>\n  <p data-track=\"33\">给定上述 (G, V) 信息后，轨迹通过公式确定性计算得出，其监督目标即为沿此路径的几何特征序列。</p>\n  <p data-track=\"34\">由于预训练使GeoPT捕捉到了以速度为条件的物理对齐相关性，在微调阶段，只需将预训练时的随机速度替换为编码了特定仿真设置的任务特定速度。</p>\n  <p data-track=\"35\">具体的适配策略如下：</p>\n  <ul>\n   <li data-track=\"36\">空气动力学：将入射流条件（速度、攻角等）编码为Vs，其方向与流向一致。</li>\n   <li data-track=\"37\">水动力学：分别为水、气两相配置不同的Vs，反映船舶阻力仿真中的两相流。</li>\n   <li data-track=\"38\">碰撞仿真：将冲击方向编码为Vs，其大小从碰撞点开始随空间衰减，以反映力的传播。</li>\n  </ul>\n  <p data-track=\"39\">这种统一接口的设计，使得单个预训练模型只需通过重配置速度输入，即可适配多样化的物理仿真任务。</p>\n  <p data-track=\"40\">在具体的细节方面，研究采用Transolver作为骨干网络，并配置了从3M到15M参数的三种模型尺寸。</p>\n  <p data-track=\"41\">在数据效率方面，轨迹被离散化为 3 个步骤，使用<strong>向量距离（Vector Distance）</strong>编码几何信息。每个几何体采样约3.6万个点，并生成100个随机动力学场。</p>\n  <p data-track=\"42\">在计算优势上，监督信号通过优化的射线-三角形求交算法计算。处理一个样本仅需约0.2秒，比工业级 CFD 仿真快10^7倍。在80核CPU上，仅需3天即可生成5TB的预训练数据集。</p>\n  <p data-track=\"43\">目前，该框架已开源，感兴趣的同学可以参考文末链接。</p>\n  <p data-track=\"45\">在预训练中，研究使用ShapeNet-V1数据集，包含汽车、飞机、船舶等三类工业相关几何，通过采样生成了超过100万个样本（约5TB数据） 。</p>\n  <p data-track=\"46\">任务覆盖流体力学： 汽车空气动力学 (DrivAerML)、飞机受力分析 (NASA-CRM)、船舶水动力学 (DTCHull) ；固体力学： 汽车碰撞最大应力仿真 (Car-Crash) 以及 辐射度仿真 (Radiosity) 等 。</p>\n  <p data-track=\"47\">实验结果表明，GeoPT显著降低了对标注数据的依赖，在达到相同精度时可节省<strong>20-60%</strong>的物理仿真数据。</p>\n  <p data-track=\"48\">与此同时，GeoPT还使微调阶段的收敛速度比从头训练快<strong>2倍</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093520_26252950a634f1ebda70013188da1e76.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"49\">而且，随着模型层数增加（从8层增加到32层）和预训练数据量的增大，性能持续稳步提升，展现了“物理大模型”的潜力 。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093520_ac6969d2d73c73bb704315a26a6b3fe3.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"50\">总的来说，论文证明了通过“合成动力学轨迹”进行预训练，可以有效弥合静态几何与复杂动态物理任务之间的鸿沟 。</p>\n  <p data-track=\"51\">GeoPT 为构建通用的物理仿真基础模型开辟了一条可扩展的路径，即：</p>\n  <p data-track=\"52\"><strong>大规模无标签几何+简单的合成动力学自监督=强大的跨领域物理仿真能力</strong>。</p>\n  <p data-track=\"54\">这篇论文的第一作者是来自MIT（CSAIL）的博士后研究员<strong>吴海旭</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093521_c310acb38990d304f9768318bea754a3.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"55\">他目前师从<strong>Wojciech Matusik</strong>教授。此前，吴海旭在清华大学获得博士和学士学位，导师为<strong>龙明盛</strong>教授。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093521_a64bcdb359316f9ddb427f2b8367bc7f.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"56\">值得一提的是，龙明盛教授现为清华大学软件学院副教授，也是本文作者之一。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093521_aa937cba0ff91d25d5617715fdc74b7f.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"57\">论文的共同第一作者是<strong>Minghao Guo</strong>，他目前为MIT（CSAIL）博士生，同样师从Wojciech Matusik教授。</p>\n  <p data-track=\"58\">他本科就读于清华大学，硕士毕业于香港中文大学。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260227093520_bab1ce174ba045750791dd30cb9daa54.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"59\">此外，论文的其他作者还包括<strong>Zongyi Li</strong>（何恺明教授的博士后）、MIT博士生<strong>Zhiyang (Frank) Dou</strong>，以及<strong>何恺明</strong>教授和Wojciech Matusik教授。</p>\n  <p data-track=\"60\">参考链接</p>\n  <p data-track=\"61\">[1]https://arxiv.org/abs/2602.20399v1</p>\n  <p data-track=\"62\">[2]https://github.com/Physics-Scaling/GeoPT</p>\n  <p data-track=\"73\">— 完 —</p>\n  <p data-track=\"74\">量子位 QbitAI · 头条号签约</p>\n  <p data-track=\"75\">关注我们，第一时间获知前沿科技动态</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "何恺明团队提出 GeoPT 预训练范式，通过“合成动力学”让模型在无标签 3D 几何数据上学习物理演化规律，显著提升仿真效率。",
+  "oneSentenceSummary": "何恺明团队提出 GeoPT 预训练范式，通过“合成动力学”让模型在无标签 3D 几何数据上学习物理演化规律，显著提升仿真效率。",
+  "summary": "本文介绍了何恺明团队在物理仿真领域的最新研究成果 GeoPT。该研究针对物理仿真数据标注成本极高以及静态 3D 预训练缺失动力学维度的痛点，提出了一种“动力学提升”的预训练范式。其核心创新在于引入“合成动力学（Synthetic Dynamics）”，通过随机采样速度场并追踪几何特征的演化轨迹，使模型在无标签数据上预先获得物理直觉。实验表明，GeoPT 在空气动力学、水动力学等多个任务中表现优异，最高可节省 60% 的仿真数据，且微调收敛速度提升 2 倍，展现了构建通用物理大模型的潜力。",
+  "mainPoints": [
+    {
+      "point": "提出合成动力学概念，将静态几何数据提升至动态物理空间。",
+      "explanation": "通过随机采样速度场构建合成轨迹，使模型在无需昂贵物理标签的情况下，通过追踪几何特征演化来学习空间约束与耦合规律。"
+    },
+    {
+      "point": "设计了统一的输入接口，实现了预训练与下游任务的无缝衔接。",
+      "explanation": "模型在各阶段均接收几何与速度作为输入，微调时仅需将随机速度替换为特定仿真的任务速度，即可适配流体、固体等多种物理任务。"
+    },
+    {
+      "point": "显著降低了物理仿真对标注数据的依赖，提升了计算效率。",
+      "explanation": "在同等精度下可节省 20-60% 的仿真数据，且由于采用优化的求交算法，预训练数据生成速度比工业级 CFD 仿真快千万倍。"
+    },
+    {
+      "point": "验证了物理仿真大模型的 Scaling Law 潜力。",
+      "explanation": "实验显示随着模型参数量（从 3M 到 15M）和预训练数据量的增加，模型在下游任务中的性能持续稳步提升。"
+    }
+  ],
+  "keyQuotes": [
+    "通过合成动力学（Synthetic Dynamics）将静态几何“提升”到动态空间，让模型在无标签数据上通过学习粒子轨迹演化来获取物理直觉。",
+    "在相同的精度条件下，GeoPT 最高可以节省 60% 的物理仿真数据。",
+    "大规模无标签几何+简单的合成动力学自监督=强大的跨领域物理仿真能力。",
+    "处理一个样本仅需约 0.2 秒，比工业级 CFD 仿真快 10^7 倍。"
+  ],
+  "tags": [
+    "GeoPT",
+    "何恺明",
+    "物理仿真",
+    "自监督学习",
+    "合成动力学"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 86,
+  "wordCount": 2511,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1772180365000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-02-27 08:19:25"
+}
