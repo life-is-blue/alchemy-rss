@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-27 14:14:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-27 16:10:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11071,9 +11071,7 @@
 
 ### [借鉴-Kotlin/Android-经验，在-SwiftUI-中构建可扩展的-iOS-应用架构](https://www.infoq.com/articles/kotlin-scalable-swiftui-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-02-26 09:00:00 | 标签: SwiftUI, iOS 架构, Kotlin, 单向数据流, MVVM
-
-> 本文探讨了 iOS 开发者面临的一个共同挑战：难以将简单的 SwiftUI 示例扩展为复杂的生产级应用。作者从 Android 生态系统的结构化方法中汲取灵感，倡导一种与平台无关的架构观。核心建议包括：使用显式枚举替换碎片化的状态属性，以消除不可能的 UI 状态；通过将所有变更汇聚到单个 action 方法中来采用单向数据流（UDF）。这种集中化增强了可测试性并简化了调试。此外，作者引入了“Screen 与 Content”分离的概念，将 ViewModel 的所有权与 UI 渲染解耦，从而显著提高了 Xcode Previews 的可靠性。该架构通过涉及响应式 Repository 的多层数...
+2026-02-26 09:00:00
 
 
 
@@ -28903,11 +28901,11 @@
 
 
 
-### [我们真的变成巫师了：OpenAI-API-负责人谈-AI-如何重塑软件工程](https://baoyu.io/blog/2026-02-12/sherwin-wu-ai-software-engineering)
+### [OpenAI-智能体工程指南：10-条实战技巧和-3-种构建模式](https://baoyu.io/blog/2026-02-12/skills-shell-tips)
 
 2026-02-12T00:00:00.000Z
 
-> OpenAI API 负责人 Sherwin Wu 在 Lenny's Podcast 上的深度对话整理。从 95% 工程师用 Codex 写代码、100% Codex 代码库实验、巫师与魔法师学徒的比喻，到一人十亿美元公司的连锁效应、AI 部署为什么亏钱，以及未来 12-18 个月的方向预测。
+> OpenAI 发布智能体工程实战手册，围绕技能（Skills）、Shell 工具和上下文压缩三个核心能力，总结 10 条生产级技巧和 3 种构建模式。来自 Glean 的案例数据显示，技能路由可将准确率提升 12 个百分点。
 
 
 
