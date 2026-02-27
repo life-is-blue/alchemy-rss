@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-27 06:06:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-27 08:10:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -54261,6 +54261,14 @@
 ### [95.-对-Manus-创始人肖弘的-3-小时访谈：世界不是线性外推，做博弈中的重要变量](https://www.xiaoyuzhoufm.com/episode/67c3d80fb0167b8db9e3ec0f)
 
 2025-03-02 23:00:00
+
+
+
+### [谷歌发布-Nano-Banana-2：集成实时联网功能的超高保真图像模型](https://x.com/sundarpichai/status/2027057726170509724)
+
+2026-02-26 16:26:37 | 标签: Nano Banana 2, Google AI, Gemini, 图像生成, 实时 AI
+
+> 谷歌宣布推出 Nano Banana 2，称其为迄今为止最先进的图像模型。该模型将 Gemini 的基础世界理解能力与来自网页搜索的实时信息和图像相结合，使其能够以高保真度反映现实世界的状况。其中的“Window Seat”演示应用展示了该模型的精准度，它能根据实时本地天气数据生成精确的 2K/4K 视野景观。该模型今日起作为默认配置在 141 个国家/地区的 Gemini 应用和 Google 搜索中上线，并同步登陆 Flow。此外，开发者可通过 Google AI Studio 和 Vertex AI 获取预览版，该模型也已集成至 Google @Antigravity。
 
 
 

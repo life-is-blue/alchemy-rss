@@ -1,23 +1,27 @@
-> **更新时间**: 2026-02-20 08:09:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-27 08:10:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [谷歌发布-Nano-Banana-2：集成实时联网功能的超高保真图像模型](https://x.com/sundarpichai/status/2027057726170509724)
+
+2026-02-26 16:26:37 | 标签: Nano Banana 2, Google AI, Gemini, 图像生成, 实时 AI
+
+> 谷歌宣布推出 Nano Banana 2，称其为迄今为止最先进的图像模型。该模型将 Gemini 的基础世界理解能力与来自网页搜索的实时信息和图像相结合，使其能够以高保真度反映现实世界的状况。其中的“Window Seat”演示应用展示了该模型的精准度，它能根据实时本地天气数据生成精确的 2K/4K 视野景观。该模型今日起作为默认配置在 141 个国家/地区的 Gemini 应用和 Google 搜索中上线，并同步登陆 Flow。此外，开发者可通过 Google AI Studio 和 Vertex AI 获取预览版，该模型也已集成至 Google @Antigravity。
+
+
+
 ### [应用商店的终结：Andrej-Karpathy-谈定制化-AI-生成软件](https://x.com/karpathy/status/2024583544157458452)
 
-2026-02-19 20:35:06 | 标签: 定制软件, LLM 智能体, 氛围编程, AI 原生基础设施, 软件未来
-
-> 在这篇见解深刻的推文中，Andrej Karpathy 分享了一个个人实验：他利用 Claude 在一小时内“氛围编程”（vibe coding）出了一个定制的有氧运动追踪看板，而这在以前可能需要十个小时。他指出，软件的未来不在于独立的、预构建的应用，而在于由 LLM 编排的 AI 原生传感器和执行器，它们能根据需求生成高度定制的临时应用。Karpathy 强调，行业需要从以人为中心的 Web 界面转向“智能体原生（agent-native）”的交互接口（API/CLI），并设想了一个复杂的个人自动化任务能在几分钟内完成的世界。
+2026-02-19 20:35:06
 
 
 
 ### [Google-DeepMind-发布-Gemini-3.1-Pro：推理性能提升至-2-倍](https://x.com/demishassabis/status/2024519780976177645)
 
-2026-02-19 16:21:44 | 标签: Gemini 3.1 Pro, Google DeepMind, ARC-AGI-2, AI 基准测试, 推理
-
-> 德米斯·哈萨比斯（Demis Hassabis）宣布推出 Gemini 3.1 Pro，这是 Google AI 模型系列的重大更新。本次更新重点提升了核心推理和问题解决能力。一大亮点是其在 ARC-AGI-2 基准测试中的表现，取得了 77.1% 的成绩，相比 Gemini 3 Pro 实现了 2 倍的性能提升。该模型目前正逐步推送到 Gemini 应用及 Google 的 Antigravity 平台。
+2026-02-19 16:21:44
 
 
 
