@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-27 18:11:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-27 20:06:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Nano-Banana-2：将-Pro-级能力与闪电般的速度相结合](https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/)
 
-2026-02-26 16:02:08 | 标签: Gemini 3.1, 图像生成, Google DeepMind, 模型溯源, 主体一致性
-
-> Google DeepMind 推出了 Nano Banana 2，亦被称为 Gemini 3.1 Flash Image。该模型旨在以 Flash 架构极快的速度提供 Pro 级别的先进推理能力和视觉质量。关键技术亮点包括集成实时网络搜索以实现图像的事实溯源、改进的文本渲染与本地化，以及在多次生成中保持多达 5 个角色一致性的能力。该模型支持高达 4K 的分辨率，并正被集成到 Google 的生态系统中，包括 Gemini 应用、搜索和 Vertex AI。此外，文章还强调了通过 SynthID 水印和 C2PA 元数据实现的安全性。
+2026-02-26 16:02:08
 
 
 
@@ -7342,9 +7340,7 @@
 
 ### [刚刚，Nano-Banana-2-发布！便宜又大碗，体验后我发现这些细节](https://www.ifanr.com/1655944?utm_source=rss&utm_medium=rss&utm_campaign=)
 
-2026-02-27 10:40:21 | 标签: Google, Gemini, AI 生图, 图像生成, 提示词工程
-
-> 文章详细评测了 Google 最新发布的图像生成模型 Nano Banana 2。该模型在理解空间比例、中文文本渲染以及复杂 UI 场景方面表现出色，并具备强大的主体一致性，支持在单次生成中保持多达 5 个角色或 14 个物品特征不变。尽管在跨维度融合（如二次元与现实结合）上仍有短板，但其极高的性价比（API 价格减半，普通用户每日百张免费额度）和内置的 SynthID 防伪水印技术，使其成为极具竞争力的生产力工具。
+2026-02-27 10:40:21
 
 
 
@@ -41628,9 +41624,7 @@
 
 ### [AINews-Nano-Banana-2-即-Gemini-3.1-Flash-Image-Preview：全新的-SOTA-图像生成模型](https://www.latent.space/p/ainews-nano-banana-2-aka-gemini-31)
 
-2026-02-27 04:39:57 | 标签: Gemini 3.1, 图像生成, 智能体编程, Perplexity, AI 治理
-
-> 本文全面回顾了 2026 年 2 月下旬的主要 AI 发展。重点包括 Google Nano Banana 2 (Gemini 3.1 Flash Image Preview) 的发布，该模型在图像生成排行榜上名列第一，同时价格远低于竞争对手。文章还涵盖了智能体编程的演进，指出工具正转向“基于任务”的委派和持久化记忆，尽管这引发了对代码复杂度债务的担忧。此外，文章详细介绍了 Perplexity 向三星硬件的战略扩张及其开源嵌入模型的发布。最后，文章探讨了 Anthropic 与美国国防部在 AI 军事用途方面重大的伦理和法律僵局。
+2026-02-27 04:39:57
 
 
 
