@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-28 16:03:20 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-02-28 18:03:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -29678,9 +29678,7 @@
 
 ### [从创意到-Pull-Request：使用-GitHub-Copilot-CLI-构建项目的实用指南](https://github.blog/ai-and-ml/github-copilot/from-idea-to-pull-request-a-practical-guide-to-building-with-github-copilot-cli/)
 
-2026-02-27 16:00:00 | 标签: GitHub Copilot, CLI, AI 智能体, 开发者工作流, 软件工程
-
-> 本文全面介绍了如何将 GitHub Copilot CLI 集成到开发者的日常工作中。文章将 CLI 定位为专为终端设计的“动力工具”，开发者通常在终端初始化项目并运行测试。所提出的工作流强调从自然语言意图而非样板代码开始，利用该工具搭建项目脚手架、针对测试失败进行迭代，以及执行机械化的全仓库变更。核心观点是“CLI-IDE-GitHub”心智模型：使用 CLI 进行快速原型设计和低开销任务，转向 IDE 进行精确的逻辑和设计决策，并利用 GitHub 进行持久的协作和评审。文章还介绍了 GitHub Copilot SDK，允许开发者将这些智能体能力嵌入到自己的应用程序中。
+2026-02-27 16:00:00
 
 
 
