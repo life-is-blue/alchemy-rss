@@ -1,4 +1,4 @@
-> **更新时间**: 2026-02-28 22:03:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-01 00:03:07 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -392,17 +392,13 @@
 
 ### [使用-Google-Cloud-提升聊天机器人记忆能力](https://cloud.google.com/blog/topics/developers-practitioners/improve-chatbot-memory-using-google-cloud/)
 
-2026-02-28 00:00:00 | 标签: Chatbot Memory, Google Cloud, Redis, Bigtable, BigQuery
-
-> 本文通过提出一种稳健的分层数据层架构，解决了扩展对话式 AI 智能体的关键挑战。它提倡一种“多语言”存储方法，根据数据的“温度”和生命周期选择不同的技术。对于短期“热”上下文，Memorystore for Redis 提供亚毫秒级延迟，利用 Redis Lists 和 RPUSH 命令避免低效的“读取-修改-写入”循环。随着对话的进行，Cloud Bigtable 作为 PB 级的中期历史记录系统，采用专门的行键策略（user_id#session_id#reverse_timestamp）以确保快速的范围扫描和会话检索。对于长期归档和深度商业智能，数据被移动到 BigQuery，从而在不影...
+2026-02-28 00:00:00
 
 
 
 ### [有毒组合：当微小信号汇聚成安全事件](https://blog.cloudflare.com/toxic-combinations-security/)
 
-2026-02-27 15:00:08 | 标签: 网络安全, Cloudflare, WAF, 应用安全, 漏洞管理
-
-> Cloudflare 探讨了一种名为“有毒组合”的高级安全框架，该框架将重点从单个请求分析转向上下文关联检测。通过分析机器人活动、敏感应用路径、请求异常和错误配置的交集，安全团队可以识别出缺乏明显攻击特征的潜在事件。文章详细介绍了在 Cloudflare 网络中发现的五种常见场景：管理端点的探测、通过可预测 ID 导致的未授权 API 数据泄露、调试参数泄漏、暴露的监控端点以及成功的 SQL 注入尝试。针对每种场景，作者提供了用于日志分析的特定类 SQL 查询，解释了潜在的业务风险，并提供了从实施零信任（Zero Trust）到边缘级参数过滤的可操作缓解步骤。
+2026-02-27 15:00:08
 
 
 
