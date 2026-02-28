@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4635d3ac",
+  "title": "使用 fetch() HTTP Range 请求进行二分搜索的 Unicode 浏览器",
+  "url": "https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything",
+  "date": "2026-02-27 17:50:54",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">27th February 2026 - Link Blog</p>\n   <p><strong><a href=\"https://tools.simonwillison.net/unicode-binary-search\">Unicode Explorer using binary search over fetch() HTTP range requests</a></strong>. Here's a little prototype I built this morning from my phone as an experiment in HTTP range requests, and a general example of using LLMs to satisfy curiosity.</p>\n   <p>I've been collecting <a href=\"https://simonwillison.net/tags/http-range-requests/\">HTTP range tricks</a> for a while now, and I decided it would be fun to build something with them myself that used binary search against a large file to do something useful.</p>\n   <p>So I <a href=\"https://claude.ai/share/47860666-cb20-44b5-8cdb-d0ebe363384f\">brainstormed with Claude</a>. The challenge was coming up with a use case for binary search where the data could be naturally sorted in a way that would benefit from binary search.</p>\n   <p>One of Claude's suggestions was looking up information about unicode codepoints, which means searching through many MBs of metadata.</p>\n   <p>I had Claude write me a spec to feed to Claude Code - <a href=\"https://github.com/simonw/research/pull/90#issue-4001466642\">visible here</a> - then kicked off an <a href=\"https://simonwillison.net/2025/Nov/6/async-code-research/\">asynchronous research project</a> with Claude Code for web against my <a href=\"https://github.com/simonw/research\">simonw/research</a> repo to turn that into working code.</p>\n   <p>Here's the <a href=\"https://github.com/simonw/research/tree/main/unicode-explorer-binary-search#readme\">resulting report and code</a>. One interesting thing I learned is that Range request tricks aren't compatible with HTTP compression because they mess with the byte offset calculations. I added <code>'Accept-Encoding': 'identity'</code> to the <code>fetch()</code> calls but this isn't actually necessary because Cloudflare and other CDNs automatically skip compression if a <code>content-range</code> header is present.</p>\n   <p>I deployed the result <a href=\"https://tools.simonwillison.net/unicode-binary-search\">to my tools.simonwillison.net site</a>, after first tweaking it to query the data via range requests against a CORS-enabled 76.6MB file in an S3 bucket fronted by Cloudflare.</p>\n   <p>The demo is fun to play with - type in a single character like <code>ø</code> or a hexadecimal codepoint indicator like <code>1F99C</code> and it will binary search its way through the large file and show you the steps it takes along the way:</p>\n   <p><img alt=\"Animated demo\" src=\"https://static.simonwillison.net/static/2026/unicode-explore.gif\"></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9317/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文展示了一个技术原型，通过 HTTP Range 请求对大型远程文件进行高效的二分搜索，并强调了如压缩兼容性等具体的实现挑战。",
+  "oneSentenceSummary": "本文展示了一个技术原型，通过 HTTP Range 请求对大型远程文件进行高效的二分搜索，并强调了如压缩兼容性等具体的实现挑战。",
+  "summary": "Simon Willison 通过构建一个 Unicode 浏览器探索了 HTTP Range 请求的实际应用。该工具针对托管在 S3 上的 76.6MB 元数据文件执行二分搜索，允许浏览器在不下载整个数据集的情况下检索特定字符信息。文章详细介绍了使用 Claude 和 Claude Code 从概念构思到功能原型的开发流程。一个关键的技术收获是发现 Range 请求与 HTTP 压缩不兼容，因为压缩会改变字节偏移量，这需要使用 “identity” 编码或 CDN 级别的绕过。",
+  "mainPoints": [
+    {
+      "point": "可以利用 HTTP Range 请求在网络上实现二分搜索，从而高效地查询已排序的数据文件。",
+      "explanation": "该技术允许浏览器仅获取大型远程文件的特定字节范围，从而实现对数级的搜索时间，且无需下载整个数据集或维护专门的数据库后端。"
+    },
+    {
+      "point": "在使用 Range 请求时必须严格避免 HTTP 压缩，以确保字节偏移量计算保持完全准确。",
+      "explanation": "由于压缩会改变传输数据的物理大小，请求的字节范围将不再与未压缩数据的结构对齐，除非使用 “identity” 编码，否则会导致搜索结果损坏。"
+    },
+    {
+      "point": "像 Claude Code 这样的现代 AI 工具可以有效地弥合概念构思与工作原型之间的差距。",
+      "explanation": "通过向 AI 智能体提供清晰的规范，开发者可以自动化复杂网络逻辑的研究和实现，从而能够快速对 HTTP Range 请求等小众技术协议进行实验。"
+    }
+  ],
+  "keyQuotes": [
+    "Range 请求技巧与 HTTP 压缩不兼容，因为它们会干扰字节偏移量的计算。",
+    "我在 fetch() 调用中添加了 'Accept-Encoding': 'identity'，但实际上这并非必要，因为如果存在 content-range 响应头，Cloudflare 和其他 CDN 会自动跳过压缩。",
+    "挑战在于为二分搜索找到一个用例，其中数据可以自然排序，并能从二分搜索中获益。",
+    "我将结果部署到了我的工具网站上，在此之前，我对其进行了调整，使其通过 Range 请求查询 S3 存储桶中一个启用了 CORS 的 76.6MB 文件，该文件由 Cloudflare 提供前端服务。"
+  ],
+  "tags": [
+    "HTTP Range 请求",
+    "二分搜索",
+    "Web 性能",
+    "Unicode",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 299,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": null,
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772214654000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-27 17:50:54"
+}
