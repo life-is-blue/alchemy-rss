@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e440d9a8",
+  "title": "Vercel 发布 React 最佳实践技能，包含 40 多条面向 AI 智能体的性能规则",
+  "url": "https://www.infoq.com/news/2026/02/vercel-react-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-02-27 14:30:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://vercel.com/\">Vercel</a>, the cloud platform behind Next.js, has released <a href=\"https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices\">react-best-practices</a>, an open-source repository containing over 40 performance optimization rules for React and Next.js applications. The framework, which encapsulates over a decade of engineering knowledge from Vercel's production codebases, is structured specifically for consumption by AI coding agents and LLMs, though the team notes it is equally valuable for human developers.</p>\n   <p>The repository organises its rules across eight categories, each prioritised by impact level from CRITICAL to LOW. The two highest-priority categories focus on eliminating async waterfalls and reducing bundle size, which Vercel's engineering team identified as the most common root causes of performance issues across production applications. Further categories cover server-side performance, client-side data fetching, re-render optimisation, rendering performance, advanced patterns, and JavaScript micro-optimisations.</p>\n   <p>Each rule includes code examples demonstrating both incorrect and correct patterns.</p>\n   <p>The individual rule files compile into a single <code>AGENTS.md</code> document, designed to be queried by AI agents when reviewing or refactoring code. The framework is distributed as part of Vercel's broader <a href=\"https://github.com/vercel-labs/agent-skills\">Agent Skills</a> ecosystem, an open format for giving agents new capabilities. Developers can install the skill into tools such as Claude Code, Cursor, Codex, and OpenCode using a single command: <code>npx skills add vercel-labs/agent-skills</code>.</p>\n   <p>The release has generated mixed interest from the developer community. On the <a href=\"https://www.reddit.com/r/vibecoding/comments/1qdrzbq/vercel_just_released_a_react_best_practices_repo/\">r/vibecoding</a> subreddit, one commenter saw its usefulness for vibe coding success:</p>\n   <blockquote>\n    <p>Definitely looks useful, I was surprised to see how large the prompts/context tokens were for vibe coding agents like v0 and Lovable. Context engineering is definitely the biggest factor for vibe coding success</p>\n   </blockquote>\n   <p>Elsewhere, <a href=\"https://www.reddit.com/r/nextjs/comments/1qifgus/vercel_just_launched_skillssh_and_it_already_has/\">some users</a> are worried about the security aspects:</p>\n   <blockquote>\n    <p>Imagine a&nbsp;supply chain attack&nbsp;on a <em>skill description</em> which is fed to an AI agent. Interesting times.</p>\n   </blockquote>\n   <p>In a <a href=\"https://www.reddit.com/r/LLMDevs/comments/1qgu8qr/vercels_opensource_agent_skills_hint_at_the_next/\">separate reddit post</a>, one commenter suggested that they might be solving the wrong problem:</p>\n   <blockquote>\n    <p>This feels like the right direction but i wonder if we're solving the wrong problem. Codified best practices are great but most AI coding failures I see aren't from missing React optimization rules - they're from agents not understanding the actual business logic or making assumptions about what the user wants.</p>\n   </blockquote>\n   <p>The framework occupies a different space to existing tools such as <code>eslint-plugin-react</code> and <code>eslint-plugin-react-hooks</code>, which enforce syntactic rules and hook usage patterns at the linter level. Vercel's offering focuses on higher-level architectural decisions, such as request waterfalls and bundle composition, that linting tools typically do not cover. The recently released <a href=\"https://react.dev/blog/2025/10/07/react-compiler-1\">React Compiler v1.0</a> also complements the framework, automatically handling memoization optimisations that several of the rules address manually.</p>\n   <p>At time of writing the GitHub repo as over 21k stars and over 150k weekly installs.</p>\n   <p>For teams looking to adopt the framework in existing projects, the repository is structured so that each rule can be reviewed and applied independently. Individual rule files are located in the <a href=\"https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices\">rules directory</a> and include explanations of why each pattern matters alongside before-and-after code examples, making incremental adoption straightforward.</p>\n   <p>Vercel's react-best-practices is open source under the MIT licence. The <a href=\"https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices\">repository</a> and full AGENTS.md compiled document are available on GitHub.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vercel Releases React Best Practices Skill with 40+ Performance Rules for AI Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/02/vercel-react-best-practices/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772202600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vercel 发布了一个包含 40 多条 React 和 Next.js 性能规则的开源仓库，专门为 AI 编程智能体格式化，旨在优化架构决策。",
+  "oneSentenceSummary": "Vercel 发布了一个包含 40 多条 React 和 Next.js 性能规则的开源仓库，专门为 AI 编程智能体格式化，旨在优化架构决策。",
+  "summary": "Vercel 全新的 “react-best-practices” 仓库将十多年的工程经验总结为 40 多条性能优化规则。与关注语法的传统 Linter 不同，该框架解决了诸如异步瀑布流和包体积优化等高层架构问题。它主要为 Cursor 和 Claude Code 等 AI 智能体设计，提供结构化的 AGENTS.md 文件和代码示例，引导 LLM 生成更高性能的代码。虽然社区对“氛围编程”（vibe coding）上下文环境的改善表示欢迎，但一些开发者对供应链安全以及 AI 理解复杂业务逻辑的能力表示担忧。",
+  "mainPoints": [
+    {
+      "point": "Vercel 推出了专门的 “智能体技能”（Agent Skill），包含 40 多条针对 React 和 Next.js 开发的性能规则。",
+      "explanation": "该开源仓库将 Vercel 内部的工程知识转化为针对 AI 消费优化的格式，重点关注消除异步瀑布流和减小包体积等关键性能领域。"
+    },
+    {
+      "point": "该框架针对的是传统 Lint 工具通常无法有效处理的高层架构模式。",
+      "explanation": "虽然 ESLint 等工具可以处理语法和 Hook 的使用，但 Vercel 的规则侧重于服务器端性能和数据获取策略等复杂问题，为 AI 智能体提供了必要的架构指导层。"
+    },
+    {
+      "point": "通过标准化的 “智能体技能” 格式和 CLI 工具，简化了与 AI 编程生态系统的集成。",
+      "explanation": "开发者可以通过一条命令将这些最佳实践注入到 Claude Code 或 Cursor 等流行的 AI 驱动 IDE 和智能体中，从而有效增强智能体对现代 React 优化的 “知识”。"
+    },
+    {
+      "point": "社区反应强调了上下文工程的重要性，同时也对新的安全和逻辑风险提出了警告。",
+      "explanation": "虽然专家们一致认为更好的上下文能改善 AI 输出，但人们也开始担心针对 “技能描述” 的潜在供应链攻击，以及这些规则是否能解决理解业务逻辑的核心问题。"
+    }
+  ],
+  "keyQuotes": [
+    "该框架封装了来自 Vercel 生产代码库的十多年工程知识，专门为 AI 编程智能体的消费而构建。",
+    "Vercel 的方案侧重于更高层级的架构决策，例如请求瀑布流和包结构，这些通常是 Lint 工具无法涵盖的。",
+    "上下文工程绝对是“氛围编程”成功的最大因素。",
+    "想象一下针对提供给 AI 智能体的“技能描述”发起供应链攻击。真是有趣的时代。",
+    "代码化的最佳实践固然很好，但我看到的大多数 AI 编程失败并不是因为缺少 React 优化规则，而是因为智能体不理解实际的业务逻辑。"
+  ],
+  "tags": [
+    "React",
+    "Next.js",
+    "AI 智能体",
+    "性能优化",
+    "LLM 上下文"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 502,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772202600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-02-27 14:30:00"
+}

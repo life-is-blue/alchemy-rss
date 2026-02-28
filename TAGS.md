@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-02-28 12:24:31 | [返回首页](/README.md)
+**更新时间**: 2026-02-28 14:05:07 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9179)
+- [AI & 大模型](#ai-llm) (9185)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (406)
@@ -43,7 +43,7 @@
 - [自动驾驶推理模型、ChatGPT-引入广告、苹果与谷歌的交易等...](https://www.deeplearning.ai/the-batch/issue-337) - AI 精选
 - [如何为-AI-智能体编写高质量的规格说明书-Spec](https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents) - AI 精选
 
-- [查看全部 9179 篇...](/details/tags/ai-llm.md)
+- [查看全部 9185 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
