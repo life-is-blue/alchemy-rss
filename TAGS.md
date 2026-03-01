@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-01 20:03:34 | [返回首页](/README.md)
+**更新时间**: 2026-03-01 22:04:12 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9197)
+- [AI & 大模型](#ai-llm) (9198)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (701)
 - [DevOps](#devops) (409)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [1500-个-PR、0-人写代码：Codex-驱动的百万行级内部产品实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247657188&idx=2&sn=a68f1062d1f1e0faa8b076849cfb42e9) - AI 精选
 - [Nano-Banana-2：将-Pro-级能力与闪电般的速度相结合](https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/) - AI 精选
 - [OpenClaw-+-Claude-Code-超强教程：一个人就能搭建完整的开发团队！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719868&idx=1&sn=c93e0542f8bebb653559315d02841b43) - AI 精选
 - [中国也有了世界第一的模型，他的名字，叫-Seedance-2.0。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a) - AI 精选
@@ -41,9 +42,8 @@
 - [Skills-商店来了：5-万人在用的-Top-10-热门-Skills，我帮你试了一遍](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247488072&idx=1&sn=8e7dcebdccc93f06cd0c05ceac82b05c) - AI 精选
 - [Wilson-Lin-谈-FastRender：由数千个并行智能体构建的浏览器](https://simonwillison.net/2026/Jan/23/fastrender/#atom-everything) - AI 精选
 - [自动驾驶推理模型、ChatGPT-引入广告、苹果与谷歌的交易等...](https://www.deeplearning.ai/the-batch/issue-337) - AI 精选
-- [如何为-AI-智能体编写高质量的规格说明书-Spec](https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents) - AI 精选
 
-- [查看全部 9197 篇...](/details/tags/ai-llm.md)
+- [查看全部 9198 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
