@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e59e725e",
+  "title": "“专家级新手”与“独狼”将主导 LLM 早期时代",
+  "url": "https://www.jeffgeerling.com/blog/2026/expert-beginners-and-lone-wolves-dominate-llm-era/",
+  "date": "2026-03-01 16:00:00",
+  "author": "jeff@jeffgeerling.com (Jeff Geerling)",
+  "siteName": "Jeff Geerling",
+  "content": "<html>\n <head></head>\n <body>\n  <p>After migrating this blog <a href=\"https://www.jeffgeerling.com/blog/2009/moved-drupal-hello-drupal/\">from a static site generator into Drupal in 2009</a>, I noted:</p>\n  <blockquote>\n   <p>As a sad side-effect, all the blog comments are gone. Forever. Wiped out. But have no fear, we can start new discussions on many new posts! I archived all the comments from the old 'Thingamablog' version of the blog, but can't repost them here (at least, not with my time constraints... it would just take a nice import script, but I don't have the time for that now).</p>\n  </blockquote>\n  <p>That would've been the case this year, when I <a href=\"https://www.jeffgeerling.com/blog/2026/migrated-to-hugo/\">migrated back from Drupal to a static site</a>—except I wanted to test local LLMs to assist with the migration. I'd label myself an 'AI skeptic', but I admit it's impressive how well LLMs achieve certain tasks, especially if you treat them like junior devs on a small team, break down work into reasonable-sized tasks, review the work in stages (checking in code in a VCS)—as you would if you were a technical architect.</p>\n  <p>I've had experience working with a number of teams, and I'd say the two models I was using on my Mac (GPT-OSS 20B and Qwen3 Coder 30B, via Ollama) are on the lower-to-midrange end of dev teams I've worked with. \"Frontier\" models might be better than that, but they still don't solve all the issues prevalent in computer science!</p>\n  <blockquote>\n   <p><strong>Nota bene</strong>: not one word of this blog post (nor any post on this blog, either in the past or in the future) was written by, or with the assistance of an LLM—and yes, I use em-dashes, which are easy to type on a Mac (⇧ + ⌥ + <code>-</code>). <a href=\"https://alxwntr.com/classic-mac-os-sounds/\">Sosumi</a>!</p>\n  </blockquote>\n  <p>When I worked full-time as a technical architect, I encountered:</p>\n  <ul>\n   <li><strong>Missed requirements</strong>: Sometimes this was my own fault, but often it was a sign of a feature that was missing something important. The code would implement a feature, but lack one or two of the important bits required to get it across the line for stakeholder approval. Sometimes it was something nobody considered, but was obvious in hindsight.</li>\n   <li><strong>Working, but suboptimal implementations</strong>: After building at least a few hundred Drupal sites, I learned design patterns that lead to either unmaintainable disasters or efficient, maintainable sites. The more junior the developer, the more often I'd spend time with them trying to guide approaches down the less rocky path.</li>\n   <li><strong>Premature optimizations</strong>: The paradoxical flip-side is spending <em>too much</em> time perfecting a feature. Sometimes code will only be run one time in a migration, and it'll be irrelevant beyond that. So don't spend hours optimizing its <a href=\"https://en.wikipedia.org/wiki/Big_O_notation\">Big O</a> to shave 3 minutes off a 7 hour process!</li>\n   <li><strong>Burnout</strong>: Seeing patterns that lead to burnout both for myself and other devs, I tried to help project managers lighten a load or go easier on devs in the thick of it. Sometimes it was just a matter of taking a task off that developer's back, other times pulling a feature and reworking the requirements.</li>\n  </ul>\n  <p>The LLMs I enlisted for help hit all four problems at various times (yes, even 'burnout', as their context windows would grow too large for my meager Mac mini, and I'd reset and start anew).</p>\n  <p>The big difference? I could supply a small set of requirements<sup id=\"fnref:1\"><a href=\"#fn:1\" class=\"footnote-ref\" role=\"doc-noteref\">1</a></sup>, and <strong>within 1-2 minutes, I would have code that runs</strong>. Maybe not code that <em>works</em>, but it would be in close proximity to the code that meets all my requirements.</p>\n  <p>If I were assigning the same tasks to a small dev team, I wouldn't expect the first code back for review for at <em>least</em> a day. Maybe two. And probably a full sprint (e.g. 2 weeks) before we'd have a solution ready for QA testing.</p>\n  <p>With some initial success in getting the code I needed (coding was only about half this project), I was a little troubled:</p>\n  <p><em>I was able to finish this entire comment migration in a few evenings.</em></p>\n  <p>Being able to do that felt great, sure. But the fact 'senior' developers can be similarly productive, <em>without the useful work of mentoring junior devs through this process</em>, worries me.</p>\n  <p>AI/LLMs—even the best 'frontier' models—cannot and I believe <em>will never</em> be good at the other 80% of work involved in a task like content migration.</p>\n  <p>The best projects—the ones that don't go over budget and timeline—require technical and project management from people who ran the gauntlet as beginners.</p>\n  <p>We need people who've brought down the entire site with a bad query or migration step. We need people who've had to withstand the ire of an angry sysadmin on a weekend night their Friday deployment wiped out a database...</p>\n  <p>You don't get that for free.</p>\n  <p>With AI/LLMs, and without the mentorship aspect, you end up with two types of developers:</p>\n  <ol>\n   <li><strong>Expert beginners</strong>: Junior devs who feel like they can achieve <em>anything</em> with AI coding tools. (But they don't see the enormous footguns lurking in their code.)</li>\n   <li><strong>Lone Wolf Developers</strong>: Devs who <em>did</em> go through the ringer earlier in the pre-AI era, and have the tools to play LLMs like an orchestra, building decent software <em>fast</em>—and <em>alone</em>. And who now have no excuse to work on teams with junior devs and be the curmudgeons<sup id=\"fnref:2\"><a href=\"#fn:2\" class=\"footnote-ref\" role=\"doc-noteref\">2</a></sup> they were meant to be.</li>\n  </ol>\n  <p>There's less of a path from #1 to #2 now. And that's even assuming you should strive to become a #2. I'd argue we need 'middle class' developers: devs who want to earn a living, clock in and clock out, and build software that helps the world run.</p>\n  <p>These developers also benefit from the mentorship (and sometimes consternation) they'd traditionally get early in their careers.</p>\n  <p>Sycophant LLMs are not a substitute for senior devs.</p>\n  <p>And they're also about the exact <em>opposite</em> of what you'd want for QA<sup id=\"fnref:3\"><a href=\"#fn:3\" class=\"footnote-ref\" role=\"doc-noteref\">3</a></sup>.</p>\n  <p><em>I reposted this excerpt from <a href=\"https://www.jeffgeerling.com/blog/2026/migrating-13000-comments-from-drupal-to-hugo/\">Migrating 13,000 Comments from Drupal to Hugo</a> as a standalone blog post, since the topic of how LLMs change the role of 'programmer' is something I'll write about more in the future.</em></p>\n  <div class=\"footnotes\" role=\"doc-endnotes\">\n   <hr>\n   <ol>\n    <li id=\"fn:1\">\n     <p>Like \"Here is my python export script. Add a database query that pulls all comments from a Drupal 10 database, along with comment information including email address and username, and sort that data by the node the comment is attached to, including heirarchical 'parent' information.\"&nbsp;<a href=\"#fnref:1\" class=\"footnote-backref\" role=\"doc-backlink\">↩︎</a></p>\n    </li>\n    <li id=\"fn:2\">\n     <p>I don't mean this in a negative way (at least, most of the time). Much of my career (and personal) development resulted from conversations I've had with people who <em>vehemently</em> disagreed with my take on a topic, feature, bug report, etc. Most people I initially thought were standoffish or ill-tempered were amazing to work with and helped me see something in an entirely different way. (This still happens regularly.)&nbsp;<a href=\"#fnref:2\" class=\"footnote-backref\" role=\"doc-backlink\">↩︎</a></p>\n    </li>\n    <li id=\"fn:3\">\n     <p>Sadly, the battle for proving QA's worth is already lost in many companies. QA folks have often been the lynchpin that saves a project, in my experience, uncovering major faults well before they have a seismic impact on said project.&nbsp;<a href=\"#fnref:3\" class=\"footnote-backref\" role=\"doc-backlink\">↩︎</a></p>\n    </li>\n   </ol>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Jeff Geerling 认为 LLM 时代正在造成缺乏深厚经验的“专家级新手”与不再指导他人的“独狼”之间的鸿沟，威胁着传统的软件工程职业路径。",
+  "oneSentenceSummary": "Jeff Geerling 认为 LLM 时代正在造成缺乏深厚经验的“专家级新手”与不再指导他人的“独狼”之间的鸿沟，威胁着传统的软件工程职业路径。",
+  "summary": "本文通过一个真实项目（将 13，000 条评论从 Drupal 迁移到静态网站）探讨了大语言模型（LLM）对软件开发行业的影响。作者自称是一名 AI 怀疑论者，他发现虽然本地 LLM 在特定任务中可以充当高效的“初级开发人员”，但它们也继承了人类常见的缺陷，如遗漏需求和实现方案并非最优。核心担忧在于开发者“中坚力量”的流失。作者识别出两种新兴原型：“专家级新手”——利用 AI 构建自己并不完全理解的事物的初级人员；以及“独狼”——利用 AI 孤立工作的资深人员。这种转变可能会打破至关重要的导师制度循环，即资深开发者引导初级人员经历现实世界的失败和架构权衡的“磨炼”。",
+  "mainPoints": [
+    {
+      "point": "在结构化的技术架构中，LLM 作为初级开发人员表现最佳。",
+      "explanation": "作者发现，通过将任务分解为可管理的模块并进行严格的代码审查，LLM 可以加速复杂的迁移工作，而这类工作传统上需要一个团队花费数周时间。"
+    },
+    {
+      "point": "“专家级新手”的崛起让初级开发者产生了一种虚假的能力感。",
+      "explanation": "AI 工具允许初级人员快速生成可运行的代码，但他们往往缺乏识别“隐患”或架构缺陷的经验，而这些经验只能通过多年的手动排障获得。"
+    },
+    {
+      "point": "LLM 促使资深开发者产生“独狼”行为，抑制了团队导师制度。",
+      "explanation": "资深开发者现在可以利用 AI 独自高速构建软件，从而失去了通过代码审查和讨论等协作过程来指导初级人员的动力和机会。"
+    },
+    {
+      "point": "软件行业面临失去开发者“中坚力量”和必要的 QA 监督的风险。",
+      "explanation": "从新手到专家的传统路径依赖于人类导师制度和从失败中学习；而只会顺从的 LLM 无法取代资深同行和 QA 提供的批判性、有时甚至是对抗性的反馈。"
+    }
+  ],
+  "keyQuotes": [
+    "我会把自己贴上‘AI 怀疑论者’的标签，但我承认 LLM 在完成某些任务方面的表现令人印象深刻，特别是如果你把它们当作小团队中的初级开发人员来看待。",
+    "专家级新手：觉得利用 AI 编程工具可以实现任何目标的初级开发者。（但他们没有看到代码中潜伏的巨大隐患。）",
+    "独狼开发者：在 AI 时代之前经历过磨炼，拥有像指挥管弦乐队一样操控 LLM 的工具，能够快速且独立地构建出像样的软件。",
+    "只会顺从的 LLM 无法替代资深开发者。",
+    "最好的项目——那些不超预算、不延期的项目——需要那些在新手时期经历过磨炼的人来进行技术和项目管理。"
+  ],
+  "tags": [
+    "LLM",
+    "软件工程",
+    "导师制度",
+    "开发者职业生涯",
+    "AI 生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1148,
+  "domain": "jeffgeerling.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": null,
+  "sourceId": "SOURCE_7d6ae0f8",
+  "sourceName": "Jeff Geerling",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772380800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-01 16:00:00"
+}
