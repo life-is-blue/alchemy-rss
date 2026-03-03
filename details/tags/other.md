@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-03 18:11:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-03 20:06:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11113,9 +11113,7 @@
 
 ### [实时模式：无需第二引擎，在-Spark-API-上实现超低延迟流处理](https://www.databricks.com/blog/real-time-mode-ultra-low-latency-streaming-spark-apis-without-second-engine)
 
-2026-03-02 17:30:00 | 标签: Apache Spark, Structured Streaming, 实时数据处理, 数据工程, Databricks
-
-> 本文介绍了 Apache Spark Structured Streaming 的“实时模式”（RTM），这是一项重大的架构演进，旨在消除对 Apache Flink 等第二流引擎的需求。通过从微批处理转向连续执行模型，Spark 现在可以处理欺诈检测、个性化和 AI 上下文交付等关键任务用例的亚秒级延迟需求。作者详细介绍了三个关键技术支柱：连续数据流、非阻塞流水线调度和低延迟流式 Shuffle。Databricks 提供的基准测试结果表明，在常见的特征工程任务中，RTM 的速度比 Flink 快高达 92%，允许数据团队在单一且熟悉的 API 下统一其技术栈。
+2026-03-02 17:30:00
 
 
 
@@ -21363,9 +21361,7 @@
 
 ### [「小又废」的墨水屏，为什么人人抢着买？](https://www.ifanr.com/1654135?utm_source=rss&utm_medium=rss&utm_campaign=)
 
-2026-03-03 09:59:20 | 标签: 墨水屏, 消费电子, 商业模式, 数字排毒, 文石Onyx
-
-> 文章以爆火的「阅星瞳 X4」磁吸墨水屏为切入点，探讨了墨水屏行业在 Kindle 退出中国市场后的剧烈变革。作者指出，墨水屏正经历形态上的「特化」：一类是极简、寄生于手机的数字排毒工具，通过物理限制解决信息焦虑；另一类是搭载开放安卓系统、追求高溢价的大屏生产力平板。国产厂商如文石（Onyx）通过「开放生态+高溢价硬件」的商业模式，打破了亚马逊「硬件亏本、内容回血」的局限，实现了显著的盈利。然而，行业仍面临元太科技（E Ink）上游供应链高度垄断、技术同质化的长期挑战。
+2026-03-03 09:59:20
 
 
 
@@ -29067,11 +29063,11 @@
 
 
 
-### [快不等于好：Anthropic-和-OpenAI-的快速模式藏着什么](https://baoyu.io/blog/2026-02-15/fast-mode-vs-codex-spark)
+### [Anthropic-CEO-Dario-Amodei-访谈：我们正在接近指数的终点](https://baoyu.io/blog/2026-02-14/dario-amodei-interview-analysis)
 
-2026-02-15T00:00:00.000Z
+2026-02-14T00:00:00.000Z
 
-> Anthropic 和 OpenAI 几乎同时推出 AI 编程的「快速模式」，但走了完全不同的技术路线：一个给同一模型加速 2.5 倍收 6 倍价格，一个用蒸馏模型跑在专用芯片上飙到 1000 token/秒。速度军备竞赛背后，藏着两种截然不同的产品哲学。
+> Anthropic CEO Dario Amodei 再上 Dwarkesh Podcast，聊了两小时。收入每年翻 10 倍、刚融 300 亿、估值 3800 亿——但他不敢像 OpenAI 那样 all-in 算力。因为猜对方向容易，猜对时间几乎不可能，而猜错一年就可能破产。
 
 
 

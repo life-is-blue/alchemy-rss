@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-03 18:11:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-03 20:06:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4220,9 +4220,7 @@
 
 ### [设计优先的协作](https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html)
 
-2026-03-03 04:04:00 | 标签: AI 编程, 软件架构, 设计优先, LLM 工作流, 技术债
-
-> Martin Fowler 探讨了 AI 辅助编程中由“实现陷阱”引起的摩擦——即 AI 倾向于跳过设计直接进入代码实现。这导致了“隐形的设计决策”，使得代码审查变得极其耗费认知资源，并引发技术债。为了解决这一问题，他提出了一种模拟人类白板讨论的“设计优先协作”模型。该框架包含五个递进层级：能力 (Capabilities)、组件 (Components)、交互 (Interactions)、契约 (Contracts)，最后是实现 (Implementation)。通过执行“设计获批前不写代码”的规则，开发者可以以极低的成本与 AI 在需求和架构上达成一致，远低于修复成品代码错误的成本。这种...
+2026-03-03 04:04:00
 
 
 
@@ -7360,9 +7358,7 @@
 
 ### [如何终结代码审查](https://www.latent.space/p/reviews-dead)
 
-2026-03-02 22:13:56 | 标签: 代码审查, AI 工程, 软件工程, 规格驱动开发, 自动化测试
-
-> 随着 AI 指数级增加代码变更的数量和规模，传统的手动代码审查已成为不可持续的瓶颈。作者建议，开发者不应试图在“阅读量”上胜过机器，而必须在“思考”上胜过机器，将人为干预上移至规格说明和规划阶段。文章介绍了一种信任的“瑞士奶酪模型”，涉及多个层面，如比较多个 AI 输出、确定性护栏（测试/合约）、人工编写的验收标准（BDD）、细粒度权限系统以及对抗性智能体验证。这种范式转变将代码视为规格说明的可丢弃产物，而非人工审查的主要对象。
+2026-03-02 22:13:56
 
 
 
@@ -29790,33 +29786,25 @@
 
 ### [AI-开发时代的“能力暴露与禁止空间”方法论：TPDD-与高层测试闭环](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276940&idx=3&sn=2e0fe2b6cd76cc6916099b8b0257b57e)
 
-2026-03-03 06:43:00 | 标签: TPDD, AI Agent, 软件工程, 自动化测试, 安全边界
-
-> 随着 AI 从工程工具演变为基础设施，软件开发正从“写代码”转向“描述意图”，导致系统逻辑可见性降低。作者指出，当前 AI 开发存在“能力暴露”过度而“禁止空间”缺失的失衡问题，开发者往往关注 AI 能做什么，却忽视了安全红线。文章核心提倡回归并升级 TPDD 方法论：由于 AI 已内化了 TDD（单元测试）的闭环，人类工程师应转向更高维度的测试计划制定。通过定义 TestPlan.md，明确系统的核心检查点（Must/Need/Should）和红线禁区（如禁止访问敏感文件、禁止越权等），实现对 AI 行为的宏观控制与安全保障，确保系统在 AI 高产环境下的可控性与可靠性。
+2026-03-03 06:43:00
 
 
 
 ### [Skills-真的可以帮我干活了：把工单分析变成一个可复用的-Skill](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558554&idx=1&sn=239e1d2c63c0a9a7eb0be1ced653db00)
 
-2026-03-03 00:33:00 | 标签: Anthropic Skills, Claude Code, Agent Browser, SOP 自动化, 工单分析
-
-> 文章针对企业内网环境下工单分析的痛点（数据隔离、高频重复、多角色需求差异），提出了一种基于 Anthropic Skills 的可复用自动化方案。作者深入分析了传统 Playwright 或 UI 模拟方案在处理动态 DOM 和高 Token 消耗方面的局限性，创新性地提出“Copy as fetch + agent-browser eval”的工程化思路。该方案通过在浏览器中执行预捕获的 API 请求来稳定获取 JSON 数据，并利用 Markdown 格式的 Skills 进行自然语言编排，实现了比传统 Workflow 更高的灵活性和可维护性。最终将复杂的工单分析 SOP 转化为一条指令...
+2026-03-03 00:33:00
 
 
 
 ### [开源-LLM-背后的架构](https://blog.bytebytego.com/p/the-architecture-behind-open-source)
 
-2026-03-02 16:30:50 | 标签: LLM 架构, 混合专家模型 (MoE), 多头潜变量注意力 (MLA), 开源权重模型, DeepSeek
-
-> 文章探讨了开源权重 LLM 的“借用与构建”生态系统，DeepSeek、Moonshot AI 和 Meta 等机构在共享的技术突破基础上进行迭代。它指出混合专家模型（MoE）Transformer 已成为标准架构，允许模型在不线性增加计算成本（激活参数）的情况下提高知识容量（总参数）。作者分析了关键的技术权衡，包括用于 KV 缓存优化的多头潜变量注意力（MLA）与分组查询注意力（GQA）等注意力机制。此外，它强调虽然架构正在趋同，但训练方法论——特别是具有可验证奖励的强化学习、蒸馏和合成智能体数据——已成为模型性能和稳定性的主要差异化因素。
+2026-03-02 16:30:50
 
 
 
 ### [Jefferies-利用-Databricks-和智能体分析实现大规模股票研究现代化](https://www.databricks.com/blog/jefferies-modernizes-equity-research-scale-databricks-and-agentic-analytics)
 
-2026-03-02 16:28:48 | 标签: 智能体 AI, Databricks, 股票研究, LangGraph, 多智能体系统
-
-> 本文详细介绍了全球投资银行 Jefferies 如何通过构建 Jefferies Data Intelligence (JDI) 来实现其股票研究业务的现代化。面对从海量数据集中综合 3，500 家公司信号的挑战，Jefferies 告别了传统的基于 SQL 的自服务模式和缓慢的“保姆式”工程支持。新系统使用 Databricks AI/BI Genie 作为推理引擎，并采用基于 LangGraph 构建的多智能体架构，将自然语言问题转化为复杂的数据查询。该工作流包含负责规划、执行和综合的专门智能体，允许分析师在保持 Databricks Unity Catalog 严格数据治理的同时，跨内部...
+2026-03-02 16:28:48
 
 
 
@@ -41864,9 +41852,7 @@
 
 ### [2026-03-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-03-03-HackerNews/)
 
-2026-03-03 08:37:01 | 标签: Hacker News, 隐私安全, 开源操作系统, AI 代理, 软件工程
-
-> 文章精选了 Hacker News 过去 24 小时内的十大热点。核心内容包括：Motorola 与 GrapheneOS 达成合作，推动隐私强化系统进入主流硬件；/e/OS 与 Jolla 手机展示了欧洲去谷歌化生态的最新进展；技术层面，WebMCP 协议的发布预示着网站将为 AI 代理进行标准化重构，而 git-memento 工具则尝试解决 AI 编码的可追溯性问题。此外，文章还报道了 Anthropic 产品在 macOS 上的性能缺陷、微软社区管理的公关危机，以及美国 NIST 限制外籍研究人员引发的科研竞争力担忧。
+2026-03-03 08:37:01
 
 
 
@@ -54125,6 +54111,14 @@
 ### [Vol.52-74-页-PPT-解读-Deepseek-与-AI-Agent](https://www.xiaoyuzhoufm.com/episode/67bad726606e5c5940403ea5)
 
 2025-02-24 16:00:00
+
+
+
+### [#447.2026-AI-趋势展望：推理革命、智能体进化与“氛围编程”的崛起](https://www.xiaoyuzhoufm.com/episode/69a66a8cde29766da938504d)
+
+2026-03-03 09:19:35 | 标签: 大语言模型, 推理革命, 后期训练, DeepSeek R1, 推理侧扩展
+
+> 本期播客深度访谈了知名 AI 研究员、《从头开始构建大语言模型》作者 Sebastian Raschka。核心讨论围绕 AI 领域的“范式转移”展开：研究重心正从已趋于成熟的预训练（Pre-training）转向后期训练（Post-training），特别是通过强化学习和可验证奖励提升模型的逻辑推理能力。嘉宾详细解析了 OpenAI o1 和 DeepSeek R1 背后的技术逻辑，如推理侧扩展（Inference Scaling）通过增加推理时算力换取准确率。此外，播客探讨了“氛围编程”（Vibe Coding）的兴起，强调利用 LLM 构建确定性工具而非仅仅进行对话。最后，嘉宾展望了多智能...
 
 
 
