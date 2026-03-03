@@ -1,0 +1,54 @@
+{
+  "id": "RAW_e42e07fe",
+  "title": "实时模式：无需第二引擎，在 Spark API 上实现超低延迟流处理",
+  "url": "https://www.databricks.com/blog/real-time-mode-ultra-low-latency-streaming-spark-apis-without-second-engine",
+  "date": "2026-03-02 17:30:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Apache Spark Structured Streaming has long powered mission-critical data pipelines at scale, from streaming ETL to analytics and machine learning. But as operational use cases evolved, teams began demanding something more: sub-second latencies for applications such as fraud detection, personalization, anomaly detection, real-time alerting and reporting.</p>\n  <p>Historically, meeting these ultra-low latency requirements meant introducing specialized systems alongside Spark. With the introduction of Real-Time Mode in Spark Structured Streaming, that tradeoff is no longer necessary. In this blog, we explore how Spark simplifies real-time streaming architecture for common use cases such as feature engineering, eliminates long standing operational complexity, and delivers industry-leading performance.</p>\n  <h2>Real-time streaming no longer requires running multiple disparate systems</h2>\n  <p>The ability to process and act on data in real-time is now a core requirement. Modern applications, especially AI agents, rely on a continuous stream of fresh context to function. If the underlying data is incomplete or lagging, the user experience suffers. Real-time performance is not only needed for traditional use cases such as fraud detection, but for every common interaction where a user expects precise, up-to-date responses. In this environment, latency directly impacts revenue, customer trust, and competitive advantage.&nbsp;</p>\n  <p>Data teams building real-time streaming applications have historically had to manage two distinct data processing stacks: Apache Spark™ for large-scale analytics and specialized systems such as Apache Flink® or Kafka Streams for sub-second, latency sensitive applications. This fragmentation requires teams to maintain duplicated codebases, manage separate governance models, and hire specialized talent to tune and maintain engine-specific infrastructure.</p>\n  <p>Launched in public preview in August 2025, <a data-external-link=\"true\" href=\"https://www.databricks.com/blog/introducing-real-time-mode-apache-sparktm-structured-streaming\">Real-Time Mode (RTM) for Apache Spark Structured Streaming</a> is designed to eliminate this friction. By fundamentally evolving the Spark execution engine, we have removed the need for a second system. This shift allows engineers to address the entire spectrum of use cases—from high-throughput ETL to low-latency real-time apps—using the same Spark API they already know. This means less time managing infrastructure, and more time to focus on the business use case.</p>\n  <h2>Spark can now process events in milliseconds; up to 92% faster than Flink&nbsp;</h2>\n  <p>Real-Time Mode (RTM) introduced a new optimized execution engine that enables Spark to deliver consistent sub-second latencies. To evaluate performance, we conducted a side-by-side comparison between Spark RTM and Apache Flink. The testing was based on real-time feature computation workloads we commonly see in production. These feature computation patterns are representative of most low-latency ETL use cases, such as fraud detection, personalization, and operational analytics.</p>\n  <p>We evaluated three common feature patterns:</p>\n  <ul>\n   <li>Feature encoding (stateless transformation): Truncating input rows and &nbsp;encoding</li>\n   <li>Feature enrichment (via join): Joining a stream with &nbsp;a static table</li>\n   <li>Feature calculation (via aggregation): GroupBy + Count aggregation&nbsp;</li>\n  </ul>\n  <p>The results demonstrate that Spark's evolved architecture provides a latency profile comparable to specialized streaming frameworks.</p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/2026-02-RTM-blog-1200x628.png\" data-entity-uuid=\"3de9efd2-d376-46e9-921a-1631fb77d466\" data-entity-type=\"file\" alt=\"Apache Spark Real-Time Mode vs. Apache Flink\" width=\"2400\" height=\"1256\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p>This performance is enabled &nbsp;by three key technical innovations in RTM:</p>\n  <ul>\n   <li><strong>Continuous data flow:</strong> Data is processed as it arrives instead of discretized, periodic chunks.</li>\n   <li><strong>Pipeline scheduling:</strong> Stages run simultaneously without blocking, allowing downstream tasks to process data immediately without waiting for upstream stages to finish.</li>\n   <li><strong>Streaming shuffle:</strong> Data is passed between tasks immediately, bypassing the latency bottlenecks of traditional disk-based shuffles.</li>\n  </ul>\n  <p>Together, these transform Spark into a high-performance, low-latency engine capable of handling the most demanding operational use cases.</p>\n </body>\n</html>",
+  "aiSummary": "Databricks 为 Spark Structured Streaming 推出了实时模式（Real-Time Mode），通过架构创新实现了亚秒级延迟，并消除了对 Flink 等独立流引擎的需求。",
+  "oneSentenceSummary": "Databricks 为 Spark Structured Streaming 推出了实时模式（Real-Time Mode），通过架构创新实现了亚秒级延迟，并消除了对 Flink 等独立流引擎的需求。",
+  "summary": "本文介绍了 Apache Spark Structured Streaming 的“实时模式”（RTM），这是一项重大的架构演进，旨在消除对 Apache Flink 等第二流引擎的需求。通过从微批处理转向连续执行模型，Spark 现在可以处理欺诈检测、个性化和 AI 上下文交付等关键任务用例的亚秒级延迟需求。作者详细介绍了三个关键技术支柱：连续数据流、非阻塞流水线调度和低延迟流式 Shuffle。Databricks 提供的基准测试结果表明，在常见的特征工程任务中，RTM 的速度比 Flink 快高达 92%，允许数据团队在单一且熟悉的 API 下统一其技术栈。",
+  "mainPoints": [
+    {
+      "point": "Spark 实时模式消除了维护两个独立数据处理栈的运维复杂性。",
+      "explanation": "通过在原生 Spark API 中实现亚秒级延迟，团队不再需要为实时任务管理 Flink、为批处理 ETL 管理 Spark 等独立系统，从而统一了治理和代码库。"
+    },
+    {
+      "point": "新的执行引擎利用三项根本性的技术创新来实现高性能流处理。",
+      "explanation": "创新包括采用连续数据流而非微批处理、同步流水线调度以防止阻塞，以及绕过传统磁盘瓶颈的流式 Shuffle，从而实现更快的任务间通信。"
+    },
+    {
+      "point": "基准测试表明，Spark RTM 在常见的特征工程工作负载中可以超越专门的流处理框架。",
+      "explanation": "与 Apache Flink 的对比显示，Spark 演进后的架构在欺诈检测和个性化中典型的无状态转换、连接和聚合方面，处理速度提高了 92%。"
+    }
+  ],
+  "keyQuotes": [
+    "Apache Spark Structured Streaming 的实时模式（RTM）旨在消除这种摩擦……从而不再需要第二个系统。",
+    "数据在到达时即被处理，而不是被切分为离散的、周期性的块。",
+    "这一转变使工程师能够使用他们已经熟悉的相同 Spark API，处理从高吞吐量 ETL 到低延迟实时应用的全谱系用例。",
+    "流水线调度：各阶段同步运行而不阻塞，允许下游任务立即处理数据，无需等待上游阶段完成。"
+  ],
+  "tags": [
+    "Apache Spark",
+    "Structured Streaming",
+    "实时数据处理",
+    "数据工程",
+    "Databricks"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 535,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772472600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-02 17:30:00"
+}
