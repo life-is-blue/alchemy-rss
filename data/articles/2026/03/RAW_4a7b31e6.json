@@ -1,0 +1,59 @@
+{
+  "id": "RAW_4a7b31e6",
+  "title": "英伟达放弃 GPU 上 LPU：新推理芯片被曝 Groq 即买即用，OpenAI 第一个吃螃蟹",
+  "url": "https://www.qbitai.com/2026/03/383329.html",
+  "date": "2026-03-03 06:37:19",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"77\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"78\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"76\">世界第一也着急，英伟达迎来架构换血！</p>\n  <p data-track=\"4\">据悉，在即将开幕的3月圣何塞GTC大会上，黄仁勋将发布一套全新的AI推理系统——</p>\n  <p data-track=\"5\">核心是一颗<strong>专为推理优化</strong>的新芯片。</p>\n  <p data-track=\"6\">而且芯片的首位大客户已经敲定，就是刚刚完成1100亿美元巨额融资的OpenAI。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080903_18e1c56227e0e0dc084ffcf7d6df9734.png\">\n  </div>\n  <p data-track=\"7\">更引人关注的是，这款芯片的底层架构并非来自英伟达自研，而是由原<strong>Groq</strong>团队打造的LPU（语言处理单元） 架构。</p>\n  <p data-track=\"8\">这意味着：<strong>英伟达第一次在核心AI算力产品线上，大规模引入外部架构设计。</strong></p>\n  <p data-track=\"9\">而这次“不自造”的背后，是去年那笔震动行业的交易——</p>\n  <p data-track=\"10\">英伟达斥资约200亿美元，完成对Groq核心技术与团队的“acqui-hire”（收购式招聘）。</p>\n  <p data-track=\"11\">如今，这枚推理芯片，正是那笔投资的第一次落地。</p>\n  <p data-track=\"12\">依旧是典型的黄仁勋式策略：买成熟方案，快速部署，直接上战场，一分冤枉钱都不花。</p>\n  <p data-track=\"13\">极致的ROI。</p>\n  <p data-track=\"15\">据《华尔街日报》披露，英伟达正在开发一个新的推理计算系统，该系统将结合Groq设计的芯片，并在GTC大会上正式发布。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080901_b29dce62462e03f945065baa0235f147.png\">\n  </div>\n  <p data-track=\"16\">与此同时，在OpenAI最新的融资文件中，这一计划已现端倪：</p>\n  <blockquote>\n   <p data-track=\"17\">将扩大与英伟达的长期合作，包括使用3GW的<strong>dedicated inference capacity（专用推理算力）</strong>，以及在Vera Rubin系统上提供2GW的训练算力。</p>\n  </blockquote>\n  <p data-track=\"18\">如果老黄不跳票，那么这一“专用推理算力”极可能正是基于这颗新芯片。</p>\n  <p data-track=\"19\">如开头所说，一旦落地，这将是英伟达<strong>第一次在核心AI算力产品线上，大规模引入外部架构设计——</strong></p>\n  <p data-track=\"20\"><strong>Groq的LPU。</strong></p>\n  <p data-track=\"21\">选择直接引入外部架构，而非完全自研，与时间窗口密切相关。</p>\n  <p data-track=\"22\">近几个月来，OpenAI等头部客户已在积极寻找更高效率的推理替代方案，并与其他芯片公司展开合作谈判。</p>\n  <p data-track=\"23\">在推理需求迅速增长的背景下，英伟达需要更快给出针对性的解决方案。</p>\n  <p data-track=\"24\">而这次用LPU，而非GPU，原因就在于推理场景的适配上。</p>\n  <p data-track=\"25\">GPU通常将大量模型参数存放在外部HBM（高带宽内存）中，计算核心与内存之间需要频繁数据搬运。在训练阶段，通过大规模并行可以摊薄搬运成本。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080901_1481d594cbdf127c6e0aa610784b30ea.png\">\n  </div>\n  <p data-track=\"26\">但在推理尤其是decode阶段，批量变小、延迟敏感，系统瓶颈更多来自数据移动而非算力本身。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080901_57be8b7c006029f9198798bae887371d.png\">\n  </div>\n  <p data-track=\"27\">Groq的LPU架构改变了这一逻辑——</p>\n  <p data-track=\"28\">它采用高密度片上SRAM，将数据“贴着算力跑”，极大缩短数据路径，从架构层面降低延迟与能耗，更适配低延迟推理场景，理论最高速度可比GPU快100倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080901_c6fb8b2862b39ea6a357c1f464a954b5.png\">\n  </div>\n  <p data-track=\"29\">随着Agent应用逐渐普及，AI算力结构正在从“训练优先”向“推理优先”转移。</p>\n  <p data-track=\"30\">推理不再只是训练后的补充环节，而成为规模更大、频率更高的长期负载。</p>\n  <p data-track=\"31\">如果英伟达正式将LPU纳入核心产品线，这不仅是一款新芯片的发布，更是对算力重心转移的回应。</p>\n  <p data-track=\"32\">这也解释了为何英伟达在去年以约200亿美元完成对Groq核心技术与团队的整合，并引入创始人<strong>Jonathan Ross</strong>（谷歌TPU之父）等核心成员。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080901_8c3c0a37adb80fbf9a45d291f3aab9a8.png\">\n  </div>\n  <p data-track=\"33\">可以说，推理市场正在重塑算力格局，而英伟达势必必须务必拿下。</p>\n  <p data-track=\"35\">过去一年，随着Agent应用爆发，算力需求结构正在发生明显变化：市场重心从训练转向推理。</p>\n  <p data-track=\"36\">训练仍然重要，但推理的调用频率更高、规模更大、持续时间更长，成本开始成为核心变量。</p>\n  <p data-track=\"37\">一些AI服务商开始将训练与推理分开部署——训练继续使用英伟达GPU，推理则转向更具性价比的专用芯片。</p>\n  <p data-track=\"38\">比如，上个月，<strong>OpenAI与Cerebras</strong>签署数十亿美元计算合作协议。</p>\n  <p data-track=\"39\">Cerebras主打推理优化芯片，其首席执行官<strong>Andrew Feldman</strong>公开表示，其芯片在特定场景下快于英伟达GPU。</p>\n  <p data-track=\"40\"><strong>Anthropic更多依赖Amazon Web Services与Google Cloud</strong>自研芯片支持模型运行，而非完全使用英伟达方案。</p>\n  <p data-track=\"41\"><strong>Meta</strong>也与<strong>AMD</strong>达成了大规模芯片订单合作，双方正在联合优化用于推理任务的GPU架构，以减少对英伟达的依赖。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080901_aadce1031e3d9f814f892a28a960501d.png\">\n  </div>\n  <p data-track=\"42\">在国产方面，模型公司同样开始转向本土算力方案。</p>\n  <p data-track=\"43\">在最新的消息中，<strong>DeepSeek</strong>甚至绕过英伟达，直接将DeepSeek V4的早期访问权限独家授予<strong>华为</strong>，并已在<strong>昇腾平台</strong>完成模型迁移。</p>\n  <p data-track=\"44\">另一个传闻里，<strong>寒武纪</strong>也出现在关联中。而不论哪一个传闻，都不利于英伟达。</p>\n  <p data-track=\"45\">而根据Bernstein Research预测，到2026年，华为在中国AI芯片市场份额可能达到50%，而英伟达份额或降至个位数。</p>\n  <p data-track=\"46\">与此同时，英伟达的竞争对手也在强化推理专用架构布局。</p>\n  <p data-track=\"47\">一方面是，早已在TPU布局的谷歌，以及在OpenAI最新融资计划中拿下计算生态合作权的Amazon，都在推动自研芯片在高频推理场景中的落地，其中亚马逊将重点启用自家的Trainium芯片支持Agent等应用。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260303080902_676316f2e1515f84a1b7dc58a8fb6a10.webp\">\n  </div>\n  <p data-track=\"48\">另一方面，国内诸如字节、阿里、百度等玩家也开始亲自下场制造芯片。</p>\n  <p data-track=\"49\">由此，趋势已经很清晰：推理成为主战场，而客户开始分散风险。</p>\n  <p data-track=\"50\">那么，为啥GPU不适合推理呢？</p>\n  <p data-track=\"51\">因为训练阶段追求的是“大规模并行”和总体吞吐量，而推理阶段则要追求“单token速度”和稳定响应。</p>\n  <p data-track=\"52\">具体来说，推理则分为两个阶段：pre-fill：处理用户输入；decode：逐token生成输出。</p>\n  <p data-track=\"53\">真正决定用户体验的，是第二步——低延迟生成。</p>\n  <p data-track=\"54\">此时系统瓶颈不在算力，而在频繁的存取与搬运。GPU架构虽强，但为并行设计；LPU则调整了存储与计算路径，更贴合推理负载。</p>\n  <p data-track=\"55\">正因如此，《华盛顿邮报》甚至评论道：这是AI浪潮以来，英伟达第一次在核心硬件层面面临架构挑战。</p>\n  <p data-track=\"56\">虽然英伟达仍占全球GPU市场超过90%，Hopper、Blackwell、即将登场的Rubin系列依旧是训练主力，但面对推理需求暴涨，英伟达也必须正面回应。</p>\n  <p data-track=\"57\">而这枚LPU芯片，就是他们的答案。</p>\n  <p data-track=\"59\">除了这枚神秘芯片，老黄之前还官宣表示：</p>\n  <blockquote>\n   <p data-track=\"60\">今年GTC大会上还将发布“世界前所未见”的新系列产品。</p>\n  </blockquote>\n  <p data-track=\"61\">外界普遍猜测包括：Rubin系列新一代GPU；Feynman系列全新架构芯片。</p>\n  <p data-track=\"62\">或者更具体一点，跳票的消费级显卡？？？</p>\n  <p data-track=\"63\">参考链接</p>\n  <p data-track=\"64\">[1]https://www.wsj.com/tech/ai/nvidia-plans-new-chip-to-speed-ai-processing-shake-up-computing-market-51c9b86e?st=SdUxv4&amp;reflink=desktopwebshare_permalink</p>\n  <p data-track=\"65\">[2]https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer?ncid=no-ncid</p>\n  <p data-track=\"66\">[3]https://berttempleton.substack.com/p/nvidias-blackwell-ultra-and-vera</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "英伟达将在 GTC 大会发布基于 Groq LPU 架构的新型专用推理芯片，标志着其核心算力产品首次引入外部架构，以应对 AI 推理市场的重心转移。",
+  "oneSentenceSummary": "英伟达将在 GTC 大会发布基于 Groq LPU 架构的新型专用推理芯片，标志着其核心算力产品首次引入外部架构，以应对 AI 推理市场的重心转移。",
+  "summary": "本文报道了英伟达在 AI 算力领域的重大战略转型。面对 AI Agent 应用爆发导致的推理需求激增，英伟达打破完全自研传统，将在 GTC 大会上发布一套基于 Groq 团队 LPU（语言处理单元）架构的全新推理系统。文章深入分析了 GPU 在推理 decode 阶段因 HBM 内存存取导致的延迟瓶颈，对比了 LPU 采用高密度片上 SRAM 实现“数据贴着算力跑”的技术优势。背景是 OpenAI、Meta、华为等大客户正积极寻找替代方案以降低推理成本，英伟达通过 200 亿美元的“收购式招聘”快速整合 Groq 技术，旨在通过极致的 ROI 策略稳固其在“推理优先”时代的核心地位。",
+  "mainPoints": [
+    {
+      "point": "英伟达打破自研传统，首次在核心产品线引入 Groq 的 LPU 架构。",
+      "explanation": "为了在推理市场快速反击，英伟达通过收购 Groq 团队直接获取成熟的 LPU 技术，以实现极致的 ROI 和产品上市速度，应对客户流失风险。"
+    },
+    {
+      "point": "AI 算力需求正从“大规模并行训练”转向“低延迟高频推理”。",
+      "explanation": "随着 AI Agent 普及，推理成本和响应速度成为核心变量，传统的 GPU 架构在处理小批量、延迟敏感的推理任务时面临严重的数据搬运瓶颈。"
+    },
+    {
+      "point": "LPU 架构通过高密度片上 SRAM 解决了推理中的数据移动难题。",
+      "explanation": "不同于 GPU 依赖外部 HBM，LPU 将数据存储在计算核心附近的 SRAM 中，极大缩短了路径，理论推理速度可比传统 GPU 快百倍。"
+    },
+    {
+      "point": "全球科技巨头正积极去“英伟达化”，倒逼其加速推理架构迭代。",
+      "explanation": "OpenAI、Meta、华为等公司通过自研芯片或寻找替代方案分散风险，英伟达必须通过推出专用推理芯片来挽留核心客户并重塑算力格局。"
+    }
+  ],
+  "keyQuotes": [
+    "英伟达第一次在核心 AI 算力产品线上，大规模引入外部架构设计。",
+    "买成熟方案，快速部署，直接上战场，一分冤枉钱都不花。极致的 ROI。",
+    "AI 算力结构正在从“训练优先”向“推理优先”转移。",
+    "系统瓶颈更多来自数据移动而非算力本身。",
+    "这是 AI 浪潮以来，英伟达第一次在核心硬件层面面临架构挑战。"
+  ],
+  "tags": [
+    "英伟达",
+    "LPU",
+    "GPU",
+    "AI 推理",
+    "Groq"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 85,
+  "wordCount": 2346,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1772519839000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-03 06:37:19"
+}

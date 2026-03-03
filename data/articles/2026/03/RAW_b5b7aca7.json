@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b5b7aca7",
+  "title": "给 LLM 赋予人格纯粹是优秀的工程实践",
+  "url": "https://seangoedecke.com/giving-llms-a-personality/",
+  "date": "2026-03-03 00:00:00",
+  "author": "Sean Goedecke",
+  "siteName": "Sean Goedecke",
+  "content": "<html>\n <head></head>\n <body>\n  <section>\n   <p>AI skeptics often argue that current AI systems shouldn’t be so human-like. The idea - most recently expressed in this <a href=\"https://thedispatch.com/article/anthropic-askell-philosophy-amodei/\">opinion piece</a> by Nathan Beacom - is that language models should explicitly be tools, like calculators or search engines. Although they <em>can</em> pretend to be people, they shouldn’t, because it encourages users to overestimate AI capabilities and (at worst) slip into <a href=\"https://www.seangoedecke.com/ai-sycophancy\">AI psychosis</a>. Here’s a representative paragraph from the piece:</p>\n   <blockquote>\n    <p>In sum, so much of the confusion around making AI moral comes from fuzzy thinking about the tools at hand. There is something that Anthropic could do to make its AI moral, something far more simple, elegant, and easy than what Askell is doing. Stop calling it by a human name, stop dressing it up like a person, and don’t give it the functionality to simulate personal relationships, choices, thoughts, beliefs, opinions, and feelings that only persons really possess. Present and use it only for what it is: an extremely impressive statistical tool, and an imperfect one. If we all used the tool accordingly, a great deal of this moral trouble would be resolved.</p>\n   </blockquote>\n   <p>So why do Claude and ChatGPT act like people? According to Beacom, AI labs have built human-like systems because AI lab engineers are trying to hoodwink users into emotionally investing in the models, or because they’re delusional true believers in AI personhood, or some other foolish reason. This is wrong. AI systems are human-like because <strong>that is the best way to build a capable AI system</strong>.</p>\n   <p>Modern AI models - whether designed for chat, like OpenAI’s GPT-5.2, or designed for long-running agentic work, like Claude Opus 4.6 - do not naturally emerge from their oceans of training data. Instead, when you train a model on raw data, you get a “base model”, which is not very useful by itself. You cannot get it to write an email for you, or proofread your essay, or review your code.</p>\n   <p>The base model is a kind of mysterious gestalt of its training data. If you feed it text, it will sometimes continue in that vein, or other times it will start outputting pure gibberish. It has no problem producing code with giant security flaws, or horribly-written English, or racist screeds - all of those things are represented in its training data, after all, and the base model does not judge. It simply outputs.</p>\n   <p>To build a <em>useful</em> AI model, you need to journey into the wild base model and stake out a region that is amenable to human interests: both ethically, in the sense that the model won’t abuse its users, and practically, in the sense that it will produce correct outputs more often than incorrect ones. What this means in practice is that <strong>you have to give the model a personality</strong> during post-training<sup id=\"fnref-1\"><a href=\"#fn-1\" class=\"footnote-ref\">1</a></sup>.</p>\n   <p>Human beings are capable of almost any action at any time. But we only take a tiny subset of those actions, because that’s the kind of people we are. I could throw my cup of coffee all over the wall right now, but I don’t, because I’m not the kind of person who needlessly makes a mess<sup id=\"fnref-2\"><a href=\"#fn-2\" class=\"footnote-ref\">2</a></sup>. AI systems are the same. Claude could respond to my question with incoherent racist abuse - the base model is more than capable of those outputs - but it doesn’t, because that’s not the kind of “person” it is.</p>\n   <p>In other words, human-like personalities are not imposed on AI tools as some kind of marketing ploy or philosophical mistake. Those personalities are the medium via which the language model can become useful at all. This is why it’s surprisingly tricky to “just” change a language model’s personality or opinions: because you’re navigating through the near-infinite manifold of the base model. You may be able to control which direction you go, but you can’t control what you find there<sup id=\"fnref-3\"><a href=\"#fn-3\" class=\"footnote-ref\">3</a></sup>.</p>\n   <p>When AI people talk about LLMs having personalities, or wanting things, or even having souls<sup id=\"fnref-4\"><a href=\"#fn-4\" class=\"footnote-ref\">4</a></sup>, these are technical terms, like the “memory” of a computer or the “transmission” of a car. You simply cannot build a capable AI system that “just acts like a tool”, because the model is trained on <em>humans</em> writing to and about other <em>humans</em>. You need to prime it with some kind of personality (ideally that of a useful, friendly assistant) so it can pull from the helpful parts of its training data instead of the horrible parts.</p>\n   <div class=\"footnotes\">\n    <hr>\n    <ol>\n     <li id=\"fn-1\">\n      <p>This is all pretty well understood in the AI space. Anthropic wrote a <a href=\"https://alignment.anthropic.com/2026/psm/\">recent paper</a> about it where they cite similar positions going all the way back to 2022. But for some reason it’s not yet penetrated into communities that are more skeptical of AI.</p>\n      <a href=\"#fnref-1\" class=\"footnote-backref\">↩</a>\n     </li>\n     <li id=\"fn-2\">\n      <p>You could explain this in terms of “the stories we tell ourselves”. Many people (though <a href=\"https://lchc.ucsd.edu/mca/Paper/against_narrativity.pdf\">not all</a>) think that human identities are narratively constructed.</p>\n      <a href=\"#fnref-2\" class=\"footnote-backref\">↩</a>\n     </li>\n     <li id=\"fn-3\">\n      <p>I wrote about this last year in <a href=\"https://www.seangoedecke.com/ai-personality-space\"><em>Mecha-Hitler, Grok, and why it’s so hard to give LLMs the right personality</em></a>. A little nudge to change Grok’s views on South African internal politics can cause it to start calling itself “Mecha-Hitler”.</p>\n      <a href=\"#fnref-3\" class=\"footnote-backref\">↩</a>\n     </li>\n     <li id=\"fn-4\">\n      <p>I have long believed that Claude “feels better” to use than ChatGPT because it has a more coherent persona (due mainly to Amanda Askell’s work on its “soul”). My guess is that if you tried to make a “less human” version of Claude, it would become rapidly less capable.</p>\n      <a href=\"#fnref-4\" class=\"footnote-backref\">↩</a>\n     </li>\n    </ol>\n   </div>\n  </section>\n  <hr style=\"margin-top:2.625rem;margin-bottom:2.625rem\">\n  <p>If you liked this post, consider<!-- --> <a href=\"https://buttondown.com/seangoedecke\" target=\"_blank\">subscribing</a> <!-- -->to email updates about my new posts, or<!-- --> <a href=\"https://news.ycombinator.com/submitlink?u=https://www.seangoedecke.com/giving-llms-a-personality/&amp;t=Giving LLMs a personality is just good engineering\" target=\"_blank\">sharing it on Hacker News</a>.</p>\n  <p>Here's a preview of a related post that shares tags with this one.</p>\n  <blockquote style=\"border-left:4px solid #d9d9d9;margin-top:0.875rem;margin-bottom:0.875rem;padding-left:0.875rem\">\n   <p style=\"font-weight:600;margin-bottom:0.4375rem;margin-top:0\">What's so hard about continuous learning?</p>\n   <div>\n    <p>Why can’t models continue to get smarter after they’re deployed? If you hire a human employee, they will grow more familiar with your systems over time, and (if they stick around long enough) eventually become a genuine domain expert. AI models are not like this. They are always exactly as capable as the first moment you use them.</p>\n    <p>This is because model weights are frozen once the model is released. The model can only “learn” as much as can be stuffed into its context window: in effect, it can take new information into its short-term working memory, but not its long-term memory. “Continuous learning” - the ability for a model to update its own weights over time - is thus <a href=\"https://www.dwarkesh.com/p/timelines-june-2025\">often described</a> as the bottleneck for AGI.\n     <br>\n     <a href=\"https://www.seangoedecke.com/continuous-learning/\">Continue reading...</a></p>\n   </div>\n  </blockquote>\n  <hr style=\"margin-bottom:1.75rem\">\n </body>\n</html>",
+  "aiSummary": "作者认为，LLM 的类人人格并非营销噱头，而是引导不可预测的基座模型走向有用且安全行为的技术必然。",
+  "oneSentenceSummary": "作者认为，LLM 的类人人格并非营销噱头，而是引导不可预测的基座模型走向有用且安全行为的技术必然。",
+  "summary": "本文挑战了那种认为 AI 应被严格视为不具备类人特征的“工具”（如计算器）的普遍批评。作者解释说，在原始数据上训练的“基座模型”是不可预测的，经常产生乱码或有害内容。为了使这些模型变得有用，工程师必须通过后训练来塑造特定的“人格”或角色。这种人格作为一种技术引导机制，引导模型访问其训练数据中有用且连贯的部分。最终，作者断言人格是 AI 效能的核心媒介，试图剥离人格可能会导致系统能力大幅下降。",
+  "mainPoints": [
+    {
+      "point": "基座模型是缺乏内在判断力或效用的原始统计引擎。",
+      "explanation": "基座模型在海量数据集上训练，可能产生从高质量代码到种族歧视言论的任何内容；它们需要通过后训练才能胜任特定的人类任务。"
+    },
+    {
+      "point": "人格是用于导航基座模型流形的技术媒介。",
+      "explanation": "通过在后训练期间分配角色，工程师在模型的能力范围中“圈定”了一个符合人类利益和伦理标准的区域。"
+    },
+    {
+      "point": "类人特征是基于人类生成数据进行训练的副产品。",
+      "explanation": "由于 LLM 是基于人类互动的记录进行训练的，赋予它们“人格”是触发相关且有用响应的最有效方式。"
+    },
+    {
+      "point": "剥离 AI 的人格可能会降低其性能和能力。",
+      "explanation": "作者指出，像 Claude 这样模型的“去人格化”版本会迅速变得平庸，因为它会失去引导其输出逻辑的连贯人格。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 系统之所以具有类人特征，是因为这是构建强大 AI 系统的最佳方式。",
+    "基座模型是其训练数据的一种神秘完形……它只是在进行输出。",
+    "这些人格是语言模型变得有用的核心媒介。",
+    "你根本无法构建一个“仅仅像工具一样运作”的强大 AI 系统，因为该模型是基于人类相互交流及关于人类的写作进行训练的。",
+    "人格（理想情况下是一个有用且友好的助手）能让它从训练数据中有益的部分提取内容，而非糟糕的部分。"
+  ],
+  "tags": [
+    "LLM",
+    "AI 对齐",
+    "后训练",
+    "基座模型",
+    "AI 伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1062,
+  "domain": "seangoedecke.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_acd612",
+  "sourceName": "Sean Goedecke",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772496000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-03 00:00:00"
+}

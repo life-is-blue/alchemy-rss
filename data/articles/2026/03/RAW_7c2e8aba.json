@@ -1,0 +1,58 @@
+{
+  "id": "RAW_7c2e8aba",
+  "title": "AWS 发布智能体插件，实现云部署自动化",
+  "url": "https://www.infoq.com/news/2026/03/aws-launches-agent-plugins/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-03 10:13:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AWS recently released <a href=\"https://github.com/awslabs/agent-plugins\">Agent Plugins for AWS</a>, an open-source repository providing AI coding agents with specialized skills for architecting, deploying, and operating applications on AWS. The initial deploy-on-aws plugin transforms deployment workflows by accepting natural language commands like \"deploy to AWS\" and generating complete deployment pipelines with architecture recommendations, cost estimates, and infrastructure-as-code.</p>\n   <p>The plugin currently supports Claude Code and Cursor, following the recent marketplace <a href=\"https://cursor.com/blog/marketplace\">launch</a> of Cursor. The company positions agent plugins as a best practice for steering coding agents toward reliable outcomes without bloating model context. Rather than repeatedly pasting AWS guidance into prompts, developers can encode that guidance as reusable, versioned capabilities that agents invoke when relevant.</p>\n   <p>Marcelo S., AI product leader at AWS Agentic AI, framed the release in a <a href=\"https://www.linkedin.com/posts/marcsilv_introducing-agent-plugins-for-aws-amazon-activity-7429615339224760320-Nr1G/\">LinkedIn post</a> as addressing a fundamental scaling challenge:</p>\n   <blockquote>\n    <p>For those who have spent years scaling tech organizations, the friction between writing code and deploying it at scale is often where velocity dies.&nbsp;</p>\n   </blockquote>\n   <p>Moreover, he emphasized that leveraging the Model Context Protocol to bridge this gap ensures :</p>\n   <blockquote>\n    <p>Our AI tools are not just generating text, but are actively operating within our technical ecosystems with precision and best-practice alignment.</p>\n   </blockquote>\n   <p>AWS community builder Kento Ikeda, in a DEV.to <a href=\"https://dev.to/aws-builders/beyond-assistance-the-executive-power-of-agent-plugins-for-aws-5hnh\">blog post</a>, suggests Agent Plugins represent more than automation. He argues that the significance lies in the layer at which the capability is integrated. Unlike CLI automation that optimizes command execution, the Agent Plugins systematizes the design process itself by explicitly defining the AWS workflow: analyze, recommend, estimate, generate, and deploy as structured agent capabilities. He writes:</p>\n   <blockquote>\n    <p>CLI automation improves individual efficiency. Agent Plugins standardizes the design workflow.&nbsp;</p>\n   </blockquote>\n   <p>This makes it valuable for organizational knowledge formalization and reproducible design patterns.</p>\n   <p>Agent plugins package multiple types of expertise artifacts together. A single plugin can include agent skills (structured workflows and best-practice playbooks), MCP servers (connections to external services and data sources), hooks (automation and guardrails on developer actions), and references (documentation and configuration defaults). The deploy-on-aws plugin uses three AWS MCP servers: <a href=\"https://github.com/awslabs/mcp/tree/main/src/aws-knowledge-mcp-server\">AWS Knowledge</a> for documentation and best practices, <a href=\"https://github.com/awslabs/mcp/tree/main/src/aws-pricing-mcp-server\">AWS Pricing</a> for real-time cost estimates, and <a href=\"https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server\">AWS IaC</a> for CDK and CloudFormation guidance.</p>\n   <p>The plugin executes a five-step workflow:</p>\n   <ul>\n    <li>First, it analyzes the codebase to identify framework, database, and dependencies</li>\n    <li>Second, it recommends optimal AWS services with rationale</li>\n    <li>Third, it shows projected monthly costs using real-time pricing data</li>\n    <li>Fourth, it generates CDK or CloudFormation infrastructure code</li>\n    <li>Fifth, it deploys after user confirmation</li>\n   </ul>\n   <p>AWS describes the workflow in a <a href=\"https://aws.amazon.com/blogs/developer/introducing-agent-plugins-for-aws/\">Developer Tool blog post</a> with an Express.js REST API connected to PostgreSQL and serving a React frontend. After entering 'deploy this Express app to AWS,' the agent scanned the codebase, recommended AWS App Runner for the backend, Amazon RDS PostgreSQL for the database, and CloudFront plus S3 for the frontend, then provided cost estimates and generated complete infrastructure code, including Dockerfile and CI/CD workflows, before deploying everything. AWS claims this process took under 10 minutes versus hours of manual configuration.</p>\n   <p>Installation requires Claude Code or Cursor plus AWS CLI configured with appropriate credentials. In Claude Code, developers add the marketplace with <em>/plugin marketplace add awslabs/agent-plugins</em>, then install with <em>/plugin install deploy-on-aws@awslabs-agent-plugins</em>. Cursor users can install directly from the Cursor Marketplace or manually through settings.</p>\n   <p>AWS emphasizes that plugins are accelerators, not replacements for developer judgment. The launch post includes explicit guidance: always review generated code before deployment against security, cost, and resilience constraints; follow the principle of least privilege when configuring AWS credentials; and run security scanning tools on generated infrastructure code.</p>\n   <p>AWS plans to expand the plugin repository with additional capabilities for other AWS workflows in the coming weeks.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Launches Agent Plugins to Automate Cloud Deployment\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/aws-launches-agent-plugins/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772532780000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AWS 发布了开源智能体插件，利用模型上下文协议 (MCP) 使 Claude Code 和 Cursor 等 AI 编程智能体能够自动完成云架构设计、成本估算和部署。",
+  "oneSentenceSummary": "AWS 发布了开源智能体插件，利用模型上下文协议 (MCP) 使 Claude Code 和 Cursor 等 AI 编程智能体能够自动完成云架构设计、成本估算和部署。",
+  "summary": "AWS 最近推出了 “Agent Plugins for AWS”，这是一项旨在弥合 AI 编程助手与云基础设施之间差距的开源计划。通过利用模型上下文协议 (MCP)，这些插件为智能体提供了专业能力——如架构分析、实时定价和 IaC 生成——而不会使模型的上下文窗口过载。旗舰插件 “deploy-on-aws” 实现了五步自动化工作流：分析代码库、推荐服务、估算成本、生成 CDK/CloudFormation 代码以及执行部署。该系统目前支持 Claude Code 和 Cursor，旨在标准化设计工作流并将组织知识形式化，同时 AWS 强调这些工具是加速器，仍需要人工监督和安全验证。",
+  "mainPoints": [
+    {
+      "point": "AWS 智能体插件利用 MCP 为 AI 智能体提供专业的云专业知识，且不会导致上下文膨胀。",
+      "explanation": "通过将 AWS 最佳实践编码为可重用的版本化能力，开发者可以引导 AI 智能体实现可靠的基础设施结果，而无需反复将文档粘贴到提示词中。"
+    },
+    {
+      "point": "“deploy-on-aws” 插件实现了完整的五步云部署自动化工作流。",
+      "explanation": "该插件负责代码库分析、服务推荐、实时成本估算、IaC 生成 (CDK/CloudFormation) 以及最终部署，显著减少了手动配置时间。"
+    },
+    {
+      "point": "智能体插件代表了从个人 CLI 自动化向标准化组织设计工作流的转变。",
+      "explanation": "与简单的命令优化不同，这些插件将设计过程本身系统化，使其在形式化可重复的设计模式和机构知识方面具有价值。"
+    },
+    {
+      "point": "人工监督和安全护栏仍是 AI 辅助部署过程中不可或缺的组成部分。",
+      "explanation": "AWS 明确建议开发者根据安全和成本限制审查所有生成的代码，强调插件是加速器，而非判断力的自主替代品。"
+    }
+  ],
+  "keyQuotes": [
+    "编写代码与大规模部署之间的摩擦往往是开发速度停滞不前的原因。",
+    "CLI 自动化提高了个人效率。智能体插件则使设计工作流标准化。",
+    "我们的 AI 工具不仅仅是在生成文本，而是在我们的技术生态系统中精准运行，并与最佳实践保持一致。",
+    "AWS 强调插件是加速器，而不是开发者判断力的替代品。"
+  ],
+  "tags": [
+    "AWS",
+    "AI 智能体",
+    "模型上下文协议 (MCP)",
+    "云部署",
+    "基础设施即代码"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 81,
+  "wordCount": 597,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772532780000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-03 10:13:00"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_cc991c25",
+  "title": "Uber 的混合云数据：工程师如何解决极大规模复制挑战",
+  "url": "https://www.infoq.com/news/2026/03/uber-scaled-data-replication/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-02 15:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber’s engineering team has transformed its data replication platform to move petabytes of data daily across hybrid cloud and on-premise data lakes, addressing scaling challenges caused by rapidly growing workloads. Built on <a href=\"https://www.uber.com/en-AU/blog/scaled-data-replication/\">Hadoop’s open-source Distcp framework</a>, the platform now handles over one petabyte of daily replication and hundreds of thousands of jobs with improved speed, reliability, and observability, enabling analytics, machine learning, and disaster recovery at unprecedented scale.</p>\n   <p><a href=\"https://github.com/apache/hadoop/tree/trunk/hadoop-tools/hadoop-distcp\">Distcp</a> is an open-source framework that copies large datasets in parallel across multiple nodes using Hadoop’s <a href=\"https://en.wikipedia.org/wiki/MapReduce\">MapReduce</a>. Files are split into blocks and assigned to Copy Mapper tasks running in <a href=\"https://en.wikipedia.org/wiki/Yarn\">YARN</a> containers. The Resource Manager allocates resources, the Application Master monitors job execution and coordinates merges, and the Copy Committer assembles final files at the destination. Uber’s HiveSync team optimized this architecture for multi-petabyte workloads by moving preparation tasks to the Application Master, parallelizing listing and commit processes, and improving efficiency for small transfers.</p>\n   <p><a href=\"https://www.uber.com/en-IN/blog/building-ubers-data-lake-batch-data-replication-using-hivesync/\">HiveSync</a>, originally based on Airbnb’s <a href=\"https://github.com/airbnb/reair\">ReAir</a> project, keeps Uber’s HDFS and cloud data lakes synchronized using bulk and incremental replication. For datasets larger than 256 MB, it submits Distcp jobs through asynchronous workers in parallel, with a monitoring thread tracking progress. As daily replication grew from 250 TB to over 1 PB and datasets expanded from 30,000 to 144,000, HiveSync faced backlogs that threatened SLAs, emphasizing the need for operational and architectural enhancements to support cloud migration and Uber’s active-passive data lake model.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/uber-scaled-data-replication/news/2026/03/uber-scaled-data-replication/en/resources/1uberhivesyncdistcp-1771726530169.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/uber-scaled-data-replication/en/resources/1uberhivesyncdistcp-1771726530169.jpeg\" rel=\"share\"></p>\n   <p><em>HiveSync architecture: Data replication workflow using Distcp ( Source: Uber Blog Post)</em></p>\n   <p>To address scaling challenges, the HiveSync team enhanced Distcp by moving resource-intensive tasks like Copy Listing and Input Splitting from the HiveSync server to the Application Master, reducing HDFS client contention and cutting job submission latency by up to 90 percent. Copy Listing and Copy Committer tasks were parallelized, allowing multiple files to be processed simultaneously while maintaining block order, lowering p99 listing latency by 60 percent and maximum commit latency by over 97 percent. For smaller jobs transferring fewer than 200 files or 512 MB, Hadoop’s Uber job feature ran Copy Mapper tasks directly in the Application Master’s JVM, eliminating roughly 268,000 container launches daily and improving YARN efficiency.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/uber-scaled-data-replication/news/2026/03/uber-scaled-data-replication/en/resources/1hivesyncjob-1771726530169.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/uber-scaled-data-replication/en/resources/1hivesyncjob-1771726530169.jpeg\" rel=\"share\"></p>\n   <p><em>More than 50% of Distcp jobs are assigned a single mapper each ( Source: Uber Blog Post)</em></p>\n   <p>These optimizations increased incremental replication capacity fivefold, enabling HiveSync to replicate over 300 PB during Uber’s on-premise-to-cloud migration without incidents. Enhanced observability, including job submission, Copy Listing, and Committer metrics, heap usage, and p99 copy rates, helped engineers monitor workloads and preempt failures. Out-of-memory errors, high job submissions, and long-running Copy Listing tasks were mitigated via stress testing, circuit breakers, optimized YARN configurations, and reordered task execution.</p>\n   <p>Looking ahead, the HiveSync team is focusing on further parallelization, optimized resource management, and network efficiency. Planned enhancements include parallelizing file permission setting and input splitting, moving compute-intensive commit tasks to the Reduce phase, and implementing a dynamic bandwidth throttler. Uber plans to contribute these improvements as an open-source patch, extending the broader community’s ability to manage extreme-scale hybrid cloud replication. Even small improvements can lead to significant gains at our scale, the engineering team noted. These efforts highlight the operational and engineering creativity required to sustain high-throughput, reliable performance across complex, multi-region data pipelines.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Hybrid Cloud Data at Uber: How Engineers Solved Extreme-Scale Replication Challenges\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/uber-scaled-data-replication/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772463600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 通过重构任务分配和并行化元数据操作，优化了其基于 HiveSync 和 Distcp 的数据复制平台，使其能够处理每日超过 1 PB 的流量。",
+  "oneSentenceSummary": "Uber 通过重构任务分配和并行化元数据操作，优化了其基于 HiveSync 和 Distcp 的数据复制平台，使其能够处理每日超过 1 PB 的流量。",
+  "summary": "本文详细介绍了 Uber 的 HiveSync 团队如何克服 Hadoop 开源 Distcp 框架中的重大扩展瓶颈，以支持混合云架构。随着每日复制量从 250 TB 增长到超过 1 PB，团队实施了多项架构增强措施：将资源密集型准备任务移至 YARN Application Master，并行化文件列表（Listing）和提交（Commit）过程，并利用 “Uber jobs” 处理小型传输以减少容器开销。这些优化使提交延迟降低了 90%，并实现了 300 PB 数据向云端的无缝迁移，展示了在极大规模下维护高吞吐量数据管道所需的工程创造力。",
+  "mainPoints": [
+    {
+      "point": "将资源密集型准备任务迁移到 Application Master 显著减少了 HDFS 客户端争用和延迟。",
+      "explanation": "通过将 Copy Listing 和 Input Splitting 从 HiveSync 服务器移动到 YARN Application Master，Uber 将作业提交延迟降低了 90%，有效地将中央服务器与繁重的元数据操作解耦。"
+    },
+    {
+      "point": "并行化文件列表和提交等元数据操作极大地提高了端到端复制的性能和可靠性。",
+      "explanation": "团队实现了在保持严格块顺序的同时同步处理多个文件，这使得 p99 列表延迟降低了 60%，最大提交延迟降低了 97%。"
+    },
+    {
+      "point": "利用针对小型数据集的 “Uber job” 功能优化了 YARN 资源利用率并减少了调度开销。",
+      "explanation": "对于 512 MB 以下的传输，直接在 Application Master 的 JVM 中运行 Copy Mapper 任务，每天减少了 26.8 万次容器启动，显著提高了集群效率并减少了小型作业的调度延迟。"
+    }
+  ],
+  "keyQuotes": [
+    "Uber 的 HiveSync 团队通过将准备任务移至 Application Master 并并行化列表和提交过程，针对多 PB 级工作负载优化了该架构。",
+    "对于较小的作业……Hadoop 的 Uber job 功能直接在 Application Master 的 JVM 中运行 Copy Mapper 任务，每天减少了大约 26.8 万次容器启动。",
+    "这些优化将增量复制能力提升了五倍，使 HiveSync 在 Uber 从本地迁移到云端的过程中无故障地复制了超过 300 PB 的数据。",
+    "工程团队指出，在我们的规模下，即使是微小的改进也能带来显著的收益。"
+  ],
+  "tags": [
+    "Hadoop",
+    "Distcp",
+    "数据复制",
+    "混合云",
+    "Uber Engineering"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 536,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772463600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-02 15:00:00"
+}

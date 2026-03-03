@@ -1,0 +1,55 @@
+{
+  "id": "RAW_1a27e062",
+  "title": "AI Agent 搞定世纪首次菲尔兹奖成果形式化！一周时间独立完成，20 万行代码已公开",
+  "url": "https://www.qbitai.com/2026/03/383368.html",
+  "date": "2026-03-03 10:28:48",
+  "author": "鱼羊",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"41\">鱼羊 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"42\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">5天时间，AI就搞定了原本需要6个月完成的<strong>菲尔兹奖级数学成果</strong>的形式化证明。</p>\n  <p data-track=\"3\">这一最新成果一经公布，立即在x上引发了讨论热潮，甚至有数学家称之为“<strong>自动形式化领域的ImageNet时刻</strong>”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113342_834a0cb5c4c489a2cfdb52608abadc8b.webp\" data-src=\"https://image.jido.dev/20260303113342_834a0cb5c4c489a2cfdb52608abadc8b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">AI是来自<strong>Math</strong>这家公司名为<strong>Gauss</strong>的AI。具体完成的工作，是形式化验证了让Maryna Viazovska在2022年获得数学最高奖——菲尔兹奖的成果：关于8维和24维最优球体堆积问题的定理。</p>\n  <p data-track=\"5\">这是<strong>本世纪以来首次有菲尔兹奖成果被完全形式化</strong>。</p>\n  <p data-track=\"6\">而单一项目20万行Lean代码，也使得“硅基高斯”的这项最新工作，成为<strong>历史上最大规模的单一目的Lean形式化项目</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113342_88ae53e255deba2eac6a965cd2f25f50.webp\" data-src=\"https://image.jido.dev/20260303113342_88ae53e255deba2eac6a965cd2f25f50.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">还有一个引起大家关注的重点是，“硅基高斯”在推理验证过程中，还自主检测并纠正了原论文中的错误。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113342_798e74ee293556bf1e971e9b4e545966.jpeg\" data-src=\"https://image.jido.dev/20260303113342_798e74ee293556bf1e971e9b4e545966.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"9\">2022年，Maryna Viazovska拿下菲尔兹奖的获奖理由是：证明了E8晶格在8维空间中提供了最密堆积的相同球体，以及对相对极值问题和傅里叶分析问题的进一步贡献。</p>\n  <p data-track=\"10\">其中提到的这个球体堆积问题，就是这次“硅基高斯”所关注的。</p>\n  <p data-track=\"11\">简单来说，就是要证明，在n维空间中，相同的球体最多能以多高的密度进行堆积。</p>\n  <p data-track=\"12\">在一维情形下，这个问题并不复杂，二维情形也早有证明。但当n的数字来到3，也就是在三维情形下，尽管开普勒在1611年就提出了相关猜想，但直到1998年，数学家Thomas Hales才在计算机的辅助下完成了证明；而三维情形的形式化验证，则又耗费了十余年的时间。</p>\n  <p data-track=\"13\">在更高维度上，这个问题就更加复杂、难以攻克。直到Maryna Viazovska找出了该问题与模形式理论之间的联系——</p>\n  <p data-track=\"14\">她利用一种创新的方法，将傅里叶分析与模形式结合起来，构造了一个优化的辅助函数来严格验证E8晶格在8维空间中的最优性。</p>\n  <p data-track=\"15\">基于同样的方法，她还和合作者们一起，进一步证明Leech晶格提供了24维空间中最密的球体堆积。</p>\n  <p data-track=\"18\">2024年，Maryna Viazovska开始和合作者们一起推动对这一成果的形式化项目。</p>\n  <p data-track=\"19\">形式化是指将数学证明严格地表达为符合形式逻辑规则的形式语言。这种过程可以被计算机验证，以确保证明的每一步都完全符合逻辑规则，主要目的是提高数学的严谨性、可靠性和透明性。</p>\n  <p data-track=\"20\">2025年11月，“硅基高斯”开始参与到这个项目之中。在证明了若干关于模形式、径向施瓦茨函数和基础球体堆积理论的问题之后，这个AI的目标变成了：自动完成该项目的全部剩余工作。</p>\n  <p data-track=\"21\">于是事情的发展开始超乎人们的想象：</p>\n  <p data-track=\"22\">在前两年，人类专家团队共编写了约2万行Lean代码。而Gauss仅用5天的时间，就新增约5万行代码，在没有借助额外辅助框架的情况下，完成了该问题的8维情形验证。</p>\n  <p data-track=\"23\">团队原本估计，用现有工具，要完成这一项目还需6个月时间。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113343_b56d8e75f0b5c9b635ea57f45bd0b778.webp\" data-src=\"https://image.jido.dev/20260303113343_b56d8e75f0b5c9b635ea57f45bd0b778.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\">又花了一周时间，Gauss在研究了Viazovska原论文和20+篇额外参考文献后，生成45万行代码，把24维情形的形式化证明也给搞定了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113342_49538155d15b807d59466b59f009e051.gif\" data-src=\"https://image.jido.dev/20260303113342_49538155d15b807d59466b59f009e051.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"25\">“硅基高斯”背后团队强调，Gauss是“<strong>独立推演了全部证明过程</strong>”。</p>\n  <p data-track=\"26\">在完成证明的过程中，它还发现并修正了原论文的细节错误：在Prop 7中，函数b(t)的计算缺了一个负号，另外还有某处定义存在缺陷。</p>\n  <p data-track=\"27\">该研究团队认为：</p>\n  <blockquote>\n   <p data-track=\"28\">对菲尔兹奖级别数学成果的验证表明，以Gauss为代表的AI智能体，已经具备加速数学前沿研究发展的能力。</p>\n   <p data-track=\"29\">扩大自动形式化的规模，将通过使全部已知数学成果变得可检索，彻底变革数学知识体系和数学发现方式。</p>\n  </blockquote>\n  <p data-track=\"30\">p.s. 为了让这些形式化知识更加可维护，研究人员们还利用Gauss自动重构、优化改进了代码，把代码行数从峰值的50万行，压缩到了约20万行。</p>\n  <p data-track=\"31\">代码均已在GitHub上发布。</p>\n  <p data-track=\"33\">Gauss背后公司Math Inc.的创始人，是xAI联合创始人、BatchNorm作者Christian Szegedy。</p>\n  <p data-track=\"34\">他在2025年创办Math，致力于用AI“解决数学，解决一切”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113342_2b2b3c3b2f10ff1ec907c263b54f0640.webp\" data-src=\"https://image.jido.dev/20260303113342_2b2b3c3b2f10ff1ec907c263b54f0640.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"35\">此前，Gauss就因为用3周时间，完成陶哲轩和Alex Kontorovich提出的数学挑战——在Lean中形式化强素数定理（Prime Number Theorem，PNT），而一炮成名。</p>\n  <p data-track=\"36\">而陶哲轩本人也和Math有所合作，将解析数论中的显式估计形式化，把依赖大量计算的论证转化为经过验证、可复用的构建模块。</p>\n  <p data-track=\"37\">在当时，外界对于Gauss这样的AI Agent，还有许多质疑，包括自动化的程度、对数学问题隐含目标的忽略……但现在，正如Christian Szegedy自己所说：</p>\n  <blockquote>\n   <p data-track=\"38\">（不到两年前）数学家们还认为，人工智能要达到能够协助完成此类数学形式化工作（菲尔兹奖级数学成果形式化）的水平，尚需多年。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260303113342_537a8863856dfc12eba0e2a833f5cbd7.webp\" data-src=\"https://image.jido.dev/20260303113342_537a8863856dfc12eba0e2a833f5cbd7.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"39\">但“硅基高斯”，在今天已经带来最新突破。</p>\n  <p data-track=\"40\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/mathematics_inc/status/2028542388717986135\n   <br class=\"sysbr\">\n   [2]https://www.math.inc/sphere-packing</p>\n  <p>— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Math Inc. 开发的 AI Agent “Gauss” 仅用一周时间独立完成了菲尔兹奖级数学成果（8 维与 24 维球体堆积定理）的 Lean 形式化证明，并修正了原论文错误。",
+  "oneSentenceSummary": "Math Inc. 开发的 AI Agent “Gauss” 仅用一周时间独立完成了菲尔兹奖级数学成果（8 维与 24 维球体堆积定理）的 Lean 形式化证明，并修正了原论文错误。",
+  "summary": "文章报道了人工智能在数学形式化领域的重大突破。由 Christian Szegedy 创办的 Math Inc. 推出的 AI Agent “Gauss”，成功将 Maryna Viazovska 获得菲尔兹奖的 8 维和 24 维最优球体堆积问题证明进行了完全形式化验证。该 AI 仅耗时约一周时间，生成并优化出 20 万行 Lean 代码，而人类专家团队原计划需 6 个月。Gauss 在推演过程中展现了极高的逻辑严谨性，自主检测并纠正了原论文中的细节错误。这一成果被数学界誉为“自动形式化领域的 ImageNet 时刻”，预示着 AI 智能体已具备加速前沿数学研究、变革数学发现方式的能力。",
+  "mainPoints": [
+    {
+      "point": "AI 实现了菲尔兹奖级别数学成果的高效形式化证明。",
+      "explanation": "Gauss 仅用一周时间完成了人类专家预计需半年的工作量，证明了 AI 在处理极端复杂逻辑推理任务上的显著效率优势。"
+    },
+    {
+      "point": "自动形式化工程规模达到历史之最，展示了 AI 的工程化能力。",
+      "explanation": "该项目最终产出 20 万行 Lean 代码，成为历史上最大规模的单一目的形式化项目，体现了 AI 处理超大规模逻辑代码的能力。"
+    },
+    {
+      "point": "AI 具备发现并纠正人类顶级数学家论文细节错误的能力。",
+      "explanation": "在独立推演过程中，Gauss 识别并修正了原论文中的函数计算符号错误及定义缺陷，证明了其在严谨性校验上已超越人类直觉。"
+    }
+  ],
+  "keyQuotes": [
+    "5 天时间，AI 就搞定了原本需要 6 个月完成的菲尔兹奖级数学成果的形式化证明。",
+    "这是本世纪以来首次有菲 7 尔兹奖成果被完全形式化。",
+    "自动形式化领域的 ImageNet 时刻。",
+    "Gauss 是独立推演了全部证明过程。",
+    "扩大自动形式化的规模，将通过使全部已知数学成果变得可检索，彻底变革数学知识体系和数学发现方式。"
+  ],
+  "tags": [
+    "AI Agent",
+    "形式化验证",
+    "Lean 语言",
+    "菲尔兹奖",
+    "数学证明"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 78,
+  "wordCount": 1868,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1772533728000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-03 10:28:48"
+}
