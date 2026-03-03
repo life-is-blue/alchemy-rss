@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-03 12:32:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-03 14:13:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -950,6 +950,14 @@
 ### [16-张-H100-训-26-分钟，超越-o1-preview！李飞飞等用-1K-样本，揭秘测试时-Scaling](https://mp.weixin.qq.com/s/iGi20QGI8KFn-WPtBL5JCw)
 
 2025-02-06 04:55:42
+
+
+
+### [Meta-的-FFmpeg-实践：大规模媒体处理](https://engineering.fb.com/2026/03/02/video-engineering/ffmpeg-at-meta-media-processing-at-scale/)
+
+2026-03-02 19:50:14 | 标签: FFmpeg, 视频工程, 开源策略, 可扩展性, 转码
+
+> 本文详细介绍了 Meta 从维护重度修改的内部 FFmpeg 分支转向采用上游版本的战略转变。面对每日 10 亿次视频上传的巨大规模，Meta 最初开发了用于多线程编码和实时质量指标的自定义功能。通过与 FFlabs 和 VideoLAN 合作，他们成功将这些能力整合到 FFmpeg 6.0 至 8.0 版本中，引发了该工具数十年来最重大的重构。文章重点介绍了并行输出编码和用于实时质量监控的“环内”解码等技术进步。此外，它还解释了 Meta 在开源方面的平衡策略：将通用的效率提升贡献给上游，同时保留针对特定基础设施的补丁（如对其专有 MSVP ASIC 的支持）在内部。
 
 
 
@@ -29039,11 +29047,11 @@
 
 
 
-### [Anthropic-CEO-Dario-Amodei-访谈：我们正在接近指数的终点](https://baoyu.io/blog/2026-02-14/dario-amodei-interview-analysis)
+### [快不等于好：Anthropic-和-OpenAI-的快速模式藏着什么](https://baoyu.io/blog/2026-02-15/fast-mode-vs-codex-spark)
 
-2026-02-14T00:00:00.000Z
+2026-02-15T00:00:00.000Z
 
-> Anthropic CEO Dario Amodei 再上 Dwarkesh Podcast，聊了两小时。收入每年翻 10 倍、刚融 300 亿、估值 3800 亿——但他不敢像 OpenAI 那样 all-in 算力。因为猜对方向容易，猜对时间几乎不可能，而猜错一年就可能破产。
+> Anthropic 和 OpenAI 几乎同时推出 AI 编程的「快速模式」，但走了完全不同的技术路线：一个给同一模型加速 2.5 倍收 6 倍价格，一个用蒸馏模型跑在专用芯片上飙到 1000 token/秒。速度军备竞赛背后，藏着两种截然不同的产品哲学。
 
 
 
