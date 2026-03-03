@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-03 10:57:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-03 12:32:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -10700,9 +10700,7 @@
 
 ### [使用-WebAssembly-和-Gifsicle-的-GIF-优化工具---智能体工程模式](https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/#atom-everything)
 
-2026-03-02 16:35:10 | 标签: 智能体工程, WebAssembly, Claude Code, Gifsicle, AI 辅助开发
-
-> 本文探讨了 AI 智能体在软件工程中的实际应用，特别是使用 Claude Code 将 Gifsicle（一个有着 30 年历史的 C 语言工具）移植到 WebAssembly (WASM)。作者详细介绍了他的提示词策略，强调了 AI 智能体如何“暴力破解”通常需要繁琐尝试的复杂编译任务。重点介绍的模式包括为智能体提供清晰的文件结构、利用其处理 Emscripten 工具链的能力，以及集成“Rodney”等浏览器自动化工具，使智能体能够进行自我测试和调试。最终成果是一个功能齐全的 Web 工具，可在客户端执行 GIF 优化，并提供多种预览设置和手动控制。
+2026-03-02 16:35:10
 
 
 
