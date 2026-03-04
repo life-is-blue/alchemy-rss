@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-04 12:30:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-04 14:11:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -398,17 +398,13 @@
 
 ### [从集中控制到团队自治：重新思考基础设施交付](https://www.infoq.com/news/2026/03/adidas-decentralized-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-03 15:01:00 | 标签: Platform Engineering, Infrastructure as Code, DevOps, 可扩展性, 云基础设施
-
-> 文章详细介绍了 Adidas 在其数据平台基础设施交付方面的战略转变。Adidas 告别了由单一平台团队管理所有 IaC 仓库的集中模式，转而采用赋能领域对齐团队的去中心化方法。这一转变解决了平台扩展过程中出现的瓶颈和协调开销。新模型利用分层的 IaC 结构——包括可重用模块、可部署堆栈和消费配置——并由自定义 CLI 和自动化 CI/CD 流水线支持。通过正式化框架所有者（Framework Owners）和开发人员（Developers）等角色，Adidas 在保持治理和一致性的同时，允许团队在预定义边界内自主配置基础设施。
+2026-03-03 15:01:00
 
 
 
 ### [演进-Cloudflare-的威胁情报平台：可操作、可扩展且无-ETL](https://blog.cloudflare.com/cloudflare-threat-intelligence-platform/)
 
-2026-03-03 14:00:00 | 标签: Cloudflare Workers, 威胁情报, SQLite, Durable Objects, 分布式系统
-
-> 本文详细介绍了 Cloudflare 威胁情报平台 (TIP) 的演进过程，旨在解决网络安全中的“数据引力”问题。通过摆脱传统的中心化数据库和复杂的 ETL（提取、转换、加载）流程，Cloudflare 构建了一个直接在其全球边缘网络上运行的系统。核心架构依赖于 Durable Objects 内部的分片 SQLite 数据库，实现了对数十亿事件的亚秒级查询延迟。这种“无 ETL”的方法使安全团队能够通过桑基图可视化攻击模式，将遥测数据与已知威胁行为者关联，并立即部署防火墙规则。该平台还集成了“人机协同”系统，Cloudforce One 分析师在此进行深入调查，并将情报反馈到自动化防御闭环中...
+2026-03-03 14:00:00
 
 
 
@@ -2442,9 +2438,7 @@
 
 ### [是什么让全世界的-AI-中断了？-|【经纬低调分享】](https://mp.weixin.qq.com/s?__biz=MzA3ODk5OTEzOA==&mid=2962186846&idx=1&sn=c28fdea0b817e84f6e720dc8080d2dc7)
 
-2026-03-03 04:39:00 | 标签: 云基础设施, 地缘政治, 数据安全, AWS, 中东科技
-
-> 本文以一次席卷全球的 AI 服务（Claude、Grok 等）熔断事件为切入点，深度剖析了支撑现代文明的云架构背后的物理风险。文章指出，事故源于 AWS 位于阿联酋的核心数据中心遭遇物理打击，由于中东已成为连接欧亚的“数字苏伊士运河”，该节点的失效通过全球云服务的控制面（Control Plane）引发了连锁反应。文章进一步探讨了数据中心“油田化”的趋势，即算力已成为地缘博弈的核心资源，并对比了民用 AI 崩溃与政府版服务稳健的残酷现实，警示技术乐观主义者需重新审视数字基础设施的供应链安全与容灾策略。
+2026-03-03 04:39:00
 
 
 

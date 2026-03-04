@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-04 12:30:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-04 14:11:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11137,25 +11137,19 @@
 
 ### [我们如何为-GitHub-Enterprise-Server-重建高可用搜索架构](https://github.blog/engineering/architecture-optimization/how-we-rebuilt-the-search-architecture-for-high-availability-in-github-enterprise-server/)
 
-2026-03-03 18:45:12 | 标签: 软件架构, 高可用性, Elasticsearch, GitHub Enterprise, 分布式系统
-
-> 本文详细介绍了 GitHub Enterprise Server (GHES) 为解决其搜索组件中长期存在的高可用性 (HA) 问题而进行的重大架构转变。此前，GHES 使用跨越主节点和副本节点的单一 Elasticsearch 集群，如果主分片在维护期间迁移到只读副本，往往会导致系统锁定或数据损坏。为了解决这个问题，GitHub 工程团队转向了领导者/跟随者模型，其中每个 GHES 实例都作为一个独立的单节点 Elasticsearch 集群运行。通过利用 Elasticsearch 的跨集群复制 (CCR)，数据在 Lucene 段级别进行持久化复制。文章解释了此次迁移的技术挑战，包括需要...
+2026-03-03 18:45:12
 
 
 
 ### [开源如何助力你的技术职业生涯：初学者指南](https://www.freecodecamp.org/news/open-source-career-handbook/)
 
-2026-03-03 15:27:03 | 标签: 开源, 职业发展, GitHub, Git 工作流, 技术写作
-
-> 这本手册为有志于进入开源世界的开发者提供了战略路线图。它揭示了包括 Fork、Clone 和 Pull Request 在内的技术工作流，同时解释了维护者与贡献者之间的社交动态。作者强调，开源不仅仅是专家的领域，它还是一个“在公开场合学习”并构建经验证的“工作证明”的平台，这种证明比传统简历更有分量。核心话题包括非代码贡献的价值、处理专业反馈、维护者倦怠的现实，以及这些活动如何带来直接的工作推荐和远程办公机会。最后，手册通过 GitHub 贡献流程的实际步骤演示作为总结。
+2026-03-03 15:27:03
 
 
 
 ### [OSS-Pull-Request-疗法：通过-npmx-学习享受代码审查](https://www.freecodecamp.org/news/learning-to-enjoy-code-reviews-with-npmx/)
 
-2026-03-03 15:09:09 | 标签: 开源, 代码审查, Pull Request, 软件工程, 开发者体验
-
-> 本文记录了作者从一名开源怀疑论者转变为 npmx 项目积极贡献者的历程。最初，作者因 OSS 的“阴暗面”（包括维护者倦怠、充满敌意的代码审查以及完美主义的压力）而望而却步，但她描述了一个充满支持的社区如何改变了她的看法。通过详细介绍重构 UI 组件的经历，她展示了心理层面的转变：从将 Pull Requests (PRs) 视为个人审判，转变为将其视为协作对话。文章提供了一个评估 OSS 项目的框架，涵盖维护速度、文档质量和社区包容性。最后，文章为 PR 作者和审查者提供了可操作的建议，强调自主感和学习欲望对于成功而言比技术上的完美更为关键。
+2026-03-03 15:09:09
 
 
 
@@ -29135,11 +29129,11 @@
 
 
 
-### [Anthropic-CEO-Dario-Amodei-访谈：我们正在接近指数的终点](https://baoyu.io/blog/2026-02-14/dario-amodei-interview-analysis)
+### [快不等于好：Anthropic-和-OpenAI-的快速模式藏着什么](https://baoyu.io/blog/2026-02-15/fast-mode-vs-codex-spark)
 
-2026-02-14T00:00:00.000Z
+2026-02-15T00:00:00.000Z
 
-> Anthropic CEO Dario Amodei 再上 Dwarkesh Podcast，聊了两小时。收入每年翻 10 倍、刚融 300 亿、估值 3800 亿——但他不敢像 OpenAI 那样 all-in 算力。因为猜对方向容易，猜对时间几乎不可能，而猜错一年就可能破产。
+> Anthropic 和 OpenAI 几乎同时推出 AI 编程的「快速模式」，但走了完全不同的技术路线：一个给同一模型加速 2.5 倍收 6 倍价格，一个用蒸馏模型跑在专用芯片上飙到 1000 token/秒。速度军备竞赛背后，藏着两种截然不同的产品哲学。
 
 
 
