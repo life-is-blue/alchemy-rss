@@ -1,0 +1,59 @@
+{
+  "id": "RAW_34ea887f",
+  "title": "把 20 亿参数装进胸针？高通补齐了个人 AI 生态的最后一块拼图",
+  "url": "https://www.qbitai.com/2026/03/383878.html",
+  "date": "2026-03-04 03:11:45",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>在今年的MWC巴塞罗那展会上，整个科技圈都在关注<strong>“智能跃升”</strong>这个话题。</p>\n  <p>渐渐地，人们已不再满足于能够执行单个任务的AI，开始渴望拥有一个<strong>专属的AI智能体</strong>。</p>\n  <p>OpenAI CEO奥特曼就曾表示，<strong>高度个人化的智能体，才是未来交互的核心</strong>；这两个月爆红的开源智能体框架OpenClaw，同样是这一趋势的缩影。</p>\n  <p>但个性化体验不是空中楼阁，必须要拥有<strong>海量的真实情境数据</strong>并持续消化，才能打好这座大厦的坚固地基。</p>\n  <p>而手机、PC等终端设备，毫无疑问就是安全处理这些私密信息的最佳载体。</p>\n  <p>高通的看法更加激进，他们认为<strong>AI必须进驻到更微型化的载体中</strong>，成为“AI穿戴”，才能实现自适应、即时响应且高度个性化的个人AI体验。</p>\n  <p>对于AI可穿戴，高通CEO安蒙给出了极高的预期，他预测，<strong>这类产品未来几年的市场规模有望突破一亿大关，甚至有能力冲刺十亿量级</strong>。</p>\n  <p>为了加速AI可穿戴的起步和发展，高通在本次展会上正式推出了全新的<strong>骁龙可穿戴平台至尊版</strong>（Snapdragon Wear Elite），把AI运算能力下放延伸到了智能手表等微型可穿戴设备当中。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040342_8d0892f1dc9314d439bafd95846f6e26.webp\" alt=\"图片\" data-ratio=\"0.5587121212121212\" data-type=\"png\" data-w=\"1056\" data-imgfileid=\"100388256\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_bf3c3b4.png\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"2\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>再把目光放远，假如一个人拥有多个不同的AI终端，那么算力与数据还能在这些设备之间自由流动，让无感化的全场景协助成为现实。</p>\n  <p>这也标志着，高通试图构建的<strong>“以用户为中心的生态”</strong>，即将迎来真正成熟的实质性落地。</p>\n  <p>个人AI热潮席卷全球，最直接的影响便是我们与各类终端的交互逻辑变得和以往不一样了。</p>\n  <p>这意味着，个人AI已经不再被“软件”的定义约束，开始进入智能手机、PC以及汽车等日常设备。</p>\n  <p>如何让这些硬件都AI起来，成为主动执行的节点呢？全都接入大模型API是一个简单粗暴的方案。</p>\n  <p>但是，单纯依赖API这种云端处理方式，是远远不够的。</p>\n  <p>这些“贴身智能体”整天跟随着我们，24小时都在感知我们的习惯和周围的物理环境，感知到的私密信息可能比我们自己知道的都多。</p>\n  <p>这些敏感信息如果打包上云，一旦发生隐私泄露，后果难以想象。</p>\n  <p>再加上想要连接云端大模型，就必然要使用网络，数据上传再回传，这中间的延迟，也会降低AI的实时响应速度。</p>\n  <p>所以，<strong>AI终端必须要有一个能够部署在本地的底层AI算力平台</strong>，才能既安全又高效。</p>\n  <p>这也是如今主流终端芯片厂商必做的一件事。</p>\n  <p>到目前为止，高通已经把端侧AI处理能力扩展到了各式各样的硬件，可以说覆盖了我们生活的许多场景。</p>\n  <p>比如最常见的手机端，<strong>第五代骁龙8至尊版平台</strong>就已经拥有了强大的多模态AI算力。</p>\n  <p>高通在移动平台多模态和生成式AI技术上的布局早已开始，早在2022年发布的第二代骁龙8就已经是全球首个能在Android手机上跑通端侧Stable Diffusion的平台，2024年的MWC，高通在第三代骁龙8上带来了全球首个多模态大模型的终端侧演示。</p>\n  <p>而今年MWC上荣耀发布的可商用产品——机器人手机<strong>Robot Phone</strong>，搭载的芯片就是第五代骁龙8至尊版。有了这颗芯片，荣耀Robot Phone已经在本地跑通了复杂的跨应用任务，同时能够支持多模态AI助手交互，以及非常丰富的AI影像能力。</p>\n  <p>此外，此前备受关注的AI原生手机努比亚M153豆包手机助手技术预览版也在这次高通展台亮相，这款手机搭载了骁龙8至尊版平台。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040342_bfd97790bc303adcb0c1b38d47b2d2a5.webp\" alt=\"图片\" data-ratio=\"0.5037037037037037\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100388257\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_a93400e.png\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"3\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p>与此同时，<strong>骁龙XR平台</strong>借助先进的空间计算与AI感知能力，已经成为AR、VR等沉浸式设备的最佳交互底座。</p>\n  <p>骁龙AR平台正在赋能当前炙手可热的新兴可穿戴品类——AI眼镜，包括小米AI眼镜、Meta Ray-Ban等备受关注的AI眼镜市场主力，都采用了骁龙AR平台；此次阿里在巴展推出的面向全球市场的千问AI眼镜S1和G1系列也搭载了第一代骁龙AR1平台。</p>\n  <p>此外还有<strong>骁龙Sound平台</strong>，为真无线耳机等产品引入了低延迟的AI音频增强功能；在桌面侧，骁龙PC平台也正在驱动AI PC的各类核心用例，深刻改变着专业内容创作与日常娱乐的方式……</p>\n  <p>总之，AI能力不仅跨越了软硬件的界限，也<strong>跨越了单一硬件的物理局限</strong>——</p>\n  <p>不同形态的终端，都在统一的计算架构下调用AI能力，具备了高效协同的前提，使个人AI迈向“万物智能”的全场景。</p>\n  <h2>AI可穿戴，补全“万物智能”拼图</h2>\n  <p>截止到高通这次发布之前，“万物智能”的全场景还差一块重要拼图，也就是高通最新涉猎的可穿戴设备。</p>\n  <p>现在的个性化AI竞争的逻辑其实很简单——<strong>抓准用户的真实生活轨迹</strong>，就能拿捏住用户体验这个命门。</p>\n  <p>高通CEO安蒙把这个逻辑说得很透：</p>\n  <blockquote>\n   <p>最具个性化的智能源于边缘侧，只有让边缘数据持续优化并适配AI模型，在边缘和云端之间形成动态反馈循环，才能让AI随用户不断进化。</p>\n  </blockquote>\n  <p>个人的生活情境数据极度私密，全扔给云端不仅有隐私风险，也会遇到网络延迟带来的反应迟钝问题。</p>\n  <p>因此，无论是从隐私还是效率角度出发，AI可穿戴设备都必须能在本地实时解析这些海量的边缘数据。</p>\n  <p>顺着这个思路，<strong>能全天候贴身佩戴的智能眼镜和手表，自然成了个人AI向外延伸的最佳物理触角</strong>——它们能时刻看你所看、听你所听，给本地AI提供真实的物理世界切片。</p>\n  <p>为了让微型设备拥有聪明的大脑，高通在这次MWC上正式发布了<strong>骁龙可穿戴平台至尊版</strong>。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040341_4010e863343955c755e2845c739e6a96.webp\" alt=\"图片\" data-ratio=\"0.5055555555555555\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100388258\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_71a6488.jpeg\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"4\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>它首次把NPU单元塞进可穿戴设备，在3纳米工艺加持下，采用<strong>Hexagon NPU</strong>和专门的<strong>低功耗eNPU</strong>的双脑协同架构，在手腕这个狭小的空间里硬是挤出了10TOPS的总算力，让设备能直接在端侧运行20亿参数的大模型。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040342_0b6f0ed9dcebf5850222aeeb6b1fd569.webp\" alt=\"图片\" data-ratio=\"0.5222222222222223\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100388260\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_5c29bef.jpeg\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"5\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>为解决电池痛点，平台还引入了<strong>低功率岛</strong>架构设计，在常驻后台工作的eNPU音频传感器和显示模块之间设置了物理隔离，从而减轻电量消耗。</p>\n  <p>配合超低功耗Wi-Fi和充电10分钟就能回血约50%的快充技术，骁龙可穿戴平台至尊版彻底打消了设备离开手机就会失联的顾虑。</p>\n  <p>有了这套强悍的算力底子，终端形态也将开始全面开花。</p>\n  <p>事实上，边缘AI的本事不仅能在手表上发挥，更向胸针项链等饰品蔓延。</p>\n  <p>比如摩托罗拉搞出的<strong>Project Maxwell</strong>概念验证设备，就完全抛弃了手表这种传统玩法，变成了能随时向你学习的AI感知伴侣，交互远比戳屏幕直观。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040338_2827d7510c0e53c1cea0bc487997d3cd.webp\" alt=\"图片\" data-ratio=\"1.3324468085106382\" data-type=\"png\" data-w=\"752\" data-imgfileid=\"100388259\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_6285638.jpeg\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"6\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>当然在大家更熟悉的智能手表领域，端侧AI带来的极速响应能力也是肉眼可见的。</p>\n  <p>搭载这套平台的手表不仅能给出极速的智能回复，还能靠本地跑通的人脸识别来保障安全，比如三星就已经计划把这套平台装进下一代<strong>Galaxy Watch</strong>里，去打造更全能的健康管家。</p>\n  <p>其他穿戴设备的感知能力也将脱胎换骨，比如<strong>雷蛇Motoko耳机</strong>，加上摄像头就能在本地实时翻译眼前的菜单，还有支持实时对话的AI语音助手；AI眼镜结合检测模型能直接搞定零件识别，让工厂里的工人解放双手……</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040338_8926bdf20b118f85b86069a6d309bbe1.webp\" alt=\"图片\" data-ratio=\"0.75\" data-type=\"jpeg\" data-w=\"1080\" data-imgfileid=\"100388262\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_4847fdb.jpeg\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"7\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>未来，随着骁龙可穿戴平台至尊版的落地，智能可穿戴等微型终端将有望快速跨越算力与功耗的鸿沟。</p>\n  <p>当身边大大小小的设备都能主动感知并给出反应时，一个物理世界与数字世界真正融合的“以用户为中心的生态”，就算彻底拉开大幕了。</p>\n  <h2>让私人助手真正隐入日常生活</h2>\n  <p>不管终端形态如何多样，“以人为本”的个人AI时代，都需要<strong>对用户习惯的精准掌握</strong>。</p>\n  <p>在这样的基础上，<strong>设备间的互联</strong>便顺理成章地提上了日程，因为只有通过多设备从多维度获取信息，才能勾勒出最真实的用户和环境画像。</p>\n  <p>覆盖骁龙平台广泛产品组合的<strong>高通AI引擎及低功耗模块高通传感器中枢</strong>，就是为此而生的硬件底座。</p>\n  <p>这套骁龙平台的通用AI技术基础架构不仅能够提供强大的终端侧AI性能，还负责以极低功耗收集情境信息，确保心率与位置等敏感指标均在本地完成安全推理。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260304040337_c639a6377d358c2a020ad5fb449c8c68.webp\" alt=\"图片\" data-ratio=\"0.562037037037037\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100388261\" data-aistatus=\"1\" data-src=\"https://image.jido.dev/20260304040335_ebeb42f.jpeg\" data-original-style=\"margin: 0px auto;padding: 0px;height: auto !important;\" data-index=\"8\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>再结合高通在蜂窝、微功耗Wi-Fi、蓝牙以及Snapdragon Seamless等近距离连接和传输技术上的传统艺能，让不同的终端之间拥有了统一的信任逻辑，让AI的跨设备流转更为自然，也实现了偏好记忆的无缝同步。</p>\n  <p>这种底层连接协议的彻底打通，让人和设备之间的关系开始面临重新定义。</p>\n  <p>想象过去，我们和机器打交道时往往非常被动，需要主动适应系统逻辑并输入明确的指令，才能让机器正常工作。</p>\n  <p>但就在眼下，<strong>技术开始全面退居幕后，隐藏进了日常生活的种种细节</strong>。</p>\n  <p>无论智能体背后的模型、接口、协议有多么复杂，在面对我们时，它都是以一副“个人助理”的面貌示人的。</p>\n  <p>这种模式下，系统能通过多维传感器敏锐捕捉个体的细微状态，根据周遭环境变化自动做出调整。</p>\n  <p>而所有繁杂的计算过程，都被巧妙掩藏在自然交互之下，带来了<strong>无感化的科技陪伴</strong>。</p>\n  <p>这种全面重塑，标志着<strong>高通正在利用散落在生活场景中的设备，编织一张具备高度协同能力的有机智能网络</strong>。</p>\n  <p>在这个体系中，所有的智能终端都不再是孤立的信息节点，它们共同构成了庞大网络的感官触角与执行末端。</p>\n  <p>其中，处于绝对核心位置的只有统筹这些设备的指挥者，也就是我们自己。</p>\n  <p>借由这套计算与连接并重的全景式AI方案，高通正在构建起一个完全以用户为中心的新型数字生态，让私人助理彻底隐入并服务于我们每一处真实的生活轨迹。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "高通在 MWC 发布骁龙可穿戴平台至尊版，通过 3nm 工艺和双 NPU 架构实现端侧运行 20 亿参数大模型，补齐了其全场景个人 AI 生态。",
+  "oneSentenceSummary": "高通在 MWC 发布骁龙可穿戴平台至尊版，通过 3nm 工艺和双 NPU 架构实现端侧运行 20 亿参数大模型，补齐了其全场景个人 AI 生态。",
+  "summary": "文章详细报道了高通在 MWC 巴塞罗那展会上发布的“骁龙可穿戴平台至尊版”。该平台旨在将生成式 AI 能力从手机、PC 延伸至智能手表、AI 胸针等微型设备。技术上，它采用 3nm 工艺，凭借 Hexagon NPU 与低功耗 eNPU 的双脑协同架构提供 10 TOPS 总算力，支持在端侧本地运行 20 亿参数的大模型。这一突破解决了云端处理带来的隐私风险与网络延迟问题。文章指出，随着可穿戴补齐最后一块拼图，高通正通过统一的计算架构和连接协议，构建一个以用户为中心、多设备无缝协同的有机智能网络，让个人 AI 助手能够精准掌握用户习惯并隐入日常生活。",
+  "mainPoints": [
+    {
+      "point": "高通发布骁龙可穿戴平台至尊版，为微型设备提供端侧大模型运行能力。",
+      "explanation": "该平台通过 3nm 工艺和双 NPU 架构提供 10 TOPS 算力，支持在本地运行 20 亿参数模型，解决了可穿戴设备在隐私保护和实时响应方面的核心痛点。"
+    },
+    {
+      "point": "边缘 AI 是实现高度个性化智能体的关键，必须依赖本地算力处理私密数据。",
+      "explanation": "个人生活情境数据极度私密，全天候佩戴的设备通过本地解析边缘数据，既能规避隐私泄露风险，又能消除云端传输带来的延迟，实现即时响应。"
+    },
+    {
+      "point": "高通通过跨终端的统一计算架构，编织以用户为中心的有机智能网络。",
+      "explanation": "AI 能力跨越了手机、PC、XR 及穿戴设备的物理局限，利用 Snapdragon Seamless 等技术打通底层连接，实现多设备间的偏好记忆同步与无感化协同。"
+    },
+    {
+      "point": "技术正全面退居幕后，个人 AI 助手将以无感化方式服务于真实生活。",
+      "explanation": "通过多维传感器捕捉个体状态并自动调整，复杂的计算过程被掩藏在自然交互之下，使 AI 从被动接受指令转变为主动感知的个人助理。"
+    }
+  ],
+  "keyQuotes": [
+    "高度个人化的智能体，才是未来交互的核心。",
+    "最具个性化的智能源于边缘侧，只有让边缘数据持续优化并适配 AI 模型……才能让 AI 随用户不断进化。",
+    "AI 能力不仅跨越了软硬件的界限，也跨越了单一硬件的物理局限。",
+    "高通正在利用散落在生活场景中的设备，编织一张具备高度协同能力的有机智能网络。",
+    "所有的智能终端都不再是孤立的信息节点，它们共同构成了庞大网络的感官触角与执行末端。"
+  ],
+  "tags": [
+    "高通",
+    "边缘 AI",
+    "骁龙可穿戴平台",
+    "端侧大模型",
+    "NPU"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 76,
+  "wordCount": 3513,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1772593905000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-04 03:11:45"
+}

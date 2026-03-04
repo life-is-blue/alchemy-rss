@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-04 20:07:23 | [返回首页](/README.md)
+**更新时间**: 2026-03-04 22:13:09 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9281)
+- [AI & 大模型](#ai-llm) (9305)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (703)
 - [DevOps](#devops) (414)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4855)
+- [其他](#other) (4865)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [深扒-Nano-Banana-2-超多趣味玩法，速度快还要效果好！](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247496575&idx=1&sn=b73502454851b048d618096de62d5c03) - AI 精选
 - [1500-个-PR、0-人写代码：Codex-驱动的百万行级内部产品实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247657188&idx=2&sn=a68f1062d1f1e0faa8b076849cfb42e9) - AI 精选
 - [Nano-Banana-2：将-Pro-级能力与闪电般的速度相结合](https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/) - AI 精选
 - [OpenClaw-+-Claude-Code-超强教程：一个人就能搭建完整的开发团队！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719868&idx=1&sn=c93e0542f8bebb653559315d02841b43) - AI 精选
@@ -41,9 +42,8 @@
 - [挑战-Claude-Code？OpenAI-Codex-发布月将至，今先揭秘智能体循环](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651013649&idx=2&sn=a49a7c202616345f76b61f3ef38cbc20) - AI 精选
 - [Skills-商店来了：5-万人在用的-Top-10-热门-Skills，我帮你试了一遍](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247488072&idx=1&sn=8e7dcebdccc93f06cd0c05ceac82b05c) - AI 精选
 - [Wilson-Lin-谈-FastRender：由数千个并行智能体构建的浏览器](https://simonwillison.net/2026/Jan/23/fastrender/#atom-everything) - AI 精选
-- [自动驾驶推理模型、ChatGPT-引入广告、苹果与谷歌的交易等...](https://www.deeplearning.ai/the-batch/issue-337) - AI 精选
 
-- [查看全部 9281 篇...](/details/tags/ai-llm.md)
+- [查看全部 9305 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -185,6 +185,6 @@
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 
-- [查看全部 4855 篇...](/details/tags/other.md)
+- [查看全部 4865 篇...](/details/tags/other.md)
 
 
