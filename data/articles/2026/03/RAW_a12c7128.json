@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a12c7128",
+  "title": "从集中控制到团队自治：重新思考基础设施交付",
+  "url": "https://www.infoq.com/news/2026/03/adidas-decentralized-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-03 15:01:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Adidas <a href=\"https://medium.com/adidoescode/towards-a-decentralised-delivery-of-infrastructure-a-data-platform-journey-cc4babf478e4\">overhauled its data platform infrastructure delivery</a>, moving from a centralized Infrastructure as Code (IaC) model to a decentralized approach. The change shifts ownership of infrastructure definitions from a central platform team to domain-aligned teams, reflecting a broader industry move toward product-oriented platform engineering.The transition aims to balance governance with autonomy, addressing scaling challenges that emerged as the company’s data platform expanded across multiple teams and use cases.</p>\n   <p>Under the original model, a single platform engineering team owned IaC repositories, managed deployment pipelines, and enforced standards across the organization. This centralized structure ensured consistency and compliance during early growth. As adoption expanded across multiple domain teams, however, request volumes increased, backlogs grew, and coordination between teams introduced additional overhead. The engineers characterize this limitation as inherent to the delivery model rather than the underlying tooling.</p>\n   <p><a href=\"https://medium.com/@jpm2617?source=post_page---byline--cc4babf478e4---------------------------------------\">Jose Moreno</a> emphasized,</p>\n   <blockquote>\n    <p>The core issue is the delivery model itself — one that no longer supports the pace and autonomy the organization needs.</p>\n   </blockquote>\n   <p>To address these constraints, adidas’s data platform team redefined how infrastructure was delivered and who could deliver it. The new operating model distributes responsibility to domain teams, enabling them to provision and manage infrastructure within predefined boundaries and standardized patterns. Platform engineers shifted away from executing individual infrastructure changes, instead maintaining reusable building blocks, tooling frameworks, and policies that support autonomous delivery.</p>\n   <p>The redesign introduced a layered IaC structure: reusable modules encapsulate resource definitions, stacks combine modules into deployable units, and consumption configurations reference approved stacks for production deployment. This separation restricts direct modification of foundational components while allowing experimentation in non‑production environments. In a decentralized environment, clarity on what can be changed, by whom, and where is critical for scaling safely.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/adidas-decentralized-platform/news/2026/03/adidas-decentralized-platform/en/resources/1adidasdecentralized-1771805425313.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/adidas-decentralized-platform/en/resources/1adidasdecentralized-1771805425313.jpeg\" rel=\"share\"></p>\n   <p><em>Infrastructure component types with developer requirements and responsibilities (Source: <a href=\"https://medium.com/adidoescode/towards-a-decentralised-delivery-of-infrastructure-a-data-platform-journey-cc4babf478e4\">Adidas Blog Post</a>)</em></p>\n   <p>A custom command‑line interface abstracts complexity and embeds governance into everyday workflows. By standardizing state handling, enforcing naming and tagging conventions, and integrating with continuous integration/continuous delivery (CI/CD) pipelines, the tooling ensures consistency without requiring a centralized review process. Automated pipelines orchestrate deployments, enforcing traceability and reproducibility across environments.</p>\n   <p>The reorganization also formalized roles and responsibilities. Framework owners are responsible for maintaining shared tooling and standards. Developers within domain teams compose infrastructure using approved patterns. Consumers deploy production configurations through automated pipelines. This delineation of duties reinforces accountability and reduces dependency on a single centralized team for delivery.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/adidas-decentralized-platform/news/2026/03/adidas-decentralized-platform/en/resources/1adidasworflow-1771805425313.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/adidas-decentralized-platform/en/resources/1adidasworflow-1771805425313.jpeg\" rel=\"share\"></p>\n   <p><em>Working model around decentralized infrastructure delivery (Source: <a href=\"https://medium.com/adidoescode/towards-a-decentralised-delivery-of-infrastructure-a-data-platform-journey-cc4babf478e4\">Adidas Blog Post</a>)</em></p>\n   <p>&nbsp;</p>\n   <p>Engineers report that decentralization reduced pressure on central backlogs and enabled multiple teams to deliver infrastructure independently. The shift illustrates that decentralizing IaC delivery is as much a cultural and organizational transformation as a technical one, requiring shared tooling, automation-first governance, and clear ownership boundaries.</p>\n   <p>The experience aligns with broader platform engineering trends. Enterprises increasingly enable self-service infrastructure while maintaining operational safety through standardized abstractions and automated policies. By reorganizing around autonomous teams supported by shared frameworks and CI/CD orchestration, the Adidas data platform demonstrates a model for scaling infrastructure delivery in complex environments.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"From Central Control to Team Autonomy: Rethinking Infrastructure Delivery\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/adidas-decentralized-platform/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772550060000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Adidas 将其数据平台从集中的基础设施即代码（IaC）模型转变为去中心化的、领域对齐的方法，以消除扩展瓶颈并赋能团队。",
+  "oneSentenceSummary": "Adidas 将其数据平台从集中的基础设施即代码（IaC）模型转变为去中心化的、领域对齐的方法，以消除扩展瓶颈并赋能团队。",
+  "summary": "文章详细介绍了 Adidas 在其数据平台基础设施交付方面的战略转变。Adidas 告别了由单一平台团队管理所有 IaC 仓库的集中模式，转而采用赋能领域对齐团队的去中心化方法。这一转变解决了平台扩展过程中出现的瓶颈和协调开销。新模型利用分层的 IaC 结构——包括可重用模块、可部署堆栈和消费配置——并由自定义 CLI 和自动化 CI/CD 流水线支持。通过正式化框架所有者（Framework Owners）和开发人员（Developers）等角色，Adidas 在保持治理和一致性的同时，允许团队在预定义边界内自主配置基础设施。",
+  "mainPoints": [
+    {
+      "point": "随着组织规模的扩大，集中的基础设施交付模型往往会成为瓶颈。",
+      "explanation": "虽然集中控制能确保早期的一致性，但不断增加的请求量和积压工作最终会阻碍开发进度，因此有必要向团队自治转变。"
+    },
+    {
+      "point": "分层的 IaC 结构平衡了基础稳定性和开发人员的灵活性。",
+      "explanation": "通过将可重用模块与可部署堆栈和生产配置分离，组织可以限制核心变更，同时允许领域团队安全地进行实验。"
+    },
+    {
+      "point": "治理应嵌入到工具中，而不是通过人工审查来强制执行。",
+      "explanation": "利用自定义 CLI 和自动化 CI/CD 流水线，可以在无需中央团队干预的情况下，强制执行命名、打标签和状态处理标准。"
+    },
+    {
+      "point": "去中心化是一项需要明确定义角色的组织转型。",
+      "explanation": "成功取决于区分维护框架的人（所有者）、构建基础设施的人（开发人员）和部署基础设施的人（消费者）。"
+    }
+  ],
+  "keyQuotes": [
+    "核心问题在于交付模型本身——它已不再支持组织所需的速度和自主性。",
+    "平台工程师不再负责执行具体的基础设施变更，而是维护可重用的构建块、工具框架和策略。",
+    "在去中心化环境中，明确谁可以在何处更改什么，对于安全扩展至关重要。",
+    "去中心化 IaC 交付既是一场技术变革，也是一场文化和组织转型。"
+  ],
+  "tags": [
+    "Platform Engineering",
+    "Infrastructure as Code",
+    "DevOps",
+    "可扩展性",
+    "云基础设施"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 495,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772550060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-03 15:01:00"
+}

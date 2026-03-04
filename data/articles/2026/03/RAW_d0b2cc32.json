@@ -1,0 +1,62 @@
+{
+  "id": "RAW_d0b2cc32",
+  "title": "Google 发布智能体架构扩展原则",
+  "url": "https://www.infoq.com/news/2026/03/google-multi-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-03 14:00:00",
+  "author": "Anthony Alford",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Researchers from <a href=\"https://research.google/\">Google</a> and <a href=\"https://web.mit.edu/\">MIT</a> published a paper describing a <a href=\"https://arxiv.org/abs/2512.08296\">predictive framework for scaling multi-agent systems</a>. The framework shows that there is a tool-coordination trade-off and it can be used to select an optimal agentic architecture for a given task.</p>\n   <p>The scaling model relies on several predictive factors of the system, including the underlying LLM's <em>intelligence index</em>;&nbsp;the baseline performance of a single agent; the number of agents; number of tools; and coordination metrics. The researchers found there were three dominant effects in the model: tool-coordination trade-off, where tasks requiring many tools perform worse with multi-agent overhead; capability saturation, where adding agents yields diminishing returns when the single-agent baseline performance exceeds a certain threshold; and topology-dependent error amplification, where centralized orchestration reduces error amplification. They also found that the best coordination strategy is task dependent: financial reasoning benefits from centralized orchestration, while web navigation does better with a decentralized strategy. When evaluated on held-out test data, the scaling framework predicted the optimal coordination strategy at 87%. According to Google:</p>\n   <blockquote>\n    <p>As foundational models like Gemini continue to advance, our research suggests that smarter models don't replace the need for multi-agent systems, they accelerate it, but only when the architecture is right. By moving from heuristics to quantitative principles, we can build the next generation of AI agents that are not just more numerous, but smarter, safer, and more efficient.</p>\n   </blockquote>\n   <p>The Google team classified different multi-agent architectures into the categories based on how the agents in the system coordinated: independent, where there is no inter-agent coordination; centralized, where agents communicate only with a central orchestrator; decentralized, with peer-to-peer coordination; and hybrid, with a balance between centralized and decentralized. Each of these has several configuration parameters, such as the number of agents, number of iterations per agent, etc, as well as different computational and memory complexities and number of LLM calls.</p>\n   <p><img alt=\"Multi-agent Architectures\" data-src=\"https://www.infoq.com/news/2026/03/google-multi-agent/news/2026/03/google-multi-agent/en/resources/1multi-agent-architectures-1772373213503.png\" style=\"width:100%;height:537px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/google-multi-agent/en/resources/1multi-agent-architectures-1772373213503.png\" rel=\"share\"><em>Multi-agent Architectures. Image Source: <a href=\"https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/\">Google Research</a></em></p>\n   <p>The scaling model the researchers developed is a regression model with 20 terms, based on nine predictor variables as well as interaction terms between the different predictor variables. They excluded \"interactions without clear mechanistic justification...to avoid overfitting.\" Google notes that the model does have several limitations. In particular, they note that \"tool-heavy\" tasks cause inefficiencies in multi-agent coordination, and point toward the need for \"specialized coordination protocols for tool-intensive tasks.\"</p>\n   <p>In a Hacker News <a href=\"https://news.ycombinator.com/item?id=46847958\">discussion about the paper</a>, several users shared their own experiences with multi-agent workflows. One wrote:</p>\n   <blockquote>\n    <p>I’ve been building a lot of agent workflows at my day job. Something that I’ve found a lot of success with when deciding on an orchestration strategy is to ask the agent what they recommend as part of the planning for phase. This technique of using the agent to help you improve its performance has been a game changer for me in leveraging this tech effectively. YMMV of course. I mostly use Claude code so who knows with the others.</p>\n   </blockquote>\n   <p>Collaboration and orchestration strategies for multi-agent systems is an active research topic. In 2025, InfoQ covered Amazon's <a href=\"https://www.infoq.com/news/2025/01/aws-bedrock-multi-agent-ai/\">multi-agent collaboration framework</a> for Amazon Bedrock, which enables specialized agents to work together under a supervisor agent's coordination. Earlier this year, InfoQ covered Google's guide outlining eight essential <a href=\"https://www.infoq.com/news/2026/01/multi-agent-design-patterns/\">design patterns for multi-agent systems</a>, which provides concrete explanations of each pattern along with sample code for Google's Agent Development Kit.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Publishes Scaling Principles for Agentic Architectures\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Anthony Alford\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/google-multi-agent/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772546400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 和 MIT 的研究人员推出了一项定量预测框架，通过分析工具使用、协调开销和特定任务拓扑之间的权衡，来优化多智能体系统架构。",
+  "oneSentenceSummary": "Google 和 MIT 的研究人员推出了一项定量预测框架，通过分析工具使用、协调开销和特定任务拓扑之间的权衡，来优化多智能体系统架构。",
+  "summary": "本文讨论了 Google 和 MIT 合作的一篇研究论文，该论文为多智能体系统（MAS）建立了“扩展科学”。研究人员超越了试错启发法，开发了一个基于回归的预测框架，能以 87% 的准确率确定特定任务的最佳智能体架构。该模型评估了 LLM 智能指数、智能体数量、工具密度和协调指标等变量。核心发现强调了关键的工具-协调权衡，即高工具需求可能使多智能体开销适得其反，并证明编排策略必须依赖于任务——推理任务采用中心化，导航任务采用去中心化。该框架为设计高效、可扩展且更安全的 AI 智能体生态系统提供了严谨的方法论。",
+  "mainPoints": [
+    {
+      "point": "定量预测框架取代了多智能体系统设计的启发法。",
+      "explanation": "研究人员开发了一个包含 20 个项的回归模型，利用 9 个变量来预测不同智能体架构的性能，在选择最佳策略方面的准确率达到 87%。"
+    },
+    {
+      "point": "“工具-协调权衡”限制了多智能体系统在工具密集型任务中的效率。",
+      "explanation": "当任务需要大量工具时，协调多个智能体的开销往往会导致性能下降，这表明在工具密集型环境中需要专门的协议。"
+    },
+    {
+      "point": "最佳协调策略高度依赖于任务的具体性质。",
+      "explanation": "实证证据表明，中心化编排在金融推理方面表现更优，而对等（P2P）去中心化策略在网络导航任务中表现更好。"
+    },
+    {
+      "point": "增加更多智能体会导致能力饱和及收益递减。",
+      "explanation": "该模型确定了一个阈值，即增加智能体数量不再能提升性能，特别是当单个智能体的基础能力已经很高时。"
+    },
+    {
+      "point": "中心化编排有助于减轻依赖于拓扑结构的错误放大。",
+      "explanation": "通过中央编排器路由通信，系统可以减少在更复杂的去中心化智能体网络中经常出现的错误累积。"
+    }
+  ],
+  "keyQuotes": [
+    "随着 Gemini 等基础模型的不断进步，我们的研究表明，更智能的模型并不会取代对多智能体系统的需求，反而会加速这种需求，但前提是架构必须正确。",
+    "通过从启发法转向定量原则，我们可以构建下一代 AI 智能体，它们不仅数量更多，而且更智能、更安全、更高效。",
+    "该框架表明存在工具-协调权衡，并可用于为给定任务选择最佳智能体架构。",
+    "工具密集型任务会导致多智能体协调效率低下，这指向了对工具密集型任务采用专门协调协议的需求。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "扩展定律",
+    "AI 架构",
+    "LLM 编排",
+    "Google Research"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 549,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772546400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-03 14:00:00"
+}
