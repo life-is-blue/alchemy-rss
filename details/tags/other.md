@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-05 08:10:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-05 10:54:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -29105,6 +29105,14 @@
 
 
 
+### [OpenAI-开源-Codex-的-Windows-原生智能体沙箱](https://x.com/OpenAIDevs/status/2029252477179314350)
+
+2026-03-04 17:47:46 | 标签: Codex, Windows 安全, 沙箱, 开源, Rust
+
+> OpenAI 揭秘了 Codex Windows 应用的技术基础：一个定制的原生智能体沙箱。该实现利用了 Windows 操作系统级的安全控制，包括受限令牌、文件系统访问控制列表 (ACL) 以及专用沙箱用户，以确保智能体在 PowerShell 环境中安全运行。至关重要的一点是，OpenAI 已在 GitHub 上开源了这一实现，供社区探索。
+
+
+
 ### [吴恩达：提出图灵-通用人工智能测试以抵制-AI-炒作](https://x.com/AndrewYNg/status/2008578741312836009)
 
 2026-01-06 16:37:44
@@ -29189,11 +29197,11 @@
 
 
 
-### [Anthropic-CEO-Dario-Amodei-访谈：我们正在接近指数的终点](https://baoyu.io/blog/2026-02-14/dario-amodei-interview-analysis)
+### [快不等于好：Anthropic-和-OpenAI-的快速模式藏着什么](https://baoyu.io/blog/2026-02-15/fast-mode-vs-codex-spark)
 
-2026-02-14T00:00:00.000Z
+2026-02-15T00:00:00.000Z
 
-> Anthropic CEO Dario Amodei 再上 Dwarkesh Podcast，聊了两小时。收入每年翻 10 倍、刚融 300 亿、估值 3800 亿——但他不敢像 OpenAI 那样 all-in 算力。因为猜对方向容易，猜对时间几乎不可能，而猜错一年就可能破产。
+> Anthropic 和 OpenAI 几乎同时推出 AI 编程的「快速模式」，但走了完全不同的技术路线：一个给同一模型加速 2.5 倍收 6 倍价格，一个用蒸馏模型跑在专用芯片上飙到 1000 token/秒。速度军备竞赛背后，藏着两种截然不同的产品哲学。
 
 
 
