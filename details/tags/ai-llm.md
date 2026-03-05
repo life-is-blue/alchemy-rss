@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-05 16:07:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-05 18:12:38 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -53774,9 +53774,7 @@
 
 ### [与-Boris-Cherny-共同构建-Claude-Code](https://www.youtube.com/watch?v=julbw1JuAz0)
 
-2026-03-04 17:57:56 | 标签: Claude Code, Anthropic, AI 智能体, 软件工程, 开发者生产力
-
-> 在这次访谈中，Anthropic 工程负责人 Boris Cherny 详细介绍了 Claude Code 的演进以及他向“零手动代码”工作流的激进转变。他分享了如何利用并行 AI 智能体每天管理 20-30 个 PR（拉取请求），并强调通过“计划模式”（Plan Mode）和 Git Worktrees 来保持高速产出。讨论涵盖了 Anthropic 的“技术参谋”（Member of Technical Staff）文化——通过取消职级头衔来鼓励通才式的问题解决，并用快速原型设计取代 PRD。Boris 提供了构建智能体工具的深度架构见解，倡导“瑞士奶酪”安全模型，并阐述了智能体搜索优于传...
+2026-03-04 17:57:56
 
 
 
