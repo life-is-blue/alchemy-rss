@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-05 14:13:01 | [返回首页](/README.md)
+**更新时间**: 2026-03-05 16:07:54 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9307)
+- [AI & 大模型](#ai-llm) (9308)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (703)
 - [DevOps](#devops) (414)
@@ -43,7 +43,7 @@
 - [Skills-商店来了：5-万人在用的-Top-10-热门-Skills，我帮你试了一遍](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247488072&idx=1&sn=8e7dcebdccc93f06cd0c05ceac82b05c) - AI 精选
 - [Wilson-Lin-谈-FastRender：由数千个并行智能体构建的浏览器](https://simonwillison.net/2026/Jan/23/fastrender/#atom-everything) - AI 精选
 
-- [查看全部 9307 篇...](/details/tags/ai-llm.md)
+- [查看全部 9308 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
