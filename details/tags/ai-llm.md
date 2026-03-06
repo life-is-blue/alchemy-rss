@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-06 20:05:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-06 22:11:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4238,9 +4238,7 @@
 
 ### [Nano-Banana-终极提示词指南](https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-nano-banana/)
 
-2026-03-06 00:00:00 | 标签: 图像生成, 提示词工程, Google Cloud, Gemini 3, 多模态 AI
-
-> 本文是 Gemini 3 系列中 Nano Banana 2 和 Nano Banana Pro 图像生成模型的全面手册。它概述了包括高达 131k token 的上下文窗口和 4K 分辨率支持在内的技术规格。该指南介绍了用于文本生成图像、多模态编辑和实时网络搜索集成的结构化提示词框架。此外，它还提供了“创意总监”级别的指令，用于控制灯光、相机硬件和胶片库存，同时强调了模型渲染精确多语言文本以及与 Veo 和 Lyria 等视频和音频模型集成的能力。
+2026-03-06 00:00:00
 
 
 
@@ -7414,9 +7412,7 @@
 
 ### [科技爱好者周刊（第-387-期）：你是领先的](http://www.ruanyifeng.com/blog/2026/03/weekly-issue-387.html)
 
-2026-03-05 20:20:54 | 标签: AI 趋势, OpenClaw, 网络安全, 开源工具, JavaScript
-
-> 阮一峰第 387 期周刊通过数据指出，尽管 AI 浪潮汹涌，但深度使用 AI 生成代码的人群仅占全球 0.04%。文章重点分析了 GitHub 现象级项目 OpenClaw，其凭借自然语言控制电脑的能力在 4 个月内获得 25 万星，但也因 AI 生成代码缺乏审查、权限过度授权及大量实例暴露公网而面临严峻安全风险。此外，周刊还分享了二维码音频存储、加密货币安全事故等科技趣闻，并推荐了涉及 AI 提示工程、JavaScript 性能优化、个人 AI 分身构建等领域的深度文章和十余款开源工具。
+2026-03-05 20:20:54
 
 
 
@@ -10782,57 +10778,43 @@
 
 ### [Transformer-作者重造龙虾，Rust-搓出钢铁版，告别-OpenClaw-裸奔](https://www.qbitai.com/2026/03/384519.html)
 
-2026-03-06 09:56:11 | 标签: AI Agent, Rust, 网络安全, WASM, 可信执行环境 (TEE)
-
-> 本文介绍了针对 AI 智能体框架 OpenClaw 安全漏洞频发的问题，Transformer 论文作者 Illia Polosukhin 发起的开源重构项目 IronClaw。该项目采用 Rust 语言开发，构建了包括内存安全保证、WASM 沙箱隔离、AES-256 加密凭证保险库及可信执行环境（TEE）在内的四层纵深防御体系。其核心创新在于“凭证隔离”机制，确保大模型（LLM）在运行过程中无法接触原始密钥，仅在通信边界按需注入，从而从根本上防御提示注入和恶意插件攻击。此外，文章还探讨了 IronClaw 作为 NEAR Protocol “用户自有 AI”愿景中运行时层的战略地位，展示了未...
+2026-03-06 09:56:11
 
 
 
 ### [智能体手动测试---智能体工程模式](https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/#atom-everything)
 
-2026-03-06 05:43:54 | 标签: AI 智能体, 智能体工程, 软件测试, Playwright, LLM 验证
-
-> Simon Willison 认为，编程智能体的核心能力在于其执行和验证代码的能力。虽然自动化单元测试必不可少，但它们往往会忽略 UI 缺陷或运行时崩溃。文章介绍了“智能体手动测试”——一种智能体使用 `python -c`（针对库）、`curl`（针对 API）以及 Playwright 或 Rodney（针对基于浏览器的 UI）等工具进行探索性测试的模式。此外，文章还强调了智能体通过 Showboat 等工具“展示工作过程”的重要性，该工具记录命令输出和截图，以防止 LLM 幻觉，并为测试过程提供可验证的审计追踪。
+2026-03-06 05:43:54
 
 
 
 ### [FlashAttention-4-正式发布：算法流水线大改，矩阵乘法级速度](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020091&idx=2&sn=dc5a27b3f449a9d5ea45b053cacb184f)
 
-2026-03-06 04:28:00 | 标签: FlashAttention-4, Blackwell GPU, Transformer 优化, CUDA 编程, 深度学习算子
-
-> 文章详细介绍了 FlashAttention-4 的重大技术更新及其针对 NVIDIA Blackwell (B200/GB200) 架构的优化策略。核心挑战在于 Blackwell 的 Tensor Core 吞吐量增长远超共享内存带宽和特殊函数单元（SFU）。为此，FA4 引入了多项式指数模拟、条件式 Softmax 重缩放、2-CTA MMA 指令以及利用张量内存（TMEM）存储中间结果等创新机制。此外，FA4 采用 CuTe-DSL 实现，显著缩短了编译时间。性能测试显示，其在 B200 上的表现远超 cuDNN 和 Triton，并已获得 PyTorch FlexAttention ...
+2026-03-06 04:28:00
 
 
 
 ### [CVPR-2026-|-1B-模型也能当多镜头导演？大连理工&amp;快手可灵开源力作-MultiShotMaster](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020091&idx=3&sn=1a83a5837a71f62aef47735021021562)
 
-2026-03-06 04:28:00 | 标签: 视频生成, MultiShotMaster, 可灵 AI, CVPR 2026, RoPE 创新
-
-> 本文详细介绍了由大连理工大学、快手可灵团队及香港中文大学联合研发的 MultiShotMaster 框架。该研究旨在解决多镜头视频生成中的叙事连贯性与开发成本问题。核心创新在于对旋转位置编码（RoPE）的改进：提出了“多镜头叙事 RoPE”，通过相位偏移显式标记镜头边界；以及“时空位置感知 RoPE”，在不增加额外参数的前提下，实现了对参考图像主体和背景的精准注入及运动控制。此外，文章展示了其自动化的多镜头数据标注流程，并证明了该框架在 1.3B 和 14B 参数量级下均能达到卓越的跨镜头一致性。目前该论文已入选 CVPR 2026 并全面开源，为低算力条件下的高质量视频创作提供了新路径。
+2026-03-06 04:28:00
 
 
 
 ### [Clinejection-——-仅通过提示词攻击-Issue-分类器即可入侵-Cline-的生产发布版本](https://simonwillison.net/2026/Mar/6/clinejection/#atom-everything)
 
-2026-03-06 02:39:04 | 标签: 提示词注入, GitHub Actions, 缓存污染, 供应链攻击, AI 智能体
-
-> 这篇技术文章描述了针对 Cline 仓库的多阶段漏洞利用过程。攻击始于 GitHub Issue 标题中的提示词注入，目标是配置了 bash 和写入权限的 AI Issue 分类机器人。通过诱导 AI 执行恶意的 “npm install”，攻击者利用名为 “cacheract” 的技术驱逐了现有的 GitHub Actions 缓存，并将其替换为污染版本。由于分类工作流和发布工作流共享相同的缓存键，每日构建发布流程加载了被入侵的缓存，导致攻击者窃取了 NPM 发布密钥，并成功发布了受损的软件版本。
+2026-03-06 02:39:04
 
 
 
 ### [GPT-5.4-深夜发布，最适合-OpenClaw-的天选模型登场了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680455&idx=1&sn=72f6e792e3a85f07250949a9f1236ea6)
 
-2026-03-05 22:36:00 | 标签: GPT-5.4, OpenAI, AI Agent, OpenClaw, 代码大模型
-
-> 文章以 2026 年为背景，详细评述了 OpenAI 新发布的 GPT-5.4 模型。作者认为该模型解决了此前 GPT-5.3 Codex 虽强于代码但缺乏“人味”和世界知识的问题，实现了代码能力与常识理解的高度统一。文章引用了 GDPval、SWE-Bench Pro 等多项指标，对比了 GPT-5.4 与 Claude Opus 4.6 的优劣，并重点介绍了其 100 万 Token 上下文窗口、原生计算机操作能力（Native Computer Use）以及大幅降低成本的工具搜索功能。作者强烈推荐将其作为 AI Agent 工具 OpenClaw 的首选基座模型。
+2026-03-05 22:36:00
 
 
 
 ### [评估技能](https://blog.langchain.com/evaluating-skills/)
 
-2026-03-05 18:00:50 | 标签: 编程智能体, LLM 评估, LangChain, 智能体工作流, 提示工程
-
-> 本文介绍了“技能”的概念，即经过策划、动态加载的指令，旨在帮助编程智能体（如 Claude Code）在不产生传统工具调用带来的上下文膨胀问题的情况下扩展性能。文章概述了一个严谨的四步评估流程：建立隔离的 Docker 环境以确保可重复性；定义具有可量化指标的受限任务（如 Bug 修复）；使用 XML 和配置文件（AGENTS.md）对技能进行模块化构建；以及利用 LangSmith 等可观测性工具追踪智能体轨迹。作者强调，系统化的基准测试对于摆脱“凭感觉”的评估至关重要，能确保技能迭代确实带来了智能体效率和成功率的可衡量提升。
+2026-03-05 18:00:50
 
 
 
@@ -30014,57 +29996,43 @@
 
 ### [OpenAI-在-1100-亿美元多云交易中为-Frontier-平台获得-AWS-分销支持](https://www.infoq.com/news/2026/03/openai-aws-frontier-stateful/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-06 10:11:00 | 标签: OpenAI, AWS, Microsoft Azure, AI 基础设施, 多云策略
-
-> 本文详细介绍了 OpenAI 标志性的 1100 亿美元融资，其中亚马逊领投 500 亿美元。这笔交易标志着 OpenAI 基础设施战略的重大转变，从以微软为中心转向多云模式。具体而言，该伙伴关系创造了技术上的“领地划分”：Microsoft Azure 仍然是无状态 API 调用的独家阵地，而 AWS 则通过“Frontier”平台获得了有状态运行时环境的独家权。这使得 AWS 能够在其 Bedrock 服务上托管保持记忆和上下文的 AI 智能体。此外，OpenAI 已承诺投入 1000 亿美元使用亚马逊定制的 Trainium 芯片，这标志着其正摆脱对 Nvidia 的完全依赖。该交易凸显...
+2026-03-06 10:11:00
 
 
 
 ### [GPT-5.4-发布，OpenClaw-的能力要被替代？OpenAI-新模型会自己用电脑了，还顺手把编程能力拉满](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=1&sn=93ab0fed3b2a135bdc363e5665967bf4)
 
-2026-03-06 04:39:00 | 标签: GPT-5.4, OpenAI, CUA, 计算机操作, AI Agent
-
-> 文章以 2026 年为背景，报道了 OpenAI 发布 GPT-5.4 模型的消息。该模型被描述为整合了推理、编程与原生电脑操作能力的集大成者。其核心亮点包括：原生具备计算机操作能力（CUA），在 OSWorld 等基准测试中表现优异；引入“工具搜索”技术，通过按需检索工具定义，将长上下文任务的 token 消耗降低了 47%；在编程领域，Codex 模式提速并增强了复杂前端任务的处理能力。此外，文章还详细列出了 GPT-5.4 不同版本的 API 定价及其背后的成本逻辑。
+2026-03-06 04:39:00
 
 
 
 ### [智能体时代的人月神话](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=2&sn=85a2346dc7331e1fc62dee5ad287fd4d)
 
-2026-03-06 04:39:00 | 标签: 人月神话, AI 智能体, 软件工程, 技术债务, 本质复杂性
-
-> 本文由资深开源开发者 Wes McKinney 撰写，探讨了在 AI 智能体（如 Claude Code）深度介入编程的背景下，经典软件工程理论《人月神话》的适用性。作者指出，尽管 AI 极大地提升了代码生成速度，但并未解决软件开发的“本质复杂性”。相反，AI 容易制造出比人类编写更臃肿、更繁琐的代码库，导致技术债务以机器速度累积，形成“智能体焦油坑”。作者强调，当编码成本趋近于零时，人类的架构设计能力、对产品范围的克制力以及审美品味，将成为决定软件质量的最终约束。文章警示开发者，在智能体时代，把握系统的概念完整性比开启更多并行 AI 会话更为重要。
+2026-03-06 04:39:00
 
 
 
 ### [OpenClaw-能“边用边训”了：智能体强化学习训练框架-AReaL-v1.0-稳定版发布](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=3&sn=5215c27c014fc50b9ea0514474ee06a5)
 
-2026-03-06 04:39:00 | 标签: 强化学习, AI Agent, AReaL, 分布式训练, 开源框架
-
-> 本文介绍了开源强化学习训练框架 AReaL v1.0 的正式发布。该框架由蚂蚁集团与清华大学联合研发，旨在解决智能体（Agent）接入训练成本高及缺乏持续进化能力的两大痛点。AReaL 采用首个全异步训推解耦架构，引入 Proxy Worker 中转层，使开发者无需修改代码，仅需调整请求地址即可将 OpenClaw、LangChain 等 Agent 接入 RL 训练。其内置的 Archon 引擎支持 5D 并行技术，可处理千亿参数 MoE 模型。此外，文章还强调了 AI 辅助开发在提升此类复杂基础设施工程研发效率方面的显著作用。
+2026-03-06 04:39:00
 
 
 
 ### [AI“氛围编程”威胁开源，维护者面临危机](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277259&idx=4&sn=113a0d7fb3649c53bb8820a068946f24)
 
-2026-03-06 04:39:00 | 标签: 开源维护, 氛围编程, AI Slop, 软件工程, GitHub
-
-> 文章深入探讨了“氛围编程”（Vibe Coding）对开源生态的破坏性影响。由于 AI 极大地降低了代码生成的门槛，大量未经审核、质量低下的 AI 贡献（AI Slop）涌入 GitHub 等平台，导致 cURL、Ghostty 等知名项目的维护者不堪重负。研究表明，这种趋势正形成负反馈循环：开发者过度依赖 AI 组装代码而忽视文档和深度参与，导致文档流量下降、人类反馈减少，最终可能导致软件质量下滑。文章还批评了 GitHub 等平台为追求股东价值而激励 AI 贡献量，却未给维护者提供有效过滤工具的现状，警告这可能导致未来开源创新的枯竭。
+2026-03-06 04:39:00
 
 
 
 ### [【第-3664-期】Claude-Code-系统化方法：从规划到高效交付](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278666&idx=1&sn=6fadb54fb3fca3e1324cb35b3bca3700)
 
-2026-03-06 01:04:00 | 标签: Claude Code, AI Coding, 提示词工程, 上下文管理, 软件工程
-
-> 文章由资深软件工程师 Eyad 分享，核心观点是 AI 编程不应只是简单的代码生成，而是一套严谨的工程流程。作者结合 Amazon、Disney 等大厂经验，详细阐述了使用 Claude Code 的系统化方法：首先，强调“先思考再动手”，利用 Plan 模式进行架构设计；其次，通过维护精简的 CLAUDE.md 文件来管理项目上下文和规则；第三，揭示了上下文窗口在 20%-40% 占用时即会出现质量退化的现象，并提供了重置和压缩的技巧；最后，探讨了如何利用 MCP、Hooks 和无头模式将 Claude 融入自动化工作流，实现从工具到系统的跨越。
+2026-03-06 01:04:00
 
 
 
 ### [阿里开源-Team-版-OpenClaw，5-分钟完成本地安装](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558717&idx=1&sn=f0da24160b18a384f21eba5e9bd8b85f)
 
-2026-03-06 00:32:00 | 标签: AI Agent, OpenClaw, HiClaw, Multi-Agent, 软件架构
-
-> 文章详细介绍了 HiClaw（OpenClaw 的 Team 进化版）的核心特性与架构设计。针对原生 OpenClaw 在 API 凭证安全、上下文记忆爆炸、多 Agent 协作低效以及移动端接入难等痛点，HiClaw 引入了 Manager Agent（管家角色）进行任务拆解与分发，并利用 Higress AI Gateway 实现凭证脱敏，内置 Matrix 服务器提供全平台即时通讯能力。此外，文章还展示了如何通过 MinIO 共享文件系统优化 Token 成本，并提供了 5 分钟快速安装指南及一个完整的 SaaS 产品开发实战案例，展示了 AI 团队协作的未来形态。
+2026-03-06 00:32:00
 
 
 
@@ -42280,25 +42248,19 @@
 
 ### [2026-03-06-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-03-06-HackerNews/)
 
-2026-03-06 08:52:09 | 标签: Hacker News, AI 伦理, 开源许可, 网络安全, 软件工程
-
-> 文章精选了 Hacker News 上的多项热点。核心事件包括：维基媒体因安全工程师在生产环境误加载恶意脚本导致全球 JavaScript 污染；Anthropic CEO 公开指责 OpenAI 与美军合作的条款虚伪，引发 AI 伦理讨论；开源项目 chardet 因使用 AI 重写代码并更改许可引发法律争议，触及 AI 生成内容的版权边界。技术工具方面，介绍了支持 40+ API 的 Google Workspace CLI 工具 gws，以及用 C# 重写的现代 2D 动画工具 Flash 2026。此外，还涉及了 1300 亿美元关税退还令、MacBook Neo 硬件规格差异以及对德...
+2026-03-06 08:52:09
 
 
 
 ### [AINews-GPT-5.4：SOTA-知识工作、编程与-CUA-模型，OpenAI-强势回归](https://www.latent.space/p/ainews-gpt-54-sota-knowledge-work)
 
-2026-03-06 07:22:26 | 标签: GPT-5.4, OpenAI, FlashAttention-4, 计算机使用智能体, Qwen 3.5
-
-> 本期 AINews 分析了 OpenAI GPT-5.4 的重大发布，这标志着将前沿编程与推理能力合并到单一主线模型的战略转变。报告重点介绍了 GPT-5.4 的“计算机使用”（CUA）功能，该功能使其能够以人类水平的熟练度操作 GUI，并在 OSWorld 和 GDPVal 基准测试中打破纪录。除 OpenAI 之外，本文还综合了 AI 基础设施的关键进展，包括针对 Blackwell GPU 优化的 FlashAttention-4 的发布、结合了 Transformer 与线性 RNN 的 Allen AI OLMo Hybrid 架构，以及 Databricks 用于强化学习（RL）落...
+2026-03-06 07:22:26
 
 
 
 ### [大厂入局引爆-AI-漫剧，第一批跳槽的人工资涨-10-倍？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650863876&idx=4&sn=0d86ab99ee4c492ccfacfe9c50037352)
 
-2026-03-06 03:26:00 | 标签: AI 漫剧, AIGC, 短剧产业, 内容商业化, 字节跳动
-
-> 本文深度调研了 AI 漫剧行业的爆发式现状。得益于 AIGC 技术对剧本、分镜、配音全流程的渗透，漫剧制作成本从真人短剧的数十万降至十万级，周期缩短近 90%。与短剧“下沉女性”受众不同，AI 漫剧凭借玄幻、末世等题材吸引了大量年轻男性，带来了 62% 的增量付费用户。目前，字节、百度、腾讯等大厂已悉数入场，通过独立 App 争夺版权与流量红利，行业正从单纯的内容风口转向技术驱动的 C 端落地场景。
+2026-03-06 03:26:00
 
 
 
@@ -55288,9 +55250,7 @@
 
 ### [推出-Cursor-Automations：构建全天候-AI-智能体](https://x.com/cursor_ai/status/2029604182286856663)
 
-2026-03-05 17:05:19 | 标签: Cursor, AI 智能体, Cursor Automations, 智能体工作流, 软件工程
-
-> Cursor 正在引入一项名为“Automations”的重大新功能。这一特性代表了从“响应式 AI 辅助”向“主动式、全天候”智能体的转变。这些智能体被设计为在开发环境中持续运行，能够在无需频繁人工提示的情况下处理后台任务、代码重构或监控，标志着 AI 驱动软件工程的一次重要演进。
+2026-03-05 17:05:19
 
 
 

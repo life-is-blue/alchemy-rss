@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-06 20:05:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-06 22:11:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -398,9 +398,7 @@
 
 ### [Read-Copy-Update-RCU：无锁性能的秘诀](https://www.infoq.com/articles/read-copy-update/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-06 09:00:00 | 标签: RCU, 并发, 无锁, 性能优化, Linux 内核
-
-> 本文探讨了 Read-Copy-Update (RCU) 作为读密集型工作负载中传统读写锁的高性能替代方案。它详细介绍了三阶段机制：无锁读取、写时复制更新和原子指针交换。其核心创新在于“宽限期”（grace period），即内存回收被延迟到所有活动读取者完成后进行，在不阻塞的情况下确保安全性。通过分析缓存一致性问题以及在 Linux 内核、PostgreSQL 和 Envoy 中的实际实现，作者展示了 RCU 如何在现代多核系统中牺牲即时一致性，以换取巨大的可扩展性和减少的 CPU 争用。
+2026-03-06 09:00:00
 
 
 
