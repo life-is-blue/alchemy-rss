@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d72dca9",
+  "title": "别干活了！给 AI 布置办公室去吧！",
+  "url": "https://www.xiaoyuzhoufm.com/episode/69a6dc8ba374f44ffa797457",
+  "date": "2026-03-03 13:00:00",
+  "author": "徐文浩，任鑫",
+  "siteName": "AI炼金术",
+  "content": "<html>\n <head></head>\n <body>\n  <p><strong><span>你的角色已经变了——从干活的人，变成给 AI 搭脚手架的人。</span></strong></p>\n  <p><span>两位连续创业者、任鑫与徐文浩，在这期春节后的闲聊中，毫无保留地拆解了他们用 Claude Code 和 OpenClaw 的真实日常：晚上睡前布置任务、早上起来验收成果、过年期间顺手提交几十个 commit。</span></p>\n  <p><span>徐文浩坦言自己提效 3-5 倍，且正在向 100 倍冲刺。但这不是一期\"AI 好厉害\"的赞歌——他们聊的是真正的卡点：沙箱怎么搭、权限怎么隔离、测试闭环怎么打通、什么时候该激进什么时候该保守。这是一份 Agent 时代的\"CEO 操作手册\"。</span></p>\n  <hr>\n  <p><strong><span>【6 个要点】</span></strong></p>\n  <p><span>你的新工作是\"招商引资\"，不是\"亲自上阵\"</span></p>\n  <p><span>AI已经足够聪明，但它缺的不是智商，是环境——没有接口、没有权限、没有文档、没有上下文，它就是个被绑住手脚的天才。你现在的核心工作是给AI搭建完整的工作环境：沙箱、权限、CI/CD流水线、自动化测试、代码审核机器人。这不是技术债，这是你的新护城河。谁先把这套\"harness\"搭好，谁就先进入百倍提效的轨道。</span></p>\n  <p><span>\"三步开发法\"意味着程序员角色的彻底重构</span></p>\n  <p><span>徐文浩的开发流程已经精简为：</span><b><span>看计划 → 放手让AI干 → 验收结果</span></b><span>。中间的写代码过程，人基本不参与。这不是偷懒，而是新的分工逻辑——人负责判断力和方向感，AI负责执行力和体力活。Plan Mode 不是为了得到完美方案，而是人和AI对齐需求的最小成本方式。未来的\"高级工程师\"可能不是写代码最快的人，而是最会设计围栏和审核流程的人。</span></p>\n  <p><span>激进是唯一的生存策略——\"安全\"反而是最大的风险</span></p>\n  <p><span>徐文浩用体操比赛做了个精彩类比：水平最高的选手因为回避高风险动作永远拿不到第一名，因为 100 个激进的对手里总有几个运气好的。在AI时代，如果你的代码从不出线上事故，说明你太保守了。正确的策略不是追求零失误，而是用更好的围栏（沙箱 + 审批 + 自动测试 + AI Review）把成功率从七成提到八成五——然后大胆放手。</span></p>\n  <p><span>OpenClaw 的杀手级用法：永远不要让主进程阻塞</span></p>\n  <p><span>一个极具实操价值的技巧：要求 OpenClaw 所有非即时回答的任务都开子 Agent 执行，主进程永远保持响应状态。这解决了 OpenClaw\"一干活就不理你\"的核心痛点。配合让它调用 Claude Code 和 Codex 来执行实际编码（不消耗 API Token），你就拥有了一个全天候、多任务并行的AI员工。</span></p>\n  <p><span>所有SaaS都面临\"做什么\"而非\"怎么做\"的存亡危机</span></p>\n  <p><span>安全公司股价暴跌不是因为安全不重要了，恰恰相反——Agent 时代的安全需求会爆炸式增长。但老一代安全公司是围绕人类用户设计的，而未来的安全是 5000 亿个 Agent 互相通信时的信任、权限和隔离问题。这个逻辑适用于几乎所有 SaaS 品类：需求的抽象层不变，但实现层要彻底重写。</span></p>\n  <p><span>通往百倍提效的瓶颈不是AI的能力，是你的带宽</span></p>\n  <p><span>AI可以一晚上写一两万行代码，但你能 review 多少？你能对齐多少需求？真正的瓶颈已经从\"执行力\"转移到了\"判断力带宽\"。这意味着：与其在一个项目上追求极致深度，不如并行启动多个简单项目；与其手动逐行审查，不如投资建设自动化的质量围栏。你的单位时间决策质量，就是你的新产能上限。</span></p>\n  <hr>\n  <p><strong><span>【6 个金句】</span></strong></p>\n  <blockquote>\n   <p><span> \"如果AI写的代码线上不出事故、不出bug，就说明我太保守了，就说明我在竞争中是不可能获胜的。\"</span></p>\n   <p><span> \"我跟AI沟通可能比和人沟通的效率更高——高太多了，这个带宽实在太小了。\"</span></p>\n   <p><span> \"具体的活我们已经不干了。我就看看我创造的环境，看看你打算干这活的计划是什么，看完你干完活的验收结果是什么。\"</span></p>\n   <p><span> \"你不应该干活，你应该给AI塑造一个良好的工作环境——这是今年和去年最巨大的差别。\"</span></p>\n   <p><span> \"聪明人都会发现这东西真好用、真牛逼，我有好多东西可以让他帮我解决。如果没有用飞起来——你就把这人换了。\"</span></p>\n   <p><span> \"我没有什么隐私，我在这个世界上一点也不重要。\"</span></p>\n  </blockquote>\n  <hr>\n  <p><strong><span>【时间轴 &amp; 精彩话题】</span></strong></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"0\">00:00</a> 开场：两位连续创业者的AI炼金术士自我介绍</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"93\">01:33</a> 过完年有什么新想法？——\"可能性需要时间发酵，很多可能是错的\"</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"136\">02:16</a> 过年期间的真实状态：酒店里布置任务，早上起来验收，顺手提交几十个 commit</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"198\">03:18</a> 世界的割裂：同一篇文章，有人说是常识，有人说是吹泡沫</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"267\">04:27</a> 灵魂拷问：你提效了多少？——\"3-5倍以上，正在往100倍努力\"</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"303\">05:03</a> AI够聪明但干不了活的真相：不是智商问题，是没给它权限和上下文</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"382\">06:22</a> 真实案例：让 Claude 帮忙搬运 Medium 博客到个人域名，原来花两天，现在半小时</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"538\">08:58</a> Claude Code 第一大使用场景拆解：从复制粘贴到完整自主开发的进化路径</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"573\">09:33</a> 核心方法论：Skip Dangerous Permission + 沙箱 + 代码审批的三层安全架构</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"711\">11:51</a> \"三步开发法\"详解：看计划 → 放手 → 验收，中间完全不交互</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"962\">16:02</a> 要不要帮AI拆模块？——\"你肯定要拆，但怎么拆也可以交给它设计\"</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1299\">21:39</a> 一个精彩的工程决策案例：补测试时发现 bug，该顺手修还是单独处理？</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1429\">23:49</a> 如何给AI应用设计测试？——\"让它像人一样先操作一遍，记录下来再转化成测试\"</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1976\">32:56</a> 体操比赛类比：为什么最高水平的选手拿不到第一名</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2105\">35:05</a> 非代码场景实战：用 Claude Code 自动收集飞书 Bug、去重、录入项目管理工具</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2292\">38:12</a> 速度慢没关系：单独开一台电脑、一个虚拟员工账号，让AI晚上慢慢操作</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2768\">46:08</a> 给非技术同事写图文教程、强制全员使用 Claude Code 的组织推行策略</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3205\">53:25</a> OpenClaw 核心技巧：强制开子 Agent，永远不阻塞主进程</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3883\">64:43</a> 2025年工作的两个根本转变：从干活到造环境，从自己学到让AI学</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3966\">66:06</a> SaaS大跌背后的真相：不是需求消失了，是\"做什么\"要彻底改变</span></p>\n  <br>\n  <br>\n  <p><strong><span>欢迎订阅「AI 炼金术」的播客，以及同名公众号、视频号</span></strong>\n   <br>\n   <br>\n   <span>「AI 炼金术」是一档由徐文浩和任鑫——两位多年老友、AI 领域的资深从业者——打造的播客。这里是探讨 AI 和创业的理想聚集地，我们会邀请一线创业者、产品产品和科研学者，深入探讨 AI 如何重塑行业、变革生活，以及如何从 0 到 1 打造 AI 原生产品。&nbsp;</span>\n   <br>\n   <span>我们的讨论会涵盖多个话题：从 AI 如何改变世界的未来，到如何找到 AI 创业的 PMF；从如何利用 AI 降本增效，到怎样将 AI 技术融入日常生活……如果你对 AI、产品、创业感兴趣，这里有满满的干货和一线实战经验，欢迎关注并推荐给你的朋友，共同探索未来的无限可能！&nbsp;</span>\n   <br>\n   <span>商务合作：公众号 「AI炼金术 」菜单栏中【商务】获取联系方式&nbsp;</span>\n   <br>\n   <br>\n   <br>\n   <strong><span>节目主理人：</span></strong>\n   <br>\n   <br>\n   <b><span>徐文浩：</span></b><span>某AI创业公司联合创始人，正在面向全球市场开发AI应用。连续创业者，参与过多家创业公司，拼多多早期员工。广告科技公司MediaV的算法和数据负责人，后被360收购。离开后加入成立不到1个月的拼多多。后创办了基于AI的海外客服聊天机器人公司 BotHub.AI 和 海外社交电商平台 Bukito 都宣告失败。2023年再次下场创业。&nbsp;</span>\n   <br>\n   <br>\n   <b><span>任鑫：</span></b><span>云九资本合伙人，主要在投资和孵化面向全球市场的 AI 应用。之前是连续创业者，曾经打造“今夜酒店特价”用移动互联网应用特价销售酒店尾房；被京东并购后内部创业“京东到家”开展本地即时零售业务；2015 年再次创业 Get 探索对话式人工智能助理成为先烈；2021 年出售公司，2023 年重新回到 AI 世界。</span>\n   <br>\n   <br>\n   <br>\n   <strong><span>BGM：</span></strong>\n   <br>\n   <b><span>片尾：</span></b><span>Rangga Jones - i confess</span>\n   <br>\n   <br></p>\n  <br>\n </body>\n</html>",
+  "aiSummary": "探讨从代码执行者向 AI 环境构建者的角色转变，分享利用 Claude Code 实现百倍提效的工程实战。",
+  "oneSentenceSummary": "探讨从代码执行者向 AI 环境构建者的角色转变，分享利用 Claude Code 实现百倍提效的工程实战。",
+  "summary": "本期播客由连续创业者任鑫与徐文浩深度对话，核心探讨了在 Agent 时代，人类的技术角色应从“亲自干活”转向“为 AI 搭建工作环境”。嘉宾详细拆解了他们使用 Claude Code 和 OpenClaw 的真实日常，强调通过构建沙箱隔离、自动权限分配、CI/CD 流水线以及 AI 自动代码审计等“脚手架”，让 AI 能够自主完成复杂任务。讨论涵盖了“三步开发法”（看计划-放手干-验收）、激进的效率竞争策略以及如何通过自动化围栏降低风险。此外，节目还分析了 AI 对 SaaS 行业的重塑、非技术领域的自动化潜力，以及在 AI 极速提效背景下，人类决策带宽和判断力如何成为新的生产力瓶颈。内容极具工程实践价值，为技术从业者提供了从工具选型到组织转型的全方位指南。",
+  "mainPoints": [
+    {
+      "point": "核心工作从“亲自上阵”转变为给 AI 搭建完整的工作环境。",
+      "explanation": "AI 瓶颈不在智商而在环境支持。开发者需为其配置沙箱、权限和上下文，建立“自动化围栏”，让 AI 在安全受控的环境下实现百倍提效。"
+    },
+    {
+      "point": "“三步开发法”重构分工逻辑，使判断力带宽成为核心产能。",
+      "explanation": "流程简化为：看计划、放手干、验收结果。人负责对齐需求和方向判断，AI 负责执行，这要求人类提升单位时间的决策质量以匹配 AI 的产出速度。"
+    },
+    {
+      "point": "在 AI 竞争时代，激进的效率策略是唯一的生存方式。",
+      "explanation": "追求零事故意味着过于保守，必将被更激进的对手超越。应通过技术手段将成功率从七成提升至八成五，并在有围栏保护的前提下大胆放手。"
+    }
+  ],
+  "keyQuotes": [
+    "你不应该干活，你应该给 AI 塑造一个良好的工作环境——这是今年和去年最巨大的差别。",
+    "如果 AI 写的代码线上不出事故、不出 bug，就说明我太保守了，就说明我在竞争中是不可能获胜的。",
+    "具体的活我们已经不干了。我就看看我创造的环境，看看你打算干这活的计划是什么，看完你干完活的验收结果是什么。",
+    "真正的瓶颈已经从‘执行力’转移到了‘判断力带宽’。你的单位时间决策质量，就是你的新产能上限。"
+  ],
+  "tags": [
+    "AI Agent",
+    "自主编码",
+    "软件工程",
+    "Claude Code",
+    "OpenClaw"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 113,
+  "score": 93,
+  "wordCount": 28034,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_29b54a",
+  "sourceName": "AI炼金术",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1772542800000,
+  "publishDateStr": "03-03",
+  "publishDateTimeStr": "2026-03-03 13:00:00"
+}

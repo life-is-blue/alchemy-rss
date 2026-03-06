@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-06 12:31:40 | [返回首页](/README.md)
+**更新时间**: 2026-03-06 14:11:33 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9315)
+- [AI & 大模型](#ai-llm) (9321)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (703)
 - [DevOps](#devops) (414)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4866)
+- [其他](#other) (4867)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [GPT-5.4-发布：OpenAI-首个大一统模型，简直是龙虾原生](https://www.qbitai.com/2026/03/384345.html) - AI 精选
 - [深扒-Nano-Banana-2-超多趣味玩法，速度快还要效果好！](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247496575&idx=1&sn=b73502454851b048d618096de62d5c03) - AI 精选
 - [1500-个-PR、0-人写代码：Codex-驱动的百万行级内部产品实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247657188&idx=2&sn=a68f1062d1f1e0faa8b076849cfb42e9) - AI 精选
 - [Nano-Banana-2：将-Pro-级能力与闪电般的速度相结合](https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/) - AI 精选
@@ -41,9 +42,8 @@
 - [两个事奥～](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499436&idx=1&sn=f6c8684019fb4d0b5e66d6b419629a41) - AI 精选
 - [挑战-Claude-Code？OpenAI-Codex-发布月将至，今先揭秘智能体循环](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651013649&idx=2&sn=a49a7c202616345f76b61f3ef38cbc20) - AI 精选
 - [Skills-商店来了：5-万人在用的-Top-10-热门-Skills，我帮你试了一遍](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247488072&idx=1&sn=8e7dcebdccc93f06cd0c05ceac82b05c) - AI 精选
-- [Wilson-Lin-谈-FastRender：由数千个并行智能体构建的浏览器](https://simonwillison.net/2026/Jan/23/fastrender/#atom-everything) - AI 精选
 
-- [查看全部 9315 篇...](/details/tags/ai-llm.md)
+- [查看全部 9321 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -185,6 +185,6 @@
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 
-- [查看全部 4866 篇...](/details/tags/other.md)
+- [查看全部 4867 篇...](/details/tags/other.md)
 
 
