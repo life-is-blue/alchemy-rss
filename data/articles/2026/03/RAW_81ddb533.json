@@ -1,0 +1,54 @@
+{
+  "id": "RAW_81ddb533",
+  "title": "当 ReadDirectoryChangesW 报告发生删除时，如何获取有关已删除对象的更多信息？",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260306-00/?p=112116",
+  "date": "2026-03-06 17:43:38",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A customer was using <code>Read­Directory­ChangesW</code> to monitor changes to a directory. However, they ran into a problem when they received a <code>FILE_<wbr>ACTION_<wbr>REMOVED</code> notification: Since the notification is raised when the item is deleted, they can’t do a <code>Get­File­AttributesEx</code> to find out whether the deleted item was a file or a subdirectory, and if it was a file, the size of the deleted file. Their program needs that information as part of its directory monitoring, so what mechanism is there to recover that information?</p>\n  <p>The <code>Read­Directory­ChangesW</code> function provides no way to recover information about the item that was deleted. All you get is the name of the item.</p>\n  <p>Recall that <code>Read­Directory­ChangesW</code> is for <a title=\"ReadDirectoryChangesW reads directory changes, but what if the directory doesn't change?\" href=\"https://devblogs.microsoft.com/oldnewthing/20110812-00/?p=9913\"> detecting changes to information that would appear in a directory listing</a>. The idea is that your program performs a <code>Find­First­File</code>/<code>Find­Next­File</code> to build an in-memory cache for a directory, and then you can use <code>Read­Directory­ChangesW</code> to perform incremental updates to your cache. For example, if you see a <code>FILE_<wbr>ACTION_<wbr>ADDED</code>, then you can call <code>Get­File­Attributes</code> or <code>Get­File­Attributes­Ex</code> to get information about the thing that was added and update your cache. That way, when you see the <code>FILE_<wbr>ACTION_<wbr>REMOVED</code>, you can read the entry from your cache to get the information about the item that was removed (as well as removing it from your cache).</p>\n  <p>There is a race condition here, however. If the item is added and then immediately deleted, then when you get around to calling <code>Get­File­Attributes</code>, it won’t be there, so you don’t actually know what it was.</p>\n  <p>Fortunately, there’s <code>Read­Directory­Changes­ExW</code>. If you ask for <code>Read­Directory­Notify­Extended­Information</code>, then you get back a series of <code>FILE_<wbr>NOTIFY_<wbr>EXTENDED_<wbr>INFORMATION</code> structures, and in addition to the action and the file name, those also contain directory information about the item, including its file attributes. This information is provided both on the add and on the remove, so you can just look at the <code>FileAttributes</code> on the <code>FILE_<wbr>ACTION_<wbr>REMOVED</code> to see whether it was a file or a folder, and if it was a file, you can use the <code>FileSize</code> to see the logical size of the file at the time it was deleted.</p>\n </body>\n</html>",
+  "aiSummary": "本文介绍了如何使用 ReadDirectoryChangesExW 获取已删除文件的元数据，从而解决标准 Win32 目录监控中固有的竞态条件和局限性。",
+  "oneSentenceSummary": "本文介绍了如何使用 ReadDirectoryChangesExW 获取已删除文件的元数据，从而解决标准 Win32 目录监控中固有的竞态条件和局限性。",
+  "summary": "本文探讨了 Windows 系统编程中的一个常见挑战：如何在文件被删除后获取其信息。标准的 ReadDirectoryChangesW 函数仅提供被删除项的名称，由于文件已不存在，开发人员无法查询其属性或大小。虽然许多开发人员尝试通过维护目录的内存缓存来解决此问题，但这种方法容易受到竞态条件的影响——特别是当文件被快速创建又立即删除时。作者强调 ReadDirectoryChangesExW 是更好的解决方案。通过使用 ReadDirectoryNotifyExtendedInformation 标志，该 API 会返回一个 FILE_NOTIFY_EXTENDED_INFORMATION 结构，其中包含事件发生时文件的属性和大小，从而确保即使对于已不存在的项目也能进行准确跟踪。",
+  "mainPoints": [
+    {
+      "point": "标准的 ReadDirectoryChangesW 仅提供已删除项的名称，缺少被删除对象的属性或文件大小等关键元数据。",
+      "explanation": "当文件被删除时，通知是在删除完成后发出的，这使得无法使用 GetFileAttributesEx 等标准函数查询文件属性，因为该项在磁盘上已不存在。"
+    },
+    {
+      "point": "在内存中维护目录结构的缓存是实时应用中跟踪文件更改的一种常见但有缺陷的权变方案。",
+      "explanation": "开发人员通常使用 FindFirstFile 构建缓存并进行增量更新，但这种方法会遇到竞态条件，即文件可能在应用程序成功查询其属性之前就被添加并删除了。"
+    },
+    {
+      "point": "ReadDirectoryChangesExW 函数通过在监控过程中直接在事件结构中提供扩展通知信息，提供了一个健壮的解决方案。",
+      "explanation": "通过请求 ReadDirectoryNotifyExtendedInformation，开发人员可以接收到 FILE_NOTIFY_EXTENDED_INFORMATION 结构，其中包含删除或添加发生瞬间的文件属性和逻辑大小，从而有效地避开了外部查询或复杂缓存的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "ReadDirectoryChangesW 函数无法恢复有关已删除项的信息。你得到的只有该项的名称。",
+    "如果一个项被添加后立即被删除，那么当你调用 GetFileAttributes 时，它已经不在那里了，所以你实际上并不知道它是什么。",
+    "幸运的是，还有 ReadDirectoryChangesExW。如果你请求 ReadDirectoryNotifyExtendedInformation，你就会得到一系列 FILE_NOTIFY_EXTENDED_INFORMATION 结构……",
+    "这些信息在添加和删除时都会提供，因此你只需查看 FILE_ACTION_REMOVED 上的 FileAttributes，即可判断它是文件还是文件夹。"
+  ],
+  "tags": [
+    "Win32 API",
+    "文件系统",
+    "ReadDirectoryChangesW",
+    "Windows 开发",
+    "竞态条件"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 346,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772819018000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-06 17:43:38"
+}

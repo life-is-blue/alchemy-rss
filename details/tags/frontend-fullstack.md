@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-07 10:48:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-07 12:29:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -606,6 +606,14 @@
 
 
 
+### [Elastic-Cloud-Serverless：你应该重新思考的-5-个-API-版本管理误区](https://www.elastic.co/blog/elastic-cloud-serverless-5-myths)
+
+2026-03-06 15:59:49 | 标签: Elasticsearch, Serverless, 云架构, API 版本管理, SaaS
+
+> 本文探讨了关于 Elastic Cloud Serverless 的五个常见误区，强调了它与传统 Elastic Stack 版本模型的区别。与自托管或托管版本不同，Serverless 作为一个全托管的 SaaS 运行，提供稳定且向后兼容的 API，消除了手动升级或维护窗口的需求。文章重点介绍了存算分离架构，该架构实现了索引和搜索的独立扩展。虽然操作层发生了变化（移除了集群级配置），但 Query DSL 和 ES|QL 等核心 Elasticsearch 技能仍然适用。最后，文章提供了一个决策框架，帮助组织根据特定的控制和合规需求，在有版本的托管模型和无版本的 Serverless 模型之...
+
+
+
 ### [既然你决定进行技术迁移](https://www.infoq.com/presentations/monzo-typescript-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-03-06 09:15:00
@@ -648,13 +656,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2148,13 +2156,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3858,13 +3866,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-07 10:48:49 | [返回首页](/README.md)
+**更新时间**: 2026-03-07 12:29:02 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9361)
+- [AI & 大模型](#ai-llm) (9370)
 - [软件架构](#architecture) (19)
-- [前端与全栈](#frontend-fullstack) (704)
-- [DevOps](#devops) (418)
+- [前端与全栈](#frontend-fullstack) (705)
+- [DevOps](#devops) (420)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4878)
+- [其他](#other) (4882)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Kimi-发布并开源-K2.5-模型，带来全新视觉理解、代码和-Agent-集群能力](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488099&idx=1&sn=395f832d3311cf5c8cf9e96f6b84cdcf) - AI 精选
 - [两个事奥～](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499436&idx=1&sn=f6c8684019fb4d0b5e66d6b419629a41) - AI 精选
 
-- [查看全部 9361 篇...](/details/tags/ai-llm.md)
+- [查看全部 9370 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -99,7 +99,7 @@
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 - [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 704 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 705 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -128,7 +128,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 418 篇...](/details/tags/devops.md)
+- [查看全部 420 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -185,6 +185,6 @@
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 
-- [查看全部 4878 篇...](/details/tags/other.md)
+- [查看全部 4882 篇...](/details/tags/other.md)
 
 

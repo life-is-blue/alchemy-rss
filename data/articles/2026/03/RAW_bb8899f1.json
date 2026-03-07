@@ -1,0 +1,59 @@
+{
+  "id": "RAW_bb8899f1",
+  "title": "LogSentinel：Databricks 如何利用 Databricks 实现基于 LLM 的 PII 检测与治理",
+  "url": "https://www.databricks.com/blog/logsentinel-how-databricks-uses-databricks-llm-powered-pii-detection-and-governance",
+  "date": "2026-03-06 14:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Databricks operates at a scale where our internal logs and datasets are constantly changing—schemas evolve, new columns appear, and data semantics drift. This blog discusses <strong>how we use Databricks at Databricks internally</strong> to keep PII and other sensitive data correctly labeled as our platform changes.</p>\n  <p>To do this, we built LogSentinel, an LLM-powered data classification system on Databricks that tracks schema evolution, detects labeling drift, and feeds high-quality labels into our governance and security controls. We use MLflow to track experiments and monitor performance over time, and we are integrating the best ideas from LogSentinel back into the <a data-external-link=\"true\" href=\"https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-classification\" target=\"_blank\" rel=\"noopener noreferrer\">Databricks Data Classification</a> product so customers can benefit from the same approach.</p>\n  <h2>Why this System Matters</h2>\n  <p>This system is designed to move three concrete business levers for platform, data and security teams:</p>\n  <ul>\n   <li><strong>Shorter compliance cycles</strong>: recurring review tasks that previously took weeks of analyst time are now completed in hours because columns are pre-labeled and pre-triaged before humans look at them.</li>\n   <li><strong>Lower operational risk</strong>: the system continuously detects labeling drift and schema changes, so sensitive fields are less likely to quietly slip through with incorrect or missing tags.</li>\n   <li><strong>Stronger policy enforcement</strong>: reliable labels now directly drive masking, access control, retention, and residency rules, turning what used to be “best-effort governance” into executable policy.</li>\n  </ul>\n  <p>In practice, teams can plug new tables into a standard pipeline, monitor drift metrics and exceptions, and rely on the system to enforce PII and residency constraints without building a bespoke classifier for every domain.</p>\n  <h2>System Architecture at a Glance</h2>\n  <p>We built an LLM-powered column classification system on Databricks that continuously annotates tables using our internal data taxonomy, detects labeling drift, and opens remediation tickets when something looks wrong. The various components involved in the system are outlined below (tracked and evaluated using MLFlow):</p>\n  <ul>\n   <li>Data Ingestion: Ingesting various data sources (including Unity Catalog column data, label taxonomy data and ground truth data)</li>\n   <li>Data Augmentation: Augmenting data using <a data-external-link=\"true\" href=\"https://www.databricks.com/product/machine-learning/vector-search\">Databricks Vector Search</a> and <a data-external-link=\"true\" href=\"https://docs.databricks.com/aws/en/comments/ai-comments\" target=\"_blank\" rel=\"noopener noreferrer\">AI Comment generation</a></li>\n   <li>LLM Orchestration</li>\n   <li>Tiered Labeling System</li>\n   <li>Model Versioning: Running multiple models in parallel</li>\n   <li>Label Prediction: Predicting final label using Mixture of Experts (MoE) approach</li>\n   <li>Ticket Creation: Detecting violations and generating JIRA tickets</li>\n  </ul>\n  <p>The end-to-end workflow is shown in the figure below</p>\n  <figure role=\"group\" class=\"caption caption-img\">\n   <a data-lightbox=\"\" href=\"https://www.databricks.com/sites/default/files/inline-images/logsentinel-databricks-llm-powered-pii-detection-governance-blog-img-1.png\"><img alt=\"System Architecture\" data-entity-type=\"file\" data-entity-uuid=\"838337a9-8461-48ba-a461-659219617485\" height=\"1250\" src=\"https://www.databricks.com/sites/default/files/inline-images/logsentinel-databricks-llm-powered-pii-detection-governance-blog-img-1.png\" width=\"1999\" loading=\"lazy\" data-ot-ignore=\"1\"></a>\n   <figcaption>\n    <a data-external-link=\"true\" href=\"https://www.databricks.com/sites/default/files/inline-images/logsentinel-databricks-llm-powered-pii-detection-governance-blog-img-1.png\">End to End Workflow</a>\n   </figcaption>\n  </figure>\n  <h2>Data Ingestion</h2>\n  <p>For each log type or dataset to be annotated, we randomly sample values from every column and send the following metadata into the system: table name, column name, type, existing comment, and a small sample of values. To reduce LLM cost and improve throughput, multiple columns from the same table are batched together in a single request.</p>\n  <!--$-->\n  <!--/$-->\n  <p>Our taxonomy is defined using Protocol Buffers and currently includes more than 100 hierarchical data labels, with room for custom extensions when teams need additional categories. This gives governance and platform stakeholders a shared contract for what “PII” and “sensitive” mean beyond a handful of regexes.</p>\n  <h2>Data Augmentation</h2>\n  <p>Two augmentation strategies significantly improve classification quality:</p>\n  <ul>\n   <li>AI column comment generation: when comments are missing, we use <a data-external-link=\"true\" href=\"https://docs.databricks.com/aws/en/comments/ai-comments\" target=\"_blank\" rel=\"noopener noreferrer\">Databricks AI-generated comments</a> to synthesize concise, human-readable descriptions that help both the LLM and future table consumers.</li>\n   <li>Few-shot example generation: we maintain a ground truth dataset and use both static examples and dynamic examples retrieved via Vector Search; for each column, we build an embedding from name, type, comment, and context, then retrieve top-K similar labeled columns to include in the prompt.</li>\n  </ul>\n  <p>Static prompting is best during early stages or when labeled data is limited, providing consistency and reproducibility. Dynamic prompting is more effective in mature systems, using vector search to pull similar examples and adapt to new schemas and data domains in large, diverse datasets.</p>\n  <h2>LLM Orchestration</h2>\n  <p>At the core of the system is a lightweight orchestration layer that manages LLM calls at production scale.</p>\n  <p>​Key capabilities include:</p>\n  <ul>\n   <li>​Multi-model routing across internally hosted LLMs (for example, Llama, Claude, and GPT-based models) with automatic fallback when a model is unavailable.</li>\n   <li>Retry logic for transient failures and rate limits with exponential backoff.</li>\n   <li>Validation hooks that detect empty, invalid, or hallucinated labels and re-run those cases with backup models.</li>\n   <li>Batch processing that annotates multiple columns at once to optimize token usage without losing context.</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Databricks 详细介绍了 LogSentinel，这是一个内部基于 LLM 的系统，通过利用其自身平台的向量搜索和编排能力，实现了 PII 检测和数据治理的自动化。",
+  "oneSentenceSummary": "Databricks 详细介绍了 LogSentinel，这是一个内部基于 LLM 的系统，通过利用其自身平台的向量搜索和编排能力，实现了 PII 检测和数据治理的自动化。",
+  "summary": "本文探讨了 LogSentinel，这是 Databricks 开发的一款内部工具，旨在解决大规模 PII（个人身份信息）检测的挑战。随着数据模式（Schema）的快速演变，手动标记已变得不再可能。LogSentinel 利用了一套复杂的流水线，包括带有元数据采样的内容摄取、通过 AI 生成的注释进行数据增强、利用向量搜索实现的动态 Few-shot 示例，以及多模型 LLM 编排层。该系统不仅能对数据进行分类，还能监控标记偏移，并自动触发 Jira 中的修复工作流，从而有效地将手动治理转变为自动化的可执行策略。",
+  "mainPoints": [
+    {
+      "point": "通过基于 LLM 的预标记和预分拣实现合规周期的自动化。",
+      "explanation": "通过自动化识别敏感列，Databricks 将周期性的合规审查任务从分析师数周的手动工作缩短至仅需几小时的自动化处理。"
+    },
+    {
+      "point": "利用 AI 生成的注释和动态 Few-shot 提示词增强 LLM 的准确性。",
+      "explanation": "该系统通过合成易于理解的列描述，并利用向量搜索从基准数据集中检索最相关的已标记示例作为提示词上下文，从而提高了分类质量。"
+    },
+    {
+      "point": "实现具有韧性的多模型编排层，以确保生产级的可靠性。",
+      "explanation": "编排层管理多模型路由、自动回退以及用于检测幻觉的验证钩子，确保即使在单个模型故障或触发限流时，系统仍能保持运行和准确。"
+    },
+    {
+      "point": "将分类结果直接集成到治理和修复工作流中。",
+      "explanation": "LogSentinel 不仅仅是标记数据；它还为脱敏和访问等安全控制提供支持，并在检测到标记偏移或策略违规时自动生成 Jira 工单。"
+    }
+  ],
+  "keyQuotes": [
+    "以前需要分析师花费数周时间的周期性审查任务，现在几小时内即可完成，因为在人工介入之前，各列已经过预标记和预分拣。",
+    "对于每一列，我们根据名称、类型、注释和上下文构建嵌入，然后检索前 K 个相似的已标记列并包含在提示词中。",
+    "验证钩子可以检测空值、无效或幻觉标签，并使用备用模型重新运行这些案例。",
+    "将过去“尽力而为的治理”转变为可执行的策略。",
+    "系统会持续检测标记偏移和模式变更，因此敏感字段不太可能因错误或缺失标签而悄悄溜走。"
+  ],
+  "tags": [
+    "PII 检测",
+    "数据治理",
+    "LLM 编排",
+    "向量搜索",
+    "Databricks"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 685,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772805600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-06 14:00:00"
+}
