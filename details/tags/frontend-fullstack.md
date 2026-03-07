@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-07 12:29:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-07 14:06:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -608,9 +608,7 @@
 
 ### [Elastic-Cloud-Serverless：你应该重新思考的-5-个-API-版本管理误区](https://www.elastic.co/blog/elastic-cloud-serverless-5-myths)
 
-2026-03-06 15:59:49 | 标签: Elasticsearch, Serverless, 云架构, API 版本管理, SaaS
-
-> 本文探讨了关于 Elastic Cloud Serverless 的五个常见误区，强调了它与传统 Elastic Stack 版本模型的区别。与自托管或托管版本不同，Serverless 作为一个全托管的 SaaS 运行，提供稳定且向后兼容的 API，消除了手动升级或维护窗口的需求。文章重点介绍了存算分离架构，该架构实现了索引和搜索的独立扩展。虽然操作层发生了变化（移除了集群级配置），但 Query DSL 和 ES|QL 等核心 Elasticsearch 技能仍然适用。最后，文章提供了一个决策框架，帮助组织根据特定的控制和合规需求，在有版本的托管模型和无版本的 Serverless 模型之...
+2026-03-06 15:59:49
 
 
 
