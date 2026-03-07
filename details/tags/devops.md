@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-07 22:03:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-08 00:02:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -410,9 +410,7 @@
 
 ### [标准化后量子-IPsec：Cloudflare-采用混合-ML-KEM-解决密码套件冗余问题](https://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-07 10:45:00 | 标签: 后量子密码学, ML-KEM, IPsec, Cloudflare, 网络安全
-
-> Cloudflare 正在将其 IPsec 和 SASE 平台转向标准化的混合 ML-KEM（基于模格的密钥封装机制）交换。此举通过将经典 Diffie-Hellman 与抗量子算法相结合，应对“现在收集，以后解密”的威胁。与以往导致“密码套件冗余”或需要专用硬件的尝试不同，该方法遵循 draft-ietf-ipsecme-ikev2-mlkem 规范，使 IPsec 与 TLS 标准保持一致。该实施已集成到 Cloudflare One 及其全球网络中，无需硬件升级，旨在实现广泛的厂商互操作性，以满足 NIST 2030 抗量子加密的截止日期。
+2026-03-07 10:45:00
 
 
 
