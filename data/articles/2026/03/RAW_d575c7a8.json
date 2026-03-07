@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d575c7a8",
+  "title": "标准化后量子 IPsec：Cloudflare 采用混合 ML-KEM 解决密码套件冗余问题",
+  "url": "https://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-07 10:45:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently implemented a new standardized approach to Post-Quantum IPsec, moving away from previous 'ciphersuite bloat' in favor of a hybrid ML-KEM exchange. The move signals a shift in how wide-area networks (WANs) will meet the NIST 2030 deadline for quantum-resistant encryption without requiring specialized hardware</p>\n   <p>The company brings hybrid <a href=\"https://csrc.nist.gov/pubs/fips/203/final\">Module-Lattice-based Key-Encapsulation Mechanism</a> (ML-KEM)&nbsp;to Cloudflare IPsec and the Cloudflare One Appliance, wrapping up what Cloudflare calls the \"post-quantum SASE equation\" allowing organizations to finally lock down private network traffic end-to-end against \"harvest now, decrypt later\" attacks, the ones in which bad actors grab encrypted data today and sit on it until quantum computers are powerful enough to crack it open.</p>\n   <p>Matthew Prince, Cloudflare's CEO and co-founder, <a href=\"https://www.cloudflare.com/press/press-releases/2026/cloudflare-becomes-the-first-and-only-sase-platform-to-support-modern-post/\">put it bluntly</a>:</p>\n   <blockquote>\n    <p>Securing the Internet against future threats shouldn't be a complex burden. Since 2017, we've been doing the heavy lifting to bake post-quantum standards directly into the fabric of our network. By bringing this protection to our entire SASE platform, we're making post-quantum security the default—no hardware upgrades, no complex configurations, and no added cost.</p>\n   </blockquote>\n   <p>Earlier, NIST <a href=\"https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf\">set a hard 2030 deadline</a> for ditching RSA and Elliptic Curve Cryptography in favor of quantum-resistant algorithms. Late 2024 brought a clear signal that the days of classical public-key cryptography are numbered. <a href=\"https://www.bsi.bund.de/EN/Service-Navi/Presse/Pressemitteilungen/Presse2024/241127_Post-Quantum_Cryptography.html\">Germany's BSI</a> and the <a href=\"https://www.ncsc.gov.uk/guidance/pqc-migration-timelines\">UK's NCSC</a> have been saying the same thing.</p>\n   <p>Cloudflare's approach follows <a href=\"https://datatracker.ietf.org/doc/draft-ietf-ipsecme-ikev2-mlkem/\">draft-ietf-ipsecme-ikev2-mlkem</a>, which standardizes post-quantum key exchange for IPsec in the same way TLS has. The hybrid setup runs ML-KEM in parallel with classical Diffie-Hellman. Think of it as belt-and-suspenders security: ML-KEM handles quantum threats, Diffie-Hellman covers classical attacks.</p>\n   <p>IPsec's road to post-quantum looked nothing like TLS's journey. Early attempts with <a href=\"https://datatracker.ietf.org/doc/html/rfc8784\">RFC 8784</a> leaned on pre-shared keys or quantum key distribution, neither of which worked well in practice. Pre-shared keys don't offer forward secrecy against quantum adversaries. QKD needs specialized hardware, which is a non-starter for most deployments. Then <a href=\"https://datatracker.ietf.org/doc/html/rfc9370\">RFC 9370</a> came along and allowed up to seven different algorithms running at once. Cloudflare called this \"ciphersuite bloat.\" Palo Alto Networks went all-in with <a href=\"https://docs.paloaltonetworks.com/compatibility-matrix/reference/supported-cipher-suites/cipher-suites-supported-in-pan-os-11-2/cipher-suites-supported-in-pan-os-11-2-ipsec\">seven-plus PQC ciphersuites</a>, most of which don't play nice with other vendors.</p>\n   <p>The draft-ietf-ipsecme-ikev2-mlkem spec finally got IPsec aligned with how TLS does things. Cloudflare built production hybrid ML-KEM support into its IPsec IKEv2 Responder and ran tests against the strongSwan reference implementation to ensure it works.</p>\n   <p>The Cloudflare One Appliance got the upgrade automatically on February 11th via version 2026.2.0. Since the appliance uses TLS instead of IKEv2, the update was pretty straightforward—just a jump from TLS 1.2 to TLS 1.3 with hybrid ML-KEM baked in.</p>\n   <p>Cloudflare IPsec is still in closed beta while the company works on interoperability with third-party branch connector vendors. <a href=\"https://securitybrief.com.au/story/cloudflare-adds-quantum-safe-encryption-across-sase\">Security Brief Australia noted</a> the changes slot into Cloudflare's global network with high-availability routing that automatically reroutes traffic if a data center goes down.</p>\n   <p>The full picture now includes post-quantum encryption across TLS, MASQUE, and IPsec on-ramps and off-ramps. Over 60% of human-generated TLS traffic hitting Cloudflare's network already uses hybrid ML-KEM, <a href=\"https://radar.cloudflare.com/adoption-and-usage#post-quantum-encryption\">according to Cloudflare Radar data</a>.</p>\n   <p>None of this costs extra. CISA recognized the split between key agreement and digital signature migrations in its <a href=\"https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards\">January 2026 publication</a>. Cloudflare's current push focuses on key establishment through hybrid ML-KEM. Digital signatures are less urgent since they're designed to stop active adversaries with quantum computers, which don't exist yet.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Standardizing Post-Quantum IPsec: Cloudflare Adopts Hybrid ML-KEM to Replace Ciphersuite Bloat\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/cloudflare-post-quantum-ipsec/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772880300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 通过采用混合 ML-KEM 方案实现了后量子 IPsec 实施的标准化，告别了“密码套件冗余”，以符合 NIST 2030 要求并确保 SASE 平台的互操作性。",
+  "oneSentenceSummary": "Cloudflare 通过采用混合 ML-KEM 方案实现了后量子 IPsec 实施的标准化，告别了“密码套件冗余”，以符合 NIST 2030 要求并确保 SASE 平台的互操作性。",
+  "summary": "Cloudflare 正在将其 IPsec 和 SASE 平台转向标准化的混合 ML-KEM（基于模格的密钥封装机制）交换。此举通过将经典 Diffie-Hellman 与抗量子算法相结合，应对“现在收集，以后解密”的威胁。与以往导致“密码套件冗余”或需要专用硬件的尝试不同，该方法遵循 draft-ietf-ipsecme-ikev2-mlkem 规范，使 IPsec 与 TLS 标准保持一致。该实施已集成到 Cloudflare One 及其全球网络中，无需硬件升级，旨在实现广泛的厂商互操作性，以满足 NIST 2030 抗量子加密的截止日期。",
+  "mainPoints": [
+    {
+      "point": "Cloudflare 采用混合 ML-KEM 方案来标准化后量子 IPsec 并消除密码套件冗余。",
+      "explanation": "通过将 ML-KEM 与经典 Diffie-Hellman 并行运行，Cloudflare 在遵循最新 IETF 草案以确保未来厂商互操作性并避免私有复杂性的同时，确保了对量子和经典威胁的双重防护。"
+    },
+    {
+      "point": "该实施针对“现在收集，以后解密”的威胁，以保护长期的私有网络流量。",
+      "explanation": "这一策略保护了目前正被对手拦截和存储的数据，这些对手打算在量子计算可行时对其进行解密。这有助于组织满足 NIST 2030 抗量子加密的期限。"
+    },
+    {
+      "point": "由于威胁时间线不同，Cloudflare 优先考虑抗量子密钥建立而非数字签名。",
+      "explanation": "虽然现在必须确保密钥协商的安全以防止未来对记录流量的解密，但数字签名仅需要针对主动量子对手的保护，而这在当前的威胁环境中尚未成为现实。"
+    }
+  ],
+  "keyQuotes": [
+    "保护互联网免受未来威胁不应成为复杂的负担。",
+    "通过将这种保护带到我们的整个 SASE 平台，我们正在让后量子安全成为默认配置——无需硬件升级，无需复杂配置，也无需额外成本。",
+    "可以把它想象成‘双保险’安全：ML-KEM 处理量子威胁，Diffie-Hellman 应对经典攻击。",
+    "Cloudflare 目前的重点是通过混合 ML-KEM 进行密钥建立。数字签名的紧迫性较低，因为它们旨在阻止拥有量子计算机的主动对手，而这种计算机目前还不曾存在。"
+  ],
+  "tags": [
+    "后量子密码学",
+    "ML-KEM",
+    "IPsec",
+    "Cloudflare",
+    "网络安全"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 548,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": null,
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772880300000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-07 10:45:00"
+}

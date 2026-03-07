@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f2f234f4",
+  "title": "彻底告别 VE 与 VAE！商汤硬核重构多模态：砍掉所有中间编码器",
+  "url": "https://www.qbitai.com/2026/03/384623.html",
+  "date": "2026-03-07 04:39:02",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"65\">允中 发自 凹非寺</p>\n   <p data-track=\"66\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">多模态大模型的研发范式，正在被彻底重构。</p>\n  <p data-track=\"3\">今天，<strong>商汤科技</strong>联合<strong>南洋理工大学</strong>发布了最新技术成果：<strong>NEO-unify</strong>。</p>\n  <p data-track=\"4\">这是一套真正实现“原生、统一、端到端”的多模态模型架构，其最核心的突破在于：</p>\n  <p data-track=\"5\">彻底砍掉了长期以来行业依赖的<strong>视觉编码器（VE）和变分自编码器（VAE）</strong>。不再通过“组件拼凑”来实现感知与生成，回归第一性原理，直接以近乎无损的像素和文字作为原生输入。</p>\n  <p data-track=\"6\">通过创新的<strong>混合变换器（Mixture-of-Transformer, MoT）</strong>架构，该模型在同一个体系内打通了视觉与语言的“理解+生成”双向能力。</p>\n  <p data-track=\"7\">技术要点一览：</p>\n  <ul>\n   <li data-track=\"8\"><strong>无编码器设计</strong>：越过视觉表征争论，摆脱预训练先验与规模定律瓶颈；</li>\n   <li data-track=\"9\"><strong>MoT架构</strong>：统一实现视觉与语言的深度融合；</li>\n   <li data-track=\"10\"><strong>高效利用</strong>：在保持高保真细节恢复的同时，显著提升了数据与算力的利用效率。</li>\n  </ul>\n  <p data-track=\"11\">这套架构的出现，标志着多模态AI正在从“模态连接”进化为<strong>“原生统一智能体”</strong>。</p>\n  <p data-track=\"12\">其无编码器、端到端、多模态统一学习的新路径，也为未来实现<strong>跨模态认知与生成一体化</strong>的智能系统奠定了基础。</p>\n  <p data-track=\"14\">长期以来，多模态研究领域普遍遵循着一种默认范式：</p>\n  <ul>\n   <li data-track=\"15\">视觉编码器（Vision Encoder, VE）负责感知与理解；</li>\n   <li data-track=\"16\">变分自编码器（Variational Autoencoder, VAE）用于内容生成。</li>\n  </ul>\n  <p data-track=\"17\">这种架构虽然在初期推动了领域发展，但也在感知与生成之间划下了一道天然的鸿沟。</p>\n  <p data-track=\"18\">为了弥合这一裂痕，近期业界涌现出一系列尝试构建<strong>“共享编码器”</strong>的研究工作。然而，这种折衷方案往往陷入了新的结构性设计权衡。</p>\n  <p data-track=\"19\">面对这一挑战，研究视角开始回归第一性原理：<strong>能否构建一个直接处理原生输入（即像素本身与文字本身）的一体化模型？</strong></p>\n  <p data-track=\"20\">基于这一思考，商汤科技联合南洋理工大学提出了一种全新的架构范式：<strong>NEO-unify（preview）</strong>。</p>\n  <p data-track=\"21\">作为一个原生、统一、端到端的多模态模型架构，NEO-unify不仅越过了当前视觉表征的争论，也摆脱了预训练先验和规模定律瓶颈的限制。</p>\n  <p data-track=\"22\">最关键的是：<strong>不需要VE，也不需要VAE，NEO-unify实现了多模态处理的真正归一</strong>。</p>\n  <p data-track=\"24\">NEO-unify第一次迈向真正的端到端统一框架，能够直接从近乎无损的信息输入中学习，并由模型自身塑造内部表征空间。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_461cabb1181259d7179ab597d690a300.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"501\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">首先，引入<strong>近似无损的视觉接口</strong>，用于统一图像的输入与输出表示。</p>\n  <p data-track=\"26\">其次，采用原生混合Transformer（Mixture-of-Transformer，MoT）架构，使理解与生成能够在同一体系中协同进行。</p>\n  <p data-track=\"27\">最终，通过<strong>统一学习框架</strong>实现跨模态训练：文本采用自回归交叉熵目标，视觉通过像素流匹配进行优化。</p>\n  <p data-track=\"29\"><strong>1、定量结果分析</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_efcff220180dfd3bd31231e4e09392d5.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"953\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_33da9792e98aea8f7f2f14ec3aae1ebd.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"637\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\"><strong>2、生图效果展示</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_0fac5376e3ecd06e15f6a0878a78b335.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1296\" data-ic-uri=\"\">\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053327_7bf195d7eef0d988e95c24605fd9bab9.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1295\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"32\"><strong>1、无编码器设计能够同时保留抽象语义与细粒度表征</strong></p>\n  <p data-track=\"33\"><strong>图像重建任务</strong></p>\n  <p data-track=\"34\">该团队先前的工作NEO（Diao et al., ICLR 2026）表明，原生端到端模型同样能够学习到丰富的语义表征。</p>\n  <p data-track=\"35\">在此基础上，他们进一步观察到一个有趣的现象：即使在<strong>冻结理解分支</strong>的情况下，独立的生成分支仍然能够从表示中抽取并恢复<strong>细粒度的视觉细节</strong>。</p>\n  <p data-track=\"36\">基于这一发现，团队训练了<strong>NEO-unify（2B）</strong>。</p>\n  <p data-track=\"37\">在<strong>初步9万步预训练</strong>后，模型在MS COCO 2017上取得<strong>31.56 PSNR</strong>和<strong>0.85 SSIM</strong>，而Flux VAE的对应指标为<strong>32.65</strong>和<strong>0.91</strong>。</p>\n  <p data-track=\"38\">这一结果表明，即使不依赖预训练VE或VAE，<strong>近似无损的原生输入</strong>仍能够同时支持高质量的语义理解与像素级细节保真。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053327_ced88f5a94beaba2da79b184de9c985f.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1221\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△域外图像重建（2B NEO-unify，理解分支冻结）</span>\n  </div>\n  <p data-track=\"40\"><strong>图像编辑任务</strong></p>\n  <p data-track=\"41\">据此，团队进一步开展探索：NEO-unify将所有全模态条件信息统一输入到理解分支，而生成分支仅负责生成新的图像。</p>\n  <p data-track=\"42\">即使在<strong>冻结理解分支</strong>的情况下，NEO-unify（2B） 仍展现出强大的图像编辑能力，同时显著减少了输入图像令牌的数量。</p>\n  <p data-track=\"43\">在使用开源生成与图像编辑数据集并进行<strong>初步6万步混合训练</strong>后，模型在ImgEdit基准上取得<strong>3.32</strong>的成绩，且理解分支在整个训练过程中保持冻结。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053327_2f262a9c2b5cf512a3d3ea9971841122.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"853\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△小规模数据验证（2B NEO-unify，理解分支冻结）</span>\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_1e26b99c7a46aa2067907e70f9c0eca9.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"935\" data-ic-uri=\"\"><span class=\"pgc-img-caption\">△ImgEdit提示词编辑（2B NEO-unify，理解分支冻结）</span>\n  </div>\n  <p data-track=\"48\">借助预训练的理解分支与生成分支，NEO-unify使用相同的中期训练（MT）与监督微调（SFT）数据进行联合训练。</p>\n  <p data-track=\"49\">即使在较低的数据比例和损失权重下，理解能力依然保持稳定，而生成能力则收敛很快。二者在MoT主干中协同提升，整体冲突极小。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_839e31a5843495c7c3628b042800fa0c.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"539\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"51\">此外，团队先进行了web-scale预训练，随后在多样且高质量的数据语料上依次进行中期训练（MT） 和 监督微调（SFT）。</p>\n  <p data-track=\"52\">与Bagel模型相比，NEO-unify展现出<strong>更高的数据训练效率</strong>，在使用<strong>更少训练token</strong>的情况下取得了更优的性能。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260307053326_d564781dfaa77ec7cb2c18063e623a33.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"650\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"54\">NEO-unify的意义不止于一次模型架构的创新，它实际上预示着多模态智能正从“组件堆叠”迈向“本质统一”。</p>\n  <p data-track=\"55\">这种范式的演进，正在勾勒出通往下一代智能形态的清晰路径：</p>\n  <ul>\n   <li data-track=\"56\">感知与生成交织的闭环；</li>\n   <li data-track=\"57\">全模态与深层视觉推理；</li>\n   <li data-track=\"58\">空间智能与世界模型的涌现。</li>\n  </ul>\n  <p data-track=\"59\">……</p>\n  <p data-track=\"60\">这标志着一条全新的技术路线图正在展开：</p>\n  <p data-track=\"61\">模型不再在模态之间进行转换，而是能够<strong>原生地跨模态思考</strong>。</p>\n  <p data-track=\"62\">在这一愿景下，多模态AI不再只是连接不同系统，而是构建一个<strong>从未被割裂的、高度集成的统一智能体</strong>，并让所需能力从其内部自然涌现。</p>\n  <p data-track=\"63\">据悉，目前相关的研发工作正处于规模化扩张与持续迭代的关键期。一系列基于该架构的模型成果与开源贡献，将在近期陆续向业界发布。</p>\n  <p data-track=\"64\"><strong>Hugging Face地址：</strong>\n   <br>\n   https://huggingface.co/blog/sensenova/neo-unify\n   <br>\n   <strong>官方博客地址：</strong>\n   <br>\n   https://www.sensetime.com/en/news-detail/51170542?categoryId=1072\n   <br>\n   https://www.sensetime.com/cn/news-detail/51170543?categoryId=72</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "商汤科技联合南洋理工发布 NEO-unify 架构，通过移除视觉编码器（VE）和变分自编码器（VAE），实现原生、统一、端到端的多模态理解与生成。",
+  "oneSentenceSummary": "商汤科技联合南洋理工发布 NEO-unify 架构，通过移除视觉编码器（VE）和变分自编码器（VAE），实现原生、统一、端到端的多模态理解与生成。",
+  "summary": "本文介绍了商汤科技与南洋理工大学最新的多模态技术成果 NEO-unify。该架构彻底摒弃了传统多模态模型中依赖视觉编码器（VE）进行感知、变分自编码器（VAE）进行生成的“组件拼凑”范式。NEO-unify 回归第一性原理，直接处理近乎无损的像素和文字原生输入，并采用创新的混合变换器（MoT）架构，在单一体系内实现了视觉与语言的深度融合。技术测试显示，该模型在图像重建、编辑任务及数据利用效率上表现优异，标志着多模态 AI 正从模态连接向原生统一智能体进化。",
+  "mainPoints": [
+    {
+      "point": "彻底移除 VE 与 VAE 架构，回归多模态处理的第一性原理。",
+      "explanation": "该架构不再依赖预训练的视觉编码器进行特征提取，也不使用 VAE 进行潜在空间转换，而是直接以近乎无损的像素流作为输入输出，消除了感知与生成之间的结构性鸿沟。"
+    },
+    {
+      "point": "采用混合变换器架构，在单一体系内打通理解与生成能力。",
+      "explanation": "通过创新的 Mixture-of-Transformer (MoT) 结构，模型能够同时处理文本自回归任务和视觉流匹配任务，使不同模态在深层表征空间中实现真正的原生融合与协同进化。"
+    },
+    {
+      "point": "验证了无编码器设计在保留细粒度表征与语义理解上的双重优势。",
+      "explanation": "实验显示，即使在冻结理解分支的情况下，生成分支仍能恢复高质量视觉细节；同时在更少的训练 Token 下，其理解能力与生成质量均优于传统的组件堆叠式模型。"
+    }
+  ],
+  "keyQuotes": [
+    "彻底砍掉了长期以来行业依赖的视觉编码器（VE）和变分自编码器（VAE）。",
+    "不再通过“组件拼凑”来实现感知与生成，回归第一性原理，直接以近乎无损的像素和文字作为原生输入。",
+    "这套架构的出现，标志着多模态 AI 正在从“模态连接”进化为“原生统一智能体”。",
+    "模型不再在模态之间进行转换，而是能够原生地跨模态思考。"
+  ],
+  "tags": [
+    "多模态大模型",
+    "NEO-unify",
+    "无编码器架构",
+    "MoT",
+    "图像生成"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 82,
+  "wordCount": 2167,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1772858342000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-07 04:39:02"
+}
