@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-07 16:03:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-07 18:03:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -29291,11 +29291,11 @@
 
 
 
-### [高中辍学生靠-ChatGPT-自学成才成了-OpenAI-的研究科学家](https://baoyu.io/blog/2026-02-17/gabriel-petersson-openai-dropout)
+### [59%-用户投票选了更便宜的那个：Sonnet-4.6-全面解读](https://baoyu.io/blog/2026-02-17/claude-sonnet-4-6-release)
 
 2026-02-17T00:00:00.000Z
 
-> Gabriel Petersson 没有高中文凭，没有大学学历，靠 ChatGPT 自学数学和机器学习，成了 OpenAI Sora 团队的研究科学家。他在播客中分享了辍学创业、用 AI 递归学习、绕过招聘流程找工作的完整经历，以及对教育体制的尖锐批评。
+> Claude Sonnet 4.6 发布，在 Claude Code 测试中 70% 用户更喜欢它而非前代，59% 甚至选它而非旗舰 Opus 4.5。编码、Computer Use、百万 token 上下文六维全面升级，价格不变。便宜不再等于弱。
 
 
 
