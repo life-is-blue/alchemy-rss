@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-07 08:09:09 | [返回首页](/README.md)
+**更新时间**: 2026-03-07 10:48:49 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9343)
+- [AI & 大模型](#ai-llm) (9361)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (704)
-- [DevOps](#devops) (415)
+- [DevOps](#devops) (418)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4871)
+- [其他](#other) (4878)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Anthropic-对阵美国政府，Nano-Banana-的蜕变，Frontier-智能体管理，以及更多内容...](https://www.deeplearning.ai/the-batch/issue-343) - AI 精选
+- [GPT-5.4：专业工作流进入“可执行时代”](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491663&idx=1&sn=b2e24b0c8c419ee8f5e05626a93d8c7c) - AI 精选
 - [GPT-5.4-发布：OpenAI-首个大一统模型，简直是龙虾原生](https://www.qbitai.com/2026/03/384345.html) - AI 精选
 - [深扒-Nano-Banana-2-超多趣味玩法，速度快还要效果好！](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247496575&idx=1&sn=b73502454851b048d618096de62d5c03) - AI 精选
 - [1500-个-PR、0-人写代码：Codex-驱动的百万行级内部产品实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247657188&idx=2&sn=a68f1062d1f1e0faa8b076849cfb42e9) - AI 精选
@@ -40,10 +42,8 @@
 - [DeepAgents-的上下文管理](https://www.blog.langchain.com/context-management-for-deepagents/) - AI 精选
 - [Kimi-发布并开源-K2.5-模型，带来全新视觉理解、代码和-Agent-集群能力](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488099&idx=1&sn=395f832d3311cf5c8cf9e96f6b84cdcf) - AI 精选
 - [两个事奥～](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247499436&idx=1&sn=f6c8684019fb4d0b5e66d6b419629a41) - AI 精选
-- [挑战-Claude-Code？OpenAI-Codex-发布月将至，今先揭秘智能体循环](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651013649&idx=2&sn=a49a7c202616345f76b61f3ef38cbc20) - AI 精选
-- [Skills-商店来了：5-万人在用的-Top-10-热门-Skills，我帮你试了一遍](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247488072&idx=1&sn=8e7dcebdccc93f06cd0c05ceac82b05c) - AI 精选
 
-- [查看全部 9343 篇...](/details/tags/ai-llm.md)
+- [查看全部 9361 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -110,6 +110,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
 - [Cloudflare-2025-年-11-月-18-日全球服务中断事件](https://blog.cloudflare.com/18-november-2025-outage/) - 编程 精选
@@ -126,9 +127,8 @@
 - [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
-- [Quicksilver-v2：全球分布式键值存储的演进（第一部分）](https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-1/) - 编程 精选
 
-- [查看全部 415 篇...](/details/tags/devops.md)
+- [查看全部 418 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -185,6 +185,6 @@
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 
-- [查看全部 4871 篇...](/details/tags/other.md)
+- [查看全部 4878 篇...](/details/tags/other.md)
 
 

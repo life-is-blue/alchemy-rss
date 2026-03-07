@@ -1,0 +1,63 @@
+{
+  "id": "RAW_074dc4ef",
+  "title": "最新研究重新评估 AGENTS.md 文件对 AI 编程的价值",
+  "url": "https://www.infoq.com/news/2026/03/agents-context-file-value-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-06 18:57:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Despite widespread industry recommendations, a <a href=\"https://www.google.com/url?sa=E&amp;q=https%3A%2F%2Farxiv.org%2Fpdf%2F2602.11988\">new ETH Zurich paper</a> concludes that <code>AGENTS.md</code> files may often hinder AI coding agents. The researchers recommend omitting LLM-generated context files entirely and limiting human-written instructions to non-inferable details, such as highly specific tooling or custom build commands.</p>\n   <p>The team (<a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Gloaguen,+T\">Thibaud Gloaguen</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=M%C3%BCndler,+N\">Niels Mündler</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=M%C3%BCller,+M\">Mark Müller</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Raychev,+V\">Veselin Raychev</a>, <a href=\"https://arxiv.org/search/cs?searchtype=author&amp;query=Vechev,+M\">Martin Vechev</a>) justified the research by noting that while 60,000 open-source repositories currently contain context files such as <code>AGENTS.md</code>, and many agent frameworks feature built-in commands to auto-generate them, there has been no rigorous empirical investigation into whether these files actually improve an AI agent’s ability to resolve real-world coding tasks.</p>\n   <p>The researchers (one of whom contributed to the <a href=\"https://agi.safe.ai/\">Humanity Last Exam benchmark</a>) <a href=\"https://github.com/THUDM/AgentBench\">built AGENTbench</a>, a novel dataset of 138 real-world Python tasks sourced from niche repositories. This setup deliberately avoids the bias of popular benchmarks like <a href=\"https://github.com/SWE-bench/SWE-bench\">SWE-bench</a>, which AI models may have partially memorized. The team tested four agents (Claude 3.5 Sonnet, Codex GPT-5.2 and GPT-5.1 mini, and Qwen Code) across three distinct scenarios: using no context file, an LLM-generated file, and a human-written file. The researchers assessed the&nbsp;real-world impact of repository-level instructions by tracking three proxy indicators: task success rates (as determined by repository unit tests), the number of agent steps, and overall inference costs. All chosen niche repositories featured human-written context files; the first two scenarios were tested by removing or replacing those files.</p>\n   <p>The researchers found that LLM-generated context files degrade performance, actually reducing the task success rate by an average of 3% compared to providing no context file at all. They also consistently increased the number of steps the agent took, driving up inference costs by over 20%.</p>\n   <p>On the other hand, human-written files did offer marginal gains, with a 4% average increase in task success rate on AGENTbench. This positive increase, however, is contrasted by a parallel increase in the number of steps, raising costs by up to 19%.</p>\n   <p>Including information such as an architectural overview or an explanation of the repository structure in <code>AGENTS.md</code> files did not seem to reduce the time the model spent locating relevant files for the task at hand.</p>\n   <p>To understand why performance dropped while costs increased, the authors conducted a deep trace analysis of the agents’ tool calls and reasoning patterns. Agents generally followed the instructions included in the <code>AGENTS.md</code> file. As a result, they ran more tests, read more files, executed more grep searches, and performed more code-quality checks. While thorough, this behavior was often unnecessary for resolving the specific task at hand. The data points to the extra context forcing reasoning models to “think” harder without yielding better final patches.</p>\n   <p>The authors concluded by emphasizing the gap between the study’s findings and the current recommendations made to developers using AI code agents:</p>\n   <blockquote>\n    <p>We find that all context files consistently increase the number of steps required to complete tasks. LLM-generated context files have a marginal negative effect on task success rates, while developer-written ones provide a marginal performance gain.</p>\n    <p>Our trace analyses show that instructions in context files are generally followed and lead to more testing and a broader exploration; however, they do not function as effective repository overviews. Overall, our results suggest that context files have only a marginal effect on agent behavior and are likely only desirable when manually written. This highlights a concrete gap between current agent-developer recommendations and observed outcomes, and motivates future work on principled ways to automatically generate concise, task-relevant guidance for coding agents.</p>\n   </blockquote>\n   <p>Developers received the research with interest. One developer noted that the research <a href=\"https://news.ycombinator.com/item?id=47044965\">should actually have developers focus on writing useful <code>AGENTS.md</code> files</a>:</p>\n   <blockquote>\n    <p>I read the study. I think it does the opposite of what the authors suggest—it’s actually vouching <em>for</em> good <code>AGENTS.md</code> files.\n     <br>\n     […] The biggest use case for <code>AGENTS.md</code> files is domain knowledge that the model is not aware of and cannot instantly infer from the project. That is gained slowly over time from seeing the agents struggle due to this deficiency. Exactly the kind of thing very common in closed-source, yet incredibly rare in public GitHub projects that have an <code>AGENTS.md</code> file—the huge majority of which are recent small vibe-coded projects centered around LLMs. If 4% gains are seen on the latter kind of project, which will have a very mixed quality of <code>AGENTS</code> files in the first place, then for bigger projects with high-quality <code>.md</code>'s they’re invaluable when working with agents.</p>\n   </blockquote>\n   <p>Another developer <a href=\"https://www.reddit.com/r/programming/comments/1r89c8e/comment/o69zp26/\">noted that context files may just be more useful to developers than to AI harnesses</a>:</p>\n   <blockquote>\n    <p>I’ve maintained a <code>CLAUDE.md</code> file for about 3 months now across two projects and the improvement is noticeable but not for the reasons you’d expect. The actual token-level context it provides matters less than the fact that writing it forces you to articulate things about your codebase that were previously just in your head. Stuff like “we use this weird pattern for X because of a legacy constraint in Y.” Once that’s written down, the agent picks it up, but so does every new human on the team.</p>\n   </blockquote>\n   <p>Developers can <a href=\"https://arxiv.org/abs/2602.11988\">review the paper online</a>. The use of context files, such as <code>AGENTS.md</code>, <code>CLAUDE.md</code>, or <code>.cursorrules</code>, <a href=\"https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation\">grew in importance in the second half of 2025</a>, coinciding with a larger push by AI coding agent providers.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"New Research Reassesses the Value of AGENTS.md Files for AI Coding\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/agents-context-file-value-review/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772823420000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "苏黎世联邦理工学院的一项研究表明，虽然人工编写的上下文文件（如 AGENTS.md）能为 AI 编程智能体带来微小收益，但 LLM 生成的文件实际上会降低性能并显著增加推理成本。",
+  "oneSentenceSummary": "苏黎世联邦理工学院的一项研究表明，虽然人工编写的上下文文件（如 AGENTS.md）能为 AI 编程智能体带来微小收益，但 LLM 生成的文件实际上会降低性能并显著增加推理成本。",
+  "summary": "本文报道了对 AI 编程智能体使用的仓库级上下文文件（如 AGENTS.md、.cursorrules）的批判性评估。苏黎世联邦理工学院的研究人员引入了 AGENTbench 来测试 Claude 3.5 和 GPT-5.2 等智能体。他们的发现打破了自动生成此类文件的趋势，结果显示，由于不必要的“过度思考”和冗余的工具调用，这些文件使成功率降低了 3%，并使成本飙升了 20%。虽然人工编写的文件使成功率略微提升了 4%，但也增加了成本。研究表明，上下文文件仅在传达无法推断的领域知识或特定工具指令时才有价值，而非通用的架构概览。开发者反馈表明，这些文件在记录 AI 无法仅从代码中推断出的遗留约束方面最为有用。",
+  "mainPoints": [
+    {
+      "point": "LLM 生成的上下文文件对 AI 编程智能体适得其反。",
+      "explanation": "研究显示，这些文件会触发冗余的智能体步骤，导致任务成功率降低 3%，推理成本增加 20% 以上。"
+    },
+    {
+      "point": "人工编写的上下文文件以高昂成本换取微小的性能提升。",
+      "explanation": "虽然它们使成功率提高了 4%，但也使成本增加了 19%，因为智能体会遵循指令执行不必要的测试和搜索。"
+    },
+    {
+      "point": "上下文文件并不能提高智能体定位相关文件的能力。",
+      "explanation": "与普遍看法相反，在 .md 文件中提供架构概览并不能减少模型在导航仓库结构上花费的时间。"
+    },
+    {
+      "point": "追踪分析显示，额外的上下文会导致“过度推理”，且没有更好的结果。",
+      "explanation": "智能体会严格遵守上下文文件中的指令，导致更广泛的探索和更多的工具调用，而这并不一定会产生更好的代码补丁。"
+    },
+    {
+      "point": "上下文文件的真正价值在于记录无法推断的领域知识。",
+      "explanation": "开发者认为，这些文件应侧重于无法从源代码本身推导出的遗留约束和特定业务逻辑。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM 生成的上下文文件会降低性能，与完全不提供上下文文件相比，任务成功率平均降低了 3%。",
+    "数据表明，额外的上下文迫使推理模型‘思考’得更深，但并没有产生更好的最终补丁。",
+    "上下文文件对智能体行为的影响微乎其微，可能只有在人工编写时才具有价值。",
+    "AGENTS.md 文件最大的用例是模型未知且无法从项目中立即推断出的领域知识。",
+    "编写它会迫使你清晰地表达出那些以前只存在于你脑海中的代码库信息。"
+  ],
+  "tags": [
+    "AI 编程智能体",
+    "AGENTS.md",
+    "上下文窗口",
+    "软件工程",
+    "LLM 基准测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 872,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772823420000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-06 18:57:00"
+}
