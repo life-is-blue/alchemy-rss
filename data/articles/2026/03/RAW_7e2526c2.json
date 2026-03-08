@@ -1,0 +1,58 @@
+{
+  "id": "RAW_7e2526c2",
+  "title": "规模化人类判断：Dropbox 如何利用 LLM 改进 RAG 系统的标注",
+  "url": "https://www.infoq.com/news/2026/03/dropbox-scaling-human-judgement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-07 18:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>To improve the relevance of responses produced by Dropbox Dash, Dropbox engineers began <a href=\"https://dropbox.tech/machine-learning/llm-human-labeling-improving-search-relevance-dropbox-dash\">using LLMs to augment human labelling</a>, which plays a crucial role in identifying the documents that should be used to generate the responses. Their approach offers useful insights for any system built on retrieval-augmented generation (RAG).</p>\n   <p>As Dropbox principal engineer Dmitriy Meyerzon explains, document retrieval quality is the bottleneck in RAG systems that select relevant content from large documents repositories before passing it to an LLM:</p>\n   <blockquote>\n    <p>Because there are millions (and, in very large enterprises, billions) of documents in the enterprise search index, Dash can pass along only a small subset of the retrieved documents to the LLM. This makes the quality of search ranking—and the labeled relevance data used to train it—critical to the quality of the final answer.</p>\n   </blockquote>\n   <p>The implication is that the quality of the search ranking model has a direct impact on generated answers. Dash uses a ranking model trained with supervised learning techniques where query-document pairs are labelled according to how well each document satisfies a given query. The main challenge of this approach lies in producing a large volume of high-quality relevance labels.</p>\n   <p>To address the limitations of purely human judge-based labelling, which is expensive,slow, and inconsistent, Dropbox introduced a complementary approach in which an LLM generates relevance judgments at scale. This method is cheaper, more consistent, and can easily scale to large document sets. However, LLMs are not perfect evaluators, so their judgments must be assessed before being used for training.</p>\n   <blockquote>\n    <p>In practice, using LLMs for relevance evaluation requires a structured process that combines automation with human oversight.</p>\n   </blockquote>\n   <p>This approach, called \"human-calibrated LLM labeling\", is straightforward: humans label a small, high-quality dataset, which is later used to calibrate the LLM evaluator. The LLM then generates hundreds of thousands or even millions of labels, amplification human effort by roughly 100×. Importantly, LLMs do not replace the ranking system, as using them directly for query-time ranking would be too slow and limited by context.</p>\n   <p>The evaluation step involves comparing LLM-generated relevance ratings with human judgments on a test subset of query-document pairs not included in the training set. Evaluation also focuses on the hardest mistakes, where LLM judgments disagree with user behavior, such as users clicking documents the LLM rated low or skipping documents the LLM rated high, which produce the strongest learning signal.</p>\n   <p>One important consideration is that context is often critical for judging relevance. For example \"diet sprite\" at Dropbox refers to an internal performance tool rather than a beverage. To address this, LLMs are allowed to run additional searches, look up context, and understand internal terminology, which dramatically improves labeling accuracy.</p>\n   <p>Based on their experience with Dropbox Dash, Meyerzon says that this approach enables LLMs to consistently amplify human judgement at scale, proving and effective way to improve RAG systems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Scaling Human Judgment: How Dropbox Uses LLMs to Improve Labeling for RAG Systems\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/dropbox-scaling-human-judgement/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772906400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Dropbox 利用“人类校准的 LLM 标注”工作流来扩展其 RAG 系统的相关性数据，通过使用 LLM 增强人类判断，实现了 100 倍的效率提升。",
+  "oneSentenceSummary": "Dropbox 利用“人类校准的 LLM 标注”工作流来扩展其 RAG 系统的相关性数据，通过使用 LLM 增强人类判断，实现了 100 倍的效率提升。",
+  "summary": "本文探讨了 Dropbox 工程师如何通过解决文档检索瓶颈来改进“Dropbox Dash” RAG 系统。由于 RAG 的性能在很大程度上取决于搜索排名的质量，Dropbox 开发了一种需要大量标注查询-文档对的监督学习方法。为了克服人工标注成本高、速度慢的问题，他们实施了一个“人类校准”系统，即使用少量高质量的人工标签来校准 LLM。随后，该 LLM 会生成数百万个标签。该过程包括针对“硬错误”（LLM 评分与实际用户点击之间的差异）的复杂错误分析，并允许 LLM 进行内部搜索以理解公司特定的术语，从而确保在专业语境下的高准确性。",
+  "mainPoints": [
+    {
+      "point": "在大规模企业环境中，文档检索质量是 RAG 系统的主要瓶颈。",
+      "explanation": "索引中包含数十亿个文档，RAG 系统只能处理极小的一部分。因此，排名模型识别最相关文档的能力是决定最终回答质量的最关键因素。"
+    },
+    {
+      "point": "“人类校准的 LLM 标注”工作流在保持高准确性的同时，将人类的工作效能放大了约 100 倍。",
+      "explanation": "通过使用少量由人类标注的金标准数据集来校准 LLM 评估器，Dropbox 能够以纯人工流程所需成本和时间的一小部分，生成数百万个高质量标签。"
+    },
+    {
+      "point": "关注“硬错误”为提高排名模型的性能提供了最强的学习信号。",
+      "explanation": "评估过程专门针对 LLM 的判断与实际用户行为发生冲突的情况（例如用户点击了 LLM 评为低相关性的文档），从而突出模型改进的关键领域。"
+    },
+    {
+      "point": "通过内部术语查询进行上下文落地，对于基于 LLM 的准确相关性评估至关重要。",
+      "explanation": "为了防止由内部术语引起的错误，系统允许 LLM 进行额外的搜索并查阅内部文档，确保模型理解其正在标注的查询的具体业务语境。"
+    }
+  ],
+  "keyQuotes": [
+    "Dash 只能将检索到的文档中的一小部分传递给 LLM。这使得搜索排名的质量——以及用于训练它的标注相关性数据——对最终回答的质量至关重要。",
+    "人类标注一个少量的高质量数据集，随后用于校准 LLM 评估器。LLM 接着生成数十万甚至数百万个标签，将人类的工作效能放大了约 100 倍。",
+    "评估还侧重于最难的错误，即 LLM 的判断与用户行为不一致的情况，例如用户点击了 LLM 评级较低的文档，或跳过了 LLM 评级较高的文档。",
+    "允许 LLM 运行额外的搜索、查找上下文并理解内部术语，这显著提高了标注的准确性。"
+  ],
+  "tags": [
+    "RAG",
+    "LLM-as-a-Judge",
+    "数据标注",
+    "搜索排名",
+    "信息检索"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 471,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772906400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-07 18:00:00"
+}
