@@ -1,0 +1,59 @@
+{
+  "id": "RAW_e0bad23e",
+  "title": "Rspress 2.0：AI 原生文档、更快的启动速度与重构的主题",
+  "url": "https://www.infoq.com/news/2026/03/rspress-docs-2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-08 12:00:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://rspress.rs/\">Rspress</a>, the <a href=\"https://rsbuild.rs/\">Rsbuild</a>-based static site generator designed for developer documentation, has released version 2.0 with a comprehensive set of changes spanning theme design, build performance, AI integration and developer experience improvements. The release, which landed on January 30th 2026, follows 144 releases across the 1.x lifecycle and contributions from 125 developers.</p>\n   <p>Rspress 2.0 introduces a redesigned default theme crafted by designer <a href=\"https://x.com/wei_zhong41532\">Zovn Wei</a>, offering four tiers of <a href=\"https://rspress.rs/guide/basic/custom-theme\">customisation</a>. Developers can adjust CSS variables for quick theming, target BEM class names for precise style overrides, use ESM re-exports to swap individual components, or eject components entirely for full control. The BEM approach is a deliberate choice to decouple from any specific CSS framework, allowing teams to freely use <a href=\"https://tailwindcss.com/\">Tailwind</a>, <a href=\"https://lesscss.org/\">Less</a>, or <a href=\"https://sass-lang.com/\">Sass</a> without version conflicts.</p>\n   <p>One of the more forward-looking additions is the Static Site Generation to Markdown (SSG-MD) feature, a new rendering mode that generates Markdown files and <a href=\"https://llmstxt.org/\">llms.txt</a> output from documentation sites. Rather than converting HTML back to Markdown, which often produces poor results, SSG-MD renders content through the React virtual DOM to produce high-quality Markdown suitable for AI agents. Enabling it requires a single configuration line:</p>\n   <pre>\r\n<code class=\"language-javascript\">import { defineConfig } from '@rspress/core';\r\n\r\nexport default defineConfig({\r\n   llms: true,\r\n});\r\n</code></pre>\n   <p>Build performance sees significant gains through two features enabled by default: lazy compilation and persistent caching. With lazy compilation, pages are only compiled when visited during development, reducing cold start times from seconds to as low as 50 milliseconds according to benchmarks shared by the <a href=\"https://github.com/web-infra-dev/rspress/discussions/1891\">Rspress team on GitHub</a>. A route preloading strategy triggers compilation on link hover, keeping navigation seamless. Persistent caching reuses previous compilation results, improving subsequent build speeds by 30% to 60%.</p>\n   <p>Code highlighting has moved from Prism to <a href=\"https://shiki.style/\">Shiki</a> by default, performing syntax highlighting at build time rather than runtime. This brings accurate VS Code-consistent highlighting based on TextMate grammar, on-demand language imports with no runtime overhead, and support for custom transformers such as twoslash for inline type hints.</p>\n   <p>The release also consolidates the package structure. Multiple packages including <code>rspress</code>, <code>@rspress/runtime</code>, <code>@rspress/shared</code>, and <code>@rspress/theme-default</code> have been merged into a single <code>@rspress/core</code> package.</p>\n   <p>Eearly reactions to the release have been positive, with one user commenting on the <a href=\"https://www.reddit.com/r/Rspack/comments/1r1x7sr/announcing_rspress_20_static_site_generator_built/\">r/Rspack subreddit</a>:</p>\n   <p>&nbsp;</p>\n   <blockquote>\n    <p>I love to see this kind of tooling popup! Congrats on the launch!</p>\n   </blockquote>\n   <p>&nbsp;</p>\n   <p>The <a href=\"https://github.com/web-infra-dev/rspress/discussions/1891\">GitHub discussions thread</a> tracking breaking changes has seen active engagement, with 26 comments and 19 replies covering migration details from Shiki configuration to React Router compatibility.</p>\n   <p>Compared to alternatives like <a href=\"https://docusaurus.io/\">Docusaurus</a> and <a href=\"https://vitepress.dev/\">VitePress</a>, Rspress differentiates primarily on build speed through its Rspack foundation and its AI-native features. Docusaurus itself <a href=\"https://docusaurus.io/docs\">acknowledges</a> that Rspress <q>benefits from a modern infrastructure that enables faster site builds</q> while noting its own strengths in maturity and community size. VitePress remains the go-to for Vue-based projects, whereas Rspress targets the React ecosystem.</p>\n   <p>Rspress 2.0 requires Node.js 20 or higher and supports React 18 and 19. The Rust-based MDX parser (<code>@rspress/mdx-rs</code>) has been dropped in favour of the JavaScript MDX parser, trading some raw compilation speed for better ecosystem compatibility with tools like Shiki and custom remark and rehype plugins. A detailed <a href=\"https://v2.rspress.rs/guide/migration/rspress-v1\">migration guide</a> is available for teams upgrading from 1.x.</p>\n   <p>Rspress is an open-source static site generator built on <a href=\"https://rsbuild.rs/\">Rsbuild</a> and <a href=\"https://rspack.rs/\">Rspack</a>, part of the broader Rstack JavaScript toolchain. It is designed for building documentation sites with MDX support, convention-based routing, and component library previews, and integrates with <a href=\"https://rslib.rs/\">Rslib</a> for component library documentation workflows.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Rspress 2.0: AI-Native Documentation, Faster Startup and a Redesigned Theme\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/rspress-docs-2-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1772971200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Rspress 2.0 作为一款 AI 原生静态站点生成器发布，其特点包括重构的主题、通过懒编译实现的显著构建性能提升，以及为 AI 智能体专门优化的 Markdown 输出。",
+  "oneSentenceSummary": "Rspress 2.0 作为一款 AI 原生静态站点生成器发布，其特点包括重构的主题、通过懒编译实现的显著构建性能提升，以及为 AI 智能体专门优化的 Markdown 输出。",
+  "summary": "Rspress 2.0 标志着这款基于 Rspack 的文档工具迎来了重大演进，重点关注三个核心支柱：开发者体验、性能和 AI 准备就绪。此次更新引入了高度灵活的基于 BEM 的主题系统，并切换到 Shiki 进行构建时语法高亮。通过懒编译和持久化缓存，性能得到了大幅提升，冷启动速度快至 50ms。值得注意的是，全新的 SSG-MD 功能使文档站点能够生成高质量的 Markdown 和 llms.txt 文件，专门针对 AI 智能体进行了优化，使 Rspress 成为 LLM 时代具有前瞻性的工具。",
+  "mainPoints": [
+    {
+      "point": "通过 SSG-MD 功能引入 AI 原生渲染，以实现更好的 LLM 集成。",
+      "explanation": "与传统的 HTML 转 Markdown 不同，Rspress 2.0 通过 React 虚拟 DOM 渲染内容，以生成高质量的 Markdown 和 llms.txt 文件，使文档更易于被 AI 智能体和 LLM 消费。"
+    },
+    {
+      "point": "通过懒编译和持久化缓存策略实现显著的构建性能优化。",
+      "explanation": "通过在开发过程中仅在请求时编译页面，并利用持久化缓存进行后续构建，Rspress 将冷启动时间缩短至 50ms，并将构建速度提升了高达 60%。"
+    },
+    {
+      "point": "重构的主题系统，为开发者提供四个不同层级的定制和控制。",
+      "explanation": "新主题采用基于 BEM 的方法与特定 CSS 框架解耦，允许开发者在简单的 CSS 变量调整、组件重导出或完整的组件 Eject 之间进行选择，以获得最大的灵活性。"
+    },
+    {
+      "point": "通过采用 Shiki 并回归 JavaScript 版 MDX 解析器实现工具链的战略转变。",
+      "explanation": "转向 Shiki 确保了与 VS Code 一致的高亮效果，同时牺牲了 Rust 版 MDX 解析器的原始速度，以换取 JavaScript 版本提供的更好的生态系统兼容性和插件支持。"
+    }
+  ],
+  "keyQuotes": [
+    "Rspress 2.0：AI 原生文档、更快的启动速度与重构的主题。",
+    "SSG-MD 通过 React 虚拟 DOM 渲染内容，生成适合 AI 智能体的高质量 Markdown。",
+    "通过懒编译，页面仅在开发期间访问时才进行编译，将冷启动时间从几秒缩短至低至 50 毫秒。",
+    "BEM 方法是一个深思熟虑的选择，旨在与任何特定的 CSS 框架解耦，允许团队自由使用 Tailwind、Less 或 Sass。",
+    "Rspress 的核心差异化在于其基于 Rspack 的构建速度及其 AI 原生特性。"
+  ],
+  "tags": [
+    "Rspress",
+    "静态站点生成器",
+    "Rspack",
+    "文档工具",
+    "AI 原生"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 81,
+  "wordCount": 563,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1772971200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-08 12:00:00"
+}

@@ -1,23 +1,27 @@
-> **更新时间**: 2026-03-08 10:57:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-08 22:04:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [OpenClaw-v2026.3.7-发布：支持-GPT-5.4-与基础设施升级](https://x.com/openclaw/status/2030522386894946620)
+
+2026-03-08 05:53:56 | 标签: OpenClaw, AI 自动化, GPT-5.4, Gemini 3.1, Docker
+
+> 本次发布是 AI 自动化平台 OpenClaw 的一次重大更新。核心亮点包括：集成先进模型（GPT-5.4 和 Gemini 3.1 Flash-Lite）、支持重启后持久化的 ACP 绑定，以及为提升效率优化的 Docker 多阶段构建。此外，该更新还引入了用于网关认证的 SecretRef、可插拔上下文引擎、HEIF 图像支持，并修复了 Zalo 渠道的相关问题，标志着该工具能力的全面升级。
+
+
+
 ### [Andrej-Karpathy-发布-'autoresearch'：一个极简的自主-LLM-训练仓库](https://x.com/karpathy/status/2030371219518931079)
 
-2026-03-07 19:53:15 | 标签: autoresearch, LLM 训练, AI 智能体, Andrej Karpathy, 开源
-
-> Andrej Karpathy 发布了 'autoresearch'，这是他 nanochat LLM 训练核心的精简、单 GPU 版本。该项目实现了一个自主研究循环：人类负责迭代高层提示词，而 AI 智能体则独立修改训练代码（Python），对神经网络架构、优化器和超参数进行实验。智能体在 Git 功能分支上运行，每当获得更低的验证损失时就会提交改进，从而有效地实现了机器学习研究迭代过程的自动化。
+2026-03-07 19:53:15
 
 
 
 ### [Claude-Code-推出-/loop-功能：实现定时循环任务自动化](https://x.com/bcherny/status/2030193932404150413)
 
-2026-03-07 08:08:47 | 标签: Claude Code, Anthropic, AI Agent, 自动化, 软件开发
-
-> Anthropic 的 Claude Code 团队成员 Boris Cherny 宣布推出 `/loop` 命令。该功能允许用户在 Claude Code 环境中自动化并调度循环任务。应用场景包括：自动“照看” Pull Requests (PR)，自动修复构建问题，并在收到评论时调用工作区代理（worktree agent）进行处理；或者利用 Slack 的模型上下文协议（Model Context Protocol， MCP）每日汇总被标记的热门帖子。这标志着 AI 编程工具正向长时间运行、自主的智能体工作流迈出重要一步。
+2026-03-07 08:08:47
 
 
 
