@@ -1,7 +1,23 @@
-> **更新时间**: 2026-03-06 20:05:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-08 10:57:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
+
+
+
+### [Andrej-Karpathy-发布-'autoresearch'：一个极简的自主-LLM-训练仓库](https://x.com/karpathy/status/2030371219518931079)
+
+2026-03-07 19:53:15 | 标签: autoresearch, LLM 训练, AI 智能体, Andrej Karpathy, 开源
+
+> Andrej Karpathy 发布了 'autoresearch'，这是他 nanochat LLM 训练核心的精简、单 GPU 版本。该项目实现了一个自主研究循环：人类负责迭代高层提示词，而 AI 智能体则独立修改训练代码（Python），对神经网络架构、优化器和超参数进行实验。智能体在 Git 功能分支上运行，每当获得更低的验证损失时就会提交改进，从而有效地实现了机器学习研究迭代过程的自动化。
+
+
+
+### [Claude-Code-推出-/loop-功能：实现定时循环任务自动化](https://x.com/bcherny/status/2030193932404150413)
+
+2026-03-07 08:08:47 | 标签: Claude Code, Anthropic, AI Agent, 自动化, 软件开发
+
+> Anthropic 的 Claude Code 团队成员 Boris Cherny 宣布推出 `/loop` 命令。该功能允许用户在 Claude Code 环境中自动化并调度循环任务。应用场景包括：自动“照看” Pull Requests (PR)，自动修复构建问题，并在收到评论时调用工作区代理（worktree agent）进行处理；或者利用 Slack 的模型上下文协议（Model Context Protocol， MCP）每日汇总被标记的热门帖子。这标志着 AI 编程工具正向长时间运行、自主的智能体工作流迈出重要一步。
 
 
 
@@ -13,9 +29,7 @@
 
 ### [推出-Cursor-Automations：构建全天候-AI-智能体](https://x.com/cursor_ai/status/2029604182286856663)
 
-2026-03-05 17:05:19 | 标签: Cursor, AI 智能体, Cursor Automations, 智能体工作流, 软件工程
-
-> Cursor 正在引入一项名为“Automations”的重大新功能。这一特性代表了从“响应式 AI 辅助”向“主动式、全天候”智能体的转变。这些智能体被设计为在开发环境中持续运行，能够在无需频繁人工提示的情况下处理后台任务、代码重构或监控，标志着 AI 驱动软件工程的一次重要演进。
+2026-03-05 17:05:19
 
 
 
