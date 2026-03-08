@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-08 10:57:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-08 12:31:43 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -10814,17 +10814,13 @@
 
 ### [OpenClaw-免费小白安装教程！养成你的第一个龙虾🦞员工](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247720338&idx=1&sn=3f6cc599708d6bf65498a1c638697934)
 
-2026-03-07 14:01:00 | 标签: OpenClaw, Cherry Studio, AI Agent, 个人助理, 提示词工程
-
-> 文章详细介绍了如何从零开始搭建一个具备“持久自我”的个人 AI 助手（OpenClaw）。内容涵盖了 Cherry Studio 桌面客户端的下载安装、通过 OpenRouter 接入阶跃星辰（Stepfun）免费大模型的方法，以及 OpenClaw 框架的快速集成步骤。重点讲解了如何通过编辑 IDENTITY.md、SOUL.md 和 USER.md 三个核心配置文件，为 AI 注入独特的身份、价值观和用户偏好，从而将通用的 LLM 转化为一个懂用户、有性格的本地化 AI 员工。
+2026-03-07 14:01:00
 
 
 
 ### [如何在一个-OpenClaw-中同时养多只龙虾🦞，并打通多个飞书-Bot](https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247494216&idx=1&sn=cfa0ec55c59dbab5ba6240afcd7bdf00)
 
-2026-03-07 09:37:00 | 标签: OpenClaw, AI Agent, 飞书 Bot, 多实例部署, 自动化工作流
-
-> 文章主要讲解了 OpenClaw 框架的多 Agent 并行运行机制。作者通过四个核心步骤：在飞书开放平台创建应用、修改 `openclaw.json` 配置文件以支持多账号（accounts）结构、利用 CLI 命令添加新 Agent，以及执行关键的绑定（bind）操作，展示了如何在一个 OpenClaw 实例中管理多个具有独立人设、大模型配置和权限的机器人。文中特别强调了修改配置后的数据迁移、重启 Gateway 以及配对码验证等实操细节，旨在帮助用户在节省硬件资源的同时，实现多任务 AI 助手的并行运行。
+2026-03-07 09:37:00
 
 
 
@@ -55608,17 +55604,13 @@
 
 ### [Andrej-Karpathy-发布-'autoresearch'：一个极简的自主-LLM-训练仓库](https://x.com/karpathy/status/2030371219518931079)
 
-2026-03-07 19:53:15 | 标签: autoresearch, LLM 训练, AI 智能体, Andrej Karpathy, 开源
-
-> Andrej Karpathy 发布了 'autoresearch'，这是他 nanochat LLM 训练核心的精简、单 GPU 版本。该项目实现了一个自主研究循环：人类负责迭代高层提示词，而 AI 智能体则独立修改训练代码（Python），对神经网络架构、优化器和超参数进行实验。智能体在 Git 功能分支上运行，每当获得更低的验证损失时就会提交改进，从而有效地实现了机器学习研究迭代过程的自动化。
+2026-03-07 19:53:15
 
 
 
 ### [Claude-Code-推出-/loop-功能：实现定时循环任务自动化](https://x.com/bcherny/status/2030193932404150413)
 
-2026-03-07 08:08:47 | 标签: Claude Code, Anthropic, AI Agent, 自动化, 软件开发
-
-> Anthropic 的 Claude Code 团队成员 Boris Cherny 宣布推出 `/loop` 命令。该功能允许用户在 Claude Code 环境中自动化并调度循环任务。应用场景包括：自动“照看” Pull Requests (PR)，自动修复构建问题，并在收到评论时调用工作区代理（worktree agent）进行处理；或者利用 Slack 的模型上下文协议（Model Context Protocol， MCP）每日汇总被标记的热门帖子。这标志着 AI 编程工具正向长时间运行、自主的智能体工作流迈出重要一步。
+2026-03-07 08:08:47
 
 
 
