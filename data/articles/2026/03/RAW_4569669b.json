@@ -1,0 +1,54 @@
+{
+  "id": "RAW_4569669b",
+  "title": "88 岁图灵奖得主，用 Claude 一小时破解 30 年数学悬案",
+  "url": "https://www.qbitai.com/2026/03/384890.html",
+  "date": "2026-03-09 04:49:03",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"71\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"72\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"70\">88岁的图灵奖得主、计算机科学奠基人Donald Knuth（高德纳）最近发文，惊呼Shock! Shock!。</p>\n  <p data-track=\"4\">在他的短文《Claude’s Cycles》中，他记录了一件难以置信的事：</p>\n  <p data-track=\"5\">一个他研究数周、甚至追溯到30年前的三维图论开放问题，被<strong>Claude Opus 4.6</strong>破解了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053317_55a5ec560891e1a1b9d7e64907f6c5b9.webp\">\n  </div>\n  <p data-track=\"6\">更关键的是，Claude不是靠暴力搜索，而是用“纤维分解”、“蛇形构造”等结构性思路——</p>\n  <p data-track=\"7\">仅用<strong>1小时、31次探索</strong>，就推导出了适用于所有奇数m的通用构造算法。</p>\n  <p data-track=\"8\">这直接让向来对生成式AI持保留态度的高德纳在文章最后写道：</p>\n  <p data-track=\"9\">“为Claude脱帽致敬！”</p>\n  <p data-track=\"10\">这是怎么一回事？</p>\n  <p data-track=\"12\">高德纳在论文中提到，他最近几周一直在钻研这个问题，但根源可追溯到编写《计算机程序设计艺术》（The Art of Computer Programming）图论章节时的长期思考。</p>\n  <p data-track=\"13\">具体来说，高德纳抛出的问题极具挑战性：</p>\n  <blockquote>\n   <p data-track=\"14\">在一个拥有m^3个顶点的三维网格图中，能否将所有的弧（arcs）完美拆解成三个互不重叠、且经过每个顶点恰好一次的长循环（即哈密顿循环）？</p>\n  </blockquote>\n  <p data-track=\"15\">对于m=2的情况，早在多年前已被证明是不可能的，而高德纳此前仅解出了m=3的特例。</p>\n  <p data-track=\"16\">当高德纳的朋友Filip Stappers将此问题抛给Claude时，常规的暴力搜索（DFS）很快撞到了南墙——</p>\n  <p data-track=\"17\">在m=3时搜索空间就已高达6^27，效率极低。然而，Claude展现出了惊人的逻辑演进能力。</p>\n  <ul>\n   <li data-track=\"18\">在第15次探索中，Claude引入了商映射，将顶点划分为不同的“纤维层”。它意识到，所有的弧实际上都是从层F_s指向F_s+1，这一步神来之笔，将复杂的三维路径寻找问题，降维简化成了层与层之间的规律跳转。</li>\n   <li data-track=\"19\">在第21次探索中，Claude灵光一现。它利用凯莱图（Cayley Digraph）的性质，发现了一种它称为“蛇形”的构造方法：通过特定的步进逻辑），可以在局部生成极具规律的路径。</li>\n   <li data-track=\"20\">虽然在第27次探索中，Claude发现简单的坐标旋转会导致在超平面上出现冲突，但它并未放弃。</li>\n   <li data-track=\"21\">它在第30次探索中敏锐地察觉到：在某些纤维层，移动的选择可以仅取决于单个坐标。正是这个发现，踢出了通往终点临门一脚。</li>\n  </ul>\n  <p data-track=\"22\">基于这一发现，在第31次探索中，Claude编写了一个Python程序，给出了一个通用的构造算法。</p>\n  <p data-track=\"23\">高德纳随后亲自将该程序简化为C语言版本，并验证m=3, 5, 7, 9, 11等情况，结果全部正确。</p>\n  <p data-track=\"24\">Stappers甚至将其测试到了m=101，依然完美契合。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053316_2ebf8f63200a888a0226e14628fdcece.png\">\n  </div>\n  <p data-track=\"25\">更令高德纳震惊的是，Claude并没有像以往的AI那样只给出一个黑盒结果，而是清晰地展示了它如何从错误中学习、如何重新表述问题、如何利用凯莱图（Cayley Digraph）的群论性质进行推导。</p>\n  <p data-track=\"26\">正如高德纳所说，Claude在这一个小时里完成了一次<strong>“自动演绎与创造性问题解决”</strong>的完美示。这不再是简单的概率预测，而是真正的、逻辑严密的数学发现。</p>\n  <p data-track=\"27\">不过，在解决奇数情形后，当Claude继续挑战偶数情况时，它似乎陷入了僵局，连用于探索的程序都出现了报错。</p>\n  <p data-track=\"28\">即便如此，但这恰恰证明了科学探索的真实性。AI捅破了最厚的那层窗户纸，而剩下的路，正是人类与AI协作的新起点。</p>\n  <p data-track=\"30\">如果你不了解高德纳，就难懂他的两声“Shock”为何震动计算机科学界。</p>\n  <p data-track=\"31\">在计算机科学界，<strong>高德纳几乎是一个“活着的传奇”。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053315_6a7aad3f554d2e111f186357be2234a1.jpeg\">\n  </div>\n  <p data-track=\"32\">1974年，年仅36岁的他便获得了图灵奖。凭借对算法分析体系的奠基性贡献，他也成为历史上最年轻的图灵奖得主之一。</p>\n  <p data-track=\"33\">其中最绕不开的，就是那套神作<strong>《计算机程序设计艺术》（The Art of Computer Progamming，TAOCP）</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053317_24c743e90fcf58f1705d048111b7776b.jpeg\">\n  </div>\n  <p data-track=\"34\">该如何去形容这本书呢？有网友表示得十分贴切：</p>\n  <blockquote>\n   <p data-track=\"35\">书还没写完，人们就已经迫不及待把图灵奖颁给了他。</p>\n  </blockquote>\n  <p data-track=\"36\">这套书后来被《美国科学家》杂志将其列为20世纪最重要的12部物理科学著作之一，与爱因斯坦《相对论》并列。</p>\n  <p data-track=\"37\">比尔·盖茨曾评价：</p>\n  <blockquote>\n   <p data-track=\"38\">如果你认为自己是一位非常优秀的程序员……那就读读《计算机程序设计艺术》……如果你能读完这本书，一定要给我发一份简历。</p>\n  </blockquote>\n  <p data-track=\"39\">高德纳从1962年开始写这套书。原计划三卷，后来不断扩展，如今已经规划为七卷。</p>\n  <p data-track=\"40\">直到2026年，他仍在持续完善第四卷及其后续部分。</p>\n  <p data-track=\"41\">正如网友所说，在《Claude’s Cycles》里有两个奇迹：一是Claude证明数学题；二是88岁高龄的高德纳仍在写书。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053315_335b9f124878e1a72c17c2af2b52bd90.png\">\n  </div>\n  <p data-track=\"42\">有趣的是，当高德纳发现当时的计算机排版无法完美呈现数学公式时，他还曾暂停了TAOCP的编写，顺手开发了<strong>TeX排版系统</strong>。</p>\n  <p data-track=\"43\">今天，全世界绝大多数数学、物理和计算机论文，几乎都在使用TeX（或基于它发展的 LaTeX）进行排版。</p>\n  <p data-track=\"44\">高德纳甚至给TeX设计了一种极具个人风格的版本号：版本号会不断趋近π（3.14、3.141、3.1415……），象征无限接近完美。</p>\n  <p data-track=\"45\">他还宣布自己的程序理论上没有Bug，并悬赏奖励发现Bug的人。</p>\n  <p data-track=\"46\">事实上，这并不是他唯一一次为Bug付钱。</p>\n  <p data-track=\"47\">最著名的是程序员圈里的<strong>高德纳支票</strong>。任何发现TAOCP书中错误的人，都可以收到一张由高德纳亲笔签名的奖金支票。</p>\n  <p data-track=\"48\">奖金通常是2.56美元——因为256美分等于2⁸，在十六进制里刚好是1美元。</p>\n  <p data-track=\"49\">对于程序员来说，拥有一张高德纳签名的支票是职业生涯的最高荣耀，绝大多数获奖者都会将其装裱起来而非兑现。</p>\n  <p data-track=\"50\">为了专注研究，高德纳在1990年之后就彻底停用了电子邮件。</p>\n  <p data-track=\"51\">他认为邮件会耗费他宝贵的思考时间。如果你想联系他，只能寄实体信件到斯坦福大学。</p>\n  <p data-track=\"52\">这样一位仿佛停留在“信息时代前夜”的老派逻辑大师——对每一个字节、每一行公式都追求极致精确。</p>\n  <p data-track=\"53\">而如今，正是这样的人，却被一个生成式AI深深震撼。</p>\n  <p data-track=\"54\">这本身，就是一件极具冲击力的事。</p>\n  <p data-track=\"55\">正如高德纳自己所说：</p>\n  <p data-track=\"56\">这绝对是一个令人印象深刻的成功故事。如果香农在天之灵知道自己的名字如今与这样的进步联系在一起，大概也会感到自豪。</p>\n  <p data-track=\"57\"><strong>向Claude脱帽致敬（Hats off to Claude）！</strong></p>\n  <p data-track=\"58\">而这，或许是计算机科学史上最完美的一个<strong>一语双关</strong>。</p>\n  <p data-track=\"59\">高德纳口中的Claude，既是那个在1小时内攻克难题、逻辑缜密的AI推理模型；</p>\n  <p data-track=\"60\">也是那位在80年前亲手定义了“比特”、开创了信息论时代的香农（Claude Shannon）。</p>\n  <p data-track=\"61\">参考链接\n   <br>\n   [1]https://x.com/i/trending/2028948713042002348\n   <br>\n   [2]https://www-cs-faculty.stanford.edu/~knuth/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "计算机科学泰斗高德纳（Donald Knuth）记录了 Claude Opus 4.6 仅用一小时便通过结构化推理攻克困扰其 30 年的三维图论难题的过程。",
+  "oneSentenceSummary": "计算机科学泰斗高德纳（Donald Knuth）记录了 Claude Opus 4.6 仅用一小时便通过结构化推理攻克困扰其 30 年的三维图论难题的过程。",
+  "summary": "文章报道了 88 岁的图灵奖得主高德纳（Donald Knuth）对其研究数十年的三维网格图哈密顿循环问题的最新突破。在高德纳的朋友将该问题提交给 Claude Opus 4.6 后，该模型并未采用低效的暴力搜索，而是通过“纤维分解”、“蛇形构造”以及利用凯莱图性质等逻辑演进，在 31 次尝试内推导出了适用于所有奇数 m 的通用构造算法。高德纳对此表示极度震惊，并亲自验证了算法在 m=101 等高阶情况下的正确性。文章同时回顾了高德纳在算法分析、TeX 系统及《计算机程序设计艺术》等领域的传奇成就，强调了此次 AI 在逻辑严密的数学发现中所展现的创造性问题解决能力。",
+  "mainPoints": [
+    {
+      "point": "Claude 展现了超越暴力搜索的结构化数学推理能力。",
+      "explanation": "模型通过纤维分解和凯莱图性质将复杂三维路径问题降维，证明了 LLM 在处理高难度抽象数学问题时具备寻找结构性规律而非单纯概率预测的能力。"
+    },
+    {
+      "point": "复杂的数学突破源于 AI 对错误的主动学习与逻辑修正。",
+      "explanation": "在 31 次探索中，Claude 经历了路径冲突和坐标旋转失败，但能通过重新表述问题和识别超平面约束，最终踢出通往通用算法的“临门一脚”。"
+    },
+    {
+      "point": "顶尖科学家对生成式 AI 的态度正因其实践价值发生转变。",
+      "explanation": "向来严谨老派的高德纳从持保留态度到“脱帽致敬”，反映出 AI 在解决具体、长期的科学悬案上已具备令领域顶级专家信服的实战能力。"
+    }
+  ],
+  "keyQuotes": [
+    "为 Claude 脱帽致敬！",
+    "这不再是简单的概率预测，而是真正的、逻辑严密的数学发现。",
+    "AI 捅破了最厚的那层窗户纸，而剩下的路，正是人类与 AI 协作的新起点。",
+    "这绝对是一个令人印象深刻的成功故事。如果香农在天之灵知道自己的名字如今与这样的进步联系在一起，大概也会感到自豪。"
+  ],
+  "tags": [
+    "高德纳",
+    "Claude",
+    "图论",
+    "数学发现",
+    "LLM 推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2418,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773031743000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-09 04:49:03"
+}
