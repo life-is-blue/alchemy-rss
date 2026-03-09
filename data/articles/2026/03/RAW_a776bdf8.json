@@ -1,0 +1,55 @@
+{
+  "id": "RAW_a776bdf8",
+  "title": "龙虾最大痛点被官方插件升级！对话永不忘记，GPT 和 Gemini 最强模型都可接入",
+  "url": "https://www.qbitai.com/2026/03/384907.html",
+  "date": "2026-03-09 05:02:00",
+  "author": "henry",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"78\">henry 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"79\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">报！龙虾更新了！</p>\n  <p data-track=\"4\">刚刚，新的OpenClaw测试版（2026.3.7）已经推出，并光速上线OA两家最新模型<strong>GPT-5.4</strong>和<strong>Gemini Flash 3.1</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053339_08b233b92538ee7bdd1340257cc6c230.webp\">\n  </div>\n  <p data-track=\"5\">与此同时，一并更新的还有：</p>\n  <ul>\n   <li data-track=\"6\">ACP绑定在重启后依然可保留</li>\n   <li data-track=\"7\">精简版Docker多阶段构建</li>\n   <li data-track=\"8\">用于网关认证的SecretRef</li>\n   <li data-track=\"9\">可插拔的上下文引擎</li>\n   <li data-track=\"10\">支持HEIF图像格式</li>\n   <li data-track=\"11\">修复Zalo渠道问题</li>\n  </ul>\n  <p data-track=\"12\">其中，<strong>可插拔的上下文引擎（pluggable context engine）</strong>可谓是这次更新的重点，不少网友纷纷表示：</p>\n  <blockquote>\n   <p data-track=\"13\">相比于跑那个模型，上下文才是关键。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053342_20608cec0ea53bd5307469b7c4c26324.png\">\n  </div>\n  <p data-track=\"14\">细心的你甚至还发现了，在官方的changelog上直接点名了一个插件例子<strong>lossless-claw</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053339_768e4cb6f6684d76b2ee57f270f0e63f.png\">\n  </div>\n  <p data-track=\"15\">那么，这个上下文插件是怎么一回事？有啥用？</p>\n  <p data-track=\"17\">总体来看，这次OpenClaw更新可以归纳为三个方面：<strong>上下文管理插件化</strong>、<strong>Agent路由能力升级</strong>（频道、topic、独立 session）以及<strong>部署与插件工程化</strong>（Docker multi-stage、SecretRef、安全策略）。</p>\n  <p data-track=\"18\">其中，最值得关注的，就是<strong>上下文管理插件化</strong>。</p>\n  <p data-track=\"19\">根据官方的changelog，这次更新新增了ContextEngine插件插槽。</p>\n  <p data-track=\"20\">该接口提供了完整的生命周期钩子，包括：bootstrap、ingest、assemble、compact、afterTurn、prepareSubagentSpawn、onSubagentEnded。</p>\n  <p data-track=\"21\">这意味着<strong>插件可以在上下文生成、压缩、拼接以及子Agent生命周期管理的各个阶段介入，从而实现完全不同的上下文策略</strong>。</p>\n  <p data-track=\"22\">用PR作者Josh Lehman的一句话总结：</p>\n  <blockquote>\n   <p data-track=\"23\">你其实不需要一个Agent记忆系统，你需要的是不会被重置的上下文。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053340_874df5f828f5cc280a0751f83b9fc86d.png\">\n  </div>\n  <p data-track=\"24\">过去在OpenClaw中，<strong>上下文管理逻辑是写死的</strong>。</p>\n  <p data-track=\"25\">例如对话过长时如何压缩历史、如何拼接上下文、何时丢弃旧信息，这些都由系统内部固定实现，插件几乎无法介入。</p>\n  <p data-track=\"26\">而这次更新之后，情况发生了改变。</p>\n  <p data-track=\"27\">简单来说，上下文插件化意味着：</p>\n  <ul>\n   <li data-track=\"28\">不同插件可以实现<strong>不同的上下文管理策略</strong></li>\n   <li data-track=\"29\"><strong>系统核心不再写死上下文压缩逻辑</strong></li>\n   <li data-track=\"30\"><strong>插件可以控制上下文压缩、上下文组装，以及子Agent的生命周期</strong></li>\n  </ul>\n  <p data-track=\"31\">翻译成最直观的体验就是：<strong>当你和“龙虾”进行长时间、多轮对话时，它的“记性”会明显变好。</strong></p>\n  <p data-track=\"32\">以往龙虾对话常见的情况是：</p>\n  <ul>\n   <li data-track=\"33\">对话变长后，系统开始压缩上下文，比如不按要求写，只列bullet point</li>\n   <li data-track=\"34\">Agent逐渐忘记之前的计划</li>\n   <li data-track=\"35\">甚至忘记自己修改过哪些文件</li>\n   <li data-track=\"36\">任务运行到后期，模型突然变得“变笨”</li>\n  </ul>\n  <p data-track=\"37\">而新的上下文插件机制，正是为了解决这些问题。</p>\n  <p data-track=\"38\">随着定制化上下文策略的开放，未来针对不同场景的记忆方案也将不断出现，让“龙虾”在执行不同任务时变得更加高效，也更加经济。</p>\n  <p data-track=\"40\">举例来说，官方重点推荐的插件<strong>lossless-claw</strong>，就展示了一种新的上下文管理思路。</p>\n  <p data-track=\"41\">在传统Agent系统中，一旦对话过长，系统通常会：直接丢弃旧内容。</p>\n  <p data-track=\"42\">而在lossless-claw中，旧对话不会被删除，而是：</p>\n  <ul>\n   <li data-track=\"43\">持久化到SQLite数据库，按对话组织</li>\n   <li data-track=\"44\">对旧消息块生成摘要，使用配置的LLM</li>\n   <li data-track=\"45\">将摘要压缩为更高层级节点，形成DAG（有向无环图）</li>\n   <li data-track=\"46\">每轮对话时，将摘要 + 最近原始消息组合成上下文</li>\n   <li data-track=\"47\">提供工具（lcm_grep、lcm_describe、lcm_expand）让Agent可搜索、回溯历史</li>\n  </ul>\n  <p data-track=\"48\">也就是说，在多轮对话中，原始消息会被完整保留，系统根据摘要与原始消息保持关联，而Agent随时可以展开摘要查看原文。</p>\n  <p data-track=\"49\">理论上，<strong>上下文“永远不会丢失”</strong>。</p>\n  <p data-track=\"50\">（By the way，据作者透露，这一思路来自《LCM: Lossless Context Management》，感兴趣的同学可以进一步阅读。）</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260309053341_a30d340f00c179e2cff13d792f0cbfc7.png\">\n  </div>\n  <p data-track=\"51\">在<strong>OOLONG benchmark</strong>的测试中，使用同一模型时，lossless-claw得分<strong>74.8</strong>，打败Claude Code<strong>70.3</strong>。</p>\n  <p data-track=\"52\">更关键的是，<strong>上下文越长，差距越大</strong>。在测试的所有上下文长度下，lossless-claw的得分都高于Claude Code。</p>\n  <p data-track=\"53\">PR作者Josh Lehman表示，他已经在OpenClaw上实际运行了一周：</p>\n  <blockquote>\n   <p data-track=\"54\">说它表现很好，都算是低估了。</p>\n  </blockquote>\n  <p data-track=\"56\">除上下文插件以外，这次龙虾的更新还有两大重点：</p>\n  <p data-track=\"57\"><strong>首先是强化了Agent的路由系统</strong>。</p>\n  <p data-track=\"58\">针对Discord、Telegram、Slack、Mattermost等平台，OpenClaw引入了持久化线程绑定机制，即使系统重启，Agent与频道或话题的绑定关系依然能够保持。</p>\n  <p data-track=\"59\">同时还支持按主题路由 Agent：例如在Telegram中，每个topic都可以运行一个独立的Agent，因此在同一个论坛群里，也可以同时存在多个各自执行不同任务的Agent。</p>\n  <p data-track=\"60\"><strong>其次是在部署与工程化层面的优化</strong>。</p>\n  <p data-track=\"61\">例如官方已经开始为iOS App Store发布做准备，移动端版本也正在筹备中。</p>\n  <p data-track=\"62\">与此同时，Docker构建也进行了精简，新增bookworm-slim版本，通过Slim镜像减少不必要的依赖，使容器体积更小、启动速度更快，也更适合在服务器环境中大规模部署。</p>\n  <p data-track=\"63\">参考链接</p>\n  <p data-track=\"64\">[1]https://github.com/openclaw/openclaw/releases/tag/v2026.3.7</p>\n  <p data-track=\"65\">[2]https://x.com/steipete/status/2030508141419372667</p>\n  <p data-track=\"66\">[3]https://x.com/jlehman_</p>\n  <p data-track=\"67\">[4]https://github.com/Martian-Engineering/lossless-claw</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "OpenClaw 发布 v2026.3.7 更新，通过引入可插拔上下文引擎和无损记忆插件，显著提升了 AI Agent 在长对话中的任务执行稳定性。",
+  "oneSentenceSummary": "OpenClaw 发布 v2026.3.7 更新，通过引入可插拔上下文引擎和无损记忆插件，显著提升了 AI Agent 在长对话中的任务执行稳定性。",
+  "summary": "本文报道了开源 AI 工具 OpenClaw（龙虾）的重大版本更新。核心亮点在于推出了“可插拔上下文引擎”，该机制通过开放完整的生命周期钩子，允许开发者自定义上下文的压缩、拼接和管理策略，解决了 Agent 在长对话中容易“遗忘”计划或变笨的痛点。文章重点介绍了官方推荐的 lossless-claw 插件，其利用 SQLite 持久化、摘要生成及 DAG 结构实现了理论上的“永不丢失”记忆，并在 OOLONG 基准测试中超越了 Claude Code。此外，更新还涵盖了对 GPT-5.4 和 Gemini Flash 3.1 的支持、Agent 路由系统的强化以及 Docker 部署的工程化优化。",
+  "mainPoints": [
+    {
+      "point": "OpenClaw 推出可插拔上下文引擎，允许开发者通过插件自定义 AI 的记忆和压缩策略。",
+      "explanation": "此次更新开放了完整的生命周期钩子（如 ingest， assemble 等），使插件能深度介入上下文生成的各个阶段，解决了长对话中系统强制压缩导致的信息丢失问题。"
+    },
+    {
+      "point": "官方推荐的 lossless-claw 插件采用无损管理方案，在长文本任务中表现优异。",
+      "explanation": "该插件将旧对话持久化并生成摘要形成有向无环图（DAG），Agent 可通过工具回溯历史原文。在 OOLONG 测试中，其得分随上下文长度增加展现出明显优势。"
+    },
+    {
+      "point": "新版本实现了对 GPT-5.4 和 Gemini Flash 3.1 等前沿大模型的快速适配与工程优化。",
+      "explanation": "除了模型接入，更新还强化了 Agent 路由系统，支持在多平台实现持久化线程绑定，并优化了 Docker 构建流程，为移动端发布和大规模服务器部署做准备。"
+    }
+  ],
+  "keyQuotes": [
+    "你其实不需要一个 Agent 记忆系统，你需要的是不会被重置的上下文。",
+    "插件可以在上下文生成、压缩、拼接以及子 Agent 生命周期管理的各个阶段介入，从而实现完全不同的上下文策略。",
+    "理论上，上下文“永远不会丢失”。",
+    "当你和“龙虾”进行长时间、多轮对话时，它的“记性”会明显变好。",
+    "在测试的所有上下文长度下，lossless-claw 的得分都高于 Claude Code。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "AI Agent",
+    "上下文管理",
+    "LLM",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 86,
+  "wordCount": 1977,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773032520000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-09 05:02:00"
+}
