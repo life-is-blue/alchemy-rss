@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-09 20:06:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-09 22:18:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3379,9 +3379,7 @@
 
 ### [从向量里逆向出原始文本和模型来源](https://mp.weixin.qq.com/s?__biz=MzkyODIxMjczMA==&mid=2247503203&idx=1&sn=94a7df037e479f9de24959bb88e8fe4a)
 
-2026-03-09 08:26:00 | 标签: 向量嵌入, 模型溯源, 文本逆向, 隐私安全, 掩码扩散模型
-
-> 本文介绍了 Jina AI 在向量安全领域的两项突破性研究：模型溯源与文本逆向。研究发现，不同嵌入模型生成的向量具有独特的“数字指纹”，通过位级别分词（Digit-level Tokenization）和仅 80 万参数的小模型，识别准确率高达 87%。更具挑战性的是，利用条件掩码扩散模型（Conditional Masked Diffusion），研究者能从 1024 维向量中还原出 81% 的原始文本 Token。这些发现彻底动摇了“向量即脱敏”的传统认知，揭示了向量数据库中潜在的隐私泄露风险，同时也为模型审计和版本验证提供了全新的技术手段。
+2026-03-09 08:26:00
 
 
 
@@ -29407,11 +29405,11 @@
 
 
 
-### [高中辍学生靠-ChatGPT-自学成才成了-OpenAI-的研究科学家](https://baoyu.io/blog/2026-02-17/gabriel-petersson-openai-dropout)
+### [用-Claude-Code-的-Hook-+-Skill，实现每次提交后自从-commit-提交变更](https://baoyu.io/blog/2026-02-13/claude-code-auto-commit)
 
-2026-02-17T00:00:00.000Z
+2026-02-18T00:00:00.000Z
 
-> Gabriel Petersson 没有高中文凭，没有大学学历，靠 ChatGPT 自学数学和机器学习，成了 OpenAI Sora 团队的研究科学家。他在播客中分享了辍学创业、用 AI 递归学习、绕过招聘流程找工作的完整经历，以及对教育体制的尖锐批评。
+> 写完文章老忘记 git commit？用 Claude Code 的 Stop Hook 拦截未提交变更，配合自定义 Commit Skill 自动分组提交，从此告别手动提交。附完整配置代码。
 
 
 
