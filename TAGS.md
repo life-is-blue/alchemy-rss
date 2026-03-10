@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-10 16:07:59 | [返回首页](/README.md)
+**更新时间**: 2026-03-10 18:12:23 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9509)
+- [AI & 大模型](#ai-llm) (9515)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (706)
 - [DevOps](#devops) (426)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4923)
+- [其他](#other) (4927)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5) - AI 精选
 - [我们如何构建-LangChain-的-GTM-智能体](https://blog.langchain.com/how-we-built-langchains-gtm-agent/) - AI 精选
 - [阿里巴巴通义实验室开源-Mobile-Agent-v3.5：一套真正“多平台可用”的原生-GUI-Agent-基座模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505704&idx=1&sn=1c35976b09438693364779ba2f65e252) - AI 精选
 - [2026，写给-AI-创业者的慷慨、残酷、与迷雾](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649105819&idx=1&sn=a274929f8e170e2354d05c76982af40d) - AI 精选
@@ -41,9 +42,8 @@
 - [中门对狙！Claude-Opus-4.6-和-GPT-5.3-Codex-同时发布，这下真的-AI-春晚了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6) - AI 精选
 - [Claude-Code-创始人再次公开：团队的-10-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247718904&idx=1&sn=7f77ee06ab57fd11bc44ab6f782cd644) - AI 精选
 - [深度解读：OpenClaw-架构及生态](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491455&idx=1&sn=33d58cb6f0d2cd3b9c08c3c84a223e25) - AI 精选
-- [智能体编程中的-80%-问题](https://addyo.substack.com/p/the-80-problem-in-agentic-coding) - AI 精选
 
-- [查看全部 9509 篇...](/details/tags/ai-llm.md)
+- [查看全部 9515 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -185,6 +185,6 @@
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 - [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 
-- [查看全部 4923 篇...](/details/tags/other.md)
+- [查看全部 4927 篇...](/details/tags/other.md)
 
 

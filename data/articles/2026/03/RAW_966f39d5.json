@@ -1,0 +1,53 @@
+{
+  "id": "RAW_966f39d5",
+  "title": "成功的企业风险投资（CVC）基金有何不同之处",
+  "url": "https://hbr.org/2026/03/what-successful-corporate-venture-capital-funds-do-differently",
+  "date": "2026-03-09 12:25:09",
+  "author": "Ezra Carlson, Mehdi Safavi, Nicolas Sauvage",
+  "siteName": "HBR.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p class=\"Paragraph_text__yGFNO\" data-first-paragraph=\"true\">The launch of a new corporate venture capital (CVC) fund usually comes with big promises. The CEO often announces it on an earnings call and perhaps a press release is issued. But then, a few years later, updates slow, teams are folded into M&amp;A or strategy, and the CVC’s name quietly vanishes from the organizational chart. This pattern often repeats even when the venture unit has delivered credible investment results.</p>\n </body>\n</html>",
+  "aiSummary": "本文分析了为何许多企业风险投资（CVC）基金在财务回报良好的情况下依然失败，并指出了使成功基金能够实现长期组织生存的战略实践。",
+  "oneSentenceSummary": "本文分析了为何许多企业风险投资（CVC）基金在财务回报良好的情况下依然失败，并指出了使成功基金能够实现长期组织生存的战略实践。",
+  "summary": "本文探讨了企业风险投资（CVC）反复出现的“繁荣与萧条”周期。文章观察到一个普遍现象：CVC 部门在成立时大张旗鼓，却在几年后被悄然解散或并入并购（M&A）部门。至关重要的一点是，作者指出，即使在基金取得可靠投资业绩的情况下，这种失败也经常发生。讨论的核心聚焦于成功 CVC 的独特之处：它们超越了单纯的财务投机，与母公司建立了深度的战略对齐，在经济周期中保持了一贯的高管支持，并建立了清晰的结构边界，在保护风险投资部门独特文化的同时，确保其洞察力能惠及整个组织。",
+  "mainPoints": [
+    {
+      "point": "CVC 的失败通常是组织失调的结果，而非财务表现不佳或投资选择错误。",
+      "explanation": "许多基金被关闭或并入其他部门，并不是因为亏损，而是因为母公司缺乏将初创企业的创新整合到其核心业务战略中的结构性框架。"
+    },
+    {
+      "point": "成功的基金确立了双重使命，在战略价值与严谨的财务纪律之间取得平衡，以确保长期生存能力。",
+      "explanation": "通过同时追求母公司的战略洞察和具有竞争力的财务回报，成功的 CVC 无论是在公司扩张期还是在成本削减或重组阶段，都能证明其存在的合理性。"
+    },
+    {
+      "point": "保持长期的高管支持对于应对企业领导层变动和市场环境的必然变化至关重要。",
+      "explanation": "最具韧性的 CVC 部门能够获得超越单一 CEO 任期的承诺，确保风险投资战略始终是公司长期创新路线图的核心组成部分。"
+    }
+  ],
+  "keyQuotes": [
+    "即使在风险投资部门交付了可靠的投资结果时，这种模式也经常重复出现。",
+    "一个新的企业风险投资（CVC）基金的启动通常伴随着宏大的承诺……然而几年后，更新速度变慢，名字也悄然消失。",
+    "成功的 CVC 通过弥合初创企业生态系统与母公司核心业务之间的鸿沟，使自己脱颖而出。"
+  ],
+  "tags": [
+    "企业风险投资",
+    "创新战略",
+    "公司治理",
+    "战略对齐",
+    "投资管理"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 70,
+  "domain": "hbr.org",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_2c9c43",
+  "sourceName": "HBR.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773059109000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 12:25:09"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "RAW_4cf232bc",
+  "title": "Anthropic 推出通过 Claude Code 进行的代码审查，利用先进的智能体多步推理循环自动化复杂的安全研究",
+  "url": "https://www.marktechpost.com/2026/03/09/anthropic-introduces-code-review-via-claude-code-to-automate-complex-security-research-using-advanced-agentic-multi-step-reasoning-loops/",
+  "date": "2026-03-09 20:28:44",
+  "author": "Maxime Mommessin",
+  "siteName": "MarkTechPost",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In the frantic arms race of ‘AI for code,’ we’ve moved past the era of the glorified autocomplete. Today, Anthropic is double-downing on a more ambitious vision: the AI agent that doesn’t just write your boilerplate, but actually <em>understands</em> why your Kubernetes cluster is screaming at 3:00 AM.</p>\n  <p>With the recent launch of <strong>Claude Code</strong> and its high-octane <strong>Code Review</strong> capabilities, Anthropic is signaling a shift from ‘chatbot’ to ‘collaborator.’ For devs drowning in legacy technical debt, the message is clear: the bar for ‘good enough’ code just got a lot higher.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-the-agentic-leap-beyond-static-analysis\"><strong>The Agentic Leap: Beyond Static Analysis</strong></h3>\n  <p>The main idea of this update is the transition to <strong>agentic coding</strong>. Unlike traditional Static Analysis Security Testing (SAST) tools that rely on rigid pattern matching, Claude Code operates as a stateful agent. According to Anthropic’s latest internal benchmarks, the model can now chain together an average of <strong>21.2 independent tool calls</strong>—such as editing files, running terminal commands, and navigating directories—without needing human intervention. That’s a 116% increase in autonomy over the last six months.</p>\n  <p>This means Claude isn’t just looking at a single file; it’s reasoning across your entire repository. It uses a specialized <strong>CLAUDE.md</strong> file—a ‘manual’ for the AI—to understand project-specific conventions, data pipeline dependencies, and infrastructure quirks.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-inside-the-code-review-engine\"><strong>Inside the ‘Code Review’ Engine</strong></h3>\n  <p>When you run a review via Claude Code, the model isn’t just checking for missing semicolons. It’s performing what Anthropic calls <strong>frontier cybersecurity reasoning</strong>.</p>\n  <p>Take the recent pilot with Mozilla’s Firefox. In just two weeks, <strong>Claude Opus 4.6</strong> scanned the browser’s massive codebase and surfaced 22 vulnerabilities. More impressively, 14 of those were classified as <strong>high-severity</strong>. To put that in perspective: the entire global security research community typically reports about 70 such bugs for Firefox in a full year.</p>\n  <p><strong>How does it do it?</strong></p>\n  <ol start=\"1\" class=\"wp-block-list\">\n   <li><strong>Logical Reasoning over Pattern Matching:</strong> Instead of looking for a ‘known bad’ string, Claude reasons about algorithms. In the CGIF library, it discovered a heap buffer overflow by analyzing the LZW compression logic—a bug that had evaded traditional coverage-guided fuzzing for decades.</li>\n   <li><strong>Multi-Stage Verification:</strong> Every finding goes through a self-correction loop. Claude attempts to ‘disprove’ its own vulnerability report to filter out the false positives that typically plague AI-generated reviews.</li>\n   <li><strong>Remediation Directives:</strong> It doesn’t just point at the fire; it hands you the extinguisher. The tool suggests targeted patches that engineers can approve or iterate on in real-time within the CLI.</li>\n  </ol>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <iframe class=\"youtube-player\" width=\"696\" height=\"392\" src=\"https://www.youtube.com/embed/RKsADl0ZC3Y?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent\" allowfullscreen=\"true\" style=\"border:0;\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox\"></iframe>\n   </div>\n  </figure>\n  <h3 class=\"wp-block-heading\" id=\"h-the-technical-stack-mcp-and-auto-accept-mode\"><strong>The Technical Stack: MCP and ‘Auto-Accept’ Mode</strong></h3>\n  <p>Anthropic is pushing the <strong>Model Context Protocol (MCP)</strong> as the standard for how these agents interact with your data. By using MCP servers instead of raw CLI access for sensitive databases (like BigQuery), dev teams can maintain granular security logging while letting Claude perform complex data migrations or infrastructure debugging.</p>\n  <p>One of the key important features making waves is <strong>Auto-Accept Mode</strong> (triggered by <code>shift+tab</code>). This allows devs to set up autonomous loops where Claude writes code, runs tests, and iterates until the tests pass. It’s high-velocity ‘vibe coding’ for the enterprise, though Anthropic warns that humans should still be the final gatekeepers for critical business logic.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-key-takeaways\"><strong>Key Takeaways</strong></h3>\n  <ul class=\"wp-block-list\">\n   <li><strong>The Shift to Agentic Autonomy:</strong> We have moved beyond simple code completion to <strong>agentic coding</strong>. Claude Code can now chain an average of <strong>21.2 independent tool calls</strong> (editing files, running terminal commands, and navigating directories) without human intervention—a <strong>116% increase</strong> in autonomy over the last six months.</li>\n   <li><strong>Superior Vulnerability Detection:</strong> In a landmark pilot with Mozilla, Claude surfaced <strong>22 unique vulnerabilities in Firefox</strong> in just two weeks. <strong>14 were high-severity</strong>, representing nearly <strong>20%</strong> of the high-severity bugs typically found by the entire global research community in a full year.</li>\n   <li><strong>Logical Reasoning vs. Pattern Matching:</strong> Unlike traditional SAST tools that look for ‘known bad’ code strings, Claude uses <strong>frontier cybersecurity reasoning</strong>. It identified a decades-old heap buffer overflow in the <strong>CGIF library</strong> by logically analyzing <strong>LZW compression algorithms</strong>, a feat that had previously evaded expert human review and automated fuzzing.</li>\n   <li><strong>Standardized Context with CLAUDE.md and MCP:</strong> Professional integration now relies on the <strong>CLAUDE.md</strong> file to provide the AI with project-specific ‘manuals’ and the <strong>Model Context Protocol (MCP)</strong> to allow the agent to interact securely with external data sources like BigQuery or Snowflake without compromising sensitive credentials.</li>\n   <li><strong>The ‘Auto-Accept’ Workflow:</strong> For high-velocity development, the <strong>Shift+Tab</strong> shortcut allows devs to toggle into <strong>Auto-Accept Mode</strong>. This enables an autonomous loop where the agent writes code, runs tests, and iterates until the task is solved, transforming the developer’s role from a ‘writer’ to an ‘editor/director.’</li>\n  </ul>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p id=\"p-rc_d48437497689081f-76\">Check out&nbsp;<strong><a href=\"https://claude.com/blog/code-review\" target=\"_blank\" rel=\"noreferrer noopener\">Technical details</a>.&nbsp;</strong>Also,&nbsp;feel free to follow us on&nbsp;<strong><a href=\"https://x.com/intent/follow?screen_name=marktechpost\" target=\"_blank\" rel=\"noreferrer noopener\"><mark>Twitter</mark></a></strong>&nbsp;and don’t forget to join our&nbsp;<strong><a href=\"https://www.reddit.com/r/machinelearningnews/\" target=\"_blank\" rel=\"noreferrer noopener\">120k+ ML SubReddit</a></strong>&nbsp;and Subscribe to&nbsp;<strong><a href=\"https://www.aidevsignals.com/\" target=\"_blank\" rel=\"noreferrer noopener\">our Newsletter</a></strong>. Wait! are you on telegram?&nbsp;<strong><a href=\"https://t.me/machinelearningresearchnews\" target=\"_blank\" rel=\"noreferrer noopener\">now you can join us on telegram as well.</a></strong></p>\n  <p>The post <a href=\"https://www.marktechpost.com/2026/03/09/anthropic-introduces-code-review-via-claude-code-to-automate-complex-security-research-using-advanced-agentic-multi-step-reasoning-loops/\">Anthropic Introduces Code Review via Claude Code to Automate Complex Security Research Using Advanced Agentic Multi-Step Reasoning Loops</a> appeared first on <a href=\"https://www.marktechpost.com\">MarkTechPost</a>.</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 的 Claude Code 引入了一种智能体多步推理工作流，能够以高度自主的方式自动化复杂的安全研究和全库代码审查。",
+  "oneSentenceSummary": "Anthropic 的 Claude Code 引入了一种智能体多步推理工作流，能够以高度自主的方式自动化复杂的安全研究和全库代码审查。",
+  "summary": "本文详细介绍了 Anthropic 如何通过 Claude Code 从简单的代码补全转向“智能体编码”。文章强调了该模型执行自主工具链调用的能力——平均 21.2 次独立调用——以进行代码库导航、文件编辑和终端命令执行。核心焦点是其“代码审查”引擎，该引擎利用前沿的网络安全推理而非静态模式匹配。这一能力在 Mozilla Firefox 的试点项目中得到了验证，在短短两周内识别出 22 个漏洞，其中包括 14 个高危漏洞。其技术基础依赖于用于安全数据访问的模型上下文协议 (MCP) 和用于项目特定上下文的“CLAUDE.md”文件，从而实现高速的“自动接受”开发循环，AI 会不断迭代直至通过测试。",
+  "mainPoints": [
+    {
+      "point": "从静态自动补全到有状态智能体编码的转变提升了开发者的自主性。",
+      "explanation": "Claude Code 现在平均可以链式调用 21.2 次独立工具（如文件编辑和终端执行），在复杂多步任务中的自主性提升了 116%。"
+    },
+    {
+      "point": "前沿网络安全推理的表现优于传统的模式匹配安全工具。",
+      "explanation": "通过分析逻辑算法而非“已知恶意”字符串，该模型在 CGIF 库中识别出了一个存在数十年的堆缓冲区溢出漏洞，而该漏洞此前曾避开了人类专家审查和自动化模糊测试。"
+    },
+    {
+      "point": "像 MCP 和 CLAUDE.md 这样的标准化上下文协议对于企业级 AI 集成至关重要。",
+      "explanation": "这些工具允许 AI 智能体理解项目特定的规范，并在不损害凭据或基础设施安全的情况下，安全地与 BigQuery 等敏感外部数据源交互。"
+    },
+    {
+      "point": "“自动接受”模式将开发者的角色转变为编辑或导演。",
+      "explanation": "通过启用智能体编写代码并迭代直至通过测试的自主循环，开发者从手动编写转向高层监督和战略决策。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude Code 作为一个有状态的智能体运行……它现在可以链式调用平均 21.2 次独立工具——例如编辑文件、运行终端命令和导航目录——而无需人工干预。",
+    "该模型不仅仅是在检查缺失的分号。它正在执行 Anthropic 所称的前沿网络安全推理。",
+    "它通过分析 LZW 压缩逻辑发现了一个堆缓冲区溢出漏洞——这个漏洞几十年来一直避开了传统的覆盖引导模糊测试。",
+    "这实现了一个自主循环，智能体在其中编写代码、运行测试并不断迭代直至任务解决，将开发者的角色从“作者”转变为“编辑/导演”。",
+    "Claude 尝试“反驳”自己的漏洞报告，以过滤掉通常困扰 AI 生成审查的误报。"
+  ],
+  "tags": [
+    "智能体 AI",
+    "Claude Code",
+    "安全研究",
+    "软件工程",
+    "模型上下文协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 807,
+  "domain": "marktechpost.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_55f865ec",
+  "sourceName": "MarkTechPost",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773088124000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 20:28:44"
+}
