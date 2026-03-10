@@ -1,0 +1,53 @@
+{
+  "id": "RAW_09f39fc0",
+  "title": "为什么 B2B UX 功能会失败",
+  "url": "https://uxdesign.cc/why-b2b-ux-features-fail-dfe033c67014?source=rss----138adf9c44c---4",
+  "date": "2026-03-10 11:19:23",
+  "author": "Kai Wong",
+  "siteName": "UX Collective - Medium",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"e\">\n   <div class=\"e\">\n    <span class=\"e\"></span>\n    <section>\n     <div>\n      <div>\n       <div class=\"speechify-ignore e\">\n        <div class=\"v cf\">\n         <div class=\"cm bd in io ip iq\">\n          <div class=\"cu v fy\">\n           <div>\n            <div class=\"bi\" role=\"tooltip\">\n             <div tabindex=\"-1\" class=\"ba\">\n              <div class=\"jb j jc is jd fy ak\">\n               <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16px\" height=\"16px\" fill=\"none\" viewBox=\"0 0 64 64\">\n                <path fill=\"#FFC017\" d=\"m39.637 40.831-5.771 15.871a1.99 1.99 0 0 1-3.732 0l-5.771-15.87a2.02 2.02 0 0 0-1.194-1.195L7.298 33.866a1.99 1.99 0 0 1 0-3.732l15.87-5.771a2.02 2.02 0 0 0 1.195-1.194l5.771-15.871a1.99 1.99 0 0 1 3.732 0l5.771 15.87a2.02 2.02 0 0 0 1.194 1.195l15.871 5.771a1.99 1.99 0 0 1 0 3.732l-15.87 5.771a2.02 2.02 0 0 0-1.195 1.194\"></path>\n               </svg>\n              </div>\n             </div>\n            </div>\n           </div>\n          </div>\n         </div>\n        </div>\n       </div>\n      </div>\n      <div class=\"ih ig je jf jg\">\n       <div class=\"v cf\">\n        <div class=\"cm bd in io ip iq\">\n         <figure class=\"pc pd pe pf pg ph oz pa paragraph-image\">\n          <figcaption class=\"pn fj po oz pa pp pq bb b bc u dy\">\n           <br>\n          </figcaption>\n         </figure>\n         <p id=\"e1df\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\">Imagine you followed all the right steps, and users still didn’t use the product.</p>\n         <p id=\"62b6\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\">You talked to users. You ran the research. Created prototypes, did user testing and iteration, and shipped a solution you thought might genuinely solve the problem.</p>\n         <p id=\"ca32\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\">But then it launches, and six weeks later, nothing’s changed. When you go back to find out why, you discover the workaround: a word-of-mouth process, an unofficial channel, a habit so ingrained that nobody thought to mention it.</p>\n         <p id=\"bef5\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\">Nobody hid this from you. It just never came up — because you asked about the feature and they answered about it. The workaround was so normal to them it didn’t register as something worth mentioning.</p>\n         <p id=\"04c6\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\">This isn’t a research failure. It’s the question that was never asked:</p>\n         <p id=\"81e4\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\"><strong class=\"pt jk\"><em class=\"qk\">How are users currently seeking help with this?</em></strong></p>\n         <p id=\"1514\" class=\"pw-post-body-paragraph pr ps jj pt b kd pu pv pw kg px py pz hf qa qb qc hi qd qe qf hl qg qh qi qj ih bg\">If you’re working in B2B design, this is one of the most important questions you can make a habit of asking.</p>\n         <h3 id=\"7840\" class=\"ql qm jj bb qn hb qo ec hc hd qp ee he hf qq hg hh hi qr hj hk hl qs hm hn qt bg\">What “Seeking Help” Actually Looks Like in B2B</h3>\n         <p id=\"3bc9\" class=\"pw-post-body-paragraph pr ps jj pt b kd qu pv pw kg qv py pz hf qw qb qc hi qx qe qf hl qy qh qi qj ih bg\">This is a more common problem in B2B environments, because employees don’t choose their tools: they’re required to use them…</p>\n        </div>\n       </div>\n      </div>\n     </div>\n    </section>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文探讨了尽管经过严格研究，B2B 功能为何仍经常失败，指出根深蒂固的“影子工作流”是主要原因，并提出了一个特定的研究问题来揭示它们。",
+  "oneSentenceSummary": "本文探讨了尽管经过严格研究，B2B 功能为何仍经常失败，指出根深蒂固的“影子工作流”是主要原因，并提出了一个特定的研究问题来揭示它们。",
+  "summary": "作者探讨了 B2B 产品开发中一个常见的挫败感：发布了一个经过研究和测试的功能，结果却无人使用。核心问题不在于设计方法的失败，而在于“影子工作流”的存在——这些是非官方的、口耳相传的流程，用户已经将其常态化到视而不见的程度。由于 B2B 用户是被动受众，必须使用指定的工具，他们会开发出基于生存的变通方法来绕过摩擦。为了解决这个问题，作者建议设计师必须超越针对特定功能的问题，转而调查用户目前是如何寻求帮助的，从而揭示新功能实际在与之竞争的真实手动流程。",
+  "mainPoints": [
+    {
+      "point": "B2B 功能经常失败，是因为它们必须与隐形的、根深蒂固的用户变通方法竞争，而标准研究往往无法捕捉到这些方法。",
+      "explanation": "用户开发出的非官方渠道和习惯已经非常常态化，以至于在标准访谈中不会被提及。这些“影子工作流”成为了默认行为，使得新功能感觉像是多余的干扰，而非有益的改进。"
+    },
+    {
+      "point": "系统地询问用户目前如何寻求帮助，是揭示隐藏工作流和非官方流程的关键研究策略。",
+      "explanation": "通过关注寻求帮助的行为，设计师可以识别出用户所依赖的手动差距和“口耳相传”的解决方案。这揭示了任何新功能为了获得实际采用而必须超越的真实基准。"
+    },
+    {
+      "point": "B2B 用户作为被动受众，导致了与 B2C 不同的、独特的、基于生存的工作流模式的发展。",
+      "explanation": "由于员工被迫使用特定的软件，他们在感到沮丧时不会更换产品；相反，他们会建立非官方的变通方法。理解这种“强制”环境对于设计能够真正融入其日常职业生活的功能至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "这种变通方法对他们来说太正常了，以至于他们觉得不值得一提。",
+    "用户目前是如何就此寻求帮助的？",
+    "在 B2B 环境中……员工不选择工具：他们被要求使用这些工具。"
+  ],
+  "tags": [
+    "B2B UX",
+    "用户研究",
+    "产品策略",
+    "用户采用",
+    "工作流设计"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 183,
+  "domain": "uxdesign.cc",
+  "category": "Product_Development",
+  "aiSubCategory": null,
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_ae645f",
+  "sourceName": "UX Collective - Medium",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773141563000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-10 11:19:23"
+}
