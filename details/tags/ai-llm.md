@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-10 18:12:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-10 20:07:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5)
 
-2026-03-09 19:40:58 | 标签: 智能体编程, Claude Code, OpenAI Codex, 软件工程, AI 生产力
-
-> 本文探讨了 AI 辅助软件工程的“拐点”，即 Claude Code 和 OpenAI 的 Codex 等智能体工具正从实验性原型转向主流生产工具。文章强调了显著的采用指标，例如 Claude Code 在 GitHub 提交记录中不断增长的份额，并讨论了 Anthropic 与 OpenAI 之间的竞争格局。重点讨论了 Opus 4.6 的“快速模式”，该模式优先考虑执行速度而非成本，可能将开发者的角色从主要代码编写者转变为 AI 智能体的高级编排者。作者还探讨了自主智能体的实际风险，包括安全漏洞和基础设施危害（如意外擦除数据库），同时强调了早期采用者报告的巨大生产力提升。
+2026-03-09 19:40:58
 
 
 
@@ -10870,9 +10868,7 @@
 
 ### [Anthropic-推出通过-Claude-Code-进行的代码审查，利用先进的智能体多步推理循环自动化复杂的安全研究](https://www.marktechpost.com/2026/03/09/anthropic-introduces-code-review-via-claude-code-to-automate-complex-security-research-using-advanced-agentic-multi-step-reasoning-loops/)
 
-2026-03-09 20:28:44 | 标签: 智能体 AI, Claude Code, 安全研究, 软件工程, 模型上下文协议
-
-> 本文详细介绍了 Anthropic 如何通过 Claude Code 从简单的代码补全转向“智能体编码”。文章强调了该模型执行自主工具链调用的能力——平均 21.2 次独立调用——以进行代码库导航、文件编辑和终端命令执行。核心焦点是其“代码审查”引擎，该引擎利用前沿的网络安全推理而非静态模式匹配。这一能力在 Mozilla Firefox 的试点项目中得到了验证，在短短两周内识别出 22 个漏洞，其中包括 14 个高危漏洞。其技术基础依赖于用于安全数据访问的模型上下文协议 (MCP) 和用于项目特定上下文的“CLAUDE.md”文件，从而实现高速的“自动接受”开发循环，AI 会不断迭代直至通过...
+2026-03-09 20:28:44
 
 
 
@@ -10890,9 +10886,7 @@
 
 ### [Anthropic-就供应链风险认定提起诉讼-—-LessWrong](https://www.lesswrong.com/posts/BvYaNGKG7PDGYMLtS/anthropic-sues-over-supply-chain-risk-designation)
 
-2026-03-09 18:01:02 | 标签: AI 安全, AI 治理, 法律纠纷, 国家安全, 致命自主武器
-
-> 本文介绍了一份详细的法律诉状（设定在 2026 年的背景下），Anthropic 在其中起诉了战争部及多个联邦机构。冲突源于 Anthropic 拒绝放弃其基于安全的限制，特别是禁止将其 AI 模型用于致命自主战争和对美国人的大规模监视。作为回应，行政部门据称将 Anthropic 认定为“国家安全供应链风险”，并下令在政府范围内进行抵制。Anthropic 认为这些行为构成了对受保护的企业言论的非法报复，违反了《行政程序法》(APA)，并超出了行政权限。该文件凸显了私人 AI 安全框架与国家对前沿模型不受限制的军事应用需求之间日益增长的摩擦。
+2026-03-09 18:01:02
 
 
 
@@ -30446,9 +30440,7 @@
 
 ### [上下文让数据更强大（所以别再破坏它了）（xpost）](https://charity.wtf/2026/03/09/your-data-is-made-powerful-by-context-so-stop-destroying-it-already-xpost/)
 
-2026-03-09 22:10:14 | 标签: Observability, AI-SRE, Telemetry, High Cardinality, Software Architecture
-
-> 本文批判了行业标准的“三大支柱”（日志、指标、追踪）可观测性模型，认为它不可修复地割裂了数据，并破坏了深度调试所需的关联上下文。Charity Majors 证明，随着上下文属性的增加，数据的威力呈组合式而非线性增长。随着行业向智能体开发（AI-SRE）转型，作者认为这些智能体需要具有完整“关联缝隙”的原始、高基数遥测数据来验证变更。与利用直觉弥补数据鸿沟的人类不同，AI 智能体需要精准的工具来识别嘈杂、大规模生产环境中的微小异常。最终，文章倡导转向结构化的宽事件，以支持由 AI 驱动的 10 倍到 1000 倍的变更率增长。
+2026-03-09 22:10:14
 
 
 
@@ -30460,9 +30452,7 @@
 
 ### [我用-5-个-Shell-脚本实现了-80%-的代码审查自动化](https://hackernoon.com/i-automated-80percent-of-my-code-review-with-5-shell-scripts?source=rss)
 
-2026-03-09 18:04:42 | 标签: Claude Code, AI 智能体, Shell 脚本, DevOps, 自动化
-
-> 作者分享了一套经过实战检验的 AI 编程智能体（特别是 Claude Code）治理工作流，将手动监督转变为自动化的事件驱动系统。通过利用 “PreToolUse” 和 “PostToolUse” 钩子，作者实现了五个核心 Shell 脚本，用于处理灾难预防、自动格式化、密钥检测、分支保护和审计日志。这种方法将 AI 智能体视为需要程序化护栏的初级开发人员，显著降低了破坏性命令、凭据泄露和代码未格式化的风险，同时节省了数小时的手动审查时间。
+2026-03-09 18:04:42
 
 
 
@@ -42908,9 +42898,7 @@ http://antirez.com/news/162
 
 ### [NVIDIA-AI-工程师：全球规模的智能体推理与“光速”文化-——-Nader-Khalil-Brev，-Kyle-Kranen-Dynamo](https://www.latent.space/p/nvidia-brev-dynamo)
 
-2026-03-10 06:40:22 | 标签: NVIDIA Dynamo, GPU 推理, 开发者体验, AI 智能体, SOL 文化
-
-> 本文深入探讨了与 NVIDIA 工程负责人 Nader Khalil 和 Kyle Kranen 的对话。内容涵盖了 NVIDIA 开发者体验的演进，特别是对 Brev 的收购如何简化了 GPU 配置以及对 DGX Spark 等本地硬件的远程管理。文章重点介绍了 NVIDIA Dynamo，这是一个数据中心级的推理框架，通过预填充/解码解耦（prefill/decode disaggregation）和基于 Kubernetes 的编排技术，优化了成本、延迟与质量之间的权衡。讨论还强调了黄仁勋的“光速”（SOL）哲学——这是一种要求识别理论物理极限并倒推以产生紧迫感的文化指令。最后，文章探讨...
+2026-03-10 06:40:22
 
 
 
