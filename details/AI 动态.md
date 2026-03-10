@@ -1,15 +1,21 @@
-> **更新时间**: 2026-03-10 10:53:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-10 16:07:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Harness-工程：AI-时代的控制论与软件工程演进](https://x.com/dotey/status/2031231856071372830)
+
+2026-03-10 04:53:07 | 标签: Harness Engineering, OpenAI, 控制论, AI Agent, 软件工程
+
+> 宝玉通过回顾瓦特调速器和 Kubernetes 的历史，阐述了 OpenAI 提出的“Harness 工程”的本质——控制论。他指出，大语言模型改变了代码库的感知与执行端，使得在架构层面闭合反馈回路成为可能。文章强调，在 AI Agent 时代，工程师的核心任务是外化知识、编写机器可读的架构约束和测试套件。未来的核心竞争力在于“评判能力”而非“实现能力”，即定义正确性并设计环境让 AI 智能体在约束下高效工作。
+
+
+
 ### [Cognition-发布-Devin-Review：一款免费的-AI-驱动-PR-审查工具](https://x.com/cognition/status/2031139257000075675)
 
-2026-03-09 22:45:10 | 标签: Devin Review, AI 软件工程, Pull Request, 代码审查, Cognition
-
-> Devin AI 软件工程师的创造者 Cognition 发布了 “Devin Review”，这是一款专为自动化和增强 Pull Request (PR) 审查流程而设计的专业工具。该工具提供自动 Bug 修复 (Autofix)、智能 Diff 整理、复制/移动检测，以及能够完全感知整个代码库的聊天界面。它被定位为现有付费服务的免费替代方案，只需在任何 PR URL 中将 “github” 替换为 “devinreview” 即可启用。
+2026-03-09 22:45:10
 
 
 
@@ -33,17 +39,13 @@
 
 ### [Runway-发布-Runway-Characters：打造实时智能数字人](https://x.com/runwayml/status/2031028120971571687)
 
-2026-03-09 15:23:33 | 标签: Runway, AI 数字人, Runway API, 数字人, 生成式 AI
-
-> Runway 宣布推出新产品线“Runway Characters”，旨在通过实时智能数字人将数字界面转化为对话式体验。这些数字人具有极高的灵活性，支持风格、指令的深度自定义，并能嵌入特定的知识库。开发者可以通过 Runway API 将这些交互式 AI 角色直接集成到各类应用、网站和服务中。
+2026-03-09 15:23:33
 
 
 
 ### [微软宣布为-Microsoft-365-推出-Copilot-Cowork](https://x.com/satyanadella/status/2030992877665583440)
 
-2026-03-09 13:03:30 | 标签: Microsoft 365, Copilot Cowork, AI 智能体, 生产力, 企业级 AI
-
-> 微软首席执行官萨蒂亚·纳德拉宣布推出 “Copilot Cowork”，这是 Microsoft 365 生态系统的一项重大进展。该功能超越了简单的对话交互，允许 AI 接收用户请求、制定多步计划，并跨各种 M365 应用和文件执行。至关重要的一点是，它在 M365 现有的安全和治理框架内运行，并利用用户的特定工作数据来确保输出结果准确且相关。
+2026-03-09 13:03:30
 
 
 
