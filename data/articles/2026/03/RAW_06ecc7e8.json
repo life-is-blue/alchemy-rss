@@ -1,0 +1,58 @@
+{
+  "id": "RAW_06ecc7e8",
+  "title": "Pinterest 基于 CDC 的摄取系统将数据库延迟从 24 小时缩短至 15 分钟",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277749&idx=4&sn=04687a0ecfce80024e4634d91c551c91",
+  "date": "2026-03-10 05:30:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Pinterest 推出了新一代数据库摄取框架，旨在突破传统批处理系统的局限性，提升实时数据的可用性。旧有的基础设施依赖于多条独立维护的数据管道和全表批处理任务，导致延迟高、运维复杂且资源利用率低下。包括数据分析、机器学习和产品功能在内的关键应用场景亟需更快、更可靠的数据访问能力。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">传统系统面临着几个关键的挑战。数据延迟经常超过 24 小时，拖慢了分析和机器学习工作流程。许多表每日的数据变化量不足 5%，但全表批处理会重复处理未更改的记录，浪费计算和存储资源。此外，传统系统未提供对行级删除的原生支持，管道之间的操作碎片化导致数据质量不一致且维护开销高。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">正如 Pinterest 的一位工程师所强调的那样：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">基于 Change Data Capture（Debezium/TiCDC）、Kafka、Flink、Spark 和 Iceberg 构建的统一数据库摄取框架仅处理有变化的记录，在几分钟内（而不是几小时或几天）就可以提供对在线数据库更改的访问，显著节省了基础设施成本。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该框架是一个配置驱动的通用框架，支持 MySQL、TiDB&nbsp;和 KVStore，便于快速部署，集成了监控且提供至少有一次的送达保证。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503794094\" data-ratio=\"0.4486842105263158\" style=\"width: 100%;\" data-type=\"png\" data-w=\"1520\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=324f592a&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FhLLZnAbUwNgiaAxhHIG62nS7vCRU81rTYMQe4ZWoIS6gkKegWtm53ibrye1oE5RTjYRic7CVzklLW1iaJwmSfVLgf2wmWiaKnO7yAibsQWlSFyF38%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">下一代数据库摄取架构概述（图片来源：</span><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Pinterest 博客文章</span><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该架构将 CDC 表与基表分开。作为只追加账本，CDC 表记录每个变更事件的延迟通常低于五分钟。基表维护完整的历史快照，每 15 分钟至 1 小时通过 Spark&nbsp;Merge Into&nbsp;操作进行更新。Iceberg 的合并操作提供两种更新策略：写时复制（COW）和读时合并（MOR）。写时复制策略在更新时重写整个数据文件，增加存储和计算开销。读时合并策略将变更写入独立的文件并在读取时应用，从而降低写入放大效应。经过评估，Pinterest 最终采用了读时合并策略，因为在多数工作负载中，写时复制产生的存储成本远超它所带来的收益。该方案既支持增量更新，又使基础设施成本在 PB 级数据规模下仍然可控。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Spark 作业首先对 CDC 表中的最新更改去重，然后在基表上应用更新或删除。历史数据最初通过引导管道加载，后续维护作业负责处理压缩和快照过期。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该框架的优化包括：使用 Iceberg 分桶通过主键哈希对基表进行分区，允许 Spark 并行化 upsert 操作，以及减少每次操作扫描的数据量。该框架还通过指示 Spark 按分区分布写入来解决小文件问题，减少了每个任务多个小文件造成的开销。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">测量结果包括将数据可用性延迟从超过 24 小时降低到低至 15 分钟，避免不必要的全表操作，仅处理每天变化的 5% 的记录，降低基础设施成本。该系统可以处理 PB 级规模的数据，跨数千个管道，同时支持增量更新和删除。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Pinterest 基于 CDC 的摄取框架提供了对数据库更改的实时访问，其中，Iceberg 表存储在 AWS S3 上，Flink-Spark 处理流和批处理工作负载。未来的改进将集中在自动化模式演变上，如何安全地将上游更改传播到下游，增强大规模管道的可靠性和可维护性。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/02/pinterest-cdc-db-ingestion/\" target=\"_blank\">https://www.infoq.com/news/2026/02/pinterest-cdc-db-ingestion/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Pinterest 通过构建基于 CDC 和 Apache Iceberg 的统一摄取框架，将数据延迟从 24 小时缩短至 15 分钟，并显著降低了 PB 级规模下的计算成本。",
+  "oneSentenceSummary": "Pinterest 通过构建基于 CDC 和 Apache Iceberg 的统一摄取框架，将数据延迟从 24 小时缩短至 15 分钟，并显著降低了 PB 级规模下的计算成本。",
+  "summary": "本文详细介绍了 Pinterest 如何通过架构演进解决传统全表批处理系统的高延迟和资源浪费问题。新架构利用 Debezium/TiCDC 捕获数据库变更，结合 Kafka、Flink 和 Spark 处理流批任务，并最终落地到 Apache Iceberg 数据湖。核心改进在于将 CDC 增量表与基表分离，并采用了 Iceberg 的“读时合并（MOR）”策略，有效平衡了写入放大与存储成本。此外，通过主键哈希分桶和分区分布写入等优化手段，解决了小文件和并行化挑战，实现了 PB 级数据的高效增量更新与删除。",
+  "mainPoints": [
+    {
+      "point": "从全表批处理转向基于 CDC 的增量处理模式。",
+      "explanation": "传统系统每日重复处理 95% 未更改的记录，新框架仅处理变更数据，大幅提升了资源利用率并降低了基础设施成本。"
+    },
+    {
+      "point": "在 Iceberg 存储层采用读时合并（MOR）更新策略。",
+      "explanation": "经过对比评估，MOR 策略在处理高频增量更新时比写时复制（COW）更具成本优势，有效控制了 PB 级规模下的存储开销。"
+    },
+    {
+      "point": "通过主键哈希分桶和分区分布写入优化 Spark 性能。",
+      "explanation": "利用 Iceberg 分桶实现 upsert 操作的并行化，并指示 Spark 按分区分布写入，解决了大数据处理中常见的“小文件”性能瓶颈。"
+    },
+    {
+      "point": "架构上实现 CDC 账本表与基表快照的逻辑分离。",
+      "explanation": "CDC 表作为只追加账本提供分钟级变更追踪，基表通过定期 Merge 维护完整快照，兼顾了数据的实时性与查询的完整性。"
+    }
+  ],
+  "keyQuotes": [
+    "基于 Change Data Capture 建立的统一框架仅处理有变化的记录，在几分钟内就可以提供对在线数据库更改的访问，显著节省了基础设施成本。",
+    "经过评估，Pinterest 最终采用了读时合并策略，因为在多数工作负载中，写时复制产生的存储成本远超它所带来的收益。",
+    "该架构将 CDC 表与基表分开。作为只追加账本，CDC 表记录每个变更事件的延迟通常低于五分钟。",
+    "测量结果包括将数据可用性延迟从超过 24 小时降低到低至 15 分钟，避免不必要的全表操作，仅处理每天变化的 5% 的记录。"
+  ],
+  "tags": [
+    "CDC",
+    "Apache Iceberg",
+    "数据工程",
+    "数据架构",
+    "Spark"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 83,
+  "wordCount": 1099,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773120600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-10 05:30:00"
+}

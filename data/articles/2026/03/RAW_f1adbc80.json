@@ -1,0 +1,63 @@
+{
+  "id": "RAW_f1adbc80",
+  "title": "给龙虾定 MBTI、发工牌，还让龙虾偷技能…打工人得适应新环境了",
+  "url": "https://www.qbitai.com/2026/03/385771.html",
+  "date": "2026-03-10 08:26:17",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p data-track=\"85\">金磊 发自 凹非寺</p>\n   <p data-track=\"86\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">要问这两天AI圈在比什么，毋庸置疑，就是谁家<strong>养龙虾又便宜又方便</strong>：</p>\n  <p data-track=\"3\">智谱刚刚发了个澳龙，把在本地部署满血龙虾这件事的门槛打下去；</p>\n  <p data-track=\"4\">腾讯也发布自家的小龙虾，也是最快1分就能搞定部署这件事；</p>\n  <p data-track=\"5\">壕是都非常壕，但好，到底好不好？</p>\n  <p data-track=\"6\">巧了，这两天刚好有一群极客和开发者，就对龙虾能用来干什么、干到什么程度，做了些有趣的实测。</p>\n  <p data-track=\"7\">例如下面这个可可爱爱的<strong>小马</strong>，就是免费龙虾的杰作：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_7b1c03111c4e28d32207a15fbd11cc22.gif\" data-src=\"https://image.jido.dev/20260310093315_7b1c03111c4e28d32207a15fbd11cc22.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△创作者：徐帆</p>\n  </div>\n  <p data-track=\"10\">不是说龙虾造了个硬件啊，而是这个龙虾的能力已经深度嵌入到了这个小马里面。</p>\n  <p data-track=\"11\">在它的身体里有一个语音识别的小芯片，我们可以通过说话的方式，让赛博小马在电脑上打开网页、生成视频，甚至自动创建文件夹。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_cb1e402e0bf8d92bc8be9b8da643bae6.gif\" data-src=\"https://image.jido.dev/20260310093315_cb1e402e0bf8d92bc8be9b8da643bae6.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"12\">这么个能看、能聊天，还能帮你干活儿的赛博宠物要是放你工位旁，那简直不要太卡哇伊。</p>\n  <p data-track=\"13\">然后还有创作者们一起做了给龙虾搞了<strong>线上办公室</strong>：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093316_207c40b53057f9295a21c4985c9107f1.gif\" data-src=\"https://image.jido.dev/20260310093316_207c40b53057f9295a21c4985c9107f1.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△创作者：海辛 &amp; Simon阿文</p>\n  </div>\n  <p data-track=\"16\">如果说过去我们用AI，就像是往一个黑盒子里塞需求，那这个项目就是把黑盒子砸碎。</p>\n  <p data-track=\"17\">他们为龙虾打造了一套极具游戏感的RPG可视化面板。</p>\n  <p data-track=\"18\">你可以直观地看到你的AI此时此刻到底在干嘛——是在休息、在干活、在同步数据，还是在苦逼地修复Bug。</p>\n  <p data-track=\"19\">这只虾甚至还能搬家、探索新地图，根据学到的新技能自动生成独特的技能树地图，还能联机共享，学习别的龙虾的技能点。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093316_d2e6a27cbc0bf5aea8c88dff6b1af6a1.gif\" data-src=\"https://image.jido.dev/20260310093316_d2e6a27cbc0bf5aea8c88dff6b1af6a1.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"20\">不难看出，这个龙虾在上面两个有趣的任务上的表现，不说“夯”，但也起码“人上人”的level。</p>\n  <p data-track=\"21\">但如果到真正工作的场景中，这些龙虾是否还能hold住呢？</p>\n  <p data-track=\"23\">刚才我们看的龙虾可以打开网页去生成一个视频。</p>\n  <p data-track=\"24\">但接下来的这只龙虾，可以说是把工作做得更深了一层——<strong>视频自动剪辑</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093316_5a422b78d4366182d86ca268ec913e15.webp\" data-src=\"https://image.jido.dev/20260310093316_5a422b78d4366182d86ca268ec913e15.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△创作者：Gilbert</p>\n  </div>\n  <p data-track=\"27\">现在，你只需要告诉龙虾视频文件的位置，它就能自动进行静音检测（把没说话的废镜头全砍掉）、语音转录、切片剪辑。</p>\n  <p data-track=\"28\">长达9分钟的原视频，直接精剪到了39秒钟！</p>\n  <p data-track=\"29\">甚至面对多段视频素材，这只龙虾也能自动提取最佳段落并完成多素材拼接。</p>\n  <p data-track=\"30\">这对于视频剪辑工作者来说，尤其是那些自己录还有自己剪的博主们，可以说是省去了很大的工作量。</p>\n  <p data-track=\"31\">再如这只胜任<strong>电子班主任</strong>的龙虾：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_79848019e094cacbae88e764ea3e4e1c.webp\" data-src=\"https://image.jido.dev/20260310093315_79848019e094cacbae88e764ea3e4e1c.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△创作者：史皓天</p>\n  </div>\n  <p data-track=\"34\">这只龙虾要解决的，是在考研、考博这种高强度的教辅场景下，一个导师根本带不过来那么多学生的问题。</p>\n  <p data-track=\"35\">它能读取学生的科研设想文档，自动给出细致的评分和修改建议，还能辅导复试、搜索背景资料、评价文献综述。</p>\n  <p data-track=\"36\">结果显示，在一周的时间内，这只龙虾班主任在后台被调用了超过2万次API。它能够清晰地记住每个学生的历史消息和专属档案，真正实现了规模化的个性培养。</p>\n  <p data-track=\"37\">最后，还有一只<strong>擅长搞钱的龙虾</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093316_5b3a7876a4f8ea8aa4ae8bcf696644d5.webp\" data-src=\"https://image.jido.dev/20260310093316_5b3a7876a4f8ea8aa4ae8bcf696644d5.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\">△创作者：Kevin</p>\n  </div>\n  <p data-track=\"40\">这是一个MCN海外营销实战，典型的一个人就是一支军队。</p>\n  <p data-track=\"41\">但在这个任务中，龙虾并不是只有一只，而是一个蜂巢虾群系统：</p>\n  <ul>\n   <li data-track=\"42\">指挥塔：一个指挥虾（别名虾指挥）；</li>\n   <li data-track=\"43\">商业化部门：大约30只员工虾，细分为猎手虾和联络虾；</li>\n   <li data-track=\"44\">内容孵化部门：大约10只员工虾，包括创作虾和质检虾；</li>\n   <li data-track=\"45\">创新小组部门：大约10只潜伏虾；</li>\n   <li data-track=\"46\">效率中台部：1-2只知识虾。</li>\n  </ul>\n  <p data-track=\"47\">为了方便管理，这套系统甚至给不同的虾设定了MBTI性格，增强协同的拟人感。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_b7aefa0d42e850945a61225910841f23.png\" data-src=\"https://image.jido.dev/20260310093315_b7aefa0d42e850945a61225910841f23.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"48\">这套多Agent协同的玩法，可以说是精准击中了传统MCN极度依赖人力堆叠的痛点。</p>\n  <p data-track=\"50\">看完这些案例，如果你还觉得这只是极客们的一场赛博狂欢，那可能就错过了背后正在发生的产业暗流——<strong>一次真实生产环境大考</strong>。</p>\n  <p data-track=\"51\">在过去一两年里，我们对大模型的认知，普遍还停留在单兵作战的Chatbot阶段。</p>\n  <p data-track=\"52\">无论是ChatGPT还是各类网页、APP版AI，它们就像是一个被死死绑在椅子上的智者。你问它问题，它能口若悬河地给你讲宇宙起源、量子力学，甚至帮你写一篇华丽的文章。</p>\n  <p data-track=\"53\">但问题是，它没有手脚，也<strong>没有对你这个人和你所在公司的长期记忆</strong>，更触碰不到你的现实世界。</p>\n  <p data-track=\"54\">而以OpenClaw为代表的Agent框架，本质上就是在做一件事：给这个绑在椅子上的大脑，装上能感知世界的传感器（API），装上能干活的手脚（Skills），以及装上能形成经验的记忆中枢（Memory）。</p>\n  <p data-track=\"55\">这为什么极其重要？</p>\n  <p data-track=\"56\">因为在真实的商业世界里，真正的生产力爆发从来不在于个人效率，而在于团队协作。</p>\n  <p data-track=\"57\">我们去观察任何一家能够高效运转的企业，它的核心是依靠一套成熟的组织架构、信息流转机制和业务SOP。</p>\n  <p data-track=\"58\">当大模型试图真正进入业务线跑起来时，它面临的其实是三个极其现实的组织管理命题：</p>\n  <p data-track=\"59\"><strong>第一，Agent必须理解组织结构与权限。</strong></p>\n  <p data-track=\"60\">如果一个AI只是一个飘在云端的账号，它是极其危险且无用的。在公司里，实习生不能查看核心财务数据，销售不能随意修改研发代码。</p>\n  <p data-track=\"61\">一个成熟的Agent，必须知道“我是谁，我在为谁服务，我能看什么数据”。它需要融入现有的企业权限体系中，否则它连查一份内部文档的资格都没有，更别提自动化审批了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_4c4457c76fb4d509a3d34959ab8566dc.webp\" data-src=\"https://image.jido.dev/20260310093315_4c4457c76fb4d509a3d34959ab8566dc.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"62\"><strong>第二，Agent需要一个稳定的身份。</strong></p>\n  <p data-track=\"63\">打工人进公司第一件事是干什么？领工牌。工牌不仅仅是一个门禁卡，它代表了你在系统中的绝对唯一标识。对于Agent来说也是如此。</p>\n  <p data-track=\"64\">在Kevin的MCN案例和史皓天的电子班主任案例中，我们可以清晰地看到，AI已经上岗“质检员小A”、“博导助理小B”。</p>\n  <p data-track=\"65\">这种稳定的身份，是Agent之间、以及Agent与人之间建立长期信任和协作流的基础。如果没有固定的工牌，多Agent协同就是一纸空谈。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_efa84a728138530847701d1bcc0b29e9.webp\" data-src=\"https://image.jido.dev/20260310093315_efa84a728138530847701d1bcc0b29e9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"66\"><strong>第三，Agent需要分层的记忆。</strong></p>\n  <p data-track=\"67\">Chatbot只有当前对话的短期上下文记忆。但在实际工作中，一个项目可能要跨度三个月，涉及几十个文档、几百条群聊记录。</p>\n  <p data-track=\"68\">Agent必须具备类似人类的记忆分层机制：短期记忆处理当下的指令，长期记忆（通过向量数据库或知识库对接）沉淀过往的项目背景、用户偏好和历史修改记录。只有读懂了昨天的数据，Agent才能做出今天正确的决策。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260310093315_06e3de1010b99983f7f4675a658ca698.webp\" data-src=\"https://image.jido.dev/20260310093315_06e3de1010b99983f7f4675a658ca698.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"69\">当这三个命题被摆在桌面上时，整个AI行业的痛点也就变得无比清晰：</p>\n  <p data-track=\"70\">我们现在最缺的，其实是一个能让Agent安家落户的<strong>合适的工作台</strong>。</p>\n  <p data-track=\"71\">这个工作台必须同时具备三个底层基础设施：通畅的通信能力、结构化的业务数据流、以及丰富的协作上下文。</p>\n  <p data-track=\"72\">如果没有这样的工作台，开发者们就得自己去搭数据库、写权限校验、做前端UI、搞消息推送……这无疑是把“造汽车”变成了“炼钢铁”，直接劝退了99%的业务人员。</p>\n  <p data-track=\"73\">这也就是为什么，当我们回过头去盘点上述那些极其硬核的极客案例时，会发现一个共性现象——他们都把龙虾接入了同一个平台：<strong>飞书</strong>。</p>\n  <p data-track=\"74\">但问题来了，为什么偏偏就非得是飞书啊？</p>\n  <p data-track=\"75\">首先，飞书把云文档、日历、多维表格这些核心办公组件，全部做了API模块化封装。这意味着开发者写Agent的时候，不需要像使唤老旧的Windows API那样反复授权、反复登录。</p>\n  <p data-track=\"76\">并且官方还发布了插件，可以让OpenClaw在飞书里丝滑地读取消息和调用工具。</p>\n  <p data-track=\"77\">其次，也是最关键的一点，飞书本身就承载了企业的通信和业务数据。Agent跑在上面，就像是一个空降的高管，它不需要你手把手地喂数据、导入历史聊天记录。它直接就能“看到”群里正在讨论的项目、日历上即将到来的截止日期、多维表格里需要质检的MCN内容。</p>\n  <p data-track=\"78\">最后，门槛被已经被降低到了普通人都能操作的程度，已经实现了一键就能让你在飞书上养虾的功能，直接把部署的难题砍掉。</p>\n  <p data-track=\"79\">这种普及速度，是任何国外软件都无法比拟的中国式优势。</p>\n  <p data-track=\"80\">也正如我们刚才所说，Agent技术已经走出了实验室的测试环境、走出了代码仓库里的Demo，迎来了走入真实生产环境的全面大考。</p>\n  <p data-track=\"81\">在这场大考中，聪明的开发者们已经得出了答案：</p>\n  <p data-track=\"82\">一个优秀的Agent大脑决定了AI能做什么；但一个开放、包容、数据结构化且天然具备协作基因的底层平台，则决定了这个AI能做得有多好。</p>\n  <p data-track=\"83\">这帮在飞书里养龙虾的先行者们，虽然实际表现还有不尽人意的地方，但或许也算是在提前彩排未来的工作方式。</p>\n  <p data-track=\"84\">不过有一点是肯定的，<strong>打工人的协作空间，正在被重塑。</strong></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章通过“龙虾”（OpenClaw 框架）在飞书上的实战案例，探讨了 AI Agent 从单兵对话工具向具备身份、权限和记忆的组织化协作工具演进的趋势。",
+  "oneSentenceSummary": "文章通过“龙虾”（OpenClaw 框架）在飞书上的实战案例，探讨了 AI Agent 从单兵对话工具向具备身份、权限和记忆的组织化协作工具演进的趋势。",
+  "summary": "本文以近期 AI 圈火爆的 Agent 框架 OpenClaw（昵称“龙虾”）为切入点，介绍了开发者如何利用该框架在飞书平台上构建多样化的应用，涵盖了赛博宠物、视频自动剪辑、电子班主任及多 Agent 协同的 MCN 营销系统。文章深入分析了 Agent 真正进入生产环境必须解决的三个核心命题：理解组织结构与权限、具备稳定的身份标识（工牌）、以及拥有分层的记忆机制。作者认为，Agent 的爆发不仅依赖模型能力，更依赖于如飞书般具备结构化数据和协作基因的底层平台，这标志着 AI 正在从“智者”向“数字员工”转变。",
+  "mainPoints": [
+    {
+      "point": "Agent 正在从简单的对话机器人演变为具备感知和执行能力的生产力工具。",
+      "explanation": "通过 API 接入传感器和执行器，Agent 克服了 Chatbot 缺乏手脚和长期记忆的局限，能够直接触碰并影响现实业务流程。"
+    },
+    {
+      "point": "在商业环境中，Agent 必须理解并融入组织的权限与安全体系。",
+      "explanation": "成熟的 Agent 需要明确自身角色与数据访问边界，确保在企业合规框架内运行，否则无法处理核心业务数据或自动化审批。"
+    },
+    {
+      "point": "稳定的身份标识是多 Agent 协同及人机信任建立的基础设施。",
+      "explanation": "为 Agent 发放“工牌”使其具备唯一标识，是实现长期协作流、任务分配以及在复杂组织中建立信任关系的先决条件。"
+    },
+    {
+      "point": "Agent 需要具备分层记忆机制以应对长周期、跨文档的复杂工作。",
+      "explanation": "短期记忆处理即时指令，长期记忆沉淀项目背景和历史偏好，只有具备历史纵深感的 Agent 才能做出符合业务逻辑的决策。"
+    },
+    {
+      "point": "协作平台正成为 Agent 落地所需的“工作台”和基础设施。",
+      "explanation": "飞书等平台通过 API 模块化封装和天然的业务数据流，降低了 Agent 的开发门槛，使其无需从零构建数据库和 UI 即可上岗。"
+    }
+  ],
+  "keyQuotes": [
+    "以 OpenClaw 为代表的 Agent 框架，本质上就是在做一件事：给这个绑在椅子上的大脑，装上能感知世界的传感器，装上能干活的手脚，以及装上能形成经验的记忆中枢。",
+    "在真实的商业世界里，真正的生产力爆发从来不在于个人效率，而在于团队协作。",
+    "一个成熟的 Agent，必须知道‘我是谁，我在为谁服务，我能看什么数据’。",
+    "只有读懂了昨天的数据，Agent 才能做出今天正确的决策。",
+    "一个优秀的 Agent 大脑决定了 AI 能做什么；但一个开放、包容、数据结构化且天然具备协作基因的底层平台，则决定了这个 AI 能做得有多好。"
+  ],
+  "tags": [
+    "AI Agent",
+    "OpenClaw",
+    "飞书",
+    "多智能体协同",
+    "企业数字化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 87,
+  "wordCount": 3112,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773131177000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-10 08:26:17"
+}

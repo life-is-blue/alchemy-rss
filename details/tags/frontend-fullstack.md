@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-10 20:07:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-10 22:15:46 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -360,7 +360,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -372,7 +372,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -606,6 +606,22 @@
 
 
 
+### [【第-3666-期】为什么随意使用-JSON.parse-可能带来安全风险](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278676&idx=1&sn=9c313c6248be12a503a3e9b68a5bbda8)
+
+2026-03-10 01:01:00 | 标签: JavaScript, Node.js, 网络安全, 原型污染, 数据校验
+
+> 文章指出，虽然 `JSON.parse()` 是 JavaScript 开发中最常用的 API 之一，但直接解析不可信的输入会带来严重的安全隐患。核心风险包括：利用 `__proto__` 等特殊字段实现的原型污染，可能导致权限提升或逻辑破坏；以及通过超大 Payload 或深度嵌套结构引发的拒绝服务攻击（DoS），耗尽服务器 CPU 或内存。为应对这些风险，作者提出了三层防御策略：首先是限制输入字符串的大小；其次是利用 `JSON.parse` 的 `reviver` 参数过滤危险键名；最后是使用 Zod 等库进行运行时的 Schema 校验，确保数据结构符合预期。文章强调，在现代开发中应默...
+
+
+
+### [我如何构建一个免费的截图编辑器，让你能够以完美的字体匹配编辑文本](https://hackernoon.com/how-i-built-a-free-screenshot-editor-that-lets-you-edit-text-with-perfect-font-matching?source=rss)
+
+2026-03-09 23:42:11 | 标签: JavaScript, OCR, Fabric.js, Tesseract.js, 图像处理
+
+> 本文详细介绍了 “Screenshot Editor” 的创建过程，这是一个基于浏览器的工具，旨在解决编辑图像时难以匹配字体的问题。该应用使用 Fabric.js 和 Tesseract.js 构建，完全在客户端执行 OCR 以保护隐私。作者描述了如何克服重大技术障碍，例如通过图像放大提高 OCR 准确性，以及开发自定义启发式算法来估算字体的粗细、斜体和衬线样式等属性。文章还涵盖了复杂的颜色提取技术，以及通过计算 “油墨” 比例和字符间距，将新文本完美对齐到原始边界框内所需的复杂数学运算。
+
+
+
 ### [如何在-CSS-中居中任何元素：7-种始终有效的方法](https://www.freecodecamp.org/news/center-any-element-in-css/)
 
 2026-03-06 19:38:28
@@ -660,13 +676,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2160,13 +2176,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3870,13 +3886,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

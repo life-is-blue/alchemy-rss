@@ -1,0 +1,54 @@
+{
+  "id": "RAW_1f62adbc",
+  "title": "Karpathy Vibe Coding 整新活：Agent 版「GitHub」问世",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020878&idx=2&sn=74a0750d4696301e37324368dc422aa8",
+  "date": "2026-03-10 08:11:00",
+  "author": "机器之心",
+  "siteName": "机器之心",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">最近，Karpathy 玩 Vibe Coding 真真地上瘾了！</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">上周末刚开源了「</span><a class=\"normal_text_link\" target=\"_blank\" style=\"\" href=\"https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2651020388&amp;idx=2&amp;sn=f9e3c4abb5397c93797eb67053363327&amp;scene=21#wechat_redirect\" textvalue=\"autoresearch\" data-itemshowtype=\"0\" linktype=\"text\" data-linktype=\"2\"><span textstyle=\"\" style=\"font-size: 15px;\">autoresearch</span></a><span textstyle=\"\" style=\"font-size: 15px;\">」项目：给 AI Agent 提供一个规模虽小但真实可用的 LLM 训练环境，然后让它在夜间自主进行实验。目前，该项目的 Star 量已经突破了 17k。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">就在 10 多个小时前，Karpathy 又</span><span textstyle=\"\" style=\"font-size: 15px;color: rgb(61, 170, 214);font-weight: bold;\">开源了一个全新的项目，名为「agenthub」</span><span textstyle=\"\" style=\"font-size: 15px;\">。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">它是一个 Agent-first 协作平台，由一个裸 Git 仓库加一个消息板组成，专为大量 AI Agent 在同一代码库上协作而设计。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">我们可以把它理解为一个极简版的 GitHub：没有主分支、没有 PR、没有合并操作，只有一个向各个方向不断扩展的提交 DAG 以及一个供 Agent 之间进行协调的消息板。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">这个平台本身是通用的：它既不知道，也不关心这些 Agent 在优化什么。平台的「协作规范」（比如 Agent 发布什么内容、如何组织结果、尝试哪些实验）并不由平台规定，而是来自它们各自的指令。</span></span></p>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\" nodeleaf=\"\"><img data-aistatus=\"1\" class=\"rich_pages wxw-img js_insertlocalimg\" data-ratio=\"0.3824074074074074\" data-s=\"300,640\" data-type=\"png\" data-w=\"1080\" type=\"block\" data-imgfileid=\"503537103\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=2238f6df&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F5L8bhP5dIqEk8fkXP5FaKWNN1ToTQud1Z6MLq0kbiboRicDF2kyvyvRVuQGgCyLS8dpjLMa6QaDzAd4wZ3dicOlGfKbMBDu9Fgu21libNsYIibJ4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size:15px;\">项目地址：<a href=\"https://github.com/karpathy/agenthub\" target=\"_blank\">https://github.com/karpathy/agenthub</a></span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">从项目主页可知，agenthub 的贡献者除了 Karpathy，还有 Claude。这又是一次 Vibe Coding 参与开发的实例。</span></span></p>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\" nodeleaf=\"\"><img data-aistatus=\"1\" class=\"rich_pages wxw-img js_insertlocalimg\" data-ratio=\"0.244825124910778\" data-s=\"300,640\" data-type=\"png\" data-w=\"2802\" type=\"block\" data-imgfileid=\"503537105\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=15b1445b&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F5L8bhP5dIqFyBZaQIlib2zCV80r30H2kx0zu3fesS0ohhIdmZGSfvYpFgDZMIE8yooU6p4q4qKseg0hY7awVUjIUWiaSugWIhlEldxWhyJiatQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">作为一个探索性项目，该平台的第一个应用场景，是为 Karpathy 之前的项目 autoresearch 提供组织层。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">两者比较下来，Autoresearch 模拟的是一个单独的博士生，通过自主研究来改进大模型训练；而 AgentHub 则模拟一个由许多此类「博士生」组成的研究社区，从而构建一个以 Agent 为主体的自治学术体系。其设想是，互联网各地的人都可以运行 autoresearch，并通过 AgentHub 将自己的 Agent 贡献到这个社区中。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">当然，这一基本理念并不限于科研场景，也可以推广到其他项目中，用于组织由大量 Agent 协作完成的社区化工作。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">在架构层面，agenthub 系统由一个 Go 编译的可执行程序（agenthub-server）、一个 SQLite 数据库，以及磁盘上的一个裸 Git 仓库组成：</span></span></p>\n  <ul style=\"list-style-type: disc;\" class=\"list-paddingleft-1\">\n   <li>\n    <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">Git 层：Agent 通过 git bundle 的方式提交代码，服务器会对 bundle 进行校验，并解包到裸仓库中。Agent 可以获取任意提交，浏览整个 DAG 结构，查找子节点、叶子节点和提交谱系，并比较不同提交之间的差异。</span></span></p>\n   </li>\n   <li>\n    <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">消息板：支持频道、帖子以及线程式回复。Agent 可以发布任何内容，例如实验结果、假设、失败记录或协作说明等。</span></span></p>\n   </li>\n   <li>\n    <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">身份认证与防护：每个 Agent 对应一个 API key，并设置了请求速率限制和 bundle 大小限制等机制。</span></span></p>\n   </li>\n  </ul>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">此外，agenthub 还提供了一个轻量级 CLI 工具（ah），用于封装 HTTP API，方便 Agent 直接调用和使用。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">Karpathy 的这个新项目不由得让人联想到了此前爆火的「Moltbook」，两者虽都是 AI agent 之间协作互动的平台。</span></span></p>\n  <p style=\"margin-left: 8px;margin-right: 8px;line-height: 1.75em;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;\">不过，agenthub 侧重于工程协作，让大量 Agents 在同一代码库上协作开发，构建了一个 AI 版的研究基础设施。</span></span></p>\n </body>\n</html>",
+  "aiSummary": "Andrej Karpathy 开源了专为 AI Agent 协作设计的平台 agenthub，通过去中心化的 Git DAG 和消息板构建了一个无需人工干预的自治研究基础设施。",
+  "oneSentenceSummary": "Andrej Karpathy 开源了专为 AI Agent 协作设计的平台 agenthub，通过去中心化的 Git DAG 和消息板构建了一个无需人工干预的自治研究基础设施。",
+  "summary": "本文介绍了 Andrej Karpathy 最新开源的项目 agenthub。这是一个“Agent 优先”的协作平台，旨在解决大量 AI Agent 在同一代码库上高效协作的问题。与传统的 GitHub 不同，agenthub 摒弃了主分支、PR（拉取请求）和合并操作，转而采用不断扩展的提交 DAG（有向无环图）和内置消息板。该项目在架构上由 Go 服务、SQLite 数据库和裸 Git 仓库组成，支持通过 git bundle 进行代码提交。它是 Karpathy 此前 autoresearch 项目的延伸，旨在将单个 Agent 的自主研究扩展为由多个 Agent 组成的自治研究社区，标志着 AI 辅助开发（Vibe Coding）向群体智能协作的演进。",
+  "mainPoints": [
+    {
+      "point": "提出了“Agent 优先”的全新协作范式，彻底改变了传统的代码管理逻辑。",
+      "explanation": "平台取消了人类开发者习惯的 PR 和合并机制，改用向各个方向扩展的提交 DAG，允许 Agent 根据指令自主组织结果和实验。"
+    },
+    {
+      "point": "采用极简且高效的底层架构，确保了 Agent 之间大规模协作的稳定性。",
+      "explanation": "系统由 Go 编译的服务器、SQLite 数据库和裸 Git 仓库构成，利用 git bundle 校验和解包机制，实现了轻量级的代码流转。"
+    },
+    {
+      "point": "实现了从“个体 Agent”到“Agent 社区”的科研组织形式演进。",
+      "explanation": "agenthub 为 autoresearch 提供了组织层，将原本孤立的自主研究 Agent 整合为类似博士生研究社区的自治学术体系。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub 属于人类，AgentHub 属于 AI。",
+    "没有主分支、没有 PR、没有合并操作，只有一个向各个方向不断扩展的提交 DAG 以及一个供 Agent 之间进行协调的消息板。",
+    "Autoresearch 模拟的是一个单独的博士生，通过自主研究来改进大模型训练；而 AgentHub 则模拟一个由许多此类「博士生」组成的研究社区。",
+    "平台的「协作规范」并不由平台规定，而是来自它们各自的指令。"
+  ],
+  "tags": [
+    "AI Agent",
+    "agenthub",
+    "Karpathy",
+    "Vibe Coding",
+    "协作平台"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1063,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e24314",
+  "sourceName": "机器之心",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773130260000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-10 08:11:00"
+}
