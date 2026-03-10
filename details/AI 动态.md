@@ -1,31 +1,49 @@
-> **更新时间**: 2026-03-10 08:08:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-10 10:53:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Cognition-发布-Devin-Review：一款免费的-AI-驱动-PR-审查工具](https://x.com/cognition/status/2031139257000075675)
+
+2026-03-09 22:45:10 | 标签: Devin Review, AI 软件工程, Pull Request, 代码审查, Cognition
+
+> Devin AI 软件工程师的创造者 Cognition 发布了 “Devin Review”，这是一款专为自动化和增强 Pull Request (PR) 审查流程而设计的专业工具。该工具提供自动 Bug 修复 (Autofix)、智能 Diff 整理、复制/移动检测，以及能够完全感知整个代码库的聊天界面。它被定位为现有付费服务的免费替代方案，只需在任何 PR URL 中将 “github” 替换为 “devinreview” 即可启用。
+
+
+
 ### [Andrej-Karpathy-谈自主-AI-研究与模型调优](https://x.com/karpathy/status/2031135152349524125)
 
-2026-03-09 22:28:51 | 标签: Autoresearch, LLM 调优, Nanochat, AI 智能体, 模型优化
-
-> Andrej Karpathy 分享了他的“autoresearch”实验结果。在该实验中，一个 AI 智能体自主完成了对 nanochat 模型的调优。该智能体识别出了 20 项可叠加的改进方案，包括修复 QKnorm 缩放器、优化 AdamW beta 参数以及权重衰减计划等，从而将 “Time to GPT-2” 基准测试耗时从 2.02 小时缩短至 1.80 小时。Karpathy 强调了从手动迭代优化向智能体集群协作的转变，并预言这种自动化研究工作流将成为前沿 LLM 实验室的“最终 Boss 战”和标准实践。
+2026-03-09 22:28:51
 
 
 
 ### [Anthropic-为-Claude-Code-推出智能体代码审查功能](https://x.com/claudeai/status/2031088171262554195)
 
-2026-03-09 19:22:10 | 标签: Claude Code, Code Review, AI 智能体, 软件开发, Anthropic
-
-> Anthropic 宣布推出“Code Review”，这是 Claude Code 工具集的重大扩展。该功能超越了简单的静态分析，通过派遣协同工作的 AI 智能体团队专门分析 Pull Request (PR) 以识别 Bug。这标志着将智能体 AI 工作流直接集成到软件开发生命周期 (SDLC) 中迈出了重要一步。
+2026-03-09 19:22:10
 
 
 
 ### [Qasar-Younis-关于物理-AI-与领导力的-10-条策略心得](https://x.com/lennysan/status/2031062081710236084)
 
-2026-03-09 17:38:30 | 标签: 物理 AI, Applied Intuition, 创业建议, AI 策略, 机器人
+2026-03-09 17:38:30
 
-> 这份对 Qasar Younis（估值超 150 亿美元的 Applied Intuition 公司 CEO）采访的全面总结，阐述了为什么未来十年的 AI 革命将由自动驾驶和机器人等物理应用定义，而非仅仅是软件。它通过强调农业和卡车运输业的劳动力缺口，挑战了“AI 取代工作”的论调，并对中美竞争提供了细致入微的视角，同时为创业者在低调创业、培养“品味”以及将早期项目视为练习等方面提供了深刻建议。
+
+
+### [Runway-发布-Runway-Characters：打造实时智能数字人](https://x.com/runwayml/status/2031028120971571687)
+
+2026-03-09 15:23:33 | 标签: Runway, AI 数字人, Runway API, 数字人, 生成式 AI
+
+> Runway 宣布推出新产品线“Runway Characters”，旨在通过实时智能数字人将数字界面转化为对话式体验。这些数字人具有极高的灵活性，支持风格、指令的深度自定义，并能嵌入特定的知识库。开发者可以通过 Runway API 将这些交互式 AI 角色直接集成到各类应用、网站和服务中。
+
+
+
+### [微软宣布为-Microsoft-365-推出-Copilot-Cowork](https://x.com/satyanadella/status/2030992877665583440)
+
+2026-03-09 13:03:30 | 标签: Microsoft 365, Copilot Cowork, AI 智能体, 生产力, 企业级 AI
+
+> 微软首席执行官萨蒂亚·纳德拉宣布推出 “Copilot Cowork”，这是 Microsoft 365 生态系统的一项重大进展。该功能超越了简单的对话交互，允许 AI 接收用户请求、制定多步计划，并跨各种 M365 应用和文件执行。至关重要的一点是，它在 M365 现有的安全和治理框架内运行，并利用用户的特定工作数据来确保输出结果准确且相关。
 
 
 

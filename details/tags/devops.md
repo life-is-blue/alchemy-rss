@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-10 08:08:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-10 10:53:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -410,41 +410,31 @@
 
 ### [Netflix-自动化完成-400-多个生产集群从-RDS-PostgreSQL-到-Aurora-PostgreSQL-的迁移](https://www.infoq.com/news/2026/03/netflix-automates-rds-aurora/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-09 15:00:00 | 标签: PostgreSQL, AWS Aurora, 数据库迁移, 基础设施自动化, Envoy Proxy
-
-> 本文详细介绍了 Netflix 将近 400 个生产数据库集群从 Amazon RDS 迁移到 Aurora PostgreSQL 的策略。该方案的核心是一个自动化平台，它利用托管数据访问层（Envoy）来抽象数据库端点，从而在无需更改应用程序代码的情况下进行迁移。工作流程包括创建物理只读副本、WAL 重放、复制健康状况验证以及受控的切流过程。值得注意的是，它解决了变更数据捕获（CDC）协调等复杂挑战，并通过在最终提升前保持源 RDS 实例完好，提供了强大的回滚机制。
+2026-03-09 15:00:00
 
 
 
 ### [组织高效的平台团队---Stack-Overflow](https://stackoverflow.blog/2026/03/09/organizing-productive-platform-teams/)
 
-2026-03-09 14:00:00 | 标签: 平台工程, 康威定律, DevOps, 软件架构, 工程管理
-
-> 文章探讨了为什么将平台工程纯粹视为技术尝试往往会失败。它指出，平台不可避免地反映了构建它们的组织的沟通结构，这种现象被称为康威定律。当组织结构混乱时，其平台就会变成“复杂度陷阱”，继承历史约束和政治边界。作者引用 2024 年 DORA 报告指出，缺乏产品思维的平台团队实际上可能会降低组织的吞吐量和稳定性。为了取得成功，平台团队必须从以任务为导向的服务提供者转变为与能力对齐的产品团队，优先通过定义良好的 API 和自服务接口来减轻开发者的认知负荷，而不是依靠手动协调和“拍肩膀”式的沟通。
+2026-03-09 14:00:00
 
 
 
 ### [修复-Pingora-开源部署中的请求走私漏洞](https://blog.cloudflare.com/pingora-oss-smuggling-vulnerabilities/)
 
-2026-03-09 14:00:00 | 标签: Pingora, HTTP 请求走私, Cloudflare, 网络安全, 开源
-
-> 本文详细介绍了在 Pingora 开源代理框架中发现的三个漏洞（CVE-2026-2833、2835、2836）。这些问题涉及对 HTTP/1.x 协议升级处理不当、HTTP/1.0 中模糊的请求分帧以及过于简单的默认缓存键实现。这些缺陷可能允许攻击者绕过安全控制，通过请求去同步化劫持用户会话，或污染共享缓存。虽然 Cloudflare 自身的 CDN 由于其多层架构和入口过滤未受影响，但独立的 Pingora 部署面临风险。Pingora 0.8.0 中发布的修复方案实现了对 RFC 9110 和 9112 标准的更严格遵守，确保协议升级仅在有效的握手后发生，并拒绝模糊的分帧。
+2026-03-09 14:00:00
 
 
 
 ### [主动防御：推出面向-API-的有状态漏洞扫描器](https://blog.cloudflare.com/vulnerability-scanner/)
 
-2026-03-09 14:00:00 | 标签: API 安全, BOLA, DAST, Cloudflare, OpenAPI
-
-> Cloudflare 正在发布 Web 和 API 漏洞扫描器的测试版，旨在超越传统的被动防御。虽然标准的 WAF 擅长捕捉基于语法的攻击（如 SQLi），但它们往往会漏掉基于逻辑的 API 漏洞，例如失效的对象级授权（BOLA）。Cloudflare 的新解决方案采用了“有状态”方法，使用 Workers AI 分析 OpenAPI 规范并推断复杂的数据依赖关系。通过构建 API 调用图，该扫描器可以自动链接请求——例如以所有者身份创建资源并尝试以攻击者身份访问——从而识别授权失败。该平台构建在高性能 Rust 后端之上，利用 Temporal 进行编排，并通过 HashiCorp Vaul...
+2026-03-09 14:00:00
 
 
 
 ### [Playwright-在-CI/CD-中的应用：自动化回归测试与部署集成](https://mp.weixin.qq.com/s?__biz=MzU5NDgxOTk1MQ==&mid=2247486023&idx=1&sn=c8ba39f704afe512a61018387431be34)
 
-2026-03-09 04:38:00 | 标签: Playwright, CI/CD, 自动化测试, GitHub Actions, Jenkins
-
-> 文章强调了自动化测试接入 CI/CD 流水线的重要性，指出脱离持续集成的自动化脚本无法发挥真正的质量保障价值。作者分析了 Playwright 在 CI 环境中的技术优势，如无头模式、跨浏览器支持和自动等待机制。随后，文章提供了针对 GitHub Actions、Jenkins 和 GitLab CI 的具体配置文件示例，并针对大规模测试套件提出了使用 pytest-xdist 进行并行执行的优化方案，最后讨论了测试报告的收集与可观测性建设。
+2026-03-09 04:38:00
 
 
 
