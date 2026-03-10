@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5f15134d",
+  "title": "Granite 4.0 1B Speech：紧凑、多语言且专为边缘端打造",
+  "url": "https://huggingface.co/blog/ibm-granite/granite-4-speech",
+  "date": "2026-03-09 18:36:33",
+  "author": "George Saon, Madison Lee",
+  "siteName": "Hugging Face Blog",
+  "content": "<!-- HTML_TAG_START -->\n<html>\n <head></head>\n <body>\n  <p>We’re excited to share <a href=\"https://huggingface.co/ibm-granite/granite-4.0-1b-speech\">Granite 4.0 1B Speech</a>, the latest addition to <a href=\"https://huggingface.co/collections/ibm-granite/granite-speech\">IBM's Granite Speech collection</a>. Designed for enterprise applications on resource-constrained devices, Granite 4.0 1B Speech is a compact speech-language model built for multilingual automatic speech recognition (ASR) and bidirectional speech translation (AST). With only half the parameters of its predecessor, <a href=\"https://huggingface.co/ibm-granite/granite-speech-3.3-2b\">granite-speech-3.3-2b</a>, the model delivers higher English transcription accuracy, faster inference through speculative decoding, and expanded language support, now covering English, French, German, Spanish, Portuguese, and Japanese. Two new additions in this release are Japanese ASR support and keyword list biasing for improved recognition of names and acronyms, both of which are frequently requested capabilities from the community. Granite 4.0 1B Speech also recently ranked #1 on the <a href=\"https://huggingface.co/spaces/hf-audio/open_asr_leaderboard\">OpenASR leaderboard</a>, highlighting its strong performance among open speech recognition systems.</p>\n  <p>Despite its small size, Granite 4.0 1B Speech achieves highly competitive results on standard English ASR benchmarks. Performance is measured using Word Error Rate (WER)—the percentage of words transcribed incorrectly—where lower scores indicate better accuracy. As shown in <em>Chart 1</em>, Granite 4.0 1B Speech delivers strong WER across multiple datasets while using far fewer parameters than many comparable models.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/GRVvLzgEV0bcB-v1ij77b.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/GRVvLzgEV0bcB-v1ij77b.png\" alt=\"englishasr\"></a> <em>Chart 1: granite-4.0-1B-speech delivers competitively low WER, thus strong ASR accuracy, across many benchmarks while being a small model.</em></p>\n  <p>Like all Granite models, Granite 4.0 1B Speech is released under an Apache 2.0 license with native support in transformers and vLLM. We evaluated the model across a range of standard ASR and AST benchmarks — spanning English, multilingual, and translation tasks — and found it performs as well as or better than models well above its parameter count. Full evaluation results, architecture details, training data, and usage examples can be found on the <a href=\"https://huggingface.co/ibm-granite/granite-4.0-1b-speech\">model card</a>. We recommend pairing it with <a href=\"https://huggingface.co/ibm-granite/granite-guardian-3.3-8b\">Granite Guardian</a> for production deployments requiring additional risk detection.</p>\n  <p>Give it a try today and let us know what you think!</p>\n  <!-- HTML_TAG_END -->\n </body>\n</html>",
+  "aiSummary": "IBM 发布了 Granite 4.0 1B Speech，这是一款采用 Apache 2.0 协议的紧凑型多语言模型，专为边缘设备优化，具备更强的 ASR/AST 性能和投机采样解码技术。",
+  "oneSentenceSummary": "IBM 发布了 Granite 4.0 1B Speech，这是一款采用 Apache 2.0 协议的紧凑型多语言模型，专为边缘设备优化，具备更强的 ASR/AST 性能和投机采样解码技术。",
+  "summary": "IBM 推出了 Granite 4.0 1B Speech，这是一款专为资源受限设备上的企业级应用设计的紧凑型语音语言模型。尽管参数量仅为 10 亿（仅为其前代产品的一半），但它通过投机采样解码实现了更高的英文转录准确率和更快的推理速度。该模型支持六种语言的多语言自动语音识别（ASR）和双向语音翻译（AST），并新增了对日语的支持。关键技术改进包括关键词列表偏置，以更好地识别名称和缩写。该模型目前在 OpenASR 排行榜上排名第一，并以 Apache 2.0 协议发布，原生支持 Transformers 和 vLLM，非常便于生产环境部署。",
+  "mainPoints": [
+    {
+      "point": "IBM 的 Granite 4.0 1B Speech 模型在参数量远少于其 2.2B 前代产品的情况下，实现了卓越的转录准确率和性能。",
+      "explanation": "通过优化语音语言架构，IBM 打造了一款在 OpenASR 排行榜上排名第一的紧凑型模型，证明了更小的模型也能在资源受限的边缘设备上有效处理复杂的多语言 ASR 和 AST 任务。"
+    },
+    {
+      "point": "该模型引入了扩展的多语言能力和关键词偏置等专业功能，以满足特定的社区和企业需求。",
+      "explanation": "除了支持包括日语在内的六种主要语言外，该模型还集成了关键词列表偏置功能。这一特性显著提高了技术缩写和专有名词的识别准确率，解决了企业级语音转文本应用中的常见痛点。"
+    },
+    {
+      "point": "通过投机采样解码以及与开源 AI 框架的广泛集成，该模型优先保障了高推理速度和部署灵活性。",
+      "explanation": "投机采样解码的加入实现了更快的推理，这对于实时边缘应用至关重要。此外，在 Apache 2.0 协议下对 Transformers 和 vLLM 的原生支持，确保了开发者可以轻松地在各种生产环境中集成和部署该模型。"
+    }
+  ],
+  "keyQuotes": [
+    "Granite 4.0 1B Speech 专为资源受限设备上的企业应用而设计，是一款为多语言自动语音识别（ASR）和双向语音翻译（AST）打造的紧凑型语音语言模型。",
+    "该模型的参数量仅为前代产品的一半，却提供了更高的英文转录准确率、通过投机采样解码实现的更快推理速度以及更广泛的语言支持。",
+    "Granite 4.0 1B Speech 最近还在 OpenASR 排行榜上排名第一，彰显了其在开源语音识别系统中的强劲性能。"
+  ],
+  "tags": [
+    "ASR",
+    "语音翻译",
+    "边缘 AI",
+    "IBM Granite",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 81,
+  "wordCount": 310,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773081393000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 18:36:33"
+}

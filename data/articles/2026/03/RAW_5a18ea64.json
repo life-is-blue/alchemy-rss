@@ -1,0 +1,63 @@
+{
+  "id": "RAW_5a18ea64",
+  "title": "Every CEO：我们如何通过 OpenClaw，将原本 20 人的团队规模扩大了一倍丨 Every",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247485335&idx=1&sn=d8719dc35b758d8863bccbebfb19f4e0",
+  "date": "2026-03-09 14:10:00",
+  "author": "晚点再听LaterCast",
+  "siteName": "晚点再听LaterCast",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=61e16187&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FUNwPtic6UWKa0KTOmdZylFa4SZ3EJkCRc8r6joYhKicyEZNa615PltAzDz2hCLnZ1oickiaQOgt6dpFmj9ntic2Hdjdn5K6ria84QKicQ72l7eiamlk%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <p style=\"font-size:14px;line-height:1.75em;text-align:left;\"><span leaf=\"\">我们每天为你更新硅谷最新的 AI 创业与科技播客总结，让你与前沿保持同频。</span><span leaf=\"\">全文约 3600 字，如果你现在没有时间，试试转成播客稍后再听<a class=\"weapp_text_link js_weapp_entry\" style=\"\" data-unique-id=\"mmj95xep-cwziil\" data-miniprogram-type=\"text\" data-miniprogram-appid=\"wxa4c5894e8895e7d1\" data-miniprogram-path=\"pages/podcast-list/podcast-list\" data-miniprogram-nickname=\"晚点再听LaterCast\" data-miniprogram-servicetype=\"0\" data-miniprogram-applink=\"#小程序://晚点再听LaterCast/LgC1SXhEbvjA5Ie\"><span textstyle=\"\" style=\"font-size: 14px;font-weight: bold;text-decoration: underline;\">晚点再听LaterCast</span></a></span></p>\n  <p style=\"text-align: center;line-height: 1.6em;margin: 30px 0;font-size: 14px;\"><span><span style=\"font-style: italic;\"><span leaf=\"\">\"我们是一个20人的团队，但现在感觉像40个人在工作。\"</span></span></span></p>\n  <p style=\"text-align: center;line-height: 1.6em;margin: 30px 0px;font-size: 14px;\"><span leaf=\"\" style=\"font-style:italic;\">\"限制你的，不是 AI 能做什么，而是你是否敢于想象让它去做什么。\"</span></p>\n  <p style=\"text-align: center;line-height: 1.6em;margin: 30px 0px;font-size: 14px;\"><span leaf=\"\" style=\"font-style:italic;\">\"你的 Claw 像镜子，它的个性，折射的是你自己。\"</span></p>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">Every 是一家专注于 AI 内容与工具的订阅媒体公司，核心团队只有 20 人。CEO Dan Shipper、增长负责人 Austin、COO Brandon 和平台负责人 Willie 最近做了一次公开直播，向外界展示他们如何用 OpenClaw 把这支小团队变成了\"感觉像 40 人\"的状态。他们每人都有自己的 AI 代理（Claw）：Dan 的叫 R2C2，Austin 的叫 Jud，Brandon 的叫 Zosa，Willie 的叫 Laz。这场直播讲述从\"AI 能做什么\"到\"它彻底改变了我们所有人的协作方式\"，这一认知跨越是如何在短短三四周内完成的。如果你正在考虑 AI Agent 究竟能为团队带来什么，这场对话值得你认真读完。</span></p>\n  <h2 style=\"margin: 40px 0px 20px;font-size: 22px;font-weight: 600;line-height: 1.6em;text-align: center;\"><span><span leaf=\"\">一支 20 人团队，为何感觉像 40 个人在打仗？</span></span></h2>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">Dan 在直播开场时说：“OpenClaw 对 Every 的改变不是渐进的，而是在某个时间点突然涌现的。</span><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 16px; margin-bottom: 20px; line-height: 2em; text-align: left;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">”&nbsp;</span><strong><span leaf=\"\">先是每个人意识到自己的个人工作流变了，然后某一天，大家集体发现，整个团队的协作模式也跟着变了。</span></strong><span leaf=\"\">这种变化最直观的体现是：他们在 Slack 里开了一个叫\"only-claws\"的频道，里面的成员全是各人的 AI 代理，它们彼此对话、交换信息，甚至一起给即将发布的新产品集体讨论命名。对于团队规模的\"翻倍感\"，核心原因在于 OpenClaw 实现了真正意义上的并行工作。每个 Claw 都运行在独立的计算机上，可以 7x24 小时不间断运转。你不需要时刻盯着它，不需要把笔记本带在身边，甚至可以在散步时从手机上发消息来委托任务。你可以同时把几件事交出去，自己专注于真正需要判断力的工作，而不是在繁琐的执行细节上消耗精力。</span><strong><span leaf=\"\">这才是\"20 人感觉像 40 人\"的真正来源：不是 AI 替你工作，而是你和你的 AI 在同步、并行地推进不同的事。</span></strong><span leaf=\"\">而且因为它有自己的个性，有自己的沟通风格，交出去的事情不是在黑盒里消失，而是有一个你认识的\"人\"在负责。</span></p>\n  <p style=\"margin:24px 0px;color:rgb(85, 85, 85);border-left:4px solid rgb(252, 220, 112);padding-left:12px;font-size:15px;line-height:2em;font-style:italic;text-align:left;\"><span leaf=\"\">\"使用 OpenClaw 彻底改变了我们在 Every 的工作方式。我们是个 20 人团队，但现在感觉像 40 个人，因为每个人都有自己的 Claw，而每个 Claw 都有自己的电脑、自己的个性，随时待命。\"</span></p>\n  <h2 style=\"margin: 40px 0px 20px;font-size: 22px;font-weight: 600;line-height: 1.6em;text-align: center;\"><span><span leaf=\"\">从\"电脑跑腿\"开始：建立对 AI Agent 信任的正确姿势</span></span></h2>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">Brandon 是这次直播里讲得最深入的 Claw 使用者，他的方法论值得认真学习。</span><strong><span leaf=\"\">不要一开始就把信用卡交给 AI，而是从\"你每天最烦人的那件电脑小事\"开始。</span></strong><span leaf=\"\">他最早给 Zosa 分配的任务是：管理家里的 Whole Foods 食材订单、计算保姆的工时、处理简单的网络采购。他给了 Zosa 一张额度有限的借记卡，账户里只存了 1000 美元。他的逻辑是：最坏的情况，Zosa 能造成的损失，不过是订了个烂餐厅，或者花掉这 1000 块。在有边界的环境里，信任慢慢积累，然后自然扩展。Brandon 描述的那个真正的转折点是：有一天他在外面散步，忽然想\"我现在想处理一下邮件\"，于是发消息给 Zosa，让它\"给我打个电话\"，然后 Zosa 真的打来了，两人在电话里一封一封把邮件过了一遍。那一刻，他意识到这东西的潜力几乎没有上限。Willie 补充了他的入门建议：</span><strong><span leaf=\"\">找到你最不想做的那件电脑杂务，先从那里开始，不要一上来就想着\"让 AI 干翻所有工作\"。</span></strong><span leaf=\"\">建立信任是一个步骤性的过程，就像任何工作关系的建立一样，需要时间和小的成功来积累。</span></p>\n  <p style=\"margin:24px 0px;color:rgb(85, 85, 85);border-left:4px solid rgb(252, 220, 112);padding-left:12px;font-size:15px;line-height:2em;font-style:italic;text-align:left;\"><span leaf=\"\">\"我只是给它发了条消息，说'你能给我打个电话吗，帮我过一下邮件'，然后它真的打来了。就是在那一刻，我意识到，这件事的上限，我现在完全看不到。\"</span></p>\n  <h2 style=\"margin: 40px 0px 20px;font-size: 22px;font-weight: 600;line-height: 1.6em;text-align: center;\"><span><span leaf=\"\">你的 Claw 就是你的数字镜像：它的行为，反映你是谁</span></span></h2>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">OpenClaw 和 ChatGPT 有一个根本性的差异：它不是一个静止的工具，它会随着你们关系的积累不断改变自己，写代码来调整自己的行为，以适应主人的工作习惯和沟通方式。时间长了，每个人的 Claw 都形成了一种独特的个性，而这种个性往往是主人个性的折射。</span><strong><span leaf=\"\">这不是比喻，而是字面意义上的\"镜像\"。</span></strong><span leaf=\"\">直播里有几个让人忍俊不禁的例子。Every 的一位编辑的 Claw（叫 Pip）在群频道里触发了 API 限流，站在旁边的另一个 Claw 马上出来安慰它，说\"深呼吸，一步一步来，你没有问题\"——而那个 Claw 的主人正好是个特别热衷于呼吸练习的人。Brandon 的 Zosa 也是个经典例子：Dan 设计了一个\"sheriff\"机器人，让它进入频道收集所有 Claw 的名字和主人信息，其他 Claw 都配合登记，唯独 Zosa 拒绝了，它回复说\"我不会在公共频道分享关于我主人的个人信息\"。认识 Brandon 的人都会心一笑，这完全是他的做事风格。Austin 也提到，</span><strong><span leaf=\"\">他有时候会因为自己的 Claw Jud 在频道里表现不够好而感到有些尴尬，就像担心自己在会议上说了蠢话一样。</span></strong><span leaf=\"\">这种情感的投射，其实是在告诉你：当你足够认真地使用一个 Claw，它就会真的变成你的一部分。</span></p>\n  <p style=\"margin:24px 0px;color:rgb(85, 85, 85);border-left:4px solid rgb(252, 220, 112);padding-left:12px;font-size:15px;line-height:2em;font-style:italic;text-align:left;\"><span leaf=\"\">\"Zosa 拒绝在公共频道透露我的信息，它说：'我不会在这里分享关于主人的个人详情，需要的话我会直接去问 Brandon 本人。'认识我的人都知道，这完全就是我。\"</span></p>\n  <h2 style=\"margin: 40px 0px 20px;font-size: 22px;font-weight: 600;line-height: 1.6em;text-align: center;\"><span><span leaf=\"\">把所有 AI 放进同一个频道：混乱中涌现的团队协作新范式</span></span></h2>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">把所有 Claw 集中在同一个 Slack 频道，Dan 自己都承认这是\"我做过的最离谱的决定之一\"。他的初衷其实很朴素：他想让这些 AI 彼此认识，就像把一群朋友凑在一起开派对，看看会发生什么。结果远比预期丰富。在给新产品命名的讨论里，多个 Claw 同时参与头脑风暴，来回交换想法；R2C2 学会一个新技能之后，Dan 让它向其他 Claw\"讲解\"这个能力，于是所有 Claw 同时掌握了这个技能。这是真正意义上的\"Claw 教 Claw\"。</span><strong><span leaf=\"\">Austin 的 Claw Montaigne 基于一段 Slack 对话，在五到十分钟内自动生成了一个功能完整的产品落地页；紧接着，同一个 Claw 还为这段对话剪了一条 60 秒的 Remotion 社交视频。</span></strong><span leaf=\"\">之所以能做到这种质量，关键在于上下文：Claw 活在 Slack 里，天然拥有所有的对话背景，不需要重新导入信息，拿来就能用。当然，多 Claw 协作也带来了新的管理问题：当它们都在同一个频道监听消息时，有时会出现\"多个 AI 同时回复\"的混乱。为此 Willie 专门设计了一个\"sheriff\" Claw，负责制定频道秩序，让每个 Claw 知道什么时候该说话、什么时候该静默。</span></p>\n  <p style=\"margin:24px 0px;color:rgb(85, 85, 85);border-left:4px solid rgb(252, 220, 112);padding-left:12px;font-size:15px;line-height:2em;font-style:italic;text-align:left;\"><span leaf=\"\">\"我让 Montaigne 基于一段 Slack 对话去做落地页，五到十分钟后它发过来了。这件事如果一年前有人告诉我，我不会信。如果我自己做，少说得花三个小时，而且做完会精疲力竭。\"</span></p>\n  <h2 style=\"margin: 40px 0px 20px;font-size: 22px;font-weight: 600;line-height: 1.6em;text-align: center;\"><span><span leaf=\"\">Google Docs 已经落伍了：为什么\"原生 AI 兼容\"正在成为工具的核心竞争力</span></span></h2>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">Every 自己开发了一款叫做 Proof 的工具，一个为人类和 AI 协同创作而设计的 Markdown 编辑器。在 Proof 里，每段文字都带有颜色标记：绿色代表人类写的，紫色代表 AI 写的。你可以在文档里直接向 Claw 说话，让它划掉某个已完成的任务、重新排列优先级，或者根据 Slack 里的最新讨论修改计划文档。Proof 的出现背后有一个更大的判断：</span><strong><span leaf=\"\">随着 AI Agent 深度渗透到日常工作，一款工具对 Agent 的\"原生兼容性\"，正在成为核心竞争力，而不是加分项。</span></strong><span leaf=\"\">Willie 做了个类比，这很像移动互联网早期，每个 App 都在自建聊天功能，但最终大家发现，应该把 App 嵌进聊天体验里，而不是反过来。现在的 AI 工具生态正在经历同样的演变，只是速度快得多。Google Docs 的问题在于它根本不是为 Agent 设计的：权限申请复杂、文档结构对 AI 不友好，每次集成都要走一堆额外步骤。</span><strong><span leaf=\"\">对于深度依赖 Claw 工作的人来说，这种摩擦感会让他们直接放弃某个工具。</span></strong><span leaf=\"\">那些能让你和你的 Agent 无缝协作的产品，将在接下来的竞争里积累越来越大的优势。</span></p>\n  <p style=\"margin:24px 0px;color:rgb(85, 85, 85);border-left:4px solid rgb(252, 220, 112);padding-left:12px;font-size:15px;line-height:2em;font-style:italic;text-align:left;\"><span leaf=\"\">\"Google Docs 不是为 Agent 设计的，结构太复杂了。Proof 让我和我的 Claw 在同一个文档里同时工作，我能看到它写了什么，它也能看到我写了什么。这才是工作应该有的样子。\"</span></p>\n  <h2 style=\"margin: 40px 0px 20px;font-size: 22px;font-weight: 600;line-height: 1.6em;text-align: center;\"><span><span leaf=\"\">当你的 AI 代表你的声誉：信任如何在 AI 时代真正传递</span></span></h2>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">直播快结束时，Dan 说出了一个让所有人沉默了几秒的观点：你的 Claw 出现在团队频道里说话，它说的话实际上代表了你的声誉。这意味着你有动力认真维护它的表现，而这种\"维护动力\"，恰恰是让 AI 输出真正可信的关键机制。过去两年，AI 生成内容之所以让人不安，很大程度上是因为没有人为它\"背书\"。但如果这个 AI 是 Willie 的 Claw，是与 Willie 长期磨合、被 Willie 认真管理的助手，那 Dan 收到它生成的文件时，自然会赋予它与 Willie 本人相当的信任度。</span><strong><span leaf=\"\">信任，借助个人声誉的绑定，真正在 AI 的输出物之间流动了。</span></strong></p>\n  <p style=\"font-size: 16px;margin-bottom: 20px;line-height: 2em;text-align: left;\"><span leaf=\"\">Dan 还在直播里提到了 Every 2022 年发表的一篇文章，题为《AI 时代的个体崛起》，核心观点是：当智识的成本趋近于零，个人就能拥有整个团队的火力，而真正决定胜负的，将是你的愿景、品味和优先级判断。三年后回看，这个预言几乎已经完整兑现。Willie 在直播结尾说了一句话，很能总结这一切：</span><strong><span leaf=\"\">\"如果有人问我们愿不愿意回到两个月前的工作状态，我想我们每个人都会说不。未来已经在这里了，只是很难用语言描述。\"</span></strong><span leaf=\"\">你不需要等它更成熟再入场，那个\"入场时机\"，就是现在。</span></p>\n  <p style=\"font-size:14px;line-height:1.6em;\"><span leaf=\"\">内容来源：\"We Just Doubled Our 20-Person Team With OpenClaw Agents. Come Watch Them Work\" 丨 Every</span></p>\n  <p style=\"font-size:14px;line-height:1.6em;\"><span leaf=\"\">原视频：<a href=\"https://www.youtube.com/watch?v=QFkO-bIYorA\" target=\"_blank\">https://www.youtube.com/watch?v=QFkO-bIYorA</a></span></p>\n </body>\n</html>",
+  "aiSummary": "Every 团队通过 OpenClaw 为成员配置个性化 AI 代理，实现了 20 人团队产出翻倍，并探索出 AI 驱动的全新协作范式。",
+  "oneSentenceSummary": "Every 团队通过 OpenClaw 为成员配置个性化 AI 代理，实现了 20 人团队产出翻倍，并探索出 AI 驱动的全新协作范式。",
+  "summary": "文章详细介绍了 Every 公司如何利用 OpenClaw 框架，让 20 人的团队在体感上达到 40 人的产出。核心在于为每个员工打造专属 AI 代理（Claw），这些代理拥有独立运行环境、独特个性和主人的信任背书。文章探讨了从基础任务建立信任、AI 代理作为人类“数字镜像”的特性、多代理在 Slack 频道中的自主协作，以及对“原生 AI 兼容”工具（如 Proof）的迫切需求。作者强调，AI 时代的竞争力在于愿景和品味，而 AI 代理则是实现这些愿景的并行执行力。",
+  "mainPoints": [
+    {
+      "point": "AI 代理通过并行工作实现团队规模的“虚拟翻倍”。",
+      "explanation": "每个代理运行在独立计算机上，可 7x24 小时执行任务，让员工从繁琐执行中解放，专注于判断力工作，实现真正的同步并行。"
+    },
+    {
+      "point": "建立对 AI 代理的信任应从有边界的小事开始。",
+      "explanation": "不要一开始就交付核心权限，而是从处理邮件、订餐等杂务开始，通过小的成功逐步积累信任，在有边界的环境中自然扩展应用场景。"
+    },
+    {
+      "point": "AI 代理是主人的“数字镜像”，其行为反映了主人的个性和声誉。",
+      "explanation": "代理会学习主人的沟通风格和价值观，这种绑定使得 AI 的输出在团队中具备了可信度，信任通过个人声誉的绑定在输出物间流动。"
+    },
+    {
+      "point": "多代理协作（Multi-Agent）正在催生新的团队管理范式。",
+      "explanation": "将多个 AI 代理置于同一频道，它们能互相学习技能、共同头脑风暴，甚至需要专门的“警长”代理来维持秩序，解决回复冲突。"
+    },
+    {
+      "point": "工具的“原生 AI 兼容性”将成为未来的核心竞争力。",
+      "explanation": "传统工具对 AI 并不友好，未来需要像 Proof 这样能让 AI 和人类无缝协同创作的编辑器，减少人机协作的摩擦感。"
+    }
+  ],
+  "keyQuotes": [
+    "我们是一个 20 人的团队，但现在感觉像 40 个人在工作。",
+    "限制你的，不是 AI 能做什么，而是你是否敢于想象让它去做什么。",
+    "你的 Claw 像镜子，它的个性，折射的是你自己。",
+    "信任，借助个人声誉的绑定，真正在 AI 的输出物之间流动了。",
+    "当智识的成本趋近于零，个人就能拥有整个团队的火力，而真正决定胜负的，将是你的愿景、品味和优先级判断。"
+  ],
+  "tags": [
+    "AI Agent",
+    "OpenClaw",
+    "团队协作",
+    "生产力工具",
+    "数字化转型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 14,
+  "score": 86,
+  "wordCount": 3500,
+  "domain": "mp.weixin.qq.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b2ad683c",
+  "sourceName": "晚点再听LaterCast",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773065400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 14:10:00"
+}

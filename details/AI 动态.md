@@ -1,15 +1,37 @@
-> **更新时间**: 2026-03-08 22:04:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-10 08:08:02 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Andrej-Karpathy-谈自主-AI-研究与模型调优](https://x.com/karpathy/status/2031135152349524125)
+
+2026-03-09 22:28:51 | 标签: Autoresearch, LLM 调优, Nanochat, AI 智能体, 模型优化
+
+> Andrej Karpathy 分享了他的“autoresearch”实验结果。在该实验中，一个 AI 智能体自主完成了对 nanochat 模型的调优。该智能体识别出了 20 项可叠加的改进方案，包括修复 QKnorm 缩放器、优化 AdamW beta 参数以及权重衰减计划等，从而将 “Time to GPT-2” 基准测试耗时从 2.02 小时缩短至 1.80 小时。Karpathy 强调了从手动迭代优化向智能体集群协作的转变，并预言这种自动化研究工作流将成为前沿 LLM 实验室的“最终 Boss 战”和标准实践。
+
+
+
+### [Anthropic-为-Claude-Code-推出智能体代码审查功能](https://x.com/claudeai/status/2031088171262554195)
+
+2026-03-09 19:22:10 | 标签: Claude Code, Code Review, AI 智能体, 软件开发, Anthropic
+
+> Anthropic 宣布推出“Code Review”，这是 Claude Code 工具集的重大扩展。该功能超越了简单的静态分析，通过派遣协同工作的 AI 智能体团队专门分析 Pull Request (PR) 以识别 Bug。这标志着将智能体 AI 工作流直接集成到软件开发生命周期 (SDLC) 中迈出了重要一步。
+
+
+
+### [Qasar-Younis-关于物理-AI-与领导力的-10-条策略心得](https://x.com/lennysan/status/2031062081710236084)
+
+2026-03-09 17:38:30 | 标签: 物理 AI, Applied Intuition, 创业建议, AI 策略, 机器人
+
+> 这份对 Qasar Younis（估值超 150 亿美元的 Applied Intuition 公司 CEO）采访的全面总结，阐述了为什么未来十年的 AI 革命将由自动驾驶和机器人等物理应用定义，而非仅仅是软件。它通过强调农业和卡车运输业的劳动力缺口，挑战了“AI 取代工作”的论调，并对中美竞争提供了细致入微的视角，同时为创业者在低调创业、培养“品味”以及将早期项目视为练习等方面提供了深刻建议。
+
+
+
 ### [OpenClaw-v2026.3.7-发布：支持-GPT-5.4-与基础设施升级](https://x.com/openclaw/status/2030522386894946620)
 
-2026-03-08 05:53:56 | 标签: OpenClaw, AI 自动化, GPT-5.4, Gemini 3.1, Docker
-
-> 本次发布是 AI 自动化平台 OpenClaw 的一次重大更新。核心亮点包括：集成先进模型（GPT-5.4 和 Gemini 3.1 Flash-Lite）、支持重启后持久化的 ACP 绑定，以及为提升效率优化的 Docker 多阶段构建。此外，该更新还引入了用于网关认证的 SecretRef、可插拔上下文引擎、HEIF 图像支持，并修复了 Zalo 渠道的相关问题，标志着该工具能力的全面升级。
+2026-03-08 05:53:56
 
 
 

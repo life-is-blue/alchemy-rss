@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b47b54d6",
+  "title": "Why Am I Paranoid， You Say?",
+  "url": "https://idiallo.com/blog/why-am-i-paranoid?src=feed",
+  "date": "2026-03-09 12:00:00",
+  "author": "Ibrahim Diallo @dialloibu",
+  "siteName": "iDiallo.com",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Technology has advanced to a point I could only have dreamed of as a child. Have you seen the graphics in video games lately? Zero to 60 miles per hour in under two seconds? Communicating with anyone around the world at the touch of a button? It's incredible, to say the least. But every time I grab the TV remote and decline the terms of service, my family watches in confusion. I don't usually have the words to explain my paranoia to them, but let me try.</p>\n  <p>I would love to have all the features enabled on all my devices.</p>\n  <p>I would love to have Siri on my phone.</p>\n  <p>I would love to have Alexa control the lighting in my house and play music on command.</p>\n  <p>I would love to own an electric car with over-the-air updates.</p>\n  <p>I would love to log in with my Google account everywhere.</p>\n  <p>I would love to sign up for your newsletter.</p>\n  <p>I would love to try the free trial.</p>\n  <p>I would love to load all my credit cards onto my phone.</p>\n  <p>I would love all of that.</p>\n  <p>But I can't. I don't get to do these things because I have control over none of them. When I was a kid, I imagined that behind the wild technologies of the future there would be software and hardware, pure and simple. Now that we have the tech, I can say that what I failed to see was that behind every product, there is a company. And these companies are salivating for data.</p>\n  <p>If you're like me, you have dozens of apps on your phone. You can't fit them all on the home screen, so you use a launcher to find the ones you don't open every day. Sometimes, because I have so many, I scroll up and down and still can't find what I'm looking for. Luckily, on most Android phones, there's a search bar at the top to help. But the moment I tap it, a notification pops up asking me to agree to terms and conditions just to use the search. Of course I won't do that.</p>\n  <p>Most people have Siri enabled on their iPhone and never think twice about it. Apple has run several ads touting its privacy-first approach. Yet Apple settled a class action lawsuit last year claiming that Siri had violated users' privacy, to the tune of <a href=\"https://www.reuters.com/legal/apple-pay-95-million-settle-siri-privacy-lawsuit-2025-01-02/\">$95 million</a>.</p>\n  <p>I can't trust any of these companies with my information. They will lose it, or they will sell it. Using Alexa or Google Assistant is no different from using Siri. It's having a microphone in your home that's controlled by a third party.</p>\n  <p>As enthusiastic as I am about electric cars, I didn't see the always-connected aspect coming. I've always assumed that when I pay for something, it belongs to me. But when an automaker can make decisions about your car while it sits in your garage, I'd rather have a dumb car. Unfortunately, it's no longer limited to electric vehicles. Nearly all modern cars now push some form of subscription service on their customers.</p>\n  <div class=\"image\">\n   <img src=\"https://cdn.idiallo.com/images/assets/628/pigeon.jpg\" alt=\"Pigeon\">\n   <p>Spy!</p>\n  </div>\n  <p>Have you ever been locked out of your Google account? One day I picked up my phone and, for some reason, my location was set to Vietnam. A few minutes later, I lost access to my Google account. It's one thing to lose access to your email or files in Drive. But when you've used Google to log in to other websites, you're suddenly locked out of those too. Effectively, you're locked out of the internet.</p>\n  <p>I was lucky my account was restored the same day, apparently there were several login attempts from Vietnam. But my account was back in service just in time for me to mark another Stack Overflow question as a duplicate.</p>\n  <p>I don't sign up for services with my real email just to try a free trial, because even when I decide not to continue, the emails keep coming.</p>\n  <p>When my sons were just a few months old, I received a letter in the mail addressed to one of them. It stated that his personal information (name, address, and Social Security number) had been breached. He was still an infant. I had never heard of the company responsible or done any business with them, yet somehow they had managed to lose my child's information.</p>\n  <p>I would love to not worry about any of this, but it's a constant inconvenience. Whenever I grab the TV remote, I accidentally hit the voice button, and the terms of service remind me that my voice may be <a href=\"https://us.lgappstv.com/main/terms#tabContentTerms32\">shared with third parties</a>.</p>\n  <p>Technology is amazing when you have some control over it. But when the terms of service can change out from under you without warning, I'll politely decline and keep my tin hat close by. I have <a href=\"https://idiallo.com/blog/nothing-to-hide\">so much to hide</a>.</p>\n  <hr class=\"article__end\">\n </body>\n</html>",
+  "aiSummary": "本文通过作者拒绝使用智能助手和联网功能的个人经历，深刻反思了现代科技便利背后用户控制权的丧失与隐私泄露风险。",
+  "oneSentenceSummary": "本文通过作者拒绝使用智能助手和联网功能的个人经历，深刻反思了现代科技便利背后用户控制权的丧失与隐私泄露风险。",
+  "summary": "文章探讨了在科技高度发达的今天，为什么作者依然对现代设备持“偏执”的警惕态度。作者指出，现代科技产品已不再是纯粹的软硬件组合，而是成为了企业采集数据的终端。文中列举了 Siri 隐私诉讼、Google 账号锁定导致全网服务瘫痪、智能汽车订阅制剥夺所有权以及婴儿身份信息被莫名泄露等案例。作者认为，当用户无法真正控制设备，且服务条款可以随时被单方面更改时，拒绝这些所谓的“智能功能”是保护个人主权的必要手段。",
+  "mainPoints": [
+    {
+      "point": "科技产品已从纯粹的工具演变为企业采集数据的终端。",
+      "explanation": "作者认为现代科技背后是贪婪数据的公司，用户在享受便利的同时，往往以出让隐私为代价，失去了对设备的原始控制权。"
+    },
+    {
+      "point": "中心化账号体系（如 Google SSO）存在极高的单点故障风险。",
+      "explanation": "过度依赖单一平台账号登录全网服务，一旦账号因误判或安全策略被封禁，用户将面临被整个互联网“驱逐”的极端困境。"
+    },
+    {
+      "point": "“软件定义硬件”的趋势削弱了用户对实物资产的所有权。",
+      "explanation": "智能汽车的远程更新和订阅制使得消费者即便支付了全款，也无法完全拥有车辆，厂商可随时在后台更改功能或限制使用。"
+    },
+    {
+      "point": "个人信息的泄露往往发生在用户完全未察觉且未参与的环节。",
+      "explanation": "文中提到婴儿信息在从未接触过的公司处泄露，说明数据买卖和供应链漏洞已让个人隐私保护变得防不胜防。"
+    }
+  ],
+  "keyQuotes": [
+    "Now that we have the tech， I can say that what I failed to see was that behind every product， there is a company. And these companies are salivating for data.",
+    "When an automaker can make decisions about your car while it sits in your garage， I'd rather have a dumb car.",
+    "Effectively， you're locked out of the internet.",
+    "Technology is amazing when you have some control over it. But when the terms of service can change out from under you without warning， I'll politely decline.",
+    "I've always assumed that when I pay for something， it belongs to me."
+  ],
+  "tags": [
+    "隐私保护",
+    "数据安全",
+    "科技伦理",
+    "用户控制权",
+    "数字主权"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 805,
+  "domain": "idiallo.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "OTHERS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_a24a95e3",
+  "sourceName": "iDiallo.com",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773057600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 12:00:00"
+}

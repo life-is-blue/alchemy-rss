@@ -1,0 +1,53 @@
+{
+  "id": "RAW_16cd3060",
+  "title": "也许终究不是“无聊的技术”",
+  "url": "https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything",
+  "date": "2026-03-09 13:37:45",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Mar/9/not-so-boring/\">\n    <p class=\"mobile-date\">9th March 2026</p>\n    <p>A recurring concern I’ve seen regarding LLMs for programming is that they will push our technology choices towards the tools that are best represented in their training data, making it harder for new, better tools to break through the noise.</p>\n    <p>This was certainly the case a couple of years ago, when asking models for help with Python or JavaScript appeared to give much better results than questions about less widely used languages.</p>\n    <p>With <a href=\"https://simonwillison.net/tags/november-2025-inflection/\">the latest models</a> running in good coding agent harnesses I’m not sure this continues to hold up.</p>\n    <p>I’m seeing excellent results with my <a href=\"https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/\">brand new tools</a> where I start by prompting “use uvx showboat --help / rodney --help / chartroom --help to learn about these tools”—the context length of these new models is long enough that they can consume quite a lot of documentation before they start working on a problem.</p>\n    <p>Drop a coding agent into <em>any</em> existing codebase that uses libraries and tools that are too private or too new to feature in the training data and my experience is that it works <em>just fine</em>—the agent will consult enough of the existing examples to understand patterns, then iterate and test its own output to fill in the gaps.</p>\n    <p>This is a surprising result. I thought coding agents would prove to be the ultimate embodiment of the <a href=\"https://boringtechnology.club\">Choose Boring Technology</a> approach, but in practice they don’t seem to be affecting my technology choices in that way at all.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9146/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 认为，现代 AI 编程智能体在长上下文窗口和迭代工作流的加持下，能够有效利用新技术或小众技术，从而挑战了“选择无聊技术”的教条。",
+  "oneSentenceSummary": "Simon Willison 认为，现代 AI 编程智能体在长上下文窗口和迭代工作流的加持下，能够有效利用新技术或小众技术，从而挑战了“选择无聊技术”的教条。",
+  "summary": "本文探讨了一个普遍的担忧，即 LLM 可能会因为偏好训练数据中常见的主流技术而扼杀创新。作者观察到，虽然早期模型确实如此，但最新一代的编程智能体已经突破了这一限制。通过利用显著增大的上下文窗口，这些智能体可以即时吸收新技术或私有工具的文档。此外，智能体工作流允许它们分析现有的代码模式，并通过测试进行自我修正。因此，AI 并没有迫使开发者转向“无聊”的技术，反而变得能够支持更多样化和专业化的技术栈。",
+  "mainPoints": [
+    {
+      "point": "现代 LLM 已经超越了其初始训练数据的限制。",
+      "explanation": "虽然早期模型在处理小众语言时表现挣扎，但目前的编程智能体利用长上下文窗口，通过在提示阶段吸收文档来学习新工具。"
+    },
+    {
+      "point": "智能体工作流使 AI 能够有效掌握私有或全新的代码库。",
+      "explanation": "通过参考现有示例并迭代测试其输出，智能体可以填补那些从未出现在其原始训练集中的工具知识空白。"
+    },
+    {
+      "point": "AI 编程助手并没有强化“选择无聊技术”的思维模式。",
+      "explanation": "作者的经验表明，AI 并未将技术选择限制在主流选项中，因为智能体在处理新颖和专业库方面表现得异常出色。"
+    }
+  ],
+  "keyQuotes": [
+    "这些新模型的上下文长度足够长，以至于它们在开始解决问题之前可以吸收大量的文档。",
+    "将编程智能体投入到任何使用了私有或因太新而未包含在训练数据中的库和工具的现有代码库中，根据我的经验，它的表现非常出色。",
+    "我原以为编程智能体会被证明是“选择无聊技术”方法的终极体现，但在实践中，它们似乎根本没有以那种方式影响我的技术选择。"
+  ],
+  "tags": [
+    "LLM",
+    "编程智能体",
+    "软件架构",
+    "无聊的技术",
+    "上下文窗口"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 244,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773063465000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 13:37:45"
+}

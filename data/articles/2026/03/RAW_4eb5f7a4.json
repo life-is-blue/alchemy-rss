@@ -1,0 +1,53 @@
+{
+  "id": "RAW_4eb5f7a4",
+  "title": "无需生产数据即可生成生产查询计划",
+  "url": "https://simonwillison.net/2026/Mar/9/production-query-plans-without-production-data/#atom-everything",
+  "date": "2026-03-09 15:05:15",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">9th March 2026 - Link Blog</p>\n   <p><strong><a href=\"https://boringsql.com/posts/portable-stats/\">Production query plans without production data</a></strong> (<a href=\"https://lobste.rs/s/o8vbb7/production_query_plans_without\" title=\"Lobste.rs\">via</a>) Radim Marek describes the new <a href=\"https://www.postgresql.org/docs/current/functions-admin.html#FUNCTIONS-ADMIN-STATSMOD\"><code>pg_restore_relation_stats()</code> and <code>pg_restore_attribute_stats()</code> functions</a> that were introduced <a href=\"https://www.postgresql.org/docs/current/release-18.html\">in PostgreSQL 18</a> in September 2025.</p>\n   <p>The PostgreSQL query planner makes use of internal statistics to help it decide how to best execute a query. These statistics often differ between production data and development environments, which means the query plans used in production may not be replicable in development.</p>\n   <p>PostgreSQL's new features now let you copy those statistics down to your development environment, allowing you to simulate the plans for production workloads without needing to copy in all of that data first.</p>\n   <p>I found this illustrative example useful:</p>\n   <pre><code>SELECT pg_restore_attribute_stats(\n    'schemaname', 'public',\n    'relname', 'test_orders',\n    'attname', 'status',\n    'inherited', false::boolean,\n    'null_frac', 0.0::real,\n    'avg_width', 9::integer,\n    'n_distinct', 5::real,\n    'most_common_vals', '{delivered,shipped,cancelled,pending,returned}'::text,\n    'most_common_freqs', '{0.95,0.015,0.015,0.015,0.005}'::real[]\n);\n</code></pre>\n   <p>This simulates statistics for a <code>status</code> column that is 95% <code>delivered</code>. Based on these statistics PostgreSQL can decide to use an index for <code>status = 'shipped'</code> but to instead perform a full table scan for <code>status = 'delivered'</code>.</p>\n   <p>These statistics are pretty small. Radim says:</p>\n   <blockquote>\n    <p>Statistics dumps are tiny. A database with hundreds of tables and thousands of columns produces a statistics dump under 1MB. The production data might be hundreds of GB. The statistics that describe it fit in a text file.</p>\n   </blockquote>\n   <p>I posted on the SQLite user forum asking if SQLite could offer a similar feature and D. Richard Hipp promptly replied <a href=\"https://sqlite.org/forum/forumpost/480c5cb8a3898346\">that it has one already</a>:</p>\n   <blockquote>\n    <p>All of the data statistics used by the query planner in SQLite are available in the <a href=\"https://sqlite.org/fileformat.html#the_sqlite_stat1_table\">sqlite_stat1 table</a> (or also in the <a href=\"https://sqlite.org/fileformat.html#the_sqlite_stat4_table\">sqlite_stat4 table</a> if you happen to have compiled with SQLITE_ENABLE_STAT4). That table is writable. You can inject whatever alternative statistics you like.</p>\n    <p>This approach to controlling the query planner is mentioned in the documentation: <a href=\"https://sqlite.org/optoverview.html#manual_control_of_query_plans_using_sqlite_stat_tables\">https://sqlite.org/optoverview.html#manual_control_of_query_plans_using_sqlite_stat_tables</a>.</p>\n    <p>See also <a href=\"https://sqlite.org/lang_analyze.html#fixed_results_of_analyze\">https://sqlite.org/lang_analyze.html#fixed_results_of_analyze</a>.</p>\n    <p>The \".fullschema\" command in the CLI outputs both the schema and the content of the sqlite_statN tables, exactly for the reasons outlined above - so that we can reproduce query problems for testing without have to load multi-terabyte database files.</p>\n   </blockquote>\n   <p></p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9327/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了如何利用 PostgreSQL 18 和 SQLite 中的轻量级统计信息注入，在开发环境中复现生产数据库的查询计划。",
+  "oneSentenceSummary": "本文介绍了如何利用 PostgreSQL 18 和 SQLite 中的轻量级统计信息注入，在开发环境中复现生产数据库的查询计划。",
+  "summary": "本文讨论了数据库优化中的一个关键挑战：由于数据分布不同，生产环境和开发环境之间的查询计划存在差异。文章重点介绍了 PostgreSQL 18 中的新函数——`pg_restore_relation_stats()` 和 `pg_restore_attribute_stats()`，这些函数允许开发人员将生产统计信息导入本地环境。这使得查询规划器能够在无需传输海量或敏感数据集的情况下，模拟生产环境的行为。此外，作者指出 SQLite 通过其可写的 `sqlite_stat` 表提供了类似的功能，为通过元数据操作管理查询性能提供了跨数据库的视角。",
+  "mainPoints": [
+    {
+      "point": "PostgreSQL 18 支持利用元数据模拟生产查询计划。",
+      "explanation": "新函数允许开发人员手动设置属性和关系统计信息，从而强制本地查询规划器做出与处理生产规模数据集时相同的决策。"
+    },
+    {
+      "point": "与原始数据相比，数据库统计信息具有极高的便携性和轻量性。",
+      "explanation": "虽然生产数据可能达到数百 GB，但描述这些数据的统计信息通常可以容纳在 1 MB 的文本文件中，使其易于共享和版本控制。"
+    },
+    {
+      "point": "SQLite 通过统计表对其查询规划器提供类似的各种手动控制。",
+      "explanation": "通过直接写入 `sqlite_stat1` 或 `sqlite_stat4` 表，开发人员可以注入特定的数据分布，从而在不加载数 TB 文件的情况下复现查询问题。"
+    }
+  ],
+  "keyQuotes": [
+    "PostgreSQL 的新功能现在允许你将这些统计信息复制到开发环境中，让你无需先复制所有数据，就能模拟生产负载的计划。",
+    "统计信息转储非常小。一个拥有数百张表和数千列的数据库生成的统计信息转储不到 1 MB。而生产数据可能高达数百 GB。",
+    "CLI 中的 '.fullschema' 命令会同时输出模式和 sqlite_statN 表的内容……这样我们就可以在不加载数 TB 数据库文件的情况下，复现查询问题进行测试。"
+  ],
+  "tags": [
+    "PostgreSQL",
+    "SQLite",
+    "数据库优化",
+    "查询规划器",
+    "性能调优"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 343,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773068715000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 15:05:15"
+}

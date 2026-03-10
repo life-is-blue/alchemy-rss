@@ -1,0 +1,63 @@
+{
+  "id": "RAW_fe1dcc4d",
+  "title": "Netflix 自动化完成 400 多个生产集群从 RDS PostgreSQL 到 Aurora PostgreSQL 的迁移",
+  "url": "https://www.infoq.com/news/2026/03/netflix-automates-rds-aurora/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-09 15:00:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Netflix has described an <a href=\"https://netflixtechblog.com/automating-rds-postgres-to-aurora-postgres-migration-261ca045447f\">internal automation platform that migrates Amazon RDS for PostgreSQL databases to Amazon Aurora PostgreSQL</a>, reducing operational risk and downtime across nearly 400 production clusters. The system enables service teams to initiate migrations through a self-service workflow while enforcing replication validation, controlled cutover, change data capture coordination, and rollback safeguards.</p>\n   <p>Netflix routes database access through a platform-managed data access layer built on Envoy, which standardizes <a href=\"https://en.wikipedia.org/wiki/Mutual_authentication\">mutual TLS</a> and abstracts database endpoints from application code. Because services do not directly manage credentials or connection strings, migrations must occur transparently beneath this layer. The automation, therefore, coordinates replication, validation, cutover, CDC handling, and rollback entirely at the infrastructure level.</p>\n   <p>Netflix engineers emphasized:</p>\n   <blockquote>\n    <p>Our goal was to make RDS to Aurora migrations repeatable and low-touch, while preserving correctness guarantees for both transactional workloads and CDC pipelines.</p>\n   </blockquote>\n   <p>The workflow begins by creating an Aurora PostgreSQL cluster as a physical <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.Configuration.html\">read replica</a> of the source RDS PostgreSQL instance using capabilities provided by <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Migrating.RDSPostgreSQL.Import.Console.html\">Amazon Web Services</a>. The replica is initialized from a storage snapshot and continuously replays write-ahead log records streamed from the source. During this phase, the system validates replication slot health, WAL generation rates, parameter compatibility, extension parity, and sustained replication lag under production traffic, ensuring the replica can sustain peak write throughput before cutover.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/netflix-automates-rds-aurora/news/2026/03/netflix-automates-rds-aurora/en/resources/1readreplica-1772246270071.jpeg\" style=\"width:100%;height:858px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/netflix-automates-rds-aurora/en/resources/1readreplica-1772246270071.jpeg\" rel=\"share\"></p>\n   <p><em>RDS to Aurora PostgreSQL Migration Workflow (Source: <a href=\"https://netflixtechblog.com/automating-rds-postgres-to-aurora-postgres-migration-261ca045447f\">Netflix Blog Post</a>)</em></p>\n   <p>For workloads using change data capture, including logical replication slots or downstream stream processors, the automation coordinates slot state before quiescence. CDC consumers are paused to prevent excessive WAL retention, and slot positions are recorded so that equivalent replication slots can be recreated on Aurora at the correct log sequence number after promotion. This preserves downstream consistency while avoiding WAL buildup that could increase replication lag.</p>\n   <p>An early adopter, Netflix's Enablement Applications team, migrated databases supporting device certification and partner billing workflows. During replication, engineers detected an elevated <a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.Monitor.html\">OldestReplicationSlotLag</a> caused by an inactive logical replication slot retaining WAL segments and increasing replication lag. After removing the stale slot, replication converged, and migration completed successfully with post-cutover metrics matching pre-migration baselines.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/netflix-automates-rds-aurora/news/2026/03/netflix-automates-rds-aurora/en/resources/1enablementoverview-1772246270071.jpeg\" style=\"width:100%;height:1514px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/netflix-automates-rds-aurora/en/resources/1enablementoverview-1772246270071.jpeg\" rel=\"share\"></p>\n   <p><em>Simplified Enablement Applications Overview (Source: <a href=\"https://netflixtechblog.com/automating-rds-postgres-to-aurora-postgres-migration-261ca045447f\">Netflix Blog Post</a>)</em></p>\n   <p>When replication lag approaches zero, the system enters a controlled quiescence phase. Security group rules are modified, and the source RDS instance is rebooted to block new connections at the infrastructure layer. After confirming that all in-flight transactions have been applied and that the Aurora replica has replayed the final WAL records, the replica is promoted to a writable Aurora cluster, and the data access layer routes traffic to the new endpoint.</p>\n   <p>According to Netflix engineers, rollback was treated as a first-class concern. Until promotion is finalized and traffic is fully shifted, the original RDS instance remains intact as the authoritative source. If validation checks fail during synchronization or if post-promotion health checks detect anomalies, traffic can be redirected back to the RDS cluster through the data access layer. Because applications are decoupled from physical endpoints, reverting the routing configuration restores the prior state without redeployment. CDC consumers can also resume from previously recorded slot positions on the original cluster if required.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Automates RDS PostgreSQL to Aurora PostgreSQL Migration Across 400 Production Clusters\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/netflix-automates-rds-aurora/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773068400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 开发了一个内部自动化平台，利用基于 Envoy 的数据访问层和严格的复制验证，透明地将 400 多个 RDS PostgreSQL 集群迁移到 Aurora PostgreSQL。",
+  "oneSentenceSummary": "Netflix 开发了一个内部自动化平台，利用基于 Envoy 的数据访问层和严格的复制验证，透明地将 400 多个 RDS PostgreSQL 集群迁移到 Aurora PostgreSQL。",
+  "summary": "本文详细介绍了 Netflix 将近 400 个生产数据库集群从 Amazon RDS 迁移到 Aurora PostgreSQL 的策略。该方案的核心是一个自动化平台，它利用托管数据访问层（Envoy）来抽象数据库端点，从而在无需更改应用程序代码的情况下进行迁移。工作流程包括创建物理只读副本、WAL 重放、复制健康状况验证以及受控的切流过程。值得注意的是，它解决了变更数据捕获（CDC）协调等复杂挑战，并通过在最终提升前保持源 RDS 实例完好，提供了强大的回滚机制。",
+  "mainPoints": [
+    {
+      "point": "通过托管数据访问层进行的抽象实现了透明的数据库迁移。",
+      "explanation": "通过基于 Envoy 的层（处理 mTLS 和端点管理）路由流量，Netflix 将应用程序与物理数据库连接字符串解耦。这使得基础设施团队能够将底层的 RDS 实例更换为 Aurora 集群，而无需服务团队重新部署或更改代码。"
+    },
+    {
+      "point": "严格的迁移前验证确保目标集群能够处理生产写入吞吐量。",
+      "explanation": "在切流之前，自动化系统会验证复制槽健康状况、WAL 生成速率和参数兼容性。通过监控生产高峰流量下的持续复制延迟，系统可以保证 Aurora 副本已完全同步，并有能力承担主库角色。"
+    },
+    {
+      "point": "协调的变更数据捕获（CDC）处理维护了下游数据的一致性。",
+      "explanation": "该平台通过暂停 CDC 消费者并记录日志序列号（LSN）来管理逻辑复制槽。这防止了源端过多的 WAL 积压，并允许消费者在提升后从新 Aurora 集群的正确位置恢复。"
+    },
+    {
+      "point": "受控的静默阶段最大限度地减少了停机时间，并防止切流期间的数据丢失。",
+      "explanation": "系统通过修改安全组并重启源 RDS 实例来阻止新连接。随后，它在提升副本之前确认所有在途事务都已应用到副本，从而确保向可写 Aurora 集群的零数据丢失转换。"
+    },
+    {
+      "point": "回滚被视为首要关注点，以降低操作风险。",
+      "explanation": "在最终提升验证完成之前，原始 RDS 实例始终是权威数据源。如果切流后的健康检查发现异常，数据访问层可以立即将流量重定向回原始实例，提供安全且快速的恢复路径。"
+    }
+  ],
+  "keyQuotes": [
+    "我们的目标是使 RDS 到 Aurora 的迁移变得可重复且低干预，同时保证事务型工作负载和 CDC 流水的正确性。",
+    "由于服务不直接管理凭据或连接字符串，迁移必须在这一层之下透明地进行。",
+    "因此，自动化系统完全在基础设施层面协调复制、验证、切流、CDC 处理和回滚。",
+    "在提升最终完成且流量完全切换之前，原始 RDS 实例作为权威数据源保持完好。",
+    "由于应用程序与物理端点解耦，恢复路由配置即可恢复到之前的状态，而无需重新部署。"
+  ],
+  "tags": [
+    "PostgreSQL",
+    "AWS Aurora",
+    "数据库迁移",
+    "基础设施自动化",
+    "Envoy Proxy"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 514,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773068400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 15:00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_6894e577",
+  "title": "Junie CLI，支持多种大模型的编程智能体，现已开启 Beta 测试 | JetBrains Junie 博客",
+  "url": "https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/",
+  "date": "2026-03-09 13:26:28",
+  "author": "Anastasia Krivosheeva",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>This March, we’re taking a major step forward in the development of Junie, the coding agent by JetBrains.</p>\n  <p>Meet Junie CLI, the evolution of Junie into a fully standalone AI agent. With the upcoming release of Junie CLI, you will be able to use Junie directly from the terminal, inside any IDE, in CI/CD, and on GitHub or GitLab. Why do we call it LLM-agnostic? Junie supports all the top-performing models from OpenAI, Anthropic, Google, and Grok, and will be integrating the latest models as they are released.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" fetchpriority=\"high\" width=\"1600\" height=\"1043\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/96580981-f607-4fe1-a77e-bd958bf883e6.png\" alt=\"\" class=\"wp-image-686111\">\n  </figure>\n  <p></p>\n  <p>Supporting all popular developer workflows, we want Junie CLI to be barrier-free from the very beginning:</p>\n  <ul>\n   <li><strong>One-click migration</strong> from other agents such as Claude Code, Codex, and others.</li>\n   <li><strong>Flexible customization</strong> through guidelines, custom agents and agent skills, commands, MCP, and other agent configuration methods.</li>\n   <li><strong>BYOK (Bring Your Own Key)</strong> pricing, allowing you to use your own model keys and run the agent without additional platform charges.</li>\n  </ul>\n  <p></p>\n  <div class=\"alert \">\n   <p><strong>Note:</strong> To help you get started, we’re offering free access to Gemini 3 Flash for one week. It’s enabled by default, so you can install Junie CLI and begin using it right away at no cost. After the week, standard pricing applies.&nbsp;</p>\n  </div>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"http://jb.gg/g279g2\" class=\"btn\" target=\"\" rel=\"noopener\">Get started with Junie</a>\n   </div>\n  </div>\n  <p><strong>Bring JetBrains quality to any environment</strong></p>\n  <p>Junie is powered by JetBrains intelligence, combining LLM capabilities with deep project context, structured understanding, and workflow awareness.</p>\n  <p>Junie demonstrates high performance across top-performing models, delivering strong benchmark results — even with fast, low-cost models like Gemini Flash 3 — while maintaining responsiveness and accuracy.</p>\n  <p>It’s designed to be:</p>\n  <ul>\n   <li>LLM-agnostic and open to all high-performing models</li>\n   <li>Capable of solving even complex problems</li>\n   <li>Context-aware by default</li>\n   <li>Reliable and secure, supported by all required safeguards</li>\n  </ul>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" width=\"1600\" height=\"967\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/68053b15-d23c-4333-8678-df295a3ae81c.png\" alt=\"\" class=\"wp-image-686123\">\n  </figure>\n  <p><strong>Real-time Prompting</strong>\n   <br>\n   Work doesn’t stop while Junie runs. You can adjust instructions and add details in real time — refining outputs without restarting the process.\n   <br></p>\n  <p><strong>Codebase Intelligence</strong></p>\n  <p>Junie isn’t just “AI in a terminal.” It’s a fully standalone agent with capabilities designed to move beyond simple prompting.\n   <br></p>\n  <p><strong>Easy MCP Configuration</strong></p>\n  <p>Install popular MCP servers in a few clicks, with no manual configuration required. Junie can also detect when an MCP server could help with your task and recommend the most relevant option.\n   <br></p>\n  <p><strong>Next-task Prediction</strong>\n   <br>\n   By understanding the project context, Junie anticipates what you might need next. It doesn’t just react — it proactively supports your workflow, and can even remind you of things you might otherwise forget or miss.</p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" width=\"1600\" height=\"967\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/image-8.png\" alt=\"\" class=\"wp-image-686059\">\n  </figure>\n  <p><strong>Making the pricing model more affordable and open</strong></p>\n  <p>We are designing the pricing in a completely new way. As usual, JetBrains AI licenses can be used to access Junie CLI. However, we believe that our first users deserve an even more transparent model.</p>\n  <p>We support BYOK (Bring Your Own Key), giving developers and teams the flexibility to choose their preferred model or easily test new ones. Whether you rely on specific providers for compliance, performance, cost management, or internal policies, Junie integrates seamlessly with your existing setup. This ensures teams can adopt Junie without compromising governance, security, or code quality.</p>\n  <p><strong>Millions of tasks – and one agent to rule them all</strong></p>\n  <p>We don’t work in a single environment anymore.</p>\n  <p>As a developer, you have to switch between different platforms all the time:&nbsp;&nbsp;</p>\n  <ul>\n   <li>IDEs</li>\n   <li>Terminals</li>\n   <li>Pull requests</li>\n   <li>CI/CD pipelines</li>\n   <li>Cloud platforms</li>\n  </ul>\n  <p></p>\n  <p>Now Junie meets you where you are. By making Junie available outside JetBrains IDEs, we’re expanding from IDE-native AI to ecosystem-level AI – using one agent to connect platforms. This is a significant milestone for us and an important step toward enabling professional-level development, even outside the IDE.</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/junie/2025/10/how-to-use-a-spec-driven-approach-for-coding-with-ai/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> How to Use a Spec-Driven Approach for Coding with AI</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "JetBrains 推出了 Junie CLI 的 Beta 版本，这是一款独立的、支持多种大模型的 AI 编程智能体，通过灵活的“自带密钥”（BYOK）模式，将 JetBrains 的代码库智能带入终端、CI/CD 和各类 IDE。",
+  "oneSentenceSummary": "JetBrains 推出了 Junie CLI 的 Beta 版本，这是一款独立的、支持多种大模型的 AI 编程智能体，通过灵活的“自带密钥”（BYOK）模式，将 JetBrains 的代码库智能带入终端、CI/CD 和各类 IDE。",
+  "summary": "本文介绍了 Junie CLI，它是 JetBrains AI 智能体向多功能终端助手的演进。核心亮点包括其对大模型的兼容性（支持 OpenAI、Anthropic、Google 和 Grok 的模型）以及“自带密钥”（BYOK）计费模式，从而提供成本和合规方面的灵活性。除了简单的提示词功能，Junie 还利用 JetBrains 深厚的项目上下文和结构化理解能力来提供代码库智能。其功能包括实时提示、便捷的 MCP 集成以及主动的下一任务预测。通过跳出 IDE 的限制，JetBrains 旨在终端、拉取请求和 CI/CD 流水中提供一致的 AI 体验，弥合不同开发环境之间的鸿沟。",
+  "mainPoints": [
+    {
+      "point": "Junie CLI 标志着 JetBrains AI 智能体向独立终端工具的演进。",
+      "explanation": "它允许开发人员在任何 IDE、终端或 CI/CD 流水线中使用 JetBrains 的 AI 能力，无论具体环境如何，都能在整个软件开发生命周期中提供一致的体验。"
+    },
+    {
+      "point": "该智能体采用大模型无关设计，支持主流模型并提供“自带密钥”计费模式。",
+      "explanation": "用户可以集成来自 OpenAI、Anthropic 或 Google 等供应商的密钥，确保成本透明并符合内部数据政策，同时避免额外的平台特定附加费或供应商锁定。"
+    },
+    {
+      "point": "Junie 通过将 LLM 能力与 JetBrains 专有的项目上下文理解相结合，集成了深度的代码库智能。",
+      "explanation": "与简单的终端包装器不同，它使用结构化的项目数据来提供上下文感知的建议、下一任务预测以及实时指令调整，而无需重新启动生成过程。"
+    }
+  ],
+  "keyQuotes": [
+    "Junie 由 JetBrains 智能驱动，将 LLM 能力与深厚的项目上下文、结构化理解和工作流感知相结合。",
+    "通过让 Junie 在 JetBrains IDE 之外可用，我们正在从 IDE 原生 AI 扩展到生态系统级 AI —— 使用一个智能体连接各个平台。",
+    "我们支持 BYOK（自带密钥），让开发人员和团队能够灵活选择自己喜欢的模型，或轻松测试新模型。",
+    "在 Junie 运行时，工作并不会停止。你可以实时调整指令并添加细节 —— 在不重新启动过程的情况下优化输出。"
+  ],
+  "tags": [
+    "AI 编程智能体",
+    "CLI",
+    "JetBrains",
+    "大模型无关",
+    "BYOK"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 598,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773062788000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 13:26:28"
+}

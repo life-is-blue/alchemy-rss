@@ -1,0 +1,55 @@
+{
+  "id": "RAW_365cc3b5",
+  "title": "学习阅读 C++ 编译器错误：二义性重载运算符",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260309-00/?p=112118",
+  "date": "2026-03-09 17:47:41",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A customer was adding a feature to an old C++ code base, and the most convenient way to consume the feature was to use C++/WinRT. However, once they added C++/WinRT to their project, they ran into compiler errors in parts of their code that hadn’t changed in decades. As an added wrinkle, the problem occurred only in 32-bit builds.</p>\n  <pre>std::ostream&amp; operator&lt;&lt;(ostream&amp; os, LARGE_INTEGER const&amp; value)\r\n{\r\n    return os &lt;&lt; value.QuadPart; // ← error\r\n}\r\n</pre>\n  <p>The error complained that the <code>&lt;&lt;</code> operator was ambiguous.</p>\n  <pre style=\"white-space: pre-wrap;\">contoso.cpp(3141) : error C2593: 'operator &lt;&lt;' is ambiguous\r\nostream(436): note: could be 'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(long double)'\r\nostream(418): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(double)'\r\nostream(400): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(float)'\r\nostream(382): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(unsigned __int64)'\r\nostream(364): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(__int64)'\r\nostream(346): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(unsigned long)'\r\nostream(328): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(long)'\r\nostream(309): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(unsigned int)'\r\nostream(283): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(int)'\r\nostream(264): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(unsigned short)'\r\nostream(230): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(short)'\r\nostream(212): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt;::operator &lt;&lt;(bool)'\r\ncontoso.h(1554): note: or       'std::ostream &amp;operator &lt;&lt;(std::ostream &amp;,const unsigned __int64 &amp;)'\r\ncontoso.h(1548): note: or       'std::ostream &amp;operator &lt;&lt;(std::ostream &amp;,const __int64 &amp;)'\r\nostream(953): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::operator &lt;&lt;&lt;std::char_traits&lt;char&gt;&gt;(std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;,unsigned char)'\r\nostream(942): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::operator &lt;&lt;&lt;std::char_traits&lt;char&gt;&gt;(std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;,signed char)'\r\nostream(819): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::operator &lt;&lt;&lt;std::char_traits&lt;char&gt;&gt;(std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;,char)'\r\nostream(738): note: or       'std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;std::operator &lt;&lt;&lt;char,std::char_traits&lt;char&gt;&gt;(std::basic_ostream&lt;char,std::char_traits&lt;char&gt;&gt; &amp;,char)'\r\ncontoso.cpp(1582): note: while trying to match the argument list '(std::ostream, LONGLONG)'\r\n</pre>\n  <p>All of these are different overloads of <code>std::ostream&amp; std::ostream::operator&lt;&lt;(something)</code> or <code>std::ostream&amp; operator&lt;&lt;(std::ostream&amp;, something)</code>, so let’s remove all the repeated stuff to make it easier to see what we are up against.</p>\n  <pre style=\"white-space: pre-wrap;\">ostream(436): long double\r\nostream(418): double\r\nostream(400): float\r\nostream(382): unsigned __int64\r\nostream(364): __int64\r\nostream(346): unsigned long\r\nostream(328): long\r\nostream(309): unsigned int\r\nostream(283): int\r\nostream(264): unsigned short\r\nostream(230): short\r\nostream(212): bool\r\ncontoso.h(1554): const unsigned __int64 &amp;\r\ncontoso.h(1548): const __int64 &amp;\r\nostream(953): unsigned char\r\nostream(942): signed char\r\nostream(819): char\r\nostream(738): char\r\n</pre>\n  <p>From the code, we see that the intention is to use the insertion operator that takes a signed 64-bit integer, so let’s filter down to those.</p>\n  <pre style=\"white-space: pre-wrap;\">ostream(364): __int64\r\ncontoso.h(1548): const __int64 &amp;\r\n</pre>\n  <p>Aha, now we see the conflict. The C++ standard library (<code>&lt;ostream&gt;</code>) has defined an output inserter for <code>__int64</code>, and the customer has defined an output inserter for <code>const __int64&amp;</code>, so the compiler can’t choose between them.</p>\n  <p>The compiler kindly provided line numbers, so we can look at the conflict introduced by <code>contoso.h</code>.</p>\n  <pre>#if !defined(_WIN64) &amp;&amp; !defined(_STL70_) &amp;&amp; !defined(_STL110_)\r\n\r\n// These are already defined in STL\r\nstd::ostream&amp; operator&lt;&lt;(std::ostream&amp;, const __int64&amp; );\r\nstd::ostream&amp; operator&lt;&lt;(ostd::stream&amp;, const unsigned __int64&amp; );\r\n\r\n#endif /* _WIN64 _STL70_ _STL110_ */\r\n</pre>\n  <p>Okay, well the <code>!defined(_WIN64)</code> explains why this problem occurs only in 32-bit builds: The conflicting definition is <code>#if</code>‘d out in 64-bit builds.</p>\n  <p>The rest of the <code>#if</code> expression removes the conflicting definition for STL versions 7.0 and 11.0. So what happened to reactivate this code path?</p>\n  <p>Adding C++/WinRT to the project.</p>\n  <p>C++/WinRT requires C++17 or later, which means that the project had to bump its compiler version, and that pushed the STL version to 12.0. And their custom <code>#if</code> doesn’t handle that case.</p>\n  <p>I went back through the project history, and saw that about five years ago, the line was just</p>\n  <pre>#if !defined(_WIN64) &amp;&amp; !defined(_STL70_)\r\n</pre>\n  <p>So I’m guessing that at some point in the past five years, they upgraded their compiler version, and they ran into this <i>exact problem</i>, and they realized, “Oh, we need to suppress this for STL 11.0, too,” and they added the <code>!defined(_STL110_)</code>.</p>\n  <p>History repeats itself.</p>\n  <p>One solution is to put another layer of duct tape on it.</p>\n  <pre>#if !defined(_WIN64) &amp;&amp; !defined(_STL70_) &amp;&amp; !defined(_STL110_) <span style=\"border: solid 1px currentcolor;\">&amp;&amp; !defined(_STL120_)</span>\r\n</pre>\n  <p>Of course, this just means that in another five years, when they decide to upgrade to C++30, this problem will come back and somebody will have to add yet another layer of duct tape.</p>\n  <p>So they could choose something that is a bit more forward-compatible:</p>\n  <pre>#if !defined(_WIN64) &amp;&amp; !defined(_STL70_) &amp;&amp; !defined(_STL110_) <span style=\"border: solid 1px currentcolor;\">&amp;&amp; __cplusplus &lt; 201700</span>\r\n</pre>\n  <p>Or they could just delete the entire block. I doubt they are going to roll their compiler back to C++03.</p>\n </body>\n</html>",
+  "aiSummary": "本文演示了如何诊断和解决在遗留代码迁移过程中，由过时的预处理器保护引起的 C++ 编译器二义性错误。",
+  "oneSentenceSummary": "本文演示了如何诊断和解决在遗留代码迁移过程中，由过时的预处理器保护引起的 C++ 编译器二义性错误。",
+  "summary": "文章详细介绍了一个调试场景：在一个遗留 C++ 项目中添加 C++/WinRT 时，在 32 位构建中触发了“二义性重载”错误。通过系统地分析编译器错误日志，作者发现标准库对 `__int64` 的 `<<` 运算符实现与项目遗留头文件中的自定义实现之间存在冲突。根本原因是一组预处理器 `#if` 保护未能考虑到 C++17 要求引入的新版本 STL。作者建议放弃“修补式”的版本检查，转而采用向前兼容的逻辑，或者直接删除现代编译器原生支持的冗余遗留代码。",
+  "mainPoints": [
+    {
+      "point": "系统地过滤编译器错误日志以识别核心冲突。",
+      "explanation": "冗长的 C++ 错误消息通常列出数十个候选对象；剥离模板样板代码和重复的命名空间，可以让开发人员看到导致二义性的具体类型不匹配。"
+    },
+    {
+      "point": "预处理器逻辑中硬编码的版本保护会产生长期维护债务。",
+      "explanation": "使用像 `_STL110_` 这样特定的版本宏需要随着编译器的演进而不断更新。当项目最终升级到 C++17 等新标准时，这种“修补式”方法必然会失败。"
+    },
+    {
+      "point": "通过删除冗余的自定义运算符来现代化遗留代码库。",
+      "explanation": "许多针对旧版 C++ 标准缺失功能的权宜之计现在已由 STL 原生支持。删除这些代码块通常比尝试修复复杂的条件编译逻辑更安全、更简洁。"
+    }
+  ],
+  "keyQuotes": [
+    "错误提示 `<<` 运算符具有二义性。",
+    "C++ 标准库为 __int64 定义了一个输出插入器，而客户为 const __int64& 定义了一个输出插入器，因此编译器无法在两者之间做出选择。",
+    "历史在重演。",
+    "当然，这只意味着再过五年……这个问题会再次出现，而且必须有人再贴上一层胶带。",
+    "或者他们可以直接删除整个代码块。我怀疑他们不会将编译器回滚到 C++03。"
+  ],
+  "tags": [
+    "C++",
+    "编译器错误",
+    "遗留代码",
+    "STL",
+    "预处理器"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 667,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773078461000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-09 17:47:41"
+}
