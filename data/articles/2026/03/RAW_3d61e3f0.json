@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3d61e3f0",
+  "title": "Vercel Sandbox 现已支持 1 vCPU + 2 GB 配置 - Vercel",
+  "url": "https://vercel.com/changelog/vercel-sandbox-now-supports-1-vcpu-2-gb-configurations",
+  "date": "2026-03-10 13:00:00",
+  "author": "Rob Herley, Tom Lienard",
+  "siteName": "Vercel News",
+  "content": "<html>\n <head></head>\n <body>\n  <div data-customer-story=\"false\" class=\"flex flex-col items-center justify-start gap-6 flex-initial article-module__9eLiuW__content\">\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__fl7lUq__paragraph\">Vercel Sandbox now supports creating Sandboxes with only 1 vCPU and 2 GB of RAM. This is ideal for single-threaded or light workloads which don't benefit from additional system resources. When unspecified, the default is still 2 vCPUs and 4 GB of RAM.</p>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__fl7lUq__paragraph\">Get started by setting the <code>resources.vcpus</code> option in the <a href=\"https://vercel.com/docs/vercel-sandbox/sdk-reference#sandbox.create\" target=\"_blank\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"/docs/vercel-sandbox/sdk-reference#sandbox.create\" data-zone=\"667155\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">SDK</a>:</p>\n   <div class=\"flex flex-col items-stretch justify-start gap-4 flex-initial blog-code-block-module__zaYDqW__wrapper\">\n    <div class=\"relative code-block-module__NOThwW__wrapper blog-code-block-module__zaYDqW__codeBlock\" data-geist-code-block=\"\">\n     <button aria-label=\"Copy code\" class=\"code-block-module__NOThwW__copyButton code-block-module__NOThwW__copyFloatingButton\" type=\"button\"></button>\n     <pre class=\"prism-code language-typescript code-block-module__NOThwW__pre blog-code-block-module__zaYDqW__maxHeight\"><code class=\"code-block-module__NOThwW__code\" data-geist-code-block=\"true\"><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C008fcb85-L1\" data-highlighted=\"false\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token keyword\">import</span><span class=\"token plain\"> </span><span class=\"token punctuation\">{</span><span class=\"token plain\"> Sandbox </span><span class=\"token punctuation\">}</span><span class=\"token plain\"> </span><span class=\"token keyword\">from</span><span class=\"token plain\"> </span><span class=\"token string\">\"@vercel/sandbox\"</span><span class=\"token punctuation\">;</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C008fcb85-L2\" data-highlighted=\"false\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\" style=\"display:inline-block\">\n</span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C008fcb85-L3\" data-highlighted=\"false\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\"></span><span class=\"token keyword\">const</span><span class=\"token plain\"> sandbox </span><span class=\"token operator\">=</span><span class=\"token plain\"> </span><span class=\"token keyword\">await</span><span class=\"token plain\"> Sandbox</span><span class=\"token punctuation\">.</span><span class=\"token function\">create</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">{</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C008fcb85-L4\" data-highlighted=\"true\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\">  resources</span><span class=\"token operator\">:</span><span class=\"token plain\"> </span><span class=\"token punctuation\">{</span><span class=\"token plain\"> vcpus</span><span class=\"token operator\">:</span><span class=\"token plain\"> </span><span class=\"token number\">1</span><span class=\"token plain\"> </span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">,</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C008fcb85-L5\" data-highlighted=\"false\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\"></span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></div></div></code></pre>\n    </div>\n    <p class=\"text-center text-copy-14 text-gray-900\"></p>\n   </div>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__fl7lUq__paragraph\">Or using the <code>--vcpus</code> option in the <a href=\"https://vercel.com/docs/vercel-sandbox/cli-reference#sandbox-create\" target=\"_blank\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"/docs/vercel-sandbox/cli-reference#sandbox-create\" data-zone=\"667155\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">CLI</a>:</p>\n   <div class=\"flex flex-col items-stretch justify-start gap-4 flex-initial blog-code-block-module__zaYDqW__wrapper\">\n    <div class=\"relative code-block-module__NOThwW__wrapper blog-code-block-module__zaYDqW__codeBlock\" data-geist-code-block=\"\">\n     <button aria-label=\"Copy code\" class=\"code-block-module__NOThwW__copyButton code-block-module__NOThwW__copyFloatingButton\" type=\"button\"></button>\n     <pre class=\"prism-code language-bash code-block-module__NOThwW__pre blog-code-block-module__zaYDqW__maxHeight\"><code class=\"code-block-module__NOThwW__code\" data-geist-code-block=\"true\"><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C1ef8fe0f-L1\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\">sandbox create </span><span class=\"token parameter variable\">--connect</span><span class=\"token plain\"> </span><span class=\"token parameter variable\">--vcpus</span><span class=\"token plain\"> </span><span class=\"token number\">1</span></div></div></code></pre>\n    </div>\n    <p class=\"text-center text-copy-14 text-gray-900\"></p>\n   </div>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__fl7lUq__paragraph\">Learn more about Sandbox in the <a href=\"https://vercel.com/docs/vercel-sandbox\" target=\"_blank\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"/docs/vercel-sandbox\" data-zone=\"667155\" class=\"link-module__Q1NRQq__link link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">docs</a>.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Vercel Sandbox 推出全新的 1 vCPU 和 2 GB RAM 配置选项，专为轻量级和单线程工作负载优化。",
+  "oneSentenceSummary": "Vercel Sandbox 推出全新的 1 vCPU 和 2 GB RAM 配置选项，专为轻量级和单线程工作负载优化。",
+  "summary": "Vercel 的这份官方更新日志宣布为 Vercel Sandbox 增加了一个较低层级的资源配置。开发者现在可以配置具有 1 vCPU 和 2 GB RAM 的环境，为不需要默认 2 vCPUs 和 4 GB RAM 的任务提供更高效的选择。此次更新旨在优化轻量级或单线程流程的资源消耗。文章提供了使用 Vercel Sandbox SDK 和 CLI 的简洁实现示例，确保开发者可以轻松地将这些较小的实例集成到他们的工作流中。",
+  "mainPoints": [
+    {
+      "point": "Vercel Sandbox 现在提供 1 vCPU 和 2 GB RAM 的精简资源配置。",
+      "explanation": "这一新层级允许开发者更高效地运行轻量级或单线程工作负载，避免了标准默认设置下可能出现的系统资源过度配置。"
+    },
+    {
+      "point": "新 Sandbox 的默认配置仍保持为 2 vCPUs 和 4 GB RAM。",
+      "explanation": "除非开发者在创建时明确指定资源需求，否则系统将继续分配标准的更高容量资源，以确保常规任务的基础性能。"
+    },
+    {
+      "point": "资源限制可以通过官方 SDK 和命令行界面进行自定义。",
+      "explanation": "Vercel 提供了灵活的集成方式，允许用户通过 JavaScript SDK 中的 `resources.vcpus` 选项或 CLI 工具中的 `--vcpus` 标志来设置 vCPU 数量。"
+    }
+  ],
+  "keyQuotes": [
+    "Vercel Sandbox 现在支持创建仅包含 1 vCPU 和 2 GB RAM 的 Sandbox。",
+    "这对于无法从额外系统资源中获益的单线程或轻量级工作负载来说非常理想。",
+    "未指定时，默认仍为 2 vCPUs 和 4 GB RAM。"
+  ],
+  "tags": [
+    "Vercel",
+    "云计算",
+    "资源管理",
+    "DevOps",
+    "Serverless"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 90,
+  "domain": "vercel.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_0256cc",
+  "sourceName": "Vercel News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773147600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-10 13:00:00"
+}

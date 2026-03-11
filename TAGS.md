@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-11 06:03:34 | [返回首页](/README.md)
+**更新时间**: 2026-03-11 08:06:57 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9562)
+- [AI & 大模型](#ai-llm) (9576)
 - [软件架构](#architecture) (19)
-- [前端与全栈](#frontend-fullstack) (708)
-- [DevOps](#devops) (428)
+- [前端与全栈](#frontend-fullstack) (710)
+- [DevOps](#devops) (431)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4941)
+- [其他](#other) (4945)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Claude-Code-创始人再次公开：团队的-10-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247718904&idx=1&sn=7f77ee06ab57fd11bc44ab6f782cd644) - AI 精选
 - [深度解读：OpenClaw-架构及生态](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491455&idx=1&sn=33d58cb6f0d2cd3b9c08c3c84a223e25) - AI 精选
 
-- [查看全部 9562 篇...](/details/tags/ai-llm.md)
+- [查看全部 9576 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -99,7 +99,7 @@
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 - [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 708 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 710 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -128,7 +128,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 428 篇...](/details/tags/devops.md)
+- [查看全部 431 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -164,6 +164,7 @@
 
 
 
+- [AlphaGo-十周年：AI-创新如何铺就通往-AGI-之路](https://deepmind.google/blog/10-years-of-alphago/) - AI 精选
 - [GLM-5-技术报告：技术细节全公开](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493485&idx=1&sn=bc8337e1e3095c4a29f20dd46161a14a) - AI 精选
 - [火爆全网的《卢浮宫小猫》AI-视频万字创作心得分享，这可能是他们最毫无保留的一次。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647678972&idx=1&sn=d42663a7ea0cf4881ce4c5f5fdcb7bb6) - AI 精选
 - [AI-开始“动手”了，全世界第一个带头的是阿里千问](https://www.qbitai.com/2026/01/369558.html) - AI 精选
@@ -183,8 +184,7 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
-- [如何在产品发布第一天就获得百万曝光：一个-23-岁创业者的百万美元生意经](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247491291&idx=1&sn=7b567801f251b33ac076b85b4c2f89bd) - AI 精选
 
-- [查看全部 4941 篇...](/details/tags/other.md)
+- [查看全部 4945 篇...](/details/tags/other.md)
 
 

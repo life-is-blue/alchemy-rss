@@ -1,0 +1,59 @@
+{
+  "id": "RAW_93bb76d4",
+  "title": "Fragments：3 月 10 日",
+  "url": "https://martinfowler.com/fragments/2026-03-10.html",
+  "date": "2026-03-10 17:50:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p><a href=\"https://www.theguardian.com/us-news/2026/mar/04/california-tech-gofan-fine\">Tech firm fined $1.1m by California for selling high-school students’ data</a></p>\n  <p>I agree with <a href=\"https://mstdn.social/@marick/116173536550791837\">Brian Marick’s response</a></p>\n  <blockquote>\n   <p>No such story should be published without a comparison of the fine to the company’s previous year revenue and profits, or valuation of last funding round. (I could only find a valuation of $11.0M in 2017.)</p>\n   <p>We desperately need corporations’ attitudes to shift from “lawbreaking is a low-risk cost of doing business; we get a net profit anyway” to “this could be a death sentence.”</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Charity Majors gave the closing keynote at SRECon last year, encouraging people to engage with generative AI.</p>\n  <blockquote>\n   <p>If I was giving the keynote at SRECon 2026, I would ditch the begrudging stance. I would start by acknowledging that AI is radically changing the way we build software. It’s here, it’s happening, and it is coming for us all.</p>\n  </blockquote>\n  <p>Her <a href=\"https://charitydotwtf.substack.com/p/my-hypothetical-srecon26-keynote\">agenda this year</a> would be to tell everyone that they mustn’t wait for the wave to crash on them, but to swim out to meet it. In particular, I appreciated her call to resist our confirmation bias:</p>\n  <blockquote>\n   <p>The best advice I can give anyone is: know your nature, and lean against it.</p>\n   <ul>\n    <li>If you are a reflexive naysayer or a pessimist, know that, and force yourself to find a way in to wonder, surprise and delight.</li>\n    <li>If you are an optimist who gets very excited and tends to assume that everything will improve: know that, and force yourself to mind real cautionary tales.</li>\n   </ul>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>In a comment to Kief Morris’s recent article on <a href=\"https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html\">Humans and Agents in Software Loops</a>, in LinkedIn comments <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7434980139425349632?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7434980139425349632%2C7435048661711151105%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287435048661711151105%2Curn%3Ali%3Aactivity%3A7434980139425349632%29\">Renaud Wilsius</a> may have coined another bit of terminology for the agent+programmer age</p>\n  <blockquote>\n   <p>This completes the story of productivity, but it opens a new chapter on talent: The Apprentice Gap. If we move humans ‘on the loop’ too early in their careers, we risk a future where no one understands the ‘How’ deeply enough to build a robust harness. To manage the flywheel effectively, you still need the intuition that comes from having once been ‘in the loop.’ The next great challenge for CTOs isn’t just Harness Engineering, it’s ‘Experience Engineering’ for our junior developers in an agentic world.</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>In hearing conversations about “the ralph loop”, I often hear it in the sense of just letting the agents loose to run on their own. So it’s interesting to read the originator of the ralph loop <a href=\"https://ghuntley.com/loop/\">point out:</a></p>\n  <blockquote>\n   <p>It’s important to watch the loop as that is where your personal development and learning will come from. When you see a failure domain – put on your engineering hat and resolve the problem so it never happens again.</p>\n   <p>In practice this means doing the loop manually via prompting or via automation with a pause that involves having to prcss CTRL+C to progress onto the next task. This is still ralphing as ralph is about getting the most out how the underlying models work through context engineering and that pattern is GENERIC and can be used for ALL TASKS.</p>\n  </blockquote>\n  <p>At the <a href=\"https://martinfowler.com/bliki/FutureOfSoftwareDevelopment.html\">Thoughtworks Future of Software Development Retreat</a> we were very concerned about cognitive debt. Watching the loop during ralphing is a way to learn about what the agent is building, so that it can be directed effectively in the future.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Anthropic recently published a page on how AI helps <a href=\"https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization\">break the cost barrier to COBOL modernization</a>. Using AI to help migrate COBOL systems isn’t an new idea to my colleagues, who <a href=\"https://martinfowler.com/articles/legacy-modernization-gen-ai.html\">shared their experiences</a> using AI for this task over a year ago. While Anthropic’s article is correct about the value of AI, <a href=\"https://www.thoughtworks.com/insights/articles/claude-code-cobol-modernization-reality\">there’s more to the process</a> than throwing some COBOL at an LLM.</p>\n  <blockquote>\n   <p>The assumption that AI can simply translate COBOL into Java treats modernization as a syntactic exercise, as though a system is nothing more than its source code. That premise is flawed.</p>\n   <p>A direct translation would, in the best case scenario, faithfully reproduce existing architectural constraints, accumulated technical debt and outdated design decisions. It wouldn’t address weaknesses; it would restate them in a different language.</p>\n   <p>…</p>\n   <p>In practice, modernization is rarely about preserving the past in a new syntax. It’s about aligning systems with current market demands, infrastructure paradigms, software supply chains and operating models. Even if AI were eventually capable of highly reliable code translation, blind conversion would risk recreating the same system with the same limitations, in another language, without a deliberate strategy for replacing or retiring its legacy ecosystem.</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p><a href=\"https://mas.to/@inconvergent/116193880010747322\">Anders Hoff</a> (inconvergent)</p>\n  <blockquote>\n   <p>an LLM is a compiler in the same way that a slot machine is an ATM</p>\n  </blockquote>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>One of the more interesting aspects of the network of people around Jeffrey Epstein is how many people from academia were connected. It’s understandable why, he had a lot of money to offer, and most academics are always looking for funding for their work. Most of the attention on Epstein’s network focused on those that got involved with him, but I’m interested in those who kept their distance and why - so I enjoyed <a href=\"https://www.science.org/content/article/why-three-scientists-said-no-epstein\">Jeffrey Mervis’s article in Science</a></p>\n  <blockquote>\n   <p>Many of the scientists Epstein courted were already well-established and well-funded. So why didn’t they all just say no? Science talked with three who did just that. Here’s how Epstein approached them, and why they refused to have anything to do with him.</p>\n  </blockquote>\n  <p>I believe that keeping away from bad people makes life much more pleasant, if nothing else it reduces a lot of stress. So it’s good to understand how people make decisions on who to avoid.</p>\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 反思了 AI 引发的社会技术变革，重点探讨了开发者培训中的“学徒鸿沟”、遗留系统现代化的细微差别以及企业问责的伦理。",
+  "oneSentenceSummary": "Martin Fowler 反思了 AI 引发的社会技术变革，重点探讨了开发者培训中的“学徒鸿沟”、遗留系统现代化的细微差别以及企业问责的伦理。",
+  "summary": "在这篇“碎片”合集中，Martin Fowler 整理并评论了软件行业的几项关键变革。核心主题围绕生成式 AI 与工程工作流的集成展开。重点讨论包括“学徒鸿沟”，即警告如果过早让初级开发者进入“环上”（on the loop）监管角色，可能会阻碍他们培养管理复杂系统所需的深层技术直觉。Fowler 还批评了在 COBOL 现代化中简单应用 AI 的做法，认为单纯的语法转换忽略了架构债务。此外，文章还涉及了作为学习机制的“Ralph Loop”、工程师抵制对 AI 认知偏见的重要性，以及对违反数据隐私的企业处以巨额罚款的伦理必要性。",
+  "mainPoints": [
+    {
+      "point": "“学徒鸿沟”对技术人才和直觉构成了长期风险。",
+      "explanation": "如果初级开发者在职业生涯早期就转入“环上”监管角色，他们可能永远无法获得通过“环内”（in the loop）实践所积累的深层技术知识。这将导致未来没有人能足够深入地理解底层系统，从而无法构建健壮的测试框架。"
+    },
+    {
+      "point": "AI 驱动的遗留系统现代化必须超越简单的语法转换才能奏效。",
+      "explanation": "将 COBOL 到 Java 的迁移仅仅视为翻译练习，忽略了技术债务和过时的架构决策。真正的现代化需要深思熟虑的策略，使系统与现代基础设施和市场需求保持一致，而不仅仅是用新语言重新表述旧的局限性。"
+    },
+    {
+      "point": "应当将 “Ralph Loop” 作为个人发展和学习的工具。",
+      "explanation": "开发者不应让 AI 智能体自主运行，而应“观察环路”以理解故障域。通过手动提示或使用带有停顿的自动化，工程师可以获得解决底层问题所需的上下文，并在未来更有效地指导智能体。"
+    },
+    {
+      "point": "工程师在评估新技术时，必须有意识地克服其天生的偏见。",
+      "explanation": "悲观主义者应强迫自己在 AI 中寻找惊喜，而乐观主义者则必须强迫自己承认真实的警示案例。在 AI 为软件开发带来激进变革的时期，这种平衡的方法可以防止确认偏误影响技术判断。"
+    }
+  ],
+  "keyQuotes": [
+    "对于 CTO 来说，下一个巨大挑战不仅是测试框架工程，还有在智能体世界中为我们的初级开发者进行‘经验工程’。",
+    "认为 AI 可以简单地将 COBOL 翻译成 Java 的假设，将现代化视为一种语法练习，仿佛系统只不过是其源代码。这个前提是有缺陷的。",
+    "LLM 是编译器，就像老虎机是自动取款机一样。",
+    "我能给任何人的最好建议是：了解你的本性，并有意识地克服它。",
+    "我们迫切需要企业的态度从‘违法是低风险的经营成本；反正我们能获得净利润’转变为‘这可能是死刑’。"
+  ],
+  "tags": [
+    "软件工程",
+    "生成式 AI",
+    "遗留系统现代化",
+    "职业发展",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 941,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773165000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-10 17:50:00"
+}

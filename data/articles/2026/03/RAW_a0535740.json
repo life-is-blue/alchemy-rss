@@ -1,0 +1,63 @@
+{
+  "id": "RAW_a0535740",
+  "title": "Datadog 如何将其 Go 智能体二进制文件体积缩减 77%",
+  "url": "https://www.infoq.com/news/2026/03/datadog-go-binary-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-10 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>After the Datadog Agent grew from 428 MiB to 1.22 GiB over a period of 5 years, Datadog engineers set out to reduce its binary size. They discovered that <a href=\"https://www.datadoghq.com/blog/engineering/agent-go-binaries/\">most Go binary bloat comes from hidden dependencies, disabled linker optimizations</a>, and subtle behaviors in the Go compiler and linker.</p>\n   <blockquote>\n    <p>This growth impacted both us and our users: network costs and resource usage increased, perception of the Agent worsened, and it became harder to use the Agent on resource-constrained platforms.</p>\n   </blockquote>\n   <p>To address this, Datadog software engineer Pierre Gimalac wrote, their approach consisted in auditing imports, isolating optional code, and eliminating reflection/plugin pitfalls to shrink binaries as much as possible.</p>\n   <p>Indeed, after analyzing the Agent's growth, Datadog engineers found out it was driven by new features, additional integrations, and large third-party dependencies (e.g., Kubernetes SDKs). In particular, Go’s dependency model includes transitive imports, making it so that even a small change can pull in hundreds of packages.</p>\n   <p>Datadog engineers devised two practical ways to remove unnecessary dependencies: using build tags (<code>//go:build feature_x</code>) to exclude optional code, and moving code into separate packages so that non-optional packages remain as small as possible. Both techniques required systematically auditing imports to identify which files or packages could be excluded from a given build. For example, simply moving one function into its own package removed ~570 packages and ~36 MB of generated code from a binary not using it.</p>\n   <p>Auditing dependencies is not an easy task, but the Go ecosystem provides three useful tools to help: <code>go list</code>, which lists all packages used in a build; <code>goda</code>, which visualizes dependency graphs and import chains to help understand why a given dependency is required; and <code>go-size-analyzer</code>, which shows how much space each dependency contributes to a binary.</p>\n   <p>Besides dependency optimization, Datadog engineers got an additional 20% size reduction by minimizing the use of reflection, which can silently disable some linker optimizations, including dead-code elimination:</p>\n   <blockquote>\n    <p>if you use a non-constant method name, the linker can no longer know at build time which methods will be used at runtime. So it needs to keep every exported method of every reachable type, and all the symbols they depend on, which can drastically increase the size of the final binary.</p>\n   </blockquote>\n   <p>To address this issue, they eliminated dynamic reflection where possible, both in their codebase and in dependencies. The latter step required submitting several PRs to projects such as <code>kubernetes/kubernetes</code>, <code>uber-go/dig</code>, <code>google/go-cmp</code> and others.</p>\n   <p>Another feature that disables dead-code elimination is Go plugins, a mechanism that enables a Go program to dynamically load Go code at runtime. In fact, simply importing the <code>plugin</code> package causes the linker to treat the binary as dynamically linked, \"which disables method dead code elimination and even forces the linker to keep all unexported methods\". This change yielded an additional ~20% reduction in some builds.</p>\n   <p>As a final note, Gimalac emphasizes that these improvement were achieved over a six month period and, most importantly, did not require removing any feature. His account includes much more detail than can be covered here, so be sure to read it to get the full story.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How Datadog Cut the Size of Its Agent Go Binaries by 77%\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/datadog-go-binary-optimization/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773176400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Datadog 通过系统性的依赖审计、构建标签的策略性使用，以及消除反射和 plugin 相关的链接器限制，将其 Go 智能体二进制文件体积缩减了 77%。",
+  "oneSentenceSummary": "Datadog 通过系统性的依赖审计、构建标签的策略性使用，以及消除反射和 plugin 相关的链接器限制，将其 Go 智能体二进制文件体积缩减了 77%。",
+  "summary": "本文详细介绍了 Datadog 为解决其基于 Go 的智能体（Agent）“二进制文件膨胀”问题而发起的一项重大工程计划。该智能体的体积曾从 428 MiB 增长到 1.22 GiB。调查发现，体积增长是由传递依赖、大型第三方 SDK（如 Kubernetes）以及特定的 Go 编译器/链接器行为驱动的。工程师们采用了多管齐下的策略：使用 goda 等工具审计导入、通过构建标签隔离可选功能，以及重构代码以防止包含不必要的包。至关重要的是，他们发现大量使用反射和 plugin 包会禁用链接器的死代码消除（dead-code elimination）功能，从而导致巨大的开销。通过优化这些领域并将修复方案贡献回上游库，他们在不删除任何功能的情况下实现了 77% 的体积缩减。",
+  "mainPoints": [
+    {
+      "point": "如果不进行严格审计，Go 的传递依赖会导致二进制文件体积大幅膨胀。",
+      "explanation": "Go 的依赖模型会引入所有传递导入，这意味着一个微小的改动可能会无意中包含数百个包。为了保持二进制文件的精简，必须进行系统性的审计。"
+    },
+    {
+      "point": "构建标签和包隔离是排除不必要代码的有效工具。",
+      "explanation": "使用 //go:build 标签并将功能移至专用包中，允许开发人员在最终构建中排除可选功能，从而显著减少生成的代码占用空间。"
+    },
+    {
+      "point": "反射会悄悄禁用关键的链接器优化，如死代码消除。",
+      "explanation": "当通过反射使用非常量方法名时，链接器无法在运行时确定需要哪些方法，从而被迫保留每个导出的方法及其依赖项。"
+    },
+    {
+      "point": "plugin 包会强制执行动态链接行为，从而增加二进制文件体积。",
+      "explanation": "仅仅导入 plugin 包就会导致 Go 链接器将二进制文件视为动态链接，这会禁用方法级的死代码消除并保留未导出的方法。"
+    },
+    {
+      "point": "为了解决大型生态系统中的系统性膨胀，通常需要向上游贡献代码。",
+      "explanation": "Datadog 工程师不得不向 Kubernetes 和 Uber-go/dig 等重大项目提交 PR 以消除动态反射，这使整个 Go 社区的二进制文件体积都从中受益。"
+    }
+  ],
+  "keyQuotes": [
+    "大多数 Go 二进制文件膨胀源于隐藏的依赖关系、被禁用的链接器优化，以及 Go 编译器和链接器中的微妙行为。",
+    "仅仅将一个函数移到它自己的包中，就从一个未使用它的二进制文件中删除了约 570 个包和约 36 MB 的生成代码。",
+    "如果你使用非常量方法名，链接器就无法在构建时知道运行时将使用哪些方法。",
+    "仅仅导入 plugin 包就会导致链接器将二进制文件视为动态链接，从而禁用方法死代码消除。",
+    "这些改进是在六个月的时间里实现的，最重要的是，不需要删除任何功能。"
+  ],
+  "tags": [
+    "Go",
+    "二进制优化",
+    "依赖管理",
+    "链接器",
+    "反射"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 515,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773176400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-10 21:00:00"
+}

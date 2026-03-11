@@ -1,0 +1,59 @@
+{
+  "id": "RAW_66a44f85",
+  "title": "“AI 即文本”的时代已经结束。执行是新的界面。",
+  "url": "https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/",
+  "date": "2026-03-10 20:16:04",
+  "author": "Gwen Davis",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Over the past two years, most teams have interacted with AI the same way: provide text input, receive text output, and manually decide what to do next.</p>\n  <p>But production software doesn’t operate on isolated exchanges. Real systems execute. They plan steps, invoke tools, modify files, recover from errors, and adapt under constraints you define.</p>\n  <p>As a developer, you’ve gotten used to using GitHub Copilot as your trusted AI in the IDE. But I bet you’ve thought more than once: “Why can’t I use this kind of agentic workflow inside my own apps too?”</p>\n  <p>Now you can.</p>\n  <p>The <a href=\"https://github.com/github/copilot-sdk/?utm_source=github-blog&amp;utm_medium=referral&amp;utm_campaign=2026-em-march-9\">GitHub Copilot SDK</a> makes that execution layer available as a programmable capability inside your software.</p>\n  <p>Instead of maintaining your own orchestration stack, you can <strong>embed the same production-tested planning and execution engine that powers GitHub Copilot CLI </strong>directly into your systems.</p>\n  <p>If your application can trigger logic, it can now trigger agentic execution. This shift changes the architecture of AI-powered systems.</p>\n  <p>So how does it work? Here are three concrete patterns teams are using to embed agentic execution into real applications.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-pattern-1-delegate-multi-step-work-to-agents\">Pattern #1: Delegate multi-step work to agents</h2>\n  <p>For years, teams have relied on scripts and glue code to automate repetitive tasks. But the moment a workflow depends on context, changes shape mid-run, or requires error recovery, scripts become brittle. You either hard-code edge cases, or start building a homegrown orchestration layer.</p>\n  <p>With the Copilot SDK, your application can delegate intent rather than encode fixed steps.</p>\n  <p>For example:</p>\n  <p>Your app exposes an action like “Prepare this repository for release.”</p>\n  <p>Instead of defining every step manually, you pass intent and constraints. The agent:</p>\n  <ul class=\"wp-block-list\">\n   <li>Explores the repository</li>\n   <li>Plans required steps</li>\n   <li>Modifies files</li>\n   <li>Runs commands</li>\n   <li>Adapts if something fails</li>\n  </ul>\n  <p>All while operating within defined boundaries.</p>\n  <p><strong>Why this matters</strong>: As systems scale, fixed workflows break down. Agentic execution allows software to adapt while remaining constrained and observable, without rebuilding orchestration from scratch.</p>\n  <p><a href=\"https://github.com/github/awesome-copilot/tree/main/cookbook/copilot-sdk/?utm_source=github-blog&amp;utm_medium=referral&amp;utm_campaign=2026-em-march-9\"><strong>View multi-step execution examples →</strong></a></p>\n  <h2 class=\"wp-block-heading\" id=\"h-pattern-2-ground-execution-in-structured-runtime-context\">Pattern #2: Ground execution in structured runtime context</h2>\n  <p>Many teams attempt to push more behavior into prompts. But encoding system logic in text makes workflows harder to test, reason about, and evolve. Over time, prompts become brittle substitutes for structured system integration.</p>\n  <p>With the Copilot SDK, context becomes structured and composable.</p>\n  <p>You can:</p>\n  <ul class=\"wp-block-list\">\n   <li>Define domain-specific tools or agent skills</li>\n   <li>Expose tools via <a href=\"https://github.com/microsoft/mcp-for-beginners/?utm_source=github-blog&amp;utm_medium=referral&amp;utm_campaign=2026-em-march-9\">Model Context Protocol (MCP)</a></li>\n   <li>Let the execution engine retrieve context at runtime</li>\n  </ul>\n  <p>Instead of stuffing ownership data, API schemas, or dependency rules into prompts, your agents access those systems directly during planning and execution.</p>\n  <p>For example, an internal agent might:</p>\n  <ul class=\"wp-block-list\">\n   <li>Query service ownership</li>\n   <li>Pull historical decision records</li>\n   <li>Check dependency graphs</li>\n   <li>Reference internal APIs</li>\n   <li>Act under defined safety constraints</li>\n  </ul>\n  <p><strong>Why this matters</strong>: Reliable AI workflows depend on structured, permissioned context. MCP provides the plumbing that keeps agentic execution grounded in real tools and real data, without guesswork embedded in prompts.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-pattern-3-embed-execution-outside-the-ide\">Pattern #3: Embed execution outside the IDE</h2>\n  <p>Much of today’s AI tooling assumes meaningful work happens inside the IDE. But modern software ecosystems extend far beyond an editor.</p>\n  <p>Teams want agentic capabilities inside:</p>\n  <ul class=\"wp-block-list\">\n   <li>Desktop applications</li>\n   <li>Internal operational tools</li>\n   <li>Background services</li>\n   <li>SaaS platforms</li>\n   <li>Event-driven systems</li>\n  </ul>\n  <p>With the Copilot SDK, execution becomes an application-layer capability.</p>\n  <p>Your system can listen for an event—such as a file change, deployment trigger, or user action—and invoke Copilot programmatically.</p>\n  <p>The planning and execution loop runs inside your product, not in a separate interface or developer tool.</p>\n  <p>Why this matters: When execution is embedded into your application, AI stops being a helper in a side window and becomes infrastructure. It’s available wherever your software runs, not just inside an IDE or terminal.</p>\n  <p><a href=\"https://github.com/github/copilot-sdk/blob/main/docs/getting-started.md/?utm_source=github-blog&amp;utm_medium=referral&amp;utm_campaign=2026-em-march-9\"><strong>Build your first Copilot-powered app →</strong></a></p>\n  <p>The shift from “AI as text” to “AI as execution” is architectural. Agentic workflows are programmable planning and execution loops that operate under constraints, integrate with real systems, and adapt at runtime.</p>\n  <p>The GitHub Copilot SDK makes those execution capabilities accessible as a programmable layer. Teams can focus on defining what their software should accomplish, rather than rebuilding how orchestration works every time they introduce AI.</p>\n  <p>If your application can trigger logic, it can trigger agentic execution.</p>\n  <p><a href=\"https://github.com/github/copilot-sdk/?utm_source=github-blog&amp;utm_medium=referral&amp;utm_campaign=2026-em-march-9\"><strong>Explore the GitHub Copilot SDK →</strong></a></p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 推出 Copilot SDK，将 AI 从基于文本的聊天界面转变为可编程的执行层，使开发者能够将智能体工作流直接嵌入到应用程序中。",
+  "oneSentenceSummary": "GitHub 推出 Copilot SDK，将 AI 从基于文本的聊天界面转变为可编程的执行层，使开发者能够将智能体工作流直接嵌入到应用程序中。",
+  "summary": "本文宣布推出 GitHub Copilot SDK，标志着从“AI 即文本”向“AI 即执行”的转变。文章认为，生产环境的软件需要的不仅仅是孤立的文本交互，更需要能够规划、调用工具并从错误中恢复的系统。通过提供可编程 SDK，GitHub 允许开发者将 Copilot CLI 中使用的经过生产验证的编排引擎嵌入到自己的应用中。文中概述了三种架构模式：通过意图而非固定脚本委托多步任务；使用模型上下文协议 (MCP) 将智能体置于结构化的运行时上下文中；以及将 AI 能力从 IDE 扩展到后台服务和 SaaS 平台。这一转变将 AI 定位为核心基础设施，而不仅仅是侧边栏助手。",
+  "mainPoints": [
+    {
+      "point": "AI 正在从基于文本的界面演变为可编程的执行层。",
+      "explanation": "新范式不再依赖手动的提示词-响应循环，而是专注于智能体执行，即 AI 在定义的约束范围内自主进行规划、使用工具并修改系统。"
+    },
+    {
+      "point": "委托意图比硬编码固定自动化脚本更具韧性。",
+      "explanation": "通过向智能体传递高层目标和约束，软件可以适应上下文变化并在运行中从错误中恢复，而无需开发者手动编写每一个边缘情况的代码。"
+    },
+    {
+      "point": "通过 MCP 提供的结构化上下文优于将系统逻辑塞进提示词中。",
+      "explanation": "使用模型上下文协议允许智能体在运行时直接查询服务归属和 API，确保执行的可靠性，并减少与冗长复杂的提示词相关的脆弱性。"
+    },
+    {
+      "point": "智能体能力正在超越 IDE，进入通用的应用层。",
+      "explanation": "Copilot SDK 实现了 AI 在后台服务、内部工具和 SaaS 平台中的执行，将 AI 从开发者的辅助工具转变为集成的应用基础设施。"
+    }
+  ],
+  "keyQuotes": [
+    "“AI 即文本”的时代已经结束。执行是新的界面。",
+    "与其维护自己的编排栈，不如将驱动 GitHub Copilot CLI 的、经过生产验证的规划和执行引擎直接嵌入到你的系统中。",
+    "借助 Copilot SDK，你的应用程序可以委托意图，而不是编码固定的步骤。",
+    "当执行被嵌入到你的应用程序中时，AI 不再是侧边窗口中的助手，而是成为了基础设施。",
+    "如果你的应用程序可以触发逻辑，那么它现在就可以触发智能体执行。"
+  ],
+  "tags": [
+    "GitHub Copilot SDK",
+    "智能体工作流",
+    "AI 编排",
+    "模型上下文协议 (MCP)",
+    "软件架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 684,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773173764000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-10 20:16:04"
+}
