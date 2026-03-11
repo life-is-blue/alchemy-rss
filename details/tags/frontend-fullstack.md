@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-11 08:06:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-11 10:52:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -608,17 +608,13 @@
 
 ### [如何使用-MQTT-和-Express.js-构建实时更新系统](https://www.freecodecamp.org/news/how-to-build-real-time-update-systems-with-mosquitto-and-expressjs/)
 
-2026-03-10 16:05:25 | 标签: MQTT, Express.js, 实时系统, Node.js, 服务器发送事件
-
-> 本指南提供了创建足球比分直播应用程序的分步演练。它解释了使用 MQTT 代理（Mosquitto）作为中央消息枢纽、Express 服务器作为桥梁，以及通过服务器发送事件（SSE）向客户端推送更新的架构。关键主题包括 MQTT 主题层级设计、基于 Docker 的代理设置，以及实现触发实时广播的 RESTful 路由。作者特别论证了在单向数据流中选择 SSE 而非 WebSockets 的原因，强调了其简单性和自动重连特性。
+2026-03-10 16:05:25
 
 
 
 ### [Vercel-Sandbox-现已支持-1-vCPU-+-2-GB-配置---Vercel](https://vercel.com/changelog/vercel-sandbox-now-supports-1-vcpu-2-gb-configurations)
 
-2026-03-10 13:00:00 | 标签: Vercel, 云计算, 资源管理, DevOps, Serverless
-
-> Vercel 的这份官方更新日志宣布为 Vercel Sandbox 增加了一个较低层级的资源配置。开发者现在可以配置具有 1 vCPU 和 2 GB RAM 的环境，为不需要默认 2 vCPUs 和 4 GB RAM 的任务提供更高效的选择。此次更新旨在优化轻量级或单线程流程的资源消耗。文章提供了使用 Vercel Sandbox SDK 和 CLI 的简洁实现示例，确保开发者可以轻松地将这些较小的实例集成到他们的工作流中。
+2026-03-10 13:00:00
 
 
 
@@ -688,13 +684,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2188,13 +2184,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3898,13 +3894,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

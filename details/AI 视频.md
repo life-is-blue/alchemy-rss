@@ -1,15 +1,29 @@
-> **更新时间**: 2026-03-09 14:17:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-11 10:52:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Build-Hour：API-与-Codex](https://www.youtube.com/watch?v=rhsSqr0jdFw)
+
+2026-03-10 17:42:29 | 标签: OpenAI Codex, 智能体工作流, Harness Engineering, 软件架构, GPT-5.4
+
+> 本文详细介绍了软件开发从 AI 辅助结对编程向“智能体委派”（Agentic Delegation）的转变。OpenAI 专家和行业从业者介绍了“Harness Engineering”，这一实践专注于提高代码库对 AI 智能体的“可读性”。通过实施严格的架构边界、自动化验证桩以及代码库级指令（如 `agents.md`），团队可以让智能体自主生成、测试并提交高质量代码。关键技术更新包括 GPT-5.4 的计算机使用能力、Codex 桌面应用的原生 Windows 支持，以及用于并行智能体工作流的“Worktrees”。讨论强调，随着 AI 降低代码生成成本，开发者的角色正从编写代码行转向编排...
+
+
+
+### [AlphaGo-十年：AI-的转折点-|-Thore-Graepel-&amp;-Pushmeet-Kohli](https://www.youtube.com/watch?v=qoinGjj60Fo)
+
+2026-03-10 17:28:31 | 标签: AlphaGo, 强化学习, 深度学习, AlphaZero, 科学 AI
+
+> 本访谈与 AlphaGo 的核心架构师进行了深度对话，回顾了 2016 年与李世石的对弈这一 AI 历史上的关键时刻。访谈解释了 AlphaGo 的技术突破：将“快思考”（深度学习策略/价值网络）与“慢思考”（蒙特卡洛树搜索）相结合，以应对巨大的搜索空间。讨论强调了“第 37 手”作为 AI 原创洞察潜力的象征，以及“第 78 手”作为人类智慧与系统脆弱性的提醒。讨论的一个关键演进是向 AlphaZero 的过渡，它通过放弃人类数据并采用纯强化学习，超越了人类的能力。参与者展示了这些“AI 驱动搜索”的原理随后如何应用于科学前沿，从而在蛋白质折叠（AlphaFold）和矩阵乘法优化（Alpha...
+
+
+
 ### [解剖小龍蝦-—-以-OpenClaw-為例介紹-AI-Agent-的運作原理](https://www.youtube.com/watch?v=2rcJdFuNbZQ)
 
-2026-03-09 01:19:21 | 标签: AI Agent, OpenClaw, LLM 原理, RAG, 工具调用
-
-> 文章以李宏毅教授的课程内容为核心，深入浅出地拆解了 AI Agent 的底层运作逻辑。作者指出，尽管底层大语言模型（LLM）本质上只是缺乏记忆的“文字接龙”机器，但通过 AI Agent 框架（如 OpenClaw），可以为其构建身份认知、工具调用、记忆管理和自主排程等核心能力。文章详细介绍了如何利用 System Prompt 赋予模型目标，通过 Function Calling 实现物理世界交互，利用 RAG 与上下文压缩技术克服 Token 限制，以及通过心跳机制实现主动任务触发。最后，文章严肃探讨了 Agent 自主运行带来的安全风险，并提出了权限隔离与物理隔离等实用的防范策略。
+2026-03-09 01:19:21
 
 
 
@@ -259,7 +273,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -271,7 +285,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
