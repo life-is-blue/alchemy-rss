@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-11 14:13:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-11 16:08:40 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -4154,9 +4154,7 @@
 
 ### [在-React-和-Next.js-中构建动态表单-—-Smashing-Magazine](https://smashingmagazine.com/2026/03/building-dynamic-forms-react-next-js/)
 
-2026-03-10 13:00:00 | 标签: React, Next.js, React Hook Form, Zod, SurveyJS
-
-> 本文探讨了 React 开发中一个常见的架构挑战：表单何时从简单的 UI 组件转变为复杂的业务规则引擎。文章对比了行业标准技术栈（React Hook Form、Zod 和 React Query）与使用 SurveyJS 的模式驱动方法。通过一个涉及条件显示、派生计算和动态导航的实际多步骤表单示例，作者展示了传统技术栈如何将逻辑分散在 Hook 和 JSX 中，从而导致难以审计。相比之下，模式驱动模型将业务逻辑集中在 JSON 对象中，使其与 React 组件树解耦。这带来了更好的可维护性、更简单的版本控制，并让非工程师在无需部署代码的情况下修改表单行为成为可能。
+2026-03-10 13:00:00
 
 
 
