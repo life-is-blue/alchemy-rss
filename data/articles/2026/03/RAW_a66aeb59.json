@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a66aeb59",
+  "title": "不要让 LLM 替你写作 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/FCE6MeDzLEYKFPZX6/don-t-let-llms-write-for-you",
+  "date": "2026-03-10 18:49:47",
+  "author": "JustisMills",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><span>Content note: nothing in this piece is a prank or jumpscare where I smirkingly reveal you've been reading AI prose all along.</span></i></p>\n    <p id=\"block1\"><span>It’s easy to forget this in roarin’ 2026, but&nbsp;</span><i><span>homo sapiens</span></i><span>&nbsp;are the original vibers. Long before we adapt our behaviors or formal heuristics, human beings can sniff out something sus. And to most human beings, AI prose is something sus.</span></p>\n    <p id=\"block2\"><span>If you use AI to write something, people will know. Not everyone, but the people paying attention, who aren’t newcomers or distracted or intoxicated. And most of those people will judge you.</span></p>\n    <h2 id=\"The_Reasons\"><span>The Reasons</span></h2>\n    <p id=\"block3\"><span>People may just be squicked out by AI, or lossily compress AI with crypto and assume you’re a “tech bro,” or think only uncreative idiots use AI at all. These are bad objections, and I don’t endorse them. But when I catch a whiff of LLM smell, I stop reading. I stop reading much faster than if I saw typos, or broken English, or disliked ideology. There are two reasons.</span></p>\n    <p id=\"block4\"><span>First, human writing is evidence of human thinking. If you try writing something you don’t understand well, it becomes immediately apparent; you end up writing a mess, and it stays a mess until you sort out the underlying idea. So when I read clear prose, I assume that I’m reading a refined thought. LLM prose violently breaks this correlation. If some guy tells Claude to “help put this idea he has into words” then Claude will write clear prose even if the idea is vague and stupid. If the guy asks to “help find citations” and there are no actual good ones, Claude will find random D-tier writeups and link to them authoritatively. Worst of all, if the guy asks Claude to “poke holes in my argument” when the argument is sufficiently muddy, Claude will just kind of make up random “issues” that the guy will hedge against (or, let’s be real, have Claude hedge against). So you end up with a writeup which cites sources, has plenty of caveats, and… has no actual core of considered thought. If you read enough of these, and you start alt-tabbing away real fast when you see structured lists with bold headers, or weird clipped parenthetical asides, or splashy contrastive disclaimers every 2-3 sentences, or any number of other ineffable signs subtler than an em dash.</span></p>\n    <p id=\"block5\"><span>Is it possible that a 50% AI-generated hunk of text contains a pearl of careful thinking, that the poor human author simply didn’t have the time or technical skill to express? I suppose. But it ain’t worth checking.</span></p>\n    <p id=\"block6\"><span>Second, and closely related, AI prose is a slog. There’s way too much framing, there are too many lists and each list has a few items that serve no purpose, the bold and italics feel desperate, and it’s just all so same-y. In your own conversation with an AI that you can fully steer, you can sometimes break out of this feeling for a little bit. But reading the output of someone else’s AI conversation is rarely any fun.</span></p>\n    <p id=\"block7\"><span>In short, if someone reads writing “by you” and it seems LLM-y, they will think both that:</span></p>\n    <ol>\n     <li id=\"block8\"><span>You probably don’t have an actual good idea under the cruft</span></li>\n     <li id=\"block9\"><span>Even if you do, the cruft is going to suck to get through</span></li>\n    </ol>\n    <p id=\"block10\"><span>If you want them there, they are not going to stick around. In fact, the more you want a reader, the more likely they are to be turned off by this stuff. Even if they’re the biggest AI fan in the world.</span></p>\n    <h2 id=\"Luddite__Moralizer_\"><span>Luddite! Moralizer!</span></h2>\n    <p id=\"block11\"><span>Fine. I admit it. Just this week, I too experienced Temptation.</span></p>\n    <p id=\"block12\"><span>You may know me as an&nbsp;</span><span><span><a href=\"https://www.justisedits.com/\"><span>editor</span></a></span></span><span>. In this capacity, I was revising an academic paper’s abstract in response to reviewer comments. But I had several papers to work on in the same project, and the owner of that project actively encouraged me to use AI to move fast enough to meet deadlines.</span><span data-footnote-reference=\"\" data-footnote-id=\"v0704k3y0s8\" data-footnote-index=\"1\" role=\"doc-noteref\" id=\"fnrefv0704k3y0s8\" class=\"footnote-reference\"><sup><span><a href=\"#fnv0704k3y0s8\" class=\"\">[1]</a></span></sup></span></p>\n    <p id=\"block13\"><span>So I gave Claude the paper and the reviewer comments, and asked it to come up with a new abstract that would satisfy the reviewers. The result looked good.</span></p>\n    <p id=\"block14\"><span>“It’s just an abstract,” I whispered to myself, face lit eerily in my laptop screen’s blue light. “Summary. Synthesis.” I rocked back and forth. “I could… just…”</span></p>\n    <p id=\"block15\"><span>But no. Claude’s abstract was a useful reminder of which paper this was, and Claude helpfully catalogued what the reviewer requests were. Still, I rewrote the abstract myself, from scratch. In so doing, I noticed a lot of things I hadn’t seen, when I was just skimming the AI output. Stuff it included that it didn’t really need to. Stuff it emphasized that wasn’t actually that important.</span></p>\n    <p id=\"block16\"><span>Did I run&nbsp;</span><i><span>my&nbsp;</span></i><span>abstract by Claude in turn? Yes! It had two nitpicks, one of which I agreed with, and fixed in my own words. Use these tools. You should totally ask Claude to find you sources for a claim, but then you should check those sources like you would check the sources of an eager day one intern, and expect to throw most (or all) of them away. You should totally ask Claude to fact check, but expect it to miss some factual errors and unhelpfully nitpick others. You can even ask Claude to “help clarify your thinking.” But if you’re&nbsp;</span><i><span>really&nbsp;</span></i><span>just clarifying it, then you won’t use its text. Because once your thinking’s clear, you can write the text yourself, and you should.</span></p>\n    <ol data-footnote-section=\"\" role=\"doc-endnotes\" class=\"footnote-section footnotes\">\n     <li data-footnote-item=\"\" data-footnote-id=\"v0704k3y0s8\" data-footnote-index=\"1\" role=\"doc-endnote\" id=\"fnv0704k3y0s8\" class=\"footnote-item\"><span data-footnote-back-link=\"\" data-footnote-id=\"v0704k3y0s8\" class=\"footnote-back-link\"><sup><strong><a href=\"#fnrefv0704k3y0s8\">^</a></strong></sup></span>\n      <div data-footnote-content=\"\" class=\"footnote-content\">\n       <p id=\"block18\"><span>To be clear, editing I do as part of the LessWrong </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/bkDrfofLMKFoMGZkE/psa-the-lesswrong-feedback-service\"><span>Feedback Service</span></a><span> uses my own human judgment, and I don't use LLMs to make edits.</span></p>\n      </div></li>\n    </ol>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，使用 LLM 生成最终文本会削弱清晰写作与清晰思考之间的联系，并敦促作者为了保持智识完整性而坚持人工创作。",
+  "oneSentenceSummary": "本文认为，使用 LLM 生成最终文本会削弱清晰写作与清晰思考之间的联系，并敦促作者为了保持智识完整性而坚持人工创作。",
+  "summary": "作者认为，AI 生成的文本有一种独特且可辨识的“气味”，向细心的读者传递出缺乏深度思考的信号。核心论点有两点：首先，人类写作是思考过程的证据，而 LLM 无论底层想法质量如何都能生成润色过的文本，从而打破了这种关联。其次，AI 文本在风格上令人乏味，其特点是过度的铺垫、重复的结构和毫无意义的列表。通过一个关于修改学术摘要的个人轶事，作者证明了手动写作的过程能发现 AI 辅助略读时容易忽略的细微差别和错误。结论主张将 LLM 作为研究助手或“实习生”来寻找资料和核实事实，但坚持最终的表达必须由人类完成，以确保智识完整性和读者的参与度。",
+  "mainPoints": [
+    {
+      "point": "AI 文本打破了清晰写作与清晰思考之间的关联。",
+      "explanation": "在人类写作中，表达清晰通常意味着思考成熟；而 LLM 可以针对模糊或有缺陷的想法生成清晰的文字，误导读者以为其中包含实际上并不存在的深度思考。"
+    },
+    {
+      "point": "细心的读者可以察觉到 AI 生成内容的“气味”。",
+      "explanation": "特定的风格标记（如加粗标题、结构化列表和过度的委婉措辞）会向有经验的读者发出信号，暗示内容可能缺乏深思熟虑的核心，从而导致读者立即失去兴趣。"
+    },
+    {
+      "point": "写作过程是发现洞见的重要工具。",
+      "explanation": "手动撰写草稿会迫使作者注意到细节、逻辑漏洞和重要性级别，而这些在仅仅略读或提示 AI 生成摘要时往往会被忽视。"
+    },
+    {
+      "point": "LLM 应该被视为“热情的实习生”而非作者。",
+      "explanation": "可以利用 AI 进行头脑风暴、事实核查或寻找资料，但必须核实每一项输出，并亲自进行最后的综合汇总，以确保作品能真实反映你自己的智慧。"
+    }
+  ],
+  "keyQuotes": [
+    "人类写作是人类思考的证据……LLM 文本剧烈地打破了这种关联。",
+    "如果你尝试写一些自己并不太理解的东西，问题会立刻显现……而即使想法模糊且愚蠢，Claude 也能写出清晰的文字。",
+    "AI 文本读起来非常枯燥。有太多的铺垫，太多的列表，而且每个列表里总有几项是毫无用处的。",
+    "一旦你的思考变得清晰，你就可以亲自动手写作，而且你也应该这样做。"
+  ],
+  "tags": [
+    "LLM",
+    "写作方法论",
+    "AI 伦理",
+    "认知负荷",
+    "内容质量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 933,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773168587000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-10 18:49:47"
+}

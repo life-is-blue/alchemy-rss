@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-11 12:31:40 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-11 14:13:04 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -360,7 +360,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -372,7 +372,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -684,13 +684,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2184,13 +2184,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3894,13 +3894,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
@@ -4149,6 +4149,14 @@
 ### [从-Circle-火爆-IPO，看稳定币与美元霸权的现代化金融战](https://mp.weixin.qq.com/s?__biz=MzA4NjUwNTI0OA==&mid=2247493387&idx=1&sn=11a35c289f10e9940f38fdd2c47b7aec)
 
 2025-07-14 00:38:00
+
+
+
+### [在-React-和-Next.js-中构建动态表单-—-Smashing-Magazine](https://smashingmagazine.com/2026/03/building-dynamic-forms-react-next-js/)
+
+2026-03-10 13:00:00 | 标签: React, Next.js, React Hook Form, Zod, SurveyJS
+
+> 本文探讨了 React 开发中一个常见的架构挑战：表单何时从简单的 UI 组件转变为复杂的业务规则引擎。文章对比了行业标准技术栈（React Hook Form、Zod 和 React Query）与使用 SurveyJS 的模式驱动方法。通过一个涉及条件显示、派生计算和动态导航的实际多步骤表单示例，作者展示了传统技术栈如何将逻辑分散在 Hook 和 JSX 中，从而导致难以审计。相比之下，模式驱动模型将业务逻辑集中在 JSON 对象中，使其与 React 组件树解耦。这带来了更好的可维护性、更简单的版本控制，并让非工程师在无需部署代码的情况下修改表单行为成为可能。
 
 
 

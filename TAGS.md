@@ -1,14 +1,14 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-11 12:31:40 | [返回首页](/README.md)
+**更新时间**: 2026-03-11 14:13:04 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9583)
+- [AI & 大模型](#ai-llm) (9591)
 - [软件架构](#architecture) (19)
-- [前端与全栈](#frontend-fullstack) (710)
+- [前端与全栈](#frontend-fullstack) (711)
 - [DevOps](#devops) (431)
 - [产品与商业](#product-business) (34)
 - [其他](#other) (4946)
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
+- [PlugMem：一个适用于各类-AI-智能体任务的通用记忆系统](https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/) - AI 精选
 - [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5) - AI 精选
 - [我们如何构建-LangChain-的-GTM-智能体](https://blog.langchain.com/how-we-built-langchains-gtm-agent/) - AI 精选
 - [阿里巴巴通义实验室开源-Mobile-Agent-v3.5：一套真正“多平台可用”的原生-GUI-Agent-基座模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505704&idx=1&sn=1c35976b09438693364779ba2f65e252) - AI 精选
@@ -40,10 +42,8 @@
 - [美团开源-LongCat-Flash-Lite：实现轻量化-MoE-高效推理](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505063&idx=1&sn=bf1d265066def929b2cada8cfad7c414) - AI 精选
 - [StrongDM-的-AI-团队如何在不看代码的情况下构建严肃软件](https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything) - AI 精选
 - [中门对狙！Claude-Opus-4.6-和-GPT-5.3-Codex-同时发布，这下真的-AI-春晚了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6) - AI 精选
-- [Claude-Code-创始人再次公开：团队的-10-个使用技巧！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247718904&idx=1&sn=7f77ee06ab57fd11bc44ab6f782cd644) - AI 精选
-- [深度解读：OpenClaw-架构及生态](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491455&idx=1&sn=33d58cb6f0d2cd3b9c08c3c84a223e25) - AI 精选
 
-- [查看全部 9583 篇...](/details/tags/ai-llm.md)
+- [查看全部 9591 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -99,7 +99,7 @@
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 - [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 710 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 711 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
