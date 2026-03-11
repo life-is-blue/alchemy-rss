@@ -1,0 +1,58 @@
+{
+  "id": "RAW_25376acd",
+  "title": "AI 编程技巧 010 - 访问你的全部代码",
+  "url": "https://hackernoon.com/ai-coding-tip-010-access-all-your-code?source=rss",
+  "date": "2026-03-10 20:32:15",
+  "author": "Maxi Contieri",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Stop copying code chunks. Start letting AI agents work directly with your files.</em></p>\n  <blockquote>\n   <p>TL;DR: Use terminal-based AI tools to give your assistant direct access to your local files and test suites.</p>\n  </blockquote>\n  <h1 id=\"commonmistake\">Common Mistake ❌</h1>\n  <p>You copy code snippets into a web browser chat like&nbsp;<a href=\"https://hackernoon.com/chatgpt-is-amazing-and-it-is-free\">ChatGPT</a>, Claude, or Grok.</p>\n  <p>\\ You manually move code back and forth and give small chunks of code, filling up the context window.</p>\n  <p>\\ You lose the context of your folder structure, relations among modules, and the whole architecture.</p>\n  <p>\\ The AI often (wrongly) guesses your project layout and hallucinates.</p>\n  <p>\\ When you do this, you get inconsistent code and outdated logic.</p>\n  <h1 id=\"problemsaddressed\">Problems Addressed 😔</h1>\n  <ul>\n   <li><strong>Context Tax:</strong>&nbsp;Manual copying wastes your focus.</li>\n   <li><strong>Hallucinations:</strong>&nbsp;The AI suggests libraries you don't actually have.</li>\n   <li><strong>Isolated logic:</strong>&nbsp;The assistant doesn't know if your code even builds.</li>\n   <li><strong>Manual effort:</strong>&nbsp;You have to run every test and fix every error yourself.</li>\n  </ul>\n  <p>\\ You're basically playing assistant to the AI, running around doing the busywork.</p>\n  <h1 id=\"howtodoit\">How to Do It 🛠️</h1>\n  <p>Download a&nbsp;<strong>CLI</strong>&nbsp;or&nbsp;<em>IDE</em>&nbsp;tool like Claude Code, OpenCode, Windsurf, or similar, and let it access&nbsp;<em>ALL</em>&nbsp;your codebase.</p>\n  <p>\\ (You'll need to check compliance, set up safeguards, and respect any NDAs).</p>\n  <p>\\ Open your terminal and start an interactive session. Let the agent navigate through all your code.</p>\n  <p>\\ Describe what you want to accomplish at a high level and delegate to the orchestrator agent.</p>\n  <p>\\ Review the&nbsp;<a href=\"https://hackernoon.com/ai-coding-tip-003-force-read-only-planning\">proposed plan</a>&nbsp;in the terminal.</p>\n  <p>\\ Approve the changes to update your local files.</p>\n  <p>\\ Let the agent run your tests and fix failures automatically.</p>\n  <h1 id=\"benefits\">Benefits 🎯</h1>\n  <p>Full project context through local AST and RAG indexing.</p>\n  <p>\\ Self-healing code through automated shell feedback loops.</p>\n  <p>\\ Multi-file edits in a single prompt.</p>\n  <p>\\ Parallel development using multiple agent instances.</p>\n  <p>\\ Iterative incremental learning and experimentation. Baby steps.</p>\n  <h1 id=\"context\">Context 🧠</h1>\n  <p>We were all blown away when ChatGPT came out.</p>\n  <p>\\ I&nbsp;<a href=\"https://hackernoon.com/chatgpt-is-amazing-and-it-is-free\">wrote an article 2 days after its release</a>, understanding it was a&nbsp;<strong>game-changer</strong>.</p>\n  <p>\\ Even people like me who had been working with earlier GPT models.</p>\n  <p>\\ Four years later, you still see many developers coding this way.</p>\n  <p>\\ It works for small algorithms and functions, but falls apart for real software engineering.</p>\n  <h1 id=\"promptreference\">Prompt Reference 📝</h1>\n  <h3 id=\"badprompt\">Bad Prompt</h3>\n  <pre><code class=\"javascript language-javascript\">// Please fix the login bug in this snippet:\n\nasync function loginUser(email, password) {\n  const url = 'https://api.penrosebrain.com/login';\n\n  try {\n    const response = await fetch(url, {\n      method: 'PUT',\n      headers: {\n        'Content-Type': 'application/json',\n      },\n      body: JSON.stringify({ email, password }),\n    });\n\n  } catch (error) {\n    console.error('There was an error:', error.message);\n    alert(error.message);\n  }\n}\n</code></pre>\n  <h3 id=\"goodprompt\">Good Prompt</h3>\n  <pre><code class=\"javascript language-javascript\">// opencode: \"Create a failing text, fix the login bug, run tests, \n// Ensure it passes the new test and all the previous ones\n// Create a Pull Request so I can review it\n\nasync function loginUser(email, password) {\n  const url = 'https://api.penrosebrain.com/login';\n\n  try {\n    const response = await fetch(url, {\n      method: 'PUT',\n      headers: {\n        'Content-Type': 'application/json',\n      },\n      body: JSON.stringify({ email, password }),\n    });\n\n  } catch (error) {\n    console.error('There was an error:', error.message);\n    alert(error.message);\n  }\n}\n</code></pre>\n  <h1 id=\"considerations\">Considerations ⚠️</h1>\n  <p>CLI agents have a learning curve.</p>\n  <p>\\ Always&nbsp;<a href=\"https://hackernoon.com/ai-coding-tip-006-review-every-line-before-commit\">review all changes</a>&nbsp;before&nbsp;<a href=\"https://hackernoon.com/ai-coding-tip-001-commit-your-code-before-asking-for-help-from-an-ai-assistant\">committing</a>&nbsp;them.</p>\n  <p>\\ Use a sandbox environment if you run untrusted code.</p>\n  <h1 id=\"type\">Type 📝</h1>\n  <p>[X] Semi-Automatic</p>\n  <h1 id=\"limitations\">Limitations ⚠️</h1>\n  <p>Don't use this for tiny, one-off scripts.</p>\n  <p>\\ Web chats work better for creative brainstorming or generating images.</p>\n  <p>\\ High token usage in long sessions can drive up your API costs.</p>\n  <h1 id=\"tags\">Tags 🏷️</h1>\n  <ul>\n   <li>Complexity</li>\n  </ul>\n  <h1 id=\"level\">Level 🔋</h1>\n  <p>[X] Intermediate</p>\n  <h1 id=\"relatedtips\">Related Tips 🔗</h1>\n  <p><a href=\"https://hackernoon.com/ai-coding-tip-003-force-read-only-planning?embedable=true\">https://hackernoon.com/ai-coding-tip-003-force-read-only-planning?embedable=true</a></p>\n  <p><a href=\"https://hackernoon.com/ai-coding-tip-006-review-every-line-before-commit?embedable=true\">https://hackernoon.com/ai-coding-tip-006-review-every-line-before-commit?embedable=true</a></p>\n  <p>Connect external data using the Model Context Protocol (MCP).</p>\n  <p>\\ Run local models if you need 100% privacy.</p>\n  <h1 id=\"conclusion\">Conclusion 🏁</h1>\n  <p>Move your AI assistant to the terminal.</p>\n  <p>\\ You'll work faster and make fewer mistakes.</p>\n  <p>\\ When you delegate the boring parts, you can focus on architecture and high-level design.</p>\n  <h1 id=\"moreinformation\">More Information ℹ️</h1>\n  <p><a href=\"https://www.firecrawl.dev/blog/why-clis-are-better-for-agents?embedable=true\">https://www.firecrawl.dev/blog/why-clis-are-better-for-agents?embedable=true</a></p>\n  <p><a href=\"https://aider.chat/?embedable=true\">https://aider.chat/?embedable=true</a></p>\n  <p><a href=\"https://code.claude.com/docs/en/overview?embedable=true\">https://code.claude.com/docs/en/overview?embedable=true</a></p>\n  <p><a href=\"https://www.builder.io/blog/opencode-vs-claude-code?embedable=true\">https://www.builder.io/blog/opencode-vs-claude-code?embedable=true</a></p>\n  <p><a href=\"https://www.augmentcode.com/tools/ai-coding-assistants-for-large-codebases-a-complete-guide?embedable=true\">https://www.augmentcode.com/tools/ai-coding-assistants-for-large-codebases-a-complete-guide?embedable=true</a></p>\n  <p><a href=\"https://blog.marcnuri.com/boosting-developer-productivity-ai-2025?embedable=true\">https://blog.marcnuri.com/boosting-developer-productivity-ai-2025?embedable=true</a></p>\n  <p><a href=\"https://opencode.ai/docs/?embedable=true\">https://opencode.ai/docs/?embedable=true</a></p>\n  <h2 id=\"alsoknownas\">Also Known As 🎭</h2>\n  <p>Agentic Coding</p>\n  <p>Terminal Agents</p>\n  <p>Autonomous Coding Loops</p>\n  <h1 id=\"tools\">Tools 🧰</h1>\n  <p>Claude Code, OpenCode, Aider, Codex CLI.</p>\n  <h1 id=\"disclaimer\">Disclaimer 📢</h1>\n  <p>The views expressed here are my own.</p>\n  <p>\\ I am a human who writes as best as possible for other humans.</p>\n  <p>\\ I use AI proofreading tools to improve some texts.</p>\n  <p>\\ I welcome constructive criticism and dialogue.</p>\n  <p>\\ I shape these insights through 30 years in the software industry, 25 years of teaching, and writing over 500 articles and a book.</p>\n  <hr>\n  <p>This article is part of the AI Coding Tip series.</p>\n  <p>[https://maxicontieri.substack.com/p/ai-coding-tips]()</p>\n </body>\n</html>",
+  "aiSummary": "本文倡导从在网页聊天中手动复制代码转向使用基于终端的 AI 智能体，使其能够直接访问本地文件和自动化测试套件。",
+  "oneSentenceSummary": "本文倡导从在网页聊天中手动复制代码转向使用基于终端的 AI 智能体，使其能够直接访问本地文件和自动化测试套件。",
+  "summary": "作者指出了现代开发中一个普遍的低效问题：开发者在手动将代码复制粘贴到网页版 AI 聊天窗口时所支付的“上下文税”。这种做法会导致幻觉、逻辑不一致以及架构上下文的丢失。为了解决这一问题，文章建议通过 Claude Code、Aider 或 OpenCode 等 CLI 工具采用“智能体编程（Agentic Coding）”。这些工具通过本地索引为 AI 提供完整的项目上下文，并通过自动化反馈循环实现“自愈”代码，即智能体自主运行测试并修复错误。通过将 AI 助手移入终端，开发者可以委派重复性任务，专注于高层架构和设计。",
+  "mainPoints": [
+    {
+      "point": "停止充当本地代码与 AI 网页界面之间的手动中介。",
+      "explanation": "手动将代码片段复制到浏览器会分散开发者的注意力并产生“上下文税”，由于模型缺乏对整体项目结构和依赖关系的了解，往往会导致 AI 产生幻觉。"
+    },
+    {
+      "point": "转向拥有直接访问整个本地代码库权限的终端 AI 智能体。",
+      "explanation": "利用 Claude Code 或 Aider 等 CLI 工具，AI 可以利用本地 AST 和 RAG 索引，从而全面理解模块关系和完整的系统架构。"
+    },
+    {
+      "point": "利用自动化 Shell 反馈循环实现代码自愈和迭代 Bug 修复。",
+      "explanation": "通过授予智能体访问终端的权限，它们可以自主运行测试套件、解释错误消息并在持续循环中应用修复，从而显著减少调试所需的手动操作。"
+    },
+    {
+      "point": "通过委派常规实现任务，将职业重心转向高层架构设计。",
+      "explanation": "将编程中“枯燥”的部分（如样板代码生成和简单的 Bug 修复）委派给自主智能体，使开发者能够集中精力处理复杂的系统设计和战略决策。"
+    }
+  ],
+  "keyQuotes": [
+    "停止复制大块代码。开始让 AI 智能体直接处理你的文件。",
+    "你基本上是在给 AI 当助手，跑来跑去处理杂活。",
+    "通过本地 AST 和 RAG 索引获取完整的项目上下文。",
+    "当你委派了枯燥的部分，你就可以专注于架构和高层设计。"
+  ],
+  "tags": [
+    "AI 编程",
+    "CLI 工具",
+    "智能体工作流",
+    "软件工程",
+    "开发者生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 732,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773174735000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-10 20:32:15"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-11 20:07:53 | [返回首页](/README.md)
+**更新时间**: 2026-03-11 22:17:15 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9591)
+- [AI & 大模型](#ai-llm) (9614)
 - [软件架构](#architecture) (19)
-- [前端与全栈](#frontend-fullstack) (711)
+- [前端与全栈](#frontend-fullstack) (712)
 - [DevOps](#devops) (431)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4946)
+- [其他](#other) (4951)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [智能体-Harness-的解构](https://blog.langchain.com/the-anatomy-of-an-agent-harness/) - AI 精选
 - [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
 - [PlugMem：一个适用于各类-AI-智能体任务的通用记忆系统](https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/) - AI 精选
 - [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5) - AI 精选
@@ -41,9 +42,8 @@
 - [全网最详细的-Codex-入门教程，手把手教你玩转-Vibe-Coding。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679828&idx=1&sn=6e1c0a935c70c566ee765c02a36327a6) - AI 精选
 - [美团开源-LongCat-Flash-Lite：实现轻量化-MoE-高效推理](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505063&idx=1&sn=bf1d265066def929b2cada8cfad7c414) - AI 精选
 - [StrongDM-的-AI-团队如何在不看代码的情况下构建严肃软件](https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything) - AI 精选
-- [中门对狙！Claude-Opus-4.6-和-GPT-5.3-Codex-同时发布，这下真的-AI-春晚了。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679769&idx=1&sn=b534c351bbed1859f31d312c004c81d6) - AI 精选
 
-- [查看全部 9591 篇...](/details/tags/ai-llm.md)
+- [查看全部 9614 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -99,7 +99,7 @@
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 - [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 711 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 712 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -185,6 +185,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 4946 篇...](/details/tags/other.md)
+- [查看全部 4951 篇...](/details/tags/other.md)
 
 

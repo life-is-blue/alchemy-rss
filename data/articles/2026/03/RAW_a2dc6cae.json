@@ -1,0 +1,59 @@
+{
+  "id": "RAW_a2dc6cae",
+  "title": "20 亿砸向 00 后创业机器人公司！估值一年暴涨 7 倍，国家级资本重仓",
+  "url": "https://www.qbitai.com/2026/03/385824.html",
+  "date": "2026-03-11 04:11:14",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"75\">允中 发自 凹非寺</p>\n   <p data-track=\"76\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">具身智能的胜负手，可能并不在机器人本身。</p>\n  <p data-track=\"3\">这种认知差，正在被最敏锐的资本迅速兑现为筹码。</p>\n  <p data-track=\"4\">近日，灵初智能宣布完成总额<strong>约20亿元</strong>的<strong>天使轮及Pre-A轮融资</strong>。</p>\n  <ul>\n   <li data-track=\"5\">天使轮由<strong>国开金融、国中资本、央视融媒体产业投资基金</strong>等国家级“国家队”资本，某数千亿上市公司旗下战投、长飞光纤旗下基金，两大核心产业龙头资本，沃德尔等知名产业资本，及元生创投、珠海科技产业集团、钧山投资、燕缘创投、大米资本、沃赋资本、彬复资本、泰合资本等多家知名基金共同投资；</li>\n   <li data-track=\"6\">Pre-A轮由<strong>上海国资徐汇资本</strong>等基金领投，梁溪科创产业二期母基金（博华资本管理）、锡创投等地方国资，及普丰资本、钛铭资本等市场化基金跟投，多家老股东实现超额跟投。华兴资本担任长期财务顾问。</li>\n  </ul>\n  <p data-track=\"7\">这笔20亿元的资金，将加速灵初智能<strong>在物流场景的规模化落地与数据采集体系建设</strong>。</p>\n  <p data-track=\"8\">值得注意的是，这是灵初智能<strong>首次</strong>系统披露公司的融资进展。</p>\n  <p data-track=\"9\">过去很长一段时间，这家公司几乎没有在资本层面发声，而是把大部分精力放在<strong>技术路线与数据体系的打磨上</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053324_1b4fe92ade3ef263f7ecd8dcce244f69.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"460\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">而之所以能吸引国家级资本与地方国资的大规模重仓，也与团队极其互补的底色分不开：</p>\n  <p data-track=\"11\">创始人兼CEO<strong>王启斌在手机、智能音箱及机器人领域</strong>拥有20年产品操盘经验，曾担任黑莓、Sonos及云迹科技高管；</p>\n  <p data-track=\"12\">联合创始人<strong>陈源培</strong>是00后，在北大人工智能研究院读研时师从强化学习（RL）代表人物杨耀东，在斯坦福曾与李飞飞有过深入交流，曾拒绝了华为“天才少年”的高薪offer。</p>\n  <p data-track=\"13\">在具身智能公司纷纷卷Demo、卷参数的当下，灵初智能的突围逻辑清晰且冷峻：放弃昂贵且低效的机器人遥操，<strong>All in人类原生数据</strong>。</p>\n  <p data-track=\"15\">长期以来，具身智能被三座数据大山死死压住：</p>\n  <p data-track=\"16\">仿真环境数采存在无法逾越的Sim-to-Real差距，尤其在处理布料等柔性物体时捉襟见肘；</p>\n  <p data-track=\"17\">机器人遥操数采则像是一场昂贵的人力外包，碎片化的试点导致成本居高不下，且无法穷尽物理世界的复杂分布；</p>\n  <p data-track=\"18\">而硬件本体与数据的深度耦合则成为了“房间里的大象”。数据与硬件强绑定，采集于哪种本体，便服务于哪家体系。这种封闭结构使数据难以跨平台流通，整个生态将逐渐演变为彼此割裂的孤岛。</p>\n  <p data-track=\"19\">风头正盛的UMI设备数采，在灵初智能看来更像是一个“美丽的陷阱”，同样存在结构性问题。</p>\n  <p data-track=\"20\">在灵初智能看来，这并非一场工具之争，而是一场数据范式之争。</p>\n  <p data-track=\"21\">UMI本质上是让人拿着机器人的器官去模拟机器，是一种“Robot-Centric”的逻辑。短期内可以降低门槛，长期却可能锁死上限。</p>\n  <p data-track=\"22\">如果数据从一开始就围绕机器人本体采集，那么模型的能力边界也会被提前锁定；而如果数据源头来自<strong>人类本身</strong>，那么模型学习的将是<strong>“任务本质”</strong>而非“机器结构”。两种路径，决定的是具身智能未来的天花板。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053322_62d637b75ca71284e0497be9d41e74b2.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"720\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"23\">“UMI采集的是机器人夹爪的数据。它无法泛化，今天用UMI采的数据，根本无法直接用到五指灵巧手上。”陈源培指出，这种方案强行将人类拥有20多个自由度的五指灵巧手，降维成了一个只能“开合”的简易夹爪。</p>\n  <p data-track=\"24\">为了破解这一冷启动难题，灵初智能全栈自研并发布了全球首个具身原生人类数据采集方案——<strong>Psi-SynEngine</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053322_bf9075d4c4bf78694b6b63562b1798b3.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"531\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"25\">其核心逻辑只有四个字：<strong>以人为本</strong>。</p>\n  <p data-track=\"26\">便携式外骨骼触觉手套可精准捕捉人手21个关节自由度及全手触觉信息，并不影响工人正常作业；系统同步记录头戴与手部视角的视觉、触觉、动作及语言数据，为预训练阶段的多模态对齐提供真值支撑。</p>\n  <p data-track=\"27\">更关键的是<strong>成本结构</strong>。</p>\n  <p data-track=\"28\">据王启斌透露，通过手套采集数据的综合成本，仅为真机遥操方案的<strong>10%</strong>。</p>\n  <p data-track=\"29\">真正的护城河，则来自<strong>跨本体迁移能力</strong>。</p>\n  <p data-track=\"30\">“机器人会迭代，夹爪会更换，但人手是不变的。”陈源培表示。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053322_cae93262694a1582ad23b6edbf0f50cf.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"720\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"31\">通过基于世界模型与强化学习的迁移算法，灵初能够将人类动作高质量映射到不同构型的灵巧手上，弥合Embodiment Gap。</p>\n  <p data-track=\"32\">当数据源头脱离硬件本体，模型的能力上限也会随之被重新打开。</p>\n  <p data-track=\"34\">数据基建解决的是“矿从哪来”，即“有没有数据”的问题，而真正拉开公司之间差距的，是“矿炼成什么”，也就是把这些数据转化为模型能力的效率。</p>\n  <p data-track=\"35\">灵初发布数采体系，外人看可能觉得就是个“卖铲子”的生意。但在创始团队的逻辑里，这只是<strong>飞轮的起点</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053322_1ffae76084daeaa02bc083d57e3bbcea.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">陈源培直言：</p>\n  <blockquote>\n   <p data-track=\"37\">我们不会停留在数据供应商这个角色。</p>\n  </blockquote>\n  <p data-track=\"38\">数据是用来训练具身大脑的燃料，而非终点。真正具备长期价值的，是<strong>由数据喂养出来的、可迁移的通用操作能力</strong>。</p>\n  <p data-track=\"39\">灵初智能不卖矿石，也不卖铲子，卖的是<strong>“会干活的脑”</strong>。</p>\n  <p data-track=\"40\">在灵初的逻辑里，单纯靠人力做数采没什么门槛，本质上赚的是劳动力的钱。而模型对数据的消化、泛化与迁移水平，才直接划定了这些数据价值的天花板。</p>\n  <p data-track=\"41\">因此，灵初走出了一条在行业中相对少见的路径：</p>\n  <ul>\n   <li data-track=\"42\">先通过模型验证能力边界，再反过来定义数据体系；</li>\n   <li data-track=\"43\">先通过模型训练与任务实验，判断哪些数据真正有价值，再围绕这些关键数据构建规模化采集能力。</li>\n  </ul>\n  <p data-track=\"44\">这种“模型驱动数据”的闭环，让灵初在持续推进模型落地的过程中，能不断修正数据结构、标注体系与采集方式。</p>\n  <p data-track=\"45\">这就把原本死板堆积的“原材料”给带活了，让它们变成了一种紧贴模型目标、不断进化的结构化资产。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053324_e5480ce974263efc9a90ec8ab8271b5c.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"46\">相比行业里还在兜售“大物流”“全场景泛化”这类宏大叙事，灵初表现得有些反直觉的克制。</p>\n  <p data-track=\"47\">王启斌透露，2025年下半年灵初内部曾有过一次关键掉头：停止资源投入纯展示型Demo，全面转向<strong>真实数据采集与细分场景交付</strong>。</p>\n  <p data-track=\"48\">为什么？</p>\n  <p data-track=\"49\">这种转变背后的逻辑其实很务实，因为模型进化需要养料，而最硬核的养料，只有在真实交付中碰撞出的“高密度问题”里才能淘出来。</p>\n  <p data-track=\"50\">灵初切入的口子极细，甚至有些“挑剔”，比如专门盯着“衣服供包”或“入箱检”这种高复杂度、强柔性的活儿。</p>\n  <p data-track=\"51\">以衣服供包为例，目前灵初已实现对<strong>上千件衣物</strong>的泛化抓取，节拍提升至800 UPH（即Unit Per Hour，指每小时产出数量），形成从场景部署、数据采集到模型优化的闭环。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053323_a17f874cc018417e35d2671b0917df17.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"613\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"52\">这套方法在团队内部被沉淀为一种“能力飞轮”：<strong>每一个新场景的落地都在喂养模型，而变强了的模型，又成了他们敲开下一个复杂场景的敲门砖</strong>。</p>\n  <p data-track=\"53\">飞轮由此启动。</p>\n  <p data-track=\"55\">在具身智能这个“软硬耦合”的赛道上，全栈几乎是必选题。</p>\n  <p data-track=\"56\">算法离不开硬件，硬件又反过来塑造数据分布，两者缺了谁都跑不通系统闭环。</p>\n  <p data-track=\"57\">但灵初的“全栈”被赋予了某种分寸感，他们通过战略筛选，将精力高度克制地集中在核心链路，走的是一条精准布局、有的放矢的路子。</p>\n  <p data-track=\"58\">在王启斌看来，<strong>市场上能买到且够用的，灵初绝不碰；但凡是卡住核心能力的环节，必须紧紧攥在自己手里。</strong></p>\n  <p data-track=\"59\">之所以费力气<strong>自研数据手套和灵巧手</strong>，是因为市面上现有的方案在规模化数采和底层电流环控制算法上，根本达不到高精度操作的要求。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053323_45d6c24a2365258b4530c2e5a65057b4.webp\" data-ic=\"false\" data-width=\"1026\" data-height=\"576\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"60\">假如将这些环节外包出去，无异于把数据质量和模型演进节奏的“命门”交给了别人。</p>\n  <p data-track=\"61\">而对于像轮式底盘这样已经高度成熟的赛道，他们则选择通过定制合作来解决，因为那已经不构成技术瓶颈，强行投入只会分散自身精力。</p>\n  <p data-track=\"62\">如此取舍背后，其实是在重新厘清灵初这家公司的能力边界：自研是为了守住核心能力，整合是为了调用通用资源。</p>\n  <p data-track=\"63\">这也让灵初的定位变得愈发清晰——他们本质上是一家<strong>通用灵巧操作能力的“大脑驱动公司”</strong>，核心算法与数据链路自控，硬件形态保持开放，能够根据不同场景灵活适配。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053321_532e3f874cf68f745414ee5863a0bef9.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"64\">对于具身智能公司来说，眼下跟时间赛跑很重要。</p>\n  <p data-track=\"65\">因为真实场景的数据反馈是有复利效应的，那些进场早、碰到的复杂任务多的人，才能抢先一步触达那些决定胜负的长尾数据。</p>\n  <p data-track=\"66\">这种由规模和密度堆叠出来的领先优势，是后来者很难用资本直接抹平的。</p>\n  <p data-track=\"67\">所以灵初的方法论重心在于<strong>模型能力的沉淀</strong>。随着数据飞轮的启动，数据成本在降，模型能力在升，这种此消彼长会带他们步入一个更高阶的战场——</p>\n  <p data-track=\"68\"><strong>去解决那些更复杂、更广阔的应用场景。</strong></p>\n  <p data-track=\"69\">值得注意的是，灵初智能此次披露的融资信息也释放出一个信号：具身智能正在进入资本与产业共振阶段。</p>\n  <p data-track=\"70\">据行业人士估算，在<strong>过去一年</strong>中，灵初估值已提升<strong>约6–7倍</strong>，正在向具身智能领域的独角兽迈进。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260311053322_146acc765387a4de54704d573d7e5068.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"71\">从国家级产业基金、地方国资平台，再到通信与光通信产业链龙头，这种资本结构背后，其实是产业界对“具身数据基础设施”的提前押注。</p>\n  <p data-track=\"72\">在这个赛道里，大家争夺的筹码早已超出了资金本身，<strong>时间</strong>才是最稀缺的通货。</p>\n  <p data-track=\"73\">随着数据飞轮转速加快，比拼的本质也从聚焦于谁账面上钱多，转变成了谁跑在了时间的最前面。</p>\n  <p data-track=\"74\">而这种领先优势极具排他性，一旦时间差形成，差距就会以一种极快的速度被放大，留给后来者的空间只会越来越窄。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "灵初智能获 20 亿元融资，通过自研 Psi-SynEngine 方案构建“以人为本”的具身智能数据采集范式与通用操作大脑。",
+  "oneSentenceSummary": "灵初智能获 20 亿元融资，通过自研 Psi-SynEngine 方案构建“以人为本”的具身智能数据采集范式与通用操作大脑。",
+  "summary": "文章详细报道了具身智能初创公司灵初智能完成总额约 20 亿元的融资，由国家级资本及地方国资重仓。灵初智能提出具身智能的胜负手在于“数据范式”而非机器人本体，并发布了全球首个具身原生人类数据采集方案 Psi-SynEngine。该方案通过便携式外骨骼手套采集人类原生作业数据，成本仅为真机遥操的 10%，且具备跨本体迁移能力。公司坚持“模型驱动数据”的策略，专注于物流场景中高复杂度、强柔性的任务交付，旨在通过真实场景的高密度问题喂养模型，打造具备通用操作能力的“具身大脑”。",
+  "mainPoints": [
+    {
+      "point": "具身智能的竞争核心在于数据范式的选择而非机器人硬件本体。",
+      "explanation": "灵初智能认为传统遥操和 UMI 方案存在“以机器人为中心”的局限性，导致数据与硬件强绑定且上限受限。通过转向“以人为本”的数据采集，可以学习任务本质并实现跨平台流通。"
+    },
+    {
+      "point": "自研 Psi-SynEngine 方案实现了低成本、高保真的原生人类数据采集。",
+      "explanation": "该方案利用触觉手套捕捉人手 21 个关节自由度，综合成本仅为遥操方案的 10%。这种脱离硬件本体的数据源，使模型能够学习人类动作本质，并迁移至不同构型的灵巧手。"
+    },
+    {
+      "point": "坚持“模型驱动数据”的闭环逻辑，将数据转化为结构化资产。",
+      "explanation": "公司不单纯做数据供应商，而是通过模型验证能力边界，反过来定义数据体系。这种闭环确保采集的数据紧贴模型目标，不断进化为能够驱动“通用操作大脑”的核心燃料。"
+    },
+    {
+      "point": "深耕真实物流场景，通过解决高难度长尾问题构建技术复利。",
+      "explanation": "灵初智能放弃展示型 Demo，转向“衣服供包”等高复杂度场景交付。真实场景中的高密度问题是模型进化的硬核养料，由此形成的领先优势具有极强的排他性和复利效应。"
+    }
+  ],
+  "keyQuotes": [
+    "具身智能的胜负手，可能并不在机器人本身。",
+    "UMI 本质上是让人拿着机器人的器官去模拟机器...短期内可以降低门槛，长期却可能锁死上限。",
+    "机器人会迭代，夹爪会更换，但人手是不变的。",
+    "灵初智能不卖矿石，也不卖铲子，卖的是‘会干活的脑’。",
+    "市场上能买到且够用的，灵初绝不碰；但凡是卡住核心能力的环节，必须紧紧攥在自己手里。"
+  ],
+  "tags": [
+    "具身智能",
+    "机器人",
+    "数据采集",
+    "强化学习",
+    "融资资讯"
+  ],
+  "topicTag": "other",
+  "readTime": 14,
+  "score": 82,
+  "wordCount": 3323,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773202274000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-11 04:11:14"
+}
