@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-12 20:05:47 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-12 22:16:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -606,6 +606,14 @@
 
 
 
+### [Taro-5.0：跨端架构演进与业务规模化落地实践](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501978&idx=1&sn=6fc95e48dc56d30f19e9ee07acd7bf46)
+
+2026-03-12 10:18:00 | 标签: Taro 5.0, 跨端架构, 鸿蒙原生, C++ React, WebOnNative
+
+> 本文深入解析了京东开源跨端框架 Taro 5.0 的重大架构演进。核心理念为“WebOnNative”，通过将 React 核心逻辑下沉至 C++ 层（C++ React）、定制高性能 JS 引擎（QuickJS/JSVM）以及自研 C++ 样式系统，彻底解决了跨端开发中的性能瓶颈与 UI 一致性难题。Taro 5.0 不仅实现了对鸿蒙原生的深度支持，还构建了包含 AI 辅助代码生成、全链路调试体系及动态化交付平台在内的完整工程生态。在京东订单中心、全球售等核心业务的落地实践表明，该架构能显著降低研发工时（约 73%），且在鸿蒙端的性能表现优于原生版本。
+
+
+
 ### [【第-3668-期】从-Web-Streams-到-Async-Iterable：重新思考-JavaScript-流式-API](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278731&idx=1&sn=732699cc260b5c65c1a0f7f2a93080eb)
 
 2026-03-12 01:02:00
@@ -702,13 +710,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2202,13 +2210,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3912,13 +3920,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
