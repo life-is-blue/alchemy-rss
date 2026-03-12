@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-12 12:32:42 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-12 14:14:29 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -606,6 +606,14 @@
 
 
 
+### [【第-3668-期】从-Web-Streams-到-Async-Iterable：重新思考-JavaScript-流式-API](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278731&idx=1&sn=732699cc260b5c65c1a0f7f2a93080eb)
+
+2026-03-12 01:02:00 | 标签: Web Streams, Async Iterable, Node.js, 性能优化, 流式处理
+
+> 文章由 Node.js 核心贡献者 James M Snell 撰写，指出 Web Streams API 在 Promise 开销、锁机制复杂度、背压失效及 SSR 场景下的 GC 压力等方面存在根本性设计问题。作者认为这些决策在十年前虽合理，但已不符合现代 JS 开发习惯。文中提出了一种回归语言原语的替代方案：将流视为 Async Iterable，采用拉取式转换、批量数据块处理以及显式的背压策略。该方案在基准测试中表现出显著性能优势（最高提升 120 倍），并支持同步/异步路径分离，旨在为未来流式 API 的演进提供更简洁、高效的方向。
+
+
+
 ### [如何使用-n8n-和-Decapod-构建自主-AI-智能体](https://www.freecodecamp.org/news/how-to-build-an-autonomous-ai-agent-with-n8n-and-decapod/)
 
 2026-03-11 20:18:39
@@ -696,13 +704,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2196,13 +2204,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3906,13 +3914,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
