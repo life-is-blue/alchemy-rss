@@ -1,0 +1,63 @@
+{
+  "id": "RAW_2a3e1ed9",
+  "title": "从分钟级到秒级：Uber 通过共识架构提升 MySQL 集群可用性",
+  "url": "https://www.infoq.com/news/2026/03/uber-mysql-uptime-consensus/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-11 14:15:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber redesigned its MySQL infrastructure to improve cluster uptime, replacing external failover with MySQL Group Replication(MGR). Applied across thousands of clusters, the change reduces failover from minutes to seconds while maintaining strong consistency. The redesign began by introducing <a href=\"https://www.uber.com/blog/improving-mysql-cluster-uptime-part1/\">consensus replication to remove external dependencies</a>, and was <a href=\"https://www.uber.com/blog/improving-mysql-cluster-uptime-part2/\">scaled fleet‑wide with automated onboarding, node management, rebalancing, and safeguards</a> to ensure quorum and operational reliability.</p>\n   <p>Previously, Uber ran MySQL clusters in a single-primary, asynchronous replica model. External systems detected failures and promoted replicas, resulting in failover times measured in minutes. To reduce downtime and improve reliability, Uber adopted <a href=\"https://dev.mysql.com/doc/refman/9.6/en/group-replication.html\">MySQL Group Replication</a>, a Paxos-based consensus protocol. The new architecture embeds consensus within the database itself, forming a three-node MGR cluster. One node serves as primary for writes, while the other two secondaries participate in consensus without accepting direct writes. This ensures that all nodes maintain up-to-date data and can automatically elect a new primary if needed.</p>\n   <p>Uber Engineering emphasized in a LinkedIn <a href=\"https://www.linkedin.com/posts/uberengineering_improving-mysql-cluster-uptime-designing-activity-7401667948387700737-t8HJ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>&nbsp;:</p>\n   <blockquote>\n    <p>At Uber, high availability is non-negotiable.</p>\n   </blockquote>\n   <p>Scalable read replicas fan out from the secondaries, separating read scaling from write availability while preserving fault tolerance. Flow control within MGR monitors transaction queues on each secondary and signals the primary to pause, or throttle writes as needed, preventing nodes from falling behind. This mechanism avoids replication inconsistencies, reduces write downtime during failover, and prevents errant <a href=\"https://dev.mysql.com/doc/refman/8.4/en/replication-gtids-concepts.html\">GTIDs</a> from propagating outside the cluster.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/uber-mysql-uptime-consensus/news/2026/03/uber-mysql-uptime-consensus/en/resources/3consensus-1772310053991.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/uber-mysql-uptime-consensus/en/resources/3consensus-1772310053991.jpeg\" rel=\"share\"></p>\n   <p><em>Architecture of a consensus-based MySQL cluster (Source: <a href=\"https://www.uber.com/blog/improving-mysql-cluster-uptime-part1/\">Uber Blog Post</a>)</em></p>\n   <p>Benchmarking revealed trade-offs with the new design, showing a slight increase in write latency of hundreds of microseconds compared to asynchronous replication, but a dramatic reduction in total write unavailability during primary failures from minutes to under 10 seconds, including primary election and routing updates. Read latencies remained consistent since local replica performance matched the legacy model.</p>\n   <p>Uber scaled the architecture using an automated control plane for cluster onboarding, offboarding back to legacy replication, and rebalancing during topology changes. Workflows handle both graceful and ungraceful node replacements, and configurations such as <a href=\"https://dev.mysql.com/doc/refman/8.4/en/group-replication-responses-failure-partition.html\">group_replication_unreachable_majority_timeout</a> and single-leader mode protect against split-brain and minority partitions. Automated topology health analysis dynamically adds new nodes when a group drops below quorum and removes excess nodes to reduce overhead. Downstream replicas are repointed during node deletion, with optional backlog application blocking to maintain strict external consistency.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/uber-mysql-uptime-consensus/news/2026/03/uber-mysql-uptime-consensus/en/resources/1rebalance-1772309210665.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/uber-mysql-uptime-consensus/en/resources/1rebalance-1772309210665.jpeg\" rel=\"share\"></p>\n   <p>Rebalance consensus cluster workflow <em>(Source: <a href=\"https://www.uber.com/blog/improving-mysql-cluster-uptime-part2/\">Uber Blog Post</a>)</em></p>\n   <p>Uber engineers say implementing MySQL Group Replication at scale revealed <a href=\"https://dev.mysql.com/doc/refman/9.3/en/group-replication-plugin-architecture.html\">MGR plugin</a> using <a href=\"https://dev.mysql.com/doc/refman/8.4/en/mysql-gr-memory-monitoring-ps-instruments.html\">performance_schema.memory/group_replication</a>, and careful handling of <a href=\"https://dev.mysql.com/doc/refman/8.4/en/group-replication-bootstrap.html\">group_replication_bootstrap_group</a> to prevent split-brain scenarios. Single-primary mode was selected over multi-primary for simplicity and operational predictability, as multi-primary introduces higher conflict potential and requires robust conflict resolution for transactional ordering. The combination of consensus-based replication, automated workflows, and scalable read replicas enables high availability, strong consistency, and reduced manual intervention, providing a foundation for Uber’s fleet-scale MySQL infrastructure.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"From Minutes to Seconds: Uber Boosts MySQL Cluster Uptime with Consensus Architecture\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/uber-mysql-uptime-consensus/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773238500000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 将其庞大的 MySQL 集群迁移到基于共识的组复制（Group Replication）架构，在确保强一致性的同时，将故障转移时间从分钟级缩短至 10 秒以内。",
+  "oneSentenceSummary": "Uber 将其庞大的 MySQL 集群迁移到基于共识的组复制（Group Replication）架构，在确保强一致性的同时，将故障转移时间从分钟级缩短至 10 秒以内。",
+  "summary": "本文详细介绍了 Uber 对其 MySQL 集群进行的基础设施改造，从传统的带有外部故障转移的异步复制转向 MySQL 组复制（MGR）。通过将基于 Paxos 的共识协议直接嵌入数据库层，Uber 实现了自动主库选举，并大幅缩短了故障期间的写入不可用时间。新架构利用三节点核心进行共识，并辅以额外的只读副本进行扩展。为了大规模管理这一架构，Uber 开发了自动化控制平面用于集群上线和重平衡，同时实施了单主模式和优化超时配置等特定保护措施，以防止脑裂场景并确保数千个节点上的运行可靠性。",
+  "mainPoints": [
+    {
+      "point": "Uber 用内部的 MySQL 组复制（MGR）取代了外部故障转移机制。",
+      "explanation": "通过从异步复制转向基于 Paxos 的共识模型，Uber 消除了故障检测对外部系统的依赖，将故障转移时间从分钟级缩短到 10 秒以内。"
+    },
+    {
+      "point": "该架构使用混合节点模型平衡了写入可用性与读取可扩展性。",
+      "explanation": "一个三节点的 MGR 集群负责处理共识和写入，而可扩展的只读副本从从库扇出，以处理高读取流量，且不影响核心集群的容错能力。"
+    },
+    {
+      "point": "自动化控制平面对于大规模管理基于共识的集群至关重要。",
+      "explanation": "Uber 实施了节点上线、重平衡和健康分析的自动化工作流，以维持法定人数（Quorum），并在无需人工干预的情况下处理优雅和非优雅的节点更换。"
+    },
+    {
+      "point": "通过选择单主模式而非多主模式，优先考虑运维的简便性。",
+      "explanation": "尽管 MGR 支持多主模式，但 Uber 选择了单主设置，以避免复杂的事务冲突解决，并确保大规模生产环境中更高的运维可预测性。"
+    },
+    {
+      "point": "此次迁移涉及在写入延迟与系统可用性之间进行的权衡。",
+      "explanation": "基准测试显示，由于共识开销，写入延迟出现了微秒级的增加，但考虑到主库故障期间总写入不可用时间的显著减少，这被认为是可接受的。"
+    }
+  ],
+  "keyQuotes": [
+    "在 Uber，高可用性是不可妥协的。",
+    "这一改变在保持强一致性的同时，将故障转移时间从分钟级缩短至秒级。",
+    "选择单主模式而非多主模式是为了简便性和运维可预测性，因为多主模式会引入更高的冲突可能性。",
+    "新架构将共识嵌入到数据库本身，形成了一个三节点的 MGR 集群。",
+    "MGR 内部的流控机制监控每个从库上的事务队列，并根据需要向主库发出暂停或限制写入的信号。"
+  ],
+  "tags": [
+    "MySQL",
+    "数据库架构",
+    "高可用性",
+    "共识协议",
+    "Uber 工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 462,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773238500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-11 14:15:00"
+}
