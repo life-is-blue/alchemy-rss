@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-12 18:12:28 | [返回首页](/README.md)
+**更新时间**: 2026-03-12 20:05:47 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9629)
+- [AI & 大模型](#ai-llm) (9633)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (714)
 - [DevOps](#devops) (431)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [NVIDIA-AI-Q-如何在-DeepResearch-Bench-I-和-II-中夺得第一](https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench) - AI 精选
 - [智能体-Harness-的解构](https://blog.langchain.com/the-anatomy-of-an-agent-harness/) - AI 精选
 - [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
 - [PlugMem：一个适用于各类-AI-智能体任务的通用记忆系统](https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/) - AI 精选
@@ -41,9 +42,8 @@
 - [智能体连接沙箱的两种模式](https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/) - AI 精选
 - [全网最详细的-Codex-入门教程，手把手教你玩转-Vibe-Coding。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679828&idx=1&sn=6e1c0a935c70c566ee765c02a36327a6) - AI 精选
 - [美团开源-LongCat-Flash-Lite：实现轻量化-MoE-高效推理](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505063&idx=1&sn=bf1d265066def929b2cada8cfad7c414) - AI 精选
-- [StrongDM-的-AI-团队如何在不看代码的情况下构建严肃软件](https://simonwillison.net/2026/Feb/7/software-factory/#atom-everything) - AI 精选
 
-- [查看全部 9629 篇...](/details/tags/ai-llm.md)
+- [查看全部 9633 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
