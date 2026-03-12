@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-12 10:56:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-12 12:32:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -608,9 +608,7 @@
 
 ### [如何使用-n8n-和-Decapod-构建自主-AI-智能体](https://www.freecodecamp.org/news/how-to-build-an-autonomous-ai-agent-with-n8n-and-decapod/)
 
-2026-03-11 20:18:39 | 标签: 自主智能体, n8n, 低代码, Docker, Open WebUI
-
-> 本文介绍了 Decapod，这是一个针对追求透明度和控制权的“全民开发者”设计的开源 AI 智能体平台替代方案。与黑盒 SaaS 产品不同，Decapod 是一个模块化系统，使用 n8n 进行工作流自动化，Open WebUI 作为聊天界面，并使用 Docker 进行沙箱部署。作者详细介绍了一种稳健的架构，其中 n8n 充当兼容 OpenAI 的中间件，拦截 API 调用以管理状态、任务队列和“技能”（以子工作流形式实现）。指南涵盖了整个设置过程，包括 VPS 选择、DNS 配置、使用 Docker Compose 部署 Postgres 和 MinIO，以及凭据的配置。强调的核心优势包括增强...
+2026-03-11 20:18:39
 
 
 

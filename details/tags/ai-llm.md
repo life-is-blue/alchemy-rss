@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-12 10:56:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-12 12:32:42 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4286,17 +4286,13 @@
 
 ### [AI-编程能力边界探索：基于-Claude-Code-的-Spec-Coding-项目实战｜得物技术](https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247543717&idx=1&sn=e49b764abd65ffd07fe65d52f1c7b2c6)
 
-2026-03-11 10:30:00 | 标签: Claude Code, Spec Coding, AI 辅助编程, MCP, 软件工程范式
-
-> 本文是得物技术团队基于 Claude Code 进行企业级中后台项目开发的深度实战总结。文章详细记录了在 10 天内通过 2，754 次工具调用完成 2.5 万行代码的演进过程。核心贡献在于提出了 Spec Coding（规格驱动编码）工作流，通过“先设计、后编码”的模式消除 AI 的不确定性。作者构建了由约束层（Rules）、示范层（Code Design）和视觉层（UI Design）组成的三层规范体系，并利用 MCP（Model Context Protocol）工具打通了接口文档与云文档的信息断层。文章还深入分析了 AI 在复杂排障场景下的局限性，总结了 AI 失效的三种模式，并重新定...
+2026-03-11 10:30:00
 
 
 
 ### [Nemotron-3-Super-发布：用于智能体推理的开源混合-Mamba-Transformer-MoE-模型](https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/)
 
-2026-03-11 03:18:39 | 标签: 混合专家模型 (MoE), Mamba-Transformer 混合架构, 智能体 AI, NVIDIA Blackwell, NVFP4
-
-> Nemotron 3 Super 是一款总参数量为 120B（激活参数 12B）的模型，旨在解决多智能体系统中的“思考税”和“上下文爆炸”问题。它采用了独特的混合骨干网络，结合了用于提升序列效率的 Mamba-2 层和用于精确召回的 Transformer 注意力机制。核心创新包括 Latent MoE（潜空间混合专家），它通过压缩 Token 使得在相同计算成本下可调用 4 倍数量的专家；以及多 Token 预测 (MTP)，用于增强推理和投机采样。值得注意的是，该模型采用 NVFP4 原生预训练，针对 NVIDIA Blackwell 进行了优化。NVIDIA 已将该模型作为完全开源资源发...
+2026-03-11 03:18:39
 
 
 
@@ -10920,17 +10916,13 @@
 
 ### [自主上下文压缩](https://blog.langchain.com/autonomous-context-compression/)
 
-2026-03-11 18:25:44 | 标签: LangChain, 上下文管理, AI 智能体, LLM 记忆, 软件架构
-
-> 本文介绍了 Deep Agents SDK 和 CLI 的一项重大更新：自主上下文压缩。传统上，AI 智能体通过在达到固定 Token 阈值（例如 85%）时总结历史记录来管理有限的上下文窗口。然而，这往往发生在非理想时机，例如在复杂的代码重构过程中。新工具赋予智能体根据逻辑触发点（如完成任务、启动新项目或从大型数据集中提取关键事实后）决定何时压缩自身记忆的能力。通过将上下文管理视为推理任务而非硬编码规则，LangChain 契合了 AI 发展的“苦涩教训（The Bitter Lesson）”——利用模型智能而非人工工程。文章详细介绍了中间件实现、总结逻辑（保留 10% 的近期上下文）以及为...
+2026-03-11 18:25:44
 
 
 
 ### [AI-Agent-框架探秘：拆解-OpenHands（13）----Memory](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247488971&idx=1&sn=dbb85be09c8425d8c8581838e588d710)
 
-2026-03-11 13:09:00 | 标签: AI Agent, OpenHands, 记忆系统, 源码分析, 上下文管理
-
-> 文章首先从理论层面系统性地梳理了 AI Agent 记忆系统的核心定位、功能维度及面临的挑战，详细介绍了基于存储时效（感知/短期/长期）和存储形式（Token 级/参数化/潜在）的分类体系。随后，文章通过对比分析，厘清了 Agent 记忆与 LLM 原生记忆、RAG 以及上下文工程的本质区别。核心部分深入 OpenHands 源码，详细解析了其 Memory 模块的三层架构：Condenser 负责历史压缩，ConversationMemory 负责消息格式化，而 View 作为中间数据结构连接两者。通过对核心组件代码逻辑的拆解，展示了该框架如何通过“有损压缩”和“事件过滤”在有限的上下文窗口...
+2026-03-11 13:09:00
 
 
 
@@ -10948,9 +10940,7 @@
 
 ### [为什么“表征”决定了-AI4S-模型的上限？《AI4S-实战派》首课回顾](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505770&idx=2&sn=efb5d93fdb88e6769544f5e0c575bb39)
 
-2026-03-11 08:51:00 | 标签: AI4S, 表征学习, 科学智能, 流体力学, 自监督学习
-
-> 文章详细记录了《AI4S 实战派》首课的核心内容。专家方榯楷指出，AI4S 是 AI 计算能力与科学第一性原理的“双向奔赴”。在 AI4S 的任务流中，表征学习决定了模型的上限，若表征丢失了物理结构性质，模型预测将失效。文中提出了高质量表征的四大黄金准则：距离保持、连续性、可插值性与物理不变性。此外，文章还介绍了从有监督到自监督学习的技术演进，并通过流体力学中的卡门涡街案例，展示了仅用 16 维隐空间向量实现高维物理规律精准重构的实战效果，最后强调了表征学习在逆向设计中的潜力。
+2026-03-11 08:51:00
 
 
 
@@ -30780,25 +30770,19 @@
 
 ### [通过符合-RFC-9457-标准的错误响应，将智能体-Token-成本降低-98%](https://blog.cloudflare.com/rfc-9457-agent-error-pages/)
 
-2026-03-11 13:00:00 | 标签: AI 智能体, RFC 9457, Cloudflare, API 设计, Token 优化
-
-> 本文详细介绍了 Cloudflare 如何从提供以人为中心的 HTML 错误页面，转型为提供专为 AI 智能体设计的结构化、机器可读响应。通过利用 RFC 9457（HTTP API 的问题详情），当智能体使用特定的 Accept 请求头时，Cloudflare 现在会返回 Markdown 或 JSON 负载。这些响应将数百行不必要的 HTML 标记替换为简洁、可操作的元数据，例如错误类别、重试逻辑和升级要求。这一转变解决了“智能体网络”基础设施的缺口，此前智能体在解析面向人类的错误时表现挣扎。该技术实现使负载大小和 Token 使用量减少了 98%，在显著降低开发者运营成本的同时，实现了更...
+2026-03-11 13:00:00
 
 
 
 ### [从症状检查器到智能聊天机器人：AI-在虚拟护理中的作用](https://www.infoq.com/presentations/ai-virtual-care/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-11 12:55:00 | 标签: 医疗 AI, 症状检查器, 贝叶斯推理, NLP, RAG
-
-> 本文深入探讨了虚拟护理平台 Healthily 背后的工程和临床逻辑。它概述了一个复杂的系统架构，该架构始于一个 NLP 引擎，利用孪生神经网络（Siamese Neural Networks）和分层传播进行意图检测和症状实体提取。核心临床推理依赖于贝叶斯推理来最小化熵，确保通过询问最具信息量的问题来达成安全的分诊结果。作者讨论了向使用检索增强生成（RAG）的对话式聊天机器人的演进，强调了临床护栏、事实检查和不确定性估计的必要性。重点在于通过保险集成将 AI 洞察转化为可操作的医疗路径，并获得 II 类医疗器械认证，以确保安全性和合规性。
+2026-03-11 12:55:00
 
 
 
 ### [警惕！“养龙虾”风险，一键给你的-Openclaw-做安全体检](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649800667&idx=1&sn=829e2103ca6256fcb3dcec1936e84b74)
 
-2026-03-11 11:47:00 | 标签: OpenClaw, AI Agent, 网络安全, A.I.G, Skill 安全
-
-> 文章深入分析了超级 Agent 项目 OpenClaw 在快速普及中暴露的四大安全隐患：公网暴露导致的配置风险、恶意 Skill 带来的后门与记忆污染、底层组件的高危漏洞以及隐私泄露与误操作风险。作者指出，Agent 的安全边界已从简单的“回答对错”转向“执行动作的合规性”。为此，腾讯朱雀实验室联合腾讯云 EdgeOne 推出 EdgeOneClawScan 技能，用户可通过简单的对话指令触发全方位的安全扫描。该方案倡导“Agent 原生安全”理念，将安全能力嵌入 Agent 工作流，实现了从被动防御向主动、自动化守护的转变。
+2026-03-11 11:47:00
 
 
 
@@ -43370,9 +43354,7 @@ http://antirez.com/news/162
 
 ### [2026-03-12-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-03-12-HackerNews/)
 
-2026-03-12 08:19:09 | 标签: Hacker News, AI 安全, JavaScript, Zig, WebAssembly
-
-> 本文精选了 Hacker News 当日最具影响力的技术与社会议题。核心内容包括：麦肯锡内部 AI 助手 Lilli 因基础 SQL 注入漏洞导致数千万条敏感记录泄露，揭示了自主进攻型 AI 代理带来的安全新威胁；JavaScript 历时九年终于通过 Temporal 提案，引入不可变类型与原生时区支持，彻底修复了 Date 对象的历史缺陷；Zig 语言完成大规模类型解析系统重构，显著提升了增量编译性能并引入实验性异步 I/O 后端。此外，文章还报道了 Cloudflare 针对 RAG 场景推出的 /crawl API、斯坦福通用鼻腔疫苗的研究进展，以及 geohot 对 AI 奇点论的理...
+2026-03-12 08:19:09
 
 
 
@@ -43384,9 +43366,7 @@ http://antirez.com/news/162
 
 ### [对话-ACE-Studio：做-AI-音乐、月收入-200-万美元，我们选了一条和-Suno-截然不同的路](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523244&idx=1&sn=4c3705b2eb6efb36508e09f626911baa)
 
-2026-03-11 10:51:00 | 标签: AI 音乐, ACE Studio, Suno, 创业经验, 商业模式
-
-> 本文是对 AI 音乐平台 ACE Studio 创始人 Joe 的深度访谈。ACE Studio 选择了与 Suno 截然不同的“专业工具”路径，将其定位为音乐人的 AI IDE（类比 Cursor），强调 Human-in-the-loop 的精准控制。文章详细探讨了其自建的专家模型矩阵、类似 Flux 的“开源漏斗+闭源变现”商业模式，以及在洛杉矶靠近核心用户进行迭代的策略。Joe 坦诚分享了从回避核心问题到 All in AI 音乐的创业反思，并预判 AI 音乐的未来竞争核心在于个性化资产与 IP 构建，而非单纯的生成质量。
+2026-03-11 10:51:00
 
 
 
