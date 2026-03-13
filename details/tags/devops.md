@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-13 14:15:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-13 16:09:29 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -410,9 +410,7 @@
 
 ### [如何容器化您的-MLOps-流水线：从训练到服务](https://www.freecodecamp.org/news/containerize-mlops-pipeline-from-training-to-serving/)
 
-2026-03-12 22:34:01 | 标签: MLOps, Docker, MLflow, DVC, FastAPI
-
-> 本文通过详细介绍一个健壮的、容器化的 MLOps 工作流，解决了机器学习中常见的“在我的机器上能跑”的问题。它涵盖了使用多阶段构建和缓存挂载来优化 Dockerfile 以减少构建时间，集成 MLflow 进行持久化实验追踪，以及使用 DVC 进行数据版本控制。至关重要的是，它提倡将模型工件与容器镜像解耦以简化部署，并解释了如何配置 GPU 直通以进行计算密集型训练。本指南最后介绍了如何使用 Docker Compose profiles 来管理按需训练与始终在线的服务基础设施的生命周期。
+2026-03-12 22:34:01
 
 
 

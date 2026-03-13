@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-13 14:15:31 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-13 16:09:29 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -4178,9 +4178,7 @@
 
 ### [超越-border-radius：CSS-corner-shape-属性为日常-UI-带来的无限可能-—-Smashing-Magazine](https://smashingmagazine.com/2026/03/beyond-border-radius-css-corner-shape-property-ui/)
 
-2026-03-12 10:00:00 | 标签: CSS, Web 开发, UI 设计, 渐进增强, 前端工程
-
-> 本文介绍了 `corner-shape`，这是一个与 `border-radius` 协同工作以定义元素角几何形状的新 CSS 属性。它取代了传统且脆弱的 `clip-path` 或 SVG 遮罩等黑科技，让边框和阴影能够自然地贴合形状。作者详细介绍了包括 `squircle`（苹果风格曲线）、`bevel`（斜切）、`scoop`（内凹）和 `notch`（切口）在内的各种值，以及精细调优的 `superellipse()` 函数。核心主题是“渐进增强”工作流，即开发者提供稳健的 `border-radius` 基准，并使用 `@supports` 为现代浏览器添加高级形状。通过从电子商务徽...
+2026-03-12 10:00:00
 
 
 
