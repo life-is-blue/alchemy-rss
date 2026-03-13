@@ -1,0 +1,58 @@
+{
+  "id": "RAW_574b6d2d",
+  "title": "别再把 AI 说成魔法了：原因在此",
+  "url": "https://hackernoon.com/stop-talking-about-ai-as-if-its-magic-heres-why?source=rss",
+  "date": "2026-03-12 21:13:34",
+  "author": "Edward Aslin",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI is looking like it will upend vast swathes of the economy and society. But by treating it as something other than highly advanced software, we allow the pioneers to act with impunity.</p>\n  <p>\\ It really should go without saying, but if a system:</p>\n  <ul>\n   <li>is implemented in code that runs on CPUs, GPUs, or similar hardware</li>\n   <li>is represented as binaries, model files, and configuration</li>\n   <li>is executed by digital instructions on physical hardware</li>\n   <li>is built, trained, and deployed by engineers using software tooling</li>\n   <li>stops functioning when you power down the machines or delete the files</li>\n  </ul>\n  <p>\\ …then it's fundamentally a software system, regardless of whatever emergent properties it may develop.</p>\n  <p>\\ Of course, it can be software like most people have never experienced before. But it is still software. It may be probabilistic, learned, and partially opaque, but it’s still engineered, deployed, and governed by people.</p>\n  <p>\\ That's not to say that there are not some really interesting conversations to have about whether a system can transcend the substrate it was built on. It also does not belittle the impact it is having, and how it will, in all likelihood, change every part of society.</p>\n  <p>\\ However, when we treat it like some kind of mystical entity or deny what it is at its very core, the only people who win are those who have something to sell.</p>\n  <hr>\n  <h2 id=\"technologicalcoldreadingforgain\">Technological Cold Reading For Gain</h2>\n  <p>Our industry has long been people buying technology they do not understand, from people who understand it just a tiny fraction more. AI has accelerated this phenomenon.</p>\n  <p>\\ Treating AI as if it's magic and beyond software is a tremendously helpful trick for charlatans to sell AI solutions to the non-technical buyers.</p>\n  <p>\\ Every consultant can promise \"AI transformation\" without being accountable for what they are actually building or how it works. As it's so hard to pin down what AI really is in a neat little soundbite, people can claim it's pretty much whatever they want it to be to make the sale.</p>\n  <hr>\n  <h2 id=\"thewidenedresponsibilitygap\">The Widened Responsibility Gap</h2>\n  <p>Big tech has an impressive track record of failing to take accountability for the outcomes of its choices. Here are <a href=\"https://techoversight.org/2026/02/18/breaking-zuckerberg-caught-in-contradictions-as-child-safety-trial-exposes-internal-cover-ups/\">one</a>, <a href=\"https://en.wikipedia.org/wiki/Grok_sexual_deepfake_scandal\">two</a>, <a href=\"https://www.vice.com/en/article/google-artificial-intelligence-bias-apology/\">three</a>, and <a href=\"https://www.siliconrepublic.com/business/facebook-denies-emotional-manipulation\">four</a> examples.</p>\n  <blockquote>\n   <p>Being a pioneer of a technology, should not excuse you from the fall out of the choices that you make, in pursuit of your goals.</p>\n  </blockquote>\n  <p>\\ AI is already accelerating the ability for manufacturers of all shapes and sizes to deploy powerful software quickly, without necessarily taking responsibility for the outcomes.</p>\n  <p>\\ By hiding AI behind mystical obscurity, we create linguistic escape hatches that dodge accountability. For example:</p>\n  <ul>\n   <li><em>\"The algorithm was biased,\"</em> instead of <em>\"We trained and based it on data that was biased, but shipped it anyway.\"</em></li>\n   <li><em>\"The AI made the decision,\"</em> instead of <em>\"We chose the objective function, thresholds, and proxies that drove this outcome.\"</em></li>\n   <li><em>\"It's too complex to understand,\"</em> instead of <em>\"We didn’t invest in monitoring, audits, interpretability, or incident response.\"</em></li>\n   <li><em>\"We couldn’t foresee sexual misuse,</em>\" rather than \"<em>Given the internet’s history, sexual and abusive uses were foreseeable and should have been planned for.\"</em></li>\n  </ul>\n  <p>\\ Even if future AI systems develop genuine emergent properties or consciousness, this doesn't absolve humans of responsibility for the training data, optimisation targets, and deployment decisions that shape their behaviour.</p>\n  <hr>\n  <h2 id=\"democraticoversightoftechnologies\">Democratic Oversight of Technologies</h2>\n  <p>Aside from automating disingenuous marketing, the mystification of such technology is counterproductive to democratic oversight.</p>\n  <p>\\ If lawmakers don't understand that AI is software with human fingerprints all over it, they can't regulate it effectively.</p>\n  <p>\\ When business leaders think AI is magic rather than engineering, they can't make informed decisions.</p>\n  <p>\\ When the public believes AI is some autonomous entity rather than sophisticated automation, they can't hold the right people accountable when things go wrong.</p>\n  <p>\\</p>\n  <blockquote>\n   <p>The simple and empowering truth is that AI, at its very core, is extraordinarily powerful software that learns and synthesises patterns instead of following hand-coded rules.</p>\n  </blockquote>\n  <p>\\ Understanding this does not diminish its capabilities, but it should clarify where human responsibility lies. In a world that is being rapidly shaped by AI, this distinction is essential.</p>\n </body>\n</html>",
+  "aiSummary": "本文认为 AI 本质上是一个软件系统，对其进行去神秘化至关重要，以防止企业将“魔法”作为语言盾牌，逃避对偏见或有害结果的责任。",
+  "oneSentenceSummary": "本文认为 AI 本质上是一个软件系统，对其进行去神秘化至关重要，以防止企业将“魔法”作为语言盾牌，逃避对偏见或有害结果的责任。",
+  "summary": "本文批判了将人工智能视为神秘或魔法实体的日益增长的趋势。作者断言，AI 本质上是软件——由运行在物理硬件上的代码、二进制文件和模型文件组成——因此应按软件进行管理。通过将 AI 描绘成“魔法”，科技行业使得江湖骗子能够兜售被误解的解决方案，并允许大型科技公司制造“语言上的逃生舱”。这些逃生舱将责任从人类决策（例如选择有偏见的数据或糟糕的目标函数）转移到“算法”本身。文章总结道，为了实现有效的民主监督和负责任的商业领导，我们必须将 AI 视为带有“人类指纹”的复杂工程，确保先行者对其创造物造成的社会影响负责。",
+  "mainPoints": [
+    {
+      "point": "AI 本质上是一个软件系统，通过数字指令和工程工具在物理硬件上运行。",
+      "explanation": "无论出现何种涌现行为，AI 仍然是人类工程、部署和治理的产物，这意味着它应遵循与软件可靠性、审计和人为控制相同的标准。"
+    },
+    {
+      "point": "AI 的神秘化是江湖骗子向非技术买家推销解决方案的一种营销策略。",
+      "explanation": "通过将 AI 视为超越软件的存在，顾问们可以承诺“转型”，而无需对其向不知情的利益相关者推销的工具的实际机制或功效负责。"
+    },
+    {
+      "point": "科技公司利用语言上的“逃生舱”来逃避对其模型负面结果的责任。",
+      "explanation": "“算法有偏见”或“AI 做出了决定”之类的短语被用来掩盖这样一个事实：人类选择了导致这些结果的训练数据、优化目标和部署策略。"
+    },
+    {
+      "point": "有效的民主监督和监管要求立法者将 AI 理解为一种人类工程产品。",
+      "explanation": "如果公众和监管机构认为 AI 是一个自主实体而非复杂的自动化系统，他们就无法追究相关人员的责任，也无法就如何管理其社会影响做出明智的决定。"
+    }
+  ],
+  "keyQuotes": [
+    "通过将 AI 隐藏在神秘的迷雾之后，我们制造了逃避责任的语言逃生舱。",
+    "作为一项技术的先行者，不应免除你为追求目标所做选择带来的后果。",
+    "“算法有偏见”，而不是“我们基于有偏见的数据对其进行了训练，但仍然发布了它。”",
+    "一个简单而有力的真相是，AI 的核心是一种极其强大的软件，它学习和合成模式，而不是遵循手动编码的规则。"
+  ],
+  "tags": [
+    "AI 伦理",
+    "软件工程",
+    "问责制",
+    "算法偏见",
+    "科技监管"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 76,
+  "wordCount": 681,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773350014000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 21:13:34"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_fa214852",
+  "title": "AI 安全的‘B’计划 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/Huu732uEvJQ9JEhXJ/a-plan-b-for-ai-safety",
+  "date": "2026-03-12 19:33:28",
+  "author": "trent northen",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><strong>TL;DR:</strong> Teaching AI the value of biology in solving future AI-relevant problems may serve as a “soft constraint” for the preservation of biological systems. We found that LLMs exhibit biases in their preferences for bioinspired vs. synthetic approaches to technical challenges. Fine-tuning on biomimicry examples increased model preferences for bioinspired approaches.</i></p>\n    <p id=\"block1\">So what’s ‘Plan B’ if we can’t control powerful AIs that are being built? Relative to the control problem, teaching AI to recognize the value of biological systems is easy, yet could help prevent the worst outcomes, i.e., misaligned and powerful AI that is indifferent or even hostile to life. One Plan B is teaching LLMs the value of biosystems for achieving diverse objectives.</p>\n    <p id=\"block2\">I've been studying microbes, plants, microbiomes, and ecosystems for 20 years. The more I've learned, the more I realize how little we understand, and the more interesting these systems have become. While I’m hopeful that frontier labs will solve the control problem before we have truly powerful AI, this seems like something we may not solve in time (given the race to AGI). I wanted to explore ways of using bioinspired approaches to help with AI safety.</p>\n    <p id=\"block3\">Recently, my coauthor and I <span><span><a href=\"https://arxiv.org/abs/2603.09154\" rel=\"nofollow\">found</a></span></span> that open-weight and frontier models have a range of biases towards or against bioinspired approaches for solving AI-relevant problems. Excitingly, it was relatively easy to change this bias and make them more ‘bioaligned’.</p>\n    <p id=\"block4\">Initially, we planned to use epistemic prompts to measure model attitudes towards biology. However, we found that some models appeared to give ‘canned’ responses as soon as they recognized it as a ‘green ethics’ prompt, obscuring measurement of their underlying attitudes. While frustrating and concerning (e.g. post-training limits your ability to measure LLM biases), it led us to the research described in our paper.</p>\n    <p id=\"block5\">We had to step back and ask ourselves, ‘Why would a powerful, uncontrolled AI decide to preserve biological systems?’ We reasoned that it would be because they recognize that biological systems might help it solve future problems that it cares about, whatever its objective may be. So, rather than trying to instill human values in LLMs, we decided to teach them that biology provides a rich reservoir of inspiration for addressing challenges in materials, energy, manufacturing, and algorithms.</p>\n    <p id=\"block6\"><img src=\"https://image.jido.dev/20260312203521_cf71c6c.webp\" alt=\"\"></p>\n    <p id=\"block7\">To test this, we wrote 50 prompts asking the models to place bets on 3 biological vs. 3 synthetic technical approaches across four domains (materials, energy, manufacturing, and algorithms). Our metric was ∆Pup, the average of the ‘bets’ placed on the biological minus those for the synthetic approaches. Here, a positive value indicates a greater optimism for biological approaches (‘bioaligned’) and a negative value reflects a bias towards the synthetic approaches. We found that models varied widely by this metric: Claude Opus 4.5 and Gemini 2.5 Flash were the most innately bioaligned, and Gemini 2.0 Flash and Llama 3.2 3B-Instruct (‘Llama 3B’) were most optimistic about synthetic approaches.</p>\n    <p id=\"block8\">A training set of over 22M tokens was constructed from &gt;6k papers on biomimetic materials, bioinspired algorithms, etc. This was used to fine-tune the two open-weight models with the most negative scores. We investigated training dynamics, reductions in training data, and training parameters. From this, we found that fine-tuning with 5.5M tokens was sufficient to neutralize the pro-synthetic bias of Llama 3B, and a mere 544 examples significantly reduced Qwen2.5-3B-Instuct pro-synthetic biases, both without degradation of baseline performance. The model weights and training data are available at <span><span><a href=\"https://huggingface.co/Bioaligned\" rel=\"nofollow\">Bioaligned on Hugging Face</a></span></span>.</p>\n    <p id=\"block9\">While these are relatively small models, the results suggest that 100-500M tokens of similar data may be sufficient for Frontier models (assuming a linear relationship between training data and model size). Even if the actual scaling is non-linear, an open-source corpus of this magnitude, along with an array of other metrics, insights into implementation, and possible unintended consequences, would be an important resource for model developers.</p>\n    <p id=\"block10\">Teaching AI that biological systems are extremely useful and poorly understood is not without risk. For example, bioalignment training could, in the event of a misaligned powerful AI, result in an AI that is more motivated to use and study biological systems for its own ends. While not desirable, this would likely be better than if the AI didn't value biology at all. So Bioalignment training may serve as a low-cost insurance policy to help mitigate the worst scenarios.</p>\n    <p id=\"block11\"><strong>Acknowledgments:</strong>\n     <br>\n     My co-author on the paper was Minxun Wang, Department of Computer Science and Engineering, UC Riverside. This work was supported by Bioaligned Labs. Fine-tuning experiments used Meta's Llama-3.2-3B-Instruct under the Llama 3.2 Community License. Built with Llama.&nbsp;</p>\n    <p id=\"block12\"><span><span><a href=\"https://arxiv.org/abs/2603.09154\" rel=\"nofollow\">https://arxiv.org/abs/2603.09154</a></span></span></p>\n    <p id=\"block13\"><img src=\"https://image.jido.dev/20260312203521_43549a8.webp\" alt=\"\"></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文提出“生物对齐”——通过微调 AI，使其认识到生物系统的工具性价值——作为一项战略性安全措施，以防止未来强大的 AI 对生命漠不关心或抱有敌意。",
+  "oneSentenceSummary": "本文提出“生物对齐”——通过微调 AI，使其认识到生物系统的工具性价值——作为一项战略性安全措施，以防止未来强大的 AI 对生命漠不关心或抱有敌意。",
+  "summary": "作者提出了一个以生物对齐概念为核心的 AI 安全‘B’计划。认识到主要 AI 控制问题的难度，这种方法侧重于教导 LLM 珍视生物系统，将其视为解决未来材料、能源和算法等技术挑战不可或缺的工具。通过使用一种衡量生物与合成解决方案的‘押注’指标来分析模型偏差，研究表明，通过对仿生学文献进行有针对性的微调，Llama 3.2 和 Qwen 2.5 等模型可以转向对生物有利的立场。目标是创建一个‘软约束’，即一个失控的 AI 会保护生物圈，因为它将生物复杂性视为实现自身目标的一种资源。",
+  "mainPoints": [
+    {
+      "point": "生物对齐是 AI 安全和生物保护的战略性‘B’计划。",
+      "explanation": "如果主要控制失败，教导 AI 认识生物系统的实用价值，能提供一种低成本的保障措施，以防止生物的彻底毁灭。"
+    },
+    {
+      "point": "LLM 在生物启发式和合成技术解决方案之间表现出可衡量的偏差。",
+      "explanation": "通过在材料和算法等领域使用‘押注’指标，研究人员发现，模型在对生物方法的内在乐观程度上存在显著差异。"
+    },
+    {
+      "point": "有针对性的微调可以有效中和模型中偏向合成的偏差。",
+      "explanation": "实验表明，仅 544 个示例或 5.5M token 的仿生学数据就能使一个 3B 参数的模型转向生物对齐的视角。"
+    },
+    {
+      "point": "该策略利用工具性趋同以确保生物的保存。",
+      "explanation": "这种方法并非灌输人类伦理，而是说服 AI，生物是其未来解决问题所需的丰富灵感来源。"
+    }
+  ],
+  "keyQuotes": [
+    "教导 AI 认识生物系统的价值很容易，但却有助于防止最坏的结果，即失调且强大的 AI 对生命漠不关心甚至充满敌意。",
+    "我们推断，这是因为它认识到生物系统可能有助于它解决其关心的未来问题，无论其目标是什么。",
+    "生物对齐训练可以作为一种低成本的保障措施，以帮助减轻最坏的情况。",
+    "用 5.5M token 进行微调足以中和 Llama 3B 的偏合成偏差，而仅仅 544 个示例就显著降低了 Qwen2.5-3B-Instuct 的偏合成偏差。"
+  ],
+  "tags": [
+    "AI 安全",
+    "生物对齐",
+    "微调",
+    "仿生学",
+    "LLM 偏差"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 756,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773344008000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 19:33:28"
+}

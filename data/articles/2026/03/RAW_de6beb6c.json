@@ -1,0 +1,59 @@
+{
+  "id": "RAW_de6beb6c",
+  "title": "国防官员透露 AI 聊天机器人如何用于目标选择决策",
+  "url": "https://www.technologyreview.com/2026/03/12/1134243/defense-official-military-use-ai-chatbots-targeting-decisions/",
+  "date": "2026-03-12 18:23:35",
+  "author": "James O'Donnell",
+  "siteName": "MIT Technology Review",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div class=\"\">\n    <div>\n     <div class=\"gutenbergContent__content--109b03a769a11e8ae3acbab352a64269 html_0 html_first\">\n      <p>The US military might use generative AI systems to rank lists of targets and make recommendations about which to strike first, which would then be vetted by humans, according to a Defense official with knowledge of the matter. The disclosure about how the military may use AI chatbots comes as the Pentagon faces scrutiny over a strike on an Iranian school, which it is still investigating.&nbsp;&nbsp;</p>\n      <p>A list of possible targets might be fed into a generative AI system that the Pentagon is fielding for classified settings. Then, said the official, who requested to speak on background with <em>MIT Technology Review </em>to discuss sensitive topics, humans might ask the system to analyze the information and rank which targets are a priority, while accounting for factors like where aircraft are currently located. Humans would then be responsible for checking and evaluating the results and recommendations. OpenAI’s ChatGPT and xAI’s Grok could, in theory, be the models used for this type of scenario in the future, as both companies recently reached agreements for their models to be used by the Pentagon in classified settings.</p>\n     </div>\n    </div>\n    <div>\n     <div class=\"gutenbergContent__content--109b03a769a11e8ae3acbab352a64269 html_2\">\n      <p>The official described this as an example use case of how things might work, but would not confirm or deny whether it represents how AI systems are currently being used.</p>\n      <p>Other outlets have reported that Anthropic’s Claude has been integrated into existing military AI systems and used in operations in <a href=\"https://www.washingtonpost.com/technology/2026/03/04/anthropic-ai-iran-campaign/\">Iran</a> and <a href=\"https://www.wsj.com/livecoverage/iran-strikes-2026/card/u-s-strikes-in-middle-east-use-anthropic-hours-after-trump-ban-ozNO0iClZpfpL7K7ElJ2?gaa_at=eafs&amp;gaa_n=AWEtsqdxl5wWroseKoDDYyzbQCXv1Hgg1VBZWC2R6e1GlR_cV68CwK6O6rGrVUe7DqI%3D&amp;gaa_ts=69b2f381&amp;gaa_sig=VB7UoguP_JoozvJKhI7N2QAAUNSww-mLhIhP8cPyZ5TJhw7YTmbEUnVpqClGoShVGqmBJs5FMp-nPN_Q6BiSNg%3D%3D\">Venezuela</a>, but the official’s comments add insight into the specific role chatbots may play, particularly in accelerating the search for targets. They also shed light on the way it’s deploying two different AI technologies, each with distinct limitations.</p>\n      <p>Since at least 2017, the US military has been working on a \"big data\" initiative called Maven. It uses older types of AI, particularly computer vision, to analyze the oceans of data and imagery collected by the Pentagon. Maven might take thousands of hours of aerial drone footage, for example, and algorithmically identify targets. A 2024 <a href=\"https://cset.georgetown.edu/wp-content/uploads/CSET-Building-the-Tech-Coalition-1.pdf\">report</a> from Georgetown showed soldiers using the system to select targets and vet them, which sped up the process to get approval for these targets. Soldiers interacted with Maven through an interface with a battlefield map and dashboard, which might highlight potential targets in one color and friendly forces in another.</p>\n      <p>Now, the official's comments suggest that generative AI is being added as a conversational, chatbot layer—one which the military would use to more quickly find and analyze the data as it makes decisions like which targets to prioritize.&nbsp;</p>\n      <p>Generative AI systems, like those that underpin ChatGPT, Claude, and Grok, are a fundamentally different technology than the AI that has primarily powered Maven. Built on large language models, their use in war is much more recent and less battle-tested. And while the old interface of Maven forced users to directly inspect and interpret data on the map, the outputs given by generative AI models are easier to access but harder to verify.&nbsp;</p>\n      <p>The use of generative AI for such decisions is reducing the time required in the targeting process, the official added, but did not provide detail when asked how much additional speed is possible if humans are required to spend time double checking a model’s outputs.</p>\n      <p>The use of military AI systems is under increased public scrutiny following the recent strike on a girls school in Iran in which more than one hundred children died. <a href=\"https://www.nytimes.com/2026/03/05/world/middleeast/iran-school-us-strikes-naval-base.html\">Multiple</a> <a href=\"https://www.reuters.com/world/middle-east/us-investigation-points-likely-us-responsibility-iran-school-strike-sources-say-2026-03-06/\">news</a> <a href=\"https://www.bellingcat.com/news/2026/03/08/video-shows-us-tomahawk-missile-strike-next-to-girls-school-in-iran/?utm_source=linkedin\">outlets</a> have reported the strike was from a US missile, though the Pentagon has said it is still under investigation. And while the <em>Washington Post</em> has <a href=\"https://www.washingtonpost.com/technology/2026/03/04/anthropic-ai-iran-campaign/\">reported</a> that Claude and Maven have been involved in targeting decisions in Iran, there is no evidence yet to explain what role generative AI systems played, if any. The <em>New York Times</em> <a href=\"https://www.nytimes.com/2026/03/11/us/politics/iran-school-missile-strike.html\">reported</a> on Wednesday that a preliminary investigation found outdated targeting data to be partly responsible for the strike.&nbsp;</p>\n     </div>\n    </div>\n    <aside aria-label=\"Related Story - OpenAI’s &quot;compromise&quot; with the Pentagon is what Anthropic feared\" class=\"related__wrap\">\n     <h2 class=\"related__header\">Related Story</h2>\n     <div class=\"related__content-wrap\">\n      <a href=\"https://www.technologyreview.com/2026/03/02/1133850/openais-compromise-with-the-pentagon-is-what-anthropic-feared/\" class=\"related__link\"> \n       <div class=\"\">OpenAI’s \"compromise\" with the Pentagon is what Anthropic feared</div> \n      </a><a href=\"https://www.technologyreview.com/2026/03/02/1133850/openais-compromise-with-the-pentagon-is-what-anthropic-feared/\" class=\"related__button button__wrapper--20b97b227471b3dd002defc980e6f965 button__primary--491aa0c640a989ad473fb309ceadf5d1\">Read next</a>\n     </div>\n    </aside>\n    <div>\n     <div class=\"gutenbergContent__content--109b03a769a11e8ae3acbab352a64269 html_4\">\n      <p>The Pentagon has been ramping up its use of AI across operations in recent months. It started offering non-classified use of generative AI models, like for analyzing contracts or writing presentations, to millions of service members back in December through an effort called GenAI.mil. But only those few generative AI models have been approved by the Pentagon for classified use.&nbsp;</p>\n     </div>\n    </div>\n    <div>\n     <div class=\"gutenbergContent__content--109b03a769a11e8ae3acbab352a64269 html_6\">\n      <p>The first was Anthropic’s Claude, which in addition to its use in Iran was reportedly used in the operations to capture <a href=\"https://www.wsj.com/politics/national-security/pentagon-used-anthropics-claude-in-maduro-venezuela-raid-583aff17?gaa_at=eafs&amp;gaa_n=AWEtsqdDWhJvvD7jKoXV0GZxQfvz-ujexvGFcZmufmYkMrSEu2tQELmJQnYNSHEKmuE%3D&amp;gaa_ts=69b2f765&amp;gaa_sig=7phffhZEIsTJ7kd6_of1MwVjoChrvVxZf3_CoR-udKThVaVjmBwhJtACP_8bNJRB-ZntGXCEokesEUmfNCfziw%3D%3D\">Venezuelan leader Nicolas Maduro</a> in January. But following recent disagreements between the Pentagon and Anthropic over whether Anthropic could restrict the military’s use of its AI, the Defense Department designated it a supply chain risk and President Trump on social media demanded the government to stop using its AI products within six months. Anthropic is fighting the designation in court.&nbsp;</p>\n      <p>OpenAI <a href=\"https://www.technologyreview.com/2026/03/02/1133850/openais-compromise-with-the-pentagon-is-what-anthropic-feared/\">announced</a> an agreement on February 28 for the military to use its technologies in classified settings. Elon Musk's company xAI has also reached a deal for the Pentagon to use its model Grok in such settings. OpenAI has said its agreement with the Pentagon came with limitations, though the practical <a href=\"https://www.technologyreview.com/2026/03/06/1134012/is-the-pentagon-allowed-to-surveil-americans-with-ai/?utm_campaign=site_visitor.unpaid.engagement&amp;utm_source=LinkedIn&amp;utm_medium=tr_social\">effectiveness</a> of those limitations is not clear.&nbsp;</p>\n      <p><em>If you have information about the military’s use of AI, you can share it securely via Signal (username jamesodonnell.22).</em></p>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "美国军方正在整合生成式 AI 聊天机器人，用于对目标进行排序和优先排序，为现有系统增加了一个对话层，同时面临着对打击准确性和人工监督的审查。",
+  "oneSentenceSummary": "美国军方正在整合生成式 AI 聊天机器人，用于对目标进行排序和优先排序，为现有系统增加了一个对话层，同时面临着对打击准确性和人工监督的审查。",
+  "summary": "麻省理工科技评论的这份调查报告显示，五角大楼正在部署生成式 AI 模型——可能包括来自 OpenAI 和 xAI 的技术——以协助致命目标选择决策。与旧的“Maven 项目”侧重于利用计算机视觉进行目标识别不同，这个新的“对话层”允许军事人员询问聊天机器人，根据飞机可用性等实时变量对目标进行排序。尽管旨在加速决策制定，但这项技术面临着重大障碍：LLM 比传统 AI 更少经过实战检验，它们的输出更难验证，而且最近的悲剧性错误——例如对一所伊朗学校的袭击——凸显了依赖可能过时或未经核实数据的风险。文章还详细介绍了军事与 AI 合作关系不断变化的格局，包括最近与 Anthropic 的决裂。",
+  "mainPoints": [
+    {
+      "point": "美国军方正在通过整合生成式 AI 作为对话层，对打击清单进行排序和优先排序，从而改进其目标选择过程。",
+      "explanation": "通过将目标数据输入 LLM，五角大楼旨在比传统人工分析更快地考虑资产位置等复杂变量，尽管人类仍然是最终决策者。"
+    },
+    {
+      "point": "从计算机视觉到大型语言模型的转变，引入了战区可访问性和可验证性之间的权衡。",
+      "explanation": "尽管像 Maven 这样的旧系统需要在地图上直接解释数据，但 LLM 的输出更容易理解，但验证起来却困难得多，可能导致操作员产生“自动化偏见”。"
+    },
+    {
+      "point": "与 OpenAI 和 xAI 的战略合作预示着商业 AI 更深层次地整合到最敏感的机密军事行动中。",
+      "explanation": "尽管存在伦理担忧，五角大楼正在转向使用主流模型进行高风险决策，即使它将 Anthropic 等其他供应商指定为供应链风险。"
+    },
+    {
+      "point": "最近在伊朗发生的平民伤亡强调了在 AI 辅助的目标选择工作流程中使用可能过时数据的致命后果。",
+      "explanation": "对一所女子学校袭击的调查表明，即使有 AI 协助，依赖陈旧数据或人工审查不足也可能导致高压环境下的灾难性失败。"
+    }
+  ],
+  "keyQuotes": [
+    "美国军方可能会使用生成式 AI 系统对目标清单进行排序，并就首先打击哪些目标提出建议。",
+    "生成式 AI 正在被添加为一个对话式聊天机器人层——军方将利用它更快地查找和分析数据。",
+    "尽管 Maven 的旧界面强制用户直接在地图上检查和解释数据，但生成式 AI 模型给出的输出更容易访问，但更难验证。",
+    "将生成式 AI 用于此类决策正在缩短目标选择过程所需的时间。",
+    "近几个月来，五角大楼一直在加大其在各项行动中对 AI 的使用，向数百万军人提供非机密用途的生成式 AI 模型。"
+  ],
+  "tags": [
+    "军事 AI",
+    "生成式 AI",
+    "Maven 项目",
+    "国防技术",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 81,
+  "wordCount": 872,
+  "domain": "technologyreview.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b964bfee",
+  "sourceName": "MIT Technology Review",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773339815000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 18:23:35"
+}

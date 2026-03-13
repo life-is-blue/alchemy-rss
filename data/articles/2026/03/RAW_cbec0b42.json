@@ -1,0 +1,59 @@
+{
+  "id": "RAW_cbec0b42",
+  "title": "Windows 栈限制检查回顾：x86-32，又称 i386",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260312-00/?p=112136",
+  "date": "2026-03-12 22:18:26",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We start our survey of historical stack limit checking functions on Windows with the 80386 family of processors. This function has actually changed form over the years, so we’ll start with the “original flavor”.</p>\n  <p>Originally, the <code>_chkstk</code> function was called by putting the desired number of bytes in the <code>eax</code> register and calling the <code>_chkstk</code> function. The function touched each page of the stack, adjusted the stack pointer, and then returned <i>with the adjusted stack pointer</i>. This is an unusual calling convention since it is neither caller clean, nor is it callee clean. It’s callee-dirty! The function returns with <i>more</i> stack than it started.</p>\n  <pre>_chkstk:\r\n    push    ecx             ; remember desired allocation size\r\n\r\n    ; calculate the stack pointer of the caller\r\n    mov     ecx, esp\r\n    add     ecx, 8          ; 4 bytes were auto-pushed for the return address,\r\n                            ; we pushed 4 bytes for the ecx\r\n\r\ntouch:\r\n    cmp     eax, PAGE_SIZE  ; less than a page to go?\r\n    jb      finalpage       ; do the last page and finish\r\n    sub     ecx, PAGE_SIZE  ; allocate a page from our pretend stack pointer\r\n    or      dword ptr [ecx], 0 ; touch the memory\r\n    sub     eax, PAGE_SIZE  ; did a page\r\n    jmp     touch           ; go back and do some more\r\n\r\nfinalpage:\r\n    sub     ecx, eax        ; allocate the leftovers from our pretend stack pointer\r\n    or      dword ptr [ecx], 0 ; touch the memory\r\n    mov     eax, esp        ; remember original stack pointer\r\n    mov     esp, ecx        ; move the real stack to match our pretend stack\r\n    mov     ecx, [eax]      ; recover original ecx\r\n    mov     eax, 4[eax]     ; recover return address\r\n    jmp     eax             ; \"return\" to caller\r\n</pre>\n  <p>A function with a large stack frame would go something like</p>\n  <pre>function:\r\n    push    ebp         ; link into frame chain\r\n    mov     ebp, esp\r\n    push    ebx         ; save non-volatile register\r\n    push    esi\r\n    push    edi\r\n    mov     ecx, 17320  ; large stack frame\r\n    call    _chkstk     ; allocate it from our stack safely\r\n                        ; behaves like \"sub esp, ecx\"\r\n</pre>\n  <p>This goes into the competition for “wackiest x86-32 calling convention.”¹</p>\n  <p>Next time, we’ll look at how stack probing happens on MIPS, which has its own quirks, but nothing as crazy as this.</p>\n  <p><b>Bonus chatter</b>: The strange calling convention dates back to the 16-bit 8086. And back then, there were two versions of the <code>chkstk</code> function, depending on whether you were calling it far or near.</p>\n  <pre>; frame size in ax\r\n\r\nchkstk:\r\n#if NEAR\r\n    pop     bx          ; pop 16-bit return address\r\n#else // FAR\r\n    pop     bx          ; pop 32-bit return address\r\n    pop     dx\r\n#endif\r\n\r\n    inc     ax\r\n    and     al, 0xFE    ; round up to even\r\n\r\n    sub     ax, sp      ; check for stack overflow\r\n    jae     overflow    ; Y: overflow\r\n    neg     ax          ; ax = new stack pointer\r\n\r\n    cmp     ax, ss:[pStackTop]\r\n    ja      overflow    ; stack mysteriously too high\r\n\r\n    cmp     ax, ss:[pStackMin] ; new stack limit?\r\n    jbe     nochange\r\n    mov     ss:[pStackMin], ax ; update stack limit\r\nnochange:\r\n\r\n    mov     sp, ax      ; update the stack pointer\r\n\r\n#if NEAR\r\n    jmp     bx          ; \"return\" to caller\r\n#else // FAR\r\n    push    dx          ; restore return address\r\n    push    bx\r\n    retf                ; return to caller\r\n#endif\r\n</pre>\n </body>\n</html>",
+  "aiSummary": "对 Windows 中历史悠久的 `_chkstk` 函数进行技术回顾，详细阐述了其针对 x86-32 和 16 位 8086 的独特“被调用者脏栈”（callee-dirty）调用约定和栈探测机制。",
+  "oneSentenceSummary": "对 Windows 中历史悠久的 `_chkstk` 函数进行技术回顾，详细阐述了其针对 x86-32 和 16 位 8086 的独特“被调用者脏栈”（callee-dirty）调用约定和栈探测机制。",
+  "summary": "Raymond Chen 的这篇文章探讨了 Windows 上栈限制检查的演变，重点关注 x86-32 (i386) 架构。文章深入探讨了最初的 `_chkstk` 函数，该函数采用了一种非常不寻常的“被调用者脏栈”调用约定，即函数返回时栈空间比调用前更大。作者解释了用于“触碰”每个内存页以触发保护页，从而确保栈有效性的汇编级逻辑。此外，文章通过审视 16 位 8086 的实现，提供了历史背景，强调了早期 Windows 系统中近调用和远调用的复杂性。",
+  "mainPoints": [
+    {
+      "point": "`_chkstk` 函数采用了一种独特的“被调用者脏栈”调用约定来管理栈增长。",
+      "explanation": "与调用者或被调用者清理栈的标准约定不同，`_chkstk` 返回时栈指针已被修改，有效地为调用者分配了空间，同时确保每个内存页都得到正确初始化。"
+    },
+    {
+      "point": "通过“触碰”每个内存页来触发保护页异常，从而执行栈探测。",
+      "explanation": "该函数遍历请求的分配大小，访问每个 4KB 的页。这种机制确保 Windows 内核能够在应用程序使用空间之前扩展栈的已提交内存并处理栈溢出情况。"
+    },
+    {
+      "point": "该实现涉及复杂的汇编级指令指针和寄存器操作。",
+      "explanation": "由于函数会改变栈指针，它必须手动保存和恢复返回地址以及像 `ecx` 这样的寄存器，并使用 `jmp` 而非标准的 `ret` 来返回到调用者的执行流。"
+    },
+    {
+      "point": "这些架构模式在 Windows 开发的 16 位 8086 时代就已根深蒂固。",
+      "explanation": "栈检查的设计从早期的 16 位系统演变而来，当时针对近调用和远调用存在不同的版本，这表明了 Windows 生态系统中的长期连续性和遗留约束。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一种不寻常的调用约定，因为它既不是调用者清理，也不是被调用者清理。它是“被调用者脏栈”！",
+    "函数返回时栈空间比调用前更大。",
+    "函数触碰了栈的每个页，调整了栈指针，然后带着调整后的栈指针返回。",
+    "这可以参与“最古怪的 x86-32 调用约定”的竞争。",
+    "这种奇怪的调用约定可以追溯到 16 位 8086 时代。那时，`chkstk` 函数有两个版本，取决于你是进行远调用还是近调用。"
+  ],
+  "tags": [
+    "Windows 内部原理",
+    "x86 汇编",
+    "栈管理",
+    "调用约定",
+    "系统编程"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 501,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773353906000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 22:18:26"
+}

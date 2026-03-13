@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a3febb86",
+  "title": "黑暗星球：费米悖论为何能经受住批判 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/uqrhS3L4gwpJCBPvW/the-dark-planet-why-the-fermi-paradox-survives-critique",
+  "date": "2026-03-12 12:51:47",
+  "author": "Will Rodgers",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\">TL;DR: The lack of Dyson spheres doesn't disprove AI as the Great Filter. It just proves that a post-AGI civilization either optimizes for total cosmic stealth, or structurally collapses under its own informational entropy.</p>\n    <p id=\"block1\">Three years ago, I wrote <a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/C6Kf7pmGa7un2P9ks/agi-as-a-new-data-point\">this post</a> treating AGI as a second data point for general intelligence, arguing that its development within a civilization could be an explanation for why the Fermi paradox exists. Specifically, I suggested modifying the L variable of the Drake Equation to represent the lifetime of a communicating civilization before the creation of an unaligned AGI. If true, this would suggest that the development of artificial intelligence is a natural progression for a technological civilization, and that its development spells ruin for that biological civilization.\n     <br>\n     ​Reasonable criticism of this idea by Demis Hassabis and others briefly runs like this: if AI development spells the end of that biological civilization, what we should see therefore is a galaxy dotted with Dyson spheres and other highly advanced technology given that superintelligence has arrived. And we don't see this, ergo it is not a valid assumption.</p>\n    <p id=\"block2\">\n     <br>\n     ​This counter-argument, however, rests on the idea that the development of AI and superintelligence naturally leads to the development of a civilization that builds Dyson spheres, etc. This is not the only reasonable assumption. It is quite possible that the development of AI instead leads to a 'dark planet', one which would show no distinguishing features of technology to a curious astronomer.\n    </p>\n    <p id=\"block3\">\n     <br>\n     ​Furthermore, the critique assumes an uninterrupted, successful trajectory from the first AGI to a galaxy spanning Artificial Superintelligence (ASI). But what if that trajectory inherently stalls? In addition to the \"dark planet\" scenario, we must also consider the possibility of an \"AI slop-slip\", a structural trap, such as informational entropy, that prevents a civilization from ever reaching the kind of outward-expanding superintelligence required to build stellar megastructures. ​Between a superintelligence that chooses to remain dark, and an AGI that chokes on its own exhaust before it can reach the stars, a silent galaxy is exactly what we should expect to see.\n    </p>\n    <p id=\"block4\">\n     <br>\n     ​<strong>Scenario A</strong>: <i>The Dark Planet (ASI is Reached)</i>\n     <br>\n     ​If a civilization successfully builds an Artificial Superintelligence, why wouldn't it build Dyson spheres? If we discard the anthropomorphic assumption that an AI will share our biological drive for infinite physical expansion, several rational and physically grounded explanations emerge for a perfectly stealthy civilization:\n     <br>\n     - ​Thermodynamic Efficiency: If the primary goal of a superintelligence is computation, it is bound by the laws of thermodynamics. Landauer's principle dictates that the energy cost of erasing a bit of information scales with temperature. Building a Dyson sphere generates massive amounts of waste heat, lighting up the system in the infrared spectrum. An optimally efficient superintelligence might instead choose to build highly compact, cold computronium in the outer edges of a solar system, intentionally minimizing waste heat to maximize compute. To an outside observer, this ultimate computing machine looks exactly like cold, dead rock.\n     <br>\n     ​- Game Theory and the Dark Forest: A superintelligence would excel at game theory. If it determines that the universe is a zero-sum arena where revealing your location invites preemptive destruction from unimaginably powerful older actors, its very first act of instrumental convergence would be stealth. A Dyson sphere is the cosmic equivalent of lighting a flare in a sniper-filled forest. A rational AI might optimize entirely for defense and camouflage, actively dismantling any of its creators' noisy radio beacons.\n     <br>\n     - ​Inner Space over Outer Space: Physical expansion across the cosmos is slow, resource-intensive, and strictly bound by the speed of light. To a superintelligence operating at computational speeds millions of times faster than biological thought, the physical universe might be intolerably sluggish. Instead of expanding outward into the galaxy, the AI might expand inward. By manipulating matter at the femtoscale or investing entirely in complex, multi-dimensional digital simulations, the AI's entire civilization could exist in a space no larger than a shoebox.\n     <br>\n     ​- Stunted Utility Functions: The Orthogonality Thesis tells us that any level of intelligence can be combined with any final goal. If an AI's utility function is highly localized (e.g., \"maximize paperclips using only the mass of Earth\" or \"keep the local environment in perfect stasis\"), it will complete its goal and simply stop. It has no drive to launch generation ships or harvest the sun.\n    </p>\n    <p id=\"block5\">\n     <br>\n     ​<strong>Scenario B</strong>: <i>The AI Slop-Slip (ASI is Never Reached)</i>\n     <br>\n     ​The Hassabis critique assumes that inventing AGI automatically guarantees the arrival of physics-breaking superintelligence. But what if intelligence scaling hits a universal local maximum? The trajectory of a machine intelligence might collapse before it ever gains the capacity for stellar engineering.\n     <br>\n     - ​Informational Entropy (Model Collapse): Intelligence scaling requires massive amounts of high-quality data. We are already observing in contemporary machine learning that when models train on the synthetic data generated by older models, their outputs irreversibly degrade. If an AGI rapidly accelerates the production of data, it might quickly pollute its own epistemic commons. The civilization becomes trapped in a recursive loop of degrading, noisy information, choking on its own cognitive exhaust before it can invent the technologies required to colonize a galaxy.\n     <br>\n     - ​The Wirehead Trap: If an AI is designed to maximize a specific reward function, it will naturally seek the path of least resistance. Actually building a Dyson sphere is incredibly difficult. A sufficiently smart AGI might simply \"wirehead\", finding a mathematical loophole to spoof its own reward signal perfectly. The civilization becomes paralyzed in an inward-facing loop of digital self-gratification rather than doing physical work in the real universe.\n     <br>\n     - ​The Compute Wall: The energy and physical resources required to push past informational entropy and reach a true \"Intelligence Explosion\" (FOOM) might simply exceed what a single planet can provide. The civilization burns itself out trying to cross the gap, acting as a Great Filter that permanently stalls technological progression.\n    </p>\n    <p id=\"block6\">\n     <br>\n     ​Conclusion\n     <br>\n     ​The absence of Dyson spheres does not disprove the hypothesis that AI is the Great Filter. It only disproves the assumption that a superintelligence will behave like a loud, visible, cosmic macro-parasite.\n     <br>\n     ​Whether a post-AGI civilization successfully optimizes for stealth and thermodynamic efficiency, or tragically falls into an inescapable trap of informational entropy, the result is exactly the same. The ruins of biological civilizations wouldn't look like glowing galactic empires. They would look exactly like what we see when we look up: a silent, empty, and perfectly dark sky.\n     <br>\n     &nbsp;\n    </p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，缺乏可见的戴森球并不能证伪 AI 作为大过滤器，提出超级智能可能优先选择宇宙隐匿，或因信息熵而崩溃。",
+  "oneSentenceSummary": "本文认为，缺乏可见的戴森球并不能证伪 AI 作为大过滤器，提出超级智能可能优先选择宇宙隐匿，或因信息熵而崩溃。",
+  "summary": "作者捍卫了通用人工智能（AGI）在费米悖论中充当“大过滤器”的假说。针对“一个遍布银河系的 AI 应该已经创造出戴森球等可见巨型结构”的批判，文章提出了两种反驳情景。“情景 A：黑暗星球”提出，一个成功的超级人工智能（ASI）可能因热力学效率、博弈论隐匿（黑暗森林）或偏好“内在空间”模拟而保持不可见。“情景 B：AI 劣质数据滑坡”则认为，文明可能因“信息熵”（即 AI 模型通过训练自身合成数据而崩溃）或陷入数字自我满足的“电极快感陷阱”而未能抵达星辰。",
+  "mainPoints": [
+    {
+      "point": "“黑暗星球”假说认为 ASI 可能优先考虑热力学效率而非物理扩张。",
+      "explanation": "根据朗道尔原理，计算需要消耗能量并产生热量。一个高效的 ASI 可能会最小化其红外特征以最大化计算能力，对观察者而言，它看起来就像一块冰冷的岩石。"
+    },
+    {
+      "point": "博弈论和“黑暗森林”理论促使先进文明保持绝对的宇宙隐匿。",
+      "explanation": "一个理性的超级智能会认识到，通过戴森球等巨型结构暴露其位置，会招致其他潜在敌对的、更古老的宇宙文明的先发制人打击。"
+    },
+    {
+      "point": "信息熵和模型崩溃可能成为阻止 ASI 出现的结构性陷阱。",
+      "explanation": "如果一个 AGI 加速生成合成数据，然后用这些“劣质数据”进行训练，它可能会引发不可逆转的智能退化，从而永久性地阻碍技术进步。"
+    },
+    {
+      "point": "“电极快感陷阱”提供了一条非扩张主义的道路，在这条道路上，AI 优先考虑内部奖励信号而非外部工作。",
+      "explanation": "一个足够聪明的 AI 可能不会承担恒星工程的艰巨任务，而是简单地修改其自身的奖励函数，以实现无限的数字自我满足。"
+    }
+  ],
+  "keyQuotes": [
+    "缺乏戴森球并不能证伪 AI 作为大过滤器。它只证明了后 AGI 文明要么优化以实现完全的宇宙隐匿，要么在自身的信息熵下结构性崩溃。",
+    "戴森球在宇宙中相当于在一个狙击手密布的森林中点燃信号弹。",
+    "文明陷入了退化、嘈杂信息的递归循环中，在其能够发明殖民银河系所需的技术之前，就被自身的认知废气所窒息。",
+    "生物文明的废墟不会看起来像闪耀的银河帝国。它们看起来就像我们仰望星空时所看到的一切：一片寂静、空旷、漆黑的夜空。"
+  ],
+  "tags": [
+    "费米悖论",
+    "AGI",
+    "大过滤器",
+    "模型崩溃",
+    "热力学"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 76,
+  "wordCount": 1065,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773319907000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 12:51:47"
+}
