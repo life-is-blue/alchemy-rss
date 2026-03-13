@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-13 08:09:34 | [返回首页](/README.md)
+**更新时间**: 2026-03-13 10:54:39 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9652)
+- [AI & 大模型](#ai-llm) (9658)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (715)
 - [DevOps](#devops) (432)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4960)
+- [其他](#other) (4962)
 
 
 ---
@@ -23,6 +23,7 @@
 
 
 - [AgentRx：AI-智能体的系统化调试](https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/) - AI 精选
+- [向量搜索的扩展：量化与套娃式嵌入比较，实现-80%-成本降低](https://towardsdatascience.com/649627-2/) - AI 精选
 - [NVIDIA-AI-Q-如何在-DeepResearch-Bench-I-和-II-中夺得第一](https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench) - AI 精选
 - [智能体-Harness-的解构](https://blog.langchain.com/the-anatomy-of-an-agent-harness/) - AI 精选
 - [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
@@ -41,9 +42,8 @@
 - [中国也有了世界第一的模型，他的名字，叫-Seedance-2.0。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a) - AI 精选
 - [介绍-Showboat-和-Rodney：让智能体能够演示其构建的成果](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything) - AI 精选
 - [智能体连接沙箱的两种模式](https://blog.langchain.com/the-two-patterns-by-which-agents-connect-sandboxes/) - AI 精选
-- [全网最详细的-Codex-入门教程，手把手教你玩转-Vibe-Coding。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679828&idx=1&sn=6e1c0a935c70c566ee765c02a36327a6) - AI 精选
 
-- [查看全部 9652 篇...](/details/tags/ai-llm.md)
+- [查看全部 9658 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -185,6 +185,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 4960 篇...](/details/tags/other.md)
+- [查看全部 4962 篇...](/details/tags/other.md)
 
 
