@@ -1,0 +1,54 @@
+{
+  "id": "RAW_c41ecad1",
+  "title": "程序员之后的编程：我们所知的计算机编程的终结",
+  "url": "https://simonwillison.net/2026/Mar/12/coding-after-coders/#atom-everything",
+  "date": "2026-03-12 19:23:44",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">12th March 2026 - Link Blog</p>\n   <p><strong><a href=\"https://www.nytimes.com/2026/03/12/magazine/ai-coding-programming-jobs-claude-chatgpt.html?unlocked_article_code=1.SlA.DBan.wbQDi-hptjj6\">Coding After Coders: The End of Computer Programming as We Know It</a></strong>. Epic piece on AI-assisted development by Clive Thompson for the New York Times Magazine, who spoke to more than 70 software developers from companies like Google, Amazon, Microsoft, Apple, plus other individuals including Anil Dash, Thomas Ptacek, Steve Yegge, and myself.</p>\n   <p>I think the piece accurately and clearly captures what's going on in our industry right now in terms appropriate for a wider audience.</p>\n   <p>I talked to Clive a few weeks ago. Here's the quote from me that made it into the piece.</p>\n   <blockquote>\n    <p>Given A.I.’s penchant to hallucinate, it might seem reckless to let agents push code out into the real world. But software developers point out that coding has a unique quality: They can tether their A.I.s to reality, because they can demand the agents test the code to see if it runs correctly. “I feel like programmers have it easy,” says Simon Willison, a tech entrepreneur and an influential blogger about how to code using A.I. “If you’re a lawyer, you’re screwed, right?” There’s no way to automatically check a legal brief written by A.I. for hallucinations — other than face total humiliation in court.</p>\n   </blockquote>\n   <p>The piece does raise the question of what this means for the future of our chosen line of work, but the general attitude from the developers interviewed was optimistic - there's even a mention of the possibility that the Jevons paradox might increase demand overall.</p>\n   <p>One critical voice came from an Apple engineer:</p>\n   <blockquote>\n    <p>A few programmers did say that they lamented the demise of hand-crafting their work. “I believe that it can be fun and fulfilling and engaging, and having the computer do it for you strips you of that,” one Apple engineer told me. (He asked to remain unnamed so he wouldn’t get in trouble for criticizing Apple’s embrace of A.I.)</p>\n   </blockquote>\n   <p>That request to remain anonymous is a sharp reminder that corporate dynamics may be suppressing an unknown number of voices on this topic.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9329/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 反思了《纽约时报》一篇探讨 AI 如何重塑编程的重要专题报道，强调了开发者通过自动化测试验证 AI 输出的独特能力。",
+  "oneSentenceSummary": "Simon Willison 反思了《纽约时报》一篇探讨 AI 如何重塑编程的重要专题报道，强调了开发者通过自动化测试验证 AI 输出的独特能力。",
+  "summary": "本文是对 Clive Thompson 在《纽约时报杂志》上发表的一篇长篇报道的评论，该报道采访了来自 Google 和 Amazon 等主要科技公司的 70 多位开发者，探讨了 AI 时代软件工程的转型。一个核心主题是“与现实挂钩”——这一理念认为，与律师或作家不同，程序员可以利用自动化测试立即发现 AI 幻觉。尽管业界普遍保持乐观，引用杰文斯悖论作为潜在就业增长的原因，但文章也指出，开发者中存在一种更隐秘的异议，他们哀叹手工技艺的失落，并感到受到公司 AI 强制要求的压力。",
+  "mainPoints": [
+    {
+      "point": "与其他职业相比，代码可测试性为抵御 AI 幻觉提供了独特的保障。",
+      "explanation": "因为代码可以通过自动化测试执行和验证，开发者可以将 AI 智能体“与现实挂钩”。这创建了一个反馈循环，防止 AI 生成的错误不受控制地蔓延，这是法律等领域所不具备的优势。"
+    },
+    {
+      "point": "杰文斯悖论表明，AI 效率实际上可能会增加对程序员的需求。",
+      "explanation": "AI 不会消除工作岗位，相反，AI 带来的开发速度提升和成本降低，可能导致软件构建总量的大幅增长，从而有可能维持或扩大劳动力规模。"
+    },
+    {
+      "point": "手工技艺的失落带来隐性的情感和职业成本。",
+      "explanation": "一些资深开发者认为，将代码的“手工制作”委托给 AI，剥夺了这一职业的乐趣和成就感。这种情绪在企业环境中常常受到压制，因为在这些环境中，AI 的采用是强制性的。"
+    }
+  ],
+  "keyQuotes": [
+    "他们可以将 AI 智能体与现实挂钩，因为他们可以要求智能体测试代码，以验证其是否正确运行。",
+    "我觉得程序员过得挺轻松的。如果你是律师，你就完蛋了，对吧？",
+    "我相信这可以是有趣、有成就感和引人入胜的，而让电脑代劳则会剥夺这些。",
+    "这种要求匿名的请求强烈提醒我们，企业动态可能正在压制关于这一主题的无数声音。"
+  ],
+  "tags": [
+    "AI 编程",
+    "软件工程",
+    "LLM 幻觉",
+    "行业趋势",
+    "杰文斯悖论"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 340,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773343424000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 19:23:44"
+}

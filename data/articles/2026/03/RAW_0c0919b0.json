@@ -1,0 +1,57 @@
+{
+  "id": "RAW_0c0919b0",
+  "title": "在 AKS 上大规模运行 Ray",
+  "url": "https://www.infoq.com/news/2026/03/ray-aks-ai-microsoft/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-12 09:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Azure Kubernetes Service (AKS) team at Microsoft has shared <a href=\"https://blog.aks.azure.com/2026/02/13/scaling-ray-aks\">guidance</a> for running Anyscale's managed <a href=\"https://www.anyscale.com/product/open-source/ray\">Ray</a> service at scale. They focus on three key issues: GPU capacity limits, scattered ML storage, and problems with credential expiry.</p>\n   <p>This post expands on a previous overview of open-source <a href=\"https://blog.aks.azure.com/2025/01/13/ray-on-aks\">KubeRay on AKS</a>. Now, it highlights Anyscale's improved runtime, previously known as RayTurbo. This runtime offers smart autoscaling, improved monitoring, and fault-tolerant training features. They are all based on the open-source Ray framework.</p>\n   <p>Ray is a Python-native distributed compute framework designed to scale AI and ML workloads from a single laptop to clusters spanning thousands of nodes. Anyscale's managed platform enhances Ray with features for production use. The new guidance shows a partnership between Microsoft and Anyscale to improve Azure integration.</p>\n   <p>GPU scarcity is one of the most significant operational challenges in large-scale ML. High-demand accelerators, such as NVIDIA GPUs, often have quota and availability issues in Azure regions. This can delay cluster setup and job scheduling.</p>\n   <p>Microsoft's proposed solution uses a multi-cluster, multi-region setup. Distributing Ray clusters across different AKS instances in various Azure regions allows teams to: Aggregate GPU quota beyond regional limits, automatically reroute workloads during outages or capacity issues and extend the compute pool to on-premises systems or other cloud providers using Azure Arc with AKS.</p>\n   <p>The Anyscale console shows these registered clusters in one view. Anyscale Workspaces manages workload scheduling using available capacity, either manually or automatically. You can add new regions by creating a cloud_resource.yaml manifest. Then, apply it using the Anyscale CLI. This configuration-first approach makes multi-region expansion easy to manage.</p>\n   <p>A common issue in ML operations is transferring training data, model checkpoints, and artifacts between pipeline stages. This includes moving them from pre-training to fine-tuning and then to inference. The guidance addresses this with Azure BlobFuse2, which mounts Azure Blob Storage into Ray worker pods as a POSIX-compatible filesystem.</p>\n   <p>From Ray's perspective, the mount point is just a local directory. Tasks and actors read datasets and write checkpoints using standard file I/O. BlobFuse2 then saves data to Azure Blob Storage. This makes data available across pods and node pools. Local caching prevents GPU stalls during large training runs, and because data is decoupled from compute, Ray clusters can scale up and down without data loss.</p>\n   <p>To set up, enable the blob CSI driver when creating the cluster. Then, define a <code>StorageClass</code> that uses workload identity for authentication. Finally, create a <code>PersistentVolumeClaim</code> with <code>ReadWriteMany</code> access. This allows multiple Ray workers on different nodes to access shared data at the same time. This approach makes Ray code portable. It also adds the durability and scalability of Azure-native storage to the infrastructure layer.</p>\n   <p>Another important topic is the authentication reliability. Anyscale and Azure used to integrate with CLI tokens or API keys that expired every 30 days. This meant manual rotation was needed, which risked service disruption.</p>\n   <p>The new method uses <a href=\"https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra\">Microsoft Entra</a> service principals and AKS workload identity. It issues short-lived tokens automatically. The Anyscale Kubernetes Operator pod uses a user-assigned managed identity. This identity requests an access token for the Anyscale service principal from Entra ID. Azure handles token refresh transparently, meaning no long-lived credentials are stored in the cluster and no manual rotation is required.</p>\n   <p>The authors say this is especially important in multi-cluster environments. Here, managing credentials by hand across many clusters adds to the operational burden. The workload identity model provides fine-grained RBAC for Azure resource access and produces full audit trails through Azure Activity Logs as a byproduct.</p>\n   <p>The Anyscale on AKS integration is currently in private preview. Teams wanting access should reach out to their Microsoft account team. They can also file a request on the AKS GitHub repository. Include details about Ray workloads and target regions. You can check out example setups and workloads for fine-tuning with DeepSpeed and LLaMA-Factory in the <a href=\"https://github.com/Azure-Samples/aks-anyscale\">Azure-Samples/aks-anyscale</a> repository on GitHub. This also includes LLM inference endpoints.</p>\n   <p>Microsoft is not the sole entity making this wager. AWS <a href=\"https://aws.amazon.com/blogs/containers/powering-the-next-generation-of-ai-workloads-on-amazon-eks-with-anyscale/\">announced</a> its Anyscale partnership at Ray Summit 2024. This connects EKS clusters to the RayTurbo runtime. It highlights hardware flexibility by combining NVIDIA GPUs with AWS's Trainium and Inferentia accelerators. Additionally, SageMaker HyperPod is now a deployment target for long-running training jobs that need node-level resilience. Google Cloud leads in open-source contributions.</p>\n   <p>The GKE team <a href=\"https://cloud.google.com/blog/products/containers-kubernetes/partnering-with-anyscale-to-integrate-rayturbo-with-gke\">worked</a> with Anyscale engineers to upstream label-based scheduling into Ray v2.49. They also created a ray.util.tpu layer to reduce resource fragmentation in multi-chip TPU setups. Additionally, they added Dynamic Resource Allocation for the new GB200-backed instances.</p>\n   <p>All three hyperscalers have chosen the same managed Ray operator, and each has added their infrastructure. This shows the industry prefers Kubernetes-plus-Ray for AI workloads. Now, the competition is less about the runtime and more about which cloud can streamline the surrounding infrastructure best.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Running Ray at Scale on AKS\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/ray-aks-ai-microsoft/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773306000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软与 Anyscale 合作提供在 AKS 上扩展 Ray 的架构指南，解决了 GPU 短缺、存储集成和自动化安全管理等问题。",
+  "oneSentenceSummary": "微软与 Anyscale 合作提供在 AKS 上扩展 Ray 的架构指南，解决了 GPU 短缺、存储集成和自动化安全管理等问题。",
+  "summary": "本文详细介绍了微软 AKS 团队如何针对大规模 AI 工作负载优化 Anyscale 托管 Ray 服务的部署。文章解决了三个关键的运维障碍：通过多集群/多区域架构克服区域 GPU 配额限制；使用 Azure BlobFuse2 实现 POSIX 兼容存储，从而简化 ML 数据管理；以及通过 Microsoft Entra ID 和 AKS 工作负载标识增强安全性，实现自动化的凭据轮换。该指南反映了更广泛的行业趋势，即 Azure、AWS 和 Google Cloud 等主要云服务商正在竞相为 Ray 框架提供最精简的基础设施，而 Ray 已成为分布式 Python 原生计算的标准。",
+  "mainPoints": [
+    {
+      "point": "实施多集群和多区域架构使工程团队能够有效绕过区域 GPU 容量限制和配额。",
+      "explanation": "通过将 Ray 集群分布在不同的 Azure 区域，团队可以整合配额，并在发生故障或容量问题时重新路由工作负载。这确保了超出单个区域限制的计算密集型 ML 任务的高可用性和可扩展性。"
+    },
+    {
+      "point": "利用 Azure BlobFuse2 可以将云存储挂载为 Ray 工作节点 Pod 的本地 POSIX 兼容文件系统。",
+      "explanation": "这种方法允许 Ray 任务使用标准文件 I/O 读取数据集和写入检查点。通过将数据与计算解耦，集群可以在不丢失数据的情况下动态扩展，而本地缓存可防止大型训练运行期间的 GPU 停顿。"
+    },
+    {
+      "point": "采用 Microsoft Entra ID 和 AKS 工作负载标识可实现凭据轮换自动化，并增强分布式集群的安全态势。",
+      "explanation": "用短寿命、自动刷新的令牌取代手动 API 密钥轮换，降低了服务中断的风险。该模型为 Azure 资源提供细粒度的 RBAC，并通过 Azure 活动日志生成全面的审计追踪。"
+    },
+    {
+      "point": "超大规模云厂商正越来越多地在基础设施优化而非核心 Ray 运行时上展开竞争，以吸引大规模 AI 工作负载。",
+      "explanation": "随着 Azure、AWS 和 Google Cloud 都采用了托管 Ray 算子，竞争优势转向了各供应商将其原生存储、网络和硬件加速器与 Ray 生态系统集成的完善程度。"
+    }
+  ],
+  "keyQuotes": [
+    "Ray 是一个 Python 原生分布式计算框架，旨在将 AI 和 ML 工作负载从单台笔记本电脑扩展到跨越数千个节点的集群。",
+    "工作负载标识模型为 Azure 资源访问提供细粒度的 RBAC，并顺带通过 Azure 活动日志生成完整的审计追踪。",
+    "所有三大云厂商都选择了相同的托管 Ray 算子……现在，竞争不再仅仅关乎运行时，而更多地在于哪家云服务商能最好地精简周边基础设施。"
+  ],
+  "tags": [
+    "Ray",
+    "AKS",
+    "Anyscale",
+    "MLOps",
+    "GPU 扩展"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 81,
+  "wordCount": 795,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773306000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 09:00:00"
+}

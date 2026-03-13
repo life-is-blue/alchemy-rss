@@ -1,0 +1,54 @@
+{
+  "id": "RAW_5dbd5ccb",
+  "title": "通过微小具体的行动和轮换主持人让回顾会议更有效",
+  "url": "https://www.infoq.com/news/2026/03/effective-retrospectives/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-12 11:15:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Teams can run regular retrospectives, that focus on 1–2 concrete weekly actions to avoid complaint circles, <a href=\"https://www.linkedin.com/in/natanzabkar/\">Natan Žabkar Nordberg</a> mentioned at <a href=\"https://qconlondon.com/\">QCon London</a>. In his talk <a href=\"https://www.infoq.com/presentations/team-diversity-productivity/\">Creating Impactful Software Teams</a>, he explained how you can rotate facilitators to build ownership, with each one bringing their own unique perspective. He suggested framing bigger changes as 4–6 week experiments, then vote to keep, tweak, or revert, ensuring learning and continuous improvement.</p>\n   <p>In an earlier article about <a href=\"https://www.infoq.com/news/2025/11/impactful-software-teams/\">Creating Impactful Software Teams That Continuously Improve</a>, Žabkar Nordberg explained how culture shapes how we feel, work, and succeed. People thrive in different environments—some need autonomy, others structure. Trust must be given first, not earned. Leaders should guide, not control, fostering autonomy and safety.</p>\n   <p>Diverse and empowered teams are impactful teams. A session 0 helps set expectations and ensures that everyone is approaching the team in a compatible way, Žabkar Nordberg showed in the article <a href=\"https://www.infoq.com/news/2026/02/create-impactful-teams-diversity/\">Creating Impactful Teams through Diversity using Session 0</a>.</p>\n   <p>If you aren’t doing regular retrospectives yet, please start now, Žabkar Nordberg suggested:</p>\n   <blockquote>\n    <p>It really is one of the easiest ways to continuously improve your work environment and culture.</p>\n   </blockquote>\n   <p>To make retrospectives work effectively, the main thing is to focus on smaller, concrete actions. If you do not complete actions, retrospectives can turn into a negative spiral, where all we do is complain about our situation, and nothing improves, Žabkar Nordberg explained:</p>\n   <blockquote>\n    <p>It is perfectly ok and healthy to have a venting session here and there, but don’t let it spiral into an echo chamber of complaints.</p>\n   </blockquote>\n   <p>Žabkar Nordberg suggested aiming for one or two small actions and ensuring that you complete something every single week. Smaller, continuous improvement helps more in the long term than the occasional grand gesture.</p>\n   <p>He also encouraged rotating retrospective facilitators. It is challenging to fairly represent one’s own ideas and opinions while facilitating the retrospective, as every person brings their own unique perspective, Žabkar Nordberg said. Having different people who facilitate retrospectives helps build ownership and engagement:</p>\n   <blockquote>\n    <p>If you have someone on your team who wants to get started on running meetings and is inexperienced, a retrospective is a great way to start! Retrospectives are similar and well-defined, and different facilitators can inject some of their own ideas and initiatives, to highlight different discussion topics.</p>\n   </blockquote>\n   <p>If you are the person running the retrospective, remember that it is ok to bring an agenda sometimes. Do you have a recurring issue that you want to talk about? Pick a retrospective format that fits it, and address it, Žabkar Nordberg said. Just make sure you bring up the issue and listen to what people say, instead of having a solution in mind and pushing for it, no matter what the rest of the team says, he added.</p>\n   <p>One of the difficulties in running retrospectives is that it can be difficult to agree on actions. This is especially true when you are talking about fundamental changes in ways of working, where people tend to have stronger preferences, and there is often more contention about the best way forward, Žabkar Nordberg explained:</p>\n   <blockquote>\n    <p>In one of my teams, we started to regularly hit the hurdle of not getting to a clear agreement. That was when I introduced the concept of an \"experiment\". We framed any action as a short-term change, usually 4-6 weeks. This was short enough that the whole team could commit to actively and consistently trying it out, no matter if they were originally for or against the idea. At the same time, it was long enough that we would actually see the impact of it.</p>\n   </blockquote>\n   <p>The important part was what happened after the 4-6 week period was over, Žabkar Nordberg mentioned. They held a retrospective, either a separate one if it was a large change, or their regularly scheduled one if it was a smaller change. In that retrospective, they would explicitly vote for one of three options:</p>\n   <blockquote>\n    <ul>\n     <li>Keep the change</li>\n     <li>Keep the change, but tweak it</li>\n     <li>Revert the change and go back to what we used to do</li>\n    </ul>\n   </blockquote>\n   <p>In case they cannot reach an agreement, the default decision would be to revert the change, Žabkar Nordberg explained:</p>\n   <blockquote>\n    <p>This helped us keep any potential change as an actual experiment and ensured we are not just quietly forcing changes on the rest of the team. With this approach, everyone felt listened to, and we ensured a cycle of learning and improvement.</p>\n   </blockquote>\n   <p>Try running an experiment or two and see if it works for you, Žabkar Nordberg concluded.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Making Retrospectives Effective with Small Concrete Actions and Rotating Facilitators\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/effective-retrospectives/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773314100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文提供了通过每周微小且具体的行动、轮换主持人和将重大流程变更设定为有时限的实验来增强团队回顾会议的实用策略。",
+  "oneSentenceSummary": "本文提供了通过每周微小且具体的行动、轮换主持人和将重大流程变更设定为有时限的实验来增强团队回顾会议的实用策略。",
+  "summary": "本文总结了 Natan Žabkar Nordberg 在 QCon London 演讲中关于构建有影响力软件团队的见解。文章强调，如果回顾会议演变成没有实质成果的“抱怨圈”，通常会失败。为了应对这一问题，Nordberg 建议每周专注于 1-2 个微小且具体的行动。关键建议包括轮换主持人以建立团队归属感，以及使用“Session 0”来对齐多元化的团队。一个显著的亮点是“实验”框架：将有争议的流程变更设定为 4-6 周的试运行。试运行结束后，团队投票决定保留、调整或恢复原状，确保改进是基于证据且包容的，而非强加的。",
+  "mainPoints": [
+    {
+      "point": "每周优先处理一两个微小且具体的行动，防止回顾会议演变成毫无成效的抱怨圈。",
+      "explanation": "通过确保每周至少完成一项微小的改进，团队可以避免陷入毫无变化的负面螺旋，将会议从宣泄情绪转变为持续进步的驱动力。"
+    },
+    {
+      "point": "在所有团队成员中轮换回顾会议主持人的角色，以培养集体归属感和参与感。",
+      "explanation": "不同的主持人会为会议带来独特的视角和形式，防止停滞不前，并让经验较少的成员在安全且定义明确的环境中培养领导技能。"
+    },
+    {
+      "point": "针对工作方法的根本性变革引入“实验”概念，以克服团队的分歧和阻力。",
+      "explanation": "将变更设定为 4-6 周的试运行，让团队能够暂时致力于新流程。之后，通过正式投票决定保留、调整或恢复，确保决策是基于实际经验而非推测。"
+    }
+  ],
+  "keyQuotes": [
+    "这确实是持续改善工作环境和文化最简单的方法之一。",
+    "偶尔进行一次情绪宣泄是完全可以且健康的，但不要让它演变成抱怨的回音壁。",
+    "我们将任何行动都设定为短期变更，通常为 4-6 周。这段时间足够短，无论最初是支持还是反对，整个团队都能致力于积极且持续地尝试。",
+    "如果无法达成一致，默认决定将是恢复变更。"
+  ],
+  "tags": [
+    "敏捷开发",
+    "回顾会议",
+    "团队管理",
+    "软件工程",
+    "持续改进"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 746,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773314100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-12 11:15:00"
+}
