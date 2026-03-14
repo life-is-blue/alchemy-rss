@@ -1,0 +1,58 @@
+{
+  "id": "RAW_2a5851b9",
+  "title": "Netflix 在现代 CPU 上扩展容器时发现了内核级瓶颈",
+  "url": "https://www.infoq.com/news/2026/03/netflix-kernel-scaling-container/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-13 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Engineers at <a href=\"https://netflixtechblog.com/mount-mayhem-at-netflix-scaling-containers-on-modern-cpus-f3b09b68beac?gi=04d91e3ba53e\">Netflix have uncovered</a> deep performance bottlenecks in container scaling that trace not to <a href=\"https://kubernetes.io/\">Kubernetes</a> or containerd alone, but into the CPU architecture and Linux kernel itself. In a detailed blog post, Netflix technologists explain how their move to a modern container runtime exposed surprising contention on global mount locks in the <a href=\"https://docs.kernel.org/filesystems/vfs.html\">kernel's virtual filesystem </a>(VFS), revealing that underlying hardware topology and lock contention can limit the scaling of hundreds of containers concurrently, even on powerful cloud servers.</p>\n   <p dir=\"ltr\">The issue first surfaced as nodes running Netflix workloads began stalling for tens of seconds under high concurrency, with simple health probes timing out and container creation freezing. Investigations showed the mount table ballooning dramatically during the startup of many-layer container images, straining the kernel's global mount lock as containerd executed thousands of bind mount operations to map user namespaces for each image layer. With every container requiring dozens of mounts and unmounts, the cumulative workload easily exceeded 20,000 mount syscalls during large bursts, all needing access to the same kernel lock, a classic concurrency bottleneck deep in the operating system.</p>\n   <p dir=\"ltr\">Netflix's performance team found that not all CPU architectures behave the same under this load. On older dual-socket AWS r5.metal instances (with multiple<a href=\"https://www.kernel.org/doc/html/v4.18/vm/numa.html\"> NUMA domains </a>and mesh-based cache coherence), high concurrency accelerated contention on shared caches and global locks, severely degrading performance. By contrast, newer single-socket instances such as AWS m7i.metal (Intel) and m7a.24xlarge (AMD) with distributed cache architectures scaled much more smoothly, with fewer stalls even as container counts climbed. Analysis revealed that factors like NUMA effects, hyperthreading, and cache microarchitecture significantly influenced how global lock contention propagated through the system.</p>\n   <p dir=\"ltr\">Netflix engineers confirmed that hardware design matters at scale: <a href=\"https://smithanjohn.medium.com/understanding-numa-non-unified-memory-access-4fcb9c493d2c\">NUMA-induced remote memory access latency</a> and competing hyperthreads exacerbated lock waits, while distributed cache designs reduced bottlenecks. For example, disabling hyperthreading improved latency by up to 30 % in some configurations, and single-socket instances avoided cross-domain memory penalties entirely. These experiments demonstrated that achieving reliable scaling for container-heavy workloads requires understanding both software concurrency and hardware behavior.</p>\n   <p dir=\"ltr\">Armed with this insight, the team explored two major mitigations: adopting <a href=\"https://docs.kernel.org/filesystems/mount_api.html\">newer kernel mount APIs </a>that use file descriptors to avoid global locks entirely, and redesigning how overlay filesystems are built so that the number of mount operations per container drops from linear in the number of layers (O(n)) to constant time per container (O(1)). Netflix chose the latter as it can be deployed more broadly without requiring newer kernels, eliminating mount contention in practice. By grouping layer mounts under a common parent, the mount load on the kernel falls dramatically, smoothing container startups even under high load.</p>\n   <p dir=\"ltr\">Netflix also addressed the hardware side by routing demanding workloads toward CPU architectures that handle<a href=\"https://meta.miraheze.org/wiki/Global_locks\"> global locks </a>more gracefully, combining hardware-aware scheduling with software improvements. Their findings highlight a broader lesson for organizations at scale: achieving predictable performance in distributed systems often demands co-design across the stack, from container orchestration and filesystem usage to kernel internals and CPU microarchitecture.</p>\n   <p dir=\"ltr\">The Netflix team published the deep dive to share these performance insights with the broader engineering community, emphasizing that bottlenecks in modern cloud platforms can arise in places few developers typically consider, and that solving them may require both low-level system tweaks and a clear understanding of the hardware running your workloads.</p>\n   <p dir=\"ltr\">Several organizations have published best practices that closely align with Netflix's findings on container scaling and kernel-level contention. There is emphasis on <a href=\"https://aws.amazon.com/blogs/hpc/a-scientific-approach-to-workload-aware-computing-on-aws/\">hardware-aware workload placement</a>, particularly understanding NUMA topology, <a href=\"https://redis.io/glossary/cache-coherence/\">cache coherence design</a>, and <a href=\"https://techdocs.broadcom.com/de/de/vmware-cis/cloud/vmware-cloud-on-aws/SaaS/performance-best-practices-for-vmc/esxi-and-virtual-machines/esxi-cpu-considerations/hyper-threading.html\">hyperthreading behavior</a> when running high-density container workloads. There are also best practices favoring <a href=\"https://www.engineering.com/supermicro-announces-single-socket-servers-for-data-centers/\">single-socket architectures</a> or carefully selecting i<a href=\"https://www.cloudzero.com/blog/aws-instance-types/\">nstance families</a> that minimize cross-domain memory latency, as well as using bare-metal or dedicated instances for system-intensive operations. At the software level, <a href=\"https://www.cdotrends.com/story/4644/kubernetes-promised-portability-so-why-are-so-many-locking-themselves\">Kubernetes </a>and <a href=\"https://www.cncf.io/blog/2019/07/15/demystifying-containers-part-ii-container-runtimes/\">container runtime communities </a>advocate reducing global lock contention by minimizing mount and unmount operations, consolidating filesystem layers, and adopting newer kernel APIs where possible to avoid shared bottlenecks.</p>\n   <p dir=\"ltr\">In addition, organizations such as <a href=\"https://newsletter.pragmaticengineer.com/p/google\">Google </a>and <a href=\"https://logz.io/blog/going-beyond-infrastructure-observability-meta/\">Meta </a>emphasize deep, system-level observability as a core scaling practice, using tools like <a href=\"https://ebpf.io/\">eBPF,</a> <a href=\"https://www.brendangregg.com/perf.html\">perf</a>, and <a href=\"https://www.datadoghq.com/knowledge-center/distributed-tracing/flame-graph/\">flame graphs</a> to detect hidden kernel stalls and lock contention under concurrency. Cloud providers also recommend leveraging local ephemeral storage for image caching, optimizing overlay filesystems, and tuning runtime configurations to reduce startup amplification effects. Together, these practices reflect a broader industry shift toward hardware-software co-design, where predictable container scaling depends not only on orchestration and runtime improvements, but also on understanding CPU microarchitecture, filesystem behavior, and kernel internals, the same cross-stack approach highlighted in Netflix's analysis.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Netflix Uncovers Kernel-Level Bottlenecks While Scaling Containers on Modern CPUs\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/netflix-kernel-scaling-container/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773403200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 工程师发现，容器扩展瓶颈源于 Linux 内核全局挂载锁争用，而特定的 CPU 架构和 NUMA 拓扑会显著加剧这一问题。",
+  "oneSentenceSummary": "Netflix 工程师发现，容器扩展瓶颈源于 Linux 内核全局挂载锁争用，而特定的 CPU 架构和 NUMA 拓扑会显著加剧这一问题。",
+  "summary": "文章详细介绍了 Netflix 对高并发容器启动期间性能停滞的深入调查。根本原因被追溯到 Linux 内核的虚拟文件系统 (VFS) 全局挂载锁，当 containerd 为多层镜像执行数千个绑定挂载时，该锁成为瓶颈。该研究强调了硬件因素，例如 NUMA 引起的延迟和超线程，如何在新单插槽架构相比旧双插槽系统上加剧锁争用。为解决此问题，Netflix 实施了软件重新设计，将挂载复杂性从 O(n) 降低到 O(1)，并根据 CPU 微架构优化了工作负载放置。",
+  "mainPoints": [
+    {
+      "point": "Linux VFS 中的全局挂载锁争用限制了并发容器扩展。",
+      "explanation": "当多层容器镜像启动时，大量的绑定挂载系统调用会在内核的全局挂载锁处造成瓶颈。这导致系统范围的停滞和超时，是传统编排层（如 Kubernetes）无法单独解决的问题。"
+    },
+    {
+      "point": "CPU 微架构和 NUMA 拓扑显著影响内核锁争用的严重程度。",
+      "explanation": "较旧的双插槽架构存在远程内存访问延迟和缓存一致性问题，这会放大锁等待时间。相比之下，较新的单插槽实例或采用分布式缓存设计的实例能更高效地处理高并发锁定。"
+    },
+    {
+      "point": "将挂载复杂性从 O(n) 转换为 O(1) 有效消除了扩展瓶颈。",
+      "explanation": "通过重新设计叠加文件系统的构建方式（将层挂载分组到一个共同的父级下），Netflix 将每个容器所需的挂载操作数量减少到一个常数。这种架构转变绕过了内核的全局锁限制，且无需内核升级。"
+    },
+    {
+      "point": "规模化下的可预测性能需要硬件-软件协同设计方法。",
+      "explanation": "实现高密度容器性能需要对整个堆栈有可见性。工程师必须考虑软件级文件系统操作如何与底层内核内部机制以及运行工作负载的特定物理 CPU 拓扑交互。"
+    }
+  ],
+  "keyQuotes": [
+    "调查显示，在多层容器镜像启动期间，挂载表急剧膨胀，使内核的全局挂载锁承受巨大压力。",
+    "硬件设计在规模化时至关重要：NUMA 引起的远程内存访问延迟和相互竞争的超线程加剧了锁等待。",
+    "Netflix 选择重新设计叠加文件系统的构建方式，以便每个容器的挂载操作数量从线性时间 (O(n)) 降至常数时间 (O(1))。",
+    "在分布式系统中实现可预测的性能通常需要跨堆栈的协同设计，从容器编排到 CPU 微架构。"
+  ],
+  "tags": [
+    "Linux 内核",
+    "容器扩展",
+    "VFS",
+    "NUMA",
+    "性能工程"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 750,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773403200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-13 12:00:00"
+}

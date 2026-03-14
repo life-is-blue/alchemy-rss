@@ -1,0 +1,63 @@
+{
+  "id": "RAW_08818206",
+  "title": "DoorDash 构建 LLM 对话模拟器，规模化测试客户支持聊天机器人",
+  "url": "https://www.infoq.com/news/2026/03/doordash-llm-chatbot-simulator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-13 14:12:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>DoorDash has developed a simulation and evaluation flywheel to accelerate the development and testing of large language model (LLM) powered customer support chatbots. The system allows engineers to run hundreds of simulated conversations within minutes, significantly speeding experimentation cycles. Context engineering improvements validated through this framework reduced hallucination rates by roughly 90 percent before deployment.</p>\n   <p>As DoorDash noted in a LinkedIn <a href=\"https://www.linkedin.com/posts/doordash_a-simulation-and-evaluation-flywheel-to-develop-activity-7423048166465527808-Op13?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>, sharing this work,</p>\n   <blockquote>\n    <p>The fundamental challenge is validating LLM-based support systems before production: How do you test a chatbot that never answers the same way twice?</p>\n   </blockquote>\n   <p>Customer support automation has traditionally relied on deterministic decision trees, where users follow predefined paths based on menu selections or keywords. Such workflows allowed developers to validate changes with conventional tests. LLM-powered agents, however, handle natural conversations, meaning small adjustments to prompts, context, or backend integrations can produce unpredictable outcomes across multiple conversation paths.</p>\n   <p>To address this, DoorDash built an offline experimentation framework combining an LLM-powered customer simulator with an automated evaluation system. The simulator generates multi-turn conversations reflecting real customer interactions, using historical support transcripts to derive customer intents, conversation flows, and behavioral patterns. Backend dependencies, such as order lookups or refund workflows, are reproduced with mocked service APIs, enabling realistic operational scenarios.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/doordash-llm-chatbot-simulator/news/2026/03/doordash-llm-chatbot-simulator/en/resources/1llmsimulation-1772868111281.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/doordash-llm-chatbot-simulator/en/resources/1llmsimulation-1772868111281.jpeg\" rel=\"share\"></p>\n   <p><em>Simulation Workflow Overview (Source: <a href=\"https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/\">DoorDash Blog Post</a>)</em></p>\n   <p>In the simulation environment, an LLM plays the customer while the production chatbot responds as it would in a real interaction. The simulator adapts to the chatbot’s responses, handling scenarios such as clarification requests, frustration signals, or repeated issues. Alongside the simulator, an automated evaluation framework classifies outcomes against predefined policies and metrics, including compliance, hallucination rates, tone, and task completion accuracy. Simulator and evaluation together form a continuous development loop. Engineers identify failure cases, add evaluation checks, and generate additional simulations targeting those scenarios. Prompt adjustments, retrieval strategies, or context improvements are validated across hundreds of conversations before deployment.</p>\n   <p>The flywheel also addressed hallucinations caused by overloaded context windows. Early launches revealed that excessive raw events and logs could mislead the chatbot, producing errors such as misinterpreted fields or invalid policy suggestions. Engineers implemented a binary hallucination metric and test scenarios derived from observed failures. Iterating with the flywheel, they developed a case state layer that structures tool history for the chatbot. The simulator enabled rapid testing of multiple context configurations and prompt strategies, quickly exposing failure modes and validating improvements.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/doordash-llm-chatbot-simulator/news/2026/03/doordash-llm-chatbot-simulator/en/resources/1flywheel-1772868111281.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/doordash-llm-chatbot-simulator/en/resources/1flywheel-1772868111281.jpeg\" rel=\"share\"></p>\n   <p><em>Simulation-Evaluation Flywheel (Source: <a href=\"https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/\">DoorDash Blog Post</a>)</em></p>\n   <p>The DoorDash flywheel follows a structured problem-to-production workflow. Engineers begin by identifying a customer issue, often through manual review of support cases or early simulations. They then create an LLM-as-judge evaluation to detect the failure mode, calibrating it against human judgment to ensure accuracy. Once the evaluation is trusted, the simulator generates conversations representing the current system, and evaluations identify failures. Engineers analyze errors, adjust prompts, context handling, or tool outputs, and iterate until the evaluation pass rate reaches acceptable thresholds. Before deployment, guardrails such as hallucination detection, tone assessment, and issue classification are validated with the full evaluation suite, ensuring improvements hold in live traffic.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DoorDash Builds LLM Conversation Simulator to Test Customer Support Chatbots at Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/doordash-llm-chatbot-simulator/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773411120000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DoorDash 开发了一个基于 LLM 的自动化模拟与评估“飞轮”，用于严格测试非确定性客户支持聊天机器人，实现了幻觉率降低 90%。",
+  "oneSentenceSummary": "DoorDash 开发了一个基于 LLM 的自动化模拟与评估“飞轮”，用于严格测试非确定性客户支持聊天机器人，实现了幻觉率降低 90%。",
+  "summary": "DoorDash 实施了一个精密的离线实验框架，以解决测试非确定性 LLM 驱动的聊天机器人固有的难度。该系统具有一个“模拟与评估飞轮”，其中一个 LLM 充当客户——模仿源自历史对话记录的真实意图和行为——而生产环境的聊天机器人在模拟环境中响应。这种设置允许在几分钟内测试数百个多轮对话。一个利用 LLM 作为评判者的自动化评估层，评估这些交互的合规性、语气和准确性。一个关键的技术突破是利用该框架来改进上下文工程，具体而言，通过创建一个“案例状态层”来结构化工具历史，这成功地缓解了由上下文窗口过载引起的幻觉。",
+  "mainPoints": [
+    {
+      "point": "该框架解决了测试非确定性 AI 系统的挑战。",
+      "explanation": "与传统决策树不同，LLM 会产生不可预测的结果；DoorDash 使用模拟器生成数百种不同的对话路径，以确保可靠性。"
+    },
+    {
+      "point": "一个闭环“飞轮”将模拟与自动化评估指标相结合。",
+      "explanation": "该系统结合了 LLM 客户模拟器与自动化评判者，根据幻觉率、语气和任务完成准确性对结果进行分类。"
+    },
+    {
+      "point": "通过“案例状态层”进行上下文工程显著减少了错误。",
+      "explanation": "通过将工具历史和原始日志结构化为一个简化的状态层，工程师将幻觉率降低了 90%，防止模型过载。"
+    },
+    {
+      "point": "模拟的后端依赖项支持大规模的真实操作测试。",
+      "explanation": "模拟器使用模拟 API 进行订单查询和退款，允许 AI 对复杂的真实业务逻辑进行测试，而不影响实时数据。"
+    },
+    {
+      "point": "结构化的从问题到生产的工作流程确保了高部署标准。",
+      "explanation": "工程师识别故障，根据人工判断校准 LLM 作为评判者的评估，并迭代提示，直到通过率达到可接受的阈值，然后才上线。"
+    }
+  ],
+  "keyQuotes": [
+    "核心挑战是在生产前验证基于 LLM 的支持系统：你如何测试一个从不两次给出相同答案的聊天机器人？",
+    "通过该框架验证的上下文工程改进在部署前将幻觉率降低了大约 90%。",
+    "模拟器和评估共同构成一个持续的开发循环。",
+    "模拟器实现了对多种上下文配置和提示策略的快速测试，迅速暴露了故障模式并验证了改进。",
+    "工程师识别故障案例，添加评估检查，并生成针对这些场景的额外模拟。"
+  ],
+  "tags": [
+    "LLM 运维",
+    "聊天机器人测试",
+    "AI 模拟",
+    "幻觉缓解",
+    "自动化评估"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 503,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773411120000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-13 14:12:00"
+}
