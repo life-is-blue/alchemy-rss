@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-14 10:53:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-14 12:31:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -410,17 +410,13 @@
 
 ### [从传统架构到-Cloudflare-One](https://blog.cloudflare.com/legacy-to-agile-sase/)
 
-2026-03-16 13:00:08 | 标签: SASE, 零信任, Cloudflare One, 网络迁移, 传统系统现代化
-
-> 本文探讨了“大爆炸式”迁移风险——这是零信任采纳的主要障碍，即组织担心在进行大规模网络切换时出现运营停滞。Cloudflare 与 CDW 合作，提出了一个结构化路线图，将网络迁移视为一个应用现代化项目。其核心策略是使用 Cloudflare Access 和 Tunnel “封装”传统应用，在不重写代码的情况下提供现代安全（MFA/SSO）。文章详细介绍了严格的迁移前审计流程、基于迁移工作量的四层应用分类模型，以及一个强调传统系统与现代系统并存以确保安全过渡的三阶段推广计划。
+2026-03-16 13:00:08
 
 
 
 ### [Netflix-在现代-CPU-上扩展容器时发现了内核级瓶颈](https://www.infoq.com/news/2026/03/netflix-kernel-scaling-container/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-13 12:00:00 | 标签: Linux 内核, 容器扩展, VFS, NUMA, 性能工程
-
-> 文章详细介绍了 Netflix 对高并发容器启动期间性能停滞的深入调查。根本原因被追溯到 Linux 内核的虚拟文件系统 (VFS) 全局挂载锁，当 containerd 为多层镜像执行数千个绑定挂载时，该锁成为瓶颈。该研究强调了硬件因素，例如 NUMA 引起的延迟和超线程，如何在新单插槽架构相比旧双插槽系统上加剧锁争用。为解决此问题，Netflix 实施了软件重新设计，将挂载复杂性从 O(n) 降低到 O(1)，并根据 CPU 微架构优化了工作负载放置。
+2026-03-13 12:00:00
 
 
 
