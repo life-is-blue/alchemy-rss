@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-14 22:06:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-15 00:04:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -608,9 +608,7 @@
 
 ### [Symfony-7.4-中的-Passkeys：如何构建一个完全无密码的未来](https://hackernoon.com/passkeys-in-symfony-74-how-to-build-a-completely-passwordless-future?source=rss)
 
-2026-03-13 16:00:05 | 标签: Symfony, Passkeys, WebAuthn, FIDO2, PHP
-
-> 本文深入探讨了如何将 Symfony 应用程序从传统的基于密码的安全机制过渡到使用 Passkeys 的 100% 无密码架构。它详细介绍了 'web-auth/webauthn-symfony-bundle' 的实现，强调移除 PasswordAuthenticatedUserInterface 以消除与密码相关的漏洞。该指南涵盖了用于公钥存储的数据库模式设计、依赖方 (RP) 的后端配置以及使用 Stimulus 控制器进行的前端集成。关键的是，它解决了生产级别的问题，例如 CSRF 保护、自定义 AJAX 认证处理程序以及 Apple 特定的实现细节，如 AAGUID 验证和 HTTPS...
+2026-03-13 16:00:05
 
 
 

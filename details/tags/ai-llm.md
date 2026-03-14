@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-14 22:06:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-15 00:04:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11066,9 +11066,7 @@
 
 ### [LLM-幻觉不只是「胡说八道」？新理论首次拆解幻觉的两大根源丨-ICLR'2026](https://mp.weixin.qq.com/s?__biz=MzU3NjE4NjQ4MA==&mid=2247555928&idx=1&sn=747cd0a4592bb0b7dadd8a7292885710)
 
-2026-03-13 16:02:00 | 标签: LLM 幻觉, ICLR 2026, 神经切线核 (NTK), 推理优化, 幻觉检测
-
-> 本文深度解析了来自弗吉尼亚理工、MIT 等机构的最新研究成果。该研究首次提出了“幻觉风险界”（Hallucination Risk Bound）统一理论，将大模型幻觉归结为数据驱动（知识缺失/偏差）与推理驱动（解码不稳定/逻辑放大）两大根源。研究指出，推理驱动型幻觉会随生成长度呈指数级放大，解释了长链条推理失控的本质。基于此，团队开发了 HALLUGUARD 检测器，利用神经切线核（NTK）的谱结构和 Jacobian 放大效应，实现了无需外部知识、零监督的实时幻觉评分。实验表明，该方法不仅在检测上达到 SOTA，还能通过指导 Beam Search 显著提升模型在数学和指令任务中的推理表现。
+2026-03-13 16:02:00
 
 
 
@@ -31264,9 +31262,7 @@
 
 ### [使用-NVIDIA-Cosmos-世界基础模型扩展合成数据和物理-AI-推理](https://developer.nvidia.com/blog/scale-synthetic-data-and-physical-ai-reasoning-with-nvidia-cosmos-world-foundation-models/)
 
-2026-03-13 16:01:16 | 标签: 世界基础模型, 物理 AI, 合成数据, 机器人技术, NVIDIA Cosmos
-
-> 本文介绍了下一代 NVIDIA Cosmos 世界基础模型（WFM），这是一套旨在解决物理 AI 中数据稀缺和推理挑战的工具。文章重点介绍了三个核心模型：Cosmos Transfer 2.5，它将 3D 模拟转换为逼真、基于物理的视频；Cosmos Predict 2.5，它生成具有高时间一致性的未来世界状态和长尾场景；以及 Cosmos Reason 2，一个多模态模型，能够使用思维链（CoT）和强化学习进行复杂的时空推理。这些模型与 NVIDIA Omniverse 和 OpenUSD 集成，使开发者能够生成海量、多样化的合成数据集，并为类人机器人和自动驾驶系统进行领域特定模型的后训练。
+2026-03-13 16:01:16
 
 
 
@@ -44006,9 +44002,7 @@ http://antirez.com/news/162
 
 ### [Codex-不打算让-Claude-Code-好过](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626204&idx=1&sn=bb6b350ae665aa8040f72be8c1ebb2d6)
 
-2026-03-14 03:22:00 | 标签: OpenAI, Codex, Claude Code, Coding Agent, GPT-5
-
-> 文章详尽记录了 OpenAI 在短短六周内对 Codex 进行的密集迭代，包括发布 GPT-5.4 原生支持计算机使用、推出 Codex Security 安全审计工具以及引入 Cerebras 硬件加速推理。核心观点指出，开发者已不再纠结于单一工具的选择，而是转向“叠加使用（Stacking）”模式：利用 Claude 进行创意规划，利用 Codex 进行稳定执行与代码审查。此外，文章探讨了 OpenAI 内部“自举”式的工程文化——90% 的 Codex 代码由其自身编写，预示着未来工程师的角色将从“代码编写者”转型为“Agent 管理者”，而 Codex 正是 OpenAI 迈向通用个人...
+2026-03-14 03:22:00
 
 
 
@@ -57772,17 +57766,13 @@ http://antirez.com/news/162
 
 ### [Claw-集成-MCP-Chrome-会话功能](https://x.com/steipete/status/2032650405453181358)
 
-2026-03-14 02:49:56 | 标签: MCP, Chrome DevTools, AI 智能体, 浏览器自动化, Claw
-
-> 这条推文详细介绍了 'claw' 工具的一项重大技术更新：集成了模型上下文协议 (MCP) Chrome 会话功能。与标准自动化不同，这项功能允许 AI 智能体完全访问用户的活动浏览器会话和已登录网站。Peter 附上了一个官方 Chrome DevTools 博客链接，以提供关于此调试/自动化桥梁如何工作的技术背景。
+2026-03-14 02:49:56
 
 
 
 ### [Claude-100-万-token-上下文窗口全面可用](https://x.com/claudeai/status/2032512204189405320)
 
-2026-03-13 17:40:46 | 标签: Claude, Anthropic, 100 万 上下文窗口, Claude Code, LLM
-
-> 这条推文标志着 Claude 100 万 token 上下文窗口的全面可用（GA）。此前，这一巨大的上下文容量是受限的，现在所有订阅套餐的用户均可访问。此外，它已成为 Claude Code 在标准定价下的默认设置。此次更新对需要单次交互处理海量数据、整个代码库或长篇文档的开发者和企业来说意义重大。
+2026-03-13 17:40:46
 
 
 
@@ -57794,9 +57784,7 @@ http://antirez.com/news/162
 
 ### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
-2026-03-13 17:30:13 | 标签: Claude Opus 4.6, 基准测试, MRCR v2, 多模态, AI 基础设施
-
-> 继全面可用（GA）公告之后，这条推文提供了技术验证和具体的性能细节。它强调 Claude Opus 4.6 在百万 token 规模的 MRCR v2 基准测试中获得了 78.3% 的高分，位居顶尖模型之首。推文还明确了扩展后的媒体限制，每次请求可支持多达 600 张图片或 PDF 页面，这对于分析大型代码库和文档集来说非常理想。
+2026-03-13 17:30:13
 
 
 
