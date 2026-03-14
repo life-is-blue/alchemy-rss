@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-14 20:04:39 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-14 22:06:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -606,6 +606,14 @@
 
 
 
+### [Symfony-7.4-中的-Passkeys：如何构建一个完全无密码的未来](https://hackernoon.com/passkeys-in-symfony-74-how-to-build-a-completely-passwordless-future?source=rss)
+
+2026-03-13 16:00:05 | 标签: Symfony, Passkeys, WebAuthn, FIDO2, PHP
+
+> 本文深入探讨了如何将 Symfony 应用程序从传统的基于密码的安全机制过渡到使用 Passkeys 的 100% 无密码架构。它详细介绍了 'web-auth/webauthn-symfony-bundle' 的实现，强调移除 PasswordAuthenticatedUserInterface 以消除与密码相关的漏洞。该指南涵盖了用于公钥存储的数据库模式设计、依赖方 (RP) 的后端配置以及使用 Stimulus 控制器进行的前端集成。关键的是，它解决了生产级别的问题，例如 CSRF 保护、自定义 AJAX 认证处理程序以及 Apple 特定的实现细节，如 AAGUID 验证和 HTTPS...
+
+
+
 ### [Taro-5.0：跨端架构演进与业务规模化落地实践](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501978&idx=1&sn=6fc95e48dc56d30f19e9ee07acd7bf46)
 
 2026-03-12 10:18:00
@@ -708,13 +716,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2208,13 +2216,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3918,13 +3926,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
