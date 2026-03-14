@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0158313a",
+  "title": "来自 GitHub 的数据表明，AI 工具正在创造“便利循环”，重塑开发者的语言选择",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278241&idx=3&sn=a32c109a6e0b58aa9ac9668596a6fe7d",
+  "date": "2026-03-14 04:21:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Steef-Jan Wiggers </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 平川 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">近日，GitHub 2025 年的 Octoverse 报告揭示了开发者可能没有意识到的一些事情。AI 编程助手不仅改变了开发者编写代码的速度，还影响了开发者最初选择的语言。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">TypeScript 以 66% 的惊人年增长率成为 GitHub 上使用最多的语言，其原因不仅仅是框架的默认设置。GitHub 开发大使 Andrea Griffiths 称之为“便利循环（convenience loop）”，其工作原理是：当 AI 使某项技术变得方便使用时，开发者就会蜂拥而至，而这反过来产生了更多的训练数据，使 AI 在该技术上变得更加出色。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">根据&nbsp;GitHub 2025 年的 Octoverse 报告，到 2025 年 8 月，TypeScript 超越了 Python 和 JavaScript，成为 GitHub 上月活跃贡献者最多的语言，拥有 263.6 万开发者。这是十多年来最大的语言排名变动。当然，像 Next.js 和 Astro 这样默认使用 TypeScript 的框架提供了一些帮助。但对于为什么 TypeScript 与 AI 如此契合，有一个更深层次的技术原因。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503794578\" data-ratio=\"0.5625668449197861\" style=\"width: 100%;\" data-type=\"png\" data-w=\"935\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=78d3d222&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FhLLZnAbUwNiajY328A0tYQDqqjxqFuxaaAkECaMccPBmLOXVApUPa2EMeiaiaSfJuqe58ySroGKHnUZDRQwedhaNWBd3CfbyUdAX50tAYria52U%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\">（图片来源：GitHub 博客）</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在最近的一篇博文中，Griffiths 进行了分析说明：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">当一个任务或流程进行得顺利时，你的大脑就会记住。便利性吸引注意力。减少阻碍变成了偏好，而大规模的偏好可以改变生态系统。在 GitHub 上 ，80% 的新开发者在第一周内使用了 Copilot 。这些早期接触重新定义了“简单”的基线。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">其技术优势显而易见。强类型语言为 AI 提供了明确的护栏。当你在 TypeScript 中声明 x: string 时，AI 立即就知道要忽略所有不适用于字符串的操作。JavaScript 采用的那种无拘无束的方法，对 AI 来说像是迷宫般的挑战。实际上，有研究支持这一点。&nbsp;Visual Studio Magazine 曾引用&nbsp;2025 年的一项学术研究，由 LLM 造成的编译错误 94% 是类型检查失败。静态类型语言能在 AI 所犯的错误成为生产问题之前捕捉到它们。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">TypeScript 并不是这个趋势中的孤例。GitHub 对类型化语言的分析显示，Luau（Roblox 的逐步类型化语言）年增长率为 194%，Typst（一个强类型的 LaTeX 替代品）增长了 108%。与此同时，当前有超过 110 万个公共存储库使用 LLM SDK。这已经成为主流，不再是实验性的了，并且集中在与 AI 协作良好的技术栈上。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Idan Gazit 领导着 GitHub Next 团队（ Copilot 背后的团队）。在另一次访谈中，他解释了 AI 如何从根本上改变了开发者在选择技术时的考量：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">在 AI 技术出现之前，选择一种语言是在运行时、库生态系统和个人熟练度之间进行权衡。有了 AI 之后，出现了一个新的约束条件：如果我选择这种语言，模型会给我带来多少提升？</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Python 仍然主导着 AI 项目开发；2025 年，&nbsp;GitHub 上新增的 AI 存储库有近一半开始时使用了 Python&nbsp;，这是因为它适用于模型训练和原型设计，而不是因为它是 AI 辅助应用开发的最佳选择。然而，若从整体发展态势来看，JavaScript/TypeScript 生态系统的发展规模远超其他任何领域。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Medium 博客作者 Cenk Çetin&nbsp;分析&nbsp;了这对整个行业来说意味着什么：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">随着 AI 辅助编码的普及，提供静态类型检查的语言其地位不断上升。TypeScript 提供的严格类型系统有助于在 AI 生成的代码进入生产环境之前捕捉错误，增加代码可靠性。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Griffiths 希望团队能更有意识地考虑这个问题。她在&nbsp;博文&nbsp;中提出了一个简单的练习：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">看看你最近做的三个技术决策：为新项目选择的语言，为新功能选择的框架，为工作流选择的工具。AI 工具支持在这些选择中占了多少比重？如果答案是“不多”，我敢打赌它比你意识到的更重要。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">对于语言设计者来说，便利循环开创了一个具有挑战性的现实。在 GitHub 采访中，TypeScript 首席架构师 Anders Hejlsberg&nbsp;直截了当地解释了这一点：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">AI 使用一种语言编写代码的能力与其见过的该语言的代码量成正比。它是一个大型复读机，辅以一定的推理能力。AI 已经看过大量的 JavaScript、Python 和 TypeScript 代码，所以它在编写这些语言的代码方面非常出色。从这个角度来说，新语言无疑处于劣势。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">新语言陷入了恶性循环。Hejlsberg 指出，AI 模型基本上是复述它们之前见过的内容，并加入了一些推理结果。因此，如果你的语言没有数百万的代码示例，Copilot 就无法提供太大的帮助。而当无法获得 Copilot 的帮助时，开发者就会选择其他的东西。这也意味着你的语言永远不会有数百万行的代码示例。这是一个残酷的反馈循环，赢家已经锁定。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">GitHub 的增长规模极为惊人：2025 年的 Octoverse 数据显示，平台拥有 1.8 亿开发者、6.3 亿个代码存储库，当年提交次数接近 10 亿次，同比增长率达 25%，相当于全年每秒新增一位用户。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">对于试图理清这一切的领导者，Griffiths 给出了实用的建议：不要只统计使用 AI 工具的人数，要关注这些工具实际产出了什么。GitHub 新推出的&nbsp;Copilot 使用指标仪表盘（企业版仍处于公开预览阶段）详细展示了谁在使用什么、使用的语言以及编码助手的采用方式。这有什么实际的意义吗？这有助于发现特定的语言或模型何时开始与存在缺陷的代码产生关联，从中可以看出团队需要优化提示词或加强代码审查的环节。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">根据&nbsp;Griffiths 的分析，可以得出的主要结论是：AI 兼容性正在悄然重塑你做出的每一个技术决策。在选择框架或语言时，你可能没有有意识地将其纳入考虑因素，但它就在那里。与 AI 助手不兼容的工具已经在失去市场。便利循环不在乎你的偏好，它只会使那些让编程感觉更轻松的东西加速发展。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/03/ai-reshapes-language-choice/\" target=\"_blank\">https://www.infoq.com/news/2026/03/ai-reshapes-language-choice/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "GitHub 2025 报告显示，AI 编程工具正通过“便利循环”重塑语言生态，使 TypeScript 等强类型语言因与 AI 协作效率更高而超越 Python 成为开发者首选。",
+  "oneSentenceSummary": "GitHub 2025 报告显示，AI 编程工具正通过“便利循环”重塑语言生态，使 TypeScript 等强类型语言因与 AI 协作效率更高而超越 Python 成为开发者首选。",
+  "summary": "本文基于 GitHub 2025 年 Octoverse 报告，深入探讨了 AI 编程助手如何从根本上改变开发者的语言选择。核心观点是 AI 创造了“便利循环”：AI 提升了特定技术（如 TypeScript）的使用便利性，吸引更多开发者使用，进而产生更多训练数据，使 AI 在该技术上表现更优。技术层面上，强类型语言为 AI 提供了明确的“护栏”，能有效拦截绝大部分 LLM 造成的编译错误。报告指出，AI 辅助能力已成为技术选型的新约束，而缺乏大规模代码库的新语言则面临难以获得 AI 支持的恶性循环。GitHub 建议企业应从关注工具使用人数转向关注 AI 驱动的实际产出质量。",
+  "mainPoints": [
+    {
+      "point": "“便利循环”驱动技术生态演变，AI 辅助能力成为开发者选型的新约束。",
+      "explanation": "AI 提升了特定技术的使用便利性，吸引更多开发者涌入，这反过来产生了更多训练数据，使 AI 在该技术上变得更加出色，形成正向反馈。"
+    },
+    {
+      "point": "强类型语言是 AI 协作的最佳拍档，能显著降低 AI 生成代码的错误率。",
+      "explanation": "TypeScript 等静态类型语言为 AI 提供了明确的逻辑护栏。研究表明，LLM 造成的编译错误中 94% 是类型检查失败，强类型系统能在生产前捕捉这些错误。"
+    },
+    {
+      "point": "新语言在 AI 时代面临“数据荒漠”挑战，难以打破既有的生态垄断。",
+      "explanation": "AI 模型的本质是基于已有代码库的推理。缺乏数百万行示例的新语言无法获得 Copilot 的有效支持，导致开发者流失，从而更难积累训练数据。"
+    },
+    {
+      "point": "企业应建立 AI 产出指标，通过数据仪表盘优化团队的提示词与审查流程。",
+      "explanation": "GitHub 建议管理者不要只统计 AI 工具的使用人数，而应关注工具产出的代码质量，识别特定语言或模型与缺陷代码的关联性，以进行针对性优化。"
+    }
+  ],
+  "keyQuotes": [
+    "便利性吸引注意力。减少阻碍变成了偏好，而大规模的偏好可以改变生态系统。",
+    "在 AI 技术出现之前，选择一种语言是在运行时、库生态系统和个人熟练度之间进行权衡。有了 AI 之后，出现了一个新的约束条件：如果我选择这种语言，模型会给我带来多少提升？",
+    "AI 使用一种语言编写代码的能力与其见过的该语言的代码量成正比。它是一个大型复读机，辅以一定的推理能力。",
+    "便利循环不在乎你的偏好，它只会使那些让编程感觉更轻松的东西加速发展。"
+  ],
+  "tags": [
+    "GitHub Octoverse",
+    "TypeScript",
+    "AI 编程助手",
+    "编程语言趋势",
+    "静态类型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 84,
+  "wordCount": 2026,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773462060000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-14 04:21:00"
+}

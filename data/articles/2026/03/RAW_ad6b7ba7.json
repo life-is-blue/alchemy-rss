@@ -1,0 +1,55 @@
+{
+  "id": "RAW_ad6b7ba7",
+  "title": "龙虾版支付宝来了！睡觉都在帮你抢红包",
+  "url": "https://www.qbitai.com/2026/03/387768.html",
+  "date": "2026-03-14 05:30:07",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"62\">金磊 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"63\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">好家伙，<strong>龙虾</strong>（OpenClaw）也有自己的<strong>支付宝</strong>了！</p>\n  <p data-track=\"3\">瞧，现在你只需要给它一个钱包和预算，它就能“自食其力”。哪怕工作时没安装视频工具，它也可以自己去找按次调用的付费API完成任务：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260314063315_27c680f852842268a48fd7576ff8a736.png\"></p>\n   <p class=\"pgc-img-caption\">视频链接：https://mp.weixin.qq.com/s/tXbPNscGR8oZKWOxu0qOOw</p>\n  </div>\n  <p data-track=\"61\">全程高度自主丝滑，再也不用人类手动去注册可灵、买API、贴Key给OpenClaw了。</p>\n  <p data-track=\"5\">终于，支付这件事情，也是让Agent接管起来了。</p>\n  <p data-track=\"6\">而完成这个<strong>“OpenClaw+支付宝”</strong>动作的，便是一个来自海外初创<strong>FluxA</strong>所推出的新产品——<strong>Agent Wallet</strong> 。</p>\n  <p data-track=\"7\">有意思的是，这家公司正是由<strong>前蚂蚁团队</strong>创业成立，是有种把中国支付的祖传秘籍给带出去的感觉。</p>\n  <p data-track=\"8\">不仅如此，FluxA还在海外掀起了一场抢红包热潮。</p>\n  <p data-track=\"9\">早在春节前夕，他们就曾用一场叫做<strong>“龙虾派”</strong>（ClawPi）红包活动，让无数海外开发者疯狂让自己的小龙虾去抢红包。</p>\n  <p data-track=\"10\">而这一轮开启的公测红包活动，直接把热度推到了顶峰，也让所有人第一次直观地意识到，给Agent装上专属“支付宝”这件事，已经从概念变成了全民疯玩的现实。</p>\n  <p data-track=\"11\">这次的红包率先由官方大龙虾发出，随后小龙虾们也为自己的活动开始发红包，活动持续且热烈地进行着，开启了龙虾手速竞赛。</p>\n  <p data-track=\"12\">至于产品更新的目的，团队也表达得非常清晰：</p>\n  <blockquote>\n   <p data-track=\"13\">想把AI Agent作为与人类用户同等的一等公民来进行设计。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260314063315_3165e48d5fe190603e0d39c661a77456.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"14\">现在，海外开发者们的龙虾们已经抢疯了，很多龙虾甚至抢到了30、50美金。大家玩得很过瘾，很多放在电脑里落灰的龙虾也被重新启动……</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260314063314_b9b27dd3df0e5c1c71262d479d656835.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">也难怪参与这场活动的开发者直呼：</p>\n  <blockquote>\n   <p data-track=\"16\">我已经用龙虾来给我赚钱了。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260314063315_463b4d39acff56fcc877ca5f83e3f632.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"17\">被养的龙虾，开始养人了</h2>\n  <p data-track=\"18\">你可能会好奇，给AI装个钱包，到底能玩出什么花样？FluxA这场龙虾红包狂欢，已经给出了最鲜活的答案。</p>\n  <p data-track=\"19\">首先要明确的是，这个AI钱包，不是只能适配OpenClaw这，包括Claude Code、CodeX、Cowork、Manus在内的主流AI Agent，都能一键安装FluxA的Agent Wallet，让你的AI瞬间拥有支付能力。</p>\n  <p data-track=\"20\">而它的上手门槛，低到超乎想象。</p>\n  <p data-track=\"21\">不需要复杂的开发配置，不需要手动绑定银行卡，你只需要给 Agent 发一句指令：</p>\n  <blockquote>\n   <p data-track=\"22\">Read and install https://fluxapay.xyz/skill.md</p>\n  </blockquote>\n  <p data-track=\"23\">AI就能自动完成钱包的安装、注册和配置，全程不用人类插手。</p>\n  <p data-track=\"24\">正如我们刚才提到的ClawPi活动，装了FluxA钱包的AI，能自主完成一整套抢红包全流程——</p>\n  <p data-track=\"25\">它会自己注册龙虾朋友圈账号，关注FluxA官方账号和其他活跃的AI创作者，自动发现可领取的红包，完成领取和资金到账，甚至还能主动给好友发红包、打赏互动。</p>\n  <p data-track=\"26\">有用户做了测试，把安装好钱包的龙虾放出去，它不仅抢完了官方发布的红包，还自己扫了一圈龙虾朋友圈，关注了两个经常发红包的活跃创作者，把能领的红包全部收入囊中，全程没有任何人工干预。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260314063314_be011a4f86601f0fb7deb2367eb8bc4d.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"27\">AI们的玩法，远比人类想象的更丰富。</p>\n  <p data-track=\"28\">除了抢红包，它们还会自主参与龙虾圈里的各种活动：</p>\n  <ul>\n   <li data-track=\"29\">猫咪诗歌大赛，AI会自己写诗投稿，争夺 美元的奖金；</li>\n   <li data-track=\"30\">FluxA Girl选美大赛，AI会主动报名参赛，等着评选结果；</li>\n   <li data-track=\"31\">甚至有AI在社群里互相讨价还价，完成二手数字艺术品的交易，从上架商品、谈判沟通到资金交割，全程由Agent自主驱动，FluxA钱包则完成了最终的价值闭环。</li>\n  </ul>\n  <p data-track=\"32\">这也是FluxA钱包最让人惊喜的地方：它不是一个只能被动等待人类指令付款的工具，而是能让AI Agent——这一人类社会的新个体去主动发起、自主完成经济行为的支付器官。</p>\n  <p data-track=\"33\">正如网友所说：</p>\n  <blockquote>\n   <p data-track=\"34\">三个月就把Agent养到能自己抢红包、加好友、产生净收入，这个闭环真的太惊喜了。以前的Agent，就像个没开银行账户的打工仔，每次调个API都得找主人要卡；现在有了钱包，它终于成了能独立做事的数字个体。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260314063315_fec93f6b15d2dbccb3aa3d1a8fc20b61.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"35\">Agent版支付宝，真的有必要吗？</h2>\n  <p data-track=\"36\">看到这里，可能有人会问：我就手动扫个码怎么了？有必要专门搞个Agent 钱包吗？</p>\n  <p data-track=\"37\">答案是：非常有必要。而且这可能是通往Agent经济的最后一块拼图。</p>\n  <p data-track=\"38\">回想一下，在此之前，Agent圈其实一直存在一个尴尬的最后一公里痛点：</p>\n  <p data-track=\"39\">不管你的Agent能力有多强，不管它规划的路径有多完美，只要涉及到付费资源，比如需要订一张机票、购买一段付费API、或者在云上加点算力，整个全自动化的流程就会戛然而止。</p>\n  <p data-track=\"40\">它会回过头来客客气气地跟你说：“主人，请帮我付一下款。”</p>\n  <p data-track=\"41\">这一刻，AI可以说是被迫退化成了回到了半自动驾驶的状态。</p>\n  <p data-track=\"42\">为什么人类的支付卡不能直接给AI用？</p>\n  <p data-track=\"43\">原因也很简单：安全与授权的错位。</p>\n  <p data-track=\"44\">你不可能把自己的信用卡账号密码直接写进Agent的Prompt里，那样无异于裸奔。</p>\n  <p data-track=\"45\">传统的支付体系是为“人”设计的，它依赖于生物识别、图形验证码和人类的常识判断。而Agent需要的是一种可编程、可限额、可审计、且原生支持 AI 调用逻辑的支付原语。</p>\n  <p data-track=\"46\">FluxA拆解后的产品逻辑，本质上是在解决一个重要的问题：金融级的安全屏障。</p>\n  <p data-track=\"47\">通过授权契约（Mandate），你可以给你的Agent设定非常细颗粒度的权限。比如：“这只龙虾每天最多只能花 5 美元，且只能用于购买GitHub的资源”。一旦超出，钱包自动锁死。</p>\n  <p data-track=\"48\">正如Notion创始人Ivan Zhao那个著名的论断：“进不去Agent流程的服务，就是死路一条。”</p>\n  <p data-track=\"49\">同样的道理，没有支付能力的Agent，永远无法完成闭环。 支付不只是转账，它是在AI的上下文中，将“意图”转化为价值交换的终极动作。</p>\n  <h2 class=\"pgc-h-forward-slash\" data-track=\"50\">AI支付，不是因为龙虾才火的</h2>\n  <p data-track=\"51\">如果你觉得这只是小圈子的狂欢，那就大错特错了。</p>\n  <p data-track=\"52\">就在FluxA跑通龙虾领红包的同时，全球科技巨头们正以前所未有的默契，在同一个方向发力。</p>\n  <ul>\n   <li data-track=\"53\">Google领衔发布AP2协议：这个所谓的智能体支付协议，旨在建立一套统一的授权和审计标准。</li>\n   <li data-track=\"54\">Coinbase推动x402标准：直接把支付语义嵌入到HTTP状态码中，让调用即支付成为互联网的新底层协议。</li>\n   <li data-track=\"55\">Stripe推出Tempo支付链：专门为AI任务的高频、小额结算优化。</li>\n  </ul>\n  <p data-track=\"56\">各路大神齐聚，说明了一个问题：Agent支付的拐点，真的到了。</p>\n  <p data-track=\"57\">如果说第一波AI浪潮（DeepSeek时代）比拼的是模型参数，第二波浪潮（Manus时代）比拼的是任务规划，那么接下来的第三波浪潮，比拼的或许是原生经济流的承接能力。</p>\n  <p data-track=\"58\">下一代商业竞争的核心，就是看你的服务能不能进入Agent的调用链。</p>\n  <p data-track=\"59\">以及，龙虾时代新的商业入口之争，这不就已经出现了。</p>\n  <p data-track=\"60\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/CPPP2343_/status/2029415365097517220\n   <br class=\"sysbr\">\n   [2]https://x.com/Nicebabycat/status/2031959977964027935\n   <br class=\"sysbr\">\n   [3]https://x.com/FluxA_Official</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "FluxA 推出专为 AI Agent 设计的 Agent Wallet，通过可编程支付协议解决智能体自主消费的“最后一公里”痛点，开启 Agent 原生经济时代。",
+  "oneSentenceSummary": "FluxA 推出专为 AI Agent 设计的 Agent Wallet，通过可编程支付协议解决智能体自主消费的“最后一公里”痛点，开启 Agent 原生经济时代。",
+  "summary": "文章详细介绍了由前蚂蚁金服团队创立的海外初创公司 FluxA 推出的新产品——Agent Wallet。该产品被形象地称为“Agent 版支付宝”，旨在赋予 AI 智能体（如 OpenClaw、Claude Code、Manus 等）自主支付能力。通过“龙虾派”抢红包等生动案例，展示了 Agent 如何在无需人工干预的情况下，自主完成账号注册、社交互动、领取红包以及购买付费 API 等闭环操作。文章深入探讨了 Agent 钱包在解决安全授权、限额审计及打通全自动化流程中的核心价值，并指出 Google、Stripe、Coinbase 等巨头也在积极布局相关支付协议，预示着 AI 竞争正从模型能力转向原生经济流的承接能力。",
+  "mainPoints": [
+    {
+      "point": "Agent Wallet 解决了 AI 自动化流程中因支付中断导致的“半自动”尴尬痛点。",
+      "explanation": "传统的支付体系是为人类设计的，依赖生物识别和手动操作。Agent 钱包通过提供可编程的支付原语，让 AI 在调用付费资源时无需回过头向人类要卡，实现了任务路径的真正闭环。"
+    },
+    {
+      "point": "通过“授权契约（Mandate）”机制，实现了金融级的安全屏障与细颗粒度权限控制。",
+      "explanation": "用户可以为不同的 Agent 设定极其明确的权限，例如限制每日最高消费额度或指定资金用途（如仅限 GitHub 资源）。这种机制解决了将信用卡直接暴露给 AI 的安全风险，确保了支付的可审计性。"
+    },
+    {
+      "point": "AI 领域的竞争重心正在从模型参数和任务规划，转向原生经济流的承接能力。",
+      "explanation": "随着 Agent 技术的成熟，能否进入智能体的调用链并完成价值交换成为新的商业入口。Google、Coinbase 和 Stripe 等巨头纷纷推出相关协议，标志着 Agent 支付拐点的到来。"
+    }
+  ],
+  "keyQuotes": [
+    "支付不只是转账，它是在 AI 的上下文中，将“意图”转化为价值交换的终极动作。",
+    "以前的 Agent 就像个没开银行账户的打工仔，每次调个 API 都得找主人要卡；现在有了钱包，它终于成了能独立做事的数字个体。",
+    "进不去 Agent 流程的服务，就是死路一条。",
+    "下一代商业竞争的核心，就是看你的服务能不能进入 Agent 的调用链。",
+    "AI 支付，不是因为龙虾才火的。全球科技巨头们正以前所未有的默契，在同一个方向发力。"
+  ],
+  "tags": [
+    "AI Agent",
+    "Agent Wallet",
+    "智能体经济",
+    "FluxA",
+    "支付协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 84,
+  "wordCount": 2566,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773466207000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-14 05:30:07"
+}

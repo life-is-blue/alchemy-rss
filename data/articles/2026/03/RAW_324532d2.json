@@ -1,0 +1,58 @@
+{
+  "id": "RAW_324532d2",
+  "title": "Rspress 2.0 发布：AI 原生文档、更快启动速度与全新设计主题",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278241&idx=4&sn=8784bd1bdf1523357b9f597c1e57cf05",
+  "date": "2026-03-14 04:21:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span></span></p>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Daniel Curtis </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 明知山 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Rspress&nbsp;是一款基于&nbsp;Rsbuild、专为开发者文档打造的静态站点生成器，现已正式发布 2.0 版本，带来了主题设计、构建性能、AI 集成及开发者体验等方面的全面升级。该版本于 2026 年 1 月 30 日发布，在 1.x 版本周期内历经 144 次迭代，共有 125 位开发者参与贡献。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Rspress 2.0 引入了由设计师&nbsp;Zovn Wei&nbsp;重新设计的默认主题，提供四级&nbsp;自定义&nbsp;能力。开发者可通过调整 CSS 变量快速定制主题，借助 BEM 类名精确覆盖样式，通过 ESM 导出替换单个组件，或完全弹出组件以获得完整控制权。采用 BEM 方案是经过深思熟虑的选择，旨在与特定 CSS 框架解耦，让团队可自由使用&nbsp;Tailwind、Less&nbsp;或&nbsp;Sass，无需担心版本冲突。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">其中一项更具前瞻性的新增功能是静态站点生成 Markdown（SSG‑MD）特性。这是一种全新的渲染模式，可从文档站点生成 Markdown 文件与&nbsp;llms.txt&nbsp;输出。不同于将 HTML 转换回 Markdown（效果通常不佳），SSG‑MD 通过 React 虚拟 DOM 渲染内容，生成适合 AI 智能体使用的高质量 Markdown。启用该功能仅需一行配置：</span></p>\n   <p class=\"code-snippet__fix code-snippet__js\"></p>\n   <ul class=\"code-snippet__line-index code-snippet__js\"></ul>\n   <pre class=\"code-snippet__js\" data-lang=\"javascript\"><code><span leaf=\"\"><span class=\"code-snippet__keyword\">import</span>&nbsp;{ defineConfig }&nbsp;<span class=\"code-snippet__keyword\">from</span>&nbsp;<span class=\"code-snippet__string\">'@rspress/core'</span>;</span></code><br><code><span leaf=\"\"><span class=\"code-snippet__keyword\">export</span>&nbsp;<span class=\"code-snippet__keyword\">default</span>&nbsp;<span class=\"code-snippet__title\">defineConfig</span>({</span></code><br><code><span leaf=\"\"><span class=\"code-snippet__attr\">llms</span>:&nbsp;<span class=\"code-snippet__literal\">true</span>,</span></code><br><code><span leaf=\"\">});</span></code><br></pre>\n   <p></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">构建性能通过两项默认启用的功能得到显著提升：懒编译与持久化缓存。借助懒编译，开发过程中仅在访问页面时才进行编译；根据&nbsp;Rspress 团队在 GitHub 上公布的基准测试，冷启动时间从数秒缩短至最低 50 毫秒。路由预加载策略会在链接悬停时触发编译，确保导航流畅。持久化缓存可复用历史编译结果，将后续构建速度提升 30% 至 60%。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">代码高亮已从 Prism 默认切换为&nbsp;Shiki，语法高亮在构建时执行，而非运行时。这带来了与 VS Code 一致、基于 TextMate 语法的精准高亮，支持按需加载语言且无运行时开销，同时支持自定义转换器（例如用于内联类型提示的 twoslash）。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">本次发布还对包结构进行了整合，包括 rspress、@rspress/runtime、@rspress/shared 和 @rspress/theme-default 在内的多个包已合并为单一的 @rspress/core 包。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">新版本发布后收获了积极反馈，一位用户在&nbsp;r/Rspack 子版块&nbsp;评论道：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">很高兴看到这类工具的出现！祝贺发布！</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">用于追踪重大变更的&nbsp;GitHub 讨论帖&nbsp;收获了积极互动，共 26 条评论、19 条回复，内容涵盖从 Shiki 配置到 React Router 兼容性等迁移细节。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">与&nbsp;Docusaurus&nbsp;和&nbsp;VitePress&nbsp;等同类工具相比，Rspress 的核心差异化优势在于基于 Rspack 的构建速度及其 AI 原生能力。Docusaurus 官方也&nbsp;认可&nbsp;Rspress 凭借现代化的底层架构实现了更快的站点构建，同时也指出自身在成熟度与社区规模上的优势。VitePress 仍是 Vue 项目的首选，而 Rspress 则主打 React 生态。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Rspress 2.0 要求 Node.js 20 及以上版本，支持 React 18 和 19。基于 Rust 的 MDX 解析器（@rspress/mdx-rs）已被弃用，转而采用 JavaScript MDX 解析器，以牺牲部分原始编译速度为代价，换取与 Shiki、自定义 remark 和 rehype 插件等工具更好的生态兼容性。从 1.x 升级的团队可参考详细的&nbsp;迁移指南。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Rspress 是一款基于&nbsp;Rsbuild&nbsp;和&nbsp;Rspack&nbsp;的开源静态站点生成器，属于 Rstack JavaScript 工具链的一部分。它专为构建支持 MDX、约定式路由与组件库预览的文档站点设计，可与 Rslib 集成，用于组件库文档工作流。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><strong style=\"font-size: 16px;font-weight: bold;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/03/rspress-docs-2-release/\" target=\"_blank\">https://www.infoq.com/news/2026/03/rspress-docs-2-release/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Rspress 2.0 正式发布，凭借 Rspack 驱动实现毫秒级启动，并引入 AI 原生的 SSG-MD 特性，打造高性能、易定制的开发者文档方案。",
+  "oneSentenceSummary": "Rspress 2.0 正式发布，凭借 Rspack 驱动实现毫秒级启动，并引入 AI 原生的 SSG-MD 特性，打造高性能、易定制的开发者文档方案。",
+  "summary": "本文详细介绍了静态站点生成器 Rspress 2.0 的重大版本更新。核心改进集中在四个维度：首先是性能飞跃，通过懒编译和持久化缓存技术，冷启动时间缩短至最低 50 毫秒；其次是 AI 原生支持，创新性地推出 SSG-MD 模式，利用 React 虚拟 DOM 生成高质量 Markdown，优化了 AI 智能体对文档的读取体验；第三是主题系统的重构，采用 BEM 方案提供四级自定义能力，增强了样式的灵活性与兼容性；最后是生态整合，将多个子包合并为核心包，并切换至 Shiki 实现更精准的代码高亮。文章还对比了 Docusaurus 和 VitePress，突出了 Rspress 在 React 生态下的构建速度优势。",
+  "mainPoints": [
+    {
+      "point": "基于 Rspack 的极速构建性能优化",
+      "explanation": "通过默认启用的懒编译和持久化缓存技术，Rspress 2.0 将冷启动时间降至 50ms，后续构建速度提升达 30%-60%，显著优于传统工具。"
+    },
+    {
+      "point": "前瞻性的 AI 原生文档特性 SSG-MD",
+      "explanation": "不同于简单的 HTML 转 Markdown，该特性通过 React 虚拟 DOM 渲染生成高质量 Markdown 和 llms.txt，专门优化了 AI 智能体对文档内容的理解与抓取。"
+    },
+    {
+      "point": "灵活且解耦的四级主题自定义体系",
+      "explanation": "新版本采用 BEM 类名方案，支持从 CSS 变量微调到组件完全弹出的四级定制，确保开发者在不产生版本冲突的前提下自由选择 CSS 框架。"
+    },
+    {
+      "point": "生态兼容性与开发体验的权衡取舍",
+      "explanation": "为了获得更好的插件生态兼容性（如 Shiki 和 remark 插件），2.0 版本选择回归 JavaScript MDX 解析器，体现了在极致速度与生态完备性之间的平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "冷启动时间从数秒缩短至最低 50 毫秒。",
+    "SSG-MD 通过 React 虚拟 DOM 渲染内容，生成适合 AI 智能体使用的高质量 Markdown。",
+    "Rspress 的核心差异化优势在于基于 Rspack 的构建速度及其 AI 原生能力。",
+    "采用 BEM 方案是经过深思熟虑的选择，旨在与特定 CSS 框架解耦，让团队可自由使用 Tailwind、Less 或 Sass。"
+  ],
+  "tags": [
+    "Rspress",
+    "静态站点生成器",
+    "Rspack",
+    "AI 原生",
+    "前端工程化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1123,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773462060000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-14 04:21:00"
+}

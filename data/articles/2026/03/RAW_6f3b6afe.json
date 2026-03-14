@@ -1,0 +1,58 @@
+{
+  "id": "RAW_6f3b6afe",
+  "title": "拜拜了 SWE-Bench！Cursor 刚发了个 AI Coding 评测基准，难哭 Claude",
+  "url": "https://www.qbitai.com/2026/03/387756.html",
+  "date": "2026-03-14 06:25:48",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"78\">一水 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"79\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">编程智能体时代，顶流Cursor举旗发布新的评测基准——</p>\n  <p data-track=\"3\"><strong>CursorBench</strong>，专门评价Cursor中不同模型谁更“智能体”（即高效执行复杂任务）。</p>\n  <p data-track=\"4\">结果你猜怎么着？曾在SWE-Bench上威名赫赫的Claude Haiku 4.5/Sonnet 4.5全部歇菜了。</p>\n  <ul>\n   <li data-track=\"5\">Claude Haiku 4.5的分数从73.3→29.4；</li>\n   <li data-track=\"6\">Claude Sonnet 4.5的分数从77.2→37.9。</li>\n  </ul>\n  <p data-track=\"7\">而这，也恰好体现了CursorBench和其他编程基准之间的区别：</p>\n  <blockquote>\n   <p data-track=\"8\">SWE-Bench衡量的是程序能否解决问题，CursorBench衡量的是程序能否<strong>高效地</strong>解决问题。这种差距正是普通基准测试所无法弥补的——在真实的token约束下完成任务。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063942_2a8c96cb09796d7c13a65f57e7d204a5.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"613\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">“龙虾”当道，谁都知道现在评价AI要看<strong>执行能力</strong>，而且还是要<strong>高效执行</strong>那种。</p>\n  <p data-track=\"10\">而CursorBench的出现，恰好填补了相关空白。</p>\n  <p data-track=\"11\">不过问题来了，CursorBench具体咋评的？</p>\n  <p data-track=\"13\">关于咋评的这个问题，Cursor还专门撰写了一篇博客。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063944_c632271d33d614050322f62c737319f5.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"710\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"14\">一上来，Cursor就介绍了一个基本背景——</p>\n  <p data-track=\"15\"><strong>随着AI编程助手越来越像“智能体”，目前很多公开的benchmark已经不够用了</strong>。</p>\n  <p data-track=\"16\">问题呢主要有这么三个：</p>\n  <p data-track=\"17\"><strong>一是任务类型不真实</strong>。</p>\n  <p data-track=\"18\">以大家比较熟知的benchmark为例，SWE-Bench主要是修复GitHub issue的bug，任务比较单一。</p>\n  <p data-track=\"19\">Terminal-Bench虽然不再局限于代码仓库，但更偏向各种“谜题式任务”，比如根据给定环境完成一系列挑战，此时AI更像是在参加某种竞赛而非进行日常开发。</p>\n  <p data-track=\"20\">所以Cursor就说了，“我们发现，这些任务与开发者要求智能体完成的编程工作并不契合”。</p>\n  <p data-track=\"21\">现实生活中更常见的是，开发者会要求AI修改多个文件、分析生产日志、运行实验……总之比基准更复杂。</p>\n  <p data-track=\"22\"><strong>二是评分机制不合理</strong>。</p>\n  <p data-track=\"23\">很多公开基准通常都假设——一个问题只有一个正确答案。</p>\n  <p data-track=\"24\">但现实是，一个需求可能有多种实现方式，不同方案的代码风格、架构选择都有可能不同。</p>\n  <p data-track=\"25\">这就往往会导致两种情况：要么直接给正确的方案打叉（出现误判）、要么直接为了可评估性而强行消除模糊性（人为施加限制）。</p>\n  <p data-track=\"26\">无论是哪一种，基准都无法反映真实情况。</p>\n  <p data-track=\"27\"><strong>三是公认的数据污染问题</strong>。</p>\n  <p data-track=\"28\">这一点就不必多说了，一旦基准出现够久，后来的模型很可能就会直接抓取这些基准数据进行训练。</p>\n  <p data-track=\"29\">所以，在这种近乎“透题”的情况下进行评分，其结果到底有多大价值就可想而知了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063943_8c57ac8a37e39160e98a9da5164ec533.jpeg\" data-ic=\"false\" data-width=\"238\" data-height=\"251\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"30\">而面对这些问题，Cursor拿出了一套<strong>“线上+线下混合评”</strong>的全新方案。</p>\n  <p data-track=\"31\">线下就是我们说的CursorBench，流程也相对简单——</p>\n  <p data-track=\"32\">让不同模型都去完成同一批标准任务，然后系统从<strong>正确性、代码质量、效率、交互行为</strong>等维度进行打分，最终每个模型都能拿到一个离线benchmark分数。</p>\n  <p data-track=\"33\">采用这种标准化流程的好处显而易见，包括可以相对而言把模型拉到同一起跑线进行比较、可以重复测试、成本也相对可控。</p>\n  <p data-track=\"34\">不过有人可能就说了，这和其他基准好像没差啊？</p>\n  <p data-track=\"35\">别急，CursorBench的“制胜法宝”在这里——<strong>选的任务不一样</strong>。</p>\n  <p data-track=\"36\">其不一样体现在三个维度：</p>\n  <p data-track=\"37\"><strong>一是任务真</strong>。</p>\n  <p data-track=\"38\">以前的基准更像是“刻意找题”，找GitHub issue、找各种谜题；而CursorBench的题都来自自家Cursor平台。</p>\n  <p data-track=\"39\">Cursor有一个工具叫Cursor Blame，它可以追踪某一段代码是由哪个AI请求生成的。</p>\n  <p data-track=\"40\">于是就能拿到这样一对对真实数据——开发者请求+某个模型最终提交的代码。</p>\n  <p data-track=\"41\">而这些，就构成了CursorBench绝佳的“出题范本”。而且Cursor补充道：</p>\n  <blockquote>\n   <p data-track=\"42\">许多任务来自我们的内部代码库和受控来源，从而降低了模型在训练阶段见过这些任务的风险。我们每隔几个月就会更新一次这套基准，以跟踪开发者使用智能体方式的变化。</p>\n  </blockquote>\n  <p data-track=\"43\"><strong>二是任务规模大</strong>。</p>\n  <p data-track=\"44\">如今用Cursor的人实在太多了，所以CursorBench的任务规模明显更大。</p>\n  <p data-track=\"45\">比如在正确性评估中，无论从代码行数还是平均文件数来看，其问题规模从初始版本到当前的CursorBench-3大致翻了一倍。Cursor表示：</p>\n  <blockquote>\n   <p data-track=\"46\">虽然代码行数并不是衡量难度的完美指标，但该指标上的增长反映了我们将更具挑战性的任务纳入CursorBench 的方式，例如处理monorepo的多工作区环境、排查生产日志，以及执行长时间运行的实验。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063944_4f3d8bfef42d9270785ad6d8b133118d.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"47\"><strong>三是任务描述刻意保持“模糊”</strong>。</p>\n  <p data-track=\"48\">这点也比较好理解。</p>\n  <p data-track=\"49\">很多公开基准里的任务描述通常非常详细，但现实中大家和AI说话时往往模棱两可。</p>\n  <p data-track=\"50\">所以太精准反而与真实相悖。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063943_b218e0ac5a98c9e0f52d4c2b6327b8d2.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"51\">至此，基于以上特殊设计，CursorBench成了编程智能体时代真正以“真实开发场景”为原点设计的基准测试。</p>\n  <p data-track=\"52\">当然这还没完，光做题怎么够呢？很多AI线下分数高，但用户一上手就发现很拉胯。</p>\n  <p data-track=\"53\">对此，Cursor还搞了一套线上评测——<strong>直接看真实用户使用效果</strong>。</p>\n  <p data-track=\"54\">他们会使用A/B Test这种方式，观察一部分用户用模型A、另一部分用户用模型B之后的对比效果。</p>\n  <p data-track=\"55\">具体主要看开发者是否接受AI生成的代码、是否继续追问、是否撤销修改、任务是否真正完成等可追踪的产品指标。</p>\n  <p data-track=\"56\">如此一来，线上和线下就可以形成完美互补，甚至形成良性循环——</p>\n  <p data-track=\"57\"><strong>线下CursorBench先快速筛选模型能力，然后线上验证模型是否真的更好，发现偏差后再去调整benchmark或模型</strong>。</p>\n  <p data-track=\"58\">飞轮这不就起来了（doge）。</p>\n  <p data-track=\"60\">那么模型们在新基准CursorBench上的表现如何呢？</p>\n  <p data-track=\"61\">来看最终performance（越靠近右上角越好，代表“以最低成本实现最高性能”）：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063943_a55e9e0fd6c5332782aef94715be2c16.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"810\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"62\">见此图表，网友们一时讨论连连：</p>\n  <p data-track=\"63\">啧，没想到Claude Sonnet 4.5的“性价比”有点低啊。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063944_79dbe7917aba008b35ea09cdbb53cb89.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"247\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"64\">这个Composer模型（Cursor自研编码模型）又是哪里冒出来的。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063943_5c3843fe278d8532cfc4aec74ea8a8ac.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"240\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"65\">Anyway，从Cursor公布的结果来看，一个很明显的结论是——</p>\n  <p data-track=\"66\"><strong>CursorBench在前沿模型之间的区分度明显更高</strong>。</p>\n  <p data-track=\"67\">这个其实是自然而然的。基准一饱和，模型们往往拉不开差距，大家分都高、都好。</p>\n  <p data-track=\"68\">但一遇到新的、难的，实力差距便自然显露了。</p>\n  <p data-track=\"69\">尤其在CursorBench这种任务规模更大、环境更复杂的基准上，差距无疑将被进一步放大。</p>\n  <p data-track=\"70\">只需对比模型在SWE-Bench和CursorBench上的得分就能看出来了（左边全挤在一起、右边呈阶梯式）：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063944_fddb3988cf4a576d7db782bd27622a98.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"810\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"71\">以及Cursor还强调了一点——</p>\n  <p data-track=\"72\"><strong>CursorBench的排名，与真实用户体验更加一致</strong>。</p>\n  <p data-track=\"73\">通过前面提到的线上实验，他们发现CursorBench的模型排名，和这些线上指标变化基本是同方向的。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260314063942_0f18b5540c82e604a5bdc622a43a62a3.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"810\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"74\">接下来，Cursor还将着手开发下一代评测套件：</p>\n  <blockquote>\n   <p data-track=\"75\">虽然CursorBench-3的任务比公开基准上的任务持续时间更长，但它们仍然可以在一次会话内完成。我们预计在未来一年里，绝大多数开发工作将转向<strong>由在各自计算机上独立运行的长时运行智能体来完成</strong>，因此我们也正规划对CursorBench作出相应调整。</p>\n  </blockquote>\n  <p data-track=\"76\">嗯，瞄准的还是智能体，只不过是运行时间更长的智能体。</p>\n  <p data-track=\"77\">参考链接：\n   <br>\n   [1]https://x.com/cursor_ai/status/2032148125448610145\n   <br>\n   [2]https://cursor.com/cn/blog/cursorbench\n   <br>\n   [3]https://www.objectwire.org/technology/cursor</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Cursor 发布全新 AI 编程基准 CursorBench，通过真实场景任务和线上线下混合评测体系，揭示了顶级模型在复杂智能体任务中的效率差异。",
+  "oneSentenceSummary": "Cursor 发布全新 AI 编程基准 CursorBench，通过真实场景任务和线上线下混合评测体系，揭示了顶级模型在复杂智能体任务中的效率差异。",
+  "summary": "本文详细介绍了 Cursor 推出的新一代编程评测基准 CursorBench。针对 SWE-Bench 等传统基准存在的任务类型不真实、评分机制单一以及数据污染等痛点，CursorBench 采用了基于真实开发数据的任务集，并引入了任务规模扩大、描述模糊化等设计。其核心创新在于“线上+线下”混合评测：线下通过标准化任务衡量模型能力，线上通过 A/B 测试验证用户真实体验。测试结果显示，Claude 4.5 等模型在 CursorBench 上的表现远低于传统基准，证明了该基准在区分顶级模型性能方面更具参考价值，标志着 AI 编程评测从“结果导向”向“效率与智能体能力导向”的转变。",
+  "mainPoints": [
+    {
+      "point": "传统编程基准测试已无法满足当前 AI 智能体（Agent）的评估需求。",
+      "explanation": "SWE-Bench 等基准存在任务单一、评分机制不合理及严重的数据污染问题，无法反映 AI 在处理多文件修改、生产日志分析等真实复杂任务时的表现。"
+    },
+    {
+      "point": "CursorBench 通过“真实性”设计提升了评测的区分度和参考价值。",
+      "explanation": "该基准采用来自 Cursor 平台的真实开发者请求，刻意保持任务描述的模糊性，并扩大任务规模，从而更真实地模拟人类与 AI 协作的实际场景。"
+    },
+    {
+      "point": "引入线上 A/B 测试与线下评测结合的闭环反馈机制。",
+      "explanation": "通过观察真实用户对 AI 生成代码的接受度、撤销率等指标，确保线下基准分数与实际用户体验高度一致，形成了模型筛选与验证的良性循环。"
+    },
+    {
+      "point": "CursorBench 强调“高效执行”而非仅仅是“完成任务”。",
+      "explanation": "新基准在 token 约束和复杂环境下测试模型，导致 Claude 等顶级模型得分大幅下降，揭示了模型在真实生产环境中的性能瓶颈。"
+    }
+  ],
+  "keyQuotes": [
+    "SWE-Bench 衡量的是程序能否解决问题，CursorBench 衡量的是程序能否高效地解决问题。",
+    "许多任务来自我们的内部代码库和受控来源，从而降低了模型在训练阶段见过这些任务的风险。",
+    "CursorBench 的排名，与真实用户体验更加一致。",
+    "基准一饱和，模型们往往拉不开差距；但一遇到新的、难的，实力差距便自然显露了。"
+  ],
+  "tags": [
+    "CursorBench",
+    "AI Coding",
+    "SWE-Bench",
+    "智能体评测",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 82,
+  "wordCount": 2743,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773469548000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-14 06:25:48"
+}
