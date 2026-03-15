@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-15 22:08:51 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-16 00:05:12 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11024,9 +11024,7 @@
 
 ### [全网爆火的龙虾总失忆？大佬亲自下场手搓解药，终结致命痛点](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652683211&idx=1&sn=03aaece4e7a0fd149f30205ce0a40875)
 
-2026-03-15 04:28:00 | 标签: AI Agent, OpenClaw, TiDB, 永续记忆, 上下文管理
-
-> 本文介绍了针对爆火 AI 项目 OpenClaw（俗称“龙虾”）开发的永续记忆服务 mem9.ai。针对 AI Agent 在上下文压缩时容易产生“失忆”的痛点，TiDB 联合创始人黄东旭利用周末时间开发了该产品。mem9 采用“一虾一库、一虾一密”的架构，为每个 Agent 提供独立的加密数据库实例，支持向量与全文混合检索。技术上，它深度集成 OpenClaw 的 ContextEngine 接口，实现了对 Agent 上下文全生命周期的管理。该方案展示了 TiDB Cloud 在处理海量小数据库实例、混合搜索及弹性伸缩方面的核心优势，被视为 AI Agent 基础设施从本地向云端演进的重要...
+2026-03-15 04:28:00
 
 
 
@@ -11038,9 +11036,7 @@
 
 ### [arXiv-变天：将脱离康奈尔大学独立，招聘-CEO，网友：以后还能白嫖吗？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651021511&idx=1&sn=cb3ab9cb9de227e10b337643099ca960)
 
-2026-03-15 01:17:00 | 标签: arXiv, 学术出版, 预印本, 开放获取, AI 论文审核
-
-> 本文报道了全球最具影响力的电子预印本系统 arXiv 的重大变革：在与康奈尔大学合作数十年后，arXiv 将转型为独立的非营利组织，并以约 30 万美元年薪公开招聘 CEO。文章回顾了 arXiv 自 1991 年创立以来的发展历程，分析了其当前面临的严峻挑战，包括 AI 投稿井喷导致的审核体系过载、长期积累的技术债务（如从 Perl 向 Python 的重构）、以及对创始人 Paul Ginsparg 的过度依赖。同时，文章汇集了学术界对 arXiv 独立后可能引入付费功能或广告以维持生计的忧虑，探讨了这一学术基础设施在开放与质量博弈中的未来走向。
+2026-03-15 01:17:00
 
 
 
@@ -31404,9 +31400,7 @@
 
 ### [AWS-在-Lightsail-上推出托管式-OpenClaw-服务，应对严重安全漏洞](https://www.infoq.com/news/2026/03/aws-lightsail-openclaw-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-15 10:08:00 | 标签: AWS, OpenClaw, AI 智能体, Amazon Lightsail, 云安全
-
-> AWS 在 Amazon Lightsail 上推出了 OpenClaw 的托管式部署选项，旨在响应对这款爆火 AI 智能体框架的巨大需求，该框架在 GitHub 上已获得超过 25 万颗星。该服务旨在解决部署复杂性和严重安全漏洞的双重挑战，这些漏洞存在于数万个自托管实例中。通过提供预配置的蓝图，AWS 自动化了 IAM 角色的设置，并直接与 Amazon Bedrock 集成（默认使用 Claude 3.5 Sonnet），允许用户部署私有 AI 智能体，这些智能体可通过 Slack、Discord 和 WhatsApp 等平台访问，且无需深入的 DevOps 专业知识。
+2026-03-15 10:08:00
 
 
 
