@@ -1,0 +1,59 @@
+{
+  "id": "RAW_aaa592f",
+  "title": "OpenClaw 之后，我只想未来 3-6 个月的事情｜对谈 Sheet0 创始人王文锋",
+  "url": "https://www.xiaoyuzhoufm.com/episode/69b4d2f9f8b8079bfa3ae7f2",
+  "date": "2026-03-14 14:00:00",
+  "author": "42章经",
+  "siteName": "42章经",
+  "content": "<html>\n <head></head>\n <body>\n  <p><strong><span>活动预告🥳：3 月 28 日，我们会请到 Sheet0 创始人文锋、Kuse AI / Junior.so 联合创始人兼 CTO Austin Xu、Clockless.ai 创始人任川、PingCAP 联创兼 CTO 黄东旭做一场线上活动，大家记得翻到 shownotes 末尾查看报名信息！</span></strong></p>\n  <span></span>\n  <p><span>如果回到去年 3 月份，你会不会借鉴 Manus 做个 Genspark？</span></p>\n  <span></span>\n  <p><span>这是文锋问自己，也是问团队的一个问题。</span></p>\n  <span></span>\n  <p><span>这个问题，其实折射着文锋对创业这件事的理解的重大变化：</span></p>\n  <span></span>\n  <p><span>从预判未来 5–10 年、力争差异化，变成只想未来 3–6 个月、做确定性更高的事情。</span></p>\n  <span></span>\n  <p><span>而这个问题的当下版本，就是：</span></p>\n  <span></span>\n  <p><span>现在创业，到底要不要做 OpenClaw 方向？如果真要做，又该怎么做？</span></p>\n  <span></span>\n  <p><span>在这期节目里，文锋就从 OpenClaw 到底为什么这么火、这波和去年 Manus 带起来的那波 Agent 热有什么异同、Agent 赛道接下来会发生什么变化，以及他对创业的最新理解等方面，给出了他在战略思考与落地执行层面上的答案。</span></p>\n  <span></span>\n  <p><span>（其中我们还聊出了一个很有意思的判断：现在的 C 端用户，可能未来会变成像 B 一样的角色。）</span></p>\n  <span></span>\n  <p><span>在我看来，文锋的这种转变，正是一个创业者走向成熟的标志。创业并不只有一种英雄之旅。很多时候，放下一部分 Ego，去做那些正确、务实、能带来结果的事情，反而更需要拼劲和勇气。</span></p>\n  <span></span>\n  <p><strong><span>【人类博物馆】</span></strong></p>\n  <span></span>\n  <p><span>导游：曲凯，42章经创始人</span></p>\n  <span></span>\n  <p><span>33 号珍藏：王文锋，Sheet0 创始人（往期考古：</span><a href=\"https://www.xiaoyuzhoufm.com/episode/68032a401f1db84a563d5d83\" data-url=\"https://www.xiaoyuzhoufm.com/episode/68032a401f1db84a563d5d83\"><span>《Agent 开发的上半场: 环境、Tools 和 Context 如何决定 Agent》</span></a><span>）</span></p>\n  <span></span>\n  <p><strong><span>【时光机】</span></strong></p>\n  <span></span>\n  <p><strong><span>Part 1 关于 Agent 的新思考</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"34\">00:34</a> 这波 Agent 热和去年 Manus 带起来的那波，有什么区别？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"89\">1:29</a> OpenClaw 为啥火成这样？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"154\">2:34</a> 去年 AI Coding 是大模型的灵巧手，那今年呢？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"329\">5:29</a> 垂直 Agent 不成立，SaaS 也要被淘汰？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"843\">14:03</a> OpenClaw 给我带来的最大震撼还不是产品本身</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"929\">15:29</a> Agent 现在遇到的最大瓶颈并不是技术</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1056\">17:36</a> 当下可能有上千个团队在围绕 OpenClaw 创业</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1178\">19:38</a> 详解 OpenClaw 的三板斧 </span>\n    <ul>\n     <span> </span>\n     <li><span><a class=\"timestamp\" data-timestamp=\"1192\">19:52</a> ① 更好的长程任务能力（其实 hidecloud 的那句话一直都是对的</span></li>\n     <span> </span>\n     <li><span><a class=\"timestamp\" data-timestamp=\"1404\">23:24</a> ② Proactive</span></li>\n     <span> </span>\n     <li><span><a class=\"timestamp\" data-timestamp=\"1656\">27:36</a> ③ 自进化</span></li>\n     <span> </span>\n    </ul>\n    <span> </span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1888\">31:28</a> 使用 OpenClaw 的一个 Aha Moment</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1990\">33:10</a> 现在开发一个新产品，两个月都太慢了，两周就够了</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2083\">34:43</a> 「Harness」是 Agent 的下一个胜负手？</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span>Part 2 创业的新选择</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2478\">41:18</a> 一道灵魂拷问题：回到去年 3 月，你做不做 Genspark？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2545\">42:25</a> 我们的新产品是在做 AI Coding 的平权</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2737\">45:37</a> 今天服务大 C，就和过去服务世界 500 强是一样的</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2904\">48:24</a> 我现在只看未来 3-6 个月的事</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3108\">51:48</a> 放下 Ego 后，我创业中最大的改变</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span>【活动预告🥳】</span></strong></p>\n  <span></span>\n  <p><span>3 月 28 日，我们会请 Sheet0 创始人文锋、Kuse AI / Junior.so 联合创始人兼 CTO Austin Xu、Clockless.ai 创始人任川、PingCAP 联创兼 CTO 黄东旭做一场线上活动</span><strong><span>，</span></strong><span>感兴趣的朋友欢迎点击</span><a href=\"https://my.feishu.cn/share/base/form/shrcntAIYfNyvErSmuYOLSmgzid\" data-url=\"https://my.feishu.cn/share/base/form/shrcntAIYfNyvErSmuYOLSmgzid\"><span>链接</span></a><span>或扫描下面的二维码，一起来认识&amp;交流！</span></p>\n  <span></span>\n  <figure>\n   <img src=\"https://image.jido.dev/20260314223115_Fn3NvYc_9tOMP5x77Pf8jxESN8a3.png\">\n  </figure>\n  <span></span>\n  <p><span>【</span><strong><span>The gang that made this happen】</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span>制作人：陈皮</span></li>\n   <span> </span>\n   <li><span>剪辑：陈皮</span></li>\n   <span> </span>\n   <li><span>片头：Mondo Bongo - Joe Strummer &amp; The Mescaleros</span></li>\n   <span> </span>\n   <li><span>片尾：Krafty (2015 Remaster) - New Order</span></li>\n   <span></span>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "对话深入剖析了 Coding Agent 对 SaaS 行业的颠覆、10 倍效能提升的实战经验及 AI 时代的务实创业观。",
+  "oneSentenceSummary": "对话深入剖析了 Coding Agent 对 SaaS 行业的颠覆、10 倍效能提升的实战经验及 AI 时代的务实创业观。",
+  "summary": "本期播客对话 Sheet0 创始人王文锋，深度探讨了以 OpenClaw 为代表的第二波 Agent 热潮。王文锋提出，Coding Agent 已成为所有智能体的核心引擎，通过将大模型能力与文件系统结合，解决了长程任务的不确定性与自我修复问题。访谈揭示了 AI 如何解构 SaaS 作为“专家能力规模化载体”的本质，认为定制化 AI 专家将取代标准化的最佳实践。此外，王文锋分享了团队通过“AI 管 AI”实现开发周期从一年缩短至两周的效能飞跃。最后，他反思了创业心态的转变：在技术极速更迭的当下，应放下长期预判的 Ego，聚焦未来 3-6 个月的确定性，通过“优化胜率而非赔率”来应对 AI 带来的深刻变革。",
+  "mainPoints": [
+    {
+      "point": "Coding Agent 将成为所有智能体的统一底座",
+      "explanation": "所有的垂直领域 Agent 最终都会演化为基于代码能力的通用型智能体，通过 Coding 能力释放模型的推理极限。"
+    },
+    {
+      "point": "AI 正在解构传统 SaaS 作为专家能力载体的价值",
+      "explanation": "AI 提供了低门槛、即时且定制化的专家能力，打破了传统软件依靠预设工作流和最佳实践来复制经验的模式。"
+    },
+    {
+      "point": "“AI 管 AI”是实现百倍效能提升的新范式",
+      "explanation": "从人驱动 AI 转向由高级 AI 自动指派任务并闭环修复，将工程师从代码编写者转变为最后的质检员和决策者。"
+    },
+    {
+      "point": "创业策略应从长期预判转向短期确定性跟随",
+      "explanation": "在 AI 快速进化的环境中，预判 5-10 年毫无意义，应关注 3-6 个月的现实瓶颈，追求高胜率的落地价值。"
+    }
+  ],
+  "keyQuotes": [
+    "AI coding 是大模型的零销售……接下来所有的 agent 都会发现，最后本质又变成了一个 code agent 一个套壳。",
+    "软件本质上在过去的一个核心地位，是说它可能是规模化复制专家能力的一个载体。现在有了 agent 以后，获得专家能力变得更容易了。",
+    "现在的瓶颈不在于生产效率上，生产效率没有瓶颈，核心的瓶颈是做什么，做成什么样。",
+    "文锋我觉得更大的作用就是说 AI 管 AI……我觉得 practice 就是一个 AI 管 AI 的一个 agent。",
+    "不要去尝试解决那些人们还没有遇到瓶颈的问题。本账其实是在优化赔率，而不是在优化胜率。"
+  ],
+  "tags": [
+    "Coding Agent",
+    "OpenClaw",
+    "智能体",
+    "SaaS 颠覆",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 92,
+  "wordCount": 986,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_84751f",
+  "sourceName": "42章经",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773496800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-14 14:00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_7c54f9bc",
+  "title": "不仿真不 VLA 不遥操：它石智航重磅发布“能干活的通用具身大模型 ”AWE3.0 ",
+  "url": "https://www.qbitai.com/2026/03/387860.html",
+  "date": "2026-03-14 10:32:09",
+  "author": "林樾",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>机器人在真实复杂环境中进行产线作业已进入倒计时。</p>\n  <p>“AWE3.0赋能它石A1机器人，斩获了中国具身智能在工业精密操作领域的首个吉尼斯世界纪录！“它石智航具身通用大模型AWE3.0 暨数据解决方案 SenseHub 发布会”上，它石智航首席科学家丁文超博士发表演讲，并正式揭开全球首个能干活的通用具身大模型 AWE3.0的神秘面纱。这是业内首次进行柔性操作图灵测试的大模型，全面赋予了机器人实打实的产业能力，真正胜任复杂物理世界的落地工作。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-387861\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/他1.png\" alt=\"\" width=\"1265\" height=\"836\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8b42cc60-a191-4121-1943-60cc75d31500/public 1265w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/680b2861-a9e8-4597-70cc-2cc0cd804400/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/f1d4c7f8-a4b0-4818-6dc3-260603872200/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p><strong>AWE3.0：五大能力全面升级，打造“有价值”的大模型</strong></p>\n  <p>今日它石发布的全球首个能干活的通用具身大模型AWE3.0，以“走出温室、落地干活、通用泛化”的能力，实现了流畅的毫米级精度操作、柔性物体感知控制、长程任务稳定执行等方面的性能提升和跨场景迁移泛化的突破。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-387862\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/他2.png\" alt=\"\" width=\"1265\" height=\"699\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d3f3afa2-4ac6-4f9f-33ab-5203d2acfe00/public 1265w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/2a0ea2ba-5531-4bdb-755d-44eb81760800/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/87c4bd6e-e840-4b3f-be9a-40a2253c4b00/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>AWE3.0兼具二项成熟能力提升、三项硬核技术突破：既延续了全身端到端学习、动态时空推理等核心优势，又凭借它石全新自研的全视角通感决策OSD摆脱视角依赖，让机器人在未见新视角下的任务成功率提升3倍，在复杂多变的真实环境中实现稳定可靠作业；依托WIYH数据集超百万小时的数据规模和丰富的触觉数据所打造的高密度触觉感知HTS，AWE3.0让机器人触觉感知更加敏锐、并能够完成毫米级精细响应，泛化能力大幅提升；此外，AWE3.0通过隐空间丝滑动作LAS，让任务执行更加行云流水，抖动降低超过45%、并大幅消除卡顿，使得机器人能够胜任精密装配、柔性制造等专业场景。</p>\n  <p>可以说，AWE3.0的问世，才是为具身智能行业真正规模化落地千行百业，筑牢了技术底座。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-387863\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/他3.png\" alt=\"\" width=\"1265\" height=\"653\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/afc66fcd-8a44-4afe-2fa5-debff1a52a00/public 1265w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/73bf2e3d-d5e4-4fb5-51f3-c5812d1de000/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/500e05a4-1e87-49dc-a7b4-2217cdefcd00/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p><strong>全视角通感决策OSD：未见场景，从容应变</strong></p>\n  <p>传统机器人只能依赖已知的、固定的机器人自身视角，一旦环境变化就难以稳定执行，这一长期行业瓶颈在AWE 3.0被打破。它石AWE3.0通过<strong>全视角通感决策OSD（Omni-Sense Decision）</strong>颠覆性实现了基于世界状态的自主决策，即使面对训练中未曾学习过的新视角，也能够通过推理生成稳定的操作策略。根据实验数据，OSD为机器人在未见视角下的任务性能带来了高达3倍的提升，显著增强了机器人在真实环境中的泛化能力。这种在复杂多变的真实环境中能够稳定可靠作业的硬核实力，为工业产线稳定运行、复杂任务可靠执行筑牢支撑。</p>\n  <p><strong>高密度触觉感知HTS：感知入微，触达毫厘</strong></p>\n  <p>在高精度接触、柔性操作等场景中，触觉感知和反馈对机器人至关重要。依托已积累超百万小时数据规模的WIYH数据集和采集的丰富触觉数据，它石<strong>高密度触觉感知技术HTS（High-Density Tactile Sensing）</strong>让AWE3.0深度掌握抓取、装配、调整、擦拭、清洁、摆放等各类生活与工业中常见的任务操作场景与接触特征，并由此大幅提升了机器人对物理接触的局部感知和局部响应能力，由此机器人能够生成毫米级细粒度动作，并对接触变化进行灵敏且稳定的闭环调整。这项提升，让机器人能够真正胜任精密装配、线束插接等接触密集和柔性操作场景，精细操作能力达到可落地、可泛化、可规模化的产业标准。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-387864\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/他4.png\" alt=\"\" width=\"1265\" height=\"621\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1e4e98d4-28b5-4b06-bdfa-5ce49099ba00/public 1265w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/d3092cda-4622-480e-68ec-1a0f7664f400/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c1ca485b-f4da-4a9f-1ee3-24e20cbe5300/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p><strong>隐空间丝滑动作LAS：行云流水，精细如丝</strong></p>\n  <p>针对机器人执行动作时常见的抖动与卡顿问题，AWE3.0通过<strong>隐空间丝滑动作LAS（Latent Action Smoothing）</strong>，在隐空间内通过对动作隐变量的复用和调优，实现了帧间和帧内动作的连续顺滑，使动作轨迹抖动降低超过45%，显著提升了操作的稳定性与流畅度。结合世界对齐的隐动作空间，机器人能够实现毫米级精度操作，并具备在接近失败状态下自动恢复的能力，从而支持更复杂的长程任务执行。</p>\n  <p>在对空间和物理规律“知其然，更知其所以然”的理解和预测推理能力上，AWE3.0继承了<strong>动态时空推理DSR（Dynamic Spatio-temporal Reasoning）</strong>的实时感知和精准预测优势，空间描述精度超过行业基准21%、推理速度则为其的2.21倍，使机器人能够实时理解环境并预测未来状态，具备“假如……那么……”的假设推演能力；结合<strong>全身端到端学习E2E-WBC</strong>从感知贯穿动作的全身协同，机器人不仅知道物体在哪里、什么形状，还能够依据人类数据生成更加稳定丝滑的全身动作，实现从“看懂”到“做好”的能力跃迁。</p>\n  <p>“什么样的数据才能让机器人真正“懂”物理世界？我们认为Human Centric数据才是唯一解，而不是用遥操或仿真数据得到一个头重脚轻、不能在真实复杂环境用的VLA模型。”丁文超在发布会介绍了它石全球首创的Human Centric数据采集范式与SenseHub数采套件所提供的高质量数据支撑。这一套独特的软硬件协同设计，SenseHub实现了感知、计算与传输的深度融合，为自然真实的人类行为数据采集提供了完整的系统级解决方案，且为它石本体硬件进行AI赋能，形成完美闭环；它石自研的高精度全身运动捕捉算法融合多模态感知数据，在复杂场景下SenseHub可对全身关节点与姿态实现毫米级精度、低延迟的实时跟踪与三维重建，并确保所有动态捕捉数据在移动过程中高带宽、低延时稳定传输，彻底解放使用者活动范围。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-387865\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/他5.png\" alt=\"\" width=\"1265\" height=\"635\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a922990a-84da-4646-814e-bb4866035300/public 1265w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/baa65cec-e239-4faf-0a82-8abdc403dd00/public 768w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1b6500d5-9b25-440b-1e01-61bdef084d00/public 1200w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>不仅如此，SenseHub还攻克了多源异构数据同步的业界难题，率先实现全身各类传感器间微秒级的时间同步，为后续精准的数据融合与分析提供严格统一的时序基准。在此基础上，它石一站式数据真值服务系统，则提供了从数据采集、自动化标注、质量评估到管理分析的全链条工具与服务，大幅提升高质量训练数据集的生成效率。至此，它石已成为全球唯一的工业级Human Centric数采方案提供方。</p>\n  <p>从技术突破到产业赋能，全球首个AWE 3.0实现了全维度能力升级，推动具身智能落地制造、服务等多元真实场景，正式开启具身智能大脑规模化商用时代。 “吉尼斯世界记录只是起点，更重要的是让机器人帮助世界打破更多能力边界。”</p>\n  <p>&nbsp;</p>\n  <p>转载来源：它石智航</p>\n  <p>本文为量子位获授权转载，观点仅为原作者所有。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "文章介绍它石智航 AWE3.0 具身模型与 SenseHub 数据方案，重点突出未见视角泛化、触觉精操与动作平滑等面向产业落地的能力提升。",
+  "oneSentenceSummary": "文章介绍它石智航 AWE3.0 具身模型与 SenseHub 数据方案，重点突出未见视角泛化、触觉精操与动作平滑等面向产业落地的能力提升。",
+  "summary": "这篇发布报道围绕 AWE3.0 的产业化定位展开，强调模型从“演示能力”走向“可干活能力”。文中给出三项核心技术：OSD（全视角通感决策）提升未见视角任务成功率、HTS（高密度触觉感知）支持毫米级接触控制、LAS（隐空间丝滑动作）降低抖动并改善长程任务稳定性；同时结合 DSR 与全身端到端学习描述系统级能力闭环。另一个重点是 SenseHub 的 Human-Centric 数据采集与真值服务体系，强调高质量多模态数据在具身泛化中的基础作用。整体叙事技术信息较多，但仍以厂商发布口径为主，独立 benchmark 与第三方复现实证有待补充。",
+  "mainPoints": [
+    {
+      "point": "AWE3.0 试图解决具身模型在真实场景中的泛化与稳定性瓶颈。",
+      "explanation": "通过 OSD、HTS、LAS 等模块组合，目标是提升未见环境适应、精细接触控制和连续动作质量。"
+    },
+    {
+      "point": "高质量人类行为数据被视为可落地能力的关键前提。",
+      "explanation": "文章将 Human-Centric 数据范式和 SenseHub 采集系统作为模型性能与可迁移性的核心支撑。"
+    },
+    {
+      "point": "应用指向从实验验证转向制造与服务场景规模化部署。",
+      "explanation": "报道强调其能力指标与场景叙述面向产业任务，而非仅展示性 Demo。"
+    }
+  ],
+  "keyQuotes": [
+    "全球首个能干活的通用具身大模型 AWE3.0",
+    "未见新视角下的任务成功率提升 3 倍",
+    "Human Centric 数据才是唯一解"
+  ],
+  "tags": [
+    "具身智能",
+    "AWE3.0",
+    "机器人",
+    "触觉感知",
+    "泛化能力"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2352,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773484329000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-14 10:32:09"
+}

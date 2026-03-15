@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-15 06:03:37 | [返回首页](/README.md)
+**更新时间**: 2026-03-15 08:10:48 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (9780)
+- [AI & 大模型](#ai-llm) (9792)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (717)
-- [DevOps](#devops) (436)
+- [DevOps](#devops) (437)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (4988)
+- [其他](#other) (4992)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [我在-Pragmatic-Summit-炉边谈话中探讨智能体工程](https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything) - AI 精选
+- [多智能体陷阱](https://towardsdatascience.com/the-multi-agent-trap/) - AI 精选
 - [AI-操作系统：从指令到意图](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491695&idx=1&sn=78edff3e611f6e99d9e1deee83453b3b) - AI 精选
 - [AgentRx：AI-智能体的系统化调试](https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/) - AI 精选
 - [向量搜索的扩展：量化与套娃式嵌入比较，实现-80%-成本降低](https://towardsdatascience.com/649627-2/) - AI 精选
@@ -40,10 +42,8 @@
 - [1500-个-PR、0-人写代码：Codex-驱动的百万行级内部产品实践](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247657188&idx=2&sn=a68f1062d1f1e0faa8b076849cfb42e9) - AI 精选
 - [Nano-Banana-2：将-Pro-级能力与闪电般的速度相结合](https://deepmind.google/blog/nano-banana-2-combining-pro-capabilities-with-lightning-fast-speed/) - AI 精选
 - [OpenClaw-+-Claude-Code-超强教程：一个人就能搭建完整的开发团队！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247719868&idx=1&sn=c93e0542f8bebb653559315d02841b43) - AI 精选
-- [中国也有了世界第一的模型，他的名字，叫-Seedance-2.0。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647679903&idx=1&sn=09fd4d34355192fc940fd57809be902a) - AI 精选
-- [介绍-Showboat-和-Rodney：让智能体能够演示其构建的成果](https://simonwillison.net/2026/Feb/10/showboat-and-rodney/#atom-everything) - AI 精选
 
-- [查看全部 9780 篇...](/details/tags/ai-llm.md)
+- [查看全部 9792 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -128,7 +128,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 436 篇...](/details/tags/devops.md)
+- [查看全部 437 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -185,6 +185,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 4988 篇...](/details/tags/other.md)
+- [查看全部 4992 篇...](/details/tags/other.md)
 
 

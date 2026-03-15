@@ -1,0 +1,53 @@
+{
+  "id": "RAW_948b4c45",
+  "title": "摘自 Jannis Leidel 的引言",
+  "url": "https://simonwillison.net/2026/Mar/14/jannis-leidel/#atom-everything",
+  "date": "2026-03-14 18:41:25",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">14th March 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://jazzband.co/news/2026/03/14/sunsetting-jazzband\">\n     <p>GitHub’s&nbsp;<a href=\"https://www.theregister.com/2026/02/18/godot_maintainers_struggle_with_draining/\">slopocalypse</a>&nbsp;– the flood of AI-generated spam PRs and issues – has made Jazzband’s model of open membership and shared push access untenable.</p>\n     <p>Jazzband was designed for a world where the worst case was someone accidentally merging the wrong PR. In a world where&nbsp;<a href=\"https://www.devclass.com/ai-ml/2026/02/19/github-itself-to-blame-for-ai-slop-prs-say-devs/4091420\">only 1 in 10 AI-generated PRs meets project standards</a>, where curl had to&nbsp;<a href=\"https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/\">shut down its bug bounty</a>&nbsp;because confirmation rates dropped below 5%, and where GitHub’s own response was a&nbsp;<a href=\"https://www.theregister.com/2026/02/03/github_kill_switch_pull_requests_ai\">kill switch to disable pull requests entirely</a>&nbsp;– an organization that gives push access to everyone who joins simply can’t operate safely anymore.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://jazzband.co/news/2026/03/14/sunsetting-jazzband\">Jannis Leidel</a>, <span class=\"context\">Sunsetting Jazzband</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2045/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "该文章强调了 AI 生成的拉取请求垃圾信息如何迫使开源治理模型收紧访问权限，并放弃之前开放的协作默认设置。",
+  "oneSentenceSummary": "该文章强调了 AI 生成的拉取请求垃圾信息如何迫使开源治理模型收紧访问权限，并放弃之前开放的协作默认设置。",
+  "summary": "这篇简短的引用文章捕捉到了开源生态系统中的一个关键治理信号：传统的、高度信任的贡献模式正受到大规模、低质量 AI 生成提交的压力。文章以 Jazzband 为例，指出当维护者面临压倒性的审查噪音和低信号质量时，开放成员资格和广泛的推送访问权限假设不再适用。相关参考文献将此视为一个系统性的平台时代问题，而非孤立的项目问题。内容简短但及时，更多地是作为一种警示而非全面的分析。",
+  "mainPoints": [
+    {
+      "point": "AI 生成的贡献量正在改变维护者的风险模型。",
+      "explanation": "大量低质量提交增加了审查开销，并使宽松的工作流程更难维持。"
+    },
+    {
+      "point": "旨在应对意外错误的访问策略无法应对对抗性或垃圾信息泛滥的情况。",
+      "explanation": "具有开放推送访问权限的项目现在必须优先考虑运营安全，而非最大程度的开放性。"
+    },
+    {
+      "point": "这个问题是整个生态系统范围内的，并且与平台层面的激励机制相关。",
+      "explanation": "引用的例子表明，维护者、漏洞赏金计划和托管平台都受到了信号质量下降的影响。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 生成的垃圾拉取请求和问题的泛滥",
+    "开放成员资格和共享推送访问权限变得不可持续",
+    "根本无法再安全地运行"
+  ],
+  "tags": [
+    "开源",
+    "AI 垃圾内容",
+    "拉取请求",
+    "维护者倦怠",
+    "治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 107,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773513685000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-14 18:41:25"
+}
