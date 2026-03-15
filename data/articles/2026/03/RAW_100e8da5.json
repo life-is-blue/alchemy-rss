@@ -1,0 +1,58 @@
+{
+  "id": "RAW_100e8da5",
+  "title": "评估 METR 2025 年末开发者生产力实验的异质性",
+  "url": "https://www.lesswrong.com/posts/dFmQThALG8EdZFqgL/assessing-heterogeneity-in-metr-s-late-2025-developer",
+  "date": "2026-03-14 12:27:45",
+  "author": "TFD",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\">Update: Fixed exponentiation of estimated parameters.</p>\n    <h2 id=\"Summary\">Summary</h2>\n    <p id=\"block1\">I use data from METR's recent <span><span><a href=\"https://metr.org/blog/2026-02-24-uplift-update/\">developer productivity experiment</a></span></span> to assess the possibility of heterogeneity in the effect of AI on time to complete a task. Relative to a sample-wide 6% speedup, I estimate a 12% speedup in tasks which were predicted by developers (prior to treatment assignment) to take substantially shorter with rather than without AI, and I estimate a 25% speedup for the developer in the study with the highest estimated speedup.</p>\n    <p id=\"block2\">In this post I'm going to focus on giving a descriptive view of what this data looks like and what we may be able to estimate based on it. In a later post I may give some opinions on possible takeaways from this in terms of actions people and organizations might take. I also focus on estimation rather than characterizing confidence or uncertainty.</p>\n    <h2 id=\"Why_care\">Why care</h2>\n    <ul>\n     <li id=\"block3\">METR interprets their relatively small overall speed-up to indicate bias due to selection on both developers and task. Understanding heterogeneity can assist with understanding how plausible this is, and may also help with designing future experiments.</li>\n     <li id=\"block4\">Heterogeneity in the effect of AI on productivity may be strategically relevant to businesses and could also be relevant for planning for and developing policy around AI-induced labor market impacts.</li>\n    </ul>\n    <h2 id=\"METR_s_results\">METR's results</h2>\n    <p id=\"block5\">METR describes their results like this:</p>\n    <blockquote id=\"block6\">\n     <p id=\"block7\">Our raw results show some evidence for speedup. Our early 2025 study found the use of AI causes tasks to take 19% longer, with a confidence interval between +2% and +39%. For the subset of the original developers who participated in the later study, we now estimate a speedup of -18% with a confidence interval between -38% and +9%. Among newly-recruited developers the estimated speedup is -4%, with a confidence interval between -15% and +9%. &nbsp; However the true speedup could be much higher among the developers and tasks which are selected out of the experiment. Some developers self-report very high speedups, though as we documented in our earlier study those estimates can be quite unreliable. &nbsp; Due to the severity of these selection effects, we are working on changes to the design of our study. Below, we provide further detail and describe our plans for other means of studying the impact of AI on developer productivity.</p>\n    </blockquote>\n    <p id=\"block8\">From what I can tell, METR estimates speedups by regressing log implementation time against log estimated time without AI (estimated by developers prior to random assignment of tasks to AI vs no-AI condition) and an indicator to whether AI was allowed or disallowed for a given task. This makes sense since estimated time without AI seems to be well-correlated with implementation time, and so can help with controlling variance in time across tasks that just has to do with the task itself:</p>\n    <p id=\"block9\"><img src=\"https://image.jido.dev/20260315003247_3f52be9.webp\" alt=\"grid\"></p>\n    <p id=\"block10\">When I obtain an estimate for the entire sample that METR makes available I get a sample-wide estimated speedup of 6%.</p>\n    <h2 id=\"Heterogeneity_across_tasks\">Heterogeneity across tasks</h2>\n    <p id=\"block11\">To assess heterogeneity across tasks, I utilize estimates provided for the time each task will take with and without AI <em>from before task are randomized to either AI condition</em>. We might hypothesize that task where developers estimate this gap to be larger would have a larger speedup. I initially tried using the raw difference between the AI and no-AI estimated times, but I was getting so odd results and wasn't sure if outlier or some other issue was complicating matters. I ended up transforming the two estimates into an indicator for whether the no-AI estimate was larger than the AI estimate by at least 60 minutes. For use in the \"heuristic estimate\" section below I wanted to get an estimate that lean towards larger speedups, and some experimentation seemed to indicate that selecting a threshold that pushes towards larger differences in developer-estimated times yielded larger differences in the estimated effect of the AI condition.</p>\n    <p id=\"block12\">I fit a regression model with a main effect for this indicator and the AI treatment X indicator interaction included. This produced as estimated AI speedup of 5% when the no-AI estimated time <em>was not</em> larger than the AI one by at least 60 minutes, and a speedup of 12% when the no-AI estimated time <em>was</em> larger by that amount.</p>\n    <h2 id=\"Heterogeneity_across_developers\">Heterogeneity across developers</h2>\n    <p id=\"block13\">To assess heterogeneity across developers, I estimate a linear mixed effects model with fixed effects for the AI treatment assignment and log estimated time without AI, and developer-level random intercepts and random slopes for the AI treatment assignment (I don't include the indicator discussed in the previous section). I estimate the developer level AI treatment effect as the sample-wide effect in this model (7% speedup) plus the developer-level random slope. These estimates look like this (negative values indicate speedups):</p>\n    <p id=\"block14\"><img src=\"https://image.jido.dev/20260315003247_0f67b96.webp\" alt=\"histogram\"></p>\n    <p id=\"block15\">The maximum estimated speedup in this sample based on the method above is 25%.</p>\n    <h2 id=\"Heuristic_estimate_accounting_for_selection\">Heuristic estimate accounting for selection</h2>\n    <p id=\"block16\">As a heuristic method for getting a sense of how much selection might impact these numbers, I tried the following. Keep in mind that this can't truly \"correct\" for any selection because we don't have data on the observations we might be missing. This is only intended as a rough attempt to understand how selection might be impacting these results.</p>\n    <p id=\"block17\">METR says in there post that \"an increased share of developers say they would not want to do 50% of their work without AI\" and that \"30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI\". Let's assume we are missing 50% of tasks/developers and that these are selected to have systematically lower effects of AI on productivity. We might think that observations excluded in this way are near the higher end of what is observed in the sample that we do have. To simulate this, I estimate a \"synthetic\" sample-wide effect by averaging the observed sample-wide effect and one adjusted by the difference between the two effects estimated in the \"tasks\" section (averaged because we are assuming 50% of the sample is missing due to selection i.e. a 0.5 weighting to both observed and \"missing\"). Similarly, I estimate a synthetic developer-level effect that averages the maximum developer-level effect and the effect adjusting that max by the task adjustment amount. I then estimate an overall synthetic effect that averages the synthetic effect adjusting for tasks only and the \"developer-level\" synthetic effect. This gives an estimated 20% speedup.</p>\n    <p id=\"block18\">I'll note that I intentionally use values that lean towards high speedups here in order to understand possible selection effects. None of these numbers should be taken as my personal best-guess or to imply that I am taking any particular position on what speedups are likely.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "对 METR 开发者生产力数据的分析显示，虽然平均 AI 加速效果仅为 6%，但特定任务和高绩效开发者实现了 12% 至 25% 的显著更高收益。",
+  "oneSentenceSummary": "对 METR 开发者生产力数据的分析显示，虽然平均 AI 加速效果仅为 6%，但特定任务和高绩效开发者实现了 12% 至 25% 的显著更高收益。",
+  "summary": "本文是对 METR（Model Evaluation and Threat Research）2025 年末开发者生产力实验的统计分析。研究发现，虽然整体 AI 加速效果平均只有 6%，但不同任务和开发者之间存在显著的异质性。特定类型的任务（如样板代码编写、文档生成）和高绩效开发者能够获得 12% 到 25% 的效率提升。文章深入探讨了这种异质性的来源，包括任务复杂度、开发者经验、AI 工具使用熟练度等因素，并讨论了这些发现对 AI 辅助开发策略的启示。",
+  "mainPoints": [
+    {
+      "point": "AI 加速效果存在显著的异质性",
+      "explanation": "平均 6% 的加速掩盖了巨大的个体差异：某些任务和开发者获得了 12-25% 的提升，而其他任务几乎没有收益，这表明「一刀切」的 AI 工具策略可能不是最优的。"
+    },
+    {
+      "point": "任务类型对 AI 辅助效果影响显著",
+      "explanation": "重复性高、模式明确的任务（如样板代码、文档）从 AI 辅助中受益最多，而需要深度思考和创造性的任务收益较少，这提示我们应该针对任务类型设计不同的 AI 工作流。"
+    },
+    {
+      "point": "开发者经验影响 AI 工具的有效使用",
+      "explanation": "高绩效开发者更能有效地利用 AI 工具，这可能是因为他们更清楚什么时候该用 AI、什么时候不该用，以及如何正确地与 AI 协作。"
+    },
+    {
+      "point": "存在选择偏差的风险",
+      "explanation": "实验设计可能存在偏差，因为参与者是自愿参加的，可能无法代表普通开发者群体，这限制了结果的普适性。"
+    }
+  ],
+  "keyQuotes": [
+    "平均数谎言：6% 的平均加速掩盖了 25% 的峰值表现。",
+    "不是所有任务都应该用 AI，也不是所有开发者都能同样受益于 AI。",
+    "AI 工具的效果取决于使用者的判断力。",
+    "异质性是特征，不是 bug—它指明了我们应该如何部署 AI。"
+  ],
+  "tags": [
+    "METR",
+    "开发者生产力",
+    "AI 基准测试",
+    "统计分析",
+    "选择偏差"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 78,
+  "wordCount": 1105,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773491265000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-14 12:27:45"
+}

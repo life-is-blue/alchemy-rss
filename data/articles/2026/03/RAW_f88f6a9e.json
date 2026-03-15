@@ -1,0 +1,54 @@
+{
+  "id": "RAW_f88f6a9e",
+  "title": "墙式思维与桥式思维",
+  "url": "https://www.lesswrong.com/posts/zGecnEacBfGaKyN8L/bridge-thinking-and-wall-thinking",
+  "date": "2026-03-15 00:20:17",
+  "author": "Jay Bailey",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\">There are a couple of frames I find useful when understanding why different people talk very differently about AI safety - the <strong>wall</strong>, and the <strong>bridge</strong>.\n     <br>\n     <br>\n     A wall is incrementally useful. Every additional brick you add is good, and the more bricks you add the better. If you are adding a brick to the wall you are doing something good, regardless of the current state of the wall.\n     <br>\n     <br>\n     A bridge requires a certain amount of investment. There's not much use for half a bridge. Once the bridge crosses the lake, it can be improved - but until you get a working bridge, you have nothing.\n     <br>\n     <br>\n     A solid example of wall thinking is <span><span><a href=\"https://threadreaderapp.com/thread/1666482929772666880.html\"><u>the image in this thread by Chris Olah</u></a></span></span>. Any approach around “eating marginal probability” involves a wall frame. Another example is the theory of change of the standards work I've done for <span><span><a href=\"https://github.com/UKGovernmentBEIS/inspect_evals\">Inspect Evals</a></span></span>, which I would summarise as “Other fields like aviation and rocketry have solid safety standards and paradigms. We need to build this for evaluations - it’s the kind of thing that a mature AI safety field needs to have.” This theory doesn’t have a full story of how it helps save the world end-to-end, but it doesn’t have to, under the wall frame - it just has to be pointing in the right direction and be broadly helpful.\n     <br>\n     <br>\n     A good example of bridge thinking is the MIRI approach - asking openly and outright for an <span><span><a href=\"https://arxiv.org/abs/2511.10783\">international treaty</a></span></span>. In my understanding, MIRI are not asking for the most they think they can get away with. They are asking for what they think is necessary to solve the problem, and believe anything less is insufficient. In lieu of p(doom), <a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/4mBaixwf4k8jk7fG4/yudkowsky-on-don-t-use-p-doom\"><u>Eliezer asks</u></a> “What is the minimum necessary and sufficient policy that you think would prevent extinction?” This is bridge thinking - we need to achieve a certain outcome X, and &lt;X won’t do. Anything that has no chance of achieving X or greater is unhelpful at best and counterproductive at worst, And to figure out what X is needed, you need to have a solid idea of what your high level goal is from the start and how a given course of action gets you there.\n     <br>\n     <br>\n     From the wall perspective, bridge thinkers are ignoring or denigrating important marginal or unglamorous work in favor of swinging for the fences. From the bridge perspective, wall thinkers are doing things that are not helpful and will end up rounding down to zero.\n     <br>\n     <br>\n     I have found this a very useful way to understand why some people in AI safety are proposing very different ideas than me.</p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章引入「墙式思维」和「桥式思维」作为两种不同的心智模型，解释 AI 安全领域中渐进式进展与全有或全无解决方案之间的战略分歧。",
+  "oneSentenceSummary": "文章引入「墙式思维」和「桥式思维」作为两种不同的心智模型，解释 AI 安全领域中渐进式进展与全有或全无解决方案之间的战略分歧。",
+  "summary": "文章通过将方法归类为两种隐喻：「墙」和「桥」，探讨了 AI 安全社区内部的根本分歧。墙式思维将安全视为渐进过程，每个小改进（如更好的评估或标准）无论最终结果如何都具有固有价值。相比之下，桥式思维认为 AI 安全需要完整、跨越阈值的解决方案（如国际条约），认为任何低于「最低必要」的东西实际上都是无用的。作者建议，理解这些框架有助于澄清为什么不同群体会将彼此的工作视为要么忽视实际努力，要么根本上徒劳无益。",
+  "mainPoints": [
+    {
+      "point": "墙式思维关注 AI 安全中渐进和边际改进的固有价值",
+      "explanation": "在这一框架下，每块添加的「砖」——如技术标准或可解释性工具——都被视为积极贡献。它假设建立成熟领域需要许多小的、有帮助的方向，即使没有端到端解决方案。"
+    },
+    {
+      "point": "桥式思维认为只有完整且充分的解决方案才能防止存在性 AI 风险",
+      "explanation": "这一视角表明，部分措施就像一座未完成的桥无法跨越湖泊。它要求识别「最低必要」政策或技术阈值，将低于该标记的任何东西视为可能适得其反。"
+    },
+    {
+      "point": "这两种框架之间的分歧在 AI 研究人员中造成重大摩擦和误解",
+      "explanation": "墙式思维者经常将桥式思维者视为忽视实际、不引人注目的工作，而倾向于高风险的赌博。相反，桥式思维者认为渐进工作通常无关紧要，因为如果核心问题未解决，它会「向下舍入为零」。"
+    }
+  ],
+  "keyQuotes": [
+    "墙是渐进有用的。你添加的每块额外的砖都是好的，你添加的砖越多越好。",
+    "桥需要一定量的投资。半座桥没什么用。",
+    "任何没有 chance 达到 X 或更高的事物都是无益的，最好的情况下是适得其反的。",
+    "从墙的角度来看，桥式思维者忽视或贬低重要的边际或不引人注目的工作……从桥的角度来看，墙式思维者正在做的事情没有帮助，最终向下舍入为零。"
+  ],
+  "tags": [
+    "AI 安全",
+    "心智模型",
+    "对齐策略",
+    "AI 治理",
+    "风险管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 81,
+  "wordCount": 435,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773534017000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-15 00:20:17"
+}
