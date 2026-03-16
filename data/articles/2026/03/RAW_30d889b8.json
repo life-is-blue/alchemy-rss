@@ -1,0 +1,57 @@
+{
+  "id": "RAW_30d889b8",
+  "title": "打破微批边界：Apache Spark 实时模式的架构演进",
+  "url": "https://www.databricks.com/blog/breaking-microbatch-barrier-architecture-apache-spark-real-time-mode",
+  "date": "2026-03-16 15:00:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>With the launch of real-time mode (RTM) in Apache Spark 4.1, Structured Streaming now delivers millisecond-level latency. In a <a data-external-link=\"true\" href=\"https://www.databricks.com/blog/real-time-mode-ultra-low-latency-streaming-spark-apis-without-second-engine\">recent blog post,</a> we showed how RTM can outperform Flink for many low latency feature engineering workloads (see below).</p>\n  <p>In this blog, we will discuss the architectural changes that enabled Structured Streaming to support both high-throughput ETL workloads as well as ultra low-latency workloads.</p>\n  <p><img src=\"https://www.databricks.com/sites/default/files/inline-images/Spark-vs-Flink.png?v=1773463629\" data-entity-uuid=\"4560832a-37c3-4094-a0ab-396b4578dcc1\" data-entity-type=\"file\" alt=\"Apache Spark Real-Time Mode vs. Apache Flink\" width=\"585\" height=\"310\" loading=\"lazy\" data-ot-ignore=\"1\">\n   <br>\n   <strong>Apache Spark RTM is faster than Flink for feature engineering use cases.</strong></p>\n  <h2>The throughput vs. latency dilemma</h2>\n  <p>Up until now, choosing a streaming engine meant making a trade-off by picking systems like Apache Spark for high throughput ETL workloads, or systems like Apache Flink for low latency workloads. The two systems have very different semantics and performance characteristics. That changes with RTM in Structured Streaming. With the introduction of RTM, Apache Spark can now handle both high throughput and ultra low-latency use cases. This means it’s now possible to pick a single engine with no new learning curve and avoid managing two completely different systems.</p>\n  <h2>Microbatch architecture delivers high throughput</h2>\n  <p>Spark Structured Streaming uses a microbatch architecture: the streaming system receives input data and divides it into discrete batches called epochs based on data availability and maximum batch size configurations. The Spark engine applies the business logic through transformations like project, filter, and aggregation. The results are output as a continuous stream of batches. Structured Streaming excels in high-throughput processing because of this microbatch architecture: since multiple records are processed together, the fixed overheads are amortized and vectorized execution can further improve throughput. These batches are executed in parallel while keeping hardware utilization high. Microbatch mode dynamically allocates task slots across multiple streams which additionally helps with high utilization and throughput. Spark’s foundational innovation of <a data-external-link=\"true\" href=\"https://spark.apache.org/docs/latest/rdd-programming-guide.html#resilient-distributed-datasets-rdds\" target=\"_blank\" rel=\"noopener noreferrer\">lineage based fault tolerance</a> ensures that these streams are processed with strong exactly-once guarantees. &nbsp;</p>\n  <p><img data-entity-uuid=\"b38d64c9-a649-4c5b-bd5c-6d5b35a0955d\" data-entity-type=\"file\" src=\"https://www.databricks.com/sites/default/files/inline-images/2026-03-blog-apache-spark-structured-streaming-one-engine-for-high-throughput-and-millisecond-latency-inline-960x1042-v3.png?v=1773614419\" width=\"1920\" height=\"2084\" alt=\"Existing microbatch execution vs. Real-Time Mode (RTM)\" loading=\"lazy\" data-ot-ignore=\"1\">\n   <br>\n   <strong>RTM processes data in a non-blocking manner compared to microbatch mode.</strong></p>\n </body>\n</html>",
+  "aiSummary": "本文解析了 Apache Spark 4.1 的 Real-Time Mode 如何在保留 Structured Streaming 高吞吐优势的同时，实现毫秒级低延迟处理。",
+  "oneSentenceSummary": "本文解析了 Apache Spark 4.1 的 Real-Time Mode 如何在保留 Structured Streaming 高吞吐优势的同时，实现毫秒级低延迟处理。",
+  "summary": "文章围绕 Apache Spark Structured Streaming 的 Real-Time Mode（RTM）展开，核心是解决流处理领域长期存在的吞吐与延迟二选一问题。作者对比了传统微批模式在吞吐、资源利用和容错上的优势，以及 RTM 为超低延迟场景引入的非阻塞执行路径。其主要价值在于工程实践层面：团队可以继续使用熟悉的 Spark API，同时覆盖 ETL 级高吞吐与实时特征工程等低延迟需求，从而降低双引擎并存带来的系统复杂度和维护成本。",
+  "mainPoints": [
+    {
+      "point": "RTM 在不改变 Structured Streaming 使用方式的前提下，重点补齐了毫秒级延迟能力。",
+      "explanation": "文章强调 RTM 是架构能力扩展而非新产品线，团队可沿用现有 Spark API 服务更低延迟场景。"
+    },
+    {
+      "point": "Spark 与 Flink 的传统选型分界来自吞吐与延迟权衡，RTM 试图缩小这条分界线。",
+      "explanation": "过去常见模式是 Spark 负责高吞吐 ETL、Flink 负责低延迟；RTM 的定位是降低这种双栈割裂。"
+    },
+    {
+      "point": "微批架构仍然是 Spark 的吞吐核心优势，关键在于批量摊薄开销与资源利用率。",
+      "explanation": "文中提到向量化执行、并行任务和动态槽位分配等机制，说明 Spark 在规模化处理上的效率基础。"
+    },
+    {
+      "point": "从平台治理视角看，单引擎策略有助于降低工程组织的认知与运维复杂度。",
+      "explanation": "若一套引擎可同时覆盖两类负载，团队可减少系统碎片化，简化维护与协作成本。"
+    }
+  ],
+  "keyQuotes": [
+    "With the launch of real-time mode (RTM) in Apache Spark 4.1， Structured Streaming now delivers millisecond-level latency.",
+    "With the introduction of RTM， Apache Spark can now handle both high throughput and ultra low-latency use cases.",
+    "Structured Streaming excels in high-throughput processing because of this microbatch architecture: since multiple records are processed together， the fixed overheads are amortized and vectorized execution can further improve throughput."
+  ],
+  "tags": [
+    "Apache Spark",
+    "Structured Streaming",
+    "实时模式",
+    "流处理",
+    "微批"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 313,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773673200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-16 15:00:00"
+}

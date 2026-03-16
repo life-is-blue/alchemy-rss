@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-16 20:12:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-16 22:26:08 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -606,6 +606,14 @@
 
 
 
+### [百倍性能提升、RPO=0：小红书亿级-MySQL-内核关键改造实践](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247635028&idx=1&sn=6ca869d1bb8fdb75f36c9ffcda015189)
+
+2026-03-15 23:16:00 | 标签: MySQL 内核, RedSQL, 数据库性能, RPO=0, Binlog Server
+
+> 本文是一篇高质量数据库内核实践复盘，围绕大规模业务场景下 MySQL 的瓶颈问题给出成体系的内核级解决方案。作者重点介绍了三条主线：通过合并秒杀重构事务与锁路径以提升热点行写入能力；通过自研 Binlog Server + ORC 构建自动补数链路实现核心场景 RPO=0；通过元数据与物理存储解耦实现秒级加列。文章不仅有目标指标和收益结果，还解释了关键技术难点与兼容性策略（如 binlog 格式保持、业务 SQL 无改动、可回退）。整体兼具深度、可借鉴性和工程完整性，是典型的生产级数据库优化实践。
+
+
+
 ### [Symfony-7.4-中的-Passkeys：如何构建一个完全无密码的未来](https://hackernoon.com/passkeys-in-symfony-74-how-to-build-a-completely-passwordless-future?source=rss)
 
 2026-03-13 16:00:05
@@ -714,13 +722,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2214,13 +2222,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3924,13 +3932,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
