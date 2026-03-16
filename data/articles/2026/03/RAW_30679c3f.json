@@ -1,0 +1,53 @@
+{
+  "id": "RAW_30679c3f",
+  "title": "什么是 Agentic Engineering？",
+  "url": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/#atom-everything",
+  "date": "2026-03-15 22:41:57",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <p style=\"margin-bottom: 1em\"><a href=\"https://simonwillison.net/guides/\">Guides</a> &gt; <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a></p>\n  <div class=\"note\" data-permalink-context=\"/guides/agentic-engineering-patterns/what-is-agentic-engineering/\">\n   <p>I use the term <strong>agentic engineering</strong> to describe the practice of developing software with the assistance of coding agents.</p>\n   <p>What are <strong>coding agents</strong>? They're agents that can both write and execute code. Popular examples include <a href=\"https://code.claude.com/\">Claude Code</a>, <a href=\"https://openai.com/codex/\">OpenAI Codex</a>, and <a href=\"https://geminicli.com/\">Gemini CLI</a>.</p>\n   <p>What's an <strong>agent</strong>? Clearly defining that term is a challenge that has frustrated AI researchers since <a href=\"https://simonwillison.net/2024/Oct/12/michael-wooldridge/\">at least the 1990s</a> but the definition I've come to accept, at least in the field of Large Language Models (LLMs) like GPT-5 and Gemini and Claude, is this one:</p>\n   <p></p>\n   <center>\n    <strong>Agents run tools in a loop to achieve a goal</strong>\n   </center>\n   <p></p>\n   <p>You prompt the coding agent to define a goal. The agent then generates and executes code in a loop until that goal has been met.</p>\n   <p>Code execution is the defining capability that makes agentic engineering possible. Without the ability to directly run the code, anything output by an LLM is of limited value. With code execution, these agents can start iterating towards software that demonstrably works.</p>\n   <h2 id=\"agentic-engineering\">Agentic engineering</h2>\n   <p>Now that we have software that can write working code, what is there left for us humans to do?</p>\n   <p>The answer is <em>so much stuff</em>.</p>\n   <p>Writing code has never been the sole activity of a software engineer. The craft has always been figuring out <em>what</em> code to write. Any given software problem has dozens of potential solutions, each with their own tradeoffs. Our job is to navigate those options and find the ones that are the best fit for our unique set of circumstances and requirements.</p>\n   <p>Getting great results out of coding agents is a deep subject in its own right, especially now as the field continues to evolve at a bewildering rate.</p>\n   <p>We need to provide our coding agents with the tools they need to solve our problems, specify those problems in the right level of detail, and verify and iterate on the results until we are confident they address our problems in a robust and credible way.</p>\n   <p>LLMs don't learn from their past mistakes, but coding agents can, provided we deliberately update our instructions and tool harnesses to account for what we learn along the way.</p>\n   <p>Used effectively, coding agents can help us be much more ambitious with the projects we take on. Agentic engineering should help us produce more, better quality code that solves more impactful problems.</p>\n   <h2 id=\"about-this-guide\">About this guide</h2>\n   <p>Just like the field it attempts to cover, <em>Agentic Engineering Patterns</em> is very much a work in progress. My goal is to identify and describe patterns for working with these tools that demonstrably get results, and that are unlikely to become outdated as the tools advance.</p>\n   <p>I'll continue adding more chapters as new techniques emerge. No chapter should be considered finished. I'll be updating existing chapters as our understanding of these patterns evolves.</p>\n  </div>\n  <div style=\"margin-top: 2em; display: flex; justify-content: space-between;\">\n   <div>\n    <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/\">Writing code is cheap now</a> →\n   </div>\n  </div>\n  <p class=\"edit-page-link\" data-admin-url=\"/admin/guides/chapter/14/\" style=\"display: none;\"></p>\n </body>\n</html>",
+  "aiSummary": "文章将 agentic engineering 定义为“编码代理围绕目标进行工具循环”，并说明在人机协作开发中，人类判断仍是核心。",
+  "oneSentenceSummary": "文章将 agentic engineering 定义为“编码代理围绕目标进行工具循环”，并说明在人机协作开发中，人类判断仍是核心。",
+  "summary": "这篇指南把「agentic engineering」界定为一种开发实践：编码代理围绕用户目标持续生成并执行代码，通过循环迭代逼近可验证结果。文章的关键价值在于提出了面向软件工作的实用定义：代理的本质不是一次性产出代码，而是“可执行 + 可反馈”的工具循环。作者同时强调，工程师的职责并未消失，而是更集中在问题定义、方案取舍、工具链设计与结果验收上。虽然这是导论章节，缺少深入实验对比，但为团队落地编码代理提供了清晰的方法框架。",
+  "mainPoints": [
+    {
+      "point": "Agentic engineering 的核心是可执行的工具循环，而非一次性代码生成。",
+      "explanation": "文章指出，只有把代码运行起来并根据结果迭代，编码代理才真正具备工程价值。"
+    },
+    {
+      "point": "人的价值从“写代码”转向“定义问题与评估取舍”。",
+      "explanation": "工程师仍需设定目标、约束条件，并在多种实现路径中做出符合场景的决策。"
+    },
+    {
+      "point": "指令与工具基座的持续优化决定代理效果上限。",
+      "explanation": "团队需要根据失败样本不断调整提示词、工具配置与验证流程，才能稳定提升产出质量。"
+    }
+  ],
+  "keyQuotes": [
+    "Agents run tools in a loop to achieve a goal",
+    "Code execution is the defining capability that makes agentic engineering possible.",
+    "Writing code has never been the sole activity of a software engineer."
+  ],
+  "tags": [
+    "Agentic Engineering",
+    "编码代理",
+    "工具循环",
+    "LLM 工作流",
+    "人机协作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 473,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773614517000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-15 22:41:57"
+}
