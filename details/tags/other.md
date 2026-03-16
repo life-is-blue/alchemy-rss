@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-16 14:27:43 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-16 16:19:20 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11485,9 +11485,7 @@
 
 ### [Java-一周动态：JHipster-9.0、Valhalla、Spring、Helidon、OpenXava-与-Java-Operator-SDK](https://www.infoq.com/news/2026/03/java-news-roundup-mar09-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-16 02:30:00 | 标签: Java 生态, JDK, Spring Framework, JHipster, Helidon
-
-> 这篇周报型文章为 Java 团队提供了结构化的版本情报，覆盖语言与工具链演进（JDK 26/27、Valhalla）、应用框架更新（Spring、Helidon）、平台工程工具（JHipster、Open Liberty）、可观测性组件（Micrometer）以及 Kubernetes 运维框架（Java Operator SDK）。其核心价值在于「广度 + 可执行细节」：版本号、变更点与官方链接齐全，便于工程团队快速评估升级影响和排期优先级。作为生态策展内容，它在时效性和工程实用性上表现突出，但对性能收益、迁移成本和方案优劣的深度对比相对有限。
+2026-03-16 02:30:00
 
 
 
@@ -30127,11 +30125,11 @@
 
 
 
-### [Notion-CEO：不能被-Agent-用的产品没有未来](https://baoyu.io/blog/2026-02-19/notion-ceo-agent-future)
+### [OpenAI-应用-CTO-和-Codex-负责人：AI-正在重塑构建软件的方式](https://baoyu.io/blog/2026-02-21/the-pragmatic-summit-inside-openai)
 
-2026-02-19T00:00:00.000Z
+2026-02-21T00:00:00.000Z
 
-> Notion CEO Ivan Zhao 在 Access Podcast 中分享了他用 Agent 接管邮件的经历、雇佣 16 岁工程师的故事，以及 Notion 从卖工具转向卖工作、做 AI 模型中立的瑞士的战略转型。
+> OpenAI 应用 CTO 和 Codex 工程负责人在 The Pragmatic Summit 上透露了内部真实工作状态：Codex 从工具进化成了队友，工程师合上笔记本去开会回来活已干完，设计师写的代码比半年前的工程师还多，一个 PM 靠 AI 变成了 50 倍效率的项目经理。
 
 
 
