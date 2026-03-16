@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-16 22:26:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-17 00:21:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11485,9 +11485,7 @@
 
 ### [打破微批边界：Apache-Spark-实时模式的架构演进](https://www.databricks.com/blog/breaking-microbatch-barrier-architecture-apache-spark-real-time-mode)
 
-2026-03-16 15:00:00 | 标签: Apache Spark, Structured Streaming, 实时模式, 流处理, 微批
-
-> 文章围绕 Apache Spark Structured Streaming 的 Real-Time Mode（RTM）展开，核心是解决流处理领域长期存在的吞吐与延迟二选一问题。作者对比了传统微批模式在吞吐、资源利用和容错上的优势，以及 RTM 为超低延迟场景引入的非阻塞执行路径。其主要价值在于工程实践层面：团队可以继续使用熟悉的 Spark API，同时覆盖 ETL 级高吞吐与实时特征工程等低延迟需求，从而降低双引擎并存带来的系统复杂度和维护成本。
+2026-03-16 15:00:00
 
 
 
@@ -28125,9 +28123,7 @@
 
 ### [好多大厂-APP-文本链接不用主题色，其实是没招了](https://mp.weixin.qq.com/s?__biz=MzIyMjgzNDgzOQ==&mid=2247533008&idx=1&sn=661e639c6bc46501b12b22406ca5a70a)
 
-2026-03-16 00:20:00 | 标签: UI 设计, 可访问性, WCAG, 色彩对比度, 文本链接
-
-> 作者从多个常见 APP 的真实界面出发，讨论浅色主题在白底场景下用于文本链接时的可读性问题，并引入 WCAG 对比度标准作为判断基线。文章不仅解释了普通文本与大文本的最低门槛，还给出可直接复用的计算思路与在线工具入口，随后通过 Google、元宝、微信、今日头条等案例总结四类实践策略：调整色相、加深主题色、使用灰蓝替代、在高显著主题下使用亮蓝补位。整体内容兼具规范依据与设计取舍，实用性较强，适合产品设计和 UI 设计场景快速落地。
+2026-03-16 00:20:00
 
 
 
@@ -30141,11 +30137,11 @@
 
 
 
-### [Notion-CEO：不能被-Agent-用的产品没有未来](https://baoyu.io/blog/2026-02-19/notion-ceo-agent-future)
+### [OpenAI-应用-CTO-和-Codex-负责人：AI-正在重塑构建软件的方式](https://baoyu.io/blog/2026-02-21/the-pragmatic-summit-inside-openai)
 
-2026-02-19T00:00:00.000Z
+2026-02-21T00:00:00.000Z
 
-> Notion CEO Ivan Zhao 在 Access Podcast 中分享了他用 Agent 接管邮件的经历、雇佣 16 岁工程师的故事，以及 Notion 从卖工具转向卖工作、做 AI 模型中立的瑞士的战略转型。
+> OpenAI 应用 CTO 和 Codex 工程负责人在 The Pragmatic Summit 上透露了内部真实工作状态：Codex 从工具进化成了队友，工程师合上笔记本去开会回来活已干完，设计师写的代码比半年前的工程师还多，一个 PM 靠 AI 变成了 50 倍效率的项目经理。
 
 
 
