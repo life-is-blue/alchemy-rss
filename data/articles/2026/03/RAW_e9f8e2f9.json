@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e9f8e2f9",
+  "title": "本周 Spring 动态 - 2026 年 3 月 17 日",
+  "url": "https://spring.io/blog/2026/03/17/this-week-in-spring-march-17th-2026",
+  "date": "2026-03-17 00:00:00",
+  "author": "joshlong",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hi, Spring fans! Welcome to another rip-roaring installment of <em>This Week in Spring</em>, which I'm posting ahead of my keynote at the amazing JavaOne 2026 event here in sunny San Francisco, California!</p>\n  <ul>\n   <li>I love Piotr's latest post <a href=\"https://piotrminkowski.com/2026/03/16/local-ai-models-with-lm-studio-and-spring-ai/\">on using local AI models with LM Studio and Spring AI</a></li>\n   <li>Did you see the <a href=\"https://openjdk.org/jeps/8357464\">new enhanced local variable declaration</a> preview JEP?</li>\n   <li>An amazing interview with <a href=\"https://www.youtube.com/watch?v=FUFsul26rgA&amp;feature=youtu.be\">Spring Boot team legend Moritz Halbritter</a></li>\n   <li>Check out the new <a href=\"https://spring.io/projects/release-highlights\">Spring release highlights page!</a></li>\n   <li>Java 26 is here! <a href=\"https://bell-sw.com/blog/an-overview-of-jdk-26-features/\">Check out some of the amazing new features</a></li>\n   <li>Do you use IntelliJ IDEA? You might like the <a href=\"https://www.youtube.com/watch?v=Kourq_Lz03U\">new JetBrains IntelliJ IDEA documentary!</a> (I'm in it! But don't let that stop you from watching—it’s quite good!)</li>\n   <li>Have you registered for this AWS webinar <a href=\"https://aws-experience.com/emea/smb/e/f2e47/building-java-ai-agents-with-spring-ai\">on building Java AI agents with Spring AI?</a></li>\n   <li>Interesting! <a href=\"https://www.youtube.com/watch?v=bHF2F8XcmSs\">Building a clone of ChatGPT with Spring AI</a></li>\n   <li>And here's another nice video <a href=\"https://www.youtube.com/watch?v=XgN6o_rNXZk\">on building generative AI solutions with Spring AI</a></li>\n   <li>I like this: <a href=\"https://www.youtube.com/watch?v=ysVDdHXJwPw\">How to structure your Spring Boot application</a>. If you want a cheat code, check out Spring Modulith :-)</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "一份每周精选的 Spring 生态系统摘要，重点介绍 Java 26 发布、Spring AI 与本地模型的集成以及架构最佳实践。",
+  "oneSentenceSummary": "一份每周精选的 Spring 生态系统摘要，重点介绍 Java 26 发布、Spring AI 与本地模型的集成以及架构最佳实践。",
+  "summary": "本期《本周 Spring 动态》为 Java 和 Spring 开发者提供了一个资源中心。它汇总了关键更新，包括 Java 26 的发布、通过 LM Studio 和 Spring AI 集成本地 AI 模型的教程，以及在 AWS 上构建 AI 智能体的指南。该文章还包含以社区为中心的内容，例如对 Spring Boot 核心开发者的采访、一部关于 IntelliJ IDEA 的纪录片，以及使用 Spring Modulith 进行应用程序结构化设计的建议。",
+  "mainPoints": [
+    {
+      "point": "Spring 生态系统正在迅速发展，以支持本地和生成式 AI 的集成。",
+      "explanation": "LM Studio 和 Spring AI 教程的加入表明，Spring 正在转向赋能 Java 开发者，使其能够在本地利用 LLM 并构建复杂的 AI 智能体。"
+    },
+    {
+      "point": "Java 26 引入了新的语言特性，提升了开发者的生产力。",
+      "explanation": "该文章重点介绍了 JDK 26 的到来以及增强局部变量声明等特定 JEP，让社区了解最新的平台进展。"
+    },
+    {
+      "point": "现代 Spring 应用程序结构倾向于模块化和专业化工具。",
+      "explanation": "通过推荐 Spring Modulith 和特定的架构指南，作者强调了在 Spring Boot 时代可维护项目结构的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "Java 26 来了！快来看看一些令人惊叹的新特性吧。",
+    "如果你想要一个应用程序结构化设计的“作弊码”，那就去看看 Spring Modulith 吧。",
+    "欢迎阅读本周 Spring 动态的又一精彩篇章。"
+  ],
+  "tags": [
+    "Spring Framework",
+    "Java 26",
+    "Spring AI",
+    "Spring Boot",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 174,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773705600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-17 00:00:00"
+}

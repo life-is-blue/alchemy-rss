@@ -1,0 +1,63 @@
+{
+  "id": "RAW_2ff83f92",
+  "title": "QCon 伦敦 2026：Booking.com AI 演进的幕后故事：未经雕琢的真实历程",
+  "url": "https://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-17 05:20:00",
+  "author": "Michael Redlich",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://qconlondon.com/speakers/jabezeliezer\">Jabez Eliezer Manuel</a>, Senior Principal Engineer at Booking.com, presented <a href=\"https://qconlondon.com/presentation/mar2026/behind-bookingcoms-ai-evolution-unpolished-story\">Behind Booking.com's AI Evolution: The Unpolished Story</a> at <a href=\"https://qconlondon.com/\">QCon London 2026</a>, where he discussed how Booking.com has evolved over the past 20 years and the challenges they faced on their journey to incorporate AI.</p>\n   <p>Paying tribute to the 20th edition of <a href=\"https://qconlondon.com/\">QCon London</a>, Manuel kicked off his presentation with a look at technology from 2005. In particular: the Motorola Razr V3 was a popular cell phone; Web 2.0 had started to emerge; and Booking.com was nine years old.</p>\n   <p>In February 2005, Booking.com started their initial set of <a href=\"https://www.nngroup.com/articles/ab-testing/\">A/B testing</a> experiments for which they had more than 1000 experiments in parallel and 150,000 total experiments. However, they observed a less than 25% success rate. Manuel stated that the goal wasn't to be right; it was to learn fast. These experiments ultimately built their Data-Driven DNA.</p>\n   <p>Manuel's presentation covered three layers: Data Management, Machine Learning Engineering and Domain Intelligence</p>\n   <h4>Data Management</h4>\n   <p>Booking.com's original tech stack was built on Perl libraries and MySQL that offered asynchronous replication and commercial support. They had only one master database in 2005 that has grown into approximately 6800 database instances in 2020. Their MySQL setup is also unique because they don't have specialized hardware, stored procedures, Universal Disk Formats (UDFs), database views, and a cache layer.</p>\n   <p>Their \"secret sauce,\" as Manuel characterized it, consisted of smaller databases (with a 2TB limit) that fit in Non-Volatile Memory Express (NVMe) solid state drives. They observed point queries that were less than 350 microseconds.</p>\n   <p>This model was successful until their data grew too large. To remedy this, Booking.com added <a href=\"https://hadoop.apache.org/\">Apache Hadoop</a> for distributed storage and processing at scale. By 2011, they had two on-premise Hadoop clusters that each contained approximately 60,000 cores and 200 PB hard disk space.</p>\n   <p>Hadoop had powered their machine learning pipeline for many years until they discovered cracks in the system. From a machine learning scientist's perspective, these cracks included: noisy neighbors where one bad query clogged a cluster; no GPU support; and capacity issues that caused overloads and outages at peak times. By 2018, it was decided to sunset Hadoop, but the process to upgrade and migrate away from Hadoop took approximately seven years.</p>\n   <p>There were five phases in Booking.com's migration strategy:</p>\n   <ul>\n    <li>Map their entire ecosystem.</li>\n    <li>Analyze usage to reduce scope.</li>\n    <li>Apply the Google Search <a href=\"https://pi.math.cornell.edu/~mec/Winter2009/RalucaRemus/Lecture3/lecture3.html\">PageRank</a> algorithm.</li>\n    <li>Migrate in waves.</li>\n    <li>Phase out Hadoop.</li>\n   </ul>\n   <p>Manuel stated that the key to their success was a unified command center.</p>\n   <h4>Machine Learning Engineering</h4>\n   <p>The evolution of Booking.com's machine learning stack started with Perl libraries and MySQL in 2005 to agentic systems in 2025. In between, there was <a href=\"https://oozie.apache.org/\">Apache Oozie</a> with Python, <a href=\"https://spark.apache.org/\">Apache Spark</a> with MLlib, <a href=\"https://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/H2O.ai\">H2O.ai</a>, deep learning and GenAI.</p>\n   <p>Manuel maintained that 2015 was a pivotal year for Booking.com as they solved two core problems: realtime predictions using online inference at scale; and feature engineering for training and inference.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 349px;\" data-src=\"https://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/news/2026/03/booking-evolution-ai-manuel/en/resources/1infoq-booking-ml-inference-platform-1773724728270.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/booking-evolution-ai-manuel/en/resources/1infoq-booking-ml-inference-platform-1773724728270.jpg\" rel=\"share\"></p>\n   <p>As of 2024, their current machine learning inference platform has more than 480 machine learning models, 400 billion predictions per day and a latency of less than 20 milliseconds.</p>\n   <h4>Domain Intelligence</h4>\n   <p>Manuel discussed four domain-specific machine learning platforms and their respective use cases. The first three are: <strong>GenAI</strong> with use cases that include trip planning, smart filters and review summaries; <strong>Content Intelligence</strong>, a machine learning content hub for image and review analyses and text generation, includes use cases such as detailed content for hotels; and <strong>Recommendations</strong> with use cases for displaying personalized content for their customers.</p>\n   <p><strong>Ranking</strong>, the fourth domain-specific machine learning platform for personalized real-time ordering, was a more complex task. Booking.com's three-way optimization challenge included: choice and value; exposure and growth; and efficiency and revenue.</p>\n   <p>Their 2005 ranking formula was simply a function that included parameters such as bookings and the number of views plus a random number function. They tried to evolve their formula with factors such as cancelations, distance-based ranking, room availability and hotel impressions. As they attempted to replace the ranking formula with machine learning, it was discovered that their formula was \"undefeatable,\" as characterized by Manuel, due to infrastructure limitations.</p>\n   <p>Their experiments typically ran for two to four weeks, but they looked for improvement. They adapted their A/B testing experiments to include a technique of interleaving where 50% of each set of experiments were essentially interwoven into a single experiment. This allowed for more variants with less traffic. So it was decided to preselect with interleaving and validate with A/B testing.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 330px;\" data-src=\"https://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/news/2026/03/booking-evolution-ai-manuel/en/resources/1infoq-booking-whats-brewing-1773724728270.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/booking-evolution-ai-manuel/en/resources/1infoq-booking-whats-brewing-1773724728270.jpg\" rel=\"share\"></p>\n   <p>Manuel concluded his presentation with how the domain-specific platforms are now unified for their orchestration layer.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Behind Booking.com's AI Evolution: The Unpolished Story\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Michael Redlich\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/booking-evolution-ai-manuel/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773724800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "回顾 Booking.com 20 年来的演进历程，从简单的 Perl 脚本发展成为一个庞大的 AI 生态系统，每天处理 4000 亿次预测，延迟低于 20 毫秒。",
+  "oneSentenceSummary": "回顾 Booking.com 20 年来的演进历程，从简单的 Perl 脚本发展成为一个庞大的 AI 生态系统，每天处理 4000 亿次预测，延迟低于 20 毫秒。",
+  "summary": "本文记录了 Booking.com 二十年来在技术方面的探索历程，详细阐述了从 2005 年的单个 MySQL 主库到 2025 年的复杂 AI 驱动平台的转变。文章探讨了三个关键层面：数据管理，他们在此优化了 NVMe 上的 MySQL，实现了微秒级延迟，并最终在长达 7 年的努力中摆脱了 Hadoop；机器学习工程，该领域发展成为一个支持 480 多个模型的平台；以及领域智能，专注于 GenAI、推荐系统和复杂的排名挑战。一个主要亮点是他们的“交错（interleaving）”技术，该技术通过在进行全面 A/B 测试之前预选变体，从而实现更快的实验。",
+  "mainPoints": [
+    {
+      "point": "Booking.com 的‘数据驱动 DNA’是通过大规模并行 A/B 测试形成的。",
+      "explanation": "通过并行运行 1000 多个实验，成功率低于 25%，该公司优先考虑快速学习而非‘正确’，从而建立了一种由数据决定产品演进的文化。"
+    },
+    {
+      "point": "独特的无缓存 MySQL 架构为海量数据集实现了超低延迟。",
+      "explanation": "通过将数据库大小限制在 2TB，并利用 NVMe SSD，不使用传统的缓存层或存储过程，他们在 6800 个实例上实现了低于 350 微秒的点查询。"
+    },
+    {
+      "point": "从 Hadoop 迁移是一项战略性的、历时多年的工作，是系统出现‘裂缝’后的必然选择。",
+      "explanation": "‘吵闹的邻居’（noisy neighbors）和缺乏 GPU 支持等问题导致了长达 7 年的淘汰过程，其中包括基于 PageRank 的依赖映射和分波次迁移到现代技术栈。"
+    },
+    {
+      "point": "ML 推理平台每天可扩展到 4000 亿次预测，效率极高。",
+      "explanation": "当前的基础设施支持近 500 个模型，延迟低于 20 毫秒，这表明其实时在线推理能力已趋于成熟。"
+    },
+    {
+      "point": "交错技术优化了复杂排名算法的实验周期。",
+      "explanation": "为了克服替换传统公式的困难，他们使用交错技术将实验变体混合成一个单一流，从而在比传统 A/B 测试更少的流量下实现更快的预选。"
+    }
+  ],
+  "keyQuotes": [
+    "目标不是要正确；而是要快速学习。",
+    "他们的 MySQL 设置也很独特，因为他们没有专用硬件、存储过程、通用磁盘格式（UDF）、数据库视图和缓存层。",
+    "Hadoop 多年来一直为他们的机器学习管道提供支持，直到他们发现了系统中的裂缝。",
+    "人们发现他们的公式是‘不可战胜的’……由于基础设施的限制。",
+    "决定使用交错技术进行预选，并使用 A/B 测试进行验证。"
+  ],
+  "tags": [
+    "机器学习平台",
+    "基础设施演进",
+    "A/B 测试",
+    "数据工程",
+    "规模化"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 753,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773724800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-17 05:20:00"
+}

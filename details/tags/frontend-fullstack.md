@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-17 14:19:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-17 16:12:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -606,6 +606,14 @@
 
 
 
+### [【第-3671-期】面向数十亿行数据的虚拟滚动-——-HighTable-的核心技术解析](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278760&idx=1&sn=93f07b8a785063f053b723366b88dec7)
+
+2026-03-17 01:02:00 | 标签: 虚拟滚动, React, 性能优化, 大数据展示, 浏览器底层限制
+
+> 文章详细介绍了 HighTable 组件在处理海量数据（数十亿行）时采用的纵向滚动技术栈。核心挑战在于浏览器内存限制、DOM 渲染压力以及原生 HTML 元素的最大高度限制（如 Firefox 的 1700 万像素）。作者提出了五项关键技术：1. 懒加载数据帧，按需获取可见行；2. 表格切片，仅渲染视口内的 DOM 节点；3. 无限像素降采样，通过数学映射突破浏览器高度限制；4. 像素级精准滚动，利用“局部+全局”双模式逻辑补偿降采样带来的精度丢失；5. 两步随机访问，实现极端数据量下的键盘导航与编程式跳转。该方案完全基于原生 HTML 元素，无需 Canvas 渲染，兼顾了性能与可访问性。
+
+
+
 ### [百倍性能提升、RPO=0：小红书亿级-MySQL-内核关键改造实践](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247635028&idx=1&sn=6ca869d1bb8fdb75f36c9ffcda015189)
 
 2026-03-15 23:16:00
@@ -720,13 +728,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2220,13 +2228,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3930,13 +3938,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
