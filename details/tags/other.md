@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-18 04:09:15 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-18 06:09:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -30275,11 +30275,11 @@
 
 
 
-### [OpenAI-应用-CTO-和-Codex-负责人：AI-正在重塑构建软件的方式](https://baoyu.io/blog/2026-02-21/the-pragmatic-summit-inside-openai)
+### [OpenAI-Codex-产品负责人：代码不再由人类编写，但我们会有更多构建者（Builder）](https://baoyu.io/blog/2026-02-22/openai-codex-embiricos-interview)
 
-2026-02-21T00:00:00.000Z
+2026-02-22T00:00:00.000Z
 
-> OpenAI 应用 CTO 和 Codex 工程负责人在 The Pragmatic Summit 上透露了内部真实工作状态：Codex 从工具进化成了队友，工程师合上笔记本去开会回来活已干完，设计师写的代码比半年前的工程师还多，一个 PM 靠 AI 变成了 50 倍效率的项目经理。
+> OpenAI Codex 产品负责人 Alexander Embiricos 在 20VC 访谈中分享了 AI 编码的现状：OpenAI 内部大多数人已不再打开 IDE，Codex 增长 20 倍，但真正的瓶颈不是模型而是人类。他还谈了开放标准、Agent 市场终局和 SaaS 的未来。
 
 
 
