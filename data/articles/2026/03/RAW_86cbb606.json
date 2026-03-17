@@ -1,0 +1,55 @@
+{
+  "id": "RAW_86cbb606",
+  "title": "为什么 AI 没有让工作变得更轻松？",
+  "url": "https://calnewport.com/why-hasnt-ai-made-work-easier/",
+  "date": "2026-03-16 10:00:00",
+  "author": "Study Hacks",
+  "siteName": "Cal Newport",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I’ve been studying the intersection of digital technology and office work for quite some time. (I find it hard to believe that my book, <a href=\"https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692\">​<em>Deep Work</em>​</a>, just passed its ten-year anniversary!?) Here’s a pattern I’ve observed again and again:</p>\n  <ul class=\"wp-block-list\">\n   <li>A new technology promises to speed up some annoying aspects of our jobs.</li>\n   <li>Everyone gets excited about freeing up more time for deep work and leisure.</li>\n   <li>We end up <em>busier</em> than before without producing more of the high-value output that actually moves the needle.</li>\n  </ul>\n  <p>This happened with the front-office IT revolution, and email, and mobile computing, and once again with video-conferencing.</p>\n  <p>I’m now starting to fear that we’re beginning to encounter the same thing with AI as well.</p>\n  <p>My worries were stoked, in part, by a recent article in the <em>Wall Street Journal</em>, titled <a href=\"https://www.wsj.com/tech/ai/ai-isnt-lightening-workloads-its-making-them-more-intense-e417dd2c\">​“AI Isn’t Lightening Workloads. It’s Making Them More Intense.”​</a></p>\n  <p>The piece cites new research from the software company ActivTrak, which analyzed the digital activity of 164,000 workers across more than 1,000 employers. What makes the study notable is its methodology: it tracked individual AI users for 180 days before and after they began using these tools, providing clear insight into what changed. The results?</p>\n  <p>“ActivTrak found AI intensified activity across nearly every category: The time they spent on email, messaging and chat apps more than doubled, while their use of business-management tools, such as human-resources or accounting software, rose 94%.“</p>\n  <p>The one category where activity was <em>not</em> intensified, however, was deep work:</p>\n  <p>“[T]he amount of time AI users devoted to focused, uninterrupted work—the kind of concentration often required for figuring out complex problems, writing formulas, creating and strategizing—fell 9%, compared with nearly no change for nonusers.”</p>\n  <p>This is a worst-case scenario: you work faster and harder, but mainly on shallow, mentally taxing tasks (because of all the context shifting they require) that only indirectly help the bottom line compared to harder efforts.</p>\n  <span id=\"more-16813\"></span>\n  <p>It’s not quite clear why AI tools are having this impact. One tantalizing clue, however, comes from Berkeley professor Aruna Ranganathan, who is quoted in the article saying: “AI makes additional tasks feel easy and accessible, creating a sense of momentum.”</p>\n  <p>This points toward a pattern similar to what happened when email first arrived. It was undeniably true that sending emails was more efficient than wrangling fax machines and voicemail. But once workers gained access to low-friction communication, they transformed their days into a furious flurry of back-and-forth messaging that felt “productive” in the <a href=\"https://www.amazon.com/Slow-Productivity-Accomplishment-Without-Burnout/dp/0593544854/\">​abstract, activity-centric sense​</a> of that term, but ultimately hurt almost every other aspect of their jobs and <a href=\"https://www.newyorker.com/tech/annals-of-technology/e-mail-is-making-us-miserable\">​made everyone miserable​</a>.</p>\n  <p>AI tools might be replicating this dynamic with small, self-contained tasks. Users are now furiously bouncing ideas back and forth with chatbots, iteratively refining text and generating drafts of memos and slide decks that are often <a href=\"https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity\">​too sloppy ​</a>to be useful. If they’re particularly tech savvy, perhaps they’re even monitoring the efforts of agent swarms deployed to parallelize such efforts even further. Once again, this all seems “productive” in the sense that these individual tasks appear to be happening faster, and activity seems intensified overall.</p>\n  <p>But are we sure we’re accelerating the right parts of our jobs?</p>\n  <hr class=\"wp-block-separator has-text-color has-global-color-8-color has-alpha-channel-opacity has-global-color-8-background-color has-background is-style-default\">\n  <h3 class=\"wp-block-heading\"><strong>I Need Your Help</strong></h3>\n  <p>I’m working on an article for a major publication about the move toward simple, high-friction, single-use technologies like the <a href=\"https://tincan.kids/\">​Tin Can phone​</a>. If you have a Tin Can phone/are on the waiting list, or have recently embraced similar retro technologies, and are willing to talk, please send me an email at <a href=\"mailto:podcast@calnewport.com\">​<strong>podcast@calnewport.com</strong>​</a>. I want to hear about your motivations and experience!</p>\n  <figure class=\"wp-block-image\">\n   <img fetchpriority=\"high\" decoding=\"async\" width=\"2400\" height=\"240\" src=\"https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo.png\" alt=\"\" class=\"wp-image-16815\" srcset=\"https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo.png 2400w, https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo-300x30.png 300w, https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo-1024x102.png 1024w, https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo-768x77.png 768w, https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo-1536x154.png 1536w, https://calnewport.com/wp-content/uploads/2026/03/pqwRyXLTHodBmNohEhe4Yo-2048x205.png 2048w\" sizes=\"(max-width: 2400px) 100vw, 2400px\">\n  </figure>\n  <h3 class=\"wp-block-heading\"><strong>AI Reality Check</strong>: Is Claude Conscious?</h3>\n  <p>If you were following AI news last week, you might have noticed a barrage of concerning headlines about Anthropic’s Claude LLM, including:</p>\n  <ul class=\"wp-block-list\">\n   <li><a href=\"https://futurism.com/artificial-intelligence/anthropic-ceo-unsure-claude-conscious\">​“Anthropic CEO Says Company No Longer Sure Whether Claude is Conscious.”​</a></li>\n   <li><a href=\"https://www.newsnationnow.com/jesse-weber-live/claude-ai-consciousness/\">​“Is AI Assistant Claude Conscious – and Suffering from Anxiety?”​</a></li>\n   <li><a href=\"https://www.ndtv.com/world-news/is-claude-conscious-anthropic-ceo-dario-amodei-says-possibility-cant-be-ruled-out-11175771\">​“Is Claude Conscious? Anthropic CEO Says Possibility Can’t Be Ruled Out”​</a></li>\n  </ul>\n  <p><em>Here’s what happened.</em> Anthropic infamously puts outlandish warnings and observations in their release notes for their new models because, I suppose, they think it makes them look more safety-aware and responsible (e.g., their classic <a href=\"https://www.aipanic.news/p/ai-blackmail-fact-checking-a-misleading\">​AI blackmail farce​</a>).</p>\n  <p>True to form, in the notes accompanying the recent release of Opus 4.6, they wrote that the model <strong>“expresses occasional discomfort with the experience of being a product</strong>” and would <strong>“assign itself a 15 to 20 percent probability of being conscious under a variety of prompting circumstances.”</strong></p>\n  <p>That last part is key. With the right prompts, you can induce an LLM to describe itself as anything you want. Remember: the goal of LLMs is to complete whatever story they’re provided as input. If you wind a model up – even subtly – to write a story from the perspective of being a conscious AI, it will oblige.</p>\n  <p>Anyway, in <a href=\"https://www.nytimes.com/2026/02/12/opinion/artificial-intelligence-anthropic-amodei.html\">​a recent interview​</a>, Ross Douthat asked Anthropic CEO Dario Amodei about this particular release note. Amodei answered, in part, by saying:</p>\n  <p>“We don’t know if the models are conscious. We are not even sure that we know what it would mean for a model to be conscious or whether a model can be conscious. But we’re open to the idea that it could be.”</p>\n  <p>Of course, you could say the same thing about a vacuum cleaner. It’s a non-answer containing no actual information or testable claims. But, the internet being the internet, ran with it. <em>Sigh.</em></p>\n </body>\n</html>",
+  "aiSummary": "Cal Newport 认为 AI 目前正在重蹈“邮件陷阱”的覆辙，它以牺牲深度工作为代价，加剧了浅层、低摩擦任务，同时驳斥了关于 AI 意识的耸人听闻的说法。",
+  "oneSentenceSummary": "Cal Newport 认为 AI 目前正在重蹈“邮件陷阱”的覆辙，它以牺牲深度工作为代价，加剧了浅层、低摩擦任务，同时驳斥了关于 AI 意识的耸人听闻的说法。",
+  "summary": "在这篇文章中，Cal Newport 探讨了 AI 对职场生产力产生的矛盾影响。他引用了一项针对 164，000 名员工的研究，指出虽然 AI 工具增加了消息传递和行政任务的活动量，但却导致“深度工作”减少了 9%。Newport 认为，AI 的低摩擦特性鼓励了一种类似于电子邮件早期阶段的“狂热的浅层活动”，这让人感觉富有成效，但往往导致“工作敷衍”。此外，文章还对 AI 意识进行了现实审视，解释说 LLM 是基于提示和发布说明叙事来模拟感知能力，而非真正的意识。",
+  "mainPoints": [
+    {
+      "point": "AI 正在加剧浅层工作，同时侵蚀深度工作的时间。",
+      "explanation": "数据显示，AI 用户在沟通和管理工具上花费的时间显著增加，但与非用户相比，专注、不间断的工作时间下降了 9%。"
+    },
+    {
+      "point": "AI 的“低摩擦”特性通过惯性制造了虚假的生产力感。",
+      "explanation": "因为 AI 让任务感觉轻松，员工会快速、迭代地生成草稿和备忘录，但这些内容往往质量过低，无法真正发挥作用，这与电子邮件的历史陷阱如出一辙。"
+    },
+    {
+      "point": "关于 AI 意识的说法是提示工程和企业叙事的副产品。",
+      "explanation": "LLM 的设计目标是完成其被提供的叙事；如果被提示或设定为表现出意识，它们就会模拟这种行为，这常常被公众和媒体误解为真正的感知能力。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 加剧了几乎所有类别的活动……然而，唯一没有加剧活动的类别是深度工作。",
+    "AI 让额外的任务感觉轻松易行，从而产生一种惯性。",
+    "用户现在正狂热地与聊天机器人来回交流想法，迭代地修改文本，并生成备忘录和幻灯片草稿，但这些内容往往过于敷衍，无法发挥作用。",
+    "LLM 的目标是完成它们作为输入所获得的任何故事。如果你启动一个模型……让它从一个有意识的 AI 的角度写一个故事，它就会照办。",
+    "我们最终比以前更忙碌，却没有产生更多真正推动进展的高价值产出。"
+  ],
+  "tags": [
+    "深度工作",
+    "AI 生产力",
+    "知识工作",
+    "LLM 意识",
+    "职场趋势"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 893,
+  "domain": "calnewport.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PG_LEARNING",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_fa543650",
+  "sourceName": "Cal Newport",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773655200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 10:00:00"
+}

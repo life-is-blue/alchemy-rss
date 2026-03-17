@@ -1,0 +1,58 @@
+{
+  "id": "RAW_251effb2",
+  "title": "软件的“苦涩教训” — LessWrong",
+  "url": "https://www.lesswrong.com/posts/qfAznbsRAPjyb7ami/the-bitter-lesson-for-software",
+  "date": "2026-03-16 23:38:41",
+  "author": "zef",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <img src=\"https://image.jido.dev/20260317023703_d9bed20.jpeg\" alt=\"\">\n    <h2 id=\"Software_is_made_of_information_flows\"><b><span>Software is made of information flows</span></b></h2>\n    <p id=\"block0\"><span>Software encodes information flows. An ERP system, for instance, takes procurement and locks it into a specific sequence of purchase orders, approval routing, invoice matching, and payment release. Git takes multiple people changing code and imposes a protocol of branching, diffing, reviewing, and merging. By codifying these information flows, software says how things should happen; it makes patterns repeatable and enforceable by expressing them in deterministic code.</span></p>\n    <p id=\"block1\"><span>Software took over the world because we learned to express useful actions into information flows, and then to express these information flows into deterministic code. The actions we could express this way were, by definition, within the space of consistent logical operations on rigid data structures.</span></p>\n    <p id=\"block2\"><span>Agents, too, encode information flows. And while they do so through the same infrastructure of software — that is, code — they are able to create information flows that are far more flexible. For one, they’re able to execute on more open-ended commands. But perhaps more importantly, agents work with the natural complexity of real-world tasks, rather than requiring that complexity be compressed into rigid data structures first. They do this by drawing on both system-specific information and the generalized knowledge they’ve absorbed through pre-training.</span></p>\n    <p id=\"block3\"><span>Further, as instances of software, they benefit from its useful properties — rerunnability, testability, and scalability. The potential for AI to replace human work hinges on this increasing flexibility as well as the practical advantages that come with being software.</span></p>\n    <p id=\"block4\"><b id=\"But_before_the_competition_between_AIs_and_humans_plays_out__we_argue_that_agents_first_compete_with_the_deterministic_structures_humans_have_encoded_in_software_\"><span>But before the competition between AIs and humans plays out, we argue that agents first compete with the deterministic structures humans have encoded in software.</span></b></p>\n    <h2 id=\"Agent_software_eats_classical_software\"><b><span>Agent software eats classical software</span></b></h2>\n    <p id=\"block5\"><span>The existence of general reasoners pushes us towards replacing structured flows in our software stack with more general agent flows. The space of classical software it makes sense to build is shrinking. More and more software will be better described as </span><b><span>agent software</span></b><span> - infrastructural backbone in code calling various arrangements of agents in pre-defined or newly synthesized flows.</span></p>\n    <p id=\"block6\"><span>Repeatable and easy-to-measure components like infrastructure, systems, low-level transports, etc. will remain in code, albeit code probably optimized by models. When the user edits a collaborative document, there’s no need for an intelligent intermediary to save their changes to the server. But for higher-level tasks, agent software will overtake classical software by virtue of its greater generality.</span></p>\n    <p id=\"block7\"><span>Agent software will eat the well-defined world of pre-AI software and spit it out softer. This softening will change how we answer questions. To be more concrete, consider the following examples:</span></p>\n    <p id=\"block8\"><span>- </span><b><span>Research-grade web scraping.</span></b><span> We could produce standard, reproducible social-science analysis pipelines. Such a pipeline would be fed a prompt for the kind of data agents should scrape, how that data should get coded, and output a pre-defined analysis. When put in an agent-software script, the pipeline could also be reused and adapted to a variety of contexts, like systematic reviews or interview thematic coding.</span></p>\n    <p id=\"block9\"><span>- </span><b><span>Full-coverage feature testing.</span></b><span> Instead of a static test suite, we could place agents into a testing pipeline that varies with the feature being pushed. Such agents would trace the happy path and, if necessary, test against new edge cases each time a feature gets pushed. Since the whole thing runs in a standard CI environment, it can be rerun on every push like any other build step.</span></p>\n    <p id=\"block10\"><span>In machine learning, the bitter lesson says that general methods which scale with computation reliably beat methods which encode human knowledge as structure. Every attempt to hand-craft domain expertise into a system — chess heuristics, grammar rules, hand-engineered features — eventually lost to a simpler, more general method given enough compute.</span></p>\n    <p id=\"block11\"><span>With the improving capabilities of coding agents, the bitter lesson is now impressing itself onto the world of software itself. The rigid schemas, fixed integrations, and deterministic pipelines that defined classical software are a form of encoded structure, and agents are coming for them too.</span></p>\n    <p id=\"block12\"><span>Agent capabilities today require a shift in how we think about building software. Instead of asking what structure a system needs, we should be asking where we’ve been forcing structure just because code demanded it. The boundaries between what needs to be rigid and what can be flexible, what is and isn’t possible, have moved. And they will keep moving.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章认为，AI 智能体正在用灵活的信息流取代确定性、僵化的软件结构，将机器学习的“苦涩教训”应用于整个软件栈。",
+  "oneSentenceSummary": "文章认为，AI 智能体正在用灵活的信息流取代确定性、僵化的软件结构，将机器学习的“苦涩教训”应用于整个软件栈。",
+  "summary": "作者认为，软件本质上是一种将信息流编码为确定性代码的方法。传统软件依赖僵化的数据结构和一致的逻辑操作，而 AI 智能体引入了一种“更柔和”、更灵活的方法，能够直接处理现实世界的复杂性，而无需先将其压缩成模式。这种转变导致了“智能体软件”的出现——一种混合架构，其中代码提供基础设施骨干，而智能体处理高层、综合性的信息流。借鉴 Rich Sutton 的“苦涩教训”，文章指出，通用的智能体方法在软件工程中将不可避免地超越手工制作的僵化管道，就像通用算法在 AI 研究中击败了手写启发式算法一样。",
+  "mainPoints": [
+    {
+      "point": "软件本质上是将信息流编码为确定性模式。",
+      "explanation": "像 ERP 或 Git 这样的传统软件，将复杂的人类流程锁定在可重复、可强制执行的逻辑操作序列中，作用于僵化的数据结构。"
+    },
+    {
+      "point": "AI 智能体代表着从僵化的确定性结构向灵活、通用推理流的转变。",
+      "explanation": "与传统软件不同，智能体可以直接执行开放式命令并处理自然复杂性，它们依赖预训练的知识而非预定义的模式。"
+    },
+    {
+      "point": "AI 的“苦涩教训”现在正被应用于更广泛的软件工程领域。",
+      "explanation": "正如通用方法在机器学习中击败了手工制作的启发式算法一样，通用的智能体流也开始超越传统软件中手工制作的集成和管道。"
+    },
+    {
+      "point": "未来的软件开发将侧重于“软化”先前僵化的系统边界。",
+      "explanation": "开发者不应再问系统需要何种结构，而应识别哪些结构仅仅是因为传统代码缺乏智能体的灵活性才被迫引入的。"
+    }
+  ],
+  "keyQuotes": [
+    "智能体软件将吞噬 AI 时代前定义明确的软件世界，并将其“软化”后吐出。",
+    "定义传统软件的僵化模式、固定集成和确定性管道是一种编码结构，智能体也将对其发起冲击。",
+    "我们不应再问系统需要何种结构，而应问我们是在哪里仅仅因为代码要求而被迫引入了结构。",
+    "任何试图将领域专业知识手工编码到系统中的尝试……最终都会在足够的计算资源面前，输给更简单、更通用的方法。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "软件架构",
+    "苦涩教训",
+    "智能体工作流",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 710,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773704321000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 23:38:41"
+}
