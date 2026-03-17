@@ -1,0 +1,59 @@
+{
+  "id": "RAW_b30943e7",
+  "title": "Google 开源 Common Expression Language 的 Python 实现",
+  "url": "https://www.infoq.com/news/2026/03/google-cel-expr-python/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-16 19:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google has open sourced <a href=\"https://opensource.googleblog.com/2026/03/announcing-cel-expr-python-the-common-expression-language-in-python-now-open-source.html\">CEL-expr-python, a Python implementation of the Common Expression Language (CEL)</a>, a non-Turing complete embedded policy and expression language designed for simplicity, speed, safety, and portability.</p>\n   <p>Google says that \"CEL has become a prevalent technology for applications like policy enforcement, data validation, and dynamic configuration\". This release provides an officially maintained implementation, making it easier to use CEL consistently across infrastructure and applications. As a result, Python developers now have a first-party CEL runtime instead of relying on community-supported libraries.</p>\n   <blockquote>\n    <p>The CEL team has chosen to develop CEL-expr-python by wrapping our official C++ implementation to ensure maximum consistency with CEL semantics while enabling Python users to extend and enrich the experience on top of this production-ready core in Python directly.</p>\n   </blockquote>\n   <p>Another advantage of wrapping the official C++ implementation is that any future improvements to the C++ core, including new features and optimizations, will automatically be inherited by CEL-expr-python.</p>\n   <p>The following snippet shows how you can initialize CEL-expr-python to evaluate an expression:</p>\n   <pre>\r\n<code class=\"language-python\">from cel_expr_python import cel\r\n\r\n# Define variables\r\ncel_env = cel.NewEnv(variables={\"who\": cel.Type.STRING})\r\nexpr = cel_env.compile(\"'Hello, ' + who + '!'\")\r\n\r\n# Evaluate and print the compiled expression\r\nprint(expr.eval(data={\"who\": \"World\"})))  // Hello, World!\r\n</code></pre>\n   <p>Commenting on Reddit, user <code>rabornkraken</code> noted that the ability to <a href=\"https://www.reddit.com/r/Python/comments/1rk8f3p/comment/o8isn2x/\">compile an expression and reuse it across requests is what makes CEL interesting</a>:</p>\n   <blockquote>\n    <p>I have been using ad-hoc AST evaluators for feature flags and they are painful to maintain - the expressions drift from what the runtime actually supports. Having a proper type-checked compile step would catch so many issues upfront.</p>\n   </blockquote>\n   <p><code>TristonianJones</code>, one of the project maintainers, <a href=\"https://www.reddit.com/r/Python/comments/1rk8f3p/comment/o8v1kdw/\">elaborated on scenarios where CEL really shines</a>:</p>\n   <blockquote>\n    <p>It's pretty good for embedding into a larger policy or configuration format and we have more extensive toolchains for policy authoring and composition in our github.com/google/cel-go repository, but the nice part is you could compile using the Go (or Java) toolchain and evaluate in Python pretty easily.</p>\n   </blockquote>\n   <p>The Common Expression Language was <a href=\"https://cel.dev\">designed by Google to be fast, portable, and safe</a> for evaluating conditions and rules, especially within high-performance applications like Kubernetes and Envoy. It uses C-like syntax and is \"compile-once, evaluate-many,\" making it perfect for embedding in systems requiring fast, secure, and flexible policy evaluation.</p>\n   <p>CEL is non-Turing complete, side-effect free, and guaranteed to terminate, which makes it ideal for safe embedded rule evaluation, including policy enforcement, data validation, dynamic configuration, and runtime rules from user input or config. It also provides very fast evaluation, \"from nanoseconds to microseconds\".</p>\n   <p>CEL-expr-python is <a href=\"https://github.com/cel-expr/cel-python\">available on GitHub</a>, and Google also provides a <a href=\"https://github.com/cel-expr/cel-python/blob/main/codelab/index.lab.md\">comprehensive tutorial via codelab</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Open-Sources the Common Expression Language for Python\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/google-cel-expr-python/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773687600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 已正式开源 Common Expression Language (CEL) 的 Python 实现，为策略执行和数据验证提供了一个快速、安全、可移植的工具。",
+  "oneSentenceSummary": "Google 已正式开源 Common Expression Language (CEL) 的 Python 实现，为策略执行和数据验证提供了一个快速、安全、可移植的工具。",
+  "summary": "Google 发布了 `cel-expr-python`，这是 Common Expression Language (CEL) 的官方 Python 实现。CEL 旨在实现简洁、快速和安全，是一种非图灵完备语言，广泛应用于 Kubernetes 和 Envoy 等基础设施中，用于策略执行和动态配置。这个 Python 版本封装了官方的 C++ 核心，以确保语义一致性和性能优势。它具有“一次编译，多次评估”的工作流，允许开发者在类型检查的编译阶段捕获错误，并在纳秒到微秒级别执行表达式，且无副作用。",
+  "mainPoints": [
+    {
+      "point": "Google 官方的 Python CEL 实现封装了 C++ 核心，以实现性能和一致性。",
+      "explanation": "通过利用 C++ 实现，该 Python 库确保了与其它 CEL 运行时最大的语义一致性，同时自动继承未来的核心优化。"
+    },
+    {
+      "point": "CEL 提供了一个安全、非图灵完备的表达式评估环境。",
+      "explanation": "因为它无副作用且保证终止，所以非常适合在高性能系统中评估不受信任的用户输入或复杂的配置。"
+    },
+    {
+      "point": "“一次编译，多次评估”模型提高了可靠性和速度。",
+      "explanation": "专门的编译步骤允许提前进行类型检查和验证，从而防止了经常困扰即席 AST 评估器或基于正则表达式的解决方案的运行时错误。"
+    },
+    {
+      "point": "跨语言可移植性实现了微服务间策略的一致性评估。",
+      "explanation": "策略可以使用 Go 或 Java 工具链编译，并在 Python 中评估，从而促进了多语言环境中的统一配置管理。"
+    }
+  ],
+  "keyQuotes": [
+    "CEL 已成为策略执行、数据验证和动态配置等应用中的一项流行技术。",
+    "CEL 团队选择通过封装我们官方的 C++ 实现来开发 CEL-expr-python，以确保与 CEL 语义的最大一致性。",
+    "CEL 是非图灵完备的、无副作用的，并保证终止，这使其成为安全嵌入式规则评估的理想选择。",
+    "拥有一个适当的类型检查编译步骤将能提前捕获大量问题。",
+    "妙处在于你可以使用 Go（或 Java）工具链进行编译，然后相当容易地在 Python 中进行评估。"
+  ],
+  "tags": [
+    "Google 开源",
+    "Common Expression Language",
+    "Python",
+    "策略执行",
+    "软件架构"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 423,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773687600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 19:00:00"
+}

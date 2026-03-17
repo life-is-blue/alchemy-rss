@@ -1,0 +1,57 @@
+{
+  "id": "RAW_930acb74",
+  "title": "Vibe Coding 是一种上瘾机制",
+  "url": "https://hackernoon.com/vibe-coding-is-an-addiction?source=rss",
+  "date": "2026-03-16 15:52:34",
+  "author": "Adil H",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>It's 11 PM on a Tuesday and you're four hours into building a web app that nobody asked for. You started with a vague idea after seeing someone's tweet about a gap in the market, opened Claude Code, described what you wanted in plain English, and watched a full-stack application materialize in front of you. The landing page looks clean. The auth works. There's a Stripe integration. You feel like you're building something real. You’re not.</p>\n  <p>What you're doing is chasing the most refined dopamine loop that software has ever produced.</p>\n  <p>\\</p>\n  <h2 id=\"theloop\">The loop</h2>\n  <p>The new generation of AI coding tools (Claude Code, Cursor, Replit, take your pick) have made it so trivially easy to go from idea to working prototype that the act of building has become its own reward. You speak into Wispr Flow, describe a feature in conversational English, and the code writes itself. You see a button appear on screen. You click it and it does the thing. Something in your brain lights up, the same something that lights up when you pull a slot machine and hear the coins drop.</p>\n  <p><img src=\"https://cdn.hackernoon.com/images/YfOBDzhprSOPFyuHZ8ilH0sWCJi2-0ag3908.png\" alt=\"The Vibe Coding Dopamine Loop\"></p>\n  <p>\\ The problem isn't that these tools are bad. They're genuinely remarkable, and learning to use them well is one of the highest-leverage skills you can develop right now. The problem is that the feedback loop is so tight and so satisfying that it becomes a substitute for the harder, slower, less dopaminergic work of figuring out whether what you're building actually matters.</p>\n  <p>I've done this to myself. I've spent entire weekends building personal agents, automation pipelines, side projects with beautiful dashboards and clever integrations. Some of them solved real problems I genuinely have (I built a whole <a href=\"https://wheredoimoveto.com/\">relocation decision support platform</a> because my wife and I were contemplating where we move after she graduates). Some of them solved problems that exist but that I never validated with anyone else. And some of them solved nothing at all, they were just excuses to keep the loop going. The tricky part is that all three feel exactly the same at 11 PM on a Saturday. The building felt productive. The output was real code, deployed to real infrastructure, doing real things. But I never stopped long enough to ask which category I was in, and by Monday morning, the answer was usually the third one.</p>\n  <p>\\</p>\n  <h2 id=\"theillusionofprogress\">The illusion of progress</h2>\n  <p><img src=\"https://cdn.hackernoon.com/images/YfOBDzhprSOPFyuHZ8ilH0sWCJi2-iai39ki.png\" alt=\"My actual career goals vs another side project at 1am\"></p>\n  <p>\\ Vibe coding looks and feels exactly like productive work. You're writing code (sort of). You're shipping features. You're learning new tools. You can show people a working demo. All the surface-level indicators of progress are there, and none of the substance.</p>\n  <p>If you're building a company, the substance is whether anyone will pay for what you're making. If you're building a personal tool, the substance is whether it saves you meaningful time on something you actually do repeatedly. If you're building for your career, the substance is whether the skill you're developing has durable value.</p>\n  <p>The market moves so fast now that the half-life of a side project is approaching zero. You might just be getting good at prompting a model that will be obsolete in 18 months. You can spend three weeks building an AI wrapper around some API, and by the time you're ready to show it to anyone, four YC companies have launched the same thing with better distribution and actual funding. The speed that makes vibe coding feel powerful is the same speed that makes your output disposable. Everyone has access to the same tools. The bottleneck was never the code.</p>\n  <p><img src=\"https://cdn.hackernoon.com/images/YfOBDzhprSOPFyuHZ8ilH0sWCJi2-yhk39ne.png\" alt=\"Me watching 4 YC companies launch my side project with actual funding\"></p>\n  <p>\\</p>\n  <h2 id=\"whentoletgo\">When to let go</h2>\n  <p>The hardest skill in this environment isn't building. Building is the easy part now (that's the whole point). The hard skill is knowing when to stop. Knowing when the project you started three weeks ago has taught you what it's going to teach you and the remaining work is just momentum, not intention. Knowing when you're spending Saturday on a side project because you have genuine conviction about it versus because opening your laptop and talking to an AI feels better than the ambiguity of not having a clear next move in your career.</p>\n  <p>This requires a kind of self-honesty that the tools actively work against. Every AI coding assistant is optimized to keep you building. That's the product. You describe something, it builds it, you feel good, you describe the next thing. There's no moment in that loop where Claude Code stops and asks you whether this is a good use of your finite time on earth. That reflection has to come from you, and it has to come regularly, not just when you burn out.</p>\n  <p>I've started asking myself a simple question before I open my terminal on a weekend: \"If I couldn't use AI tools for this, would I still think it was worth building?\" If the answer is no, that tells me the tool is the draw, not the outcome. And that's a signal to close the laptop and go outside.</p>\n  <p><img src=\"https://cdn.hackernoon.com/images/YfOBDzhprSOPFyuHZ8ilH0sWCJi2-bvl396u.png\" alt=\"Staying up to ship one more feature vs closing the laptop and going outside\"></p>\n  <p>\\</p>\n  <h2 id=\"thesecurityproblemnobodystalkingabout\">The security problem nobody's talking about</h2>\n  <p>There's a second dimension to this that's less personal and more structural. When everyone can build software, everyone builds software. And most of it is insecure.</p>\n  <p>The vibe coding wave has produced an explosion of personal agents, automation scripts, self-hosted tools, and weekend SaaS products that handle real data, make real API calls, store real credentials, and have been reviewed by exactly zero security-conscious humans. The person who built it asked an AI to \"add authentication\" and got something that looks like auth, passes the visual check, and might have three injection vectors that nobody will find until someone finds them.</p>\n  <p><img src=\"https://cdn.hackernoon.com/images/YfOBDzhprSOPFyuHZ8ilH0sWCJi2-qkm39kk.png\" alt=\"The code an AI wrote for my side project, handling auth and user data\"></p>\n  <p>\\ Platforms like OpenClaw are making it even easier to build and deploy personal agents that interact with your email, your calendar, your files, your banking APIs. The capability is genuinely exciting. The security posture of the average project built on these platforms is genuinely terrifying. Most people building personal agents have never thought about token storage, input sanitization, or what happens when your agent's context window gets poisoned by a malicious email it was asked to summarize.</p>\n  <p>This isn't a reason to stop building. But it's a reason to slow down enough to understand what your code is actually doing, even if (especially if) an AI wrote it for you. The dopamine loop doesn't reward security review. It rewards shipping the next feature.</p>\n  <p>\\</p>\n  <h2 id=\"touchgrass\">Touch grass</h2>\n  <p>I realize this entire post might sound hypocritical coming from someone who literally runs autonomous AI agents on a cron job. I build with these tools every day. I think they're transformative. I think everyone should learn to use them.</p>\n  <p>But I've also caught myself at 1 AM on a weeknight, bleary-eyed, debugging an agent pipeline that automates something I do once a month manually, and I've had to ask myself: what am I actually doing here? Am I solving a problem or am I feeding a compulsion? Is this making my life better or is it just making my GitHub contribution graph greener?</p>\n  <p>The tools are incredible. The feeling of building with them is genuinely addictive. And like any addiction, the fix is not abstinence, it's awareness. Know why you're building. Know when to stop. Know the difference between a project that serves your goals and a project that just serves the loop.</p>\n  <p>And occasionally, close the laptop, leave your phone inside, and go stand in your backyard for ten minutes. The code will still be there when you get back. Probably with fewer bugs than if you'd kept going at 1 AM anyway.</p>\n  <hr>\n  <p><em>I'm a Senior Manager at EY, getting back into writing. If you want to follow me, connect, or have a question to ask, feel free to&nbsp;<a href=\"https://www.linkedin.com/in/adilharis/\">reach out on LinkedIn</a>.</em></p>\n  <p>\\</p>\n </body>\n</html>",
+  "aiSummary": "本文认为，AI 编程工具制造了一种高度上瘾的反馈回路，让“不断发功能”看起来像进展，但很多时候你其实是在做错误的事，并把自己暴露在明显的安全风险中。",
+  "oneSentenceSummary": "本文认为，AI 编程工具制造了一种高度上瘾的反馈回路，让“不断发功能”看起来像进展，但很多时候你其实是在做错误的事，并把自己暴露在明显的安全风险中。",
+  "summary": "这篇文章是一篇针对“vibe coding”现象的犀利反思。作者的核心观点是，现代 AI 编程工具把原型开发加速到了一个极具快感的程度，以至于“持续构建”本身开始脱离真正的产品价值、职业价值和用户需求，变成了一种独立的奖励机制。作者把它描述为一种多巴胺循环：创业者和个人开发者不断往前做，是因为每完成一个功能都会获得强烈的“我在推进事情”的感觉，即使他们并没有验证市场、澄清目标，甚至没有确认这件事是否真的值得做。文章最有价值的部分，在于它没有把批评停留在个人效率层面，而是进一步指出这种循环会直接放大软件安全风险。因为 AI 生成的认证流程、自动化脚本和智能体工具，往往在“看起来已经能用”的那一刻就被部署出去，而根本没有经过真正懂安全的人审查。它不是一篇技术细节很重的文章，但对正在使用 Claude Code、Cursor、Replit 等工具的人来说，这是一篇既及时又有实践提醒价值的反思。作者给出的判断标准也很有效：如果没有 AI 工具，你根本不会觉得这件事值得做，那真正吸引你的可能不是结果，而是工具本身。",
+  "mainPoints": [
+    {
+      "point": "文章把 AI 辅助编程描述成一种强反馈的多巴胺循环，而不只是效率提升工具。",
+      "explanation": "从想法到可运行功能的闭环被压缩得太短，以至于“持续构建”本身会变成奖励，从而挤掉那些更难、但更重要的价值判断。"
+    },
+    {
+      "point": "作者认为，“进展幻觉”正在成为创业者和 side project 开发者面临的主要风险之一。",
+      "explanation": "文章反复强调，代码能跑起来并不等于这项工作有价值，速度提升带来的常常只是更容易被替代、被淘汰的产出。"
+    },
+    {
+      "point": "安全章节让这篇文章从个人反思上升到结构性批评。",
+      "explanation": "作者指出，大量 AI 生成项目已经在处理真实的凭证、数据和自动化流程，但开发者往往在任何严肃的安全审查发生前就把它们部署了出去。"
+    },
+    {
+      "point": "文章的价值来自对真实模式的准确识别，而不是正式研究。",
+      "explanation": "它主要基于经验观察，但对正在使用现代 AI 编程工具的实践者而言，这种判断既及时又非常有现实意义。"
+    }
+  ],
+  "keyQuotes": [
+    "你正在追逐的，是软件史上最精致的一种多巴胺循环。",
+    "真正的瓶颈从来都不是代码。",
+    "多巴胺循环不会奖励安全审查，它奖励的是把下一个功能赶快发出去。"
+  ],
+  "tags": [
+    "Vibe Coding",
+    "AI 编程工具",
+    "开发者心理",
+    "创业聚焦",
+    "软件安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 86,
+  "wordCount": 1291,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773676354000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 15:52:34"
+}

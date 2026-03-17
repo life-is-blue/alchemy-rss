@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a5051f5e",
+  "title": "DoorDash 构建 DashCLIP，利用 3200 万标签对齐图像、文本和查询，实现语义搜索",
+  "url": "https://www.infoq.com/news/2026/03/doordash-semantic-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-16 14:25:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>DoorDash has introduced <a href=\"https://careersatdoordash.com/blog/doordash-dashclip-multimodal-models-for-generating-semantic-embeddings/\">DashCLIP, a multimodal machine learning system designed to generate semantic embeddings</a> by aligning product images, text descriptions, and user queries in a shared representation space. The architecture aims to improve product discovery, ranking, and advertising relevance across the company’s Consumer Packaged Goods (CPG) marketplace. To train the system, DoorDash used approximately 32 million labeled query product pairs to align search queries with relevant catalog items.</p>\n   <p>DoorDash’s marketplace spans diverse categories, including groceries, retail goods, electronics, and pharmaceuticals. This variety challenges traditional search and recommendation systems that rely on structured metadata and historical engagement signals. These approaches often miss semantic relationships between product images, descriptions, and user intent. DashCLIP addresses this by learning multimodal representations that combine visual and textual product information with query context.</p>\n   <p>DashCLIP builds on contrastive learning approaches, such as CLIP (Contrastive Language-Image Pretraining). It uses separate encoders for product images, text descriptions, and user queries, each producing vector embeddings. During training, semantically related items are placed close together in the embedding space while unrelated items are pushed apart. The architecture combines unimodal encoders for images and text, a multimodal encoder integrating both signals, and a query encoder mapping search queries into the same space. This allows the system to match queries with products even when textual descriptions are incomplete or visual attributes are critical.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/doordash-semantic-search/news/2026/03/doordash-semantic-search/en/resources/1dashcliparchitecture-1772917553794.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/doordash-semantic-search/en/resources/1dashcliparchitecture-1772917553794.jpeg\" rel=\"share\"></p>\n   <p><em>DashCLIP architecture overview showing encoders and embedding alignment pipeline</em> (Source: <a href=\"https://careersatdoordash.com/blog/doordash-dashclip-multimodal-models-for-generating-semantic-embeddings/\">DoorDash Blog Post</a>)</p>\n   <p>DoorDash trained DashCLIP using a two-stage pipeline. The first stage performs continual pretraining on roughly 400,000 product images and title pairs from the catalog, adapting pretrained vision language models to the e-commerce domain and learning multimodal product representations. The second stage aligns user queries with product embeddings using a contrastive objective called Query Catalog Contrastive (QCC) loss, bringing relevant query product pairs closer while separating unrelated pairs. To support this, the team collected 700,000 human-annotated query product pairs and used a GPT-based labeling system to expand the dataset to around 32 million examples. This hybrid approach reduces bias from relying solely on historical engagement.</p>\n   <p>Once trained, embeddings are integrated into DoorDash’s ranking system. Query embeddings retrieve candidate products through K-nearest neighbor search, which are then scored by downstream ranking models that incorporate user behavior, contextual signals, and product popularity, enabling semantically relevant retrieval and ranking.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/doordash-semantic-search/news/2026/03/doordash-semantic-search/en/resources/1dashcliprankingmodel-1772917553794.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/doordash-semantic-search/en/resources/1dashcliprankingmodel-1772917553794.jpeg\" rel=\"share\"></p>\n   <p>Ranking pipeline (Source: <a href=\"https://careersatdoordash.com/blog/doordash-dashclip-multimodal-models-for-generating-semantic-embeddings/\">DoorDash Blog Post</a>)</p>\n   <p>Offline experiments showed that DashCLIP embeddings outperform baseline vision language models such as <a href=\"https://arxiv.org/pdf/2103.00020\">CLIP</a>, <a href=\"https://arxiv.org/abs/2201.12086\">BLIP</a>, and <a href=\"https://arxiv.org/abs/2112.04482\">FLAVA</a> in ranking and retrieval tasks. In online A/B experiments, the system improved engagement metrics and was subsequently deployed to serve production traffic for sponsored product recommendations.</p>\n   <p>Beyond advertising and ranking, DoorDash reports that the embeddings generalize to additional tasks, including aisle category prediction and product query relevance classification, noting that a shared multimodal embedding layer can serve as a foundational representation across multiple machine learning systems within the marketplace platform.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"DoorDash Builds DashCLIP to Align Images, Text, and Queries for Semantic Search Using 32M Labels\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/doordash-semantic-search/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773671100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "DoorDash 推出 DashCLIP，这是一个多模态嵌入系统，它利用对比学习和 3200 万标签对齐商品图片、文本和用户查询，以增强语义搜索和排名。",
+  "oneSentenceSummary": "DoorDash 推出 DashCLIP，这是一个多模态嵌入系统，它利用对比学习和 3200 万标签对齐商品图片、文本和用户查询，以增强语义搜索和排名。",
+  "summary": "DoorDash 开发了 DashCLIP，这是一种多模态机器学习架构，旨在弥合商品视觉信息、文本描述和用户意图之间的鸿沟。通过为不同模态使用独立的编码器和一个共享表示空间，该系统能够在传统元数据通常不足的多元化市场中实现更准确的语义搜索。该系统采用两阶段训练流程，涉及 3200 万个标注对（通过人工标注和基于 GPT 的扩展混合生成），并使用专门的查询目录对比（QCC）损失函数。生产部署已显示在用户参与度指标和赞助商品推荐方面有显著改进。",
+  "mainPoints": [
+    {
+      "point": "DashCLIP 将图像、文本和查询这三种不同模态对齐到一个单一的嵌入空间中。",
+      "explanation": "通过使用独立的编码器和多模态集成层，即使文本描述不佳，系统也能将用户查询与商品匹配，转而依赖视觉属性。"
+    },
+    {
+      "point": "该系统采用两阶段训练流程，并使用专门的 QCC 损失函数。",
+      "explanation": "第一阶段将视觉语言模型适应于电子商务领域，而第二阶段则使用查询目录对比损失函数，专门将用户搜索意图与商品表示对齐。"
+    },
+    {
+      "point": "DoorDash 采用混合人机标注方法，将其训练数据扩展到 3200 万个标签。",
+      "explanation": "团队从 70 万个人工标注对开始，利用基于 GPT 的系统扩展数据集，减少了仅依赖历史点击数据所固有的偏差。"
+    },
+    {
+      "point": "多模态嵌入作为多个下游 ML 任务的基础层。",
+      "explanation": "除了搜索之外，这些嵌入还用于货架类别预测和相关性分类，展示了共享表示在整个平台上的多功能性。"
+    }
+  ],
+  "keyQuotes": [
+    "DashCLIP 通过学习结合视觉和文本商品信息与查询上下文的多模态表示来解决这个问题。",
+    "该架构旨在改善公司消费品（CPG）市场中的商品发现、排名和广告相关性。",
+    "这种混合方法减少了仅依赖历史参与度所带来的偏差。",
+    "共享的多模态嵌入层可以作为市场平台内多个机器学习系统的基础表示。"
+  ],
+  "tags": [
+    "多模态 AI",
+    "语义搜索",
+    "CLIP",
+    "电子商务",
+    "对比学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 471,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773671100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 14:25:00"
+}

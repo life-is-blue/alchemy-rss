@@ -1,0 +1,53 @@
+{
+  "id": "RAW_75261150",
+  "title": "ONCE（卷土重来）",
+  "url": "https://world.hey.com/dhh/once-again-3e99f755",
+  "date": "2026-03-16 18:03:01",
+  "author": "David Heinemeier Hansson",
+  "siteName": "David Heinemeier Hansson",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"trix-content\">\n   <div>\n    The <a href=\"https://world.hey.com/dhh/campfire-is-once-1-d2cebd12\">original concept for ONCE</a> sought to sell self-hostable web apps for <a href=\"https://world.hey.com/dhh/campfire-is-now-for-sale-51a19fc9\">a one-time fee</a>. That didn't work. Sure, we recouped the investment on Campfire, our chat app, but that was it. You gotta listen when the market tells you what it wants! And it didn't seem to want to pay for self-hosted web apps in a one-off way.\n    <br>\n    <br>\n   </div>\n   <div>\n    So we set <a href=\"https://once.com/campfire\">Campfire</a>, <a href=\"https://once.com/writebook\">Writebook</a>, and now <a href=\"https://fizzy.do/\">Fizzy</a> free by releasing them all as open source with a permissive license. That worked! Tons of people have been running these apps on their own servers, contributing code back, and learning how we build real production applications at <a href=\"https://37signals.com/\">37signals</a>.\n    <br>\n    <br>\n   </div>\n   <div>\n    Now we're doubling down on the gift and adding an integrated way to run all these apps, and your own vibe-coded adventures too, on a brand-new application server we're also calling ONCE.\n    <br>\n    <br>\n   </div>\n   <div>\n    If you twist my arm, I can make that spell \"Open Network Container Executor\", but we don't even have to go there. Once is just a cool word, we already own the domain, and it's running all the original applications released under that banner as free and open-source installations. That's good enough!\n    <br>\n    <br>\n   </div>\n   <div>The pitch here is that installing a whole suite of applications on your own server should be dead easy. The original ONCE model wanted a dedicated box or VM per app, which was just cumbersome and costly to maintain. Now you can use a single machine — even your laptop! — to run everything all at once.</div>\n   <div>\n    <br>\n    ONCE gives you a beautiful terminal interface to track application metrics, like RAM + CPU usage, as well as basic visitor + request/second counts. It also gives you zero-downtime upgrades and scheduled backups. It's meant to be able to run all the infrastructure apps you'd need, like our full suite and all the ones your AI agents will soon be building for you.\n    <br>\n    <br>\n   </div>\n   <div>\n    Give it a spin. It's just a single command to install. I can show you how with <a href=\"https://www.youtube.com/watch?v=yZankuDQQmw\">this YouTube video tour</a>. Enjoy!\n    <br>\n    <br>\n    <figure class=\"attachment attachment--preview attachment--lightboxable attachment--png\">\n     <a download=\"screenshot-2026-03-16_18-32-42.png\" title=\"Download screenshot-2026-03-16_18-32-42.png\" data-click-proxy-target=\"lightbox_link_blob_2487601413\" href=\"https://world.hey.com/dhh/3e99f755/blobs/eyJfcmFpbHMiOnsiZGF0YSI6MjQ4NzYwMTQxMywicHVyIjoiYmxvYl9pZCJ9fQ--33472438a3a21d29b04c08c6c49342c1302bdea3ecaaba0d210acba2d7f9a330/screenshot-2026-03-16_18-32-42.png?disposition=attachment\"> <img src=\"https://world.hey.com/dhh/3e99f755/representations/eyJfcmFpbHMiOnsiZGF0YSI6MjQ4NzYwMTQxMywicHVyIjoiYmxvYl9pZCJ9fQ--33472438a3a21d29b04c08c6c49342c1302bdea3ecaaba0d210acba2d7f9a330/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlszODQwLDI1NjBdLCJxdWFsaXR5Ijo2MCwibG9hZGVyIjp7InBhZ2UiOm51bGx9LCJjb2FsZXNjZSI6dHJ1ZX0sInB1ciI6InZhcmlhdGlvbiJ9fQ--7edc7b21f6fad97fa22412618822c4d19725431f296c7ce47dc174b61535d27c/screenshot-2026-03-16_18-32-42.png\" alt=\"screenshot-2026-03-16_18-32-42.png\" decoding=\"async\" loading=\"lazy\"> </a>\n    </figure>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "DHH 将 ONCE 从一个失败的自托管应用一次性付费模式，重新定位为一个开源应用服务器，它可以在一台机器上运行多个应用，并提供更简单的操作。",
+  "oneSentenceSummary": "DHH 将 ONCE 从一个失败的自托管应用一次性付费模式，重新定位为一个开源应用服务器，它可以在一台机器上运行多个应用，并提供更简单的操作。",
+  "summary": "这篇文章解释了 37signals 如何在 ONCE 的原有商业模式未能获得关注后，重新推出 ONCE。该公司不再以一次性费用出售可自托管的 Web 应用，而是将 Campfire、Writebook 和 Fizzy 等应用开源，并利用这一转变引入了新的 ONCE 应用服务器。新的卖点是操作简便性：用户无需为每个应用配置一个专用的虚拟机或服务器，而应该能够在单台机器上运行多个应用，包括 AI 生成的副项目。DHH 强调了诸如用于应用指标的终端 UI、零停机升级、计划备份和一键安装等功能。这篇文章之所以引人注目，是因为它将产品策略、开源分发和轻量级自托管基础设施结合到一个叙述中。然而，它仍停留在公告层面，没有深入探讨架构、可靠性权衡或技术实现细节。",
+  "mainPoints": [
+    {
+      "point": "37signals 放弃了原有付费 ONCE 模式，转而采用开源分发和新的基础设施层。",
+      "explanation": "作者明确指出市场拒绝了自托管应用的一次性付费模式，因此该公司通过将应用免费开源来回应。"
+    },
+    {
+      "point": "新的 ONCE 被定位为在单台机器上运行多个自托管应用的更简便方式。",
+      "explanation": "其核心价值主张是消除每个应用需要一个虚拟机或服务器的需求，并捆绑了指标、备份和零停机升级等关键操作功能。"
+    },
+    {
+      "point": "文章还预示着对 AI 生成和小型定制应用的基础设施押注。",
+      "explanation": "通过提及 AI 生成的副项目和轻量级定制应用，这篇文章将 ONCE 定位为开发者和 AI 智能体可能越来越多地生产的这类小型应用的运行时。"
+    }
+  ],
+  "keyQuotes": [
+    "那行不通。",
+    "现在我们加倍投入这份礼物",
+    "只需一条命令即可安装。"
+  ],
+  "tags": [
+    "自托管",
+    "开源",
+    "应用服务器",
+    "37signals",
+    "ONCE"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 332,
+  "domain": "world.hey.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_86001f",
+  "sourceName": "David Heinemeier Hansson",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773684181000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 18:03:01"
+}

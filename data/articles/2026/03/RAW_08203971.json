@@ -1,0 +1,47 @@
+{
+  "id": "RAW_08203971",
+  "title": "NVIDIA Vera CPU 提供高性能、高带宽和高效率",
+  "url": "https://developer.nvidia.com/blog/nvidia-vera-cpu-delivers-high-performance-bandwidth-and-efficiency-for-ai-factories/",
+  "date": "2026-03-16 19:30:33",
+  "author": "Praveen Menon",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"Vera CPU render.\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-768x432.png 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-179x101.png 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-300x169.png 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-625x352.png 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-1536x864.png 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-645x363.png 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-660x370.png 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-500x281.png 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-160x90.png 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-362x204.png 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-196x110.png 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-1024x576.png 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU-960x540.png 960w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Vera-CPU.webp 2000w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" title=\"Vera-CPU\">\n  <p>AI is evolving, and reasoning models are increasing token demand, placing new requirements on every layer of AI infrastructure. More than ever, compute must scale efficiently to maximize token production and improve productivity for model creators and users. Modern GPUs operate at peak capacity, pushing throughput higher every generation, but system performance is increasingly gated by the…</p>\n  <p><a href=\"https://developer.nvidia.com/blog/nvidia-vera-cpu-delivers-high-performance-bandwidth-and-efficiency-for-ai-factories/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA Vera CPU 为不断演进的 AI 工作负载提供高性能、带宽和效率，满足推理模型带来的 token 需求增长。",
+  "oneSentenceSummary": "NVIDIA Vera CPU 为不断演进的 AI 工作负载提供高性能、带宽和效率，满足推理模型带来的 token 需求增长。",
+  "summary": "随着 AI 演进，推理模型需要处理数百万 token，NVIDIA Vera CPU 应对新的计算需求。该处理器提供高性能、内存带宽和能效，专门针对现代 AI 推理和训练工作负载进行优化。",
+  "mainPoints": [
+    {
+      "point": "推理模型正在增加 token 需求。",
+      "explanation": "现代 AI 需要每个请求处理数百万 token。"
+    },
+    {
+      "point": "Vera CPU 提供优化的 AI 性能。",
+      "explanation": "为 AI 工作负载提供高带宽和效率。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 正在演进，推理模型正在增加 token 需求，对计算基础设施提出新要求。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "Vera CPU",
+    "AI 硬件",
+    "处理器",
+    "推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 58,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773689433000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 19:30:33"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "RAW_03c56807",
+  "title": "深入了解 NVIDIA Groq 3 LPX：适用于 NVIDIA Vera Rubin 平台的低延迟推理加速器",
+  "url": "https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/",
+  "date": "2026-03-16 20:25:27",
+  "author": "Kyle Aubrey",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <br>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"Render of LPX rack.\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-768x432.png 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-179x101.png 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-300x169.png 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-625x352.png 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-1536x864.png 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-645x363.png 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-660x370.png 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-500x281.png 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-160x90.png 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-362x204.png 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-196x110.png 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-1024x576.png 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack-960x540.png 960w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/LPX-Rack.webp 1920w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" title=\"LPX-Rack\">\n  <p>NVIDIA Groq 3 LPX is a new rack-scale inference accelerator for the NVIDIA Vera Rubin platform, designed for the low-latency and large-context demands of agentic systems. Co-designed with the NVIDIA Vera Rubin NVL72, LPX equips the AI factory with an engine optimized for fast, predictable token generation, while Vera Rubin NVL72 remains the flexible, general-purpose workhorse for training and…</p>\n  <p><a href=\"https://developer.nvidia.com/blog/inside-nvidia-groq-3-lpx-the-low-latency-inference-accelerator-for-the-nvidia-vera-rubin-platform/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA Groq 3 LPX 是一款适用于 Vera Rubin 平台的机架级推理加速器，针对低延迟和大上下文 AI 需求进行了优化。",
+  "oneSentenceSummary": "NVIDIA Groq 3 LPX 是一款适用于 Vera Rubin 平台的机架级推理加速器，针对低延迟和大上下文 AI 需求进行了优化。",
+  "summary": "NVIDIA 推出 Groq 3 LPX，这是一款专为 NVIDIA Vera Rubin 平台设计的新型机架级推理加速器。它旨在满足低延迟推理和大上下文 AI 工作负载的严苛要求。",
+  "mainPoints": [
+    {
+      "point": "Groq 3 LPX 专为 Vera Rubin 平台设计。",
+      "explanation": "该加速器与 NVIDIA 最新的 AI 基础设施集成，以实现最佳性能。"
+    },
+    {
+      "point": "针对低延迟和大上下文需求进行优化。",
+      "explanation": "解决了实时 AI 应用的关键性能要求。"
+    }
+  ],
+  "keyQuotes": [
+    "NVIDIA Groq 3 LPX 是一款适用于 NVIDIA Vera Rubin 平台的新型机架级推理加速器，专为低延迟和大上下文需求而设计。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "Groq 3 LPX",
+    "推理",
+    "Vera Rubin",
+    "加速器"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 79,
+  "wordCount": 60,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773692727000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:25:27"
+}

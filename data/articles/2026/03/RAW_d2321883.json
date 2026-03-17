@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d2321883",
+  "title": "OpenAI 的技术可能会如何出现在伊朗战场上",
+  "url": "https://www.technologyreview.com/2026/03/16/1134315/where-openais-technology-could-show-up-in-iran/",
+  "date": "2026-03-16 17:06:21",
+  "author": "James O'Donnell",
+  "siteName": "MIT Technology Review",
+  "content": "<html>\n <head></head>\n <body>\n  <p>\n   <br>\n   <em>This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&nbsp;</em><a href=\"https://forms.technologyreview.com/newsletters/ai-demystified-the-algorithm/\"><em>sign up here</em></a><em>.</em>\n  </p>\n  <p>It’s been just over two weeks since OpenAI reached a controversial agreement to allow the Pentagon to use its AI in classified environments. There are still pressing questions about what exactly OpenAI’s <a href=\"https://www.technologyreview.com/2026/03/02/1133850/openais-compromise-with-the-pentagon-is-what-anthropic-feared/\">agreement</a> allows for; Sam Altman said the military can’t use his company’s technology to build autonomous weapons, but the agreement really just demands that the military follow its own (quite permissive) <a href=\"https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf\">guidelines</a> about such weapons. OpenAI’s other main claim, that the agreement will prevent use of its technology for domestic surveillance, appears equally <a href=\"https://www.technologyreview.com/2026/03/06/1134012/is-the-pentagon-allowed-to-surveil-americans-with-ai/\">dubious</a>.</p>\n  <p>It’s unclear what OpenAI’s motivations are. It’s not the first tech giant to embrace military contracts it had once vowed never to enter into, but the speed of the pivot was notable. Perhaps it’s just about money; OpenAI is spending lots on AI training and is on the hunt for more revenue (from sources including <a href=\"https://openai.com/index/our-approach-to-advertising-and-expanding-access/\">ads</a>). Or perhaps Altman truly believes the ideological framing he often invokes: that liberal democracies (and their militaries) must have access to the most powerful AI to compete with China.</p>\n  <p>The more consequential question is what happens next. OpenAI has decided it is comfortable operating right in the messy heart of combat, just as the US escalates its strikes against Iran (with AI <a href=\"https://www.technologyreview.com/2026/03/12/1134243/defense-official-military-use-ai-chatbots-targeting-decisions/\">playing a larger role</a> in that than ever before). So where exactly could OpenAI’s tech show up in this fight? And which applications will its customers (and employees) tolerate?</p>\n  <h3 class=\"wp-block-heading\"><strong>Targets and strikes</strong></h3>\n  <p>Though its Pentagon agreement is in place, it’s unclear when OpenAI’s technology will be ready for classified environments, since it must be integrated with other tools the military uses (Elon Musk’s xAI, which recently struck its own deal with the Pentagon, is expected to go through the same process with its AI model Grok). But there’s pressure to do this quickly because of controversy around the technology in use to date: After Anthropic refused to allow its AI to be used for “any lawful use,” President Trump ordered the military to stop using it, and Anthropic was designated a supply chain risk by the Pentagon. (Anthropic is fighting the designation in court.)</p>\n  <p>If the Iran conflict is still underway by the time OpenAI’s tech is in the system, what could it be used for? A recent <a href=\"https://www.technologyreview.com/2026/03/12/1134243/defense-official-military-use-ai-chatbots-targeting-decisions/\">conversation</a> I had with a defense official suggests it might look something like this: A human analyst could put a list of potential targets into the AI model and ask it to analyze the information and prioritize which to strike first. The model could account for logistics information, like where particular planes or supplies are located. It could analyze lots of different inputs in the form of text, image, and video.&nbsp;</p>\n  <p>A human would then be responsible for manually checking these outputs, the official said. But that raises an obvious question: If a person is truly double-checking AI’s outputs, how is it speeding up targeting and strike decisions?</p>\n  <p>For years the military has been using another AI system, called Maven, which can handle things like automatically analyzing drone footage to identify possible targets. It’s likely that OpenAI’s models, like Anthropic’s Claude, will offer a conversational interface on top of that, allowing users to ask for interpretations of intelligence and recommendations for which targets to strike first.&nbsp;</p>\n  <p>It’s hard to overstate how new this is: AI has long done analysis for the military, drawing insights out of oceans of data. But using generative AI’s advice about which actions to take in the field is being tested in earnest for the first time in Iran.</p>\n  <h3 class=\"wp-block-heading\"><strong>Drone defense</strong></h3>\n  <p>At the end of 2024, OpenAI announced a <a href=\"https://www.technologyreview.com/2024/12/04/1107897/openais-new-defense-contract-completes-its-military-pivot/\">partnership</a> with Anduril, which makes both drones and counter-drone technologies for the military. The agreement said OpenAI would work with Anduril to do time-sensitive analysis of drones attacking US forces and help take them down. An OpenAI spokesperson told me at the time that this didn’t violate the company’s policies, which prohibited “systems designed to harm others,” because the technology was being used to target drones and not people.&nbsp;</p>\n  <p>Anduril provides a suite of counter-drone technologies to military bases around the world (though the company declined to tell me whether its systems are deployed near Iran). Neither company has provided updates on how the project has developed since it was announced. However, Anduril has long trained its own AI models to analyze camera footage and sensor data to identify threats; what it focuses less on are conversational AI systems that allow soldiers to query those systems directly or receive guidance in natural language—an area where OpenAI’s models may fit.</p>\n  <p>The stakes are high. Six US service members were killed in Kuwait on March 1 following an Iranian drone attack that was not intercepted by US air defenses.&nbsp;</p>\n  <p>Anduril’s interface, called Lattice, is where soldiers can control everything from drone defenses to missiles and autonomous submarines. And the company is winning massive contracts—<a href=\"https://www.bloomberg.com/news/articles/2026-03-14/us-army-awards-anduril-contract-worth-as-much-as-20-billion\">$20 billion from the US Army just last week</a>—to connect its systems with legacy military equipment and layer AI on them. If OpenAI’s models prove useful to Anduril, Lattice is designed to incorporate them quickly across this broader warfare stack.&nbsp;</p>\n  <h3 class=\"wp-block-heading\"><strong>Back-office AI</strong></h3>\n  <p>In December, Defense Secretary Pete Hegseth started encouraging millions of people in more administrative roles in the military—contracts, logistics, purchasing—to use a new AI tool. Called GenAI.mil, it provided a way for personnel to securely access commercial AI models and use them for the same sorts of things as anyone in the business world.&nbsp;</p>\n  <p>Google Gemini was one of the first to be available. In January, the Pentagon announced that xAI’s Grok was going to be added to the GenAI.mil platform as well, despite incidents in which the model had spread antisemitic content and created nonconsensual deepfakes. OpenAI followed in February, with the company announcing that its models would be used for drafting policy documents and contracts and assisting with administrative support of missions.</p>\n  <p>Anyone using ChatGPT for unclassified tasks on this platform is unlikely to have much sway over sensitive decisions in Iran, but the prospect of OpenAI deploying on the platform is important in another way. It serves the all-in attitude toward AI that Hegseth has been pushing relentlessly across the Pentagon (even if many <a href=\"https://defensescoop.com/2025/12/18/genai-mil-users-have-mixed-reactions-and-many-questions/\">early users</a> aren’t entirely sure what they’re supposed to use it for). The message is that AI is transforming every aspect of how the US fights, from targeting decisions down to paperwork. And OpenAI is increasingly winning a piece of it all.</p>\n </body>\n</html>",
+  "aiSummary": "本文讨论了 OpenAI 与五角大楼合作后，其技术可能如何进入美国与伊朗相关的军事行动，重点覆盖目标排序、无人机防御和五角大楼后台系统，并质疑 OpenAI 的限制条件与真实动机。",
+  "oneSentenceSummary": "本文讨论了 OpenAI 与五角大楼合作后，其技术可能如何进入美国与伊朗相关的军事行动，重点覆盖目标排序、无人机防御和五角大楼后台系统，并质疑 OpenAI 的限制条件与真实动机。",
+  "summary": "这篇文章分析了 OpenAI 近期允许五角大楼在涉密环境中使用其模型之后，可能带来的实际和伦理影响。它没有把这项合作仅仅视为一个抽象的政策转向，而是进一步拆解出 OpenAI 技术可能在美国与伊朗相关冲突中出现的具体位置：帮助分析人员给潜在打击目标排序、通过 Anduril 等合作伙伴支持反无人机系统，以及借由 GenAI.mil 这样的行政平台在五角大楼内部进一步扩散。文章的一大优点，是把企业对外宣称的安全护栏与军方的真实运行环境放在一起审视，指出所谓禁止自主武器和国内监控的承诺，在五角大楼自身规则相当宽松的前提下并没有表面上那么让人安心。文章还强调，生成式 AI 与早期军用 AI 系统的重要区别，在于它正从被动分析走向以自然语言界面提供建议和行动优先级。虽然这篇文章更偏政策与风险分析，而非技术机理深挖，但它通过具体场景、机构背景和扎实报道，明显强于普通评论文。",
+  "mainPoints": [
+    {
+      "point": "文章把讨论重点从抽象政策语言推进到了具体战争场景。",
+      "explanation": "它没有停留在五角大楼协议本身，而是展示了 OpenAI 的模型如何可能进入目标筛选、无人机防御和军方行政流程。"
+    },
+    {
+      "point": "文章认为 OpenAI 对外宣称的安全限制，在现实中并没有看起来那么稳固。",
+      "explanation": "作者质疑其关于自主武器和国内监控的保证，因为这些保证在很大程度上依赖军方自身较为宽松的规则，以及边界并不清晰的执行机制。"
+    },
+    {
+      "point": "生成式 AI 被描绘成相较于 Maven 这类旧式军用 AI 的一次重要变化。",
+      "explanation": "关键差异不只是数据分析能力，而是它新增了对话式界面和建议层，可能直接影响作战环境中的行动选择。"
+    },
+    {
+      "point": "文章最有价值的地方，在于机构报道和场景推演，而不是模型内部架构细节。",
+      "explanation": "它并没有深入讲解模型原理，但让读者更清楚地看到商业 AI 工具是如何一步步渗透进真实国防行动的。"
+    }
+  ],
+  "keyQuotes": [
+    "接下来会发生什么",
+    "正处在混乱战场的核心位置",
+    "OpenAI 的技术到底会在哪里出现在这场冲突中？"
+  ],
+  "tags": [
+    "OpenAI",
+    "五角大楼",
+    "军事 AI",
+    "AI 治理",
+    "伊朗"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 84,
+  "wordCount": 1091,
+  "domain": "technologyreview.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_b964bfee",
+  "sourceName": "MIT Technology Review",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773680781000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 17:06:21"
+}

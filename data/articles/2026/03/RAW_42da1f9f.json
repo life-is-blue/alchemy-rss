@@ -1,0 +1,53 @@
+{
+  "id": "RAW_42da1f9f",
+  "title": "使用 NVIDIA DGX Spark 扩展自主 AI 智能体和工作负载",
+  "url": "https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/",
+  "date": "2026-03-16 20:30:00",
+  "author": "Allen Bourgoyne",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-768x432.png 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-179x101.png 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-300x169.png 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-625x352.png 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-1536x864.png 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-2048x1152.png 2048w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-645x363.png 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-660x370.png 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-500x281.png 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-160x90.png 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-362x204.png 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-196x110.png 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-1024x576.png 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/four-stacked-nvidia-dgx-spark-960x540.png 960w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" title=\"four-stacked-nvidia-dgx-spark\">\n  <p>Autonomous AI agents are driving the next wave of AI innovation. These agents must often manage long-running tasks that use multiple communication channels and background subprocesses simultaneously to explore options, test solutions, and generate optimal results. This places extreme demands on local compute. NVIDIA DGX Spark provides the performance necessary for autonomous agents to execute…</p>\n  <p><a href=\"https://developer.nvidia.com/blog/scaling-autonomous-ai-agents-and-workloads-with-nvidia-dgx-spark/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA DGX Spark 为自主 AI 智能体提供了执行复杂、长时任务所需的本地计算性能，支持多通信通道和后台子进程。",
+  "oneSentenceSummary": "NVIDIA DGX Spark 为自主 AI 智能体提供了执行复杂、长时任务所需的本地计算性能，支持多通信通道和后台子进程。",
+  "summary": "本文介绍 NVIDIA DGX Spark 如何通过自主智能体推动下一波 AI 创新。这些先进的 AI 系统需要管理长时运行的任务，同时利用多通信通道和后台子进程来探索选项、测试解决方案并生成最优结果。此类计算密集型工作负载对本地计算资源造成极大压力，而 DGX Spark 正是专门为此而设计。",
+  "mainPoints": [
+    {
+      "point": "自主 AI 智能体代表了超越静态模型的下一波 AI 创新。",
+      "explanation": "这些智能体主动管理工作流，而不仅仅是响应提示，需要复杂的编排能力。"
+    },
+    {
+      "point": "智能体工作负载需要管理带有多个并发进程的长时任务。",
+      "explanation": "自主智能体探索选项、测试解决方案并迭代优化结果，产生极高的计算需求。"
+    },
+    {
+      "point": "NVIDIA DGX Spark 为智能体工作负载提供必要的本地计算性能。",
+      "explanation": "该平台专为满足本地运行自主 AI 智能体的密集计算需求而设计。"
+    }
+  ],
+  "keyQuotes": [
+    "自主 AI 智能体正在推动下一波 AI 创新。",
+    "这些智能体通常必须管理使用多通信通道和后台子进程同时运行的长时任务，以探索选项、测试解决方案并生成最优结果。",
+    "这对本地计算提出了极高要求。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "DGX Spark",
+    "自主智能体",
+    "AI 基础设施",
+    "本地计算"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 56,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773693000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:30:00"
+}

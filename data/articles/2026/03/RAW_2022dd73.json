@@ -1,0 +1,59 @@
+{
+  "id": "RAW_2022dd73",
+  "title": "编码智能体如何工作 - 智能体工程模式",
+  "url": "https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/#atom-everything",
+  "date": "2026-03-16 14:01:41",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <p style=\"margin-bottom: 1em\"><a href=\"https://simonwillison.net/guides/\">Guides</a> &gt; <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/\">Agentic Engineering Patterns</a></p>\n  <div class=\"note\" data-permalink-context=\"/guides/agentic-engineering-patterns/how-coding-agents-work/\">\n   <p>As with any tool, understanding how <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/\">coding agents</a> work under the hood can help you make better decisions about how to apply them.</p>\n   <p>A coding agent is a piece of software that acts as a <strong>harness</strong> for an LLM, extending that LLM with additional capabilities that are powered by invisible prompts and implemented as callable tools.</p>\n   <h2 id=\"large-language-models\">Large Language Models</h2>\n   <p>At the heart of any coding agent is a Large Language Model, or LLM. These have names like GPT-5.4 or Claude Opus 4.6 or Gemini 3.1 Pro or Qwen3.5-35B-A3B.</p>\n   <p>An LLM is a machine learning model that can complete a sentence of text. Give the model the phrase \"the cat sat on the \" and it will (almost certainly) suggest \"mat\" as the next word in the sentence.</p>\n   <p>As these models get larger and train on increasing amounts of data, they can complete more complex sentences - like \"a python function to download a file from a URL is def download_file(url): \".</p>\n   <p>LLMs don't actually work directly with words - they work with tokens. A sequence of text is converted into a sequence of integer tokens, so \"the cat sat on the \" becomes <code>[3086, 9059, 10139, 402, 290, 220]</code>. This is worth understanding because LLM providers charge based on the number of tokens processed, and are limited in how many tokens they can consider at a time.</p>\n   <p>You can experiment with the OpenAI tokenizer to see how this works at <a href=\"https://platform.openai.com/tokenizer\">platform.openai.com/tokenizer</a>.</p>\n   <p>The input to an LLM is called the <strong>prompt</strong>. The text returned by an LLM is called the <strong>completion</strong>, or sometimes the <strong>response</strong>.</p>\n   <p>Many models today are <strong>multimodal</strong>, which means they can accept more than just text as input. <strong>Vision LLMs</strong> (vLLMs) can accept images as part of the input, which means you can feed them sketches or photos or screenshots. A common misconception is that these are run through a separate process for OCR or image analysis, but these inputs are actually turned into yet more token integers which are processed in the same way as text.</p>\n   <h2 id=\"chat-templated-prompts\">Chat templated prompts</h2>\n   <p>The first LLMs worked as completion engines - users were expected to provide a prompt which could then be completed by the model, such as the two examples shown above.</p>\n   <p>This wasn't particularly user-friendly so models mostly switched to using <strong>chat templated prompts</strong> instead, which represent communication with the model as a simulated conversation.</p>\n   <p>This is actually just a form of completion prompt with a special format that looks something like this.</p>\n   <div class=\"codehilite\">\n    <pre><span></span><code>user: write a python function to download a file from a URL\nassistant:\n</code></pre>\n   </div>\n   <p>The natural completion for this prompt is for the assistant (represented by the LLM) to answer the user's question with some Python code.</p>\n   <p>LLMs are stateless: every time they execute a prompt they start from the same blank slate.</p>\n   <p>To maintain the simulation of a conversation, the software that talks to the model needs to maintain its own state and replay the entire existing conversation every time the user enters a new chat prompt:</p>\n   <div class=\"codehilite\">\n    <pre><span></span><code>user: write a python function to download a file from a URL\nassistant: def download_url(url):\n    return urllib.request.urlopen(url).read()\nuser: use the requests library instead\nassistant:\n</code></pre>\n   </div>\n   <p>Since providers charge for both input and output tokens, this means that as a conversation gets longer, each prompt becomes more expensive since the number of input tokens grows every time.</p>\n   <h2 id=\"token-caching\">Token caching</h2>\n   <p>Most model providers offset this somewhat through a cheaper rate for <strong>cached input tokens</strong> - common token prefixes that have been processed within a short time period can be charged at a lower rate as the underlying infrastructure can cache and then reuse many of the expensive calculations used to process that input.</p>\n   <p>Coding agents are designed with this optimization in mind - they avoid modifying earlier conversation content to ensure the cache is used as efficiently as possible.</p>\n   <h2 id=\"calling-tools\">Calling tools</h2>\n   <p>The defining feature of an LLM <strong>agent</strong> is that agents can call <strong>tools</strong>. But what is a tool?</p>\n   <p>A tool is a function that the agent harness makes available to the LLM.</p>\n   <p>At the level of the prompt itself, that looks something like this:</p>\n   <div class=\"codehilite\">\n    <pre><span></span><code>system: If you need to access the weather, end your turn with &lt;tool&gt;get_weather(city_name)&lt;/tool&gt;\nuser: what's the weather in San Francisco?\nassistant:\n</code></pre>\n   </div>\n   <p>Here the assistant might respond with the following text:</p>\n   <div class=\"codehilite\">\n    <pre><span></span><code>&lt;tool&gt;get_weather(\"San Francisco\")&lt;/tool&gt;\n</code></pre>\n   </div>\n   <p>The model harness software then extracts that function call request from the response - probably with a regular expression - and executes the tool.</p>\n   <p>It then returns the result to the model, with a constructed prompt that looks something like this:</p>\n   <div class=\"codehilite\">\n    <pre><span></span><code>system: If you need to access the weather, end your turn with &lt;tool&gt;get_weather(city_name)&lt;/tool&gt;\nuser: what's the weather in San Francisco?\nassistant: &lt;tool&gt;get_weather(\"San Francisco\")&lt;/tool&gt;\nuser: &lt;tool-result&gt;61°, Partly cloudy&lt;/tool-result&gt;\nassistant:\n</code></pre>\n   </div>\n   <p>The LLM can now use that tool result to help generate an answer to the user's question.</p>\n   <p>Most coding agents define a dozen or more tools for the agent to call. The most powerful of these allow for code execution - a <code>Bash()</code> tool for executing terminal commands, or a <code>Python()</code> tool for running Python code, for example.</p>\n   <h2 id=\"the-system-prompt\">The system prompt</h2>\n   <p>In the previous example I included an initial message marked \"system\" which informed the LLM about the available tool and how to call it.</p>\n   <p>Coding agents usually start every conversation with a system prompt like this, which is not shown to the user but provides instructions telling the model how it should behave.</p>\n   <p>These system prompts can be hundreds of lines long. Here's <a href=\"https://github.com/openai/codex/blob/rust-v0.114.0/codex-rs/core/templates/model_instructions/gpt-5.2-codex_instructions_template.md\">the system prompt for OpenAI Codex</a> as-of March 2026, which is a useful clear example of the kind of instructions that make these coding agents work.</p>\n   <h2 id=\"reasoning\">Reasoning</h2>\n   <p>One of the big new advances in 2025 was the introduction of <strong>reasoning</strong> to the frontier model families.</p>\n   <p>Reasoning, sometimes presented as <strong>thinking</strong> in the UI, is when a model spends additional time generating text that talks through the problem and its potential solutions before presenting a reply to the user.</p>\n   <p>This can look similar to a person thinking out loud, and has a similar effect. Crucially it allows models to spend more time (and more tokens) working on a problem in order to hopefully get a better result.</p>\n   <p>Reasoning is particularly useful for debugging issues in code as it gives the model an opportunity to navigate more complex code paths, mixing in tool calls and using the reasoning phase to follow function calls back to the potential source of an issue.</p>\n   <p>Many coding agents include options for dialing up or down the reasoning effort level, encouraging models to spend more time chewing on harder problems.</p>\n   <h2 id=\"llm-system-prompt-tools-in-a-loop\">LLM + system prompt + tools in a loop</h2>\n   <p>Believe it or not, that's most of what it takes to build a coding agent!</p>\n   <p>If you want to develop a deeper understanding of how these things work, a useful exercise is to try building your own agent from scratch. A simple tool loop can be achieved with a few dozen lines of code on top of an existing LLM API.</p>\n   <p>A <em>good</em> tool loop is a great deal more work than that, but the fundamental mechanics are surprisingly straightforward.</p>\n  </div>\n  <div style=\"margin-top: 2em; display: flex; justify-content: space-between;\">\n   <div>\n    ← <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/\">Anti-patterns: things to avoid</a>\n   </div>\n   <div>\n    <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/\">Red/green TDD</a> →\n   </div>\n  </div>\n  <p class=\"edit-page-link\" data-admin-url=\"/admin/guides/chapter/15/\" style=\"display: none;\"></p>\n </body>\n</html>",
+  "aiSummary": "本指南揭秘了编码智能体的架构，解释了 LLM 如何通过软件“线束”、工具调用循环和隐藏的系统提示，转变为自主助手。",
+  "oneSentenceSummary": "本指南揭秘了编码智能体的架构，解释了 LLM 如何通过软件“线束”、工具调用循环和隐藏的系统提示，转变为自主助手。",
+  "summary": "本文提供了关于“编码智能体”的基础技术概述，将其定义为扩展大型语言模型（LLM）以提供额外能力的软件“线束”。文章分解了其核心机制，从 LLM 的基础知识开始，例如分词和无状态性，这需要重放对话历史。作者将“工具调用”确定为智能体的决定性特征，即“线束”根据 LLM 请求执行外部函数（如 Bash 或 Python）。此外，文章还探讨了长系统提示在管理智能体行为中的作用，以及“推理”或“思考”阶段的最新演变，这些阶段允许模型在响应前通过内部迭代解决复杂的调试问题。",
+  "mainPoints": [
+    {
+      "point": "编码智能体是围绕 LLM 的软件‘线束’。",
+      "explanation": "智能体不仅仅是模型本身，而是一个封装器，它提供隐式提示并实现可调用工具，使 LLM 能够与真实世界交互。"
+    },
+    {
+      "point": "“工具循环”是智能体行为的基本引擎。",
+      "explanation": "智能体通过生成工具请求来操作，“线束”执行该请求；结果随后被反馈回提示中，允许 LLM 根据真实世界反馈进行迭代。"
+    },
+    {
+      "point": "LLM 本质上是无状态的补全引擎。",
+      "explanation": "因为模型每次都从空白状态开始，智能体“线束”必须通过重放整个对话历史来管理状态，通常利用 token 缓存来管理成本。"
+    },
+    {
+      "point": "推理阶段允许模型在行动前“思考”。",
+      "explanation": "现代前沿模型利用推理来探讨潜在解决方案并导航复杂的代码路径，这对于深度调试和多步骤任务特别有效。"
+    }
+  ],
+  "keyQuotes": [
+    "编码智能体是一种软件，它充当 LLM 的“线束”，通过隐式提示驱动并实现为可调用工具，从而扩展该 LLM 的额外能力。",
+    "LLM 智能体的决定性特征是智能体可以调用工具。",
+    "LLM 是无状态的：每次执行提示时，它们都从相同的空白状态开始。",
+    "推理对于调试代码中的问题特别有用，因为它让模型有机会导航更复杂的代码路径。",
+    "在现有 LLM API 之上，通过几十行代码即可实现一个简单的工具循环。"
+  ],
+  "tags": [
+    "编码智能体",
+    "LLM 架构",
+    "智能体工程",
+    "工具调用",
+    "系统提示"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 89,
+  "wordCount": 1193,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773669701000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 14:01:41"
+}

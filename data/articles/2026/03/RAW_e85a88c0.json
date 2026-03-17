@@ -1,0 +1,47 @@
+{
+  "id": "RAW_e85a88c0",
+  "title": "借助 NVIDIA OpenShell 更安全地运行自主、自我演进的智能体",
+  "url": "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/",
+  "date": "2026-03-16 20:12:57",
+  "author": "Ali Golshan",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <br>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-768x432.png 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-179x101.png 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-300x169.png 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-625x352.png 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-1536x864.png 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-645x363.png 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-660x370.png 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-500x281.png 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-160x90.png 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-362x204.png 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-196x110.png 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-1024x576.png 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1-960x540.png 960w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-enterprise-agents-gtc26-press-1920x1080-1.webp 1920w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" title=\"agentic-ai-enterprise-agents-gtc26-press-1920x1080\">\n  <p>AI has evolved from assistants following your directions to agents that act independently. Called claws, these agents can take a goal, figure out how to achieve it, and execute indefinitely—while leaving you out of the loop. The more capable claws become, the harder they are to trust. And their self-evolving autonomy changes everything about the environment in which they operate.</p>\n  <p><a href=\"https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA 提供基础设施，用于在企业环境中安全运行自主、自我演进的 AI 智能体。",
+  "oneSentenceSummary": "NVIDIA 提供基础设施，用于在企业环境中安全运行自主、自我演进的 AI 智能体。",
+  "summary": "文章讨论了 NVIDIA 如何使企业能够安全部署可自我演进的自主 AI 智能体。随着 AI 从基础助手发展为能够进行复杂推理和行动的自主系统，NVIDIA 提供了在生产环境中安全运行这些智能体所需的基础设施。",
+  "mainPoints": [
+    {
+      "point": "AI 已从助手发展为自主智能体。",
+      "explanation": "现代 AI 系统能够独立推理、规划和采取行动。"
+    },
+    {
+      "point": "企业需要为自主智能体提供安全的基础设施。",
+      "explanation": "自我演进的智能体需要安全的运行时环境。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 已从基础助手发展为能够进行复杂推理和行动的自主系统。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "自主智能体",
+    "企业 AI",
+    "AI 安全",
+    "自我演进"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 79,
+  "wordCount": 61,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773691977000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:12:57"
+}

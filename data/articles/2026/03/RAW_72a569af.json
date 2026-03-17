@@ -1,0 +1,43 @@
+{
+  "id": "RAW_72a569af",
+  "title": "NVIDIA Vera Rubin POD：七芯片、五机架系统",
+  "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/",
+  "date": "2026-03-16 19:27:58",
+  "author": "Rohil Bhargava",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-768x432.jpg\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-768x432.jpg 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-179x101.jpg 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-300x169.jpg 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-625x352.jpg 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-1536x864.jpg 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-645x363.jpg 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-660x370.jpg 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-500x281.jpg 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-160x90.jpg 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-362x204.jpg 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-196x110.jpg 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-1024x576.jpg 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod-960x540.jpg 960w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/nvidia-vera-rubin-pod.webp 1920w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" title=\"nvidia-vera-rubin-pod\">\n  <p>Artificial intelligence is token-driven. Every prompt, reasoning step, and agent interaction generates tokens. Over the past year, token consumption has grown multifold and now exceeds 10 quadrillion tokens per year. And while the majority of tokens have been generated from humans interacting with AI, the new era is one in which most tokens will be generated from AI interacting with AI.</p>\n  <p><a href=\"https://developer.nvidia.com/blog/nvidia-vera-rubin-pod-seven-chips-five-rack-scale-systems-one-ai-supercomputer/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA Vera Rubin POD 配备七颗芯片、五套机架级系统和统一架构，专为下一代 AI 基础设施设计。",
+  "oneSentenceSummary": "NVIDIA Vera Rubin POD 配备七颗芯片、五套机架级系统和统一架构，专为下一代 AI 基础设施设计。",
+  "summary": "NVIDIA 推出 Vera Rubin POD，这是一款结合七颗芯片、跨越五套机架级系统的巨型 AI 基础设施系统，采用统一架构。该平台代表 AI 计算密度和效率的重大飞跃，用于大规模训练和推理。",
+  "mainPoints": [
+    {
+      "point": "Vera Rubin POD 在五机架系统中集成七颗芯片。",
+      "explanation": "采用统一架构的大规模 AI 基础设施。"
+    }
+  ],
+  "keyQuotes": [
+    "NVIDIA Vera Rubin POD：七颗芯片、五套机架级系统。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "Vera Rubin",
+    "AI 基础设施",
+    "数据中心",
+    "GPU"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 62,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773689278000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 19:27:58"
+}

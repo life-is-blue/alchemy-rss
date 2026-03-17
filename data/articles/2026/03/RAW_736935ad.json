@@ -1,0 +1,54 @@
+{
+  "id": "RAW_736935ad",
+  "title": "用于数据分析的编码智能体",
+  "url": "https://simonwillison.net/2026/Mar/16/coding-agents-for-data-analysis/#atom-everything",
+  "date": "2026-03-16 20:12:32",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th March 2026 - Link Blog</p>\n   <p><strong><a href=\"https://simonw.github.io/nicar-2026-coding-agents/\">Coding agents for data analysis</a></strong>. Here's the handout I prepared for my NICAR 2026 workshop \"Coding agents for data analysis\" - a three hour session aimed at data journalists demonstrating ways that tools like Claude Code and OpenAI Codex can be used to explore, analyze and clean data.</p>\n   <p>Here's the table of contents:</p>\n   <blockquote>\n    <ul>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/coding-agents.html\">Coding agents</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/warmup.html\">Warmup: ChatGPT and Claude</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/setup.html\">Setup Claude Code and Codex</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/asking-questions.html\">Asking questions against a database</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/exploring-data.html\">Exploring data with agents</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/cleaning-trees.html\">Cleaning data: decoding neighborhood codes</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/visualizations.html\">Creating visualizations with agents</a></li>\n     <li><a href=\"https://simonw.github.io/nicar-2026-coding-agents/scraping.html\">Scraping data with agents</a></li>\n    </ul>\n   </blockquote>\n   <p>I ran the workshop using GitHub Codespaces and OpenAI Codex, since it was easy (and inexpensive) to distribute a budget-restricted API key for Codex that attendees could use during the class. Participants ended up burning $23 of Codex tokens.</p>\n   <p>The exercises all used Python and SQLite and some of them used Datasette.</p>\n   <p>One highlight of the workshop was when we started <a href=\"https://simonw.github.io/nicar-2026-coding-agents/visualizations.html#javascript-visualizations\">running Datasette</a> such that it served static content from a <code>viz/</code> folder, then had Claude Code start vibe coding new interactive visualizations directly in that folder. Here's a heat map it created for my trees database using Leaflet and <a href=\"https://github.com/Leaflet/Leaflet.heat\">Leaflet.heat</a>, <a href=\"https://gist.github.com/simonw/985ae2a6a3cd3df3fd375eb58dabea0f\">source code here</a>.</p>\n   <p><img alt=\"Screenshot of a &quot;Trees SQL Map&quot; web application with the heading &quot;Trees SQL Map&quot; and subheading &quot;Run a query and render all returned points as a heat map. The default query targets roughly 200,000 trees.&quot; Below is an input field containing &quot;/trees/-/query.json&quot;, a &quot;Run Query&quot; button, and a SQL query editor with the text &quot;SELECT cast(Latitude AS float) AS latitude, cast(Longitude AS float) AS longitude, CASE WHEN DBH IS NULL OR DBH = '' THEN 0.3 WHEN cast(DBH AS float) &lt;= 0 THEN 0.3 WHEN cast(DBH AS float) &gt;= 80 THEN 1.0&quot; (query is truncated). A status message reads &quot;Loaded 1,000 rows and plotted 1,000 points as heat map.&quot; Below is a Leaflet/OpenStreetMap interactive map of San Francisco showing a heat map overlay of tree locations, with blue/green clusters concentrated in areas like the Richmond District, Sunset District, and other neighborhoods. Map includes zoom controls and a &quot;Leaflet | © OpenStreetMap contributors&quot; attribution.\" src=\"https://static.simonwillison.net/static/2026/tree-sql-map.jpg\"></p>\n   <p>I designed the handout to also be useful for people who weren't able to attend the session in person. As is usually the case, material aimed at data journalists is equally applicable to anyone else with data to explore.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9333/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一份全面的研讨会指南，介绍如何利用 Claude Code 和 OpenAI Codex 等 AI 编码智能体进行端到端的数据分析、清洗和交互式可视化。",
+  "oneSentenceSummary": "一份全面的研讨会指南，介绍如何利用 Claude Code 和 OpenAI Codex 等 AI 编码智能体进行端到端的数据分析、清洗和交互式可视化。",
+  "summary": "本文介绍了 Simon Willison 在 NICAR 2026 研讨会上发布的一份详细讲义，旨在教授数据记者和开发者如何将 AI 智能体整合到他们的数据工作流程中。课程涵盖了整个流程：从在 GitHub Codespaces 中设置环境、使用自然语言查询数据库，到清洗杂乱的数据集和抓取网络数据。一个重要的亮点是“vibe coding”（氛围编码）的概念，其中 Claude Code 等智能体被用于在 Datasette 提供的环境中直接快速生成交互式 JavaScript 可视化（例如 Leaflet 热力图），这展示了数据科学领域向迭代的、智能体主导的开发模式的转变。",
+  "mainPoints": [
+    {
+      "point": "AI 编码智能体显著降低了复杂数据探索和清洗的门槛。",
+      "explanation": "通过使用 Claude Code 和 Codex 等工具，用户可以通过自然语言提示和迭代反馈，执行复杂的数据任务，例如解码社区代码或抓取网站。"
+    },
+    {
+      "point": "“vibe coding”工作流实现了交互式数据可视化的快速原型设计。",
+      "explanation": "将 AI 智能体与 Datasette 等实时服务工具集成，使开发者能够实时生成和优化复杂的 JavaScript 可视化（例如 Leaflet 地图），而无需手动编写样板代码。"
+    },
+    {
+      "point": "通过托管环境，实用的 AI 教育可以实现成本效益和可访问性。",
+      "explanation": "研讨会表明，结合使用 GitHub Codespaces 和预算受限的 API 密钥，可以为大型团体提供受控且经济实惠的实践学习。"
+    }
+  ],
+  "keyQuotes": [
+    "面向数据记者的材料同样适用于任何需要探索数据的人。",
+    "Claude Code 直接在该文件夹中开始“vibe coding”新的交互式可视化。",
+    "所有练习都使用了 Python 和 SQLite，其中一些还使用了 Datasette。",
+    "我设计这份讲义也是为了方便那些未能亲自参加会议的人。"
+  ],
+  "tags": [
+    "编码智能体",
+    "数据分析",
+    "Claude Code",
+    "OpenAI Codex",
+    "Datasette"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 235,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773691952000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:12:32"
+}

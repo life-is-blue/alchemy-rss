@@ -1,0 +1,54 @@
+{
+  "id": "RAW_472c803b",
+  "title": "介绍 deploy cli",
+  "url": "https://blog.langchain.com/introducing-deploy-cli/",
+  "date": "2026-03-16 17:20:21",
+  "author": "LangChain Accounts",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We’re excited to introduce the deploy cli, a new set of commands within the <code>langgraph-cli</code> package that makes it simple to deploy and manage agents directly from the command line.</p>\n  <p>The first command in this new set, <code>langgraph deploy</code>, lets you deploy an agent to <a href=\"https://docs.langchain.com/langsmith/deployments?ref=blog.langchain.com#langsmith-deployment\">LangSmith Deployment</a> in a single step. This makes it easy to integrate LangSmith Deployment into existing CI/CD workflows using tools like GitHub Actions, GitLab CI, or Bitbucket Pipelines.</p>\n  <p>When you run the command, the cli builds a Docker image for your local LangGraph project and provisions <a href=\"https://docs.langchain.com/langsmith/data-plane?ref=blog.langchain.com#server-infrastructure\">the infrastructure</a> needed to run it. This includes setting up supporting services like Postgres for persistence and Redis for streaming messages, so your agent can run reliably in production without any manual infrastructure setup.</p>\n  <p>Alongside <code>langgraph deploy</code>, we’re also introducing a few other commands to help create and manage deployments in your workspace.</p>\n  <p>You can:</p>\n  <ul>\n   <li>View all available commands using <code>langgraph deploy --help</code></li>\n   <li>List deployments in your workspace using <code>langgraph deploy list</code></li>\n   <li>View deployment logs using <code>langgraph deploy logs</code></li>\n   <li>Delete deployments using <code>langgraph deploy delete</code></li>\n  </ul>\n  <p>We’ve also released new <a href=\"https://github.com/langchain-ai/deep-agent-template?ref=blog.langchain.com\">deep agent</a> and <a href=\"https://github.com/langchain-ai/simple-agent-template?ref=blog.langchain.com\">simple agent</a> templates that you can generate with <code>langgraph new</code> .</p>\n  <p>To see how easy it is to deploy and manage your agents with the cli, see the below video:</p>\n  <figure class=\"kg-card kg-embed-card\">\n   <iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/hcWHufkzicc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Deploy CLI: The Easiest Way to Deploy Agents from Your Terminal\"></iframe>\n  </figure>\n  <hr>\n  <h2 id=\"try-it-out\">Try It Out</h2>\n  <p>The new commands are available now in the latest version of <code><strong>langgraph-cli</strong></code>. You can use <code>uvx</code> to get started easily:</p>\n  <pre><code class=\"language-jsx\">uvx --from langgraph-cli langgraph deploy\n</code></pre>\n  <p>See the docs here: <a href=\"https://docs.langchain.com/langsmith/cli?ref=blog.langchain.com#deploy\">https://docs.langchain.com/langsmith/cli#deploy</a>.</p>\n  <p>As always, we’d love your feedback as we continue improving the developer experience around building and deploying agents.</p>\n </body>\n</html>",
+  "aiSummary": "LangChain 推出 `langgraph-cli` 的 `deploy cli`，实现 AI 智能体一键部署到 LangSmith，并自动配置基础设施。",
+  "oneSentenceSummary": "LangChain 推出 `langgraph-cli` 的 `deploy cli`，实现 AI 智能体一键部署到 LangSmith，并自动配置基础设施。",
+  "summary": "文章宣布推出 `deploy cli`，这是 `langgraph-cli` 包中的一项新功能，旨在简化 AI 智能体从本地开发到生产环境的过渡。核心命令 `langgraph deploy` 自动化了向 LangSmith 的整个部署过程，包括构建 Docker 镜像和配置必要的基础设施，例如用于状态持久化的 Postgres 和用于消息流的 Redis。该工具专门设计用于与 GitHub Actions 等 CI/CD 工作流无缝集成。除了部署之外，该 CLI 还包括用于查看日志、列出活动部署和删除资源的管理工具，以及用于快速智能体原型设计的新模板。",
+  "mainPoints": [
+    {
+      "point": "`langgraph deploy` 命令实现了一键部署到 LangSmith。",
+      "explanation": "该命令通过自动化构建和部署步骤，简化了将智能体迁移到生产环境的复杂过程，使其非常适合集成到标准 CI/CD 流水线中。"
+    },
+    {
+      "point": "该 CLI 自动化了生产级基础设施的配置。",
+      "explanation": "通过自动设置 Docker 容器、用于持久化的 Postgres 和用于流式传输的 Redis，该工具减轻了开发人员手动管理基础设施的负担，确保了可靠性。"
+    },
+    {
+      "point": "一套全面的管理命令提供了完整的生命周期控制。",
+      "explanation": "包含用于列出部署、查看实时日志和删除资源的命令，使开发人员能够直接从终端管理其 AI 智能体基础设施，而无需使用 GUI。"
+    }
+  ],
+  "keyQuotes": [
+    "这组新命令中的第一个，`langgraph deploy`，让您只需一步即可将智能体部署到 LangSmith Deployment。",
+    "该 CLI 为您的本地 LangGraph 项目构建 Docker 镜像，并配置运行它所需的基础设施。",
+    "这包括设置 Postgres 等支持服务用于持久化，以及 Redis 用于消息流，从而使您的智能体能够在生产环境中可靠运行。",
+    "这使得将 LangSmith Deployment 轻松集成到现有的 CI/CD 工作流中成为可能，可以使用 GitHub Actions、GitLab CI 或 Bitbucket Pipelines 等工具。"
+  ],
+  "tags": [
+    "LangGraph",
+    "LangSmith",
+    "LLMOps",
+    "AI 智能体",
+    "部署自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 80,
+  "wordCount": 264,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773681621000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 17:20:21"
+}

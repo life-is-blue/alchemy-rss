@@ -1,0 +1,47 @@
+{
+  "id": "RAW_75ce03d7",
+  "title": "NVIDIA BlueField-4 CMX 上下文内存存储介绍",
+  "url": "https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/",
+  "date": "2026-03-16 20:30:00",
+  "author": "Moshe Anschel",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <br>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-768x432.png 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-179x101.png 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-300x169.png 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-625x352.png 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-1536x864.png 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-645x363.png 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-660x370.png 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-500x281.png 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-160x90.png 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-362x204.png 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-196x110.png 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-1024x576.png 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72-960x540.png 960w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/01/dgx-vera-rubin-nvl72.webp 1920w\" sizes=\"(max-width: 768px) 100vw, 768px\" title=\"dgx-vera-rubin-nvl72\">\n  <p>AI‑native organizations increasingly face scaling challenges as agentic AI workflows drive context windows to millions of tokens and models scale toward trillions of parameters. These systems rely on agentic long‑term memory for context that persists across turns, tools, and sessions so agents can build on prior reasoning instead of starting from scratch on every request.</p>\n  <p><a href=\"https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA BlueField-4 CMX 为面临大上下文窗口和多节点 GPU 部署扩展挑战的 AI 原生组织引入了上下文内存存储层。",
+  "oneSentenceSummary": "NVIDIA BlueField-4 CMX 为面临大上下文窗口和多节点 GPU 部署扩展挑战的 AI 原生组织引入了上下文内存存储层。",
+  "summary": "NVIDIA BlueField-4 CMX 上下文内存存储解决了 AI 原生组织面临的扩展挑战，随着智能体 AI 工作流推动上下文窗口达到数百万 token，模型向多节点 GPU 部署扩展。该技术为存储基础设施添加了专用的上下文内存层，实现大规模 AI 上下文的高效管理。",
+  "mainPoints": [
+    {
+      "point": "AI 原生组织面临智能体 AI 工作流的扩展挑战。",
+      "explanation": "现代 AI 应用需要处理数百万 token 的上下文窗口，对基础设施提出前所未有的需求。"
+    },
+    {
+      "point": "BlueField-4 CMX 为存储基础设施添加上下文内存层。",
+      "explanation": "该专用层优化 AI 上下文管理的存储，解决大上下文窗口的瓶颈。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 原生组织日益面临扩展挑战，因为智能体 AI 工作流将上下文窗口推向数百万 token。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "BlueField-4",
+    "CMX",
+    "上下文内存",
+    "AI 基础设施"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 56,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773693000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:30:00"
+}

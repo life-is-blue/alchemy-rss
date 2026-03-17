@@ -1,0 +1,47 @@
+{
+  "id": "RAW_b35b730e",
+  "title": "新的“氛围编码”AI 翻译工具在视频游戏保存社区中引发分歧",
+  "url": "https://arstechnica.com/ai/2026/03/new-vibe-coded-ai-translation-tool-splits-the-video-game-preservation-community/",
+  "date": "2026-03-16 20:06:56",
+  "author": "Kyle Orland",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Since Andrej Karpathy <a href=\"https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/\">coined the term \"vibe coding\" just over a year ago</a>, we've seen a rapid increase in both the <a href=\"https://arstechnica.com/ai/2026/02/sixteen-claude-ai-agents-working-together-created-a-new-c-compiler/\">capabilities</a> and <a href=\"https://arstechnica.com/information-technology/2026/01/10-things-i-learned-from-burning-myself-out-with-ai-coding-agents/\">popularity</a> of using AI models to throw together quick programming projects with less human time and effort than ever before. One such vibe-coded project, <a href=\"https://github.com/gaming-alexandria/Gaming-Alexandria-Researcher\">Gaming Alexandria Researcher</a>, launched over the weekend as what coder Dustin Hubbard called an effort to help organize the <a href=\"https://www.gamingalexandria.com/wp/magazines/\">hundreds of scanned Japanese gaming magazines</a> he's helped maintain at clearinghouse Gaming Alexandria over the years, alongside machine translations of their OCR text.</p>\n  <p>A day after that project went public, though, Hubbard was <a href=\"https://www.patreon.com/posts/apology-153042274\">issuing an apology</a> to many members of the Gaming Alexandria community who loudly objected to the use of Patreon funds for an error-prone AI-powered translation effort. The hubbub highlights just how controversial AI tools remain for many online communities, even as many see them as ways to maximize limited funds and man-hours.</p>\n  <p>\"I sincerely apologize,\" Hubbard wrote in his apology post. \"My entire preservation philosophy has been to get people access to things we've never had access to before. I felt this project was a good step towards that, but I should have taken more into consideration the issues with AI.\"</p>\n  <p><a href=\"https://arstechnica.com/ai/2026/03/new-vibe-coded-ai-translation-tool-splits-the-video-game-preservation-community/\">Read full article</a></p>\n  <p><a href=\"https://arstechnica.com/ai/2026/03/new-vibe-coded-ai-translation-tool-splits-the-video-game-preservation-community/#comments\">Comments</a></p>\n </body>\n</html>",
+  "aiSummary": "一款新的氛围编码 AI 翻译工具因其在质量和效率权衡方面的表现，正在视频游戏本地化社区中引发争议。",
+  "oneSentenceSummary": "一款新的氛围编码 AI 翻译工具因其在质量和效率权衡方面的表现，正在视频游戏本地化社区中引发争议。",
+  "summary": "自 Andrej Karpathy 一年前提出“氛围编码”以来，AI 翻译工具已大量涌现。一款新的氛围编码 AI 翻译工具正在视频游戏本地化社区中引发争论，提出了关于 AI 辅助翻译工作流中质量与效率权衡的问题。",
+  "mainPoints": [
+    {
+      "point": "氛围编码推动了 AI 工具的快速发展。",
+      "explanation": "这一范式转变使得 AI 驱动的应用能够快速创建。"
+    },
+    {
+      "point": "AI 翻译工具正在颠覆游戏本地化。",
+      "explanation": "社区对此存在分歧，围绕质量与效率的权衡展开讨论。"
+    }
+  ],
+  "keyQuotes": [
+    "自 Andrej Karpathy 就在一年多前提出了‘氛围编码’这一术语以来，我们已经看到 AI 工具数量的迅速增加。"
+  ],
+  "tags": [
+    "氛围编码",
+    "AI 翻译",
+    "本地化",
+    "游戏行业",
+    "Andrej Karpathy"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 204,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773691616000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:06:56"
+}

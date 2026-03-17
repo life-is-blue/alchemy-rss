@@ -1,0 +1,47 @@
+{
+  "id": "RAW_e6d3180d",
+  "title": "Newton 为工业机器人增加接触丰富的操作和运动能力",
+  "url": "https://developer.nvidia.com/blog/newton-adds-contact-rich-manipulation-and-locomotion-capabilities-for-industrial-robotics/",
+  "date": "2026-03-16 20:28:50",
+  "author": "Philipp Reist",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <br>\n  <img width=\"600\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks.webp\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"A Gif showing robot movements.\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks.webp 600w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks-179x101.webp 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks-300x169.webp 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks-500x282.webp 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks-160x90.webp 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks-362x204.webp 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Newton-Tasks-195x110.webp 195w\" sizes=\"auto, (max-width: 600px) 100vw, 600px\" title=\"Newton-Tasks\">\n  <p>Physics forms the foundation of robotic simulation, enabling realistic modeling of motion and interaction. For tasks like locomotion and manipulation, simulators must handle complex dynamics such as contact forces and deformable objects. While most engines trade off speed for realism, Newton—a GPU-accelerated, open source simulator—is designed to do both. Newton 1.0 GA…</p>\n  <p><a href=\"https://developer.nvidia.com/blog/newton-adds-contact-rich-manipulation-and-locomotion-capabilities-for-industrial-robotics/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA Newton 通过基于物理的建模，为机器人仿真增加了接触丰富的操作和运动能力。",
+  "oneSentenceSummary": "NVIDIA Newton 通过基于物理的建模，为机器人仿真增加了接触丰富的操作和运动能力。",
+  "summary": "NVIDIA Newton 通过增加接触丰富的操作和运动能力，增强了机器人仿真。物理学是机器人仿真的基础，能够为需要精确物理接触的复杂任务实现运动和交互的真实建模。",
+  "mainPoints": [
+    {
+      "point": "物理学构成了真实机器人仿真的基础。",
+      "explanation": "精确的物理建模使机器人能够学习和规划在现实世界中有效的运动。"
+    },
+    {
+      "point": "Newton 增加了接触丰富的操作能力。",
+      "explanation": "该平台专门解决需要物理交互和接触的复杂任务。"
+    }
+  ],
+  "keyQuotes": [
+    "物理学构成了机器人仿真的基础，能够实现运动和交互的真实建模。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "Newton",
+    "机器人技术",
+    "仿真",
+    "物理学"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 53,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773692930000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:28:50"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f674d03f",
+  "title": "介绍 Mistral Small 4",
+  "url": "https://simonwillison.net/2026/Mar/16/mistral-small-4/#atom-everything",
+  "date": "2026-03-16 23:41:17",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">16th March 2026 - Link Blog</p>\n   <p><strong><a href=\"https://mistral.ai/news/mistral-small-4\">Introducing Mistral Small 4</a></strong>. Big new release from Mistral today (despite the name) - a new Apache 2 licensed 119B parameter (Mixture-of-Experts, 6B active) model which they describe like this:</p>\n   <blockquote>\n    <p>Mistral Small 4 is the first Mistral model to unify the capabilities of our flagship models, Magistral for reasoning, Pixtral for multimodal, and Devstral for agentic coding, into a single, versatile model.</p>\n   </blockquote>\n   <p>It supports <code>reasoning_effort=\"none\"</code> or <code>reasoning_effort=\"high\"</code>, with the latter providing \"equivalent verbosity to previous Magistral models\".</p>\n   <p>The new model is <a href=\"https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/tree/main\">242GB on Hugging Face</a>.</p>\n   <p>I <a href=\"https://gist.github.com/simonw/3dec228577559f15f26204a3cc550583\">tried it out</a> via the Mistral API using <a href=\"https://github.com/simonw/llm-mistral\">llm-mistral</a>:</p>\n   <pre><code>llm install llm-mistral\nllm mistral refresh\nllm -m mistral/mistral-small-2603 \"Generate an SVG of a pelican riding a bicycle\"\n</code></pre>\n   <p><img alt=\"The bicycle is upside down and mangled and the pelican is a series of grey curves with a triangular beak.\" src=\"https://static.simonwillison.net/static/2026/mistral-small-4.png\"></p>\n   <p>I couldn't find a way to set the reasoning effort in their <a href=\"https://docs.mistral.ai/api/endpoint/chat#operation-chat_completion_v1_chat_completions_post\">API documentation</a>, so hopefully that's a feature which will land soon.</p>\n   <p>Also from Mistral today and fitting their -stral naming convention is <a href=\"https://mistral.ai/news/leanstral\">Leanstral</a>, an open weight model that is specifically tuned to help output the <a href=\"https://lean-lang.org/\">Lean 4</a> formally verifiable coding language. I haven't explored Lean at all so I have no way to credibly evaluate this, but it's interesting to see them target one specific language in this way.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9335/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 介绍了 Mistral Small 4，这是一款新的 119B 参数 MoE 模型，它在 Apache 2 许可下统一了推理、多模态和编码能力。",
+  "oneSentenceSummary": "Simon Willison 介绍了 Mistral Small 4，这是一款新的 119B 参数 MoE 模型，它在 Apache 2 许可下统一了推理、多模态和编码能力。",
+  "summary": "这篇文章报道了 Mistral AI 发布 Mistral Small 4，这是一款重要的 119B 参数专家混合（MoE）模型。该模型值得关注之处在于，它将 Mistral 之前旗舰模型（Magistral 用于推理、Pixtral 用于多模态、Devstral 用于编码）的专业能力统一到一个多功能架构中。它支持可调节的推理工作量级别，并以 Apache 2 许可发布。作者使用 'llm' CLI 工具提供了一个简短的实际演示，并提到了同时发布的 Leanstral，这是一款专门为 Lean 4 形式化验证语言优化的模型。",
+  "mainPoints": [
+    {
+      "point": "Mistral Small 4 将专业模型能力统一到一个多功能的 119B MoE 模型中。",
+      "explanation": "该模型整合了之前在 Magistral 和 Pixtral 等独立旗舰模型中发现的推理、多模态和智能体编码功能，从而创建了一个更通用的工具。"
+    },
+    {
+      "point": "该模型以 Apache 2 许可发布，促进了开放可访问性。",
+      "explanation": "尽管其体积庞大（Hugging Face 上为 242GB），但宽松的许可允许更广泛的社区使用，并集成到各种开发者工作流程中。"
+    },
+    {
+      "point": "Mistral 正在通过 Leanstral 等专业版本瞄准利基技术领域。",
+      "explanation": "除了通用模型，Mistral 还发布了 Leanstral，它专门针对 Lean 4 形式化可验证的编码语言进行了调优，这表明了领域特定优化的趋势。"
+    }
+  ],
+  "keyQuotes": [
+    "Mistral Small 4 是首个将我们旗舰模型（Magistral 用于推理、Pixtral 用于多模态、Devstral 用于智能体编码）的能力统一到一个多功能模型中的 Mistral 模型。",
+    "它支持 reasoning_effort='none' 或 reasoning_effort='high'，其中后者提供了‘与之前的 Magistral 模型相当的冗余度’。",
+    "Leanstral 是一款开放权重模型，专门用于帮助输出 Lean 4 形式化可验证的编码语言。"
+  ],
+  "tags": [
+    "Mistral AI",
+    "大型语言模型",
+    "开源",
+    "专家混合",
+    "Lean 4"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 200,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773704477000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 23:41:17"
+}

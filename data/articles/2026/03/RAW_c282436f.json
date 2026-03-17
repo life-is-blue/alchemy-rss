@@ -1,0 +1,47 @@
+{
+  "id": "RAW_c282436f",
+  "title": "借助 NVIDIA DSX Air 设计、模拟和扩展 AI 工厂基础设施",
+  "url": "https://developer.nvidia.com/blog/design-simulate-and-scale-ai-factory-infrastructure-with-nvidia-dsx-air/",
+  "date": "2026-03-16 20:01:33",
+  "author": "Ranga Maddipudi",
+  "siteName": "NVIDIA Technical Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <br>\n  <img width=\"768\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-768x432.png\" class=\"webfeedsFeaturedVisual wp-post-image\" alt=\"Image of NVIDIA DSX Air being used on a laptop.\" style=\"display: block; margin-bottom: 5px; clear:both;max-width: 100%;\" link_thumbnail=\"\" decoding=\"async\" loading=\"lazy\" srcset=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-768x432.png 768w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-179x101.png 179w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-300x169.png 300w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-625x352.png 625w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-1536x864.png 1536w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-645x363.png 645w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-660x370.png 660w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-500x281.png 500w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-160x90.png 160w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-362x204.png 362w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-196x110.png 196w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-1024x576.png 1024w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air-960x540.png 960w, https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/DSX-Air.webp 1920w\" sizes=\"auto, (max-width: 768px) 100vw, 768px\" title=\"DSX-Air\">\n  <p>Building AI factories is complex and requires efficient integration across compute, networking, security, and storage systems. To achieve rapid Time to AI and strong ROI, the new NVIDIA DSX Air is enabling organizations to simulate their entire AI factory infrastructure in the cloud—covering compute, networking, storage, and security. Being able to design, test, and optimize systems before…</p>\n  <p><a href=\"https://developer.nvidia.com/blog/design-simulate-and-scale-ai-factory-infrastructure-with-nvidia-dsx-air/\" rel=\"nofollow\" data-wpel-link=\"internal\" target=\"_self\">Source</a></p>\n </body>\n</html>",
+  "aiSummary": "NVIDIA 提供工具，以高效设计、模拟和扩展 AI 工厂基础设施。",
+  "oneSentenceSummary": "NVIDIA 提供工具，以高效设计、模拟和扩展 AI 工厂基础设施。",
+  "summary": "建设 AI 工厂复杂且需要高效的基础设施。NVIDIA 提供解决方案，用于设计、模拟和扩展 AI 工厂基础设施，以满足现代 AI 工作负载日益增长的计算需求。",
+  "mainPoints": [
+    {
+      "point": "AI 工厂建设复杂。",
+      "explanation": "需要周密的规划和模拟。"
+    },
+    {
+      "point": "NVIDIA 提供端到端的基础设施解决方案。",
+      "explanation": "从设计到部署和扩展。"
+    }
+  ],
+  "keyQuotes": [
+    "建设 AI 工厂复杂且需要高效的基础设施。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "AI 工厂",
+    "基础设施",
+    "模拟",
+    "扩展"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 58,
+  "domain": "developer.nvidia.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dacaf9e9",
+  "sourceName": "NVIDIA Technical Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773691293000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 20:01:33"
+}
