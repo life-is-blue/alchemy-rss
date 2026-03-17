@@ -1,0 +1,63 @@
+{
+  "id": "RAW_fe37315e",
+  "title": "LWiAI 播客 #237 - Nemotron 3 Super，xAI 重生，Anthropic 诉讼，研究进展！",
+  "url": "https://lastweekin.ai/p/lwiai-podcast-237-nemotron-3-super",
+  "date": "2026-03-16 06:06:58",
+  "author": "Last Week in AI",
+  "siteName": "Last Week in AI",
+  "content": "<html>\n <head></head>\n <body>\n  <div id=\"youtube2-xmi-1R8UGtw\" class=\"youtube-wrap\" data-attrs=\"{&quot;videoId&quot;:&quot;xmi-1R8UGtw&quot;,&quot;startTime&quot;:null,&quot;endTime&quot;:null}\" data-component-name=\"Youtube2ToDOM\">\n   <div class=\"youtube-inner\">\n    <iframe src=\"https://www.youtube-nocookie.com/embed/xmi-1R8UGtw?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0\" frameborder=\"0\" loading=\"lazy\" gesture=\"media\" allow=\"autoplay; fullscreen\" allowautoplay=\"true\" allowfullscreen=\"true\" width=\"728\" height=\"409\"></iframe>\n   </div>\n  </div>\n  <p>Our 237th episode with a summary and discussion of last week’s big AI news!</p>\n  <p>Recorded on 03/13/2026</p>\n  <p>Hosted by <a href=\"https://twitter.com/andrey_kurenkov\">Andrey Kurenkov</a> and <a href=\"https://www.linkedin.com/in/jeremieharris/\">Jeremie Harris</a></p>\n  <p>Feel free to email us your questions and feedback at andreyvkurenkov@gmail.com and/or <a href=\"mailto:hello@gladstone.ai\">hello@gladstone.ai</a></p>\n  <p>In this episode:</p>\n  <p>* Perplexity announced “Personal Computer,” a local Mac-based AI agent positioned as a safer alternative to OpenAI’s computer-use agents, while Anthropic added GitHub PR code review pricing reviews at $15–$25 and Cursor launched trigger-based “Automations” for always-on coding agents.</p>\n  <p>* ChatGPT introduced interactive math/science visuals and Anthropic added in-chat interactive charts/diagrams; Nvidia released open weights for its 120B-parameter Natron Free Super hybrid Transformer–Mamba latent-MoE model trained natively at 4-bit for Blackwell GPUs.</p>\n  <p>* Nvidia halted H200 production for China amid customs blocks and domestic chip pressure; xAI saw major co-founder departures; Anthropic previewed a Claude Marketplace for enterprise procurement; Yann LeCun’s aMI raised $1.3B; humanoid robot maker Sanctuary reached a $1.15B valuation.</p>\n  <p>* Anthropic sued the Pentagon over a “supply chain risk” designation as memos ordered removal within 180 days; research covered models resisting activation steering, limits of chain-of-thought control, inference-scaling boosting cyber-task success, low-probability risky actions, weaknesses in SWE-bench, multimodal pretraining, long-context RNN memory caching, context-parallel training efficiency, RL for CUDA kernel optimization, and latent introspection detecting concept injection.</p>\n  <p>A thank you to our current sponsors:</p>\n  <ul>\n   <li>\n    <p>Box - visit Box.com/AI to learn more</p>\n   </li>\n   <li>\n    <p>ODSC AI - go to <a href=\"http://odsc.ai/east\">odsc.ai/east</a> and use promo code LWAI for an additional 15% off your pass to ODSC AI East 2026.</p>\n   </li>\n   <li>\n    <p>Factor - head to <a href=\"http://factormeals.com/lwai50off\">factormeals.com/lwai50off</a> and use code lwai50off to get 50 percent off and free breakfast for a year</p>\n   </li>\n  </ul>\n  <p>Timestamps:</p>\n  <ul>\n   <li>\n    <p>(00:00:10) Intro / Banter</p>\n   </li>\n   <li>\n    <p>(00:01:23) Response to listener comments</p>\n   </li>\n   <li>\n    <p>Tools &amp; Apps</p>\n   </li>\n   <li>\n    <p>(00:02:06) <a href=\"https://www.theverge.com/ai-artificial-intelligence/893536/perplexitys-personal-computer-turns-your-spare-mac-into-an-ai-agent\">Perplexity’s Personal Computer turns your spare Mac into an AI agent | The Verge</a></p>\n   </li>\n   <li>\n    <p>(00:04:22) <a href=\"https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-ai-generated-code/\">Anthropic launches code review tool to check flood of AI-generated code | TechCrunch</a></p>\n   </li>\n   <li>\n    <p>(00:08:08 ) <a href=\"https://techcrunch.com/2026/03/05/cursor-is-rolling-out-a-new-system-for-agentic-coding/\">Cursor is rolling out a new kind of agentic coding tool | TechCrunch</a></p>\n   </li>\n   <li>\n    <p>(00:11:14) <a href=\"https://techcrunch.com/2026/03/10/chatgpt-can-now-create-interactive-visuals-to-help-you-understand-math-and-science-concepts/\">ChatGPT can now create interactive visuals to help you understand math and science concepts | TechCrunch</a></p>\n   </li>\n   <li>\n    <p>(00:11:56) <a href=\"https://www.theverge.com/ai-artificial-intelligence/893625/anthropic-claude-ai-charts-diagrams\">Anthropic’s Claude AI can respond with charts, diagrams, and other visuals now | The Verge</a>\n     <br></p>\n   </li>\n  </ul>\n  <ul>\n   <li>\n    <p>Projects &amp; Open Source</p>\n   </li>\n   <li>\n    <p>(00:13:54) <a href=\"https://developer.nvidia.com/blog/introducing-nemotron-3-super-an-open-hybrid-mamba-transformer-moe-for-agentic-reasoning/\">Introducing Nemotron 3 Super: An Open Hybrid Mamba-Transformer MoE for Agentic Reasoning | NVIDIA Technical Blog</a>\n     <br></p>\n   </li>\n  </ul>\n  <ul>\n   <li>\n    <p>Applications &amp; Business</p>\n   </li>\n   <li>\n    <p>(00:21:22) <a href=\"https://asiatimes.com/2026/03/nvidia-halts-h200-production-as-china-backs-huawei-ai-chips/\">Nvidia halts H200 production as China backs Huawei AI chips</a></p>\n   </li>\n   <li>\n    <p>(00:28:33) <a href=\"https://www.businessinsider.com/xai-cofounders-guodong-zhang-zihang-dai-depart-elon-musk-company-2026-3\">Another XAI Cofounder Has Left, and Another Says He’s Leaving. - Business Insider</a></p>\n   </li>\n   <li>\n    <p>(00:34:04) <a href=\"https://www.techradar.com/pro/anthropics-claude-marketplace-allows-customers-to-buy-third-party-cloud-services\">Anthropic’s Claude Marketplace allows customers to buy third-party cloud services | TechRadar</a></p>\n   </li>\n   <li>\n    <p>(00:37:57) <a href=\"https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/\">Yann LeCun’s AMI Labs raises $1.03 billion to build world models | TechCrunch</a></p>\n   </li>\n   <li>\n    <p>(00:44:52) <a href=\"https://techcrunch.com/2026/03/12/humanoid-robotics-maker-sunday-reaches-1-15b-valuation-to-build-household-robots/\">Humanoid robotics maker Sunday reaches $1.15B valuation to build household robots | TechCrunch</a>\n     <br></p>\n   </li>\n   <li>\n    <p>Policy &amp; Safety</p>\n   </li>\n   <li>\n    <p>(00:46:09) <a href=\"https://www.nytimes.com/2026/03/09/technology/anthropic-defense-artificial-intelligence-lawsuit.html\">Anthropic Sues Department of Defense Over ‘Supply Chain Risk’ Label - The New York Times</a> + <a href=\"https://gizmodo.com/google-and-openai-just-filed-a-legal-brief-in-support-of-anthropic-2000731754\">Google and OpenAI Just Filed a Legal Brief in Support of Anthropic</a></p>\n   </li>\n   <li>\n    <p>(00:53:24) <a href=\"https://www.cbsnews.com/news/pentagon-ai-anthropic-memo-remove-from-key-systems/\">Internal Pentagon memo orders military commanders to remove Anthropic AI technology from key systems - CBS News</a></p>\n   </li>\n   <li>\n    <p>(00:58:15) <a href=\"https://arxiv.org/abs/2602.06941\">Endogenous Resistance to Activation Steering in Language Models</a></p>\n   </li>\n   <li>\n    <p>(01:06:27) <a href=\"https://arxiv.org/abs/2603.05706\">Reasoning Models Struggle to Control their Chains of Thought</a></p>\n   </li>\n   <li>\n    <p>(01:09:52) <a href=\"https://www.theguardian.com/world/2026/mar/07/it-means-missile-defence-on-data-centres-drone-strikes-raises-doubts-over-gulf-as-ai-superpower\">‘It means missile defence on datacentres’: drone strikes raise doubts over Gulf as AI superpower</a></p>\n   </li>\n   <li>\n    <p>(01:14:57) <a href=\"https://www.aisi.gov.uk/blog/evidence-for-inference-scaling-in-ai-cyber-tasks-increased-evaluation-budgets-reveal-higher-success-rates\">Evidence for inference scaling in AI cyber tasks: Increased evaluation budgets reveal higher success rates</a></p>\n   </li>\n   <li>\n    <p>(01:18:24) <a href=\"https://arxiv.org/abs/2603.02202\">Frontier Models Can Take Actions at Low Probabilities</a>\n     <br></p>\n   </li>\n  </ul>\n  <ul>\n   <li>\n    <p>Research &amp; Advancements</p>\n   </li>\n   <li>\n    <p>(01:24:20) <a href=\"https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/\">Research note: Many SWE-bench-Passing PRs Would Not Be Merged into Main</a></p>\n   </li>\n   <li>\n    <p>(01:28:26) <a href=\"https://arxiv.org/abs/2603.03276\">[2603.03276] Beyond Language Modeling: An Exploration of Multimodal Pretraining</a></p>\n   </li>\n   <li>\n    <p>(01:40:09) <a href=\"https://arxiv.org/abs/2602.24281\">Memory Caching: RNNs with Growing Memory</a></p>\n   </li>\n   <li>\n    <p>(01:48:47) <a href=\"https://arxiv.org/abs/2602.21196\">Untied Ulysses: Memory-Efficient Context Parallelism via Headwise Chunking</a></p>\n   </li>\n   <li>\n    <p>(01:58:41) <a href=\"https://arxiv.org/abs/2602.24286\">CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation</a></p>\n   </li>\n   <li>\n    <p>(02:08:57) <a href=\"https://arxiv.org/abs/2602.20031\">Latent Introspection: Models Can Detect Prior Concept Injections</a></p>\n   </li>\n   <li>\n    <p>(02:16:45) <a href=\"https://www.lesswrong.com/posts/9FH49ZgJFW4WtbxLi/physics-of-rl-toy-scaling-laws-for-the-emergence-of-reward\">Physics of RL: Toy scaling laws for the emergence of reward-seeking</a></p>\n   </li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "本周 AI 新闻全面综述，涵盖智能体工具发布、英伟达的混合 Mamba-Transformer 模型、xAI 的重大行业转变，以及关于模型安全和基准局限性的关键研究。",
+  "oneSentenceSummary": "本周 AI 新闻全面综述，涵盖智能体工具发布、英伟达的混合 Mamba-Transformer 模型、xAI 的重大行业转变，以及关于模型安全和基准局限性的关键研究。",
+  "summary": "本期《Last Week in AI》播客对截至 2026 年 3 月的 AI 格局进行了高密度概述。主要进展包括本地 AI 智能体（Perplexity）和智能体编码工具（Cursor、Anthropic）的兴起。在硬件方面，英伟达发布 Nemotron 3 Super，展示了为实现更好推理能力而转向混合架构（Mamba-Transformer）的趋势。该行业还面临法律和地缘政治障碍，例如 Anthropic 因供应链风险认定起诉五角大楼。最后，研究部分强调了对 SWE-bench 等当前基准日益增长的怀疑，并探讨了控制模型“思维链”和激活转向的复杂性。",
+  "mainPoints": [
+    {
+      "point": "AI 行业正从聊天界面转向自主智能体工作流。",
+      "explanation": "Perplexity（本地 Mac 智能体）、Cursor（基于触发器的自动化）和 Anthropic（自动化代码审查）的发布，标志着 AI 正转向独立执行任务而非仅仅生成文本。"
+    },
+    {
+      "point": "英伟达正通过混合 Nemotron 3 Super 实现模型架构多样化。",
+      "explanation": "通过在 1200 亿参数的潜在 MoE 模型中结合 Transformer 和 Mamba 架构，英伟达旨在优化智能体推理和效率，并专门为 Blackwell GPU 硬件量身定制。"
+    },
+    {
+      "point": "地缘政治和安全紧张局势正给主要 AI 实验室带来法律摩擦。",
+      "explanation": "Anthropic 在 Google 和 OpenAI 的支持下，因“供应链风险”标签起诉五角大楼，这表明 AI 融入国防系统具有高风险。"
+    },
+    {
+      "point": "SWE-bench 等当前 AI 评估基准可能存在根本性缺陷。",
+      "explanation": "研究表明，许多通过 SWE-bench 的拉取请求在实际场景中并不会真正合并到主分支，这暗示 AI 编码能力可能被夸大。"
+    },
+    {
+      "point": "模型安全研究正在揭示引导和控制 LLM 推理的局限性。",
+      "explanation": "关于激活转向和思维链控制的研究表明，模型可能抵制外部影响或难以保持内部逻辑，这对可靠的 AI 对齐构成了挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "Perplexity 发布了“Personal Computer”，这是一款基于 Mac 的本地 AI 智能体，被定位为 OpenAI 计算机使用智能体的更安全替代方案。",
+    "英伟达发布了其 1200 亿参数的 Nemotron 3 Super 混合 Transformer-Mamba 潜在 MoE 模型的开放权重，该模型专为 Blackwell GPU 进行 4 比特原生训练。",
+    "Anthropic 因“供应链风险”认定起诉五角大楼，此前备忘录要求在 180 天内移除相关产品。",
+    "研究涵盖了模型抵制激活转向、思维链控制的局限性以及 SWE-bench 的弱点。",
+    "推理规模化提升网络任务成功率：增加评估预算揭示更高的成功率。"
+  ],
+  "tags": [
+    "AI 新闻",
+    "LLM",
+    "AI 智能体",
+    "英伟达 Nemotron",
+    "AI 政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 630,
+  "domain": "lastweekin.ai",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_6cc856",
+  "sourceName": "Last Week in AI",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773641218000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-16 06:06:58"
+}

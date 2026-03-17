@@ -1,23 +1,27 @@
-> **更新时间**: 2026-03-11 10:52:45 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-17 08:10:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [构建-AI-改善医疗保健-—-OpenAI-播客-第-14-集](https://www.youtube.com/watch?v=VAzryGwnJW8)
+
+2026-03-16 17:00:00 | 标签: OpenAI, 医疗 AI, ChatGPT Health, 医疗 AI, Healthbench
+
+> 本期 OpenAI 播客节目邀请了 Nate Gross（医疗健康负责人）和 Karan Singhal（医疗 AI 研究负责人）讨论 OpenAI 的医疗 AI 计划。对话涵盖了他们通过医疗健康应用确保 AGI 造福全人类的使命、开发具有增强隐私保护和用户上下文集成功能的 ChatGPT Health，以及涉及 250 多名医生、涵盖 48，500 多个评估维度的严格 Healthbench 评估框架。团队强调，医疗保健并非多选题——患者面临复杂的病情，需要细致入微的理解。OpenAI 的模型在从预训练到后训练的每个阶段都独特地整合了医疗健康考量，从而在医疗基准测试中展现出显著的性能优势。
+
+
+
 ### [Build-Hour：API-与-Codex](https://www.youtube.com/watch?v=rhsSqr0jdFw)
 
-2026-03-10 17:42:29 | 标签: OpenAI Codex, 智能体工作流, Harness Engineering, 软件架构, GPT-5.4
-
-> 本文详细介绍了软件开发从 AI 辅助结对编程向“智能体委派”（Agentic Delegation）的转变。OpenAI 专家和行业从业者介绍了“Harness Engineering”，这一实践专注于提高代码库对 AI 智能体的“可读性”。通过实施严格的架构边界、自动化验证桩以及代码库级指令（如 `agents.md`），团队可以让智能体自主生成、测试并提交高质量代码。关键技术更新包括 GPT-5.4 的计算机使用能力、Codex 桌面应用的原生 Windows 支持，以及用于并行智能体工作流的“Worktrees”。讨论强调，随着 AI 降低代码生成成本，开发者的角色正从编写代码行转向编排...
+2026-03-10 17:42:29
 
 
 
 ### [AlphaGo-十年：AI-的转折点-|-Thore-Graepel-&amp;-Pushmeet-Kohli](https://www.youtube.com/watch?v=qoinGjj60Fo)
 
-2026-03-10 17:28:31 | 标签: AlphaGo, 强化学习, 深度学习, AlphaZero, 科学 AI
-
-> 本访谈与 AlphaGo 的核心架构师进行了深度对话，回顾了 2016 年与李世石的对弈这一 AI 历史上的关键时刻。访谈解释了 AlphaGo 的技术突破：将“快思考”（深度学习策略/价值网络）与“慢思考”（蒙特卡洛树搜索）相结合，以应对巨大的搜索空间。讨论强调了“第 37 手”作为 AI 原创洞察潜力的象征，以及“第 78 手”作为人类智慧与系统脆弱性的提醒。讨论的一个关键演进是向 AlphaZero 的过渡，它通过放弃人类数据并采用纯强化学习，超越了人类的能力。参与者展示了这些“AI 驱动搜索”的原理随后如何应用于科学前沿，从而在蛋白质折叠（AlphaFold）和矩阵乘法优化（Alpha...
+2026-03-10 17:28:31
 
 
 
@@ -273,7 +277,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -285,7 +289,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
