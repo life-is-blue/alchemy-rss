@@ -1,0 +1,47 @@
+{
+  "id": "RAW_b473e5b6",
+  "title": "QCon London 2026：生产环境 AI 系统的可靠检索",
+  "url": "https://www.infoq.com/news/2026/03/retrieval-production-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-17 16:44:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/\">QCon London 2026</a>, <a href=\"https://qconlondon.com/presentation/mar2026/reliable-retrieval-production-ai-systems\">Lan Chu</a>, AI Tech Lead at Rabobank, shared lessons from deploying a production AI search system used internally by more than 300 users across 10,000 documents. Her experience shows that most failures in RAG systems stem from indexing and retrieval, rather than the language model itself.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/retrieval-production-ai/news/2026/03/retrieval-production-ai/en/resources/1headerma-1773755822782.jpg\" style=\"width: 800px; height: 420px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/retrieval-production-ai/en/resources/1headerma-1773755822782.jpg\" rel=\"share\"></p>\n   <p>The system allows users to search thousands of internal documents, including PDFs and PowerPoint files, to quickly extract insights for tasks such as preparing for client meetings.</p>\n   <p>Its architecture follows a typical RAG pipeline:</p>\n   <p>1- Document ingestion: parsing, chunking, and embedding documents before indexing them in a vector database</p>\n   <p>2- Retrieval and generation: retrieving relevant chunks and sending them to an LLM to generate answers</p>\n   <p>3- Observability: monitoring traces, retrieval performance, and evaluation metrics</p>\n   <p>While the architecture appears simple, Chu explained that production systems quickly encounter challenges around document quality, retrieval relevance, and evaluation.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/retrieval-production-ai/news/2026/03/retrieval-production-ai/en/resources/202-1773755822782.jpeg\" style=\"width: 800px; height: 369px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/retrieval-production-ai/en/resources/202-1773755822782.jpeg\" rel=\"share\"></p>\n   <p>The presenter highlighted that parsing documents accurately is crucial for AI retrieval systems. Enterprise documents often have complex layouts like tables and infographics, and simply converting them to plain text can strip away important structure, causing misread numbers or misinterpreted tables. To fix this, she built a pipeline combining traditional text extraction with visual-language models that understand layouts.</p>\n   <p>Even with modern language models, chunking content is necessary to avoid overwhelming the model and increasing costs. Chu tested different methods and found that breaking documents into sections worked best for her dataset, reaching high accuracy, though she stressed that the right strategy depends on the specific data.</p>\n   <p>Standard retrieval systems rely on vector similarity, but this can miss important context, like the timing of a document. Her system added temporal scoring to favor newer documents and a routing layer to decide whether to retrieve documents or call external APIs. Since models can struggle with tool parameters, sometimes users are asked to confirm inputs.</p>\n   <p>Evaluation is often neglected, but Chu recommends building datasets from real user queries, tracking failure modes like routing or temporal errors, and using statistical methods to verify improvements. Real queries often provide more value than synthetic datasets.</p>\n   <p>The key lessons are that building effective AI search systems requires careful attention to several key areas, retrieval quality relies on accurate document parsing and indexing, chunking strategies need to be tested and validated on real datasets, and retrieval should consider signals beyond simple text similarity, like temporal relevance. The presenter&nbsp;noted that agentic architectures can enhance capabilities but introduce additional complexity, and that robust, structured evaluation frameworks are essential to ensure reliable performance in production AI systems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Reliable Retrieval for Production AI Systems\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/retrieval-production-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773765840000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Rabobank 部署生产 RAG 系统的经验教训表明，大多数故障源于索引和检索，而非语言模型本身。",
+  "oneSentenceSummary": "Rabobank 部署生产 RAG 系统的经验教训表明，大多数故障源于索引和检索，而非语言模型本身。",
+  "summary": "本文分享了来自 QCon London 2026 的见解，Rabobank 的 AI 技术负责人讨论了部署一个被 300 多名用户用于 10，000 多份文档的生产 AI 搜索系统。关键发现是，大多数 RAG 系统故障源于索引和检索问题，而不是 LLM。该系统遵循典型的 RAG 流程：文档摄取（解析、分块、嵌入）、检索和生成。文章提供了真实生产部署的实践经验。",
+  "mainPoints": [
+    {
+      "point": "大多数 RAG 系统故障源于索引和检索，而非语言模型。",
+      "explanation": "这一洞察重新定义了工程师在生产 RAG 系统中应该将优化重点放在哪里。"
+    },
+    {
+      "point": "生产系统服务于 300 多名用户，处理 10，000 多份文档。",
+      "explanation": "真实世界的规模展示了企业级实际实现的挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "RAG 系统中的大多数故障源于索引和检索，而非语言模型本身。"
+  ],
+  "tags": [
+    "RAG",
+    "生产 AI",
+    "检索",
+    "QCon",
+    "Rabobank"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 421,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773765840000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 16:44:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0ff7c9cd",
+  "title": "发布 LangSmith Sandboxes：为 Agent 提供安全的代码执行环境",
+  "url": "https://blog.langchain.com/introducing-langsmith-sandboxes-secure-code-execution-for-agents/",
+  "date": "2026-03-17 15:51:07",
+  "author": "LangChain Accounts",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <img src=\"https://blog.langchain.com/content/images/2026/03/LangSmith-Sandboxes.png\" alt=\"Introducing LangSmith Sandboxes: Secure Code Execution for Agents\">\n  <p>Today, we're launching LangSmith Sandboxes in Private Preview: secure, scalable environments for running untrusted code.</p>\n  <p>Agents get a lot more useful when they can execute code. They can analyze data, call APIs, and build applications from scratch. But letting an LLM run arbitrary code without isolation from your infrastructure is risky. Sandboxes give you ephemeral, locked-down environments where agents can run code safely, with control over what they can access and the resources they can consume.</p>\n  <p>With LangSmith Sandboxes, you can spin up a sandbox in a single line of code with the LangSmith SDK. Add your API key, pull in the SDK, and you're off.</p>\n  <p>We've been using Sandboxes internally to power projects like <a href=\"https://github.com/langchain-ai/open-swe?ref=blog.langchain.com\">Open SWE</a>, and now we're making them available so you can build with the same primitives.</p>\n  <p><a href=\"https://www.langchain.com/langsmith-sandboxes-waitlist?ref=blog.langchain.com\">Sign up for the waitlist</a></p>\n  <figure class=\"kg-card kg-embed-card\">\n   <iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/HBcIDnOFU6A?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Introducing: LangSmith Sandboxes (Now in Private Preview)\"></iframe>\n  </figure>\n  <h2 id=\"why-sandboxes\">Why Sandboxes?</h2>\n  <p>Coding agents like Cursor, Claude Code, and OpenClaw demonstrate how useful it is to give agents the ability to write and run code. But without isolation, agents can execute&nbsp;<a href=\"https://www.clawsecure.ai/blog/41-percent-openclaw-skills-vulnerabilities?ref=blog.langchain.com\">destructive or malicious actions</a>&nbsp;on your local environment.</p>\n  <p>Traditional containers were designed to run known, vetted application code. Agent-generated code is different: it's untrusted and unpredictable. A web server handles a known set of operations. An agent might attempt anything, including malicious commands.</p>\n  <p>Building secure code execution yourself usually means spinning up containers, locking down network access, piping output back to your agent, and tearing everything down when it's done. Then you need to handle resource limits, because agents running code can rapidly consume CPU, memory, and disk if left unconstrained. As more agents become coding agents, this problem compounds.</p>\n  <p>A few examples of workloads that need this:</p>\n  <ul>\n   <li>A <strong>coding assistant</strong> that runs and validates its own output before responding</li>\n   <li>A <strong>CI-style agent</strong> that clones a repo, installs dependencies, and runs a test suite before opening a PR (like <a href=\"https://github.com/langchain-ai/open-swe?ref=blog.langchain.com\">Open SWE</a>)</li>\n   <li>A <strong>data analysis agent</strong> that executes Python scripts against a dataset and returns results</li>\n  </ul>\n  <h2 id=\"part-of-the-langsmith-platform\"><strong>Part of the LangSmith Platform</strong></h2>\n  <p>LangSmith Sandboxes use the same SDK and infrastructure as the rest of LangSmith. If you're already using the Python or JavaScript client for tracing or deployment, you can spin up sandboxes without adding anything new.</p>\n  <p>Sandboxes also integrate directly with LangSmith Deployment, so you can attach a sandbox to an agent thread. They have native integrations with LangChain's&nbsp;<a href=\"https://docs.langchain.com/oss/python/deepagents/overview?ref=blog.langchain.com\">Deep Agents</a>&nbsp;open source framework, as well as <a href=\"https://github.com/langchain-ai/open-swe?ref=blog.langchain.com\">Open SWE</a>.</p>\n  <h2 id=\"whats-shipping\">What's Shipping</h2>\n  <h3 id=\"runtime-configuration\"><strong>Runtime Configuration</strong></h3>\n  <ul>\n   <li><strong>Bring your own Docker image.</strong>&nbsp;Use our defaults or point to your own private registry. Start every sandbox with exactly the filesystem and tooling you need.</li>\n   <li><strong>Sandbox Templates.</strong>&nbsp;Define an image, CPU, and memory configuration once, then reuse it every time you spin up a sandbox. Combine with BYOD images for fully custom environments.</li>\n   <li><strong>Shared access:</strong> Give multiple agents access to the same sandbox, so you don't need to transfer artifacts across isolated environments.</li>\n   <li><strong>Pooling and autoscaling.</strong>&nbsp;Pre-provision a pool of warm sandboxes so agents don't wait for cold starts. Additional sandboxes spin up automatically as demand increases.</li>\n  </ul>\n  <h3 id=\"execution\">Execution</h3>\n  <ul>\n   <li><strong>Long-running sessions:</strong> Agent tasks that take minutes or hours won't time out. Sandboxes support persistent commands over WebSockets, with real-time output streaming so you can see what's happening as it runs.</li>\n   <li><strong>Persistent state across interactions.</strong>&nbsp;Your agent can use the same sandbox across multiple threads without losing context. Files, installed packages, and environment state carry over between runs.</li>\n   <li><strong>Tunnels.</strong>&nbsp;Expose sandbox ports to your local machine so you can preview your agent's output before deploying it.</li>\n  </ul>\n  <h3 id=\"sdk-and-integrations\">SDK and Integrations</h3>\n  <ul>\n   <li><strong>Framework agnostic:</strong> Use LangSmith Sandboxes with LangChain OSS, another framework, or no framework at all</li>\n   <li><strong>Python and JavaScript SDKs:</strong> First-class clients in both languages with the LangSmith SDK</li>\n   <li><a href=\"https://docs.langchain.com/oss/python/deepagents/overview?ref=blog.langchain.com\"><strong>Deep Agents</strong></a><strong> integration: </strong>Plug sandboxes directly into agentic workflows with minimal config.</li>\n  </ul>\n  <h3 id=\"security\">Security</h3>\n  <ul>\n   <li><strong>Auth Proxy:</strong> Sandboxes access external services through an Authentication Proxy, so secrets never touch the runtime. Credentials stay off the sandbox entirely.</li>\n   <li><strong>MicroVM Isolation:</strong> each sandbox runs in a hardware-virtualized microVM, not just Linux namespaces. Kernel-level isolation between sandboxes.</li>\n  </ul>\n  <h2 id=\"whats-coming-next\"><strong>What's Coming Next</strong></h2>\n  <p>We're actively developing Sandboxes beyond what's shipping today. Some areas we’re actively exploring include:</p>\n  <ul>\n   <li><strong>Shared volumes:</strong>&nbsp;Give agents the ability to share state across sandboxes. Agent 1 writes to a volume, Agent 2 picks up where it left off.</li>\n   <li><strong>Binary authorization:</strong>&nbsp;Control which binaries can run inside a sandbox. Agents are prone to unexpected behavior like installing packages, exporting credentials, or consuming compute on unintended tasks. Binary authorization lets you restrict execution the same way you would on a managed corporate laptop, limiting which programs can run, which domains are reachable, and what network calls are allowed.</li>\n   <li><strong>Full execution tracing:</strong>&nbsp;Today, sandbox calls are traced alongside your agent's runs. We're working toward tracing everything that happens inside the virtual machine, including every process and network call. This doubles as an audit log, giving you a complete record of what a sandbox did and when.</li>\n  </ul>\n  <p>We'd love your input on what matters most for your workflows. Join our&nbsp;<a href=\"https://www.langchain.com/join-community?ref=blog.langchain.com\">Slack community</a>&nbsp;to share ideas.</p>\n  <h2 id=\"get-started\">Get Started</h2>\n  <p>LangSmith Sandboxes are available now in Private Preview. If you're building agents that need secure code execution, sign up and try it out.</p>\n  <p><a href=\"https://www.langchain.com/langsmith-sandboxes-waitlist?ref=blog.langchain.com\">Sign up for the waitlist</a></p>\n </body>\n</html>",
+  "aiSummary": "LangChain 推出 LangSmith Sandboxes 私人预览版，为运行来自 AI Agent 的不可信代码提供安全、可扩展的环境，具备受控的资源访问能力。",
+  "oneSentenceSummary": "LangChain 推出 LangSmith Sandboxes 私人预览版，为运行来自 AI Agent 的不可信代码提供安全、可扩展的环境，具备受控的资源访问能力。",
+  "summary": "本文宣布 LangSmith Sandboxes 私人预览版的发布，这是 AI Agent 工作流中安全代码执行的解决方案。文章解释说，虽然 Agent 在执行代码时变得更加有用，但在没有隔离的情况下运行任意的 LLM 生成代码是有风险的。LangSmith Sandboxes 提供临时的、封闭的环境，Agent 可以在其中安全地运行代码，同时受到访问控制和资源限制。文章将传统容器（为已知、经过审查的代码设计）与 Agent 生成的代码（不可信且不可预测）进行对比，强调了为什么 AI Agent 需要专门的沙箱隔离。",
+  "mainPoints": [
+    {
+      "point": "Agent 在执行代码时变得更加有用，但这引入了安全风险。",
+      "explanation": "代码执行支持数据分析、API 调用和应用构建，但没有隔离的任意 LLM 生成代码可能是危险的。"
+    },
+    {
+      "point": "传统容器为已知、经过审查的应用代码设计，而非 Agent 生成的代码。",
+      "explanation": "Web 服务器处理已知的操作，但 Agent 可能尝试任何操作，包括恶意命令，需要不同的隔离方法。"
+    },
+    {
+      "point": "LangSmith Sandboxes 提供临时的、封闭的环境，具备受控的资源访问。",
+      "explanation": "这些专门的环境允许安全地执行代码，同时限制 Agent 可以访问的内容和消耗的资源。"
+    },
+    {
+      "point": "通过一行代码即可使用 LangSmith SDK 启动 Sandbox，让安全代码执行变得易于使用。",
+      "explanation": "这种易用性使得安全代码执行无需复杂的基础设施设置即可实现。"
+    }
+  ],
+  "keyQuotes": [
+    "当 Agent 能够执行代码时，它们变得更加有用，它们可以分析数据、调用 API，以及从零构建应用。",
+    "但让 LLM 在没有与基础设施隔离的情况下运行任意代码是有风险的。",
+    "传统容器是为运行已知、经过审查的应用代码而设计的，Agent 生成的代码则不同：它是不可信且不可预测的。",
+    "Sandbox 为你提供临时的、封闭的环境，Agent 可以在其中安全地运行代码。"
+  ],
+  "tags": [
+    "LangChain",
+    "LangSmith",
+    "Sandbox",
+    "AI Agent",
+    "代码执行"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 852,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773762667000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 15:51:07"
+}

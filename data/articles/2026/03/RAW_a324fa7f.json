@@ -1,0 +1,41 @@
+{
+  "id": "RAW_a324fa7f",
+  "title": "QCon London 2026：大规模管理异步 API",
+  "url": "https://www.infoq.com/news/2026/03/managing-async-apis/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-17 14:15:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At QCon London 2026, <a href=\"https://www.linkedin.com/in/ian-cooper-2b059b/\">Ian Cooper</a>, senior principal engineer at Just Eat Takeaway, discussed <a href=\"https://qconlondon.com/presentation/mar2026/managing-asynchronous-apis-scale\">managing asynchronous APIs in production</a>, showing how endpoint definitions can drive code generation, schema registration, and the automation of messaging infrastructure.</p>\n   <p>Cooper began the session by highlighting how event-driven architectures often evolve informally in their early stages, with teams typically relying on shared knowledge to understand which services publish events, which services consume them, and how messages flow through the system.</p>\n   <p><img alt=\"Ian Cooper at QCon London 2026\" data-src=\"https://www.infoq.com/news/2026/03/managing-async-apis/news/2026/03/managing-async-apis/en/resources/1IMG_20260316_170719709-1773756467052.jpg\" style=\"width:100%;height:3072px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/managing-async-apis/en/resources/1IMG_20260316_170719709-1773756467052.jpg\" rel=\"share\"></p>\n   <p>As organizations scale, however, this informal approach becomes increasingly fragile. \"At scale, ad-hoc breaks,\" argued Cooper, with integration points difficult to discover, consumers unknown to producers, and undocumented schema changes breaking downstream systems:</p>\n   <blockquote>\n    <p>As a producer, how do I find consumers? Do I search all the repos looking for my message name? Do I ask on Slack if anyone consumes my events?</p>\n   </blockquote>\n   <p>To address these challenges, Cooper outlined a set of emerging practices for managing asynchronous APIs in large organizations, organized around three pillars: discovery (finding and understanding the async API), governance (ensuring schemas are consistent and evolving safely), and provisioning (going from a specification to a deployment).</p>\n   <p>Central to this approach is the use of explicit specifications for messaging interfaces: technologies such as <a href=\"https://www.asyncapi.com/en\">AsyncAPI</a>, designed to build event-driven architectures, alongside alternatives such as <a href=\"https://xregistry.io/\">xRegistry</a>, provide machine-readable ways to describe event contracts. These specifications include topics, payload schemas, and message metadata, enabling teams to document ownership and improve discoverability across distributed systems.</p>\n   <p>Joking that \"binary binding is not really binary and structured binding is not really structured,\" Cooper then discussed the importance of standardized event metadata and schema governance. Formats such as <a href=\"https://cloudevents.io/\">CloudEvents</a> can provide consistent metadata across messaging systems, while schema registries allow teams to validate event structures and manage compatibility as schemas evolve.</p>\n   <p>Comparing the different compatibility modes and explaining why developers cannot simply rely on human coordination among teams, Cooper described how these mechanisms support safer change management by ensuring producers and consumers remain compatible over time.</p>\n   <p><img alt=\"Ian Cooper at QCon London 2026\" data-src=\"https://www.infoq.com/news/2026/03/managing-async-apis/news/2026/03/managing-async-apis/en/resources/1IMG_20260316_174022412-1773756467052.jpg\" style=\"width:100%;height:3072px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/managing-async-apis/en/resources/1IMG_20260316_174022412-1773756467052.jpg\" rel=\"share\"></p>\n   <p>Beyond documentation and governance, Cooper emphasized the importance of automation and a change of mindset: \"Tooling and adoption is still very hard: getting teams to write and maintain specifications requires cultural change, not just tooling.\"</p>\n   <p>In mature event-driven platforms, endpoint specifications can serve as the source of truth, and from these definitions, tooling like AsyncAPI can generate code artifacts, automatically register schemas, and provision messaging infrastructure.</p>\n   <p>Cooper highlighted the benefits of tools such as <a href=\"https://eventcatalog.dev\">EventCatalog</a> in making asynchronous APIs and event-driven systems visible, discoverable, and governable at scale. This new approach reduces manual coordination between teams (\"Specifications, not tickets!\") and provides architects with greater visibility and control over complex event flows in production environments.</p>\n   <p>The speaker closed the session with a demo using <a href=\"https://github.com/marmotdata/marmot\">Marmot</a> as an open-source example, and reminded the audience of the importance of treating async APIs with the same rigour as sync APIs.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Managing Asynchronous APIs at Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/managing-async-apis/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773756900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "QCon London 2026 关于大规模管理异步 API 的演讲。",
+  "oneSentenceSummary": "QCon London 2026 关于大规模管理异步 API 的演讲。",
+  "summary": "本文涵盖了 QCon London 2026 关于大规模管理异步 API 的挑战和解决方案的演讲。讨论内容包括处理高容量异步操作的模式、监控、错误处理，以及在分布式系统中保持可靠性。",
+  "mainPoints": [
+    {
+      "point": "大规模管理异步 API 需要特定的模式和监控方法。",
+      "explanation": "该演讲涵盖了高容量异步操作的实用解决方案。"
+    }
+  ],
+  "keyQuotes": [],
+  "tags": [
+    "异步 API",
+    "QCon",
+    "分布式系统",
+    "可扩展性",
+    "后端"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 471,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773756900000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 14:15:00"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "RAW_7b577240",
+  "title": "干货 | 手把手教你用 OpenClaw + Skill 实现微信公众号全自动创作发布",
+  "url": "https://juejin.cn/post/7618060317139599370",
+  "date": "2026-03-17 12:33:28",
+  "author": "LucianaiB",
+  "siteName": "掘金本周最热",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article-viewer markdown-body result\">\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/b6af12d99ad443d7b2a732f1ea4ac0e0~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=GofvXkgHXWT4ru6r6lmN7ejRjZg%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-0\">前言</h2>\n   <p>我是热爱探索AI前沿技术的LucianaiB。</p>\n   <p>我发现身边许多公众号创作者正陷入“找热点难、拆选题慢、排版发布累”的死循环。为了彻底解放双手，我打通了一套<strong>微信公众号全自动创作发布流程</strong>。无需复杂操作，配合 OpenClaw 即可实现“闭眼冲”的自动化体验。</p>\n   <p><strong>自动化逻辑拆解：</strong></p>\n   <p><code>实时热榜监控</code> -&gt; <code>AI 深度选题与拆解</code> -&gt; <code>一键同步至草稿箱</code></p>\n   <p>接下来就是按照这个顺序来处理。</p>\n   <p><strong>本文内容概览：</strong></p>\n   <p>1.实时热榜抓取</p>\n   <p>2.内容拆解及选题</p>\n   <p>4.微信公众号自动发布</p>\n   <h2 data-id=\"heading-1\">1.实时热榜抓取（二选一）：解决“写什么”的问题</h2>\n   <p>想要文章自带流量，必须紧跟热点。这里推荐两种方式获取全网资讯。</p>\n   <h3 data-id=\"heading-2\">1.1 依次安装Agent Reach</h3>\n   <p>安装Agent Reach后，你的opencalw就可以获取，<strong>微博热搜（实时），抖音热榜，B 站热门，百度热搜</strong>等等。</p>\n   <blockquote>\n    <p>\"帮我安装 Agent Reach: <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fraw.githubusercontent.com%2FPanniantong%2Fagent-reach%2Fmain%2Fdocs%2Finstall.md\" target=\"_blank\" title=\"https://raw.githubusercontent.com/Panniantong/agent-reach/main/docs/install.md\" ref=\"nofollow noopener noreferrer\">raw.githubusercontent.com/Panniantong…</a>\" 需要 Python、yt-dlp、gh CLI 等基础环境，自己把这些都处理配置好</p>\n   </blockquote>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/ee459ed7b9274e36ad4a0d5b18167f3e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=4nue08j%2Fm2AjBK4Cgv5yMihfKFk%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>之后直接对它说</p>\n   <blockquote>\n    <p>学习获取Csdn和Github的热榜</p>\n   </blockquote>\n   <p>依次让它慢慢学习即可。</p>\n   <h3 data-id=\"heading-3\">1.2 中国热榜聚合器 📊（推荐）</h3>\n   <p>考虑到有人想要直接获取，我把上面的包装成了一个中国热榜聚合器 📊，你可以直接对你的AI说</p>\n   <blockquote>\n    <p>安装skill： <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Flucianaib0318%2Fchina-hot-ranks\" target=\"_blank\" title=\"https://github.com/lucianaib0318/china-hot-ranks\" ref=\"nofollow noopener noreferrer\">github.com/lucianaib03…</a></p>\n   </blockquote>\n   <p>注：创造不易，可以的话点个star</p>\n   <p>你的openclaw就会直接安装成功，就可以使用了，只需要对他说：</p>\n   <blockquote>\n    <p>使用中国热榜聚合器，给我全部热榜信息以及它每个对应的网站 输出格式： ***热榜 1.标题</p>\n   </blockquote>\n   <p>效果如下（直接就全部的输出了）：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/68431fc996d9414b8e40f01198cad25d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=xkf3oo11xr6619ssqpmv1HIom70%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>你会得到一份排版整齐的各平台 Top 10 列表，全网动向一目了然。</p>\n   <h3 data-id=\"heading-4\">1.3 心跳机制每日推送</h3>\n   <p>既然都有了，我直接让它每日推送，给我灵感：</p>\n   <blockquote>\n    <p>设置心跳机制，每天早上，9点使用一次中国热榜聚合器，查询完结果，然后通过当前对话飞书发送给我</p>\n   </blockquote>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/7010f9795e1443829acc0634add956b8~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=4iora3VGtGHhKwAgqyvp%2FDNB2J4%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h2 data-id=\"heading-5\">2.内容拆解及选题</h2>\n   <p>有了热点，如何变成文章？</p>\n   <p>这一步就是可以直接让open claw根据我们前边的热榜进行爬取，然后告诉它，你的身份以及方向，例如AI爱好者发布AI相关，给我三个爆款话题，然后它就会自动的给你三个话题</p>\n   <p>但是！作为宠粉博主，我直接也做了一个skill，让 AI 站在运营专家的视角为你选准方向，直接解决问题：</p>\n   <p>你可以直接对你的AI说</p>\n   <blockquote>\n    <p>安装skill： <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Flucianaib0318%2Fwechat-topic-selector\" target=\"_blank\" title=\"https://github.com/lucianaib0318/wechat-topic-selector\" ref=\"nofollow noopener noreferrer\">github.com/lucianaib03…</a></p>\n   </blockquote>\n   <p>注：创造不易，可以的话点个star</p>\n   <p>使用效果：</p>\n   <blockquote>\n    <p>使用微信公众号选题助手skill和热榜，帮我选3个爆款话题，我的账号定位是：AI科普及教程</p>\n   </blockquote>\n   <p>一共生成了3个标题：</p>\n   <p>1.AI 大厂月薪 3 万疯抢文科生：普通人如何抓住这波红利？</p>\n   <p>2.Prompt、Agent、MCP 傻傻分不清？5 分钟搞懂 AI 核心概念</p>\n   <p>3.OpenClaw 爆火：2026 年 AI Agent 生态已变天，普通人如何入局？</p>\n   <p>确实都是AI相关的，例如：MCP与Agent，openclaw等等，并且都有依据。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/9065e2b47ee34837a97299b7a3772e3b~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=MP%2FPr8NA2Y2nLhfIVbX97XMKtwg%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>接着就是创造等等，这个就考验模型的创造能力，我用的是qwen-3.5-plus，下面是生成的效果：</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/1740cb6a215f4452bc5e698e13eedcd2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=ctpkTlb9Wl65o1f%2BWHrpXnrSHW0%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <blockquote>\n    <p>【特别提醒】微信公众号对标题字数有限制（建议30字以内）</p>\n   </blockquote>\n   <p>就可以手动的进行调整了，当然如果有准备好的文章那就更好了。</p>\n   <h2 data-id=\"heading-6\">3.微信公众号自动发布</h2>\n   <h3 data-id=\"heading-7\">3.1 前置准备——微信公众号相关信息</h3>\n   <p>登录微信开发者平台：<a href=\"https://link.juejin.cn?target=https%3A%2F%2Fdevelopers.weixin.qq.com%2Fplatform\" target=\"_blank\" title=\"https://developers.weixin.qq.com/platform\" ref=\"nofollow noopener noreferrer\">developers.weixin.qq.com/platform</a></p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/c6e227f100604ca6bb62d22e70f4a985~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=xZ0c%2FEV5iHC%2Fexl%2Bgl4m5QMJkOc%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>获取你的微信公众号 AppID 和 AppSecret</p>\n   <p>并且在API IP 白名单加入你的IPV4地址：</p>\n   <p>如果你用的腾讯云服务器部署的 openclaw，打开 <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fconsole.cloud.tencent.com%2Flighthouse%2Finstance%2Findex%3Frid%3D15\" target=\"_blank\" title=\"https://console.cloud.tencent.com/lighthouse/instance/index?rid=15\" ref=\"nofollow noopener noreferrer\">console.cloud.tencent.com/lighthouse/…</a></p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/ff66524bc90d456ea73a3392756d577e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=E6FsvYQsJ3skkxPBp8RZ%2FTXY3Vo%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <h3 data-id=\"heading-8\">3.2 微信自动化分布</h3>\n   <p>我直接也做了一个skill，直接解决问题：</p>\n   <p>你可以直接对你的AI说</p>\n   <blockquote>\n    <p>安装skill： <a href=\"https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Flucianaib0318%2Fwechat-publisher\" target=\"_blank\" title=\"https://github.com/lucianaib0318/wechat-publisher\" ref=\"nofollow noopener noreferrer\">github.com/lucianaib03…</a> 我的 AppID： AppSecret：</p>\n   </blockquote>\n   <p>注：创造不易，可以的话点个star</p>\n   <p>使用效果：</p>\n   <p>直接对openclaw说：发布到公众号草稿箱</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/10a96d86f6684019ab77fdc39a95b16d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=vN79Qk9t9jJX3WoRpbmMBrP3cb8%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>然后在手机端草稿箱就可以看到了，直接点击发布即可。</p>\n   <p><img src=\"https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/a8593270e33d4b9a832e72d8439c097a~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgTHVjaWFuYWlC:q75.awebp?rk3s=f64ab15b&amp;x-expires=1774355607&amp;x-signature=U7FV9FQuqder4WrSq1O9%2Fr6AwYI%3D\" alt=\"请在此添加图片描述\" loading=\"lazy\" class=\"medium-zoom-image\"></p>\n   <p>你只需要：</p>\n   <ol>\n    <li>在手机上打开微信公众号助手app</li>\n    <li>预览当天的文章，检查是否有错别字、格式问题</li>\n    <li>点击\"确认发布\"</li>\n   </ol>\n   <h2 data-id=\"heading-9\">🌟 写在最后</h2>\n   <p>关于 <strong>OpenClaw + Skill 实现微信公众号全自动创作发布</strong> 这套工具栈，我的深度观察如下：</p>\n   <p><strong>优点：</strong></p>\n   <ul>\n    <li><strong>极速响应：</strong> 5 分钟内完成从热点发现到草稿生成的全过程。</li>\n    <li><strong>高度定制：</strong> 通过自研 Skill 深度适配个人写作风格。</li>\n    <li><strong>多端联动：</strong> 结合飞书、微信、云服务器，构建闭环工作流。</li>\n   </ul>\n   <p><strong>不足：</strong></p>\n   <ul>\n    <li><strong>合规性：</strong> 自动生成的图片和文字仍需人工进行最后一次“价值观检查”。</li>\n   </ul>\n   <p><strong>现在就开始动手，打造属于你的 AI 超级助手吧！ 🚀</strong></p>\n   <p><strong>别忘了点个“赞、在看、转发”三连，祝你的 🦞 永不报错，逻辑起飞！</strong></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍如何利用 OpenClaw 框架结合自定义 Skill 插件，构建从热榜监控、AI 选题到微信公众号草稿箱自动发布的闭环自动化工作流。",
+  "oneSentenceSummary": "本文介绍如何利用 OpenClaw 框架结合自定义 Skill 插件，构建从热榜监控、AI 选题到微信公众号草稿箱自动发布的闭环自动化工作流。",
+  "summary": "文章详细阐述了一套基于 OpenClaw 的微信公众号全自动创作方案。作者通过开发并分享三个核心 Skill（热榜聚合器、选题助手、微信发布器），实现了热点资讯的定时抓取（支持微博、抖音、B 站等）、基于账号定位的 AI 爆款选题生成，以及通过微信 API 将内容自动同步至公众号草稿箱。该方案结合了心跳机制和飞书推送，旨在解决创作者在选题、内容生产和排版发布上的效率瓶颈，实现“热点监控-内容拆解-自动同步”的自动化循环。",
+  "mainPoints": [
+    {
+      "point": "建立基于 AI Agent 的实时热榜监控体系。",
+      "explanation": "通过安装 Agent Reach 或自定义 Skill，实现对微博、抖音、B 站等多平台热搜数据的自动化抓取，为创作提供持续的素材来源。"
+    },
+    {
+      "point": "利用 AI 运营专家模型进行深度选题与内容拆解。",
+      "explanation": "通过特定 Skill 引导 AI 结合账号定位分析热点，生成具有爆款潜力的标题和内容，解决创作者在选题阶段的耗时问题。"
+    },
+    {
+      "point": "打通微信公众平台 API 实现草稿箱自动化同步。",
+      "explanation": "配置 AppID 和 IP 白名单后，利用 Skill 将 AI 生成的内容一键同步至公众号后台，极大简化了手动排版和上传的繁琐流程。"
+    }
+  ],
+  "keyQuotes": [
+    "我发现身边许多公众号创作者正陷入‘找热点难、拆选题慢、排版发布累’的死循环。",
+    "自动化逻辑拆解：实时热榜监控 -> AI 深度选题与拆解 -> 一键同步至草稿箱。",
+    "无需复杂操作，配合 OpenClaw 即可实现‘闭眼冲’的自动化体验。",
+    "5 分钟内完成从热点发现到草稿生成的全过程。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "AI Agent",
+    "自动化工作流",
+    "微信公众号运营",
+    "内容创作"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 86,
+  "wordCount": 1636,
+  "domain": "juejin.cn",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_82d462",
+  "sourceName": "掘金本周最热",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773750808000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 12:33:28"
+}

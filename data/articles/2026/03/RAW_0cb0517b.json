@@ -1,0 +1,59 @@
+{
+  "id": "RAW_0cb0517b",
+  "title": "英伟达最强 B200 算力浪费 60%！普林斯顿团队出手，利用率升至 71%",
+  "url": "https://www.qbitai.com/2026/03/388815.html",
+  "date": "2026-03-18 00:31:26",
+  "author": "闻乐",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"52\">闻乐 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"53\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">所有用英伟达Blackwell B200的人，都在花冤枉钱？？</p>\n  <p data-track=\"3\">普林斯顿大学等联合团队指出，这款GPU居然因为<strong>软硬件适配问题</strong>白白<strong>浪费了60%的计算资源</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_4e148f0cc6cc0fb039eb88c998fb5842.png\">\n  </div>\n  <p data-track=\"4\">算力浪费了，咋办呢——<strong>FlashAttention-4</strong>给出了答案。</p>\n  <p data-track=\"5\">这款专为Blackwell架构GPU量身打造的注意力算法，一举将利用率从行业普遍的20%-30%推至<strong>71%</strong>。</p>\n  <p data-track=\"6\">FlashAttention-4由Tri Dao领衔、携手Meta、Together AI等团队共同研发。</p>\n  <p data-track=\"7\">嗯，<strong>英伟达自己也参与其中了</strong>……</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_9871820f310e0318b35ebde42ee044a7.png\">\n  </div>\n  <p data-track=\"9\">英伟达Blackwell B200作为新一代数据中心GPU，其tensor core张量核心算力达到2.25 PFLOPS，是上一代Hopper H100的2倍。</p>\n  <p data-track=\"10\">理论上能让注意力计算的速度实现跨越式提升。</p>\n  <p data-track=\"11\">但理想很丰满……</p>\n  <p data-track=\"12\">这款GPU发生了严重的偏科。</p>\n  <p data-track=\"13\">核心算力猛增的同时，关键的配套计算单元却原地踏步。</p>\n  <p data-track=\"14\">其中，负责指数运算的MUFU单元吞吐量与Hopper架构完全一致，没有任何提升；</p>\n  <p data-track=\"15\">共享内存的带宽也保持原样，并未跟随张量核心同步升级。</p>\n  <p data-track=\"16\">这一硬件设计的不对称性，直接导致了性能瓶颈的反转。</p>\n  <p data-track=\"17\">在大模型核心的注意力计算负载中，原本的性能瓶颈矩阵乘法，如今耗时远低于辅助环节，<strong>共享内存的读写操作和指数运算的耗时，反而比矩阵乘法多出25%-60%</strong>。</p>\n  <p data-track=\"18\">算力翻倍的Tensor Core长期处于等待状态，大量计算资源就这么被闲置了。</p>\n  <p data-track=\"19\">于是，大量开发者花费重金部署的B200 GPU，因<strong>核心算力与配套单元的脱节，超六成资源被白白浪费</strong>。</p>\n  <p data-track=\"20\">算力翻倍？</p>\n  <p data-track=\"21\">No！明明是有力使不出……</p>\n  <p data-track=\"23\">针对Blackwell GPU的偏科问题，FlashAttention-4量身打造了三大优化策略。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_3d696b1471201f526d3b29755ffe939b.png\">\n  </div>\n  <p data-track=\"24\">第一招，多管齐下化解指数运算与内存读写难题。</p>\n  <p data-track=\"25\">团队一方面通过<strong>软件模拟指数函数</strong>，借助多项式近似的方法，让高速的FMA计算单元参与到原本由MUFU单元负责的指数运算中，大幅提升指数计算的吞吐量；</p>\n  <p data-track=\"26\">同时通过混合硬件计算与软件模拟的方式，在提速的同时保证计算精度。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_a494f19982b23163324b387f4de2f790.png\">\n  </div>\n  <p data-track=\"27\">另一方面推出<strong>条件性softmax rescaling</strong>策略，仅在必要时执行softmax的缩放操作，直接跳过大量无用的计算步骤，减少非矩阵乘法的运算量。</p>\n  <p data-track=\"28\">此外，团队充分利用Blackwell架构的<strong>2-CTA MMA</strong>模式，让两个计算单元搭档完成矩阵运算，各自仅加载一半的运算数据。</p>\n  <p data-track=\"29\">这就将共享内存的读写量直接砍半，同时还减少了后续的原子操作，从根源上缓解共享内存的带宽压力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_85b1f247493890c5c7dafccba30d9b0f.png\">\n  </div>\n  <p data-track=\"30\">第二招，重构计算流水线，实现算力的并行最大化。</p>\n  <p data-track=\"31\">FlashAttention-4深度适配Blackwell架构的<strong>全异步MMA操作</strong>和新增的<strong>张量内存TMEM</strong>，重新设计了注意力计算的前向和反向流水线。</p>\n  <p data-track=\"32\">让softmax计算与矩阵乘法这两个核心环节实现完全的计算重叠。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_b88f33f4c8768df98c9ad51fdb3aa57d.png\">\n  </div>\n  <p data-track=\"33\">当硬件的张量核心在处理一个矩阵块时，另一部分硬件资源可同时对另一个数据块执行softmax计算，避免硬件算力的空闲。</p>\n  <p data-track=\"34\">第三招，兼顾硬件迭代，为下一代GPU预留优化空间。</p>\n  <p data-track=\"35\">研发团队同时考虑到Blackwell架构的硬件升级趋势，目前B300/GB300 GPU的指数运算单元吞吐量已翻倍至<strong>32 ops/clock/SM</strong>。</p>\n  <p data-track=\"36\">针对这一变化，团队明确表示，FlashAttention-4当前的软件模拟指数运算方案，在下一代硬件上会根据实际性能表现重新权衡，确保算法能持续适配硬件的迭代升级。</p>\n  <p data-track=\"38\">除了算法层的深度优化，FlashAttention-4在开发层面也带来了变化。</p>\n  <p data-track=\"39\">与此前基于C++模板开发的FlashAttention-3不同，<strong>FlashAttention-4的全部代码基于Python的领域专用版本CuTe-DSL框架编写，实现了零C++代码开发</strong>。</p>\n  <p data-track=\"40\">这一设计带来的是编译的效率跃升。</p>\n  <p data-track=\"41\">前向传播内核的编译时间从FlashAttention-3的55秒缩短至2.5秒，提速22倍；</p>\n  <p data-track=\"42\">反向传播的编译时间从45秒降至1.4秒，提速32倍，整体编译速度最高狂飙30倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013314_72c64ff82c3870e64a86d2b63d0b267e.png\">\n  </div>\n  <p data-track=\"43\">在B200 GPU上的实测数据显示，其前向传播算力最高达到<strong>1613 TFLOPS/s</strong>，一举实现71%的理论峰值利用率。</p>\n  <p data-track=\"44\">对比主流的计算框架，FlashAttention-4的优势也比较明显。</p>\n  <p data-track=\"45\">比英伟达官方的cuDNN 9.13快1.1-1.3倍，比常用的Triton框架快2.1-2.7 倍。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_1000da327cd6260b0b9f8fe9c0b0ba47.png\">\n  </div>\n  <p data-track=\"46\">且在长序列、因果掩码等大模型训练推理的核心场景中，性能优势更为突出。</p>\n  <p data-track=\"48\">论文还指出，cuDNN从9.13版本开始就已经开始反向吸收了FA4的核心技术。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260318013313_2f567c41b7d862b2b1c51f8317e0b047.png\">\n  </div>\n  <p data-track=\"49\">看来，英伟达自己也忍不住抄作业了（doge）。</p>\n  <p data-track=\"50\">论文地址：https://arxiv.org/abs/2603.05451\n   <br>\n   参考链接：https://x.com/alex_prompter/status/2033885345935462853?s=20</p>\n  <p data-track=\"51\">— 完 —</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "普林斯顿 Tri Dao 团队发布 FlashAttention-4，针对英伟达 Blackwell 架构硬件瓶颈进行深度优化，将 B200 GPU 的算力利用率从 30% 提升至 71%。",
+  "oneSentenceSummary": "普林斯顿 Tri Dao 团队发布 FlashAttention-4，针对英伟达 Blackwell 架构硬件瓶颈进行深度优化，将 B200 GPU 的算力利用率从 30% 提升至 71%。",
+  "summary": "本文深度解析了由 Tri Dao 领衔，联合 Meta、Together AI 及英伟达共同研发的 FlashAttention-4 (FA4) 算法。文章指出，英伟达 Blackwell B200 GPU 虽然张量核心算力翻倍，但由于负责指数运算的 MUFU 单元和共享内存带宽并未同步升级，导致严重的硬件“偏科”，使得传统算法下超 60% 的算力被浪费。FA4 通过软件模拟指数运算、条件性 Softmax 缩放、2-CTA MMA 模式以及全异步流水线重构等三大核心策略，成功化解了硬件瓶颈。此外，FA4 采用 CuTe-DSL 框架实现了零 C++ 代码开发，编译速度提升最高达 32 倍，实测性能显著优于 cuDNN 和 Triton 框架。",
+  "mainPoints": [
+    {
+      "point": "Blackwell 架构存在严重的软硬件适配失衡导致的算力浪费。",
+      "explanation": "B200 的 Tensor Core 算力翻倍，但 MUFU 单元和共享内存带宽原地踏步，导致非矩阵乘法运算（如指数运算）成为新的性能瓶颈。"
+    },
+    {
+      "point": "FA4 通过软件模拟与硬件混合计算优化指数运算吞吐量。",
+      "explanation": "利用多项式近似让高速 FMA 单元分担 MUFU 的压力，并配合条件性缩放策略跳过无用计算，大幅提升非矩阵运算的效率。"
+    },
+    {
+      "point": "深度适配 Blackwell 新特性实现计算流水线的高度并行。",
+      "explanation": "利用 2-CTA MMA 模式减半内存读写量，并结合全异步 MMA 操作让 Softmax 与矩阵乘法完全重叠，消除硬件空闲等待。"
+    },
+    {
+      "point": "开发范式转向 CuTe-DSL，实现零 C++ 开发与编译效率跃升。",
+      "explanation": "全部代码基于 Python 领域的 CuTe-DSL 编写，使内核编译时间从分钟级降至秒级，最高提速 32 倍，极大优化了开发迭代流程。"
+    }
+  ],
+  "keyQuotes": [
+    "核心算力猛增的同时，关键的配套计算单元却原地踏步。",
+    "共享内存的读写操作和指数运算的耗时，反而比矩阵乘法多出 25%-60%。",
+    "FlashAttention-4 的全部代码基于 Python 的领域专用版本 CuTe-DSL 框架编写，实现了零 C++ 代码开发。",
+    "前向传播算力最高达到 1613 TFLOPS/s，一举实现 71% 的理论峰值利用率。",
+    "cuDNN 从 9.13 版本开始就已经开始反向吸收了 FA4 的核心技术。"
+  ],
+  "tags": [
+    "FlashAttention-4",
+    "Nvidia Blackwell",
+    "B200",
+    "GPU 优化",
+    "算力利用率"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1939,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773793886000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-18 00:31:26"
+}

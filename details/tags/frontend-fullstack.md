@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-18 08:11:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-18 10:59:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -482,9 +482,7 @@
 
 ### [Holotron-12B---高吞吐量计算机使用智能体](https://huggingface.co/blog/Hcompany/holotron-12b)
 
-2026-03-17 12:37:15 | 标签: 多模态模型, 计算机使用智能体, SSM 架构, NVIDIA Nemotron, WebVoyager
-
-> H Company 发布 Holotron-12B，一款针对生产规模智能体工作负载优化的多模态计算机使用模型。基于采用状态空间模型和注意力机制混合架构的 NVIDIA Nemotron-Nano-2 VL 构建，通过线性循环建模避免了完整注意力的二次计算成本。该模型在单张 H100 GPU 上 100 个并发请求时达到 8，900 token/s 吞吐量，比 Holo2-8B 高出 2 倍以上。训练涉及对 140 亿个定位和导航数据进行监督微调。Holotron-12B 在 WebVoyager 上得分 80.5%（从基础模型 35.1% 提升），超越 Holo2-8B 性能，并在 OS-Wo...
+2026-03-17 12:37:15
 
 
 
@@ -614,6 +612,22 @@
 
 
 
+### [2026-年最佳-ngrok-替代方案——如何选择适合你使用场景的内网穿透工具](https://www.freecodecamp.org/news/top-ngrok-alternatives-tunneling-tools/)
+
+2026-03-17 18:05:51 | 标签: ngrok, 内网穿透, DevOps, Web 开发, 网络
+
+> 本文为寻找内网穿透解决方案的开发者详细分析了五个强大的 ngrok 替代方案。文章介绍了 ngrok 的核心概念——创建出站连接以将本地服务器公开暴露——以及开发者寻找替代方案的原因：更多控制权、开源选项、更好的安全性或更低的成本。文章探讨了 LocalXpose（面向开发者的调试功能）、Cloudflare Tunnel（企业级零信任架构）、Zrok（具备共享能力的开源方案）、FRP（高性能自托管）以及基于 WireGuard 的选项。每个工具都根据工作流适配性、基础设施需求和特定使用场景进行评估。
+
+
+
+### [使用-React、AWS-Lambda、DynamoDB-和-Cognito-认证构建全栈-CRUD-应用](https://www.freecodecamp.org/news/full-stack-aws-react-lambda-dynamodb-tutorial/)
+
+2026-03-17 15:13:02 | 标签: React, AWS, Lambda, DynamoDB, Cognito
+
+> 本 freeCodeCamp 教程提供了构建完整全栈应用的分步指南。内容涵盖使用 React 的前端开发、使用 AWS Lambda 的无服务器后端、使用 DynamoDB 的数据库，以及使用 AWS Cognito 的认证。本教程专为希望学习现代 AWS 无服务器架构模式的开发者设计。
+
+
+
 ### [【第-3671-期】面向数十亿行数据的虚拟滚动-——-HighTable-的核心技术解析](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278760&idx=1&sn=93f07b8a785063f053b723366b88dec7)
 
 2026-03-17 01:02:00
@@ -734,13 +748,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2234,13 +2248,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3944,13 +3958,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

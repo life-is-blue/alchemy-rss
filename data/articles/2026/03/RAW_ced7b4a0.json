@@ -1,0 +1,63 @@
+{
+  "id": "RAW_ced7b4a0",
+  "title": "QCon London 2026：Monzo 持续交付，超越人类与智能体",
+  "url": "https://www.infoq.com/news/2026/03/shipping-monzo/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-17 15:34:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/\">QCon London 2026</a>, <a href=\"https://www.linkedin.com/in/suhailpatel/\">Suhail Patel</a>, a principal engineer at <a href=\"https://monzo.com/\">Monzo</a> who leads the bank’s platform group, described how the bank has built a developer platform capable of shipping hundreds of changes to production every day.&nbsp;</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/shipping-monzo/news/2026/03/shipping-monzo/en/resources/2suhail-patel-1773761560699.jpg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/shipping-monzo/en/resources/2suhail-patel-1773761560699.jpg\" rel=\"share\"></p>\n   <p>Monzo operates on a microservices architecture of over 3,000 services, all written in a uniform style using a bootstrap generator based on standardised templates. Underlying infrastructure, such as Kafka queues, HTTP services, and telemetry, is automatically created by libraries, so engineers can focus on building business logic. Every service follows the same folder structure for database logic, queue-consumer logic, and an RPC layer.</p>\n   <p>Patel explained that implementation is no longer the bottleneck of the software delivery lifecycle. Where writing and iterating on code once took days, he explained that engineers can generate 10 or 20 candidate implementations within hours using modern LLM-based tooling and choose the best. He reframed the problem as how to preserve trust and compliance in a regulated environment.</p>\n   <blockquote>\n    <p>\"We are not freeing up more time in our calendar. We are taking on more work, and therefore there’s higher pressure to go and ship these changes.\"\n     <br>\n     — Suhail Patel, principal engineer, Monzo&nbsp;</p>\n   </blockquote>\n   <p>Patel was unequivocal in stating that developer experience infrastructure is essential for moving quickly at scale. Monzo has backend engineering conventions, gathered into a structured \"Backend 101\" guide that every new engineer must complete, and these are also are encoded as LLM skills so that tools like Claude and Cursor can learn the bank's processes and conform to its service structure. The result is that generated code slots into the platform rather than diverging from it, drawing also on over 3,000 existing repositories as training examples. Non-engineering staff, such as product managers and designers, can now take small bugs, data questions or technical queries directly to an LLM rather than raising tickets for engineers.&nbsp;</p>\n   <p>Patel took some time to explain Monzo's \"tenancies\" system for running staging environments. Spinning up all 250 microservices locally with their own dependencies, plus machine learning models with their own Python environments, had historically been impractical, and he cited Soam Vasani of Stripe's talk at QCon London 2022, which explored provisioning remote dev boxes running a subset of the full Stripe stack so that local development felt seamless. Monzo took a similar approach but went further: engineers deploy only the services they have changed into an isolated \"tenancy\" namespace, backed by a dedicated data namespaces, while all other dependencies route through the shared staging environment.&nbsp; Every request carries a tenancy header so that the service mesh routes correctly in both directions. Acceptance tests now run inside their own tenancies as part of pull requests, removing the sequential scheduling and flakiness that had plagued them previously. Tenancies are really lightweight, with hundreds of them running simultaneously, and they can be provisioned and torn down in minutes.</p>\n   <p>Patel argued that quality checks must be high-signal and mandatory, not optional. When an incident occurs due to a code bug, he said the engineers immediately ask how to turn that bug into a CI check so it cannot recur. There’s a lot of effort put into ensuring that automated checks carry genuine meaning, and deliberately meaningful friction is built into bypassing them: doing so requires escalating to multiple people and justifying the exception through a formal process.&nbsp; LLMs are used here too: Patel described using Claude to write native Go AST-based syntax checkers. He also recommended Semgrep for cross-language static analysis, and noted that LLM tooling can run checks across the entire codebase and automatically raise pull requests for issues it identifies.</p>\n   <blockquote>\n    <p>\"You don’t need a fancy AI code review to go and solve all of your problems. Instead, spend the time and energy writing really high-quality CI checks.\"\n     <br>\n     — Suhail Patel, principal engineer, Monzo</p>\n   </blockquote>\n   <p>For production observability, Monzo relies on Prometheus, Grafana and OpenTelemetry, feeding automated alerts that trace back to the specific change and team responsible. Patel acknowledged the cost plainly: \"We pay a lot of money for all of this. But we are thankful every single time we have an incident and can identify the contributing factors.\" The bank also uses Pyroscope for continuous profiling, to detect performance regressions as they are deployed. Patel described a Slack channel called \"Graph Trending Downwards\" where improved performance is celebrated.</p>\n   <p>A further focus was the bank’s internal CLI, which engineers and non-engineers alike use to interact with microservices in production, manage service configuration and schedule operations, rather than resorting to notebooks or Postman scripts. The CLI includes a multi-party authorisation system that requires a second pair of eyes for sensitive operations.&nbsp; Patel noted that good CLI interfaces also reduce token consumption when LLMs invoke tooling: parsing a structured JSON diff via the GitHub CLI, for example, is far more reliable than asking a model to navigate a rendered web UI. \"Even for LLMs, calling out to deterministic tools leads to a much more reliable result.\"</p>\n   <p>Fabien Deshayes, an engineering manager for Platform and Developer Experience at Monzo, <a href=\"https://www.infoq.com/news/2025/04/qcon-london-devex-monzo/\">covered related themes at QCon London 2025</a>.</p>\n   <p>Patel closed with three principles: invest in composable, best-in-class tools to encode and automate organisational processes; invest in rapid iteration capabilities; and standardise on a small set of technology choices, continuously improving on those abstractions so that engineers and LLMs alike can focus on the business problem at hand rather than rebuilding infrastructure from scratch.</p>\n   <p>Suhail Patel presented \"Move Fast, Don't Break Trust: Shipping Constantly with Humans and Beyond\" at QCon London 2026.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Shipping Constantly with Humans and Beyond at Monzo\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/shipping-monzo/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773761640000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Monzo 的平台工程策略利用极致标准化、创新的“租户”（tenancies）暂存系统以及编码了内部约定的 LLM，实现了每天数百次的生产部署。",
+  "oneSentenceSummary": "Monzo 的平台工程策略利用极致标准化、创新的“租户”（tenancies）暂存系统以及编码了内部约定的 LLM，实现了每天数百次的生产部署。",
+  "summary": "本文详细介绍了领先的数字银行 Monzo 如何管理一个拥有 3，000 多个微服务的架构，同时保持高部署频率。首席工程师 Suhail Patel 解释说，通过模板标准化服务结构和基础设施，实现不再是瓶颈。相反，重点已转向维护信任和合规性。Monzo 不仅将 LLM 用于代码生成，还通过将内部工程“技能”编码到模型中，以确保输出符合银行标准。关键技术创新包括用于轻量级、隔离暂存环境的“租户”系统，以及将每次生产事故转化为强制性的、高信号 CI 检查的文化。该银行还强调确定性的内部 CLI 工具优于 Web UI，以提高人类工程师和 AI 智能体的可靠性。",
+  "mainPoints": [
+    {
+      "point": "对 3，000 多个微服务进行极致标准化，消除了基础设施开销。",
+      "explanation": "通过使用统一的引导模板和用于 Kafka、HTTP 和遥测的自动化库，Monzo 确保每个服务都遵循相同的结构，让工程师能够完全专注于业务逻辑。"
+    },
+    {
+      "point": "LLM 针对内部工程约定进行训练，以确保架构一致性。",
+      "explanation": "Monzo 将其“后端 101”指南编码为 LLM 技能，使 Claude 和 Cursor 等工具能够生成自然适应银行特定服务结构的代码，而不是偏离它们。"
+    },
+    {
+      "point": "“租户”系统提供大规模的轻量级、隔离暂存环境。",
+      "explanation": "工程师无需启动完整的堆栈，而是仅将更改的服务部署到隔离的命名空间中。流量通过租户头部路由到共享暂存环境，实现快速、非顺序的测试。"
+    },
+    {
+      "point": "通过源自过去事故的强制性、高信号 CI 检查来维护质量。",
+      "explanation": "Monzo 将每次由 bug 引起的事故视为创建新的自动化检查（使用基于 AST 的语法检查器或 Semgrep）的机会，使这些检查成为强制性的且难以绕过。"
+    },
+    {
+      "point": "确定性 CLI 工具对于人类和 LLM 智能体都优于 Web UI。",
+      "explanation": "内部 CLI 的结构化 JSON 输出对于 LLM 工具调用比导航渲染的 UI 更可靠，减少了 token 消耗并提高了自动化操作的可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "我们并没有腾出更多时间。我们承担了更多工作，因此有更大的压力去发布这些更改。",
+    "结果是生成的代码能够融入平台，而不是偏离平台，同时还利用了超过 3，000 个现有仓库作为训练示例。",
+    "你不需要花哨的 AI 代码审查来解决所有问题。相反，应该投入时间和精力编写真正高质量的 CI 检查。",
+    "即使对于 LLM 来说，调用确定性工具也能带来更可靠的结果。",
+    "标准化一小部分技术选择，并持续改进这些抽象，以便工程师和 LLM 都能专注于业务问题。"
+  ],
+  "tags": [
+    "平台工程",
+    "微服务",
+    "开发者体验",
+    "生产环境中的 LLM",
+    "CI/CD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 908,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773761640000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 15:34:00"
+}
