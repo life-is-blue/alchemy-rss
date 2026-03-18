@@ -1,0 +1,58 @@
+{
+  "id": "RAW_eedde830",
+  "title": "GPT-5.4 mini 和 GPT-5.4 nano：76，000 张照片仅需 52 美元",
+  "url": "https://simonwillison.net/2026/Mar/17/mini-and-nano/#atom-everything",
+  "date": "2026-03-17 19:39:17",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Mar/17/mini-and-nano/\">\n    <p class=\"mobile-date\">17th March 2026</p>\n    <p>OpenAI today: <a href=\"https://openai.com/index/introducing-gpt-5-4-mini-and-nano/\">Introducing GPT‑5.4 mini and nano</a>. These models join GPT-5.4 which was released <a href=\"https://openai.com/index/introducing-gpt-5-4/\">two weeks ago</a>.</p>\n    <p>OpenAI’s self-reported benchmarks show the new 5.4-nano out-performing their previous GPT-5 mini model when run at maximum reasoning effort. The new mini is also 2x faster than the previous mini.</p>\n    <p>Here’s how the pricing looks—all prices are per million tokens. <code>gpt-5.4-nano</code> is notably even cheaper than Google’s Gemini 3.1 Flash-Lite:</p>\n    <center>\n     <table>\n      <thead>\n       <tr>\n        <th>Model</th>\n        <th>Input</th>\n        <th>Cached input</th>\n        <th>Output</th>\n       </tr>\n      </thead>\n      <tbody>\n       <tr>\n        <td>gpt-5.4</td>\n        <td>$2.50</td>\n        <td>$0.25</td>\n        <td>$15.00</td>\n       </tr>\n       <tr>\n        <td>gpt-5.4-mini</td>\n        <td>$0.75</td>\n        <td>$0.075</td>\n        <td>$4.50</td>\n       </tr>\n       <tr>\n        <td>gpt-5.4-nano</td>\n        <td>$0.20</td>\n        <td>$0.02</td>\n        <td>$1.25</td>\n       </tr>\n       <tr>\n        <td colspan=\"4\">\n         <center>Other models for comparison</center>\n        </td>\n       </tr>\n       <tr>\n        <td>Claude Opus 4.6</td>\n        <td>$5.00</td>\n        <td>-</td>\n        <td>$25.00</td>\n       </tr>\n       <tr>\n        <td>Claude Sonnet 4.6</td>\n        <td>$3.00</td>\n        <td>-</td>\n        <td>$15.00</td>\n       </tr>\n       <tr>\n        <td>Gemini 3.1 Pro</td>\n        <td>$2.00</td>\n        <td>-</td>\n        <td>$12.00</td>\n       </tr>\n       <tr>\n        <td>Claude Haiku 4.5</td>\n        <td>$1.00</td>\n        <td>-</td>\n        <td>$5.00</td>\n       </tr>\n       <tr>\n        <td>Gemini 3.1 Flash-Lite</td>\n        <td>$0.25</td>\n        <td>-</td>\n        <td>$1.50</td>\n       </tr>\n      </tbody>\n     </table>\n    </center>\n    <p>I used GPT-5.4 nano to generate a description of this photo I took at the <a href=\"https://www.niche-museums.com/118\">John M. Mossman Lock Collection</a>:</p>\n    <p><img src=\"https://static.simonwillison.net/static/2026/IMG_2324.jpeg\" alt=\"Description below\" style=\"max-width: 100%;\"></p>\n    <pre><code>llm -m gpt-5.4-nano -a IMG_2324.jpeg 'describe image'\n</code></pre>\n    <p>Here’s the output:</p>\n    <blockquote>\n     <p>The image shows the interior of a museum gallery with a long display wall. White-painted brick walls are covered with many framed portraits arranged in neat rows. Below the portraits, there are multiple glass display cases with dark wooden frames and glass tops/fronts, containing various old historical objects and equipment. The room has a polished wooden floor, hanging ceiling light fixtures/cords, and a few visible pipes near the top of the wall. In the foreground, glass cases run along the length of the room, reflecting items from other sections of the gallery.</p>\n    </blockquote>\n    <p>That took 2,751 input tokens and 112 output tokens, at a cost of <a href=\"https://www.llm-prices.com/#it=2751&amp;ot=112&amp;sel=gpt-5.4-nano\">0.069 cents</a> (less than a tenth of a cent). That means describing every single photo in my 76,000 photo collection would cost around $52.44.</p>\n    <p>I released <a href=\"https://llm.datasette.io/en/stable/changelog.html#v0-29\">llm 0.29</a> with support for the new models.</p>\n    <p>Then I had OpenAI Codex loop through all five reasoning effort levels and all three models and produce this combined SVG grid of pelicans riding bicycles (<a href=\"https://gist.github.com/simonw/f16292d9a5b90b28054cff3ba497a3ca\">generation transcripts here</a>). I do like the gpt-5.4 xhigh one the best, it has a good bicycle (with nice spokes) and the pelican has a fish in its beak!</p>\n    <p><img src=\"https://static.simonwillison.net/static/2026/gpt-5.4-pelican-family.svg\" alt=\"Described by Claude Opus 4.6: A 5x3 comparison grid of AI-generated cartoon illustrations of a pelican riding a bicycle. Columns are labeled &quot;gpt-5.4-nano&quot;, &quot;gpt-5.4-mini&quot;, and &quot;gpt-5.4&quot; across the top, and rows are labeled &quot;none&quot;, &quot;low&quot;, &quot;medium&quot;, &quot;high&quot;, and &quot;xhigh&quot; down the left side, representing quality/detail settings. In the &quot;none&quot; row, gpt-5.4-nano shows a chaotic white bird with misplaced arrows and tangled wheels on grass, gpt-5.4-mini shows a duck-like brown bird awkwardly straddling a motorcycle-like bike, and gpt-5.4 shows a stiff gray-and-white pelican sitting atop a blue tandem bicycle with extra legs. In the &quot;low&quot; row, nano shows a chubby round white bird pedaling with small feet on grass, mini shows a cleaner white bird riding a blue bicycle with motion lines, and gpt-5.4 shows a pelican with a blue cap riding confidently but with slightly awkward proportions. In the &quot;medium&quot; row, nano regresses to a strange bird standing over bowling balls on ice, mini shows two plump white birds merged onto one yellow-wheeled bicycle, and gpt-5.4 shows a more recognizable gray-and-white pelican on a red bicycle but with tangled extra legs. In the &quot;high&quot; row, nano shows multiple small pelicans crowded around a broken green bicycle on grass with a sun overhead, mini shows a tandem bicycle with two white pelicans and clear blue sky, and gpt-5.4 shows two pelicans stacked on a red tandem bike with the most realistic proportions yet. In the &quot;xhigh&quot; row, nano shows the most detailed scene with a pelican on a detailed bicycle with grass and a large sun but still somewhat jumbled anatomy, mini produces the cleanest single pelican on a yellow-accented bicycle with a light blue sky, and gpt-5.4 shows a well-rendered gray pelican on a teal bicycle with the best overall coherence. Generally, quality improves moving right across models and down through quality tiers, though &quot;medium&quot; is inconsistently worse than &quot;low&quot; for some models, and all images maintain a lighthearted cartoon style with pastel skies and simple backgrounds.\" style=\"max-width: 100%;\"></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9148/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 发布了 GPT-5.4 mini 和 nano 模型，性能和价格都有显著提升，其中 nano 便宜到可以仅用 52 美元就描述 76，000 张照片。",
+  "oneSentenceSummary": "OpenAI 发布了 GPT-5.4 mini 和 nano 模型，性能和价格都有显著提升，其中 nano 便宜到可以仅用 52 美元就描述 76，000 张照片。",
+  "summary": "本文涵盖了 OpenAI 发布的 GPT-5.4 mini 和 nano 模型。作者展示了基准数据，显示 GPT-5.4-nano 在最大推理 effort 下优于之前的 GPT-5 mini 模型，同时速度快了 2 倍。详细的价格对比表显示 nano 每百万输入 token 仅需 0.20 美元，每百万输出 token 仅需 1.25 美元，比 Gemini 3.1 Flash-Lite 更便宜。作者演示了实际用例，包括图像描述（描述 76，000 张照片仅需约 52 美元）以及使用不同推理 effort 级别在所有三个模型上进行的创意图像生成实验。",
+  "mainPoints": [
+    {
+      "point": "GPT-5.4-nano 在最大推理 effort 下优于之前的 GPT-5 mini，同时速度快了 2 倍。",
+      "explanation": "这代表了显著的效率提升，在更低的价格点上提供更好的性能和更低的延迟。"
+    },
+    {
+      "point": "价格极具竞争力：nano 每百万 token 输入/输出仅需 0.20/1.25 美元。",
+      "explanation": "这使其成为主要模型中最便宜的选择，甚至低于 Google 的 Gemini 3.1 Flash-Lite。"
+    },
+    {
+      "point": "以这些价格，用图像描述处理 76，000 张照片大约只需 52 美元。",
+      "explanation": "这展示了大规模图像处理工作负载的实际可负担性。"
+    },
+    {
+      "point": "作者通过创意实验对所有模型进行真实测试并提供对比。",
+      "explanation": "不同模型和推理级别的鹈鹕骑自行车图像的视觉对比展示了实际质量差异。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 的自报告基准显示，新的 5.4-nano 在最大推理 effort 下优于之前的 GPT-5 mini 模型。",
+    "gpt-5.4-nano 甚至比 Google 的 Gemini 3.1 Flash-Lite 更便宜",
+    "描述我 76，000 张照片收藏中的每一张大约只需 52.44 美元",
+    "我最喜欢 gpt-5.4 xhigh 生成的那个，它有很好的自行车（轮辐很漂亮），而且鹈鹕嘴里叼着一条鱼！"
+  ],
+  "tags": [
+    "OpenAI",
+    "GPT-5.4",
+    "大语言模型",
+    "定价",
+    "图像描述"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 345,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773776357000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 19:39:17"
+}

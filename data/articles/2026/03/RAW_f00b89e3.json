@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f00b89e3",
+  "title": "从“养虾热”到实体交互：元萝卜推动 OpenClaw 走向真实世界",
+  "url": "https://www.qbitai.com/2026/03/388701.html",
+  "date": "2026-03-17 12:12:51",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>近期，OpenClaw开源项目在全网掀起现象级热潮，“养龙虾”式的创新AI交互玩法快速破圈，点燃了开发者与科技爱好者的热情。</p>\n  <p>从目前的发展情况来看，围绕OpenClaw的探索，仍主要集中在数字世界，例如文档处理、数据整理等典型任务。而能够延伸至真实物理环境、完成实体交互的产品，仍然较为少见。</p>\n  <p>在这样的背景下，具备“实体交互”能力的产品开始受到关注。其中，商汤科技旗下的元萝卜，因开放了OpenClaw skill接口，被开发者尝试用于探索AI在真实世界中的执行能力。</p>\n  <p class=\"syl-line-pure-english\">GitHub：https://github.com/SenseRobotClaw/ClawSkill</p>\n  <p class=\"syl-line-pure-english\">ClawHub：https://clawhub.ai/SenseRobotClawBot/senserobot</p>\n  <p>依托其视觉感知与实体交互能力，元萝卜被部分业内人士视为少数同时实现量产落地、并具备实体交互能力的代表性产品之一。这也让业内开始重新审视元萝卜的角色——它是否有机会从“下棋机器人”，延展为更具通用能力的“桌面智能体”。</p>\n  <p>在前几日举办的2026年中国家电及消费电子博览会（AWE）期间，结合OpenClaw的设想，已经勾勒出元萝卜潜在的路径可能：通过简单指令驱动机械臂完成抓取、摆放，甚至让棋子组合成特定图形。除此之外，还有机会进一步延展至桌面自动化、互动展示或AI实验等场景，使AI从“生成内容”走向“参与动作”，改变物理世界，让用户的奇思妙想得以实现。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260317154455_53c07e12a2271233aa8276b1c4478230.png\" data-src=\"https://image.jido.dev/20260317154455_53c07e12a2271233aa8276b1c4478230.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p><strong>突破虚拟与现实壁垒，视觉感知+机械臂让OpenClaw落地桌面场景</strong></p>\n  <p>当前，大模型能力快速飞跃、智能体功能不断进化，但绝大多数AI应用仍局限于屏幕内的虚拟交互，难以与真实物理世界开展交互。</p>\n  <p>元萝卜恰好具备实现物理世界交互的基础——依托商汤科技在计算机视觉领域的深厚积累，通过高精度摄像头与AI算法的配合，它能够实时感知桌面环境、识别物体位置、判断空间关系，做出智能决策，并引导机械臂安全完成实体交互。</p>\n  <p>这使得OpenClaw与元萝卜的结合与多数仍停留在屏幕内的AI应用不同：虚拟指令能够转化为真实动作，实现从“指令-感知-决策-执行”的完整闭环。借助元萝卜成熟的硬件能力，AI可以从识别物体位置，到完成抓取和摆放，真正从“虚拟交互”跨越到“物理执行”。这使元萝卜在OpenClaw生态中成为可执行实体动作的家用终端，为展示AI在真实物理环境中的应用提供了实例。</p>\n  <p><strong>从“专用”到“通用”，“AI下棋机器人”进化为“桌面智能体”</strong></p>\n  <p>此次与OpenClaw的深度融合，展现了元萝卜从“会下棋的机器人”向“桌面智能体”进化的潜力。</p>\n  <p>开发者、学生、创客以及科技爱好者可利用OpenClaw的自然语言交互能力，探索元萝卜在真实环境中的操作可能，在下棋功能之外，还有教育、编程、创客项目、AI实验或互动展示等场景。这条“开发者主导、生态驱动”的探索路径，为家用AI设备的应用边界提供了新的参考。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260317154455_63f4684f3b17fc9e83d46318f9ebfc53.png\" data-src=\"https://image.jido.dev/20260317154455_63f4684f3b17fc9e83d46318f9ebfc53.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260317154456_c465219128d69e1cca7647d043019112.png\" data-src=\"https://image.jido.dev/20260317154456_c465219128d69e1cca7647d043019112.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>未来，随着机器人走向更多应用场景，以及开源生态的不断完善，AI智能体将进一步打破虚拟与现实的边界，从屏幕走向更广阔的真实物理场景。而像元萝卜下棋机器人这样的消费级家用终端，作为AI能力触达普通用户的载体，也将在开源生态的支撑下，解锁更多元的应用场景，带来兼具温度与想象力的智能体验。</p>\n  <p data-track=\"1\">转载来源：元萝卜</p>\n  <p data-track=\"3\">本文为量子位获授权转载，观点仅为原作者所有。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "商汤科技旗下元萝卜下棋机器人通过开放 OpenClaw Skill 接口，将 AI 能力从虚拟交互延伸至真实物理世界，实现了从感知到执行、从虚拟到物理的完整闭环，成为消费级桌面智能体的创新案例。",
+  "oneSentenceSummary": "商汤科技旗下元萝卜下棋机器人通过开放 OpenClaw Skill 接口，将 AI 能力从虚拟交互延伸至真实物理世界，实现了从感知到执行、从虚拟到物理的完整闭环，成为消费级桌面智能体的创新案例。",
+  "summary": "本文介绍了商汤元萝卜下棋机器人与 OpenClaw 开源生态的深度结合。元萝卜依托商汤在计算机视觉领域的技术积累，通过高精度摄像头与 AI 算法实现桌面环境的实时感知和物体识别，并引导机械臂完成实体交互操作。开发者可通过 OpenClaw 的自然语言交互能力，在下棋功能之外探索教育、编程、创客项目等多元场景。这种从虚拟指令到物理执行的闭环，使元萝卜从专用下棋工具进化为通用桌面智能体，为 AI 在真实物理环境中的应用提供了参考实例。",
+  "mainPoints": [
+    {
+      "point": "元萝卜通过视觉感知+机械臂实现了从虚拟指令到物理执行的完整闭环",
+      "explanation": "依托高精度摄像头与 AI 算法，元萝卜能够实时感知桌面环境、识别物体位置、判断空间关系，并引导机械臂安全完成实体抓取和摆放操作。"
+    },
+    {
+      "point": "OpenClaw Skill 接口开放让元萝卜从专用工具进化为通用桌面智能体",
+      "explanation": "开发者可利用自然语言交互能力，在下棋之外探索教育、编程、创客项目、AI 实验等多元场景，拓展消费级家用 AI 设备的应用边界。"
+    },
+    {
+      "point": "实体交互能力为 AI 智能体走向真实物理世界提供了落地实例",
+      "explanation": "与多数停留在屏幕内的 AI 应用不同，元萝卜展示了 AI 从生成内容到参与动作的跨越，为家庭场景的 AI 应用提供了新的可能性。"
+    }
+  ],
+  "keyQuotes": [
+    "元萝卜恰好具备实现物理世界交互的基础——依托商汤科技在计算机视觉领域的深厚积累，通过高精度摄像头与 AI 算法的配合，它能够实时感知桌面环境、识别物体位置、判断空间关系。",
+    "这使得 OpenClaw 与元萝卜的结合与多数仍停留在屏幕内的 AI 应用不同：虚拟指令能够转化为真实动作，实现从指令-感知-决策-执行的完整闭环。",
+    "未来，随着机器人走向更多应用场景，以及开源生态的不断完善，AI 智能体将进一步打破虚拟与现实的边界，从屏幕走向更广阔的真实物理场景。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "元萝卜",
+    "智能体",
+    "机器人",
+    "物理交互"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 78,
+  "wordCount": 1260,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773749571000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 12:12:51"
+}

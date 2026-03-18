@@ -1,0 +1,63 @@
+{
+  "id": "RAW_8c841d26",
+  "title": "QCon London 2026：并非所有技术债务都生而平等",
+  "url": "https://www.infoq.com/news/2026/03/tech-debt-not-equal/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-17 11:02:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/presentation/mar2026/all-tech-debt-not-created-equal\">QCon London 2026</a>, Joy Ebertz, Principal Engineer at Imprint, presented a practical framework for prioritizing technical debt, arguing that in an era where AI tools are accelerating code production, the question is no longer how to eliminate tech debt, but which debt actually matters.</p>\n   <p>Ebertz, who has previously held Staff+ roles at Harness, Split, and Box, opened by challenging the perfectionist mindset that all tech debt must be resolved. She argued that having a perfect codebase is meaningless if the company goes under, and that the real goal is to write the best software possible for the situation at hand.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/tech-debt-not-equal/news/2026/03/tech-debt-not-equal/en/resources/1qcon-techdebt1-1773696697759.png\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/tech-debt-not-equal/en/resources/1qcon-techdebt1-1773696697759.png\" rel=\"share\"></p>\n   <p>The core of the presentation was a six-question framework designed to help engineering teams evaluate and prioritize technical debt. The first question, \"What is the cost if we don't do anything?\", examines the breadth and depth of impact across developers and users, including cascading effects such as customer churn and developer attrition. Ebertz highlighted \"ticking time bombs\" as a particular category, distinguishing between scale problems that come with warning systems and security vulnerabilities where exploit probability is uncertain.</p>\n   <p>The second question <q>What is the cost of fixing it?</q> addresses the cost of fixing the debt, including opportunity cost, training engineers on new systems, running dual systems during migration, and hidden surprises. Ebertz shared an example of a system migration where an entire feature was missed during the transition.</p>\n   <p>The third question <q>Do we need to fix it the right way?</q> challenges whether a proper fix is even necessary, suggesting that an 80% solution at a fraction of the cost may be sufficient. She offered practical examples such as nightly database cleanup scripts, hard-coded limits, and monthly server restarts, noting that a one-hour hard-coded solution can sometimes accomplish what would take four weeks to build properly.</p>\n   <p>The remaining questions focus on timing, completion likelihood, and whether the project will actually improve the situation. On timing,&nbsp;<q>Is now the right time?</q>, Ebertz encouraged teams to consider whether the system is getting worse or better on its own and whether new tools, particularly AI, might make the refactoring easier in the future.</p>\n   <p>On completion,&nbsp;<q>Will we be able to get the project to the finish line?</q>, she shared a cautionary example of a PHP codebase that evolved through multiple framework iterations, from models to actions to \"new actions\" to \"new new actions\", without ever completing a migration, leaving a growing problem.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/tech-debt-not-equal/news/2026/03/tech-debt-not-equal/en/resources/1qcontechdebt2-1773696697759.png\" style=\"width: 600px; height: 469px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/tech-debt-not-equal/en/resources/1qcontechdebt2-1773696697759.png\" rel=\"share\"></p>\n   <p>On outcomes,&nbsp;<q>Will a project actually make things better?</q>, she warned that teams often become so focused on the cons of the current solution that they forget its original pros, and recommended building in checkpoints to re-evaluate whether continuing a migration makes sense.</p>\n   <p>Ebertz also addressed how to build business cases for tech debt work, advocating for translating technical decisions into financial terms. Her approach involves calculating current costs, assessing whether they are increasing or decreasing, ideating multiple solutions, and comparing the incremental current cost against the incremental future cost plus the fixed implementation cost. She demonstrated this with a security patch example where a 5% chance of exploit multiplied by a large fine produces an expected cost that is straightforward to justify.</p>\n   <p>The presentation concluded with a discussion of AI's impact on technical debt. Ebertz acknowledged that AI is producing more \"slop\", lower quality code, at a faster rate than ever, but argued that the key question is whether it matters. She drew a distinction between debt that is harder to fix, such as data migrations, security vulnerabilities, and highly performant code, and debt that is easier to fix, such as walled-off components with clear boundaries and internal tools where minor bugs have low impact.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: All Tech Debt is Not Created Equal\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/tech-debt-not-equal/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773745320000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Joy Ebertz 提出了一个实用的六问题框架，用于优先处理技术债务，强调在 AI 时代进行财务论证并战略性地接受“足够好”的解决方案。",
+  "oneSentenceSummary": "Joy Ebertz 提出了一个实用的六问题框架，用于优先处理技术债务，强调在 AI 时代进行财务论证并战略性地接受“足够好”的解决方案。",
+  "summary": "在 QCon London 2026 大会上，首席工程师 Joy Ebertz 挑战了传统工程思维中彻底消除技术债务的观念，转而提出了一个战略性的优先级框架。随着 AI 加速代码生产并可能增加“代码冗余”，重点必须从修复所有问题转向识别哪些债务真正影响业务。她的框架利用六个关键问题来评估不作为的成本、80% 解决方案的可行性以及项目完成的可能性。一个主要亮点是她通过将技术风险转化为财务术语来构建商业案例的方法——根据概率和影响计算预期成本。最终，她区分了“难以修复”的债务（如数据迁移和安全问题）和隔离组件中的“易于修复”的债务，敦促团队将有限的资源集中在能产生最大价值的地方。",
+  "mainPoints": [
+    {
+      "point": "通过评估“不作为的成本”与“修复的成本”来优先处理技术债务。",
+      "explanation": "团队不应追求完美，而应分析对用户和开发者的影响范围，识别像安全漏洞这样的“定时炸弹”，同时接受可管理的规模问题。"
+    },
+    {
+      "point": "采用“80% 解决方案”以最少的资源投入解决技术债务。",
+      "explanation": "实用的变通方案，如夜间清理脚本或硬编码限制，通常可以在数小时内解决问题，而这些问题如果进行彻底重构则需要数周，从而节省工程带宽。"
+    },
+    {
+      "point": "将技术债务转化为财务术语，以获得业务部门对重构的支持。",
+      "explanation": "通过计算风险的预期成本——例如将安全漏洞发生的概率乘以潜在罚款——工程师可以向利益相关者提供清晰、数据驱动的论证。"
+    },
+    {
+      "point": "在启动重大迁移或重构之前，评估项目完成的可能性。",
+      "explanation": "不完整的迁移会导致碎片化的架构（例如，“新新操作”陷阱）；团队必须确保在开始之前拥有足够的动力和资源来达到终点。"
+    },
+    {
+      "point": "在 AI 生成代码的时代，区分结构性债务和“冗余代码”。",
+      "explanation": "AI 生成代码的速度更快但质量较低，但隔离组件或内部工具中的债务通常“易于修复”，并且不如涉及数据完整性或核心性能的债务关键。"
+    }
+  ],
+  "keyQuotes": [
+    "如果公司倒闭，拥有完美的代码库毫无意义；真正的目标是为当前情况编写最好的软件。",
+    "一个一小时的硬编码解决方案有时可以完成需要四周才能正确构建的工作。",
+    "团队常常过于关注当前解决方案的缺点，以至于忘记了它最初的优点。",
+    "AI 正在以比以往任何时候都更快的速度生成更多的“冗余代码”，质量更低，但关键问题是这是否重要。",
+    "问题不再是如何消除技术债务，而是哪些债务真正重要。"
+  ],
+  "tags": [
+    "技术债务",
+    "工程管理",
+    "软件架构",
+    "AI 软件工程",
+    "优先级框架"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 605,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773745320000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 11:02:00"
+}

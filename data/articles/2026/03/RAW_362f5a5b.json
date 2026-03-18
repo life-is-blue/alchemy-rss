@@ -1,0 +1,53 @@
+{
+  "id": "RAW_362f5a5b",
+  "title": "从“打到车”到“打到对的车”：AI 小滴打开服务消费新空间",
+  "url": "https://www.qbitai.com/2026/03/388608.html",
+  "date": "2026-03-17 11:02:20",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\" data-pm-slice=\"0 0 []\">只需要一句话，无论是对车辆有个性化要求，还是自身状态的模糊表述，AI小滴都能把它拆成可执行的服务标签，从茫茫车海里帮用户捞出那辆“对的车”。</p>\n  <p data-track=\"2\">它就是滴滴AI出行助手，去年9月开启公测，近期，小滴v1.0版本正式上线。目前已经支持空气清新、后备厢大、驾驶平稳等90多个服务标签，覆盖扶老携幼、商务接待等更复杂的出行场景。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260317150833_eb45c17f53e3129110e18b058a9378ac.png\">\n  </div>\n  <p>&nbsp;</p>\n  <h2 data-track=\"5\"><strong>一句话选车：让出行更懂你</strong></h2>\n  <p data-track=\"7\">用户可以直接对小滴说（语音/文字都行），比如：</p>\n  <p data-track=\"8\">“叫车去天坛医院，身体不舒服，有些晕车，尽快叫车”</p>\n  <p data-track=\"9\">“昨天的行程现在再来一单，要实惠的”</p>\n  <p data-track=\"10\">“每周一到周五早上8点叫车去公司，车要干净”</p>\n  <p data-track=\"11\">“先去望京地铁站接人，再去朝阳公园，有孕妇希望车内清新、车内舒适”</p>\n  <p data-track=\"12\">……</p>\n  <p data-track=\"14\">小滴会把用户的话翻译成平台能执行的标签，比如识别到“身体不舒服”“晕车”，会启动“驾驶平稳”“油车”等标签，识别到“孕妇”，会启动“驾驶平稳”“车内宽敞”等标签，再结合实时路况、时间、车辆位置、司机状态等条件，在调度池里快速筛选，最后用候选卡片发给用户确认。</p>\n  <p data-track=\"16\">如果当下没有完美匹配，小滴也能对复杂需求进行优先级排序：先满足核心需求，务实地给出当下的“更优解”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260317150833_b0528f015d22d4ae29489bcff12bd6aa.png\">\n  </div>\n  <p data-track=\"19\">多人出行有多个途经点时，AI小滴可一句话完成接人路线规划；一次输入“家”和“公司”地址后，后续用户只说“回家”“去公司”即可自动匹配目的地。</p>\n  <p data-track=\"21\">除了一句话选车，小滴也在向更完整的出行助手延展。它也支持查询附近地点并一键叫车、推荐远距离行程的换乘方案，以及查询订单、预约叫车等功能。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260317150833_d1bdaf1c9fb0ba859bad3e8a470c17b4.png\">\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260317150833_dae2b69eb8a140c70ad8406ed72d77bc.png\">\n  </div>\n  <h2 data-track=\"24\"><strong>为什么是滴滴先把这件事做出来？</strong></h2>\n  <p data-track=\"26\">越是个性化需求，匹配难度越大。</p>\n  <p data-track=\"28\">AI既要听懂人话，还要在复杂路况、实时供需等瞬息万变的约束中去匹配。这背后，靠的不只是模型能力，更是滴滴长期积累的系统能力。</p>\n  <p data-track=\"30\">首先是规模效应。供给足够多，才敢把需求拆细。否则要求越具体，越不容易叫到车。</p>\n  <p data-track=\"32\">其次是服务把控。滴滴在自营模式下直接服务司乘，司机和车辆服务更为标准化，质量更可控。</p>\n  <p data-track=\"34\">第三是数据沉淀。十余年运营积累下来的真实评价和标签数据，决定了平台能否更准确地回答“哪辆车更清新”“哪位司机开得更稳”，这也是AI调度从“猜你喜欢”走向“懂你需要”的关键。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260317150833_27963684f22cfd829ce661721c5b9b5a.png\">\n  </div>\n  <h2 data-track=\"38\"><strong>把用户在意的事情变得更确定</strong></h2>\n  <p data-track=\"40\">现在，用户将滴滴出行App升级至最新版，点击首页“AI叫车”即可体验小滴，并获得相应的体验激励。</p>\n  <p data-track=\"42\">安全、确定性、好体验，是滴滴在长期打磨的用户价值。在此基础上，AI小滴期望把个性化需求变成稳定可选的服务，把用户在意的事情变得更确定。</p>\n  <p data-track=\"44\">通过AI技术激活长尾需求、优化供给匹配，小滴也让“好服务”更容易被看见、被选择，不仅提升乘客满意度，还会激励司机服务质量提升，从而形成正向循环、促进行业走向“价值竞争”，也打开服务消费新空间。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260317150834_1bfdeb6d818be464395fb0bb1d3c0154.png\">\n  </div>\n  <p>来源：滴滴出行</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "滴滴 AI 出行助手 AI 小滴 v1.0 正式上线，通过自然语言理解将用户模糊需求转化为 90 多个可执行服务标签，实现从打到车到打到对的车的个性化出行匹配。",
+  "oneSentenceSummary": "滴滴 AI 出行助手 AI 小滴 v1.0 正式上线，通过自然语言理解将用户模糊需求转化为 90 多个可执行服务标签，实现从打到车到打到对的车的个性化出行匹配。",
+  "summary": "本文介绍了滴滴 AI 出行助手 AI 小滴的 v1.0 版本功能。AI 小滴能够理解用户的自然语言指令（包括语音和文字），自动识别隐含需求并转化为平台可执行的服务标签。目前已支持空气清新、后备厢大、驾驶平稳等 90 多个标签，覆盖扶老携幼、商务接待等复杂场景。系统会将用户需求结合实时路况、时间、车辆位置、司机状态等条件进行智能匹配，当无法完美匹配时还能进行优先级排序给出更优解。此外，AI 小滴还支持多人出行路线规划、常用地址自动匹配、附近地点查询、换乘方案推荐等功能，将个性化需求转化为稳定可选的服务。",
+  "mainPoints": [
+    {
+      "point": "AI 小滴将用户自然语言转化为 90 多个可执行服务标签",
+      "explanation": "通过识别晕车、孕妇等隐含需求，自动匹配驾驶平稳、车内宽敞等标签，结合实时路况和车辆状态进行智能调度。"
+    },
+    {
+      "point": "滴滴的规模效应和自营模式支撑个性化匹配的实现",
+      "explanation": "供给规模足够大才敢细化需求，自营模式下司机和车辆服务标准化、质量可控，十余年积累的真实评价和标签数据是 AI 调度的关键。"
+    },
+    {
+      "point": "AI 小滴将个性化需求变成稳定可选的服务，打开服务消费新空间",
+      "explanation": "通过 AI 技术激活长尾需求、优化供给匹配，让好服务更容易被看见和选择，激励司机服务质量提升，形成正向循环。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 既要听懂人话，还要在复杂路况、实时供需等瞬息万变的约束中去匹配。这背后，靠的不只是模型能力，更是滴滴长期积累的系统能力。",
+    "十余年运营积累下来的真实评价和标签数据，决定了平台能否更准确地回答哪辆车更清新哪位司机开得更稳，这也是 AI 调度从猜你喜欢走向懂你需要的关键。",
+    "通过 AI 技术激活长尾需求、优化供给匹配，小滴也让好服务更容易被看见、被选择，不仅提升乘客满意度，还会激励司机服务质量提升，从而形成正向循环。"
+  ],
+  "tags": [
+    "AI出行",
+    "滴滴",
+    "智能调度",
+    "自然语言理解",
+    "服务标签"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 77,
+  "wordCount": 1098,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773745340000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-17 11:02:20"
+}

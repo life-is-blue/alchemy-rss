@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-18 06:09:41 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-18 08:11:41 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -480,6 +480,14 @@
 
 
 
+### [Holotron-12B---高吞吐量计算机使用智能体](https://huggingface.co/blog/Hcompany/holotron-12b)
+
+2026-03-17 12:37:15 | 标签: 多模态模型, 计算机使用智能体, SSM 架构, NVIDIA Nemotron, WebVoyager
+
+> H Company 发布 Holotron-12B，一款针对生产规模智能体工作负载优化的多模态计算机使用模型。基于采用状态空间模型和注意力机制混合架构的 NVIDIA Nemotron-Nano-2 VL 构建，通过线性循环建模避免了完整注意力的二次计算成本。该模型在单张 H100 GPU 上 100 个并发请求时达到 8，900 token/s 吞吐量，比 Holo2-8B 高出 2 倍以上。训练涉及对 140 亿个定位和导航数据进行监督微调。Holotron-12B 在 WebVoyager 上得分 80.5%（从基础模型 35.1% 提升），超越 Holo2-8B 性能，并在 OS-Wo...
+
+
+
 ### [在-WebAssembly-中运行-Pydantic-的-Monty：一个基于-Rust-的-Python-沙箱子集](https://simonwillison.net/2026/Feb/6/pydantic-monty/#atom-everything)
 
 2026-02-06 22:31:31
@@ -726,13 +734,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2226,13 +2234,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3936,13 +3944,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
