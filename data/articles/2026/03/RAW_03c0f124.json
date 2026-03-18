@@ -1,0 +1,58 @@
+{
+  "id": "RAW_03c0f124",
+  "title": "QCon London 2026：本体驱动的可观测性：在 Netflix 规模下构建端到端知识图谱",
+  "url": "https://www.infoq.com/news/2026/03/ontology-at-netflix/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 02:30:00",
+  "author": "Michael Redlich",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://qconlondon.com/speakers/prasannavijayanathan\">Prasanna Vijayanathan</a> and <a href=\"https://qconlondon.com/speakers/renzosanchezsilva\">Renzo Sanchez-Silva</a>, both Engineers at Netflix, presented <a href=\"https://qconlondon.com/presentation/mar2026/ontology-driven-observability-building-e2e-knowledge-graph-netflix-scale\">Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale</a> at <a href=\"https://qconlondon.com/\">QCon London 2026</a>, where they discussed the design and implementation of an end-to-end knowledge graph that models the Netflix user experience as interactions of a connected graph of users, clients, services and infrastructure.</p>\n   <p><strong>End-to-End (E2E) Observability</strong> is defined as the ability to monitor, understand, and debug an entire state of a complex system from the frontend user experience on one end, through backend services, down to the underlying cloud infrastructure on the opposite end.</p>\n   <p>Vijayanathan kicked off his part of the presentation by asking the audience to imagine a system that could: immediately detect issues; prioritize the impact and triage of an incident; automatically provide a root cause; and proactively predict.</p>\n   <p>In a recent incident investigation at Netflix, it took four hours from the initial alert of the incident to its resolution. In between, there was triage, debugging and identification of the root cause. Resources included a total of nine teams of more than 30 engineers to resolve this incident and three related incidents.</p>\n   <p>Typical challenges to E2E observability include: numerous and siloed data sources; disconnected and non-contextual alerting; complexity with triage and troubleshooting; and inadequate detection methods.</p>\n   <p>The concept of <strong>Connectedness</strong> includes bridging gaps and breaking silos. At Netflix, connected data in its E2E observability includes: enriching data for a single source of truth; minimizing duplication of effort; the ability to triage and troubleshoot complex issues that deliver aggregated insights and root causes; and improved accuracy with diagnostics.</p>\n   <p>Vijayanathan introduced the <strong>MELT Layer</strong> (Metrics, Events, Logs, Events), as a unified observability layer for users, devices and services that can improve resolution time of incidents.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 340px;\" data-src=\"https://www.infoq.com/news/2026/03/ontology-at-netflix/news/2026/03/ontology-at-netflix/en/resources/1infoq-ontology-melt-layer-1773771442033.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ontology-at-netflix/en/resources/1infoq-ontology-melt-layer-1773771442033.jpg\" rel=\"share\"></p>\n   <p>Sanchez-Silva then kicked off his part of the presentation by introducing the concept of <strong>Ontology</strong>, defined as a formal specification of types, properties and relationships. Ontology is a way to encode knowledge. It's not just the data, it's about the relationships.</p>\n   <p>The ontology data structure, <strong>The Triple</strong>, is a tuple (Subject | Predicate | Object) that defines one fact in a knowledge graph that may be queried.</p>\n   <p>An example of such a triple is:</p>\n   <pre>\r\n    <code class=\"language-java\">\r\napi-gateway | rdf:type    | ops:Application\r\napi-gateway | ops:ownedBy | \"Team Bedrock\"\r\n\r\nINC-5377 | rdf:type    | ops:Incident\r\nINC-5377 | ops:affects | api-gateway\r\n    </code>\r\n</pre>\n   <p>The <strong>12 Operational Namespaces</strong> connect all the things in the Netflix infrastructure. These include: Slack, Alerts, Metrics, Logs, Incident, E2E and Harvest.</p>\n   <p>Sanchez-Silva stated that incident knowledge may be scattered among the 12 operational namespaces causing operational chaos. The ontology, however, provides order as it <strong>captures</strong>, <strong>structures</strong> and <strong>preserves</strong> a machine-readable triple data structure.</p>\n   <p>The <strong>Knowledge Flywheel</strong> builds resiliency as one rotation features three states - Observer, Enrich and Infer - as input for adapting. Each rotation encodes knowledge for subsequent, smarter rotations.</p>\n   <p>Using <a href=\"https://claude.ai/login\">Claude</a> as a co-developer, each harvest runs in its own git worktree. Two flywheels may \"spin together\" in one system. For example:</p>\n   <p><strong>Flywheel 1: Knowledge</strong></p>\n   <p>Slack --&gt; Enrich --&gt; Infer --&gt; Adapt</p>\n   <p><strong>Flywheel 2: Code (git worktree)</strong></p>\n   <p>Worktree --&gt; Claude --&gt; PR--&gt; Review --&gt; Merge</p>\n   <p>Both flywheels work together such that Claude can propose a pull request (PR) and a human can review the PR and merge the request.</p>\n   <p>Sanchez-Silva maintained that the ontology is the contract between chaos and understanding. The result is shown in this ontology visualization of an incident.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 330px;\" data-src=\"https://www.infoq.com/news/2026/03/ontology-at-netflix/news/2026/03/ontology-at-netflix/en/resources/1infoq-ontology-visualization-1773771442033.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ontology-at-netflix/en/resources/1infoq-ontology-visualization-1773771442033.jpg\" rel=\"share\"></p>\n   <p>Moving forward, Netflix plans to: automate root cause analyses; provide auto-remediation; and create a self-healing infrastructure.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Ontology‐Driven Observability: Building the E2E Knowledge Graph at Netflix Scale\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Michael Redlich\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/ontology-at-netflix/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773801000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Netflix 工程师展示了一个本体驱动的可观测性框架，该框架利用知识图谱和 AI 辅助的“飞轮”来统一孤立的运营数据，并加速事件解决。",
+  "oneSentenceSummary": "Netflix 工程师展示了一个本体驱动的可观测性框架，该框架利用知识图谱和 AI 辅助的“飞轮”来统一孤立的运营数据，并加速事件解决。",
+  "summary": "在 QCon London 2026 大会上，Netflix 工程师 Prasanna Vijayanathan 和 Renzo Sanchez-Silva 介绍了一种可观测性的范式转变：从孤立的指标转向本体驱动的知识图谱。通过将整个 Netflix 生态系统——用户、服务和基础设施——建模为由“三元组”（主语-谓语-宾语）组成的连接图，他们旨在消除由孤立数据引起的运营混乱。该系统利用“MELT”层（指标、事件、日志、追踪）和一个“知识飞轮”，持续观察、丰富和推断系统状态。值得注意的是，该框架将 Claude 集成作为 AI 协同开发者，以自动化数据收集和拉取请求，迈向自动化根因分析和自愈基础设施的未来。",
+  "mainPoints": [
+    {
+      "point": "从孤立监控转向本体驱动的端到端可观测性。",
+      "explanation": "传统的可观测性存在数据源孤立的问题；使用正式的本体论使 Netflix 能够编码用户、服务和基础设施之间的关系，从而创建一个单一的事实来源。"
+    },
+    {
+      "point": "为运营知识实现“三元组”数据结构。",
+      "explanation": "通过使用（主语 | 谓语 | 宾语）元组，Netflix 可以在 12 个运营命名空间（Slack、指标等）中捕获机器可读的事实，将分散的数据转化为结构化图谱。"
+    },
+    {
+      "point": "“知识飞轮”创建了一个自我强化的弹性循环。",
+      "explanation": "该系统循环经历观察、丰富和推断状态，每次循环都为后续迭代编码更智能的知识，以适应系统变化。"
+    },
+    {
+      "point": "将 LLM（Claude）集成到基础设施即代码工作流中。",
+      "explanation": "AI 在 git 工作树中充当协同开发者，根据从图谱中推断出的知识提出拉取请求，这些请求随后由人工审查和合并。"
+    }
+  ],
+  "keyQuotes": [
+    "本体是混乱与理解之间的契约。",
+    "重要的不仅仅是数据，更是它们之间的关系。",
+    "知识飞轮通过一次循环包含观察、丰富和推断三种状态作为适应的输入，从而构建弹性。",
+    "端到端（E2E）可观测性被定义为从前端用户体验到底层云基础设施，监控、理解和调试复杂系统整体状态的能力。"
+  ],
+  "tags": [
+    "可观测性",
+    "知识图谱",
+    "本体",
+    "SRE",
+    "Netflix"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 573,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773801000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-18 02:30:00"
+}

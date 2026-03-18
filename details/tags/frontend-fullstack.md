@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-18 14:20:22 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-18 16:11:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -612,6 +612,14 @@
 
 
 
+### [【第-3672-期】CSS-迎来原生随机能力：random-与-random-item-初探](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278766&idx=1&sn=f12dfaf066546ca3b50d6cd4d9462fcd)
+
+2026-03-18 01:03:00 | 标签: CSS, Web 标准, 前端开发, 生成式设计, random()
+
+> 文章深入探讨了《CSS Values and Units Module Level 5》草案中新增的随机化能力。CSS 长期以来作为确定性语言，通过 `random()`（区间随机）和 `random-item()`（离散随机）打破了这一局限。重点解析了这两个函数的语法，包括步进取值（Step）以及极其灵活的共享选项（auto、虚线标识符、element-shared、fixed），这些选项允许开发者在属性间、元素间乃至全局范围内同步随机状态。虽然目前仅 Safari 26.2 提供部分支持，但这一特性预示着未来网页设计将能脱离 JavaScript 实现更复杂的生成式布局与视觉效果。
+
+
+
 ### [2026-年最佳-ngrok-替代方案——如何选择适合你使用场景的内网穿透工具](https://www.freecodecamp.org/news/top-ngrok-alternatives-tunneling-tools/)
 
 2026-03-17 18:05:51
@@ -744,13 +752,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2244,13 +2252,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3954,13 +3962,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
