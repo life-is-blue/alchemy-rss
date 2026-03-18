@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-18 16:11:32 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-18 18:17:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -614,9 +614,7 @@
 
 ### [【第-3672-期】CSS-迎来原生随机能力：random-与-random-item-初探](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278766&idx=1&sn=f12dfaf066546ca3b50d6cd4d9462fcd)
 
-2026-03-18 01:03:00 | 标签: CSS, Web 标准, 前端开发, 生成式设计, random()
-
-> 文章深入探讨了《CSS Values and Units Module Level 5》草案中新增的随机化能力。CSS 长期以来作为确定性语言，通过 `random()`（区间随机）和 `random-item()`（离散随机）打破了这一局限。重点解析了这两个函数的语法，包括步进取值（Step）以及极其灵活的共享选项（auto、虚线标识符、element-shared、fixed），这些选项允许开发者在属性间、元素间乃至全局范围内同步随机状态。虽然目前仅 Safari 26.2 提供部分支持，但这一特性预示着未来网页设计将能脱离 JavaScript 实现更复杂的生成式布局与视觉效果。
+2026-03-18 01:03:00
 
 
 
