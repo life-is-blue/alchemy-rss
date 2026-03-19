@@ -1,0 +1,58 @@
+{
+  "id": "RAW_40dff13f",
+  "title": "AI 模型两周内发现 22 个 Firefox 漏洞",
+  "url": "https://www.infoq.com/news/2026/03/claude-ai-firefox-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-19 10:15:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Recently, Claude Opus 4.6 found <a href=\"https://www.mozilla.org/en-US/security/advisories/mfsa2026-13/\">22 security vulnerabilities</a> in Firefox in just two weeks. Fourteen earned high-severity classifications, which is almost 20% of all high-severity Firefox bugs patched throughout 2025. <a href=\"https://www.anthropic.com/news/mozilla-firefox-security\">Anthropic's research</a> went further than discovery: Claude actually wrote working exploits for some of these bugs.</p>\n   <p>Mozilla validated the findings and <a href=\"https://www.firefox.com/en-US/firefox/148.0/releasenotes/\">shipped fixes in Firefox 148</a> as the work shows AI can now find security flaws in battle-tested codebases at speeds humans can't match. However, &nbsp;there's a darker side: attackers could use these same capabilities to develop exploits faster than ever before.</p>\n   <p>Anthropic's Frontier Red Team contacted Mozilla in late February after Claude flagged bugs in Firefox's JavaScript engine. <a href=\"https://blog.mozilla.org/en/firefox/hardening-firefox-anthropic-red-team/\">Mozilla engineers Brian Grinstead and Christian Holler</a> said most AI-generated bug reports are garbage, yet these were different. Each came with minimal test cases, detailed proofs of concept, and candidate patches. Their team could quickly verify and reproduce the issues.</p>\n   <p>The 22 CVEs exceed the number of vulnerabilities reported in any single month in 2025, as Claude found 90 additional bugs beyond the security-critical ones, most of which are now fixed. Moreover, Mozilla pointed out something interesting: some findings matched traditional fuzzing results, yet others represented entirely new classes of logic errors that fuzzers never caught.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/claude-ai-firefox-vulnerability/news/2026/03/claude-ai-firefox-vulnerability/en/resources/1Firew-1773229763973.jpg\" style=\"width: 600px; height: 381px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/claude-ai-firefox-vulnerability/en/resources/1Firew-1773229763973.jpg\" rel=\"share\"></p>\n   <p><em>(Source: Anthropic <a href=\"https://www.anthropic.com/news/mozilla-firefox-security\">blog post</a>)</em></p>\n   <p>Grinstead and Holler stated that, despite Firefox having undergone extensive fuzzing, static analysis, and regular security reviews for decades, the model revealed many previously unknown bugs. They compared this moment to the early days of fuzzing, suggesting there is likely a substantial backlog of now-discoverable bugs across widely deployed software.</p>\n   <p>Anthropic's evaluation went beyond vulnerability discovery to test whether Claude could develop exploits. The team gave Claude access to the discovered vulnerabilities and tasked it with producing working exploits that could read and write local files in a target system. After approximately $4,000 in API credits and hundreds of attempts, Claude successfully created exploits in two cases.</p>\n   <p>One such exploit targeted <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=2013165\">CVE-2026-2796</a>, a JIT miscompilation in the JavaScript WebAssembly component. In a <a href=\"https://red.anthropic.com/2026/exploit/\">detailed technical analysis</a>, Anthropic's security researchers reverse-engineered Claude's exploit, which exploited a type confusion vulnerability involving Function.prototype.call.bind() wrappers.</p>\n   <p>The vulnerability allowed Claude to develop exploitation primitives, including ‘addrof’ (leak an object's address) and ‘fakeobj’ (forge a JavaScript object reference to an arbitrary address). Claude then used these to create a fake ArrayBuffer for arbitrary read/write access, ultimately achieving code execution. However, the exploit only worked in a testing environment that intentionally removed some security features, including Firefox's sandbox.</p>\n   <p>Anthropic researchers noted:</p>\n   <blockquote>\n    <p>The exploits Claude wrote only worked on our testing environment, which intentionally removed some of the security features found in modern browsers. This includes, most importantly, the sandbox, the purpose of which is to reduce the impact of these types of vulnerabilities.</p>\n   </blockquote>\n   <p>They emphasized that Opus 4.6 turned vulnerabilities into exploits in only two cases, despite hundreds of attempts targeting dozens of bugs.</p>\n   <p>The disparity between Claude's vulnerability discovery and exploitation capabilities gives defenders a temporary advantage. Anthropic stated that frontier language models are now world-class vulnerability researchers, but cautioned that \"looking at the rate of progress, it is unlikely that the gap between frontier models' vulnerability discovery and exploitation abilities will last very long.\"</p>\n   <p>Mozilla has already started integrating AI-assisted analysis into its internal security workflows. The collaboration established best practices for submitting AI-generated bug reports, including the importance of including minimal test cases, detailed proofs of concept, and candidate patches.</p>\n   <p>Anthropic published its <a href=\"https://cdn.sanity.io/files/4zrzovbb/website/0039d6b020038aae6eaf0b3a46c70912b3a298dc.pdf\">Coordinated Vulnerability Disclosure operating principles</a>, describing procedures for working with maintainers. The company acknowledged that these processes follow standard industry norms but may need to be adjusted as model capabilities improve.</p>\n   <p>The work follows Anthropic's <a href=\"https://red.anthropic.com/2026/zero-days/\">previous research</a>, demonstrating that Claude found more than 500 zero-day vulnerabilities in well-tested open-source software. Anthropic recently launched <a href=\"https://www.anthropic.com/news/claude-code-security\">Claude Code Security</a> in a limited research preview, bringing vulnerability discovery and patching capabilities directly to customers and open-source maintainers.</p>\n   <p>Anthropic wants to do more of this. They're expanding their security work: finding vulnerabilities in other projects, building tools to help maintainers triage reports, and writing patches directly. They're <a href=\"https://job-boards.greenhouse.io/anthropic/jobs/5123011008\">hiring researchers</a> to make it happen.</p>\n   <p>Lastly, Mozilla said the collaboration reflects how they've always approached new technology carefully, with user security front and center. In addition, Grinstead and Holler wrote that AI is accelerating both sides of the security equation, attacks and defenses, so Mozilla will continue investing in the tools, processes, and partnerships that keep Firefox ahead of threats.</p>\n   <p>The findings underscore an urgent reality as developers need to accelerate vulnerability discovery and patching before attackers can weaponize AI to exploit them.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI Model Discovers 22 Firefox Vulnerabilities in Two Weeks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/claude-ai-firefox-vulnerability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773915300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Claude Opus 4.6 在两周内发现了 22 个 Firefox 漏洞，其中包括传统模糊测试工具未能发现的高危逻辑错误，标志着 AI 驱动的安全研究发生了重大转变。",
+  "oneSentenceSummary": "Claude Opus 4.6 在两周内发现了 22 个 Firefox 漏洞，其中包括传统模糊测试工具未能发现的高危逻辑错误，标志着 AI 驱动的安全研究发生了重大转变。",
+  "summary": "本文报道了 AI 驱动的网络安全领域的一个重要里程碑：Anthropic 的 Claude Opus 4.6 模型在短短两周内发现了 Firefox 浏览器中的 22 个漏洞。在这些发现中，有 14 个被归类为高危漏洞，占 Firefox 去年修复的所有高危漏洞的近 20%。Anthropic 的前沿红队（Frontier Red Team）与 Mozilla 工程师之间的合作凸显了安全研究的转变，因为该 AI 模型成功识别出了“逻辑错误”——即 JavaScript 引擎推理中复杂的缺陷，而这些缺陷在经过数十年的开发后，传统自动化模糊测试工具仍未能捕捉到。除了单纯的发现漏洞外，该研究还测试了模型将这些缺陷武器化的能力。Claude 成功为特定漏洞生成了可用的利用程序（Exploit），例如 WebAssembly 中的 JIT 编译错误，并利用了“addrof”和“fakeobj”等复杂的利用原语。然而，文章指出了一道关键的防御缓冲：这些利用程序仅在故意禁用了现代安全沙箱的环境中才能发挥作用。Mozilla 已做出回应，将 AI 辅助分析集成到其内部安全工作流程中，并强调 AI 生成的报告需要包含最小测试用例和候选补丁。这些发现突显了软件行业面临的一个紧迫现实：虽然防御者目前通过使用 AI 加固代码库占据了微弱优势，但 AI 在发现漏洞与利用漏洞能力之间的差距正在迅速缩小。",
+  "mainPoints": [
+    {
+      "point": "Claude Opus 4.6 在识别复杂的逻辑错误方面表现出了卓越的能力，这些错误是传统自动化模糊测试工具几十年来一直未能发现的。",
+      "explanation": "虽然传统的模糊测试擅长发现内存损坏问题，但 AI 模型能够推理架构意图，从而揭示了 Firefox JavaScript 引擎中那些在多年严格安全审查中幸存下来的深层逻辑缺陷。"
+    },
+    {
+      "point": "AI 生成的安全报告质量已得到提升，能够为维护者提供可操作的概念验证（PoC）和候选补丁。",
+      "explanation": "与以往低质量的 AI 噪音不同，这些报告提供了最小测试用例和复现步骤，使 Mozilla 工程师能够以比手动报告快得多的速度验证并发布修复程序。"
+    },
+    {
+      "point": "AI 现在能够生成“addrof”和“fakeobj”等复杂的利用原语，从而在受控环境中实现任意代码执行。",
+      "explanation": "Anthropic 的研究表明，Claude 能够对其自身发现的漏洞进行逆向工程以创建可用的利用程序，尽管沙箱等现代安全功能仍然提供了关键的防御层。"
+    },
+    {
+      "point": "随着漏洞利用能力的提升，目前由 AI 辅助漏洞发现所带来的防御优势预计将是短暂的。",
+      "explanation": "Anthropic 强调，虽然防御者目前通过将 AI 集成到工作流程中占据优势，但前沿模型的快速进步表明，发现漏洞与武器化漏洞之间的差距很快就会缩小。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude 除了发现那些安全关键型漏洞外，还发现了另外 90 个漏洞，其中大部分现已修复。",
+    "一些发现与传统的模糊测试结果相吻合，但另一些则代表了模糊测试从未捕捉到的全新类别的逻辑错误。",
+    "前沿语言模型现在已成为世界级的漏洞研究员。",
+    "前沿模型在漏洞发现和利用能力之间的差距不太可能持续太久。"
+  ],
+  "tags": [
+    "Claude Opus 4.6",
+    "Firefox",
+    "网络安全",
+    "漏洞发现",
+    "AI 红队测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 753,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773915300000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 10:15:00"
+}
