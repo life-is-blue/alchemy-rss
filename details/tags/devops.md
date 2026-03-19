@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-19 22:17:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-20 00:17:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -422,17 +422,13 @@
 
 ### [微软在-AKS-中增加对基于-DRA-的-NVIDIA-vGPU-的支持](https://www.infoq.com/news/2026/03/microsoft-nvidia-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-19 10:00:00 | 标签: AKS, Kubernetes, DRA, NVIDIA vGPU, GPU 虚拟化
-
-> 本文探讨了 Azure Kubernetes Service (AKS) 中动态资源分配 (DRA) 与 NVIDIA vGPU 技术的集成。此次更新标志着从静态 GPU 资源管理向使用 Kubernetes 1.34+ 的动态、基于属性的系统的转变。通过利用 Azure 的 NVadsA10_v5 虚拟机系列，物理 GPU 可以在 hypervisor 层被划分为固定大小的切片（1/6、1/3 或 1/2），从而确保共享工作负载的可预测性能和 CUDA 能力。文章还对比了 Google Cloud (GKE) 和 AWS (EKS) 如何采用 DRA 来解决不同的挑战，范围涵盖从分片装箱 (...
+2026-03-19 10:00:00
 
 
 
 ### [$-teamcity-命令行操作-|-TeamCity-博客](https://blog.jetbrains.com/teamcity/2026/03/teamcity-cli/)
 
-2026-03-19 09:42:53 | 标签: TeamCity, CLI, DevOps, CI/CD, 自动化
-
-> 这篇来自 JetBrains 博客的文章宣布发布了 TeamCity CLI，这是一款开源工具，旨在通过减少浏览器和终端之间的上下文切换来提高开发人员的生产力。文章涵盖了安装、核心功能（管理构建、智能体和队列）以及高级功能（如直接 REST API 访问和用于自动化的结构化数据输出）。值得注意的是，它强调了该工具通过“智能体技能”（Agent Skills）与 AI 编码智能体的兼容性，从而实现自动化的流水线管理。本文为 DevOps 工程师将 TeamCity 操作集成到其命令行工作流中提供了实用的指南。
+2026-03-19 09:42:53
 
 
 
