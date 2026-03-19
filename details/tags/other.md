@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-20 04:09:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-20 06:04:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -30623,11 +30623,11 @@
 
 
 
-### [Cursor-设计负责人：只会画按钮的设计师，有麻烦了](https://baoyu.io/blog/2026-02-21/cursor-ryo-lu-design-team)
+### [OpenAI-Codex-产品负责人：代码不再由人类编写，但我们会有更多构建者（Builder）](https://baoyu.io/blog/2026-02-22/openai-codex-embiricos-interview)
 
-2026-02-22T03:46:14.000Z
+2026-02-22T00:00:00.000Z
 
-> Cursor 设计负责人 Ryo Lu 在访谈中谈到：4 人设计团队如何管理 293 亿美元产品、用 Cursor 构建 Cursor 的递归飞轮、最强程序员也只能同时管 4 个 Agent、以及为什么 Cursor 不想做代码编辑器。
+> OpenAI Codex 产品负责人 Alexander Embiricos 在 20VC 访谈中分享了 AI 编码的现状：OpenAI 内部大多数人已不再打开 IDE，Codex 增长 20 倍，但真正的瓶颈不是模型而是人类。他还谈了开放标准、Agent 市场终局和 SaaS 的未来。
 
 
 
