@@ -1,0 +1,54 @@
+{
+  "id": "RAW_19c0989f",
+  "title": "AI 辅助软件开发中，人类的角色在哪里？",
+  "url": "https://www.infoq.com/news/2026/03/mf-aiassisted-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-19 07:32:00",
+  "author": "Matt Foster",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Martin Fowler’s blog <a href=\"https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html\">recently examined</a> the role of humans in AI-assisted software engineering, arguing that developers are unlikely to move entirely \"out of the loop\". Kief Morris, who authored the article, suggests many teams may increasingly work \"on the loop\", designing the specifications, tests, and feedback mechanisms that guide AI agents rather than reviewing every generated artifact directly. His analysis appears alongside broader industry discussions about how such agent-driven development workflows should be verified, monitored, and governed in practice</p>\n   <p>In his article, Morris outlines three ways humans can interact with AI systems: in the loop, where developers review each AI output; out of the loop, where systems operate largely autonomously; and on the loop, where humans design and maintain the mechanisms that guide and validate the system’s behavior. Morris suggests the third model may prove particularly useful for software engineering, where developers focus on building testing frameworks, constraints, and evaluation pipelines that shape how AI agents operate rather than inspecting every generated line of code.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 479px;\" data-src=\"https://www.infoq.com/news/2026/03/mf-aiassisted-dev/news/2026/03/mf-aiassisted-dev/en/resources/1Screenshot 2026-03-17 at 12.09.01 PM-1773775085987.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/mf-aiassisted-dev/en/resources/1Screenshot 2026-03-17 at 12.09.01 PM-1773775085987.png\" rel=\"share\"></p>\n   <p>Source MartinFowler.com</p>\n   <p>Organizations across the industry are experimenting with coding agents in software development workflows. In a technical deep dive into its Codex system, <a href=\"https://openai.com/index/unrolling-the-codex-agent-loop/\">OpenAI described</a> the \"agent loop\" that coordinates interactions between the user, the model, and external tools. In this architecture, the output of the system is often not simply a chat response but code written or modified directly on the machine, produced through iterative tool use and feedback cycles.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 374px;\" data-src=\"https://www.infoq.com/news/2026/03/mf-aiassisted-dev/news/2026/03/mf-aiassisted-dev/en/resources/1Screenshot 2026-03-17 at 12.10.28 PM-1773775085987.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/mf-aiassisted-dev/en/resources/1Screenshot 2026-03-17 at 12.10.28 PM-1773775085987.png\" rel=\"share\"></p>\n   <p>Source OpenAI</p>\n   <p>At the same time, developer sentiment around AI-generated code remains mixed. <a href=\"https://stackoverflow.blog/2026/01/23/ai-can-10x-developers-in-creating-tech-debt/\">Stack Overflow discussions</a> and commentary have highlighted concerns that productivity gains from generative AI tools can come with trade-offs in maintainability and technical debt, particularly when generated code requires substantial review or refactoring before it can be safely integrated into production systems.</p>\n   <p>Survey data from Stack Overflow also reflects this tension. In the <a href=\"https://survey.stackoverflow.co/2025/ai\">2025 Developer Survey</a>, 84% of developers reported that they are using or planning to use AI tools in their development workflows, but significantly fewer said they trust AI-generated output. Many respondents reported that debugging AI-generated code or verifying its correctness can require additional effort.</p>\n   <p>Some engineering teams have begun exploring ways to address these challenges through stronger verification and control mechanisms. In a recent engineering post, <a href=\"https://www.datadoghq.com/blog/ai/harness-first-agents/\">Datadog argued</a> that human review alone does not scale for AI-generated artifacts, particularly when agents can produce large volumes of code. Instead, teams may need to invest in automated verification pipelines that combine specifications, simulation testing, bounded verification, and runtime telemetry to validate system behavior.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 266px;\" data-src=\"https://www.infoq.com/news/2026/03/mf-aiassisted-dev/news/2026/03/mf-aiassisted-dev/en/resources/1Screenshot 2026-03-17 at 12.12.04 PM-1773775085987.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/mf-aiassisted-dev/en/resources/1Screenshot 2026-03-17 at 12.12.04 PM-1773775085987.png\" rel=\"share\"></p>\n   <p>Source DataDog</p>\n   <p>Datadog describes what it calls a \"harness-first\" approach to agent development, in which automated verification systems evaluate agent behavior through specifications, simulation testing, and runtime telemetry. In this model, developers focus on building the harness that validates agent outputs rather than relying on manual inspection of each generated artifact.</p>\n   <p>These discussions highlight an emerging focus on the systems surrounding AI development tools. As coding agents become more capable, several organizations have emphasized the importance of testing harnesses, evaluation frameworks, and observability systems that help developers monitor and guide AI-generated output.</p>\n   <p>Morris’ \"on the loop\" framing reflects this broader theme. Rather than removing humans from the development process entirely, many teams appear to be exploring how developers can design and maintain the guardrails that shape how increasingly autonomous software systems operate.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Where Do Humans Fit in AI-Assisted Software Development?\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Foster\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/mf-aiassisted-dev/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773905520000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文探讨了 AI 辅助编程中开发者角色的演变，即从手动审查者（“人在回路”）转变为设计自动化验证框架的系统架构师（“人在监控回路”）。",
+  "oneSentenceSummary": "本文探讨了 AI 辅助编程中开发者角色的演变，即从手动审查者（“人在回路”）转变为设计自动化验证框架的系统架构师（“人在监控回路”）。",
+  "summary": "本文综合了当前业界关于人类在 AI 驱动的软件工程中角色的观点。文章参考了 Martin Fowler 的博客、OpenAI 和 Datadog 的见解，确定了三种交互模型：“人在回路”（手动审查）、“脱离回路”（自主运行）和“人在监控回路”（设计护栏）。尽管 84% 的开发者使用 AI，但由于技术债务和可维护性问题，信任度依然较低。文章强调了向“测试框架优先”（harness-first）开发的转变，即工程师专注于构建自动化测试流水线、仿真环境和运行时遥测技术来管理 AI 智能体，而不是检查生成的每一行代码。",
+  "mainPoints": [
+    {
+      "point": "“人在监控回路”模型正成为 AI 辅助工程最可行的路径。",
+      "explanation": "开发者不再审查每一个 AI 生成的产物，而是专注于设计规范、测试和反馈机制，以引导和验证自主智能体的行为。"
+    },
+    {
+      "point": "AI 工具的采用率与输出可靠性之间存在巨大的信任鸿沟。",
+      "explanation": "尽管采用率很高（84%），但开发者反馈称，调试和验证 AI 生成的代码往往需要耗费大量精力，如果管理不当，可能会增加技术债务。"
+    },
+    {
+      "point": "对于大规模 AI 生成的代码库，人工手动审查已不再具备可扩展性。",
+      "explanation": "像 Datadog 这样的组织提倡“测试框架优先”的方法，利用自动化验证流水线、仿真测试和运行时遥测技术来确保系统在大规模下的完整性。"
+    }
+  ],
+  "keyQuotes": [
+    "开发者不太可能完全“脱离回路”。",
+    "许多团队可能会越来越多地采用“人在监控回路”的工作方式，设计引导 AI 智能体的规范、测试和反馈机制。",
+    "仅靠人工审查无法扩展 AI 生成的产物，特别是当智能体能够生成大量代码时。",
+    "开发者专注于构建验证智能体输出的测试框架，而不是依赖对每个生成产物的手动检查。"
+  ],
+  "tags": [
+    "AI 辅助开发",
+    "软件工程工作流",
+    "AI 智能体",
+    "技术债务",
+    "自动化验证"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 546,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773905520000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 07:32:00"
+}
