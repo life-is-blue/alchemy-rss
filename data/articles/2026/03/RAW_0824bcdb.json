@@ -1,0 +1,59 @@
+{
+  "id": "RAW_0824bcdb",
+  "title": "自动研究：利用 Apple 的“LLM in a Flash”在本地运行 Qwen 397B",
+  "url": "https://simonwillison.net/2026/Mar/18/llm-in-a-flash/#atom-everything",
+  "date": "2026-03-18 23:56:46",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">18th March 2026 - Link Blog</p>\n   <p><strong><a href=\"https://twitter.com/danveloper/status/2034353876753592372\">Autoresearching Apple's \"LLM in a Flash\" to run Qwen 397B locally</a></strong>. Here's a fascinating piece of research by Dan Woods, who managed to get a custom version of <a href=\"https://huggingface.co/Qwen/Qwen3.5-397B-A17B/tree/main\">Qwen3.5-397B-A17B</a> running at 5.5+ tokens/second on a 48GB MacBook Pro M3 Max despite that model taking up 209GB (120GB quantized) on disk.</p>\n   <p>Qwen3.5-397B-A17B is a Mixture-of-Experts (MoE) model, which means that each token only needs to run against a subset of the overall model weights. These expert weights can be streamed into memory from SSD, saving them from all needing to be held in RAM at the same time.</p>\n   <p>Dan used techniques described in Apple's 2023 paper <a href=\"https://arxiv.org/abs/2312.11514\">LLM in a flash: Efficient Large Language Model Inference with Limited Memory</a>:</p>\n   <blockquote>\n    <p>This paper tackles the challenge of efficiently running LLMs that exceed the available DRAM capacity by storing the model parameters in flash memory, but bringing them on demand to DRAM. Our method involves constructing an inference cost model that takes into account the characteristics of flash memory, guiding us to optimize in two critical areas: reducing the volume of data transferred from flash and reading data in larger, more contiguous chunks.</p>\n   </blockquote>\n   <p>He fed the paper to Claude Code and used a variant of Andrej Karpathy's <a href=\"https://simonwillison.net/2026/Mar/13/liquid/\">autoresearch pattern</a> to have Claude run 90 experiments and produce MLX Objective-C and Metal code that ran the model as efficiently as possible.</p>\n   <p><a href=\"https://github.com/danveloper/flash-moe\">danveloper/flash-moe</a> has the resulting code plus <a href=\"https://github.com/danveloper/flash-moe/blob/main/paper/flash_moe.pdf\">a PDF paper</a> mostly written by Claude Opus 4.6 describing the experiment in full.</p>\n   <p>The final model has the experts quantized to 2-bit, but the non-expert parts of the model such as the embedding table and routing matrices are kept at their original precision, adding up to 5.5GB which stays resident in memory while the model is running.</p>\n   <p>Qwen 3.5 usually runs 10 experts per token, but this setup dropped that to 4 while claiming that the biggest quality drop-off occurred at 3.</p>\n   <p>It's not clear to me how much the quality of the model results are affected. Claude claimed that \"Output quality at 2-bit is indistinguishable from 4-bit for these evaluations\", but the description of the evaluations it ran is quite thin.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9337/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 Dan Woods 的一项研究实验，该实验利用 Apple 的“LLM in a Flash”技术和 AI 驱动的“自动研究”模式，在 48GB MacBook Pro 上运行 397B 参数的 Qwen 模型。",
+  "oneSentenceSummary": "本文探讨了 Dan Woods 的一项研究实验，该实验利用 Apple 的“LLM in a Flash”技术和 AI 驱动的“自动研究”模式，在 48GB MacBook Pro 上运行 397B 参数的 Qwen 模型。",
+  "summary": "本文强调了本地 LLM 推理的一个重要技术里程碑：在内存有限的消费级硬件上运行 Qwen3.5-397B-A17B 混合专家（MoE）模型。通过实施 Apple 2023 年“LLM in a Flash”论文中的策略，研究人员成功地按需将专家权重从 SSD 流式传输到 DRAM，在 48GB M3 Max MacBook Pro 上实现了超过每秒 5.5 个 token 的速度。一个关键亮点是其方法论，它利用 Claude Code 和“自动研究”模式自动化了 90 次实验，生成了优化的 MLX、Objective-C 和 Metal 代码。该实现对专家模型使用了 2-bit 量化，同时将路由矩阵等关键组件以更高精度保留在内存中。然而，作者指出，由于 AI 提供的评估数据较少，对输出质量的实际影响仍不确定。",
+  "mainPoints": [
+    {
+      "point": "MoE 模型通过 SSD 权重流式传输，实现了在有限内存下进行大规模 LLM 推理。",
+      "explanation": "通过仅将每个 token 所需的特定“专家”权重从闪存加载到 DRAM，可以实现在本地运行远超物理内存容量的模型。"
+    },
+    {
+      "point": "“自动研究”工作流加速了复杂的技术实现和优化。",
+      "explanation": "使用 Claude Code 解读学术论文并自主运行数十次实验，可以快速生成高性能的 Metal 和 MLX 代码。"
+    },
+    {
+      "point": "策略性量化平衡了内存占用与模型驻留需求。",
+      "explanation": "该实验对专家模型应用了 2-bit 量化，同时保持嵌入层和路由矩阵（5.5GB）的原始精度，以确保模型保持功能正常。"
+    },
+    {
+      "point": "减少每个 token 的活跃专家数量为本地硬件带来了显著的性能提升。",
+      "explanation": "将每个 token 的标准 10 个专家减少到 4 个，提高了推理速度，但也给模型的推理质量带来了潜在风险。"
+    }
+  ],
+  "keyQuotes": [
+    "成功让自定义版本的 Qwen3.5-397B-A17B 在 48GB MacBook Pro M3 Max 上以超过 5.5 tokens/秒的速度运行，尽管该模型在磁盘上占用了 209GB。",
+    "这些专家权重可以从 SSD 流式传输到内存中，无需将它们全部同时保存在 RAM 中。",
+    "他将论文喂给 Claude Code，并使用 Andrej Karpathy 的自动研究模式的变体，让 Claude 运行了 90 次实验。",
+    "最终模型将专家部分量化为 2-bit，但非专家部分……保持了原始精度。",
+    "我不确定模型结果的质量受到了多大影响。"
+  ],
+  "tags": [
+    "LLM 推理",
+    "混合专家模型 (MoE)",
+    "Apple Silicon",
+    "MLX",
+    "量化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 360,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773878206000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 23:56:46"
+}

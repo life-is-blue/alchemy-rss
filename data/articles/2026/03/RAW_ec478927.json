@@ -1,0 +1,57 @@
+{
+  "id": "RAW_ec478927",
+  "title": "Windows 栈限制检查回顾：Alpha AXP",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260318-00/?p=112146",
+  "date": "2026-03-18 16:11:59",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We continue our historical survey of Windows stack-checking functions by looking at the Alpha AXP.</p>\n  <pre>; on entry, t12 is the number of bytes to allocate\r\n; on exit, stack has been validated (but not adjusted)\r\n; modifies t8, t9, t10\r\n\r\n_chkstk:\r\n    subq    sp, t12, t8     ; t8 = new stack pointer\r\n    mov     v0, t10         ; save v0 in t10 (call_pal will overwrite it)\r\n    bgt     sp, usermode    ; branch if running in user mode\r\n\r\n    call_pal rdksp          ; PAL call to get start of kernel stack in v0\r\n    lda     t9, -KERNEL_STACK_SIZE(v0) ; t9 = end of stack\r\n    br      zero, havelimit\r\n\r\nusermode:\r\n    call_pal rdteb          ; PAL call to get TEB in v0\r\n    ldl     t9, StackLimit(v0) ; t9 = end of stack\r\n\r\nhavelimit:\r\n    mov     t10, v0         ; recover original v0 for caller\r\n\r\n    cmpult  t8, t9, t10     ; is stack growth needed?\r\n    beq     done            ; N: then nothing to do\r\n\r\n    ldil    r10, -PAGE_SIZE\r\n    and     t8, t10, t8     ; round down to nearest page\r\n\r\nprobe:\r\n    lda     t9, -PAGE_SIZE(t9)  ; prepare to touch a page\r\n    stq     zero, 0(t9)         ; touch it\r\n    cmpeq   t8, t9, t10         ; finished?\r\n    beq     t10, probe          ; N: keep going\r\n\r\ndone:\r\n    ret     zero, (ra)          ; return to caller\r\n</pre>\n  <p>We see a lot of similarities to MIPS and PowerPC: The code short-circuits the case where the stack does not need to expand, and it relies on the architectural split between user mode and kernel mode at the halfway point in the address space. As with MIPS (but not PowerPC or 80386), the probe loop writes to the memory to fault it in.¹</p>\n  <p>A new wrinkle here is that this code uses 64-bit calculations when adjusting the stack pointer. The Alpha AXP is a 64-bit processor. Although it doesn’t have a “32-bit mode”, you can still pretend that it’s a 32-bit processor by simply choosing not to use any of the 64-bit features.</p>\n  <p>This code appears to have been written early in the history of the Alpha AXP project, and it contains some seemingly unnecessary register preservation. For example, it goes out of its way to preserve <code>v0</code>, even though <code>v0</code> is a volatile register that does not contain anything interesting on entry to the function. My theory is that it does this because it wants to maintain compatibility with a non-Microsoft compiler that might use <code>v0</code> as part of its calling convention, and this allowed the Windows NT team to start porting their operating system without having to wait for the Microsoft Languages team to come up with an Alpha AXP version of the Microsoft Visual C compiler.</p>\n  <p>Here is a typical usage of this function to build a large stack frame in a function prologue:</p>\n  <pre>    mov     ra, t11             ; save return address\r\n    ldil    t12, 17320          ; large stack frame\r\n    bsr     ra, _chkstk         ; fault pages in if necessary\r\n    subsq   sp, t12, sp         ; allocate the stack frame\r\n    mov     t11, ra             ; restore return address for standard entry\r\n</pre>\n  <p>The prologue relies on the fact that the <code>_chkstk</code> function preserves the <code>t11</code> register.</p>\n  <p>Next time, we’ll jump back to the present by looking at the stack limit checking on x86-64 (also known as amd64).</p>\n  <p>¹ My new theory is that writing to memory as part of stack expansion avoids a soft page fault. If you only read, then the memory manager maps in a shared zero page to satisfy the read, and then marks the page as copy-on-write.² And then the stack actually expands into that space and you take a soft page fault to promote the copy-on-write page to a full write page.³</p>\n  <p>² The idea here is that if you create a bunch of zero pages, the memory manager can map a single page of zeroes into all of them and make the pages copy-on-write. If you don’t actually write to them before the pages get paged out, then it avoided having to do the work of finding a writable zero page to map in, and it also avoids writing the modified page when the page gets paged out. Allocating a page that is never used happens a lot: You might allocate a megabyte of memory but use only the first 64KB of it.</p>\n  <p>³ The calculation here is “When the stack expands, what is the likelihood that the memory will actually be written to?” If the stack expands by just a little bit, then the likelihood is high, but if it expands by a lot, then the likelihood decreases because the large stack expansion is probably due to a large stack array, and there’s a good chance that the function won’t actually use all of it. It’s a cost/benefit analysis, and the authors of the <code>_chkstk</code> functions came to different conclusions, perhaps based on different usage patterns by code written for different processors.</p>\n </body>\n</html>",
+  "aiSummary": "一篇关于 Windows NT 在 Alpha AXP 架构上栈检查实现的技术回顾，探讨了底层汇编、内存管理权衡以及历史编译器兼容性限制。",
+  "oneSentenceSummary": "一篇关于 Windows NT 在 Alpha AXP 架构上栈检查实现的技术回顾，探讨了底层汇编、内存管理权衡以及历史编译器兼容性限制。",
+  "summary": "这篇来自“The Old New Thing”系列的文章分析了 Windows NT 中 Alpha AXP 处理器的 `_chkstk` 函数实现。文章剖析了汇编代码，重点介绍了它如何处理栈扩展、区分用户模式和内核模式，以及管理内存页面错误（page fault）。作者提供了历史背景，解释了为什么要保留某些寄存器——特别是为了在初始移植阶段支持非微软编译器——并讨论了在栈扩展期间写入内存以避免软页面错误的性能权衡。这是一篇深入探讨操作系统内核和 Windows 架构演进的文章。",
+  "mainPoints": [
+    {
+      "point": "汇编级栈验证确保了内存安全。",
+      "explanation": "Alpha AXP 上的 `_chkstk` 函数使用探测循环来触发页面错误，确保在分配前栈是有效的，这与 MIPS 架构的实现类似。"
+    },
+    {
+      "point": "历史限制影响了底层代码设计。",
+      "explanation": "代码保留了 `v0` 寄存器以保持与非微软编译器的兼容性，使得 Windows NT 团队能够在 Microsoft Visual C 编译器准备好之前继续进行移植工作。"
+    },
+    {
+      "point": "内存管理涉及关于页面错误的战略性权衡。",
+      "explanation": "在栈扩展期间写入内存是一个深思熟虑的选择，旨在避免软页面错误，其假设是大规模的栈分配可能不会被完全利用。"
+    },
+    {
+      "point": "架构特定的实现细节揭示了操作系统设计的演进。",
+      "explanation": "该实现突显了从 64 位 Alpha AXP 硬件到 32 位操作系统模拟的过渡，展示了早期操作系统移植工作所需的灵活性。"
+    }
+  ],
+  "keyQuotes": [
+    "我的理论是，它这样做是因为它想要保持与非微软编译器的兼容性，这些编译器可能会使用 `v0` 作为其调用约定的一部分。",
+    "我的新理论是，作为栈扩展的一部分写入内存可以避免软页面错误。",
+    "代码短路了栈不需要扩展的情况，并且它依赖于地址空间中点处用户模式和内核模式之间的架构划分。"
+  ],
+  "tags": [
+    "Windows 内核",
+    "Alpha AXP",
+    "汇编",
+    "栈检查",
+    "系统编程"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 792,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773850319000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 16:11:59"
+}
