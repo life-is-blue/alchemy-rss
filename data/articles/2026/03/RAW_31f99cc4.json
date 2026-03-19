@@ -1,0 +1,63 @@
+{
+  "id": "RAW_31f99cc4",
+  "title": "如何塑造软件公司的工程文化",
+  "url": "https://www.infoq.com/news/2026/03/engineering-culture-software/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-19 11:39:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>You can find your way through an organization by figuring out what artifacts people leave behind, David Grizzanti mentioned at <a href=\"https://devsummit.infoq.com/conference/boston2025\">InfoQ Dev Summit Boston</a>. In his talk, <a href=\"https://www.infoq.com/presentations/roadmap-staff-growth/\">the pillars of staff+ growth</a>, he compared culture to anthropology. He suggested studying behaviors, power dynamics, and decisions first, and then patiently model and reward new norms, build allies, and use influence and leading by example, to shift engineering culture over time.</p>\n   <p>Grizzanti mentioned that his approach to shaping engineering culture has always been grounded in the belief that understanding culture is like anthropology. You can’t change what you don’t deeply understand:</p>\n   <blockquote>\n    <p>My method isn’t about dramatic overhauls or writing a \"culture manifesto\" on day one. It’s a deliberate process of diagnosis, analysis, and modeling the behavior I want to see.</p>\n   </blockquote>\n   <p>On one hand, you have rewarded behaviors, and you have punished behaviors. In between you have accepted and expected behaviors, Grizzanti said. Understanding where behaviors fall on the spectrum gives you a good idea of what the culture is like and what behavior is rewarded in a company.</p>\n   <p>When you’re trying to shape an engineering culture at a company, you really need to understand how decisions are being made, who has the authority to make those decisions, which departments have influence, and how this information is communicated, Grizzanti said.</p>\n   <p>With a clear understanding of the existing culture, you can begin to shape it. Grizzanti suggested doing this, not through mandates, but by setting new norms and modeling behavior accordingly. Culture is a multiplier, and it’s demonstrated through behavior, he added:</p>\n   <blockquote>\n    <p>By consistently modeling and rewarding these desired behaviors, you slowly shift the cultural norms. You make the \"rewarded\" behaviors the ones that lead to a healthier, more effective, and more resilient engineering organization. It’s a patient, deliberate process.</p>\n   </blockquote>\n   <p>Culture is a multiplier; you are the example. Once you get to a staff plus position, depending on how big the company is, culture is a leverage point, Grizzanti explained:</p>\n   <blockquote>\n    <p>Use your influence to amplify values like psychological safety and inclusion, make sure you’re setting a good example in these areas, and be approachable.</p>\n   </blockquote>\n   <p>Shaping the culture is introducing new ideas to an existing environment. You need to understand the existing culture, find out what works well and what the pain points are, Grizzanti said. He suggested starting small and not trying to change everything at once, by picking one or two key practices and focusing on implementing them well. To build consensus, he suggested finding allies who share your values and work with them to champion these new ideas, as culture change is a team sport.</p>\n   <p>A leader, whether it’s an IC or an engineering leader who has management duties, can really set a tone and make a huge difference in an organization, Grizzanti concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/davidgrizzanti/\">David Grizzanti</a> about shaping culture in software companies.</p>\n   <p><strong>InfoQ: How do you apply anthropology to understand the culture in a software company?</strong></p>\n   <blockquote>\n    <p><strong>David Grizzanti</strong>: You can observe and listen to understand how work truly gets done through five \"cultural artifacts\":</p>\n    <ul>\n     <li>Tools: what does the team’s tech stack reveal?</li>\n     <li>Process: how do features go from idea to production? Are code reviews collaborative? Are post-mortems blameless?</li>\n     <li>Behavior: analyze what behaviors are punished vs. rewarded. Is heroic firefighting valued over proactive prevention? How are mistakes handled? This shows true organizational values.</li>\n     <li>Values: compare stated values with rewarded behaviors; \"work-life balance\" often means \"hyper-availability\" if promotions go to those online late.</li>\n     <li>People: identify informal leaders and influential individuals.</li>\n    </ul>\n   </blockquote>\n   <p><strong>InfoQ: How do you lead by example?</strong></p>\n   <blockquote>\n    <p><strong>Grizzanti</strong>: Your personal actions are the most powerful tool for sharing culture. People will look to what you do far more than what you say.</p>\n    <ul>\n     <li>Demonstrate the desired behaviors: if you value code quality, write well-tested, clean code, and conduct thorough code reviews, to set an example. If you value collaboration, actively seek out pairing opportunities, and offer help to your new colleagues, to demonstrate positive behavior.</li>\n     <li>Be the engineer you want to work with: show up to meetings prepared, communicate clearly and respectfully, and be open to feedback. Your professionalism and approach will set a standard.</li>\n     <li>Mentor and coach: take the time to explain the \"why\" behind your technical decisions and practices to your new teammates. This is a direct way to transfer cultural knowledge.</li>\n    </ul>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How to Shape the Engineering Culture in Software Companies\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/engineering-culture-software/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773920340000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "David Grizzanti 提出了一种塑造工程文化的“人类学”方法：通过诊断现有的行为和产物，然后通过影响力和领导力来塑造并奖励期望的规范。",
+  "oneSentenceSummary": "David Grizzanti 提出了一种塑造工程文化的“人类学”方法：通过诊断现有的行为和产物，然后通过影响力和领导力来塑造并奖励期望的规范。",
+  "summary": "本文概述了 David Grizzanti 影响工程文化的方法论，他将其视为一种人类学研究，而非一系列自上而下的指令。他强调，如果不深入了解现有的权力动态、决策流程以及工具、流程和受奖励行为等“文化产物”，就无法改变文化。其核心策略涉及一个耐心且审慎的过程：通过示范期望的行为、建立联盟，并利用 Staff+ 职位的职权将规范转向心理安全、包容性和卓越技术。通过识别既定价值观与实际受奖励行为之间的差距，领导者可以循序渐进地引入新实践，从而培育一个更健康、更具韧性的工程组织。",
+  "mainPoints": [
+    {
+      "point": "将工程文化视为人类学研究，以了解其本质。",
+      "explanation": "在尝试变革之前，领导者必须通过观察行为、权力动态和决策流程来诊断组织。这确保了干预措施是基于现实，而非流于表面的宣言。"
+    },
+    {
+      "point": "分析“文化产物”，揭示工程团队的真实价值观。",
+      "explanation": "通过审视工具、流程、行为和人员，领导者可以看到工作是如何真正完成的。这有助于识别既定价值观（如工作与生活平衡）与实际受奖励行为（如过度在线）之间的差异。"
+    },
+    {
+      "point": "利用行为示范作为文化转型的核心杠杆。",
+      "explanation": "文化是一种乘数效应，个人行为比言语更有分量。领导者应持续示范期望的行为（例如编写整洁的代码或寻求协作），为团队树立新标准。"
+    },
+    {
+      "point": "利用 Staff+ 职位来放大组织价值观并建立共识。",
+      "explanation": "高级个人贡献者应利用其影响力来倡导心理安全和包容性。由于文化变革是一项“团队运动”，寻找志同道合的盟友对于在全公司推广新规范至关重要。"
+    },
+    {
+      "point": "通过关注特定的痛点和关键实践，实施渐进式变革。",
+      "explanation": "领导者不应试图进行彻底的改革，而应挑选一两项高影响力的实践并将其执行到位。这种耐心的做法可以在不压垮现有环境的情况下，实现文化规范的可持续转变。"
+    }
+  ],
+  "keyQuotes": [
+    "我的方法不是关于剧烈的改革，也不是第一天就写一份“文化宣言”。这是一个审慎的过程，包括诊断、分析以及示范我希望看到的行为。",
+    "文化是一种乘数；你就是榜样。一旦你达到 Staff+ 职位……文化就是一个杠杆点。",
+    "你可以通过找出人们留下的产物，来找到在组织中行事的方法。",
+    "文化变革是一项团队运动。",
+    "你的个人行为是传播文化最强大的工具。人们看重你所做的，远胜于你所说的。"
+  ],
+  "tags": [
+    "工程文化",
+    "Staff+ 工程",
+    "领导力",
+    "组织人类学",
+    "导师制"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 711,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773920340000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 11:39:00"
+}

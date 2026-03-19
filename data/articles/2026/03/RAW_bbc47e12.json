@@ -1,0 +1,53 @@
+{
+  "id": "RAW_bbc47e12",
+  "title": "$ teamcity 命令行操作 | TeamCity 博客",
+  "url": "https://blog.jetbrains.com/teamcity/2026/03/teamcity-cli/",
+  "date": "2026-03-19 09:42:53",
+  "author": "Viktor Tiulpin",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Start builds, tail logs, and manage agents and queues – without switching windows.</em></p>\n  <p>Whether you are debugging a failed build, managing build agents, or scripting your deployment pipeline (or your AI coding agent is doing so) – there are times when opening a browser is one step too many.</p>\n  <p>TeamCity CLI is a lightweight, open-source tool that puts TeamCity at your fingertips.&nbsp;</p>\n  <p>A CLI for TeamCity has been a long-standing request from the community. Here’s how it works and what you can use it for.</p>\n  <p>TeamCity CLI includes over 60 commands, and for anything it doesn’t wrap yet, <code>teamcity api</code> gives you direct access to the full TeamCity REST API.</p>\n  <p><strong>Source code (Apache 2.0):</strong> <a href=\"https://github.com/JetBrains/teamcity-cli\" target=\"_blank\" rel=\"noopener\">https://github.com/JetBrains/teamcity-cli</a></p>\n  <h2 class=\"wp-block-heading\">Getting started</h2>\n  <p>Install and authenticate in seconds:</p>\n  <pre class=\"EnlighterJSRAW\"># macOS / Linux\nbrew install jetbrains/utils/teamcity\n\n# via a bash script\ncurl -fsSL https://jb.gg/tc/install | bash\n\n# Windows\nwinget install JetBrains.tc\n\n# via a powershell script\nirm https://jb.gg/tc/install.ps1 | iex\n\n# Connect to your server\nteamcity auth login https://example.teamcity.com/</pre>\n  <p>That’s all! Now let’s see it in action.</p>\n  <h2 class=\"wp-block-heading\">Investigating a failed build</h2>\n  <p>Let’s say something breaks. Here’s how to go from wondering what happened to having it fixed without switching windows.</p>\n  <h3 class=\"wp-block-heading\">See what’s happening</h3>\n  <pre class=\"EnlighterJSRAW\">teamcity run list --all</pre>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" fetchpriority=\"high\" width=\"960\" height=\"699\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/image3.gif\" alt=\"\" class=\"wp-image-689574\">\n  </figure>\n  <p>Build 1389 failed. Here’s how we can drill down:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity run view 1389</pre>\n  <p>Need to jump to the TeamCity UI instead? Add <code>--web</code>.</p>\n  <h3 class=\"wp-block-heading\">Find the root cause</h3>\n  <p>You don’t need to scroll through the entire log. Show only the failed step, then the failed tests:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity run log 1389 --failed</pre>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" width=\"960\" height=\"699\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/gif-1_see-whats-happening-1.gif\" alt=\"\" class=\"wp-image-689585\">\n  </figure>\n  <p>Only one test failed, so you know exactly what to fix.</p>\n  <h3 class=\"wp-block-heading\">Fix and re-trigger</h3>\n  <p>After you push the fix, restart and watch it in real time:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity run restart 1389\nteamcity run watch 1408 --logs</pre>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" width=\"960\" height=\"706\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/image1.gif\" alt=\"\" class=\"wp-image-689618\">\n  </figure>\n  <p>You see all the updates happening live in your terminal – build state changes, step progress, and streaming log output.</p>\n  <h3 class=\"wp-block-heading\">Test before you push</h3>\n  <p>Want to validate your changes with CI before committing to a push? Run <a href=\"https://www.jetbrains.com/help/teamcity/personal-build.html\" target=\"_blank\" rel=\"noopener\">a personal build</a> with your local changes:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity run start Sandbox_Test --local-changes</pre>\n  <p>TeamCity runs the build with your uncommitted work applied as a patch – no branch, no force-push, no noise in the repo.</p>\n  <h2 class=\"wp-block-heading\">Remote agent access</h2>\n  <p>You can open an interactive shell session on any build agent – or execute commands remotely:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity agent list\nteamcity agent term 813</pre>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" loading=\"lazy\" width=\"960\" height=\"699\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/image2.gif\" alt=\"\" class=\"wp-image-689596\">\n  </figure>\n  <p>No SSH keys to manage, no VPN to connect – if your TeamCity server can reach the agent, so can you.</p>\n  <p>Need to just run a quick command? Here’s how:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity agent exec 813 \"docker ps -a\"</pre>\n  <h2 class=\"wp-block-heading\">Built for scripting</h2>\n  <p>teamcity covers queues, agents, artifacts, and project configuration – the commands look exactly as you’d expect:</p>\n  <pre class=\"EnlighterJSRAW\">teamcity queue list                                          # what's queued\nteamcity queue top 461                                       # move a build to the front\nteamcity queue approve 462                                   # approve a waiting build\n\nteamcity agent list                                          # all agents with status\nteamcity agent disable \"Linux Agent 03\" --comment \"Maint\"    # take one offline\n\nteamcity run artifacts 453                                   # browse artifacts\nteamcity run download 453 \"reports/**/*.html\" --output ./out # grab what you need\n\n# Restart all failed builds on main\nteamcity run list --failed --branch main --plain=id | xargs -I{} tc run restart {}\n\n# Structured data for dashboards or scripts\nteamcity run list --failed --json=id,status,buildType.name\n\n# Hit any REST API endpoint directly\nteamcity api /app/rest/server</pre>\n  <p>Every list command supports <code>--json</code> with field selection and <code>--plain</code> for tab-delimited text – making <code>teamcity</code> a building block for automation.</p>\n  <p><code>teamcity api</code> is the escape hatch – anything the CLI doesn’t wrap yet, you can call directly.</p>\n  <h2 class=\"wp-block-heading\">Compatible with AI coding agents</h2>\n  <p>TeamCity CLI ships with an <a href=\"https://agentskills.io\" target=\"_blank\" rel=\"noopener\">Agent Skill</a> that teaches AI coding assistants how to use the tool. Your AI agent can then check the build status, investigate failures, download artifacts, and manage your pipeline on your behalf.</p>\n  <p><strong>Users should limit the token rights granted to the agent, be aware of security implications, and always check the actions the agent intends to execute.</strong></p>\n  <figure class=\"wp-block-image size-full\">\n   <img decoding=\"async\" loading=\"lazy\" width=\"960\" height=\"699\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/03/image5.gif\" alt=\"\" class=\"wp-image-689607\">\n  </figure>\n  <h2 class=\"wp-block-heading\">What’s next</h2>\n  <p>TeamCity CLI is open-source under Apache 2.0. There’s more we want to build – for example, pipeline visualization, richer TUI interfaces, and deeper integration with version control workflows. Your feedback will shape what comes next.</p>\n  <h2 class=\"wp-block-heading\">Try it</h2>\n  <pre class=\"EnlighterJSRAW\">brew install jetbrains/utils/teamcity       # macOS\nwinget install JetBrains.TeamCityCLI        # Windows\ncurl -fsSL https://jb.gg/tc/install | bash  # Linux/macOS setup script\nirm https://jb.gg/tc/install.ps1 | iex      # Windows setup script</pre>\n  <p><strong>Source code and docs:</strong> <a href=\"https://github.com/JetBrains/teamcity-cli\" target=\"_blank\" rel=\"noopener\">github.com/JetBrains/teamcity-cli</a></p>\n  <p><strong>Report issues or request features:</strong><a href=\"https://github.com/JetBrains/teamcity-cli/issues\" target=\"_blank\" rel=\"noopener\"> GitHub Issues</a></p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/teamcity/2026/03/cloudbees-vs-teamcity/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> CloudBees vs TeamCity: Enterprise CI/CD Beyond Jenkins</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文介绍了全新的开源 TeamCity CLI，这是一款旨在简化 CI/CD 工作流的工具，允许开发人员直接从终端管理构建、智能体和日志，并支持脚本编写和 AI 智能体集成。",
+  "oneSentenceSummary": "本文介绍了全新的开源 TeamCity CLI，这是一款旨在简化 CI/CD 工作流的工具，允许开发人员直接从终端管理构建、智能体和日志，并支持脚本编写和 AI 智能体集成。",
+  "summary": "这篇来自 JetBrains 博客的文章宣布发布了 TeamCity CLI，这是一款开源工具，旨在通过减少浏览器和终端之间的上下文切换来提高开发人员的生产力。文章涵盖了安装、核心功能（管理构建、智能体和队列）以及高级功能（如直接 REST API 访问和用于自动化的结构化数据输出）。值得注意的是，它强调了该工具通过“智能体技能”（Agent Skills）与 AI 编码智能体的兼容性，从而实现自动化的流水线管理。本文为 DevOps 工程师将 TeamCity 操作集成到其命令行工作流中提供了实用的指南。",
+  "mainPoints": [
+    {
+      "point": "TeamCity CLI 消除了在执行常见 CI/CD 任务时切换到浏览器的需要。",
+      "explanation": "通过提供 60 多条命令，它允许开发人员直接从终端管理构建、日志和智能体，从而简化了开发工作流。"
+    },
+    {
+      "point": "专为自动化和集成而设计。",
+      "explanation": "该工具支持结构化输出（JSON/纯文本）和直接 REST API 访问，使其成为自定义脚本和自动化流水线的强大构建模块。"
+    },
+    {
+      "point": "原生支持 AI 编码智能体。",
+      "explanation": "该 CLI 包含一个智能体技能（Agent Skill），允许 AI 助手代表开发人员执行流水线管理任务，例如检查构建状态或下载构建产物。"
+    }
+  ],
+  "keyQuotes": [
+    "无论您是在调试失败的构建、管理构建智能体，还是编写部署流水线脚本，有时打开浏览器确实显得多此一举。",
+    "TeamCity CLI 是一款轻量级的开源工具，让您可以轻松掌控 TeamCity。",
+    "TeamCity CLI 附带了一个智能体技能，可以教 AI 编码助手如何使用该工具。"
+  ],
+  "tags": [
+    "TeamCity",
+    "CLI",
+    "DevOps",
+    "CI/CD",
+    "自动化"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 738,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773913373000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 09:42:53"
+}

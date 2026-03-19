@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c24e2192",
+  "title": "构建 Agent Studio：Medable 如何利用智能体 AI 加速临床试验",
+  "url": "https://www.producttalk.org/building-agent-studio-medable/",
+  "date": "2026-03-19 13:00:31",
+  "author": "Teresa Torres",
+  "siteName": "Product Talk",
+  "content": "<html>\n <head></head>\n <body>\n  <figure class=\"kg-card kg-embed-card\">\n   <iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/0DDCloT-hfk?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Building Agent Studio: How Medable Is Using Agentic AI to Accelerate Clinical Trials\"></iframe>\n  </figure>\n  <p>Listen to this episode on: <a href=\"https://open.spotify.com/episode/6MafPiosBsNHjhrlq7KNLy?ref=producttalk.org\" rel=\"noreferrer\">Spotify</a> | <a href=\"https://podcasts.apple.com/us/podcast/building-agent-studio-how-medable-is-using-agentic/id1838832993?i=1000756103275&amp;ref=producttalk.org\" rel=\"noreferrer\">Apple Podcasts</a></p>\n  <p>What if AI could help reduce the 10-plus years it takes to get a new drug to market? That's the driving ambition behind Medable's agentic platform—and the bet that led them to build Agent Studio.</p>\n  <p>In this episode of <em>Just Now Possible</em>, Teresa Torres talks with four members of the Medable team: Luke Bates (Product Leader, Agent Studio), Jen Brown (Product Manager), Matt Schoolfield (Product Designer), and Fiachra Matthews (Principal Architect). Together they share how Medable—a clinical trial platform used by global pharmaceutical companies—built Agent Studio, a no-code/low-code platform for configuring and deploying agents across the clinical trial lifecycle.</p>\n  <p>You'll hear about the two agents they've built on top of it: an ETMF agent that automates document classification across 80,000-plus documents per year, and a CRA agent that monitors patient safety and data quality across 13 different clinical systems. The conversation goes deep on the architecture behind it all—how they handle RAG and context management at scale, why they built custom MCPs with an authentication layer, how they designed evals for a regulated GXP environment, and what human-in-the-loop really looks like when clinical decisions are on the line.</p>\n  <p>It's a rare look inside an enterprise AI platform built for one of the most regulated industries in the world—and a team that's still figuring it out in real time.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://www.producttalk.org/content/images/2026/03/medable-infographic.png\" class=\"kg-image\" alt=\"From 10 years to 1 year: Scaling AI in Clinical Trials with Agent Studio.\" loading=\"lazy\" width=\"2000\" height=\"1116\" srcset=\"https://www.producttalk.org/content/images/size/w600/2026/03/medable-infographic.png 600w, https://www.producttalk.org/content/images/size/w1000/2026/03/medable-infographic.png 1000w, https://www.producttalk.org/content/images/size/w1600/2026/03/medable-infographic.png 1600w, https://www.producttalk.org/content/images/size/w2400/2026/03/medable-infographic.png 2400w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"show-notes\">Show Notes</h2>\n  <h3 id=\"guests\"><strong>Guests</strong></h3>\n  <ul>\n   <li>Luke Bates, Product Leader (Agent Studio), Medable</li>\n   <li>Jen Brown, Product Manager, Medable</li>\n   <li>Matt Schoolfield, Product Designer, Medable</li>\n   <li>Fiachra Matthews, Principal Architect, Medable</li>\n  </ul>\n  <h3 id=\"what-we-cover-in-this-episode\"><strong>What we cover in this episode:</strong></h3>\n  <ul>\n   <li>What Medable does: enabling global clinical trials across 100+ languages and accelerating drug-to-market timelines</li>\n   <li>The two agents built on Agent Studio—ETMF (document classification) and CRA (clinical data monitoring)—and the problems they solve</li>\n   <li>Why Medable chose a platform approach to agents instead of one-off builds</li>\n   <li>How Agent Studio works: models, skills, knowledge bases, MCP connectors, versioning, and trigger types</li>\n   <li>Three deployment models: Medable-built products, services-led custom builds, and self-serve platform access</li>\n   <li>RAG approaches at scale: embeddings vs. markdown hierarchies vs. just-in-time MCP retrieval</li>\n   <li>How they built a unified ontology layer to map terminology across 13 different clinical data systems</li>\n   <li>Why they built custom MCPs with an authentication and credentialing wrapper</li>\n   <li>Context window management with sub-agents and automatic tool filtering</li>\n   <li>Evaluation design in a GXP-regulated environment: golden datasets, production monitoring, and the challenge of human feedback as ground truth</li>\n   <li>How they document agent intent → specification → test evidence to satisfy regulatory bodies</li>\n   <li>The \"full self-driving\" vision for clinical trials and what it would take to get there</li>\n  </ul>\n  <h3 id=\"resources-links\"><strong>Resources &amp; Links</strong></h3>\n  <ul>\n   <li><a href=\"https://www.medable.com/?ref=producttalk.org\">Medable</a> - Clinical trial platform powering Agent Studio</li>\n  </ul>\n  <h3 id=\"chapters\">Chapters</h3>\n  <p>00:00 Meet The Medable Team\n   <br>\n   01:14 Medable Mission And Scope\n   <br>\n   03:27 Agent Studio Platform Overview\n   <br>\n   06:29 ETMF Document Automation\n   <br>\n   08:47 CRA Agent For Monitoring\n   <br>\n   10:40 Clinical Trial Workflow Primer\n   <br>\n   14:34 Why Build A Platform\n   <br>\n   17:51 Learning AI As A Team\n   <br>\n   21:47 Early Days Of Agent Studio\n   <br>\n   23:15 How Agents Are Built\n   <br>\n   25:15 Customer Adoption And UX\n   <br>\n   30:00 Skills And MCP Standards\n   <br>\n   31:15 Scaling Context Retrieval\n   <br>\n   33:07 RAG Patterns And Tradeoffs\n   <br>\n   34:48 Ontology Data Layer Explained\n   <br>\n   38:01 Customer Friendly Agent Setup\n   <br>\n   42:19 MCP Security And Connectors\n   <br>\n   44:36 Tool Bloat And Subagents\n   <br>\n   50:44 Evals For Reliable Agents\n   <br>\n   54:40 Human Feedback Isn’t Truth\n   <br>\n   57:43 GXP Compliance For Agents\n   <br>\n   01:03:34 Full Self Driving Trials</p>\n  <h2 id=\"full-transcript\">Full Transcript</h2>\n  <p>Podcast transcripts are only available to paid subscribers.</p>\n  <aside class=\"gh-post-upgrade-cta\">\n   <div class=\"gh-post-upgrade-cta-content\" style=\"background-color: #3ea5ba\">\n    <h2>This post is for paying subscribers only</h2>\n    <a class=\"gh-btn\" data-portal=\"signup\" href=\"#/portal/signup\" style=\"color:#3ea5ba\">Subscribe now</a>\n    <p><small>Already have an account? <a data-portal=\"signin\" href=\"#/portal/signin\">Sign in</a></small></p>\n   </div>\n  </aside>\n </body>\n</html>",
+  "aiSummary": "本期播客摘要探讨了 Medable 的“Agent Studio”，这是一个旨在将智能体 AI 部署到临床试验中的平台，重点关注大规模 RAG、MCP 集成以及 GXP 合规性等架构挑战。",
+  "oneSentenceSummary": "本期播客摘要探讨了 Medable 的“Agent Studio”，这是一个旨在将智能体 AI 部署到临床试验中的平台，重点关注大规模 RAG、MCP 集成以及 GXP 合规性等架构挑战。",
+  "summary": "本期“Just Now Possible”节目邀请了 Medable 团队，讨论了“Agent Studio”背后的架构和策略。这是一个专为在监管严格的临床试验行业部署 AI 智能体而设计的无代码/低代码平台。讨论涵盖了从一次性 AI 构建向平台化方法的转变，解决了大规模 RAG、针对不同数据系统的统一本体层以及自定义模型上下文协议（MCP）连接器的实现等关键企业级挑战。至关重要的是，团队探讨了 AI 与 GXP 合规性的交叉点，详细介绍了他们如何处理评估、人在回路（human-in-the-loop）工作流以及满足监管机构所需的文档记录，为高风险环境下的企业级 AI 提供了难得的视角。",
+  "mainPoints": [
+    {
+      "point": "采用平台优先的方法来构建 AI 智能体。",
+      "explanation": "从一次性 AI 构建转向统一的“Agent Studio”平台，可以实现跨临床试验工作流的一致性部署、版本控制和治理。"
+    },
+    {
+      "point": "在复杂环境中管理大规模 RAG 和上下文。",
+      "explanation": "有效的检索需要复杂的策略，包括子智能体、自动工具过滤以及用于映射不同临床数据系统术语的统一本体层。"
+    },
+    {
+      "point": "应对 AI 系统的 GXP 合规性。",
+      "explanation": "在受监管行业部署 AI 需要严格的评估框架，包括黄金数据集，以及对智能体意图和测试证据的清晰记录，以满足监管要求。"
+    },
+    {
+      "point": "通过 MCP 实现安全的工具使用。",
+      "explanation": "团队强调构建带有特定身份验证和凭证包装器的自定义模型上下文协议（MCP）连接器，以确保企业环境中工具使用的安全性和标准化。"
+    }
+  ],
+  "keyQuotes": [
+    "如果 AI 能帮助缩短新药上市所需的 10 多年时间，会怎样？",
+    "对话深入探讨了其背后的架构——他们如何处理大规模 RAG 和上下文管理，以及为什么他们构建了带有身份验证层的自定义 MCP。",
+    "他们如何记录智能体意图 → 规范 → 测试证据，以满足监管机构的要求。",
+    "人类反馈并非真理——在 GXP 监管环境中定义事实真相（ground truth）的挑战。"
+  ],
+  "tags": [
+    "智能体 AI",
+    "临床试验",
+    "RAG",
+    "MCP",
+    "GXP 合规"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 571,
+  "domain": "producttalk.org",
+  "category": "Product_Development",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ba30d411",
+  "sourceName": "Product Talk",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773925231000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 13:00:31"
+}

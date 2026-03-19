@@ -1,0 +1,57 @@
+{
+  "id": "RAW_13850669",
+  "title": "潜在推理冲刺 #2：基于 Token 的信号与线性探针 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/rnwjdw5hzddjRvBoC/latent-reasoning-sprint-2-token-based-signals-and-linear-9",
+  "date": "2026-03-19 03:39:32",
+  "author": "Realmbird",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>In my </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/c4LYmzEC6cFQzrDZz/probing-codi-s-latent-reasoning-chain-with-logit-lens-and\"><span>previous post</span></a><span>&nbsp;I applied logit lens and tuned lens to CODI's latent reasoning chain and found evidence consistent with the scratchpad paper's compute/store alternation hypothesis — even steps showing higher intermediate answer detection and odd steps showing higher entropy along with results matching “Can we interpret latent reasoning using current mechanistic interpretability tools?”.</span></p>\n    <p id=\"block1\"><span>This post looked a little deeper looking into some of the questions I had when making the previous post along with new findings that I did not expect.</span></p>\n    <h2 id=\"TL_DR\"><span>TL;DR</span></h2>\n    <ul>\n     <li id=\"block2\"><span>The CODI tuned lens fails to generalize to non-CODI activations</span></li>\n     <li id=\"block3\"><span>Final answer detection at even steps 2 and 4 is robust across top-k values 1-10, ruling out threshold artifacts</span></li>\n     <li id=\"block4\"><span>\"Therefore\" appears specifically after latent step 3, with detection rate increasing after latent 3 all the way up to 6 — suggesting step 3 and step 5 are qualitatively different despite both being odd computation steps</span></li>\n     <li id=\"block5\"><span>A linear probe trained to distinguish intermediate vs final answer representations activates most strongly at odd steps 3 and 5, consistent with the scratchpad paper's compute/store alternation — but with step 3 peaking higher than step 5, revealing asymmetry between odd steps</span></li>\n    </ul>\n    <h1 id=\"Experimental_setup\"><span>Experimental setup</span></h1>\n    <h3 id=\"CoDI_model\"><span>CoDI model</span></h3>\n    <p id=\"block6\"><span>I use the publicly available CODI Llama 3.2 1B checkpoint from</span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/YGAimivLxycZcqRFR/can-we-interpret-latent-reasoning-using-current-mechanistic\"><span>&nbsp;Can we interpret latent reasoning using current mechanistic interpretability tools?</span></a><span>&nbsp;</span></p>\n    <h3 id=\"Tuned_Logit_Lens\"><span>Tuned Logit Lens</span></h3>\n    <p id=\"block7\"><span>In this experiment I in order to create my tuned logit lens implementation I used the code implementation for the training of Tuned logit lens from </span><span><span><a href=\"https://github.com/AlignmentResearch/tuned-lens\"><span>Eliciting Latent Predictions from Transformers with the Tuned Lens</span></a></span></span></p>\n    <hr>\n    <p id=\"block8\"><span>Experiments</span></p>\n    <h3 id=\"Confirming_Previous_Assumptions\"><span>Confirming Previous Assumptions</span></h3>\n    <h4 id=\"Codi_Tuned_Lens_Generalization_Failure\"><span>Codi Tuned Lens Generalization Failure</span></h4>\n    <p id=\"block9\"><span>In the previous post I had speculation that the codi tuned lens while working on codi tokens failed to generalize to non codi activations.</span></p>\n    <p id=\"block10\"><span>For this figure I used the tuned logit lens trained on latents 1-6</span></p>\n    <img src=\"https://image.jido.dev/20260319061257_a09849a.jpeg\" alt=\"\">\n    <h4 id=\"Confirming_the_Intermediate_answer_detection\"><span>Confirming the Intermediate answer detection</span></h4>\n    <p id=\"block11\"><span>I tried looking at the intermediate answer detection across different topk values from 1 - 10 as maybe certain latents might have a higher answer detection rate because of the specific topk value.</span></p>\n    <p id=\"block12\"><span>Regardless of the tuned logit lens approach final answer detection peaked at latents 2 and 4</span></p>\n    <img src=\"https://image.jido.dev/20260319061257_96a8d3f.webp\" alt=\"\">\n    <h3 id=\"Investigating_the_token__Therefore__in_CODI\"><span>Investigating the token \"Therefore\" in CODI</span></h3>\n    <p id=\"block13\"><span>Tuned logit lens with only latent 5 seemed to predict the word therefore a lot and I found this strange.</span></p>\n    <img src=\"https://image.jido.dev/20260319061257_87959f0.webp\" alt=\"\">\n    <p id=\"block14\"><span>This made me curious to see if “Therefore” appeared at the topk of the model. An interesting finding is that “Therefore” appeared in the topk of the model only after latent 3 as it increases from latents 4 through 6.</span></p>\n    <p id=\"block15\"><span>Step 5 may serve a conclusion-signaling role distinct from step 3's computation — the emergence of 'therefore' after step 3 suggests the model commits to an answer at step 3 and signals that commitment at step 5 could help explain why patching the final two latent vectors with random activations does not decrease accuracy in </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/YGAimivLxycZcqRFR/can-we-interpret-latent-reasoning-using-current-mechanistic\"><span>Can we interpret latent reasoning using current mechanistic interpretability tools?</span></a></p>\n    <img src=\"https://image.jido.dev/20260319061257_820a9a8.webp\" alt=\"\">\n    <p id=\"block16\"><span>The only exception to the rule of topk having “Therefore” only after latent 3 was the tuned logit lens trained on latent 5 such as Tuned Logit lens trained on Latent (1,5) and only on Latent 5. The tuned lens showed spikes in Therefores at the latents that were odd 1,3 in addition to after latent 3. This could just be a side effect of overfitting from latent 5.</span></p>\n    <img src=\"https://image.jido.dev/20260319061257_e3d9dd0.webp\" alt=\"\">\n    <h3 id=\"Linear_Probes\"><span>Linear Probes</span></h3>\n    <p id=\"block17\"><span>I created a binary classifier for a linear probe taking the </span><span><span><a href=\"https://colab.research.google.com/github/callummcdougall/ARENA_3.0/blob/main/chapter1_transformer_interp/exercises/part31_linear_probes/1.3.1_Linear_Probes_solutions.ipynb?t=20260305\"><span>Arena Implementation</span></a></span></span><span>. For the labels for 1 had the numbers that were final answer emission and for 0 I had numbers that were intermediate steps and not final answer emission. The reason I had the 0 category be intermediate steps is I did not want to train a linear probe to simply activate numbers.</span></p>\n    <ul>\n     <li id=\"block18\"><span>The final answer detection probe activated the most on latents 3 and 5</span></li>\n     <li id=\"block19\"><span>Linear probes trained on earlier layers like layers 0 activated less than the linear probes trained on later layer activations. Maybe the intermediate vs final answer distinction becomes more linearly separable as you go deeper in the network.</span></li>\n     <li id=\"block20\"><span>\"Note that the dataset had more intermediate labeled (0) samples than final answer samples (roughly 4:1 ratio), so probe accuracy should be interpreted with this imbalance in mind.\"</span></li>\n    </ul>\n    <img src=\"https://image.jido.dev/20260319061257_1622d41.webp\" alt=\"\">\n    <h2 id=\"Future_Work\"><span>Future Work</span></h2>\n    <h3 id=\"Investigating_the_token__Convert__in_CODI\"><span>Investigating the token \"Convert\" in CODI</span></h3>\n    <p id=\"block21\"><span>When looking at tuned logit lens using latent 1 a interesting token appeared Convert</span></p>\n    <img src=\"https://image.jido.dev/20260319061257_4946800.webp\" alt=\"\">\n    <p id=\"block22\"><span>When using codi Tuned logit lens on non number based questions such as</span></p>\n    <p id=\"block23\"><span>PROMPT = \"Name a mammal that can fly\"</span></p>\n    <img src=\"https://image.jido.dev/20260319061257_988b678.webp\" alt=\"\">\n    <ul>\n     <li id=\"block24\"><span>Try other methods like patchscopes, activation oracles, etc on the latent reasoning</span></li>\n     <li id=\"block25\"><span>Attempt to create a thought anchors that work with CODI latent reasoning models</span></li>\n     <li id=\"block26\"><span>I suspect the Codi model experienced Catastrophic Forgetting outside of math questions</span></li>\n     <li id=\"block27\"><span>Try activation patching with therefore to see if I can lower accuracy change in latent 3 to latent 5</span></li>\n    </ul>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一项对 CODI 模型潜在推理链的实验性分析，使用了调优后的 Logit Lens 和线性探针，揭示了模型内部处理过程中特定的基于 Token 的信号模式和计算不对称性。",
+  "oneSentenceSummary": "一项对 CODI 模型潜在推理链的实验性分析，使用了调优后的 Logit Lens 和线性探针，揭示了模型内部处理过程中特定的基于 Token 的信号模式和计算不对称性。",
+  "summary": "本文详细介绍了一项旨在研究 CODI Llama 3.2 1B 模型内部推理机制的实验性“冲刺”。在先前研究的基础上，作者采用了调优后的 Logit Lens 和线性探针来解码潜在激活。研究提供了实证证据，表明在 CODI 潜在状态上训练的调优透镜无法泛化到非 CODI 激活上。此外，分析发现“Therefore”（因此）Token 是潜在步骤 3 之后出现的明确答案承诺信号，并揭示了奇数计算步骤 3 和 5 之间存在意想不到的不对称性。文章最后指出，该模型在非数学领域可能遭受灾难性遗忘，并提出了未来的研究方向，例如使用 Patchscopes 进一步探索潜在推理。",
+  "mainPoints": [
+    {
+      "point": "在 CODI 潜在状态上训练的调优 Logit Lens 在非 CODI 激活上的泛化能力较差。",
+      "explanation": "该实验证明，调优透镜方法对训练分布具有高度特异性，表明这些可解释性工具若没有针对特定领域进行适配，可能无法通用。"
+    },
+    {
+      "point": "“Therefore” Token 是潜在链中答案承诺的可靠信号。",
+      "explanation": "“Therefore” 在潜在步骤 3 之后特异性地出现，表明模型在此阶段已确定答案，为内部推理步骤提供了一个具体的基于 Token 的标记。"
+    },
+    {
+      "point": "奇数计算步骤 3 和 5 之间存在显著的不对称性。",
+      "explanation": "线性探针显示，虽然这两个步骤都参与了计算，但步骤 3 在最终答案检测方面表现出更高的激活度，这挑战了简化的“计算/存储交替”假说。"
+    },
+    {
+      "point": "CODI 模型在数学任务之外可能会遭受灾难性遗忘。",
+      "explanation": "作者观察到模型在非数学提示词中表现下降且出现意外的 Token 行为，这表明模型的推理能力与其训练数据分布紧密耦合。"
+    }
+  ],
+  "keyQuotes": [
+    "CODI 调优透镜无法泛化到非 CODI 激活上。",
+    "步骤 5 可能起到与步骤 3 计算不同的结论信号作用。",
+    "我怀疑 CODI 模型在数学问题之外经历了灾难性遗忘。"
+  ],
+  "tags": [
+    "机械可解释性",
+    "LLM",
+    "CODI",
+    "调优 Logit Lens",
+    "线性探针"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 799,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773891572000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 03:39:32"
+}

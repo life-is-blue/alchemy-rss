@@ -1,0 +1,63 @@
+{
+  "id": "RAW_03af1fab",
+  "title": "QCon London 2026：刷新陈旧的代码智能",
+  "url": "https://www.infoq.com/news/2026/03/stale-code-intelligence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-19 10:43:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/\">QCon London 2026</a>, <a href=\"https://qconlondon.com/presentation/mar2026/refreshing-stale-code-intelligence\">Jeff Smith</a> presented the mismatch between AI coding models and real-world codebases. While AI tools are helping developers generate code faster than ever, Smith argued that the models themselves are increasingly stale&nbsp;because they lack the repository-specific knowledge required to produce production-ready contributions.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 420px;\" data-src=\"https://www.infoq.com/news/2026/03/stale-code-intelligence/news/2026/03/stale-code-intelligence/en/resources/1heade11-1773895951832.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/stale-code-intelligence/en/resources/1heade11-1773895951832.jpg\" rel=\"share\"></p>\n   <p>The presenter described this gap as structural rather than temporary. Most coding models are trained on snapshots of public repositories that may be months old, and they rarely have access to an organization’s internal code. As a result, the models can generate syntactically correct code but often fail to follow the architectural constraints and conventions that govern individual repositories.</p>\n   <p>One trend highlighted in the talk is the rapid growth of AI-assisted contributions. Mentions of AI tools in pull requests across several large open source projects increased dramatically between 2022 and 2025. However, acceptance rates have moved in the opposite direction. Smith cited data showing that pull request acceptance dropped during the same period.</p>\n   <p>This pattern suggests that AI is increasing the volume of generated code but not necessarily improving the percentage of contributions that can be merged. According to Smith, the fundamental reason is that every repository has its own unwritten rules. These architectural constraints often live in the experience of senior engineers or in patterns embedded in a project’s commit history rather than in formal documentation.</p>\n   <p>The talk examined how these rules shape real development workflows. Smith described two broad categories of constraints found across repositories. Architectural rules define how the system itself is structured. These include requirements such as component registration patterns, dependency handling mechanisms, or cross-file version synchronization.</p>\n   <p>Procedural rules govern how code changes are introduced and reviewed. These include pull request conventions, testing expectations, and review workflows. Although experienced contributors quickly learn these patterns, generic coding models typically do not.</p>\n   <p>Smith noted that these rules are often enforced implicitly during code review rather than through automated tools. As a result, AI-generated code can appear correct while still violating repository constraints.</p>\n   <p>To address this problem, Smith proposed repository fingerprinting, systematically identifying and documenting the unique constraints of a codebase. The goal is to extract the implicit rules that developers already know and make them accessible to both humans and AI systems.</p>\n   <p>The presenter also argued that current benchmarks for coding models often fail to measure what actually matters in production environments. Generic tasks such as algorithmic problems or language syntax checks do not capture the repository-specific constraints that determine whether code can be merged.</p>\n   <p>Instead, organizations should evaluate AI coding tools based on their ability to respect the architectural constraints of their own codebases. According to Smith, teams that explicitly document and operationalize their repository rules will have a significant advantage as AI-generated code becomes more prevalent.</p>\n   <p>The talk concluded with the growing mismatch between AI models and real repositories is not primarily a tooling problem but a knowledge management problem. Engineering teams already possess the knowledge required to guide AI-assisted development. The challenge is making that knowledge explicit and integrating it into the systems that generate code. By surfacing the architectural rules embedded in their repositories, organizations can close the gap between generic AI models and the unique requirements of their software systems.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Refreshing Stale Code Intelligence\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/stale-code-intelligence/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773916980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Jeff Smith 指出，AI 编码模型在生产环境中表现不佳，是因为它们缺乏特定于代码仓库的架构和流程知识，并提出了“代码仓库指纹识别”（repository fingerprinting）来弥补这一差距。",
+  "oneSentenceSummary": "Jeff Smith 指出，AI 编码模型在生产环境中表现不佳，是因为它们缺乏特定于代码仓库的架构和流程知识，并提出了“代码仓库指纹识别”（repository fingerprinting）来弥补这一差距。",
+  "summary": "在 QCon London 2026 大会上，Jeff Smith 强调了通用 AI 编码模型与现实生产环境之间存在的严重错位。虽然 AI 工具显著加快了代码生成速度，但拉取请求（pull request）的接受率却反常地下降了。Smith 将此归因于“陈旧的代码智能”——基于公共快照训练的模型缺乏各个组织特有的具体架构约束和不成文的流程规则。他将这些约束分为架构规则（系统结构和依赖关系）和流程规则（审查工作流和测试期望）。为了解决这个问题，Smith 提出了“代码仓库指纹识别”，这是一种系统化记录隐性代码库约束的方法。他总结道，AI 辅助开发的挑战归根结底是一个知识管理问题，需要团队将潜在的工程智慧显性化，以便 AI 系统能够利用。",
+  "mainPoints": [
+    {
+      "point": "AI 模型缺乏生产级代码所需的特定于代码仓库的上下文。",
+      "explanation": "大多数 LLM 基于公共数据快照进行训练，无法获取内部组织模式，导致生成的代码虽然语法正确，但在架构上却不合规。"
+    },
+    {
+      "point": "AI 代码生成的增加导致拉取请求接受率下降。",
+      "explanation": "2022-2025 年的数据显示，尽管 AI 辅助贡献在增加，但合并代码的比例却在下降，因为 AI 无法遵守代码仓库中不成文的规则。"
+    },
+    {
+      "point": "代码仓库约束分为架构和流程两类。",
+      "explanation": "架构规则管理系统结构（如依赖处理），而流程规则定义了如何审查和测试变更；通用 AI 训练中往往缺失这两者。"
+    },
+    {
+      "point": "提出了“代码仓库指纹识别”以将隐性的代码库规则显性化。",
+      "explanation": "这种系统化方法识别代码库的独特约束，将资深工程师的经验转化为人类和 AI 都能遵循的文档化数据。"
+    },
+    {
+      "point": "当前的 AI 编码基准测试无法衡量现实生产环境的就绪度。",
+      "explanation": "通用基准测试侧重于算法和语法，而非尊重复杂的、特定于代码仓库的约束的能力，而这些约束才是决定代码能否合并的关键。"
+    }
+  ],
+  "keyQuotes": [
+    "模型本身正变得越来越陈旧，因为它们缺乏生成生产级贡献所需的特定于代码仓库的知识。",
+    "AI 增加了代码生成的数量，但并不一定提高了可合并贡献的比例。",
+    "每个代码仓库都有自己不成文的规则……这些架构约束通常存在于资深工程师的经验中。",
+    "AI 模型与真实代码仓库之间日益增长的错位，主要不是一个工具问题，而是一个知识管理问题。",
+    "组织在评估 AI 编码工具时，应基于它们尊重自身代码库架构约束的能力。"
+  ],
+  "tags": [
+    "AI 编码",
+    "软件架构",
+    "代码仓库指纹识别",
+    "知识管理",
+    "LLM 约束"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 76,
+  "wordCount": 534,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773916980000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 10:43:00"
+}

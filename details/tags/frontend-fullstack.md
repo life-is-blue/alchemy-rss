@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-19 20:07:57 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-19 22:17:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -612,6 +612,22 @@
 
 
 
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+
+2026-03-18 20:00:00 | 标签: Next.js, Turbopack, 前端开发, Web 性能, 构建工具
+
+> 本文详细介绍了 Next.js 16.2 中 Turbopack 的更新，重点关注性能和开发者体验。最突出的功能是全新的 Server Fast Refresh，它利用模块图（module graph）知识优化了服务端热重载，从而实现了显著的速度提升（编译时间最高缩短 900%）。其他关键新增功能包括用于增强安全性的子资源完整性（SRI）、改进的动态导入 Tree Shaking，以及通过 Lightning CSS 对加载器和 CSS 转译进行更细粒度的控制。此版本还包含 200 多项错误修复和稳定性改进，反映了 Turbopack 作为 Next.js 默认打包工具的持续成熟。
+
+
+
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+
+2026-03-18 20:00:00 | 标签: Next.js, React, 前端, Web 性能, 开发体验
+
+> Next.js 16.2 专注于性能和开发体验。主要亮点包括通过优化 React 的负载反序列化（payload deserialization），实现了约 400% 的 `next dev` 启动速度提升和高达 60% 的渲染速度提升。此版本引入了强大的调试工具，例如 Server Function 日志记录、水合（hydration）差异指示器，以及通过 `next start --inspect` 实现的生产环境 Node.js 调试。此外，它还带来了对 Adapters 的稳定支持、`next/link` 的新 `transitionTypes`，以及 `unstable_catchE...
+
+
+
 ### [使用-Webflow、GSAP-和-Three.js-构建无缝-3D-过渡效果](https://tympanus.net/codrops/2026/03/18/building-seamless-3d-transitions-with-webflow-gsap-and-three-js/)
 
 2026-03-18 13:14:16
@@ -756,13 +772,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2256,13 +2272,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3966,13 +3982,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

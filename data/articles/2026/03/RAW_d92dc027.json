@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d92dc027",
+  "title": "微软在 AKS 中增加对基于 DRA 的 NVIDIA vGPU 的支持",
+  "url": "https://www.infoq.com/news/2026/03/microsoft-nvidia-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-19 10:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>The Azure Kubernetes Service team shared a <a href=\"https://blog.aks.azure.com/2026/03/06/dra-with-vGPUs-on-aks\">detailed guide</a> on how to use <a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/\">Dynamic Resource Allocation (DRA)</a> with NVIDIA vGPU technology on AKS. his update improves control and efficiency for shared GPU use in AI and media tasks.</p>\n   <p><a href=\"https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/\">Dynamic Resource Allocation (DRA)</a> is now the standard for GPU resource use in Kubernetes. Instead of static resources like <code>nvidia.com/gpu</code>, GPUs are allocated dynamically using <code>DeviceClasses</code> and <code>ResourceClaims</code>. This change enhances scheduling and improves integration with virtualization technologies like NVIDIA vGPU.</p>\n   <p>The reason for combining these technologies is clear: virtual accelerators like NVIDIA vGPU often handle smaller tasks. They allow one physical GPU to be split among many users or applications. This setup is helpful for enterprise AI/ML development, fine-tuning, and audio/visual processing. vGPU offers predictable performance while still providing CUDA capabilities to containerized workloads.</p>\n   <p>On the infrastructure side, this feature relies on Azure's <a href=\"https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nvadsa10v5-series?tabs=sizebasic\">NVadsA10_v5</a> virtual machine series. Instead of assigning the whole GPU to one VM, vGPU technology partitions it into multiple fixed-size slices at the hypervisor layer. From Kubernetes' view, each VM shows one clear GPU device. The hypervisor sets capacity and memory limits, not the software.</p>\n   <p>The setup requires <a href=\"https://kubernetes.io/releases/1.34/\">Kubernetes 1.34</a> or newer. At this point, DRA primitives like <code>deviceclasses</code> and <code>resourceslices</code> are available. Teams provision a node pool with NVadsA10_v5 instances and apply a label (<code>nvidia.com/gpu.present=true</code>) for the NVIDIA DRA kubelet plugin as its node selector. They then deploy the NVIDIA DRA driver via Helm. The post highlights three important Helm flags for vGPU scenarios. The <code>gpuResourcesEnabledOverride=true</code> flag skips a check that prevents the NVIDIA DRA driver from installing with the legacy device plugin due to different GPU names. <code>FeatureGates.IMEXDaemonsWithDNSNames=false</code> disables an IMEX feature that requires a newer GRID driver version than what's supported on the A10 series in Azure.</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/microsoft-nvidia-gpu/news/2026/03/microsoft-nvidia-gpu/en/resources/1DRA_A10_vGPU_AKS_diagram-205255c16d9ef73b720c03cec8e0de7f (1)-1773844201509.jpg\" style=\"width: 798px; height: 451px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/microsoft-nvidia-gpu/en/resources/1DRA_A10_vGPU_AKS_diagram-205255c16d9ef73b720c03cec8e0de7f (1)-1773844201509.jpg\" rel=\"share\">\n   </center>\n   <p>Once the driver is active, it scans each node, detects the single vGPU device from the Azure VM, and registers it to the Kubernetes control plane as a DRA-managed device. Each node registers one allocatable device because that’s what the VM presents. Operators can check the setup by looking at the <code>gpu.nvidia.com</code> DeviceClass and ResourceSlices. This way, they can confirm that the control plane has found the available hardware.</p>\n   <p>Beyond the baseline one-sixth slice (Standard_NV6ads_A10_v5), the series offers a one-third profile with 8 GB of accelerator memory and a one-half profile with 12 GB. Limits are enforced at the hypervisor layer, so AKS sees a single GPU device with predictable capacity. This gives platform teams flexibility to size GPU allocation based on workload needs without overprovisioning nodes.</p>\n   <p>The AKS team frames the broader significance as directional. As GPUs become first-class resources in Kubernetes, combining virtualized GPU with DRA offers a practical way to run shared, production-grade workloads. For large AKS deployments, especially in regulated or cost-sensitive industries, optimal GPU placement and utilization directly impact job throughput and infrastructure efficiency. Using DRA with vGPU helps organizations move from coarse node-level allocation to controlled, workload-driven GPU use at scale.</p>\n   <p>Google Cloud is pursuing a <a href=\"https://cloud.google.com/blog/products/compute/google-cloud-ai-infrastructure-at-nvidia-gtc-2026\">similar path on GKE</a>, focusing on DRA as a scheduling primitive for both GPUs and TPUs. GKE's DRA support lets workloads use CEL expressions to filter devices with specific attributes. This allows a single manifest to deploy to different clusters with various GPU types without changes. Specifically for vGPU, Google recently previewed fractional G4 VMs using NVIDIA vGPU technology based on the RTX PRO 6000 Blackwell GPU, managed through GKE and combined with container binpacking for higher utilization. When scheduled via Google's Dynamic Workload Scheduler, fallback priorities can improve resource access.</p>\n   <p>Amazon EKS takes a <a href=\"https://aws.amazon.com/blogs/containers/unlocking-next-generation-ai-performance-with-dynamic-resource-allocation-on-amazon-eks-and-amazon-ec2-p6e-gb200/\">different approach</a>, using DRA mainly to simplify the complexity of its high-end GPU hardware instead of fractional sharing. Amazon EKS made DRA generally available starting in Kubernetes version 1.33. This technology is essential for P6e-GB200 UltraServer instances, where traditional static GPU scheduling cannot model the NVLink and IMEX interconnect needed for multi-node workloads. For teams running smaller workloads wanting GPU sharing on EKS, DRA now supports structured, attribute-based requests. This allows schedulers to respond to requests like \"a 10 GB MIG partition with at least 1/7th compute\" instead of treating GPUs as simple counts. Across all three cloud providers, the shift from static device plugins to DRA is accelerating, driven by the need for more expressive, topology-aware GPU scheduling as AI infrastructure grows in complexity and cost.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Microsoft Adds DRA-Backed NVIDIA vGPU Support to AKS\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/microsoft-nvidia-gpu/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773914400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软 AKS 现已支持在 NVadsA10_v5 实例上通过 NVIDIA vGPU 使用 Kubernetes 动态资源分配 (DRA)，从而实现细粒度的 GPU 分区，并为 AI 工作负载提供高效的资源共享。",
+  "oneSentenceSummary": "微软 AKS 现已支持在 NVadsA10_v5 实例上通过 NVIDIA vGPU 使用 Kubernetes 动态资源分配 (DRA)，从而实现细粒度的 GPU 分区，并为 AI 工作负载提供高效的资源共享。",
+  "summary": "本文探讨了 Azure Kubernetes Service (AKS) 中动态资源分配 (DRA) 与 NVIDIA vGPU 技术的集成。此次更新标志着从静态 GPU 资源管理向使用 Kubernetes 1.34+ 的动态、基于属性的系统的转变。通过利用 Azure 的 NVadsA10_v5 虚拟机系列，物理 GPU 可以在 hypervisor 层被划分为固定大小的切片（1/6、1/3 或 1/2），从而确保共享工作负载的可预测性能和 CUDA 能力。文章还对比了 Google Cloud (GKE) 和 AWS (EKS) 如何采用 DRA 来解决不同的挑战，范围涵盖从分片装箱 (fractional binpacking) 到管理诸如 NVLink 等复杂的多节点互连。",
+  "mainPoints": [
+    {
+      "point": "Kubernetes 正从静态设备插件转向动态资源分配 (DRA)。",
+      "explanation": "DRA 用更灵活的系统取代了传统的静态资源计数，该系统使用 DeviceClasses 和 ResourceClaims，从而实现更好的调度并与虚拟化技术集成。"
+    },
+    {
+      "point": "NVIDIA vGPU 技术实现了硬件级分区，以提高资源利用率。",
+      "explanation": "通过在 hypervisor 层将单个物理 GPU 拆分为多个切片，企业可以在一张显卡上支持多个 AI/ML 开发任务，并强制执行内存和计算限制。"
+    },
+    {
+      "point": "AKS 的实施需要特定的基础设施和配置要求。",
+      "explanation": "该设置需要 Kubernetes 1.34+、Azure NVadsA10_v5 实例，以及用于 NVIDIA DRA 驱动程序的特定 Helm 标志，以处理遗留设备插件冲突和功能门控 (feature gates)。"
+    },
+    {
+      "point": "主要云服务提供商正在采用 DRA 来解决 AI 基础设施复杂性的不同方面。",
+      "explanation": "虽然 Azure 和 Google 专注于分片共享和成本效率，但 AWS 利用 DRA 来管理诸如 NVLink 和 IMEX 等高端互连，以支持大规模多节点工作负载。"
+    }
+  ],
+  "keyQuotes": [
+    "将 DRA 与 vGPU 结合使用，有助于企业从粗粒度的节点级分配转向受控的、工作负载驱动的大规模 GPU 使用。",
+    "GPU 不再使用像 nvidia.com/gpu 这样的静态资源，而是通过 DeviceClasses 和 ResourceClaims 进行动态分配。",
+    "vGPU 在为容器化工作负载提供 CUDA 能力的同时，还能提供可预测的性能。",
+    "在所有三大云服务提供商中，从静态设备插件向 DRA 的转变正在加速，这是由对更具表现力、感知拓扑的 GPU 调度的需求所驱动的。"
+  ],
+  "tags": [
+    "AKS",
+    "Kubernetes",
+    "DRA",
+    "NVIDIA vGPU",
+    "GPU 虚拟化"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 716,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773914400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-19 10:00:00"
+}
