@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-19 14:18:21 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-19 16:10:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11072,17 +11072,13 @@
 
 ### [小米神操作！认领榜一神秘模型-Hunter-Alpha，龙虾之父都忍不住打听](https://www.qbitai.com/2026/03/389038.html)
 
-2026-03-19 01:18:29 | 标签: 小米 MiMo-V2, 大语言模型, 混合专家模型 (MoE), 智能体 (Agent), 代码生成
-
-> 文章报道了小米 AI 团队正式官宣 MiMo-V2 系列模型，揭开了此前在 OpenRouter 平台霸榜的神秘模型 Hunter Alpha（即 MiMo-V2-Pro）的真面目。该模型拥有超过 1T 的总参数量和 42B 的激活参数，支持百万级长文本，并在代码生成（SWE-bench）和智能体任务中表现卓越，综合排名位居全球前列。文章详细介绍了其采用的 7:1 混合注意力机制、MTP 多 Token 预测层，以及与北京大学联合研发的 ARL-Tangram 统一资源管理系统。此外，小米还推出了融合视听读能力的全模态模型 MiMo-V2-Omni 和支持情感控制的语音模型 MiMo-V2-T...
+2026-03-19 01:18:29
 
 
 
 ### [自动研究：利用-Apple-的“LLM-in-a-Flash”在本地运行-Qwen-397B](https://simonwillison.net/2026/Mar/18/llm-in-a-flash/#atom-everything)
 
-2026-03-18 23:56:46 | 标签: LLM 推理, 混合专家模型 (MoE), Apple Silicon, MLX, 量化
-
-> 本文强调了本地 LLM 推理的一个重要技术里程碑：在内存有限的消费级硬件上运行 Qwen3.5-397B-A17B 混合专家（MoE）模型。通过实施 Apple 2023 年“LLM in a Flash”论文中的策略，研究人员成功地按需将专家权重从 SSD 流式传输到 DRAM，在 48GB M3 Max MacBook Pro 上实现了超过每秒 5.5 个 token 的速度。一个关键亮点是其方法论，它利用 Claude Code 和“自动研究”模式自动化了 90 次实验，生成了优化的 MLX、Objective-C 和 Metal 代码。该实现对专家模型使用了 2-bit 量化，同时将路...
+2026-03-18 23:56:46
 
 
 
@@ -11112,17 +11108,13 @@
 
 ### [【GUI-Agent】阶跃星辰-GUI-MCP-解读---2---决策层](https://mp.weixin.qq.com/s?__biz=MzI4OTA3NjQxNA==&mid=2247489004&idx=1&sn=8977e7190180e5ebd86cbdd3bd7da38f)
 
-2026-03-18 12:14:00 | 标签: GUI-Agent, GUI-MCP, Agent Architecture, LLM, Prompt Engineering
-
-> 本文是对阶跃星辰 GUI-MCP 架构中“决策层”的深度技术解读。作者通过反向工程视角，详细拆解了 GUI Agent 系统中的核心组件：LocalServer 和 Parser0920Summary。LocalServer 作为系统大脑，负责会话管理、环境状态跟踪及模型推理调度；Parser0920Summary 则充当关键桥梁，负责将多模态环境信息（截图+文本）转化为 LLM 可理解的提示词，并将模型输出解析为标准化的设备动作。文章通过代码级分析，阐述了多模态消息构建、图片预处理、模型分发机制以及基于 CoT（思维链）的决策可解释性设计，为开发者理解 GUI Agent 的工程实现提供了极...
+2026-03-18 12:14:00
 
 
 
 ### [聊聊如何在大模型-RL-中灵活地控制熵增熵减](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513267&idx=1&sn=426aa686efad5c7e5255c20a58202915)
 
-2026-03-18 12:02:00 | 标签: LLM, RLVR, GRPO, 策略熵崩溃, 强化学习
-
-> 文章针对大模型强化学习（RLVR/GRPO）中常见的“策略熵崩溃”现象进行了深入探讨。作者指出，策略熵崩溃会导致模型过早收敛和梯度消失。通过理论推导，文章识别出重要性采样比率空间中的四个熵敏感区域，并据此设计了一套动态裁剪阈值机制，能够精确控制熵的增减。在此基础上，作者提出了三种熵控制策略（ID、DID、OD），通过在训练不同阶段动态调整裁剪阈值，平衡探索与收敛。实验结果表明，该方法在 Qwen2.5-Math 等模型上显著提升了 Pass@K 性能和整体训练效果，为解决 RL 训练动态问题提供了新的理论工具和实践方案。
+2026-03-18 12:02:00
 
 
 
@@ -32152,9 +32144,7 @@
 
 ### [如何使用-Cloudflare-Workers-构建生产级-RAG-系统-——-开发者手册](https://www.freecodecamp.org/news/build-a-production-rag-system-with-cloudflare-workers-handbook/)
 
-2026-03-18 23:05:13 | 标签: RAG, Cloudflare Workers, 向量数据库, LLMOps, 边缘计算
-
-> 本手册提供了使用 Cloudflare Workers、Vectorize 和 Workers AI 开发检索增强生成（RAG）系统的分步指南。与基础教程不同，它强调了一种生产就绪的架构，通过利用 Cloudflare 的边缘网络将成本降至最低（每月约 5 美元）。作者详细介绍了嵌入模型、向量数据库和 LLM 这三个核心组件，并解释了同地部署（co-location）如何降低延迟。指南涵盖了设置文档摄入的数据管道、构建语义搜索的查询管道，以及实施基于密钥的身份验证和错误处理等必要的安全措施。此外，它还提供了关于为何文本描述在 RAG 中优于视觉嵌入，以及如何保持整个管道中模型一致性的关键见解。
+2026-03-18 23:05:13
 
 
 
@@ -57098,9 +57088,7 @@ http://antirez.com/news/162
 
 ### [伟大牛逼的-Claude-Code-和它背后的那个男人](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925526&idx=1&sn=cbd095541341740e0fad470d15ebe23c)
 
-2026-03-18 23:46:00 | 标签: Claude Code, Anthropic, Boris Cherny, AI 编程, 软件工程
-
-> 文章详细介绍了 Anthropic 推出的命令行 AI 编程工具 Claude Code。该工具由前 Meta 首席工程师 Boris Cherny 主导开发，凭借极简的 Unix 哲学（简单、模块化、CLI 优先）和高度的模型亲和性，在 Anthropic 内部实现了 80%-90% 的代码贡献率。文章不仅回顾了 Boris 从乌克兰移民到技术大牛的成长历程，还深入探讨了 Claude Code 的设计逻辑：如使用 TypeScript 以匹配模型擅长领域、坚持极简的系统提示词、以及“为六个月后的模型设计产品”的超前意识。通过引用 Andrej Karpathy 等专家的评价，文章指出编程范...
+2026-03-18 23:46:00
 
 
 

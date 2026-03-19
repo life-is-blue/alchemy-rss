@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-19 14:18:21 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-19 16:10:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -422,17 +422,13 @@
 
 ### [如何利用-GitHub-Actions-构建生产就绪的-Flutter-CI/CD-流水线：质量门禁、环境管理与应用商店部署](https://www.freecodecamp.org/news/how-to-build-a-production-ready-flutter-ci-cd-pipeline-with-github-actions-quality-gates-environments-and-store-deployment/)
 
-2026-03-18 22:58:15 | 标签: Flutter, GitHub Actions, CI/CD, DevOps, 移动开发
-
-> 本文详细介绍了如何使用 GitHub Actions 实现 Flutter 发布生命周期的自动化。文章提倡“脚本优先”的方法，将复杂逻辑封装在 Bash 脚本中，而不是臃肿的 YAML 文件中，从而增强了可移植性并支持本地调试。指南涵盖了严格质量门禁（代码检查、测试和覆盖率）的实施、通过模板替换安全注入特定环境配置，以及 Android 和 iOS 的自动化部署工作流。此外，文章还探讨了生产级需求，例如用于反混淆的 Sentry 符号上传以及用于测试环境的 Firebase App Distribution。
+2026-03-18 22:58:15
 
 
 
 ### [如何优化-Docker-构建缓存并将-CI/CD-流水线时间缩短-80%](https://www.freecodecamp.org/news/how-to-optimize-your-docker-build-cache/)
 
-2026-03-18 21:50:25 | 标签: Docker, CI/CD 优化, BuildKit, DevOps, 容器化
-
-> 本文由从业者主导，深入探讨了 Docker 构建性能优化，专门针对 CI/CD 流水线缓慢这一常见痛点。作者首先揭开了 Docker 缓存机制的神秘面纱，解释了不同指令的缓存键是如何计算的，并强调了“缓存链规则”（Cache Chain Rule）——即缓存失效是顺序发生的，并会影响所有后续层。指南指出了导致“缓存破坏”（cache-busting）的五个普遍错误，例如在安装依赖之前复制源代码，或使用 ADD 指令而非 COPY。为了纠正这些问题，文章提出了一个系统的五步优化策略：采用依赖优先模式、利用积极的 .dockerignore 文件、实施多阶段构建、按变更频率排列层顺序，以及利用 B...
+2026-03-18 21:50:25
 
 
 

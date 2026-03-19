@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-19 14:18:21 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-19 16:10:19 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -614,9 +614,7 @@
 
 ### [使用-Webflow、GSAP-和-Three.js-构建无缝-3D-过渡效果](https://tympanus.net/codrops/2026/03/18/building-seamless-3d-transitions-with-webflow-gsap-and-three-js/)
 
-2026-03-18 13:14:16 | 标签: Webflow, Three.js, GSAP, Barba.js, 创意编程
-
-> 本文详细介绍了一种通过集成自定义 JavaScript、Three.js 和 GSAP 来提升 Webflow 网站的高级方法。文章展示了如何创建“单一空间”导航体验，即在通过 Barba.js 切换页面内容时，持久化的 3D 场景保持活跃。作者涵盖了整个技术流程：从 Blender 建模和 Photoshop 纹理制作，到 Three.js “Experience” 类使用的单例模式等架构模式。关键技术亮点包括使用 Vite 打包自定义代码、利用数据属性进行 DOM 到 JS 的通信，以及实施诸如遵循 “prefers-reduced-motion” 设置等无障碍最佳实践。
+2026-03-18 13:14:16
 
 
 
