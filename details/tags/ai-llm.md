@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-19 10:59:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-19 12:37:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4350,11 +4350,17 @@
 
 
 
+### [深入理解-OpenClaw-技术架构与实现原理（上）](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558933&idx=1&sn=926e244c855c44c818d83c6c7d57d4d3)
+
+2026-03-19 00:32:00 | 标签: OpenClaw, AI Agent, 系统架构, 本地优先, Gateway
+
+> 文章系统性地剖析了当下热门的个人助理系统 OpenClaw。其核心采用“本地优先（Local-First）”的多端联动架构，通过一个统一的 WebSocket 网关（Gateway）作为控制平面，管理会话、路由、设备节点及安全策略。文章详细拆解了三大核心模块：一是 Agentic Loop（Pi Loop），这是一个事件驱动的推理循环，负责 LLM 调用与工具执行的自动化管理；二是 Cron 定时任务系统，支持多种调度模式并与 Heartbeat 机制集成，实现拟人化的主动交互；三是工具系统，通过多层策略流水线（Policy Pipeline）确保工具调用的安全与合规。此外，文章还强调了 Op...
+
+
+
 ### [Next.js-16.2：AI-改进](https://nextjs.org/blog/next-16-2-ai)
 
-2026-03-18 20:00:00 | 标签: Next.js, AI 智能体, 开发者体验, 调试, 部分预渲染 (PPR)
-
-> Next.js 16.2 标志着框架设计的一个重大转变，即优先考虑 AI 辅助的开发工作流。此次发布引入了几个关键功能：用于为 LLM 提供准确、版本匹配文档的“AGENTS.md”；将浏览器日志转发到终端；以及用于防止进程冲突的开发服务器锁文件。最值得注意的是，此次发布推出了实验性的“next-browser” CLI，它允许 AI 智能体以编程方式检查 React 组件树、网络请求和部分预渲染（PPR）状态。该工具有效地弥合了传统的基于浏览器的调试与基于终端的智能体工作流之间的鸿沟，使智能体能够像人类开发者一样有效地推理应用程序状态。
+2026-03-18 20:00:00
 
 
 
@@ -4388,13 +4394,13 @@
 
 
 
-### [给“氛围编程”系上安全带：阿里集团-AI-代码评审实践与-Benchmark-开源](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509195&idx=1&sn=612b82d4bc6b1bca8610e4284b0f6151)
+### [你的-AI-Agent-真的在受控运行吗？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558894&idx=1&sn=66e97f3df165135113bc3ea000873f1b)
 
 2026-03-13 00:31:00
 
 
 
-### [你的-AI-Agent-真的在受控运行吗？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247558894&idx=1&sn=66e97f3df165135113bc3ea000873f1b)
+### [给“氛围编程”系上安全带：阿里集团-AI-代码评审实践与-Benchmark-开源](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247509195&idx=1&sn=612b82d4bc6b1bca8610e4284b0f6151)
 
 2026-03-13 00:31:00
 
@@ -4856,13 +4862,13 @@
 
 
 
-### [Gemini-Live-API-在-Vertex-AI-上普遍可用](https://cloud.google.com/blog/products/ai-machine-learning/gemini-live-api-available-on-vertex-ai/)
+### [如何在-Vertex-AI-中使用-Gemini-Live-API-原生音频](https://cloud.google.com/blog/topics/developers-practitioners/how-to-use-gemini-live-api-native-audio-in-vertex-ai/)
 
 2025-12-13 00:00:00
 
 
 
-### [如何在-Vertex-AI-中使用-Gemini-Live-API-原生音频](https://cloud.google.com/blog/topics/developers-practitioners/how-to-use-gemini-live-api-native-audio-in-vertex-ai/)
+### [Gemini-Live-API-在-Vertex-AI-上普遍可用](https://cloud.google.com/blog/products/ai-machine-learning/gemini-live-api-available-on-vertex-ai/)
 
 2025-12-13 00:00:00
 
@@ -4892,13 +4898,13 @@
 
 
 
-### [利用-ADK-和全新的-Interactions-API-构建智能体](https://developers.googleblog.com/building-agents-with-the-adk-and-the-new-interactions-api/)
+### [智能工具选择：利用-Spring-AI-动态工具发现实现-34-64%-Token-节省](https://spring.io/blog/2025/12/11/spring-ai-tool-search-tools-tzolov)
 
 2025-12-11 00:00:00
 
 
 
-### [智能工具选择：利用-Spring-AI-动态工具发现实现-34-64%-Token-节省](https://spring.io/blog/2025/12/11/spring-ai-tool-search-tools-tzolov)
+### [利用-ADK-和全新的-Interactions-API-构建智能体](https://developers.googleblog.com/building-agents-with-the-adk-and-the-new-interactions-api/)
 
 2025-12-11 00:00:00
 
@@ -5174,13 +5180,13 @@
 
 
 
-### [使用-Spring-AI-递归增强器创建自改进人工智能智能体](https://spring.io/blog/2025/11/04/spring-ai-recursive-advisors)
+### [我的-Claude-Code-实战经验：深度使用每个功能-译](https://ginonotes.com/posts/how-i-use-every-claude-code-feature)
 
 2025-11-04 00:00:00
 
 
 
-### [我的-Claude-Code-实战经验：深度使用每个功能-译](https://ginonotes.com/posts/how-i-use-every-claude-code-feature)
+### [使用-Spring-AI-递归增强器创建自改进人工智能智能体](https://spring.io/blog/2025/11/04/spring-ai-recursive-advisors)
 
 2025-11-04 00:00:00
 
@@ -5354,13 +5360,13 @@
 
 
 
-### [Spring-AI-Alibaba-实践｜后台定时-Agent](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508871&idx=1&sn=87d6507695c6cba045838c1f82ecd28c)
+### [【智造】AI-应用实战：6-个-agent-搞定复杂指令和工具膨胀](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247553898&idx=1&sn=01beae24939b500244b38fc7563dc68d)
 
 2025-10-17 00:31:00
 
 
 
-### [【智造】AI-应用实战：6-个-agent-搞定复杂指令和工具膨胀](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247553898&idx=1&sn=01beae24939b500244b38fc7563dc68d)
+### [Spring-AI-Alibaba-实践｜后台定时-Agent](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508871&idx=1&sn=87d6507695c6cba045838c1f82ecd28c)
 
 2025-10-17 00:31:00
 
@@ -5666,13 +5672,13 @@
 
 
 
-### [来了！腾讯优图开源智能体框架-Youtu-Agent，开箱即用！](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247692023&idx=2&sn=d196b4e616b08a835cc14d63970b205a)
+### [菜鸡才用-AI-写代码，10-倍程序员这样用-Claude-重塑编程工作流](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247692023&idx=1&sn=d0a7dd0c17c8f16c60e98b39e24b0e4b)
 
 2025-09-04 00:46:00
 
 
 
-### [菜鸡才用-AI-写代码，10-倍程序员这样用-Claude-重塑编程工作流](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247692023&idx=1&sn=d0a7dd0c17c8f16c60e98b39e24b0e4b)
+### [来了！腾讯优图开源智能体框架-Youtu-Agent，开箱即用！](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247692023&idx=2&sn=d196b4e616b08a835cc14d63970b205a)
 
 2025-09-04 00:46:00
 
@@ -5744,13 +5750,13 @@
 
 
 
-### [Gemini-2.5-Flash-图像在-Vertex-AI-上的发布](https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-flash-image-on-vertex-ai/)
+### [推出-Gemini-2.5-Flash-Image，我们的顶尖图像模型](https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/)
 
 2025-08-26 00:00:00
 
 
 
-### [推出-Gemini-2.5-Flash-Image，我们的顶尖图像模型](https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/)
+### [Gemini-2.5-Flash-图像在-Vertex-AI-上的发布](https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-flash-image-on-vertex-ai/)
 
 2025-08-26 00:00:00
 
@@ -5822,13 +5828,13 @@
 
 
 
-### [前端仔如何在公司搭建-AI-Review-系统](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247545002&idx=1&sn=f7deb82ccb2c5099cd922a0259e7d22e)
+### [从-Prompt-到-Context：为什么-Think-Tool-是形式化的必然？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552444&idx=1&sn=a612f4efb7a2520462d04932dc8573cf)
 
 2025-08-20 00:31:00
 
 
 
-### [从-Prompt-到-Context：为什么-Think-Tool-是形式化的必然？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552444&idx=1&sn=a612f4efb7a2520462d04932dc8573cf)
+### [前端仔如何在公司搭建-AI-Review-系统](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247545002&idx=1&sn=f7deb82ccb2c5099cd922a0259e7d22e)
 
 2025-08-20 00:31:00
 
@@ -5888,7 +5894,7 @@
 
 
 
-### [迈向可信-AI：LLM-幻觉的分析与优化](https://mp.weixin.qq.com/s/H02eKRegzJnzZhgj7MINAw)
+### [万字解码-Agentic-AI-时代的记忆系统演进之路](https://mp.weixin.qq.com/s/LYx4pV1L9aVjd5u5iiI2zg)
 
 2025-08-14 00:00:00
 
@@ -5900,7 +5906,7 @@
 
 
 
-### [万字解码-Agentic-AI-时代的记忆系统演进之路](https://mp.weixin.qq.com/s/LYx4pV1L9aVjd5u5iiI2zg)
+### [迈向可信-AI：LLM-幻觉的分析与优化](https://mp.weixin.qq.com/s/H02eKRegzJnzZhgj7MINAw)
 
 2025-08-14 00:00:00
 
@@ -5912,13 +5918,13 @@
 
 
 
-### [一年成爆款，狂斩-49.1k-Star、200-万下载：Cline-不是开源-Cursor，却更胜一筹？！](https://mp.weixin.qq.com/s/P1EVgqu70jM2gQ5kE6j-gA)
+### [万字长文解码如何玩转-Prompt（附实践应用）](https://mp.weixin.qq.com/s/ad6y-pCe1_PV7iNA7Uh1bg)
 
 2025-08-13 00:00:00
 
 
 
-### [万字长文解码如何玩转-Prompt（附实践应用）](https://mp.weixin.qq.com/s/ad6y-pCe1_PV7iNA7Uh1bg)
+### [一年成爆款，狂斩-49.1k-Star、200-万下载：Cline-不是开源-Cursor，却更胜一筹？！](https://mp.weixin.qq.com/s/P1EVgqu70jM2gQ5kE6j-gA)
 
 2025-08-13 00:00:00
 
@@ -6266,13 +6272,13 @@
 
 
 
-### [GitHub-Next：他们的研究和原型设计团队如何运作](https://www.infoq.com/podcasts/github-research-prototyping-team/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [企业级自主智能-AI-架构框架](https://www.infoq.com/articles/agentic-ai-architecture-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-11 00:00:00
 
 
 
-### [企业级自主智能-AI-架构框架](https://www.infoq.com/articles/agentic-ai-architecture-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [GitHub-Next：他们的研究和原型设计团队如何运作](https://www.infoq.com/podcasts/github-research-prototyping-team/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-11 00:00:00
 
@@ -6386,13 +6392,13 @@
 
 
 
-### [从输入指令到代码落地：Cline-AI-源码浅析](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247550685&idx=1&sn=fc52a478e96baaef00ca52fcba4b7ca0)
+### [从-Copilot-到-通用-Agent-：-阿里在-AI-Coding-上的应用和挑战](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249612&idx=2&sn=4dfbc9d842ff3bbcdc8830bf3cf92fef)
 
 2025-06-30 04:01:00
 
 
 
-### [从-Copilot-到-通用-Agent-：-阿里在-AI-Coding-上的应用和挑战](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249612&idx=2&sn=4dfbc9d842ff3bbcdc8830bf3cf92fef)
+### [从输入指令到代码落地：Cline-AI-源码浅析](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247550685&idx=1&sn=fc52a478e96baaef00ca52fcba4b7ca0)
 
 2025-06-30 04:01:00
 
@@ -6416,13 +6422,7 @@
 
 
 
-### [Cloudflare-发布-13-个全新-MCP-服务器，赋能-AI-应用无限可能](https://www.infoq.com/news/2025/05/cloudflare-ai-new-mcp-servers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
-
-2025-06-26 00:00:00
-
-
-
-### [工具赋能智能体：基于-ADK-从零构建助手](https://cloud.google.com/blog/topics/developers-practitioners/tools-make-an-agent-from-zero-to-assistant-with-adk/)
+### [Gemma-3n-开发者指南：全新发布](https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/)
 
 2025-06-26 00:00:00
 
@@ -6434,7 +6434,13 @@
 
 
 
-### [Gemma-3n-开发者指南：全新发布](https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/)
+### [工具赋能智能体：基于-ADK-从零构建助手](https://cloud.google.com/blog/topics/developers-practitioners/tools-make-an-agent-from-zero-to-assistant-with-adk/)
+
+2025-06-26 00:00:00
+
+
+
+### [Cloudflare-发布-13-个全新-MCP-服务器，赋能-AI-应用无限可能](https://www.infoq.com/news/2025/05/cloudflare-ai-new-mcp-servers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-26 00:00:00
 
@@ -6476,13 +6482,13 @@
 
 
 
-### [Gemini-2.5-在机器人技术与具身智能领域的应用](https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/)
+### [Imagen-4-现已在-Gemini-API-和-Google-AI-Studio-中提供](https://developers.googleblog.com/en/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/)
 
 2025-06-24 00:00:00
 
 
 
-### [Imagen-4-现已在-Gemini-API-和-Google-AI-Studio-中提供](https://developers.googleblog.com/en/imagen-4-now-available-in-the-gemini-api-and-google-ai-studio/)
+### [Gemini-2.5-在机器人技术与具身智能领域的应用](https://developers.googleblog.com/en/gemini-25-for-robotics-and-embodied-intelligence/)
 
 2025-06-24 00:00:00
 
@@ -6536,13 +6542,13 @@
 
 
 
-### [大模型安全挑战与实践：构建-AI-时代的安全防线](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247736&idx=2&sn=646df85e352f9cefa25a7994e2008f7f)
+### [被骂“在乱讲”的专家，这次可能说对了：传统数据仓库正在被-Agentic-AI-吞噬](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247736&idx=1&sn=18c92fa1ff4a7fb167041e67e484e035)
 
 2025-06-13 05:16:00
 
 
 
-### [被骂“在乱讲”的专家，这次可能说对了：传统数据仓库正在被-Agentic-AI-吞噬](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247736&idx=1&sn=18c92fa1ff4a7fb167041e67e484e035)
+### [大模型安全挑战与实践：构建-AI-时代的安全防线](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651247736&idx=2&sn=646df85e352f9cefa25a7994e2008f7f)
 
 2025-06-13 05:16:00
 
@@ -6596,13 +6602,13 @@
 
 
 
-### [RAG-技巧与底层代码剖析](https://mp.weixin.qq.com/s/oX6JZS_INj9M8Ntkh4Jp9Q)
+### [【第-3523-期】程序员专属提示词工程实战手册](https://mp.weixin.qq.com/s/0F-WnXg82NY9yiO2Ss9c1Q)
 
 2025-06-06 00:00:00
 
 
 
-### [【第-3523-期】程序员专属提示词工程实战手册](https://mp.weixin.qq.com/s/0F-WnXg82NY9yiO2Ss9c1Q)
+### [RAG-技巧与底层代码剖析](https://mp.weixin.qq.com/s/oX6JZS_INj9M8Ntkh4Jp9Q)
 
 2025-06-06 00:00:00
 
@@ -6638,13 +6644,13 @@
 
 
 
-### [“不用-Cursor-和-ChatGPT、手写代码的开发者，怕不是疯了？”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246577&idx=1&sn=63fd550af912f393cc7bbec9775bca95)
+### [复杂场景下的-RAG-架构演进：跨模态知识联邦与统一语义推理实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246577&idx=2&sn=e26bfdbfc2e5f423f9c1bcb9285e4dd6)
 
 2025-06-03 06:29:00
 
 
 
-### [复杂场景下的-RAG-架构演进：跨模态知识联邦与统一语义推理实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246577&idx=2&sn=e26bfdbfc2e5f423f9c1bcb9285e4dd6)
+### [“不用-Cursor-和-ChatGPT、手写代码的开发者，怕不是疯了？”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246577&idx=1&sn=63fd550af912f393cc7bbec9775bca95)
 
 2025-06-03 06:29:00
 
@@ -6746,7 +6752,7 @@
 
 
 
-### [重磅发布：Vertex-AI-上的-Veo-3、Imagen-4-和-Lyria-2](https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai/)
+### [Gemini-2.5-Flash/Pro-功能升级：赋能企业级-AI-应用](https://cloud.google.com/blog/products/ai-machine-learning/expanding-gemini-2-5-flash-and-pro-capabilities/)
 
 2025-05-21 00:00:00
 
@@ -6758,7 +6764,7 @@
 
 
 
-### [Gemini-2.5-Flash/Pro-功能升级：赋能企业级-AI-应用](https://cloud.google.com/blog/products/ai-machine-learning/expanding-gemini-2-5-flash-and-pro-capabilities/)
+### [重磅发布：Vertex-AI-上的-Veo-3、Imagen-4-和-Lyria-2](https://cloud.google.com/blog/products/ai-machine-learning/announcing-veo-3-imagen-4-and-lyria-2-on-vertex-ai/)
 
 2025-05-21 00:00:00
 
@@ -6776,13 +6782,13 @@
 
 
 
-### [Spring-AI-1.0-初探：构建您的首个应用](https://spring.io/blog/2025/05/20/your-first-spring-ai-1)
+### [Spring-AI-1.0-GA-发布](https://spring.io/blog/2025/05/20/spring-ai-1-0-GA-released)
 
 2025-05-20 00:00:00
 
 
 
-### [Spring-AI-1.0-GA-发布](https://spring.io/blog/2025/05/20/spring-ai-1-0-GA-released)
+### [Spring-AI-1.0-初探：构建您的首个应用](https://spring.io/blog/2025/05/20/your-first-spring-ai-1)
 
 2025-05-20 00:00:00
 
@@ -6956,25 +6962,19 @@
 
 
 
-### [【第-3500-期】🤖-如何让-Cursor-AI-Agent-始终遵守项目规范：使用自动规则生成技术](https://mp.weixin.qq.com/s/Po7MvT2DTUyzNsGpP1DQgQ)
-
-2025-04-29 00:00:00
-
-
-
 ### [打起来了！MCP-VS-A2A，谁才是-Agent-的未来事实标准？](https://mp.weixin.qq.com/s/NMPudKHInMfZtb8oBrMlZQ)
 
 2025-04-29 00:00:00
 
 
 
-### [BigQuery-DataFrames-2.0-深入解析](https://cloud.google.com/blog/products/data-analytics/a-closer-look-at-bigquery-dataframes-2-0/)
+### [【第-3500-期】🤖-如何让-Cursor-AI-Agent-始终遵守项目规范：使用自动规则生成技术](https://mp.weixin.qq.com/s/Po7MvT2DTUyzNsGpP1DQgQ)
 
-2025-04-28 00:00:00
+2025-04-29 00:00:00
 
 
 
-### [PayPal-Agent-工具包：通过-MCP-连接-AI-框架与支付-API](https://www.infoq.com/news/2025/04/paypal-mcp-ai-toolkit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [InfoQ-软件架构与设计趋势报告---2025](https://www.infoq.com/articles/architecture-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-28 00:00:00
 
@@ -6986,7 +6986,13 @@
 
 
 
-### [InfoQ-软件架构与设计趋势报告---2025](https://www.infoq.com/articles/architecture-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [PayPal-Agent-工具包：通过-MCP-连接-AI-框架与支付-API](https://www.infoq.com/news/2025/04/paypal-mcp-ai-toolkit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2025-04-28 00:00:00
+
+
+
+### [BigQuery-DataFrames-2.0-深入解析](https://cloud.google.com/blog/products/data-analytics/a-closer-look-at-bigquery-dataframes-2-0/)
 
 2025-04-28 00:00:00
 
@@ -7100,7 +7106,7 @@
 
 
 
-### [100-行代码讲透-MCP-原理](https://mp.weixin.qq.com/s/UM6PwoBGhRGvJbvUYggObw)
+### [Gemini-2.5-Flash：应用构建新起点](https://developers.googleblog.com/en/start-building-with-gemini-25-flash/)
 
 2025-04-17 00:00:00
 
@@ -7112,7 +7118,7 @@
 
 
 
-### [Gemini-2.5-Flash：应用构建新起点](https://developers.googleblog.com/en/start-building-with-gemini-25-flash/)
+### [100-行代码讲透-MCP-原理](https://mp.weixin.qq.com/s/UM6PwoBGhRGvJbvUYggObw)
 
 2025-04-17 00:00:00
 
@@ -7208,19 +7214,7 @@
 
 
 
-### [Vertex-AI-上的-Gemini-2.5：Pro、Flash-与模型优化器上线](https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-pro-flash-on-vertex-ai/)
-
-2025-04-09 00:00:00
-
-
-
-### [代理开发工具包：简化多智能体应用构建](https://developers.googleblog.com/en/agent-development-kit-easy-to-build-multi-agent-applications/)
-
-2025-04-09 00:00:00
-
-
-
-### [Vertex-AI：构建和管理多代理系统的利器](https://cloud.google.com/blog/products/ai-machine-learning/build-and-manage-multi-system-agents-with-vertex-ai/)
+### [重磅发布：Agent2Agent-A2A-协议，引领-AI-互操作新时代](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 2025-04-09 00:00:00
 
@@ -7232,7 +7226,19 @@
 
 
 
-### [重磅发布：Agent2Agent-A2A-协议，引领-AI-互操作新时代](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
+### [Vertex-AI：构建和管理多代理系统的利器](https://cloud.google.com/blog/products/ai-machine-learning/build-and-manage-multi-system-agents-with-vertex-ai/)
+
+2025-04-09 00:00:00
+
+
+
+### [代理开发工具包：简化多智能体应用构建](https://developers.googleblog.com/en/agent-development-kit-easy-to-build-multi-agent-applications/)
+
+2025-04-09 00:00:00
+
+
+
+### [Vertex-AI-上的-Gemini-2.5：Pro、Flash-与模型优化器上线](https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-pro-flash-on-vertex-ai/)
 
 2025-04-09 00:00:00
 
@@ -7256,13 +7262,13 @@
 
 
 
-### [AutoRAG：Cloudflare-全托管检索增强生成服务发布](https://blog.cloudflare.com/introducing-autorag-on-cloudflare/)
+### [Agent-技术解析：MCP、身份验证、授权与持久对象免费套餐](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/)
 
 2025-04-07 14:00:00
 
 
 
-### [Agent-技术解析：MCP、身份验证、授权与持久对象免费套餐](https://blog.cloudflare.com/building-ai-agents-with-mcp-authn-authz-and-durable-objects/)
+### [AutoRAG：Cloudflare-全托管检索增强生成服务发布](https://blog.cloudflare.com/introducing-autorag-on-cloudflare/)
 
 2025-04-07 14:00:00
 
@@ -7328,13 +7334,13 @@
 
 
 
-### [优化大语言模型部署：技巧、窍门与技术](https://www.infoq.com/presentations/model-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [JavaOne-2025-Day-3：Java-的未来由你塑造](https://www.infoq.com/news/2025/03/day-three-java-one-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-28 00:00:00
 
 
 
-### [JavaOne-2025-Day-3：Java-的未来由你塑造](https://www.infoq.com/news/2025/03/day-three-java-one-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [优化大语言模型部署：技巧、窍门与技术](https://www.infoq.com/presentations/model-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-28 00:00:00
 
@@ -7454,13 +7460,13 @@
 
 
 
-### [Gemma-3：Google-AI-Edge-赋能的移动和-Web-端应用](https://developers.googleblog.com/en/gemma-3-on-mobile-and-web-with-google-ai-edge/)
+### [Gemini-2.0-Flash-原生图像生成实验：开发者的新选择](https://developers.googleblog.com/en/experiment-with-gemini-20-flash-native-image-generation/)
 
 2025-03-12 00:00:00
 
 
 
-### [Gemini-2.0-Flash-原生图像生成实验：开发者的新选择](https://developers.googleblog.com/en/experiment-with-gemini-20-flash-native-image-generation/)
+### [Gemma-3：Google-AI-Edge-赋能的移动和-Web-端应用](https://developers.googleblog.com/en/gemma-3-on-mobile-and-web-with-google-ai-edge/)
 
 2025-03-12 00:00:00
 
@@ -7610,13 +7616,13 @@
 
 
 
-### [使用-Imagen-3-和-Gemini-创建品牌标志](https://cloud.google.com/blog/products/ai-machine-learning/build-a-brand-logo-with-imagen-3-and-gemini/)
+### [Imagen-3-登陆-Gemini-API](https://developers.googleblog.com/en/imagen-3-arrives-in-the-gemini-api/)
 
 2025-02-06 00:00:00
 
 
 
-### [Imagen-3-登陆-Gemini-API](https://developers.googleblog.com/en/imagen-3-arrives-in-the-gemini-api/)
+### [使用-Imagen-3-和-Gemini-创建品牌标志](https://cloud.google.com/blog/products/ai-machine-learning/build-a-brand-logo-with-imagen-3-and-gemini/)
 
 2025-02-06 00:00:00
 
@@ -11068,9 +11074,7 @@
 
 ### [形式化验证：终极适应度函数-—-LessWrong](https://www.lesswrong.com/posts/yFtcb6TLBKA8ob63K/formal-verification-the-ultimate-fitness-function)
 
-2026-03-18 22:59:53 | 标签: 形式化验证, 进化搜索, AI 安全, CryptOpt, 程序合成
-
-> 作者认为，形式化验证（程序正确性的数学证明）可以作为进化搜索的强大“适应度函数”，其性能远超自然选择和传统测试。通过将智能的发展史构建为一系列进化阶段，本文将由形式化验证支持的自动化搜索定位为下一个关键里程碑。文章重点介绍了作者在 “CryptOpt” 和 “Fiat Cryptography” 方面的工作作为概念验证，展示了形式化方法如何在确保正确性的同时优化代码。文章最后提出了一个“分工”模型：利用 LLM 进行创造性的生成任务，同时采用形式化验证作为严谨的、“按章办事”的裁判，确保只有安全、正确的变体被接受，从而弥合 AI 能力与安全性之间的鸿沟。
+2026-03-18 22:59:53
 
 
 
@@ -11100,9 +11104,7 @@
 
 ### [OpenClaw🦞养虾基建系列1：yt-dlp-可下载-1700-个网站视频的瑞士军刀](https://mp.weixin.qq.com/s?__biz=MzI2NzM4MTQwMg==&mid=2247494648&idx=1&sn=32ee969bf83a8237a568804a31b803a0)
 
-2026-03-18 10:38:00 | 标签: yt-dlp, AI Agent, 工作流自动化, CLI工具, Skill Engineering
-
-> 文章全面介绍了视频下载领域的“瑞士军刀” yt-dlp，详细阐述了其相比 youtube-dl 在维护节奏、下载速度、多线程处理及功能扩展（如 SponsorBlock、Cookie 导入）上的显著优势。作者不仅提供了详尽的工具使用指南和实战场景，更重要的是，结合其“OpenClaw”项目，提出了一套将复杂 CLI 工具转化为 AI Agent 可调用“Skill”的工程化方法论。通过标准化接口、错误分类、结构化输出及文档化交付，作者展示了如何将易碎的脚本转化为稳定、可复用的 AI 能力模块，为开发者提供了极具参考价值的 Agent 开发实践思路。
+2026-03-18 10:38:00
 
 
 
@@ -11144,9 +11146,7 @@
 
 ### [一个大脑控制所有机器人，真的可能吗？特斯拉、Skild-AI、Agility-激辩人形机器人的量产路线｜GTC-2026](https://mp.weixin.qq.com/s?__biz=Mzg4NDQwNTI0OQ==&mid=2247588996&idx=1&sn=8c3026e51fa023cd0bcd9ed8ee6f93d7)
 
-2026-03-18 07:50:00 | 标签: 人形机器人, GTC 2026, Physical AI, Sim-to-Real, 机器人工程
-
-> 文章记录了 GTC 2026 关于人形机器人量产的圆桌对话，汇集了特斯拉、Agility Robotics、Skild AI、Physical Intelligence 及 Hexagon Robotics 的核心技术负责人。讨论核心从“能否制造”转向“如何量产”。主要观点包括：1. 数据策略：真实世界数据是核心，但需结合仿真和人类视频进行预训练以补足规模；2. 仿真演进：仿真不仅是训练场，更是验证“Sim-to-Real”差距的工具，但无法完全替代真实环境；3. 架构之争：端到端“通用大脑”与分层/模块化架构各有优劣，前者追求泛化，后者更注重工程可靠性与安全性；4. 落地挑战：机器人进入物理...
+2026-03-18 07:50:00
 
 
 
@@ -11182,9 +11182,7 @@
 
 ### [Agent-搜索哪家强？人大高瓴&amp;快手联合发布全新评测基准-GISA](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247505330&idx=2&sn=b28eca861cc34c19a6648e67f020029a)
 
-2026-03-18 03:51:00 | 标签: AI Agent, Benchmark, 信息检索, RAG, 大模型评测
-
-> 本文介绍了由中国人民大学高瓴人工智能学院与快手联合推出的全新搜索智能体评测基准 GISA（General Information-Seeking Assistant）。文章首先剖析了当前主流基准测试存在的三个核心痛点：通过答案反推问题的“反向构造”导致任务失真、评估维度单一（缺乏深度与广度的结合）、以及静态答案易被模型记忆。GISA 通过人工设计 373 个高质量查询，引入结构化答案、深度与广度统一评估、动态更新机制及完整的人工搜索轨迹，构建了一个更贴近真实人类搜索场景的评测体系。实验结果显示，当前顶级模型在复杂信息收集任务上仍有显著差距，且模型表现出与人类截然不同的搜索行为模式（“多搜少看”...
+2026-03-18 03:51:00
 
 
 
@@ -32106,17 +32104,13 @@
 
 ### [【早说】编程智能体如何重塑工程、产品与设计](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278776&idx=1&sn=fc8c8fee0bc0af56ee63bb3660aa20e3)
 
-2026-03-19 01:02:00 | 标签: 编程智能体, 软件工程范式, EPD 协作, AI 辅助开发, 产品管理
-
-> 文章由 LangChain 创始人 Harrison Chase 撰写，深度分析了 AI 编程智能体对软件开发生命周期（SDLC）的颠覆性影响。作者指出，随着 AI 让代码生成变得廉价，传统的“PRD-设计-开发”瀑布流模式正在终结，取而代之的是以原型为核心的快速迭代。在这种新范式下，EPD（工程、产品、设计）的角色正在发生融合，专业人员将分化为独立利用 AI 交付的“构建者”和负责高层逻辑与架构把关的“评审者”。系统思维、产品感觉和 AI 协同能力将成为核心竞争力，通才的价值被无限放大。
+2026-03-19 01:02:00
 
 
 
 ### [从架构到代码：深入理解-OpenClaw-的双源记忆系统](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694887&idx=1&sn=192feccb73717c5ecbd3a2c886c9a5e8)
 
-2026-03-19 00:46:00 | 标签: AI Agent, OpenClaw, 记忆系统, RAG, SQLite
-
-> 文章针对 AI Agent 领域核心的“记忆”难题，深度拆解了 OpenClaw 的技术实现方案。作者首先界定了“上下文”与“记忆”的区别，指出记忆应是持久化、可搜索且低成本的结构化信息。核心架构采用“双源记忆”模式：动态记忆通过 JSONL 记录原始对话，静态记忆则通过 Markdown 存储提炼后的知识。文章重点介绍了 Memory Flush 自动化机制，即在上下文溢出前利用 LLM 提取持久记忆。在检索层面，OpenClaw 巧妙利用 SQLite 扩展（sqlite-vec 和 FTS5）实现了向量与关键词 7:3 的混合加权搜索。最后，文章客观分析了即便有记忆系统，Token 消耗...
+2026-03-19 00:46:00
 
 
 
@@ -32188,9 +32182,7 @@
 
 ### [创意绩效工程：2026-年-AI-驱动营销的战略框架](https://hackernoon.com/creative-performance-engineering-a-strategic-framework-for-ai-driven-marketing-in-2026?source=rss)
 
-2026-03-18 06:26:06 | 标签: AI 营销, 效果营销, 创意策略, 增长黑客, 创意绩效工程
-
-> 本文认为，在 AI 时代，生成内容的能力不再是竞争护城河，因为内容已经变得廉价且充裕。相反，成功的关键在于“创意绩效工程”——一种将广告视为可版本化、可测试资产的严谨方法。作者概述了一个生命周期（分析、假设、制作、测试、淘汰/扩展），并强调相比庞大的创意团队，建立“高清晰度系统”更为重要。文章强调了战略连贯性、管理“信任债务”（重复或误导性广告的隐性成本）以及扩展过程中的治理的重要性。文章最后总结道，效果营销的未来在于构建能够将创意充裕转化为严谨经济决策的系统，而不是仅仅生产更多内容。
+2026-03-18 06:26:06
 
 
 
@@ -45314,9 +45306,7 @@ http://antirez.com/news/162
 
 ### [中国-AI-创业者重登-GTC-舞台：杨植麟用技术语言讲了一个智能上限突破的浪漫故事｜甲子光年](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247551088&idx=1&sn=1bc28636ea58dfc7f176e21a992f74e0)
 
-2026-03-18 07:45:00 | 标签: Kimi, Moonshot AI, GTC 2026, 大模型架构, Muon优化器
-
-> 本文详细报道了月之暗面（Kimi）创始人杨植麟在 GTC 2026 上的技术演讲。杨植麟并未展示常规产品 Demo，而是深入剖析了 Kimi 在大模型训练与架构层面的三项核心创新：通过 Muon 优化器与 QK-Clipping 提升 Token 效率；利用 Kimi Linear（KDA）架构实现高效长上下文处理；以及通过强化学习训练的智能体集群（Agent Swarms）实现任务编排的泛化。此外，文章还介绍了前沿的“Attention Residuals”架构概念，旨在优化深层信息传递。Kimi 此次不仅开源了模型方法论，更将其定位为“基础设施级”的开源策略，旨在通过优化底层算法与架构，提...
+2026-03-18 07:45:00
 
 
 
@@ -59482,17 +59472,13 @@ http://antirez.com/news/162
 
 ### [Google-Labs-推出升级版“Stitch”-AI-设计画布](https://x.com/GoogleAI/status/2034332963811344738)
 
-2026-03-18 18:15:49 | 标签: Stitch, Google Labs, AI 设计, 前端开发, 多模态 AI
-
-> Google Labs 宣布“Stitch”迎来重大升级，正式转型为 AI 设计画布。主要更新包括：1) 重构了用户界面，支持多模态输入（文本、图像、代码）；2) 引入了具有上下文感知能力的设计智能体，支持反馈提供和 PRD（产品需求文档）生成；3) 新增了用于管理跨工具设计规则的“DESIGN.md”文件格式。此次更新旨在简化从概念到原型的转化过程。
+2026-03-18 18:15:49
 
 
 
 ### [MiniMax-正式发布-M2.7-模型](https://x.com/MiniMax_AI/status/2034315320337522881)
 
-2026-03-18 17:05:42 | 标签: MiniMax, M2.7, LLM, AgenticAI, SWE-Pro
-
-> MiniMax 宣布推出 M2.7 模型，其表现优于前代产品 M2.5，胜率达 88%。核心亮点包括生产级软件工程能力（SWE-Pro 得分 56.22%）、媲美 Sonnet 4.6 的先进智能体技能，以及对高保真 Office 文件编辑的支持。
+2026-03-18 17:05:42
 
 
 
