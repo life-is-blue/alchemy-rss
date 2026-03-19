@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-19 06:06:52 | [返回首页](/README.md)
+**更新时间**: 2026-03-19 08:10:51 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10031)
+- [AI & 大模型](#ai-llm) (10058)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (723)
-- [DevOps](#devops) (443)
+- [DevOps](#devops) (447)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (5072)
+- [其他](#other) (5086)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [MiniMax-M2.7:-开启模型的自我进化](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488138&idx=1&sn=666388509e4597a5ee8734fa0a556828) - AI 精选
 - [为什么-Anthropic-认为-AI-应该拥有自己的计算机——Claude-Cowork-和-Claude-Code-Desktop-的-Felix-Rieseberg](https://www.latent.space/p/felix-anthropic) - AI 精选
 - [Open-SWE：一个用于内部编码智能体的开源框架](https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/) - AI 精选
 - [认识-OpenViking：把文件系统式记忆与检索带入-OpenClaw-等-AI-代理系统的开源上下文数据库](https://www.marktechpost.com/2026/03/15/meet-openviking-an-open-source-context-database-that-brings-filesystem-based-memory-and-retrieval-to-ai-agent-systems-like-openclaw/) - AI 精选
@@ -41,9 +42,8 @@
 - [2026，写给-AI-创业者的慷慨、残酷、与迷雾](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649105819&idx=1&sn=a274929f8e170e2354d05c76982af40d) - AI 精选
 - [Anthropic-对阵美国政府，Nano-Banana-的蜕变，Frontier-智能体管理，以及更多内容...](https://www.deeplearning.ai/the-batch/issue-343) - AI 精选
 - [GPT-5.4：专业工作流进入“可执行时代”](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491663&idx=1&sn=b2e24b0c8c419ee8f5e05626a93d8c7c) - AI 精选
-- [GPT-5.4-发布：OpenAI-首个大一统模型，简直是龙虾原生](https://www.qbitai.com/2026/03/384345.html) - AI 精选
 
-- [查看全部 10031 篇...](/details/tags/ai-llm.md)
+- [查看全部 10058 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -128,7 +128,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 443 篇...](/details/tags/devops.md)
+- [查看全部 447 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -185,6 +185,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5072 篇...](/details/tags/other.md)
+- [查看全部 5086 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0523d8a4",
+  "title": "HubSpot 的 Sidekick：多模型 AI 代码审查，反馈速度提升 90%，工程师认可度达 80%",
+  "url": "https://www.infoq.com/news/2026/03/hubspot-ai-code-review-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 14:38:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>HubSpot engineers introduced <a href=\"https://product.hubspot.com/blog/automated-code-review-the-6-month-evolution\">Sidekick, an internal AI powered code review agent</a> designed to analyze pull request changes and provide automated feedback to developers. The system uses large language models to review code and post comments directly in repositories on GitHub. According to the engineering team, the tool reduced time-to-first-feedback on pull requests by approximately 90 percent while helping developers identify issues earlier in the review process.</p>\n   <p>Code review is essential in software development, but can be delayed when reviewers are unavailable. At HubSpot, engineers found that AI coding assistants sped up code creation, while manual reviews lagged. Sidekick provides immediate pull request feedback, letting human reviewers focus on architecture and higher-level design, improving efficiency and reducing review bottlenecks.&nbsp;</p>\n   <p>As <a href=\"https://www.linkedin.com/in/emily-n-adamss/\">Emily Adams</a> explained in a company blog post,</p>\n   <blockquote>\n    <p>What we found might surprise you: our AI code reviewer catches real issues, understands HubSpot‑specific context, and maintains a high signal to noise ratio, often leaving no comments at all.</p>\n   </blockquote>\n   <p>The first version of the system ran on an internal platform called <a href=\"https://product.hubspot.com/blog/cloud-coding-agents-at-hubspot\">Crucible</a>. Large language model agents operated in Kubernetes environments and interacted with GitHub repositories via the command line. The agents retrieved pull request changes and generated review comments using prompts to identify potential issues or improvements. While this approach demonstrated that LLMs could provide useful feedback, it introduced operational complexity. Each review required separate containerized workloads, increasing latency and infrastructure overhead, and limited control over agent interactions with developer tooling and internal services.</p>\n   <p>To address these limitations, the engineering team migrated the system to a Java based agent framework called Aviator. It integrates with HubSpot’s development platform, letting review agents run within existing services rather than isolated workloads. Aviator supports multiple model providers, including Anthropic, OpenAI, and Google, enabling experimentation and fallback options. Through RPC-based tool abstractions, agents retrieve repository context such as configuration settings and coding conventions, improving the relevance and accuracy of automated review comments.</p>\n   <p>A key challenge identified during deployment was feedback quality. Early versions produced verbose or overly positive comments considered noise. To address this, the team introduced a \" judge agent,\" which evaluates comments before posting them to pull request discussions. According to HubSpot engineers, this evaluator pattern reduced low-value comments and improved the signal-to-noise ratio. Developers can also react to automated comments, providing feedback that guides prompt adjustments and model selection. The system has recorded a consistent 80% thumbs-up rate from engineers, demonstrating strong adoption and trust.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/hubspot-ai-code-review-agent/news/2026/03/hubspot-ai-code-review-agent/en/resources/1judgeagent-1772995919417.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/hubspot-ai-code-review-agent/en/resources/1judgeagent-1772995919417.jpeg\" rel=\"share\"></p>\n   <p>Review Agent to Judge Agent evaluation loop (Source: <a href=\"https://product.hubspot.com/blog/automated-code-review-the-6-month-evolution\">HubSpot Blog Post</a>)</p>\n   <p><a href=\"https://www.linkedin.com/in/brian-l-577bb6114/\">Brian L,</a> VP of Engineering at HubSpot, noted on <a href=\"https://www.linkedin.com/posts/brian-l-577bb6114_my-team-has-been-running-an-ai-code-reviewer-share-7434306988441866240-L-gE?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn</a>:</p>\n   <blockquote>\n    <p>The most impactful change was adding a second agent to evaluate reviews before posting. The result: fewer, better, and more actionable comments. We knew we’d gotten it right when engineers started asking to see Sidekick’s feedback even before opening a PR.</p>\n   </blockquote>\n   <p>HubSpot engineers mention that future work includes adding persistent memory for review agents and expanding context retrieval across repositories to improve understanding of related code changes.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"HubSpot’s Sidekick: Multi-Model AI Code Review with 90% Faster Feedback and 80% Engineer Approval\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/hubspot-ai-code-review-agent/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773844680000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "HubSpot 的 AI 智能体“Sidekick”利用多模型架构和“评判智能体”（Judge Agent）模式，将代码审查速度提升了 90%，确保提供高质量、可操作的反馈。",
+  "oneSentenceSummary": "HubSpot 的 AI 智能体“Sidekick”利用多模型架构和“评判智能体”（Judge Agent）模式，将代码审查速度提升了 90%，确保提供高质量、可操作的反馈。",
+  "summary": "HubSpot 开发了 Sidekick，这是一个内部 AI 代码审查智能体，旨在消除 Pull Request（PR）流程中的瓶颈。虽然 AI 编码助手加快了代码编写速度，但人工审查往往滞后；Sidekick 通过提供近乎即时的反馈解决了这一问题。该系统从复杂的基于 Kubernetes 的设置演变为名为 Aviator 的精简 Java 框架，支持 Claude、GPT-4 和 Gemini 等多种 LLM。一项关键创新是“评判智能体”模式，它能在反馈到达开发者之前过滤掉冗长或低价值的评论。这种方法使反馈延迟降低了 90%，工程师认可度达到 80%，使人类审查者能够专注于高层架构，而不是语法或琐碎的 Bug。",
+  "mainPoints": [
+    {
+      "point": "“评判智能体”模式对于在 AI 审查中保持高信噪比至关重要。",
+      "explanation": "通过引入第二个 LLM 来评估和过滤主要智能体的评论，HubSpot 成功减少了“噪音”（即冗长或过于客套的反馈），确保只向开发者呈现可操作且有价值的见解。"
+    },
+    {
+      "point": "将 AI 智能体集成到现有的开发框架中可以降低运营复杂性和延迟。",
+      "explanation": "从孤立的基于 Kubernetes 的工作负载迁移到“Aviator”Java 框架，使审查智能体能够通过基于 RPC 的工具访问代码库上下文，从而显著提高了评论的相关性，同时降低了基础设施开销。"
+    },
+    {
+      "point": "AI 辅助代码审查使人类工程师能够专注于更高级别的架构设计。",
+      "explanation": "Sidekick 处理关于编码规范和潜在 Bug 的即时反馈，使人类审查者从例行检查中解放出来，从而有更多时间专注于复杂的系统设计和长期可维护性。"
+    },
+    {
+      "point": "多模型方法提供了灵活性和针对特定模型局限性的弹性。",
+      "explanation": "通过支持 Anthropic、OpenAI 和 Google 等提供商，HubSpot 可以针对特定任务试验不同的模型并保留备选方案，确保系统保持稳健且具有成本效益。"
+    }
+  ],
+  "keyQuotes": [
+    "我们的 AI 代码审查员能发现实际问题，理解 HubSpot 特定的上下文，并保持高信噪比，通常情况下甚至不会留下任何评论。",
+    "最具影响力的改变是增加了一个第二个智能体，在发布前评估审查结果。结果是：评论更少、质量更高、更具可操作性。",
+    "当我们发现工程师开始在提交 PR 之前就主动要求查看 Sidekick 的反馈时，我们就知道我们做对了。",
+    "该工具将 Pull Request 的首次反馈时间缩短了约 90%，同时帮助开发者更早地识别问题。"
+  ],
+  "tags": [
+    "AI 代码审查",
+    "LLM 智能体",
+    "软件工程",
+    "开发者生产力",
+    "多智能体系统"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 490,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773844680000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 14:38:00"
+}

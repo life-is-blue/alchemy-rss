@@ -1,0 +1,63 @@
+{
+  "id": "RAW_e36ebac9",
+  "title": "QCon London 2026：利用 OpenTelemetry 疏通队列瓶颈",
+  "url": "https://www.infoq.com/news/2026/03/queue-otel-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 07:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>A customer backup job running an hour late on a Friday evening should have been straightforward to diagnose. For engineers at Gearset, it wasn't.</p>\n   <p>Despite comprehensive dashboards, metrics, and logs, the team found themselves guessing at root causes rather than identifying them. Metrics showed the forest but not the trees; logs showed individual trees but made it nearly impossible to trace a path between them.</p>\n   <p>During their QCon London 2026 presentation, Julian Wreford and Oli Lane from Gearset explained how distributed tracing with OpenTelemetry filled that gap. Tracing provides a hierarchical structure that groups events from a single operation, offering visibility into cause and effect across service boundaries. While HTTP tracing often works automatically, queues require custom work to maintain context. The team implemented OpenTelemetry's context propagation standard by creating wrappers for their queue clients, attaching trace IDs and parent span IDs as message metadata ensuring the full journey of a request remained intact.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/queue-otel-observability/news/2026/03/queue-otel-observability/en/resources/1Traces-1773741088971.jpeg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/queue-otel-observability/en/resources/1Traces-1773741088971.jpeg\" rel=\"share\"></p>\n   <p>A central theme of the transition involved moving away from infrastructure metrics toward Service Level Objectives (SLOs) based on customer experience. The speakers used a traffic analogy to explain why alerting on queue size is often misleading. Just as Google Maps alerts drivers based on expected delay rather than the number of cars on the road, the Gearset team shifted to alerting on latency. They noted that a thousand items on a queue might be processed instantly, while five items could be significantly delayed. Latency is more stable and directly reflects the customer experience, reducing the need for constant re-tuning as system characteristics change.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/queue-otel-observability/news/2026/03/queue-otel-observability/en/resources/1GoogleMaps-1773741088971.jpeg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/queue-otel-observability/en/resources/1GoogleMaps-1773741088971.jpeg\" rel=\"share\"></p>\n   <p>To implement this strategy, the team adopted a three-step framework: define the Service Level Indicator (SLI), set the SLO, and then configure alerts.</p>\n   <p>They bucketed events into good or bad categories, such as whether a message was processed within two seconds, and defined an error budget for a target of 99.9% success. Once an alert fires, engineers can jump directly from a macro visualisation of the distribution to specific problem traces. The team shared a specific implementation trick for tracking total duration in asynchronous traces by using OpenTelemetry's trace state to embed and propagate the root span's start timestamp. This allows for calculating the time since the trace began for any child span, regardless of how many queues or services it has traversed.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/queue-otel-observability/news/2026/03/queue-otel-observability/en/resources/1SLO-1773741088971.jpeg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/queue-otel-observability/en/resources/1SLO-1773741088971.jpeg\" rel=\"share\"></p>\n   <p>The adoption of \"wide events\", which involves attaching as much metadata as possible to spans, unlocked discovery-based debugging. By including created, sent, and received timestamps, with FIFO subgroup IDs, the team could query attributes in real time to discover hidden waste. In one instance, they identified a long-standing bottleneck caused by an obsolete piece of code that was easily removed. The Gearset engineers also highlighted the role of the OpenTelemetry Collector, which they use to automatically enrich traces with Kubernetes metadata and scrub sensitive data before it reaches their query engine.</p>\n   <p>While the technical implementation was significant, the speakers emphasised that cultural change was the most challenging aspect. The speakers recommended engaging with teams on their own terms and proving the value of tracing through the resolution of real-world incidents, avoiding the pitfall of promoting the technology as a universal cure for all operational problems. When engineers see the tangible benefits of discovery-based debugging, such as splitting \"mega traces\" into navigable sub-traces using trace links, they naturally begin to enrich their own spans, turning observability from a top-down mandate into a self-reinforcing practice.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Uncorking Queueing Bottlenecks with OpenTelemetry\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/queue-otel-observability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773817200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文探讨了 Gearset 的工程师如何利用 OpenTelemetry 和分布式追踪技术，通过从基础设施指标转向基于延迟的 SLO，解决了复杂的异步队列瓶颈问题。",
+  "oneSentenceSummary": "本文探讨了 Gearset 的工程师如何利用 OpenTelemetry 和分布式追踪技术，通过从基础设施指标转向基于延迟的 SLO，解决了复杂的异步队列瓶颈问题。",
+  "summary": "本文总结了 Gearset 工程师在 QCon London 2026 上的一次演讲，内容关于如何克服分布式系统中传统日志和指标的局限性。当标准仪表板无法诊断备份作业延迟问题时，团队引入了 OpenTelemetry (OTel) 来提供跨服务边界的层级化可见性。关键技术策略包括：为队列客户端创建自定义包装器以确保上下文传播，采用包含丰富元数据的“宽事件 (wide events)”进行基于发现的调试，以及利用 OTel 的追踪状态来跟踪异步工作流中的总持续时间。至关重要的是，团队将告警理念从以基础设施为中心的指标（如队列大小）转向了基于延迟的以客户为中心的 SLO，他们认为延迟比数据量更能稳定地反映用户体验。",
+  "mainPoints": [
+    {
+      "point": "分布式追踪弥合了宏观指标与离散日志之间的可见性鸿沟。",
+      "explanation": "指标展示了系统范围的趋势，日志捕获了单个事件，而追踪提供了必要的层级结构，将来自同一操作的事件分组，使工程师能够跨服务边界查看因果关系。"
+    },
+    {
+      "point": "有效的队列可观测性需要自定义的上下文传播标准。",
+      "explanation": "与通常会自动追踪的 HTTP 调用不同，队列需要人工干预。Gearset 实现了包装器，将追踪 ID 和父级 Span ID 作为消息元数据附加，确保请求在异步跳转过程中保持完整。"
+    },
+    {
+      "point": "告警应优先考虑面向客户的延迟，而非队列大小等内部基础设施指标。",
+      "explanation": "作者用交通类比指出，队列大小具有误导性；五个项目可能很慢，而一千个项目可能很快。延迟是一个更稳定的服务水平指标 (SLI)，能直接反映实际的用户体验。"
+    },
+    {
+      "point": "采用带有丰富元数据的“宽事件”可以实现针对隐藏瓶颈的基于发现的调试。",
+      "explanation": "通过在 Span 中附加大量的元数据（时间戳、子组 ID、Kubernetes 上下文），团队可以实时查询属性，从而发现传统监控无法察觉的低效问题，例如废弃的代码路径。"
+    },
+    {
+      "point": "可观测性的文化变革最好通过在真实事故中证明其价值来实现。",
+      "explanation": "可观测性不应是自上而下的指令，当工程师看到切实的收益（例如使用追踪链接导航“超大追踪”并快速解决长期存在的生产问题）时，它会成为一种自我强化的实践。"
+    }
+  ],
+  "keyQuotes": [
+    "指标展示了森林却看不见树木；日志展示了单棵树木，却几乎无法追踪它们之间的路径。",
+    "就像谷歌地图根据预期延迟而非道路上的车辆数量来提醒司机一样，Gearset 团队转向了基于延迟的告警。",
+    "延迟更稳定，能直接反映客户体验，减少了随着系统特性变化而不断进行重新调整的需求。",
+    "采用“宽事件”（即在 Span 中尽可能多地附加元数据）解锁了基于发现的调试。",
+    "当工程师看到基于发现的调试带来的切实好处时……他们会自然地开始丰富自己的 Span，将可观测性从自上而下的指令转变为一种自我强化的实践。"
+  ],
+  "tags": [
+    "OpenTelemetry",
+    "分布式追踪",
+    "可观测性",
+    "队列系统",
+    "SLO/SLI"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 83,
+  "wordCount": 564,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773817200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 07:00:00"
+}

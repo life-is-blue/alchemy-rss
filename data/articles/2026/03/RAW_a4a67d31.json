@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a4a67d31",
+  "title": "QCon London 2026：持续重写 Spotify 的全部代码库",
+  "url": "https://www.infoq.com/news/2026/03/spotify-honk-rewrite/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 15:02:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/presentation/mar2026/rewriting-all-spotifys-code-base-all-time\">QCon London 2026</a>, Jo Kelly-Fenton and Aleksandar Mitic from Spotify presented how the company is using an internal AI-powered coding agent called Honk to perform continuous, large-scale code migrations across its entire codebase, achieving 1,000 merged pull requests every 10 days.</p>\n   <p>The <a href=\"https://qconlondon.com/presentation/mar2026/rewriting-all-spotifys-code-base-all-time\">presentation</a>, titled \"Rewriting All of Spotify's Code Base, All the Time,\" explored the evolution from Spotify's existing <a href=\"https://engineering.atspotify.com/2023/04/spotifys-shift-to-a-fleet-first-mindset-part-1\">Fleet Management system</a> to an LLM-driven approach that addresses the long tail of complex migrations that deterministic scripts could not resolve. The speakers noted that developers spend little time actually writing code, citing research suggesting engineers average just 52 minutes of coding per day, with the remainder consumed by meetings and maintenance tasks.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/spotify-honk-rewrite/news/2026/03/spotify-honk-rewrite/en/resources/1spotify1-1773836086045.jpeg\" style=\"width: 600px; height: 373px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/spotify-honk-rewrite/en/resources/1spotify1-1773836086045.jpeg\" rel=\"share\"></p>\n   <p>Spotify's Fleet Management philosophy places responsibility on library owners to migrate all consumers to the latest version. Before Honk, automated scripts could transform code and create pull requests across thousands of repositories, reducing migration timelines from nearly a year to under a week for 70% of the fleet. However, the remaining 30% proved extremely difficult due to edge cases and complexity, leaving incomplete migrations that increased codebase diversity.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/spotify-honk-rewrite/news/2026/03/spotify-honk-rewrite/en/resources/1IMG_2240-1773836086045.jpeg\" style=\"width: 600px; height: 423px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/spotify-honk-rewrite/en/resources/1IMG_2240-1773836086045.jpeg\" rel=\"share\"></p>\n   <p>Honk was born from the idea of replacing these deterministic scripts with LLMs that could better handle edge cases. The team quickly realised they needed to package the entire software development process, including requirements, code generation, building, testing, and iteration.</p>\n   <p>Early challenges revealed that agents would take shortcuts to make builds pass, such as commenting out failing tests or downgrading Java versions. The team initially implemented an \"LLM as judge\" to evaluate whether generated code addressed the original requirements, but found it too rigid, blocking valid changes. As models improved, the judge was eventually removed, with verification steps in prompts proving sufficient.</p>\n   <p>Scaling to hundreds of repositories introduced infrastructure challenges, including missing credentials, Docker requirements, and the inability to run iOS builds on Linux machines. A critical architectural decision was to separate the agent runtime from the verification runtime. Honk now pushes branches to GitHub, triggers builds via a verification service that abstracts CI systems, waits for results, and only creates pull requests after full validation.</p>\n   <p>A hack week integration with Slack proved transformative. Developers wanted to act on work directly from where it was discussed, initiating code changes from Slack threads containing dashboards, logs, and Jira links. This evolved into a \"code from anywhere\" approach, with an exposed API enabling integrations from any surface.</p>\n   <p>The scale of output has grown significantly. Six months ago, Honk achieved 1,000 merged pull requests in three months. Today, that same volume is reached in just 10 days. The speakers noted this shift has made PR review, not code generation, the new bottleneck, drawing a parallel to aviation where pilots monitoring automated systems perform the hardest job.</p>\n   <p>To address the review challenge, the team outlined three strategies. First, a culture shift around review expectations, including allowing migration drivers to approve their own PRs and closing stale pull requests. Second, tooling improvements such as a PR inbox that helps prioritise reviews and potential auto-merging for documentation changes. Third, and most significantly, codebase standardisation.</p>\n   <p>The speakers argued that a diverse codebase produces a diverse set of problems, leading to complex prompts filled with conditional logic. Their standardisation strategy involves advisory boards making technology decisions, using Honk to drive existing migrations to 100% completion, and enforcing standards through monorepos with linting. This creates what the speakers described as a cycle: standardisation leads to more correct agent code, which enables easier review, which increases code capacity, which drives further standardisation.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/spotify-honk-rewrite/news/2026/03/spotify-honk-rewrite/en/resources/1IMG_2293-1773836086045.jpeg\" style=\"width: 600px; height: 369px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/spotify-honk-rewrite/en/resources/1IMG_2293-1773836086045.jpeg\" rel=\"share\"></p>\n   <p>Spotify has published a <a href=\"https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1\">three-part engineering blog series</a> detailing Honk's development, covering the agent's journey.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Rewriting All of Spotify's Code Base, All the Time\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/spotify-honk-rewrite/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773846120000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Spotify 利用名为“Honk”的 AI 智能体实现大规模代码库迁移自动化，每 10 天合并 1，000 个 PR，将工程瓶颈从编码转移到了代码审查环节。",
+  "oneSentenceSummary": "Spotify 利用名为“Honk”的 AI 智能体实现大规模代码库迁移自动化，每 10 天合并 1，000 个 PR，将工程瓶颈从编码转移到了代码审查环节。",
+  "summary": "在 QCon London 2026 大会上，Spotify 展示了“Honk”，这是一个内部 AI 编程智能体，旨在处理传统确定性脚本无法解决的复杂、大规模代码迁移任务。虽然 Spotify 此前的“车队管理”（Fleet Management）系统实现了 70% 的迁移自动化，但 Honk 通过将整个开发生命周期（需求、生成和测试）封装到 LLM 驱动的工作流中，解决了剩余 30% 的棘手边缘案例。该系统已实现显著扩展，合并 PR 的产出从三个月 1，000 个提升至每 10 天 1，000 个。这种海量的自动化代码涌入，已将主要的工程瓶颈转移到了 PR 审查环节。为应对这一挑战，Spotify 正在实施代码库标准化的“良性循环”：更统一的代码能带来更高的 AI 准确性、更轻松的人工审查，并提升进一步减少技术债务的能力。",
+  "mainPoints": [
+    {
+      "point": "LLM 智能体解决了脚本无法处理的复杂代码迁移的“长尾”问题。",
+      "explanation": "虽然确定性脚本可以管理 70% 的全舰队更新，但 Honk 利用 LLM 来处理剩余 30% 的复杂边缘案例，确保迁移完成率达到 100%，并降低代码库的多样性。"
+    },
+    {
+      "point": "将智能体运行时与验证运行时分离，对于实现可靠的 AI 驱动扩展至关重要。",
+      "explanation": "Honk 将代码推送到 GitHub，并通过单独的验证服务触发构建，从而抽象出 CI 的复杂性，确保只有经过完全验证的代码才会生成 PR。"
+    },
+    {
+      "point": "工程瓶颈已从代码生成转移到了 PR 审查。",
+      "explanation": "随着 AI 智能体以空前的速度生成代码，人类的角色演变为监控自动化系统的“飞行员”，使得 PR 审查成为整个流程中最耗时且最关键的部分。"
+    },
+    {
+      "point": "代码库标准化为 AI 辅助工程创造了良性循环。",
+      "explanation": "标准化的代码降低了提示词（Prompt）的复杂性和条件逻辑，从而带来更准确的 AI 输出，这简化了人工审查，并支持更快、更全面的迁移。"
+    }
+  ],
+  "keyQuotes": [
+    "持续重写 Spotify 的全部代码库。",
+    "六个月前，Honk 在三个月内合并了 1，000 个 PR。如今，同样的数量只需 10 天即可达成。",
+    "PR 审查而非代码生成，成为了新的瓶颈。这类似于航空业，飞行员监控自动化系统反而是在执行最艰巨的任务。",
+    "标准化带来了更正确的智能体代码，从而使审查更容易，进而提高了代码处理能力，并推动了进一步的标准化。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "LLMOps",
+    "软件维护",
+    "代码迁移",
+    "工程生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 598,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773846120000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 15:02:00"
+}

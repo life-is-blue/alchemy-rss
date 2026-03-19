@@ -1,0 +1,58 @@
+{
+  "id": "RAW_90290c96",
+  "title": "伊朗境内的战争导致多个 AWS 数据中心受损，挑战了 Multi-AZ 的假设",
+  "url": "https://www.infoq.com/news/2026/03/aws-multiaz-conflict-outage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 08:17:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Earlier this month, Iranian drone strikes damaged three AWS data centers in the UAE and Bahrain, causing outages and disruptions to multiple services. The events, which affected multiple facilities within the same AWS region, sparked discussion in the community about how geopolitical conflict can directly impact global cloud infrastructure and multi-AZ deployments.</p>\n   <p>Soon after the war with Iran started, multiple drones damaged AWS data centers in the Middle East. In the late hours of March 1st, Iranian drone strikes hit three AWS data centers in the UAE and Bahrain, spanning different AZs. The cloud provider <a href=\"https://health.aws.amazon.com/health/status\">acknowledged</a>:</p>\n   <blockquote>\n    <p>In the ME-CENTRAL-1 (UAE) Region, two of our three Availability Zones (mec1-az2 and mec1-az3) remain significantly impaired. The third Availability Zone (mec1-az1) continues to operate normally, though some services have experienced indirect impact due to dependencies on the affected zones. In the ME-SOUTH-1 (Bahrain) Region, one facility has been impacted.</p>\n   </blockquote>\n   <p>While one AZ remained operational in the UAE region, the region itself was disrupted as key functionalities and databases depending on redundancy and capacity across multiple data centers became severely impaired or degraded.</p>\n   <p>AWS defines a <a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regions_az/\">region</a> as a minimum of three isolated, physically separate AZs within a geographic area. AZs are by design separated by a meaningful distance, far enough that a natural disaster affecting one is unlikely to affect another, but must remain within 100 km of each other to keep latency low between data centers inside the region. While the cloud provider claims that architecting across multiple AZs protects from \"power outages, lightning strikes, tornadoes, earthquakes, and more\", the model had not previously been tested in conflict zones.</p>\n   <p>A popular joke among practitioners had always been that a meteor strike would be required to take out an entire region, but a few drones suddenly seemed a more concrete risk, raising discussions that <a href=\"https://www.linkedin.com/posts/coquinn_i-need-to-be-very-clear-upfront-people-are-share-7435082961915478017-U4zo\">many had misunderstood single-region deployments</a>. Amazon reached out to customers with different notifications, including those with data in the Bahrain region, where the majority of AZs remained available, writing:</p>\n   <blockquote>\n    <p>Due to active conflict, we recommend that customers with data in the Bahrain (ME-SOUTH-1) Region take steps to replicate critical data to other AWS Regions. AWS infrastructure is designed to be highly resilient, but given the uncertainty of the current situation, we encourage our customers to replicate Amazon S3 data from the ME-SOUTH-1 Region to another AWS Region.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/harshwardhan-choudhary/\">Harshwardhan Choudhary</a>, release and deployment consultant at ABN AMRO Clearing Bank, comments:</p>\n   <blockquote>\n    <p>This is the first documented wartime kinetic attack on a major hyperscaler data center — and it's a wake-up call for every cloud architect (...) Multi-AZ is NOT disaster recovery. It protects you from hardware failures, not a missile hitting an entire availability zone cluster in the same city.</p>\n   </blockquote>\n   <p>Customers with workloads running in the Middle East were advised to activate their disaster recovery plans, restore systems using remote backups stored in other regions, and reroute application traffic away from the affected areas. A timeline for the full recovery of the affected data centers has not been provided. AWS writes:</p>\n   <blockquote>\n    <p>Even as we work to restore these facilities, the ongoing conflict in the region means that the broader operating environment in the Middle East remains unpredictable. We strongly recommend that customers with workloads running in the Middle East take action now to migrate those workloads to alternate AWS Regions (...) we recommend considering AWS Regions in the United States, Europe, or Asia Pacific, as appropriate for your latency and data residency requirements.</p>\n   </blockquote>\n   <p>Gregor Hohpe, co-author of Enterprise Integration Patterns and author of The Software Architect Elevator, <a href=\"https://www.linkedin.com/posts/ghohpe_multicloud-regional-automation-share-7436324539875319808-zqxc\">argues</a> that multi-cloud is not the solution:</p>\n   <blockquote>\n    <p>The risk is regional, not tied to a provider. The folks who took out ME-CENTRAL can just as easily take out Azure or any other data center. So, the mitigation is reducing your regional exposure, not your vendor exposure (unless you like to play provider Whac-a-mole) (...) A lot of organizations still haven't lived up to the fact that the cloud requires a different operating model. They still think resilience can be achieved through procurement or infrastructure.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/pulse/lessons-from-uae-aws-outage-regulated-entities-paul-barrett-hffmf/\">Paul Barrett</a>, head of disaster recovery at Pay10 Global in Dubai, wrote about <a href=\"https://www.linkedin.com/pulse/lessons-from-uae-aws-outage-regulated-entities-paul-barrett-hffmf/\">lessons from the UAE AWS outage for regulated entities</a>. Mohamed Radwan, senior cloud architect at T-Systems International, <a href=\"https://www.linkedin.com/posts/maradwan_aws-cloudsecurity-dataresidency-share-7434562600039763968-yqiT\">warns</a>:</p>\n   <blockquote>\n    <p>Data residency isn't just a best practice, it's the law. Moving workloads to other regions during a crisis might bring services back online, but it risks moving sensitive data outside national borders.</p>\n   </blockquote>\n   <p>Third-party companies, such as <a href=\"https://www.infoq.com/news/2026/03/aws-multiaz-conflict-outage/MariaDB\">MariaDB</a>, have documented how they handled the migration of data out of the Middle East regions. AWS customers affected by the events and in need of further assistance were invited to contact AWS Support directly.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"War in Iran Damages Multiple AWS Data Centers, Challenging Multi-AZ Assumptions\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/aws-multiaz-conflict-outage/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773821820000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文分析了中东地区 AWS 数据中心遭受的无人机袭击如何暴露了 Multi-AZ 架构的局限性，并指出有必要转向多区域灾难恢复策略。",
+  "oneSentenceSummary": "本文分析了中东地区 AWS 数据中心遭受的无人机袭击如何暴露了 Multi-AZ 架构的局限性，并指出有必要转向多区域灾难恢复策略。",
+  "summary": "本文报道了 2026 年 3 月伊朗无人机袭击导致阿联酋和巴林 AWS 基础设施遭受的重大中断。此次事件标志着针对大型超大规模云服务商数据中心的首次有记录的动能攻击，袭击同时击中了同一区域内的多个可用区（AZ）。虽然 AWS 的 AZ 在物理上是分离的，以抵御自然灾害，但它们之间的距离（通常在 100 公里以内）使其在现代区域冲突中显得脆弱。这一事件在云架构师中引发了激烈的辩论：专家认为，Multi-AZ 部署虽然能针对硬件故障提供高可用性，但无法作为应对区域性灾难的灾难恢复（DR）解决方案。共识建议，企业必须优先考虑多区域策略而非多云采购，以降低区域风险，同时在紧急迁移过程中应对数据驻留带来的复杂法律挑战。",
+  "mainPoints": [
+    {
+      "point": "动能战争挑战了云可用区（Availability Zones）基本的物理隔离假设。",
+      "explanation": "AWS 的 AZ 设计得足够远以抵御自然灾害，但又足够近以保持低延迟（100 公里以内），而现代军事打击可以轻易跨越这一距离，从而同时影响整个区域。"
+    },
+    {
+      "point": "在高风险场景下，必须将 Multi-AZ 架构与真正的灾难恢复（DR）区分开来。",
+      "explanation": "虽然 Multi-AZ 可以防止局部的硬件或电力故障，但对于战争等区域性威胁来说是不够的；在这些情况下，真正的弹性需要跨越地理上遥远的区域复制数据和工作负载。"
+    },
+    {
+      "point": "地缘政治风险主要是区域性的，而非特定于供应商的，因此多区域策略优于多云策略。",
+      "explanation": "专家认为，由于动能威胁针对的是物理位置，在同一地理区域内切换供应商（多云）无法提供保护；解决方案是通过跨区域自动化来降低区域风险敞口。"
+    },
+    {
+      "point": "数据驻留法律是紧急跨区域工作负载迁移的重大障碍。",
+      "explanation": "为了维持服务正常运行而将敏感数据迁移到美国或欧洲的其他区域，可能会无意中违反国家数据主权法律，从而在业务连续性和法律合规性之间产生冲突。"
+    }
+  ],
+  "keyQuotes": [
+    "Multi-AZ 不是灾难恢复。它能保护你免受硬件故障的影响，但无法抵御导弹击中同一城市内的整个可用区集群。",
+    "风险是区域性的，而不是与某个供应商挂钩的。那些摧毁了 ME-CENTRAL 的人同样可以轻易地摧毁 Azure 或任何其他数据中心。",
+    "数据驻留不仅仅是最佳实践，更是法律。在危机期间将工作负载迁移到其他区域可能会使服务恢复在线，但这也冒着将敏感数据移出国界的风险。",
+    "从业者中一直流传着一个笑话，说需要陨石撞击才能摧毁整个区域，但几架无人机突然看起来成了更具体的风险。"
+  ],
+  "tags": [
+    "AWS",
+    "云基础设施",
+    "灾难恢复",
+    "Multi-AZ",
+    "多区域"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 772,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773821820000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 08:17:00"
+}

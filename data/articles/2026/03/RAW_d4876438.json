@@ -1,0 +1,59 @@
+{
+  "id": "RAW_d4876438",
+  "title": "QCon London 2026：Use<’lifetimes> For<’what>",
+  "url": "https://www.infoq.com/news/2026/03/rust-lifetimes-loans-polonius/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 10:11:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.linkedin.com/in/efunb/\">Ethan Brierley</a>, a senior engineer at TrueLayer and co-organiser of <a href=\"https://www.meetup.com/rust-london-user-group/\">Rust London</a>, presented at QCon London 2026 to reframe one of the language's most misunderstood features. Rather than explaining lifetimes through the traditional lens of scopes and regions of code, Brierley built his entire talk around an alternative mental model drawn from <a href=\"https://github.com/rust-lang/polonius\">Polonius</a>, an experimental <a href=\"https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html\">borrow checker</a> that treats lifetimes as sets of loans.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/rust-lifetimes-loans-polonius/news/2026/03/rust-lifetimes-loans-polonius/en/resources/1Magic-1773681720463.jpg\" style=\"width: 600px; height: 283px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/rust-lifetimes-loans-polonius/en/resources/1Magic-1773681720463.jpg\" rel=\"share\"></p>\n   <p>The shift sounds subtle, but it changes how you reason about a surprising number of lifetime puzzles. In the standard model, a lifetime is the stretch of code during which a reference is valid. In the Polonius model, a lifetime instead tracks all the possible places a reference might have originated. Each origin is a \"<em>loan</em>,\" and loans carry terms that must not be violated while the reference is alive. Borrow checking then becomes a line-by-line exercise: figure out which loans are live at each point, and check whether anything on that line violates their terms.</p>\n   <p>Brierley walked through a <a href=\"https://users.rust-lang.org/t/yet-another-fight-with-the-borrow-checker/131372\">classic borrow checker error</a>, mutating a variable while a shared reference to it still exists, and showed how the loans perspective makes the rejection obvious. The variable Y borrows from X, creating a loan. Y is still live when X gets mutated on the next line. The loan's terms are violated. Error found. He compared the two mental models to solving a maze: you can think about the pathways through it, or the walls. Both get you to the same answer, but focusing on the walls can unlock understanding that the pathway view doesn't.</p>\n   <p>From there, he built upward through lifetime parameters, subtyping, and variance. The longest function, a staple of Rust teaching, served as his running example. If a function returns one of two string slices, the output lifetime must be the union of both input lifetimes. That union relationship implies a subset relationship, which is where Rust's outlives syntax comes from. Brierley reframed 'a: 'out not as \"<em>A lives longer than out</em>\" but as \"<em>A is inside out, because it contains fewer loans.</em>\"</p>\n   <p>Variance got the most careful treatment. Brierley explained that shared references are covariant loans that can always be added to their lifetimes. Function pointer arguments are contravariant, he stated, meaning loans can be removed. But references behind mutable references are invariant, the loan set is locked. Brierley demonstrated why with a worked example that would compile into a use-after-free if mutable references weren't invariant over their type parameter. He noted that when you see a struct with multiple lifetime parameters, it's almost always because those lifetimes have different variance, and collapsing them into one would force invariance across the board.</p>\n   <p>The talk wrapped with higher-ranked lifetimes, using <a href=\"https://serde.rs/\">serde</a>'s Deserialize trait as the motivating example. When you write a function that takes an owned String, creates a slice from it, and passes that slice to serde_json::from_str, the lifetime of that slice can't be named in the function signature; it originates inside the function body. The solution is for&lt;'de&gt;, which says the type must implement Deserialize for every possible lifetime. Brierley showed how serde's DeserializeOwned trait is just sugar on top of that higher-ranked bound, cleaning up a signature that would otherwise frighten people away from the crate.</p>\n   <p>Asked during Q&amp;A about the Rust compiler's roadmap, Brierley explained that Polonius is still under active development and not yet the default borrow checker. But when it lands, it will accept programs that are currently rejected, despite being memory-safe, lending iterators being the canonical example. The goal is to expand the set of correct programs the compiler accepts, not to change the safety guarantees. A second audience member drew a parallel between lifetimes and sets of loans, and between types and sets of values. Brierley paused on that one, admitted he hadn't considered it before, and speculated the relationship might actually run in the opposite direction.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Use&lt;’lifetimes&gt; For&lt;’what&gt;\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/rust-lifetimes-loans-polonius/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773828660000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Ethan Brierley 利用 Polonius 模型重构了 Rust 生命周期，将视角从代码区域转变为“借用集合”（sets of loans），从而简化了方差（variance）和高阶生命周期（higher-ranked lifetimes）等复杂概念。",
+  "oneSentenceSummary": "Ethan Brierley 利用 Polonius 模型重构了 Rust 生命周期，将视角从代码区域转变为“借用集合”（sets of loans），从而简化了方差（variance）和高阶生命周期（higher-ranked lifetimes）等复杂概念。",
+  "summary": "本文总结了 Ethan Brierley 在 QCon London 2026 上发表的演讲，介绍了一种关于 Rust 生命周期的变革性思维模型。Brierley 没有采用将生命周期视为代码作用域或区域的传统观点，而是引入了 Polonius 模型，将生命周期视为引用可能来源的“借用”（loans）或起源集合。这种转变使开发者能够将借用检查（borrow checking）理解为对借用条款的逐行验证，而不是在空间迷宫中穿行。演讲探讨了该模型如何阐明子类型化（'a: 'out 意味着 'a 包含的借用少于 'out）、方差（解释了为什么可变引用必须是不变的，以防止释放后使用错误）以及 Serde 等库中使用的高阶 trait 约束（HRTBs）。最后，演讲还提到了 Rust 编译器的未来，指出 Polonius 借用检查器最终将接受更多目前被标准编译器拒绝的内存安全程序，例如借用迭代器（lending iterators）。",
+  "mainPoints": [
+    {
+      "point": "生命周期应被视为借用集合，而不是代码区域或作用域。",
+      "explanation": "通过追踪引用的来源（借用）而非其有效的代码段，开发者可以更容易地逐行识别为什么特定的修改违反了借用检查规则。"
+    },
+    {
+      "point": "Rust 中的“outlives”关系实际上是借用的子集关系。",
+      "explanation": "将 'a: 'out 重构为“'A 在 'out 内部”，因为它包含的借用更少，这简化了对子类型化的理解，使得复杂签名中生命周期参数的逻辑更加直观。"
+    },
+    {
+      "point": "方差取决于生命周期中的借用集合是否可以被修改。",
+      "explanation": "共享引用是协变的（可以添加借用），而可变引用背后的引用是不变的（借用集合被锁定），以防止诸如释放后使用（use-after-free）之类的内存安全问题。"
+    },
+    {
+      "point": "高阶生命周期解决了命名函数内部产生的生命周期的问题。",
+      "explanation": "使用诸如 for<'de> 之类的语法允许类型为所有可能的生命周期实现 trait，这对于反序列化函数自身局部作用域内创建的数据至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "Brierley 没有通过传统的代码作用域和区域视角来解释生命周期，而是围绕从 Polonius 衍生出的另一种思维模型构建了整个演讲。",
+    "Brierley 将 'a: 'out 重构为‘'A 在 'out 内部，因为它包含的借用更少’，而不是‘'A 比 'out 活得更久’。",
+    "当你看到一个带有多个生命周期参数的结构体时，几乎总是因为这些生命周期具有不同的方差。",
+    "目标是扩大编译器接受的正确程序集，而不是改变安全保证。",
+    "借用检查随后变成了一项逐行的练习：找出在每个点上哪些借用是活跃的，并检查该行上的任何内容是否违反了它们的条款。"
+  ],
+  "tags": [
+    "Rust",
+    "生命周期",
+    "借用检查器",
+    "Polonius",
+    "内存安全"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 641,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773828660000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 10:11:00"
+}

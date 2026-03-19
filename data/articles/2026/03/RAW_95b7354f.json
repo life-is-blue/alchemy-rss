@@ -1,0 +1,58 @@
+{
+  "id": "RAW_95b7354f",
+  "title": "QCon London 2026：随着 CRA 执行临近，SBOM 从最佳实践变为法律强制要求",
+  "url": "https://www.infoq.com/news/2026/03/sbom-viktor-petersson/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-18 13:04:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a talk at <a href=\"https://qconlondon.com/\">QCon London 2026</a>, <a href=\"https://www.linkedin.com/in/vpetersson/\">Viktor Petersson</a> argued that software teams are running out of time to adopt SBOMs (Software Bills of Materials) due to pending legislative changes in both the US and Europe.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 450px;\" data-src=\"https://www.infoq.com/news/2026/03/sbom-viktor-petersson/news/2026/03/sbom-viktor-petersson/en/resources/1vkotor-1773839021003.jpg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/sbom-viktor-petersson/en/resources/1vkotor-1773839021003.jpg\" rel=\"share\"></p>\n   <p>Petersson, founder of <a href=\"https://sbomify.com/about/\">sbomify</a> and co-founder of digital signage platform <a href=\"https://www.screenly.io/\">Screenly</a>, drew on three years of experience building SBOM tooling by walking through the current regulatory landscape, and spoke on the practical mechanics of generating high-quality SBOMs and on the emerging standards for distributing the resulting artefacts.</p>\n   <blockquote>\n    <p>\"SBOMs have become the litmus test of knowing what goes into your software.\"\n     <br>\n     — Viktor Petersson, QCon London 2026</p>\n   </blockquote>\n   <p>Petersson opened by talking about the upcoming <a href=\"https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act\">EU Cyber Resilience Act</a>, which applies to any \"product with digital elements.\" Petersson described this as a deliberately catch-all phrase covering anything that connects to the internet. The first enforcement window opens in September 2026, with full compliance, including SBOM mandates, required by December 2027.&nbsp; He warned that CRA is more powerful than earlier frameworks such as GDPR, because it can do more than just impose fines. As Petersson put it in his talk, \"CRA is not about fines. They can actually block sales. Your products can be blocked from the European market.\" Germany has already implemented, with other EU member states expected to follow.</p>\n   <p>He also mentioned <a href=\"https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/\">US Executive Order 14028</a>, which was signed in 2021. This made SBOMs a procurement condition for any organisation selling software to the federal government. The FDA requires them for medical devices sold in the US market, and PCI-DSS 4.0 mandates SBOM production for companies in the payment card industry.&nbsp; Petersson predicted that SOC 2 and ISO frameworks will follow in due course.</p>\n   <p>Petersson went on to discuss formats for SBOMs, explaining that there are two dominant standards that overlap somewhat: <a href=\"https://spdx.dev/\">SPDX</a>, developed by the Linux Foundation from 2010 onwards and widely used in operating systems and embedded environments, and <a href=\"https://cyclonedx.org/\">CycloneDX</a>, created at ServiceNow in 2017 and more prevalent at the application dependency layer. He mentioned a myth that one is for security and the other for licence compliance, but since both formats can handle both tasks, teams tend to choose one based on where in the stack they operate, rather than one or the other having a functional gap. Both tools output in JSON and XML.</p>\n   <p>Petersson talked at length about his work on defining and implementing processes and tools for generating and distributing high-quality SBOMs. He co-chaired a working group within CISA to produce a white paper on high-quality SBOM generation, with the constraint that all recommended tooling must be open source. The resulting blueprint splits the process into four stages: creation, augmentation, enrichment, and signing, and he explained some of the options available for each.</p>\n   <p>For SBOM creation, generic tools such as <a href=\"https://github.com/anchore/syft\">Syft</a> and <a href=\"https://trivy.dev/\">Trivy</a> are convenient and widely adopted, but Petersson argued that domain-specific tools, such as CycloneDX’s Python or Rust generators, produce higher-quality output. He warned against using a common shortcut: pointing a generic scanner at a large Docker container and treating the result as complete. \"The quality would be really bad,\" he said. \"A much better path is to break out these individually and have separate SBOMs for each.\"</p>\n   <p>Signing is the step most teams skip, and Petersson was direct that this is a mistake. He asserted that the specific tool used matters less than the act of signing itself. <a href=\"https://github.com/sigstore/cosign\">Cosign</a> has emerged as a common choice, but the core principle is that signing in CI when the code is generated allows a verifiable chain of custody back to the attestation.</p>\n   <blockquote>\n    <p>\"Any signing is better than no signing. Do sign your SBOMs in your pipeline, not on somebody’s machine.\"\n     <br>\n     — Viktor Petersson, QCon London 2026</p>\n   </blockquote>\n   <p>The lifecycle dimension of SBOM management is where Petersson believes most teams have the biggest gaps, with a real end-user product rarely correlating well to a single SBOM. A smart thermostat, for example, might involve a Yocto embedded OS image, a Python backend, a Node frontend, and a Docker container, each with its own artefact. Screenly itself produces around twenty SBOMs, any of which might change on a CI run.&nbsp; Regulators can demand an SBOM for a product version from several releases ago, which makes a versioned, managed release process for these documents as important as it is for source code. Petersson compared current practice to software development before version control: \"Dealing with SBOMs today feels like managing source code in the 90s, with patches sent over email.\" Petersson suggested that emailing SBOMs or uploading them to SharePoint remains a common practice.</p>\n   <p>He then talked about the <a href=\"https://tc54.org/tea/\">Transparency Exchange API</a> (TEA), an <a href=\"https://owasp.org\">OWASP</a> project co-chaired by CycloneDX creator Steve Springett, designed to address the challenge of reliably distributing SBOMs and beyond, broadly covering other security artefacts as well. TEA is currently progressing through ECMA to become a platform-agnostic ISO standard, providing a universal discovery mechanism for security artefacts based on a product identifier and a website address. He walked through how a consumer could, in theory, pick up a hardware product in a shop, look up its identifier, and programmatically retrieve its SBOMs, VEX files, and SOC 2 documents through a single API. Petersson observed that TEA has the potential to avoid every language inventing its own method for distributing SBOMs.</p>\n   <p>Petersson mentioned some common mistakes, such as generating SBOMs outside CI, skipping signing altogether, and also merging SBOMs from multiple ecosystems into one big one. He suggested that all of these are avoidable with careful process design from the start. He closed out his talk by reinforcing the message that CRA enforcement begins sooner than most teams expect, but that teams can catch up thanks to the work already done.</p>\n   <p>&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: SBOMs Move From Best Practice to Legal Obligation as CRA Enforcement Looms\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/sbom-viktor-petersson/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1773839040000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文详细介绍了软件物料清单（SBOM）在欧盟《网络弹性法案》（CRA）下从安全最佳实践向法律强制要求的转变，并概述了其生成和分发的技术工作流程。",
+  "oneSentenceSummary": "本文详细介绍了软件物料清单（SBOM）在欧盟《网络弹性法案》（CRA）下从安全最佳实践向法律强制要求的转变，并概述了其生成和分发的技术工作流程。",
+  "summary": "本文报道了 QCon London 2026 的内容，重点介绍了 Viktor Petersson 对欧盟《网络弹性法案》（CRA）即将执行的见解。与 GDPR 不同，CRA 授权监管机构禁止不合规产品进入欧洲市场，这使得 SBOM 到 2027 年底成为一项关键的法律要求。讨论涵盖了 SBOM 的技术格局，比较了 SPDX 和 CycloneDX 标准，并详细介绍了高质量生成的四个阶段蓝图：创建、增强、丰富和签名。Petersson 强调了使用特定领域的生成器而非通用容器扫描器的重要性，并指出签名必须在 CI/CD 流水线内进行，以确保可验证的溯源链。最后，文章介绍了透明度交换 API（TEA），作为一种新兴的 ISO 标准，用于安全制品的程序化分发。",
+  "mainPoints": [
+    {
+      "point": "欧盟《网络弹性法案》（CRA）将 SBOM 转变为数字产品的强制性法律要求。",
+      "explanation": "随着 2026 年执行工作的开始，CRA 的影响不仅限于罚款，它还允许监管机构禁止不合规软件进入欧洲市场，因此必须立即采用 SBOM 工作流程。"
+    },
+    {
+      "point": "高质量的 SBOM 生成需要特定领域的工具，而不是通用的容器扫描捷径。",
+      "explanation": "在大型 Docker 镜像上使用通用扫描器通常会导致数据质量低下；开发人员应使用特定于语言的生成器（例如 Python 或 Rust）来确保准确的依赖关系映射。"
+    },
+    {
+      "point": "在 CI/CD 流水线中进行加密签名对于建立可验证的溯源链至关重要。",
+      "explanation": "在构建流水线中创建 SBOM 时立即进行签名可以防止篡改，并提供一种将软件制品直接与其记录的组件相关联的证明。"
+    },
+    {
+      "point": "透明度交换 API（TEA）旨在标准化安全制品的程序化分发。",
+      "explanation": "作为一项新兴的 ISO 标准，TEA 提供了一种通用的发现机制，允许消费者和监管机构通过平台无关的 API 检索 SBOM 和漏洞数据。"
+    }
+  ],
+  "keyQuotes": [
+    "SBOM 已成为了解软件构成情况的试金石。",
+    "CRA 不仅仅是罚款。他们实际上可以阻止销售。你的产品可能会被禁止进入欧洲市场。",
+    "有签名总比没有好。请务必在你的流水线中对 SBOM 进行签名，而不是在某人的机器上进行。",
+    "如今处理 SBOM 的感觉就像 90 年代管理源代码一样，补丁都是通过电子邮件发送的。"
+  ],
+  "tags": [
+    "SBOM",
+    "网络弹性法案",
+    "软件供应链",
+    "合规性",
+    "CycloneDX"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 82,
+  "wordCount": 948,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773839040000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-18 13:04:00"
+}
