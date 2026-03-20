@@ -1,0 +1,58 @@
+{
+  "id": "RAW_9a994b81",
+  "title": "黄仁勋：每一家工业企业都将成为机器人公司！连发物理 AI 全家桶",
+  "url": "https://www.qbitai.com/2026/03/389569.html",
+  "date": "2026-03-20 00:52:21",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"59\">允中 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">“物理AI时代已经到来。”</p>\n  <p data-track=\"5\">GTC 2026主题演讲上，黄仁勋用这句话为整场大会定调。紧接着，他抛出了一整套物理AI基础设施：从数据生成到仿真训练，从边缘推理到生态落地。NVIDIA正在把”每一家工业企业都将成为机器人公司”的预言，变成可交付的产品路线图。</p>\n  <p data-track=\"7\">最吸睛的彩蛋留在最后——迪士尼”雪宝”机器人走上台与黄仁勋互动。这只曾在《冰雪奇缘》里活过来的雪人，即将于3月29日在巴黎迪士尼乐园正式上岗。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320013308_47126679073c0801dfe037c54c7763ef.jpeg\" data-src=\"https://image.jido.dev/20260320013308_47126679073c0801dfe037c54c7763ef.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"12\">物理AI遵循一条铁律：性能随着数据规模、算力和模型容量的增长而提升。但真实世界的训练数据稀缺、昂贵，且难以覆盖长尾场景。</p>\n  <p data-track=\"14\">NVIDIA的解法是物理AI数据工厂Blueprint——一个开放的参考架构，把算力直接转化为数据。</p>\n  <p data-track=\"16\">NVIDIA Omniverse与仿真技术副总裁Rev Lebaredian说得很直接：”在这个新时代，计算即数据。”</p>\n  <p data-track=\"18\">这套蓝图包含三个核心模块：</p>\n  <p data-track=\"20\">数据整理与搜索：Cosmos Curator处理并标注大规模真实与合成数据集。</p>\n  <p data-track=\"22\">增强与倍增：Cosmos Transfer对整理后的数据进行指数级扩展，生成不同环境和光照条件下的罕见边缘案例。</p>\n  <p data-track=\"24\">评估与验证：基于Cosmos Reason的Evaluator自动评分、验证并筛选生成数据，确保物理准确性和训练可用性。</p>\n  <p data-track=\"26\">Microsoft Azure和Nebius已将这套蓝图深度集成至云服务。FieldAI、Hexagon Robotics、Linker Vision、Milestone Systems、Skild AI、Teradyne Robotics和Uber等企业正在基于该蓝图加速开发。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320013308_8b5b4c3d3b2ec06415b1b59b0bead8f4.png\" data-src=\"https://image.jido.dev/20260320013308_8b5b4c3d3b2ec06415b1b59b0bead8f4.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"31\">数据有了，下一步是在仿真环境中训练。</p>\n  <p data-track=\"33\">NVIDIA发布了Cosmos 3——首个将合成世界生成、视觉推理与动作模拟统一起来的世界基础模型。同时，Isaac Lab 3.0抢先体验版上线，基于全新Newton物理引擎1.0和PhysX SDK，新增多物理场仿真功能，强化复杂灵巧操作场景的支持。</p>\n  <p data-track=\"35\">在人形机器人领域，NVIDIA放出了两个重要更新：</p>\n  <p data-track=\"37\">GR00T N1.7现已开放抢先体验版并支持商业授权，引入包括先进灵巧控制在内的通用机器人技能。</p>\n  <p data-track=\"39\">GR00T N2预告年底发布。黄仁勋透露，该模型基于DreamZero研究成果，采用全新的世界动作模型架构，在新环境中执行新任务的成功率可达到当前领先视觉语言动作模型的两倍以上。目前在MolmoSpaces与RoboArena通用机器人策略排行榜上均位列第一。</p>\n  <p data-track=\"41\">这些系统由Jetson Thor机器人计算平台驱动，实现从仿真训练到现实世界部署的无缝过渡。</p>\n  <p data-track=\"43\">全球机器人装机量超200万台的FANUC、ABB Robotics、YASKAWA和KUKA正在将NVIDIA Omniverse库与Isaac仿真框架集成至其虚拟调试解决方案。智元机器人、Agility、Figure、Hexagon Robotics、1X、Boston Dynamics等行业领先企业，正基于这套技术栈打造下一代人形机器人。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320013308_543163a17d6a58a2c72740f9f598cff0.png\" data-src=\"https://image.jido.dev/20260320013308_543163a17d6a58a2c72740f9f598cff0.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"48\">训练和仿真之后，是边缘端的实时推理。</p>\n  <p data-track=\"50\">IGX Thor工业级平台现已全面发售。该平台通过高速传感器处理、企业级可靠性以及功能安全能力，在边缘端实现实时物理AI。</p>\n  <p data-track=\"52\">卡特彼勒正在开发基于IGX Thor的驾驶舱对话式AI助手。日立铁路利用其在铁路网中部署预测性维护和自主检测系统。供应链解决方案公司凯傲集团结合IGX Thor与NVIDIA Halos Outside-In安全工作流，实现”由外向内”感知——AI智能体通过部署在基础设施上的摄像头和动态虚拟安全围栏，增强自主机器人的功能安全机制。</p>\n  <p data-track=\"54\">医疗领域，强生采用IGX Thor为其Polyphonic数字外科平台提供算力，将实时AI推理引入手术室。KARL STORZ正利用其开发新一代内窥镜和影像工具。美敦力正在评估IGX Thor用于手术机器人系统。</p>\n  <p data-track=\"56\">Planet Labs甚至在轨道上使用IGX Thor，将TB级多维卫星数据转化为可执行洞察。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320013308_16f781c0227b9bb28da0df5af5577774.png\" data-src=\"https://image.jido.dev/20260320013308_16f781c0227b9bb28da0df5af5577774.png\">\n  </div>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "黄仁勋在 GTC 2026 上发布了“物理 AI”全家桶，涵盖数据生成、仿真训练及边缘推理，旨在推动工业企业向机器人化转型。",
+  "oneSentenceSummary": "黄仁勋在 GTC 2026 上发布了“物理 AI”全家桶，涵盖数据生成、仿真训练及边缘推理，旨在推动工业企业向机器人化转型。",
+  "summary": "文章详细报道了 NVIDIA GTC 2026 主题演讲的核心内容。黄仁勋宣布“物理 AI 时代”正式到来，并发布了一套完整的物理 AI 基础设施。核心亮点包括：物理 AI 数据工厂 Blueprint，通过 Cosmos 系列工具实现“计算即数据”；世界基础模型 Cosmos 3，统一了合成环境生成与动作模拟；以及人形机器人模型 GR00T N1.7 和 N2，显著提升了机器人在复杂环境下的任务成功率。硬件层面，Jetson Thor 和 IGX Thor 平台为从云端仿真到边缘实时推理提供了全栈算力支持。目前，该生态已吸引了包括迪士尼、工业机器人四大巨头及多家医疗、交通领军企业的深度参与。",
+  "mainPoints": [
+    {
+      "point": "物理 AI 的核心逻辑在于通过大规模算力生成高质量合成数据。",
+      "explanation": "NVIDIA 推出物理 AI 数据工厂 Blueprint，通过 Cosmos 系列工具实现数据的整理、增强与验证，解决了真实世界机器人训练数据稀缺且昂贵的痛点。"
+    },
+    {
+      "point": "Cosmos 3 统一了合成世界生成、视觉推理与动作模拟。",
+      "explanation": "作为首个物理 AI 世界基础模型，Cosmos 3 配合 Isaac Lab 3.0，为机器人提供了高度精确的物理仿真环境，支持复杂灵巧操作的训练与验证。"
+    },
+    {
+      "point": "GR00T 系列模型大幅提升了人形机器人的通用技能与成功率。",
+      "explanation": "GR00T N1.7 已支持商业授权，而即将发布的 N2 采用全新的世界动作模型架构，在新任务执行成功率上达到现有领先模型的两倍以上。"
+    },
+    {
+      "point": "IGX Thor 平台实现了物理 AI 在工业边缘端的实时推理。",
+      "explanation": "该平台具备工业级可靠性与功能安全，已在工程机械、铁路维护、数字外科手术及卫星数据处理等多个垂直领域进入实操部署阶段。"
+    }
+  ],
+  "keyQuotes": [
+    "物理 AI 时代已经到来。",
+    "在这个新时代，计算即数据。",
+    "每一家工业企业都将成为机器人公司。",
+    "物理 AI 遵循一条铁律：性能随着数据规模、算力和模型容量的增长而提升。"
+  ],
+  "tags": [
+    "NVIDIA",
+    "GTC 2026",
+    "物理 AI",
+    "机器人",
+    "人形机器人"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 86,
+  "wordCount": 1517,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773967941000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 00:52:21"
+}

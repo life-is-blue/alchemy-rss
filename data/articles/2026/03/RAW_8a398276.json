@@ -1,0 +1,59 @@
+{
+  "id": "RAW_8a398276",
+  "title": "为什么你的 AI 治理正在拖累你，而你却浑然不知 | JetBrains AI 博客",
+  "url": "https://blog.jetbrains.com/ai/2026/03/why-your-ai-governance-is-holding-you-back-and-you-don-t-even-know-it/",
+  "date": "2026-03-19 13:21:25",
+  "author": "Orit Golowinski",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most enterprises claim to govern their AI use. They have policy documents, review boards, approval flows, and sandbox environments.</p>\n  <p>On paper, control exists. Then agents enter real software delivery workflows.</p>\n  <p>They generate code, refactor systems, open pull requests, query internal data, trigger automations, and coordinate across tools. They move from experiment to execution. At that point, many organizations lose visibility, control, and cost accountability.</p>\n  <p>Governance designed for static systems breaks under dynamic agents.</p>\n  <h2 class=\"wp-block-heading\"><strong> \n    <br> \n   </strong><strong>The illusion of control</strong></h2>\n  <p>Enterprise AI governance today <a href=\"https://www.cybersecurity-insiders.com/2026-ciso-ai-risk-report/\" target=\"_blank\" rel=\"noopener\">remains largely abstract</a>. Organizations define policies, approval processes, and access controls. They specify which models teams can use and where experimentation can happen.</p>\n  <p>These mechanisms work in contained environments, but they break down when agents operate at scale inside production systems.</p>\n  <p>This creates governance, with:</p>\n  <ul>\n   <li>No clear visibility into agent actions and decision paths.</li>\n   <li>No enforceable link between policy and execution.</li>\n   <li>No reliable way to attribute cost or measure effectiveness.</li>\n   <li>A false sense of control that increases risk rather than reducing it.</li>\n  </ul>\n  <p></p>\n  <p>The most dangerous part isn’t the lack of control. It is the belief that control already exists.</p>\n  <h2 class=\"wp-block-heading\"><strong> \n    <br> \n   </strong><strong>Policies describe intent, agents decide behavior</strong></h2>\n  <p>As agents gain autonomy, they make micro-decisions inside workflows that policy documents never anticipated. Governance frameworks define permissions, approval gates, and high-level constraints.</p>\n  <p>They rarely account for how an agent interprets context, chains tools, or explores edge cases while attempting to complete a task. The result is a structural gap. Organizations assume that if rules exist, behavior will follow.</p>\n  <p>In reality, agents operate more like capable teenagers. You can set clear rules. You can explain the boundaries. Yet curiosity, optimization logic, or a creative interpretation of an objective can produce actions no one explicitly planned for.</p>\n  <p>My teenage daughter loves to cook and bake. She is independent and does not require supervision. She knows the rules: wash the dishes, wipe down surfaces, and leave the kitchen as you found it. I trust her to operate within those boundaries.</p>\n  <p>One afternoon, she got curious and decided to test what would happen if she combined cola and Mentos. On their own, the ingredients were harmless. Once she combined them, they became a problem. Nothing was broken. But I had not anticipated cleaning soda off the ceiling. The rules existed. An unexpected outcome still emerged.</p>\n  <p>Agents behave in a similar way. They pursue goals, generate code, call APIs, trigger workflows, and <a href=\"https://techpinions.com/governance-gap-enterprise-ai-agent-projects\" target=\"_blank\" rel=\"noopener\">access data</a> in ways that may sit technically within permission boundaries but outside the spirit of the policies.</p>\n  <p>Traditional governance has no mechanism to observe or intervene in these runtime decisions. When autonomy increases, static policy loses reach.</p>\n  <h2 class=\"wp-block-heading\"><strong> \n    <br> \n   </strong><strong>Cost without clarity</strong></h2>\n  <p>Even when behavior does not create immediate risk, it creates opacity.</p>\n  <p>Agents consume tokens, call external models, execute workflows, and use internal tools. Costs accumulate across teams and projects. Without integrated visibility, finance teams see invoices but not what the costs are ultimately for. Engineering leaders see velocity changes but not the economic trade-offs behind them.</p>\n  <p>At the same time, few organizations can answer even basic questions while assessing results, such as:</p>\n  <ul>\n   <li>What did the agent actually do?</li>\n   <li>How reliably did it perform?</li>\n   <li>What tools did it use and with which permissions?</li>\n   <li>Did it improve delivery speed or introduce duplicate work?&nbsp;</li>\n   <li>What value did it generate relative to its cost?</li>\n  </ul>\n  <p></p>\n  <p>Without answers to these questions, governance becomes performative. It satisfies compliance checklists while leaving the operational reality unexamined.</p>\n  <h2 class=\"wp-block-heading\"><strong> \n    <br> \n   </strong><strong>Governance only works when it has sight</strong></h2>\n  <p>If organizations can’t observe AI behavior, enforce controls at runtime, and understand economic impact, they do not have operational governance.</p>\n  <p>Governance that exists only in policy documents remains theoretical. Real governance <em>must be built into the AI system itself</em>.</p>\n  <p>This requires a reframing. Governance isn’t a committee. It isn’t a framework layered on top of agents. It is an operating ecosystem.</p>\n  <p>Governance must be embedded by design, woven into how agents are built, orchestrated, deployed, and <a href=\"https://www.forbes.com/councils/forbestechcouncil/2026/01/30/governance-by-design-how-to-engineer-trust-in-the-age-of-ai/\" target=\"_blank\" rel=\"noopener\">monitored from day one</a>.</p>\n  <h2 class=\"wp-block-heading\"><strong> \n    <br> \n   </strong><strong>What governance by design looks like practically</strong></h2>\n  <p>A governance-by-design ecosystem includes runtime enforcement of organizational policies, coordinated management of models and providers, structured orchestration of agents, deep visibility into execution paths, auditability, and transparent cost attribution.</p>\n  <p>It restricts agent capabilities through tool and skill allowlists, least privilege permissions, and blast radius reduction. It isolates agents through segmentation, so if one is compromised or behaves unpredictably, the impact does not spread laterally across the company.</p>\n  <p>It also embeds continuous evaluation. Quality checks, policy validation, and hallucination detection must form part of the operating environment. If you can’t measure output quality, detect fabricated responses, and identify when agent behavior drifts from policy or intended objectives, you can’t claim meaningful governance.</p>\n  <p>Most importantly, this ecosystem would make that oversight transparent and actionable. Different stakeholders would see what matters at their level: engineering teams would monitor execution paths and quality signals; platform teams would enforce policy boundaries and manage model access; product leaders would evaluate impact and trade-offs; executives would understand risk exposure and economic return.</p>\n  <p>Governance would no longer slow adoption. Instead, it would create the conditions for confident scaling.</p>\n  <h2 class=\"wp-block-heading\"><strong> \n    <br> \n   </strong><strong>Why this matters now</strong></h2>\n  <p>Agents are already operating in production. They write code, manage infrastructure, triage incidents, and coordinate work across teams. This isn’t a future scenario – a shift that’s already happening – and adoption is accelerating.</p>\n  <p>If governance depends on trust rather than visibility, it’s already ineffective.</p>\n  <p>The question isn’t whether you have an AI policy. It’s whether you can <strong>monitor what your agents are doing, control how they do it, and understand what it costs</strong>.</p>\n  <p>If you can’t, then your governance is aspirational, not operational. And that gap will only widen as agent autonomy increases.</p>\n  <p>Let me know what you think in the comments.&nbsp;</p>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/blog/2026/02/10/open-source-in-focus-dotnet-projects-and-the-tools-behind-them/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Open Source in Focus: .NET Projects and the Tools Behind Them</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文指出，传统的静态 AI 治理无法满足自主智能体的需求，并提倡一种“治理即设计”（governance by design）的方法，将运行时强制执行、可观测性和成本归因直接集成到 AI 系统中。",
+  "oneSentenceSummary": "本文指出，传统的静态 AI 治理无法满足自主智能体的需求，并提倡一种“治理即设计”（governance by design）的方法，将运行时强制执行、可观测性和成本归因直接集成到 AI 系统中。",
+  "summary": "本文探讨了传统企业 AI 治理（依赖静态政策文档和审批委员会）与在生产环境中部署自主智能体的现实之间的严重脱节。作者认为，随着智能体自主性的增强，它们会做出超出静态政策范围的微决策，从而产生一个“结构性缺口”，导致组织无法洞察智能体的行为、成本和风险。作者用“青少年虽然遵守规则但会创造性地解读规则”这一类比，说明了行为偏差为何不可避免。文中提出的解决方案是“治理即设计”，即构建一个运营生态系统，通过运行时强制执行、持续评估和透明的可观测性，将治理嵌入 AI 系统本身。这种转变被认为是安全、有效地扩展 AI 应用的关键。",
+  "mainPoints": [
+    {
+      "point": "传统治理之所以失败，是因为它是静态的，而智能体的行为是动态的。",
+      "explanation": "政策文档和审批关卡无法预见自主智能体在实时生产环境中执行的微决策、工具链调用以及对边缘情况的探索。"
+    },
+    {
+      "point": "在规则解读方面，自主智能体的行为就像“有能力的青少年”。",
+      "explanation": "即使智能体在技术权限范围内运行，它们对目标的追求也可能导致违反政策精神的意外结果，因此需要的不仅仅是高层约束。"
+    },
+    {
+      "point": "缺乏可见性会导致“表演性治理”。",
+      "explanation": "如果没有对智能体行为、工具使用情况和经济影响的集成监控，组织虽然满足了合规性检查清单，却对运营现实和实际风险视而不见。"
+    },
+    {
+      "point": "治理必须是“治理即设计”，而不是基于委员会的框架。",
+      "explanation": "有效的治理需要将控制、可审计性和持续评估直接嵌入 AI 系统的运行环境，将其视为工程挑战而非政策挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "为静态系统设计的治理在动态智能体面前会失效。",
+    "最危险的部分不是缺乏控制，而是认为控制已经存在。",
+    "智能体的运作更像是有能力的青少年。你可以设定明确的规则，解释边界。然而，好奇心、优化逻辑或对目标的创造性解读，可能会产生无人预料到的行为。",
+    "如果治理依赖于信任而非可见性，那么它已经是无效的了。",
+    "治理将不再拖慢采用速度。相反，它将为自信地扩展创造条件。"
+  ],
+  "tags": [
+    "AI 治理",
+    "自主智能体",
+    "LLMOps",
+    "企业级 AI",
+    "AI 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 957,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773926485000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 13:21:25"
+}

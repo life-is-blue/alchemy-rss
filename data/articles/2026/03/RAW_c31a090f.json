@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c31a090f",
+  "title": "如何编写智能体技能 (Agent Skill)",
+  "url": "https://hackernoon.com/how-to-write-an-agent-skill?source=rss",
+  "date": "2026-03-19 20:41:08",
+  "author": "Nicolas Fränkel",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most developers now use coding assistants. I do too—Copilot at work, Claude Code at home. As a developer, I prefer not to repeat myself. This post explains why and how to avoid repetition as a skill.</p>\n  <h2 id=\"dontrepeatyourself\">Don't Repeat Yourself</h2>\n  <p>The DRY principle has been present in the software development field for ages. The idea is that if you copy and paste code in multiple places and a bug appears, you'll need to fix the bug in all these places. The more the number of duplications, the more chances you'll miss one of them when fixing.</p>\n  <p>\\ In the context of coding assistants, DRY means something entirely different. From a personal point of view, it means you don't need to ask the assistant to analyze your project at every session. Or to reference your language's coding conventions again. Or that your project favors immutability.</p>\n  <p>\\ When a new developer joins a good project, they are told what the project's features, architecture, and conventions are. In great projects, conventions are formalized in written form and sometimes even kept up-to-date. Your coding assistant is a team member like any other: it <strong>requires</strong> written documentation.</p>\n  <h2 id=\"lessismore\">Less is More</h2>\n  <p>Both coding assistants I use allow the use of such instructions. I assume all do. For example, <a href=\"https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions\">GitHub Copilot</a> automatically reads the <code>.github/instructions.md</code> file.</p>\n  <p>\\ The problem with such instructions is that the assistant may read them automatically. If they are too broad and don't apply to the tasks, you'll pollute the context with irrelevant data. Conclusion: You need to keep the file relatively <em>small</em>. Thus, focus file instructions on general information.</p>\n  <p>\\ Sizing advices differ depending on the exact source. For example, <a href=\"https://docs.factory.ai/cli/configuration/agents-md#7-%C2%B7-best-practices\">docs.factory.ai</a> mentions less than 150 lines. <a href=\"https://www.reddit.com/r/GithubCopilot/comments/1lvvqrd/is_copilot_agent_really_reading_my_700_line/\">A Q&amp;A on Reddit</a> clarifies that 700 lines is too long. My advice would be to start small, increment when needed, analyze results, and refactor when it grows too large.</p>\n  <h2 id=\"tokeneconomics\">Token Economics</h2>\n  <p>Today, critical resources aren't CPU, RAM, or storage, but tokens. Tokens are a finite and expensive resource. My opinion is that soon, developers will be measured on their token usage: the better one will be the one using the fewest tokens to achieve similar results.</p>\n  <p>\\ Most agents will load the default instructions file, <code>AGENTS.md</code>. Claude will load <code>CLAUDE.md</code>. The smaller the file, the fewer tokens used in the context.</p>\n  <p>\\ A good context contains all the necessary tokens, but not more. That's where skills come into play.</p>\n  <h2 id=\"skills\">Skills</h2>\n  <blockquote>\n   <p>Agent Skills are folders of instructions, scripts, and resources that agents can discover and use to do things more accurately and efficiently.</p>\n   <p>\\ — <a href=\"https://agentskills.io/home\">Agent skills</a></p>\n  </blockquote>\n  <p>\\ Skills are different from <code>AGENTS.md</code> in that they aren't loaded automatically. Hence, they don't bloat the context. Now, comes the fun part: depending on the coding assistant, it may discover the skill and load it automatically, or not.</p>\n  <p>\\ I will describe how Claude works. I think its approach is superior, so I guess other assistants will implement it soon.</p>\n  <blockquote>\n   <p>By default, both you and Claude can invoke any skill. You can type <code>/skill-name</code> to invoke it directly, and <strong>Claude can load it automatically when relevant to your conversation</strong>.</p>\n   <p>\\ — <a href=\"https://code.claude.com/docs/en/skills#control-who-invokes-a-skill\">Control who invokes a skill</a></p>\n  </blockquote>\n  <p>\\ Claude knows when to invoke a skill by transforming all <code>SKILL.md</code>files' front matter into tools. Here's the front matter of the Kotlin skill I created: \\n</p>\n  <pre><code class=\"javascript language-javascript\">---\nname: kotlin\ndescription: \"|\"\n  Use this skill when working with Kotlin code in any capacity:\n  - Reading, writing, editing, or reviewing Kotlin files (*.kt, *.kts)\n  - Running Gradle tasks for Kotlin modules\n  - Writing or debugging Kotlin/JS code that targets Node.js\n  - Working with external JavaScript libraries from Kotlin\n  - Writing tests for Kotlin code (@Test, @BeforeTest, @AfterTest)\n  - Setting up dependency injection or mocking in Kotlin\n  - Dealing with multiplatform Kotlin projects (common, jsMain, jsTest, jvmMain)\n  - Troubleshooting Kotlin compilation or runtime errors\n  - Any task involving Kotlin/JS modules targeting Node.js\n\n  This skill provides Kotlin/JS technical knowledge (especially JS interop gotchas)\n  and coding style preferences beyond the official conventions.\n---\n</code></pre>\n  <p>The above gives Claude information on when to invoke the tool. Obviously, the skill is about Kotlin and Kotlin/JS.</p>\n  <p>\\ For the content, follow the same rules as regular <code>AGENTS.md</code> files:</p>\n  <ul>\n   <li>You can reference other documents, textual and others, local in the same skill folder or accessible online. I have copied and pasted the whole <a href=\"https://kotlinlang.org/docs/coding-conventions.html\">Kotlin coding conventions</a> into a dedicated file. <code>SKILL.md</code> summarizes the main items and links to the conventions.</li>\n  </ul>\n  <pre><code class=\"clike language-clike\">  The full conventions are cached locally in this skill directory at `kotlin-coding-conventions.md`.\n\n  Key reminders:\n  - Prefer `val` over `var` - immutability first\n  - Use immutable collection interfaces (`List`, `Set`, `Map`, not `MutableList`, etc.)\n  - Use `it` for short lambdas, named parameters for nested/complex ones\n  - Prefer expression form of `if`, `when`, `try` over statement form\n  - Prefer functional style (`filter`, `map`) over imperative loops\n</code></pre>\n  <ul>\n   <li>You should structure the document using headings, subheadings, and lists.</li>\n  </ul>\n  <p>You should use <em>good</em> and <em>bad</em> examples.</p>\n  <p>\\</p>\n  <pre><code class=\"javascript language-javascript\">### 1. External Interfaces vs Kotlin Classes \n**Problem**: Kotlin classes have methods on their prototype. External interfaces expect methods directly on the object. You cannot use `unsafeCast` to convert between them. \n</code></pre>\n  <p>kotlin // ❌ WRONG: This will fail at runtime class MockSql { fun unsafe(query: String) = … } val sql: Sql = mockSql.unsafeCast<sql>() // Will throw: sql.unsafe is not a function // ✅ CORRECT: Use extension function to build plain JS object fun MockSql.toExternal(): Sql { val obj = Any().asDynamic() val mock = this </sql></p>\n  <pre><code>obj.unsafe = { query: String -&gt; mock.unsafe(query) }\nobj.end = { mock.end() } \n\nreturn obj.unsafeCast&lt;Sql&gt;() \n</code></pre>\n  <p>}</p>\n  <p>// Then use it: val sql: Sql = mockSql.toExternal() <code> </code></p>\n  <p>\\</p>\n  <h2 id=\"conclusion\">Conclusion</h2>\n  <p>Skills are great for avoiding repeating the same instructions over and over. The main difference with instructions is that they don't bloat the context for nothing. Depending on your coding assistants, they may trigger when required, or you may need to explicitly activate them.</p>\n  <p>\\ The complete source code for this post can be found on <a href=\"https://codeberg.org/nfrankel/skills\">Codeberg</a>.</p>\n  <p><strong>To go further:</strong></p>\n  <ul>\n   <li><a href=\"https://agentskills.io/home\">Agent Skills</a></li>\n   <li><a href=\"https://code.claude.com/docs/en/skills\">Extend Claude with skills</a></li>\n   <li><a href=\"https://codeberg.org/ai-skills/methodical-dev/src/branch/main/en/methodical-dev/SKILL.md\">Methodical Development Skill</a></li>\n   <li><a href=\"https://github.com/sickn33/antigravity-awesome-skills\">Awesome Skills</a></li>\n   <li><a href=\"https://agents.md/\">AGENTS.md</a></li>\n  </ul>\n  <hr>\n  <p><em>Originally published at <a href=\"https://blog.frankel.ch/writing-agent-skill/\">A Java Geek</a> on March 15th, 2026.</em></p>\n  <p>\\</p>\n </body>\n</html>",
+  "aiSummary": "本文提倡采用模块化的“智能体技能” (Agent Skills) 来替代庞大的全局指令文件，从而优化上下文管理，减少 Token 浪费，并提高 AI 编程助手的准确性。",
+  "oneSentenceSummary": "本文提倡采用模块化的“智能体技能” (Agent Skills) 来替代庞大的全局指令文件，从而优化上下文管理，减少 Token 浪费，并提高 AI 编程助手的准确性。",
+  "summary": "本文探讨了 AI 辅助开发中的一个常见痛点：由过于宽泛的全局指令文件（如 'AGENTS.md'）导致的上下文污染。作者认为，将 AI 助手视为团队成员需要结构化的文档，但也警告称，为每个任务加载过多的指令会浪费昂贵的 Token 并降低性能。作者提出的解决方案是实施“智能体技能”——即基于文件夹的模块化指令、脚本和资源集合，仅在相关时才加载。作者详细介绍了实施策略，包括使用 Front Matter 来触发工具调用，通过清晰的规范构建文档，并提供具体的“好”与“坏”代码示例，以有效地引导 AI。",
+  "mainPoints": [
+    {
+      "point": "将 DRY（不要重复自己）原则应用于 AI 助手配置。",
+      "explanation": "正如在软件工程中一样，在多个会话或项目中重复指令是低效且容易出错的；文档应该集中化和规范化。"
+    },
+    {
+      "point": "摆脱庞大的全局指令文件，避免上下文污染。",
+      "explanation": "像 'AGENTS.md' 这样的全局文件往往变得过于庞大，迫使 AI 处理无关数据，这不仅浪费 Token，还可能导致输出质量下降。"
+    },
+    {
+      "point": "采用模块化的“智能体技能”，实现上下文感知的指令加载。",
+      "explanation": "技能允许开发者打包指令、脚本和资源，AI 仅在特定任务需要时才加载它们，从而保持上下文的简洁和高效。"
+    },
+    {
+      "point": "利用清晰的元数据和实践示例构建技能。",
+      "explanation": "有效的技能会使用 Front Matter 来定义调用触发器，并包含结构良好的文档以及“好”与“坏”的代码示例，以引导 AI 的决策过程。"
+    }
+  ],
+  "keyQuotes": [
+    "这类指令的问题在于助手可能会自动读取它们。如果指令过于宽泛且不适用于当前任务，你就会用无关数据污染上下文。",
+    "如今，关键资源不再是 CPU、内存或存储，而是 Token。Token 是一种有限且昂贵的资源。",
+    "良好的上下文包含所有必要的 Token，但不多不少。这就是技能发挥作用的地方。",
+    "技能与 AGENTS.md 的不同之处在于它们不会自动加载。因此，它们不会导致上下文臃肿。"
+  ],
+  "tags": [
+    "AI 编程",
+    "智能体技能",
+    "上下文管理",
+    "提示词工程",
+    "开发者生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1015,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773952868000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 20:41:08"
+}

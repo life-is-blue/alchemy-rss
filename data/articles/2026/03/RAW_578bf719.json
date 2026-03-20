@@ -1,0 +1,62 @@
+{
+  "id": "RAW_578bf719",
+  "title": "资源线性效用参与者之间的正和互动 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/HxwvJGPBFviSzbMJR/positive-sum-interactions-between-players-with-linear",
+  "date": "2026-03-20 00:42:57",
+  "author": "Cleo Nardo",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>Sometimes people say things like \"If the humans and AIs have linear utility in resources, then their interactions are zero-sum\". Here, \"linear utility in resources\" typically means something like: \"Supposing AIs already control all the galaxies, then they'd accept a bet with a 60% chance of gaining one more galaxy and a 40% chance of losing one.\"</span></p>\n    <p id=\"block1\"><span>I think this is too hasty.</span></p>\n    <p id=\"block2\"><span>I'll list several reasons why interactions can be positive-sum even when both humans and AIs have such preferences. I've ordered these from most important to least important.</span></p>\n    <p id=\"block3\"><b><span>1. Epistemic public goods</span></b><span>. Humans and AIs both benefit from learning true things about the universe — knowledge will have value to almost any agent regardless of its terminal goals. Hence, if both parties need to invest resources in acquiring knowledge, they can share the costs and both come out ahead. This includes basic mathematics and science. But I also expect this will include very expensive simulations of counterfactual worlds.</span></p>\n    <p id=\"block4\"><b><span>2. Security public goods. </span></b><span>Some expenditures protect everyone, e.g., both humans and AIs might need to spend resources ensuring their galaxies don't trigger false vacuum decay in neighbouring regions. Or defending against external threats (hostile aliens, natural disasters, exogenous risks).</span></p>\n    <p id=\"block5\"><b><span>3. Common values. </span></b><span>It's possible that human utility is something like </span><i><span>hedonium+a⋅X</span></i><span> and AI utility is something like </span><i><span>paperclips+b⋅X</span></i><span>, where </span><i><span>X </span></i><span>is some component of value that both parties share. Then, if producing hedonium, paperclips, and X is linear in resources, then both humans and AIs have linear utility in resources. However, the game isn't zero-sum, because the </span><i><span>X</span></i><span>-component means total welfare increases when both parties spend more resources on the common value.</span></p>\n    <p id=\"block6\"><b><span>4. Different marginal rates of substitution across resource types. </span></b><span>\"Linear returns to resources\" elides the fact that there are many kinds of resources. Humans and AIs might differ in how much they value proximal galaxies versus distal ones (e.g. because of time discounting), even though each party's utility function </span><i><span>u(proximal, distal)</span></i><span> is linear. If humans value proximal galaxies relatively more and AIs value distal galaxies relatively more, then trading proximal-for-distal makes both parties better off.</span></p>\n    <p id=\"block7\"><b><span>5. Complementarities in production. </span></b><span>If humans love hedonium and AIs love paperclips, maybe we can build paperclips out of hedonium (or vice versa). I expect this kind of direct complementarity to be rare in practice, because of \"tails come apart\" reasoning — removing the looks-like-a-paperclip constraint probably more than doubles the hedonium you can extract from the same resources. But less extreme versions of production complementarities might exist.</span></p>\n    <p id=\"block8\"><b><span>6. Comparative advantage</span></b><span>. Even when both parties are linear in the same single resource, if they differ in their relative productivity across tasks, there are gains from specialisation and trade. This is why most transactions between humans are positive-sum despite each transaction being so small that both parties' utility functions are approximately linear over the relevant range.</span></p>\n    <p id=\"block9\"><span>I'm unsure whether comparative advantage persists at cosmological timescales, where both parties are optimising with mature technology. But it plausibly matters during the transition period.</span></p>\n    <p id=\"block10\"><b><span>7. Gains from trade under uncertainty</span></b><span>. If humans and AIs have different beliefs, they can make bets that both parties expect to gain from. These bets are ex post zero-sum but not ex ante zero-sum. As long as the parties disagree about probabilities, both can expect to gain from the same wager.</span></p>\n    <p id=\"block11\"><i><span>Thanks to Alexa Pan for discussion, inspired by Lukas Finnveden's </span></i><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/oLzoHA9ZtF2ygYgx4/notes-on-cooperating-with-unaligned-ais#:~:text=If%20humans%20were%20a%20unified%20coalition%20representing%20one%20player%2C%20and%20AIs%20were%20a%20unified%20coalition%20representing%20one%20player%2C%20and%20both%20coalitions%20valued%20resources%20linearly%C2%A0(with%20no%20discount%20rate)%2C%C2%A0then%20we%20would%20be%20in%20a%20zero%2Dsum%20game%20without%20any%20opportunities%20for%20trade.%5B5\"><i><span>Notes on cooperating with unaligned AIs</span></i></a><i><span>.</span></i></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文挑战了一种普遍假设，即当 AI 与人类双方在资源上具有线性效用时，其互动本质上是零和博弈；文章提出了七种经济学和博弈论机制，使正和结果成为可能。",
+  "oneSentenceSummary": "本文挑战了一种普遍假设，即当 AI 与人类双方在资源上具有线性效用时，其互动本质上是零和博弈；文章提出了七种经济学和博弈论机制，使正和结果成为可能。",
+  "summary": "作者反驳了“资源线性效用意味着人类与 AI 之间存在零和博弈”这一普遍观点。通过将经济学原理应用于 AI 对齐和长期战略，文章概述了七种不同的路径——包括认知和安全公共产品、共享价值、比较优势以及不确定性下的交易——通过这些路径，双方可以实现互利共赢。该分析为理解超智能系统与人类之间潜在的合作提供了一个细致的框架，超越了简单的零和模型，表明即使在严格的效用约束下，合作在理论上也是可行的。",
+  "mainPoints": [
+    {
+      "point": "认知公共产品创造了共同激励。",
+      "explanation": "人类和 AI 都能从获取关于宇宙的真理知识（科学、数学、模拟）中受益，从而分摊研发成本。"
+    },
+    {
+      "point": "安全公共产品使合作成为必要。",
+      "explanation": "在预防生存风险（如假真空衰变或外部威胁）方面的共同利益，激励双方投资于共享的安全基础设施。"
+    },
+    {
+      "point": "共享价值增加了总福利。",
+      "explanation": "如果双方在各自的效用函数中都重视某个共同成分（X），那么投资于该成分会增加总福利，即使它们其他的终极目标仍然不同。"
+    },
+    {
+      "point": "比较优势促成了贸易。",
+      "explanation": "即使在具有线性效用的情况下，不同任务中相对生产力的差异也允许专业化和贸易，这反映了人类的经济互动。"
+    },
+    {
+      "point": "不确定性下的交易允许互利的博弈。",
+      "explanation": "当双方对概率持有不同看法时，他们可以进行预期在事前（ex-ante）双方都能获利的赌注，尽管在事后（ex-post）来看是零和的。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为这太草率了。",
+    "人类和 AI 都能从学习关于宇宙的真理中受益——无论终极目标如何，知识对几乎任何智能体都有价值。",
+    "X 成分意味着当双方在共同价值上投入更多资源时，总福利会增加。",
+    "即使双方在同一种资源上都呈线性关系，如果他们在不同任务上的相对生产力存在差异，那么专业化和贸易就能带来收益。"
+  ],
+  "tags": [
+    "AI 对齐",
+    "博弈论",
+    "AI 安全",
+    "经济学",
+    "理性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 81,
+  "wordCount": 566,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773967377000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 00:42:57"
+}

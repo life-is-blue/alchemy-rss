@@ -1,0 +1,57 @@
+{
+  "id": "RAW_4ac3a893",
+  "title": "Windows 栈限制检查回顾：amd64，即 x86-64",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260319-00/?p=112152",
+  "date": "2026-03-19 20:12:36",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Our survey of stack limit checking reaches the modern day with amd64, also known as x86-64. This time, there are two versions of the function, one for user mode and one for kernel mode. We’ll look at the user mode version.</p>\n  <p>Actually, there are two user mode versions. One is in <tt>msvcrt</tt>, the legacy runtime.</p>\n  <pre>; on entry, rax is the number of bytes to allocate\r\n; on exit, stack has been validated (but not adjusted)\r\n\r\nchkstk:\r\n    sub     rsp, 16\r\n    mov     [rsp], r10          ; save temporary register\r\n    mov     [rsp][8], r11       ; save temporary register\r\n\r\n    xor     r11, r11            ; r11 = 0\r\n    lea     r10, [rsp][16][8]   ; r10 = caller's rsp\r\n    sub     r10, rax            ; r10 = desired new stack pointer\r\n    cmovb   r10, r11            ; clamp underflow to zero\r\n\r\n    mov     r11, gs:[StackLimit]; user mode stack limit\r\n\r\n    cmp     r10, r11            ; are we inside the limit?\r\n    jae     done                ; Y: nothing to do\r\n\r\n    and     r10w, #-PAGE_SIZE   ; round down to page start\r\n\r\nprobe:\r\n    lea     r11, [r11][-PAGE_SIZE]  ; move to previous page\r\n    test    [r11], r11b         ; probe it\r\n    cmp     r10, r11            ; finished probing?\r\n    jb      probe               ; N: keep going\r\n\r\ndone:\r\n    mov     r10, [rsp]          ; restore temporary register\r\n    mov     r11, [rsp][8]       ; restore temporary register\r\n    add     rsp, 16             ; clean up stack\r\n    ret\r\n</pre>\n  <p><b>Bonus reading</b>: <a title=\"Windows is not a Microsoft Visual C/C++ Run-Time delivery channel\" href=\"https://devblogs.microsoft.com/oldnewthing/20140411-00/?p=1273\"> Windows is not a Microsoft Visual C/C++ Run-Time delivery channel</a>.</p>\n  <p>The other is in <tt>ucrtbase</tt>, the so-called universal runtime. That one is identical except that <a title=\"Windows stack limit checking retrospective: Alpha AXP\" href=\"https://devblogs.microsoft.com/oldnewthing/20260318-00/?p=112146\"> the probing is done by writing rather than reading</a>.</p>\n  <pre>    mov     byte ptr [r11], 0   ; probe it\r\n</pre>\n  <p>In both cases, the function ensures that the stack has expanded the necessary amount but leaves it the caller’s responsibility to adjust the stack after the call returns. This design preserves compliance with shadow stacks (which Intel calls Control-Flow Enforcement Technology, or CET).</p>\n  <p>A typical usage might go like this:</p>\n  <pre>    mov     eax, #17328         ; desired stack frame size (zero-extended)\r\n    call    chkstk              ; validate that there is enough stack\r\n    sub     rsp, rax            ; allocate it\r\n</pre>\n  <p>Next time, we’ll wrap up the series with a look at AArch64, also known as arm64.</p>\n </body>\n</html>",
+  "aiSummary": "本文对 Windows x86-64 上的 “chkstk” 函数实现进行了技术分析，对比了传统与现代运行时方法，并强调了栈探测（stack probing）对于 Intel CET 兼容性的重要性。",
+  "oneSentenceSummary": "本文对 Windows x86-64 上的 “chkstk” 函数实现进行了技术分析，对比了传统与现代运行时方法，并强调了栈探测（stack probing）对于 Intel CET 兼容性的重要性。",
+  "summary": "Raymond Chen 继续他关于 Windows 栈限制检查的回顾，这次考察的是 amd64 (x86-64) 的实现。文章对比了传统 “msvcrt” 运行时与现代 “ucrtbase” 中的 “chkstk” 函数，指出虽然逻辑基本相同，但探测机制有所不同（读取与写入）。文中解释了这些函数在不调整栈指针的情况下验证栈空间，将该责任留给调用者，以确保符合 Intel 的控制流强制技术（CET）。文章包含了汇编代码示例和使用模式，简要介绍了 Windows 底层运行时的内部机制。",
+  "mainPoints": [
+    {
+      "point": "栈检查的双重实现方法。",
+      "explanation": "传统 “msvcrt” 和现代 “ucrtbase” 运行时在探测机制上对 “chkstk” 的实现不同，后者使用写入操作而非读取。"
+    },
+    {
+      "point": "验证与分配的分离。",
+      "explanation": "“chkstk” 的设计目的是在不调整栈指针的情况下验证栈的可用性，这是一种为了保持 ABI 稳定性和安全性而刻意为之的设计选择。"
+    },
+    {
+      "point": "符合 Intel CET 标准。",
+      "explanation": "将验证与分配分离的特定设计对于保持与 Intel 控制流强制技术（影子栈）的兼容性至关重要。"
+    },
+    {
+      "point": "栈分配的标准使用模式。",
+      "explanation": "标准工作流程要求调用 “chkstk” 来验证空间，随后手动执行 “sub rsp， rax” 指令来分配栈帧。"
+    }
+  ],
+  "keyQuotes": [
+    "在这两种情况下，该函数都确保栈已经扩展了必要的量，但将调用返回后调整栈的责任留给了调用者。",
+    "这种设计保留了与影子栈（Intel 称之为控制流强制技术，即 CET）的兼容性。",
+    "一个在 msvcrt 中，即传统运行时…… 另一个在 ucrtbase 中，即所谓的通用运行时。"
+  ],
+  "tags": [
+    "Windows 内部原理",
+    "x86-64",
+    "汇编",
+    "栈探测",
+    "运行时"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 343,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773951156000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 20:12:36"
+}

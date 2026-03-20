@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ac069464",
+  "title": "介绍 AI Runtime：Databricks 上用于模型训练与微调的可扩展、无服务器 NVIDIA GPU",
+  "url": "https://www.databricks.com/blog/introducing-ai-runtime-scalable-serverless-nvidia-gpus-databricks-training-and-finetuning",
+  "date": "2026-03-19 18:00:03",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p dir=\"ltr\"><span>GPUs power today’s most advanced AI workloads—from forecasting and recommendations to multimodal foundation models. However, teams struggle with procuring and managing GPU infrastructure, configuring distributed training environments, and debugging data loading&nbsp;bottlenecks. Deep learning researchers prefer to focus on the modeling, not troubleshooting infrastructure.&nbsp;&nbsp;</span></p>\n  <p dir=\"ltr\"><span>We’re excited to announce the Public Preview of&nbsp;</span><strong>AI Runtime (AIR)</strong><span>, a new training stack that enables&nbsp;</span><em>on-demand</em><span> distributed GPU training on A10s and H100s. AI Runtime contains all the technology used for large scale training of LLMs such as MPT and&nbsp;</span><a href=\"https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm\"><span>DBRX</span></a><span>. Even in Beta, several hundreds of customers, including Rivian, Factset, and YipitData have used AIR to train and ship deep learning models into production. Use cases span the gamut from computer vision models to recommendation systems to finetuned LLMs for agentic tasks. Our own Databricks AI Research team used AIR for reinforcement learning of models such as in our recent&nbsp;</span><a href=\"https://www.databricks.com/blog/meet-karl-faster-agent-enterprise-knowledge-powered-custom-rl\"><span>KARL</span></a><span> paper.</span></p>\n  <p dir=\"ltr\"><span>With&nbsp;</span><strong>AI Runtime</strong><span>, Databricks users now have:</span></p>\n  <ul>\n   <li dir=\"ltr\"><strong>Serverless, on-demand NVIDIA GPUs:&nbsp;</strong><span>Simply configure your notebook in 2-3 clicks, and get fast attach to Serverless</span> A10 and H100 GPUs<span> to start training – no cluster needed. Only pay for the GPUs that you use, without worrying about idle time utilization.</span></li>\n   <li dir=\"ltr\"><strong>Robust orchestration tools:&nbsp;</strong><span>Use the full power of Databricks’ orchestration suite with Lakeflow Jobs and DABs support for long-running GPU workloads</span></li>\n   <li dir=\"ltr\"><strong>Optimized distributed training:</strong><span><strong> </strong>AIR bundles distributed GPU performance enhancements, like RDMA and high-performance data loading</span></li>\n   <li dir=\"ltr\"><strong>Centralized governance and observability</strong><span>: run, observe, and govern GPU workloads exactly where your data resides, with built in experiment management via MLflow, access management with Unity Catalog, and agent-assisted debugging</span></li>\n  </ul>\n  <h2 dir=\"ltr\"><span>On-demand NVIDIA H100 and A10 GPUs in notebooks</span></h2>\n  <p><img src=\"https://www.databricks.com/sites/default/files/inline-images/unnamed.gif?v=1773870433\" data-entity-uuid=\"965e6d62-26b0-4b76-83d1-b560c3ed50d8\" data-entity-type=\"file\" alt=\"AI Runtime\" width=\"1600\" height=\"741\" loading=\"lazy\" data-ot-ignore=\"1\"></p>\n  <p dir=\"ltr\"><span>For interactive development and debugging, connect to on-demand A10s and H100s in Databricks Notebooks with just a few clicks. From there, leverage all the developer ergonomics that Databricks is known for, from environment management for common Python packages to agent-powered authoring and debugging with&nbsp;</span><a href=\"https://www.databricks.com/blog/introducing-genie-code\"><span>Genie Code</span></a><span>. Easily mount data from the Lakehouse to train deep learning models, or even invoke a fleet of remote CPUs for Spark data processing workloads from your GPU-powered notebook to prepare your data.</span></p>\n  <p><img src=\"https://www.databricks.com/sites/default/files/inline-images/genie-code-demo.gif?v=1773853766\" data-entity-uuid=\"a7428ec3-b07c-43cb-82f2-132f624132bf\" data-entity-type=\"file\" alt=\"Genie Code demo\" width=\"1600\" height=\"871\" loading=\"lazy\" data-ot-ignore=\"1\"></p>\n  <p><span>Use Genie Code to help resolve performance bottlenecks, experiment with new&nbsp;architectures, or debug tricky bugs around model convergence or cryptic framework errors.&nbsp;</span></p>\n  <h2 dir=\"ltr\"><span>Lakeflow for production-ready workloads&nbsp;</span></h2>\n  <p dir=\"ltr\"><span>AI Runtime is a production-grade platform for accelerated computing. Develop your deep learning code in interactive notebooks, and then use the full power of </span><a href=\"https://www.databricks.com/product/data-engineering\"><span>Lakeflow</span></a><span> to submit and orchestrate jobs on GPU compute. Both notebooks and custom code repositories can be executed by Lakeflow for long-running or scheduled jobs. For production needs such as CI/CD (continuous integration and continuous deployment), AI Runtime is fully compatible with our&nbsp;</span><a href=\"https://docs.databricks.com/aws/en/dev-tools/bundles/\"><span>Declarative Automation Bundles (DABs)</span></a><span>.</span></p>\n  <p dir=\"ltr\"><span>With our Lakeflow integration, customers can keep model training and fine-tuning tightly synchronized with upstream data pipelines and downstream production systems.</span></p>\n  <blockquote class=\"border-orange-04-a11y my-3 grid gap-1 border-l-4 px-4 md:my-4 lg:my-6 lg:gap-2 lg:px-5\" data-cy=\"ArticleQuote\">\n   <span class=\"text-2.5 lg:text-3 text-navy-800\">“Databricks'&nbsp;AI Runtime greatly streamlined the process of training a custom Text To Formula (TTF) model. With no infrastructure setup or delays, it was easy to choose the right compute based on prompt size and output token generation. This allowed us to move quickly, maintain our Lakehouse workflows, and deliver a high-quality model with full governance, reducing time to setup, train and deploy our model from days to hours.”</span><span class=\"b5 lg:b4 text-orange-04-a11y block font-bold\">— Nikhil Sunderraj&nbsp; Principal Machine Learning Engineer,&nbsp; FactSet Research Systems, Inc.</span>\n  </blockquote>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/job.gif?v=1773870433\" data-entity-uuid=\"e446d9df-d3c9-407d-9aa4-b7cab5cafdc2\" data-entity-type=\"file\" alt=\"Test job\" width=\"2704\" height=\"1602\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <h2 dir=\"ltr\"><span>Runtime optimized for distributed deep learning</span></h2>\n  <p dir=\"ltr\"><span>Distributed training workloads can be painful to prepare, debug, and observe. From troubleshooting RDMA setups to tracking telemetry from multiple GPUs to proper software configuration, users can easily miss critical details that dramatically slow model training.&nbsp;</span></p>\n  <p dir=\"ltr\"><span>Instead, AI Runtime is optimized for the entire deep learning lifecycle—and is designed to save you time. Key dependencies like PyTorch and CUDA come pre-installed, along with optimized support for distributed training frameworks such as Ray, Hugging Face Transformers, Composer, and other libraries, so you can start training immediately without managing environments. Customers are also welcome to bring their own libraries, from Unsloth to TorchRec to custom training loops.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/image1_90.png?v=1773853179\" data-entity-uuid=\"80c4d656-cd9f-423e-b160-467bb912d13b\" data-entity-type=\"file\" alt=\" Integrated SDKs and observability tools simplify the management of distributed training workloads. \" width=\"1830\" height=\"628\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><span>Integrated SDKs and observability tools simplify the management of distributed training workloads. MLFlow enables deep observability of GPU workloads, with automatic tracking of GPU utilization and training experiments. Whether you're fine-tuning foundation models or training forecasting and personalization models, the runtime is optimized to accelerate training workflows with minimal setup.</span></p>\n  <img src=\"https://www.databricks.com/sites/default/files/inline-images/mlflow-final-gif.gif?v=1773939228\" data-entity-uuid=\"28e7e2b7-4eb3-4412-8725-33aa403b838f\" data-entity-type=\"file\" alt=\"MLFlow enables deep observability of GPU workloads, with automatic tracking of GPU utilization and training experiments. \" width=\"3436\" height=\"1722\" loading=\"lazy\" data-ot-ignore=\"1\">\n  <p dir=\"ltr\"><span>Today’s Public Preview of AI Runtime supports distributed training across 8x H100s in a single-node, with multi-node support currently in Private Preview.</span></p>\n  <blockquote class=\"border-orange-04-a11y my-3 grid gap-1 border-l-4 px-4 md:my-4 lg:my-6 lg:gap-2 lg:px-5\" data-cy=\"ArticleQuote\">\n   <span class=\"text-2.5 lg:text-3 text-navy-800\">\"Databricks' AI Runtime enables us to efficiently run LLM workloads (fine tuning and inference) without infrastructure overhead, directly in our lakehouse. This&nbsp;seamless integration simplifies our pipelines and provides efficient use of GPUs, enabling us to deliver high quality AI insights to our customers and focus on innovation, not on infrastructure.\"</span><span class=\"b5 lg:b4 text-orange-04-a11y block font-bold\">— Lucas Froguel, Senior AI Platform Engineer, YipitData</span>\n  </blockquote>\n </body>\n</html>",
+  "aiSummary": "Databricks 推出“AI Runtime”，这是一种用于模型训练和微调的无服务器、按需 GPU 基础设施，旨在通过将计算与现有的数据治理和可观测性工具集成，来简化 MLOps 生命周期。",
+  "oneSentenceSummary": "Databricks 推出“AI Runtime”，这是一种用于模型训练和微调的无服务器、按需 GPU 基础设施，旨在通过将计算与现有的数据治理和可观测性工具集成，来简化 MLOps 生命周期。",
+  "summary": "本文宣布了 Databricks AI Runtime (AIR) 的公开预览版，这是一种旨在降低深度学习 GPU 基础设施管理复杂性的平台解决方案。通过提供对 NVIDIA A10 和 H100 GPU 的无服务器、按需访问，AIR 允许开发人员跳过手动集群配置和设置。该运行时深度集成于 Databricks 生态系统中，利用 Lakeflow 进行编排，MLflow 进行可观测性管理，以及 Unity Catalog 进行治理。它还包括预配置的环境（带有优化的库，如 PyTorch、CUDA）以及像 Genie Code 这样的智能体辅助调试工具，旨在加速从交互式 Notebook 开发到生产级分布式训练的过渡。",
+  "mainPoints": [
+    {
+      "point": "解决深度学习中的基础设施瓶颈。",
+      "explanation": "文章指出，GPU 基础设施的采购、配置和调试是主要的阻碍因素，分散了研究人员对核心建模工作的注意力。"
+    },
+    {
+      "point": "无服务器、按需 GPU 配置。",
+      "explanation": "AIR 允许用户直接将 A10 和 H100 GPU 挂载到 Notebook 上，而无需管理集群，从而实现按需付费并消除闲置时间成本。"
+    },
+    {
+      "point": "用于端到端 MLOps 的生态系统集成。",
+      "explanation": "通过与 Lakeflow、MLflow 和 Unity Catalog 集成，该运行时确保 GPU 工作负载能够受益于现有的数据流水线、治理和实验跟踪。"
+    },
+    {
+      "point": "优化的环境管理。",
+      "explanation": "该运行时预装了 PyTorch 和 CUDA 等关键依赖项，并支持分布式训练框架，减少了环境设置和依赖地狱（dependency hell）所花费的时间。"
+    }
+  ],
+  "keyQuotes": [
+    "深度学习研究人员更倾向于专注于建模，而不是排查基础设施故障。",
+    "只需点击 2-3 次即可配置您的 Notebook，并快速挂载到无服务器 A10 和 H100 GPU 上开始训练——无需集群。",
+    "AI Runtime 针对整个深度学习生命周期进行了优化，旨在为您节省时间。",
+    "通过我们的 Lakeflow 集成，客户可以将模型训练和微调与上游数据流水线及下游生产系统保持紧密同步。"
+  ],
+  "tags": [
+    "Databricks",
+    "AI Runtime",
+    "无服务器 GPU",
+    "LLM 训练",
+    "MLOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 76,
+  "wordCount": 789,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773943203000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 18:00:03"
+}

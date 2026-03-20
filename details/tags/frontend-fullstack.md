@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-20 08:11:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-20 10:55:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -612,29 +612,33 @@
 
 
 
+### [如何在-Node.js-中设置-WebAuthn-以实现无密码生物识别登录](https://www.freecodecamp.org/news/set-up-webauthn-in-node-js-for-passwordless-biometric-login/)
+
+2026-03-19 19:43:18 | 标签: WebAuthn, Node.js, Passkeys, 网络安全, 身份验证
+
+> 本文为开发者提供了使用 Node.js 和 Express 实现 WebAuthn（通行密钥）的详细路线图。文章首先批判了长效 JWT 的常见缺陷，这些 JWT 容易受到窃取和重放攻击。作者解释了 WebAuthn 的加密基础——即私钥保留在设备上的非对称加密——并详细介绍了注册和身份验证的“仪式”（ceremony）。除了基础设置外，本指南还涵盖了生产环境中的关键问题，包括安全会话管理、多设备恢复策略以及针对高风险操作实施“逐步验证”（step-up authentication），为现代身份管理提供了一套完整的架构模式。
+
+
+
 ### [如何自动化表单-UX-审计：错误处理、提示信息与键盘操作流程](https://www.freecodecamp.org/news/automate-form-ux-audits-handbook/)
 
-2026-03-19 17:56:31 | 标签: UX 审计, Web 可访问性, WCAG, 表单验证, 自动化
-
-> 本手册提供了一种用于自动化 Web 表单用户体验（UX）审计的结构化方法。它强调了表单在转化中的关键作用，并指出了常见的摩擦点，如模糊的错误信息和糟糕的键盘导航。作者将 Nielsen Norman 的可用性启发式评估与 WCAG 2.1 可访问性标准相结合，创建了一个程序化测试框架。主要功能包括用于定义审计范围的 JavaScript 代码片段、将特定 WCAG 标准映射到自动化测试函数，以及建立二元通过/失败阈值。该指南还介绍了用于文档记录的“5C”框架，并将技术审计结果直接与减少流失率和支持工单量等业务 KPI 挂钩。
+2026-03-19 17:56:31
 
 
 
 ### [QCon-London-2026：Spritely：互联网未来的基础设施](https://www.infoq.com/news/2026/03/spritely-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-19 15:10:00 | 标签: 去中心化, P2P, 基于能力的安全, Actor 模型, WebAssembly
-
-> 这篇来自 QCon London 2026 的报告介绍了 Spritely Institute 的 Christine Lemmer-Webber 和 David Thompson，他们讨论了构建“P2P 版 Rails”基础设施的努力。演讲强调了中心化技术固有的风险，例如服务降级和用户自主权的缺失。Spritely 通过三大支柱来解决这些问题：通过最小权限原则（POLA）和“能力”（使用 Goblins 环境）保护资源；通过 Actor 模型和对象能力网络（OCapN）协议实现安全的进程通信；以及使用“宠物名”（Petnames）解决 Zooko 三角形中的命名冲突。该项目还引入了 Hoot...
+2026-03-19 15:10:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -784,13 +788,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2284,13 +2288,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -3994,13 +3998,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
