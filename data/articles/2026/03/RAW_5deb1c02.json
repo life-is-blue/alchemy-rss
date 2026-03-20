@@ -1,0 +1,63 @@
+{
+  "id": "RAW_5deb1c02",
+  "title": "科技行业谈论“最佳实践”时存在的问题",
+  "url": "https://hackernoon.com/the-problem-with-how-the-tech-industry-talks-about-best-practices?source=rss",
+  "date": "2026-03-20 05:19:44",
+  "author": "Nitish Yadav",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Let me tell you about a code review I sat through two years into my engineering career. I had written a solution that worked. I had written a solution that worked out. It changed into readable, it turned into fast, and it solved the exact trouble we had. My senior engineer looked at it and said a few words I still think about:</p>\n  <p>\"That's not best practice.\" No explanation. No alternative. Just the verdict. I rewrote it the \"right\" way. It was longer, harder to read, and introduced two new dependencies we didn't need. But it followed the pattern. Everyone nodded. The PR was merged. That moment stuck with me, not because I was bitter about it, but because I realized I had just witnessed something the tech industry does constantly without ever questioning it.</p>\n  <p>We use \"best practices\" as a full stop. As an argument that ends conversations instead of starting them. And I think that's a serious problem.</p>\n  <h2 id=\"bestpracticehasbecomeashieldnotatool\">\"Best Practice\" Has Become a Shield, Not a Tool</h2>\n  <p>Here's what \"best practice\" is supposed to mean: <strong>a method that has been consistently shown to produce good results across a variety of contexts.</strong> It's supposed to be earned through evidence, iteration, and failure.</p>\n  <p>Here's what it actually gets used for most of the time: to avoid justifying a decision. I've seen teams implement microservices for a product with three users because \"it's best practice for scalability.\" I've seen junior developers get torn apart for not following SOLID principles in a 200-line internal script that no one else would ever touch.</p>\n  <p>I've watched architects spend three days debating folder structure in a project where the actual architecture was a slow-motion disaster. The phrase has become a rhetorical trick. When someone says \"best practice,\" what they often mean is: I read this somewhere authoritative, and now I don't have to think about whether it applies here.</p>\n  <h2 id=\"thecontextproblemnobodytalksabout\">The Context Problem Nobody Talks About</h2>\n  <p>Here's the thing about best practices that somehow never makes it into the conversation: they are almost always context-specific. MVC works beautifully for certain applications. It becomes a cage in others.</p>\n  <p>Test-driven development is transformative when you're building a public API that a hundred developers will depend on. It can slow you to a crawl when you're trying to validate whether a feature should exist at all. YAGNI. DRY. KISS. These aren't laws of nature.</p>\n  <p>They're heuristics, educated guesses developed in specific contexts, by specific teams, solving specific problems. The moment we strip away that context and present them as universal truths, we've lost something important. I am not arguing that best practices are useless.</p>\n  <p>I'm arguing that we've built a culture where referencing them replaces thinking about them. A good engineer asks: <strong>Does this apply here?</strong> What problem was this practice designed to solve? Is that the problem I have right now? A culture captured by cargo-cult best practices asks: Is this the approved way?</p>\n  <h2 id=\"wherethisactuallyhurtspeople\">Where This Actually Hurts People</h2>\n  <p>The most visible cost is bad technical decisions. But there's a human cost too, and I don't see enough people talking about it. When \"best practice\" becomes the final word, it becomes a power move. It disproportionately silences junior engineers and people newer to a codebase who don't yet have the vocabulary to push back.</p>\n  <p>They learn early that the way to survive is to memorize the approved patterns and stop questioning them. I was that junior engineer. I spent nearly a year doing exactly that, absorbing patterns, applying them, not asking why. And I was praised for it. It was only when I started working on a small, scrappy product with a tight deadline that I was forced to make decisions without a safety net of \"best practice.\" Suddenly, I had to understand why things worked, not just how to do them the approved way.</p>\n  <p>That pressure taught me more than the previous year of careful compliance had. The engineers who have been most valuable to work alongside aren't the ones with the most pattern references in their heads. They're the ones who can look at a situation and say: here's what I know, here's what this problem actually is, and here's what I think actually makes sense. Sometimes that aligns with established practice. Sometimes it doesn't. They can tell the difference.</p>\n  <h2 id=\"theindustrylovesrulesmorethanitlovesthinking\">The Industry Loves Rules More Than It Loves Thinking</h2>\n  <p>I've started noticing a pattern in how engineering content gets written and shared. Articles that say \"here are 7 best practices for X\" get hundreds of thousands of views.</p>\n  <p>Articles that say \"here's when not to use X and why\" get a fraction of the engagement. We have built an incentive structure that rewards the packaging of rules over the sharing of judgment. This trickles directly into how engineers learn, how they get hired, and how they get evaluated.</p>\n  <p>Technical interviews frequently test whether candidates know the approved answer. Code reviews often reward compliance over cleverness. Senior engineers get status for being the authority on what the right practice is, which means their authority is threatened when someone questions the practice. I'm not naïve about why this happens.</p>\n  <p>Rules are easier to teach than judgment. Rules are easier to enforce in large teams. Rules give organizations consistency. I get it. But consistency without judgment is how you end up building the right thing the wrong way, or worse, the wrong thing very, very correctly.</p>\n  <h2 id=\"whatiactuallywantfromtheindustry\">What I Actually Want From the Industry</h2>\n  <p>I want engineers to say \"in my experience\" more often. I want more articles that start with a failure and work backward to a principle instead of starting with a principle and illustrating it with a cherry-picked success.</p>\n  <p>I want code reviewers to explain the why behind every pattern they enforce, and if they can't, to consider whether they should be enforcing it. I want engineering culture to treat \"I disagree with this approach and here's why\" as a sign of seniority, not a red flag. Most of all, I want us to stop using \"best practice\" as a substitute for thinking.</p>\n  <p>Use it as a starting point. Use it as a question. Ask: best for whom, in what context, solving which problem? If you can't answer those questions, you're not following a best practice. You're just following orders.</p>\n </body>\n</html>",
+  "aiSummary": "本文批判了科技行业对“最佳实践”的盲目推崇，指出这些实践常被用作替代批判性思维和情境化决策的借口，最终阻碍了工程能力的成长与创新。",
+  "oneSentenceSummary": "本文批判了科技行业对“最佳实践”的盲目推崇，指出这些实践常被用作替代批判性思维和情境化决策的借口，最终阻碍了工程能力的成长与创新。",
+  "summary": "本文挑战了当前主流的工程文化，即把“最佳实践”视为不可动摇的法则，而非依赖于具体情境的启发式方法。作者通过个人反思，阐述了这一术语如何常被“武器化”，用以终止辩论、强制统一，并逃避对技术决策进行严谨论证。文章强调了这种思维模式带来的负面影响，特别是对于那些被训练去死记硬背模式而非理解底层问题的初级工程师而言。作者认为，真正的工程资深程度在于能够应用针对特定情境的解决方案，而非盲目遵循既定规则，并呼吁进行文化转变，优先考虑判断力，强调“为什么”胜过“怎么做”，并以开放的讨论取代僵化的合规。",
+  "mainPoints": [
+    {
+      "point": "“最佳实践”常被误用为终结对话的工具，而非开启讨论的起点。",
+      "explanation": "该术语常被用来终止辩论并避免为决策辩护，而不是作为一种根据特定项目需求指导工程选择的工具。"
+    },
+    {
+      "point": "像 DRY 或 KISS 这样的启发式原则依赖于具体情境，不应被视为普适法则。",
+      "explanation": "工程原则是在特定背景下发展出来的经验性猜测；剥离这些背景并将其普遍应用，往往会导致糟糕的技术结果。"
+    },
+    {
+      "point": "盲目遵循模式会造成一种“货物崇拜”文化，从而扼杀批判性思维。",
+      "explanation": "当工程师因合规而非判断力受到奖励时，他们会丧失独立分析问题的能力，这对长期的职业成长是有害的。"
+    },
+    {
+      "point": "行业目前的激励结构奖励的是遵循规则，而非细致的判断。",
+      "explanation": "内容、招聘流程和代码审查往往优先考虑“标准”答案，这使得传授规则比培养复杂工程所需的判断力更容易。"
+    },
+    {
+      "point": "真正的工程资深程度在于理解决策背后的“为什么”。",
+      "explanation": "有价值的工程师能够评估形势、识别实际问题，并确定既定实践是否是正确的解决方案，而不是默认直接套用。"
+    }
+  ],
+  "keyQuotes": [
+    "我们把“最佳实践”当作句号。它成了一种终结对话而非开启对话的论据。",
+    "当我们剥离了背景并将它们呈现为普适真理的那一刻，我们就失去了一些重要的东西。",
+    "我认为我们已经建立了一种文化，在这种文化中，引用它们取代了对它们的思考。",
+    "没有判断力的统一性，最终会导致你用错误的方式构建了正确的东西，或者更糟的是，以非常、非常正确的方式构建了错误的东西。",
+    "如果你无法回答这些问题，你就不是在遵循最佳实践。你只是在服从命令。"
+  ],
+  "tags": [
+    "软件工程",
+    "工程文化",
+    "最佳实践",
+    "批判性思维",
+    "技术决策"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1043,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773983984000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 05:19:44"
+}

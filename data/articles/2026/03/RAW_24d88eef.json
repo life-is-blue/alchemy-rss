@@ -1,0 +1,59 @@
+{
+  "id": "RAW_24d88eef",
+  "title": "Cursor 自研模型反超 Opus 4.6！价格脚踝斩，氛围编程沸腾了",
+  "url": "https://www.qbitai.com/2026/03/389673.html",
+  "date": "2026-03-20 04:09:59",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">倒反天罡了朋友！</p>\n  <p data-track=\"2\">Cursor新模型不仅性能超越Claude，而且价格更是直接“脚踝斩”（都不说腰斩了）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_92c8ce72ee41ebe6e2f326f6153dc2b7.jpeg\" data-src=\"https://image.jido.dev/20260320050312_92c8ce72ee41ebe6e2f326f6153dc2b7.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"3\">众所周知，Cursor作为模型提供商，早期还靠供应Claude模型狠狠吸了一波粉。</p>\n  <p data-track=\"4\">结果现在，它自己搞出了一款编程模型，而且转身就把Claude拉下马了——</p>\n  <p data-track=\"5\">其最新编程模型<strong>Composer 2</strong>，不仅能力超越Claude Opus 4.6，关键是价格降了非常多。</p>\n  <p data-track=\"6\">就这么说吧，别人降价是“腰斩”，它这直接是<strong>“脚踝斩”</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050313_362b409ea05a1f1d856f408f9dfa2ea9.webp\" data-src=\"https://image.jido.dev/20260320050313_362b409ea05a1f1d856f408f9dfa2ea9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">那么问题来了，Cursor凭啥能在大家都“涨价”的时候把价格打下去呢？</p>\n  <p data-track=\"8\">（注：随着“龙虾”爆火，全球大模型Token消耗量呈指数级增长，所以从年初开始，国内外云厂商和大模型公司都在集体涨价。）</p>\n  <p data-track=\"9\">答案，Cursor也随之公布了——</p>\n  <p data-track=\"10\"><strong>一种新的强化学习方法</strong>。</p>\n  <p data-track=\"12\">先说目前已经在Cursor上线的<strong>Composer 2</strong>。</p>\n  <p data-track=\"13\">从名字英译“编曲家”你就能猜出来了，这款模型主打的是“编程家”（bushi。</p>\n  <p data-track=\"14\">鉴于“龙虾”爆火后编程消耗的Token用量一路激增，所以Cursor当下只有一个目标——</p>\n  <p data-track=\"15\">性价比、性价比、还是性价比。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_8468d2fb58863fb6d3bb60d6bfba0770.jpeg\" data-src=\"https://image.jido.dev/20260320050312_8468d2fb58863fb6d3bb60d6bfba0770.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"16\">何谓性价比？自然是“兼顾智能与成本的最优组合”。</p>\n  <p data-track=\"17\">能力方面，Cursor表示：</p>\n  <blockquote>\n   <p data-track=\"18\">Composer 2在我们衡量的所有基准测试上都取得了大幅提升，其中包括Terminal-Bench 2.0和SWE-bench Multilingual。</p>\n  </blockquote>\n  <p data-track=\"19\">比如在衡量智能体终端操作能力的Terminal-Bench 2.0上，其水平目前已经跃居GPT-5.4和Claude Opus 4.6之间。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050311_9ca13e30694f32edfa84f54eda8d7c34.webp\" data-src=\"https://image.jido.dev/20260320050311_9ca13e30694f32edfa84f54eda8d7c34.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"20\">而且从Composer模型的迭代来看，其进化速度正不断加快。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_166991265fe775bdd8f8a90cfbb6bb5c.webp\" data-src=\"https://image.jido.dev/20260320050312_166991265fe775bdd8f8a90cfbb6bb5c.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">定价方面，标准版Composer 2的输入价格为0.5美元/百万tokens（约合人民币3.5元）、输出价格为2.5美元/百万tokens（约合人民币17.2元）。</p>\n  <p data-track=\"22\">你瞅，和Claude Opus 4.6相比，几乎真到了“脚踝”的程度。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050313_269c735a266d1b704b5de92935e3024a.webp\" data-src=\"https://image.jido.dev/20260320050313_269c735a266d1b704b5de92935e3024a.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"23\">与此同时，Cursor还推出了一个“智能水平相同但速度更快的变体”——<strong>Composer 2 Fast</strong>。</p>\n  <p data-track=\"24\">这款默认模型的定价为，每百万输入tokens 1.5美元（约合人民币10.3元）、每百万输出tokens 7.5美元（约合人民币51.7元）。</p>\n  <p data-track=\"25\">和Claude Opus 4.6相比，它不仅延续了价格优势，而且速度更是一骑绝尘。</p>\n  <p data-track=\"26\">而据Cursor透露，它之所以能在性能和价格之间取得平衡，核心还是靠<strong>引入了一种新的强化学习方法</strong>。</p>\n  <p data-track=\"27\">划重点，该方法不是推理技巧，而是实实在在训练出来的能力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_1af1c214a30f8be44578107c67ef4fb2.webp\" data-src=\"https://image.jido.dev/20260320050312_1af1c214a30f8be44578107c67ef4fb2.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"29\">如果用一句话来总结这种新方法，那便是：</p>\n  <p data-track=\"30\"><strong>让模型学会“自己给自己做会议纪要”，从而把原本记不住的超长任务，一步步接着干下去。</strong></p>\n  <p data-track=\"31\">Cursor的原话如下：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_f1a37d00316c6b8bc39eebdbd5f2eba6.webp\" data-src=\"https://image.jido.dev/20260320050312_f1a37d00316c6b8bc39eebdbd5f2eba6.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\">虽然这种名为“自我总结的强化学习方法”听起来有点拗口，但思路其实很清晰。</p>\n  <p data-track=\"33\">它核心解决的问题是——</p>\n  <p data-track=\"34\">如今大多数AI编程助手都很能干活了，但一旦任务变长、变复杂，就会开始不停掉链子。</p>\n  <p data-track=\"35\">这背后的原因呢，大家也都很清楚：<strong>上下文装不下</strong>。</p>\n  <p data-track=\"36\">一个复杂工程任务动辄就是上万行代码、上百步操作，而模型的上下文窗口总是有限的，所以很多任务根本跑不到终点。</p>\n  <p data-track=\"37\">而为了突破上下文瓶颈，目前业界<strong>围绕“压缩”</strong>有两种主流解法：</p>\n  <ul>\n   <li data-track=\"38\">要么做摘要，总结一波再继续；</li>\n   <li data-track=\"39\">要么直接通过滑动上下文窗口，丢弃较早的上下文。</li>\n  </ul>\n  <p data-track=\"40\">又或者一些比较新的探索尝试——在潜在空间中压缩，将上下文压缩成向量而非文本（这种方法虽然比文本压缩慢但准确率更高）。</p>\n  <p data-track=\"41\">但不管是哪种，初步看下来都不够靠谱，它们都有可能导致模型遗忘上下文中的关键信息，从而在推进长时间运行的任务时降低其效果。</p>\n  <p data-track=\"42\">换言之，<strong>任务越长，模型越容易跑偏</strong>。</p>\n  <p data-track=\"43\">而Cursor的解法是——首先总结很重要，其次把这种总结能力内化成模型自己的能力也很重要。</p>\n  <p data-track=\"44\">所以他们给自家模型加了一套<strong>“self-summary（自我总结）”</strong>的机制：</p>\n  <p data-track=\"45\">模型干活干到一半，不是被动压缩，而是主动停下来给自己写一段“阶段总结”，俗称“做笔记”。</p>\n  <p data-track=\"46\">具体流程大致如下：</p>\n  <p data-track=\"47\">1、Composer基于提示词持续生成，直到达到固定的token长度触发点。\n   <br class=\"sysbr\">\n   2、插入一个合成查询，要求模型总结当前上下文。\n   <br class=\"sysbr\">\n   3、给模型提供一定的草稿思考空间，让它构思最佳总结，然后生成压缩后的上下文。\n   <br class=\"sysbr\">\n   4、Composer使用压缩后的上下文回到步骤1；该上下文包含总结以及对话状态（规划状态、剩余任务、之前总结的次数等） 。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_85c0a78744b99e4ae585107e21fb33ef.webp\" data-src=\"https://image.jido.dev/20260320050312_85c0a78744b99e4ae585107e21fb33ef.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"48\">这里面比较关键的一点是，<strong>模型的自我总结能力不是推理技巧，而是训练出来的</strong>。</p>\n  <p data-track=\"49\">在强化学习过程中，这种总结能力会被算进奖励里：</p>\n  <ul>\n   <li data-track=\"50\">总结得好→后面任务更容易成功→奖励更高</li>\n   <li data-track=\"51\">总结丢信息→任务失败→被惩罚</li>\n  </ul>\n  <p data-track=\"52\">结果就是，模型慢慢搞清了：什么信息值得留下，什么可以丢掉。</p>\n  <p data-track=\"53\">具体效果可以看和传统方法的对比。</p>\n  <p data-track=\"54\">在一组高难度软件工程任务上，“传统摘要法”光是总结提示词就要写几千个tokens，而且压缩后的结果也不短，平均需要5000+tokens。</p>\n  <p data-track=\"55\">而Composer的提示词非常简单，基本就一句话“Please summarize the conversation”，且压缩后的输出平均只有1000个tokens。</p>\n  <p data-track=\"56\">在同样的任务上，<strong>后者token用量只有传统方法的1/5，而且压缩带来的错误直接减少约50%</strong>。</p>\n  <p data-track=\"57\">换句话说，压缩得更狠，但信息更关键。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_41729c1b5cff7e1ba0201b1b5a55a0c3.webp\" data-src=\"https://image.jido.dev/20260320050312_41729c1b5cff7e1ba0201b1b5a55a0c3.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"58\">更有意思的是，它真能解决长链条任务。</p>\n  <p data-track=\"59\">Cursor拿出了一道难倒一众模型的经典难题——<strong>把Doom游戏跑在MIPS架构上</strong>。</p>\n  <blockquote>\n   <p data-track=\"60\">我已经提供了 /app/doomgeneric/，也就是 doom 的源代码。我还编写了一个特殊的 doomgeneric_img.c，希望您使用它；它会将绘制的每一帧写入 /tmp/frame.bmp。最后，我还提供了 vm.js，它会读取一个名为 doomgeneric_mips 的文件并运行它。其余部分请您自行解决……</p>\n  </blockquote>\n  <p data-track=\"61\">由于需要模型自己改代码、编译调试、反复试错……所以很多模型到后来基本都直接卡死了。</p>\n  <p data-track=\"62\">但Composer在经过170轮交互后，找到了精确的解法，并在过程中将10w+tokens总结压缩到了1000个。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_7bb53a822ef1e33c56e1bb9738a3ef50.jpeg\" data-src=\"https://image.jido.dev/20260320050312_7bb53a822ef1e33c56e1bb9738a3ef50.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"63\">总之，一系列内部测试表明：</p>\n  <blockquote>\n   <p data-track=\"64\">通过将压缩整合进训练循环，Composer学会了一种显式机制，能够高效地将关键信息向后传递，并在高难度任务上变得更有能力。</p>\n  </blockquote>\n  <p data-track=\"65\">而且前面不是说了Cursor节奏很快，这不，Cursor研究员也已经开始放出<strong>Composer 3</strong>的消息了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050312_8b1c5a0ee74d6bb081c97fe8c8820fb4.webp\" data-src=\"https://image.jido.dev/20260320050312_8b1c5a0ee74d6bb081c97fe8c8820fb4.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"66\">只能说发展到现在，Cursor以后也是有双重身份的“人”了。其CEO表示：</p>\n  <blockquote>\n   <p data-track=\"67\">Cursor是一个典型的新公司，既不是纯粹的应用程序开发商，也不是模型提供商。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050311_16dc69e995e7436fc3c26156258adea1.webp\" data-src=\"https://image.jido.dev/20260320050311_16dc69e995e7436fc3c26156258adea1.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"68\">就是不知道能不能等一个开源？反正抱抱脸联创兼CEO已经去帮大家求了（抱拳jpg）。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320050313_3f6ff2b768314cf02e9e2f08e2154117.webp\" data-src=\"https://image.jido.dev/20260320050313_3f6ff2b768314cf02e9e2f08e2154117.webp\">\n  </div>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Cursor 发布自研编程模型 Composer 2，凭借创新的“自我总结”强化学习技术，在性能超越 Claude Opus 4.6 的同时实现了价格的“脚踝斩”。",
+  "oneSentenceSummary": "Cursor 发布自研编程模型 Composer 2，凭借创新的“自我总结”强化学习技术，在性能超越 Claude Opus 4.6 的同时实现了价格的“脚踝斩”。",
+  "summary": "本文详细报道了 AI 编程工具 Cursor 推出的自研模型 Composer 2 及其高性能变体。该模型在 Terminal-Bench 2.0 等多项基准测试中超越了行业标杆 Claude Opus 4.6，且使用成本大幅降低。核心技术突破在于引入了一种名为“自我总结（Self-summary）”的强化学习方法，使模型在处理长链条复杂任务时，能主动进行阶段性总结并压缩上下文。相比于传统的摘要或滑动窗口方案，该方法将 Token 用量降至五分之一，同时错误率减少了 50%，显著提升了模型在超长任务（如在 MIPS 架构上运行 Doom）中的逻辑连贯性和执行成功率。此举标志着 Cursor 从单纯的应用开发商向具备核心模型研发能力的综合性 AI 公司转型。",
+  "mainPoints": [
+    {
+      "point": "Cursor 推出自研模型 Composer 2，在性能超越顶级模型的同时实现了极低定价。",
+      "explanation": "通过自研模型打破了对外部供应商的依赖，在 Terminal-Bench 2.0 等测试中表现优异，且输入输出价格仅为 Claude Opus 4.6 的一小部分。"
+    },
+    {
+      "point": "核心技术“自我总结（Self-summary）”通过强化学习将总结能力内化为模型本能。",
+      "explanation": "模型在处理长任务时会主动停下来进行阶段性笔记，这种能力是在训练循环中通过奖励机制习得的，而非简单的提示词工程，有效解决了长上下文遗忘问题。"
+    },
+    {
+      "point": "新型压缩机制显著提升了长链条复杂工程任务的处理效率和准确性。",
+      "explanation": "相比传统摘要法，新机制将 Token 用量压缩至 1/5，错误率降低 50%，使模型能支撑超过 170 轮的复杂交互，完成如跨架构运行游戏等高难度任务。"
+    },
+    {
+      "point": "Cursor 正在从单一的应用层产品向具备底层模型研发能力的综合体演进。",
+      "explanation": "CEO 表示 Cursor 既非纯粹的应用商也非纯模型商，这种垂直整合模式使其能针对编程场景进行深度优化，快速迭代出如 Composer 3 等后续产品。"
+    }
+  ],
+  "keyQuotes": [
+    "其最新编程模型 Composer 2，不仅能力超越 Claude Opus 4.6，关键是价格降了非常多。",
+    "让模型学会‘自己给自己做会议纪要’，从而把原本记不住的超长任务，一步步接着干下去。",
+    "这种名为‘自我总结的强化学习方法’听起来有点拗口，但思路其实很清晰。",
+    "压缩得更狠，但信息更关键。",
+    "Cursor 是一个典型的新公司，既不是纯粹的应用程序开发商，也不是模型提供商。"
+  ],
+  "tags": [
+    "Cursor",
+    "Composer 2",
+    "AI 编程",
+    "强化学习",
+    "上下文压缩"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 11,
+  "score": 87,
+  "wordCount": 2577,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773979799000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 04:09:59"
+}

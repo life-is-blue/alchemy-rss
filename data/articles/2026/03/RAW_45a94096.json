@@ -1,0 +1,62 @@
+{
+  "id": "RAW_45a94096",
+  "title": "大多数团队都了解糟糕的 On-call，但很少有人能定义什么是好的 On-call。",
+  "url": "https://hackernoon.com/most-teams-know-bad-on-call-few-can-define-good-on-call?source=rss",
+  "date": "2026-03-20 05:40:33",
+  "author": "Spencer",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Healthy on-call isn’t about fewer incidents. It’s about building a system people can actually sustain.</em></p>\n  <p>Most engineering teams can tell when on-call is going badly. The pager is noisy, the same people keep getting pulled into serious incidents, and one bad night quietly spills into the next workday. The symptoms are familiar enough that nobody really needs them explained.</p>\n  <p>What is less clear, in a lot of organizations, is what good on-call is supposed to look like. Teams say they want fewer interruptions, less burnout, and better balance, but those are still negative definitions. They describe what people want to avoid, not the kind of operational model they want to build.</p>\n  <p>That gap matters. If “healthy on-call” only means “less painful than before,” teams will tolerate a lot that they should be fixing. A better standard is more concrete. Good on-call is not one where nothing ever breaks. It is one where the load is shared fairly, the person receiving the page knows what they own, documentation is good enough to use under pressure, and people can recover after a rough shift without absorbing all of that cost themselves.</p>\n  <h2 id=\"whyfairnessmatters\">Why Fairness Matters</h2>\n  <p>One of the easiest mistakes teams make is to look at on-call only in aggregate. They count total incidents, total alerts, or how often each person appears on the schedule. Those numbers do matter, but they can hide the part people actually experience: whether the burden is shared evenly.</p>\n  <p>A rotation can look balanced on paper and still lean too hard on a small group of engineers. It usually shows up in familiar ways. Certain people get pulled into the hardest incidents even when they are not on call. Certain systems effectively belong to one or two individuals. Certain responders become the unofficial second line whenever something ambiguous or high stakes happens.</p>\n  <p>That kind of unevenness does real damage over time. People do not experience on-call as an average. They experience it as interruption, stress, context switching, and responsibility. If those things keep landing on the same few people, the rotation is unhealthy even if the total volume looks manageable.</p>\n  <p>This is why fairness belongs at the center of any discussion about on-call health. The question is not only how much work exists. It is also who is repeatedly being asked to carry it.</p>\n  <h2 id=\"sleepispartofthecost\">Sleep Is Part of the Cost</h2>\n  <p>Teams also tend to underestimate the cost of nighttime interruption. It is common to treat overnight incidents as an unfortunate but routine part of keeping systems running. In practice, the effects last much longer than the incident itself.</p>\n  <p>Someone who has been paged in the middle of the night is not starting the next day from the same place they would have otherwise. Focus is worse. Patience is worse. Deep work takes longer. The person may still be online, still in meetings, and still technically available, but that should not be confused with being fully recovered.</p>\n  <p>A lot of teams count the incident but not the impact of the incident. The page is visible. The lost sleep is acknowledged for a few minutes. Then the planning assumptions for the next day stay the same. The same deadlines remain. The same meetings stay on the calendar. The same expectations hold, as though responding overnight had no operational cost beyond the time spent during the incident itself.</p>\n  <p>That is not a healthy way to run on-call. If the system required someone to give up sleep to protect production, the team should treat the consequences of that interruption as part of the work. Otherwise the cost does not disappear. It just gets pushed onto the responder privately.</p>\n  <h2 id=\"heroicsareawarningsign\">Heroics Are a Warning Sign</h2>\n  <p>Most engineering organizations have a few people who are especially strong in incidents. They are calm, fast, and deeply familiar with the systems around them. In the moment, it is easy to see those people as proof that the team is good under pressure.</p>\n  <p>Sometimes that is true. More often, repeated heroics are pointing to something less flattering.</p>\n  <p>When the same engineers are always the ones with the missing context, the ones who know where to look first, or the ones everybody expects to step in when things get messy, the team is relying on individual knowledge in places where it should be relying on clearer systems. The problem is not that strong incident responders exist. The problem is that too much of the organization’s operational resilience may live inside a few people instead of inside shared processes, documentation, and ownership boundaries.</p>\n  <p>Over time, teams normalize this without meaning to. Certain engineers become the real safety net for the rest of the system. They may not be the only people on the rotation, but they are the people everyone assumes will get involved if the incident is serious enough. That is not a durable model, and it is not a good definition of health.</p>\n  <p>Good on-call should not require regular acts of rescue. It should require clear systems, good judgment, and enough shared context that the job does not collapse onto the same people every time something goes wrong.</p>\n  <h2 id=\"clearownershipchangeseverything\">Clear Ownership Changes Everything</h2>\n  <p>A large part of what makes bad on-call stressful is not only the work itself, but the uncertainty around it. An alert fires and the responder has to figure out whether the service is theirs, whether the signal is trustworthy, what a safe first step looks like, and when someone else should be brought in. That kind of ambiguity is expensive, especially at the start of an incident.</p>\n  <p>Clear ownership changes the experience of being on call more than most teams expect. When responders know which systems they are responsible for, what the escalation path is, and what a reasonable first response should look like, incidents become easier to navigate. They may still be difficult, but they are less chaotic.</p>\n  <p>There is also a broader team benefit. Clear ownership reduces unnecessary escalation, limits off-rotation interruption, and makes it easier for engineers to build confidence over time. It turns incident response into something that can be learned and supported, rather than something that depends on improvising through confusion.</p>\n  <p>A lot of on-call pain comes from uncertainty that should have been resolved long before the page ever fired. Ownership does not solve every problem, but it removes a surprising amount of avoidable strain.</p>\n  <h2 id=\"runbooksmakeoncalleasier\">Runbooks Make On-Call Easier</h2>\n  <p>Runbooks are often discussed as a speed tool, which they are. But they also play a much more human role than that. Good documentation lowers the cognitive load of responding to incidents. It gives people a place to start when they are tired, under pressure, or less familiar with a service than the person who originally built it.</p>\n  <p>That matters because on-call gets worse as soon as too much of the process depends on memory. If the only way to respond safely is to remember exactly how a fragile system behaves, or to know which person to message, then the rotation is not really designed to support the team. It is designed around the assumption that someone with enough context will always be available.</p>\n  <p>Usable runbooks make the job less brittle. They help more engineers respond effectively. They reduce hesitation. They reduce the need to pull in the same expert every time something breaks. In that sense, runbooks are not just documentation. They are part of what makes the rotation workable.</p>\n  <p>Teams sometimes treat runbooks as a nice-to-have that can wait until later. In practice, they are one of the clearest ways to make on-call less stressful for the people actually doing it.</p>\n  <h2 id=\"recoveryshouldbeexpected\">Recovery Should Be Expected</h2>\n  <p>The final test is what happens after a bad night. If someone handles an incident at 2 a.m., does the team actually adjust the next day? Or does everyone behave as though the incident is over and normal expectations immediately resume?</p>\n  <p>That answer reveals a lot about how a team thinks about on-call. Unhealthy teams tend to treat recovery as an individual concern. Healthy teams treat it as part of operational planning. That does not mean every alert requires a dramatic policy response, but it does mean the organization recognizes that incident response takes something out of people and plans around that fact instead of ignoring it.</p>\n  <p>Sometimes recovery looks like moving a meeting. Sometimes it means shifting a deadline, redistributing work, or simply acknowledging that the person who handled the incident is not starting the day at full capacity. The specific response matters less than the principle. If incident response has a human cost, the system should account for it.</p>\n  <p>When recovery is left to personal sacrifice, on-call starts to feel like work that counts twice. People do the incident work when it happens, then quietly pay for it again afterward by making up lost time on their own. That is one of the clearest signs that a rotation may be functioning, but not functioning well.</p>\n  <p>A healthy rotation is not defined by silence. It is defined by whether the system is asking people to do work they can realistically sustain over time. If the load is fair, ownership is clear, documentation is useful, heroics are rare, and recovery is expected, on-call starts to look less like a recurring tax on a few individuals and more like a mature way of supporting production.</p>\n  <p>That is the standard more teams should be aiming for.</p>\n </body>\n</html>",
+  "aiSummary": "本文重新定义了“健康的 On-call”，将重心从单纯的减少事故转移到可持续的运营模式上，强调公平性、明确的责任归属、文档化以及制度化的恢复机制。",
+  "oneSentenceSummary": "本文重新定义了“健康的 On-call”，将重心从单纯的减少事故转移到可持续的运营模式上，强调公平性、明确的责任归属、文档化以及制度化的恢复机制。",
+  "summary": "本文指出，许多工程团队误将“不那么痛苦”等同于“健康的” On-call。实际上，一个真正健康的轮值体系需要一种优先考虑公平性、明确责任归属和人员可持续性的结构化方法。作者认为，团队往往依赖“个人英雄主义”——这是流程失效的危险信号——而不是共享知识。健康轮值体系的关键支柱包括：确保负担被平均分担，而不是依赖少数几个人；将睡眠损失视为一种切实的运营成本；维护可用的 Runbook 以降低认知负荷；以及将事故后的恢复时间制度化。本文旨在为工程经理和 SRE 提供指导，帮助他们构建持久、可持续且不依赖个人牺牲的 On-call 系统。",
+  "mainPoints": [
+    {
+      "point": "将关注点从汇总指标转移到公平性上。",
+      "explanation": "团队往往只关注事故总数，但一个真正健康的轮值体系需要分析是谁在承担这些负担，以确保其分布均匀。"
+    },
+    {
+      "point": "将睡眠损失视为一种切实的运营成本。",
+      "explanation": "夜间事故会影响次日的生产力；团队必须考虑到这种恢复时间，而不是期望一切照常运转。"
+    },
+    {
+      "point": "个人英雄主义是系统性失败的预警信号。",
+      "explanation": "依赖特定的“强力”响应者表明，运营韧性存在于个人身上，而不是共享的流程和文档中。"
+    },
+    {
+      "point": "明确的责任归属可以降低认知负荷。",
+      "explanation": "关于谁负责某项服务或如何升级的模糊性是压力的主要来源；定义清晰的边界使事故处理更容易。"
+    },
+    {
+      "point": "将恢复机制制度化为标准实践。",
+      "explanation": "恢复应该是团队的期望，而不是个人的牺牲；如果系统需要付出人力成本，那么系统就必须将其纳入考量。"
+    }
+  ],
+  "keyQuotes": [
+    "健康的 On-call 并不是指事故更少，而是指构建一个人们真正能够持续运营的系统。",
+    "如果“健康的 On-call”仅仅意味着“比以前不那么痛苦”，那么团队就会容忍许多本应修复的问题。",
+    "问题不在于存在强大的事故响应者，而在于组织过多的运营韧性可能存在于少数人身上，而不是共享的流程之中。",
+    "如果事故响应需要付出人力成本，系统就应该将其纳入考量。"
+  ],
+  "tags": [
+    "SRE",
+    "On-call",
+    "工程管理",
+    "卓越运营",
+    "职业倦怠"
+  ],
+  "topicTag": "other",
+  "readTime": 7,
+  "score": 88,
+  "wordCount": 1560,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773985233000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 05:40:33"
+}

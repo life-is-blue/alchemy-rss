@@ -1,0 +1,58 @@
+{
+  "id": "RAW_2c79a8c1",
+  "title": "Grab 工程实践：将 LRU 升级为 TLRU，Android 图片缓存节省 50MB+",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=4&sn=791744ee5c208deb7678d6aff8622997",
+  "date": "2026-03-20 08:07:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Sergio De Simone </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 田橙 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为了改进 Android 应用中的图片缓存管理，Grab 的工程师将原有的 最近最少使用（Least Recently Used，LRU）缓存机制升级为时间感知最近最少使用（Time-Aware Least Recently Used，TLRU）缓存。这一改进使他们能够更高效地回收存储空间，同时不会降低用户体验，也不会增加服务器成本。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Grab 的 Android 应用使用 Glide 作为主要的图片加载框架。该框架内置了一个 LRU 缓存，用于在本地存储图片，从而减少网络请求、提升加载速度并降低服务器开销。然而，数据分析显示，使用 100 MB 的 LRU 缓存存在明显问题：对于许多用户来说，缓存空间很快就被填满，导致性能下降；而在另一些情况下，如果缓存始终没有达到大小上限，图片可能会在缓存中保留数月之久，从而造成存储空间浪费。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为了绕过这些限制，Grab 工程师决定在 LRU 的基础上引入基于时间的过期机制。TLRU 通过三个参数进行控制：首先是 Time To Live（TTL），用于确定缓存条目在何时被视为过期；其次是最小缓存容量阈值，确保即使缓存条目已过期，只要缓存容量不足，关键图片仍然可以继续保留；最后是最大缓存容量，用于限制缓存的存储上限。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在实现方案上，Grab 工程师并没有从零开始编写 TLRU，而是选择 fork Glide 项目并扩展其 DiskLruCache 实现，以利用其“成熟且经过大量实践验证的基础架构”。</span></p>\n   <blockquote>\n    <p><span leaf=\"\">这一实现方式在 Android 生态中被广泛采用，并且已经处理了许多复杂的边界情况，例如崩溃恢复、线程安全以及性能优化等。如果从零实现这些能力，需要投入大量额外的工程工作。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">为了支持 TLRU，DiskLruCache 需要在三个方面进行扩展：一是增加对最近访问时间（last-access time）的追踪；二是实现基于时间的缓存淘汰逻辑；三是提供现有用户缓存的迁移机制。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">其中，记录最近访问时间是为了能够按照“最近访问顺序”对缓存条目进行排序，并且这些时间信息必须在应用重启后仍然能够保留。时间驱动的淘汰逻辑会在每次缓存访问时运行，用于检查最近最少访问的条目是否已经过期，如果过期则将其移除。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">对于已有缓存的迁移，主要挑战在于如何为原本的 LRU 缓存条目分配最近访问时间戳。由于文件系统 API 无法提供可靠的时间来源，Grab 工程师最终决定为所有缓存条目统一赋予迁移时间戳。</span></p>\n   <blockquote>\n    <p><span leaf=\"\">这种方式可以保留所有现有缓存内容，并建立一个一致的时间基线。不过，它也意味着必须等待 一个完整的 TTL 周期之后，缓存淘汰机制的全部效果才会体现出来。同时，他们还确保了双向兼容性：原始的 LRU 实现可以通过忽略时间戳后缀来读取 TLRU 的日志文件，从而在需要时能够安全回滚。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">另一个挑战是确定最佳配置参数，这需要通过受控实验来完成。</span></p>\n   <blockquote>\n    <p><span leaf=\"\">Grab 为此设定了明确的成功标准：在从 LRU 迁移到 TLRU 的过程中，缓存命中率下降不得超过 3 个百分点（pp）。例如，如果命中率从 59% 降至 56%，就意味着服务器请求量将增加约 7%。这一阈值在存储优化与性能影响之间取得了平衡。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">通过这种方案，95% 的应用用户缓存大小减少了约 50 MB，而缓存规模最大的 5% 用户则获得了更为显著的节省。基于这些结果，Grab 工程师估算，在保持缓存命中率处于可接受范围、且不增加服务器成本的前提下，他们可以在用户设备上回收数 TB 级别的存储空间。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">原始文章对 LRU 的行为机制以及 TLRU 的实现细节提供了大量更为深入的技术说明，远超本文所能覆盖的范围。如果希望了解完整实现细节，建议阅读原文。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><strong style=\"font-size: 16px;font-weight: bold;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">原文链接：</span></span></strong></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/03/grab-tlru-image-cache/\" target=\"_blank\">https://www.infoq.com/news/2026/03/grab-tlru-image-cache/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Grab 工程师通过将 Glide 的 LRU 缓存机制升级为时间感知型 TLRU，在保证缓存命中率的前提下，成功为 Android 用户节省了 50MB 以上的存储空间。",
+  "oneSentenceSummary": "Grab 工程师通过将 Glide 的 LRU 缓存机制升级为时间感知型 TLRU，在保证缓存命中率的前提下，成功为 Android 用户节省了 50MB 以上的存储空间。",
+  "summary": "本文介绍了 Grab 在 Android 图片缓存优化方面的工程实践。针对原生 Glide 框架中 LRU 算法无法有效清理长期闲置缓存的问题，Grab 引入了 TLRU（Time-Aware Least Recently Used）机制。该方案通过 TTL（生存时间）、最小容量阈值和最大容量限制三个维度协同工作，实现了更精细的缓存淘汰逻辑。Grab 工程师通过 fork 并扩展 Glide 的 DiskLruCache，解决了访问时间追踪、淘汰逻辑实现以及旧缓存平滑迁移等核心挑战。实验结果显示，在缓存命中率下降控制在 3% 以内的前提下，该优化显著降低了用户设备的存储占用，实现了性能与成本的平衡。",
+  "mainPoints": [
+    {
+      "point": "传统 LRU 算法在移动端图片缓存场景中存在存储浪费和性能下降的矛盾。",
+      "explanation": "LRU 仅关注访问顺序，导致部分图片可能在缓存中保留数月之久占用空间，或在缓存满时频繁淘汰导致性能波动。"
+    },
+    {
+      "point": "TLRU 机制通过引入时间维度（TTL）实现了更智能的缓存回收策略。",
+      "explanation": "结合 TTL、最小容量和最大容量三个参数，确保在不影响核心体验的前提下，及时清理过期的“僵尸”缓存条目。"
+    },
+    {
+      "point": "基于成熟框架（Glide）进行扩展是高效且低风险的工程实现路径。",
+      "explanation": "通过 fork 并修改 DiskLruCache，利用其已有的崩溃恢复和线程安全机制，重点解决时间追踪和双向兼容迁移问题。"
+    },
+    {
+      "point": "建立明确的量化成功标准是评估性能优化方案的关键。",
+      "explanation": "Grab 设定了缓存命中率下降不超过 3% 的红线，在存储回收收益与服务器带宽成本增加之间取得了科学的平衡。"
+    }
+  ],
+  "keyQuotes": [
+    "TLRU 通过三个参数进行控制：首先是 TTL，用于确定缓存条目何时过期；其次是最小缓存容量阈值；最后是最大缓存容量。",
+    "Grab 工程师并没有从零开始编写 TLRU，而是选择 fork Glide 项目并扩展其 DiskLruCache 实现，以利用其成熟的基础架构。",
+    "在从 LRU 迁移到 TLRU 的过程中，缓存命中率下降不得超过 3 个百分点（pp）。",
+    "95% 的应用用户缓存大小减少了约 50 MB，而缓存规模最大的 5% 用户则获得了更为显著的节省。"
+  ],
+  "tags": [
+    "Android 开发",
+    "缓存优化",
+    "LRU",
+    "TLRU",
+    "Glide"
+  ],
+  "topicTag": "other",
+  "readTime": 6,
+  "score": 83,
+  "wordCount": 1333,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773994020000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 08:07:00"
+}

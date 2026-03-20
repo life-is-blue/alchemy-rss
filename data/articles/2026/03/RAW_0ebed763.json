@@ -1,0 +1,54 @@
+{
+  "id": "RAW_0ebed763",
+  "title": "全网都在扒的小米 MiMo 团队，几乎被“北大学子”承包了",
+  "url": "https://www.qbitai.com/2026/03/389624.html",
+  "date": "2026-03-20 02:43:39",
+  "author": "梦瑶",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"60\">henry 梦瑶 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"61\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <blockquote>\n   <p data-track=\"2\"><strong>小米MiMo团队中，每天Agent对话次数少于100次的，就离职吧。</strong></p>\n  </blockquote>\n  <p data-track=\"3\">前脚，小米MiMo-V2-Pro模型刚登上OpenRouter调用量榜单第一。</p>\n  <p data-track=\"4\">后脚，罗福莉就发文分享了自己对于团队管理的思考。</p>\n  <p data-track=\"5\">热度几乎无缝衔接，网友们的目光也纷纷从模型本身转到<strong>小米MiMo</strong>团队身上。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_0c0e781d5b712283703b873d53437aef.png\" data-src=\"https://image.jido.dev/20260320040302_0c0e781d5b712283703b873d53437aef.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">满打满算，从发布首个推理大模型MiMo-7B到现在不到的一年时间，MiMo的能力曲线却呈现出明显陡升——</p>\n  <p data-track=\"7\">短短时间内已冲到<strong>全球一线梯队</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_ad10be727f379d28db8de9be6c3b71ab.jpeg\" data-src=\"https://image.jido.dev/20260320040302_ad10be727f379d28db8de9be6c3b71ab.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"8\">相比之下，同样花重金组建的Meta超级智能实验室，近期却频频跳票，被爆模型性能远不如早前发布的前沿模型。</p>\n  <p data-track=\"9\">于是，不少人开始好奇：</p>\n  <p data-track=\"10\">小米MiMo，究竟是一支怎样的团队，竟能在几个月时间打造出让全球关注的模型？</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_77bdcd169365f56bed028ba3a1b3036c.png\" data-src=\"https://image.jido.dev/20260320040302_77bdcd169365f56bed028ba3a1b3036c.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"11\">众所周知，大模型开发向来是集团军作战，model card的背后往往是多位作者的集体智慧。</p>\n  <p data-track=\"12\">而且据内部消息透露，小米的LLM团队在内部也相当神秘，但通过整理近半年的模型发布记录和论文，仍能捕捉到一些蛛丝马迹——</p>\n  <p data-track=\"13\">核心作者大多来自<strong>北京大学</strong>，其中甚至还有罗福莉本人的师弟。</p>\n  <p data-track=\"14\">更值得注意的是，北京大学也是罗福莉的老东家DeepSeek的策源地。</p>\n  <p data-track=\"16\">小米MiMo团队近期的动作引发了外界广泛好奇，而这种关注与团队在产品侧和论文发表的「高节奏推进」密不可分。</p>\n  <p data-track=\"17\">随着多篇研究成果陆续曝光，小米MiMo团队<strong>核心成员</strong>也浮出水面。</p>\n  <p data-track=\"19\"><strong>肖邦骏（Bangjun Xiao）</strong>，MiMo-V2-Flash 的<strong>首作</strong>，本科及博士均就读于北京大学。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_326fef7f5e63ce024c6b29cca6042f97.jpeg\" data-src=\"https://image.jido.dev/20260320040302_326fef7f5e63ce024c6b29cca6042f97.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"20\">博士生导师为北京大学人工智能研究院副院长<strong>黄罡</strong>教授。</p>\n  <p data-track=\"21\">他的研究方向聚焦于边缘计算和联邦学习，之前也短暂涉猎过计算机视觉和扩散模型。</p>\n  <p data-track=\"22\"><strong>Bingquan Xia</strong>，MiMo-V2-Flash 核心作者之一，中科院计算技术研究所2021届研究生。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_e77163ec82b79637101d0973c74cc3f0.png\" data-src=\"https://image.jido.dev/20260320040302_e77163ec82b79637101d0973c74cc3f0.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"23\"><strong>马文晗（Wenhan Ma）</strong>，自2025年9月起在北京大学计算机科学学院攻读博士，由<strong>穗志方</strong>教授指导。</p>\n  <p data-track=\"25\">他的研究方向为<strong>大语言模型</strong>，近期主要关注提升大语言模型的推理能力。</p>\n  <p data-track=\"26\">本科毕业于北京大学电子工程与计算机科学学院，专业为计算机科学与技术。</p>\n  <p data-track=\"27\">值得一提的是，穗志方教授正是罗福莉在北大的导师，而<strong>马文晗则是罗的同门师弟</strong>。</p>\n  <p data-track=\"29\"><strong>朱大为（Dawei Zhu）</strong>，北京大学三年级博士生，导师为<strong>李素建</strong>教授，本科毕业于北京大学电子工程与计算机科学学院。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_925b3b20df793dc939a2539c33d752f2.jpeg\" data-src=\"https://image.jido.dev/20260320040302_925b3b20df793dc939a2539c33d752f2.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"30\">研究方向为长上下文建模，他认为高效处理超长上下文是未来语言模型和多模态模型的关键能力，也对智能体（Agent）、对齐（Alignment）以及多模态模型的进展感兴趣。</p>\n  <p data-track=\"31\">此前，他参与的《paperbanana》项目曾引起较大关注，并被量子位关注。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_efec19eec571cf4aeede17a248566587.png\" data-src=\"https://image.jido.dev/20260320040302_efec19eec571cf4aeede17a248566587.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\"><strong>董谨豪</strong>，中国人民大学信息学院/数据工程与知识工程教育部重点实验室讲师，同时也是小米大语言模型（LLM）核心团队技术顾问，主要负责与代码相关的LLM开发，包括预训练、强化学习及智能体方向。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_353c973763c5f5a3c65d64d2c7f94414.jpeg\" data-src=\"https://image.jido.dev/20260320040302_353c973763c5f5a3c65d64d2c7f94414.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"33\">他主导建立了人大发–小米基础大语言模型联合重点实验室，并担任技术委员会成员。</p>\n  <p data-track=\"34\">他博士毕业于北京大学计算机科学学院，本科毕业于西安电子科技大学计算机科学与技术专业。</p>\n  <p data-track=\"35\"><strong>张海林</strong>，小米MiMo团队成员，专注于AI基础设施建设，为MiMo系列模型打造高效、可扩展且稳定的强化学习（RL）基础设施。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_7ab9a0c8283d3293aa23e6def7c4b914.jpeg\" data-src=\"https://image.jido.dev/20260320040302_7ab9a0c8283d3293aa23e6def7c4b914.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\">他2025年获得北京大学计算机科学博士学位，导师为<strong>崔斌</strong>教授，并曾获北京大学优秀博士论文奖。</p>\n  <p data-track=\"37\">研究重点包括大规模大语言模型（LLMs）、深度学习推荐模型（DLRMs）、信息检索（IR）及通用分布式计算。</p>\n  <p data-track=\"38\">此外，还有诸多核心作者，但公开信息较少，部分谷歌主页如下：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_d0383671e2dcc201466fd37a5c19ba2a.png\" data-src=\"https://image.jido.dev/20260320040302_d0383671e2dcc201466fd37a5c19ba2a.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_52efc2eaea0e83c729f82c41801c62f3.png\" data-src=\"https://image.jido.dev/20260320040302_52efc2eaea0e83c729f82c41801c62f3.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"41\">一支成立才一两年的团队，能一路冲到顶尖模型研发的前列，靠的绝不只是产品节奏和核心成员这么简单。</p>\n  <p data-track=\"42\">仔细梳理团队的背景，我们也会发现一个明显的共性——<strong>北大背景浓厚</strong>。</p>\n  <p data-track=\"43\">从核心成员到技术骨干，很多团队成员本科或博士均来自北京大学计算机学院。</p>\n  <p data-track=\"44\">一方面，北大的同门关系、导师体系和院系传承，使得小米在大模型工业界作为后起之秀，能够源源不断地吸纳新鲜血液；</p>\n  <p data-track=\"45\">另一方面，学生们也能迅速接触工业界，借助丰富的算力和资源，将科研想法高效落地与迭代。</p>\n  <p data-track=\"46\">而在这个过程中，罗福莉则成为团队与北大学术背景之间的重要桥梁。</p>\n  <p data-track=\"48\">除了院校对于成员产品理念的影响外，小米MiMo团队的技术理念也深受小米企业<strong>产品基因</strong>的驱动——</p>\n  <p data-track=\"49\">核心就是产品层面的「性价比」和公司一贯的「互联网生态」思维。</p>\n  <p data-track=\"50\">放到MiMo模型上，最直观的体现就是7B参数规模、开源策略以及端侧部署方向，也算是清楚地展现了小米的战略布局和生态思路。</p>\n  <p data-track=\"51\">所以回过头看，MiMo的成功并非偶然，而是多重因素叠加的结果：</p>\n  <p data-track=\"52\">北大科研背景的厚度、核心成员的技术经验，以及小米产品与工程的基因驱动，共同铸就了这支年轻团队的迅速崛起。</p>\n  <p data-track=\"53\">对了，还有一个颇有缘分的小细节值得一提——</p>\n  <p data-track=\"54\">不久前从阿里离职的通义实验室Qwen大模型负责人<strong>林俊旸</strong>，正是罗福莉的师兄。</p>\n  <p data-track=\"55\">两人硕士阶段均在北京大学语从事自然语言处理相关学习研究，学术路径高度同源。</p>\n  <p data-track=\"56\">毕业后又先后加入阿里达摩院，在大模型研发上有着相近的技术底色与行业视野。</p>\n  <p data-track=\"57\">一个曾做Qwen，一个带MiMo。</p>\n  <p data-track=\"58\">两条国内头部模型线的关键人物，曾经在同一套学术和产业体系中成长出来，这层关系本身也让不少业内人多看了一眼。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260320040302_9bcc404185e039436bcce4ab0ebae962.png\" data-src=\"https://image.jido.dev/20260320040302_9bcc404185e039436bcce4ab0ebae962.png\">\n  </div>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文深度揭秘了小米 MiMo 大模型团队的核心成员构成，指出其深厚的北京大学学术背景以及与 DeepSeek、阿里 Qwen 的人才渊源。",
+  "oneSentenceSummary": "本文深度揭秘了小米 MiMo 大模型团队的核心成员构成，指出其深厚的北京大学学术背景以及与 DeepSeek、阿里 Qwen 的人才渊源。",
+  "summary": "文章聚焦于近期在 OpenRouter 榜单表现亮眼的小米 MiMo 团队。通过对模型发布记录和论文作者的梳理，发现该团队核心成员（如肖邦骏、马文晗、朱大为、张海林等）大多拥有北京大学背景，且多位成员师承同一脉络。文章探讨了这种“北大帮”现象如何助力小米在短时间内冲入全球 AI 第一梯队，并分析了小米 MiMo 结合北大科研厚度与小米产品基因（性价比、端侧部署、互联网生态）的技术路径。此外，还提到了负责人罗福莉与前通义实验室负责人林俊旸的同门渊源，展示了国内大模型领域人才流动的底层逻辑。",
+  "mainPoints": [
+    {
+      "point": "小米 MiMo 团队核心成员呈现高度的“北大化”特征，构成技术骨干力量。",
+      "explanation": "通过对 MiMo 系列模型首作及核心作者的背景调查，发现肖邦骏、马文晗等多位成员均来自北大，且存在明显的导师体系传承。"
+    },
+    {
+      "point": "团队负责人罗福莉作为纽带，连接了学术背景与工业界的资源落地。",
+      "explanation": "罗福莉利用其在北大的学术渊源和在 DeepSeek 等企业的从业经验，使团队能高效吸纳新鲜血液并利用小米算力实现科研想法迭代。"
+    },
+    {
+      "point": "MiMo 的成功是学术厚度、人才经验与小米产品基因三者深度融合的结果。",
+      "explanation": "团队在技术上追求长上下文和强化学习基础设施，在产品上则贯彻小米的性价比和端侧部署战略，形成了独特的竞争优势。"
+    }
+  ],
+  "keyQuotes": [
+    "小米 MiMo 团队中，每天 Agent 对话次数少于 100 次的，就离职吧。",
+    "核心作者大多来自北京大学，其中甚至还有罗福莉本人的师弟。",
+    "MiMo 的成功并非偶然，而是多重因素叠加的结果：北大科研背景的厚度、核心成员的技术经验，以及小米产品与工程的基因驱动。",
+    "一个曾做 Qwen，一个带 MiMo。两条国内头部模型线的关键人物，曾经在同一套学术和产业体系中成长出来。"
+  ],
+  "tags": [
+    "小米 MiMo",
+    "大模型团队",
+    "人才背景",
+    "北京大学",
+    "罗福莉"
+  ],
+  "topicTag": "other",
+  "readTime": 9,
+  "score": 80,
+  "wordCount": 2039,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "BT_PEOPLE",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773974619000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 02:43:39"
+}

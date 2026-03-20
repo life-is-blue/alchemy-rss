@@ -1,0 +1,58 @@
+{
+  "id": "RAW_91e73959",
+  "title": "QCon London 2026：Kleppmann 谈如何通过本地优先软件缓解欧洲对云服务的依赖",
+  "url": "https://www.infoq.com/news/2026/03/qcon-local-first-sovereignty/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-20 10:03:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>On the second day of QCon London 2026, <a href=\"https://www.linkedin.com/in/martinkleppmann/\">Martin Kleppmann</a> opened his keynote with a graph, not of system throughput or latency, but of European cloud market share. AWS, Azure, and Google Cloud together hold roughly seventy percent of the European market. The largest European cloud providers sit at about two percent each.</p>\n   <blockquote>\n    <p>In other words, Europe is completely dependent on US cloud services.</p>\n   </blockquote>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/qcon-local-first-sovereignty/news/2026/03/qcon-local-first-sovereignty/en/resources/1Kleppmann 1-1773767300809.jpg\" style=\"width: 600px; height: 243px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/qcon-local-first-sovereignty/en/resources/1Kleppmann 1-1773767300809.jpg\" rel=\"share\"></p>\n   <p>Kleppmann, an Associate Professor at the University of Cambridge and author of <a href=\"https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/\">Designing Data-Intensive Applications</a> (the second edition, co-authored with Chris Riccomini, is being released this month), spent next fifty minutes making the case that this dependency is a risk worth engineering against not with panic, yet with practical technological choices that shift power back toward users and away from single providers.</p>\n   <p>He grounded the risk in recent events. Last year, <a href=\"https://www.dutchnews.nl/2025/05/us-sanctions-hit-international-criminal-court-in-the-hague/\">US sanctions on the International Criminal Court in The Hague</a> resulted in the chief prosecutor losing access to his Microsoft-hosted email. Microsoft denied suspending services but confirmed it had been in contact with the ICC \"throughout the process that resulted in the disconnection of its sanctioned official.\" The ICC migrated off Microsoft services shortly after.</p>\n   <p>Two weeks before the keynote, Iran attacked three <a href=\"https://www.reuters.com/world/middle-east/amazon-cloud-unit-flags-issues-bahrain-uae-data-centers-amid-iran-strikes-2026-03-02/\">AWS data centres in the UAE with drones</a>, severely damaging at least one. The region was still showing disrupted services on the AWS dashboard as of the day before the talk. And Kleppmann pointed out that hosting data in European regions doesn't solve the problem either: Microsoft has stated it would comply with US legal requests for EU citizen data stored in the EU, regardless of EU law.</p>\n   <p>His argument wasn't that a conflict between the US and Europe is likely. He stressed that the probability is still small. But it's no longer zero, and the impact of a sudden lockout would be enormous. That makes it a risk worth mitigating under what he called \"<em>technological sovereignty</em>,\" a buzzword, he acknowledged, that says nothing about how to actually achieve it.</p>\n   <p>He proposed three concrete technological directions.</p>\n   <p><strong>Multi-cloud and commoditisation:</strong>&nbsp;For back-end services, Kleppmann argued that the ability to switch providers is what matters, and that commoditization through de facto standards is the best path to get there. He pointed to the <a href=\"https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html\">S3 API</a> for object stores, <a href=\"https://kubernetes.io/\">Kubernetes</a> for deployment, the <a href=\"https://kafka.apache.org/\">Kafka</a> protocol for streaming, and the <a href=\"https://www.postgresql.org/\">Postgres</a> wire protocol for databases as emerging standards that enable switching even without formal standardization bodies. He compared this <a href=\"https://en.wikipedia.org/wiki/British_Standard_Whitworth\">to Joseph Whitworth's 1841 standardization of screw threads</a>, which unlocked interchangeability across manufacturers during the Industrial Revolution. The trade-offs are real: increased cost, operational complexity, and being stuck with lowest-common-denominator features. Kleppmann argued that commoditized services are vastly preferable to expecting everyone to self-host.</p>\n   <blockquote>\n    <p>Life is too short to be a sysadmin, unless you really like that, or unless it's your job.</p>\n   </blockquote>\n   <p><strong>The AT Protocol and Bluesky:</strong>&nbsp;For social media, Kleppmann described the <a href=\"https://atproto.com/\">AT Protocol</a> underlying <a href=\"https://bsky.app/\">Bluesky</a>, which he has advised on since early 2022. The protocol was designed around \"credible exit,\" the principle that if a provider goes bad, users can switch without losing their username, social graph, or posts. Each user's data lives in a personal repository (analogous to a Git repo) hosted on a personal data server (PDS), and anyone can run a PDS. A relay aggregates events from all repositories into a firehose, and AppViews build indexes on top of it.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/qcon-local-first-sovereignty/news/2026/03/qcon-local-first-sovereignty/en/resources/1Kleppmann 2-1773767300809.jpeg\" style=\"width: 600px; height: 233px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/qcon-local-first-sovereignty/en/resources/1Kleppmann 2-1773767300809.jpeg\" rel=\"share\"></p>\n   <p>Every component can be run by competing providers. The user directory (PLC directory) remains centralized, but with cryptographic integrity protections and the option for community forks if it misbehaves. Bluesky is also taking the core protocols to the <a href=\"https://www.ietf.org/\">IETF</a> for formal standardization, giving up corporate control in the process. There are now forty-three million users and a growing ecosystem of non-microblogging apps, blogging, social coding, video sharing, and book reviews, all built on the same protocol. For a deeper technical dive, Kleppmann pointed to the <a href=\"https://arxiv.org/abs/2402.03239\">architecture paper</a> he co-authored.</p>\n   <p><strong>Local-first software:&nbsp;</strong>For collaborative tools, Kleppmann described <a href=\"https://www.inkandswitch.com/local-first/\">local-first software</a> as the combination of the best of Google Sheets (rich data, real-time collaboration, usability) with the best of Git (version control, branching, multi-provider hosting, files on your own machine). The core shift: the user's local copy of data becomes primary, with cloud services reduced to sync and backup. This minimizes the role of centralized servers, makes provider switching trivial, and even enables peer-to-peer sync.</p>\n   <p>The approach grew out of research into <a href=\"https://crdt.tech/\">CRDTs</a> (conflict-free replicated data types) and the open-source project <a href=\"https://automerge.org/\">Automerge</a>, which Kleppmann co-created in 2017. The term \"local-first\" was coined in a <a href=\"https://www.inkandswitch.com/local-first/\">2019 essay</a> that has since sparked a movement, with conferences, startups, podcasts, and a documentary with the <a href=\"https://www.localfirstconf.com/\">Local-First Conference</a> returning to Berlin in July 2026. Kleppmann noted that local-first works well for file editing and productivity tools but is not suited to systems that manage physical resources, such as bank accounts, where a centralized, authoritative source remains appropriate.</p>\n   <p>The connecting thread across all three, he said, is that commoditization and decentralization shift the balance of power. Dependency creates leverage, whether it's a country's gas supply or a company's cloud provider, and the engineering choices we make determine who holds that leverage.</p>\n   <p>Kleppmann concluded:</p>\n   <blockquote>\n    <p>Using technology to give back power to the users enables greater freedom and changes the balance of power. That's maybe something for you to think about in your own work.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Kleppmann on Mitigating Europe's Cloud Dependency with Local-First Software\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/qcon-local-first-sovereignty/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774000980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Martin Kleppmann 在 QCon London 2026 的主题演讲中主张通过多云标准、AT Protocol 等去中心化协议以及本地优先（Local-First）软件来实现“技术主权”，从而缓解欧洲对美国云服务提供商的依赖。",
+  "oneSentenceSummary": "Martin Kleppmann 在 QCon London 2026 的主题演讲中主张通过多云标准、AT Protocol 等去中心化协议以及本地优先（Local-First）软件来实现“技术主权”，从而缓解欧洲对美国云服务提供商的依赖。",
+  "summary": "本文总结了 Martin Kleppmann 在 QCon London 2026 上的主题演讲。他指出了欧洲 70% 的市场依赖于美国云巨头（AWS、Azure、Google）所带来的严峻风险。Kleppmann 强调了地缘政治制裁和物理基础设施攻击等脆弱性，并认为“技术主权”是一个至关重要的工程目标。他提出了三个缓解风险的技术支柱：利用商品化的事实标准（如 S3、Kubernetes 和 Postgres）实现多云可移植性；采用 Bluesky 的 AT Protocol 等去中心化协议，确保用户的“可信退出”；以及利用 CRDT（无冲突复制数据类型）实现本地优先的软件架构，将数据所有权归还给用户的本地设备，从而将云的角色降级为单纯的同步层。",
+  "mainPoints": [
+    {
+      "point": "欧洲对美国云服务提供商的极端依赖带来了重大的地缘政治和运营风险。",
+      "explanation": "由于三家美国公司占据了 70% 的市场份额，欧洲实体极易受到外国制裁、法律越权以及物理基础设施中断的影响，而这些风险已不再仅仅是理论上的。"
+    },
+    {
+      "point": "多云可移植性最好通过事实标准而非正式机构来实现。",
+      "explanation": "采用 S3、Kafka 和 Postgres 等协议可以实现服务商切换，尽管这需要接受“最低共同分母”的功能并管理增加的运营复杂性。"
+    },
+    {
+      "point": "去中心化协议中的“可信退出”原则保护了用户数据和身份。",
+      "explanation": "通过将数据存储与应用程序视图解耦，AT Protocol 等协议允许用户在服务提供商之间迁移，而不会丢失其社交图谱、帖子或数字身份。"
+    },
+    {
+      "point": "本地优先软件将云的角色从主要权威重新定义为同步服务。",
+      "explanation": "利用 CRDT 可以让用户的本地副本成为主要数据源，从而实现离线工作和无缝同步，同时减少对中心化服务器的依赖。"
+    }
+  ],
+  "keyQuotes": [
+    "欧洲完全依赖美国的云服务。",
+    "生命苦短，没必要去做系统管理员，除非你真的喜欢，或者这是你的工作。",
+    "核心转变：用户的本地数据副本成为主要数据源，云服务降级为同步和备份工具。",
+    "利用技术将权力归还给用户，能够实现更大的自由并改变权力平衡。"
+  ],
+  "tags": [
+    "云计算",
+    "本地优先",
+    "CRDT",
+    "AT Protocol",
+    "软件架构"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 882,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774000980000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 10:03:00"
+}

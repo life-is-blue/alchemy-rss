@@ -1,0 +1,53 @@
+{
+  "id": "RAW_340e4843",
+  "title": "Meta 决定取消 Instagram 私信端到端加密背后的危险",
+  "url": "https://www.wired.com/story/the-danger-behind-metas-decision-to-kill-end-to-end-encrypted-instagram-dms/",
+  "date": "2026-03-20 06:00:00",
+  "author": "Lily Hay Newman",
+  "siteName": "WIRED",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span class=\"lead-in-text-callout\">As law enforcement</span> agencies scramble to address threats of terrorism, child sexual abuse, and human trafficking—and repressive governments around the world look to broadly expand their surveillance capabilities—researchers fear that <a href=\"https://www.wired.com/tag/meta/\" class=\"link\">Meta's</a> retreat from its commitments to protect user privacy with <a href=\"https://www.wired.com/tag/end-to-end-encryption/\" class=\"link\">end-to-end encryption</a> on <a href=\"https://www.wired.com/tag/instagram/\" class=\"link\">Instagram</a> chat could create a problematic precedent in big tech.</p>\n  <p class=\"paywall\">Meta spent the better part of a <a href=\"https://www.wired.com/2016/07/secret-conversations-end-end-encryption-facebook-messenger-arrived/\" class=\"link\">decade</a> working to deploy end-to-end encryption by default across all of its chat apps. It was a saga—fraught with both <a href=\"https://www.wired.com/story/facebook-messenger-end-to-end-encryption-default/\" class=\"link\">technical</a> and <a href=\"https://www.wired.com/story/meta-end-to-end-encryption-bsr-report/\" class=\"link\">political</a> hurdles. But in December 2023, the company declared victory, announcing <a href=\"https://www.wired.com/story/meta-messenger-instagram-end-to-end-encryption/\" class=\"link\">default end-to-end encryption for Messenger</a> and promising that it was in testing to roll out for Instagram Direct Messaging as well. In the end, though, end-to-end encryption only came to Instagram chat as a backwater opt-in feature. And as threats to end-to-end encryption from governments around the world <a href=\"https://www.wired.com/story/a-new-era-of-attacks-on-encryption-is-starting-to-heat-up/\" class=\"link\">loom larger than ever</a>, Meta quietly announced last week that it intends to eliminate the feature from Instagram chat entirely on May 8.</p>\n  <p class=\"paywall\">Crucially, few companies have the scale and stability needed to stake out an influential pro-end-to-end encryption position. And an even smaller group—namely, Meta and Apple—have made it a priority. Experts say that Meta's decision about Instagram chat could give other companies, or even simply other divisions within Meta, permission to do less, too.</p>\n  <p class=\"paywall\">“Meta's deployment of encryption was a public commitment, and they were weathering a lot of pressure from various governments to do it,” says Johns Hopkins cryptographer Matt Green, who has consulted for Meta over the years on its end-to-end encryption rollout as both an unpaid advisor and paid reviewer. “Public commitments to support privacy features are literally the only thing that we the public have. If they’re worthless, then why should we assume we’ll continue to have end-to-end encryption in Messenger and WhatsApp?”</p>\n  <p class=\"paywall\">Meta's decision to revoke end-to-end encryption for Instagram chat seems to have been particularly alarming for researchers and privacy advocates because of the company's stated reason for the change: low user adoption.</p>\n  <p class=\"paywall\">“Very few people were opting in to end-to-end encrypted messaging in DMs, so we're removing this option from Instagram in the coming months,” a Meta spokesperson told WIRED and other outlets. “Anyone who wants to keep messaging with end-to-end encryption can easily do that on WhatsApp.”</p>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--sponsor-product\"></div>\n  <p class=\"paywall\">The statement struck many as disingenuous given that Meta emphasized for years that it was committed specifically to default end-to-end encryption, not the opt-in version that ultimately emerged for Instagram chat buried behind <a data-offer-url=\"https://help.instagram.com/1165835007222763\" class=\"external-link link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://help.instagram.com/1165835007222763&quot;}\" href=\"https://help.instagram.com/1165835007222763\" rel=\"nofollow noopener\" target=\"_blank\">layers of menus</a>.</p>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--in-content\"></div>\n  <p class=\"paywall\">“Designed the feature so nobody could find it, killed it for not being easy enough to find and, therefore, unpopular. It's deeply cynical,” says Davi Ottenheimer, a longtime security executive and creator of the post-quantum cryptography assessment tool pqprobe.</p>\n  <p class=\"paywall\">Johns Hopkins' Green adds, too, that Meta originally rolled out opt-in encryption for Messenger and seemingly learned the lesson about the need for default implementation from low adoption in that trial.</p>\n  <p class=\"paywall\">“<a data-offer-url=\"https://about.fb.com/news/2022/08/testing-end-to-end-encrypted-backups-and-more-on-messenger/\" class=\"external-link link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://about.fb.com/news/2022/08/testing-end-to-end-encrypted-backups-and-more-on-messenger/&quot;}\" href=\"https://about.fb.com/news/2022/08/testing-end-to-end-encrypted-backups-and-more-on-messenger/\" rel=\"nofollow noopener\" target=\"_blank\">This is a Meta post</a> where they publicly commit to default encryption in Instagram chat. Then, seemingly without even looking back over it, they add an update to the top that implies that it was optional encryption, and blames lack of opt-in as the reason they need to remove this feature,” Green says. “Nothing about this is honest. They know what they promised.”</p>\n  <p class=\"paywall\">WIRED gave Meta multiple opportunities to comment for this story, but the company ultimately declined.</p>\n  <p class=\"paywall\"><span class=\"lead-in-text-callout\">In a key</span> 2019 treatise laying out his vision for privacy and security across Meta's properties, CEO Mark Zuckerberg <a data-offer-url=\"https://www.facebook.com/notes/2420600258234172/\" class=\"external-link link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.facebook.com/notes/2420600258234172/&quot;}\" href=\"https://www.facebook.com/notes/2420600258234172/\" rel=\"nofollow noopener\" target=\"_blank\">wrote</a>, “I understand that many people don't think Facebook can or would even want to build this kind of privacy-focused platform—because frankly, we don't currently have a strong reputation for building privacy-protective services, and we've historically focused on tools for more open sharing.\" But, he added, “we've repeatedly shown that we can evolve to build the services that people really want, including in private messaging and stories.”</p>\n </body>\n</html>",
+  "aiSummary": "Meta 以使用率低为由，决定取消 Instagram 私信的端到端加密功能。专家批评此举是虚伪地背弃隐私承诺，可能会为科技行业树立负面先例。",
+  "oneSentenceSummary": "Meta 以使用率低为由，决定取消 Instagram 私信的端到端加密功能。专家批评此举是虚伪地背弃隐私承诺，可能会为科技行业树立负面先例。",
+  "summary": "本文探讨了 Meta 决定停止 Instagram 私信端到端加密（E2EE）功能的争议性举措，其理由是用户使用率低。安全专家和密码学家认为这一理由具有误导性，因为该功能被刻意隐藏在复杂的菜单中，实际上导致了低使用率。文章强调了 Meta 此前对隐私的公开承诺与最近政策反转之间的矛盾，并警告称，这可能会助长其他科技公司以类似借口降低隐私功能的优先级。文章凸显了企业隐私宣传与实际产品执行之间的张力。",
+  "mainPoints": [
+    {
+      "point": "Meta 取消 Instagram 私信 E2EE 的理由被广泛认为是虚伪的。",
+      "explanation": "批评人士认为，Meta 通过将该功能埋藏在复杂的菜单中，确保了低使用率，然后又将这种低使用率作为彻底砍掉该功能的借口。"
+    },
+    {
+      "point": "该决定为企业的隐私承诺树立了一个令人担忧的先例。",
+      "explanation": "专家担心 Meta 的退缩可能会鼓励其他科技公司降低隐私功能的优先级，从而削弱公众对那些自称“以隐私为中心”的平台的信任。"
+    },
+    {
+      "point": "Meta 宣称的隐私目标与其执行之间存在明显的矛盾。",
+      "explanation": "尽管 CEO Mark Zuckerberg 在 2019 年提出了以隐私为中心的平台愿景，但该公司在 Instagram E2EE 方面的行动表明，其对默认加密缺乏真正的承诺。"
+    }
+  ],
+  "keyQuotes": [
+    "对支持隐私功能的公开承诺，实际上是我们公众唯一拥有的东西。如果这些承诺毫无价值，那么我们凭什么认为 Messenger 和 WhatsApp 能继续保持端到端加密？",
+    "把功能设计得让人找不到，然后又因为它不够容易被找到、不受欢迎而将其砍掉。这极其愤世嫉俗。",
+    "这件事没有一点是诚实的。他们知道自己承诺过什么。"
+  ],
+  "tags": [
+    "Meta",
+    "Instagram",
+    "端到端加密",
+    "隐私政策",
+    "科技行业"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 648,
+  "domain": "wired.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "BT_INSIGHT",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_11543bce",
+  "sourceName": "WIRED",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773986400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-20 06:00:00"
+}
