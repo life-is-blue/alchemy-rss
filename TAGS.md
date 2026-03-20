@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-20 10:55:37 | [返回首页](/README.md)
+**更新时间**: 2026-03-20 12:32:46 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10177)
+- [AI & 大模型](#ai-llm) (10183)
 - [软件架构](#architecture) (19)
 - [前端与全栈](#frontend-fullstack) (729)
 - [DevOps](#devops) (452)
@@ -43,7 +43,7 @@
 - [2026，写给-AI-创业者的慷慨、残酷、与迷雾](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649105819&idx=1&sn=a274929f8e170e2354d05c76982af40d) - AI 精选
 - [Anthropic-对阵美国政府，Nano-Banana-的蜕变，Frontier-智能体管理，以及更多内容...](https://www.deeplearning.ai/the-batch/issue-343) - AI 精选
 
-- [查看全部 10177 篇...](/details/tags/ai-llm.md)
+- [查看全部 10183 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
