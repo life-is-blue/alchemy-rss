@@ -1,15 +1,21 @@
-> **更新时间**: 2026-03-17 08:10:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-20 14:15:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Stitch-2.0-+-Claude-Code：这简直是疯狂的-AI-编程工作流！](https://www.youtube.com/watch?v=EKix32vioss)
+
+2026-03-19 09:37:49 | 标签: Google Stitch, Claude Code, AI 设计, 设计系统, design.md
+
+> 本视频分析了 Google Stitch 2.0 的定位转型：从简单的 AI UI 生成器（“输入提示词，输出截图”）转变为覆盖完整设计工作流的综合性 AI 原生设计画布。  **关键升级：** - **以意图为中心的设计**：无需描述组件，只需描述业务目标和品牌调性，Stitch 即可推断出视觉方向 - **无限画布**：将文本、图像和代码作为上下文引入；多种设计方向可在同一个工作区内共存 - **设计智能体（Design Agent）**：不仅基于单个提示词，而是针对整个项目演进进行推理，同时保持主页、定价页和仪表盘之间的一致性 - **design.md**：一个对智能体友好的 Mark...
+
+
+
 ### [构建-AI-改善医疗保健-—-OpenAI-播客-第-14-集](https://www.youtube.com/watch?v=VAzryGwnJW8)
 
-2026-03-16 17:00:00 | 标签: OpenAI, 医疗 AI, ChatGPT Health, 医疗 AI, Healthbench
-
-> 本期 OpenAI 播客节目邀请了 Nate Gross（医疗健康负责人）和 Karan Singhal（医疗 AI 研究负责人）讨论 OpenAI 的医疗 AI 计划。对话涵盖了他们通过医疗健康应用确保 AGI 造福全人类的使命、开发具有增强隐私保护和用户上下文集成功能的 ChatGPT Health，以及涉及 250 多名医生、涵盖 48，500 多个评估维度的严格 Healthbench 评估框架。团队强调，医疗保健并非多选题——患者面临复杂的病情，需要细致入微的理解。OpenAI 的模型在从预训练到后训练的每个阶段都独特地整合了医疗健康考量，从而在医疗基准测试中展现出显著的性能优势。
+2026-03-16 17:00:00
 
 
 
@@ -277,7 +283,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -289,7 +295,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
