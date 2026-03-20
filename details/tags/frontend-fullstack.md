@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-20 22:15:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-21 00:11:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -614,9 +614,7 @@
 
 ### [2025-年-JavaScript-现状调查：生态系统日趋成熟，TypeScript-确立主导地位](https://www.infoq.com/news/2026/03/state-of-js-survey-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-20 09:00:00 | 标签: JavaScript, TypeScript, Vite, React, Next.js
-
-> 本文总结了 2025 年 JavaScript 现状调查的关键发现，描绘了一个已走出动荡变革时代的成熟生态系统。TypeScript 已巩固了其行业标准的地位，40% 的开发者仅使用 TypeScript，且其原生支持正在各运行时中扩展。在工具领域，Vite 以 98% 的满意度在开发者口碑之争中有效击败了 Webpack。尽管 React 仍然是使用最广泛的前端框架，但关于 Next.js 复杂性的批评声音日益增长。此外，调查还追踪到 AI 辅助开发领域的重大转变，即 Claude 和 Cursor 等专用工具正逐渐取代 ChatGPT 等通用助手。
+2026-03-20 09:00:00
 
 
 

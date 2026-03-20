@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-20 22:15:18 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-21 00:11:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -422,9 +422,7 @@
 
 ### [SQLAlchemy-2-实战---第-1-章---数据库设置](https://blog.miguelgrinberg.com/post/sqlalchemy-2-in-practice---chapter-1---database-setup)
 
-2026-03-19 23:25:39 | 标签: SQLAlchemy, Python, 数据库设置, Docker, PostgreSQL
-
-> 本文是 Miguel Grinberg 所著《SQLAlchemy 2 实战》的第一章，提供了一份全面且实操性强的数据库开发环境搭建指南。文章引导读者创建项目目录、配置 Python 虚拟环境，并详细介绍了如何使用 Docker 对 SQLite、MySQL 和 PostgreSQL 进行容器化设置。此外，作者还解释了 SQLAlchemy 数据库连接 URL 的结构，并演示了使用环境变量和 python-dotenv 包进行配置管理的最佳实践。本指南非常实用，旨在确保开发者能为书中的后续练习打下一致且功能完备的基础。
+2026-03-19 23:25:39
 
 
 
