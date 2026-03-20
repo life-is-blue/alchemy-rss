@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-20 06:04:23 | [返回首页](/README.md)
+**更新时间**: 2026-03-20 08:11:14 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10115)
+- [AI & 大模型](#ai-llm) (10135)
 - [软件架构](#architecture) (19)
-- [前端与全栈](#frontend-fullstack) (726)
+- [前端与全栈](#frontend-fullstack) (728)
 - [DevOps](#devops) (451)
 - [产品与商业](#product-business) (34)
-- [其他](#other) (5104)
+- [其他](#other) (5107)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [介绍-LangSmith-Fleet](https://blog.langchain.com/introducing-langsmith-fleet/) - AI 精选
 - [MiniMax-M2.7:-开启模型的自我进化](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488138&idx=1&sn=666388509e4597a5ee8734fa0a556828) - AI 精选
 - [为什么-Anthropic-认为-AI-应该拥有自己的计算机——Claude-Cowork-和-Claude-Code-Desktop-的-Felix-Rieseberg](https://www.latent.space/p/felix-anthropic) - AI 精选
 - [Open-SWE：一个用于内部编码智能体的开源框架](https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/) - AI 精选
@@ -41,9 +42,8 @@
 - [阿里巴巴通义实验室开源-Mobile-Agent-v3.5：一套真正“多平台可用”的原生-GUI-Agent-基座模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505704&idx=1&sn=1c35976b09438693364779ba2f65e252) - AI 精选
 - [2026，写给-AI-创业者的慷慨、残酷、与迷雾](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649105819&idx=1&sn=a274929f8e170e2354d05c76982af40d) - AI 精选
 - [Anthropic-对阵美国政府，Nano-Banana-的蜕变，Frontier-智能体管理，以及更多内容...](https://www.deeplearning.ai/the-batch/issue-343) - AI 精选
-- [GPT-5.4：专业工作流进入“可执行时代”](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491663&idx=1&sn=b2e24b0c8c419ee8f5e05626a93d8c7c) - AI 精选
 
-- [查看全部 10115 篇...](/details/tags/ai-llm.md)
+- [查看全部 10135 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -99,7 +99,7 @@
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 - [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 726 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 728 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -185,6 +185,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5104 篇...](/details/tags/other.md)
+- [查看全部 5107 篇...](/details/tags/other.md)
 
 

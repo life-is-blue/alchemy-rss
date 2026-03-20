@@ -1,23 +1,27 @@
-> **更新时间**: 2026-03-19 10:59:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-20 08:11:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Cursor-发布-Composer-2](https://x.com/mntruell/status/2034729462211002505)
+
+2026-03-19 20:31:21 | 标签: Cursor, Composer 2, AI 编程, 编程 Agent, 软件开发
+
+> Cursor CEO Michael Truell 宣布了 Composer 2 的发布。除了功能更新外，他还阐述了公司的战略愿景：作为一家混合型企业，利用顶尖的 API 模型和自有的领域专用模型来打造卓越的编程 Agent，从而将自己与纯粹的应用程序开发商或模型提供商区分开来。
+
+
+
 ### [Google-Labs-推出升级版“Stitch”-AI-设计画布](https://x.com/GoogleAI/status/2034332963811344738)
 
-2026-03-18 18:15:49 | 标签: Stitch, Google Labs, AI 设计, 前端开发, 多模态 AI
-
-> Google Labs 宣布“Stitch”迎来重大升级，正式转型为 AI 设计画布。主要更新包括：1) 重构了用户界面，支持多模态输入（文本、图像、代码）；2) 引入了具有上下文感知能力的设计智能体，支持反馈提供和 PRD（产品需求文档）生成；3) 新增了用于管理跨工具设计规则的“DESIGN.md”文件格式。此次更新旨在简化从概念到原型的转化过程。
+2026-03-18 18:15:49
 
 
 
 ### [MiniMax-正式发布-M2.7-模型](https://x.com/MiniMax_AI/status/2034315320337522881)
 
-2026-03-18 17:05:42 | 标签: MiniMax, M2.7, LLM, AgenticAI, SWE-Pro
-
-> MiniMax 宣布推出 M2.7 模型，其表现优于前代产品 M2.5，胜率达 88%。核心亮点包括生产级软件工程能力（SWE-Pro 得分 56.22%）、媲美 Sonnet 4.6 的先进智能体技能，以及对高保真 Office 文件编辑的支持。
+2026-03-18 17:05:42
 
 
 
@@ -51,13 +55,13 @@
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 

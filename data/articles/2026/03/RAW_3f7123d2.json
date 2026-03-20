@@ -1,0 +1,55 @@
+{
+  "id": "RAW_3f7123d2",
+  "title": "碎片随笔：3 月 19 日",
+  "url": "https://martinfowler.com/fragments/2026-03-19.html",
+  "date": "2026-03-19 15:57:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>David Poll points out the <a href=\"https://www.davidpoll.com/2026/02/code-review-is-not-about-catching-bugs/\">flawed premise of the argument that code review is a bottleneck</a></p>\n  <blockquote>\n   <p>To be fair, finding defects has always been listed as a goal of code review – Wikipedia will tell you as much. And sure, reviewers do catch bugs. But I think that framing dramatically overstates the bug-catching role and understates everything else code review does. If your review process is primarily a bug-finding mechanism, you’re leaving most of the value on the table.</p>\n   <p>Code review answers: “Should this be part of my product?”</p>\n  </blockquote>\n  <p>That’s close to how I think about it. I think of code review as primarily about keeping the code base healthy. And although many people think of code review as <a href=\"https://martinfowler.com/articles/branching-patterns.html#reviewed-commits\">pre-integration review</a> done on pull requests, I look at code review as a broader activity both done earlier <a href=\"https://martinfowler.com/bliki/PairProgramming.html\">(Pair Programming)</a> and later <a href=\"https://martinfowler.com/bliki/RefinementCodeReview.html\">(Refinement Code Review)</a>.</p>\n  <blockquote>\n   <p>At Firebase, I spent 5.5 years running an API council…</p>\n   <p>The most valuable feedback from that council was never “you have a bug in this spec.” It was “this API implies a mental model that contradicts what you shipped last quarter” or “this deprecation strategy will cost more trust than the improvement is worth” or simply “a developer encountering this for the first time won’t understand what it does.” Those are judgment calls about whether something should be part of the product – the same fundamental question that code review answers at a different altitude. No amount of production observability surfaces them, because the system can work perfectly and still be the wrong thing to have built.</p>\n  </blockquote>\n  <p>His overall point is that code review is all about applying judgment, steering the code in a good direction. AI raises the level of that judgment, focusing review on more important things.</p>\n  <p>I agree that we shouldn’t be thinking of review as a bug-catching mechanism, and that it’s about steering the code base. In addition I’d also add that it’s about communication between people, enabling multiple perspectives on the development of the product. This is true both for code review, and for pair programming.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p><a href=\"https://www.honeycomb.io/blog/production-is-where-the-rigor-goes\">Charity Majors is unhappy</a> with me and rest of the folks that attended the Thoughtworks Future of Software Development Retreat.</p>\n  <blockquote>\n   <p>But the longer I sit with this recap, the more troubled I am by what it doesn’t say. I worry that the most respected minds in software are unintentionally replicating a serious blind spot that has haunted software engineering for decades: relegating production to the realm of bugs and incidents.</p>\n  </blockquote>\n  <p>There are lots of things we didn’t discuss in that day-and-a-half, and it’s understandable that a topic that matters so deeply to her is visible by its absence. I’m certainly not speaking for anyone else who was there, but I’ll take the opportunity to share some of my thoughts on this.</p>\n  <p>I consider observability to be a key tool in working with our AI future. As she points out, observability isn’t really about finding bugs - although I’ve long been a supporter of the notion of <a href=\"https://martinfowler.com/articles/qa-in-production.html\">QA in Production</a>. Observability is about revealing what the system actually does, when in the hands of its actual users. Test cases help you deal with the known paths, but reality has a habit of taking you into the unknowns, not just the unknowns of the software’s behavior in unforeseen places, but also the unknowns of how the software affects the broader human and organizational systems it’s embedded into. By watching how software is used, we can learn about what users really want to achieve, these <a href=\"https://martinfowler.com/bliki/ObservedRequirement.html\">observed requirements</a> are often things that never popped up in interviews and focus groups.</p>\n  <p>If these unknown territories are true in systems written line-by-line in deterministic code, it’s even more true when code is written in a world of <a href=\"https://annievella.com/posts/the-middle-loop/\">supervisory engineering</a> where humans are no longer to look over every semi-colon. Certainly <a href=\"https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html\">harness engineering</a> and <a href=\"https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html\">humans in the loop</a> help, and I’m as much a fan as ever about the importance of tests as a way to both explain and evaluate the code. But these unknowns will inevitably raise the importance of observability and its role to understand what the system thinks it does. I think it’s likely we’ll see a future where much of a developer’s effort is figuring what a system is doing and why it’s behaving that way, where observability tools are the IDE.</p>\n  <p>In this I ponder the lesson of AI playing Go. AlphaGo defeated the best humans a decade ago, and since then <a href=\"https://www.technologyreview.com/2026/02/27/1133624/ai-is-rewiring-how-the-worlds-best-go-players-think/\">humans study AI</a> to become better players and maybe discover some broader principles. I’m intrigued by how humans can learn from AI systems to be improve in other fields, where success is less deterministically defined.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Tim Requarth questions the portrayal of <a href=\"https://timrequarth.substack.com/p/silicon-valleys-mythology-of-human\">AI as an amplifier</a> for human cognition. He considers the different way we navigate with GPS compared to maps.</p>\n  <blockquote>\n   <p>If you unfold a paper map, you study the streets, trace a route, convert the bird’s-eye abstraction into the first-person POV of actually walking—and by the time you arrived, you’d have a nascent mental model of how the city fits together. Or you could fire up Google Maps: A blue dot, an optimal line from A to B, a reassuring robotic voice telling you when to turn. You follow, you arrive, you have no idea, really, where you are. A paper map demands something from you, and that demand leaves you with knowledge. GPS requires nothing, and leaves you with nothing. A paper map and GPS are tools with the same purpose, but opposite cognitive consequences.</p>\n  </blockquote>\n  <p>He introduces some attractive metaphors here. Steve Jobs called computers “bicycles for the mind”, Satya Nadella said with the launch of ChatGPT that “we went from the bicycle to the steam engine”.</p>\n  <blockquote>\n   <p>Like another 19th-century invention, the steam locomotive, the bicycle was a technological revolution. But a train traveler sat back and enjoyed the ride, while a cyclist still had to put in effort. With a bicycle, “you are traveling,” wrote a cycling enthusiast in 1878, “not being traveled.”</p>\n  </blockquote>\n  <p>In both examples, there’s a difference between tools that extend capability and tools that replace it. The question is what we lose when we are passive in the journey? He argues that Silicon Valley executives are too focused on the goal, and ignoring what happens to the humans being traveled.</p>\n  <p>Much of this depends, I think, on whether we care about what we are losing. I struggle with mental arithmetic, so I value calculators, whether on my phone or <code>M-x calc</code>. I don’t think I lose anything when I let the machine handle the toil of calculation. I share missing the sense of place when using a GPS over a map, but am happy that I can now drive though Lynn without getting lost. And when it comes to writing, I have no desire to let an LLM write this page.</p>\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 探讨了代码审查作为判断工具的演变角色，AI 驱动的“监督工程”中可观测性的必要性，以及 AI 作为增强工具与替代工具之间的认知权衡。",
+  "oneSentenceSummary": "Martin Fowler 探讨了代码审查作为判断工具的演变角色，AI 驱动的“监督工程”中可观测性的必要性，以及 AI 作为增强工具与替代工具之间的认知权衡。",
+  "summary": "在这篇“碎片随笔”合集中，Martin Fowler 总结了软件工程中的几个关键转变。他将代码审查重新定义为一种专注于代码库健康和产品一致性的高层判断过程，而非仅仅是捕捉 Bug 的瓶颈，并指出 AI 将提升这种判断的水平。他进一步指出，可观测性正成为“监督工程”时代必不可少的“IDE”，开发者必须理解 AI 生成系统在生产环境中的非确定性行为。最后，Fowler 反思了 AI 工具带来的“认知后果”，利用 GPS 与地图的比喻，区分了扩展人类能力的工具（自行车）和可能导致被动依赖的工具（蒸汽机），并质疑当人类停止“主动旅行”而开始“被动旅行”时，会丢失哪些心智模型。",
+  "mainPoints": [
+    {
+      "point": "代码审查应被视为一种架构判断和代码库健康的机制，而非 Bug 检测手段。",
+      "explanation": "将审查重新定义为“这是否应该存在？”的问题，重点在于心智模型和产品一致性。AI 工具很可能会处理琐碎的检查，让人们能够专注于更高层面的引导和跨团队沟通。"
+    },
+    {
+      "point": "可观测性是人类监督 AI 生成代码的“监督工程”中的关键工具。",
+      "explanation": "随着代码变得不再那么确定，且由 AI 大规模编写，传统的测试已不足够。可观测性揭示了生产环境中的“观测需求”和系统行为，有效地成为了开发者理解复杂系统的主要接口。"
+    },
+    {
+      "point": "AI 领域从“自行车”类工具向“蒸汽机”类工具的转变，存在侵蚀人类认知能动性和心智模型的风险。",
+      "explanation": "需要主动努力的工具（如地图）能构建知识，而被动工具（如 GPS）则在不理解的情况下提供结果。行业必须决定哪些技能值得保留，哪些“繁琐工作”可以安全地委托给 AI。"
+    }
+  ],
+  "keyQuotes": [
+    "如果你的审查流程主要是一个 Bug 查找机制，那么你就浪费了大部分价值。",
+    "可观测性在于揭示系统在真实用户手中时，到底在做什么。",
+    "我认为我们很可能会看到这样一个未来：开发者的很大一部分精力将用于弄清楚系统在做什么以及为什么会有这种行为，而可观测性工具将成为 IDE。",
+    "正如一位自行车爱好者在 1878 年所写的那样，有了自行车，‘你在旅行’，而不是‘被旅行’。",
+    "问题在于，当我们在这段旅程中变得被动时，我们会失去什么？"
+  ],
+  "tags": [
+    "代码审查",
+    "可观测性",
+    "AI 工程",
+    "软件工艺",
+    "监督工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 91,
+  "wordCount": 1151,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773935820000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 15:57:00"
+}

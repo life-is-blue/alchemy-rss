@@ -1,0 +1,59 @@
+{
+  "id": "RAW_c40b08b",
+  "title": "Cherry Studio 王新铭：2 个人，Github 42k 星，代码贡献第一名是 Claude",
+  "url": "https://www.xiaoyuzhoufm.com/episode/69bbfc43efabb9c9895157d3",
+  "date": "2026-03-19 13:00:32",
+  "author": "徐文浩，任鑫",
+  "siteName": "AI炼金术",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>Cherry Studio 早期只有 2 个人，却在 Github 拿了 42k Star。</span></p>\n  <p><span>它最早只是一个开源版 ChatGPT 客户端，后来一路长成 4.2 万 Star 的明星项目，开始往 Agent、甚至 long-running agent 方向演化。这期我们和创始人王新铭聊了 Cherry Studio 的起点、增长、开源社区运营、商业化克制，以及他对下一代 AI 产品形态和 AI Native 组织的判断。如果你关心开源项目怎么长成公司、AI 产品会怎么变、组织会不会被 AI 重写，这期值得一听。</span></p>\n  <hr>\n  <br>\n  <p><strong><span>关键要点</span></strong></p>\n  <p><span>AI 时代追求小而美等于慢性自杀</span></p>\n  <p><span>本地弱模型驱动 Agent 等于雇童工</span></p>\n  <p><span>要用最疯狂烧 Token 的方式跑满能力</span></p>\n  <p><span>新公司最大优势是零历史包袱</span></p>\n  <p><span>AIBP 将是企业最稀缺的新角色</span></p>\n  <br>\n  <p><strong><span>金句</span></strong></p>\n  <br>\n  <blockquote>\n   <p>\n    <br>\n    <span>「搞一个弱智的模型去驱动它，其实打童工，不能期望一个童工能产生多大的生产价值。」—— yinsen</span>\n   </p>\n   <p><span>「节约成本这件事情一点都不重要。就是要用最疯狂的燃烧 Token 的方式去想象一件事情。」—— yinsen</span></p>\n   <p><span>「我们以后就没有所谓的流水线了。产品经理就是需求工程师，设计师就是品味好的前端工程师，研发是架构或质量工程师。」—— yinsen</span></p>\n   <p><span>「过去大家都是通过汇报线来对齐，它一定是熵增的。有没有可能在中间加一个 AI 总线，把组织对齐路径缩得非常短。」—— yinsen</span></p>\n  </blockquote>\n  <br>\n  <strong><span>时间线</span></strong>\n  <p><span><a class=\"timestamp\" data-timestamp=\"90\">01:30</a> Cherry Studio 是什么：从开源 Chat 客户端到全量 Agent 客户端</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"232\">03:52</a> 为什么很早就开始想 long-running agent：token 消耗的波峰波谷终将被填平</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"321\">05:21</a> 创业源起：做产品是学习 AI 最好的方式，找到合伙人竟住在同一个镇</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"526\">08:46</a> 从多模型客户端到早期增长：客户端形态为什么能跑出来</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"607\">10:07</a> 42K Star 算什么量级：对比 OpenClaw 的 30 万</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"661\">11:01</a> 为什么一开始选开源而不是闭源收费</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"741\">12:21</a> DeepSeek 爆火，用户涌入把 Cherry Studio \"推成了公司\"</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"947\">15:47</a> 社区贡献量超过内部：Claude 代码贡献排第一，社区贡献者排第二</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1054\">17:34</a> 核心贡献者一半是研究生，靠报销订阅和美团外卖凝聚社区</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1250\">20:50</a> AI 时代还要不要小而美：保持开放才能跟上变化速度</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1535\">25:35</a> 用户画像：从技术极客到连截图都不会的人，从中科院到母猪配种企业</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"1787\">29:47</a> 为什么没有急着做卖 token 的激进商业化</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2271\">37:51</a> 团队规模：半年前 2 人，现在 9 人。十倍杠杆可行，百倍仍有挑战</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2463\">41:03</a> 新公司更有机会做 AI Native 组织：最大优势是没有历史包袱</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2710\">45:10</a> PRD 要写到 AI 能看懂为止，设计师要直接输出前端代码</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"2838\">47:18</a> AI 效能中心：一个 04 年实习生撬动全公司 AI 工作流改造</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3078\">51:18</a> 客户端形态会被飞书和 IM 替代吗：短期分流，长期 IM 自身也会收缩</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3359\">55:59</a> Cherry Studio 下一站：从客户端走向后端 long-running agent</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3696\">1:01:36</a> OpenClaw 到底是炒作还是时代信号</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"3984\">1:06:24</a> 思维转变：从节约 Token 到最疯狂燃烧，从本地推理有价值到毫无价值</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4231\">1:10:31</a> AIBP 的机会：批量培养没被传统路径特化规训的跨界 AI 人才</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"4816\">1:20:16</a> 管理 AI 和管理人一样：从指令型授权走向目标型授权</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"5244\">1:27:24</a> Vision：帮企业实现 AI Native 组织，十倍乃至百倍能效提升</span></p>\n  <p><span><a class=\"timestamp\" data-timestamp=\"5422\">1:30:22</a> AI 替代知识劳动后，人类文明可能迎来下一次跃升</span></p>\n  <br>\n  <p><strong><span>欢迎订阅「AI 炼金术」的播客，以及同名公众号、视频号</span></strong>\n   <br>\n   <span>「AI 炼金术」是一档由徐文浩和任鑫——两位多年老友、AI 领域的资深从业者——打造的播客。这里是探讨 AI 和创业的理想聚集地，我们会邀请一线创业者、产品产品和科研学者，深入探讨 AI 如何重塑行业、变革生活，以及如何从 0 到 1 打造 AI 原生产品。&nbsp;</span>\n   <br>\n   <span>我们的讨论会涵盖多个话题：从 AI 如何改变世界的未来，到如何找到 AI 创业的 PMF；从如何利用 AI 降本增效，到怎样将 AI 技术融入日常生活……如果你对 AI、产品、创业感兴趣，这里有满满的干货和一线实战经验，欢迎关注并推荐给你的朋友，共同探索未来的无限可能！&nbsp;</span>\n   <br>\n   <span>商务合作：公众号 「AI炼金术 」菜单栏中【商务】获取联系方式&nbsp;</span>\n   <br>\n   <br>\n   <strong><span>节目主理人：</span></strong></p>\n  <p><b><span>徐文浩：</span></b><span>某AI创业公司联合创始人，正在面向全球市场开发AI应用。连续创业者，参与过多家创业公司，拼多多早期员工。广告科技公司MediaV的算法和数据负责人，后被360收购。离开后加入成立不到1个月的拼多多。后创办了基于AI的海外客服聊天机器人公司 BotHub.AI 和 海外社交电商平台 Bukito 都宣告失败。2023年再次下场创业。&nbsp;</span>\n   <br>\n   <br>\n   <b><span>任鑫：</span></b><span>美元基金合伙人，主要在投资和孵化面向全球市场的 AI 应用。之前是连续创业者，曾经打造“今夜酒店特价”用移动互联网应用特价销售酒店尾房；被京东并购后内部创业“京东到家”开展本地即时零售业务；2015 年再次创业 Get 探索对话式人工智能助理成为先烈；2021 年出售公司，2023 年重新回到 AI 世界。</span>\n   <br>\n   <br>\n   <strong><span>BGM：</span></strong></p>\n  <p><b><span>片尾：</span></b><span>Rangga Jones - i confess</span></p>\n  <br>\n  <br>\n </body>\n</html>",
+  "aiSummary": "对话 Cherry Studio 创始人王新铭，深度拆解 4.2 万星开源项目的成长路径与 AI Native 组织构建实战。",
+  "oneSentenceSummary": "对话 Cherry Studio 创始人王新铭，深度拆解 4.2 万星开源项目的成长路径与 AI Native 组织构建实战。",
+  "summary": "本期播客深度访谈了明星开源项目 Cherry Studio 的创始人王新铭。内容涵盖了项目从个人兴趣驱动的桌面客户端，如何抓住 DeepSeek 爆火机遇并借助社区力量（包括 Claude 贡献的代码）演变为拥有 42k Star 的 Agent 平台。嘉宾详细分享了 AI Native 组织的管理哲学，提出“产品经理写 PRD 给 AI 看、设计师直接出代码”的协作新范式。此外，节目还深入探讨了 Long-running Agent 的未来趋势，以及企业如何通过设立“AI 效能中心”实现十倍甚至百倍的能效飞跃，为技术创业者和开发者提供了极具参考价值的 AI 实践指南。",
+  "mainPoints": [
+    {
+      "point": "开源社区与 AI 共同驱动的产品演进模式",
+      "explanation": "Cherry Studio 证明了小团队通过开源能吸引全球开发者甚至 AI 参与贡献，其核心代码贡献者排名第一的是 Claude，体现了 AI 辅助开发的巨大潜力。"
+    },
+    {
+      "point": "重新定义 AI Native 组织的角色与协作边界",
+      "explanation": "提出 PM 应编写 AI 可读的 PRD，设计师转型为输出代码的工程师，而研发转向架构与质量把关，通过并行开发打破线性协作的效率瓶颈。"
+    },
+    {
+      "point": "从“节约 Token”转向“疯狂燃烧 Token”的思维跃迁",
+      "explanation": "在 AI 时代，过度追求低成本模型如同雇佣童工，企业应追求跑满模型能力上限，利用 Long-running Agent 填补业务波峰波谷，实现自动化生产力。"
+    },
+    {
+      "point": "构建“AI 总线”以降低组织内部的沟通对齐熵增",
+      "explanation": "传统金字塔汇报体系存在严重信息损耗，利用 AI 作为组织的中枢总线，可以极大缩短目标对齐路径，提升整体决策与执行的一致性。"
+    }
+  ],
+  "keyQuotes": [
+    "搞一个弱智的模型去驱动它，其实是打童工，不能期望一个童工能产生多大的生产价值。",
+    "不要为了省 Token 而牺牲效果，就是要用最疯狂的燃烧 Token 的方式去想象一件事情。",
+    "产品经理就是需求工程师，设计师就是品味好的前端工程师，研发是架构或质量工程师。",
+    "过去大家都是通过汇报线来对齐，它一定是熵增的。有没有可能在中间加一个 AI 总线，把组织对齐路径缩得非常短。",
+    "AI 时代追求小而美等于慢性自杀，保持开放才能跟上变化速度。"
+  ],
+  "tags": [
+    "开源项目",
+    "Cherry Studio",
+    "AI Native 组织",
+    "AI 代理 (Agent)",
+    "代码自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 92,
+  "wordCount": 1623,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_29b54a",
+  "sourceName": "AI炼金术",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773925232000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 13:00:32"
+}

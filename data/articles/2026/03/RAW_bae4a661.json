@@ -1,0 +1,58 @@
+{
+  "id": "RAW_bae4a661",
+  "title": "Squad 如何在你的代码仓库中运行协同 AI 智能体",
+  "url": "https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/",
+  "date": "2026-03-19 16:20:15",
+  "author": "Brady Gaster",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>If you’ve used AI coding tools before, you know the pattern. You write a prompt, the model misunderstands, you refine it, and you coax better output. Progress depends more on steering the model than on building the software.</p>\n  <p>As projects grow, the challenge stops being “how do I prompt?” and starts becoming “how do I coordinate design, implementation, testing, and review without losing context along the way.”</p>\n  <p>Multi-agent systems are a great way to move past this plateau, but usually require a massive amount of setup. People spend hours building orchestration layers, wiring up frameworks, and configuring vector databases before they can delegate a single task.</p>\n  <p><a href=\"https://github.com/bradygaster/squad\" target=\"_blank\" rel=\"noreferrer noopener\">Squad</a>, an open source project built on GitHub Copilot, initializes a preconfigured AI team directly inside your repository. It is a bet that multi-agent development can be accessible, legible, and useful without requiring heavy orchestration infrastructure or deep prompt engineering expertise.</p>\n  <p>Two commands—<code>npm install -g @bradygaster/squad-cli</code> once globally, <code>squad init</code> once per repo—and Squad drops a specialized AI team: a lead, frontend developer, backend developer, and tester directly against your repository.</p>\n  <p>Instead of a single chatbot switching roles, <strong>Squad demonstrates repository native multi-agent orchestration without heavy centralized infrastructure</strong>.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-how-squad-coordinates-work-across-agents\">How Squad coordinates work across agents</h2>\n  <p>You describe the work you need done in natural language. From there, a coordinator agent inside Squad figures out the routing, loads repository context, and spawns specialists with task-specific instructions.</p>\n  <p>For example, you type: “<em>Team, I need JWT auth—refresh tokens, bcrypt, the works.</em>” Then you watch the team spin up in parallel. The backend specialist takes the implementation. The tester starts writing the accompanying test suite. A documentation specialist opens a pull request. Within minutes, files are written and branches are created. These specialists already know your naming conventions and what you decided about database connections last Tuesday—not because you put it in the prompt, but because agents load from shared team decisions and their own project history files committed to the repository.</p>\n  <p>Instead of forcing you to manually test the output and prompt the model through multiple rounds of fixes, Squad handles iteration internally. Once the backend specialist drafts the initial implementation, the tester runs their test suite against it. If those tests fail, the tester rejects the code. Crucially, the orchestration layer prevents the original agent from revising its own work. Squad’s reviewer protocol can prevent the original author from revising rejected work, and a different agent must step in to fix it. <strong>This forces genuine independent review with a separate context window and a fresh perspective, rather than asking a single AI to review its own mistakes</strong>. In workflows where reviewer automation is enabled, you review the pull request that survives this internal loop rather than every intermediate attempt.</p>\n  <p>It’s not autopilot, and it’s not magic on session one. Agents will ask clarifying questions and sometimes make reasonable but wrong assumptions. You still review and merge every pull request. It is collaborative orchestration, not autonomous execution.</p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <div class=\"mod-vh position-relative\" style=\"height: 0; padding-bottom: calc((9 / 16)*100%);\">\n     <iframe loading=\"lazy\" class=\"position-absolute top-0 left-0 width-full height-full\" src=\"https://www.youtube.com/embed/lIWuYhalRFU?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent\" title=\"YouTube video player\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen frameborder=\"0\"></iframe>\n    </div>\n   </div>\n  </figure>\n  <h2 class=\"wp-block-heading\" id=\"h-architectural-patterns-behind-repository-native-orchestration\">Architectural patterns behind repository-native orchestration</h2>\n  <p>Whether you use Squad or build your own multi-agent workflows, there are a few architectural patterns we’ve learned from building repository-native orchestration. These patterns move the architecture away from “black box” behavior toward something inspectable and predictable at the repository level.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-1-the-drop-box-pattern-for-shared-memory\">1. The “Drop-box” pattern for shared memory</h3>\n  <p>Most AI orchestration relies on real-time chat or complex vector database lookups to keep agents in sync. We’ve found that this is often too fragile; synchronizing state across live agents is a fool’s errand.</p>\n  <p>Instead, Squad uses a “drop-box” pattern. Every architectural choice, like choosing a specific library or a naming convention, is appended as a structured block to a <code>versioned decisions.md</code> file in the repository. This is a bet that asynchronous knowledge sharing inside the repository scales better than real-time synchronization. By treating a markdown file as the team’s shared brain, you get persistence, legibility, and a perfect audit trail of every decision the team has made. Because this memory lives in project files rather than a live session, the team can also recover context after disconnects or restarts and continue from where it left off.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-2-context-replication-over-context-splitting\">2. Context replication over context splitting</h3>\n  <p>One of the biggest hurdles in AI development is the context window limit. When a single agent tries to do everything, the “working memory” gets crowded with meta-management, leading to hallucinations.</p>\n  <p>Squad solves this by ensuring the coordinator agent remains a thin router. It doesn’t do the work; it spawns specialists. Because each specialist runs as a separate inference call with its own large context window (e.g., up to 200K tokens on supported models), you aren’t splitting one context among four agents, you’re replicating repository context across them.</p>\n  <p>Running multiple specialists in parallel gives you multiple independent reasoning contexts operating simultaneously. This allows each agent to “see” the relevant parts of the repository without competing for space with the other agents’ thoughts.</p>\n  <h3 class=\"wp-block-heading\" id=\"h-3-explicit-memory-in-the-prompt-vs-implicit-memory-in-the-weights\">3. Explicit memory in the prompt vs. implicit memory in the weights</h3>\n  <ol start=\"3\" class=\"wp-block-list\"></ol>\n  <p>We believe an AI team’s memory should be legible and versioned. You shouldn’t have to wonder what an agent “knows” about your project.</p>\n  <p>In Squad, an agent’s identity is built primarily on two repository files: a charter (who they are) and a history (what they’ve done), alongside shared team decisions. These are plain text. Because these live in your <code>. squad/</code> folder, the AI’s memory is versioned right alongside your code. When you clone a repo, you aren’t just getting the code; you are getting an already “onoboarded” AI team because their memory lives alongside the code directly in the repository.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-lowering-the-barrier-to-multi-agent-workflows\">Lowering the barrier to multi-agent workflows</h2>\n  <p>Our biggest win with Squad is that it makes it easy for anyone to get started with agentic development in a low-touch, low-ceremony way. You shouldn’t have to spend hours wrestling with infrastructure, learning complex prompt engineering, or managing convoluted CLI interactions just to get an AI team to help you write code.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "Squad 是一款开源工具，支持仓库原生的多智能体 AI 编排，利用版本化的 Markdown 文件实现共享记忆，并通过独立的审查循环来简化复杂的开发任务。",
+  "oneSentenceSummary": "Squad 是一款开源工具，支持仓库原生的多智能体 AI 编排，利用版本化的 Markdown 文件实现共享记忆，并通过独立的审查循环来简化复杂的开发任务。",
+  "summary": "本文介绍了 Squad，这是一个基于 GitHub Copilot 构建的开源项目，旨在简化多智能体 AI 团队的部署。与需要复杂编排层和向量数据库的传统智能体框架不同，Squad 通过简单的 CLI 直接在代码仓库中初始化一个专业团队（包括负责人、前端、后端和测试人员）。它采用“仓库原生”方法，智能体通过轻量级路由器协调工作，利用版本化的 Markdown 文件（即“Drop-box”模式）维护共享记忆，并为每个专家智能体使用独立的上下文窗口。这种架构确保了 AI 记忆的可读性，并与代码同步进行版本控制，同时能够执行真正独立的代审，避免了单智能体系统中常见的上下文碎片化问题。",
+  "mainPoints": [
+    {
+      "point": "Squad 实现了无需繁重基础设施的仓库原生多智能体编排。",
+      "explanation": "通过将 AI 团队直接嵌入到代码仓库中，它消除了对外部向量数据库或复杂编排层的需求，使智能体工作流可以通过简单的 CLI 命令轻松访问。"
+    },
+    {
+      "point": "“Drop-box”模式为 AI 智能体提供了版本化、可读的共享记忆。",
+      "explanation": "智能体不再进行实时同步，而是将决策记录在 Markdown 文件中。这确保了异步知识共享是持久的、可审计的，并且在会话重启或上下文断开后依然有效。"
+    },
+    {
+      "point": "上下文复制防止了导致幻觉的“工作记忆”拥挤问题。",
+      "explanation": "每个专家智能体都在各自的推理调用中运行，并拥有完整的上下文窗口。这使得多个智能体可以同时“查看”代码仓库，而无需争夺有限的 Token 空间。"
+    },
+    {
+      "point": "独立的审查协议通过全新的视角强制执行更高的代码质量。",
+      "explanation": "Squad 防止智能体修改自己被拒绝的工作。由单独的测试智能体识别故障，并由不同的专家进行修复，从而确保了一个真正、独立的验证循环。"
+    }
+  ],
+  "keyQuotes": [
+    "Squad 展示了无需繁重集中式基础设施的仓库原生多智能体编排。",
+    "通过将 Markdown 文件视为团队的共享大脑，你可以获得持久性、可读性以及团队所做每一个决策的完美审计追踪。",
+    "这通过独立的上下文窗口和全新的视角强制执行了真正的独立审查，而不是让单个 AI 去审查它自己的错误。",
+    "当你克隆一个仓库时，你得到的不仅仅是代码；你还得到了一个已经“入职”的 AI 团队，因为它们的记忆与代码共存。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "多智能体系统",
+    "GitHub Copilot",
+    "软件架构",
+    "编排"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 979,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1773937215000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 16:20:15"
+}

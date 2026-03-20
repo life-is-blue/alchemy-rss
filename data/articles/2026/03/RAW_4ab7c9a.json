@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4ab7c9a",
+  "title": "我们是如何定义 OpenClaw for Teams 新产品形态的｜对谈 Kuse&Junior 联创兼 CTO 宇豪",
+  "url": "https://www.xiaoyuzhoufm.com/episode/69bbc8ea3c625cc5ae21b461",
+  "date": "2026-03-19 14:00:00",
+  "author": "42章经",
+  "siteName": "42章经",
+  "content": "<html>\n <head></head>\n <body>\n  <p><strong><span>活动预告🥳：3 月 28 日，我们会请到 Sheet0 创始人文锋、Kuse.ai / Junior.so 联合创始人兼 CTO Austin Xu、Clockless.ai 创始人任川、PingCAP 联创兼 CTO 黄东旭做一场线上活动，大家记得翻到 shownotes 末尾查看报名信息！</span></strong></p>\n  <span></span>\n  <p><span>Kuse.ai 未曾融资就从 0 做到千万刀 ARR，Junior.so 则是最早上线的相当成熟的 OpenClaw for Teams 类产品。</span></p>\n  <span></span>\n  <p><span>这期我们请到的嘉宾，就是这两个产品背后的联创和 CTO 宇豪。他分享了很多踩过的坑，以及对 OpenClaw 类产品的思考，其中有些地方，甚至已经带点科幻感。</span></p>\n  <span></span>\n  <p><span>宇豪的一个核心判断是：26 年将进入 7×24 的 AI 劳动力时代。</span></p>\n  <span></span>\n  <p><span>这并非凭空想象，而是他们正在经历的现实：</span></p>\n  <span></span>\n  <p><span>他们现在的团队，由 15 个全职人类员工加上三四个「AI 同事」组成。这些 Agents 有名字、有 Gmail、有手机号，每天都在真实地产生业务价值：有的专门监控数据，有的能帮他们识别出多条价值上万美金的销售线索，有的还会在参会后给人类提建议。而且这些 Agents 工作过于高效，以至于他们不得不专门建了一个 human only 的群，留给人类去摸鱼吹水（笑）。</span></p>\n  <span></span>\n  <p><span>在聊这些 usecases 时，宇豪始终有种难掩的兴奋。而这套「Agent as Workforce」的体验，都已经被他们封装进了 Junior.so 这个新产品里。</span></p>\n  <span></span>\n  <p><span>节目中，宇豪还分享了很多零融资做增长的思考，以及快速发现并落地新的产品机会的经验。说起来没有什么 secret sauce，但确实有效，在当下也很有借鉴意义。</span></p>\n  <span></span>\n  <p><img src=\"https://image.jido.dev/20260319223058_fdacd08.png\"></p>\n  <span></span>\n  <p><strong><span>【人类博物馆】</span></strong></p>\n  <span></span>\n  <p><span>导游：曲凯，42章经创始人</span></p>\n  <span></span>\n  <p><span>46 号珍藏：徐宇豪，Kuse.ai &amp; Junior.so 联创兼 CTO</span></p>\n  <span></span>\n  <p><strong><span>【时光机】</span></strong></p>\n  <span></span>\n  <p><strong><span>Part 1 老产品 Kuse：踩坑、迭代，与催生出的创新</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"116\">1:56</a> 在没有融资的情况下，怎么快速把产品做到千万刀 ARR？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"232\">3:52</a> 固定定价在 Agent 时代是个陷阱</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"495\">8:15</a> 我们曾经希望用同一个产品服务所有人，但发现这条路不太 work</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"642\">10:42</a> 所有 Agent 创业者都应该尽早建立自己的 Evaluation &amp; Benchmark</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"849\">14:09</a> 去年 12 月开始，我们内部就有了 7×24 工作的「AI 同事」</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1011\">16:51</a> Token 成本这么高，为什么还是选 Agents 而不是人？又为什么不把人都换成 Agents？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1109\">18:29</a> 之前我不觉得 SaaS 会完蛋，直到……</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1270\">21:10</a> 零融资倒逼出来的增长思考</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span>Part 2 新产品 Junior：让 AI 成为真正的数字员工</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1466\">24:26</a> 我们是怎么定义 OpenClaw for Teams 这个新产品的形态的？ </span>\n    <ul>\n     <span> </span>\n     <li><span><a class=\"timestamp\" data-timestamp=\"1743\">29:03</a> 很多产品需求其实是「自己长出来的」</span></li>\n     <span> </span>\n    </ul>\n    <span> </span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"1929\">32:09</a> 我们的 AI 说：人类是最大的瓶颈</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2092\">34:52</a> 越好的模型其实越安全</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2175\">36:15</a> 应该把钱花在 Token 上，而不是花在工资上</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2287\">38:07</a> 这么多团队都在做 OpenClaw 类产品，那大家最后拼的是什么？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2686\">44:46</a> 我们在收费模式上有一些小巧思</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2747\">45:47</a> 该怎么给 Agent 员工界定职责边界？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"2912\">48:32</a> 分享一些 Agents 间协作的有趣实践，比如让它们自己去赚钱</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3271\">54:31</a> 互联网世界准备好迎接 AI 员工了吗？还差什么？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3490\">58:10</a> AI 大规模替代劳动力之后，真不知道社会会怎样</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3742\">1:02:22</a> 模型依然有幻觉，但我们的 Agent 已经可以主动自我纠正了</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"3955\">1:05:55</a> 如果你是客户，你选 OpenClaw 类产品时会重点关注什么？</span></li>\n   <span> </span>\n   <li><span><a class=\"timestamp\" data-timestamp=\"4060\">1:07:40</a> 给正在做类似事情的人一些建议</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span>【活动预告🥳】</span></strong></p>\n  <span></span>\n  <p><span>3 月 28 日，我们会请 Sheet0 创始人文锋、Kuse.ai/ Junior.so 联合创始人兼 CTO Austin Xu、Clockless.ai 创始人任川、PingCAP 联创兼 CTO 黄东旭做一场线上活动</span><strong><span>，</span></strong><span>感兴趣的朋友欢迎点击</span><a href=\"https://my.feishu.cn/share/base/form/shrcntAIYfNyvErSmuYOLSmgzid\" data-url=\"https://my.feishu.cn/share/base/form/shrcntAIYfNyvErSmuYOLSmgzid\"><span>链接</span></a><span>或扫描下面的二维码，一起来认识&amp;交流！</span></p>\n  <span></span>\n  <p><img src=\"https://image.jido.dev/20260319223058_829559c.png\"></p>\n  <span></span>\n  <p><span>【</span><strong><span>The gang that made this happen】</span></strong></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><span>制作人：陈皮</span></li>\n   <span> </span>\n   <li><span>剪辑：陈皮</span></li>\n   <span> </span>\n   <li><span>片头：Mondo Bongo - Joe Strummer &amp; The Mescaleros</span></li>\n   <span> </span>\n   <li><span>片尾：U - SUPER JUNIOR</span></li>\n   <span></span>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "对话 QCI 联创宇豪，深度探讨 AI 数字员工从工具向劳动力的形态演进，以及千万美金 ARR 背后的创业实战经验。",
+  "oneSentenceSummary": "对话 QCI 联创宇豪，深度探讨 AI 数字员工从工具向劳动力的形态演进，以及千万美金 ARR 背后的创业实战经验。",
+  "summary": "本期播客对话了 QCI 联创兼 CTO 宇豪，深入探讨了其团队在 AI 领域从 Kuse.ai 到新产品 Junior.so 的创业历程。宇豪分享了如何在未融资的情况下，通过产品方向调整和定价策略优化（从固定定价转向 Usage-based）实现千万美金 ARR 的实操经验。核心内容围绕“AI 员工（Junior）”的定义展开，强调 AI 不应仅是私人助手，而应是具备独立身份（如 Gmail 和手机号）、明确职责和企业级记忆的“数字劳动力”。讨论还涉及了 AI 协作对组织架构的重塑、企业级权限安全的白帽子测试、以及对 2026 年进入全天候 AI 劳动力时代的深刻预测，并指出了人类在高效 AI 协作流中可能成为“瓶颈”的新现状。",
+  "mainPoints": [
+    {
+      "point": "AI 员工应具备独立身份与权限体系",
+      "explanation": "Junior 被赋予 Gmail 和手机号，使其能像真人员工一样自主在互联网执行任务，而非仅作为主人的分身存在。"
+    },
+    {
+      "point": "定价策略需从固定计费转向按量付费",
+      "explanation": "Agent 时代的任务复杂度差异巨大，固定定价会导致成本失控，Usage-based 模式更能筛选高价值客户并匹配成本。"
+    },
+    {
+      "point": "构建围绕企业场景的组织记忆系统",
+      "explanation": "区分于个人助手，企业级 AI 需理解组织关系、项目历史和数据边界，记忆系统应针对具体业务场景定制化构建。"
+    },
+    {
+      "point": "AI 协作流中人类正逐渐成为效率瓶颈",
+      "explanation": "当 AI 员工能 7x24 小时高频响应时，人类的反应速度和处理能力反而成了组织推进中唯一的延时环节。"
+    }
+  ],
+  "keyQuotes": [
+    "26 年将进入 7×24 的 AI 劳动力时代。这并非凭空想象，而是我们正在经历的现实。",
+    "应该把钱花在 Token 上，而不是花在工资上。即便单位成本看似更高，但在降低组织复杂度上帮助巨大。",
+    "越好的模型其实越安全。它不仅是效果的问题，越好的模型越不容易被钓鱼，越能遵守你设下的限制。",
+    "我们专门建了一个 human only 的群，留给人类去摸鱼吹水，因为在 AI 员工所在的群里，你不好意思不往下推进。"
+  ],
+  "tags": [
+    "AI Agent",
+    "数字员工",
+    "AI 劳动力",
+    "企业级应用",
+    "Junior.so"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 92,
+  "wordCount": 1192,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_84751f",
+  "sourceName": "42章经",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1773928800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-19 14:00:00"
+}

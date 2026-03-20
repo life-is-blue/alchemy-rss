@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-20 06:04:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-20 08:11:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -612,13 +612,29 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [如何自动化表单-UX-审计：错误处理、提示信息与键盘操作流程](https://www.freecodecamp.org/news/automate-form-ux-audits-handbook/)
+
+2026-03-19 17:56:31 | 标签: UX 审计, Web 可访问性, WCAG, 表单验证, 自动化
+
+> 本手册提供了一种用于自动化 Web 表单用户体验（UX）审计的结构化方法。它强调了表单在转化中的关键作用，并指出了常见的摩擦点，如模糊的错误信息和糟糕的键盘导航。作者将 Nielsen Norman 的可用性启发式评估与 WCAG 2.1 可访问性标准相结合，创建了一个程序化测试框架。主要功能包括用于定义审计范围的 JavaScript 代码片段、将特定 WCAG 标准映射到自动化测试函数，以及建立二元通过/失败阈值。该指南还介绍了用于文档记录的“5C”框架，并将技术审计结果直接与减少流失率和支持工单量等业务 KPI 挂钩。
+
+
+
+### [QCon-London-2026：Spritely：互联网未来的基础设施](https://www.infoq.com/news/2026/03/spritely-infrastructure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-03-19 15:10:00 | 标签: 去中心化, P2P, 基于能力的安全, Actor 模型, WebAssembly
+
+> 这篇来自 QCon London 2026 的报告介绍了 Spritely Institute 的 Christine Lemmer-Webber 和 David Thompson，他们讨论了构建“P2P 版 Rails”基础设施的努力。演讲强调了中心化技术固有的风险，例如服务降级和用户自主权的缺失。Spritely 通过三大支柱来解决这些问题：通过最小权限原则（POLA）和“能力”（使用 Goblins 环境）保护资源；通过 Actor 模型和对象能力网络（OCapN）协议实现安全的进程通信；以及使用“宠物名”（Petnames）解决 Zooko 三角形中的命名冲突。该项目还引入了 Hoot...
+
+
+
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -768,13 +784,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2268,13 +2284,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -3978,13 +3994,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
