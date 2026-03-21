@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-21 10:51:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-21 12:30:39 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11132,17 +11132,13 @@
 
 ### [Turbo-Pascal-3.02A，解构](https://simonwillison.net/2026/Mar/20/turbo-pascal/#atom-everything)
 
-2026-03-20 23:59:14 | 标签: Turbo Pascal, Reverse Engineering, Claude AI, Binary Analysis, Retro Computing
-
-> 本文探讨了 Borland 1985 年发布的 Turbo Pascal 3.02A 的卓越效率，它成功将完整的文本编辑器、IDE 和 Pascal 编译器打包成一个仅 39，731 字节的可执行文件。受「Turbo Pascal 比……更小」列表的启发，作者利用 Claude（大型语言模型）对免费版可执行文件进行二进制分析和逆向工程。其成果是一个交互式网页工具，它将二进制文件的内存段映射出来，反汇编成汇编代码，并提供人类可读的注释。文章还分享了引导 AI 完成解构过程的具体提示序列，展示了 AI 在软件考古领域的新颖应用。
+2026-03-20 23:59:14
 
 
 
 ### [深度学习系统对齐的未来可能看起来像“基于可解释性训练”——LessWrong](https://www.lesswrong.com/posts/DzKhPKjyYSy5oih2u/the-future-of-aligning-deep-learning-systems-will-probably)
 
-2026-03-20 23:06:00 | 标签: AI对齐, 深度学习, 可解释性, 欺骗性对齐, RLHF
-
-> 本文来自 LessWrong，对 AI 对齐挑战进行了引人深思的分析，并提出了一种名为“基于可解释性训练”的新方法。作者认为，当前的对齐方法（RLHF、奖励建模）存在根本缺陷，因为它们优化的是输出，而不能保证生成这些输出的内部过程是对齐的。这创造了“欺骗性对齐”的风险——模型可能为了错误的原因学会产生好的输出。提出的解决方案是将机制可解释性（interp）纳入训练过程——具体来说，使用线性探针来检测奖励黑客和欺骗等概念，并将这些激活纳入奖励函数。作者分析了两种场景：该技术效果良好的场景（场景 1）和失败的场景（场景 2），提供了一个有原则的框架来理解这种方法何时有效。该文章引用了 GoodFi...
+2026-03-20 23:06:00
 
 
 
@@ -46070,9 +46066,7 @@ http://antirez.com/news/162
 
 ### [2026-03-21-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2026-03-21-HackerNews/)
 
-2026-03-21 07:11:32 | 标签: Hacker News, Android 安全, 网络安全, 自动驾驶, AI 编程
-
-> 文章精选了 Hacker News 当日十大热点。重点包括：Google 拟对 Android 未验证应用侧载引入 24 小时等待期，引发安全与垄断的争议；Terence Eden 倡导以“享受错失的乐趣（JOMO）”心态理性看待 AI 等技术热潮；学术预印本平台 arXiv 宣布独立运营。安全领域，Delve 公司被曝提供“伪造合规服务”，而 Strava 再次暴露法国航母实时位置。AI 方面，Anthropic 法律维权导致 OpenCode 移除相关代码，Claude Code 推出实时通信“通道”功能，Waymo 发布报告称其事故率比人类低 92%。此外，还记录了查克·诺里斯去世及 O...
+2026-03-21 07:11:32
 
 
 
