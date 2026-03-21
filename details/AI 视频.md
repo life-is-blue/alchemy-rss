@@ -1,15 +1,21 @@
-> **更新时间**: 2026-03-20 14:15:06 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-21 08:09:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [关于代码智能体、AutoResearch-与-AI-循环时代的安德烈·卡帕西](https://www.youtube.com/watch?v=kwSVtQ7dziU)
+
+2026-03-20 13:27:35 | 标签: AI 智能体, 安德烈·卡帕西, 软件工程, AutoResearch, LLM
+
+> 在这场深度对话中，安德烈·卡帕西描述了他工作方式的根本转变，从编写代码转变为每天管理 AI 智能体团队 16 小时。他提出了 AI 的「循环时代」，其中像 Claude 这样的智能体在具有持久记忆和沙盒环境的背景下自主运行。卡帕西详细介绍了他的「AutoResearch」项目，该项目实现了超参数调优和发现的自动化，表明前沿实验室正越来越多地专注于将人类从研究循环中移除。讨论涵盖了「氛围编程」、软件需求中的杰文斯悖论，以及「模型物种形成」现象——在特定任务中，专门的较小模型可能会超越通用模型。最后，他展望了教育的未来，专家们教智能体如何教人类，将人类角色从直接教学转变为课程设计。
+
+
+
 ### [Stitch-2.0-+-Claude-Code：这简直是疯狂的-AI-编程工作流！](https://www.youtube.com/watch?v=EKix32vioss)
 
-2026-03-19 09:37:49 | 标签: Google Stitch, Claude Code, AI 设计, 设计系统, design.md
-
-> 本视频分析了 Google Stitch 2.0 的定位转型：从简单的 AI UI 生成器（“输入提示词，输出截图”）转变为覆盖完整设计工作流的综合性 AI 原生设计画布。  **关键升级：** - **以意图为中心的设计**：无需描述组件，只需描述业务目标和品牌调性，Stitch 即可推断出视觉方向 - **无限画布**：将文本、图像和代码作为上下文引入；多种设计方向可在同一个工作区内共存 - **设计智能体（Design Agent）**：不仅基于单个提示词，而是针对整个项目演进进行推理，同时保持主页、定价页和仪表盘之间的一致性 - **design.md**：一个对智能体友好的 Mark...
+2026-03-19 09:37:49
 
 
 
@@ -283,7 +289,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -295,7 +301,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

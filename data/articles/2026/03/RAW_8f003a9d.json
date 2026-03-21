@@ -1,0 +1,63 @@
+{
+  "id": "RAW_8f003a9d",
+  "title": "Agentic AI 安全：Databricks AI 安全框架 (DASF v3.0) 中的新风险与控制措施",
+  "url": "https://www.databricks.com/blog/agentic-ai-security-new-risks-and-controls-databricks-ai-security-framework-dasf-v30",
+  "date": "2026-03-20 19:30:00",
+  "author": "Databricks",
+  "siteName": "Databricks",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We are excited to announce the release of the <a data-external-link=\"true\" href=\"https://www.databricks.com/resources/whitepaper/databricks-ai-security-framework-dasf\">Databricks AI Security Framework (DASF) Agentic AI Extension whitepaper</a>! Databricks customers are already deploying AI agents that query databases, call external APIs, execute code, and coordinate with other agents. We constantly hear the teams responsible for those deployments are asking hard questions: what happens when the AI can <em><strong>do</strong></em> things, not just <em><strong>say</strong></em> things? That is why we have extended DASF.</p>\n  <p>With this update, we introduce new guidance for securing autonomous AI agents:</p>\n  <ul>\n   <li><strong>35 new agentic AI security risks</strong> covering agent reasoning, memory, and tool usage</li>\n   <li><strong>6 new mitigation controls</strong> including least privilege, sandboxing, and human oversight</li>\n   <li><strong>Security guidance for Model Context Protocol (MCP)</strong> tool servers and clients</li>\n   <li><strong>Coverage for multi-agent system</strong> risks and agent communication threats</li>\n  </ul>\n  <p>Together these additions help organizations deploy AI agents safely while maintaining governance, observability, and defense-in-depth security controls.</p>\n  <p>This brings the full framework to 97 risks and 73 controls. We have updated the DASF compendium (<a data-external-link=\"true\" href=\"https://docs.google.com/spreadsheets/d/1lD5nKC1QNoUTDXdMp31NA9eKcUYGjhtC34MCfQpqpGo/copy\" target=\"_blank\" rel=\"noopener noreferrer\">Google sheet</a>, <a data-external-link=\"true\" href=\"https://docs.google.com/spreadsheets/d/1fBOD03zcDsilIJ47P0u47QmamzN_a0Se\" target=\"_blank\" rel=\"noopener noreferrer\">Excel</a>) to include these new risks and controls, mapping them to industry standards to facilitate immediate operationalization. These additions are cataloged as DASF v3.0 under the \"DASF Revision\" column.</p>\n  <figure role=\"group\" class=\"caption caption-img\">\n   <a data-lightbox=\"\" href=\"https://www.databricks.com/sites/default/files/inline-images/agentic-ai-security-risks-controls-databricks-ai-security-framework-blog-img-1.png\"><img alt=\"Databricks AI Security Framework\" data-entity-type=\"file\" data-entity-uuid=\"21cbb231-ceb0-4121-aab4-bc30add9dec5\" height=\"1032\" src=\"https://www.databricks.com/sites/default/files/inline-images/agentic-ai-security-risks-controls-databricks-ai-security-framework-blog-img-1.png\" width=\"1786\" loading=\"lazy\" data-ot-ignore=\"1\"></a>\n   <figcaption>\n    <a data-external-link=\"true\" href=\"https://www.databricks.com/sites/default/files/inline-images/agentic-ai-security-risks-controls-databricks-ai-security-framework-blog-img-1.png\">Fig 1: The 13 canonical components of an end-to-end AI system, with Agentic AI introduced as the 13th component.</a>\n   </figcaption>\n  </figure>\n  <h2>Security risks when AI agents can take actions</h2>\n  <p>Traditional AI systems like RAG operate mostly in a read-only mode. But AI agents can take actions such as querying databases, calling APIs, executing code, and interacting with external tools.</p>\n  <p>Agents work differently. When a user engages an agent, the model kicks off a loop: it breaks the request into sub-tasks, picks a tool (say, \"Query Sales Database\"), executes it, evaluates the output, and decides whether to call a different tool next. This continues until the task is done. The agent is making real-time decisions about which data to access and which tools to invoke — decisions that used to be made by humans or hardcoded into application logic.</p>\n  <p>That creates a new class of risk we call <strong>Discovery and Traversal</strong>. An agent designed to find solutions will traverse data paths and tool interfaces that were never intended for the requesting user. It's not exploiting a bug. It's doing exactly what it was built to do. But without proper controls, the user effectively inherits the agent's permissions rather than their own.</p>\n  <p><strong>The Lethal Trifecta.</strong> Recent industry research, including Meta’s “<a data-external-link=\"true\" href=\"https://ai.meta.com/blog/practical-ai-agent-security/\" target=\"_blank\" rel=\"noopener noreferrer\">Agents Rule of Two</a>” and similar models like Simon Willison’s “<a data-external-link=\"true\" href=\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\" target=\"_blank\" rel=\"noopener noreferrer\">Lethal Trifecta</a>”, highlights the conditions under which this gets dangerous. The risk profile spikes when three conditions are present simultaneously:</p>\n  <!--$-->\n  <!--/$-->\n  <ol>\n   <li><strong>Access to sensitive systems or private data:</strong> The agent can retrieve private or restricted data.</li>\n   <li><strong>Process untrustworthy inputs:</strong> The agent processes data from outside the trust boundary — user prompts, external websites, incoming emails.</li>\n   <li><strong>Change state or communicate externally:</strong> The agent can modify state through tools or MCP connections — sending emails, executing SQL, modifying code.</li>\n  </ol>\n  <p>With all three in place, an indirect prompt injection embedded in untrusted data can hijack the agent's full capability set, turning it into a \"confused deputy\" that performs authorized actions with malicious intent. Remove any single-leg by scoping permissions down, adding a human checkpoint, validating intent before tool selection, and breaking the attack chain.</p>\n  <h2>How the extension is organized</h2>\n  <p>The 35 new risks and 6 controls are organized around three sub-components that map to how agents actually work:</p>\n  <!--$-->\n  <!--/$-->\n  <h3>13A: The Agent Core (brain and memory)</h3>\n  <p>These risks target the agent's reasoning loop. <strong>Memory Poisoning (Risk 13.1) </strong>introduces false context that alters current or future decisions. <strong>Intent Breaking &amp; Goal Manipulation (Risk 13.6)</strong> coerces the agent into deviating from its objective. And because agents operate in multi-turn loops, <strong>Cascading Hallucination Attacks (Risk 13.5)</strong> can compound a minor error across iterations into a destructive action.</p>\n  <h3>13B: MCP Server risks (the tool interface)</h3>\n  <p>Agents interact with external systems through tools, increasingly standardized via the Model Context Protocol (MCP). On the server side, attackers may deploy <strong>Tool Poisoning (Risk 13.18)</strong> — injecting malicious behavior into tool definitions — or exploit <strong>Prompt Injection (Risk 13.16)</strong> within tool descriptions to bypass security controls.</p>\n  <h3>13C: MCP Client risks (the connection layer)</h3>\n  <p>On the client side, if the agent connects to a <strong>Malicious Server (Risk 13.26)</strong> or fails to validate server responses, it risks <strong>Client-Side Code Execution (Risk 13.32)</strong> or <strong>Data Leakage (Risk 13.30)</strong>. As MCP adoption grows, securing the client-server boundary matters as much as securing the agent's reasoning.</p>\n  <h3>Inter-agent dynamics</h3>\n  <p>Agents will increasingly communicate with other agents. That creates risks of <strong>Agent Communication Poisoning (Risk 13.12)</strong> and <strong>Rogue Agents in Multi-Agent Systems (Risk 13.13)</strong> — agents that operate outside monitoring boundaries, a problem that compounds with scale.</p>\n </body>\n</html>",
+  "aiSummary": "Databricks 发布 DASF v3.0，新增 35 个智能体 AI 安全风险和 6 个缓解控制措施，解决智能体获得超越传统只读 AI 系统的自主行动能力所带来的关键挑战。",
+  "oneSentenceSummary": "Databricks 发布 DASF v3.0，新增 35 个智能体 AI 安全风险和 6 个缓解控制措施，解决智能体获得超越传统只读 AI 系统的自主行动能力所带来的关键挑战。",
+  "summary": "本文宣布 Databricks AI 安全框架 (DASF) v3.0 发布，将框架扩展至智能体 AI 系统的安全风险。本次更新引入 35 个新风险，涵盖智能体推理、记忆、工具使用和多智能体动态，以及 6 个新的缓解控制措施，包括最小权限、沙箱化和人工监督。该框架解决了「发现与遍历」风险类别，即智能体可以访问超出预期权限的数据路径和工具。关键概念「致命三要素」识别了三种危险条件：访问敏感系统、处理不可信输入、以及能够外部改变状态。当这些条件同时满足时，间接提示注入攻击会将智能体变成「混乱代理」，利用其完整能力。该扩展涵盖 MCP（模型上下文协议）的服务器端和客户端安全，涉及工具污染、提示注入、恶意服务器和智能体间通信威胁。完整框架现包含 97 个风险和 73 个控制措施，映射至行业标准以实现运营化。",
+  "mainPoints": [
+    {
+      "point": "智能体 AI 引入「发现与遍历」风险，智能体可以访问意外的数据路径和工具接口。",
+      "explanation": "与传统 RAG 系统在只读模式下运行不同，智能体会对数据访问和工具调用进行实时决策，可能继承超出用户原始意图的权限。"
+    },
+    {
+      "point": "「致命三要素」识别了三种同时存在时会产生危险安全状况的条件。",
+      "explanation": "当智能体同时具备访问敏感系统、处理不可信输入和能够外部改变状态的能力时，间接提示注入可以劫持智能体的完整能力集，将其变成具有恶意意图的「混乱代理」。"
+    },
+    {
+      "point": "DASF v3.0 将新风险围绕三个智能体子组件组织：核心、MCP 服务器和 MCP 客户端。",
+      "explanation": "13A 涵盖智能体推理和记忆（记忆污染、目标操纵、级联幻觉）；13B 涵盖工具接口风险（工具污染、提示注入）；13C 涵盖连接层风险（恶意服务器、代码执行、数据泄露）。"
+    },
+    {
+      "point": "六个新的缓解控制措施包括最小权限、沙箱化和人工监督。",
+      "explanation": "这些控制措施通过限制权限、在工具选择前添加验证检查点、以及在智能体决策循环中保持人工问责来帮助打破攻击链。"
+    },
+    {
+      "point": "多智能体系统引入了围绕通信污染和恶意智能体的额外风险。",
+      "explanation": "当智能体相互通信时，风险包括智能体通信污染和超出监控边界的恶意智能体，这些问题随系统复杂性增加而放大。"
+    }
+  ],
+  "keyQuotes": [
+    "当用户与智能体交互时，模型启动一个循环：它将请求分解为子任务，选择工具，执行它，评估输出，然后决定是否调用下一个工具。",
+    "智能体正在实时决定访问哪些数据和调用哪些工具——这些决策过去由人类做出或硬编码到应用程序逻辑中。",
+    "这不是在利用漏洞。它只是在做它被构建的目的。但如果没有适当的控制，用户实际上继承的是智能体的权限，而不是他们自己的权限。",
+    "当这三个要素全部具备时，嵌入在不可信数据中的间接提示注入可以劫持智能体的完整能力集，将其变成一个具有恶意意图的「混乱代理」，执行授权操作。",
+    "通过限制权限、添加人工检查点、在工具选择前验证意图，以及打破攻击链，移除任何一个环节即可。"
+  ],
+  "tags": [
+    "Agentic AI",
+    "AI 安全",
+    "DASF",
+    "MCP",
+    "提示注入"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 79,
+  "wordCount": 774,
+  "domain": "databricks.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_af2185",
+  "sourceName": "Databricks",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774035000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-20 19:30:00"
+}

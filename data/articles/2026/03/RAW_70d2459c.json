@@ -1,0 +1,63 @@
+{
+  "id": "RAW_70d2459c",
+  "title": "玩家厌恶 Nvidia 的 DLSS 5。开发者也不太买账",
+  "url": "https://www.wired.com/story/gamers-hate-nvidia-dlss-5-developers-arent-crazy-about-it-either/",
+  "date": "2026-03-20 15:13:19",
+  "author": "Boone Ashworth, Luke Larsen",
+  "siteName": "WIRED",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span class=\"lead-in-text-callout\">Nvidia announced a</span> new version of its DLSS <a data-offer-url=\"https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games&quot;}\" href=\"https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games\" rel=\"nofollow noopener\" target=\"_blank\">AI upscaling technology</a> for its graphics cards earlier this week at its <a data-offer-url=\"https://www.nvidia.com/gtc/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.nvidia.com/gtc/&quot;}\" href=\"https://www.nvidia.com/gtc/\" rel=\"nofollow noopener\" target=\"_blank\">GPU Technology Conference (GTC)</a>, which it calls the <a href=\"https://www.wired.com/story/uncanny-valley-podcast-nvidia-gtc-tesla-disappointed-fans-meta-horizon-worlds/\" class=\"text link\">Super Bowl of AI</a>. But unlike previous versions of DLSS that used AI to improve frame rates in video games, DLSS 5 has a much more ambitious calling: using generative AI to make character faces in games look more realistic and detailed. The demonstration received sharp blowback on social media, with many finding the effect off-putting, reacting with <a href=\"https://arstechnica.com/gaming/2026/03/gamers-react-with-overwhelming-disgust-to-dlss-5s-generative-ai-glow-ups/\" class=\"text link\">outright disgust</a>, and calling it yet another example of <a href=\"https://www.wired.com/story/ai-slop-is-ruining-reddit-for-everyone/\" class=\"text link\">AI slop</a>.</p>\n  <p class=\"paywall\">DLSS, or deep-learning super-sampling, is a feature Nvidia introduced on its graphics cards in 2018. The primary use has been to improve frame rates in video games by rendering games at a lower resolution, then using AI to upscale the quality. More recent versions of DLSS insert <a href=\"https://www.wired.com/story/nvidias-rtx-50-series-laptop-gpu/\" class=\"text link\">AI-generated frames</a> in between actual rendered frames. These techniques use less computing power than generating the full frames, allowing for better gaming performance without taxing your PC’s hardware and maintaining visual fidelity. The feature can be turned on or off.</p>\n  <p class=\"paywall\">“From a technical standpoint, it's quite an achievement,” Kevin Bates, CEO and creator of the open source retro gaming handheld <a data-offer-url=\"https://www.arduboy.com/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.arduboy.com/&quot;}\" href=\"https://www.arduboy.com/\" rel=\"nofollow noopener\" target=\"_blank\">Arduboy</a>, wrote in a message to WIRED. “I would have expected a cloud-based rendering service to provide it. The fact they expect to distill it down to what can run on a single [graphics] card later this year is insane.”</p>\n  <p class=\"paywall\">But DLSS 5 has crossed a generative-AI rubicon. Instead of just being a tool Nvidia provides developers, it manifests as actual visual changes without their consent. While you can still turn it on or off in your video games, the technology has some developers—not just gamers—worried.</p>\n  <p class=\"paywall\">Nvidia showed off a demo of the tech on games like Capcom’s <em>Resident Evil Requiem</em>, Ubisoft’s <em>Assassin's Creed</em>, and Bethesda’s <em>Starfield</em>. The company says it's meant to improve the graphics and generate photorealistic details and lighting. The demo seemed to largely improve the lighting, which detractors compared to the glow of a ring light just out of frame. Faces became far more detailed, even introducing new facial features. It was also <a data-offer-url=\"https://x.com/Spainkiller/status/2033670282481672558\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://x.com/Spainkiller/status/2033670282481672558&quot;}\" href=\"https://x.com/Spainkiller/status/2033670282481672558\" rel=\"nofollow noopener\" target=\"_blank\">criticized</a> on social media for over sexualizing characters, where people called the look “<a data-offer-url=\"https://bsky.app/profile/dannyodwyer.bsky.social/post/3mh7bl7ntd222\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://bsky.app/profile/dannyodwyer.bsky.social/post/3mh7bl7ntd222&quot;}\" href=\"https://bsky.app/profile/dannyodwyer.bsky.social/post/3mh7bl7ntd222\" rel=\"nofollow noopener\" target=\"_blank\">yassified</a>,” or “<a data-offer-url=\"https://aftermath.site/nvidia-dlss-5-ai-graphics-faces-resident-evil/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://aftermath.site/nvidia-dlss-5-ai-graphics-faces-resident-evil/&quot;}\" href=\"https://aftermath.site/nvidia-dlss-5-ai-graphics-faces-resident-evil/\" rel=\"nofollow noopener\" target=\"_blank\">porn faces</a>,” and compared the effect to Instagram or Snapchat’s <a data-offer-url=\"https://www.instagram.com/ar/445292747779811/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.instagram.com/ar/445292747779811/&quot;}\" href=\"https://www.instagram.com/ar/445292747779811/\" rel=\"nofollow noopener\" target=\"_blank\">glamour filters</a>, which smooth out imperfections on a person’s image. Gamers did not approve. <a data-offer-url=\"https://www.theverge.com/entertainment/896213/nvidia-dlss-5-ai-faces-motion-smoothing\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.theverge.com/entertainment/896213/nvidia-dlss-5-ai-faces-motion-smoothing&quot;}\" href=\"https://www.theverge.com/entertainment/896213/nvidia-dlss-5-ai-faces-motion-smoothing\" rel=\"nofollow noopener\" target=\"_blank\"><em>The Verge</em></a> called it motion smoothing, but worse.</p>\n  <p class=\"paywall\">The tech also has other issues, like introducing unexpected artifacts in real time. You can see some of those problems in the official demo video itself. In a scene in a FIFA game where a soccer ball is being kicked into a net, the ball has weird artifacts on it with DLSS 5 on, looking like a piece of the net is on the foreground of the ball before it has even gone in the goal. (Pause the video at <a href=\"https://youtu.be/dJACkKbN-Eo?si=3G_PHoE7BX3t2JI8&amp;t=58\" class=\"text link\">59 seconds</a>.) People’s facial features, like the female character in <em>Resident Evil Requiem</em>, have some slight but noticeably different facial features: larger eyes, fuller lips, and a completely different nose.</p>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--sponsor-product\"></div>\n  <p class=\"paywall\">“It devalues an artist’s creativity and intent on a basic level,” says James Brady, a video game artist and designer who has worked on games like <em>Call of Duty: Modern Warfare 3</em>. “All this takes away from the artist's original design intent on the character and its shape language, with what pretty much functions on a surface level as a 'Snapchat filter.’”</p>\n </body>\n</html>",
+  "aiSummary": "本文报道了玩家和开发者对 Nvidia DLSS 5 生成式 AI 面部增强技术的负面反馈，聚焦于对未经授权的视觉修改、过度性感化以及艺术家意图贬值的担忧。",
+  "oneSentenceSummary": "本文报道了玩家和开发者对 Nvidia DLSS 5 生成式 AI 面部增强技术的负面反馈，聚焦于对未经授权的视觉修改、过度性感化以及艺术家意图贬值的担忧。",
+  "summary": "Nvidia 在 GTC 大会上宣布了 DLSS 5，这是一项生成式 AI 技术，可以增强游戏中角色面部的真实感和细节表现。展示《生化危机：安魂曲》、《刺客信条》和《星空》等游戏的演示视频在社交媒体上遭到强烈反弹，评论从厌恶到将其比作“AI 垃圾”和 Instagram 美颜滤镜不等。玩家批评该效果过度性感化角色、引入意外伪影，并从根本上改变了原始角色设计。值得注意的是，这项技术令开发者担忧，因为它在未经同意的情况下强制修改视觉效果，本质上就像一个覆盖艺术意图的“Snapchat 滤镜”。尽管部分技术专家从纯技术角度对这一成就表示赞赏，但游戏艺术家担心这会破坏他们的创作愿景和原始设计工作。",
+  "mainPoints": [
+    {
+      "point": "DLSS 5 引入了生成式 AI 面部增强功能，可在未经开发者同意的情况下修改游戏视觉效果。",
+      "explanation": "与之前开发者可选择加入的 DLSS 版本不同，DLSS 5 会自动修改角色面部，代表了 AI 超分辨率技术与游戏开发互动方式的重大转变。"
+    },
+    {
+      "point": "该技术遭到玩家和社交媒体的压倒性负面评价。",
+      "explanation": "社交媒体反应从“直接厌恶”到与“AI 垃圾”、“网红化”和“色情面孔”的比较，批评者将这一效果比作 Instagram 或 Snapchat 的美颜滤镜。"
+    },
+    {
+      "point": "艺术家和开发者担忧该技术会破坏创作意图。",
+      "explanation": "游戏艺术家认为 DLSS 5 本质上像一个“Snapchat 滤镜”，从根本上改变原始角色设计，在基本层面上贬低了艺术家的创造力和意图。"
+    },
+    {
+      "point": "该技术引入了实时视觉伪影和意外的角色修改。",
+      "explanation": "官方演示视频显示了足球上的伪影问题以及明显的面部特征变化，包括眼睛变大、嘴唇变厚、鼻型改变等。"
+    },
+    {
+      "point": "尽管受到批评，但在单张显卡上运行生成式 AI 的技术成就得到了认可。",
+      "explanation": "技术专家认可将云端渲染能力精简到消费级显卡中这一令人印象深刻的工程成就。"
+    }
+  ],
+  "keyQuotes": [
+    "它在基本层面上贬低了艺术家的创造力和意图，本质上就像一个表面层面的‘Snapchat 滤镜’。",
+    "演示似乎大幅改善了光照效果，批评者将其比作画面外环形补光灯的光晕。",
+    "玩家不买账。The Verge 称其为运动平滑，但更糟糕。",
+    "DLSS 5 已经跨越了生成式 AI 的红线，表现为在未经同意的情况下进行实际的视觉修改。",
+    "他们计划今年晚些时候将其精简到可以在单张显卡上运行，这事实令人难以置信。"
+  ],
+  "tags": [
+    "Nvidia DLSS 5",
+    "生成式 AI",
+    "游戏图形",
+    "AI 超分辨率",
+    "游戏行业"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 78,
+  "wordCount": 580,
+  "domain": "wired.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "BT_NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_11543bce",
+  "sourceName": "WIRED",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774019599000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-20 15:13:19"
+}

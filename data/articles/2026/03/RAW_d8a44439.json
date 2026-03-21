@@ -1,0 +1,58 @@
+{
+  "id": "RAW_d8a44439",
+  "title": "Stripe 工程师部署 Minions，每周生成数千个 Pull Request 的自主智能体",
+  "url": "https://www.infoq.com/news/2026/03/stripe-autonomous-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-20 14:26:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Engineers at Stripe have developed <a href=\"https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents\">Minions, autonomous coding agents capable of completing software development tasks end-to-end from a single instruction</a>. The system integrates large language models (LLMs) with internal developer tooling to generate production-ready pull requests with minimal human intervention. Stripe engineers reported that Minions now produce over 1,300 pull requests per week, up from 1,000 in earlier trials. All changes are human-reviewed but contain no human-written code.</p>\n   <p>The code managed by Minions supports more than $1 trillion in annual payment volume at Stripe and operates across complex dependencies with financial institutions, regulatory frameworks, and compliance obligations. Reliability and correctness remain central to deploying autonomous agents at this scale.</p>\n   <p><a href=\"https://www.linkedin.com/in/cameronbern/\">Cameron Bernhardt</a>, Engineering Manager at Stripe, mentioned in a LinkedIn <a href=\"https://www.linkedin.com/posts/cameronbern_minions-stripes-one-shot-end-to-end-coding-share-7426754611711238144-AkD6?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>:</p>\n   <blockquote>\n    <p>Minions have progressed from concept to generating over a thousand pull requests per week, All code is human-reviewed, but the agents are increasingly producing changes end-to-end.</p>\n   </blockquote>\n   <p>Minions differ from interactive coding assistants such as <a href=\"https://github.com/features/copilo\">GitHub Copilot </a>or AI code editors like <a href=\"https://cursor.com/\">Cursor</a> by executing <a href=\"https://en.wikipedia.org/wiki/One-shot_learning_(computer_vision)\">one-shot</a>, end-to-end tasks. Tasks can originate from multiple sources, including Slack threads, bug reports, or feature requests. A task description is sent to a Minion, which orchestrates the work using blueprints, a combination of deterministic code and flexible agent loops to produce the required code, tests, and documentation. The workflow concludes with a pull request submitted for human review, allowing engineers to move from task definition to production-ready code with minimal manual intervention.</p>\n   <p>&nbsp;</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/stripe-autonomous-coding-agents/news/2026/03/stripe-autonomous-coding-agents/en/resources/1slackthread-1772998699203.jpeg\" class=\"zoom-image\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/stripe-autonomous-coding-agents/en/resources/1slackthread-1772998699203.jpeg\" rel=\"share\"></p>\n   <p><em>Sample Slack message invoking Minion (Source: <a href=\"https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents\">Stripe Blog Post</a>)</em></p>\n   <p>The system evolved from an internal fork of <a href=\"https://github.com/block/goose\">Goose</a>, one of the first widely used coding agents developed by Block. Goose was customized for Stripe’s LLM infrastructure and refined to meet the specific requirements of Minions, while interactive tools such as Cursor and Claude Code continue to support human-supervised workflows.</p>\n   <p><a href=\"https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2\">Minions are orchestrated using blueprints</a>, workflows defined in code that specify how tasks are divided into subtasks, handled either by deterministic routines or by the agent, depending on the task. Stripe engineers describe blueprints as a collection of agent skills interwoven with code to ensure efficiency while retaining adaptability.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/stripe-autonomous-coding-agents/news/2026/03/stripe-autonomous-coding-agents/en/resources/20image2-1772998699203.png\" class=\"zoom-image\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/stripe-autonomous-coding-agents/en/resources/20image2-1772998699203.png\" rel=\"share\"></p>\n   <p><em>Minion example blueprint (Source: <a href=\"https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2\">Stripe Blog Post</a>)</em></p>\n   <p>Reliability is reinforced through CI/CD pipelines, automated tests, and static analysis, ensuring generated changes meet engineering standards before human review. Engineers noted that Minions perform best on well-defined tasks such as configuration adjustments, dependency upgrades, and minor refactoring.</p>\n   <p>The system reflects a broader trend in agent-driven software development, where LLM-based agents are tightly integrated with development environments, version control, and CI/CD pipelines to produce production-quality code with minimal supervision. Stripe’s experience suggests that autonomous coding agents can significantly augment developer productivity while maintaining strict quality controls.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Stripe Engineers Deploy Minions, Autonomous Agents Producing Thousands of Pull Requests Weekly\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/stripe-autonomous-coding-agents/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774016760000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Stripe 成功部署了「Minions」，这是一种自主 AI 智能体，使用「一次性」工作流和混合「蓝图」每周生成超过 1300 个生产就绪的 Pull Request。",
+  "oneSentenceSummary": "Stripe 成功部署了「Minions」，这是一种自主 AI 智能体，使用「一次性」工作流和混合「蓝图」每周生成超过 1300 个生产就绪的 Pull Request。",
+  "summary": "文章详细介绍了 Stripe 实施的「Minions」，这是一个端到端处理软件开发任务的自主编码智能体系统。与 GitHub Copilot 等交互式助手不同，Minions 以「一次性」模式运行，从 Slack 或错误报告等来源获取单一指令，并生成完整的 Pull Request。该系统基于「Goose」智能体框架的分支构建，并利用「蓝图」——将确定性代码与灵活的 LLM 循环结合的结构化工作流，以确保可靠性和适应性。目前，这些智能体每周为处理每年 1 万亿美元支付的系统生成超过 1300 个 PR。尽管代码完全由 AI 生成，Stripe 仍保持严格的「人工介入」政策，要求在部署前进行人工审查并通过严格的 CI/CD 检查。",
+  "mainPoints": [
+    {
+      "point": "Stripe 的 Minions 从交互式 AI 辅助转变为自主的一次性任务执行。",
+      "explanation": "与传统需要持续人工提示的 AI 编辑器不同，Minions 接收高级指令后独立导航复杂依赖关系，提交完成待审核的 Pull Request。"
+    },
+    {
+      "point": "「蓝图」框架为智能体的可靠性和灵活性提供了混合方法。",
+      "explanation": "通过将确定性代码与灵活的智能体循环交织，Stripe 确保智能体遵循既定工程标准，同时保留处理复杂编码任务所需的推理能力。"
+    },
+    {
+      "point": "自主智能体在高风险金融生产环境中可以实现规模化部署。",
+      "explanation": "每周为处理每年 1 万亿美元的平台生成超过 1300 个 PR，表明 AI 智能体在稳健的 CI/CD 和人工监督支持下能够处理关键基础设施。"
+    },
+    {
+      "point": "人工审核仍是 AI 驱动开发生命周期中的最终保障。",
+      "explanation": "尽管自主输出量很大，Stripe 强制要求所有变更都经过人工审核，确保工程师将焦点从编写代码转向定义任务和审核结果。"
+    }
+  ],
+  "keyQuotes": [
+    "Minions 已从概念验证发展为每周生成超过一千个 Pull Request。所有代码都经过人工审核，但智能体正越来越多地端到端地产生变更。",
+    "Minions 不同于交互式编码助手……通过执行一次性、端到端的任务。",
+    "Stripe 工程师将蓝图描述为智能体技能与代码的集合，相互交织以确保效率同时保留适应性。",
+    "该系统反映了智能体驱动软件开发的大趋势，其中基于 LLM 的智能体与开发环境紧密集成。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "自主编码",
+    "软件工程",
+    "LLMOps",
+    "Stripe"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 438,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774016760000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-20 14:26:00"
+}
