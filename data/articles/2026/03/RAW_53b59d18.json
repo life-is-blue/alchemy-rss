@@ -1,0 +1,58 @@
+{
+  "id": "RAW_53b59d18",
+  "title": "Windows 栈限制检查回顾：arm64，又称 AArch64",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260320-00/?p=112154",
+  "date": "2026-03-20 22:11:23",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Our survey of stack limit checking wraps up with arm64, also known as AArch64.</p>\n  <p>The stack limit checking takes two forms, one simple version for pure arm64 processes, and a more complex version for Arm64EC. I’m going to look at the simple version. The complex version differs in that it has to check whether the code is running on the native arm64 stack or the emulation stack before calculating the stack limit. That part isn’t all that interesting.</p>\n  <pre>; on entry, x15 is the number of paragraphs to allocate\r\n;           (bytes divided by 16)\r\n; on exit, stack has been validated (but not adjusted)\r\n; modifies x16, x17\r\n\r\nchkstk:\r\n    subs    x16, sp, x15, lsl #4\r\n                            ; x16 = sp - x15 * 16\r\n                            ; x16 = desired new stack pointer\r\n    csello  x16, xzr, x16   ; clamp to 0 on underflow\r\n\r\n    mov     x17, sp\r\n    and     x17, x17, #-PAGE_SIZE   ; round down to nearest page\r\n    and     x16, x16, #-PAGE_SIZE   ; round down to nearest page\r\n\r\n    cmp     x16, x17        ; on the same page?\r\n    beq     done            ; Y: nothing to do\r\n\r\nprobe:\r\n    sub     x17, x17, #PAGE_SIZE ; move to next page¹\r\n    ldr     xzr, [x17]      ; probe\r\n    cmp     x17, x16        ; done?\r\n    bne     probe           ; N: keep going\r\n\r\ndone:\r\n    ret\r\n</pre>\n  <p>The inbound value in <code>x15</code> is the number of bytes desired <i>divided by 16</i>. Since the arm64 stack must be kept 16-byte aligned, we know that the division by 16 will not produce a remainder. Passing the amount in paragraphs expands the number of bytes expressible in a single constant load from <code>0xFFF0</code> to <code>0x0FFF0</code> (via the <code>movz</code> instruction), allowing convenient allocation of stack frames up to just shy of a megabyte in size. Since the default stack size is a megabyte, this is sufficient to cover all typical usages.</p>\n  <p>Here’s an example of how a function might use <code>chkstk</code> in its prologue:</p>\n  <pre>    mov     x15, #17328/16      ; desired stack frame size divided by 16\r\n    bl      chkstk              ; ensure enough stack space available\r\n    sub     sp, sp, x15, lsl #4 ; reserve the stack space\r\n</pre>\n  <p>Okay, so let’s summarize all of the different stack limit checks into a table, because people like tables.</p>\n  <table class=\"cp3\" style=\"border-collapse: collapse; text-align: center;\" border=\"1\" cellspacing=\"0\" cellpadding=\"3\">\n   <tbody>\n    <tr>\n     <th>&nbsp;</th>\n     <th>x86-32</th>\n     <th>MIPS</th>\n     <th>PowerPC</th>\n     <th>Alpha AXP</th>\n     <th>x86-64</th>\n     <th>AArch64</th>\n    </tr>\n    <tr>\n     <td style=\"text-align: left;\">unit requested</td>\n     <td>Bytes</td>\n     <td>Bytes</td>\n     <td>Negative bytes</td>\n     <td>Bytes</td>\n     <td>Bytes</td>\n     <td>Paragraphs</td>\n    </tr>\n    <tr>\n     <td style=\"text-align: left;\">adjusts stack pointer before returning</td>\n     <td>Yes</td>\n     <td>No</td>\n     <td>No</td>\n     <td>No</td>\n     <td>No</td>\n     <td>No</td>\n    </tr>\n    <tr>\n     <td style=\"text-align: left;\">detects stack placement at runtime</td>\n     <td>No</td>\n     <td>Yes</td>\n     <td>Yes</td>\n     <td>Yes</td>\n     <td>Yes</td>\n     <td>Yes</td>\n    </tr>\n    <tr>\n     <td style=\"text-align: left;\">short-circuits</td>\n     <td>No</td>\n     <td>Yes</td>\n     <td>Yes</td>\n     <td>Yes</td>\n     <td>Yes</td>\n     <td>No</td>\n    </tr>\n    <tr>\n     <td style=\"text-align: left;\">probe operation</td>\n     <td>Read</td>\n     <td>Write</td>\n     <td>Read</td>\n     <td>Write</td>\n     <td>Either</td>\n     <td>Read</td>\n    </tr>\n   </tbody>\n  </table>\n  <p>As we discussed earlier, if the probe operation is a write, then short-circuiting is mandatory.</p>\n  <p>¹ If you’re paying close attention, you may have noticed that <code>PAGE_SIZE</code> is too large to fit in a 12-bit immediate constant. No problem, because the assembler rewrites it as</p>\n  <pre>    sub x17, x17, #PAGE_SIZE/4096, lsl #12\r\n</pre>\n </body>\n</html>",
+  "aiSummary": "本文详细回顾了 Windows 栈限制检查在 ARM64（AArch64）上的实现，提供了汇编代码分析和全面的跨架构比较表。",
+  "oneSentenceSummary": "本文详细回顾了 Windows 栈限制检查在 ARM64（AArch64）上的实现，提供了汇编代码分析和全面的跨架构比较表。",
+  "summary": "本文是关于 Windows 栈限制检查系列文章的收尾，探讨了 ARM64/AArch64 的实现。文中展示了 `chkstk` 函数的汇编代码，解释了 x15 如何保存待分配的 16 字节单元（段）数量，从而支持最大约 1MB 的栈帧。作者阐述了使用内存读取验证栈可用性的栈探测机制，包括页边界计算和下溢限制。文章最后提供了涵盖六种架构（x86-32、MIPS、PowerPC、Alpha AXP、x86-64、AArch64）的详细比较表，突出展示了单位、指针调整、运行时检测、短路和探测操作的差异。简要说明解释了汇编器如何处理 PAGE_SIZE 作为立即数常量。",
+  "mainPoints": [
+    {
+      "point": "ARM64 栈检查使用寄存器 x15 中的 16 字节单元（段）来表达更大的分配范围。",
+      "explanation": "通过除以 16，该值可以使用 MOVZ 表达最高 0x0FFF0 字节（约 1MB），足以支持默认的 1MB 栈大小。"
+    },
+    {
+      "point": "chkstk 函数通过在页边界进行顺序内存读取来验证栈可用性。",
+      "explanation": "它计算目标栈指针，舍入到页边界，并通过每次读取一个页来探测，如果栈空间不足则触发页错误。"
+    },
+    {
+      "point": "不同架构使用不同的栈限制检查策略。",
+      "explanation": "差异包括测量单位、栈指针是否在返回前调整、检测发生的时间，以及是否支持短路。"
+    },
+    {
+      "point": "读探测不能短路，但写探测必须能够短路以保证正确性。",
+      "explanation": "这种架构约束确保部分写入的栈帧保持有效，且探测过程不会破坏内存。"
+    }
+  ],
+  "keyQuotes": [
+    "由于 arm64 栈必须保持 16 字节对齐，我们知道除以 16 不会产生余数。",
+    "以段为单位传递数量可将单个常量加载可表达的字节数从 0xFFF0 扩展到 0x0FFF0。",
+    "如果探测操作是写操作，则短路是强制的。",
+    "如果仔细观察，你可能会发现 PAGE_SIZE 太大，无法放入 12 位的立即数常量中。"
+  ],
+  "tags": [
+    "Windows 内部机制",
+    "ARM64",
+    "AArch64",
+    "栈管理",
+    "汇编编程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 81,
+  "wordCount": 461,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774044683000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-20 22:11:23"
+}

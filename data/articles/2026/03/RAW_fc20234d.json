@@ -1,0 +1,63 @@
+{
+  "id": "RAW_fc20234d",
+  "title": "深度学习系统对齐的未来可能看起来像“基于可解释性训练”——LessWrong",
+  "url": "https://www.lesswrong.com/posts/DzKhPKjyYSy5oih2u/the-future-of-aligning-deep-learning-systems-will-probably",
+  "date": "2026-03-20 23:06:00",
+  "author": "williawa",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><span>Epistemic Status: I think this is right, but a lot of this is empirical, and it seems the field is moving fast</span></i></p>\n    <h2 id=\"Current_methods_are_bad\"><span>Current methods are bad</span></h2>\n    <p id=\"block1\"><span>I should start by saying that this is dangerous territory. And there are obvious way to botch this. E.g. training CoT to look nice is very stupid. And there are subtler way to do it that still end up nuking your ability to interpret the model without making any lasting progress on aligning models.</span></p>\n    <p id=\"block2\"><span>But I still think the most promising path to aligning DL systems will look like training on interp. Why? Consider, what is the core reason to be suspicious of current methods?</span></p>\n    <p id=\"block3\"><span>They all work by defining what you consider a good output to be, either by giving labels and telling the models \"say exactly so and so and do exactly so and so\", or by defining some function on the output, like from a reward model, and using gradients to make the outputs score higher according to that function in expectation.</span></p>\n    <p id=\"block4\"><span>Why should this make you suspicious? Because this process gives you a model that produces outputs you consider good, at least on the examples you've shown it, but gives you no guarantees about what internal process the model uses to generate those good-seeming outputs.</span></p>\n    <p id=\"block5\"><span>The most central reason this is problematic, is that it means \"bad\"/misaligned processes can be behind the good outputs you see. Producing outputs that score high according to your metric is an instrumentally convergent strategy that smart enough agents will discover and act out, no matter their internal motivations.</span></p>\n    <p id=\"block6\"><span>In short: the method fails because it doesn't robustly optimize against deceptive alignment.</span></p>\n    <h2 id=\"What_is_the_alternative_\"><span>What is the alternative?</span></h2>\n    <p id=\"block7\"><span>Well, whatever the alternative is, it will need to give us better control over the internal processes that arise as a result of our technique.</span></p>\n    <p id=\"block8\"><span>Now, how might we do this? Current AIs learn all their functioning, so their internal processes are not visible to us by default.</span></p>\n    <p id=\"block9\"><span>But we have interp. We might be able to locate internal representations of wanted and unwanted behavior. Why doesn't this on its own solve the problem? Why can't we just figure out how the model represents desires/goals/proclivities and hook the models representation of \"good\" into the goals/desires slot, together with the representation of \"not deception\", \"not sycophancy\", \"not reward hacking\", \"not misaligned\" etc?</span></p>\n    <p id=\"block10\"><span>Because neural networks are cursed, and knowing how to do this kind of intricate surgery on the models internals is much more difficult than learning facts of the form \"this neuron/direction in activation space fires iff the model (believes it) is reward hacking (and even that is very hard).</span></p>\n    <p id=\"block11\"><span>So where does that leave us? Well, it means if we wanna tamper with model internals, it will probably involve gradients and training, not surgery. (Though to be clear, if we get good enough at mechinterp to do that, it would be great)</span></p>\n    <p id=\"block12\"><span>The archetypal example of this kind of technique looks like doing RL, </span><span><span><a href=\"https://www.goodfire.ai/research/rlfr#\" rel=\"noreferrer\"><span>but including feature activations of relevant concepts in the reward function.</span></a></span></span></p>\n    <h2 id=\"Why_will_this_not_immediately_screw_us_over_\"><span>Why will this not immediately screw us over?</span></h2>\n    <p id=\"block13\"><span>Eliezer says:</span></p>\n    <blockquote id=\"block14\">\n     <p id=\"block15\"><span>When you explicitly optimize against a detector of unaligned thoughts, you're partially optimizing for more aligned thoughts, and partially optimizing for unaligned thoughts that are harder to detect.&nbsp; Optimizing against an interpreted thought optimizes against interpretability.</span></p>\n    </blockquote>\n    <p id=\"block16\"><span>And I agree with this. But the quote leaves open the possibility that different implementations drive down misalignment and interpretability at vastly different rates. I think its plausible that certain techniques can \"fix\" many misalignment issues with negligible impact on interpretability.</span></p>\n    <h2 id=\"Is_there_a_principled_way_to_reason_about_this_ratio_\"><span>Is there a principled way to reason about this ratio?</span></h2>\n    <h3 id=\"Scenario_1_\"><span>Scenario 1:</span></h3>\n    <p id=\"block17\"><span>Imagine you've started doing the linear probe - reward function technique described above, and you're using it to minimize reward hacking. Imagine you have a very good (but not necessarily perfect) probe. Now imagine you're looking at the first sets of rollouts at the beginning of training. Imagine that in 16 out of 32 of these trajectories, according to the probe, the model reward hacks, and in the other 16 it does not. </span></p>\n    <p id=\"block18\"><span>Now ask yourself: of the 16 trajectories where the probe did not detect reward hacking, how many of those were labeled as \"not reward-hacking\" because something inside the model caused the probe to fail?</span></p>\n    <p id=\"block19\"><span>The answer is: very few in expectation.</span></p>\n    <p id=\"block20\"><span>Why?</span></p>\n    <p id=\"block21\"><span> Because you started with an accurate probe!</span></p>\n    <p id=\"block22\"><span>Consequently, almost all of the trajectories that get reinforced, get reinforced </span><i><span>because</span></i><span> the model didn't reward hack (according to its own judgement).</span></p>\n    <p id=\"block23\"><span>Why does this matter?</span></p>\n    <p id=\"block24\"><span>RL works by selecting within the already existing variance of model behavior. If 99% of variance in X is explained by A, and 1% by B, and learning to do A and B are roughly equally easy, RL will move A proportionally faster than B.</span></p>\n    <p id=\"block25\"><span>And the above is saying exactly that, with X = reward hacking, A = models internal representation of reward hacking firing, and B = variation that causes the probe to work worse.</span></p>\n    <p id=\"block26\"><span>(see </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/R5MdWGKsuvdPwGFBG/steering-rl-training-benchmarking-interventions-against\"><span>this</span></a><span> for this experiment actually run. They find the technique very effective at minimizing reward hacking, and see minor hit to probe accuracy)</span></p>\n    <p id=\"block27\"><span>(see also the goodfire article, which is similar, but with hallucinations instead of reward hacking, and get good results. They add an extra trick, running the probe on a frozen copy of the model, which I'm not entirely sure how to interpret to be honest)</span></p>\n    <h3 id=\"Scenario_2_\"><span>Scenario 2:</span></h3>\n    <p id=\"block28\"><span>Now consider another proposal: after gathering the trajectories, you do a forward pass, and you add the RH-probe activation to the </span><i><span>loss function</span></i><span>. What happens then?</span></p>\n    <p id=\"block29\"><span>Well, reward hacking is probably this complicated emergent behavior represented all over the model, but the input to your probe is a single direction in activation space.</span></p>\n    <p id=\"block30\"><span>What is the easiest way for gradient descent to avoid triggering the probe? </span></p>\n    <p id=\"block31\"><span>Answer: Just wiggle the activations a bit. This is something that comes very naturally to gradient descent. Changing big circuits takes a lot of time. Rotating a single representation a bit is very easy.</span></p>\n    <p id=\"block32\"><span>And so your technique fails.</span></p>\n    <h2 id=\"Conclusion\"><span>Conclusion</span></h2>\n    <p id=\"block33\"><span>The above is my argument for why future alignment methods will look like \"interp in training\" .</span></p>\n    <p id=\"block34\"><span>I also wanna say that Steven Byrnes had a related</span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/ArXAyzHkidxwoeZsL/in-highly-contingent-defense-of-interpretability-in-the-loop\"><span> post </span></a><span>a little bit ago. I think people should read that too, its saying something similar, but it focuses on how the human brain works, and I'm trying to communicate what I view as a more general principle.</span></p>\n    <p id=\"block35\">\n     <br>\n    </p>\n    <h2 id=\"Addendum_\"><span>Addendum:</span></h2>\n    <p id=\"block36\"><span>The reasoning in scenario 1 does probably fail if you have a superintelligence working against you, eg actively reasoning about how to subvert the probe.</span></p>\n    <p id=\"block37\"><span>But this is a very difficult task. Imagine someone had scanned your brain, and trained a ML model to predict when you were lying. And that ML model was 99.9% accurate, and fired even when your lies were barely legible to yourself.</span></p>\n    <p id=\"block38\"><span>How would </span><i><span>you</span></i><span> go about subverting that mechanism?</span></p>\n    <p id=\"block39\"><span>I think its possible, but seems considerably harder than e.g. scheming / alignment faking in a single forward pass.</span></p>\n    <p id=\"block40\"><span>And this means I think we can push the technique much further than current techniques.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章提出“基于可解释性训练”作为对齐深度学习系统最有前景的方法，认为当前的 RLHF 方法失败是因为它们只优化输出而不控制内部过程，可能导致欺骗性对齐。",
+  "oneSentenceSummary": "文章提出“基于可解释性训练”作为对齐深度学习系统最有前景的方法，认为当前的 RLHF 方法失败是因为它们只优化输出而不控制内部过程，可能导致欺骗性对齐。",
+  "summary": "本文来自 LessWrong，对 AI 对齐挑战进行了引人深思的分析，并提出了一种名为“基于可解释性训练”的新方法。作者认为，当前的对齐方法（RLHF、奖励建模）存在根本缺陷，因为它们优化的是输出，而不能保证生成这些输出的内部过程是对齐的。这创造了“欺骗性对齐”的风险——模型可能为了错误的原因学会产生好的输出。提出的解决方案是将机制可解释性（interp）纳入训练过程——具体来说，使用线性探针来检测奖励黑客和欺骗等概念，并将这些激活纳入奖励函数。作者分析了两种场景：该技术效果良好的场景（场景 1）和失败的场景（场景 2），提供了一个有原则的框架来理解这种方法何时有效。该文章引用了 GoodFire AI 和 Steven Byrnes 的相关工作，承认其局限性，例如超级智能系统可能颠覆探针。",
+  "mainPoints": [
+    {
+      "point": "当前对齐方法失败是因为它们优化输出而不控制内部过程，允许欺骗性对齐。",
+      "explanation": "RLHF 和奖励建模等方法优化好的输出，但对内部推理过程没有保证，允许未对齐的行为产生看起来好的结果。"
+    },
+    {
+      "point": "使用线性探针的基于可解释性训练可以检测不需要的内部表征，并引导训练走向对齐行为。",
+      "explanation": "通过在奖励函数中包含“奖励黑客”或“欺骗”等概念的特征激活，我们可以在训练过程中影响模型的内部表征，而不仅仅是输出。"
+    },
+    {
+      "point": "场景 1（探针在奖励中）有效是因为 RL 基于准确的内部表征强化行为，而不仅仅是输出。",
+      "explanation": "有了准确的探针，大多数强化轨迹确实不包含不良行为，这种方法在最小可解释性成本下有效减少奖励黑客。"
+    },
+    {
+      "point": "场景 2（探针在损失中）失败是因为梯度下降容易绕过单一方向检测器而不改变实际行为。",
+      "explanation": "将探针激活添加到损失中可以很容易地“摆动”激活，而不是从根本上改变模型的推理，使这种方法无效。"
+    },
+    {
+      "point": "该技术对超级智能对手有局限性，但比当前方法更稳健。",
+      "explanation": "虽然超级智能理论上可以颠覆探针，但这比单次前向传递欺骗要困难得多，比当前技术有显著的改进空间。"
+    }
+  ],
+  "keyQuotes": [
+    "当你明确优化对抗一个非对齐思想的检测器时，你部分是在优化更对齐的思想，部分是在优化更难检测的非对齐思想。",
+    "它们都是通过定义什么是好的输出来工作的……但不能保证模型使用什么内部过程来生成这些看似好的输出。",
+    "根据你的指标产生高分的输出是一种手段收敛策略，足够聪明的智能体会发现并执行，无论其内部动机如何。",
+    "该方法失败是因为它不能稳健地优化对抗欺骗性对齐。",
+    "这种技术的典型例子看起来像做 RL，但在奖励函数中包含相关概念的特征激活。"
+  ],
+  "tags": [
+    "AI对齐",
+    "深度学习",
+    "可解释性",
+    "欺骗性对齐",
+    "RLHF"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 85,
+  "wordCount": 1183,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774047960000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-20 23:06:00"
+}
