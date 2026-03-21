@@ -1,0 +1,59 @@
+{
+  "id": "RAW_8ee6c7be",
+  "title": "DOGE 核能化：特朗普如何将硅谷带入美国核能监管机构",
+  "url": "https://arstechnica.com/science/2026/03/doge-goes-nuclear-how-trump-invited-silicon-valley-into-americas-nuclear-power-regulator/",
+  "date": "2026-03-21 02:06:12",
+  "author": "ProPublica",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"page-anchor-wrapper\">\n   <a class=\"\" name=\"page-1\" data-page=\"1\" data-url=\"https://arstechnica.com/science/2026/03/doge-goes-nuclear-how-trump-invited-silicon-valley-into-americas-nuclear-power-regulator/\"></a>\n  </div>\n  <p>Last summer, a group of officials from the Department of Energy gathered at the Idaho National Laboratory, a sprawling 890-square-mile complex in the eastern desert of Idaho where the US government built its first rudimentary nuclear power plant in 1951 and continues to test cutting-edge technology.</p>\n  <p>On the agenda that day: the future of nuclear energy in the Trump era. The meeting was convened by 31-year-old lawyer Seth Cohen. Just five years out of law school, Cohen brought no significant experience in nuclear law or policy; he had just entered government through Elon Musk’s Department of Government Efficiency team.</p>\n  <p>As Cohen led the group through a technical conversation about licensing nuclear reactor designs, he repeatedly downplayed health and safety concerns. When staff brought up the topic of radiation exposure from nuclear test sites, Cohen broke in.</p>\n  <p>“They are testing in Utah. … I don’t know, like 70 people live there,” he said.</p>\n  <p>“But… there’s lots of babies,” one staffer pushed back. Babies, pregnant women, and other vulnerable groups are thought to be potentially more susceptible to cancers brought on by low-level radiation exposure, and they are usually afforded greater protections.</p>\n  <p>“They’ve been downwind before,” another staffer joked.</p>\n  <p>“This is why we don’t use AI transcription in meetings,” another added.</p>\n  <p>ProPublica reviewed records of that meeting, providing a rare look at a dramatic shift underway in one of the most sensitive domains of public policy. The Trump administration is upending the way nuclear energy is regulated, driven by a desire to dramatically increase the amount of energy available to power artificial intelligence.</p>\n  <p>Career experts have been forced out and thousands of pages of regulations are being rewritten at a sprint. A new generation of nuclear energy companies—flush with Silicon Valley cash and boasting strong political connections—wield increasing influence over policy. Figures like Cohen are forcing a “move fast and break things” Silicon Valley ethos on one of the country’s most important regulators.</p>\n </body>\n</html>",
+  "aiSummary": "这篇调查报告揭示了特朗普政府如何通过埃隆·马斯克的 DOGE 团队从根本上重塑美国核能监管——任命缺乏经验的年轻硅谷派官员，他们一边淡化安全担忧，一边快速修订数千页法规，以加速核能发展来为 AI 数据中心供电。",
+  "oneSentenceSummary": "这篇调查报告揭示了特朗普政府如何通过埃隆·马斯克的 DOGE 团队从根本上重塑美国核能监管——任命缺乏经验的年轻硅谷派官员，他们一边淡化安全担忧，一边快速修订数千页法规，以加速核能发展来为 AI 数据中心供电。",
+  "summary": "这篇由 Ars Technica 发表的调查报道罕见地揭示了美国核能监管机构正在发生的戏剧性转变。基于 ProPublica 的记录，本文记录了特朗普政府如何出于为人工智能供电的目标，通过政府效率部（DOGE）将硅谷内部人士引入核管理委员会。故事围绕 31 岁的律师塞思·科恩展开，他通过马斯克的 DOGE 团队进入政府，如今却以几乎无关的专业背景主导核反应堆许可讨论。本文描述了资深专家如何被强行离职，数千页法规如何被快速修订，以及新一代与硅谷密切关联的核能公司如何对政策施加越来越大的影响。爱达荷国家实验室的会议是一个典型案例，科恩在那里被指淡化辐射暴露的健康和安全担忧，工作人员甚至打趣说他们在会议上不使用 AI 转录。",
+  "mainPoints": [
+    {
+      "point": "特朗普政府正在从根本上重构核能监管，优先考虑为 AI 数据中心快速扩展核能。",
+      "explanation": "这代表了核能这一敏感的公共安全领域的治理方式的戏剧性转变，传统的监管谨慎正被以速度为核心的硅谷方法论所取代。"
+    },
+    {
+      "point": "缺乏经验的 DOGE 任命官员没有核能专业知识，却在做关键的监管决策。",
+      "explanation": "塞思·科恩是一名 31 岁的律师，毕业于法学院五年，没有重要的核法经验，却主导技术许可讨论，并淡化资深员工提出的健康和安全担忧。"
+    },
+    {
+      "point": "资深核能专家正在被取代，同时数千页监管法规正以前所未有的速度被重写。",
+      "explanation": "这代表了对数十年来发展形成的机构专业知识和监管框架的系统性拆除，可能损害安全标准。"
+    },
+    {
+      "point": "硅谷资本和意识形态正通过直接的政治联系越来越多地塑造美国能源政策。",
+      "explanation": "获得风险投资的核能公司正获得前所未有的政策影响力，代表了一种新模式：科技资金直接推动敏感领域的政府决策。"
+    }
+  ],
+  "keyQuotes": [
+    "像科恩这样的人正在将一种'快速行动，打破常规'的硅谷心态强加给这个国家最重要的监管机构之一。",
+    "'他们在犹他州测试。......我不知道，大概 70 人住在那里，'当员工提出辐射暴露担忧时他说道。",
+    "特朗普政府正在颠覆核能的监管方式，驱动因素是大幅增加为人工智能供电的能源数量。",
+    "资深专家已被迫离职，数千页法规正在以冲刺般的速度被修订。",
+    "婴儿、孕妇和其他弱势群体被认为可能更容易受到低水平辐射引发的癌症影响，他们通常受到更多保护。"
+  ],
+  "tags": [
+    "核能监管",
+    "DOGE",
+    "特朗普政府",
+    "硅谷影响",
+    "能源政策"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 78,
+  "wordCount": 321,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "BT_INSIGHT",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774058772000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-21 02:06:12"
+}

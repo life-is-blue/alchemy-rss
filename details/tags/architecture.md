@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-21 20:03:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-21 22:06:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 软件架构
 
@@ -27,6 +27,14 @@
 ### [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-08 00:00:00
+
+
+
+### [QCon-London-2026：引入-Tansu.io-—-重新思考-Kafka-的精简运营](https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-03-21 10:01:00 | 标签: Kafka, Event-Driven Architecture, Stateless Infrastructure, Rust, PostgreSQL
+
+> 本文介绍了 Tansu，这是一款革命性的 Kafka 兼容消息代理，专为精简运营而设计。与传统 Kafka 依赖复杂的代理端复制和状态管理不同，Tansu 将代理视为无状态的「 cattle 」。通过将数据持久化委托给 S3、SQLite 或 Postgres 等弹性外部后端，Tansu 实现了仅 20MB 的极小内存占用，并且可以在 10 毫秒内从零扩展到活跃状态。主要特性包括：通过 COPY 协议实现高吞吐量 Postgres 集成、强制在代理端进行模式验证（Avro/JSON/Protobuf），以及直接将数据流式传输到 Apache Iceberg 或 Delta Lake 等开放表格...
 
 
 

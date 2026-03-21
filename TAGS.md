@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-21 20:03:48 | [返回首页](/README.md)
+**更新时间**: 2026-03-21 22:06:00 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10255)
-- [软件架构](#architecture) (19)
-- [前端与全栈](#frontend-fullstack) (731)
+- [AI & 大模型](#ai-llm) (10274)
+- [软件架构](#architecture) (20)
+- [前端与全栈](#frontend-fullstack) (732)
 - [DevOps](#devops) (454)
-- [产品与商业](#product-business) (34)
-- [其他](#other) (5158)
+- [产品与商业](#product-business) (35)
+- [其他](#other) (5167)
 
 
 ---
@@ -43,7 +43,7 @@
 - [我们如何构建-LangChain-的-GTM-智能体](https://blog.langchain.com/how-we-built-langchains-gtm-agent/) - AI 精选
 - [阿里巴巴通义实验室开源-Mobile-Agent-v3.5：一套真正“多平台可用”的原生-GUI-Agent-基座模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505704&idx=1&sn=1c35976b09438693364779ba2f65e252) - AI 精选
 
-- [查看全部 10255 篇...](/details/tags/ai-llm.md)
+- [查看全部 10274 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -55,6 +55,7 @@
 - [基于《架构现代化》浅谈架构共鸣](https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650541469&idx=1&sn=fd9c9f5286de27f6465b769e652dc360) - 编程 精选
 - [深入浅出-DDD：从理论到落地的关键](http://mp.weixin.qq.com/s?__biz=Mzg5MjU0NTI5OQ==&mid=2247604594&idx=1&sn=b2faed6f276f328c6153606019f1508b) - 编程 精选
 - [Kafka-4.0：KRaft-Kafka-Raft-元数据模式-简化架构](https://www.infoq.com/news/2025/04/kafka-4-kraft-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
+- [QCon-London-2026：引入-Tansu.io-—-重新思考-Kafka-的精简运营](https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [LinkedIn-如何为数千个服务构建下一代服务发现系统](https://blog.bytebytego.com/p/how-linkedin-built-a-next-gen-service) - 编程 更多
 - [初创公司软件架构——你永远无法真正推倒重来：对话-David-Gudeman](https://www.infoq.com/podcasts/startup-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 更多
 - [EP196：云负载均衡器速查表](https://blog.bytebytego.com/p/ep196-cloud-load-balancer-cheat-sheet) - 编程 更多
@@ -99,7 +100,7 @@
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 - [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 731 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 732 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -154,10 +155,10 @@
 - [【云故事探索-|-No.8】：揭秘餐饮行业龙头-SaaS-厂商神州商龙的全栈可观测实践](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247507702&idx=2&sn=27ecaef51a7e6428f5cc17e76b3d1687&subscene=0) - 编程 更多
 - [MockMvcTester：Spring-控制器测试的利器](https://blog.jetbrains.com/idea/2025/04/a-practical-guide-to-testing-spring-controllers-with-mockmvctester/) - 编程 更多
 - [C++-开发环境搭建利器：CMake、vcpkg、Docker-和-GitHub-Copilot-详解](https://www.freecodecamp.org/news/c-setup-and-installation-tools-cmake-vcpkg-docker-and-copilot/) - 编程 更多
+- [复星创富投资心法：慢半步、快半拍，做好产品平衡](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866663&idx=1&sn=aff97a4f4576ac0e9a279d09def31808) - 商业 更多
 - [独角兽创始人-Jason-Cohen：产品停止增长时，必须问的-5-个问题丨-Lenny's-Podcast](https://mp.weixin.qq.com/s?__biz=Mzk5MDkxNDU4Nw==&mid=2247485344&idx=1&sn=d696495cf9069e92f112d58b0705bfd5) - 商业 更多
-- [Rella-创始人：打造百万级流量的内容策略丨-Natalie-Barbu](https://mp.weixin.qq.com/s?__biz=Mzk5MDkxNDU4Nw==&mid=2247485318&idx=1&sn=7a02deca7b3e2e97239e00e8dd8c8fb3) - 商业 更多
 
-- [查看全部 34 篇...](/details/tags/product-business.md)
+- [查看全部 35 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -185,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5158 篇...](/details/tags/other.md)
+- [查看全部 5167 篇...](/details/tags/other.md)
 
 

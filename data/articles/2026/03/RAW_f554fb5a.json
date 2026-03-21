@@ -1,0 +1,59 @@
+{
+  "id": "RAW_f554fb5a",
+  "title": "QCon London 2026：引入 Tansu.io — 重新思考 Kafka 的精简运营",
+  "url": "https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-21 10:01:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At QCon London 2026, <a href=\"https://www.linkedin.com/in/pmorgan/\">Peter Morgan</a> introduced <a href=\"https://tansu.io/\">Tansu</a>, an open-source, Apache Kafka-compatible messaging broker he has been building solo for the past two years. The pitch was simple and deliberately provocative: what if you kept Kafka's protocol, however, threw out everything else, the replication, the leader elections, the permanent broker state, and replaced it with stateless brokers that delegate durability entirely to external storage?</p>\n   <p>Morgan, who has spent over a decade building event-driven systems on top of <a href=\"https://kafka.apache.org/\">Kafka</a>, including platforms for Disney's MagicBand and large-scale betting systems, opened with the core assumption that separates Tansu from Kafka. Kafka achieves resilience by replicating data between brokers. Tansu assumes that storage is already durable and resilient, and builds everything from that premise.</p>\n   <p>The practical consequences are significant. Kafka brokers are what Morgan called \"<em>pets</em>.\" They have identities, need extensive configuration, run 24/7 with four-gigabyte heaps, and scaling them down is so rare that he asked the audience whether anyone actually does it. One hand went up. Tansu brokers are \"<em>cattle</em>.\" They carry no state, have no leaders, run in about twenty megabytes of resident memory, and can scale to zero and back up in roughly ten milliseconds. Morgan joked that the first rule of Kafka is not to mention you're running it, because everyone in your department will immediately want topics on your cluster.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/news/2026/03/tansu-stateless-kafka-compatible/en/resources/1Morgan 1-1773768787050.jpg\" style=\"width: 600px; height: 302px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/tansu-stateless-kafka-compatible/en/resources/1Morgan 1-1773768787050.jpg\" rel=\"share\"></p>\n   <p>In a live demo, Morgan deployed Tansu to <a href=\"https://fly.io/\">Fly.io</a> as a forty-megabyte statically linked binary in a from-scratch container image, no operating system, just the binary and some SSL certificates. He configured it to scale to zero using Fly's proxy, created a topic with standard Kafka CLI tools, produced a message, killed the broker, and then consumed the message. The broker woke up automatically when the consumer connected. The entire deployment ran on a 256MB machine.</p>\n   <p>The storage architecture is where Tansu gets interesting. Rather than a single built-in storage engine, it offers pluggable backends selected via a URL parameter: <a href=\"https://aws.amazon.com/s3/\">S3</a> (or compatible stores like Tigris and R2) for diskless operation, SQLite for development environments where you want to copy a single file to reset state between test runs, and <a href=\"https://www.postgresql.org/\">Postgres</a> for teams that want their streaming data to land directly in a database. Morgan was candid about his favourite: Postgres. The original motivation for the project, he explained, was watching data flow through Kafka topics only to end up in a database anyway, and wondering why the intermediate step was necessary.</p>\n   <p>The Postgres integration goes beyond using it as a store. Morgan showed how Tansu originally used sequential INSERT statements to write records, which became a bottleneck because each execution requires a round-trip response. He replaced this with Postgres's COPY FROM protocol, which streams rows into the database without waiting for individual acknowledgements. A single COPY FROM setup, a stream of COPY DATA messages, and one COPY DONE at the end. The result is substantially higher throughput for batch ingestion. And because a produce in Tansu is just an INSERT (or COPY) and a fetch is just a SELECT, the transactional outbox pattern simply disappears: you can atomically update business data and queue a message in the same database transaction using a stored procedure that Tansu provides.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/news/2026/03/tansu-stateless-kafka-compatible/en/resources/1Morgan 2-1773768826947.jpg\" style=\"width: 600px; height: 296px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/tansu-stateless-kafka-compatible/en/resources/1Morgan 2-1773768826947.jpg\" rel=\"share\"></p>\n   <p>Schema validation is another area where Tansu diverges from Kafka. In standard Kafka, schema enforcement relies on a separate registry and is optional at the client. In Tansu, if a topic has a schema Avro, JSON, or Protobuf&nbsp; the broker validates every record before writing it. Invalid data gets rejected at the broker, not the client. Morgan described this as a deliberate trade-off: it's slower than Kafka's pass-through approach because the broker must decompress and validate each record, but it guarantees data consistency regardless of which client produces.</p>\n   <p>That broker-side schema awareness also enables something Tansu does that Kafka cannot: writing validated data directly into open table formats. If a topic has a Protobuf schema, Tansu can automatically write records to <a href=\"https://iceberg.apache.org/\">Apache Iceberg</a>, <a href=\"https://delta.io/\">Delta Lake</a>, or Parquet, creating tables, updating schemas on change, and handling metadata. In addition, Morgan comments:</p>\n   <blockquote>\n    <p>It actually works for AVRO, JSON, and Protobuf. Protobuf is the \"best\" because it has a built-in mechanism for backwards-compatible schema changes (and the one I used in the demo), but they can all be written as Parquet/Iceberg/Delta.</p>\n   </blockquote>\n   <p>A \"<em>sink topic</em>\" configuration skips the normal storage entirely and writes exclusively to the open table format, turning Tansu into a direct pipeline from Kafka-compatible producers to analytics-ready data.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/news/2026/03/tansu-stateless-kafka-compatible/en/resources/1Morgan 3-1773768826947.jpg\" style=\"width: 600px; height: 302px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/tansu-stateless-kafka-compatible/en/resources/1Morgan 3-1773768826947.jpg\" rel=\"share\"></p>\n   <p>As a proxy, Tansu can also sit in front of an existing Kafka cluster, proxying requests at 60,000 records per second with sub-millisecond P99 latency on modest hardware, 13 megabytes of RAM on a Mac Mini.</p>\n   <p>Morgan was upfront about the gaps. SSL support is present but being reworked. There's no throttling or access control lists yet. Compaction and message deletion aren't implemented on S3. Share groups are not planned. The project is written in asynchronous Rust, Apache-licensed, and actively looking for contributors. All examples, including the Fly.io deployment demo, are available on <a href=\"https://github.com/tansu-io/\">GitHub</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Introducing Tansu.io -- Rethinking Kafka for Lean Operations\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/tansu-stateless-kafka-compatible/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774087260000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Tansu.io 是一个开源的、无状态的 Kafka 兼容消息代理，将持久化委托给 S3 或 Postgres 等外部存储，支持 scale-to-zero 操作，简化事件驱动架构。",
+  "oneSentenceSummary": "Tansu.io 是一个开源的、无状态的 Kafka 兼容消息代理，将持久化委托给 S3 或 Postgres 等外部存储，支持 scale-to-zero 操作，简化事件驱动架构。",
+  "summary": "本文介绍了 Tansu，这是一款革命性的 Kafka 兼容消息代理，专为精简运营而设计。与传统 Kafka 依赖复杂的代理端复制和状态管理不同，Tansu 将代理视为无状态的「 cattle 」。通过将数据持久化委托给 S3、SQLite 或 Postgres 等弹性外部后端，Tansu 实现了仅 20MB 的极小内存占用，并且可以在 10 毫秒内从零扩展到活跃状态。主要特性包括：通过 COPY 协议实现高吞吐量 Postgres 集成、强制在代理端进行模式验证（Avro/JSON/Protobuf），以及直接将数据流式传输到 Apache Iceberg 或 Delta Lake 等开放表格式，有效消除了复杂 ETL 管道和事务发件箱模式的需求。",
+  "mainPoints": [
+    {
+      "point": "Tansu 通过将持久化委托给外部存储，重新定义了代理为无状态实体。",
+      "explanation": "通过移除内部复制和领导者选举，Tansu 将代理视为「 cattle 」而非「 pets 」，实现了极致的运营简化，并能够在 Fly.io 等平台上实现零扩展。"
+    },
+    {
+      "point": "深度 Postgres 集成消除了对传统事务发件箱模式的需求。",
+      "explanation": "使用 Postgres 作为后端允许开发者在单个事务中原子性地更新业务数据和队列消息，而 COPY FROM 协议确保高吞吐量摄入，无需逐个确认。"
+    },
+    {
+      "point": "强制代理端模式验证确保所有生产客户端的数据一致性。",
+      "explanation": "与 Kafka 可选的客户端注册表不同，Tansu 在代理级别对每条记录进行 Avro、JSON 或 Protobuf 模式验证，在数据写入存储之前就拒绝无效数据。"
+    },
+    {
+      "point": "与开放表格式的直接集成简化了从消息传递到分析的数据路径。",
+      "explanation": "Tansu 可以自动将验证后的 Protobuf 或 Avro 记录转换为 Apache Iceberg 或 Delta Lake 的 Parquet 文件，为分析就绪数据创建直接管道，无需中间 ETL 步骤。"
+    }
+  ],
+  "keyQuotes": [
+    "如果你保留 Kafka 的协议，但抛弃其他一切呢？抛弃复制、领导者选举、代理的永久状态，用无状态代理取而代之？",
+    "Kafka 代理是 Morgan 所说的『 pets 』…… Tansu 代理是『 cattle 』。它们不携带状态，没有领导者，只占用约 20MB 的常驻内存。",
+    "事务发件箱模式完全消失了：你可以在同一个数据库事务中使用存储过程原子性地更新业务数据和队列消息。",
+    "无效数据在代理端被拒绝，而不是客户端。这是一个刻意权衡……但它保证了无论哪个客户端生产数据，都能实现数据一致性。",
+    "『 sink topic 』配置完全跳过普通存储，仅写入开放表格式，使 Tansu 成为分析就绪数据的直接管道。"
+  ],
+  "tags": [
+    "Kafka",
+    "Event-Driven Architecture",
+    "Stateless Infrastructure",
+    "Rust",
+    "PostgreSQL"
+  ],
+  "topicTag": "architecture",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 831,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774087260000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-21 10:01:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_1f188959",
+  "title": "精准识别「界门纲目科属种」！北大彭宇新团队用细粒度树先验提升泛化，破解生物类别分层识别难题",
+  "url": "https://www.qbitai.com/2026/03/390945.html",
+  "date": "2026-03-21 09:48:18",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"40\">MIPL团队 投稿</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"41\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">一张蓝锥嘴雀的图片，你能认出它是“鸟”，但能认出它是“鸟纲-雀形目-唐纳雀科-锥嘴雀属-蓝锥嘴雀”吗？</p>\n  <p data-track=\"3\">像大多数人一样，现在的多模态大模型也认不出来。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100335_b3a0e0d30ecb42364d936bebec58711c.webp\" data-src=\"https://image.jido.dev/20260321100335_b3a0e0d30ecb42364d936bebec58711c.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">真实世界中的对象通常包含极其丰富的类别层次，形成<strong>类别树</strong>结构。比如蓝锥嘴雀是：动物界-脊索动物门-鸟纲-雀形目-唐纳雀科-锥嘴雀属-蓝锥嘴雀（界-门-纲-目-科-属-种）。</p>\n  <p data-track=\"5\">区别于传统的细粒度视觉识别，<strong>分层视觉识别</strong>旨在预测所属的所有类别层次，而不仅仅预测最终的细粒度类别。尽管现有Finedefics、Fine-R1等生成式大模型在细粒度视觉识别任务上表现出色，但由于缺乏类别树知识，<strong>无法从粗到细实现每一层的精准识别</strong>。</p>\n  <p data-track=\"6\">同时，采用分层类别标签对比学习得到的判别式大模型（如BioCLIP、BioCLIP2、BioCAP等），其表征空间已能充分编码类别树中的类间关系与类内关系。基于上述发现，本文<strong>利用判别式大模型的表征指导生成式大模型的学习</strong>，为多模态大模型学习类别树提供了新路径。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100335_aad0ac1f83b7e74bc89f5a136f459303.webp\" data-src=\"https://image.jido.dev/20260321100335_aad0ac1f83b7e74bc89f5a136f459303.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">本文是<strong>北京大学彭宇新教授团队</strong>在细粒度多模态大模型领域的最新研究成果，<strong>相关论文已被CVPR 2026接收，并已开源</strong>。</p>\n  <p data-track=\"9\">尽管现有多模态大模型在细粒度视觉识别上的准确率取得明显提升，但在依赖类别树知识的分层视觉识别任务上，仍无法从粗到细实现每一层的精准识别。具体地，存在如下3点挑战：</p>\n  <p data-track=\"10\"><strong>1. 同层判别性差：</strong>对于更粗粒度的类别层次，“类内差异大”更加突出，模型倾向于学习类别共性；对于更细粒度的类别层次，“类间差异小”更加突出，模型倾向于学习类别差异。两者的矛盾导致模型<strong>难以从粗到细区分每一层的相似类别</strong>。</p>\n  <p data-track=\"11\"><strong>2. 跨层一致性差：</strong>由于模型缺乏类别树知识，<strong>难以保证任意相邻层次的预测类别满足父子节点关系</strong>。例如，预测结果为“鹦鹉目-裸鼻雀科”，但两者不满足父子节点关系，“裸鼻雀科”应该属于“雀形目”。</p>\n  <p data-track=\"12\"><strong>3. 新类泛化性差：</strong>现有模型倾向于挖掘不同细粒度子类别的差异，忽略了对其共性的总结（用于识别其父节点的辨识性特征），<strong>难以准确识别从未见过的新类别</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_ebc15df78dee7086a2da49842df1f4ca.webp\" data-src=\"https://image.jido.dev/20260321100334_ebc15df78dee7086a2da49842df1f4ca.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"14\">针对上述问题，北京大学彭宇新教授团队提出了<strong>分类感知表征对齐方法</strong>（Taxonomy-Aware Representation Alignment，TARA），用于将类别树结构知识注入多模态大模型。通过将大模型与生物基础模型的视觉表征对齐，促进大模型提取具备完整类别树结构的视觉表征。同时，通过将大模型输出答案的首个词元表征与经生物基础模型编码后的真实类别表征对齐，促进大模型根据指定的层次，将具备完整类别树结构的视觉表征映射为对应层次的类别名称。</p>\n  <p data-track=\"15\">实验结果表明，本方法不仅能增强现有大模型的细粒度视觉识别能力，提升最终的细粒度类别的识别准确率，还能增强分层视觉识别能力，从粗到细提升类别树上每一层的识别准确率。</p>\n  <p data-track=\"17\">为向多模态大模型注入类别树结构知识，本文提出了<strong>分类感知表征对齐方法TARA</strong>。如图2所示，TARA包含2个主要部分：</p>\n  <p data-track=\"18\"><strong>1. 分层视觉表征对齐：</strong>通过将大模型中间层与生物基础模型最后一层的视觉表征对齐，促进大模型提取具备完整类别树结构的视觉表征。</p>\n  <p data-track=\"19\"><strong>2. 自由粒度类别表征对齐：</strong>通过将大模型输出答案的首个词元表征与经生物基础模型编码后的真实类别表征对齐，促进大模型根据指定的层次，将具备完整类别树结构的视觉表征映射为对应层次的类别名称。</p>\n  <p data-track=\"20\">具体如下：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_a253b7a2073e902e4baabc464558e3a4.webp\" data-src=\"https://image.jido.dev/20260321100334_a253b7a2073e902e4baabc464558e3a4.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"22\"><strong>1. 分层视觉表征对齐。</strong></p>\n  <p data-track=\"23\">经分层类别标签训练的生物基础模型（例如， BioCLIP、BioCLIP2、BioCAP等）能提供包含分类学信息的监督信号，促进大模型提取具备完整类别树结构的视觉表征。具体地，给定输入图像I和识别特定层次类别的问题q（例如，“图中动物属于什么门/纲/目/科/属/种？从如下选项中选择：[真实类别，相似类别1，相似类别2，相似类别3]”），生物基础模型的视觉编码器εv(·)输出目标视觉特征img=εv(I)∈RN×d，其中d表示生物基础模型的特征维度。大语言模型第ℓ层的视觉表征表示为ℓimg∈RN×D，采用可学习的映射层PV(·)将其映射到生物基础模型的视觉特征空间，并最小化如下对齐损失：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100335_e06ccd3eefca861862ebaf10626ea372.webp\" data-src=\"https://image.jido.dev/20260321100335_e06ccd3eefca861862ebaf10626ea372.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\"><strong>2. 自由粒度类别表征对齐。</strong></p>\n  <p data-track=\"25\">一张图像同时对应不同层次的类别标签，但用户期望识别的类别层次是不同的。例如，专家可能希望在“种”层次上将对象识别为阿卡迪亚霸鹟，而普通用户只需要在“纲”层次上将其识别为鸟。通过在同一层次上对齐生物基础模型和大模型的类别文本表征，促进大模型将具备完整类别树结构的视觉表征映射为对应层次的类别名称。具体地，生物基础模型的文本编码器ET(·)输出目标文本特征ylabel=ET(C)∈Rd，其中C表示在期望层次上的真实类别名称。大语言模型第m层的答案表征序列表示为emanswer∈RN′×D，采用可学习的映射层PT(·)将答案的首个词元表征映射到生物基础模型的文本特征空间，并最小化如下对齐损失：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_efd48d8d36648312d800664497b82b69.webp\" data-src=\"https://image.jido.dev/20260321100334_efd48d8d36648312d800664497b82b69.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"26\">最终，TARA的对齐损失定义为两者的均值：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_45c218f96d496127228a56da8da01639.webp\" data-src=\"https://image.jido.dev/20260321100334_45c218f96d496127228a56da8da01639.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"27\"><strong>3. 模型训练和推理：</strong></p>\n  <p data-track=\"28\">在训练阶段，采用无需思考的强化微调（No Thinking RFT）和TARA交替优化大模型、映射层PV(·)与PT(·)，促进大模型适配分层视觉识别指令的同时学习类别树知识。在推理阶段，生物基础模型和映射层PV(·)与PT(·)均不参与运算，直接由优化后的大模型进行识别。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_d54b11d6e76d401ff77ed05b571e6ae7.webp\" data-src=\"https://image.jido.dev/20260321100334_d54b11d6e76d401ff77ed05b571e6ae7.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"31\">表1展示了在iNaturalist-Plant与iNaturalist-Animal上的分层视觉识别结果。本方法不仅能增强多种大模型的细粒度视觉识别能力，提升最终的细粒度类别的识别准确率，还能增强分层视觉识别能力，从粗到细提升类别树上每一层的识别准确率。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_107695dc98e754de868960a872be3d8e.webp\" data-src=\"https://image.jido.dev/20260321100334_107695dc98e754de868960a872be3d8e.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"33\">表2展示了在TerraIncognita的新类别（已有类别树之外的类别）的分层视觉识别结果。这部分新类别不仅是模型强化微调训练集中未见类别，更是稀有或记录极少的物种图像，<strong>在公开数据中几乎没有或完全没有可用样本，更不可能出现在模型的预训练数据中</strong>。</p>\n  <p data-track=\"34\">对于其中许多样本，很可能是科学界尚未正式描述的新物种，目前只能可靠地确定其较高层次的分类标签（如“目”和“科”）。本方法通过引入类别树先验，促进模型学习子类别的共性，从而总结出用于识别父类别的判别性特征，提升已知类别树之外的新类别的识别准确率。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260321100334_136dcf3e8dbb0ab31f72e43e34c61332.webp\" data-src=\"https://image.jido.dev/20260321100334_136dcf3e8dbb0ab31f72e43e34c61332.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\">图3的案例展示表明，相比阿里的Qwen3-VL-2B大模型，本方法能提升同层判别性与跨层一致性，既区分开同一层的相似类别，又确保相邻层次的预测类别满足父子节点关系。</p>\n  <p data-track=\"38\">针对现有多模态大模型缺乏类别树知识，无法从粗到细实现每一层的精准识别的问题，本文提出了分类感知表征对齐方法TARA，通过对齐大模型与生物基础模型的中间表征，注入类别树结构知识，不仅能提升最终的细粒度类别的识别准确率，还能增强大模型的分层视觉识别能力，从粗到细提升类别树上每一层的识别准确率。</p>\n  <p data-track=\"39\"><strong>论文标题：</strong>\n   <br>\n   Taxonomy-Aware Representation Alignment for Hierarchical Visual Recognition with Large Multimodal Models\n   <br class=\"sysbr\">\n   <strong>论文链接：</strong>\n   <br>\n   https://arxiv.org/abs/2603.00431\n   <br class=\"sysbr\">\n   <strong>开源代码：</strong>\n   <br>\n   https://github.com/PKU-ICST-MIPL/TARA_CVPR2026\n   <br class=\"sysbr\">\n   <strong>实验室网址：</strong>\n   <br>\n   https://www.wict.pku.edu.cn/mipl</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "北京大学彭宇新团队提出 TARA 方法，通过将多模态大模型与生物基础模型进行表征对齐，成功将类别树知识注入模型，解决了生物分层识别中的逻辑一致性与新类泛化难题。",
+  "oneSentenceSummary": "北京大学彭宇新团队提出 TARA 方法，通过将多模态大模型与生物基础模型进行表征对齐，成功将类别树知识注入模型，解决了生物分层识别中的逻辑一致性与新类泛化难题。",
+  "summary": "本文介绍了北京大学彭宇新教授团队在细粒度多模态大模型领域的最新研究成果——TARA（分类感知表征对齐方法）。针对现有多模态大模型在生物识别中缺乏“界门纲目科属种”层级知识、难以保证跨层预测一致性以及新类泛化性差等挑战，TARA 提出了一套创新的对齐框架。该方法通过将大模型的中间层视觉表征与生物基础模型（如 BioCLIP）对齐，并同步进行自由粒度的类别文本表征对齐，使模型能够提取具备完整类别树结构的视觉特征。实验结果表明，该方法不仅显著提升了细粒度物种识别的准确率，还确保了预测结果符合生物分类学的父子节点逻辑，在处理稀有或未见物种时展现出极强的鲁棒性。该论文已被 CVPR 2026 接收并开源。",
+  "mainPoints": [
+    {
+      "point": "分层视觉识别要求模型不仅能识别最终物种，还需精准预测完整的生物类别树层次。",
+      "explanation": "不同于传统识别，分层识别需覆盖从界到种的所有层级。现有模型因缺乏类别树知识，常出现相邻层次预测结果不满足父子节点关系的逻辑错误。"
+    },
+    {
+      "point": "TARA 方法通过双重表征对齐，将判别式生物基础模型的结构化知识注入生成式大模型。",
+      "explanation": "通过分层视觉表征对齐和自由粒度类别表征对齐，促使大模型在提取特征时保留分类学信息，并能根据指令将特征映射到正确的层级名称。"
+    },
+    {
+      "point": "引入类别树先验能有效提升模型对从未见过的新类别或稀有物种的泛化识别能力。",
+      "explanation": "模型通过学习已知子类别的共性来总结父类别的辨识性特征，从而在面对科学界尚未正式描述的新物种时，仍能可靠地确定其高层分类标签。"
+    },
+    {
+      "point": "采用无需思考的强化微调与 TARA 交替优化的策略，实现了模型的高效训练与推理。",
+      "explanation": "在训练阶段通过交替优化使模型适配分层识别指令；推理阶段则无需生物基础模型参与，直接由优化后的大模型输出结果，保证了效率。"
+    }
+  ],
+  "keyQuotes": [
+    "分层视觉识别旨在预测所属的所有类别层次，而不仅仅预测最终的细粒度类别。",
+    "利用判别式大模型的表征指导生成式大模型的学习，为多模态大模型学习类别树提供了新路径。",
+    "本方法通过引入类别树先验，促进模型学习子类部的共性，从而总结出用于识别父类别的判别性特征。",
+    "相比阿里的 Qwen3-VL-2B 大模型，本方法能提升同层判别性与跨层一致性，既区分开同一层的相似类别，又确保相邻层次的预测类别满足父子节点关系。"
+  ],
+  "tags": [
+    "多模态大模型",
+    "分层视觉识别",
+    "生物分类学",
+    "表征对齐",
+    "CVPR 2026"
+  ],
+  "topicTag": "other",
+  "readTime": 11,
+  "score": 85,
+  "wordCount": 2737,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774086498000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-21 09:48:18"
+}
