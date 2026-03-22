@@ -1,0 +1,61 @@
+{
+  "id": "RAW_96cb8562",
+  "title": "AWS 扩展 Aurora DSQL：推出 Playground、全新工具集成和驱动连接器",
+  "url": "https://www.infoq.com/news/2026/03/aurora-dsql-playground-updates/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-22 08:59:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Amazon has announced several updates for Aurora DSQL, focusing on usability, integrations, and developer tooling. The improvements include a new interactive <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-aurora-dsql-launches-playground/\">Aurora DSQL Playground</a> that lets developers explore and experiment with the database directly in the browser, without registration or associated costs.</p>\n   <p>Amazon Aurora DSQL is a PostgreSQL-compatible, serverless distributed database designed to support active-active high availability and multi-region strong consistency. Following <a href=\"https://www.infoq.com/news/2025/06/amazon-aurora-dsql-ga/\">general availability last year</a> and recent <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-aurora-dsql-additional-aws-regions/\">regional expansions</a>, the team has added <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/aurora-dsql-visual-studio-code-sqltools-dbeaver/\">integrations with popular SQL tools</a>, including the DSQL Driver for SQLTools and the DSQL Plugin for DBeaver Community Edition. It also added compatibility with <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/aurora-dsql-launches-tortoise-flyway-prisma/\">Tortoise ORM, Flyway, and Prisma</a>, enabling smoother schema management and application development workflows. <a href=\"https://www.linkedin.com/in/jeremydaly/\">Jeremy Daly</a>, co-founder of Ampt and AWS Serverless Hero, <a href=\"https://offbynone.io/issues/355/\">writes</a> in his newsletter:</p>\n   <blockquote>\n    <p>AWS continues to make really smart moves with Aurora DSQL (...) This is exactly how you turn it into the default: reduce friction, meet developers where they are, and integrate with the tools we already use. DSQL has been checking off a lot of boxes for me lately.</p>\n   </blockquote>\n   <p>The <a href=\"https://playground.dsql.demo.aws/\">Aurora DSQL Playground</a> is a browser-based sandbox that lets users test schemas, run SQL queries, and explore distributed PostgreSQL capabilities without needing an AWS account or any setup. The new option has attracted positive reactions from the community, which had previously questioned the feasibility of testing it without incurring high costs. Corey Quinn, chief cloud economist at The Duckbill Group, <a href=\"https://www.lastweekinaws.com/newsletter/\">writes</a>:</p>\n   <blockquote>\n    <p>Credit where it's due - removing the account signup friction to get folks using DSQL is genuinely smart customer acquisition. After all, if I haven't given you my credit card, you can't surprise me with whatever comes out the other end of the Byzantine Aurora DSQL Billing Puzzle Box.</p>\n   </blockquote>\n   <p>New <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/aurora-dsql-launches-go-python-nodejs-connectors/\">Go (pgx), Python (asyncpg), and Node.js (WebSocket for Postgres.js) connectors</a> have also been released, designed to simplify IAM-based authentication and application connectivity. The new connectors are open source and serve as a transparent authentication layer that automatically handles IAM token generation. Daly <a href=\"https://offbynone.io/issues/354/\">adds</a>:</p>\n   <blockquote>\n    <p>(It) is a pretty big deal if you’ve wasted time with token generation and connection management in serverless environments. Cleaner auth flows plus first-party connectors go a long way toward making DSQL feel less like an experiment and more like the new default.</p>\n   </blockquote>\n   <p>Targeting AI-powered coding environments, Aurora DSQL now <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-aurora-dsql-integrates-with-kiro-powers-and-agent-skills/\">integrates with Kiro's powers and AI agent skills</a>. The update lets AI coding agents directly understand and work with Aurora DSQL, enabling them to help design schemas, write queries, and manage database tasks using the service's built-in knowledge.</p>\n   <p>While these updates aim to improve the developer experience and broaden Aurora DSQL’s integration with common tools and frameworks, the team has also added engine-level features to reduce the feature gap with standard PostgreSQL databases, introducing support for <a href=\"https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-aurora-dsql-adds-identity-columns-sequence/\">identity columns and sequence objects</a>. This removes the need for custom ID-generation logic in application code and makes it easier to migrate existing PostgreSQL workloads that rely on these standard SQL features.</p>\n   <p>In the recent article \"<a href=\"https://dev.to/dineshelumalai/aurora-dsql-the-serverless-postgresql-that-scales-to-zero-should-you-migrate-2bfn\">Aurora DSQL: The Serverless PostgreSQL That Scales to Zero (Should You Migrate?)</a>,\" <a href=\"https://www.linkedin.com/in/dineshelumalai/\">Dinesh Kumar Elumalai</a>, solutions architect at American Honda Motor Co., details how to migrate from RDS or Aurora, including the trade-offs around optimistic concurrency and missing features such as foreign keys. Darryl Ruggles, principal cloud solutions architect at Ciena, <a href=\"https://www.linkedin.com/posts/darryl-ruggles_aurora-dsql-is-getting-attention-as-awss-share-7429213032024682496-G_ET?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY\">comments</a>:</p>\n   <blockquote>\n    <p>Aurora DSQL is getting attention as AWS's truly serverless PostgreSQL option, but the migration path is more nuanced than many suggest.</p>\n   </blockquote>\n   <p>The page \"<a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-with-postgresql-compatibility.html\">SQL feature compatibility in Aurora DSQL</a>\" documents the existing differences and limitations.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AWS Expands Aurora DSQL with Playground, New Tool Integrations, and Driver Connectors\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/aurora-dsql-playground-updates/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774169940000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "亚马逊宣布 Aurora DSQL 更新，包括免费的浏览器版 Playground、全新 SQL 工具集成（SQLTools、DBeaver）、ORM 支持（Tortoise、Flyway、Prisma）、Go/Python/Node.js 原生连接器，以及 AI 编码智能体集成。",
+  "oneSentenceSummary": "亚马逊宣布 Aurora DSQL 更新，包括免费的浏览器版 Playground、全新 SQL 工具集成（SQLTools、DBeaver）、ORM 支持（Tortoise、Flyway、Prisma）、Go/Python/Node.js 原生连接器，以及 AI 编码智能体集成。",
+  "summary": "亚马逊为 Aurora DSQL 推出了多项面向开发者的改进。Aurora DSQL Playground 是一个基于浏览器的沙盒环境，用户无需注册 AWS 账户即可测试架构和运行查询。新增集成包括 SQLTools 的 DSQL 驱动、DBeaver 的 DSQL 插件，以及对 Tortoise ORM、Flyway 和 Prisma 的支持。团队还发布了 Go（pgx）、Python（asyncpg）和 Node.js 的原生连接器，简化了基于 IAM 的身份验证。在 AI 驱动的开发方面，Aurora DSQL 现已与 Kiro 的 AI 智能体技能集成。引擎层面的改进包括对标识列和序列对象的支持，以缩小 PostgreSQL 功能差距。社区反应积极，专家们称赞 AWS 采用降低使用门槛的策略。",
+  "mainPoints": [
+    {
+      "point": "Aurora DSQL Playground 提供免费浏览器版测试，无需注册。",
+      "explanation": "用户可以在无需 AWS 账户或设置的情况下探索架构、运行 SQL 查询并测试分布式 PostgreSQL 功能，解决了此前社区对测试成本的担忧。"
+    },
+    {
+      "point": "全新 SQL 工具集成和 ORM 兼容性降低采用门槛。",
+      "explanation": "DSQL Driver for SQLTools、DSQL Plugin for DBeaver，以及对 Tortoise ORM、Flyway 和 Prisma 的支持，使架构管理和开发工作流程更加顺畅。"
+    },
+    {
+      "point": "Go、Python 和 Node.js 原生连接器简化 IAM 身份验证。",
+      "explanation": "开源连接器透明处理 IAM 令牌生成，解决了无服务器环境中连接管理的痛点。"
+    },
+    {
+      "point": "Kiro 的 AI 编码智能体集成实现智能数据库辅助。",
+      "explanation": "AI 智能体能够理解 Aurora DSQL 架构、使用该服务的内置知识编写查询和管理数据库任务。"
+    },
+    {
+      "point": "标识列和序列对象支持缩小 PostgreSQL 兼容性差距。",
+      "explanation": "引擎层面功能通过支持标准 SQL 自增模式，降低了现有 PostgreSQL 工作负载的迁移门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "这正是将其打造成默认选择的方式：降低门槛、在开发者所在的地方与他们相遇，并与他们已经使用的工具集成。",
+    "必须承认——取消账户注册门槛让人们使用 DSQL 是真正聪明的客户获取策略。",
+    "更清晰的身份验证流程加上一流连接器，会让 DSQL 感觉不再像是实验品，而更像是新的默认选择。"
+  ],
+  "tags": [
+    "AWS Aurora DSQL",
+    "无服务器数据库",
+    "PostgreSQL",
+    "开发者工具",
+    "云数据库"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 576,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774169940000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-22 08:59:00"
+}
