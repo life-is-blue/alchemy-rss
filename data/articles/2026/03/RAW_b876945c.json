@@ -1,0 +1,63 @@
+{
+  "id": "RAW_b876945c",
+  "title": "基于评论分析 Hacker News 用户画像",
+  "url": "https://simonwillison.net/2026/Mar/21/profiling-hacker-news-users/#atom-everything",
+  "date": "2026-03-21 23:59:47",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Mar/21/profiling-hacker-news-users/\">\n    <p class=\"mobile-date\">21st March 2026</p>\n    <p>Here’s a mildly dystopian prompt I’ve been experimenting with recently: “Profile this user”, accompanied by a copy of their last 1,000 comments on Hacker News.</p>\n    <p>Obtaining those comments is easy. The <a href=\"https://hn.algolia.com/api\">Algolia Hacker News API</a> supports listing comments sorted by date that have a specific tag, and the author of a comment is tagged there as <code>author_username</code>. Here’s a JSON feed of my (<code>simonw</code>) most recent comments, for example:</p>\n    <p><a href=\"https://hn.algolia.com/api/v1/search_by_date?tags=comment,author_simonw&amp;hitsPerPage=1000\">https://hn.algolia.com/api/v1/search_by_date?tags=comment,author_simonw&amp;hitsPerPage=1000</a></p>\n    <p>The Algolia API is served with open CORS headers, which means you can access the API from JavaScript running on any web page.</p>\n    <p>Last August I <a href=\"https://chatgpt.com/share/68a4d2b1-a678-8006-aca0-cec51b243bd3\">had ChatGPT build me</a> a <a href=\"https://tools.simonwillison.net/hn-comments-for-user\">simple tool</a> for hitting that API for any user which fetches their comments and gives me a mobile-friendly “copy to clipboard” button. I’ve since <a href=\"https://github.com/simonw/tools/commits/main/hn-comments-for-user.html\">tweaked it a few times</a> with Claude.</p>\n    <p>I can then paste the whole lot into any LLM—these days I mostly use Claude Opus 4.6 for this—and prompt “profile this user” to see what it can figure out.</p>\n    <p>It’s startlingly effective! It feels invasive to quote the profile of another user here, so I’ll show you what it produces for me:</p>\n    <blockquote>\n     <p>This is <strong>Simon Willison</strong> — a prolific, independent software developer, blogger, and one of the most visible voices in the AI-assisted coding space. Here’s a profile drawn from his comments:</p>\n     <p><strong>Professional identity:</strong> Independent developer and writer. Co-creator of Django, creator of Datasette and many other open source tools. On the board of the Python Software Foundation. Runs a heavily-trafficked personal blog at simonwillison.net with multiple content types (entries, link blog, notes, quotations). Monetizes through GitHub sponsors, ethical ads, and occasional consulting — not through any AI company payroll, a point he defends frequently.</p>\n     <p><strong>Core thesis on AI coding:</strong> He’s the leading evangelist for what he calls “agentic engineering” — using coding agents (Claude Code, Codex CLI) as productivity multipliers for skilled developers. His central argument: LLMs don’t replace programmers, they amplify existing expertise. He’s writing a guide/book on this at simonwillison.net/guides. He insists these tools are deceptively difficult to use well, and that most people who report bad results simply haven’t learned the craft yet.</p>\n     <p><strong>Working style:</strong> He does most of his programming from his iPhone via Claude Code for web, often while riding BART, walking the dog, or sitting in the garden. He embraces “YOLO mode” (auto-approving agent actions) and frequently runs 2-3 agent sessions in parallel. He starts every session with “run uv run pytest” to anchor the agent in TDD. He’s on the $200/month Claude Max plan.</p>\n     <p><strong>Key technical interests:</strong> Sandboxing and security (WebAssembly, Pyodide, sandbox-exec, Firecracker), SQLite (deeply), Python packaging and tooling (uv, PyPI distribution tricks), browser-in-a-browser experiments (v86, WASM Linux), and local LLM inference. He’s been learning Go “by osmosis” through coding agents.</p>\n     <p><strong>Security consciousness:</strong> He coined the term “prompt injection” and the “lethal trifecta” (access to private data + exposure to untrusted input + ability to take actions). He’s genuinely alarmed about OpenClaw/Clawdbot security risks and has been predicting a headline-grabbing prompt injection attack “in the next six months” for over two years — acknowledging it keeps not happening while insisting the risk is real. He references the “normalization of deviance” pattern frequently.</p>\n     <p><strong>Personality and debate style:</strong> Energetic, combative when challenged, but generally good-natured. He engages heavily in HN comment threads — sometimes dozens of replies in a single discussion. He’s transparent about his biases and maintains a public disclosures page. He pushes back hard against what he sees as motivated reasoning from AI skeptics, but also against AGI hype (“I refer to that as the science fiction version of AI”). He gets visibly frustrated by sock-puppet accounts and bad-faith criticism. He has a self-deprecating streak (“my stupid pelican benchmark”).</p>\n     <p><strong>Recurring themes across hundreds of comments:</strong></p>\n     <ul>\n      <li>“Two things can be true at the same time” — he holds nuanced positions</li>\n      <li>Tests are for productivity, not just quality</li>\n      <li>The November 2025 model releases (Opus 4.5, GPT-5.2) were a genuine inflection point</li>\n      <li>Code review is the biggest bottleneck in agent-assisted workflows</li>\n      <li>“Cognitive debt” is a real and unsolved problem</li>\n      <li>The best engineering practices (tests, docs, CI/CD, clean code) also make agents work better</li>\n      <li>He’s deliberately trying to “teach people good software engineering while tricking them into thinking the book is about AI”</li>\n     </ul>\n     <p><strong>Personal interests mentioned:</strong> Niche museums (runs niche-museums.com), New Zealand kākāpō parrots, cooking food from countries he’s never visited, chickens in his garden. Lives in Half Moon Bay, CA near a major pelican roost. The pelican-on-a-bicycle SVG test is his signature LLM benchmark.</p>\n     <p><strong>In a sentence:</strong> A deeply experienced, independently-minded developer who’s genuinely excited about AI coding tools, fights hard against both uncritical hype and reflexive dismissal, and is trying to professionalize how the industry uses these tools — while also worrying loudly about the security implications almost nobody else takes seriously enough.</p>\n    </blockquote>\n    <p>This all checks out! I ran this in Claude incognito mode to hopefully prevent Claude from guessing that I was evaluating myself and sycophantically glazing me—the tone of the response it gave here is similar to the tone I’ve seen against other accounts.</p>\n    <p>I expect it guessed my real name due to my habit of linking to my own writing from some of my comments, which provides plenty of simonwillison.net URLs for it to associate with my public persona. I haven’t seen it take a guess at a real name for any of the other profiles I’ve generated.</p>\n    <p>It’s a little creepy to be able to derive this much information about someone so easily, even when they’ve shared that freely in a public (and API-available) place.</p>\n    <p>I mainly use this to check that I’m not getting embroiled in an extensive argument with someone who has a history of arguing in bad faith. Thankfully that’s rarely the case—Hacker News continues to be a responsibly moderated online space.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9172/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 演示了如何利用 LLM 分析 Hacker News 用户最近 1，000 条评论来进行用户画像，通过自我画像示例展示了这一技术的有效性，并探讨了其伦理意义。",
+  "oneSentenceSummary": "Simon Willison 演示了如何利用 LLM 分析 Hacker News 用户最近 1，000 条评论来进行用户画像，通过自我画像示例展示了这一技术的有效性，并探讨了其伦理意义。",
+  "summary": "作者展示了一个通过对 Hacker News 用户进行画像的实验，通过 Algolia Hacker News API 获取他们最近的评论，并使用 LLM 进行分析。他解释了技术实现：使用带有特定标签（comment， author_username）的 API 端点检索最多 1，000 条评论，然后将其粘贴到 Claude Opus 4.6 中，并使用「profile this user」提示词。文章通过一个详细的自我画像展示了该技术的有效性，准确地捕捉到了他的职业身份、技术兴趣、性格特征和反复出现的主题。作者反思了这种「略微反乌托邦」能力的伦理意义，指出从公开可用的数据中获取如此多的信息「有点令人毛骨悚然」。他主要使用这个工具来验证辩论对手是否出于善意。这篇文章在技术实用性与对隐私和信息聚合问题的深思熟虑之间取得了平衡。",
+  "mainPoints": [
+    {
+      "point": "LLM 仅凭用户的评论历史就能生成出令人惊讶的准确用户画像。",
+      "explanation": "通过分析 1，000 条评论，Claude Opus 4.6 正确识别出了 Simon Willison 的姓名、职业身份（Django 联合创始人、Datasette 创建者）、关于 AI 编码的核心信念、技术兴趣、性格特征，甚至还有个人细节，如住在鹈鹕栖息地附近。"
+    },
+    {
+      "point": "Algolia Hacker News API 通过开放的 CORS 提供了便捷的用户评论历史访问。",
+      "explanation": "API 端点 `search_by_date?tags=comment，author_username` 允许获取每个用户最多 1，000 条评论，由于 CORS 头部宽松，可以从任何网页直接访问。"
+    },
+    {
+      "point": "该技术引发了严重的隐私和伦理问题。",
+      "explanation": "作者将这种能力描述为「略微反乌托邦」和「有点令人毛骨悚然」——它展示了如何从公开分享的信息中轻松生成详细的个人画像。"
+    },
+    {
+      "point": "主要的实际用途是验证辩论对手的可信度和善意参与。",
+      "explanation": "作者使用这个工具来检查与之争论的人是否有建设性、善意参与的历史，然后再决定是否继续讨论。"
+    },
+    {
+      "point": "LLM 的准确性取决于可用评论数据的数量和质量。",
+      "explanation": "当用户链接到自己的内容（提供可识别的 URL）且有足够多的评论历史用于模式分析时，效果最好。"
+    }
+  ],
+  "keyQuotes": [
+    "这效果惊人得好！引用其他用户的画像让我感到被侵犯了，所以我会给你看看它对我的分析结果",
+    "能够如此轻易地推断出关于一个人的这么多信息，还是有点令人毛骨悚然，即使这些信息是他们自愿在公开（且可通过 API 访问）的地方分享的",
+    "我主要用这个来检查自己是否正在与有恶意争论历史的人进行长时间的争论",
+    "LLM 是助手，而不是自主可靠的程序员。我是高级工程师；LLM 是为了加速我的工作，而不是取代我的判断",
+    "他创造了『提示词注入』这个术语和『致命三要素』（访问私人数据 + 接触不可信输入 + 采取行动的能力）"
+  ],
+  "tags": [
+    "LLM 用户画像",
+    "Hacker News",
+    "API 集成",
+    "用户分析",
+    "提示词工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 962,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774137587000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-21 23:59:47"
+}
