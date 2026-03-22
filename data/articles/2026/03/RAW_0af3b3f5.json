@@ -1,0 +1,52 @@
+{
+  "id": "RAW_0af3b3f5",
+  "title": "阶跃星辰率先适配微信生态，StepClaw“龙虾”即插即养即用",
+  "url": "https://www.qbitai.com/2026/03/391010.html",
+  "date": "2026-03-22 07:09:01",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>刚刚，阶跃星辰StepClaw（阶跃龙虾）已率先完成适配，正式接入微信。通过“阶跃AI桌面伙伴”安装StepClaw，在微信ClawBot插件中连接，即可完成配置。用户可在微信聊天界面中向自己的阶跃龙虾发送指令，完成学习辅助、内容创作、信息查询等任务。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20260322080356_95aa246fa27e8c88d88f8cea71c7938c.jpeg\"></p>\n  <p>StepClaw搭载阶跃星辰Step 3.5 Flash模型，该模型是阶跃星辰最近推出的开源Agent基座模型，目前在OpenRouter总榜的周榜排名第一，同时也持续位居OpenClaw调用量榜首，是全球用户最优选的小龙虾模型。</p>\n  <p><img decoding=\"async\" src=\"https://image.jido.dev/20260322080356_3c41b09301f3119ff14b3fa0b4c76825.png\"></p>\n  <p>*本文系量子位获授权刊载，观点仅为原作者所有</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阶跃星辰 StepClaw 完成微信生态适配，用户可在微信聊天界面中直接使用阶跃龙虾进行学习辅助、内容创作和信息查询，搭载的 Step 3.5 Flash 模型在 OpenRouter 周榜排名第一。",
+  "oneSentenceSummary": "阶跃星辰 StepClaw 完成微信生态适配，用户可在微信聊天界面中直接使用阶跃龙虾进行学习辅助、内容创作和信息查询，搭载的 Step 3.5 Flash 模型在 OpenRouter 周榜排名第一。",
+  "summary": "阶跃星辰宣布其 StepClaw（阶跃龙虾）已率先完成微信生态适配。用户可通过「阶跃 AI 桌面伙伴」安装 StepClaw，并在微信 ClawBot 插件中完成连接配置，即可在微信聊天界面中向阶跃龙虾发送指令，完成学习辅助、内容创作、信息查询等任务。StepClaw 搭载的是阶跃星辰最新开源的 Agent 基座模型 Step 3.5 Flash，该模型目前位居 OpenRouter 总榜周榜第一名，同时也是 OpenClaw 调用量榜首。",
+  "mainPoints": [
+    {
+      "point": "阶跃星辰 StepClaw 率先完成微信生态适配",
+      "explanation": "用户可通过「阶跃 AI 桌面伙伴」安装 StepClaw，在微信 ClawBot 插件中连接后即可使用，实现即插即养即用。"
+    },
+    {
+      "point": "微信内可直接调用阶跃龙虾",
+      "explanation": "用户可在微信聊天界面中向阶跃龙虾发送指令，完成学习辅助、内容创作、信息查询等多样化任务。"
+    },
+    {
+      "point": "Step 3.5 Flash 模型位居 OpenRouter 周榜第一",
+      "explanation": "该模型是阶跃星辰推出的开源 Agent 基座模型，同时持续占据 OpenClaw 调用量榜首。"
+    }
+  ],
+  "keyQuotes": [
+    "StepClaw 搭载阶跃星辰 Step 3.5 Flash 模型，该模型是阶跃星辰最近推出的开源 Agent 基座模型，目前在 OpenRouter 总榜的周榜排名第一。",
+    "同时也持续位居 OpenClaw 调用量榜首，是全球用户最优选的小龙虾模型。"
+  ],
+  "tags": [
+    "阶跃星辰",
+    "StepClaw",
+    "微信生态",
+    "AI Agent",
+    "大模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 79,
+  "wordCount": 259,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774163341000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-22 07:09:01"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_2f0b4b74",
+  "title": "QCon London AI 编码现状：能力更强、成本更高、更危险的编码智能体",
+  "url": "https://www.infoq.com/news/2026/03/ai-coding-state/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-22 08:08:00",
+  "author": "Olimpiu Pop",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In her QCon London keynote, <a href=\"https://www.linkedin.com/in/birgittaboeckeler/\">Birgitta Böckeler</a>, Distinguished Engineer for AI-assisted Software Delivery at Thoughtworks, reflected on the changes in the AI coding space over the past year. She emphasised a shift from vibe coding to using autonomous coding agents or swarms of agents. According to her, two major concerns in the field are the worsening security landscape and the rising costs of agent-based development.</p>\n   <p>In the introductory part of her presentation, she reminded the audience about the state of AI coding just a year ago: \"Vibe coding was just two months old\", \"MCP was all the rage,\" and \"Claude Code was not even generally available yet.\" She highlighted that context engineering is probably the most significant development of the year. This context refers to the curated information a model or agent reads to improve its results. Last spring, it was limited to a single rules file (agents.md or claude.md) loaded at the start of each session to capture coding conventions and recurring pitfalls.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/ai-coding-state/news/2026/03/ai-coding-state/en/resources/21image2-1774156227046.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ai-coding-state/en/resources/21image2-1774156227046.png\" rel=\"share\"></p>\n   <p>Anthropic has since broken down this \"monolithic\" file into smaller <a href=\"https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview\">skills</a>, resulting in a more granular approach to coding capabilities. This enables a more pragmatic approach known as \"lazy loading,\" in which different sets of rules are loaded based on the task at hand. This not only improves organisation but also ensures that the limited context window fills more slowly. However, Böckeler pointed out that a \"fresh\" Claude Code session had already reached 15% capacity before any prompt was even given.</p>\n   <p>Böckeler emphasised that we are moving closer to \"hands-off\" coding, as these coding agents can now run unsupervised for up to 20 minutes. Headless CLI modes can directly connect to CI/CD pipelines via GitHub Actions. Some practitioners, following Steve Yegge's \"<a href=\"https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04#:~:text=Second%2C%20you%20are%20really%2C%20seriously,You%20aren't%20ready%20yet.\">eight stages of dev evolution to AI</a>\", run three or more local sessions in parallel; however, Böckeler noted her experience of \"typing the wrong thing into the wrong session.\"</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/ai-coding-state/news/2026/03/ai-coding-state/en/resources/15image3-1774156457259.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ai-coding-state/en/resources/15image3-1774156457259.png\" rel=\"share\"></p>\n   <p>An even more advanced approach involves using coding agent swarms. Though she argued that experiments from Cursor or Anthropic—where <a href=\"https://www.anthropic.com/engineering/building-c-compiler\">C compilers</a> or <a href=\"https://github.com/wilsonzlin/fastrender\">web browsers</a> were built in a few days by a \"team\" of coding agents—are somewhat skewed, as these tasks are well-defined and have extensive public test suites. This is usually not true for enterprise software. A more accessible entry point is <a href=\"https://code.claude.com/docs/en/agent-teams\">Claude Code's Agent Teams</a> feature, which orchestrates a small number of agents with a clear coordination model.</p>\n   <p>To ensure the appropriate level of supervision, she proposed a risk framework based on three variables: the probability that the AI will make a mistake, the impact of that mistake, and the detectability of the error. Only the first variable is genuinely novel: developing intuition for how well a tool can handle a given task. The other two are engineering judgments that experienced developers should already possess.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/ai-coding-state/news/2026/03/ai-coding-state/en/resources/22image1-1774156457259.png\" style=\"width: 798px; height: 538px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ai-coding-state/en/resources/22image1-1774156457259.png\" rel=\"share\"></p>\n   <p>Beyond simply generating functionally incorrect code, security incidents involving coding agents are now occurring weekly, with most rooted in prompt injection. Eleven days before the talk, an attacker used a crafted GitHub issue to extract secrets and upload malicious packages to an NPM registry. This was a direct result of an unsupervised agent operating without sufficient sandboxing. <a href=\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\">Simon Willison's lethal trifecta</a> defines that better: when an agent combines exposure to untrusted content, access to private data, and the ability to communicate externally, the risk becomes significant. For example, connecting an email with read-and-send permissions satisfies all three conditions.</p>\n   <blockquote>\n    <p><strong>Böckeler</strong>: Security is not a technical problem; it's a conceptual problem.</p>\n   </blockquote>\n   <p>In her conclusion, Böckeler noted that while model improvements are real, they are the least interesting developments compared to the shifts in tooling and practices surrounding them. An <a href=\"https://openai.com/index/harness-engineering/\">OpenAI team running a five-month autonomous greenfield project</a> still reported entropy creeping in, despite custom linters and garbage-collection agents. The main question she posed to the audience was, \"What practices will you enforce on your coding agent?\" Whether these practices are good or bad, AI coding will amplify them.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London AI Coding State of the Game: More Capable, More Expensive, More Dangerous Coding Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Olimpiu Pop\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/ai-coding-state/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774166880000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"6230\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Thoughtworks 杰出工程师 Birgitta Böckeler 在 QCon London 的主题演讲分析了 AI 编码从感觉编程到自主智能体的演变，强调了关键挑战：提示注入带来的安全威胁升级和开发成本上升。",
+  "oneSentenceSummary": "Thoughtworks 杰出工程师 Birgitta Böckeler 在 QCon London 的主题演讲分析了 AI 编码从感觉编程到自主智能体的演变，强调了关键挑战：提示注入带来的安全威胁升级和开发成本上升。",
+  "summary": "本文报道了 Birgitta Böckeler 在 QCon London 上关于 AI 编码现状的主题演讲。演讲涵盖三大转变：从感觉编程到自主编码智能体和智能体集群的演变，上下文工程的重大进展（从单一规则文件到具有延迟加载的精细化技能），以及新兴的安全和成本问题。Böckeler 提出了一个基于错误概率、影响和错误可检测性的风险框架。她强调，涉及编码智能体的安全事件现在每周都会发生，主要原因是提示注入攻击，并引用了 Simon Willison 的「致命三要素」概念。本文以对自主项目中熵增的讨论以及开发者将在编码智能体上强制执行什么实践这一关键问题作结。",
+  "mainPoints": [
+    {
+      "point": "上下文工程已从单一规则文件演变为具有延迟加载的精细化技能。",
+      "explanation": "Anthropic 的方法将单一的 agents.md 分解为更小的、针对特定任务的技能，按需加载，提高了组织性和上下文窗口效率，尽管即使是全新的 Claude Code 会话在任何提示之前就已达到 15% 的容量。"
+    },
+    {
+      "point": "AI 编码智能体的安全威胁每周都在升级，主要通过提示注入。",
+      "explanation": "攻击利用了「致命三要素」：不受信任的内容暴露、私有数据访问和外部通信能力。最近一起事件中，一个无人监督的智能体泄露了机密，并通过精心设计的 GitHub 问题上传了恶意 NPM 包。"
+    },
+    {
+      "point": "三变量风险框架有助于确定适当的智能体监督级别。",
+      "explanation": "该框架评估：错误概率（需要新直觉的新颖变量）、错误影响和错误可检测性。只有第一个变量是真正新的；其他两个是标准工程判断。"
+    },
+    {
+      "point": "智能体集群代表下一个前沿，但需要明确的协调模型。",
+      "explanation": "虽然 Cursor 和 Anthropic 的演示表明智能体可以在几天内构建编译器或浏览器，但这些任务有广泛的测试套件——企业软件通常缺乏这一点，使 Claude Code 的智能体团队成为更平易近人的切入点。"
+    },
+    {
+      "point": "AI 编码放大了现有实践，无论好坏。",
+      "explanation": "即使有自定义 linter 和垃圾回收智能体，OpenAI 的五个月自主项目也报告说熵在增加。开发者必须自觉决定在编码智能体上强制执行什么实践。"
+    }
+  ],
+  "keyQuotes": [
+    "安全不是技术问题；是概念问题。",
+    "当智能体结合了不受信任内容的暴露、私有数据的访问和外部通信能力时，风险变得显著。",
+    "你将在编码智能体上强制执行什么实践？无论这些实践是好是坏，AI 编码都会放大它们。",
+    "上下文工程可能是今年最重大的发展。",
+    "一个「全新」的 Claude Code 会话在任何提示给出之前就已达到 15% 的容量。"
+  ],
+  "tags": [
+    "AI 编码智能体",
+    "上下文工程",
+    "提示注入",
+    "安全风险",
+    "智能体集群"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 647,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774166880000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-22 08:08:00"
+}
