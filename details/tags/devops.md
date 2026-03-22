@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-23 00:04:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-23 02:05:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -422,9 +422,7 @@
 
 ### [AWS-扩展-Aurora-DSQL：推出-Playground、全新工具集成和驱动连接器](https://www.infoq.com/news/2026/03/aurora-dsql-playground-updates/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-22 08:59:00 | 标签: AWS Aurora DSQL, 无服务器数据库, PostgreSQL, 开发者工具, 云数据库
-
-> 亚马逊为 Aurora DSQL 推出了多项面向开发者的改进。Aurora DSQL Playground 是一个基于浏览器的沙盒环境，用户无需注册 AWS 账户即可测试架构和运行查询。新增集成包括 SQLTools 的 DSQL 驱动、DBeaver 的 DSQL 插件，以及对 Tortoise ORM、Flyway 和 Prisma 的支持。团队还发布了 Go（pgx）、Python（asyncpg）和 Node.js 的原生连接器，简化了基于 IAM 的身份验证。在 AI 驱动的开发方面，Aurora DSQL 现已与 Kiro 的 AI 智能体技能集成。引擎层面的改进包括对标识列和序列...
+2026-03-22 08:59:00
 
 
 

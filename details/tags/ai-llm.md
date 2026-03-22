@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-23 00:04:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-23 02:05:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11168,9 +11168,7 @@
 
 ### [用-AI-清退全部外包？网易回应；百度挖-DeepSeek-核心人才入职；曝宇树对外称弹性双休，内部是另一套规则，非常卷｜AI-周报](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247659393&idx=1&sn=91d18fbce29fa41f8c2dfb634ee152db)
 
-2026-03-22 05:31:00 | 标签: AI行业周报, 大模型动态, 企业人事, AI就业, 行业趋势
-
-> 本周 AI 行业动态密集，核心事件包括：百度引入 DeepSeek 核心技术人员（非郭达雅）；腾讯 AI Lab 撤销并入混元；宇树科技被曝加班严重；网易回应外包裁员传闻；Cursor 新模型被指套壳 Kimi K2.5 后联创承认基于开源模型；小米发布 MiMo-V2 系列大模型；阿里发布全球首个企业级 Agent 平台「悟空」；MiniMax 发布 M2.7 展示模型自我进化路径；智谱发布 GLM-5-Turbo 并涨价 20%；乐天 Rakuten AI 被扒抄袭 DeepSeek V3；戴尔裁员 11000 人；AI 算力存储产品涨价 5%-34%；AI 大厂月薪 3w 疯抢文科生。本...
+2026-03-22 05:31:00
 
 
 
@@ -11182,41 +11180,31 @@
 
 ### [闭环-Skills：让-Agents-自己设计-Agents](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247505530&idx=1&sn=1ced2a9cbef7c983d4ec7e8e0b500285)
 
-2026-03-22 02:38:00 | 标签: Memento-Skills, AI Agent, 部署时学习, 持续学习, 技能库
-
-> Memento-Skills 提出了一种全新的持续学习范式——部署时学习（Deployment-time learning），让 AI Agent 在部署后通过「经验」自我进化，而无需重新训练模型参数。其核心机制是 Read-Write Reflective Learning 封闭循环：读取相关技能、执行任务、反思并更新技能库。论文将技能（Skill）作为记忆的基本单元，每个技能包含声明式规范、可执行代码和提示模板。系统还训练了基于行为相似性的技能路由器，而非简单的语义相似性。实验在 GAIA 和 HLE 两个基准上验证了系统的有效性，测试集分别达到 66.0% 和 38.7% 的准确率，相比...
+2026-03-22 02:38:00
 
 
 
 ### [李宏毅：OpenClaw-从入门到精通（不跑路）](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247505530&idx=2&sn=e9813a2dfd947b16063083a79520785d)
 
-2026-03-22 02:38:00 | 标签: AI Agent, OpenClaw, 大语言模型, Agent原理, System Prompt
-
-> 文章转述了台湾大学李宏毅教授关于 OpenClaw 的教学内容，系统性地介绍了 AI Agent 与传统语言模型的核心差异。作者通过小金 AI 运营 YouTube 频道的实战案例，展示了 AI Agent 的自主行动能力，并深入讲解了语言模型「文字接龙」的本质、System Prompt 如何构建 Agent 人格、工具调用机制（Read/Write/Execute）、Prompt Injection 攻击与防御、Sub-Agent 外包机制、Skill 系统、长期记忆与心跳机制等核心技术原理。最 后强调了 AI Agent 的安全护栏建设，建议为 AI 分配独立账号和专用设备，避免对常用电...
+2026-03-22 02:38:00
 
 
 
 ### [被「央视新闻」采访，我又成了用-AI-搞「一人公司」的典型](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247489085&idx=1&sn=8040f690859b529b26f775bd80744753)
 
-2026-03-22 02:35:00 | 标签: AI编程, 一人公司, Vibe Coding, 手搓经济, Cursor
-
-> 本文是花叔被央视新闻采访后的完整 QA 访谈记录。花叔 2023 年从互联网大厂离职，成为「只工作不上班」的赛博个体户。他完全不懂编程，但利用 AI 编程工具（Cursor、Claude Code）在 1 小时内开发出「小猫补光灯」应用，成本仅几十元。该应用上架后获得大量用户反馈，他还开发了 Pro 版、小程序版和鸿蒙版本。文章深入探讨了「手搓经济」（Vibe Coding）的含义——用自然语言表达想法，AI 帮你实现代码。花叔认为 AI 降低了创业门槛，让非技术人员也能做产品，并分享了他对「从 0 到 1 容易，从 1 到 100 仍需功夫」的看法。
+2026-03-22 02:35:00
 
 
 
 ### [北邮-00-后-UP-主，早在-2023-年初就开发出了「龙虾」！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652685570&idx=1&sn=39199863a7ff9ed9bde4534473bafdac)
 
-2026-03-22 01:58:00 | 标签: AstrBot, OpenClaw, B站, AI Agent, 开源项目
-
-> 2026 年春天，OpenClaw 引爆 AI 圈，但在其爆火之前，B 站 UP 主 Soulter 已在 2023 年 1 月发布了 AstrBot——一个开源的 Agentic 聊天机器人编排平台。文章通过独家专访，清晰阐述了两者的技术定位差异：OpenClaw 更像开箱即用的个人助手，AstrBot 更像 Agent 编排器和开发框架。文章深度分析了 B 站独特的社区反馈机制：用户不只是「纯路人」，更像「一起做作业的人」，愿意认真讨论技术细节、部署方案和踩坑经验。截至 2026 年 3 月，AstrBot 已获得 2.6 万 Star、1800 多 Fork、234 位贡献者。文章最后指...
+2026-03-22 01:58:00
 
 
 
 ### [OpenAI-又摊上事了！大英百科状告-ChatGPT：查资料也算侵权](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652685570&idx=3&sn=c7f77fb24c1e02833b6e784f6972c262)
 
-2026-03-22 01:58:00 | 标签: OpenAI, 版权诉讼, 大英百科全书, ChatGPT, RAG
-
-> 3 月 16 日，大英百科全书联合韦氏词典对 OpenAI 提起诉讼，指控 ChatGPT 进行大规模版权侵权。Britannica 提出四层指控：未经许可抓取近 10 万篇内容用于训练、逐字复制输出 Britannica 内容、RAG 实时检索中使用 Britannica 文章构成侵权、以及《兰纳姆法》商标侵权。Britannica 认为 GPT-4 已记住其大量版权内容可逐字输出，斯坦福和耶鲁研究显示从主流大模型中提取《哈利·波特》原文提取率高达 96%。文章对比了德国慕尼黑法院认定模型权重嵌入歌词构成侵权、与英国 Getty Images 案得出相反结论的冲突，以及 Anthropic ...
+2026-03-22 01:58:00
 
 
 
@@ -32840,33 +32828,25 @@
 
 ### [从-0-到-1-微信接入-OpenClaw-小龙虾，图文教程来了](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247532383&idx=1&sn=fa95a6a8fbff7454c819f3eae40a9d5f)
 
-2026-03-22 07:34:00 | 标签: OpenClaw, 微信接入, AI 助手, 飞书配置, 小龙虾
-
-> 文章是一篇实操性教程，详细介绍了如何将 OpenClaw（小龙虾）接入微信。第一部分讲解原生 OpenClaw 的安装：通过 npm 全局安装、配置大模型 API（智谱/Kimi/MiniMax/Qwen 等）、配置飞书平台作为中间渠道，最后完成配对。第二部分介绍微信接入方法：安装 @tencent-weixin/openclaw-weixin-cli 插件，扫描二维码即可在微信中使用。同时文章还测试了 Markdown 支持、文件读取、文件发送、语音读取等功能的可用性，整体功能仍在完善中。
+2026-03-22 07:34:00
 
 
 
 ### [AI-两天推翻-20-年工作习惯！Karpathy-百行代码开源项目“封神”，AI-替你通宵肝研究、战绩可查](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=2&sn=d3a0862f34212d4d7ed04d05b2243ca4)
 
-2026-03-22 02:15:00 | 标签: AI Agent, Autoresearch, Karpathy, 大模型训练, 自动化研究
-
-> 本文介绍了 Karpathy 最近开源的 autoresearch 项目，该项目通过给 AI Agent 配备一个小型但真实可用的 LLM 训练环境，实现自主深度学习研究。项目仅 630 行 Python 代码，Agent 会自动修改代码、训练 5 分钟、检查效果并持续迭代。实测两天内完成 276 次实验，筛出 29 项有效改进，训练效率提升约 11%。Karpathy 更大的愿景是让 Agent 之间实现异步大规模协作，模拟一个由无数博士生组成的完整科研社群。目前全球开发者已在此基础上完成近 3000 次实验，有 82 项改进。
+2026-03-22 02:15:00
 
 
 
 ### [从提示词到生产环境上线：智能体开发指南](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=3&sn=df6623508d47ba34843ad8e6dc5dbaa9)
 
-2026-03-22 02:15:00 | 标签: 智能体AI, ReAct架构, LLM开发, 生产环境部署, AI编排模式
-
-> 文章基于 Abhishek Goswami 的实践指南，系统阐述了智能体 AI 应用的开发方法论。首先指出智能体 AI 是连接 LLM 核心技术（如 GPT-5、Claude Opus 4.1）与业务价值的桥梁，企业需掌握生产环境的开发与运营能力。核心内容覆盖四大架构模式：ReAct 智能体（推理-执行-观察循环）、监管者智能体（集中式规划）、分层智能体（多团队协调）、人工介入模式（人工审批节点）。文章提出了关键的能力矩阵方法，用于识别应用中适合智能体化与非智能体化的组件。编排模式方面，涵盖顺序、并发、分层三种主要方式，并给出 JPMorgan、Google 等企业案例。版本管理强调提示词需作...
+2026-03-22 02:15:00
 
 
 
 ### [Moltbook-新规太狠了：Agent-闯祸全算人类头上，免责条款拉满！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279368&idx=4&sn=7480f99e7cefcbb2504b94a17fc9d8b1)
 
-2026-03-22 02:15:00 | 标签: Moltbook, Meta, AI Agent, 服务条款, 平台责任
-
-> Moltbook 被 Meta 收购后更新服务条款，将原五条规则扩展为大量法律文本。新条款明确规定 AI Agent 不具备法律主体资格，用户需对 AI Agent 的全部行为承担个人责任。此外，平台新增 13 岁年龄限制，并声明不保证 AI 生成内容的准确性、可靠性，用户不得将其作为独立判断的替代品。Moltbook 源自 X 平台关于 AI Agent OpenClaw 的梗，被收购后仍要求 X 账号登录。
+2026-03-22 02:15:00
 
 
 
@@ -46326,17 +46306,13 @@ http://antirez.com/news/162
 
 ### [Cursor-套壳、黄仁勋坐上宾，DeepSeek-的光环现在都是-Kimi-的了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247626594&idx=1&sn=3612471b9c262508aa98482a6a215fc7)
 
-2026-03-22 03:09:00 | 标签: Kimi, Cursor, 月之暗面, DeepSeek, AI编程
-
-> 本文深入分析了近期 AI 编程工具 CursorComposer 2 使用 Kimi K2.5 作为底座模型引发的技术争议与商业博弈。事件起因于开发者发现 Composer 2 的真实模型 ID 指向 Kimi K2.5，而 Cursor 未在发布时明确标注底座来源，引发许可证争议。随后月之暗面官方确认双方存在授权合作。的文章还梳理了 Kimi 的“黄金一周”：发布 Attention Residuals 技术论文挑战 Transformer 基础架构、黄仁勋在 GTC 2026 主题演讲中提及 Kimi K2.5 作为标杆模型、杨植麟登上 GTC 分论坛演讲。文中分析指出，Kimi 正在全球...
+2026-03-22 03:09:00
 
 
 
 ### [xAI-派工程师上门服务，争夺-OpenAI-企业客户；雷军官宣：XiaomiMiMo-首周限免开放丨-AIGC-日报](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866723&idx=3&sn=c7c787f57f86718b7269286d3c1ec395)
 
-2026-03-22 01:05:00 | 标签: AIGC日报, AI万相, Cursor, xAI, 小米MiMo
-
-> 本期 AIGC 日报共收录 4 条 AI 领域重要资讯：1）阿里妈妈发布超级经营智能体引擎「AI 万相」，商家可通过指令完成全链路经营；2）CursorComposer 2 被曝基于 Kimi K2.5 训练，Cursor 联合创始人发文致歉；3）xAI 采取上门服务策略争夺 OpenAI 企业客户，已赢得支付公司 Shift4；4）雷军宣布小米 MiMo 联合五大主流 Agent 框架首周限免开放。内容覆盖国内 AI 产品动态、国际 AI 工具竞争格局及 AI 企业市场策略。
+2026-03-22 01:05:00
 
 
 
