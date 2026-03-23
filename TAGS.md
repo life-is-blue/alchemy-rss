@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-23 06:03:33 | [返回首页](/README.md)
+**更新时间**: 2026-03-23 08:11:53 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10302)
+- [AI & 大模型](#ai-llm) (10311)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (732)
 - [DevOps](#devops) (455)
 - [产品与商业](#product-business) (35)
-- [其他](#other) (5183)
+- [其他](#other) (5184)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [现代-LLM-中注意力机制变体的可视化指南](https://magazine.sebastianraschka.com/p/visual-attention-variants) - AI 精选
 - [针对数据中心的攻击、各尺寸的-Qwen3.5、DeepSeek-的华为布局，等等...](https://www.deeplearning.ai/the-batch/issue-345) - AI 精选
 - [分享-10-个你可能不知道的-Claude-Code-隐藏命令。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680919&idx=1&sn=95032bfc6270f229e713598805d26ebf) - AI 精选
 - [介绍-LangSmith-Fleet](https://blog.langchain.com/introducing-langsmith-fleet/) - AI 精选
@@ -41,9 +42,8 @@
 - [PlugMem：一个适用于各类-AI-智能体任务的通用记忆系统](https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/) - AI 精选
 - [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5) - AI 精选
 - [我们如何构建-LangChain-的-GTM-智能体](https://blog.langchain.com/how-we-built-langchains-gtm-agent/) - AI 精选
-- [阿里巴巴通义实验室开源-Mobile-Agent-v3.5：一套真正“多平台可用”的原生-GUI-Agent-基座模型](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247505704&idx=1&sn=1c35976b09438693364779ba2f65e252) - AI 精选
 
-- [查看全部 10302 篇...](/details/tags/ai-llm.md)
+- [查看全部 10311 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5183 篇...](/details/tags/other.md)
+- [查看全部 5184 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_4738435c",
+  "title": "MiniMax Skills 精选开源：MaxClaw 支持多 Agent 协作与沙箱 root 权限升级",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488166&idx=1&sn=b631dfcb37fc2a040a5dd3134e8dc834",
+  "date": "2026-03-22 02:56:00",
+  "author": "MiniMax 稀宇科技",
+  "siteName": "MiniMax 稀宇科技",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"font-size: 1rem;\">🅿️1️⃣-2️⃣ Skills 社区上线，「PPT制作」「PDF编辑」等优质 Skill 已开源！</span></p>\n  <p></p>\n  <p>精选上百种 Skills，涵盖开发、学习、办公及内容创作等多场景，用户可在 MaxClaw 或 MiniMax Agent 对话中一键添加，如用户创建并上传的 Skill 被使用可另获积分奖励。</p>\n  <p>我们本周开源了「iOS/Android 应用开发」、「GIF 表情包设计」、「GLSL 着色器技术」以及基于 MiniMax M2.7 创建的「PPT制作」、「PDF编辑」等多款 Skill，欢迎开发者下载使用。基于最佳实践，我们会持续开源更多的优质 Skill，让业内实现通用共享。</p>\n  <p>开源链接：github.com/MiniMax-AI/skills/tree/main/skills</p>\n  <p>🅿️3️⃣ 一个账号，三只龙虾！</p>\n  <p></p>\n  <p>MaxClaw 支持同时部署多个龙虾：可自定义命名与设定，支持工作流拆分、多角色协作，更多玩法等你探索。</p>\n  <p>🅿️4️⃣ “龙虾医生”随时在线</p>\n  <p></p>\n  <p>通过 MiniMax Agent 桌面端部署本地 OpenClaw 时，会预置多款「安全诊断 Skill」，减少 OpenClaw 高危操作风险，并能根据 OpenClaw 报错提示自主诊断修复。</p>\n  <p>🅿️5️⃣-6️⃣ MaxClaw 沙箱服务升级，稳定性全面优化</p>\n  <p></p>\n  <p>MaxClaw 新环境支持 root 权限，用户可自由安装依赖库与浏览器，用户也可在 OpenClaw 框架更新时自行升级，灵活度拉满。</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=3adc649b&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FUqLjwjsK1PeSRI3ohaNZb1RHSwLoaQeHQicLibPAQXiadaMFLia6ffokArH0s5TX9cDoYtdW9JGdwiaZZNxtvAQcF8TvIyc23pdIiaia8pY36XY7cU%2F0%3Fwx_fmt%3Dgif\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=c1fc61e6&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FUqLjwjsK1PcuXnE9aKibELCL9rwbhj5GWRmk3FogFHEg01ofDauuictpPKjcym03AXC9r5sUrsyONbGPibEibhZiaQBgiaVCibMxv5BiahLXq3nBzcY%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=41d057e0&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FUqLjwjsK1PfQvnP4qbnASlcGicvIaoibmyQzoic8BHQeEbVwg0pSxgicThibR2icjrnDsG5DMDFKhvhY2ORQiaicPhFuQQBU7ibqCfElRamZOxXlODGc%2F0%3Fwx_fmt%3Dgif\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=d998ff3b&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_gif%2FUqLjwjsK1Pe39nybX8RojgKK12fVNU6EwFAokFI6WVguURhk1icjgbDicTbuyH7YK1Eib6Jtd688Ef6m2Q9pAjwrO7qgwVibskecGEH0uAtxhYk%2F0%3Fwx_fmt%3Dgif\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=94d080ec&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FUqLjwjsK1PfAcT8gavjuMmnUtVRNKDiaswfZOE0UHo9gxe5gEMY69SicdFLNc32gwd4gxsc9RByvIZAxv3Rt2KCu0oTHmuEcPC9LZeia8DPBh0%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=e8451bea&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FUqLjwjsK1Pc1Mrk8srft4tZkTMhHDia9g3UfuNKMJ1uxdvErqFHzl7XOVxwbDLJMpfFDaHhxZrMicsZoqMV6GlXle09AU2L7wTia9VJ56u6Db0%2F0%3Fwx_fmt%3Djpeg\"></p>\n </body>\n</html>",
+  "aiSummary": "MiniMax 宣布开源 Skills 社区多项优质技能，并升级 MaxClaw 平台，支持多 Agent 协作部署、安全诊断及沙箱 root 权限。",
+  "oneSentenceSummary": "MiniMax 宣布开源 Skills 社区多项优质技能，并升级 MaxClaw 平台，支持多 Agent 协作部署、安全诊断及沙箱 root 权限。",
+  "summary": "本文介绍了 MiniMax 稀宇科技在 AI Agent 领域的最新进展。核心内容包括：1. Skills 社区上线并开源了包括 PPT 制作、PDF 编辑、应用开发在内的上百种技能，旨在推动业内通用共享；2. MaxClaw 平台支持同时部署多个自定义命名的 Agent（龙虾），实现工作流拆分与多角色协作；3. 推出「龙虾医生」安全诊断技能，降低 OpenClaw 高危操作风险并支持自主诊断修复；4. MaxClaw 沙箱服务升级，支持 root 权限和自定义依赖安装，显著提升了开发灵活性与环境稳定性。",
+  "mainPoints": [
+    {
+      "point": "Skills 社区正式上线并开源多项实用技能。",
+      "explanation": "涵盖办公、开发、创作等场景，支持一键添加到 MaxClaw 或 MiniMax Agent，通过开源最佳实践促进业内资源共享。"
+    },
+    {
+      "point": "MaxClaw 支持多实例部署与多角色协作。",
+      "explanation": "用户可同时部署多个自定义命名的 Agent，支持复杂工作流的拆分，探索多 Agent 协同作业的新玩法。"
+    },
+    {
+      "point": "引入「龙虾医生」安全诊断机制。",
+      "explanation": "在桌面端部署 OpenClaw 时预置安全诊断 Skill，能根据报错提示自主诊断修复，有效降低高危操作风险。"
+    },
+    {
+      "point": "沙箱服务升级提供 root 权限等更高自由度。",
+      "explanation": "新环境允许用户自由安装依赖库、浏览器，并支持在框架更新时自行升级，极大优化了开发者的自定义空间。"
+    }
+  ],
+  "keyQuotes": [
+    "精选上百种 Skills，涵盖开发、学习、办公及内容创作等多场景，用户可在 MaxClaw 或 MiniMax Agent 对话中一键添加。",
+    "MaxClaw 支持同时部署多个龙虾：可自定义命名与设定，支持工作流拆分、多角色协作。",
+    "MaxClaw 新环境支持 root 权限，用户可自由安装依赖库与浏览器，用户也可在 OpenClaw 框架更新时自行升级，灵活度拉满。"
+  ],
+  "tags": [
+    "MiniMax",
+    "AI Agent",
+    "MaxClaw",
+    "开源项目",
+    "Skills 社区"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 460,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_39cbd7",
+  "sourceName": "MiniMax 稀宇科技",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774148160000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-22 02:56:00"
+}
