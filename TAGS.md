@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-24 04:10:40 | [返回首页](/README.md)
+**更新时间**: 2026-03-24 06:06:39 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10317)
+- [AI & 大模型](#ai-llm) (10329)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (732)
-- [DevOps](#devops) (455)
+- [前端与全栈](#frontend-fullstack) (733)
+- [DevOps](#devops) (457)
 - [产品与商业](#product-business) (35)
-- [其他](#other) (5186)
+- [其他](#other) (5189)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [快速正则搜索：为智能体工具建立文本索引-·-Cursor](https://cursor.com/blog/fast-regex-search) - AI 精选
 - [现代-LLM-中注意力机制变体的可视化指南](https://magazine.sebastianraschka.com/p/visual-attention-variants) - AI 精选
 - [针对数据中心的攻击、各尺寸的-Qwen3.5、DeepSeek-的华为布局，等等...](https://www.deeplearning.ai/the-batch/issue-345) - AI 精选
 - [分享-10-个你可能不知道的-Claude-Code-隐藏命令。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680919&idx=1&sn=95032bfc6270f229e713598805d26ebf) - AI 精选
@@ -41,9 +42,8 @@
 - [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
 - [PlugMem：一个适用于各类-AI-智能体任务的通用记忆系统](https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/) - AI 精选
 - [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5) - AI 精选
-- [我们如何构建-LangChain-的-GTM-智能体](https://blog.langchain.com/how-we-built-langchains-gtm-agent/) - AI 精选
 
-- [查看全部 10317 篇...](/details/tags/ai-llm.md)
+- [查看全部 10329 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -80,6 +80,7 @@
 
 
 - [2025-年顶级-Web-测试和数据提取的-9-大浏览器自动化工具](https://www.firecrawl.dev/blog/browser-automation-tools-comparison-2025) - AI 精选
+- [TypeScript-6.0-发布公告---TypeScript](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0) - 编程 精选
 - [【第-3636-期】深度解读：React-+-Next.js-打造高性能-Web-应用的实战经验](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278350&idx=1&sn=b0ed516b541595cacb1742bf2aa5aedd) - 编程 精选
 - [【第-3629-期】2025-版现代-Node.js-开发模式](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278227&idx=1&sn=15f7d73db285cdb284e2a5bfd0aee702) - 编程 精选
 - [本年度最具影响力的开源项目](https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/) - 编程 精选
@@ -98,9 +99,8 @@
 - [剖析-Cloudflare-Workers-CPU-性能基准测试](https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/) - 编程 精选
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
-- [Cloudflare-数据平台发布：直接在-Cloudflare-上进行数据摄取、存储与查询](https://blog.cloudflare.com/cloudflare-data-platform/) - 编程 精选
 
-- [查看全部 732 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 733 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 455 篇...](/details/tags/devops.md)
+- [查看全部 457 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5186 篇...](/details/tags/other.md)
+- [查看全部 5189 篇...](/details/tags/other.md)
 
 

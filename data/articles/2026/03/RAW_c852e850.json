@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c852e850",
+  "title": "两种不同的智能体授权类型",
+  "url": "https://blog.langchain.com/two-different-types-of-agent-authorization/",
+  "date": "2026-03-23 17:29:28",
+  "author": "LangChain Accounts",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We launched <a href=\"https://blog.langchain.com/introducing-langsmith-fleet/\" rel=\"noopener noreferrer nofollow\">LangSmith Fleet</a> last week as a way to build, use, and manage agents. A key part of this launch was the introduction of two different types of agent authorization.</p>\n  <p>Agent authorization refers to what the agent is authorized to do. When an agent calls a Slack tool - who does it <em>authenticate</em> as before pulling the data?</p>\n  <h2 id=\"on-behalf-of\">On-behalf-of</h2>\n  <p>The standard way that most people thought of agents until recently is that they operate “on-behalf-of” a user.</p>\n  <p>Let’s imagine an onboarding agent with access to Notion and Rippling. When Alice interacts with it, it should be able to look up information about Alice in Rippling and see all pages in Notion that Alice has access to. Alice should not be able to use this onboarding agent to look up any private information about Bob in Rippling, or see any private Notion pages Bob might have. When Bob uses the onboarding agent, he should be able to access all his information in Rippling and all his private pages in Notion, but not Alice’s.</p>\n  <p>In order to implement this, you need a few things. You need a way to know who is using the agent - is it Alice or is it Bob? You then need to map those user IDs to some auth credentials that are passed into tools at runtime.</p>\n  <h2 id=\"then-came-openclaw\">Then came OpenClaw</h2>\n  <p>On-behalf-of was the primary way that people thought of agents until OpenClaw came around. With OpenClaw, Alice would create an agent. Maybe she would be the only one to use that agent (in which case this auth distinction would not matter much). But maybe she would expose to others, through different channels (like text or email or Twitter).</p>\n  <p>When others interacted with that agent, it didn’t use the credentials of the end user - it used the authorization that Alice had given it.</p>\n  <p>Sometimes this could be Alice’s own credentials, but that might not be that desirable. If the agent had Alice’s credentials, it could look up anything in Notion that Alice had access to. That might include private documents that he may not want others to be able to ask the agent about.</p>\n  <p>This lead to people creating dedicated accounts in Notion, Rippling, etc specifically for that agent, so they could control what that agent had access to. Everyone interacting with that agent would then effectively be using the same set of credentials.</p>\n  <h2 id=\"langsmith-fleet\">LangSmith Fleet</h2>\n  <p>When launching LangSmith Fleet, we saw that people wanted both types of agents. Sometimes they wanted to create an agent and let others use it with their own credentials, other times they would want that agent to have its own fixed set of credentials. We added two different types of agents, which mapped to these two types of authorization:</p>\n  <ul>\n   <li>Assistants: act “on-behalf-of” their end user</li>\n   <li>Claws: have their own fixed credentials</li>\n  </ul>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://blog.langchain.com/content/images/2026/03/Fleet-agent-identity.png\" class=\"kg-image\" alt=\"Agent identity\" loading=\"lazy\" width=\"658\" height=\"274\" srcset=\"https://blog.langchain.com/content/images/size/w600/2026/03/Fleet-agent-identity.png 600w, https://blog.langchain.com/content/images/2026/03/Fleet-agent-identity.png 658w\">\n  </figure>\n  <p>We also added the concept of channels (Slack, Gmail, Outlook, and Teams to start) and sharing of agents. Assistants and Claws support different channels. In order for Assistants to be shared, we have to have a mapping of an end user in that channel (e.g. their Slack user ID) to their LangSmith ID. So right now Assistants are only available in a subset of channels where we support that mapping.</p>\n  <p>Channels and these different authorization types also highlight the need for human in the loop. If you are creating an agent with a fixed set of credentials, and exposing it via a channel. You are opening it up to be used in a variety of ways. If that agent can take actions that may potentially be dangerous or sensitive, you might want to use some “human-in-the-loop” guardrails to ensure that those actions are gated.</p>\n  <h2 id=\"examples\">Examples</h2>\n  <p>To make this concrete, let’s take a look at a few of the real agents we’ve created and their authorization types.</p>\n  <p><strong>Onboarding Agent</strong>: Assistant. Has access to Slack and Notion, and is exposed in Slack. Uses the end user’s Slack and Notion credentials.</p>\n  <p><strong>Email Agent</strong>: Claw. This agent responds to incoming emails. Regardless of who is emailing, this agent will look at my calendar to determine meeting availability and attempt to respond on my behalf. Sending emails and calendar invites is gated behind a human-in-the-loop guardrail.</p>\n  <p><strong>Product agent</strong>: Claw. This agent monitors competitors and help with product questions and roadmap. It has it’s own Notion account and is exposed via a custom Slack bot.</p>\n  <h2 id=\"future-work\">Future work</h2>\n  <p>We’re excited to rollout these two different agent types in LangSmith Fleet. We think this is just the start, however, of agent authorization. Read <a href=\"https://workos.com/blog/agents-need-authorization-not-just-authentication?ref=blog.langchain.com\" rel=\"noopener noreferrer nofollow\">this blog from WorkOS</a> on some potential future directions.</p>\n  <p>We’re also excited to follow up this work with more granular memory permissions. Depending on which agent type (Assistants or Claws) you may want memory to be handled differently. For example, you probably don’t want an assistant remembering sensitive things about Alice that it can use in a chat with Bob. Right now, we manage this with access permissions. When you share an agent, you choose whether other users can edit it, including its memory. In the future, we will introduce user specific memory.</p>\n  <p><a href=\"https://smith.langchain.com/agents?skipOnboarding=true&amp;ref=blog.langchain.com\" rel=\"noopener noreferrer nofollow\">Try out LangSmith Fleet today</a>.</p>\n </body>\n</html>",
+  "aiSummary": "LangChain 在 LangSmith Fleet 中引入了两种智能体授权模型：Assistants（代表特定用户行事）和 Claws（使用固定凭据执行自主任务）。",
+  "oneSentenceSummary": "LangChain 在 LangSmith Fleet 中引入了两种智能体授权模型：Assistants（代表特定用户行事）和 Claws（使用固定凭据执行自主任务）。",
+  "summary": "本文详细介绍了 LangSmith Fleet 的发布及其在智能体授权方面的专业方案，解决了智能体在访问 Slack 或 Notion 等工具时如何进行身份验证这一关键问题。文章区分了两种主要模式：“Assistants”和“Claws”。Assistants 基于“代表（on-behalf-of）”模式运行，将最终用户的身份映射到其特定凭据，以确保严格的数据隐私和访问控制。相比之下，Claws 使用一组固定凭据，使其能够作为独立实体执行诸如电子邮件管理或产品监控等任务。文章强调了对于 Claws 执行的敏感操作，设置“人在回路（human-in-the-loop）”护栏的重要性，并概述了未来在细粒度、用户特定记忆权限方面的发展，以防止不同用户在与同一智能体交互时发生数据泄露。",
+  "mainPoints": [
+    {
+      "point": "“代表（On-behalf-of）”模型（Assistants）确保了用户级的数据隔离。",
+      "explanation": "通过在运行时将最终用户 ID 映射到特定的身份验证凭据，Assistants 只能访问特定用户有权查看的数据，从而防止跨用户数据泄露。"
+    },
+    {
+      "point": "“固定凭据”模型（Claws）实现了自主和共享的智能体功能。",
+      "explanation": "Claws 使用专用账户执行任务，无论触发者是谁，这非常适合面向公众的智能体或系统级监控。"
+    },
+    {
+      "point": "对于具有固定凭据的智能体，人在回路（human-in-the-loop）的护栏至关重要。",
+      "explanation": "由于 Claws 在不同用户之间使用一致的权限集运行，因此必须通过人工审批来控制敏感或危险的操作，以确保安全。"
+    },
+    {
+      "point": "未来的智能体架构需要细粒度的记忆权限。",
+      "explanation": "为了防止智能体将来自一个用户会话的敏感信息共享给另一个用户，开发者必须实现用户特定的记忆管理。"
+    }
+  ],
+  "keyQuotes": [
+    "智能体授权是指智能体被授权做什么。当智能体调用 Slack 工具时——在拉取数据之前，它以谁的身份进行身份验证？",
+    "Assistants：代表（on-behalf-of）其最终用户行事；Claws：拥有自己固定的凭据。",
+    "如果该智能体可以采取可能具有危险性或敏感性的操作，你可能需要使用一些“人在回路（human-in-the-loop）”护栏，以确保这些操作受到管控。",
+    "未来，我们将引入用户特定的记忆功能。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "LangChain",
+    "LangSmith Fleet",
+    "智能体授权",
+    "LLM 安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 89,
+  "wordCount": 854,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774286968000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-23 17:29:28"
+}
