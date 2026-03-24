@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-24 22:25:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-25 00:21:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3427,41 +3427,31 @@
 
 ### [你的模型真的会“举一反三”吗？RoboChallenge-Table30-V2-正式发布](https://www.qbitai.com/2026/03/391744.html)
 
-2026-03-24 08:33:52 | 标签: 具身智能, RoboChallenge, Table30 V2, 泛化评测, 零样本学习
-
-> 文章详细介绍了具身智能评测基准 RoboChallenge Table30 V2 的发布及其核心改进。针对具身智能模型在单任务精调中容易产生的过拟合问题，Table30 V2 从任务、评测、系统三个维度进行了深度重构：任务层面引入了软体处理、工具使用及双臂协作等高难度场景；评测层面全面转向多任务范式，并引入零样本（Zero-shot）与域外（OOD）泛化测试；系统层面则通过硬件扩容实现了 300% 的吞吐量提升。该基准将作为 CVPR 2026 Workshop 竞赛的首秀平台，旨在推动具身智能从单点突破走向全维泛化。
+2026-03-24 08:33:52
 
 
 
 ### [PrismAudio：声画同频，音效随行](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500130&idx=1&sn=6b7e94fffe2dc0aaf8e515e49d966a9c)
 
-2026-03-24 07:34:00 | 标签: PrismAudio, 视频生成音频, 强化学习, 思维链, Fast-GRPO
-
-> PrismAudio 是由通义实验室推出的首个将强化学习（RL）与思维链（CoT）结合的视频生成环境音（V2A）框架。该研究针对传统模型在音画同步、音质及空间感上「顾此失彼」的问题，提出了「先思考，再发声」的策略。模型首先通过分解式思维链生成涵盖语义、时序、美学和空间的详细笔记，再由音频生成模型执行。同时，引入四种专门的奖励函数进行多维度打分，并利用创新的 Fast-GRPO 算法解决了扩散模型强化学习训练效率低下的瓶颈。实验表明，PrismAudio 在 VGGSound 等基准测试中达到 SOTA 水平，且模型轻量、生成速度快，目前已在 ICLR 2026 发表并全面开源。
+2026-03-24 07:34:00
 
 
 
 ### [又一华为天才少年入局具身创业！用视频生成数据训家用机器人，首个模型登顶具身基模榜单](https://www.qbitai.com/2026/03/391668.html)
 
-2026-03-24 06:05:17 | 标签: 具身智能, 华为天才少年, 诺因智能, 视频生成, 家用机器人
-
-> 本文报道了华为天才少年周凯文加入具身智能初创公司「诺因智能」担任合伙人的深度动态。诺因智能成立于 2025 年，在半年内完成三轮融资，估值超 20 亿元。公司避开了主流的工业场景，直击复杂度极高的 ToC 家庭消费场景。技术上，诺因智能采用先锋的生成式数据引擎 KnowinDream，通过视频生成技术合成海量训练数据，解决了具身智能领域真实数据匮乏的痛点。其自研的 KNOWIN 具身基础模型架构实现了云端大脑决策与边缘端执行的闭环。目前，其 KnowinBrain 模型已在权威评测榜单 Embodied Arena 中位列总榜第一，展示了在复杂动态环境下的强泛化能力。
+2026-03-24 06:05:17
 
 
 
 ### [科研数据不再碎片化！ResearchArcade：一张可计算图连起整个科研世界](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686218&idx=3&sn=4827aa3a749c40d5d0954fcb682f8ac3)
 
-2026-03-24 03:58:00 | 标签: ResearchArcade, 科研智能体, 知识图谱, ArXiv, OpenReview
-
-> 本文介绍了 UIUC Jiaxuan You 教授团队开发的 ResearchArcade 项目。该项目旨在解决科研数据分散、高价值结构（如图表、引用）被忽视以及缺乏动态演化信息等痛点。ResearchArcade 将 ArXiv 论文、OpenReview 评审、图表、代码及版本修订记录整合为一个异构动态图，支持 SQL、CSV 和 JSON 格式。研究者提出了「识别目标实体」和「提取邻域子图」的两步范式来统一定义学术任务。实验证明，该图结构能显著提升模型在引用预测、段落生成、修改定位等任务上的表现，为下一代科研智能体（Research Agents）的开发奠定了数据基础。
+2026-03-24 03:58:00
 
 
 
 ### [发布：datasette-files-0.1a2](https://simonwillison.net/2026/Mar/23/datasette-files/#atom-everything)
 
-2026-03-23 23:06:38 | 标签: Datasette, SQLite, Python, 开源, 数据工程
-
-> datasette-files 插件（版本 0.1a2）的此次发布显著增强了 Datasette 内的文件管理能力。主要更新包括：集成了 Datasette 1.0a26 的新 column_types 系统，新增了用于文件操作的插件钩子（plugin hook），以及将 CSV/TSV 文件直接导入数据表的功能。此外，该更新还提供了通过 JSON API 进行批量上传的 UI，并实现了图像自动缩略图生成功能，缩略图存储在专门的内部表中。
+2026-03-23 23:06:38
 
 
 
@@ -11861,17 +11851,13 @@
 
 ### [如何在-Python-中使用命令模式](https://www.freecodecamp.org/news/how-to-use-the-command-pattern-in-python/)
 
-2026-03-23 21:08:03 | 标签: Python, 设计模式, 命令模式, 面向对象编程, 软件架构
-
-> 本教程全面介绍了 Python 中的命令（Command）行为型设计模式。文章解释了如何将请求转换为独立的对象，从而将操作的调用者与执行操作的接收者解耦。通过文本编辑器作为案例研究，文章演示了基础命令接口以及 InsertCommand 和 DeleteCommand 等具体类的实现。此外，还探讨了诸如维护历史栈以实现撤销功能以及创建宏命令（MacroCommands）以批量执行多个操作等高级概念，最后对何时应用此模式与保持代码简洁性进行了平衡分析。
+2026-03-23 21:08:03
 
 
 
 ### [如何使用-MLflow-管理机器学习生命周期](https://www.freecodecamp.org/news/how-to-use-mlflow-to-manage-your-machine-learning-lifecycle/)
 
-2026-03-23 18:52:44 | 标签: MLflow, MLOps, 机器学习生命周期, 实验追踪, 模型注册中心
-
-> 本文探讨了由 Databricks 开发的开源平台 MLflow，用于管理端到端的机器学习生命周期。它通过引入结构化框架，解决了机器学习开发中常见的“有组织的混乱”问题。作者详细介绍了四个主要组件：用于记录实验的 MLflow Tracking，通过环境打包确保可复现性的 MLflow Projects，用于标准化部署格式的 MLflow Models，以及用于版本控制和治理的 Model Registry。通过解释客户端-服务器架构并提供实用的代码示例，本指南展示了 MLflow 如何从本地实验扩展到协作生产环境。
+2026-03-23 18:52:44
 
 
 
@@ -31201,11 +31187,11 @@
 
 
 
-### [同样的模型，为什么-Cursor-跑不过-Claude-Code？](https://baoyu.io/blog/2026-02-23/claude-code-vs-cursor)
+### [Cursor-设计负责人：只会画按钮的设计师，有麻烦了](https://baoyu.io/blog/2026-02-21/cursor-ryo-lu-design-team)
 
-2026-02-24T00:00:00.000Z
+2026-02-22T03:46:14.000Z
 
-> 同样的 Claude 模型，在 Cursor 和 Claude Code 里效果差很多。问题不在模型，而在上下文管理、使用场景和数据飞轮三个结构性差异。当编程从「人写代码」变成「人指挥 Agent 写代码」，原生 CLI 工具天然比 IDE 里长出来的 Agent 更有优势。
+> Cursor 设计负责人 Ryo Lu 在访谈中谈到：4 人设计团队如何管理 293 亿美元产品、用 Cursor 构建 Cursor 的递归飞轮、最强程序员也只能同时管 4 个 Agent、以及为什么 Cursor 不想做代码编辑器。
 
 
 

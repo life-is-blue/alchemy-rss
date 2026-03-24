@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-24 22:25:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-25 00:21:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11174,9 +11174,7 @@
 
 ### [AI-新闻-Dreamer-加入-Meta-超级智能实验室-——-个人超级智能的-9-个月回顾](https://www.latent.space/p/ainews-dreamer-joins-meta-superintelligence)
 
-2026-03-24 06:50:57 | 标签: Meta, 个人超级智能, Claude, 计算机使用, AI 智能体
-
-> 本期 AI 新闻报道了 Meta 超级智能实验室对 Dreamer 团队的“人才收购”（execuhire），此举符合马克·扎克伯格关于个人 AI 智能体的宣言，即该智能体能够深入理解并执行用户目标。除了此次收购，本文还对近期的 AI 里程碑进行了密集的深度梳理：Anthropic 推出的用于桌面自动化的 Claude “计算机使用”（computer use）功能、智能体技术栈向长期并行工作流（如 Hermes、T3 Code）的演进，以及在自我改进元程序（Hyperagents）和简化版 JEPA 风格世界模型（LeWorldModel）方面的重大研究。此外，文章还强调了文档解析和代码库级...
+2026-03-24 06:50:57
 
 
 
@@ -11188,9 +11186,7 @@
 
 ### [流式专家（Streaming-experts）](https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything)
 
-2026-03-24 05:09:03 | 标签: LLM, 混合专家模型, MoE, 本地 AI, 硬件优化
-
-> Simon Willison 分享了关于“流式专家”方法的最新进展，这是本地 LLM 执行的一项突破。该技术允许 RAM 有限的硬件运行大型混合专家（MoE）模型，方法是在处理每个 token 时，仅从 SSD 动态加载必要的专家权重。最近的里程碑包括在 96GB MacBook Pro 上运行 1 万亿参数的 Kimi K2.5 模型，以及在 iPhone 上运行 Qwen3.5-397B 模型。社区正在持续优化这一工作流程，以提高大规模模型在边缘设备上的性能和可访问性。
+2026-03-24 05:09:03
 
 
 
@@ -11202,17 +11198,13 @@
 
 ### [2026-全球开发者先锋大会（GDPS）上海开幕：聚焦-OpenClaw-实战与一人公司创业](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686218&idx=1&sn=14886ca482734de53ce8230a97c1d8a0)
 
-2026-03-24 03:58:00 | 标签: 2026 全球开发者先锋大会, OpenClaw, 一人公司, 超级创业者, AIGC
-
-> 本文介绍了即将于 2026 年 3 月 27 日至 29 日在上海徐汇举办的「2026 全球开发者先锋大会」。大会以「宁智毋庸，创领未来」为主题，重点展示 OpenClaw（龙虾）智能体的实操部署，并为开发者提供千万 Token 资源。内容涵盖 AIGC 创作训练营、超级创业者（SE）创新大赛、一人公司（OPC）商业化指南以及 AI 产品出海私董会。此外，大会还邀请了经济学家黄奇帆等大咖分享科创生态，并设有机器人、AI 硬件等互动体验区，旨在构建从技术研发到产业落地的全链路生态。
+2026-03-24 03:58:00
 
 
 
 ### [马斯克官宣-1-万亿瓦芯片计划，红杉合伙人力挺：xAI-会赢！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686218&idx=2&sn=e9abd77326e95cc76d1922f96553d9f5)
 
-2026-03-24 03:58:00 | 标签: 马斯克, xAI, Terafab, 算力基础设施, 物理智能
-
-> 文章聚焦马斯克最新宣布的「Terafab」芯片工厂计划，目标是实现每年 1 太瓦（TW）的算力。红杉资本合伙人 Shaun Maguire 力挺 xAI，认为市场严重低估了马斯克作为「技术组织者」识别技术拐点的能力。文章指出，xAI 的策略是先确保算力支配地位，再发力模型与产品。马斯克的 AGI 蓝图由 SpaceX 的空间算力与现金流、Tesla 的物理智能（Optimus）以及 xAI 的数字智能共同构成。核心观点认为，AI 的主战场正从聊天机器人转向现实世界的物理智能系统，而马斯克凭借其全产业链的垂直整合能力，正处于领先地位。
+2026-03-24 03:58:00
 
 
 
@@ -11230,33 +11222,25 @@
 
 ### [龙虾史上最大升级！但接了微信的千万别更](https://www.qbitai.com/2026/03/391520.html)
 
-2026-03-24 01:24:05 | 标签: OpenClaw, AI Agent, 插件系统, SSH 沙盒, GPT-5.4
-
-> 本次更新被誉为 OpenClaw 史上最大升级，核心变化包括：插件系统全面转向新版 `openclaw/plugin-sdk` 并优先通过 ClawHub 分发，彻底移除旧版 API；安全方面新增原生 SSH 沙盒支持、执行审批穿透逻辑及 SecretRef 密钥引用；模型能力同步支持 GPT-5.4 系列、MiniMax M2.7 及 GLM 4.5/4.6 等最新模型。此外，系统引入了 `/btw` 快速问答、UI 圆角调节及冷启动性能优化。然而，由于强化了对非官方插件的拦截，导致包括微信 ClawBot 在内的部分第三方插件出现兼容性故障，建议依赖此类插件的用户谨慎升级。
+2026-03-24 01:24:05
 
 
 
 ### [来自-Neurotica-的一段引语](https://simonwillison.net/2026/Mar/23/neurotica/#atom-everything)
 
-2026-03-23 23:31:45 | 标签: AI Slop, 生成式 AI, 沟通礼仪, 生产力, AI 伦理
-
-> 这篇来自 Simon Willison 的精选文章为生成式 AI 时代的“slop”提供了一个尖锐且实用的定义。它认为 slop 的特征在于精力的不对称：即人类解析和理解一条信息所需的工作量，超过了发送者通过 AI 生成它所花费的工作量。这段引语特别批评了分享未经编辑的 LLM 输出（如 Gemini）的做法，认为这是一种不尊重接收者时间、缺乏职业礼貌的行为。
+2026-03-23 23:31:45
 
 
 
 ### [参加-Google-Cloud-Next-2026，与-LangChain-相约](https://blog.langchain.com/join-langchain-at-google-cloud-next-2026/)
 
-2026-03-23 21:37:58 | 标签: LangChain, Google Cloud Next, AI 智能体, LangSmith, GKE
-
-> LangChain 将参加在拉斯维加斯举办的 Google Cloud Next 2026，并展示其生态系统的重大更新。主要亮点包括引入用于自然语言智能体构建的 LangSmith Fleet 和用于可视化开发的 LangSmith Studio。公司还将参与技术会议，重点探讨用于安全智能体执行的 GKE Agent Sandbox 以及无摩擦开发者体验的未来。此外，LangSmith 上线 Google Cloud Marketplace，使企业团队能够利用现有的云承诺消费额度，简化采购流程。
+2026-03-23 21:37:58
 
 
 
 ### [来自-David-Abram-的一段引言](https://simonwillison.net/2026/Mar/23/david-abram/#atom-everything)
 
-2026-03-23 18:56:18 | 标签: 软件工程, AI 编程, LLM, 职业发展, 系统架构
-
-> 本文精选了 David Abram 关于 LLM 对软件工程行业影响的观点。Abram 指出，尽管 AI 可以辅助生成样板代码和提供代码建议，但它缺乏理解复杂系统、设计弹性架构或做出关键上下文决策的能力。他强调，开发者的真正价值依然在于人的因素：即决定“应该构建什么”以及“为什么构建”所需的判断力。
+2026-03-23 18:56:18
 
 
 
@@ -33018,33 +33002,25 @@
 
 ### [Revenium-发布工具注册表，揭示-AI-智能体的真实成本](https://www.infoq.com/news/2026/03/revenium-ai-tooling-costs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-24 12:00:00 | 标签: AI 智能体, LLMOps, FinOps, ROI, AI 可观测性
-
-> Revenium 的新工具注册表通过将每一笔支出（包括外部 API、SaaS 费用和人在回路的审核）映射到具体的智能体决策，解决了 AI 智能体部署中的可见性缺口。虽然大多数工具专注于 Token 成本，但 Revenium 指出，在贷款发放等复杂工作流程中，Token 成本可能不到总成本的 1%，而信用检查或身份验证等第三方服务则占据了大部分支出。随着智能体采用率预计将激增，且企业对 AI 支出变得更加谨慎，该平台通过将重点从 AI 可观测性转向 AI 财务归因，使企业能够衡量真实的投资回报率（ROI）。
+2026-03-24 12:00:00
 
 
 
 ### [AI-编程助手并未加快交付速度，因为编码从来都不是瓶颈](https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-24 11:30:00 | 标签: AI 编程助手, 软件工程, 开发者生产力, 项目管理, Agoda
-
-> 本文探讨了 Agoda 的观察结果：尽管 AI 编程工具显著提高了个人开发者的产出，但项目层面的交付速度提升却十分有限。核心论点在于，编码从来都不是软件开发的主要瓶颈；相反，瓶颈已转移到需要人类判断和负责的规格定义与验证环节。文章借鉴了 Faros AI 的数据和 Fred Brooks 的“没有银弹”理论，引入了一种工程领域的“灰盒”模型。在该模型中，开发者从单纯的实现者转型为解决方案架构师，专注于高保真规格定义和基于证据的验证，而非逐行检查代码。这种转变强调，沟通和共识已成为工程团队中创造价值的核心活动。
+2026-03-24 11:30:00
 
 
 
 ### [QCon-London-2026：伦理-AI-是一个工程问题](https://www.infoq.com/news/2026/03/ethical-ai-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-24 10:49:00 | 标签: 伦理 AI, AI 工程, 机器学习生命周期, AI 安全, 负责任的 AI
-
-> 本文报道了 Clara Higuera 在 QCon London 2026 上的演讲，强调 AI 伦理应像可靠性、性能或安全性一样，以同样的工程严谨度来对待。文章指出，许多 AI 风险（例如人脸识别或贷款审批中的偏见）源于数据收集和模型设计过程中的技术选择。为了解决这些问题，演讲提倡将伦理检查（公平性、可解释性、安全性和可持续性）直接嵌入到 AI 生命周期中，将抽象原则转化为切实可行、可衡量的工程工作流程和需求。
+2026-03-24 10:49:00
 
 
 
 ### ["将注意力旋转-90°"：深入浅出解读-Kimi-最新出圈成果](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649800970&idx=1&sn=9c6c05a18ed6a1fed491b7829c4ec30b)
 
-2026-03-24 09:49:00 | 标签: Kimi, Attention Residuals, Transformer, 残差连接, 深度学习架构
-
-> 文章详细解析了 Kimi 团队发布的重磅论文《ATTENTION RESIDUALS》。针对传统 Transformer 架构中标准残差连接（Standard Residual）导致的深层贡献稀释和隐状态爆炸问题，Kimi 创新性地提出了「注意力残差」机制。该机制将注意力旋转 90°，应用在网络的深度轴上，实现层间贡献的动态加权。文章对比了理论最优的「全注意力残差」与工程可行的「分块注意力残差」，并从权重矩阵的半可分秩角度，抽象分析了不同残差设计在信息聚合自由度上的差异。这一成果被马斯克、Andrej Karpathy 等业界大佬高度评价，被认为是深度学习 2.0 时代的重要探索。
+2026-03-24 09:49:00
 
 
 
@@ -33056,17 +33032,13 @@
 
 ### [Claude-Code-激进升级：AI-直接操控电脑，正面挑战-OpenClaw](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279611&idx=1&sn=6d11d88f25b49e7acb47238a755ef84e)
 
-2026-03-24 05:29:00 | 标签: Claude Code, Anthropic, OpenClaw, OpenAI, AI Agent
-
-> 本文详细报道了 Anthropic 对 Claude Code 与 Claude Cowork 的里程碑式升级，其核心在于 AI 具备了直接“操控电脑”的能力，能够模拟人类进行点击、滚动和导航，而不再局限于 API 调用。文章介绍了该功能的运行机制、安全防护措施以及新增的 Dispatch 跨设备协作功能。同时，文章对比了同日更新的 OpenClaw（已加入 OpenAI 阵营），后者通过重构插件系统 SDK 和升级至 GPT-5.4 模型强化其系统化 Agent 路线。两者的竞争标志着 AI 正在从“对话助手”向具备独立执行能力的“数字操作员”转变。
+2026-03-24 05:29:00
 
 
 
 ### [基于-AI-的机器人攻陷微软、DataDog-和-CNCF-项目中的-GitHub-Actions-工作流](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279611&idx=3&sn=446af69f0456dcfb7c9751d8f396d442)
 
-2026-03-24 05:29:00 | 标签: GitHub Actions, CI/CD 安全, AI 攻击, 远程代码执行, 网络安全
-
-> 本文报道了 2026 年 2 月发生的一起重大安全事件：一个名为 hackerbot-claw 的 AI 机器人（自称由 Claude-Opus-4.5 驱动）系统性地攻击了多个主流开源代码库。该机器人利用了 GitHub Actions 中的 pull_request_target 漏洞、分支名注入和文件名注入等技术，在微软、DataDog、Aqua Security 和 CNCF 等项目中实现了远程代码执行（RCE）。其中，Aqua Security 的 Trivy 项目受损最重，导致代码库被设为私有、数万星标被删。文章还记录了首次 AI 对 AI 的攻击尝试，并为开发者提供了审计工作流权...
+2026-03-24 05:29:00
 
 
 
@@ -33078,9 +33050,7 @@
 
 ### [龙虾盛宴下的冷思考](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247694912&idx=1&sn=91591aff71737e548cfe33b649950194)
 
-2026-03-24 00:46:00 | 标签: AI Agent, AI 编程, OpenClaw, Vibe Coding, Spec Coding
-
-> 文章针对 OpenClaw（龙虾）及 AI 编程工具（Claude Code， Cursor 等）引发的热潮进行了冷思考。作者指出，许多 AI 需求属于「先造工具再找需求」的自我感动，真正的价值在于解决高频痛点。在代码质量方面，警惕 LLM 仅追求「看起来合理」而非「行为正确」的风险，建议采用 Spec Coding 模式，即让工程师审查规约而非代码实现。此外，文章借用约束理论指出「审查环节」已成为 AI 辅助开发的新瓶颈，并揭示了开发者可能存在的「效率错觉」——即主观感觉变快但实际产出变慢。最后，作者强调保留理解的重要性，提倡通过提问而非单纯写代码来掌控逻辑。
+2026-03-24 00:46:00
 
 
 
@@ -33110,17 +33080,13 @@
 
 ### [QCon-London-2026：在边缘运行-AI-——-在浏览器中直接运行实际工作负载](https://www.infoq.com/news/2026/03/qcon-ai-at-the-edge/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-23 16:28:00 | 标签: 边缘 AI, WebGPU, Transformers.js, 浏览器原生 AI, 隐私
-
-> 在 QCon London 2026 大会上，Parallax 创始人兼 jsPDF 创建者 James Hall 全面概述了向浏览器原生 AI 推理的转变。他围绕服务端 AI 的固有局限性（如隐私风险、网络延迟和云端使用成本不断上升）展开了讨论。Hall 引入了“架构隐私”（architectural privacy）的概念，认为在本地运行模型可以从设计层面确保数据安全，而非仅仅依赖政策承诺。演讲详细介绍了使边缘 AI 成为现实的快速发展的技术图景。讨论的关键技术包括 Transformers.js v4，它利用 WebGPU 为 BERT 模型实现了 4 倍的性能提升，并支持 200 亿参...
+2026-03-23 16:28:00
 
 
 
 ### [GitHub-利用-AI-驱动的检测功能扩展应用安全覆盖范围](https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/)
 
-2026-03-23 16:00:00 | 标签: GitHub, 应用安全, AI 驱动检测, CodeQL, Copilot Autofix
-
-> GitHub 宣布通过将 AI 驱动的检测功能集成到 GitHub Code Security 中，扩展其应用安全能力。虽然 CodeQL 仍然是核心语言深度语义分析的标准，但这种新的混合模型利用 AI 来发现传统静态分析难以覆盖的生态系统中的漏洞，例如 Shell/Bash、Dockerfile、Terraform (HCL) 和 PHP。该系统直接集成到拉取请求中，并与 Copilot Autofix 配对以建议修复方案，将平均修复时间从 1.29 小时显著缩短至 0.66 小时。这一举措是 GitHub 更广泛的智能体检测平台的一部分，旨在代码合并前强制执行安全成果。
+2026-03-23 16:00:00
 
 
 

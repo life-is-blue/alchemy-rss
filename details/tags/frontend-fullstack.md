@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-24 22:25:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-25 00:21:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -620,9 +620,7 @@
 
 ### [如何使用-JavaScript-构建基于浏览器的图像转换器](https://www.freecodecamp.org/news/build-a-browser-based-image-converter-using-javascript/)
 
-2026-03-23 17:09:54 | 标签: JavaScript, Canvas API, Web 开发, 图像处理, 前端
-
-> 本文提供了一份关于创建基于浏览器的图像转换工具的综合教程。文章解释了如何利用现代 Web API——特别是用于读取本地文件的 FileReader API 和用于重绘及导出图像（如 PNG、JPEG 和 WebP 格式）的 Canvas API。作者强调了这种客户端方法的优势，包括增强用户隐私、通过避免服务器上传来提高处理速度，以及零基础设施成本。指南还涵盖了实际的实现细节，例如处理大图、调整 JPEG 压缩质量以及实现基本的图像缩放逻辑。
+2026-03-23 17:09:54
 
 
 
