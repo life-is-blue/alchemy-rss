@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-24 14:20:16 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-24 16:12:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -422,17 +422,13 @@
 
 ### [如何使用-Codemagic-构建完整的-Flutter-CI/CD-流水线：从-PR-质量门禁到自动化应用商店发布](https://www.freecodecamp.org/news/build-a-complete-flutter-ci-cd-pipeline-with-codemagic/)
 
-2026-03-24 00:37:14 | 标签: Flutter, CI/CD, Codemagic, 移动开发, DevOps
-
-> 本文详细介绍了如何使用 Codemagic 为 Flutter 应用程序构建专业的 CI/CD 基础设施。文章提倡采用基于 YAML 的“流水线即代码”（Pipeline-as-Code）方法，确保构建过程可版本控制且可复现。指南概述了一个三阶段架构：用于自动化代码验证的 PR 质量门禁、通过 Firebase 和 TestFlight 进行分发的测试流水线，以及用于向 Google Play 商店和 Apple App Store 自动发布的生产流水线。文中包含了用于安全注入环境变量、静态分析和集成 Sentry 崩溃报告的可重用 Bash 脚本，同时强调了 Codemagic 在处理 iO...
+2026-03-24 00:37:14
 
 
 
 ### [Trivy-供应链遭入侵：Docker-Hub-用户需知](https://www.docker.com/blog/trivy-supply-chain-compromise-what-docker-hub-users-should-know/)
 
-2026-03-23 16:25:16 | 标签: 安全事件, 供应链安全, Trivy, Docker Hub, CI/CD
-
-> Docker 报告了一起安全事件：Aqua Security Trivy 扫描器镜像（`0.69.4`、`0.69.5`、`0.69.6` 和 `latest`）在 2026 年 3 月 19 日至 3 月 23 日期间遭到入侵。攻击者获得了 Aqua Security CI/CD 流水线的未经授权访问权限，从而能够推送恶意镜像，这些镜像可能窃取 CI/CD 密钥、云凭证、SSH 密钥和 Docker 配置。本文提供了需要检查的具体镜像摘要（digest），给出了立即轮换凭证的说明，并强调了通过镜像摘要（而非依赖可变标签）来锁定镜像的重要性。文章还指出了漏洞扫描在检测发布过程中发生的供应链攻击...
+2026-03-23 16:25:16
 
 
 
@@ -450,9 +446,7 @@
 
 ### [Data-Mesh-实战：从构思到落地的旅程](https://www.infoq.com/presentations/data-mesh-horse-powertrain/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-23 11:43:00 | 标签: Data Mesh, Azure Databricks, 数据工程, 领域驱动设计, 平台工程
-
-> 本文探讨了 Horse Powertrain 在实施 Data Mesh 方面的实践，这家制造企业在从沃尔沃（Volvo）分拆后需要重建其数据能力。文章指出了中心化数据团队的常见失败原因——由于脆弱的 ETL 流水线和缺乏领域背景，导致其成为业务瓶颈。通过采用 Data Mesh 的四大支柱——领域所有权、自助式数据平台、数据即产品和联邦治理，该组织实现了基础设施管理与数据价值交付的解耦。作者详细介绍了具体的技术实现，包括使用领域驱动设计（DDD）进行边界划分，通过 Terraform 和 GitHub Actions 自动化 Azure Databricks 工作区，以及利用 Databri...
+2026-03-23 11:43:00
 
 
 
