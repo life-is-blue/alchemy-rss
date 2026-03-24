@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c18e3dee",
+  "title": "QCon London 2026：伦理 AI 是一个工程问题",
+  "url": "https://www.infoq.com/news/2026/03/ethical-ai-problem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-24 10:49:00",
+  "author": "Daniel Dominguez",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/\">QCon London 2026</a>, <a href=\"https://qconlondon.com/presentation/mar2026/ethical-ai-engineering-problem\">Clara Higuera</a>, Responsible AI Program Lead at BBVA, presented how many of the risks associated with AI systems are fundamentally engineering challenges rather than purely governance or policy issues. The session examined how AI systems are increasingly embedded in critical products and decision-making processes. As adoption grows, failures in these systems can have significant real-world consequences. This shift requires engineers to treat ethical properties of AI systems with the same rigor applied to reliability, performance, or security.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 369px;\" data-src=\"https://www.infoq.com/news/2026/03/ethical-ai-problem/news/2026/03/ethical-ai-problem/en/resources/201-1774298257684.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ethical-ai-problem/en/resources/201-1774298257684.jpeg\" rel=\"share\"></p>\n   <p>The talk opened with a widely reported case in the United States where <a href=\"https://www.npr.org/2020/06/24/882683463/the-computer-got-it-wrong-how-facial-recognition-led-to-a-false-arrest-in-michig\">Robert Williams</a>, was wrongfully arrested after being misidentified by a facial recognition system. Incidents like this highlight how algorithmic errors can directly affect individuals and communities.</p>\n   <p>Such failures often arise from technical choices made during development. Training datasets may not represent the populations affected by the system, model architectures may lack explainability, and evaluation pipelines may fail to detect bias before deployment.</p>\n   <p>Rather than viewing these issues as external policy concerns, the talk emphasized that they originate within the engineering process itself.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 369px;\" data-src=\"https://www.infoq.com/news/2026/03/ethical-ai-problem/news/2026/03/ethical-ai-problem/en/resources/222-1774298257684.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ethical-ai-problem/en/resources/222-1774298257684.jpeg\" rel=\"share\"></p>\n   <p>AI systems encode the values embedded in their design. Decisions about data collection, feature engineering, model architecture, and evaluation metrics can all influence how a system behaves in production.&nbsp;For example, biased outcomes in loan approvals, hiring processes, or medical diagnostics can result from unrepresentative training data or poorly defined optimization objectives. Without explicit checks, models can reinforce historical biases present in datasets.</p>\n   <p>According to the presentation, integrating ethical principles into the AI lifecycle requires engineers to ask questions throughout development rather than after deployment. This includes evaluating datasets for representativeness, measuring model behavior across demographic groups, and ensuring that systems remain observable once deployed.&nbsp;The talk highlighted several principles that can guide AI system design. Fairness, transparency, security, sustainability, and accountability were presented as key dimensions that engineers must consider when building AI-powered systems.</p>\n   <p>Fairness requires evaluating how models perform across different groups and ensuring that outcomes do not systematically disadvantage specific populations. Transparency involves improving the interpretability and explainability of models so that stakeholders can understand how decisions are made.</p>\n   <p>Security is another emerging concern, particularly as new attack vectors such as prompt injection and model extraction become more common in AI systems. Sustainability is also gaining attention due to the computational cost associated with training and deploying large models.&nbsp;These dimensions must be addressed through engineering practices rather than abstract principles.</p>\n   <p><img alt=\"\" style=\"width: 800px; height: 369px;\" data-src=\"https://www.infoq.com/news/2026/03/ethical-ai-problem/news/2026/03/ethical-ai-problem/en/resources/154-1774298257684.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ethical-ai-problem/en/resources/154-1774298257684.jpeg\" rel=\"share\"></p>\n   <p>One of the challenges organizations face is translating high-level ethical concepts into practical engineering workflows. Teams often understand the importance of fairness or transparency but lack clear methods for implementing them.</p>\n   <p>The presentation suggested embedding ethical checks throughout the development lifecycle. This can include fairness evaluation during model training, explainability analysis before deployment, security testing against adversarial attacks, and monitoring systems that detect unexpected behavior in production.</p>\n   <p>By incorporating these practices early in the system architecture, organizations can reduce the risk of discovering ethical issues after systems are already in use.&nbsp;The talk compared the current stage of AI development to earlier technological transitions. Industries such as aviation, electricity, and automotive engineering initially advanced faster than the safety standards needed to govern them.&nbsp;Over time, those industries developed new engineering practices, standards, and regulatory frameworks to make systems reliable at scale.</p>\n   <p>AI appears to be entering a similar phase. As AI systems move from experimental tools into critical infrastructure, engineering practices will likely evolve to incorporate safety, reliability, and ethical considerations as core system requirements.&nbsp;Software architects and engineering leaders play an important role in shaping these practices. Because technology often evolves faster than regulation, developers frequently operate in environments where formal standards have not yet been established.</p>\n   <p><img alt=\"\" style=\"width:100%;height:415px;\" data-src=\"https://www.infoq.com/news/2026/03/ethical-ai-problem/news/2026/03/ethical-ai-problem/en/resources/66-1774298257684.jpeg\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ethical-ai-problem/en/resources/66-1774298257684.jpeg\" rel=\"share\"></p>\n   <p>In this context, ethical principles can act as design guidelines that help teams navigate emerging risks. Organizations that treat ethical AI as an engineering discipline rather than an afterthought may be better positioned to build trustworthy and resilient systems.</p>\n   <p>The presentation concluded by encouraging developers to treat ethical properties of AI systems as measurable engineering requirements. Incorporating fairness evaluation, explainability checks, security testing, and resource efficiency into the development lifecycle can help ensure that AI systems remain both technically robust and socially responsible.&nbsp;As AI continues to become embedded in products, platforms, and infrastructure, the engineering decisions made during development will increasingly shape how these systems affect society.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Ethical AI Is an Engineering Problem\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Dominguez\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/ethical-ai-problem/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774349340000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "伦理 AI 从根本上是一个工程挑战，需要在整个开发生命周期中将公平性、透明度和安全性作为可衡量的需求进行整合。",
+  "oneSentenceSummary": "伦理 AI 从根本上是一个工程挑战，需要在整个开发生命周期中将公平性、透明度和安全性作为可衡量的需求进行整合。",
+  "summary": "本文报道了 Clara Higuera 在 QCon London 2026 上的演讲，强调 AI 伦理应像可靠性、性能或安全性一样，以同样的工程严谨度来对待。文章指出，许多 AI 风险（例如人脸识别或贷款审批中的偏见）源于数据收集和模型设计过程中的技术选择。为了解决这些问题，演讲提倡将伦理检查（公平性、可解释性、安全性和可持续性）直接嵌入到 AI 生命周期中，将抽象原则转化为切实可行、可衡量的工程工作流程和需求。",
+  "mainPoints": [
+    {
+      "point": "从治理转向工程学科。",
+      "explanation": "AI 系统的伦理属性应被视为核心技术需求，类似于工程师处理系统可靠性和安全性的方式。"
+    },
+    {
+      "point": "伦理失败的技术根源。",
+      "explanation": "算法偏见通常源于缺乏代表性的训练数据、模型架构缺乏可解释性以及评估流程不足。"
+    },
+    {
+      "point": "伦理检查的生命周期集成。",
+      "explanation": "工程师必须在开发和部署阶段全程嵌入公平性评估、可解释性分析以及针对对抗性攻击的安全测试。"
+    },
+    {
+      "point": "可衡量的工程需求。",
+      "explanation": "将伦理属性视为可量化的指标，使团队能够应对新兴风险，并构建更值得信赖和更具韧性的系统。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 系统的伦理属性应以对待可靠性、性能或安全性的同样严谨态度来处理。",
+    "AI 系统编码了其设计中嵌入的价值观。",
+    "将伦理原则整合到 AI 生命周期中，要求工程师在开发过程中全程提出问题，而不是在部署之后。",
+    "将伦理 AI 视为一门工程学科而非事后补救措施的组织，可能更有能力构建值得信赖和具有韧性的系统。"
+  ],
+  "tags": [
+    "伦理 AI",
+    "AI 工程",
+    "机器学习生命周期",
+    "AI 安全",
+    "负责任的 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 716,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774349340000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-24 10:49:00"
+}

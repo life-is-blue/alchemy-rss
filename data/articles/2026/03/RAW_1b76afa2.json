@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1b76afa2",
+  "title": "Revenium 发布工具注册表，揭示 AI 智能体的真实成本",
+  "url": "https://www.infoq.com/news/2026/03/revenium-ai-tooling-costs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-24 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\"><a href=\"https://www.finops.org/members/revenium/\">Revenium</a> has <a href=\"https://www.globenewswire.com/news-release/2026/03/03/3248056/0/en/Revenium-Launches-Tool-Registry-to-Bring-Economic-Accountability-to-AI-Agents-Deployments.html?hss_channel=lis-ODa9Noh3Kj\">announced </a>the general availability of its <a href=\"https://docs.revenium.io/tool-registry\">Tool Registry</a>, a new capability designed to give enterprises a complete, end-to-end view of what their AI agents actually cost. Moving beyond traditional token-based tracking, the platform attributes every expense, across APIs, third-party services, and even human intervention, back to the specific AI decision that triggered it, providing what the company claims is the first full-stack view of agent-driven spend.</p>\n   <p dir=\"ltr\">While most organizations closely monitor large language model (LLM) token usage, Revenium argues that tokens represent only a fraction of the true cost of running AI agents. In real-world workflows, agents routinely call external services, such as credit bureaus, identity verification platforms, fraud detection tools, and data providers, each incurring transaction-based fees that are often significantly higher than the cost of the model itself.</p>\n   <p dir=\"ltr\">A typical example illustrates the imbalance. In a loan origination workflow, token usage might cost as little as $0.30. However, the same workflow could trigger a credit report costing between $35 and $75, identity verification at $2 to $5, fraud checks at $1 to $3, and bank account verification at up to $1. In total, the workflow may cost between $50 and $85, with token usage accounting for less than 1% of the total spend. These external costs are usually buried in separate vendor invoices from providers such as credit agencies, legal data platforms, or survey tools, making it nearly impossible to trace spending back to specific AI-driven actions.</p>\n   <p dir=\"ltr\">Revenium's Tool Registry is designed to close that visibility gap. The platform allows organizations to register and track any cost source involved in an AI workflow, including external APIs, SaaS platforms, internal compute services, and human review steps. Each invocation is then mapped back to the originating agent, workflow, transaction trace, and even the end customer involved. This creates a unified system of record in which every dollar spent by an AI agent can be directly tied to a business outcome.</p>\n   <p dir=\"ltr\">According to <a href=\"http://linkedin.com/in/johnrowell\">John Rowell</a>, CEO and co-founder of Revenium, the lack of cost transparency has become a recurring challenge for executives evaluating AI investments. He notes that organizations often struggle to determine whether AI is delivering real financial value because costs are fragmented across multiple systems, while outcomes are tracked elsewhere. By linking spend directly to agent decisions, the Tool Registry aims to provide a clear answer to whether AI workflows are generating a return on investment.</p>\n   <p dir=\"ltr\">The timing of the release reflects broader industry trends. <a href=\"https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025\">Gartner</a> projects that 40 percent of enterprise applications will include task-specific AI agents by the end of 2026, a sharp increase from less than five percent in 2025. At the same time, <a href=\"https://investor.forrester.com/news-releases/news-release-details/forresters-2026-technology-security-predictions-ais-hype-fades-0\">Forrester</a> has predicted that organizations will defer a quarter of planned AI spending into 2027 due to uncertainty around ROI. A key driver of this hesitation is the inability to measure whether AI-driven workflows are actually producing more value than they consume.</p>\n   <p dir=\"ltr\">A notable aspect of the platform is its inclusion of human-in-the-loop costs. In many enterprise workflows, AI agents still rely on human review for validation, compliance, or exception handling. The Tool Registry treats these human interventions as measurable cost events within the same execution trace, enabling organizations to quantify how automation impacts human effort over time. For example, a workflow that reduces human review from 35 percent to 12 percent over several months can demonstrate tangible cost savings, but only if both human and machine contributions are tracked within the same system.</p>\n   <p dir=\"ltr\">Most existing tools that measure AI cost today take a model-centric or observability-first approach, which is fundamentally different from Revenium's approach.</p>\n   <p dir=\"ltr\">Platforms such as <a href=\"https://langfuse.com/\">Langfuse</a>, <a href=\"https://smith.langchain.com/\">LangSmith</a>, and <a href=\"https://www.helicone.ai/\">Helicone</a> focus primarily on tracking LLM usage, tracing agent workflows, and monitoring token consumption. They provide detailed visibility into prompts, responses, latency, and per-request costs, often breaking this down by user, feature, or session. Many of these tools use proxy- or SDK-based approaches to capture telemetry and can provide cost dashboards, alerts, and evaluation frameworks to assess output quality. However, their definition of \"cost\" remains largely tied to LLM interactions and infrastructure-level metrics, with limited visibility into what happens beyond the model call.</p>\n   <p dir=\"ltr\">Even more advanced platforms<span style=\"box-sizing: border-box; margin: 0px; padding: 0px;\">, such as&nbsp;<a href=\"https://arize.com/\" target=\"_blank\">Arize AI</a>&nbsp;and&nbsp;<a href=\"https://www.datadoghq.com/product/ai/llm-observability/\" target=\"_blank\">Datadog LLM Observability,</a></span>&nbsp;extend this by combining performance monitoring, tracing, and evaluation, giving enterprises a unified view of model behavior and system health. These tools can trace multi-step agent workflows and provide end-to-end telemetry. However, they still tend to treat cost as a byproduct of system usage (tokens, compute, requests) rather than a fully attributed business expense tied to external services and outcomes.</p>\n   <p dir=\"ltr\">Revenium's approach diverges by shifting from \"AI observability\" to \"AI financial attribution.\" Instead of asking how much a model call costs, it asks what an entire agent decision costs in real terms, including external APIs, SaaS platforms, and human intervention. Most current tools do not natively capture this layer. While some observability platforms can trace tool usage within an agent workflow, they typically do not normalize and attribute third-party billing (e.g., per-API transaction fees or human review costs) back to a single decision or customer-level outcome.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Revenium Unveils Tool Registry to Expose the True Cost of AI Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/revenium-ai-tooling-costs/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774353600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Revenium 推出了工具注册表（Tool Registry），为 AI 智能体提供全栈财务归因，追踪第三方 API 和人工干预等隐藏成本，这些成本往往远超模型 Token 费用。",
+  "oneSentenceSummary": "Revenium 推出了工具注册表（Tool Registry），为 AI 智能体提供全栈财务归因，追踪第三方 API 和人工干预等隐藏成本，这些成本往往远超模型 Token 费用。",
+  "summary": "Revenium 的新工具注册表通过将每一笔支出（包括外部 API、SaaS 费用和人在回路的审核）映射到具体的智能体决策，解决了 AI 智能体部署中的可见性缺口。虽然大多数工具专注于 Token 成本，但 Revenium 指出，在贷款发放等复杂工作流程中，Token 成本可能不到总成本的 1%，而信用检查或身份验证等第三方服务则占据了大部分支出。随着智能体采用率预计将激增，且企业对 AI 支出变得更加谨慎，该平台通过将重点从 AI 可观测性转向 AI 财务归因，使企业能够衡量真实的投资回报率（ROI）。",
+  "mainPoints": [
+    {
+      "point": "Token 成本往往只是企业级 AI 智能体真实成本中微不足道的一部分。",
+      "explanation": "在实际工作流程中，信用局或欺诈检测等外部服务的成本可能是所用 LLM Token 成本的 100 倍，但这些成本通常隐藏在不同的供应商发票中。"
+    },
+    {
+      "point": "该平台将重点从 AI 可观测性转向了 AI 财务归因。",
+      "explanation": "与 Langfuse 或 Helicone 等追踪延迟和 Token 等系统指标的工具不同，Revenium 专注于与特定智能体决策相关的业务级支出和成果。"
+    },
+    {
+      "point": "“人在回路”（Human-in-the-loop）的干预被视为可衡量的成本事件。",
+      "explanation": "通过将人工审核成本整合到执行追踪中，企业最终能够量化自动化如何影响人力投入，并验证实际节省的劳动力成本。"
+    }
+  ],
+  "keyQuotes": [
+    "“总的来说，该工作流程的成本可能在 50 美元到 85 美元之间，其中 Token 使用量占总支出的不到 1%。”",
+    "“Revenium 的方法有所不同，它将重点从‘AI 可观测性’转向了‘AI 财务归因’。”",
+    "“企业往往难以确定 AI 是否带来了真正的财务价值，因为成本分散在多个系统中，而成果却在其他地方进行追踪。”"
+  ],
+  "tags": [
+    "AI 智能体",
+    "LLMOps",
+    "FinOps",
+    "ROI",
+    "AI 可观测性"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 842,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774353600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-24 12:00:00"
+}

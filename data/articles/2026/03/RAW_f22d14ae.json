@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f22d14ae",
+  "title": "你的模型真的会“举一反三”吗？RoboChallenge Table30 V2 正式发布",
+  "url": "https://www.qbitai.com/2026/03/391744.html",
+  "date": "2026-03-24 08:33:52",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-391745\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/人.png\" alt=\"\" width=\"828\" height=\"414\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/6395f210-c8c1-4a18-e427-79b363426900/public 828w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/b3ffa330-3a2c-466e-79c4-353047fe1c00/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px\">具身智能正站在一个关键的历史节点上。随着 VLA 与 WMA 模型爆发式增长，行业的核心痛点日益凸显：在单任务精调之外，具身智能模型是否真正具备通用泛化能力，还是仅仅陷入了单一任务的过拟合？</p>\n  <p>带着这一核心追问，<strong>RoboChallenge </strong><strong>正式发布</strong><strong> Table30 V2</strong>，它以<strong>“</strong><strong>面向下一代模型的大规模真机原生泛化评测</strong><strong>”</strong>为标准，从<strong>任务升级、评测升级到系统升级</strong>三个维度深度重构：通过引入更严苛的软体、工具使用及双臂协作任务，支持零样本与域外泛化测试，并实现3倍于往届的系统吞吐量。Table30 V2将为全球具身智能研究者打造了一个精准的“泛化标尺”与公平、开放的真机竞技场，同时其预览版将作为 <a href=\"https://mp.weixin.qq.com/s?__biz=MzYzNzI4NzU3Ng==&amp;mid=2247483780&amp;idx=1&amp;sn=5182008a20548c24463aac153817c4fa&amp;scene=21#wechat_redirect\">RoboChallenge CVPR 2026 Workshop</a> 竞赛的首秀上线发布。</p>\n  <h2><strong>一、</strong> <strong>任务升级：直面真实世界的复杂性与灵巧性</strong></h2>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-391746\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/让.png\" alt=\"\" width=\"828\" height=\"606\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/a41ac3b8-01b6-44a5-a2c6-69e9c1445a00/public 828w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fe59cda2-7f31-4fa3-14b2-1aa46acf7d00/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px\"></p>\n  <p>具身智能的终极目标是处理现实世界中不可预知的复杂场景。Table30 V2 的第一个核心改进，就是重构了任务集。我们在原有基础上，新增了 18 个全新的双臂灵巧操作任务，配合保留的 12 个经典任务，构建了一个包含 30 个高难度任务的综合评估体系。为什么要如此扩展任务难度？因为泛化能力的缺失往往源于对“简单任务”的过度拟合。</p>\n  <ul>\n   <li>从硬到软的跨越：我们引入了对绳索、布料等软连续体物体的处理任务。这些物体形变无限、状态不固定，极大地挑战了模型的空间推理与自适应控制能力。</li>\n   <li>工具与空间的深度交互：新增任务要求机器人能够准确使用工具，并理解复杂的工具-物体空间关系。这不仅是对精度控制的考验，更是对模型物理常识的一次深度摸底。</li>\n   <li>双臂协作的必然性：在 Table30 V2 中，我们设计了大量需要双手高度协调的任务，要求模型在动态受限的环境下，实现高精度的同步控制。</li>\n   <li>硬件升级，验证跨平台能力：引入了新一代移动双臂操纵平台 DOS-W1（具有三角尖端夹具），并与经典的 Aloha系统并存，不仅降低了整体硬件的准入门槛，更通过双机型并行的评测机制，严谨地验证了模型在不同硬件配置下的鲁棒性。</li>\n  </ul>\n  <h2><strong>二、</strong> <strong>评测升级：告别单点突破，迎接全维泛化</strong></h2>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-391747\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/日.png\" alt=\"\" width=\"828\" height=\"400\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/61c79e6a-7444-4fb4-516c-1857779f5400/public 828w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/da6dc4a9-ac75-4268-d86a-eb8ceaf93000/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px\"></p>\n  <p>在具身智能领域，我们经常看到模型在单个任务上表现优异，却在稍换场景后即刻“翻车”。Table30 V2 通过重构学习与测试协议，彻底终结了“为了比赛而调参”的旧模式。</p>\n  <ul>\n   <li>全面转向“多任务”范式：Table30 V2 将全面支持多任务模型，杜绝为每个任务单独训练一个专用模型的“作弊式”优化。我们要求参评者提交具备通用理解能力的单一模型，这与构建通用具身大模型的行业大趋势高度一致。</li>\n   <li>零样本（Zero-shot）测试的引入：这是本次升级的重头戏。我们引入了物体级和环境级两个层面的零样本测试。模型必须在未见过的物体、未见过的背景、甚至动态变化的干扰（如桌面高度微调）下，展示出其真正的理解力，而非单纯的记忆能力。</li>\n  </ul>\n  <p>分层次的泛化矩阵（In-Domain vs. Out-of-Domain）：从传统的域内评估，升级为包含域外（OOD）的高阶测试。我们不仅测试模型在预期之内的表现，更通过动态调整测试环境（如将桌面换成沙发等不可控变化），挑战模型的边界。这不再是一场简单的分数比拼，而是一次对模型“智能本质”的压力测试。</p>\n  <h2><strong>三、</strong> <strong>系统升级：吞吐量提升</strong><strong> 300%</strong><strong>，打造快节奏反馈循环</strong></h2>\n  <p>对于算法迭代而言，速度就是生命线。为了让科研人员不再因为“等待评估结果”而浪费宝贵的算力，我们对整个底层基础设施进行了彻底的扩容与优化。</p>\n  <ul>\n   <li>300% 的吞吐量飞跃：通过大量增购主流机器人硬件，并优化调度算法，我们实现了系统吞吐能力的巨大提升。</li>\n   <li>任务准备的“极速化”：我们放宽了像素级的严苛初始状态要求，转向更符合现实的“粗略对齐”，大幅降低了任务准备的空转时间，确保科研团队能够实时获取反馈，快速迭代模型。</li>\n   <li>“时间消耗”作为性能指标：我们在排行榜中新增了“完成时间（Time to Complete）”作为关键评分维度，倒逼研究者优化策略的执行效率，而非盲目堆叠推理时间来换取成功率。</li>\n  </ul>\n  <h2><strong>诚邀报名：</strong><strong>RoboChallenge CVPR 2026 Workshop </strong><strong>竞赛正式开启</strong></h2>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-391748\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/锐.png\" alt=\"\" width=\"828\" height=\"516\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/993060a3-0b83-4bbb-3ee4-9d68e1b0a500/public 828w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/47a92452-5a6f-480c-f169-b1808c6c1800/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px\"></p>\n  <p>Table30 V2 的发布，不仅是一个基准测试的诞生，更是一次对未来具身智能方向的指引。我们诚挚邀请全球科研团队、实验室及个人开发者，参与 RoboChallenge CVPR 2026 Workshop 竞赛。本次竞赛将作为 Table30 V2 预览版首秀，参赛者有机会在我们的真实机器人集群上验证自己的模型，与全球顶尖的具身智能算法同台竞技。</p>\n  <p>竞赛结束后，我们将持续面向全球研究者开放评测基础设施，让每一个有想法的团队都能在真实机器上验证自己的模型。泛化，是具身智能的下一座山峰。Table30 V2，邀你同攀。</p>\n  <p>详情敬请关注 RoboChallenge 官方渠道：<a href=\"https://robochallenge.cn/competition\">https://robochallenge.cn/competition</a>。</p>\n  <p>&nbsp;</p>\n  <p><span style=\"color: #808080;\">*本文系量子位获授权刊载，观点仅为原作者所有。</span></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "RoboChallenge Table30 V2 正式发布，通过任务、评测和系统三大升级，为具身智能模型提供面向大规模真机原生的泛化评测标准。",
+  "oneSentenceSummary": "RoboChallenge Table30 V2 正式发布，通过任务、评测和系统三大升级，为具身智能模型提供面向大规模真机原生的泛化评测标准。",
+  "summary": "文章详细介绍了具身智能评测基准 RoboChallenge Table30 V2 的发布及其核心改进。针对具身智能模型在单任务精调中容易产生的过拟合问题，Table30 V2 从任务、评测、系统三个维度进行了深度重构：任务层面引入了软体处理、工具使用及双臂协作等高难度场景；评测层面全面转向多任务范式，并引入零样本（Zero-shot）与域外（OOD）泛化测试；系统层面则通过硬件扩容实现了 300% 的吞吐量提升。该基准将作为 CVPR 2026 Workshop 竞赛的首秀平台，旨在推动具身智能从单点突破走向全维泛化。",
+  "mainPoints": [
+    {
+      "point": "任务复杂度显著提升，直面真实世界挑战。",
+      "explanation": "新增软体物体处理、工具使用及双臂协作等 18 个高难度任务，考验模型的空间推理、物理常识及高精度同步控制能力。"
+    },
+    {
+      "point": "评测协议重构，从单任务精调转向全维泛化。",
+      "explanation": "引入零样本（Zero-shot）测试和域外（OOD）泛化矩阵，杜绝针对特定任务的过拟合优化，倡导开发具备通用理解能力的单一模型。"
+    },
+    {
+      "point": "底层基础设施升级，大幅提升科研迭代效率。",
+      "explanation": "系统吞吐量提升 3 倍，并引入「完成时间」作为关键性能指标，倒逼研究者优化策略的执行效率而非盲目堆叠推理时间。"
+    }
+  ],
+  "keyQuotes": [
+    "泛化能力的缺失往往源于对「简单任务」的过度拟合。",
+    "Table30 V2 通过重构学习与测试协议，彻底终结了「为了比赛而调参」的旧模式。",
+    "泛化，是具身智能的下一座山峰。Table30 V2，邀你同攀。"
+  ],
+  "tags": [
+    "具身智能",
+    "RoboChallenge",
+    "Table30 V2",
+    "泛化评测",
+    "零样本学习"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 87,
+  "wordCount": 1851,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774341232000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-24 08:33:52"
+}

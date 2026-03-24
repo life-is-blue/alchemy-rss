@@ -1,0 +1,48 @@
+{
+  "id": "RAW_d2befb41",
+  "title": "来自 Neurotica 的一段引语",
+  "url": "https://simonwillison.net/2026/Mar/23/neurotica/#atom-everything",
+  "date": "2026-03-23 23:31:45",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">23rd March 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://bsky.app/profile/schwarzgerat.bsky.social/post/3mhqu5dogos2v\">\n     <p>slop is something that takes more human effort to consume than it took to produce. When my coworker sends me raw Gemini output he’s not expressing his freedom to create, he’s disrespecting the value of my time</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://bsky.app/profile/schwarzgerat.bsky.social/post/3mhqu5dogos2v\">Neurotica</a>, <span class=\"context\">@schwarzgerat.bsky.social</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2094/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "将 AI slop 定义为：人类消费该内容所花费的精力超过了生成它所花费的精力，并将未经处理的 AI 输出视为对接收者时间的不尊重。",
+  "oneSentenceSummary": "将 AI slop 定义为：人类消费该内容所花费的精力超过了生成它所花费的精力，并将未经处理的 AI 输出视为对接收者时间的不尊重。",
+  "summary": "这篇来自 Simon Willison 的精选文章为生成式 AI 时代的“slop”提供了一个尖锐且实用的定义。它认为 slop 的特征在于精力的不对称：即人类解析和理解一条信息所需的工作量，超过了发送者通过 AI 生成它所花费的工作量。这段引语特别批评了分享未经编辑的 LLM 输出（如 Gemini）的做法，认为这是一种不尊重接收者时间、缺乏职业礼貌的行为。",
+  "mainPoints": [
+    {
+      "point": "Slop 的定义在于精力的不对称。",
+      "explanation": "当生产者投入的精力（极少的 AI 提示词）远低于消费者处理和验证该内容所需投入的精力时，内容就变成了 slop。"
+    },
+    {
+      "point": "未经处理的 AI 输出是一种职业失礼。",
+      "explanation": "发送未经编辑的 AI 生成内容被视为未能重视接收者的时间和注意力，这是将发送者的便利置于团队效率之上。"
+    }
+  ],
+  "keyQuotes": [
+    "slop 是指人类消费它所花费的精力超过了生成它所花费的精力。",
+    "当我的同事发给我未经处理的 Gemini 输出时，他并不是在表达他的创作自由，而是在不尊重我的时间价值。"
+  ],
+  "tags": [
+    "AI Slop",
+    "生成式 AI",
+    "沟通礼仪",
+    "生产力",
+    "AI 伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 43,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774308705000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-23 23:31:45"
+}

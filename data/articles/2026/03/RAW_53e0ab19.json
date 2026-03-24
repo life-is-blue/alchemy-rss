@@ -1,0 +1,53 @@
+{
+  "id": "RAW_53e0ab19",
+  "title": "发布：datasette-files 0.1a2",
+  "url": "https://simonwillison.net/2026/Mar/23/datasette-files/#atom-everything",
+  "date": "2026-03-23 23:06:38",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">23rd March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-files/releases/tag/0.1a2\">datasette-files 0.1a2</a></span> <span class=\"beat-commit\">— Upload files to Datasette</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>The most interesting alpha of <a href=\"https://github.com/datasette/datasette-files\">datasette-files</a> yet, a new plugin which adds the ability to upload files directly into a Datasette instance. Here are the release notes in full:</p>\n      <blockquote>\n       <ul>\n        <li>Columns are now configured using the <a href=\"https://docs.datasette.io/en/latest/changelog.html#new-column-types-system\">new column_types system</a> from Datasette 1.0a26. <a href=\"https://github.com/datasette/datasette-files/issues/8\">#8</a></li>\n        <li>New <code>file_actions</code> plugin hook, plus ability to import an uploaded CSV/TSV file to a table. <a href=\"https://github.com/datasette/datasette-files/issues/10\">#10</a></li>\n        <li>UI for uploading multiple files at once via the new documented JSON upload API. <a href=\"https://github.com/datasette/datasette-files/issues/11\">#11</a></li>\n        <li>Thumbnails are now generated for image files and stored in an internal <code>datasette_files_thumbnails</code> table. <a href=\"https://github.com/datasette/datasette-files/issues/13\">#13</a></li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4027/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-files 0.1a2 版本发布，引入了 Datasette 直接文件上传功能，支持 CSV/TSV 导入、多文件 UI 以及自动缩略图生成。",
+  "oneSentenceSummary": "datasette-files 0.1a2 版本发布，引入了 Datasette 直接文件上传功能，支持 CSV/TSV 导入、多文件 UI 以及自动缩略图生成。",
+  "summary": "datasette-files 插件（版本 0.1a2）的此次发布显著增强了 Datasette 内的文件管理能力。主要更新包括：集成了 Datasette 1.0a26 的新 column_types 系统，新增了用于文件操作的插件钩子（plugin hook），以及将 CSV/TSV 文件直接导入数据表的功能。此外，该更新还提供了通过 JSON API 进行批量上传的 UI，并实现了图像自动缩略图生成功能，缩略图存储在专门的内部表中。",
+  "mainPoints": [
+    {
+      "point": "与 Datasette 1.0a26 的新列类型集成。",
+      "explanation": "该插件现在利用了最新的列配置系统，确保了与即将发布的 Datasette 主要版本的兼容性。"
+    },
+    {
+      "point": "增强的文件处理与导入功能。",
+      "explanation": "用户现在可以将上传的 CSV 和 TSV 文件直接导入 Datasette 数据表，简化了数据摄入工作流。"
+    },
+    {
+      "point": "自动化图像处理与存储。",
+      "explanation": "插件会自动为上传的图像生成缩略图，并将其存储在结构化的内部表中，以便于访问。"
+    }
+  ],
+  "keyQuotes": [
+    "这是 datasette-files 目前最有趣的 alpha 版本，作为一个新插件，它增加了将文件直接上传到 Datasette 实例的功能。",
+    "新增了 file_actions 插件钩子，以及将上传的 CSV/TSV 文件导入数据表的功能。",
+    "现在可以为图像文件生成缩略图，并存储在内部的 datasette_files_thumbnails 表中。"
+  ],
+  "tags": [
+    "Datasette",
+    "SQLite",
+    "Python",
+    "开源",
+    "数据工程"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 99,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774307198000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-23 23:06:38"
+}

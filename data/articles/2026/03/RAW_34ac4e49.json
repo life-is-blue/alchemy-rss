@@ -1,0 +1,59 @@
+{
+  "id": "RAW_34ac4e49",
+  "title": "AI 编程助手并未加快交付速度，因为编码从来都不是瓶颈",
+  "url": "https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-24 11:30:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agoda recently published an observation arguing that while AI coding tools have measurably raised individual developer output, <a href=\"https://medium.com/agoda-engineering/from-implementers-to-solution-architects-250a95087d75\" target=\"_blank\">the resulting velocity gains at the project level have been surprisingly modest</a>, because coding was never the real bottleneck. The post claims that the bottleneck has shifted upstream to specification and verification because these areas require human judgment. This shift carries significant implications for how engineering teams should be structured.</p>\n   <p><a href=\"https://www.linkedin.com/in/leonardo-stern-4ba56319/\" target=\"_blank\">Leonardo Stern</a>, a software engineer at Agoda, frames this as a rediscovery of Fred Brooks' decades-old argument in \"<a href=\"https://www.cs.unc.edu/techreports/86-020.pdf\" target=\"_blank\">No Silver Bullet</a>\" that improvements in speed to only one part of the development lifecycle produce diminishing returns for overall delivery.</p>\n   <p>The observation aligns with industry-wide data: <a href=\"https://www.faros.ai/blog/ai-software-engineering\" target=\"_blank\">research by Faros AI</a> analyzing telemetry from over 10,000 developers across 1,255 teams found that teams with high AI adoption completed 21% more tasks and merged 98% more pull requests, yet PR review time increased by 91%. This metric is consistent with the diagnosis that acceleration at the coding stage relocates pressure elsewhere.</p>\n   <p>For Stern, the more important implication is what this shift means for team structure. The traditional rationale for small, focused engineering teams was partly built on the assumption that coding was the most significant value-creating activity and that communication was overhead that impeded it.</p>\n   <p>If the highest-value work becomes collaborative specification and architectural alignment, that logic inverts: communication is no longer the cost to minimize, it is the work itself. Smaller teams win not because they reduce coordination but because they achieve shared understanding faster. Five people can genuinely align around intent and corner cases in ways that fifteen typically cannot.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/news/2026/03/agoda-ai-code-bottleneck/en/resources/1Agoda-AI-Coding-Assistant-Engineer-Delieverable-1773573180432.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/agoda-ai-code-bottleneck/en/resources/1Agoda-AI-Coding-Assistant-Engineer-Delieverable-1773573180432.png\" rel=\"share\">\n    <br>\n    <em>The shift in software engineering key deliverables from coding to specification and verification (<a href=\"https://medium.com/agoda-engineering/from-implementers-to-solution-architects-250a95087d75\">source</a>)</em></p>\n   <p>Stern introduces a three-stance taxonomy for how engineers can relate to AI-generated code. The \"white box\" model, where humans read and review every line, does not scale when agents can produce thousands of lines per hour. \"Black box\" or \"<a href=\"https://x.com/karpathy/status/1886192184808149383\" target=\"_blank\">vibe coding</a>\", shipping whatever the AI generates with minimal verification, is fast but brittle for production systems serving large user bases.</p>\n   <p>Stern's preferred middle path, which he calls \"grey box,\" keeps humans accountable at the two points that matter: writing specifications precise enough for the agent to execute correctly, and verifying results against evidence rather than inspecting the implementation line by line. Crucially, he is explicit that accountability does not shift to the AI: the engineer who guides the agent and approves the merge request remains fully responsible for what ships.</p>\n   <p>This reframing of the review from code inspection to evidence evaluation echoes the architectural formalism in Leigh Griffin and Ray Carroll's recent InfoQ article on <a href=\"https://www.infoq.com/articles/spec-driven-development/\" target=\"_blank\">Spec-Driven Development</a>. In this article, they argue that specifications should become the executable source of truth for a system, with generated code treated as a downstream, regenerable artifact.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/news/2026/03/agoda-ai-code-bottleneck/en/resources/1Agoda-AI-Coding-Assistant-Dev-Workflow-1773573180432.png\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/agoda-ai-code-bottleneck/en/resources/1Agoda-AI-Coding-Assistant-Dev-Workflow-1773573180432.png\" rel=\"share\">\n    <br>\n    <em>Human authority is migrating from writing code to defining and governing intent (<a href=\"https://medium.com/agoda-engineering/from-implementers-to-solution-architects-250a95087d75\">source</a>)</em></p>\n   <p>Stern arrives at a compatible conclusion from a workflow perspective: a high-fidelity specification with testable acceptance criteria, explicit corner cases, and captured architectural decisions becomes the primary engineering deliverable, with implementation increasingly delegated. Both pieces converge on the observation that human authority is migrating upward in the abstraction stack — from writing code to defining and governing intent.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"AI Coding Assistants Haven’t Sped up Delivery Because Coding Was Never the Bottleneck\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774351800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "AI 编程助手提高了个人产出，却未能提升项目交付速度，因为开发瓶颈已上移至以人为中心的规格定义与验证环节。",
+  "oneSentenceSummary": "AI 编程助手提高了个人产出，却未能提升项目交付速度，因为开发瓶颈已上移至以人为中心的规格定义与验证环节。",
+  "summary": "本文探讨了 Agoda 的观察结果：尽管 AI 编程工具显著提高了个人开发者的产出，但项目层面的交付速度提升却十分有限。核心论点在于，编码从来都不是软件开发的主要瓶颈；相反，瓶颈已转移到需要人类判断和负责的规格定义与验证环节。文章借鉴了 Faros AI 的数据和 Fred Brooks 的“没有银弹”理论，引入了一种工程领域的“灰盒”模型。在该模型中，开发者从单纯的实现者转型为解决方案架构师，专注于高保真规格定义和基于证据的验证，而非逐行检查代码。这种转变强调，沟通和共识已成为工程团队中创造价值的核心活动。",
+  "mainPoints": [
+    {
+      "point": "编码并非软件交付的主要瓶颈。",
+      "explanation": "AI 加快了实现阶段的速度，但整体项目交付速度受限于精确规格定义和严格验证所需的时间，而这两者仍需人工监督。"
+    },
+    {
+      "point": "“灰盒”模型平衡了 AI 的速度与人类的责任。",
+      "explanation": "工程师应专注于编写精确的规格说明并根据证据（可测试标准）验证结果，而不是逐行阅读 AI 生成的代码或盲目信任输出结果。"
+    },
+    {
+      "point": "工程角色正从实现者演变为解决方案架构师。",
+      "explanation": "随着代码生成成为下游的商品化环节，人类的价值向上迁移，转向定义意图、管控架构决策以及确保系统一致性。"
+    },
+    {
+      "point": "沟通就是工作本身，而非额外负担。",
+      "explanation": "在 AI 辅助的环境中，协作式规格定义和架构对齐成为价值最高的活动，使得达成共识成为小型、专注团队的首要目标。"
+    }
+  ],
+  "keyQuotes": [
+    "编码从来都不是真正的瓶颈。",
+    "人类的权威正在抽象栈中向上迁移——从编写代码转向定义和管控意图。",
+    "小型团队获胜并非因为减少了协调，而是因为他们能更快地达成共识。",
+    "沟通不再是需要最小化的成本，它就是工作本身。",
+    "指导智能体并批准合并请求的工程师，依然对交付的内容负全责。"
+  ],
+  "tags": [
+    "AI 编程助手",
+    "软件工程",
+    "开发者生产力",
+    "项目管理",
+    "Agoda"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 534,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774351800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-24 11:30:00"
+}

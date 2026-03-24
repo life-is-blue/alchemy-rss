@@ -1,0 +1,53 @@
+{
+  "id": "RAW_06542dd3",
+  "title": "参加 Google Cloud Next 2026，与 LangChain 相约",
+  "url": "https://blog.langchain.com/join-langchain-at-google-cloud-next-2026/",
+  "date": "2026-03-23 21:37:58",
+  "author": "LangChain Accounts",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <hr>\n  <p>If you're attending Google Cloud Next 2026 in Las Vegas this year and working on agent development, here's what we have planned.</p>\n  <h2 id=\"visit-us-at-booth-5006\">Visit Us at Booth #5006</h2>\n  <p>We'll be at Booth #5006 in the Expo Hall at the Mandalay Bay Convention Center, April 22-24. Our engineering team will be running demos throughout the week and available for technical conversations. <a href=\"https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=LangChain+-+Google+Cloud+Next+-+Booth+%235006&amp;dates=20260422T160000Z/20260424T210000Z&amp;details=Join+us+at+Google+Cloud+Next+Booth+%235006%0A%0ABooth+Hours%3A%0A*+Wednesday%2C+April+22+%7C+9%3A00+AM+-+6%3A00+PM%0A*+Thursday%2C+April+23+%7C+9%3A00+AM+-+5%3A30+PM%0A*+Friday%2C+April+24+%7C+9%3A00+AM+-+2%3A00+PM&amp;location=LangChain+Booth+%235006%2C+Google+Cloud+Next&amp;ref=blog.langchain.com\" rel=\"noreferrer\">Add to calendar</a>.</p>\n  <figure class=\"kg-card kg-image-card\">\n   <img src=\"https://blog.langchain.com/content/images/2026/03/data-src-image-1698a998-7577-4225-9512-10e01b8b3598.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"1600\" height=\"1200\" srcset=\"https://blog.langchain.com/content/images/size/w600/2026/03/data-src-image-1698a998-7577-4225-9512-10e01b8b3598.png 600w, https://blog.langchain.com/content/images/size/w1000/2026/03/data-src-image-1698a998-7577-4225-9512-10e01b8b3598.png 1000w, https://blog.langchain.com/content/images/2026/03/data-src-image-1698a998-7577-4225-9512-10e01b8b3598.png 1600w\" sizes=\"(min-width: 720px) 720px\">\n  </figure>\n  <h2 id=\"see-whats-new\"><strong>See What's New</strong></h2>\n  <p>We'll be showing the latest updates across the LangChain ecosystem, including:</p>\n  <ul>\n   <li><strong>LangSmith Fleet</strong> for building agents with natural language</li>\n   <li><strong>LangSmith Studio</strong> for visual agent development</li>\n   <li><strong>LangSmith</strong> for agent observability, evaluation, and deployment&nbsp;</li>\n  </ul>\n  <p>If you're hitting challenges with putting&nbsp; agents into production, running evals, or scaling multi-agent systems, this is a good place to get technical feedback from our team.</p>\n  <h2 id=\"meet-harrison\"><strong>Meet Harrison</strong></h2>\n  <p>LangChain CEO Harrison Chase will be at Google Cloud Next meeting with teams building AI applications.</p>\n  <p>He'll be taking meetings throughout the conference.</p>\n  <p>If you want to connect directly with Harrison to discuss roadmap decisions, share what you're building, or talk through production challenges, reach out to your LangChain account executive.</p>\n  <p>If you aren't able to meet with Harrison, our engineering team will be at the booth throughout the conference for demos and technical discussions.</p>\n  <h2 id=\"breakout-session\">Breakout session</h2>\n  <h3 id=\"build-secure-and-scale-agents-on-gke\"><strong>Build, secure and scale agents on GKE</strong></h3>\n  <p>LangChain will be featured in a Google Kubernetes Engine (GKE) breakout session on building secure, scalable environments for AI agents.</p>\n  <p>The session explores the GKE Agent Sandbox, a secure, isolated environment for running untrusted code with low-latency startup. Speakers will cover integration via SDKs or MCP, optimizing compute with GKE Agent Runtime, and techniques like rapid suspend-and-resume and scale-from-zero to keep agents efficient and responsive.</p>\n  <p>Victor Moreira joins as a customer speaker, sharing how LangChain built sandboxes on Google Cloud to safely run and test agents.</p>\n  <p>Speakers:</p>\n  <ul>\n   <li>Victor Moreira, Forward Deployed Engineer @ LangChain</li>\n   <li>Jeremy Olmsted-Thompson, Principal Engineer @ Google Cloud</li>\n   <li>Brandon Royal, Product Manager @ Google Cloud</li>\n  </ul>\n  <p>You can find more information <a href=\"https://www.googlecloudevents.com/next-vegas/session-library?session_id=3912922&amp;name=build-secure-and-scale-agents-on-gke&amp;ref=blog.langchain.com\" rel=\"noreferrer\">here</a>.</p>\n  <p>Session date, time, and room location coming soon.</p>\n  <p>Add to calendar</p>\n  <h2 id=\"the-future-of-dx-is-frictionlesspanel-discussion\">The future of DX is frictionless - Panel Discussion</h2>\n  <p>LangChain joins Atlassian, Datadog, Harness, and Google Cloud to explore how AI agents and open standards are eliminating friction across the developer lifecycle.</p>\n  <p><strong>Session Title: </strong>The Future of DX is Frictionless</p>\n  <p><strong>Overview:</strong></p>\n  <p>Fragmented tools and siloed workflows slow teams down. This session looks at how AI agent interoperability and open standards are enabling a more seamless, “anti-gravity” developer experience, reducing context switching and accelerating delivery across the stack.</p>\n  <p><strong>Moderator:</strong></p>\n  <ul>\n   <li>Utkarsh Guleri, Head of DevEx, AIOps &amp; Database Tech Partnerships, Google Cloud</li>\n  </ul>\n  <p><strong>Speakers:</strong></p>\n  <ul>\n   <li>Don Baron, Head of Product Partnerships, Atlassian</li>\n   <li>Pulkit Chandra, Product Management Leader, Datadog</li>\n  </ul>\n  <p>Nick Durkin, Field CTO, HarnessKaran Singh, Partnerships Lead, LangChain</p>\n  <p><strong>You’ll learn:</strong></p>\n  <ul>\n   <li>How interoperable AI agents streamline workflows across platforms</li>\n   <li>How open standards reduce integration overhead and vendor lock-in</li>\n   <li>Practical ways to build faster, more cohesive developer pipelines</li>\n   <li>What’s next for DevEx in an agent-driven world</li>\n  </ul>\n  <h2 id=\"happy-hour-at-google-cloud-next-2026\">Happy hour at Google Cloud Next 2026</h2>\n  <p><strong>April 23 | Border Grill, Mandalay Bay&nbsp;</strong></p>\n  <p>Join LangChain, MongoDB, and Confluent for a Happy Hour during Google Cloud Next 2026. Kick off the evening with drinks, bites, and great conversations. Connect with builders, engineers, and teams working on modern AI infrastructure.</p>\n  <p>Time: 5:30 PM - 7:00 PMLocation:<strong> </strong>Border Grill, Mandalay Bay3950 S Las Vegas Blvd, Las Vegas, NV</p>\n  <p>Enjoy passed hors d’oeuvres and an open bar. Space is limited, <a href=\"https://events.mongodb.com/googlecloudnext2026happyhour?ref=blog.langchain.com\"><strong><u>register now</u></strong></a><strong> to save your spot.</strong></p>\n  <h2 id=\"langsmith-on-google-cloud-marketplace\">LangSmith on Google Cloud Marketplace</h2>\n  <p>LangSmith is now available in the Google Cloud Marketplace, making it easier for teams building on Google Cloud to procure and deploy LangChain’s platform for AI agents.</p>\n  <p>With Marketplace availability, organizations can purchase LangSmith through their existing Google Cloud account, apply it toward committed cloud spend, and simplify procurement through consolidated billing.</p>\n  <p>LangSmith helps teams debug, evaluate, and monitor AI applications, providing visibility into agent performance and production behavior.</p>\n  <p><a href=\"https://blog.langchain.com/langsmith-is-now-available-in-google-cloud-marketplace/\" rel=\"noreferrer\">Learn more in this blog.</a></p>\n  <hr>\n  <h2 id=\"lets-connect\">Let's Connect</h2>\n  <p>If you want to dig into specific challenges you're facing, whether that's evaluation strategies, deployment patterns, or scaling agent systems, our team is available to meet during Google Cloud Next.</p>\n  <p>Request a meeting and let us know what you'd like to discuss.</p>\n  <!--kg-card-begin: html-->\n  <!--kg-card-end: html-->\n  <hr>\n  <h2 id=\"see-you-in-vegas\">See You in Vegas</h2>\n  <p>Whether you're evaluating tools, debugging production issues, or exploring new agent architectures, stop by and talk with the team.</p>\n  <p>Booth #5006 | April 22-24, 2026 | Mandalay Bay Convention Center</p>\n  <p></p>\n  <p></p>\n </body>\n</html>",
+  "aiSummary": "LangChain 宣布参加 Google Cloud Next 2026，将展示包括 LangSmith Fleet 和 Studio 在内的新型智能体开发工具，举办关于 GKE Agent Sandbox 的技术会议，并宣布上线 Google Cloud Marketplace。",
+  "oneSentenceSummary": "LangChain 宣布参加 Google Cloud Next 2026，将展示包括 LangSmith Fleet 和 Studio 在内的新型智能体开发工具，举办关于 GKE Agent Sandbox 的技术会议，并宣布上线 Google Cloud Marketplace。",
+  "summary": "LangChain 将参加在拉斯维加斯举办的 Google Cloud Next 2026，并展示其生态系统的重大更新。主要亮点包括引入用于自然语言智能体构建的 LangSmith Fleet 和用于可视化开发的 LangSmith Studio。公司还将参与技术会议，重点探讨用于安全智能体执行的 GKE Agent Sandbox 以及无摩擦开发者体验的未来。此外，LangSmith 上线 Google Cloud Marketplace，使企业团队能够利用现有的云承诺消费额度，简化采购流程。",
+  "mainPoints": [
+    {
+      "point": "推出 LangSmith Fleet 和 LangSmith Studio。",
+      "explanation": "通过自然语言界面和可视化开发环境，简化智能体开发的新工具。"
+    },
+    {
+      "point": "关于 GKE Agent Sandbox 的技术合作。",
+      "explanation": "与 Google Cloud 联合举办的会议，将探讨在 Kubernetes 上运行不可信智能体代码的安全、隔离环境，并实现低延迟启动。"
+    },
+    {
+      "point": "LangSmith 上线 Google Cloud Marketplace。",
+      "explanation": "企业团队现在可以直接通过 Google Cloud 采购 LangChain 的可观测性和评估平台，并使用现有的云承诺消费额度。"
+    }
+  ],
+  "keyQuotes": [
+    "用于通过自然语言构建智能体的 LangSmith Fleet",
+    "本次会议将探讨 GKE Agent Sandbox，这是一个用于运行不可信代码的安全、隔离环境，支持低延迟启动。",
+    "LangSmith 现已上线 Google Cloud Marketplace，使在 Google Cloud 上构建应用的团队能够更轻松地采购和部署 LangChain 的 AI 智能体平台。"
+  ],
+  "tags": [
+    "LangChain",
+    "Google Cloud Next",
+    "AI 智能体",
+    "LangSmith",
+    "GKE"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 724,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774301878000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-23 21:37:58"
+}

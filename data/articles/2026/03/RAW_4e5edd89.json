@@ -1,0 +1,53 @@
+{
+  "id": "RAW_4e5edd89",
+  "title": "GitHub 利用 AI 驱动的检测功能扩展应用安全覆盖范围",
+  "url": "https://github.blog/security/application-security/github-expands-application-security-coverage-with-ai-powered-detections/",
+  "date": "2026-03-23 16:00:00",
+  "author": "Marcelo Oliveira",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI is accelerating software development and expanding the range of languages and frameworks used in modern repositories. Security teams are increasingly responsible for protecting code written across many ecosystems, not just the core enterprise languages traditionally covered by static analysis.</p>\n  <p>That’s why GitHub is introducing AI-powered security detections in GitHub Code Security to expand application security coverage across more languages and frameworks. These detections complement CodeQL by surfacing potential vulnerabilities in areas that are difficult to support with traditional static analysis alone. Public preview availability is planned for early Q2.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-expanding-application-security-coverage-with-static-analysis-and-ai\">Expanding application security coverage with static analysis and AI</h2>\n  <p>Static analysis remains an effective way to identify vulnerabilities in supported languages, which is why GitHub Code Security continues to rely on CodeQL for deep semantic analysis. But modern codebases often include scripts, infrastructure definitions, and application components built across many additional ecosystems.</p>\n  <p>To address this reality, GitHub Code Security extends coverage by pairing CodeQL with AI-powered security detections across additional languages and frameworks. This hybrid detection model helps surface vulnerabilities—and suggested fixes—directly to developers within the pull request workflow.</p>\n  <p>In internal testing, the system processed more than 170,000 findings over a 30-day period, with more than 80% positive developer feedback. Early results show strong coverage for ecosystems newly supported through AI-powered detections, including Shell/Bash, Dockerfiles, Terraform configurations (HCL), and PHP.</p>\n  <p>This capability sits within GitHub’s broader agentic detection platform, which powers security, code quality, and code review experiences across the developer workflow. What begins as expanded coverage establishes a foundation for evolving detections over time, pairing the precision of static analysis with deeper context and new vulnerability insights that emerge as development continues to accelerate.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-bringing-expanded-security-coverage-into-pull-requests\">Bringing expanded security coverage into pull requests</h2>\n  <p>Pull requests are where developers already review and approve changes, making them the most effective place to surface security risks early. When a pull request is opened, GitHub Code Security automatically analyzes the changes using the most appropriate detection approach, whether that is static analysis powered by CodeQL or AI-powered security detections.</p>\n  <p>The results appear directly in the pull request alongside other code scanning findings, surfacing risks such as unsafe, string built SQL queries or commands, insecure cryptographic algorithms, and infrastructure configurations that expose sensitive resources.</p>\n  <p>By integrating security detections into the pull request workflow, GitHub helps teams catch and fix vulnerabilities earlier, without asking developers to leave the tools and processes they already use.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-turning-expanded-detection-into-review-ready-fixes-with-copilot-autofix\">Turning expanded detection into review-ready fixes with Copilot Autofix</h2>\n  <p>Identifying vulnerabilities early is only part of the challenge. Security teams must also ensure those issues are fixed quickly and safely.</p>\n  <p>GitHub Code Security connects detection to remediation with Copilot Autofix, which can suggest fixes that developers can review, test, and apply as part of the normal code review process.</p>\n  <p>Developers are already using Autofix at scale. It has fixed more than 460,000 security alerts in 2025, reaching resolution in 0.66 hours on average compared to 1.29 hours without Autofix.</p>\n  <p>Together, expanded detection and Copilot Autofix help teams move faster from finding risk to fixing it.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-enforce-security-outcomes-at-the-point-of-merge\">Enforce security outcomes at the point of merge</h2>\n  <p>Because GitHub sits at the merge point of the development workflow, security teams can enforce outcomes where code is reviewed and approved, not after it ships. By bringing detection, remediation, and policy enforcement together in pull requests, GitHub helps teams reduce risk without slowing development.</p>\n  <p>At RSAC, GitHub will preview how AI-powered security detections expand application security coverage directly within pull requests. This demonstration reflects a broader direction: starting with expanded coverage today, and evolving toward deeper, AI-augmented static analysis as part of GitHub’s agentic detection platform. <strong>Visit GitHub at RSAC booth #2327</strong> to see how hybrid detection, developer-native remediation, and platform governance work together to secure modern software development.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 正在引入 AI 驱动的安全检测功能，以补充 CodeQL，将漏洞覆盖范围扩展至 Shell、Docker 和 Terraform 等语言，并集成在拉取请求（Pull Request）工作流中。",
+  "oneSentenceSummary": "GitHub 正在引入 AI 驱动的安全检测功能，以补充 CodeQL，将漏洞覆盖范围扩展至 Shell、Docker 和 Terraform 等语言，并集成在拉取请求（Pull Request）工作流中。",
+  "summary": "GitHub 宣布通过将 AI 驱动的检测功能集成到 GitHub Code Security 中，扩展其应用安全能力。虽然 CodeQL 仍然是核心语言深度语义分析的标准，但这种新的混合模型利用 AI 来发现传统静态分析难以覆盖的生态系统中的漏洞，例如 Shell/Bash、Dockerfile、Terraform (HCL) 和 PHP。该系统直接集成到拉取请求中，并与 Copilot Autofix 配对以建议修复方案，将平均修复时间从 1.29 小时显著缩短至 0.66 小时。这一举措是 GitHub 更广泛的智能体检测平台的一部分，旨在代码合并前强制执行安全成果。",
+  "mainPoints": [
+    {
+      "point": "混合检测结合了 CodeQL 的精确性和 AI 的灵活性。",
+      "explanation": "通过将传统静态分析与 AI 相结合，GitHub 现在可以检测到基础设施即代码（IaC）和脚本语言中以前难以进行语义分析的漏洞。"
+    },
+    {
+      "point": "安全性直接左移至开发者的拉取请求工作流中。",
+      "explanation": "当 PR 打开时会自动进行分析，使开发人员能够在代码进入生产环境之前发现并修复 SQL 注入或不安全的加密等风险。"
+    },
+    {
+      "point": "Copilot Autofix 显著加速了修复生命周期。",
+      "explanation": "数据显示，AI 辅助修复将平均解决时间缩短了近 50%，帮助安全团队在不减缓开发速度的情况下管理日益增加的检测量。"
+    }
+  ],
+  "keyQuotes": [
+    "这种混合检测模型有助于在拉取请求工作流中直接向开发人员呈现漏洞及其建议的修复方案。",
+    "早期结果显示，通过 AI 驱动的检测功能，新支持的生态系统（包括 Shell/Bash、Dockerfile、Terraform 配置 (HCL) 和 PHP）获得了强大的覆盖能力。",
+    "它在 2025 年修复了超过 46 万个安全警报，平均解决时间达到 0.66 小时，而没有使用 Autofix 时为 1.29 小时。"
+  ],
+  "tags": [
+    "GitHub",
+    "应用安全",
+    "AI 驱动检测",
+    "CodeQL",
+    "Copilot Autofix"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 620,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774281600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-23 16:00:00"
+}

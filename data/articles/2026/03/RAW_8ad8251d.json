@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8ad8251d",
+  "title": "流式专家（Streaming experts）",
+  "url": "https://simonwillison.net/2026/Mar/24/streaming-experts/#atom-everything",
+  "date": "2026-03-24 05:09:03",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">24th March 2026</p>\n   <div class=\"note\">\n    <p>I wrote about Dan Woods' experiments with <strong>streaming experts</strong> <a href=\"https://simonwillison.net/2026/Mar/18/llm-in-a-flash/\">the other day</a>, the trick where you run larger Mixture-of-Experts models on hardware that doesn't have enough RAM to fit the entire model by instead streaming the necessary expert weights from SSD for each token that you process.</p>\n    <p>Five days ago Dan was running Qwen3.5-397B-A17B in 48GB of RAM. Today <a href=\"https://twitter.com/seikixtc/status/2036246162936910322\">@seikixtc reported</a> running the colossal Kimi K2.5 - a 1 trillion parameter model with 32B active weights at any one time, in 96GB of RAM on an M2 Max MacBook Pro.</p>\n    <p>And <a href=\"https://twitter.com/anemll/status/2035901335984611412\">@anemll showed</a> that same Qwen3.5-397B-A17B model running on an iPhone, albeit at just 0.6 tokens/second - <a href=\"https://github.com/Anemll/flash-moe/tree/iOS-App\">iOS repo here</a>.</p>\n    <p>I think this technique has legs. Dan and his fellow tinkerers are continuing to run <a href=\"https://simonwillison.net/tags/autoresearch/\">autoresearch loops</a> in order to find yet more optimizations to squeeze more performance out of these models.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/331/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "这篇文章重点介绍了“流式专家”（streaming experts）技术，该技术通过从 SSD 流式加载权重，使得在消费级硬件上运行诸如 1 万亿参数的 Kimi K2.5 这样的大规模混合专家（MoE）模型成为可能。",
+  "oneSentenceSummary": "这篇文章重点介绍了“流式专家”（streaming experts）技术，该技术通过从 SSD 流式加载权重，使得在消费级硬件上运行诸如 1 万亿参数的 Kimi K2.5 这样的大规模混合专家（MoE）模型成为可能。",
+  "summary": "Simon Willison 分享了关于“流式专家”方法的最新进展，这是本地 LLM 执行的一项突破。该技术允许 RAM 有限的硬件运行大型混合专家（MoE）模型，方法是在处理每个 token 时，仅从 SSD 动态加载必要的专家权重。最近的里程碑包括在 96GB MacBook Pro 上运行 1 万亿参数的 Kimi K2.5 模型，以及在 iPhone 上运行 Qwen3.5-397B 模型。社区正在持续优化这一工作流程，以提高大规模模型在边缘设备上的性能和可访问性。",
+  "mainPoints": [
+    {
+      "point": "流式专家技术允许在低 RAM 硬件上运行大型 MoE 模型。",
+      "explanation": "通过仅从 SSD 加载活跃的专家权重，而不是将整个模型保留在 RAM 中，使得原本无法运行的大规模模型在消费级设备上变得可用。"
+    },
+    {
+      "point": "1 万亿参数的 Kimi K2.5 模型已成功在 MacBook Pro 上运行。",
+      "explanation": "尽管在任何时候都有 32B 的活跃权重，但完整的 1T 参数模型在 96GB 的 M2 Max 上运行良好，证明了权重流式加载的效率。"
+    },
+    {
+      "point": "大规模模型现在正进入 iPhone 等移动设备。",
+      "explanation": "在 iOS 上运行 Qwen3.5-397B 的演示表明，虽然推理速度仍然较低（0.6 t/s），但在手机上运行巨型模型的架构障碍正在被消除。"
+    }
+  ],
+  "keyQuotes": [
+    "通过从 SSD 流式加载必要的专家权重，在 RAM 不足以容纳整个模型的情况下运行更大的混合专家模型，这就是诀窍所在。",
+    "在配备 96GB RAM 的 M2 Max MacBook Pro 上运行庞大的 Kimi K2.5——一个拥有 1 万亿参数、每次推理激活 32B 权重的模型。",
+    "我认为这项技术很有潜力。"
+  ],
+  "tags": [
+    "LLM",
+    "混合专家模型",
+    "MoE",
+    "本地 AI",
+    "硬件优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 145,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774328943000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-24 05:09:03"
+}
