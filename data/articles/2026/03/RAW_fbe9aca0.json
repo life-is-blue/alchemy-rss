@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fbe9aca0",
+  "title": "OpenClaw 逼出 Claude 最强反击！GUI 操控电脑和真人无差别",
+  "url": "https://www.qbitai.com/2026/03/391567.html",
+  "date": "2026-03-24 02:20:26",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"22\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\"><strong>“Anthropic刚刚杀死了OpenClaw。”</strong></p>\n  <p data-track=\"3\">这是Claude Code最新<strong>升级Computer Use能力</strong>的公告底下第一条热评。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260324030312_46d4447b4b9a929664bd049f1aed95bd.webp\" data-src=\"https://image.jido.dev/20260324030312_46d4447b4b9a929664bd049f1aed95bd.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">Claude Code这次升级精准反击了OpenClaw，补齐了开源项目没完善的痛点：</p>\n  <p data-track=\"5\"><strong>基于GUI的操作</strong>，像真人一样通过实时截图“看到”屏幕上的所有内容，然后模拟鼠标键盘操作。</p>\n  <p data-track=\"6\">和人类用电脑没有任何区别了。</p>\n  <p data-track=\"7\">有网友感慨，开源的Openclaw很难跟上Anthropic公司全力开发的更新速度，尽管Openclaw已经是我见过更新最快的软件了。</p>\n  <p data-track=\"8\">当然，这种迭代速度也是Openclaw逼出来的。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260324030312_4b30efaac978c0b1e01cce0b17f6ebb6.jpeg\" data-src=\"https://image.jido.dev/20260324030312_4b30efaac978c0b1e01cce0b17f6ebb6.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"10\"><strong>不再需要API接口或CLI化改造</strong>，从此任何传统软件都纳入Agent操控范围：</p>\n  <p data-track=\"11\">无论是老旧的企业管理系统还是Photoshop、视频剪辑等专业创意软件。</p>\n  <p data-track=\"12\">官方还同步上线了两个高频需求的配套功能：</p>\n  <p data-track=\"13\">一是<strong>远程控制能力</strong>，在外面用手机给Claude派活，它在家里/公司的电脑上就能自动把活干完，不用守在电脑前；</p>\n  <p data-track=\"14\">二是<strong>定时任务功能</strong>，设置好之后每天早上自动运行，不用每次手动触发指令。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260324030311_6fa3fc9dda1e89a9a3f26d9571b23272.webp\" data-src=\"https://image.jido.dev/20260324030311_6fa3fc9dda1e89a9a3f26d9571b23272.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">安全设计上也做了分层，<strong>Claude会优先调用已经授权过的集成能力</strong>（比如Slack、日历、Google Workspace等），只有当工具没有对应连接器的时候，才会申请操作桌面的权限。</p>\n  <p data-track=\"16\">不用用户自己折腾权限配置、隔离环境，官方默认内置了安全机制，<strong>所有敏感操作（删除文件、提交表单、发送消息等）都会先弹出确认请求</strong>，用户同意之后才会执行，同时官方明确推荐用户在Docker隔离环境中运行这个功能，从底层降低操作风险。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260324030311_434ab33e8c00baf2d64d7301c4d8b737.webp\" data-src=\"https://image.jido.dev/20260324030311_434ab33e8c00baf2d64d7301c4d8b737.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"17\">目前这个功能已经向所有Claude Pro和Max用户开放：</p>\n  <p data-track=\"18\">更新到最新版的桌面端Claude应用，配对手机端账号之后就能在设置里开启Computer Use的预览权限。</p>\n  <p data-track=\"19\">目前功能是macOS独占，官方表示后续会根据用户反馈快速迭代，很快就会支持Windows和Linux系统。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260324030311_272c76dc306713a80d5f8c54473c2924.webp\" data-src=\"https://image.jido.dev/20260324030311_272c76dc306713a80d5f8c54473c2924.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"20\">现在唯一的问题是，这玩意要是连续执行任务8小时，得花多少token啊？</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260324030311_568e652ac1698d5f57a1923958c51c27.webp\" data-src=\"https://image.jido.dev/20260324030311_568e652ac1698d5f57a1923958c51c27.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/claudeai/status/2036195789601374705?s=20</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Anthropic 升级 Claude Code 的 Computer Use 能力，支持基于 GUI 的全自动电脑操控、远程控制及定时任务，实现了对传统软件的无缝 Agent 化管理。",
+  "oneSentenceSummary": "Anthropic 升级 Claude Code 的 Computer Use 能力，支持基于 GUI 的全自动电脑操控、远程控制及定时任务，实现了对传统软件的无缝 Agent 化管理。",
+  "summary": "本文报道了 Anthropic 对 Claude Code 进行的重大升级，重点增强了 Computer Use 能力。新版本通过实时截图和模拟鼠标键盘操作，使 Claude 能够像真人一样直接操控各类 GUI 软件，无需 API 或 CLI 适配。此外，官方新增了远程控制和定时任务功能，并建立了多层安全机制（如优先调用集成工具、敏感操作确认及 Docker 隔离建议）。目前该功能面向 macOS 的 Claude Pro 和 Max 用户开放预览，标志着 AI Agent 在通用软件操控领域迈出了重要一步。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 升级 GUI 操控能力，实现「像真人一样」使用电脑。",
+      "explanation": "通过实时截图识别屏幕内容并模拟物理输入，Claude 现在可以操控任何传统软件（如 Photoshop 或旧版企业系统），彻底摆脱了对 API 接口的依赖。"
+    },
+    {
+      "point": "新增远程控制与定时任务，提升 Agent 自动化程度。",
+      "explanation": "用户可通过手机远程派发任务，或设置定时运行指令，使 Claude 能够在无人值守的情况下完成复杂的长流程工作。"
+    },
+    {
+      "point": "引入分层安全设计与隔离环境建议。",
+      "explanation": "系统优先使用已授权的集成能力，对敏感操作强制要求用户确认，并推荐在 Docker 容器中运行，以平衡操作权限与系统安全。"
+    }
+  ],
+  "keyQuotes": [
+    "Anthropic 刚刚杀死了 OpenClaw。",
+    "不再需要 API 接口或 CLI 化改造，从此任何传统软件都纳入 Agent 操控范围。",
+    "Claude 会优先调用已经授权过的集成能力，只有当工具没有对应连接器的时候，才会申请操作桌面的权限。"
+  ],
+  "tags": [
+    "Claude Code",
+    "Computer Use",
+    "Anthropic",
+    "AI Agent",
+    "GUI 自动化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 826,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774318826000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-24 02:20:26"
+}
