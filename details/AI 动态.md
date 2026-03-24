@@ -1,15 +1,21 @@
-> **更新时间**: 2026-03-20 08:11:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-24 08:09:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Claude-推出电脑操作功能](https://x.com/claudeai/status/2036195789601374705)
+
+2026-03-23 21:38:01 | 标签: Claude, Anthropic, AI 智能体, 电脑操作, 自动化
+
+> 这条推文宣布了 Claude 功能的重大扩展，使 AI 能够直接与计算机界面交互以完成任务。这项“电脑操作”功能目前在 macOS 上的 Claude Cowork 和 Claude Code 中可用，允许 AI 打开应用程序、浏览网页并管理电子表格，这是迈向自主 AI 智能体的重要一步。
+
+
+
 ### [Cursor-发布-Composer-2](https://x.com/mntruell/status/2034729462211002505)
 
-2026-03-19 20:31:21 | 标签: Cursor, Composer 2, AI 编程, 编程 Agent, 软件开发
-
-> Cursor CEO Michael Truell 宣布了 Composer 2 的发布。除了功能更新外，他还阐述了公司的战略愿景：作为一家混合型企业，利用顶尖的 API 模型和自有的领域专用模型来打造卓越的编程 Agent，从而将自己与纯粹的应用程序开发商或模型提供商区分开来。
+2026-03-19 20:31:21
 
 
 
@@ -55,13 +61,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
