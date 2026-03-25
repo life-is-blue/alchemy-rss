@@ -1,0 +1,57 @@
+{
+  "id": "RAW_29cedf73",
+  "title": "Uber 利用智能体系统实现设计文档自动化",
+  "url": "https://www.infoq.com/news/2026/03/uber-ai-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-25 01:12:00",
+  "author": "Patrick Farry",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In the Uber Engineering Blog, Ian Guisard described <a href=\"https://www.uber.com/en-EG/blog/automate-design-specs/\">uSpec</a>, an agentic system designed to automate the creation of component design specifications. By leveraging AI agents and the open-source <a href=\"https://figma-console-mcp.southleft.com\">Figma Console Model Context Protocol</a> (MCP), Uber has reduced the time required for detailed documentation from weeks to minutes.</p>\n   <p>The system functions as a \"Visual-to-Technical Spec\" compiler. An AI agent in the Cursor IDE connects to a local Figma Desktop session via a WebSocket bridge. The agent \"crawls\" the component tree, extracting data such as tokens and variant axes. A particularly time-consuming part of the Uber design process was ensuring designs had complete accessibility feature descriptions.</p>\n   <p>Uber maintains seven platform stacks and three accessibility frameworks across hundreds of pages, creating a combinatorial workload for every design change. Previously, Figma documents were manually translated into detailed technical specifications for each stack. uSpec automates this translation from visual design to technical contract.</p>\n   <p>The intelligence of the system resides in Agent Skills—structured Markdown files that encode Uber's internal domain expertise. These skills include:\n    <br>\n    Platform-Specific Accessibility: Mapping a single visual button to its corresponding VoiceOver (iOS), TalkBack (Android), and ARIA (Web) semantic properties, and&nbsp;Density Logic: Calculating how padding and typography scale across Uber’s implementation stacks, including SwiftUI, React, and Android Compose.</p>\n   <p>Governance of proprietary design information is a priority for Uber. uSpec addresses this by keeping the pipeline local. Guisard noted,</p>\n   <blockquote>\n    <p>\"No cloud API, no proprietary design data leaving your network. At Uber, this is what makes AI-assisted documentation possible in the first place: nothing leaves your machine.\"</p>\n   </blockquote>\n   <p>\n    <br>\n    By using the Figma Console MCP, proprietary design data remains on the local network. The agent reads and writes to the local Figma Desktop app rather than calling cloud-based design APIs.\n   </p>\n   <p>uSpec is integrated into Michelangelo, <a href=\"https://www.infoq.com/news/2024/09/uber-genai-gateway-llm-openai/\">Uber’s centralized AI platform</a>. To maintain security, all agentic requests pass through the GenAI Gateway, a Go-based proxy that mirrors the OpenAI API. The gateway provides functions such as PII Redaction, scrubbing internal identifiers before requests reach external models like Claude 3.5 or GPT-4o.</p>\n   <p>Uber’s choice to maintain Figma as the primary artifact represents one side of an architectural divide in 2026. <a href=\"https://www.reddit.com/r/UXDesign/comments/1oq08xy/has_anyone_successfully_used_ai_to_help_build_a/\">Discussions on platforms like Reddit</a> (r/UXDesign) suggest that while enterprise scale requires a visual \"source of truth\" for cross-functional alignment, individual developers are increasingly using agentic workflows to jump from requirements directly to production-ready code.</p>\n   <p>User u/Bandos-AI commented on the shift:</p>\n   <blockquote>\n    <p>\"I am a hybrid between developer and UX designer. I leverage AI a ton when coding and lately I rarely use Figma anymore. It's super easy to prompt your way into reusable UI components. React and similar front-end frameworks are especially good with AI as they are based on collections of isolated components.\"\n     <br>\n     &nbsp;</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber Automates Design Documentation with Agentic Systems\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Patrick Farry\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/uber-ai-design/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774401120000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 的 uSpec 系统利用 AI 智能体和 Figma Console MCP，在确保数据隐私的同时，将视觉设计自动转换为详细的技术和无障碍规范。",
+  "oneSentenceSummary": "Uber 的 uSpec 系统利用 AI 智能体和 Figma Console MCP，在确保数据隐私的同时，将视觉设计自动转换为详细的技术和无障碍规范。",
+  "summary": "Uber 开发了 uSpec，这是一个能够自动创建组件设计规范的智能体系统，将文档编写时间从数周缩短至几分钟。它充当“视觉到技术规范”编译器，利用 Cursor IDE 中的 AI 智能体通过模型上下文协议（MCP）抓取本地 Figma 会话。该系统提取设计令牌（Design Tokens）和变体轴（Variant Axes），为 Uber 的七个平台栈生成技术契约。其核心功能是利用“智能体技能”（Agent Skills）将视觉元素映射到特定平台的无障碍属性（VoiceOver、TalkBack、ARIA）。为了维护安全性，uSpec 在本地处理数据，并在与外部 LLM 通信之前，利用 Uber 的 GenAI 网关进行个人身份信息（PII）脱敏。",
+  "mainPoints": [
+    {
+      "point": "uSpec 充当编译器，将视觉设计转换为技术契约。",
+      "explanation": "通过抓取 Figma 组件树，该系统提取设计令牌和无障碍数据，从而使原本手动且耗时的多平台栈文档编写过程实现自动化。"
+    },
+    {
+      "point": "该系统利用 Figma Console MCP 确保本地数据治理。",
+      "explanation": "通过 WebSocket 网桥连接到本地 Figma 桌面会话，Uber 将专有设计数据保留在内部网络中，避免了基于云的设计 API 带来的安全风险。"
+    },
+    {
+      "point": "智能体技能（Agent Skills）为复杂的跨平台映射编码了领域专业知识。",
+      "explanation": "结构化的 Markdown 文件引导 AI 将单个视觉组件映射到 iOS、Android 和 Web 框架中的特定语义属性，包括复杂的缩放逻辑。"
+    },
+    {
+      "point": "与 GenAI 网关的集成，为 LLM 交互提供了安全层。",
+      "explanation": "所有智能体请求都通过一个基于 Go 的代理，在到达 Claude 3.5 或 GPT-4o 等外部模型之前，执行 PII 脱敏并清除内部标识符。"
+    }
+  ],
+  "keyQuotes": [
+    "没有云 API，没有专有设计数据离开你的网络。在 Uber，这正是 AI 辅助文档得以实现的前提：没有任何数据离开你的机器。",
+    "该系统充当‘视觉到技术规范’编译器。",
+    "uSpec 实现了从视觉设计到技术契约的自动化转换。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "MCP",
+    "Figma",
+    "Uber 工程",
+    "设计系统"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 445,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774401120000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-25 01:12:00"
+}
