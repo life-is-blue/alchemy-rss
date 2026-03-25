@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-25 22:24:59 | [返回首页](/README.md)
+**更新时间**: 2026-03-26 00:24:23 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10403)
+- [AI & 大模型](#ai-llm) (10408)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (735)
 - [DevOps](#devops) (463)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Anthropic-揭秘-Agent-长线开发架构：引入-GAN-机制，Claude-自主撸出全栈应用](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957) - AI 精选
 - [MiniMax-Office-Skills：开源一套生产级办公文档引擎](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488238&idx=1&sn=76aaec3e7e688c31cd8f40b9d0080e70) - AI 精选
 - [Moda-如何利用-Deep-Agents-构建生产级-AI-设计智能体](https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/) - AI 精选
 - [快速正则搜索：为智能体工具建立文本索引-·-Cursor](https://cursor.com/blog/fast-regex-search) - AI 精选
@@ -41,9 +42,8 @@
 - [向量搜索的扩展：量化与套娃式嵌入比较，实现-80%-成本降低](https://towardsdatascience.com/649627-2/) - AI 精选
 - [NVIDIA-AI-Q-如何在-DeepResearch-Bench-I-和-II-中夺得第一](https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench) - AI 精选
 - [智能体-Harness-的解构](https://blog.langchain.com/the-anatomy-of-an-agent-harness/) - AI 精选
-- [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
 
-- [查看全部 10403 篇...](/details/tags/ai-llm.md)
+- [查看全部 10408 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
