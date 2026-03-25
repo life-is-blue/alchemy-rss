@@ -1,0 +1,58 @@
+{
+  "id": "RAW_5afe74ed",
+  "title": "bliki：架构决策记录 (ADR)",
+  "url": "https://martinfowler.com/bliki/ArchitectureDecisionRecord.html",
+  "date": "2026-03-24 13:50:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>An Architecture Decision Record (ADR) is a short document that captures and explains a single decision relevant to a product or ecosystem. Documents should be short, just a couple of pages, and contain the decision, the context for making it, and significant ramifications. They should not be modified if the decision is changed, but linked to a superseding decision.</p>\n  <p>As with most written documents, writing ADRs serves two purposes. Firstly they act as a record of decisions, allowing people months or years later to understand why the system is constructed in the way that it is. But perhaps even more valuable, the act of writing them helps to clarify thinking, particularly with groups of people. Writing a document of consequence often surfaces different points of view - forcing those differences to be discussed, and hopefully resolved.</p>\n  <p>A general rule is to follow an “inverted pyramid” style of writing, commonly associated with news stories. The key is to put the most important material at the start, and push details to later in the record.</p>\n  <p>The common advice is to keep decision records in the source repository of the code base to which they apply. A common choice for their location is <code>doc/adr</code>. This way they are easily available to those working on the code base. For similar reasons they should be written in a lightweight markup language, such as markdown, so they can be easily read and diffed just like any code. We can use a build task to publish them to a product team's website.</p>\n  <p>Storing them in a product repository won't work for ADRs that cover a broader ecosystem than a single code base. Some folks also feel that keeping ADRs in git makes it too hard for non-developers to work with them.</p>\n  <p>Each record should be its own file, and should be numbered in a monotonic sequence as part of their file name, with a name that captures the decision, so that they are easy to read in a directory listing. (for example: “<code>0001-HTMX-for-active-web-pages</code>“).</p>\n  <p>Each ADR has a status. “proposed” while it is under discussion, “accepted” once the team accepts it and it is active, “superseded” once it is significantly modified or replaced - with a link to the superseding ADR. Once an ADR is accepted, it should never be reopened or changed - instead it should be superseded. That way we have a clear log of decisions and how long they governed the work.</p>\n  <p>ADRs contain not just the decision, but also a brief rationale for the decision. This should summarize the problem that led to this decision being needed and the trade-offs that were taken into account. A good way to think of them follows the notion of “forces” when writing a pattern. As part of this it's valuable to explicitly list all the serious alternatives that were considered, together with their pros and cons.</p>\n  <p>Any decision has consequences. Sometimes these are clearly implied from the rationale, but sometimes it's worth clearly stating them in a explicit section. Decisions are usually made under some degree of uncertainty, so it's handy to record the confidence level of the decision. This is a good place to mention any changes in the product context that should trigger the team to reevaluate the decision.</p>\n  <p>ADRs play a central role in the <a href=\"https://martinfowler.com/articles/scaling-architecture-conversationally.html\">Advice Process</a>, where they are not only used to document decisions, but the act of writing them is used to elicit expertise and alignment. In this case they should also include advice gathered in forming the ADR, although in order to keep things brief, it may be better to summarize the advice in the ADR and keep a full record of advice separately.</p>\n  <p>The most important thing to bear in mind here is brevity. Keep the ADR short and to the point - typically a single page. If there's supporting material, link to it.</p>\n  <p>While ADRs are a form for recording decisions in software architecture, the broader concept of writing short decision records is worth considering in other contexts. This kind of decision log creates a valuable historic record that can do much to explain why things are the way they turned out.</p>\n  <div class=\"furtherReading\">\n   <h2>Further Reading</h2>\n   <p>Michael Nygard coined the term “Architecture Decision Record” with an <a href=\"https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions\">ADR-formatted article</a> in 2011. While he did not originate the idea of a decision log he did make case for a lightweight document, with a focus on the decision itself. In this he was particularly inspired by Phillipe Kruchten talking about decision registers / decision logs, and by the writing style of <a href=\"https://martinfowler.com/articles/writingPatterns.html\">software patterns</a>. His article is better than pretty much everything else written on the topic, my only desire to write this one was to point to some developments since.</p>\n   <p>On this site, there are brief examples of ADR formats in articles by <a href=\"https://martinfowler.com/articles/scaling-architecture-conversationally.html#adr\">Harmel-Law</a> and <a href=\"https://martinfowler.com/articles/building-infrastructure-platform.html#ArchitecturalDecisionRecords\">Rowse and Shepherd</a>.</p>\n   <p><a href=\"https://github.com/npryce/adr-tools\">adr-tools</a> is a simple command line tool to manage ADRs. It includes a set of ADRs for itself that are a good example of the form.</p>\n  </div>\n  <div class=\"acknowledgements\">\n   <h2>Acknowledgements</h2>\n   <p>Andrew Harmel-Law, Brandon Cook, David Lucas, Francisco Dias, Giuseppe Matheus Pereira, John King, Kief Morris, Michael Joyce, Neil Price, Shane Gibson, Steven Peh, and Vijay Raghavan Aravamudhan discussed drafts of this post on our internal chat. Michael Nygard gave some background on the origins of his writing.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "架构决策记录 (ADR) 是一种简明扼要的文档，用于记录单项架构决策的背景、基本原理和后果，旨在提供历史记录并理清团队思路。",
+  "oneSentenceSummary": "架构决策记录 (ADR) 是一种简明扼要的文档，用于记录单项架构决策的背景、基本原理和后果，旨在提供历史记录并理清团队思路。",
+  "summary": "Martin Fowler 探讨了架构决策记录 (ADR) 的概念，这是一种由 Michael Nygard 最初提出的用于记录软件架构选择的实践。ADR 是简短且不可篡改的文档，记录了决策背后的“原因”，包括背景、权衡和长期影响。除了作为历史档案外，撰写 ADR 还是理清思路和统一团队成员意见的重要工具。Fowler 建议将这些记录以带编号的 Markdown 文件形式存储在代码仓库中，以确保它们受到版本控制、易于开发人员访问，并像源代码一样受到严谨对待。",
+  "mainPoints": [
+    {
+      "point": "ADR 既是历史记录，也是认知工具。",
+      "explanation": "它们使未来的维护者能够理解系统的设计演变，同时迫使当前团队在撰写过程中理清思路并解决冲突的观点。"
+    },
+    {
+      "point": "通过版本控制和状态更新维护不可篡改的日志。",
+      "explanation": "一旦被接受，ADR 就不应再被编辑。如果决策发生变更，则会创建一个新的 ADR，并将其状态标记为“已取代 (superseded)”，同时链接回原始文档，从而保留清晰的审计追踪。"
+    },
+    {
+      "point": "采用轻量级的“代码邻近”存储策略。",
+      "explanation": "记录应以 Markdown 文件的形式保存在源代码仓库中（例如 `doc/adr`），确保它们易于搜索、可比对，并且工程团队可以轻松访问。"
+    },
+    {
+      "point": "关注基本原理、权衡和后果。",
+      "explanation": "一份好的 ADR 不仅仅是陈述一个选择，它还概述了所涉及的“作用力”、考虑过的替代方案，以及该决策对产品未来的具体影响。"
+    }
+  ],
+  "keyQuotes": [
+    "架构决策记录 (ADR) 是一份简短的文档，用于捕获和解释与产品或生态系统相关的单一决策。",
+    "撰写一份具有影响力的文档往往会浮现出不同的观点——迫使这些分歧得到讨论，并有望得到解决。",
+    "一旦 ADR 被接受，就不应重新打开或更改——而应将其取代。",
+    "这里最重要的一点是简洁。保持 ADR 短小精悍——通常只有一页纸。"
+  ],
+  "tags": [
+    "架构",
+    "ADR",
+    "软件工程",
+    "文档",
+    "决策"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 91,
+  "wordCount": 879,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774360200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-24 13:50:00"
+}

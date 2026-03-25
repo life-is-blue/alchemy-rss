@@ -1,0 +1,47 @@
+{
+  "id": "RAW_c16fb96e",
+  "title": "来自 Christopher Mims 的一段引言",
+  "url": "https://simonwillison.net/2026/Mar/24/christopher-mims/#atom-everything",
+  "date": "2026-03-24 20:35:52",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">24th March 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://bsky.app/profile/mims.bsky.social/post/3mhsux67xpk2d\">\n     <p>I really think \"give AI total control of my computer and therefore my entire life\" is going to look so foolish in retrospect that everyone who went for this is going to look as dumb as Jimmy Fallon holding up a picture of his Bored Ape</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://bsky.app/profile/mims.bsky.social/post/3mhsux67xpk2d\">Christopher Mims</a>, <span class=\"context\">Technology columnist at The Wall Street Journal</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2126/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "科技专栏作家 Christopher Mims 将当前赋予 AI 计算机自主控制权的趋势，与如今备受嘲讽的“无聊猿”（Bored Ape）NFT 热潮进行了尖锐的类比。",
+  "oneSentenceSummary": "科技专栏作家 Christopher Mims 将当前赋予 AI 计算机自主控制权的趋势，与如今备受嘲讽的“无聊猿”（Bored Ape）NFT 热潮进行了尖锐的类比。",
+  "summary": "这篇文章记录了《华尔街日报》科技专栏作家 Christopher Mims 的一个挑衅性观点，由 Simon Willison 分享。Mims 对新兴的“AI 智能体”（AI Agents）范式——即赋予系统对用户数字生活的完全控制权——表达了深切的怀疑。他预测，这种对 AI 自主权的信任水平，最终会被视为与“无聊猿游艇俱乐部”（Bored Ape Yacht Club）NFT 现象一样令人后悔和尴尬。",
+  "mainPoints": [
+    {
+      "point": "赋予 AI 完全控制权的趋势被预测为未来尴尬的来源。",
+      "explanation": "Mims 认为，当前对自主 AI 智能体的狂热在回首往事时会显得愚蠢，暗示人们忽视了其中的风险和缺乏控制的问题。"
+    },
+    {
+      "point": "AI 自主性被比作 NFT 泡沫。",
+      "explanation": "通过使用“无聊猿”类比，作者将推动 AI 驱动的计算机控制视为一种缺乏长期实质或智慧的炒作驱动的时尚。"
+    }
+  ],
+  "keyQuotes": [
+    "我真的认为，‘赋予 AI 对我电脑的完全控制权，进而控制我的整个生活’这种做法，在回首往事时会显得如此愚蠢，以至于所有参与其中的人看起来都会像 Jimmy Fallon 举着他的无聊猿图片一样傻。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "AI 自主性",
+    "Christopher Mims",
+    "科技趋势",
+    "AI 怀疑论"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 59,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774384552000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-24 20:35:52"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-25 06:07:33 | [返回首页](/README.md)
+**更新时间**: 2026-03-25 08:11:08 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10364)
+- [AI & 大模型](#ai-llm) (10385)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (735)
-- [DevOps](#devops) (462)
+- [DevOps](#devops) (463)
 - [产品与商业](#product-business) (35)
-- [其他](#other) (5198)
+- [其他](#other) (5209)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Moda-如何利用-Deep-Agents-构建生产级-AI-设计智能体](https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/) - AI 精选
 - [快速正则搜索：为智能体工具建立文本索引-·-Cursor](https://cursor.com/blog/fast-regex-search) - AI 精选
 - [现代-LLM-中注意力机制变体的可视化指南](https://magazine.sebastianraschka.com/p/visual-attention-variants) - AI 精选
 - [针对数据中心的攻击、各尺寸的-Qwen3.5、DeepSeek-的华为布局，等等...](https://www.deeplearning.ai/the-batch/issue-345) - AI 精选
@@ -41,9 +42,8 @@
 - [智能体-Harness-的解构](https://blog.langchain.com/the-anatomy-of-an-agent-harness/) - AI 精选
 - [编程智能体如何重塑工程、产品与设计](https://blog.langchain.com/how-coding-agents-are-reshaping-engineering-product-and-design/) - AI 精选
 - [PlugMem：一个适用于各类-AI-智能体任务的通用记忆系统](https://www.microsoft.com/en-us/research/blog/from-raw-interaction-to-reusable-knowledge-rethinking-memory-for-ai-agents/) - AI 精选
-- [Claude-Code，-Claude-Cowork-与-Codex-#5-—-LessWrong](https://www.lesswrong.com/posts/rNes65r9TKegdLowb/claude-code-claude-cowork-and-codex-5) - AI 精选
 
-- [查看全部 10364 篇...](/details/tags/ai-llm.md)
+- [查看全部 10385 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -129,7 +129,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 462 篇...](/details/tags/devops.md)
+- [查看全部 463 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5198 篇...](/details/tags/other.md)
+- [查看全部 5209 篇...](/details/tags/other.md)
 
 

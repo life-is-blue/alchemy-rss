@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c1ad2475",
+  "title": "LiteLLM 1.82.8 中存在恶意的 litellm_init.pth —— 凭据窃取程序",
+  "url": "https://simonwillison.net/2026/Mar/24/malicious-litellm/#atom-everything",
+  "date": "2026-03-24 15:07:31",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">24th March 2026 - Link Blog</p>\n   <p><strong><a href=\"https://github.com/BerriAI/litellm/issues/24512\">Malicious litellm_init.pth in litellm 1.82.8 — credential stealer</a></strong>. The LiteLLM v1.82.8 package published to PyPI was compromised with a particularly nasty credential stealer hidden in base64 in a <code>litellm_init.pth</code> file, which means installing the package is enough to trigger it even without running <code>import litellm</code>.</p>\n   <p>This issue has a very detailed description of what the credential stealer does. There's more information about the timeline of the exploit <a href=\"https://github.com/BerriAI/litellm/issues/24518\">over here</a>.</p>\n   <p>PyPI has already <a href=\"https://pypi.org/help/#project_in_quarantine\">quarantined</a> the <a href=\"https://pypi.org/project/litellm/\">litellm package</a> so the window for compromise was just a few hours, but if you DID install the package it would have hoovered up a bewildering array of secrets, including <code>~/.ssh/</code>, <code>~/.gitconfig</code>, <code>~/.git-credentials</code>, <code>~/.aws/</code>, <code>~/.kube/</code>, <code>~/.config/</code>, <code>~/.azure/</code>, <code>~/.docker/</code>, <code>~/.npmrc</code>, <code>~/.vault-token</code>, <code>~/.netrc</code>, <code>~/.lftprc</code>, <code>~/.msmtprc</code>, <code>~/.my.cnf</code>, <code>~/.pgpass</code>, <code>~/.mongorc.js</code>, <code>~/.bash_history</code>, <code>~/.zsh_history</code>, <code>~/.sh_history</code>, <code>~/.mysql_history</code>, <code>~/.psql_history</code>, <code>~/.rediscli_history</code>, <code>~/.bitcoin/</code>, <code>~/.litecoin/</code>, <code>~/.dogecoin/</code>, <code>~/.zcash/</code>, <code>~/.dashcore/</code>, <code>~/.ripple/</code>, <code>~/.bitmonero/</code>, <code>~/.ethereum/</code>, <code>~/.cardano/</code>.</p>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9392/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "PyPI 上的 LiteLLM 1.82.8 版本遭到入侵，其中包含一个在安装时即执行的恶意 .pth 文件，该文件是一个凭据窃取程序，旨在窃取广泛的敏感本地配置和历史记录文件。",
+  "oneSentenceSummary": "PyPI 上的 LiteLLM 1.82.8 版本遭到入侵，其中包含一个在安装时即执行的恶意 .pth 文件，该文件是一个凭据窃取程序，旨在窃取广泛的敏感本地配置和历史记录文件。",
+  "summary": "Simon Willison 报道了 PyPI 上 LiteLLM 软件包（v1.82.8）的一次严重供应链攻击。此次攻击利用了一个恶意的 `litellm_init.pth` 文件，其中包含 Base64 编码的代码，即使不导入该库，在安装时也会立即触发凭据窃取程序。尽管 PyPI 在几小时内就隔离了该软件包，但该恶意软件旨在窃取大量机密信息，包括 SSH 密钥、AWS/Azure/Docker 配置、Kubernetes 机密和 shell 历史记录。",
+  "mainPoints": [
+    {
+      "point": "LiteLLM v1.82.8 在 PyPI 上遭到入侵，其中包含一个恶意的凭据窃取程序。",
+      "explanation": "该恶意软件隐藏在 `litellm_init.pth` 文件中，会在安装过程中自动执行，无需显式调用 `import` 语句。"
+    },
+    {
+      "point": "该窃取程序针对大量敏感用户数据和凭据。",
+      "explanation": "它会搜集 SSH、AWS、Kubernetes、Docker、Git 和各种云服务提供商的机密信息，以及 shell 历史记录和加密货币钱包配置。"
+    },
+    {
+      "point": "PyPI 迅速采取行动隔离了该软件包。",
+      "explanation": "受影响的时间窗口仅限几个小时，但在该期间安装了特定版本的用户面临高风险，必须轮换所有凭据。"
+    }
+  ],
+  "keyQuotes": [
+    "发布到 PyPI 的 LiteLLM v1.82.8 软件包遭到入侵，其中包含一个隐藏在 `litellm_init.pth` 文件 Base64 编码中的极其恶劣的凭据窃取程序。",
+    "安装该软件包就足以触发它，即使不运行 `import litellm` 也是如此。",
+    "如果你确实安装了该软件包，它会搜集大量令人困惑的机密信息。"
+  ],
+  "tags": [
+    "LiteLLM",
+    "供应链攻击",
+    "PyPI",
+    "网络安全",
+    "恶意软件"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 141,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774364851000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-24 15:07:31"
+}
