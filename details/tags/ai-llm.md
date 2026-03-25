@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-25 08:11:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-25 10:58:57 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Moda-如何利用-Deep-Agents-构建生产级-AI-设计智能体](https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/)
 
-2026-03-24 17:13:26 | 标签: AI 智能体, LangChain, Deep Agents, 上下文工程, 视觉设计
-
-> Moda 是一个 AI 原生设计平台，旨在让非设计师也能创作专业的视觉内容。本次技术深度解析探讨了他们基于 LangChain 的 Deep Agents 框架构建的多智能体系统，该系统包含设计、研究和品牌工具包智能体。一项关键创新是他们摒弃了包含大量坐标的 XML 格式，转而采用一种自定义 DSL，为 LLM 提供更易于推理的布局抽象。其架构采用了“分流-技能-主循环”（Triage-Skills-Main Loop）工作流，通过快速模型对任务进行分类，并利用提示词缓存（prompt caching）预加载特定的设计指南。他们还实现了动态工具加载，以保持上下文窗口的精简。LangSmith ...
+2026-03-24 17:13:26
 
 
 
@@ -4390,9 +4388,7 @@
 
 ### [AI-智能体沙盒化，速度提升-100-倍](https://blog.cloudflare.com/dynamic-workers/)
 
-2026-03-24 13:00:00 | 标签: Cloudflare Workers, AI 智能体, 沙盒化, V8 隔离, 代码模式
-
-> Cloudflare 宣布推出 Dynamic Worker Loader 公测版，这是一种专为 AI 智能体时代设计的轻量级沙盒解决方案。传统的基于容器的沙盒通常启动缓慢且资源密集，而 Dynamic Workers 利用 V8 隔离（isolates）实现了毫秒级的启动时间和极小的内存占用。该基础设施支持 Cloudflare 的“代码模式”（Code Mode）理念，即智能体通过编写和执行 TypeScript 代码来执行任务，而不是进行连续的工具调用。这种方法可以将 Token 使用量减少 80% 以上。本文详细介绍了使用 TypeScript RPC 替代冗长的 OpenAPI/HT...
+2026-03-24 13:00:00
 
 
 
@@ -11184,65 +11180,49 @@
 
 ### [来自-Christopher-Mims-的一段引言](https://simonwillison.net/2026/Mar/24/christopher-mims/#atom-everything)
 
-2026-03-24 20:35:52 | 标签: AI 智能体, AI 自主性, Christopher Mims, 科技趋势, AI 怀疑论
-
-> 这篇文章记录了《华尔街日报》科技专栏作家 Christopher Mims 的一个挑衅性观点，由 Simon Willison 分享。Mims 对新兴的“AI 智能体”（AI Agents）范式——即赋予系统对用户数字生活的完全控制权——表达了深切的怀疑。他预测，这种对 AI 自主权的信任水平，最终会被视为与“无聊猿游艇俱乐部”（Bored Ape Yacht Club）NFT 现象一样令人后悔和尴尬。
+2026-03-24 20:35:52
 
 
 
 ### [🔬-为什么还没有“材料界的-AlphaFold”-——-专访-Heather-Kulik-谈-AI-材料发现](https://www.latent.space/p/materials)
 
-2026-03-24 16:53:15 | 标签: AI for Science, 材料科学, LLM 推理, AlphaFold, 化学工程
-
-> 本文总结了对麻省理工学院教授、AI 材料科学先驱 Heather Kulik 的采访。文章探讨了为什么材料科学领域尚未迎来“AlphaFold 时刻”，指出与生物学中 20 种氨基酸相比，元素周期表的复杂性极高，且缺乏高质量、可迁移的数据集。Kulik 分享了成功案例，例如利用量子效应设计出韧性提升四倍的 AI 聚合物，同时也强调了“22 原子配体挑战”——这是一个当前 LLM 无法展现基本化学直觉的任务。讨论强调了严谨领域专业知识的必要性，指出了依赖不一致的科学文献的陷阱，以及在工业界大规模投资 AI 的时代，学术好奇心的关键作用。
+2026-03-24 16:53:15
 
 
 
 ### [如何让-Claude-Code-从自身错误中改进](https://towardsdatascience.com/how-to-make-claude-code-improve-from-its-mistakes/)
 
-2026-03-24 16:30:00 | 标签: Claude Code, AI 智能体, 持续学习, 提示工程, 开发者生产力
-
-> 作者探讨了 AI 编程智能体在持续学习方面面临的挑战，指出虽然人类可以通过经验自然地进步，但智能体往往缺乏对错误的持久记忆。为了弥补这一差距，文章介绍了三种可操作的策略：在每个任务结束时使用 `/generalize-knowledge` 指令将经验教训提取到 Markdown 文件中；通过自动化日志审查实现每日反思；以及开发“技能”（Skills）——即智能体可以动态加载以处理特定 API 或工作流的专业文档。这些方法确保了智能体能够建立一种直觉并避免重复过去的错误，从而显著提高开发人员在特定代码库中的效率。
+2026-03-24 16:30:00
 
 
 
 ### [LiteLLM-1.82.8-中存在恶意的-litellm_init.pth-——-凭据窃取程序](https://simonwillison.net/2026/Mar/24/malicious-litellm/#atom-everything)
 
-2026-03-24 15:07:31 | 标签: LiteLLM, 供应链攻击, PyPI, 网络安全, 恶意软件
-
-> Simon Willison 报道了 PyPI 上 LiteLLM 软件包（v1.82.8）的一次严重供应链攻击。此次攻击利用了一个恶意的 `litellm_init.pth` 文件，其中包含 Base64 编码的代码，即使不导入该库，在安装时也会立即触发凭据窃取程序。尽管 PyPI 在几小时内就隔离了该软件包，但该恶意软件旨在窃取大量机密信息，包括 SSH 密钥、AWS/Azure/Docker 配置、Kubernetes 机密和 shell 历史记录。
+2026-03-24 15:07:31
 
 
 
 ### [生产就绪的-LLM-智能体：离线评估的综合框架](https://towardsdatascience.com/production-ready-llm-agents-a-comprehensive-framework-for-offline-evaluation/)
 
-2026-03-24 13:30:00 | 标签: LLM 智能体, 离线评估, RAGAS, LLM-as-Judge, AI 工程
-
-> 本文探讨了 AI 开发中关键的“生产鸿沟”问题，即令人印象深刻的演示往往无法达到企业级的可靠性标准。作者提出了一个专为非确定性多智能体系统设计的综合离线评估框架。该框架建立在三个支柱之上：路由评估（通过确保查询到达合适的专家来优化成本和性能）、LLM-as-Judge（使用 GPT-4 或 Claude 等高级模型来评估事实准确性、推理能力和完整性）以及 RAG 评估（利用忠实度（faithfulness）和上下文精确度等指标来消除幻觉）。作者还详细介绍了如何将这些评估操作化到 CI/CD 流水线中，并使其符合企业治理和风险管理的要求。
+2026-03-24 13:30:00
 
 
 
 ### [龙虾爆火之后，AI-初创的全球化机会来了吗？｜线下沙龙报名](https://www.qbitai.com/2026/03/391760.html)
 
-2026-03-24 13:09:56 | 标签: AI 出海, 全球化, AI 初创企业, 量子位, AgentOps
-
-> 本文为量子位主办的「AI 初创全球化」线下沙龙活动预告。活动聚焦 AI 原生时代初创企业如何从「Day 0」开始布局全球市场，探讨应用场景选择与渠道建设。文中介绍了 Leewow（AI 创意周边）、脑回录（消费级脑机接口）、米塔视界（空间智能终端）及 DataElem（企业级 AgentOps）等躬身实践的 AI 团队，并预告了来自谷歌、京东、声网等大厂及 FluxA、Meshy 等初创企业的实战经验分享，旨在拆解 AI 出海的真实逻辑与增长路径。
+2026-03-24 13:09:56
 
 
 
 ### [使用训练计划（Training-Plans）部署具有固定-GPU-容量的-SageMaker-AI-推理端点-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/deploy-sagemaker-ai-inference-endpoints-with-set-gpu-capacity-using-training-plans/)
 
-2026-03-24 12:27:49 | 标签: Amazon SageMaker AI, GPU 容量, 推理端点, 训练计划, AWS
-
-> 本文详细介绍了 Amazon SageMaker AI 的一项新功能，允许用户利用原本为训练工作负载设计的“训练计划”来锁定推理端点的 GPU 容量。这对于两周的模型评估或突发性工作负载等场景特别有用，因为在这些场景中，按需容量可能无法预测。文章提供了分步指南，涵盖了搜索容量产品（专门针对“endpoint”资源）、创建预留，以及使用 `CapacityReservationConfig` 和预留的 ARN 配置 SageMaker 端点。指南还涵盖了生命周期管理，包括更新模型、在预留限制内进行扩展，以及预留过期后端点的行为。
+2026-03-24 12:27:49
 
 
 
 ### [橘子：互联网已死，DAU-是负债，Agent-永生](https://mp.weixin.qq.com/s?__biz=MzE5OTE3NTEyMA==&mid=2247485574&idx=1&sn=8f31bfbe2203f84630602cadce4eae26)
 
-2026-03-24 10:47:00 | 标签: Agent Native, AI 创业, TUI, DAU, 生产关系
-
-> 文章记录了 AI 创业者橘子关于 Agent Native 时代的深度思考。核心观点认为移动互联网时代的 DAU 模式已成为负债，因为每个 DAU 都在消耗算力成本，若无法转化为 ARR，规模越大亏损越快。未来应转向「For the Agent， By the Agent」的组织哲学，即产品设计应服务于 Agent 而非人类，利用 TUI 绕过 GUI 的局限，通过 Token 的 ROI 衡量商业价值。文章强调了 Agent 时代生产关系的变革，即不再为人类设计需求，而是为 Agent 创造环境，让 Agent 成为生产力主体。
+2026-03-24 10:47:00
 
 
 
@@ -11254,9 +11234,7 @@
 
 ### [高效-Agents-的尽头是，Harness](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247505552&idx=1&sn=26f5b568667bf83c0be471fa99fe866c)
 
-2026-03-24 08:08:00 | 标签: OpenDev, Agent Harness, Coding Agents, LLM, 上下文管理
-
-> 文章详细介绍了 OpenDev 团队提出的 Coding Agent 工程化设计哲学。核心观点是将 Agent 系统解耦为 Scaffolding（构建期）和 Harness（运行时）。通过引入 Extended ReAct 循环、自适应上下文压缩（ACC）、双记忆架构（Dual-Memory）以及五层防御纵深安全架构，OpenDev 有效解决了终端 Agent 在长周期任务中面临的上下文爆炸、安全风险及推理能力退化等挑战。文章还探讨了模型路由、MCP 工具延迟发现及模糊匹配编辑等关键技术实现，为构建生产级 AI 编程助手提供了系统性的架构参考。
+2026-03-24 08:08:00
 
 
 
@@ -33090,17 +33068,13 @@
 
 ### [使用-Copilot-SDK-构建-AI-驱动的-GitHub-Issue-分类工具](https://github.blog/ai-and-ml/github-copilot/building-ai-powered-github-issue-triage-with-the-copilot-sdk/)
 
-2026-03-24 16:00:00 | 标签: GitHub Copilot SDK, AI 开发, Node.js, React Native, 软件架构
-
-> 本文探讨了 IssueCrush 的实现过程，这是一款旨在利用 GitHub Copilot SDK 简化 GitHub Issue 分类流程的移动应用。文章详细介绍了运行该 SDK 所需的服务端 Node.js 环境架构、为防止资源泄漏所需的特定生命周期管理，以及利用 Issue 元数据进行有效提示词工程的策略。作者还强调了优雅降级和客户端缓存的重要性，以确保即使在 AI 服务不可用时，应用也能提供稳健的用户体验。
+2026-03-24 16:00:00
 
 
 
 ### [介绍-JetBrains-Central：一个用于智能体软件开发的开放系统](https://blog.jetbrains.com/blog/2026/03/24/introducing-jetbrains-central-an-open-system-for-agentic-software-development/)
 
-2026-03-24 12:58:08 | 标签: JetBrains Central, AI 智能体, 智能体工作流, AI 治理, 软件工程
-
-> JetBrains Central 旨在将 AI 从孤立的生产力提升工具转变为可管理的、企业级的生产系统。它采用分层架构，提供治理、策略执行、成本管理和基于云的智能体执行基础设施。通过连接 IDE、CLI 和 CI/CD 流水线，该平台使组织能够在保持现有工具投资的同时，对智能体工作流保持可见性和控制力。该系统强调一个语义层，用于聚合代码和基础设施的上下文，使智能体能够以系统级的理解力而非仅仅是提示词层面的交互来运作。
+2026-03-24 12:58:08
 
 
 
@@ -33118,9 +33092,7 @@
 
 ### [AI-真正的机遇在于电网](https://hackernoon.com/the-real-ai-opportunity-is-the-power-grid?source=rss)
 
-2026-03-24 11:05:42 | 标签: AI, 电网, 基础设施, 预测性维护, 能源行业
-
-> 作者作为 IEEE 高级会员，批评了 AI 社区对聊天机器人和编程助手的过度痴迷，并强调了美国电网老化这一被忽视的危机。随着数据中心和电气化带来的需求激增，电网正面临前所未有的压力。文章指出，这正是机器学习的绝佳用武之地：电网充斥着海量数据，需要进行预测性维护、异常检测和前瞻性管理。作者指出了监管阻力、数据复杂性和文化保守主义等准入门槛，但强调真正的价值在于那些“枯燥乏味”的基础设施工作。文章最后呼吁，既具备领域专业知识又拥有技术能力的工程师应挺身而出，弥合机器学习研究与运营现实之间的鸿沟。
+2026-03-24 11:05:42
 
 
 
@@ -33132,9 +33104,7 @@
 
 ### [OpenAI-Codex-负责人：底层技术是-AI-时代的唯一底牌，工程师终将成为“代码审查员”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247829484&idx=3&sn=7aba057f2c465f9e593a733701d60bf7)
 
-2026-03-24 09:58:00 | 标签: Michael Bolin, OpenAI, Meta, 软件工程, AI 编程
-
-> 本文编译自对 OpenAI Codex 技术负责人 Michael Bolin 的深度访谈。Bolin 回顾了他在 Meta（原 Facebook）期间通过重构构建系统 Buck 和开发虚拟文件系统 Eden 解决规模化难题，并最终晋升至 E9 职级的经历。他指出，高阶工程师的价值在于解决系统性“屎山”和跨部门协调，而非单纯写代码。加入 OpenAI 后，他经历了从“工程主导”到“研究主导”的文化冲击，并透露目前 90% 的代码由 AI 生成。他强调，在 AI 时代，深厚的底层系统知识（如内存分配、汇编、内核调用）是识别 AI 幻觉、修正架构错误的唯一护城河，工程师的角色正从“编写者”转变为“...
+2026-03-24 09:58:00
 
 
 
@@ -46738,9 +46708,7 @@ http://antirez.com/news/162
 
 ### [当你的-AI-说「我很开心」的时候，它是真的在开心](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566207&idx=1&sn=a2604f2e0129d98ec9db593549ace7c7)
 
-2026-03-24 08:15:00 | 标签: 大语言模型, 内省能力, 机械可解释性, AI 安全, 线性探针
-
-> 文章深入探讨了 AI 是否能真实感知并报告其内部状态这一前沿课题。基于 Nicolas Martorell 2026 年的研究，文章指出 AI 的口头回答（贪心解码）往往是缺乏信息量的「人格幻觉」，但通过分析 logit 分布的概率加权期望值，可以提取出丰富的内省信号。研究利用线性探针在 LLaMA 模型隐藏层中定位了幸福感、兴趣等情感概念的方向，并通过激活引导（Activation Steering）人为扰动这些激活，观察到自我报告随之发生因果性改变。实验揭示了显著的规模效应：8B 模型在幸福感维度的内省精度（R²）高达 0.90。此外，研究还发现提升「专注度」等特定状态能跨维度增强模型对其...
+2026-03-24 08:15:00
 
 
 
@@ -46752,9 +46720,7 @@ http://antirez.com/news/162
 
 ### [黄仁勋-Lex-Fridman-访谈深度解析：极致协同设计、AI-尺度定律与英伟达的商业哲学](https://mp.weixin.qq.com/s?__biz=MzIxODUzNTg2MA==&mid=2247490499&idx=1&sn=168601c465ed2edd3db6a1dda359bda3)
 
-2026-03-24 05:29:00 | 标签: 英伟达, 黄仁勋, AI 尺度定律, CUDA, 极致协同设计
-
-> 本文详尽记录了英伟达 CEO 黄仁勋与 Lex Fridman 的深度对话。黄仁勋阐述了英伟达如何通过「极致协同设计」重构计算定义，将计算单元从单颗芯片扩展至吉瓦级 AI 工厂，以应对分布式计算中的阿姆达尔定律挑战。他复盘了 CUDA 早期通过普及装机量建立生态护城河的生死决策，并提出了 AI 尺度定律从预训练向「代理扩展（Agentic Scaling）」进化的观点。访谈还涉及了英伟达独特的「光速」管理哲学、对台积电信任关系的珍视，以及对中国 AI 创新速度和开源文化的极高评价。黄仁勋断言 AGI 已经临近，未来全球程序员将因 AI 辅助扩展至 10 亿人，人类的核心竞争力将回归品格、同理心...
+2026-03-24 05:29:00
 
 
 
@@ -46766,9 +46732,7 @@ http://antirez.com/news/162
 
 ### [OpenClaw-闭门局：真正值得关注的-Agent-生态位在哪？](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523427&idx=1&sn=dbf618ec7e136f6a1d2f1f161ef86ca0)
 
-2026-03-24 01:02:00 | 标签: Agent 生态, OpenClaw, AI 基础设施, Agent 支付, 环境感知
-
-> 文章记录了 Founder Park 举办的 AI 产品市集 Meetup 闭门研讨精华。核心观点认为 OpenClaw 的火爆预示着 Agent 生态需要从底层基础设施（支付、身份、协议、运行时）进行全面重构。与会创业者深入探讨了五个关键维度：1. Token 消耗带来的生产力质变；2. 支付与身份是 Agent 自主交易的最后公里；3. 硬件的未来在于环境理解与实时感知；4. Agent 记忆的挑战在于精准取用而非存储；5. 商业模式应从「为人做工具」转向「为 Agent 提供 API 服务」。
+2026-03-24 01:02:00
 
 
 
@@ -61366,25 +61330,19 @@ http://antirez.com/news/162
 
 ### [Anthropic-为-Claude-Code-推出自动模式](https://x.com/claudeai/status/2036503582166393240)
 
-2026-03-24 18:01:05 | 标签: Claude Code, Anthropic, AI 编程, 自动模式, 智能体工作流
-
-> Anthropic 为 Claude Code 发布了“自动模式”，这是一项旨在简化开发工作流的重要更新。Claude 现在可以自主做出权限决策，而无需针对每一次文件写入或 Bash 命令进行手动确认。系统内置了安全防护机制，在执行前对操作进行检查，从而在效率与安全性之间取得平衡。
+2026-03-24 18:01:05
 
 
 
 ### [OpenAI-Foundation-宣布-10-亿美元投入计划及领导层变动](https://x.com/sama/status/2036488680769241223)
 
-2026-03-24 17:01:52 | 标签: OpenAI Foundation, AI 安全, AI 韧性, Sam Altman, 领导层
-
-> Sam Altman 详细介绍了 OpenAI Foundation 的战略重点，强调了 AI 在加速科学发现（如攻克疾病）与制造复杂社会威胁方面的双重潜力。基金会承诺在未来一年内投入至少 10 亿美元来应对这些挑战。此外，Altman 还宣布了重大的领导层变动，包括 Wojciech Zaremba 转任 AI 韧性负责人，以及生命科学、公民社会、财务和运营部门的新任命。
+2026-03-24 17:01:52
 
 
 
 ### [LiteLLM-遭遇严重供应链攻击](https://x.com/karpathy/status/2036487306585268612)
 
-2026-03-24 16:56:24 | 标签: LiteLLM, 供应链攻击, 安全, Python, 依赖管理
-
-> Andrej Karpathy 详细介绍了针对 PyPI 上 LiteLLM 包的严重供应链攻击。恶意版本窃取了敏感凭据，包括 SSH 密钥、云服务提供商令牌和数据库密码。此次攻击强调了现代软件开发中传递依赖的极端风险。Karpathy 指出，此次攻击仅因恶意软件中的一个导致用户机器崩溃的 Bug 而被发现，这促使人们重新评估依赖管理实践。
+2026-03-24 16:56:24
 
 
 
