@@ -1,0 +1,58 @@
+{
+  "id": "RAW_76bea30f",
+  "title": "从“被动感知”到“理解接触”，它石智航联合六大机构发布 OmniVTA 视触觉世界模型",
+  "url": "https://www.qbitai.com/2026/03/392105.html",
+  "date": "2026-03-25 08:43:16",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>想象这样一个场景：你正在擦桌子、削水果，或者插拔一个精密零件。这些动作对人类来说轻而易举，然而对于机器人来说，这些看似简单的操作却是一道难以跨越的技术鸿沟。</p>\n  <p>近期，它石智航联合新加坡国立大学、复旦大学、中科院自动化所、清华大学、中关村学院以及北京航空航天大学六大顶尖机构，推出OmniVTA视触觉操作框架和OmniViTac大规模视触觉数据集并发表相关论文，让机器人实现从被动感知，到对触觉进行主动预测和闭环精准控制，迈出灵巧操作的关键一步。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392106\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石1.png\" alt=\"\" width=\"1000\" height=\"704\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/dd7030dd-cf9a-4dfb-75bc-45211d60e400/public 1000w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/25c0a2e9-6e97-4ad2-3467-dba6a2f40300/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>论文链接：https://arxiv.org/pdf/2603.19201</p>\n  <p>项目主页：https://mrsecant.github.io/OmniVTA/</p>\n  <p>数据集链接：https://huggingface.co/datasets/tars-robotics/OmniVitac</p>\n  <p>当前，业内深陷于一个反直觉困境：即便触觉传感器在机器人领域已经广泛应用，整个行业却深陷”感知更多、做得更差”的困境。机器人明明”摸得到”，却依然”不会用”。为什么给机器人提供额外的触觉感知，反而可能让它表现更差？答案在于，当前主流方案对触觉本质存在根本性误解。</p>\n  <p>机器人操作领域长期缺乏对接触动态的建模和对触觉信息的有效利用。当前主流方案仅将视觉与触觉特征简单拼接后输入策略网络。这种方式看似合理，实际上却忽视了触觉的核心特征。相较于具备全局语义与连续观测能力的视觉，触觉信号<strong>高度局部</strong>且由<strong>接触事件驱动，</strong>无法提供全局感知，难以支撑长时序规划。</p>\n  <p>更关键的是，<strong>接触本质上是一个随时间演化的动态过程</strong>。擦拭、削皮、插接、拧紧等操作，都是”接触状态随时间不断变化”的过程。然而，现有方法通常仅利用当前或历史几帧触觉观测，缺乏对”接触如何随时间演化”的显式建模。结果是触觉往往只被用于简单的接触检测或视觉遮挡补偿，而无法真正参与对接触过程的预测与决策。同时高频触觉数据缺失也让模型难以学习真实接触规律，操作稳定性与泛化性严重不足。</p>\n  <p><strong>人类真实行为启发：”预测+反馈”协同机制</strong></p>\n  <p>如何破解这一困局？答案或许就藏在人类自身的神经机制中。</p>\n  <p>神经科学研究表明，人类在进行接触操作时，依赖的是一套”预测+反馈”的协同机制：大脑一方面通过前向模型提前预测动作将带来的感觉变化，另一方面通过实时感觉反馈进行快速修正，抵消误差和扰动。正是这种”先预测再修正”的机制，让人类能够在不确定的环境中，依然完成稳定而灵巧的接触操作。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392107\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石2.png\" alt=\"\" width=\"584\" height=\"487\"></p>\n  <p style=\"text-align: center;\"><strong>“预测 + 反馈”的协同机制。图源：Motor prediction[1]</strong></p>\n  <p>本次它石智航联合六大顶尖机构，从数据底座与技术框架双向攻坚。在数据层面上，团队发布了<strong>OmniViTac大规模视触觉数据集</strong>，如下图所示，为后续模型训练筑牢基础。</p>\n  <p>这是迄今为止规模最大、质量最高的视触觉操作数据集之一，目前已收录2万余条操作轨迹，覆盖近百类任务和百余种物体，并将接触模式系统性分为擦拭、削皮、切割、抓取、装配以及手内调整六类，在数据采集过程中严格保证视觉、触觉与动作的高精度同步，并保留了原始传感器频率。该数据集也同步受到了业界认可，<strong>获得由魔搭社区（ModelScope）主办的“EAI-2025年度10大数据集”奖项</strong>。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392114\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石3.jpg\" alt=\"\" width=\"1152\" height=\"533\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1a483580-9b59-4725-9fe4-1a0291149800/public 1152w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/52bce355-0f38-47f6-7ddc-a72e48b64000/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"> <img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392108\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石4.png\" alt=\"\" width=\"900\" height=\"626\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1cdb71ce-5851-405d-c1d4-2cda3d198c00/public 900w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/cf951e4b-62ef-4aa2-bde5-453a6a40d000/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p style=\"text-align: center;\"><strong>OmniVitac数据集</strong></p>\n  <p>依托 OmniViTac 的多模态数据支持，它石创新提出了 OmniVTA——一种以世界模型为核心的视触觉操作框架。该方法的<strong>核心思路在于从“被动感知触觉”转向“主动预测触觉”</strong>：机器人不仅能够感知当前触觉信号，还实现了建模并预测未来触觉的演化过程，并以此指导动作规划与闭环调整。</p>\n  <p>在系统设计上，OmniVTA 采用慢–快分层控制结构，如下图所示：慢系统基于视觉–触觉世界模型预测未来触觉表征并生成动作序列，快系统则利用预测触觉与实时触觉反馈进行反射式高频控制，从而实现稳定、鲁棒且精细的接触操作。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392109\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石5.png\" alt=\"\" width=\"901\" height=\"261\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c4837ca7-38ae-4e4f-f231-aaf1570d0600/public 901w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/1b0c1c5f-758d-447a-f215-39f8be210900/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p style=\"text-align: center;\"><strong>OmniVTA系统图</strong></p>\n  <p>在此基础上， OmniVTA通过四个关键模块协同构建统一的闭环控制体系，使机器人具备“预测触觉—理解接触—修正动作”的能力，从而重塑其在复杂接触场景中的操作表现：</p>\n  <p><strong>TactileVAE</strong>：通过时空联合编码与隐式函数解码，将高频、稠密的触觉3D形变压缩为低维连续潜变量表示，如下图所示。该模块不仅在空间上保留细粒度接触结构（如剪切、法向形变等），还在时间上建模触觉动态变化，从而有效刻画接触过程的演化轨迹。在显著降低数据维度与计算开销的同时，为后续预测与控制提可泛化的触觉表征，使机器人能够高效理解当前接触状态并快速响应环境变化。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392110\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石6.png\" alt=\"\" width=\"878\" height=\"427\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/21991c96-0d3f-4161-af28-e6f396de6900/public 878w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/8db65372-1661-4278-5a06-dacbcdccaf00/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p style=\"text-align: center;\"><strong>TactileVAE网络结构图</strong></p>\n  <p><strong>视触觉世界模型（预测模块）</strong>：基于双流扩散生成架构，在共享条件约束下联合建模视觉与触觉的时序演化关系。视觉分支提供全局语义与几何先验，触觉分支聚焦局部接触动态，两者在潜空间中协同对齐，从而实现对未来触觉信号的高质量预测。通过显式建模“接触发生前—接触发生中—接触演化后”的动态过程，该模块使机器人能够提前预判接触趋势（如即将发生的接触、接触强度变化或滑动风险），为动作规划提供前瞻性信息支撑。</p>\n  <p><strong>自适应融合策略（决策模块）</strong>：引入 Latent Tactile Differential（LTD）编码器，对当前触觉与预测触觉之间的差异进行显式建模，从而提取接触动态变化的关键信号。在此基础上，结合门控（gating）机制对视觉与触觉模态进行动态加权，使策略能够根据接触阶段自适应调整感知依赖：在无接触或远接触阶段侧重视觉全局信息，在接触发生及演化阶段增强触觉主导作用。该模块有效避免了简单特征拼接带来的信息冲突问题，使动作决策更加精确且具备情境适应性。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392111\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石7.png\" alt=\"\" width=\"893\" height=\"335\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/77a90157-d33e-4551-a754-cf5a4da7f600/public 893w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/54d3ce8b-aae2-43f0-daa3-f76bd6d82000/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p style=\"text-align: center;\"><strong>OmniVTA慢策略：视触觉世界模型+自适应融合策略</strong></p>\n  <p><strong>反射式触觉控制器（执行模块）</strong>：基于预测触觉与实时触觉反馈，在 60 Hz 高频下输出单步修正动作，对慢系统生成的动作序列进行连续闭环补偿。该控制器通过建模触觉误差（预测–观测差异）实现快速响应，可在接触扰动、物体偏移或摩擦变化等情况下即时修正执行轨迹，从而显著提升操作稳定性与精度。其引入使系统具备类似人类“触觉反射”的能力，能够有效弥补低频规划带来的滞后性。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392112\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石8.png\" alt=\"\" width=\"396\" height=\"338\"></p>\n  <p style=\"text-align: center;\"><strong>基于触觉特征的反射式控制器</strong></p>\n  <p><strong>实操验证：从”机械记忆”到”理解接触”</strong></p>\n  <p>实验数据表明，OmniVTA视触觉操作框架在不同物体、不同接触模式下均取得了最优性能。在位置变化、工具变化和外界扰动等情境中，展现出了远超传统方法的鲁棒性和泛化能力。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392117\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/头.png\" alt=\"\" width=\"900\" height=\"285\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/14e1fb0c-a7e7-4863-e7f1-046f2be63e00/public 900w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/fd7d4e91-59a3-4c33-1351-b009508f5400/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392115\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石9.jpg\" alt=\"\" width=\"1129\" height=\"485\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/c05603db-42d3-4d56-7c45-b2d8273b9c00/public 1129w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/9b4c1b17-f9dd-4a9e-ec6a-8cf918d79400/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p style=\"text-align: center;\"><strong>操作过程中实时扰动-恢复接触</strong></p>\n  <p>更具深远意义的是，模型学习到了可迁移的接触动态规律。如下图所示，模型能根据预测的接触状态自适应调整视觉与触觉的权重，并在不同物体和工具下保持稳定表现。这表明机器人正在从“执行动作”走向“理解物理接触”，逐步具备类似人类的预测与反馈协同能力。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-392116\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/它石10-1.png\" alt=\"\" width=\"898\" height=\"436\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/5a9dcf08-e98c-42f1-d55e-970356ff3d00/public 898w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/27f3c1ad-ed32-4cd2-0189-68194e37a400/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p style=\"text-align: center;\"><strong>门控机制效果：触觉和视觉权重随操作过程的变化</strong></p>\n  <p>可以看到，OmniVTA展示了一条清晰的技术路径：以“世界模型”为核心，以预测为先导、反馈为保障，最终使机器人能够真正胜任精密装配、家居清洁与食材备制等工业生产与日常生活中不可或缺的接触密集型（contact-rich）任务。本次它石联合多所顶尖科研机构发布的OmniVTA框架，不仅在学术研究方面有所突破，更具有深远的产业应用落地价值，将具身智能“干活”的能力提升至可落地、可泛化、可规模化的全新高度。</p>\n  <p>&nbsp;</p>\n  <p><strong>引用</strong></p>\n  <p>[1] Wolpert, Daniel M., and J. Randall Flanagan. “Motor prediction.” Current biology 11.18 (2001): R729-R732.</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>转载来源：它石智航</p>\n  <p>本文为量子位获授权转载，观点仅为原作者所有。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "它石智航联合六大机构发布 OmniVTA 视触觉世界模型及大规模数据集 OmniViTac，通过“预测+反馈”机制实现机器人从被动感知到主动理解接触的跨越。",
+  "oneSentenceSummary": "它石智航联合六大机构发布 OmniVTA 视触觉世界模型及大规模数据集 OmniViTac，通过“预测+反馈”机制实现机器人从被动感知到主动理解接触的跨越。",
+  "summary": "文章介绍了由它石智航联合新加坡国立大学、复旦大学等六大机构研发的 OmniVTA 视触觉操作框架及其配套的大规模数据集 OmniViTac。该研究针对机器人领域“感知更多、做得更差”的触觉应用困境，提出从被动感知转向主动预测。OmniVTA 借鉴人类神经机制，构建了基于世界模型的“预测+反馈”协同体系，包含 TactileVAE 触觉表征、视触觉世界模型预测、自适应融合决策及反射式触觉控制四大模块。实验证明，该框架能显著提升机器人在擦拭、削皮、精密装配等接触密集型任务中的鲁棒性与泛化能力，标志着具身智能向理解物理接触迈出关键一步。",
+  "mainPoints": [
+    {
+      "point": "触觉感知的核心在于建模随时间演化的接触动态而非静态特征拼接。",
+      "explanation": "传统方案仅将视触觉特征简单拼接，忽视了触觉高度局部且由事件驱动的特性。OmniVTA 通过显式建模接触过程的演化，使机器人能预判接触趋势。"
+    },
+    {
+      "point": "借鉴人类“预测+反馈”机制构建慢-快分层控制结构。",
+      "explanation": "慢系统基于世界模型预测未来触觉并生成动作序列，快系统利用预测与实时反馈的差异进行 60Hz 高频反射式修正，平衡了长时序规划与实时稳定性。"
+    },
+    {
+      "point": "TactileVAE 与双流扩散架构实现了高维触觉数据的有效压缩与联合预测。",
+      "explanation": "通过时空联合编码将 3D 形变压缩为低维潜变量，并利用扩散模型在共享条件下对齐视觉全局语义与触觉局部动态，提升预测质量。"
+    },
+    {
+      "point": "大规模高质量数据集 OmniViTac 为具身智能灵巧操作提供了数据底座。",
+      "explanation": "该数据集包含 2 万余条操作轨迹，覆盖百余种物体和六大类接触模式，严格保证了视触觉与动作的高精度同步及原始采样频率。"
+    }
+  ],
+  "keyQuotes": [
+    "接触本质上是一个随时间演化的动态过程。",
+    "核心思路在于从「被动感知触觉」转向「主动预测触觉」：机器人不仅能够感知当前触觉信号，还实现了建模并预测未来触觉的演化过程。",
+    "其引入使系统具备类似人类「触觉反射」的能力，能够有效弥补低频规划带来的滞后性。",
+    "机器人正在从「执行动作」走向「理解物理接触」，逐步具备类似人类的预测与反馈协同能力。"
+  ],
+  "tags": [
+    "OmniVTA",
+    "视触觉世界模型",
+    "具身智能",
+    "机器人灵巧操作",
+    "OmniViTac"
+  ],
+  "topicTag": "other",
+  "readTime": 12,
+  "score": 88,
+  "wordCount": 2946,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774428196000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-25 08:43:16"
+}
