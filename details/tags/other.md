@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-25 18:15:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-25 20:11:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11857,17 +11857,13 @@
 
 ### [Databricks-发布-Lakewatch：全新的开放式智能体-SIEM](https://www.databricks.com/blog/databricks-announces-lakewatch-new-open-agentic-siem)
 
-2026-03-25 01:17:58 | 标签: Databricks, Lakewatch, SIEM, 安全运营, 数据湖仓
-
-> Databricks 发布了 Lakewatch，这是一个全新的安全平台，将数据湖仓的经济性和灵活性引入了安全运营（SecOps）。Lakewatch 解决了传统 SIEM 的局限性（如高成本、数据孤岛以及无法处理多模态数据），使组织能够摄取并保留全保真（full-fidelity）的安全遥测数据。通过集成 AI 智能体并利用 Unity Catalog，该平台使安全团队能够自动化威胁检测、执行自然语言查询，并将安全信号与业务上下文相关联。此次发布还强调了对 Antimatter 和 SiftD.ai 的收购以增强安全能力，并推出了开放安全湖仓生态系统（Open Security Lakeho...
+2026-03-25 01:17:58
 
 
 
 ### [MySQL-复制延迟终结者：AliSQL-高效-AI-诊断和四大内核级优化](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559101&idx=1&sn=00a250ea95a424a51f8d463ba1c59dfd)
 
-2026-03-25 00:31:00 | 标签: MySQL, AliSQL, 数据库内核, 主从复制, 性能优化
-
-> 文章针对 MySQL 主从复制延迟这一影响可用性的核心痛点，详细介绍了阿里云自研内核 AliSQL 的解决方案。内容涵盖了四类典型延迟场景：大表 DDL、大事务、批量数据处理以及小事务高并发业务。AliSQL 通过引入 RDS AI 助手实现自动化根因诊断，并配合内核级优化手段——如将 DDL 和大事务 Binlog 提前传输的「实时复制」、减少 30% 加锁次数的「高并发优化」、以及将阻塞逻辑下沉至 Worker 线程的「中等事务并行优化」，实现了在复杂业务负载下从库的零延迟或极低延迟应用。
+2026-03-25 00:31:00
 
 
 
@@ -31269,11 +31265,11 @@
 
 
 
-### [Cursor-设计负责人：只会画按钮的设计师，有麻烦了](https://baoyu.io/blog/2026-02-21/cursor-ryo-lu-design-team)
+### [同样的模型，为什么-Cursor-跑不过-Claude-Code？](https://baoyu.io/blog/2026-02-23/claude-code-vs-cursor)
 
-2026-02-22T03:46:14.000Z
+2026-02-24T00:00:00.000Z
 
-> Cursor 设计负责人 Ryo Lu 在访谈中谈到：4 人设计团队如何管理 293 亿美元产品、用 Cursor 构建 Cursor 的递归飞轮、最强程序员也只能同时管 4 个 Agent、以及为什么 Cursor 不想做代码编辑器。
+> 同样的 Claude 模型，在 Cursor 和 Claude Code 里效果差很多。问题不在模型，而在上下文管理、使用场景和数据飞轮三个结构性差异。当编程从「人写代码」变成「人指挥 Agent 写代码」，原生 CLI 工具天然比 IDE 里长出来的 Agent 更有优势。
 
 
 
