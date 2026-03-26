@@ -1,31 +1,33 @@
-> **更新时间**: 2026-03-25 08:11:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-26 08:13:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Google-发布-Lyria-3-Pro-和-Lyria-3-Clip-音乐模型](https://x.com/OfficialLoganK/status/2036848277333622956)
+
+2026-03-25 16:50:46 | 标签: Google, Lyria 3, Gemini API, AI 音乐, 生成式 AI
+
+> Logan Kilpatrick 宣布发布 Lyria 3 Pro（用于生成完整歌曲）和 Lyria 3 Clip（用于生成 30 秒音乐片段）音乐生成模型。这些模型现已集成至 Gemini API 以及 Google AI Studio 中全新的音乐体验里，标志着 Google 面向开发者和创作者的生成式音频能力得到了重大扩展。
+
+
+
 ### [Anthropic-为-Claude-Code-推出自动模式](https://x.com/claudeai/status/2036503582166393240)
 
-2026-03-24 18:01:05 | 标签: Claude Code, Anthropic, AI 编程, 自动模式, 智能体工作流
-
-> Anthropic 为 Claude Code 发布了“自动模式”，这是一项旨在简化开发工作流的重要更新。Claude 现在可以自主做出权限决策，而无需针对每一次文件写入或 Bash 命令进行手动确认。系统内置了安全防护机制，在执行前对操作进行检查，从而在效率与安全性之间取得平衡。
+2026-03-24 18:01:05
 
 
 
 ### [OpenAI-Foundation-宣布-10-亿美元投入计划及领导层变动](https://x.com/sama/status/2036488680769241223)
 
-2026-03-24 17:01:52 | 标签: OpenAI Foundation, AI 安全, AI 韧性, Sam Altman, 领导层
-
-> Sam Altman 详细介绍了 OpenAI Foundation 的战略重点，强调了 AI 在加速科学发现（如攻克疾病）与制造复杂社会威胁方面的双重潜力。基金会承诺在未来一年内投入至少 10 亿美元来应对这些挑战。此外，Altman 还宣布了重大的领导层变动，包括 Wojciech Zaremba 转任 AI 韧性负责人，以及生命科学、公民社会、财务和运营部门的新任命。
+2026-03-24 17:01:52
 
 
 
 ### [LiteLLM-遭遇严重供应链攻击](https://x.com/karpathy/status/2036487306585268612)
 
-2026-03-24 16:56:24 | 标签: LiteLLM, 供应链攻击, 安全, Python, 依赖管理
-
-> Andrej Karpathy 详细介绍了针对 PyPI 上 LiteLLM 包的严重供应链攻击。恶意版本窃取了敏感凭据，包括 SSH 密钥、云服务提供商令牌和数据库密码。此次攻击强调了现代软件开发中传递依赖的极端风险。Karpathy 指出，此次攻击仅因恶意软件中的一个导致用户机器崩溃的 Bug 而被发现，这促使人们重新评估依赖管理实践。
+2026-03-24 16:56:24
 
 
 
@@ -83,13 +85,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 

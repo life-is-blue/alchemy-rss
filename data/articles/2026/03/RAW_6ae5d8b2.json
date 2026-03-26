@@ -1,0 +1,58 @@
+{
+  "id": "RAW_6ae5d8b2",
+  "title": "QCon London 2026：赋能下一个 10 亿开发者的工具",
+  "url": "https://www.infoq.com/news/2026/03/qcon-next-developers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-25 15:22:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At <a href=\"https://qconlondon.com/presentation/mar2026/tools-enable-next-1b-developers\">QCon London 2026</a>, Ivan Zarea, Director of Platform Engineering at Netlify, presented \"Tools That Enable the Next 1B Developers,\" exploring how AI tooling is transforming who builds for the web and what that means for developer tools, frameworks, and platform architecture.</p>\n   <p>Zarea opened by highlighting Netlify's rapid growth, noting the platform has expanded from 6 million to 11 million developers in under a year. Similar growth patterns have been observed across platforms like Vercel, Supabase, and Replit. However, a paradox is emerging: while developer numbers are surging, the percentage of users who self-identify as \"developers\" is declining. Many new builders are domain experts creating internal tools, personal applications, and SaaS replacements, such as an HR team that built their own employee survey tool.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/qcon-next-developers/news/2026/03/qcon-next-developers/en/resources/1netify2-1774355373576.jpeg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/qcon-next-developers/en/resources/1netify2-1774355373576.jpeg\" rel=\"share\"></p>\n   <p>Netlify <a href=\"https://www.netlify.com/blog/10-million-developers/\">celebrated reaching 10 million developers</a> on Christmas Eve 2025, writing that \"agents are now writing the code and this opens up the web as a platform to build on to millions, maybe even billions of new users.\"</p>\n   <p>The talk was structured around three pillars for building better tools in this evolving landscape. The first, developing expertise, argued that code production matters less while architecture and fundamental choices matter more. Zarea highlighted how projects like SQLite and TLDraw have moved to proprietary test suites to prevent easy replication by AI tools. Forward compatibility was presented as essential, with deprecation strategies needing to account for faster adoption cycles.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/qcon-next-developers/news/2026/03/qcon-next-developers/en/resources/1netify5-1774355373576.jpeg\" style=\"width: 600px; height: 469px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/qcon-next-developers/en/resources/1netify5-1774355373576.jpeg\" rel=\"share\"></p>\n   <p>The second pillar, honing taste, focused on understanding which design choices serve both human and agent users. Zarea described how the Netlify CLI was redesigned to show full commands alongside interactive prompts, enabling AI agents to parse and use commands effectively. He also referenced the community-rebuilt NPM interface, npmx, noting it was completed in months, a sign that the cost of rewrites has changed significantly.</p>\n   <p>The third pillar, practicing clairvoyance, called on tool builders to anticipate an agentic future. Next.js was highlighted as a framework explicitly building for agents, shipping with <a href=\"http://agents.md\">agents.md</a> files, <a href=\"https://nextjs.org/docs/app/guides/mcp\">MCP support</a>, and actionable error formatting. Vercel has described this direction in a blog post titled <a href=\"https://nextjs.org/blog/agentic-future\">Building Next.js for an agentic future</a>, outlining how the framework is evolving to serve AI agents as first-class consumers. TanStack was also cited as a growing force, with its published TanStack Intent designed to help library maintainers build compatible tooling.</p>\n   <p>Zarea presented data showing significant growth in Vite adoption, a decline in Webpack usage, and a weakening incumbency advantage as the cost of rewriting between frameworks like React, Svelte, and Solid decreases.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/qcon-next-developers/news/2026/03/qcon-next-developers/en/resources/1netify6-1774355373576.jpeg\" style=\"width: 600px; height: 423px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/qcon-next-developers/en/resources/1netify6-1774355373576.jpeg\" rel=\"share\"></p>\n   <p>The presentation concluded with a set of questions for engineering teams to consider: what happens with 10x more users, 10x more developers, or if everyone in the company starts shipping at their current skill level?</p>\n   <p>\"We are all becoming architects,\" Zarea stated, arguing that organizations must establish guardrails for non-traditional developers around security, data exposure, and consistent patterns.&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: Tools That Enable the Next 1B Developers\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/qcon-next-developers/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774452120000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文探讨了 AI 和智能体工作流如何推动软件开发的平民化，将行业重心从代码生成转向架构设计和智能体兼容工具。",
+  "oneSentenceSummary": "本文探讨了 AI 和智能体工作流如何推动软件开发的平民化，将行业重心从代码生成转向架构设计和智能体兼容工具。",
+  "summary": "本文基于 Ivan Zarea 在 QCon London 2026 上的演讲，探讨了 Web 开发格局的变革。随着 AI 智能体越来越多地承担代码编写工作，像 Netlify 这样的平台正见证着“构建者”（builders）数量的激增，他们是领域专家，而非传统的开发人员。Zarea 概述了未来工具的三大支柱：培养超越代码的架构专业知识，磨练面向人类和智能体的设计品味，以及通过构建“智能体优先”（agent-first）的框架来实践远见。演讲强调了 Vite 的崛起、Next.js 对 MCP 和 agents.md 等标准的应用，以及在 AI 驱动时代框架重写成本的显著降低。",
+  "mainPoints": [
+    {
+      "point": "开发的平民化正在催生一类新的构建者。",
+      "explanation": "AI 正在使领域专家能够构建内部工具和 SaaS 替代品，导致平台用户激增，即使自认为是“开发者”的比例在下降。"
+    },
+    {
+      "point": "人类的角色正在从代码生产转向系统架构。",
+      "explanation": "随着 AI 处理代码编写的“如何做”部分，开发者必须专注于高层架构选择、前向兼容性，并为非传统构建者建立安全护栏。"
+    },
+    {
+      "point": "工具必须进化为“智能体可读”和“智能体优先”。",
+      "explanation": "像 Next.js 这样的框架已经在实现 agents.md 和模型上下文协议（MCP）支持，以确保 AI 智能体能够有效地导航、构建和调试应用程序。"
+    },
+    {
+      "point": "遗留框架的既有优势正在减弱。",
+      "explanation": "AI 显著降低了全面重写所需的成本和时间，从而能够更快地从 Webpack 等旧工具迁移到 Vite 等现代替代方案。"
+    }
+  ],
+  "keyQuotes": [
+    "智能体现在正在编写代码，这使得 Web 作为一个构建平台向数百万，甚至数十亿的新用户开放。",
+    "我们都在成为架构师。",
+    "重写的成本已经发生了显著变化。",
+    "如果用户增加 10 倍，开发者增加 10 倍，或者公司里的每个人都开始以他们目前的技能水平进行交付，会发生什么？"
+  ],
+  "tags": [
+    "AI 工具",
+    "智能体未来",
+    "软件架构",
+    "Netlify",
+    "Next.js"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 470,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774452120000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 15:22:00"
+}

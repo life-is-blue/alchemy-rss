@@ -1,0 +1,57 @@
+{
+  "id": "RAW_4bab59bf",
+  "title": "在自有基础设施中运行云端智能体 · Cursor",
+  "url": "https://cursor.com/blog/self-hosted-cloud-agents",
+  "date": "2026-03-25 12:00:00",
+  "author": "Katia Bazzi",
+  "siteName": "Cursor Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Cursor now supports self-hosted cloud agents that keep your code and tool execution entirely in your own network.</p>\n  <p>For agents to autonomously handle many software tasks in parallel, they need their own development environment. Cursor cloud agents run in isolated virtual machines, each with a terminal, browser, and full desktop. They clone your repo, set up the development environment, write and test code, push changes for review, and keep working whether or not you're online.</p>\n  <p>Today, we're making self-hosted cloud agents generally available. Self-hosted agents offer all the benefits of cloud agents with tighter security control: your codebase, tool execution, and build artifacts never leave your environment. For teams with complex development environments, self-hosted agents have access to your caches, dependencies, and network endpoints—just like an engineer or service account would.</p>\n  <figure>\n   <div class=\"media-border-container overflow-hidden\">\n    <img alt=\"Self-hosted cloud agents\" loading=\"lazy\" width=\"800\" height=\"450\" decoding=\"async\" data-nimg=\"1\" style=\"color:transparent\" srcset=\"https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fblog%2Fself-hosted-cloud-agents-v4.jpg&amp;w=828&amp;q=70 1x, https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fblog%2Fself-hosted-cloud-agents-v4.jpg&amp;w=1920&amp;q=70 2x\" src=\"https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fblog%2Fself-hosted-cloud-agents-v4.jpg&amp;w=1920&amp;q=70\">\n   </div>\n  </figure>\n  <div class=\"card mb-v2\">\n   <blockquote class=\"not-prose\">\n    <p class=\"type-base whitespace-pre-wrap\">Cursor cloud agents are great at writing code within the context of our codebase. Now with self-hosted cloud agents, we can give them access to the infrastructure needed to run our test suites and validate changes with our internal tools. This self-hosted solution will allow us to delegate end-to-end software builds entirely to Cursor's cloud agents.</p>\n   </blockquote>\n   <div class=\"mt-v1 flex items-center space-x-(--grid-gap)\">\n    <div>\n     <div class=\"type-sm\">Graham Fuller</div>\n     <div class=\"type-sm text-theme-text-sec\">\n      Senior Software Engineer<!-- -->\n       , <!-- -->\n       Brex\n     </div>\n    </div>\n   </div>\n  </div>\n  <h2 id=\"why-self-hosted\" class=\"anchor-heading group \"><a href=\"#why-self-hosted\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>Why self-hosted</h2>\n  <p>Many enterprises in highly-regulated spaces cannot let code, secrets, or build artifacts leave their environment due to security and compliance requirements. Some companies have stood up mature environments where critical inputs like caches, dependencies, and certain network endpoints can only be accessed through internal machines with strict configurations.</p>\n  <p>To meet these needs, some teams have diverted engineering resources towards building and maintaining their own background agents for coding.</p>\n  <p>Cursor's self-hosted cloud agents now support all of these requirements. Teams can keep their existing security model, build environment, and internal network setup, while Cursor handles orchestration, model access, and the user experience. That allows engineering teams to spend less time maintaining agent infrastructure and more time using it.</p>\n  <div class=\"card mb-v2\">\n   <blockquote class=\"not-prose\">\n    <p class=\"type-base whitespace-pre-wrap\">Given our strict security requirements as a financial services provider, self-hosted support is something we've been eagerly awaiting. Now building a workflow that enables nearly 1,000 engineers to create pull requests directly from Slack using Cursor's self-hosted cloud agents.</p>\n   </blockquote>\n   <div class=\"mt-v1 flex items-center space-x-(--grid-gap)\">\n    <div>\n     <div class=\"type-sm\">Yokoyama Tatsuo</div>\n     <div class=\"type-sm text-theme-text-sec\">\n      Deputy Manager of SRE &amp; MEPAR<!-- -->\n       , <!-- -->\n       Money Forward\n     </div>\n    </div>\n   </div>\n  </div>\n  <h2 id=\"same-product-your-infrastructure\" class=\"anchor-heading group \"><a href=\"#same-product-your-infrastructure\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>Same product, your infrastructure</h2>\n  <p>Self-hosted cloud agents offer the same capabilities as Cursor-hosted cloud agents:</p>\n  <ul>\n   <li><strong>Isolated remote environments:</strong> each agent gets its own dedicated machine with no sharing, allowing for better parallelization.</li>\n   <li><strong>Launch from anywhere:</strong> kick off cloud agents from the Cursor editor, web app, Slack, GitHub, Linear, or via the API.</li>\n   <li><strong>Automations:</strong> trigger cloud agents programmatically on a schedule or from events in GitHub, Slack, Linear, and webhooks.</li>\n   <li><strong>Plugins:</strong> extend agents with skills, MCPs, subagents, rules, and hooks.</li>\n   <li><strong>Team permissions:</strong> control who can access and manage cloud agent runs across your org.</li>\n  </ul>\n  <p>Self-hosted cloud agents will soon be able to demo their work by producing videos, screenshots, and logs for your review. You'll also be able to take over their remote desktop to interact with the running software and make edits yourself.</p>\n  <div class=\"card mb-v2\">\n   <blockquote class=\"not-prose\">\n    <p class=\"type-base whitespace-pre-wrap\">Self-hosted cloud agents are a meaningful step toward making coding agents enterprise ready. In large codebases like Notion's, running agent workloads in our own cloud environment allows agents to access more tools more securely and saves our team from needing to maintain multiple stacks.</p>\n   </blockquote>\n   <div class=\"mt-v1 flex items-center space-x-(--grid-gap)\">\n    <div>\n     <div class=\"type-sm\">Ben Kraft</div>\n     <div class=\"type-sm text-theme-text-sec\">\n      Software Engineer<!-- -->\n       , <!-- -->\n       Notion\n     </div>\n    </div>\n   </div>\n  </div>\n  <h2 id=\"how-it-works\" class=\"anchor-heading group \"><a href=\"#how-it-works\" class=\"anchor-link\" aria-label=\"Link to this section\"></a>How it works</h2>\n  <p>A worker is a process that connects outbound via HTTPS to Cursor's cloud—no inbound ports, firewall changes, or VPN tunnels required. When users kick off an agent session, Cursor's agent harness handles inference and planning, then sends tool calls to the worker for execution on your machine. Results flow back to Cursor for the next round of inference.</p>\n  <p>Each agent session gets its own dedicated worker, which is initiated with a single command: <code>agent worker start</code>. Workers can be long-lived or single-use, handling sessions indefinitely or tearing down as soon as a task is complete.</p>\n  <p>For organizations scaling to thousands of workers, we provide a Helm chart and Kubernetes operator. You can define a <code>WorkerDeployment</code> resource with your desired pool size, and the controller handles scaling, rolling updates, and lifecycle management automatically. For non-Kubernetes environments, a fleet management API allows you to monitor utilization and build autoscaling on any infrastructure.</p>\n  <p>Try it out today by enabling self-hosted cloud agents in your <a href=\"https://cursor.com/dashboard/cloud-agents#self-hosted-agents\" rel=\"noopener noreferrer\" target=\"_blank\">Cursor Dashboard</a>, and learn more in our <a href=\"https://cursor.com/docs/cloud-agent/self-hosted\" rel=\"noopener noreferrer\" target=\"_blank\">docs</a>. For larger company-wide deployments, <a href=\"https://cursor.com/contact-sales?source=self-hosted-cloud-agents-blog\" rel=\"noopener noreferrer\" target=\"_blank\">reach out</a> to our team.</p>\n </body>\n</html>",
+  "aiSummary": "Cursor 推出自托管云端智能体，允许企业在自有安全基础设施内运行 AI 编程智能体，同时保持对代码和工具执行的完全控制。",
+  "oneSentenceSummary": "Cursor 推出自托管云端智能体，允许企业在自有安全基础设施内运行 AI 编程智能体，同时保持对代码和工具执行的完全控制。",
+  "summary": "Cursor 宣布自托管云端智能体正式全面可用，该解决方案专为有严格安全和合规要求的企业设计。与标准云端智能体不同，这些工作节点完全在公司内部网络中运行，确保代码、密钥和构建产物绝不会离开该环境。该系统使用仅限出站（outbound-only）的工作进程连接到 Cursor 的编排层，使智能体能够在隔离的虚拟机（VM）或 Kubernetes 集群中执行任务。主要功能包括支持复杂的开发环境、与 Slack 和 GitHub 等内部工具集成，以及用于大规模部署的 Helm Chart。此举旨在通过弥合自主 AI 能力与内部基础设施安全之间的差距，使 AI 编程智能体具备企业级应用能力。",
+  "mainPoints": [
+    {
+      "point": "通过自托管实现安全与合规",
+      "explanation": "自托管智能体将代码、密钥和构建产物保留在用户的私有网络内，满足金融等高度监管行业的需求。"
+    },
+    {
+      "point": "深度基础设施集成",
+      "explanation": "智能体可以访问内部缓存、依赖项和网络端点，使其能够像人类工程师一样运行完整的测试套件并验证变更。"
+    },
+    {
+      "point": "仅限出站的技术架构",
+      "explanation": "工作进程通过 HTTPS 向外连接到 Cursor 云端进行编排，无需更改入站防火墙或配置复杂的 VPN 隧道。"
+    },
+    {
+      "point": "企业级可扩展性",
+      "explanation": "通过 Helm Chart 支持 Kubernetes 以及集群管理 API，使组织能够自动扩展和管理数千个工作节点。"
+    }
+  ],
+  "keyQuotes": [
+    "自托管智能体提供了云端智能体的所有优势，同时具备更严格的安全控制：你的代码库、工具执行和构建产物绝不会离开你的环境。",
+    "工作节点是一个通过 HTTPS 向外连接到 Cursor 云端的进程——无需入站端口、防火墙更改或 VPN 隧道。",
+    "自托管云端智能体是推动编程智能体迈向企业级应用的重要一步。"
+  ],
+  "tags": [
+    "Cursor",
+    "AI 智能体",
+    "自托管",
+    "企业安全",
+    "云端智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 93,
+  "wordCount": 727,
+  "domain": "cursor.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_a88d43f5",
+  "sourceName": "Cursor Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774440000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 12:00:00"
+}

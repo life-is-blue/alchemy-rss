@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0994d26e",
+  "title": "GitHub Copilot 交互数据使用政策更新",
+  "url": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/",
+  "date": "2026-03-25 19:02:32",
+  "author": "Mario Rodriguez",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Today, we’re announcing an update on how GitHub will use data to deliver more intelligent, context-aware coding assistance. From April 24 onward, interaction data—specifically inputs, outputs, code snippets, and associated context—from Copilot Free, Pro, and Pro+ users will be used to train and improve our AI models unless they opt out. Copilot Business and Copilot Enterprise users are not affected by this update.</p>\n  <p>Not interested? Opt out in <a href=\"https://github.com/settings/copilot\">settings</a> under “Privacy.” If you previously opted out of the setting allowing GitHub to collect this data for product improvements, your preference has been retained—your choice is preserved, and your data will not be used for training unless you opt in.</p>\n  <p>This approach aligns with established industry practices and will improve model performance for all users. By participating, you’ll help our models better understand development workflows, deliver more accurate and secure code pattern suggestions, and improve their ability to help you catch potential bugs before they reach production.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-real-world-data-smarter-models\">Real-world data = smarter models</h2>\n  <p>Our initial models were built using a mix of publicly available data and hand-crafted code samples. This past year, we’ve started incorporating interaction data from Microsoft employees and have seen meaningful improvements, including increased acceptance rates in multiple languages.</p>\n  <p>The improvements we’ve seen by incorporating Microsoft interaction data indicate we can improve model performance for a more diverse range of use cases by training on real-world interaction data. Should you decide to participate in this program, the interaction data we may collect and leverage includes:</p>\n  <ul class=\"wp-block-list\">\n   <li>Outputs accepted or modified by you</li>\n   <li>Inputs sent to GitHub Copilot, including code snippets shown to the model</li>\n   <li>Code context surrounding your cursor position</li>\n   <li>Comments and documentation you write</li>\n   <li>File names, repository structure, and navigation patterns</li>\n   <li>Interactions with Copilot features (chat, inline suggestions, etc.)</li>\n   <li>Your feedback on suggestions (thumbs up/down ratings)</li>\n  </ul>\n  <p>This program does <strong>not</strong> use:</p>\n  <ul class=\"wp-block-list\">\n   <li>Interaction data from Copilot Business, Copilot Enterprise, or enterprise-owned repositories</li>\n   <li>Interaction data from users who opt out of model training in their Copilot settings</li>\n   <li>Content from your issues, discussions, or private repositories at rest. We use the phrase “at rest” deliberately because Copilot does process code from private repositories when you are actively using Copilot. This interaction data is required to run the service and could be used for model training unless you opt out.</li>\n  </ul>\n  <p>The data used in this program may be shared with GitHub affiliates, which are companies in our corporate family including Microsoft. This data will not be shared with third-party AI model providers or other independent service providers.</p>\n  <p>We believe the future of AI-assisted development depends on real-world interaction data from developers like you. It’s why we’re using Microsoft interaction data for model training and will begin using interaction data from GitHub employees as well.</p>\n  <p>If you choose to help us improve our models with your interaction data, thank you. Your contributions make a meaningful difference in building AI tools that serve the entire developer community. If you prefer not to participate, that’s fine too—you will still be able to take full advantage of the AI features you know and love.</p>\n  <p>Together, we can continue to build AI that accelerates your workflows and empowers you to build better, more secure software faster than ever.</p>\n  <p>If you have questions, visit our <a href=\"https://github.com/orgs/community/discussions/188488\">FAQ and related discussion</a>.</p>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 宣布，自 2024 年 4 月 24 日起，除非用户选择退出，否则 Copilot Free、Pro 和 Pro+ 用户的交互数据将被用于 AI 模型训练。",
+  "oneSentenceSummary": "GitHub 宣布，自 2024 年 4 月 24 日起，除非用户选择退出，否则 Copilot Free、Pro 和 Pro+ 用户的交互数据将被用于 AI 模型训练。",
+  "summary": "GitHub 正在更新其数据使用政策，旨在通过真实世界的交互数据提升 Copilot 的智能水平。自 4 月 24 日起，个人用户（Free、Pro、Pro+）的输入、输出和代码片段将默认被用于训练模型。此更新不影响 Copilot Business 或 Enterprise 层级。GitHub 强调，现有的隐私偏好设置将得到保留，用户可随时通过设置选择退出。收集的数据包括已采纳的建议、代码上下文和仓库结构，这些数据可能会与 Microsoft 共享，但不会提供给第三方供应商。",
+  "mainPoints": [
+    {
+      "point": "个人层级模型训练需手动选择退出。",
+      "explanation": "自 4 月 24 日起，Free、Pro 和 Pro+ 用户的交互数据将默认用于训练，除非用户在设置中手动禁用该功能。"
+    },
+    {
+      "point": "企业和商业用户不受此变更影响。",
+      "explanation": "此次政策更新明确排除了 Copilot Business 和 Copilot Enterprise 账户，确保企业数据默认保持私密。"
+    },
+    {
+      "point": "针对特定类型的交互数据进行收集。",
+      "explanation": "GitHub 将收集已采纳/修改的代码、提示词、周边上下文、文件名和仓库结构，以提高模型准确性和漏洞检测能力。"
+    },
+    {
+      "point": "数据共享仅限于 Microsoft 生态系统。",
+      "explanation": "虽然数据可能会与 GitHub 的关联方（如 Microsoft）共享，但不会提供给第三方 AI 模型供应商或独立服务提供商。"
+    }
+  ],
+  "keyQuotes": [
+    "从 4 月 24 日起，除非选择退出，否则 Copilot Free、Pro 和 Pro+ 用户的交互数据（特别是输入、输出、代码片段及相关上下文）将被用于训练和改进我们的 AI 模型。",
+    "Copilot Business 和 Copilot Enterprise 用户不受此更新影响。",
+    "如果您之前已选择退出允许 GitHub 收集此类数据以进行产品改进的设置，您的偏好设置将被保留。",
+    "此数据不会与第三方 AI 模型供应商或其他独立服务提供商共享。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "数据隐私",
+    "AI 训练",
+    "机器学习",
+    "开发者工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 540,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774465352000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 19:02:32"
+}

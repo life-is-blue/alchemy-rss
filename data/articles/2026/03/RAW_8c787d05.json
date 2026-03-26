@@ -1,0 +1,57 @@
+{
+  "id": "RAW_8c787d05",
+  "title": "DeepSeek 急招 Agent 方向！一口气放 17 个岗位，重度 Vibe Coding 优先",
+  "url": "https://www.qbitai.com/2026/03/392024.html",
+  "date": "2026-03-25 06:39:13",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"35\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">DeepSeek，一口气开放17个招聘岗位。</p>\n  <p data-track=\"3\">最核心研发岗<strong>聚焦Agent</strong>，覆盖算法研究、数据评测、基础设施全链条。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073304_fdf13feae6dc6cbbea5ccdbff3408b87.jpeg\" data-src=\"https://image.jido.dev/20260325073304_fdf13feae6dc6cbbea5ccdbff3408b87.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">仔细阅读每个岗位的要求，发现两个有意思的细节：</p>\n  <p data-track=\"5\">多个岗位在“加分项”或“岗位要求”中明确提到：<strong>重度使用Claude Code、Cursor、Copilot等AI编程工具的优先。</strong></p>\n  <p data-track=\"6\">在全栈开发工程师的岗位职责中，也出现了一条不太常见的描述：<strong>作为Vibe Coding重度用户</strong>，持续探索模型能力在产品中的创新应用。</p>\n  <p data-track=\"8\">从岗位要求来看，DeepSeek的Agent布局已经从研究落地到具体能力建设阶段：</p>\n  <p data-track=\"9\"><strong>Agent深度学习算法研究员</strong></p>\n  <p data-track=\"10\">核心任务包括探索提升模型能力的新方法与新范式，参与强化学习在大模型对齐与能力提升中的应用研究，覆盖RLHF/RLAIF、过程奖励、偏好学习等方向。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073303_a81826dc378c9606d31cea3b7738d1d3.jpeg\" data-src=\"https://image.jido.dev/20260325073303_a81826dc378c9606d31cea3b7738d1d3.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"11\"><strong>Agent数据评测专家</strong></p>\n  <p data-track=\"12\">聚焦于构建评测数据集，精准区分不同模型的能力边界，针对Agent的规划、工具调用、多轮交互、长期记忆等核心能力设计测试用例。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073304_55095adc1726c4eb837d27e6b73f6d04.jpeg\" data-src=\"https://image.jido.dev/20260325073304_55095adc1726c4eb837d27e6b73f6d04.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\"><strong>Agent基础设施工程师</strong></p>\n  <p data-track=\"14\">负责搭建Agent运行的底层基座，包括集成外部工具到内部强化学习基础设施、搭建Agent评测平台、维护内部Agent集成框架。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073303_3d44a2ed5c6c2572ebfd3da04b543248.jpeg\" data-src=\"https://image.jido.dev/20260325073303_3d44a2ed5c6c2572ebfd3da04b543248.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">除了三个专属岗位，DeepSeek还在产品和工程端同步布局Agent能力：</p>\n  <p data-track=\"16\"><strong>模型策略产品经理岗位</strong>，单独设立了Agent方向。</p>\n  <p data-track=\"17\">要求候选人“熟悉Agent核心机制（Tool Use、Planning、长期记忆、Multi-Agent协作等）；</p>\n  <p data-track=\"18\">持续跟踪行业前沿，熟悉并深度使用过Claude Code、OpenClaw、Manus等知名agent”，需要洞察高价值Agent应用场景，包括OpenClaw式的生活/工作个人助理、Deep Research、自动化工作流、多模态设备控制等，主导Agent评测体系及训练数据方案设计。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073304_bd283a8a1bbb74fa4870790189ab8d9a.jpeg\" data-src=\"https://image.jido.dev/20260325073304_bd283a8a1bbb74fa4870790189ab8d9a.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"19\"><strong>全栈开发工程师岗位</strong>，也明确将“支撑海量AI Agent运行的下一代容器调度与隔离平台”作为核心工作方向。</p>\n  <p data-track=\"20\">需要攻克容器生命周期管理、资源精细调度、多硬件平台统一支持等核心难题，构建高性能、高安全性的Agent运行时环境。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073303_d75b49f6e6a34944b7b475aee31d4489.jpeg\" data-src=\"https://image.jido.dev/20260325073303_d75b49f6e6a34944b7b475aee31d4489.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">对比今年1月，当时DeepSeek开放的核心岗位集中在”深度学习研究员-AGI”这类通用研究方向），此次招聘明显从”基础模型研究”向”Agent产品化”倾斜。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073305_ff3bad51f35d8df3c3ef2743232d6b09.jpeg\" data-src=\"https://image.jido.dev/20260325073305_ff3bad51f35d8df3c3ef2743232d6b09.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"23\">这些招聘需求，拼凑出DeepSeek在Agent方向的技术布局。</p>\n  <p data-track=\"24\">首先能看出DeepSeek在追求<strong>数据闭环能力</strong>。</p>\n  <p data-track=\"25\">算法研究员岗位明确要求”与数据标注团队紧密协作，设计标注方案与质量标准，形成’数据-训练-评测’的能力提升闭环”。</p>\n  <p data-track=\"26\">这意味着DeepSeek正在搭建从数据生产到模型迭代的完整流水线，而非依赖第三方数据服务。</p>\n  <p data-track=\"27\">然后是<strong>Agent技术栈的全面布局</strong>。</p>\n  <p data-track=\"28\">基础设施岗位要求熟悉”MCP、Tool Use、Function Calling等Agent交互协议与规范”，评测岗位则要求对”Agent跨session记忆连续性、多工具调度可靠性”等前沿问题有体系化认知。</p>\n  <p data-track=\"29\">这些关键词都指向具备复杂任务执行能力的自主Agent系统。</p>\n  <p data-track=\"30\">此次大规模招聘也印证了此前的行业传闻。</p>\n  <p data-track=\"31\">2025年9月曾有消息称，DeepSeek正在开发具备高级Agent功能的AI模型，计划在2025年第四季度发布，对标OpenAI等海外竞争对手，能够在最小用户指引下执行多步任务，并基于历史行动自主学习进化。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260325073303_4bec751dfef2ee8e0e101a2d52b56e66.jpeg\" data-src=\"https://image.jido.dev/20260325073303_4bec751dfef2ee8e0e101a2d52b56e66.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\">DeepSeek的R-1推理模型曾以数百万美元的研发成本，在基准测试中追平或超过OpenAI同类产品，颠覆了大模型研发需要巨额投入的行业共识。</p>\n  <p data-track=\"33\">能不能像R-1改变推理模型行业格局一样，用低成本方案再次颠覆Agent赛道，答案可能很快就会揭晓。</p>\n  <p data-track=\"34\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://app.mokahr.com/social-recruitment/high-flyer/140576#/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DeepSeek 开启大规模 Agent 方向招聘，涵盖算法、数据、基座及产品岗位，明确偏好重度使用 AI 编程工具的「Vibe Coding」人才，预示其技术重心向 Agent 产品化转型。",
+  "oneSentenceSummary": "DeepSeek 开启大规模 Agent 方向招聘，涵盖算法、数据、基座及产品岗位，明确偏好重度使用 AI 编程工具的「Vibe Coding」人才，预示其技术重心向 Agent 产品化转型。",
+  "summary": "本文报道了 DeepSeek 近期发布的 17 个核心研发岗位，重点聚焦于 AI Agent 领域。招聘涵盖了 Agent 深度学习算法研究员、数据评测专家、基础设施工程师以及相关产品经理和全栈开发岗位。值得关注的是，DeepSeek 在岗位要求中多次强调「Vibe Coding」背景，优先考虑熟练使用 Cursor、Claude Code 等 AI 编程工具的候选人。文章分析指出，这标志着 DeepSeek 的布局已从基础模型研究转向 Agent 的全链路能力建设与产品化落地，旨在构建包含强化学习、数据闭环及高性能运行环境在内的自主 Agent 系统。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek 战略重心转向 Agent 产品化。",
+      "explanation": "招聘岗位覆盖了从底层算法研究到上层产品设计的全链条，显示其正加速构建具备复杂任务执行能力的自主 Agent 系统。"
+    },
+    {
+      "point": "「Vibe Coding」成为人才筛选的新标准。",
+      "explanation": "多个岗位明确要求候选人重度使用 AI 编程工具，反映出 DeepSeek 对 AI 辅助开发效率和模型能力边界探索的极高重视。"
+    },
+    {
+      "point": "构建「数据-训练-评测」的闭环体系。",
+      "explanation": "通过设立专门的 Agent 数据评测专家和基础设施岗，DeepSeek 意在解决 Agent 的规划、长期记忆和多工具调用等核心痛点，实现自主进化。"
+    },
+    {
+      "point": "对标国际前沿，探索低成本 Agent 方案。",
+      "explanation": "继 R-1 推理模型后，DeepSeek 试图在 Agent 赛道再次通过高效研发路径实现对海外竞品的追赶或超越。"
+    }
+  ],
+  "keyQuotes": [
+    "作为 Vibe Coding 重度用户，持续探索模型能力在产品中的创新应用。",
+    "此次招聘明显从「基础模型研究」向「Agent 产品化」倾斜。",
+    "DeepSeek 正在搭建从数据生产到模型迭代的完整流水线，而非依赖第三方数据服务。"
+  ],
+  "tags": [
+    "DeepSeek",
+    "AI Agent",
+    "Vibe Coding",
+    "强化学习",
+    "人才招聘"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 87,
+  "wordCount": 1485,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774420753000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 06:39:13"
+}

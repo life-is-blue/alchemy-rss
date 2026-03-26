@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d674e826",
+  "title": "首个全品类旅行 skill 来了！飞猪“flyai”上线 ClawHub、GitHub",
+  "url": "https://www.qbitai.com/2026/03/391890.html",
+  "date": "2026-03-25 06:20:27",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\" data-pm-slice=\"0 0 []\">3月24日，飞猪发布首个全品类出行旅游技能插件（skill）“flyai”，该技能插件已上线ClawHub、GitHub等平台。开发者和用户可以在OpenClaw、悟空、Kimi Claw、QoderWork、QClaw、MaxClaw、ArkClaw等数十个“龙虾”应用上安装和使用。</p>\n  <p data-track=\"2\"></p>\n  <p data-track=\"3\">ClawHub上的说明文档显示，“flyai”基于飞猪MCP（模型上下文协议）作了标准化封装，提供覆盖机票、酒店、门票、用车、目的地玩乐以及机票次卡、酒店套餐等出行旅游商品的搜索、咨询、规划及预订等服务，横跨了导购到交易的完整链条。“flyai”的调用更方便，有开发者实测发现，区别于很多同类技能插件，“flyai”无需在飞猪官方平台注册、申领API Key（应用程序编程接口密钥），即装即用。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260325073512_7d37f30883a5cfdf3472d27b668b41e1.png\">\n  </div>\n  <p style=\"text-align: center;\" data-track=\"4\">（图：“flyai”技能插件已登录主流“龙虾”应用技能广场）</p>\n  <p data-track=\"5\"></p>\n  <p data-track=\"6\">“flyai”刚上线即成为最受欢迎的大出行技能插件之一。GitHub页面显示，“flyai”已收获超百颗Stars，ClawHub上的安装量也位居旅行类技能插件前列。</p>\n  <p data-track=\"7\"></p>\n  <p data-track=\"8\">OpenClaw已被业界视为AI Agent时代计算机操作系统。尽管尚处于早期，但敏锐的企业和开发者已经意识到，基于传统APP的应用开发和用户交互模式将面临革命性的改变，语言用户界面（LUI）和协议驱动的时代已经拉开序幕。开发者无需再通过敲数万行代码，编写算法、复杂的过滤条件和支付流程，用户也不必事事都下载APP、注册、手动输入信息，通过自然语言指令就能让Agent为自己服务。</p>\n  <p data-track=\"9\"></p>\n  <p class=\"pgc-p\" data-track=\"10\">技能插件（skill）是抢占OpenClaw生态入口的核心武器。在此背景下，对特定场景有深度理解、沉淀了海量专有数据的玩家，将成为开发者和用户最可靠的帮手。有分析认为，“flyai”的先发优势有望帮助其迅速成为“龙虾”生态内的大出行类应用开发基建。</p>\n  <p class=\"pgc-p\" data-track=\"17\"></p>\n  <div class=\"pgc-img\" style=\"text-align: center;\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260325073513_92339fe791d41ab1e0b1a6eba34d7b5a.png\">（图：网友基于“flyai”开发旅行相关应用）\n  </div>\n  <p data-track=\"13\">例如，开发者可以基于对故乡的熟悉，结合“flyai”全品类商品池组合出不同主题、不同体验的旅行新品；可以利用包括“flyai”在内的多个技能插件为公司每位员工定制专属的商务出行管家，涵盖吃、住、行，背景调研、会议纪要、线索转化等能力；甚至还可以基于“flyai”开发“跟着塔罗牌去旅行”“打卡唐诗宋词中的千里江山”等趣味小应用，分享给好友、一起出发。</p>\n  <p data-track=\"14\"></p>\n  <p data-track=\"15\">据飞猪透露 ，除了OpenClaw、悟空等数十个“龙虾”应用以外，“flyai”还正陆续接入华为、小米、OPPO、荣耀等手机厂商的技能插件商店。</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "飞猪发布基于 MCP 协议的全品类旅游技能插件「flyai」，支持开发者在 AI Agent 生态中实现即装即用的旅行服务集成。",
+  "oneSentenceSummary": "飞猪发布基于 MCP 协议的全品类旅游技能插件「flyai」，支持开发者在 AI Agent 生态中实现即装即用的旅行服务集成。",
+  "summary": "飞猪正式发布首个全品类出行旅游技能插件「flyai」，并已上线 ClawHub 和 GitHub。该插件基于 MCP（模型上下文协议）构建，提供涵盖机票、酒店、门票、目的地玩乐等全链路商品的搜索、规划及预订服务。其核心优势在于「即装即用」，开发者无需在官方平台注册或申领 API Key 即可调用。文章指出，随着 AI Agent 时代的到来，交互模式正从传统 APP 转向语言用户界面（LUI），飞猪此举旨在通过标准化协议抢占 Agent 生态入口，为开发者提供大出行场景的基础设施。",
+  "mainPoints": [
+    {
+      "point": "飞猪发布基于 MCP 协议的「flyai」技能插件，实现旅游全品类覆盖。",
+      "explanation": "插件通过标准化封装，整合了从导购到交易的完整链条，支持机票、酒店、门票等多种旅游商品的调用。"
+    },
+    {
+      "point": "强调「即装即用」的开发者体验，降低了 AI 应用的集成门槛。",
+      "explanation": "区别于传统 API 模式，开发者无需注册和申领 API Key，可直接在支持 MCP 的应用中安装使用。"
+    },
+    {
+      "point": "AI Agent 正在推动从传统 APP 向语言用户界面（LUI）的范式转移。",
+      "explanation": "未来用户将通过自然语言指令获取服务，协议驱动的交互将取代复杂的代码编写和多 APP 切换。"
+    },
+    {
+      "point": "「flyai」旨在成为 AI 生态中大出行场景的基础设施。",
+      "explanation": "通过开放全品类商品池，支持开发者快速构建如商务管家、主题旅行等个性化 AI 插件。"
+    }
+  ],
+  "keyQuotes": [
+    "「flyai」基于飞猪 MCP（模型上下文协议）作了标准化封装，横跨了导购到交易的完整链条。",
+    "语言用户界面（LUI）和协议驱动的时代已经拉开序幕。",
+    "开发者无需再通过敲数万行代码，编写算法、复杂的过滤条件和支付流程，用户也不必事事都下载 APP。"
+  ],
+  "tags": [
+    "飞猪",
+    "MCP",
+    "AI Agent",
+    "OpenClaw",
+    "旅游科技"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1033,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774419627000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 06:20:27"
+}
