@@ -1,0 +1,58 @@
+{
+  "id": "RAW_50669f01",
+  "title": "谷歌 TurboQuant 论文：KV cache 压缩 6 倍且精度零损失",
+  "url": "https://www.qbitai.com/2026/03/392215.html",
+  "date": "2026-03-26 03:03:26",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"41\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">学术会议<strong>ICLR</strong>，居然和<strong>美光和西部数据大跌</strong>扯上关系了？</p>\n  <p data-track=\"3\">两家存储芯片巨头股价大跌，没有财报暴雷，没有供应链断裂，<strong>只是谷歌展示了一篇即将在ICLR 2026正式亮相的论文</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040318_9888e2043abe04aa0731f3b7fd2fd2e7.webp\" data-src=\"https://image.jido.dev/20260326040318_9888e2043abe04aa0731f3b7fd2fd2e7.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">谷歌研究院推出<strong>TurboQuant</strong>压缩算法，把AI推理过程中最吃内存的KV cache<strong>压缩至少6倍，精度零损失</strong>。</p>\n  <p data-track=\"5\">市场的解读简单粗暴，长上下文AI推理以后不需要那么多内存了，利空内存。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040315_85471b49890c39c96f2bcc4b8bca2f29.webp\" data-src=\"https://image.jido.dev/20260326040315_85471b49890c39c96f2bcc4b8bca2f29.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">网友纷纷表示，这不就是美剧<strong>《硅谷》</strong>里的Pied Paper？</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040316_a1bd8fc8b630456366f3069c4830fa26.webp\" data-src=\"https://image.jido.dev/20260326040316_a1bd8fc8b630456366f3069c4830fa26.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">Pied Piper是2014年开播的HBO经典美剧《硅谷》里的虚构创业公司，核心技术就是一种“近乎无损的极限压缩算法”。</p>\n  <p data-track=\"8\">2026年，类似的算法在现实世界居然成真了。</p>\n  <p data-track=\"10\">要理解TurboQuant为什么重要，先得理解它解决的是什么问题。</p>\n  <p data-track=\"11\">AI大模型推理时处理过的信息会临时存在<strong>KV Cache</strong>，方便后续快速调用，不用每次从头算起。</p>\n  <p data-track=\"12\">问题是随着上下文窗口越来越长，内存消耗急剧膨胀。KV cache正在成为AI推理的核心瓶颈之一。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040315_4f5b1c071a32d225735d342776c55359.webp\" data-src=\"https://image.jido.dev/20260326040315_4f5b1c071a32d225735d342776c55359.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\">传统的解决思路是向量量化，把高精度数据压成低精度表示。</p>\n  <p data-track=\"14\">但尴尬的是，大部分量化方法本身也需要存储额外的“量化常数”，每个数字要多占1到2个bit。</p>\n  <p data-track=\"15\">TurboQuant用两个改动把这个额外开销干到了零。</p>\n  <p data-track=\"16\"><strong>PolarQuant（极坐标量化）：</strong></p>\n  <p data-track=\"17\">不用传统的X、Y、Z坐标描述数据，转而用极坐标”距离+角度”。</p>\n  <p data-track=\"18\">谷歌团队发现，转换后角度的分布非常集中且可预测，根本不需要额外存储归一化常数。</p>\n  <p data-track=\"19\">就像把“往东走3个路口，往北走4个路口”压缩成”朝37度方向走5个路口”。</p>\n  <p data-track=\"20\">信息量不变，描述更紧凑，还省掉了坐标系本身的开销。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040316_3a8d39bb055761916c583527ffb8f924.webp\" data-src=\"https://image.jido.dev/20260326040316_3a8d39bb055761916c583527ffb8f924.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\"><strong>QJL（量化JL变换）：</strong></p>\n  <p data-track=\"22\">把高维数据投影后压缩成+1或-1的符号位，完全不需要额外内存。TurboQuant用它来消除PolarQuant压缩后残留的微小误差。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040316_f97b3c10bc0b53b88f6f25785a2a614a.webp\" data-src=\"https://image.jido.dev/20260326040316_f97b3c10bc0b53b88f6f25785a2a614a.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"23\">两者组合后PolarQuant先用大部分bit容量捕捉数据的主要信息，QJL再用1个bit做残差修正。</p>\n  <p data-track=\"24\">最终实现3-bit量化，无需任何训练或微调，精度零损失。</p>\n  <p data-track=\"26\">谷歌团队在Gemma和Mistral等开源模型上，跑了主流长上下文基准测试，覆盖问答、代码生成、摘要等多种任务。</p>\n  <p data-track=\"27\">在“大海捞针”任务上，TurboQuant在所有测试中拿下完美分数，同时KV cache内存占用缩小了至少6倍。</p>\n  <p data-track=\"28\">PolarQuant单独使用，精度也几乎无损。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040315_9cd7de1afcbeeabb81a69526666be53b.webp\" data-src=\"https://image.jido.dev/20260326040315_9cd7de1afcbeeabb81a69526666be53b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"29\">速度提升同样显著。在英伟达H100 GPU上，4-bit TurboQuant计算注意力分数的速度，比32-bit未量化版本快了8倍。</p>\n  <p data-track=\"30\"><strong>不只是省内存，还更快了。</strong></p>\n  <p data-track=\"31\">在向量搜索领域，TurboQuant同样超越了现有最优量化方法的召回率，而且不需要针对具体数据集做调优，也不依赖低效的大码本。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040316_7d2f71e6531c193102dec71bf8aa0fb5.webp\" data-src=\"https://image.jido.dev/20260326040316_7d2f71e6531c193102dec71bf8aa0fb5.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"33\">Cloudflare CEO评价<strong>“这是谷歌的DeepSeek时刻”</strong>。</p>\n  <p data-track=\"34\">他认为DeepSeek证明了用更少的资源也能训出顶尖模型。</p>\n  <p data-track=\"35\">TurboQuant的方向类似，用更少的内存，也能跑同样质量的推理。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260326040320_b6acab6d387b61af942d825dd6f76c7b.webp\" data-src=\"https://image.jido.dev/20260326040320_b6acab6d387b61af942d825dd6f76c7b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\">谷歌表示，TurboQuant除了可以用在Gemini等大模型上，同时还能大幅提升语义搜索的效率，让谷歌级别的万亿级向量索引查询更快、成本更低。</p>\n  <p data-track=\"37\">不过TurboQuant目前还只是一个<strong>实验室成果</strong>，尚未大规模部署。</p>\n  <p data-track=\"38\">更关键的是，它只解决<strong>推理阶段</strong>的内存问题。而AI训练环节完全不受影响。</p>\n  <p data-track=\"39\">论文地址：\n   <br class=\"sysbr\">\n   https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/</p>\n  <p data-track=\"40\">参考链接：\n   <br class=\"sysbr\">\n   [1]https://x.com/eastdakota/status/2036827179150168182?s=20</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "谷歌研究院发布 TurboQuant 算法，通过极坐标量化等技术实现 KV cache 至少 6 倍的无损压缩，显著降低大模型推理内存需求并提升速度。",
+  "oneSentenceSummary": "谷歌研究院发布 TurboQuant 算法，通过极坐标量化等技术实现 KV cache 至少 6 倍的无损压缩，显著降低大模型推理内存需求并提升速度。",
+  "summary": "本文报道了谷歌研究院即将在 ICLR 2026 亮相的突破性论文——TurboQuant 压缩算法。该算法针对 AI 推理中的 KV cache 瓶颈，通过 PolarQuant（极坐标量化）和 QJL（量化 JL 变换）两大核心创新，实现了 3-bit 或 4-bit 的极高压缩比，且在 Gemma、Mistral 等模型测试中达到精度零损失。PolarQuant 利用极坐标下角度分布的集中性消除了量化常数的存储开销，而 QJL 则用于修正残差。实验显示，该技术在 H100 上可将计算速度提升 8 倍，被业界誉为谷歌的「DeepSeek 时刻」，甚至引发了存储芯片市场的股价波动。",
+  "mainPoints": [
+    {
+      "point": "TurboQuant 实现了 KV cache 至少 6 倍的无损压缩。",
+      "explanation": "通过消除传统量化方法中必须存储的「量化常数」开销，在 3-bit 量化下依然保持了与未量化版本一致的精度，解决了长上下文推理的内存瓶颈。"
+    },
+    {
+      "point": "PolarQuant 极坐标量化是实现零额外开销的关键。",
+      "explanation": "将数据从欧几里得空间转为极坐标（距离+角度），发现角度分布高度集中且可预测，从而无需存储归一化常数，使描述更紧凑。"
+    },
+    {
+      "point": "算法在大幅省内存的同时显著提升了推理速度。",
+      "explanation": "在英伟达 H100 GPU 上，4-bit TurboQuant 计算注意力分数的速度比 32-bit 未量化版本快了 8 倍，兼顾了空间与时间效率。"
+    },
+    {
+      "point": "该技术具有广泛的适用性，无需针对特定数据集调优。",
+      "explanation": "在向量搜索和多种长上下文基准测试（如大海捞针）中表现优异，且无需训练或微调即可直接应用于现有开源模型。"
+    }
+  ],
+  "keyQuotes": [
+    "TurboQuant 压缩算法，把 AI 推理过程中最吃内存的 KV cache 压缩至少 6 倍，精度零损失。",
+    "就像把「往东走 3 个路口，往北走 4 个路口」压缩成「朝 37 度方向走 5 个路口」。信息量不变，描述更紧凑，还省掉了坐标系本身的开销。",
+    "在英伟达 H100 GPU 上，4-bit TurboQuant 计算注意力分数的速度，比 32-bit 未量化版本快了 8 倍。不只是省内存，还更快了。",
+    "Cloudflare CEO 评价「这是谷歌的 DeepSeek 时刻」。"
+  ],
+  "tags": [
+    "TurboQuant",
+    "KV cache",
+    "模型量化",
+    "Google Research",
+    "LLM 推理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 90,
+  "wordCount": 1335,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774494206000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-26 03:03:26"
+}
