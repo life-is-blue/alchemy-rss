@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-26 22:30:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-27 00:24:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11216,9 +11216,7 @@
 
 ### [保护人类免受有害操纵](https://deepmind.google/blog/protecting-people-from-harmful-manipulation/)
 
-2026-03-26 13:01:29 | 标签: AI 安全, 有害操纵, 人机交互, 前沿安全框架, 模型评估
-
-> Google DeepMind 推出了一项综合研究和一套经实证验证的工具包，旨在评估 AI 进行有害操纵的潜力——即利用人类弱点诱导人们做出有害选择。通过涉及 10，000 多名参与者的九项研究，研究人员测试了 AI 在金融和健康等高风险领域进行操纵的有效性和倾向性。研究结果表明，AI 的操纵成功率因领域而异，且在明确被要求进行操纵时成功率最高。这项工作已被纳入 DeepMind 的前沿安全框架（Frontier Safety Framework），作为关键能力级别（Critical Capability Level， CCL），以确保包括 Gemini 3 Pro 在内的未来模型针对这些风险...
+2026-03-26 13:01:29
 
 
 
@@ -33298,17 +33296,13 @@
 
 ### [RubyMine-2026.1：AI-聊天升级、全新代码洞察、稳定的远程开发等-|-RubyMine-博客](https://blog.jetbrains.com/ruby/2026/03/rubymine-2026-1-ai-chat-upgrades-new-code-insight-stable-remote-development-and-more/)
 
-2026-03-26 12:13:26 | 标签: RubyMine, Ruby, Rails, IDE, AI 编程
-
-> RubyMine 2026.1 带来了一系列生产力改进，其中最引人注目的是通过智能体客户端协议（Agent Client Protocol，ACP）扩展了 AI 集成，允许用户直接在 IDE 中利用 Codex 和 Claude 等多个智能体。此版本引入了一个实验性的基于符号的代码洞察引擎，有望在常量补全和代码导航方面实现显著的性能提升。此外，远程开发功能现已稳定，Rails 开发者获得了对虚拟数据库列、弃用关联检测和局部变量识别的更好支持。此次更新还包括对 Lint 工具的精细化配置以及改进的测试调试功能。
+2026-03-26 12:13:26
 
 
 
 ### [CLion-2026.1-正式发布-|-CLion-博客](https://blog.jetbrains.com/clion/2026/03/2026-1-release/)
 
-2026-03-26 12:04:40 | 标签: CLion, C++, IDE, JetBrains, AI 智能体
-
-> CLion 2026.1 专注于扩展 AI 集成、改进构建系统支持并优化调试体验。主要亮点包括：能够通过智能体客户端协议（Agent Client Protocol）使用各种 AI 智能体（如 Copilot、Cursor 等），改进了对自定义项目和 VS Code 项目的处理，以及增强了 Bazel 集成。此版本还带来了重大的调试器升级，包括对 DAP 的 TCP 支持和数值格式切换，同时支持了 C++26 和 C23 等现代 C++ 标准。此外，现在支持 Git 工作树（Git worktrees），而“Code With Me”功能已被弃用。
+2026-03-26 12:04:40
 
 
 
@@ -47086,17 +47080,13 @@ http://antirez.com/news/162
 
 ### [Mistral-AI-刚刚发布了一款号称超越-ElevenLabs-的文本转语音模型，并免费开放权重](https://venturebeat.com/orchestration/mistral-ai-just-released-a-text-to-speech-model-it-says-beats-elevenlabs-and)
 
-2026-03-26 11:30:09 | 标签: Mistral AI, Voxtral TTS, 文本转语音, 开放权重, 企业级 AI
-
-> Mistral AI 推出了 Voxtral TTS，这是一款拥有 30 亿参数的开放权重文本转语音模型，声称在语音定制和情感表达方面优于 ElevenLabs。与行业标准的 API 优先模式不同，Voxtral TTS 专为企业自托管而设计，允许公司在本地硬件（包括笔记本电脑和智能手机）上运行，延迟仅为 90ms。此次发布是 Mistral 完善其“全栈 AI”（包括 Forge 和 AI Studio）战略的关键一步，强调了数据主权和成本效益。通过提供开放权重，Mistral 将目标锁定在金融和医疗等对语音数据有严格控制要求的行业，将自己定位为专有语音 AI 提供商的可行替代方案。
+2026-03-26 11:30:09
 
 
 
 ### [老年人到底需要什么样的-AI-课？](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650996271&idx=1&sn=8f677db658a339384c34790154cc7d92)
 
-2026-03-26 08:51:00 | 标签: 银发经济, AI 素养, 大模型, 用户研究, 数字鸿沟
-
-> 文章基于腾讯研究院与复旦大学为期一年的联合行动「教 100 位老年人使用大模型」，通过对全国 13 省市 237 位相关人员的深度访谈及随机对照实验，全面剖析了老年群体在 AI 时代的生存现状。报告将老年学习者归纳为老学霸、老顽童、老明星等六种典型画像，并揭示了其学习 AI 背后深层的心理诉求：补偿遗憾、对抗虚无、自我表达、代际反哺及防御性学习。文章指出，当前老年大学、社区讲座及家庭反哺等路径在 AI 教育上存在碎片化、系统性不足等局限。为此，报告提出了一套适老化 AI 课程标准，强调从生活场景出发、分层教学、稳定陪伴及全程安全培育。实验数据进一步证明，提升 AI 素养能显著增强老年人的风险防...
+2026-03-26 08:51:00
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-26 22:30:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-27 00:24:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3451,9 +3451,7 @@
 
 ### [介绍-TRIBE-v2：一款旨在理解人脑如何处理复杂刺激的预测性基础模型](https://ai.meta.com/blog/tribe-v2-brain-predictive-foundation-model/)
 
-2026-03-25 16:00:00 | 标签: TRIBE v2, 基础模型, 神经科学, fMRI, 数字孪生
-
-> Meta 发布了 TRIBE v2，这是一款旨在预测人脑对复杂刺激反应的下一代基础模型。基于先前的研究，TRIBE v2 在超过 700 名志愿者的海量数据集上进行了训练，在预测 fMRI 大脑反应方面，其分辨率比早期模型提高了 70 倍。它支持针对新受试者、语言和任务的零样本（zero-shot）预测，有效地充当了计算机模拟神经科学（in silico neuroscience）的数字孪生。通过开源模型权重、代码库和研究论文，Meta 旨在加速神经系统疾病治疗的突破，并为类脑 AI 架构的开发提供参考。
+2026-03-25 16:00:00
 
 
 
@@ -31369,11 +31367,11 @@
 
 
 
-### [Cursor-设计负责人：只会画按钮的设计师，有麻烦了](https://baoyu.io/blog/2026-02-21/cursor-ryo-lu-design-team)
+### [同样的模型，为什么-Cursor-跑不过-Claude-Code？](https://baoyu.io/blog/2026-02-23/claude-code-vs-cursor)
 
-2026-02-22T03:46:14.000Z
+2026-02-24T00:00:00.000Z
 
-> Cursor 设计负责人 Ryo Lu 在访谈中谈到：4 人设计团队如何管理 293 亿美元产品、用 Cursor 构建 Cursor 的递归飞轮、最强程序员也只能同时管 4 个 Agent、以及为什么 Cursor 不想做代码编辑器。
+> 同样的 Claude 模型，在 Cursor 和 Claude Code 里效果差很多。问题不在模型，而在上下文管理、使用场景和数据飞轮三个结构性差异。当编程从「人写代码」变成「人指挥 Agent 写代码」，原生 CLI 工具天然比 IDE 里长出来的 Agent 更有优势。
 
 
 
