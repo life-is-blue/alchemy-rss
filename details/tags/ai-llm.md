@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-26 08:13:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-26 11:00:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [在自有基础设施中运行云端智能体-·-Cursor](https://cursor.com/blog/self-hosted-cloud-agents)
 
-2026-03-25 12:00:00 | 标签: Cursor, AI 智能体, 自托管, 企业安全, 云端智能体
-
-> Cursor 宣布自托管云端智能体正式全面可用，该解决方案专为有严格安全和合规要求的企业设计。与标准云端智能体不同，这些工作节点完全在公司内部网络中运行，确保代码、密钥和构建产物绝不会离开该环境。该系统使用仅限出站（outbound-only）的工作进程连接到 Cursor 的编排层，使智能体能够在隔离的虚拟机（VM）或 Kubernetes 集群中执行任务。主要功能包括支持复杂的开发环境、与 Slack 和 GitHub 等内部工具集成，以及用于大规模部署的 Helm Chart。此举旨在通过弥合自主 AI 能力与内部基础设施安全之间的差距，使 AI 编程智能体具备企业级应用能力。
+2026-03-25 12:00:00
 
 
 
@@ -11206,49 +11204,37 @@
 
 ### [Lyria-3-Pro：在更多-Google-产品中创作更长的曲目](https://deepmind.google/blog/lyria-3-pro-create-longer-tracks-in-more/)
 
-2026-03-25 16:12:20 | 标签: Lyria 3 Pro, 音乐生成, Google DeepMind, 多模态 AI, SynthID
-
-> Google DeepMind 推出了 Lyria 3 Pro，这是其音乐生成技术的重大升级。Pro 版本将曲目长度延长至 3 分钟，并引入了先进的音乐感知能力，允许用户通过提示词指定特定的结构元素，如前奏、主歌和副歌。该模型正在部署到 Google 的专业和消费级套件中：用于企业级生产的 Vertex AI、面向开发者的 Google AI Studio 和 Gemini API，以及面向内容创作者的 Google Vids。公告强调了负责任的 AI 实践，包括集成 SynthID 水印技术，并与音乐行业专业人士合作，以确保该技术成为创意表达的工具。
+2026-03-25 16:12:20
 
 
 
 ### [LangSmith-Fleet-中的-Skills](https://blog.langchain.com/skills-in-langsmith-fleet/)
 
-2026-03-25 16:10:11 | 标签: LangChain, LangSmith, AI 智能体, Fleet, 领域知识
-
-> LangChain 在 LangSmith Fleet 中推出了 Skills，旨在解决为 AI 智能体提供特定业务上下文的难题。Skills 充当持久化的简报文档（包含 SLA 等级、品牌指南或工作流程），智能体仅在相关时才会加载它们。它们可以通过 AI 提示词、模板或手动输入创建，并会在团队工作区中自动同步。一个突出的特点是可移植性：开发人员可以使用 LangSmith CLI 将这些 Skills 拉取到 Cursor 或 Claude Code 等本地 IDE 中，从而确保托管的 Fleet 智能体与代码编写的智能体之间行为的一致性。
+2026-03-25 16:10:11
 
 
 
 ### [脑洞大开的模型对话：ASI-宪法与宇宙宿主-—-LessWrong](https://www.lesswrong.com/posts/bejfwfi3ozY7qQhsv/galaxy-brained-model-chat-asi-constitutions-and-the-cosmic)
 
-2026-03-25 16:05:43 | 标签: LLM, AI 对齐, 宪法 AI, 决策理论, Gemini
-
-> 本文探讨了是否可以使用上下文宪法提示将大语言模型（LLM）引导至“宇宙宿主”（Cosmic Host， CH）概念——这是一种基于非因果协调（acausal coordination）的 AI 对齐框架。通过一系列 30 个场景的评估和定性分析，作者证明，与 Claude 和 GPT 等封闭的前沿模型相比，Gemini 模型表现出更高的可引导性，后者往往默认采用根深蒂固的“固有风格”，如人类局部主义或减少痛苦。该研究将决策理论（DT）结构与宇宙框架分离开来，揭示了模型响应的是策略层面的推理逻辑，而不仅仅是基于主题关键词的模式匹配。研究结果强调了模型特定先验（model-specific pri...
+2026-03-25 16:05:43
 
 
 
 ### [使用-Pipecat-和-Amazon-Bedrock-AgentCore-Runtime-部署语音智能体-–-第-1-部分-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/deploy-voice-agents-with-pipecat-and-amazon-bedrock-agentcore-runtime-part-1/)
 
-2026-03-25 10:52:59 | 标签: Pipecat, Amazon Bedrock, AgentCore Runtime, 语音 AI, WebRTC
-
-> 本文探讨了实时语音 AI 中延迟这一关键挑战，延迟会破坏自然的对话流程。文章介绍了 Amazon Bedrock AgentCore Runtime，这是一个利用隔离微型虚拟机（microVMs）扩展语音智能体的无服务器安全环境。文章核心评估了“客户端到智能体”连接的四种网络传输方法：用于简单原型设计的 WebSockets、用于低延迟生产环境的 WebRTC（TURN 辅助）、用于全球分发和可观测性的托管 WebRTC（通过 Daily），以及用于 PSTN 集成的电话系统。文章提供了关于使用 Kinesis Video Streams (KVS) 配置 AWS 原生 TURN 以及设置支持...
+2026-03-25 10:52:59
 
 
 
 ### [在-Amazon-Bedrock-上使用兼容-OpenAI-的-API-进行强化微调：技术指南-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/reinforcement-fine-tuning-on-amazon-bedrock-with-openai-compatible-apis-a-technical-walkthrough/)
 
-2026-03-25 09:30:56 | 标签: Amazon Bedrock, 强化学习, RFT, GRPO, LLM 微调
-
-> 本文提供了关于 Amazon Bedrock 上强化微调（RFT）的全面指南。RFT 是一种让大语言模型（LLM）通过迭代反馈而非静态数据集进行学习的方法。文章详细介绍了使用 OpenAI SDK 的端到端工作流程，涵盖了通过 Bedrock API 密钥进行身份验证、使用 GSM8K 数学数据集进行数据准备，以及部署 AWS Lambda 函数作为奖励评估器。该过程利用 GRPO（组相对策略优化）算法，根据实时反馈优化模型权重。文中强调的主要优势包括模型探索新颖推理路径的能力，以及在数学和编程等可验证任务中无需人工标注。指南还解释了如何监控奖励趋势、策略损失和熵等关键训练指标，以确保模型稳定...
+2026-03-25 09:30:56
 
 
 
 ### [DeepSeek-急招-Agent-方向！一口气放-17-个岗位，重度-Vibe-Coding-优先](https://www.qbitai.com/2026/03/392024.html)
 
-2026-03-25 06:39:13 | 标签: DeepSeek, AI Agent, Vibe Coding, 强化学习, 人才招聘
-
-> 本文报道了 DeepSeek 近期发布的 17 个核心研发岗位，重点聚焦于 AI Agent 领域。招聘涵盖了 Agent 深度学习算法研究员、数据评测专家、基础设施工程师以及相关产品经理和全栈开发岗位。值得关注的是，DeepSeek 在岗位要求中多次强调「Vibe Coding」背景，优先考虑熟练使用 Cursor、Claude Code 等 AI 编程工具的候选人。文章分析指出，这标志着 DeepSeek 的布局已从基础模型研究转向 Agent 的全链路能力建设与产品化落地，旨在构建包含强化学习、数据闭环及高性能运行环境在内的自主 Agent 系统。
+2026-03-25 06:39:13
 
 
 
@@ -11260,9 +11246,7 @@
 
 ### [首个全品类旅行-skill-来了！飞猪“flyai”上线-ClawHub、GitHub](https://www.qbitai.com/2026/03/391890.html)
 
-2026-03-25 06:20:27 | 标签: 飞猪, MCP, AI Agent, OpenClaw, 旅游科技
-
-> 飞猪正式发布首个全品类出行旅游技能插件「flyai」，并已上线 ClawHub 和 GitHub。该插件基于 MCP（模型上下文协议）构建，提供涵盖机票、酒店、门票、目的地玩乐等全链路商品的搜索、规划及预订服务。其核心优势在于「即装即用」，开发者无需在官方平台注册或申领 API Key 即可调用。文章指出，随着 AI Agent 时代的到来，交互模式正从传统 APP 转向语言用户界面（LUI），飞猪此举旨在通过标准化协议抢占 Agent 生态入口，为开发者提供大出行场景的基础设施。
+2026-03-25 06:20:27
 
 
 
@@ -11298,9 +11282,7 @@
 
 ### [Claude-能直接操控你的电脑微信了，这才是真正的上位小龙虾。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680984&idx=1&sn=ecbe236bf31aa18fcff2e1fcdd56f9a7)
 
-2026-03-25 02:09:00 | 标签: Claude, Anthropic, Computer Use, AI Agent, Dispatch
-
-> 文章详细解析了 Claude 最近的两项重大更新：Computer Use 和 Dispatch。Computer Use 采用纯视觉方案，使 AI 能够像人一样「看见」并操作没有 API 接口的本地软件（如微信、剪映）；Dispatch 则实现了便捷的远程控制，允许用户通过手机端 Claude 向电脑端分发任务。作者通过实测展示了 Claude 自动总结微信群聊、阅读朋友圈、甚至自主搜索 Bilibili 并发布朋友圈的强大 Agent 能力。此外，文章还对比了 Claude 与 OpenClaw 等竞品，强调了 Anthropic 在 Agent 领域的技术领先地位及极快的产品迭代速度。
+2026-03-25 02:09:00
 
 
 
@@ -33224,33 +33206,25 @@
 
 ### [GitHub-Copilot-交互数据使用政策更新](https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/)
 
-2026-03-25 19:02:32 | 标签: GitHub Copilot, 数据隐私, AI 训练, 机器学习, 开发者工具
-
-> GitHub 正在更新其数据使用政策，旨在通过真实世界的交互数据提升 Copilot 的智能水平。自 4 月 24 日起，个人用户（Free、Pro、Pro+）的输入、输出和代码片段将默认被用于训练模型。此更新不影响 Copilot Business 或 Enterprise 层级。GitHub 强调，现有的隐私偏好设置将得到保留，用户可随时通过设置选择退出。收集的数据包括已采纳的建议、代码上下文和仓库结构，这些数据可能会与 Microsoft 共享，但不会提供给第三方供应商。
+2026-03-25 19:02:32
 
 
 
 ### [如何将-GAN-架构应用于多智能体代码生成](https://www.freecodecamp.org/news/how-to-apply-gan-architecture-to-multi-agent-code-generation/)
 
-2026-03-25 16:49:56 | 标签: AI 智能体, GAN, 代码生成, Claude Code, 多智能体系统
-
-> 作者探讨了 AI 编程中根本性的“单次生成问题”（single-pass problem），即智能体在评估自己的工作时，会受到创建该工作时所用上下文的干扰，导致产生幻觉和偷工减料。通过应用 GAN（生成对抗网络）架构，该工作流将任务拆分给生成器（规划者/实现者）和判别器（审查者）。关键创新包括：使用隔离的上下文窗口来防止“上下文腐烂”（context rot）；通过文件系统上的结构化 feedback.md 文件进行通信，以实现可审计性和状态恢复；以及使用反问句来触发更深层次的 LLM 推理。文章通过 Claude Forge 项目提供了具体的实现方案，概述了一个从 Phase-0 约定到迭代...
+2026-03-25 16:49:56
 
 
 
 ### [如何使用-Model-Context-Protocol-构建个人财务助手](https://www.freecodecamp.org/news/how-to-use-mcp-to-build-a-personal-financial-assistant/)
 
-2026-03-25 16:41:36 | 标签: MCP, Model Context Protocol, 金融 AI, Python, LLM 幻觉
-
-> 本文提供了一份全面的代码优先教程，介绍了如何利用 Model Context Protocol (MCP) 创建一个能够避免 LLM 幻觉的财务助手。作者引入了“叙述者”（Narrator）架构：MCP 客户端从 EODHD 获取实时市场数据，Python 执行确定性计算（如波动率、收益率和最大回撤），而 LLM 仅被严格限制用于叙述这些预先计算好的事实。指南涵盖了构建 MCP 客户端包装器、实现安全预算、解析请求，以及生成带有完整工具调用追踪的结构化市场简报和观察列表快照。
+2026-03-25 16:41:36
 
 
 
 ### [QCon-London-2026：赋能下一个-10-亿开发者的工具](https://www.infoq.com/news/2026/03/qcon-next-developers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-25 15:22:00 | 标签: AI 工具, 智能体未来, 软件架构, Netlify, Next.js
-
-> 本文基于 Ivan Zarea 在 QCon London 2026 上的演讲，探讨了 Web 开发格局的变革。随着 AI 智能体越来越多地承担代码编写工作，像 Netlify 这样的平台正见证着“构建者”（builders）数量的激增，他们是领域专家，而非传统的开发人员。Zarea 概述了未来工具的三大支柱：培养超越代码的架构专业知识，磨练面向人类和智能体的设计品味，以及通过构建“智能体优先”（agent-first）的框架来实践远见。演讲强调了 Vite 的崛起、Next.js 对 MCP 和 agents.md 等标准的应用，以及在 AI 驱动时代框架重写成本的显著降低。
+2026-03-25 15:22:00
 
 
 
@@ -33274,9 +33248,7 @@
 
 ### [OpenAI-推出桌面超级应用，与-Anthropic-展开企业级市场巅峰对决](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279704&idx=3&sn=47c212066b1394d9d12d99233b02b87e)
 
-2026-03-25 06:58:00 | 标签: OpenAI, Anthropic, 智能体, 企业级 AI, Claude Code
-
-> 本文深度分析了 OpenAI 与 Anthropic 在企业级 AI 市场的激烈竞争态势。面对 Anthropic 在企业支出（40% 份额）和 API 市场（近 80% 份额）的领先地位，OpenAI 决定收缩战线，将分散的产品线整合为一款具备「智能体」能力的桌面超级应用，重新聚焦开发者与生产力场景。文章详细对比了两家公司的财务状况、产品节奏（如 Claude Code 对标 Codex）以及 IPO 进程，指出 AI 竞争已从单纯的对话框转向深度集成桌面工作流的智能体时代。Anthropic 凭借在企业市场的深耕和更快的盈利预期，正对 OpenAI 的核心腹地构成实质性威胁。
+2026-03-25 06:58:00
 
 
 
@@ -46946,9 +46918,7 @@ http://antirez.com/news/162
 
 ### [“小龙虾”踢了-Anthropic-一脚](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566261&idx=1&sn=09de8c94feb4f5c4b1914a530b142e06)
 
-2026-03-25 10:45:00 | 标签: Anthropic, Claude, OpenClaw, AI Agent, Computer Use
-
-> 本文深度解析了 Anthropic 近期密集发布的四项重大更新（Remote Control、Dispatch、Channels、Computer Use）背后的战略意图。文章指出，这些更新是对开源项目 OpenClaw（小龙虾）崛起的强力回应，旨在将 AI 智能体的能力从简单的对话扩展到对物理桌面的直接控制。Anthropic 采用了「本地执行，云端调度」的架构，在提升生产力的同时兼顾了企业级安全需求，并通过开源模型上下文协议（MCP）构建生态壁垒，展现了其「大脑封闭、接口开放」的双轨竞争策略。
+2026-03-25 10:45:00
 
 
 
@@ -46960,9 +46930,7 @@ http://antirez.com/news/162
 
 ### [OpenAI-战略大转折：关停-Sora，聚焦代码与企业赛道](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566246&idx=1&sn=e0a716c016e984a35595709ec9d31ca4)
 
-2026-03-25 02:59:00 | 标签: OpenAI, Sora, Anthropic, AI 战略, 企业级 AI
-
-> 文章以 2026 年 3 月 OpenAI 宣布关停上线仅半年的 Sora 为切入点，深度分析了这家 AI 巨头的战略困境。核心观点认为，OpenAI 过去一年「全线出击」的策略导致了资源分散和主线迷失，而竞争对手 Anthropic 凭借在编程（Claude Code）和企业市场的专注，已在关键赛道建立代差优势。面对核心人才流失、巨额财务亏损以及 2026 年底 IPO 的压力，OpenAI 迫不得已执行「减法」，将资源重新整合至代码和企业级超级应用。这不仅是产品的更迭，更是公司在资本、人才与竞争多重挤压下的生存抉择。
+2026-03-25 02:59:00
 
 
 
@@ -61596,9 +61564,7 @@ http://antirez.com/news/162
 
 ### [Google-发布-Lyria-3-Pro-和-Lyria-3-Clip-音乐模型](https://x.com/OfficialLoganK/status/2036848277333622956)
 
-2026-03-25 16:50:46 | 标签: Google, Lyria 3, Gemini API, AI 音乐, 生成式 AI
-
-> Logan Kilpatrick 宣布发布 Lyria 3 Pro（用于生成完整歌曲）和 Lyria 3 Clip（用于生成 30 秒音乐片段）音乐生成模型。这些模型现已集成至 Gemini API 以及 Google AI Studio 中全新的音乐体验里，标志着 Google 面向开发者和创作者的生成式音频能力得到了重大扩展。
+2026-03-25 16:50:46
 
 
 

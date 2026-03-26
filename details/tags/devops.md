@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-26 08:13:00 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-26 11:00:33 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -428,17 +428,13 @@
 
 ### [如何保护-Kubernetes-集群：RBAC、Pod-加固与运行时保护](https://www.freecodecamp.org/news/how-to-secure-a-kubernetes-cluster-handbook/)
 
-2026-03-25 16:45:23 | 标签: Kubernetes, 云原生安全, RBAC, DevOps, Falco
-
-> 本详细指南探讨了 Kubernetes 默认配置中固有的安全风险，这些配置对于生产环境来说往往过于宽松。文章首先梳理了 Kubernetes 的威胁态势（包括 API server、etcd 和容器运行时），并引用了备受关注的安全漏洞案例（Tesla、Capital One、Shopify）来说明常见的陷阱。文章提供了一套实施“纵深防御”策略的实操流程：使用 kube-bench 审计集群、配置细粒度的 RBAC 角色和服务账号、加固 Pod 安全上下文（非 root 用户、只读文件系统），以及部署 Falco 进行系统调用级别的监控和实时告警。
+2026-03-25 16:45:23
 
 
 
 ### [通过整合未充分利用的-GPU-工作负载来最大化-AI-基础设施吞吐量](https://developer.nvidia.com/blog/maximize-ai-infrastructure-throughput-by-consolidating-underutilized-gpu-workloads/)
 
-2026-03-25 16:36:00 | 标签: GPU 分区, Kubernetes, MIG, 时间切片, MLOps
-
-> 本文探讨了 Kubernetes 环境中常见的 GPU 利用率不足问题，即轻量级模型（如 ASR 和 TTS）往往占用整个 GPU。文章以多模态语音 AI 流水线为测试平台，评估了两种分区策略——NVIDIA Multi-Instance GPU (MIG) 和时间切片。作者对吞吐量、延迟和故障隔离进行了对比分析，结论是：虽然时间切片在开发阶段提供了灵活性，但由于其硬件级隔离和更高的吞吐效率，MIG 是生产环境的更优选择。文中还包含了实验配置和基础设施优化的可行性建议。
+2026-03-25 16:36:00
 
 
 
