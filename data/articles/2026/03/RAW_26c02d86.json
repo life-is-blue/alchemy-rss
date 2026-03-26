@@ -1,0 +1,53 @@
+{
+  "id": "RAW_26c02d86",
+  "title": "发布：datasette-llm 0.1a1",
+  "url": "https://simonwillison.net/2026/Mar/25/datasette-llm/#atom-everything",
+  "date": "2026-03-25 21:24:31",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">25th March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a1\">datasette-llm 0.1a1</a></span> <span class=\"beat-commit\">— LLM integration plugin for other plugins to depend on</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>New release of the base plugin that makes models from <a href=\"https://llm.datasette.io/\">LLM</a> available for use by other Datasette plugins such as <a href=\"https://github.com/datasette/datasette-enrichments-llm\">datasette-enrichments-llm</a>.</p>\n      <blockquote>\n       <ul>\n        <li>New <a href=\"https://github.com/datasette/datasette-llm/blob/main/README.md#register_llm_purposes\"><code>register_llm_purposes()</code> plugin hook</a> and <code>get_purposes()</code> function for retrieving registered purpose strings. <a href=\"https://github.com/datasette/datasette-llm/issues/1\">#1</a></li>\n       </ul>\n      </blockquote>\n      <p>One of the responsibilities of this plugin is to configure which models are used for which purposes, so you can say in one place \"data enrichment uses GPT-5.4-nano but SQL query assistance happens using Sonnet 4.6\", for example.</p>\n      <p>Plugins that depend on this can use <code>model = await llm.model(purpose=\"enrichment\")</code> to indicate the purpose of the prompts they wish to execute against the model. Those plugins can now also use the new <code>register_llm_purposes()</code> hook to register those purpose strings, which means future plugins can list those purposes in one place to power things like an admin UI for assigning models to purposes.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4060/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-llm 0.1a1 的发布引入了一个新的插件钩子，用于将特定的 LLM 模型映射到数据增强或 SQL 辅助等功能用途上。",
+  "oneSentenceSummary": "datasette-llm 0.1a1 的发布引入了一个新的插件钩子，用于将特定的 LLM 模型映射到数据增强或 SQL 辅助等功能用途上。",
+  "summary": "Simon Willison 发布了 datasette-llm 的 0.1a1 版本，这是一个基础插件，使其他 Datasette 插件能够利用 LLM 的能力。此次更新的关键在于引入了 `register_llm_purposes()` 钩子，它允许对模型分配进行集中配置。这一架构改进使开发者能够为不同的任务指定不同的模型——例如，使用轻量级模型进行数据增强，同时为 SQL 查询生成保留更强大的模型——而无需将模型名称硬编码到各个插件中。",
+  "mainPoints": [
+    {
+      "point": "集中式的 LLM 用途映射。",
+      "explanation": "该插件允许用户在一个地方配置哪些特定的 LLM 模型被分配给 Datasette 生态系统中的不同功能任务。"
+    },
+    {
+      "point": "引入 register_llm_purposes() 钩子。",
+      "explanation": "这个新钩子使插件能够注册特定的用例字符串，从而促进了用于模型管理的管理界面的创建。"
+    },
+    {
+      "point": "将逻辑与特定模型解耦。",
+      "explanation": "通过“用途”（purpose）参数请求模型，依赖插件无需感知所使用的具体 LLM 提供商或版本。"
+    }
+  ],
+  "keyQuotes": [
+    "该插件的职责之一是配置哪些模型用于哪些用途。",
+    "依赖此插件的插件可以使用 model = await llm.model(purpose=\"enrichment\") 来指明它们希望针对模型执行的提示词的用途。",
+    "未来的插件可以在一个地方列出这些用途，从而支持诸如为用途分配模型的管理界面等功能。"
+  ],
+  "tags": [
+    "Datasette",
+    "LLM",
+    "插件开发",
+    "Python",
+    "AI 集成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 151,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774473871000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 21:24:31"
+}

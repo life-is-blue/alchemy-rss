@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-26 14:22:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-26 16:15:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -618,6 +618,22 @@
 
 
 
+### [如何使用-React-和数据可视化工具构建交互式大学排名系统](https://www.freecodecamp.org/news/build-an-interactive-ranking-system-using-react-and-data-viz-tools/)
+
+2026-03-25 21:02:53 | 标签: React, 数据可视化, Flexmonster, ECharts, 数据透视表
+
+> 本文提供了创建用于分析世界大学历史排名的可视化仪表盘的综合指南。文章涵盖了如何将 React 与 Flexmonster 集成以进行复杂的数据网格操作，以及使用 ECharts 进行趋势可视化分析。教程详细介绍了环境设置、将 CSV 数据映射到透视报告、实现按年份动态过滤，以及应用自定义 CSS 样式来创建专业且交互式的用户界面。
+
+
+
+### [如何使用-OpenStreetMap-作为-Google-Maps-的免费替代方案](https://www.freecodecamp.org/news/how-to-use-openstreetmap-free-alternative-to-google-maps/)
+
+2026-03-25 17:35:27 | 标签: OpenStreetMap, Leaflet, React, Google Maps 替代方案, 地理编码
+
+> 本文探讨了 OpenStreetMap (OSM) 作为开发者替代 Google Maps 的免费、社区驱动方案。文章强调了 OSM 带来的成本优势和数据控制能力，并解释了其分层生态系统，包括数据层（原始地理数据）、渲染层（Leaflet/MapLibre）和服务层（地理编码/路由）。指南提供了将 OSM 集成到 React 应用中的分步教程，涵盖使用 Leaflet、通过 Nominatim 实现地理编码，并讨论了路由引擎和矢量地图等高级功能。
+
+
+
 ### [如何使用-JavaScript-构建基于浏览器的图像转换器](https://www.freecodecamp.org/news/build-a-browser-based-image-converter-using-javascript/)
 
 2026-03-23 17:09:54
@@ -660,13 +676,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -816,13 +832,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2316,13 +2332,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4026,13 +4042,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

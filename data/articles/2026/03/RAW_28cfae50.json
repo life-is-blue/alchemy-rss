@@ -1,0 +1,59 @@
+{
+  "id": "RAW_28cfae50",
+  "title": "关于慢下来的思考",
+  "url": "https://simonwillison.net/2026/Mar/25/thoughts-on-slowing-the-fuck-down/#atom-everything",
+  "date": "2026-03-25 21:47:17",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">25th March 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Mar/25/thoughts-on-slowing-the-fuck-down/\">\n    <p><strong><a href=\"https://news.ycombinator.com/item?id=47517539\">Thoughts on slowing the fuck down</a></strong>. Mario Zechner created the <a href=\"https://github.com/badlogic/pi-mono\">Pi agent framework</a> used by OpenClaw, giving considerable credibility to his opinions on current trends in agentic engineering. He's not impressed:</p>\n    <blockquote>\n     <p>We have basically given up all discipline and agency for a sort of addiction, where your highest goal is to produce the largest amount of code in the shortest amount of time. Consequences be damned.</p>\n    </blockquote>\n    <p>Agents and humans both make mistakes, but agent mistakes accumulate much faster:</p>\n    <blockquote>\n     <p>A human is a bottleneck. A human cannot shit out 20,000 lines of code in a few hours. Even if the human creates such booboos at high frequency, there's only so many booboos the human can introduce in a codebase per day. [...]</p>\n     <p>With an orchestrated army of agents, there is no bottleneck, no human pain. These tiny little harmless booboos suddenly compound at a rate that's unsustainable. You have removed yourself from the loop, so you don't even know that all the innocent booboos have formed a monster of a codebase. You only feel the pain when it's too late. [...]</p>\n     <p>You have zero fucking idea what's going on because you delegated all your agency to your agents. You let them run free, and they are merchants of complexity.</p>\n    </blockquote>\n    <p>I think Mario is exactly right about this. Agents let us move <em>so much faster</em>, but this speed also means that changes which we would normally have considered over the course of weeks are landing in a matter of hours.</p>\n    <p>It's so easy to let the codebase evolve outside of our abilities to reason clearly about it. <a href=\"https://simonwillison.net/tags/cognitive-debt/\">Cognitive debt</a> is real.</p>\n    <p>Mario recommends slowing down:</p>\n    <blockquote>\n     <p>Give yourself time to think about what you're actually building and why. Give yourself an opportunity to say, fuck no, we don't need this. Set yourself limits on how much code you let the clanker generate per day, in line with your ability to actually review the code.</p>\n     <p>Anything that defines the gestalt of your system, that is architecture, API, and so on, write it by hand. [...]</p>\n    </blockquote>\n    <p>I'm not convinced writing by hand is the best way to address this, but it's absolutely the case that we need the discipline to find a new balance of speed v.s. mental thoroughness now that typing out the code is no longer anywhere close to being the bottleneck on writing software.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9396/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 探讨了 AI 驱动的“智能体工程”所带来的风险，警告称缺乏人类瓶颈会导致不可持续的复杂性和认知负债。",
+  "oneSentenceSummary": "Simon Willison 探讨了 AI 驱动的“智能体工程”所带来的风险，警告称缺乏人类瓶颈会导致不可持续的复杂性和认知负债。",
+  "summary": "在这篇针对 Mario Zechner 对当前 AI 智能体趋势批评的评论中，Simon Willison 探讨了将代码量置于人类理解之上的危险。其核心论点是：虽然人类作为天然的瓶颈限制了错误的积累，但“编排好的智能体大军”可以在数小时内生成数千行代码，导致“小错误”以无法控制的速度复合。这一过程制造了“复杂性贩子”和严重的认知负债，使得代码库的演进速度超过了开发者对其进行推理的能力。文章提倡一种自律的方法：慢下来，将 AI 代码生成限制在可实际审查的范围内，并保持人类对系统架构和 API 的控制。",
+  "mainPoints": [
+    {
+      "point": "消除人类瓶颈会导致技术错误不断复合。",
+      "explanation": "与人类不同，AI 智能体不会感到疲劳或痛苦，这使它们能够快速生成海量代码。这种缺乏阻力的过程意味着，在开发者察觉之前，小错误就会积累成一个“庞大的代码怪兽”。"
+    },
+    {
+      "point": "将代理权委托给智能体会制造“复杂性贩子”。",
+      "explanation": "当开发者停止编写代码并对其进行深入思考时，他们就失去了对系统进行推理的能力，实际上是将软件的“整体形态”委托给了那些优先考虑产出而非简洁性的工具。"
+    },
+    {
+      "point": "在 AI 辅助编程时代，认知负债是一个关键风险。",
+      "explanation": "随着代码库在数小时而非数周内演进，系统复杂性与开发者心智模型之间的差距不断扩大，最终导致创造者不再理解自己的作品。"
+    },
+    {
+      "point": "需要自律来平衡 AI 的速度与思维的缜密性。",
+      "explanation": "开发者应根据自己实际的审查能力，为 AI 生成的代码设定每日限额，确保架构和核心逻辑保持在人类可理解的范围内。"
+    }
+  ],
+  "keyQuotes": [
+    "我们基本上放弃了所有的自律和自主权，沉迷于一种瘾，即你的最高目标是在最短的时间内生产出最大量的代码。",
+    "有了编排好的智能体大军，就没有了瓶颈，没有了人类的痛苦。这些微小而无害的错误突然以一种不可持续的速度复合起来。",
+    "你根本不知道发生了什么，因为你把所有的自主权都委托给了智能体。你放任它们自由运行，而它们就是复杂性的贩子。",
+    "认知负债是真实存在的。",
+    "为自己设定每天允许这些机器生成多少代码的限制，要与你实际审查代码的能力相匹配。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "软件工程",
+    "认知负债",
+    "代码质量",
+    "智能体工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 398,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774475237000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 21:47:17"
+}

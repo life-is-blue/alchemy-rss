@@ -1,0 +1,48 @@
+{
+  "id": "RAW_f6676a46",
+  "title": "发布：datasette-files-s3 0.1a1",
+  "url": "https://simonwillison.net/2026/Mar/25/datasette-files-s3/#atom-everything",
+  "date": "2026-03-25 21:57:05",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">25th March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-files-s3/releases/tag/0.1a1\">datasette-files-s3 0.1a1</a></span> <span class=\"beat-commit\">— datasette-files S3 backend</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>A backend for <a href=\"https://github.com/datasette/datasette-files\">datasette-files</a> that adds the ability to store and retrieve files using an S3 bucket. This release added <a href=\"https://github.com/datasette/datasette-files-s3/blob/main/README.md#credentials-broker-response\">a mechanism</a> for fetching S3 configuration periodically from a URL, which means we can use time limited IAM credentials that are restricted to a prefix within a bucket.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4061/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 宣布发布 datasette-files-s3 0.1a1 版本，为 datasette-files 引入了安全的 S3 后端，并支持限时 IAM 凭证。",
+  "oneSentenceSummary": "Simon Willison 宣布发布 datasette-files-s3 0.1a1 版本，为 datasette-files 引入了安全的 S3 后端，并支持限时 IAM 凭证。",
+  "summary": "本发布说明详细介绍了 datasette-files-s3 的 0.1a1 版本，这是一个为 datasette-files 生态系统提供 S3 存储功能的插件。此次更新的亮点是一种从远程 URL 定期获取 S3 配置和凭证的新机制。这使得使用限制在特定存储桶前缀的限时 IAM 凭证成为可能，从而显著增强了 Datasette 中云端文件存储的安全性。",
+  "mainPoints": [
+    {
+      "point": "为 datasette-files 引入 S3 后端。",
+      "explanation": "该插件允许 Datasette 用户直接使用 S3 存储桶来存储和检索文件，将存储选项从本地文件系统扩展开来。"
+    },
+    {
+      "point": "通过代理机制实现安全的凭证管理。",
+      "explanation": "此版本增加了一种从 URL 定期获取 S3 配置的机制，支持使用短期的、受前缀限制的 IAM 凭证，从而提高了安全性。"
+    }
+  ],
+  "keyQuotes": [
+    "一个为 datasette-files 提供的后端，增加了使用 S3 存储桶存储和检索文件的能力。",
+    "此版本增加了一种从 URL 定期获取 S3 配置的机制，这意味着我们可以使用限制在存储桶内特定前缀的限时 IAM 凭证。"
+  ],
+  "tags": [
+    "Datasette",
+    "S3",
+    "云存储",
+    "IAM",
+    "开源"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 58,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774475825000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 21:57:05"
+}

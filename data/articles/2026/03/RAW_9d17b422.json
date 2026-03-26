@@ -1,0 +1,52 @@
+{
+  "id": "RAW_9d17b422",
+  "title": "LiteLLM 被黑：你是那 47，000 人之一吗？",
+  "url": "https://simonwillison.net/2026/Mar/25/litellm-hack/#atom-everything",
+  "date": "2026-03-25 17:21:04",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">25th March 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Mar/25/litellm-hack/\">\n    <p><strong><a href=\"https://futuresearch.ai/blog/litellm-hack-were-you-one-of-the-47000/\">LiteLLM Hack: Were You One of the 47,000?</a></strong> (<a href=\"https://twitter.com/hnykda/status/2036834100342825369\" title=\"@hnykda\">via</a>) Daniel Hnyk used the <a href=\"https://console.cloud.google.com/bigquery?p=bigquery-public-data&amp;d=pypi\">BigQuery PyPI dataset</a> to determine how many downloads there were of <a href=\"https://simonwillison.net/2026/Mar/24/malicious-litellm/\">the exploited LiteLLM packages</a> during the 46 minute period they were live on PyPI.</p>\n    <p>They also identified 2,337 packages that depended on LiteLLM - 88% of which did not pin versions in a way that would have avoided the exploited version.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9395/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "这篇文章重点介绍了针对 LiteLLM 的供应链攻击，指出在短短 46 分钟内就发生了 47，000 次下载，且由于缺乏版本锁定，88% 的依赖包都存在漏洞。",
+  "oneSentenceSummary": "这篇文章重点介绍了针对 LiteLLM 的供应链攻击，指出在短短 46 分钟内就发生了 47，000 次下载，且由于缺乏版本锁定，88% 的依赖包都存在漏洞。",
+  "summary": "Simon Willison 报道了 Daniel Hnyk 对近期 PyPI 上 LiteLLM 软件包恶意利用事件的调查。通过分析 BigQuery PyPI 数据集，研究确定受损版本在上线仅 46 分钟的短暂窗口期内被下载了 47，000 次。该分析进一步揭示了一个重大的供应链风险：在 2，337 个依赖 LiteLLM 的软件包中，88% 未能严格锁定版本以避免安装受攻击的版本，这凸显了防御性依赖管理在生态系统中的普遍缺失。",
+  "mainPoints": [
+    {
+      "point": "LiteLLM 漏洞利用在极短时间内造成了巨大影响。",
+      "explanation": "尽管恶意软件包仅上线了 46 分钟，却被下载了 47，000 次，这展示了供应链攻击传播的速度之快。"
+    },
+    {
+      "point": "松散的版本锁定是生态系统中的一个关键漏洞。",
+      "explanation": "88% 的依赖包没有使用严格的版本控制，这意味着它们在全新安装或更新时会自动拉取受损版本。"
+    },
+    {
+      "point": "像 BigQuery PyPI 这样的公共数据集对于安全审计至关重要。",
+      "explanation": "利用公共遥测数据快速量化漏洞利用的影响，对于事件响应和提高社区意识至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "Daniel Hnyk 使用 BigQuery PyPI 数据集确定了在受攻击的 LiteLLM 软件包于 PyPI 上线的 46 分钟内，其下载量是多少。",
+    "其中 88% 的软件包没有以能够避免受攻击版本的方式锁定版本。"
+  ],
+  "tags": [
+    "供应链安全",
+    "PyPI",
+    "LiteLLM",
+    "依赖管理",
+    "软件安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 71,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774459264000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 17:21:04"
+}

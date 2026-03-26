@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a751090b",
+  "title": "使用 Hugging Face 部署 AI 模型",
+  "url": "https://www.freecodecamp.org/news/deploying-ai-models-with-hugging-face/",
+  "date": "2026-03-25 20:18:56",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hugging Face has become the \"operating system\" of the modern AI revolution.</p>\n  <p>We just posted a comprehensive new course on the freeCodeCamp.org YouTube channel that will teach you about Hugging Face and how to deploy AI models on the platform.</p>\n  <p>This course is designed to take you from a curious tinkerer to an engineer capable of deploying real-world AI applications. Mohammed Abrah developed this course.</p>\n  <p>The course treats the Hugging Face ecosystem as a unified workflow, connecting models, datasets, and deployment tools into one coherent pipeline.</p>\n  <p>Here are the main topics covered in this course:</p>\n  <ul>\n   <li>\n    <p><strong>The Transformers Library:</strong> Deep dive into architectures like BERT, GPT-2, and DistilBERT.</p>\n   </li>\n   <li>\n    <p><strong>Audio &amp; Speech:</strong> Build pipelines for speech recognition and audio understanding.</p>\n   </li>\n   <li>\n    <p><strong>Generative AI with Diffusers:</strong> Harness Stable Diffusion for sophisticated image generation workflows.</p>\n   </li>\n   <li>\n    <p><strong>Multimodal Models:</strong> Explore the cutting edge where vision and language meet.</p>\n   </li>\n   <li>\n    <p><strong>Interactive Demos with Gradio:</strong> Turn your models into user-friendly web applications in minutes.</p>\n   </li>\n   <li>\n    <p><strong>Full Deployment via Spaces:</strong> Learn how to host your AI apps on the cloud for the world to see.</p>\n   </li>\n  </ul>\n  <p>You can watch the full course now <a href=\"https://youtu.be/R8h_gpSpEVU\">on the freeCodeCamp.org YouTube channel</a> (7-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/R8h_gpSpEVU\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "freeCodeCamp 发布了一门长达 7 小时的综合性 YouTube 课程，涵盖了整个 Hugging Face 生态系统，从 Transformers 和 Diffusers 到通过 Gradio 和 Spaces 进行模型部署。",
+  "oneSentenceSummary": "freeCodeCamp 发布了一门长达 7 小时的综合性 YouTube 课程，涵盖了整个 Hugging Face 生态系统，从 Transformers 和 Diffusers 到通过 Gradio 和 Spaces 进行模型部署。",
+  "summary": "本文介绍了 freeCodeCamp.org YouTube 频道上发布的一门由 Mohammed Abrah 开发的全新免费 7 小时综合课程。该课程旨在帮助学习者从初学者成长为能够部署实际 AI 应用的工程师。课程涵盖了整个 Hugging Face 流水线，包括 Transformers 库（BERT、GPT-2）、音频和语音处理、基于 Stable Diffusion 的生成式 AI、多模态模型，以及使用 Gradio 和 Hugging Face Spaces 创建交互式 Web 演示。",
+  "mainPoints": [
+    {
+      "point": "全面的 Hugging Face 工作流",
+      "explanation": "该课程将整个生态系统视为一个统一的流水线，将模型、数据集和部署工具连接成一个连贯的工作流。"
+    },
+    {
+      "point": "多样化的 AI 模态与架构",
+      "explanation": "课程内容涵盖了基于文本的 Transformers（BERT、GPT-2）、音频和语音识别，以及像 Stable Diffusion 这样的生成式视觉模型。"
+    },
+    {
+      "point": "端到端的实际部署",
+      "explanation": "重点讲解如何使用 Gradio 将模型转化为用户友好的 Web 应用，并通过 Hugging Face Spaces 将其托管到云端。"
+    }
+  ],
+  "keyQuotes": [
+    "Hugging Face 已成为现代 AI 革命的“操作系统”。",
+    "本课程旨在让你从一名好奇的业余爱好者，成长为能够部署实际 AI 应用的工程师。",
+    "该课程将 Hugging Face 生态系统视为一个统一的工作流，将模型、数据集和部署工具连接成一个连贯的流水线。"
+  ],
+  "tags": [
+    "Hugging Face",
+    "AI 部署",
+    "Transformers",
+    "Gradio",
+    "机器学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 187,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774469936000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 20:18:56"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_5ae28050",
+  "title": "Uber 发布 IngestionNext：流式优先的数据湖将延迟和计算成本降低了 25%",
+  "url": "https://www.infoq.com/news/2026/03/uber-streaming-date-lake/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-25 14:05:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Uber engineers have <a href=\"https://www.uber.com/blog/from-batch-to-streaming-accelerating-data-freshness-in-ubers-data-lake/\">re‑architected the company’s data lake ingestion platform</a>, moving from scheduled batch jobs to a streaming‑first system. The platform, IngestionNext, processes event streams continuously, reducing ingestion latency from hours to minutes and enabling faster availability for analytics and machine learning workloads.</p>\n   <p>Previously, ingestion pipelines relied on Apache Spark and ran as scheduled batch jobs. While capable of large-scale processing, batch pipelines delayed data availability for analytics and experiments.</p>\n   <p>As noted by <a href=\"https://www.linkedin.com/in/kaiwaehner/\">Kai Waehner</a>, Global Field CTO in a LinkedIn <a href=\"https://www.linkedin.com/posts/kaiwaehner_apachespark-apacheflink-analytics-activity-7405133855994667008-jMFD?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">post</a>:</p>\n   <blockquote>\n    <p>This move is all about treating data freshness as a key dimension of data quality.</p>\n   </blockquote>\n   <p>IngestionNext introduces a streaming-first pipeline that continuously processes event streams before committing them to the data lake. Events flow through Apache Kafka and are processed by Flink jobs, which write to Hudi tables with transactional commits, rollbacks, and time travel. Freshness and completeness are measured end-to-end.</p>\n   <p>The architecture supports thousands of datasets and high global data volumes, enabling faster availability for analytics dashboards, experimentation platforms, and machine learning models. A control plane automates job life cycle, configuration, and health monitoring, while regional failover and fallback strategies maintain continuity and prevent data loss during outages.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/uber-streaming-date-lake/news/2026/03/uber-streaming-date-lake/en/resources/1uberingestionnext-1773548132460.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/uber-streaming-date-lake/en/resources/1uberingestionnext-1773548132460.jpeg\" rel=\"share\"></p>\n   <p><em>IngestionNext architecture (Source: <a href=\"https://www.uber.com/blog/from-batch-to-streaming-accelerating-data-freshness-in-ubers-data-lake/\">Uber Blog Post)</a></em></p>\n   <p>Moving to a streaming ingestion model introduced several technical challenges. One challenge was creating many small files in the data lake, which can degrade query performance and storage efficiency. To address this issue, the engineers implemented row-group-level merging strategies for Parquet files and added compaction mechanisms to maintain efficient file layouts during continuous data ingestion. Open-source efforts, including <a href=\"https://github.com/apache/hudi/pull/13365\">Apache Hudi</a>, explored schema-evolution-aware merging using padding and masking to align differing schemas, though this adds implementation complexity and maintenance overhead.</p>\n   <p>The team also implemented mechanisms to handle checkpointing, partition skew, and recovery in distributed streaming pipelines. The system tracks offsets from upstream streams and coordinates commits to ensure that ingestion jobs maintain data correctness and can recover reliably in the event of failures.</p>\n   <p>According to the engineers, the transition to streaming ingestion also improved resource efficiency. By replacing scheduled batch workloads with continuously running streaming jobs that scale with incoming data volume, the system reduced compute usage by roughly 25%.</p>\n   <p><a href=\"https://www.linkedin.com/in/suqiang-song-72041716/\">Suqiang Song</a>, who co-authored the Uber Engineering blog, mentioned in his LinkedIn <a href=\"https://www.linkedin.com/posts/suqiang-song-72041716_from-batch-to-streaming-accelerating-data-activity-7404938061555339264-5c18?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">Post</a>:</p>\n   <blockquote>\n    <p>This enabled a fully end-to-end real-time data stack, from ingestion to transformation to analytics.</p>\n   </blockquote>\n   <p>While the new ingestion platform improves the freshness of raw data entering the data lake, engineers acknowledged that downstream transformations and analytics pipelines may still introduce additional latency. Future work will focus on extending streaming capabilities into the data processing stack to ensure freshness improvements propagate across the entire analytics workflow.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Uber Launches IngestionNext: Streaming-First Data Lake Cuts Latency and Compute by 25%\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/uber-streaming-date-lake/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774447500000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Uber 的 IngestionNext 平台利用 Flink 和 Hudi 将数据湖摄取从批处理转变为流式优先模式，将延迟降低至分钟级，并将计算成本降低了 25%。",
+  "oneSentenceSummary": "Uber 的 IngestionNext 平台利用 Flink 和 Hudi 将数据湖摄取从批处理转变为流式优先模式，将延迟降低至分钟级，并将计算成本降低了 25%。",
+  "summary": "Uber 通过推出 IngestionNext 重构了其数据湖摄取基础设施，从基于 Spark 的批处理转向了持续流式处理模型。通过利用 Apache Kafka、Flink 和 Hudi，该平台将数据摄取延迟从小时级降低至分钟级，显著提升了用于分析和机器学习的数据新鲜度。该架构通过 Parquet 的行组级合并解决了流式处理中常见的小文件问题，并管理了复杂的模式演变。除了性能提升外，系统通过随数据量动态扩展作业，实现了 25% 的计算资源节省。",
+  "mainPoints": [
+    {
+      "point": "从定时批处理转向流式优先架构。",
+      "explanation": "通过用基于 Flink 的持续流取代 Spark 批处理作业，Uber 将摄取延迟从小时级降低至分钟级，并将数据新鲜度视为数据质量的一个主要维度。"
+    },
+    {
+      "point": "存储效率和查询性能优化。",
+      "explanation": "为了解决流式处理中固有的“小文件问题”，团队在 Apache Hudi 中实现了 Parquet 文件的行组级合并和压缩机制。"
+    },
+    {
+      "point": "计算和资源开销显著降低。",
+      "explanation": "与传统的批处理工作负载相比，转向随数据量动态扩展的持续运行作业，使计算使用量减少了 25%。"
+    },
+    {
+      "point": "端到端可靠性和区域故障转移。",
+      "explanation": "专用的控制平面可自动化作业生命周期和健康监控，而区域回退策略确保了中断期间的数据连续性。"
+    }
+  ],
+  "keyQuotes": [
+    "此举的核心在于将数据新鲜度视为数据质量的一个关键维度。",
+    "IngestionNext 持续处理事件流，将摄取延迟从小时级降低至分钟级，从而使分析和机器学习工作负载能够更快地获取数据。",
+    "通过用随数据量动态扩展的持续运行流式作业取代定时批处理工作负载，系统将计算使用量减少了约 25%。",
+    "这实现了一个完全端到端的实时数据栈，涵盖了从摄取到转换再到分析的全过程。"
+  ],
+  "tags": [
+    "数据湖",
+    "流式摄取",
+    "Apache Flink",
+    "Apache Hudi",
+    "Uber 工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 434,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774447500000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-25 14:05:00"
+}
