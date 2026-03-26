@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-26 16:15:06 | [返回首页](/README.md)
+**更新时间**: 2026-03-26 18:18:31 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10442)
+- [AI & 大模型](#ai-llm) (10448)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (737)
 - [DevOps](#devops) (466)
@@ -43,7 +43,7 @@
 - [向量搜索的扩展：量化与套娃式嵌入比较，实现-80%-成本降低](https://towardsdatascience.com/649627-2/) - AI 精选
 - [NVIDIA-AI-Q-如何在-DeepResearch-Bench-I-和-II-中夺得第一](https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench) - AI 精选
 
-- [查看全部 10442 篇...](/details/tags/ai-llm.md)
+- [查看全部 10448 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
