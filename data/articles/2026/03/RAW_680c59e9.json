@@ -1,0 +1,53 @@
+{
+  "id": "RAW_680c59e9",
+  "title": "学习 SQL —— 西班牙语初学者课程",
+  "url": "https://www.freecodecamp.org/news/learn-sql-course-for-beginners-in-spanish/",
+  "date": "2026-03-26 11:48:06",
+  "author": "Estefania Cassingena Navone",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>SQL (Structured Query Language) is the standard language for managing and manipulating data in relational databases. It's an essential tool that allows you to communicate with the databases that power modern applications.</p>\n  <p>We just published a course on the freeCodeCamp Spanish YouTube channel that will guide you step by step through the fundamentals of SQL. During the course, you’ll learn the core concepts that you need to get started.</p>\n  <p>If you have Spanish-speaking friends, you're welcome to share the <a href=\"https://www.freecodecamp.org/espanol/news/aprende-sql-curso-desde-cero-en-espanol/\">Spanish version of this article</a> with them.</p>\n  <p>The course was created by Sergie Code. Sergie is a software engineer and content creator who loves teaching and sharing his knowledge. His work is focused on JavaScript, including React.js, Angular.js, and other frameworks.</p>\n  <p>Before we dive into the course content, let's see what SQL is, and why you should learn it.</p>\n  <h2 id=\"heading-what-is-sql-and-why-should-you-learn-it\">What is SQL and Why Should You Learn it?</h2>\n  <p>Data is everywhere. Modern platforms and organizations use databases every single day. When you sign in to a website with your username and password, you're using the power of databases.</p>\n  <p>By mastering SQL, you'll be able to extract insights from data, a skill that is highly valued across software engineering, data science, business, and other related areas.</p>\n  <p>SQL is a specialized language designed for managing data stored in relational databases. With SQL, you can create databases, define their structure, and perform key operations such as creating, inserting, updating, and deleting records.</p>\n  <p>One of SQL's core features is that it allows you to retrieve data through queries, to find the exact data that you or your application need very quickly.</p>\n  <p>Great. Now that you know more about SQL, let's see what you’ll learn during the course:</p>\n  <ul>\n   <li>\n    <p>Introduction to SQL and Databases.</p>\n   </li>\n   <li>\n    <p>SQL vs. MySQL, PostgreSQL, and SQL Server.</p>\n   </li>\n   <li>\n    <p>Relational Database Hierarchy.</p>\n   </li>\n   <li>\n    <p>DBngin and TablePlus.</p>\n   </li>\n   <li>\n    <p>Data Definition Language (DDL): CREATE, DROP, ALTER, and DESCRIBE.</p>\n   </li>\n   <li>\n    <p>Working with Tables, Attributes, and Constraints.</p>\n   </li>\n   <li>\n    <p>Foreign Keys and Table Relationships.</p>\n   </li>\n   <li>\n    <p>Data Manipulation Language (DML): INSERT, UPDATE, DELETE, and TRUNCATE.</p>\n   </li>\n   <li>\n    <p>Data Query Language (DQL): SELECT FROM, WHERE, and ORDER BY.</p>\n   </li>\n   <li>\n    <p>Aggregation Functions (COUNT, SUM, AVG).</p>\n   </li>\n   <li>\n    <p>INNER JOIN, LEFT JOIN, RIGHT JOIN, and 3-Table Joins.</p>\n   </li>\n   <li>\n    <p>Subqueries, GROUP BY, and HAVING.</p>\n   </li>\n   <li>\n    <p>Managing SQL with Docker and Environment Variables.</p>\n   </li>\n   <li>\n    <p>Best Practices and Practical Examples.</p>\n   </li>\n  </ul>\n  <p>By the end of the course, you’ll be familiar with the fundamentals of SQL and you’ll be ready to start building and managing your own relational databases.</p>\n  <p>If you’re ready to start learning SQL, check out the course on the freeCodeCamp Spanish YouTube channel:</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6JBsoPOwPew\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n  <p>✍️ Course created by Sergie Code.</p>\n  <ul>\n   <li>\n    <p>Youtube: <a href=\"https://www.youtube.com/@SergieCode\">@SergieCode</a></p>\n   </li>\n   <li>\n    <p>Instagram: <a href=\"https://www.instagram.com/sergiecode\">sergiecode</a></p>\n   </li>\n   <li>\n    <p>LinkedIn: <a href=\"https://www.linkedin.com/in/sergiecode/\">Sergie Code</a></p>\n   </li>\n   <li>\n    <p>GitHub: <a href=\"https://github.com/sergiecode\">sergiecode</a></p>\n   </li>\n   <li>\n    <p>Facebook: <a href=\"https://www.facebook.com/sergiecodeok\">sergiecodeok</a></p>\n   </li>\n   <li>\n    <p>TikTok: <a href=\"https://www.tiktok.com/@sergiecode\">@sergiecode</a></p>\n   </li>\n   <li>\n    <p>Twitter: <a href=\"https://twitter.com/sergiecode\">@sergiecode</a></p>\n   </li>\n   <li>\n    <p>Threads: <a href=\"https://www.threads.net/@sergiecode\">@sergiecode</a></p>\n   </li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "freeCodeCamp 发布了一门全面的西班牙语 SQL 初学者课程，涵盖了数据库基础概念、DDL/DML/DQL 以及使用 Docker 进行的实际管理。",
+  "oneSentenceSummary": "freeCodeCamp 发布了一门全面的西班牙语 SQL 初学者课程，涵盖了数据库基础概念、DDL/DML/DQL 以及使用 Docker 进行的实际管理。",
+  "summary": "本文宣布在 freeCodeCamp 西班牙语 YouTube 频道上推出一门专为西班牙语初学者设计的全新免费 SQL 课程。该课程由软件工程师 Sergie Code 创建，提供了一个结构化、循序渐进的课程体系，旨在帮助学员掌握关系型数据库管理行业标准——结构化查询语言（SQL）。课程内容涵盖了从基础数据库理论和关系层级，到数据定义语言（DDL）、数据操作语言（DML）以及包含连接（joins）和子查询在内的复杂数据查询语言（DQL）等核心操作。此外，该课程还整合了现代实践，例如使用 Docker 和环境变量管理 SQL 环境，为有志于成为开发人员和数据专业人士的学习者提供了实践基础。",
+  "mainPoints": [
+    {
+      "point": "SQL 仍然是现代数据管理和应用后端的必备标准。",
+      "explanation": "文章强调，SQL 是与驱动现代平台的数据库进行通信的通用语言，这使其成为工程和数据科学领域中极具价值的技能。"
+    },
+    {
+      "point": "该课程提供了从基础语法到高级关系概念的全面学习路径。",
+      "explanation": "课程涵盖了 SQL 操作的全谱系，包括 DDL（模式定义）、DML（数据修改）和 DQL（复杂查询和连接），确保学员打下扎实的基础。"
+    },
+    {
+      "point": "现代开发工作流被整合到了学习路径中。",
+      "explanation": "通过包含 Docker 和环境变量等主题，该课程超越了纯粹的语法教学，展示了如何在专业的容器化环境中管理 SQL。"
+    }
+  ],
+  "keyQuotes": [
+    "SQL（结构化查询语言）是用于管理和操作关系型数据库的标准语言。",
+    "通过掌握 SQL，你将能够从数据中提取洞察，这是一项在软件工程、数据科学、商业及其他相关领域中备受推崇的技能。",
+    "SQL 的核心功能之一是允许你通过查询来检索数据，从而快速找到你或你的应用程序所需的精确数据。"
+  ],
+  "tags": [
+    "SQL",
+    "关系型数据库",
+    "数据库管理",
+    "freeCodeCamp",
+    "西班牙语课程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 80,
+  "wordCount": 437,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774525686000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 11:48:06"
+}

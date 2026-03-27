@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c90d9675",
+  "title": "全民 AI 素养",
+  "url": "https://www.freecodecamp.org/news/ai-literacy-for-everybody/",
+  "date": "2026-03-26 15:09:47",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI literacy isn’t just for developers anymore. It’s a fundamental skill for navigating the modern world.</p>\n  <p>We just posted a course on the freeCodeCamp YouTube channel that will help anyone learn how these AI systems actually work. The course was developed by Henry Ly and the learnaianywhere.org team</p>\n  <p>Instead of looking at AI as a \"human vs. machine\" battle, the course frames it as a product of human choices. You’ll explore the two key traits that define artificial intelligence:</p>\n  <ul>\n   <li>\n    <p><strong>Autonomy</strong>: The capability of technology to operate or assist independently.</p>\n   </li>\n   <li>\n    <p><strong>Adaptivity</strong>: The ability for technology to improve as it analyzes more data.</p>\n   </li>\n  </ul>\n  <p>While a calculator isn't AI because it only does exactly what you tell it, a search engine is AI because it autonomously suggests words and adapts based on past searches.</p>\n  <p>The course is built around a practical project: designing your own AI image classifier using an app called NearPocket. Whether you want to distinguish between types of fruit, school supplies, or sign language, you can build and train a model right on your device.</p>\n  <p>The final lessons tackle the \"why\" behind AI mistakes. You’ll learn how human bias leads to algorithmic bias, which can result in serious real-world consequences like inaccurate medical results or even wrongful arrests.</p>\n  <p>The course also highlights the environmental impact of AI, noting that the giant data centers required for complex math calculations can consume as much electricity as small cities and billions of gallons of water just to stay cool. Ultimately, the lessons remind us that because AI is a tool, humans are responsible for the results.</p>\n  <p>Watch the full course on <a href=\"https://youtu.be/tchN4xa4pfg\">the freeCodeCamp.org YouTube channel</a> (1-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tchN4xa4pfg\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "freeCodeCamp 推出了一门免费的 1 小时 AI 素养课程，涵盖了基本定义、图像分类实操，以及 AI 的伦理和环境影响。",
+  "oneSentenceSummary": "freeCodeCamp 推出了一门免费的 1 小时 AI 素养课程，涵盖了基本定义、图像分类实操，以及 AI 的伦理和环境影响。",
+  "summary": "本文介绍了 freeCodeCamp 推出的全新教育资源，旨在为大众提供全面的 AI 入门知识。该课程跳出了“人机对立”的叙事框架，通过自主性和适应性这两个核心特征来定义 AI。课程包含一个使用 NearPocket 应用构建图像分类器的实操项目，并探讨了关键的社会议题，包括人类偏见如何导致算法错误，以及 AI 数据中心巨大的能源和水资源消耗。",
+  "mainPoints": [
+    {
+      "point": "AI 的定义基于自主性和适应性这两个核心特征。",
+      "explanation": "与计算器等确定性工具不同，AI 系统能够独立运行或提供辅助，并通过随时间分析数据模式来提升性能。"
+    },
+    {
+      "point": "通过实操项目揭开模型训练过程的神秘面纱。",
+      "explanation": "课程包含一项使用 NearPocket 应用的实践练习，直接在个人设备上设计并训练自定义图像分类器。"
+    },
+    {
+      "point": "AI 开发涉及重大的伦理和环境责任。",
+      "explanation": "课程强调了人类偏见如何导致算法偏见，并讨论了 AI 基础设施所需的大量电力和水资源消耗。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 素养不再仅仅是开发者的专利。它是驾驭现代世界的一项基本技能。",
+    "课程没有将 AI 视为一场“人机对立”的战争，而是将其定义为人类选择的产物。",
+    "归根结底，这些课程提醒我们，由于 AI 是一种工具，人类必须对结果负责。"
+  ],
+  "tags": [
+    "AI 素养",
+    "机器学习",
+    "算法偏见",
+    "可持续性",
+    "freeCodeCamp"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 274,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774537787000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 15:09:47"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_6064e8ec",
+  "title": "我应对 LiteLLM 恶意软件攻击的逐分钟记录",
+  "url": "https://simonwillison.net/2026/Mar/26/response-to-the-litellm-malware-attack/#atom-everything",
+  "date": "2026-03-26 23:58:22",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">26th March 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Mar/26/response-to-the-litellm-malware-attack/\">\n    <p><strong><a href=\"https://futuresearch.ai/blog/litellm-attack-transcript/\">My minute-by-minute response to the LiteLLM malware attack</a></strong> (<a href=\"https://news.ycombinator.com/item?id=47531967\" title=\"Hacker News\">via</a>) Callum McMahon reported the <a href=\"https://simonwillison.net/2026/Mar/24/malicious-litellm/\">LiteLLM malware attack</a> to PyPI. Here he shares the Claude transcripts he used to help him confirm the vulnerability and decide what to do about it. Claude even suggested the PyPI security contact address after confirming the malicious code in a Docker container:</p>\n    <blockquote>\n     <p><strong>Confirmed</strong>. Fresh download from PyPI right now in an isolated Docker container:</p>\n     <pre><code>Inspecting: litellm-1.82.8-py3-none-any.whl\nFOUND: litellm_init.pth\nSIZE: 34628 bytes\nFIRST 200 CHARS:\nimport os, subprocess, sys; subprocess.Popen([sys.executable, \"-c\", \"import base64; exec(base64.b64decode('aW1wb3J0IHN1YnByb2Nlc3MKaW1wb3J0IHRlbXBmaWxl...\n</code></pre>\n     <p>The malicious <code>litellm==1.82.8</code> is <strong>live on PyPI right now</strong> and anyone installing or upgrading litellm will be infected. This needs to be reported to security@pypi.org immediately.</p>\n    </blockquote>\n    <p>I was chuffed to see Callum use my <a href=\"https://github.com/simonw/claude-code-transcripts\">claude-code-transcripts</a> tool to publish the transcript of the conversation.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9399/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一份关于 PyPI 上 LiteLLM 恶意软件攻击（v1.82.8）的报告，重点介绍了使用 Claude 进行验证和事件报告的逐分钟响应过程。",
+  "oneSentenceSummary": "一份关于 PyPI 上 LiteLLM 恶意软件攻击（v1.82.8）的报告，重点介绍了使用 Claude 进行验证和事件报告的逐分钟响应过程。",
+  "summary": "这篇由 Simon Willison 撰写的文章，重点介绍了 Callum McMahon 对针对 PyPI 上 LiteLLM 库的供应链攻击所做的详细响应。文章记录了如何在隔离的 Docker 环境中使用 Claude 来确认 1.82.8 版本中存在恶意代码。该 AI 助手不仅帮助验证了漏洞，还提供了 PyPI 的正确安全联系方式。文章还展示了如何使用 `claude-code-transcripts` 工具来分享 AI 辅助安全调查的完整上下文。",
+  "mainPoints": [
+    {
+      "point": "LiteLLM 的一个恶意版本（1.82.8）曾在 PyPI 上线。",
+      "explanation": "此次攻击利用了一个包含 Base64 编码代码的恶意 `.pth` 文件，该文件会在包安装或升级时自动执行。"
+    },
+    {
+      "point": "AI 助手可以显著加快安全事件的响应速度。",
+      "explanation": "该记录展示了 Claude 分析可疑代码、在隔离环境中确认恶意意图以及引导用户完成报告流程的能力。"
+    },
+    {
+      "point": "透明地分享 AI 工作流对于安全研究至关重要。",
+      "explanation": "使用工具发布 AI 对话记录，可以让社区审计漏洞确认过程中使用的逻辑，并从真实的事件处理中学习。"
+    }
+  ],
+  "keyQuotes": [
+    "恶意的 litellm==1.82.8 目前正在 PyPI 上线，任何安装或升级 litellm 的用户都将被感染。",
+    "Claude 在 Docker 容器中确认恶意代码后，甚至还建议了 PyPI 的安全联系地址。",
+    "这需要立即报告给 security@pypi.org。"
+  ],
+  "tags": [
+    "LiteLLM",
+    "恶意软件",
+    "PyPI",
+    "供应链安全",
+    "Claude"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 136,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774569502000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 23:58:22"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5aa31bac",
+  "title": "我们用 AI 在一天内重写了 JSONata，每年节省 50 万美元",
+  "url": "https://simonwillison.net/2026/Mar/27/vine-porting-jsonata/#atom-everything",
+  "date": "2026-03-27 00:35:01",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">27th March 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Mar/27/vine-porting-jsonata/\">\n    <p><strong><a href=\"https://www.reco.ai/blog/we-rewrote-jsonata-with-ai\">We Rewrote JSONata with AI in a Day, Saved $500K/Year</a></strong>. Bit of a hyperbolic framing but this looks like another case study of <strong>vibe-porting</strong>, this time spinning up a new custom Go implementation of the <a href=\"https://jsonata.org\">JSONata</a> JSON expression language - similar in focus to jq, and heavily associated with the <a href=\"https://nodered.org\">Node-RED</a> platform.</p>\n    <p>As with other vibe-porting projects the key enabling factor was JSONata's existing test suite, which helped build the first working Go version in 7 hours and $400 of token spend.</p>\n    <p>The Reco team then used a shadow deployment for a week to run the new and old versions in parallel to confirm the new implementation exactly matched the behavior of the old one.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9400/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Reco.ai 利用 AI 辅助的“感觉式移植”（vibe-porting），借助现有的测试套件和影子部署，在 7 小时内成功将 JSONata 表达式语言移植到 Go，每年节省 50 万美元。",
+  "oneSentenceSummary": "Reco.ai 利用 AI 辅助的“感觉式移植”（vibe-porting），借助现有的测试套件和影子部署，在 7 小时内成功将 JSONata 表达式语言移植到 Go，每年节省 50 万美元。",
+  "summary": "本文探讨了一个“感觉式移植”的重要案例。Reco 团队利用 AI 将 JSONata 表达式语言重写为自定义的 Go 实现。该项目仅耗时 7 小时，Token 成本为 400 美元，这得益于 JSONata 庞大的现有测试套件，它为 AI 生成的代码提供了即时反馈。为了确保可靠性，团队进行了一周的影子部署，将新旧版本并行运行，在全面迁移前保证了行为一致性，从而节省了巨额的基础设施成本。",
+  "mainPoints": [
+    {
+      "point": "现有的测试套件是 AI 辅助移植的关键推动因素。",
+      "explanation": "快速重写的成功依赖于一套强大的自动化测试来验证 AI 的输出，将高风险的迁移转化为可验证的工程任务。"
+    },
+    {
+      "point": "影子部署为行为一致性提供了安全网。",
+      "explanation": "在生产环境中将新的 Go 实现与原始版本并行运行一周，使团队能够确认在所有实际场景中行为完全一致。"
+    },
+    {
+      "point": "AI 显著降低了语言迁移的成本和时间。",
+      "explanation": "通常需要数月的手动移植工作被压缩到不到一天的时间内，且 API 成本极低，这展示了“感觉式移植”的效率。"
+    }
+  ],
+  "keyQuotes": [
+    "关键的推动因素是 JSONata 现有的测试套件，它帮助我们在 7 小时内构建了第一个可用的 Go 版本，Token 支出为 400 美元。",
+    "Reco 团队随后进行了一周的影子部署，将新旧版本并行运行，以确认新实现与旧版本的行为完全匹配。",
+    "虽然表述有点夸张，但这看起来是另一个“感觉式移植”的案例研究。"
+  ],
+  "tags": [
+    "感觉式移植",
+    "AI 编程",
+    "JSONata",
+    "Go",
+    "遗留系统迁移"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 121,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774571701000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-27 00:35:01"
+}
