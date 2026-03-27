@@ -1,0 +1,53 @@
+{
+  "id": "RAW_2faee2b1",
+  "title": "Fragments：3 月 26 日",
+  "url": "https://martinfowler.com/fragments/2026-03-26.html",
+  "date": "2026-03-26 17:11:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Anthropic carried a study, done by getting its model to <a href=\"https://www.anthropic.com/features/81k-interviews\">interview some 80,000 users</a> to understand their opinions about AI, what they hope from it, and what they fear. Two things stood out to me.</p>\n  <blockquote>\n   <p>It’s easy to assume there are AI optimists and AI pessimists, divided into separate camps. But what we actually found were people organized around what they value—financial security, learning, human connection— watching advancing AI capabilities while managing both hope and fear at once.</p>\n  </blockquote>\n  <p>That makes sense, if asked whether I’m a an AI booster or an AI doomer, I answer “yes”. I am both fascinated by its impact on my profession, expectant of the benefits it will bring to our world, and worried by the harms that will come from it. Powerful technologies rarely yield simple consequences.</p>\n  <p>The other thing that struck me was that, despite most people mixing the two, there was an overall variance between optimism and pessimism with AI by geography. In general, the less developed the country, the more optimism about AI.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Julias Shaw describes how to fix a <a href=\"https://www.linkedin.com/pulse/youre-wasting-effort-you-put-spec-driven-development-julias-shaw-dxmcc/\">gap in many people’s use of specs</a> to drive LLMs:</p>\n  <blockquote>\n   <p>Here’s what I keep seeing: the specification-driven development (SDD) conversation has exploded. The internet is overflowing with people saying you should write a spec before prompting. Describe the behavior you want. Define the constraints. Give the agent guardrails. Good advice. I often follow it myself.</p>\n   <p>But almost nobody takes the next step. Encoding those specifications into automated tests that actually enforce the contract.</p>\n   <p>And the strange part is, most developers outside the extreme programming crowd don’t realize they need to. They genuinely believe the spec document is the safety net. It isn’t. The spec document is the blueprint. The safety net is the test suite that catches the moment your code drifts away from it.</p>\n  </blockquote>\n  <p>As well as explaining why it’s important to have such a test suite, he provides an astute five-step checklist to turn spec documents into executable tests.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Lawfare has a long article on potential <a href=\"https://www.lawfaremedia.org/article/iran-will-retaliate-in-the-us-we-may-not-see-it-in-time\">problems countering covert action by Iran</a>. It’s a long article, and I confess I only skip-read it. It begins by outlining a bunch of plots hatched in the last few years. Then it says:</p>\n  <blockquote>\n   <p>If these examples seem repetitive, it’s because they are. Iran has proved itself relentless in its efforts to carry out attacks on U.S. soil—and the U.S., for its part, has demonstrated that it is capable of countering those efforts. The above examples show how robustly the U.S. national security apparatus was able to respond, largely through the FBI and the Justice Department….</p>\n   <p>That is, potentially, until now. The current administration has decimated the national security elements of both agencies through firings and forced resignations. People with decades of experience in building interagency and critical source relationships around the world, handling high-pressure, complicated investigations straddling classified and unclassified spaces, and acting in time to prevent violence and preserve evidence have been pushed out the door. Those who remain not only have to stretch to make up for the personnel deficit but also are being pulled away by White House priorities not tied to the increasing threat of an Iranian response.</p>\n  </blockquote>\n  <p>The article goes into detail about these cuts, and the threats that may exploit the resulting gaps.</p>\n  <p>It’s the nature of national security people to highlight potential threats and call for more resources and power. But it’s also the nature of enemies to find weak spots and look to cause havoc. I wonder what we’ll think should we read this article again in a few years time</p>\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 反思了 Anthropic 关于 AI 情绪的研究，强调了在 LLM 规范驱动开发中自动化测试的必要性，并指出了对美国国家安全漏洞的担忧。",
+  "oneSentenceSummary": "Martin Fowler 反思了 Anthropic 关于 AI 情绪的研究，强调了在 LLM 规范驱动开发中自动化测试的必要性，并指出了对美国国家安全漏洞的担忧。",
+  "summary": "在本期 Fragments 中，Martin Fowler 策划并评论了三个不同的主题。首先，他讨论了 Anthropic 的一项研究，该研究揭示了 AI 情绪是由个人价值观而非二元乐观主义驱动的，并指出欠发达国家往往对 AI 更为乐观。随后，他强调了 Julias Shaw 的观点，即如果没有自动化测试来强制执行契约，针对 LLM 的规范驱动开发（SDD）是不完整的。最后，他引用了 Lawfare 的一篇文章，探讨了因人员削减导致的美国国家安全能力潜在退化问题，并对未来的风险提出了警示。",
+  "mainPoints": [
+    {
+      "point": "AI 情绪是复杂且由价值观驱动的，而非二元的。",
+      "explanation": "Anthropic 的研究表明，用户基于财务安全和人际关系等个人价值观来平衡希望与恐惧，而不是单纯的乐观主义者或悲观主义者。"
+    },
+    {
+      "point": "LLM 的规范需要自动化测试强制执行才能有效。",
+      "explanation": "规范文档仅作为蓝图；如果没有自动化测试套件来强制执行契约，在使用 AI 智能体时，就没有安全网来捕获代码偏差。"
+    },
+    {
+      "point": "机构知识对于国家安全韧性至关重要。",
+      "explanation": "安全机构的大规模人员削减可能会造成对手可以利用的漏洞，因为经验丰富的专家对于管理复杂、高压的调查至关重要。"
+    }
+  ],
+  "keyQuotes": [
+    "强大的技术很少带来简单的后果。",
+    "规范文档是蓝图。安全网是测试套件，它能捕捉到代码偏离规范的那一刻。",
+    "总的来说，国家越不发达，对 AI 的乐观程度就越高。"
+  ],
+  "tags": [
+    "AI 情绪",
+    "规范驱动开发",
+    "LLM",
+    "自动化测试",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 606,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774545060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 17:11:00"
+}

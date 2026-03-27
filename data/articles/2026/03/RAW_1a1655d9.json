@@ -1,0 +1,57 @@
+{
+  "id": "RAW_1a1655d9",
+  "title": "Vercel 发布 JSON-Render：一个用于 AI 驱动界面组合的生成式 UI 框架",
+  "url": "https://www.infoq.com/news/2026/03/vercel-json-render/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-26 14:56:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Vercel has open sourced <a href=\"https://json-render.dev/\">json-render</a>, a framework it describes as \"Generative UI,\" allowing AI models to generate structured user interfaces from natural language prompts. The project, released under the Apache 2.0 licence and hosted on <a href=\"https://github.com/vercel-labs/json-render\">GitHub</a>, has accumulated over 13,000 stars and 200 releases since its January 2026 launch, with renderers now available for React, Vue, Svelte, Solid, React Native, and more.</p>\n   <p>The core idea behind json-render is that developers define a catalog of permitted components and actions using Zod schemas, and an LLM generates a JSON specification constrained to that catalog. The framework then renders the output progressively as the model streams its response. Vercel CEO Guillermo Rauch told <a href=\"https://thenewstack.io/vercels-json-render-a-step-toward-generative-ui/\">The New Stack</a> that the approach \"plugs the AI directly into the rendering layer\" and called it a \"very disruptive technology.\"</p>\n   <p>The AI then generates a flat JSON tree of typed elements referencing only catalog entries, which the Renderer component maps to real implementations. The framework ships with 36 pre-built <a href=\"https://ui.shadcn.com/\">shadcn/ui</a> components for teams that want a head start, alongside packages for PDF generation, HTML email, video via Remotion, OG image rendering, and 3D scenes through React Three Fiber.</p>\n   <p>Community reaction has been mixed. On <a href=\"https://news.ycombinator.com/item?id=46746570\">Hacker News</a>, one user commented:</p>\n   <blockquote>\n    <p>Giving an AI accessible structure to this gets AI into the realm of the various 4GLs back in late 90s which made user created forms so much easier.</p>\n   </blockquote>\n   <p>Another commenter highlighted that they had \"some success building text-to-dashboard with this\" and found it \"more robust than when I tried the exact same thing with structured outputs API and GPT-4 era models.\"</p>\n   <p>However, some were more sceptical, with one user questioning why Vercel would \"reinvent it as a new system\" when existing standards like OpenAPI and JSON Schema already describe data structures. A respondent <a href=\"https://news.ycombinator.com/item?id=46746570\">countered</a> that, outlining the differences:</p>\n   <blockquote>\n    <p>OpenAPI, JsonSchema, GraphQL all describe <em>Data</em>.</p>\n    <p>This describes <em>User Interfaces</em>. The closest alternative would be to just return React JS code directly.</p>\n    <p>But this adds a layer of constraint and control, preventing LLMs to generate e.g. malicious React JS code.</p>\n   </blockquote>\n   <p>On <a href=\"https://www.reddit.com/r/webdev/comments/1qulnez/vercel_jsonrender_are_we_moving_from_coding_uis/\">Reddit</a>, one developer observed that \"the shift is real but the role change you're describing is already happening in pockets. We've been moving toward constraint-based systems for years, design tokens, component libraries, storybook configs. This just pushes that boundary further into runtime composition instead of build-time authoring.\"</p>\n   <p>Google has introduced a comparable project called <a href=\"https://a2ui.org/\">A2UI (Agent-to-User Interface)</a>, which was quietly released in late 2025. A <a href=\"https://dipjyotimetia.medium.com/vercels-json-render-vs-google-s-a2ui-the-head-to-head-6f213cf1a23b\">comparison on Medium</a> noted that while the two share the same high-level pipeline of AI to JSON to component catalog to UI, they solve different problems: json-render is described as a \"tool\" tightly coupled to a specific application's component set, while A2UI positions itself as a \"protocol\" for cross-agent interoperability.</p>\n   <p>json-render is an open-source project maintained by Vercel Labs. It is written in TypeScript, uses a monorepo structure managed with pnpm, and is available via npm under the <code>@json-render</code> scope. The <a href=\"https://json-render.dev/docs\">documentation</a> includes a quick start guide, a playground, and examples for each supported renderer.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Vercel Releases JSON-Render: A Generative UI Framework for AI-Driven Interface Composition\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/vercel-json-render/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774536960000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Vercel 开源了 json-render，这是一个生成式 UI 框架，使 LLM 能够使用 Zod 约束的 JSON 模式创建结构化、类型安全的各种用户界面。",
+  "oneSentenceSummary": "Vercel 开源了 json-render，这是一个生成式 UI 框架，使 LLM 能够使用 Zod 约束的 JSON 模式创建结构化、类型安全的各种用户界面。",
+  "summary": "Vercel 的新框架 json-render 引入了一种生成式 UI 方法，AI 模型基于预定义的组件目录和 Zod 模式生成用户界面的 JSON 规范。这种方法确保了 AI 生成的 UI 保持在安全、功能性的边界内，同时允许在 React、Vue 和 React Native 等多个平台上进行实时流式传输和渲染。本文重点介绍了该框架与 shadcn/ui 的集成、与 Google A2UI 协议的对比，以及社区关于其必要性与 OpenAPI 等现有数据标准之间差异的讨论。",
+  "mainPoints": [
+    {
+      "point": "通过受限 JSON 树实现生成式 UI",
+      "explanation": "该框架使用 Zod 模式来定义允许使用的组件目录，强制 LLM 生成结构化的 JSON，而不是不可预测的原始代码。"
+    },
+    {
+      "point": "广泛的生态系统和渲染器支持",
+      "explanation": "它支持包括 React、Vue 和 Svelte 在内的主要框架，并扩展到 PDF 生成、3D 场景和 HTML 邮件等专业输出。"
+    },
+    {
+      "point": "通过抽象和约束实现安全性",
+      "explanation": "通过充当 LLM 和 UI 之间的中间层，它在保持对界面严格控制的同时，防止了恶意脚本的生成。"
+    },
+    {
+      "point": "与 Google A2UI 协议的对比",
+      "explanation": "虽然 json-render 是一个用于特定应用 UI 组合的工具，但 Google 的 A2UI 被定位为一种更广泛的跨智能体互操作性协议。"
+    }
+  ],
+  "keyQuotes": [
+    "将 AI 直接接入渲染层。",
+    "这增加了一层约束和控制，防止 LLM 生成例如恶意的 React JS 代码。",
+    "这种转变是真实的……这只是将界限进一步推向了运行时组合，而不是构建时创作。"
+  ],
+  "tags": [
+    "生成式 UI",
+    "Vercel",
+    "LLM",
+    "JSON-Render",
+    "Zod"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 499,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774536960000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 14:56:00"
+}
