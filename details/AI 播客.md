@@ -1,15 +1,21 @@
-> **更新时间**: 2026-03-20 08:11:14 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-27 16:13:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 播客
 
 
 
 
+### [OpenClaw-之后，谁将定义主动式-AI-的新战场？｜对谈-AirJelly-黄柏特](https://www.xiaoyuzhoufm.com/episode/69c1ed91fdc405fbf6f58092)
+
+2026-03-25 16:00:00 | 标签: 主动式 AI, AI Agent, AirJelly, 上下文感知, 产品方法论
+
+> 本期播客邀请了 AirJelly 创始人黄柏特及其投资人李一豪，深入探讨了在 AI Agent 创业同质化严重的背景下，初创公司如何通过「主动式 AI」建立壁垒。核心观点认为，Agent 的未来不在于对话框，而在于对跨 App、跨工作流上下文（Context）的深度感知。AirJelly 创新性地提出将「Enter」键作为意图捕获的关键锚点，利用视觉理解（VOM+OCR）构建「纪传体」式的任务记忆系统。节目详细分析了面对大模型能力迭代（如 Claude Code）时，创业公司应如何通过处理「工程脏活」和构建记忆护城河来保持竞争力，并预测 2026 年将进入全场景主动式 AI 时代。
+
+
+
 ### [Cherry-Studio-王新铭：2-个人，Github-42k-星，代码贡献第一名是-Claude](https://www.xiaoyuzhoufm.com/episode/69bbfc43efabb9c9895157d3)
 
-2026-03-19 13:00:32 | 标签: 开源项目, Cherry Studio, AI Native 组织, AI 代理 (Agent), 代码自动化
-
-> 本期播客深度访谈了明星开源项目 Cherry Studio 的创始人王新铭。内容涵盖了项目从个人兴趣驱动的桌面客户端，如何抓住 DeepSeek 爆火机遇并借助社区力量（包括 Claude 贡献的代码）演变为拥有 42k Star 的 Agent 平台。嘉宾详细分享了 AI Native 组织的管理哲学，提出“产品经理写 PRD 给 AI 看、设计师直接出代码”的协作新范式。此外，节目还深入探讨了 Long-running Agent 的未来趋势，以及企业如何通过设立“AI 效能中心”实现十倍甚至百倍的能效飞跃，为技术创业者和开发者提供了极具参考价值的 AI 实践指南。
+2026-03-19 13:00:32
 
 
 
