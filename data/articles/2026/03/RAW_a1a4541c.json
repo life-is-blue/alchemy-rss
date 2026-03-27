@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a1a4541c",
+  "title": "Kensho 如何利用 LangGraph 构建多智能体框架以解决可信金融数据检索问题",
+  "url": "https://blog.langchain.com/customers-kensho/",
+  "date": "2026-03-26 19:39:21",
+  "author": "LangChain Accounts",
+  "siteName": "LangChain Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p><em>Guest blog post by Ilya Yudkovich and Nick Roshdieh</em></p>\n  <p>In the era of AI agents, searching efficiently through S&amp;P Global's vast data estate presents a unique set of challenges. As S&amp;P Global’s engine for AI innovation and transformation,&nbsp; <a href=\"https://kensho.com/?ref=blog.langchain.com\"><strong><u>Kensho</u></strong></a>’s goal is to ensure that as AI transforms industries, its outputs remain grounded in trusted data–however and wherever customers choose to use it.</p>\n  <p>Kensho’s team of engineers, researchers, and builders are focused on applying advanced AI and machine learning across S&amp;P Global’s rich datasets to unify the data retrieval process, providing customers a single interface to bring this intelligence into AI applications and agentic workflows.</p>\n  <p>Unlike the textual information typical of many web-based search applications, S&amp;P Global data is highly structured and nuanced. This requires employing advanced data retrieval techniques to effectively integrate our data with cutting-edge generative AI applications. To solve this challenge, we developed <strong>Grounding, </strong>a multi-agent framework that serves as a core access layer for S&amp;P Global data.</p>\n  <p>Grounding ensures that every insight is derived directly from verified datasets. The framework, developed using several LangGraph tools, is a foundational solution for unifying data from multiple business units and integrating that data with AI agents, LLMs, and GenAI applications while maintaining high-trust validity and compliance.</p>\n  <h2 id=\"the-challenge-fragmented-financial-data-retrieval\"><strong>The Challenge: Fragmented Financial Data Retrieval</strong></h2>\n  <p>Financial professionals often struggle with data retrieval across fragmented systems, spending hours locating and verifying information that they need to analyze earnings, retrieve financial metrics, perform market research, and more. Kensho’s Grounding system simplifies this process by creating a single entry point for natural language queries against S&amp;P Global's verified financial datasets. This eliminates the need to navigate complex database schemas or learn specialized query languages. Through <strong>Grounding</strong>, clients can access accurate real-time financial information with citation-backed responses to verified S&amp;P Global data sources, ensuring high-trust validity and compliance with transparency and traceability in every result. This pattern enables users to focus on analysis rather than data access hunting and source validation.</p>\n  <p>We architected our Grounding system as a centralized entry point for data access across our AI agents, which retrieve data from an array of cross-divisional S&amp;P Global data sources stemming from various data repositories. Rather than embedding natural language parsing logic into individual agents, our router intelligently directs queries to specialized Data Retrieval Agents (DRAs) owned by different data teams such as equity research, fixed income, macroeconomics to name a few domains. This provides a separation of concern between data routing and data retrieval layers, supporting parallel ownership of each.&nbsp;</p>\n  <figure class=\"kg-card kg-image-card kg-card-hascaption\">\n   <img src=\"https://blog.langchain.com/content/images/2026/03/data-src-image-a43a0333-e80b-4e81-b18a-6c222823b359.png\" class=\"kg-image\" alt=\"\" loading=\"lazy\" width=\"1600\" height=\"641\" srcset=\"https://blog.langchain.com/content/images/size/w600/2026/03/data-src-image-a43a0333-e80b-4e81-b18a-6c222823b359.png 600w, https://blog.langchain.com/content/images/size/w1000/2026/03/data-src-image-a43a0333-e80b-4e81-b18a-6c222823b359.png 1000w, https://blog.langchain.com/content/images/2026/03/data-src-image-a43a0333-e80b-4e81-b18a-6c222823b359.png 1600w\" sizes=\"(min-width: 720px) 720px\">\n   <figcaption>\n    <i><em class=\"italic\" style=\"white-space: pre-wrap;\">The Grounding search agent includes a router component that calls S&amp;P Global DRAs.</em></i>\n   </figcaption>\n  </figure>\n  <p>The DRAs are meant to provide a single responsibility vertical, increasing the signal-to-noise ratio for queries using that dataset. The aggregation layer within the router then solves the map-reduce problem: taking distributed responses from multiple DRAs and intelligently combining them into coherent, actionable insights that maintain both accuracy and context.</p>\n  <p>LangGraph is the engine behind the Grounding router. Its core responsibilities include providing access to the diverse agents based on relevant context from the user query, breaking down a query into smaller DRA-specific sub-queries, and aggregating the responses back to the user. LangGraph’s design made it easy to iterate and test the router locally, providing that single entry point and ensuring a smooth developer experience.</p>\n  <h2 id=\"establishing-a-custom-data-retrieval-protocol\"><strong>Establishing a Custom Data Retrieval Protocol</strong></h2>\n  <p>Distributed data and AI systems often suffer from inconsistent communication interfaces. These can lead to unreliable agent interactions and create complex data processing needs for each individual agent. Through our team’s early internal experimentation, we developed a custom DRA protocol to ensure consistent data access patterns.&nbsp;</p>\n  <p>The protocol established a common data format for all returned data, including both structured and unstructured data. This has accelerated collaboration and consistent data exchange across our entire multi-agent ecosystem as we work across S&amp;P Global to develop and deploy DRAs connected to Grounding.</p>\n  <p>Architecting the protocol in this way, centralized through our Grounding system, has enabled Kensho to rapidly deploy multiple specialized financial AI products ( i.e. agents and APIs), each leveraging the same robust data foundation. From our equity research assistant–which helps analysts compare sector performance–to our ESG (Environmental, Social, and Governance) compliance agent that tracks sustainability metrics, all applications share the same reliable data access layer. Building agents and products atop a consistent system accelerates our time-to-market giving newly created agents immediate access to the full breadth of S&amp;P Global data without rebuilding data pipelines.</p>\n  <h2 id=\"key-learnings-for-an-evolving-agentic-ecosystem\"><strong>Key Learnings for an Evolving Agentic Ecosystem</strong></h2>\n  <p>The process of building and refining our multi-agent framework left the Kensho team with a few key insights. We hope these best practices will help guide other organizations when developing complex multi-agent architectures:</p>\n  <p><strong>1. Observability: </strong>Comprehensive tracing and deliberate metadata requirements are essential for maintaining visibility into agent behavior and enabling effective debugging and optimization at scale. Our custom protocol allows us to package the necessary information across our distributed multi-agent system. Native embedded LangGraph integration is a critical component for maintaining our distributed systems and ensuring end-to-end traceability and debugging for developers.</p>\n  <p><strong>2. Multi-stage evaluation: </strong>The financial industry requires high trust and certainty in financial data retrieval. Evaluating our federated agent system requires multi-faceted matrices evaluating routing decisions, data quality, and answer completeness at each step of the multi-agent retrieval. The evaluation suite executes test queries through the LangGraph-based RouterGraph. We measure accuracy against selected agents and various data agents, focusing on exact-match (selected the correct agents and retrieved expected responses) and tool-calling (whether the router selected the right tools, but got various responses). This allowed us to evaluate accuracy and identify gaps within our system.</p>\n  <p><strong>3. Protocol studies and optimization:</strong> We continuously analyze user and agent interaction patterns, which enables iterative refinement of Kensho’s custom protocol. This has significantly improved system efficiency, maximizing the output format for both direct LLM contextual understanding as well as programmatic processing–all while maintaining the reliability that financial services demand.</p>\n </body>\n</html>",
+  "aiSummary": "Kensho 开发了 Grounding，这是一个基于 LangGraph 的多智能体框架，通过中央路由器和专门的数据检索智能体（Data Retrieval Agents），统一了碎片化的标普全球（S&P Global）金融数据。",
+  "oneSentenceSummary": "Kensho 开发了 Grounding，这是一个基于 LangGraph 的多智能体框架，通过中央路由器和专门的数据检索智能体（Data Retrieval Agents），统一了碎片化的标普全球（S&P Global）金融数据。",
+  "summary": "作为标普全球（S&P Global）的 AI 创新部门，Kensho 通过构建名为 Grounding 的多智能体系统，解决了碎片化且复杂的金融数据检索难题。该系统利用 LangGraph，配备了一个中央路由器，可将自然语言查询分解为子查询，并将其定向至特定领域的数据检索智能体（DRAs）。这种架构在保持路由与检索职责分离的同时，确保了高可信度、有据可查的回复。其成功的关键在于：实施了用于保证一致性的自定义数据检索协议、用于追踪的全面可观测性，以及在金融这一高风险领域确保准确性的多阶段评估框架。",
+  "mainPoints": [
+    {
+      "point": "基于 LangGraph 的集中式路由",
+      "explanation": "Kensho 使用 LangGraph 构建了一个路由器，用于分解复杂的自然语言查询并聚合来自多个专用智能体的结果，从而解决了数据检索中的 Map-Reduce 问题。"
+    },
+    {
+      "point": "专用数据检索智能体（DRAs）",
+      "explanation": "通过创建特定领域的智能体（例如股票研究、宏观经济），该系统提高了信噪比，并允许不同的数据团队并行负责各自的领域。"
+    },
+    {
+      "point": "自定义数据检索协议",
+      "explanation": "标准化的通信接口确保了分布式多智能体生态系统内数据交换的一致性，从而加快了新 AI 产品的上市速度。"
+    },
+    {
+      "point": "多阶段评估框架",
+      "explanation": "该系统对路由决策、工具调用准确性和数据质量进行了严格测试，以满足金融服务行业对高可信度的要求。"
+    }
+  ],
+  "keyQuotes": [
+    "Grounding 确保每一个见解都直接源自经过验证的数据集。",
+    "我们的路由器没有将自然语言解析逻辑嵌入到各个智能体中，而是智能地将查询定向到专门的数据检索智能体（DRAs）。",
+    "在一致的系统之上构建智能体和产品，加快了我们的上市速度，使新创建的智能体能够立即访问标普全球（S&P Global）的全部数据。",
+    "金融行业对金融数据检索有着高信任度和确定性的要求。"
+  ],
+  "tags": [
+    "LangGraph",
+    "多智能体系统",
+    "金融数据",
+    "RAG",
+    "AI 架构"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 976,
+  "domain": "blog.langchain.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_88bf28",
+  "sourceName": "LangChain Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774553961000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 19:39:21"
+}

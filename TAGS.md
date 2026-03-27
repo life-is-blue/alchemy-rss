@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-27 06:04:37 | [返回首页](/README.md)
+**更新时间**: 2026-03-27 08:12:32 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10459)
+- [AI & 大模型](#ai-llm) (10479)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (737)
-- [DevOps](#devops) (467)
+- [前端与全栈](#frontend-fullstack) (738)
+- [DevOps](#devops) (470)
 - [产品与商业](#product-business) (35)
-- [其他](#other) (5228)
+- [其他](#other) (5235)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [我们如何为深度智能体构建评估体系](https://blog.langchain.com/how-we-build-evals-for-deep-agents/) - AI 精选
 - [在自有基础设施中运行云端智能体-·-Cursor](https://cursor.com/blog/self-hosted-cloud-agents) - AI 精选
 - [Anthropic-揭秘-Agent-长线开发架构：引入-GAN-机制，Claude-自主撸出全栈应用](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957) - AI 精选
 - [MiniMax-Office-Skills：开源一套生产级办公文档引擎](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488238&idx=1&sn=76aaec3e7e688c31cd8f40b9d0080e70) - AI 精选
@@ -41,9 +42,8 @@
 - [AI-操作系统：从指令到意图](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491695&idx=1&sn=78edff3e611f6e99d9e1deee83453b3b) - AI 精选
 - [AgentRx：AI-智能体的系统化调试](https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/) - AI 精选
 - [向量搜索的扩展：量化与套娃式嵌入比较，实现-80%-成本降低](https://towardsdatascience.com/649627-2/) - AI 精选
-- [NVIDIA-AI-Q-如何在-DeepResearch-Bench-I-和-II-中夺得第一](https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench) - AI 精选
 
-- [查看全部 10459 篇...](/details/tags/ai-llm.md)
+- [查看全部 10479 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 737 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 738 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 - [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 467 篇...](/details/tags/devops.md)
+- [查看全部 470 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5228 篇...](/details/tags/other.md)
+- [查看全部 5235 篇...](/details/tags/other.md)
 
 

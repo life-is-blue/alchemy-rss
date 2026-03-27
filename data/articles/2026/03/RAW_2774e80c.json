@@ -1,0 +1,58 @@
+{
+  "id": "RAW_2774e80c",
+  "title": "绿色 IT：如何减少 AI 对环境的影响",
+  "url": "https://www.infoq.com/news/2026/03/green-IT-AI-impact/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-26 11:21:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>AI poses major challenges for green IT: each query consumes vast energy, GPU chips last only 2-3 years, and costs stay hidden from users. Regulatory frameworks like the EU AI Act fall short on enforcement, Ludi Akue said at <a href=\"https://qconlondon.com/\">QCon London</a>. In her talk <a href=\"https://www.infoq.com/presentations/green-it/\">What I Wish I Knew When I Started with Green IT</a>, she presented solutions such as model compression, quantization, and novel architectures, using sustainability as a design constraint.</p>\n   <p>Green IT focuses on <a href=\"https://www.infoq.com/news/2025/09/IT-environmental-footprint/\">reducing IT’s environmental footprint</a>, by rethinking how you build, deploy, and power IT systems, Akue mentioned. This includes everything from energy-efficient hardware and optimized code to data center design and software architecture decisions that minimize resource use.</p>\n   <p>AI is creating unprecedented environmental challenges without corresponding governance. Generative AI requires constant and significant computational power even for inference time, that is, usage time, when you prompt the system. This translates directly to energy consumption, Akue explained:</p>\n   <blockquote>\n    <p>Every time someone uses a chatbot, generates text or images, or triggers any generative AI feature, it consumes enormous amounts of energy. Constant inference is becoming a massive energy sink as AI features proliferate.</p>\n   </blockquote>\n   <p>Due to the usage of AI, hardware churn is accelerating. GPU chips typically last only 2-3 years, Akue argued.</p>\n   <p>AI is not free, but users are shielded from the costs, Akue mentioned. There’s a complete lack of transparency; users don’t see the environmental costs behind each query, so there’s no natural restraint.</p>\n   <p>What’s most concerning is how teams deploy AI features without questioning if they’re truly necessary, Akue explained:</p>\n   <blockquote>\n    <p>We’re scaling by default rather than by design, and even Europe’s first regulatory frameworks, such as the <a href=\"https://artificialintelligenceact.eu/the-act/\">EU AI Act</a>, fall short on these sustainability impacts by only considering energy consumption, with no clear enforcement mechanisms.</p>\n   </blockquote>\n   <p>According to the literature, reducing the impact of artificial intelligence on the environment will have to come from improvements in model compression, quantization, novel architectures, and hybrid strategies. Akue gave some examples: Retrieval-Augmented Generation, Small Language Models, and combining offline with online inference. But technology alone is not enough, she said.</p>\n   <p>We have been designing digital systems for a stable world, a world that no longer exists. Today, the climate crisis is reshaping our assumptions about scale, cost, and resilience, Akue argued. It is time to rethink our assumptions.</p>\n   <p>Sustainability is not just an opportunity to redefine technology. It is a constraint we must now build within, just like latency or scalability, Akue concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/ludiakue\">Ludi Akue</a> about the impact of AI on the environment.</p>\n   <blockquote>\n    <p><strong>InfoQ: What have you done to reduce the impact of AI on the environment?</strong></p>\n    <p><strong>Ludi Akue</strong>: At Bpifrance, we are working to make the environmental costs of AI more visible and manageable. Through our Green IT working group, we have been exploring tools like <a href=\"https://ecologits.ai/latest/\">Ecologits</a>, <a href=\"https://www.litellm.ai/\">LiteLLM</a>, and <a href=\"https://langfuse.com/\">Langfuse</a> to help teams monitor, budget, and steer AI usage more effectively.</p>\n    <p>We are also focusing on building a cultural shift within the organization. With my <a href=\"https://chatgpt.com/g/g-677a857d9ca08191ae2ddd4d0e4702f2-promptsage\">PromptSage GPT project</a>, I am building AI literacy, helping teams understand that thoughtful prompting is not just about better results; it is also a sustainability practice. Using AI more intelligently reduces unnecessary computation. This is why I encourage product teams to take ownership of their usage impact and to embed environmental telemetry into the products.</p>\n   </blockquote>\n   <p><strong>InfoQ: What’s needed for driving successful green IT transformations?</strong></p>\n   <blockquote>\n    <p><strong>Akue</strong>: We already have many of the technical solutions. What we often lack is the shift in perspective. Start by asking different questions. Not just \"Can we build it?\" but \"Should we?\" Not just \"How fast?\" but \"At what cost?\" These questions open the door to more sustainable decisions.</p>\n    <p>To make this shift real, we need three key qualities: the curiosity to explore beyond our comfort zones, the honesty to acknowledge our real impact rather than externalizing costs, and the courage to ask uncomfortable questions of our providers, our vendors, and ourselves. We have to unlearn to learn.</p>\n   </blockquote>\n   <p><strong>InfoQ: How have things changed since you gave your talk at QCon?</strong></p>\n   <blockquote>\n    <p><strong>Akue</strong>: At QCon London 2025, I argued that the majority of AI’s environmental impact reduction would come from model creation improvements (compression, quantization, and novel architectures) while inference-phase interventions (AI literacy, appropriate model selection, inference budgeting, compute constraints, and AI governance integrating FinOps and GreenOps) represented necessary but secondary work. This assessment has proven incomplete.</p>\n    <p>Emerging evidence indicates that for massively deployed consumer AI services, cumulative inference energy consumption can exceed one-time training costs within months of deployment. Technical efficiency gains from compression and quantization have materialized, typically delivering 2-4x improvements in inference efficiency. Available data suggests these improvements have coincided with exponential growth in inference volumes rather than absolute consumption reductions. Publicly documented adoption of inference governance mechanisms remains rare.</p>\n    <p>The pattern is consistent with rebound effect predictions: efficiency improvements enable expanded deployment and new use cases rather than reduced overall consumption. The critical insight: technical optimizations deployed without complementary inference-phase governance mechanisms - budgeting, decision frameworks, appropriate model selection - risk accelerating rather than mitigating environmental impact through broader AI adoption.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Green IT: How to Reduce the Impact of AI on the Environment\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/green-IT-AI-impact/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774524060000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Ludi Akue 探讨了 AI 面临的环境挑战，主张通过量化（quantization）等技术优化，并结合稳健的推理阶段治理，来缓解因消费增加而产生的“反弹效应”。",
+  "oneSentenceSummary": "Ludi Akue 探讨了 AI 面临的环境挑战，主张通过量化（quantization）等技术优化，并结合稳健的推理阶段治理，来缓解因消费增加而产生的“反弹效应”。",
+  "summary": "本文总结了 Ludi Akue 在 QCon London 的演讲及后续访谈，探讨了 AI 时代的绿色 IT。文章强调了 AI 巨大的环境足迹，这主要源于单次查询的高能耗以及 GPU 硬件的快速更迭（2-3 年）。虽然模型压缩、量化和检索增强生成（RAG）等技术方案能提升效率，但 Akue 警告称，这会引发“反弹效应”，即效率提升反而导致部署规模扩大，而非总能耗降低。文章强调需要进行文化变革和实施 GreenOps 治理，敦促团队将可持续性视为与延迟或可扩展性同等重要的核心设计约束。",
+  "mainPoints": [
+    {
+      "point": "AI 的环境影响不仅限于训练阶段，还延伸至持续的推理过程和硬件更迭。",
+      "explanation": "每次生成式 AI 查询都会消耗大量能源，而 GPU 每 2-3 年的快速更换周期加剧了电子垃圾和资源消耗，这些成本往往对用户是隐藏的。"
+    },
+    {
+      "point": "仅靠技术优化是不够的，因为存在反弹效应。",
+      "explanation": "量化和压缩带来的效率提升往往会鼓励更广泛的 AI 采用和新的应用场景，从而导致累积能耗增加，而非绝对减少。"
+    },
+    {
+      "point": "可持续性必须被整合为主要的设计约束。",
+      "explanation": "开发人员应将环境影响视为与延迟或可扩展性同等重要的优先级，从“我们能构建它吗？”的思维模式转变为“我们应该构建它吗？”。"
+    },
+    {
+      "point": "有效的绿色 IT 需要推理阶段的治理和文化变革。",
+      "explanation": "实施监控工具（如 Ecologits）并培养 AI 素养，有助于团队管理能源预算，并通过更智能的提示词（prompting）和模型选择来减少不必要的计算。"
+    }
+  ],
+  "keyQuotes": [
+    "可持续性不仅仅是重新定义技术的机会。它现在是我们必须在其中构建的约束条件，就像延迟或可扩展性一样。",
+    "关键见解在于：如果部署技术优化时没有配套的推理阶段治理机制……可能会因 AI 的更广泛采用而加速，而非缓解环境影响。",
+    "我们过去一直为稳定的世界设计数字系统，但那个世界已经不复存在了。",
+    "每当有人使用聊天机器人、生成文本或图像，或触发任何生成式 AI 功能时，都会消耗巨大的能源。"
+  ],
+  "tags": [
+    "绿色 IT",
+    "可持续 AI",
+    "模型量化",
+    "GreenOps",
+    "AI 治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 836,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774524060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-26 11:21:00"
+}
