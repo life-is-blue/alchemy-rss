@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-28 20:06:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 22:09:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -428,33 +428,25 @@
 
 ### [HashiCorp-Vault-1.21-带来-SPIFFE-身份验证、细粒度密钥恢复等功能](https://www.infoq.com/news/2026/03/hashicorp-vault-1-21/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-28 10:05:00 | 标签: HashiCorp Vault, SPIFFE, 密钥管理, Kubernetes, 零信任
-
-> HashiCorp Vault 1.21 的发布专注于非人类工作负载的身份驱动安全性和运营效率。关键更新包括原生 SPIFFE 支持，允许微服务使用加密可验证身份（X509/JWT）进行身份验证，以实现零信任架构。细粒度密钥恢复模型得到了扩展，支持数据库角色和 SSH 配置，并辅以面向非技术用户的新 UI。对于 Kubernetes 环境，新的 CSI 驱动程序支持将密钥挂载为临时卷，绕过 etcd 存储以增强安全性。此外，此次更新通过 TOTP 自助注册简化了 MFA 上线流程，并集成了用于物联网和遗留设备证书配置的 SCEP。
+2026-03-28 10:05:00
 
 
 
 ### [“随心选”自定义区域：Cloudflare-引入细粒度数据驻留控制](https://www.infoq.com/news/2026/03/cloudflare-custom-regions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-28 06:01:00 | 标签: Cloudflare, 数据驻留, 云基础设施, 合规性, 边缘计算
-
-> Cloudflare 新推出的“自定义区域”功能扩展了其区域服务，使用户能够创建定制的地理分组来进行数据处理。与 AWS 或 Azure 等传统的“区域优先”云不同，Cloudflare 维护着一个“边缘优先”的全球网络，但在应用层任务上强制执行区域边界。客户可以使用灵活的表达式（例如包含或排除特定的 ISO 国家代码）来定义这些区域。该系统的工作原理是：在全球范围内接收流量以进行 DDoS 防护，然后将其路由到指定的自定义区域进行 TLS 终止和 L7 处理，从而有效地平衡了全球性能与本地合规性需求。
+2026-03-28 06:01:00
 
 
 
 ### [企业级-.NET-应用中基于-Azure-DevOps-CI/CD-流水线的云原生开发](https://www.freecodecamp.org/news/cloud-native-development-with-azure-devops-ci-cd-pipelines-in-enterprise-net-applications/)
 
-2026-03-27 20:37:28 | 标签: Azure DevOps, .NET, CI/CD, Docker, Kubernetes
-
-> 本文为构建和部署云原生 .NET 应用提供了详细的技术路线图。文章探讨了微服务和无状态等云原生架构的核心原则，并演示了如何使用 Azure DevOps 实现这些原则。指南包含了 CI/CD 流水线的实用 YAML 配置、用于容器化的多阶段 Docker 构建，以及 Azure Kubernetes Service (AKS) 的部署策略。文中还解决了企业关注的关键问题，包括使用 Terraform 实现基础设施即代码 (IaC)、依赖项的自动化安全扫描、通过 Azure Key Vault 进行密钥管理，以及使用 Application Insights 实现全栈可观测性。
+2026-03-27 20:37:28
 
 
 
 ### [如何使用-kcp-运行多个-Kubernetes-集群而无需额外开销](https://www.freecodecamp.org/news/how-to-run-multiple-kubernetes-clusters-without-the-overhead-using-kcp/)
 
-2026-03-27 20:36:42 | 标签: Kubernetes, kcp, 多租户, 云原生, 控制平面
-
-> 本文讨论了 Kubernetes 中多租户面临的挑战，强调了命名空间在为 CRD 等集群范围资源提供强隔离方面的不足，同时指出管理多个物理集群会导致巨大的运营开销和成本。文章介绍了 kcp，这是一个将 Kubernetes 控制平面与工作节点解耦的开源项目。通过使用被称为“工作区”（workspaces）的逻辑集群，kcp 允许团队在拥有独立 API 端点和资源的隔离环境中进行操作。作者提供了关于设置 kcp、创建分层工作区以及利用 APIExports 和 APIBindings 在团队间共享自定义 API 而不产生全局冲突的实践指南。
+2026-03-27 20:36:42
 
 
 

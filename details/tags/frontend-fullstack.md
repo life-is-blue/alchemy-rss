@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-28 20:06:05 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 22:09:53 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -620,25 +620,19 @@
 
 ### [实验性-Web-Install-API-旨在改善应用程序的发现与分发](https://www.infoq.com/news/2026/03/web-install-api-origin-trial/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-27 22:50:00 | 标签: Web Install API, PWA, Web 开发, Chrome, Microsoft Edge
-
-> 本文探讨了 Web Install API，这是一项由微软主导的新提案，旨在简化渐进式 Web 应用（PWA）的发现和分发。通过引入 `navigator.install()` 方法，开发者现在可以通过应用内交互触发安装提示，而无需依赖浏览器特定的 UI。该 API 返回一个解析为 `manifest_id` 的 Promise，为应用获取提供了一种更符合人体工程学且跨平台的方法。虽然目前通过源试用在基于 Chromium 的浏览器中得到支持，但该提案已引起 W3C 内跨厂商的兴趣，旨在取代传统的 `beforeinstallprompt` 事件，并最终支持跨站点安装。
+2026-03-27 22:50:00
 
 
 
 ### [如何在-Next.js-中实现服务端与客户端组件共享](https://www.freecodecamp.org/news/how-to-share-components-between-server-and-client-in-nextjs/)
 
-2026-03-27 20:41:32 | 标签: Next.js, React 服务端组件, App Router, Web 开发, 前端架构
-
-> 本文深入探讨了 Next.js App Router 架构，重点分析了服务端组件与客户端组件之间的交互。文章概述了关键的组合模式，例如将服务端组件作为子组件传递给客户端组件，以保持服务端渲染的优势。指南详细说明了 Props 的严格序列化规则，解释了如何结合使用 React.cache 和 Context 进行高效的数据共享，并提供了封装第三方库的实用解决方案。此外，文章还强调了安全性，并介绍了如何使用 server-only 和 client-only 包来实现构建时安全，防止环境污染。
+2026-03-27 20:41:32
 
 
 
 ### [我们如何利用抽象语法树（AST）将-Workflows-代码转换为可视化图表](https://blog.cloudflare.com/workflow-diagrams/)
 
-2026-03-27 13:00:00 | 标签: Cloudflare Workflows, AST, 静态分析, Rust, WebAssembly
-
-> Cloudflare Workflows 允许开发者使用纯代码编写复杂、持久的执行逻辑，而不是声明式的 YAML 或 JSON。为了提高这些动态工作流的可视化程度，Cloudflare 实现了一个可以将代码转换为图表的可视化工具。该过程涉及在部署时获取打包和压缩后的脚本，并在 Worker 中（通过 WebAssembly）使用基于 Rust 的 `oxc-parser` 来生成抽象语法树（AST）。文章详细介绍了他们如何遍历这些 AST 以处理嵌套函数、循环和分支等复杂情况，并解释了一种使用 `starts` 和 `resolves` 字段的特定索引系统，以便在 UI 中准确呈现并行与顺序执...
+2026-03-27 13:00:00
 
 
 
