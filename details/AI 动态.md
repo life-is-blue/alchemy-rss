@@ -1,23 +1,27 @@
-> **更新时间**: 2026-03-27 08:12:32 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 16:09:26 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Meta-发布-SAM-3.1，引入对象多路复用技术](https://x.com/AIatMeta/status/2037582117375553924)
+
+2026-03-27 17:26:47 | 标签: SAM 3.1, Meta AI, 计算机视觉, 视频处理, 开源
+
+> Meta AI 发布了 SAM 3.1，这是其 Segment Anything Model 的一次重大更新。其核心特性是“对象多路复用”，旨在提高视频处理效率而不牺牲准确性，从而使高性能应用能够在更小型的硬件上运行。此次发布包含模型检查点和代码库，供社区使用。
+
+
+
 ### [Google-推出-Gemini-3.1-Flash-Live，助力构建实时智能体](https://x.com/OfficialLoganK/status/2037187750005240307)
 
-2026-03-26 15:19:43 | 标签: Gemini 3.1 Flash Live, Google, AI 智能体, 实时 AI, LLM
-
-> Logan Kilpatrick 宣布推出 Gemini 3.1 Flash Live，这是一款专为实时语音和视觉智能体工作流设计的模型。此次发布重点展示了其在质量、可靠性和延迟方面的显著提升，标志着交互式 AI 智能体开发迈出了重要一步。
+2026-03-26 15:19:43
 
 
 
 ### [Mistral-AI-发布-Voxtral-TTS-模型](https://x.com/MistralAI/status/2037183026539483288)
 
-2026-03-26 15:00:57 | 标签: MistralAI, Voxtral, TTS, 文本转语音, 开放权重
-
-> Mistral AI 正式发布了 Voxtral TTS，这是一款专为文本转语音应用设计的前沿开放权重模型。该模型的特点在于能够生成逼真且富有情感的语音，支持 9 种语言并能精准捕捉各类方言，且具备极低的首音频延迟。此外，它还设计得易于适配新的音色。
+2026-03-26 15:00:57
 
 
 
@@ -99,13 +103,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_56619896",
+  "title": "QCon London 2026：AI 智能体编写代码，人类还剩下什么？",
+  "url": "https://www.infoq.com/news/2026/03/qcon-london-foxwell-dev-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-27 14:15:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Hannah Foxwell began her <a href=\"https://qconlondon.com/presentation/mar2026/reinvention-dev-team\">QCon London 2026 talk</a> by noting that the long-sought velocity in development has arrived, but the industry is unsure how to use it. She set aside the technical details of agentic coding, focusing instead on its implications for the people working with these systems.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/qcon-london-foxwell-dev-teams/news/2026/03/qcon-london-foxwell-dev-teams/en/resources/120260318_133839-1774620815782.jpg\" style=\"width: 600px; height: 450px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/qcon-london-foxwell-dev-teams/en/resources/120260318_133839-1774620815782.jpg\" rel=\"share\"></p>\n   <blockquote>\n    <p>This is a talk about AI, but I'm not going to talk about the agents at all. I'm going to propose that they are coming, that they are here, and I'm going to talk about the humans and what we do as teams to adjust to this massive change that is happening in our industry</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/hannah-foxwell/\">Foxwell</a>, the founder of <a href=\"https://aifortherestofus.live/\">AI for the Rest of Us</a> and <a href=\"https://bimp.ai/\">BIMP.ai</a>, opened by tracing her own career through successive waves of velocity, from shipping twice a year on a mainframe team to continuous delivery at scale. She suggested that the arrival of agentic coding is another step change, but one that creates novel organisational pressures rather than simply extending existing ones. She briefly described Steve Yegge's <a href=\"https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04\">eight-stage developer evolution model</a>, and suggested that Gas Town (Yegge's agent orchestration framework, which operates at stage 7 and 8 of the model) is \"a little glimmer of what the future might look like for all of us\".</p>\n   <p>Foxwell stated that there's already been an inflection point in LLM-supported coding, with agent requests now overtaking tab-completion coding as the dominant form of interaction, in tools such as Cursor, and this has happened very quickly as the capability and reliability of agents has increased so rapidly.&nbsp;</p>\n   <p>Having set the scene of the rise of agentic AI, with other QCon talks explaining the state of the art for reliable agentic engineering practices, Foxwell structured her talk around grounding this vision of the future in what these advances mean for the humans involved. She introduced three anchors she believes will remain true regardless of how capable agents become.</p>\n   <ul>\n    <li>We must build something worth building</li>\n    <li>Speed requires safety</li>\n    <li>People matter</li>\n   </ul>\n   <p>The first anchor is that teams must build something worth building. Agentic coding introduces back pressure on product functions: developers are now producing features faster than product managers can supply well-qualified work to fill the pipeline, and Foxwell said she is now seeing development teams run out of backlog for the first time in her career. She advised not saying \"yes\" to everything.</p>\n   <p>\"Enshittification is a thing,\" she noted, referring to the phenomenon of platforms becoming bloated with features that collectively serve nobody well. She explained that the cost to test ideas has collapsed, making a more experimental product culture much more viable with a new breed of \"vibe-coding PMs\" who prototype ideas with AI tools before committing them to a formal product backlog. Looking at team structure, she suggested that using forward-deployed engineers and product engineers helps shorten feedback loops with real users. She also challenged the two-pizza team norm: Norges Bank Investment Management (NBIM) is experimenting with much smaller team ratios, while others have proposed the opposite, placing two product managers alongside a single developer who orchestrates a fleet of agents.</p>\n   <p>Foxwell's second anchor is that speed requires safety. She drew on an AWS case study describing how the organisation achieved 10x throughput through agentic coding, only after completely rethinking its testing, deployment and coordination practices. \"They couldn't just bolt on the speed of AI to what they were doing,\" she said. \"They had to re-engineer that path to production.\" She also cited <a href=\"https://www.itbrew.com/stories/2026/02/05/chase-is-using-ai-agents\">JPMorgan Chase's agentic testing framework</a> that \"never gets tired or bored,\" which catches edge cases that developers under time pressure might miss.</p>\n   <p>Foxwell also returned to SRE practices, specifically the error budget policy, which she described as a written commitment to users about what a team will do when reliability targets are missed. She suggested that the SRE function, which she had previously considered an anti-pattern when siloed from development teams, may be due for a comeback as an internal consultancy helping teams maintain reliability when delivery is so much faster.</p>\n   <p>Her third anchor was that people matter. Reviewing large volumes of AI-generated code, she said frankly, is not fun. She pointed to Joseph Ruscio's \"write-only code\" concept, which posits that much of the code produced by agents may never be read by humans. If that becomes the norm, she argued, the peer review process must shift left: rather than reviewing pull requests after the fact, engineers should review specifications, test strategies and architecture before any code is written.&nbsp;</p>\n   <p>On the question of skills, Foxwell returned to an idea <a href=\"https://www.infoq.com/news/2025/06/skill-principal-engineer/\">introduced at QCon London 2025 by principal engineer Sophie Weston</a>: the \"broken comb.\" Where a T-shaped developer has one deep specialism, a broken-comb engineer cultivates a broad base of knowledge with several areas of depth. Foxwell argued this is the shape of an engineer best suited to working alongside agents, and she encouraged managers to use it as a framework for team development.</p>\n   <p>She closed with a personal case study. In a team of two, she built <a href=\"https://bimp.ai/\">BIMP</a>, a base image management platform, over two weeks using Cursor in agentic mode. The team repeatedly exhausted their daily goals before lunchtime and had to unlearn the habit of ruthless prioritisation. Documentation was generated in minutes and a codebase refactor took hours. \"The experience of building a product at the speed of AI has been incredibly insightful,\" Foxwell said, \"and it did make me way, way, way more ambitious about what I might build in the future.\"</p>\n   <p>Foxwell was careful to avoid being too prescriptive. Most organisations, she noted, are not yet ready for fleets of autonomous agents. But she encouraged engineers to start experimenting now, both with agentic tools and with the organisational changes those tools will eventually demand. \"I want us all to feel confident about the roles we have in the future,\" she said. \"I want us to feel like we have a place in this world of agents.\"&nbsp;</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026: AI Agents Write Your Code. What’s Left For Humans?\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/qcon-london-foxwell-dev-teams/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774620900000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Hannah Foxwell 在 QCon London 2026 的演讲探讨了工程团队如何通过聚焦产品价值、重构安全协议以及演进人类角色，来适应智能体编码时代。",
+  "oneSentenceSummary": "Hannah Foxwell 在 QCon London 2026 的演讲探讨了工程团队如何通过聚焦产品价值、重构安全协议以及演进人类角色，来适应智能体编码时代。",
+  "summary": "本文报道了 Hannah Foxwell 关于从 LLM 辅助的自动补全向自主智能体编码转型的演讲。随着 AI 智能体开始处理大部分实现工作，行业面临着一种创造全新组织压力的阶跃式变化。Foxwell 为未来提出了三个支柱：构建真正有价值的事物以避免功能臃肿，通过重构安全和 SRE 实践来确保速度，以及演进人类角色。关键转变包括利用 AI 进行原型的“氛围编程（vibe-coding）产品经理”、更小的团队比例，以及“破梳型（broken-comb）”工程师——即具备广泛知识基础和多个深度专业领域的专业人士。演讲强调，虽然智能体加速了“如何做（how）”，但人类在定义“为什么做（why）”和“做什么（what）”方面仍然至关重要。",
+  "mainPoints": [
+    {
+      "point": "智能体编码对产品管理职能产生了巨大的反向压力。",
+      "explanation": "随着开发人员生产功能的速度前所未有地加快，瓶颈转移到了产品经理身上，他们必须确保待办事项列表包含高质量、有价值的工作，以防止平台“垃圾化（enshittification）”。"
+    },
+    {
+      "point": "实现 10 倍的吞吐量需要对生产路径进行彻底的重构。",
+      "explanation": "组织不能简单地将 AI 附加到现有工作流上；他们必须重新思考测试、部署和协调，并可能利用智能体测试框架和 SRE 作为内部咨询团队。"
+    },
+    {
+      "point": "同行评审流程必须向左移动，转向规范和架构。",
+      "explanation": "随着智能体产生大量“只写代码（write-only code）”，人类评审应在实现开始前专注于意图、策略和架构完整性，而不是仅仅检查拉取请求（pull requests）。"
+    },
+    {
+      "point": "“破梳型”模型定义了面向未来的工程师。",
+      "explanation": "超越 T 型技能，“破梳型”工程师拥有广泛的知识基础和多个深度领域，这使他们更适合编排 AI 智能体集群。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一场关于 AI 的演讲，但我完全不会谈论智能体。我将谈论人类，以及我们作为团队如何调整以适应这一巨大的变化。",
+    "开发人员现在生产功能的速度，已经超过了产品经理提供高质量工作以填补流水线的速度。",
+    "同行评审流程必须向左移动：工程师不应在事后审查拉取请求，而应在编写任何代码之前审查规范、测试策略和架构。",
+    "我希望我们所有人都能对未来的角色感到自信。我希望我们感到在这个智能体的世界里，我们有一席之地。"
+  ],
+  "tags": [
+    "AI 智能体",
+    "软件工程",
+    "团队效能",
+    "SRE",
+    "产品管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 90,
+  "wordCount": 980,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774620900000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-27 14:15:00"
+}
