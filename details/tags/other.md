@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-28 16:09:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 18:07:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -11929,9 +11929,7 @@
 
 ### [OpenSearchCon-China-2026：字节跳动在-OpenSearch-上的技术实践与前沿探索](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247519046&idx=1&sn=45613e8c1ed787026f52292ded0e5acc)
 
-2026-03-27 09:37:00 | 标签: OpenSearch, Lucene, 存算分离, 向量检索, 大数据架构
-
-> 本文详细介绍了字节跳动在 OpenSearch 领域的深度工程实践。面对 PB 级数据和百万亿级文档的极致挑战，字节跳动通过引入堆外内存与乐观锁机制实现「写后立即可查」的真实时搜索，并构建了基于 Segment Replication 的下一代存算分离架构，将总体拥有成本（TCO）降低 50%，扩容效率提升 50 倍。在 AI 时代背景下，字节通过自研 SymRaBitQ 算法和磁盘 Vamana 索引，在百亿级向量检索中实现 5.5 倍 QPS 提升并降低 80% 成本。此外，文章还披露了团队在 Lucene 内核层面通过 Java Vector API 实现 SIMD 向量化，以及采用无分...
+2026-03-27 09:37:00
 
 
 
@@ -31453,11 +31451,11 @@
 
 
 
-### [92.6%-开发者每月使用-AI-编码助手，但每周节省时间只有-4-小时](https://baoyu.io/blog/2026-02-25/laura-tacho-ai-pragmatic-summit)
+### [Coding-Agent-有个甜蜜点，多数人直接跳过了](https://baoyu.io/blog/2026-02-25/coding-agent-sweet-spot)
 
 2026-02-25T00:00:00.000Z
 
-> DX 公司 CTO Laura Tacho 在 Pragmatic Summit 上公布了 12 万开发者、450 家公司的最新基准数据。AI 采用率已达 92.6%，但每周节省时间卡在 4 小时不动。更关键的发现是：同样的 AI 工具，有些公司事故减半，有些事故翻倍。差别不在工具，在组织本身。
+> 通过 Simon Willison 和 Cloudflare vinext 两个真实案例，拆解 Coding Agent 的四个成功条件：有参照物、能自测、有架构蓝图、有人把控方向。不是所有项目都适合 Agent，但命中这四个条件，产出质量会出奇地好。
 
 
 

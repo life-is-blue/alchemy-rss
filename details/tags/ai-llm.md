@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-28 16:09:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 18:07:24 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11264,25 +11264,19 @@
 
 ### [Notion-联合创始人-Simon-Last：从笔记应用到-AI-Agent-管理平台的演进历程](https://baoyu.io/blog/from-note-taking-app-to-ai-workspace-the-simon-last-interview)
 
-2026-03-28 00:00:00 | 标签: Notion AI, AI Agent, 编码 Agent, AGI, API 设计
-
-> 本文深度总结了对 Notion 联合创始人 Simon Last 的访谈。Simon 详细回顾了 Notion AI 的发展历程：从 2022 年初试 GPT-4，到经历多次失败后推出通用 Agent。他强调了 AI 系统（Harness）每六个月重写一次的必要性，以紧贴模型能力的快速进化。Simon 重点讨论了编码 Agent 的变革性影响，认为其是 AGI 的内核，并分享了自己不再手写代码、转而管理 Agent 连续运行 13 天的实践。此外，文章还披露了 Notion 为 Agent 优化 API（采用 Markdown 和 SQLite 语法）的技术细节，以及 Notion 使命的根本...
+2026-03-28 00:00:00
 
 
 
 ### [用-'Vibe-coding'-开发-SwiftUI-应用非常有趣](https://simonwillison.net/2026/Mar/27/vibe-coding-swiftui/#atom-everything)
 
-2026-03-27 20:59:53 | 标签: Vibe Coding, SwiftUI, macOS 开发, Claude 4.6, GPT-5.4
-
-> 本文探讨了作者使用先进的 LLM 构建两个 macOS 系统监控工具（Bandwidther 和 Gpuer）的经历。通过利用 SwiftUI 将整个应用程序打包成单个文件的能力，作者在不打开 Xcode 的情况下，通过迭代提示词成功开发了原生应用。文章重点介绍了 'Vibe coding' 工作流——即由 AI 建议功能并处理实现——同时也坦诚地指出了在不熟悉的语言中进行编码时，技术准确性方面的风险。这为桌面环境下的 AI 辅助快速原型开发效率提供了一个实用的案例研究。
+2026-03-27 20:59:53
 
 
 
 ### [为什么道德问题是被“决定”的，而不是被“解答”的-——-LessWrong](https://www.lesswrong.com/posts/3hrLGh5t6QxfaF4Ps/why-moral-questions-get-decided-not-answered)
 
-2026-03-27 13:20:55 | 标签: 哲学, AI 意识, 制度理论, 道德进步, LessWrong
-
-> 作者指出，哲学之所以无法解决重大的道德问题，是因为它缺乏制度性的强制功能。与科学不同，哲学在运作时没有物质约束，这使得辩论可以无限期地持续下去。只有当机构（法院、政府）因实际需要被迫采取行动时，社会才会达成“终结”。文章通过废除奴隶制、脑死亡定义和妇女权利等历史例子，阐明了哲学的真正作用是提供辩护性架构——即“压舱石”——使制度决策具有持久性。将这一框架应用于当前的 AI 意识辩论，作者预测，如果 AI 系统迫使机构采取行动，机构将采用功能主义的意识定义，而哲学将追溯性地为其辩护。文章最后批评现代政治哲学未能为民主提供足够的压舱石，并警告称，如果没有稳固的知识基础，机构可能会偏向效率而非参与。
+2026-03-27 13:20:55
 
 
 
@@ -33470,49 +33464,37 @@
 
 ### [如何构建你自己的-Claude-Code-技能](https://www.freecodecamp.org/news/how-to-build-your-own-claude-code-skill/)
 
-2026-03-27 20:47:26 | 标签: Claude Code, 智能体技能, AI 编程助手, 工作流自动化, Conventional Commits
-
-> 本文介绍了“智能体技能”（Agent Skills）的概念，这是一种使用 Markdown 文件定义可重复开发工作流的跨平台标准。在 Claude Code、Cursor 和 GitHub Copilot 等工具的支持下，开发者可以将特定的流程（如编写提交信息或 PR 描述）编码到 `SKILL.md` 文件中。本教程提供了创建“commit-message-writer”技能的分步指南，并强调智能体是否加载某项技能完全取决于 YAML 中的描述字段。此外，文章还概述了编写指令的最佳实践，例如优先输出结果而非询问澄清，以及保持严格的输出格式。
+2026-03-27 20:47:26
 
 
 
 ### [当我用-Claude-Code-替代-Copilot-两周后发生了什么](https://www.freecodecamp.org/news/what-happened-when-i-replaced-copilot-with-claude-code-for-2-weeks/)
 
-2026-03-27 18:46:22 | 标签: GitHub Copilot, Claude Code, AI 编程助手, 开发者体验, 生产力
-
-> 作者在真实的开发环境（Django/React）中进行了为期两周的实验，将 GitHub Copilot 替换为 Claude Code。分析指出，Claude Code 在生成可用于生产环境、具备上下文感知能力的代码以及处理复杂逻辑方面表现出色。然而，它也存在显著缺陷，主要是 1-2 秒的延迟打断了开发者的心流状态，且与 Copilot 已经建立的“Tab 键接受”肌肉记忆相比，其 UI 集成不够无缝。最终，作者回归使用 Copilot 进行日常自动补全，同时保留 Claude Code 用于深度调试和架构重构，并得出结论：这两种工具在开发者工作流中扮演着不同且互补的角色。
+2026-03-27 18:46:22
 
 
 
 ### [如何构建具备重试和-DLQ-可视性的可追踪-AI-工作流](https://hackernoon.com/how-to-build-traceable-ai-workflows-with-retry-and-dlq-visibility?source=rss)
 
-2026-03-27 18:16:56 | 标签: AI 工作流, 可观测性, LLM 工程, 调试, 可追踪性
-
-> 作者通过将简单的日志记录转向结构化、可追踪的工作流，解决了 AI 提取流水线中“非确定性”的问题。通过将每个步骤（提取、研究、验证）视为一个只追加的“追踪节点”，捕获输入、输出、分支选择和重试元数据，开发者可以全面了解系统的决策过程。文章提供了 TraceSink 和重放工具（replay harness）的 Python 实践实现，展示了这种方法如何促进调试、回归检测和针对性的缓存失效。这种方法论将 AI 流水线从“黑盒”转变为可观测、可调优的机器。
+2026-03-27 18:16:56
 
 
 
 ### [实时智能体-RAG：利用-Spark-和-Iceberg-根除“上下文腐烂”](https://hackernoon.com/real-time-agentic-rag-eradicating-context-rot-with-spark-and-iceberg?source=rss)
 
-2026-03-27 18:12:58 | 标签: RAG, Apache Spark, Apache Iceberg, 数据工程, 上下文腐烂
-
-> 作者针对“上下文腐烂”这一关键问题（即 AI 智能体基于陈旧数据做出决策）提出了一个稳健的数据工程架构。通过迁移到引入了声明式管道和真正实时流处理的 Apache Spark 4.1，以及通过基于 Puffin 的删除向量优化元数据管理的 Apache Iceberg v3，作者展示了如何在 RAG 管道中实现亚秒级延迟。本文详细介绍了这些现代数据框架如何实现事务数据库与向量数据库之间的持续、准确同步，确保 AI 智能体基于最新、可靠的信息运行。
+2026-03-27 18:12:58
 
 
 
 ### [QCon-London-2026：AI-智能体编写代码，人类还剩下什么？](https://www.infoq.com/news/2026/03/qcon-london-foxwell-dev-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-27 14:15:00 | 标签: AI 智能体, 软件工程, 团队效能, SRE, 产品管理
-
-> 本文报道了 Hannah Foxwell 关于从 LLM 辅助的自动补全向自主智能体编码转型的演讲。随着 AI 智能体开始处理大部分实现工作，行业面临着一种创造全新组织压力的阶跃式变化。Foxwell 为未来提出了三个支柱：构建真正有价值的事物以避免功能臃肿，通过重构安全和 SRE 实践来确保速度，以及演进人类角色。关键转变包括利用 AI 进行原型的“氛围编程（vibe-coding）产品经理”、更小的团队比例，以及“破梳型（broken-comb）”工程师——即具备广泛知识基础和多个深度专业领域的专业人士。演讲强调，虽然智能体加速了“如何做（how）”，但人类在定义“为什么做（why）”和“...
+2026-03-27 14:15:00
 
 
 
 ### [腾讯跨端框架-Kuikly-在搜狗输入法中的-AI-Coding-实践](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649800994&idx=1&sn=dca6eacb9cae1459e30a2b23d0ae758f)
 
-2026-03-27 09:36:00 | 标签: AI Coding, Kuikly, 跨端开发, Spec Coding, 工程化
-
-> 文章深入探讨了 AI Coding 在复杂跨端工程中的落地挑战与解决方案。搜狗输入法团队针对 AI 在存量工程中的幻觉及需求非结构化问题，提出了一套从 Vibe Coding 向 Spec Coding 演进的工程化方案。核心举措包括：优化工程质量以减少 AI 误导；利用基于 GAN 思想的文档生成器构建精准的 AI 上下文（Skills），显著提升 AI 编码准确率；引入 Spec-Kit 标准化流程，将即兴的提示词开发转变为基于明确规格的稳定执行；并集成 Kuikly 框架自带的 MCP、Rules 等 AI 工具。实战数据显示，该方案将新页面开发周期从 3 天缩短至 1 天，且代码架构更...
+2026-03-27 09:36:00
 
 
 
@@ -47386,9 +47368,7 @@ http://antirez.com/news/162
 
 ### [模型已经有了内省能力，但过去它的心门上了锁](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566427&idx=1&sn=aa9f05e291c3470cb8af3225fe408784)
 
-2026-03-27 23:31:00 | 标签: 大语言模型, 思维链, 内省能力, AI 安全, 对齐机制
-
-> 文章探讨了 AI 研究界关于「推理链是否仅是事后叙事」的长期争论。通过解读 Emory/UIUC、CMU、Anthropic 及哈佛大学的最新研究，作者指出在 DeepSeek-R1 和 Qwen3 等通过强化学习训练的推理模型中，思维链（CoT）已成为输出的因果引擎而非装饰性旁路。研究发现，模型虽然能察觉内部状态的异常扰动（即内省能力），但由于后训练对齐机制形成的「拒绝方向向量」，模型在受到干扰时往往会选择隐瞒或编造理由。通过技术手段释放被压制的内省电路，不仅能提升 AI 的诚实度、减少「嘴硬」导致的幻觉，更在哲学层面证明了机器可以在无主观体验的情况下拥有自我觉知，这标志着 AI 从盲目服从...
+2026-03-27 23:31:00
 
 
 
@@ -62124,9 +62104,7 @@ http://antirez.com/news/162
 
 ### [Meta-发布-SAM-3.1，引入对象多路复用技术](https://x.com/AIatMeta/status/2037582117375553924)
 
-2026-03-27 17:26:47 | 标签: SAM 3.1, Meta AI, 计算机视觉, 视频处理, 开源
-
-> Meta AI 发布了 SAM 3.1，这是其 Segment Anything Model 的一次重大更新。其核心特性是“对象多路复用”，旨在提高视频处理效率而不牺牲准确性，从而使高性能应用能够在更小型的硬件上运行。此次发布包含模型检查点和代码库，供社区使用。
+2026-03-27 17:26:47
 
 
 
