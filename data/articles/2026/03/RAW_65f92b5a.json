@@ -1,0 +1,53 @@
+{
+  "id": "RAW_65f92b5a",
+  "title": "实验性 Web Install API 旨在改善应用程序的发现与分发",
+  "url": "https://www.infoq.com/news/2026/03/web-install-api-origin-trial/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-27 22:50:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://frontendmasters.com/blog/a-first-look-at-the-web-install-api/\">The new, experimental Web Install API is now in Origin Trial in Microsoft Edge and Chrome</a>. The API allows developers to programmatically trigger a PWA installation prompt from in-app user interactions. The API aims to simplify software discovery and distribution, particularly for users who are unaware of the install icon in the browser’s address bar or do not typically use app stores.</p>\n   <p>The <a href=\"https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/WebInstall/explainer-current-doc.md#proposed-approach\">official explainer document</a> from Microsoft Edge’s team details the motivation behind the new API:</p>\n   <blockquote>\n    <p>End users don’t have a standard, cross-platform way to acquire applications. Users are usually faced with inconsistent, hidden, and proprietary mechanisms (custom protocols, stores) to acquire applications.</p>\n    <p>The Web Install API aims to fix this issue by creating an open, ergonomic, standardized, and cross-platform supported way of acquiring applications.</p>\n   </blockquote>\n   <p>The proposal author is <a href=\"https://github.com/diekus\">Diego Gonzalez</a> from the Microsoft Edge browser team. This is in line with past Microsoft advocacy for Progressive Web Apps (cf. <a href=\"https://www.pwabuilder.com/\">PWABuilder</a>) and contrasts with Apple, which has historically lagged in its support for PWAs on iOS, <a href=\"https://techcrunch.com/2024/03/01/apple-reverses-decision-about-blocking-web-apps-on-iphones-in-the-eu/\">sometimes implementing serious limitations</a>, a situation that led in the past to <a href=\"https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1086\">scrutiny from the EU</a>.</p>\n   <p>The Web Install API introduces a new <code>navigator.install()</code> method which returns a promise that resolves with a <code>manifest_id</code> when the app installation is completed, or errors when the user rejected the app installation (<code>AbortError</code>) or no manifest could be found (<code>DataError</code>). The promise is also rejected if the installation is triggered in incognito or private mode.</p>\n   <p>The Install API is intended to <a href=\"https://progressier.com/pwa-capabilities/web-install-api\">replace or augment the existing <code>beforeinstallprompt</code> event</a> and enables PWAs to be distributed through direct installation links.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/web-install-api-origin-trial/news/2026/03/web-install-api-origin-trial/en/resources/1pwa install button-1774565751369.png\" style=\"width:100%;height:413px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/web-install-api-origin-trial/en/resources/1pwa install button-1774565751369.png\" rel=\"share\"></p>\n   <p>Diego Gonzalez <a href=\"https://toot.cafe/@diekus/115610536824611732\">signaled cross-vendor interest in evolving the proposal</a> on the standard path and providing implementations:</p>\n   <blockquote>\n    <p>In scope of the W3C WebApps WG, Firefox, Safari, and Chromium agreed to work on ‘current document’ installation. There’s discussion on a declarative way of enabling this as well, so there is cross-vendor progress. But yes, the last word is on each implementor.\n     <br>\n     […] Now. this means to start we’d only get ability to install the same page you’re browsing, but the cross-site install is something that continues discussion on WICG.</p>\n   </blockquote>\n   <p>The API is still in its early stages. with changes in specifications expected (e.g., cross-site application installation). Developers interested in testing it and providing feedback can upgrade their Chrome or Edge browser to version &gt; 143. For older versions (139-142), developers can enable it through <code>about:flags</code> in Chrome and Edge or by participating in the <a href=\"https://developer.microsoft.com/en-us/microsoft-edge/origin-trials/\">origin trial for Microsoft Edge</a>. Other browsers (e.g., Safari, Firefox)&nbsp;currently ignore <code>navigator.install</code> and default to their existing Add to Home Screen / Install App experiences.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Experimental Web Install API Seeks to Improve Application Discovery and Distribution\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/web-install-api-origin-trial/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774651800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "新的实验性 Web Install API 目前正在 Chrome 和 Edge 中进行源试用（Origin Trial），它引入了 `navigator.install()`，为触发 PWA 安装提供了一种标准化的编程方式。",
+  "oneSentenceSummary": "新的实验性 Web Install API 目前正在 Chrome 和 Edge 中进行源试用（Origin Trial），它引入了 `navigator.install()`，为触发 PWA 安装提供了一种标准化的编程方式。",
+  "summary": "本文探讨了 Web Install API，这是一项由微软主导的新提案，旨在简化渐进式 Web 应用（PWA）的发现和分发。通过引入 `navigator.install()` 方法，开发者现在可以通过应用内交互触发安装提示，而无需依赖浏览器特定的 UI。该 API 返回一个解析为 `manifest_id` 的 Promise，为应用获取提供了一种更符合人体工程学且跨平台的方法。虽然目前通过源试用在基于 Chromium 的浏览器中得到支持，但该提案已引起 W3C 内跨厂商的兴趣，旨在取代传统的 `beforeinstallprompt` 事件，并最终支持跨站点安装。",
+  "mainPoints": [
+    {
+      "point": "`navigator.install()` 方法为 PWA 安装提供了编程接口。",
+      "explanation": "它取代了不一致的浏览器引导提示，转而采用由开发者控制的基于 Promise 的方法，能够处理用户拒绝或缺少清单（manifest）等成功和错误状态。"
+    },
+    {
+      "point": "该 API 旨在解决 Web 应用的发现问题。",
+      "explanation": "许多用户并不知道浏览器地址栏中的安装图标；标准化的 API 允许实现类似于原生应用商店的直观应用内安装按钮。"
+    },
+    {
+      "point": "尽管过去存在摩擦，但跨厂商合作正在进行中。",
+      "explanation": "虽然微软主导了这项工作，但 Firefox 和 Safari 已同意在 W3C WebApps 工作组内就该提案进行合作，这标志着向统一的 PWA 安装体验迈出了潜在的一步。"
+    }
+  ],
+  "keyQuotes": [
+    "“Web Install API 旨在通过创建一种开放、符合人体工程学、标准化且支持跨平台的方式来获取应用程序，从而解决这一问题。”",
+    "“Web Install API 引入了一个新的 navigator.install() 方法，该方法返回一个 Promise，在应用安装完成后解析为 manifest_id。”",
+    "“Install API 旨在取代或增强现有的 beforeinstallprompt 事件，并使 PWA 能够通过直接安装链接进行分发。”"
+  ],
+  "tags": [
+    "Web Install API",
+    "PWA",
+    "Web 开发",
+    "Chrome",
+    "Microsoft Edge"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 430,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774651800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-27 22:50:00"
+}

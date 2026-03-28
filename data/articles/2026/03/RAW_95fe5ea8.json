@@ -1,0 +1,47 @@
+{
+  "id": "RAW_95fe5ea8",
+  "title": "发布：datasette-showboat 0.1a2",
+  "url": "https://simonwillison.net/2026/Mar/27/datasette-showboat/#atom-everything",
+  "date": "2026-03-27 23:42:47",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">27th March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/datasette-showboat/releases/tag/0.1a2\">datasette-showboat 0.1a2</a></span> <span class=\"beat-commit\">— Datasette plugin for SHOWBOAT_REMOTE_URL</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I added an option to export a Markdown file from my app that lets Showboat <a href=\"https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/#showboat-remote-publishing\">incrementally publish updates</a> to a remote server.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4064/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-showboat 0.1a2 发布说明，引入了用于增量远程发布的 Markdown 导出功能。",
+  "oneSentenceSummary": "datasette-showboat 0.1a2 发布说明，引入了用于增量远程发布的 Markdown 导出功能。",
+  "summary": "datasette-showboat 插件（0.1a2 版本）此次发布新增了导出 Markdown 文件的功能。该功能旨在配合 SHOWBOAT_REMOTE_URL 设置使用，使用户能够将应用程序的更新增量发布到远程服务器，从而简化数据分发工作流。",
+  "mainPoints": [
+    {
+      "point": "datasette-showboat 插件新版本发布。",
+      "explanation": "0.1a2 版本已发布，重点在于增强远程发布能力。"
+    },
+    {
+      "point": "引入 Markdown 导出功能以实现增量更新。",
+      "explanation": "该插件现在支持导出 Markdown 文件，有助于将数据增量同步到远程服务器。"
+    }
+  ],
+  "keyQuotes": [
+    "我为我的应用添加了一个导出 Markdown 文件的选项，让 Showboat 能够将更新增量发布到远程服务器。"
+  ],
+  "tags": [
+    "Datasette",
+    "开源",
+    "Python",
+    "数据发布",
+    "Markdown"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 33,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774654967000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-27 23:42:47"
+}

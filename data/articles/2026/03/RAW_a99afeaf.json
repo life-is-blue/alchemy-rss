@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a99afeaf",
+  "title": "HashiCorp Vault 1.21 带来 SPIFFE 身份验证、细粒度密钥恢复等功能",
+  "url": "https://www.infoq.com/news/2026/03/hashicorp-vault-1-21/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-28 10:05:00",
+  "author": "Diogo Carleto",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>HashiCorp has released <a href=\"https://www.hashicorp.com/en/blog/vault-enterprise-1-21-spiffe-auth-fips-140-3-level-1-compliance-granular-secret-recovery\">Vault 1.21</a>. This version introduces native <a href=\"https://spiffe.io\">SPIFFE</a> authentication for non-human workloads, expands the granular secret recovery model introduced in<a href=\"https://www.hashicorp.com/en/blog/vault-enterprise-1-20-scep-usage-reporting-cloud-secret-import\"> </a><a href=\"https://www.hashicorp.com/en/blog/vault-enterprise-1-20-scep-usage-reporting-cloud-secret-imports\">Vault 1.20</a>, and adds KV v2 secret attribution, MFA TOTP self-enrollment, a <a href=\"https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso/csi\">Vault Secrets Operator</a> CSI driver that mounts secrets directly into pods without persisting them in etcd, and more.</p>\n   <p>Vault Enterprise 1.21 adds native support for SPIFFE (Secure Production Identity Framework For Everyone), an open standard for assigning cryptographically verifiable identities to workloads in dynamic environments. With SPIFFE, non-human identities like microservices, containers, and serverless functions can authenticate to Vault using X509 or JWT-based <a href=\"https://spiffe.io/docs/latest/spiffe-about/spiffe-concepts/%23spiffe-verifiable-identity-document-svid\">SVIDs</a> (SPIFFE Verifiable Identity Documents) without relying on static credentials or manual configuration.</p>\n   <p>Beyond authentication, Vault can now issue X509-SVIDs to workloads that already authenticate through methods like AppRole or AWS auth, enabling them to participate in SPIFFE-based service-to-service communication without additional tooling. This makes Vault both a consumer and issuer of SPIFFE identities, useful for organizations building zero-trust architectures across Kubernetes, hybrid, and multi-cloud environments.</p>\n   <p>Vault 1.21 expands the secret recovery model introduced in Vault Enterprise 1.20. Before the version 1.20, recovering an accidentally deleted or modified secret required restoring the entire cluster from a snapshot, a resource-intensive operation that affected all namespaces. Vault Enterprise 1.20 added targeted recovery from loaded snapshots, allowing operators to inspect snapshot contents and restore only the affected path through the CLI:</p>\n   <pre><code>$ vault list -snapshot-id &lt;snapshot_id&gt; &lt;mount_path&gt;/&lt;secret_path&gt;\r\n$ vault recover -snapshot-id &lt;snapshot_id&gt; &lt;mount_path&gt;/&lt;secret_path&gt;\r\n</code></pre>\n   <p>Vault 1.21 expands the supported recovery paths to include database static roles, SSH config CA and managed keys, and adds the option to recover a secret as a copy rather than overwriting the current value:</p>\n   <pre><code>$ vault recover -snapshot-id=&lt;snapshot_id&gt; -from=secret/my-secret secret/my-secret-recovered</code></pre>\n   <p>A new UI component was added to make recovery accessible to non-technical users, and administrators can configure automatic snapshots to keep recovery points available. Recovery permissions are controlled through a dedicated `recover` capability in Vault policies, allowing operators to delegate recovery to the teams closest to the affected secrets.</p>\n   <p>Vault 1.21 has added KV v2 secret attribution, exposing a `created_by` field to version metadata, providing the human-readable identity behind each secret version. Querying the metadata endpoint now returns attribution details for every version:</p>\n   <pre>$ curl https://127.0.0.1:8200/v1/secret/metadata/my-secret\r\n\r\n\"versions\": {\r\n  \"1\": {\r\n    \"created_time\": \"2025-10-22T02:24:06.945Z\",\r\n    \"created_by\": {\r\n      \"actor\": \"userpass-engineer1\",\r\n      \"operation\": \"create\",\r\n      \"entity_id\": \"12345678-1234-...\"\r\n    }\r\n  }\r\n}\r\n</pre>\n   <p>This means developers can now identify who modified a secret directly from the API without needing access to the audit log or contacting Vault operators - a practical improvement for teams debugging configuration changes in shared environments.</p>\n   <p>Vault Enterprise 1.21 also adds self-service <a href=\"https://developer.hashicorp.com/vault/docs/enterprise/mfa/mfa-totp\">TOTP</a> enrollment during login, streamlining MFA onboarding by allowing users to enroll a time-based one-time password (TOTP) factor as part of the authentication flow. Previously, users logging into a namespace with MFA TOTP enforcement who had not yet configured it were blocked until an administrator manually generated and distributed a QR code. Now, Vault generates the QR code as part of the authentication process itself, removing the back-and-forth between users and administrators and letting teams complete MFA onboarding without operator intervention.</p>\n   <p>The Vault Secrets Operator (VSO) traditionally syncs secrets from Vault into native Kubernetes Secrets stored in etcd. Vault Enterprise 1.21 introduces a CSI driver that bypasses etcd entirely - when a pod starts and references a `CSISecrets` resource as a volume, the driver fetches secrets from Vault and mounts them directly into the pod at a configured path (e.g., `/var/run/csi-secrets`) as individual files. The secrets live only for the lifecycle of the pod and are never persisted in the cluster. Teams can select either delivery mode on a per-secret basis, choosing the right balance between convenience and isolation for each workload. The CSI provider has also been<a href=\"https://catalog.redhat.com/en/software/containers/hashicorp/vault-csi-provider/68b8ae86c5013defd972d886\"> </a><a href=\"https://catalog.redhat.com/en/software/containers/hashicorp/vault-csi-provider/68b8ae86c5013defd972d886\">certified by Red Hat</a> for use on OpenShift.</p>\n   <p>SCEP (Simple Certificate Enrollment Protocol), added in Vault 1.20, is an IETF-standardized protocol widely used to provision certificates to devices that lack the interfaces for manual enrollment, including routers, switches, firewalls, mobile devices managed through MDM platforms, and IoT hardware. By adding SCEP to Vault's PKI secrets engine, organizations can consolidate certificate management for these workloads alongside their existing Vault infrastructure rather than maintaining a separate PKI solution.</p>\n   <p>Vault 1.20 introduced<a href=\"https://developer.hashicorp.com/vault/docs/license/utilization/auto-reporting\"> utilization reporting</a> for Enterprise customers, providing visibility into which secrets engines, authentication methods, and features are actively used across clusters. These insights help platform teams monitor adoption patterns, optimize configurations, and identify underutilized capabilities. Furthermore, this version added beta support for automatically downloading official HashiCorp auth and secrets plugins from releases.hashicorp.com, simplifying plugin registration and reducing the manual work required to keep plugins up to date.</p>\n   <p>More details about Vault 1.21 can be found in the<a href=\"https://developer.hashicorp.com/vault/docs/updates/release-notes\"> </a><a href=\"https://developer.hashicorp.com/vault/docs/updates/release-notes\">release notes</a> and the<a href=\"https://github.com/hashicorp/vault/blob/main/CHANGELOG.md\"> </a><a href=\"https://github.com/hashicorp/vault/blob/main/CHANGELOG.md\">changelog</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"HashiCorp Vault 1.21 Brings SPIFFE Authentication, Granular Secret Recovery, and More\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Diogo Carleto\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/hashicorp-vault-1-21/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774692300000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "HashiCorp Vault 1.21 引入了原生 SPIFFE 身份验证、增强的细粒度密钥恢复功能，以及一个可将密钥直接挂载到 Pod 中且无需 etcd 持久化的 Kubernetes CSI 驱动程序。",
+  "oneSentenceSummary": "HashiCorp Vault 1.21 引入了原生 SPIFFE 身份验证、增强的细粒度密钥恢复功能，以及一个可将密钥直接挂载到 Pod 中且无需 etcd 持久化的 Kubernetes CSI 驱动程序。",
+  "summary": "HashiCorp Vault 1.21 的发布专注于非人类工作负载的身份驱动安全性和运营效率。关键更新包括原生 SPIFFE 支持，允许微服务使用加密可验证身份（X509/JWT）进行身份验证，以实现零信任架构。细粒度密钥恢复模型得到了扩展，支持数据库角色和 SSH 配置，并辅以面向非技术用户的新 UI。对于 Kubernetes 环境，新的 CSI 驱动程序支持将密钥挂载为临时卷，绕过 etcd 存储以增强安全性。此外，此次更新通过 TOTP 自助注册简化了 MFA 上线流程，并集成了用于物联网和遗留设备证书配置的 SCEP。",
+  "mainPoints": [
+    {
+      "point": "面向非人类工作负载的原生 SPIFFE 身份验证。",
+      "explanation": "使微服务和无服务器函数能够使用可验证身份（SVID）而非静态凭据向 Vault 进行身份验证，从而促进零信任的服务间通信。"
+    },
+    {
+      "point": "增强的细粒度密钥恢复及 UI 支持。",
+      "explanation": "运维人员现在可以使用 CLI 或新的用户友好型 UI 从快照中恢复特定的密钥、数据库角色或 SSH 配置，而无需进行集群范围的恢复。"
+    },
+    {
+      "point": "KV v2 密钥归属，提升审计能力。",
+      "explanation": "在密钥元数据中引入了 `created_by` 字段，允许开发人员直接通过 API 识别负责密钥版本变更的具体操作者。"
+    },
+    {
+      "point": "用于 Kubernetes 中无 etcd 密钥交付的 VSO CSI 驱动程序。",
+      "explanation": "将密钥直接挂载到 Pod 中作为仅在 Pod 生命周期内存在的临时卷，确保敏感数据永远不会持久化存储在集群的 etcd 中。"
+    }
+  ],
+  "keyQuotes": [
+    "Vault Enterprise 1.21 增加了对 SPIFFE（Secure Production Identity Framework For Everyone）的原生支持，这是一个用于在动态环境中为工作负载分配加密可验证身份的开放标准。",
+    "恢复意外删除或修改的密钥曾经需要从快照中恢复整个集群，这是一种影响所有命名空间的资源密集型操作。",
+    "Vault Enterprise 1.21 引入了一个完全绕过 etcd 的 CSI 驱动程序……密钥仅在 Pod 的生命周期内存在，且永远不会持久化在集群中。"
+  ],
+  "tags": [
+    "HashiCorp Vault",
+    "SPIFFE",
+    "密钥管理",
+    "Kubernetes",
+    "零信任"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 85,
+  "wordCount": 772,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774692300000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-28 10:05:00"
+}

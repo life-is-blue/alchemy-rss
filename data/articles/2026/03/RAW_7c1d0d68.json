@@ -1,0 +1,53 @@
+{
+  "id": "RAW_7c1d0d68",
+  "title": "深入了解 Agoda 的 Storefront：一种用于改进基于 DNS 的负载均衡的延迟感知反向代理",
+  "url": "https://www.infoq.com/news/2026/03/agoda-rust-reverse-proxy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-27 14:11:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Agoda engineers have developed an <a href=\"https://medium.com/agoda-engineering/how-agoda-built-its-own-s3-compatible-proxy-dubbed-storefront-bfab78f34ef8\">internal S3-compatible proxy called Storefront to improve load balancing</a>, reliability, and operational control for large-scale object storage traffic in the company's data platform. The proxy sits between internal services and backend object storage systems, routing requests while addressing limitations the team observed with DNS-based load distribution used by S3-compatible endpoints.</p>\n   <p>Agoda relies on object storage for data processing and analytics workloads, including pipelines that read and write large volumes of files. According to the engineering team, the S3 endpoints exposed by their storage provider, VAST Data, use DNS round-robin to distribute traffic across multiple virtual IP addresses. Application clients often cache DNS responses, which can result in repeated requests to the same backend node. This behavior led to uneven load distribution, creating hotspots in which certain nodes received disproportionate traffic while others remained underutilized.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/03/agoda-rust-reverse-proxy/news/2026/03/agoda-rust-reverse-proxy/en/resources/1Screenshot 2026-03-14 at 10.22.25 PM-1773552185696.png\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/agoda-rust-reverse-proxy/en/resources/1Screenshot 2026-03-14 at 10.22.25 PM-1773552185696.png\" rel=\"share\"></p>\n   <p><em>Uneven load distribution with DNS round-robin (Source: <a href=\"https://medium.com/agoda-engineering/how-agoda-built-its-own-s3-compatible-proxy-dubbed-storefront-bfab78f34ef8\">Agoda Blog Post</a>)</em></p>\n   <p>To address this limitation, the team introduced Storefront as a reverse proxy that actively distributes S3 requests across backend nodes. The service is implemented in Rust and built on top of <a href=\"https://github.com/cloudflare/pingora\">Pingora</a>, an open-source proxy framework developed by Cloudflare. Instead of relying on DNS resolution to balance traffic, Storefront evaluates backend availability and request load in real time before routing requests. Early implementations used a least-in-flight requests algorithm, which the team later refined with latency-aware scoring to improve distribution under production workloads.</p>\n   <p>The proxy also introduced operational safeguards to improve reliability. Engineers added IO timeouts to handle cases where certain S3 clients failed to fully consume HTTP responses, which could otherwise exhaust backend connection pools. Storefront isolates cross-data-center traffic into dedicated backend pools and optimizes handling of the HTTP Expect: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/100\">100-continue </a>header to reduce latency for object upload requests.</p>\n   <p>Storefront integrates credential-less authentication by automatically identifying the calling Kubernetes pods and applying access controls internally. This approach centralizes permission management, enabling services to securely access object storage without directly handling credentials, reducing operational complexity, minimizing the risk of credential leaks, and simplifying compliance across large-scale distributed workloads.</p>\n   <p>As emphasized by <a href=\"https://www.linkedin.com/in/xushichang/\">Desmond Xu</a>, Technical Lead at Agoda</p>\n   <blockquote>\n    <p>Storefront evolved from a simple reverse proxy into a core component of our data infrastructure.</p>\n   </blockquote>\n   <p>In addition to request routing, Storefront incorporates operational capabilities such as credential-less authentication by identifying calling Kubernetes pods and applying access controls internally, reducing the need for services to manage storage credentials directly. The proxy also exposes telemetry via OpenTelemetry, including metrics on performance, resource utilization, traffic patterns, and S3 API usage.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Inside Agoda’s Storefront: A Latency-Aware  Reverse Proxy for Improving DNS Based Load Distribution\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/agoda-rust-reverse-proxy/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774620660000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Agoda 开发了 Storefront，这是一个基于 Pingora 构建的 Rust 语言 S3 兼容反向代理，旨在解决基于 DNS 的负载均衡热点问题，并为其大规模数据平台集中化身份验证。",
+  "oneSentenceSummary": "Agoda 开发了 Storefront，这是一个基于 Pingora 构建的 Rust 语言 S3 兼容反向代理，旨在解决基于 DNS 的负载均衡热点问题，并为其大规模数据平台集中化身份验证。",
+  "summary": "Agoda 工程团队创建了 Storefront，以解决其 S3 兼容存储系统中因 DNS 轮询缓存导致的负载分布不均问题。该反向代理使用 Rust 和 Pingora 框架构建，实现了延迟感知评分和最少传输中（least-in-flight）算法，从而有效地平衡了后端节点的流量。除了路由功能外，Storefront 还通过 IO 超时和 HTTP 头部优化增强了可靠性，并通过基于 Kubernetes Pod 标识的无凭证身份验证简化了安全性。它作为关键基础设施组件，通过 OpenTelemetry 提供了深度可观测性。",
+  "mainPoints": [
+    {
+      "point": "Storefront 使用主动请求分发取代了 DNS 轮询，消除了后端热点。",
+      "explanation": "客户端 DNS 缓存通常会导致流量不均；Storefront 使用延迟感知评分和最少传输中算法，确保实时平衡存储节点的利用率。"
+    },
+    {
+      "point": "该代理基于 Rust 和 Cloudflare 的 Pingora 框架构建，具有高性能和高可靠性。",
+      "explanation": "利用 Pingora，Agoda 能够构建一个定制化的、兼容 S3 的代理，处理跨数据中心流量，并优化特定的 HTTP 行为（如 '100-continue' 头部）以降低延迟。"
+    },
+    {
+      "point": "无凭证身份验证简化了分布式工作负载的安全管理。",
+      "explanation": "通过识别调用方的 Kubernetes Pod，Storefront 在内部应用访问控制，无需各个服务管理或泄露存储凭证，从而简化了合规性。"
+    }
+  ],
+  "keyQuotes": [
+    "该代理位于内部服务和后端对象存储系统之间，在路由请求的同时，解决了团队在基于 DNS 的负载均衡中观察到的局限性。",
+    "Storefront 从一个简单的反向代理演变为我们数据基础设施的核心组件。",
+    "这种方法集中了权限管理，使服务能够安全地访问对象存储，而无需直接处理凭证。"
+  ],
+  "tags": [
+    "反向代理",
+    "Rust",
+    "Pingora",
+    "负载均衡",
+    "S3 存储"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 412,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774620660000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-27 14:11:00"
+}

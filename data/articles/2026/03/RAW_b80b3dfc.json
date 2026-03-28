@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b80b3dfc",
+  "title": "“随心选”自定义区域：Cloudflare 引入细粒度数据驻留控制",
+  "url": "https://www.infoq.com/news/2026/03/cloudflare-custom-regions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-28 06:01:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently introduced <a href=\"https://blog.cloudflare.com/custom-regions/\">Custom Regions</a>, an expansion of its Regional Services that lets customers precisely define where their data is processed. By selecting specific groups of data centers by country or region, customers can ensure that TLS termination and application-layer processing remain within chosen geographic boundaries for compliance and control.</p>\n   <p>The new option requires customers to define region membership, routing traffic to in-region destinations, and enforcing those limits at the edge. <a href=\"https://www.linkedin.com/in/andrew-berglund-4467a77/\">Andrew Berglund</a>, systems engineer at Cloudflare, and<a href=\"https://www.linkedin.com/in/erik-engstrom/\"> Erik Engstrom</a>, product leader at Cloudflare, explain:</p>\n   <blockquote>\n    <p>While our 35 pre-defined regions serve many of our customers’ needs, the digital world isn't one-size-fits-all. We've heard you loud and clear: you've asked for a specific country, unique combinations of countries, and the ability to exclude a set of countries from a region.</p>\n   </blockquote>\n   <p>According to the announcement, Custom Regions can be defined using arbitrary geographic groupings. For example, a region may include North America (Canada, the United States, and Mexico) or exclude those three countries. It could also be based on other arbitrary criteria, such as countries that use Fahrenheit, including the United States, the Bahamas, the Cayman Islands, the Marshall Islands, and Liberia. Berglund and Engstrom add:</p>\n   <blockquote>\n    <p>At the core of Regional Services is enforcement of a simple rule: TLS termination and Layer 7 processing only happen inside your chosen region. Custom Regions expands this capability by allowing you to choose your own region definitions.</p>\n   </blockquote>\n   <p>Cloudflare takes a different approach to <a href=\"https://blog.cloudflare.com/custom-regions/\">regional traffic</a> than Azure or AWS. Instead of defining a fixed geographic area (region-first cloud) with resources in a specific subset of data centers, it runs workloads on a global edge network (edge-first cloud). Still, it processes traffic within certain regions for customers who need to meet regional compliance requirements or want to maintain regional control over their data.</p>\n   <p>Cloudflare enforces regional boundaries by initially receiving and protecting traffic at the nearest data center (global ingestion and L3/L4 DDoS defense), then checking whether it belongs to the configured region. Requests are then either processed locally or forwarded to the data center, where TLS termination and Layer 7 processing will occur.</p>\n   <p>While generally developers value Cloudflare’s <a href=\"https://www.reddit.com/r/CloudFlare/comments/1h0oiz5/how_do_you_handle_data_location_questions_with/\">global-by-default simplicity</a>, the need for features that introduce regional constraints is often viewed as a compliance-driven trade-off. On LinkedIn, R5 Inteligência Digital <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7440051019469729794?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7440051019469729794%2C7440056272441319424%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287440056272441319424%2Curn%3Ali%3Aactivity%3A7440051019469729794%29\">comments</a>:</p>\n   <blockquote>\n    <p>Fine-grained regional boundaries are becoming a board-level requirement where compliance and latency both matter. Custom Regions should help teams move from policy intent to enforceable operating controls.</p>\n   </blockquote>\n   <p><em><img alt=\"Cloudflare Custom Regions\" data-src=\"https://www.infoq.com/news/2026/03/cloudflare-custom-regions/news/2026/03/cloudflare-custom-regions/en/resources/11image1-1773937334543.jpg\" style=\"width:100%;height:1350px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/cloudflare-custom-regions/en/resources/11image1-1773937334543.jpg\" rel=\"share\"></em></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>The setup process of Custom Regions is based on three building blocks: defining region membership, selecting an in-region destination, and enforcing the boundary at the edge.</p>\n   <p>While Cloudflare managed regions use a pre-defined membership set, Custom Regions define region membership using an expression, for example, a country_code, the ISO code where each data center is located. Engineers can define inclusion rules such as <code>country_code == \"TR\"</code> or <code>country_code in [\"DE\", \"FR\", \"NL\"]</code>, or exclusion rules such as <code>!(country_code in [\"US\", \"CA\", \"MX\"]),</code> to define the boundaries, with the expression being evaluated against the data centers' metadata.</p>\n   <p>To determine the optimal in-region destination, Cloudflare selects the best available option by intersecting a predefined set of allowed data centers with a per-ingress, performance-ranked list based on real-time network quality, capacity, and health metrics.</p>\n   <p>Currently, the new option is not self-serve, and customers must contact their account team.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"&quot;Pick and Mix&quot; Custom Regions: Cloudflare Introduces Fine-Grained Data Residency Control\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/cloudflare-custom-regions/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774677660000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出了“自定义区域” (Custom Regions) 功能，允许客户为 TLS 终止和第 7 层 (Layer 7) 处理定义细粒度的地理边界，以满足特定的数据驻留和合规性要求。",
+  "oneSentenceSummary": "Cloudflare 推出了“自定义区域” (Custom Regions) 功能，允许客户为 TLS 终止和第 7 层 (Layer 7) 处理定义细粒度的地理边界，以满足特定的数据驻留和合规性要求。",
+  "summary": "Cloudflare 新推出的“自定义区域”功能扩展了其区域服务，使用户能够创建定制的地理分组来进行数据处理。与 AWS 或 Azure 等传统的“区域优先”云不同，Cloudflare 维护着一个“边缘优先”的全球网络，但在应用层任务上强制执行区域边界。客户可以使用灵活的表达式（例如包含或排除特定的 ISO 国家代码）来定义这些区域。该系统的工作原理是：在全球范围内接收流量以进行 DDoS 防护，然后将其路由到指定的自定义区域进行 TLS 终止和 L7 处理，从而有效地平衡了全球性能与本地合规性需求。",
+  "mainPoints": [
+    {
+      "point": "通过定制的区域定义，实现对数据处理位置的细粒度控制。",
+      "explanation": "“自定义区域”允许用户定义 TLS 终止和第 7 层处理发生的特定国家/地区集合，超越了固定的预定义区域块，以满足独特的监管需求。"
+    },
+    {
+      "point": "结合全球接入与区域强制执行的混合架构。",
+      "explanation": "Cloudflare 利用其全球边缘网络进行初始的 L3/L4 DDoS 防御，然后将流量路由到用户定义的自定义区域内的特定数据中心，进行敏感的应用层处理。"
+    },
+    {
+      "point": "基于表达式的配置，实现灵活的基础设施管理。",
+      "explanation": "开发人员可以使用基于逻辑的表达式（例如 `country_code in [\"DE\"， \"FR\"]`）根据元数据动态包含或排除数据中心，从而简化复杂的合规工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "TLS 终止和第 7 层处理仅在您选择的区域内进行。",
+    "自定义区域功能扩展了这一能力，允许您选择自己的区域定义。",
+    "细粒度的区域边界正成为董事会层面的要求，因为合规性和延迟都至关重要。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "数据驻留",
+    "云基础设施",
+    "合规性",
+    "边缘计算"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 551,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774677660000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-28 06:01:00"
+}

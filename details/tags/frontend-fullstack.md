@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-28 18:07:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 20:06:05 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -618,6 +618,30 @@
 
 
 
+### [实验性-Web-Install-API-旨在改善应用程序的发现与分发](https://www.infoq.com/news/2026/03/web-install-api-origin-trial/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-03-27 22:50:00 | 标签: Web Install API, PWA, Web 开发, Chrome, Microsoft Edge
+
+> 本文探讨了 Web Install API，这是一项由微软主导的新提案，旨在简化渐进式 Web 应用（PWA）的发现和分发。通过引入 `navigator.install()` 方法，开发者现在可以通过应用内交互触发安装提示，而无需依赖浏览器特定的 UI。该 API 返回一个解析为 `manifest_id` 的 Promise，为应用获取提供了一种更符合人体工程学且跨平台的方法。虽然目前通过源试用在基于 Chromium 的浏览器中得到支持，但该提案已引起 W3C 内跨厂商的兴趣，旨在取代传统的 `beforeinstallprompt` 事件，并最终支持跨站点安装。
+
+
+
+### [如何在-Next.js-中实现服务端与客户端组件共享](https://www.freecodecamp.org/news/how-to-share-components-between-server-and-client-in-nextjs/)
+
+2026-03-27 20:41:32 | 标签: Next.js, React 服务端组件, App Router, Web 开发, 前端架构
+
+> 本文深入探讨了 Next.js App Router 架构，重点分析了服务端组件与客户端组件之间的交互。文章概述了关键的组合模式，例如将服务端组件作为子组件传递给客户端组件，以保持服务端渲染的优势。指南详细说明了 Props 的严格序列化规则，解释了如何结合使用 React.cache 和 Context 进行高效的数据共享，并提供了封装第三方库的实用解决方案。此外，文章还强调了安全性，并介绍了如何使用 server-only 和 client-only 包来实现构建时安全，防止环境污染。
+
+
+
+### [我们如何利用抽象语法树（AST）将-Workflows-代码转换为可视化图表](https://blog.cloudflare.com/workflow-diagrams/)
+
+2026-03-27 13:00:00 | 标签: Cloudflare Workflows, AST, 静态分析, Rust, WebAssembly
+
+> Cloudflare Workflows 允许开发者使用纯代码编写复杂、持久的执行逻辑，而不是声明式的 YAML 或 JSON。为了提高这些动态工作流的可视化程度，Cloudflare 实现了一个可以将代码转换为图表的可视化工具。该过程涉及在部署时获取打包和压缩后的脚本，并在 Worker 中（通过 WebAssembly）使用基于 Rust 的 `oxc-parser` 来生成抽象语法树（AST）。文章详细介绍了他们如何遍历这些 AST 以处理嵌套函数、循环和分支等复杂情况，并解释了一种使用 `starts` 和 `resolves` 字段的特定索引系统，以便在 UI 中准确呈现并行与顺序执...
+
+
+
 ### [Aspire-13.2-中的-TypeScript-AppHost：相同的应用模型，不同的语法](https://devblogs.microsoft.com/aspire/aspire-typescript-apphost)
 
 2026-03-26 17:00:00
@@ -678,13 +702,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -834,13 +858,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2334,13 +2358,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4044,13 +4068,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
