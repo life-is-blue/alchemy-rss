@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-28 06:06:10 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-28 08:11:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -647,13 +647,13 @@
 
 
 
-### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
+### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
 
 2025-04-16 00:00:00
 
 
 
-### [Introducing-HELMET:-综合评估长文本语言模型](https://huggingface.co/blog/helmet)
+### [Gradio：超越传统-UI-库的-17-个理由](https://huggingface.co/blog/why-gradio-stands-out)
 
 2025-04-16 00:00:00
 
@@ -31445,11 +31445,11 @@
 
 
 
-### [Coding-Agent-有个甜蜜点，多数人直接跳过了](https://baoyu.io/blog/2026-02-25/coding-agent-sweet-spot)
+### [同样的模型，为什么-Cursor-跑不过-Claude-Code？](https://baoyu.io/blog/2026-02-23/claude-code-vs-cursor)
 
-2026-02-25T00:00:00.000Z
+2026-02-24T00:00:00.000Z
 
-> 通过 Simon Willison 和 Cloudflare vinext 两个真实案例，拆解 Coding Agent 的四个成功条件：有参照物、能自测、有架构蓝图、有人把控方向。不是所有项目都适合 Agent，但命中这四个条件，产出质量会出奇地好。
+> 同样的 Claude 模型，在 Cursor 和 Claude Code 里效果差很多。问题不在模型，而在上下文管理、使用场景和数据飞轮三个结构性差异。当编程从「人写代码」变成「人指挥 Agent 写代码」，原生 CLI 工具天然比 IDE 里长出来的 Agent 更有优势。
 
 
 

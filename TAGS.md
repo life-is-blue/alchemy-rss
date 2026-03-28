@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-28 06:06:10 | [返回首页](/README.md)
+**更新时间**: 2026-03-28 08:11:48 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10506)
+- [AI & 大模型](#ai-llm) (10507)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (738)
 - [DevOps](#devops) (470)
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [智能体评估就绪检查清单](https://blog.langchain.com/agent-evaluation-readiness-checklist/) - AI 精选
 - [大模型的下半场是什么？林俊旸：从-Reasoning-Thinking-到-Agentic-Thinking](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513508&idx=1&sn=6be245994a9783d68cf9874a8791bf4e) - AI 精选
 - [Gemini-3.1-Flash-Live：让音频-AI-更自然、更可靠](https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/) - AI 精选
 - [我们如何为深度智能体构建评估体系](https://blog.langchain.com/how-we-build-evals-for-deep-agents/) - AI 精选
@@ -41,9 +42,8 @@
 - [我复刻了-Claude-刚发布的生成式-UI-交互！](https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247496050&idx=1&sn=3a73827c96fc93eac10a3e5b4e0d36ce) - AI 精选
 - [我在-Pragmatic-Summit-炉边谈话中探讨智能体工程](https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything) - AI 精选
 - [多智能体陷阱](https://towardsdatascience.com/the-multi-agent-trap/) - AI 精选
-- [AI-操作系统：从指令到意图](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491695&idx=1&sn=78edff3e611f6e99d9e1deee83453b3b) - AI 精选
 
-- [查看全部 10506 篇...](/details/tags/ai-llm.md)
+- [查看全部 10507 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
