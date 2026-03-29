@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-30 02:06:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-30 04:05:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -31547,11 +31547,11 @@
 
 
 
-### [Coding-Agent-有个甜蜜点，多数人直接跳过了](https://baoyu.io/blog/2026-02-25/coding-agent-sweet-spot)
+### [92.6%-开发者每月使用-AI-编码助手，但每周节省时间只有-4-小时](https://baoyu.io/blog/2026-02-25/laura-tacho-ai-pragmatic-summit)
 
 2026-02-25T00:00:00.000Z
 
-> 通过 Simon Willison 和 Cloudflare vinext 两个真实案例，拆解 Coding Agent 的四个成功条件：有参照物、能自测、有架构蓝图、有人把控方向。不是所有项目都适合 Agent，但命中这四个条件，产出质量会出奇地好。
+> DX 公司 CTO Laura Tacho 在 Pragmatic Summit 上公布了 12 万开发者、450 家公司的最新基准数据。AI 采用率已达 92.6%，但每周节省时间卡在 4 小时不动。更关键的发现是：同样的 AI 工具，有些公司事故减半，有些事故翻倍。差别不在工具，在组织本身。
 
 
 
