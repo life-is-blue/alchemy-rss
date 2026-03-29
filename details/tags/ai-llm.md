@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-29 20:06:21 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-29 22:10:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11264,57 +11264,43 @@
 
 ### [GitLab-创始人抗癌实录：他用创始人思维和-AI-救了自己](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024498&idx=1&sn=ddd300548f6482ecf75a454716115611)
 
-2026-03-29 05:04:00 | 标签: GitLab, Sid Sijbrandij, 创始人模式, AI 医疗, GPT-4
-
-> 本文详细记录了 GitLab 创始人 Sid Sijbrandij 对抗罕见骨肉瘤的过程。在传统医疗方案走到尽头后，他转入「创始人模式」，将经营 GitLab 的系统思维应用于抗癌：建立超千页的开源健康记录，利用单细胞测序精准定位靶点，并打破常规采用并行疗法。在此过程中，AI（如 GPT-4）扮演了核心角色，辅助团队进行大规模基因数据分析、文献检索及治疗假设验证。Sid 的案例展示了技术思维与 AI 如何赋能个体挑战医疗边界，预示了未来个性化诊疗的新范式。
+2026-03-29 05:04:00
 
 
 
 ### [让中小团队也玩得起-Deep-Research：TAMU/Waterloo-团队把研究智能体的训练做成了开源流水线](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024498&idx=3&sn=b69cafdb54b68dc5c5bf4bfbd65b6b00)
 
-2026-03-29 05:04:00 | 标签: OpenResearcher, 深度研究智能体, 轨迹合成, 离线训练, AI Agent
-
-> 本文介绍了由德州农工大学和滑铁卢大学等机构联合开发的 OpenResearcher 项目。该项目旨在解决深度研究智能体（Deep Research Agent）训练中高质量长程轨迹数据匮乏且获取成本高昂的痛点。OpenResearcher 创新性地构建了一个包含 1500 万篇文档的离线搜索引擎，并利用教师模型在本地环境中合成了超过 9.7 万条包含 search、open、find 工具调用的长程研究轨迹。实验表明，基于此数据微调的 30B 参数模型在 BrowseComp-Plus 基准测试中达到 54.8% 的准确率，显著超越了 GPT-4.1 和 Claude-4-Opus。该研究还揭...
+2026-03-29 05:04:00
 
 
 
 ### [小沓-AI・智能营销产品发布：定义-B2A2C-时代的-AI-友好型营销](https://www.qbitai.com/2026/03/393064.html)
 
-2026-03-29 02:49:35 | 标签: AI 营销, B2A2C, Zero-Click, GEO, Multi-Agent
-
-> 文章报道了壹沓科技在 2026GDPS 大会上发布的小沓 AI 智能营销产品。面对生成式 AI 引发的「零点击（Zero-Click）」现象，品牌营销逻辑正从传统的 B2C 转向 B2A2C（Brand to AI to Consumer），即品牌需通过 AI 媒介触达消费者。小沓 AI 依托底层 Multi-Agent 架构，提供洞察、内容生成、流量占位及资产沉淀的全链路闭环。其核心能力在于利用 AI 逆向解析技术提升品牌内容的「AI 友好性」，通过 RAG 技术生成结构化内容，确保品牌在大模型问答中占据核心席位，从而应对传统搜索流量衰减的挑战。
+2026-03-29 02:49:35
 
 
 
 ### [从推理式思考到智能体式思考的范式转变：Harness-工程的核心地位](https://mp.weixin.qq.com/s?__biz=Mzk0MTYzMzMxMA==&mid=2247505842&idx=2&sn=4ce6a6184891c71dd4cbaec191602c18)
 
-2026-03-29 02:44:00 | 标签: AI Agent, Harness Engineering, 强化学习, 推理模型, 智能体架构
-
-> 作者林俊旸回顾了推理模型（如 o1， R1）的发展历程，指出当前 AI 范式正从单纯的「推理式思考」转向「智能体式思考」。智能体思考的核心在于在与环境的闭环交互中持续更新计划与行动。文章重点提出了「Harness」的概念，即包裹在智能体周围的工具链与执行环境，认为未来的竞争优势将不再仅限于模型本身，而取决于 Harness 工程能力、训练与服务的紧密集成以及环境设计的质量。文章为理解智能体系统的构建提供了系统性的架构视角。
+2026-03-29 02:44:00
 
 
 
 ### [深度解析第三代-RLVR-模型的训练过程：从模仿人类到自我进化](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513626&idx=1&sn=52b786e740b2280f730c588ecc33e54e)
 
-2026-03-29 02:10:00 | 标签: RLVR, 大模型训练, 强化学习, 推理能力, DeepSeek
-
-> 文章系统性地梳理了第三代大模型训练范式——RLVR（Reinforcement Learning from Verifiable Reward）。不同于依赖人类主观偏好的 RLHF，RLVR 通过引入确定性的验证器（如编译器、形式化证明器）提供客观奖励信号，推动模型从“模仿人类”向“自我进化”转变。文章详细分析了 DeepSeek-Math-V2 在数学证明中的“生成器-验证器-元验证器”协同架构，以及 GENCLUSTER 在编程竞赛（IOI/ICPC）中通过并行生成、行为聚类和锦标赛排序实现金牌级表现的策略，揭示了测试时计算（Test-Time Compute）与自我反思机制在提升推理能力...
+2026-03-29 02:10:00
 
 
 
 ### [论芯率先跑进-AI-for-EDA-产线：读芯片协议文档速度-25-倍，揪出-respin-级-bug](https://www.qbitai.com/2026/03/393045.html)
 
-2026-03-29 01:27:39 | 标签: AI for EDA, 芯片验证, 知识图谱, 大语言模型, 论芯科技
-
-> 本文深度解析了论芯科技在 AI for EDA 领域的落地实践。针对芯片验证中「读文档、写代码」的效率瓶颈，论芯开发了一套自动化系统，能够将数百页的芯片协议（Spec）直接转化为可执行的验证产物。技术上，该系统超越了简单的 RAG 模式，构建了能适应复杂协议的动态知识图谱，并以大语言模型作为推理引擎，解决了信息分散和逻辑交叉的难题。在客户真实项目中，该系统不仅实现了 25 倍于资深专家的处理速度，还成功揪出了足以导致流片失败（respin）的重大 Bug，证明了 AI 在高门槛工业软件领域的工程化价值。
+2026-03-29 01:27:39
 
 
 
 ### [海淀-AI，集体开弓：少年极客、中年创客与-ICU-归来者](https://www.qbitai.com/2026/03/392996.html)
 
-2026-03-29 01:09:41 | 标签: 海淀 AI, AI 原点社区, 创业生态, AIGC, 世界模型
-
-> 文章以 2026 年中关村论坛「人工智能主题日」为背景，聚焦五道口「AI 原点社区」的崛起。通过三位不同背景的 AI 执业者——追求空间智能交互的清华创客宋崇国、从 ICU 归来坚持 AIGC 情感陪伴创业的刘斌新，以及放弃海外大厂高薪回国研究「世界模型」的靳潇杰教授，勾勒出海淀 AI 生态的真实底色。文章强调了海淀区从租金补贴到算力、Token 补贴的精准扶持政策，以及高达 9 万人的 AI 人才密度（超越硅谷）。同时，文中探讨了 AI 技术从「数据拟合」向「理解世界规律」的范式转移，展现了海淀作为全球 AI 创新高地的活力与韧性。
+2026-03-29 01:09:41
 
 
 
@@ -33628,49 +33614,37 @@
 
 ### [微软推出-Azure-Copilot-迁移智能体，加速云迁移规划](https://www.infoq.com/news/2026/03/azure-copilot-migration-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-29 10:00:00 | 标签: Azure, 云迁移, 微软, AI 智能体, Copilot
-
-> 微软宣布 Azure Copilot 迁移智能体正式公测，旨在解决企业云迁移中常见的技术复杂性和手动规划周期长等挑战。该智能体集成在 Azure Migrate 控制面板中，可为 VMware 环境提供无代理发现功能，通过符合“云采用框架”（Cloud Adoption Framework）的 Terraform 或 Bicep 模板自动创建着陆区（Landing Zone），并与 GitHub Copilot 集成以实现应用程序现代化。通过利用 AI 生成资产清单、依赖关系图和迁移波次计划，微软旨在帮助企业更有效地管理云预算，并减少与大规模本地资产评估相关的阻力。
+2026-03-29 10:00:00
 
 
 
 ### [ProxySQL-推出多层发布策略，包含稳定版、创新版和-AI-版](https://www.infoq.com/news/2026/03/proxysql-multi-tier-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-29 07:03:00 | 标签: ProxySQL, 数据库代理, PostgreSQL, MySQL, 生成式 AI
-
-> ProxySQL 宣布发布 3.0.6 版本，并同步转向多层发布模式，以满足多样化的基础设施需求。稳定版（3.0.x）优先考虑关键任务的可靠性，并通过原生复制延迟跟踪等功能增强了对 PostgreSQL 的支持。创新版（3.1.x）通过嵌入式时序数据库和流量观察器引入了先进的可观测性。最值得注意的是，AI/MCP 版（4.0.x）探索了原生生成式 AI 集成和模型上下文协议（MCP），旨在将 AI 逻辑集中在代理层，从而在无需修改应用程序或数据库架构的情况下，简化 RAG 流水线和自然语言查询。
+2026-03-29 07:03:00
 
 
 
 ### [Claude-Code-过度设计？OpenClaw-背后极简引擎-Pi-的设计哲学](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=1&sn=4ba4c2ab4cb2bef777168e8a605e0dda)
 
-2026-03-29 02:16:00 | 标签: AI Agent, Pi, Claude Code, OpenClaw, Vibe Coding
-
-> 文章深入探讨了极简编码 Agent 框架 Pi 的设计理念。Pi 的作者 Mario Zechner（libGDX 创建者）认为，当前的 AI Agent 如 Claude Code 正在变得过于复杂且不可控，因此他主张「做减法」，仅保留 Read、Write、Edit 和 Bash 四个核心工具，以及不到 1000 tokens 的系统提示词。文章指出，现代大模型在强化学习后已具备极强的 Bash 调用能力，过度叠加抽象层（如复杂的记忆系统、MCP 协议）反而会增加不必要的复杂度和安全风险（如 Prompt Injection）。开发者们分享了如何利用 Pi 的可塑性实现自我修改和扩展，并预...
+2026-03-29 02:16:00
 
 
 
 ### [AutoGenesis：基于-AI-+-MCP-的跨平台自动化测试实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=2&sn=d4fdbed74b0ceeb7f2697d04de17764a)
 
-2026-03-29 02:16:00 | 标签: AutoGenesis, MCP, 自动化测试, LLM, 代码生成
-
-> 本文深入解析了 Microsoft Edge QA 团队开发的 AutoGenesis 自动化测试框架。该框架旨在解决传统自动化测试中技术门槛高和脚本维护难的痛点，提出了「AI 负责意图理解与代码生成，确定性程序负责稳定执行」的核心策略。通过引入 MCP（Model Context Protocol）协议，AutoGenesis 构建了连接大语言模型（LLM）与底层自动化工具（如 PyWinauto、Appium）的桥梁，实现了对 Windows、macOS、iOS 和 Android 四大平台的统一支持。文章详细介绍了其四层架构设计、Preview-Confirm 代码生成机制以及如何通过 ...
+2026-03-29 02:16:00
 
 
 
 ### [Stripe-工程师部署自主智能体-Minions，每周生成上千个拉取请求](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=3&sn=cc73978b6d44573efb9a884432979c5c)
 
-2026-03-29 02:16:00 | 标签: Stripe, Minions, AI Agent, 自主编程, LLM
-
-> 本文介绍了 Stripe 开发的自主编程智能体 Minions。该系统不同于 Copilot 等交互式助手，能够根据 Slack 指令、缺陷报告或功能需求端到端地完成软件开发任务。Minions 的核心采用「蓝图」（Blueprints）机制，将确定性代码逻辑与灵活的智能体循环结合，并深度集成内部 CI/CD 流水线以确保代码质量。目前，Minions 每周生成的拉取请求已超过 1300 个，在配置调整、依赖升级和小型重构等定义明确的任务中表现尤为出色，显著提升了开发效率。
+2026-03-29 02:16:00
 
 
 
 ### [苹果优化其基础模型的上下文窗口管理能力](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=4&sn=a43e5eaf00a9ef3cd6061093fee4c918)
 
-2026-03-29 02:16:00 | 标签: Apple, iOS 26.4, 端侧 AI, 上下文窗口, Token 管理
-
-> 本文介绍了 iOS 26.4 候选版本中针对 Apple 端侧基础模型上下文窗口管理的重大更新。由于端侧模型运行资源受限（上限 4096 Token），开发者常面临 .exceededContextWindowSize 错误。新版本在 SystemLanguageModel 中引入了 contextSize 属性和 tokenCount(for:) 方法，使应用能动态监控 Token 消耗，避免硬编码上限。文章还分享了主动管理策略，如任务拆分、摘要压缩及工具调用优化，并强调了工具定义序列化对 Token 的隐性占用。此外，这些新接口支持 @backDeployed，可兼容旧版系统。
+2026-03-29 02:16:00
 
 
 
@@ -47604,9 +47578,7 @@ http://antirez.com/news/162
 
 ### [“龙虾”们正在改造机器人，具身智能的下一步是什么？](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566438&idx=1&sn=60826632ad0367799b61b1e26b9635ea)
 
-2026-03-28 23:16:00 | 标签: 具身智能, AI Agent, 世界模型, VLA模型, 环境式数据采集
-
-> 文章深入探讨了 AI Agent 如何重塑具身智能机器人产业。核心观点指出，具身智能正经历从传统的 VLA（指令到动作映射）向「环境式数据采集 + 世界模型」的底层范式转变。这种新范式通过采集人类在真实环境中的行为数据，解决了传统实验室数据规模的瓶颈，预计数据量级将实现百倍增长。王晓刚认为，具身智能的「ChatGPT 时刻」在于模型通用性和泛化能力的跃迁，而非单纯的商业落地。此外，文章还讨论了软硬一体的商业模式、开源生态建设、以及中美在应用场景上的差异，并预测机器人将遵循从 B2B 垂直场景到 B2C 家庭环境的落地路径。
+2026-03-28 23:16:00
 
 
 
