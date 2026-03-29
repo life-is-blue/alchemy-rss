@@ -1,0 +1,53 @@
+{
+  "id": "RAW_4df13b7c",
+  "title": "趋境 ATaaS 平台发布，打造日均万亿产能的“Token 工厂”",
+  "url": "https://www.qbitai.com/2026/03/392988.html",
+  "date": "2026-03-28 13:58:24",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">3月27日，作为2026中关村论坛核心组成部分，由趋境科技与九源智能计算系统生态联合体共同主办的“全栈智能 全域推理：Token爆发元年的全场景大规模推理服务”专题研讨会成功举办。论坛汇聚院士、顶尖学者及产业领军人物，聚焦大模型时代推理服务的核心技术、产业实践和生态协同，共探高效、稳定、安全、普惠的大模型推理服务体系建设。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260328150327_4cffc69a86dc0aab0d51a280c7e48a7a.jpeg\" data-src=\"https://image.jido.dev/20260328150327_4cffc69a86dc0aab0d51a280c7e48a7a.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"2\">活动特邀九源智能计算生态联合体秘书长、清华大学教授、趋境科技首席科学家武永卫担任主持人。启元实验室副主任刘航、工业和信息化部电子工业标准化研究院副院长郭楠为活动致辞。中国工程院院士、九源智能计算系统生态联合体理事长、清华大学教授、趋境科技首席科学顾问郑纬民受邀出席并做主旨演讲，从宏观视角解读了从“模型服务”迈向“Token服务”的底层逻辑与基础设施变革。趋境科技创始人兼CEO艾智远现场发布全新一代AI推理平台——趋境 ATaaS 高效能 AI Token 生产服务平台（Approaching.AI Token as a Service），为破解算力投入与Token产出失衡难题提供了系统性解决方案。众多等产业链领军企业代表现场带来主旨演讲，分享AI推理服务产业的发展新路径。</p>\n  <p data-track=\"3\"><strong>郑纬民院士：AI产业核心已从模型服务转向Token服务</strong></p>\n  <p data-track=\"4\">郑纬民院士在题为《从模型服务到Token服务》的主旨演讲中指出，随着智能体、AI Coding等应用的爆发式增长，Token消耗量呈百倍、千倍级跃升，2026年已成为名副其实的“Token爆发元年”。AI产业的核心关注焦点，正从“模型参数规模、模型可用性”全面转向“稳定、低成本、高质量交付的Token产能”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260328150328_7d4870ee31516714277b80086f11c8e4.jpeg\" data-src=\"https://image.jido.dev/20260328150328_7d4870ee31516714277b80086f11c8e4.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"5\">“未来的智能基础设施应围绕‘Token即服务（TaaS，Token as a Service）’进行重构”。郑纬民院士表示，传统模型服务的核心是保障模型可得性与接口完整性，而Token服务的核心是保障Token产能的可用性，更关注成本、吞吐、延迟与可靠性等生产性指标，是一个极端复杂的多维系统最优化问题，必须完成全链路的系统级创新。</p>\n  <p data-track=\"6\">对此，郑纬民院士明确了TaaS发展的三大核心技术底座：一是全系统异构协同，通过将不同计算任务合理分配至GPU、CPU、内存和SSD，打破算力瓶颈；二是存算协同实现“以存换算”，通过前置KV Cache等技术，大幅降低重复计算量，提升推理效率；三是面向SLO的智能调度，精准地将用户业务需求“翻译”为底层资源决策。郑院士表示：“只有让智能生成像水电一样被稳定地调度与供给，才能真正迎来算力制造Token为王的普惠智能时代。”</p>\n  <p data-track=\"8\"><strong>趋境ATaaS平台重磅发布，打造全球领先的Token生产效能放大器</strong></p>\n  <p data-track=\"9\">趋境科技在论坛上重磅发布了其核心产品——趋境ATaaS高效能AI Token生产服务平台。本次发布由趋境科技创始人兼CEO艾智远，与中国工程院院士、九源智能计算生态联合体理事长、清华大学教授、趋境科技首席科学家郑纬民，以及并行科技董事长陈健、中科曙光智能计算产品事业部总经理杜夏威、华为昇腾计算业务副总裁兼首席产品规划师叶耀荣、京东Infra产品负责人郝鹏、浦江实验室代表钟普共同揭晓。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260328150327_a157a61eb4c0f6978296dfaef5aafe06.jpeg\" data-src=\"https://image.jido.dev/20260328150327_a157a61eb4c0f6978296dfaef5aafe06.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"10\">针对当前大模型推理服务中普遍存在的硬件资源闲置、软件适配滞后、算力配置粗放、架构演进失衡四大核心难题，该平台将有效破解大额硬件投入难以转化为优质 Token 产能、资源浪费与成本空耗突出的行业困境，以高效能Token生产为核心目标，可支撑万级别AI推理需求，并达到日均万亿级别Token整体产能。</p>\n  <p data-track=\"11\">趋境ATaaS平台依托四大自研核心技术，构建覆盖异构整合、智能调度、弹性扩容的全链路能力：</p>\n  <p data-track=\"12\">·&nbsp;<strong>六合：异构推理2.0</strong>：全球首创大模型计算逻辑重构技术，深度融合CPU+GPU、国产与非国产算力，实现任务的智能分流，可将万卡级智算集群运营成本压降20%以上。</p>\n  <p data-track=\"13\">·&nbsp;<strong>月饼：以存换算2.0</strong>：全球首创超体量KV Cache缓存技术，将KV Cache存储空间扩展百倍至千倍，缓存命中率最高可达90%，直接削减90%的GPU算力开销。</p>\n  <p data-track=\"14\">·&nbsp;<strong>双仪：虚实同构</strong>：全球首创算子级SLO仿真技术，实现算力资源的智能预规划与动态调优，可精准切分异构算力，将万卡级智算集群硬件综合资源利用率最高提升数倍。</p>\n  <p data-track=\"15\">·&nbsp;<strong>万象：极致弹性</strong>：打通规模化量产最后壁垒，支持万亿参数大模型7秒快速拉起与动态配置变更、数百节点超大规模EP弹性调度，为万卡级高性能横向扩展提供关键能力。</p>\n  <p data-track=\"16\">趋境ATaaS平台的发布为AI基础设施的建设和运营提供了新的思路和行业标准，使每单位算力和能耗投入都能够数倍转化为更稳定、更可衡量的Token价值产出，更标志着AI基础设施发展焦点从单纯的算力规模竞争，转向对 Token 生产效率的综合衡量，推动算力基础设施从“数据中心”向“Token工厂”全面演进。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260328150327_1d352652fbaad4400a6425f8c7f0bb2a.jpeg\" data-src=\"https://image.jido.dev/20260328150327_1d352652fbaad4400a6425f8c7f0bb2a.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"18\"><strong>全产业链生态协同，凝聚国产算力发展核心共识</strong></p>\n  <p data-track=\"19\">本次论坛不仅是技术的展示台，更是产业生态协同的汇聚点。趋境科技积极推动与产业链上下游伙伴的深度合作，致力于构建开放共赢的智能计算生态。论坛上，来自并行科技、九源智能计算系统生态联合体、中科曙光、京东云、阿里云、华为、商汤科技等企业的代表在论坛上围绕国产算力多场景推理优化实践、推理框架实践、Token时代AI引擎、算力底座高效推理等前沿话题以及与趋境科技的深度合作展开深入分享。</p>\n  <p data-track=\"20\">并行科技作为国内领先的算力服务商，在第三方算力服务领域位列第一，并行科技董事长陈健在演讲中指出，其MaaS服务得到趋境科技的大力支持，双方合作将高质量Token的生产成本大幅优化，并将特定场景下的集群性能提升50%，共同为智谱、Kimi、MiniMax、DeepSeek等头部大模型客户提供优质服务。</p>\n  <p data-track=\"21\">九源智能计算系统生态联合体副秘书长王豪杰指出，Token时代竞争转向单位成本产出，国产卡面临“生态驱动”困局。九源联合体打造国产智能计算生态，已取得多项成果：全国产化方案适配多款GPU、串行代码高效并行的九源领域编程语言“九齿”、支撑Mooncake推理加速系统、基于国产芯片的高效智能体，并与KTransformers等框架深度联动，推动国产算力从“可用”迈向“好用”。</p>\n  <p data-track=\"22\">京东云AI Infra产品负责人郝鹏表示，京东云已与趋境科技达成深度合作，联合打造下一代推理引擎，共同赋能Mooncake开源生态。华为昇腾计算业务副总裁、首席产品规划师叶耀荣强调，趋境与昇腾展开了全方位的技术和商业化合作，部分项目中在昇腾AI集群上实现了2倍以上性能提升。此外，阿里云政企事业部教育科研解决方案总监杨坤、商汤科技大装置首席架构师项铁尧等也分享了与趋境科技在Mooncake等开源项目上深度合作，以及为趋境Token服务提供高可靠算力支持的实践。</p>\n  <p data-track=\"23\">在圆桌对话环节，清华大学计算机系副教授章明星与中国移动数智化部副总经理陈国，天数智芯副总裁宋煜，中国科学技术大学计算机学院特任教授、博导李诚，美团首席工程师钱玉磊，趋境科技Mooncake首席工程师杨珂，围绕“国产推理基础设施从‘可用’到‘好用’的路线选择与关键突破”展开探讨。各方凝聚了三大共识：一是软硬深度协同是释放国产算力潜能的关键，需通过系统级优化弥合硬件性能与业务需求之间的鸿沟；二是生态统一与标准建设至关重要，打破“百花齐放”带来的适配难题，才能实现规模化应用；三是人才培养是产业根基，需通过开源社区、技术竞赛等方式，培育兼具理论与工程能力的AI Infra人才。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260328150327_2d17d21224b033becba9e00db751c5fe.jpeg\" data-src=\"https://image.jido.dev/20260328150327_2d17d21224b033becba9e00db751c5fe.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\">本次研讨会的成功举办，恰逢AI产业从模型竞争转向规模化应用、从MaaS转向TaaS的关键节点，不仅为AI推理服务领域搭建了产学研用深度交流的平台，更为AI产业高质量发展谋划路径。论坛同期宣布2026年春季启元人工智能大赛正式启动，旨在通过赛教融合，为国产智能计算生态培育新一代人才，持续推动AI产业的开源创新与规模化应用。</p>\n  <p data-track=\"25\">转载来源：趋境科技</p>\n  <p data-track=\"26\">本文为量子位获授权转载，观点仅为原作者所有。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "趋境科技发布 ATaaS 平台，提出从模型服务向 Token 服务（TaaS）转型的理念，通过异构协同和大规模 KV Cache 技术打造日均万亿产能的「Token 工厂」。",
+  "oneSentenceSummary": "趋境科技发布 ATaaS 平台，提出从模型服务向 Token 服务（TaaS）转型的理念，通过异构协同和大规模 KV Cache 技术打造日均万亿产能的「Token 工厂」。",
+  "summary": "文章报道了 2026 中关村论坛上趋境科技发布的 ATaaS 高效能 AI Token 生产服务平台。郑纬民院士在会上指出，AI 产业核心已从关注模型参数转向稳定、低成本、高质量的 Token 产能交付，即「Token 即服务」（TaaS）。ATaaS 平台通过「六合」（异构推理）、「月饼」（KV Cache 缓存）、「双仪」（SLO 仿真）和「万象」（极致弹性）四大核心技术，旨在解决硬件闲置与算力配置粗放等行业困境。该平台支持万亿参数模型快速拉起，并实现日均万亿级 Token 整体产能。此外，趋境科技展示了与华为昇腾、京东云等伙伴在国产算力优化及 Mooncake 开源生态方面的深度协同成果。",
+  "mainPoints": [
+    {
+      "point": "AI 产业范式转移：从模型服务（MaaS）转向 Token 服务（TaaS）。",
+      "explanation": "随着智能体和 AI Coding 应用爆发，行业关注点已从模型可用性全面转向稳定、低成本、高质量交付的 Token 产能，Token 成为衡量基础设施效能的核心指标。"
+    },
+    {
+      "point": "通过「以存换算」技术大幅降低 GPU 算力开销。",
+      "explanation": "利用超体量 KV Cache 缓存技术（Mooncake），将缓存空间扩展百倍以上，缓存命中率最高可达 90%，从而直接削减 90% 的 GPU 算力需求。"
+    },
+    {
+      "point": "全系统异构协同打破算力瓶颈并降低成本。",
+      "explanation": "通过重构大模型计算逻辑，深度融合 CPU+GPU 以及国产与非国产算力，实现任务智能分流，可将万卡级智算集群的运营成本压降 20% 以上。"
+    }
+  ],
+  "keyQuotes": [
+    "未来的智能基础设施应围绕「Token 即服务（TaaS，Token as a Service）」进行重构。",
+    "只有让智能生成像水电一样被稳定地调度与供给，才能真正迎来算力制造 Token 为王的普惠智能时代。",
+    "AI 产业的核心关注焦点，正从「模型参数规模、模型可用性」全面转向「稳定、低成本、高质量交付的 Token 产能」。"
+  ],
+  "tags": [
+    "TaaS",
+    "Token as a Service",
+    "AI Infra",
+    "趋境科技",
+    "KV Cache"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 86,
+  "wordCount": 3156,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774706304000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-28 13:58:24"
+}

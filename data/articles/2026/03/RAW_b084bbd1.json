@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b084bbd1",
+  "title": "来自 Matt Webb 的语录",
+  "url": "https://simonwillison.net/2026/Mar/28/matt-webb/#atom-everything",
+  "date": "2026-03-28 12:04:26",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">28th March 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://interconnected.org/home/2026/03/28/architecture\">\n     <p>The thing about agentic coding is that agents grind problems into dust. Give an agent a problem and a while loop and - long term - it’ll solve that problem even if it means burning a trillion tokens and re-writing down to the silicon. [...]</p>\n     <p>But we want AI agents to solve coding problems quickly and in a way that is maintainable and adaptive and composable (benefiting from improvements elsewhere), and where every addition makes the whole stack better.</p>\n     <p>So at the bottom is really great libraries that encapsulate hard problems, with great interfaces that make the “right” way the easy way for developers building apps with them. Architecture!</p>\n     <p>While I’m vibing (I call it vibing now, not coding and not vibe coding) while I’m vibing, I am looking at lines of code less than ever before, and thinking about architecture more than ever before.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://interconnected.org/home/2026/03/28/architecture\">Matt Webb</a>, <span class=\"context\">An appreciation for (technical) architecture</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2128/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Matt Webb 认为，随着 AI 智能体接管了解决编程问题的“暴力”任务，开发者的角色正在从编写代码行转向高层架构设计。",
+  "oneSentenceSummary": "Matt Webb 认为，随着 AI 智能体接管了解决编程问题的“暴力”任务，开发者的角色正在从编写代码行转向高层架构设计。",
+  "summary": "这篇文章捕捉到了 AI 智能体时代软件工程思维模式的深刻转变。Matt Webb 指出，虽然智能体可以通过纯粹的坚持和消耗大量 Token 来解决问题，但真正的价值在于通过卓越的架构和设计良好的库来创建可维护、可组合的系统。他提出，“Vibing”（一种新的开发模式）意味着更少地关注代码本身，更多地思考系统结构，从而确保 AI 生成的解决方案有助于构建更好的整体技术栈，而不是仅仅通过暴力破解将问题“磨成粉末”。",
+  "mainPoints": [
+    {
+      "point": "AI 智能体可以通过暴力破解解决问题，但缺乏内在的架构智慧。",
+      "explanation": "智能体可以通过无休止的迭代和消耗海量 Token 来“磨平”问题，但如果没有人类主导的结构，这并不能保证得到一个可维护或优雅的解决方案。"
+    },
+    {
+      "point": "在 AI 时代，高质量的库和架构比以往任何时候都更重要。",
+      "explanation": "为了确保 AI 生成的代码具有可组合性和适应性，开发者必须提供强大的框架和接口，引导 AI 走向正确的实现模式。"
+    },
+    {
+      "point": "开发者的角色正在从编写代码演变为架构监督。",
+      "explanation": "当 AI 处理细粒度的实现细节时，人类开发者会花更多时间思考高层系统设计，而减少在单行代码上的投入，Webb 将这种状态称为“vibing”。"
+    }
+  ],
+  "keyQuotes": [
+    "智能体编程的特点在于，智能体会把问题磨成粉末。",
+    "所以，最底层是真正优秀的库，它们封装了难题，并提供出色的接口，让开发者在构建应用时，能轻松地采用“正确”的方式。这就是架构！",
+    "当我在进行“vibing”时……我比以往任何时候都更少地查看代码行，而比以往任何时候都更多地思考架构。"
+  ],
+  "tags": [
+    "智能体编程",
+    "软件架构",
+    "AI 智能体",
+    "开发者体验",
+    "Vibe Coding"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 156,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774699466000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-28 12:04:26"
+}
