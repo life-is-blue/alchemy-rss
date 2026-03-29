@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ee5f5bac",
+  "title": "论芯率先跑进 AI for EDA 产线：读芯片协议文档速度 25 倍，揪出 respin 级 bug",
+  "url": "https://www.qbitai.com/2026/03/393045.html",
+  "date": "2026-03-29 01:27:39",
+  "author": "西风",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"44\">允中 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"45\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">当所有人在讲AI for EDA的故事，<strong>论芯先跑进了产线</strong>。</p>\n  <p data-track=\"3\">芯片设计的复杂度每两年翻一番，但<strong>有一个环节的效率几乎没变过——读文档</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260329020315_b7477d33cf5228465d9a7dfad0c816b3.webp\">\n  </div>\n  <p data-track=\"4\">SoC验证工程师，在写下第一行代码之前，往往要花几周甚至几个月，把几百上千页的协议规范读完、读透、理清楚。</p>\n  <p data-track=\"5\">任何一处遗漏，都可能导致验证覆盖不全，最终的代价是respin——<strong>一次流片失败，几百万美金和几个月周期归零</strong>。</p>\n  <p data-track=\"6\">EDA工具进化了几十年，综合工具替代了手工逻辑优化，布局布线工具替代了手工版图设计，仿真工具替代了手工波形检查。但“读文档、定策略、写验证”这一层，几十年来始终没有被工具化。</p>\n  <p data-track=\"7\">论芯科技已经在真实产线上给出了答案。</p>\n  <p data-track=\"8\">论芯的系统做的事情，一句话概括：<strong>拿到一份芯片协议文档，自动输出可用的验证代码</strong>。</p>\n  <p data-track=\"9\">在一次客户的实际验证任务中，系统跑出了三组值得注意的结果：</p>\n  <ul>\n   <li data-track=\"10\"><strong>发现了一个respin级别的bug</strong>，这意味着系统对spec的理解深度已经足以捕捉到那些会导致流片失败的关键缺陷；</li>\n   <li data-track=\"11\">在<strong>同一任务中，识别出超过100条pattern的timing违例</strong>，这些在传统流程中需要工程师逐条人工排查；</li>\n   <li data-track=\"12\">整个任务的<strong>完成速度达到资深专家的25倍</strong>。</li>\n  </ul>\n  <p data-track=\"13\">这不是实验室里的数字，是在客户的真实项目里跑出来的。论芯目前已在多家客户的真实项目中完成部署。</p>\n  <p data-track=\"15\">答案藏在创始团队的经历里。</p>\n  <p class=\"pgc-p\" data-track=\"16\"><strong>论芯创始人何卓论</strong>做AI与EDA的交叉领域已经近十年。北大本科毕业后留校读博，中途退学，去香港中文大学从头再来。他原本甚至打算博士毕业后回高中当一名信息学竞赛老师，但在真正深入产业一线后，他改变了想法。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260329020315_793e2216494dbbf502f7d371e371d989.webp\">\n  </div>\n  <p class=\"pgc-p\" data-track=\"47\">△论芯科技创始人何卓论</p>\n  <p data-track=\"19\">不同于大多数这个方向的研究者，他几乎在链条上的每个位置都待过：做过EDA工具开发，做过EDA工具中的AI算法，也做过跑AI算法的芯片设计。</p>\n  <p data-track=\"20\">横跨多个角色的经历让他得出了一个在学术圈不太主流的判断：</p>\n  <p data-track=\"21\">AI for EDA最大的问题不是模型不够强，而是<strong>做方法论的人不懂业务场景，做业务的人没有足够的方法论储备</strong>。两边之间有一条巨大的鸿沟。学术界发了大量论文，绝大多数停在proof of concept阶段，离工程师真正用起来还差得远。</p>\n  <p data-track=\"22\">何卓论要填的就是这个gap。于是他创办了论芯。</p>\n  <p class=\"pgc-p\" data-track=\"23\"><strong>蒲渊是论芯的联合创始人兼CTO</strong>。在香港中文大学读博的第一年，他就连续以第一作者身份拿到三个EDA顶会的最佳论文提名，并提前完成了毕业要求——这样的节奏在学术界极为罕见。但他没有选择继续在学术界积累履历，而是在博士早期就加入论芯，把精力投入技术的产品化落地。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260329020315_82db9d7d2e9172d70d466aa9b78582a8.webp\">\n  </div>\n  <p class=\"pgc-p\" data-track=\"49\">△论芯科技联合创始人兼CTO蒲渊</p>\n  <p data-track=\"26\">一个看得到业务全局的人，加一个能把技术打穿的人——论芯的核心就是这么搭起来的。</p>\n  <p data-track=\"27\">围绕这个核心，论芯搭建了一支兼具芯片领域知识和AI工程能力的团队。AI中台和智能体方向的负责人均来自AI行业一线，有成熟的大模型产品化和系统落地经验。这让论芯在技术路线上不是从学术论文出发去找场景，而是从工程实践出发去定义技术架构。</p>\n  <p data-track=\"29\">正是这样的团队，决定了<strong>论芯的技术路线走法跟“拿GPT或开源模型直接挂一个RAG”有本质区别</strong>。</p>\n  <p data-track=\"30\">RAG解决的是检索问题，给模型喂相关段落，让它回答问题。但芯片验证不是问答，它是一个工程问题。</p>\n  <p data-track=\"31\">一份几百页的spec里，时序要求散落在第三章，异常处理逻辑藏在第七章的附录里，跨模块的依赖关系要对着三份不同的文档交叉比对——同一个功能点的约束条件可能散落在十几个不同章节。</p>\n  <p data-track=\"32\">人类工程师靠经验和记忆力把它们关联起来，<strong>论芯的系统靠一套从芯片领域基础知识中进化出来的知识图谱</strong>。</p>\n  <p data-track=\"33\">具体来说，一份spec文档进入系统后，首先被自动解析，随后组织成一张知识图谱。这张图谱的schema不是人为定义的静态模板，而是能适应不同协议、不同架构的文档结构。知识图谱不仅汇聚信息，还能自动识别文档内部的冲突和不一致，而这些恰恰是人工阅读中最容易遗漏的。</p>\n  <p data-track=\"34\">在<strong>知识图谱之上，大语言模型作为推理引擎</strong>，结合任务相关的上下文，根据验证策略自动生成下游所需的产物：覆盖模型、测试平台、测试pattern。</p>\n  <p data-track=\"35\"><strong>从文档到可执行的验证代码，整条链路被打通。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260329020315_a2f6f6451d6f5d0f7bcf22c36d5ba839.webp\">\n  </div>\n  <p data-track=\"36\">用何卓论的话说：“我们不是在做一个AI模型，是在做一个能嵌入工程师工作流的工具。模型是引擎，但引擎不是汽车。”</p>\n  <p data-track=\"38\">AI for EDA是一个正在快速升温的方向，整个行业正在形成共识：AI会深刻改变芯片设计的流程。</p>\n  <p data-track=\"39\">在这个共识之下，真正决定一家公司位置的，不是叙事本身，而是谁先把技术落进客户的产线、拿到可验证的结果。</p>\n  <p data-track=\"40\">论芯选择的路径很明确：<strong>先在最痛的场景里证明自己，用结果建立信任，再向平台扩展</strong>。</p>\n  <p data-track=\"41\">验证是入口，平台是目标。</p>\n  <p data-track=\"42\">一个AI原生的、能够包住EDA工具链的平台，让芯片设计流程中每一个依赖人力经验的环节，逐步被系统化、自动化。从文档理解到验证生成，从验证到设计流程的更多节点，论芯要做的是一层一层地把AI能力铺进去。</p>\n  <p data-track=\"43\">这件事没有捷径，只能一个场景一个场景磨出来。论芯已经磨出了第一个。</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "论芯科技通过「知识图谱 + LLM」技术路径，实现了芯片协议文档到验证代码的自动化生成，在实际产线中提效 25 倍并能精准识别关键缺陷。",
+  "oneSentenceSummary": "论芯科技通过「知识图谱 + LLM」技术路径，实现了芯片协议文档到验证代码的自动化生成，在实际产线中提效 25 倍并能精准识别关键缺陷。",
+  "summary": "本文深度解析了论芯科技在 AI for EDA 领域的落地实践。针对芯片验证中「读文档、写代码」的效率瓶颈，论芯开发了一套自动化系统，能够将数百页的芯片协议（Spec）直接转化为可执行的验证产物。技术上，该系统超越了简单的 RAG 模式，构建了能适应复杂协议的动态知识图谱，并以大语言模型作为推理引擎，解决了信息分散和逻辑交叉的难题。在客户真实项目中，该系统不仅实现了 25 倍于资深专家的处理速度，还成功揪出了足以导致流片失败（respin）的重大 Bug，证明了 AI 在高门槛工业软件领域的工程化价值。",
+  "mainPoints": [
+    {
+      "point": "攻克芯片验证中最耗时的「读文档」环节，实现自动化闭环。",
+      "explanation": "系统能够解析复杂的芯片协议文档，自动生成覆盖模型、测试平台和测试 pattern，将原本需数周的人工工作缩短至小时级。"
+    },
+    {
+      "point": "采用「知识图谱 + LLM」架构，解决 RAG 在复杂工程中的局限。",
+      "explanation": "针对芯片 Spec 信息高度分散且存在跨模块依赖的特点，利用知识图谱进行结构化关联，再由 LLM 进行逻辑推理，确保生成代码的严谨性。"
+    },
+    {
+      "point": "在真实产线中验证了 AI 工具的「respin 级」发现能力。",
+      "explanation": "系统在实际任务中识别出导致流片失败的关键 Bug 和上百条时序违例，证明其理解深度已达到甚至超过资深专家水平。"
+    }
+  ],
+  "keyQuotes": [
+    "拿到一份芯片协议文档，自动输出可用的验证代码。",
+    "AI for EDA 最大的问题不是模型不够强，而是做方法论的人不懂业务场景，做业务的人没有足够的方法论储备。",
+    "我们不是在做一个 AI 模型，是在做一个能嵌入工程师工作流的工具。模型是引擎，但引擎不是汽车。",
+    "验证是入口，平台是目标。"
+  ],
+  "tags": [
+    "AI for EDA",
+    "芯片验证",
+    "知识图谱",
+    "大语言模型",
+    "论芯科技"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 85,
+  "wordCount": 1962,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774747659000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-29 01:27:39"
+}

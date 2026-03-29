@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8c38ee32",
+  "title": "ProxySQL 推出多层发布策略，包含稳定版、创新版和 AI 版",
+  "url": "https://www.infoq.com/news/2026/03/proxysql-multi-tier-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-29 07:03:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://www.proxysql.com/blog/announcing-proxysql-3-0-6-multi-tier-release-strategy\">ProxySQL 3.0.6 was recently released</a>, along with a new multi-tier release strategy. The Stable Tier focuses on reliability and production use, the Innovative Tier introduces newer features earlier, and the AI/MCP Tier explores future capabilities, including AI integrations.</p>\n   <p><a href=\"https://www.linkedin.com/in/renecannao/\">René Cannaò</a>, founder and CEO at ProxySQL, writes:</p>\n   <blockquote>\n    <p>As ProxySQL has grown to power some of the world’s most demanding database infrastructures, our community’s needs have diversified. Some users require absolute, \"boring\" stability for mission-critical production environments. Others are eager to leverage the latest advancements in observability and Generative AI.</p>\n   </blockquote>\n   <p>Version 3.0.6 mainly improves PostgreSQL support and is recommended for most production deployments. The <a href=\"https://github.com/sysown/proxysql/releases/tag/v3.1.6\">Innovative Tier</a> (3.1.x) targets early adopters and introduces new observability features such as an embedded time series database and a traffic observer for deeper insight into database traffic. The <a href=\"https://github.com/sysown/proxysql/releases/tag/v4.0.6\">AI/MCP Tier</a> (4.0.x) explores experimental capabilities, including native AI integrations and an MCP stack to enable more autonomous database management.</p>\n   <p>In a separate article, \"<a href=\"https://www.proxysql.com/blog/bringing-genai-to-every-mysql-instance-proxysql-v4-0\">Bringing GenAI to Every MySQL Instance: ProxySQL v4</a>\", <a href=\"https://www.linkedin.com/in/ronaldbradford\">Ronald Bradford</a>, CTO at ProxySQL, writes:</p>\n   <blockquote>\n    <p>Teams want RAG pipelines and natural language querying, but adding AI capabilities typically means schema migrations, new vector database infrastructure, dual-write synchronization headaches, and AI logic sprawled across every application layer. (...) ProxySQL v4.0 takes a different approach: (...) put the intelligence at the proxy layer, not in the database or the application.</p>\n   </blockquote>\n   <p>ProxySQL is an open source proxy that manages database traffic with features such as load balancing and query routing. It is released under the GNU GPL v3 license, with additional enterprise features available under a commercial license from the project's company. <a href=\"https://www.percona.com/blog/setup-proxysql-for-high-availability-not-single-point-failure/\">Historically popular</a> in the MySQL and MariaDB communities, ProxySQL has <a href=\"https://www.reddit.com/r/PostgreSQL/comments/1gbuqyh/proxysql_now_supports_postgresql/\">since 2024 added support for PostgreSQL</a>, a move that has received <a href=\"https://news.ycombinator.com/item?id=46887893\">positive reactions</a> from the community.</p>\n   <p><a href=\"https://github.com/sysown/proxysql/releases/tag/v3.0.6\">ProxySQL 3.0.6</a> improves PostgreSQL support with advanced query logging and better compatibility, strengthens authentication reliability, enhances monitoring with clearer Prometheus metrics, and expands platform support to include macOS. Discussing the improvements in the latest stable release, Cannaò adds:</p>\n   <blockquote>\n    <p>We’ve introduced native support for tracking replication lag on PostgreSQL backends. This allows ProxySQL to make more intelligent routing decisions based on real-time data freshness (...) We are continuing our journey to make ProxySQL a first-class citizen for the PostgreSQL ecosystem.</p>\n   </blockquote>\n   <p>While ProxySQL is the most popular MySQL-aware proxy, with <a href=\"https://www.mysql.com/products/enterprise/router.html\">MySQL Router</a> and <a href=\"https://mariadb.com/docs/maxscale/\">MariaDB MaxScale</a> as other common choices, <a href=\"https://www.pgbouncer.org/\">PgBouncer</a> is the most commonly used for PostgreSQL workloads, with <a href=\"https://github.com/postgresml/pgcat\">PgCat</a> and <a href=\"https://www.pgpool.net/docs/latest/en/html/\">Pgpool-II</a> as other popular options.</p>\n   <p>Cannaò presented the session \"<a href=\"https://blogs.oracle.com/mysql/prefosdem-mysql-belgian-days-2026-recap-real-world-ops-new-features-and-rockstar-moments\">Bringing GenAI to every MySQL Instance</a>\" at Pre-FOSDEM MySQL Belgian Days 2026 in Brussels.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"ProxySQL Introduces Multi-Tier Release Strategy With Stable, Innovative, and AI Tracks\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/proxysql-multi-tier-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774767780000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "ProxySQL 推出了一项全新的三层发布策略（稳定版、创新版和 AI/MCP 版），旨在平衡生产环境的可靠性与先进的可观测性及原生生成式 AI 集成。",
+  "oneSentenceSummary": "ProxySQL 推出了一项全新的三层发布策略（稳定版、创新版和 AI/MCP 版），旨在平衡生产环境的可靠性与先进的可观测性及原生生成式 AI 集成。",
+  "summary": "ProxySQL 宣布发布 3.0.6 版本，并同步转向多层发布模式，以满足多样化的基础设施需求。稳定版（3.0.x）优先考虑关键任务的可靠性，并通过原生复制延迟跟踪等功能增强了对 PostgreSQL 的支持。创新版（3.1.x）通过嵌入式时序数据库和流量观察器引入了先进的可观测性。最值得注意的是，AI/MCP 版（4.0.x）探索了原生生成式 AI 集成和模型上下文协议（MCP），旨在将 AI 逻辑集中在代理层，从而在无需修改应用程序或数据库架构的情况下，简化 RAG 流水线和自然语言查询。",
+  "mainPoints": [
+    {
+      "point": "ProxySQL 采用分层发布策略，以满足不同的稳定性和创新需求。",
+      "explanation": "通过将发布版本拆分为稳定版、创新版和 AI/MCP 版，该项目能够在保持生产环境核心稳固的同时，快速迭代 AI 和高级监控等实验性功能。"
+    },
+    {
+      "point": "在代理层集成 AI 简化了数据库工作流中生成式 AI 功能的实现。",
+      "explanation": "将智能移至代理层避免了复杂的架构迁移和双写同步问题，允许在不改变底层数据库或应用程序逻辑的情况下，实现集中式的 RAG 流水线和自然语言查询。"
+    },
+    {
+      "point": "原生 PostgreSQL 支持正在成为 ProxySQL 生态系统中的一等公民。",
+      "explanation": "最近的更新包括高级查询日志记录、改进的 Prometheus 指标以及针对 PostgreSQL 后端的原生复制延迟跟踪，这使 ProxySQL 成为像 PgBouncer 这样专用代理的强大、多协议替代方案。"
+    }
+  ],
+  "keyQuotes": [
+    "“一些用户需要关键任务生产环境具备绝对的、‘无聊的’稳定性。而另一些用户则渴望利用可观测性和生成式 AI 的最新进展。”",
+    "“ProxySQL v4.0 采取了不同的方法：（……）将智能置于代理层，而不是数据库或应用程序中。”",
+    "“我们引入了对 PostgreSQL 后端复制延迟跟踪的原生支持。这使得 ProxySQL 能够根据实时数据的新鲜度做出更智能的路由决策。”"
+  ],
+  "tags": [
+    "ProxySQL",
+    "数据库代理",
+    "PostgreSQL",
+    "MySQL",
+    "生成式 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 421,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774767780000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-29 07:03:00"
+}

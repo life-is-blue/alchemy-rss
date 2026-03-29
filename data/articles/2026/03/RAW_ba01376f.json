@@ -1,0 +1,57 @@
+{
+  "id": "RAW_ba01376f",
+  "title": "苹果优化其基础模型的上下文窗口管理能力",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280184&idx=4&sn=a43e5eaf00a9ef3cd6061093fee4c918",
+  "date": "2026-03-29 02:16:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Sergio De Simone </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 明知山 </span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">iOS 26.4 已推出候选版本，针对 Apple 基础模型优化了上下文窗口管理能力，帮助开发者应对 4096 Token 的上下文限制。这要求开发者将上下文窗口视作一种受限资源，像在低资源环境中管理内存一样进行主动管理，从而提升使用效率。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">与大多数大语言模型一致，上下文窗口是承载系统指令、用户提示词与模型回复的核心资源。由于 Apple 基础模型采用端侧运行，其可用上下文窗口相对有限，极易被占满；尤其在对话类会话场景中，用户提问与模型回复会持续累积，进一步加剧资源占用。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">在这种情况下，框架会抛出&nbsp;</span><code><span leaf=\"\">.exceededContextWindowSize</span></code><span leaf=\"\">&nbsp;错误，模型将无法在当前会话中继续做出响应。若要恢复正常交互，开发者需要新建会话并重新初始化状态，从而在不影响用户体验的前提下顺畅延续原有工作流程。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">在此前的 技术说明 中，Apple 梳理了开发者主动应对上下文窗口限制的实用策略，例如：将复杂任务拆分为多轮模型会话、引导模型生成更精简的回复、通过摘要压缩或保留核心对话轮次来精简提示词，以及高效合理地调用工具。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">为便于开发者监控上下文窗口占用情况，iOS 26.4 在&nbsp;</span><code><span leaf=\"\">SystemLanguageModel</span></code><span leaf=\"\">&nbsp;中新增了 contextSize 属性，用于返回可用上下文容量；同时提供了 tokenCount(for:)) 方法，可计算指定输入所消耗的 Token 数量。尽管当前上限为 4096 Token，但&nbsp;</span><code><span leaf=\"\">contextSize</span></code><span leaf=\"\">&nbsp;可避免开发者硬编码该上限，而&nbsp;</span><code><span leaf=\"\">tokenCount(for:)</span></code><span leaf=\"\">&nbsp;则提供了基础的 Token 统计能力，让应用能够实现动态调整。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">即便能够获知上下文窗口大小并统计 Token 消耗，仍无法完全解决开发中的痛点，因为精细化管理 Token 开销并非易事。在一篇实操文章中，Artem Novichkov 提出了一套行之有效的解决方案。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Artem 指出，开发者需要考量构成上下文的所有组件，包括系统提示词与用户指令，同时还需要留意工具调用对上下文窗口占用带来的影响——这一点往往容易被忽视：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">调用工具时，工具定义（名称、描述及参数结构）会被序列化，并随指令一同传入上下文，这会显著增加 Token 消耗。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">请注意，Artem 在文中提及的&nbsp;</span><code><span leaf=\"\">tokenUsage(for:)</span></code><span leaf=\"\">&nbsp;方法在最新候选版中已更名为&nbsp;</span><code><span leaf=\"\">tokenCount(for:)</span></code><span leaf=\"\">。他同时指出，基础模型框架中的这些新增接口均标注了 @backDeployed(before: iOS 26.4, macOS 26.4, visionOS 26.4)，因此可在所有支持该框架的旧系统版本上使用。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/03/apple-foundation-models-context/\" target=\"_blank\">https://www.infoq.com/news/2026/03/apple-foundation-models-context/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "iOS 26.4 候选版通过新增 contextSize 和 tokenCount 接口，优化了 Apple 端侧基础模型的上下文窗口管理，助力开发者应对 4096 Token 的资源限制。",
+  "oneSentenceSummary": "iOS 26.4 候选版通过新增 contextSize 和 tokenCount 接口，优化了 Apple 端侧基础模型的上下文窗口管理，助力开发者应对 4096 Token 的资源限制。",
+  "summary": "本文介绍了 iOS 26.4 候选版本中针对 Apple 端侧基础模型上下文窗口管理的重大更新。由于端侧模型运行资源受限（上限 4096 Token），开发者常面临 .exceededContextWindowSize 错误。新版本在 SystemLanguageModel 中引入了 contextSize 属性和 tokenCount(for:) 方法，使应用能动态监控 Token 消耗，避免硬编码上限。文章还分享了主动管理策略，如任务拆分、摘要压缩及工具调用优化，并强调了工具定义序列化对 Token 的隐性占用。此外，这些新接口支持 @backDeployed，可兼容旧版系统。",
+  "mainPoints": [
+    {
+      "point": "iOS 26.4 引入新接口以实现 Token 消耗的动态量化。",
+      "explanation": "通过 SystemLanguageModel 的 contextSize 和 tokenCount(for:) 接口，开发者可以实时监控上下文占用，无需硬编码 4096 Token 的上限。"
+    },
+    {
+      "point": "端侧模型需采取类似内存管理的主动 Token 管理策略。",
+      "explanation": "由于端侧资源极易占满，开发者需通过任务拆分、精简回复、摘要压缩或保留核心对话轮次等方式主动优化上下文。"
+    },
+    {
+      "point": "工具调用对上下文窗口的隐性占用不容忽视。",
+      "explanation": "调用工具时，其名称、描述及参数结构的序列化信息会随指令传入，显著增加 Token 消耗，这是开发者易忽略的痛点。"
+    },
+    {
+      "point": "新接口支持向后部署，提升了开发适配的灵活性。",
+      "explanation": "新增接口标注了 @backDeployed，意味着开发者可以在支持该框架的旧版 iOS、macOS 和 visionOS 上直接使用这些新功能。"
+    }
+  ],
+  "keyQuotes": [
+    "开发者需要将上下文窗口视作一种受限资源，像在低资源环境中管理内存一样进行主动管理，从而提升使用效率。",
+    "调用工具时，工具定义（名称、描述及参数结构）会被序列化，并随指令一同传入上下文，这会显著增加 Token 消耗。",
+    "基础模型框架中的这些新增接口均标注了 @backDeployed(before: iOS 26.4， macOS 26.4， visionOS 26.4)，因此可在所有支持该框架的旧系统版本上使用。"
+  ],
+  "tags": [
+    "Apple",
+    "iOS 26.4",
+    "端侧 AI",
+    "上下文窗口",
+    "Token 管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 81,
+  "wordCount": 845,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774750560000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-29 02:16:00"
+}
