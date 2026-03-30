@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-30 22:30:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 00:20:06 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3427,17 +3427,13 @@
 
 ### [极佳视界发布具身世界模型-GigaWorld-1：WorldArena-评测登顶全球第一](https://www.qbitai.com/2026/03/393296.html)
 
-2026-03-30 03:55:06 | 标签: 世界模型, 具身智能, GigaWorld-1, 极佳视界, WorldArena
-
-> 本文报道了国产 AI 创业公司极佳视界（GigaAI）推出的具身世界模型 GigaWorld-1。该模型在由清华大学等 8 所顶尖高校联合打造的 WorldArena 权威榜单中超越谷歌和英伟达，位列全球第一，成为首个综合得分突破 60 分的具身世界模型。GigaWorld-1 采用动作控制世界模型（AC-WM）架构，通过显式动作建模和可微分物理引擎，解决了视频生成的几何一致性与物理真实性难题。文章还介绍了极佳视界「世界模型×具身大脑」的双轮驱动战略、近期获得的 10 亿元融资情况，以及由清华系领衔的核心团队背景。目前，该模型的核心代码与部分数据集已在 HuggingFace 和 GitHub...
+2026-03-30 03:55:06
 
 
 
 ### [ICLR-2026-|-让多模态模型学会主动说话：主动交互从训练到评估的完整方案](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024564&idx=2&sn=35264986836dd290aa3618d110aaeb85)
 
-2026-03-30 01:34:00 | 标签: 多模态大模型, 主动交互, 视频问答, 强化学习, ICLR 2026
-
-> 文章深入探讨了视频多模态大模型（MLLM）从「被动响应」向「主动交互」转型的技术路径。针对现有模型无法自主判断回复时机的问题，北京大学王选所团队提出了 ProactiveVideoQA 基准测试，并引入 PAUC 指标以兼顾回复的及时性与准确性。在训练侧，MMDuet2 模型通过构建 52k 条主动交互对话数据，并采用基于 GRPO 的多轮强化学习算法，使模型在无需精确时间标注的情况下，学会根据视频内容自主决定何时发起回复。实验证明，该方案在保持通用视频理解能力的同时，显著提升了主动交互的性能，为智能助手、监控管理等实时应用场景提供了完整的方法论支撑。
+2026-03-30 01:34:00
 
 
 
@@ -12005,25 +12001,19 @@
 
 ### [我们准备好迎接像-Log4Shell-那样的下一次网络安全危机了吗？](https://www.infoq.com/presentations/cyber-security-log4shell/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-30 12:18:00 | 标签: 网络安全, 供应链攻击, Log4Shell, SBOM, DevSecOps
-
-> 解决方案架构师 Soroosh Khodami 警告称，大多数组织仍未为下一次重大网络安全危机做好准备。通过演示由简单的 Maven 和 npm 命令触发的反向 Shell，他展示了“依赖混淆”（dependency confusion）和受损的构建环境如何让黑客获得未经授权的访问权限。文章概述了一套全面的防御策略，分为关键（版本锁定、lock-files）、必要（使用 Trivy 等工具进行自动化扫描、生成 SBOM）和高级（依赖防火墙、制品签名）三个层面。其核心论点强调，维护一个可查询的软件物料清单（SBOM）数据库，是实现真正韧性并在大规模漏洞事件中快速响应的唯一途径。
+2026-03-30 12:18:00
 
 
 
 ### [自动驾驶中的优化：从复杂性到实时工程](https://www.infoq.com/articles/optimization-in-automated-driving/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-30 11:00:00 | 标签: 自动驾驶, 模型预测控制, 实时系统, ROS 2, 传感器融合
-
-> 本文深入探讨了生产级自动驾驶（AV）软件栈的工程复杂性。文章将自动驾驶系统构建为一个分布式数据流图（通常基于 ROS 2 和 DDS），其核心挑战在于管理延迟、带宽和计算约束。涵盖的关键技术领域包括：上下文感知（Context-aware）的感知优化，即根据环境（高速公路与城市道路）动态调整传感器优先级；利用模型预测控制（MPC）进行轨迹规划，在遵守安全走廊的前提下最小化成本函数；以及实施确定性调度和延迟预算，以确保实时响应能力。最后，文章强调了结构化数据记录（Protobuf/MCAP）对于系统可解释性和调试的重要性。
+2026-03-30 11:00:00
 
 
 
 ### [Java-新闻汇总：GraalVM-Build-Tools、EclipseLink、Spring-里程碑版本、Open-Liberty、Quarkus](https://www.infoq.com/news/2026/03/java-news-roundup-mar23-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-30 02:30:00 | 标签: Java, Spring Boot, GraalVM, Jakarta EE, EclipseLink
-
-> 本期 Java 新闻汇总涵盖了截至 2026 年 3 月底的重要生态系统更新。主要亮点包括 GraalVM Native Build Tools 1.0.0 和 EclipseLink 5.0.0 的正式发布（GA），后者引入了对 Jakarta Persistence 3.2 的支持。Spring 生态系统迎来了 Spring Boot 4.1.0、Spring Modulith 2.1.0 和 Spring AI 2.0.0 的第四个里程碑版本，其特色包括增强的 gRPC 可观测性以及 Gemini 3 模型集成。此外，报告还提到了 JDK 27 早期访问版本的进展、GlassFish 8...
+2026-03-30 02:30:00
 
 
 
@@ -31599,11 +31589,11 @@
 
 
 
-### [驾驭工程：在「智能体优先」的世界里借力-Codex](https://baoyu.io/translations/2026-02-12/harness-engineering)
+### [92.6%-开发者每月使用-AI-编码助手，但每周节省时间只有-4-小时](https://baoyu.io/blog/2026-02-25/laura-tacho-ai-pragmatic-summit)
 
-2026-02-26T00:00:00.000Z
+2026-02-25T00:00:00.000Z
 
-> OpenAI 团队分享了用 Codex 智能体从零构建百万行代码产品的经验：0 行人工代码，3 名工程师处理 1500 个 PR，完成时间仅为手工编码的十分之一。
+> DX 公司 CTO Laura Tacho 在 Pragmatic Summit 上公布了 12 万开发者、450 家公司的最新基准数据。AI 采用率已达 92.6%，但每周节省时间卡在 4 小时不动。更关键的发现是：同样的 AI 工具，有些公司事故减半，有些事故翻倍。差别不在工具，在组织本身。
 
 
 
