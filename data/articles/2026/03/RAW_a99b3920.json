@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a99b3920",
+  "title": "Claude 辅助开发的开源 3D 建筑编辑器 Pascal Editor 深度解析",
+  "url": "https://www.qbitai.com/2026/03/393125.html",
+  "date": "2026-03-29 16:08:53",
+  "author": "梦瑶",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"147\">梦瑶 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"148\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"76\">什么AutoCAD，什么Revit，什么动辄三五万的建筑软件订阅费！！！</p>\n  <p data-track=\"77\">如果现在有这么个东西：</p>\n  <p data-track=\"78\">不用装软件，不用花钱买，直接打开浏览器，就能像玩网页游戏一样做<strong>3D建筑设计</strong>呢？</p>\n  <p data-track=\"79\">想切换视角？直接点击工具栏，俯视、左右视角，360度随便切换！甚至连透视效果也都安排上了，be like：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_6dce8f373b5ca986dba7becef5c01957.gif\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"80\">至于编辑？在这里，你可以直接选择家居、框选区域、实时调整空间布局，点个鼠标的功夫就完事儿了：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_75f31aa5184e6db1620a73339279b110.gif\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"81\">甚至呢，你还能实现建筑物的拖拽拉伸，左边的菜单栏还会实时数据显示，而且是能直接编辑数据的内种：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_0b3f922f4cafcb2b946962366bd8a4b8.gif\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"82\">这，就是在GitHub上上线没几天就冲到5.4k stars的3D建筑编辑器开源项目——<strong>Pascal Editor</strong>。</p>\n  <p data-track=\"83\">而且，是用Claude写出来的。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_8d85927496b9f8c331c6bacc24a255c1.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"84\">咋说呢， 以前想做设计，先花钱买软件，现在，打开网页，直接开干！！！</p>\n  <p data-track=\"85\">我猜，想省力的室内设计师笑了，游戏场景爱好者笑了，估计连房产中介也要偷偷乐了……</p>\n  <p data-track=\"87\">设计软件咱见的不少，但跑在浏览器里的还是有点新鲜，我帮大家浅浅总结了一下Pascal Editor的一些核心亮点：</p>\n  <ul>\n   <li data-track=\"88\"><strong>浏览器就能用：</strong>纯Web应用，直接在浏览器里打开就能使用，高性能WebGPU渲染，蛮接近原生体验。</li>\n   <li data-track=\"89\"><strong>强大编辑能力：</strong>自带选区域、放家具、画楼板等多种专业工具，鼠标一点就能直接操作。</li>\n   <li data-track=\"90\"><strong>实时高效的几何系统：</strong>所有建筑部件都是按真实层级分层处理的，想改哪里就改哪里～</li>\n   <li data-track=\"91\"><strong>免费免费免费，开源开源开源。</strong></li>\n  </ul>\n  <p data-track=\"92\">话不多说，产品到底咋样，咱们直接从产品里开唠～</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_030b48c2b78204c095035ac70e432da6.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"93\">先来说说大家最关心的<strong>「编辑能力」</strong>。</p>\n  <p data-track=\"94\">值得一提的是，在Pascal Editor里，像设计中最常用的选择、墙体、区域、视角、装置这些工具都被整合在了一起。</p>\n  <p data-track=\"95\">至于工具栏的呈现形式嘛，可以说是非常之简！单！粗！暴！</p>\n  <p data-track=\"96\">看到下面这条工具看了没，我们想用哪项能力，直接点下鼠标键就好…</p>\n  <p data-track=\"97\">（像极了咱小时候玩的室内设计小游戏）</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_9111414ee3dc8cf08080b015a3ffca17.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"98\">这会儿有uu该说了：就这么十几个编辑能力哪儿够用啊？？</p>\n  <p data-track=\"99\">这么看的话当然不够用了，事实上在咱们看到的这个工具条中里，还藏着更多的细分能力。</p>\n  <p data-track=\"100\">比如第二个「build」模块，里面就内置了很多建筑体，我们能直接把合适的建筑模型一键添加到场景中，随取随用：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_87bd8c251086d6cc40b3d7d1b2d41ba6.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"101\">所以，我们也不难得出一个结论：</p>\n  <p data-track=\"102\">Pascal Editor的逻辑是把所有功能都先整合在一条工具条里，再像套娃一样，点进每个主工具，还能继续选择更精细的子功能，操作一层套一层。</p>\n  <p data-track=\"103\">所以你在页面观感上会觉得产品非常之简洁，但该有的基本能力人家还一个不少？？？</p>\n  <p data-track=\"104\">言归正传，除了基础的编辑外，一些朋友在设计工作中还有一项绕不开的场景，那就是——<strong>「参数调整」</strong>。</p>\n  <p data-track=\"105\">毕竟在设计的时候建筑体一多、细节一复杂，数值调整就会越来越频繁！！！</p>\n  <p data-track=\"106\">而在Pascal Editor中，我们可以过拖拽「数值条」去改变建筑的长宽高。</p>\n  <p data-track=\"107\">比如像下面这样，一拖一拽就OK，墙体就会实时跟着参数调整变化，完全不需要手动输入数值（懒人福音）：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_5e83a52ea7e33dc507e15eff6ee7930f.gif\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"108\">咱再来唠唠<strong>「画面显示」</strong>层面的相关能力。</p>\n  <p data-track=\"109\">在Pascal Editor中，每个建筑结构自带清晰的层级关系，墙体隶属于楼层、楼层归属于整栋建筑，建筑体是独立开的。</p>\n  <p data-track=\"110\">这样一来的好处是，我们可以单独控制任意一个构件的显示与隐藏，也能为其添加自定义信息。</p>\n  <p data-track=\"111\">不仅如此，在具体的楼层显示模式上，产品还支持堆叠、爆炸视图等视觉效果。</p>\n  <p data-track=\"112\">比如像下面这样，我可以直接让墙面变消失，方便用户能直接对房间布局视觉效果，be like：</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_0bbc3e7a47d5726cf8272065cd119192.gif\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"113\">好巧不巧，就在昨天刚更新的v0.3.0版本里，官方又对这套「基础编辑」能力做了亿点点升级改造——</p>\n  <p data-track=\"114\">正式加入了<strong>2D编辑</strong>功能，实现了2D和3D无缝联动。</p>\n  <p data-track=\"115\">大家可以在主界面保留3D视角的同时，旁边同步显示2D平面小窗口，两个视角对照着看、对着改，布局更精准～</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_7f8bc45ee5462d9c0146dd3954443308.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"116\">从上面的实际效果，友友们也不难看出，虽然说是在浏览器里跑，但是实际操作起来还是蛮丝滑的…</p>\n  <p data-track=\"117\">事实上，人家开发者在「技术架构」这事儿在下了些功夫。</p>\n  <p data-track=\"118\">Pascal Editor核心采用的是<strong>WebGPU </strong>——目前浏览器里能调用电脑显卡的最先进、最快的技术。</p>\n  <p data-track=\"119\">说的更直白一点就是，有了这一层支持之后，就算是搭一个结构稍微复杂一点的别墅，拖墙体、切楼层、实时渲染这些操作，也几乎不存在啥卡顿问题，整体体验会更接近本地软件一点。</p>\n  <p data-track=\"120\">（但咱们自己关上门说，要是真和特专业的建筑设计软件放一块儿，Pascal Editor当然多少还是有点相形见拙..)</p>\n  <p data-track=\"121\">但架不住人家免费、没有授权成本，打开网页就能用啊！！！</p>\n  <p data-track=\"122\">用来满足一些日常的基础操作还是可以的，感兴趣的朋友可以试试～</p>\n  <p data-track=\"124\">除了产品本身，大家的另一个热门关注点则是「Claude」本身。</p>\n  <p data-track=\"125\">事实上，Claude最近一阵在真实应用的落地成果还不止于此，甚至还扩展到了——游戏开发。</p>\n  <p data-track=\"126\">就在这几天，一个基于Claude的开源项目在GitHub上迅速走红——<strong>Claude-Code-Game-Studios</strong>。</p>\n  <p data-track=\"127\">我们可以把它理解一个虚拟的「游戏开发工作室」。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_54d450b5e775b73594bd3720f359b78f.jpeg\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"128\">在这个工作室的具体会话中，内置了超多个最强Agent辅助——</p>\n  <p data-track=\"129\">包括创意总监、技术总监、制作人、QA主管、叙事总监、关卡设计师、经济系统设计师等共48个专业AI Agent。</p>\n  <p data-track=\"130\">大家也不是吃闲饭，这些AI Agent按照真实游戏工作室的层级清晰分工，从高层决策到具体执行都有专人负责，帮你干活儿搞游戏开发。</p>\n  <div class=\"pgc-img\">\n   <p><img decoding=\"async\" src=\"https://image.jido.dev/20260329173507_3172f11bb02f5531e1fa945f0106d19e.webp\"></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"131\">此外，这套 Agent 已经细分到了「专家」级别。</p>\n  <p data-track=\"132\">比如Godot 4的GDScript和 Shader专家、Unity的DOTS/ECS以及Addressables专家等等，这些专家能够让开发者在实际编码和实现时能真正用得上。</p>\n  <p data-track=\"133\">但整个产品最巧妙的地方在于——</p>\n  <p data-track=\"134\"><strong>所有的Agent并没有最终的决策权，最后拍板的人，依旧是你。</strong></p>\n  <p data-track=\"135\">（有被爽到…)</p>\n  <p data-track=\"136\">咋说呢，以前做一个工作室，至少得组一支十几二十人的团队。</p>\n  <p data-track=\"137\">现在呢，一个人直接开工作室，48个顶尖人才随叫随到。</p>\n  <p data-track=\"138\">成本直接干到地板价！（doge）</p>\n  <p data-track=\"139\">游戏打工人，瑟瑟发抖了吗？</p>\n  <p data-track=\"140\">参考链接：</p>\n  <p data-track=\"141\">[1]Pascal Editor-Github网址：https://github.com/pascalorg/editor</p>\n  <p data-track=\"142\">[2]Pascal Editor在线网站：https://editor.pascal.app/editor/project_NJFrd0ThYzUZtiui</p>\n  <p data-track=\"143\">[3]Claude-Code-Game-Studios：https://github.com/Donchitos/Claude-Code-Game-Studios</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文介绍了由 Claude 辅助开发的开源 3D 建筑编辑器 Pascal Editor，该项目基于 WebGPU 技术实现高性能浏览器端建模，展示了 AI 在复杂垂直领域应用开发中的巨大潜力。",
+  "oneSentenceSummary": "本文介绍了由 Claude 辅助开发的开源 3D 建筑编辑器 Pascal Editor，该项目基于 WebGPU 技术实现高性能浏览器端建模，展示了 AI 在复杂垂直领域应用开发中的巨大潜力。",
+  "summary": "文章重点推介了在 GitHub 上迅速走红的开源项目 Pascal Editor。这是一个几乎完全由 Claude 辅助编写的 Web 端 3D 建筑编辑器，利用 WebGPU 技术实现了接近原生软件的高性能渲染体验。该工具支持实时 3D 建模、家具布置、参数化调整以及 2D/3D 联动编辑，且具备清晰的建筑层级管理系统。此外，文章还延伸介绍了 Claude-Code-Game-Studios 项目，展示了如何通过 48 个专业 AI Agent 模拟真实游戏工作室工作流，反映了 AI 辅助编程正从基础代码片段生成向复杂系统架构和垂直行业解决方案演进的趋势。",
+  "mainPoints": [
+    {
+      "point": "Pascal Editor 证明了 AI 具备辅助开发复杂 Web 3D 应用的能力。",
+      "explanation": "该项目并非简单的脚本堆砌，而是利用 WebGPU 等前沿技术构建了完整的建筑编辑系统，展示了 LLM 在处理高性能图形编程和复杂交互逻辑上的进化。"
+    },
+    {
+      "point": "WebGPU 技术是实现 Web 端专业级工具性能的关键。",
+      "explanation": "通过直接调用硬件显卡加速，Pascal Editor 在浏览器中实现了流畅的实时渲染和大规模几何体操作，打破了 Web 应用性能弱于原生软件的传统认知。"
+    },
+    {
+      "point": "AI Agent 团队模式正在重塑复杂项目的开发门槛。",
+      "explanation": "文中提及的游戏开发工作室项目通过细分 48 个专家级 Agent，展示了 AI 如何在创意、技术、管理等多个维度提供全流程支持，显著降低了独立开发的成本。"
+    }
+  ],
+  "keyQuotes": [
+    "Pascal Editor 的逻辑是把所有功能都先整合在一条工具条里，再像套娃一样，点进每个主工具，还能继续选择更精细的子功能。",
+    "核心采用的是 WebGPU——目前浏览器里能调用电脑显卡的最先进、最快的技术。",
+    "所有的 Agent 并没有最终的决策权，最后拍板的人，依旧是你。"
+  ],
+  "tags": [
+    "Pascal Editor",
+    "Claude",
+    "WebGPU",
+    "3D 建模",
+    "AI 辅助编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 88,
+  "wordCount": 2452,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774800533000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-29 16:08:53"
+}

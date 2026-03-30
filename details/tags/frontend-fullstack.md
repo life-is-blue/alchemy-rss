@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-30 06:05:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-30 08:12:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -486,6 +486,14 @@
 
 
 
+### [Pretext](https://simonwillison.net/2026/Mar/29/pretext/#atom-everything)
+
+2026-03-29 20:08:45 | 标签: 浏览器性能, 文本布局, 前端工程, JavaScript 库, DOM 优化
+
+> Simon Willison 介绍了 Pretext，这是一个由前 React 核心开发者 Cheng Lou 开发的专业浏览器库。该库解决了测量文本尺寸时的性能瓶颈，传统方法通常需要昂贵的 DOM 渲染。Pretext 通过将过程分为两个阶段来实现高性能：一个使用离屏 Canvas 测量文本片段并缓存结果的“prepare”函数，以及一个模拟浏览器自动换行逻辑以计算任意宽度下高度的“layout”函数。该库因其针对海量多语言语料库的严格测试而著称，确保了在各种书写系统和边缘情况下的准确性。
+
+
+
 ### [Holotron-12B---高吞吐量计算机使用智能体](https://huggingface.co/blog/Hcompany/holotron-12b)
 
 2026-03-17 12:37:15
@@ -618,6 +626,22 @@
 
 
 
+### [FOSDEM-2026：WebTransport-简介——下一个-WebSocket？！](https://www.infoq.com/news/2026/03/fosdem-webtransport-vs-websocket/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-03-29 20:53:00 | 标签: WebTransport, WebSockets, HTTP/3, QUIC, 网络协议
+
+> 本文总结了 Mozilla 的 Max Inden 在 FOSDEM 2026 上关于从 WebSocket 演进到 WebTransport 的演讲。虽然 WebSocket 在 2011 年彻底改变了双向通信，但其对 TCP 的依赖在云游戏和直播等现代用例中引入了显著的延迟和队头阻塞问题。WebTransport 基于 QUIC 和 HTTP/3 构建，支持可靠和不可靠流，支持 0-RTT 连接启动，并允许在网络之间（例如从 Wi-Fi 到蜂窝网络）进行透明的连接迁移。尽管有这些技术优势，开发者社区对其复杂性和本地开发所需的严格 HTTPS 要求仍持谨慎态度。
+
+
+
+### [Nuxt-Test-Utils-v4：强制要求-Vitest-v4，重构-Mock-机制并加强环境设置](https://www.infoq.com/news/2026/03/nuxt-test-utils-4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-03-29 15:49:00 | 标签: Nuxt, Vitest, 前端测试, Vue.js, Web 开发
+
+> Nuxt Test Utils v4.0.0 是一个重要的里程碑，它要求使用 Vitest v4，这推动了环境初始化架构的重大转变。最显著的变化是将设置从 `setupFiles` 移至 `beforeAll` 钩子，确保在 Nuxt 环境启动之前注册 Mock。这解决了在中间件中拦截组合式函数（composables）的长期问题，但要求开发者将顶层的组合式函数调用移至钩子内部，以避免实例错误。此版本还增强了 `mockNuxtImport` 以实现更简洁的部分 Mock，解决了 `registerEndpoint` 中的状态管理漏洞，并对 happy-dom 和 jsdom 等工具实施了更严...
+
+
+
 ### [实验性-Web-Install-API-旨在改善应用程序的发现与分发](https://www.infoq.com/news/2026/03/web-install-api-origin-trial/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-03-27 22:50:00
@@ -696,13 +720,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -852,13 +876,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2352,13 +2376,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4062,13 +4086,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_0df11b71",
+  "title": "Nuxt Test Utils v4：强制要求 Vitest v4，重构 Mock 机制并加强环境设置",
+  "url": "https://www.infoq.com/news/2026/03/nuxt-test-utils-4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-29 15:49:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://github.com/nuxt/test-utils\">Nuxt Test Utils</a>, the official testing library for the Vue-based Nuxt framework, has released version 4.0.0, its first major release in the lifetime of the consolidated package. <a href=\"https://github.com/nuxt/test-utils/releases/tag/v4.0.0\">Published on February 7, 2026</a>, the release is built around a single dependency requirement: Vitest v4. That upgrade from the previously required Vitest v3 drives almost every significant change in the release, including architectural shifts to how test environments are initialised and how mocks are applied.</p>\n   <p>The most consequential change in v4.0.0 is that Nuxt's test environment setup has been moved from <code>setupFiles</code> to the <code>beforeAll</code> hook. In previous versions, this timing meant that <code>vi.mock</code> and <code>mockNuxtImport</code> calls couldn't reliably intercept composables used inside middleware or plugins, because those composables were often evaluated before mocks had taken effect. The change fixes a pair of long-standing issues in the repository, both filed by users reporting that module-level mocks were being silently ignored. With setup deferred to <code>beforeAll</code>, mocks are registered before Nuxt starts, making mock behaviour consistent and predictable across the test suite.</p>\n   <p>This does carry a migration cost. Code that calls Nuxt composables at the top level of a <code>describe</code> block, such as <code>useRouter()</code> or <code>useNuxtApp()</code>, will now throw <code>[nuxt] instance unavailable</code> because the environment is not yet initialised at that point. The fix is to move those calls inside <code>beforeAll</code>:</p>\n   <p>&nbsp;</p>\n   <pre>\r\n<code class=\"language-tsx language-typescript\">describe('router test', () =&gt; {\r\n let router: ReturnType&lt;typeof useRouter&gt;\r\n beforeAll(() =&gt; {\r\n router = useRouter()\r\n })\r\n})\r\n</code></pre>\n   <p>&nbsp;</p>\n   <p>The second notable improvement is to <code>mockNuxtImport</code>, which now passes the original implementation to the factory function. This makes partial mocking substantially cleaner: instead of constructing a complete mock from scratch, tests can wrap or extend the real implementation and then narrow behaviour per-test.</p>\n   <p>Two targeted fixes round out the <code>registerEndpoint</code> utility. Endpoints registered inside setup files <a href=\"https://github.com/nuxt/test-utils/pull/1549\">were previously lost</a> when modules reset between tests; that state management gap has been closed. Additionally, <a href=\"https://github.com/nuxt/test-utils/pull/1560\">endpoints that include query parameters</a> in their URL patterns now match correctly, resolving a class of failures in tests using parameterised API paths.</p>\n   <p>A stricter approach to mock exports arrives as part of the Vitest v4 upgrade. Previously, accessing an export from a mocked module that the factory function did not explicitly return would silently yield <code>undefined</code>. Under Vitest v4 it throws instead. The recommended fix is to spread <code>importOriginal</code> into the factory return, making all original exports available by default and only overriding what the test needs.</p>\n   <p>Peer dependency requirements have been tightened across the board. <code>happy-dom</code> now requires version 20.0.11 or later, <code>jsdom</code> requires 27.4.0 or later, and <code>@jest/globals</code> drops support for versions below 30.0.0. <code>@cucumber/cucumber</code> now requires version 11 or later. Teams with pinned versions of these tools will need to update them alongside the Vitest v4 upgrade.</p>\n   <p>Nuxt Test Utils occupies a distinct space in the Vue testing landscape. While <code>@vue/test-utils</code> handles component-level unit testing in isolation, and Playwright or Cypress cover browser-based end-to-end scenarios, <code>@nuxt/test-utils</code> bridges both: it can spin up a full Nuxt application in a test environment, run server-side rendering checks, and mount components with the full Nuxt plugin and composable context in place.</p>\n   <p>Teams migrating from v3 can follow the official testing documentation at <a href=\"http://nuxt.com/docs/getting-started/testing\">nuxt.com/docs/getting-started/testing</a> alongside the <a href=\"https://github.com/nuxt/test-utils/releases/tag/v4.0.0\">v4.0.0 release notes</a>. Teams previously using the now-retired <code>nuxt-vitest</code> package can find the older consolidation migration steps in the <a href=\"https://github.com/nuxt/test-utils/issues/644\">GitHub migration issue</a>.</p>\n   <p>Nuxt Test Utils is an open-source library maintained by the Nuxt core team, led by <a href=\"https://roe.dev/\">Daniel Roe</a>, and is published under the MIT license. It accumulates over <a href=\"https://www.npmjs.com/package/@nuxt/test-utils\">470,000 weekly npm downloads</a> and is used across the Nuxt module ecosystem to provide consistent, framework-aware test coverage for application code and module authors alike.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Nuxt Test Utils v4: Vitest v4 Requirement, Mocking Overhaul and Stricter Environment Setup\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/nuxt-test-utils-4/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774799340000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Nuxt Test Utils v4.0.0 强制要求使用 Vitest v4，将环境设置移至 `beforeAll` 钩子以实现可靠的 Mock，并引入了对 Mock 导出项的更严格验证。",
+  "oneSentenceSummary": "Nuxt Test Utils v4.0.0 强制要求使用 Vitest v4，将环境设置移至 `beforeAll` 钩子以实现可靠的 Mock，并引入了对 Mock 导出项的更严格验证。",
+  "summary": "Nuxt Test Utils v4.0.0 是一个重要的里程碑，它要求使用 Vitest v4，这推动了环境初始化架构的重大转变。最显著的变化是将设置从 `setupFiles` 移至 `beforeAll` 钩子，确保在 Nuxt 环境启动之前注册 Mock。这解决了在中间件中拦截组合式函数（composables）的长期问题，但要求开发者将顶层的组合式函数调用移至钩子内部，以避免实例错误。此版本还增强了 `mockNuxtImport` 以实现更简洁的部分 Mock，解决了 `registerEndpoint` 中的状态管理漏洞，并对 happy-dom 和 jsdom 等工具实施了更严格的对等依赖版本要求。",
+  "mainPoints": [
+    {
+      "point": "强制升级 Vitest v4 及架构调整。",
+      "explanation": "此版本基于 Vitest v4 构建，需要更改测试环境的初始化方式以及在整个测试套件中应用 Mock 的方式。"
+    },
+    {
+      "point": "环境设置移至 `beforeAll` 钩子。",
+      "explanation": "此更改确保在 Nuxt 启动之前评估 Mock，从而允许在中间件和插件中可靠地拦截组合式函数，尽管这会破坏 `describe` 块中的顶层组合式函数调用。"
+    },
+    {
+      "point": "通过 `mockNuxtImport` 改进部分 Mock。",
+      "explanation": "该工具现在将原始实现传递给工厂函数，使开发者能够包装或扩展真实逻辑，而不是从头开始重新创建 Mock。"
+    },
+    {
+      "point": "更严格的 Mock 导出验证和更新的对等依赖。",
+      "explanation": "访问 Mock 模块中未定义的导出项现在会抛出错误，并且 happy-dom 和 jsdom 等对等依赖项已更新，要求使用更新的版本。"
+    }
+  ],
+  "keyQuotes": [
+    "v4.0.0 中最重要的变化是 Nuxt 的测试环境设置已从 setupFiles 移至 beforeAll 钩子。",
+    "将设置推迟到 beforeAll 后，Mock 会在 Nuxt 启动之前注册，使得 Mock 行为在整个测试套件中保持一致且可预测。",
+    "在 describe 块顶层调用 Nuxt 组合式函数的代码……现在会抛出 [nuxt] 实例不可用的错误，因为此时环境尚未初始化。",
+    "Nuxt Test Utils 弥合了两者：它可以在测试环境中启动完整的 Nuxt 应用程序……并挂载带有完整 Nuxt 插件和组合式函数上下文的组件。"
+  ],
+  "tags": [
+    "Nuxt",
+    "Vitest",
+    "前端测试",
+    "Vue.js",
+    "Web 开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 597,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774799340000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-29 15:49:00"
+}

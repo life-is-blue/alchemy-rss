@@ -1,0 +1,58 @@
+{
+  "id": "RAW_07be5a09",
+  "title": "Google 发布 AppFunctions，旨在连接 AI 智能体与 Android 应用",
+  "url": "https://www.infoq.com/news/2026/03/android-appfunctions-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-29 20:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>In a move to transform Android into an \"agent-first\" OS, <a href=\"https://android-developers.googleblog.com/2026/02/the-intelligent-os-making-ai-agents.html\">Google has introduced new early beta features to support a task-centric model</a> in which apps provide functional building blocks users leverage through AI agents or assistants to fulfill their goals.</p>\n   <p>The foundation for this new model is provided by <a href=\"https://developer.android.com/ai/appfunctions\">AppFunctions</a>, a Jetpack API that allows developers to expose self-describing capabilities within their apps for seamless integration with AI agents. By running on-device, these interactions offer improved privacy and faster performance by minimizing network latency.</p>\n   <blockquote>\n    <p>Mirroring how backend capabilities are declared via MCP cloud servers, AppFunctions provides an on-device solution for Android apps. Much like WebMCP, it executes these functions locally on the device rather than on a server.</p>\n   </blockquote>\n   <p>For example, a user might ask Gemini Assistant to \"Show me pictures of my cat from Samsung Gallery\". The assistant would interpret the user's request, retrieve the relevant photos, and present them in its own interface. Those images can then persist in context, allowing the user to reference them in follow-up requests, such as editing, sharing, or taking further action.</p>\n   <p>As not all apps will support AppFunctions, especially in this early stages, Google has also introduced an UI automation platform in Android that provides a fallback when apps aren't integrated. This automation layer makes it possible for users to \"place a complex pizza order for their family members with particular tastes, coordinate a multi-stop rideshare with co-workers, or reorder their last grocery purchase\" all through the Gemini Assistant without additional developer effort.</p>\n   <blockquote>\n    <p>This is the platform doing the heavy lifting, so developers can get agentic reach with zero code. It’s a low-effort way to extend their reach without a major engineering lift right now.</p>\n   </blockquote>\n   <p>In its announcement, Google emphasized that privacy and user control are central to the design of AppFunctions. All interactions are built for on-device execution with full user visibility through live view and/or notifications, the ability to manually override the agent's behavior, and mandatory confirmation required for sensitive actions such as purchases.</p>\n   <p>As noted, AppFunctions and the UI automation platform are still in early beta, currently available on the Galaxy S26 series, with a wider rollout of these features planned for Android 17.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Unveils AppFunctions to Connect AI Agents and Android Apps\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/android-appfunctions-agents/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774814400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"317\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 推出了 AppFunctions，这是一个 Jetpack API，使 Android 应用能够向 AI 智能体开放功能，以实现设备端任务执行，并辅以 UI 自动化作为备选方案。",
+  "oneSentenceSummary": "Google 推出了 AppFunctions，这是一个 Jetpack API，使 Android 应用能够向 AI 智能体开放功能，以实现设备端任务执行，并辅以 UI 自动化作为备选方案。",
+  "summary": "Google 正在通过引入 AppFunctions 和 UI 自动化平台，将 Android 系统向「智能体优先」的操作系统转型。AppFunctions 是一个 Jetpack API，允许开发者将应用功能作为自描述模块开放给 Gemini 等 AI 智能体进行本地调用。这种设备端方案通过最小化网络延迟，优先保障了隐私和速度。对于尚未进行原生集成的应用，全新的 UI 自动化层可作为备选方案，使智能体无需开发者额外工作，即可通过与现有应用 UI 交互来执行复杂任务，例如订餐或协调拼车。目前这些功能已在 Galaxy S26 上进行测试，计划在 Android 17 中进行更广泛的推广。",
+  "mainPoints": [
+    {
+      "point": "引入 AppFunctions 以实现智能体与应用的协同。",
+      "explanation": "一个新的 Jetpack API，让 Android 应用能够向 AI 智能体开放功能模块，使其能够无缝且以编程方式在应用内执行特定任务。"
+    },
+    {
+      "point": "基于设备端执行，兼顾隐私与性能。",
+      "explanation": "与基于云的解决方案不同，AppFunctions 在设备本地运行，这减少了网络延迟，并确保敏感的用户交互保持私密。"
+    },
+    {
+      "point": "作为零代码备选机制的 UI 自动化。",
+      "explanation": "对于尚未集成 AppFunctions API 的应用，Android 提供了一个平台级的自动化层，允许智能体导航应用 UI 以完成复杂的用户请求。"
+    },
+    {
+      "point": "聚焦用户控制与透明度。",
+      "explanation": "该架构包含针对敏感操作的强制确认机制，并通过通知提供智能体活动的实时可见性，以确保用户始终掌握控制权。"
+    }
+  ],
+  "keyQuotes": [
+    "为了将 Android 转变为「智能体优先」的操作系统，Google 引入了新的早期测试功能，以支持以任务为中心的操作模式。",
+    "AppFunctions 是一个 Jetpack API，允许开发者在应用内开放自描述功能，从而与 AI 智能体实现无缝集成。",
+    "这一自动化层使得用户能够通过 Gemini 助手「下单复杂的披萨订单……协调多站拼车……或重新购买上次的杂货商品」，而无需开发者进行额外的工作。",
+    "所有交互均基于设备端执行构建，并通过实时视图和/或通知为用户提供完全的可见性。"
+  ],
+  "tags": [
+    "Android",
+    "AppFunctions",
+    "AI 智能体",
+    "Gemini",
+    "Jetpack API"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 364,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774814400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-29 20:00:00"
+}

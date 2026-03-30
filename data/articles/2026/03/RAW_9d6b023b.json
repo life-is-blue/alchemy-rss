@@ -1,0 +1,57 @@
+{
+  "id": "RAW_9d6b023b",
+  "title": "Kubescape 4.0 为 Kubernetes 带来运行时安全和 AI 智能体扫描",
+  "url": "https://www.infoq.com/news/2026/03/kubescape-40/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-29 19:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Version 4.0 of the open source Kubernetes security platform <a href=\"https://kubescape.io/\">Kubescape</a> has been released, bringing runtime threat detection and a new set of AI-era security features. This is the first time the project has targeted the security of AI agents themselves, alongside its established scanning capabilities.</p>\n   <p><a href=\"https://www.cncf.io/blog/2026/03/26/announcing-kubescape-4-0-enterprise-stability-meets-the-ai-era/\">The announcement</a>, published on the CNCF blog during <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/\">KubeCon + CloudNativeCon Europe 2026</a> and written by <a href=\"https://www.linkedin.com/in/ben-hirschberg-66141890/\">Ben Hirschberg</a>, Kubescape Core Maintainer, explains that the headline change in 4.0 is the move of Runtime Threat Detection and Kubescape Storage to general availability.</p>\n   <p>Kubescape is an open-source Kubernetes security platform, maintained as a CNCF incubating project. It scans clusters, Helm charts, YAML manifests, and CI/CD pipelines for misconfigurations, vulnerabilities, and RBAC violations. It has runtime threat detection, which learns normal workload behaviour and alerts on deviations, cutting CVE noise by over 95%. Native integrations with tools such as VSCode and GitHub Actions allow teams to embed security checks early in the development process without disrupting their workflows.</p>\n   <p><img alt=\"Kubescape Runtime Threat Detection\" data-src=\"https://www.infoq.com/news/2026/03/kubescape-40/news/2026/03/kubescape-40/en/resources/1image-10-1774800977647.png\" style=\"width: 600px; height: 266px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/kubescape-40/en/resources/1image-10-1774800977647.png\" rel=\"share\"></p>\n   <p>The Runtime Threat Detection engine relies on detection rules (based on the Common Expression Language) that work directly against Kubescape's Application Profiles. The engine monitors processes, Linux capabilities, system calls, network and HTTP events, and file system activity. Rules and RuleBindings are now managed as Kubernetes CRDs, and alerts can be forwarded to AlertManager, SIEM tools, Syslog, Stdout, or HTTP webhooks. Hirschberg writes that this engine has been rigorously tested and has proved stable at scale.</p>\n   <p>Kubescape Storage has also reached GA in this release. It uses the Kubernetes Aggregated API to store security metadata such as Application Profiles, SBOMs, and vulnerability manifests in a dedicated layer, keeping that data out of the standard etcd instance. Amir Malka, who is welcomed as a new maintainer in this release, <a href=\"https://www.youtube.com/watch?v=ifwNDvRSQWU\">presented the underlying approach</a> at KubeCon + CloudNativeCon North America 2025.</p>\n   <blockquote>\n    <p>This architecture has been proven to handle the demands of large-scale, high-density clusters, providing the performance required for modern enterprise environments.\n     <br>\n     - Ben Hirschberg</p>\n   </blockquote>\n   <p>The release also removes the host-sensor, a \"pop-up\" DaemonSet previously used for node scanning. Kubescape's community had flagged the approach as intrusive and difficult to audit from a security standpoint. The host-agent has been similarly retired, with its capabilities folded into the node-agent via a direct API between the core Kubescape microservices. The result is a single agent per node, which Hirschberg argues makes the security posture \"both more stable and easier to audit.\"</p>\n   <p>There are also other AI-related additions, heading in two directions, which Hirschberg describes as \"the two sides of the AI security coin.\" The first is a <a href=\"https://kagent.dev/\">KAgent</a>-native plug-in that allows AI assistants to query Kubernetes security posture from within a cluster. Through this plug-in, an agent can inspect vulnerability manifests, review configuration scans for RBAC issues, find guidance on fixing problems, and look at container behaviour at runtime using ApplicationProfiles and NetworkNeighborhoods. The second element is security scanning specifically for KAgent itself, the CNCF Sandbox project for AI orchestration. KAgent was <a href=\"https://www.opsworker.ai/blog/kagent-100-days-and-graduated-to-cncf-sandbox/\">accepted into the CNCF Sandbox</a> in May 2025 as an open-source framework for building Kubernetes-native AI agents, with an architecture based on the Model Context Protocol. Because KAgent establishes pathways between AI models and enterprise infrastructure, the Kubescape team argues that its configuration needs the same level of scrutiny as any other workload.</p>\n   <blockquote>\n    <p>We need robust security guardrails to stop agents from exploiting them for high-risk actions like unauthorized access or deleting production data.\n     <br>\n     - Ben Hirschberg</p>\n   </blockquote>\n   <p>Kubescape 4.0 introduces 15 controls based on <a href=\"https://www.openpolicyagent.org/docs/policy-language\">OPA's Rego language</a>, covering 42 security-critical configuration points in KAgent's <a href=\"https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/\">CRDs</a>. These controls check for errors such as empty security contexts in default deployments, missing NetworkPolicies, and over-privileged controller-wide namespace watching. This approach builds on Kubescape's existing Rego-based framework, which already supports compliance standards including the NSA-CISA and MITRE ATT&amp;CK frameworks. The 4.0 release adds support for CIS Benchmark versions 1.12 for vanilla Kubernetes and 1.8 for EKS and AKS.</p>\n   <p>Many of the new features in Kubescape 4.0 are a reaction to the <a href=\"https://www.shakudo.io/blog/deploy-ai-agents-on-kubernetes\">growing adoption of agentic AI in Kubernetes environments</a>. Shakudo's documentation on deploying production-grade AI agents on Kubernetes notes that kagent offers \"tools, resources, and AI agents that help automate configuration, troubleshooting, observability, and network security.\" As these agents gain more autonomy and deeper access to infrastructure, the attack surface they represent becomes a practical concern rather than a theoretical one. A <a href=\"https://www.linkedin.com/posts/craine-io_kagent-when-ai-agents-meet-kubernetes-activity-7333497410721103873-p1_F\">LinkedIn post from Craine.io</a> on KAgent's CNCF sandbox graduation observed that \"AI workload orchestration isn't just about containers anymore. It's about building resilient, scalable intelligence infrastructure.\"</p>\n   <p>The Kubescape 4.0 release is one of the first systematic attempts to apply cloud native security tooling to the agents themselves, rather than only to the workloads they manage.Kubescape was accepted as a CNCF Incubating project in January 2025, having entered the CNCF Sandbox in 2022. The project is maintained by ARMO and accepts contributions from the wider community.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Kubescape 4.0 Brings Runtime Security and AI Agent Scanning to Kubernetes\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/kubescape-40/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774810800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Kubescape 4.0 引入了正式版（GA）运行时威胁检测、统一的节点代理架构，以及针对 Kubernetes 原生 AI 智能体（KAgent）的专业安全扫描。",
+  "oneSentenceSummary": "Kubescape 4.0 引入了正式版（GA）运行时威胁检测、统一的节点代理架构，以及针对 Kubernetes 原生 AI 智能体（KAgent）的专业安全扫描。",
+  "summary": "Kubescape 4.0 是该 CNCF 孵化项目的一个重要里程碑，其运行时威胁检测和 Kubescape Storage 功能正式发布（GA）。此次发布聚焦 AI 时代的安全，引入了针对 KAgent（一个用于 AI 编排的 CNCF 沙箱项目）的专业扫描，以及一个供 AI 助手查询集群安全态势的插件。在架构上，它通过将主机传感器（host-sensor）和主机代理（host-agent）合并为单一的节点代理（node-agent）来简化节点安全，从而提高了稳定性和可审计性。运行时引擎现在使用基于 CEL 的规则（以 CRD 形式管理），在监控系统调用和网络事件的同时，显著降低了 CVE 噪音。",
+  "mainPoints": [
+    {
+      "point": "运行时威胁检测和 Kubescape Storage 正式发布（GA）。",
+      "explanation": "运行时引擎使用通用表达式语言（CEL）规则来监控系统调用和网络事件，而存储层使用聚合 API（Aggregated API）将安全元数据保留在 etcd 之外，以实现更好的扩展性。"
+    },
+    {
+      "point": "引入针对 AI 编排框架的专业安全扫描。",
+      "explanation": "Kubescape 4.0 专门为 KAgent 增加了 15 项基于 OPA/Rego 的控制措施，以应对诸如控制器权限过高以及 AI 模型未经授权访问基础设施等风险。"
+    },
+    {
+      "point": "架构整合为单一节点代理。",
+      "explanation": "移除了侵入式的主机传感器，并将主机代理的功能整合到一个统一的节点代理中，使得安全态势更加稳定且易于审计。"
+    },
+    {
+      "point": "通过 KAgent 插件实现 AI 助手的原生集成。",
+      "explanation": "一个新的插件允许 AI 智能体直接检查漏洞清单和容器行为，从而实现自动化的故障排查和安全态势管理。"
+    }
+  ],
+  "keyQuotes": [
+    "这是该项目首次在现有的扫描功能之外，将目标对准了 AI 智能体自身的安全。",
+    "我们需要强大的安全护栏，以防止智能体利用它们进行高风险操作，例如未经授权的访问或删除生产数据。",
+    "最终结果是每个节点只有一个代理，Hirschberg 认为这使得安全态势既更稳定又更易于审计。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "云原生安全",
+    "Kubescape",
+    "AI 智能体",
+    "KAgent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 801,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774810800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-29 19:00:00"
+}

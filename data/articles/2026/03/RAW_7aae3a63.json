@@ -1,0 +1,52 @@
+{
+  "id": "RAW_7aae3a63",
+  "title": "工具：Python 漏洞查询",
+  "url": "https://simonwillison.net/2026/Mar/29/python-vulnerability-lookup/#atom-everything",
+  "date": "2026-03-29 18:46:16",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">29th March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label tool\">Tool</span> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/python-vulnerability-lookup\">Python Vulnerability Lookup</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I learned that the <a href=\"https://osv.dev/\">OSV.dev</a> open source vulnerability database has an open CORS <a href=\"https://google.github.io/osv.dev/api/\">JSON API</a> so I had Claude Code build this <a href=\"https://simonwillison.net/2025/Dec/10/html-tools/\">HTML tool</a> for pasting in a <code>pyproject.toml</code> or <code>requirements.txt</code> file (or name of a GitHub repo containing those) and seeing a list of all reported vulnerabilities from that API.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4065/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一个基于 Web 的工具，利用 OSV.dev API 扫描 Python 项目依赖文件或 GitHub 仓库，以查找已知漏洞。",
+  "oneSentenceSummary": "一个基于 Web 的工具，利用 OSV.dev API 扫描 Python 项目依赖文件或 GitHub 仓库，以查找已知漏洞。",
+  "summary": "Simon Willison 介绍了一款基于 HTML 的新工具，旨在识别 Python 项目中的安全漏洞。通过利用 OSV.dev 开放的 CORS JSON API，该工具允许用户粘贴 pyproject.toml 或 requirements.txt 等依赖文件，或提供 GitHub 仓库名称，从而检索已报告漏洞的完整列表。该工具是使用 Claude Code 开发的，展示了 AI 辅助开发在创建专用、基于浏览器的实用工具方面的实际应用。",
+  "mainPoints": [
+    {
+      "point": "创建轻量级 Python 漏洞扫描器。",
+      "explanation": "该工具提供了一种快速、无需安装的方式，可直接在浏览器中根据 OSV.dev 数据库检查依赖项。"
+    },
+    {
+      "point": "利用 OSV.dev 的开放 CORS JSON API。",
+      "explanation": "通过使用支持 CORS 的 API，该工具可以在客户端代码中执行查询，确保了访问的便捷性，并避免了对专用后端的需要。"
+    },
+    {
+      "point": "AI 辅助开发工作流。",
+      "explanation": "该工具是使用 Claude Code 构建的，突显了开发者如何利用 AI 快速原型化并部署基于 HTML 的功能性实用工具。"
+    }
+  ],
+  "keyQuotes": [
+    "我了解到 OSV.dev 开源漏洞数据库有一个开放的 CORS JSON API，所以我让 Claude Code 构建了这个 HTML 工具。",
+    "……粘贴 pyproject.toml 或 requirements.txt 文件（或包含这些文件的 GitHub 仓库名称），并查看该 API 报告的所有漏洞列表。"
+  ],
+  "tags": [
+    "Python",
+    "安全",
+    "漏洞扫描器",
+    "OSV.dev",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 58,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774809976000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-29 18:46:16"
+}

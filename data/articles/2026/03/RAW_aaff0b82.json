@@ -1,0 +1,53 @@
+{
+  "id": "RAW_aaff0b82",
+  "title": "为什么在高频交易中集成 AI 比所有人想象的都要难",
+  "url": "https://hackernoon.com/why-integrating-ai-in-high-frequency-trading-is-harder-than-everyone-thinks?source=rss",
+  "date": "2026-03-29 15:34:59",
+  "author": "Lev Yatsemyrskyi",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>\\ If you've read the breathless coverage of AI transforming financial services, you might have the impression that deploying large language models and agent-based systems in institutional trading environments is primarily an engineering challenge — a matter of selecting the right model, tuning the right parameters, and waiting for the performance gains to materialize.</p>\n  <p>Having spent nearly five years as the AI and integration architect for a platform processing petabyte-scale HFT data for over 100 institutional clients including Bank of America Merrill Lynch, JPMorgan Chase, and Citigroup, I can tell you that this impression misses the most important part of the problem.</p>\n  <p>The hardest part of AI in high-frequency trading is not the AI. It is the constraints.</p>\n  <h2 id=\"thelatencywall\"><strong>The Latency Wall</strong></h2>\n  <p>High-frequency trading operates at microsecond timescales. The difference between a system that responds in 50 microseconds and one that responds in 500 microseconds is not a performance footnote — it is the difference between a viable trading strategy and one that consistently executes at disadvantageous prices.</p>\n  <p>Large language models introduce inference latency measured in milliseconds — three to four orders of magnitude slower than the response requirements of core HFT execution systems. Deploying LLMs naively in these environments does not produce intelligent trading infrastructure. It produces slow trading infrastructure with a chatbot attached.</p>\n  <p>The architectural solution is separation: identify the functions within the HFT stack where LLM inference latency is acceptable — natural-language risk queries, configuration assistance, documentation generation, decision support for human operators — and design strict boundaries between these functions and the latency-critical execution path. The result is a system that is genuinely AI-enhanced in the domains where AI adds value, without compromising the performance characteristics that HFT requires.</p>\n  <p>At Nasdaq's Risk Platform, this architectural separation enabled us to deploy LLM-enhanced risk query systems that allowed institutional clients to interrogate complex real-time risk data in natural language — a capability that previously required specialized technical expertise — while maintaining the 99.9 percent uptime and microsecond-level performance that these clients' trading operations demanded.</p>\n  <h2 id=\"thecomplianceconstraint\"><strong>The Compliance Constraint</strong></h2>\n  <p>The second constraint that most AI discussions in finance underweight is regulatory compliance — specifically, the requirement under FINRA and SEC frameworks that automated systems be auditable, that decision logic be explainable, and that data handling meet strict governance requirements.</p>\n  <p>Vanilla neural networks fail this requirement by design. Their decision-making is opaque — the output emerges from billions of weighted parameters in ways that are not decomposable into auditable logic chains. This is not merely a theoretical concern. Regulators actively examine trading firms' automated systems, and an AI system that cannot explain its outputs in terms that satisfy examination is a compliance liability.</p>\n  <p>Retrieval-Augmented Generation addresses this by grounding LLM outputs in explicit, auditable knowledge bases. Rather than generating responses from latent model weights alone, RAG architectures retrieve specific source documents and generate responses that are traceable to those sources. The audit trail is built into the architecture.</p>\n  <p>The second compliance consideration is data governance. Institutional trading data — position information, client identities, order flow — is among the most sensitive information in the financial system, subject to both regulatory requirements and competitive confidentiality obligations. AI architectures that send this data to external model APIs are not viable in institutional settings. The frameworks I developed at Nasdaq keep sensitive data within institutional infrastructure perimeters, using AI for pattern recognition and query handling without requiring data exfiltration.</p>\n  <h2 id=\"theagentarchitectureadvantage\"><strong>The Agent Architecture Advantage</strong></h2>\n  <p>The AI approach that has produced the most consistent results in my experience with regulated financial infrastructure is agent-based architecture — systems in which AI agents operate with defined autonomy within carefully bounded parameters.</p>\n  <p>The advantage of agent-based approaches over monolithic AI systems in this context comes down to failure localization. In a monolithic AI system, a failure in one component can propagate unpredictably across the entire system. In an agent-based architecture, each agent handles a defined subset of the workflow, and failures are contained within that subset — preserving the operation of other agents and enabling targeted human intervention without system-wide disruption.</p>\n  <p>For institutional financial infrastructure — where a system serving 100 clients cannot afford a cascading failure because one client's unusual data triggered an unexpected state in a shared AI component — this property is not a nice-to-have. It is a fundamental requirement.</p>\n  <p>The 200 percent onboarding efficiency gains and 30 percent configuration time reductions we achieved at Nasdaq's Risk Platform were produced by agent-based architectures specifically designed around this principle — not by adding intelligence indiscriminately, but by adding precisely the right intelligence in precisely the right places, bounded in ways that preserved the operational resilience these environments require.</p>\n  <p>This is the actual state of AI in high-frequency trading. Not a revolution in which intelligence replaces infrastructure. A careful, disciplined integration in which intelligence enhances infrastructure — in the specific domains where it can do so without compromising the properties that make the infrastructure work.</p>\n  <p>\\</p>\n </body>\n</html>",
+  "aiSummary": "本文认为，在高频交易中成功集成 AI 需要应对严格的约束条件（特别是延迟、合规性和系统弹性），而不是简单地部署模型；文章主张采用架构分离、RAG 和基于智能体的设计。",
+  "oneSentenceSummary": "本文认为，在高频交易中成功集成 AI 需要应对严格的约束条件（特别是延迟、合规性和系统弹性），而不是简单地部署模型；文章主张采用架构分离、RAG 和基于智能体的设计。",
+  "summary": "作者是一位拥有纳斯达克工作经验的 AI 架构师，他反驳了“高频交易（HFT）中的 AI 仅仅是一个工程优化问题”这一误解。相反，他强调真正的挑战在于管理关键约束：即“延迟墙”、监管合规（FINRA/SEC）和系统稳定性。文章概述了实用的架构解决方案，包括将 AI 推理与延迟敏感的执行路径分离、利用检索增强生成（RAG）进行可审计的决策，以及采用基于智能体的架构来定位故障，从而确保机构金融环境中的运营弹性。",
+  "mainPoints": [
+    {
+      "point": "AI 必须在架构上与延迟敏感的执行路径分离。",
+      "explanation": "LLM 会引入毫秒级的延迟，这与 HFT 微秒级的需求不兼容。AI 应仅限于风险查询和配置辅助等非关键功能，以避免影响性能。"
+    },
+    {
+      "point": "监管合规性要求系统具备可审计性和可解释性。",
+      "explanation": "原生神经网络是不透明的，无法满足 FINRA/SEC 的要求。RAG 架构通过将输出建立在明确、可追溯的知识库之上，提供了必要的审计追踪，同时将敏感数据保留在机构边界内。"
+    },
+    {
+      "point": "基于智能体的架构对于金融基础设施的运营弹性至关重要。",
+      "explanation": "与故障会蔓延的单体系统不同，基于智能体的设计可以定位故障，从而允许进行针对性的人工干预，并在正常运行时间至关重要的环境中防止系统范围内的中断。"
+    }
+  ],
+  "keyQuotes": [
+    "在高频交易中，AI 最难的部分不是 AI 本身，而是各种约束条件。",
+    "在这些环境中天真地部署 LLM 并不会产生智能交易基础设施，只会产生一个附带聊天机器人的缓慢交易基础设施。",
+    "在单体 AI 系统中，一个组件的故障可能会不可预测地蔓延到整个系统。而在基于智能体的架构中，每个智能体处理工作流中定义好的子集，故障被限制在该子集内。"
+  ],
+  "tags": [
+    "高频交易",
+    "AI 架构",
+    "RAG",
+    "基于智能体的系统",
+    "延迟"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 817,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774798499000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-29 15:34:59"
+}
