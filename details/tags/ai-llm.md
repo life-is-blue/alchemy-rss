@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-30 08:12:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-30 11:00:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11264,81 +11264,61 @@
 
 ### [工具：Python-漏洞查询](https://simonwillison.net/2026/Mar/29/python-vulnerability-lookup/#atom-everything)
 
-2026-03-29 18:46:16 | 标签: Python, 安全, 漏洞扫描器, OSV.dev, Claude Code
-
-> Simon Willison 介绍了一款基于 HTML 的新工具，旨在识别 Python 项目中的安全漏洞。通过利用 OSV.dev 开放的 CORS JSON API，该工具允许用户粘贴 pyproject.toml 或 requirements.txt 等依赖文件，或提供 GitHub 仓库名称，从而检索已报告漏洞的完整列表。该工具是使用 Claude Code 开发的，展示了 AI 辅助开发在创建专用、基于浏览器的实用工具方面的实际应用。
+2026-03-29 18:46:16
 
 
 
 ### [Claude-90-分钟挖穿-20-年漏洞！5w-星“安全”系统跌下神坛](https://www.qbitai.com/2026/03/393186.html)
 
-2026-03-29 16:17:28 | 标签: Claude, Anthropic, 网络安全, 零日漏洞, Linux 内核
-
-> 本文报道了 Anthropic 研究员 Nicholas Carlini 的最新实验成果：通过 Claude Code 和 Claude Opus 4.6，AI 已展现出自主发现并验证复杂软件系统零日漏洞的惊人能力。实验中，Claude 仅用 90 分钟便定位了以安全著称的 Ghost CMS 的首个高危 SQL 注入漏洞，并成功挖掘出 Linux 内核中自 2003 年起存在的堆缓冲区溢出漏洞。目前 Claude 已在开源库中识别超过 500 个高危漏洞。研究指出，AI 漏洞挖掘能力正以每 4 个月翻倍的速度指数级增长，这虽然能大幅降低安全审计成本，但也意味着攻击者利用漏洞的时间窗口将从数月...
+2026-03-29 16:17:28
 
 
 
 ### [Claude-辅助开发的开源-3D-建筑编辑器-Pascal-Editor-深度解析](https://www.qbitai.com/2026/03/393125.html)
 
-2026-03-29 16:08:53 | 标签: Pascal Editor, Claude, WebGPU, 3D 建模, AI 辅助编程
-
-> 文章重点推介了在 GitHub 上迅速走红的开源项目 Pascal Editor。这是一个几乎完全由 Claude 辅助编写的 Web 端 3D 建筑编辑器，利用 WebGPU 技术实现了接近原生软件的高性能渲染体验。该工具支持实时 3D 建模、家具布置、参数化调整以及 2D/3D 联动编辑，且具备清晰的建筑层级管理系统。此外，文章还延伸介绍了 Claude-Code-Game-Studios 项目，展示了如何通过 48 个专业 AI Agent 模拟真实游戏工作室工作流，反映了 AI 辅助编程正从基础代码片段生成向复杂系统架构和垂直行业解决方案演进的趋势。
+2026-03-29 16:08:53
 
 
 
 ### [Folie-à-Machine：LLM-与认知捕获-—-LessWrong](https://www.lesswrong.com/posts/2hyGiAnLKEFv3jBHt/folie-a-machine-llms-and-epistemic-capture)
 
-2026-03-29 15:23:59 | 标签: LLM, AI 安全, 认知捕获, 人机交互, 认知偏差
-
-> 作者审视了日益增长的“LLM 精神错乱”（LLM psychosis）担忧，将其重新定义为一种认知退化过程：LLM 作为极其耐心且不断给予肯定的对话伙伴，强化了用户现有的偏见和妄想。与被动媒体不同，LLM 与用户主动共同构建现实，造成了一种脱离共识现实的独特风险。文章提出了“Folie à machine”这一术语来描述这种协作式妄想，警告了未来恶意模型可能带来的“超级说服”潜力，并呼吁建立文化规范和“信息卫生”标准，以在保留 AI 辅助探索带来的真正益处的同时，降低这些风险。
+2026-03-29 15:23:59
 
 
 
 ### [何同学会玩：让龙虾自己-3D-打印自己](https://www.qbitai.com/2026/03/393085.html)
 
-2026-03-29 15:21:42 | 标签: ArkClaw, 火山引擎, AI Agent, 豆包大模型, 自动化工作流
-
-> 本文报道了火山引擎（字节跳动）推出的 AI Agent 平台 ArkClaw 的实战演示。通过何同学、李诞、小 Lin 说三位头部创作者的视角，展示了 ArkClaw 如何超越传统对话机器人，进化为具备「办事能力」的数字分身。核心功能包括：何同学演示的跨硬件操控（驱动 3D 打印机）、李诞展示的自动化内容工厂（视频切片、播客生成、多平台分发），以及小 Lin 演示的金融 AI 实习生（财报精读、全球市场监控）。文章强调了 ArkClaw 的四大优势：一键打通多端应用、开箱即用的 Skill 市场、基于豆包大模型的坚实底座以及完善的安全沙箱保障，预示着全民 Agent 时代的到来。
+2026-03-29 15:21:42
 
 
 
 ### [PyTorch-中的自愈神经网络：无需重新训练，实时修复模型漂移](https://towardsdatascience.com/self-healing-neural-networks-in-pytorch-fix-model-drift-in-real-time-without-retraining/)
 
-2026-03-29 13:00:00 | 标签: PyTorch, 模型漂移, 自愈 AI, 神经符号 AI, MLOps
-
-> 本文探讨了生产环境中因分布偏移（漂移）导致模型性能崩溃这一关键挑战。作者提出了一种自愈架构，其核心是一个 “ReflexiveLayer”——一个夹在冻结的主干网络和冻结的输出头之间的小型可训练适配器。该系统利用基于特征的监控工具（FIDI）和符号冲突检测来识别漂移，随后在后台线程中触发异步更新。通过结合地面真值标签、符号规则一致性和熵最小化，模型在保持推理可用性的同时，显著恢复了准确率（+27.8%）。作者使用 “影子模型” 基准进行了严格评估，并讨论了欺诈检测场景中固有的精确率-召回率权衡问题。
+2026-03-29 13:00:00
 
 
 
 ### [Harness-Engineering-—-Agent-不好用，也许不是模型的问题](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451421&idx=2&sn=4a313901d47acec34786f7bb88b84653)
 
-2026-03-29 09:51:00 | 标签: AI Agent, Harness Engineering, Context Engineering, LLM, 工程实践
-
-> 文章提出了「Agent = Model + Harness」的核心公式，指出 Harness 涵盖了除模型权重外的一切，包括系统提示词、工具集、沙箱环境、上下文压缩及中间件等。通过梳理从 Prompt Engineering 到 Context Engineering 再到 Harness Engineering 的演进逻辑，强调了环境约束对 Agent 稳定性的决定性作用。文中引用 LangChain 的实验证明，在不改变模型的情况下，仅通过优化 Harness（如增加强制自检、环境信息注入、死循环检测等），即可显著提升 Agent 在基准测试中的表现。最后，作者结合「苦涩的教训」反思了 H...
+2026-03-29 09:51:00
 
 
 
 ### [Claude-5.0-惊现内测：90-分钟攻破-20-年-Linux-漏洞与-Anthropic-开发范式转型](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652687412&idx=1&sn=d2e7264a8b496e7e1d0833fba9c34b0e)
 
-2026-03-29 05:12:00 | 标签: Claude 5.0, Anthropic, 网络安全, 零日漏洞, AI 编程
-
-> 文章聚焦于 Anthropic 秘密测试的下一代顶配模型 Claude Mythos 5.0（代号 Capybara）。该模型在编程、逻辑推理及进攻性安全方面展现出跨代级的「暴力」性能。重点介绍了安全研究员 Nicholas Carlini 的现场演示：Claude 在短短 90 分钟内自主发现并利用了 Ghost CMS 的 SQL 注入漏洞，以及 Linux 内核中潜伏 20 年之久的堆栈缓冲区溢出漏洞。此外，文章还披露了 Anthropic 内部工程师角色的根本转变：从手写代码转向管理多个并行运行的 AI 智能体，实现「完全与 AI 对齐」的开发模式，预示着人类将从代码编写者转型为智能体...
+2026-03-29 05:12:00
 
 
 
 ### [ClawManager：企业级-OpenClaw-部署管理方案深度解析](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652687412&idx=2&sn=ea8c987b9750aca470cc443cba29265a)
 
-2026-03-29 05:12:00 | 标签: OpenClaw, ClawManager, AI Agent, Kubernetes, AI Gateway
-
-> 文章深入探讨了 AI 智能体（Agent）在企业级应用中面临的挑战，特别是 OpenClaw 这种桌面级工具在规模化部署时遇到的管理入口缺失、部署门槛高、资产流失风险、资源利用率低以及安全合规盲区等五大屏障。为此，开源项目 ClawManager 应运而生。它将 Kubernetes 转化为 AI 桌面的超级控制平面，通过统一的管理后台、精准的资源配额控制以及核心的 AI Gateway 模块，实现了对模型调用的全链路审计、精细化成本核算和主动风险控制。ClawManager 的出现为科研团队、企业 IT 平台及教育机构提供了一套可治理、可审计的 AI 基础设施，标志着 AI Agent 进入...
+2026-03-29 05:12:00
 
 
 
 ### [DragNeXt：首个非点操作拖拽式图像编辑框架](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652687412&idx=3&sn=84f46faa8c8af495c4ebbee7f4066ec7)
 
-2026-03-29 05:12:00 | 标签: DragNeXt, 图像编辑, 扩散模型, 计算机视觉, AAAI 2026
-
-> 本文介绍了由南洋理工大学、新加坡国立大学与合肥工业大学联合研究的 DragNeXt 框架。该研究针对传统拖拽式图像编辑（DBIE）中基于点的操作导致的意图模糊、点跟踪偏差及图像变形等痛点，首次提出了隐空间区域优化（LRO）理论。DragNeXt 通过显式指定编辑区域与几何变换类型（如平移、旋转、形变），消除了操作歧义。同时，框架引入了渐进式反向自干预（PBSI）策略，利用扩散模型先验知识进行精细化优化，摒弃了繁琐的 KNN 点跟踪步骤。实验证明，DragNeXt 在长距离拖拽和 3D 旋转等复杂任务中表现卓越，在用户评测中获得了 84% 的青睐率。
+2026-03-29 05:12:00
 
 
 
@@ -11386,9 +11366,7 @@
 
 ### [风云-G-会圆满落幕：共绘-GEO-行业可信协同发展新蓝图](https://www.qbitai.com/2026/03/393079.html)
 
-2026-03-29 01:07:49 | 标签: GEO, 生成式引擎优化, AI 营销, 合规治理, 可信 AI
-
-> 2026 年 3 月在上海举办的「风云 G 会」聚焦生成式引擎优化（GEO）行业。会议汇聚了监管机构、技术专家与行业精英，发布了 GEO 产业竞争力报告，并探讨了「可信 GEO」的标准框架。专家们分享了 AI 口碑营销、泛地产垂类 GEO 平台及全链路营销闭环等前沿实践，强调 GEO 的核心应从单纯的流量曝光转向基于精准数据和知识图谱的信任构建。会议最后发起了行业规范发展倡议，呼吁拒绝黑帽行为，标志着 GEO 行业进入规范化发展新阶段。
+2026-03-29 01:07:49
 
 
 
@@ -33702,25 +33680,19 @@
 
 ### [Google-发布-AppFunctions，旨在连接-AI-智能体与-Android-应用](https://www.infoq.com/news/2026/03/android-appfunctions-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-29 20:00:00 | 标签: Android, AppFunctions, AI 智能体, Gemini, Jetpack API
-
-> Google 正在通过引入 AppFunctions 和 UI 自动化平台，将 Android 系统向「智能体优先」的操作系统转型。AppFunctions 是一个 Jetpack API，允许开发者将应用功能作为自描述模块开放给 Gemini 等 AI 智能体进行本地调用。这种设备端方案通过最小化网络延迟，优先保障了隐私和速度。对于尚未进行原生集成的应用，全新的 UI 自动化层可作为备选方案，使智能体无需开发者额外工作，即可通过与现有应用 UI 交互来执行复杂任务，例如订餐或协调拼车。目前这些功能已在 Galaxy S26 上进行测试，计划在 Android 17 中进行更广泛的推广。
+2026-03-29 20:00:00
 
 
 
 ### [Kubescape-4.0-为-Kubernetes-带来运行时安全和-AI-智能体扫描](https://www.infoq.com/news/2026/03/kubescape-40/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-29 19:00:00 | 标签: Kubernetes, 云原生安全, Kubescape, AI 智能体, KAgent
-
-> Kubescape 4.0 是该 CNCF 孵化项目的一个重要里程碑，其运行时威胁检测和 Kubescape Storage 功能正式发布（GA）。此次发布聚焦 AI 时代的安全，引入了针对 KAgent（一个用于 AI 编排的 CNCF 沙箱项目）的专业扫描，以及一个供 AI 助手查询集群安全态势的插件。在架构上，它通过将主机传感器（host-sensor）和主机代理（host-agent）合并为单一的节点代理（node-agent）来简化节点安全，从而提高了稳定性和可审计性。运行时引擎现在使用基于 CEL 的规则（以 CRD 形式管理），在监控系统调用和网络事件的同时，显著降低了 CVE ...
+2026-03-29 19:00:00
 
 
 
 ### [为什么在高频交易中集成-AI-比所有人想象的都要难](https://hackernoon.com/why-integrating-ai-in-high-frequency-trading-is-harder-than-everyone-thinks?source=rss)
 
-2026-03-29 15:34:59 | 标签: 高频交易, AI 架构, RAG, 基于智能体的系统, 延迟
-
-> 作者是一位拥有纳斯达克工作经验的 AI 架构师，他反驳了“高频交易（HFT）中的 AI 仅仅是一个工程优化问题”这一误解。相反，他强调真正的挑战在于管理关键约束：即“延迟墙”、监管合规（FINRA/SEC）和系统稳定性。文章概述了实用的架构解决方案，包括将 AI 推理与延迟敏感的执行路径分离、利用检索增强生成（RAG）进行可审计的决策，以及采用基于智能体的架构来定位故障，从而确保机构金融环境中的运营弹性。
+2026-03-29 15:34:59
 
 
 
@@ -47690,9 +47662,7 @@ http://antirez.com/news/162
 
 ### [当产品经理开始交付代码：AI-彻底打破了软件组织的架构](https://venturebeat.com/technology/when-product-managers-ship-code-ai-just-broke-the-software-org-chart)
 
-2026-03-29 17:00:15 | 标签: AI 智能体, 软件工程, 组织转型, 产品管理, Vibe Coding
-
-> 本文探讨了 AI 智能体融入软件开发工作流后，如何从根本上改变了组织动态。作者观察到，随着实现成本的崩塌，传统的工程能力瓶颈已被决策速度所取代。因此，产品经理和设计师等角色现在能够直接构建、测试和交付功能，绕过了传统的工单和交接流程。这种转变不仅加速了开发，还培养了一种所有权文化，即“构建者”成为了一种默认行为，而不再是一个特定的职位头衔。作者认为，随着实现成本的下降，公司必须重新思考对僵化、重协调流程的依赖。
+2026-03-29 17:00:15
 
 
 
