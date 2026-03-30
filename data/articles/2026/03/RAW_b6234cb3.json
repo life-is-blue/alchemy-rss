@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b6234cb3",
+  "title": "整个公司一起吃虾！这个开源项目，让 OpenClaw 实现企业级部署",
+  "url": "https://www.qbitai.com/2026/03/393382.html",
+  "date": "2026-03-30 08:45:57",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>OpenClaw火了之后，一个问题也自然浮现——</p>\n  <p>如果你是一个管理者，想给整个公司人手配一只虾，该怎么办？</p>\n  <p>听上去就是多开几个实例的事，但实际上，想要规模化部署，就必须考虑<strong>用户权限管理、资源配额、审计能力</strong>等等一系列问题。</p>\n  <p>然而，OpenClaw的设计从一开始就为单个用户准备，在个人场景下没表现出缺陷，但放到企业，前面这些能力的缺失，就会变成真实的障碍。</p>\n  <p>刚好在GitHub上，出现了一个名为<strong>ClawManager</strong>的开源项目，专门为这个空白而来。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260330100308_e41d43a84d1ce0f528415f3c2e798bed.webp\" alt=\"图片\" data-aistatus=\"1\" data-imgfileid=\"100395427\" data-ratio=\"0.42407407407407405\" data-s=\"300,640\" data-src=\"https://image.jido.dev/20260330100308_3fc32fd.png\" data-type=\"png\" data-w=\"1080\" data-original-style=\"null\" data-index=\"2\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>作为业内首个企业级OpenClaw服务器部署管理方案，它的定位很清晰，就是要<strong>补齐OpenClaw缺失的那一层企业级管理能力</strong>。</p>\n  <p>而且这个项目对部署环境的要求并不高，最低只需1个Kubernetes节点、4核CPU、8GB内存、20GB磁盘，中小团队也能直接上手。</p>\n  <h2>一个系统，管好一池龙虾</h2>\n  <p>ClawManager的能力，共有八大模块，可以分成两个核心层次，底下是实例管理，上面是AI治理，二者共同撑起一个可运营的企业级OpenClaw环境。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260330100308_03dcd263645de53a97f7b4abe520d589.webp\" alt=\"img\" data-src=\"https://image.jido.dev/20260330100308_b961e72.png\" data-ratio=\"0.6305309734513275\" data-type=\"png\" data-w=\"904\" data-imgfileid=\"100395411\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"3\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p><strong>实例管理层</strong>处理的是“人与环境”的关系。</p>\n  <p>管理员登录后，所有用户的OpenClaw实例状态都汇聚在同一个控制台，在线、离线、资源占用一目了然。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260330100308_79e345c7fcd87ce2fc70347d06fc34fa.webp\" alt=\"img\" data-src=\"https://image.jido.dev/20260330100308_f076e08.png\" data-ratio=\"0.5101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100395414\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"4\" data-report-img-idx=\"2\" data-fail=\"0\">\n  </section>\n  <p>需要批量创建环境时，通过CSV导入用户名单，系统就能在分钟级的时间内自动完成实例分配。</p>\n  <p>这种操作的优势对于AI研究机构来说尤其明显，当有新研究员入组，管理员导入名单，每个人的独立OpenClaw环境随即就绪，GPU配额也在这一步一并设好。</p>\n  <p>另外，每个实例的CPU、内存、GPU上限，都可以单独配置，而底层依托Kubernetes原生的Namespace、Pod、PVC机制实现隔离，可以确保各实例之间互不干扰。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260330100308_226d63c052e0159c939a2ddec8679b08.webp\" alt=\"img\" data-src=\"https://image.jido.dev/20260330100308_ce4a7cf.png\" data-ratio=\"0.5101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100395412\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"5\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>用户在OpenClaw里积累的记忆、对话历史和个性化配置，支持统一备份，并在需要时迁移到新的实例，不会因为环境变更而丢失。</p>\n  <p>对于培训机构来说，这个能力的另一面同样实用，当课程结束后，管理员可以一键回收所有实例，资源随即释放，等到下一期再重新分配。</p>\n  <p><strong>AI治理层</strong>处理的则是“调用与合规”的关系。</p>\n  <p>ClawManager内置AI Gateway，作为所有模型请求的统一入口，支持同时接入多个模型，并可以区分普通模型和安全模型进行分级路由。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260330100308_27a94aa51bd2ae4cfe134aae59d46183.webp\" alt=\"img\" data-src=\"https://image.jido.dev/20260330100308_2d5b70d.png\" data-ratio=\"0.5101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100395415\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"6\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>每一次LLM调用，都会产生唯一的trace_id，并被SSE流式响应同步持久化记录，事后可以按用户、模型或实例维度检索回溯。</p>\n  <p>这三个能力——路由、记录、检索——实际上构成了一条完整的审计链路，企业IT团队在应对内部合规审查时，每一次调用从发起到响应都有据可查。</p>\n  <p>除此之外，管理员还可以对各用户或部门、用户组消耗的费用进行统计。</p>\n  <p>具体来说，ClawManager支持按照Prompt、Completion、Reasoning、Cached等不同类型的Token分类统计，还支持多币种计费，管理看板可以直观呈现费用波动。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260330100308_9da8a9ba4a886891b975f39013fac7af.webp\" alt=\"img\" data-src=\"https://image.jido.dev/20260330100308_81fdec7.png\" data-ratio=\"0.5101851851851852\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100395416\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"7\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>安全方面，系统还内置了规则引擎，一旦检测到敏感内容，可以自动触发拦截或路由重定向，为企业AI使用划定明确的安全边界。</p>\n  <p>企业内部IT平台团队的场景，更能说明这一层的价值。</p>\n  <p>当一家公司决定把OpenClaw推广给全员使用，面对的挑战不只是“怎么部署”，更是<strong>“出了事怎么查、用多了怎么管”</strong>。</p>\n  <p>AI Gateway的分级路由，让IT团队可以根据不同部门的业务敏感程度，决定哪些人能用哪些模型；完整的调用记录让合规审计有据可查；风险规则引擎则可以在公司层面统一设定内容边界。</p>\n  <p>这三件事加在一起，才让IT团队有底气对全员推广这件事说“可以”。</p>\n  <p>除了功能，在<strong>生态兼容</strong>上，ClawManager支持OpenClaw、Webtop、Ubuntu、Debian、CentOS等多种桌面镜像。</p>\n  <p>另外，ClawManager也可以通过RESTful API和OpenAI风格的模型接口，很方便地与企业内部的工单、计费等系统打通，使用者不需要为了接入而大幅改造现有的IT体系。</p>\n  <h2>从管理员到用户，管虾用虾的体验都变了</h2>\n  <p>ClawManager的能力落地之后，企业中每个角色的职责边界也将随之改变。</p>\n  <p>对运维人员来说，最直接的变化是工作性质变了。</p>\n  <p>如果没有统一的管理平台，运维人员就要到处奔走“救火”，哪个实例出了问题，就登录进去处理，问题散落在各处，人也跟着散。</p>\n  <p>但有了统一控制台之后，所有实例的状态在同一个视图里可见可操作，运维人员直接从过去的被动响应变成更为主动介入管理的工作状态。</p>\n  <p>IT团队的任务也同样不同了，如果没有这样的工具，那么每扩张一批用户，就意味着一轮重复的手工配置，IT成了组织扩张的隐性瓶颈。</p>\n  <p>现在，新成员入职当天就能拿到自己的OpenClaw工作环境，不需要等排期、不需要过多介入，IT团队的精力可以从执行中释放出来。</p>\n  <p>对在真实生产环境中用虾的研究人员和业务人员而言，这种变化也十分明显。</p>\n  <p>在ClawManager之前，把重要的工作成果沉淀在OpenClaw里其实是一件有风险的事，因为一旦换机器、重新部署，积累的记忆和配置随时可能清零。</p>\n  <p>这种不确定性，会让用户本能地降低对工具的依赖程度。</p>\n  <p>而统一备份和跨实例迁移能力的出现，业务人员便可以真正放心地把OpenClaw当作长期工作环境来使用。</p>\n  <p>此外，稳定性的问题也在这一层得到了解决。</p>\n  <p>在没有资源隔离的环境里，集群的整体状态实际上取决于每一个用户的使用习惯，任何人的一个高负载任务都可能波及他人。</p>\n  <p>配额机制把这个隐患从制度层面消除了，稳定性不再依赖用户的自觉。</p>\n  <p>对公司管理层来说，成本看板也让管理者能看清AI资源在组织内部的真实分布，资源究竟流向了哪些团队、哪类工作都清清楚楚，让管理者的决策有据可依。</p>\n  <p>最后是安全与合规。对很多企业来说，这往往是决定要不要规模化部署OpenClaw的最后一道门槛。</p>\n  <p>ClawManager的统一鉴权网关、敏感内容拦截规则和完整的调用审计，让这些能力成为部署时的默认配置，使得安全从规模化的障碍，变成规模化的起点。</p>\n  <p>从运维人员到IT团队，从一线用户到管理层，ClawManager将改变整个组织使用OpenClaw的方式，让公司的“龙虾池”，从各自为战的单点工具，变成一个可管理、可追溯、可持续扩张的协作环境。</p>\n  <h2>让龙虾在企业规模化落地</h2>\n  <p>ClawManager选择MIT协议，意味着代码完整可审查，企业在引入一套管理自己AI资产的工具时，不需要以放弃数据主权为代价，想知道它在做什么，直接看代码就可以。</p>\n  <p>开放的API设计和对多种桌面镜像的兼容，也让社区有空间在这个基础上继续生长，添加新的运行时环境、对接更多内部系统，而不是被锁在一个封闭的生态里。</p>\n  <p>更值得关注的是，这件事本身所传递的信号。</p>\n  <p>企业级AI基础设施工具走向开源，意味着这类能力正在从少数大厂的内部实践，变成任何组织都可以获取和使用的公共基础设施。</p>\n  <p>过去，搭建一套有权限管理、资源隔离、调用审计的AI运营环境，需要相当的工程投入，门槛决定了这件事只属于有足够资源的组织。</p>\n  <p>而现在，开源打破了这个边界。</p>\n  <p>加上一个四核八G的节点起步配置，中小团队<span data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;p&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 16px;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-weight: 400;orphans: 2;text-align: left;text-indent: 0px;text-transform: none;widows: 2;-webkit-text-stroke-width: 0px;white-space: normal;background-color: rgb(255, 255, 255);text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;margin: 20px 16px;letter-spacing: 1px;word-spacing: 1px;font-family: Arial;line-height: 2;min-height: 1.5em;box-sizing: border-box;overflow-wrap: break-word;display: block;color: rgb(34, 34, 34);&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\">在工具层面</span>和大型企业站在了同一个位置，面对大企业的管理方案不再只是望洋兴叹。</p>\n  <p>这个过程还有另一层意义。</p>\n  <p>开源项目的共建模式，天然具有汇聚经验的能力，不同背景的企业和开发者可以在同一套工具上踩坑、改进、贡献，把分散在各个组织内部的实践经验转化为公开的、可迭代的代码，逐渐沉淀出更完善的方案。</p>\n  <p>对龙虾乃至整个AI Agent生态来说，每一次真实的企业部署，都在为这个领域的规模化落地添砖加瓦。</p>\n  <p>项目地址：\n   <br>\n   https://github.com/Yuan-lab-LLM/ClawManager</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "ClawManager 是首个针对 OpenClaw 的开源企业级管理方案，通过 Kubernetes 实现多用户实例调度、AI 网关治理及资源审计。",
+  "oneSentenceSummary": "ClawManager 是首个针对 OpenClaw 的开源企业级管理方案，通过 Kubernetes 实现多用户实例调度、AI 网关治理及资源审计。",
+  "summary": "本文介绍了开源项目 ClawManager，旨在解决热门 AI 工具 OpenClaw 在企业规模化部署中面临的管理难题。OpenClaw 原生设计侧重于个人用户，缺乏多用户权限管理、资源配额限制和审计能力。ClawManager 通过两个核心层次补齐了这些短板：实例管理层利用 Kubernetes 实现资源隔离、批量部署和统一备份；AI 治理层则通过内置 AI Gateway 提供模型分级路由、SSE 流式调用审计以及基于 Token 的多维度计费统计。该项目降低了中小团队构建受控 AI Agent 环境的门槛，最低仅需 4 核 8G 配置即可上手。",
+  "mainPoints": [
+    {
+      "point": "补齐 OpenClaw 的企业级管理空白。",
+      "explanation": "OpenClaw 原生缺乏多用户治理能力，ClawManager 通过引入用户权限管理、资源配额和审计链路，使其具备规模化部署的基础。"
+    },
+    {
+      "point": "基于 Kubernetes 的实例管理与资源隔离。",
+      "explanation": "利用 K8s 的 Namespace、Pod 和 PVC 机制，实现各用户环境的物理隔离，支持 CSV 批量导入用户及分钟级实例分配。"
+    },
+    {
+      "point": "完善的 AI 治理与合规审计体系。",
+      "explanation": "内置 AI Gateway 实现统一入口，支持敏感内容拦截、调用记录持久化回溯以及按 Token 类型进行的多维度费用统计。"
+    }
+  ],
+  "keyQuotes": [
+    "想要规模化部署，就必须考虑用户权限管理、资源配额、审计能力等等一系列问题。",
+    "ClawManager 的定位很清晰，就是要补齐 OpenClaw 缺失的那一层企业级管理能力。",
+    "企业级 AI 基础设施工具走向开源，意味着这类能力正在从少数大厂的内部实践，变成任何组织都可以获取和使用的公共基础设施。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "ClawManager",
+    "企业级部署",
+    "Kubernetes",
+    "AI 网关"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 13,
+  "score": 87,
+  "wordCount": 3036,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774860357000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-30 08:45:57"
+}
