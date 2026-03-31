@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-01 00:20:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-01 02:16:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -434,17 +434,13 @@
 
 ### [Kubernetes-自动扩缩容要求超越厂商工具的全新可观测性关注点](https://www.infoq.com/news/2026/03/kubernetes-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-31 12:00:00 | 标签: Kubernetes, 自动扩缩容, Karpenter, 可观测性, DevOps
-
-> 本文探讨了现代“即时”自动扩缩容工具所带来的 Kubernetes 可观测性演变。CPU 利用率等传统指标正被对资源供给行为的更深入洞察所取代，例如调度队列深度和云 API 延迟。这种转变反映了行业向平台无关、具备成本意识的可观测性发展的更广泛趋势，即通过分析基础设施变更来提升效率和响应能力。通过关联控制平面和云 API 的事件，工程团队可以优化装箱（bin-packing）策略并减少过度配置，从而从被动监控转向主动的、智能驱动的基础设施管理。
+2026-03-31 12:00:00
 
 
 
 ### [KubeVirt-v1.8-为-Kubernetes-带来多虚拟机管理程序支持和机密计算](https://www.infoq.com/news/2026/03/kubevirt-18-announcement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-31 07:00:00 | 标签: KubeVirt, Kubernetes, 云原生, 虚拟化, 机密计算
-
-> KubeVirt v1.8 与 Kubernetes v1.35 对齐，通过引入虚拟机管理程序抽象层（HAL）标志着一个重要的架构里程碑。这种解耦使得该项目能够在保持现有默认设置的同时，支持传统 KVM/QEMU 堆栈之外的虚拟机监视器。此版本通过用于机密计算的 Intel TDX 认证以及针对 AI 和 HPC 工作负载的 PCIe NUMA 拓扑感知，显著增强了企业级就绪能力。运维方面的改进包括无需重启虚拟机即可实时更新网络定义，以及使用变更块跟踪（CBT）的全新存储无关增量备份系统。随着测试规模扩展至 8，000 个虚拟机，该版本巩固了 KubeVirt 作为企业在 Kubernetes...
+2026-03-31 07:00:00
 
 
 

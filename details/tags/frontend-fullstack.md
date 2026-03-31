@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-01 00:20:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-01 02:16:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -488,9 +488,7 @@
 
 ### [发布：datasette-files-0.1a3](https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything)
 
-2026-03-30 23:58:49 | 标签: Datasette, Python, 开源, Web Components, 插件开发
-
-> datasette-files 插件的此版本（0.1a3）重点在于改善其与其他 Datasette 插件（如 datasette-extract）的集成。主要更新包括：通过 FileResource 引入了用于编辑和删除文件的范围权限控制；为 UI 提供了一个可复用的 <datasette-file-picker> Web Component；以及一个新的 Python API (get_file)，允许其他插件以编程方式访问文件数据。
+2026-03-30 23:58:49
 
 
 
@@ -634,17 +632,13 @@
 
 ### [TanStack-Start-引入导入保护功能，强制执行服务器与客户端边界](https://www.infoq.com/news/2026/03/tanstack-import-protection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-31 11:52:00 | 标签: TanStack Start, React, Vite, Web 安全, 全栈开发
-
-> TanStack Start 作为一个全栈 React 框架，推出了一项新的导入保护机制，以减轻因代码跨越服务器和客户端边界泄露而导致的安全风险和 Bug。该系统作为 Vite 插件运行，通过文件命名约定（例如 `*.server.*`、`*.client.*`）和显式标记（如 `server-only`）来监控导入。在开发过程中，违规行为会触发警告和递归代理，而在生产构建中，系统会严格终止构建并提供详细的诊断信息。此功能提供了与 Next.js 相当的安全保障，但针对 TanStack 的架构进行了定制，为开发者提供了针对敏感服务端逻辑或环境密钥意外暴露的自动化保护。
+2026-03-31 11:52:00
 
 
 
 ### [JavaScript-2025-状态调查：生态趋于成熟，TypeScript-巩固主导地位](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=4&sn=2681a4bd83a9d1e1e187323c066f9cc3)
 
-2026-03-31 05:31:00 | 标签: JavaScript, TypeScript, Vite, React, Next.js
-
-> 本文总结了 2025 年 JavaScript 现状调查报告的核心发现。报告指出，JavaScript 生态已从历经多年的快速迭代转向成熟稳定。TypeScript 的完全使用率升至 40%，已成为事实上的行业标准。在构建工具方面，Vite 以 98% 的开发者满意度实质性取代了 Webpack 的地位，而基于 Rust 的工具如 Rolldown 开始崭露头角。前端框架领域 React 虽维持高使用率，但其元框架 Next.js 因复杂度过高引发开发者担忧。此外，AI 开发工具市场发生显著变化，Claude 和 Cursor 的份额大幅增长，反映了开发者对更专业 AI 编程助手的偏好。
+2026-03-31 05:31:00
 
 
 
