@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-03-31 14:25:35 | [返回首页](/README.md)
+**更新时间**: 2026-03-31 16:20:34 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10614)
+- [AI & 大模型](#ai-llm) (10616)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (747)
 - [DevOps](#devops) (474)
@@ -43,7 +43,7 @@
 - [我复刻了-Claude-刚发布的生成式-UI-交互！](https://mp.weixin.qq.com/s?__biz=MzU0MDk3NTUxMA==&mid=2247496050&idx=1&sn=3a73827c96fc93eac10a3e5b4e0d36ce) - AI 精选
 - [我在-Pragmatic-Summit-炉边谈话中探讨智能体工程](https://simonwillison.net/2026/Mar/14/pragmatic-summit/#atom-everything) - AI 精选
 
-- [查看全部 10614 篇...](/details/tags/ai-llm.md)
+- [查看全部 10616 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
