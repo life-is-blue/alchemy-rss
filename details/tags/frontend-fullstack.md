@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 06:10:12 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 08:13:11 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -624,6 +624,22 @@
 
 
 
+### [如何在-React-中设计类型安全、懒加载且安全的插件架构](https://www.freecodecamp.org/news/how-to-design-a-type-safe-lazy-and-secure-plugin-architecture-in-react/)
+
+2026-03-30 18:06:36 | 标签: React, TypeScript, 插件架构, 软件设计, Vite
+
+> 本教程探讨了 React 应用插件架构的设计与实现，旨在解决单体代码库扩展带来的挑战。文章详细阐述了五个核心支柱：定义稳健的 Host API 作为契约、管理插件生命周期（初始化、挂载、卸载）、使用 Vite 等工具进行独立打包以避免耦合、通过运行时懒加载提升性能，以及通过受限 API 或沙箱机制加强安全性。作者提供了实用的 TypeScript 示例，讨论了用于安全性的 CI/CD 集成，并概述了最佳实践以及在何种情况下插件架构可能属于过度设计。
+
+
+
+### [如何使用-JavaScript-构建二维码生成器-——-分步指南](https://www.freecodecamp.org/news/how-to-build-a-qr-code-generator-using-javascript/)
+
+2026-03-30 14:22:19 | 标签: JavaScript, 二维码, 前端开发, Web API, 客户端
+
+> 本教程提供了创建完全在浏览器中运行的二维码生成器的全面指南。通过使用 `qr-code-styling` JavaScript 库，本指南解释了如何在无需后端服务器的情况下，将用户提供的文本或 URL 转换为可扫描的二维码。关键主题包括设置 HTML 结构、实现生成逻辑、验证用户输入以及增强用户界面。文章还讨论了客户端处理的优势，例如提高数据隐私性和降低延迟，并建议了通过自定义颜色、徽标和多种文件格式导出功能来扩展项目的方法。
+
+
+
 ### [FOSDEM-2026：WebTransport-简介——下一个-WebSocket？！](https://www.infoq.com/news/2026/03/fosdem-webtransport-vs-websocket/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-03-29 20:53:00
@@ -714,13 +730,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -870,13 +886,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2370,13 +2386,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4080,13 +4096,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

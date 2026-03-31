@@ -1,0 +1,58 @@
+{
+  "id": "RAW_3adbb4bb",
+  "title": "Mr. Chatterbox 是一个（性能较弱的）维多利亚时代伦理训练模型，你可以在自己的电脑上运行",
+  "url": "https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything",
+  "date": "2026-03-30 14:28:34",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <div data-permalink-context=\"/2026/Mar/30/mr-chatterbox/\">\n    <p class=\"mobile-date\">30th March 2026</p>\n    <p>Trip Venturella released <a href=\"https://huggingface.co/tventurella/mr_chatterbox_model\">Mr. Chatterbox</a>, a language model trained entirely on out-of-copyright text from the British Library. Here’s how he describes it:</p>\n    <blockquote>\n     <p>Mr. Chatterbox is a language model trained entirely from scratch on a corpus of over 28,000 Victorian-era British texts published between 1837 and 1899, drawn from a dataset made available <a href=\"https://huggingface.co/datasets/TheBritishLibrary/blbooks\">by the British Library</a>. The model has absolutely no training inputs from after 1899 — the vocabulary and ideas are formed exclusively from nineteenth-century literature.</p>\n     <p>Mr. Chatterbox’s training corpus was 28,035 books, with an estimated 2.93 billion input tokens after filtering. The model has roughly 340 million paramaters, roughly the same size as GPT-2-Medium. The difference is, of course, that unlike GPT-2, Mr. Chatterbox is trained entirely on historical data.</p>\n    </blockquote>\n    <p>Given how hard it is to train a useful LLM without using vast amounts of scraped, unlicensed data I’ve been dreaming of a model like this for a couple of years now. What would a model trained on out-of-copyright text be like to chat with?</p>\n    <p>Thanks to Trip we can now find out for ourselves!</p>\n    <p>The model itself is tiny, at least by Large Language Model standards—just <a href=\"https://huggingface.co/tventurella/mr_chatterbox_model/tree/main\">2.05GB</a> on disk. You can try it out using Trip’s <a href=\"https://huggingface.co/spaces/tventurella/mr_chatterbox\">HuggingFace Spaces demo</a>:</p>\n    <p style=\"text-align: center\"><img src=\"https://static.simonwillison.net/static/2026/chatterbox.jpg\" alt=\"Screenshot of a Victorian-themed chatbot interface titled &quot;🎩 Mr. Chatterbox (Beta)&quot; with subtitle &quot;The Victorian Gentleman Chatbot&quot;. The conversation shows a user asking &quot;How should I behave at dinner?&quot; with the bot replying &quot;My good fellow, one might presume that such trivialities could not engage your attention during an evening's discourse!&quot; The user then asks &quot;What are good topics?&quot; and the bot responds &quot;The most pressing subjects of our society— Indeed, a gentleman must endeavor to engage the conversation with grace and vivacity. Such pursuits serve as vital antidotes against ennui when engaged in agreeable company.&quot; A text input field at the bottom reads &quot;Say hello...&quot; with a send button. The interface uses a dark maroon and cream color scheme.\" style=\"max-width: 80%;\"></p>\n    <p>Honestly, it’s pretty terrible. Talking with it feels more like chatting with a Markov chain than an LLM—the responses may have a delightfully Victorian flavor to them but it’s hard to get a response that usefully answers a question.</p>\n    <p>The <a href=\"https://arxiv.org/abs/2203.15556\">2022 Chinchilla paper</a> suggests a ratio of 20x the parameter count to training tokens. For a 340m model that would suggest around 7 billion tokens, more than twice the British Library corpus used here. The smallest Qwen 3.5 model is 600m parameters and that model family starts to get interesting at 2b—so my hunch is we would need 4x or more the training data to get something that starts to feel like a useful conversational partner.</p>\n    <p>But what a fun project!</p>\n    <h4 id=\"running-it-locally-with-llm\">Running it locally with LLM</h4>\n    <p>I decided to see if I could run the model on my own machine using my <a href=\"https://llm.datasette.io/\">LLM</a> framework.</p>\n    <p>I got Claude Code to do most of the work—<a href=\"https://gisthost.github.io/?7d0f00e152dd80d617b5e501e4ff025b/index.html\">here’s the transcript</a>.</p>\n    <p>Trip trained the model using Andrej Karpathy’s <a href=\"https://github.com/karpathy/nanochat\">nanochat</a>, so I cloned that project, pulled the model weights and told Claude to build a Python script to run the model. Once we had that working (which ended up needing some extra details from the <a href=\"https://huggingface.co/spaces/tventurella/mr_chatterbox/tree/main\">Space demo source code</a>) I had Claude <a href=\"https://llm.datasette.io/en/stable/plugins/tutorial-model-plugin.html\">read the LLM plugin tutorial</a> and build the rest of the plugin.</p>\n    <p><a href=\"https://github.com/simonw/llm-mrchatterbox\">llm-mrchatterbox</a> is the result. Install the plugin like this:</p>\n    <pre><code>llm install llm-mrchatterbox\n</code></pre>\n    <p>The first time you run a prompt it will fetch the 2.05GB model file from Hugging Face. Try that like this:</p>\n    <pre><code>llm -m mrchatterbox \"Good day, sir\"\n</code></pre>\n    <p>Or start an ongoing chat session like this:</p>\n    <pre><code>llm chat -m mrchatterbox\n</code></pre>\n    <p>If you don’t have LLM installed you can still get a chat session started from scratch using uvx like this:</p>\n    <pre><code>uvx --with llm-mrchatterbox llm chat -m mrchatterbox\n</code></pre>\n    <p>When you are finished with the model you can delete the cached file using:</p>\n    <pre><code>llm mrchatterbox delete-model\n</code></pre>\n    <p>This is the first time I’ve had Claude Code build a full LLM model plugin from scratch and it worked really well. I expect I’ll be using this method again in the future.</p>\n    <p>I continue to hope we can get a useful model from entirely public domain data. The fact that Trip was able to get this far using nanochat and 2.93 billion training tokens is a promising start.</p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/entry/9239/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 介绍了 Mr. Chatterbox，这是一个拥有 3.4 亿参数的 LLM，完全使用维多利亚时代的公有领域文本进行训练，并提供了一个插件以便在本地运行。",
+  "oneSentenceSummary": "Simon Willison 介绍了 Mr. Chatterbox，这是一个拥有 3.4 亿参数的 LLM，完全使用维多利亚时代的公有领域文本进行训练，并提供了一个插件以便在本地运行。",
+  "summary": "本文介绍了 Mr. Chatterbox，这是一个由 Trip Venturella 训练的独特语言模型，使用了 1837 年至 1899 年间出版的超过 28，000 本大英图书馆书籍的语料库。虽然该模型的对话性能有限（作者将其归因于相对于 Chinchilla 缩放定律训练不足），但它代表了使用完全公有领域数据构建 LLM 的一项重要实验。文章详细介绍了该模型的技术规格，并提供了如何使用为 LLM CLI 工具新开发的插件在本地运行它的实用指南，值得一提的是，该插件是由 Claude Code AI 智能体构建的。",
+  "mainPoints": [
+    {
+      "point": "Mr. Chatterbox 完全基于维多利亚时代的公有领域数据进行训练。",
+      "explanation": "该模型使用了 1837 年至 1899 年间出版的 28，035 本书中的 29.3 亿个 token，避免了现代抓取数据集所带来的法律和伦理复杂性。"
+    },
+    {
+      "point": "该模型的性能受到缩放定律缺陷的限制。",
+      "explanation": "该模型拥有 3.4 亿参数，仅有约 30 亿个 token，未达到 Chinchilla 最优比例，导致其回答感觉更像是马尔可夫链，而非现代 LLM。"
+    },
+    {
+      "point": "通过一个新的 LLM 插件实现本地运行。",
+      "explanation": "作者发布了“llm-mrchatterbox”，允许用户下载该 2.05GB 的模型，并使用 LLM CLI 框架在本地进行对话。"
+    },
+    {
+      "point": "AI 智能体可以显著加速利基工具的开发。",
+      "explanation": "作者使用 Claude Code 自动化创建了该 Python 插件，展示了一种将新模型集成到现有生态系统中的高效工作流。"
+    }
+  ],
+  "keyQuotes": [
+    "Mr. Chatterbox 是一个完全从零开始训练的语言模型，语料库包含 1837 年至 1899 年间出版的超过 28，000 本维多利亚时代的英国书籍。",
+    "老实说，它相当糟糕。与它交谈感觉更像是与马尔可夫链聊天，而不是与 LLM 对话。",
+    "我仍然希望我们能从完全公有领域的数据中获得一个有用的模型。",
+    "这是我第一次让 Claude Code 从零开始构建一个完整的 LLM 模型插件，而且效果非常好。"
+  ],
+  "tags": [
+    "LLM",
+    "公有领域",
+    "维多利亚文学",
+    "本地 LLM",
+    "AI 伦理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 587,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774880914000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-30 14:28:34"
+}

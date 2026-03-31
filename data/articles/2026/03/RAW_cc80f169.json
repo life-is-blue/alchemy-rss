@@ -1,0 +1,53 @@
+{
+  "id": "RAW_cc80f169",
+  "title": "阿里发布 Qwen3.5-Omni，多模态能力超越 Gemini-3.1 Pro",
+  "url": "https://www.qbitai.com/2026/03/393460.html",
+  "date": "2026-03-30 14:21:45",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>3月30日，阿里发布千问新一代全模态大模型Qwen3.5-Omni，在音视频理解、识别、交互等215项任务中取得SOTA（性能最佳），超越Gemini-3.1 Pro，成为目前全球最强的全模态大模型之一。新模型拥有极强的音视频理解与实时交互能力，能够对音视频内容生成详细且可控的结构化描述，可识别语言和方言数量多达113种，还惊喜地涌现出了音视频Vibe Coding能力。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-393461\" src=\"https://image.jido.dev/20260330150314_b15dd48bd35b3100d349957931bf3c63.jpg\" alt=\"\" width=\"896\" height=\"676\" srcset=\"https://image.jido.dev/20260330150314_b15dd48bd35b3100d349957931bf3c63.jpg 896w, https://image.jido.dev/20260330150313_b15dd48bd35b3100d349957931bf3c63-768x579.jpg 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p>目前，阿里云百炼已上新Qwen3.5-Omni的Plus、Flash、Light三种API，可广泛应用于短视频/直播平台、游戏、自媒体等行业。普通用户也可前往Qwen Chat免费体验，开发者和企业可通过阿里云百炼平台调用Qwen3.5-Omni模型，每百万Tokens输入不到0.8元，比Gemini-3.1 Pro的1/10还低。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阿里发布全模态大模型 Qwen3.5-Omni，在音视频理解与交互等 215 项任务中取得 SOTA，性能超越 Gemini-3.1 Pro 且价格极具竞争力。",
+  "oneSentenceSummary": "阿里发布全模态大模型 Qwen3.5-Omni，在音视频理解与交互等 215 项任务中取得 SOTA，性能超越 Gemini-3.1 Pro 且价格极具竞争力。",
+  "summary": "阿里正式发布新一代全模态大模型 Qwen3.5-Omni。该模型在音视频理解、识别及实时交互等 215 项任务中表现卓越，超越了 Google 的 Gemini-3.1 Pro，成为全球最强的全模态模型之一。其核心优势包括支持 113 种语言方言、极强的音视频结构化描述能力，以及新兴的音视频 Vibe Coding 能力。目前，该模型已通过阿里云百炼平台提供 Plus、Flash、Light 三种 API 版本，且调用成本极低，每百万 tokens 输入不足 0.8 元，仅为竞争对手的十分之一。",
+  "mainPoints": [
+    {
+      "point": "Qwen3.5-Omni 在全模态任务中表现强劲，超越 Gemini-3.1 Pro。",
+      "explanation": "在涵盖音视频理解、识别和交互的 215 项任务中取得 SOTA，标志着国产大模型在多模态领域达到全球领先水平。"
+    },
+    {
+      "point": "具备极强的多语言支持与音视频处理能力。",
+      "explanation": "支持 113 种语言和方言，能生成详细且可控的音视频结构化描述，并涌现出音视频 Vibe Coding 能力。"
+    },
+    {
+      "point": "极致的性价比与多版本 API 部署。",
+      "explanation": "提供 Plus、Flash、Light 三种版本，价格仅为 Gemini-3.1 Pro 的十分之一，大幅降低了开发者的使用门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "在音视频理解、识别、交互等 215 项任务中取得 SOTA（性能最佳），超越 Gemini-3.1 Pro。",
+    "可识别语言和方言数量多达 113 种，还惊喜地涌现出了音视频 Vibe Coding 能力。",
+    "每百万 Tokens 输入不到 0.8 元，比 Gemini-3.1 Pro 的 1/10 还低。"
+  ],
+  "tags": [
+    "Qwen3.5-Omni",
+    "全模态大模型",
+    "阿里云",
+    "音视频理解",
+    "Vibe Coding"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 350,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774880505000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-30 14:21:45"
+}

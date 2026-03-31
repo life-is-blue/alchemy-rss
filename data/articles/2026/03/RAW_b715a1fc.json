@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b715a1fc",
+  "title": "来自 Georgi Gerganov 的引用",
+  "url": "https://simonwillison.net/2026/Mar/30/georgi-gerganov/#atom-everything",
+  "date": "2026-03-30 21:31:02",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th March 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://twitter.com/ggerganov/status/2038674698809102599\">\n     <p>Note that the main issues that people currently unknowingly face with local models mostly revolve around the harness and some intricacies around model chat templates and prompt construction. Sometimes there are even pure inference bugs. From typing the task in the client to the actual result, there is a long chain of components that atm are not only fragile - are also developed by different parties. So it's difficult to consolidate the entire stack and you have to keep in mind that what you are currently observing is with very high probability still broken in some subtle way along that chain.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://twitter.com/ggerganov/status/2038674698809102599\">Georgi Gerganov</a>, <span class=\"context\">explaining why it's hard to find local models that work well with coding agents</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2129/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Georgi Gerganov 解释说，在编码智能体中使用本地模型之所以困难，是因为推理链条脆弱且碎片化，涉及聊天模板、提示词构建和细微的 Bug。",
+  "oneSentenceSummary": "Georgi Gerganov 解释说，在编码智能体中使用本地模型之所以困难，是因为推理链条脆弱且碎片化，涉及聊天模板、提示词构建和细微的 Bug。",
+  "summary": "llama.cpp 的创建者 Georgi Gerganov 指出了本地 LLM 采用过程中面临的系统性挑战，特别是在编码等复杂任务中。他指出，从用户客户端到最终输出的推理链条由许多不同的组件组成，包括执行框架、聊天模板和提示词逻辑，这些组件通常由不同的方开发。这种碎片化导致了细微且往往未被察觉的故障，从而降低了模型性能，使得难以实现自主智能体所需的可靠性。",
+  "mainPoints": [
+    {
+      "point": "本地 LLM 技术栈目前是碎片化且脆弱的。",
+      "explanation": "从客户端输入到推理结果的链条涉及多个由不同方开发的组件，导致了集成问题和缺乏整合。"
+    },
+    {
+      "point": "细微的技术复杂性往往会降低模型性能。",
+      "explanation": "聊天模板和提示词构建方面的问题往往是导致结果不佳的根本原因，而不是模型本身的能力问题。"
+    },
+    {
+      "point": "推理 Bug 很常见，且往往未被察觉。",
+      "explanation": "推理引擎或执行框架中的纯软件 Bug 可能导致输出错误，用户可能会将其误归咎于模型质量。"
+    }
+  ],
+  "keyQuotes": [
+    "从在客户端输入任务到得到实际结果，中间有一长串组件，它们目前不仅脆弱，而且是由不同方开发的。",
+    "你目前观察到的结果，极大概率在这一链条的某个环节上仍然存在细微的错误。",
+    "人们目前在使用本地模型时在不知不觉中面临的主要问题，大多围绕着执行框架，以及模型聊天模板和提示词构建方面的一些复杂细节。"
+  ],
+  "tags": [
+    "本地 LLM",
+    "llama.cpp",
+    "推理",
+    "编码智能体",
+    "聊天模板"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 121,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774906262000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-30 21:31:02"
+}

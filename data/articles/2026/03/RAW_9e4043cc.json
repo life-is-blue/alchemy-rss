@@ -1,0 +1,49 @@
+{
+  "id": "RAW_9e4043cc",
+  "title": "发布：datasette-llm 0.1a3",
+  "url": "https://simonwillison.net/2026/Mar/30/datasette-llm/#atom-everything",
+  "date": "2026-03-30 19:48:43",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a3\">datasette-llm 0.1a3</a></span> <span class=\"beat-commit\">— LLM integration plugin for other plugins to depend on</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Adds the ability to configure <a href=\"https://github.com/datasette/datasette-llm/tree/0.1a3#purpose-specific-configuration\">which LLMs are available for which purpose</a>, which means you can restrict the list of models that can be used with a specific plugin. <a href=\"https://github.com/datasette/datasette-llm/issues/3\">#3</a></p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4069/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-llm 0.1a3 发布，引入了特定用途的 LLM 配置，允许开发者限制特定插件可用的模型。",
+  "oneSentenceSummary": "datasette-llm 0.1a3 发布，引入了特定用途的 LLM 配置，允许开发者限制特定插件可用的模型。",
+  "summary": "本发布说明宣布了 datasette-llm 0.1a3 版本，这是一个旨在供其他 Datasette 插件集成 LLM 功能的基础插件。此次更新的主要内容是引入了特定用途的配置，使管理员能够定义哪些特定的 LLM 可用于不同的插件功能，从而增强了对 Datasette 生态系统中模型使用的控制和约束。",
+  "mainPoints": [
+    {
+      "point": "引入特定用途的 LLM 配置。",
+      "explanation": "开发者现在可以限制特定插件可用的模型列表，确保只有合适的模型被用于指定任务。"
+    },
+    {
+      "point": "用于 Datasette LLM 集成的基础插件。",
+      "explanation": "datasette-llm 插件作为其他插件的核心依赖，为平台内的 LLM 交互提供了标准化的基础设施。"
+    }
+  ],
+  "keyQuotes": [
+    "供其他插件依赖的 LLM 集成插件",
+    "增加了配置哪些 LLM 可用于哪些特定用途的功能",
+    "限制特定插件可使用的模型列表"
+  ],
+  "tags": [
+    "Datasette",
+    "LLM",
+    "Python",
+    "开源",
+    "插件开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 46,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774900123000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-30 19:48:43"
+}
