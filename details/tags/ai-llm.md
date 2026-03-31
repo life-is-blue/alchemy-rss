@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 12:47:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 14:25:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11288,9 +11288,7 @@
 
 ### [AI-新闻-科技行业的最后-4-个岗位](https://www.latent.space/p/ainews-the-last-4-jobs-in-tech)
 
-2026-03-31 01:04:54 | 标签: AI 智能体, Claude Code, Qwen3.5, 本地 LLM, 软件工程
-
-> 本文对 AI 领域进行了高密度的回顾，首先提出了后 AI 时代科技角色的思维模型——坦克（Tank）、治疗（Healer）、输出（DPS）和辅助（Support），类似于 RPG 游戏中的角色定位。文章重点介绍了 Anthropic 的 Claude Code 增加了用于闭环验证的“计算机使用（computer use）”功能，以及“工具链工程（harness engineering）”这一新兴趋势，即编排层变得与模型本身同等重要。开源生态系统随着 Hermes Agent 的更新而激增，正向“智能体操作系统（agent OS）”抽象迈进。在硬件方面，本地推理达到了一个里程碑，llama.cp...
+2026-03-31 01:04:54
 
 
 
@@ -33832,17 +33830,13 @@
 
 ### [Harness-Engineering-来了，SDD-还有意义吗？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695017&idx=1&sn=e37650a0f3334a69646fea9959c0297e)
 
-2026-03-31 00:46:00 | 标签: Harness Engineering, SDD, AI Coding, Agent Workflow, 软件工程
-
-> 文章深入分析了由 OpenAI 和 Mitchell Hashimoto 提出的 Harness Engineering（支撑体系工程）概念，并探讨了其与规范驱动开发（SDD）的协同关系。作者指出，Harness Engineering 并非让规范变得多余，而是作为放大器，使结构化 Spec（规范）的重要性愈发凸显。在 AI 辅助编程的新范式下，工程纪律正从「写好代码」转向「构建好让 Agent 工作的脚手架（scaffolding）」。  文章详细阐述了 Spec 在 Harness 体系中的三大核心角色：作为 Agent 推理的地图实现渐进式披露、提供 linter 无法覆盖的语义约束基础...
+2026-03-31 00:46:00
 
 
 
 ### [CoPaw-深度解析：源码架构和功能实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559269&idx=1&sn=a87c6b0f00c2ccee4a25901df995c65b)
 
-2026-03-31 00:30:00 | 标签: CoPaw, AgentScope, AI Agent, Agent Skill, MCP
-
-> 文章对通义实验室发布的开源 Agent 工具 CoPaw 进行了全方位的技术拆解。首先详细介绍了 Agent Skill 这一标准化流程协议，阐述了其作为 LLM 和 Tool 之上第三层技术架构的核心作用。随后，文章深入剖析了 CoPaw 的八大技术模块，包括核心 Agent 类、可扩展的 Skills 系统、支持多协议的 MCP 客户端、具备动态聚合能力的记忆管理组件、支持云端与本地双部署的模型供应层、集成主流社交平台的 Channels 消息平台、任务执行工作流以及创新的 Cron Jobs 定时任务系统。最后，文章提供了详细的本地环境与阿里云 ACS 云端环境的部署指南及功能实践案例。
+2026-03-31 00:30:00
 
 
 
@@ -62104,9 +62098,7 @@ http://antirez.com/news/162
 
 ### [Vol.110｜养虾时代，OpenClaw-让打工人何去何从？](https://www.xiaoyuzhoufm.com/episode/69ca3e32b977fb2c47a0457d)
 
-2026-03-31 01:00:00 | 标签: AI Agent, 数字员工, OpenClaw, Harness Engineering, 企业自动化
-
-> 本期播客聚焦 AI Agent（数字员工）从技术概念向企业实战演进的过程。Seele AI 创始人王诗沐分享了其推动全员 AI 自动化的激进决策，强调创业公司应通过变革追赶 AI 潮流；Junior.so CTO 宇豪则详细解析了其「数字员工」产品的逻辑：具备独立身份、以劳动力而非工具定价（月费 2000 美金）。核心内容涵盖了 AI 友好的「Harness Engineering」环境构建、企业数据安全的分级治理（T0-T2 风险定义）、以及「Context not Control」的管理哲学。讨论指出，AI 将重塑软件开发的范式，使企业从传统的 Build 模式转向「养虾（培养 Agent...
+2026-03-31 01:00:00
 
 
 

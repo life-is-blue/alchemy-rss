@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 12:47:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 14:25:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -12013,9 +12013,7 @@
 
 ### [Discord-开源-Osprey-安全规则引擎，每秒可处理-230-万条规则](https://www.infoq.com/news/2026/03/discord-osprey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-03-31 00:11:00 | 标签: Discord, Osprey, 开源, Rust, Python
-
-> Discord 已将 Osprey 作为开源项目发布，为工程社区提供了其用于实时威胁检测和自动响应的内部引擎。该系统专为处理海量规模而构建，每天评估 4 亿次操作。其架构特点是采用 Rust 协调器进行高并发流量管理，并使用无状态 Python 工作节点进行规则评估。规则使用 SML 编写，这是一种类似 Python 的 DSL，既确保了分析师的易用性，又允许工程师通过 Python UDF 扩展功能。随着 Bluesky 和 Matrix.org 的早期采用，Osprey 通过分离数据平面（Rust）和控制平面（Python），展示了一种高吞吐量系统的稳健模式。
+2026-03-31 00:11:00
 
 
 
@@ -31627,11 +31625,11 @@
 
 
 
-### [92.6%-开发者每月使用-AI-编码助手，但每周节省时间只有-4-小时](https://baoyu.io/blog/2026-02-25/laura-tacho-ai-pragmatic-summit)
+### [驾驭工程：在「智能体优先」的世界里借力-Codex](https://baoyu.io/translations/2026-02-12/harness-engineering)
 
-2026-02-25T00:00:00.000Z
+2026-02-26T00:00:00.000Z
 
-> DX 公司 CTO Laura Tacho 在 Pragmatic Summit 上公布了 12 万开发者、450 家公司的最新基准数据。AI 采用率已达 92.6%，但每周节省时间卡在 4 小时不动。更关键的发现是：同样的 AI 工具，有些公司事故减半，有些事故翻倍。差别不在工具，在组织本身。
+> OpenAI 团队分享了用 Codex 智能体从零构建百万行代码产品的经验：0 行人工代码，3 名工程师处理 1500 个 PR，完成时间仅为手工编码的十分之一。
 
 
 

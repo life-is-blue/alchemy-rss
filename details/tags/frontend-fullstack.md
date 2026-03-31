@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 12:47:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 14:25:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -4316,9 +4316,7 @@
 
 ### [Midjourney-工程师发布开源库-Pretext，旨在革新网页设计](https://venturebeat.com/technology/midjourney-engineer-debuts-new-vibe-coded-open-source-standard-pretext-to)
 
-2026-03-30 23:58:37 | 标签: Pretext, Web 性能, 前端架构, DOM 重排, TypeScript
-
-> Pretext 是一个 15KB 的 TypeScript 库，它通过“准备（prepare）”和“布局（layout）”的两阶段执行模型，绕过了浏览器 DOM 重排（reflow）的瓶颈。通过利用 Canvas 字体度量和纯算术运算，它实现了 300-600 倍的性能提升，使得以往无法实现的流畅、交互式文本布局成为可能。Pretext 由 Cheng Lou 利用 AI 辅助编程开发，将文本视为一种可编程的媒介而非静态文档，为生成式 UI（Generative UI）、高频数据仪表盘和复杂的编辑设计提供了巨大潜力。虽然它引入了需要更多工程维护的“胖客户端”权衡，但它代表了 Web 架构的一次...
+2026-03-30 23:58:37
 
 
 
