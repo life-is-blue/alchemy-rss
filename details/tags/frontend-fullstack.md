@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 11:00:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 12:47:07 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -726,13 +726,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -882,13 +882,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2382,13 +2382,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4092,13 +4092,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
@@ -4311,6 +4311,14 @@
 ### [刷题前必学！数组实战-双指针！用-JavaScript-学数据结构与算法](https://juejin.cn/post/7466133542687309859)
 
 2025-02-01 11:42:03
+
+
+
+### [Midjourney-工程师发布开源库-Pretext，旨在革新网页设计](https://venturebeat.com/technology/midjourney-engineer-debuts-new-vibe-coded-open-source-standard-pretext-to)
+
+2026-03-30 23:58:37 | 标签: Pretext, Web 性能, 前端架构, DOM 重排, TypeScript
+
+> Pretext 是一个 15KB 的 TypeScript 库，它通过“准备（prepare）”和“布局（layout）”的两阶段执行模型，绕过了浏览器 DOM 重排（reflow）的瓶颈。通过利用 Canvas 字体度量和纯算术运算，它实现了 300-600 倍的性能提升，使得以往无法实现的流畅、交互式文本布局成为可能。Pretext 由 Cheng Lou 利用 AI 辅助编程开发，将文本视为一种可编程的媒介而非静态文档，为生成式 UI（Generative UI）、高频数据仪表盘和复杂的编辑设计提供了巨大潜力。虽然它引入了需要更多工程维护的“胖客户端”权衡，但它代表了 Web 架构的一次...
 
 
 

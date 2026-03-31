@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5ae30e5a",
+  "title": "Discord 开源 Osprey 安全规则引擎，每秒可处理 230 万条规则",
+  "url": "https://www.infoq.com/news/2026/03/discord-osprey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 00:11:00",
+  "author": "Patrick Farry",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://discord.com/blog/osprey-open-sourcing-our-rule-engine\">Discord has open-sourced Osprey</a>, its internal event stream decisions engine capable of evaluating 2.3 million rules per second across 400 million daily actions. Engineered with a Rust coordinator and stateless Python worker nodes, Osprey provides a horizontally scalable architecture for real-time threat detection and mitigation. The project is managed in partnership with the <a href=\"https://roost.tools\">ROOST</a> organization and <a href=\"https://internet.dev\">internet.dev</a>. Osprey operates as an event stream decisions engine that investigates real-time platform activity and executes automated responses. By offering a scalable architecture, the project has seen early adoption by networks like Bluesky and Matrix.org. This open-source transition shifts a proprietary tool into a configurable resource for the broader engineering community.</p>\n   <p>Osprey evaluates JSON-formatted event payloads, called Actions, against dynamically loadable rules. These rules are written in SML, a domain-specific language with a Python syntax that supports static validation. SML provides accessibility for security analysts while remaining extensible for software engineers. Developers can expand the engine using User Defined Functions written in standard Python. UDFs define the standard library for Osprey and enable external API calls or machine learning model integrations. The system tracks state across specific targets, known as Entities, allowing operators to apply labels and classifications.</p>\n   <p>After processing an Action, the engine generates verdicts or effects that are routed to configurable output sinks. The open-source release utilizes the Pluggy Python library to provide integration points for these sinks, replacing internal Discord dependencies. A standard deployment utilizes Apache Kafka to route results into an Apache Druid cluster, which powers real-time analysis through the Osprey UI.</p>\n   <p>An InfoQ review of the <a href=\"https://github.com/roostorg/osprey\">roostorg/osprey</a> GitHub repository reveals a decoupled polyglot architecture designed to handle sustained event throughput. To manage high concurrency, the system employs a coordinator service written in Rust. The repository code shows the coordinator manages asynchronous event streams from message queues and prioritizes synchronous gRPC requests to maintain stable latency.</p>\n   <p>The rule evaluation occurs on stateless Python worker nodes. To optimize execution speed, the Python workers parse the SML rules into an Abstract Syntax Tree at startup. This step front-loads the compilation cost and minimizes per-event processing time. Rules are distributed to the workers via ETCD, enabling dynamic updates in production without requiring a redeployment of the application. Because the workers are stateless and containerized via Docker, organizations can horizontally scale processing capacity to accommodate traffic spikes. The combination of the Rust coordinator for traffic shaping and the scalable Python workers provides a resilient system for continuous event evaluation.</p>\n   <p>The adoption of Rust and Python polyglot architectures is becoming a standard pattern for systems that require high throughput. In this model, Rust serves as the data plane, managing network traffic, memory allocation, and high-concurrency execution. Python acts as the control plane, handling business logic, machine learning integrations, and user APIs. This separation allows engineering teams to maximize hardware utilization while maintaining developer velocity in the application layer. Osprey utilizes this pattern for event streaming, and it is also the foundation of widely adopted data tools. For example, the <a href=\"https://pola.rs\">Polars DataFrame</a> library&nbsp;and <a href=\"https://github.com/huggingface/tokenizers\">Hugging Face tokenizers</a> rely on a Rust core for compute-heavy operations while exposing a Python control plane for usability.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Discord Open Sources Osprey Safety Rules Engine Processing 2.3 Million Rules per Second\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Patrick Farry\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/discord-osprey/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774915860000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Discord 开源了 Osprey，这是一个高性能事件流决策引擎，利用 Rust 和 Python 的多语言架构，每秒可处理 230 万条规则。",
+  "oneSentenceSummary": "Discord 开源了 Osprey，这是一个高性能事件流决策引擎，利用 Rust 和 Python 的多语言架构，每秒可处理 230 万条规则。",
+  "summary": "Discord 已将 Osprey 作为开源项目发布，为工程社区提供了其用于实时威胁检测和自动响应的内部引擎。该系统专为处理海量规模而构建，每天评估 4 亿次操作。其架构特点是采用 Rust 协调器进行高并发流量管理，并使用无状态 Python 工作节点进行规则评估。规则使用 SML 编写，这是一种类似 Python 的 DSL，既确保了分析师的易用性，又允许工程师通过 Python UDF 扩展功能。随着 Bluesky 和 Matrix.org 的早期采用，Osprey 通过分离数据平面（Rust）和控制平面（Python），展示了一种高吞吐量系统的稳健模式。",
+  "mainPoints": [
+    {
+      "point": "高性能的解耦多语言架构。",
+      "explanation": "该系统使用 Rust 协调器来管理异步事件流和 gRPC 请求，而 Python 工作节点处理业务逻辑，从而最大限度地提高了硬件效率和开发速度。"
+    },
+    {
+      "point": "使用 SML 和 AST 优化的规则评估。",
+      "explanation": "规则使用 SML（一种 Python 语法的 DSL）编写，并在启动时解析为抽象语法树（AST），以最大限度地减少每个事件的处理时间并实现静态验证。"
+    },
+    {
+      "point": "动态更新和水平扩展性。",
+      "explanation": "通过使用 ETCD 进行规则分发和容器化无状态工作节点，该系统支持无需重新部署的实时规则更新，并可水平扩展以应对流量高峰。"
+    }
+  ],
+  "keyQuotes": [
+    "Osprey 为实时威胁检测和缓解提供了可水平扩展的架构。",
+    "采用 Rust 和 Python 的多语言架构正成为需要高吞吐量系统的标准模式。",
+    "Rust 作为数据平面，管理网络流量、内存分配和高并发执行。Python 则作为控制平面。"
+  ],
+  "tags": [
+    "Discord",
+    "Osprey",
+    "开源",
+    "Rust",
+    "Python"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 517,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774915860000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 00:11:00"
+}
