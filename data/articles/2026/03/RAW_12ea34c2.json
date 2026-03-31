@@ -1,0 +1,53 @@
+{
+  "id": "RAW_12ea34c2",
+  "title": "2700GB 高质量数据，训出空间智能 SOTA，背后秘诀全栈开源",
+  "url": "https://www.qbitai.com/2026/03/393864.html",
+  "date": "2026-03-31 05:53:04",
+  "author": "一凡",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"45\">一凡 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"46\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">什么在限制空间智能落地？</p>\n  <p data-track=\"3\">从自动驾驶到具身智能，行业对此的共识是：<strong>数据</strong>。</p>\n  <p data-track=\"4\">因为数据不够，模型泛化能力就弱，只能靠硬件来凑。</p>\n  <p data-track=\"5\"><strong>这在机器人身上体现得尤为明显</strong>。机器人要感知空间，常用的硬件是RGB-D相机，它既能看懂RGB图像，又能感知深度，从而获取到三维立体信息，让机器人理解物理世界。</p>\n  <p data-track=\"6\">但问题是，机器人的这双眼并不靠谱，遇到<strong>镜子、电梯、玻璃门</strong>等透明物体或者反光表面，RGB-D相机就容易失效，导致机器人感知异常。</p>\n  <p data-track=\"7\">这些场景绕不开，躲不掉，都是机器人走进千家万户，一定会碰到的问题，必须要解决。但因为缺少数据底座，行业过去的解决方式一般是靠堆硬件，补短板，强化感知能力。</p>\n  <p data-track=\"8\"><strong>这种局面即将迎来改变</strong>。因为就在刚刚，具身智能的基建玩家出手，对症下药，推出了一个开源数据基座。基于这个基座训练的模型，都已经实现SOTA了。</p>\n  <p data-track=\"10\">空间智能给了机器人一双眼睛和小脑，机器人靠它才能实现感知、规划、导航和精细操作。</p>\n  <p data-track=\"11\"><strong>比如说机器人需要拿起面前的杯子，它不光要看懂这是杯子，还需要知道杯子离自己有多远、边界在哪儿。</strong></p>\n  <p data-track=\"12\">问题是，实现空间智能并不容易，需要依靠大规模、高质量的数据。互联网上已有的海量RGB图像，规模确实大但不符合要求，因为它只能“喂”给AI二维信息，AI很难从中生长出三维空间的理解能力。</p>\n  <p data-track=\"13\">所以行业这些年一直在给AI补空间理解这门课，路线也不少，有<strong>RGB-D相机</strong>、激光雷达和3D重建等方法。</p>\n  <p data-track=\"14\">其中RGB-D相机路线一直都很受欢迎，因为<strong>它就像给AI开了“第三只眼”，不光能测长和宽，还能测量距离</strong>，而且不需要复杂后处理，可以实时感知环境。</p>\n  <p data-track=\"15\">但RGB-D路线也有不足，主要有两个问题。首先第一个问题是，<strong>采集任务本身比较困难</strong>，不是说简单地举个相机，找个机位，“咔嚓”一拍就完事儿。不仅需要检查左右图像一致性，还要对RGB图像和深度信息进行时空同步，以及处理不同硬件之间的差异。</p>\n  <p data-track=\"16\">这还不算完，获取到RGB-D数据后，第二个问题接着就来了，研究者会发现其实RGB-D相机有时候很不靠谱，碰到玻璃、镜面、金属反光材质和白墙这种低纹理表面就容易失效。</p>\n  <p data-track=\"17\">还是以<strong>机器人拿杯子</strong>为例，咱们日常生活看到的杯子一般都长这样：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063316_52596b7380c179a15fb370a717f6a4a8.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"18\">而在RGB-D相机的深度传感器下，杯子be like酱婶儿：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063318_8c99b0143cad4f38c2a37e0a14decec5.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"19\">在机器人的视角里，两个杯子直接连成了一块，根本难以分辨，也自然无法准确拿取。RGB-D相机的不稳定，进一步导致了高质量RGB-D数据的缺失。</p>\n  <p data-track=\"21\">为了缓解行业的数据痛点，蚂蚁灵波最近开源了<strong>LingBot-Depth-Dataset数据集</strong>，其总体规模达到<strong>2.71TB</strong>，包含<strong>300万对</strong>标注RGB-D数据，<strong>每一对样本都包含一张RGB图像、传感器原始深度图和真值深度图</strong>。</p>\n  <p data-track=\"22\">其中大部分都是真实数据，大约有<strong>200万对</strong>，140万对是由多台RGB-D相机采集自真实室内场景的数据RobbyReal（如下图所示），<strong>以及58万对由机器人在VLA任务中采集的数据RobbyVla</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063316_0607261644084eab992df473cb459269.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"23\"><strong>这些真实数据的来源非常广泛，包括住宅、教室、博物馆、商店、医院、健身房和电梯等各种生活场景</strong>，数据来源丰富，作为训练底座时就能增强模型的泛化性。</p>\n  <p data-track=\"24\">此外还有约100万对由双相机视角渲染生成的合成数据<strong>RobbySim</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063319_a68dcd901cd0b34f867004bf7f2fd0ad.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"25\">其余部分都是<strong>RobbySimVal</strong>，含有<strong>3.8万条</strong>数据，作为仿真数据的验证集。这种虚实融合采集数据的方式，既能覆盖一些边缘场景，也能降低数据采集成本。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063317_fd9627d21adc0277507429ef664eaa2f.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"26\">规模大、场景丰富，只是数据集可以被行业广泛使用的必要条件，但还不是全部。</p>\n  <p data-track=\"27\">LingBot-Depth-Dataset还有一个值得关注的地方在于数据分布的多样性，它在构建时使用<strong>Orbbec 335、335L，RealSense D405、D415、D435、D455这6款主流深度相机进行采集</strong>，不同相机在成像特性、噪声模式、深度精度上各有差异，使得数据集天然覆盖了多种传感器分布，为下游研究和模型训练提供了更丰富的数据基础。</p>\n  <p data-track=\"28\">这意味着这座数据金矿，可以被更多研发团队挖掘，成为空间智能的数据基建。</p>\n  <p data-track=\"30\"><strong>蚂蚁灵波开源的这套数据基建，缓解了开源社区缺乏真实场景拍摄数据的问题，不仅量大管饱，而且战绩可查</strong>。</p>\n  <p data-track=\"31\">今年年初，蚂蚁灵波发布了<strong>LingBot-Depth模型</strong>，LingBot-Depth主要基于<strong>LingBot-Depth-Dataset</strong>数据集训练，<strong>在多项权威深度补全基准测试如iBims、NYUv2和DIODE上实现了SOTA</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063317_ae4a00943ebb0212f2b29c3473d495b9.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"32\"><strong>而当LingBot-Depth部署到真实环境后，可以驱动机器人稳健抓取透明和反光物体，这在以往可以说是天方夜谭的事情。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063317_3dc1e7cda6cfd52f19e18d2a6f5304a7.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"33\">随后，蚂蚁灵波又紧接着开源了<strong>LingBot-VLA</strong>，打通视觉、语言和动作，驱动机器人做出决策。</p>\n  <p data-track=\"34\">紧随其后开源的<strong>LingBot-World</strong>，则为模型提供了仿真训练场。</p>\n  <p data-track=\"35\">当时压轴登场的<strong>LingBot-VA</strong>，则率先让世界模型直接驱动机器人动作，实现了<strong>“边推演，边执行”</strong>，引领了具身研究的趋势。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260331063316_6c3dbb49c9585fbeac738442d1fbaa05.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"36\">从感知到决策，从模型到数据，<strong>蚂蚁灵波正在打造具身智能的“大脑平台”</strong>。其最新开源成果，也启发着行业思维转向。</p>\n  <p data-track=\"38\">追根溯源来看，这种通过软件方法加强感知能力，而不是一味堆传感器的思想，体现了计算机科学中的<strong>软件硬件等效原理</strong>。</p>\n  <p data-track=\"39\">那软件和硬件手段应该如何取舍？与具身智能同属物理AI的自动驾驶行业，已在该问题上形成了共识，值得参考借鉴：</p>\n  <p data-track=\"40\"><strong>首先最值得重视的是数据和算法架构</strong>。前者是AI迭代的基石，后者是指将多个算法整合形成合力，并长期积累的能力。</p>\n  <p data-track=\"41\"><strong>其次才是堆更多数量和价格更高的传感器</strong>。自动驾驶从业者普遍认为，随着数据越来越多，再加上算法架构持续升级，模型的空间感知能力会越来越强，这时再堆传感器，虽然有用，但是提升的效果会越来越弱。</p>\n  <p data-track=\"42\">正是有了这样的共识，行业才打下了硬件成本，为自动驾驶商业化繁荣奠定了基础。</p>\n  <p data-track=\"43\">自动驾驶的实践已经证明，物理AI落地，优先考虑软件手段，这并不会削弱空间智能，还可以推动商业化。这同样也是蚂蚁灵波开源一系列模型和数据集，给具身智能行业带来的启发：</p>\n  <p data-track=\"44\"><strong>加强空间智能，数据算法优先，不必追逐昂贵硬件。</strong></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "蚂蚁灵波开源 2.71TB 高质量空间智能数据集 LingBot-Depth-Dataset，通过 300 万对 RGB-D 数据解决机器人感知透明与反光物体的难题。",
+  "oneSentenceSummary": "蚂蚁灵波开源 2.71TB 高质量空间智能数据集 LingBot-Depth-Dataset，通过 300 万对 RGB-D 数据解决机器人感知透明与反光物体的难题。",
+  "summary": "本文介绍了蚂蚁灵波（Ant LingBot）最新开源的 LingBot-Depth-Dataset 空间智能数据集。该数据集规模达 2.71TB，包含 300 万对标注的 RGB-D 数据，涵盖住宅、教室、医院等多种真实室内场景及合成数据。其核心价值在于解决了传统 RGB-D 相机在面对玻璃、镜面及低纹理表面时感知失效的痛点。基于此数据集训练的 LingBot-Depth 模型在 iBims、NYUv2 等权威测试中达到 SOTA 水平，证明了通过大规模高质量数据提升软件感知能力，可有效降低对昂贵硬件的依赖，为具身智能的商业化落地提供了新思路。",
+  "mainPoints": [
+    {
+      "point": "数据是限制空间智能落地的核心瓶颈，传统硬件方案难以处理复杂材质。",
+      "explanation": "RGB-D 相机在面对镜子、玻璃或反光表面时容易失效，导致机器人感知异常。过去行业多靠堆硬件补短板，但缺乏高质量的数据底座。"
+    },
+    {
+      "point": "LingBot-Depth-Dataset 提供了规模化且多样化的数据支撑。",
+      "explanation": "数据集包含 200 万对真实数据和 100 万对合成数据，覆盖 6 款主流深度相机，天然覆盖了多种传感器分布，显著增强了模型的泛化性。"
+    },
+    {
+      "point": "软件算法可等效替代昂贵硬件，推动具身智能商业化。",
+      "explanation": "通过大规模数据训练的深度补全模型，能让机器人在不增加硬件成本的前提下稳健抓取复杂物体，体现了「软件硬件等效原理」。"
+    }
+  ],
+  "keyQuotes": [
+    "加强空间智能，数据算法优先，不必追逐昂贵硬件。",
+    "这种通过软件方法加强感知能力，而不是一味堆传感器的思想，体现了计算机科学中的软件硬件等效原理。",
+    "在机器人的视角里，两个杯子直接连成了一块，根本难以分辨，也自然无法准确拿取。"
+  ],
+  "tags": [
+    "具身智能",
+    "空间智能",
+    "RGB-D 数据集",
+    "蚂蚁灵波",
+    "机器人感知"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 87,
+  "wordCount": 2410,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774936384000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 05:53:04"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_1b46967b",
+  "title": "JavaScript 2025 状态调查：生态趋于成熟，TypeScript 巩固主导地位",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=4&sn=2681a4bd83a9d1e1e187323c066f9cc3",
+  "date": "2026-03-31 05:31:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Daniel Curtis </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 张卫滨 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">2025 年 JavaScript 现状调查报告（调查于 2025 年 11 月开启并于 2026 年 2 月发布结果）收集了来自 JavaScript 生态系统开发者的反馈。这项由 Devographics 运营、谷歌 Chrome、JetBrains 等企业赞助的年度调查显示，历经多年快速迭代，JavaScript 生态已趋于稳定，工具、框架和语言偏好领域均出现了明确的领先者。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">本年度结果中最显著的趋势是 TypeScript 持续占据主导地位。40% 的受访者如今完全使用 TypeScript 开发（2024 年为 34%、2022 年为 28%），而仅使用纯 JavaScript 的受访者仅占 6%。Nuxt 核心团队负责人 Daniel Roe 在调查结论中 总结 了这一转变：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">TypeScript 已经赢了。不是作为打包器，而是作为一门语言。Deno 和 Bun 都早已支持它，如今借助类型剥离（type stripping）技术，你甚至可以在稳定版 Node.js 中编写原生的 TypeScript 代码。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">尽管如此，“缺乏静态类型” 仍然是受访者反馈的头号语言痛点。这表明尚未采用 TypeScript 的开发者仍对类型系统的缺失感到困扰。当被问及希望如何在 JavaScript 中 原生实现类型 时，类似 TypeScript 的类型注解以 5380 票位居第一，远超运行时类型（3524 票）。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 构建工具 领域，Vite 已经在实质上超越 Webpack。尽管 Webpack 的整体使用率（87%）略高于 Vite（84%），但二者的满意度差距悬殊，Vite 的满意度达 98%，而 Webpack 仅为 26%（较 2024 年的 36% 进一步下降）。有受访者在调查中表示，试图理解使用 Webpack 的遗留代码非常痛苦。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">由 Verce 赞助、基于 Rust 开发的 Webpack 替代方案 Turbopack 使用率仅为 28%，这表明 Vite 凭借先发优势和开发者体验优势形成的壁垒难以被打破。新兴的 Rust 系工具（比如，旨在作为 Vite 中 Rollup 即插即用替代品的 Rolldown）在 2025 年的使用率从 1% 跃升至 10%，这预示着 Rust 可能成为未来 JavaScript 构建流水线的底层支撑。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">前端框架的格局 异常稳定。React 仍是使用率最高的框架（83.6%），但调查揭示了明显的不满情绪。59% 的受访者使用了 Next.js，其正面情绪占比 21%、负面情绪占比 17%，是所有项目中引发评论最多的。</span></p>\n   <blockquote>\n    <p><span leaf=\"\">我在生产环境中编写 Next.js 已经快 6 年了……Next 的复杂度已经高得离谱。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">也有开发者拥有正面体验，但对它的未来和 Vercel 的战略表示了担忧：</span></p>\n   <blockquote>\n    <p style=\"margin-bottom: 8px;\"><span leaf=\"\">虽然我用 Next 的体验不错，但我很担心，因为 Vercel 正试图靠它赚钱。</span></p>\n    <p><span leaf=\"\">目前体验还不错，但我对它的未来深表怀疑。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Solid.js 连续第五年保持了最高的满意度。在元框架领域，主打“内容优先”的 Astro 持续扩张。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">AI 辅助开发领域迎来显著增长，Claude 的使用率从 22% 翻倍至 44%，Cursor 从 11% 上升到了 26%，而 ChatGPT 的使用率从 68% 下降至 60%。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">后端领域，Node.js 仍然占据主导（90%）地位，Bun 以 21% 的使用率位居第三（增长 4%），远超 Deno（11%）。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Temporal API 仍是最受期待的提案，它旨在解决长期存在的日期处理的痛点，不过随着从提案阶段转向 浏览器实现，开发者的热情有所降温（较上一年下降了 22%）。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">与 2024 年的版本 相比，本年度结果显示 JavaScript 生态正趋于“稳定”而非“动荡”，受访者的幸福感连续第五年稳定在 5 分制的 3.8 分。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">此前的调查结果和方法论细节可在 Devographics 的 GitHub 仓库 查阅，2025 年完整报告 可在线免费获取。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：&nbsp;</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">State of JavaScript 2025: Survey Reveals a Maturing Ecosystem with TypeScript Cementing Dominance</span></span><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">(<a href=\"https://www.infoq.com/news/2026/03/state-of-js-survey-2025/)\" target=\"_blank\">https://www.infoq.com/news/2026/03/state-of-js-survey-2025/)</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "2025 年 JavaScript 现状调查显示生态系统趋于稳定，TypeScript 确立统治地位，Vite 凭借极高满意度超越 Webpack，而 AI 开发工具呈现向 Claude 和 Cursor 转移的趋势。",
+  "oneSentenceSummary": "2025 年 JavaScript 现状调查显示生态系统趋于稳定，TypeScript 确立统治地位，Vite 凭借极高满意度超越 Webpack，而 AI 开发工具呈现向 Claude 和 Cursor 转移的趋势。",
+  "summary": "本文总结了 2025 年 JavaScript 现状调查报告的核心发现。报告指出，JavaScript 生态已从历经多年的快速迭代转向成熟稳定。TypeScript 的完全使用率升至 40%，已成为事实上的行业标准。在构建工具方面，Vite 以 98% 的开发者满意度实质性取代了 Webpack 的地位，而基于 Rust 的工具如 Rolldown 开始崭露头角。前端框架领域 React 虽维持高使用率，但其元框架 Next.js 因复杂度过高引发开发者担忧。此外，AI 开发工具市场发生显著变化，Claude 和 Cursor 的份额大幅增长，反映了开发者对更专业 AI 编程助手的偏好。",
+  "mainPoints": [
+    {
+      "point": "TypeScript 已经赢得语言之争，成为开发首选。",
+      "explanation": "40% 的开发者完全使用 TypeScript，Node.js 原生支持类型剥离技术进一步巩固了其作为一门语言的统治地位。"
+    },
+    {
+      "point": "构建工具发生代际更替，Vite 统治地位确立。",
+      "explanation": "Vite 凭借 98% 的极高满意度成为主流，而 Webpack 满意度跌至 26%，同时 Rust 系工具正成为未来构建流水线的底层支撑。"
+    },
+    {
+      "point": "React 统治地位下的隐忧与 Next.js 的复杂度危机。",
+      "explanation": "尽管 React 使用率最高，但其核心元框架 Next.js 的高复杂度以及 Vercel 的商业化策略让部分开发者感到不安和怀疑。"
+    },
+    {
+      "point": "AI 编程工具格局重塑，Claude 与 Cursor 崛起。",
+      "explanation": "Claude 的使用率翻倍，Cursor 增长显著，而 ChatGPT 在开发场景中的份额有所下降，显示出开发者向更垂直的 AI 工具迁移。"
+    }
+  ],
+  "keyQuotes": [
+    "TypeScript 已经赢了。不是作为打包器，而是作为一门语言。",
+    "Vite 的满意度达 98%，而 Webpack 仅为 26%（较 2024 年的 36% 进一步下降）。",
+    "Next 的复杂度已经高得离谱。",
+    "JavaScript 生态正趋于「稳定」而非「动荡」，受访者的幸福感连续第五年稳定在 5 分制的 3.8 分。"
+  ],
+  "tags": [
+    "JavaScript",
+    "TypeScript",
+    "Vite",
+    "React",
+    "Next.js"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1197,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774935060000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 05:31:00"
+}

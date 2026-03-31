@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f3dc6894",
+  "title": "Kubernetes 自动扩缩容要求超越厂商工具的全新可观测性关注点",
+  "url": "https://www.infoq.com/news/2026/03/kubernetes-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">As adoption of <a href=\"https://kubernetes.io/\">Kubernetes</a> autoscalers like <a href=\"https://karpenter.sh/\">Karpenter</a> accelerates, a new set of platform-agnostic observability practices is emerging, shifting focus from traditional infrastructure metrics to deeper insights into provisioning behavior, scheduling latency, and cost efficiency. While highlighted in a <a href=\"https://www.datadoghq.com/blog/karpenter-key-metrics/\">recent blog by Datadog</a>, these principles reflect a broader industry trend: understanding autoscaling systems requires visibility into how and why infrastructure changes occur, not just whether systems are healthy.</p>\n   <p dir=\"ltr\">At the core of this shift is the recognition that modern autoscalers operate dynamically, provisioning compute resources in response to real-time workload demand rather than relying on pre-defined capacity pools. <a href=\"https://thamizhelango.medium.com/the-complete-guide-to-karpenter-implementation-and-performance-across-aws-azure-and-gcp-7f76426ace15\">Karpenter</a>, for example, provisions nodes \"just in time\" based on unscheduled pods, optimizing both performance and cost. This means traditional metrics such as CPU utilization or node count are no longer sufficient. Instead, engineering teams must track scheduling queue depth, provisioning latency, node lifecycle events, and disruption activity to understand how efficiently workloads are being placed and how quickly infrastructure responds to demand.</p>\n   <p dir=\"ltr\">A key takeaway from the evolving guidance is that observability must move beyond static health indicators toward provisioning intelligence. Metrics such as how long pods wait to be scheduled, how quickly nodes are created, and how often nodes are consolidated or disrupted provide direct insight into autoscaler effectiveness. These signals help teams identify bottlenecks in scaling behavior - whether caused by cloud provider API latency, configuration constraints, or inefficient bin-packing decisions - before they impact application performance.</p>\n   <p dir=\"ltr\">Equally important is understanding cluster utilization and efficiency, as autoscalers like Karpenter aim to minimize over-provisioning by matching infrastructure closely to workload demand. Monitoring resource utilization against requested capacity allows teams to detect waste, tune provisioning strategies, and balance cost against performance requirements. This reflects a broader industry move toward cost-aware observability, where infrastructure metrics are directly tied to financial outcomes.</p>\n   <p dir=\"ltr\">While Datadog provides one implementation of these monitoring practices, the underlying principles are tool-agnostic and increasingly standard across the Kubernetes ecosystem. Open-source tooling, cloud-native monitoring stacks, and platform engineering teams are all converging on similar patterns: collecting Prometheus-style metrics, instrumenting autoscalers directly, and correlating events across the control plane, scheduler, and cloud provider APIs.</p>\n   <p dir=\"ltr\">This abstraction is critical as organizations adopt multi-cloud and hybrid environments. Teams are less interested in vendor-specific dashboards and more focused on consistent signals that can be applied regardless of tooling, such as provisioning success rates, error counts from cloud APIs, and reconciliation loop performance. These metrics enable a unified understanding of autoscaling behavior across environments and reduce dependency on any single observability platform.</p>\n   <p dir=\"ltr\">Ultimately, the guidance reflects a broader evolution in cloud-native operations: autoscaling is no longer a background mechanism but a core part of application performance and reliability. As tools like Karpenter continue to <a href=\"http://inkedin.com/posts/darryl-ruggles_as-always-these-datadog-industry-reports-activity-7393048359755960320-W7jJ\">replace traditional autoscalers</a> due to their flexibility and efficiency, organizations are being forced to rethink how they measure success, not in terms of static capacity, but in terms of responsiveness, efficiency, and system-wide behavior under load.</p>\n   <p dir=\"ltr\">Other observability and platform engineering tools approach autoscaling visibility in very similar ways, even if they don't frame it specifically in terms of Karpenter. For example, platforms built around <a href=\"https://prometheus.io/\">Prometheus</a> and <a href=\"https://grafana.com/\">Grafana</a>, as well as vendors like <a href=\"https://www.splunk.com/en_us/blog/learn/kubernetes-cost-management.html\">Splunk</a>, emphasize workload-level visibility and cost attribution as foundational. Rather than focusing only on node health, they recommend tracking how resources are requested versus actually used, mapping consumption to teams or services, and continuously tuning autoscaler behavior based on real usage patterns. This aligns closely with monitoring scheduling efficiency and provisioning behavior, ensuring that autoscaling decisions reflect actual demand rather than conservative overprovisioning.</p>\n   <p dir=\"ltr\">Similarly, modern Kubernetes tooling and platforms such as <a href=\"https://keda.sh/\">KEDA</a>, <a href=\"https://docs.aws.amazon.com/eks/latest/best-practices/cas.html\">Cluster Autoscaler</a>, and emerging optimization platforms focus on closing the loop between observability and action. Best practices include right-sizing workloads, combining multiple autoscaling strategies (pod-level and node-level), and using continuous feedback from metrics to adjust capacity and placement decisions automatically. Tools in this space increasingly go beyond dashboards, using real-time signals to optimize bin-packing, reduce idle capacity, and improve responsiveness, mirroring the same shift highlighted in the Datadog perspective: from passive monitoring toward active, intelligence-driven infrastructure optimization.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Kubernetes Autoscaling Demands New Observability Focus Beyond Vendor Tooling\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/kubernetes-observability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774958400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "随着 Karpenter 等 Kubernetes 自动扩缩容工具成为主流，可观测性正从静态的基础设施健康状况转向动态的资源供给智能，重点关注调度延迟和成本效率。",
+  "oneSentenceSummary": "随着 Karpenter 等 Kubernetes 自动扩缩容工具成为主流，可观测性正从静态的基础设施健康状况转向动态的资源供给智能，重点关注调度延迟和成本效率。",
+  "summary": "本文探讨了现代“即时”自动扩缩容工具所带来的 Kubernetes 可观测性演变。CPU 利用率等传统指标正被对资源供给行为的更深入洞察所取代，例如调度队列深度和云 API 延迟。这种转变反映了行业向平台无关、具备成本意识的可观测性发展的更广泛趋势，即通过分析基础设施变更来提升效率和响应能力。通过关联控制平面和云 API 的事件，工程团队可以优化装箱（bin-packing）策略并减少过度配置，从而从被动监控转向主动的、智能驱动的基础设施管理。",
+  "mainPoints": [
+    {
+      "point": "从静态健康指标转向动态资源供给智能。",
+      "explanation": "像 Karpenter 这样的现代自动扩缩容工具是实时运行的；因此，指标必须关注调度队列深度、资源供给延迟和节点生命周期事件，而不仅仅是 CPU 或节点数量。"
+    },
+    {
+      "point": "强调具备成本意识的可观测性和资源效率。",
+      "explanation": "监控请求容量与实际利用率之间的差距，使团队能够发现浪费并调整资源供给策略，从而在性能和财务成果之间取得平衡。"
+    },
+    {
+      "point": "采用工具无关的可观测性模式。",
+      "explanation": "行业标准正趋向于一致的信号——例如云 API 错误计数和协调循环性能——这些信号在多云环境中均适用，无论使用何种特定的厂商工具。"
+    },
+    {
+      "point": "将自动扩缩容作为应用程序可靠性的核心组件。",
+      "explanation": "扩缩容不再是后台任务，而是影响性能的关键因素，需要主动监控以识别云服务商 API 中的瓶颈或配置限制。"
+    }
+  ],
+  "keyQuotes": [
+    "理解自动扩缩容系统需要洞察基础设施变更发生的方式和原因，而不仅仅是了解系统是否健康。",
+    "CPU 利用率或节点数量等传统指标已不再足够。",
+    "可观测性必须超越静态健康指标，转向资源供给智能。",
+    "自动扩缩容不再是后台机制，而是应用程序性能和可靠性的核心部分。"
+  ],
+  "tags": [
+    "Kubernetes",
+    "自动扩缩容",
+    "Karpenter",
+    "可观测性",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 670,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774958400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 12:00:00"
+}

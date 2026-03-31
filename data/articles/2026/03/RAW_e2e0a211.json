@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e2e0a211",
+  "title": "发布：datasette-files 0.1a3",
+  "url": "https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything",
+  "date": "2026-03-30 23:58:49",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">30th March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-files/releases/tag/0.1a3\">datasette-files 0.1a3</a></span> <span class=\"beat-commit\">— Upload files to Datasette</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I'm working on integrating <code>datasette-files</code> into other plugins, such as <a href=\"https://github.com/datasette/datasette-extract\">datasette-extract</a>. This necessitated a new release of the base plugin.</p>\n      <blockquote>\n       <ul>\n        <li><code>owners_can_edit</code> and <code>owners_can_delete</code> configuration options, plus the <code>files-edit</code> and <code>files-delete</code> actions are now scoped to a new <code>FileResource</code> which is a child of <code>FileSourceResource</code>. <a href=\"https://github.com/datasette/datasette-files/issues/18\">#18</a></li>\n        <li>The file picker UI is now available as a <code>&lt;datasette-file-picker&gt;</code> Web Component. Thanks, <a href=\"https://github.com/asg017\">Alex Garcia</a>. <a href=\"https://github.com/datasette/datasette-files/issues/19\">#19</a></li>\n        <li>New <code>from datasette_files import get_file</code> Python API for other plugins that need to access file data. <a href=\"https://github.com/datasette/datasette-files/issues/20\">#20</a></li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4070/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Datasette-files 0.1a3 引入了细粒度的权限范围控制、用于文件选择的全新 Web Component，以及用于跨插件集成的 Python API。",
+  "oneSentenceSummary": "Datasette-files 0.1a3 引入了细粒度的权限范围控制、用于文件选择的全新 Web Component，以及用于跨插件集成的 Python API。",
+  "summary": "datasette-files 插件的此版本（0.1a3）重点在于改善其与其他 Datasette 插件（如 datasette-extract）的集成。主要更新包括：通过 FileResource 引入了用于编辑和删除文件的范围权限控制；为 UI 提供了一个可复用的 <datasette-file-picker> Web Component；以及一个新的 Python API (get_file)，允许其他插件以编程方式访问文件数据。",
+  "mainPoints": [
+    {
+      "point": "引入文件管理的范围权限控制。",
+      "explanation": "此次更新增加了 owners_can_edit 和 owners_can_delete 配置选项，将操作范围限定在新的 FileResource 层级中，以确保更好的访问控制。"
+    },
+    {
+      "point": "将文件选择器 UI 封装为 Web Component。",
+      "explanation": "通过将文件选择器提供为 <datasette-file-picker>，该插件实现了更模块化、可复用的 UI，能够轻松集成到不同的界面中。"
+    },
+    {
+      "point": "用于增强插件互操作性的新 Python API。",
+      "explanation": "get_file API 允许其他插件直接检索文件数据，从而促进了多个 Datasette 插件需要协同工作的复杂工作流。"
+    }
+  ],
+  "keyQuotes": [
+    "我正在致力于将 datasette-files 集成到其他插件中，例如 datasette-extract。",
+    "文件选择器 UI 现在以 <datasette-file-picker> Web Component 的形式提供。",
+    "新增了 from datasette_files import get_file Python API，供需要访问文件数据的其他插件使用。"
+  ],
+  "tags": [
+    "Datasette",
+    "Python",
+    "开源",
+    "Web Components",
+    "插件开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 89,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774915129000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-30 23:58:49"
+}

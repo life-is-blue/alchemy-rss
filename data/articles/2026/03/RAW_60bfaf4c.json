@@ -1,0 +1,58 @@
+{
+  "id": "RAW_60bfaf4c",
+  "title": "KubeVirt v1.8 为 Kubernetes 带来多虚拟机管理程序支持和机密计算",
+  "url": "https://www.infoq.com/news/2026/03/kubevirt-18-announcement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 07:00:00",
+  "author": "Matt Saunders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Version 1.8 of&nbsp;<a href=\"https://kubevirt.io/\">KubeVirt</a> was <a href=\"https://www.cncf.io/blog/2026/03/25/announcing-the-release-of-kubevirt-v1-8/\">announced</a> at <a href=\"https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/\">KubeCon + CloudNativeCon Europe 2026</a>. The release is aligned with <a href=\"https://www.infoq.com/news/2025/12/kubernetes-1-35/\">Kubernetes v1.35</a>, and the most significant addition is a Hypervisor Abstraction Layer (HAL) that allows the project to use backends other than KVM. In an <a href=\"https://www.cncf.io/blog/2026/03/25/announcing-the-release-of-kubevirt-v1-8/\">announcement post</a> on the CNCF blog, the maintainers announced the new release, broken down by their SIGs (special interest groups): compute, networking, storage, and scale &amp; performance.</p>\n   <p><img alt=\"KubeVirt Architecture\" data-src=\"https://www.infoq.com/news/2026/03/kubevirt-18-announcement/news/2026/03/kubevirt-18-announcement/en/resources/4architecture-1774805713246.png\" style=\"width: 600px; height: 350px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/kubevirt-18-announcement/en/resources/4architecture-1774805713246.png\" rel=\"share\"></p>\n   <p>KubeVirt is an open source CNCF project that extends Kubernetes to run traditional virtual machines alongside containerised workloads on the same platform. It adds custom resource definitions to the Kubernetes API so that VMs are treated as native objects, managed and scheduled using the same tools as containers. The project targets organisations that have adopted Kubernetes but still carry VM-based workloads that cannot easily be rewritten as containers, giving them a single control plane rather than two parallel infrastructure stacks.</p>\n   <p>KubeVirt has been tightly coupled to KVM as its underlying hypervisor until now. The new Hypervisor Abstraction Layer (HAL) allows project users to integrate alternative backends while preserving the existing KVM-first defaults. Vladik Romanovsky of Red Hat <a href=\"https://www.youtube.com/watch?v=w0LPBf8H4xc\">outlined this direction</a> at KubeCon NA 2025, noting that the project was \"exploring support for multiple VMMs beyond QEMU/KVM.\" The v1.8 release sees that exploration turn into a concrete implementation.</p>\n   <p>There are also improvements to Confidential Computing, improving KubeVirt's suitability for sensitive workloads. The Confidential Computing Working Group has added support for Intel TDX Attestation, allowing VMs to cryptographically certify that they are running on confidential hardware. The same release adds PCIe NUMA topology awareness alongside other resource improvements aimed at AI and HPC workloads, allowing those workloads to achieve what the community describes as near-native performance.</p>\n   <p>Turning to the networking side of the project, the user-space network connectivity binding plugin, passt , has been promoted from a plugin to a core component. Engineers can now live-update Network Attachment Definition (NAD) references without restarting VMs, enabling network changes to be applied to running VMs. The project has also decoupled KubeVirt from NAD definitions at the virt-controller level, reducing API calls and removing permissions previously required for VM activation at scale.</p>\n   <p>Storage engineering has two significant new features. The ContainerPath volume type allows container paths to be mapped directly for VM storage, with the announcement framing this as an \"escape hatch\" for cloud provider credential injection patterns. The second addition is Incremental Backup with Changed Block Tracking (CBT), which uses QEMU and libvirt backup capabilities to produce storage-agnostic incremental VM backups. The post claims this enables faster backups and a big reduction in storage footprint.</p>\n   <p>The scale and performance work in v1.8 includes increasing their test framework to 8,000 virtual machines. The post suggests a linear increase in memory usage for the virt-api and virt-controller components. They presented these figures as scaling estimates and indicated an intent to publish them for each release, so that memory consumption can be better understood in the context of production readiness.</p>\n   <p>Pure Storage's Portworx unit <a href=\"https://www.smechannels.com/pure-storage-launches-portworx-for-kubevirt-at-red-hat-summit-2025/\">announced Portworx for KubeVirt</a> at Red Hat Summit 2025, positioning KubeVirt as a practical alternative hypervisor and claiming up to 50% cost reduction. The company later <a href=\"https://www.linkedin.com/posts/lucas-jun-wang_rising-virtualization-cost-mandate-everpure-activity-7437677596110131200-mCAH\">reported running more than 5,000 virtual machines on KubeVirt</a> in production environments, describing how a cost mandate had driven its migration from traditional virtualisation to a KubeVirt-powered strategy.</p>\n   <p>On the benchmark front, the v1.8 release aligns with a <a href=\"https://kccnceu2026.sched.com/event/2EG04/cloud-native-theater-data-on-kubernetes-day-kubevirt-benchmarking-at-scale-a-vendor-neutral-end-to-end-testing-framework-for-cloud-native-virtualization-bhumitra-nagar-and-dhruv-bhatnagar-pure-storage\">talk scheduled at KubeCon EU 2026</a> by Bhumitra Nagar and Dhruv Bhatnagar of Pure Storage. Titled \"KubeVirt Benchmarking at Scale: A Vendor-Neutral End-to-End Testing Framework for Cloud Native Virtualisation,\" the talk presents a framework for testing KubeVirt at scale across vendors. This work responds to the same gap that the community's own KWOK benchmarks aim to fill, but approaches it from a storage and vendor neutrality angle.</p>\n   <p>The v1.8 release represents four years of work under the aegis of the CNCF. <a href=\"https://www.infoq.com/news/2022/06/cncf-kubevirt-incubating-project/\">InfoQ reported in 2022</a> that the project had moved to CNCF incubation status, noting that, at the time, production-level solutions were already in use at organisations including Arm, CoreWeave, and Kubermatic. Since then, the project has added GPU assignment, NUMA support, live migration, and common instance types. CloudNativeNow noted in mid-2025 that KubeVirt is \"designed for teams focused on DevOps that have or want to adopt Kubernetes and also have virtual machine workloads that cannot be easily containerised.\" The Hypervisor Abstraction Layer in particular positions the project to extend beyond a Linux KVM dependency, while the Confidential Computing and AI performance work addresses enterprise requirements that have historically steered organisations towards proprietary virtualisation platforms.</p>\n   <p>\"It's wonderful to see new contributors coming forward with exciting ideas and engage with the project to see them through,\" the KubeVirt Community writes in the release announcement. The post also notes that \"the next release is looking to be larger still.\" Whether the project reaches CNCF graduation, a milestone Romanovsky mentioned at KubeCon NA 2025, depends on how that process continues to mature.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"KubeVirt v1.8 Brings Multi-Hypervisor Support and Confidential Computing to Kubernetes\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Matt Saunders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/kubevirt-18-announcement/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774940400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "KubeVirt v1.8 引入了用于多后端支持的虚拟机管理程序抽象层（HAL）、用于机密计算的 Intel TDX，并显著提升了云原生虚拟化的扩展能力。",
+  "oneSentenceSummary": "KubeVirt v1.8 引入了用于多后端支持的虚拟机管理程序抽象层（HAL）、用于机密计算的 Intel TDX，并显著提升了云原生虚拟化的扩展能力。",
+  "summary": "KubeVirt v1.8 与 Kubernetes v1.35 对齐，通过引入虚拟机管理程序抽象层（HAL）标志着一个重要的架构里程碑。这种解耦使得该项目能够在保持现有默认设置的同时，支持传统 KVM/QEMU 堆栈之外的虚拟机监视器。此版本通过用于机密计算的 Intel TDX 认证以及针对 AI 和 HPC 工作负载的 PCIe NUMA 拓扑感知，显著增强了企业级就绪能力。运维方面的改进包括无需重启虚拟机即可实时更新网络定义，以及使用变更块跟踪（CBT）的全新存储无关增量备份系统。随着测试规模扩展至 8，000 个虚拟机，该版本巩固了 KubeVirt 作为企业在 Kubernetes 上整合基础设施时，替代专有虚拟化平台的、可行且供应商中立的选择地位。",
+  "mainPoints": [
+    {
+      "point": "引入虚拟机管理程序抽象层（HAL）。",
+      "explanation": "这一重大架构转变使 KubeVirt 能够集成 KVM 之外的替代虚拟机管理程序后端，从而提高了对多样化基础设施需求的灵活性。"
+    },
+    {
+      "point": "增强对机密计算和 AI 工作负载的支持。",
+      "explanation": "加入 Intel TDX 认证和 PCIe NUMA 感知，为敏感数据和高性能计算任务提供了必要的安全性和性能。"
+    },
+    {
+      "point": "提升网络和存储运维效率。",
+      "explanation": "诸如实时更新网络附件定义和使用变更块跟踪（CBT）的增量备份等功能，减少了停机时间和存储开销。"
+    },
+    {
+      "point": "经证明可达 8，000 个虚拟机的生产级扩展性。",
+      "explanation": "社区扩展的测试框架以及 Pure Storage 等公司的实际应用，证明了 KubeVirt 已为大规模企业部署做好准备。"
+    }
+  ],
+  "keyQuotes": [
+    "最重大的新增功能是虚拟机管理程序抽象层（HAL），它允许该项目使用 KVM 以外的后端。",
+    "KubeVirt 是一个开源的 CNCF 项目，它扩展了 Kubernetes，以便在同一平台上运行传统虚拟机和容器化工作负载。",
+    "v1.8 版本见证了这一探索转化为具体的实现。",
+    "使用变更块跟踪（CBT）的增量备份……实现了更快的备份速度，并大幅减少了存储占用。"
+  ],
+  "tags": [
+    "KubeVirt",
+    "Kubernetes",
+    "云原生",
+    "虚拟化",
+    "机密计算"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 819,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774940400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 07:00:00"
+}

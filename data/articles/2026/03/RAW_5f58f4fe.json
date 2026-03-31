@@ -1,0 +1,58 @@
+{
+  "id": "RAW_5f58f4fe",
+  "title": "TanStack Start 引入导入保护功能，强制执行服务器与客户端边界",
+  "url": "https://www.infoq.com/news/2026/03/tanstack-import-protection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 11:52:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://tanstack.com/start/latest\">TanStack Start</a> has introduced <a href=\"https://tanstack.com/start/latest/docs/framework/react/guide/import-protection\">import protection</a>, a <a href=\"https://vite.dev/\">Vite</a>-powered mechanism designed to prevent server-only code from leaking into client bundles and client-only code from leaking into server bundles. The feature, <a href=\"https://x.com/tan_stack/status/2023917847961821693\">announced on X</a> in February 2026 and currently marked as experimental, ships enabled by default in all new TanStack Start projects.</p>\n   <p>As full-stack React applications grow in complexity, the boundary between server and client code has become a common source of subtle bugs and security risks. Code meant to run only on the server, such as database queries or access to environment secrets, can inadvertently reach the client bundle if imports are not carefully managed. TanStack Start's import protection addresses this at the tooling level rather than relying on developer discipline alone.</p>\n   <p>The system works as a Vite plugin that checks every import in your source files during development and at build time. There are two ways an import can be denied: file patterns matching on the resolved file path, and specifier patterns matching on the raw import string. Out of the box, files following the <code>*.server.*</code> naming convention are denied in the client environment, while <code>*.client.*</code> files are denied on the server, with no additional configuration required. The specifier <code>@tanstack/react-start/server</code> is also blocked from the client by default.</p>\n   <p>For files that do not follow the naming convention, developers can explicitly mark a module as server-only or client-only using a side-effect import at the top of the file:</p>\n   <pre>\r\n<code class=\"language-typescript\">import '@tanstack/react-start/server-only'\r\n\r\nexport const API_KEY = process.env.API_KEY\r\n</code></pre>\n   <p>The plugin records the marker and enforces the restriction if that file is later imported from the wrong environment. Custom deny rules can also be added for entire directories or specific npm packages, such as blocking <code>@prisma/client</code> or <code>bcrypt</code> from ever reaching the client bundle via the <code>importProtection.client.specifiers</code> option in <code>vite.config.ts</code>.</p>\n   <p>The behavior differs between development and production. During development, violations trigger <code>mock</code> mode by default, replacing the offending import with a recursive Proxy and logging a warning while allowing work to continue. At build time the default switches to <code>error</code>, halting the build with a detailed diagnostic that includes the full import chain, a code snippet pointing to the offending line, and actionable suggestions such as wrapping logic in <code>createServerFn()</code>, <code>createServerOnlyFn()</code>, or <code>createIsomorphicFn()</code>.</p>\n   <p>Next.js handles similar concerns through React Server Components and the community <code>server-only</code> package, relying heavily on the RSC model that TanStack Start does not yet support. A <a href=\"https://www.reddit.com/r/react/comments/1qq2om4/tanstack_security_compared_to_nextjs/\">Reddit thread discussing TanStack security versus Next.js</a> prompted a reply from the Tanner Linsley, the author of the Tanstack Ecosystem, who clarified the following in regards to security:</p>\n   <blockquote>\n    <p>TanStack ships with the same preventative security measures as Next despite having a smaller attack surface area. With the recent influx of CVEs, we've taken the time to make sure we're up to speed not only with existing CVEs, but constantly and vigilantly auditing the framework for other unknown/new attack vectors.</p>\n   </blockquote>\n   <p>He goes onto admit there will be eventually be something found, but gives confidence it won’t be to the level of <a href=\"https://www.infoq.com/news/2025/12/CVE-2025-55182-react-server-func/\">recent CVEs</a>:</p>\n   <blockquote>\n    <p>No doubt that with Start's growing popularity, there will eventually be something that we haven't found, but rest assured, it will likely not take the form of existing/found vulnerabilities in other frameworks.</p>\n   </blockquote>\n   <p>The <a href=\"https://x.com/tan_stack/status/2023917847961821693\">announcement post</a> on X generated over 590 likes and 21 comments, with positive reactions from users, with one user saying they can <q>finally get some peace of mind</q>.</p>\n   <p>A Github <a href=\"https://github.com/TanStack/router/issues/5469\">issue</a> highlighted that earlier versions of TanStack Start produced cryptic, hard-to-debug error messages when server code was accidentally imported on the client, a problem the new feature's detailed violation traces directly address.</p>\n   <p>Teams upgrading should review the <a href=\"https://tanstack.com/start/latest/docs/framework/react/guide/import-protection\">import protection documentation</a> and check plugin ordering in their Vite configuration if TypeScript path aliases are in use. The feature requires no opt-in for new projects and is disabled only if <code>importProtection: { enabled: false }</code> is explicitly set in the TanStack Start Vite plugin configuration.</p>\n   <p>TanStack Start is a full-stack React framework built on TanStack Router and powered by Vite, offering SSR, streaming, server functions, bundling, and deployment across any hosting provider or runtime. It is currently in the Release Candidate stage.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"TanStack Start Introduces Import Protection to Enforce Server and Client Boundaries\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/tanstack-import-protection/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774957920000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "TanStack Start 引入了一项基于 Vite 的实验性导入保护功能，旨在自动防止服务端代码泄露，并强制执行全栈 React 应用中的环境边界。",
+  "oneSentenceSummary": "TanStack Start 引入了一项基于 Vite 的实验性导入保护功能，旨在自动防止服务端代码泄露，并强制执行全栈 React 应用中的环境边界。",
+  "summary": "TanStack Start 作为一个全栈 React 框架，推出了一项新的导入保护机制，以减轻因代码跨越服务器和客户端边界泄露而导致的安全风险和 Bug。该系统作为 Vite 插件运行，通过文件命名约定（例如 `*.server.*`、`*.client.*`）和显式标记（如 `server-only`）来监控导入。在开发过程中，违规行为会触发警告和递归代理，而在生产构建中，系统会严格终止构建并提供详细的诊断信息。此功能提供了与 Next.js 相当的安全保障，但针对 TanStack 的架构进行了定制，为开发者提供了针对敏感服务端逻辑或环境密钥意外暴露的自动化保护。",
+  "mainPoints": [
+    {
+      "point": "强制执行服务器与客户端代码边界的自动化机制。",
+      "explanation": "该功能使用 Vite 插件在开发和构建时扫描导入，确保数据库查询或密钥等敏感服务端逻辑不会进入客户端包。"
+    },
+    {
+      "point": "通过命名约定和显式标记实现灵活配置。",
+      "explanation": "开发者可以使用 `*.server.*` 文件名或顶层副作用导入来标记模块，同时还可以选择通过 Vite 配置设置来阻止特定的 npm 包。"
+    },
+    {
+      "point": "开发环境与生产环境的差异化行为。",
+      "explanation": "为了保持开发速度，违规行为在开发阶段仅会触发警告和模拟（mock），但在生产构建阶段会严格报错并终止构建，同时提供详细的错误追踪，以确保部署前的安全性。"
+    },
+    {
+      "point": "针对框架安全漏洞的战略性响应。",
+      "explanation": "该实现解决了现代全栈框架中常见的隐患，为防止与意外暴露服务器函数相关的 CVE 提供了强大的安全网。"
+    }
+  ],
+  "keyQuotes": [
+    "TanStack Start 的导入保护是在工具层面解决此问题，而不是仅仅依赖开发者的自觉。",
+    "在开发过程中，违规行为默认触发模拟模式……在构建时，默认行为切换为报错，终止构建并提供详细的诊断信息。",
+    "尽管攻击面较小，但 TanStack 采用了与 Next.js 相同的预防性安全措施。",
+    "该功能对新项目无需手动启用，仅当显式设置 `importProtection: { enabled: false }` 时才会被禁用。"
+  ],
+  "tags": [
+    "TanStack Start",
+    "React",
+    "Vite",
+    "Web 安全",
+    "全栈开发"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 680,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774957920000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 11:52:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_e1421cf1",
+  "title": "Spring 本周动态 - 2026 年 3 月 31 日",
+  "url": "https://spring.io/blog/2026/03/31/this-week-in-spring-march-31st-2026",
+  "date": "2026-03-31 00:00:00",
+  "author": "joshlong",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hi, Spring fans! Welcome to another fun edition of <em>This Week in Spring</em>! I'm writing to you from beautiful Amsterdam ahead of the wonderful Voxxed Days Amsterdam event, and I'm really looking forward to it. If you're there, please come say hello!</p>\n  <p>Also, be aware that I'll be speaking at <a href=\"https://www.meetup.com/spring-meetup-paris/events/314034050/?utm_medium=email&amp;utm_campaign=rsvp-confirmation\">the Paris JUG on the 9th</a>, as well as at Devoxx France later in the month. Come say <em>bonjour</em>!</p>\n  <p>And, of course, I am most looking forward to Spring I/O in beautiful Barcelona, Spain, at the middle of the month!</p>\n  <p>We’ve got plenty to cover this week, so let’s jump right in!</p>\n  <ul>\n   <li><a href=\"https://spring.io/blog/2026/03/27/spring-modulith-2-1-m4-2-0-5-and-1-4-10-released\">Spring Modulith 2.1 M4, 2.0.5, and 1.4.10 released</a></li>\n   <li><a href=\"https://spring.io/blog/2026/03/26/spring-ai-2-0-0-M4-and-1-1-4-and-1-0-5-available\">Spring AI 2.0.0 M4, 1.1.4, 1.0.5 are available now</a></li>\n   <li><a href=\"https://spring.io/blog/2026/03/26/spring-boot-4-0-5-available-now\">Spring Boot 4.0.5 available now</a></li>\n   <li><a href=\"https://spring.io/blog/2026/03/26/spring-boot-4-1-0-M4-available-now\">Spring Boot 4.1.0 M4 available now</a></li>\n   <li>Spring Cloud Config 5.0.2, 4.3.2, 4.2.6, 4.1.9, and 3.1.13 released and <a href=\"https://spring.io/blog/2026/03/23/spring-cloud-config-5-0-2-4-3-2-4-2-6-4-1-9-3-1-13-released\">includes a fix for CVE-2026-22739</a></li>\n   <li>I really enjoyed this new video on <a href=\"https://www.youtube.com/watch?v=k2dERWfL5Fw\">Spring AI 2.0.0 M4 and Embabel 0.3.4!</a></li>\n   <li>This has nothing to do with Spring, but have you seen Caitie McAffrey's 2015 talk on applying the Saga pattern (and, by extension, workflow engines) to distributed systems? It's <a href=\"https://www.youtube.com/watch?v=xDuwrtwYHu8\">fantastic and absolutely worth a watch!</a></li>\n   <li>Here's a great interview with two of my favorite people: <a href=\"https://www.youtube.com/watch?v=D-yp3sB8cu0\">Jakub Pillion and Marcin Grzejszczak</a></li>\n   <li>Have you checked out the new <a href=\"https://spring.academy/guides/app-advisor-intro\">guide on Spring App Advisor</a>?</li>\n   <li>This is really interesting: a directory <a href=\"https://t.co/D3Nti6rgQQ\">of (AI/Anthropic) skills for building Spring and JVM-based applications</a></li>\n   <li>If you'd like a deep dive on Kafka offset commits with Spring Boot, take a look at this excellent <a href=\"https://piotrminkowski.com/2026/03/27/deep-dive-into-kafka-offset-commit-with-spring-boot/\">post on Piotr's blog</a></li>\n   <li>The new <em>State of Java 2025</em> report from JetBrains is <a href=\"https://lp.jetbrains.com/the-state-of-java-2025/\">definitely worth a look</a></li>\n   <li>Our friend Adib Saikali has put together a helpful guide <a href=\"https://go-vmware.broadcom.com/lp-mcp-security-guide\">on MCP Security</a> - be sure to check it out!</li>\n   <li>Are you using the fantastic JobRunr project? It’s a distributed job-scheduling engine, and one of its coolest features is carbon-aware scheduling. With datacenter, electricity, and RAM costs at all-time highs, one way to reduce the cost of running workloads is to schedule them when the local energy grid is less busy. JobRunr introduced carbon-aware scheduling for Europe in the last 18 months, and now it also has <a href=\"https://go-vmware.broadcom.com/lp-mcp-security-guide\">support for the USA</a>. Take a look!</li>\n  </ul>\n </body>\n</html>",
+  "aiSummary": "Spring 生态系统周报，涵盖 Spring Boot、Spring AI 和 Spring Modulith 的重大版本更新，以及关键的安全更新和社区资源。",
+  "oneSentenceSummary": "Spring 生态系统周报，涵盖 Spring Boot、Spring AI 和 Spring Modulith 的重大版本更新，以及关键的安全更新和社区资源。",
+  "summary": "本期 Spring 本周动态全面更新了 2026 年 3 月下旬 Spring 框架生态系统的最新进展。主要亮点包括 Spring Boot 4.0.5 和 4.1.0 M4、Spring AI 2.0.0 M4 以及 Spring Modulith 的更新。至关重要的是，此次发布还宣布了 Spring Cloud Config 的更新，以解决一个安全漏洞 (CVE-2026-22739)。文章还整理了有价值的社区内容，包括对 Kafka 偏移量提交的深入探讨、MCP 安全指南以及使用 JobRunr 进行碳感知作业调度。",
+  "mainPoints": [
+    {
+      "point": "Spring 核心项目的主要版本更新。",
+      "explanation": "生态系统在 Spring Boot 4.x、Spring AI 2.0.0 M4 和 Spring Modulith 的发布方面取得了重大进展，标志着 AI 集成和模块化单体模式的持续演进。"
+    },
+    {
+      "point": "Spring Cloud Config 的关键安全补丁。",
+      "explanation": "针对多个发布序列 (3.1.x 到 5.0.x) 发布了新版本，专门用于解决 CVE-2026-22739，对于分布式系统用户而言，这是一次强制性更新。"
+    },
+    {
+      "point": "AI 和安全工具的扩展。",
+      "explanation": "Spring App Advisor 指南和模型上下文协议 (MCP) 安全资源的引入，凸显了该框架向稳健、AI 就绪的基础设施转变。"
+    },
+    {
+      "point": "关注可持续和高效的工程实践。",
+      "explanation": "文中提到的 JobRunr 在美国推出的碳感知调度功能，反映了行业内根据能源电网需求和环境影响来优化工作负载的增长趋势。"
+    }
+  ],
+  "keyQuotes": [
+    "Spring Cloud Config 5.0.2、4.3.2、4.2.6、4.1.9 和 3.1.13 已发布，包含针对 CVE-2026-22739 的修复。",
+    "Spring AI 2.0.0 M4、1.1.4、1.0.5 现已可用。",
+    "JobRunr 在过去 18 个月内为欧洲引入了碳感知调度，现在也支持美国地区。"
+  ],
+  "tags": [
+    "Spring Boot",
+    "Spring AI",
+    "Spring Modulith",
+    "Java",
+    "CVE-2026-22739"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 367,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774915200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 00:00:00"
+}

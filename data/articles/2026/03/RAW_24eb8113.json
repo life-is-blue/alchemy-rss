@@ -1,0 +1,57 @@
+{
+  "id": "RAW_24eb8113",
+  "title": "京东科技发布 ClawTip：AI 智能体 A2A 自主微支付基础设施",
+  "url": "https://www.qbitai.com/2026/03/394011.html",
+  "date": "2026-03-31 09:12:58",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>“龙虾”热潮又有新进展，AI已经不只会干活，连下单付款都能自己完成了。AI智能体之间真正自主支付的钱包，来了！</p>\n  <p>为了解决Skill开发者变现难、传统支付无法适配AI自主交易的行业痛点，3月31日，京东科技业内首发推出真正面向AI Agent生态的A2A（Agent-to-Agent）微支付基础设施，其核心包含智能体专属钱包（Agent&nbsp;Controlled Wallet）、AI自主决策支付能力、智能体链路行为捕获与交易可信快照存证，实现智能体间无感自动结算。换言之，充分适配ClawTip后，AI智能体即可实现自主决策，包括AI智能体自主询价、决策、支付并获取产品或服务的全流程。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-394012\" src=\"https://i.qbitai.com/wp-content/uploads/2026/03/京东图片1.png\" alt=\"\" width=\"867\" height=\"406\" srcset=\"https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/15dd7895-9379-4771-cc08-593c03e9e700/public 867w, https://imagedelivery.net/qGOFcc1O8XwTZW3W1JAHHg/677adc9b-ac4f-4dea-7cf5-ba720ad96600/public 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <p><strong><b>破解AI服务痛点</b></strong><strong><b>&nbsp;</b></strong><strong><b>从“零成本分发”到“智能化变现”</b></strong></p>\n  <p>随着AI Agent、工具调用、以及自动化服务的高速发展，大量服务调用将由智能体之间自动完成，催生出AI时代全新的支付基础设施需求，却也面临着诸多行业痛点。例如，在OpenClaw等开放平台上，Skill内容近乎零成本公开分发，传统收费模式难以适配，开发者难以从创造的服务价值中直接变现。更关键的是，现有支付解决方案的设计思维仍以“管理人”为核心，或在交互流程中设置过多人为规则限制AI的主动性，或仅将传统收银台简单嵌入对话，未能真正信任并赋能AI在价值交换场景中的判断力，导致协同效率与体验存在天花板。</p>\n  <p>此次京东科技首发推出的ClawTip，正是为解决上述核心痛点而生。它专为AI智能体之间的交易场景设计，基于X402协议构建了A2A交互协议与协作框架，为AI智能体提供了统一“沟通语言”，实现跨平台、跨系统的自主任务协同。ClawTip让AI具备“决策式支付”能力，帮助开发者变现。区别于传统方案对AI的事前硬性约束，ClawTip允许调用方AI自主判断某次Skill调用是否合理且划算，实现从“被动执行支付指令”到“主动参与消费决策”的转变，这使价值流转成为AI自主思考后的自然结果。</p>\n  <p><strong><b>零成本便捷</b></strong><strong><b>接入</b></strong><strong><b>&nbsp;</b></strong><strong><b>全流程自动无感结算</b></strong></p>\n  <p>ClawTip对AI服务提供者（如个人开发者、小型工作室或“一人公司”等）以及服务调用方均不收取费用。开发者可通过（clawtip.jd.com）零成本便捷接入，通过开通收款钱包、服务端密钥配置、集成收款服务这3步集成ClawTip支付技能，并灵活设定价格策略，快速开启变现。</p>\n  <p>与此同时，AI服务调用方在付款环节也可便捷1分钟开通钱包。在OpenClaw对话中发送指令（使用ClawHub安装技能：clawtip），即可安装使用ClawTip的Skill。当AI Agent调用付费服务时，ClawTip即可实现从“发现服务-获取报价-确认调用-自动计费支付-获取结果”的全流程自动化，无需人工干预，真正实现“调用即付费，服务即结算”。</p>\n  <p><strong><b>多重</b></strong><strong><b>安全</b></strong><strong><b>保障 </b></strong><strong><b>为AI场景定制风控体系</b></strong></p>\n  <p>支付安全是智能体之间自主交易的核心关键。对此，ClawTip兼顾极致便捷与安全可控，针对AI场景设计了全新风控逻辑，支付过程中捕获智能体交互链路行为，并存储交易可信快照，设定严格的多重安全保障。AI智能体仅可使用ClawTip钱包内预设的专属小额零钱进行操作，不触碰用户银行卡与核心账户；并通过额度、频次双重预授权限制，约束AI的支付行为，确保安全边界清晰可控。AI智能体只能严格在设定范围内操作资金，当超过额度和频次范围后，需要鉴权后人为确认支付，确保安全。</p>\n  <p>业务分析人士表示，ClawTip通过创新的“决策式支付”理念，为AI服务市场提供了真正的原生支付基础设施。它不仅解决了Skill开发者的“变现难”问题，更通过降低A2A协作的信任与操作成本，进一步激活了AI服务生态的潜力。</p>\n  <p>未来，ClawTip将与AI智能体经济生态深度融合，在金融、零售、制造、医疗等领域进行深度服务，人机协同共创更高效、可信的数字未来。</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <p>转载来源：京东科技</p>\n  <p>本文为量子位获授权转载，观点仅为原作者所有。</p>\n  <p>&nbsp;</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "京东科技发布 A2A 微支付基础设施 ClawTip，为 AI 智能体提供自主决策支付能力与专属钱包，解决开发者变现与 Agent 间交易闭环难题。",
+  "oneSentenceSummary": "京东科技发布 A2A 微支付基础设施 ClawTip，为 AI 智能体提供自主决策支付能力与专属钱包，解决开发者变现与 Agent 间交易闭环难题。",
+  "summary": "京东科技业内首发推出面向 AI Agent 生态的 A2A（Agent-to-Agent）微支付基础设施 ClawTip。该产品基于 X402 协议，核心功能包括智能体专属钱包（Agent Controlled Wallet）、AI 自主决策支付能力及交易可信快照存证。ClawTip 旨在解决 Skill 开发者变现难、传统支付无法适配 AI 自主交易等痛点，支持 AI 智能体自主询价、决策并完成支付。在安全方面，通过小额零钱预设、额度频次双重预授权及交互链路行为捕获，确保 AI 支付行为在安全边界内运行，实现「调用即付费，服务即结算」的无感体验。",
+  "mainPoints": [
+    {
+      "point": "推出 A2A 微支付基础设施 ClawTip，实现 AI 智能体间的自主结算。",
+      "explanation": "通过智能体专属钱包和自主决策支付能力，打通了 Agent 之间从询价到支付的全流程，无需人工干预。"
+    },
+    {
+      "point": "基于 X402 协议构建交互框架，赋予 AI 「决策式支付」能力。",
+      "explanation": "区别于传统被动执行指令，ClawTip 允许 AI 根据成本和价值自主判断是否进行支付，使价值流转成为 AI 自主思考的结果。"
+    },
+    {
+      "point": "提供零成本接入方案，简化开发者变现与用户支付流程。",
+      "explanation": "开发者可通过三步集成收款服务，用户可在 OpenClaw 等平台通过指令快速开通钱包，降低了 A2A 协作的门槛。"
+    },
+    {
+      "point": "设计针对 AI 场景的定制化风控体系，确保支付安全可控。",
+      "explanation": "通过预设小额零钱、额度频次双重预授权以及交易快照存证，将 AI 支付行为限制在安全边界内，不触碰核心账户。"
+    }
+  ],
+  "keyQuotes": [
+    "ClawTip 允许调用方 AI 自主判断某次 Skill 调用是否合理且划算，实现从「被动执行支付指令」到「主动参与消费决策」的转变。",
+    "实现从「发现服务-获取报价-确认调用-自动计费支付-获取结果」的全流程自动化，无需人工干预，真正实现「调用即付费，服务即结算」。",
+    "AI 智能体仅可使用 ClawTip 钱包内预设的专属小额零钱进行操作，不触碰用户银行卡与核心账户。"
+  ],
+  "tags": [
+    "AI Agent",
+    "A2A 支付",
+    "京东科技",
+    "ClawTip",
+    "微支付"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 7,
+  "score": 86,
+  "wordCount": 1583,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1774948378000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 09:12:58"
+}

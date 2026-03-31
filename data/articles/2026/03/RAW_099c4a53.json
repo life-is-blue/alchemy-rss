@@ -1,0 +1,53 @@
+{
+  "id": "RAW_099c4a53",
+  "title": "Cloudflare 在其边缘网络中增加主动式 API 漏洞扫描功能",
+  "url": "https://www.infoq.com/news/2026/03/cloudflare-api-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 09:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has <a href=\"https://blog.cloudflare.com/vulnerability-scanner/\">announced</a> the open beta of its Web and API Vulnerability Scanner. This Dynamic Application Security Testing (DAST) tool is part of the API Shield platform. The first release focuses only on Broken Object Level Authorization (BOLA), which is ranked first in the OWASP API Top 10. Future updates will expand to cover the wider OWASP Web Top 10, including SQL injection and cross-site scripting.</p>\n   <p>The most dangerous API vulnerabilities today aren’t just basic injection attacks or malformed requests that a WAF can easily detect. They are logic flaws, perfectly valid HTTP requests that meet the protocol and application spec but defy the business logic. A WAF, no matter how well set up, can't catch a request when an authenticated user just changes another user's resource ID in a path parameter. The request is correct in structure and meaning. The issue lies solely with the server's authorization logic.</p>\n   <p>Last year, Cloudflare <a href=\"https://developers.cloudflare.com/changelog/post/2025-11-12-bola-attack-detection/\">launched BOLA vulnerability</a> detection for API Shield. This tool automatically spots vulnerabilities by passively scanning customer traffic for any unusual patterns. Passive detection works well when traffic volume is enough and attack patterns are visible. But development environments may need to be tested but lack user traffic, and production environments may have a lack of attack traffic, yet still need analysis. In these cases, which cover most pre-production security workflows, teams need to create their own synthetic test traffic. That's what DAST tools are made for.</p>\n   <p>The issue with traditional DAST tools is their high barrier to entry. They can be difficult to set up and often need manual uploads of Swagger/OpenAPI files. They also struggle with modern login flows and often lack API-specific security tests.</p>\n   <p>Cloudflare believes that finding authorization flaws works best by viewing the API as a call graph instead of a simple list of endpoints. To find a BOLA vulnerability, a resource must first exist on the server side. An owner must first make a creation request, called a genesis POST. Only then can an attacker try to access or change the resource using their own valid credentials. Most legacy scanners handle each request separately. This makes it difficult to recreate this kind of dependency chain.</p>\n   <center>\n    <img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/cloudflare-api-vulnerability/news/2026/03/cloudflare-api-vulnerability/en/resources/1BLOG-3161_3-1774879179238.jpg\" style=\"width:100%;height:1396px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/cloudflare-api-vulnerability/en/resources/1BLOG-3161_3-1774879179238.jpg\" rel=\"share\">\n   </center>\n   <center>\n    <small>Example of API graph</small>\n   </center>\n   <p>&nbsp;</p>\n   <p>The scanner uses Cloudflare's own <a href=\"https://developers.cloudflare.com/workers-ai/\">Workers AI</a> platform to tackle this fuzzy problem space. Models like OpenAI's <a href=\"https://developers.cloudflare.com/workers-ai/models/gpt-oss-120b/\">open-weight gpt-oss-120b </a>can reliably match data dependencies. They can also create realistic fake data when needed, effectively filling in gaps in OpenAPI specifications. Structured outputs from the model connect natural language reasoning to machine-executable scan instructions.</p>\n   <p>The scanner's control plane uses Temporal for scan orchestration. Other internal services at Cloudflare already depend on it. The entire backend is built in Rust. Cloudflare uses HashiCorp's Vault Transit Secret Engine to handle credentials. This service provides encryption-as-a-service, which is key for testing authorization. Credentials are encrypted right after submission. The public API layer cannot decrypt them. Decryption only happens at the final stage when a test plan requests access to the customer's infrastructure.</p>\n   <p>The scanner is currently available in open beta for API Shield customers. Results appear in Cloudflare's Security Insights dashboard alongside existing posture findings. Teams can use the Cloudflare API to trigger scans, manage settings, and get results. This allows for direct integration into CI/CD pipelines or security dashboards. Cloudflare has opened a waitlist for the new web application vulnerability scan tier. This will address common threats like SQLi and XSS.</p>\n   <p>Cloudflare enters the API DAST space, which is crowded and fragmented. The comparison is revealing. <a href=\"https://salt.security/press-releases/salt-security-accelerates-api-threat-detection-with-new-investigation-capabilities\">Salt Security</a>, a key player in API security, mainly uses passive methods. It detects BOLA attacks through traffic analysis. Salt claims that capturing a BOLA attack requires monitoring API behaviour over days or weeks. This involves long analysis windows across trillions of API calls. This method works well in stable environments but leaves development pipelines blind.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Adds Active API Vulnerability Scanning to Its Edge\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/cloudflare-api-vulnerability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774947600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出了基于 AI 的主动式 DAST 扫描器（公开测试版），通过分析 API 调用图并集成到 CI/CD 流水线中，专门针对 BOLA 漏洞。",
+  "oneSentenceSummary": "Cloudflare 推出了基于 AI 的主动式 DAST 扫描器（公开测试版），通过分析 API 调用图并集成到 CI/CD 流水线中，专门针对 BOLA 漏洞。",
+  "summary": "Cloudflare 宣布其 Web 和 API 漏洞扫描器进入公开测试阶段，这是一款集成在 API Shield 平台中的动态应用安全测试（DAST）工具。首个版本专注于 OWASP API Top 10 中排名第一的威胁——失效的对象级授权（BOLA）。与检测格式错误请求的传统 WAF 不同，该扫描器通过将 API 视为相互关联的调用图，从而识别有效请求中的逻辑缺陷。它利用 Cloudflare Workers AI（特别是 gpt-oss-120b）来映射数据依赖关系并生成合成测试流量，使其适用于预生产环境。后端架构采用 Rust 构建，由 Temporal 进行编排，并使用 HashiCorp Vault 进行端到端凭据加密，以确保安全性。",
+  "mainPoints": [
+    {
+      "point": "从被动式扫描转向主动式 API 漏洞扫描。",
+      "explanation": "与需要现有攻击流量的被动检测不同，这种主动式 DAST 工具会生成合成请求，允许在没有用户流量的开发和测试环境中进行安全测试。"
+    },
+    {
+      "point": "基于 AI 的 API 调用图分析，用于检测逻辑缺陷。",
+      "explanation": "通过使用 LLM 来理解端点之间的关系（例如资源创建与访问），扫描器可以识别出传统扫描器因孤立处理请求而遗漏的 BOLA 漏洞。"
+    },
+    {
+      "point": "用于安全测试的安全且可扩展的后端架构。",
+      "explanation": "该系统利用 Rust 保证性能，使用 Temporal 进行工作流编排，并使用 HashiCorp Vault 提供加密即服务，确保敏感凭据在整个扫描过程中得到保护。"
+    }
+  ],
+  "keyQuotes": [
+    "当今最危险的 API 漏洞不仅仅是 WAF 可以轻易检测到的基本注入攻击或格式错误的请求。它们是逻辑缺陷。",
+    "Cloudflare 认为，发现授权缺陷的最佳方法是将 API 视为调用图，而不是简单的端点列表。",
+    "该扫描器使用 Cloudflare 自己的 Workers AI 平台来解决这个模糊的问题领域。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "API 安全",
+    "DAST",
+    "BOLA",
+    "Workers AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 635,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774947600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 09:00:00"
+}

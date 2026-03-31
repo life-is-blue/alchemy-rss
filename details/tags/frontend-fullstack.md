@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 22:29:58 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-01 00:20:27 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -486,6 +486,14 @@
 
 
 
+### [发布：datasette-files-0.1a3](https://simonwillison.net/2026/Mar/30/datasette-files/#atom-everything)
+
+2026-03-30 23:58:49 | 标签: Datasette, Python, 开源, Web Components, 插件开发
+
+> datasette-files 插件的此版本（0.1a3）重点在于改善其与其他 Datasette 插件（如 datasette-extract）的集成。主要更新包括：通过 FileResource 引入了用于编辑和删除文件的范围权限控制；为 UI 提供了一个可复用的 <datasette-file-picker> Web Component；以及一个新的 Python API (get_file)，允许其他插件以编程方式访问文件数据。
+
+
+
 ### [Pretext](https://simonwillison.net/2026/Mar/29/pretext/#atom-everything)
 
 2026-03-29 20:08:45
@@ -624,6 +632,22 @@
 
 
 
+### [TanStack-Start-引入导入保护功能，强制执行服务器与客户端边界](https://www.infoq.com/news/2026/03/tanstack-import-protection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-03-31 11:52:00 | 标签: TanStack Start, React, Vite, Web 安全, 全栈开发
+
+> TanStack Start 作为一个全栈 React 框架，推出了一项新的导入保护机制，以减轻因代码跨越服务器和客户端边界泄露而导致的安全风险和 Bug。该系统作为 Vite 插件运行，通过文件命名约定（例如 `*.server.*`、`*.client.*`）和显式标记（如 `server-only`）来监控导入。在开发过程中，违规行为会触发警告和递归代理，而在生产构建中，系统会严格终止构建并提供详细的诊断信息。此功能提供了与 Next.js 相当的安全保障，但针对 TanStack 的架构进行了定制，为开发者提供了针对敏感服务端逻辑或环境密钥意外暴露的自动化保护。
+
+
+
+### [JavaScript-2025-状态调查：生态趋于成熟，TypeScript-巩固主导地位](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280528&idx=4&sn=2681a4bd83a9d1e1e187323c066f9cc3)
+
+2026-03-31 05:31:00 | 标签: JavaScript, TypeScript, Vite, React, Next.js
+
+> 本文总结了 2025 年 JavaScript 现状调查报告的核心发现。报告指出，JavaScript 生态已从历经多年的快速迭代转向成熟稳定。TypeScript 的完全使用率升至 40%，已成为事实上的行业标准。在构建工具方面，Vite 以 98% 的开发者满意度实质性取代了 Webpack 的地位，而基于 Rust 的工具如 Rolldown 开始崭露头角。前端框架领域 React 虽维持高使用率，但其元框架 Next.js 因复杂度过高引发开发者担忧。此外，AI 开发工具市场发生显著变化，Claude 和 Cursor 的份额大幅增长，反映了开发者对更专业 AI 编程助手的偏好。
+
+
+
 ### [如何在-React-中设计类型安全、懒加载且安全的插件架构](https://www.freecodecamp.org/news/how-to-design-a-type-safe-lazy-and-secure-plugin-architecture-in-react/)
 
 2026-03-30 18:06:36
@@ -726,13 +750,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -882,13 +906,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2382,13 +2406,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4092,13 +4116,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
