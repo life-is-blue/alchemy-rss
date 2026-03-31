@@ -1,0 +1,62 @@
+{
+  "id": "RAW_6b8bc41e",
+  "title": "QCon London 2026：将团队拓扑（Team Topologies）作为 AI 的“智能体基础设施”",
+  "url": "https://www.infoq.com/news/2026/03/ai-agency-team-topologies/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 08:00:00",
+  "author": "Mark Silvester",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>As many businesses struggle to realise tangible returns from their artificial intelligence investments, <a href=\"https://www.linkedin.com/in/matthewskelton/\">Matthew Skelton</a>, co-author of <a href=\"https://teamtopologies.com/\">Team Topologies</a>, suggested at <a href=\"https://qconlondon.com/\">QCon London 2026</a> that the primary obstacles are often organisational rather than technical.</p>\n   <p>It was at this <a href=\"https://www.infoq.com/presentations/cd-tools-conway-law/\">same conference over a decade ago</a> that the core ideas for the Team Topologies framework first surfaced, and Skelton used this anniversary to note that as many as 80% of firms report no tangible benefit from AI adoption, often because they lack the organisational maturity to govern delegated agency.</p>\n   <p>Skelton argued that the principles found in the original Team Topologies framework provide the necessary infrastructure for agency. This starts with trust founded on bounded agency, a concept where the authority to act is intentionally constrained by rules and guardrails to ensure delegated initiatives remain governable. A focus on bounded agency clarifies mission and focus across the organisation, answering the fundamental question of what value is being provided and to whom.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/ai-agency-team-topologies/news/2026/03/ai-agency-team-topologies/en/resources/1IMG_0092-1774737097663.jpeg\" style=\"width: 650px; height: 488px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ai-agency-team-topologies/en/resources/1IMG_0092-1774737097663.jpeg\" rel=\"share\"></p>\n   <p>By focusing on the ongoing stewardship of long-lived services through stream-aligned teams, companies can create an environment where both humans and AI agents operate within clear boundaries. He noted that organisations already structured for bounded agency in humans will find the transition to agentic systems significantly more straightforward.</p>\n   <p>A critical hurdle in many implementations is the tendency to grant AI tools unbounded access to data resources, a vulnerability formalised as <a href=\"https://genai.owasp.org/llmrisk/llm062025-excessive-agency/\">Excessive Agency (LLM06)</a> in the OWASP Top 10 for LLM Applications. Skelton questioned why a business would grant an agentic AI write access to any data store across the organisation when they would never permit a human to do the same.</p>\n   <p><a href=\"https://www.metomic.io/resource-centre/the-state-of-data-security-2024\">Industry research supports this concern</a>; for instance, a report by data security firm Metomic found that 86% of files in collaborative environments like Google Drive go untouched for 90 days, yet often remain indexed by AI agents, creating a massive surface for accidental exposure. Maintaining strict security boundaries is essential not just for safety, but for protecting domain fidelity. When this fidelity is lost, software ceases to reflect the original business intent and instead becomes a convoluted machine that is difficult to govern or understand.</p>\n   <p>The talk also highlighted the direct mapping between human cognitive load and AI context windows. Just as humans struggle when their mental capacity is exceeded, AI agents begin to lose coherence or hallucinate when they operate outside their defined boundaries.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/ai-agency-team-topologies/news/2026/03/ai-agency-team-topologies/en/resources/1IMG_0104-1774737097663.jpeg\" style=\"width: 650px; height: 488px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ai-agency-team-topologies/en/resources/1IMG_0104-1774737097663.jpeg\" rel=\"share\"></p>\n   <p>Managing this load ensures that teams can act as effective stewards rather than just owners. Skelton suggested that stewardship is a more productive framing, as it encourages looking after systems for those who come after, rather than merely possessing a codebase or a specific model.</p>\n   <p>To scale these successes, Skelton introduced the Innovation and Practices Enabling Team. This specialised team type identifies successful patterns within the organisation and shines a spotlight on them to assist other departments. Companies such as Klarna and the Financial Times have established industry benchmarks for these internal learning models, while <a href=\"https://confluxhq.com/ebsco\">EBSCO repurposed $9.1 million annually</a> by optimising its delivery through these methodologies.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/03/ai-agency-team-topologies/news/2026/03/ai-agency-team-topologies/en/resources/1IMG_0119-1774737097663.jpeg\" style=\"width: 650px; height: 488px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/03/ai-agency-team-topologies/en/resources/1IMG_0119-1774737097663.jpeg\" rel=\"share\"></p>\n   <p>JP Morgan provided a major proof-of-concept for the talk's core message of knowledge diffusion over mandate, having reduced 60% of dependencies in its Athena platform using an opt-in model. Rather than enforcing top-down rules, the bank utilised a social dynamic dubbed \"friendly FOMO\" to drive adoption of its LLM Suite. Skelton emphasised that because technology evolves faster than traditional learning structures, this type of active diffusion, building momentum through shared success rather than mandatory compliance, is the only way for large-scale organisations to achieve the cultural shift required for effective AI stewardship.</p>\n   <p>These insights underpin Skelton’s forthcoming book, Adapt Together, co-authored with Renee Hawkins. The work aims to operationalise value flow much as DevOps transformed software delivery. Skelton concluded that with technology now evolving faster than organisations can learn, active knowledge diffusion and a deep understanding of the systems teams work with are the only viable response to today's cultural and architectural challenges.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"QCon London 2026:  Team Topologies as the ‘Infrastructure for Agency’ with AI\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Mark Silvester\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/ai-agency-team-topologies/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774944000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Matthew Skelton 提出，成功的 AI 落地需要基于团队拓扑（Team Topologies）原则构建“智能体基础设施”，重点关注有界智能体（bounded agency）、认知负荷管理以及社会化知识传播。",
+  "oneSentenceSummary": "Matthew Skelton 提出，成功的 AI 落地需要基于团队拓扑（Team Topologies）原则构建“智能体基础设施”，重点关注有界智能体（bounded agency）、认知负荷管理以及社会化知识传播。",
+  "summary": "在 QCon London 2026 大会上，《团队拓扑》合著者 Matthew Skelton 指出，AI 投资的高失败率主要源于组织障碍，而非技术问题。他引入了“智能体基础设施”（Infrastructure for Agency）的概念，强调 AI 智能体必须在“有界智能体”（bounded agency）的框架内运行——即通过规则约束权限，以确保可治理性。该框架将人类认知负荷与 AI 上下文窗口进行了类比，认为保持严格的边界对于领域保真度至关重要。为了扩大 AI 的成功规模，Skelton 主张从“所有权”转向“管理权”（stewardship），并利用专门的“创新与实践赋能团队”（Innovation and Practices Enabling Teams）通过社会化传播和“友好的错失恐惧”（friendly FOMO）来推动落地，而非采用自上而下的强制命令。",
+  "mainPoints": [
+    {
+      "point": "AI 落地失败本质上是组织问题。",
+      "explanation": "高达 80% 的企业在 AI 方面没有看到实际收益，因为它们缺乏管理委托智能体和有效构建团队的组织成熟度。"
+    },
+    {
+      "point": "有界智能体是可治理 AI 系统的先决条件。",
+      "explanation": "行动权限必须通过规则和护栏进行有意的约束，以防止“过度智能体化”（Excessive Agency，参考 OWASP LLM06）并保护领域保真度。"
+    },
+    {
+      "point": "人类认知负荷与 AI 上下文窗口具有相似性。",
+      "explanation": "正如人类在超出心理承受能力时会感到吃力一样，AI 智能体在超出定义的边界或上下文限制时也会失去连贯性或产生幻觉。"
+    },
+    {
+      "point": "针对长期服务，从“所有权”转向“管理权”。",
+      "explanation": "管理权鼓励团队为后来者维护系统，从而促进对 AI 集成代码库和模型的更好长期维护。"
+    },
+    {
+      "point": "通过社会化传播而非强制命令来扩大 AI 的成功规模。",
+      "explanation": "利用“友好的错失恐惧”（friendly FOMO）和专门的赋能团队（IPET），大型组织可以通过共享成功经验来建立势能，这比强制合规更有效。"
+    }
+  ],
+  "keyQuotes": [
+    "主要障碍往往是组织层面的，而非技术层面的。",
+    "建立在有界智能体基础上的信任……确保了委托计划的可治理性。",
+    "为什么企业会授予智能体 AI 对组织内任何数据存储的写入权限，而他们绝不会允许人类拥有同样的权限。",
+    "管理权是一种更具成效的框架，因为它鼓励团队为后来者维护系统，而不是仅仅占有一个代码库或特定模型。"
+  ],
+  "tags": [
+    "团队拓扑",
+    "AI 智能体",
+    "组织设计",
+    "认知负荷",
+    "AI 治理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 654,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774944000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-03-31 08:00:00"
+}
