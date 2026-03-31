@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 08:13:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 11:00:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3427,17 +3427,13 @@
 
 ### [全球-OCR-新王来自中国开源！GitHub-狂揽-73300+Star](https://www.qbitai.com/2026/03/393433.html)
 
-2026-03-30 14:15:44 | 标签: PaddleOCR, OCR, 百度飞桨, 文心大模型, 开源项目
-
-> 文章报道了百度 PaddleOCR 以超过 7.3 万 Star 登顶 GitHub 全球 OCR 项目榜，终结了谷歌 Tesseract OCR 长达数十年的统治地位。PaddleOCR 的成功源于其与文心大模型的深度协同，实现了从传统 OCR 到大模型时代文档解析的跨越。技术层面，文章重点介绍了获得 CVPR 2026 收录的两项核心成果：PP-OCRv5 通过「以数据为中心」的策略，仅凭 5M 参数实现了媲美千亿大模型的性能；PaddleOCR-VL 则采用「由粗到细」架构，有效降低计算开销并刷新多项 SOTA 纪录。OCR 如今已从简单的文档提取工具演变为大模型获取高质量数据和 Age...
+2026-03-30 14:15:44
 
 
 
 ### [InCoder-32B-开源：320-亿参数工业代码大模型，填补芯片设计与嵌入式领域空白](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247506643&idx=1&sn=1e4a8018efcfba67c3350a2664457447)
 
-2026-03-30 11:43:00 | 标签: InCoder-32B, 工业代码, 芯片设计, CUDA 优化, 嵌入式系统
-
-> 本文详细介绍了由北航团队联合多家机构发布的 InCoder-32B，这是一个拥有 320 亿参数的工业代码基座模型。针对通用大模型在 Verilog、CUDA、ARM 汇编等工业语言上表现不佳的痛点，该模型采用了三阶段 Code-Flow 训练流水线，并创新性地构建了四套生产级执行环境（涵盖 EDA、GPU 内核、3D 建模、嵌入式仿真），生成了 250 万条经执行验证的 SFT 数据。评测显示，InCoder-32B 在保持极高通用编程能力（HumanEval 94.5%）的同时，在工业基准测试中全面超越现有开源及部分闭源模型，为工业自动化和硬件设计提供了强大的 AI 支撑。
+2026-03-30 11:43:00
 
 
 
@@ -12017,9 +12013,7 @@
 
 ### [GitHub-初学者指南：GitHub-安全入门](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-security/)
 
-2026-03-30 16:00:00 | 标签: GitHub, 网络安全, GitHub Advanced Security, Dependabot, CodeQL
-
-> 本文为希望保护其代码仓库的开发者提供了 GitHub Advanced Security (GHAS) 的结构化介绍。文章强调了供应链安全的重要性，指出开发者会从第三方库中继承风险。指南提供了配置关键功能的分步说明：用于检测泄露凭据的 Secret Scanning、用于自动化依赖更新的 Dependabot，以及用于深度数据流分析的 CodeQL。此外，文章还介绍了 Copilot Autofix，这是一款 AI 驱动的工具，可以直接在 Pull Request 工作流中建议代码补丁，以修复安全漏洞。
+2026-03-30 16:00:00
 
 
 
@@ -23155,17 +23149,13 @@
 
 ### [三大模态模型全部登顶后，昆仑万维正式披露了-2026-年-AGI-战略](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523585&idx=1&sn=c196afdf81777bba739e5601873184e2)
 
-2026-03-30 10:13:00 | 标签: 昆仑万维, AGI 战略, 多模态大模型, 视频生成, 游戏世界模型
-
-> 文章详细介绍了昆仑万维披露的 2026 年 AGI 战略，其核心为「3+1」生态架构：底层由 Matrix-Game 3.0（游戏）、SkyReels V4（视频）、Mureka V9（音乐）及 Skywork 6.0（Agent）四大 SOTA 模型驱动；中层构建 DramaWave、Mureka、猫森学园三大 AI 原生平台；顶层以 Skywork Super Agent 为操作系统。文章重点拆解了 Matrix-Game 的长时序抗漂移机制、SkyReels 的音画一体双流架构以及 Mureka 的 MusiCoT 推理创作技术，展现了其构建多模态全家桶及创作者生态的野心。
+2026-03-30 10:13:00
 
 
 
 ### [深入揭秘那家兜售“无脑人类克隆体”的隐形初创公司](https://www.technologyreview.com/2026/03/30/1134780/r3-bio-brainless-human-clones-full-body-replacement-john-schloendorn-aging-longevity/)
 
-2026-03-30 01:26:49 | 标签: 生物技术, 长寿, 生物伦理, R3 Bio, 初创公司
-
-> 这篇来自《麻省理工科技评论》（MIT Technology Review）的调查报道揭露了 R3 Bio 的活动。该公司公开声称开发用于动物实验替代方案的猴子“器官囊”，私下里却在兜售用于器官获取和身体替换的“无脑人类克隆体”等激进概念。文章详细介绍了创始人的愿景、长寿领域投资者的参与，以及科学家们提出的伦理担忧。报道将这些努力置于更广泛的“生命主义”（Vitalist）运动背景下——该运动试图绕过传统的伦理界限以实现延长寿命，同时也对这种极端生物技术的技术可行性和社会接受度提出了质疑。
+2026-03-30 01:26:49
 
 
 
@@ -31629,11 +31619,11 @@
 
 
 
-### [92.6%-开发者每月使用-AI-编码助手，但每周节省时间只有-4-小时](https://baoyu.io/blog/2026-02-25/laura-tacho-ai-pragmatic-summit)
+### [驾驭工程：在「智能体优先」的世界里借力-Codex](https://baoyu.io/translations/2026-02-12/harness-engineering)
 
-2026-02-25T00:00:00.000Z
+2026-02-26T00:00:00.000Z
 
-> DX 公司 CTO Laura Tacho 在 Pragmatic Summit 上公布了 12 万开发者、450 家公司的最新基准数据。AI 采用率已达 92.6%，但每周节省时间卡在 4 小时不动。更关键的发现是：同样的 AI 工具，有些公司事故减半，有些事故翻倍。差别不在工具，在组织本身。
+> OpenAI 团队分享了用 Codex 智能体从零构建百万行代码产品的经验：0 行人工代码，3 名工程师处理 1500 个 PR，完成时间仅为手工编码的十分之一。
 
 
 

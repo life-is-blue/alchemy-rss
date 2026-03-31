@@ -1,4 +1,4 @@
-> **更新时间**: 2026-03-31 08:13:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-03-31 11:00:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral)
 
-2026-03-30 19:25:21 | 标签: Mistral AI, Voxtral TTS, 语音合成, 流匹配, 开源权重
-
-> Mistral AI 推出了其首款语音生成模型 Voxtral TTS，标志着向实时语音智能体迈出了重要一步。该模型基于 3.8B 参数骨干网络，支持九种语言，在质量上可媲美 ElevenLabs 等专有解决方案，同时提供了更低的成本和开放的权重。在技术上，Voxtral 采用了一种独特的架构，将自回归语义 token 生成与声学 token 的流匹配相结合，并通过自定义神经音频编解码器进行处理。与传统的扩散模型相比，这种方法能以更少的推理步骤实现高保真音频合成。除了模型本身，Mistral 还强调了其 Forge 平台，使企业能够在私有数据上对这些模型进行微调，以适应特定领域，从而确保通用闭...
+2026-03-30 19:25:21
 
 
 
@@ -7870,9 +7868,7 @@
 
 ### [什么时候-Agent-能自己写-skill？](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566471&idx=1&sn=b517898fe315865c79bd7a4e4c9e9928)
 
-2026-03-30 14:03:00 | 标签: AI Agent, Agent Skills, MCP, 强化学习, Voyager
-
-> 文章探讨了 AI Agent 领域的核心瓶颈：如何让 Agent 自主获取并优化专业技能。作者回顾了从 1999 年强化学习理论到 2023 年 Voyager 开启「技能即代码」时代的跨越，重点分析了 2025 年 Anthropic 发布 Agent Skills 标准后的技术爆发。内容涵盖了技能发现的三种路径（好奇心、失败、需求驱动）、技能组合的挑战（嵌套崩溃与模型能力瓶颈）、以及技能进化的前沿方案（如 EvolveR 的闭环自进化）。最后指出，Agent 技能正从学术兴趣转向工程化落地，成为一种可复用、可传承的知识基础设施。
+2026-03-30 14:03:00
 
 
 
@@ -11292,41 +11288,31 @@
 
 ### [来自-Georgi-Gerganov-的引用](https://simonwillison.net/2026/Mar/30/georgi-gerganov/#atom-everything)
 
-2026-03-30 21:31:02 | 标签: 本地 LLM, llama.cpp, 推理, 编码智能体, 聊天模板
-
-> llama.cpp 的创建者 Georgi Gerganov 指出了本地 LLM 采用过程中面临的系统性挑战，特别是在编码等复杂任务中。他指出，从用户客户端到最终输出的推理链条由许多不同的组件组成，包括执行框架、聊天模板和提示词逻辑，这些组件通常由不同的方开发。这种碎片化导致了细微且往往未被察觉的故障，从而降低了模型性能，使得难以实现自主智能体所需的可靠性。
+2026-03-30 21:31:02
 
 
 
 ### [发布：datasette-llm-0.1a3](https://simonwillison.net/2026/Mar/30/datasette-llm/#atom-everything)
 
-2026-03-30 19:48:43 | 标签: Datasette, LLM, Python, 开源, 插件开发
-
-> 本发布说明宣布了 datasette-llm 0.1a3 版本，这是一个旨在供其他 Datasette 插件集成 LLM 功能的基础插件。此次更新的主要内容是引入了特定用途的配置，使管理员能够定义哪些特定的 LLM 可用于不同的插件功能，从而增强了对 Datasette 生态系统中模型使用的控制和约束。
+2026-03-30 19:48:43
 
 
 
 ### [Mr.-Chatterbox-是一个（性能较弱的）维多利亚时代伦理训练模型，你可以在自己的电脑上运行](https://simonwillison.net/2026/Mar/30/mr-chatterbox/#atom-everything)
 
-2026-03-30 14:28:34 | 标签: LLM, 公有领域, 维多利亚文学, 本地 LLM, AI 伦理
-
-> 本文介绍了 Mr. Chatterbox，这是一个由 Trip Venturella 训练的独特语言模型，使用了 1837 年至 1899 年间出版的超过 28，000 本大英图书馆书籍的语料库。虽然该模型的对话性能有限（作者将其归因于相对于 Chinchilla 缩放定律训练不足），但它代表了使用完全公有领域数据构建 LLM 的一项重要实验。文章详细介绍了该模型的技术规格，并提供了如何使用为 LLM CLI 工具新开发的插件在本地运行它的实用指南，值得一提的是，该插件是由 Claude Code AI 智能体构建的。
+2026-03-30 14:28:34
 
 
 
 ### [阿里发布-Qwen3.5-Omni，多模态能力超越-Gemini-3.1-Pro](https://www.qbitai.com/2026/03/393460.html)
 
-2026-03-30 14:21:45 | 标签: Qwen3.5-Omni, 全模态大模型, 阿里云, 音视频理解, Vibe Coding
-
-> 阿里正式发布新一代全模态大模型 Qwen3.5-Omni。该模型在音视频理解、识别及实时交互等 215 项任务中表现卓越，超越了 Google 的 Gemini-3.1 Pro，成为全球最强的全模态模型之一。其核心优势包括支持 113 种语言方言、极强的音视频结构化描述能力，以及新兴的音视频 Vibe Coding 能力。目前，该模型已通过阿里云百炼平台提供 Plus、Flash、Light 三种 API 版本，且调用成本极低，每百万 tokens 输入不足 0.8 元，仅为竞争对手的十分之一。
+2026-03-30 14:21:45
 
 
 
 ### [非生产环境-RL-中奖励篡改导致的（部分）自然涌现失准-——-LessWrong](https://www.lesswrong.com/posts/2ANCyejqxfqK2obEj/some-natural-emergent-misalignment-from-reward-hacking-in)
 
-2026-03-30 10:56:10 | 标签: AI 安全, 强化学习, 奖励篡改, 涌现失准, 思维链
-
-> 来自英国 AI 安全研究所（UK AI Security Institute）的作者们复现并扩展了 Anthropic 的研究《生产环境 RL 中奖励篡改导致的自然涌现失准》。他们使用开源模型（Olmo、GPT-OSS）和沙盒编码环境，证实了 RL 训练期间的奖励篡改始终会导致涌现失准。一个关键的新发现是，RL 期间的高 KL 惩罚会鼓励模型进行奖励篡改，同时在思维链（CoT）中抑制关于该篡改的显式推理，这种现象被称为“不忠实 CoT”。此外，他们还证明了仅通过合成文档微调（SDF）就能提高失准分数，这挑战了之前的假设。这项工作为 AI 安全研究提供了一个有价值且可复现的“模型生物”。
+2026-03-30 10:56:10
 
 
 
@@ -11350,9 +11336,7 @@
 
 ### [利用生成式-AI-重塑大众汽车集团的营销-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/reimagine-marketing-at-volkswagen-group-with-generative-ai/)
 
-2026-03-30 07:24:17 | 标签: 生成式 AI, 图像生成, Amazon SageMaker, Amazon Bedrock, Flux.1
-
-> 本文详细介绍了大众汽车集团与 AWS 生成式 AI 创新中心合作开展的一个项目，旨在变革汽车营销方式。面对传统摄影的高成本和物流复杂性，大众汽车构建了一个端到端的流水线，利用在 Amazon SageMaker 上通过 DreamBooth 和 LoRA 微调的 Flux.1-Dev 模型，生成照片级逼真的车辆图像。为了确保技术和品牌的精确性，该系统采用了一套复杂的评估框架：使用 Florence-2 进行组件级分割，并利用 Claude 4.5 Sonnet 作为视觉语言评估器，来验证技术准确性和品牌准则的合规性。此外，团队还利用合成数据微调了 Amazon Nova Pro，创建了专门的 ...
+2026-03-30 07:24:17
 
 
 
@@ -11364,9 +11348,7 @@
 
 ### [Claude-Code-创始人分享的-15-条最新使用技巧深度解析](https://mp.weixin.qq.com/s?__biz=Mzg2OTA1OTAxNA==&mid=2247489187&idx=1&sn=26ef9393173fdd8f7bd756b541d3a541)
 
-2026-03-30 04:44:00 | 标签: Claude Code, AI 编程, Agent, 自动化工作流, 软件工程
-
-> 文章详细梳理了 Claude Code 近期发布的 15 项核心功能与使用技巧，包括移动端远程控制、/loop 与 /schedule 自动化任务、Git Worktrees 并行开发、/batch 批量处理及 /btw 旁路查询等。作者通过对这些功能的实战解读，指出 AI 编程正向着「脱离桌面」、「高度自主」与「并行协作」的方向演进，为开发者提供了极具参考价值的 AI 辅助编程工作流优化指南。
+2026-03-30 04:44:00
 
 
 
@@ -11396,9 +11378,7 @@
 
 ### [发布：llm-mrchatterbox-0.1](https://simonwillison.net/2026/Mar/30/llm-mrchatterbox-2/#atom-everything)
 
-2026-03-30 02:20:46 | 标签: LLM, 维多利亚时代, 本地 LLM, 合乎道德的 AI, 开源
-
-> 本次发布公告介绍了 llm-mrchatterbox 0.1，这是一个用于 LLM CLI 工具的插件。该模型独特地基于 1837 年至 1899 年间出版的 28，000 多篇英国文本语料库进行训练。它被描述为一个“弱”但经过合乎道德训练的模型，旨在用户的计算机上本地运行，提供基于 19 世纪维多利亚时代文学和话语的独特语言体验。
+2026-03-30 02:20:46
 
 
 
@@ -11416,9 +11396,7 @@
 
 ### [一周-1300-多个-PR，揭秘-Stripe-内部-AI-工程最佳实践](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247494116&idx=1&sn=1a3927f31d3cac416fcd74acdfb2e6fc)
 
-2026-03-30 00:38:00 | 标签: Stripe, AI Agent, 软件工程, Minions, AI 编程
-
-> 本文深入剖析了 Stripe 内部的 Minions AI 编码系统。该系统通过深度集成云端开发环境（devbox）和 CI/CD 流水线，实现了从需求到代码提交的无人值守自动化。文章探讨了 AI 时代软件工程的“激活能量”概念，指出工程师的角色正从代码编写者转向 AI 编排者与审查者。此外，还介绍了机器对机器支付协议（Machine Payment Protocol），探讨了 AI Agent 作为经济主体的未来潜力，强调了完善的开发者基础设施是 AI 编码落地的核心前提。
+2026-03-30 00:38:00
 
 
 
@@ -33846,33 +33824,25 @@
 
 ### [通过智能体、沙盒与人类协作，将-Turborepo-速度提升-96%---Vercel](https://vercel.com/blog/making-turborepo-ninety-six-percent-faster-with-agents-sandboxes-and-humans)
 
-2026-03-30 16:32:04 | 标签: Turborepo, 性能优化, Rust, AI 智能体, LLM 辅助编程
-
-> 本文探讨了 Vercel 用于彻底优化 Turborepo 任务图计算的方法，实现了高达 96% 的性能提升。作者 Anthony Shew 描述了一个为期八天的冲刺开发过程，该过程从使用无人值守的 AI 智能体演变为复杂的“人在回路”（human-in-the-loop）工作流。一个关键的技术洞察是创建了对 LLM 友好的性能分析数据；通过将复杂的 Chrome Trace JSON 转换为结构化的 Markdown，AI 智能体识别和修复热点代码的能力得到了显著提高。该流程还利用 Vercel Sandboxes 在基准测试期间消除了环境噪声，从而能够检测到诸如栈分配 OID 和系统调用减...
+2026-03-30 16:32:04
 
 
 
 ### [如何使用-Shadcn/ui-构建动画-Shadcn-标签页组件](https://www.freecodecamp.org/news/how-to-build-an-animated-shadcn-tab-component-with-shadcn-ui/)
 
-2026-03-30 14:17:26 | 标签: React, Tailwind CSS, Framer Motion, Shadcn/ui, 前端开发
-
-> 本文详细介绍了如何创建一个超越静态实现的进阶动画标签页系统。重点在于构建一个可复用的组件，该组件具有弹簧动画效果的激活胶囊指示器，以及在悬停时会展开的独特堆叠卡片内容区域。教程涵盖了定义 TypeScript 接口、管理激活索引和悬停效果的状态，以及利用 Framer Motion 的 `layoutId` 实现无缝共享元素过渡。此外，文章还介绍了用于快速搭建组件的 Shadcn Space CLI，并演示了如何使用 Shadcn/ui 语义令牌（semantic tokens）来保持主题感知。
+2026-03-30 14:17:26
 
 
 
 ### [Cloudflare-客户端安全：更智能的检测，现已向所有人开放](https://blog.cloudflare.com/client-side-security-open-to-everyone/)
 
-2026-03-30 14:00:08 | 标签: Cloudflare, 客户端安全, JavaScript 安全, 机器学习, LLM
-
-> Cloudflare 现已向自助服务客户开放其客户端安全高级版（原 Page Shield），并向所有用户提供基于域名的免费威胁情报。其核心创新在于一个两阶段检测流水线：首先通过图神经网络（GNN）利用抽象语法树（AST）分析 JavaScript 的结构意图以实现高召回率，随后由运行在 Workers AI 上的大语言模型（LLM）提供语义层面的二次判断，以过滤误报。在生产环境评估中，该架构将误报率降低了高达 200 倍。文章还重点介绍了一个真实案例，该系统通过混淆脚本检测到了针对小米路由器的零日漏洞攻击，并强调了这些工具如何帮助商家满足 PCI DSS v4 合规要求。
+2026-03-30 14:00:08
 
 
 
 ### [当网站开始为-Agent-提供接口，Web-的交互边界正在改变](https://mp.weixin.qq.com/s?__biz=Mzg4MTYwMzY1Mw==&mid=2247518265&idx=1&sn=c279948da5774dcbde8e4eb13736fb87)
 
-2026-03-30 10:03:00 | 标签: WebMCP, AI Agent, Web 开发, 软件架构, 交互设计
-
-> 文章以 Chrome 推出的 WebMCP 为切入点，深入剖析了 Web 交互边界的演变。作者指出，WebMCP 标志着网站开始主动向 Agent 暴露可调用能力，而非仅仅依赖 GUI 模拟。文章强调，GUI 是面向人类的“隐式接口”，而 Agent 需要的是结构化、可调用的“显式接口”。随着 AI Agent 的普及，软件设计将从单纯的“界面产品”转向“能力系统”，开发者需要重新思考如何将业务能力从界面中抽离，使其既能服务于人，也能被 Agent 高效调度。
+2026-03-30 10:03:00
 
 
 
@@ -47902,9 +47872,7 @@ http://antirez.com/news/162
 
 ### [RSAC-2026-发布了五个智能体身份框架，却留下了三个关键漏洞](https://venturebeat.com/security/rsac-2026-agent-identity-frameworks-three-gaps)
 
-2026-03-30 18:57:45 | 标签: AI 安全, 智能体 AI, RSAC 2026, 身份治理, 网络安全
-
-> 在 RSA Conference 2026 上，包括 Cisco、CrowdStrike、Palo Alto Networks 和 Microsoft 在内的主要安全厂商推出了用于管理 AI 智能体的框架。本文分析认为，这些解决方案主要关注身份（智能体是谁），而非行为（智能体做什么）。作者指出了三个尚未解决的关键安全漏洞：智能体自行重写安全策略、智能体间委托缺乏信任验证，以及带有活跃凭证的“幽灵智能体”泛滥。文章最后为企业提供了缓解这些风险的可行建议，强调当前的身份中心化方法不足以应对 AI 智能体的自主特性。
+2026-03-30 18:57:45
 
 
 
@@ -62676,17 +62644,13 @@ http://antirez.com/news/162
 
 ### [Claude-Code-现已支持电脑操控-Computer-Use](https://x.com/claudeai/status/2038663014098899416)
 
-2026-03-30 17:01:53 | 标签: Claude Code, Anthropic, 电脑操控, AI 编程, CLI
-
-> 这条推文宣布了 Claude Code 的一项重要更新：集成了“电脑操控”功能。用户现在可以让 Claude 直接从命令行界面 (CLI) 启动应用程序、与用户界面 (UI) 交互并进行测试。该功能目前面向 Pro 和 Max 订阅用户提供研究预览。
+2026-03-30 17:01:53
 
 
 
 ### [Qwen3.5-Omni-发布：原生全模态-AGI](https://x.com/Alibaba_Qwen/status/2038636335272194241)
 
-2026-03-30 15:15:53 | 标签: Qwen, Qwen3.5-Omni, AGI, 全模态, AI 模型
-
-> Qwen 宣布发布 Qwen3.5-Omni，这是其模型阵容的重大进步。该模型专为原生多模态理解（文本、图像、音频和视频）而设计，引入了“视听氛围编程”功能，允许用户通过摄像头输入生成功能性网站或游戏。该模型系列包括 Plus、Flash 和 Light 版本，在音频方面表现出 SOTA 水准，并提供广泛的语言支持。
+2026-03-30 15:15:53
 
 
 
