@@ -1,0 +1,54 @@
+{
+  "id": "RAW_34c009ff",
+  "title": "AWS 发布用于安全测试和云运维的前沿智能体 | Amazon Web Services",
+  "url": "https://aws.amazon.com/blogs/machine-learning/aws-launches-frontier-agents-for-security-testing-and-cloud-operations/",
+  "date": "2026-03-31 08:25:32",
+  "author": "Swami Sivasubramanian",
+  "siteName": "AWS Machine Learning Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I’m excited to announce that <a href=\"https://aws.amazon.com/security-agent/\" target=\"_blank\" rel=\"noopener\">AWS Security Agent</a> on-demand penetration testing and <a href=\"https://aws.amazon.com/devops-agent/\" target=\"_blank\" rel=\"noopener\">AWS DevOps Agent</a> are now generally available, representing a new class of AI capabilities we announced at re:Invent called <a href=\"https://aws.amazon.com/ai/frontier-agents/\" target=\"_blank\" rel=\"noopener\">frontier agents</a>. These autonomous systems work independently to achieve goals, scale massively to tackle concurrent tasks, and run persistently for hours or days without constant human oversight. Together, these agents are changing the way we secure and operate software. In preview, customers and partners report that AWS Security Agent compresses penetration testing timelines from weeks to hours and the AWS DevOps Agent supports 3–5x faster incident resolution.</p>\n  <h2>What makes frontier agents different?</h2>\n  <p>Unlike traditional AI assistants that help with individual tasks, frontier agents act as extensions of your team, delivering complete outcomes. They don’t just respond to prompts—they work autonomously to solve complex problems, make decisions across multiple steps, and operate continuously until they achieve their objectives. These aren’t tools that require constant direction. They’re intelligent systems that understand context, reason through problems, and take action—transforming how organizations approach application security and operational excellence.</p>\n  <h2>AWS Security Agent: Reduce penetration testing from weeks to hours</h2>\n  <p>AWS Security Agent transforms penetration testing from a periodic bottleneck into an on-demand capability. Most organizations limit manual penetration testing to their most critical applications due to time and cost constraints, which can leave the majority of their portfolio exposed between tests. AWS Security Agent changes this by delivering autonomous penetration testing that operates 24/7 at a fraction of the cost, enabling you to test all your applications whenever you need to.</p>\n  <p>AWS Security Agent operates like a human penetration tester—it identifies potential vulnerabilities, attempts to exploit them with targeted payloads and attack chains, and validates they are legitimate security risks. By ingesting your source code, architecture diagrams, and documentation, it understands how your application was designed and built to identify how individual vulnerabilities connect into higher-severity attack chains that traditional scanners miss. Bamboo Health said, “AWS Security Agent surfaced findings that no other tool has uncovered.” HENNGE K.K. shared that “this allows us to rapidly accelerate our security lifecycle, reducing the typical testing duration by more than 90%.“ Customers are uncovering security risks while dramatically reducing testing timelines.</p>\n  <p>“I’m excited by how a frontier agent like AWS Security Agent is transforming critical workflows for our customers. They’re able to cut penetration testing time from weeks to hours, while uncovering critical vulnerabilities that traditional scanners miss” said Amy Herzog, Vice President and CISO, AWS. “We’re using Security Agent ourselves at AWS. This is a great example of AI becoming an autonomous partner to deliver comprehensive, continuous protection.”</p>\n  <p><span>Learn more in our <a href=\"https://aws.amazon.com/blogs/security/aws-security-agent-on-demand-penetration-testing-now-generally-available/\" target=\"_blank\" rel=\"noopener\">announcement</a> today.</span></p>\n  <h2>AWS DevOps Agent: Autonomous operational excellence across multicloud environments</h2>\n  <p>AWS DevOps Agent is your always-available operations teammate that resolves and proactively prevents incidents, optimizes application reliability and performance, and handles on-demand SRE tasks across AWS, multicloud, and on-premises environments. When incidents occur, it autonomously investigates root causes by correlating telemetry, code, and deployment data across your entire stack—whether your applications are on AWS, Azure, hybrid, or on-prem. It works with your observability tools (including CloudWatch, Datadog, Dynatrace, New Relic, Splunk, Grafana), runbooks, code repositories (GitHub, GitLab, Azure DevOps), and CI/CD pipelines just as an experienced DevOps engineer would.</p>\n  <p>For operations teams, this means faster incident resolution and improved productivity. Customers and partners using AWS DevOps Agent in preview report up to 75% lower MTTR, 80% faster investigations, and 94% root cause accuracy, supporting 3–5x faster incident resolution. The agent provides detailed mitigation plans with agent-ready specifications, learns from historical patterns to deliver targeted recommendations that strengthen observability and system resilience, and builds comprehensive understanding through automatic application discovery and dynamic topology mapping across diverse operational environments. DevOps agent independently takes a live incident and traces it back to the exact code or deployment change. Working together, with tools such as Kiro and Claude Code, DevOps&nbsp; Agent can generate validated fixes that can be applied back into the system.</p>\n  <p>Western Governor’s University (WGU), a leading online university serving over 191,000 students, was among the first organizations to deploy Amazon DevOps Agent into production, doing so even ahead of the preview launch at re:Invent. During a recent production investigation, WGU’s SRE team used the DevOps Agent to analyze a service disruption scenario, reducing total resolution time from an estimated two hours to just 28 minutes—a 77% improvement in MTTR. The Agent quickly pinpointed the root cause within an AWS Lambda function configuration, surfacing critical operational knowledge that had previously existed only in undiscovered internal documentation.</p>\n  <p>Learn more in our <a href=\"https://aws.amazon.com/blogs/mt/announcing-general-availability-of-aws-devops-agent/\" target=\"_blank\" rel=\"noopener\">announcement</a> today.</p>\n  <h2>Why frontier agents matter</h2>\n  <p>These agents demonstrate the three characteristics that define frontier agents: they work independently to achieve goals across multiple steps, they scale massively to handle concurrent tasks across your entire portfolio, and they run persistently for hours or days to complete complex workflows from start to finish.</p>\n  <p>This means helping security teams move from periodic testing of critical applications to continuous, comprehensive testing across everything. This means helping operations teams shift from reactive firefighting to proactive system improvement. Both agents extend what your team can accomplish, handling complex work that previously required significant human time and expertise.</p>\n  <p>AWS Security Agent and AWS DevOps Agent are just the beginning. As we continue developing frontier agents and the tools to build your own frontier agents, we’re focused on making these systems powerful, efficient, and trustworthy. These frontier agents represent a new way of operating—one where AI systems act as true extensions of your team, fully owning certain tasks while you focus on what matters most strategically.</p>\n  <p>To get started, visit <a href=\"https://aws.amazon.com/security-agent/\" target=\"_blank\" rel=\"noopener\">AWS Security Agent</a> and <a href=\"https://aws.amazon.com/devops-agent/\" target=\"_blank\" rel=\"noopener\">AWS DevOps Agent</a> to learn more.</p>\n  <p>The frontier of AI agents is here. Let’s build the future together.</p>\n  <hr>\n  <h3>About the author</h3>\n  <p style=\"clear: both\"><strong><img class=\"alignleft wp-image-45096 size-full\" src=\"https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2022/10/31/swami.png\" alt=\"\" width=\"100\" height=\"100\">Swami Sivasubramanian</strong> is Vice President for Agentic AI at Amazon Web Services (AWS). At AWS, Swami has led the development and growth of leading AI services like Amazon DynamoDB, Amazon SageMaker, Amazon Bedrock, and Amazon Q. His team’s mission is to provide the scale, flexibility, and value that customers and partners require to innovate using agentic AI with confidence and build agents that are not only powerful and efficient, but also trustworthy and responsible. Swami also served from May 2022 through May 2025 as a member of the National Artificial Intelligence Advisory Committee, which was tasked with advising the President of the United States and the National AI Initiative Office on topics related to the National AI Initiative.</p>\n  <!-- '\"` -->\n </body>\n</html>",
+  "aiSummary": "AWS 宣布 AWS Security Agent 和 AWS DevOps Agent 正式可用，引入了一类用于自动化渗透测试和多云事件解决的全新“前沿智能体”。",
+  "oneSentenceSummary": "AWS 宣布 AWS Security Agent 和 AWS DevOps Agent 正式可用，引入了一类用于自动化渗透测试和多云事件解决的全新“前沿智能体”。",
+  "summary": "AWS 推出了两项重大的自主 AI 服务：AWS Security Agent 和 AWS DevOps Agent，它们被归类为“前沿智能体”。这些系统旨在长时间独立工作，无需持续的人工监督即可实现复杂目标。Security Agent 通过分析代码和架构来识别攻击链，从而实现渗透测试自动化，将测试时间从几周缩短至几小时。DevOps Agent 充当自主 SRE 队友，关联 AWS、本地及其他云环境中的遥测数据和代码，将事件解决速度提高多达 5 倍，并显著降低平均修复时间（MTTR）。",
+  "mainPoints": [
+    {
+      "point": "前沿智能体代表了从基于任务的助手向以结果为导向的自主队友的转变。",
+      "explanation": "与响应单个提示的传统 AI 不同，这些智能体能够理解上下文、通过多步骤问题进行推理，并持续运行直到实现高级目标。"
+    },
+    {
+      "point": "AWS Security Agent 支持大规模的持续、按需渗透测试。",
+      "explanation": "通过模拟人类攻击者行为并分析内部文档和代码，它能够识别传统扫描器经常遗漏的复杂漏洞和攻击链，从而显著降低成本和时间。"
+    },
+    {
+      "point": "AWS DevOps Agent 在混合云和多云环境中提供自主的卓越运营。",
+      "explanation": "它与各种可观测性工具和代码仓库集成，以调查根本原因并生成经过验证的修复方案，将平均修复时间（MTTR）降低多达 75%。"
+    }
+  ],
+  "keyQuotes": [
+    "前沿智能体充当您团队的延伸，交付完整的结果。",
+    "AWS Security Agent 将渗透测试从周期性的瓶颈转变为一种按需能力。",
+    "AWS DevOps Agent 是您随时待命的运维队友，能够解决并主动预防事件。",
+    "这些自主系统能够独立工作以实现目标，大规模扩展以处理并发任务，并在无需持续人工监督的情况下持续运行数小时或数天。"
+  ],
+  "tags": [
+    "AWS",
+    "前沿智能体",
+    "AI 智能体",
+    "网络安全",
+    "DevOps"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1071,
+  "domain": "aws.amazon.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_3e5f61",
+  "sourceName": "AWS Machine Learning Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774945532000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 08:25:32"
+}
