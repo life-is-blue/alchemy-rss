@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9184aa7a",
+  "title": "发布：datasette-llm 0.1a4",
+  "url": "https://simonwillison.net/2026/Mar/31/datasette-llm/#atom-everything",
+  "date": "2026-03-31 21:17:23",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a4\">datasette-llm 0.1a4</a></span> <span class=\"beat-commit\">— LLM integration plugin for other plugins to depend on</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>Ability to <a href=\"https://github.com/datasette/datasette-llm/blob/0.1a4/README.md#model-references-with-custom-api-keys\">configure different API keys for models based on their purpose</a> - for example, set it up so enrichments always use <code>gpt-5.4-mini</code> with an API key dedicated to that purpose. <a href=\"https://github.com/datasette/datasette-llm/pull/4\">#4</a></li>\n       </ul>\n      </blockquote>\n      <p>I released <a href=\"https://github.com/simonw/llm-echo/releases/tag/0.3\">llm-echo 0.3</a> to provide an API key testing utility I needed for the tests for this new feature.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4071/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-llm 0.1a4 发布，引入了针对特定 LLM 模型和任务的基于用途的 API 密钥配置。",
+  "oneSentenceSummary": "datasette-llm 0.1a4 发布，引入了针对特定 LLM 模型和任务的基于用途的 API 密钥配置。",
+  "summary": "Simon Willison 宣布发布 datasette-llm 0.1a4，这是一个用于将大语言模型（LLM）集成到 Datasette 生态系统中的基础插件。本次更新的核心功能是能够根据不同模型的作用配置不同的 API 密钥，例如为数据增强任务分配专用密钥。此次发布还伴随 llm-echo 0.3 的更新，该工具已更新以支持对这些新配置功能的测试。",
+  "mainPoints": [
+    {
+      "point": "基于用途的 API 密钥配置。",
+      "explanation": "用户现在可以根据预期用途为模型分配特定的 API 密钥，从而更好地跟踪成本并控制自动数据增强等任务的访问权限。"
+    },
+    {
+      "point": "基础插件架构。",
+      "explanation": "datasette-llm 插件被设计为一个核心依赖项，其他 Datasette 插件可以利用它来提供由 LLM 驱动的功能。"
+    },
+    {
+      "point": "支持测试工具。",
+      "explanation": "llm-echo 0.3 的发布提供了测试自定义 API 密钥逻辑和模型引用的必要基础设施。"
+    }
+  ],
+  "keyQuotes": [
+    "供其他插件依赖的 LLM 集成插件",
+    "能够根据用途为模型配置不同的 API 密钥",
+    "设置好后，数据增强任务将始终使用 gpt-5.4-mini，并配有专用于该目的的 API 密钥"
+  ],
+  "tags": [
+    "Datasette",
+    "LLM",
+    "API 管理",
+    "Python",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 68,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774991843000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 21:17:23"
+}

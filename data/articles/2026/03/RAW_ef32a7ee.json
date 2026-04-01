@@ -1,0 +1,58 @@
+{
+  "id": "RAW_ef32a7ee",
+  "title": "PyPI 供应链攻击入侵 LiteLLM，造成敏感信息泄露",
+  "url": "https://www.infoq.com/news/2026/03/litellm-supply-chain-attack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-03-31 21:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Discovered by FutureSearch researcher Callum McMahon, a <a href=\"https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/\">supply chain attack against LiteLLM on PyPI</a> resulted in over 40 thousand downloads of a compromised version that installed a malicious payload capable of harvesting and exfiltrating sensitive information. LiteLLM is downloaded roughly 3 million times per day.</p>\n   <p>As Andrej Karpathy noted on X, the <a href=\"https://x.com/karpathy/status/2036487306585268612?s=20\">malware was capable to exfiltrate SSL and SSH keys, Cloud provider credentials</a>, Kubernetes configurations, Git credentials, API keys, shell history, crypto wallets, and many other kinds of secrets.</p>\n   <p>As McMahon explains, the attack affected the <code>litellm</code> 1.82.8 package:</p>\n   <blockquote>\n    <p>It started with my machine stuttering hard, something that really shouldn't be happening on a 48GB Mac. htop taking 10s of seconds to load, CPU pegged at 100%, all signs I'll be working on my local env for a while… After failing to software reset my Mac, I took a final picture for evidence and hard reset.</p>\n   </blockquote>\n   <p>After promptly reporting the compromised package to the PyPI security team and the LiteLLM maintainers, the affected package where quarantined within approximately 40 minutes. However, the risk extended further, as any packages depending on <code>litellm</code> version 1.82.8 were also indirectly compromised.</p>\n   <p>According to McMahon, all it took for his system to be compromised was launching a local <a href=\"https://futuresearch.ai/docs/mcp-server\">MCP server</a> through Cursor. This triggered the download of the latest LiteLLM package, which happened to have been compromised just minutes earlier. However, a flaw in the implementation of the malware itself caused the LiteLLM process to recursively fork, eventually bringing McMahon’s system to a complete halt:</p>\n   <blockquote>\n    <p>The <code>.pth</code> launcher spawns a child Python process via <code>subprocess.Popen</code>, but because <code>.pth</code> files trigger on every interpreter startup, the child re-triggers the same <code>.pth</code> — creating an exponential fork bomb that crashed the machine.</p>\n   </blockquote>\n   <p>Without this mistake in the implementation, the malware would have gone unnoticed for much longer, noted Karpathy, with much greater damage.</p>\n   <p>Point Wild, provider of AI-powered cybersecurity, has open-sourced a dependency scanner to help developers assess the impact on their dependencies. The tool, <a href=\"https://github.com/Point-Wild/who-touched-my-packages\"><code>who-touched-my-packages</code></a> (wtmp), combines behavioral analysis and AI-driven detection to flag zero-day supply-chain threats, going beyond the coverage offered by conventional vulnerabilities checkers.</p>\n   <p>FutureSearch released a <a href=\"https://futuresearch.ai/tools/litellm-checker\"><code>litellm-checker</code></a> tool to help package maintainers determine whether their projects were impacted by the supply chain attack.</p>\n   <p>The LiteLLM team reported that the supply chain attack was enabled by a <a href=\"https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know/\">vulnerability in Trivy</a>, which made it possible for the attackers to <a href=\"https://docs.litellm.ai/blog/security-update-march-2026\">gain unauthorized access to the LiteLLM publishing pipeline</a>.</p>\n   <p>For additional details on the supply chain attack and the malicious payload deployed by the malware, see McMahon's original post and <a href=\"https://snyk.io/blog/poisoned-security-scanner-backdooring-litellm/\">Snyk's detailed analysis</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"PyPI Supply Chain Attack Compromises LiteLLM, Enabling the Exfiltration of Sensitive Information\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/03/litellm-supply-chain-attack/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1774990800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "一次针对热门 PyPI 包 LiteLLM 的严重供应链攻击通过恶意载荷窃取了敏感凭据，仅因恶意软件中的一个缺陷导致系统崩溃的 fork 炸弹才被发现。",
+  "oneSentenceSummary": "一次针对热门 PyPI 包 LiteLLM 的严重供应链攻击通过恶意载荷窃取了敏感凭据，仅因恶意软件中的一个缺陷导致系统崩溃的 fork 炸弹才被发现。",
+  "summary": "本文详细介绍了一起涉及 PyPI 上 `litellm` 包的重大安全漏洞，其中 1.82.8 版本被入侵并被下载超过 40，000 次。该恶意软件旨在窃取高度敏感的数据，包括 SSL/SSH 密钥、云服务提供商凭据、Kubernetes 配置和 API 密钥。研究人员 Callum McMahon 在恶意软件实现糟糕的 `.pth` 启动器触发了指数级 fork 炸弹并导致其机器崩溃后发现了这次攻击。LiteLLM 团队后来确定根本原因是 Trivy 安全扫描器中的一个漏洞，该漏洞允许未经授权访问他们的发布流水线。报告还强调了社区推出的新工具，如 `who-touched-my-packages` 和 `litellm-checker`，旨在帮助开发者检测此类供应链威胁。",
+  "mainPoints": [
+    {
+      "point": "LiteLLM 1.82.8 版本在 PyPI 上被入侵，影响了超过 40，000 次下载。",
+      "explanation": "该恶意版本包含一个能够窃取多种机密信息的载荷，从 SSH 密钥到云凭据和加密货币钱包。"
+    },
+    {
+      "point": "此次攻击因恶意软件实现中的一个技术缺陷而暴露。",
+      "explanation": "`.pth` 启动器中的递归触发器创建了一个意外的 fork 炸弹，导致系统崩溃，从而被研究人员发现。"
+    },
+    {
+      "point": "此次漏洞源于 Trivy 安全扫描器中的一个漏洞。",
+      "explanation": "攻击者利用此缺陷获得了对 LiteLLM 发布流水线的未经授权访问权限，凸显了即使是专注于安全的工具也存在风险。"
+    },
+    {
+      "point": "新的防御工具已经发布，以减轻供应链风险。",
+      "explanation": "`who-touched-my-packages` (wtmp) 和 `litellm-checker` 等工具提供了行为分析和依赖扫描功能，以识别零日威胁。"
+    }
+  ],
+  "keyQuotes": [
+    "该恶意软件能够窃取 SSL 和 SSH 密钥、云服务提供商凭据、Kubernetes 配置、Git 凭据、API 密钥、Shell 历史记录、加密货币钱包以及许多其他类型的机密信息。",
+    "`.pth` 启动器通过 `subprocess.Popen` 生成一个子 Python 进程，但由于 `.pth` 文件在每次解释器启动时都会触发，子进程会重新触发相同的 `.pth` 文件——从而创建了一个导致机器崩溃的指数级 fork 炸弹。",
+    "Karpathy 指出，如果没有实现中的这个错误，恶意软件可能会在更长时间内未被发现，从而造成更大的损害。",
+    "此次供应链攻击是由 Trivy 中的一个漏洞促成的，该漏洞使攻击者能够未经授权访问 LiteLLM 的发布流水线。"
+  ],
+  "tags": [
+    "供应链攻击",
+    "PyPI",
+    "LiteLLM",
+    "网络安全",
+    "恶意软件分析"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 427,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774990800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 21:00:00"
+}

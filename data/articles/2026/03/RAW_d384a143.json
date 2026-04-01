@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d384a143",
+  "title": "发布：llm-echo 0.3",
+  "url": "https://simonwillison.net/2026/Mar/31/llm-echo-2/#atom-everything",
+  "date": "2026-03-31 15:43:26",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm-echo/releases/tag/0.3\">llm-echo 0.3</a></span> <span class=\"beat-commit\">— Debug plugin for LLM providing an echo model</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>Mechanisms for <a href=\"https://github.com/simonw/llm-echo/blob/0.3/README.md#tool-calling\">testing tool calls</a>. #3</li>\n        <li>Mechanism for <a href=\"https://github.com/simonw/llm-echo/blob/0.3/README.md#raw-responses\">testing raw responses</a>. #4</li>\n        <li>New <code>echo-needs-key</code> model for <a href=\"https://github.com/simonw/llm-echo/blob/0.3/README.md#echo-needs-key-model\">testing model key logic</a>. #7</li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4075/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了 llm-echo 0.3，这是一个用于 LLM CLI 的调试插件，引入了测试工具调用、原始响应和模型密钥逻辑的新机制。",
+  "oneSentenceSummary": "Simon Willison 发布了 llm-echo 0.3，这是一个用于 LLM CLI 的调试插件，引入了测试工具调用、原始响应和模型密钥逻辑的新机制。",
+  "summary": "此次发布的 llm-echo (v0.3) 增强了 LLM CLI 工具的调试能力。它提供了一个回显（echo）模型，允许开发者模拟和测试复杂的交互（如工具调用和原始 API 响应），而无需实际调用 LLM 提供商。主要新增功能包括用于验证 API 密钥逻辑的 echo-needs-key 模型，以及测试应用程序如何处理工具调用触发器和原始响应数据的结构化方法。",
+  "mainPoints": [
+    {
+      "point": "增强了对 LLM 工具调用的测试。",
+      "explanation": "提供了一种结构化机制，用于模拟和验证 LLM CLI 如何处理工具调用提示和响应，且无需实际的 API 成本。"
+    },
+    {
+      "point": "支持测试原始 API 响应。",
+      "explanation": "允许开发者通过回显原始数据结构进行验证，从而调试底层的响应处理逻辑。"
+    },
+    {
+      "point": "用于 API 密钥逻辑验证的新模型。",
+      "explanation": "echo-needs-key 模型帮助开发者测试其应用程序是否能正确识别并提示缺失或必需的 API 密钥。"
+    }
+  ],
+  "keyQuotes": [
+    "为 LLM 提供回显模型的调试插件",
+    "用于测试工具调用的机制",
+    "用于测试模型密钥逻辑的全新 echo-needs-key 模型"
+  ],
+  "tags": [
+    "LLM CLI",
+    "调试",
+    "工具调用",
+    "Python",
+    "Simon Willison"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 36,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774971806000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 15:43:26"
+}

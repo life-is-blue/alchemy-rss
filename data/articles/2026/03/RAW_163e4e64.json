@@ -1,0 +1,47 @@
+{
+  "id": "RAW_163e4e64",
+  "title": "发布：llm-echo 0.4",
+  "url": "https://simonwillison.net/2026/Mar/31/llm-echo/#atom-everything",
+  "date": "2026-03-31 16:48:59",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm-echo/releases/tag/0.4\">llm-echo 0.4</a></span> <span class=\"beat-commit\">— Debug plugin for LLM providing an echo model</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>Prompts now have the <code>input_tokens</code> and <code>output_tokens</code> fields populated on the response.</li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4074/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "llm-echo 0.4 发布，这是一个用于 LLM CLI 工具的调试插件，增加了对响应中输入和输出 token 计数的支持。",
+  "oneSentenceSummary": "llm-echo 0.4 发布，这是一个用于 LLM CLI 工具的调试插件，增加了对响应中输入和输出 token 计数的支持。",
+  "summary": "此版本说明宣布了 llm-echo 0.4 版本，这是一个用于 LLM 生态系统的调试插件，提供了一个用于测试目的的“回显（echo）”模型。此版本的主要更新是响应中的提示词现在会填充 `input_tokens` 和 `output_tokens` 字段，从而能够在调试过程中更好地跟踪 token 使用情况。",
+  "mainPoints": [
+    {
+      "point": "llm-echo 0.4 为 echo 模型引入了 token 跟踪功能。",
+      "explanation": "该插件现在会填充 input_tokens 和 output_tokens 字段，允许开发者在无需调用外部 API 的情况下模拟和验证 token 计数逻辑。"
+    },
+    {
+      "point": "增强了 LLM 工具链的调试能力。",
+      "explanation": "作为一款调试插件，llm-echo 通过回显输入内容帮助开发者测试基于 LLM 的工作流，现在还增加了元数据支持。"
+    }
+  ],
+  "keyQuotes": [
+    "响应中的提示词现在会填充 input_tokens 和 output_tokens 字段。"
+  ],
+  "tags": [
+    "LLM",
+    "llm-echo",
+    "调试工具",
+    "Token 计数",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 27,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774975739000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 16:48:59"
+}

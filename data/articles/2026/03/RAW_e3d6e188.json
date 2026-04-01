@@ -1,0 +1,48 @@
+{
+  "id": "RAW_e3d6e188",
+  "title": "发布：llm 0.30",
+  "url": "https://simonwillison.net/2026/Mar/31/llm/#atom-everything",
+  "date": "2026-03-31 20:35:51",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm/releases/tag/0.30\">llm 0.30</a></span> <span class=\"beat-commit\">— Access large language models from the command-line</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>The&nbsp;<a href=\"http://llm.datasette.io/en/stable/plugins/plugin-hooks.html#plugin-hooks-register-models\">register_models() plugin hook</a>&nbsp;now takes an optional&nbsp;<code>model_aliases</code>&nbsp;parameter listing all of the models, async models and aliases that have been registered so far by other plugins. A plugin with&nbsp;<code>@hookimpl(trylast=True)</code>&nbsp;can use this to take previously registered models into account. <a href=\"https://github.com/simonw/llm/issues/1389\">#1389</a></li>\n        <li>Added docstrings to public classes and methods and included those directly in the documentation.</li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4072/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "llm 0.30 版本发布，引入了用于模型注册的更新版插件钩子，并通过文档字符串（docstrings）改进了文档。",
+  "oneSentenceSummary": "llm 0.30 版本发布，引入了用于模型注册的更新版插件钩子，并通过文档字符串（docstrings）改进了文档。",
+  "summary": "本发布说明详细介绍了 llm 命令行工具的 0.30 版本，这是一个用于访问大语言模型的实用工具。主要的重大技术更新是对 `register_models()` 插件钩子的更改，它现在接受一个可选的 `model_aliases` 参数。这使得插件能够考虑到之前注册的模型和别名，特别是在使用 `@hookimpl(trylast=True)` 时。此外，该版本通过为公共类和方法添加文档字符串（docstrings）来改善开发体验，这些文档字符串现在直接集成到项目的文档中。",
+  "mainPoints": [
+    {
+      "point": "更新了 register_models() 插件钩子，以实现更好的模型管理。",
+      "explanation": "该钩子现在包含一个 model_aliases 参数，使插件能够查看所有之前注册的模型和别名，从而促进更复杂的插件交互。"
+    },
+    {
+      "point": "通过自动化的文档字符串集成增强了文档。",
+      "explanation": "公共类和方法现在具有直接提取到官方文档中的文档字符串，提高了使用 llm 库的开发者的清晰度。"
+    }
+  ],
+  "keyQuotes": [
+    "register_models() 插件钩子现在接受一个可选的 model_aliases 参数，列出了其他插件迄今为止注册的所有模型、异步模型和别名。",
+    "为公共类和方法添加了文档字符串，并将其直接包含在文档中。"
+  ],
+  "tags": [
+    "LLM",
+    "CLI 工具",
+    "Python",
+    "开源",
+    "插件系统"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 71,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774989351000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 20:35:51"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_de4e44c3",
+  "title": "发布：llm-all-models-async 0.1",
+  "url": "https://simonwillison.net/2026/Mar/31/llm-all-models-async/#atom-everything",
+  "date": "2026-03-31 20:52:02",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">31st March 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm-all-models-async/releases/tag/0.1\">llm-all-models-async 0.1</a></span> <span class=\"beat-commit\">— Register async versions of models from LLM plugins that only provide a sync version</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>LLM plugins can define new models in both <a href=\"https://llm.datasette.io/en/stable/plugins/tutorial-model-plugin.html\">sync</a> and <a href=\"https://llm.datasette.io/en/stable/plugins/advanced-model-plugins.html#async-models\">async</a> varieties. The async variants are most common for API-backed models - sync variants tend to be things that run the model directly within the plugin.</p>\n      <p>My <a href=\"https://simonwillison.net/2026/Mar/30/mr-chatterbox/#running-it-locally-with-llm\">llm-mrchatterbox</a> plugin is sync only. I wanted to try it out with various Datasette LLM features (specifically <a href=\"https://github.com/datasette/datasette-enrichments-llm\">datasette-enrichments-llm</a>) but Datasette can only use async models.</p>\n      <p>So... I had Claude spin up this plugin that turns sync models into async models using a thread pool. This ended up needing an extra plugin hook mechanism in LLM itself, which I shipped just now in <a href=\"https://llm.datasette.io/en/stable/changelog.html#v0-30\">LLM 0.30</a>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4073/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了 llm-all-models-async 0.1，这是一个插件，通过使用线程池为仅支持同步的 LLM 模型启用异步支持，从而确保与 Datasette 的兼容性。",
+  "oneSentenceSummary": "Simon Willison 发布了 llm-all-models-async 0.1，这是一个插件，通过使用线程池为仅支持同步的 LLM 模型启用异步支持，从而确保与 Datasette 的兼容性。",
+  "summary": "本文宣布发布 llm-all-models-async 0.1，这是 LLM CLI 工具的一个实用插件。该插件解决了兼容性问题：某些 LLM 插件仅提供同步模型实现，而像 Datasette 这样的工具需要异步版本。通过利用线程池来封装同步模型，该插件允许在 Datasette 生态系统中使用仅支持同步的模型（例如作者自己的 llm-mrchatterbox）。此次发布与 LLM 0.30 同步进行，后者引入了支持此功能所需的插件钩子（plugin hook）。",
+  "mainPoints": [
+    {
+      "point": "弥合同步与异步 LLM 模型之间的鸿沟。",
+      "explanation": "该插件为仅有同步实现的模型注册了异步版本，使其能够与仅支持异步的工具和框架协同工作。"
+    },
+    {
+      "point": "使仅支持同步的模型能够集成到 Datasette 中。",
+      "explanation": "它的创建初衷是让像 llm-mrchatterbox 这样的模型能够与需要异步功能的 datasette-enrichments-llm 配合使用。"
+    },
+    {
+      "point": "需要对核心 LLM 工具进行架构调整。",
+      "explanation": "实现此封装器需要一种新的插件钩子机制，该机制已在 LLM 0.30 中正式发布，以支持高级模型注册。"
+    }
+  ],
+  "keyQuotes": [
+    "为仅提供同步版本的 LLM 插件中的模型注册异步版本",
+    "我让 Claude 开发了这个插件，它利用线程池将同步模型转换为异步模型。",
+    "这最终需要在 LLM 本身中增加一个额外的插件钩子机制，我刚刚在 LLM 0.30 中发布了它。"
+  ],
+  "tags": [
+    "LLM",
+    "Python",
+    "Datasette",
+    "异步编程",
+    "Simon Willison"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 122,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1774990322000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-03-31 20:52:02"
+}
