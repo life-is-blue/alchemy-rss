@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-01 11:01:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-01 12:55:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -266,9 +266,7 @@
 
 ### [构建用于合规证据收集的-AI-系统-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/building-an-ai-powered-system-for-compliance-evidence-collection/)
 
-2026-03-31 09:52:15 | 标签: Amazon Bedrock, Amazon Nova 2 Lite, 合规自动化, 浏览器扩展, AWS Lambda
-
-> 手动收集合规证据的过程——涉及浏览多个系统并截取数百张屏幕截图——既耗时又容易出错。本 AWS 技术指南介绍了一种自动化解决方案：一个由 Amazon Bedrock 驱动的浏览器扩展。该系统利用 Amazon Nova 2 Lite 模型分析合规文档，并生成可执行的 JSON 工作流。这些工作流引导扩展程序浏览 Web 应用程序、捕获带时间戳的屏幕截图，并将其安全地存储在 Amazon S3 中。该架构采用模块化设计，包含用于交互的 UI 层、用于智能处理的 AI Agent 层（处理聊天、设计和报告）、用于执行的工作流引擎，以及与 Cognito（用于身份验证）和 SES（用于报告交付）等...
+2026-03-31 09:52:15
 
 
 
@@ -448,9 +446,7 @@
 
 ### [Axios-软件包遭入侵及修复步骤---Vercel](https://vercel.com/changelog/axios-package-compromise-and-remediation-steps)
 
-2026-03-31 13:00:00 | 标签: 供应链攻击, NPM 安全, Axios, Vercel, 网络安全
-
-> 本文详细介绍了 2026 年 3 月 31 日发现的广泛使用的 axios npm 软件包遭供应链入侵的事件。虽然 Vercel 的内部系统未受影响，但该平台已封锁了恶意的命令与控制（C2）主机名，并下架了受损版本。公告指出 axios@1.14.1 和 axios@0.30.4 为恶意版本，通常与名为 plain-crypto-js 的依赖项捆绑在一起。敦促开发人员审计其锁文件（lockfiles）、轮换敏感凭据，并降级至安全的 axios@1.14.0 版本。
+2026-03-31 13:00:00
 
 
 

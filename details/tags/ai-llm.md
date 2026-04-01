@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-01 11:01:09 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-01 12:55:22 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11330,9 +11330,7 @@
 
 ### [如何让-Claude-Code-更擅长一次性完成代码实现](https://towardsdatascience.com/how-to-make-claude-code-better-at-one-shotting-implementations/)
 
-2026-03-31 15:45:00 | 标签: Claude Code, AI 编程助手, MCP, Playwright, 提示词工程
-
-> 作者探讨了在使用 Claude Code 处理复杂任务时，如何最大限度地减少“提示-修复-测试”的迭代循环。其核心论点是：一次性完成（即第一次尝试就获得正确的实现）是现代工程师追求的终极效率目标。为实现这一目标，文章推荐了三种策略：1）在编码开始前，使用规划模式或外部研究智能体来确定技术规范；2）利用 Playwright MCP 授予 Claude Code 浏览器和测试权限，以实现自主验证；3）通过 claude.md 文件实现记忆系统，存储用户偏好和项目特定知识，确保智能体随着时间的推移与开发者的风格保持一致。
+2026-03-31 15:45:00
 
 
 
@@ -11344,9 +11342,7 @@
 
 ### [使用-Amazon-Bedrock-AgentCore-Evaluations-构建可靠的-AI-智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/)
 
-2026-03-31 14:11:23 | 标签: Amazon Bedrock, AI 智能体, LLM 评估, OpenTelemetry, MLOps
-
-> 本文介绍了 Amazon Bedrock AgentCore Evaluations，这是一项旨在解决由 LLM 非确定性导致的 AI 智能体可靠性差距的服务。文章解释了该服务如何利用 OpenTelemetry (OTEL) 捕获详细的追踪信息，并在会话 (Session)、追踪 (Trace) 和跨度 (Span) 级别进行评估。主要功能包括 13 个内置评估器、用于定性推理的“LLM 作为评判者 (LLM-as-a-Judge)”模式，以及用于确定性检查的基于 Lambda 的自定义评估器。通过提供按需 (CI/CD) 和在线 (生产环境) 两种评估模式，它实现了持续反馈循环，用集成到 ...
+2026-03-31 14:11:23
 
 
 
@@ -11358,9 +11354,7 @@
 
 ### [在几小时内构建个人-AI-智能体](https://towardsdatascience.com/building-a-personal-ai-agent-in-a-couple-of-hours/)
 
-2026-03-31 12:24:00 | 标签: AI 智能体, 个人生产力, Python, LLM, Google Gemini
-
-> 本文介绍了如何开发一款旨在弥合管理与执行之间差距的个人 AI 助手。作者使用由 Google AntiGravity、Gemini 和 Claude 组成的技术栈构建了「Fernão」，这是一个可以通过 API 获取日历事件、任务和长期目标的智能体。文章重点介绍了技术实现——包括用于 ICS 和 Microsoft Graph API 集成的 Python 代码——并展示了一种将碎片化数据转化为结构化日常计划的综合提示词策略。文中强调了 AI 如何将开发者的角色从单纯编写代码转变为协调和「驾驭」系统。
+2026-03-31 12:24:00
 
 
 
@@ -11378,9 +11372,7 @@
 
 ### [CoPaw-1.0-发布：定制小模型、安全机制与多智能体全面进化](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247506656&idx=1&sn=75f854be8465672259418e541e3e7aaa)
 
-2026-03-31 11:31:00 | 标签: CoPaw, AgentScope, AI Agent, 本地大模型, 多智能体协同
-
-> CoPaw 1.0 是基于 AgentScope 生态构建的个人智能助理重大更新。该版本核心升级包括：推出了专为本地高频任务优化的 CoPaw-Flash 系列小模型（提供 2B/4B/9B 多种尺寸），在保证隐私的同时降低了推理成本；建立了由工具守卫、文件防护和技能扫描器组成的分层安全架构，有效拦截恶意指令和权限风险；支持多智能体工作区隔离与异步协作，能够处理复杂的并发任务；并深度集成 ReMe 记忆机制，实现长短期记忆的协同管理。此外，新版本还优化了交互体验，支持桌面端一键安装。
+2026-03-31 11:31:00
 
 
 
@@ -11422,9 +11414,7 @@
 
 ### [AWS-发布用于安全测试和云运维的前沿智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/aws-launches-frontier-agents-for-security-testing-and-cloud-operations/)
 
-2026-03-31 08:25:32 | 标签: AWS, 前沿智能体, AI 智能体, 网络安全, DevOps
-
-> AWS 推出了两项重大的自主 AI 服务：AWS Security Agent 和 AWS DevOps Agent，它们被归类为“前沿智能体”。这些系统旨在长时间独立工作，无需持续的人工监督即可实现复杂目标。Security Agent 通过分析代码和架构来识别攻击链，从而实现渗透测试自动化，将测试时间从几周缩短至几小时。DevOps Agent 充当自主 SRE 队友，关联 AWS、本地及其他云环境中的遥测数据和代码，将事件解决速度提高多达 5 倍，并显著降低平均修复时间（MTTR）。
+2026-03-31 08:25:32
 
 
 
@@ -34038,9 +34028,7 @@
 
 ### [FLORA-如何在-Vercel-的-AI-技术栈上发布创意智能体---Vercel](https://vercel.com/blog/how-flora-shipped-a-creative-agent-on-vercels-ai-stack)
 
-2026-03-31 16:32:03 | 标签: Vercel AI SDK, AI 智能体, 持久化工作流, 视觉构思, FAUNA
-
-> 本文详细介绍了 FAUNA 的开发过程。FAUNA 是由 FLORA 开发的一款 AI 驱动的创意合作伙伴，旨在为设计师自动化视觉探索流程。FAUNA 超越了传统的基于节点的工作流，利用 Vercel 的 AI SDK 和 Workflow SDK 来管理高度并行且耗时的图像生成任务。通过利用 DurableAgent 进行状态持久化，以及利用 Fluid Compute 进行扩缩容，团队消除了基础设施瓶颈，从而能够专注于产品迭代和编排超过 50 种不同的图像模型。
+2026-03-31 16:32:03
 
 
 
@@ -34064,9 +34052,7 @@
 
 ### [Claude-Code-源码泄露的背后，到底与-Codex，Gemini-有啥不一样？](https://juejin.cn/post/7623266544509190196)
 
-2026-03-31 10:51:12 | 标签: Claude Code, AI Agent, 架构分析, 上下文管理, 终端工具
-
-> 文章通过对 Claude Code 源码的逆向分析，揭示了其作为「终端全职程序员」的运行机制。核心内容包括：1. 采用微内核加插件架构，业务逻辑由 13 个以上官方插件驱动；2. 构建了由全局偏好、项目规范（CLAUDE.md）和会话历史组成的三层记忆架构；3. 实现了 90% 阈值触发的动态上下文压缩与环境快照机制，通过生成摘要和快照解决 Token 瓶颈；4. 详细拆解了基于 SSE 的流式 API 通信协议及自建的类 Ink 终端渲染引擎。文章对比了其与 GitHub Copilot 的本质区别，强调了其主动执行与项目级感知的特性。
+2026-03-31 10:51:12
 
 
 
@@ -48186,9 +48172,7 @@ http://antirez.com/news/162
 
 ### [2026-04-01-Hacker-News-技术热点汇总](https://supertechfans.com/cn/post/2026-04-01-HackerNews/)
 
-2026-04-01 07:38:01 | 标签: Hacker News, 供应链安全, Claude Code, AI 伦理, Oracle 裁员
-
-> 文章精选了当日 Hacker News 上的十大热点话题。核心内容包括：Anthropic 的 Claude Code 因 npm 配置失误泄露源码，揭示了其内部的「潜伏模式」与反蒸馏机制；Axios 遭遇精密供应链攻击，恶意版本植入跨平台木马，引发对 npm 生态安全的深度讨论；Oracle 因 AI 基础设施投入导致巨额债务，宣布全球裁员 3 万人；GitHub 因在 PR 中自动插入 Copilot 广告引发社区强烈抵制并紧急撤回。此外，还涉及 Ollama 对 Apple Silicon 的 MLX 优化、美国联邦政府应用的隐私监控问题以及减少 Claude token 消耗的开源优化...
+2026-04-01 07:38:01
 
 
 
