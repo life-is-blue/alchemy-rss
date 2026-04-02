@@ -1,23 +1,27 @@
-> **更新时间**: 2026-03-31 08:13:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-02 08:11:46 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [深度解析-Claude-Code-的-7-层分级记忆架构](https://x.com/shao__meng/status/2039153466229088451)
+
+2026-04-01 01:30:46 | 标签: Claude Code, 架构设计, Prompt Engineering, AI Agent, 源码分析
+
+> 推文基于源码解读，深入剖析了 Claude Code 的 7 层记忆架构，从工具结果持久化、微压缩、会话记忆到梦境整合等。文章提炼了其核心设计哲学：分层防御、Prompt Cache 极致优化、隔离与共享平衡，以及高可观测性，是理解现代 AI Agent 架构的深度参考。
+
+
+
 ### [Claude-Code-现已支持电脑操控-Computer-Use](https://x.com/claudeai/status/2038663014098899416)
 
-2026-03-30 17:01:53 | 标签: Claude Code, Anthropic, 电脑操控, AI 编程, CLI
-
-> 这条推文宣布了 Claude Code 的一项重要更新：集成了“电脑操控”功能。用户现在可以让 Claude 直接从命令行界面 (CLI) 启动应用程序、与用户界面 (UI) 交互并进行测试。该功能目前面向 Pro 和 Max 订阅用户提供研究预览。
+2026-03-30 17:01:53
 
 
 
 ### [Qwen3.5-Omni-发布：原生全模态-AGI](https://x.com/Alibaba_Qwen/status/2038636335272194241)
 
-2026-03-30 15:15:53 | 标签: Qwen, Qwen3.5-Omni, AGI, 全模态, AI 模型
-
-> Qwen 宣布发布 Qwen3.5-Omni，这是其模型阵容的重大进步。该模型专为原生多模态理解（文本、图像、音频和视频）而设计，引入了“视听氛围编程”功能，允许用户通过摄像头输入生成功能性网站或游戏。该模型系列包括 Plus、Flash 和 Light 版本，在音频方面表现出 SOTA 水准，并提供广泛的语言支持。
+2026-03-30 15:15:53
 
 
 
@@ -117,13 +121,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 

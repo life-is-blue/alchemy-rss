@@ -1,0 +1,58 @@
+{
+  "id": "RAW_b810df81",
+  "title": "Pinterest 部署生产级模型上下文协议（MCP）生态系统，赋能 AI 智能体工作流",
+  "url": "https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-01 14:35:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Pinterest engineering teams have deployed an <a href=\"https://medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest-d881eb4c16f1\">internal Model Context Protocol (MCP) ecosystem</a> to power AI agents that automate complex engineering tasks and integrate diverse internal tools and data sources at scale. The architecture, now running production MCP servers, a central registry, and agent integrations across developer tools, replaces ad hoc integrations with a standardized, secure, and scalable AI tool-calling substrate. MCP enables language models to call tools and access structured data using a unified client-server mechanism, allowing agents to perform tasks such as analyzing logs or inspecting bug tickets with direct access to live internal systems.</p>\n   <p>Pinterest engineers emphasize:</p>\n   <blockquote>\n    <p>By explicitly choosing an architecture of internal cloud-hosted, multiple domain-specific MCP servers connected via a central registry, we have built a flexible and secure substrate for AI agents integrated directly into employees&amp; daily workflows.</p>\n   </blockquote>\n   <p>At the core of the implementation is a fleet of cloud-hosted MCP servers, each dedicated to a specific domain such as <a href=\"https://medium.com/pinterest-engineering/presto-at-pinterest-a8bda7515e52\">Presto</a>, <a href=\"https://en.wikipedia.org/wiki/Apache_Spark\">Spark</a>, or <a href=\"https://en.wikipedia.org/wiki/Airflow\">Airflow</a>, rather than a single monolithic service. This domain-specific approach limits context bloat, isolates tools, and allows fine-grained access control. A unified deployment pipeline manages infrastructure, scaling, and service lifecycles so engineers can focus on defining tool interfaces.</p>\n   <p>A central MCP registry acts as the source of truth for approved servers and their connectivity metadata. Both a human-friendly UI and an API allow discovery, validation, and integration into internal AI clients and IDEs. Clients consult the registry to validate permissions and server status before calling tools, enforcing governance consistently. Pinterest measures ecosystem impact through a single north-star metric: time saved. Tool owners estimate minutes saved per invocation based on lightweight user feedback and comparison to manual workflows. As of January 2025, MCP servers reached 66,000 invocations per month across 844 active users, saving roughly 7,000 hours per month.</p>\n   <p>.<img alt=\"\" data-src=\"https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/news/2026/04/pinterest-mcp-ecosystem/en/resources/1pininterestarch-1774143801369.jpeg\" class=\"zoom-image\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/pinterest-mcp-ecosystem/en/resources/1pininterestarch-1774143801369.jpeg\" rel=\"share\"></p>\n   <p>Architectural diagram of Pinterest’s MCP ecosystem&nbsp;(Source: <a href=\"https://medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest-d881eb4c16f1\">Pinterest Blog Post</a>)</p>\n   <p>AI agent workflows are integrated across chat platforms and IDEs, discovering MCP servers via the registry. Agents can autonomously investigate incidents, generate contextual summaries, or propose changes. Because MCP servers can perform automated actions, Pinterest mandates human-in-the-loop approval for sensitive operations, using <a href=\"https://modelcontextprotocol.io/specification/draft/client/elicitation\">elicitation</a> to confirm potentially dangerous actions before execution. Agents propose changes, and humans approve or reject them before any action is applied.</p>\n   <p><img alt=\"\" data-src=\"https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/news/2026/04/pinterest-mcp-ecosystem/en/resources/1Screenshot 2026-03-21 at 6.27.19 PM-1774143801369.png\" class=\"zoom-image\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/pinterest-mcp-ecosystem/en/resources/1Screenshot 2026-03-21 at 6.27.19 PM-1774143801369.png\" rel=\"share\"></p>\n   <p>End-to-end flow of developing an MCP server (Source: <a href=\"https://medium.com/pinterest-engineering/building-an-mcp-ecosystem-at-pinterest-d881eb4c16f1\">Pinterest Blog Post</a>)</p>\n   <p>Security and governance are enforced through a two-layer authorization model. End-user JWTs control human-in-the-loop access, while service-only flows rely on mesh identities. Servers implement fine-grained authorization decorators and business-group gating, restricting high-privilege operations to approved teams. OAuth flows are piggybacked on existing internal authentication, avoiding additional prompts while providing full auditability. Each MCP server must comply with the MCP Security Standard and pass review for Security, Legal/Privacy, and GenAI requirements before production use.</p>\n   <p>The architectural approach aligns with broader trends in AI-assisted automation, emphasizing secure, reliable access to live systems and structured data rather than simple NLP interfaces. The transition from concept to production-ready ecosystem demonstrates a scalable model for enterprise AI automation. Pinterest continues to expand its fleet of MCP servers, deepen integrations across engineering surfaces, and refine governance models, further boosting developer productivity while maintaining strict security and compliance standards.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinterest Deploys Production-Scale Model Context Protocol Ecosystem for AI Agent Workflows\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775054100000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 部署了生产级的模型上下文协议（MCP）生态系统，通过使用特定领域的服务器和中央注册中心，支持安全的 AI 智能体工作流，每月节省 7，000 小时的工程时间。",
+  "oneSentenceSummary": "Pinterest 部署了生产级的模型上下文协议（MCP）生态系统，通过使用特定领域的服务器和中央注册中心，支持安全的 AI 智能体工作流，每月节省 7，000 小时的工程时间。",
+  "summary": "Pinterest 工程团队实施了一套全面的内部模型上下文协议（MCP）生态系统，旨在标准化企业范围内的 AI 智能体集成。该架构摒弃了碎片化、临时性的工具调用方式，利用云托管的特定领域 MCP 服务器（如 Presto、Spark 和 Airflow），并通过中央注册中心进行统一管理。这种设置使智能体能够自主执行复杂的工程任务（如日志分析和事故调查），同时通过双层授权模型（JWT/OAuth）和针对敏感操作的“人在回路”（human-in-the-loop）要求来维持严格的安全性。该系统目前每月处理 66，000 次调用，展示了企业级 AI 自动化的可扩展模型。",
+  "mainPoints": [
+    {
+      "point": "用于可扩展性和隔离的特定领域 MCP 服务器架构。",
+      "explanation": "Pinterest 没有采用单体服务，而是针对 Presto 或 Airflow 等特定领域部署了独立的服务器，以限制上下文膨胀并实现细粒度的访问控制。"
+    },
+    {
+      "point": "作为治理单一事实来源的中央注册中心。",
+      "explanation": "中央 MCP 注册中心提供用于发现的 UI 和 API，确保只有经过批准的服务器才能被集成，并在工具执行前验证权限。"
+    },
+    {
+      "point": "具有“人在回路”监督的双层安全模型。",
+      "explanation": "该生态系统通过最终用户 JWT 和服务网格身份强制执行安全性，同时要求通过引导确认对敏感的自动化操作进行人工审批。"
+    },
+    {
+      "point": "通过标准化工具调用实现可量化的生产力影响。",
+      "explanation": "截至 2025 年 1 月，该系统在 844 名用户中每月达到 66，000 次调用，每月估计节省 7，000 小时的手动工程工作。"
+    }
+  ],
+  "keyQuotes": [
+    "通过明确选择一种由中央注册中心连接的内部云托管、多特定领域 MCP 服务器架构，我们为直接集成到员工日常工作流中的 AI 智能体构建了一个灵活且安全的基底。",
+    "该架构……用标准化、安全且可扩展的 AI 工具调用基底取代了临时集成。",
+    "Pinterest 通过一个北极星指标来衡量生态系统的影响：节省的时间。",
+    "Pinterest 要求对敏感操作进行“人在回路”的审批，在执行前使用引导确认来确认潜在的危险操作。"
+  ],
+  "tags": [
+    "MCP",
+    "AI 智能体",
+    "企业架构",
+    "开发者生产力",
+    "模型上下文协议"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 523,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775054100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 14:35:00"
+}

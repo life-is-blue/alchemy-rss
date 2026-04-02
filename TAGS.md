@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-02 06:09:58 | [返回首页](/README.md)
+**更新时间**: 2026-04-02 08:11:46 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10664)
+- [AI & 大模型](#ai-llm) (10680)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (751)
-- [DevOps](#devops) (480)
+- [DevOps](#devops) (481)
 - [产品与商业](#product-business) (35)
-- [其他](#other) (5290)
+- [其他](#other) (5291)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
+- [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
+- [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
 - [面向-AI-智能体的-Qdrant-Skills](https://qdrant.tech/blog/qdrant-skills-release/) - AI 精选
 - [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral) - AI 精选
@@ -39,11 +42,8 @@
 - [分享-10-个你可能不知道的-Claude-Code-隐藏命令。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680919&idx=1&sn=95032bfc6270f229e713598805d26ebf) - AI 精选
 - [介绍-LangSmith-Fleet](https://blog.langchain.com/introducing-langsmith-fleet/) - AI 精选
 - [MiniMax-M2.7:-开启模型的自我进化](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488138&idx=1&sn=666388509e4597a5ee8734fa0a556828) - AI 精选
-- [为什么-Anthropic-认为-AI-应该拥有自己的计算机——Claude-Cowork-和-Claude-Code-Desktop-的-Felix-Rieseberg](https://www.latent.space/p/felix-anthropic) - AI 精选
-- [Open-SWE：一个用于内部编码智能体的开源框架](https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/) - AI 精选
-- [认识-OpenViking：把文件系统式记忆与检索带入-OpenClaw-等-AI-代理系统的开源上下文数据库](https://www.marktechpost.com/2026/03/15/meet-openviking-an-open-source-context-database-that-brings-filesystem-based-memory-and-retrieval-to-ai-agent-systems-like-openclaw/) - AI 精选
 
-- [查看全部 10664 篇...](/details/tags/ai-llm.md)
+- [查看全部 10680 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -111,6 +111,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
 - [开发者体验的架构：产品、平台与运维的协同架构](https://www.infoq.com/presentations/developer-experience-load-autonomy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) - 编程 精选
@@ -127,9 +128,8 @@
 - [Tinder-API-网关：日处理十亿次滑动的技术解析](https://blog.bytebytego.com/p/how-tinders-api-gateway-handles-a) - 编程 精选
 - [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
-- [提升异常检测能力与加速根本原因分析：Grafana-Cloud-应用可观察性的最新功能](https://grafana.com/blog/2024/06/13/improved-anomaly-detection-and-faster-root-cause-analysis-the-latest-features-in-grafana-cloud-application-observability/) - 编程 精选
 
-- [查看全部 480 篇...](/details/tags/devops.md)
+- [查看全部 481 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5290 篇...](/details/tags/other.md)
+- [查看全部 5291 篇...](/details/tags/other.md)
 
 

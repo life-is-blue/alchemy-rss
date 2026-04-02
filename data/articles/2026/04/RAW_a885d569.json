@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a885d569",
+  "title": "Cloudflare 推出 Dynamic Workers 公测版：面向 AI 智能体代码执行的基于 Isolate 的沙箱环境",
+  "url": "https://www.infoq.com/news/2026/04/cloudflare-dynamic-workers-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-01 10:11:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently released <a href=\"https://developers.cloudflare.com/dynamic-workers/\">Dynamic Worker</a> into open beta, available to all paid Workers users. The API allows a Cloudflare Worker to instantiate a new Worker at runtime with dynamically specified code, each running in its own isolated sandbox. The feature is aimed squarely at the growing need to safely execute AI-generated code, a challenge that most teams currently address with containers.</p>\n   <p>The core pitch is performance. Dynamic Workers use V8 isolates, the same JavaScript <a href=\"https://developers.cloudflare.com/workers/reference/how-workers-works/\">engine</a> underlying Google Chrome and the entire Cloudflare Workers platform for the past eight years, rather than Linux containers. According to Cloudflare, isolates start in a few milliseconds and use a few megabytes of memory, making them roughly 100x faster to boot and 10-100x more memory efficient than typical containers. Kenton Varda, Sunil Pai, and Ketan Gupta wrote in the <a href=\"https://blog.cloudflare.com/dynamic-workers/\">announcement blog post</a>:</p>\n   <blockquote>\n    <p>That means that if you want to start a new isolate for every user request, on-demand, to run one snippet of code, then throw it away, you can.</p>\n   </blockquote>\n   <p>The feature builds on Cloudflare's <a href=\"https://blog.cloudflare.com/code-mode/\">Code Mode</a> concept, introduced in September 2025, which proposes that AI agents should perform tasks by writing and executing code against typed APIs rather than making sequential tool calls. Cloudflare has previously demonstrated that converting an MCP server into a TypeScript API and having agents write code against it can reduce token usage by 81% compared to traditional tool-calling patterns. Their own <a href=\"https://blog.cloudflare.com/code-mode-mcp/\">Cloudflare MCP server</a> uses this approach to expose the entire Cloudflare API through just two tools in under 1,000 tokens.</p>\n   <p>A notable design choice is using TypeScript interfaces rather than OpenAPI specifications to define the APIs available to agent-generated code. The blog post includes a side-by-side comparison: a chat room API expressed as a TypeScript interface takes roughly 15 lines, while the equivalent OpenAPI spec runs to over 60 lines of YAML. Cloudflare argues that TypeScript interfaces are more token-efficient for LLM consumption and easier to reason about for both agents and developers.</p>\n   <p>Dynamic Workers connect to host APIs through <a href=\"https://blog.cloudflare.com/capnweb-javascript-rpc-library/\">Cap'n Web RPC</a> bridges that operate transparently across the security boundary. The sandbox can also intercept outbound HTTP requests for credential injection, adding auth tokens on the way out so the agent code never sees secret credentials directly.</p>\n   <p>The ephemeral nature of isolates also carries a security advantage over warm container pools. Teams that keep containers alive to avoid cold-start delays often end up reusing them across multiple tasks, weakening the isolation between agent executions. Because isolates are cheap enough to create and destroy per request, that temptation disappears.</p>\n   <p>Dynamic Workers support <a href=\"https://developers.cloudflare.com/dynamic-workers/\">two loading modes</a>: load() for one-time execution of agent-generated code, and get(), which caches a Worker by ID so it can stay warm across requests, making the feature applicable to longer-lived application workloads as well.</p>\n   <p>Cloudflare acknowledges, however, that isolate-based sandboxing presents a more complex attack surface than hardware virtual machines, noting that V8 security bugs are more common than hypervisor vulnerabilities. Their mitigation strategy includes automatic deployment of V8 security patches to production within hours, a <a href=\"https://blog.cloudflare.com/mitigating-spectre-and-other-security-threats-the-cloudflare-workers-security-model/\">custom second-layer sandbox</a> with dynamic risk-based tenant cordoning, <a href=\"https://blog.cloudflare.com/safe-in-the-sandbox-security-hardening-for-cloudflare-workers/\">hardware-level protections using MPK</a> (Memory Protection Keys), and <a href=\"https://blog.cloudflare.com/spectre-research-with-tu-graz/\">novel Spectre defenses</a> developed in collaboration with academic researchers.</p>\n   <p>Alongside the open beta, Cloudflare released several supporting libraries. <a href=\"https://www.npmjs.com/package/@cloudflare/codemode\">@cloudflare/codemode</a> simplifies running model-generated code against AI tools using Dynamic Workers. <a href=\"https://www.npmjs.com/package/@cloudflare/worker-bundler\">@cloudflare/worker-bundler</a> handles npm dependency resolution and bundling at runtime. <a href=\"https://www.npmjs.com/package/@cloudflare/shell\">@cloudflare/shell</a> provides a virtual filesystem with transactional batch writes, persistent storage backed by SQLite and R2, and coarse-grained operations designed to minimize RPC round-trips from agent code.</p>\n   <p><a href=\"https://www.zite.com/\">Zite</a>, an app platform where users build CRUD applications through a chat interface, is already using Dynamic Workers in production, reporting millions of daily execution requests.</p>\n   <p>The launch positions Cloudflare on one side of an emerging architectural divide in AI agent infrastructure. Some platforms are investing in long-lived agent environments with persistent memory and heavier runtimes, while Cloudflare is betting that a large class of agent workloads, particularly high-volume, web-facing systems, are better served by execution layers as ephemeral as the requests themselves. Whether that split hardens into distinct market segments or converges remains an open question.</p>\n   <p>Dynamic Workers are priced at $0.002 per unique Worker loaded per day, on top of standard Workers' CPU and invocation pricing. The per-load charge is waived during the beta period. The primary constraint compared to containers is language support: while Workers technically support Python and WebAssembly, JavaScript is the practical choice for on-demand agent-generated code due to faster load times. Cloudflare frames this as a non-issue, arguing that LLMs are fluent in JavaScript and that the language's web-native sandboxing design makes it the right fit for the job.</p>\n   <p>Dynamic Workers are available now to all users on the <a href=\"https://developers.cloudflare.com/dynamic-workers/\">Workers Paid plan</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Launches Dynamic Workers Open Beta: Isolate-Based Sandboxing for AI Agent Code Execution\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/cloudflare-dynamic-workers-beta/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775038260000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2961\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出了 Dynamic Workers 公测版，提供了一个高性能、基于 V8 Isolate 的沙箱环境，专为安全、短暂地执行 AI 生成的代码而设计。",
+  "oneSentenceSummary": "Cloudflare 推出了 Dynamic Workers 公测版，提供了一个高性能、基于 V8 Isolate 的沙箱环境，专为安全、短暂地执行 AI 生成的代码而设计。",
+  "summary": "Cloudflare 的 Dynamic Workers 现已面向付费用户开放公测，支持在运行时实例化具有动态指定代码的 Workers。通过使用 V8 Isolate 而非传统的 Linux 容器，该平台实现了毫秒级的启动时间和显著降低的内存开销，从而使得为每个请求创建一个全新的沙箱成为可能。这一基础设施是 Cloudflare “代码模式”（Code Mode）理念的基石，该理念提倡 AI 智能体针对类型化 API 执行代码，以提高 Token 效率和任务可靠性。此次发布包含了一套用于依赖项打包和虚拟文件系统的支持库，以及一个旨在缓解 Spectre 等 Isolate 特定漏洞的多层安全模型。",
+  "mainPoints": [
+    {
+      "point": "Dynamic Workers 为 AI 智能体实现了亚毫秒级的、基于 Isolate 的代码执行。",
+      "explanation": "通过使用 V8 Isolate 代替容器，Cloudflare 实现了快 100 倍的启动速度和 10-100 倍的内存效率提升，从而能够为不可信的 AI 代码提供安全的、按请求的沙箱隔离。"
+    },
+    {
+      "point": "“代码模式”范式将 AI 智能体从工具调用转向直接代码执行。",
+      "explanation": "与传统的顺序工具调用相比，针对类型化的 TypeScript API 执行代码可以将 Token 使用量减少多达 81%，同时为 LLM 提供更健壮的接口。"
+    },
+    {
+      "point": "多层安全模型解决了基于 Isolate 执行的风险。",
+      "explanation": "为了应对 V8 复杂的攻击面，Cloudflare 采用了快速安全补丁、硬件级内存保护密钥（MPK）以及针对 Spectre 类漏洞的定制防御措施。"
+    },
+    {
+      "point": "TypeScript 接口被定位为 AI 使用 OpenAPI 的更优替代方案。",
+      "explanation": "Cloudflare 认为，与冗长的基于 YAML 的 OpenAPI 规范相比，TypeScript 接口在 Token 效率上更高，且更容易让 LLM 进行推理。"
+    }
+  ],
+  "keyQuotes": [
+    "Dynamic Workers 使用 V8 Isolate……而不是 Linux 容器……这使得它们的启动速度比典型容器快约 100 倍，内存效率高 10-100 倍。",
+    "如果你想为每个用户请求按需启动一个新的 Isolate，运行一段代码，然后将其丢弃，你完全可以做到。",
+    "Cloudflare 押注于一大类智能体工作负载……它们更适合由与请求本身一样短暂的执行层来提供服务。",
+    "将 MCP 服务器转换为 TypeScript API，并让智能体针对其编写代码，与传统的工具调用模式相比，可以将 Token 使用量减少 81%。"
+  ],
+  "tags": [
+    "Cloudflare Workers",
+    "AI 智能体",
+    "V8 Isolates",
+    "沙箱",
+    "Serverless"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 780,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775038260000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 10:11:00"
+}

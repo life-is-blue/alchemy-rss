@@ -1,0 +1,58 @@
+{
+  "id": "RAW_7dcb1bac",
+  "title": "Holo3：突破计算机使用边界",
+  "url": "https://huggingface.co/blog/Hcompany/holo3",
+  "date": "2026-04-01 16:36:15",
+  "author": "Ramzi De Coster, Pierre-Louis Cedoz",
+  "siteName": "Hugging Face Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"SVELTE_HYDRATER contents\" data-target=\"RepoCodeCopy\" data-props=\"{}\">\n   <!---->\n  </div>\n  <div class=\"mb-4\">\n   <a href=\"https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/KOOvyPp6fsa2E-S9C80lv.png\" rel=\"nofollow\" style=\"font-size: 1rem;\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/KOOvyPp6fsa2E-S9C80lv.png\" alt=\"image\"></a>\n  </div>\n  <p></p>\n  <p>We are proud to unveil <strong>Holo3</strong>, the latest evolution of our vision for the Autonomous Enterprise. With a score of <strong>78.85% on the OSWorld-Verified benchmark</strong>, Holo3-122B-A10B establishes a new state of the art for the industry on the leading desktop computer use benchmark.</p>\n  <p>Holo3 is more than a benchmark leader; it is engineered for production. Built using our agentic flywheel, it has been trained to execute real-world workflows within synthetic enterprise environments. This not only ensures that Holo3 excels in today's business scenarios, but establishes the foundation for a future where our agents can autonomously navigate virtually any digital landscape.</p>\n  <p>Best of all, Holo3 achieves this with only 10B active parameters (122B total), so at a fraction of the cost of large-scale proprietary models, such as GPT 5.4 or Opus 4.6. All models are available through our <a href=\"https://hcompany.ai/holo-models-api\" rel=\"nofollow\">Inference API</a>. Holo3-35B-A3B weights are openly accessible on <a href=\"https://huggingface.co/Hcompany/Holo3-35B-A3B\">Hugging Face</a> under the Apache2 license and freely accessible through our inference API under a free tier.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"the-agentic-learning-flywheel\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#the-agentic-learning-flywheel\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> The Agentic Learning Flywheel </span></h2>\n  <p>What sets Holo3 apart is its specialized training pipeline—a continuous feedback loop designed to sharpen two core agentic pillars: <strong>perception</strong> and <strong>decision-making</strong>.</p>\n  <p>Our training flywheel is about teaching our model from annotated examples how to execute specific tasks, all while developing generalist skills across a virtually infinite variety of user interfaces. Here is how we build world-class computer use models:</p>\n  <ul>\n   <li>\n    <p><strong>Synthetic Navigation Data:</strong> using human and generated instructions, we generate scenario-specific navigation examples.</p>\n   </li>\n   <li>\n    <p><strong>Out-of-Domain Augmentation:</strong> we programmatically extend the scenarios and augment the data to ensure Holo3 can handle the unexpected.</p>\n   </li>\n   <li>\n    <p><strong>Curated Reinforcement Learning:</strong> every data sample is carefully curated and ingested through a pipeline that leverages advanced data filtering and reinforcement learning to maximize performance.</p>\n   </li>\n  </ul>\n  <p>Beyond the raw scores, the OSWorld results serve as a definitive proof-of-concept for our learning flywheel. To validate its transferability to real-world business applications we created the <strong>Synthetic Environment Factory</strong>.</p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"the-synthetic-environment-factory--h-corporate-benchmarks\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#the-synthetic-environment-factory--h-corporate-benchmarks\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> The Synthetic Environment Factory &amp; H Corporate Benchmarks </span></h2>\n  <p>This proprietary factory reproduces the reality of enterprise systems and is one of the training gyms Holo3 was forged in. Our environments are automatically built using coding agents that program websites from scratch based on scenario specifications, producing verifiable tasks of varying difficulty that are validated end-to-end with verification scripts.</p>\n  <p>To measure real-world readiness, we also designed <em>H Corporate Benchmarks</em>, a dedicated evaluation suite of 486 multi-step realistic tasks spanning 4 categories: E-commerce, Business software, Collaboration, and various Multi-App setups.</p>\n  <p>The benchmark spans the full complexity spectrum: from focused, single-application tasks to long-horizon, multi-application workflows that mirror how work actually gets done. At the harder end of the scale (Multi-Apps), tasks require the agent to coordinate information across multiple systems simultaneously—for example, retrieving equipment prices from a PDF, cross-referencing them against each employee's remaining budget, and autonomously sending personalised approval or rejection emails to every individual. This kind of task demands not only accurate calculation and document parsing, but sustained multi-step reasoning across applications without losing state or intent.</p>\n  <p><em>Examples of synthetic environments created for training Holo3</em> <a href=\"https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/FjQXRkHqmzy4yfy2TBHDZ.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/FjQXRkHqmzy4yfy2TBHDZ.png\" alt=\"image\"></a></p>\n  <p>In our results below, we see Holo3 surpassing its competitors on single application benchmarks. The performance difference between Holo3 and the base Qwen3.5 models reflects the impact of our agentic learning flywheel. By achieving higher success rates than models with significantly larger parameter counts—while maintaining the same localization and grounding standards—Holo3 illustrates the true magnitude of this specialized training.</p>\n  <p><a href=\"https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/xo_YqyqgtK_voRmvraVH1.png\" rel=\"nofollow\"><img src=\"https://cdn-uploads.huggingface.co/production/uploads/698224a939bac08a1b6e0488/xo_YqyqgtK_voRmvraVH1.png\" alt=\"image\"></a></p>\n  <h2 class=\"relative group flex items-baseline\"><a id=\"towards-universal-agency\" class=\"block pr-1.5 text-lg md:absolute md:p-1.5 md:opacity-0 md:group-hover:opacity-100 md:right-full\" href=\"#towards-universal-agency\" rel=\"nofollow\"> <span class=\"header-link\"></span> </a> <span> Towards Universal Agency </span></h2>\n  <p>Holo3 is a milestone, but it is not the destination. By building a system that can see, reason, and act within our clients digital platform, we are making the <strong>Autonomous Enterprise</strong> a reality.</p>\n  <p>As our \"Synthetic Environment Factory\" continues to evolve, our agents are learning to handle increasingly more intricate tasks. While Holo3 today masters the interface, we are already at work on the next frontier: <strong>Adaptive Agency</strong>, where our models will not only use the tools they know but autonomously learn to navigate entirely new, bespoke enterprise software in real-time.</p>\n  <!---->\n </body>\n</html>",
+  "aiSummary": "Hcompany 推出了 Holo3，这是一款专用的 MoE 模型，通过独特的合成训练飞轮和环境工厂，在 OSWorld 计算机使用基准测试中达到了 SOTA 水平。",
+  "oneSentenceSummary": "Hcompany 推出了 Holo3，这是一款专用的 MoE 模型，通过独特的合成训练飞轮和环境工厂，在 OSWorld 计算机使用基准测试中达到了 SOTA 水平。",
+  "summary": "Holo3 是一个专为“自主企业”设计的新型模型系列，专注于桌面计算机导航和任务执行。旗舰模型 Holo3-122B-A10B 在 OSWorld-Verified 基准测试中取得了 78.85% 的破纪录成绩。它采用了混合专家（MoE）架构，仅需 10B 激活参数，以低于大型专有模型的成本提供了高性能。其核心创新在于“智能体学习飞轮”（Agentic Learning Flywheel），利用“合成环境工厂”（Synthetic Environment Factory）生成多样化、可验证的企业场景，用于训练跨多个应用程序的感知和多步推理能力。",
+  "mainPoints": [
+    {
+      "point": "计算机使用基准测试中的 SOTA 表现",
+      "explanation": "Holo3-122B-A10B 在 OSWorld-Verified 上取得了 78.85% 的分数，树立了新的行业标准，在桌面导航方面超越了规模大得多的模型。"
+    },
+    {
+      "point": "通过 MoE 架构实现高效",
+      "explanation": "通过使用总参数 122B、激活参数 10B 的混合专家设计，Holo3 以 GPT-5 或 Opus 等模型推理成本的一小部分，提供了顶级的智能体能力。"
+    },
+    {
+      "point": "智能体学习飞轮与合成工厂",
+      "explanation": "该模型使用专有的流水线进行训练，从零开始生成合成企业环境，从而为复杂工作流提供可扩展、可验证且多样化的训练数据。"
+    },
+    {
+      "point": "先进的多应用推理",
+      "explanation": "Holo3 展示了跨不同系统协调信息的能力，例如解析 PDF、检查预算以及发送个性化电子邮件，且不会丢失状态。"
+    }
+  ],
+  "keyQuotes": [
+    "Holo3-122B-A10B 在领先的桌面计算机使用基准测试中为行业树立了新的 SOTA 标准。",
+    "Holo3 仅以 10B 激活参数（总计 122B）实现了这一点，因此其成本仅为大型专有模型的一小部分。",
+    "我们的环境是使用编码智能体自动构建的，这些智能体根据场景规范从零开始编写网站代码，从而产生可验证的任务。",
+    "虽然 Holo3 目前已经掌握了界面操作，但我们已经在致力于下一个前沿领域：自适应智能体（Adaptive Agency）。"
+  ],
+  "tags": [
+    "Holo3",
+    "计算机使用",
+    "AI 智能体",
+    "OSWorld",
+    "混合专家模型 (MoE)"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 90,
+  "wordCount": 650,
+  "domain": "huggingface.co",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_19153d",
+  "sourceName": "Hugging Face Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775061375000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 16:36:15"
+}
