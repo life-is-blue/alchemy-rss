@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-02 08:11:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-02 11:00:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,9 +26,7 @@
 
 ### [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/)
 
-2026-04-01 14:00:01 | 标签: EmDash, WordPress, Cloudflare, CMS, 无服务器
-
-> EmDash 是 Cloudflare 推出的全新开源 CMS，旨在通过解决 WordPress 长期存在的安全和架构限制来推动网络发布现代化。EmDash 完全使用 TypeScript 构建，由 Astro 框架驱动，引入了一种安全的插件模型，其中每个插件都在具有明确声明能力的隔离 Dynamic Worker 沙盒中运行。它专为无服务器时代设计，支持缩容至零，且仅按 CPU 时间计费。主要功能包括内置对 x402（按次付费）支付的支持、默认的通行密钥（passkey）身份验证，以及通过 Agent Skills 和 MCP（模型上下文协议）服务器实现的 AI 原生集成。EmDash 采用...
+2026-04-01 14:00:01
 
 
 

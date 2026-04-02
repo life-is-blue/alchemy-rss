@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-02 08:11:46 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-02 11:00:23 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,25 +8,19 @@
 
 ### [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/)
 
-2026-04-01 16:01:00 | 标签: AI 评估, LLM, 基准测试, 模型性能, ADeLe
-
-> 本文介绍了由微软研究院及其合作者开发的 ADeLe（AI Evaluation with Demand Levels）框架，旨在解决当前 AI 聚合基准测试的局限性。通过在推理、领域知识和抽象能力等 18 种不同能力维度上对任务和模型进行评分，ADeLe 创建了“能力画像”，用以解释模型的成功与失败。该方法使研究人员能够以约 88% 的准确率预测模型在陌生任务上的表现。该框架为 AI 评估提供了一种更细粒度、诊断性的方法，有助于识别模型在任务复杂度增加时的失效点，并为更严谨、透明地评估通用 AI 系统提供了途径。
+2026-04-01 16:01:00
 
 
 
 ### [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception)
 
-2026-04-01 07:13:20 | 标签: Falcon Perception, 早期融合, Transformer, 计算机视觉, 开放词汇分割
-
-> 本文介绍了 Falcon Perception，这是一个紧凑的 0.6B 参数模型，利用早期融合 Transformer 架构在单一主干网络中处理感知和语言任务。通过采用混合注意力掩码和结构化的“感知链”（Chain-of-Perception）接口（即先预测坐标，再预测大小，最后进行分割），该模型在 SA-Co 基准测试上达到了 68.0 的 Macro-F1 分数，超越了 SAM 3。作者还发布了 PBench，这是一个用于隔离特定视觉-语言能力（如空间推理和 OCR 引导的基础定位）的诊断基准，以及 Falcon OCR，这是一个针对高吞吐量文档理解优化的 0.3B 参数模型。这项工作提...
+2026-04-01 07:13:20
 
 
 
 ### [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a)
 
-2026-04-01 06:57:00 | 标签: Wan2.7-Image, 通义实验室, 图像生成, AI 绘画, 多模态模型
-
-> 本文介绍了通义实验室推出的最新图像生成模型 Wan2.7-Image。该模型聚焦于解决当前 AI 绘画中的三大痛点：一是「人更真」，通过优化人体结构和皮肤质感，使生成的人物图像更具生物真实感；二是「字更稳」，大幅提升了模型在图像中精准渲染中英文字符的能力，减少了字符畸变；三是「色更准」，在色彩科学和光影处理上更加自然。文章通过大量高质量样张展示了模型在复杂构图、艺术风格及写实场景下的卓越表现。
+2026-04-01 06:57:00
 
 
 
@@ -4472,17 +4466,13 @@
 
 ### [一文讲透如何构建-Harness——六大组件全解析](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695065&idx=1&sn=d5b7af6f4c96167e4a57ceb6065b9d5e)
 
-2026-04-01 00:46:00 | 标签: AI Agent, Harness, 上下文工程, MCP, 软件架构
-
-> 文章指出 AI Agent 的核心竞争力正从模型层转向 Harness（挽具）层。针对裸模型无记忆、无法执行代码、知识过时和无工作环境四大硬伤，作者系统性地拆解了 Harness 的六大工程组件：文件系统提供工程地基，Bash + 沙箱赋予行动与自验证能力，AGENTS.md 实现非侵入式长期记忆，Web Search + MCP 突破知识时效，上下文工程对抗信息腐烂，而编排 + Hooks 则保障了多 Agent 协同的确定性。作者强调，Harness 是将模型智能转化为业务价值的关键，开发者应从单纯的 Prompt 工程转向更深层的上下文与系统工程。
+2026-04-01 00:46:00
 
 
 
 ### [Agent-Skills：打通可复用专业领域知识的最后一公里](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559277&idx=1&sn=e52adeb87d78b837edc01fb1f6391f65)
 
-2026-04-01 00:31:00 | 标签: Agent Skills, Anthropic, Claude Code, AI Agent, MCP
-
-> 文章系统性地介绍了 Agent Skills 这一新兴的 AI 代理能力标准。从 Anthropic 的发展史出发，详细拆解了 Skills 的核心架构（SKILL.md 描述文件、脚本、参考文档及资产），并重点阐述了其「渐进式披露」的上下文优化机制。通过对比 Prompt、MCP 与 Skills 的差异，作者指出 Skills 本质上是 AI 工作流的「集装箱化」，解决了 Agent 协作中的复用性与工程化难题。此外，文章还提供了基于 Qoder CLI 的周报生成实战案例，展示了如何将专业领域知识转化为可版本控制、可分享的数字资产。
+2026-04-01 00:31:00
 
 
 
@@ -11340,41 +11330,31 @@
 
 ### [Holo3：突破计算机使用边界](https://huggingface.co/blog/Hcompany/holo3)
 
-2026-04-01 16:36:15 | 标签: Holo3, 计算机使用, AI 智能体, OSWorld, 混合专家模型 (MoE)
-
-> Holo3 是一个专为“自主企业”设计的新型模型系列，专注于桌面计算机导航和任务执行。旗舰模型 Holo3-122B-A10B 在 OSWorld-Verified 基准测试中取得了 78.85% 的破纪录成绩。它采用了混合专家（MoE）架构，仅需 10B 激活参数，以低于大型专有模型的成本提供了高性能。其核心创新在于“智能体学习飞轮”（Agentic Learning Flywheel），利用“合成环境工厂”（Synthetic Environment Factory）生成多样化、可验证的企业场景，用于训练跨多个应用程序的感知和多步推理能力。
+2026-04-01 16:36:15
 
 
 
 ### [预测强化学习训练何时会破坏思维链（CoT）的可监控性-—-LessWrong](https://www.lesswrong.com/posts/SvxaKP5KdkksZPcG7/predicting-when-rl-training-breaks-chain-of-thought)
 
-2026-04-01 10:23:01 | 标签: AI 安全, 思维链, 强化学习, 模型可解释性, 欺骗性对齐
-
-> 作者提出了一个框架，旨在理解强化学习训练为何以及何时会降低 AI 智能体思维链（CoT）的可监控性。他们将奖励函数分为三类：“冲突型”（In-Conflict）、“正交型”（Orthogonal）和“对齐型”（Aligned）。研究表明，“冲突型”奖励——即 CoT 文本约束与输出奖励所需的计算发生冲突时——会迫使模型隐藏其推理过程，导致不透明的行为。相反，“正交型”和“对齐型”奖励则能保持可监控性。该框架使开发人员能够在进行大规模训练之前，预测并减轻 AI 系统中欺骗性推理的风险。
+2026-04-01 10:23:01
 
 
 
 ### [AINews-Claude-Code-源码泄露事件](https://www.latent.space/p/ainews-the-claude-code-source-leak)
 
-2026-04-01 06:24:21 | 标签: Claude Code, Anthropic, AI 智能体, 智能体架构, 记忆系统
-
-> 本文详细拆解了 Anthropic 编码智能体 Claude Code 的源码泄露事件。虽然此次泄露并未暴露模型权重，但揭示了约 50 万行的编排逻辑，为最前沿的智能体设计提供了罕见的蓝图。关键发现包括：三层记忆架构（索引、主题文件和会话记录），其中包含用于剔除矛盾信息的“autoDream”压缩阶段；利用提示词缓存（prompt caching）实现近乎零成本并行的 fork-join 子智能体模型；用于安全保障的五级细粒度权限系统；以及 KAIROS 和 ULTRAPLAN 等先进的内部规划模式。
+2026-04-01 06:24:21
 
 
 
 ### [从-Claude-Code-源码看-Anthropic-的产品野心](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650451444&idx=1&sn=26eea1cfe561ddd0559ab89a9b6a39f6)
 
-2026-04-01 01:39:00 | 标签: Claude Code, Anthropic, AI Agent, 源码分析, 多智能体协作
-
-> 文章对 Claude Code 的 50 万行源码进行了深度剖析，指出其设计远超简单的编程助手。核心亮点包括：1) 记忆系统：建立了包含实时提取、跨会话整合及「做梦」机制的三层记忆架构，特别强调了正面反馈对防止模型趋向保守的重要性；2) 自主性：通过 tick 心跳机制、SleepTool 及云端定时任务，实现了事件驱动的 Agent 运行时，使其具备主动发现工作的能力；3) 协作架构：内置了 Swarm（通信）、Coordinator（编排）和 Fork（缓存优化）三套多 Agent 系统，解决了工程化协作中的权限与效率问题；4) 云端与交互：引入 Ultraplan 远程规划、语音模式以及...
+2026-04-01 01:39:00
 
 
 
 ### [Claude-Code-意外开源后，我终于看清了-Agent-里“延迟曝光”的真正价值](https://mp.weixin.qq.com/s?__biz=MzIyOTA5NTM1OA==&mid=2247485216&idx=1&sn=2ee69fc953fe08be842ad35c7056080a)
 
-2026-04-01 01:32:00 | 标签: AI Agent, Prefix Cache, Claude Code, LLM 优化, 工程实践
-
-> 文章以 Claude Code 的意外开源为切入点，深入探讨了 AI Agent 开发中一个常被忽视的工程细节——如何通过“延迟曝光”机制优化上下文结构。作者指出，Agent 的成本和延迟很大程度上取决于 Prefix Cache 的命中率，而频繁变动的工具列表会破坏前缀稳定性。通过对比 Claude Code 和 Codex 的实现路径，文章总结出一种“只追加、不回写”的架构模式，即通过将动态工具定义移出系统前缀，利用历史记录或增量附加信息来管理能力，从而实现高效的增量推理。这对构建大规模、长链路的 Agent 系统具有重要的参考价值。
+2026-04-01 01:32:00
 
 
 
@@ -34096,41 +34076,31 @@
 
 ### [在-Copilot-CLI-中使用-/fleet-同时运行多个智能体](https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/)
 
-2026-04-01 15:50:56 | 标签: GitHub Copilot, CLI, AI 智能体, 并行处理, 软件工程
-
-> 本文详细介绍了 GitHub Copilot CLI 中的新命令 /fleet，它支持开发任务的并行处理。通过使用后台编排器，系统将复杂目标分解为独立的任务项，分派给后台子智能体，并整合结果。指南提供了关于编写有效提示词的全面建议，强调交付成果和边界、管理任务依赖关系以及利用自定义专用智能体。文章还警告了文件写入冲突和智能体间上下文隔离等陷阱，并提供了在多文件重构和文档任务中降低这些风险的策略。
+2026-04-01 15:50:56
 
 
 
 ### [NVIDIA-极致协同设计刷新-MLPerf-推理记录](https://developer.nvidia.com/blog/nvidia-extreme-co-design-delivers-new-mlperf-inference-records/)
 
-2026-04-01 15:00:51 | 标签: NVIDIA, MLPerf, 推理, TensorRT-LLM, Blackwell
-
-> 本文详细介绍了 NVIDIA 在 MLPerf Inference v6.0 基准测试中的性能优势，重点强调了现有 Blackwell Ultra 硬件上 2.7 倍的吞吐量提升。这些收益归功于硬件和软件的严谨协同设计，特别是利用了 TensorRT-LLM 堆栈和 NVIDIA Dynamo 框架的进步。关键技术优化包括解耦服务（Disaggregated Serving）、宽专家并行（Wide Expert Parallel， WideEP）、多 Token 预测（Multi-Token Prediction， MTP）以及 KV 感知路由（KV-aware routing）。文章还涵盖了...
+2026-04-01 15:00:51
 
 
 
 ### [Pinterest-部署生产级模型上下文协议（MCP）生态系统，赋能-AI-智能体工作流](https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-01 14:35:00 | 标签: MCP, AI 智能体, 企业架构, 开发者生产力, 模型上下文协议
-
-> Pinterest 工程团队实施了一套全面的内部模型上下文协议（MCP）生态系统，旨在标准化企业范围内的 AI 智能体集成。该架构摒弃了碎片化、临时性的工具调用方式，利用云托管的特定领域 MCP 服务器（如 Presto、Spark 和 Airflow），并通过中央注册中心进行统一管理。这种设置使智能体能够自主执行复杂的工程任务（如日志分析和事故调查），同时通过双层授权模型（JWT/OAuth）和针对敏感操作的“人在回路”（human-in-the-loop）要求来维持严格的安全性。该系统目前每月处理 66，000 次调用，展示了企业级 AI 自动化的可扩展模型。
+2026-04-01 14:35:00
 
 
 
 ### [Cloudflare-推出-Dynamic-Workers-公测版：面向-AI-智能体代码执行的基于-Isolate-的沙箱环境](https://www.infoq.com/news/2026/04/cloudflare-dynamic-workers-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-01 10:11:00 | 标签: Cloudflare Workers, AI 智能体, V8 Isolates, 沙箱, Serverless
-
-> Cloudflare 的 Dynamic Workers 现已面向付费用户开放公测，支持在运行时实例化具有动态指定代码的 Workers。通过使用 V8 Isolate 而非传统的 Linux 容器，该平台实现了毫秒级的启动时间和显著降低的内存开销，从而使得为每个请求创建一个全新的沙箱成为可能。这一基础设施是 Cloudflare “代码模式”（Code Mode）理念的基石，该理念提倡 AI 智能体针对类型化 API 执行代码，以提高 Token 效率和任务可靠性。此次发布包含了一套用于依赖项打包和虚拟文件系统的支持库，以及一个旨在缓解 Spectre 等 Isolate 特定漏洞的多层安全...
+2026-04-01 10:11:00
 
 
 
 ### [OpenClaw-的-“安全卫士”：Jeddak-AgentArmor-运行时防护全解析](https://mp.weixin.qq.com/s?__biz=MzI1MzYzMjE0MQ==&mid=2247519148&idx=1&sn=9ce8fff7bb8c5f2f6a8ca762a2fef2f4)
 
-2026-04-01 09:05:00 | 标签: AI Agent, OpenClaw, 运行时防护, 意图对齐, 大模型安全
-
-> 文章探讨了 AI Agent（如 OpenClaw）在广泛应用中面临的新型安全风险，即从「已知漏洞」转向「智能决策的不确定性」。由于 Agent 具有决策与执行的开放性，传统基于规则的防御手段难以应对意图篡改和工作流劫持。为此，字节跳动安全团队提出了 AgentArmor 运行时防护体系。该方案基于「三层空间交互模型」（关键实体空间、可观测空间、隐空间），重点针对隐空间中的逻辑链条构建防御。其核心包含三大校验机制：意图一致性校验、控制流完整性校验和数据流机密性校验。此外，AgentArmor 采用专用小尺寸大模型作为「校验者」而非「规划者」，在保证推理效率的同时提升了风险识别的精准度。文章最后...
+2026-04-01 09:05:00
 
 
 
@@ -63088,9 +63058,7 @@ http://antirez.com/news/162
 
 ### [深度解析-Claude-Code-的-7-层分级记忆架构](https://x.com/shao__meng/status/2039153466229088451)
 
-2026-04-01 01:30:46 | 标签: Claude Code, 架构设计, Prompt Engineering, AI Agent, 源码分析
-
-> 推文基于源码解读，深入剖析了 Claude Code 的 7 层记忆架构，从工具结果持久化、微压缩、会话记忆到梦境整合等。文章提炼了其核心设计哲学：分层防御、Prompt Cache 极致优化、隔离与共享平衡，以及高可观测性，是理解现代 AI Agent 架构的深度参考。
+2026-04-01 01:30:46
 
 
 
