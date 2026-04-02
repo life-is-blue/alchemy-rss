@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-02 22:26:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-03 00:18:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -446,9 +446,7 @@
 
 ### [保护-GitHub-上的开源供应链](https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/)
 
-2026-04-01 19:20:15 | 标签: 供应链安全, GitHub Actions, npm, OIDC, DevOps
-
-> 本文探讨了开源供应链攻击不断演变的态势，攻击者将目标对准 GitHub Actions 以窃取密钥并分发恶意包。GitHub 概述了一种多层防御策略：开发者可立即采取的行动，如使用 CodeQL 进行工作流 lint 检查并将 action 锁定到提交 SHA；平台层面的转变，如使用 OIDC 进行可信发布以消除长期有效的密钥；以及针对 npm 和 Actions 的加速安全路线图。其目标是构建一个更具弹性的生态系统，实现恶意软件检测自动化，并使构建流水线从本质上更加安全。
+2026-04-01 19:20:15
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-02 22:26:35 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-03 00:18:16 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -632,9 +632,7 @@
 
 ### [ESLint-v10：扁平化配置完成与-JSX-追踪](https://www.infoq.com/news/2026/04/eslint-10-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-01 15:27:00 | 标签: ESLint, JavaScript, TypeScript, Linter, 扁平化配置
-
-> ESLint v10 是该 Linter 演进过程中的一个重要里程碑，它完全移除了旧版的 .eslintrc 配置系统，全面转向新的扁平化配置格式。此版本精简了核心架构，引入了原生的 JSX 引用追踪以消除常见的误报，并优化了 Monorepo 的配置查找方式。虽然官方提供了迁移工具以简化过渡，但此次更新在 React 和 Next.js 等主要插件的生态系统中引发了一些摩擦，且正值 Biome 和 Oxlint 等基于 Rust 的高性能替代方案竞争日益激烈之际。
+2026-04-01 15:27:00
 
 
 
