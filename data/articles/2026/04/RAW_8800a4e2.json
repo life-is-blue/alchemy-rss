@@ -1,0 +1,48 @@
+{
+  "id": "RAW_8800a4e2",
+  "title": "发布：datasette-llm 0.1a6",
+  "url": "https://simonwillison.net/2026/Apr/1/datasette-llm-2/#atom-everything",
+  "date": "2026-04-01 23:01:37",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">1st April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-llm/releases/tag/0.1a6\">datasette-llm 0.1a6</a></span> <span class=\"beat-commit\">— LLM integration plugin for other plugins to depend on</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>The same model ID no longer needs to be repeated in both the default model and allowed models lists - setting it as a default model automatically adds it to the allowed models list. <a href=\"https://github.com/datasette/datasette-llm/issues/6\">#6</a></li>\n        <li>Improved documentation for <a href=\"https://github.com/datasette/datasette-llm/blob/0.1a6/README.md#usage\">Python API usage</a>.</li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4081/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "datasette-llm 0.1a6 发布，简化了模型配置，并增强了该 LLM 集成插件的 Python API 文档。",
+  "oneSentenceSummary": "datasette-llm 0.1a6 发布，简化了模型配置，并增强了该 LLM 集成插件的 Python API 文档。",
+  "summary": "本发布说明涵盖了 datasette-llm 的 0.1a6 版本，这是一个旨在促进其他 Datasette 插件集成 LLM 的插件。此次更新引入了一项体验优化：默认模型 ID 会自动添加到允许的模型列表中，从而减少了配置冗余。此外，它还改进了专门针对 Python API 使用的文档，以协助开发人员完成集成任务。",
+  "mainPoints": [
+    {
+      "point": "简化的模型配置逻辑。",
+      "explanation": "此次更新消除了在默认列表和允许列表中重复输入模型 ID 的需要；现在将某个模型设置为默认值，即会自动允许其使用。"
+    },
+    {
+      "point": "改进了 Python API 的开发者资源。",
+      "explanation": "此版本包含了增强的文档，以更好地支持需要通过 Python 以编程方式与该插件交互的开发人员。"
+    }
+  ],
+  "keyQuotes": [
+    "同一个模型 ID 无需再同时重复出现在默认模型列表和允许模型列表中",
+    "改进了 Python API 使用文档。"
+  ],
+  "tags": [
+    "Datasette",
+    "LLM",
+    "Python",
+    "开源",
+    "插件开发"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 78,
+  "wordCount": 57,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775084497000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 23:01:37"
+}

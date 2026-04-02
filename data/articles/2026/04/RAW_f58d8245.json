@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f58d8245",
+  "title": "悟空率先接入国产最强编程模型 Qwen3.6-Plus",
+  "url": "https://www.qbitai.com/2026/04/395155.html",
+  "date": "2026-04-02 08:28:38",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">4月2日，阿里巴巴正式发布新一代大语言模型Qwen3.6-Plus，阿里在企业级市场的旗舰AI应用悟空率先完成接入。</p>\n  <p data-track=\"3\">Qwen3.6-Plus在代码、智能体、推理、原生多模态等能力上整体性能大幅增强，在智能体编程SWE-bench系列评测、真实世界智能体任务Claw-Eval等权威评测中，千问3.6编程表现超越2倍乃至3倍参数量的GLM-5、Kimi-K2.5等模型，成为当下编程能力最强的国产模型，接近全球最强编程模型 Claude 系列。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260402090313_42565eee885fe9e04a636da5aca018fb.jpeg\" data-src=\"https://image.jido.dev/20260402090313_42565eee885fe9e04a636da5aca018fb.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">对悟空用户而言，使用新模型可带来三大提升：智能体编程能力对比其他通用模型大幅提升，AI从”副驾驶”进阶为能独立承担子任务的”协作者”，可自主编写跨文件代码、运行测试并迭代修复；长程任务规划与执行能力显著增强，面对企业场景中普遍的多步骤复杂工作流，能更可靠地拆解目标、调度资源并交付成果；同时性价比优势突出，每百万 Tokens 输入低至2元，大幅降低企业规模化使用门槛。</p>\n  <p data-track=\"8\">悟空作为阿里巴巴企业级 AI旗舰应用，承担着将模型最新技术成果与企业真实需求对接的关键角色，已率先接入 Qwen3.6-Plus，为用户带来编程能力更强、执行效果更优、性价比更高的企业级 Agent 使用体验。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260402090313_18a799f3d4b12f98413ce4777fbc000e.jpeg\" data-src=\"https://image.jido.dev/20260402090313_18a799f3d4b12f98413ce4777fbc000e.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"11\">例如在一人开发等研发类场景，用户可用自然语言描述需求，悟空自主完成从方案拆解、代码编写、网站生成到测试验证的全流程；在一人法务等知识管理类场景，悟空能跨文档提取关键信息、对比条款变化、识别风险并生成决策建议；在财务、制造等业务流程自动化场景，员工只需提出目标，悟空即可自主完成跨系统的查询、填报、审批等操作，将繁琐流程变为“一句话”的智能服务。</p>\n  <p data-track=\"13\">悟空率先接入Qwen3.6-Plus，是阿里AI模型与场景结合的关键实践。</p>\n  <p data-track=\"15\">阿里悟空产品负责人表示，企业级AI应用的竞争，本质上是”模型能力×场景理解”的乘积。Qwen3.6-Plus在智能体编程和长程任务规划的突破，为悟空解决企业客户复杂痛点提供了新的基础，而钉钉多年深耕企业市场所积累的场景认知，让悟空知道如何将这些能力精准嵌入真实工作流。</p>\n  <p data-track=\"17\">即日起，悟空会员用户在 v0.9.20 及更高版本中，可抢先使用Qwen3.6-Plus 模型。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阿里巴巴发布 Qwen3.6-Plus 模型，其企业级 AI 应用「悟空」率先接入，显著提升了智能体编程、长程任务规划能力及性价比。",
+  "oneSentenceSummary": "阿里巴巴发布 Qwen3.6-Plus 模型，其企业级 AI 应用「悟空」率先接入，显著提升了智能体编程、长程任务规划能力及性价比。",
+  "summary": "阿里巴巴正式推出新一代大语言模型 Qwen3.6-Plus，其旗舰企业级 AI 应用「悟空」已同步完成接入。该模型在 SWE-bench 等权威编程评测中表现优异，超越了 GLM-5、Kimi-K2.5 等国产模型，接近 Claude 系列水平。接入新模型后，「悟空」在智能体编程方面从「副驾驶」进化为可独立承担任务的「协作者」，支持自主编写跨文件代码与迭代修复。此外，模型增强了长程任务规划能力，适用于研发、法务、财务等复杂企业场景，且 Token 输入成本大幅降至每百万 2 元，显著提升了企业规模化应用的性价比。",
+  "mainPoints": [
+    {
+      "point": "Qwen3.6-Plus 模型发布，国产编程与智能体能力取得显著突破。",
+      "explanation": "在 SWE-bench 和 Claw-Eval 等评测中表现优异，编程能力超越同类国产模型并直追 Claude 系列，强化了原生多模态与推理性能。"
+    },
+    {
+      "point": "阿里「悟空」实现从 AI 助手向独立「协作者」的跨越。",
+      "explanation": "依托新模型，悟空能够自主完成从方案拆解、跨文件代码编写到测试验证的全流程，显著增强了处理企业级复杂长程任务的能力。"
+    },
+    {
+      "point": "极高的性价比与场景理解结合，加速企业级 Agent 落地。",
+      "explanation": "每百万 Tokens 输入低至 2 元，结合钉钉深耕企业市场积累的场景认知，将 AI 能力精准嵌入研发、法务、财务等真实工作流。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 从「副驾驶」进阶为能独立承担子任务的「协作者」，可自主编写跨文件代码、运行测试并迭代修复。",
+    "企业级 AI 应用的竞争，本质上是「模型能力×场景理解」的乘积。",
+    "Qwen3.6-Plus 在智能体编程和长程任务规划的突破，为悟空解决企业客户复杂痛点提供了新的基础。"
+  ],
+  "tags": [
+    "Qwen3.6-Plus",
+    "阿里巴巴",
+    "悟空",
+    "智能体编程",
+    "大语言模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 871,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775118518000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 08:28:38"
+}

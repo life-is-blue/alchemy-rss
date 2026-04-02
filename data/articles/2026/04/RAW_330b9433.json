@@ -1,0 +1,53 @@
+{
+  "id": "RAW_330b9433",
+  "title": "豆包大模型日均 Token 使用量超 120 万亿，Seedance 2.0 API 开启公测",
+  "url": "https://www.qbitai.com/2026/04/394616.html",
+  "date": "2026-04-02 04:04:31",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">4月2日，火山引擎在AI创新巡展·武汉站上宣布，Seedance 2.0 API 面向企业用户开放公测。据介绍，火山引擎为 Seedance 2.0 建立了行业领先的版权与肖像安全保障，覆盖视频生成涉及的各种模态和创作前后全流程，对侵权、深度伪造等行为进行检测和防御，有效保护版权方和创作者的权益。</p>\n  <p data-track=\"2\">随着模型能力提升和安全机制的日趋完善，豆包大模型的产业落地正在加速。截至今年3月，豆包大模型日均Token使用量已突破120万亿，在过去三个月内增长一倍，比2024年5月发布时增长1000倍。目前，在火山引擎上累计Token使用量超过一万亿的企业，已从去年底的100家增长到140家。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260402053312_da8c4bce42dd6e4be5323e0de048e766.png\" data-src=\"https://image.jido.dev/20260402053312_da8c4bce42dd6e4be5323e0de048e766.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\">图：火山引擎总裁谭待演讲</p>\n  </div>\n  <p data-track=\"4\">火山引擎总裁谭待指出，Token使用量是衡量AI发展速度的核心指标，近期豆包大模型使用量高速增长，核心驱动因素是AI视频创作的爆发与AI智能体的加速普及。</p>\n  <p data-track=\"5\">以火山引擎推出的龙虾类智能体服务ArkClaw为例，自发布以来，ArkClaw持续快速迭代，可以秒级配对飞书，在微信、钉钉、微博等消息渠道也能便捷配置；同时升级网盘功能，提供高效的端云协同存储空间。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260402053311_fa3437afb2e2e3e7373b2c15ea45069e.jpeg\" data-src=\"https://image.jido.dev/20260402053311_fa3437afb2e2e3e7373b2c15ea45069e.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">基于ArkClaw的实践，谭待进一步表示，企业用好龙虾的三个关键要素包括模型、安全与Skills。最新的豆包大模型2.0系列，在多模态理解、复杂任务执行等核心能力上实现突破，跻身全球第一梯队。在安全方面，火山引擎正式通过信通院有关龙虾类产品的“智能助理智能体产品可信能力认证”，以及“安全防护产品有效性认证”，成为目前国内唯一一家同时获得这两项认证的厂商。</p>\n  <p data-track=\"7\">Skills是智能体的“手和脚”，其生态的广度与深度，能够拓展智能体的执行能力边界。OpenClaw开源项目创始人Peter Steinberger与火山引擎共同宣布，双方共建的ClawHub中国镜像站正式启动运营，为中国开发者提供更友好的使用体验，繁荣全球龙虾生态。</p>\n  <p data-track=\"8\">谭待认为，企业 Agent 未来将沿双路径并行发展：一是敏态 Agent ，以ArkClaw等数字助理产品为代表，重在探索和提升个人生产力，是企业的创新试验场；二是稳态 Agent，企业可实现AI最佳实践的流程化、规模化落地，重点解决组织生产力问题，火山引擎HiAgent为稳态Agent提供开发、运营、管理一站式服务；敏态Agent与稳态Agent，二者共生互补形成进化飞轮，助力企业完成价值闭环、实现 AI 转型升级。</p>\n  <p data-track=\"9\">转载来源：火山引擎</p>\n  <p data-track=\"10\">本文为量子位获授权转载，观点仅为原作者所有。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "火山引擎发布 Seedance 2.0 API 并披露豆包大模型日均 Token 使用量突破 120 万亿，同时提出企业 Agent 发展的敏态与稳态双路径框架。",
+  "oneSentenceSummary": "火山引擎发布 Seedance 2.0 API 并披露豆包大模型日均 Token 使用量突破 120 万亿，同时提出企业 Agent 发展的敏态与稳态双路径框架。",
+  "summary": "火山引擎在 AI 创新巡展上宣布 Seedance 2.0 API 正式面向企业用户开放公测，该版本重点强化了视频生成全流程的版权与肖像安全保障。数据显示，豆包大模型日均 Token 使用量已突破 120 万亿，较 2024 年 5 月增长千倍，核心驱动力来自 AI 视频创作与智能体的普及。火山引擎总裁谭待提出了企业 Agent 发展的双路径：以个人生产力为核心的「敏态 Agent」和以组织生产力流程化为核心的「稳态 Agent」，并宣布与 OpenClaw 合作启动 ClawHub 中国镜像站，以繁荣智能体 Skills 生态。",
+  "mainPoints": [
+    {
+      "point": "豆包大模型 Token 使用量呈现指数级增长。",
+      "explanation": "日均使用量突破 120 万亿，反映出 AI 视频生成和智能体应用在产业端的加速落地，累计使用量超万亿的企业已达 140 家。"
+    },
+    {
+      "point": "提出企业 Agent 发展的「敏态」与「稳态」双路径模型。",
+      "explanation": "敏态 Agent 侧重个人生产力和创新试验，稳态 Agent 侧重组织生产力和流程化规模落地，两者互补形成企业 AI 进化的飞轮。"
+    },
+    {
+      "point": "安全与 Skills 是智能体落地的核心要素。",
+      "explanation": "除了模型能力，版权安全保障和 Skills 生态（如 ClawHub 镜像）是拓展智能体执行边界、实现可信应用的关键。"
+    }
+  ],
+  "keyQuotes": [
+    "Token 使用量是衡量 AI 发展速度的核心指标。",
+    "敏态 Agent 与稳态 Agent，二者共生互补形成进化飞轮，助力企业完成价值闭环、实现 AI 转型升级。",
+    "Skills 是智能体的「手和脚」，其生态的广度与深度，能够拓展智能体的执行能力边界。"
+  ],
+  "tags": [
+    "火山引擎",
+    "豆包大模型",
+    "Seedance 2.0",
+    "AI Agent",
+    "Token 使用量"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 997,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775102671000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 04:04:31"
+}

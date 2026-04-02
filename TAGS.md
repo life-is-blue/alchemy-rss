@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-02 20:14:13 | [返回首页](/README.md)
+**更新时间**: 2026-04-02 22:26:35 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10680)
+- [AI & 大模型](#ai-llm) (10712)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (751)
-- [DevOps](#devops) (481)
+- [前端与全栈](#frontend-fullstack) (752)
+- [DevOps](#devops) (482)
 - [产品与商业](#product-business) (35)
-- [其他](#other) (5291)
+- [其他](#other) (5297)
 
 
 ---
@@ -22,7 +22,10 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
+- [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
 - [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
+- [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
@@ -39,11 +42,8 @@
 - [快速正则搜索：为智能体工具建立文本索引-·-Cursor](https://cursor.com/blog/fast-regex-search) - AI 精选
 - [现代-LLM-中注意力机制变体的可视化指南](https://magazine.sebastianraschka.com/p/visual-attention-variants) - AI 精选
 - [针对数据中心的攻击、各尺寸的-Qwen3.5、DeepSeek-的华为布局，等等...](https://www.deeplearning.ai/the-batch/issue-345) - AI 精选
-- [分享-10-个你可能不知道的-Claude-Code-隐藏命令。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647680919&idx=1&sn=95032bfc6270f229e713598805d26ebf) - AI 精选
-- [介绍-LangSmith-Fleet](https://blog.langchain.com/introducing-langsmith-fleet/) - AI 精选
-- [MiniMax-M2.7:-开启模型的自我进化](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488138&idx=1&sn=666388509e4597a5ee8734fa0a556828) - AI 精选
 
-- [查看全部 10680 篇...](/details/tags/ai-llm.md)
+- [查看全部 10712 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 751 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 752 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 
-- [查看全部 481 篇...](/details/tags/devops.md)
+- [查看全部 482 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5291 篇...](/details/tags/other.md)
+- [查看全部 5297 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,58 @@
+{
+  "id": "RAW_bbefafad",
+  "title": "GitHub 将使用 Free、Pro 和 Pro+ 用户的 Copilot 交互数据来训练 AI 模型",
+  "url": "https://www.infoq.com/news/2026/04/github-copilot-training-data/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-02 10:17:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has announced that starting April 24, interaction data from Copilot Free, Pro, and Pro+ users will be used to train and improve its AI models. Users are opted in by default and must manually disable the setting if they do not want their data used for training. Copilot Business and Enterprise users are excluded from the change.</p>\n   <p>The <a href=\"https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/\">announcement</a>, published by GitHub Chief Product Officer Mario Rodriguez, describes the data that may be collected when the setting is enabled: accepted or modified outputs, inputs and code snippets sent to Copilot, code context surrounding the cursor position, comments and documentation, file names, repository structure, navigation patterns, interactions with Copilot features including chat and inline suggestions, and thumbs up/down feedback on suggestions. Users who previously opted out of GitHub's prompt and suggestion collection setting will have their preference carried over.</p>\n   <p>GitHub frames the change as necessary to improve model performance. The company says it has already been incorporating interaction data from Microsoft employees and has seen increased suggestion acceptance rates across multiple languages as a result. The <a href=\"https://github.com/orgs/community/discussions/188488\">FAQ</a> accompanying the announcement states that the change will go into effect on April 24, giving users 30 days' advance notice.</p>\n   <p>The scope of the data collection has drawn scrutiny. Private repository code can be collected and used for training when a user is actively working with Copilot in that repository. GitHub distinguishes between code \"at rest,\" which it says it does not access, and code actively sent to Copilot during a session, which falls within the scope of the new policy. The collected data may also be shared with GitHub affiliates, as defined in the FAQ, as companies in the same corporate family, primarily Microsoft and its subsidiaries. Third-party model providers do not receive this data for their own training purposes.</p>\n   <p>Community reaction has been negative, as in the <a href=\"https://github.com/orgs/community/discussions/188488\">GitHub community discussion</a>, developers criticized the opt-in-by-default approach, with several calling it a dark pattern, such as burnhamup:</p>\n   <blockquote>\n    <p>Dark pattern to not actually link to the page to update your settings in the email with instructions to disable it.</p>\n   </blockquote>\n   <p>Another inakarmacoma noted that the opt-out setting was not available through GitHub's mobile app. On <a href=\"https://www.reddit.com/r/programming/comments/1s3o7rk/github_to_use_copilot_data_from_all_user_tiers_to/\">Reddit</a>, a thread with over 1,000 upvotes raised concerns about model collapse from training on AI-generated code, which now makes up a growing share of GitHub repositories, as well as questions about whether the opt-out toggle provides any enforceable guarantee.</p>\n   <p>The policy also raises questions for organizations using personal-tier Copilot licenses. One developer in the GitHub discussion noted that individual users within an organization typically do not have the authority to license their employer's source code to third parties. Yet, the opt-out is enforced at the user level, not the organization level. A single team member who does not opt out could potentially expose proprietary code through their Copilot interactions. GitHub's FAQ addresses this partially, stating that interaction data from users whose accounts are members of or outside collaborators with a paid organization will be excluded from model training, and that data from paid organization repositories is never used, regardless of the user's subscription tier.</p>\n   <p>One Reddit commenter, NeatRuin7406, framed the competitive dimension of the issue more broadly, arguing that the opt-out framing misses the structural problem:</p>\n   <blockquote>\n    <p>When you use copilot, you're not just getting suggestions, you're implicitly teaching the model what good code looks like in your domain. Your proprietary patterns, architecture decisions, domain-specific idioms, naming conventions, all get folded into a general model. That model then improves suggestions for everyone else, including your direct competitors who use the same tool.</p>\n   </blockquote>\n   <p>Another commenter raised potential GDPR concerns, arguing that GitHub's stated lawful basis of \"legitimate interest\" for processing personally identifiable information may not hold up under EU law, since the rights and freedoms of data subjects could be considered overriding in this case.</p>\n   <p>GitHub's FAQ acknowledges the comparison to competitors, noting that Microsoft, Anthropic, and JetBrains take similar approaches to using interaction data for model training. Users can opt out at any time through their <a href=\"https://github.com/settings/copilot/features\">Copilot settings</a> under the \"Allow GitHub to use my data for AI model training\" heading.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Will Use Copilot Interaction Data from Free, Pro, and Pro+ Users to Train AI Models\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/github-copilot-training-data/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775125020000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "自 4 月 24 日起，GitHub 将默认使用 Copilot Free、Pro 和 Pro+ 用户的交互数据来训练 AI 模型，此举引发了严重的隐私和伦理担忧。",
+  "oneSentenceSummary": "自 4 月 24 日起，GitHub 将默认使用 Copilot Free、Pro 和 Pro+ 用户的交互数据来训练 AI 模型，此举引发了严重的隐私和伦理担忧。",
+  "summary": "GitHub 宣布对其 Copilot 数据使用政策进行重大更新，该政策将于 4 月 24 日生效。根据新条款，个人层级用户（Free、Pro 和 Pro+）的交互数据（包括代码片段、输入内容、仓库结构和导航模式）将被默认用于训练和改进 AI 模型。虽然商业版（Business）和企业版（Enterprise）层级不在此列，但个人用户必须手动选择退出以保护其数据。此举引发了开发社区的强烈抵制，批评者指出了退出流程中的“暗黑模式”、专有组织代码的潜在风险，以及在数据处理的“合法利益”基础上可能存在的 GDPR 合规问题。",
+  "mainPoints": [
+    {
+      "point": "GitHub 正在为 Copilot 个人层级实施默认加入的训练策略。",
+      "explanation": "自 4 月 24 日起，除非用户主动在账户功能中禁用该设置，否则 Free、Pro 和 Pro+ 用户的数据将被自动用于模型改进。"
+    },
+    {
+      "point": "数据收集范围包括活跃的代码上下文和私有仓库片段。",
+      "explanation": "虽然“静态”代码不会被访问，但在会话期间主动发送给 Copilot 的任何代码（包括光标周围的上下文和仓库结构）都属于训练范围。"
+    },
+    {
+      "point": "该政策为组织带来了重大的安全和知识产权风险。",
+      "explanation": "由于退出设置是在用户层面管理的，如果员工在公司项目中使用个人 Pro 账户，可能会无意中将专有的架构模式和逻辑泄露到全局模型中。"
+    },
+    {
+      "point": "开发社区将这一实施方式称为“暗黑模式”。",
+      "explanation": "批评者认为，通知邮件中缺乏指向设置的直接链接，且无法通过移动应用退出，这损害了用户的自主权和透明度。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub 宣布，自 4 月 24 日起，Copilot Free、Pro 和 Pro+ 用户的交互数据将被用于训练和改进其 AI 模型。",
+    "用户被默认加入，如果不想让自己的数据被用于训练，必须手动禁用该设置。",
+    "当你使用 Copilot 时，你不仅仅是在获取建议，你还在隐性地教导模型你的领域中什么样的代码才是好的代码。",
+    "在包含禁用说明的邮件中，没有提供指向设置页面的直接链接，这是一种暗黑模式。"
+  ],
+  "tags": [
+    "GitHub Copilot",
+    "AI 训练数据",
+    "隐私政策",
+    "数据伦理",
+    "开发工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 681,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775125020000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 10:17:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_f7d1ec3d",
+  "title": "ESLint v10：扁平化配置完成与 JSX 追踪",
+  "url": "https://www.infoq.com/news/2026/04/eslint-10-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-01 15:27:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p><a href=\"https://eslint.org/\">ESLint</a>, the widely adopted JavaScript and TypeScript linter, released version 10, marking its most significant breaking-change milestone since the flat config system was introduced. The release finalises years of incremental architectural work, removes long-deprecated APIs, and ships a set of developer experience improvements aimed squarely at plugin authors and monorepo teams.</p>\n   <p>The most consequential change in v10 is the complete removal of the legacy eslintrc configuration system. Since v9, flat config (<code>eslint.config.js</code>) has been the default, but the old format was still accessible via <code>LegacyESLint</code>. That compatibility layer is now gone entirely. The <code>defineParser()</code>, <code>defineRule()</code>, <code>defineRules()</code>, and <code>getRules()</code> methods on <code>Linter</code> have been removed, and <code>shouldUseFlatConfig()</code> now unconditionally returns <code>true</code>. Teams still on <code>.eslintrc</code> files will need to migrate before upgrading.</p>\n   <p>The official migration tool makes the transition straightforward:</p>\n   <pre>\r\n<code>npx @eslint/migrate-config .eslintrc.json\r\n</code></pre>\n   <p>This generates an <code>eslint.config.mjs</code> file that can be reviewed and adjusted from there. A full breakdown of every breaking change is available in the <a href=\"https://eslint.org/docs/latest/use/migrate-to-10.0.0\">official migration guide</a>, and a third-party walkthrough on <a href=\"https://dev.to/pockit_tools/eslint-10-migration-guide-everything-you-need-to-know-about-the-biggest-update-yet-55hk\">DEV Community</a> covers the practical upgrade steps in more detail.</p>\n   <p>Alongside the config cleanup, v10 changes how ESLint locates its configuration file. Rather than searching from the current working directory, it now starts from the directory of each linted file. This is a meaningful improvement for monorepo setups, where different packages may need different rules, and brings the lookup behaviour in line with what many developers already expected.</p>\n   <p>JSX reference tracking is another headline addition. Previously, ESLint did not recognise JSX identifiers as variable references, producing false positives with rules like <code>no-unused-vars</code>. A component imported and used only in JSX would be incorrectly flagged as unused. Plugin workarounds like <code>@eslint-react/jsx-uses-vars</code>, previously used to fix this, are no longer needed.</p>\n   <p>The <a href=\"https://eslint.org/docs/latest/integrate/nodejs-api#ruletester\">RuleTester</a> API has been strengthened with new assertion options: <code>requireMessage</code>, <code>requireLocation</code>, and <code>requireData</code>. These let plugin authors enforce stricter test definitions and ensure tests stay consistent with rule messages. Stack traces for failing tests now include the index and file location of the offending test case, cutting down the time spent hunting failures in large rule suites.</p>\n   <p>Node.js support has been tightened to <code>^20.19.0 || ^22.13.0 || &gt;=24</code>. All of v21.x and v23.x are dropped. The <code>eslint:recommended</code> configuration has also been updated to include additional rules, which may introduce new lint reports in existing codebases after upgrading.</p>\n   <p>A <a href=\"https://github.com/jsx-eslint/eslint-plugin-react/issues/3977\">GitHub issue on eslint-plugin-react</a> flagged that the plugin does not yet declare ESLint 10 support in its peer dependencies, causing install conflicts for many React developers. A <a href=\"https://github.com/vercel/next.js/issues/91702\">similar issue was raised against eslint-config-next</a>, the default ESLint config shipped with Next.js, opened as recently as March 2026 and still unresolved at time of writing.</p>\n   <p>Commentary on <a href=\"https://www.reddit.com/r/javascript/comments/1r067if/eslint_v1000_released/\">r/javascript</a> highlighted some migration pains:</p>\n   <blockquote>\n    <p>honestly the flat config idea is good in theory but the migration path was terrible. felt like every plugin had slightly different flat config support and you were just guessing and checking until it worked.</p>\n   </blockquote>\n   <p>The release continues the competitive conversation around JavaScript tooling. Rust-based alternatives such as <a href=\"https://biomejs.dev/\">Biome</a> and <a href=\"https://oxc.rs/\">Oxlint</a> have been gaining ground on the promise of significantly faster linting.</p>\n   <p>On the reddit annoucement post, there are a number of comments suggesting&nbsp;switching from ESLint to alternatives such as Biome or Oxlint:</p>\n   <blockquote>\n    <p>I’ve already moved on to biome. It doesn’t have 100% but the rules but probably around 95%, which is enough to outweigh the performance hog eslint is.</p>\n   </blockquote>\n   <p><a href=\"https://oxc.rs/docs/guide/benchmarks\">Oxc's own benchmarks</a> claim Oxlint is 50 to 100 times faster than ESLint depending on CPU core count, while Biome combines linting and formatting in a single tool. The trade-off is rule coverage: Oxlint does not yet match ESLint's full catalogue.</p>\n   <p>ESLint is an open-source, pluggable linting tool for JavaScript and TypeScript, originally created by Nicholas C. Zakas in 2013 and now maintained by the <a href=\"https://eslint.org/team\">ESLint team</a> under the OpenJS Foundation. It is published under the MIT license and accumulates over 120 <a href=\"https://www.npmjs.com/package/eslint\">million weekly npm downloads</a>.</p>\n   <p>ESLint v10.0.1 and v10.0.3 have already followed with bug fixes, and v10.1.0 shipped on March 20, 2026.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"ESLint v10: Flat Config Completion and JSX Tracking\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/eslint-10-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775057220000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "ESLint v10 完成了向扁平化配置系统的过渡，引入了原生的 JSX 标识符追踪，改进了 Monorepo 支持，并移除了旧版 API。",
+  "oneSentenceSummary": "ESLint v10 完成了向扁平化配置系统的过渡，引入了原生的 JSX 标识符追踪，改进了 Monorepo 支持，并移除了旧版 API。",
+  "summary": "ESLint v10 是该 Linter 演进过程中的一个重要里程碑，它完全移除了旧版的 .eslintrc 配置系统，全面转向新的扁平化配置格式。此版本精简了核心架构，引入了原生的 JSX 引用追踪以消除常见的误报，并优化了 Monorepo 的配置查找方式。虽然官方提供了迁移工具以简化过渡，但此次更新在 React 和 Next.js 等主要插件的生态系统中引发了一些摩擦，且正值 Biome 和 Oxlint 等基于 Rust 的高性能替代方案竞争日益激烈之际。",
+  "mainPoints": [
+    {
+      "point": "彻底移除旧版配置系统。",
+      "explanation": "对 .eslintrc 和 LegacyESLint 兼容层的支持已被完全移除，使得扁平化配置格式 (eslint.config.js) 在 v10 中成为强制要求。"
+    },
+    {
+      "point": "原生的 JSX 标识符追踪。",
+      "explanation": "ESLint 现在可以原生识别 JSX 中使用的变量，无需再通过特定的插件变通方法来避免 React 组件中出现错误的未使用变量警告。"
+    },
+    {
+      "point": "优化了 Monorepo 的配置查找。",
+      "explanation": "该工具现在会相对于被 Lint 的文件所在目录（而非当前工作目录）来搜索配置文件，这更符合开发者在复杂项目结构中的预期。"
+    },
+    {
+      "point": "对插件作者提出了更严格的测试要求。",
+      "explanation": "RuleTester API 得到了增强，新增了 requireMessage 和 requireLocation 等断言选项，以确保自定义规则的测试套件具有更高的质量和一致性。"
+    }
+  ],
+  "keyQuotes": [
+    "v10 中最重大的变化是彻底移除了旧版的 eslintrc 配置系统。",
+    "JSX 引用追踪是另一个重磅新增功能。此前，ESLint 无法将 JSX 标识符识别为变量引用，从而导致了误报。",
+    "此次发布标志着多年架构改进工作的完成，移除了长期废弃的 API，并带来了一系列开发者体验的提升。"
+  ],
+  "tags": [
+    "ESLint",
+    "JavaScript",
+    "TypeScript",
+    "Linter",
+    "扁平化配置"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 656,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775057220000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 15:27:00"
+}

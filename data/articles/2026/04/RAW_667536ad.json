@@ -1,0 +1,53 @@
+{
+  "id": "RAW_667536ad",
+  "title": "封不住！Claude Code 爆改 Python 版加冕最快 10 万星，且 clone 且珍惜",
+  "url": "https://www.qbitai.com/2026/04/394570.html",
+  "date": "2026-04-02 02:07:02",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"53\">Jay 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"54\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">还活着！</p>\n  <p data-track=\"4\">两天过去，Claude Code源码克隆项目不仅健在，还成了<strong>史上最快10万星</strong>项目。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_ff4975144aaf3280d03653d64ce8ce40.png\" data-ic=\"false\" data-width=\"1318\" data-height=\"1062\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"5\">太恐怖了，揽星速度比之前的OpenClaw还要猛，火到连作者的<strong>妈妈</strong>都出来喊话，催他赶紧去申请<strong>吉尼斯世界纪录</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_2a8655284845e12f9b217f9650b7716e.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1131\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"6\">谁能想到呢？在Anthropic那边法律大炮无差别火力全开的攻势下，这个发布2小时就冲破5万星的项目，<strong>居然还能坚挺到现在</strong>。</p>\n  <p data-track=\"7\">原因嘛……全靠Sigrid Jin全网在「开源狂欢」那晚，神来之笔地祭出了一招<strong>「金蝉脱壳」</strong>。</p>\n  <p data-track=\"8\">两个人，十只OpenClaw，一台Macbook，用Python替换TypeScript原始代码，<strong>硬是一夜给Claude Code换壳了</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_c30cd36f8ef965f75563934e92b3ef69.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"786\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"9\">没想到啊，在Claude Code底裤被扒的一干二净的情况下，居然还有人能这么冷静，提前做好了备案（doge）。</p>\n  <p data-track=\"10\">不过说实话，这可能真得<strong>归功于他的韩国女朋友</strong>。</p>\n  <p data-track=\"12\">周二<strong>凌晨4点</strong>，Sigrid Jin被手机震醒，Claude Code泄露的消息已经炸锅了。</p>\n  <p data-track=\"13\">一切的源头，都来自中国00后小伙<strong>Chaofan Shou</strong>的一个帖子。他发现Claude Code的51.2万行源码被意外公开，其中还包含了工具的运行机制和新功能测试内容。</p>\n  <p data-track=\"14\">数小时内，无数人克隆了Claude Code的源代码，副本数量激增。</p>\n  <p data-track=\"15\">这事儿本身就挺讽刺的。一直以来，这个行业被指控用公开内容训练模型，而Anthropic又一直把「安全承诺」当卖点。</p>\n  <p data-track=\"16\">现在好了，风水轮流转，Claude Code被社区狠狠翻了个底朝天。</p>\n  <p data-track=\"17\">对此，Anthropic解释称，这次泄露源于人为失误，并非安全漏洞。「我们正在上线新的措施，防止类似情况再次发生。」</p>\n  <p data-track=\"18\">与此同时，<strong>一场声势浩大的「猫鼠游戏」正式开始</strong>。</p>\n  <p data-track=\"19\">Anthropic拿起了法律武器，通过DMCA要求GitHub下架相关仓库。</p>\n  <p data-track=\"20\">速度之快，强度之高，几乎像是提前做过预案，甚至很多和Claude Code源码不相关的项目都受到了波及。</p>\n  <p data-track=\"21\">AI高管<strong>Daniel San</strong>便是受害者之一。在收到GitHub的警告邮件后，他欲哭无泪地表示冤枉，自己明明用的是Anthropic<strong>自己公开仓库的一个fork</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_aaafda414b9a1e5647d1fd51bd0e4ecd.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1470\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"22\">高强度吃瓜的<strong>龙虾之父Peter</strong>随即赶到了案发现场，调侃Anthropic这些下架请求都是<strong>Vibe Coding</strong>出来的自动删除程序。</p>\n  <p data-track=\"23\">你还别说，之前确实有消息说Anthropic<strong>连法务团队都在用Claude写代码。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_e06ae3dbe13dada0d86e3f8a7b6ebf0e.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"262\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"24\">可就是在这么一场无差别扫射中，一个名叫claw-code的项目却幸存下来，还形成了病毒传播，增长速度远超OpenClaw。</p>\n  <p data-track=\"25\">Anthropic不可能会没注意到这个异军突起的项目。发布后2小时突破5万星，一天内突破10万星，至今还活蹦乱跳。</p>\n  <p data-track=\"26\"><strong>但他们根本就没和这个项目的作者联系过。</strong></p>\n  <p data-track=\"27\">「挺意外的，Anthropic和GitHub到现在都没联系过我们。」Jin在接受Business Insider采访时说。</p>\n  <p data-track=\"28\">这一切能成，全靠Sigrid Jin开局就走了条野路子。</p>\n  <p data-track=\"29\">把时间拨回周二凌晨，跟所有吃瓜开发者一样，Jin看到Claude Code源码泄露也兴奋得不行。</p>\n  <p data-track=\"30\">幸好他的<strong>韩国女朋友多了个心眼</strong>，劝他最好小心点，说就算只是「私藏」这代码，搞不好也会惹上Anthropic的官司。</p>\n  <p data-track=\"31\">就是这句话，逼得这位25岁的哥大在读学生，干了一件现在回头看简直神来之笔的事儿——</p>\n  <p data-track=\"32\"><strong>两个人，10个OpenClaw账号，一台MacBook Pro，直接从零开始用Python把源码给重写了。</strong></p>\n  <p data-track=\"33\">Codex立大功，整个过程全靠oh-my-codex(OmX)这个工作流端到端编排，说白了就是站在OpenAI Codex的肩膀上搞自动化。</p>\n  <p data-track=\"34\">最后搞出来的Python版，架构逻辑跟Claude Code一模一样，但找不出一行源代码。</p>\n  <p data-track=\"35\">从半夜惊醒到发布，仅仅花了几个小时，天都还没亮。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_819c3fb5f859ca6d0525d10fb6a5fa18.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1418\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">如今也证明，这招「金蝉脱壳」成了Claw Code的免死金牌，<strong>纯纯卡BUG</strong>，直接闪避了Anthropic法律大炮的所有伤害判定。</p>\n  <p data-track=\"37\">截止到发稿，Jin复刻的Claw Code在GitHub上已经狂揽超<strong>11万stars和10万forks。</strong></p>\n  <p data-track=\"38\">他说，就短短一天，Discord群里就塞进了<strong>5000号人</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_342bc0a09847520e9963d6e4f5dc9f5e.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"555\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"39\">现在，Jin正马不停蹄地推进<strong>Rust重写版。</strong></p>\n  <p data-track=\"40\">他说，这才是这个项目的完全体。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_8ea028084b8b127dc0325587442b2e89.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"334\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"42\">对了，在这条故事线的中段，还冒出来一个特别戏剧性的小插曲。</p>\n  <p data-track=\"43\">Jin专门<strong>发帖感谢马斯克</strong>，说xAI给他送了不少Grok积分，这对Claw Code的重写帮了大忙。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_540496c166859f26bbe57e2f115bbd16.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"1029\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"44\">「超级期待看到你们搞出来的后续成果！」<strong>xAI的Umesh Khanna</strong>闪现评论区，这么回复道。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402030312_434270dd6e84c548313aa3c53d27e626.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"258\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"45\">啧啧啧，果真是看热闹的不嫌事大。</p>\n  <p data-track=\"46\">Claude Code被泄露也就罢了，<strong>xAI还要跟着火上浇油</strong>，帮着开发者快速移植，生怕Anthropic一封邮件就把项目给搞下架了。</p>\n  <p data-track=\"47\"><strong>天不灭老马啊。</strong></p>\n  <p data-track=\"48\">做梦都想不出这剧情。谁想得到，就在Grok在编程这块大幅落后、联创团队都快跑光了的节骨眼上，<strong>突然天降51万行Claude Code源代码</strong>。</p>\n  <p data-track=\"49\">而且要知道，xAI团队里现在还有两名Cursor的大将，前不久才挖过来的……</p>\n  <p data-track=\"50\"><strong>Grok Code这下估计是真近在咫尺了</strong>（doge）。</p>\n  <p data-track=\"51\">GitHub连接：https://github.com/instructkr/claw-code</p>\n  <p data-track=\"52\">参考链接：\n   <br>\n   [1]https://www.businessinsider.com/claude-code-leak-what-happened-recreated-python-features-revealed-2026-4\n   <br>\n   [2]https://www.wsj.com/tech/ai/anthropic-races-to-contain-leak-of-code-behind-claude-ai-agent-4bc5acc7\n   <br>\n   [3]https://x.com/steipete/status/2039156882041123035</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文报道了 Claude Code 源码泄露后的连锁反应，重点介绍了开发者 Sigrid Jin 如何利用 AI 工具在数小时内将泄露的 TypeScript 源码重写为 Python 版，成功规避 DMCA 下架并创下 GitHub 最快 10 万星纪录。",
+  "oneSentenceSummary": "本文报道了 Claude Code 源码泄露后的连锁反应，重点介绍了开发者 Sigrid Jin 如何利用 AI 工具在数小时内将泄露的 TypeScript 源码重写为 Python 版，成功规避 DMCA 下架并创下 GitHub 最快 10 万星纪录。",
+  "summary": "2026 年 4 月，Anthropic 的 AI 编码工具 Claude Code 发生重大源码泄露事件。面对官方高强度的 DMCA 下架攻势，开发者 Sigrid Jin 采取了「金蝉脱壳」策略：利用 OpenAI Codex 和 xAI Grok 等工具，在几小时内将 51.2 万行 TypeScript 原始代码逻辑端到端重写为 Python 版本。这一举措使名为 `claw-code` 的项目在逻辑架构上与原版保持一致，但因代码完全重写而闪避了法律追责，并在一天内狂揽 10 万 GitHub Stars。文章还揭示了 xAI 在此过程中通过提供积分支持开发者移植代码，体现了 AI 巨头之间激烈的竞争态势。",
+  "mainPoints": [
+    {
+      "point": "Claude Code 源码泄露引发社区狂欢与 Anthropic 的法律反击。",
+      "explanation": "由于人为失误，Anthropic 核心工具源码泄露，官方随后通过 DMCA 大规模清理 GitHub 仓库，甚至波及了部分合规的 fork 项目。"
+    },
+    {
+      "point": "开发者通过 AI 辅助重写（Python 化）成功规避版权风险。",
+      "explanation": "Sigrid Jin 利用 oh-my-codex 工作流，在极短时间内完成端到端的代码语言迁移，实现了「逻辑复刻但代码原创」，从而绕过了 DMCA 的自动删除程序。"
+    },
+    {
+      "point": "xAI 积极介入并支持开发者移植代码，加剧了行业博弈。",
+      "explanation": "马斯克的 xAI 团队通过提供 Grok 积分等方式，变相支持开发者对 Claude Code 进行复刻和移植，反映了 AI 厂商在人才与技术生态上的直接对抗。"
+    }
+  ],
+  "keyQuotes": [
+    "两个人，十只 OpenClaw，一台 Macbook，用 Python 替换 TypeScript 原始代码，硬是一夜给 Claude Code 换壳了。",
+    "这招「金蝉脱壳」成了 Claw Code 的免死金牌，纯纯卡 BUG，直接闪避了 Anthropic 法律大炮的所有伤害判定。",
+    "Anthropic 连法务团队都在用 Claude 写代码。"
+  ],
+  "tags": [
+    "Claude Code",
+    "Anthropic",
+    "开源协议",
+    "GitHub",
+    "AI 编程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 89,
+  "wordCount": 2092,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775095622000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 02:07:02"
+}

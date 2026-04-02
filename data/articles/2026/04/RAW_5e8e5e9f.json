@@ -1,0 +1,47 @@
+{
+  "id": "RAW_5e8e5e9f",
+  "title": "发布：datasette-enrichments-llm 0.2a1",
+  "url": "https://simonwillison.net/2026/Apr/1/datasette-enrichments-llm-2/#atom-everything",
+  "date": "2026-04-01 22:00:34",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">1st April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-enrichments-llm/releases/tag/0.2a1\">datasette-enrichments-llm 0.2a1</a></span> <span class=\"beat-commit\">— Enrich data by prompting LLMs</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>The <code>actor</code> who triggers an enrichment is now passed to the <code>llm.mode(... actor=actor)</code> method. <a href=\"https://github.com/datasette/datasette-enrichments-llm\">#3</a></li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4080/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "发布 datasette-enrichments-llm 0.2a1，引入了将触发操作的 actor 传递给 LLM 增强方法的功能。",
+  "oneSentenceSummary": "发布 datasette-enrichments-llm 0.2a1，引入了将触发操作的 actor 传递给 LLM 增强方法的功能。",
+  "summary": "这是 datasette-enrichments-llm 插件 0.2a1 版本的简要发布公告。此 alpha 版本的主要更新是，触发增强操作的“actor”（执行者）现在会被传递给 `llm.mode()` 方法。这使得插件能够保持关于是哪个用户发起了基于 LLM 的数据增强过程的上下文信息。",
+  "mainPoints": [
+    {
+      "point": "Datasette-enrichments-llm 0.2a1 版本现已发布。",
+      "explanation": "这是该插件的一个小型 alpha 版本，旨在利用大语言模型（LLM）来增强 Datasette 表格。"
+    },
+    {
+      "point": "Actor 上下文现在会被传递给增强方法。",
+      "explanation": "此次更新确保了触发增强操作的用户（actor）身份可供底层的 LLM 调用使用，从而实现更好的审计或用户特定的逻辑。"
+    }
+  ],
+  "keyQuotes": [
+    "触发增强操作的 actor 现在会被传递给 llm.mode(... actor=actor) 方法。"
+  ],
+  "tags": [
+    "Datasette",
+    "LLM",
+    "数据增强",
+    "软件发布",
+    "开源"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 76,
+  "wordCount": 27,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775080834000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 22:00:34"
+}

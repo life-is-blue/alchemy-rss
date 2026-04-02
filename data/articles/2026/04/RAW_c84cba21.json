@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c84cba21",
+  "title": "面向开发者的 AI 工具 –",
+  "url": "https://www.freecodecamp.org/news/ai-tools-for-developers/",
+  "date": "2026-04-01 19:26:18",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Using AI tools is an important part of being a software developer.</p>\n  <p>We just posted a course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you how to use AI tools to become more productive as a developer. I created this course!</p>\n  <p>In this course, you will master AI pair programming and agentic terminal workflows using top-tier tools like GitHub Copilot, Anthropic's Claude Code, and the Gemini CLI. The course also covers open-source automation with OpenClaw, teaching you how to set up a highly customizable, locally hosted AI assistant for your development environment. Finally, you will learn how to maintain high code quality and streamline your team's workflow by integrating CodeRabbit for automated, AI-driven pull request analysis.</p>\n  <p>Watch the full course <a href=\"https://youtu.be/wlpBCazAY9Q\">on the freeCodeCamp.org YouTube</a> channel (1.5 hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wlpBCazAY9Q\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "freeCodeCamp 发布了一门全面的 1.5 小时视频课程，涵盖了现代 AI 开发工具，包括 GitHub Copilot、Claude Code、Gemini CLI 和 CodeRabbit。",
+  "oneSentenceSummary": "freeCodeCamp 发布了一门全面的 1.5 小时视频课程，涵盖了现代 AI 开发工具，包括 GitHub Copilot、Claude Code、Gemini CLI 和 CodeRabbit。",
+  "summary": "本文介绍了 freeCodeCamp.org 新推出的一门免费 1.5 小时视频课程，旨在帮助软件开发者将 AI 集成到日常工作流中。课程内容专注于掌握 AI 结对编程和智能体终端工作流，使用 GitHub Copilot、Anthropic 的 Claude Code 和 Gemini CLI 等行业领先工具。此外，课程还涵盖了使用 OpenClaw 进行开源自动化以构建本地 AI 助手，以及利用 CodeRabbit 进行自动化拉取请求（Pull Request）分析，从而提升团队生产力和代码质量。",
+  "mainPoints": [
+    {
+      "point": "掌握 AI 结对编程和智能体终端工作流。",
+      "explanation": "本课程提供实操培训，教你如何使用 GitHub Copilot 和 Anthropic 的 Claude Code 等顶级工具，直接在终端中自动化编码任务。"
+    },
+    {
+      "point": "通过本地托管的 AI 实现开源自动化。",
+      "explanation": "通过使用 OpenClaw，开发者可以在自己的开发环境中设置高度可定制且私密的 AI 助手。"
+    },
+    {
+      "point": "利用 AI 驱动的代码审查简化团队工作流。",
+      "explanation": "集成 CodeRabbit 可以实现自动化的拉取请求分析，帮助团队以更少的人工开销保持高质量的代码。"
+    }
+  ],
+  "keyQuotes": [
+    "使用 AI 工具是软件开发者工作的重要组成部分。",
+    "在本课程中，你将掌握 AI 结对编程和智能体终端工作流，使用 GitHub Copilot、Anthropic 的 Claude Code 和 Gemini CLI 等顶级工具。",
+    "本课程还涵盖了使用 OpenClaw 进行开源自动化，教你如何为开发环境设置高度可定制、本地托管的 AI 助手。"
+  ],
+  "tags": [
+    "AI 工具",
+    "GitHub Copilot",
+    "Claude Code",
+    "Gemini CLI",
+    "CodeRabbit"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 129,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775071578000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-01 19:26:18"
+}

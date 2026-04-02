@@ -1,0 +1,63 @@
+{
+  "id": "RAW_f4f23776",
+  "title": "如何在组织扩张时处理信任与心理安全感",
+  "url": "https://www.infoq.com/news/2026/04/trust-psychological-safety-scale/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-02 11:04:00",
+  "author": "Ben Linders",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>As organizations scale, communication overload, loss of shared context, and trust gaps emerge, Charlotte de Jong Schouwenburg mentioned at <a href=\"https://devsummit.infoq.com/conference/munich2025\">Dev Summit Munich</a>. Trust must be built team by team; it can’t be replicated. Trust is interpersonal, while psychological safety is among people and fuels learning. Leaders must deliberately design structures, rituals, and metrics that reward transparency and cohesion at scale.</p>\n   <p>With scaling organizations come a lot of challenges, De Jong Schouwenburg said. We get communication overload, there’s a loss of shared context, and trust is a problem, she explained:</p>\n   <blockquote>\n    <p>You communicate well with 12 people. You know each other. It doesn’t happen with 500. Humans have cognitive limits; you can’t really scale humans like you scale systems.</p>\n   </blockquote>\n   <p>Trust doesn’t replicate automatically. Just because you have high trust in your existing teams, when you build another team just like it, it won’t automatically have high trust and high psychological safety, De Jong Schouwenburg said:</p>\n   <blockquote>\n    <p>As teams scale, you can’t copy-paste trust from one group to another. Each new team has to rebuild it; it has to grow.</p>\n   </blockquote>\n   <p>Although trust and psychological safety are closely linked, they are not the same; and understanding the distinction helps teams scale more effectively, De Jong Schouwenburg explained:</p>\n   <blockquote>\n    <ul>\n     <li>Trust is between people; psychological safety is among people.</li>\n     <li>Trust is earned; psychological safety is enabled.</li>\n     <li>Trust supports individuals; psychological safety supports innovation, learning, and collaboration across groups.</li>\n    </ul>\n   </blockquote>\n   <p>We want people to have trust and psychological safety, and need them to feel free and comfortable and be rewarded for being honest and transparent, De Jong Schouwenburg said. She suggested fostering a system that rewards transparency and reliability instead of heroics and secrecy.</p>\n   <p>Building trust and psychological safety at scale isn’t accidental, but it’s architectural. You<strong> </strong>can architect environments that create psychological safety from day one, De Jong Schouwenburg said. It requires consistent behaviors, deliberate systems, and environments where people feel both connected and coherent across teams.</p>\n   <p>Companies can benefit from having a strong sense of connection and a shared purpose across teams. The cohesion that we normally find in one team, we want to get across teams, distribute it, De Jong Schouwenburg explained:</p>\n   <blockquote>\n    <p>Things you can do are retrospectives, or virtual coffees if it’s hard to get together physically. Global all-hands with shared storytelling. Rotating meeting facilitators across regions, and cross-site pair programming or demos.</p>\n   </blockquote>\n   <p>Leadership really is very important in this, De Jong Schouwenburg said. You need to make sure that the social system is reliable when stress hits. She suggested monitoring human metrics, like how long decisions take, how often teams speak openly in retrospectives, and how much cultural drift there is between sites or functions, she concluded.</p>\n   <p>InfoQ interviewed <a href=\"https://www.linkedin.com/in/charlotteschouwenburg/\">Charlotte de Jong Schouwenburg</a> about trust and psychological safety.</p>\n   <p><strong>InfoQ: How do trust and psychological safety differ?</strong></p>\n   <blockquote>\n    <p><strong>Charlotte de Jong Schouwenburg</strong>: Trust is personal and directional. It’s my belief about you. I trust that you will follow through, communicate honestly, or support me when things get tough.</p>\n    <p>Psychological safety is collective and environmental. It’s our belief about this group. Psychological safety means the team climate supports speaking up, asking questions, sharing ideas, and acknowledging mistakes without fear of humiliation or retaliation. It’s about the social norms of the system, not any single relationship.</p>\n    <p>Trust builds through repeated interactions like shared experiences, reliability, and consistency. In small teams that work together longer, this develops more naturally because people have time to form individual relationships. Face-to-face time and focusing on strengthening the relationships before talking about work helps to increase this.</p>\n   </blockquote>\n   <p><strong>InfoQ: How can organizations increase trust and psychological safety?</strong></p>\n   <blockquote>\n    <p><strong>De Jong Schouwenburg</strong>: If people believe they need to hide uncertainty, overwork silently, or rescue projects through last-minute heroics, trust erodes.</p>\n    <p>Instead, reinforce:</p>\n    <ul>\n     <li>Asking early questions</li>\n     <li>Making asking for help and providing help normal rather than a nuisance</li>\n     <li>Sharing unknowns</li>\n     <li>Predictable follow-through</li>\n     <li>Discussing risks before they become fires</li>\n    </ul>\n    <p>A system that rewards honesty creates both trust and collective intelligence.</p>\n    <p>You can build fast psychological safety through norms, not familiarity. You can’t scale personal trust quickly, but you can scale psychological safety by setting clear expectations:</p>\n    <ul>\n     <li>\"It’s okay to ask for help.\"</li>\n     <li>\"We critique ideas, not people.\"</li>\n     <li>\"Mistakes are data.\"</li>\n     <li>\"Everyone contributes, especially the quiet voices.\"</li>\n    </ul>\n    <p>You can also use meeting strategies to encourage equal sharing of speaking time (for example, everyone gets one minute speaking time to express their ideas or opinions while the others listen in silence). These norms create immediate safety even before relationships fully form.</p>\n   </blockquote>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"How to Handle Trusts and Psychological Safety When Scaling Organizations\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Ben Linders\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/trust-psychological-safety-scale/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775127840000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2499\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "本文探讨了人际信任与集体心理安全感之间的关键区别，并为领导者提供了可操作的策略，以构建在组织扩张过程中能够保持这些品质的环境。",
+  "oneSentenceSummary": "本文探讨了人际信任与集体心理安全感之间的关键区别，并为领导者提供了可操作的策略，以构建在组织扩张过程中能够保持这些品质的环境。",
+  "summary": "Charlotte de Jong Schouwenburg 指出，信任是人际间的，通过反复互动建立；而心理安全感是一种集体的环境特质，能够促进学习与创新。随着组织扩张，沟通超载和共享背景的缺失使得信任无法简单地从一个团队复制到另一个团队。为了应对这一挑战，领导者必须刻意设计系统和仪式，奖励透明度而非个人英雄主义。具体方法包括建立明确的规范（如将错误视为数据、鼓励尽早提问）、轮换引导者，以及监控决策速度和文化漂移等人员指标。最终，成功的扩张需要从依赖个人关系转向构建在压力下依然稳健的可靠社会系统。",
+  "mainPoints": [
+    {
+      "point": "信任与心理安全感是截然不同但互补的概念。",
+      "explanation": "信任是个人的、有指向性的（对个人的信念），而心理安全感是集体的、环境性的（对团队敢于发言氛围的信念）。"
+    },
+    {
+      "point": "信任无法像技术系统那样复制或扩展。",
+      "explanation": "由于信任是通过反复的人际互动建立的，每个新团队必须有机地培养自己的信任；它无法从现有的高信任团队中自动转移。"
+    },
+    {
+      "point": "心理安全感可以通过刻意的规范来构建。",
+      "explanation": "虽然个人信任需要时间，但心理安全感可以通过设定明确的期望快速建立，例如批判想法而非个人，以及重视沉默的声音。"
+    },
+    {
+      "point": "组织应奖励透明度，而非个人英雄主义。",
+      "explanation": "鼓励分享未知信息并尽早寻求帮助的系统能够创造集体智慧，并防止因默默加班或最后一刻的“救火”而导致的信任侵蚀。"
+    },
+    {
+      "point": "领导者必须监控人员指标以检测文化漂移。",
+      "explanation": "跟踪决策速度、回顾会议中公开发言的频率以及各站点的文化一致性等指标，有助于保持社会系统的可靠性。"
+    }
+  ],
+  "keyQuotes": [
+    "人类有认知极限；你无法像扩展系统那样扩展人类。",
+    "信任存在于人与人之间；心理安全感存在于群体之中。信任是赢得的；心理安全感是被赋能的。",
+    "你无法快速扩展个人信任，但可以通过设定明确的期望来扩展心理安全感。",
+    "一个奖励诚实的系统既能创造信任，也能创造集体智慧。",
+    "领导力在这方面确实非常重要。你需要确保社会系统在压力来临时依然可靠。"
+  ],
+  "tags": [
+    "心理安全感",
+    "组织扩张",
+    "领导力",
+    "信任",
+    "团队文化"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 740,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PG_CAREER",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775127840000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 11:04:00"
+}

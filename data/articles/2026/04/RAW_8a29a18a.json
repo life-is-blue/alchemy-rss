@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8a29a18a",
+  "title": "微软推出 WinApp CLI，统一 Windows 应用开发的工作流",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280673&idx=4&sn=f6a3a681398ca168489602f4228a21a6",
+  "date": "2026-04-02 01:57:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Edin Kapić </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 张卫滨 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">2026 年 1 月，微软宣布 WinApp CLI 发布公开预览版。这是一款全新的命令行工具，旨在将 Windows 应用开发的常用操作统一整合到单一接口中。该工具已开源发布，面向使用.NET、C++、Electron、Rust 等不同技术栈的开发者。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">此次发布反映出 Windows 开发中长期存在的复杂性问题。开发现代 Windows 应用通常需要协调多个 SDK、编辑清单文件、生成证书并处理打包流程。对于不使用 Visual Studio 或 MSBuild 工作流的开发者而言，这种碎片化尤为明显，接入新版 Windows API 往往需要大量手动配置。WinApp CLI 旨在解决这一痛点，统一负责环境初始化、项目配置与应用打包。微软表示，该工具打通了跨平台工具链与 Windows 的原生能力，可自动对接 Windows SDK 与 Windows App SDK。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503797018\" data-ratio=\"0.536007292616226\" style=\"width: 100%;\" data-type=\"png\" data-w=\"1097\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=a340db4f&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FhLLZnAbUwNgBxkWjtlVfjgQwQVQEb5ejic88hvTCSCiaqpuPicQbAibo9YYdVlzhnxFmquE3C2goGa9BMlLjj1bVC8Q3VJ1l2DiajibdIFBjhgstw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">核心亮点之一是一键式的环境初始化。执行</span><code><span leaf=\"\">winapp init</span></code><span leaf=\"\">命令即可自动下载所需的 SDK、生成 C++ WinRT 绑定等投射（projection）代码，并自动创建清单、资源文件与开发证书。这替代了过去繁琐的多步骤手动配置与工具链定制。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">此外，该 CLI 提供了面向开发内循环优化的包标识工作流（package identity workflow）。通知、系统集成、AI 能力等现代 Windows API，都要求应用具备包标识。传统方式需要完整打包应用，而通过</span><code><span leaf=\"\">winapp create-debug-identity</span></code><span leaf=\"\">，开发者无需完整 MSIX 打包，即可为可执行文件附加调试包标识，大幅提升迭代与测试效率。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该工具同时会自动化清单管理、证书生成与签名流程。内置命令可创建并安装开发证书、更新清单资源、生成可分发的已签名 MSIX 安装包。相关能力原生支持 CI/CD 流水线，官方 GitHub Actions 与 Azure DevOps 任务可通过</span><code><span leaf=\"\">winapp restore</span></code><span leaf=\"\">一键配置构建环境。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">另外一项重要的新增功能是对&nbsp;Electron&nbsp;和&nbsp;Node.js&nbsp;场景的专项支持。开发者可通过</span><code><span leaf=\"\">winapp node add-electron-debug-identity</span></code><span leaf=\"\">向正在运行的 Electron 进程注入包标识，这样 Electron 进程就能访问未经打包的应用程序的 API，原来它只能访问已打包的应用程序。微软还开放了实验性的 Node.js Windows API 投射，包含各类 AI 相关的能力。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">目前 WinApp CLI 仍处于公开预览阶段，微软提示在正式版发布前命令与功能仍然有可能进行调整。开发者使用时需要留意破坏性的变更，同时部分文档与框架适配尚不完善。继 1 月首次发布后，微软已于 2026 年 2 月底发布&nbsp;0.2.0 更新版，修复多项问题并提供了额外的优化。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">WinApp CLI 可以通过&nbsp;WinGet&nbsp;和 Electron 场景专用的&nbsp;npm&nbsp;包获取，作为&nbsp;GitHub 项目，鼓励开发者提 Issue 和贡献代码。微软将其定位为现有 IDE 工作流的补充而非替代方案，尤其适配跨平台技术栈团队。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">更多详细信息、安装指引与示例工程可查阅官方发布博客与 GitHub 仓库。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">Microsoft Introduces WinApp CLI to Unify Windows App Development Workflows</span></span><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: #888888;\">(<a href=\"https://www.infoq.com/news/2026/03/winapp-cli/)\" target=\"_blank\">https://www.infoq.com/news/2026/03/winapp-cli/)</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "微软发布 WinApp CLI 公开预览版，旨在通过统一的命令行接口简化 Windows 应用的环境配置、包标识管理及打包工作流。",
+  "oneSentenceSummary": "微软发布 WinApp CLI 公开预览版，旨在通过统一的命令行接口简化 Windows 应用的环境配置、包标识管理及打包工作流。",
+  "summary": "本文介绍了微软最新推出的开源工具 WinApp CLI。该工具针对 Windows 开发中 SDK 碎片化、配置繁琐等痛点，为 .NET、C++、Electron 及 Rust 开发者提供了统一的操作接口。其核心功能包括一键式环境初始化（winapp init）、无需完整打包即可附加包标识的调试工作流，以及自动化的清单与证书管理。此外，WinApp CLI 还特别增强了对 Electron 和 Node.js 的支持，允许其访问原生 Windows API 及 AI 能力，是跨平台开发团队接入 Windows 生态的重要补充。",
+  "mainPoints": [
+    {
+      "point": "统一 Windows 开发工作流，降低环境配置门槛。",
+      "explanation": "WinApp CLI 整合了环境初始化、项目配置与应用打包，通过单一接口解决了多 SDK 协调和手动编辑清单文件的复杂性。"
+    },
+    {
+      "point": "优化开发内循环，提升调试效率。",
+      "explanation": "通过 `create-debug-identity` 命令，开发者无需进行完整的 MSIX 打包即可为应用附加包标识，从而快速测试通知、系统集成及 AI 等现代 API。"
+    },
+    {
+      "point": "增强对跨平台技术栈（Electron/Node.js）的支持。",
+      "explanation": "提供了专项命令向 Electron 进程注入包标识，并开放了实验性的 Node.js Windows API 投射，方便非原生开发者调用 Windows 原生能力。"
+    }
+  ],
+  "keyQuotes": [
+    "该工具旨在将 Windows 应用开发的常用操作统一整合到单一接口中。",
+    "WinApp CLI 旨在解决这一痛点，统一负责环境初始化、项目配置与应用打包。",
+    "微软将其定位为现有 IDE 工作流的补充而非替代方案，尤其适配跨平台技术栈团队。"
+  ],
+  "tags": [
+    "WinApp CLI",
+    "Windows 开发",
+    "微软",
+    "命令行工具",
+    "Electron"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1044,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775095020000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 01:57:00"
+}

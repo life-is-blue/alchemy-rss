@@ -1,0 +1,54 @@
+{
+  "id": "RAW_8e47e0b6",
+  "title": "开盒 Claude Code 的原来是中国 00 后！曾怒怼 Anthropic 窃取用户代码",
+  "url": "https://www.qbitai.com/2026/04/395091.html",
+  "date": "2026-04-02 07:22:31",
+  "author": "Jay",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p class=\"pgc-h-forward-slash\" data-track=\"63\">Jay 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"64\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"7\">扒光Anthropic底裤的人，究竟是谁？</p>\n  <p data-track=\"8\">答案揭晓——一位年仅25岁的中国小伙，<strong>Chaofan Shou</strong>。</p>\n  <p data-track=\"9\">仅凭<strong>一条帖子便引爆全网</strong>，从60MB的source map里，扒出来51万行Claude Code源代码。</p>\n  <p data-track=\"10\">可以说，这名<strong>来自中国的00后</strong>，凭一己之力推动全球AI社区向前走了一大步。（bushi</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083312_1b393ab7cf62faf8f2ef45289ff5c5da.jpeg\" data-ic=\"false\" data-width=\"547\" data-height=\"550\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"11\">这是个很有意思的哥们。</p>\n  <p data-track=\"12\">各种社交媒体翻了一圈，感觉这个人的性格，能完美地用他在GitHub上的<strong>这个头像</strong>表示。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083311_046ec59bbbf29a6f8c8dceee95e9afdd.jpeg\" data-ic=\"false\" data-width=\"458\" data-height=\"290\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"13\"><strong>致力于「调侃」一切事情。</strong></p>\n  <p data-track=\"14\">关于三年内UCSB读完本科，并以4.0满分毕业。他说：<strong>too easy</strong>。</p>\n  <p data-track=\"15\">关于为什么博士经历只持续了两三年，他的回答是：<strong>额……我辍学了</strong>。</p>\n  <p data-track=\"16\">甚至从他的最新X帖子来看，就连爆破Claude Code这件事，好像也只是他日常生活中<strong>找乐子的一部分</strong>。</p>\n  <p data-track=\"17\"><strong>直言太没意思。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083312_17d9ba52f55b4d9299d5f63078c83f91.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"427\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"19\">其实，首个引爆Anthropic大瓜的正是Chaofan Shou，这事儿一点都不让人意外。</p>\n  <p data-track=\"20\">毕竟，找安全漏洞可是这哥们的看家本领。</p>\n  <p data-track=\"21\">根据其个人网站显示，Chaofan是一名<strong>资深白帽</strong>，曾从X、Chrome等巨头产品中挖出一系列漏洞，在安全研究领域贡献颇丰。</p>\n  <p data-track=\"22\">当然，这也不是白干的。</p>\n  <p data-track=\"23\">在2020到2022年期间，他参与了多个漏洞赏金项目，累计获得的赏金总额高达<strong>190万美元</strong>。</p>\n  <p data-track=\"24\">可以说是狠狠捞了一笔。</p>\n  <p data-track=\"25\">以下是他报告的一些代表性漏洞：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083311_da5361d1cdfa65008e271f905d9fe237.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"1022\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"26\">他的整个职业生涯，也一直与安全深度绑定。</p>\n  <p data-track=\"27\">2023年，他以CTO的身份联合创立了<strong>Fuzzland</strong>。</p>\n  <p data-track=\"28\">这是一家专注于Web3安全和高频交易的公司，已成功帮助客户从黑客手中追回超过<strong>3000万美元</strong>的资产。</p>\n  <p data-track=\"29\">后来，Fuzzland被<strong>Solayer Labs</strong>收购，他也顺势成为Solayer的软件工程师，专注于构建高性能的SVM区块链系统。</p>\n  <p data-track=\"30\">在此之前，他是<strong>Veridise</strong>的创始工程师，负责开发面向智能合约和区块链的自动化测试工具。</p>\n  <p data-track=\"31\">再往前追溯，Chaofan还曾在<strong>Salesforce</strong>担任安全工程师，主要参与静态应用安全测试（SAST）、内部网络扫描服务以及数据管道的建设。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083312_dde3e8eaa86c6cc4e656a106a17805ed.png\" data-ic=\"false\" data-width=\"666\" data-height=\"1138\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"32\">与此同时，<strong>Chaofan对投资也抱有极大的热情。</strong></p>\n  <p data-track=\"33\">他曾涉足<strong>量化交易</strong>，主要操作杠杆ETF、合约和期权，方法是基于强化学习和微调过的大模型。</p>\n  <p data-track=\"34\">只不过，和安全领域的辉煌战绩比起来，Chaofan在量化方面似乎<strong>差了点火候。</strong></p>\n  <p data-track=\"35\">这是他对自己这段量化经历的「神评价」：</p>\n  <blockquote>\n   <p data-track=\"36\">最后的结果挺「惊人」的。收益率-92% ……</p>\n  </blockquote>\n  <p data-track=\"37\">Chaofan本科就读于加州大学圣塔芭芭拉分校（UCSB），专业是计算机科学（CS）。</p>\n  <p data-track=\"38\">仅仅花了三年，他便读完了本科，而且还是以<strong>4.0的满绩点</strong>毕业。</p>\n  <p data-track=\"39\">对于这段履历，他也没有丝毫谦虚的意思，<strong>在领英上直言「too easy」。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083311_1904abfa10b504a7932f691c8b021f97.png\" data-ic=\"false\" data-width=\"786\" data-height=\"326\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"40\">博士阶段，Chaofan就读于美国加州大学伯克利分校（UC Berkeley），同样是修读计算机科学。</p>\n  <p data-track=\"41\">但他并没有完成学业，在就读两三年后选择了退学。</p>\n  <p data-track=\"42\">同样没有说明原因，只是<strong>轻描淡写地打出了一串「lol」</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083311_9add8ced0d199f01708e63b5432836c9.jpeg\" data-ic=\"false\" data-width=\"512\" data-height=\"254\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"43\">不过，这哥们此前在国内的经历，公开资料里基本是一片空白。</p>\n  <p data-track=\"44\">小红书上，有网友爆料称Shoufan是自己的高中校友，并表示他的中文名叫<strong>寿超璠</strong>。</p>\n  <p data-track=\"45\">这条评论下方，也有来自五湖四海的网友纷纷「认领」校友卡，并补充说Shoufan高中读的是<strong>上海平和双语学校</strong>。</p>\n  <p data-track=\"46\">根据个人网站，Shoufan早期确实在上海活动，帮助上海市政府发现过一些安全漏洞。</p>\n  <p data-track=\"47\">2018年中国计算机学会的<strong>CCF高校宣传员表彰名单</strong>中，也有相关信息可以佐证。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083312_79f00917552346768eec34e60fc6da33.png\" data-ic=\"false\" data-width=\"492\" data-height=\"54\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"48\">如果还有其他信息，欢迎大家到评论区补充～</p>\n  <p data-track=\"50\">对了，Chaofan Shou的社交媒体很有意思，大家有空可以考古一下。</p>\n  <p data-track=\"51\">关键是，在知道是他扒光了Anthropic的底裤后，再回过头看他之前的言论，简直全是「包袱」。</p>\n  <p data-track=\"52\">感觉这哥们，好像<strong>一直看Anthropic不太顺眼啊……</strong></p>\n  <p data-track=\"53\">昨天才用一条帖子引爆全网，给Anthropic一道晴天霹雳，今天又在回复别人时继续开火，<strong>「两肋插刀」</strong>：</p>\n  <blockquote>\n   <p data-track=\"54\">说实话，看Claude那堆乱七八糟的代码，远不如看OpenCode和Codex的代码有意思。</p>\n  </blockquote>\n  <p data-track=\"55\">简直了，扒光了人家底裤，结果轻飘飘地来了句：<strong>额……也没啥好看的。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083311_532a7f24d625176b879e87a0092cfef3.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"427\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"56\">但要说最重磅的，还得是去年夏天发的这条帖子，完全是这次事件的<strong>爆灯级Call Back。</strong></p>\n  <p data-track=\"57\">当时Claude发布了关于安全审查的新功能，但Chaofan直接开怼，说Anthropic是借着新功能的幌子，<strong>窃取用户的代码库</strong>。</p>\n  <p data-track=\"58\">好家伙，敢情是之前就不对付啊。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260402083311_5f0683667a87f977fe4a64abff24e596.png\" data-ic=\"false\" data-width=\"1080\" data-height=\"1331\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"59\">不过，Claude Code究竟有没有窃取用户代码，现在可能都不重要了。</p>\n  <p data-track=\"60\">重要的是，昨天的Chaofan，的确是凭一己之力助力Anthropic「翻盘」OpenAI——</p>\n  <p data-track=\"61\"><strong>真·彻彻底底地「开源」了一次。</strong></p>\n  <p data-track=\"62\">参考链接：\n   <br>\n   [1]https://www.linkedin.com/in/scff/\n   <br>\n   [2]https://scf.so/</p>\n  <p>&nbsp;</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "25 岁中国安全研究员 Chaofan Shou 通过 source map 提取了 Claude Code 51 万行源码，本文深度揭秘了这位顶级白帽的传奇背景及其与 Anthropic 的过往恩怨。",
+  "oneSentenceSummary": "25 岁中国安全研究员 Chaofan Shou 通过 source map 提取了 Claude Code 51 万行源码，本文深度揭秘了这位顶级白帽的传奇背景及其与 Anthropic 的过往恩怨。",
+  "summary": "本文详细介绍了近期引爆 AI 圈的 Claude Code 源码泄露事件背后的关键人物——25 岁的中国研究员 Chaofan Shou（寿超璠）。他通过分析 60MB 的 source map 成功提取了 51 万行源代码，让 Anthropic 陷入舆论风暴。文章梳理了其惊人的履历：UCSB 满分毕业生、伯克利博士辍学者、Fuzzland 联合创始人，曾通过挖掘 X、Chrome 等产品漏洞获得近 200 万美元赏金。此外，文章还披露了他长期以来对 Anthropic 的批判态度，包括曾指责其借安全审查之名窃取用户代码，这为此次「开盒」事件增添了深层的背景动机。",
+  "mainPoints": [
+    {
+      "point": "25 岁中国研究员 Chaofan Shou 凭一己之力泄露了 Claude Code 核心源码。",
+      "explanation": "通过对 60MB 的 source map 进行逆向分析，他提取并公开了多达 51 万行的源代码，直接将 Anthropic 的技术实现细节暴露在公众面前。"
+    },
+    {
+      "point": "该研究员拥有极其强悍的网络安全实战背景和学术履历。",
+      "explanation": "作为资深白帽，他曾获得高达 190 万美元的漏洞赏金，并创办了 Web3 安全公司 Fuzzland。学术上曾以 4.0 满分从 UCSB 毕业，展现了极高的技术天赋。"
+    },
+    {
+      "point": "此次泄露事件并非偶然，该研究员与 Anthropic 积怨已久。",
+      "explanation": "Shou 此前曾多次公开抨击 Anthropic 侵犯用户隐私和代码所有权，认为其产品逻辑存在误导，此次行动带有明显的个人立场和技术调侃色彩。"
+    }
+  ],
+  "keyQuotes": [
+    "扒光 Anthropic 底裤的人，究竟是谁？答案揭晓——一位年仅 25 岁的中国小伙，Chaofan Shou。",
+    "从 60MB 的 source map 里，扒出来 51 万行 Claude Code 源代码。",
+    "说实话，看 Claude 那堆乱七八糟的代码，远不如看 OpenCode 和 Codex 的代码有意思。",
+    "昨天的 Chaofan，的确是凭一己之力助力 Anthropic「翻盘」OpenAI——真·彻彻底底地「开源」了一次。"
+  ],
+  "tags": [
+    "Claude Code",
+    "Anthropic",
+    "Chaofan Shou",
+    "源码泄露",
+    "网络安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 8,
+  "score": 82,
+  "wordCount": 1848,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775114551000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-02 07:22:31"
+}
