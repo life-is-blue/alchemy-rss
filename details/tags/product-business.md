@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-03 08:13:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-03 11:00:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 产品与商业
 
@@ -62,9 +62,7 @@
 
 ### [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/)
 
-2026-04-02 15:47:39 | 标签: TanStack Start, Elysia, Drizzle ORM, SaaS 架构, 全栈开发
-
-> 这份详细指南概述了一种用于 SaaS 开发的现代全栈架构，超越了基础教程，旨在解决实际生产中的问题。它引入了一个以 TanStack Start 为前端核心、嵌入式 Elysia API 服务器为后端的架构栈，并利用 Drizzle ORM 和 Neon PostgreSQL 作为数据层。作者认为，与 Next.js 相比，这种组合提供了更优越的部署灵活性和更简单的思维模型，主要得益于 Eden Treaty 提供的无缝端到端类型安全，且无需代码生成的繁琐过程。该手册涵盖了从项目结构、数据库模式设计到 API 实现以及使用 Docker 进行本地开发工作流的所有内容。
+2026-04-02 15:47:39
 
 
 

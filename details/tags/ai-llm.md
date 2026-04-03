@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-03 08:13:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-03 11:00:14 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,25 +8,19 @@
 
 ### [Lenny’s-Podcast-中关于智能体工程的对话精华](https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything)
 
-2026-04-02 20:40:47 | 标签: 智能体工程, AI 编码, 软件工程, Vibe Coding, 生产力
-
-> 在这篇 Lenny’s Podcast 的访谈摘要中，Simon Willison 探讨了“2025 年 11 月的拐点”，当时 GPT 5.1 和 Claude 4.5 等模型使自主编码智能体真正变得可行。他引入了“黑暗工厂”（Dark Factories，指代码很少被人阅读的高度自动化软件生产）的概念，并解释了开发者的角色如何从编写代码转变为监督多个并行智能体。Willison 强调了这种新工作流程带来的精神疲惫、传统软件估算的失效，以及职业生涯中期工程师面临的独特风险，并最终指出人类的“能动性”（agency）仍然是该行业不可替代的核心。
+2026-04-02 20:40:47
 
 
 
 ### [Gemma-4：同等规模下最强大的开源模型](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/)
 
-2026-04-02 17:53:18 | 标签: Gemma 4, 开源模型, LLM, Google DeepMind, 混合专家模型
-
-> Gemma 4 是 Google 最新一代开源模型，旨在提供业界领先的“参数智能比”。该系列包含四个变体：适用于移动设备和物联网的 Effective 2B (E2B) 和 4B (E4B)、用于低延迟推理的 26B 混合专家模型 (MoE)，以及追求极致质量的 31B 稠密模型。主要功能包括高级多步推理、对智能体工作流（函数调用、JSON 输出）的原生支持、多模态处理（视觉和音频），以及扩展至 256K 的上下文窗口。Gemma 4 以 Apache 2.0 许可发布，针对从消费级 GPU 到移动设备的各种硬件进行了优化。
+2026-04-02 17:53:18
 
 
 
 ### [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/)
 
-2026-04-02 17:51:54 | 标签: 开源模型, AI 智能体, LLM 评估, GLM-5, MiniMax M2.7
-
-> LangChain 使用 Deep Agents 测试框架进行的最新评估表明，开源权重模型（特别是 GLM-5 和 MiniMax M2.7）在工具使用、文件操作和指令遵循等基础智能体任务中，现已能媲美闭源前沿模型（如 Claude Opus 和 GPT-5.4）的性能。报告强调，当部署在 Baseten 或 Groq 等优化基础设施上时，开源模型的成本效益提高了 8-10 倍，且速度显著提升。此外，LangChain 更新了其 Deep Agents SDK 和 CLI，实现了无缝模型集成，并支持运行时模型切换等高级模式，以实现混合规划-执行工作流。
+2026-04-02 17:51:54
 
 
 
@@ -4508,25 +4502,19 @@
 
 ### [KernelEvolve：Meta-的排序工程师智能体如何优化-AI-基础设施](https://engineering.fb.com/2026/04/02/developer-tools/kernelevolve-how-metas-ranking-engineer-agent-optimizes-ai-infrastructure/)
 
-2026-04-02 20:15:38 | 标签: KernelEvolve, AI 基础设施, 内核优化, Meta, 智能体 AI
-
-> Meta 推出了 KernelEvolve，这是一个旨在解决针对 NVIDIA GPU、AMD GPU 和 Meta 自研 MTIA 芯片等多种 AI 硬件进行手动内核优化瓶颈的智能体系统。与传统的“一次性”LLM 代码生成不同，KernelEvolve 将内核优化视为一个持续的搜索问题。它采用树搜索引擎、检索增强知识库和自动化评估流水线来探索各种实现方案，从而带来了显著的吞吐量提升（例如，广告模型推理性能提升了 60%）。该系统有效地弥合了高级模型操作与高效、特定于芯片的指令之间的鸿沟，显著减少了硬件集成所需的工程工作量。
+2026-04-02 20:15:38
 
 
 
 ### [为什么我们要为-AI-时代重新思考缓存机制](https://blog.cloudflare.com/rethinking-cache-ai-humans/)
 
-2026-04-02 14:00:01 | 标签: CDN, 缓存算法, AI 爬虫, Cloudflare, 系统设计
-
-> 本文探讨了 AI 爬虫流量的激增如何从根本上挑战传统的 CDN 缓存策略。与人类用户不同，用于 RAG 和模型训练的 AI 机器人表现出激进、大容量且连续的扫描行为，专门针对极少被访问的长尾内容。这种行为会导致严重的缓存抖动，使标准的 LRU（最近最少使用）算法效率低下，并增加源服务器的负载。Cloudflare 与苏黎世联邦理工学院（ETH Zurich）合作，提出了 AI 感知缓存解决方案，包括采用更具弹性的淘汰算法（如 SIEVE 和 S3FIFO），以及根据延迟敏感度和任务类型将人类流量与 AI 流量分离的分层架构。
+2026-04-02 14:00:01
 
 
 
 ### [面向编程智能体用户的“约束工程”](https://martinfowler.com/articles/harness-engineering.html)
 
-2026-04-02 13:10:00 | 标签: AI 智能体, 约束工程, 软件工程, LLM, 编程助手
-
-> 在这篇开创性的文章中，Martin Fowler 探讨了 AI 编程智能体的“约束工程”概念，其核心公式为：智能体 = 模型 + 约束（Agent = Model + Harness）。虽然编程智能体自带编排功能，但用户必须构建“外部约束”来确保质量并减少审查工作量。Fowler 将约束组件分为两个方向：引导（Guides，在智能体行动前进行前馈控制）和传感器（Sensors，在行动后实现自我修正的反馈控制）。这些组件还根据执行类型进行了分类：计算型（Computational，如 linter 和类型检查器等确定性、快速的工具）和推理型（Inferential，使用 LLM 作为评判者的概率...
+2026-04-02 13:10:00
 
 
 
@@ -7988,9 +7976,7 @@
 
 ### [一文读懂-Harness-Engineering：从-14-篇工程文章中，寻找那个让-AI-不再离经叛道的壳｜Hao-好聊趋势](https://mp.weixin.qq.com/s?__biz=Mjc1NjM3MjY2MA==&mid=2691566633&idx=1&sn=e8c2ba401e2a6f4fee1f8583159f5ecd)
 
-2026-04-02 07:22:00 | 标签: Harness Engineering, AI Agent, Anthropic, Claude Code, 工程实践
-
-> 文章系统性地梳理了 2025-2026 年间 AI Agent 应用层的关键演进——Harness Engineering（约束工程）。作者将 Harness 比作汽车的变速箱和制动器，认为其核心价值在于通过外部工程手段约束 AI 的「离经叛道」。文章将 Harness 演进分为三层：第一层通过结构化记忆和「仓库即现实」原则管住流程；第二层利用状态机和并发控制解决多 Agent 协作的无政府状态；第三层引入对抗性验证和沙盒隔离戳破模型的盲目自信。通过对 Anthropic 等头部厂商的观察，作者指出 Harness 的本质是针对模型短板的「补偿面」，随着模型能力增强，冗余的补偿组件将被逐步拆除...
+2026-04-02 07:22:00
 
 
 
@@ -11416,33 +11402,25 @@
 
 ### [Gemma-4：同等字节下最强的开源模型](https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything)
 
-2026-04-02 18:28:54 | 标签: Gemma 4, Google DeepMind, 开源模型, LLM, SVG 生成
-
-> Simon Willison 对 Google 发布的 Gemma 4 进行了实测分析。此次发布包含四款具备视觉能力、基于 Apache 2.0 许可的推理模型（2B、4B、31B 和 26B MoE）。他探讨了通过逐层嵌入（PLE）实现设备端高效运行的“有效”参数规模（E2B/E4B）概念。文章详细介绍了使用 LM Studio 和 Google AI Studio API 进行的实测，特别是通过让模型生成“鹈鹕骑自行车”的 SVG 代码来评估其空间推理能力，并指出随着模型规模的增加，质量有显著提升，同时也发现了本地 GGUF 版本中早期实现存在的 Bug。
+2026-04-02 18:28:54
 
 
 
 ### [Moonlake：因果世界模型应该是多模态、交互式且高效的-——-对话-Chris-Manning-和-Fan-yun-Sun](https://www.latent.space/p/moonlake)
 
-2026-04-02 17:55:29 | 标签: 世界模型, 因果 AI, Chris Manning, 交互式模拟, 符号推理
-
-> 本文深入探讨了 NLP 先驱 Chris Manning 和 Fan-yun Sun 关于 Moonlake AI 在世界模型方面的独特论点。他们认为，像 Sora 或 Genie 这样的当前视频生成模型缺乏真正的因果理解和交互性。Moonlake 的方法强调“结构胜过规模”，利用符号推理轨迹（包括几何、物理和逻辑）来构建无限的、多人参与的交互式世界。通过利用游戏引擎进行引导，他们旨在提供训练具身智能体所需的动作条件化数据。讨论还探讨了 Manning 的符号集成智能观与 Yann LeCun 以视觉为中心的 JEPA 框架之间的哲学分歧，强调了语义抽象在长期规划中的效率。
+2026-04-02 17:55:29
 
 
 
 ### [《中国人工智能开源的底气和愿景》对谈实录](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247506781&idx=1&sn=575ba01bdb848ab34594a5aab35aa386)
 
-2026-04-02 10:34:00 | 标签: AI 开源, 大模型, 具身智能, 系统优化, 算力网络
-
-> 本文为 2026 年魔搭开发者大会圆桌对谈实录。王怀民院士与来自清华、北大、浙大、智源及智元机器人的专家，共同分析了中国 AI 开源的现状与未来。对谈指出，中国开源大模型在全球权重使用量已达 30%，在 Token 调用量上亦表现卓越。专家们认为，中国核心底气在于深厚的制造业基础、海量应用场景倒逼出的系统级优化能力（如 FlagOS、PD 分离架构等）以及人才协同优势。未来五年，中国 AI 开源将从代码层面的 Open Source 转向资源汇聚的 Open Resource，推动 AI 在具身智能、物理世界实现「平权」与「共生」，并尝试建立基于 Token 的新型算力协议与商业文明。
+2026-04-02 10:34:00
 
 
 
 ### [OpenAI-收购-TBPN](https://openai.com/index/openai-acquires-tbpn)
 
-2026-04-02 10:30:00 | 标签: OpenAI, TBPN, 收购, 科技媒体, AI 战略
-
-> OpenAI 宣布收购知名每日直播科技脱口秀及媒体公司 TBPN。这一战略举措标志着其脱离了传统的企业传播模式，旨在为与开发者和用户进行对话创造一个专属空间。TBPN 在并入 OpenAI 战略部门的同时，将保持其编辑独立性。除了媒体制作外，OpenAI 还打算利用 TBPN 团队在营销和传播方面的专业知识，更好地阐述 AI 技术对社会的影响。
+2026-04-02 10:30:00
 
 
 
@@ -11466,17 +11444,13 @@
 
 ### [在-Strands-Evals-中模拟真实用户以评估多轮-AI-智能体-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/simulate-realistic-users-to-evaluate-multi-turn-ai-agents-in-strands-evals/)
 
-2026-04-02 09:34:02 | 标签: AI 智能体, 多轮评估, Strands Evals, LLM, 用户模拟
-
-> 本文探讨了在生产环境中评估 AI 智能体的关键挑战，即交互通常是多轮且动态的，而非单轮的。文章介绍了 Strands Evaluation SDK 中的 ActorSimulator，这是一种能够以编程方式生成具有特定目标且一致的用户画像的工具。与静态的输入/输出测试不同，该模拟器能根据智能体的输出进行自适应响应，保持用户画像的一致性并跟踪目标完成情况。文中详细介绍了模拟器的架构，提供了 Python 实现示例，并展示了与 OpenTelemetry 的集成以捕获详细的执行轨迹，为人工测试提供了一种可扩展的替代方案。
+2026-04-02 09:34:02
 
 
 
 ### [Harness-Payment，开启-Agent-的自主支付时代｜专访-Clink-创始人](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649106919&idx=1&sn=31838c8b36738c64c959008f3b6aa1af)
 
-2026-04-02 08:59:00 | 标签: AI Agent, Agentic Payment, 金融科技, PCI 认证, 支付基础设施
-
-> 本文是对 Clink 创始人 Patrick 的深度专访。文章从 HTTP 402 错误码的背景切入，探讨了当支付发起者从人类转向 AI Agent 时，支付体系面临的根本性变革。不同于主流的 Web3 或稳定币方案，Clink 选择死磕 PCI 认证和法币合规，主张「让 Agent 适配世界」而非重建体系。Patrick 详细介绍了其产品 Agentic Payment 的核心逻辑：通过 Skill 授权、虚拟卡包和「支付围栏」（Harness）实现预算控制与风险熔断，并分享了 Clink 团队如何利用 AI Agent 提升开发效率的 AI Native 实践。
+2026-04-02 08:59:00
 
 
 
@@ -11518,9 +11492,7 @@
 
 ### [在-AWS-上扩展地震基础模型：使用-Amazon-SageMaker-HyperPod-进行分布式训练并扩展上下文窗口-|-Amazon-Web-Services](https://aws.amazon.com/blogs/machine-learning/scaling-seismic-foundation-models-on-aws-distributed-training-with-amazon-sagemaker-hyperpod-and-expanding-context-windows/)
 
-2026-04-02 05:30:57 | 标签: SageMaker HyperPod, 分布式训练, Vision Transformer, 地震基础模型, DeepSpeed
-
-> 本文详细介绍了 TGS 与 AWS 生成式 AI 创新中心之间的技术合作，旨在为能源勘探扩展基于视觉 Transformer (Vision Transformer) 的地震基础模型 (SFM)。通过利用 Amazon SageMaker HyperPod 和 EC2 P5 实例，团队解决了处理 3D 体积数据时的计算密集型问题。关键优化包括实施直接 S3 数据流式传输管道，与 FSx for Lustre 相比，存储成本降低了 90%，并选择了 DeepSpeed ZeRO-2 以获得最佳训练吞吐量。此外，Ring Attention 和上下文并行技术的实施将模型的上下文窗口从 10 万 t...
+2026-04-02 05:30:57
 
 
 
@@ -11562,9 +11534,7 @@
 
 ### [我用-1400-年前的三省六部制，搞了一套很酷的多-Agent-协同方案。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647681276&idx=1&sn=3de558e3dc50c467321022e9617b07d0)
 
-2026-04-02 02:20:00 | 标签: Multi-Agent, Accio Work, 三省六部制, 一人公司, 智能体协同
-
-> 文章介绍了一款由阿里国际站推出的多 Agent 协同产品 Accio Work。作者别出心裁地借鉴隋唐时期的「三省六部制」，将不同职能的 AI Agent 分别设定为中书省（策划）、门下省（审核）、尚书省（执行管理）及六部（具体执行），构建了一套严密的协同体系。通过模拟开发一款「心流码字器」产品的全过程，展示了多 Agent 协作在竞品分析、法务合规、财务建模及品牌策划等方面的深度与效率。此外，作者还进行了一场包含 GPT-5.4、Opus 4.6 等顶级模型的「AI 圆桌」实验，探讨了多视角并行思考对解决复杂议题的价值，并指出角色制衡是抑制 AI 谄媚、提升决策质量的关键。
+2026-04-02 02:20:00
 
 
 
@@ -34340,9 +34310,7 @@
 
 ### [Fragments：4-月-2-日](https://martinfowler.com/fragments/2026-04-02.html)
 
-2026-04-02 16:42:00 | 标签: 技术债务, 认知债务, AI 智能体, 软件验证, LLM
-
-> 在这篇对当前技术变革的综合分析中，Martin Fowler 审视了 AI 如何重新定义软件工程。他引入了一个系统健康的三层模型——技术债务、认知债务和意图债务——用以描述团队如何失去对系统的理解和控制。他讨论了 AI 认知的“系统 3”理论，警告人们不要陷入“认知投降”（对 AI 的被动信任），而应采取“认知卸载”（战略性委派）。核心论点在于，随着 AI 智能体使代码生成变得“免费”，工程的主要成本和责任已转移到验证和定义正确性上。Fowler 总结道，编程的未来不在于语法，而在于人类主导创建有意义的抽象和“通用语言”（Ubiquitous Language），以揭示解决方案的意图和结构。
+2026-04-02 16:42:00
 
 
 
@@ -34378,9 +34346,7 @@
 
 ### [AI-指数级进化时代的产品管理](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278860&idx=1&sn=54fc7b48572bb519431e0f10a96445c9)
 
-2026-04-02 01:04:00 | 标签: 产品管理, Claude Code, Anthropic, AI 工作流, 原型驱动
-
-> 本文由 Anthropic 的 Claude Code 产品负责人 Cat Wu 撰写，探讨了 AI 时代的指数级进化如何瓦解传统产品管理的底层假设。作者指出，传统 PM 习惯于在技术约束稳定的前提下制定长期路线图，但 AI 能力的快速迭代要求团队必须重新组织。文章提出了四个核心转变：以短周期「支线任务」取代长期路线图；用原型演示和评测取代繁琐的文档；每当新模型发布时重新审视已有功能；以及坚持「做最简单的事」以保持系统简洁，从而快速适配下一代模型的能力。PM 的角色正从严格掌控体验转向识别核心底线并学会「放手」，以应对如同冲浪般的 AI 开发节奏。
+2026-04-02 01:04:00
 
 
 
@@ -48578,25 +48544,19 @@ http://antirez.com/news/162
 
 ### [给-OpenClaw-做硬件没前途，但给上下文系统做，是值得的](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247523622&idx=1&sn=46b99f3559654165d91e2ceea9bbb4e5)
 
-2026-04-02 10:41:00 | 标签: AI 硬件, 上下文系统, 本地推理, Agent, HippoGenius
-
-> 本文是对泛灵人工智能团队的深度访谈，探讨了其 AI 硬件 HippoGenius 的设计哲学与商业逻辑。该设备采用 x86 芯片与英伟达推理芯片，支持本地运行百亿级参数模型，核心定位是作为用户的「超级节点」和上下文路由系统。团队认为，AI 硬件的真正价值不在于复刻手机功能，而在于通过本地算力解决云端 Token 成本高、隐私难保障及上下文匮乏的问题。文章详细介绍了产品如何通过录屏、录音及注意力感知技术沉淀个人 SOP（标准作业程序），并从 ToB 验证转向 ToC 市场的路径，以及对未来 A2A（Agent to Agent）经济范式的思考。
+2026-04-02 10:41:00
 
 
 
 ### [AI-代码的“屎山危机”才刚刚开始](https://mp.weixin.qq.com/s?__biz=MjM5OTE0ODA2MQ==&mid=2650996371&idx=1&sn=328592727d90e46057ca52e0321d5398)
 
-2026-04-02 09:01:00 | 标签: Vibe Coding, AI 编程, 软件工程, 开源社区, 网络安全
-
-> 文章围绕 Andrej Karpathy 提出的「氛围编程」（Vibe Coding）概念展开，指出这种“只求感觉、不看代码”的开发模式虽然极大地降低了编程门槛，却引发了严重的副作用。首先是安全与质量危机，大量 AI 生成的应用存在严重安全漏洞和隐私泄露；其次是生态冲击，App Store 被低质应用淹没，开源社区则面临 AI 生成的虚假漏洞报告和低质 PR 的“DDoS 攻击”。此外，研究表明 AI 辅助开发可能存在「效率幻觉」，资深开发者的实际任务完成时间反而因审查成本增加而延长。文章最后强调，AI 虽能替代打字，但无法替代专业判断，软件开发的架构、安全和可维护性在 AI 时代愈发重要。
+2026-04-02 09:01:00
 
 
 
 ### [2026-04-02-Hacker-News-热门话题汇总](https://supertechfans.com/cn/post/2026-04-02-HackerNews/)
 
-2026-04-02 07:52:03 | 标签: Hacker News, Claude Code, OpenAI, Cloudflare, 大语言模型
-
-> 文章精选了 Hacker News 上的十大热点话题。核心内容包括：基于泄露源码对 Claude Code 内部 Agent 循环、53 个内置工具及隐藏功能的深度剖析；一种利用彩色贴纸管理电子元件的极简物理库存系统；OpenAI 以 8520 亿美元估值完成融资的商业动态；Cloudflare 发布的旨在通过沙箱化解决插件安全问题的开源 CMS EmDash；以及内存占用极低的商用 1-bit 大模型 Bonsai。此外，还涉及 GitHub 可用性争议、OkCupid 隐私丑闻及 LocalStack 的开源替代品 MiniStack。
+2026-04-02 07:52:03
 
 
 
@@ -63410,41 +63370,31 @@ http://antirez.com/news/162
 
 ### [使用-LLM-构建个人知识库](https://x.com/karpathy/status/2039805659525644595)
 
-2026-04-02 20:42:21 | 标签: LLM, 知识库, Obsidian, 工作流, AI Agent
-
-> Karpathy 详细介绍了一套利用 LLM 管理研究知识的复杂工作流。他描述了将原始数据导入目录，利用 LLM 将其编译为结构化 Markdown Wiki，并使用 Obsidian 作为查看和交互的 IDE 的过程。该系统支持复杂的问答、可视化和自动数据完整性检查。他认为这种方法已具备产品化条件，超越了简单的 RAG，迈向了自主知识管理。
+2026-04-02 20:42:21
 
 
 
 ### [隆重介绍-Cursor-3：全新的-Agent-优先-IDE-界面](https://x.com/leerob/status/2039771986180649010)
 
-2026-04-02 18:28:33 | 标签: Cursor, AI 编程, IDE, 软件工程, 产品发布
-
-> Lee Robinson 详细介绍了 Cursor 3 的开发幕后故事。新版本引入了重新设计的界面，将 Agent 对话视为标准标签页，摆脱了以往 VS Code UI 的限制。此次更新旨在平衡 Agent 驱动的编码体验与传统 IDE 的深度，同时解决了性能问题，并对核心架构进行了重构，以更好地支持本地和云端 Agent。
+2026-04-02 18:28:33
 
 
 
 ### [推出-Cursor-3：下一代-AI-代码编辑器](https://x.com/cursor_ai/status/2039768512894505086)
 
-2026-04-02 18:14:45 | 标签: Cursor, Cursor 3, AI 编程, AI Agent, 软件开发
-
-> Cursor 正式发布了 Cursor 3，这是其 AI 代码编辑器的重大更新。新版本专注于简洁性和性能提升，专为未来由 Agent 处理大部分代码生成的场景而架构，同时保留了传统开发环境的深度与掌控力。
+2026-04-02 18:14:45
 
 
 
 ### [Google-DeepMind-发布-Gemma-4-开源模型](https://x.com/demishassabis/status/2039736628659269901)
 
-2026-04-02 16:08:03 | 标签: Gemma 4, Google DeepMind, LLM, MoE, 边缘 AI
-
-> Google DeepMind 发布了 Gemma 4，这是一套全新的开源模型系列，提供四种规格：用于高性能的 31B 稠密（dense）模型、用于低延迟的 26B MoE 模型，以及针对边缘设备优化的 2B 和 4B 模型。此次发布扩展了 Gemma 生态系统，为开发者的各种需求提供了灵活且高质量的开源模型。
+2026-04-02 16:08:03
 
 
 
 ### [隆重推出-Qwen3.6-Plus：迈向真实世界智能体！](https://x.com/Alibaba_Qwen/status/2039705104723611829)
 
-2026-04-02 14:02:47 | 标签: Qwen, Qwen3.6-Plus, AI 智能体, 多模态, VibeCoding
-
-> Qwen 正式推出 Qwen3.6-Plus，这是他们在开发原生多模态智能体道路上的一个重要里程碑。主要升级包括更智能的智能体编程执行、更敏锐的多模态感知、领先的通用性能，以及通过 API 默认提供的 1M 上下文窗口。此次发布旨在为现实世界的开发者提供坚实的基础，并支持“Vibe Coding”范式。
+2026-04-02 14:02:47
 
 
 
