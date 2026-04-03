@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-03 16:15:08 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-03 18:13:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -446,17 +446,13 @@
 
 ### [腾讯工程师重构-Linux-内核-Swap-子系统深度解析](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695142&idx=2&sn=472a19c5c28b7e7f4581e5d36c4c9cf9)
 
-2026-04-03 00:46:00 | 标签: Linux 内核, 内存管理, Swap 子系统, TencentOS, 性能优化
-
-> 文章系统性地回顾了 Linux 内核 Swap 子系统近两年的重大变革。由于历史原因，Swap 子系统代码极其复杂，腾讯工程师 Kairui Song 通过引入 swap table 结构（已于 Linux 6.18 合并），成功替代了原有的 XArray，实现了 5%-20% 的性能提升。随后在 Linux 7.0/7.1 中进一步推动移除 swap map，将引用计数整合进 swap table，节省了约 30% 的元数据内存开销。文章还深入探讨了社区关于「虚拟 Swap 空间」的两种方案碰撞（Meta 的 swp_desc 与腾讯/Google 的 Ghost Swapfile），并介绍...
+2026-04-03 00:46:00
 
 
 
 ### [优化-Vercel-Sandbox-快照---Vercel](https://vercel.com/blog/optimizing-vercel-sandbox-snapshots)
 
-2026-04-02 14:02:03 | 标签: Vercel, 性能优化, Firecracker, S3, Go
-
-> 本文详细介绍了优化 Vercel Sandbox 快照恢复的工程历程。团队最初优先考虑可靠性，却面临严重的性能瓶颈，p75 恢复时间超过 40 秒。他们通过多管齐下的方法实现了亚秒级性能：利用 Range 请求头并行下载 S3 数据，通过多个 Go goroutine 分发解压任务，并将数据直接从 S3 流式传输到解码器，消除了中间磁盘 I/O。此外，通过实现带有 LRU 淘汰策略的本地 NVMe 磁盘缓存来存储解压后的镜像，他们实现了 95% 的缓存命中率，从而在大多数 Sandbox 启动时有效地绕过了网络和解压开销。
+2026-04-02 14:02:03
 
 
 

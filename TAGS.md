@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-03 16:15:08 | [返回首页](/README.md)
+**更新时间**: 2026-04-03 18:13:00 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10756)
+- [AI & 大模型](#ai-llm) (10757)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (752)
 - [DevOps](#devops) (485)
@@ -43,7 +43,7 @@
 - [MiniMax-Office-Skills：开源一套生产级办公文档引擎](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488238&idx=1&sn=76aaec3e7e688c31cd8f40b9d0080e70) - AI 精选
 - [Moda-如何利用-Deep-Agents-构建生产级-AI-设计智能体](https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/) - AI 精选
 
-- [查看全部 10756 篇...](/details/tags/ai-llm.md)
+- [查看全部 10757 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
