@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-03 06:08:51 | [返回首页](/README.md)
+**更新时间**: 2026-04-03 08:13:37 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10712)
+- [AI & 大模型](#ai-llm) (10737)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (752)
-- [DevOps](#devops) (482)
-- [产品与商业](#product-business) (35)
-- [其他](#other) (5297)
+- [DevOps](#devops) (483)
+- [产品与商业](#product-business) (36)
+- [其他](#other) (5301)
 
 
 ---
@@ -22,10 +22,13 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Lenny’s-Podcast-中关于智能体工程的对话精华](https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything) - AI 精选
+- [Gemma-4：同等规模下最强大的开源模型](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/) - AI 精选
+- [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
 - [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
+- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
@@ -39,11 +42,8 @@
 - [Anthropic-揭秘-Agent-长线开发架构：引入-GAN-机制，Claude-自主撸出全栈应用](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957) - AI 精选
 - [MiniMax-Office-Skills：开源一套生产级办公文档引擎](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488238&idx=1&sn=76aaec3e7e688c31cd8f40b9d0080e70) - AI 精选
 - [Moda-如何利用-Deep-Agents-构建生产级-AI-设计智能体](https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/) - AI 精选
-- [快速正则搜索：为智能体工具建立文本索引-·-Cursor](https://cursor.com/blog/fast-regex-search) - AI 精选
-- [现代-LLM-中注意力机制变体的可视化指南](https://magazine.sebastianraschka.com/p/visual-attention-variants) - AI 精选
-- [针对数据中心的攻击、各尺寸的-Qwen3.5、DeepSeek-的华为布局，等等...](https://www.deeplearning.ai/the-batch/issue-345) - AI 精选
 
-- [查看全部 10712 篇...](/details/tags/ai-llm.md)
+- [查看全部 10737 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -129,7 +129,7 @@
 - [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 
-- [查看全部 482 篇...](/details/tags/devops.md)
+- [查看全部 483 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -146,6 +146,7 @@
 - [软件正在吞噬劳动力：直接取代人类，捕获前所未有的经济价值](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247508235&idx=1&sn=4fa5c14ecd9facf2cd7d627ec00e93aa) - AI 更多
 - [从零到-8-亿美元：一个-23-岁销售天才的获客密码](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247489590&idx=1&sn=b8422f29fa82348016afb395e9c7201e) - AI 更多
 - [23-岁大学生拒绝所有-VC，0-融资做到-600-万美金-ARR，为什么"简单粗暴"的产品反而最赚钱？](https://mp.weixin.qq.com/s?__biz=Mzg3NDc2MjQxMg==&mid=2247487898&idx=1&sn=d7797713346ed45252fe3b7a9dcd1136) - AI 更多
+- [如何使用-TanStack-Start、Elysia-和-Neon-构建全栈-SaaS-应用](https://www.freecodecamp.org/news/full-stack-saas-tanstack-start-elysia-neon/) - 编程 更多
 - [MySQL，InnoDB-的高并发，究竟是不是因为-MVCC？（第-5-讲，长文收藏）](https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651979807&idx=1&sn=8f513fa8345d591dec03f94ecfba23b4) - 编程 更多
 - [还是打不过？为什么-Uber-要从-Postgres-迁移到-MySQL？](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633487&idx=1&sn=c02694dace9fb836f7f479247151e7b6) - 编程 更多
 - [并发丢数据深度剖析：JED-的锁机制与事务实战踩坑及解决方案](https://mp.weixin.qq.com/s?__biz=MzU1MzE2NzIzMg==&mid=2247501465&idx=1&sn=c2b7490ce4c41d5cd719f990685a3efb) - 编程 更多
@@ -156,9 +157,8 @@
 - [MockMvcTester：Spring-控制器测试的利器](https://blog.jetbrains.com/idea/2025/04/a-practical-guide-to-testing-spring-controllers-with-mockmvctester/) - 编程 更多
 - [C++-开发环境搭建利器：CMake、vcpkg、Docker-和-GitHub-Copilot-详解](https://www.freecodecamp.org/news/c-setup-and-installation-tools-cmake-vcpkg-docker-and-copilot/) - 编程 更多
 - [复星创富投资心法：慢半步、快半拍，做好产品平衡](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866663&idx=1&sn=aff97a4f4576ac0e9a279d09def31808) - 商业 更多
-- [独角兽创始人-Jason-Cohen：产品停止增长时，必须问的-5-个问题丨-Lenny's-Podcast](https://mp.weixin.qq.com/s?__biz=Mzk5MDkxNDU4Nw==&mid=2247485344&idx=1&sn=d696495cf9069e92f112d58b0705bfd5) - 商业 更多
 
-- [查看全部 35 篇...](/details/tags/product-business.md)
+- [查看全部 36 篇...](/details/tags/product-business.md)
 
 
 ## <a id="other"></a>其他
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5297 篇...](/details/tags/other.md)
+- [查看全部 5301 篇...](/details/tags/other.md)
 
 

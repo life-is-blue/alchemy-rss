@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d810d104",
+  "title": "Gemma 4：同等字节下最强的开源模型",
+  "url": "https://simonwillison.net/2026/Apr/2/gemma-4/#atom-everything",
+  "date": "2026-04-02 18:28:54",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">2nd April 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Apr/2/gemma-4/\">\n    <p><strong><a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/\">Gemma 4: Byte for byte, the most capable open models</a></strong>. Four new vision-capable Apache 2.0 licensed reasoning LLMs from Google DeepMind, sized at 2B, 4B, 31B, plus a 26B-A4B Mixture-of-Experts.</p>\n    <p>Google emphasize \"unprecedented level of intelligence-per-parameter\", providing yet more evidence that creating small useful models is one of the hottest areas of research right now.</p>\n    <p>They actually label the two smaller models as E2B and E4B for \"Effective\" parameter size. The system card explains:</p>\n    <blockquote>\n     <p>The smaller models incorporate Per-Layer Embeddings (PLE) to maximize parameter efficiency in on-device deployments. Rather than adding more layers or parameters to the model, PLE gives each decoder layer its own small embedding for every token. These embedding tables are large but are only used for quick lookups, which is why the effective parameter count is much smaller than the total.</p>\n    </blockquote>\n    <p>I don't entirely understand that, but apparently that's what the \"E\" in E2B means!</p>\n    <p>I tried them out using the GGUFs for <a href=\"https://lmstudio.ai/models/gemma-4\">LM Studio</a>. The 2B (4.41GB), 4B (6.33GB) and 26B-A4B (17.99GB) models all worked perfectly, but the 31B (19.89GB) model was broken and spat out <code>\"---\\n\"</code> in a loop for every prompt I tried.</p>\n    <p>The succession of <a href=\"https://gist.github.com/simonw/12ae4711288637a722fd6bd4b4b56bdb\">pelican quality</a> from 2B to 4B to 26B-A4B is notable:</p>\n    <p>E2B:</p>\n    <p><img alt=\"Two blue circles on a brown rectangle and a weird mess of orange blob and yellow triangle for the pelican\" src=\"https://static.simonwillison.net/static/2026/gemma-4-2b-pelican.png\"></p>\n    <p>E4B:</p>\n    <p><img alt=\"Two black wheels joined by a sort of grey surfboard, the pelican is semicircles and a blue blob floating above it\" src=\"https://static.simonwillison.net/static/2026/gemma-4-4b-pelican.png\"></p>\n    <p>26B-A4B:</p>\n    <p><img alt=\"Bicycle has the right pieces although the frame is wonky. Pelican is genuinely good, has a big triangle beak and a nice curved neck and is clearly a bird that is sitting on the bicycle\" src=\"https://static.simonwillison.net/static/2026/gemma-4-26b-pelican.png\"></p>\n    <p>(This one actually had an SVG error - \"error on line 18 at column 88: Attribute x1 redefined\" - but after <a href=\"https://gist.github.com/simonw/12ae4711288637a722fd6bd4b4b56bdb?permalink_comment_id=6074105#gistcomment-6074105\">fixing that</a> I got probably the best pelican I've seen yet from a model that runs on my laptop.)</p>\n    <p>Google are providing API access to the two larger Gemma models via their <a href=\"https://aistudio.google.com/prompts/new_chat?model=gemma-4-31b-it\">AI Studio</a>. I added support to <a href=\"https://github.com/simonw/llm-gemini\">llm-gemini</a> and then <a href=\"https://gist.github.com/simonw/f9f9e9c34c7cc0ef5325a2876413e51e\">ran a pelican</a> through the 31B model using that:</p>\n    <pre><code>llm -m gemini/gemma-4-31b-it 'Generate an SVG of a pelican riding a bicycle'\n</code></pre>\n    <p>Pretty good, though it is missing the front part of the bicycle frame:</p>\n    <p><img alt=\"Motion blur lines, a mostly great bicycle albeit missing the front part of the frame. Pelican is decent. \" src=\"https://static.simonwillison.net/static/2026/gemma-4-31b-pelican.png\"></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9404/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 评测了 Google 的 Gemma 4 开源模型，重点介绍了其通过逐层嵌入（Per-Layer Embeddings）实现的参数效率，并通过 SVG 生成测试了其推理能力。",
+  "oneSentenceSummary": "Simon Willison 评测了 Google 的 Gemma 4 开源模型，重点介绍了其通过逐层嵌入（Per-Layer Embeddings）实现的参数效率，并通过 SVG 生成测试了其推理能力。",
+  "summary": "Simon Willison 对 Google 发布的 Gemma 4 进行了实测分析。此次发布包含四款具备视觉能力、基于 Apache 2.0 许可的推理模型（2B、4B、31B 和 26B MoE）。他探讨了通过逐层嵌入（PLE）实现设备端高效运行的“有效”参数规模（E2B/E4B）概念。文章详细介绍了使用 LM Studio 和 Google AI Studio API 进行的实测，特别是通过让模型生成“鹈鹕骑自行车”的 SVG 代码来评估其空间推理能力，并指出随着模型规模的增加，质量有显著提升，同时也发现了本地 GGUF 版本中早期实现存在的 Bug。",
+  "mainPoints": [
+    {
+      "point": "Gemma 4 引入了逐层嵌入（PLE）以最大化参数效率。",
+      "explanation": "“有效”参数计数（E2B、E4B）是通过为每个解码器层提供其专属的小型嵌入表来实现的，从而在适合端侧部署的同时，实现了更高的单位参数智能水平。"
+    },
+    {
+      "point": "这些模型通过 SVG 生成任务展示了强大的空间推理能力。",
+      "explanation": "通过“鹈鹕骑自行车”基准测试表明，虽然 2B 和 4B 模型在处理复杂几何图形时较为吃力，但 26B-A4B 和 31B 模型生成的 SVG 效果是目前本地可运行模型中最好的之一。"
+    },
+    {
+      "point": "实际部署揭示了社区格式中存在的早期稳定性问题。",
+      "explanation": "虽然 2B、4B 和 26B MoE 模型在 LM Studio 中运行良好，但 31B GGUF 版本出现了故障循环，这凸显了验证模型量化和实现的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "Google 强调了“前所未有的单位参数智能水平”，这进一步证明了创建小型实用模型是当前最热门的研究领域之一。",
+    "PLE 为每个解码器层的每个 Token 提供其专属的小型嵌入。这些嵌入表虽然很大，但仅用于快速查找，这就是为什么有效参数计数远小于总参数计数的原因。",
+    "我从一个在我笔记本电脑上运行的模型中，得到了我迄今为止见过的最好的鹈鹕图像。"
+  ],
+  "tags": [
+    "Gemma 4",
+    "Google DeepMind",
+    "开源模型",
+    "LLM",
+    "SVG 生成"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 91,
+  "wordCount": 308,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775154534000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-02 18:28:54"
+}
