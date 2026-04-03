@@ -1,0 +1,53 @@
+{
+  "id": "RAW_efe37a71",
+  "title": "Helidon 4.4.0 引入与 OpenJDK 发布节奏的对齐，并获得 Java Verified Portfolio 支持",
+  "url": "https://www.infoq.com/news/2026/04/helidon-4-4-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-02 13:00:00",
+  "author": "Michael Redlich",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Oracle has <a href=\"https://medium.com/helidon/helidon-4-4-0-released-d10be2fb8039\">released</a> version 4.4.0 of their microservices framework, <a href=\"https://helidon.io/\">Helidon</a>, featuring alignment with the OpenJDK release cadence, support via the new Java Verified Portfolio, new core capabilities, and agentic AI support for LangChain4j.</p>\n   <p>Helidon will change its familiar semantic versioning to match the OpenJDK six-month release cadence. Starting with the release of JDK 27 in September 2026, Helidon 4.4.0 today will change to Helidon 27 and adopt the <a href=\"https://openjdk.org/jeps/14\">tip and tail model</a> practiced by OpenJDK.</p>\n   <p>Helidon will be included in the new <a href=\"https://www.oracle.com/java/technologies/downloads/jvp/\">Java Verified Portfolio</a> (JVP), a \"<em>curated set of Oracle-validated Java tools, frameworks, and libraries.</em>\" Introduced at <a href=\"https://www.oracle.com/javaone/\">JavaOne 2026</a>, the JVP will also feature commercial support for JavaFX, which has been reestablished by Oracle due to customer demand and the need for advanced visualizations in AI-powered applications.</p>\n   <p><a href=\"https://helidon.io/docs/v4/se/injection/declarative\">Helidon Declarative</a>, introduced in Helidon 4.3.0, allows for an inversion-of-control style programming model in Helidon SE. It originally featured three features, namely: <a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-HTTP-Server\">HTTP Server Endpoint</a>, <a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-Scheduling\">Scheduling</a> and <a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-FT\">Fault Tolerance</a>. Built on top of <a href=\"https://helidon.io/docs/v4/se/injection/injection\">Helidon Inject</a>, introduced in Helidon 4.2.0, Helidon Declarative adds these new features to complement the original three:</p>\n   <ul>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-Metrics\">Metrics</a></li>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-Tracing\">Tracing</a></li>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-Security\">Security</a></li>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-Validation\">Validation</a></li>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-WebSocket-Server\">WebSocket Server</a></li>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-WebSocket-Client\">WebSocket Client</a></li>\n    <li><a href=\"https://helidon.io/docs/v4/se/injection/declarative#Dec-CORS\">WebServer CORS</a></li>\n   </ul>\n   <p>Helidon Declarative is an incubating feature and is, therefore, subject to change.</p>\n   <p>This release also introduces <a href=\"https://helidon.io/docs/v4/se/json/json\">Helidon JSON</a>, a new JSON processing library optimized for virtual threads and modern Java applications. Helidon JSON consists of two modules; <strong><code><a href=\"https://central.sonatype.com/artifact/io.helidon.json/helidon-json-binding\">helidon-json-binding</a></code></strong> for object serialization and deserialization; and <strong><code><a href=\"https://central.sonatype.com/artifact/io.helidon.json/helidon-json\">helidon-json</a></code></strong> for fundamental JSON parsing and generation.</p>\n   <p>The approach used in Helidon JSON includes: generation of Java source code at compile time; use of an annotation processor to generate type-safe converters; execution without reflection at runtime; and code generation that is both readable and debuggable.</p>\n   <p>Integration with <a href=\"https://docs.langchain4j.dev/\">LangChain4j</a>, introduced in Helidon 4.2.0, has been enhanced with support for agents. Developers can take advantage of two common execution patterns: <a href=\"https://docs.langchain4j.dev/tutorials/agents/#workflow-patterns\">workflows</a>, a set of abstractions to programmatically orchestrate multiple agents and create agentic workflow patterns; and <a href=\"https://docs.langchain4j.dev/tutorials/agents/#pure-agentic-ai\">dynamic agents</a>, a ready-to-use supervisor agent that can manage a set of subagents.</p>\n   <p>The following example, as presented in this <a href=\"https://medium.com/helidon/helidon-4-4-0-released-d10be2fb8039\">blog post</a>, demonstrates how to declaratively create an agent:</p>\n   <pre>\r\n    <code class=\"language-java\">\r\n@Ai.Agent(\"helidon-mp-expert\")\r\n@Ai.ChatModel(\"openai-cheap-model\")\r\n@Ai.Tools(value = ProjectNameGeneratorTool.class)\r\n@Ai.McpClients(value = {\"first-mcp-client\", \"second-mcp-client\"})\r\npublic interface HelidonMpExpert {\r\n@UserMessage(\"\"\"\r\n   You are a Helidon MP expert.\r\n   Analyze the following user request about Helidon MP and provide\r\n   the best possible answer.\r\n   Always warn against using native image and stress out that\r\n   Helidon MP requires Jakarta APIs.\r\n   The user request is {{request}}.\r\n\"\"\")\r\n@Agent(value = \"A Helidon MP expert\", outputKey = \"response\")\r\nString askExpert(@V(\"request\") String request);\r\n    </code>\r\n</pre>\n   <p>Agents may be defined declaratively, registered as a singleton or configured via <a href=\"https://helidon.io/docs/v4/se/config/introduction\">Helidon Config</a>.</p>\n   <p>Originally named J4C (Java for Cloud), Helidon was introduced to the Java community in September 2018. It was designed to be simple and fast, and has two versions: Helidon SE and Helidon MP.</p>\n   <p><a href=\"https://helidon.io/docs/v4/se/introduction\">Helidon SE</a>, a functional-style API, originally featured three core components to create a microservice - a web server, configuration, and security - for building microservices-based applications. An application server is not required. With the <a href=\"https://www.infoq.com/news/2020/07/oracle-releases-helidon-2/\">release of Helidon 2.0</a> in June 2020, a new web client and database client were added to Helidon SE along with a new command-line tool.</p>\n   <p><a href=\"https://helidon.io/docs/v4/mp/introduction\">Helidon MP</a>, a declarative-style API, is an implementation of the <a href=\"https://microprofile.io/\">MicroProfile</a> specifications. Helidon 4.4.0 supports MicroProfile 6.1.</p>\n   <p>Helidon SE versions 1.0 through 3.0 featured a web server built on top of <a href=\"https://netty.io/\">Netty</a>, the asynchronous, event-driven network application framework. The <strong><code><a href=\"https://helidon.io/docs/v4/apidocs/io.helidon.webserver/io/helidon/webserver/WebServer.html\">WebServer</a></code></strong> interface includes support for configuration, routing, error handling, and building metrics and health endpoints.</p>\n   <p>In preparation for Helidon 4.0, Helidon <a href=\"https://medium.com/helidon/please-welcome-helidon-n%C3%ADma-9a882c5b6f1e\">introduced</a> an alpha version of a new web server, codenamed Helidon Níma, in September 2022. Níma, a Greek word for thread, was based on JEP 444, <a href=\"https://openjdk.org/jeps/444\">Virtual Threads</a>. The new web server was finalized with the <a href=\"https://www.infoq.com/articles/helidon-4-adopts-virtual-threads/\">release of Helidon 4.0</a> in October 2023.</p>\n   <p>More details on this release, including breaking changes and deprecations, may be found in the <a href=\"https://github.com/helidon-io/helidon/blob/4.4.0/CHANGELOG.md\">release notes</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Helidon 4.4.0 Introduces Alignment with OpenJDK Cadence and Support via Java Verified Portfolio\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Michael Redlich\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/helidon-4-4-released/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775134800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Oracle 发布了 Helidon 4.4.0，将其版本发布节奏与 OpenJDK 对齐，加入 Java Verified Portfolio，并引入了无反射 JSON 库，同时通过 LangChain4j 增强了对 AI 智能体的支持。",
+  "oneSentenceSummary": "Oracle 发布了 Helidon 4.4.0，将其版本发布节奏与 OpenJDK 对齐，加入 Java Verified Portfolio，并引入了无反射 JSON 库，同时通过 LangChain4j 增强了对 AI 智能体的支持。",
+  "summary": "Helidon 4.4.0 标志着该微服务框架的一次重大转变，采用了与 OpenJDK 同步的六个月发布周期（将于 2026 年过渡到 Helidon 27）。此版本引入了 Helidon JSON，这是一个针对虚拟线程优化的高性能库，使用编译时代码生成而非反射。它还通过 Metrics 和 Tracing 等新功能扩展了 Helidon Declarative，并通过支持智能体工作流和动态智能体加深了与 LangChain4j 的 AI 集成。此外，Helidon 现在已成为 Oracle 验证的 Java Verified Portfolio 的一部分，确保了企业级的可靠性。",
+  "mainPoints": [
+    {
+      "point": "与 OpenJDK 发布节奏对齐。",
+      "explanation": "Helidon 正在转向 6 个月的发布周期以匹配 JDK 版本，从 2026 年的 Helidon 27 开始，采用 OpenJDK 实践的“头尾”模型。"
+    },
+    {
+      "point": "引入高性能的 Helidon JSON。",
+      "explanation": "一个新的无反射 JSON 库，利用编译时代码生成和注解处理器来优化虚拟线程和现代 Java 应用的性能。"
+    },
+    {
+      "point": "通过 LangChain4j 增强 AI 智能体支持。",
+      "explanation": "开发人员现在可以使用编程工作流或动态监督智能体来编排多个智能体，并支持声明式配置和 MCP 客户端。"
+    }
+  ],
+  "keyQuotes": [
+    "Helidon 将改变其熟悉的语义化版本控制，以匹配 OpenJDK 的六个月发布节奏。",
+    "Helidon JSON 包括：在编译时生成 Java 源代码；使用注解处理器生成类型安全的转换器；在运行时无需反射即可执行。",
+    "与 LangChain4j 的集成……已通过对智能体的支持得到增强。"
+  ],
+  "tags": [
+    "Helidon",
+    "Java",
+    "微服务",
+    "OpenJDK",
+    "虚拟线程"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 639,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775134800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-02 13:00:00"
+}

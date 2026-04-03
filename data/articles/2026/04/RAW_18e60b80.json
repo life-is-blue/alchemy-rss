@@ -1,0 +1,52 @@
+{
+  "id": "RAW_18e60b80",
+  "title": "发布：llm-gemini 0.30",
+  "url": "https://simonwillison.net/2026/Apr/2/llm-gemini/#atom-everything",
+  "date": "2026-04-02 18:25:08",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">2nd April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/llm-gemini/releases/tag/0.30\">llm-gemini 0.30</a></span> <span class=\"beat-commit\">— LLM plugin to access Google's Gemini family of models</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>New models <code>gemini-3.1-flash-lite-preview</code>, <code>gemma-4-26b-a4b-it</code> and <code>gemma-4-31b-it</code>. See <a href=\"https://simonwillison.net/2026/Apr/2/gemma-4/\">my notes on Gemma 4</a>.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4082/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "llm-gemini 0.30 版本发布，增加了对 Google Gemini 3.1 Flash Lite 和 Gemma 4 模型系列的支持。",
+  "oneSentenceSummary": "llm-gemini 0.30 版本发布，增加了对 Google Gemini 3.1 Flash Lite 和 Gemma 4 模型系列的支持。",
+  "summary": "此版本说明宣布了 llm-gemini 插件的 0.30 版本，该插件支持通过 LLM CLI 工具访问 Google 的 Gemini 模型系列。此次更新引入了对多个新模型的支持，包括 gemini-3.1-flash-lite-preview 以及 Gemma 4 开源模型系列（具体为 26b-a4b-it 和 31b-it 变体）。",
+  "mainPoints": [
+    {
+      "point": "支持 Gemini 3.1 Flash Lite Preview。",
+      "explanation": "该插件现在允许开发者通过 LLM 生态系统与 Google 最新的轻量级 Flash 模型进行交互。"
+    },
+    {
+      "point": "集成 Gemma 4 开源模型。",
+      "explanation": "增加了对全新的 Gemma 4 26b 和 31b 指令微调模型的支持，扩展了该工具对本地/开源模型的能力。"
+    },
+    {
+      "point": "持续扩展 LLM 插件生态系统。",
+      "explanation": "此次更新保持了 llm-gemini 插件作为 Google 模型 API 与命令行界面之间桥梁的实用性。"
+    }
+  ],
+  "keyQuotes": [
+    "用于访问 Google Gemini 模型系列的 LLM 插件",
+    "新增模型 gemini-3.1-flash-lite-preview、gemma-4-26b-a4b-it 和 gemma-4-31b-it。"
+  ],
+  "tags": [
+    "LLM",
+    "Gemini",
+    "Gemma 4",
+    "Google AI",
+    "CLI 工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 28,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775154308000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-02 18:25:08"
+}

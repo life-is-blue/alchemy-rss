@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d3837e08",
+  "title": "小米 MiMo 大模型首次推出 Token Plan，单次订阅可满足全模态 Agent 任务需求",
+  "url": "https://www.qbitai.com/2026/04/395210.html",
+  "date": "2026-04-03 05:44:33",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p style=\"text-align: left;\">4月3日，小米官宣MiMo大模型首个Token Plan，面向开发者和养虾爱好者的 AI 大模型调用套餐。MiMo Token Plan 提供四档方案：Lite（¥39/月）、Standard（¥99/月）、Pro（¥329/月）、Max（¥659/月），首购支持88折优惠。从刚接触 AI 开发的探索者，到全天候高强度使用的开发者，实现全覆盖。</p>\n  <p><img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260403063312_423de8f82ee504adb6f10c20197094d3.jpeg\"></p>\n  <p>MiMo Token Plan 采用行业少见的统一 Credit 点数透明计费规则、与 token 消耗挂钩，单次订阅即可灵活调用MiMo-V2-Pro、MiMo-V2-Omni 和 MiMo-V2-TTS 三大模型，满足绝大部分Agent任务需求。MiMo Token Plan没有行业普遍存在的5小时 token 使用限额，支持集中消耗 token ，能为大容量套餐用户带来更高强度、不中断的养龙虾、编程体验。</p>\n  <p>此前，MiMo-V2-Pro在OpenRouter平台周token消耗量连创新高，连续突破3万亿、4万亿大关，上线不到半月时间，成功登顶日榜、周榜、月榜第一。</p>\n  <p style=\"text-align: right;\"><img decoding=\"async\" class=\"aligncenter\" src=\"https://image.jido.dev/20260403063314_fe6102c4225f445f192b88a40557c0ec.jpeg\" alt=\"768565dc14c847da91f4463beaabad00~tplv-shrink:390:400.jpeg\"></p>\n  <p style=\"text-align: right;\">*本文系量子位获授权刊载，观点仅为原作者所有</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "小米推出 MiMo 大模型 Token Plan 订阅套餐，通过统一 Credit 计费支持多模态模型调用，旨在满足开发者高强度 Agent 任务需求。",
+  "oneSentenceSummary": "小米推出 MiMo 大模型 Token Plan 订阅套餐，通过统一 Credit 计费支持多模态模型调用，旨在满足开发者高强度 Agent 任务需求。",
+  "summary": "小米正式官宣 MiMo 大模型首个 Token Plan，为开发者提供 Lite、Standard、Pro、Max 四档订阅方案，价格从每月 39 元至 659 元不等。该计划采用行业少见的统一 Credit 点数透明计费规则，支持 MiMo-V2-Pro、Omni 及 TTS 三大模型的灵活调用。相比行业普遍的短时间 token 使用限额，该套餐支持 token 集中消耗，不设 5 小时使用限制，特别针对高强度编程和 Agent 任务进行了优化。此外，MiMo-V2-Pro 在 OpenRouter 平台的消耗量近期也创下新高，反映了其市场热度。",
+  "mainPoints": [
+    {
+      "point": "小米推出四档 MiMo Token Plan 订阅方案，覆盖不同强度需求。",
+      "explanation": "方案涵盖从入门级（39 元/月）到专业级（659 元/月）的四个档位，首购享有 88 折优惠，旨在降低开发者接入大模型的门槛。"
+    },
+    {
+      "point": "采用统一 Credit 点数透明计费，支持全模态模型调用。",
+      "explanation": "单次订阅即可调用 Pro、Omni 和 TTS 三大模型，通过统一的 Credit 体系简化了多模型任务下的计费复杂度，提升了 Agent 开发的灵活性。"
+    },
+    {
+      "point": "取消行业常见的短时间 token 使用限额，支持集中消耗。",
+      "explanation": "不设 5 小时限额，允许用户根据项目需求在短时间内集中消耗 token，保证了高强度编程或复杂 Agent 任务的连续性。"
+    }
+  ],
+  "keyQuotes": [
+    "MiMo Token Plan 采用行业少见的统一 Credit 点数透明计费规则、与 token 消耗挂钩。",
+    "单次订阅即可灵活调用 MiMo-V2-Pro、MiMo-V2-Omni 和 MiMo-V2-TTS 三大模型，满足绝大部分 Agent 任务需求。",
+    "没有行业普遍存在的 5 小时 token 使用限额，支持集中消耗 token ，能为大容量套餐用户带来更高强度、不中断的体验。"
+  ],
+  "tags": [
+    "小米",
+    "MiMo大模型",
+    "Token Plan",
+    "AI订阅",
+    "多模态"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 407,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775195073000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-03 05:44:33"
+}

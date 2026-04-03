@@ -1,0 +1,53 @@
+{
+  "id": "RAW_dd111278",
+  "title": "使用 Claude 和 Obsidian 自动化你的销售流程",
+  "url": "https://www.freecodecamp.org/news/automate-your-sales-pipeline-with-claude-and-obsidian/",
+  "date": "2026-04-02 17:11:58",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>For many software engineers and SaaS founders, writing code is the easy part. But the marketing and sales grind feels like an uphill battle. If you’d rather be building features than chasing leads you should watch the video we just published to the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel. It features Simon Severino, CEO of Strategy Sprints.</p>\n  <p>In this interview with Haider Malik, Simon breaks down how he uses artificial intelligence to practically automate his entire sales process, turning what used to be eight hours of work into just 10 minutes.</p>\n  <p>Simon explains how he uses AI to power 45 virtual collaborators that handle everything from lead generation to tedious administrative tasks. By connecting Claude (via terminal) to tools like Obsidian, Notion, Granola, and Hunter, he has created a system that manages:</p>\n  <ul>\n   <li>\n    <p><strong>Lead Generation</strong>: Defining your Ideal Client Profile (ICP) and finding targeted prospects.</p>\n   </li>\n   <li>\n    <p><strong>Automated Outreach</strong>: Crafting and AB testing cold emails that sound human and convert.</p>\n   </li>\n   <li>\n    <p><strong>Daily Briefings</strong>: Using a <code>/today</code> command to gather info from Slack, Gmail, and Calendars to prioritize the day’s high-leverage tasks.</p>\n   </li>\n   <li>\n    <p><strong>Knowledge Management</strong>: Storing \"tacit knowledge\" from meetings as structured markdown files in Obsidian for the AI to reference.</p>\n   </li>\n  </ul>\n  <p>The goal of this system is to reduce \"cognitive load.\" By delegating admin tasks to AI \"robots,\" you can spend your time on strategy.</p>\n  <p>Watch the video on <a href=\"https://www.youtube.com/watch?v=wYx9Q6dcJCw\">the freeCodeCamp.org YouTube channel</a> ( &gt; 1-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wYx9Q6dcJCw\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 SaaS 创始人和工程师如何利用 Claude 和 Obsidian 自动化销售流程，将手动工作时间从几小时缩短至几分钟。",
+  "oneSentenceSummary": "本文探讨了 SaaS 创始人和工程师如何利用 Claude 和 Obsidian 自动化销售流程，将手动工作时间从几小时缩短至几分钟。",
+  "summary": "本文总结了 Simon Severino 分享的一套利用 AI 自动化销售流程的综合工作流。通过在终端将 Claude 与 Obsidian、Notion、Granola 和 Hunter 等一系列工具连接起来，Severino 创建了一个由 45 个虚拟协作体组成的系统。该系统负责潜在客户挖掘、自动化外联、每日简报和知识管理。其核心理念是将重复性的行政任务委托给 AI，从而降低认知负荷，让创始人能够专注于高层战略。",
+  "mainPoints": [
+    {
+      "point": "AI 可以将销售流程从繁琐的手动工作转变为自动化系统。",
+      "explanation": "通过利用 LLM 处理潜在客户挖掘和外联工作，创始人可以将以往需要 8 小时的任务缩短至仅需 10 分钟。"
+    },
+    {
+      "point": "将 AI 与结构化知识管理相结合对于实现高效自动化至关重要。",
+      "explanation": "将会议中的“隐性知识”以 Markdown 文件形式存储在 Obsidian 中，使 AI 助手能够参考特定背景信息，从而成为更可靠的虚拟协作体。"
+    },
+    {
+      "point": "AI 委派的主要目标是降低认知负荷。",
+      "explanation": "通过将行政类“机器人”任务卸载给 AI，人类操作者可以保留脑力，用于创意战略和高杠杆决策。"
+    }
+  ],
+  "keyQuotes": [
+    "Simon 详细介绍了他是如何利用人工智能将整个销售流程几乎完全自动化，将过去需要 8 小时的工作缩短至仅需 10 分钟。",
+    "该系统的目标是降低“认知负荷”。通过将行政任务委派给 AI“机器人”，你可以将时间花在战略上。",
+    "将会议中的“隐性知识”存储为结构化的 Markdown 文件，供 AI 参考。"
+  ],
+  "tags": [
+    "AI 自动化",
+    "Claude",
+    "Obsidian",
+    "销售流程",
+    "工作流优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 228,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "PG_TOOLS",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775149918000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-02 17:11:58"
+}

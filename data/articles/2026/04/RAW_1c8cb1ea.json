@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1c8cb1ea",
+  "title": "阿里 Qwen 3.6 登顶 LMArena 编程榜，超越 GPT-5 成为中国最强编程模型",
+  "url": "https://www.qbitai.com/2026/04/395206.html",
+  "date": "2026-04-03 02:23:43",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"3\">4月3日，全球知名大模型盲测榜单LMArena旗下聚焦AI编程能力的Code Arena公布新一期排名，阿里巴巴最新一代大语言模型Qwen 3.6-Plus登上全球榜单第二，超越OpenAI、Google、xAI等国际巨头，成为该榜单上排名最高的中国大模型。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260403030310_94641b42d29648ef3d71f3616029b041.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">据了解，LMArena作为当前AI领域最具公信力的大模型盲测平台之一，采用真实用户盲测、实时对抗排名的机制，因此也被视为是AI领域最公正权威的全球大模型性能榜单。随着Agent时代到来，编程能力成为衡量模型综合实力的关键，该榜单备受关注。本次Qwen3.6-Plus斩获第二的React专项榜单是目前AI Coding领域最前沿、挑战性最高的一个技术方向，旨在考察大模型在真实复杂Web开发场景下的自主编码能力。与传统的单一代码补全测试不同，该榜单要求模型具备完整的工程思维和端到端开发能力，能够在无人辅助的情况下独立完成从项目初始化、代码编写到调试运行的全流程。</p>\n  <p data-track=\"9\">Qwen3.6-Plus是阿里于4月2日最新发布的新一代大语言模型，拥有原生多模态理解、推理能力，并在代码生成与Agent能力上表现突出。在多项权威编程评测中，千问3.6均超越参数量是其两倍乃至三倍的GLM-5、Kimi-K2.5等模型，以更少的参数实现了更强的性能，成为当前国产模型中编程能力的标杆。新模型发布首日便在全球开发者社区引发热烈反响，次日即以1452分位列React榜单第二。</p>\n  <p data-track=\"11\">榜单数据显示，千问3.6得分仅次于Anthropic旗下的Claude-Opus-4.6-Thinking（1540分），以4分优势领先OpenAI最新发布的GPT-5.0-High（1448分），并以12分差距超越Google的Gemini 3.1 Pro Preview（1440分）。这意味着，在最具挑战性的AI Coding和Agent任务中，千问3.6展现出与全球顶级大模型比肩甚至更优的代码生成与工程化能力。此外，在全面评估AI编程能力的 Code Arena 榜单中，Qwen3.6-Plus同样位居国产模型之首。凭借这一成绩，阿里在全球 AI 实验室排名中升至第四，仅次于 Anthropic、OpenAI 和 Google。</p>\n  <p data-track=\"13\">据悉，Qwen3.6-Plus是阿里千问3.6推出的第一款模型，后续千问3.6系列还将开源其他尺寸模型，性能更强的旗舰模型Qwen3.6-Max也将于近期发布。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阿里最新发布的 Qwen 3.6-Plus 在 LMArena 编程盲测榜单中位列全球第二，超越 GPT-5.0，成为排名最高的中国大模型。",
+  "oneSentenceSummary": "阿里最新发布的 Qwen 3.6-Plus 在 LMArena 编程盲测榜单中位列全球第二，超越 GPT-5.0，成为排名最高的中国大模型。",
+  "summary": "文章报道了阿里巴巴新一代大语言模型 Qwen 3.6-Plus 在全球权威大模型盲测平台 LMArena（Code Arena）中的卓越表现。在最具挑战性的 React 专项榜单中，Qwen 3.6-Plus 以 1452 分位列全球第二，仅次于 Anthropic 的 Claude-Opus-4.6-Thinking，并成功超越了 OpenAI 的 GPT-5.0-High 和 Google 的 Gemini 3.1 Pro。该榜单侧重考察模型在真实复杂 Web 开发场景下的自主编码、工程思维及端到端 Agent 能力。Qwen 3.6-Plus 凭借原生多模态理解和推理能力，在多项编程评测中以更少的参数实现了更强的性能，标志着国产模型在 AI Coding 领域已达到全球顶尖水平。",
+  "mainPoints": [
+    {
+      "point": "Qwen 3.6-Plus 在 LMArena 编程专项榜单中取得全球第二，创国产模型新高。",
+      "explanation": "在 React 专项榜单中，Qwen 3.6-Plus 分数超越了 GPT-5.0 和 Gemini 3.1 Pro，仅次于 Claude-Opus-4.6，展现了极强的国际竞争力。"
+    },
+    {
+      "point": "React 专项榜单代表了 AI Coding 领域最前沿的工程化测试方向。",
+      "explanation": "该榜单不同于简单的代码补全，它要求模型具备完整的工程思维，能在无人辅助下独立完成从项目初始化到调试运行的全流程。"
+    },
+    {
+      "point": "Qwen 3.6 系列在参数效率和 Agent 能力上实现显著突破。",
+      "explanation": "新模型在多项评测中超越了参数量是其 2-3 倍的竞争对手，且阿里在全球 AI 实验室排名中已升至第四位。"
+    }
+  ],
+  "keyQuotes": [
+    "Qwen 3.6-Plus 登上全球榜单第二，超越 OpenAI、Google、xAI 等国际巨头，成为该榜单上排名最高的中国大模型。",
+    "React 专项榜单是目前 AI Coding 领域最前沿、挑战性最高的一个技术方向，旨在考察大模型在真实复杂 Web 开发场景下的自主编码能力。",
+    "阿里在全球 AI 实验室排名中升至第四，仅次于 Anthropic、OpenAI 和 Google。"
+  ],
+  "tags": [
+    "Qwen 3.6",
+    "LMArena",
+    "AI 编程",
+    "大模型榜单",
+    "阿里巴巴"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 959,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775183023000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-03 02:23:43"
+}

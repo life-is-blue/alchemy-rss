@@ -1,0 +1,53 @@
+{
+  "id": "RAW_470dc902",
+  "title": "豆包大模型日均 Token 使用量突破 120 万亿，Seedance 2.0 开启公测",
+  "url": "https://www.qbitai.com/2026/04/395202.html",
+  "date": "2026-04-02 12:30:16",
+  "author": "十三",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">刚刚人在火山引擎武汉站的活动上，看到的几个消息还是想跟大家拿出来分享分享。</p>\n  <p data-track=\"3\">1️⃣豆包大模型日均Token使用量已突破120万亿❗️</p>\n  <p data-track=\"5\">这个Tokens的使用量应该是国内第一的level了，但最需要关注的是它的增速。因为相比三个月前的63万亿，现在是足足翻了一倍；但要是跟2024年5月那时候相比，就直接是1000倍了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260402130312_50507a75ea78afbdf8d343382af79730.webp\" data-src=\"https://image.jido.dev/20260402130312_50507a75ea78afbdf8d343382af79730.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\">2️⃣累计Token使用量迈进“万亿俱乐部”的企业已经达到了140家。</p>\n  <p data-track=\"8\">虽然这个是指使用豆包的企业，但从去年的100家涨到140家，这个增幅也算是比较大的，从侧面也能看出来龙虾Agent给行业带来的冲击，大家都在积极布局于此。</p>\n  <p data-track=\"11\">3️⃣赛博养虾三要素。</p>\n  <p data-track=\"13\">这是和火山引擎自家的ArkClaw相关的，火山引擎CEO谭待把养虾的三要素总结为模型、Skills和安全。具体的可以看下他们做的一图详解。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260402130311_2227fc380ee903f2bc9ab1ddd53661bf.webp\" data-src=\"https://image.jido.dev/20260402130311_2227fc380ee903f2bc9ab1ddd53661bf.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">4️⃣Seedance 2.0开启公测。</p>\n  <p data-track=\"17\">这也是这次活动比较重磅的消息。之前爆火的Seedance 2.0，火山引擎正式宣布面向企业开启公测。要玩AI视频、AI短剧的公司可以尝鲜一波了。</p>\n  <p data-track=\"19\">整体感觉下来，现在Tokens真的是变成了衡量AI发展速度的硬指标。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "字节跳动火山引擎宣布豆包大模型日均 Token 使用量突破 120 万亿，并正式开启 Seedance 2.0 视频大模型公测。",
+  "oneSentenceSummary": "字节跳动火山引擎宣布豆包大模型日均 Token 使用量突破 120 万亿，并正式开启 Seedance 2.0 视频大模型公测。",
+  "summary": "本文报道了火山引擎武汉站活动的最新动态。核心信息包括：豆包大模型日均 Token 使用量已达 120 万亿，较去年 5 月增长千倍，稳居国内领先地位；累计使用量超万亿的企业增至 140 家，显示出企业级 AI 应用的深度渗透。火山引擎 CEO 谭待提出了 AI Agent（赛博养虾）的三要素：模型、Skills 和安全。此外，Seedance 2.0 视频大模型正式面向企业开启公测，为 AI 视频与短剧创作提供有力支持。整体趋势表明，Token 使用量已成为衡量 AI 发展速度的核心硬指标。",
+  "mainPoints": [
+    {
+      "point": "豆包大模型日均 Token 使用量突破 120 万亿，反映了国内 AI 应用规模的爆发式增长。",
+      "explanation": "相比 2024 年 5 月增长千倍，Token 使用量已成为衡量 AI 发展速度和应用普及度的核心硬指标。"
+    },
+    {
+      "point": "Seedance 2.0 视频大模型正式开启企业公测。",
+      "explanation": "针对 AI 视频和短剧市场，提供更强的生成能力，标志着字节跳动在多模态大模型商业化落地上的重要进展。"
+    },
+    {
+      "point": "火山引擎提出 AI Agent（赛博养虾）三要素：模型、Skills 和安全。",
+      "explanation": "强调了构建高质量 Agent 不仅需要底层模型，还需要强大的工具集成能力（Skills）以及全方位的安全保障（ArkClaw）。"
+    }
+  ],
+  "keyQuotes": [
+    "豆包大模型日均 Token 使用量已突破 120 万亿。",
+    "相比 2024 年 5 月那时候相比，就直接是 1000 倍了。",
+    "现在 Tokens 真的是变成了衡量 AI 发展速度的硬指标。"
+  ],
+  "tags": [
+    "豆包大模型",
+    "火山引擎",
+    "Token 使用量",
+    "Seedance 2.0",
+    "AI 视频"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 463,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775133016000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-02 12:30:16"
+}
