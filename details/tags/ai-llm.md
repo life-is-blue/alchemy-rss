@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-05 18:08:24 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-05 20:06:35 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11438,41 +11438,31 @@
 
 ### [Claude-Code-源码深度解析：运行机制与-Memory-模块详解](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514088&idx=1&sn=35dedefd99858a7c662544444a89ebfa)
 
-2026-04-05 06:00:00 | 标签: Claude Code, AI Agent, 源码分析, LLM, Prompt Engineering
-
-> 文章对 Claude Code 的源码进行了系统性拆解。首先介绍了项目的技术栈与整体架构，明确了其作为循环执行引擎的本质。核心部分详细解读了 QueryEngine 的状态管理与 queryLoop 的执行流程，包括消息准备、工具编排及并发策略。文章深入探讨了 Agent 系统如何通过模型自主决策实现任务委派，并详细拆解了 System Prompt 的动态拼接与缓存优化策略。最后，重点分析了 Claude Code 的 Memory 模块，揭示了其从 Auto Memory 到 Session Memory 等六层架构的持久化设计，为理解 AI Agent 的上下文管理提供了极具价值的参考。
+2026-04-05 06:00:00
 
 
 
 ### [Karpathy-知识库「LLM-Wiki」火爆了，全网围观讨论](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651025873&idx=2&sn=0197036d89d6d8a25d842c9703981997)
 
-2026-04-05 04:31:00 | 标签: LLM Wiki, Andrej Karpathy, 知识管理, AI Agent, Obsidian
-
-> 文章详细介绍了 AI 领域知名学者 Andrej Karpathy 近期走红的「LLM Wiki」构建思路。不同于传统的 RAG 模式（每次查询重新检索），该方案主张让 LLM 充当「程序员」，将原始资料编译并维护成一个相互链接的 Markdown 知识库（使用 Obsidian 作为前端）。系统由原始数据、Wiki 层和 Schema 规范层组成，通过摄取（Ingest）、查询（Query）、健康检查（Lint）三大操作实现知识的动态累积。Karpathy 认为在 Agent 时代，分享「想法文件」比分享具体代码更重要，这种模式能让知识库随使用而进化，适用于个人研究、读书笔记及企业知识管理等...
+2026-04-05 04:31:00
 
 
 
 ### [告别昂贵账单，Token-直降-68%，多智能体动态协作编程来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651025873&idx=3&sn=cc3f63fc2816723749bdeca2ed61e52e)
 
-2026-04-05 04:31:00 | 标签: AgentConductor, 多智能体协作, 代码生成, 强化学习, GRPO
-
-> 本文介绍了上海交通大学 i-WiN 团队研发的多智能体编程框架 AgentConductor。针对现有 AI 协作模式（如静态流程或冗余并行调用）导致的 Token 成本高昂和复杂任务处理能力不足等痛点，该框架引入了一个 3B 参数的指挥智能体。该智能体能根据任务难度动态生成基于 YAML 的交互拓扑图，并能根据运行报错反馈进行端到端的拓扑演化。实验结果显示，AgentConductor 在 APPS、LiveCodeBench 等竞赛级数据集上表现优异，准确率提升 14.6%，Token 消耗降低 68%，实现了多智能体协作从「静态工作流」向「动态自适应生态」的跨越。
+2026-04-05 04:31:00
 
 
 
 ### [编程智能体的核心组件【译】](https://baoyu.io/translations/2026-04-04/components-of-a-coding-agent)
 
-2026-04-05 00:00:00 | 标签: 编程智能体, Coding Agent, Agent Harness, 软件工程, LLM
-
-> 文章由资深 AI 专家 Sebastian Raschka 撰写，系统性地探讨了编程智能体（如 Claude Code、Codex）的内部运作机制。作者提出了「编程运行框架（Coding Harness）」的概念，将其视为包裹在 LLM 之上的软件脚手架，负责处理开发过程中的复杂任务。文章详细拆解了编程智能体的六大核心组件：1. 实时代码仓库上下文，为模型提供项目背景；2. 提示词形态与缓存复用，提高效率并降低成本；3. 结构化工具调用与权限管理，确保操作精准安全；4. 上下文瘦身机制，防止信息过载；5. 结构化会话记忆，平衡长期档案与短期工作记忆；6. 任务委派与子智能体，实现复杂任务的拆解...
+2026-04-05 00:00:00
 
 
 
 ### [ICLR'26-Oral-|-当-LLM-Agent-在多轮推理中迷失时：T3-如何让强化学习重新学会主动推理](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514082&idx=1&sn=2feaddfd18c0d96e24a42a8f9685e4a5)
 
-2026-04-04 12:11:00 | 标签: LLM Agent, 强化学习, 主动推理, ICLR 2026, Belief Tracking
-
-> 文章深入探讨了 LLM Agent 在多轮主动推理任务中常见的「信念偏差」（belief deviation）问题，即模型在交互中容易陷入无效的「信念陷阱区域」（BTR），导致推理质量下降并污染强化学习的 credit assignment。研究者提出了 T3（Truncating Belief-Trapped Trajectories）方法，通过监控任务进展并在模型陷入 BTR 时提前截断轨迹，仅保留具有信息价值的前缀进行训练。实验表明，T3 在多个主动推理任务中显著提升了训练稳定性和 token 效率，为解决长程交互 Agent 的训练难题提供了一种轻量且有效的控制机制。
+2026-04-04 12:11:00
 
 
 
@@ -34452,9 +34442,7 @@
 
 ### [智谱-AI-2025-财报深度分析：Token-价值重塑与-Agentic-Engineering-演进](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=1&sn=540cb500367b6720714eda9649abf5a0)
 
-2026-04-05 02:15:00 | 标签: 智谱 AI, 财报分析, Token 架构力, MaaS, Agentic Engineering
-
-> 智谱 AI（GLM）发布 2025 年度业绩报告，展示了其在港交所上市后的强劲增长势头。财报显示公司营收达 7.24 亿元，同比增长 131.9%，其中云端 API 服务收入增幅接近 300%，ARR 达 17 亿元。尽管研发投入巨大导致亏损，但智谱通过极致的工程优化提升了推理效率。CEO 张鹏在会上提出了“Token 架构力”（TAC）新概念，认为 AGI 的商业价值由智能上界与 Token 消耗规模共同决定。公司战略明确对标 Anthropic，重点布局编程与智能体场景，并致力于国产芯片的软硬协同（Co-design）深度调优，预示着 2026 年将从氛围编程向工业级智能体工程全面演进。
+2026-04-05 02:15:00
 
 
 
