@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-05 16:09:28 | [返回首页](/README.md)
+**更新时间**: 2026-04-05 18:08:24 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10765)
+- [AI & 大模型](#ai-llm) (10771)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (752)
 - [DevOps](#devops) (485)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5312)
+- [其他](#other) (5313)
 
 
 ---
@@ -43,7 +43,7 @@
 - [在自有基础设施中运行云端智能体-·-Cursor](https://cursor.com/blog/self-hosted-cloud-agents) - AI 精选
 - [Anthropic-揭秘-Agent-长线开发架构：引入-GAN-机制，Claude-自主撸出全栈应用](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957) - AI 精选
 
-- [查看全部 10765 篇...](/details/tags/ai-llm.md)
+- [查看全部 10771 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5312 篇...](/details/tags/other.md)
+- [查看全部 5313 篇...](/details/tags/other.md)
 
 
