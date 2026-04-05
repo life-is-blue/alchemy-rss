@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-05 11:00:36 | [返回首页](/README.md)
+**更新时间**: 2026-04-05 12:48:37 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10761)
+- [AI & 大模型](#ai-llm) (10765)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (752)
 - [DevOps](#devops) (485)
@@ -22,14 +22,15 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) - AI 精选
 - [深度解析：Claude-Code-源码架构与-Harness-Engineering-实践](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491747&idx=1&sn=402e7be9dc30cccdcd2c2f748974726c) - AI 精选
 - [Lenny’s-Podcast-中关于智能体工程的对话精华](https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything) - AI 精选
 - [Gemma-4：同等规模下最强大的开源模型](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/) - AI 精选
 - [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
 - [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
+- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
@@ -41,9 +42,8 @@
 - [我们如何为深度智能体构建评估体系](https://blog.langchain.com/how-we-build-evals-for-deep-agents/) - AI 精选
 - [在自有基础设施中运行云端智能体-·-Cursor](https://cursor.com/blog/self-hosted-cloud-agents) - AI 精选
 - [Anthropic-揭秘-Agent-长线开发架构：引入-GAN-机制，Claude-自主撸出全栈应用](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957) - AI 精选
-- [MiniMax-Office-Skills：开源一套生产级办公文档引擎](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488238&idx=1&sn=76aaec3e7e688c31cd8f40b9d0080e70) - AI 精选
 
-- [查看全部 10761 篇...](/details/tags/ai-llm.md)
+- [查看全部 10765 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构

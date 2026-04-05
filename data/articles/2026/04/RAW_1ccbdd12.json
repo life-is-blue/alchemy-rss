@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1ccbdd12",
+  "title": "Anthropic 的三智能体架构设计支持长时间运行的全栈 AI 开发",
+  "url": "https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-04 14:24:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic has introduced <a href=\"https://www.anthropic.com/engineering/harness-design-long-running-apps\">a multi-agent harness design to support long-running autonomous application development</a>, targeting both frontend design and full-stack software creation. The approach divides tasks among distinct agents responsible for planning, generation, and evaluation, aiming to maintain coherence and improve output quality over multi-hour AI sessions.</p>\n   <p>The design addresses challenges common in autonomous coding workflows, such as context loss and premature task termination. Engineers at Anthropic implemented context resets alongside structured handoff artifacts, enabling the next agent in the workflow to continue from a defined state. This differs from compaction, which preserves context but can make models cautious about approaching context limits, potentially affecting performance in extended tasks.</p>\n   <p>Self-evaluation of outputs was another focus. Agents often overrate their results, particularly on subjective tasks such as design. To mitigate this, Anthropic introduced a separate evaluator agent calibrated with few-shot examples and scoring criteria.</p>\n   <p><a href=\"https://www.linkedin.com/in/prithvi72/\">Prithvi Rajasekaran</a>, engineering lead at Anthropic Labs, says</p>\n   <blockquote>\n    <p>Separating the agent doing the work from the agent judging it proves to be a strong lever to address this issue.</p>\n   </blockquote>\n   <p>For frontend design, the team established four grading criteria: design quality, originality, craft, and functionality. The evaluator navigates live pages, interacts with the interface using Playwright MCP, and provides detailed critiques to guide the generator in iterative cycles. Each cycle produces progressively refined outputs. Iterations range from five to fifteen per run, sometimes taking up to four hours, and generate designs that combine visual distinction with functional accuracy.</p>\n   <p>Industry practitioners have highlighted the framework’s structured approach. <a href=\"https://www.linkedin.com/in/artem-bredikhin-257570197/\">Artem Bredikhin</a> wrote on <a href=\"https://www.linkedin.com/posts/artem-bredikhin-257570197_effective-harnesses-for-long-running-agents-activity-7400259988075479040-cvNz?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn</a> that</p>\n   <blockquote>\n    <p>long-running AI agents fail for a simple reason: every new context window is amnesia. The breakthrough is structure: JSON feature specs, enforced testing, commit-by-commit progress, and an init script that ensures every session starts with a working app.</p>\n   </blockquote>\n   <p>Another observer, <a href=\"https://www.linkedin.com/in/raghusarangarajan/\">Raghus Arangarajan</a>, commented on <a href=\"https://www.linkedin.com/posts/raghusarangarajan_long-running-agents-are-getting-smarter-activity-7435534408570396672-6Hvh?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn</a> that</p>\n   <blockquote>\n    <p>The three-agent framework provides a repeatable workflow for multi-hour sessions and ensures that evaluation and iteration are separated from generation, improving overall reliability and output quality.</p>\n   </blockquote>\n   <p>Anthropic engineers applied this framework across different task types to assess performance improvements. They observed that separating planning, generation, and evaluation enables better handling of subjective assessments while maintaining reproducibility in objective tasks. The structured multi-agent workflow also facilitates incremental progress in long-running sessions by clearly defining responsibilities and handoffs between agents.</p>\n   <p>Operationally, teams must establish evaluation criteria and calibrate scoring mechanisms while monitoring iterative output. Agents execute evaluations automatically, but human oversight remains important for initial calibration and quality validation. The workflow supports distributed processing of tasks and allows multiple agents to run in parallel or sequentially based on dependencies.</p>\n   <p>As AI models improve, the harness’s role may shift, with some tasks handled directly by next-generation models. At the same time, improved models enable harnesses to tackle more complex work. Engineers should experiment, monitor traces, decompose tasks, and adjust harnesses, as the space of harness combinations evolves with model capabilities.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Anthropic’s  Designs Three-Agent Harness Supports Long-Running Full-Stack AI Development\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775312640000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 推出的全新三智能体架构（规划、生成、评估）通过结构化的交接和独立的批判机制，解决了上下文丢失和评估偏差问题，从而实现了长时间运行的自主全栈开发。",
+  "oneSentenceSummary": "Anthropic 推出的全新三智能体架构（规划、生成、评估）通过结构化的交接和独立的批判机制，解决了上下文丢失和评估偏差问题，从而实现了长时间运行的自主全栈开发。",
+  "summary": "Anthropic 推出了一种专门用于长时间运行的自主应用开发的多智能体架构设计，涵盖前端设计和全栈开发。该框架将职责划分为三个不同的智能体：规划（Planning）、生成（Generation）和评估（Evaluation）。这种结构解决了 AI 编程中常见的挑战，例如上下文遗忘（context amnesia）以及模型倾向于高估自己工作成果的问题。通过实施基于结构化交接工件（handoff artifacts）的上下文重置，而非简单的上下文压缩，该系统能够在数小时的会话中保持高性能。评估智能体使用 Playwright MCP 等工具与实时界面进行交互，在 5-15 个周期内提供迭代反馈，以确保功能准确性和设计质量。",
+  "mainPoints": [
+    {
+      "point": "三智能体架构（规划、生成、评估）提高了长时间运行任务的可靠性。",
+      "explanation": "通过分离关注点，系统避免了“自我评分”偏差，即生成器容易忽略自身错误，尤其是在 UI 设计和工艺等主观领域。"
+    },
+    {
+      "point": "带有结构化交接的上下文重置解决了长会话中的“遗忘”问题。",
+      "explanation": "该架构没有采用可能导致模型过度谨慎的上下文压缩方式，而是使用清晰的重置和交接工件，确保每个智能体都从定义明确的状态开始工作。"
+    },
+    {
+      "point": "使用专业工具进行迭代评估，确保了高质量的前端输出。",
+      "explanation": "评估智能体使用 Playwright MCP 与实时页面进行交互，在长达 4 小时的多次优化周期内，从设计质量、原创性、工艺和功能等方面对页面进行评分。"
+    }
+  ],
+  "keyQuotes": [
+    "将执行工作的智能体与评判工作的智能体分离开来，被证明是解决这一问题的有力手段。",
+    "长时间运行的 AI 智能体失败的原因很简单：每一个新的上下文窗口都是一次遗忘。突破点在于结构。",
+    "该设计解决了自主编程工作流中常见的挑战，例如上下文丢失和任务过早终止。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "自主编程",
+    "Anthropic",
+    "软件工程",
+    "AI 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 476,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775312640000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-04 14:24:00"
+}
