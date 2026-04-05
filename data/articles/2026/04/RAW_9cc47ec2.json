@@ -1,0 +1,53 @@
+{
+  "id": "RAW_9cc47ec2",
+  "title": "发布：research-llm-apis 2026-04-04",
+  "url": "https://simonwillison.net/2026/Apr/5/research-llm-apis/#atom-everything",
+  "date": "2026-04-05 00:32:11",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">5th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/research-llm-apis/releases/tag/2026-04-04\">research-llm-apis 2026-04-04</a></span> <span class=\"beat-commit\">— Research into the HTTP APIs from various LLM providers.</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I'm working on a <a href=\"https://github.com/simonw/llm/issues/1314\">major change</a> to my LLM Python library and CLI tool. LLM provides an abstraction layer over hundreds of different LLMs from dozens of different vendors thanks to its plugin system, and some of those vendors have grown new features over the past year which LLM's abstraction layer can't handle, such as server-side tool execution.</p>\n      <p>To help design that new abstraction layer I had Claude Code read through the Python client libraries for Anthropic, OpenAI, Gemini and Mistral and use those to help craft <code>curl</code> commands to access the raw JSON for both streaming and non-streaming modes across a range of different scenarios. Both the scripts and the captured outputs now live in this new repo.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4084/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了一个研究仓库，记录了主要 LLM 提供商的原始 HTTP API 交互，旨在为他的 llm 库的重大架构更新提供参考。",
+  "oneSentenceSummary": "Simon Willison 发布了一个研究仓库，记录了主要 LLM 提供商的原始 HTTP API 交互，旨在为他的 llm 库的重大架构更新提供参考。",
+  "summary": "Simon Willison 推出了 research-llm-apis，这是一个包含对 Anthropic、OpenAI、Gemini 和 Mistral 的 HTTP API 进行详细研究的新仓库。这项工作支持对他现有的 llm Python 库和 CLI 工具进行重大重构，因为目前的库在抽象服务器端工具执行等较新功能时显得力不从心。通过使用 Claude Code 分析客户端库并生成 curl 命令，Willison 捕获了各种场景下的原始 JSON 响应，为构建稳健的 LLM 抽象层提供了基础参考。",
+  "mainPoints": [
+    {
+      "point": "用于 LLM API 研究的新仓库",
+      "explanation": "research-llm-apis 仓库记录了与 Anthropic、OpenAI、Gemini 和 Mistral 等主要提供商在流式和非流式模式下的原始 JSON 交互。"
+    },
+    {
+      "point": "推动 llm 库的重大更新",
+      "explanation": "该研究旨在重新设计 llm Python 库的抽象层，以支持当前插件无法处理的服务器端工具执行等高级功能。"
+    },
+    {
+      "point": "AI 辅助的研究工作流",
+      "explanation": "利用 Claude Code 解析官方 Python 客户端库并生成相应的 curl 命令，以捕获不同场景下的原始 API 行为。"
+    }
+  ],
+  "keyQuotes": [
+    "得益于其插件系统，LLM 为来自数十个不同供应商的数百种不同 LLM 提供了一个抽象层。",
+    "在过去的一年中，其中一些供应商增加了新功能，而 LLM 的抽象层无法处理这些功能，例如服务器端工具执行。",
+    "为了帮助设计新的抽象层，我让 Claude Code 阅读了 Python 客户端库……并利用它们来帮助编写访问原始 JSON 的 curl 命令。"
+  ],
+  "tags": [
+    "LLM",
+    "API",
+    "Python",
+    "Simon Willison",
+    "Claude Code"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 135,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775349131000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-05 00:32:11"
+}

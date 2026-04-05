@@ -1,0 +1,53 @@
+{
+  "id": "RAW_70842a15",
+  "title": "发布：scan-for-secrets 0.2",
+  "url": "https://simonwillison.net/2026/Apr/5/scan-for-secrets/#atom-everything",
+  "date": "2026-04-05 04:07:13",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">5th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.2\">scan-for-secrets 0.2</a></span> <span class=\"beat-commit\">— Scan for secrets in files you plan to share</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <ul>\n       <li>CLI tool now streams results as they are found rather than waiting until the end, which is better for large directories.</li>\n       <li><code>-d/--directory</code> option can now be used multiple times to scan multiple directories.</li>\n       <li>New <code>-f/--file</code> option for specifying one or more individual files to scan.</li>\n       <li>New <code>scan_directory_iter()</code>, <code>scan_file()</code> and <code>scan_file_iter()</code> Python API functions.</li>\n       <li>New <code>-v/--verbose</code> option which shows each directory that is being scanned.</li>\n      </ul>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4085/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "scan-for-secrets 0.2 发布，这是一个用于检测密钥的 CLI 工具和 Python 库，支持流式结果输出，并改进了文件/目录定位功能。",
+  "oneSentenceSummary": "scan-for-secrets 0.2 发布，这是一个用于检测密钥的 CLI 工具和 Python 库，支持流式结果输出，并改进了文件/目录定位功能。",
+  "summary": "Simon Willison 发布了 scan-for-secrets 0.2 版本，这是一个旨在防止意外泄露敏感信息的实用工具。此次更新带来了显著的易用性改进，包括用于提升大数据集处理性能的结果流式输出、扫描多个目录或特定单个文件的能力，以及用于程序化集成的全新 Python API 函数。",
+  "mainPoints": [
+    {
+      "point": "通过流式结果输出提升性能。",
+      "explanation": "CLI 工具现在会在发现结果时立即输出，而不是等待整个扫描完成，这显著改善了扫描大型目录时的体验。"
+    },
+    {
+      "point": "增强了文件和目录的扫描灵活性。",
+      "explanation": "用户现在可以使用 `-d` 标志指定多个目录，或通过新的 `-f` 选项定位特定的单个文件，从而实现更细粒度的控制。"
+    },
+    {
+      "point": "扩展了用于程序化使用的 Python API。",
+      "explanation": "诸如 `scan_directory_iter()` 和 `scan_file()` 等新函数使开发者能够将密钥扫描逻辑直接集成到他们自己的 Python 脚本和工作流中。"
+    }
+  ],
+  "keyQuotes": [
+    "扫描你计划共享的文件中的密钥",
+    "CLI 工具现在会在发现结果时流式输出，而不是等到最后，这对大型目录更友好。",
+    "新增了 scan_directory_iter()、scan_file() 和 scan_file_iter() Python API 函数。"
+  ],
+  "tags": [
+    "安全",
+    "CLI",
+    "Python",
+    "开源",
+    "密钥扫描"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 80,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775362033000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-05 04:07:13"
+}

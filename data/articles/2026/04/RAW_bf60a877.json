@@ -1,0 +1,58 @@
+{
+  "id": "RAW_bf60a877",
+  "title": "Linux 内核维护者崩溃了！AI 每天狂塞 10 份漏洞报告，想摸会鱼都难",
+  "url": "https://www.qbitai.com/2026/04/396358.html",
+  "date": "2026-04-05 02:24:23",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"91\">Jay 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"92\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">Linux内核维护者崩溃了。</p>\n  <p data-track=\"3\">现在<strong>AI找Bug的速度，比他们修Bug还快。</strong></p>\n  <p data-track=\"4\">好不容易加班加点扫完雷，睡一觉醒来——</p>\n  <p data-track=\"5\"><strong>邮箱又被一堆新的漏洞报告塞爆了。</strong></p>\n  <blockquote>\n   <p data-track=\"6\">从今年开始，每天雷打不动收到5到10份报告，周二周五尤其多。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260405030318_74c0bdb27a6b39ae80e0da363dc6b925.webp\" data-src=\"https://image.jido.dev/20260405030318_74c0bdb27a6b39ae80e0da363dc6b925.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">最搞心态的是，这些AI生成的报告，竟然大部分都还是对的，想摸鱼都没借口，何况这提交者还是一个不用睡觉的“赛博监工”。</p>\n  <p data-track=\"8\">干不完，活根本干不完。</p>\n  <p data-track=\"9\">谁曾想呢，<strong>AI成了Linux开发者的赛博马鞭</strong>。</p>\n  <blockquote>\n   <p data-track=\"10\">这有点吓人（也挺累的）。</p>\n  </blockquote>\n  <p data-track=\"11\">但又能咋办呢？</p>\n  <p data-track=\"12\">既然漏洞都摆在这儿了，总不能装死等着被黑客偷家吧？</p>\n  <p data-track=\"13\">只能硬着头皮熬夜开修。</p>\n  <p data-track=\"14\">最后这位维护者也只能无奈摊手：<strong>短期内是没辙了</strong>，劝同行们做好心理准备，大家一起受着吧。</p>\n  <blockquote>\n   <p data-track=\"15\">我们可能将迎来一段持续数年的大混乱时代。</p>\n  </blockquote>\n  <p data-track=\"17\">这并非某个维护者的独自悲伤。</p>\n  <p data-track=\"18\">“几个月前，我们收到了一些AI生成的低质量安全报告，”Linux内核负责人Greg Kroah-Hartman回忆道，<strong>“我们当时压根没当回事。”</strong></p>\n  <p data-track=\"19\">起初，人们都以为这只是AI生成的又一堆垃圾。</p>\n  <p data-track=\"20\">谁曾想，一夜之间，AI摇身一变，成了<strong>顶尖的白帽黑客</strong>。</p>\n  <p data-track=\"21\">各种AI报告疯狂轰炸邮箱，而且正确率极高——</p>\n  <p data-track=\"22\">打开一封，诶，这个说的还蛮有道理。</p>\n  <p data-track=\"23\">再看下一封，<strong>诶，怎么这个说的也是对的？？</strong></p>\n  <p data-track=\"24\">随即两眼一黑，开启了永无止境的打补丁……</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260405030318_d8f0f3be5a2a85117f93915fc6aab259.gif\" data-src=\"https://image.jido.dev/20260405030318_d8f0f3be5a2a85117f93915fc6aab259.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"25\">奇点来的过于突然，就连Greg这样的内核大佬都感到一头雾水：</p>\n  <blockquote>\n   <p data-track=\"26\">我们不知道发生了什么，没人知道。</p>\n  </blockquote>\n  <p data-track=\"27\">Greg表示，各大开源项目的安全团队私下交流非常频繁，他很明确地表示，<strong>“所有开源安全团队目前都在经历这件事。”</strong></p>\n  <p data-track=\"28\">至今都没缓过神来——到底是哪个新的AI工具横空出世了？</p>\n  <p data-track=\"29\">还是人们突然集体接入潜意识，不约而同地一拍脑袋：</p>\n  <p data-track=\"30\">“嘿，用AI挖漏洞好像很有意思，咱们一起来试试吧。”</p>\n  <p data-track=\"31\">无论原因究竟是什么，一个是事实是确定的——</p>\n  <p data-track=\"32\"><strong>海啸真的来了。</strong></p>\n  <blockquote>\n   <p data-track=\"34\">两年前，大概每周只有2到3份报告，过去一年增长到了每周大约10份……\n    <br class=\"sysbr\">\n    今年开始，每天都是5-10份。</p>\n  </blockquote>\n  <p data-track=\"35\">LWN.net上，一位网名叫<strong>wtarreau</strong>的Linux内核维护者，晒出了自己的“崩溃时刻”。</p>\n  <p data-track=\"36\">报告数量激增只是个表象。</p>\n  <p data-track=\"37\">真正让他头皮发麻的是，每天都能看到以前从未见过的“奇观”，反复上演：</p>\n  <p data-track=\"38\"><strong>两个不同的人，提交了同一份漏洞报告</strong></p>\n  <p data-track=\"39\">要知道，以前想找出安全漏洞，通常需要比较高的技术门槛，一份报告往往是人工深入分析出来的。</p>\n  <p data-track=\"40\">这也意味着，每个人的思路都不一样，大家会走向不同的方向。</p>\n  <p data-track=\"41\">在Linux这么庞大的代码库里，重复发现同一个漏洞？</p>\n  <p data-track=\"42\"><strong>这概率简直比中彩票还低。</strong></p>\n  <p data-track=\"43\">唯一的解释就是：现在有一大堆本来不是搞安全的人，都开始用AI来找漏洞了。</p>\n  <p data-track=\"44\">并且乐此不疲。</p>\n  <p data-track=\"45\">这让wtarreau的工作量瞬间爆炸，不得不扩张团队，摇人来帮忙。</p>\n  <p data-track=\"46\">不过，wtarreau倒没有说抱怨什么，反而表示这是一种<strong>“幸福的烦恼”</strong>。</p>\n  <p data-track=\"47\">但反过来想想，说不定也是件好事。</p>\n  <blockquote>\n   <p data-track=\"48\">好消息是，我怀疑现在bug报告的速度，已经比开发者编写bug的速度快了。\n    <br class=\"sysbr\">\n    所以，我们实际上可能正在清理积压已久的bug。</p>\n  </blockquote>\n  <p data-track=\"49\">这让wtarreau回想2000年之前，那是个<strong>令安全维护者们魂牵梦绕的黄金时代。</strong></p>\n  <blockquote>\n   <p data-track=\"50\">那时候，行业对安全漏洞的容忍度极低，根本没有现在这么多“屎山代码”。</p>\n  </blockquote>\n  <p data-track=\"51\">互联网还没普及，没法像现在这样OTA在线打补丁。</p>\n  <p data-track=\"52\">软件得刻录进CD或者写进成百万张软盘里分发，如果这面有啥严重的安全漏洞……完都完了。</p>\n  <p data-track=\"53\">所以，那时候的软件必须经得起千锤百炼。</p>\n  <p data-track=\"54\">如今，软件行业可能会被AI倒逼着，重新捡起这种<strong>“变态”的质检标准</strong>。</p>\n  <p data-track=\"55\">“发布完就撒手不管”的模式彻底行不通了。</p>\n  <p data-track=\"56\"><strong>每款软件现在都是活靶子。</strong></p>\n  <p data-track=\"57\"><strong>封禁机制</strong>失效了，厂商如果发现了漏洞，再没有借口“藏着不说”。</p>\n  <p data-track=\"58\">毕竟，即便有人提前通知了厂商，谁敢保证不会有坏人也用AI发现了同样的问题，然后拿去攻击用户？</p>\n  <p data-track=\"59\">所以一旦有bug被报告，维护者必须立马修复。</p>\n  <p data-track=\"60\">对此，wtarreau表示很兴奋。</p>\n  <p data-track=\"61\">虽然听上去有点吓人，也确实挺累，但<strong>软件质量可能会迎来一次前所未有的大提升。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260405030318_97b888a681829323f3b809f5c2b6bec2.webp\" data-src=\"https://image.jido.dev/20260405030318_97b888a681829323f3b809f5c2b6bec2.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"62\">不过，对于这种“幸福的烦恼”，<strong>有网友表示完全无法共情</strong>。</p>\n  <p data-track=\"63\">他直言这些Linux开发者<strong>纯粹是在自我感动</strong>，有些缺陷根本无人在意，盲目升级反而会带来兼容性灾难。</p>\n  <p data-track=\"64\">因此，他建议维护者们集中注意力，<strong>不用AI说什么就改什么</strong>，只要把那些最严重的系统级漏洞把好关就行了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260405030318_55186012453d1bc8210e4cf1c530f545.webp\" data-src=\"https://image.jido.dev/20260405030318_55186012453d1bc8210e4cf1c530f545.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"65\">对于这个观点，另一位网友则毫不客气地指出：<strong>这完全是无稽之谈，纯纯是在找借口。</strong></p>\n  <blockquote>\n   <p data-track=\"66\">每个人都觉得“哦，我的使用场景永远不会遇到这些bug”，但总会有倒霉蛋遇到某个特定的bug，然后被逼疯。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260405030318_f40e743f5e1aae3bb629733e0bc0afd5.webp\" data-src=\"https://image.jido.dev/20260405030318_f40e743f5e1aae3bb629733e0bc0afd5.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"68\">不过，这里或许还有一个更现实的问题——</p>\n  <p data-track=\"69\">“幸福的烦恼”可能过于美好了，谁能保证，<strong>这不会是一场史无前例的安全地狱？</strong></p>\n  <p data-track=\"70\">维护者修bug的手速，真的能跑赢犯罪分子用AI挖漏洞的速度吗？</p>\n  <p data-track=\"71\">但其实也没事儿，<strong>打不过，那咱就加入嘛。</strong></p>\n  <p data-track=\"72\">目前，AI在Linux内核开发里更多还是辅助，还没正式写完整代码。</p>\n  <p data-track=\"73\">但如今，这条界限正在变得越来越模糊。</p>\n  <p data-track=\"74\">内核大佬Greg自己就<strong>已经开始拿AI做实验</strong>了。</p>\n  <blockquote>\n   <p data-track=\"75\">我当时随手输了个很傻的提示词。结果它反手就甩给我60个补丁，其中三分之二竟然是对的。</p>\n  </blockquote>\n  <p data-track=\"76\">虽说这些补丁还得人工清理一下、补个漂亮的提交说明，再整合进去，但绝对不能管它们叫“AI垃圾”。</p>\n  <p data-track=\"77\">“这些工具是有用的，”Greg坦言，“<strong>我们不能装看不见</strong>。它们真的来了，而且越来越强。”</p>\n  <p data-track=\"78\">开发者们的身体也很诚实。“我们已经看到一些补丁确实是由AI生成的，”Greg补充道。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260405030318_47987a3e1ddd51900128e1033c3dede5.jpeg\" data-src=\"https://image.jido.dev/20260405030318_47987a3e1ddd51900128e1033c3dede5.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"79\">而这样做最大的好处，就是<strong>响应速度。</strong></p>\n  <p data-track=\"80\">Greg提到，现在我们有很多机器人在盯着补丁检查。</p>\n  <p data-track=\"81\">如果检查不通过，开发者能迅速收到答复，并给出反馈：“行，那我明天再提交一个版本。”</p>\n  <p data-track=\"82\">这样一来，打补丁的速度，会被拉齐到和AI挖洞速度同一水平。</p>\n  <p data-track=\"83\">对于Linux来说，跟AI的关系已经是他们不得不思考的问题了。</p>\n  <p data-track=\"84\"><strong>这既是机遇，也是挑战。</strong></p>\n  <p data-track=\"85\">一方面，AI带来了新的漏洞来源，加重了人工审查负担。</p>\n  <p data-track=\"86\">但另一方面，AI也在帮助缓解这种压力。</p>\n  <p data-track=\"87\">或许，Linux内核维护者们如今所面临的，正是这场AI革命全景图的缩影。</p>\n  <p data-track=\"88\">AI正在飞速发展，而这种发展，也逼得我们不得不去拥抱它。</p>\n  <p data-track=\"89\"><strong>系好安全带吧。</strong></p>\n  <p data-track=\"90\">参考链接：\n   <br class=\"sysbr\">\n   [1]\n   <br>\n   https://lwn.net/Articles/1065620/\n   <br class=\"sysbr\">\n   [2]\n   <br>\n   https://news.ycombinator.com/item?id=47611921\n   <br class=\"sysbr\">\n   [3]\n   <br>\n   https://www.theregister.com/2026/03/26/greg_kroahhartman_ai_kernel/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "AI 生成的漏洞报告在数量与准确度上双重爆发，正迫使 Linux 内核维护者改变工作流并利用 AI 辅助修补，预示着软件质量标准的新变革。",
+  "oneSentenceSummary": "AI 生成的漏洞报告在数量与准确度上双重爆发，正迫使 Linux 内核维护者改变工作流并利用 AI 辅助修补，预示着软件质量标准的新变革。",
+  "summary": "本文报道了 AI 工具对 Linux 内核维护生态带来的巨大冲击。随着 AI 挖洞能力的提升，维护者收到的漏洞报告从以往的每周几份激增至现在的每天 5-10 份。Linux 内核负责人 Greg Kroah-Hartman 等核心成员指出，这些报告已从早期的「AI 垃圾」进化为高准确率的白帽分析，使得维护者无法再以「摸鱼」或「忽略」来应对。这种现象虽然极大加重了人工审查负担，但也可能倒逼软件行业回归 2000 年前的高质量质检标准。为了应对这一挑战，维护者们也开始尝试利用 AI 自动生成补丁和进行初步审查，以实现「用 AI 对抗 AI」的响应速度。",
+  "mainPoints": [
+    {
+      "point": "AI 发现漏洞的速度已超越人类修复速度，成为维护者的「赛博马鞭」。",
+      "explanation": "AI 工具能够 24/7 不间断地扫描代码库，生成的报告数量呈指数级增长，迫使维护者进入高强度的打补丁循环。"
+    },
+    {
+      "point": "AI 报告的质量显著提升，从被忽视的垃圾信息转变为高准确率的技术分析。",
+      "explanation": "维护者发现现在的 AI 报告不仅逻辑自洽且大多正确，这标志着 AI 在安全审计领域的应用已跨越奇点。"
+    },
+    {
+      "point": "这种趋势可能终结「发布后撒手不管」的模式，迫使软件行业重拾极高质检标准。",
+      "explanation": "由于 AI 挖洞门槛降低，任何漏洞都可能被迅速发现并利用，厂商必须在漏洞被公开前完成修复，提升了整体安全门槛。"
+    },
+    {
+      "point": "维护者开始「加入 AI」，利用 AI 辅助生成补丁和自动化审查以提升响应效率。",
+      "explanation": "为了跑赢 AI 挖洞的速度，内核团队开始实验利用 AI 编写补丁，并使用机器人进行自动化初步校验。"
+    }
+  ],
+  "keyQuotes": [
+    "现在 AI 找 Bug 的速度，比他们修 Bug 还快。",
+    "我们可能将迎来一段持续数年的大混乱时代。",
+    "好消息是，我怀疑现在 bug 报告的速度，已经比开发者编写 bug 的速度快了。所以，我们实际上可能正在清理积压已久的 bug。",
+    "这些工具是有用的，我们不能装看不见。它们真的来了，而且越来越强。"
+  ],
+  "tags": [
+    "Linux 内核",
+    "AI 安全",
+    "漏洞挖掘",
+    "软件维护",
+    "Greg Kroah-Hartman"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 86,
+  "wordCount": 2422,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775355863000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-05 02:24:23"
+}
