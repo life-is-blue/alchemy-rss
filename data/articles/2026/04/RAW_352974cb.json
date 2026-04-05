@@ -1,0 +1,53 @@
+{
+  "id": "RAW_352974cb",
+  "title": "发布：scan-for-secrets 0.1",
+  "url": "https://simonwillison.net/2026/Apr/5/scan-for-secrets-3/#atom-everything",
+  "date": "2026-04-05 03:27:13",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">5th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.1\">scan-for-secrets 0.1</a></span> <span class=\"beat-commit\">— Scan for secrets in files you plan to share</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I like publishing transcripts of local Claude Code sessions using my <a href=\"https://github.com/simonw/claude-code-transcripts\">claude-code-transcripts</a> tool but I'm often paranoid that one of my API keys or similar secrets might inadvertently be revealed in the detailed log files.</p>\n      <p>I built this new Python scanning tool to help reassure me. You can feed it secrets and have it scan for them in a specified directory:</p>\n      <pre><code>uvx scan-for-secrets $OPENAI_API_KEY -d logs-to-publish/\n</code></pre>\n      <p>If you leave off the <code>-d</code> it defaults to the current directory.</p>\n      <p>It doesn't just scan for the literal secrets - it also scans for common encodings of those secrets e.g. backslash or JSON escaping, <a href=\"https://github.com/simonw/scan-for-secrets/blob/main/README.md#escaping-schemes\">as described in the README</a>.</p>\n      <p>If you have a set of secrets you always want to protect you can list commands to echo them in a <code>~/.scan-for-secrets.conf.sh</code> file. Mine looks like this:</p>\n      <pre><code>llm keys get openai\nllm keys get anthropic\nllm keys get gemini\nllm keys get mistral\nawk -F= '/aws_secret_access_key/{print $2}' ~/.aws/credentials | xargs\n</code></pre>\n      <p>I built this tool using README-driven-development: I carefully constructed the README describing exactly how the tool should work, then <a href=\"https://gisthost.github.io/?d4b1a398bf3b6b14aade923dea69a1ac/index.html\">dumped it into Claude Code</a> and told it to build the actual tool (using <a href=\"https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/\">red/green TDD</a>, naturally.)</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4087/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一个用于在共享文件前扫描密钥及其编码的 Python 工具，采用 AI 驱动的“README 优先”工作流开发。",
+  "oneSentenceSummary": "一个用于在共享文件前扫描密钥及其编码的 Python 工具，采用 AI 驱动的“README 优先”工作流开发。",
+  "summary": "Simon Willison 发布了 scan-for-secrets 0.1，这是一个 Python 工具，旨在防止在共享文件（如 LLM 会话记录）中意外泄露 API 密钥。该工具超越了简单的字符串匹配，能够扫描常见的编码格式，如 JSON 或反斜杠转义。它具备配置系统，允许用户将其他 CLI 工具的密钥导入扫描器。除了工具本身的实用性，Willison 还详细介绍了他的智能体工程工作流：先编写详尽的 README，然后使用 Claude Code 通过红/绿 TDD 来实现逻辑。",
+  "mainPoints": [
+    {
+      "point": "scan-for-secrets 有助于防止在共享记录或日志中意外泄露密钥。",
+      "explanation": "它会扫描目录以查找字面密钥以及 JSON 或反斜杠转义等常见编码，确保敏感数据不会被隐藏在显眼处。"
+    },
+    {
+      "point": "该工具支持通过配置文件自动检索密钥。",
+      "explanation": "用户可以在配置文件中定义命令，从环境变量管理器或凭据文件中获取密钥，从而简化扫描过程。"
+    },
+    {
+      "point": "开发过程采用了 README 驱动开发和 AI 智能体模式。",
+      "explanation": "作者首先在 README 中定义了工具的行为，然后使用 Claude Code 和红/绿 TDD 来实现这些功能。"
+    }
+  ],
+  "keyQuotes": [
+    "我经常担心我的 API 密钥或类似机密可能会在详细的日志文件中无意中泄露。",
+    "它不仅扫描字面上的密钥，还会扫描这些密钥的常见编码，例如反斜杠或 JSON 转义。",
+    "我使用 README 驱动开发构建了这个工具：我仔细编写了描述工具应如何工作的 README，然后将其丢给 Claude Code，并让它构建实际的工具。"
+  ],
+  "tags": [
+    "Python",
+    "安全",
+    "API 密钥",
+    "Claude Code",
+    "TDD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 88,
+  "wordCount": 208,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775359633000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-05 03:27:13"
+}

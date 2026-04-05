@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-05 20:06:35 | [返回首页](/README.md)
+**更新时间**: 2026-04-05 22:10:19 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10771)
+- [AI & 大模型](#ai-llm) (10780)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (752)
 - [DevOps](#devops) (485)
@@ -43,7 +43,7 @@
 - [在自有基础设施中运行云端智能体-·-Cursor](https://cursor.com/blog/self-hosted-cloud-agents) - AI 精选
 - [Anthropic-揭秘-Agent-长线开发架构：引入-GAN-机制，Claude-自主撸出全栈应用](https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513629&idx=1&sn=c07fd107eab09cce0ee40a4f822e0957) - AI 精选
 
-- [查看全部 10771 篇...](/details/tags/ai-llm.md)
+- [查看全部 10780 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
