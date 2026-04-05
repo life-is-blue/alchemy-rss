@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-05 12:48:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-05 14:23:46 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent)
 
-2026-04-04 11:45:37 | 标签: 编程智能体, 智能体框架, LLM 架构, 上下文管理, 软件工程
-
-> Sebastian Raschka 解释说，像 Claude Code 这样的编程智能体之所以表现出色，源于其“智能体框架”（agentic harness）——即围绕 LLM 构建的软件脚手架。他将该架构拆解为六大支柱：1) 用于工作区感知的实时代码库上下文（Live Repo Context）；2) 降低计算成本的高效提示词缓存（Prompt Caching）；3) 带有验证和权限控制的结构化工具使用（Structured Tool Use）；4) 防止冗余的上下文压缩（Context Compaction）；5) 用于持久化状态的结构化会话记忆（Structured Session Me...
+2026-04-04 11:45:37
 
 
 
@@ -11440,17 +11438,13 @@
 
 ### [19-岁常青藤辍学团队重构-AI-记忆：M-FLOW-图路由架构深度解析](https://www.qbitai.com/2026/04/396069.html)
 
-2026-04-04 08:24:39 | 标签: RAG, AI 记忆引擎, M-FLOW, 图路由, 知识图谱
-
-> 本文深入解析了由心流元素（FlowElement）团队开发的第三代 AI 记忆引擎 M-FLOW。针对传统 RAG 仅停留在文本形态匹配、缺乏结构化理解且难以处理复杂推理的痛点，M-FLOW 提出了「倒锥形」分层知识拓扑结构。该架构将知识组织为从细粒度实体到粗粒度事件单元的四层有向图，利用图路由 Bundle Search 算法，在检索时从精确的「锥尖」捕获信号，并沿具备语义信息的边向下传播至「锥底」汇聚评分。这种机制实现了毫秒级响应、跨文档实体桥接及轻量级多跳推理，在 LoCoMo 等主流 Benchmark 中性能显著领先 Mem0 和 Graphiti，为 AI Agent 的长期记忆提...
+2026-04-04 08:24:39
 
 
 
 ### [踩坑三个月，我们总结出的-Agent-Harness-实践与反思](https://mp.weixin.qq.com/s?__biz=MzAxMDMxOTI2NA==&mid=2649107032&idx=1&sn=858bb227ad6859d06b7324dc03c16e39)
 
-2026-04-04 08:01:00 | 标签: Agent Harness, AI Agent, LLMOps, 工程实践, Context 隔离
-
-> 文章深入探讨了在非 Coding 场景（如广告营销）下构建 AI Agent 的工程挑战。作者指出，由于营销 Agent 具有不可逆性、业务逻辑微妙及反馈延迟等特征，传统的 Harness 标准必须升级。核心实践包括：将文档约束转化为机器可执行的 Linter 脚本；通过 Context 隔离而非跨模型来实现有效的自我评估；建立 Delivery Tier 分级治理体系，根据交付风险动态调整管控强度；以及采用渐进式披露管理 Agent 的上下文。实测数据表明，这套基础设施将产研效率提升了近 3 倍，使人类从繁琐的质量检查者转变为决策者。
+2026-04-04 08:01:00
 
 
 
@@ -34418,9 +34412,7 @@
 
 ### [Anthropic-的三智能体架构设计支持长时间运行的全栈-AI-开发](https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-04 14:24:00 | 标签: 多智能体系统, 自主编程, Anthropic, 软件工程, AI 智能体
-
-> Anthropic 推出了一种专门用于长时间运行的自主应用开发的多智能体架构设计，涵盖前端设计和全栈开发。该框架将职责划分为三个不同的智能体：规划（Planning）、生成（Generation）和评估（Evaluation）。这种结构解决了 AI 编程中常见的挑战，例如上下文遗忘（context amnesia）以及模型倾向于高估自己工作成果的问题。通过实施基于结构化交接工件（handoff artifacts）的上下文重置，而非简单的上下文压缩，该系统能够在数小时的会话中保持高性能。评估智能体使用 Playwright MCP 等工具与实时界面进行交互，在 5-15 个周期内提供迭代反馈，...
+2026-04-04 14:24:00
 
 
 
