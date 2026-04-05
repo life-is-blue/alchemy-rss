@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 00:06:50 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-06 02:07:09 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3439,9 +3439,7 @@
 
 ### [发布：scan-for-secrets-0.2](https://simonwillison.net/2026/Apr/5/scan-for-secrets/#atom-everything)
 
-2026-04-05 04:07:13 | 标签: 安全, CLI, Python, 开源, 密钥扫描
-
-> Simon Willison 发布了 scan-for-secrets 0.2 版本，这是一个旨在防止意外泄露敏感信息的实用工具。此次更新带来了显著的易用性改进，包括用于提升大数据集处理性能的结果流式输出、扫描多个目录或特定单个文件的能力，以及用于程序化集成的全新 Python API 函数。
+2026-04-05 04:07:13
 
 
 
@@ -12141,9 +12139,7 @@
 
 ### [Java-近期资讯：GraalVM-Build-Tools、EclipseLink、Spring-里程碑版本、Open-Liberty-和-Quarkus](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=4&sn=069f3b8ad6b88e8b63e8545a12593002)
 
-2026-04-05 02:15:00 | 标签: Java, Spring Boot, JDK 27, GraalVM, Quarkus
-
-> 文章详细介绍了 Java 社区近期的一系列重要更新。核心亮点包括 JDK 27 Build 15 早期访问版的发布，以及 GraalVM Native Build Tools 1.0.0 的正式面世，标志着原生镜像构建工具链的进一步成熟。Spring 生态表现活跃，发布了 Spring Boot 4.1.0、Spring Modulith 2.1.0 和 Spring AI 2.0.0 的第四个里程碑版本，重点增强了对 gRPC 观测、事件外部化及 Gemini 模型工具配置的支持。此外，EclipseLink 5.0.0 实现了对 Jakarta Persistence 3.2 规范的支持，...
+2026-04-05 02:15:00
 
 
 
@@ -31893,11 +31889,11 @@
 
 
 
-### [被封杀当晚，OpenAI-拿到了相同条款——Amodei-首次专访揭开-Anthropic-与五角大楼冲突内幕](https://baoyu.io/blog/2026-02-28/anthropic-ceo-trump-pentagon-clash)
+### [从写代码到管-Agent：斯坦福首门-AI-软件开发课的讲师说，大多数工程师还没准备好](https://baoyu.io/blog/2026-02-27/from-writing-code-to-managing-agents)
 
-2026-02-28T00:00:00.000Z
+2026-02-27T00:00:00.000Z
 
-> 2026 年 2 月 27 日，特朗普点名封杀 Anthropic，五角大楼将其列为「国家安全供应链风险」。当晚 CEO Dario Amodei 首次面对镜头回应。而同一个晚上，OpenAI 拿到了包含完全相同限制条款的合同。
+> 斯坦福首门 AI 软件开发课讲师 Mihail Eric 谈初级开发者的三重困境、多 Agent 编排的真正难点、Agent 友好代码库的标准，以及为什么初级工程师的'无知无畏'在 AI 时代反而是超能力。
 
 
 
