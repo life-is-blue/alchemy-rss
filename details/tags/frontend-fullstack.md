@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 20:12:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-06 22:19:04 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -636,6 +636,14 @@
 
 
 
+### [TanStack-Start-推出导入保护机制，强化服务器与客户端边界划分](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280955&idx=4&sn=20e8ae09cb990b886938653da7c321c5)
+
+2026-04-06 03:56:00 | 标签: TanStack Start, React, Vite, 全栈开发, 代码安全
+
+> 本文介绍了全栈 React 框架 TanStack Start 引入的实验性功能——导入保护（Import Protection）。该机制旨在解决全栈开发中常见的代码边界泄露问题，防止敏感的服务器端逻辑（如数据库查询、环境变量）意外进入客户端包。系统以 Vite 插件形式运行，支持基于文件命名规范（*.server.* 或 *.client.*）、显式副作用导入标记以及 Vite 配置选项来强制执行边界限制。文章还对比了 Next.js 的实现方案，并详细说明了该功能在开发环境（Mock 代理与警告）与构建阶段（中止报错并提供诊断信息）的不同行为，旨在提升开发体验并降低安全风险。
+
+
+
 ### [ESLint-v10：扁平化配置完成与-JSX-追踪](https://www.infoq.com/news/2026/04/eslint-10-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-04-01 15:27:00
@@ -762,13 +770,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -918,13 +926,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2418,13 +2426,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4128,13 +4136,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

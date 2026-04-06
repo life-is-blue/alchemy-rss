@@ -1,0 +1,57 @@
+{
+  "id": "RAW_64f1b785",
+  "title": "Pinterest 部署生产级模型上下文协议生态系统，赋能 AI 智能体工作流",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280955&idx=3&sn=ef6721746b5c1dcc572b79683714aba6",
+  "date": "2026-04-06 03:56:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Leela Kumili </span></p>\n   <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 明知山 </span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Pinterest 的工程团队搭建了一个内部模型上下文协议（MCP）生态系统，用于驱动 AI 智能体，实现复杂工程任务自动化，并大规模集成各类内部工具与数据源。该架构目前已上线生产级 MCP 服务器、中心注册表以及跨开发者工具集成，将以往零散的临时对接方式替换为标准化、安全且可扩展的 AI 工具调用底层架构。MCP 让语言模型可通过统一的客户端 / 服务器端机制调用工具、访问结构化数据，使智能体能够执行日志分析、排查缺陷工单等任务，直接对接实时内部系统。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Pinterest 的工程师强调：</span></p>\n   <blockquote>\n    <p><span leaf=\"\">我们采用内部云托管、通过中心注册表连接多个领域专有 MCP 服务器，构建了一个灵活且安全的 AI 智能体底层架构，并将其直接融入到员工的日常工作流程中。</span></p>\n   </blockquote>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">该架构的核心是一组云托管的 MCP 服务器，每个服务器均专注于特定领域（如&nbsp;Presto、Spark&nbsp;或&nbsp;Airflow），而非采用单一的单体服务。这种面向特定领域的设计能够有效抑制上下文膨胀，实现工具隔离，并支持细粒度的访问控制。统一的部署管道负责管理基础设施、扩缩容与服务生命周期，让工程师能够专注于工具接口的定义。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">中心 MCP 注册表作为已审批服务器及其连接元数据的唯一可信数据源，提供了易用的 UI 与 API，支持服务发现、校验，并可集成至内部 AI 客户端与 IDE。客户端在调用工具前会先查询注册表，完成权限与服务器状态校验，统一执行治理策略。Pinterest 通过“节省时间”这一核心指标来衡量该生态体系的价值：工具所有者结合轻量化用户反馈及与人工流程的对比估算每次调用所节省的时间。截至 2025 年 1 月，MCP 服务器月调用量达 66000 次，覆盖 844 名活跃用户，每月可节省约 7000 工时。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503797299\" data-ratio=\"0.5833333333333334\" style=\"width: 100%;\" data-type=\"png\" data-w=\"1440\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=498bae23&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FhLLZnAbUwNhNFgvrpSHKictY3qDZJc5Lplk0EK6Y46O45tBx9HXKYNjFDp03P8lo06xQqYmZgmPxiaoicaZ9qypa2YZTNpm53qm2WT2G3T67ib4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Pinterest MCP 生态系统架构图（来源：</span><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Pinterest 博文</span><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">AI 智能体工作流已集成至聊天平台与 IDE，可通过注册表发现 MCP 服务器。智能体能够自主排查事件、生成上下文摘要或提出变更建议。由于 MCP 服务器可执行自动化操作，Pinterest 要求对敏感操作进行人工审批，使用&nbsp;elicitation&nbsp;在执行前核验潜在风险操作。由智能体提出变更，人工在应用变更前对其进行批准或驳回。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img\" data-aistatus=\"1\" data-imgfileid=\"503797300\" data-ratio=\"0.5721854304635762\" style=\"width: 100%;\" data-type=\"png\" data-w=\"1510\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=fdb560e5&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FhLLZnAbUwNh1nyZibQpCCsCaDwORZpFXd2zP4VP1KBoR9jPh000xjI84DDLQwsylwZasLTNCu82eVnv7dnWkcyfU6cR1GfImuQMAWYxyS8lQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:center;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">开发 MCP 服务器的端到端流程（来源：</span><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">Pinterest 博文</span><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\">）</span></span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">安全与治理通过双层授权模型来实现，人工访问通过终端用户 JWT 来控制，服务流程则依赖服务网格身份。各服务器实现细粒度授权装饰器与业务组权限校验，将高权限操作限定在已批准的团队。OAuth 流程复用现有内部认证体系，避免额外弹窗验证，同时保证完整的可审计性。所有 MCP 服务器均需遵循 MCP 安全标准，并在投入生产前通过安全、法律 / 隐私及生成式 AI 相关要求审核。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">这种架构思路与 AI 辅助自动化的整体发展趋势保持一致，重点在于实现对实时系统和结构化数据安全且可靠的访问，而非仅提供简单的 NLP 接口。从概念验证到建成生产就绪的生态系统这一过程为企业级 AI 自动化提供了可规模化落地的范例。Pinterest 将持续扩充 MCP 服务器集群，深化工程场景下的集成应用，优化治理模型，在严守安全与合规标准的前提下进一步提升开发者工作效率。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">查看英文原文：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/\" target=\"_blank\">https://www.infoq.com/news/2026/04/pinterest-mcp-ecosystem/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Pinterest 通过构建包含领域专用服务器、中心注册表及人工审批机制的生产级 MCP 生态系统，实现了 AI 智能体对内部工具的安全集成，每月节省约 7000 工时。",
+  "oneSentenceSummary": "Pinterest 通过构建包含领域专用服务器、中心注册表及人工审批机制的生产级 MCP 生态系统，实现了 AI 智能体对内部工具的安全集成，每月节省约 7000 工时。",
+  "summary": "本文详细介绍了 Pinterest 如何在生产环境中落地模型上下文协议（MCP）。该架构弃用了单体服务，转而采用面向 Presto、Spark 等特定领域的云托管 MCP 服务器，以减少上下文膨胀并增强隔离性。核心组件包括一个中心注册表，用于服务发现与治理。为了平衡自动化与安全，Pinterest 引入了双层授权模型及针对敏感操作的人工审批流程。截至 2025 年初，该系统已显著提升研发效率，月调用量突破 6.6 万次，为企业级 AI 自动化提供了可规模化的落地范例。",
+  "mainPoints": [
+    {
+      "point": "采用领域专用 MCP 服务器架构而非单体服务。",
+      "explanation": "通过为 Presto、Spark 或 Airflow 等特定领域构建独立服务器，有效抑制了 LLM 的上下文膨胀，实现了工具隔离并支持细粒度的访问控制。"
+    },
+    {
+      "point": "建立中心 MCP 注册表作为唯一可信源。",
+      "explanation": "注册表提供易用的 UI 与 API，支持服务发现、校验，并统一执行治理策略，确保客户端在调用工具前完成权限验证。"
+    },
+    {
+      "point": "引入人工审批（Human-in-the-loop）机制平衡风险。",
+      "explanation": "针对敏感的自动化操作，要求人工在执行前进行核验与批准，确保 AI 智能体在提升效率的同时不触发系统性风险。"
+    },
+    {
+      "point": "基于 JWT 和服务网格身份的双层安全模型。",
+      "explanation": "复用现有内部认证体系实现 OAuth 流程，将高权限操作限定在已批准团队，并保证了完整的操作可审计性。"
+    }
+  ],
+  "keyQuotes": [
+    "我们采用内部云托管、通过中心注册表连接多个领域专有 MCP 服务器，构建了一个灵活且安全的 AI 智能体底层架构。",
+    "这种面向特定领域的设计能够有效抑制上下文膨胀，实现工具隔离，并支持细粒度的访问控制。",
+    "截至 2025 年 1 月，MCP 服务器月调用量达 66000 次，覆盖 844 名活跃用户，每月可节省约 7000 工时。"
+  ],
+  "tags": [
+    "MCP",
+    "AI Agent",
+    "系统架构",
+    "研发效能",
+    "生产级部署"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 84,
+  "wordCount": 1199,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775447760000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 03:56:00"
+}

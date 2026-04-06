@@ -1,0 +1,57 @@
+{
+  "id": "RAW_3edcecc6",
+  "title": "智能时代的产业政策",
+  "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+  "date": "2026-04-06 02:30:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"@container w-full max-w-container @md:shaded-container:px-0!\">\n   <div class=\"relative w-full\" style=\"--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4\">\n    <div class=\"multi-columns:px-0 @md:shaded-container:px-0! @container grid w-full grid-cols-12\">\n     <div class=\"col-span-12 @md:col-span-10 @md:col-start-2 @lg:col-span-8 @lg:col-start-3\">\n      <div class=\"relative flex flex-col items-center text-center\">\n       <div class=\"mb-md gap-2xs flex flex-wrap justify-center\">\n        <p class=\"text-meta text-primary-100\">\n         <br>\n        </p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"max-w-container multi-columns:px-0 multi-columns:flex @container grid w-full grid-cols-12\">\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>As we move toward superintelligence, incremental policy updates won’t be enough. To kick-start this much needed conversation, OpenAI is offering </span><a href=\"http://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" referrerpolicy=\"no-referrer-when-downgrade\"><span>a slate of people-first policy ideas</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span> designed to expand opportunity, share prosperity, and build resilient institutions—ensuring that advanced AI benefits everyone.</span></p>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>These ideas are ambitious, but intentionally early and exploratory. We offer them not as a comprehensive or final set of recommendations, but as a starting point for discussion that we invite others to build on, refine, challenge, or choose among through the democratic process. To help sustain momentum, OpenAI is:</span></p>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <ol class=\"mb-md marker:text-inherit last:mb-0 in-[:where(ul,ol)]:mt-2 list-decimal ps-md mx-3xs\">\n     <li class=\"mb-4xs\"><span>welcoming and organizing feedback through </span><a class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" href=\"mailto:newindustrialpolicy@openai.com\"><span>newindustrialpolicy@openai.com</span>⁠</a></li>\n     <li class=\"mb-4xs\"><span>establishing a pilot program of fellowships and focused research grants of up to $100,000 and up to $1 million in API credits for work that builds on these and related policy ideas</span></li>\n     <li class=\"mb-4xs\"><span>convening discussions at our new OpenAI Workshop opening in May in Washington, DC.</span></li>\n    </ol>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Read the full ideas document </span><a href=\"http://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" referrerpolicy=\"no-referrer-when-downgrade\"><span>here⁠</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span>.</span></p>\n   </div>\n  </div>\n  <div class=\"@container w-full\">\n   <div class=\"@lg:max-w-container flex w-auto\">\n    <div class=\"w-full no-scrollbar snap-x snap-mandatory overflow-x-auto overflow-y-hidden\">\n     <div class=\"@md:gap-sm px-sm @md:px-md pe-sm flex min-w-224 @md:min-w-[unset] @lg:px-0 grid flex-none grid-cols-3\">\n      <div class=\"mb-md relative @md:mb-0 ps-sm snap-start @md:ps-0 min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 针对超级智能时代提出了一套全新的“以人为本”的产业政策框架，旨在邀请全球共同探讨，并提供资助以支持相关研究。",
+  "oneSentenceSummary": "OpenAI 针对超级智能时代提出了一套全新的“以人为本”的产业政策框架，旨在邀请全球共同探讨，并提供资助以支持相关研究。",
+  "summary": "OpenAI 发布了一份名为《智能时代的产业政策》的基础性文件，指出渐进式的政策更新不足以应对向超级智能过渡的挑战。该提案侧重于扩大机会并建立具有韧性的机构，以确保 AI 造福所有人。为了促进对话，OpenAI 正在启动一个反馈渠道、一个提供大量资金（最高 10 万美元的赠款和 100 万美元的 API 额度）的试点研究员项目，并在华盛顿特区设立了一个实体研讨中心，以召集各方利益相关者。",
+  "mainPoints": [
+    {
+      "point": "从渐进式政策转向变革性政策",
+      "explanation": "OpenAI 认为，当前的政策框架不足以应对超级智能所带来的变革规模，因此需要对产业战略进行根本性的重新思考。"
+    },
+    {
+      "point": "以人为本的繁荣路径",
+      "explanation": "所提议的理念优先考虑扩大经济机会，并确保通过具有韧性的机构，让先进 AI 的红利在全社会广泛共享。"
+    },
+    {
+      "point": "协作与民主化的发展",
+      "explanation": "该文件被定位为一个探索性的起点，旨在通过民主进程邀请各方反馈和完善，而非作为一套最终的强制性指令。"
+    },
+    {
+      "point": "激励政策研究",
+      "explanation": "OpenAI 正通过研究员项目和 API 额度来支持这一倡议，鼓励外部专家在这些政策理念的基础上进行构建或提出挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "随着我们迈向超级智能时代，渐进式的政策更新将不再足够。",
+    "OpenAI 提出了一系列以人为本的政策构想，旨在扩大机会、共享繁荣并建立具有韧性的机构。",
+    "我们提出这些构想并非作为全面或最终的建议，而是作为讨论的起点，我们邀请各方通过民主进程对其进行构建、完善、挑战或选择。"
+  ],
+  "tags": [
+    "产业政策",
+    "OpenAI",
+    "AI 治理",
+    "超级智能",
+    "公共政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 156,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775442600000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 02:30:00"
+}

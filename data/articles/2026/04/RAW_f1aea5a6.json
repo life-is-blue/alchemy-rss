@@ -1,0 +1,57 @@
+{
+  "id": "RAW_f1aea5a6",
+  "title": "具身 Scaling Law 验证：Generalist 发布 Gen-1 模型，实现机器人任务成功率 99%",
+  "url": "https://www.qbitai.com/2026/04/396694.html",
+  "date": "2026-04-06 05:17:06",
+  "author": "克雷西",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <h5 data-pm-slice=\"0 0 []\">克雷西 发自 凹非寺\n   <br>\n   量子位 | 公众号 QbitAI</h5>\n  <p>机器人也开始内卷了，一位表现极其离谱的“新员工”，直接拉高了机器人的“就业门槛”。</p>\n  <p>具身智能独角兽Generalist，刚刚推出了最新的研究成果——新模型Gen-1。</p>\n  <p>在包装手机和折叠纸箱这些精细活儿上，它把机器人的成功率从64%硬生生拉到了99%，几乎告别了手残职业病。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img __bg_gif\" src=\"https://image.jido.dev/20260406060511_5bb57361a1e2b3457870821ef754a0d3.gif\" alt=\"img\" data-src=\"https://image.jido.dev/20260406060510_bf6d536.gif\" data-ratio=\"0.5458333333333333\" data-type=\"gif\" data-w=\"480\" data-imgfileid=\"100396736\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"2\" data-order=\"0\" data-report-img-idx=\"0\" data-fail=\"0\">\n  </section>\n  <p>以前折叠一个标准纸箱需要慢悠悠地磨掉34秒，现在GEN-1仅用12.1秒就能完成，效率直接开启了3倍速模式。<span data-pm-slice=\"0 0 []\"> \n    <br> \n   </span></p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img __bg_gif\" src=\"https://image.jido.dev/20260406060511_150492d7c0a8b4815eb0959974786a02.gif\" alt=\"图片\" data-src=\"https://image.jido.dev/20260406060510_ec6076c.gif\" data-ratio=\"0.6208333333333333\" data-type=\"gif\" data-w=\"480\" data-imgfileid=\"100396757\" data-aistatus=\"1\" data-original-style=\"null\" data-index=\"3\" data-order=\"1\" data-report-img-idx=\"1\" data-fail=\"0\">\n  </section>\n  <p><span data-pm-slice=\"0 0 []\">而且，GEN-1的表现，也用实际表现验证了机器人领域的Scaling Law。</span></p>\n  <h2>机器人模型卷出新高度</h2>\n  <p>GEN-1上岗后的表现简直像是在倍速播放，而且即便面对维护扫地机器人200次这种枯燥任务，它也能稳如泰山。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img __bg_gif\" src=\"https://image.jido.dev/20260406060511_051d14a3f19e14488d9f50378dabe1f8.gif\" alt=\"img\" data-src=\"https://image.jido.dev/20260406060510_c9e9bb6.gif\" data-ratio=\"0.5541666666666667\" data-type=\"gif\" data-w=\"480\" data-imgfileid=\"100396731\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"4\" data-order=\"2\" data-report-img-idx=\"5\" data-fail=\"0\">\n  </section>\n  <p>甚至连续装箱1800次，也能从从容容游刃有余。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img __bg_gif\" src=\"https://image.jido.dev/20260406060511_5435e274e1c5eb1d4dadc42e7c9734cf.gif\" alt=\"img\" data-src=\"https://image.jido.dev/20260406060510_baae9c6.gif\" data-ratio=\"0.5458333333333333\" data-type=\"gif\" data-w=\"480\" data-imgfileid=\"100396732\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"5\" data-order=\"3\" data-report-img-idx=\"4\" data-fail=\"0\">\n  </section>\n  <p>更离谱的是它处理突发状况的脑回路。</p>\n  <p>如果零件在流水线上被意外撞歪了，它绝不会傻站在那儿报错，会自己切换抓取角度，甚至动用两只手配合着把活干完。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img __bg_gif\" src=\"https://image.jido.dev/20260406060512_06403e3ac1fff0b7f27358fc42dc4548.gif\" alt=\"img\" data-src=\"https://image.jido.dev/20260406060510_9fa6db3.gif\" data-ratio=\"0.55\" data-type=\"gif\" data-w=\"480\" data-imgfileid=\"100396735\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"6\" data-order=\"4\" data-report-img-idx=\"6\" data-fail=\"0\">\n  </section>\n  <p>这种靠直觉解决问题的即兴智能，让它在处理乱七八糟的杂物时表现得像个干了十年的老师傅，那种死读程序的铁疙瘩僵硬感彻底消失了。</p>\n  <h2>用人类活动记录训练机器人</h2>\n  <p>为了让GEN-1具备使机器人变身“全能打工人”的能力，研发团队对数据处理架构进行了重写。</p>\n  <p>他们没有死磕昂贵且难以扩展的机器人遥操作数据这条老路，转而通过低成本穿戴设备捕捉了数百万项人类活动记录，让AI像看电影一样预习物理世界的潜规则。</p>\n  <p>这种“去机器人化”的预训练方案巧妙绕过了数据规模的瓶颈，让基础模型在接触机械臂之前，就已经从人类视角洞察了空间、时间与物理因果。</p>\n  <p>这种基于50万小时高保真物理交互数据集练就的底座，让它的学习效率直接起飞，达到了前代模型的10倍。</p>\n  <p>哪怕是面对从未见过的奇怪任务或陌生的机器身体，给GEN-1一个小时的实机演示，也能让它火速入职。</p>\n  <p>另外，为了让机器人的动作不再卡成PPT，以及实现实时操控，研发团队还在推理端祭出了两项关键技术。</p>\n  <p>首先是专门为物理世界打造的分页注意力（Paged Attention）机制。</p>\n  <p>在处理PB级别的物理交互数据流时，传统的内存管理方式容易导致计算资源分配不均，进而产生响应延迟。</p>\n  <p>Paged Attention通过更高效地调度计算资源，解决了动作指令发射时的调度难题，确保每一个动作指令都能在毫秒级的时间维度内即时发射，让AI的反应速度能跟上现实世界的物理节奏。</p>\n  <p>配合演进的还有一套Harmonic Reasoning系统。它作为推理层面的核心组件，改变了以往单一路径预测动作的死板模式。</p>\n  <p>它允许模型在输出指令时通过多尺度的动态调节来引导权重，使其在执行折叠纸箱或包装手机等复杂动态任务时，能够展现出超越单一模型权重分布的性能上限。</p>\n  <p>研发团队为此投入数月时间优化训练稳定性，并编写了大量自定义内核来压榨硬件算力的极限。</p>\n  <p>GEN-1的性能跨越，证明了Scaling Law在物理世界依然有效——只要喂够了数据和算力，机器人的脑子也会产生“开窍”时刻。</p>\n  <p>通过大规模预训练，机器人不再生硬地模仿动作序列，自己悟出了空间、时间和因果关系的规律，感知到了物体之间的相互影响。</p>\n  <p>有了直觉之后，机器人干活就开始带点“灵性”。当任务中途出现没见过的阻碍，它会自发尝试一些教学大纲以外的操作，比如发现东西塞不进去时会像人一样晃晃袋子。</p>\n  <p>这种即兴解题的能力源于它真正理解了“动作会导致后果”的逻辑。</p>\n  <p>即使现场零件被意外撞歪，它也能凭直觉找回节奏，不需要人类像保姆一样每一步都盯着纠错。</p>\n  <p>这种在真实世界摔打出来的经验，让原本悬浮在百科全书里的抽象文字变成了实打实的行动力。</p>\n  <p>研发团队通过对齐技术，给这种即兴天赋装上了“导航仪”，确保机器人“临场发挥”的动作依然会严丝合缝地待在用户设定的规范里。</p>\n  <p>这种进化，让机器人从一个只能按部就班的机器，变成了一个真正懂物理常识、能独立处理复杂局面的“职场老手”。</p>\n  <h2>DeepMind大牛创业成果</h2>\n  <p>GEN-1的底层逻辑，源于资深团队在机器人领域的长期积累，创始人Pete Florence的技术背景，为这一方案提供了深厚的理论底色。</p>\n  <section>\n   <img decoding=\"async\" class=\"rich_pages wxw-img\" src=\"https://image.jido.dev/20260406060511_7263997e8dee13e1cb7c5f8a7ea18284.webp\" alt=\"img\" data-src=\"https://image.jido.dev/20260406060510_c9426cf.png\" data-ratio=\"0.30925925925925923\" data-type=\"png\" data-w=\"1080\" data-imgfileid=\"100396733\" data-aistatus=\"1\" data-original-style=\"margin: 0px auto;padding: 0px;display: block;height: auto;width: 520px;\" data-index=\"7\" data-report-img-idx=\"3\" data-fail=\"0\">\n  </section>\n  <p>他曾任Google DeepMind高级研究科学家，通过Dense Object Nets等工作探索了视觉引导下机器人从感知到动作的端到端学习路径。</p>\n  <p>在谷歌PaLM团队工作期间，他作为核心力量参与并主导了PaLM-E、RT-2等多个具备代际跨越意义的机器人项目。</p>\n  <p>2024年，Pete Florence离开谷歌并创立了Generalist。</p>\n  <p>即便在他离职后的2025年3月，DeepMind在发布的Gemini Robotics论文中依然四次引用了他参与合著的研究。</p>\n  <p>参考链接：\n   <br>\n   https://generalistai.com/blog/apr-02-2026-GEN-1</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "具身智能独角兽 Generalist 发布 Gen-1 模型，通过大规模人类活动数据预训练验证了具身 Scaling Law，显著提升了机器人在复杂任务中的成功率与效率。",
+  "oneSentenceSummary": "具身智能独角兽 Generalist 发布 Gen-1 模型，通过大规模人类活动数据预训练验证了具身 Scaling Law，显著提升了机器人在复杂任务中的成功率与效率。",
+  "summary": "本文介绍了具身智能初创公司 Generalist 发布的最新研究成果 Gen-1 模型。该模型在包装手机和折叠纸箱等精细任务中，将机器人成功率从 64% 提升至 99%，效率提高 3 倍。Gen-1 的核心突破在于其「去机器人化」的预训练方案，利用低成本穿戴设备捕捉的数百万项人类活动记录，而非昂贵的遥操作数据，使模型在接触机械臂前即掌握物理因果规律。技术上，团队引入了专为物理交互设计的 Paged Attention 机制以确保毫秒级响应，并采用 Harmonic Reasoning 系统实现多尺度动态调节。Gen-1 的成功证明了 Scaling Law 在具身智能领域的有效性，使其展现出处理突发状况的即兴智能。",
+  "mainPoints": [
+    {
+      "point": "Gen-1 模型显著提升了机器人执行精细任务的成功率与效率。",
+      "explanation": "在折叠纸箱等任务中，成功率从 64% 跃升至 99%，完成时间从 34 秒缩短至 12.1 秒，展现了极高的工业应用潜力。"
+    },
+    {
+      "point": "采用「去机器人化」的大规模预训练方案绕过数据瓶颈。",
+      "explanation": "通过低成本穿戴设备捕捉数百万项人类活动记录，让模型在接触机械臂前就从人类视角洞察空间、时间与物理因果，学习效率提升 10 倍。"
+    },
+    {
+      "point": "引入 Paged Attention 与 Harmonic Reasoning 优化推理性能。",
+      "explanation": "Paged Attention 解决了 PB 级数据流下的计算调度难题，确保动作指令即时发射；Harmonic Reasoning 则允许模型在复杂动态任务中进行多尺度权重调节。"
+    },
+    {
+      "point": "验证了 Scaling Law 在具身智能领域的适用性。",
+      "explanation": "大规模数据与算力的投入使机器人产生了理解物理规律的「开窍」时刻，具备了处理意外状况（如零件撞歪）的即兴解题能力。"
+    }
+  ],
+  "keyQuotes": [
+    "这种「去机器人化」的预训练方案巧妙绕过了数据规模的瓶颈，让基础模型在接触机械臂之前，就已经从人类视角洞察了空间、时间与物理因果。",
+    "GEN-1 的性能跨越，证明了 Scaling Law 在物理世界依然有效——只要喂够了数据和算力，机器人的脑子也会产生「开窍」时刻。",
+    "这种即兴解题的能力源于它真正理解了「动作会导致后果」逻辑。"
+  ],
+  "tags": [
+    "具身智能",
+    "Scaling Law",
+    "Gen-1",
+    "Generalist",
+    "机器人"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 88,
+  "wordCount": 1865,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775452626000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 05:17:06"
+}

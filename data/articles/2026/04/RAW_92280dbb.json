@@ -1,0 +1,48 @@
+{
+  "id": "RAW_92280dbb",
+  "title": "发布：datasette-ports 0.2",
+  "url": "https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything",
+  "date": "2026-04-06 03:25:43",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">6th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/datasette/datasette-ports/releases/tag/0.2\">datasette-ports 0.2</a></span> <span class=\"beat-commit\">— Find all currently running Datasette instances and list their ports</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>No longer requires Datasette - running <code>uvx datasette-ports</code> now works as well.</li>\n        <li>Installing it as a Datasette plugin continues to provide the <code>datasette ports</code> command.</li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4092/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "发布 datasette-ports 0.2，这是一个用于查找正在运行的 Datasette 实例及其端口的工具，现已支持通过 uvx 独立运行。",
+  "oneSentenceSummary": "发布 datasette-ports 0.2，这是一个用于查找正在运行的 Datasette 实例及其端口的工具，现已支持通过 uvx 独立运行。",
+  "summary": "Simon Willison 宣布发布 datasette-ports 0.2。该实用工具可帮助用户识别系统中当前所有正在运行的 Datasette 实例。此版本的主要更新在于不再需要预先安装 Datasette；用户现在可以直接使用 `uvx datasette-ports` 运行它。它仍然兼容作为 Datasette 插件使用，提供 `datasette ports` 命令。",
+  "mainPoints": [
+    {
+      "point": "通过 uvx 独立执行。",
+      "explanation": "该工具现在无需本地安装 Datasette，即可使用 `uvx datasette-ports` 运行，简化了其作为快速诊断工具的使用流程。"
+    },
+    {
+      "point": "发现正在运行的 Datasette 实例。",
+      "explanation": "其主要功能仍然是扫描系统以列出所有活跃 Datasette 进程的端口，有助于本地开发管理。"
+    }
+  ],
+  "keyQuotes": [
+    "不再需要 Datasette —— 现在运行 `uvx datasette-ports` 也可以。",
+    "将其作为 Datasette 插件安装，依然可以提供 `datasette ports` 命令。"
+  ],
+  "tags": [
+    "Datasette",
+    "Python",
+    "CLI 工具",
+    "uvx",
+    "数据库工具"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 42,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775445943000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 03:25:43"
+}

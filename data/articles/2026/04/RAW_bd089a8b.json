@@ -1,0 +1,52 @@
+{
+  "id": "RAW_bd089a8b",
+  "title": "发布：scan-for-secrets 0.3",
+  "url": "https://simonwillison.net/2026/Apr/6/scan-for-secrets/#atom-everything",
+  "date": "2026-04-06 02:59:28",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">6th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/scan-for-secrets/releases/tag/0.3\">scan-for-secrets 0.3</a></span> <span class=\"beat-commit\">— Scan for secrets in files you plan to share</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <blockquote>\n       <ul>\n        <li>New <code>-r/--redact</code> option which shows the list of matches, asks for confirmation and then replaces every match with <code>REDACTED</code>, taking escaping rules into account.</li>\n        <li>New Python function <code>redact_file(file_path: str | Path, secrets: list[str], replacement: str = \"REDACTED\") -&gt; int</code>.</li>\n       </ul>\n      </blockquote>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4090/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了 scan-for-secrets 0.3，引入了一项新的脱敏功能，可在共享文件前安全地移除敏感信息。",
+  "oneSentenceSummary": "Simon Willison 发布了 scan-for-secrets 0.3，引入了一项新的脱敏功能，可在共享文件前安全地移除敏感信息。",
+  "summary": "本发布说明宣布了 scan-for-secrets 0.3 版本，这是一个旨在识别并掩盖文件中敏感数据的实用工具。此次更新引入了一个命令行选项 `-r/--redact`，它会在将匹配项替换为占位符之前提示用户确认，同时会遵循特定文件的转义规则。此外，它还公开了一个新的 Python 函数 `redact_file`，允许开发者将脱敏逻辑以编程方式集成到他们自己的工作流中。",
+  "mainPoints": [
+    {
+      "point": "新的交互式脱敏功能。",
+      "explanation": "该工具现在支持一个命令行标志，用于审查检测到的密钥，并在确认后将其替换为 REDACTED 占位符。"
+    },
+    {
+      "point": "上下文感知的密钥替换。",
+      "explanation": "脱敏逻辑考虑了转义规则，确保在移除密钥后文件结构依然有效。"
+    },
+    {
+      "point": "通过 Python API 进行程序化访问。",
+      "explanation": "提供了一个新的 redact_file 函数，支持将密钥扫描和脱敏集成到自定义 Python 脚本和自动化流程中。"
+    }
+  ],
+  "keyQuotes": [
+    "扫描你计划共享的文件中的密钥",
+    "新的 -r/--redact 选项，它会显示匹配列表，请求确认，然后将每个匹配项替换为 REDACTED，同时考虑了转义规则。"
+  ],
+  "tags": [
+    "安全",
+    "Python",
+    "开源",
+    "开发者工具",
+    "数据脱敏"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 55,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775444368000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 02:59:28"
+}

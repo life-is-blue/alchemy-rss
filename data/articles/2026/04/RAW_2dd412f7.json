@@ -1,0 +1,48 @@
+{
+  "id": "RAW_2dd412f7",
+  "title": "工具：清理 Claude Code 粘贴内容",
+  "url": "https://simonwillison.net/2026/Apr/6/cleanup-claude-code-paste/#atom-everything",
+  "date": "2026-04-06 02:55:23",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">6th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label tool\">Tool</span> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/cleanup-claude-code-paste\">Cleanup Claude Code Paste</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Super-niche tool this. I sometimes copy prompts out of the Claude Code terminal app and they come out with a bunch of weird additional whitespace. This tool cleans that up.</p>\n      <p><img alt=\"Screenshot of a web tool titled &quot;Cleanup Claude Code Paste&quot; with the subtitle &quot;Paste terminal output to remove the ❯ prompt, fix wrapped-line whitespace, and join lines into clean text.&quot; An input textarea contains pasted terminal output starting with &quot;❯ Add a -r/--redact option which asks for user approval (after telling it how many replacements will happen and in which files and which lines – standard output basically) and then rewrites the files in that folder to replace all matched secrets with REDACTED. Run tests with 'uv run pytest' and use red/green TDD&quot;. Below is a &quot;Cleaned output:&quot; section showing the same text with the ❯ prompt removed and whitespace cleaned up. A blue &quot;Copy to clipboard&quot; button appears at the bottom.\" src=\"https://static.simonwillison.net/static/2026/claude-code-cleanup.jpg\"></p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4091/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一个专门的小众 Web 工具，旨在清理从 Claude Code CLI 复制文本时产生的终端提示符和不规则空格。",
+  "oneSentenceSummary": "一个专门的小众 Web 工具，旨在清理从 Claude Code CLI 复制文本时产生的终端提示符和不规则空格。",
+  "summary": "Simon Willison 开发了一款专门的 Web 工具，用于解决从 Claude Code 终端应用程序复制文本时出现的格式问题。该工具可以自动删除终端提示符（❯），修复因折行导致的空格错误，并将碎片化的文本行合并为整洁、可用的文本。该工具简化了记录或分享 AI 辅助终端工作流的过程。",
+  "mainPoints": [
+    {
+      "point": "解决 Claude Code 终端输出中特定的格式问题。",
+      "explanation": "从 Claude Code CLI 复制文本时，经常会引入多余的提示符和断开的空格，从而影响可读性和复用性。"
+    },
+    {
+      "point": "提供精简的基于 Web 的清理工作流。",
+      "explanation": "该工具自动删除“❯”字符，并将折行后的文本重新组合成连续的文本块，节省了手动编辑的时间。"
+    }
+  ],
+  "keyQuotes": [
+    "这是一个超级小众的工具。我有时会从 Claude Code 终端应用中复制提示词，但复制出来的文本总是带有一堆奇怪的多余空格。",
+    "粘贴终端输出内容，即可删除 ❯ 提示符，修复折行引起的空格问题，并将文本行合并为整洁的格式。"
+  ],
+  "tags": [
+    "Claude Code",
+    "开发者工具",
+    "CLI",
+    "文本处理",
+    "生产力"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 38,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775444123000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 02:55:23"
+}
