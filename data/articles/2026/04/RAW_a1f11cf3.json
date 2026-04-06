@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a1f11cf3",
+  "title": "让离线强化学习从「局部描摹」变「全局布局」丨 ICLR’26",
+  "url": "https://www.qbitai.com/2026/04/396738.html",
+  "date": "2026-04-06 05:35:27",
+  "author": "一水",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p data-track=\"1\">面对复杂连续任务的长程规划，现有的生成式离线强化学习方法往往会暴露短板。</p>\n  <p data-track=\"2\">它们生成的轨迹经常陷入<strong>局部合理但全局偏航</strong>的窘境。</p>\n  <p data-track=\"3\">它们太关注眼前的每一步，却忘了最终的目的地。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060310_fe1d7ef8f93f0ddd4aefb2155b7296a3.webp\" data-src=\"https://image.jido.dev/20260406060310_fe1d7ef8f93f0ddd4aefb2155b7296a3.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"4\">针对这一痛点，厦门大学和香港科技大学提出一种名为<strong>MAGE</strong>（魔法师，Multi-scale Autoregressive Generation）的离线强化学习新算法。</p>\n  <p data-track=\"5\">MAGE与现有序列生成方法不同，MAGE采用自顶向下的“由粗到细”生成策略，先建模轨迹的宏观规划，再逐步细化微观细节。</p>\n  <p data-track=\"6\">MAGE的核心思路非常符合人类的直觉：<strong>“自顶向下、由粗到细”</strong>。</p>\n  <p data-track=\"7\">这就好比画一幅素描，你不会一上来就描绘眼睛的睫毛，而是先画出整体的身体轮廓（宏观规划），再逐步细化五官和表情</p>\n  <p data-track=\"8\">（微观动作）</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060310_d603837cd42fd876082f9b34714fde5d.webp\" data-src=\"https://image.jido.dev/20260406060310_d603837cd42fd876082f9b34714fde5d.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"11\">为了直观展示现有模型的缺陷，研究团队设计了一个<strong>迷宫吃金币小实验</strong>。智能体需要从随机起点出发，依靠对环境的<strong>长程空间理解</strong>，先吃银币，再吃金币，最后抵达终点。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060309_62207dc6c943a36d9c6cadf71c05e08b.webp\" data-src=\"https://image.jido.dev/20260406060309_62207dc6c943a36d9c6cadf71c05e08b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\">然而，面对这种需要全局规划的场景，现有的模型纷纷暴露了缺陷。</p>\n  <ul>\n   <li data-track=\"14\">Decision Transformer受限于<strong>单向自回归特性带来的全局上下文缺失</strong>，它在长程规划中完全迷失方向，最终连终点都未能抵达。</li>\n   <li data-track=\"15\">Decision Diffuser则由于扩散模型固有的<strong>局部生成偏差</strong>，生成的轨迹往往只能保证局部合理；虽然智能体抵达了终点，却遗漏了关键的一枚金币，全局连贯性较差。</li>\n   <li data-track=\"16\">Hierarchical Diffuser虽然尝试通过分层结构建模全局轨迹，但由于其固定的<strong>双层结构过于僵硬</strong>，<strong>高低层策略之间缺乏有效协同</strong>，生成的轨迹甚至出现了物理违规的“穿墙”现象，全局规划与局部动作严重脱节。</li>\n  </ul>\n  <p data-track=\"17\">相比之下，MAGE则通过多尺度“从粗到细”的生成架构成功完成了任务。它首先在最粗的时间尺度上勾勒出包含所有关键节点的<strong>宏观全局轮廓</strong>，随后利用多尺度Transformer在<strong>更细的时间尺度上逐层细化</strong>，顺利规划出完整的路径。</p>\n  <p data-track=\"19\">MAGE采用“自顶向下、由粗到细”的生成方式。MAGE包含两大核心模块，并辅以精确的控制机制：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060310_7dbd72b48d2e219db58d0680346b6187.webp\" data-src=\"https://image.jido.dev/20260406060310_7dbd72b48d2e219db58d0680346b6187.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"21\"><strong>MTAE多尺度轨迹自编码器：</strong>MAGE将长序列轨迹转化为从粗到细的多尺度离散Token。粗尺度的Token负责掌控<strong>全局长程结构</strong>，最细尺度的Token则详细建模<strong>短期的动态细节</strong>。</p>\n  <p data-track=\"22\"><strong>多尺度条件引导自回归生成：</strong>模型使用Transformer序列化地生成这些多尺度Token。在生成每层时，都会严格以“目标回报”和“初始状态”作为条件进行约束，确保智能体的每一步都在朝着最终目标前进。</p>\n  <p data-track=\"23\"><strong>条件引导细化与动作决策：</strong>因为把连续世界变成离散Token会丢失信息，普通的生成过程容易让轨迹起点偏离现实。为此，MAGE在解码器中集成了轻量级的适配器（adapter）模块，并引入了<strong>条件引导损失函数Lcond</strong>，强制解码出的初始状态与真实环境是精确对齐的。最后，通过潜在逆动力学模型决定最终的动作。</p>\n  <p data-track=\"25\">研究团队在包含Adroit、Franka Kitchen、AntMaze等<strong>5个离线RL基准测试</strong>中，将MAGE与<strong>15种</strong>具有代表性的基线算法进行了广泛的评估。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060310_ffb1d6a188bfd91aa0684dbbae65d62a.webp\" data-src=\"https://image.jido.dev/20260406060310_ffb1d6a188bfd91aa0684dbbae65d62a.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"27\">在极具挑战的高维连续控制<strong>Adroit机械臂任务</strong>中，面对极其稀疏的奖励，MAGE实现了显著的性能提升，大幅优于对比方法。在强调子目标执行顺序的<strong>Franka Kitchen组合任务</strong>中，MAGE凭借捕获全局结构和局部细节的能力，以相当大的优势超越了所有竞争算法。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060310_ae30d83cf6f5efb74c4cf6199b26d31e.webp\" data-src=\"https://image.jido.dev/20260406060310_ae30d83cf6f5efb74c4cf6199b26d31e.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"28\">在<strong>迷宫导航</strong>任务中，MAGE在所有数据集上均取得了最佳性能，证明了其处理长序列导航任务的卓越能力。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260406060310_5d47c8cc0f799a2ae21d1a7c132fe503.webp\" data-src=\"https://image.jido.dev/20260406060310_5d47c8cc0f799a2ae21d1a7c132fe503.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"30\">MAGE在保持高性能的同时，实现了出色的计算效率平衡。实验数据表明，MAGE的运行速度比Hierarchical Diffuser快<strong>约50倍</strong>，比Decision Diffuser<strong>快80倍</strong>。其每步推理时间保持在27毫秒，完美满足了<strong>真实机器人控制</strong>所要求的20 Hz<strong>实时运行门槛</strong>。</p>\n  <p data-track=\"32\">MAGE成功地将多尺度轨迹建模与条件引导相结合，通过“从粗到细”的自回归框架生成连贯且可控的高回报轨迹。当有一天，机器人不再需要人类一口一口地“喂”奖励，而是能够自主审视全局，制定长远计划并流畅执行时，也许具身智能的下一个奇点就真正到来了。</p>\n  <p data-track=\"33\"><strong>论文链接：</strong></p>\n  <p>https://arxiv.org/abs/2602.23770\n   <br class=\"sysbr\">\n   <strong>开源代码：</strong></p>\n  <p>https://github.com/xmu-rl-3dv/MAGE\n   <br class=\"sysbr\">\n   <strong>实验室主页：</strong>\n   <br>\n   https://asc.xmu.edu.cn/</p>\n  <p data-track=\"34\"><strong>作者介绍：</strong>\n   <br>\n   本文第一作者来自厦门大学空间感知与计算实验室（ASC Lab）2024级硕士生林晨兴、2025级硕士生高鑫辉，通讯作者为厦门大学沈思淇副教授，并由张海鹏、李欣然（香港科技大学）、王海涛、梅松竹副研究员、刘伟权副教授（集美大学）、王程教授共同合作完成。研究团队长期聚焦于强化学习，多智能体系统以及大模型智能体。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "厦门大学与香港科技大学提出 MAGE 算法，通过「由粗到细」的多尺度自回归生成框架，解决了离线强化学习在长程规划中全局连贯性不足的问题。",
+  "oneSentenceSummary": "厦门大学与香港科技大学提出 MAGE 算法，通过「由粗到细」的多尺度自回归生成框架，解决了离线强化学习在长程规划中全局连贯性不足的问题。",
+  "summary": "本文介绍了入选 ICLR 2026 的离线强化学习新算法 MAGE（Multi-scale Autoregressive Generation）。针对现有生成式方法（如 Decision Transformer 和 Diffusion-based 方法）在复杂任务中容易陷入「局部合理但全局偏航」的痛点，MAGE 借鉴人类素描逻辑，采用「自顶向下、由粗到细」的策略。其核心包含多尺度轨迹自编码器（MTAE）和条件引导的自回归生成模块，先构建宏观全局轮廓再逐层细化微观动作细节。实验表明，MAGE 在 Adroit、Franka Kitchen 等 5 个基准测试中表现优异，且推理速度比主流扩散模型快 50-80 倍，满足机器人实时控制的 20Hz 门槛。",
+  "mainPoints": [
+    {
+      "point": "现有生成式离线强化学习方法在长程规划中存在「局部合理但全局偏航」的问题。",
+      "explanation": "Decision Transformer 受限于单向自回归导致的全局上下文缺失，而扩散模型存在局部生成偏差，导致在复杂迷宫或长序列任务中轨迹不连贯甚至违背物理规则。"
+    },
+    {
+      "point": "MAGE 提出「自顶向下、由粗到细」的多尺度轨迹建模策略。",
+      "explanation": "通过 MTAE 将轨迹转化为多尺度 Token，粗尺度负责掌控全局长程结构，细尺度建模短期动态细节，确保了规划的全局一致性与局部精确度。"
+    },
+    {
+      "point": "MAGE 在保持高性能的同时，实现了极高的计算效率与实时性。",
+      "explanation": "推理速度比同类分层扩散模型快 50-80 倍，每步推理仅需 27 毫秒，成功跨越了真实机器人控制所需的 20Hz 实时运行门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "MAGE 采用自顶向下的'由粗到细'生成策略，先建模轨迹的宏观规划，再逐步细化微观细节。",
+    "粗尺度的 Token 负责掌控全局长程结构，最细尺度的 Token 则详细建模短期的动态细节。",
+    "MAGE 的运行速度比 Hierarchical Diffuser 快约 50 倍，比 Decision Diffuser 快 80 倍。其每步推理时间保持在 27 毫秒，完美满足了真实机器人控制所要求的 20 Hz 实时运行门槛。"
+  ],
+  "tags": [
+    "离线强化学习",
+    "MAGE",
+    "ICLR 2026",
+    "长程规划",
+    "多尺度生成"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 86,
+  "wordCount": 1797,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775453727000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-06 05:35:27"
+}
