@@ -1,0 +1,53 @@
+{
+  "id": "RAW_1d10d3e3",
+  "title": "工具：Syntaqlite Playground",
+  "url": "https://simonwillison.net/2026/Apr/5/syntaqlite/#atom-everything",
+  "date": "2026-04-05 19:32:59",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">5th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label tool\">Tool</span> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/syntaqlite\">Syntaqlite Playground</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>Lalit Maganti's <a href=\"https://github.com/LalitMaganti/syntaqlite\">syntaqlite</a> is currently being discussed <a href=\"https://news.ycombinator.com/item?id=47648828\">on Hacker News</a> thanks to <a href=\"https://lalitm.com/post/building-syntaqlite-ai/\">Eight years of wanting, three months of building with AI</a>, a deep dive into exactly how it was built.</p>\n      <p>This inspired me to revisit <a href=\"https://github.com/simonw/research/tree/main/syntaqlite-python-extension#readme\">a research project</a> I ran when Lalit first released it a couple of weeks ago, where I tried it out and then compiled it to a WebAssembly wheel so it could run in Pyodide in a browser (the library itself uses C and Rust).</p>\n      <p>This <a href=\"https://tools.simonwillison.net/syntaqlite\">new playground</a> loads up the Python library and provides a UI for trying out its different features: formating, parsing into an AST, validating, and tokenizing SQLite SQL queries.</p>\n      <p><img src=\"https://static.simonwillison.net/static/2026/syntaqlite-playground.jpg\" alt=\"Screenshot of a dark-themed SQL validation playground called SyntaqLite. The &quot;Validate&quot; tab is selected from options including Format, Parse, Validate, and Tokenize. The SQL input contains &quot;SELECT id, name FROM usr WHERE active = 1&quot; with a schema defining &quot;users&quot; and &quot;posts&quot; tables. Example buttons for &quot;Table typo&quot;, &quot;Column typo&quot;, and &quot;Valid query&quot; are shown above a red &quot;Validate SQL&quot; button. The Diagnostics panel shows an error for unknown table 'usr' with the suggestion &quot;did you mean 'users'?&quot;, and the JSON panel displays the corresponding error object with severity, message, and offset fields.\"></p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4088/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 介绍了一个基于 Web 的 Syntaqlite Playground，这是一个用于解析、验证和格式化 SQLite 查询的工具，由该库的 WebAssembly 移植版本驱动。",
+  "oneSentenceSummary": "Simon Willison 介绍了一个基于 Web 的 Syntaqlite Playground，这是一个用于解析、验证和格式化 SQLite 查询的工具，由该库的 WebAssembly 移植版本驱动。",
+  "summary": "本文重点介绍了由 Lalit Maganti 开发的 Syntaqlite 库，该库用于高级 SQLite SQL 操作，包括格式化、AST（抽象语法树）解析、验证和分词。Simon Willison 分享了他实现的一个交互式 Playground，该 Playground 通过将原始的 C 和 Rust 库编译为 Pyodide 的 WebAssembly wheel 而构建。该 Playground 允许开发者在浏览器中针对自定义模式（schema）测试 SQL 查询，并提供实时诊断以及针对表名或列名拼写错误的智能建议。",
+  "mainPoints": [
+    {
+      "point": "Syntaqlite 是一个用于 SQLite SQL 格式化、解析和验证的综合工具。",
+      "explanation": "该库允许对 SQL 查询进行深度检查，包括生成抽象语法树（AST）并对查询进行分词以供进一步分析。"
+    },
+    {
+      "point": "该工具通过 WebAssembly 和 Pyodide 被移植到浏览器中。",
+      "explanation": "通过将 C 和 Rust 源代码编译为 WASM wheel，该库可以在浏览器内的 Python 环境中运行，从而实现交互式 Playground。"
+    },
+    {
+      "point": "高级诊断功能可为 SQL 错误提供可操作的反馈。",
+      "explanation": "验证功能可以检测模式（schema）不匹配并建议更正，例如识别表名拼写错误并根据模式推荐正确的表名。"
+    }
+  ],
+  "keyQuotes": [
+    "Lalit Maganti 的 syntaqlite 目前正在 Hacker News 上被讨论，这得益于《Eight years of wanting， three months of building with AI》（八年的渴望，三个月的 AI 构建之旅）一文，该文深入探讨了它是如何构建的。",
+    "这个新的 Playground 加载了 Python 库，并提供了一个 UI 来尝试其各种功能：格式化、解析为 AST、验证以及对 SQLite SQL 查询进行分词。",
+    "该库本身使用 C 和 Rust 编写。"
+  ],
+  "tags": [
+    "SQLite",
+    "WebAssembly",
+    "SQL 验证",
+    "开发者工具",
+    "Pyodide"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 85,
+  "wordCount": 115,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775417579000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-05 19:32:59"
+}

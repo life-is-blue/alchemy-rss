@@ -1,0 +1,53 @@
+{
+  "id": "RAW_19a08ee1",
+  "title": "来自 Chengpeng Mou 的引述",
+  "url": "https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything",
+  "date": "2026-04-05 21:47:06",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">5th April 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://twitter.com/cpmou2022/status/2040606209800290404\">\n     <p>From anonymized U.S. ChatGPT data, we are seeing:</p>\n     <ul>\n      <li>~2M weekly messages on health insurance</li>\n      <li>~600K weekly messages [classified as healthcare] from people living in “hospital deserts” (30 min drive to nearest hospital)</li>\n      <li>7 out of 10 msgs happen outside clinic hours</li>\n     </ul>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://twitter.com/cpmou2022/status/2040606209800290404\">Chengpeng Mou</a>, <span class=\"context\">Head of Business Finance, OpenAI</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2135/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 的数据显示，ChatGPT 在医疗保健领域发挥着重要作用，每周有数百万条信息集中在保险问题以及医疗资源匮乏地区的医疗可及性差距上。",
+  "oneSentenceSummary": "OpenAI 的数据显示，ChatGPT 在医疗保健领域发挥着重要作用，每周有数百万条信息集中在保险问题以及医疗资源匮乏地区的医疗可及性差距上。",
+  "summary": "Simon Willison 引用了 OpenAI 商业财务主管 Chengpeng Mou 关于美国匿名 ChatGPT 使用数据的言论。统计数据显示，医疗保健相关的查询量巨大，包括每周 200 万条关于健康保险的信息，以及 60 万条来自医疗资源匮乏地区用户的查询。其中 70% 的信息发生在诊所工作时间之外，这一事实凸显了 AI 作为服务不足群体 24/7 医疗信息桥梁的新兴作用。",
+  "mainPoints": [
+    {
+      "point": "ChatGPT 正在填补医疗可及性的关键缺口。",
+      "explanation": "每周有 60 万条信息来自医疗资源匮乏地区，对于那些居住地距离最近医院超过 30 分钟车程的人来说，AI 正成为主要的医疗信息来源。"
+    },
+    {
+      "point": "AI 在健康查询方面的使用主要与传统医疗服务不同步。",
+      "explanation": "70% 的医疗保健相关信息发生在标准诊所工作时间之外，这凸显了人们对 24/7 全天候医疗信息获取的需求，而传统医疗系统无法满足这一点。"
+    },
+    {
+      "point": "健康保险导航是 LLM 交互的主要驱动力。",
+      "explanation": "每周约 200 万条专门关于健康保险的信息量表明，用户正在利用 AI 来应对复杂的行政和财务系统。"
+    }
+  ],
+  "keyQuotes": [
+    "每周约 200 万条关于健康保险的信息",
+    "每周约 60 万条 [归类为医疗保健] 的信息来自居住在“医疗资源匮乏地区”（距离最近的医院需 30 分钟车程）的人们",
+    "十分之七的信息发生在诊所工作时间之外"
+  ],
+  "tags": [
+    "OpenAI",
+    "ChatGPT",
+    "医疗 AI",
+    "数据洞察",
+    "AI 应用"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 52,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775425626000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-05 21:47:06"
+}

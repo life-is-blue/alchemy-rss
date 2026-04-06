@@ -1,15 +1,21 @@
-> **更新时间**: 2026-03-21 08:09:33 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-06 08:13:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Salesforce-CEO-谈微软阻碍-OpenAI-投资、AI-替罪羊现象、OpenClaw-及监管](https://www.youtube.com/watch?v=OzUqfN4mcrM)
+
+2026-04-05 21:48:47 | 标签: Salesforce, Marc Benioff, AI 智能体, Slack, 企业级 AI
+
+> 在本次采访中，Salesforce CEO Marc Benioff 概述了公司对于“智能体企业”（Agentic Enterprise）的愿景，强调将 Slack 转变为 AI 智能体的主要对话界面。Benioff 探讨了组织结构的转变、AI 赋能的通才（generalists）的崛起，以及数据完整性和 AI 安全的重要性。他还分享了关于微软对 OpenAI 投资影响的内部观点、Salesforce 向 Anthropic 的转型，并批评了那些将 AI 作为裁员借口的 CEO 们。
+
+
+
 ### [关于代码智能体、AutoResearch-与-AI-循环时代的安德烈·卡帕西](https://www.youtube.com/watch?v=kwSVtQ7dziU)
 
-2026-03-20 13:27:35 | 标签: AI 智能体, 安德烈·卡帕西, 软件工程, AutoResearch, LLM
-
-> 在这场深度对话中，安德烈·卡帕西描述了他工作方式的根本转变，从编写代码转变为每天管理 AI 智能体团队 16 小时。他提出了 AI 的「循环时代」，其中像 Claude 这样的智能体在具有持久记忆和沙盒环境的背景下自主运行。卡帕西详细介绍了他的「AutoResearch」项目，该项目实现了超参数调优和发现的自动化，表明前沿实验室正越来越多地专注于将人类从研究循环中移除。讨论涵盖了「氛围编程」、软件需求中的杰文斯悖论，以及「模型物种形成」现象——在特定任务中，专门的较小模型可能会超越通用模型。最后，他展望了教育的未来，专家们教智能体如何教人类，将人类角色从直接教学转变为课程设计。
+2026-03-20 13:27:35
 
 
 
@@ -289,7 +295,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -301,7 +307,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

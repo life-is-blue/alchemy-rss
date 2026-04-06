@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 06:05:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-06 08:13:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -483,6 +483,14 @@
 ### [2025-09-03-Hacker-News-Top-Stories-#](https://supertechfans.com/cn/post/2025-09-03-HackerNews/)
 
 2025-09-03 06:58:51
+
+
+
+### [工具：Syntaqlite-Playground](https://simonwillison.net/2026/Apr/5/syntaqlite/#atom-everything)
+
+2026-04-05 19:32:59 | 标签: SQLite, WebAssembly, SQL 验证, 开发者工具, Pyodide
+
+> 本文重点介绍了由 Lalit Maganti 开发的 Syntaqlite 库，该库用于高级 SQLite SQL 操作，包括格式化、AST（抽象语法树）解析、验证和分词。Simon Willison 分享了他实现的一个交互式 Playground，该 Playground 通过将原始的 C 和 Rust 库编译为 Pyodide 的 WebAssembly wheel 而构建。该 Playground 允许开发者在浏览器中针对自定义模式（schema）测试 SQL 查询，并提供实时诊断以及针对表名或列名拼写错误的智能建议。
 
 
 
