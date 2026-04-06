@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 22:19:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-07 00:14:07 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3445,9 +3445,7 @@
 
 ### [具身-Scaling-Law-验证：Generalist-发布-Gen-1-模型，实现机器人任务成功率-99%](https://www.qbitai.com/2026/04/396694.html)
 
-2026-04-06 05:17:06 | 标签: 具身智能, Scaling Law, Gen-1, Generalist, 机器人
-
-> 本文介绍了具身智能初创公司 Generalist 发布的最新研究成果 Gen-1 模型。该模型在包装手机和折叠纸箱等精细任务中，将机器人成功率从 64% 提升至 99%，效率提高 3 倍。Gen-1 的核心突破在于其「去机器人化」的预训练方案，利用低成本穿戴设备捕捉的数百万项人类活动记录，而非昂贵的遥操作数据，使模型在接触机械臂前即掌握物理因果规律。技术上，团队引入了专为物理交互设计的 Paged Attention 机制以确保毫秒级响应，并采用 Harmonic Reasoning 系统实现多尺度动态调节。Gen-1 的成功证明了 Scaling Law 在具身智能领域的有效性，使其展现出处...
+2026-04-06 05:17:06
 
 
 
@@ -3459,25 +3457,19 @@
 
 ### [发布：datasette-ports-0.2](https://simonwillison.net/2026/Apr/6/datasette-ports-2/#atom-everything)
 
-2026-04-06 03:25:43 | 标签: Datasette, Python, CLI 工具, uvx, 数据库工具
-
-> Simon Willison 宣布发布 datasette-ports 0.2。该实用工具可帮助用户识别系统中当前所有正在运行的 Datasette 实例。此版本的主要更新在于不再需要预先安装 Datasette；用户现在可以直接使用 `uvx datasette-ports` 运行它。它仍然兼容作为 Datasette 插件使用，提供 `datasette ports` 命令。
+2026-04-06 03:25:43
 
 
 
 ### [发布：scan-for-secrets-0.3](https://simonwillison.net/2026/Apr/6/scan-for-secrets/#atom-everything)
 
-2026-04-06 02:59:28 | 标签: 安全, Python, 开源, 开发者工具, 数据脱敏
-
-> 本发布说明宣布了 scan-for-secrets 0.3 版本，这是一个旨在识别并掩盖文件中敏感数据的实用工具。此次更新引入了一个命令行选项 `-r/--redact`，它会在将匹配项替换为占位符之前提示用户确认，同时会遵循特定文件的转义规则。此外，它还公开了一个新的 Python 函数 `redact_file`，允许开发者将脱敏逻辑以编程方式集成到他们自己的工作流中。
+2026-04-06 02:59:28
 
 
 
 ### [发布：datasette-ports-0.1](https://simonwillison.net/2026/Apr/6/datasette-ports/#atom-everything)
 
-2026-04-06 00:23:55 | 标签: Datasette, Python, CLI 工具, 开源, 开发者工具
-
-> 本文标志着 datasette-ports（0.1 版本）的首次发布。该工具是一个专门的实用程序，旨在扫描系统中的活跃 Datasette 进程，并报告它们当前使用的网络端口，从而简化了运行多个本地实例的开发者的管理工作。
+2026-04-06 00:23:55
 
 
 
@@ -12183,17 +12175,13 @@
 
 ### [一场机器人黑客松，让具身智能的差距与机会同时显形](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280955&idx=2&sn=b89256142aa22ce203e702d4f55d2e05)
 
-2026-04-06 03:56:00 | 标签: 具身智能, 黑客松, 基座模型, VLA, 世界模型
-
-> 文章记录了在深圳举办的一场大规模机器人黑客松，展示了开发者如何在 3 天内利用现有基座模型快速复现复杂的机器人操作 demo。然而，比赛通过 A/B 榜赛制揭示了行业隐忧：许多高分作品仅是对特定任务的过拟合，在面对未知任务（B 榜）时表现不佳。文章引述了自变量（Variable）团队的技术观点，强调不应通过堆砌工程补丁来加速落地，而应致力于提升基座模型的泛化能力。在技术路线上，自变量主张在端到端框架下深度融合世界模型与 VLA，重构语言、视觉与动作的表达空间，通过联合建模让预测更符合物理规律，构建真正理解动态过程的具身原生模型。
+2026-04-06 03:56:00
 
 
 
 ### [Java-新闻汇总：TornadoVM-4.0、Google-ADK-for-Java-1.0、Grails、Tomcat、Log4j、Gradle](https://www.infoq.com/news/2026/04/java-news-roundup-mar30-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-06 02:30:00 | 标签: Java, TornadoVM, Jakarta EE, Google ADK, Gradle
-
-> 2026 年 3 月下旬的 Java 新闻汇总涵盖了生态系统中的几个重要里程碑。主要亮点包括 TornadoVM 4.0 的正式版发布，它引入了针对 Apple Silicon 和 Metal API 的新硬件后端；以及 Google 的 Java 版智能体开发工具包（ADK）1.0 的发布，旨在构建 AI 智能体。报告还提供了 Jakarta EE 12 路线图的更新，特别讨论了安全规范的整合，并提到了 JDK 27、Micronaut、Grails、Apache Tomcat、Log4j 和 Gradle 的新版本或候选版本。
+2026-04-06 02:30:00
 
 
 
@@ -31955,11 +31943,11 @@
 
 
 
-### [从写代码到管-Agent：斯坦福首门-AI-软件开发课的讲师说，大多数工程师还没准备好](https://baoyu.io/blog/2026-02-27/from-writing-code-to-managing-agents)
+### [被封杀当晚，OpenAI-拿到了相同条款——Amodei-首次专访揭开-Anthropic-与五角大楼冲突内幕](https://baoyu.io/blog/2026-02-28/anthropic-ceo-trump-pentagon-clash)
 
-2026-02-27T00:00:00.000Z
+2026-02-28T00:00:00.000Z
 
-> 斯坦福首门 AI 软件开发课讲师 Mihail Eric 谈初级开发者的三重困境、多 Agent 编排的真正难点、Agent 友好代码库的标准，以及为什么初级工程师的'无知无畏'在 AI 时代反而是超能力。
+> 2026 年 2 月 27 日，特朗普点名封杀 Anthropic，五角大楼将其列为「国家安全供应链风险」。当晚 CEO Dario Amodei 首次面对镜头回应。而同一个晚上，OpenAI 拿到了包含完全相同限制条款的合同。
 
 
 

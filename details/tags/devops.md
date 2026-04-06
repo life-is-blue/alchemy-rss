@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 22:19:04 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-07 00:14:07 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -446,17 +446,13 @@
 
 ### [Duolingo-的-Kubernetes-跨越](https://www.infoq.com/presentations/duolingo-eks-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-06 12:11:00 | 标签: Kubernetes, AWS EKS, Argo CD, GitOps, IPv6
-
-> 本文深入探讨了 Duolingo 将其 500 多个后端服务从 AWS ECS 迁移到 EKS 的持续过程。文章概述了此次迁移的战略原因——主要是为了利用更丰富的开源生态系统（如 Argo CD、Karpenter）——并详细介绍了相关基础工作。关键技术亮点包括：使用 Argo CD 实现基于 GitOps 的部署流水线以进行蓝绿发布、采用单元化架构（Cellular Architecture）实现环境隔离，以及转向 IPv6 优先的网络模型。作者还分享了组织层面的见解，例如为产品团队提供的“VIP 支持”模式，以及基础设施变更期间面临的“近因偏差”（recency bias）挑战。
+2026-04-06 12:11:00
 
 
 
 ### [缩减-CI-回归测试套件规模的更好替代方案](https://www.infoq.com/articles/alternative-reduce-test-suite-size/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-06 11:00:00 | 标签: CI/CD, 回归测试, 软件质量, 测试架构, DevOps
-
-> 作者挑战了业界为了提高反馈速度而缩减 CI 回归测试套件的常见做法，认为这种缩减往往会掩盖那些隐蔽但影响重大的 Bug。文章主张采用“随机化方法”来替代测试集裁剪，即将测试结果视为概率数据，而非简单的通过/失败信号。关键策略包括：实施纵向趋势分析（30 天窗口期）以区分真正的回归问题与环境不稳定性（flakiness），以及通过多上下文模式匹配利用有意的测试冗余。为了解决性能和容量问题，作者提出了架构层面的解决方案，例如大规模并行化、通过 Elasticsearch 进行持续报告以及硬件在环（HIL）仿真，使团队能够在不牺牲开发速度的前提下保持全面的测试覆盖率。
+2026-04-06 11:00:00
 
 
 
