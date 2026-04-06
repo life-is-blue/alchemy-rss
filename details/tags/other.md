@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 08:13:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-06 11:01:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3439,9 +3439,7 @@
 
 ### [一位数据科学家对-599-美元-MacBook-Neo-的看法](https://towardsdatascience.com/a-data-scientists-take-on-the-599-macbook-neo/)
 
-2026-04-05 13:00:00 | 标签: MacBook Neo, 数据科学, 硬件选择, 内存需求, 云计算
-
-> 本文从数据科学家的视角对 599 美元的 MacBook Neo 进行了专业评估。作者在认可 A18 Pro 芯片的出色性能和极具竞争力的价格的同时，指出了一个关键瓶颈：固定的 8GB 统一内存。对于涉及 Docker、Jupyter Notebook 和大数据集的工作流，8GB 被认为是不够的。然而，作者将该设备重新定位为初学者和学生的完美工具，他们可以利用 Google Colab 和 Kaggle 等云端资源，并强调缺乏高端硬件绝不应成为开启数据科学之旅的障碍。
+2026-04-05 13:00:00
 
 
 
@@ -31897,11 +31895,11 @@
 
 
 
-### [被封杀当晚，OpenAI-拿到了相同条款——Amodei-首次专访揭开-Anthropic-与五角大楼冲突内幕](https://baoyu.io/blog/2026-02-28/anthropic-ceo-trump-pentagon-clash)
+### [从写代码到管-Agent：斯坦福首门-AI-软件开发课的讲师说，大多数工程师还没准备好](https://baoyu.io/blog/2026-02-27/from-writing-code-to-managing-agents)
 
-2026-02-28T00:00:00.000Z
+2026-02-27T00:00:00.000Z
 
-> 2026 年 2 月 27 日，特朗普点名封杀 Anthropic，五角大楼将其列为「国家安全供应链风险」。当晚 CEO Dario Amodei 首次面对镜头回应。而同一个晚上，OpenAI 拿到了包含完全相同限制条款的合同。
+> 斯坦福首门 AI 软件开发课讲师 Mihail Eric 谈初级开发者的三重困境、多 Agent 编排的真正难点、Agent 友好代码库的标准，以及为什么初级工程师的'无知无畏'在 AI 时代反而是超能力。
 
 
 

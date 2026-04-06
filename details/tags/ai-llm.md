@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-06 08:13:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-06 11:01:03 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [AI-智能体的持续学习](https://blog.langchain.com/continual-learning-for-ai-agents/)
 
-2026-04-05 21:46:30 | 标签: AI 智能体, 持续学习, LangChain, 智能体 Harness, LLM 记忆
-
-> LangChain 探讨了 AI 智能体如何通过三个不同的层级随时间推移进行改进。传统的持续学习侧重于通过 SFT（监督微调）或 RL（强化学习）更新模型权重，而智能体还可以通过 Harness（驱动智能体的代码和基础指令）以及 Context（动态指令、技能和记忆）进行学习。作者强调，虽然模型更新面临灾难性遗忘等挑战，但 Harness 优化（利用智能体改进其自身代码）以及在智能体、用户或组织层面的上下文学习，为系统改进提供了更直接的途径。所有这些方法的核心都是执行追踪（Traces），它们为离线后台学习和热路径更新提供了必要的数据。
+2026-04-05 21:46:30
 
 
 
@@ -11446,33 +11444,25 @@
 
 ### [来自-Chengpeng-Mou-的引述](https://simonwillison.net/2026/Apr/5/chengpeng-mou/#atom-everything)
 
-2026-04-05 21:47:06 | 标签: OpenAI, ChatGPT, 医疗 AI, 数据洞察, AI 应用
-
-> Simon Willison 引用了 OpenAI 商业财务主管 Chengpeng Mou 关于美国匿名 ChatGPT 使用数据的言论。统计数据显示，医疗保健相关的查询量巨大，包括每周 200 万条关于健康保险的信息，以及 60 万条来自医疗资源匮乏地区用户的查询。其中 70% 的信息发生在诊所工作时间之外，这一事实凸显了 AI 作为服务不足群体 24/7 医疗信息桥梁的新兴作用。
+2026-04-05 21:47:06
 
 
 
 ### [Proxy-Pointer-RAG：以向量-RAG-的规模和成本实现“无向量”检索的准确性](https://towardsdatascience.com/proxy-pointer-rag-achieving-vectorless-accuracy-at-vector-rag-scale-and-cost/)
 
-2026-04-05 16:46:00 | 标签: RAG, 向量数据库, PageIndex, 信息检索, LLM
-
-> 本文介绍了 Proxy-Pointer RAG，这是一种旨在解决基于推理的检索（如 PageIndex）的高准确性与向量数据库的效率之间权衡的工程方法。虽然 PageIndex 使用昂贵的 LLM 调用来构建和导航文档树，但 Proxy-Pointer RAG 使用正则表达式来构建“骨架树”，并将结构化的“面包屑”注入到嵌入中。这使得向量搜索具有结构感知能力。关键在于，它仅将检索到的数据块用作指向完整、连续文档部分的代理，确保 LLM 接收到高质量、不间断的上下文，而无需多步 LLM 推理的延迟或成本。
+2026-04-05 16:46:00
 
 
 
 ### [全网爆火的大模型-AI-知识库，保姆级教程来了](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247721576&idx=1&sn=decb68f6ee00b4195ff30e6542acd0c4)
 
-2026-04-05 14:22:00 | 标签: Karpathy, AI 知识库, LLM, Claude Code, agent-browser
-
-> 文章源于 AI 大神 Andrej Karpathy 关于利用 LLM 构建个人知识库的推文分享，并由 Nick Spisak 整理成一套保姆级实现教程。其核心理念是「简单胜过复杂」，主张摒弃复杂的笔记应用和插件，采用 raw/wiki/outputs 三个简单的扁平化文件夹结构。通过 agent-browser 等工具自动化抓取素材，利用 CLAUDE.md 文件定义 Schema 规则，并驱动 Claude Code 或 Cursor 等 AI 工具自动执行摘要生成、内容关联和索引维护。这种方法让 AI 承担繁琐的整理工作，使用户能专注于对知识库的深度提问与研究。
+2026-04-05 14:22:00
 
 
 
 ### [清明，烧-Token，祭图灵](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247515105&idx=1&sn=a5dcefe69a11980a05c8b9314fa9448e)
 
-2026-04-05 10:56:00 | 标签: 图灵, AI历史, 图灵机, 图灵测试, 机器学习
-
-> 文章在清明节这一特殊时点，通过感性的叙事与理性的技术回顾，祭奠了人工智能之父艾伦·图灵。内容核心围绕图灵定义的三大支柱展开：首先是 1936 年提出的「图灵机」，它设定了从个人电脑到现代 H100 显卡所有计算能力的理论上限；其次是 1950 年提出的「图灵测试」，将关于智能的哲学争论转化为可操作的工程问题；最后是预见性的「机器训练」思想，即通过类似教导小孩的方式（奖励与惩罚）来培育智能，这正是今日 RLHF 技术的雏形。文章还记述了图灵在二战中的功勋、遭受的迫害以及他与现代科技巨头（如苹果、OpenAI）之间微妙的传承关系。
+2026-04-05 10:56:00
 
 
 
@@ -11502,9 +11492,7 @@
 
 ### [美团内部禁用-Qwen；月之暗面将给未毕业实习生发期权；小米要全体研发人员进行-AI-考试｜AI-周报](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247660457&idx=1&sn=1e77a34aff28ace11e4d92fa738f9f64)
 
-2026-04-05 05:53:00 | 标签: AI 周报, 美团, DeepSeek, OpenAI, Claude
-
-> 本期 AI 周报汇总了过去一周全球人工智能领域的重大动态。企业动向方面，美团内部限制使用 Qwen 模型转而推行自研龙猫大模型；月之暗面推出实习生期权计划以抢夺顶尖人才；小米要求研发人员参加 AI 考试并推出 MiMo Token 付费套餐。技术与安全领域，DeepSeek V4 宣布优先支持国产 AI 芯片，引发阿里、腾讯等大厂提前抢货；Anthropic 遭遇 Claude Code 源码泄露事件并调整计费政策封杀第三方接入工具。融资方面，OpenAI 完成 1220 亿美元巨额融资，估值飙升至 8520 亿美元。此外，智谱、阿里、谷歌、微软等厂商密集发布了包括 GLM-5V-Turbo、...
+2026-04-05 05:53:00
 
 
 
@@ -48880,9 +48868,7 @@ http://antirez.com/news/162
 
 ### [2026-04-05-Hacker-News-热门话题汇总](https://supertechfans.com/cn/post/2026-04-05-HackerNews/)
 
-2026-04-05 07:46:35 | 标签: Hacker News, AI 安全, 大语言模型, Linux 内核, 科技动态
-
-> 本文精选了 Hacker News 当日最受关注的十条动态。核心技术亮点包括：Anthropic 的科学家利用 Claude Code 发现了 Linux 内核中隐藏 23 年的远程溢出漏洞，展示了 AI 在深度安全审计中的巨大潜力；研究人员提出「极其简单的自我蒸馏（SSD）」方法，在无需强化学习的情况下显著提升了 LLM 的代码生成能力。行业动态方面：Meta 利用离职协议封口作者引发言论自由讨论；Oracle 在大规模裁员期间申请数千份 H-1B 签证遭到社会质疑；Y Combinator 因欺诈行为除名初创公司 Delve。此外，文章还涉及 NASA 阿尔忒弥斯 II 号的高清地球照片、...
+2026-04-05 07:46:35
 
 
 
@@ -62406,9 +62392,7 @@ http://antirez.com/news/162
 
 ### [Salesforce-CEO-谈微软阻碍-OpenAI-投资、AI-替罪羊现象、OpenClaw-及监管](https://www.youtube.com/watch?v=OzUqfN4mcrM)
 
-2026-04-05 21:48:47 | 标签: Salesforce, Marc Benioff, AI 智能体, Slack, 企业级 AI
-
-> 在本次采访中，Salesforce CEO Marc Benioff 概述了公司对于“智能体企业”（Agentic Enterprise）的愿景，强调将 Slack 转变为 AI 智能体的主要对话界面。Benioff 探讨了组织结构的转变、AI 赋能的通才（generalists）的崛起，以及数据完整性和 AI 安全的重要性。他还分享了关于微软对 OpenAI 投资影响的内部观点、Salesforce 向 Anthropic 的转型，并批评了那些将 AI 作为裁员借口的 CEO 们。
+2026-04-05 21:48:47
 
 
 
