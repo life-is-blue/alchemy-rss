@@ -1,0 +1,58 @@
+{
+  "id": "RAW_81c86588",
+  "title": "Panther Lake 名副其实",
+  "url": "https://world.hey.com/dhh/panther-lake-is-the-real-deal-4bd731f1",
+  "date": "2026-04-06 12:39:21",
+  "author": "David Heinemeier Hansson",
+  "siteName": "David Heinemeier Hansson",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"trix-content\">\n   <div>\n    Intel really delivered with Panther Lake. A <a href=\"https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop-2026/spd/xps-da14260-laptop\">2026 Dell XPS 14</a> using this chipset with an IPS screen can hit just 1.4 watts of idle power draw on <a href=\"https://omarchy.org/\">Omarchy</a>. That's good enough for over 47 hours!! And in real-world mixed use on another 74-Wh machine, I've seen around 16 hours of battery life. That's a huge jump over the ~6 hours I was getting over the past two years from AMD-powered Framework laptops.\n    <br>\n    <br>\n   </div>\n   <div>\n    Technically, Intel already had something close to Panther Lake on efficiency with the Lunar Lake chips from last year, but those were quite slow on any multi-core workloads (like a developer would need). With Panther Lake (358H), I'm getting 17,500 on Geekbench 6, which is about 10% faster than the already excellent AMD HX370, and a match for Apple's M5.&nbsp;\n    <br>\n    <br>\n   </div>\n   <div>\n    Apple remains ahead on single-core performance, but even there, Panther Lake is on par with an M3. And I don't remember anyone complaining that those were too slow. What everyone has been pining for was better battery life, and now we got it. On a machine with <a href=\"https://www.youtube.com/watch?v=5uTQ25xuKXY\">excellent integrated graphics</a> that are good enough to play a ton of triple-A games no less!\n    <br>\n    <br>\n   </div>\n   <div>But we're getting more than that. The PC makers are getting their act together on all fronts. Haptic touchpads on level with Apple's is now standard on both high-end Dell and Asus laptops. Many of the new machines also have tandem OLED screens that blow even the nice micro-LED options from Apple out of the water. And PCs are now somehow both sleeker and slimmer than the MacBooks.</div>\n   <div>\n    <br>\n    Jonathan Ive knew this, he was just a bit ahead of the components, and he was willing to <a href=\"https://signalvnoise.com/svn3/the-macbook-keyboard-fiasco-is-surely-worse-than-apple-thinks/\">sacrifice reliability</a> to get to what wasn't possible back then. But now it is, and the PC makers are taking full advantage.\n   </div>\n   <div>\n    <br>\n    Now I know that any comparison between Macs and PCs are moot for most people. There's not a lot of cross-shopping going on these days. If you're locked into the Apple walled garden, it's hard to untangle yourself, so most just continue to buy whatever their team offers.\n    <br>\n    <br>\n   </div>\n   <div>But for the few who are either fed up with Apple in general, macOS Tahoe in particular, or just want to try a whole new way of computing with Omarchy, it's fantastic that battery life is no longer a blocker. It's been the #1 reason cited by folks who've been interested in trying Omarchy, but felt like they couldn't let go of Apple's efficiency advantage. Now that's largely gone.</div>\n   <div>\n    <br>\n    I also just love a good turnaround story. Intel had been on the ropes for years. Now they have a fantastic integrated GPU that's compatible with all the tens of thousands of PC games on the market, a super-efficient CPU that's a match for an M5 on multi-core and an M3 on single-core performance, and a range of PC makers finally taking the fight directly to Apple on touchpads, build quality, and weight.\n   </div>\n   <div>\n    <br>\n    These new Panther Lake CPUs are <a href=\"https://newsroom.intel.com/client-computing/intel-unveils-panther-lake-architecture-first-ai-pc-platform-built-on-18a\">made in Arizona</a> too, btw. With the world as it is, I think any American should breathe a sigh of relief that if things get spicy with Taiwan, there's more to frontier computing than a TSMC plant within a short reach of China. There's still more work to be done on that front (as Intel CPU cores still come from TSMC!), but it's a huge step in the right direction.\n    <br>\n    <br>\n   </div>\n   <div>Personally, I'm just thrilled that competition is lifting all boats. Apple gave the entire laptop industry a huge wake-up call in 2020 with the introduction of the M chips. Intel's former CEO, Pat Gelsinger, saw the threat clearly, kicked off the 18A plan, but sadly didn't last long enough in the top seat to see his bet pay off with Panther Lake. The rest of us now benefit from his boldness.</div>\n   <div>\n    <br>\n    I'm also thrilled to see both Dell and Intel leaning into Linux. <a href=\"https://github.com/basecamp/omarchy/releases/tag/v3.5.0\">Omarchy 3.5</a> ships with every possible tweak to make these Panther Lake chips perform at their best, and that was only possible because Michael Dell assigned a team to work on it. So much love to Mr Dell for letting us borrow the brains and commits from senior engineers within both his company and Intel to ship this big new release.\n    <br>\n    <br>\n   </div>\n   <div>\n    If you've been waiting on the sidelines for a laptop that can run Omarchy and still get amazing battery life, now is your magic moment. Give the new Dell XPS series, or any of the other laptops shipping with Panther Lake, a try. I think you'll be as impressed as I've been.\n    <br>\n    <br>\n    <figure class=\"attachment attachment--preview attachment--lightboxable attachment--png\">\n     <a download=\"image.png\" title=\"Download image.png\" data-click-proxy-target=\"lightbox_link_blob_2512238719\" href=\"https://world.hey.com/dhh/4bd731f1/blobs/eyJfcmFpbHMiOnsiZGF0YSI6MjUxMjIzODcxOSwicHVyIjoiYmxvYl9pZCJ9fQ--a36f27af72be83d96eb34e30ed2a1aab92779d0527af843f981e271f6e004184/image.png?disposition=attachment\"> <img src=\"https://world.hey.com/dhh/4bd731f1/representations/eyJfcmFpbHMiOnsiZGF0YSI6MjUxMjIzODcxOSwicHVyIjoiYmxvYl9pZCJ9fQ--a36f27af72be83d96eb34e30ed2a1aab92779d0527af843f981e271f6e004184/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlszODQwLDI1NjBdLCJxdWFsaXR5Ijo2MCwibG9hZGVyIjp7InBhZ2UiOm51bGx9LCJjb2FsZXNjZSI6dHJ1ZX0sInB1ciI6InZhcmlhdGlvbiJ9fQ--7edc7b21f6fad97fa22412618822c4d19725431f296c7ce47dc174b61535d27c/image.png\" alt=\"image.png\" decoding=\"async\" loading=\"lazy\"> </a>\n    </figure>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "David Heinemeier Hansson (DHH) 指出，英特尔的 Panther Lake 在能效和性能方面实现了突破，终于缩小了高端 PC 与 MacBook 之间的续航差距。",
+  "oneSentenceSummary": "David Heinemeier Hansson (DHH) 指出，英特尔的 Panther Lake 在能效和性能方面实现了突破，终于缩小了高端 PC 与 MacBook 之间的续航差距。",
+  "summary": "在这篇文章中，DHH 评测了英特尔 Panther Lake 架构的影响，特别是在运行 Omarchy（他基于 Linux 的操作系统）的 2026 款 Dell XPS 14 上进行了测试。他报告称，该架构在能效方面实现了显著飞跃，待机功耗低至 1.4 W，实际续航时间达到 16 小时，足以媲美 Apple Silicon。在性能方面，Panther Lake 358H 的多核跑分与 Apple M5 持平，单核性能则与 M3 相当，使其成为开发者的强大选择。DHH 还指出，PC 硬件（包括触觉反馈触控板和串联 OLED 屏幕）终于赶上甚至超越了苹果的制造工艺，消除了用户想要脱离苹果生态系统的最后主要障碍。",
+  "mainPoints": [
+    {
+      "point": "Panther Lake 实现了苹果级别的能效和续航表现。",
+      "explanation": "凭借 1.4 W 的待机功耗和超过 16 小时的混合使用续航时间，英特尔消除了过去四年里 Apple Silicon 相对于 PC 市场的核心优势。"
+    },
+    {
+      "point": "性能现已能与苹果最新的 M 系列芯片相抗衡。",
+      "explanation": "多核跑分显示 Panther Lake 与 Apple M5 持平，单核性能则与 M3 相当，为高负载的开发者工作流提供了充足的动力。"
+    },
+    {
+      "point": "PC 硬件设计和 Linux 支持已达到临界点。",
+      "explanation": "来自 Dell 和华硕的现代笔记本电脑现在配备了可媲美 MacBook 的触觉反馈触控板和 OLED 屏幕，并得到了英特尔和 Dell 工程师针对 Linux 内核的深度优化支持。"
+    },
+    {
+      "point": "在美国进行的战略性制造增加了地缘政治韧性。",
+      "explanation": "Panther Lake 在英特尔位于亚利桑那州的 18A 工艺节点上生产，这代表着在台湾供应链之外保障前沿计算能力迈出了重要一步。"
+    }
+  ],
+  "keyQuotes": [
+    "英特尔凭借 Panther Lake 确实交出了一份满意的答卷。一台搭载该芯片组的 2026 款 Dell XPS 14……待机功耗仅为 1.4 瓦。",
+    "大家一直渴望的是更好的续航，现在我们终于得到了。",
+    "PC 制造商终于在触控板、制造工艺和重量方面直接向苹果发起了挑战。",
+    "如果你一直在观望一台既能运行 Omarchy 又能拥有惊人续航的笔记本电脑，现在就是你的绝佳时机。"
+  ],
+  "tags": [
+    "Intel Panther Lake",
+    "Apple Silicon",
+    "Dell XPS",
+    "Linux",
+    "硬件评测"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 766,
+  "domain": "world.hey.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "BT_NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_86001f",
+  "sourceName": "David Heinemeier Hansson",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775479161000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-06 12:39:21"
+}

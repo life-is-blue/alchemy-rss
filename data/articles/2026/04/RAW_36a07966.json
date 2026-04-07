@@ -1,0 +1,53 @@
+{
+  "id": "RAW_36a07966",
+  "title": "Pinterest 通过自动内存重试将 Spark OOM 故障减少了 96%",
+  "url": "https://www.infoq.com/news/2026/04/pinterest-spark-oom-reduction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-06 14:32:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Pinterest Engineering has significantly improved the reliability of its Apache Spark workloads, <a href=\"https://medium.com/pinterest-engineering/drastically-reducing-out-of-memory-errors-in-apache-spark-at-pinterest-c55d7dac2257\">cutting out-of-memory (OOM) failures by 96% through a combination of improved observability, configuration tuning, and automatic memory retries</a>. This work addresses persistent job failures that disrupted pipelines, increased on-call load, and threatened timely analytics for memory-heavy workloads powering recommendation systems and large-scale data processing.</p>\n   <p>For years, OOM errors were a persistent headache. Jobs would fail late in execution, often after hours of computation, forcing engineers to manually tweak memory settings to keep pipelines running. These failures disrupted downstream processes, increased on-call load, and made it harder for teams to focus on delivering new features. Fixing the problem required both technical and workflow-level solutions to reduce failures while minimizing manual effort.</p>\n   <p>A critical first step was improving visibility into how jobs consumed memory. Engineers built detailed metrics for executor memory usage, shuffle operations, and task execution times. This data helped identify hotspots, skewed partitions, and stages that were unusually resource-hungry. As Pinterest engineers explained in their blog, understanding where memory is consumed within a job is critical to addressing failures effectively.By knowing exactly where problems arose, the team could make precise adjustments rather than simply adding memory across the board.</p>\n   <p><img alt=\"\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/04/pinterest-spark-oom-reduction/news/2026/04/pinterest-spark-oom-reduction/en/resources/2workflow-1775413259344.jpeg\" height=\"400\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/pinterest-spark-oom-reduction/en/resources/2workflow-1775413259344.jpeg\" rel=\"share\"></p>\n   <p><em>Visualizing executor-level memory usage and Auto Memory Retry in Spark workflows (Source: <a href=\"https://medium.com/pinterest-engineering/drastically-reducing-out-of-memory-errors-in-apache-spark-at-pinterest-c55d7dac2257\">Pinterest Blog Post</a>)</em></p>\n   <p>Configuration tuning complemented these insights. Spark settings for memory allocation, shuffle partitions, and broadcast joins were optimized for workload patterns. Adaptive query execution allowed the system to adjust partitioning dynamically, reducing memory pressure during heavy stages. Additional preprocessing helped smooth out data skew, and validation checks flagged unusually large or anomalous datasets before they could trigger failures. For high-risk jobs, human review remained part of the workflow, ensuring pipelines stayed stable and predictable.</p>\n   <p>Auto Memory Retries represented a major workflow shift. Jobs that previously failed due to memory exhaustion could now automatically restart with updated memory settings. This automation eliminated much of the manual tuning that had been consuming engineering time while letting pipelines finish without changing core job logic.</p>\n   <p>The rollout was staged carefully. Engineers started with ad hoc jobs, ramping from 0% to 100%, and then moved to scheduled jobs, beginning with lower-priority tiers and eventually applying the feature to critical workloads. A dashboard tracked key metrics such as recovered jobs, cost savings, MB, and vCore seconds saved, and post-retry failures. This staged approach allowed the team to catch issues early, ensure reliability, and fine-tune retries before full deployment.</p>\n   <p>Along the way, teams learned important operational lessons, including improving scheduler performance for large TaskSets, handling custom resource profiles for Apache Gluten compatibility, and adjusting host failure exclusions so OOM failures no longer blocked retries. Future work includes proactive memory increases, where tasks in high-risk stages receive extra memory before failing, further reducing retries and cluster overhead.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Pinterest Reduces Spark OOM Failures by 96% Through Auto Memory Retries\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/pinterest-spark-oom-reduction/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775485920000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Pinterest 通过实施增强的可观测性、配置调优和自动内存重试机制，实现了 Spark OOM 故障 96% 的降低。",
+  "oneSentenceSummary": "Pinterest 通过实施增强的可观测性、配置调优和自动内存重试机制，实现了 Spark OOM 故障 96% 的降低。",
+  "summary": "Pinterest 工程团队解决了持续存在的 Apache Spark 内存溢出（OOM）错误，这些错误曾导致数据管道中断并增加了运维负担。通过结合执行器级指标带来的改进可观测性、配置优化（包括自适应查询执行和数据倾斜处理）以及一种新颖的自动内存重试系统，他们将故障率降低了 96%。自动内存重试功能允许作业在无需人工干预的情况下，以增加内存分配的方式自动重启，从而显著减少了工程开销并提高了管道的可靠性。",
+  "mainPoints": [
+    {
+      "point": "增强的可观测性是有效内存优化的基础。",
+      "explanation": "执行器内存和 Shuffle 操作的详细指标使团队能够识别特定的热点和数据倾斜，从而实现精确调整，而非盲目增加资源。"
+    },
+    {
+      "point": "自动内存重试实现了瞬时 OOM 错误的自动化解决。",
+      "explanation": "系统不再让作业在数小时的计算后失败，而是使用更新后的内存设置自动重启作业，消除了手动调优的需求，节省了工程时间。"
+    },
+    {
+      "point": "分阶段的发布策略降低了关键生产环境中的风险。",
+      "explanation": "从临时作业到低优先级作业，最后到关键定时作业的推进过程，使团队能够在全面部署前微调重试逻辑和调度器性能。"
+    }
+  ],
+  "keyQuotes": [
+    "Pinterest 工程团队显著提高了其 Apache Spark 工作负载的可靠性，将内存溢出（OOM）故障减少了 96%。",
+    "自动内存重试代表了工作流的重大转变……这种自动化消除了许多原本耗费工程时间的各种手动调优工作。",
+    "了解作业中内存消耗的位置对于有效解决故障至关重要。"
+  ],
+  "tags": [
+    "Apache Spark",
+    "数据工程",
+    "OOM",
+    "基础设施",
+    "可观测性"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 464,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775485920000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-06 14:32:00"
+}

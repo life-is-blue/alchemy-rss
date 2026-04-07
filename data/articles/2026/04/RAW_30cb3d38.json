@@ -1,0 +1,53 @@
+{
+  "id": "RAW_30cb3d38",
+  "title": "推出 OpenAI 安全奖学金计划",
+  "url": "https://openai.com/index/introducing-openai-safety-fellowship",
+  "date": "2026-04-06 10:00:00",
+  "author": "OpenAI",
+  "siteName": "OpenAI Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"@container w-full max-w-container @md:shaded-container:px-0!\">\n   <div class=\"relative w-full\" style=\"--hero-aspect-ratio:16/9;--hero-aspect-ratio-mobile:3/4\">\n    <div class=\"multi-columns:px-0 @md:shaded-container:px-0! @container grid w-full grid-cols-12\">\n     <div class=\"col-span-12 @md:col-span-10 @md:col-start-2 @lg:col-span-8 @lg:col-start-3\">\n      <div class=\"relative flex flex-col items-center text-center\">\n       <br>\n       <div class=\"mt-sm\">\n        <p class=\"col-span-12 text-primary-100 @md:col-span-8 @md:col-start-3 text-balance\"><span style=\"font-size: 1rem;\">Today we are announcing a call for applications to the OpenAI Safety Fellowship, a new program for external researchers, engineers, and practitioners to pursue rigorous, high-impact research on the safety and alignment of advanced AI systems. The program will run from September 14, 2026 through February 5, 2027.</span></p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"max-w-container multi-columns:px-0 multi-columns:flex @container grid w-full grid-cols-12\">\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>We are looking for applicants interested in safety questions that matter for existing and future systems. Priority areas include safety evaluation, ethics, robustness, scalable mitigations, privacy-preserving safety methods, agentic oversight, and high-severity misuse domains, among others. We are especially interested in work that is empirically grounded, technically strong, and relevant to the broader research community.</span></p>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Fellows will work closely with OpenAI mentors and engage with a cohort of peers. Workspace will be available in Berkeley alongside other fellows at </span><a href=\"https://constellation.org/\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" rel=\"noreferrer\"><span>Constellation</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span>, though fellows may also work remotely. Fellows are expected to produce a substantial research output by the end of the program, such as a paper, benchmark, or dataset. The fellowship includes a monthly stipend, compute support, and ongoing mentorship.</span></p>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>We welcome applicants from a range of backgrounds, including computer science, social science, cybersecurity, privacy, HCI, and related fields. We prioritize research ability, technical judgment, and execution over specific credentials. Letters of reference will be required.</span></p>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>For additional information regarding eligibility, compensation and benefits, see the </span><a href=\"https://bit.ly/c-openai-safety-fellowship\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" rel=\"noreferrer\"><span>application form</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span>. Fellows will receive API credits and other resources as appropriate, but will not have internal system access.</span></p>\n   </div>\n   <div class=\"@md:col-span-6 @md:col-start-4 col-span-12 max-w-none [&amp;:not(:first-child)]:mt-sm\">\n    <p class=\"mb-sm last:mb-0\"><span>Applications are now open </span><a href=\"https://bit.ly/c-openai-safety-fellowship\" class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" target=\"_blank\" rel=\"noreferrer\"><span>here</span>⁠<span class=\"sr-only\">(opens in a new window)</span></a><span> and will close May 3. We will review all submissions and notify successful applicants by July 25. For any questions about the application process, please contact </span><a class=\"transition ease-curve-a duration-250 text-primary-100 hover:text-primary-60 relative underline-offset-[0.25rem] decoration-1 underline\" href=\"mailto:openaifellows@constellation.org\"><span>openaifellows@constellation.org</span>⁠</a><span>.</span></p>\n   </div>\n  </div>\n  <div class=\"@container w-full\">\n   <div class=\"@lg:max-w-container flex w-auto\">\n    <div class=\"w-full no-scrollbar snap-x snap-mandatory overflow-x-auto overflow-y-hidden\">\n     <div class=\"@md:gap-sm px-sm @md:px-md pe-sm flex min-w-224 @md:min-w-[unset] @lg:px-0 grid flex-none grid-cols-3\">\n      <div class=\"mb-md relative @md:mb-0 ps-sm snap-start @md:ps-0 min-w-[calc(100%/3)] ps-0 last:me-0\"></div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "OpenAI 推出了 OpenAI 安全奖学金计划，这是一项试点项目，旨在为外部研究人员提供津贴、算力和指导，以推动 AI 安全和对齐研究。",
+  "oneSentenceSummary": "OpenAI 推出了 OpenAI 安全奖学金计划，这是一项试点项目，旨在为外部研究人员提供津贴、算力和指导，以推动 AI 安全和对齐研究。",
+  "summary": "OpenAI 正在为其新的安全奖学金计划招募申请者，该计划将于 2026 年 9 月至 2027 年 2 月期间进行。该倡议旨在支持外部研究人员和工程师针对先进 AI 系统的安全性和对齐问题开展严谨的研究。主要研究领域包括安全评估、伦理、鲁棒性和智能体监督。入选者将获得资金支持、算力资源以及来自 OpenAI 导师的指导，并被期望产出重要的研究成果，如论文或基准测试。",
+  "mainPoints": [
+    {
+      "point": "建立专门的 AI 安全研究渠道。",
+      "explanation": "该奖学金旨在通过为外部专家提供结构化的环境，使其能够致力于解决具有高影响力的对齐问题，从而培养下一代安全人才。"
+    },
+    {
+      "point": "专注于基于实证且技术扎实的研究。",
+      "explanation": "OpenAI 优先考虑安全评估、鲁棒性和智能体监督等领域的研究，强调基准测试和数据集等实际产出。"
+    },
+    {
+      "point": "为独立研究人员提供全面的资源支持。",
+      "explanation": "通过提供津贴、算力额度和指导，且无需内部系统访问权限，OpenAI 降低了独立安全研究的门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "一个旨在支持独立安全和对齐研究并培养下一代人才的试点项目",
+    "我们正在寻找对现有和未来系统至关重要的安全问题感兴趣的申请者。",
+    "入选者需要在项目结束时产出实质性的研究成果，例如论文、基准测试或数据集。"
+  ],
+  "tags": [
+    "OpenAI",
+    "AI 安全",
+    "AI 对齐",
+    "研究奖学金",
+    "机器学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 276,
+  "domain": "openai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_8749b9",
+  "sourceName": "OpenAI Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775469600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-06 10:00:00"
+}
