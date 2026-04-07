@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-07 18:20:53 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-07 20:14:45 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -4520,25 +4520,19 @@
 
 ### [Vercel：我们最大的单体仓库中-58%-的-PR-无需人工审核即可合并](https://vercel.com/blog/58-percent-of-prs-in-our-largest-monorepo-merge-without-human-review)
 
-2026-04-07 02:02:03 | 标签: AI 智能体, 代码审核, Vercel, LLM, 工程生产力
-
-> Vercel 通过部署一个将 Pull Request (PR) 分为高风险和低风险类别的 AI 智能体，解决了 PR 审核的瓶颈问题。该系统利用 Gemini 进行分类，并使用 Vercel AI Gateway 进行管理，自动批准低风险变更（如 CSS 或文档），同时将高风险变更（如安全、认证）路由给人工处理。实验表明，58% 的 PR 可以在无需人工干预的情况下安全合并，将合并时间中位数从 29 小时缩短至 10.9 小时。关键在于，由于减少了干扰，人工审核员处理关键 PR 的速度提高了 2.7 倍，并且该系统通过更好的文档记录和基于风险的路由机制，保持了 SOC-2 合规性。
+2026-04-07 02:02:03
 
 
 
 ### [Memory-架构与思考：从存储组件到-Agent-记忆操作系统](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559363&idx=1&sn=461e525a0373ccfed0a7638cc1c51906)
 
-2026-04-07 00:30:00 | 标签: AI Agent, Memory Architecture, System 2, 时序知识图谱, 程序性记忆
-
-> 文章深入探讨了 Agent 记忆（Memory）的本质，认为其不仅是存储，更是影响决策分布的外部状态。作者提出 Memory 的最小闭包应包含：记录真相的追加式账本（Raw Ledger）、面向推理的多种派生视图（Derived Views，如向量、图谱、时序）、以及决定读写逻辑的控制层（Policy）。通过将记忆系统（System 2）与推理引擎（System 1）解耦，实现了能力的可插拔与独立演进。文章进一步论证了非参数化记忆如何通过 Δ 修正项逼近微调效果，并详细分析了时序记忆（TKG）解决事实过期问题、程序性记忆（Skill-MDP）实现经验复用、以及潜层融合（Memory Token...
+2026-04-07 00:30:00
 
 
 
 ### [Spring-AI-智能体模式（第-6-部分）：AutoMemoryTools-——-跨会话的智能体持久化记忆](https://spring.io/blog/2026/04/07/spring-ai-agentic-patterns-6-memory-tools)
 
-2026-04-07 00:00:00 | 标签: Spring AI, AI 智能体, 智能体模式, 长期记忆, LLM
-
-> 本文深入探讨了如何在 Spring AI 生态系统中为 AI 智能体实现持久化的长期记忆。文章介绍了受 Anthropic Claude Code 记忆模式启发的 AutoMemoryTools 和 AutoMemoryToolsAdvisor。与存储完整对话历史（受限于上下文窗口驱逐）的标准 ChatMemory 不同，AutoMemoryTools 创建了一个持久的 Markdown 文件层。该系统利用一个核心的 MEMORY.md 索引来保持上下文精简，同时允许智能体有选择地检索相关事实。开发者有三种集成路径可供选择：无需样板代码的 Advisor、用于提示词控制的手动工具装配，或者针对...
+2026-04-07 00:00:00
 
 
 
@@ -11486,9 +11480,7 @@
 
 ### [“Claude-Code-更新废了”！热议-Issue：思考深度下降-67%，已无法胜任复杂的工程任务](https://www.qbitai.com/2026/04/396958.html)
 
-2026-04-07 06:13:01 | 标签: Claude Code, LLM 推理, 思维链, AI 编程工具, 性能退化
-
-> 文章详细报道了 GitHub 社区针对 Claude Code 性能严重退化的深度分析。AMD 工程师 Stella Laurenzo 通过对近 7000 个会话 JSONL 文件的量化研究发现，Claude Code 的思考深度从 2200 字符骤降至约 700 字符，降幅达 67%。这种退化导致模型的工作模式从“先研究再修改”转变为“盲目修改”，读改比从 6.6 降至 2.0，引发了大量 Bug、无视指令及推诿行为。数据还显示，思考深度的削减虽降低了单次成本，却因引发无效循环导致总 API 成本飙升百倍。Anthropic 官方回应称，性能波动主要源于 2 月引入的“自适应思考”机制及默认...
+2026-04-07 06:13:01
 
 
 
@@ -34786,9 +34778,7 @@
 
 ### [【早说】不用-IDE，只用计划文件和语音：所知道的-Claude-Code-全部技巧](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278878&idx=1&sn=6c046dd000e27096fef7277b4f7ab421)
 
-2026-04-07 01:01:00 | 标签: Claude Code, AI 编程, 工作流优化, plan.md, 语音驱动开发
-
-> 文章详细阐述了一套颠覆传统的 AI 辅助开发模式。作者主张将 80% 的精力投入到规划阶段，利用 Claude Code 的 `/ce:plan` 命令生成详尽的 `plan.md` 文件，再由 AI 代理执行。该工作流集成了语音转文字工具（如 Monologue）、Ghostty 多窗口并行会话、以及针对 Claude Code 的权限跳过和声音提醒配置。此外，作者还分享了如何结合 `/last30days` 进行实时技术调研，利用 Mac Mini 实现远程控制，并将此工作流扩展至商业战略、会议纪要整理乃至生活旅行规划中，展示了从“手写代码”向“口述规划”的范式转移。
+2026-04-07 01:01:00
 
 
 
@@ -64046,9 +64036,7 @@ http://antirez.com/news/162
 
 ### [构建可靠-AI-私人助理的系统架构指南](https://x.com/shao__meng/status/2041318077103550828)
 
-2026-04-07 00:52:10 | 标签: AI Agent, Personal Assistant, System Architecture, Memory Layer, Automation
-
-> 推文详细拆解了构建高可靠 AI 私人助理的系统架构，核心在于引入双层记忆系统（每日日志+长期记忆）和 Kaizen 持续进化循环。作者强调了系统应具备可审计性、可编辑性，并通过分层架构将确定性脚本与 LLM 推理分离，从而实现比人类助理更可靠的执行效果。
+2026-04-07 00:52:10
 
 
 
