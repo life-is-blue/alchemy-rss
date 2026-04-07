@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-08 04:10:57 | [返回首页](/README.md)
+**更新时间**: 2026-04-08 06:11:01 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10888)
+- [AI & 大模型](#ai-llm) (10890)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (757)
 - [DevOps](#devops) (491)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5342)
+- [其他](#other) (5344)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Gemini-3.1-Flash-Live：让音频-AI-更自然、更可靠](https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/) - AI 精选
 - [我们如何为深度智能体构建评估体系](https://blog.langchain.com/how-we-build-evals-for-deep-agents/) - AI 精选
 
-- [查看全部 10888 篇...](/details/tags/ai-llm.md)
+- [查看全部 10890 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5342 篇...](/details/tags/other.md)
+- [查看全部 5344 篇...](/details/tags/other.md)
 
 

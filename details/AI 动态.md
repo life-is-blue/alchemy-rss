@@ -1,15 +1,21 @@
-> **更新时间**: 2026-04-07 18:20:54 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 06:11:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
 
 
 
+### [Anthropic-推出-Project-Glasswing-与-Claude-Mythos-Preview](https://x.com/AnthropicAI/status/2041578392852517128)
+
+2026-04-07 18:06:34 | 标签: Anthropic, Claude Mythos, Project Glasswing, 网络安全, AI 安全
+
+> Anthropic 宣布启动 Project Glasswing，这是一项旨在保障全球关键软件基础设施安全的紧急倡议。该项目由其最新的前沿模型 Claude Mythos Preview 驱动。据 Anthropic 介绍，该模型在识别软件漏洞方面展现出了卓越的能力，其表现足以媲美顶尖的人类安全专家。这一举措标志着将先进 AI 应用于网络安全和软件完整性保护迈出了重要一步。
+
+
+
 ### [构建可靠-AI-私人助理的系统架构指南](https://x.com/shao__meng/status/2041318077103550828)
 
-2026-04-07 00:52:10 | 标签: AI Agent, Personal Assistant, System Architecture, Memory Layer, Automation
-
-> 推文详细拆解了构建高可靠 AI 私人助理的系统架构，核心在于引入双层记忆系统（每日日志+长期记忆）和 Kaizen 持续进化循环。作者强调了系统应具备可审计性、可编辑性，并通过分层架构将确定性脚本与 LLM 推理分离，从而实现比人类助理更可靠的执行效果。
+2026-04-07 00:52:10
 
 
 
@@ -163,13 +169,13 @@
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
