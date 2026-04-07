@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-07 11:00:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-07 12:46:15 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -446,9 +446,7 @@
 
 ### [如何在-Kubernetes-中对用户进行身份验证：x509-证书、OIDC-和云身份](https://www.freecodecamp.org/news/how-to-authenticate-users-in-kubernetes-x509-certificates-oidc-and-cloud-identity/)
 
-2026-04-06 20:31:43 | 标签: Kubernetes, 身份验证, OIDC, x509 证书, RBAC
-
-> 本文从第一性原理出发，解释了 Kubernetes 在没有内部用户数据库的情况下如何处理身份。文章探讨了可插拔的身份验证器链，区分了面向机器的 Service Account 和外部管理的 User。作者提供了创建 x509 客户端证书的实操演示，强调了其局限性（如缺乏吊销机制），并详细介绍了如何使用 Dex 和 kubelogin 设置用于生产环境的、基于浏览器的 OIDC (OpenID Connect) 登录。文中特别提到了 Kubernetes v1.30 中引入的现代 AuthenticationConfiguration，使其成为当前基础设施安全实践中极具参考价值的资源。
+2026-04-06 20:31:43
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-07 11:00:49 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-07 12:46:15 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -638,9 +638,7 @@
 
 ### [如何将-JavaScript-中的-API-调用从“玩具级”提升至生产就绪的网络通信](https://www.freecodecamp.org/news/how-to-go-from-toy-api-calls-to-production-ready-networking-in-javascript/)
 
-2026-04-06 21:45:49 | 标签: JavaScript, 网络通信, Fetch API, AbortController, 错误处理
-
-> 本文旨在填补 JavaScript 中简单 API 调用与稳健生产级网络通信之间的鸿沟。文章从 fetch() 的基础知识入手，逐步引入了关键模式：使用 AbortController 防止响应乱序，处理除网络故障之外的 HTTP 错误，以及利用 ky 等库实现带有指数退避（exponential backoff）的自动重试机制。此外，文章还探讨了诸如速率限制、断路器（circuit breakers）和通过 ffetch 进行请求合并（request coalescing）等高级弹性模式，最后总结了从 HTTP 标头到基于存储的实现等各种缓存策略，以优化性能和可靠性。
+2026-04-06 21:45:49
 
 
 
