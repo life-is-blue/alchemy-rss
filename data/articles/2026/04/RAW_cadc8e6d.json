@@ -1,0 +1,58 @@
+{
+  "id": "RAW_cadc8e6d",
+  "title": "如何使用 Uptime Kuma 和 Docker 自托管服务器监控仪表板",
+  "url": "https://www.freecodecamp.org/news/self-host-uptime-kuma-docker/",
+  "date": "2026-04-06 20:32:31",
+  "author": "Abdul Talha",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>As a developer, there's nothing worse than finding out from an angry user that your website is down. Usually, you don't know your server crashed until someone complains.</p>\n  <p>And while many SaaS tools can monitor your site, they often charge high monthly fees for simple alerts.</p>\n  <p>My goal with this article is to help you stop paying those expensive fees by showing you a powerful, free, open-source alternative called Uptime Kuma.</p>\n  <p>In this guide, you'll learn how to use Docker to deploy Uptime Kuma safely on a local Ubuntu machine.</p>\n  <p>By the end of this tutorial, you'll have set up your own private server monitoring dashboard in less than 10 minutes and created an automated Discord alert to ping your phone if your website goes offline.</p>\n  <h2 id=\"heading-table-of-contents\">Table of Contents</h2>\n  <ul>\n   <li>\n    <p><a href=\"#heading-prerequisites\">Prerequisites</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-step-1-update-packages-and-prepare-the-firewall\">Step 1: Update Packages and Prepare the Firewall</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-step-2-create-the-docker-compose-file\">Step 2: Create the Docker Compose File</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-step-3-start-the-application\">Step 3: Start the Application</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-step-4-access-the-dashboard\">Step 4: Access the Dashboard</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-step-5-use-case-monitor-a-website-and-send-discord-alerts\">Step 5: Use Case – Monitor a Website and Send Discord Alerts</a></p>\n   </li>\n   <li>\n    <p><a href=\"#heading-conclusion\">Conclusion</a></p>\n   </li>\n  </ul>\n  <h2 id=\"heading-prerequisites\">Prerequisites</h2>\n  <p>Before you start, make sure you have:</p>\n  <ul>\n   <li>\n    <p>An Ubuntu machine (like a local server, VM, or desktop).</p>\n   </li>\n   <li>\n    <p>Docker and Docker Compose installed.</p>\n   </li>\n   <li>\n    <p>Basic knowledge of the Linux terminal.</p>\n   </li>\n  </ul>\n  <h2 id=\"heading-step-1-update-packages-and-prepare-the-firewall\">Step 1: Update Packages and Prepare the Firewall</h2>\n  <p>First, you'll want to make sure your system has the newest updates. Then, you'll install the Uncomplicated Firewall (UFW) and open the network \"door\" (port) that Uptime Kuma uses for the dashboard. You'll also need to allow SSH so you don't lock yourself out.</p>\n  <p>Run these commands in your terminal:</p>\n  <ol>\n   <li>Update your packages:</li>\n  </ol>\n  <pre><code class=\"language-shell\">sudo apt update &amp;&amp; sudo apt upgrade -y\n</code></pre>\n  <ol>\n   <li>Install the firewall:</li>\n  </ol>\n  <pre><code class=\"language-shell\">sudo apt install ufw -y\n</code></pre>\n  <ol>\n   <li>Allow SSH and open port 3001:</li>\n  </ol>\n  <pre><code class=\"language-shell\">sudo ufw allow ssh\nsudo ufw allow 3001/tcp\n</code></pre>\n  <ol>\n   <li>Enable the firewall:</li>\n  </ol>\n  <pre><code class=\"language-shell\">sudo ufw enable\nsudo ufw reload\n</code></pre>\n  <h2 id=\"heading-step-2-create-the-docker-compose-file\">Step 2: Create the Docker Compose File</h2>\n  <p>Using a <code>docker-compose.yml</code> file is the professional way to manage Docker containers. It keeps your setup organised in one single place.</p>\n  <p>To start, create a new folder for your project and enter it:</p>\n  <pre><code class=\"language-shell\">mkdir uptime-kuma &amp;&amp; cd uptime-kuma\n</code></pre>\n  <p>Then create the configuration file:</p>\n  <pre><code class=\"language-shell\">nano docker-compose.yml\n</code></pre>\n  <p>Paste the following code into the editor:</p>\n  <pre><code class=\"language-yaml\">services:\n  uptime-kuma:\n    image: louislam/uptime-kuma:2\n    restart: unless-stopped\n    volumes:\n      - ./data:/app/data\n    ports:\n      - \"3001:3001\"\n</code></pre>\n  <p><strong>Note</strong>: The <code>./data:/app/data</code> line is very important. It saves your database in a normal folder on your machine, making it easy to back up later.</p>\n  <p>Finally, save and exit: Press <code>CTRL + X</code>, then <code>Y</code>, then <code>Enter</code>.</p>\n  <h2 id=\"heading-step-3-start-the-application\">Step 3: Start the Application</h2>\n  <p>Now, tell Docker to read your file and start the monitoring service in the background.</p>\n  <pre><code class=\"language-shell\">docker compose up -d\n</code></pre>\n  <p><strong>How to verify:</strong> Docker will download the files. When it finishes, your terminal should print <code>Started uptime-kuma</code>.</p>\n  <h2 id=\"heading-step-4-access-the-dashboard\">Step 4: Access the Dashboard</h2>\n  <p>To access the dashboard, first open your web browser and go to <code>http://localhost:3001</code> (or your machine's local IP address).</p>\n  <p>When asked to choose the database, select <strong>SQLite</strong>. It's simple, fast, and requires no extra setup.</p>\n  <p>Then create an account and choose a secure admin username and password.</p>\n  <img src=\"https://cdn.hashnode.com/uploads/covers/6729b04417afd6915f5c2e3e/02913589-020e-4a8a-aa7a-1bf70a9244c6.png\" alt=\"02913589-020e-4a8a-aa7a-1bf70a9244c6\" style=\"display:block;margin:0 auto\" width=\"600\" height=\"400\" loading=\"lazy\">\n  <h2 id=\"heading-step-5-use-case-monitor-a-website-and-send-discord-alerts\">Step 5: Use Case – Monitor a Website and Send Discord Alerts</h2>\n  <p>Now you'll put Uptime Kuma to work by monitoring a live website and setting up an alert. Just follow these steps:</p>\n  <ol>\n   <li>\n    <p>Click Add New Monitor.</p>\n   </li>\n   <li>\n    <p>Set the Monitor Type to <code>HTTP(s)</code>.</p>\n   </li>\n   <li>\n    <p>Give it a Friendly Name (e.g., \"My Blog\") and enter your website's URL.</p>\n   </li>\n  </ol>\n  <img src=\"https://cdn.hashnode.com/uploads/covers/6729b04417afd6915f5c2e3e/74567f1e-acc4-480f-b969-7883e01aa459.png\" alt=\"74567f1e-acc4-480f-b969-7883e01aa459\" style=\"display:block;margin:0 auto\" width=\"600\" height=\"400\" loading=\"lazy\">\n  <h3 id=\"heading-pro-tip-how-to-fix-down-errors-bot-protection\">Pro-Tip: How to Fix \"Down\" Errors (Bot Protection)</h3>\n  <p>If your site uses strict security, it might block Uptime Kuma and say your site is \"Down\" with a 403 Forbidden error.</p>\n  <p><strong>The Fix:</strong> Scroll down to Advanced, find the User Agent box, and paste this text to make Uptime Kuma look like a normal Chrome browser:</p>\n  <p><code>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36</code></p>\n  <h3 id=\"heading-add-a-discord-alert\">Add a Discord Alert</h3>\n  <p>To get a message on your phone when your site goes down:</p>\n  <ol>\n   <li>\n    <p>On the right side of the monitor screen, click Setup Notification.</p>\n   </li>\n   <li>\n    <p>Select Discord from the dropdown list.</p>\n   </li>\n   <li>\n    <p>Paste a Discord Webhook URL (you can create one in your Discord server settings under Integrations).</p>\n   </li>\n   <li>\n    <p>Click Test to receive a test ping, then click Save.</p>\n   </li>\n  </ol>\n  <h2 id=\"heading-conclusion\">Conclusion</h2>\n  <p>Congratulations! You just took control of your server health. By deploying Uptime Kuma, you replaced an expensive SaaS subscription with a powerful, free monitoring tool that alerts you the second a project goes offline.</p>\n  <p><strong>Let’s connect!</strong> I am a developer and technical writer specialising in writing step-by-step guides and workflows. You can find my latest projects on my <a href=\"https://blog.abdultalha.tech/portfolio\"><strong>Technical Writing Portfolio</strong></a> or reach out to me directly on <a href=\"https://www.linkedin.com/in/abdul-talha/\"><strong>LinkedIn</strong></a>.</p>\n </body>\n</html>",
+  "aiSummary": "本指南提供了在 Ubuntu 上使用 Docker 自托管 Uptime Kuma 的分步教程，旨在创建一个私有、高性价比且具备 Discord 自动告警功能的服务器监控仪表板。",
+  "oneSentenceSummary": "本指南提供了在 Ubuntu 上使用 Docker 自托管 Uptime Kuma 的分步教程，旨在创建一个私有、高性价比且具备 Discord 自动告警功能的服务器监控仪表板。",
+  "summary": "本文探讨了开发者面临的一个常见痛点：往往是在用户投诉后才发现网站宕机，而非通过主动告警获知，这通常是因为专业的 SaaS 监控工具成本高昂。文章介绍了 Uptime Kuma，这是一个强大、免费且开源的替代方案，无需订阅费即可提供专业级功能。本指南提供了在 Ubuntu 系统上使用 Docker 部署该工具的全面分步教程。首先是必要的环境准备，包括软件包更新以及通过 Uncomplicated Firewall (UFW) 进行安全加固。随后进入技术实现阶段，演示了如何使用 Docker Compose 进行结构化的容器管理和数据持久化。除了基础安装外，作者还提供了实用的故障排除建议，例如使用自定义 User Agent 来绕过可能导致误报“宕机”的机器人防护。最后，文章以一个实际用例作为总结：设置网站监控并集成 Discord Webhook，确保开发者在服务下线的第一时间就能收到移动端即时通知。",
+  "mainPoints": [
+    {
+      "point": "自托管作为 SaaS 监控的高性价比替代方案。",
+      "explanation": "通过使用 Uptime Kuma 等开源工具，开发者可以避免高昂的月费，同时保持对监控数据和基础设施的完全控制。"
+    },
+    {
+      "point": "使用 Docker Compose 进行结构化的容器管理。",
+      "explanation": "本指南强调使用 Docker Compose 进行有序部署，并通过卷映射确保数据持久化，以防止容器更新期间的数据丢失。"
+    },
+    {
+      "point": "主动安全与防火墙配置。",
+      "explanation": "将 UFW 设置集成到部署流程中，确保仅开放必要的端口，从而保护监控实例免受未经授权的访问。"
+    },
+    {
+      "point": "通过 Discord 集成实现自动告警。",
+      "explanation": "利用 Webhook 可以实现移动设备上的即时通知，从而缩短服务器崩溃到开发者获知之间的反馈闭环。"
+    }
+  ],
+  "keyQuotes": [
+    "作为一名开发者，最糟糕的事情莫过于从愤怒的用户那里得知你的网站宕机了。",
+    "使用 docker-compose.yml 文件是管理 Docker 容器的专业方式。它能将你的配置整齐地集中在一处。",
+    "./data:/app/data 这一行非常重要。它将你的数据库保存在机器上的普通文件夹中，方便日后备份。",
+    "如果你的网站使用了严格的安全策略，它可能会拦截 Uptime Kuma，并报出 403 Forbidden 错误，导致显示网站“宕机”。"
+  ],
+  "tags": [
+    "Docker",
+    "Uptime Kuma",
+    "自托管",
+    "监控",
+    "DevOps"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 750,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775507551000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-06 20:32:31"
+}

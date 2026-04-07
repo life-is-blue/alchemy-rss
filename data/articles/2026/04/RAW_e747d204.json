@@ -1,0 +1,48 @@
+{
+  "id": "RAW_e747d204",
+  "title": "下一代 OpenClaw 来了？“龙虾之父”称将率先支持阿里千问",
+  "url": "https://www.qbitai.com/2026/04/396955.html",
+  "date": "2026-04-07 04:02:26",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>4月7日消息，“龙虾之父”彼得·斯坦伯格（Peter Steinberger）在社交媒体上透露称，下一代OpenClaw产品将融入视频生成功能，并率先提供阿里千问大模型的官方支持。据了解，过去的一周，阿里连续发布Qwen3.6-Plus、Qwen3.5-Omni、Wan2.7-Image、Wan2.7-Video等数款新模型，涵盖编程、Agent、全模态、文生图、视频生成等多个领域，在全球AI社区掀起一股“千问旋风”。其中，千问3.6Plus在全球最大的大模型API平台OpenRouter上霸榜多日，成为该平台首个单日调用量突破1万亿Token的模型。</p>\n  <p>&nbsp;</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-396956\" src=\"https://image.jido.dev/20260407050307_4e41a6b7dd5765ecbaf4e9ec6b882c6c-1.png\" alt=\"\" width=\"1182\" height=\"564\" srcset=\"https://image.jido.dev/20260407050307_4e41a6b7dd5765ecbaf4e9ec6b882c6c-1.png 1182w, https://image.jido.dev/20260407050307_4e41a6b7dd5765ecbaf4e9ec6b882c6c-1-768x366.png 768w\" sizes=\"auto, (max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px\"></p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "Peter Steinberger 宣布下一代 OpenClaw 将集成视频生成功能并率先支持阿里千问系列模型，后者近期在 OpenRouter 表现强劲。",
+  "oneSentenceSummary": "Peter Steinberger 宣布下一代 OpenClaw 将集成视频生成功能并率先支持阿里千问系列模型，后者近期在 OpenRouter 表现强劲。",
+  "summary": "本文报道了 OpenClaw 创始人 Peter Steinberger 的最新动态，宣布下一代产品将引入视频生成能力，并官方首发支持阿里巴巴的 Qwen 大模型。近期阿里连续发布了包括 Qwen 3.6-Plus 和 Wan 2.7 视频生成模型在内的多款新品，其中 Qwen 3.6-Plus 在 OpenRouter 平台上创下了单日调用量突破 1 万亿 Token 的纪录，显示出中国大模型在全球开发者生态中的影响力。",
+  "mainPoints": [
+    {
+      "point": "OpenClaw 下一代产品将支持视频生成并首发适配阿里千问。",
+      "explanation": "创始人 Peter Steinberger 确认了下一代产品的核心更新方向，强调了对阿里大模型生态的官方支持与重视。"
+    },
+    {
+      "point": "阿里千问系列模型近期在全球开发者社区表现强劲。",
+      "explanation": "通过密集发布多模态模型并在 OpenRouter 创下调用量纪录，Qwen 正在加速渗透全球 AI 开发市场。"
+    }
+  ],
+  "keyQuotes": [
+    "下一代 OpenClaw 产品将融入视频生成功能，并率先提供阿里千问大模型的官方支持。",
+    "千问 3.6Plus 在全球最大的大模型 API 平台 OpenRouter 上霸榜多日，成为该平台首个单日调用量突破 1 万亿 Token 的模型。"
+  ],
+  "tags": [
+    "OpenClaw",
+    "阿里千问",
+    "Qwen",
+    "视频生成",
+    "大模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 83,
+  "wordCount": 278,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775534546000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-07 04:02:26"
+}

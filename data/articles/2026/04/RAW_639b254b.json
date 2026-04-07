@@ -1,0 +1,53 @@
+{
+  "id": "RAW_639b254b",
+  "title": "Istio 演进以拥抱 AI 时代：支持多集群、Ambient 模式与推理能力",
+  "url": "https://www.infoq.com/news/2026/04/istio-ai-multicluster/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-07 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">The <a href=\"https://www.cncf.io/\">Cloud Native Computing Foundation (CNCF)</a> has <a href=\"https://www.cncf.io/announcements/2026/03/25/istio-brings-future-ready-service-mesh-to-the-ai-era-with-new-ambient-multicluster-gateway-api-inference-extension-and-more/\">announced</a> a major evolution of Istio, introducing new capabilities aimed at making service meshes \"future-ready\" for AI-driven workloads. Unveiled at KubeCon + CloudNativeCon Europe 2026, the update includes beta support for ambient multicluster deployments, a new Gateway API Inference Extension, and experimental integration of agentgateway - features designed to simplify operations while enabling more intelligent traffic management for modern, distributed systems.</p>\n   <p dir=\"ltr\">The release reflects a broader shift in cloud-native infrastructure as organizations increasingly run AI workloads on <a href=\"https://kubernetes.io/\">Kubernetes</a>. According to CNCF data, while 66% of organizations are now running generative AI workloads on Kubernetes, only a small fraction achieve daily deployment velocity, highlighting operational complexity as a key barrier. Istio's new capabilities aim to address this gap by simplifying service mesh adoption and embedding AI-aware traffic routing directly into platform primitives, positioning the project as a foundational layer for next-generation infrastructure.</p>\n   <p dir=\"ltr\">A central feature of the update is ambient multicluster support, which extends Istio's sidecar-less \"ambient mode\" across multiple clusters. This allows teams to manage traffic, security, and observability across regions or cloud providers without the operational overhead traditionally associated with sidecar proxies. By reducing complexity, the feature is designed to make multicluster deployments more accessible and scalable for platform teams.</p>\n   <p dir=\"ltr\">Complementing this is the<a href=\"https://agentgateway.dev/\"> Gateway API Inference Extension, </a>which integrates machine learning inference directly into service mesh traffic flows. This enables consistent routing, control, and observability of AI inference requests using familiar Kubernetes-native APIs, effectively bridging the gap between application networking and AI workloads. The addition of agentgateway, an experimental data plane component, further reflects a move toward handling dynamic, AI-driven traffic patterns, particularly in environments where models, agents, and services interact in increasingly complex ways.</p>\n   <p dir=\"ltr\">These updates signal a broader evolution of service meshes from traditional microservices infrastructure toward AI-aware platform primitives. Historically, Istio has focused on managing service-to-service communication, security, and observability. This release expands into orchestrating AI inference traffic and enabling platform engineers to build guardrails for emerging workloads such as generative AI and agent-based systems.</p>\n   <p dir=\"ltr\">The shift also reflects changing expectations for platform engineering teams, who are increasingly responsible for enabling safe, scalable AI deployments. By embedding capabilities like inference routing and multicluster traffic control into the mesh itself, Istio reduces the need for bespoke tooling and fragmented architectures, aligning with a growing industry trend toward unified platform layers that abstract complexity while maintaining flexibility.</p>\n   <p dir=\"ltr\">CNCF leaders describe the release as part of Istio's long-term evolution to meet the needs of modern infrastructure. As AI workloads become more distributed, latency-sensitive, and dynamic, service meshes are expected to play a critical role in ensuring reliability, security, and observability across environments.</p>\n   <p dir=\"ltr\">While Istio continues to position itself as a feature-rich, extensible service mesh, particularly with its new AI-focused capabilities, other platforms in the ecosystem take notably different approaches to solving similar challenges. For example, <a href=\"https://linkerd.io/\">Linkerd</a> is widely regarded as a lightweight and performance-focused alternative, prioritising simplicity, lower latency, and ease of operation over advanced traffic management features. This makes it attractive to teams that want fast adoption and minimal overhead, but it typically lacks the depth in routing, policy, and extensibility that Istio provides. <a href=\"https://developer.hashicorp.com/consul\">Consul</a>, on the other hand, differentiates itself through multi-platform and hybrid-cloud support, enabling service mesh capabilities across Kubernetes, virtual machines, and other runtimes, though often with added operational complexity.</p>\n   <p dir=\"ltr\">More broadly, the service mesh landscape reflects trade-offs among capability, performance, and operational simplicity. Istio is often seen as the most advanced option, offering deep traffic control, security policies, and observability, but at the cost of higher resource usage and complexity. In contrast, emerging and alternative approaches - including sidecar-less models and <a href=\"https://ebpf.io/\">eBPF-based networking</a> (e.g., <a href=\"https://cilium.io/\">Cilium</a>) - are pushing toward reduced overhead and tighter kernel-level integration, similar to Istio’s own \"ambient mode\" evolution.</p>\n   <p dir=\"ltr\">Across all platforms, however, a clear trend is emerging: service meshes are evolving beyond traditional microservice networking toward platform-level control planes that can support increasingly dynamic workloads, including AI inference, multi-cluster deployments, and policy-driven traffic management.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Istio Evolves for the AI Era with Multicluster, Ambient Mode, and Inference Capabilities\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/istio-ai-multicluster/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775563200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Istio 的最新更新引入了 Ambient 多集群支持和 Gateway API 推理扩展，旨在优化 Kubernetes 上 AI 驱动工作负载的服务网格基础设施。",
+  "oneSentenceSummary": "Istio 的最新更新引入了 Ambient 多集群支持和 Gateway API 推理扩展，旨在优化 Kubernetes 上 AI 驱动工作负载的服务网格基础设施。",
+  "summary": "CNCF 宣布了 Istio 的重大演进，旨在使服务网格为 AI 时代做好准备。该更新在 KubeCon Europe 2026 上发布，引入了对 Ambient 多集群部署的 Beta 支持，将 Istio 的无 Sidecar 模式扩展到多个集群，以降低运维复杂度。一个关键亮点是 Gateway API 推理扩展（Gateway API Inference Extension），它将机器学习推理直接集成到流量流中，利用 Kubernetes 原生 API 为 AI 工作负载实现一致的路由和可观测性。此次发布还引入了用于处理动态 AI 流量模式的实验性 agentgateway。这一转变标志着 Istio 从传统的微服务管理向 AI 感知平台原语的过渡，解决了 66% 已经在 Kubernetes 上运行生成式 AI 的组织所面临的运维障碍。",
+  "mainPoints": [
+    {
+      "point": "Ambient 多集群支持降低了管理分布式系统的复杂度。",
+      "explanation": "通过在集群和区域间扩展无 Sidecar 的 Ambient 模式，Istio 允许平台团队在无需传统 Sidecar 代理带来的高资源开销和运维摩擦的情况下，保持安全性和可观测性。"
+    },
+    {
+      "point": "Gateway API 推理扩展架起了网络与机器学习之间的桥梁。",
+      "explanation": "它使平台工程师能够使用熟悉的 Kubernetes 原生 API 来管理 AI 推理流量，为 LLM 和基于智能体（Agent）的系统提供了一种统一的路由、控制和防护机制处理方式。"
+    },
+    {
+      "point": "服务网格正从微服务基础设施向 AI 感知平台原语转变。",
+      "explanation": "随着 AI 工作负载变得更加动态且对延迟敏感，Istio 正在演进，以便直接在基础设施控制平面层面编排模型、智能体和服务之间复杂的交互。"
+    }
+  ],
+  "keyQuotes": [
+    "此次发布反映了云原生基础设施的更广泛转变，因为越来越多的组织开始在 Kubernetes 上运行 AI 工作负载。",
+    "Istio 的新功能旨在通过简化服务网格的采用，并将 AI 感知流量路由直接嵌入平台原语中，来弥补这一差距。",
+    "服务网格正在超越传统的微服务网络，向能够支持日益动态工作负载的平台级控制平面演进。"
+  ],
+  "tags": [
+    "Istio",
+    "服务网格",
+    "Kubernetes",
+    "AI 基础设施",
+    "Ambient Mesh"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 662,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775563200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-07 12:00:00"
+}

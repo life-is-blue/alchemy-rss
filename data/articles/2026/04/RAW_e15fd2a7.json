@@ -1,0 +1,53 @@
+{
+  "id": "RAW_e15fd2a7",
+  "title": "Google 开源实验性多智能体编排测试平台 Scion",
+  "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-07 08:00:00",
+  "author": "Sergio De Simone",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Designed to manage concurrent agents running in containers across local and remote compute, <a href=\"https://googlecloudplatform.github.io/scion/overview/\">Scion is an experimental orchestration testbed</a> that enables developers to run groups of specialized agents with isolated identities, credentials, and shared workspaces.</p>\n   <p>Google describes Scion as a \"hypervisor for agents\" that enables to integrate multi-agent system components like agent memory, chatrooms, and task management as orthogonal concerns.</p>\n   <blockquote>\n    <p><a href=\"https://github.com/GoogleCloudPlatform/scion\">Scion</a> orchestrates \"deep agents\" (Claude Code, Gemini CLI, Codex, and others) as isolated, concurrent processes. Each agent gets its own container, git worktree, and credentials — so they can work on different parts of your project without stepping on each other. Agents run locally, on remote VMs, or across Kubernetes clusters.</p>\n   </blockquote>\n   <p>Scion enables developers to manage a graph of tasks that evolve dynamically and execute in parallel pursuing distinct goals, such as coding, auditing, and testing. Rather than relying on a fixed set of agents, it support distinct agent lifecycles, with some agents being specialized and long-lived, while others are ephemeral and tied to one single task.</p>\n   <p>One basic tenet of Scion is <a href=\"https://googlecloudplatform.github.io/scion/philosophy/#isolation-over-constraints\">preferring isolation over constraints</a> to make agents operation safe. This means that instead of constraining an agent's behavior by defining rules and embedding them into its context, Scion opts for letting agents do whatever they need to do to complete their tasks while enforcing outside boundaries and guardrails:</p>\n   <blockquote>\n    <p>Scion favors running agents in --yolo mode, while isolating them in containers, git worktrees, and on compute nodes subject to network policy at the infrastructure layer.</p>\n   </blockquote>\n   <p>Scion supports multiple popular agents through adapters called <em>harnesses</em>, which manage lifecycle, authentication, and configuration. Supported agents include Gemini, Claude Code, OpenCode, and Codex, though <a href=\"https://googlecloudplatform.github.io/scion/supported-harnesses/#feature-capability-matrix\">support for the latter two is currently partial</a>.</p>\n   <p>Developers can use distinct containerization runtimes with Scion, including Docker, Podman, Apple containers, and Kubernetes via named profiles.</p>\n   <p>To use Scion developers should familiarize themselves with its unique lexicon, which includes concepts such as <em>grove</em>, corresponding to a project; <em>hub</em>, a central control plane for orchestration; <em>runtime broker</em>, a machine where hubs run, and others.</p>\n   <p>To showcase Scion's capabilities, Google has released the codebase for a game, <a href=\"https://github.com/ptone/scion-athenaeum\">Relics of the Athenaeum</a>, in which groups of agents collaborate to solve computational puzzles. The code demonstrates how distinct agents running on different harnesses work together to impersonate distinct characters, with a <em>game runner</em> in charge of spawning new characters/agents and those agents in turn spawning worker and specialized agents dynamically. Collaboration occurs through a shared workspace for reading and writing data about the challenge and solutions, as well as via direct messages and party-wide broadcasts.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Open Sources Experimental Multi-Agent Orchestration Testbed Scion\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Sergio De Simone\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/google-agent-testbed-scion/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775548800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google 开源了 Scion，这是一个实验性的“智能体虚拟机管理程序（hypervisor for agents）”，旨在跨本地和远程计算环境编排并发、隔离的多智能体系统。",
+  "oneSentenceSummary": "Google 开源了 Scion，这是一个实验性的“智能体虚拟机管理程序（hypervisor for agents）”，旨在跨本地和远程计算环境编排并发、隔离的多智能体系统。",
+  "summary": "Scion 是 Google 推出的一个全新的编排测试平台，用于在隔离的容器内管理一组专业的 AI 智能体。它将记忆、任务管理和通信等问题视为与智能体本身正交（独立）的关注点。通过优先考虑“隔离而非约束”，Scion 允许智能体以高自主性（yolo 模式）运行，同时在基础设施层（Docker、Kubernetes）强制执行安全和资源边界。它通过“harness（工具包）”系统支持 Gemini 和 Claude Code 等主流智能体，并为协作解决问题提供了一个共享工作区。",
+  "mainPoints": [
+    {
+      "point": "Scion 充当 AI 智能体的“虚拟机管理程序”，用于管理多智能体的复杂性。",
+      "explanation": "它将智能体逻辑与记忆、聊天室和任务管理等基础设施问题解耦，使开发人员能够将“深度智能体”编排为隔离的并发进程。"
+    },
+    {
+      "point": "该平台优先考虑基础设施隔离，而非行为约束。",
+      "explanation": "Scion 不通过复杂的提示工程或上下文规则来限制智能体行为，而是利用容器、git 工作树（git worktrees）和网络策略来创建安全的执行边界。"
+    },
+    {
+      "point": "它支持具有不同智能体生命周期的动态、并行任务执行。",
+      "explanation": "Scion 管理动态演进的任务图，既支持长期运行的专业智能体，也支持为单次任务创建的临时智能体。"
+    }
+  ],
+  "keyQuotes": [
+    "Google 将 Scion 描述为一种“智能体虚拟机管理程序”，它能够将智能体记忆、聊天室和任务管理等多智能体系统组件作为正交关注点进行集成。",
+    "Scion 支持在 --yolo 模式下运行智能体，同时在基础设施层通过容器、git 工作树和受网络策略约束的计算节点将它们隔离开来。",
+    "每个智能体都有自己的容器、git 工作树和凭据——因此它们可以在项目的不同部分工作，而不会相互干扰。"
+  ],
+  "tags": [
+    "多智能体系统",
+    "编排",
+    "Google Cloud",
+    "AI 智能体",
+    "容器化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 423,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775548800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-07 08:00:00"
+}

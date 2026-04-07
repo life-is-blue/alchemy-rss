@@ -1,0 +1,54 @@
+{
+  "id": "RAW_2fe633c6",
+  "title": "生产力提升的算术题：为什么“生产力提升 40%”往往名不副实？",
+  "url": "https://towardsdatascience.com/the-arithmetic-of-productivity-boosts-why-does-a-40-increase-in-productivity-never-actually-work/",
+  "date": "2026-04-07 12:00:00",
+  "author": "Eirik Berge",
+  "siteName": "Towards Data Science",
+  "content": "<html>\n <head></head>\n <body>\n  <h2 class=\"wp-block-heading\">Introduction: False promises?</h2>\n  <p class=\"wp-block-paragraph\"><mdspan datatext=\"el1775534425339\" class=\"mdspan-comment\">Throughout my work</mdspan> as a consultant and manager in the data sphere, I’ve sat through my fair share of slide deck presentation. On both sides. And any slide deck worth its salt promises something, often about efficiency or productivity. You have probably heard something like this:</p>\n  <ul class=\"wp-block-list\">\n   <li class=\"wp-block-list-item\"><em>This tool with make your data scientists 40% more productive!</em></li>\n   <li class=\"wp-block-list-item\"><em>You will spend 30% less time fixing bugs by doing this. You could basically implement a 6-hour work day and still come out on top!</em></li>\n   <li class=\"wp-block-list-item\"><em>With our solution, you could code up two projects in the time it took you previously to do only one. This halves the amount of time to production!</em></li>\n  </ul>\n  <p class=\"wp-block-paragraph\">Sometimes the promises do not work simply because the proposed product is bad. But why does this never seem to actually work even with good products? You could end up switching to a product that you genuinely love, but still not really see the promised improvement. Why? Are the numbers you got presented lies?</p>\n  <p class=\"wp-block-paragraph\">My background as a PhD in mathematics has probably scarred me for life in more ways than one. One of the deepest scars is my need to understand precisely what numbers represent. And the numbers you find in the statements above are all indicating one thing, while telling a completely different story if you stop and think.</p>\n  <p class=\"has-text-align-left wp-block-paragraph\">While lying certainly happens, what is a much more common practice is being <strong>misleading</strong>. This sort of marketing assumes that you don’t think critically when presented with numbers. Let’s think critically together and see what we come up with.</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity is-style-dotted\">\n  <h2 class=\"wp-block-heading\">Lies, lies, and marketing</h2>\n  <p class=\"wp-block-paragraph\">So what is the issue with the productivity statements?</p>\n  <p class=\"wp-block-paragraph\"><strong>The main issue is that they claim to optimize a certain aspect of the process, while (indirectly) promising global productivity gains. </strong></p>\n  <p class=\"wp-block-paragraph\">Let’s go through a simple example to understand what this means.</p>\n  <p class=\"wp-block-paragraph\">Say you’re a big player in AI and have recently launched a product that is great at helping data scientists with model parameter selection. Cool! Initial surveys show that it has given data scientists a 20% increase in productivity for model parameter selection. You initially present this as:</p>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\"><em>Our tool has improved the productivity of model parameter selection for data scientists by 20%. </em></p>\n  </blockquote>\n  <p class=\"wp-block-paragraph\">Happy with this impressive result, you send your statement of to marketing and they come back only with minor adjustments:</p>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\"><em>Our tool has improved model parameter selection, making data scientists 20% more productive. </em></p>\n  </blockquote>\n  <p class=\"wp-block-paragraph\">You shrug and wonder for a second what these people in marketing are really paid to do when they only shuffled around a few words. In reality, they have now shifted your statement from something that is moderately impressive to something that is insanely impressive.</p>\n  <p class=\"wp-block-paragraph\">Why? The adjustment from marketing makes it seem like the product makes data scientists 20% more productive <strong>in general</strong>. But your survey only really talked about productivity during the time the data scientists are selecting model parameters. What’s the real difference?</p>\n  <p class=\"wp-block-paragraph\">A data scientist does loads of things, including prototyping, stakeholder management, coordination meetings, etc. While machine learning is often at the front and center of how they would describe themselves, many data scientists only spend around 40% of their time on typical data science tasks. A big chunk of these 40% is debugging data quality issues, pipeline management, and data validation. Model parameter selection may only take up 10% of their 40% time doing data science tasks. Multiplying shows us that this is only 4% of their total time.</p>\n  <p class=\"wp-block-paragraph\">If the data scientist adopted a tool to make the model parameter selection 20% more productive, that would only make a difference of barely 1% of their total time. You would not notice this during a work week. In fact, with the added complexity of learning a new tool in the beginning, you might even see a decrease in productivity in the beginning.</p>\n  <p class=\"wp-block-paragraph\">The best part? Look at the statement carefully:</p>\n  <blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\">\n   <p class=\"wp-block-paragraph\"><em>Our tool has improved model parameter selection, making data scientists 20% more productive. </em></p>\n  </blockquote>\n  <p class=\"wp-block-paragraph\">It certainly seems to argue that data scientists would be 20% more productive overall, but this is just one interpretation. If pressed, marketing would make the connection between the start and end of the sentence, and say that it is implied that the productivity increase is only for model parameter selection.</p>\n  <p class=\"wp-block-paragraph\">So you effectively get to say one thing, while falling back on another if the misleading statement is discovered. The pay for marketing comes from shuffling around the <em>right words</em>!</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity is-style-dotted\">\n  <h2 class=\"wp-block-heading\">A better way? Focus on cognitive load rather than productivity</h2>\n  <p class=\"wp-block-paragraph\">What does the story I just told really tell you? If you have many different tasks that are complex (like a data scientist does), then aiming for productivity gains is really not pushing the needle that much.</p>\n  <p class=\"wp-block-paragraph\">Don’t get me wrong. If you have an easy opportunity to become 20% more productive with one of your tasks, go for it! But don’t expect it to result in more than a percent or two difference in total productivity.</p>\n  <p class=\"wp-block-paragraph\">What can we do instead when we have many different tasks that are complex? <strong>We can use cognitive load as a metric, and try to reduce that instead.</strong></p>\n  <p class=\"wp-block-paragraph\">Say that a competing company developed their own tool for model parameter selection. Instead of trying to speed up the process, their tool had the sole purpose of reducing the cognitive load of the data scientist. So the process of model selection would take the same amount of time, but the data scientist would feel energized and ready for another challenge after selecting model parameters.</p>\n  <p class=\"wp-block-paragraph\">Most people, myself included, cannot work 8 hours a day and be at the top of our game at all times. Some days I feel like I have 6 effective hours in me. Other days it is more like 2 effective hours. If one process does not require that much cognitive load, then I can work longer effectively. This often results in the same total productivity of a few percent, but with the added benefit of improved morale.</p>\n  <p class=\"wp-block-paragraph\">So next time someone presents a “<em>40% increase in productivity</em>“, ask them the following:</p>\n  <ul class=\"wp-block-list\">\n   <li class=\"wp-block-list-item\">How much of the total work time does this productivity increase affect?</li>\n   <li class=\"wp-block-list-item\">How much cognitive load does this take away or introduce?</li>\n  </ul>\n  <p class=\"wp-block-paragraph\"></p>\n </body>\n</html>",
+  "aiSummary": "本文解构了生产力声明中的数学谬误，解释了为什么局部任务优化很少能带来全局效率的提升，并提出将认知负荷作为更好的衡量指标。",
+  "oneSentenceSummary": "本文解构了生产力声明中的数学谬误，解释了为什么局部任务优化很少能带来全局效率的提升，并提出将认知负荷作为更好的衡量指标。",
+  "summary": "作者是一位数学家兼顾问，他探讨了为什么营销中承诺的“生产力提升 40%”往往无法在现实中实现。核心问题在于“生产力算术”：针对特定狭窄任务的显著百分比提升（局部优化），往往对专业人员的总产出（全局优化）影响微乎其微。例如，如果一项任务仅占工作日的 5%，即使效率提升 20%，整体收益也仅为 1%。文章强调了营销语言是如何刻意混淆这两者的。作为替代方案，作者建议关注降低认知负荷，而非仅仅关注所花费的时间。通过减轻复杂任务带来的精神消耗，员工可以更长时间地保持巅峰状态，从而实现更可持续的生产力并提升士气。",
+  "mainPoints": [
+    {
+      "point": "局部优化不等于全局生产力提升。",
+      "explanation": "如果特定子任务仅占整体工作流程的一小部分，那么该任务效率的大幅提升对总生产力的影响微乎其微。"
+    },
+    {
+      "point": "营销语言经常使用“文字游戏”来误导买家。",
+      "explanation": "供应商经常从声称工具能改进特定流程，转变为暗示它能让整个专业人员的工作效率更高，从而在预期和现实之间制造了差距。"
+    },
+    {
+      "point": "对于知识工作者而言，认知负荷比时间是更有效的衡量指标。",
+      "explanation": "减少任务所需的脑力消耗，可以让一个人在一天中保持更长时间的高效状态，即使单个任务的执行速度没有变快，也能增加总产出。"
+    }
+  ],
+  "keyQuotes": [
+    "主要问题在于，他们声称优化了流程的某个方面，同时（间接地）承诺了全局生产力的提升。",
+    "如果数据科学家采用了一个工具，使模型参数选择的效率提高了 20%，那对他们总时间的贡献也仅仅只有 1%。",
+    "我们可以将认知负荷作为衡量指标，并尝试降低它。",
+    "营销的报酬来自于对文字的巧妙玩弄！"
+  ],
+  "tags": [
+    "生产力",
+    "思维模型",
+    "认知负荷",
+    "数据科学",
+    "效率"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 86,
+  "wordCount": 1037,
+  "domain": "towardsdatascience.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PG_LEARNING",
+  "mainDomain": "Productivity_Growth",
+  "sourceId": "SOURCE_0c32dbfa",
+  "sourceName": "Towards Data Science",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775563200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-07 12:00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_a5ebd600",
+  "title": "Helidon 4.4.0 发布：Java 框架内建 AI 智能体编排与虚拟线程优化",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281011&idx=4&sn=f151f082392e4926dffaa481193e5284",
+  "date": "2026-04-07 05:05:00",
+  "author": "InfoQ 中文",
+  "siteName": "InfoQ 中文",
+  "content": "<html>\n <head></head>\n <body>\n  <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n   <div style=\"margin:0;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing:border-box;\" data-pm-slice=\"0 0 []\">\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">作者 | Michael Redlich </span></p>\n    <p style=\"font-family: Avenir,-apple-system-font,微软雅黑,sans-serif;box-sizing: border-box;font-size: 14px;font-weight: normal;color: #919191;text-align: left;line-height: 1em;margin: 0;margin-top: 13px;padding-left: 14px;\"><span leaf=\"\">译者 | 田橙 </span></p>\n   </div>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Oracle 已发布 其微服务框架 Helidon 的 4.4.0 版本，该版本对齐了 OpenJDK 的发布节奏，通过新的 Java Verified Portfolio 提供支持，并引入了新的核心能力以及面向 LangChain4j 的智能体 AI 支持。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Helidon 将改变其熟悉的语义化版本控制方式，以匹配 OpenJDK 的六个月发布节奏。从 2026 年 9 月发布的 JDK 27 开始，当前的 Helidon 4.4.0 将变更为 Helidon 27，并采用 OpenJDK 所实践的 tip 和 tail 模型。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Helidon 将被纳入新的 Java Verified Portfolio（JVP），这是一个“由 Oracle 验证的 Java 工具、框架和库的精选集合”。JVP 在 JavaOne 2026 上发布，还将为 JavaFX 提供商业支持，该技术由于客户需求以及 AI 驱动应用中对高级可视化的需求而由 Oracle 重新恢复支持。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Helidon 4.3.0 中引入的 Helidon Declarative，使得在 Helidon SE 中可以采用控制反转风格的编程模型。它最初提供了三个功能，即：HTTP Server Endpoint、调度和容错。Helidon Declarative 构建于在 Helidon 4.2.0 中引入的 Helidon Inject 之上，并新增了以下功能以补充原有三项能力：MetricsTracingSecurityValidationWebSocket ServerWebSocket ClientWebServer CORS</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Helidon Declarative 是一项孵化特性，因此可能会发生变化。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">本次发布还引入了 Helidon JSON，这是一个针对虚拟线程和现代 Java 应用优化的全新 JSON 处理库。Helidon JSON 由两个模块组成：helidon-json-binding 用于对象序列化和反序列化；helidon-json 用于基础的 JSON 解析与生成。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">Helidon JSON 采用的方法包括：在编译时生成 Java 源代码；使用注解处理器生成类型安全的转换器；在运行时无需反射即可执行；以及生成的代码既可读又易于调试。</span></p>\n   <p style=\"padding:23px 8px 0 8px;margin:0;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir,-apple-system-font,微软雅黑,sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">在 Helidon 4.2.0 中引入的与 LangChain4j 的集成，现已通过支持智能体得到增强。开发者可以利用两种常见的执行模式：workflows，一组用于以编程方式编排多个智能体并创建智能体工作流模式的抽象；以及 dynamic agents，一个开箱即用的监督者智能体，可管理一组子智能体。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px 0px 16px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:justify;\"><span leaf=\"\">以下示例（如该博客文章所示）演示了如何以声明方式创建一个智能体：</span></p>\n   <div data-role=\"outer\" label=\"edit by 135editor\" data-pm-slice=\"0 0 []\">\n    <div data-tools=\"135编辑器\" data-id=\"94875\" data-width=\"99%\" style=\"width: 99%;flex: 0 0 99%;margin-left: auto;margin-right: auto;box-sizing:border-box;max-width:99% !important;\">\n     <div style=\"display: flex;\">\n      <div style=\"display: flex;\">\n       <div data-autoskip=\"1\" style=\"box-sizing:border-box;padding-left:10px;font-size: 14px;color:#333;letter-spacing: 1.5px;text-align: justify;\">\n        <p style=\"margin-bottom: 10px;display: block;text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">@Ai.Agent(\"helidon-mp-expert\") @Ai.ChatModel(\"openai-cheap-model\")@Ai.Tools(value = ProjectNameGeneratorTool.class) @Ai.McpClients(value= {\"first-mcp-client\", \"second-mcp-client\"}) public interface HelidonMpExpert { @UserMessage(\"\"\" &nbsp; &nbsp;You are a Helidon MP expert.</span></span></p>\n        <p style=\"text-align: left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 15px;color: rgb(136, 136, 136);\">Analyze the following user request about Helidon MP and provide &nbsp; &nbsp;thebest possible answer. &nbsp; &nbsp;Always warn against using native image andstress out that &nbsp; &nbsp;Helidon MP requires Jakarta APIs. &nbsp; &nbsp;The userrequest is {{request}}. \"\"\") @Agent(value = \"A Helidon MP expert\",outputKey = \"response\") String askExpert(@V(\"request\") Stringrequest);</span></span></p>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">智能体可以通过声明方式定义、注册为单例，或通过 Helidon Config 进行配置。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Helidon 最初名为 J4C（Java for Cloud），于 2018 年 9 月向 Java 社区发布。其设计目标是简单且高效，并提供两个版本：Helidon SE 和 Helidon MP。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Helidon SE 是一种函数式风格的 API，最初提供了构建微服务的三个核心组件——Web 服务器、配置和安全——用于构建基于微服务的应用程序。它不需要应用服务器。随着 2020 年 6 月 Helidon 2.0 的发布，Helidon SE 新增了 Web 客户端和数据库客户端，以及一个新的命令行工具。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Helidon MP 是一种声明式风格的 API，是 MicroProfile 规范的实现。Helidon 4.4.0 支持 MicroProfile 6.1。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">Helidon SE 1.0 到 3.0 版本采用基于 Netty（一个异步、事件驱动的网络应用框架）构建的 Web 服务器。WebServer 接口支持配置、路由、错误处理，以及构建指标和健康检查端点。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">为准备 Helidon 4.0，Helidon 在 2022 年 9 月引入了一个代号为 Helidon Níma 的新 Web 服务器的 alpha 版本。Ní ma（希腊语，意为“线程”）基于 JEP 444——虚拟线程。该新 Web 服务器在 2023 年 10 月 Helidon 4.0 发布时正式定型。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\">有关此次发布的更多细节（包括破坏性变更和弃用内容），可参阅发布说明。</span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);font-weight: bold;\">原文链接：</span></span></p>\n   <p style=\"padding:23px 8px 0px;margin:0px;white-space:pre-line;font-weight:400;font-size:16px;font-family:Avenir, -apple-system-font, 微软雅黑, sans-serif;line-height:27px;box-sizing:border-box;text-align:left;\"><span leaf=\"\"><span textstyle=\"\" style=\"font-size: 14px;color: rgb(136, 136, 136);\"><a href=\"https://www.infoq.com/news/2026/04/helidon-4-4-released/\" target=\"_blank\">https://www.infoq.com/news/2026/04/helidon-4-4-released/</a></span></span></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Helidon 4.4.0 正式发布，通过集成 LangChain4j 引入 AI 智能体编排能力，并推出针对虚拟线程优化的无反射 JSON 库。",
+  "oneSentenceSummary": "Helidon 4.4.0 正式发布，通过集成 LangChain4j 引入 AI 智能体编排能力，并推出针对虚拟线程优化的无反射 JSON 库。",
+  "summary": "Oracle 发布了微服务框架 Helidon 4.4.0，该版本在版本策略上正式对齐 OpenJDK 的六个月发布节奏。技术层面，新版本显著增强了 AI 支持，通过集成 LangChain4j 实现了声明式 AI 智能体（Agent）定义及工作流编排，支持监督者模式的动态智能体管理。此外，Helidon 4.4.0 引入了全新的 Helidon JSON 库，利用注解处理器在编译时生成代码，避免了运行时反射，从而优化了在虚拟线程环境下的执行效率。同时，Helidon Declarative 扩展了对 WebServer CORS、安全和验证等功能的支持，进一步完善了其控制反转（IoC）编程模型。",
+  "mainPoints": [
+    {
+      "point": "版本发布节奏全面对齐 OpenJDK。",
+      "explanation": "Helidon 将放弃传统的语义化版本，转而采用与 OpenJDK 一致的六个月发布周期，以快速响应 Java 语言特性的演进。"
+    },
+    {
+      "point": "内建 AI 智能体（Agent）编排能力。",
+      "explanation": "通过集成 LangChain4j，开发者可以利用声明式注解定义智能体，并支持编程化编排工作流（Workflows）和监督者模式的动态智能体（Dynamic Agents）。"
+    },
+    {
+      "point": "推出针对虚拟线程优化的无反射 JSON 库。",
+      "explanation": "Helidon JSON 通过注解处理器在编译时生成类型安全的转换代码，无需运行时反射，显著提升了在现代 Java 虚拟线程环境下的性能和可调试性。"
+    },
+    {
+      "point": "Helidon Declarative 编程模型持续增强。",
+      "explanation": "在孵化阶段的声明式模型中新增了指标、追踪、安全、验证及 WebSocket 支持，为 Helidon SE 提供了更接近 Spring 的 IoC 开发体验。"
+    }
+  ],
+  "keyQuotes": [
+    "Helidon 将改变其熟悉的语义化版本控制方式，以匹配 OpenJDK 的六个月发布节奏。",
+    "Helidon JSON 采用的方法包括：在编译时生成 Java 源代码；使用注解处理器生成类型安全的转换器；在运行时无需反射即可执行。",
+    "开发者可以利用两种常见的执行模式：workflows，一组用于以编程方式编排多个智能体并创建智能体工作流模式的抽象；以及 dynamic agents，一个开箱即用的监督者智能体。"
+  ],
+  "tags": [
+    "Helidon",
+    "Java",
+    "AI Agent",
+    "虚拟线程",
+    "微服务"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 6,
+  "score": 86,
+  "wordCount": 1267,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_8f2a9f",
+  "sourceName": "InfoQ 中文",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775538300000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-07 05:05:00"
+}
