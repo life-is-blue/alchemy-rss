@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-07 22:32:02 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 00:21:34 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -446,17 +446,13 @@
 
 ### [我们如何构建-Organizations-以帮助企业大规模管理-Cloudflare](https://blog.cloudflare.com/organizations-beta/)
 
-2026-04-06 22:00:01 | 标签: Cloudflare, 云基础设施, 企业管理, RBAC, DevOps
-
-> Cloudflare 推出了“Organizations”测试版，这是一项旨在简化大规模企业部署管理的分层管理功能。虽然企业通常使用多个账户来隔离团队资源并遵循最小权限原则，但这种碎片化管理此前给管理员带来了巨大的开销。Organizations 通过允许“组织超级管理员”（Org Super Administrators）从单一界面管理多个账户集合解决了这一问题。此次发布得益于 Cloudflare 授权系统的大规模内部重构（增加了 133，000 行代码），使权限检查性能提升了 27%。主要功能包括汇总 HTTP 分析，以及在组织内所有账户间集中共享 WAF 或 Gateway 策略的能力...
+2026-04-06 22:00:01
 
 
 
 ### [如何使用-Uptime-Kuma-和-Docker-自托管服务器监控仪表板](https://www.freecodecamp.org/news/self-host-uptime-kuma-docker/)
 
-2026-04-06 20:32:31 | 标签: Docker, Uptime Kuma, 自托管, 监控, DevOps
-
-> 本文探讨了开发者面临的一个常见痛点：往往是在用户投诉后才发现网站宕机，而非通过主动告警获知，这通常是因为专业的 SaaS 监控工具成本高昂。文章介绍了 Uptime Kuma，这是一个强大、免费且开源的替代方案，无需订阅费即可提供专业级功能。本指南提供了在 Ubuntu 系统上使用 Docker 部署该工具的全面分步教程。首先是必要的环境准备，包括软件包更新以及通过 Uncomplicated Firewall (UFW) 进行安全加固。随后进入技术实现阶段，演示了如何使用 Docker Compose 进行结构化的容器管理和数据持久化。除了基础安装外，作者还提供了实用的故障排除建议，例如使用...
+2026-04-06 20:32:31
 
 
 
