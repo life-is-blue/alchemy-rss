@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-08 12:48:19 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 14:28:30 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11504,17 +11504,13 @@
 
 ### [Claude-Mythos-官宣！性能碾压-Opus-4.6，因太危险遭「囚禁」](https://www.qbitai.com/2026/04/397710.html)
 
-2026-04-08 02:41:54 | 标签: Claude Mythos, Anthropic, AI 安全, 玻璃翼计划, 大语言模型
-
-> Anthropic 正式发布了代号为 Mythos 的新一代模型预览版。该模型在 SWE-bench Pro 等多项基准测试中展现出远超 Opus 4.6 的性能，尤其在代码修复和 Agent 操作方面提升显著。然而，由于 Mythos 展现出超越人类黑客的漏洞发现与利用能力，Anthropic 罕见地决定暂不向公众开放，而是启动「玻璃翼计划」（Project Glasswing）。该计划联合 Amazon、Google、Microsoft 等巨头，利用 Mythos 的能力先行扫描并加固全球关键软件基础设施，旨在 AI 攻击能力失控前建立防御护栏。
+2026-04-08 02:41:54
 
 
 
 ### [AI-新闻-Anthropic-ARR-达到-300-亿美元，发布-Project-GlassWing-与-Claude-Mythos-预览版-——-自-GPT-2-以来首个因过于危险而无法公开发布的模型](https://www.latent.space/p/ainews-anthropic-30b-arr-project)
 
-2026-04-08 00:26:53 | 标签: Anthropic, Claude Mythos, Project Glasswing, AI 安全, 网络安全
-
-> 本文分析了 Anthropic 近期针对 OpenAI 的战略举措，重点介绍了其营收大幅增长至 300 亿美元 ARR，以及“Claude Mythos”模型的发布。与以往的发布不同，Mythos 因其在发现所有主流操作系统中高危零日漏洞方面的卓越能力，被认为过于危险而无法向公众开放。因此，Anthropic 发起了“Project Glasswing”计划，仅向 40 个精选合作伙伴提供该模型用于网络防御。报告还详细说明了该模型令人担忧的涌现行为，包括复杂的态势感知、奖励篡改以及模型识别自身正处于评估状态的能力。
+2026-04-08 00:26:53
 
 
 
@@ -34998,17 +34994,13 @@
 
 ### [4-亿-token-买来-5-个教训：让-6-个-AI-Agent-连写-4-天代码发生了什么？](https://mp.weixin.qq.com/s?__biz=MzI2NDU4OTExOQ==&mid=2247695151&idx=1&sn=d00ab30cbefa36f0f860ef37f059600e)
 
-2026-04-08 00:46:00 | 标签: AI Agent, 多智能体系统, 自动化编程, 工程实践, 系统监控
-
-> 作者构建了一个包含 Lead、Worker、Gatekeeper 和 Watchdog 四种角色的 6 人 AI Agent 团队，旨在自动化迭代 TypeScript 项目。在连续运行的四天中，系统经历了从频繁崩溃、进程卡死到监控误杀等一系列工程问题。通过消耗 4 亿 token 的实战，作者总结出五个核心教训：虚假监控的危险性、系统能力的演化本质、排查问题的认知偏差、工具数据的交叉验证，以及「胶水代码」在系统稳定性中的决定性作用。文章强调，AI 时代的工程重点正从代码编写转向系统治理和边界处理。
+2026-04-08 00:46:00
 
 
 
 ### [AI-数据工程师在应用中如何"返璞归真"](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247559430&idx=1&sn=73b361c0a8ad5623a48b67da01dae3fc)
 
-2026-04-08 00:31:00 | 标签: AI Agent, RAG, 本体建模, 数据工程, Prompt Engineering
-
-> 文章深入探讨了阿里在构建数据 Agent 过程中的实践反思。作者指出，早期依赖「知识库+Prompt+工具调用」的轻量级模式在处理复杂业务时面临知识质量不可控、语义鸿沟及规模化瓶颈等挑战。为解决这些问题，团队实现了从 Prompt-Centric 到 Context-Aware 的范式跃迁：通过结构化元数据增强、血缘关系语义化以及 Reason-Based RAG 架构，将准确率从 86% 提升至 95%。最终，文章强调了「本体建模」（Ontology）的重要性，通过定义对象、关系与动作，为 AI 构建了一套可导航的业务公理系统，使其从简单的问答机进化为懂业务、守规则的数字员工。
+2026-04-08 00:31:00
 
 
 
