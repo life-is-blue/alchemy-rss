@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-08 11:01:01 | [返回首页](/README.md)
+**更新时间**: 2026-04-08 12:48:19 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10922)
+- [AI & 大模型](#ai-llm) (10926)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (760)
 - [DevOps](#devops) (493)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5355)
+- [其他](#other) (5356)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral) - AI 精选
 - [智能体评估就绪检查清单](https://blog.langchain.com/agent-evaluation-readiness-checklist/) - AI 精选
 
-- [查看全部 10922 篇...](/details/tags/ai-llm.md)
+- [查看全部 10926 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5355 篇...](/details/tags/other.md)
+- [查看全部 5356 篇...](/details/tags/other.md)
 
 
