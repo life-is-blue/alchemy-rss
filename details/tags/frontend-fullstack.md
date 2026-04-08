@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-08 06:11:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 08:15:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -366,7 +366,7 @@
 
 
 
-### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
+### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
 
 2025-04-08 14:00:00
 
@@ -378,7 +378,7 @@
 
 
 
-### [Cloudflare-Workers-+-Hyperdrive：构建高性能全球-MySQL-应用](https://blog.cloudflare.com/building-global-mysql-apps-with-cloudflare-workers-and-hyperdrive/)
+### [使用-Cloudflare-适配器在-Cloudflare-Workers-上部署-Next.js-应用](https://blog.cloudflare.com/deploying-nextjs-apps-to-cloudflare-workers-with-the-opennext-adapter/)
 
 2025-04-08 14:00:00
 
@@ -636,6 +636,30 @@
 
 
 
+### [如何使用-React-和语义化-HTML-构建响应式且无障碍的-UI-设计](https://www.freecodecamp.org/news/build-responsive-accessible-ui-with-react-and-semantic-html/)
+
+2026-04-07 17:06:31 | 标签: React, 无障碍, 响应式设计, 语义化 HTML, Web 开发
+
+> 本技术指南探讨了在 React 应用中集成响应式设计与无障碍功能。文章强调了“语义化 HTML 优先”的方法，指出相比于基于 div 的通用布局，原生元素提供了内置的无障碍支持和更好的 SEO。文章涵盖了核心原则，例如使用 Flexbox 和 Grid 的移动优先 CSS 策略、渐进增强以及详细的焦点管理。此外，文中还提供了关于无障碍模态框和下拉菜单的实用代码示例，并提醒开发者在原生 HTML 足以满足需求时，应避免过度依赖 ARIA。
+
+
+
+### [R—K-’26：以“存在感”为核心的作品集背后的思考与代码](https://tympanus.net/codrops/2026/04/07/r-k-26-the-thinking-and-code-behind-a-portfolio-led-by-presence/)
+
+2026-04-07 09:38:19 | 标签: Web 开发, 前端, GSAP, Webflow, 作品集
+
+> 本文深入剖析了“R—K ’26”作品集的开发过程。作者详细阐述了从最初构思到形成精炼、统一的品牌形象的转变，强调了结构和“存在感”的重要性，而非视觉上的堆砌。在技术层面，该网站利用 Webflow 构建结构，使用 GSAP 处理动画，通过 Barba.js 实现页面过渡，并借助 Unicorn Studio 集成 WebGL 元素。作者分享了通过 HTML 属性管理状态、处理移动端视口高度、实现可选音频以及创建复杂的预加载和页面过渡序列的具体代码模式。对于希望在高端视觉美学与健壮、可维护的代码之间取得平衡的开发者来说，这是一份实用的指南。
+
+
+
+### [!important-关键字的替代方案](https://css-tricks.com/alternatives-to-the-important-keyword/)
+
+2026-04-07 07:54:43 | 标签: CSS, 前端开发, CSS 层叠, Web 开发, 最佳实践
+
+> 本文讨论了开发者习惯使用 !important 作为 CSS 特异性冲突的快速修复手段，并指出这往往会导致代码库难以维护。文章解释了 CSS 层叠机制，并提供了更简洁、更可预测的替代方案，包括使用 CSS 层叠层（Cascade Layers）来明确优先级，使用 :is() 和 :where() 伪类来控制特异性，以及优化样式表组织。最后，文章区分了 !important 的“创可贴”式用法与合理场景，如工具类、无障碍覆盖和用户样式表。
+
+
+
 ### [Pretext：解决-30-年前端难题的文本测量库](https://mp.weixin.qq.com/s?__biz=MzUxNjg4NDEzNA==&mid=2247532874&idx=1&sn=4dbcb2152b26b8df773aa6ea9d991431)
 
 2026-04-07 02:24:00
@@ -786,13 +810,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -942,13 +966,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2442,13 +2466,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4152,13 +4176,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

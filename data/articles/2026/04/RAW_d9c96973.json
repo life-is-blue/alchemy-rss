@@ -1,0 +1,57 @@
+{
+  "id": "RAW_d9c96973",
+  "title": "GLM 5.1 现已接入 Vercel AI Gateway",
+  "url": "https://vercel.com/changelog/glm-5.1-on-ai-gateway",
+  "date": "2026-04-07 17:02:03",
+  "author": "Walter Korman, Jerilyn Zheng",
+  "siteName": "Vercel News",
+  "content": "<html>\n <head></head>\n <body>\n  <div data-customer-story=\"false\" class=\"flex flex-col items-center justify-start gap-6 flex-initial article-module__XJFYTq__content\">\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">Designed for long-horizon autonomous tasks, GLM-5.1 can work continuously on a single task for extended periods, handling planning, execution, testing, and iterative refinement in a closed loop. Rather than one-shot code generation, it runs an autonomous cycle of benchmarking, identifying bottlenecks, and optimizing across many iterations, with particular strength in sustained multi-step engineering workflows.</p>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">Beyond agentic coding, GLM-5.1 improves on general conversation, creative writing, front-end prototyping, and office productivity tasks like generating PowerPoint, Word, and Excel documents.</p>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">To use GLM 5.1, set model to <code>zai/glm-5.1</code> in the <a href=\"https://ai-sdk.dev/\" rel=\"noopener\" target=\"_blank\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://ai-sdk.dev/\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">AI SDK</a>.</p>\n   <div class=\"flex flex-col items-stretch justify-start gap-4 flex-initial blog-code-block-module__TEKDOa__wrapper\">\n    <div class=\"relative code-block-module__NOThwW__wrapper code-block-module__NOThwW__hideLineNumbers blog-code-block-module__TEKDOa__codeBlock\" data-geist-code-block=\"\">\n     <button aria-label=\"Copy code\" class=\"code-block-module__NOThwW__copyButton code-block-module__NOThwW__copyFloatingButton\" type=\"button\"></button>\n     <pre class=\"prism-code language-typescript code-block-module__NOThwW__pre\"><code class=\"code-block-module__NOThwW__code\" data-geist-code-block=\"true\"><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L1\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token keyword\">import</span><span class=\"token plain\"> </span><span class=\"token punctuation\">{</span><span class=\"token plain\"> streamText </span><span class=\"token punctuation\">}</span><span class=\"token plain\"> </span><span class=\"token keyword\">from</span><span class=\"token plain\"> </span><span class=\"token string\">'ai'</span><span class=\"token punctuation\">;</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L2\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\" style=\"display:inline-block\">\n</span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L3\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\"></span><span class=\"token keyword\">const</span><span class=\"token plain\"> result </span><span class=\"token operator\">=</span><span class=\"token plain\"> </span><span class=\"token function\">streamText</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">{</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L4\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\">  model</span><span class=\"token operator\">:</span><span class=\"token plain\"> </span><span class=\"token string\">'zai/glm-5.1'</span><span class=\"token punctuation\">,</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L5\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\">  prompt</span><span class=\"token operator\">:</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L6\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\">    </span><span class=\"token template-string template-punctuation string\">`</span><span class=\"token template-string string\">Refactor the data ingestion pipeline to support streaming,</span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L7\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token template-string string\">     add error recovery, and benchmark throughput against the</span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L8\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token template-string string\">     current implementation.</span><span class=\"token template-string template-punctuation string\">`</span><span class=\"token punctuation\">,</span><span class=\"token plain\"></span></div></div><div class=\"line\" data-geist-code-block-line=\"true\" id=\"C176df45a-L9\" style=\"font-feature-settings:&quot;liga&quot; off\"><div class=\"token-line\"><span class=\"token plain\"></span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span></div></div></code></pre>\n    </div>\n    <p class=\"text-center text-copy-14 text-gray-900\"></p>\n   </div>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">AI Gateway provides a unified API for calling models, tracking usage and cost, and configuring retries, failover, and performance optimizations for higher-than-provider uptime. It includes built-in <a href=\"https://vercel.com/docs/ai-gateway/capabilities/custom-reporting\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/docs/ai-gateway/capabilities/custom-reporting\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">custom reporting</a>, <a href=\"https://vercel.com/docs/observability/ai-sdk-observability\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/docs/observability/ai-sdk-observability\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">observability</a>, <a href=\"https://vercel.com/docs/ai-gateway#bring-your-own-key\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/docs/ai-gateway#bring-your-own-key\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">Bring Your Own Key</a> support, and intelligent provider routing with automatic retries.</p>\n   <p class=\"text-copy-16 lg:text-copy-18 text-module__qZtYrq__paragraph\">Learn more about <a href=\"https://vercel.com/docs/ai-gateway\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/docs/ai-gateway\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">AI Gateway</a>, view the <a href=\"https://vercel.com/ai-gateway/leaderboards\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/ai-gateway/leaderboards\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">AI Gateway model leaderboard</a> or try it in our <a href=\"https://vercel.com/ai-gateway/models/glm-5.1\" rel=\"noopener\" target=\"_self\" data-track=\"true\" data-track-click-name=\"article_link\" data-track-click-value=\"https://vercel.com/ai-gateway/models/glm-5.1\" data-zone=\"null\" class=\"link-module__Q1NRQq__link no-underline link-module__Q1NRQq__highlight [&amp;_u]:no-underline\">model playground</a>.</p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "来自 Z.ai 的 GLM 5.1 现已集成到 Vercel AI Gateway 中，为长周期工程任务和通用生产力场景提供先进的自主智能体能力。",
+  "oneSentenceSummary": "来自 Z.ai 的 GLM 5.1 现已集成到 Vercel AI Gateway 中，为长周期工程任务和通用生产力场景提供先进的自主智能体能力。",
+  "summary": "Vercel 宣布 GLM 5.1 现已在 AI Gateway 上线。该模型由 Z.ai 开发，专门针对自主、多步骤任务进行了优化，例如在闭环中进行代码规划、执行和优化。除了在智能体代码编写方面的优势外，它在创意写作和办公文档生成方面也有所提升。开发者可以通过 Vercel AI SDK 使用 `zai/glm-5.1` 标识符来访问该模型，并享受 AI Gateway 提供的统一 API、可观测性和故障转移功能。",
+  "mainPoints": [
+    {
+      "point": "GLM 5.1 现已上线 Vercel AI Gateway，支持自主工程工作流。",
+      "explanation": "该模型专为长周期任务设计，使其能够在闭环中持续进行规划、执行和迭代优化。"
+    },
+    {
+      "point": "模型从“一次性生成”转向“自主优化循环”。",
+      "explanation": "GLM 5.1 能够识别瓶颈并在多次迭代中优化代码，使其在持续的多步骤工程任务中表现尤为出色。"
+    },
+    {
+      "point": "除编码外，还提供广泛的应用支持。",
+      "explanation": "它提升了在日常对话、创意写作以及生成 PowerPoint、Word 和 Excel 文档等办公生产力任务中的表现。"
+    },
+    {
+      "point": "通过 Vercel AI SDK 和 AI Gateway 实现无缝集成。",
+      "explanation": "开发者只需一行配置即可使用该模型，同时获得统一的报告、可观测性和智能路由功能。"
+    }
+  ],
+  "keyQuotes": [
+    "GLM-5.1 专为长周期自主任务而设计，可以在较长时间内持续处理单个任务，在闭环中完成规划、执行、测试和迭代优化。",
+    "它不再是“一次性”代码生成，而是运行一个包含基准测试、识别瓶颈和多次迭代优化的自主循环。",
+    "AI Gateway 为调用模型、跟踪使用情况和成本、配置重试、故障转移和性能优化提供了统一的 API。"
+  ],
+  "tags": [
+    "GLM 5.1",
+    "Vercel",
+    "AI Gateway",
+    "智能体 AI",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 180,
+  "domain": "vercel.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_0256cc",
+  "sourceName": "Vercel News",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775581323775,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-07 17:02:03"
+}

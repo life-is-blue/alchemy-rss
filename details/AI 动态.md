@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-08 06:11:01 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 08:15:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 动态
 
@@ -7,9 +7,15 @@
 
 ### [Anthropic-推出-Project-Glasswing-与-Claude-Mythos-Preview](https://x.com/AnthropicAI/status/2041578392852517128)
 
-2026-04-07 18:06:34 | 标签: Anthropic, Claude Mythos, Project Glasswing, 网络安全, AI 安全
+2026-04-07 18:06:34
 
-> Anthropic 宣布启动 Project Glasswing，这是一项旨在保障全球关键软件基础设施安全的紧急倡议。该项目由其最新的前沿模型 Claude Mythos Preview 驱动。据 Anthropic 介绍，该模型在识别软件漏洞方面展现出了卓越的能力，其表现足以媲美顶尖的人类安全专家。这一举措标志着将先进 AI 应用于网络安全和软件完整性保护迈出了重要一步。
+
+
+### [李飞飞宣布-World-Labs-推出-Marble-1.1-及-1.1-Plus-更新](https://x.com/drfeifei/status/2041558772888563882)
+
+2026-04-07 16:48:36 | 标签: World Labs, 空间智能, Marble 1.1, 生成式 AI, 李飞飞
+
+> World Labs 首席执行官李飞飞对公司最新的 Marble 空间智能模型更新发表了评论。此次更新包括 Marble 1.1，其特点是增强了光影效果、提升了对比度并大幅减少了视觉伪影。此外，新推出的 Marble 1.1-Plus 模型专为可扩展性而设计，能够创建更大、更复杂的 3D 世界。这标志着生成式空间智能和大规模环境合成技术迈出了重要一步。
 
 
 
@@ -169,13 +175,13 @@
 
 
 
-### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
+### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
 
 2026-03-13 17:30:13
 
 
 
-### [Claude-4.6-百万上下文窗口全面可用](https://x.com/claudeai/status/2032509548297343196)
+### [Claude-Opus-4.6-基准测试表现与媒体限制扩展](https://x.com/claudeai/status/2032509550239297864)
 
 2026-03-13 17:30:13
 

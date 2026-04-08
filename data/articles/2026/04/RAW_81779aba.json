@@ -1,0 +1,53 @@
+{
+  "id": "RAW_81779aba",
+  "title": "Vertex AI 上的 Claude Mythos 预览版",
+  "url": "https://cloud.google.com/blog/products/ai-machine-learning/claude-mythos-preview-on-vertex-ai/",
+  "date": "2026-04-08 00:00:00",
+  "author": "Michael Gerstenhaber",
+  "siteName": "Google Cloud Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" data-is-cws-richtext=\"true\" class=\" \">\n    <p><span style=\"vertical-align:baseline\">Claude Mythos Preview, Anthropic’s newest and most powerful model, is now available in Private Preview to a select group of Google Cloud customers, as part of Project Glasswing.&nbsp;</span></p>\n    <p><span style=\"vertical-align:baseline\">The availability of Claude Mythos Preview on Vertex AI underscores our commitment to offer our customers access to models from frontier AI labs. Combined with the enterprise-grade power of Vertex AI to build, scale, and govern AI applications and agents, this new general-purpose model offers high performance capabilities across a variety of use cases, with new focus on reducing cybersecurity risk.</span></p>\n    <p><span style=\"vertical-align:baseline\">For more information about this release, visit </span><a href=\"https://anthropic.com/glasswing\" rel=\"noopener\" target=\"_blank\" track-name=\"anthropic’s blog\" track-type=\"inline link\" track-metadata-eventdetail=\"anthropic.com/glasswing\"><span style=\"text-decoration:underline;vertical-align:baseline\">Anthropic’s blog</span></a><span style=\"vertical-align:baseline\">. </span></p>\n    <p><span style=\"vertical-align:baseline\">Build with other Claude </span><span style=\"vertical-align:baseline\">models — including </span><a href=\"https://console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-opus-4-6\" track-name=\"claude opus 4.6\" track-type=\"inline link\" track-metadata-eventdetail=\"console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-opus-4-6\" target=\"_blank\" rel=\"opener\" referrerpolicy=\"no-referrer-when-downgrade\"><span style=\"text-decoration:underline;vertical-align:baseline\">Claude Opus 4.6</span></a><span style=\"vertical-align:baseline\"> and </span><a href=\"https://console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-sonnet-4-6\" track-name=\"claude sonnet 4.6\" track-type=\"inline link\" track-metadata-eventdetail=\"console.cloud.google.com/vertex-ai/publishers/anthropic/model-garden/claude-sonnet-4-6\" target=\"_blank\" rel=\"opener\" referrerpolicy=\"no-referrer-when-downgrade\"><span style=\"text-decoration:underline;vertical-align:baseline\">Claude Sonnet 4.6</span></a><span style=\"vertical-align:baseline\">—today on </span><a href=\"http://goo.gle/anthropic\" rel=\"opener\" target=\"_blank\" track-name=\"vertex ai\" track-type=\"inline link\" track-metadata-eventdetail=\"goo.gle/anthropic\"><span style=\"text-decoration:underline;vertical-align:baseline\">Vertex AI</span></a><span style=\"vertical-align:baseline\">.</span></p>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "Anthropic 最强大的模型 Claude Mythos 预览版现已在 Google Cloud Vertex AI 上以私有预览形式推出，该模型专注于降低网络安全风险。",
+  "oneSentenceSummary": "Anthropic 最强大的模型 Claude Mythos 预览版现已在 Google Cloud Vertex AI 上以私有预览形式推出，该模型专注于降低网络安全风险。",
+  "summary": "Google Cloud 宣布在 Vertex AI 平台上为部分客户提供 Anthropic 最新、最先进的模型——Claude Mythos 预览版。作为“Project Glasswing”的一部分，这款通用模型旨在为各种企业用例提供高性能，并特别强调降低网络安全风险。此次发布是对 Vertex AI 上现有 Claude 4.6 系列的补充，为开发者提供了用于扩展和治理 AI 智能体的企业级工具。",
+  "mainPoints": [
+    {
+      "point": "Claude Mythos 是 Anthropic 迄今为止最新、最强大的模型。",
+      "explanation": "它目前作为“Project Glasswing”合作项目的一部分，在 Google Cloud Vertex AI 上以私有预览形式发布。"
+    },
+    {
+      "point": "该模型特别专注于降低网络安全风险。",
+      "explanation": "除了通用的高性能表现外，Mythos 被定位为一款前沿模型，为企业环境提供了增强的安全防护能力。"
+    },
+    {
+      "point": "与 Vertex AI 的集成实现了企业级的 AI 应用管理。",
+      "explanation": "用户可以利用 Google Cloud 的基础设施，结合其他 Claude 4.6 模型，使用 Mythos 构建、扩展和治理应用程序及智能体。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude Mythos 预览版是 Anthropic 最新、最强大的模型，现已向部分 Google Cloud 客户开放私有预览。",
+    "这款新的通用模型在各种用例中均具备高性能表现，并重点关注降低网络安全风险。",
+    "Claude Mythos 预览版在 Vertex AI 上的发布，彰显了我们致力于为客户提供来自前沿 AI 实验室模型访问权限的承诺。"
+  ],
+  "tags": [
+    "Claude Mythos",
+    "Anthropic",
+    "Vertex AI",
+    "Google Cloud",
+    "LLM"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 115,
+  "domain": "cloud.google.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_bc3236",
+  "sourceName": "Google Cloud Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775606400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-08 00:00:00"
+}

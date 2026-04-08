@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-08 06:11:01 | [返回首页](/README.md)
+**更新时间**: 2026-04-08 08:15:17 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10890)
+- [AI & 大模型](#ai-llm) (10922)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (757)
-- [DevOps](#devops) (491)
+- [前端与全栈](#frontend-fullstack) (760)
+- [DevOps](#devops) (493)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5344)
+- [其他](#other) (5355)
 
 
 ---
@@ -22,6 +22,9 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Anthropic-的-Project-Glasswing——将-Claude-Mythos-限制在安全研究人员范围内——在我看来很有必要](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) - AI 精选
+- [面向“Token-亿万富翁”的极限-Harness-Engineering：100-万行代码、每天-10-亿-Token、0%-人工代码、0%-人工审查-——-Ryan-Lopopolo，OpenAI-Frontier-&amp;-Symphony](https://www.latent.space/p/harness-eng) - AI 精选
+- [Deep-Agents-v0.5](https://blog.langchain.com/deep-agents-v0-5/) - AI 精选
 - [Agentic-能力从哪里来？拆解基座大模型-GLM-5-/MiniMax-M2/Kimi-K2.5-的训练过程](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514107&idx=1&sn=fb5014a9de0d35c6ba6ac2297c471af0) - AI 精选
 - [AI-智能体的持续学习](https://blog.langchain.com/continual-learning-for-ai-agents/) - AI 精选
 - [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) - AI 精选
@@ -31,19 +34,16 @@
 - [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
 - [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
 - [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
+- [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
 - [面向-AI-智能体的-Qdrant-Skills](https://qdrant.tech/blog/qdrant-skills-release/) - AI 精选
 - [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral) - AI 精选
 - [智能体评估就绪检查清单](https://blog.langchain.com/agent-evaluation-readiness-checklist/) - AI 精选
-- [大模型的下半场是什么？林俊旸：从-Reasoning-Thinking-到-Agentic-Thinking](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513508&idx=1&sn=6be245994a9783d68cf9874a8791bf4e) - AI 精选
-- [Gemini-3.1-Flash-Live：让音频-AI-更自然、更可靠](https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/) - AI 精选
-- [我们如何为深度智能体构建评估体系](https://blog.langchain.com/how-we-build-evals-for-deep-agents/) - AI 精选
 
-- [查看全部 10890 篇...](/details/tags/ai-llm.md)
+- [查看全部 10922 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 757 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 760 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
 - [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 
-- [查看全部 491 篇...](/details/tags/devops.md)
+- [查看全部 493 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 - [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5344 篇...](/details/tags/other.md)
+- [查看全部 5355 篇...](/details/tags/other.md)
 
 

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_23cf0918",
+  "title": "GLM-5.1：迈向长周期任务",
+  "url": "https://simonwillison.net/2026/Apr/7/glm-51/#atom-everything",
+  "date": "2026-04-07 21:25:14",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">7th April 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Apr/7/glm-51/\">\n    <p><strong><a href=\"https://z.ai/blog/glm-5.1\">GLM-5.1: Towards Long-Horizon Tasks</a></strong>. Chinese AI lab Z.ai's latest model is a giant 754B parameter 1.51TB (on <a href=\"https://huggingface.co/zai-org/GLM-5.1\">Hugging Face</a>) MIT-licensed monster - the same size as their previous GLM-5 release, and sharing the <a href=\"https://huggingface.co/papers/2602.15763\">same paper</a>.</p>\n    <p>It's available <a href=\"https://openrouter.ai/z-ai/glm-5.1\">via OpenRouter</a> so I asked it to draw me a pelican:</p>\n    <pre><code>llm install llm-openrouter\nllm -m openrouter/z-ai/glm-5.1 'Generate an SVG of a pelican on a bicycle'\n</code></pre>\n    <p>And something new happened... unprompted, the model <a href=\"https://gist.github.com/simonw/af7170f54256cc007ef28a8721564be8\">decided to give me</a> an HTML page that included both the SVG and a separate set of CSS animations!</p>\n    <p>The SVG was excellent, and might be my new favorite from an open weights model:</p>\n    <p><img alt=\"The bicycle is red and has a frame the correct shape and wheels with spokes. The pelican is a perky little fella.\" src=\"https://static.simonwillison.net/static/2026/glm-5.1-pelican.png\"></p>\n    <p>But the animation <a href=\"https://gisthost.github.io/?73bb6808b18c2482f66e5f082c75f36e\">broke it</a>:</p>\n    <p><img alt=\"Animation - the wheels and pedals rotate, the clouds move... and the pelican has vanished, but there is a little blob bobbing up and down in the top left corner.\" src=\"https://static.simonwillison.net/static/2026/glm-5.1-broken-light-lossy.gif\"></p>\n    <p>That's the pelican, floating up in the top left corner.</p>\n    <p>I usually don't do follow-up prompts for the pelican test, but in this case I made an exception:</p>\n    <pre><code>llm -c 'the animation is a bit broken, the pelican ends up positioned off the screen at the top right'\n</code></pre>\n    <p>GLM 5.1 replied:</p>\n    <blockquote>\n     <p>The issue is that CSS <code>transform</code> animations on SVG elements override the SVG <code>transform</code> attribute used for positioning, causing the pelican to lose its placement and fly off to the top-right. The fix is to separate positioning (SVG attribute) from animation (inner group) and use <code>&lt;animateTransform&gt;</code> for SVG rotations since it handles coordinate systems correctly.</p>\n    </blockquote>\n    <p>And spat out <a href=\"https://static.simonwillison.net/static/2026/glm-5.1-pelican-fixed.html\">fresh HTML</a> which fixed the problem!</p>\n    <p><img alt=\"Now everything is right - the bicycle rotates correctly, the pelican sits on it and bobs up and down, and its lower beak moves slightly as well.\" src=\"https://static.simonwillison.net/static/2026/glm-5.1-pelican-fixed-medium-lossy.gif\"></p>\n    <p>I particularly like the animation of the beak, which is described in the SVG comments like so:</p>\n    <div class=\"highlight highlight-text-xml-svg\">\n     <pre><span class=\"pl-c\"><span class=\"pl-c\">&lt;!--</span> Pouch (lower beak) with wobble <span class=\"pl-c\">--&gt;</span></span>\n&lt;<span class=\"pl-ent\">g</span>&gt;\n    &lt;<span class=\"pl-ent\">path</span> <span class=\"pl-e\">d</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>M42,-58 Q43,-50 48,-42 Q55,-35 62,-38 Q70,-42 75,-60 L42,-58 Z<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">fill</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>url(#pouchGrad)<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">stroke</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>#b06008<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">stroke-width</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>1<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">opacity</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>0.9<span class=\"pl-pds\">\"</span></span>/&gt;\n    &lt;<span class=\"pl-ent\">path</span> <span class=\"pl-e\">d</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>M48,-50 Q55,-46 60,-52<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">fill</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>none<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">stroke</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>#c06a08<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">stroke-width</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>0.8<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">opacity</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>0.6<span class=\"pl-pds\">\"</span></span>/&gt;\n    &lt;<span class=\"pl-ent\">animateTransform</span> <span class=\"pl-e\">attributeName</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>transform<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">type</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>scale<span class=\"pl-pds\">\"</span></span>\n    <span class=\"pl-e\">values</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>1,1; 1.03,0.97; 1,1<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">dur</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>0.75s<span class=\"pl-pds\">\"</span></span> <span class=\"pl-e\">repeatCount</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>indefinite<span class=\"pl-pds\">\"</span></span>\n    <span class=\"pl-e\">additive</span>=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>sum<span class=\"pl-pds\">\"</span></span>/&gt;\n&lt;/<span class=\"pl-ent\">g</span>&gt;</pre>\n    </div>\n    <p></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9409/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 测试了 Z.ai 新推出的 754B 参数模型 GLM-5.1，重点介绍了其出色的 SVG 生成能力以及自主调试复杂 CSS/SVG 动画问题的能力。",
+  "oneSentenceSummary": "Simon Willison 测试了 Z.ai 新推出的 754B 参数模型 GLM-5.1，重点介绍了其出色的 SVG 生成能力以及自主调试复杂 CSS/SVG 动画问题的能力。",
+  "summary": "本文对中国 AI 实验室 Z.ai 推出的 754B 参数超大规模开源权重模型 GLM-5.1 进行了实测。作者 Simon Willison 使用其标志性的“鹈鹕测试”对模型进行了评估，要求其生成一张骑自行车的鹈鹕的 SVG 图片。该模型展现了高级推理能力，自主提供了一个动画化的 HTML/CSS 版本。尽管最初的动画逻辑存在缺陷，但模型成功诊断出 CSS 变换与 SVG 属性之间的技术冲突，并通过使用 <animateTransform> 提供了修正版本，不仅修复了定位问题，还增加了诸如晃动的喙囊等精细细节。",
+  "mainPoints": [
+    {
+      "point": "GLM-5.1 在长周期任务和复杂资产生成方面取得了显著进展。",
+      "explanation": "模型自主决定将简单的 SVG 请求封装在完整的 HTML/CSS 动画框架中，这表明其具备极高的指令遵循能力和创造性自主权。"
+    },
+    {
+      "point": "该模型展现了强大的自调试能力和技术推理能力。",
+      "explanation": "当面对损坏的动画时，模型准确识别出 CSS 变换动画覆盖了用于定位的 SVG 变换属性，并使用原生的 SVG 动画标签提供了技术上合理的修复方案。"
+    },
+    {
+      "point": "开源权重模型在专业创意编码领域正逐渐与顶级闭源模型持平。",
+      "explanation": "生成的 SVG 质量以及对渐变和嵌套动画的复杂运用表明，700B+ 参数的开源模型在复杂的编程任务中正变得极具竞争力。"
+    }
+  ],
+  "keyQuotes": [
+    "问题在于 SVG 元素上的 CSS 变换动画覆盖了用于定位的 SVG 变换属性，导致鹈鹕失去了位置并飞到了右上角。",
+    "这个 SVG 非常出色，可能是我目前最喜欢的开源权重模型作品。",
+    "中国 AI 实验室 Z.ai 的最新模型是一个庞大的 754B 参数、1.51TB 大小且采用 MIT 许可的巨兽。"
+  ],
+  "tags": [
+    "GLM-5.1",
+    "Z.ai",
+    "开源权重",
+    "SVG 生成",
+    "LLM 测试"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 287,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775597114000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-07 21:25:14"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_fed0b5ec",
+  "title": "掌握 AI 无人机编程",
+  "url": "https://www.freecodecamp.org/news/master-ai-drone-programming/",
+  "date": "2026-04-07 17:27:30",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>We just posted a comprehensive course on the freeCodeCamp YouTube channel focused on AI drone programming using Python. Created by Murtaza, this tutorial utilizes the Pyimverse simulator, a high-fidelity environment that allows you to master autonomous flight without the risk of expensive hardware crashes.</p>\n  <p>Learning with physical hardware can be a barrier to entry. Simulation provides a smarter path, allowing you to focus purely on writing intelligent code and optimizing your flight algorithms.</p>\n  <p>The course guides you through the fundamentals of 3D movement and drone components and then moves to advanced computer vision. You will complete five practical, industry-inspired missions:</p>\n  <ul>\n   <li>\n    <p>Garage Navigation: Mastering precision movement in confined spaces.</p>\n   </li>\n   <li>\n    <p>Image Capture: Learning to use the drone's camera to take snapshots.</p>\n   </li>\n   <li>\n    <p>Hand Gesture Control: Connecting vision with motion to lead the drone with your hands.</p>\n   </li>\n   <li>\n    <p>Body Following: Building intelligent tracking behavior to follow human movement.</p>\n   </li>\n   <li>\n    <p>Autonomous Line Following: Programming a drone to navigate a complex path independently.</p>\n   </li>\n  </ul>\n  <p>Watch the full course on <a href=\"https://youtu.be/k-yDYgc8AmU\">the freeCodeCamp.org YouTube channel</a> (2-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/k-yDYgc8AmU\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本综合课程教授如何使用 Python 和 Pyimverse 模拟器进行自主无人机编程，涵盖 3D 运动、计算机视觉和基于手势的控制。",
+  "oneSentenceSummary": "本综合课程教授如何使用 Python 和 Pyimverse 模拟器进行自主无人机编程，涵盖 3D 运动、计算机视觉和基于手势的控制。",
+  "summary": "该课程在 freeCodeCamp 上发布，为掌握 AI 无人机编程提供了一条结构化的学习路径，无需昂贵的硬件设备。通过利用高保真的 Pyimverse 模拟器，学习者可以安全地开发和测试自主飞行算法。课程内容从基础的 3D 运动扩展到高级计算机视觉应用，最终通过五个实践任务进行总结：精准车库导航、自动图像捕捉、手势控制、人体追踪以及自主巡线。",
+  "mainPoints": [
+    {
+      "point": "仿真优先的方法降低了机器人技术的入门门槛。",
+      "explanation": "使用 Pyimverse 模拟器可以让开发者专注于算法优化和智能代码编写，而无需承担硬件损坏的风险或高昂的初始成本。"
+    },
+    {
+      "point": "计算机视觉与飞行动态的集成。",
+      "explanation": "课程强调视觉与运动之间的协同作用，教授无人机如何解读人类手势和身体动作，从而指导自主导航。"
+    },
+    {
+      "point": "基于实践任务的学习，助力现实应用。",
+      "explanation": "通过完成巡线和精准导航等特定任务，学习者可以获得解决行业标准自主飞行挑战的经验。"
+    }
+  ],
+  "keyQuotes": [
+    "仿真提供了一条更明智的路径，让你能够纯粹专注于编写智能代码和优化飞行算法。",
+    "无需承担昂贵的硬件坠毁风险，即可掌握自主飞行。",
+    "将视觉与运动连接起来，用你的双手引导无人机。"
+  ],
+  "tags": [
+    "无人机编程",
+    "Python",
+    "计算机视觉",
+    "自主飞行",
+    "Pyimverse"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 166,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775582850000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-07 17:27:30"
+}

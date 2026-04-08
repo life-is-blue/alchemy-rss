@@ -1,0 +1,53 @@
+{
+  "id": "RAW_013de624",
+  "title": "Amazon S3 Files 为 AI 智能体提供原生文件系统工作区，终结了破坏多智能体流水线的对象与文件存储割裂问题",
+  "url": "https://venturebeat.com/data/amazon-s3-files-gives-ai-agents-a-native-file-system-workspace-ending-the",
+  "date": "2026-04-07 19:00:10",
+  "author": "Sean Michael Kerner",
+  "siteName": "VentureBeat",
+  "content": "<html>\n <head></head>\n <body>\n  <p>AI agents run on file systems using standard tools to navigate directories and read file paths.&nbsp;</p>\n  <p>The challenge, however, is that there is a lot of enterprise data in object storage systems, notably Amazon S3. Object stores serve data through API calls, not file paths. Bridging that gap has required a separate file system layer alongside S3, duplicated data and sync pipelines to keep both aligned.</p>\n  <div class=\"mb-8 aspect-16/9\"></div>\n  <p>T<!-- -->he rise of agentic AI makes that challenge even harder, and it was affecting Amazon's own ability to get things done. Engineering teams at AWS using tools like Kiro and Claude Code kept running into the same problem: Agents defaulted to local file tools, but the data was in S3. Downloading it locally worked until the agent's context window compacted and the session state was lost.</p>\n  <p>Amazon's answer is S3 Files, which mounts any S3 bucket directly into an agent's local environment with a single command. The data stays in S3, with no migration required. Under the hood, AWS connects its Elastic File System (EFS) technology to S3 to deliver full file system semantics, not a workaround. S3 Files is available now in most AWS Regions.</p>\n  <p>\"By making data in S3 immediately available, as if it's part of the local file system, we found that we had a really big acceleration with the ability of things like Kiro and Claude Code to be able to work with that data,\" Andy Warfield, VP and distinguished engineer at AWS, told VentureBeat.</p>\n  <h2>The difference between file and object storage and why it matters</h2>\n  <p>S3 was built for durability, scale and API-based access at the object level. Those properties made it the default storage layer for enterprise data. But they also created a fundamental incompatibility with the file-based tools that developers and agents depend on. \"S3 is not a file system, and it doesn't have file semantics on a whole bunch of fronts,\" Warfield said. \"You can't do a move, an atomic move of an object, and there aren't actually directories in S3.\"</p>\n  <p>Previous attempts to bridge that gap relied on FUSE (Filesystems in USErspace), a software layer that lets developers mount a custom file system in user space without changing the underlying storage. Tools like AWS's own Mount Point, Google's gcsfuse and Microsoft's blobfuse2 all used FUSE-based drivers to make their respective object stores look like a file system.&nbsp;</p>\n  <p>Warfield noted that the problem is that those object stores still weren't file systems. Those drivers either faked file behavior by stuffing extra metadata into buckets, which broke the object API view, or they refused file operations that the object store couldn't support.</p>\n  <p>S3 Files takes a different architecture entirely. AWS is connecting its EFS (Elastic File System) technology directly to S3, presenting a full native file system layer while keeping S3 as the system of record. Both the file system API and the S3 object API remain accessible simultaneously against the same data.</p>\n  <h2>How S3 Files accelerates agentic AI</h2>\n  <p>Before S3 Files, an agent working with object data had to be explicitly instructed to download files before using tools. That created a session state problem. As agents compacted their context windows, the record of what had been downloaded locally was often lost.</p>\n  <p>\"I would find myself having to remind the agent that the data was available locally,\" Warfield&nbsp;said.</p>\n  <p>Warfield walked through the before-and-after for a common agent task involving log analysis. He explained that a developer was using Kiro or Claude Code to work with log data, in the object only case they would need to tell the agent where the log files are located and to go and download them. Whereas if the logs are immediately mountable on the local file system, the developer can simply identify that the logs are at a specific path, and the agent immediately has access to go through them.</p>\n  <p>For multi-agent pipelines, multiple agents can access the same mounted bucket simultaneously. AWS says thousands of compute resources can connect to a single S3 file system at the same time, with aggregate read throughput reaching multiple terabytes per second — figures VentureBeat was not able to independently verify.</p>\n  <p>Shared state across agents works through standard file system conventions: subdirectories, notes files and shared project directories that any agent in the pipeline can read and write. Warfield described AWS engineering teams using this pattern internally, with agents logging investigation notes and task summaries into shared project directories.</p>\n  <p>For teams building RAG pipelines on top of shared agent content, <a href=\"https://venturebeat.com/data-infrastructure/aws-claims-90-vector-cost-savings-with-s3-vectors-ga-calls-it-complementary\">S3 Vectors</a> — launched at AWS re:Invent in December 2024 — layers on top for similarity search and retrieval-augmented generation against that same data.</p>\n  <h2>What analysts say: this is not just a better FUSE</h2>\n  <p>AWS is positioning S3 Files against FUSE-based file access from Azure Blob NFS and Google Cloud Storage FUSE. For AI workloads, the meaningful distinction is not primarily performance.</p>\n  <p>\"S3 Files eliminates the data shuffle between object and file storage, turning S3 into a shared, low-latency working space without copying data,\" Jeff Vogel, analyst at Gartner, told VentureBeat.&nbsp;\"The file system becomes a view, not another dataset.\"</p>\n  <p>With FUSE-based approaches, each agent maintains its own local view of the data. When multiple agents work simultaneously, those views can potentially fall out of sync.</p>\n  <p>\"It eliminates an entire class of failure modes including unexplained training/inference failures caused by stale metadata, which are notoriously difficult to debug,\" Vogel said. \"FUSE-based solutions externalize complexity and issues to the user.\"</p>\n  <p>The agent-level implications go further still. The architectural argument matters less than what it unlocks in practice.</p>\n  <p>\"For agentic AI, which thinks in terms of files, paths, and local scripts, this is the missing link,\" Dave McCarthy, analyst at IDC, told VentureBeat. \"It allows an AI agent to treat an exabyte-scale bucket as its own local hard drive, enabling a level of autonomous operational speed that was previously bottled up by API overhead associated with approaches like FUSE.\"</p>\n  <p>Beyond the agent workflow, McCarthy sees S3 Files as a broader inflection point for how enterprises use their data.</p>\n  <p>\"The launch of S3 Files isn't just S3 with a new interface; it's the removal of the final friction point between massive data lakes and autonomous AI,\" he said. \"By converging file and object access with S3, they are opening the door to more use cases with less reworking.\"</p>\n  <h2>What this means for enterprises</h2>\n  <p>For enterprise teams that have been maintaining a separate file system alongside S3 to support file-based applications or agent workloads, that architecture is now unnecessary.</p>\n  <p>For enterprise teams consolidating AI infrastructure on S3, the practical shift is concrete: S3 stops being the destination for agent output and becomes the environment where agent work happens.</p>\n  <p>\"All of these API changes that you're seeing out of the storage teams come from firsthand work and customer experience using agents to work with data,\" Warfield said. \"We're really singularly focused on removing any friction and making those interactions go as well as they can.\"</p>\n </body>\n</html>",
+  "aiSummary": "Amazon S3 Files 为 S3 引入了原生文件系统接口，使 AI 智能体能够使用标准文件路径和语义与对象存储进行交互，消除了复杂的同步需求和基于 FUSE 的变通方案。",
+  "oneSentenceSummary": "Amazon S3 Files 为 S3 引入了原生文件系统接口，使 AI 智能体能够使用标准文件路径和语义与对象存储进行交互，消除了复杂的同步需求和基于 FUSE 的变通方案。",
+  "summary": "Amazon S3 Files 解决了对象存储（S3）与 AI 智能体所需的文件工具之间的根本不兼容问题。通过利用弹性文件系统（EFS）技术将 S3 存储桶直接挂载到本地环境，它在无需数据迁移或复制的情况下提供了原生文件系统语义。这种架构解决了会话状态丢失、元数据陈旧以及基于 FUSE 的驱动程序带来的开销等关键问题。对于企业而言，这一转变将 S3 从被动的存储目的地转变为多智能体流水线的主动共享工作区，显著降低了基础设施复杂度，并支持更自主的 AI 操作。",
+  "mainPoints": [
+    {
+      "point": "为 S3 提供原生文件系统语义。",
+      "explanation": "与模拟文件行为的 FUSE 方案不同，S3 Files 使用 EFS 技术提供真正的文件系统层，允许智能体直接在 S3 数据上执行原子移动和目录操作。"
+    },
+    {
+      "point": "消除数据同步和状态丢失。",
+      "explanation": "通过消除将对象下载到本地存储的需求，S3 Files 防止了会话状态丢失，并确保流水线中的多个智能体能够共享一致、实时的数据视图。"
+    },
+    {
+      "point": "降低智能体 AI 的基础设施摩擦。",
+      "explanation": "该解决方案通过启用共享项目目录并减少之前限制自主 AI 智能体的 API 开销，简化了多智能体工作流。"
+    }
+  ],
+  "keyQuotes": [
+    "S3 Files 消除了对象存储和文件存储之间的数据搬运，将 S3 变成了一个无需复制数据的共享、低延迟工作空间。",
+    "对于以文件、路径和本地脚本为思考方式的智能体 AI 来说，这是缺失的关键环节。",
+    "S3 Files 的发布不仅仅是为 S3 增加了一个新接口，它消除了海量数据湖与自主 AI 之间的最后一道摩擦点。"
+  ],
+  "tags": [
+    "AWS",
+    "S3 Files",
+    "AI 智能体",
+    "对象存储",
+    "EFS"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1157,
+  "domain": "venturebeat.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_9910f1fe",
+  "sourceName": "VentureBeat",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775588410000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-07 19:00:10"
+}

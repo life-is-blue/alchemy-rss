@@ -1,0 +1,53 @@
+{
+  "id": "RAW_bf606962",
+  "title": "是否有 Windows 3.1 程序因为与 Windows 95 极度不兼容而完全无法修复？",
+  "url": "https://devblogs.microsoft.com/oldnewthing/20260407-00/?p=112213",
+  "date": "2026-04-07 19:51:28",
+  "author": "Raymond Chen",
+  "siteName": "The Old New Thing",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In a comment to my discussion of the Windows 95 patch system, commenter word merchant wondered <a href=\"https://devblogs.microsoft.com/oldnewthing/20251111-00/?p=111781&amp;commentid=143427#comment-143427\"> whether there were any Windows 3.1 programs or drivers that were so incompatible with Windows 95 that there was no point trying to patch them</a>.</p>\n  <p>Yes, there were problems that were so bad that the program was effectively unfixable. The largest category of them were those which took various types of handles and figured out how to convert them to pointers, and then used those pointers to access (and sometimes modify!) the internal implementation details of those objects.¹ Not only did the implementation details change, but the mechanism they used to convert handles to pointers also stopped working because Windows 95 used a 32-bit heap for user interface and graphics objects, whereas Windows 3.1 used a 16-bit heap.</p>\n  <p>Sometimes the programs were kind enough to do strict version checks to confirm that they were running on a system whose internals they understood. Sometimes their version checks were themselves broken, like one program that assumed that if the Windows version is not 3.0, 3.1, or 2.1, then it must be 2.0!</p>\n  <p>There were other one-off problems, like programs which detoured APIs in a way that no longer worked, but the ones that dug into operating system internals were by far the most common.</p>\n  <p>¹ What’s particularly frustrating is the cases where the program did this to access internal implementation details, when the information they wanted was already exposed by a public and supported API.</p>\n </body>\n</html>",
+  "aiSummary": "Raymond Chen 解释了为什么某些 Windows 3.1 应用程序在根本上与 Windows 95 不兼容，这主要是由于它们非法访问了操作系统内部内存结构，并对系统架构做出了硬编码的假设。",
+  "oneSentenceSummary": "Raymond Chen 解释了为什么某些 Windows 3.1 应用程序在根本上与 Windows 95 不兼容，这主要是由于它们非法访问了操作系统内部内存结构，并对系统架构做出了硬编码的假设。",
+  "summary": "这篇来自“The Old New Thing”的文章探讨了为什么一些旧版 Windows 3.1 应用程序无法通过补丁在 Windows 95 上运行。罪魁祸首在于那些绕过公共 API、通过将句柄转换为指针来直接操作操作系统内部对象的软件。这种做法在 Windows 95 中失效了，因为 UI 和图形对象的底层内存架构从 16 位堆迁移到了 32 位堆。此外，作者指出，一些程序包含有缺陷的版本检查逻辑，或依赖于脆弱的 API 劫持技术，使得它们在较新的操作系统上无法获得支持。",
+  "mainPoints": [
+    {
+      "point": "直接操作操作系统内部内存结构导致了致命的不兼容性。",
+      "explanation": "当操作系统从 16 位堆迁移到 32 位堆时，那些通过将句柄转换为指针来访问内部实现细节的应用程序会崩溃，因为内存布局和对象结构发生了根本性的改变。"
+    },
+    {
+      "point": "开发者往往忽视公共 API，转而采用未公开的内部访问方式。",
+      "explanation": "作者强调了处理那些为了访问数据而使用“黑客手段”的软件所带来的挫败感，而这些数据本可以通过受支持的、稳定的公共 API 获取。"
+    },
+    {
+      "point": "脆弱的版本检查和 API 劫持导致了无法修复的局面。",
+      "explanation": "一些旧版程序具有硬编码的版本逻辑，无法识别较新的操作系统版本，而另一些程序则使用了与 Windows 95 内核架构不兼容的侵入式 API 劫持方法。"
+    }
+  ],
+  "keyQuotes": [
+    "其中最大的一类程序是那些获取各种类型的句柄并设法将其转换为指针，然后利用这些指针访问（有时甚至修改！）这些对象内部实现细节的程序。",
+    "Windows 95 为用户界面和图形对象使用了 32 位堆，而 Windows 3.1 使用的是 16 位堆。",
+    "特别令人沮丧的是，程序为了访问内部实现细节而这样做，但它们想要的信息其实已经通过公共且受支持的 API 暴露出来了。"
+  ],
+  "tags": [
+    "Windows 95",
+    "旧版软件",
+    "操作系统",
+    "内存管理",
+    "API"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 86,
+  "wordCount": 249,
+  "domain": "devblogs.microsoft.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_16c261ca",
+  "sourceName": "The Old New Thing",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775591488000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-07 19:51:28"
+}

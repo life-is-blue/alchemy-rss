@@ -1,0 +1,54 @@
+{
+  "id": "RAW_e7d09d0",
+  "title": "一项旨在保护全球软件安全的计划 | Project Glasswing",
+  "url": "https://www.youtube.com/watch?v=INGOC6-LLv0",
+  "date": "2026-04-07 18:03:51",
+  "author": "Anthropic",
+  "siteName": "Anthropic",
+  "content": "<html>\n <head></head>\n <body>\n  <h2 data-path-to-node=\"1\">内容概要</h2>\n  <p data-path-to-node=\"2\">本视频介绍了由 Anthropic 联合多家全球顶级科技、网络安全和金融企业共同发起的 Project Glasswing 计划。随着全新大语言模型 Claude Mythos Preview 展现出匹敌顶尖人类专家的代码审查与漏洞利用能力，AI 为网络安全领域带来了前所未有的挑战与机遇。为了避免模型落入恶意攻击者之手，Anthropic 决定不对外公开该模型，而是通过 Project Glasswing 计划将其定向提供给维护全球核心基础设施的组织。目前，该计划已经在 OpenBSD 和 Linux 等关键操作系统中发现了潜藏多年的高危漏洞并推动了修复。视频呼吁行业与政府进行紧密协作，共同提升网络防御能力，保障全球软件、数据及基础设施的长远安全。</p>\n  <h2 data-path-to-node=\"3\">目录</h2>\n  <ul data-path-to-node=\"4\">\n   <li>\n    <p data-path-to-node=\"4,0,0\">软件漏洞的潜在隐患</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,1,0\">人工智能带来的网络安全新挑战</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,2,0\">强大的 Claude Mythos Preview 模型</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,3,0\">发起 Project Glasswing 计划</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,4,0\">真实环境中的高危漏洞发现</p>\n   </li>\n   <li>\n    <p data-path-to-node=\"4,5,0\">携手共建数字世界的安全底座</p>\n   </li>\n  </ul>\n  <h2 data-path-to-node=\"5\">软件漏洞的潜在隐患</h2>\n  <p data-path-to-node=\"6\"><b data-path-to-node=\"6\" data-index-in-node=\"0\">发言人 1：</b> 大多数人每天使用软件，却很少去考虑漏洞的问题。他们不会想到，一旦所依赖的软件突然变得不那么安全，将会发生什么。然而，这却是软件开发者每天都必须面对的现实。</p>\n  <p data-path-to-node=\"7\"><b data-path-to-node=\"7\" data-index-in-node=\"0\">发言人 2：</b> 软件一直存在缺陷和漏洞，这并不是什么新鲜事。对于普通人来说，他们日常生活中基本不会注意到这些漏洞。如果注意到了，那也往往是因为漏洞已经被修复了。</p>\n  <p data-path-to-node=\"8\">但是，偶尔会出现一些造成极其严重影响的漏洞。例如，一个单一的漏洞如果潜入了被广泛共享的软件中，而许多不同的产品或网站都在使用它。那么这一个问题就会在全世界范围内被无限放大。</p>\n  <h2 data-path-to-node=\"9\">人工智能带来的网络安全新挑战</h2>\n  <p data-path-to-node=\"10\"><b data-path-to-node=\"10\" data-index-in-node=\"0\">发言人 3：</b> 从历史上看，发现并修补漏洞一直是一个缓慢、耗时且昂贵的过程。</p>\n  <p data-path-to-node=\"11\">如果大语言模型现在已经能够以世界顶尖软件开发者的水平来编写代码，那么它们同样可以被用来高效地寻找漏洞，并对软件进行漏洞利用。从网络安全的角度来看，这些模型的能力正在提升整个行业的门槛。它们既有能力帮助防御者，也同样有可能被攻击者所利用。</p>\n  <h2 data-path-to-node=\"12\">强大的 Claude Mythos Preview 模型</h2>\n  <p data-path-to-node=\"13\"><b data-path-to-node=\"13\" data-index-in-node=\"0\">发言人 4：</b> 我们最近开发了一个新模型 Claude Mythos Preview。在早期阶段我们就清楚地意识到，这个模型在网络安全能力上将会实现意义重大的提升。</p>\n  <p data-path-to-node=\"14\">技术发展呈现出一种加速的指数级增长，而在这种指数增长的曲线上，会有一些极其关键的节点。Claude Mythos Preview 就是这样一个跨度极大的飞跃。我们并没有专门训练它去精通网络安全，我们只是训练它写好代码。但作为写好代码的副作用，它在网络安全方面也同样出色。</p>\n  <p data-path-to-node=\"15\"><b data-path-to-node=\"15\" data-index-in-node=\"0\">发言人 5：</b> 我们正在进行实验的这个模型，在识别漏洞方面大体上已经和专业的人类安全人员一样优秀。这对于我们来说是一件好事，因为我们可以更早地发现更多漏洞，并及时修复它们。</p>\n  <p data-path-to-node=\"16\"><b data-path-to-node=\"16\" data-index-in-node=\"0\">发言人 6：</b> 它具备将多个漏洞串联起来的能力。这意味着什么呢？假设你发现了两个漏洞，单独看其中任何一个，都不会造成太大的威胁。但是，这个模型能够将三个、四个甚至五个漏洞按顺序组合成漏洞利用链，最终达成某种非常复杂且严重的攻击效果。</p>\n  <p data-path-to-node=\"17\">我们认为该模型之所以能在这方面做得如此出色，是因为我们发现它具备很强的自主性。它在执行长期任务方面总体上表现得更好。这些任务非常类似于一名人类安全研究员在整整一天的工作中所要完成的事情。</p>\n  <p data-path-to-node=\"18\"><b data-path-to-node=\"18\" data-index-in-node=\"0\">发言人 7：</b> 显而易见，这样强大的模型一旦落入坏人之手，将会造成巨大的危害。因此，我们不会广泛发布这个模型。未来，无论是我们还是其他公司，都会推出更强大的模型。所以我们确实需要制定一个计划来应对这一切。</p>\n  <h2 data-path-to-node=\"19\">发起 Project Glasswing 计划</h2>\n  <p data-path-to-node=\"20\"><b data-path-to-node=\"20\" data-index-in-node=\"0\">发言人 8：</b> 正因如此，我们正在发起一项名为 Project Glasswing 的计划。在这个计划中，我们与多家支撑着全球最关键代码的组织进行合作。我们将模型交到他们手中，让他们去探索如何利用这类模型来降低风险并保护所有人。</p>\n  <p data-path-to-node=\"21\">通过率先为这些软件开发者提供先进的工具，我们所有人都能获得集体的领先优势。这使我们能够发现以前无法察觉的问题，并帮助我们以更快的速度修复这些漏洞。</p>\n  <h2 data-path-to-node=\"22\">真实环境中的高危漏洞发现</h2>\n  <p data-path-to-node=\"23\"><b data-path-to-node=\"23\" data-index-in-node=\"0\">发言人 9：</b> 在与合作伙伴的协作中，我们基本上在所有主流平台上都发现了漏洞。在过去的几周里，我使用模型发现的漏洞数量，比我前半生发现的总和还要多。</p>\n  <p data-path-to-node=\"24\"><b data-path-to-node=\"24\" data-index-in-node=\"0\">发言人 10：</b> 我们使用该模型扫描了大量的开源代码。我们首先瞄准的是操作系统，因为这些代码构成了整个互联网基础设施的底层逻辑。</p>\n  <p data-path-to-node=\"25\">对于 OpenBSD，我们发现了一个已经存在了 27 年的漏洞。利用这个漏洞，我只需要向任何一台 OpenBSD 服务器发送几段数据，就能使其崩溃。</p>\n  <p data-path-to-node=\"26\">在 Linux 平台上，我们也发现了一些漏洞。即使作为一个没有任何权限的普通用户，我只需要在机器上运行某个二进制文件，就能将自己的权限提升到管理员级别。</p>\n  <p data-path-to-node=\"27\"><b data-path-to-node=\"27\" data-index-in-node=\"0\">发言人 11：</b> 对于发现的每一个漏洞，我们都通知了实际负责维护这些软件的团队。他们随后进行了修复，并部署了补丁程序。这样一来，任何运行这些软件的用户就不会再受到这些攻击的威胁了。</p>\n  <p data-path-to-node=\"28\">对于那些不知疲倦地维护软件的开发者来说，一个能够帮助他们在代码被恶意利用之前，就自己发现并修复漏洞的模型，无疑是一件无价的工具。</p>\n  <h2 data-path-to-node=\"29\">携手共建数字世界的安全底座</h2>\n  <p data-path-to-node=\"30\"><b data-path-to-node=\"30\" data-index-in-node=\"0\">发言人 12：</b> 我们已经与美国政府各部门的官员进行了沟通，并提议与他们展开合作。我们将共同评估这些模型可能带来的风险，并帮助建立防御机制来抵御这些风险。</p>\n  <p data-path-to-node=\"31\">我们现在生活中的一切都依赖于软件。可以说，软件已经吞噬了世界。我们生活中每一个传统的物理层面，现在都以某种方式在数字领域中得以体现。因此，我们的日常生活之所以能够正常运转，正是基于我们可以信赖这些底层系统的理念。网络安全，本质上就是我们整个社会的安全。</p>\n  <p data-path-to-node=\"32\"><b data-path-to-node=\"32\" data-index-in-node=\"0\">发言人 13：</b> 至关重要的是，我们必须团结一致，跨行业开展合作，共同帮助建立更强大的防御能力。没有哪一家机构能够看清全局，也不可能仅凭一己之力来解决这个问题。</p>\n  <p data-path-to-node=\"33\"><b data-path-to-node=\"33\" data-index-in-node=\"0\">发言人 14：</b> 这绝不是一个仅靠几周时间就能完成的项目。这肯定是一项需要耗费数月甚至数年时间的长期工作。但我真正希望的是，当这一切完成时，我们能够达成这样一个目标：让全球的软件、用户数据、金融交易以及关键基础设施，都能比以往任何时候更加安全。</p>\n </body>\n</html>",
+  "aiSummary": "Anthropic 发起 Project Glasswing 计划，通过向关键基础设施组织提供强大的 Claude Mythos Preview 模型，主动防御 AI 加速带来的网络威胁，从而保障全球软件安全。",
+  "oneSentenceSummary": "Anthropic 发起 Project Glasswing 计划，通过向关键基础设施组织提供强大的 Claude Mythos Preview 模型，主动防御 AI 加速带来的网络威胁，从而保障全球软件安全。",
+  "summary": "Anthropic 推出了 Project Glasswing，这是一项与全球科技、网络安全和金融领域领导者达成的战略合作伙伴关系，旨在保护全球数字基础设施。该计划的核心是一个尚未发布的名为 Claude Mythos Preview 的模型，它在代码审计和漏洞发现方面展现出了专家级的能力。由于存在被滥用的风险，Anthropic 对该模型进行了访问限制，专门提供给维护 OpenBSD 和 Linux 等核心系统的组织。该项目已经成功识别出了一些几十年来未被发现的高风险漏洞，例如 OpenBSD 中一个存在了 27 年的缺陷。该计划强调，在恶意行为者利用类似能力之前，必须通过行业与政府的协作来构建强大的 AI 驱动防御体系。",
+  "mainPoints": [
+    {
+      "point": "Claude Mythos Preview 代表了 AI 驱动的网络安全能力的重大飞跃。",
+      "explanation": "尽管该模型最初是为编程而训练的，但它展现出了自主的、专家级的技能，能够识别多个漏洞并将它们串联成复杂的攻击链，模拟人类安全研究员的行为。"
+    },
+    {
+      "point": "Project Glasswing 采取了受控访问策略，以平衡 AI 的实用性与安全性。",
+      "explanation": "为了防止该模型被恶意行为者武器化，Anthropic 不会将其公开发布，而是将其能力导向全球关键基础设施的防御者。"
+    },
+    {
+      "point": "AI 辅助审计已证明在保护遗留开源代码库方面行之有效。",
+      "explanation": "该计划已成功发现并修复了 OpenBSD（存在 27 年）和 Linux 中长期存在的关键漏洞，证明了 LLM 在软件验证方面具有前所未有的效率。"
+    }
+  ],
+  "keyQuotes": [
+    "Claude Mythos Preview 是一个巨大的飞跃……我们并没有专门训练它去精通网络安全；我们只是训练它写好代码。",
+    "该模型在识别漏洞方面的能力大致相当于专业的人类安全人员。",
+    "在过去几周里，我使用该模型发现的漏洞比我前半生发现的还要多。",
+    "网络安全，其核心就是我们整个社会的安全性。"
+  ],
+  "tags": [
+    "Anthropic",
+    "Claude Mythos Preview",
+    "Project Glasswing",
+    "网络安全",
+    "漏洞研究"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 10,
+  "score": 93,
+  "wordCount": 2310,
+  "domain": "youtube.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d6ab42",
+  "sourceName": "Anthropic",
+  "resourceType": "VIDEO",
+  "language": "en_US",
+  "publishTimeStamp": 1775585031000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-07 18:03:51"
+}

@@ -1,15 +1,29 @@
-> **更新时间**: 2026-04-06 08:13:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 08:15:17 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Sam-Altman-谈构建-AI-的未来](https://www.youtube.com/watch?v=ZpUKNYcgM-E)
+
+2026-04-07 20:36:27 | 标签: 超级智能, AI 政策, 经济转型, AI 安全, 算力民主化
+
+> 在这场深度对话中，OpenAI CEO Sam Altman、首席未来学家 Josh Achiam 和高级研究员 Adrien Ecoffet 探讨了迈向超级智能的加速轨迹。对话围绕一份旨在引发全球 AI 治理辩论的最新政策蓝图展开。核心议题包括：建立抵御网络和生物风险的“涌现韧性”的必要性、从基于劳动的税收转向基于资本/算力的税收，以及“全民基本算力”的概念。Altman 强调，AI 发展的速度类似于 COVID-19 早期指数级增长的阶段，必须立即进行制度创新，以确保广泛的社会利益并防止通过大规模基础设施扩张导致的权力集中。
+
+
+
+### [一项旨在保护全球软件安全的计划-|-Project-Glasswing](https://www.youtube.com/watch?v=INGOC6-LLv0)
+
+2026-04-07 18:03:51 | 标签: Anthropic, Claude Mythos Preview, Project Glasswing, 网络安全, 漏洞研究
+
+> Anthropic 推出了 Project Glasswing，这是一项与全球科技、网络安全和金融领域领导者达成的战略合作伙伴关系，旨在保护全球数字基础设施。该计划的核心是一个尚未发布的名为 Claude Mythos Preview 的模型，它在代码审计和漏洞发现方面展现出了专家级的能力。由于存在被滥用的风险，Anthropic 对该模型进行了访问限制，专门提供给维护 OpenBSD 和 Linux 等核心系统的组织。该项目已经成功识别出了一些几十年来未被发现的高风险漏洞，例如 OpenBSD 中一个存在了 27 年的缺陷。该计划强调，在恶意行为者利用类似能力之前，必须通过行业与政府的协作来...
+
+
+
 ### [Salesforce-CEO-谈微软阻碍-OpenAI-投资、AI-替罪羊现象、OpenClaw-及监管](https://www.youtube.com/watch?v=OzUqfN4mcrM)
 
-2026-04-05 21:48:47 | 标签: Salesforce, Marc Benioff, AI 智能体, Slack, 企业级 AI
-
-> 在本次采访中，Salesforce CEO Marc Benioff 概述了公司对于“智能体企业”（Agentic Enterprise）的愿景，强调将 Slack 转变为 AI 智能体的主要对话界面。Benioff 探讨了组织结构的转变、AI 赋能的通才（generalists）的崛起，以及数据完整性和 AI 安全的重要性。他还分享了关于微软对 OpenAI 投资影响的内部观点、Salesforce 向 Anthropic 的转型，并批评了那些将 AI 作为裁员借口的 CEO 们。
+2026-04-05 21:48:47
 
 
 
@@ -295,7 +309,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -307,7 +321,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
