@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-08 14:28:30 | [返回首页](/README.md)
+**更新时间**: 2026-04-08 16:22:44 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10926)
+- [AI & 大模型](#ai-llm) (10930)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (760)
 - [DevOps](#devops) (493)
@@ -43,7 +43,7 @@
 - [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral) - AI 精选
 - [智能体评估就绪检查清单](https://blog.langchain.com/agent-evaluation-readiness-checklist/) - AI 精选
 
-- [查看全部 10926 篇...](/details/tags/ai-llm.md)
+- [查看全部 10930 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
