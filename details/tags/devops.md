@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-08 08:15:17 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-08 11:01:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -446,17 +446,13 @@
 
 ### [超越-IP-限制，利用-Google-Cloud-NGFW-保护-URL](https://cloud.google.com/blog/products/identity-security/see-beyond-the-ip-and-secure-urls-with-google-cloud-ngfw/)
 
-2026-04-08 00:00:00 | 标签: Google Cloud, NGFW, 网络安全, 云基础设施, 防火墙
-
-> 本文介绍了 Google Cloud 下一代防火墙 (NGFW) Enterprise 的一项新域名过滤功能。该服务超越了传统的基于 IP 的过滤，允许使用 SNI 标头和通配符域名进行细粒度的出口控制。主要优势包括：无需完全 TLS 解密即可保护流量、通过关注域名标识而非动态 IP 来降低运营开销，以及防止 SNI 欺骗。实施过程分为三步：部署 NGFW 端点、创建包含 URL 列表的安全配置文件，以及通过分层或全局防火墙规则强制执行策略。
+2026-04-08 00:00:00
 
 
 
 ### [在机架级超级计算机上运行-AI-工作负载：从硬件到拓扑感知调度](https://developer.nvidia.com/blog/running-ai-workloads-on-rack-scale-supercomputers-from-hardware-to-topology-aware-scheduling/)
 
-2026-04-07 18:51:24 | 标签: NVIDIA, 超级计算, NVLink, Slurm, Kubernetes
-
-> 管理机架级超级计算机需要弥合物理硬件拓扑（如 NVLink 结构和 IMEX 域）与工作负载调度程序所用抽象之间的鸿沟。本文解释了 NVIDIA Mission Control、Slurm 和 Kubernetes（通过 NVIDIA Run:ai 和 ComputeDomains）如何将复杂的硬件结构转化为可管理、高性能的资源。通过利用集群 UUID 和 Clique ID 等系统级标识符，并借助 Topograph 等工具进行自动化拓扑发现，平台工程师可以确保分布式 AI 工作负载得到最优部署，从而在不向最终用户暴露底层基础设施复杂性的前提下，保持高带宽、低延迟的连接。
+2026-04-07 18:51:24
 
 
 
