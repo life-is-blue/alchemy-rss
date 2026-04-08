@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d3c8cef6",
+  "title": "DeepSeek 网页端更新：上线专家模式与视觉模型，V4 疑云再起",
+  "url": "https://www.qbitai.com/2026/04/397761.html",
+  "date": "2026-04-08 03:58:24",
+  "author": "梦瑶",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"60\">梦瑶 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"61\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"3\">不更是不更，一更就是个大动作，<strong>DeepSeek V4</strong>可能真的要来了！</p>\n  <p data-track=\"4\">就在刚刚，DeepSeek网页端直接就是一个大更新，推出了<strong>「快速模式」</strong>和<strong>「专家模式」</strong>两个功能。</p>\n  <p data-track=\"5\">此外，还有一个带有图片图标的「视觉模型」，目前也已经开启灰度测试。（好家伙.jpg）</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_a78c23f4427a6bf0b553857da277069b.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"6\">虽说官方并没有对两个模式进行模型说明，但架不住网友们暗中揣测，结果，还真发现了点蛛丝马迹：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_3c2ccf61d408f9f8a0adf73b1ac09d96.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">是的，人家模型自己承认自己的版本是「V4」了（doge）</p>\n  <p data-track=\"8\">虽不说可信度有多少，不过从种种迹象看，大家伙都一众推测——</p>\n  <p data-track=\"9\">V4可能真的离我们不远了？？？</p>\n  <p data-track=\"10\">（最好不要再是虚晃一枪！）</p>\n  <p data-track=\"12\">常言道，DeepSeek一更新，那关于V4模型的种种揣测必定少不了。（笑）</p>\n  <p data-track=\"13\">我们先来说说DeepSeek刚刚上线的「快速模式」和「专家模式」到底是个啥东西！</p>\n  <p data-track=\"14\">从名称字面意思和模式介绍上不难看出，两种模式主要还是<strong>生成速度</strong>和<strong>任务处理范围</strong>的不同～</p>\n  <p data-track=\"15\">我也帮大家浅浅总结了一下这两种模式能力的侧重点：</p>\n  <ul>\n   <li data-track=\"16\"><strong>快速模式：</strong>适合日常对话、即时响应、适合处理日常比较简单快速的问答，支持上传图片和文件。</li>\n   <li data-track=\"17\"><strong>专家模式：</strong>更偏向复杂任务处理，更擅长内容生成、代码、网页等任务，不支持多模态和文件上传，而且目前还是限量供应。</li>\n  </ul>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_4b58220c529cc74ffd2829555f2244de.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"18\">我们直接来一道超超超超经典的「鹈鹕骑自行车」的svg实测题，看看两种模式的生成效果具体有啥差异！</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_e5278742c098cd5ef8c4dc9f6278708f.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"19\">（左图为快速模式、右图为专家模式）</p>\n  <p data-track=\"20\">从生成效果来看，虽然两种模式在鹈鹕和自行车的融合度上都还有一定提升空间，但整体比较下来，专家模式的完成度还是要更胜一筹～</p>\n  <p data-track=\"21\">接着我们再把难度往上抬一下子，让两种模式分别生成俄罗斯方块小游戏，be like：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_4320c50ea09893cccc6405a1e29ce4a7.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"22\">（左图为快速模式、右图为专家模式）</p>\n  <p data-track=\"23\">从页面布局和视觉效果来看，两种模式在游戏设定和整体页面结构上的差别其实并不算大，而且二者运行都没有明显问题，基础操作按键也都可以正常使用。</p>\n  <p data-track=\"24\">比较明显的区别，可能更多体现在一些细节处理上——</p>\n  <p data-track=\"25\">比如专家模式生成出来的icon图标，看上去会更精细一点？？？（大家觉得呢）</p>\n  <p data-track=\"26\">除了实测效果之外，为了进一步摸清专家模式背后的模型真面目，我也继续刨根问底了一下——</p>\n  <p data-track=\"27\">结果，当专家模式被追问模型参数、上下文长度等关键信息时，模型选择了：不予正面回答。</p>\n  <p data-track=\"28\">（主打一个，遇到难回答的问题就《跑题》）</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_71c52db7be6cdbf534d3a6b36b60d2a4.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"29\">跑题归跑题，但架不住网友们从专家模式中察觉到V4模型的一些蛛丝马迹。</p>\n  <p data-track=\"30\">比如下面这位网友，用专家模式做了一个网页游戏，得出的结论和我们刚才实测「鹈鹕骑自行车」的感受差不多：</p>\n  <p data-track=\"31\">专家模式和快速模式之间，效果差距并没有拉得特别大。</p>\n  <p data-track=\"32\">因此这位网友的推测是，专家模式目前很可能调用的还是某个版本的V4 Lite，完整版V4或许已经不远了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_c62f34d2fe516e80936c476b7908865a.gif\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"33\">不止如此，还有网友在直接询问专家模式自己的模型名称时，模型甚至大大方方地表示：自己就是「V4」。</p>\n  <p data-track=\"34\">（真的假的，咱也不好说…)</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_b9024f9083871c74a98c52a6c5722e4f.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"35\">当然，围绕专家模式到底是不是V4，网上大家伙也有不少不同声音。</p>\n  <p data-track=\"36\">例如下面这位网友就在使用专家模式时发现，当输入token数量达到约133K时，就会触发长度限制。</p>\n  <p data-track=\"37\">而根据目前社区流传的V4模型参数信息，完整的DeepSeek V4预计将支持1M token的超长上下文。</p>\n  <p data-track=\"38\">这么一看，专家模式当前表现出来的上下文长度，又和大家预期中的V4不太对得上，没准也可能是V3.3的模型版本：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_daa7347aa7b36544decf959fb5e1c0b8.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"39\">至于专家模式到底是不是V4、完整版V4何时上线，目前DeepSeek官方嘛——还没有给出任何明确说明。</p>\n  <p data-track=\"40\">所有线索，都还停留在网友的实测和猜测阶段。（doge）</p>\n  <p data-track=\"41\">哦对了，除了这次上线的快速和专家两种模式外，还有一个「vision」模式也已经开始灰度测试。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_11993694a7dd709465c58135764f0fce.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"42\">（有被灰度到的小伙伴，欢迎来评论区聊聊实际效果～）</p>\n  <p data-track=\"44\">咋说呢，关于DeepSeek V4的发布传闻，从年初到现在就像一场持续上演的大型的《狼来了》。（doge）</p>\n  <p data-track=\"45\">其实早在去年底V3.2版本正式落地后，各大技术社区就已经开始热议下一代V4模型的迭代方向，毕竟——</p>\n  <p data-track=\"46\">从版本更新节奏和技术布局来看，DeepSeek的模型迭代本就有清晰的进阶逻辑，V4的研发筹备本就是意料之中的事…</p>\n  <p data-track=\"47\">关于V4版本的各种详细地不能再详细模型参数，可以说是全网《遍地开花》。</p>\n  <p data-track=\"49\">此外，关于V4模型的各种基准测试结果也开始疯狂流出，在不少基准测试中V4的表现都碾压GPT5.2、Gemini3等模型。</p>\n  <p data-track=\"50\">强，真·强啊。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_d3b458bf503c18181deb2b873034243c.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"51\">再就是上个月，DeepSeek一次普通的服务器崩溃事件，由被网友直接送上热搜。</p>\n  <p data-track=\"52\">（V4传闻的新素材这不就来了吗！！！）</p>\n  <p data-track=\"53\">原本只是一次常规的技术故障，却被大家脑洞大开地解读V4模型即将发布，服务器正在做上线前的压力测试，各种猜测和分析又又又又刷屏社区：</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260408040309_0a96665bb5eaf60090260cf5b44f65ba.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"54\">emm…隔三差五就被拎出来热议，却始终没等来官方实锤（doge）。</p>\n  <p data-track=\"55\">（真·《狼来了》）</p>\n  <p data-track=\"56\">当然了，这次DeepSeek突然上线「专家模式」，无疑给持续发酵的V4传闻又添了一把火…</p>\n  <p data-track=\"57\">哪怕只是网传的轻量化V4 Lite版本，也意味着完整版V4的研发已经进入收尾阶段，正式落地或许真的不远了。</p>\n  <p data-track=\"58\">没招了，大家只能安心蹲蹲吧～</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "DeepSeek 网页端近期上线「快速」与「专家」双模式并灰度测试视觉模型，引发社区对其下一代 V4 模型即将发布的广泛猜测。",
+  "oneSentenceSummary": "DeepSeek 网页端近期上线「快速」与「专家」双模式并灰度测试视觉模型，引发社区对其下一代 V4 模型即将发布的广泛猜测。",
+  "summary": "DeepSeek 网页端近日进行重大更新，推出了侧重即时响应的「快速模式」和擅长复杂任务（如代码、内容生成）的「专家模式」。同时，具备多模态能力的「视觉模型」也已开启灰度测试。尽管官方未明确模型版本，但网友通过实测发现专家模式在 SVG 绘图和代码精细度上表现更佳，且部分对话显示模型自称为「V4」。然而，由于专家模式目前存在约 133K 的上下文长度限制，与传闻中 V4 支持 1M token 的特性不符，社区对其真实身份仍存争议，推测其可能为 V4 Lite 或 V3.3 版本。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek 推出双模式切换功能，差异化处理简单与复杂任务。",
+      "explanation": "快速模式支持图片上传，侧重日常对话；专家模式限量供应，专注于代码生成和复杂逻辑，但在多模态支持上暂有缺失。"
+    },
+    {
+      "point": "专家模式在实测中表现出更强的工程与视觉生成能力。",
+      "explanation": "通过 SVG 绘图和俄罗斯方块游戏开发实测，专家模式在细节处理、组件精细度及逻辑完成度上优于快速模式。"
+    },
+    {
+      "point": "模型版本身份成谜，社区猜测与实测数据存在矛盾。",
+      "explanation": "虽然模型在对话中自称 V4，但实测的上下文长度限制（133K）远低于传闻中 V4 的标准，可能属于过渡版本或轻量化版本。"
+    }
+  ],
+  "keyQuotes": [
+    "不更是不更，一更就是个大动作，DeepSeek V4 可能真的要来了！",
+    "专家模式：更偏向复杂任务处理，更擅长内容生成、代码、网页等任务。",
+    "专家模式目前很可能调用的还是某个版本的 V4 Lite，完整版 V4 或许已经不远了。"
+  ],
+  "tags": [
+    "DeepSeek",
+    "V4",
+    "专家模式",
+    "大语言模型",
+    "多模态"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 86,
+  "wordCount": 2005,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775620704000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-08 03:58:24"
+}

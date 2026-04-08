@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-08 20:14:43 | [返回首页](/README.md)
+**更新时间**: 2026-04-08 22:32:05 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10945)
+- [AI & 大模型](#ai-llm) (10968)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (760)
 - [DevOps](#devops) (494)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5363)
+- [其他](#other) (5370)
 
 
 ---
@@ -34,8 +34,8 @@
 - [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
 - [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
+- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
@@ -43,7 +43,7 @@
 - [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral) - AI 精选
 - [智能体评估就绪检查清单](https://blog.langchain.com/agent-evaluation-readiness-checklist/) - AI 精选
 
-- [查看全部 10945 篇...](/details/tags/ai-llm.md)
+- [查看全部 10968 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -165,6 +165,7 @@
 
 
 
+- [GLM-5.1-开源：支持-8-小时独立工作的长程任务模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493695&idx=1&sn=3c096efd1739c7e0266befeef6ebcd4d) - AI 精选
 - [AlphaGo-十周年：AI-创新如何铺就通往-AGI-之路](https://deepmind.google/blog/10-years-of-alphago/) - AI 精选
 - [GLM-5-技术报告：技术细节全公开](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493485&idx=1&sn=bc8337e1e3095c4a29f20dd46161a14a) - AI 精选
 - [火爆全网的《卢浮宫小猫》AI-视频万字创作心得分享，这可能是他们最毫无保留的一次。](https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647678972&idx=1&sn=d42663a7ea0cf4881ce4c5f5fdcb7bb6) - AI 精选
@@ -184,8 +185,7 @@
 - [用开源模型强化你的-OCR-工作流](https://mp.weixin.qq.com/s?__biz=Mzk0MDQyNTY4Mw==&mid=2247495937&idx=1&sn=07fa59cf8df62d23f48404181351c2b3) - AI 精选
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
-- [又一篇保姆级教程，献给飞书多维表格应用模式。](https://mp.weixin.qq.com/s?__biz=MzkxNzYzODgwNw==&mid=2247494326&idx=1&sn=5b37bee6266fab482621555235901cb7) - AI 精选
 
-- [查看全部 5363 篇...](/details/tags/other.md)
+- [查看全部 5370 篇...](/details/tags/other.md)
 
 
