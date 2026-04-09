@@ -1,12 +1,12 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-09 16:28:29 | [返回首页](/README.md)
+**更新时间**: 2026-04-09 18:24:18 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10991)
+- [AI & 大模型](#ai-llm) (10992)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (761)
 - [DevOps](#devops) (496)
@@ -43,7 +43,7 @@
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
 
-- [查看全部 10991 篇...](/details/tags/ai-llm.md)
+- [查看全部 10992 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
