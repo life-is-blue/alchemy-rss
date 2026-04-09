@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a7487c03",
+  "title": "智谱 API 宕机：GLM-5.1 发布引发调用量激增",
+  "url": "https://mp.weixin.qq.com/s?__biz=MjM5ODI5Njc2MA==&mid=2655938138&idx=1&sn=efc8eba5e576b44174a83bd79c8dabcc",
+  "date": "2026-04-09 08:53:00",
+  "author": "51CTO技术栈",
+  "siteName": "51CTO技术栈",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"font-size: 1rem;\">4月9日下午3点，小编在自家工作群里收到技术同事的反馈：智谱API已经炸掉了！已经连续几个小时都限速了！</span></p>\n  <p>小编第一时间跟智谱内部人士联系后，得到了确认。确实后台撑爆了！</p>\n  <p>进入4月以来，智谱API业务卖爆的消息频频上热搜。</p>\n  <p>而就在昨天，GLM5.1一举夺得全球开源模型第一的宝座，仅次于闭源的GPT5.4和Claude Opus 4.6。</p>\n  <p>甚至在主流的 SWE-Bench Pro 上得分 58.4，位居开源第一、全球前列，超越部分闭源模型如 GPT-5.4 和 Claude Opus 4.6。</p>\n  <p>此外，这款模型擅长长时程智能体任务，能自主运行 8 小时，通过自我审查循环和数千工具调用，从零构建完整 Linux 桌面系统并集成 50+ 应用。</p>\n  <p>如此出色的性能，再加上开源的buff叠加，可以看出海内外对于这款新模型的喜爱了。</p>\n  <p>这就不难猜测这次智谱API炸了的原因。</p>\n  <p>肯定还是用户调用量激增的问题。早在一周前，智谱首份年报中就给出了一组对比数字：</p>\n  <p>2月份，智谱对编程套餐产品上调价格30%，并取消了首购优惠。3月份，整体API价格较去年底提升了83%。</p>\n  <p>按照常理，涨价应该会流失用户。但财报数据显示，调用量不降反升，逆势增长了400%。甚至出现了产品售罄、限售的供不应求局面。</p>\n  <p>更不用说昨天，新模型的发布后，智谱API无疑会迎来全球网友们的又一轮疯狂涌入。</p>\n  <p>不得不说，进入2026以后，全球对于AI的需求量可以说是指数级暴涨。</p>\n  <p>推理侧算力的供给已经成为了大家享用优秀顶尖模型的一大限制了！</p>\n  <p>多问一嘴，评论区的大佬们，你们的API还活着吗？ 那边的情况如何？限速已经恢复了吗？</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=db59ba84&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FZhxqo7xEfgJLSqOYLpJicBQlr9f4Sicd46t1c3WZDtdNDiafdcqSnhgGUZZaCNLh17vwWW3XPsEicibmqJA5JcC9sebUzznOmysCRm6N155D1uBY%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=abf76cd7&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FZhxqo7xEfgKGa2uma5SIqfRgIHyjNlQTXySWZNMhhvsrKa1wbkVpMJcKfO9iaSfS0raJ20ou7XnX3tyLsic8kN6vSiaBqmosfoVjo2vzHJmybg%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7d2a4a92&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FZhxqo7xEfgKB4h5QXia9icl9G3qPI2LI6ibvwt0dSgqI1ZQe0jDgrpNQGeSm1aTEC26th6vOnSYgtUWiaxm1FflArd4R9ACnUCkAkuicmlhC6oh0%2F0%3Fwx_fmt%3Dpng\"></p>\n </body>\n</html>",
+  "aiSummary": "智谱 AI 因新发布的 GLM-5.1 模型性能卓越导致 API 调用量暴涨 400%，后台资源过载出现限速与宕机现象。",
+  "oneSentenceSummary": "智谱 AI 因新发布的 GLM-5.1 模型性能卓越导致 API 调用量暴涨 400%，后台资源过载出现限速与宕机现象。",
+  "summary": "2026 年 4 月 9 日，智谱 AI 的 API 服务因用户调用量激增出现大规模限速和宕机。此次事故的主要诱因是昨日发布的 GLM-5.1 模型表现强劲，在 SWE-Bench Pro 等基准测试中位居开源首位，并具备极强的长时程智能体能力。尽管智谱近期大幅上调了 API 价格，但市场需求不降反升，反映出 2026 年全球对高质量 AI 推理算力的极度渴求以及顶尖模型供应紧张的现状。",
+  "mainPoints": [
+    {
+      "point": "智谱 API 因 GLM-5.1 发布后的流量冲击出现服务中断。",
+      "explanation": "新模型在编程和智能体任务上的卓越表现吸引了全球开发者疯狂涌入，导致后台资源被撑爆。"
+    },
+    {
+      "point": "AI 市场呈现出明显的「量价齐升」反常态趋势。",
+      "explanation": "尽管智谱 API 价格较去年底提升 83%，但调用量却逆势增长 400%，显示出优质模型资源的稀缺性。"
+    },
+    {
+      "point": "推理侧算力供给已成为 AI 行业发展的核心瓶颈。",
+      "explanation": "随着 Agent 任务（如自主构建 Linux 系统）的普及，对长时程、高并发推理的需求已超出当前基础设施的承载能力。"
+    }
+  ],
+  "keyQuotes": [
+    "GLM-5.1 一举夺得全球开源模型第一的宝座，仅次于闭源的 GPT-5.4 和 Claude Opus 4.6。",
+    "调用量不降反升，逆势增长了 400%。甚至出现了产品售罄、限售的供不应求局面。",
+    "推理侧算力的供给已经成为了大家享用优秀顶尖模型的一大限制了！"
+  ],
+  "tags": [
+    "智谱AI",
+    "GLM-5.1",
+    "API宕机",
+    "推理算力",
+    "大模型资讯"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 615,
+  "domain": "mp.weixin.qq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_aef4e8",
+  "sourceName": "51CTO技术栈",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775724780000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 08:53:00"
+}

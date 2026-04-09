@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-09 20:15:44 | [返回首页](/README.md)
+**更新时间**: 2026-04-09 22:34:52 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11022)
+- [AI & 大模型](#ai-llm) (11035)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (762)
 - [DevOps](#devops) (500)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5382)
+- [其他](#other) (5384)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
 
-- [查看全部 11022 篇...](/details/tags/ai-llm.md)
+- [查看全部 11035 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5382 篇...](/details/tags/other.md)
+- [查看全部 5384 篇...](/details/tags/other.md)
 
 
