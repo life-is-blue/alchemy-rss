@@ -1,0 +1,58 @@
+{
+  "id": "RAW_4ec92fc6",
+  "title": "GitHub Actions 自定义运行器镜像正式发布",
+  "url": "https://www.infoq.com/news/2026/04/github-actions-custom-runners/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-08 14:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>GitHub has just <a href=\"https://github.blog/changelog/2026-03-26-custom-images-for-github-hosted-runners-are-now-generally-available/\">announced</a> the availability of custom images for its hosted runners. They've finally left the public preview phase that started back in October behind them. This feature will enable teams to use a GitHub-approved base image and then construct a virtual machine image that really meets their workflow requirements.</p>\n   <p>The premise is straightforward, and the problem it solves is familiar to anyone who has managed CI at scale. Every time a workflow runs on a standard GitHub-hosted runner, it installs tooling from scratch. Node, Python runtimes, language-specific SDKs, internal certificates, custom binaries, all of it downloaded again, every run, every job. Custom images flip that model: you bake everything in one go, and later jobs bypass the setup completely.</p>\n   <p>The process has three steps: set up an image-generation runner, run a workflow with the snapshot keyword, then create a runner that uses that image. The snapshot keyword is the core mechanism. Each job with the keyword creates a separate image. Every successful run produces a new version; GitHub automatically increments the minor version number. Teams that want tighter control can pin to a specific major version using the mapping syntax, and runners can be configured to use the latest or locked to a specific version number. A runner pinned to the latest will pick up the new image automatically the next time a new version is generated; one pinned to a specific version stays put until someone manually updates it.</p>\n   <p>GitHub suggests setting up image generation as a weekly task. This helps keep dependencies up to date and ensures security patches are applied regularly. That's sensible advice, but it also means custom images are another artifact to manage; they need to be generated, versioned, and potentially audited. Governance gets a nod in the documentation: enterprise owners can manage access to custom images and set retention policies in the Actions policy settings.</p>\n   <p>The feature is exclusively available on larger runners, which means it is tied to the GitHub Team or GitHub Enterprise Cloud plans. Organizations on the free tier cannot use it. The platform of the image-generation runner must match the platform of the image being built: Linux x64, Linux ARM64, or Windows x64.</p>\n   <p>It's important to clarify what this feature isn't. It isn’t a general-purpose VM image pipeline. You can’t bring in any arbitrary AMI or GCP machine image from outside. The foundation is either a GitHub-curated base or a clean OS from GitHub. The image remains within the GitHub ecosystem. You can locate it in the organization's Actions settings under \"Custom images,\" rather than in your own container registry. Teams hoping to reuse images across CI providers or build images outside GitHub Actions workflows will need to manage that separately.</p>\n   <p>The issue of pre-warmed, customizable execution environments isn’t new. Different CI platforms have tackled it in various ways.</p>\n   <p>GitLab CI lets teams <a href=\"https://docs.gitlab.com/ci/docker/using_docker_images/\">specify any container</a> image in <code>.gitlab-ci.yml</code>. This means they can easily point a job to an image in their registry, whether it's GitLab’s or an external one. There's no extra step needed for provisioning. The image is pulled at job start. GitLab Runner offers several executor types for VM-level execution, such as Docker, Kubernetes, and shell. This gives teams options for scaling compute. The runner configuration in <code>config.toml</code> manages pull policy, registry credentials, and caching behaviour. GitLab's model is more permissive about the image source but puts more of the image lifecycle management responsibility on the team.</p>\n   <p>CircleCI <a href=\"https://circleci.com/product/build-images/\">takes</a> a two-track approach. Teams can run on machine executors with full system access, or bring their Docker images to meet specific requirements. Custom Docker images work naturally with CircleCI's container runner, where you define and publish the image yourself and reference it in the job configuration. The container runner takes containerized jobs, schedules them in a temporary pod, and runs the tasks in a container environment. It supports both CircleCI convenience images and custom Docker images. Custom VM-level images for the machine executor on CircleCI's cloud, like pre-baked AMIs, have long been requested. Users have noted that GitLab has provided similar support for some time now. CircleCI's answer for teams that need full OS-level control has mostly been self-hosted runners.</p>\n   <p>GitHub's approach to custom images is similar to using a self-hosted runner pool with pre-baked AMIs on AWS or a Packer-managed image library. However, it is fully managed and integrated into the platform. The tradeoff is the same one you get with any managed solution: less flexibility in exchange for less operational overhead. The value of that tradeoff depends on the complexity of your build environment. It also depends on whether your organization is ready to treat runner images as important artifacts. These need their own versioning and update schedules.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"GitHub Actions Custom Runner Images Reach General Availability\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/github-actions-custom-runners/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775656800000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "GitHub 宣布 GitHub Actions 的自定义运行器镜像正式发布，允许企业团队将依赖项预装到托管的虚拟机镜像中，从而加速 CI/CD 工作流。",
+  "oneSentenceSummary": "GitHub 宣布 GitHub Actions 的自定义运行器镜像正式发布，允许企业团队将依赖项预装到托管的虚拟机镜像中，从而加速 CI/CD 工作流。",
+  "summary": "GitHub Actions 自定义运行器镜像已从公开预览版转为正式发布（GA）。该功能使团队能够创建包含预装工具、SDK 和配置的持久化虚拟机快照，通过消除重复的安装步骤，显著缩短了任务设置时间。其工作流包含三个步骤，使用新的“snapshot”关键字自动生成并版本化镜像。尽管该功能仅限于 GitHub Team 和 Enterprise 计划中的“大型运行器（larger runners）”，但它为自托管运行器提供了一种托管替代方案，不过目前仍仅限于 GitHub 生态系统和指定的基准镜像。",
+  "mainPoints": [
+    {
+      "point": "自定义镜像消除了 CI 流水线中冗余的工具安装过程。",
+      "explanation": "通过将 Node、Python、SDK 和证书预装到镜像中，任务可以跳过设置阶段，从而加快执行速度并降低带宽成本。"
+    },
+    {
+      "point": "“snapshot”关键字实现了镜像版本控制和生命周期的自动化。",
+      "explanation": "GitHub 处理镜像的生成和增量版本控制，团队既可以锁定特定版本，也可以自动跟踪最新构建。"
+    },
+    {
+      "point": "可用性仅限于付费层级和特定架构。",
+      "explanation": "该功能仅限于使用 Linux (x64/ARM64) 或 Windows (x64) 上“大型运行器”的 GitHub Team 和 Enterprise Cloud 用户。"
+    },
+    {
+      "point": "GitHub 优先考虑托管生态系统而非外部灵活性。",
+      "explanation": "与允许任意外部镜像的 GitLab 或 CircleCI 不同，GitHub 要求使用其批准的基准镜像，以灵活性换取更低的运维开销。"
+    }
+  ],
+  "keyQuotes": [
+    "自定义镜像改变了这种模式：你一次性预装好所有内容，后续的任务将完全跳过设置阶段。",
+    "snapshot 关键字是核心机制。每个带有该关键字的任务都会创建一个独立的镜像。",
+    "这种权衡与任何托管解决方案一样：以牺牲灵活性为代价，换取更少的运维开销。",
+    "它不是一个通用的虚拟机镜像流水线。你无法从外部引入任何任意的 AMI 或 GCP 机器镜像。"
+  ],
+  "tags": [
+    "GitHub Actions",
+    "CI/CD",
+    "DevOps",
+    "自定义运行器",
+    "云基础设施"
+  ],
+  "topicTag": "devops",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 784,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775656800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-08 14:00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "RAW_5315ddb5",
+  "title": "引用自 Giles Turnbull 的一段话",
+  "url": "https://simonwillison.net/2026/Apr/8/giles-turnbull/#atom-everything",
+  "date": "2026-04-08 15:18:49",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">8th April 2026</p>\n   <div class=\"quote\">\n    <blockquote cite=\"https://gilest.org/notes/2026/human-ai/\">\n     <p>I have a feeling that <strong>everyone likes using AI tools to try doing someone else’s profession</strong>. They’re much less keen when someone else uses it for their profession.</p>\n    </blockquote>\n    <p class=\"cite\">— <a href=\"https://gilest.org/notes/2026/human-ai/\">Giles Turnbull</a>, <span class=\"context\">AI and the human voice</span></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/quotation/2136/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "这篇文章强调了 Giles Turnbull 关于 AI 在不同职业中应用存在双重标准这一深刻观察。",
+  "oneSentenceSummary": "这篇文章强调了 Giles Turnbull 关于 AI 在不同职业中应用存在双重标准这一深刻观察。",
+  "summary": "本文引用了由 Simon Willison 分享的 Giles Turnbull 的一段简短而深刻的话。它指出了 AI 时代的一种心理和职业张力：人们通常喜欢利用 AI 去涉足自己专业领域之外的工作，但当 AI 被应用于他们自己的专业领域时，却会产生负面反应，担心自己独特的技能和人类声音被贬值。",
+  "mainPoints": [
+    {
+      "point": "人们在看待 AI 的效用时存在明显的双重标准。",
+      "explanation": "人们在利用 AI 执行自己专业领域之外的任务时感到快乐和高效，但当 AI 侵入他们自己的专业领域时，却会感到防御和怀疑。"
+    },
+    {
+      "point": "AI 效率与职业认同之间的张力。",
+      "explanation": "这段话表明，“人类声音”和职业自豪感是抵制 AI 进入自身领域的核心原因。"
+    }
+  ],
+  "keyQuotes": [
+    "我有一种感觉，每个人都喜欢使用 AI 工具去尝试做别人的职业。但当别人用它来做自己的职业时，他们就不那么热衷了。"
+  ],
+  "tags": [
+    "AI 伦理",
+    "职业素养",
+    "人类声音",
+    "AI 应用",
+    "社会影响"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 39,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775661529000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-08 15:18:49"
+}

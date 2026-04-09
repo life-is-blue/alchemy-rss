@@ -1,0 +1,48 @@
+{
+  "id": "RAW_c3d1e6c2",
+  "title": "A Bootiful Podcast：Mark Kropf 谈 AI 编排",
+  "url": "https://spring.io/blog/2026/04/09/a-bootiful-podcast-ana-mark-kropf",
+  "date": "2026-04-09 00:00:00",
+  "author": "joshlong",
+  "siteName": "Spring Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Hi Spring fans! I was delighted to get a chance to sit and talk to my pal and Pivotal alum Mark Kropf about his efforts around orchestrating AI. This doesn’t have to do with the JVM or Spring, per se, but it’s an interesting discussion nonetheless.</p>\n  <iframe title=\"Mark Kropf on AI orchestration\" allowtransparency=\"true\" height=\"300\" width=\"100%\" scrolling=\"no\" data-name=\"pb-iframe-player\" src=\"https://www.podbean.com/player-v2/?from=embed&amp;i=c3k79-1a94352-pb&amp;square=1&amp;share=1&amp;download=1&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;rtl=0&amp;logo_link=&amp;btn-skin=7&amp;size=300\" loading=\"lazy\" allowfullscreen></iframe>\n </body>\n</html>",
+  "aiSummary": "在本期 A Bootiful Podcast 中，主持人 Josh Long 采访了 Mark Kropf，探讨了 AI 编排的复杂性与策略。",
+  "oneSentenceSummary": "在本期 A Bootiful Podcast 中，主持人 Josh Long 采访了 Mark Kropf，探讨了 AI 编排的复杂性与策略。",
+  "summary": "本期播客节目中，Josh Long 与 Pivotal 校友 Mark Kropf 展开对话，聚焦于 AI 编排不断演进的格局。尽管讨论超越了 Spring 框架和 JVM 的具体范畴，但深入探讨了在生产环境中有效管理和协调 AI 模型及工作流所需的更广泛的架构挑战与模式。",
+  "mainPoints": [
+    {
+      "point": "AI 编排是现代 AI 应用开发中的关键层。",
+      "explanation": "讨论强调，管理 AI 模型不仅仅是调用 API，还涉及对数据、提示词和模型输出的复杂协调。"
+    },
+    {
+      "point": "编排模式正在超越传统的软件工程范畴。",
+      "explanation": "Mark Kropf 分享了关于 AI 特定工作流如何区别于标准微服务编排的见解，并指出这需要新的思维模型。"
+    }
+  ],
+  "keyQuotes": [
+    "我很高兴有机会与我的好友兼 Pivotal 校友 Mark Kropf 坐下来，聊聊他在 AI 编排方面所做的努力。",
+    "这虽然与 JVM 或 Spring 本身没有直接关系，但依然是一场有趣的讨论。"
+  ],
+  "tags": [
+    "AI 编排",
+    "播客",
+    "Spring 博客",
+    "AI 架构",
+    "工作流管理"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 81,
+  "wordCount": 46,
+  "domain": "spring.io",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_d52b32",
+  "sourceName": "Spring Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775692800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 00:00:00"
+}

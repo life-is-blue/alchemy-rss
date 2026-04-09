@@ -1,0 +1,53 @@
+{
+  "id": "RAW_cb294f4b",
+  "title": "Aspire 13.2 发布：扩展 CLI、TypeScript AppHost 预览及仪表盘改进",
+  "url": "https://www.infoq.com/news/2026/04/aspire-13-2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-09 08:30:00",
+  "author": "Almir Vuk",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>At the end of the last month, Microsoft released <a href=\"https://github.com/microsoft/aspire.dev\">Aspire 13.2</a>, bringing a broad set of updates to its cloud-native development stack. The release focuses on improving the command-line experience, expanding multi-language support, and making local development easier for both developers and AI coding agents.</p>\n   <p>The most notable addition in this release is a significant expansion of the <em><a href=\"https://aspire.dev/whats-new/aspire-13-2/#%EF%B8%8F-cli-enhancements\">Aspire CLI</a></em>. As reported, developers can now run applications in the background using a new detached mode, manage running instances with dedicated start, stop, and process listing commands, and monitor resources directly from the terminal.</p>\n   <pre>\r\n<code># Create a new starter with the interactive template picker\r\naspire new\r\n\r\n# Or, create a new blank apphost in an existing codebase\r\naspire init\r\n\r\n# Restores integration packages and starts the apphost\r\naspire run\r\n\r\n# Manually restore integrations\r\naspire restore</code></pre>\n   <p>A new <a href=\"https://aspire.dev/whats-new/aspire-13-2/#isolated-mode-for-parallel-development\">isolated mode</a> was also introduced to allow multiple instances of the same application to run side by side without port conflicts, which is particularly useful for automated testing and parallel workflows. The CLI also gained commands for managing secrets, certificates, diagnostics, and documentation access.</p>\n   <p>Another key feature in Aspire 13.2 is the preview of <a href=\"https://aspire.dev/whats-new/aspire-13-2/#-typescript-apphost-support-preview\">TypeScript AppHost</a> support. Developers can now define their application's resource graph in TypeScript instead of C#, using the same underlying model of resources, references, and integrations. As explained, the TypeScript <em>AppHost</em> communicates with Aspire's orchestration host through a local transport layer and is supported in both the <em>CLI</em> and the <em>VS Code</em> extension.</p>\n   <p>The <a href=\"https://aspire.dev/whats-new/aspire-13-2/#-dashboard-improvements\">Aspire dashboard</a> received several improvements as well. Users can now export and import telemetry data, export environment variables as <em>.env files</em>, and set resource parameters directly through the dashboard interface.</p>\n   <p>A new telemetry HTTP API was also added, enabling programmatic access to spans, logs, and traces. The resource graph layout was improved as stated, for better readability, and several general interface refinements were made.</p>\n   <p>On the integrations side, the <a href=\"https://aspire.dev/whats-new/aspire-13-2/#docker-compose-publishing\">Docker Compose publishing</a> integration moved from prerelease to stable status. The release also introduced Microsoft Foundry support, replacing the earlier Azure AI Foundry integration, along with new integrations for Azure Virtual Network, Azure Data Lake Storage, and MongoDB Entity Framework Core. <a href=\"https://aspire.dev/whats-new/aspire-13-2/#javascript-hosting-with-bun\">JavaScript</a> projects gained Bun support as a package manager option.</p>\n   <p>The <a href=\"https://aspire.dev/whats-new/aspire-13-2/#-vs-code-extension\">VS Code extension</a> received over 20 feature additions, including a dedicated Aspire panel in the Activity Bar, inline CodeLens for resource state, and improved debugging capabilities for Azure Functions and TypeScript apphosts.</p>\n   <p>Other changes in this release include contextual endpoint resolution APIs, enhanced debugging attributes for core types, Kubernetes <a href=\"https://aspire.dev/whats-new/aspire-13-2/#-deployment-and-publishing\">publishing</a> fixes, and various Azure deployment improvements.</p>\n   <p>Lastly, the release also includes several <a href=\"https://aspire.dev/whats-new/aspire-13-2/#%EF%B8%8F-breaking-changes\">breaking changes</a> related to configuration files, resource commands, event handling, and the Azure AI Foundry to Microsoft Foundry transition.</p>\n   <p>For interested readers, the full release notes are available at the official Microsoft <a href=\"https://aspire.dev/whats-new/aspire-13-2/#%EF%B8%8F-breaking-changes\">documentation</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Aspire 13.2 Released with Expanded CLI, TypeScript AppHost Preview, and Dashboard Improvements\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Almir Vuk\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/aspire-13-2-release/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775723400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "微软发布了 .NET Aspire 13.2，引入了大幅扩展的 CLI、TypeScript AppHost 支持预览，以及增强的遥测和仪表盘功能。",
+  "oneSentenceSummary": "微软发布了 .NET Aspire 13.2，引入了大幅扩展的 CLI、TypeScript AppHost 支持预览，以及增强的遥测和仪表盘功能。",
+  "summary": "微软针对其云原生开发栈的最新更新 .NET Aspire 13.2，重点在于提升开发人员生产力和多语言支持。主要亮点包括：经过重大重构的 CLI（支持分离模式和资源管理）、引入了用于在 C# 之外定义资源图的 TypeScript AppHost 预览版，以及遥测导出/导入等仪表盘增强功能。此次发布还稳定了 Docker Compose 发布功能，增加了 Microsoft Foundry 支持，并对 VS Code 扩展进行了重大更新，新增了 20 多项功能。",
+  "mainPoints": [
+    {
+      "point": "大幅扩展 Aspire CLI 以实现更好的资源编排。",
+      "explanation": "CLI 现在支持用于后台执行的分离模式、用于防止并行开发期间端口冲突的隔离模式，以及用于管理密钥和诊断的综合命令。"
+    },
+    {
+      "point": "TypeScript AppHost 预览支持实现跨语言编排。",
+      "explanation": "开发人员现在可以使用 TypeScript 定义应用程序的资源图，使非 C# 开发人员能够通过本地传输层利用 Aspire 的编排模型。"
+    },
+    {
+      "point": "增强的遥测和仪表盘功能，提升可观测性。",
+      "explanation": "新功能包括用于以编程方式访问日志和跟踪的遥测 HTTP API、将环境变量导出为 .env 文件的能力，以及用于提高资源图可读性的 UI 优化。"
+    }
+  ],
+  "keyQuotes": [
+    "此次发布专注于改善命令行体验、扩展多语言支持，并使开发人员和 AI 编码智能体能够更轻松地进行本地开发。",
+    "开发人员现在可以使用 TypeScript 而非 C# 来定义应用程序的资源图，并使用相同的资源、引用和集成底层模型。",
+    "还引入了一种新的隔离模式，允许同一应用程序的多个实例并排运行，而不会产生端口冲突。"
+  ],
+  "tags": [
+    ".NET Aspire",
+    "云原生",
+    "CLI",
+    "TypeScript",
+    "微服务"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 460,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": null,
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775723400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 08:30:00"
+}

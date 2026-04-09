@@ -1,0 +1,54 @@
+{
+  "id": "RAW_c25f0dfc",
+  "title": "Cloudflare 与苏黎世联邦理工学院概述 AI 驱动的缓存优化方案",
+  "url": "https://www.infoq.com/news/2026/04/cloudflare-ai-caching-strategies/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-08 14:20:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare and ETH Zurich have <a href=\"https://blog.cloudflare.com/rethinking-cache-ai-humans/\">outlined the operational challenges posed by AI-driven crawler traffic and proposed approaches to improve cache efficiency in content delivery networks</a>. Cloudflare engineers report that AI bot traffic now exceeds 10 billion requests per week, creating patterns that differ significantly from human browsing behavior. These patterns affect latency, cache hit rates, and resource utilization across CDN and backend infrastructure.</p>\n   <p>About a third of Cloudflare’s traffic comes from automated sources, including search engine crawlers, uptime checkers, and AI assistants. AI crawlers are the most active, responsible for roughly 80 percent of self-identified bot requests. These bots issue high-volume parallel requests, often accessing rarely visited pages or scanning sites sequentially to support AI services like retrieval-augmented generation.</p>\n   <p>AI crawler behavior diverges from human browsing in several ways. Many AI crawlers maintain a high unique URL ratio, access diverse content types, and issue requests that do not effectively reuse cached content. Unlike human users, AI crawlers do not leverage browser caching or session continuity, and multiple independent instances can generate repeated requests for the same content. Cloudflare modeling shows that iterative loops by AI agents create consistently high levels of unique content access, displacing frequently requested human content in edge caches</p>\n   <p><a href=\"https://x.com/E_FutureFan\">Erika S</a>, a systems engineer, noted in her <a href=\"https://x.com/E_FutureFan/status/2039691906729263144\">X post</a>:</p>\n   <blockquote>\n    <p>The 70-100 percent unique access ratio in RAG loops explains the cache churn I experienced during recent fine-tuning. LRU failing under AI load makes German hosting unpredictable.</p>\n   </blockquote>\n   <p>AI traffic increases cache miss rates for CDNs, reducing the effectiveness of strategies such as least recently used cache eviction, cache speculation, and prefetching. Simulated AI crawler traffic caused a measurable drop in cache hit rates for a single CDN node, increasing origin server load and slowing response times.</p>\n   <p><a href=\"https://x.com/BeePopCommunity\">BeePopCommunity</a>, a technology observer, emphasized the widespread operational impact in <a href=\"https://x.com/BeePopCommunity/status/2040029680372416761\">X post</a>:</p>\n   <blockquote>\n    <p>AI traffic breaks assumptions built for humans.</p>\n   </blockquote>\n   <p><a href=\"https://www.linkedin.com/in/amy-lee-279a2554/\">Amy Lee</a>, CFO at Aerospike, described the broader effect on databases in a <a href=\"https://www.linkedin.com/posts/amy-lee-279a2554_yes-ai-traffic-is-breaking-traditional-cache-share-7445778088778506240-6pDJ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAArnikgBqzTxA9Y838-O55QUcB2McACIq94\">LinkedIn post</a>:</p>\n   <blockquote>\n    <p>YES! AI traffic is breaking traditional cache architectures, not just at the CDN layer but all the way to the database. When 70-100 percent of requests are unique, access patterns stop being predictable enough to cache. Most databases perform well when conditions cooperate. AI traffic is systematically eliminating optimized conditions. The ones that hold up were never dependent on those conditions in the first place. We see this in production at Aerospike: 1-2 million mixed read/write operations per second with predictable tail latency is the requirement, not the exception.</p>\n   </blockquote>\n   <p>To address these challenges, Cloudflare and <a href=\"https://ethz.ch/en.html\">ETH Zurich</a> propose AI-aware caching strategies. These include separating human and AI traffic into distinct cache tiers, testing replacement algorithms such as least frequently used or first in, first out, and exploring machine learning-driven policies that adapt dynamically. Complementary measures like structured feeds or pay-per-crawl models can help control AI access while preserving cache efficiency. Cloudflare emphasizes that AI-driven services require different caching approaches than human traffic. The proposals highlight potential operational and technical adjustments for websites to serve both human users and AI agents efficiently, underscoring the need for updated cache architectures.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare and ETH Zurich Outline Approaches for AI-Driven Cache Optimization\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/cloudflare-ai-caching-strategies/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775658000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 与苏黎世联邦理工学院提出 AI 感知缓存策略，以应对高频、独特的 AI 爬虫流量带来的运营挑战和缓存抖动问题。",
+  "oneSentenceSummary": "Cloudflare 与苏黎世联邦理工学院提出 AI 感知缓存策略，以应对高频、独特的 AI 爬虫流量带来的运营挑战和缓存抖动问题。",
+  "summary": "Cloudflare 工程师与苏黎世联邦理工学院的研究人员发现，AI 驱动的爬虫流量每周已超过 100 亿次请求，这从根本上打破了传统的 CDN 和数据库缓存假设。与人类浏览不同，RAG 循环中的 AI 智能体表现出 70%-100% 的唯一访问率，导致“最近最少使用”（LRU）淘汰策略失效，并增加了源服务器的负载。为缓解这一问题，他们提出了新的架构方案，包括将人类流量与 AI 流量分离至不同的缓存层、针对机器人流量采用 LFU 或 FIFO 算法，以及实施机器学习驱动的动态策略和按爬取付费模型。",
+  "mainPoints": [
+    {
+      "point": "AI 爬虫流量模式与以人为中心的缓存机制从根本上不兼容。",
+      "explanation": "AI 智能体表现出极高的唯一 URL 访问率（70%-100%）且缺乏会话连续性，这导致了“缓存抖动”，并使 LRU 策略所依赖的时间局部性假设失效。"
+    },
+    {
+      "point": "AI 流量的影响已从边缘扩展至数据库层。",
+      "explanation": "CDN 层面的高缓存未命中率增加了源站负载，迫使数据库在没有传统优化条件的情况下处理数百万次唯一的读/写操作。"
+    },
+    {
+      "point": "提出的解决方案涉及 AI 感知的架构分离。",
+      "explanation": "相关策略包括对流量进行分层以隔离 AI 请求、测试 LFU/FIFO 等替代淘汰算法，以及探索结构化数据馈送或按爬取付费模型来管理资源利用率。"
+    }
+  ],
+  "keyQuotes": [
+    "AI 流量打破了为人类构建的假设。",
+    "RAG 循环中 70%-100% 的唯一访问率解释了我在最近微调过程中经历的缓存抖动。",
+    "AI 流量正在系统性地消除优化条件。那些依然有效的条件，本身就不依赖于这些优化。",
+    "Cloudflare 的建模显示，AI 智能体的迭代循环会产生持续的高水平唯一内容访问，从而挤占了边缘缓存中人类频繁请求的内容。"
+  ],
+  "tags": [
+    "CDN",
+    "缓存策略",
+    "AI 爬虫",
+    "RAG",
+    "Cloudflare"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 510,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775658000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-08 14:20:00"
+}

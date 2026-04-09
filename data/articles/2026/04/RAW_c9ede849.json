@@ -1,0 +1,53 @@
+{
+  "id": "RAW_c9ede849",
+  "title": "Tailwind CSS 4.2 发布：新增 Webpack 插件、全新色板及逻辑属性工具",
+  "url": "https://www.infoq.com/news/2026/04/tailwind-css-4-2-webpack/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-08 14:48:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Tailwind CSS has <a href=\"https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.0\">released version 4.2.0</a>, a minor but meaningful update to the utility-first CSS framework that builds on the architectural overhaul introduced in v4.0 . The release, tagged on February 18th, 2026, ships a first-class webpack plugin, four new default color palettes, expanded logical property utilities, and notable recompilation speed gains that have already caught the attention of the wider frontend community.</p>\n   <p>The <a href=\"https://github.com/tailwindlabs/tailwindcss/pull/19610\">headline addition</a> for many teams is the new <code>@tailwindcss/webpack</code> package, which brings Tailwind into webpack pipelines without requiring a manual PostCSS configuration. Previously, developers using webpack needed to wire Tailwind up through PostCSS, adding boilerplate that stood in contrast to the clean Vite integration that shipped with v4.0. The new plugin simplifies that considerably.</p>\n   <p>This brings webpack projects up to parity with Vite in terms of integration simplicity, and is particularly welcome for teams working on established applications that are not yet in a position to migrate their build tooling.</p>\n   <p>On the visual side, 4.2 <a href=\"https://github.com/tailwindlabs/tailwindcss/pull/19627\">adds four new named palettes</a> to Tailwind's default theme: mauve, olive, mist, and taupe. These muted, neutral-leaning tones reflect a broader shift in design trends away from saturated palettes, and give designers working within Tailwind's built-in theme more expressive range without reaching for custom configuration.</p>\n   <p>Logical property support sees a significant expansion in this release. Tailwind now ships utilities for block-direction padding (<code>pbs-*</code>, <code>pbe-*</code>), margin (<code>mbs-*</code>, <code>mbe-*</code>), border (<code>border-bs</code>, <code>border-be</code>), scroll padding, and scroll margin, alongside new inline and block size utilities that map directly to CSS's <code>inline-size</code> and <code>block-size</code> properties. These additions are especially relevant for teams building internationalised products where right-to-left or vertical writing modes must be considered. The <code>start-*</code> and <code>end-*</code> utilities introduced in earlier versions have been deprecated in favour of the more semantically aligned <code>inline-s-*</code> and <code>inline-e-*</code> equivalents. LinkedIn commentary from developers noted the significance of the change, with one post observing that <a href=\"https://www.linkedin.com/posts/sagarpansuriya_tailwindcss-frontenddevelopment-webdesign-activity-7430151859392139266-VG1s\">\"logical properties are the future of CSS\"</a> for multilingual layouts.</p>\n   <p>Perhaps the most widely discussed aspect of the release is a substantial recompilation performance improvement. Tim Neutkens, Next.js lead at Vercel, <a href=\"https://x.com/timneutkens/status/2024140710786523301\">posted on X</a> that after investigating Tailwind's compilation speed he had measured a 3.8x improvement for recompiling on their largest application:</p>\n   <blockquote>\n    <p>Tailwind CSS 4.2.0 includes a big performance improvement.</p>\n    <p>Measured a 3.8x speed improvement for recompiling (any edit) on our largest application</p>\n    <p>Applies to Next.js, Vite, Webpack, and PostCSS integrations.</p>\n   </blockquote>\n   <p>For teams still on Tailwind CSS v3, the upgrade path to v4 remains a separate, more involved step. Tailwind provides a <a href=\"https://tailwindcss.com/docs/upgrade-guide\">dedicated upgrade guide</a> covering all breaking changes between v3 and v4, including the shift to CSS-first configuration, changes to <code>@apply</code> behaviour, and updated browser support requirements (Safari 16.4+, Chrome 111+, Firefox 128+). An automated migration tool is also available via <code>npx @tailwindcss/upgrade</code> to handle the bulk of mechanical changes. Teams working with <code>@apply</code> have flagged some rough edges in the transition, with a lengthy <a href=\"https://github.com/tailwindlabs/tailwindcss/discussions/16429\">GitHub discussion</a> documenting cases where component libraries that rely on it have needed additional reworking.</p>\n   <p>Tailwind CSS is a utility-first CSS framework that provides low-level, composable classes for styling directly in your markup. Rather than writing bespoke CSS for every component, teams assemble designs from predefined utilities (and can extend them through configuration), which can speed up UI development while keeping styles consistent across a codebase.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Tailwind CSS 4.2 Ships Webpack Plugin, New Palettes and Logical Property Utilities\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/tailwind-css-4-2-webpack/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775659680000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Tailwind CSS 4.2 引入了专属 Webpack 插件、四款全新的中性色板、扩展的逻辑属性支持，并显著提升了重新编译的性能。",
+  "oneSentenceSummary": "Tailwind CSS 4.2 引入了专属 Webpack 插件、四款全新的中性色板、扩展的逻辑属性支持，并显著提升了重新编译的性能。",
+  "summary": "Tailwind CSS 4.2.0 是一次重要的更新，进一步增强了 v4.0 的架构。核心功能包括用于简化集成的 `@tailwindcss/webpack` 包、四款全新的柔和色板（mauve、olive、mist、taupe），以及为提升国际化支持而扩展的逻辑属性工具。值得注意的是，该版本在重新编译速度上实现了高达 3.8 倍的提升，这将使 Next.js、Vite 和 Webpack 环境下的大型应用受益。",
+  "mainPoints": [
+    {
+      "point": "引入原生 Webpack 插件。",
+      "explanation": "全新的 `@tailwindcss/webpack` 包消除了手动配置 PostCSS 的需求，使 Webpack 项目在集成简便性方面与 Vite 看齐。"
+    },
+    {
+      "point": "显著的重新编译性能提升。",
+      "explanation": "内部优化使编辑后的重新编译速度提升了高达 3.8 倍，这对大型应用的开发者体验而言是一项关键改进。"
+    },
+    {
+      "point": "扩展了对 CSS 逻辑属性的支持。",
+      "explanation": "针对块级方向（block-direction）的 padding、margin 和 border 新增了实用工具，为支持 RTL（从右到左）或垂直书写模式的国际化产品开发提供了便利。"
+    }
+  ],
+  "keyQuotes": [
+    "新插件使 Webpack 项目在集成简便性上与 Vite 达到了同等水平。",
+    "逻辑属性是多语言布局的 CSS 未来。",
+    "在我们最大的应用程序上测量发现，重新编译（任何编辑）的速度提升了 3.8 倍。"
+  ],
+  "tags": [
+    "Tailwind CSS",
+    "前端开发",
+    "Webpack",
+    "CSS 框架",
+    "Web 性能"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 539,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775659680000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-08 14:48:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_0e1d8c22",
+  "title": "Google Cloud 入选 2026 年 Forrester Wave 主权云平台领导者",
+  "url": "https://cloud.google.com/blog/products/identity-security/a-leader-in-forrester-wave-sovereign-cloud-platform-2026/",
+  "date": "2026-04-09 00:00:00",
+  "author": "Jai Haridas, Chris Lindsay",
+  "siteName": "Google Cloud Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" data-is-cws-richtext=\"true\" class=\" \">\n    <p><span style=\"vertical-align:baseline\">In today’s global economy, data is a strategic asset. For many organizations — particularly those in highly regulated industries and the public sector — the ability to innovate with AI is often balanced against the rigorous requirements of data sovereignty, residency, and operational autonomy.</span></p>\n    <p><span style=\"vertical-align:baseline\">We are proud to announce that </span><strong style=\"vertical-align:baseline\">Google Cloud has been named a Leader in The Forrester Wave™: Sovereign Cloud Platforms, Q2 2026.</strong></p>\n   </div>\n  </section>\n  <section class=\"QzPuud\">\n   <div>\n    <section>\n     <figure class=\"NEBdNd\">\n      <section class=\"PBkdHd DhGbH\" jscontroller=\"SCGBie\" jsaction=\"rcuQ6b:npT2md\">\n       <img class=\"JcsBte mZzdH ZOnyjc\" src=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Sovereign_Cloud_Platforms.max-1300x1300.png\" alt=\"https://storage.googleapis.com/gweb-cloudblog-publish/images/Sovereign_Cloud_Platforms.max-1300x1300.png\" jsname=\"P3Vluc\" jsaction=\"click:HTIlC\" loading=\"lazy\">\n      </section>\n     </figure>\n     <div class=\"nRhiJb-cHYyed nRhiJb-DbgRPb-R6PoUb-ma6Yeb ZpqjUe\">\n      <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" data-is-cws-richtext=\"true\" class=\" \">\n       <p>The Forrester Wave™: Sovereign Cloud Platforms, Q2 2026</p>\n      </div>\n     </div>\n    </section>\n   </div>\n  </section>\n  <section class=\"Wy08Ac nRhiJb-qJTHM-OWXEXe-hJDwNd nRhiJb-DbgRPb-II5mzb-cGMI2b\">\n   <div jsaction=\"rcuQ6b:npT2md\" jscontroller=\"M0Q3Qb\" data-is-cws-richtext=\"true\" class=\" \">\n    <p><span style=\"vertical-align:baseline\">As organizations move beyond simple data residency toward full digital sovereignty, this report validates our commitment to providing a sovereignty-by-design approach. \"Google is an ideal choice for organizations that need a full range of sovereign cloud options for their deployments,\" Forrester said in their report.</span></p>\n    <h3 class=\"MnozTc-Bz112c MnozTc-Bz112c-OWXEXe-R6PoUb\"><span style=\"vertical-align:baseline\">Meeting customers where they are: A platform of choice</span></h3>\n    <p><span style=\"vertical-align:baseline\">There's no one-size-fits-all approach for achieving digital sovereignty. Our strategy is built on providing a consistent experience, including AI solutions, across three distinct sovereign cloud platforms, so that enterprise and government organizations can innovate and meet their compliance obligations.</span></p>\n    <p><strong style=\"vertical-align:baseline\">Google Cloud Data Boundary</strong><span style=\"vertical-align:baseline\">,</span><strong style=\"vertical-align:baseline\"> </strong><span style=\"vertical-align:baseline\">delivered with Assured Workloads,</span><strong style=\"vertical-align:baseline\"> </strong><span style=\"vertical-align:baseline\">provides a sovereign data and access boundary in the public cloud, including controls over data residency, access, and personnel. It’s designed to give you the agility and scale of global infrastructure while enforcing strict rules about where your data lives and who can access it. By using customer-managed encryption keys, external key manager, and localized access policies, administrative actions remain transparent and restricted. This option is a strong fit for commercial enterprises, regulated industries, and public sector organizations that need to meet regional compliance obligations without the complexity of isolated infrastructure and operational sovereignty.</span></p>\n    <p><strong style=\"vertical-align:baseline\">Google Cloud Dedicated,</strong><span style=\"vertical-align:baseline\"> designed for organizations seeking a higher level of control, provides complete regional data and operational sovereignty delivered by a regional independent operator — and is designed to be survivable up to a year even without Google. This environment is managed by a trusted local partner who oversees&nbsp; operations. This creates a functional buffer between your organization and Google, helping ensure that your cloud remains compliant with specific local governance. It is specifically targeted at organizations that require a cloud with operational sovereignty, offering the peace of mind that critical infrastructure can continue to function even if the connection with Google is interrupted. For example, in France, S3NS, a standalone entity, offers PREMI3NS built on Google Cloud Dedicated. </span><a href=\"https://www.thalesgroup.com/en/news-centre/press-releases/s3ns-announces-secnumcloud-qualification-premi3ns-its-trusted-cloud\" rel=\"noopener\" target=\"_blank\" track-name=\"premi3ns\" track-type=\"inline link\" track-metadata-eventdetail=\"www.thalesgroup.com/en/news-centre/press-releases/s3ns-announces-secnumcloud-qualification-premi3ns-its-trusted-cloud\"><span style=\"text-decoration:underline;vertical-align:baseline\">PREMI3NS</span></a><span style=\"vertical-align:baseline\"> has achieved the SecNumCloud 3.2 qualification from the French National Agency for the Security of Information Systems (ANSSI), one of the most demanding sovereignty standards in the world.</span></p>\n    <p><strong style=\"vertical-align:baseline\">Google Distributed Cloud</strong><span style=\"vertical-align:baseline\">, an on-premises solution offered to organizations with strict compliance, latency, and data sovereignty requirements that prevent public cloud adoption. Designed for maximum flexibility, Google Distributed Cloud (GDC) offers both connected and air-gapped configurations to meet your sovereignty requirements. The fully air-gapped deployment option operates without any external connection to the public internet or the Google network. Because it is physically self-contained in your own facility, it is designed to prevent remote access, updates, and shut downs by Google. This solution is the preferred choice for defense, intelligence, and the most security-conscious customers in highly regulated sectors who cannot risk any external exposure.</span></p>\n    <h3 class=\"MnozTc-Bz112c MnozTc-Bz112c-OWXEXe-ibL1re\"><span style=\"vertical-align:baseline\">Sovereign by design</span></h3>\n    <p><span style=\"vertical-align:baseline\">One of the key differentiators that Forrester noted is Google Cloud's roadmap, which calls for delivering sovereignty as a standard feature. Forrester said that Google Cloud's roadmap involves delivering sovereignty as a standard feature, ensuring consistency across all three sovereign cloud offerings.</span></p>\n    <p><span style=\"vertical-align:baseline\">This consistency is especially prominent in our AI capabilities. Forrester highlighted that our AI offering is a \"true differentiator\" and that Google Cloud excels \"at AI sovereign development services and applications services across all three sovereign environments.”&nbsp;</span></p>\n    <h3 class=\"MnozTc-Bz112c MnozTc-Bz112c-OWXEXe-c5RTEf\"><span style=\"vertical-align:baseline\">Looking ahead</span></h3>\n    <p><span style=\"vertical-align:baseline\">Being named a Leader in the Forrester Wave™: Sovereign Cloud Platforms, 2026 is a milestone in our journey to help every organization achieve digital autonomy. We remain committed to our partnerships with local players and our \"sovereignty-by-design\" philosophy.</span></p>\n    <p><span style=\"vertical-align:baseline\">Want to dive deeper into the report? </span><a href=\"https://cloud.google.com/resources/content/2026-forrester-wave-sovereign-cloud-platforms?utm_source=cgc-blog&amp;utm_medium=blog&amp;utm_campaign=FY26-Q2-GLOBAL-STO185-website-dl-FY26-For-Sov-AI-172425&amp;utm_content=blog&amp;utm_term=-&amp;e=48754805\" track-name=\"download the full forrester wave™: sovereign cloud platforms, q2 2026 report here\" track-type=\"inline link\" track-metadata-eventdetail=\"cloud.google.com/resources/content/2026-forrester-wave-sovereign-cloud-platforms\"><span style=\"text-decoration:underline;vertical-align:baseline\">Download the full Forrester Wave™: Sovereign Cloud Platforms, Q2 2026 report here</span></a><span style=\"vertical-align:baseline\">.</span></p>\n   </div>\n  </section>\n </body>\n</html>",
+  "aiSummary": "Google Cloud 在《The Forrester Wave™：2026 年第二季度主权云平台》报告中被评为领导者，彰显了其在公有云、专属云和离线云环境中“设计即主权”的战略优势。",
+  "oneSentenceSummary": "Google Cloud 在《The Forrester Wave™：2026 年第二季度主权云平台》报告中被评为领导者，彰显了其在公有云、专属云和离线云环境中“设计即主权”的战略优势。",
+  "summary": "本文宣布了 Google Cloud 在 2026 年 Forrester 主权云平台报告中的领导者地位。文章详细介绍了 Google 的三层数字主权战略：用于平衡公有云敏捷性与驻留控制的 Google Cloud Data Boundary、通过本地独立运营商实现运营主权的 Google Cloud Dedicated，以及满足离线本地部署需求的 Google Distributed Cloud (GDC)。报告指出，一个关键的差异化优势在于将 AI 能力作为所有主权层级的标准功能，确保受严格监管的行业在不损害合规性或自主权的前提下进行创新。",
+  "mainPoints": [
+    {
+      "point": "Google Cloud 在三个不同的平台上采用了“设计即主权”的战略。",
+      "explanation": "该战略提供了一个控制光谱：Data Boundary（公有云）、Dedicated（合作伙伴运营）和 Distributed Cloud（离线/本地部署），以满足不同的监管需求。"
+    },
+    {
+      "point": "AI 能力被视为所有主权产品中的标准且一致的功能。",
+      "explanation": "与那些可能将 AI 限制在公有云区域的竞争对手不同，Google 即使在断网环境下也能提供主权 AI 开发和应用服务，Forrester 将此视为关键的差异化因素。"
+    },
+    {
+      "point": "通过独立的本地运营商和生存能力特性，实现了运营自主权。",
+      "explanation": "“Dedicated”层级旨在实现长达一年的离线生存能力（无需连接 Google），并由法国 S3NS 等受信任的本地合作伙伴进行管理。"
+    }
+  ],
+  "keyQuotes": [
+    "对于需要全方位主权云选项以进行部署的组织而言，Google 是理想的选择。",
+    "Google Cloud 的路线图旨在将主权作为一项标准功能交付，确保所有三个主权云产品的一致性。",
+    "Google Cloud 在所有三个主权环境中均表现出色，能够提供主权 AI 开发服务和应用服务。"
+  ],
+  "tags": [
+    "主权云",
+    "Google Cloud",
+    "数字主权",
+    "合规性",
+    "云基础设施"
+  ],
+  "topicTag": "devops",
+  "readTime": 3,
+  "score": 82,
+  "wordCount": 664,
+  "domain": "cloud.google.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_bc3236",
+  "sourceName": "Google Cloud Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775692800000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 00:00:00"
+}

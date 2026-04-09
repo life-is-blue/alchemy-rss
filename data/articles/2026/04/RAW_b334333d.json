@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b334333d",
+  "title": "GitHub 可用性报告：2026 年 3 月",
+  "url": "https://github.blog/news-insights/company-news/github-availability-report-march-2026/",
+  "date": "2026-04-09 02:21:20",
+  "author": "Jakub Oleksy",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In March, we experienced four incidents that resulted in degraded performance across GitHub services.</p>\n  <p><strong>March 03 18:59 UTC (lasting 1 hour and 10 minutes)</strong></p>\n  <p>On March 3, 2026, between 18:46 and 20:09 UTC, GitHub experienced a period of degraded availability impacting github.com, the GitHub API, GitHub Actions, Git operations, GitHub Copilot, and other dependent services. At the peak of the incident, github.com request failures reached approximately 40%. During the same period, approximately 43% of GitHub API requests failed. Git operations over HTTP had an error rate of approximately 6%, while SSH was not impacted. GitHub Copilot requests had an error rate of approximately 21%. GitHub Actions experienced less than 1% impact.</p>\n  <p>This incident shared the same underlying cause as an incident in early February, where we saw a large volume of writes to the user settings caching mechanism. While deploying a change to reduce the burden of these writes, a bug caused every user’s cache to expire, get recalculated, and get rewritten. The increased load caused replication delays that cascaded down to all affected services. We mitigated this issue by immediately rolling back the faulty deployment.</p>\n  <p>We understand these incidents disrupted the workflows of developers. While we have made (and are making) substantial, long-term investments in how GitHub is built and operated to improve resilience, we acknowledge we have more work to do. Getting there requires deep architectural work that is already underway, as well as urgent, targeted improvements. We are taking the following immediate steps:</p>\n  <ul class=\"wp-block-list\">\n   <li>We have added a killswitch and improved monitoring to the caching mechanism to ensure we are notified before there is user impact and can respond swiftly.</li>\n   <li>We are moving the cache mechanism to a dedicated host, ensuring that any future issues will solely affect services that rely on it.</li>\n  </ul>\n  <p><strong>March 05 16:35 UTC (lasting 2 hours and 55 minutes)</strong></p>\n  <p>On March 5, 2026, between 16:24 and 19:30 UTC, GitHub Actions was degraded. During this time, 95% of workflow runs failed to start within 5 minutes with an average delay of 30 minutes, and 10% of workflow runs failed with an infrastructure error. This was due to Redis infrastructure updates that were being rolled out to production to improve our resiliency. These updates introduced a set of incorrect configuration changes into our Redis load balancer, causing internal traffic to be routed to an incorrect host leading to two incidents.</p>\n  <p>We mitigated this incident by correcting the misconfigured load balancer. Actions jobs were running successfully starting at 17:24 UTC. The remaining time until we closed the incident was spent burning through the queue of jobs.</p>\n  <p>We immediately rolled back the updates that were a contributing factor and have frozen all changes in this area until we complete follow-up work. We are working to improve our automation to ensure incorrect configuration changes cannot propagate through our infrastructure. We are also working on improved alerting to catch misconfigured load balancers before it becomes an incident. Additionally, we are updating the Redis client configuration in Actions to improve resiliency to brief cache interruptions.</p>\n  <p><strong>March 19 13:44 UTC (lasting 48 minutes)</strong></p>\n  <p>On March 19, 2026, between 01:05 and 02:52 UTC, and again on March 20, 2026, between 00:42 and 01:58 UTC, the Copilot Coding Agent service was degraded and users were unable to start new Copilot Agent sessions or view existing ones. During the first incident, the average error rate was ~53% and peaked at ~93% of requests to the service. During the second incident, the average error rate was ~99% and peaked at ~100% of requests with significant retry amplification. Both incidents were caused by the same underlying system authentication issue that prevented the service from connecting to its backing datastore.</p>\n  <p>We mitigated each incident by rotating the affected credentials, which restored connectivity and returned error rates to normal. The mitigation time was 01:24. The second occurrence was due to an incomplete remediation of the first.</p>\n  <p>We have implemented automated monitoring for credential lifecycle events and are improving operational processes to reduce our time to detection and mitigation of issues like this one in the future.</p>\n  <p><strong>March 24 16:59 UTC (lasting 2 hours and 52 minutes)</strong></p>\n  <p>On March 24, 2026, between 15:57 and 19:51 UTC, the Microsoft Teams Integration and Teams Copilot Integration services were degraded and unable to deliver GitHub event notifications to Microsoft Teams. On average, the error rate was 37.4% and peaked at 90.1% of requests to the service—approximately 19% of all integration installs failed to receive GitHub-to-Teams notifications in this time period.</p>\n  <p>This was due to an outage at one of our upstream dependencies, which caused HTTP 500 errors and connection resets for our Teams integration.</p>\n  <p>We coordinated with the relevant service teams, and the issue was resolved at 19:51 UTC when the upstream incident was mitigated.</p>\n  <p>We are working to update observability and runbooks to reduce time to mitigation for issues like this in the future.</p>\n  <hr class=\"wp-block-separator has-alpha-channel-opacity\">\n  <p>Follow our <a href=\"https://www.githubstatus.com/\">status page</a> for real-time updates on status changes and post-incident recaps. To learn more about what we’re working on, check out the engineering section on the <a href=\"https://github.blog/category/engineering/\">GitHub Blog</a>.</p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 2026 年 3 月可用性报告详细介绍了影响 Actions、Copilot 和 API 服务的四起重大事故，原因涉及缓存错误、Redis 配置错误及凭据问题。",
+  "oneSentenceSummary": "GitHub 2026 年 3 月可用性报告详细介绍了影响 Actions、Copilot 和 API 服务的四起重大事故，原因涉及缓存错误、Redis 配置错误及凭据问题。",
+  "summary": "本报告透明地分析了 2026 年 3 月发生的四起服务中断事件。主要事故包括 3 月 3 日因大规模缓存过期错误导致 github.com 出现 40% 的故障率，以及 3 月 5 日因 Redis 负载均衡器配置错误导致 95% 的 GitHub Actions 工作流延迟。其他问题还涉及 Copilot Coding Agent 的身份验证失败，以及影响 Microsoft Teams 集成的上游依赖项中断。GitHub 概述了缓解措施，包括缓存机制的架构隔离、改进负载均衡器自动化以及自动化的凭据监控。",
+  "mainPoints": [
+    {
+      "point": "缓存机制错误引发了跨多个服务的级联故障。",
+      "explanation": "一次旨在减少写入负载的部署意外导致所有用户缓存同时过期，引发了重新计算风暴和复制延迟，影响了 40% 的 Web 流量。"
+    },
+    {
+      "point": "Redis 的基础设施更新导致 GitHub Actions 性能显著下降。",
+      "explanation": "Redis 负载均衡器中的错误配置更改将内部流量路由到了错误的主机，导致 95% 的工作流在预期时间内发生故障。"
+    },
+    {
+      "point": "凭据生命周期管理问题导致 Copilot Agent 停机。",
+      "explanation": "系统身份验证失败导致服务无法连接到数据存储，需要手动轮换凭据，这也凸显了对更好的自动化监控的需求。"
+    }
+  ],
+  "keyQuotes": [
+    "在部署旨在减轻这些写入负担的更改时，一个错误导致每个用户的缓存过期、被重新计算并被重写。",
+    "这些更新将一组错误的配置更改引入了我们的 Redis 负载均衡器，导致内部流量被路由到了错误的主机。",
+    "我们正在将缓存机制迁移到专用主机，以确保未来的任何问题只会影响依赖于它的服务。"
+  ],
+  "tags": [
+    "GitHub",
+    "可用性报告",
+    "事后分析",
+    "站点可靠性工程",
+    "基础设施"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 84,
+  "wordCount": 842,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775701280000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 02:21:20"
+}

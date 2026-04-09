@@ -1,0 +1,54 @@
+{
+  "id": "RAW_d6927e7b",
+  "title": "Anthropic 发布 Managed Agents，硅谷华人团队 CREAO 押注 Agent Harness 赛道",
+  "url": "https://www.qbitai.com/2026/04/398140.html",
+  "date": "2026-04-09 07:08:02",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"87\">衡宇 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"88\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">今早，Anthropic发布了最新Agent架构<strong>Managed Agents</strong>。</p>\n  <p data-track=\"3\">一并公布的技术文档中反复强调“Agent Harness”这个关键概念，其核心是：</p>\n  <blockquote>\n   <p data-track=\"4\">每个Agent请求都应该跑在独立的沙盒环境里。</p>\n  </blockquote>\n  <p data-track=\"5\">顺着这条思路深挖，我们发现，已经有一个产品因同样的架构设计冲上了热搜Top 3。</p>\n  <p data-track=\"6\">这款产品叫<strong>CREAO，由一支硅谷华人团队打造</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260409080307_8cd3d27af40448df6c0a5a4aebcbc9a0.jpeg\" data-src=\"https://image.jido.dev/20260409080307_8cd3d27af40448df6c0a5a4aebcbc9a0.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">在正式了解CREAO之前，我们先来浅聊两句AI Agent Harness。</p>\n  <p data-track=\"8\"><strong>Harness</strong>绝对是近期大模型世界里最热的词（也被戏称为继token后又一难翻译成中文的AI名词）。</p>\n  <p data-track=\"9\">它指代的是让AI能持续可靠地大规模长期工作的外围控制系统，包括提示词构建、工具调用、状态管理、安全检查和循环控制等等。</p>\n  <p data-track=\"10\">由于AI技术日益进化，AI产品强调从“Chatbot”转变向“可靠的Agent”，Harness的重要性也日益提升。</p>\n  <p data-track=\"11\">而随着AI从专业开发者走向普通大众，是时候出现一款消费级的AI Agent Harness了。</p>\n  <p data-track=\"12\">CREAO应运而生。</p>\n  <p data-track=\"13\"><strong>甫一上线，CREAO就用评论区五花八门的买家秀展示了自己是如何面向普通用户大展拳脚的。</strong></p>\n  <p data-track=\"14\">有人用它搭了一套全自动竞品监控，每周一定时抓取价格，自动发到工作群；有人把图像生成、配音、转录、剪辑一整条内容流水线交给它，设置好之后，就再也没有手动操作过……</p>\n  <p data-track=\"15\">凭借从配置到使用0门槛、高稳定性等独特能力，CREAO的热度一路从北美蔓延到欧洲、东南亚、拉美，并迅速引发全球数十位科技KOL的注意。</p>\n  <p data-track=\"16\">大家隔着网线，来了场浩浩荡荡的跨语种深度评测。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260409080307_f18144626166725a989e0eaf99d25633.webp\" data-src=\"https://image.jido.dev/20260409080307_f18144626166725a989e0eaf99d25633.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"17\">量子位获悉，<strong>CREAO背后是一支位于硅谷的中美复合型团队。</strong></p>\n  <p data-track=\"18\">他们秉承着一个朴素的核心判断：让普通人只用花费说句话的力气，就能搭建一个属于自己的、永不停歇的Agent。</p>\n  <p data-track=\"20\">尽管以OpenClaw为代表的各种龙虾们掀起了一阵Agent狂热，但总体来看，AI行业仍处于一个微妙的矛盾期——对于普通用户来说，想要用上Agent的除了对话外的那些“高级功能”，门槛还是太高了。</p>\n  <p data-track=\"21\">作为“全球第一个真正面向普通用户的AI Agent Harness”，<strong>CREAO率先就把部署门槛和使用门槛统统甩到一边</strong>。</p>\n  <p data-track=\"22\">用户站在目前大多数Agent面前时，总是望着两座大山发怵。</p>\n  <p data-track=\"23\">一是环境部署。</p>\n  <p data-track=\"24\">你最好得懂一点Python，明白怎么配置API Key，麻烦点的还得辛苦你折腾折腾服务器。</p>\n  <p data-track=\"25\">二是逻辑构建。</p>\n  <p data-track=\"26\">你需要具备极其严密的编程思维，才能防止AI在执行过程中跑偏（不然跑偏了你也救不回来，只能看着你的虾虾们被养死了）。</p>\n  <p data-track=\"27\">这导致很多强大的Agent只服务于极客，普通人呢，只能在门外望洋兴叹。</p>\n  <p data-track=\"28\"><strong>而使用CREAO，只需要打开官网就可以了。</strong></p>\n  <p data-track=\"29\"><strong>不需要部署什么，也不需要任何配置，打开就能使用。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260409080307_8fb37b30a40897fc3d6d91d726117767.webp\" data-src=\"https://image.jido.dev/20260409080307_8fb37b30a40897fc3d6d91d726117767.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"30\">讲真，哪怕是再简化过后的GUI操作流程，社区里提供再详细的安装教程，对普通人来说也是一道关卡。</p>\n  <p data-track=\"31\">相信我，人类的底层代码里一定写着“能少做一步算一步”这几个字。不然也不会有那么多上门安装龙虾和卸载龙虾的需求诞生了……</p>\n  <p data-track=\"32\">跳过部署和配置环境环节，使用层面也没得说，和现在所有最前沿的Agent一样，只要人话——哪怕是逻辑不那么通顺、指向模糊的话——CREAO也能很好地分析且开始执行任务。</p>\n  <p data-track=\"33\">别慌，CREAO<strong>还有别的不一样的特色在身上！</strong></p>\n  <p data-track=\"34\">无论是OpenClaw还是Manus，这些Agent本质还是AI在执行任务，所以跑起来可能出现各种bug。</p>\n  <p data-track=\"35\">跑着跑着，按捺不住AI存在的幻觉，开始叽里咕噜胡说八道。</p>\n  <p data-track=\"36\">而且你还得像供祖宗一样供着它（bushi）。</p>\n  <p data-track=\"37\">它们必须保持聊天窗口打开、设备保持在线，一旦关闭页面/锁屏/退出软件/关掉主机，正在运行的任务会直接终止，之前的所有设置与进度全部作废。</p>\n  <p data-track=\"38\"><strong>好在这两个问题都被CREAO巧妙地解决了～</strong></p>\n  <p data-track=\"39\">具体来说，CREAO走了三步来破局。</p>\n  <p data-track=\"40\"><strong>第一步</strong>，CREAO理解用户说人话下达的需求，实时编写对应的执行代码。</p>\n  <p data-track=\"41\">这一过程中，系统会自动帮你连上Gmail、表格、飞书、Slack等300多个常用软件，用户点开就能用，无需额外设置。</p>\n  <p data-track=\"42\"><strong>第二步</strong>则是CREAO最核心、最不一样的地方。</p>\n  <p data-track=\"43\">按照指令，CREAO的AI系统帮你把流程搭好，并且成功跑通后，你如果对最终效果满意，可以点击“创建智能体”按钮，把这一套完整的工作流程“固化”成一个能永久使用的Agent。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260409080307_4816ac95b24b521dc00aaa9ee5df8425.jpeg\" data-src=\"https://image.jido.dev/20260409080307_4816ac95b24b521dc00aaa9ee5df8425.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"44\">这可能是CREAO上最能体现“Harness”的一点，用户能在使用过程中按需驯化符合心意的Agent。</p>\n  <p data-track=\"45\">为了让此后的每一次任务都精准无误，CREAO又做了<strong>第三步</strong>：固化后的Agent就成了你CREAO账号上专属的软件基础设施，支持定时调度、重复运行，还能实现技能复用。</p>\n  <p data-track=\"46\">它不再依赖LLM的实时推理，也就告别了幻觉问题。所以以后每次用该Agent执行任务，结果的准确率都是100%。</p>\n  <p data-track=\"47\">简直可以称之为“一次性配置，终身服役，保证完成任务”。</p>\n  <p data-track=\"48\"><strong>对咱们普通人来说，省事，不用反复折腾，帮咱干活的时候准确率高，这不比什么都强？？</strong></p>\n  <p data-track=\"50\">看到这里，不少人会产生疑问，这不就是另一个OpenClaw吗？</p>\n  <p data-track=\"51\">似也，但非也。</p>\n  <p data-track=\"52\">表面看有点像，但本质完全不同。</p>\n  <p data-track=\"53\">深入对比后会发现，作为全球第一个真正面向普通用户的AI Agent Harness，CREAO拥有两项独家能力，拉开了与其它AI产品的差距。</p>\n  <ul>\n   <li data-track=\"54\"><strong>一是AI从循环中自我构建，由LLM调度、100%确定性执行；</strong></li>\n   <li data-track=\"55\"><strong>二是任意API一次描述，永久变成可复用Skill，形成复利式能力积累。</strong></li>\n  </ul>\n  <p data-track=\"56\">这份差距在多产品的横向维度对比中，会体现得更为直观和清晰。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260409080307_dae78cef71530812c0b952a7a141809b.webp\" data-src=\"https://image.jido.dev/20260409080307_dae78cef71530812c0b952a7a141809b.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"57\">与ChatGPT和Claude Code相比，CREAO实现了从“文本输出”到“落地运行”的跨越，把AI的能力真正送到了用户的工作流里。</p>\n  <p data-track=\"58\">与OpenClaw和Manus相比，CREAO是长期可用的生产工具，稳定性尤为突出。</p>\n  <p data-track=\"59\">与成熟的自动化工具n8n和Zapier相比，CREAO以AI驱动自动化，普通用户无需专业知识，用自然语言就能完成所有操作，门槛大幅降低。</p>\n  <p data-track=\"60\">在思考、构建、运行、连接真实工具、超越对话持久化这<strong>五个核心维度上，唯有CREAO在五个维度上全部实现</strong>，成为六款产品中唯一全能型选手。</p>\n  <p data-track=\"61\">还有一个表格外的独特能力一定要跟大家讲，那就是你在CREAO上固化的所有Agent，都在云端服务器上创建了影分身。</p>\n  <p data-track=\"62\">你交代完任务，大可以放心地关掉网页窗口，甚至直接合上电脑去干别的事！</p>\n  <p data-track=\"63\">不管你的终端设备是否在线，驯化好的Agent都会按照既定的时间表雷打不动地执行任务。</p>\n  <p data-track=\"64\">以上，都印证了CREAO作为AI Agent消费级入口的独特价值。</p>\n  <p data-track=\"66\">能做出这种极具产品感的产品，背后必然站着一群对用户体验有极端追求的人。</p>\n  <p data-track=\"67\">CREAO总部位于美国硅谷，是一支典型且硬核的中美复合型团队。</p>\n  <p data-track=\"68\">据我们了解，<strong>团队汇聚了来自Google、Meta等硅谷一线大厂的华人AI精英，同时也融合了国内头部大模型创业公司和明星互联网企业的技术骨干</strong>。</p>\n  <p data-track=\"69\">这种背景让他们既拥有全球化的视野和前沿的自研架构能力，又深谙C端产品的交互逻辑。</p>\n  <p data-track=\"71\">从底层架构、执行引擎到集成协议，这支团队的产品核心技术全自研——这也是CREAO能实现稳定运行、无限集成的核心底气。</p>\n  <p data-track=\"72\">全栈自研让CREAO摆脱了对第三方框架的依赖，能灵活适配各类工具与API，同时保障任务执行的稳定性与安全性，成为CREAO能实现“<strong>The conversation ends. What you built doesn’t.</strong>”的技术基础。</p>\n  <p data-track=\"73\">在产品研发过程中，团队始终坚守对C端用户体验的极致执念，没有盲目追逐模型能力、框架复杂度等技术指标，而是聚焦普通用户的真实需求，耗时数月攻克了业界一直回避的难题：</p>\n  <blockquote>\n   <p data-track=\"74\">怎么才能在对话结束后，让AI依旧持续稳定地执行任务并输出？</p>\n  </blockquote>\n  <p data-track=\"75\">这个问题背后涉及代码生成的确定性、多工具编排的稳定性、以及用户心智模型的重新设计，都十分棘手。</p>\n  <p data-track=\"76\">这种死磕底层逻辑的坚持，让CREAO从一众Agent里跳了出来走进大众视野。目前，产品已覆盖北美、欧洲、拉美、东南亚等多个核心市场。</p>\n  <p data-track=\"77\">这种精神也成了它叩开资本大门的敲门砖。</p>\n  <p data-track=\"78\">据悉，在CREAO正式发布前的一年内，CREAO已完成连续多轮数千万级美金融资。</p>\n  <p data-track=\"79\">CREAO的成功其实向行业释放了一个强烈的信号：AI Agent赛道正在经历从“技术驱动”到“体验驱动”的范式转换。</p>\n  <p data-track=\"80\">过去两年，业界一直在卷模型参数、卷Agent框架，但真正能跑出来的消费级产品少之又少。</p>\n  <p data-track=\"81\"><strong>能够占领C端市场的AI Agent产品，一定和“普通人无痛上手”“稳定可靠”“高度个性化”密切相关。</strong></p>\n  <p data-track=\"82\">CREAO的成功就证明了这一点。</p>\n  <p data-track=\"83\">消费级AI产品的终极竞争力，还是在于降低使用门槛，让普通人能轻松构建、驯化属于自己的自动化系统。AI Agent一旦正式从开发者圈层走向大众用户，整个赛道都将迎来全新发展阶段。</p>\n  <p data-track=\"84\">这不由得让人联想到20年前，iPhone重新定义智能手机的范式转换时刻。</p>\n  <p data-track=\"85\">2007年，iPhone在一众卷生卷死的手机品牌中，因让普通人第一次直观、轻松地使用智能手机，重新定义了移动终端的使用范式，名声大噪。</p>\n  <p data-track=\"86\">如今，CREAO这支中美复合型团队正在AI Agent赛道做着同样的事，把AI Agent驯化成每个普通人无痛上手、不可或缺的执行系统。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文解析了 Anthropic 最新发布的 Managed Agents 架构及其核心概念 Agent Harness，并重点介绍了硅谷华人团队打造的消费级 AI Agent 平台 CREAO。",
+  "oneSentenceSummary": "本文解析了 Anthropic 最新发布的 Managed Agents 架构及其核心概念 Agent Harness，并重点介绍了硅谷华人团队打造的消费级 AI Agent 平台 CREAO。",
+  "summary": "文章由 Anthropic 发布 Managed Agents 架构引出「Agent Harness（Agent 马具/控制系统）」这一核心概念，强调 Agent 需在独立沙盒中运行以确保可靠性。文章重点推介了由硅谷华人团队开发的 CREAO 平台，该产品定位为「全球首个面向普通用户的 AI Agent Harness」。CREAO 通过三大核心步骤解决了传统 Agent 部署难、逻辑构建复杂及运行不稳定的痛点：1. 实时编写代码并连接 300+ 软件；2. 将跑通的流程「固化」为确定性执行的智能体；3. 云端异步执行，无需保持设备在线。CREAO 强调「对话结束，构建的工具永存」，通过全栈自研架构实现了从文本输出到落地运行的跨越，展示了 AI Agent 从技术驱动向体验驱动的范式转换。",
+  "mainPoints": [
+    {
+      "point": "Agent Harness 是实现可靠 AI Agent 的关键基础设施。",
+      "explanation": "Harness 指代提示词构建、工具调用、状态管理及安全检查等外围控制系统，是确保 AI 能在大规模场景下持续、稳定工作的核心。"
+    },
+    {
+      "point": "CREAO 通过「流程固化」解决了 LLM 的幻觉与不稳定性问题。",
+      "explanation": "用户通过自然语言调通流程后，CREAO 将其转化为确定性的执行代码，后续运行不再依赖实时推理，从而保证 100% 的执行准确率。"
+    },
+    {
+      "point": "消费级 AI Agent 的核心竞争力在于降低门槛与云端持久化。",
+      "explanation": "CREAO 支持零部署使用及云端「影分身」运行，用户关闭浏览器后任务仍能按计划执行，实现了 AI 能力与用户工作流的深度集成。"
+    }
+  ],
+  "keyQuotes": [
+    "每个 Agent 请求都应该跑在独立的沙盒环境里。",
+    "Harness 指代的是让 AI 能持续可靠地大规模长期工作的外围控制系统。",
+    "The conversation ends. What you built doesn't.",
+    "AI Agent 赛道正在经历从「技术驱动」到「体验驱动」的范式转换。"
+  ],
+  "tags": [
+    "Anthropic",
+    "Managed Agents",
+    "Agent Harness",
+    "CREAO",
+    "AI Agent"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 15,
+  "score": 88,
+  "wordCount": 3604,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775718482000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 07:08:02"
+}
