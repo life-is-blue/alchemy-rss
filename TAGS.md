@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-09 08:11:26 | [返回首页](/README.md)
+**更新时间**: 2026-04-09 11:00:37 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10985)
+- [AI & 大模型](#ai-llm) (10988)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (760)
+- [前端与全栈](#frontend-fullstack) (761)
 - [DevOps](#devops) (495)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5373)
+- [其他](#other) (5374)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Meta-的新模型-Muse-Spark-与-meta.ai-聊天中的有趣工具](https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything) - AI 精选
 - [扩展托管智能体：将“大脑”与“双手”解耦](https://www.anthropic.com/engineering/managed-agents) - AI 精选
 - [企业-AI-的下一阶段](https://openai.com/index/next-phase-of-enterprise-ai) - AI 精选
 - [Anthropic-的-Project-Glasswing——将-Claude-Mythos-限制在安全研究人员范围内——在我看来很有必要](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) - AI 精选
@@ -36,14 +37,13 @@
 - [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
 - [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
+- [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
-- [面向-AI-智能体的-Qdrant-Skills](https://qdrant.tech/blog/qdrant-skills-release/) - AI 精选
 
-- [查看全部 10985 篇...](/details/tags/ai-llm.md)
+- [查看全部 10988 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 760 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 761 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5373 篇...](/details/tags/other.md)
+- [查看全部 5374 篇...](/details/tags/other.md)
 
 

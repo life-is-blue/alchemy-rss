@@ -1,7 +1,15 @@
-> **更新时间**: 2026-04-09 08:11:27 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-09 11:00:37 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
+
+
+
+### [从混乱到编排：真正有效的多智能体协同模式-—-Sandipan-Bhaumik](https://www.youtube.com/watch?v=2czYyrTzILg)
+
+2026-04-08 10:23:12 | 标签: 多智能体系统, 分布式系统, 编排模式, 状态管理, 容错性
+
+> 专家 Sandipan Bhaumik 指出，从单智能体扩展到多智能体系统，核心焦点已从 AI 提示词工程转向分布式系统工程。他强调了竞态条件和状态损坏等常见陷阱，并主张在受监管行业中，应优先采用集中式“编排”（Orchestration）而非事件驱动的“协同”（Choreography）。文章详细阐述了关键架构模式：利用不可变状态快照防止数据不一致，强制执行智能体间严格的数据契约，并实施熔断器（Circuit Breakers）和 Saga 模式等弹性机制以确保事务完整性。最后，文章提供了一个利用 Databricks、LangGraph 和 Unity Catalog 构建的生产级参考架构...
 
 
 
@@ -25,9 +33,7 @@
 
 ### [为什么以及如何沙箱化-AI-生成的代码？——-Harshil-Agrawal，Cloudflare](https://www.youtube.com/watch?v=AHtGAgQ0Q_Q)
 
-2026-04-03 15:48:46 | 标签: AI 安全, 沙箱, V8 Isolates, 容器安全, 能力安全
-
-> 来自 Cloudflare 的 Harshil Agrawal 探讨了运行 AI 生成代码（他将其定义为“来自互联网的不可信代码”）所带来的关键安全挑战。他指出了三个主要的威胁向量：幻觉（非恶意错误）、过度执行（意外的数据暴露）和提示词注入（恶意操纵）。为了缓解这些风险，他提倡采用“能力安全”机制——即一种仅授予最小必要权限的白名单方法。文章详细对比了 V8 Isolates（轻量级、亚毫秒级启动、无文件系统）与容器（完整的 Linux 环境、进程管理、更高的开销），并提供了决策矩阵以及构建安全 AI 应用的八项核心原则，例如密钥代理和严格的用户间隔离。
+2026-04-03 15:48:46
 
 
 
@@ -313,7 +319,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -325,7 +331,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
