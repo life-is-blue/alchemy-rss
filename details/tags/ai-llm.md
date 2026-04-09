@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-09 11:00:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-09 12:46:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -8,9 +8,7 @@
 
 ### [Meta-的新模型-Muse-Spark-与-meta.ai-聊天中的有趣工具](https://simonwillison.net/2026/Apr/8/muse-spark/#atom-everything)
 
-2026-04-08 23:07:44 | 标签: Meta AI, Muse Spark, 视觉定位, 代码解释器, LLM 工具
-
-> Meta 发布了 Muse Spark，这是一款足以与 GPT-5.4 和 Gemini 3.1 Pro 竞争的前沿模型。虽然目前仅提供私有 API，但用户已可通过 meta.ai 进行体验。技术专家 Simon Willison 对该模型的能力进行了分析，发现了一套强大的隐藏工具集。其核心功能包括：Python 代码解释器（运行 Python 3.9）、用于精确对象定位（边界框和点）的“视觉定位”工具，以及生成子智能体的能力。该模型在生成和分析 SVG/HTML 工件以及执行复杂的视觉计数任务（例如识别拥挤图像中的单个鹈鹕）方面表现出极高的水平。
+2026-04-08 23:07:44
 
 
 
@@ -11548,9 +11546,7 @@
 
 ### [AI-新闻-Meta-Superintelligence-Labs-发布-Muse-Spark，这是其全新技术栈上的首个前沿模型](https://www.latent.space/p/ainews-meta-superintelligence-labs)
 
-2026-04-08 23:23:36 | 标签: Meta Superintelligence Labs, Muse Spark, 前沿模型, AI 基础设施, LLM
-
-> Meta Superintelligence Labs (MSL) 正式宣布推出 Muse Spark，标志着其下一代“前沿”模型的首次亮相。此次发布意义重大，因为它代表了首个在为超智能规模计算而设计的全面重构基础设施栈上训练的模型。虽然具体的性能基准正在陆续公布，但公告强调，更大规模的模型目前正在开发中，且基础设施也在同步扩展以匹配需求。目前已向部分合作伙伴开放私有 API 预览，这表明其最先进的能力正转向更可控、更侧重于企业的部署方式。
+2026-04-08 23:23:36
 
 
 
@@ -35190,9 +35186,7 @@
 
 ### [让-AI-真正学会推理而非仅仅猜测的突破性技术](https://hackernoon.com/the-breakthrough-that-helps-ai-actually-reason-not-just-guess?source=rss)
 
-2026-04-08 16:16:49 | 标签: 思维链 (Chain-of-Thought), LLM, 推理, 提示词工程, PaLM
-
-> 本文介绍了“思维链提示词”这一简单而强大的方法，旨在解锁大语言模型（LLM）的推理能力。通过提供包含中间推理步骤（即“思维链”）的输入输出示例，LLM 能够将算术、常识和符号推理等复杂问题分解为可处理的步骤。作者证明了这种能力是一种涌现特性，主要出现在参数规模超过 1000 亿的模型中。实验表明，该方法显著优于标准的少样本提示（few-shot prompting），在 GSM8K 等基准测试中达到了领先水平，并且在不同的标注者和提示词变体下表现稳健。研究强调，思维链提示词为理解模型行为提供了一个可解释的窗口，并有助于模型泛化到更长、未见过的推理任务中。
+2026-04-08 16:16:49
 
 
 

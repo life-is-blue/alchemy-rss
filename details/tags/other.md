@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-09 11:00:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-09 12:46:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -31759,9 +31759,7 @@
 
 ### [从混乱到编排：真正有效的多智能体协同模式-—-Sandipan-Bhaumik](https://www.youtube.com/watch?v=2czYyrTzILg)
 
-2026-04-08 10:23:12 | 标签: 多智能体系统, 分布式系统, 编排模式, 状态管理, 容错性
-
-> 专家 Sandipan Bhaumik 指出，从单智能体扩展到多智能体系统，核心焦点已从 AI 提示词工程转向分布式系统工程。他强调了竞态条件和状态损坏等常见陷阱，并主张在受监管行业中，应优先采用集中式“编排”（Orchestration）而非事件驱动的“协同”（Choreography）。文章详细阐述了关键架构模式：利用不可变状态快照防止数据不一致，强制执行智能体间严格的数据契约，并实施熔断器（Circuit Breakers）和 Saga 模式等弹性机制以确保事务完整性。最后，文章提供了一个利用 Databricks、LangGraph 和 Unity Catalog 构建的生产级参考架构...
+2026-04-08 10:23:12
 
 
 
@@ -32245,11 +32243,11 @@
 
 
 
-### [设计流程已死：Anthropic-设计负责人-Jenny-Wen-谈-AI-时代的设计变革](https://baoyu.io/blog/2026-03-01/jenny-wen-design-process)
+### [被封杀当晚，OpenAI-拿到了相同条款——Amodei-首次专访揭开-Anthropic-与五角大楼冲突内幕](https://baoyu.io/blog/2026-02-28/anthropic-ceo-trump-pentagon-clash)
 
-2026-03-02T00:00:00.000Z
+2026-02-28T00:00:00.000Z
 
-> Anthropic Claude 设计负责人 Jenny Wen 做客 Lenny's Podcast，聊了设计流程为什么走到尽头、在 AI 实验室做设计是什么感受、Co-work 怎么做出来的、以及现在招什么样的设计师。设计师做设计稿的时间从 60-70% 压缩到 30-40%，多出来的时间用于和工程师配对、甚至自己写代码。
+> 2026 年 2 月 27 日，特朗普点名封杀 Anthropic，五角大楼将其列为「国家安全供应链风险」。当晚 CEO Dario Amodei 首次面对镜头回应。而同一个晚上，OpenAI 拿到了包含完全相同限制条款的合同。
 
 
 

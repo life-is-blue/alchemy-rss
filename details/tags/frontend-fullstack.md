@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-09 11:00:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-09 12:46:01 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -638,9 +638,7 @@
 
 ### [WebCodecs-手册：浏览器中的原生视频处理](https://www.freecodecamp.org/news/the-webcodecs-handbook-native-video-processing-in-the-browser/)
 
-2026-04-08 20:35:45 | 标签: WebCodecs, 视频处理, Web API, 前端开发, 硬件加速
-
-> 本手册深入探讨了 WebCodecs API，这是一个为前端开发者提供的强大工具，无需昂贵的服务器端基础设施或笨重的非原生库即可处理视频。文章涵盖了视频工程的基本概念（包括帧、编解码器（h264、vp9、av1）和容器），并详细解释了核心 WebCodecs 接口：VideoFrame、EncodedVideoChunk、VideoEncoder 和 VideoDecoder。此外，文章还阐述了封装（muxing）和解封装（demuxing）的关键作用，并提供了使用实用库构建具有帧级精度的视频播放器和转换器的代码示例。
+2026-04-08 20:35:45
 
 
 
