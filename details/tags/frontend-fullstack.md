@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 04:15:38 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 06:12:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -636,6 +636,30 @@
 
 
 
+### [Cloudflare-推出-EmDash：定位为-WordPress-接班人的-TypeScript-内容管理系统](https://www.infoq.com/news/2026/04/cloudflare-emdash-wordpress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-04-09 20:39:00 | 标签: Cloudflare, EmDash, WordPress, TypeScript, Astro
+
+> Cloudflare 近期预览了 EmDash，这是一款被称为“WordPress 精神继任者”的全新开源内容管理系统。EmDash 使用 TypeScript 构建，由 Astro 6.0 驱动，利用无服务器架构在边缘平台运行。它通过使用动态工作器（Dynamic Workers）将插件隔离在安全沙箱中，实现了重大的安全变革，从而解决了 WordPress 生态系统中普遍存在的漏洞问题。该平台是 AI 原生的，内置了 MCP 服务器集成和智能体支持。尽管它提供了从 WordPress 迁移的路径，但围绕平台锁定风险及其目前缺乏无代码网站构建器的问题引发了争议，WordPress 联合创始人 ...
+
+
+
+### [逃离分叉：Meta-如何在-50-多个用例中实现-WebRTC-的现代化](https://engineering.fb.com/2026/04/09/developer-tools/escaping-the-fork-how-meta-modernized-webrtc-across-50-use-cases/)
+
+2026-04-09 16:32:47 | 标签: WebRTC, C++, 工程实践, 技术债务, Monorepo
+
+> 本文记录了 Meta 如何战略性地摆脱长期以来难以维护和升级的 WebRTC 分叉版本。为了避免“分叉陷阱”并同时支持 50 多个生产用例，工程团队实施了双栈架构。该系统使用垫片层在应用程序代码和两个共存的 WebRTC 版本之间代理调用，从而实现安全的 A/B 测试和运行时版本调度。通过自动化的命名空间重构和基于模板的调度，团队解决了 C++ 符号冲突和二进制大小限制等关键技术难题。此外，团队在独立的仓库中建立了稳健的特性分支流水线，以促进在 Chromium 上游版本基础上的持续变基（rebasing）。此次现代化改造带来了显著的性能提升、安全性增强，并建立了一种可持续的工作流，在保持内部...
+
+
+
+### [如何使用-Next.js、Express-和-Stripe-Connect-构建在线市场](https://www.freecodecamp.org/news/build-online-marketplace-with-next-js-express-stripe-connect/)
+
+2026-04-09 15:49:49 | 标签: Next.js, Express, Stripe Connect, TypeScript, 市场开发
+
+> 本手册提供了开发完整多供应商市场的逐步指南。其架构显著特点是“无数据库化”，利用 Stripe 作为产品、价格和客户记录的主要数据存储。关键实现包括通过 Stripe 托管流程进行商家入驻、在关联账户上进行产品管理，以及支持一次性购买和循环订阅的稳健结账系统。此外，还涵盖了生产环境的关键需求，如用于异步事件同步的 Webhook 处理以及客户账单门户的集成。
+
+
+
 ### [Aspire-13.2-发布：扩展-CLI、TypeScript-AppHost-预览及仪表盘改进](https://www.infoq.com/news/2026/04/aspire-13-2-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-04-09 08:30:00
@@ -816,13 +840,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -972,13 +996,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2472,13 +2496,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4182,13 +4206,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

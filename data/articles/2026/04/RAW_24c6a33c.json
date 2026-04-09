@@ -1,0 +1,58 @@
+{
+  "id": "RAW_24c6a33c",
+  "title": "Cloudflare 推出 EmDash：定位为 WordPress 接班人的 TypeScript 内容管理系统",
+  "url": "https://www.infoq.com/news/2026/04/cloudflare-emdash-wordpress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-09 20:39:00",
+  "author": "Renato Losio",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare recently <a href=\"https://blog.cloudflare.com/emdash-wordpress/\">announced the preview of EmDash</a>, a new open-source CMS it describes as a \"spiritual successor to WordPress\" Designed to rebuild the CMS model around a serverless, developer-focused architecture, EmDash includes AI-native features, developer tooling, and migration paths from WordPress, sparking debate across the WordPress and broader CMS community about architecture choices, security trade-offs, and potential platform lock-in.</p>\n   <p>Built in TypeScript and powered by <a href=\"https://www.infoq.com/news/2026/02/astro-v6-beta-cloudflare/\">Astro 6.0</a>, EmDash runs on edge platforms and isolates plugins in secure sandboxes (<a href=\"https://developers.cloudflare.com/dynamic-workers/\">Dynamic Workers</a>) with explicit permissions. This aims to address the long-standing security risks posed by WordPress plugins while enabling automatic scaling and pay-per-use compute.</p>\n   <p><a href=\"https://www.linkedin.com/in/mattietk/\">Matt \"TK\" Taylor</a>, senior product manager at Cloudflare, and <a href=\"https://www.linkedin.com/in/mattkane/\">Matt Kane</a>, senior principal systems engineer at Cloudflare, explain the reason behind the project:</p>\n   <blockquote>\n    <p>WordPress powers over 40% of the Internet. It is a massive success that has enabled anyone to be a publisher, and created a global community of WordPress developers. But the WordPress open source project will be 24 years old this year. Hosting a website has changed dramatically during that time. When WordPress was born, AWS EC2 didn’t exist.</p>\n   </blockquote>\n   <p>Cloudflare argues that WordPress plugin security is weakened because plugins typically have full access to a site's files and database, and that about 96% of WordPress security vulnerabilities stem from third-party plugins. While a vulnerable or malicious plugin can compromise an entire website, Taylor and Kane explain how EmDash addresses this differently:</p>\n   <blockquote>\n    <p>Plugins are securely sandboxed and can run in their own isolate, via Dynamic Workers, solving the fundamental security problem with the WordPress plugin architecture. And under the hood, EmDash is powered by Astro, the fastest web framework for content-driven websites.</p>\n   </blockquote>\n   <p>With built-in agent support, MCP server integration, and programmable interfaces, EmDash is currently a v0.1.0 developer preview and can be deployed to Cloudflare or any Node.js server. The hyperscaler claims that while EmDash aims to be compatible with WordPress, no WordPress code was used in its creation, allowing for a more permissive open source license.</p>\n   <p>By design, EmDash themes are standard Astro projects, covering pages, layouts (shared HTML structure), components, styles, and a seed file, a JSON file that tells the CMS what content types and fields to create. EmDash provides <a href=\"https://www.x402.org/\">x402 support</a>, enabling site owners to charge AI agents or any HTTP client for content access on a pay-per-use basis, with no subscription infrastructure or custom engineering required.</p>\n   <p><img alt=\"Cloudflare EmDash\" class=\"zoom-image\" data-src=\"https://www.infoq.com/news/2026/04/cloudflare-emdash-wordpress/news/2026/04/cloudflare-emdash-wordpress/en/resources/4image4-1775659124791.png\" style=\"width:100%;height:1678px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/cloudflare-emdash-wordpress/en/resources/4image4-1775659124791.png\" rel=\"share\"></p>\n   <p><em>Source: Cloudflare blog</em></p>\n   <p>EmDash is designed to be managed programmatically by AI agents through three built-in primitives: <a href=\"https://agentskills.io/home\">Agent Skills</a> (to describe CMS capabilities, plugin hooks, and guidance on structuring plugins or porting WordPress themes), <a href=\"https://github.com/emdash-cms/emdash/blob/main/docs/src/content/docs/reference/cli.mdx\">EmDash CLI</a> for programmatic interaction, and a built-in MCP server that exposes the same capabilities as the Admin UI to any MCP-compatible client.</p>\n   <p>While acknowledging some technical merits, Matt Mullenweg, co-founder of WordPress and CEO of Automattic, suggests that \"EmDash was created to sell more Cloudflare services,\" notes that its plugin security only works on Cloudflare, and argues it is unlikely to be a true \"spiritual successor.\" Mullenweg <a href=\"https://ma.tt/2026/04/emdash-feedback/\">writes</a> on his personal blog:</p>\n   <blockquote>\n    <p>There’s a new CMS every other day. And that’s great! I love building CMSes and I totally get why other people do, to (...) Some day, there may be a spiritual successor to WordPress that is even more open. When that happens, I hope we learn from it and grow together. (...) The closest thing I’ve seen to a spiritual successor isn’t another CMS, it’s been OpenClaw.</p>\n   </blockquote>\n   <p>As EmDash was announced on April 1st, some developers initially questioned whether it was an <a href=\"https://www.reddit.com/r/CloudFlare/comments/1s9p9yh/introducing_emdash_the_spiritual_successor_to\">April Fool's joke</a>. On a popular <a href=\"https://news.ycombinator.com/item?id=47602832\">Hacker News thread</a>, some users see EmDash as \"the polar opposite of the direction CMSs need to go\", while user <em>earthlingdavey</em> comments:</p>\n   <blockquote>\n    <p>I've worked with WordPress on and off for 10 years, and I'm convinced that this project has got 2 things absolutely spot on. TypeScript and Worker plugins.</p>\n   </blockquote>\n   <p>One common concern is that EmDash includes a graphical interface for managing content but does not yet offer a point-and-click website builder like those found in many modern CMS platforms. Discussing \"<a href=\"https://www.searchenginejournal.com/6-reasons-why-cloudflares-emdash-cant-compete-with-wordpress/571053/\">6 Reasons Why Cloudflare’s EmDash Can’t Compete With WordPress</a>,\" <a href=\"https://www.linkedin.com/in/martinibuster/\">Roger Montti</a>, search marketing consultant, summarizes:</p>\n   <blockquote>\n    <p>I was quite excited to read Cloudflare’s announcement about a \"spiritual successor\" to WordPress, but the more I read, the more it became apparent that EmDash is not the solution I am looking for (...) Hopefully, someday it will be a viable competitor to WordPress, but EmDash is not that right now.</p>\n   </blockquote>\n   <p>EmDash is open source and available on GitHub under an <a href=\"https://github.com/emdash-cms/emdash\">MIT license</a>.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Introduces EmDash: TypeScript CMS Positioned as WordPress Successor\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Renato Losio\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/cloudflare-emdash-wordpress/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775767140000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 发布了 EmDash，这是一个基于 Astro 和无服务器架构的开源 TypeScript 内容管理系统，旨在通过解决 WordPress 的遗留安全和扩展性问题来推动 Web 现代化。",
+  "oneSentenceSummary": "Cloudflare 发布了 EmDash，这是一个基于 Astro 和无服务器架构的开源 TypeScript 内容管理系统，旨在通过解决 WordPress 的遗留安全和扩展性问题来推动 Web 现代化。",
+  "summary": "Cloudflare 近期预览了 EmDash，这是一款被称为“WordPress 精神继任者”的全新开源内容管理系统。EmDash 使用 TypeScript 构建，由 Astro 6.0 驱动，利用无服务器架构在边缘平台运行。它通过使用动态工作器（Dynamic Workers）将插件隔离在安全沙箱中，实现了重大的安全变革，从而解决了 WordPress 生态系统中普遍存在的漏洞问题。该平台是 AI 原生的，内置了 MCP 服务器集成和智能体支持。尽管它提供了从 WordPress 迁移的路径，但围绕平台锁定风险及其目前缺乏无代码网站构建器的问题引发了争议，WordPress 联合创始人 Matt Mullenweg 批评其为推销 Cloudflare 服务的工具。",
+  "mainPoints": [
+    {
+      "point": "EmDash 利用现代无服务器架构解决传统 CMS 的安全问题。",
+      "explanation": "通过使用动态工作器（Dynamic Workers）对具有明确权限的插件进行沙箱隔离，EmDash 旨在消除通常由第三方 WordPress 插件引起的 96% 的安全漏洞。"
+    },
+    {
+      "point": "该 CMS 构建在高性能、以开发者为中心的架构之上。",
+      "explanation": "EmDash 利用 TypeScript 和 Astro 6.0，专注于速度和开发者体验，将主题视为标准的 Astro 项目，并支持通过 CLI 和 MCP 进行程序化管理。"
+    },
+    {
+      "point": "AI 原生集成是该平台设计的核心支柱。",
+      "explanation": "凭借对 AI 智能体、MCP 服务器和 x402 按次付费内容访问的内置支持，EmDash 旨在迎接 AI 智能体直接与 Web 内容交互的未来。"
+    },
+    {
+      "point": "行业反应在架构赞誉与平台锁定担忧之间呈现两极分化。",
+      "explanation": "尽管开发者称赞其转向 TypeScript 和 Workers 的举措，但像 Matt Mullenweg 这样的批评者认为该项目旨在推广 Cloudflare 锁定，且缺乏 WordPress 网站构建器的易用性。"
+    }
+  ],
+  "keyQuotes": [
+    "WordPress 驱动着互联网上超过 40% 的网站……但 WordPress 开源项目今年将满 24 岁。在这段时间里，托管网站的方式已经发生了翻天覆地的变化。",
+    "插件被安全地沙箱化，并通过动态工作器在各自的隔离区中运行，从而解决了 WordPress 插件架构中根本性的安全问题。",
+    "EmDash 提供 x402 支持，使网站所有者能够向 AI 智能体或任何 HTTP 客户端按次收费，以获取内容访问权限。",
+    "我所见过的最接近精神继任者的东西不是另一个 CMS，而是 OpenClaw。"
+  ],
+  "tags": [
+    "Cloudflare",
+    "EmDash",
+    "WordPress",
+    "TypeScript",
+    "Astro"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 748,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775767140000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 20:39:00"
+}

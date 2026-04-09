@@ -1,15 +1,21 @@
-> **更新时间**: 2026-04-09 11:00:37 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 06:12:28 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Hex-如何构建-AI-智能体：让智能体像人类数据分析师一样进行推理-|-Izzy-Miller，AI-工程师](https://www.youtube.com/watch?v=Xyh1EqcjGME)
+
+2026-04-09 16:00:54 | 标签: AI 智能体, 数据分析, LLM 编排, 评估系统, 语义建模
+
+> 在本期访谈中，Hex 的 AI 工程师 Izzy Miller 探讨了构建复杂数据智能体的架构与挑战。他详细介绍了 Hex 从简单的 SQL 生成到拥有 10 万 token 工具集的并行多智能体系统的发展历程。讨论强调了数据智能体与编程智能体相比所面临的独特困难，特别是在“正确性”的模糊性以及分析的迭代性方面。Miller 介绍了 Hex 的内部评估系统“Shoe box”，以及一项开创性的 90 天模拟实验，旨在测试智能体如何在长周期内积累专业直觉和知识。他强调了上下文管理、语义建模以及“人在回路”反馈系统对于保持数据准确性的重要性。
+
+
+
 ### [从混乱到编排：真正有效的多智能体协同模式-—-Sandipan-Bhaumik](https://www.youtube.com/watch?v=2czYyrTzILg)
 
-2026-04-08 10:23:12 | 标签: 多智能体系统, 分布式系统, 编排模式, 状态管理, 容错性
-
-> 专家 Sandipan Bhaumik 指出，从单智能体扩展到多智能体系统，核心焦点已从 AI 提示词工程转向分布式系统工程。他强调了竞态条件和状态损坏等常见陷阱，并主张在受监管行业中，应优先采用集中式“编排”（Orchestration）而非事件驱动的“协同”（Choreography）。文章详细阐述了关键架构模式：利用不可变状态快照防止数据不一致，强制执行智能体间严格的数据契约，并实施熔断器（Circuit Breakers）和 Saga 模式等弹性机制以确保事务完整性。最后，文章提供了一个利用 Databricks、LangGraph 和 Unity Catalog 构建的生产级参考架构...
+2026-04-08 10:23:12
 
 
 
@@ -319,7 +325,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -331,7 +337,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

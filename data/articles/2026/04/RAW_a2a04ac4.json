@@ -1,0 +1,53 @@
+{
+  "id": "RAW_a2a04ac4",
+  "title": "发布：asgi-gzip 0.3",
+  "url": "https://simonwillison.net/2026/Apr/9/asgi-gzip/#atom-everything",
+  "date": "2026-04-09 03:54:40",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">9th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label release\">Release</span> <span class=\"beat-title\"><a href=\"https://github.com/simonw/asgi-gzip/releases/tag/0.3\">asgi-gzip 0.3</a></span> <span class=\"beat-commit\">— gzip middleware for ASGI applications, extracted from Starlette</span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>I ran into trouble deploying a new feature using <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events\">SSE</a> to a production Datasette instance, and it turned out that instance was using <a href=\"https://github.com/simonw/datasette-gzip\">datasette-gzip</a> which uses <a href=\"https://github.com/simonw/asgi-gzip\">asgi-gzip</a> which was incorrectly compressing <code>event/text-stream</code> responses.</p>\n      <p><code>asgi-gzip</code> was extracted from Starlette, and has <a href=\"https://simonwillison.net/2022/Apr/28/issue-on-changes/\">a GitHub Actions scheduled workflow</a> to check Starlette for updates that need to be ported to the library... but that action had stopped running and hence had missed <a href=\"https://github.com/Kludex/starlette/commit/a9a8dab0cc3cbd05dca37650fc392717b9fe5bbf\">Starlette's own fix</a> for this issue.</p>\n      <p>I ran the workflow and integrated the new fix, and now <code>datasette-gzip</code> and <code>asgi-gzip</code> both correctly handle <code>text/event-stream</code> in SSE responses.</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4101/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 发布了 asgi-gzip 0.3，通过移植 Starlette 的上游修复程序，解决了影响服务器发送事件（SSE）的压缩错误。",
+  "oneSentenceSummary": "Simon Willison 发布了 asgi-gzip 0.3，通过移植 Starlette 的上游修复程序，解决了影响服务器发送事件（SSE）的压缩错误。",
+  "summary": "此版本修复了一个关键问题：asgi-gzip 错误地压缩了 `text/event-stream` 响应，导致服务器发送事件（SSE）功能失效。作者在为 Datasette 部署新功能时发现了该错误。在意识到用于跟踪上游变更的 GitHub Actions 定时工作流已停止运行后，作者从 Starlette 移植了修复程序。此次更新确保了 asgi-gzip 和 datasette-gzip 现在都能正确处理流式响应。",
+  "mainPoints": [
+    {
+      "point": "修复服务器发送事件（SSE）的错误压缩问题。",
+      "explanation": "该中间件此前尝试压缩 `text/event-stream` 响应，这干扰了 SSE 的实时流式传输特性。"
+    },
+    {
+      "point": "维护上游同步工作流的重要性。",
+      "explanation": "该错误之所以持续存在，是因为旨在从 Starlette 移植修复程序的 GitHub Action 定时任务静默失败，这凸显了监控自动化维护任务的必要性。"
+    },
+    {
+      "point": "ASGI 中间件的提取与可移植性。",
+      "explanation": "本文展示了从大型框架（如 Starlette）中提取特定组件（如 Gzip 中间件）并在专用生态系统（如 Datasette）中使用的实用价值。"
+    }
+  ],
+  "keyQuotes": [
+    "asgi-gzip 错误地压缩了 event/text-stream 响应。",
+    "该工作流已停止运行，因此错过了 Starlette 针对此问题的修复。",
+    "我运行了该工作流并集成了新的修复程序，现在 datasette-gzip 和 asgi-gzip 都能正确处理 SSE 响应中的 text/event-stream 了。"
+  ],
+  "tags": [
+    "ASGI",
+    "Python",
+    "Gzip",
+    "SSE",
+    "Starlette"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 110,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775706880000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-09 03:54:40"
+}
