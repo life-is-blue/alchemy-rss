@@ -1,0 +1,58 @@
+{
+  "id": "RAW_3605147",
+  "title": "E12.高阳：会思考的芦苇，会行动的机器｜北坡计划",
+  "url": "https://www.xiaoyuzhoufm.com/episode/69d11681e2c8be3155602763",
+  "date": "2026-04-08 16:00:00",
+  "author": "信号与噪声",
+  "siteName": "信号与噪声",
+  "content": "<html>\n <head></head>\n <body>\n  <p><strong><span>🎙️ 【本期简介】</span></strong></p>\n  <span></span>\n  <p><span>开年以来，千寻智能（SpiritAI）已接连完成两轮融资，累计金额达 30 亿，估值破百亿。</span></p>\n  <span></span>\n  <p><span>具身智能正在快速成为资本与市场的共识。</span></p>\n  <span></span>\n  <p><span>当新的热点与叙事不断涌现，高阳的关注点却不在外部变化，而始终落在内部同一命题上：如果要实现具身智能的通用基础模型，下一步面临的问题会是什么？如何把问题真正解决？</span></p>\n  <span></span>\n  <p><span>北坡计划第一期，我们邀请了千寻智能联合创始人、清华大学助理教授高阳，围绕具身智能即将进入的“GPT-3 时刻”展开讨论。从数据、模型到系统能力，拆解这一判断背后的技术前提与未来展望；我们也把问题拉回个体，高阳是我们所有受邀嘉宾中，语速最慢的。他说：人不过是会思考的芦苇，不疾不徐，不试图成为某种“标准答案”，而是在外部价值选择与个体快乐之间不断回到自身，坚持内在节奏，展开属于自己的生命力。</span></p>\n  <span></span>\n  <p><span>👤 【</span><strong><span>嘉宾介绍】</span></strong></p>\n  <span></span>\n  <figure>\n   <img src=\"https://image.jido.dev/20260408221733_lj9Z1WhdWu3Oo9b2II3h3EuZjoRO.JPG\">\n  </figure>\n  <span></span>\n  <p><strong><span>高阳：</span></strong><span>千寻智能联合创始人兼首席科学家，清华大学交叉信息研究院助理教授。</span></p>\n  <span></span>\n  <p><span>本硕毕业于清华大学，博士毕业于加州大学伯克利分校（UC Berkeley）。他是全球具身智能与视觉-语言-动作模型（VLA）领域的顶尖青年学者。</span></p>\n  <span></span>\n  <p><strong><span>🕒 &nbsp;【精选时间戳】</span></strong></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"274\">04:34</a></span></strong><span> 24 年初谈具身大模型，连学生都不信</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"435\">07:15</a></span></strong><span> ChatGPT 出来那一刻，他在伯克利的 AI 价值观被重塑了</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"517\">08:37</a></span></strong><span> 既然大语言这条路走通了，具身智能为什么不行？</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"791\">13:11</a></span></strong><span> 两年前预测要 5–8 年，现在的判断提前到了 27 年</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"1072\">17:52</a></span></strong><span> 一千万小时的数据，6000 个人，几个月。这件事中国有经验</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"1782\">29:42</a></span></strong><span> 评价一个具身模型，今天最重要的指标只有一个：泛化性</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"1968\">32:48</a></span></strong><span> 同门师兄弟 Sergey 和他，技术路径上的一致与分歧</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"2366\">39:26</a></span></strong><span> 未来的机器人是一个\"多频谱\"系统</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"2916\">48:36</a></span></strong><span> 如果有长生不老药，还会做一辈子机器人吗？</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"3991\">01:06:31</a></span></strong><span> 给科学家创业者：什么是信号，什么是噪声？</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"4114\">01:08:34</a></span></strong><span> 老子的\"俭\"不是节俭，是不耗散</span></p>\n  <span></span>\n  <p><strong><span><a class=\"timestamp\" data-timestamp=\"4292\">01:11:32</a></span></strong><span> ”价值还是快乐？我选择快乐“</span></p>\n  <span></span>\n  <p><strong><span>📚 【相关提及】（这次有点多，但都很有价值）</span></strong></p>\n  <span></span>\n  <p><em><span>关于技术：</span></em></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><strong><span>Scaling Law：</span></strong><span>缩放定律（OpenAI 于 2019 年提出）。指模型性能会随计算量和数据的增加而规律性提升，具身智能正在探索其在物理数据上的边界。</span></li>\n   <span> </span>\n   <li><strong><span>VLA (Vision-Language-Action)：</span></strong><span>视觉-语言-动作模型。一种端到端的具身智能架构，能让机器人“看懂”环境、“听懂”指令并直接输出物理动作。</span></li>\n   <span> </span>\n   <li><strong><span>World Model：世界模型。</span></strong><span>能够理解并预测物理世界下一个状态的 AI 模型，未来有望在仿真环境中生成海量机器人训练数据。</span></li>\n   <span> </span>\n   <li><strong><span>遥操：</span></strong><span>远程操作（Teleoperation）。指人类通过设备远程控制机器人完成动作，当前市面上部分看似智能的机器人演示实则依赖此技术。</span></li>\n   <span> </span>\n   <li><strong><span>Locomotion：</span></strong><span>运动控制。机器人的底层移动与平衡能力，控制频率极高，类似于生物的本能反射。</span></li>\n   <span> </span>\n   <li><strong><span>Transformer</span></strong><span>：目前大模型通用的底层架构 。它像是一个高度灵敏的“注意力转换器”，能够捕捉数据序列中跨度极大的关联信息，是 ChatGPT 和具身智能大脑的共同基石 。</span></li>\n   <span> </span>\n   <li><strong><span>端到端 (End-to-End)</span></strong><span>：一种“直达”的技术方案。指模型直接从原始输入（如摄像头画面）输出到最终结果（如机械臂动作），中间不经过人为设定的繁琐规则，让机器自己学习其中的映射规律。</span></li>\n   <span> </span>\n   <li><strong><span>泛化性 (Generalization)</span></strong><span>：衡量具身智能含金量的核心指标。指 AI 在面对从没见过的环境或任务时，依然能表现出正确判断的能力，而不是只能机械地重复在实验室里练好的动作。</span></li>\n   <span> </span>\n   <li><strong><span>Universal Function Approximator：</span></strong><span>通用函数拟合器。神经网络的基础数学理论，指拥有隐层的神经网络可以拟合世界上任何连续函数。</span></li>\n   <span> </span>\n   <li><strong><span>CRISPR </span></strong><span>：基因编辑技术。节目中借此畅想未来人类可能通过修改基因大幅延长寿命的极端科幻场景。</span></li>\n   <span> </span>\n   <li><strong><span>PR2 (PR two)</span></strong><span>：一款经典的双臂科研机器人，是早期学者进行机器人抓取与控制实验的重要平台。</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><em><span>关于公司：</span></em></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><strong><span>Generalist：</span></strong><span>全球具身智能前沿的初创公司，在真实物理世界的数据收集量上处于行业领先地位。4月2日最新发布的Demo，已宣称拥有 50w 小时数据。</span></li>\n   <span> </span>\n   <li><strong><span>Physical Intelligence (PI)</span></strong><span>：美国顶尖的具身智能初创公司，强调具身智能模型“通用性”。</span></li>\n   <span> </span>\n   <li><strong><span>World Labs：</span></strong><span>由李飞飞创立的 AI 初创公司，正转型投入具身智能与“空间智能”的研发。</span></li>\n   <span> </span>\n   <li><strong><span>AMI Labs：</span></strong><span>Yann LeCun 创办，致力于探索更具通用性的人工智能架构。</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><em><span>关于人：</span></em></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><strong><span>Sergey Levine：</span></strong><span>加州大学伯克利分校教授、Physical Intelligence 联合创始人，被高阳形容为机器人领域的“活体维基百科”。</span></li>\n   <span> </span>\n   <li><strong><span>Peter Thiel：</span></strong><span>彼得·蒂尔。硅谷著名投资人、PayPal联合创始人，也是著名的《从零到一》作者。</span></li>\n   <span> </span>\n   <li><strong><span>Jitendra Malik</span></strong><span>：加州大学伯克利分校计算机视觉泰斗。他关于“动物为什么需要视觉”的进化论视角，启发了高阳转向机器人领域的研究。</span></li>\n   <span> </span>\n   <li><strong><span>吴翼：</span></strong><span>清华大学交叉信息研究院的杰出青年学者，蚂蚁集团强化学习实验室首席科学家，负责大模型强化学习方向研究。</span></li>\n   <span> </span>\n   <li><strong><span>许华哲</span></strong><span>：清华大学交叉信息研究院助理教授，高阳在伯克利实验室时期的学术同门。研究聚焦具身人工智能的理论、算法与应用，深度强化学习与机器人学等。</span></li>\n   <span> </span>\n   <li><strong><span>李飞飞：</span></strong><span>斯坦福大学教授，计算机视觉领域的先驱，ImageNet 发起者，World Labs 创始人。</span></li>\n   <span> </span>\n   <li><strong><span>LeCun</span></strong><span>：杨立昆（Yann LeCun），深度学习三巨头之一，图灵奖得主。</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><em><span>关于理念：</span></em></p>\n  <span></span>\n  <ul>\n   <span> </span>\n   <li><strong><span>会思考的芦苇：</span></strong><span>源自法国哲学家帕斯卡尔的隐喻。指人类在肉体上像芦苇一样脆弱，但因为拥有独立的偏好与思考能力，从而具备了不可替代的特殊价值。</span></li>\n   <span> </span>\n   <li><strong><span>老子的“三宝”</span></strong><span>：出自《道德经》的“一曰慈，二曰俭，三曰不敢为天下先”。节目中特指“俭”，意为不耗散自己的心力与欲望。</span></li>\n   <span></span>\n  </ul>\n  <span></span>\n  <p><strong><span>🎵 【音乐】</span></strong></p>\n  <span></span>\n  <p><span>Jordan Critz - Beau Et Rapide (Piano)</span></p>\n  <span></span>\n  <p><span>🎤 【</span><strong><span>创作团队】</span></strong></p>\n  <span></span>\n  <p><strong><span>主持</span></strong><span>｜张津剑</span></p>\n  <span></span>\n  <p><strong><span>出品</span></strong><span>｜绿洲资本</span></p>\n  <span></span>\n  <p><strong><span>剪辑制作</span></strong><span>｜声度 Studio 播客工作室</span></p>\n  <span></span>\n  <p><strong><span>💬 【互动时刻】</span></strong></p>\n  <span></span>\n  <p><span>小助理微信：VB20240606</span></p>\n  <span></span>\n  <p><span>如果在你面前有两个选择：一件是世俗意义上具有巨大“价值”但让你痛苦的事，另一件是让你发自内心“快乐”但看似无用的事，你会怎么选？欢迎留言评论！</span></p>\n  <span></span>\n  <p><span>我们将为评论区最高点赞的 3 位听友，赠送高阳播客结尾所说的绿洲小书一本。</span></p>\n  <span></span>\n  <p><strong><span>免责声明</span></strong></p>\n  <span></span>\n  <p><span>本播客所述投资相关内容皆以交流分享为目的，仅供参考，不构成任何市场预测、判断，或投资、咨询建议。感谢您对原创内容的青睐！如转载或引用本播客所述内容，请注明出处。转载前请与绿洲联系并取得同意。</span></p>\n </body>\n</html>",
+  "aiSummary": "对话千寻智能联创高阳，深度拆解具身智能的「GPT-3 时刻」、数据驱动的 Scaling Law 实践以及科学家创业的内在一致性。",
+  "oneSentenceSummary": "对话千寻智能联创高阳，深度拆解具身智能的「GPT-3 时刻」、数据驱动的 Scaling Law 实践以及科学家创业的内在一致性。",
+  "summary": "本期播客由绿洲资本张津剑对话千寻智能（SpiritAI）联合创始人、清华大学助理教授高阳。作为具身智能领域的顶尖学者，高阳分享了其从学术界转向产业界的认知升级：受 ChatGPT 启发，他坚信神经网络作为「通用函数拟合器」能将大模型的成功复制到物理交互领域。节目深入探讨了具身智能的技术路径，指出 2027 年将是具身智能的重大突破点。高阳详细对比了中美在数据收集（千万小时量级）、模型泛化性及 VLA（视觉-语言-动作）架构上的差异。此外，嘉宾还结合道家与佛教哲学，探讨了科学家创业者如何在高强度竞争中保持「心力不耗散」，强调「做自己」与内心稳定对于长期成功的决定性作用。",
+  "mainPoints": [
+    {
+      "point": "具身智能的 2027 年「GPT-3 时刻」预测",
+      "explanation": "具身智能正从 GPT-2 水平向 GPT-3 跨越，核心指标在于泛化性。高阳预测 2027 年初将实现模型在任意场景下产生智能响应的突破，这依赖于从 1.5 万小时到千万小时级后训练数据的量级提升。"
+    },
+    {
+      "point": "具身模型底层架构的「多频谱协同」",
+      "explanation": "未来智能系统是不同时间尺度的融合：高频（50-100Hz）的运动控制（Locomotion）、中频（10-20Hz）的视觉动作协调（VLA）与低频的语言思维。系统需通过统一的「时钟」整合多感官信息。"
+    },
+    {
+      "point": "中美具身智能竞争的「数据与组织」差异",
+      "explanation": "中国在硬件基础和人力组织上有显著优势，能更高效完成千万小时级的行为数据采集与清洗。中美技术差距已缩小至 3-6 个月，且在端到端路径上正趋于共识。"
+    },
+    {
+      "point": "科学家创业的「心力管理」与「不耗散」",
+      "explanation": "引用老子「三宝」中的「俭」，强调创业者应通过学会说「不」来减少欲望和行事的耗散，保持内心评价标准的一致性，从而在处理技术与市场匹配时保持清醒。"
+    }
+  ],
+  "keyQuotes": [
+    "ChatGPT 的出现重塑了我的 AI 价值观：以前我们不知道智能在哪里，现在知道大量数据会造就智能。",
+    "泛化性是当前评价具身模型含金量的唯一核心指标。",
+    "我其实一直在思考如何避免心力的折损，因为心力的折损意味着重要的问题没有被透彻解答。",
+    "人不过是会思考的芦苇，即便你认为人是机器，拥有独特价值标准和快乐能力的个体也是不可替代的。"
+  ],
+  "tags": [
+    "具身智能",
+    "VLA 模型",
+    "Scaling Law",
+    "千寻智能",
+    "机器人"
+  ],
+  "topicTag": "other",
+  "readTime": 10,
+  "score": 92,
+  "wordCount": 2406,
+  "domain": "xiaoyuzhoufm.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_61058f2f",
+  "sourceName": "信号与噪声",
+  "resourceType": "PODCAST",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775664000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-08 16:00:00"
+}

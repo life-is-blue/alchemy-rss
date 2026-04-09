@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-09 06:12:07 | [返回首页](/README.md)
+**更新时间**: 2026-04-09 08:11:26 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (10968)
+- [AI & 大模型](#ai-llm) (10985)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (760)
-- [DevOps](#devops) (494)
+- [DevOps](#devops) (495)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5370)
+- [其他](#other) (5373)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [扩展托管智能体：将“大脑”与“双手”解耦](https://www.anthropic.com/engineering/managed-agents) - AI 精选
+- [企业-AI-的下一阶段](https://openai.com/index/next-phase-of-enterprise-ai) - AI 精选
 - [Anthropic-的-Project-Glasswing——将-Claude-Mythos-限制在安全研究人员范围内——在我看来很有必要](https://simonwillison.net/2026/Apr/7/project-glasswing/#atom-everything) - AI 精选
 - [面向“Token-亿万富翁”的极限-Harness-Engineering：100-万行代码、每天-10-亿-Token、0%-人工代码、0%-人工审查-——-Ryan-Lopopolo，OpenAI-Frontier-&amp;-Symphony](https://www.latent.space/p/harness-eng) - AI 精选
 - [Deep-Agents-v0.5](https://blog.langchain.com/deep-agents-v0-5/) - AI 精选
@@ -34,16 +36,14 @@
 - [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
 - [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
 - [ADeLe：预测并解释跨任务的-AI-性能---微软研究院](https://www.microsoft.com/en-us/research/blog/adele-predicting-and-explaining-ai-performance-across-tasks/) - AI 精选
+- [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
 - [Falcon-Perception](https://huggingface.co/blog/tiiuae/falcon-perception) - AI 精选
 - [Wan2.7-Image：人更真，字更稳，色更准](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500310&idx=1&sn=e324a6ae0f99319e6a2e0bdf5a1d0d9a) - AI 精选
 - [Kimi-杨植麟「2026-中关村论坛」演讲全文（附视频）](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488299&idx=2&sn=312693891b6e96e8d6169ed7b3485538) - AI 精选
 - [面向-AI-智能体的-Qdrant-Skills](https://qdrant.tech/blog/qdrant-skills-release/) - AI 精选
-- [Mistral：Voxtral-TTS、Forge、Leanstral-以及-Mistral-4-的未来展望-—-嘉宾：Pavan-Kumar-Reddy-与-Guillaume-Lample](https://www.latent.space/p/voxtral) - AI 精选
-- [智能体评估就绪检查清单](https://blog.langchain.com/agent-evaluation-readiness-checklist/) - AI 精选
 
-- [查看全部 10968 篇...](/details/tags/ai-llm.md)
+- [查看全部 10985 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -111,6 +111,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [Spotify-如何每周向-6.75-亿用户发布更新且不破坏系统](https://blog.bytebytego.com/p/how-spotify-ships-to-675-million) - 编程 精选
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
 - [在企业规模下实践“左移”：Cloudflare-如何通过基础设施即代码管理自身](https://blog.cloudflare.com/shift-left-enterprise-scale/) - 编程 精选
@@ -127,9 +128,8 @@
 - [Quicksilver-v2：全球分布式键值存储的演进（第二部分）](https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/) - 编程 精选
 - [Tinder-API-网关：日处理十亿次滑动的技术解析](https://blog.bytebytego.com/p/how-tinders-api-gateway-handles-a) - 编程 精选
 - [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
-- [不拐弯抹角了，你的-Docker-配置可能很糟糕……](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247631961&idx=1&sn=9035e07ff848bbc33c4d5f1bcc824dd2) - 编程 精选
 
-- [查看全部 494 篇...](/details/tags/devops.md)
+- [查看全部 495 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5370 篇...](/details/tags/other.md)
+- [查看全部 5373 篇...](/details/tags/other.md)
 
 
