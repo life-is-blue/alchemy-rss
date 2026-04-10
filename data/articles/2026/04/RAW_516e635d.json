@@ -1,0 +1,52 @@
+{
+  "id": "RAW_516e635d",
+  "title": "特朗普任命的法官拒绝阻止特朗普政府将 Anthropic AI 技术列入黑名单",
+  "url": "https://arstechnica.com/tech-policy/2026/04/trump-appointed-judges-refuse-to-block-trump-blacklisting-of-anthropic-ai-tech/",
+  "date": "2026-04-09 18:17:06",
+  "author": "Jon Brodkin",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"page-anchor-wrapper\">\n   <a class=\"\" name=\"page-1\" data-page=\"1\" data-url=\"https://arstechnica.com/tech-policy/2026/04/trump-appointed-judges-refuse-to-block-trump-blacklisting-of-anthropic-ai-tech/\"></a>\n  </div>\n  <p>A federal appeals court refused to halt the Trump administration’s efforts to blacklist Anthropic yesterday, denying the company’s emergency motion for a stay. But the court granted the US-based AI firm’s request to expedite the case and will hold oral arguments on May 19.</p>\n  <p>The <a href=\"https://storage.courtlistener.com/recap/gov.uscourts.cadc.42923/gov.uscourts.cadc.42923.01208838678.0_1.pdf\">ruling</a> by the US Court of Appeals for the District of Columbia Circuit was issued by a panel of three judges appointed by Republicans, including Trump appointees Gregory Katsas and Neomi Rao. <a href=\"https://www.cadc.uscourts.gov/content/gregory-g-katsas\">Katsas</a> previously served as deputy counsel to the president during Trump’s first term, while <a href=\"https://www.cadc.uscourts.gov/content/neomi-rao\">Rao</a> served in the Trump administration’s Office of Management and Budget. The judges’ decision is a setback for Anthropic, but it’s only one of two cases it filed against the Trump administration, and the AI firm has had more success in the other one.</p>\n  <p><a href=\"https://arstechnica.com/tech-policy/2026/03/anthropic-sues-us-over-blacklisting-white-house-calls-firm-radical-left-woke/\">Anthropic says</a> it exercised its First Amendment rights by refusing to let Claude AI models be used for autonomous warfare and mass surveillance of Americans, and that Trump and Defense Secretary Pete Hegseth blacklisted it in retaliation. Trump directed all federal agencies to stop using Anthropic technology, and Hegseth labeled Anthropic a “Supply-Chain Risk to National Security,” prohibiting military contractors from doing business with Anthropic.</p>\n  <p>The DC Circuit ruling acknowledged “that Anthropic will likely suffer some degree of irreparable harm absent a stay,” which the court said appears to be “primarily financial in nature… Anthropic also claims ongoing harms from retaliation for its constitutionally protected speech,” but the firm “does not show that its speech has been chilled during the pendency of this litigation,” the ruling said.</p>\n  <p>Anthropic separately sued the Trump administration in US District Court for the Northern District of California, where a federal judge <a href=\"https://storage.courtlistener.com/recap/gov.uscourts.cand.465515/gov.uscourts.cand.465515.134.0_1.pdf\">granted Anthropic’s motion</a> for a preliminary injunction in March. The District Court judge handling the case in California, Biden appointee Rita Lin, <a href=\"https://arstechnica.com/tech-policy/2026/03/hegseth-trump-had-no-authority-to-order-anthropic-to-be-blacklisted-judge-says/\">described</a> the Anthropic blacklisting as retaliation that violates the First Amendment. The Trump administration is <a href=\"https://www.courtlistener.com/docket/73136734/anthropic-pbc-v-united-states-department-of-war-et-al/\">appealing</a> that ruling to the US Court of Appeals for the 9th Circuit.</p>\n </body>\n</html>",
+  "aiSummary": "联邦上诉法院驳回了 Anthropic 关于暂缓执行特朗普政府对其 AI 技术禁令的紧急动议，但同意加快法律程序。",
+  "oneSentenceSummary": "联邦上诉法院驳回了 Anthropic 关于暂缓执行特朗普政府对其 AI 技术禁令的紧急动议，但同意加快法律程序。",
+  "summary": "美国哥伦比亚特区联邦巡回上诉法院拒绝叫停特朗普政府将 Anthropic 列入黑名单的决定，该裁决由一个共和党任命的法官小组作出。政府此举禁止联邦机构和军事承包商使用 Anthropic 的技术，官方将其定性为国家安全措施；而 Anthropic 则认为这是对其拒绝支持自主武器和大规模监控行为的报复。虽然法院承认该禁令可能对 Anthropic 造成财务损害，但裁定该公司未能证明其第一修正案权利在诉讼期间受到“压制”。此案与加利福尼亚州的一起独立诉讼并行，此前加州地方法官曾针对该黑名单发布了初步禁令，这导致了跨司法管辖区的复杂法律博弈。",
+  "mainPoints": [
+    {
+      "point": "DC 巡回法院拒绝暂缓执行 Anthropic 黑名单禁令。",
+      "explanation": "法院拒绝立即阻止政府的指令，这意味着禁止联邦机构和军事承包商使用 Anthropic 技术的禁令目前仍然有效。"
+    },
+    {
+      "point": "司法裁决的冲突造成了法律上的不确定性。",
+      "explanation": "尽管 DC 巡回法院拒绝了暂缓执行，但加利福尼亚州的另一家联邦法院此前曾发布初步禁令，裁定该黑名单可能违反了第一修正案，目前相关上诉仍在进行中。"
+    },
+    {
+      "point": "核心争议在于第一修正案权利与国家安全主张之间的博弈。",
+      "explanation": "Anthropic 认为该禁令是由于其拒绝支持自主武器和监控而遭到的报复，而政府则以“供应链风险”作为列入黑名单的理由。"
+    }
+  ],
+  "keyQuotes": [
+    "如果没有暂缓执行，Anthropic 很可能会遭受一定程度的不可弥补的损害，法院称这种损害主要表现为财务性质。",
+    "Anthropic 还声称因其受宪法保护的言论遭到报复而持续受损，但该公司并未证明其言论在诉讼期间受到了压制。"
+  ],
+  "tags": [
+    "Anthropic",
+    "AI 政策",
+    "第一修正案",
+    "美国政府",
+    "法律科技"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 332,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775758626000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 18:17:06"
+}

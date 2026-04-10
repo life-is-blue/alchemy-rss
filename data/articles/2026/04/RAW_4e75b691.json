@@ -1,0 +1,52 @@
+{
+  "id": "RAW_4e75b691",
+  "title": "首位因《Take It Down Act》被定罪的男子在被捕后仍持续制作 AI 不雅照",
+  "url": "https://arstechnica.com/tech-policy/2026/04/first-man-convicted-under-take-it-down-act-kept-making-ai-nudes-after-arrest/",
+  "date": "2026-04-09 15:47:27",
+  "author": "Ashley Belanger",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>An Ohio man became the first person convicted under the Take It Down Act after pleading guilty to creating and sharing both real and AI-generated explicit images of at least 10 victims without their consent.</p>\n  <p>According to a Justice Department <a href=\"https://www.justice.gov/usao-sdoh/pr/columbus-man-pleads-guilty-cyberstalking-exes-creating-ai-generated-obscene-material\">press release</a>, 37-year-old James Strahler II used AI tools to create fake sexualized images to harass at least six women he knew. In some images, he depicted one victim engaged in sex with her father and shared that image with her mother and co-workers. He also used AI to create explicit and incestuous images that placed the faces of minor boys on adult bodies, including young boys related to his victims.</p>\n  <p>Cops found that Strahler “installed more than 24 AI platforms and more than 100 AI web-based models on his phone,” which he used to create hundreds, if not thousands, of non-consensual intimate images (NCII) depicting both women and children.</p>\n  <p>Court documents showed that he created the images to try to coerce victims and their mothers into sending genuine nude images, while also threatening rape and “leaving voicemails of him masturbating.” According <a href=\"https://www.dispatch.com/story/news/courts/2025/06/25/ohio-man-used-ai-porn-to-harass-exes-their-moms-james-strahler-ii/84349330007/\">to the Columbus Dispatch</a>, Strahler made some of the unlawful images of his exes, their family, and their friends “to scare women into reconciling with him.”</p>\n  <p>Additionally, he posted more than 700 images depicting real and “animated” persons “to a website dedicated to child sexual abuse.” Cops also found that he posted NCII of at least one victim and her mother on a website called “Motherless,” which encourages users to post “anything legal.” And Strahler also posed as a victim on a pornographic site, where he “provided AI-generated images and video to at least one person,” The Columbus Dispatch reported.</p>\n  <p>On Tuesday, Strahler pled guilty to “cyberstalking, producing obscene visual representations of child sexual abuse, and publication of digital forgeries.” He has yet to be sentenced for the crimes. Under the Take It Down Act, he risks a prison sentence of up to two years for publishing NCII depicting adults and up to three years for images of minors.</p>\n </body>\n</html>",
+  "aiSummary": "一名俄亥俄州男子成为首位因《Take It Down Act》被定罪的人，他制作并传播了包括未成年人在内的多名受害者的非自愿 AI 生成私密图像。",
+  "oneSentenceSummary": "一名俄亥俄州男子成为首位因《Take It Down Act》被定罪的人，他制作并传播了包括未成年人在内的多名受害者的非自愿 AI 生成私密图像。",
+  "summary": "本文报道了首例根据《Take It Down Act》作出的判决，涉案人员 James Strahler II 使用多种 AI 平台生成并传播了至少 10 名受害者的非自愿私密图像（NCII）。该罪犯利用超过 24 种 AI 工具制作露骨内容，包括乱伦和儿童性虐待材料，以此作为胁迫和骚扰的手段。尽管已被捕，他仍继续其非法活动，在多个平台发布了数百张图像。他已承认包括网络跟踪和制作淫秽视觉表现在内的多项指控，这标志着在执行打击 AI 辅助性虐待法律方面的一个重要法律里程碑。",
+  "mainPoints": [
+    {
+      "point": "《Take It Down Act》下的首次定罪。",
+      "explanation": "James Strahler II 的案件为起诉使用 AI 工具生成和传播非自愿私密图像的个人树立了法律先例，凸显了政府遏制 AI 辅助虐待行为的决心。"
+    },
+    {
+      "point": "AI 被广泛用于骚扰和胁迫。",
+      "explanation": "该罪犯利用超过 24 个 AI 平台制作了数千张露骨图像，展示了易于获取的 AI 工具是如何被武器化以骚扰、胁迫和恐吓受害者的。"
+    },
+    {
+      "point": "尽管受到法律干预，犯罪行为依然持续。",
+      "explanation": "报告指出，该个人在被捕后仍继续制作和分享非法 AI 生成的内容，这强调了在数字时代预防此类犯罪再次发生的挑战。"
+    }
+  ],
+  "keyQuotes": [
+    "一名俄亥俄州男子成为首位因《Take It Down Act》被定罪的人，他承认在未经同意的情况下制作并分享了至少 10 名受害者的真实及 AI 生成的露骨图像。",
+    "警方发现 Strahler 在其手机上“安装了超过 24 个 AI 平台和 100 多个基于 Web 的 AI 模型”，并利用它们制作了数百甚至数千张非自愿私密图像。"
+  ],
+  "tags": [
+    "AI 伦理",
+    "Take It Down Act",
+    "NCII",
+    "网络跟踪",
+    "法律政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 341,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775749647000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 15:47:27"
+}

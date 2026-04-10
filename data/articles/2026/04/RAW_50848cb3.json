@@ -1,0 +1,53 @@
+{
+  "id": "RAW_50848cb3",
+  "title": "乌干达黑猩猩分裂为两派，随后残杀同类",
+  "url": "https://arstechnica.com/science/2026/04/ugandan-chimps-split-into-two-factions-then-killed-rivals/",
+  "date": "2026-04-09 20:20:35",
+  "author": "Jennifer Ouellette",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>In the 1970s, the late <a href=\"https://www.amazon.com/Chimpanzees-Gombe-Patterns-Behavior/dp/0674116496\">Jane Goodall observed</a> a community of chimpanzees in Gombe, Tanzania, breaking into two factions; the males in one group ended up <a href=\"https://scholars.duke.edu/publication/1311664\">killing all the males</a> in the rival group over the next four years, along with one female chimp. But the case was considered an anomaly, although there is <a href=\"http://ngogochimpanzeeproject.org/wordpress/wp-content/uploads/2014/04/Langergraber-et-al.-2014-JHE.pdf\">genetic evidence</a> suggesting this kind of split is a rare event occurring every 500 years or so. Now researchers have observed the largest known community of Ngogo chimpanzees in Uganda also permanently splitting into two rival groups with a similar outbreak of violence, according to a <a href=\"http://www.science.org/doi/10.1126/science.adz4944\">new paper</a> published in the journal Science.</p>\n  <p>“What’s especially striking is that the chimpanzees are killing former group members,” <a href=\"https://www.eurekalert.org/news-releases/1122485?\">said co-author Aaron Sandel</a>, an anthropologist at the University of Texas, Austin. “The new group identities are overriding cooperative relationships that had existed for years. I would caution against anyone calling this a civil war. But the polarization and collective violence that we have observed with these chimpanzees may give us insight into our own species.”</p>\n  <p>The authors analyzed 24 years’ worth of data from social networks, 10 years of GPS tracking, and 30 years of demographic data on the Ngogo chimps in Uganda’s Kibale National Park. They identified three distinct phases to the split. First there was an abrupt shift as chimp relationships became polarized into two distinct clusters: Western and Central. The chimps then spent the next two years increasingly avoiding those in their rival cluster; there were very few interactions across clusters, and Western male chimps started patrolling their territory, showing increased aggression toward Central males. By 2018, the fissure had become permanent.</p>\n </body>\n</html>",
+  "aiSummary": "研究人员记录了乌干达 Ngogo 黑猩猩大群体中罕见的永久性社会分裂，其特征是剧烈的两极分化以及随后的致命群体间暴力。",
+  "oneSentenceSummary": "研究人员记录了乌干达 Ngogo 黑猩猩大群体中罕见的永久性社会分裂，其特征是剧烈的两极分化以及随后的致命群体间暴力。",
+  "summary": "本文报道了一项发表在《科学》杂志上关于乌干达基巴莱国家公园 Ngogo 黑猩猩的重要纵向研究。通过 24 年的数据收集，研究人员观察到该群体永久分裂为西部和中部两个敌对派系。这一过程经历了三个不同阶段：最初的社会两极分化、相互回避与领地巡逻期，以及最终在前群体成员之间爆发的致命暴力。这一事件与珍·古道尔观察到的罕见贡贝异常现象相呼应，为理解灵长类动物（包括人类）集体暴力和社会分裂的起源提供了进化视角的洞察。",
+  "mainPoints": [
+    {
+      "point": "黑猩猩群体可能会经历由两极分化驱动的永久性社会分裂。",
+      "explanation": "研究确定了从统一社会结构向两个截然不同的敌对集群的清晰转变，表明这种分裂并非仅仅是暂时的，而是可能导致长期的群体结构重组。"
+    },
+    {
+      "point": "黑猩猩的集体暴力可以凌驾于长期存在的合作纽带之上。",
+      "explanation": "观察到的暴力行为专门针对前群体成员，这表明新的派系认同可以迅速取代多年建立的社会关系和合作。"
+    },
+    {
+      "point": "纵向数据对于理解罕见的进化事件至关重要。",
+      "explanation": "通过综合 30 年的人口统计数据和 10 年的 GPS 追踪，研究人员得以绘制出分裂的复杂轨迹，为可能几个世纪才发生一次的事件提供了罕见的实证观察。"
+    }
+  ],
+  "keyQuotes": [
+    "最引人注目的是，黑猩猩正在杀害它们曾经的群体成员。",
+    "新的群体认同正在取代多年来一直存在的合作关系。",
+    "我们在这些黑猩猩身上观察到的两极分化和集体暴力，或许能让我们深入了解我们自己的物种。"
+  ],
+  "tags": [
+    "灵长类动物学",
+    "黑猩猩",
+    "进化生物学",
+    "社会行为",
+    "Ngogo 黑猩猩"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 275,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "Lifestyle_Culture",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775766035000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 20:20:35"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_660e6bd7",
+  "title": "我的 Air 智能体优先开发之旅 | The Air Blog",
+  "url": "https://blog.jetbrains.com/air/2026/04/my-journey-to-agent-first-development-with-air/",
+  "date": "2026-04-09 10:38:14",
+  "author": "Valerii Tepliakov",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <h3 class=\"wp-block-heading\">Some background</h3>\n  <p>I was an active AI user from the moment ChatGPT was first released, and I really liked its UX. Chatting is a familiar activity – I chat with my family, friends, and coworkers every day – so the learning curve was almost non-existent. On top of that, engaging with chatbots was already familiar as well, since they have been a hallmark of customer support interactions since well before ChatGPT came onto the scene. Needless to say, AI became a part of my daily routine almost straight away.</p>\n  <p>However, I care a lot about the code I push – maybe too much. That’s why I never used AI for coding at work or in production. Searching for information, yes. A one-day pet project, for sure. But coding at work? Oh, no, “never”!</p>\n  <p>The release of Claude Code didn’t change much. While it was indeed better at coding, I was never a VIM user, so interacting with it was tediously inconvenient (a terminal-based TUI in 2025, really?!). I was only really able to use it for one-day projects.</p>\n  <p>To make the leap, I needed an AI tool that would let me smoothly switch between code exploration and agent results, as well as allow me to review and comment on those results without changing the app. This would save me time spent copy-pasting tons of text to find where changes were made. I also needed a smoother UX for editing prompts, as the only approach available at the time was writing endless Markdown documents for each ad-hoc task in a separate code-editing application. There had to be a better way.</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter size-full is-resized\">\n    <img decoding=\"async\" fetchpriority=\"high\" width=\"736\" height=\"664\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/04/Air_blog_ChatGPT-1.png\" alt=\"\" class=\"wp-image-699360\" style=\"object-fit:cover;width:491px;height:443px\">\n   </figure>\n  </div>\n  <h3 class=\"wp-block-heading\">Air</h3>\n  <p>Full disclosure, I’m a developer with the <a href=\"https://x.com/getsome_air\" data-type=\"link\" data-id=\"https://x.com/getsome_air\" target=\"_blank\">Air team</a>, so I started to use JetBrains’ agentic development environment from day one for the sake of dogfooding – long before the <a href=\"https://blog.jetbrains.com/air/2026/03/air-launches-as-public-preview-a-new-wave-of-dev-tooling-built-on-26-years-of-experience/\">Air Public Preview</a> began this March. As before, I only used it for pet projects initially. But this time, something was different: I wasn’t as frustrated when the agent failed to do something. I was able to read the agent’s output without exhaustion. I was able to fix small things quickly without switching applications and or needing to adjust to a new view. I could even use my mouse for text editing (wow!) and the shortcuts stored in my muscle memory from mass editor and chat apps.</p>\n  <figure class=\"wp-block-video aligncenter\">\n   <video controls src=\"https://blog.jetbrains.com/wp-content/uploads/2026/04/0407.mp4\"></video>\n  </figure>\n  <p>I started to have the same feeling I had with ChatGPT – Air didn’t require me to learn anything new: All I had to do was chat, use known interaction patterns, and wait for the results. Neither the AI chat in every application since 2022, nor Cursor, nor terminal-based agents, nor GitHub or Telegram bots had ever given me that feeling before.</p>\n  <p>So, I started to use Air for work, beginning with small-scope tasks that I could quickly fix by hand if needed, working in parallel with <a href=\"https://www.jetbrains.com/idea/\" target=\"_blank\" rel=\"noopener\">IntelliJ IDEA</a>. It noticeably affected my productivity; I was able to work on several tasks at the same time, switching between them during the day and delegating some work to the agents. Interacting with agents inside a familiar environment removed any potential friction I might have experienced if I had been working with them in the terminal. Inside Air, there was no feeling of exhaustion or disorientation – everything just came naturally.</p>\n  <p>After a while, I noticed that I only needed to use IntelliJ IDEA for specialized tasks like using a debugger if the agent wasn’t able to find a bug, or doing some non-trivial interactive rebasing. Air had everything else I could possibly need. I still find agents to be extremely bad at code design, architecture, and following project patterns, but I can quickly do those things myself in Air’s editor and ask the agent to finish the job.</p>\n  <h3 class=\"wp-block-heading\">Gemini</h3>\n  <p>The final turning point was when I needed to implement a Gemini CLI for Air. We had already integrated Claude and Codex by then, and the time for the third agent had come. This sounded exactly like a task for an agent – do something similar to already existing code. No architecture design, no deep thinking – just follow an existing example. So I gave it a try.</p>\n  <p>It went much less smoothly than I expected. It took me several days, many code reviews, dozens of comments, and a 140-message-long chat exchange, but I ended up with a working, production-ready solution. This might sound like a lot of effort, but while the agent was coding, I was able to work on other things – fix smaller issues, answer Slack messages, and attend meetings.&nbsp;</p>\n  <p>In the end, Air completed the task much faster than I could have solo, and I didn’t need to use any other tools alongside it. No terminal, no IntelliJ IDEA, nothing. It was just like it used to be before the advent of AI fragmented developers’ workflows: I only needed a single tool once again, and in Air, I finally had it!</p>\n  <div class=\"wp-block-image\">\n   <figure class=\"aligncenter size-full\">\n    <img decoding=\"async\" width=\"1999\" height=\"1095\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/04/Air_blog_magic-1.png\" alt=\"\" class=\"wp-image-699349\">\n   </figure>\n  </div>\n  <h3 class=\"wp-block-heading\">The next gamechanger</h3>\n  <p>I can’t wait until we can bring Air to mobile devices, at least as a web app. This will fill the remote development hole that’s still present – prompting me to write a follow-up post while I make myself a coffee and leave the programming to my computer (or the cloud). Oh, what a brave new world we live in!</p>\n  <p>So, it turned out that I needed to experience AI in an environment I already felt well at home in before I could fully appreciate its benefit. Anyway, thank you for reading this to the end. Now go try Air – it’s free to download and the best way to see what I mean for yourself.</p>\n  <div class=\"buttons\">\n   <div class=\"buttons__row\">\n    <a href=\"https://air.dev/\" class=\"btn\" target=\"_blank\" rel=\"noopener\">Try Air</a>\n   </div>\n  </div>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/air/2026/03/air-launches-as-public-preview-a-new-wave-of-dev-tooling-built-on-26-years-of-experience/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> Air Launches as Public Preview – A New Wave of Dev Tooling Built on 26 Years of Experience</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一位 JetBrains 开发者分享了他们使用 Air IDE 向智能体优先开发模式的转型，强调了熟悉且集成的 UX 如何克服基于终端的 AI 编码工具所带来的阻碍。",
+  "oneSentenceSummary": "一位 JetBrains 开发者分享了他们使用 Air IDE 向智能体优先开发模式的转型，强调了熟悉且集成的 UX 如何克服基于终端的 AI 编码工具所带来的阻碍。",
+  "summary": "作为 JetBrains 的一名开发者，作者讲述了自己从 AI 怀疑论者转变为采用“智能体优先”工作流的过程。作者最初对现有 AI 编码工具的上下文切换和基于终端的界面感到沮丧，但后来发现 Air 的集成环境——模仿了熟悉的聊天和编辑器模式——消除了 AI 辅助开发带来的认知负担和阻力。通过将重复性任务委托给智能体，同时保持对架构和设计的控制，作者实现了一个更精简、高效的工作流，并将开发环境整合为一个统一的工具。",
+  "mainPoints": [
+    {
+      "point": "熟悉的 UX 是 AI 在专业工作流中落地的关键。",
+      "explanation": "作者认为基于终端的 TUI 会产生不必要的阻力。通过将智能体交互引入模仿熟悉聊天和编辑器模式的 GUI 环境中，开发者可以在无需频繁切换上下文的情况下保持专注。"
+    },
+    {
+      "point": "智能体优先开发需要委托与人工监督之间的平衡。",
+      "explanation": "智能体擅长处理重复性任务或遵循现有模式（例如实现一个新的 CLI），但在处理高层架构时表现不佳。最有效的工作流是开发者负责设计和复杂逻辑，而智能体负责执行实现。"
+    },
+    {
+      "point": "整合开发环境可以减少认知疲劳。",
+      "explanation": "通过使用集代码编辑、智能体交互和审查于一体的工具，开发者避免了在 IDE、终端和网页端聊天界面之间来回切换所导致的“碎片化”。"
+    }
+  ],
+  "keyQuotes": [
+    "我需要一个 AI 工具，它能让我顺畅地在代码探索和智能体结果之间切换，并允许我在不切换应用的情况下审查和评论这些结果。",
+    "当智能体无法完成某项任务时，我不再感到那么沮丧。我能够阅读智能体的输出而不会感到精疲力竭。",
+    "我仍然认为智能体在代码设计、架构和遵循项目模式方面表现极差，但我可以在 Air 的编辑器中快速完成这些工作，然后让智能体来完成剩下的任务。"
+  ],
+  "tags": [
+    "Air",
+    "JetBrains",
+    "AI 智能体",
+    "智能体优先开发",
+    "IDE"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 961,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775731094000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 10:38:14"
+}

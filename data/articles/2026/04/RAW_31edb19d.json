@@ -1,0 +1,53 @@
+{
+  "id": "RAW_31edb19d",
+  "title": "网络研讨会 – OSS Power-Ups: XenoAtom.Terminal.UI | .NET 工具博客",
+  "url": "https://blog.jetbrains.com/dotnet/2026/04/09/webinar-oss-power-ups-xenoatom-terminal-ui/",
+  "date": "2026-04-09 15:32:51",
+  "author": "Matthias Koch",
+  "siteName": "The JetBrains Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Join us <strong>Thursday, April 16, 2026, 15:00 – 16:30 UTC</strong> (<a href=\"https://www.worldtimebuddy.com/?qm=1&amp;lid=100,8,5,12,22,30&amp;h=100&amp;date=2026-04-16&amp;sln=15-16&amp;hf=2\" target=\"_blank\" rel=\"noopener\">check other timezones</a>) for our free live webinar, <strong>OSS PowerUps – XenoAtom.Terminal.UI</strong>, with <a href=\"https://xoofx.github.io/\" target=\"_blank\" rel=\"noopener\">Alexandre Mutel</a>. This is the <strong>fifteenth episode</strong> of our series of <a href=\"https://lp.jetbrains.com/oss-powerups/\" target=\"_blank\" rel=\"noopener\">OSS Power-Ups</a>, where we put a spotlight on open-source .NET projects.</p>\n  <p align=\"center\"><a class=\"jb-download-button\" href=\"https://info.jetbrains.com/rider-livestream-april16-2026.html\" target=\"_blank\" rel=\"noopener\">Register now</a> and get a reminder, or <a href=\"https://www.youtube.com/live/S_emAviKHQM\" target=\"_blank\" rel=\"noopener\">join on YouTube</a></p>\n  <p><em>What does it take to build a terminal UI that feels modern – and keeps it maintainable as it grows? In this talk, I’ll share the behind-the-scenes journey of creating XenoAtom.Terminal.UI, focusing on the design choices that enabled a reactive, binding-first retained model, a consistent layout pipeline, and a foundation that scaled to 60+ controls without turning into framework spaghetti.</em></p>\n  <p><em>I’ll also show how AI coding agents accelerated key parts of the work – from API exploration to implementation, refactoring, and tests – what worked, what didn’t, and the practical guardrails that kept the project shippable. Finally, I’ll connect these lessons to how I’m evolving my broader OSS portfolio: what’s next, how I choose projects, and how AI is changing the way I build open source.</em></p>\n  <figure>\n   <a href=\"https://info.jetbrains.com/rider-livestream-april16-2026.html\" target=\"_blank\" rel=\"noopener\"><img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/04/YouTube_Thumbnail_1280x720.png\" alt=\"Register for the webinar\" class=\"wp-image-180343\" width=\"800\"></a>\n  </figure>\n  <p>You can attend <a href=\"https://www.youtube.com/live/S_emAviKHQM\" target=\"_blank\" rel=\"noreferrer noopener\">Alexandre Mutel’s webinar on YouTube</a>, or <a href=\"https://info.jetbrains.com/rider-livestream-april16-2026.html\" data-type=\"link\" data-id=\"https://info.jetbrains.com/rider-livestream-april16-2026.html\" target=\"_blank\" rel=\"noopener\"><strong>register here</strong> to get a reminder closer to the webinar</a>.</p>\n  <p>About the presenter:</p>\n  <div class=\"about-author \">\n   <div class=\"about-author__box\">\n    <div class=\"row\">\n     <div class=\"about-author__box-img\">\n      <img decoding=\"async\" src=\"https://blog.jetbrains.com/wp-content/uploads/2026/04/xoofx-2023-v2-closeup-medium.jpg\" alt=\"\" loading=\"lazy\">\n     </div>\n     <div class=\"about-author__box-text\">\n      <h4>Alexandre Mutel</h4>\n      <p>Alexandre Mutel is VP of Engineering at DataGalaxy, driving innovation in the data governance space. With 20+ years in .NET, he’s known for widely used open-source projects like SharpDX, Markdig, Scriban, and the profiler Ultra. He enjoys pushing .NET into unexpected territory – from high-performance tooling to retro experiments like building a .NET framework for the Commodore 64.</p>\n      <p>You can follow Alexandre on <a href=\"https://mastodon.social/@xoofx\" target=\"_blank\" rel=\"noopener\">Mastodon</a>, <a href=\"https://bsky.app/profile/xoofx.mastodon.social.ap.brid.gy\" target=\"_blank\" rel=\"noopener\">BlueSky</a>, <a href=\"https://www.linkedin.com/in/alexandre-mutel/\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>, and <a href=\"https://github.com/xoofx\" target=\"_blank\" rel=\"noopener\">GitHub</a>.</p>\n     </div>\n    </div>\n   </div>\n  </div>\n  <div class=\"content__pagination\">\n   <a class=\"content__pagination-prev\" href=\"https://blog.jetbrains.com/dotnet/2026/04/08/dotinsights-april-2026/\"><i class=\"icon-arrow-left\"><span class=\"sr-only\">Prev post</span></i> dotInsights | April 2026</a>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文预告了 JetBrains 即将举办的网络研讨会，嘉宾 Alexandre Mutel 将探讨 XenoAtom.Terminal.UI 的架构，并分享他在开源开发中集成 AI 编程智能体的经验。",
+  "oneSentenceSummary": "本文预告了 JetBrains 即将举办的网络研讨会，嘉宾 Alexandre Mutel 将探讨 XenoAtom.Terminal.UI 的架构，并分享他在开源开发中集成 AI 编程智能体的经验。",
+  "summary": "JetBrains .NET 工具博客宣布了其“OSS Power-Ups”系列网络研讨会的第 15 期，本期嘉宾为 Alexandre Mutel。会议重点介绍了 XenoAtom.Terminal.UI 的开发，这是一个用于 .NET 的现代化终端 UI 库。Mutel 将分享构建一个支持 60 多种控件、具备可维护性、响应式且以绑定为核心的框架的见解。此外，本次讲座还将涵盖他在 API 设计、重构和测试中使用 AI 编程智能体的实践经验，以及这些工具如何塑造他更广泛的开源开发策略。",
+  "mainPoints": [
+    {
+      "point": "构建可扩展且易于维护的终端 UI 库。",
+      "explanation": "本次会议探讨了响应式、以绑定为核心的保留模式（retained model）的设计选择，旨在防止“框架意大利面条式代码”，同时扩展以支持大量的 UI 控件。"
+    },
+    {
+      "point": "AI 编程智能体在开源项目中的实际应用。",
+      "explanation": "Mutel 分享了在 API 探索、实现和测试中使用 AI 的实战经验，并强调了维护项目质量所需的必要护栏。"
+    },
+    {
+      "point": "利用 AI 演进开源开发策略。",
+      "explanation": "讲座将具体的技术经验与更广泛的项目选择理念联系起来，探讨了 AI 如何从根本上改变独立开源维护者的工作流程。"
+    }
+  ],
+  "keyQuotes": [
+    "构建一个既有现代感又能随着规模增长保持可维护性的终端 UI 需要什么？",
+    "我还将展示 AI 编程智能体如何加速工作的关键部分——从 API 探索到实现、重构和测试。",
+    "我将把这些经验与我如何演进更广泛的 OSS 产品组合联系起来：下一步是什么，我如何选择项目，以及 AI 如何改变我构建开源项目的方式。"
+  ],
+  "tags": [
+    ".NET",
+    "开源",
+    "终端 UI",
+    "网络研讨会",
+    "AI 编程智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 80,
+  "wordCount": 279,
+  "domain": "blog.jetbrains.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_dcd2ac",
+  "sourceName": "The JetBrains Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775748771000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 15:32:51"
+}

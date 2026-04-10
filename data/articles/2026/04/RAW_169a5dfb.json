@@ -1,0 +1,53 @@
+{
+  "id": "RAW_169a5dfb",
+  "title": "竞争对手称：对 Broadcom 的“负面”看法正推动数千家企业从 VMware 迁移",
+  "url": "https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/",
+  "date": "2026-04-09 20:41:30",
+  "author": "Scharon Harding",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Amid customer dissatisfaction around Broadcom’s VMware takeover, rivals have been trying to lure customers from the leading virtualization firm. One of VMware’s biggest competitors, Nutanix, claims to have swiped tens of thousands of VMware customers.</p>\n  <p>Speaking at a press briefing at Nutanix’s .NEXT conference in Chicago this week, Nutanix CEO Rajiv Ramaswami said that “about 30,000 customers” have migrated from VMware to the rival platform, pointing to customer disapproval over Broadcom’s VMware strategy, <a href=\"https://www.sdxcentral.com/news/nutanix-ceo-targets-majority-of-vmwares-customer-base/\">SDxCentral</a>, a London-based IT publication, reported today.</p>\n  <p>“I think there’s no doubt that the customer sentiment continues to be negative about Broadcom,” Ramaswami said, per SDxCentral.</p>\n  <p>Since Broadcom acquired VMware in November 2023, numerous VMware users have sought to <a href=\"https://arstechnica.com/information-technology/2025/01/a-long-costly-road-ahead-for-customers-abandoning-broadcoms-vmware/\">reduce or end their reliance</a> on VMware technologies. The most common drivers for migrations are that <a href=\"https://arstechnica.com/information-technology/2025/09/broadcoms-prohibitive-vmware-prices-create-a-learning-barrier-it-pro-says/\">VMware is getting too expensive;</a>&nbsp;users are being forced to bundle products; the company <a href=\"https://arstechnica.com/information-technology/2025/07/some-vmware-perpetual-license-owners-are-unable-to-download-security-patches/\">ended perpetual licenses;</a> and VMware has become harder to work with after <a href=\"https://arstechnica.com/information-technology/2026/03/cloud-service-providers-ask-eu-regulator-to-reinstate-vmware-partner-program/\">Broadcom culled channel partners.</a></p>\n  <p>Broadcom’s strategy has made VMware unaffordable or impractical for most small- to medium-size businesses (SMBs) and narrowed VMware’s focus to enterprise-size customers.</p>\n  <p>Nutanix hasn’t specified how many of the customers that it got from VMware are SMBs or enterprise-sized; although, adoption is <a href=\"https://www.sdxcentral.com/news/nutanix-nabs-more-vmware-customers-grabs-amd-investment/\">said to be strongest</a> among mid-market customers as Nutanix also tries wooing larger customers, often by starting with partial deployments.</p>\n  <p>During this week’s press briefing, Ramaswami reportedly said that some of the customers that moved from VMware to Nutanix during the latter’s most recent fiscal quarter represented Nutanix’s “strongest quarterly new logo additions in eight years.”</p>\n  <p>“Most of the logos came from our typical VMware migrations on to the [hyperconverged infrastructure] platform,” he said.</p>\n  <p>During the Nutanix conference, Brandon Shaw, Nutanix VP and head of technology services, said that Western Union has been migrating from VMware to Nutanix for six months, <a href=\"https://www.theregister.com/2026/04/08/western_union_vmware_nutanix_migration/?td=rt-3a\">The Register </a>reported. The financial services company is moving 900 to 1,200 applications across 3,900 cores.</p>\n  <p>Shaw said that Western Union has been exploring new IT suppliers to help it become more customer-focused. Despite Broadcom’s history of “decent lines of communication” with Western Union, Shaw said that Western Union had “challenges partnering with them.”</p>\n </body>\n</html>",
+  "aiSummary": "Nutanix 报告称，由于业界对 Broadcom 收购 VMware 后的许可政策和合作伙伴策略普遍不满，约有 30，000 家客户已迁移至其平台。",
+  "oneSentenceSummary": "Nutanix 报告称，由于业界对 Broadcom 收购 VMware 后的许可政策和合作伙伴策略普遍不满，约有 30，000 家客户已迁移至其平台。",
+  "summary": "本文详细介绍了虚拟化市场的持续变动，Nutanix 报告称已成功吸引了约 30，000 家 VMware 前客户。这一迁移趋势归因于 Broadcom 在 2023 年收购 VMware 后引发的负面客户情绪。导致此次“出走潮”的关键因素包括高昂的定价、永久许可的取消、强制性的产品捆绑以及对既有渠道合作伙伴计划的破坏。虽然 Nutanix 在中端市场表现强劲，但它也正日益瞄准企业级客户，Western Union 等大型企业的迁移即是明证。该报告突显了 Broadcom 在这些广泛的运营变革中维持客户群所面临的战略挑战。",
+  "mainPoints": [
+    {
+      "point": "从 VMware 到 Nutanix 的大规模客户迁移。",
+      "explanation": "Nutanix 首席执行官 Rajiv Ramaswami 报告称，约有 30，000 家客户已迁移至其平台，这标志着该公司八年来新客户获取最强劲的时期之一。"
+    },
+    {
+      "point": "Broadcom 收购后的策略是导致客户流失的主要催化剂。",
+      "explanation": "客户流失的原因在于成本增加、永久许可的取消、强制产品捆绑以及渠道合作伙伴的削减，这些举措使得许多组织难以继续使用 VMware。"
+    },
+    {
+      "point": "企业级迁移正在加速。",
+      "explanation": "尽管中端市场的采用率依然强劲，但像 Western Union 这样的大型企业也在将其基础设施迁移至 Nutanix，理由是与 Broadcom 维持有效的合作伙伴关系存在困难。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为毫无疑问，客户对 Broadcom 的情绪持续负面。",
+    "大多数新客户都来自我们典型的 VMware 迁移，转向了超融合基础设施平台。",
+    "尽管 Broadcom 与 Western Union 过去有着良好的沟通记录，但 Shaw 表示，Western Union 在与他们合作时遇到了挑战。"
+  ],
+  "tags": [
+    "VMware",
+    "Broadcom",
+    "Nutanix",
+    "虚拟化",
+    "云基础设施"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 355,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "BT_NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775767290000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 20:41:30"
+}

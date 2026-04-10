@@ -1,0 +1,52 @@
+{
+  "id": "RAW_18520235",
+  "title": "CDC 研究显示 COVID 疫苗有效；特朗普政府官员阻止其发布",
+  "url": "https://arstechnica.com/health/2026/04/cdc-study-shows-covid-shot-benefits-trump-official-blocks-release/",
+  "date": "2026-04-09 15:31:52",
+  "author": "Beth Mole",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span style=\"box-sizing: border-box; margin: 0px; padding: 0px;\">Under anti-vaccine Health Secretary Robert F. Kennedy Jr., scientists at the Centers for Disease Control and Prevention have been blocked from publishing a scientifically vetted study finding significant health benefits from this season’s COVID-19 vaccines,&nbsp;<a href=\"https://www.washingtonpost.com/health/2026/04/09/covid-vaccine-report-delayed/\" target=\"_blank\" rel=\"noopener\">according to reporting by The Washington Post.</a></span></p>\n  <p>The move adds to longstanding concern among health experts that chaos and political interference under Kennedy—a staunch anti-vaccine activist who has long falsely maligned COVID-19 vaccines—is deeply undermining science at federal agencies and beyond.</p>\n  <p>CDC scientists and insiders told the Post that the COVID-19 vaccine study went through the agency’s standard scientific review process and was slated for publication on March 19 in the agency’s Morbidity and Mortality Weekly Report (MMWR). But <a href=\"https://arstechnica.com/health/2026/02/with-nih-in-chaos-its-controversial-director-is-taking-over-cdc-too/\">acting CDC director Jay Bhattacharya</a> blocked the scheduled publication and is holding the study, claiming he has concerns about its methodology.</p>\n  <p>Agency scientists talked with the Post on the condition of anonymity for fear of retaliation from the Trump administration.</p>\n  <p>According to a summary the Post obtained, the study concluded that between September and December of last year, healthy adults vaccinated with a 2025–2026 COVID-19 vaccine saw the risk of emergency department or urgent care visits cut by 50 percent, and the risk of COVID-19-associated hospitalizations cut by 55 percent, compared with healthy adults who did not get this season’s shot.</p>\n  <p>Bhattacharya reportedly took issue with the test-negative design of the study, which is a well-established method to examine <a href=\"https://jamanetwork.com/journals/jama/article-abstract/2819945\">real-world data on vaccine effectiveness</a>. This type of observational study looks at people who have symptoms related to the disease of interest (in this case, COVID-19) and have the same test-seeking behavior. Those who test positive for the disease of interest become positive cases in the study, and those who test negative are test-negative controls. Researchers then compare the two groups based on vaccination status.</p>\n </body>\n</html>",
+  "aiSummary": "一项证明 2025-2026 年度 COVID-19 疫苗有效性的 CDC 研究被代理主任 Jay Bhattacharya 阻止发布，引发了人们对联邦卫生科学领域政治干预的担忧。",
+  "oneSentenceSummary": "一项证明 2025-2026 年度 COVID-19 疫苗有效性的 CDC 研究被代理主任 Jay Bhattacharya 阻止发布，引发了人们对联邦卫生科学领域政治干预的担忧。",
+  "summary": "本报告详细介绍了代理主任 Jay Bhattacharya 对一项经同行评审的 CDC 研究的压制。该研究原定于《发病率与死亡率周报》上发表，结果显示 2025-2026 年度 COVID-19 疫苗显著降低了健康成年人急诊就诊和住院的风险。尽管该研究采用了成熟的“检测阴性设计”（test-negative design），但 Bhattacharya 以方法论为由叫停了发布。这一事件凸显了在现任政府领导下，美国联邦卫生机构内部在科学传播方面日益紧张的政治影响力。",
+  "mainPoints": [
+    {
+      "point": "对经同行评审的公共卫生数据的政治压制。",
+      "explanation": "CDC 代理主任阻止了一项已经通过该机构标准科学审查流程的研究发布，并提出了专家认为属于标准实践的方法论异议。"
+    },
+    {
+      "point": "现实环境中疫苗有效性的证据。",
+      "explanation": "被压制的研究表明，接种了 2025-2026 年度疫苗的健康成年人，其急诊/紧急护理就诊率降低了 50%，住院率降低了 55%。"
+    },
+    {
+      "point": "关于“检测阴性”研究设计的争议。",
+      "explanation": "尽管代理主任质疑其方法论，但“检测阴性设计”是一种被广泛接受的、用于评估疫苗在现实世界数据中有效性的标准流行病学方法。"
+    }
+  ],
+  "keyQuotes": [
+    "此举加剧了卫生专家长期以来的担忧，即混乱和政治干预……正在严重破坏联邦机构及其他领域的科学性。",
+    "据报道，Bhattacharya 对该研究的“检测阴性设计”提出了异议，而这是一种用于审查疫苗有效性现实世界数据的成熟方法。"
+  ],
+  "tags": [
+    "CDC",
+    "COVID-19",
+    "疫苗有效性",
+    "政治干预",
+    "公共卫生"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 298,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "News_Media",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775748712000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 15:31:52"
+}

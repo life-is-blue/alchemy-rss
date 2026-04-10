@@ -1,0 +1,52 @@
+{
+  "id": "RAW_fa449bba",
+  "title": "工具：GitHub 仓库大小查询",
+  "url": "https://simonwillison.net/2026/Apr/9/github-repo-size/#atom-everything",
+  "date": "2026-04-09 21:31:50",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">9th April 2026</p>\n   <div class=\"beat\">\n    <div class=\"beat-content\">\n     <div class=\"beat-row1\">\n      <span class=\"beat-label tool\">Tool</span> <span class=\"beat-title\"><a href=\"https://tools.simonwillison.net/github-repo-size\">GitHub Repo Size</a></span>\n     </div>\n     <div class=\"beat-note blogmark-body\">\n      <p>GitHub doesn't tell you the repo size in the UI, but it's available in the CORS-friendly <a href=\"https://api.github.com/repos/simonw/datasette\">API</a>. Paste a repo into this tool to see the size, <a href=\"https://tools.simonwillison.net/github-repo-size?repo=simonw%2Fdatasette\">for example for simonw/datasette</a> (8.1MB).</p>\n     </div>\n    </div>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/beat/4103/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一款轻量级 Web 工具，利用 GitHub 支持 CORS 的 API 来显示任何仓库的总大小，这是 GitHub 标准界面中缺失的一项指标。",
+  "oneSentenceSummary": "一款轻量级 Web 工具，利用 GitHub 支持 CORS 的 API 来显示任何仓库的总大小，这是 GitHub 标准界面中缺失的一项指标。",
+  "summary": "Simon Willison 介绍了一款简单的实用工具，旨在解决 GitHub 的一个特定 UI 局限性：无法直接查看仓库大小。通过利用 GitHub 的公共 API（该 API 以支持 CORS 的方式提供此数据），用户只需粘贴仓库 URL，即可立即获取以 MB 为单位的仓库大小。文章以 'datasette' 仓库为例，展示了该工具的实用性。",
+  "mainPoints": [
+    {
+      "point": "GitHub 的 Web 界面缺乏仓库大小的直接显示。",
+      "explanation": "尽管对于评估项目规模或下载需求的开发者来说至关重要，但 GitHub 的主界面并未显示仓库的总大小。"
+    },
+    {
+      "point": "数据可通过 GitHub 支持 CORS 的 API 获取。",
+      "explanation": "该信息存在于后端 API 中，无需代理服务器，即可直接通过客户端 JavaScript 获取。"
+    },
+    {
+      "point": "专用工具简化了检索过程。",
+      "explanation": "所提供的 Web 工具自动化了 API 调用过程，用户只需粘贴仓库路径即可查看大小。"
+    }
+  ],
+  "keyQuotes": [
+    "GitHub 的界面不会告诉你仓库的大小，但它在支持 CORS 的 API 中是可用的。",
+    "将仓库地址粘贴到此工具中即可查看大小，例如 simonw/datasette (8.1MB)。"
+  ],
+  "tags": [
+    "GitHub",
+    "开发者工具",
+    "API",
+    "Web 工具",
+    "开源"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 39,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "SE_TOOLS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775770310000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 21:31:50"
+}

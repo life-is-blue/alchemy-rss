@@ -1,0 +1,52 @@
+{
+  "id": "RAW_56ae8ee2",
+  "title": "首先，特斯拉取消了 Model 2——现在它正在研发一款全新的小型电动汽车",
+  "url": "https://arstechnica.com/cars/2026/04/first-tesla-canceled-the-model-2-now-its-working-on-a-new-small-ev/",
+  "date": "2026-04-09 14:14:20",
+  "author": "Jonathan M. Gitlin",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>One of life’s abiding mysteries—at least to this writer—has been Tesla’s enduring success over recent years despite offering so few choices for customers. With the death of the low-volume and antiquated Models S and X <a href=\"https://arstechnica.com/cars/2026/01/tesla-kills-models-s-and-x-to-build-humanoid-robots-instead/\">to free factory space</a> for CEO Elon Musk’s stated desire to build <a href=\"https://www.reuters.com/technology/elon-musk-10-billion-humanoid-robots-by-2040-20k-25k-each-2024-10-29/\">billions</a> of humanoid robots, the car company now sells just two models outside the US (and effectively in the US, given <a href=\"https://arstechnica.com/cars/2026/02/tesla-slashes-cybertruck-prices-as-it-tries-to-move-unpainted-metal/\">languishing Cybertruck sales</a>). That could be changing, though. According to a Reuters report <a href=\"https://www.reuters.com/business/autos-transportation/tesla-is-developing-new-smaller-cheaper-ev-sources-say-2026-04-09/\">this morning</a>, Tesla is working on a smaller, cheaper EV.</p>\n  <p>The claim is based on accounts from four anonymous sources, all of whom work for companies that supply Tesla. They say Tesla is developing a new, smaller EV, an all-new design rather than something based on the Model 3 or Model Y. Reuters claims the under-development EV is 168 inches (4.3 m) long, significantly shorter than either a Model 3 (185.8 inches/4.7 m) or a Model Y (188.7 inches/4.8 m).</p>\n  <p>But before anyone gets too excited, it’s possible that this new small EV—should it ever happen—won’t go on sale here in the US, at least not at first or without complications. Three of Reuters’ sources claim the new EV will be built in China, which means any imports to the US would be subject to a 100 percent tariff, one of the few <a href=\"https://arstechnica.com/cars/2024/05/biden-set-to-levy-100-tariffs-on-chinese-evs-this-week/\">Biden administration policies</a> that has met muster with the <a href=\"https://arstechnica.com/cars/2025/03/auto-industry-braces-for-chaos-as-trump-sets-25-tariff-on-all-imports/\">Trump administration</a>. The other source told the news agency that adding production to Tesla’s factories in the US and Germany could be possible at a later date.</p>\n </body>\n</html>",
+  "aiSummary": "据报道，特斯拉正在开发一款更小、更经济实惠的电动汽车，但由于关税政策，其生产计划和在美国市场的上市前景仍存在不确定性。",
+  "oneSentenceSummary": "据报道，特斯拉正在开发一款更小、更经济实惠的电动汽车，但由于关税政策，其生产计划和在美国市场的上市前景仍存在不确定性。",
+  "summary": "在为了优先生产人形机器人而搁置了 Model S 和 X 的相关计划后，据报道，特斯拉正通过一款全新的、更小且更实惠的电动汽车将重心转回其核心汽车业务。路透社援引四位匿名供应链消息人士的话称，这款车采用了全新的设计，车身长度明显短于 Model 3 或 Model Y。然而，该项目在进入美国市场方面面临潜在障碍：初步生产计划在中国进行，这意味着该车型将面临高额进口关税，尽管该公司最终可能会将生产扩展到其美国和德国的工厂。",
+  "mainPoints": [
+    {
+      "point": "特斯拉正在开发一个全新的小型电动汽车平台。",
+      "explanation": "与以往基于现有底盘的迭代不同，这款车被描述为一种全新的设计，车长约为 168 英寸，旨在扩展特斯拉有限的产品阵容。"
+    },
+    {
+      "point": "生产策略为美国市场带来了不确定性。",
+      "explanation": "由于初步制造计划在中国进行，该车在美国面临 100% 的进口关税，这使其对美国消费者的潜在可用性和定价策略变得复杂。"
+    },
+    {
+      "point": "特斯拉的产品战略仍处于变动之中。",
+      "explanation": "在为了人形机器人而降低传统车型优先级这一争议性决定之后，此次转向预算友好型电动汽车，凸显了该公司战略方向的波动性。"
+    }
+  ],
+  "keyQuotes": [
+    "特斯拉正在研发一款更小、更便宜的电动汽车，这是一款全新的设计，而不是基于 Model 3 或 Model Y 的产品。",
+    "路透社的三位消息人士称，这款新电动汽车将在中国制造，这意味着任何进口到美国的车辆都将面临 100% 的关税。"
+  ],
+  "tags": [
+    "特斯拉",
+    "电动汽车",
+    "汽车工业",
+    "电动汽车市场",
+    "供应链"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 260,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "BT_NEWS",
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775744060000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 14:14:20"
+}

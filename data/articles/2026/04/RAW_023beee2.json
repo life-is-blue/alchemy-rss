@@ -1,0 +1,53 @@
+{
+  "id": "RAW_023beee2",
+  "title": "特朗普强制推行煤电的紧急行政令既“非法”又愚蠢",
+  "url": "https://arstechnica.com/science/2026/04/trumps-emergency-orders-pushing-coal-power-are-illegal-as-well-as-dumb/",
+  "date": "2026-04-09 14:21:08",
+  "author": "Inside Climate News",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"page-anchor-wrapper\">\n   <a class=\"\" name=\"page-1\" data-page=\"1\" data-url=\"https://arstechnica.com/science/2026/04/trumps-emergency-orders-pushing-coal-power-are-illegal-as-well-as-dumb/\"></a>\n  </div>\n  <p>At one time, the US electricity grid ran mostly on coal.</p>\n  <p>But coal-fired power plants have steadily been decommissioned. Power producers found the plants were too expensive to operate and carried risks tied to toxic air pollution, waste, and climate-warming emissions.</p>\n  <p>Then President Donald Trump returned to the White House last year with a fresh zeal to revive the coal industry. His Department of Energy invoked emergency powers to force utilities to keep old plants operating.</p>\n  <p>Not only is this bad policy, it’s also a misuse of a law designed for wartime, according to legal scholars and analysts. If allowed to stand, this poses problems for utilities, grid operators, and regulators who plan for decades-long timeframes, only to be overruled by short-term political imperatives that favor certain industries.</p>\n  <p>“It’s just illegal,” said Alexandra Klass, a professor at University of Michigan Law School, about the emergency orders. She served in the Biden administration as a deputy general counsel at the Department of Energy.</p>\n  <p>Environmental advocates and state officials have challenged the orders in court, with <a href=\"https://www.utilitydive.com/news/doe-emergency-order-campbell-coal-power-plant-appeal/815387/\">cases underway</a> in the US Court of Appeals for the District of Columbia Circuit.</p>\n  <p>I’m focusing on the emergency orders because I don’t think the public grasps how much these actions undermine the principles of utility planning and regulation, with harmful consequences for consumer bills and the climate.</p>\n  <p>While the Trump administration props up coal, it aims to slow the deployment of clean alternatives with actions such as a stop-work order on offshore wind and slow-walking permits to build onshore wind.</p>\n  <p>Klass co-authored a <a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6509640\">new essay</a> with Dave Owen of UC Law San Francisco in the Michigan Law Review Online that examines the history and current use of presidential emergency powers on energy.</p>\n  <p>The Department of Energy under President Donald Trump is invoking Section 202(c) of the Federal Power Act, a provision first used by President Franklin D. Roosevelt in 1941 to meet electricity demand in the Southeastern United States in the run-up to US entry into World War II. The idea was that the government needed the ability to step in to meet short-term needs when existing regulations failed to do so.</p>\n </body>\n</html>",
+  "aiSummary": "本文分析了特朗普政府利用战时紧急权力强制延长老化燃煤电厂运营所带来的法律与经济影响。",
+  "oneSentenceSummary": "本文分析了特朗普政府利用战时紧急权力强制延长老化燃煤电厂运营所带来的法律与经济影响。",
+  "summary": "本文探讨了特朗普政府援引《联邦电力法》第 202(c) 条，强制要求公用事业公司继续运营那些因高成本和环境风险而计划退役的燃煤电厂。法律学者认为，这种将原本旨在应对战时紧急情况的权力用于此类目的，属于滥用职权。文章强调，这些政治干预破坏了电网的长期规划，威胁到消费者的电价，并阻碍了向海上风电等可再生能源的转型，同时指出这些行为目前正在联邦法院受到挑战。",
+  "mainPoints": [
+    {
+      "point": "将战时紧急权力滥用于产业政策。",
+      "explanation": "政府正在利用《联邦电力法》第 202(c) 条——这一旨在应对短期战时电力短缺的条款——来强制运营不具备经济效益的煤电厂，法律专家将其定性为非法的越权行为。"
+    },
+    {
+      "point": "对公用事业和电网长期规划的破坏。",
+      "explanation": "强制保留老化的煤电资产破坏了电网运营商和监管机构长达数十年的规划周期，给能源市场带来了不稳定性，并可能增加消费者的用电成本。"
+    },
+    {
+      "point": "对清洁能源替代方案的战略性阻挠。",
+      "explanation": "除了扶持煤炭产业，政府还通过推迟许可和发布停工令，积极减缓可再生能源的部署，对能源转型造成了双重打击。"
+    }
+  ],
+  "keyQuotes": [
+    "这纯属非法。",
+    "如果这种做法被允许存在，将给那些以数十年为周期进行规划的公用事业公司、电网运营商和监管机构带来问题，因为他们的规划可能会被短期的政治需求所推翻。",
+    "其初衷是让政府在现有法规失效时，有能力介入以满足短期需求。"
+  ],
+  "tags": [
+    "能源政策",
+    "煤电",
+    "联邦电力法",
+    "电网监管",
+    "美国政治"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 357,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775744468000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 14:21:08"
+}

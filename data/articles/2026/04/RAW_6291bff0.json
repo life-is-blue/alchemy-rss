@@ -1,0 +1,53 @@
+{
+  "id": "RAW_6291bff0",
+  "title": "企业级语音 AI，支持本地化部署",
+  "url": "https://elevenlabs.io/blog/enterprise-voice-ai-deployed-locally",
+  "date": "2026-04-09 12:00:00",
+  "author": "Fergal Burnett Small",
+  "siteName": "ElevenLabs Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"\">\n   <div class=\"relative\">\n    <!--$!-->\n    <template data-dgst=\"BAILOUT_TO_CLIENT_SIDE_RENDERING\"></template>\n    <!--/$-->\n    <div class=\"relative mt-40 pb-60 lg:mt-60\">\n     <div class=\"container relative\">\n      <div class=\"flex justify-center xl:justify-end\">\n       <div class=\"w-full lg:w-9/12 xl:w-10/12 xl:px-100\">\n        <main class=\"py-20 lg:py-40\">\n         <div class=\"mt-40 px-16 md:px-32\">\n          <div style=\"--em:var(--tw-font-size-lg);--lh:var(--tw-line-height-lg-loose, var(--tw-line-height-lg));--trim-top:var(--tw-trim-top-lg-loose, var(--tw-trim-top-lg));--trim-bottom:var(--tw-trim-bottom-lg-loose, var(--tw-trim-bottom-lg))\" class=\"typography typography-loose typography-headings\">\n           <p>ElevenLabs can now be deployed on-premise and on-device. This expands our deployment options beyond cloud and VPC, to cover the full range of enterprise environments.</p>\n           <h2 id=\"on-premise-deployment\"><span style=\"font-weight:bold\">On-premise deployment</span></h2>\n           <p>On-Premise runs on your own servers, in your own data center, on Confidential Computing infrastructure with GPUs.</p>\n           <p>This is best suited to government agencies and organizations that cannot procure cloud infrastructure in their required region.</p>\n           <h2 id=\"on-device-deployment\"><span style=\"font-weight:bold\">On-device deployment</span></h2>\n           <p>On-Device runs directly on the hardware itself and is built for offline inference on constrained compute.</p>\n           <p>This is best suited to use cases that require offline inference, such as automotive manufacturers embedding voice into vehicles or wearables.</p>\n           <h2 id=\"virtual-private-cloud\"><span style=\"font-weight:bold\">Virtual Private Cloud</span></h2>\n           <p>For organizations that need their data to remain inside their own cloud environment we offer VPC deployments on AWS SageMaker and GCP Vertex. Our models run in your cloud account and we cannot access your data or logs.</p>\n           <p>This is best suited to organizations with data residency requirements that are hard to meet with SaaS.&nbsp;</p>\n           <h2 id=\"custom-voices-and-fine-tuning\"><span style=\"font-weight:bold\">Custom voices and fine-tuning</span></h2>\n           <p>On-Premise and On-Device models support custom voices developed in collaboration with our audio team. We also support fine-tuning for specific languages or dialects, and deeper model customization is available depending on the use case.</p>\n           <h2 id=\"model-updates\"><span style=\"font-weight:bold\">Model updates</span></h2>\n           <p>These are purpose-built models, not simply a cloud model packaged for local execution. They are developed for their target environments and updated on a controlled cadence aligned with enterprise requirements for stability, security, and long-term support.</p>\n           <h2 id=\"availability\"><span style=\"font-weight:bold\">Availability</span></h2>\n           <p>On-Premise and On-Device are in early access, with initial releases expected in the first half of 2026. VPC deployments are available now.</p>\n           <p>Join the waitlist: <a href=\"https://elevenlabs.io/on-prem-deployments\">elevenlabs.io/on-prem-deployments</a></p>\n          </div>\n         </div>\n        </main>\n        <div class=\"mt-40 lg:mt-60\">\n         <div class=\"lg:gap-x-30 grid grid-cols-1 gap-x-20 gap-y-64 md:grid-cols-2\">\n          <article class=\"tw-relative tw-group\">\n           <dl class=\"tw-mt-5 tw-px-4 tw-flex tw-flex-wrap tw-gap-x-2.5 tw-gap-y-3\"></dl>\n          </article>\n         </div>\n        </div>\n       </div>\n      </div>\n     </div>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "ElevenLabs 扩展了其部署选项，现已支持本地部署（on-premise）和端侧部署（on-device），为企业级语音 AI 提供离线推理和高安全性本地运行能力。",
+  "oneSentenceSummary": "ElevenLabs 扩展了其部署选项，现已支持本地部署（on-premise）和端侧部署（on-device），为企业级语音 AI 提供离线推理和高安全性本地运行能力。",
+  "summary": "ElevenLabs 宣布对其部署架构进行重大扩展，从单一的云服务模式转向提供本地部署和端侧部署能力。这些新选项专为在数据驻留、安全或连接性方面有严格要求的企业环境而设计。本地部署主要针对政府和高安全领域，利用本地 GPU 基础设施；而端侧部署则专注于汽车和可穿戴硬件的离线推理。此外，该公司继续支持 AWS 和 GCP 上的虚拟私有云（VPC），提供了一套全面的部署模型，包括自定义语音微调和企业级稳定性更新。",
+  "mainPoints": [
+    {
+      "point": "扩展至本地和端侧部署模型。",
+      "explanation": "ElevenLabs 现在支持在本地数据中心和受限硬件上运行其语音模型，以满足无法依赖公有云基础设施的行业需求。"
+    },
+    {
+      "point": "针对受限环境打造的专用模型。",
+      "explanation": "这些模型并非简单的云端到本地移植，而是针对目标硬件进行了优化，以确保在离线或受限环境下的稳定性、安全性和性能。"
+    },
+    {
+      "point": "通过 VPC 和本地执行增强数据隐私。",
+      "explanation": "通过在 SageMaker/Vertex 上提供 VPC 以及本地部署选项，ElevenLabs 确保了敏感的音频数据和日志完全保留在客户的可控环境中。"
+    }
+  ],
+  "keyQuotes": [
+    "ElevenLabs 现在可以进行本地和端侧部署。这使我们的部署选项超出了云端和 VPC 的范畴，覆盖了所有类型的企业环境。",
+    "端侧部署直接在硬件上运行，专为受限计算环境下的离线推理而构建。",
+    "这些是专门构建的模型，而不仅仅是为本地执行而打包的云模型。"
+  ],
+  "tags": [
+    "语音 AI",
+    "本地部署",
+    "边缘 AI",
+    "企业级 AI",
+    "数据驻留"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 84,
+  "wordCount": 262,
+  "domain": "elevenlabs.io",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_31dbd8",
+  "sourceName": "ElevenLabs Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775736000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 12:00:00"
+}

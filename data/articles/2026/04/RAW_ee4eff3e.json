@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ee4eff3e",
+  "title": "挑战硅谷巨头的 70 人 AI 图像初创公司",
+  "url": "https://www.wired.com/story/black-forest-labs-ai-image-generation/",
+  "date": "2026-04-09 14:00:00",
+  "author": "Maxwell Zeff",
+  "siteName": "WIRED",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span class=\"lead-in-text-callout\">Standing inside the</span> HumanX conference in San Francisco’s Moscone Center, it’s hard not to feel like you’re at the center of the AI universe. Technology leaders swarm the building, and the headquarters of OpenAI and Anthropic are just down the block. But a 70-person startup headquartered 5,000 miles away in Germany’s Black Forest—a region famous for its ham—has become a top competitor to Silicon Valley’s leading labs in AI image generation.</p>\n  <p class=\"paywall\">In December, Black Forest Labs raised funds at a <a data-offer-url=\"https://bfl.ai/blog/our-300m-series-b\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://bfl.ai/blog/our-300m-series-b&quot;}\" href=\"https://bfl.ai/blog/our-300m-series-b\" rel=\"nofollow noopener\" target=\"_blank\">$3.25 billion</a> valuation, after signing deals to power AI image-generation features in Adobe and the graphic design platform Canva. It has even struck agreements with major AI labs like Microsoft, Meta, and xAI to power similar features in their products.</p>\n  <p class=\"paywall\">Nearly two years after launch, Black Forest Labs can afford to be picky about who it works with. In 2024, Elon Musk’s xAI tapped Black Forest Labs to power <a data-offer-url=\"https://techcrunch.com/2024/08/14/meet-black-forest-labs-the-startup-powering-elon-musks-unhinged-ai-image-generator/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://techcrunch.com/2024/08/14/meet-black-forest-labs-the-startup-powering-elon-musks-unhinged-ai-image-generator/&quot;}\" href=\"https://techcrunch.com/2024/08/14/meet-black-forest-labs-the-startup-powering-elon-musks-unhinged-ai-image-generator/\" rel=\"nofollow noopener\" target=\"_blank\">Grok’s first image generator</a>. That partnership put Black Forest Labs on the map but generated a lot of controversy due to the chatbot’s limited safeguards. It ended months later when xAI developed an in-house AI image model.</p>\n  <p class=\"paywall\">In recent months, xAI approached Black Forest Labs about licensing the startup's technology again, sources familiar with the matter tell WIRED. This time around, Black Forest Labs declined, the sources said, deeming it too operationally difficult to partner with xAI, which has a famously chaotic work environment. xAI did not immediately respond to WIRED’s request for comment.</p>\n  <p class=\"paywall\">In September, Black Forest Labs struck a <a data-offer-url=\"https://www.bloomberg.com/news/articles/2025-09-09/meta-to-pay-140-million-to-use-black-forest-labs-ai-for-images\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.bloomberg.com/news/articles/2025-09-09/meta-to-pay-140-million-to-use-black-forest-labs-ai-for-images&quot;}\" href=\"https://www.bloomberg.com/news/articles/2025-09-09/meta-to-pay-140-million-to-use-black-forest-labs-ai-for-images\" rel=\"nofollow noopener\" target=\"_blank\">$140 million multiyear deal</a> to give Meta access to its AI image-generation technology.</p>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--sponsor-product\"></div>\n  <p class=\"paywall\">These AI labs want to work with Black Forest Labs because its image generators are among the world's best, ranking just below OpenAI and Google's offerings on the third-party firm <a data-offer-url=\"https://artificialanalysis.ai/image/leaderboard/text-to-image\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://artificialanalysis.ai/image/leaderboard/text-to-image&quot;}\" href=\"https://artificialanalysis.ai/image/leaderboard/text-to-image\" rel=\"nofollow noopener\" target=\"_blank\">Artificial Analysis' benchmarks</a>. The startup also offers some of the most downloaded text-to-image models on <a data-offer-url=\"https://huggingface.co/models?pipeline_tag=text-to-image&amp;sort=downloads\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://huggingface.co/models?pipeline_tag=text-to-image&amp;sort=downloads&quot;}\" href=\"https://huggingface.co/models?pipeline_tag=text-to-image&amp;sort=downloads\" rel=\"nofollow noopener\" target=\"_blank\">Hugging Face</a>, indicating that a lot of AI image tools on the market are likely powered by a free version of Black Forest Labs’ technology.</p>\n  <p class=\"paywall\">It’s particularly impressive since the company has historically had far fewer resources than its competitors. This has led it to a more efficient line of research called latent diffusion, which is essentially when an AI model first sketches out a rough blueprint of an image, and then paints in more detail.</p>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--in-content\"></div>\n  <p class=\"paywall\">Latent diffusion “enabled us to put out very powerful models that took orders of magnitude less resources than our competitor’s models,” said cofounder Andreas Blattmann in an interview with WIRED onstage at HumanX this week.</p>\n  <p class=\"paywall\">Despite its success, Black Forest Labs believes image generation is just the beginning. Blattmann said the startup plans to unveil a robot powered by one of its AI models later this year. (He did not reveal what company is making the hardware.) The push is part of a larger opportunity the company sees to build AI that can perceive and take actions in the physical world.</p>\n  <p class=\"paywall\">“Visual intelligence is so much more than content creation. Content creation is just the first segue into this entire technology,” said Blattmann. “What I’m personally super excited about—and that’s a pattern throughout this conference—is physical AI.”</p>\n  <p class=\"paywall\">Black Forest Labs is also in talks with a handful of hardware companies, to power features in products like smart glasses and robots, sources tell WIRED.</p>\n  <h2 class=\"paywall\">Building in the Black Forest</h2>\n  <p class=\"paywall\">Blattmann and his cofounders, Robin Rombach and Patrick Esser, made a name for themselves publishing some groundbreaking research on AI image models in 2021. In 2022, they were hired by Stability AI and released Stable Diffusion, a popular open source AI image generator based on their prior research. But two years later, they announced their departure and launched Black Forest Labs.</p>\n  <p class=\"paywall\">Rather than move to San Francisco, the trio decided to maintain a headquarters near their hometowns in Freiburg, Germany. Blattmann said the decision has been key to the company’s success.</p>\n </body>\n</html>",
+  "aiSummary": "由 Stable Diffusion 创始团队在德国创立的初创公司 Black Forest Labs 已成为 AI 图像生成领域的主要竞争者，在与 Adobe、Canva 和 Meta 达成重磅合作的同时，正向物理 AI 和机器人领域转型。",
+  "oneSentenceSummary": "由 Stable Diffusion 创始团队在德国创立的初创公司 Black Forest Labs 已成为 AI 图像生成领域的主要竞争者，在与 Adobe、Canva 和 Meta 达成重磅合作的同时，正向物理 AI 和机器人领域转型。",
+  "summary": "总部位于德国、仅有 70 人的初创公司 Black Forest Labs 正在挑战硅谷在图像生成领域的统治地位。该公司由 Stable Diffusion 的原始创作者创立，目前估值已达 32.5 亿美元，并与 Adobe、Canva 和 Meta 等行业巨头建立了重要合作伙伴关系。尽管与科技巨头相比规模较小且资源有限，但该公司利用高效的潜在扩散（latent diffusion）研究，成功打造出顶级模型。除了内容创作，该公司正积极向“物理 AI”领域扩张，计划将其模型集成到机器人和智能硬件中，标志着其从生成式媒体向具身智能的战略转型。",
+  "mainPoints": [
+    {
+      "point": "高效的研究方法驱动竞争优势。",
+      "explanation": "通过专注于潜在扩散技术，Black Forest Labs 在使用远少于竞争对手的计算资源的情况下，实现了与 OpenAI 和 Google 等行业巨头相当的性能表现。"
+    },
+    {
+      "point": "从生成式媒体向物理 AI 的战略转型。",
+      "explanation": "该公司将图像生成视为切入点，其长期路线图聚焦于“视觉智能”——即通过机器人和智能硬件，使 AI 能够感知并与物理世界进行交互。"
+    },
+    {
+      "point": "地理独立性作为竞争优势。",
+      "explanation": "将总部设在德国，远离硅谷激烈的竞争和高昂的成本，使创始人能够保持专注并提升运营效率。"
+    }
+  ],
+  "keyQuotes": [
+    "潜在扩散技术使我们能够发布非常强大的模型，而所消耗的资源比竞争对手的模型少几个数量级。",
+    "视觉智能远不止是内容创作。内容创作只是这项技术的第一个切入点。",
+    "我个人非常兴奋的一点——这也是贯穿本次会议的一个模式——就是物理 AI。"
+  ],
+  "tags": [
+    "Black Forest Labs",
+    "生成式 AI",
+    "潜在扩散",
+    "物理 AI",
+    "机器人"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 643,
+  "domain": "wired.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_11543bce",
+  "sourceName": "WIRED",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775743200000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 14:00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_3cb15687",
+  "title": "Artemis II 宇航员尚未完全感受到此次任务的深远影响",
+  "url": "https://arstechnica.com/space/2026/04/astronauts-recall-the-sci-fi-experience-of-flying-in-the-shadow-of-the-moon/",
+  "date": "2026-04-09 19:22:29",
+  "author": "Stephen Clark",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"page-anchor-wrapper\">\n   <a class=\"\" name=\"page-1\" data-page=\"1\" data-url=\"https://arstechnica.com/space/2026/04/astronauts-recall-the-sci-fi-experience-of-flying-in-the-shadow-of-the-moon/\"></a>\n  </div>\n  <p>On the home stretch of their nine-day mission, the four astronauts flying aboard NASA’s Orion spacecraft are just beginning to reflect on their experience of flying beyond the Moon.</p>\n  <p>Their memories of Monday’s encounter with the Moon are still fresh as they return to Earth, heading for reentry and splashdown in the Pacific Ocean on Friday evening.</p>\n  <p>“I’m actually getting chills right now just thinking about it. My palms are sweating,” said Reid Wiseman, commander of the Artemis II mission. “But it is amazing to watch your home planet disappear behind the Moon. You can see the atmosphere. You could actually see the terrain on the Moon projected across the Earth as the Earth was eclipsing behind the Moon. It was just an unbelievable sight, and then it was gone. It was out of sight.”</p>\n  <p>Flying more than a quarter-million miles from home, father than any humans in history, the astronauts flew into a radio blackout for 40 minutes. Out of contact with Earth, the crew continued snapping pictures and shared a batch of maple cookies supplied by Canadian astronaut Jeremy Hansen, the first person not from the United States to ever travel to deep space.</p>\n  <p>“We took about three or four minutes, just as a crew, to really reflect on where we were, and then it was right back into the science,” Wiseman told reporters in a long-distance press conference Wednesday night. “We still haven’t even begun to reflect on this mission. We had a little bit of a light work day yesterday, and we were starting to journal and reflect a little bit. And there’s a lot that our brains have to process. Human minds should not go through what these just went through, and it is a true gift.”</p>\n  <p>Soon after reaching their closest point to the Moon, some 4,000 miles away, the astronauts flew into the shadow of the Moon. For Victor Glover, pilot of Artemis II, this was one of the “greatest gifts” of the mission.</p>\n </body>\n</html>",
+  "aiSummary": "Artemis II 机组人员分享了他们对飞越月球这一深刻经历的初步反思，强调了心理层面的冲击以及从月球表面观察地球被遮挡时的独特视角。",
+  "oneSentenceSummary": "Artemis II 机组人员分享了他们对飞越月球这一深刻经历的初步反思，强调了心理层面的冲击以及从月球表面观察地球被遮挡时的独特视角。",
+  "summary": "随着 Artemis II 任务接近尾声，四名机组人员回顾了他们飞离地球比历史上任何人类都远的空前经历。指挥官 Reid Wiseman 和飞行员 Victor Glover 描述了任务的超现实感，包括 40 分钟的无线电静默以及地球消失在月球背后的震撼景象。宇航员们强调，他们尚未完全消化此次旅程的深远意义，并指出在平衡日常科学职责的同时，他们的大脑仍在处理深空旅行带来的非凡体验。",
+  "mainPoints": [
+    {
+      "point": "深空旅行带来的心理影响是深远的，需要时间来消化。",
+      "explanation": "宇航员们指出，他们的大脑仍在努力理解这一经历的规模，并强调人类意识并非天生适应远离地球的极端距离。"
+    },
+    {
+      "point": "即使在历史性的里程碑时刻，操作纪律依然至关重要。",
+      "explanation": "尽管任务令人敬畏，但机组人员仍保持着严格的时间表，在无线电静默期间进行短暂反思后，立即投入到科学任务中。"
+    },
+    {
+      "point": "此次任务为观察地球的脆弱性提供了独特的视角。",
+      "explanation": "目睹地球被月球遮挡，为机组人员提供了一个罕见的视角，突显了大气层以及我们母星在广袤太空中的物理现实。"
+    }
+  ],
+  "keyQuotes": [
+    "人类的大脑本不该经历这些，这真是一份礼物。",
+    "看着你的母星消失在月球背后，这种感觉太奇妙了。",
+    "我们甚至还没有开始反思这次任务。"
+  ],
+  "tags": [
+    "Artemis II",
+    "NASA",
+    "太空探索",
+    "宇航员",
+    "深空"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 331,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775762549000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 19:22:29"
+}

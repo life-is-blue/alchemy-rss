@@ -1,0 +1,52 @@
+{
+  "id": "RAW_e37f045d",
+  "title": "宾夕法尼亚州警员利用驾照照片制作 AI 色情内容",
+  "url": "https://arstechnica.com/tech-policy/2026/04/state-police-corporal-created-porn-deepfakes-from-drivers-license-photos/",
+  "date": "2026-04-09 16:48:55",
+  "author": "Nate Anderson",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>A corporal in the Pennsylvania state police yesterday pleaded guilty to a mind-boggling set of crimes that include going through his co-workers’ underwear, possessing a stolen gun, having child sexual abuse material on his hard drives, and using AI tools to create over 3,000 pornographic “deepfakes.”</p>\n  <p>One of the deepfakes involved a district court judge, while many of the others were created based on photos downloaded illicitly from state databases, including driver’s license photos.</p>\n  <p>Some of the imagery was even created at police barracks, using state-owned devices.</p>\n  <h2>Deepfakes from driver’s licenses</h2>\n  <p>Stephen Kamnik, 39, was arrested last year and charged with nine felonies and six misdemeanors. According to the Pennsylvania attorney general, “For years, Kamnik allegedly misused Commonwealth computer resources for his own personal sexual gratification, including the creation of AI-generated pornography of numerous female citizens of Pennsylvania.”</p>\n  <p>The <a href=\"https://www.inquirer.com/crime/stephen-kamnik-deepfake-porn-guilty-plea-20260408.html\">Philadelphia Inquirer notes</a> that the investigation began back in 2024 after police officials “noticed that the computer assigned to [Kamnik] had been using an unusually high amount of Internet bandwidth” and that an external hard drive had been repeatedly attached to it.</p>\n  <p>This aroused suspicion and eventually led to searches of Kamnik’s phone, computer, and external hard drive, which revealed a massive trove of illicit material. This material included thousands of pornographic deepfakes that Kamnik had generated using AI tools.</p>\n  <p>The attorney general <a href=\"https://www.attorneygeneral.gov/taking-action/pa-state-police-cpl-pleads-guilty-to-using-work-computer-to-create-a-i-involved-pornography-also-secretly-recorded-photographed-individuals/\">said yesterday</a> that Kamnik got material for this process through several methods, such as “secretly filming and photographing individuals, including coworkers.” Investigators even found “an unlawfully recorded video of a Montgomery County magisterial district judge during a court proceeding which Kamnik also edited for apparent lewd purposes.”</p>\n  <p>But many of the AI deepfakes were generated using the faces of women pulled from state databases. Kamnik’s devices showed that he had used “a secured database, JNET, to obtain hundreds of photographs of females—in violation of JNET usage policies,” the attorney general said. One of the rules JNET users must agree to before searching is “that personal use of JNET is strictly prohibited.”</p>\n </body>\n</html>",
+  "aiSummary": "一名宾夕法尼亚州警员已承认利用州政府数据库（包括驾照照片）和 AI 工具，为市民及同事制作了数千张色情深度伪造（deepfake）图片。",
+  "oneSentenceSummary": "一名宾夕法尼亚州警员已承认利用州政府数据库（包括驾照照片）和 AI 工具，为市民及同事制作了数千张色情深度伪造（deepfake）图片。",
+  "summary": "39 岁的宾夕法尼亚州警员 Stephen Kamnik 在调查揭露其利用州政府设备及 JNET 安全数据库非法获取驾照照片后，已承认犯有多项重罪。他利用这些照片以及私下拍摄的同事和法官的录像，生成了超过 3，000 张色情深度伪造图片。调查起因于异常的网络带宽使用和未经授权的外部驱动器活动，最终在州政府配发的设备中发现了大量非法材料。",
+  "mainPoints": [
+    {
+      "point": "利用政府安全数据库进行 AI 内容生成的系统性滥用。",
+      "explanation": "肇事者利用州政府安全数据库 JNET 获取驾照照片，用于制作未经同意的深度伪造色情内容，这凸显了内部数据访问控制的关键漏洞。"
+    },
+    {
+      "point": "AI 工具助长了新型职场及公共骚扰。",
+      "explanation": "该案件展示了易于获取的 AI 生成工具如何被拥有敏感个人数据访问权限的人员武器化，将专业资源转化为严重性骚扰的工具。"
+    },
+    {
+      "point": "网络监控是检测内部威胁的关键机制。",
+      "explanation": "调查因异常的网络带宽使用和未经授权的硬件连接而启动，强调了强大的 IT 监控在检测政府基础设施内非法活动方面的重要性。"
+    }
+  ],
+  "keyQuotes": [
+    "据称，Kamnik 多年来一直滥用联邦计算机资源以满足个人性欲，包括为多名宾夕法尼亚州女性市民制作 AI 生成的色情内容。",
+    "Kamnik 的设备显示，他曾使用‘安全数据库 JNET 获取了数百张女性照片，这违反了 JNET 的使用政策。’"
+  ],
+  "tags": [
+    "深度伪造",
+    "AI 伦理",
+    "数据隐私",
+    "网络安全",
+    "执法部门"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 333,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775753335000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 16:48:55"
+}

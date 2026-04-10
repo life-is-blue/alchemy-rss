@@ -1,0 +1,53 @@
+{
+  "id": "RAW_bb7c0fe1",
+  "title": "大众汽车停止在美国生产 ID.4，库存可维持至 2027 年",
+  "url": "https://arstechnica.com/cars/2026/04/volkswagen-ends-id-4-production-in-tennessee-to-build-atlas-suv/",
+  "date": "2026-04-09 17:14:31",
+  "author": "Jonathan M. Gitlin",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Among <a href=\"https://arstechnica.com/cars/2016/02/report-vw-told-to-make-electric-cars-in-us-as-emissions-cheat-fallout-continues/\">the requirements</a> of Volkswagen’s Dieselgate settlement with the Department of Justice back in 2016 was to start building electric vehicles locally at the company’s factory in Chattanooga, Tennessee. That was a reality by 2021, when <a href=\"https://arstechnica.com/cars/2021/09/volkswagens-electric-id-4-was-already-good-does-awd-change-that/\">we drove our first US-made VW ID.4</a>. Five years later, VW is moving on. After mid-April, no more ID.4s will roll down Chattanooga’s assembly line, which instead will be reconfigured for the brand’s newly revealed gasoline-powered Atlas SUV.</p>\n  <p>The ID.4 was well-received when it debuted in 2021, and the model had a mostly strong 2025, selling 31 percent more than the year before. But sales of the electric VW collapsed after the Trump administration abolished the clean vehicle tax credit at the end of Q3 2025; the next three months saw ID.4 sales fall by 62 percent year over year.</p>\n  <p>VW is gambling that Americans will instead want more gas-powered SUVs—probably a decision made before Trump started a war in the Middle East that has increased the price of gasoline by more than a dollar per gallon in the last few weeks. Snark aside, the Atlas is VW’s second-best seller here, and VW wants the second-gen Atlas in dealerships by this fall.</p>\n </body>\n</html>",
+  "aiSummary": "大众汽车正结束其查塔努加工厂 ID.4 电动汽车的生产，转而制造燃油版 Atlas SUV，原因是取消清洁能源汽车税收抵免后，电动汽车销量出现大幅下滑。",
+  "oneSentenceSummary": "大众汽车正结束其查塔努加工厂 ID.4 电动汽车的生产，转而制造燃油版 Atlas SUV，原因是取消清洁能源汽车税收抵免后，电动汽车销量出现大幅下滑。",
+  "summary": "大众汽车宣布停止在其田纳西州工厂生产 ID.4 电动汽车，标志着该公司背离了 2016 年“排放门”和解协议中对电动汽车的承诺。此前，由于联邦清洁能源汽车税收抵免政策的废除，ID.4 在 2025 年第四季度的销量同比暴跌 62%。该工厂目前正在进行重新配置，以优先生产大众品牌的高销量车型——燃油版 Atlas SUV，尽管当前市场波动且燃油成本不断上升。",
+  "mainPoints": [
+    {
+      "point": "从电动汽车生产向燃油 SUV 的战略转型。",
+      "explanation": "大众汽车正在重新调整其查塔努加装配线的用途，以生产第二代 Atlas SUV，优先考虑经过市场验证的高销量内燃机车型，而非表现不佳的 ID.4 电动汽车生产线。"
+    },
+    {
+      "point": "政策变动显著影响了电动汽车的市场需求。",
+      "explanation": "2025 年第三季度末清洁能源汽车税收抵免政策的取消，是导致 ID.4 销量下滑 62% 的主要催化剂，这表明美国电动汽车市场对联邦补贴具有高度敏感性。"
+    },
+    {
+      "point": "库存过剩预示着长期的过渡期。",
+      "explanation": "尽管停止了生产，但该公司持有的库存足以维持到 2027 年，这表明市场转型是通过现有库存来管理的，而非立即退出电动汽车领域。"
+    }
+  ],
+  "keyQuotes": [
+    "4 月中旬之后，查塔努加工厂的装配线上将不再有 ID.4 下线，取而代之的是该品牌新发布的燃油版 Atlas SUV。",
+    "在特朗普政府于 2025 年第三季度末废除清洁能源汽车税收抵免后，大众电动汽车的销量出现崩盘。",
+    "Atlas 是大众在美国销量第二高的车型，大众希望第二代 Atlas 能在今年秋季进入经销商展厅。"
+  ],
+  "tags": [
+    "大众汽车",
+    "电动汽车",
+    "汽车工业",
+    "电动汽车市场",
+    "制造业"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 198,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775754871000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 17:14:31"
+}
