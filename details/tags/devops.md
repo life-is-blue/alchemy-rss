@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 20:13:26 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 22:23:00 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -464,9 +464,7 @@
 
 ### [Google-Cloud-强调其在-PostgreSQL-核心能力方面的持续投入](https://www.infoq.com/news/2026/04/google-cloud-postgresql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-10 09:30:00 | 标签: PostgreSQL, Google Cloud, 逻辑复制, 数据库升级, 双活复制
-
-> 本文报道了 Google Cloud 在 2025 年 7 月至 12 月期间对 PostgreSQL 上游社区的技术贡献。重点工作集中在逻辑复制领域，特别是引入了自动冲突检测功能，以促进双活配置的实现。其他重要改进包括序列复制、针对大对象的 pg_upgrade 性能优化，以及旨在提升系统稳健性和 WAL 持久性的多项 Bug 修复。尽管社区内部对于逻辑复制与分布式 SQL 在一致性权衡方面仍存在持续争论，但这些进展标志着 PostgreSQL 作为企业级数据库标准的地位正在进一步巩固。
+2026-04-10 09:30:00
 
 
 
