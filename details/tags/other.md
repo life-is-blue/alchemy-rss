@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 18:20:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 20:13:26 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -3455,6 +3455,78 @@
 
 
 
+### [击败-PI！星动纪元登顶具身奥林匹克，狂揽三项全球冠军](https://www.qbitai.com/2026/04/399351.html)
+
+2026-04-10 10:32:05 | 标签: 具身智能, 星动纪元, VLA大模型, 机器人, 灵巧操作
+
+> 本文报道了中国具身智能初创公司星动纪元在 Benjie's Olympics 赛事中的卓越表现。该赛事由前 Google 专家创办，聚焦于解决「莫拉维克悖论」，即机器难以完成人类日常的灵巧操作任务。星动纪元在剥橘子、开锁（金牌难度）及翻袜子（银牌难度）三项任务中击败了具身智能巨头 Physical Intelligence (PI) 的闭源模型。其核心竞争力源于自研的 VLA 具身大模型，该模型通过基础模型知识迁移、自适应视觉注意力机制以及异步高频推理策略，显著提升了机器人在真实复杂环境下的泛化能力、感知精度和动作响应速度。目前，该技术已在物流、制造及家电等多个商业领域进入实测与落地阶段。
+
+
+
+### [实测刘翔-pick-的国产-AI-汽车，BBA-老车主的豪华滤镜碎了](https://www.qbitai.com/2026/04/398869.html)
+
+2026-04-10 09:31:57 | 标签: 智己汽车, 自动驾驶, 端到端大模型, 智能座舱, 新能源汽车
+
+> 文章以刘翔代言智己汽车为引子，对智己最新中大型 SUV LS8 进行了全方位实测。内容重点涵盖了四个维度：一是智舱体验，首发搭载阿里千问大模型，实现语音点餐等生态闭环；二是智驾能力，联合 Momenta 打造一段式端到端大模型，配合英伟达 Thor 芯片和 520 线激光雷达，在复杂城市路况表现拟人；三是底盘技术，应用灵蜥数字底盘 3.0，通过全线控四轮转向技术使 5 米大车拥有 4 米小车的转弯半径；四是动力系统，恒星超级增程实现超长续航与低油耗。作者认为，智己通过技术下放重新定义了豪华，打破了传统 BBA 的品牌溢价壁垒。
+
+
+
+### [奔驰崩了，在华销量大跌-27%](https://www.qbitai.com/2026/04/398823.html)
+
+2026-04-10 09:11:11 | 标签: 奔驰, 汽车智能化, 自动驾驶, Momenta, 新能源汽车
+
+> 本文深度分析了奔驰 2026 年第一季度的全球及中国市场表现。数据显示，奔驰在华销量同比大跌 27%，导致亚洲市场失去其全球最大市场的地位。文章指出，奔驰在华失守的主因在于电动化战略的反复、技术代差（尤其是智能化落后）以及中国本土新能源品牌的强势崛起。为应对危机，奔驰调整了全面电动化目标，转为「油电并行」策略，并计划在华推出 15 款新车。核心举措是推行「油电同智」，通过与 Momenta 等中国科技公司合作，将中国智驾「大脑」引入全系车型，以补齐智能化短板并应对 BBA 集体面临的转型阵痛。
+
+
+
+### [刷屏的-SBTI，底层算法有点东西…](https://www.qbitai.com/2026/04/398788.html)
+
+2026-04-10 08:12:00 | 标签: SBTI, 算法拆解, Vibe Coding, 向量匹配, 人格测试
+
+> 文章针对社交媒体爆火的「SBTI」人格测试进行了技术溯源与算法拆解。分析指出，该项目在文案生成上表现出明显的 LLM 风格（如 GPT-4/Claude 辅助），但在核心创意与谐音梗命名上体现了人类策划的独特性。技术实现上，这是一个零依赖的纯原生前端项目。核心算法逻辑被归纳为：通过 31 道题映射至 5 大模型、15 个细分维度，将原始分归档为 L/M/H 三档并转化为 15 维向量，最终通过计算用户向量与预设模板间的曼哈顿距离及精确命中数，匹配出相似度最高的人格结果。此外，文章还提到了由 AI 习惯衍生的「MBAI」等新兴变体。
+
+
+
+### [阿里神秘视频模型-HappyHorse-1.0-登顶榜单：原生音视频同步与开源预期](https://mp.weixin.qq.com/s?__biz=MzU1NDA4NjU2MA==&mid=2247660685&idx=1&sn=e729ebc6867802d8b54939b8396c9ab6)
+
+2026-04-10 08:05:00 | 标签: HappyHorse, 阿里巴巴, 视频生成模型, 音视频同步, ATH事业群
+
+> 近日，一款名为 HappyHorse-1.0 的神秘模型在 Artificial Analysis 视频模型排行榜中超越 Seedance 2.0 等头部模型，随后被证实为阿里巴巴 ATH-AI 创新事业部自研产品。该模型采用统一的 40 层 Transformer 架构，实现了视频与音频在单次推理过程中的原生同步生成，支持 7 种语言口型对齐。技术上，它利用 DMD-2 蒸馏技术大幅提升去噪速度，并内置超分模块。尽管第三方评测对其「人文温度」仍有保留，但其在运动控制和提示词遵循度上的表现已展现出极强竞争力。阿里计划于 4 月 30 日上线 API，并有消息称将完整开源该模型，这可能对当前高门...
+
+
+
+### [生数科技完成近-20-亿元-B-轮融资，发布通用世界模型-Vidu-与-Motus](https://www.qbitai.com/2026/04/398772.html)
+
+2026-04-10 07:37:41 | 标签: 生数科技, 世界模型, Vidu, Motus, 具身智能
+
+> 生数科技宣布完成由阿里云领投的近 20 亿元 B 轮融资。公司核心战略为打造「基座世界模型」，通过 Vidu 系列模型实现高质量音视频生成，解决商业场景多主体一致性痛点；同时通过开源的 Motus 模型探索具身智能，实现语言、视频与动作的统一建模。Motus 在多任务场景成功率显著优于主流模型，验证了具身领域的 Scaling Law。生数科技旨在通过统一架构打通「理解-生成-行动」闭环，构建 AGI 时代的生产力底座。
+
+
+
+### [无问芯穹发布-InfiniClaw-Box：清华系团队打造的全模态端云一体隐私脱敏方案](https://www.qbitai.com/2026/04/398750.html)
+
+2026-04-10 07:13:37 | 标签: 无问芯穹, 隐私保护, 端云一体, 多模态脱敏, InfiniClaw Box
+
+> 本文介绍了由清华电子工程系背景团队「无问芯穹」推出的硬件产品 InfiniClaw Box。该产品针对当前企业和开发者在使用大模型时面临的隐私安全与云端算力矛盾，提出了「端云一体三段式」脱敏推理方案。其核心技术在于：首先在本地利用多模态模型对文本、语音、视频进行语义识别与敏感信息替换；随后将脱敏请求发送至云端调用顶级大模型进行复杂推理；最后在本地通过隐私重构引擎进行精准位置回填。该方案实现了「数据不出盒、能力不打折」，并针对端侧芯片进行了 10%-40% 的算子加速优化，支持广泛的硬件生态接入。
+
+
+
+### [Inkhaven-菜单，第二部分-—-LessWrong](https://www.lesswrong.com/posts/pTwtBDQtyEXMt7CsG/inkhaven-menu-part-2)
+
+2026-04-10 05:20:07 | 标签: LessWrong, 创意构思, 认识论, 理性, 个人成长
+
+> 本文继上一份 AI 相关构思清单后，列出了 22 个“非 AI”主题的博客写作构思。作者是一位教授兼 LessWrong 贡献者，探讨了包括认知谦逊、反文化本质、管理经验、审美实在论以及各种个人反思在内的多元主题。尽管作者表示由于优先级调整可能不会撰写这些文章，但这份清单展示了一位技术专业人士的智识兴趣，触及了理性、社会观察和创造性探究等核心议题。
+
+
+
+### [我制作了一个-10-题测试。上线-1-天，1934-人参与。这是我的心得-—-LessWrong](https://www.lesswrong.com/posts/tNiKy2JFnoBKq4eGd/i-created-a-10-question-quiz-after-1-day-1934-people-have)
+
+2026-04-10 02:49:49 | 标签: 增长黑客, 产品营销, 转化率, 决策, 校准
+
+> 作者制作了一个 10 题校准测试，旨在为新的决策平台引流，并将其发布在 Hacker News 上。24 小时内，近 2000 人参与了测试。数据表明，44.5% 的用户存在过度自信，大多数参与者无论题目如何，都倾向于将置信度集中在 70%-80% 之间。虽然该测试成功带来了流量，但在转化漏斗方面表现不佳，活跃用户转化率仅为 0.8%。本文坦诚地分析了病毒式参与和产品市场契合度之间的鸿沟，并探讨了如何更好地弥合这一差距。
+
+
+
 ### [来自我们太阳系的外星人-—-LessWrong](https://www.lesswrong.com/posts/w8tR5vrJPi2KGYh6b/aliens-from-our-own-solar-system)
 
 2026-04-09 18:50:14
@@ -3479,13 +3551,13 @@
 
 
 
-### [“中国云谷”高校训练营暨-ROS-春季学校首期圆满收官！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247507225&idx=2&sn=547e5ff16b4ebf6344258f8e49f71d6c)
+### [混元-Embodied-0.5-开源：专为现实世界具身智能体设计的物理-Agent-基座](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247507225&idx=1&sn=259449c0a036488e3774fb130299c9e0)
 
 2026-04-09 12:51:00
 
 
 
-### [混元-Embodied-0.5-开源：专为现实世界具身智能体设计的物理-Agent-基座](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247507225&idx=1&sn=259449c0a036488e3774fb130299c9e0)
+### [“中国云谷”高校训练营暨-ROS-春季学校首期圆满收官！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247507225&idx=2&sn=547e5ff16b4ebf6344258f8e49f71d6c)
 
 2026-04-09 12:51:00
 
@@ -3629,13 +3701,13 @@
 
 
 
-### [与-Generalist-顶峰相见，30-天狂吸-30-亿，千寻智能做对了什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026046&idx=1&sn=94ec182edce87448cfc0e20254d0ec50)
+### [十分钟破解加密货币！谷歌在量子计算领域发现了什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026046&idx=3&sn=7277e77a9424d3871192b12b5e5b5f13)
 
 2026-04-07 01:05:00
 
 
 
-### [十分钟破解加密货币！谷歌在量子计算领域发现了什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026046&idx=3&sn=7277e77a9424d3871192b12b5e5b5f13)
+### [与-Generalist-顶峰相见，30-天狂吸-30-亿，千寻智能做对了什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651026046&idx=1&sn=94ec182edce87448cfc0e20254d0ec50)
 
 2026-04-07 01:05:00
 
@@ -3779,13 +3851,13 @@
 
 
 
-### [不加算力，只改一个算法：Muon-在万亿-MoE-模型中最高-2-倍加速](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024827&idx=2&sn=dc80269b563b462cf512c3754b935ba2)
+### [京东-JoyStreamer-数字人大模型：解决复杂指令与长时长直播痛点](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024827&idx=1&sn=4088bb4cdc7fc7efe10c2998aec79285)
 
 2026-03-31 05:36:00
 
 
 
-### [京东-JoyStreamer-数字人大模型：解决复杂指令与长时长直播痛点](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024827&idx=1&sn=4088bb4cdc7fc7efe10c2998aec79285)
+### [不加算力，只改一个算法：Muon-在万亿-MoE-模型中最高-2-倍加速](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024827&idx=2&sn=dc80269b563b462cf512c3754b935ba2)
 
 2026-03-31 05:36:00
 
@@ -3893,13 +3965,13 @@
 
 
 
-### [不止-Deep，更要-Wide：清华、无问芯穹发布多智能体系统-WideSeek-R1，4B-模型比肩-671B-模型！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024218&idx=3&sn=a92f925bdc0bc92fdec546ebc4f17278)
+### [专访中科第五纪黄岩：在具身智能的狂热中，做一位技术实干家](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024218&idx=1&sn=6a90e9ddaf9b09ed2239bb4818a03736)
 
 2026-03-27 04:05:00
 
 
 
-### [专访中科第五纪黄岩：在具身智能的狂热中，做一位技术实干家](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024218&idx=1&sn=6a90e9ddaf9b09ed2239bb4818a03736)
+### [不止-Deep，更要-Wide：清华、无问芯穹发布多智能体系统-WideSeek-R1，4B-模型比肩-671B-模型！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651024218&idx=3&sn=a92f925bdc0bc92fdec546ebc4f17278)
 
 2026-03-27 04:05:00
 
@@ -3923,13 +3995,13 @@
 
 
 
-### [CPiRi：打破多元时序预测-CI/CD-范式矛盾的解耦框架](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686704&idx=3&sn=405ec5200d0adc4d5baea93e535be634)
+### [「被动感知」到「理解接触」！它石智航重磅发布-OmniVTA-视触觉世界模型](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686704&idx=2&sn=a41c0e510bc8a4aa7395149a343d823d)
 
 2026-03-26 01:14:00
 
 
 
-### [「被动感知」到「理解接触」！它石智航重磅发布-OmniVTA-视触觉世界模型](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686704&idx=2&sn=a41c0e510bc8a4aa7395149a343d823d)
+### [CPiRi：打破多元时序预测-CI/CD-范式矛盾的解耦框架](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652686704&idx=3&sn=405ec5200d0adc4d5baea93e535be634)
 
 2026-03-26 01:14:00
 
@@ -4115,13 +4187,13 @@
 
 
 
-### [登顶全球权威榜单！浙大创业团队百卡打造开源实时世界模型，视频秒变可交互-4D-世界](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022576&idx=1&sn=05f58042f6e26b85db834aaa94bde171)
+### [ICLR-2026-|-机器人不够聪明？VLMgineer-让大模型自己「发明工具」，从设计到使用全自动](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022576&idx=3&sn=facbb05c9c66c704caad7406583f1540)
 
 2026-03-20 05:00:00
 
 
 
-### [ICLR-2026-|-机器人不够聪明？VLMgineer-让大模型自己「发明工具」，从设计到使用全自动](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022576&idx=3&sn=facbb05c9c66c704caad7406583f1540)
+### [登顶全球权威榜单！浙大创业团队百卡打造开源实时世界模型，视频秒变可交互-4D-世界](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651022576&idx=1&sn=05f58042f6e26b85db834aaa94bde171)
 
 2026-03-20 05:00:00
 
@@ -4211,13 +4283,13 @@
 
 
 
-### [谷歌-DeepMind-首发-AGI-终极考纲！20-万全球悬赏，撕下所有大模型伪装](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652684559&idx=2&sn=6d626628722af983906903ad4641dfd6)
+### [当-AI-第一次读完整本基因之书，十亿参数单细胞大模型能干什么？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652684559&idx=3&sn=074446ecdf8150eea1257f6466a5508e)
 
 2026-03-18 04:16:00
 
 
 
-### [当-AI-第一次读完整本基因之书，十亿参数单细胞大模型能干什么？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652684559&idx=3&sn=074446ecdf8150eea1257f6466a5508e)
+### [谷歌-DeepMind-首发-AGI-终极考纲！20-万全球悬赏，撕下所有大模型伪装](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652684559&idx=2&sn=6d626628722af983906903ad4641dfd6)
 
 2026-03-18 04:16:00
 
@@ -4241,13 +4313,13 @@
 
 
 
-### [港大赵恒爽团队论文：让扩散模型既拿高分又不「作弊」丨-CVPR-2026](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=2&sn=05c0a094c8f8d83a4acbfd2d6620c21c)
+### [起底智元机器人，谁在推动一个庞然大物向前](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=1&sn=0e63747ddc961570e65c3b6c6ffb5a67)
 
 2026-03-17 10:10:00
 
 
 
-### [起底智元机器人，谁在推动一个庞然大物向前](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=1&sn=0e63747ddc961570e65c3b6c6ffb5a67)
+### [港大赵恒爽团队论文：让扩散模型既拿高分又不「作弊」丨-CVPR-2026](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=2&sn=05c0a094c8f8d83a4acbfd2d6620c21c)
 
 2026-03-17 10:10:00
 
@@ -4337,13 +4409,13 @@
 
 
 
-### [OpenClaw-带火-AI-记忆，DeepMind-用混合记忆把-3D-重建拉到近-2-万帧](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651021511&idx=2&sn=e5194bc09c7ddbdeb96f773132df10e5)
+### [ICLR-2026｜多模态大模型真的理解情绪吗？MME-Emotion-给出了系统答案](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651021511&idx=3&sn=08a96e73521c602bd5066af107cdd9ff)
 
 2026-03-15 01:17:00
 
 
 
-### [ICLR-2026｜多模态大模型真的理解情绪吗？MME-Emotion-给出了系统答案](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651021511&idx=3&sn=08a96e73521c602bd5066af107cdd9ff)
+### [OpenClaw-带火-AI-记忆，DeepMind-用混合记忆把-3D-重建拉到近-2-万帧](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651021511&idx=2&sn=e5194bc09c7ddbdeb96f773132df10e5)
 
 2026-03-15 01:17:00
 
@@ -4517,13 +4589,13 @@
 
 
 
-### [3B-打-32B？海外病毒式传播的小模型，竟然来自-BOSS-直聘](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020452&idx=1&sn=a08bcae10fe0e1f4510f1388fba7937e)
+### [ICLR2026-Oral-|-北大彭一杰团队提出高效优化新范式，递归似然比梯度优化器赋能扩散模型后训练](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020452&idx=3&sn=03867dc330326ea9435922490dc834f7)
 
 2026-03-09 03:56:00
 
 
 
-### [ICLR2026-Oral-|-北大彭一杰团队提出高效优化新范式，递归似然比梯度优化器赋能扩散模型后训练](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020452&idx=3&sn=03867dc330326ea9435922490dc834f7)
+### [3B-打-32B？海外病毒式传播的小模型，竟然来自-BOSS-直聘](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020452&idx=1&sn=a08bcae10fe0e1f4510f1388fba7937e)
 
 2026-03-09 03:56:00
 
@@ -4559,7 +4631,7 @@
 
 
 
-### [14B-规模竟也能单卡实时生成视频？多亏这个强大的开源底座](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020334&idx=1&sn=5545a4b599966d797919aac970ce92ef)
+### [破解大模型「无效并行推理」：Parallel-Probe-问世，并行推理效率提升-35.8%](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020334&idx=4&sn=57c302ec4b9d4508864e8d799bf1038c)
 
 2026-03-07 04:18:00
 
@@ -4571,7 +4643,7 @@
 
 
 
-### [破解大模型「无效并行推理」：Parallel-Probe-问世，并行推理效率提升-35.8%](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020334&idx=4&sn=57c302ec4b9d4508864e8d799bf1038c)
+### [14B-规模竟也能单卡实时生成视频？多亏这个强大的开源底座](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651020334&idx=1&sn=5545a4b599966d797919aac970ce92ef)
 
 2026-03-07 04:18:00
 
@@ -4607,13 +4679,13 @@
 
 
 
-### [大模型的第一性原理：（三）信息论篇](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019507&idx=1&sn=f1b716270c20c5839879cf391aaabbfa)
+### [李飞飞-World-Labs-最新判断：AI-写完代码，下一步是「写世界」？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019507&idx=2&sn=9f156b802d4302b86d8f9e14ae1af751)
 
 2026-03-04 09:13:00
 
 
 
-### [李飞飞-World-Labs-最新判断：AI-写完代码，下一步是「写世界」？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019507&idx=2&sn=9f156b802d4302b86d8f9e14ae1af751)
+### [大模型的第一性原理：（三）信息论篇](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019507&idx=1&sn=f1b716270c20c5839879cf391aaabbfa)
 
 2026-03-04 09:13:00
 
@@ -4631,13 +4703,13 @@
 
 
 
-### [训练机器人方式对了吗？英伟达-DreamZero-双榜第一新反思](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019191&idx=2&sn=4be0ed8e60d25714ceb68916660f8311)
+### [ICLR-2026-|-当视频难以被表征：UCSD、HKUST-等机构联合提出-FlowRVS，用生成式流匹配重构视觉感知范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019191&idx=3&sn=6f11bcbcf5ee1140821f30f340ba1a3b)
 
 2026-03-03 09:03:00
 
 
 
-### [ICLR-2026-|-当视频难以被表征：UCSD、HKUST-等机构联合提出-FlowRVS，用生成式流匹配重构视觉感知范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019191&idx=3&sn=6f11bcbcf5ee1140821f30f340ba1a3b)
+### [训练机器人方式对了吗？英伟达-DreamZero-双榜第一新反思](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651019191&idx=2&sn=4be0ed8e60d25714ceb68916660f8311)
 
 2026-03-03 09:03:00
 
@@ -4799,13 +4871,13 @@
 
 
 
-### [LingBot-VLA-具身大模型全面开源](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247504704&idx=2&sn=b7062864996bdb5f350be31f86b9f69a)
+### [世界模型-LingBot-World，正式开源！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247504704&idx=1&sn=39f9bfcfc8c13084e5a0a4fcc237c174)
 
 2026-01-29 06:35:00
 
 
 
-### [世界模型-LingBot-World，正式开源！](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247504704&idx=1&sn=39f9bfcfc8c13084e5a0a4fcc237c174)
+### [LingBot-VLA-具身大模型全面开源](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247504704&idx=2&sn=b7062864996bdb5f350be31f86b9f69a)
 
 2026-01-29 06:35:00
 
@@ -5123,7 +5195,7 @@
 
 
 
-### [AI-鉴别攻略全废！别数破折号了，97%的人根本分不清](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652665717&idx=3&sn=a9bb94d83e62d8f44a849351dd6d61eb)
+### [字节全球首发-AI-技能商店：一句话生成-Coze-Skills，你的经验直接卖钱](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652665717&idx=1&sn=f78729105732a364aca2372a32ee16bc)
 
 2026-01-19 04:35:00
 
@@ -5135,7 +5207,7 @@
 
 
 
-### [字节全球首发-AI-技能商店：一句话生成-Coze-Skills，你的经验直接卖钱](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652665717&idx=1&sn=f78729105732a364aca2372a32ee16bc)
+### [AI-鉴别攻略全废！别数破折号了，97%的人根本分不清](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652665717&idx=3&sn=a9bb94d83e62d8f44a849351dd6d61eb)
 
 2026-01-19 04:35:00
 
@@ -5201,13 +5273,13 @@
 
 
 
-### [VerseCrafter：给视频世界模型装上-4D-方向盘，精准运镜控物](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012406&idx=3&sn=18628d35c07dc71c92a444a6596d29fa)
+### [谷歌工程师抛出-5-个残酷问题：未来两年，软件工程还剩下什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012406&idx=1&sn=95328e10ed7509e8590f42b0ab33954c)
 
 2026-01-18 04:01:00
 
 
 
-### [谷歌工程师抛出-5-个残酷问题：未来两年，软件工程还剩下什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012406&idx=1&sn=95328e10ed7509e8590f42b0ab33954c)
+### [VerseCrafter：给视频世界模型装上-4D-方向盘，精准运镜控物](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012406&idx=3&sn=18628d35c07dc71c92a444a6596d29fa)
 
 2026-01-18 04:01:00
 
@@ -5249,13 +5321,13 @@
 
 
 
-### [大模型听懂语音却反而变笨？港中深与微软联合解决语音大模型降智问题](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012368&idx=3&sn=34b2837f896552e43c41ecc287d07e37)
+### [贴广告的-ChatGPT，一夜之间让全球网友破了防](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012368&idx=1&sn=44c0709a46446f8b67df438d68c17815)
 
 2026-01-17 03:07:00
 
 
 
-### [贴广告的-ChatGPT，一夜之间让全球网友破了防](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012368&idx=1&sn=44c0709a46446f8b67df438d68c17815)
+### [大模型听懂语音却反而变笨？港中深与微软联合解决语音大模型降智问题](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651012368&idx=3&sn=34b2837f896552e43c41ecc287d07e37)
 
 2026-01-17 03:07:00
 
@@ -5279,13 +5351,13 @@
 
 
 
-### [人大高瓴赵鑫团队新作：先拆掉-RLVR，再重建推理模型训练](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247730715&idx=2&sn=1f5d31a648d95e8fb73b49977133ffcb)
+### [我所知道的闫俊杰](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247730715&idx=1&sn=6949e8385b29e2863dc970bbf29902d0)
 
 2026-01-16 11:12:00
 
 
 
-### [我所知道的闫俊杰](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247730715&idx=1&sn=6949e8385b29e2863dc970bbf29902d0)
+### [人大高瓴赵鑫团队新作：先拆掉-RLVR，再重建推理模型训练](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247730715&idx=2&sn=1f5d31a648d95e8fb73b49977133ffcb)
 
 2026-01-16 11:12:00
 
@@ -5435,13 +5507,13 @@
 
 
 
-### [Open-Responses：OpenAI-Responses-API-的明确规范，获得-OpenRouter、Ollama、Huggingface、vLLM-等支持](https://news.smol.ai/issues/26-01-15-openresponses/)
+### [今天没什么大事发生](https://news.smol.ai/issues/26-01-14-not-much/)
 
 2026-01-15 05:44:39
 
 
 
-### [今天没什么大事发生](https://news.smol.ai/issues/26-01-14-not-much/)
+### [Open-Responses：OpenAI-Responses-API-的明确规范，获得-OpenRouter、Ollama、Huggingface、vLLM-等支持](https://news.smol.ai/issues/26-01-15-openresponses/)
 
 2026-01-15 05:44:39
 
@@ -5519,13 +5591,13 @@
 
 
 
-### [顶尖-AI-竟输给三岁宝宝，BabyVision-测试暴露多模态模型硬伤](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650450753&idx=2&sn=4d6519ad312d44de32b9e8f7e44c3090)
+### [SLP3-大重构：自然语言处理圣经，正式进入大模型时代](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650450753&idx=1&sn=86947657b58105598a489fc9d595c1ff)
 
 2026-01-14 12:17:00
 
 
 
-### [SLP3-大重构：自然语言处理圣经，正式进入大模型时代](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650450753&idx=1&sn=86947657b58105598a489fc9d595c1ff)
+### [顶尖-AI-竟输给三岁宝宝，BabyVision-测试暴露多模态模型硬伤](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650450753&idx=2&sn=4d6519ad312d44de32b9e8f7e44c3090)
 
 2026-01-14 12:17:00
 
@@ -5555,13 +5627,13 @@
 
 
 
-### [这一次，谷歌-Veo-3.1-教-Sora-做视频！角色-0-变形，4K-竖屏直接满分](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652664628&idx=2&sn=842729d55fd7f05904173b7294a7591e)
+### [Claude-自己写出-Claude！2-小时干完两月活，人类在工位上多余了？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652664628&idx=1&sn=b47ce0220540e393ef0d594207d5b627)
 
 2026-01-14 05:26:00
 
 
 
-### [Claude-自己写出-Claude！2-小时干完两月活，人类在工位上多余了？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652664628&idx=1&sn=b47ce0220540e393ef0d594207d5b627)
+### [这一次，谷歌-Veo-3.1-教-Sora-做视频！角色-0-变形，4K-竖屏直接满分](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652664628&idx=2&sn=842729d55fd7f05904173b7294a7591e)
 
 2026-01-14 05:26:00
 
@@ -5729,13 +5801,13 @@
 
 
 
-### [AAAI-2026-Oral｜快手提出全新「检索数据引擎」CroPS，打破搜索信息茧房](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011608&idx=3&sn=f8e6feb6373c36eda3213e11c0ed6ddd)
+### [顶尖-AI-竟输给三岁宝宝，BabyVision-测试暴露多模态模型硬伤](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011608&idx=2&sn=2c2fa75b550a286ac67131c618d32c85)
 
 2026-01-12 04:58:00
 
 
 
-### [顶尖-AI-竟输给三岁宝宝，BabyVision-测试暴露多模态模型硬伤](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011608&idx=2&sn=2c2fa75b550a286ac67131c618d32c85)
+### [AAAI-2026-Oral｜快手提出全新「检索数据引擎」CroPS，打破搜索信息茧房](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011608&idx=3&sn=f8e6feb6373c36eda3213e11c0ed6ddd)
 
 2026-01-12 04:58:00
 
@@ -5819,7 +5891,7 @@
 
 
 
-### [联邦学习不再安全？港大-TPAMI-新作：深挖梯度反转攻击的内幕](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011465&idx=3&sn=ef87907a3fe9d148bae3751ff5a22d54)
+### [不做人形、不跳舞：他家的具身智能凭什么在-100+城市卖出-400-万杯咖啡？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011465&idx=1&sn=1ebfdcac73d229c1d95c477746627b7d)
 
 2026-01-11 03:57:00
 
@@ -5831,7 +5903,7 @@
 
 
 
-### [不做人形、不跳舞：他家的具身智能凭什么在-100+城市卖出-400-万杯咖啡？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011465&idx=1&sn=1ebfdcac73d229c1d95c477746627b7d)
+### [联邦学习不再安全？港大-TPAMI-新作：深挖梯度反转攻击的内幕](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011465&idx=3&sn=ef87907a3fe9d148bae3751ff5a22d54)
 
 2026-01-11 03:57:00
 
@@ -5969,13 +6041,13 @@
 
 
 
-### [大模型如何泛化出多智能体推理能力？清华提出策略游戏自博弈方案-MARSHAL](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011154&idx=3&sn=fab87b58e94f9a9d80b679d5ffb378fb)
+### [Agent-2.0-时代来了，首批「工业级智能体」正在核心位置上岗](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011154&idx=1&sn=dabe0274501952821e5f69b64d1913b5)
 
 2026-01-09 04:05:00
 
 
 
-### [Agent-2.0-时代来了，首批「工业级智能体」正在核心位置上岗](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011154&idx=1&sn=dabe0274501952821e5f69b64d1913b5)
+### [大模型如何泛化出多智能体推理能力？清华提出策略游戏自博弈方案-MARSHAL](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651011154&idx=3&sn=fab87b58e94f9a9d80b679d5ffb378fb)
 
 2026-01-09 04:05:00
 
@@ -6005,7 +6077,7 @@
 
 
 
-### [AI-月产十亿行代码，暴增-76%！程序员论坛炸锅：代码行数≠生产力！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652662976&idx=3&sn=b284281462e904fbe96304145c0967d2)
+### [Transformer-已死？DeepMind-正在押注另一条-AGI-路线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652662976&idx=1&sn=1bcbb153cb6dc4b9f92aa413bf18cc23)
 
 2026-01-08 12:38:00
 
@@ -6017,7 +6089,7 @@
 
 
 
-### [Transformer-已死？DeepMind-正在押注另一条-AGI-路线](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652662976&idx=1&sn=1bcbb153cb6dc4b9f92aa413bf18cc23)
+### [AI-月产十亿行代码，暴增-76%！程序员论坛炸锅：代码行数≠生产力！](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652662976&idx=3&sn=b284281462e904fbe96304145c0967d2)
 
 2026-01-08 12:38:00
 
@@ -6155,13 +6227,13 @@
 
 
 
-### [开源-1-万小时具身智能数据，这家公司是为了什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010717&idx=3&sn=81fd0019f16283c3a4d94ba04f102f2d)
+### [刚刚，智元提出-SOP，让-VLA-模型在真实世界实现可扩展的在线进化](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010717&idx=1&sn=026d30a9a7fb8d87e55d333a7eb8730d)
 
 2026-01-06 09:35:00
 
 
 
-### [刚刚，智元提出-SOP，让-VLA-模型在真实世界实现可扩展的在线进化](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010717&idx=1&sn=026d30a9a7fb8d87e55d333a7eb8730d)
+### [开源-1-万小时具身智能数据，这家公司是为了什么？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651010717&idx=3&sn=81fd0019f16283c3a4d94ba04f102f2d)
 
 2026-01-06 09:35:00
 
@@ -6401,13 +6473,13 @@
 
 
 
-### [重塑语音安全！上海交大联合宇生月伴，研发高性能高泛化语音鉴伪大模型](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009964&idx=3&sn=3f70c64157ada4f8ff2205835528d815)
+### [NUS-尤洋教授深度探讨智能增长的瓶颈：或许我们将这样实现-AGI？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009964&idx=2&sn=c9c2415d38b28b8a675915f9d51cd84e)
 
 2025-12-31 04:05:00
 
 
 
-### [NUS-尤洋教授深度探讨智能增长的瓶颈：或许我们将这样实现-AGI？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009964&idx=2&sn=c9c2415d38b28b8a675915f9d51cd84e)
+### [重塑语音安全！上海交大联合宇生月伴，研发高性能高泛化语音鉴伪大模型](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009964&idx=3&sn=3f70c64157ada4f8ff2205835528d815)
 
 2025-12-31 04:05:00
 
@@ -6425,13 +6497,13 @@
 
 
 
-### [DeepSeek，居然只是个副项目？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659416&idx=2&sn=f27ff645b1a159f24c6328d4d925987e)
+### [Ilya-警告、LeCun-冷嘲、奥特曼沉默：Scaling-Law-时代还能走多远？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659416&idx=1&sn=f7d5300eda5e177bfccb41872e5bff90)
 
 2025-12-31 01:26:00
 
 
 
-### [Ilya-警告、LeCun-冷嘲、奥特曼沉默：Scaling-Law-时代还能走多远？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659416&idx=1&sn=f7d5300eda5e177bfccb41872e5bff90)
+### [DeepSeek，居然只是个副项目？](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652659416&idx=2&sn=f27ff645b1a159f24c6328d4d925987e)
 
 2025-12-31 01:26:00
 
@@ -6455,13 +6527,13 @@
 
 
 
-### [1.8B！腾讯开源新模型，1GB-内存手机离线跑，媲美-Qwen3-235B](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652794837&idx=2&sn=d3a74017bf90d65118266b9b55272253)
+### [黄仁勋最新访谈：英伟达要用-AI-造一台“时间机器”，看好人形机器人](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652794837&idx=1&sn=3f3316279685e296c4bffdbaa0aa1d5e)
 
 2025-12-30 12:31:00
 
 
 
-### [黄仁勋最新访谈：英伟达要用-AI-造一台“时间机器”，看好人形机器人](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652794837&idx=1&sn=3f3316279685e296c4bffdbaa0aa1d5e)
+### [1.8B！腾讯开源新模型，1GB-内存手机离线跑，媲美-Qwen3-235B](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652794837&idx=2&sn=d3a74017bf90d65118266b9b55272253)
 
 2025-12-30 12:31:00
 
@@ -6677,13 +6749,13 @@
 
 
 
-### [顶刊-TPAMI｜多模态视频理解领域重磅数据更新：MeViSv2-发布](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009172&idx=3&sn=f057db8171537906ad7d00a6df674975)
+### [视频生成-DeepSeek-时刻！清华&amp;生数开源框架提速-200-倍，一周斩获-2k-Star](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009172&idx=1&sn=f62563f0630c33438d5ad38cead117b4)
 
 2025-12-26 04:33:00
 
 
 
-### [视频生成-DeepSeek-时刻！清华&amp;生数开源框架提速-200-倍，一周斩获-2k-Star](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009172&idx=1&sn=f62563f0630c33438d5ad38cead117b4)
+### [顶刊-TPAMI｜多模态视频理解领域重磅数据更新：MeViSv2-发布](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651009172&idx=3&sn=f057db8171537906ad7d00a6df674975)
 
 2025-12-26 04:33:00
 
@@ -6737,13 +6809,13 @@
 
 
 
-### [「数字-AGI」已死？亚马逊内部重组，撕掉纯算法派最后的遮羞布](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652657511&idx=3&sn=8af70464a30370a3d569be851103b051)
+### [H-1B-彻底变天，高薪加权三重绞杀！90%留学生恐出局](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652657511&idx=2&sn=fe18b45291ead0c5ca0d3d393d09a64e)
 
 2025-12-24 10:32:00
 
 
 
-### [H-1B-彻底变天，高薪加权三重绞杀！90%留学生恐出局](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652657511&idx=2&sn=fe18b45291ead0c5ca0d3d393d09a64e)
+### [「数字-AGI」已死？亚马逊内部重组，撕掉纯算法派最后的遮羞布](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652657511&idx=3&sn=8af70464a30370a3d569be851103b051)
 
 2025-12-24 10:32:00
 
@@ -6773,13 +6845,13 @@
 
 
 
-### [VideoCoF：将「时序推理」引入视频编辑，无-Mask-实现高精度编辑与长视频外推！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651008576&idx=4&sn=0615da6cadc28346ead6b609ca7d12d9)
+### [仅需-15%全量-Attention！「RTPurbo」阿里-Qwen3-长文本推理-5-倍压缩方案来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651008576&idx=2&sn=36ba8992154eed60bd38bc0990f10feb)
 
 2025-12-23 04:12:00
 
 
 
-### [仅需-15%全量-Attention！「RTPurbo」阿里-Qwen3-长文本推理-5-倍压缩方案来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651008576&idx=2&sn=36ba8992154eed60bd38bc0990f10feb)
+### [VideoCoF：将「时序推理」引入视频编辑，无-Mask-实现高精度编辑与长视频外推！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651008576&idx=4&sn=0615da6cadc28346ead6b609ca7d12d9)
 
 2025-12-23 04:12:00
 
@@ -6983,13 +7055,13 @@
 
 
 
-### [56-倍加速生成式策略：西交大提出-EfficientFlow，迈向高效具身智能](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007467&idx=3&sn=4ed28ddf99c067488e896b74769bcec0)
+### [阿里妈妈发布-MUSE：用多模态搞定十万级超长行为序列，并开源-Taobao-MM-数据集](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007467&idx=1&sn=0954739c05da87a71a45f3f720eb9410)
 
 2025-12-16 04:09:00
 
 
 
-### [阿里妈妈发布-MUSE：用多模态搞定十万级超长行为序列，并开源-Taobao-MM-数据集](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007467&idx=1&sn=0954739c05da87a71a45f3f720eb9410)
+### [56-倍加速生成式策略：西交大提出-EfficientFlow，迈向高效具身智能](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007467&idx=3&sn=4ed28ddf99c067488e896b74769bcec0)
 
 2025-12-16 04:09:00
 
@@ -7013,13 +7085,13 @@
 
 
 
-### [NeurIPS-2025｜指哪打哪，可控对抗样本生成器来了！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007352&idx=3&sn=81fcbd01f1d5e44813605a139fcd6b36)
+### [Veo-何止生成视频：DeepMind-正在用它模拟整个机器人世界](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007352&idx=2&sn=1eac3d637c92d5bdf735d6b3c330bd21)
 
 2025-12-15 08:07:00
 
 
 
-### [Veo-何止生成视频：DeepMind-正在用它模拟整个机器人世界](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007352&idx=2&sn=1eac3d637c92d5bdf735d6b3c330bd21)
+### [NeurIPS-2025｜指哪打哪，可控对抗样本生成器来了！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007352&idx=3&sn=81fcbd01f1d5e44813605a139fcd6b36)
 
 2025-12-15 08:07:00
 
@@ -7055,13 +7127,13 @@
 
 
 
-### [SIGGRAPH-Asia-2025｜30FPS-普通相机恢复-200FPS-细节，4D-重建方案来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007176&idx=3&sn=1adcd6f181b135af6075f3130f3f148f)
+### [1100-多个模型殊途同归，指向一个「通用子空间」，柏拉图又赢一回？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007176&idx=2&sn=a68a3f775ff535b6aae480ff40a4b270)
 
 2025-12-14 04:50:00
 
 
 
-### [1100-多个模型殊途同归，指向一个「通用子空间」，柏拉图又赢一回？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007176&idx=2&sn=a68a3f775ff535b6aae480ff40a4b270)
+### [SIGGRAPH-Asia-2025｜30FPS-普通相机恢复-200FPS-细节，4D-重建方案来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651007176&idx=3&sn=1adcd6f181b135af6075f3130f3f148f)
 
 2025-12-14 04:50:00
 
@@ -7109,7 +7181,7 @@
 
 
 
-### [NUS-LV-Lab-新作｜FeRA：基于「频域能量」动态路由，打破扩散模型微调的静态瓶颈](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006802&idx=3&sn=30f45b18e10f788a8b16e272b829c72e)
+### [全球强化学习+VLA-范式，PI*0.6-背后都有这家中国公司技术伏笔](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006802&idx=1&sn=e3c63a11065446d8df4ba386229f7a6d)
 
 2025-12-12 03:21:00
 
@@ -7121,7 +7193,7 @@
 
 
 
-### [全球强化学习+VLA-范式，PI*0.6-背后都有这家中国公司技术伏笔](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006802&idx=1&sn=e3c63a11065446d8df4ba386229f7a6d)
+### [NUS-LV-Lab-新作｜FeRA：基于「频域能量」动态路由，打破扩散模型微调的静态瓶颈](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006802&idx=3&sn=30f45b18e10f788a8b16e272b829c72e)
 
 2025-12-12 03:21:00
 
@@ -7145,13 +7217,13 @@
 
 
 
-### [效率提升-25%，灵巧操作数采困境被「臂-手共享自主框架」解决](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006633&idx=3&sn=08f296f490bd9b98130f1540d779481c)
+### [何恺明-NeurIPS-2025-演讲盘点：视觉目标检测三十年](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006633&idx=2&sn=cd4b6b8628cc9e960e28c940d7325610)
 
 2025-12-11 09:58:00
 
 
 
-### [何恺明-NeurIPS-2025-演讲盘点：视觉目标检测三十年](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006633&idx=2&sn=cd4b6b8628cc9e960e28c940d7325610)
+### [效率提升-25%，灵巧操作数采困境被「臂-手共享自主框架」解决](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006633&idx=3&sn=08f296f490bd9b98130f1540d779481c)
 
 2025-12-11 09:58:00
 
@@ -7241,13 +7313,13 @@
 
 
 
-### [Snapchat-提出-Canvas-to-Image：一张画布集成-ID、姿态与布局](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006115&idx=4&sn=71f3c629c7ea78dd566cc2d1d3abaf21)
+### [全图与切片并非等价？LLaVA-UHD-v3-揭示差异推出高效全图建模方案](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006115&idx=3&sn=0b29ba6e07dbec4d9f2951af48d5fd5a)
 
 2025-12-09 03:15:00
 
 
 
-### [全图与切片并非等价？LLaVA-UHD-v3-揭示差异推出高效全图建模方案](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006115&idx=3&sn=0b29ba6e07dbec4d9f2951af48d5fd5a)
+### [Snapchat-提出-Canvas-to-Image：一张画布集成-ID、姿态与布局](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651006115&idx=4&sn=71f3c629c7ea78dd566cc2d1d3abaf21)
 
 2025-12-09 03:15:00
 
@@ -7301,13 +7373,13 @@
 
 
 
-### [AAAI-2026｜新突破：北大彭宇新团队提出可见光-红外终身行人重识别方法-CKDA](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005849&idx=3&sn=1e1ed1f1cc5237ecabe90f420a0fd66b)
+### [刚刚，英伟达-CUDA-迎来史上最大更新！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005849&idx=1&sn=7ec633957322c63b3cd098f1bd213d4b)
 
 2025-12-06 04:05:00
 
 
 
-### [刚刚，英伟达-CUDA-迎来史上最大更新！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005849&idx=1&sn=7ec633957322c63b3cd098f1bd213d4b)
+### [AAAI-2026｜新突破：北大彭宇新团队提出可见光-红外终身行人重识别方法-CKDA](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005849&idx=3&sn=1e1ed1f1cc5237ecabe90f420a0fd66b)
 
 2025-12-06 04:05:00
 
@@ -7403,13 +7475,13 @@
 
 
 
-### [NeurIPS-2025｜CAKE：大模型驱动的贝叶斯优化新配方，让黑箱优化更智能、更高效](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005150&idx=4&sn=d2cc26f051c17a257a744209bdee1f5b)
+### [华为新开源！扩散语言模型突破-32K-上下文，还解锁了「慢思考」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005150&idx=1&sn=d4d0e396baedd09427fc613c3a46e1a9)
 
 2025-12-02 06:47:00
 
 
 
-### [华为新开源！扩散语言模型突破-32K-上下文，还解锁了「慢思考」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005150&idx=1&sn=d4d0e396baedd09427fc613c3a46e1a9)
+### [NeurIPS-2025｜CAKE：大模型驱动的贝叶斯优化新配方，让黑箱优化更智能、更高效](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651005150&idx=4&sn=d2cc26f051c17a257a744209bdee1f5b)
 
 2025-12-02 06:47:00
 
@@ -7667,13 +7739,13 @@
 
 
 
-### [登顶开源-SOTA！上交大&amp;小红书-LoopTool-实现工具调用任务的「数据进化」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002598&idx=2&sn=e446ea5f10fd98a66c99395f20cd57bf)
+### [如视发布空间大模型-Argus1.0，支持全景图等多元输入，行业首创！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002598&idx=1&sn=4e1656d799e228f15667195a574576a1)
 
 2025-11-19 04:04:00
 
 
 
-### [如视发布空间大模型-Argus1.0，支持全景图等多元输入，行业首创！](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002598&idx=1&sn=4e1656d799e228f15667195a574576a1)
+### [登顶开源-SOTA！上交大&amp;小红书-LoopTool-实现工具调用任务的「数据进化」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002598&idx=2&sn=e446ea5f10fd98a66c99395f20cd57bf)
 
 2025-11-19 04:04:00
 
@@ -7721,13 +7793,13 @@
 
 
 
-### [VinciCoder：多模态统一代码生成框架和视觉反馈强化学习，数据代码模型权重已开源](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002014&idx=4&sn=014fc5b651ebba5491ae7f9138c2a639)
+### [解决特斯拉「监督稀疏」难题，DriveVLA-W0-用世界模型放大自动驾驶-Data-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002014&idx=3&sn=025f400e7456628a21519627321a47a7)
 
 2025-11-17 04:20:00
 
 
 
-### [解决特斯拉「监督稀疏」难题，DriveVLA-W0-用世界模型放大自动驾驶-Data-Scaling-Law](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002014&idx=3&sn=025f400e7456628a21519627321a47a7)
+### [VinciCoder：多模态统一代码生成框架和视觉反馈强化学习，数据代码模型权重已开源](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651002014&idx=4&sn=014fc5b651ebba5491ae7f9138c2a639)
 
 2025-11-17 04:20:00
 
@@ -7937,13 +8009,13 @@
 
 
 
-### [vivo-AI-Lab-提出自我进化的移动-GUI-智能体，UI-Genie-无需人工标注实现性能持续提升](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000503&idx=4&sn=63fb3c0aa3976ab58ce6081a7463184e)
+### [没有内斗，Meta-也没能留住-PyTorch-之父](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000503&idx=2&sn=b7dc24f23e7583bf7e099c9bc031ca7d)
 
 2025-11-07 07:15:00
 
 
 
-### [没有内斗，Meta-也没能留住-PyTorch-之父](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000503&idx=2&sn=b7dc24f23e7583bf7e099c9bc031ca7d)
+### [vivo-AI-Lab-提出自我进化的移动-GUI-智能体，UI-Genie-无需人工标注实现性能持续提升](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000503&idx=4&sn=63fb3c0aa3976ab58ce6081a7463184e)
 
 2025-11-07 07:15:00
 
@@ -8003,13 +8075,13 @@
 
 
 
-### [清北联合推出-Motion-Transfer，比肩-Gemini-Robotics，让机器人直接从人类数据中端到端学习技能](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000041&idx=3&sn=13d352cccca5f9bc2231189c9383ff69)
+### [中英双语、29-项第一、像素级理解：360-FG-CLIP2-登顶全球最强图文跨模态模型](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000041&idx=1&sn=cc688c0ea93cc2c9373dc8847d457e8d)
 
 2025-11-05 04:13:00
 
 
 
-### [中英双语、29-项第一、像素级理解：360-FG-CLIP2-登顶全球最强图文跨模态模型](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000041&idx=1&sn=cc688c0ea93cc2c9373dc8847d457e8d)
+### [清北联合推出-Motion-Transfer，比肩-Gemini-Robotics，让机器人直接从人类数据中端到端学习技能](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651000041&idx=3&sn=13d352cccca5f9bc2231189c9383ff69)
 
 2025-11-05 04:13:00
 
@@ -8075,7 +8147,7 @@
 
 
 
-### [港科提出新算法革新大模型推理范式：随机策略估值竟成-LLM-数学推理「神操作」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999192&idx=3&sn=5fa8d222a14423dd66bfa0f3f81c9825)
+### [刚刚，Kimi-开源新架构，开始押注线性注意力](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999192&idx=1&sn=10755327ea1686f446af56ca04d686c7)
 
 2025-10-31 04:09:00
 
@@ -8087,7 +8159,7 @@
 
 
 
-### [刚刚，Kimi-开源新架构，开始押注线性注意力](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999192&idx=1&sn=10755327ea1686f446af56ca04d686c7)
+### [港科提出新算法革新大模型推理范式：随机策略估值竟成-LLM-数学推理「神操作」](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999192&idx=3&sn=5fa8d222a14423dd66bfa0f3f81c9825)
 
 2025-10-31 04:09:00
 
@@ -8105,13 +8177,13 @@
 
 
 
-### [扩散语言模型新发现：其计算潜力正在被浪费？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999086&idx=2&sn=0bc4a6f4b2515f4e118ac774b8e87f08)
+### [刚刚，智源悟界·Emu3.5-登场，原生具备世界建模能力](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999086&idx=1&sn=d74ff35496022cec359245f95c64917d)
 
 2025-10-30 08:50:00
 
 
 
-### [刚刚，智源悟界·Emu3.5-登场，原生具备世界建模能力](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999086&idx=1&sn=d74ff35496022cec359245f95c64917d)
+### [扩散语言模型新发现：其计算潜力正在被浪费？](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650999086&idx=2&sn=0bc4a6f4b2515f4e118ac774b8e87f08)
 
 2025-10-30 08:50:00
 
@@ -8195,13 +8267,13 @@
 
 
 
-### [推理效率狂飙-60-倍：DiDi-Instruct-让扩散大模型-16-步超越千步-GPT](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650998002&idx=3&sn=c428780cd0de44778a413c463e2cbafe)
+### [Efficiency-Law，-物理精确世界模型，及世界模型引擎驱动的具身智能学习新范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650998002&idx=1&sn=db9902fd8d7d54fe0d0cc201f87bb5e7)
 
 2025-10-27 05:21:00
 
 
 
-### [Efficiency-Law，-物理精确世界模型，及世界模型引擎驱动的具身智能学习新范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650998002&idx=1&sn=db9902fd8d7d54fe0d0cc201f87bb5e7)
+### [推理效率狂飙-60-倍：DiDi-Instruct-让扩散大模型-16-步超越千步-GPT](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650998002&idx=3&sn=c428780cd0de44778a413c463e2cbafe)
 
 2025-10-27 05:21:00
 
@@ -8213,13 +8285,13 @@
 
 
 
-### [huggingface_hub-v1.0：构建开放机器学习基础的五年](https://huggingface.co/blog/huggingface-hub-v1)
+### [流式数据集：效率提升-100-倍](https://huggingface.co/blog/streaming-datasets)
 
 2025-10-27 00:00:00
 
 
 
-### [流式数据集：效率提升-100-倍](https://huggingface.co/blog/streaming-datasets)
+### [huggingface_hub-v1.0：构建开放机器学习基础的五年](https://huggingface.co/blog/huggingface-hub-v1)
 
 2025-10-27 00:00:00
 
@@ -8327,13 +8399,13 @@
 
 
 
-### [R-HORIZON：长程推理时代来临，复旦-NLP&amp;美团-LongCat-重磅发布-LRMs-能力边界探测新范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650997146&idx=4&sn=a6c2928a17a53f403d487cecda78156b)
+### [X-上-63-万人围观的-Traning-Free-GRPO：把-GRPO-搬进上下文空间学习](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650997146&idx=3&sn=1ccb5e0da200f48a845bec376dea3992)
 
 2025-10-22 08:44:00
 
 
 
-### [X-上-63-万人围观的-Traning-Free-GRPO：把-GRPO-搬进上下文空间学习](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650997146&idx=3&sn=1ccb5e0da200f48a845bec376dea3992)
+### [R-HORIZON：长程推理时代来临，复旦-NLP&amp;美团-LongCat-重磅发布-LRMs-能力边界探测新范式](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650997146&idx=4&sn=a6c2928a17a53f403d487cecda78156b)
 
 2025-10-22 08:44:00
 
@@ -8351,13 +8423,13 @@
 
 
 
-### [大模型微调范式认知再被颠覆？UIUC、Amazon-团队最新研究指出-SFT-灾难性遗忘问题或被误解](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650996789&idx=4&sn=9cbb0d00ec91d815ce4601c493c381d6)
+### [RewardMap:-通过多阶段强化学习解决细粒度视觉推理的-Sparse-Reward](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650996789&idx=3&sn=13cdd85bd8d5a11c6564afa608b71b1c)
 
 2025-10-21 03:41:00
 
 
 
-### [RewardMap:-通过多阶段强化学习解决细粒度视觉推理的-Sparse-Reward](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650996789&idx=3&sn=13cdd85bd8d5a11c6564afa608b71b1c)
+### [大模型微调范式认知再被颠覆？UIUC、Amazon-团队最新研究指出-SFT-灾难性遗忘问题或被误解](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650996789&idx=4&sn=9cbb0d00ec91d815ce4601c493c381d6)
 
 2025-10-21 03:41:00
 
@@ -8411,13 +8483,13 @@
 
 
 
-### [太狠了，四条腿被锯掉也能爬！通用大脑开启机器人「无休」时代](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652635886&idx=3&sn=51f1dba7dbb31a1ccdae51eea3b49a5e)
+### [全球第一，最强-OCR-之神诞生！百度这个-0.9B-开源模型问鼎-SOTA](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652635886&idx=1&sn=dbbc49bbef78ed093f65e4a384b29b63)
 
 2025-10-17 11:54:00
 
 
 
-### [全球第一，最强-OCR-之神诞生！百度这个-0.9B-开源模型问鼎-SOTA](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652635886&idx=1&sn=dbbc49bbef78ed093f65e4a384b29b63)
+### [太狠了，四条腿被锯掉也能爬！通用大脑开启机器人「无休」时代](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652635886&idx=3&sn=51f1dba7dbb31a1ccdae51eea3b49a5e)
 
 2025-10-17 11:54:00
 
@@ -8465,13 +8537,13 @@
 
 
 
-### [AI-能否「圣地巡礼」？多模态大模型全新评估基准-VIR-Bench-来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995480&idx=4&sn=bc54a8381dfa67f31ec4628fb8f47a7b)
+### [清华&amp;巨人网络首创-MoE-多方言-TTS-框架，数据代码方法全开源](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995480&idx=3&sn=8cb0f83fc8d8fdcc52ec378a8225ea56)
 
 2025-10-15 04:06:00
 
 
 
-### [清华&amp;巨人网络首创-MoE-多方言-TTS-框架，数据代码方法全开源](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995480&idx=3&sn=8cb0f83fc8d8fdcc52ec378a8225ea56)
+### [AI-能否「圣地巡礼」？多模态大模型全新评估基准-VIR-Bench-来了](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995480&idx=4&sn=bc54a8381dfa67f31ec4628fb8f47a7b)
 
 2025-10-15 04:06:00
 
@@ -8495,7 +8567,7 @@
 
 
 
-### [景不动人动，MLLM-如何面对「移步换景」的真实世界？OST-Bench-揭示多模态大模型在线时空理解短板](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995270&idx=4&sn=097d6a87ddcebffe1fe2670ea981ed08)
+### [蚂蚁-Ring-1T-正式登场，万亿参数思考模型，数学能力对标-IMO-银牌](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995270&idx=1&sn=14cb38ef612d249d08d5cac0b74d05f6)
 
 2025-10-14 05:43:00
 
@@ -8507,7 +8579,7 @@
 
 
 
-### [蚂蚁-Ring-1T-正式登场，万亿参数思考模型，数学能力对标-IMO-银牌](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995270&idx=1&sn=14cb38ef612d249d08d5cac0b74d05f6)
+### [景不动人动，MLLM-如何面对「移步换景」的真实世界？OST-Bench-揭示多模态大模型在线时空理解短板](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650995270&idx=4&sn=097d6a87ddcebffe1fe2670ea981ed08)
 
 2025-10-14 05:43:00
 
@@ -8657,7 +8729,7 @@
 
 
 
-### [机器人「看片」自学新技能：NovaFlow-从生成视频中提取动作流，实现零样本操控](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650994298&idx=3&sn=dbc1d0f8edadc40099b82fcaba3e6a19)
+### [更大，还能更快，更准！蚂蚁开源万亿参数语言模型-Ling-1T，刷新多项-SOTA](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650994298&idx=1&sn=9a24825292498b5e2a0979de02540e1f)
 
 2025-10-09 02:21:00
 
@@ -8669,7 +8741,7 @@
 
 
 
-### [更大，还能更快，更准！蚂蚁开源万亿参数语言模型-Ling-1T，刷新多项-SOTA](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650994298&idx=1&sn=9a24825292498b5e2a0979de02540e1f)
+### [机器人「看片」自学新技能：NovaFlow-从生成视频中提取动作流，实现零样本操控](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650994298&idx=3&sn=dbc1d0f8edadc40099b82fcaba3e6a19)
 
 2025-10-09 02:21:00
 
@@ -10055,13 +10127,13 @@
 
 
 
-### [L｜AS&amp;A:-Agentic-System-&amp;-Agent](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449376&idx=3&sn=c9b9a0189030eda1bf14c639e74e5848)
+### [KimiResearcher-背后的技术思考，关于端到端的-RL](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449376&idx=1&sn=c9c261bc0cc288ff37c4da6d2cdc94d8)
 
 2025-07-03 14:39:51
 
 
 
-### [KimiResearcher-背后的技术思考，关于端到端的-RL](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449376&idx=1&sn=c9c261bc0cc288ff37c4da6d2cdc94d8)
+### [L｜AS&amp;A:-Agentic-System-&amp;-Agent](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650449376&idx=3&sn=c9b9a0189030eda1bf14c639e74e5848)
 
 2025-07-03 14:39:51
 
@@ -11201,13 +11273,13 @@
 
 
 
-### [英伟达华人硬核-AI-神器，「描述一切」秒变细节狂魔！仅-3B-逆袭-GPT-4o](https://mp.weixin.qq.com/s/OzHmqP_SD8eMkoRea4jAmQ)
+### [一行代码不用写，AI-看论文自己「生」出代码库！科研神器再+1](https://mp.weixin.qq.com/s/jVbt7JVjJMyexXQ833C36Q)
 
 2025-04-27 00:00:00
 
 
 
-### [一行代码不用写，AI-看论文自己「生」出代码库！科研神器再+1](https://mp.weixin.qq.com/s/jVbt7JVjJMyexXQ833C36Q)
+### [英伟达华人硬核-AI-神器，「描述一切」秒变细节狂魔！仅-3B-逆袭-GPT-4o](https://mp.weixin.qq.com/s/OzHmqP_SD8eMkoRea4jAmQ)
 
 2025-04-27 00:00:00
 
@@ -11237,13 +11309,13 @@
 
 
 
-### [7B-超越-GPT！1/20-数据，无需知识蒸馏，马里兰等推出全新视觉推理方法](https://mp.weixin.qq.com/s/9qmNXjMmGrynzbPERRpFng)
+### [高考考上-985-的-AI-来了！超强数理推理横扫真题，训练秘籍剑指-AGI](https://mp.weixin.qq.com/s/DJ5ehEKyxGZtG1D9hAaxkw)
 
 2025-04-24 04:50:42
 
 
 
-### [高考考上-985-的-AI-来了！超强数理推理横扫真题，训练秘籍剑指-AGI](https://mp.weixin.qq.com/s/DJ5ehEKyxGZtG1D9hAaxkw)
+### [7B-超越-GPT！1/20-数据，无需知识蒸馏，马里兰等推出全新视觉推理方法](https://mp.weixin.qq.com/s/9qmNXjMmGrynzbPERRpFng)
 
 2025-04-24 04:50:42
 
@@ -11729,13 +11801,13 @@
 
 
 
-### [机器人安卓时刻！行业首个通用具身智能平台亮相，国家队全程真机直播](https://mp.weixin.qq.com/s/GZ-OqChFRHIeNnw89MWQeg)
+### [超-70%代码基准没有质量保证！港科大最新「指南」全面调研-10-年-274-个评测集](https://mp.weixin.qq.com/s/noYYnJW3PHggxt0Wex-t-Q)
 
 2025-03-17 11:20:58
 
 
 
-### [超-70%代码基准没有质量保证！港科大最新「指南」全面调研-10-年-274-个评测集](https://mp.weixin.qq.com/s/noYYnJW3PHggxt0Wex-t-Q)
+### [机器人安卓时刻！行业首个通用具身智能平台亮相，国家队全程真机直播](https://mp.weixin.qq.com/s/GZ-OqChFRHIeNnw89MWQeg)
 
 2025-03-17 11:20:58
 
@@ -11759,13 +11831,13 @@
 
 
 
-### [想纠正-LMM-犯错？没用！NUS-华人团队：最强-o1-反馈修正率不到-50%](https://mp.weixin.qq.com/s/rlAEo1KsoheqJR1Z3mtqRA)
+### [谷歌重磅推出全新-Scaling-Law，抢救-Transformer！3-万亿美元-AI-面临岔路](https://mp.weixin.qq.com/s/tUrJzSUrwtAffDlmfnH3rw)
 
 2025-03-16 03:28:36
 
 
 
-### [谷歌重磅推出全新-Scaling-Law，抢救-Transformer！3-万亿美元-AI-面临岔路](https://mp.weixin.qq.com/s/tUrJzSUrwtAffDlmfnH3rw)
+### [想纠正-LMM-犯错？没用！NUS-华人团队：最强-o1-反馈修正率不到-50%](https://mp.weixin.qq.com/s/rlAEo1KsoheqJR1Z3mtqRA)
 
 2025-03-16 03:28:36
 
@@ -12035,13 +12107,13 @@
 
 
 
-### [单提示生成「主体一致」图像，且无需训练！已斩获-ICLR-2025-Spotlight](https://mp.weixin.qq.com/s/7fT7RQfn2iC58Kig9TCsyg)
+### [不用-GAN-不用扩散，无需训练解锁-AI-生图新境界！判别模型成神秘第三极](https://mp.weixin.qq.com/s/KwW50i_Do04OhVJrJ12T5w)
 
 2025-02-24 04:28:29
 
 
 
-### [不用-GAN-不用扩散，无需训练解锁-AI-生图新境界！判别模型成神秘第三极](https://mp.weixin.qq.com/s/KwW50i_Do04OhVJrJ12T5w)
+### [单提示生成「主体一致」图像，且无需训练！已斩获-ICLR-2025-Spotlight](https://mp.weixin.qq.com/s/7fT7RQfn2iC58Kig9TCsyg)
 
 2025-02-24 04:28:29
 
@@ -12155,13 +12227,13 @@
 
 
 
-### [强化学习-Scaling-Law-错了？无需蒸馏，数据量只要-1/6，效果还更好](https://mp.weixin.qq.com/s/wgSmwRxwnNXon55Wl5rkcQ)
+### [微软开放-3.1T-token-高质量数据！通用/代码/数学/问答，全领域超越开源](https://mp.weixin.qq.com/s/4NVBVRTuk8azQbD5SDi92Q)
 
 2025-02-18 06:47:03
 
 
 
-### [微软开放-3.1T-token-高质量数据！通用/代码/数学/问答，全领域超越开源](https://mp.weixin.qq.com/s/4NVBVRTuk8azQbD5SDi92Q)
+### [强化学习-Scaling-Law-错了？无需蒸馏，数据量只要-1/6，效果还更好](https://mp.weixin.qq.com/s/wgSmwRxwnNXon55Wl5rkcQ)
 
 2025-02-18 06:47:03
 
@@ -12305,13 +12377,13 @@
 
 
 
-### [使用-cURL-和-Firecrawl-爬取认证网站的完整指南](https://www.firecrawl.dev/blog/complete-guide-to-curl-authentication-firecrawl-api)
+### [BeautifulSoup4-vs.-Scrapy：Python-网络爬虫工具综合比较](https://www.firecrawl.dev/blog/beautifulsoup4-vs-scrapy-comparison)
 
 2025-02-09 02:05:02
 
 
 
-### [BeautifulSoup4-vs.-Scrapy：Python-网络爬虫工具综合比较](https://www.firecrawl.dev/blog/beautifulsoup4-vs-scrapy-comparison)
+### [使用-cURL-和-Firecrawl-爬取认证网站的完整指南](https://www.firecrawl.dev/blog/complete-guide-to-curl-authentication-firecrawl-api)
 
 2025-02-09 02:05:02
 
@@ -12398,6 +12470,70 @@
 ### [DeepMind-创始人哈萨比斯深度访谈：AGI-路径、记忆系统突破与-AI-的未来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281304&idx=1&sn=773e8504910d737f6f7e3d4d5e08eb9d)
 
 2026-04-10 06:11:00
+
+
+
+### [银行业云原生事件驱动架构实践：经验与教训](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281304&idx=3&sn=bf6e60b2849e9a416ec96b9b12f22fba)
+
+2026-04-10 06:11:00 | 标签: 事件驱动架构, 云原生, 微服务, 银行业技术, 系统架构
+
+> 文章基于天达银行（Investec）的实践，深入分析了事件驱动架构在金融领域的应用。作者强调了区分「命令」与「事件」的重要性，并指出 EDA 在银行业的核心价值在于系统解耦（如支付与风控监控分离）、不可变审计日志、扇出处理及容错能力。针对实践中的挑战，文章提出了具体的解决方案：利用发件箱和收件箱模式解决事件丢失与重复问题；通过版本控制和领域/集成事件分离来维护长期的事件契约；以及通过开发者平台和培训来应对异步思维转变的人为挑战。最终构建出一个高弹性、可伸缩且符合监管要求的云原生金融系统。
+
+
+
+### [CSDN-多平台同步发布功能正式上线](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247830015&idx=1&sn=fec960939423bb68cb7bea760b0c5e28)
+
+2026-04-10 06:03:00 | 标签: CSDN, 内容创作, 多平台同步, 效率工具, 浏览器插件
+
+> CSDN 官方正式上线「多平台发布功能」，旨在解决技术创作者在不同平台重复排版、手动分发的痛点。该功能以浏览器插件为核心，支持将 CSDN 文章一键同步至微信公众号（已上线）及小红书、知乎、掘金等 5 个以上主流平台。插件具备 Markdown 自动转富文本、代码块转截图、本地 Cookie 安全验证等特性，同步后以草稿形式保存，确保创作者在发布前可进行二次检查。此外，该功能还集成了 SEO 优化与 TDK 结构化数据同步，助力内容在 AI 搜索中的引用率提升。
+
+
+
+### [深入剖析-Robolectric：Android-UI-测试如何在没有模拟器的情况下运行](https://hackernoon.com/inside-robolectric-how-android-ui-tests-work-without-an-emulator?source=rss)
+
+2026-04-10 02:41:04 | 标签: Android, Robolectric, 单元测试, 字节码操作, 软件工程
+
+> 本文探讨了 Android 测试框架 Robolectric 的技术基础，该框架允许开发者在没有模拟器的情况下运行 UI 测试。文章详细介绍了 Robolectric 如何通过使用自定义的 SandboxClassLoader 加载 Android 框架类（android-all.jar），并利用 ObjectWeb ASM 进行字节码插桩来实现这一目标。作者解释了“影子（Shadowing）”机制，该机制通过拦截 Android 方法调用来提供与 JVM 兼容的实现，并讨论了处理权限、网络请求、Compose 集成以及 WebView 和动画等组件测试限制等实际考量。
+
+
+
+### [DoorDash-如何利用-Elasticsearch-实现大规模商品可用性优化](https://hackernoon.com/how-doordash-optimized-item-availability-at-scale-using-elasticsearch?source=rss)
+
+2026-04-10 00:00:00 | 标签: 分布式系统, 性能优化, 软件工程, 系统设计, 可扩展性
+
+> 作者分析了为什么在大规模分布式系统中，看似“显而易见”的性能优化往往会导致负面结果。通过分享管理处理超过 5000 万次请求系统的经验，本文强调了性能调优的复杂性、过早优化的风险，以及在实施变更前进行深度系统可观测性的重要性。对于那些在没有全面了解系统行为的情况下试图改善延迟或吞吐量的工程师来说，这是一个警示故事。
+
+
+
+### [如何在家庭服务器上自托管-Vaultwarden](https://hackernoon.com/how-to-self-host-vaultwarden-on-a-home-server?source=rss)
+
+2026-04-10 00:00:00 | 标签: 数据流水线, 合规性, 数据工程, 安全性, 系统架构
+
+> 本文从技术角度概述了如何设计必须遵守严格监管要求的数据流水线。文章重点讨论了数据可访问性与安全性之间的关键平衡，涵盖了静态和传输中加密、稳健的审计日志记录、数据血缘追踪以及细粒度访问控制的实现。作者强调，必须在 CI/CD 流水线中集成自动化合规性检查，以确保系统演进过程中数据处理始终保持合规。
+
+
+
+### [陈旧数据如何演变为危机](https://hackernoon.com/how-aging-data-becomes-a-crisis?source=rss)
+
+2026-04-10 00:00:00 | 标签: 软件架构, 三层架构, 系统设计, 非技术, 数字化转型
+
+> 本文是一份关于三层软件架构模型的入门指南，这是软件工程中的一种标准设计模式。文章将架构拆解为三个独立的层级：表现层（用户界面）、应用层（业务逻辑与处理）以及数据层（数据库与存储）。通过解释这些层级如何交互，作者帮助非技术读者理解了现代软件应用如何管理数据流、安全性和可扩展性。
+
+
+
+### [在-Streamlit-中构建实时市场脉搏仪表盘](https://hackernoon.com/build-a-real-time-market-pulse-dashboard-in-streamlit?source=rss)
+
+2026-04-10 00:00:00 | 标签: 算法交易, 压力测试, 量化金融, 回测, 风险管理
+
+> 本文为开发者和量化交易者概述了一种系统化的交易策略压力测试方法。它强调了超越回测的重要性，通过模拟极端市场场景、流动性限制和延迟问题来评估策略。该框架重点在于构建一个严谨的验证流水线，包括蒙特卡洛模拟、敏感性分析和历史崩盘测试，以评估当市场假设失效时策略的表现。
+
+
+
+### [安全合规但查询搞崩了！数据库加密到底怎么做？](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247635420&idx=1&sn=344e2fbdbfb2b40d0016353acc73b368)
+
+2026-04-09 23:15:00 | 标签: 数据库加密, 数据安全, 系统架构, MySQL, AES-GCM
+
+> 文章源于作者公司在 App 上架备案时因敏感信息明文存储被拒的真实经历，系统性地介绍了手机号、姓名、身份证及邮箱等核心敏感字段的加密存储设计。核心思路是放弃通用的高大上框架，转而采用「密文存储 + 不可逆 HMAC 索引 + 结构化派生字段」的折中方案。通过在主表冗余脱敏字段解决后台展示性能问题，并详细复盘了密钥管理、历史数据迁移、BI 系统适配及导出权限控制等 6 大落地坑位，强调加密方案应与实际业务场景深度契合。
 
 
 
@@ -12605,13 +12741,13 @@
 
 
 
-### [写入快-2-倍，查询快-6-倍，存储成本反降-50%：丰巢日志平台从-ELK-升级为-Apache-Doris](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=2&sn=7fd4b12b128e4610334cd5010d7b1681)
+### [Java-近期资讯：GraalVM-Build-Tools、EclipseLink、Spring-里程碑版本、Open-Liberty-和-Quarkus](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=4&sn=069f3b8ad6b88e8b63e8545a12593002)
 
 2026-04-05 02:15:00
 
 
 
-### [Java-近期资讯：GraalVM-Build-Tools、EclipseLink、Spring-里程碑版本、Open-Liberty-和-Quarkus](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=4&sn=069f3b8ad6b88e8b63e8545a12593002)
+### [写入快-2-倍，查询快-6-倍，存储成本反降-50%：丰巢日志平台从-ELK-升级为-Apache-Doris](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651280903&idx=2&sn=7fd4b12b128e4610334cd5010d7b1681)
 
 2026-04-05 02:15:00
 
@@ -12695,13 +12831,13 @@
 
 
 
-### [云原生银行业的事件驱动模式：经验与教训](https://www.infoq.com/articles/event-driven-banking-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [将故障作为构建弹性软件系统的手段：与-Lorin-Hochstein-的对话](https://www.infoq.com/podcasts/failure-means-build-resilient-software-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-03-31 09:00:00
 
 
 
-### [将故障作为构建弹性软件系统的手段：与-Lorin-Hochstein-的对话](https://www.infoq.com/podcasts/failure-means-build-resilient-software-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [云原生银行业的事件驱动模式：经验与教训](https://www.infoq.com/articles/event-driven-banking-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-03-31 09:00:00
 
@@ -12995,13 +13131,13 @@
 
 
 
-### [Grab-工程实践：将-LRU-升级为-TLRU，Android-图片缓存节省-50MB+](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=4&sn=791744ee5c208deb7678d6aff8622997)
+### [360-如何用-AutoMQ-解决千亿级-Kafka-冷读难题](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=3&sn=2610b3295f8b649a95597d835a3ed90e)
 
 2026-03-20 08:07:00
 
 
 
-### [360-如何用-AutoMQ-解决千亿级-Kafka-冷读难题](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=3&sn=2610b3295f8b649a95597d835a3ed90e)
+### [Grab-工程实践：将-LRU-升级为-TLRU，Android-图片缓存节省-50MB+](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651279079&idx=4&sn=791744ee5c208deb7678d6aff8622997)
 
 2026-03-20 08:07:00
 
@@ -13157,13 +13293,13 @@
 
 
 
-### [TDSQL-Boundless：AI-时代的多模态数据库](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=3&sn=8173817acc43998128d5a589379a3655)
+### [Datadog-如何将其-Agent-的-Go-二进制文件缩减-77%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=4&sn=3177c2d1bc7b77d4e0109aa13b93657d)
 
 2026-03-18 07:08:00
 
 
 
-### [Datadog-如何将其-Agent-的-Go-二进制文件缩减-77%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=4&sn=3177c2d1bc7b77d4e0109aa13b93657d)
+### [TDSQL-Boundless：AI-时代的多模态数据库](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651278815&idx=3&sn=8173817acc43998128d5a589379a3655)
 
 2026-03-18 07:08:00
 
@@ -13445,13 +13581,13 @@
 
 
 
-### [豆包-19-亿次互动背后的技术真相：春晚级体验是如何炼成的？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=1&sn=b9244734066493db926cc0a1193b162c)
+### [作业帮-StarRocks-替换-Presto-落地实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=3&sn=55979a39ba0d02a755be8a384e3992f4)
 
 2026-03-11 07:06:00
 
 
 
-### [作业帮-StarRocks-替换-Presto-落地实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=3&sn=55979a39ba0d02a755be8a384e3992f4)
+### [豆包-19-亿次互动背后的技术真相：春晚级体验是如何炼成的？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651277916&idx=1&sn=b9244734066493db926cc0a1193b162c)
 
 2026-03-11 07:06:00
 
@@ -13643,13 +13779,13 @@
 
 
 
-### [DeepMind-新论文炸锅：AI-全自动进化算法，写出专家都想不到的解，网友：这可能就是“王牌”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276826&idx=2&sn=8c332905db7bd08e40f45099a37bb3ea)
+### [吴恩达复盘百度岁月：我带过的自动驾驶、智能音箱都成了！Altman-我也带过，但-Gemini-3-比-ChatGPT-强](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276826&idx=1&sn=ab4fdb26221877a86da62e36971bcdf4)
 
 2026-03-02 07:11:00
 
 
 
-### [吴恩达复盘百度岁月：我带过的自动驾驶、智能音箱都成了！Altman-我也带过，但-Gemini-3-比-ChatGPT-强](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276826&idx=1&sn=ab4fdb26221877a86da62e36971bcdf4)
+### [DeepMind-新论文炸锅：AI-全自动进化算法，写出专家都想不到的解，网友：这可能就是“王牌”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651276826&idx=2&sn=8c332905db7bd08e40f45099a37bb3ea)
 
 2026-03-02 07:11:00
 
@@ -13985,13 +14121,13 @@
 
 
 
-### [黄仁勋曝英伟达养了-61-个-CEO、从不炒犯错员工：CEO-是最脆弱群体](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272913&idx=1&sn=f6365f9be3ba78ec2bfb5f75cac98643)
+### [揭秘-Uber-跨区域数据湖与灾难恢复机制：350PB-数据、数百万事件、单一系统](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272913&idx=3&sn=a5c87eed4fec3eba8020bc73ab6c6bcf)
 
 2026-01-25 02:15:00
 
 
 
-### [揭秘-Uber-跨区域数据湖与灾难恢复机制：350PB-数据、数百万事件、单一系统](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272913&idx=3&sn=a5c87eed4fec3eba8020bc73ab6c6bcf)
+### [黄仁勋曝英伟达养了-61-个-CEO、从不炒犯错员工：CEO-是最脆弱群体](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651272913&idx=1&sn=f6365f9be3ba78ec2bfb5f75cac98643)
 
 2026-01-25 02:15:00
 
@@ -14159,13 +14295,13 @@
 
 
 
-### [我对比‘有用’成瘾](https://seangoedecke.com/addicted-to-being-useful/)
+### [美团-LongCat-Flash-Thinking-2601-发布，工具调用能力登顶开源-SOTA！](https://tech.meituan.com/2026/01/20/longcat-flash-thinking-2601.html)
 
 2026-01-20 00:00:00
 
 
 
-### [美团-LongCat-Flash-Thinking-2601-发布，工具调用能力登顶开源-SOTA！](https://tech.meituan.com/2026/01/20/longcat-flash-thinking-2601.html)
+### [我对比‘有用’成瘾](https://seangoedecke.com/addicted-to-being-useful/)
 
 2026-01-20 00:00:00
 
@@ -14189,13 +14325,13 @@
 
 
 
-### [防止数据泄露：在-Google-Cloud-Platform-中实现企业级-VPC-服务控制的实际应用](https://www.infoq.com/articles/preventing-data-exfiltration-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [视频播客-与-Olivia-McVicker-探讨-AI-驱动开发](https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-19 11:00:00
 
 
 
-### [视频播客-与-Olivia-McVicker-探讨-AI-驱动开发](https://www.infoq.com/podcasts/ai-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [防止数据泄露：在-Google-Cloud-Platform-中实现企业级-VPC-服务控制的实际应用](https://www.infoq.com/articles/preventing-data-exfiltration-google-cloud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-19 11:00:00
 
@@ -14411,7 +14547,7 @@
 
 
 
-### [BigQuery-推出针对开放模型的托管式-SQL-原生推理功能](https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-managed-and-sql-native-inference-for-open-models/)
+### [Agent-Factory-回顾：TPU-上的强化学习与微调](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-reinforcement-learning-and-fine-tuning-on-tpus/)
 
 2026-01-16 00:00:00
 
@@ -14423,7 +14559,7 @@
 
 
 
-### [Agent-Factory-回顾：TPU-上的强化学习与微调](https://cloud.google.com/blog/topics/developers-practitioners/agent-factory-recap-reinforcement-learning-and-fine-tuning-on-tpus/)
+### [BigQuery-推出针对开放模型的托管式-SQL-原生推理功能](https://cloud.google.com/blog/products/data-analytics/introducing-bigquery-managed-and-sql-native-inference-for-open-models/)
 
 2026-01-16 00:00:00
 
@@ -14549,7 +14685,7 @@
 
 
 
-### [Palo-Alto-Networks-客户情报智能体设计](https://cloud.google.com/blog/topics/partners/palo-alto-networks-customer-intelligence-agentic-design/)
+### [发布彩虹表以加速协议弃用](https://cloud.google.com/blog/topics/threat-intelligence/net-ntlmv1-deprecation-rainbow-tables/)
 
 2026-01-15 00:00:00
 
@@ -14561,7 +14697,7 @@
 
 
 
-### [发布彩虹表以加速协议弃用](https://cloud.google.com/blog/topics/threat-intelligence/net-ntlmv1-deprecation-rainbow-tables/)
+### [Palo-Alto-Networks-客户情报智能体设计](https://cloud.google.com/blog/topics/partners/palo-alto-networks-customer-intelligence-agentic-design/)
 
 2026-01-15 00:00:00
 
@@ -14573,13 +14709,13 @@
 
 
 
-### [如果你是-Z-世代，这篇就是为你准备的：关于-2025-年科技格局，Z-世代需要知道的一切](https://stackoverflow.blog/2026/01/14/gen-z-wrapped-2025/)
+### [技术领导力关于团队扩展与-AI-的-8-个经验教训](https://stackoverflow.blog/2026/01/14/8-lessons-from-tech-leadership-on-scaling-teams-and-ai/)
 
 2026-01-14 17:00:00
 
 
 
-### [技术领导力关于团队扩展与-AI-的-8-个经验教训](https://stackoverflow.blog/2026/01/14/8-lessons-from-tech-leadership-on-scaling-teams-and-ai/)
+### [如果你是-Z-世代，这篇就是为你准备的：关于-2025-年科技格局，Z-世代需要知道的一切](https://stackoverflow.blog/2026/01/14/gen-z-wrapped-2025/)
 
 2026-01-14 17:00:00
 
@@ -14771,13 +14907,13 @@
 
 
 
-### [电脑开机要先闯关？程序员-10-个月用-C-语言爆肝-5-款神作，赢不了直接关机，网友：越折腾越上头](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827124&idx=1&sn=6378e5a169f5f5c35ea8b1d0bf8f0161)
+### [全球开发者三年暴增-50%！增速最快的不是-Python，而是-C++和-Rust](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827124&idx=3&sn=f3a96d2ba6b2a7c304fe6c357a81ab66)
 
 2026-01-13 10:11:00
 
 
 
-### [全球开发者三年暴增-50%！增速最快的不是-Python，而是-C++和-Rust](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827124&idx=3&sn=f3a96d2ba6b2a7c304fe6c357a81ab66)
+### [电脑开机要先闯关？程序员-10-个月用-C-语言爆肝-5-款神作，赢不了直接关机，网友：越折腾越上头](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827124&idx=1&sn=6378e5a169f5f5c35ea8b1d0bf8f0161)
 
 2026-01-13 10:11:00
 
@@ -14807,13 +14943,13 @@
 
 
 
-### [发生在-CES-的六场对话：来自深圳的-AI-硬件“外卷”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=2&sn=b36b86b665ed7905a4f12b7b01e9adc8)
+### [英伟达发布了跨-AI、机器人和自动驾驶的开放模型、数据集和工具](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=4&sn=4be0052c6198c797b7682e98e470324b)
 
 2026-01-13 00:46:00
 
 
 
-### [英伟达发布了跨-AI、机器人和自动驾驶的开放模型、数据集和工具](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=4&sn=4be0052c6198c797b7682e98e470324b)
+### [发生在-CES-的六场对话：来自深圳的-AI-硬件“外卷”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271670&idx=2&sn=b36b86b665ed7905a4f12b7b01e9adc8)
 
 2026-01-13 00:46:00
 
@@ -14831,13 +14967,13 @@
 
 
 
-### [Spring-AI-智能体模式（第一部分）：智能体技能---模块化、可复用的能力](https://spring.io/blog/2026/01/13/spring-ai-generic-agent-skills)
+### [KuiTest：基于大模型通识的-UI-交互遍历测试](https://tech.meituan.com/2026/01/13/kuitest-ui.html)
 
 2026-01-13 00:00:00
 
 
 
-### [KuiTest：基于大模型通识的-UI-交互遍历测试](https://tech.meituan.com/2026/01/13/kuitest-ui.html)
+### [Spring-AI-智能体模式（第一部分）：智能体技能---模块化、可复用的能力](https://spring.io/blog/2026/01/13/spring-ai-generic-agent-skills)
 
 2026-01-13 00:00:00
 
@@ -14861,7 +14997,7 @@
 
 
 
-### [微软发布-TypeScript-7-更新进展](https://www.infoq.com/news/2026/01/typescript-7-progress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [面向-JavaScript-开发者的-Aspire](https://devblogs.microsoft.com/aspire/aspire-for-javascript-developers)
 
 2026-01-12 17:00:00
 
@@ -14873,7 +15009,7 @@
 
 
 
-### [面向-JavaScript-开发者的-Aspire](https://devblogs.microsoft.com/aspire/aspire-for-javascript-developers)
+### [微软发布-TypeScript-7-更新进展](https://www.infoq.com/news/2026/01/typescript-7-progress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-12 17:00:00
 
@@ -14903,13 +15039,13 @@
 
 
 
-### [Spec-Driven-Development:-当架构变得可执行](https://www.infoq.com/articles/spec-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Somtochi-Onyekwere-谈分布式数据系统、最终一致性与无冲突复制数据类型](https://www.infoq.com/podcasts/distributed-data-systems-consistency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-12 11:00:00
 
 
 
-### [Somtochi-Onyekwere-谈分布式数据系统、最终一致性与无冲突复制数据类型](https://www.infoq.com/podcasts/distributed-data-systems-consistency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Spec-Driven-Development:-当架构变得可执行](https://www.infoq.com/articles/spec-driven-development/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-12 11:00:00
 
@@ -14921,13 +15057,13 @@
 
 
 
-### [Zed-为什么不用自己造-Agent？OpenAI-架构师给出答案：Codex-重划-IDE-×-Coding-Agent-的分工边界](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271576&idx=2&sn=5989c75c54ee27c336eec411c42e68d4)
+### [Facebook-调查显示：越来越多的人开始采用带类型的-Python，以提升代码质量和灵活性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271576&idx=4&sn=c4369306bea0d5463c8a940388bc5d93)
 
 2026-01-12 10:31:00
 
 
 
-### [Facebook-调查显示：越来越多的人开始采用带类型的-Python，以提升代码质量和灵活性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271576&idx=4&sn=c4369306bea0d5463c8a940388bc5d93)
+### [Zed-为什么不用自己造-Agent？OpenAI-架构师给出答案：Codex-重划-IDE-×-Coding-Agent-的分工边界](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271576&idx=2&sn=5989c75c54ee27c336eec411c42e68d4)
 
 2026-01-12 10:31:00
 
@@ -14993,7 +15129,7 @@
 
 
 
-### [“Gemini-3-不错，但我们也快发了”：Mark-Chen-评价谷歌大模型，讲清-OpenAI-如何给-300-个项目排-GPU-优先级](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271147&idx=1&sn=87a6e2be4e423ae2aa8f6726ff67b759)
+### [JEP-525-为-Java-的结构化并发引入超时处理与连接器优化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271147&idx=4&sn=b16043a1e0b6753d91b2370ef5b894c5)
 
 2026-01-11 02:15:00
 
@@ -15005,7 +15141,7 @@
 
 
 
-### [JEP-525-为-Java-的结构化并发引入超时处理与连接器优化](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271147&idx=4&sn=b16043a1e0b6753d91b2370ef5b894c5)
+### [“Gemini-3-不错，但我们也快发了”：Mark-Chen-评价谷歌大模型，讲清-OpenAI-如何给-300-个项目排-GPU-优先级](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651271147&idx=1&sn=87a6e2be4e423ae2aa8f6726ff67b759)
 
 2026-01-11 02:15:00
 
@@ -15077,7 +15213,7 @@
 
 
 
-### [淘宝内核组-001-号员工，20-年经验“小菜鸟”：我用-AI-写代码，但不担心“手艺”退化](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827026&idx=1&sn=9b9b954df5d684d65f15f21d365fa171)
+### [不到-200-行-Python-代码，就能复刻一个「Claude-Code」？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827026&idx=3&sn=23293392172a4217b0e79cd5d775832c)
 
 2026-01-09 08:38:00
 
@@ -15089,7 +15225,7 @@
 
 
 
-### [不到-200-行-Python-代码，就能复刻一个「Claude-Code」？](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827026&idx=3&sn=23293392172a4217b0e79cd5d775832c)
+### [淘宝内核组-001-号员工，20-年经验“小菜鸟”：我用-AI-写代码，但不担心“手艺”退化](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247827026&idx=1&sn=9b9b954df5d684d65f15f21d365fa171)
 
 2026-01-09 08:38:00
 
@@ -15227,13 +15363,13 @@
 
 
 
-### [Introducing-bash-tool-for-filesystem-based-context-retrieval---Vercel](https://vercel.com/changelog/introducing-bash-tool-for-filesystem-based-context-retrieval)
+### [我们如何让-v0-成为高效的编码智能体---Vercel](https://vercel.com/blog/how-we-made-v0-an-effective-coding-agent)
 
 2026-01-07 13:00:00
 
 
 
-### [我们如何让-v0-成为高效的编码智能体---Vercel](https://vercel.com/blog/how-we-made-v0-an-effective-coding-agent)
+### [Introducing-bash-tool-for-filesystem-based-context-retrieval---Vercel](https://vercel.com/changelog/introducing-bash-tool-for-filesystem-based-context-retrieval)
 
 2026-01-07 13:00:00
 
@@ -15377,13 +15513,13 @@
 
 
 
-### [全网-380-万人围观！连代码都不看，4-个月“烧掉”30-亿-Token，不懂编程的他却做出了-50+个产品……](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826798&idx=1&sn=a35af22c3527501fb7a399841d072b29)
+### [不是写代码最牛的人才是顶级工程师？Google-老工程师的-14-年-21-条经验总结](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826798&idx=3&sn=b34df46381696cda926d9dc1851900d7)
 
 2026-01-05 09:47:00
 
 
 
-### [不是写代码最牛的人才是顶级工程师？Google-老工程师的-14-年-21-条经验总结](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826798&idx=3&sn=b34df46381696cda926d9dc1851900d7)
+### [全网-380-万人围观！连代码都不看，4-个月“烧掉”30-亿-Token，不懂编程的他却做出了-50+个产品……](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247826798&idx=1&sn=a35af22c3527501fb7a399841d072b29)
 
 2026-01-05 09:47:00
 
@@ -15431,7 +15567,7 @@
 
 
 
-### [谷歌-Gemini-API-负责人自曝：用竞品-Claude-Code-1-小时复现自己团队一年成果，工程师圈炸了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270044&idx=1&sn=bbd6ec4b4dcad0b7bef39c8965b069ac)
+### [米其林以务实路线迈向-AIOps，并无宏大愿景](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270044&idx=4&sn=cbf1010d1c61ab64014c537454647cdb)
 
 2026-01-04 04:47:00
 
@@ -15443,7 +15579,7 @@
 
 
 
-### [米其林以务实路线迈向-AIOps，并无宏大愿景](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270044&idx=4&sn=cbf1010d1c61ab64014c537454647cdb)
+### [谷歌-Gemini-API-负责人自曝：用竞品-Claude-Code-1-小时复现自己团队一年成果，工程师圈炸了！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651270044&idx=1&sn=bbd6ec4b4dcad0b7bef39c8965b069ac)
 
 2026-01-04 04:47:00
 
@@ -15539,13 +15675,13 @@
 
 
 
-### [超越胜率：Spotify-如何在产品实验中量化学习成果](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269848&idx=3&sn=0b676ef622afb23182f6b14a72eda81f)
+### [超越应用层的基准测试：Uber-如何评估基础设施变更与云服务单元](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269848&idx=4&sn=2175fb0b6cf23e8831a3b506f144882d)
 
 2025-12-31 03:38:00
 
 
 
-### [超越应用层的基准测试：Uber-如何评估基础设施变更与云服务单元](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269848&idx=4&sn=2175fb0b6cf23e8831a3b506f144882d)
+### [超越胜率：Spotify-如何在产品实验中量化学习成果](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269848&idx=3&sn=0b676ef622afb23182f6b14a72eda81f)
 
 2025-12-31 03:38:00
 
@@ -15617,7 +15753,7 @@
 
 
 
-### [AI-Coding-生死局：Spec-正在蚕食人类编码，Agent-造轮子拖垮效率，Token-成本失控后上下文工程成胜负手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269803&idx=1&sn=716ff8ba575181d491f24ddd24654c40)
+### [算力稀缺时代，如何把-GPU-用“满”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269803&idx=3&sn=4f4de2da32df3a6b322383aa172ddfce)
 
 2025-12-30 06:31:00
 
@@ -15629,7 +15765,7 @@
 
 
 
-### [算力稀缺时代，如何把-GPU-用“满”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269803&idx=3&sn=4f4de2da32df3a6b322383aa172ddfce)
+### [AI-Coding-生死局：Spec-正在蚕食人类编码，Agent-造轮子拖垮效率，Token-成本失控后上下文工程成胜负手](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269803&idx=1&sn=716ff8ba575181d491f24ddd24654c40)
 
 2025-12-30 06:31:00
 
@@ -15707,13 +15843,13 @@
 
 
 
-### [大模型狂叠-buff、Agent-乱战，2025-大洗牌预警：96%中国机器人公司恐活不过明年，哪个行业真正被-AI-改造了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=1&sn=6ba1f5188c6d247a1ad0cf3de1d15e71)
+### [Orion：面向注重隐私用户的新型浏览器——零遥测、零广告、防范-AI-追踪](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=4&sn=c19a78bb54d027a5217e541ef884dfff)
 
 2025-12-29 07:03:00
 
 
 
-### [Orion：面向注重隐私用户的新型浏览器——零遥测、零广告、防范-AI-追踪](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=4&sn=c19a78bb54d027a5217e541ef884dfff)
+### [大模型狂叠-buff、Agent-乱战，2025-大洗牌预警：96%中国机器人公司恐活不过明年，哪个行业真正被-AI-改造了？](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269654&idx=1&sn=6ba1f5188c6d247a1ad0cf3de1d15e71)
 
 2025-12-29 07:03:00
 
@@ -15749,13 +15885,13 @@
 
 
 
-### [Target-公司借助生成式-AI-推荐将“加入购物车”互动率提升-11%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=3&sn=bf6de646b1077f777d600b35cfb77eb9)
+### [Pinterest-工程通过运行时感知分片将-Android-CI-构建时间缩短了-36%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=4&sn=2f604544088f9b95b22b75f2252a813f)
 
 2025-12-28 02:16:00
 
 
 
-### [Pinterest-工程通过运行时感知分片将-Android-CI-构建时间缩短了-36%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=4&sn=2f604544088f9b95b22b75f2252a813f)
+### [Target-公司借助生成式-AI-推荐将“加入购物车”互动率提升-11%](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651269522&idx=3&sn=bf6de646b1077f777d600b35cfb77eb9)
 
 2025-12-28 02:16:00
 
@@ -15785,13 +15921,13 @@
 
 
 
-### [超越应用层的基准测试：Uber-如何评估基础设施变更和云-SKU](https://www.infoq.com/news/2025/12/uber-infrastructure-benchmarking/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [权力动态解密：高级工程师可从初级工程师身上学到什么](https://www.infoq.com/presentations/hierarchical-team/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-12-26 15:00:00
 
 
 
-### [权力动态解密：高级工程师可从初级工程师身上学到什么](https://www.infoq.com/presentations/hierarchical-team/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [超越应用层的基准测试：Uber-如何评估基础设施变更和云-SKU](https://www.infoq.com/news/2025/12/uber-infrastructure-benchmarking/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-12-26 15:00:00
 
@@ -15953,13 +16089,13 @@
 
 
 
-### [谁在设计你的职业生涯？](https://ginonotes.com/posts/if-you-dont-design-your-career-someone-else-will)
+### [大型软件产品为何难以理解](https://seangoedecke.com/nobody-knows-how-software-products-work/)
 
 2025-12-24 00:00:00
 
 
 
-### [大型软件产品为何难以理解](https://seangoedecke.com/nobody-knows-how-software-products-work/)
+### [谁在设计你的职业生涯？](https://ginonotes.com/posts/if-you-dont-design-your-career-someone-else-will)
 
 2025-12-24 00:00:00
 
@@ -16085,13 +16221,13 @@
 
 
 
-### [云-CISO-视角-：2025-年回顾：云安全基础与不断发展的人工智能](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-2025-in-review-cloud-security-basics-and-evolving-ai/)
+### [Looker-自助探索、选项卡式仪表板和自定义主题](https://cloud.google.com/blog/products/business-intelligence/looker-self-service-explores-tabbed-dashboards-custom-themes/)
 
 2025-12-20 00:00:00
 
 
 
-### [Looker-自助探索、选项卡式仪表板和自定义主题](https://cloud.google.com/blog/products/business-intelligence/looker-self-service-explores-tabbed-dashboards-custom-themes/)
+### [云-CISO-视角-：2025-年回顾：云安全基础与不断发展的人工智能](https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-2025-in-review-cloud-security-basics-and-evolving-ai/)
 
 2025-12-20 00:00:00
 
@@ -16325,13 +16461,13 @@
 
 
 
-### [Stripe-的零停机数据转移平台以毫秒级流量切换迁移-PB-级数据](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=3&sn=fba86b83d6231da8111c318ac8dafe45)
+### [BellSoft-发布-Java-加固镜像](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=4&sn=865bc1d095325bea8ffe69f2898fb758)
 
 2025-12-14 02:16:00
 
 
 
-### [BellSoft-发布-Java-加固镜像](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=4&sn=865bc1d095325bea8ffe69f2898fb758)
+### [Stripe-的零停机数据转移平台以毫秒级流量切换迁移-PB-级数据](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266634&idx=3&sn=fba86b83d6231da8111c318ac8dafe45)
 
 2025-12-14 02:16:00
 
@@ -16439,13 +16575,13 @@
 
 
 
-### [极致体验无小事：Weex-购物车基础优化实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556275&idx=1&sn=1fb660d55027c3efc763ac81e48fbee9)
+### [如何用隐形字符给公司内部文档加盲水印?抓内鬼神器](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547382&idx=1&sn=ac4199cea53d6a3386dd998304b7c61d)
 
 2025-12-11 00:31:00
 
 
 
-### [如何用隐形字符给公司内部文档加盲水印?抓内鬼神器](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247547382&idx=1&sn=ac4199cea53d6a3386dd998304b7c61d)
+### [极致体验无小事：Weex-购物车基础优化实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247556275&idx=1&sn=1fb660d55027c3efc763ac81e48fbee9)
 
 2025-12-11 00:31:00
 
@@ -16559,7 +16695,7 @@
 
 
 
-### [使用混沌工程测试灾难恢复计划](https://cloud.google.com/blog/products/devops-sre/using-chaos-engineering-to-test-dr-plans/)
+### [不信任，但验证：在-Google-云上构建端到端机密应用](https://developers.googleblog.com/dont-trust-verify-building-end-to-end-confidential-applications-on-google-cloud/)
 
 2025-12-09 00:00:00
 
@@ -16571,7 +16707,7 @@
 
 
 
-### [不信任，但验证：在-Google-云上构建端到端机密应用](https://developers.googleblog.com/dont-trust-verify-building-end-to-end-confidential-applications-on-google-cloud/)
+### [使用混沌工程测试灾难恢复计划](https://cloud.google.com/blog/products/devops-sre/using-chaos-engineering-to-test-dr-plans/)
 
 2025-12-09 00:00:00
 
@@ -16625,13 +16761,13 @@
 
 
 
-### [谁在幕后操控特朗普-2.0？PayPal-黑帮与“科技共和国”野心-|-赠书福利](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266000&idx=2&sn=e03b1df2c2e6c3be8171f42e68808213)
+### [运维大规模反向代理的教训](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266000&idx=3&sn=7710a075af7638c502886f77e3f47cae)
 
 2025-12-08 05:30:00
 
 
 
-### [运维大规模反向代理的教训](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266000&idx=3&sn=7710a075af7638c502886f77e3f47cae)
+### [谁在幕后操控特朗普-2.0？PayPal-黑帮与“科技共和国”野心-|-赠书福利](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651266000&idx=2&sn=e03b1df2c2e6c3be8171f42e68808213)
 
 2025-12-08 05:30:00
 
@@ -16667,13 +16803,13 @@
 
 
 
-### [突破显存瓶颈：基于-DeepSeek-V3.2-Exp-的-Latent-Cache-卸载预取方案设计与模拟验证](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265783&idx=2&sn=e1f7031c3bdc4c9fb64f7e49002cf831)
+### [Valkey-9.0-引入多数据库集群、原子级槽位迁移，并带来大幅性能提升](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265783&idx=4&sn=b27b3ddd9c9d97e917fb90685b2782ba)
 
 2025-12-07 02:15:00
 
 
 
-### [Valkey-9.0-引入多数据库集群、原子级槽位迁移，并带来大幅性能提升](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265783&idx=4&sn=b27b3ddd9c9d97e917fb90685b2782ba)
+### [突破显存瓶颈：基于-DeepSeek-V3.2-Exp-的-Latent-Cache-卸载预取方案设计与模拟验证](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651265783&idx=2&sn=e1f7031c3bdc4c9fb64f7e49002cf831)
 
 2025-12-07 02:15:00
 
@@ -16757,13 +16893,13 @@
 
 
 
-### [Spring-工具-5：为-AI-做好准备](https://spring.io/blog/2025/12/04/towards-spring-tools-5-part3)
+### [构建生产就绪的人工智能安全基石](https://cloud.google.com/blog/topics/developers-practitioners/building-a-production-ready-ai-security-foundation/)
 
 2025-12-04 00:00:00
 
 
 
-### [构建生产就绪的人工智能安全基石](https://cloud.google.com/blog/topics/developers-practitioners/building-a-production-ready-ai-security-foundation/)
+### [Spring-工具-5：为-AI-做好准备](https://spring.io/blog/2025/12/04/towards-spring-tools-5-part3)
 
 2025-12-04 00:00:00
 
@@ -16913,13 +17049,13 @@
 
 
 
-### [卷不过-AI-就去当-CEO？架构师职业迎来“反向突围”｜独家对话哥大教授-Arthur，M.，Langer](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264588&idx=2&sn=03b552d96fc104bad7ca90047fd0f7b9)
+### [工商银行软件开发中心研发管理系统权限体系的探索与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264588&idx=3&sn=b4e2b3c7ff6d8da455ab2013f5f66742)
 
 2025-11-29 02:16:00
 
 
 
-### [工商银行软件开发中心研发管理系统权限体系的探索与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264588&idx=3&sn=b4e2b3c7ff6d8da455ab2013f5f66742)
+### [卷不过-AI-就去当-CEO？架构师职业迎来“反向突围”｜独家对话哥大教授-Arthur，M.，Langer](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651264588&idx=2&sn=03b552d96fc104bad7ca90047fd0f7b9)
 
 2025-11-29 02:16:00
 
@@ -17147,13 +17283,13 @@
 
 
 
-### [从数字到版面：得物数据产品里数字格式化的那些事](https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247541677&idx=1&sn=1482bc011f7652bbe0aabd10b0632e3f)
+### [NeurIPS-2025-|-从数据微调到反馈优化！可灵团队提出基于人类反馈的视频生成训练范式](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247498403&idx=1&sn=f859cf4c685268f025e08abc2bb49213)
 
 2025-11-24 10:30:00
 
 
 
-### [NeurIPS-2025-|-从数据微调到反馈优化！可灵团队提出基于人类反馈的视频生成训练范式](https://mp.weixin.qq.com/s?__biz=Mzg2NzU4MDM0MQ==&mid=2247498403&idx=1&sn=f859cf4c685268f025e08abc2bb49213)
+### [从数字到版面：得物数据产品里数字格式化的那些事](https://mp.weixin.qq.com/s?__biz=MzkxNTE3ODU0NA==&mid=2247541677&idx=1&sn=1482bc011f7652bbe0aabd10b0632e3f)
 
 2025-11-24 10:30:00
 
@@ -17183,13 +17319,13 @@
 
 
 
-### [远程开发环境的-VS-Code-解决方案：享受轻松、高效跨设备编程体验-|-开源日报-No.799](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493633&idx=1&sn=77154e73d44d21670878bff56cc20212)
+### [Spring-Tools-5：为-Spring-Boot-4-和-Spring-Framework-7-做好准备](https://spring.io/blog/2025/11/24/towards-spring-tools-5-part1)
 
 2025-11-24 00:00:00
 
 
 
-### [Spring-Tools-5：为-Spring-Boot-4-和-Spring-Framework-7-做好准备](https://spring.io/blog/2025/11/24/towards-spring-tools-5-part1)
+### [远程开发环境的-VS-Code-解决方案：享受轻松、高效跨设备编程体验-|-开源日报-No.799](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493633&idx=1&sn=77154e73d44d21670878bff56cc20212)
 
 2025-11-24 00:00:00
 
@@ -17201,13 +17337,13 @@
 
 
 
-### [如何画出“通用”架构图：架构思维的三大底层逻辑](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633295&idx=1&sn=d2589ee9094af8a163a602310cd4903c)
+### [超大规模语言模型：解决训练不稳定与智能推理挑战-|-开源日报-No.798](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493628&idx=1&sn=a962d49b9f46f4fe059f3ffee23918e4)
 
 2025-11-23 00:02:00
 
 
 
-### [超大规模语言模型：解决训练不稳定与智能推理挑战-|-开源日报-No.798](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493628&idx=1&sn=a962d49b9f46f4fe059f3ffee23918e4)
+### [如何画出“通用”架构图：架构思维的三大底层逻辑](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247633295&idx=1&sn=d2589ee9094af8a163a602310cd4903c)
 
 2025-11-23 00:02:00
 
@@ -17669,13 +17805,13 @@
 
 
 
-### [盐堆寻沙：Salt-配置故障的根本原因分析](https://blog.cloudflare.com/finding-the-grain-of-sand-in-a-heap-of-salt/)
+### [通过-Unity-Catalog-中的-Databricks-助手，即时探索数据](https://www.databricks.com/blog/explore-data-instantly-databricks-assistant-unity-catalog)
 
 2025-11-13 14:00:00
 
 
 
-### [通过-Unity-Catalog-中的-Databricks-助手，即时探索数据](https://www.databricks.com/blog/explore-data-instantly-databricks-assistant-unity-catalog)
+### [盐堆寻沙：Salt-配置故障的根本原因分析](https://blog.cloudflare.com/finding-the-grain-of-sand-in-a-heap-of-salt/)
 
 2025-11-13 14:00:00
 
@@ -17723,7 +17859,7 @@
 
 
 
-### [BigQuery：MATCH_RECOGNIZE-功能介绍](https://cloud.google.com/blog/products/data-analytics/introducing-match_recognize-in-bigquery/)
+### [Metrax-介绍：JAX-高性能模型评估指标库](https://developers.googleblog.com/en/introducing-metrax-performant-efficient-and-robust-model-evaluation-metrics-in-jax/)
 
 2025-11-13 00:00:00
 
@@ -17735,7 +17871,7 @@
 
 
 
-### [Metrax-介绍：JAX-高性能模型评估指标库](https://developers.googleblog.com/en/introducing-metrax-performant-efficient-and-robust-model-evaluation-metrics-in-jax/)
+### [BigQuery：MATCH_RECOGNIZE-功能介绍](https://cloud.google.com/blog/products/data-analytics/introducing-match_recognize-in-bigquery/)
 
 2025-11-13 00:00:00
 
@@ -17807,13 +17943,13 @@
 
 
 
-### [BigQuery-向量搜索技术解析](https://cloud.google.com/blog/products/data-analytics/the-story-of-bigquery-vector-search/)
+### [Spring-Boot-4-空安全应用实践](https://spring.io/blog/2025/11/12/null-safe-applications-with-spring-boot-4)
 
 2025-11-12 00:00:00
 
 
 
-### [Spring-Boot-4-空安全应用实践](https://spring.io/blog/2025/11/12/null-safe-applications-with-spring-boot-4)
+### [BigQuery-向量搜索技术解析](https://cloud.google.com/blog/products/data-analytics/the-story-of-bigquery-vector-search/)
 
 2025-11-12 00:00:00
 
@@ -17933,13 +18069,13 @@
 
 
 
-### [基于多智能体与-MCP，中国工商银行软件开发中心普惠金融智能中枢建设探索与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262532&idx=2&sn=39b3af5ec2abc18d51d57c00e909f90b)
+### [新加坡出行巨头-Grab-如何用-AutoMQ-重塑-Kafka-流平台](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262532&idx=3&sn=ac1b9dd2f1695f0abe6dd4d7d2756ceb)
 
 2025-11-08 04:50:00
 
 
 
-### [新加坡出行巨头-Grab-如何用-AutoMQ-重塑-Kafka-流平台](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262532&idx=3&sn=ac1b9dd2f1695f0abe6dd4d7d2756ceb)
+### [基于多智能体与-MCP，中国工商银行软件开发中心普惠金融智能中枢建设探索与实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651262532&idx=2&sn=39b3af5ec2abc18d51d57c00e909f90b)
 
 2025-11-08 04:50:00
 
@@ -17969,13 +18105,13 @@
 
 
 
-### [重构一个类，JVM-竟省下-2.9G-内存？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247555256&idx=1&sn=70304b2b14ae559993735d47434d7a5e)
+### [AI-时代，我们为何重写规则引擎？——-QLExpress4-重构之路](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508938&idx=1&sn=24d69157768ecdc6512cbad48fcf7b39)
 
 2025-11-07 00:31:00
 
 
 
-### [AI-时代，我们为何重写规则引擎？——-QLExpress4-重构之路](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508938&idx=1&sn=24d69157768ecdc6512cbad48fcf7b39)
+### [重构一个类，JVM-竟省下-2.9G-内存？](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247555256&idx=1&sn=70304b2b14ae559993735d47434d7a5e)
 
 2025-11-07 00:31:00
 
@@ -18119,13 +18255,13 @@
 
 
 
-### [亲历两场编程语言迁移“惨案”，谷歌大佬揭露技术选型真相：90%决策与技术无关](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261719&idx=1&sn=79ea2d73dc081c61e1ca92909102aeb3)
+### [星巴克中国一体化可观测性重构：从日志检索到指标驱动，构建低成本、高可用的可观测体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261719&idx=2&sn=71c5cf9aa679e64aac1c68266d74d66b)
 
 2025-11-05 04:48:00
 
 
 
-### [星巴克中国一体化可观测性重构：从日志检索到指标驱动，构建低成本、高可用的可观测体系](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261719&idx=2&sn=71c5cf9aa679e64aac1c68266d74d66b)
+### [亲历两场编程语言迁移“惨案”，谷歌大佬揭露技术选型真相：90%决策与技术无关](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651261719&idx=1&sn=79ea2d73dc081c61e1ca92909102aeb3)
 
 2025-11-05 04:48:00
 
@@ -18227,13 +18363,13 @@
 
 
 
-### [人工智能企业项目-95%-的失败率，真的令人担忧吗？](https://seangoedecke.com/why-do-ai-enterprise-projects-fail/)
+### [Canva-如何从-0-到-420-亿美元：未来倒推思维与从混沌到清晰的实践](https://ginonotes.com/posts/canva-melanie-perkins-column-b-thinking-and-chaos-to-clarity)
 
 2025-11-03 00:00:00
 
 
 
-### [Canva-如何从-0-到-420-亿美元：未来倒推思维与从混沌到清晰的实践](https://ginonotes.com/posts/canva-melanie-perkins-column-b-thinking-and-chaos-to-clarity)
+### [人工智能企业项目-95%-的失败率，真的令人担忧吗？](https://seangoedecke.com/why-do-ai-enterprise-projects-fail/)
 
 2025-11-03 00:00:00
 
@@ -18293,7 +18429,7 @@
 
 
 
-### [每年省-30-万美元！实习生用-Rust-给-TikTok-火速降本，开发者吐槽：放在小公司顶多省-300-块](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824620&idx=1&sn=7582344b491712b8152dd5f913d23395)
+### [五年零宕机记录遭终结！开发者怒吼：“疯狂的爬虫毁了我的周末”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824620&idx=3&sn=9b6ae74e84af9efeb966565b9ce29b00)
 
 2025-10-31 10:17:00
 
@@ -18305,7 +18441,7 @@
 
 
 
-### [五年零宕机记录遭终结！开发者怒吼：“疯狂的爬虫毁了我的周末”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824620&idx=3&sn=9b6ae74e84af9efeb966565b9ce29b00)
+### [每年省-30-万美元！实习生用-Rust-给-TikTok-火速降本，开发者吐槽：放在小公司顶多省-300-块](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824620&idx=1&sn=7582344b491712b8152dd5f913d23395)
 
 2025-10-31 10:17:00
 
@@ -18389,7 +18525,7 @@
 
 
 
-### [在互联网规模上测量-TCP-连接的特性](https://blog.cloudflare.com/measuring-network-connections-at-scale/)
+### [QUIC-防御基于确认的-DDoS-攻击](https://blog.cloudflare.com/defending-quic-from-acknowledgement-based-ddos-attacks/)
 
 2025-10-29 13:00:00
 
@@ -18401,7 +18537,7 @@
 
 
 
-### [QUIC-防御基于确认的-DDoS-攻击](https://blog.cloudflare.com/defending-quic-from-acknowledgement-based-ddos-attacks/)
+### [在互联网规模上测量-TCP-连接的特性](https://blog.cloudflare.com/measuring-network-connections-at-scale/)
 
 2025-10-29 13:00:00
 
@@ -18461,13 +18597,13 @@
 
 
 
-### [2025：后量子互联网现状](https://blog.cloudflare.com/pq-2025/)
+### [互联网弹性评估框架](https://blog.cloudflare.com/a-framework-for-measuring-internet-resilience/)
 
 2025-10-28 13:00:00
 
 
 
-### [互联网弹性评估框架](https://blog.cloudflare.com/a-framework-for-measuring-internet-resilience/)
+### [2025：后量子互联网现状](https://blog.cloudflare.com/pq-2025/)
 
 2025-10-28 13:00:00
 
@@ -18671,25 +18807,25 @@
 
 
 
-### [花-5200-万造了个“烂摊子”？28-年老系统被弃，结果新系统上线即「翻车」，员工怒喊：“赶紧换回旧的！”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824127&idx=1&sn=4665403059603959d506c03128d46913)
-
-2025-10-24 09:59:00
-
-
-
 ### [Java-速度能追上-Rust-吗？有人用-2000-万粒子实验实测一把](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824127&idx=2&sn=050860fa55c0daefab63ae49797dc1a4)
 
 2025-10-24 09:59:00
 
 
 
-### [从卓越技术到卓越领导：首先了解你自己](https://www.infoq.com/podcasts/technical-excellence-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [花-5200-万造了个“烂摊子”？28-年老系统被弃，结果新系统上线即「翻车」，员工怒喊：“赶紧换回旧的！”](https://mp.weixin.qq.com/s?__biz=MzkzMDY1NDgyOQ==&mid=2247824127&idx=1&sn=4665403059603959d506c03128d46913)
+
+2025-10-24 09:59:00
+
+
+
+### [理想的微前端平台](https://www.infoq.com/presentations/micro-frontends-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-24 09:00:00
 
 
 
-### [理想的微前端平台](https://www.infoq.com/presentations/micro-frontends-platform/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从卓越技术到卓越领导：首先了解你自己](https://www.infoq.com/podcasts/technical-excellence-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-24 09:00:00
 
@@ -18821,13 +18957,13 @@
 
 
 
-### [NPM-生态系统遭遇两次-AI-驱动的凭据盗窃供应链攻击](https://www.infoq.com/news/2025/10/npm-s1ngularity-shai-hulud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [数据库巡检进入智能时代：异常检测算法的落地实践](https://mp.weixin.qq.com/s?__biz=MzA3NDcyMTQyNQ==&mid=2649281308&idx=1&sn=be998f98cf2a71fbbe409ac068bbe5f6)
 
 2025-10-20 10:00:00
 
 
 
-### [数据库巡检进入智能时代：异常检测算法的落地实践](https://mp.weixin.qq.com/s?__biz=MzA3NDcyMTQyNQ==&mid=2649281308&idx=1&sn=be998f98cf2a71fbbe409ac068bbe5f6)
+### [NPM-生态系统遭遇两次-AI-驱动的凭据盗窃供应链攻击](https://www.infoq.com/news/2025/10/npm-s1ngularity-shai-hulud/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-20 10:00:00
 
@@ -18845,13 +18981,13 @@
 
 
 
-### [Dataproc-2.3-在谷歌计算引擎上](https://cloud.google.com/blog/products/data-analytics/dataproc-23-on-google-compute-engine/)
+### [是机器人还是人？：俄罗斯-COLDRIVER-组织的新恶意软件](https://cloud.google.com/blog/topics/threat-intelligence/new-malware-russia-coldriver/)
 
 2025-10-20 00:00:00
 
 
 
-### [是机器人还是人？：俄罗斯-COLDRIVER-组织的新恶意软件](https://cloud.google.com/blog/topics/threat-intelligence/new-malware-russia-coldriver/)
+### [Dataproc-2.3-在谷歌计算引擎上](https://cloud.google.com/blog/products/data-analytics/dataproc-23-on-google-compute-engine/)
 
 2025-10-20 00:00:00
 
@@ -18869,13 +19005,13 @@
 
 
 
-### [高效沟通：使用-alfred-操作微信-|-开源日报-No.763](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493425&idx=1&sn=2c0f1636dd388f9ed765336cbfeea123)
+### [完整案例:Kotlin+Compose+Multiplatform-跨平台之桌面端实现（二）](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546423&idx=1&sn=b98d86d03c5d3995ceeb8b60ea6e9b7c)
 
 2025-10-19 01:01:00
 
 
 
-### [完整案例:Kotlin+Compose+Multiplatform-跨平台之桌面端实现（二）](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247546423&idx=1&sn=b98d86d03c5d3995ceeb8b60ea6e9b7c)
+### [高效沟通：使用-alfred-操作微信-|-开源日报-No.763](https://mp.weixin.qq.com/s?__biz=Mzg2NTk2OTM2OA==&mid=2247493425&idx=1&sn=2c0f1636dd388f9ed765336cbfeea123)
 
 2025-10-19 01:01:00
 
@@ -19037,13 +19173,13 @@
 
 
 
-### [24-个月，从写第一行代码到破产：一位架构师在-47-个“死亡”项目里，看到的共同陷阱](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258789&idx=1&sn=fe580c12179d4d7e48946057b9221cb8)
+### [用户被通知烦到关掉-Instagram？Meta：我们反思了，用-AI-给自己“限流”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258789&idx=4&sn=dce21f11ef7ac4ce87e43fd191cea3d4)
 
 2025-10-15 07:05:00
 
 
 
-### [用户被通知烦到关掉-Instagram？Meta：我们反思了，用-AI-给自己“限流”](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258789&idx=4&sn=dce21f11ef7ac4ce87e43fd191cea3d4)
+### [24-个月，从写第一行代码到破产：一位架构师在-47-个“死亡”项目里，看到的共同陷阱](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651258789&idx=1&sn=fe580c12179d4d7e48946057b9221cb8)
 
 2025-10-15 07:05:00
 
@@ -19211,13 +19347,13 @@
 
 
 
-### [软件自动化：意想不到的后果与应对之策](https://www.infoq.com/articles/unintended-consequences-automation-software/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [脑科学赋能：打造卓越技术领导力与沟通](https://www.infoq.com/podcasts/brain-science-lead-technical-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-10 09:00:00
 
 
 
-### [脑科学赋能：打造卓越技术领导力与沟通](https://www.infoq.com/podcasts/brain-science-lead-technical-teams/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [软件自动化：意想不到的后果与应对之策](https://www.infoq.com/articles/unintended-consequences-automation-software/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-10-10 09:00:00
 
@@ -19349,13 +19485,13 @@
 
 
 
-### [作为一名资深工程师，我是如何影响公司政治的译](https://ginonotes.com/posts/how-to-influence-politics)
+### [Spring-引入-Jackson-3-支持](https://spring.io/blog/2025/10/07/introducing-jackson-3-support-in-spring)
 
 2025-10-07 00:00:00
 
 
 
-### [Spring-引入-Jackson-3-支持](https://spring.io/blog/2025/10/07/introducing-jackson-3-support-in-spring)
+### [作为一名资深工程师，我是如何影响公司政治的译](https://ginonotes.com/posts/how-to-influence-politics)
 
 2025-10-07 00:00:00
 
@@ -19607,13 +19743,13 @@
 
 
 
-### [DORA-报告发现人工智能在软件开发中起放大作用，但信任度仍然很低](https://www.infoq.com/news/2025/09/dora-state-of-ai-in-dev-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [CodeQL-调试查询指南（五）：从入门到精通](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-5-debugging-queries/)
 
 2025-09-29 08:00:00
 
 
 
-### [CodeQL-调试查询指南（五）：从入门到精通](https://github.blog/security/vulnerability-research/codeql-zero-to-hero-part-5-debugging-queries/)
+### [DORA-报告发现人工智能在软件开发中起放大作用，但信任度仍然很低](https://www.infoq.com/news/2025/09/dora-state-of-ai-in-dev-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-09-29 08:00:00
 
@@ -20063,13 +20199,13 @@
 
 
 
-### [核心-Spring-弹性特性：@ConcurrencyLimit，@Retryable-和-RetryTemplate](https://spring.io/blog/2025/09/09/core-spring-resilience-features)
+### [A2A-扩展：增强自定义代理功能](https://developers.googleblog.com/en/a2a-extensions-empowering-custom-agent-functionality/)
 
 2025-09-09 00:00:00
 
 
 
-### [A2A-扩展：增强自定义代理功能](https://developers.googleblog.com/en/a2a-extensions-empowering-custom-agent-functionality/)
+### [核心-Spring-弹性特性：@ConcurrencyLimit，@Retryable-和-RetryTemplate](https://spring.io/blog/2025/09/09/core-spring-resilience-features)
 
 2025-09-09 00:00:00
 
@@ -20195,13 +20331,13 @@
 
 
 
-### [三重-Reward-驱动的运维智能体进化：多智能体、上下文工程与强化学习的融合实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552759&idx=1&sn=efcad79c01f9fff21b7a740a06e2c028)
+### [实现大文件上传全流程详解补偿版本](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247545204&idx=1&sn=32561f91bad2daf66417aafaf4cd89b7)
 
 2025-09-03 00:30:00
 
 
 
-### [实现大文件上传全流程详解补偿版本](https://mp.weixin.qq.com/s?__biz=MzU2NjU3Nzg2Mg==&mid=2247545204&idx=1&sn=32561f91bad2daf66417aafaf4cd89b7)
+### [三重-Reward-驱动的运维智能体进化：多智能体、上下文工程与强化学习的融合实践](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247552759&idx=1&sn=efcad79c01f9fff21b7a740a06e2c028)
 
 2025-09-03 00:30:00
 
@@ -20249,13 +20385,13 @@
 
 
 
-### [评估-Kotlin-多平台：跨平台开发中的优势与取舍](https://www.infoq.com/articles/kotlin-multiplatform-evaluation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Micrometer-与-Java-可观测性：Marcin-Grzejszczak-的洞见](https://www.infoq.com/podcasts/observability-java-micrometer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-09-01 11:00:00
 
 
 
-### [Micrometer-与-Java-可观测性：Marcin-Grzejszczak-的洞见](https://www.infoq.com/podcasts/observability-java-micrometer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [评估-Kotlin-多平台：跨平台开发中的优势与取舍](https://www.infoq.com/articles/kotlin-multiplatform-evaluation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-09-01 11:00:00
 
@@ -20849,13 +20985,13 @@
 
 
 
-### [Jakarta-EE-11-深度解析：虚拟线程、记录与持久化的未来展望](https://www.infoq.com/articles/jakarta-ee-11-overview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [机器人专家使用-JAX-的旅程：优化控制与仿真效率](https://developers.googleblog.com/en/a-roboticists-journey-with-jax/)
 
 2025-07-29 00:00:00
 
 
 
-### [机器人专家使用-JAX-的旅程：优化控制与仿真效率](https://developers.googleblog.com/en/a-roboticists-journey-with-jax/)
+### [Jakarta-EE-11-深度解析：虚拟线程、记录与持久化的未来展望](https://www.infoq.com/articles/jakarta-ee-11-overview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-29 00:00:00
 
@@ -20909,13 +21045,13 @@
 
 
 
-### [多模态“卷王”阶跃星辰：如何利用-JuiceFS-打造高效经济的大模型存储平台](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251601&idx=3&sn=d427a30aa1e848566ca1747e05b66d1e)
+### [Grab-订阅平台从-SQS-和-Redis-切换到-Temporal](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251601&idx=4&sn=09153a44a0189d9e087129851f455df4)
 
 2025-07-26 02:16:00
 
 
 
-### [Grab-订阅平台从-SQS-和-Redis-切换到-Temporal](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251601&idx=4&sn=09153a44a0189d9e087129851f455df4)
+### [多模态“卷王”阶跃星辰：如何利用-JuiceFS-打造高效经济的大模型存储平台](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651251601&idx=3&sn=d427a30aa1e848566ca1747e05b66d1e)
 
 2025-07-26 02:16:00
 
@@ -21059,7 +21195,7 @@
 
 
 
-### [中东欧数字银行转型之路：从遗留系统到价值创造](https://www.infoq.com/articles/digital-banking-products/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [增强现实普及化：以-Google-地图中的-Lens-为例](https://www.infoq.com/presentations/augmented-reality-maps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-17 00:00:00
 
@@ -21071,7 +21207,7 @@
 
 
 
-### [增强现实普及化：以-Google-地图中的-Lens-为例](https://www.infoq.com/presentations/augmented-reality-maps/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [中东欧数字银行转型之路：从遗留系统到价值创造](https://www.infoq.com/articles/digital-banking-products/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-17 00:00:00
 
@@ -21101,13 +21237,13 @@
 
 
 
-### [搜索系统优化：平衡速度、相关性和伸缩性](https://www.infoq.com/articles/optimizing-search-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [OVERSTEP-后门：UNC6148-攻击-SonicWall-SMA-设备](https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor/)
 
 2025-07-16 00:00:00
 
 
 
-### [OVERSTEP-后门：UNC6148-攻击-SonicWall-SMA-设备](https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor/)
+### [搜索系统优化：平衡速度、相关性和伸缩性](https://www.infoq.com/articles/optimizing-search-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-16 00:00:00
 
@@ -21143,13 +21279,13 @@
 
 
 
-### [Netflix-标题发布可观测性系统：全球验证内容可用性](https://www.infoq.com/news/2025/07/netflix-title-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [安全消息：卫报利用数百万读者提供强大的可信匿名性](https://www.infoq.com/news/2025/07/secure-messaging-coverdrop/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-12 00:00:00
 
 
 
-### [安全消息：卫报利用数百万读者提供强大的可信匿名性](https://www.infoq.com/news/2025/07/secure-messaging-coverdrop/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Netflix-标题发布可观测性系统：全球验证内容可用性](https://www.infoq.com/news/2025/07/netflix-title-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-12 00:00:00
 
@@ -21197,13 +21333,13 @@
 
 
 
-### [结对编程提升开发速度、专注度与流畅度研究](https://www.infoq.com/news/2025/07/pair-programming-speed-flow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [One-Network：与云平台无关的服务和策略驱动的网络架构](https://www.infoq.com/presentations/policy-network-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-10 00:00:00
 
 
 
-### [One-Network：与云平台无关的服务和策略驱动的网络架构](https://www.infoq.com/presentations/policy-network-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [结对编程提升开发速度、专注度与流畅度研究](https://www.infoq.com/news/2025/07/pair-programming-speed-flow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-07-10 00:00:00
 
@@ -21347,13 +21483,13 @@
 
 
 
-### [携程火车票非用户端-AB-实验的分流算法](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249683&idx=3&sn=dc2cc4ad5887c8668fcfcf47dbabe64f)
+### [华为盘古大模型开源，推理方案、基础代码全公开！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249683&idx=4&sn=27aee6ce1b1328d5ec79cf0a82468680)
 
 2025-07-01 05:29:23
 
 
 
-### [华为盘古大模型开源，推理方案、基础代码全公开！](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249683&idx=4&sn=27aee6ce1b1328d5ec79cf0a82468680)
+### [携程火车票非用户端-AB-实验的分流算法](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651249683&idx=3&sn=dc2cc4ad5887c8668fcfcf47dbabe64f)
 
 2025-07-01 05:29:23
 
@@ -21437,7 +21573,7 @@
 
 
 
-### [构建技术管理者的战略影响力：高级工程师与工程经理指南](https://www.infoq.com/articles/strategic-influence-staff-engineer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [C++26-标准草案定稿：新增静态反射编译时类型内省、契约式设计合约编程与发送者/接收者类型](https://www.infoq.com/news/2025/06/cpp-26-feature-complete/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-27 00:00:00
 
@@ -21449,7 +21585,7 @@
 
 
 
-### [C++26-标准草案定稿：新增静态反射编译时类型内省、契约式设计合约编程与发送者/接收者类型](https://www.infoq.com/news/2025/06/cpp-26-feature-complete/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [构建技术管理者的战略影响力：高级工程师与工程经理指南](https://www.infoq.com/articles/strategic-influence-staff-engineer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-27 00:00:00
 
@@ -21569,25 +21705,25 @@
 
 
 
-### [企业级-JDK-升级实战：660-个项目从-JDK8-到-JDK21-的零故障升级之路](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248415&idx=2&sn=eae181ae0056da81dab1bee70f24a963)
-
-2025-06-20 14:33:00
-
-
-
 ### [Staff+-工程师如何发展战略思维](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248415&idx=3&sn=374e10378202a91976077184bb472fcb)
 
 2025-06-20 14:33:00
 
 
 
-### [可信实验白皮书系列-06：观察性研究](https://tech.meituan.com/2025/06/20/meituan-ab-online-controlled-experiment-06.html)
+### [企业级-JDK-升级实战：660-个项目从-JDK8-到-JDK21-的零故障升级之路](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651248415&idx=2&sn=eae181ae0056da81dab1bee70f24a963)
+
+2025-06-20 14:33:00
+
+
+
+### [分析-Apache-Kafka-延伸集群：WAN-中断、故障场景和-DR-策略](https://www.infoq.com/articles/apache-kafka-stretch-cluster-failures/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-20 00:00:00
 
 
 
-### [分析-Apache-Kafka-延伸集群：WAN-中断、故障场景和-DR-策略](https://www.infoq.com/articles/apache-kafka-stretch-cluster-failures/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [可信实验白皮书系列-06：观察性研究](https://tech.meituan.com/2025/06/20/meituan-ab-online-controlled-experiment-06.html)
 
 2025-06-20 00:00:00
 
@@ -21767,13 +21903,13 @@
 
 
 
-### [如何发展技能成为首席工程师](https://www.infoq.com/news/2025/06/skill-principal-engineer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [将-GPU-级性能引入企业级-Java：CUDA-集成的实践指南](https://www.infoq.com/articles/cuda-integration-for-java/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-05 00:00:00
 
 
 
-### [将-GPU-级性能引入企业级-Java：CUDA-集成的实践指南](https://www.infoq.com/articles/cuda-integration-for-java/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [如何发展技能成为首席工程师](https://www.infoq.com/news/2025/06/skill-principal-engineer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-05 00:00:00
 
@@ -21791,13 +21927,13 @@
 
 
 
-### [开发者愉悦：提升开发者生产力的更好方式](https://www.infoq.com/articles/developer-joy-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [电话的代价：从语音钓鱼到数据勒索](https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion/)
 
 2025-06-04 00:00:00
 
 
 
-### [电话的代价：从语音钓鱼到数据勒索](https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion/)
+### [开发者愉悦：提升开发者生产力的更好方式](https://www.infoq.com/articles/developer-joy-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-06-04 00:00:00
 
@@ -21845,13 +21981,13 @@
 
 
 
-### [作业帮基础观测能力之一监控体系实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246269&idx=3&sn=8354c99069779c63ac0b82ef5c3dda60)
+### [JDK-25-将实例主方法从预览特性转为最终特性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246269&idx=4&sn=6b0ad8bbb690fbc9227616f7190bad31)
 
 2025-05-31 02:42:00
 
 
 
-### [JDK-25-将实例主方法从预览特性转为最终特性](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246269&idx=4&sn=6b0ad8bbb690fbc9227616f7190bad31)
+### [作业帮基础观测能力之一监控体系实践](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651246269&idx=3&sn=8354c99069779c63ac0b82ef5c3dda60)
 
 2025-05-31 02:42:00
 
@@ -21893,13 +22029,13 @@
 
 
 
-### [亚马逊云科技推出集中式产品生命周期页面：提高透明度并整合弃用信息](https://www.infoq.com/news/2025/05/aws-service-lifecycle-page/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [BigLake-增强：构建-Iceberg-湖仓一体更轻松](https://cloud.google.com/blog/products/data-analytics/enhancing-biglake-for-iceberg-lakehouses/)
 
 2025-05-29 00:00:00
 
 
 
-### [BigLake-增强：构建-Iceberg-湖仓一体更轻松](https://cloud.google.com/blog/products/data-analytics/enhancing-biglake-for-iceberg-lakehouses/)
+### [亚马逊云科技推出集中式产品生命周期页面：提高透明度并整合弃用信息](https://www.infoq.com/news/2025/05/aws-service-lifecycle-page/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-29 00:00:00
 
@@ -21977,13 +22113,13 @@
 
 
 
-### [旅游巨头-Skyscanner-优化可观测性，削减-90%-的工程成本](https://www.infoq.com/news/2025/05/skyscanner-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [-亚马逊在-30-倍增长中的工程生产力关键节点-](https://www.infoq.com/articles/inflection-points-engineering-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-26 00:00:00
 
 
 
-### [-亚马逊在-30-倍增长中的工程生产力关键节点-](https://www.infoq.com/articles/inflection-points-engineering-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [旅游巨头-Skyscanner-优化可观测性，削减-90%-的工程成本](https://www.infoq.com/news/2025/05/skyscanner-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-26 00:00:00
 
@@ -22019,13 +22155,13 @@
 
 
 
-### [可信实验白皮书系列-02：AB-实验基础](https://tech.meituan.com/2025/05/23/meituan-ab-online-controlled-experiment-02.html)
+### [在-Spring-Boot-微服务集成测试中使用-WireMock-模拟-gRPC](https://www.infoq.com/articles/mocking-grpc-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-23 00:00:00
 
 
 
-### [在-Spring-Boot-微服务集成测试中使用-WireMock-模拟-gRPC](https://www.infoq.com/articles/mocking-grpc-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [可信实验白皮书系列-02：AB-实验基础](https://tech.meituan.com/2025/05/23/meituan-ab-online-controlled-experiment-02.html)
 
 2025-05-23 00:00:00
 
@@ -22055,7 +22191,7 @@
 
 
 
-### [BigQuery-现已支持-Apache-DataSketches-近似分析](https://cloud.google.com/blog/products/data-analytics/bigquery-supports-apache-datasketches-for-approximate-analytics/)
+### [可信实验白皮书系列-01：从-0-到-1-的方法论与实践指南](https://tech.meituan.com/2025/05/22/meituan-ab-online-controlled-experiment-01.html)
 
 2025-05-22 00:00:00
 
@@ -22067,7 +22203,7 @@
 
 
 
-### [可信实验白皮书系列-01：从-0-到-1-的方法论与实践指南](https://tech.meituan.com/2025/05/22/meituan-ab-online-controlled-experiment-01.html)
+### [BigQuery-现已支持-Apache-DataSketches-近似分析](https://cloud.google.com/blog/products/data-analytics/bigquery-supports-apache-datasketches-for-approximate-analytics/)
 
 2025-05-22 00:00:00
 
@@ -22175,13 +22311,7 @@
 
 
 
-### [MTGR：美团外卖生成式推荐-Scaling-Law-落地实践](https://tech.meituan.com/2025/05/19/meituan-generative-recommendation.html)
-
-2025-05-19 00:00:00
-
-
-
-### [如何在-Staff-Plus-级别扩展你的影响力](https://www.infoq.com/articles/scale-impact-staff-plus/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Spring-AI-+-OAuth2：MCP-授权实战指南](https://spring.io/blog/2025/05/19/spring-ai-mcp-client-oauth2)
 
 2025-05-19 00:00:00
 
@@ -22193,7 +22323,13 @@
 
 
 
-### [Spring-AI-+-OAuth2：MCP-授权实战指南](https://spring.io/blog/2025/05/19/spring-ai-mcp-client-oauth2)
+### [如何在-Staff-Plus-级别扩展你的影响力](https://www.infoq.com/articles/scale-impact-staff-plus/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2025-05-19 00:00:00
+
+
+
+### [MTGR：美团外卖生成式推荐-Scaling-Law-落地实践](https://tech.meituan.com/2025/05/19/meituan-generative-recommendation.html)
 
 2025-05-19 00:00:00
 
@@ -22289,7 +22425,7 @@
 
 
 
-### [从代码到魅力：技术领导者的情绪管理](https://www.infoq.com/articles/emotional-mastery-tech-leaders/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [10-分钟使用-Keras-和-JAX-构建推荐系统](https://developers.googleblog.com/en/build-train-recommender-system-keras-jax/)
 
 2025-05-13 00:00:00
 
@@ -22301,7 +22437,7 @@
 
 
 
-### [10-分钟使用-Keras-和-JAX-构建推荐系统](https://developers.googleblog.com/en/build-train-recommender-system-keras-jax/)
+### [从代码到魅力：技术领导者的情绪管理](https://www.infoq.com/articles/emotional-mastery-tech-leaders/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-13 00:00:00
 
@@ -22373,13 +22509,13 @@
 
 
 
-### [BigQuery-中-Earth-Engine-深度解析](https://cloud.google.com/blog/products/data-analytics/a-closer-look-at-earth-engine-in-bigquery/)
+### [InfoQ-2025-文化与方法趋势报告](https://www.infoq.com/articles/culture-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-09 00:00:00
 
 
 
-### [InfoQ-2025-文化与方法趋势报告](https://www.infoq.com/articles/culture-trends-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [BigQuery-中-Earth-Engine-深度解析](https://cloud.google.com/blog/products/data-analytics/a-closer-look-at-earth-engine-in-bigquery/)
 
 2025-05-09 00:00:00
 
@@ -22457,7 +22593,7 @@
 
 
 
-### [在-.NET-应用中规模化管理共享库的最佳实践](https://www.infoq.com/articles/shared-libraries-dotnet-enterprise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [JDK-25：实例-Main-方法正式发布](https://www.infoq.com/news/2025/05/jdk25-instance-main-methods/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-05 00:00:00
 
@@ -22469,7 +22605,7 @@
 
 
 
-### [JDK-25：实例-Main-方法正式发布](https://www.infoq.com/news/2025/05/jdk25-instance-main-methods/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [在-.NET-应用中规模化管理共享库的最佳实践](https://www.infoq.com/articles/shared-libraries-dotnet-enterprise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-05-05 00:00:00
 
@@ -22529,7 +22665,7 @@
 
 
 
-### [Netflix-如何利用-eBPF-解决流量-IP-地址归因错误的挑战](https://www.infoq.com/news/2025/04/netflix-ebpf-flow-ip-addresses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Mezzalira-在-QCon-伦敦的演讲：微前端的设计、组织优势与部署](https://www.infoq.com/news/2025/04/microfrontend-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-30 00:00:00
 
@@ -22541,7 +22677,7 @@
 
 
 
-### [Mezzalira-在-QCon-伦敦的演讲：微前端的设计、组织优势与部署](https://www.infoq.com/news/2025/04/microfrontend-best-practices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Netflix-如何利用-eBPF-解决流量-IP-地址归因错误的挑战](https://www.infoq.com/news/2025/04/netflix-ebpf-flow-ip-addresses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-30 00:00:00
 
@@ -22583,25 +22719,7 @@
 
 
 
-### [微信专家：性能优化看这篇就够了！](https://mp.weixin.qq.com/s/tc39zX0jPZjw_LzyFWE2mA)
-
-2025-04-28 00:00:00
-
-
-
-### [全链路技术揭秘｜我在-1688-修炼小程序](https://mp.weixin.qq.com/s/LjvOI7xZSCr7QEnbPK9LhA)
-
-2025-04-28 00:00:00
-
-
-
-### [【第-3499-期】代码评审的理念](https://mp.weixin.qq.com/s/rhOl896DGHGi0UohW46eTQ)
-
-2025-04-28 00:00:00
-
-
-
-### [放弃-SQL-改用-NoSQL！疯狂的决定让性能提升了-5-倍……](https://mp.weixin.qq.com/s/rRq8E9Yo2vGEgLL70J8yxQ)
+### [谷歌发布-Android-16-正式版发布前的最后一个-Beta-版本](https://www.infoq.com/news/2025/04/android16-beta-4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-28 00:00:00
 
@@ -22613,19 +22731,37 @@
 
 
 
-### [谷歌发布-Android-16-正式版发布前的最后一个-Beta-版本](https://www.infoq.com/news/2025/04/android16-beta-4/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [放弃-SQL-改用-NoSQL！疯狂的决定让性能提升了-5-倍……](https://mp.weixin.qq.com/s/rRq8E9Yo2vGEgLL70J8yxQ)
 
 2025-04-28 00:00:00
 
 
 
-### [千万级数据的订单表，给订单状态加索引有用吗？在线等！](https://mp.weixin.qq.com/s/EHTzkGhNHRq6BqrrEW-7cA)
+### [【第-3499-期】代码评审的理念](https://mp.weixin.qq.com/s/rhOl896DGHGi0UohW46eTQ)
+
+2025-04-28 00:00:00
+
+
+
+### [全链路技术揭秘｜我在-1688-修炼小程序](https://mp.weixin.qq.com/s/LjvOI7xZSCr7QEnbPK9LhA)
+
+2025-04-28 00:00:00
+
+
+
+### [微信专家：性能优化看这篇就够了！](https://mp.weixin.qq.com/s/tc39zX0jPZjw_LzyFWE2mA)
+
+2025-04-28 00:00:00
+
+
+
+### [揭秘技术内幕｜数据库单机性能是如何优化的？](https://mp.weixin.qq.com/s/oLB7t_0R7o0VtrJEwdDpQw)
 
 2025-04-27 00:00:00
 
 
 
-### [揭秘技术内幕｜数据库单机性能是如何优化的？](https://mp.weixin.qq.com/s/oLB7t_0R7o0VtrJEwdDpQw)
+### [千万级数据的订单表，给订单状态加索引有用吗？在线等！](https://mp.weixin.qq.com/s/EHTzkGhNHRq6BqrrEW-7cA)
 
 2025-04-27 00:00:00
 
@@ -22859,13 +22995,13 @@
 
 
 
-### [QCon-London-2025：多云环境下的分布式事件驱动架构](https://www.infoq.com/news/2025/04/multicloud-architecture-eda-qcon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [影子表策略：实现平滑的服务提取与数据迁移](https://www.infoq.com/articles/shadow-table-strategy-data-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-09 00:00:00
 
 
 
-### [影子表策略：实现平滑的服务提取与数据迁移](https://www.infoq.com/articles/shadow-table-strategy-data-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [QCon-London-2025：多云环境下的分布式事件驱动架构](https://www.infoq.com/news/2025/04/multicloud-architecture-eda-qcon/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-04-09 00:00:00
 
@@ -22967,13 +23103,13 @@
 
 
 
-### [蚂蚁-&amp;-清华联手开源，人人都能复刻-QwQ-32B](https://mp.weixin.qq.com/s/pXWOskqfwfeCAGjvID1gBg)
+### [平替-Navicat-？开源-12-年，这个最初仅-2-人的项目斩获-42.5k-star，如今年收入过亿](https://mp.weixin.qq.com/s/u9EZRxKxS2Grs8pw-aK6jA)
 
 2025-04-01 09:14:52
 
 
 
-### [平替-Navicat-？开源-12-年，这个最初仅-2-人的项目斩获-42.5k-star，如今年收入过亿](https://mp.weixin.qq.com/s/u9EZRxKxS2Grs8pw-aK6jA)
+### [蚂蚁-&amp;-清华联手开源，人人都能复刻-QwQ-32B](https://mp.weixin.qq.com/s/pXWOskqfwfeCAGjvID1gBg)
 
 2025-04-01 09:14:52
 
@@ -22985,13 +23121,13 @@
 
 
 
-### [技术债并不存在，只有权衡取舍译](https://ginonotes.com/posts/technical-debt-is-not-real)
+### [OpenSearch-集群拓扑：成本优化自动伸缩方案](https://www.infoq.com/presentations/opensearch-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-31 00:00:00
 
 
 
-### [OpenSearch-集群拓扑：成本优化自动伸缩方案](https://www.infoq.com/presentations/opensearch-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [技术债并不存在，只有权衡取舍译](https://ginonotes.com/posts/technical-debt-is-not-real)
 
 2025-03-31 00:00:00
 
@@ -23057,13 +23193,13 @@
 
 
 
-### [使用流量指标来设计韧性微服务](https://www.infoq.com/articles/flow-metrics-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [JavaOne-2025-Day-2：FFM-API、虚拟线程、平台工程与-Jakarta-EE-的演进](https://www.infoq.com/news/2025/03/day-two-java-one-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-26 00:00:00
 
 
 
-### [JavaOne-2025-Day-2：FFM-API、虚拟线程、平台工程与-Jakarta-EE-的演进](https://www.infoq.com/news/2025/03/day-two-java-one-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [使用流量指标来设计韧性微服务](https://www.infoq.com/articles/flow-metrics-microservices/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-26 00:00:00
 
@@ -23129,13 +23265,13 @@
 
 
 
-### [谷歌云-Spanner-数据库引入-HDD-分层，冷存储成本锐降-80%](https://www.infoq.com/news/2025/03/google-spanner-tiered-storage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [GitHub-如何利用-CodeQL-增强安全性](https://www.infoq.com/news/2025/03/how-github-uses-codeql-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-22 00:00:00
 
 
 
-### [GitHub-如何利用-CodeQL-增强安全性](https://www.infoq.com/news/2025/03/how-github-uses-codeql-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [谷歌云-Spanner-数据库引入-HDD-分层，冷存储成本锐降-80%](https://www.infoq.com/news/2025/03/google-spanner-tiered-storage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-22 00:00:00
 
@@ -23189,7 +23325,7 @@
 
 
 
-### [超越趋势：选择合适的消息代理的实用指南](https://www.infoq.com/articles/choosing-message-broker/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Java-24-与-IntelliJ-IDEA译](https://ginonotes.com/posts/java-24-and-intellij-idea)
 
 2025-03-19 00:00:00
 
@@ -23201,7 +23337,7 @@
 
 
 
-### [Java-24-与-IntelliJ-IDEA译](https://ginonotes.com/posts/java-24-and-intellij-idea)
+### [超越趋势：选择合适的消息代理的实用指南](https://www.infoq.com/articles/choosing-message-broker/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-19 00:00:00
 
@@ -23255,13 +23391,13 @@
 
 
 
-### [Meta-统一-Facebook-视频分发系统，覆盖移动和-Web-应用](https://www.infoq.com/news/2025/03/facebook-video-delivery-unifed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Felix-GV-解读-LinkedIn-弹性数据存储构建：派生数据存储深度解析](https://www.infoq.com/podcasts/building-linkedin-resilient-data-storage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Felix-GV-解读-LinkedIn-弹性数据存储构建：派生数据存储深度解析](https://www.infoq.com/podcasts/building-linkedin-resilient-data-storage/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Meta-统一-Facebook-视频分发系统，覆盖移动和-Web-应用](https://www.infoq.com/news/2025/03/facebook-video-delivery-unifed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
@@ -23321,7 +23457,7 @@
 
 
 
-### [ScaNN-for-AlloyDB：向量搜索性能对比-pgvector-HNSW](https://cloud.google.com/blog/products/databases/how-scann-for-alloydb-vector-search-compares-to-pgvector-hnsw/)
+### [BigQuery-JSON-助力-MongoDB-Dataflow-管道优化](https://developers.googleblog.com/en/leveraging-bigquery-json-for-optimized-mongodb-dataflow-pipelines/)
 
 2025-03-11 00:00:00
 
@@ -23333,7 +23469,7 @@
 
 
 
-### [BigQuery-JSON-助力-MongoDB-Dataflow-管道优化](https://developers.googleblog.com/en/leveraging-bigquery-json-for-optimized-mongodb-dataflow-pipelines/)
+### [ScaNN-for-AlloyDB：向量搜索性能对比-pgvector-HNSW](https://cloud.google.com/blog/products/databases/how-scann-for-alloydb-vector-search-compares-to-pgvector-hnsw/)
 
 2025-03-11 00:00:00
 
@@ -23345,13 +23481,13 @@
 
 
 
-### [2025-Lakehouse-趋势全景展望：从技术演进到商业重构](https://mp.weixin.qq.com/s/dfntj92n0pU6kDZu869I2g)
+### [Hugging-Face-发布了高效的跨-GPU-大语言模型训练指南](https://mp.weixin.qq.com/s/ChaJOMVoNSPZZgrtrfV37Q)
 
 2025-03-10 05:47:53
 
 
 
-### [Hugging-Face-发布了高效的跨-GPU-大语言模型训练指南](https://mp.weixin.qq.com/s/ChaJOMVoNSPZZgrtrfV37Q)
+### [2025-Lakehouse-趋势全景展望：从技术演进到商业重构](https://mp.weixin.qq.com/s/dfntj92n0pU6kDZu869I2g)
 
 2025-03-10 05:47:53
 
@@ -23447,13 +23583,13 @@
 
 
 
-### [Java-新闻综述：稳定变量，Spring-Modulith，Open-Liberty，Quarkus，JReleaser，Gradle](https://www.infoq.com/news/2025/03/java-news-roundup-feb24-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Meta-通过数据日志增强“下载你的信息”功能](https://www.infoq.com/news/2025/03/meta-suports-data-logs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-03 00:00:00
 
 
 
-### [Meta-通过数据日志增强“下载你的信息”功能](https://www.infoq.com/news/2025/03/meta-suports-data-logs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Java-新闻综述：稳定变量，Spring-Modulith，Open-Liberty，Quarkus，JReleaser，Gradle](https://www.infoq.com/news/2025/03/java-news-roundup-feb24-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-03 00:00:00
 
@@ -23477,13 +23613,13 @@
 
 
 
-### [FUSE，从内核到用户态文件系统的设计之路](https://mp.weixin.qq.com/s/5e1qePlAL0kdaIJo5FR4hw)
+### [超越-Sora！阿里万相大模型正式开源，消费级显卡也能跑](https://mp.weixin.qq.com/s/ko13KpcSky7UwtJaDzsJDg)
 
 2025-02-28 10:49:51
 
 
 
-### [超越-Sora！阿里万相大模型正式开源，消费级显卡也能跑](https://mp.weixin.qq.com/s/ko13KpcSky7UwtJaDzsJDg)
+### [FUSE，从内核到用户态文件系统的设计之路](https://mp.weixin.qq.com/s/5e1qePlAL0kdaIJo5FR4hw)
 
 2025-02-28 10:49:51
 
@@ -23585,13 +23721,13 @@
 
 
 
-### [行为正则化与顺序策略优化结合的离线多智能体学习算法](https://tech.meituan.com/2025/02/21/marl-in-meituan.html)
+### [卓越工程之路：平台工程、文化与技术领导力](https://www.infoq.com/podcasts/platform-engineering-culture-technical-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-21 00:00:00
 
 
 
-### [卓越工程之路：平台工程、文化与技术领导力](https://www.infoq.com/podcasts/platform-engineering-culture-technical-leadership/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [行为正则化与顺序策略优化结合的离线多智能体学习算法](https://tech.meituan.com/2025/02/21/marl-in-meituan.html)
 
 2025-02-21 00:00:00
 
@@ -23801,13 +23937,13 @@
 
 
 
-### [如果-GPU-这么厉害，我们为什么还要用-CPU-呢？](https://mp.weixin.qq.com/s/5tOW-Qh5lriSX_lf4GDrlA)
+### [听起来不错但几乎行不通的系统理念](https://mp.weixin.qq.com/s/VJd-c9OOzx8fjltrszsFZQ)
 
 2025-02-05 06:50:42
 
 
 
-### [听起来不错但几乎行不通的系统理念](https://mp.weixin.qq.com/s/VJd-c9OOzx8fjltrszsFZQ)
+### [如果-GPU-这么厉害，我们为什么还要用-CPU-呢？](https://mp.weixin.qq.com/s/5tOW-Qh5lriSX_lf4GDrlA)
 
 2025-02-05 06:50:42
 
@@ -23837,7 +23973,7 @@
 
 
 
-### [Java-新闻综述：Java-Operator-SDK-5.0、Open-Liberty、Quarkus-MCP、Vert.x、JBang、TornadoVM](https://www.infoq.com/news/2025/02/java-news-roundup-jan27-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [CVE-2023-6080：第三方安装程序滥用的案例研究](https://cloud.google.com/blog/topics/threat-intelligence/cve-2023-6080-third-party-installer-abuse/)
 
 2025-02-03 00:00:00
 
@@ -23849,7 +23985,7 @@
 
 
 
-### [CVE-2023-6080：第三方安装程序滥用的案例研究](https://cloud.google.com/blog/topics/threat-intelligence/cve-2023-6080-third-party-installer-abuse/)
+### [Java-新闻综述：Java-Operator-SDK-5.0、Open-Liberty、Quarkus-MCP、Vert.x、JBang、TornadoVM](https://www.infoq.com/news/2025/02/java-news-roundup-jan27-2025/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-02-03 00:00:00
 
@@ -23858,6 +23994,110 @@
 ### [ClickHouse-被干冒烟了，咋整？](https://mp.weixin.qq.com/s/Y4lbgH-EBM_szCdyPYbqKQ)
 
 2025-02-02 17:35:51
+
+
+
+### [Irrigreen-全新智能灌溉系统：承诺实现无忧智能浇灌——几乎做到了](https://www.wired.com/review/irrigreen-smart-irrigation-system-3-2026/)
+
+2026-04-10 10:06:00 | 标签: 智能家居, 灌溉, 硬件, IoT, 可持续性
+
+> Irrigreen 以其独特的“水打印”技术而闻名，该技术利用精确的水束来最大限度地减少浪费。近日，该公司发布了 2026 年迭代版本。此次更新解决了该系统历史上的一个主要局限，即在第三代喷头的基础上增加了对滴灌阀的支持。尽管该技术在智能灌溉市场上堪称最先进，但系统要求依然很高，需要进行全面的管道和电气升级。作者强调，尽管存在 DIY 的可能性，但考虑到硬件的复杂性以及地下安装的相关风险，强烈建议进行专业安装。
+
+
+
+### [我试用了华硕首款开放式游戏耳机](https://www.wired.com/review/asus-rog-cetra/)
+
+2026-04-10 10:00:00 | 标签: 华硕, 游戏外设, 耳机, 硬件评测, 低延迟
+
+> 本文评测了华硕 ROG Cetra Open Wireless 耳机，这是一款将开放式设计与 RGB 灯效、低延迟 USB-C 适配器等游戏功能相结合的细分产品。作者发现，该耳机在竞技类移动游戏场景中表现出色，其音质表现甚至能媲美专业的头戴式耳机。不过，评测也指出，该耳机在日常听音乐时的表现略显逊色，因此更适合那些希望在游戏时保持环境感知能力的玩家。
+
+
+
+### [创造产生奇迹的条件](https://seths.blog/2026/04/creating-the-conditions-for-magic/)
+
+2026-04-10 09:03:00 | 标签: 协作, 准备, 意图性, 沟通, 职业发展
+
+> 作者认为，高风险的人际互动（如头脑风暴、提案演示或谈判）之所以往往无法产生非凡的成果，是因为人们将其视为例行公事。作者通过类比建筑学——即在设计上投入大量资源——强调了有意义的协作需要在此类事件发生前进行主动的努力和深思熟虑的设计。如果不投入大量精力去创造成功的条件，所期望的“奇迹”就不太可能发生。
+
+
+
+### [我测试了十几种智能窗帘，发现它们大同小异](https://www.wired.com/gallery/best-smart-shades-blinds-curtains/)
+
+2026-04-10 07:00:00 | 标签: 智能家居, 物联网, 智能窗帘, 家庭自动化, Matter
+
+> 本文精选了市面上最优秀的智能窗帘产品，涵盖了从定制卷帘到 DIY 可调节方案。作者通过多年测试，从安装难度、智能家居生态集成（Matter、HomeKit、Alexa 等）、电池续航和噪音水平等方面对产品进行了评估。核心推荐包括：SmartWings 的多功能性、Yoolax 的蜂巢帘方案、Lutron Caseta 的高端可靠性以及 OmniaBlinds 的美学设计。指南还探讨了隐私保护和温度调节等实际益处，并提供了避开智能窗帘选购常见误区的建议。
+
+
+
+### [那位让权势者如坐针毡的独立新闻女王](https://www.wired.com/story/the-indie-news-queen-whos-not-done-pissing-off-the-powerful/)
+
+2026-04-10 07:00:00 | 标签: 新闻业, 独立媒体, Amy Goodman, Democracy Now!, 媒体伦理
+
+> 本文探讨了独立新闻媒体《Democracy Now!》联合创始人兼主持人 Amy Goodman 的职业遗产及其深远影响。通过纪录片《Steal This Story， Please!》的视角，文章回顾了 Goodman 如何在 30 年的职业生涯中，始终坚持严谨、对抗性的报道风格，将社会运动置于企业利益之上。与主流媒体不同，《Democracy Now!》通过拒绝企业赞助、不设置付费墙，并倡导“自下而上（trickle-up）的新闻报道”——即聚焦活动人士和普通民众的声音而非专家评论——从而蓬勃发展。文章强调，这种曾经被视为异类的模式，在当今的媒体格局中正变得愈发重要。
+
+
+
+### [美国疫苗政策的未来走向扑朔迷离](https://www.wired.com/story/no-one-knows-where-us-vaccine-policy-goes-next/)
+
+2026-04-10 06:00:00 | 标签: 疫苗政策, 公共卫生, Robert F. Kennedy Jr., 美国政治, 医疗政策
+
+> 本文探讨了在卫生与公众服务部部长 Robert F. Kennedy Jr. 领导下，美国疫苗政策当前面临的不确定性。在一系列激进的政策转变（包括撤换长期任职的 ACIP 成员，以及在缺乏科学依据的情况下削减常规儿童疫苗）之后，一名联邦法官进行了干预，宣布新顾问小组的任命无效，并暂停了这些变更的实施。文章强调了政府政治议程与公共卫生稳定性之间的紧张关系，并指出尽管 Kennedy 在中期选举前已收敛了公开言论，但其对疫苗犹豫情绪和公共卫生基础设施的长期影响仍是专家们关注的重大问题。
+
+
+
+### [如何以及何时观看-Artemis-II-任务返回地球](https://www.wired.com/story/how-and-when-to-watch-the-artemis-ii-missions-return-to-earth/)
+
+2026-04-10 05:00:00 | 标签: Artemis II, NASA, 太空探索, Orion 飞船, 航空航天工程
+
+> 本文提供了追踪 Artemis II 任务返回的关键细节。文章概述了 Orion 飞船预定的重返时间，大气层重返过程中的技术挑战（包括极端温度和重力加速度），并列出了用于直播的流媒体平台列表。文章强调了重返阶段作为验证深空探测技术的关键性质。
+
+
+
+### [字节-Seed-发布全双工语音模型-Seeduplex，豆包-App-实现边听边说](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247627353&idx=2&sn=95dcc0639b342f9e3d4b1136c9302325)
+
+2026-04-10 01:44:00 | 标签: 字节跳动, 豆包, 全双工, 语音模型, Seeduplex
+
+> 本文介绍了字节跳动 AI 研究团队 Seed 发布的全新语音模型 Seeduplex，该模型已在豆包 App 全量上线。Seeduplex 的核心突破在于实现了“全双工”交互，即 AI 可以在输出语音的同时实时处理用户输入，不再依赖传统的 VAD 模块进行机械式判停。通过将声学特征与语义上下文统一交由 LLM 处理，Seeduplex 显著降低了判停延迟，减少了复杂场景下的误打断与误回复。文章还对比了原生音频全双工、Thinker-Talker 分离架构及流式级联管道三种主流技术路线，指出 Seeduplex 在产品化落地稳定性方面具有显著优势，但也坦言与真人对话流畅度仍有差距。
+
+
+
+### [Orion-氦气泄漏对-Artemis-II-再入大气层无威胁，但需进行重新设计](https://arstechnica.com/space/2026/04/nasa-homes-in-on-likely-redesign-to-fix-orion-spacecrafts-leaky-valves/)
+
+2026-04-10 01:08:32 | 标签: NASA, Artemis II, Orion, 太空探索, 航空航天工程
+
+> Artemis II 任务虽然总体成功，但 Orion 飞船“Integrity”号的推进系统出现了一个轻微的技术问题，即氦气泄漏。该泄漏位于欧洲制造的服务舱内，涉及氧化剂侧的氦气压力供应。NASA 飞行控制人员优先收集了有关此次泄漏的数据，导致原定的一项手动驾驶演示被取消。NASA 官员强调，泄漏是系统内部的，并未向太空排放，没有影响推进性能，也不会对即将到来的大气层再入和溅落造成威胁。调查结果将为未来任务所需的阀门重新设计提供参考。
+
+
+
+### [毁掉-1-个聪明人，这-4-个字就够了](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651782846&idx=1&sn=053c6694ce2dc1e9e66f048ad5cadf15)
+
+2026-04-10 00:31:00 | 标签: 认知偏差, 思维模型, 创新思维, 认知失调, 职业成长
+
+> 文章分析了职场中常见的「这不就是」思维模式，指出这种习惯性地将新事物归类为旧事物、从而否定其价值的行为，是聪明人最容易陷入的认知陷阱。作者通过比亚迪进军汽车行业、微信支付、拼多多等案例，揭示了即使是行业资深人士，也常因大脑的认知失调防御机制而产生偏见。文章强调，这种防御机制虽然能带来短暂的心理舒适，却会让人错过新趋势。最后，作者建议将「这不就是」替换为「有没有哪里不一样」，以保持对新事物的开放心态。
+
+
+
+### [不要和不职业的人讨论工作](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651782846&idx=2&sn=276d4f624711dd7f93192f82ae45030e)
+
+2026-04-10 00:31:00 | 标签: 职业化, 管理思维, 战略思维, 组织架构, 个人成长
+
+> 文章核心探讨了什么是「职业化」的工作状态。作者认为，不职业的人往往缺乏目标感且倾向于归咎外部环境，而职业的人则具备战略思维（目标、路径、节奏）、组织架构认知（行为与结果的平衡）、持续学习能力以及明确的职业意愿。文章通过五个乘法维度——战略×组织、结构×人才、意愿×能力、精神×物质、热爱×恐惧，构建了一套职业化工作的分析框架，旨在帮助管理者优化业务，帮助个人提升成长效率。
+
+
+
+### [对于一个人来说，是能力更可塑，还是态度更可塑？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651782846&idx=3&sn=3b8d6ebcfd8f1cb1c6d14d09786f2505)
+
+2026-04-10 00:31:00 | 标签: 个人成长, 能力提升, 价值观, 职场认知, 自我管理
+
+> 文章简明扼要地分析了能力与态度在个人可塑性上的本质区别。作者认为，尽管个体当前能力存在差异，但大多数人远未触及自身的能力天花板，因此能力是高度可塑的。相比之下，一个人的态度、价值观和德行是由数十年的经历沉淀形成的闭环，除非经历重大人生变故，否则极难被重塑。这一观点为人才选拔与个人自我认知提供了重要的参考视角。
+
+
+
+### [对话天猫设计家-CEO-马学军：家装行业如何通过端到端数字化实现产业革命？](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885214&idx=2&sn=aac4badc51e1b352dbdccad15bc988e9)
+
+2026-04-10 00:07:00 | 标签: 家装行业, 数字化转型, 天猫设计家, 产业互联网, 马学军
+
+> 本文深度对话天猫设计家 CEO 马学军，探讨了家装行业长期存在的内卷、交付难及消费者体验差等顽疾。马学军认为，行业局部环节的优化已触及天花板，必须通过「端到端」的数字化与工业化模式进行重构。天猫设计家通过构建五大产业基础设施（操作系统、供应链、精工履约、担保交易、共享体验店），将设计师、工人、供应商等角色赋能为「超级个体」，利用 AI 与传统算法实现施工图自动生成、全流程数据同源及精细化交付，旨在将家装行业从「卷」向「产业升级」转型。
 
 
 
@@ -23903,13 +24143,13 @@
 
 
 
-### [沃集鲜推出「抹茶季」，沃尔玛自有品牌迈进「深水区」](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=1&sn=6fc5ba17cc45e2c3bef97f09081bd36d)
+### [工商银行-2025-年业绩舆情与股价影响分析报告](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=4&sn=5b3a667d076c6eaae0f0cf5b5aa55b15)
 
 2026-04-09 14:40:00
 
 
 
-### [工商银行-2025-年业绩舆情与股价影响分析报告](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=4&sn=5b3a667d076c6eaae0f0cf5b5aa55b15)
+### [沃集鲜推出「抹茶季」，沃尔玛自有品牌迈进「深水区」](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248885213&idx=1&sn=6fc5ba17cc45e2c3bef97f09081bd36d)
 
 2026-04-09 14:40:00
 
@@ -24113,13 +24353,13 @@
 
 
 
-### [潮汕-00-后第三次创业，打造“助眠神器”，要卖爆北美](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866749&idx=1&sn=9a53298f37ebb15fc35fe35edbf95650)
+### [拉美电商巨头，急需中国卖家“续命”](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866749&idx=2&sn=9358fef39496294b48ab5d82a6297411)
 
 2026-03-22 03:02:00
 
 
 
-### [拉美电商巨头，急需中国卖家“续命”](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866749&idx=2&sn=9358fef39496294b48ab5d82a6297411)
+### [潮汕-00-后第三次创业，打造“助眠神器”，要卖爆北美](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866749&idx=1&sn=9a53298f37ebb15fc35fe35edbf95650)
 
 2026-03-22 03:02:00
 
@@ -24131,25 +24371,25 @@
 
 
 
-### [127-亿真不贵，王兴兴藏在宇树招股书里的资本故事](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866707&idx=1&sn=30ee7e9c4290c2d0c97c68698b332f90)
-
-2026-03-21 14:58:00
-
-
-
 ### [中国汽车出海，为什么从造船开始？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866707&idx=2&sn=1dbb406a55a7f8fba51f23f7b68da138)
 
 2026-03-21 14:58:00
 
 
 
-### [全民「找虐」？HYROX-成了健身人的毕业大考](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882632&idx=1&sn=55899e59e71dbf70205e4c0e5f8c9a90)
+### [127-亿真不贵，王兴兴藏在宇树招股书里的资本故事](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650866707&idx=1&sn=30ee7e9c4290c2d0c97c68698b332f90)
+
+2026-03-21 14:58:00
+
+
+
+### [内存暴涨，华强北姐弟半年猛赚-400-亿](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882632&idx=2&sn=3210c3f618c4060df1d1b21df8b742c7)
 
 2026-03-21 13:31:00
 
 
 
-### [内存暴涨，华强北姐弟半年猛赚-400-亿](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882632&idx=2&sn=3210c3f618c4060df1d1b21df8b742c7)
+### [全民「找虐」？HYROX-成了健身人的毕业大考](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248882632&idx=1&sn=55899e59e71dbf70205e4c0e5f8c9a90)
 
 2026-03-21 13:31:00
 
@@ -24215,13 +24455,13 @@
 
 
 
-### [晚点独家丨地平线敲定征程-7-目标算力，舱驾一体产品命名-“星空”](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534164&idx=2&sn=ad432e5bdec2a549fca0da83b6d71b79)
+### [从新能源车到具身机器人，卧龙电驱再遇老对手汇川技术](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534164&idx=1&sn=2d23b7e9f62f9a419eea47c7215ea0da)
 
 2026-03-20 08:14:00
 
 
 
-### [从新能源车到具身机器人，卧龙电驱再遇老对手汇川技术](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534164&idx=1&sn=2d23b7e9f62f9a419eea47c7215ea0da)
+### [晚点独家丨地平线敲定征程-7-目标算力，舱驾一体产品命名-“星空”](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247534164&idx=2&sn=ad432e5bdec2a549fca0da83b6d71b79)
 
 2026-03-20 08:14:00
 
@@ -24479,13 +24719,13 @@
 
 
 
-### [银河通用超级大脑筑基，中国具身智能站上全球创新潮头](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248881394&idx=1&sn=db96be4484537b4a4334c02d785b6023)
+### [宁德的豪赌](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248881394&idx=2&sn=311b4e62aedb56a4be5c261a5194789b)
 
 2026-03-12 11:42:00
 
 
 
-### [宁德的豪赌](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248881394&idx=2&sn=311b4e62aedb56a4be5c261a5194789b)
+### [银河通用超级大脑筑基，中国具身智能站上全球创新潮头](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248881394&idx=1&sn=db96be4484537b4a4334c02d785b6023)
 
 2026-03-12 11:42:00
 
@@ -24533,13 +24773,13 @@
 
 
 
-### [从最后一名到世界第一，这家顶级餐厅的“非理性”管理闭环](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904040&idx=2&sn=3d9c9d067e3f8375b483ce11b05b87b0)
+### [用好-AI，1-年顶-10-年](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904040&idx=1&sn=19058695bef11b09315e6c86f709cb70)
 
 2026-03-09 13:44:00
 
 
 
-### [用好-AI，1-年顶-10-年](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904040&idx=1&sn=19058695bef11b09315e6c86f709cb70)
+### [从最后一名到世界第一，这家顶级餐厅的“非理性”管理闭环](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904040&idx=2&sn=3d9c9d067e3f8375b483ce11b05b87b0)
 
 2026-03-09 13:44:00
 
@@ -24551,13 +24791,13 @@
 
 
 
-### [对话诺因李银川：华为出身的天才科学家，想用合成数据造家务机器人](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247533953&idx=2&sn=46bcb749a5e4f101e2cc37a62e9e49f0)
+### [对话零跑朱江明：如果只看到性价比，那就太低估零跑了](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247533953&idx=1&sn=67a581822b6cdcf9a7c30b643791298c)
 
 2026-03-09 09:18:00
 
 
 
-### [对话零跑朱江明：如果只看到性价比，那就太低估零跑了](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247533953&idx=1&sn=67a581822b6cdcf9a7c30b643791298c)
+### [对话诺因李银川：华为出身的天才科学家，想用合成数据造家务机器人](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247533953&idx=2&sn=46bcb749a5e4f101e2cc37a62e9e49f0)
 
 2026-03-09 09:18:00
 
@@ -24593,13 +24833,13 @@
 
 
 
-### [芝加哥大学心理学教授：美好人生的-10-条建议](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904016&idx=2&sn=e36e84991b89cbe40c13e7dcebc57dde)
+### [老铺黄金史上最大调价：越贵越有人买？](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248880524&idx=2&sn=3938cb620cebd3c31ee21292e7db40a6)
 
 2026-03-07 13:31:00
 
 
 
-### [老铺黄金史上最大调价：越贵越有人买？](https://mp.weixin.qq.com/s?__biz=MzI2NDk5NzA0Mw==&mid=2248880524&idx=2&sn=3938cb620cebd3c31ee21292e7db40a6)
+### [芝加哥大学心理学教授：美好人生的-10-条建议](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904016&idx=2&sn=e36e84991b89cbe40c13e7dcebc57dde)
 
 2026-03-07 13:31:00
 
@@ -24947,13 +25187,13 @@
 
 
 
-### [穿越周期的力量：2025-中国企业家年度榜单](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902826&idx=3&sn=816d61c10a21d9054adafe21a0c88b77)
+### [新华社专访王宁：面试被拒，创业第一年，店员集体辞职](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902826&idx=1&sn=f087876983ab6f71f122d70594569446)
 
 2026-01-26 15:02:00
 
 
 
-### [新华社专访王宁：面试被拒，创业第一年，店员集体辞职](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902826&idx=1&sn=f087876983ab6f71f122d70594569446)
+### [穿越周期的力量：2025-中国企业家年度榜单](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902826&idx=3&sn=816d61c10a21d9054adafe21a0c88b77)
 
 2026-01-26 15:02:00
 
@@ -25013,13 +25253,13 @@
 
 
 
-### [长期复利的投资，还有效吗？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902803&idx=2&sn=ce66955d55a34acd9c98bb1b6c8ce6c2)
+### [生意的本质没变，赚钱的逻辑变了！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902803&idx=1&sn=502e868c299c7ce35c5f98a4504f9fe0)
 
 2026-01-24 13:30:00
 
 
 
-### [生意的本质没变，赚钱的逻辑变了！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902803&idx=1&sn=502e868c299c7ce35c5f98a4504f9fe0)
+### [长期复利的投资，还有效吗？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902803&idx=2&sn=ce66955d55a34acd9c98bb1b6c8ce6c2)
 
 2026-01-24 13:30:00
 
@@ -25043,13 +25283,13 @@
 
 
 
-### [刘尚希：中国经济“十五五”的-3-大机遇](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902784&idx=2&sn=4a6239717bf67a0d9e4b25ac537c36a9)
+### [马斯克最新采访：未来的-3-7-年，将会非常难熬](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902784&idx=1&sn=c9039280c6dbc015008b38965d1f8a64)
 
 2026-01-23 10:36:00
 
 
 
-### [马斯克最新采访：未来的-3-7-年，将会非常难熬](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902784&idx=1&sn=c9039280c6dbc015008b38965d1f8a64)
+### [刘尚希：中国经济“十五五”的-3-大机遇](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902784&idx=2&sn=4a6239717bf67a0d9e4b25ac537c36a9)
 
 2026-01-23 10:36:00
 
@@ -25181,13 +25421,13 @@
 
 
 
-### [月薪三千的年轻人，悬在“躺”与“卷”的中间：我们的价值被谁定义？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902632&idx=2&sn=d6cc9a72cb598cca7f2e4ff7f4be7950)
+### [何帆开年演讲：这，是年轻人的红利！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902632&idx=1&sn=065add0a9937a57be4dbc05ed0f8f42f)
 
 2026-01-19 13:30:00
 
 
 
-### [何帆开年演讲：这，是年轻人的红利！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902632&idx=1&sn=065add0a9937a57be4dbc05ed0f8f42f)
+### [月薪三千的年轻人，悬在“躺”与“卷”的中间：我们的价值被谁定义？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902632&idx=2&sn=d6cc9a72cb598cca7f2e4ff7f4be7950)
 
 2026-01-19 13:30:00
 
@@ -25211,13 +25451,13 @@
 
 
 
-### [中产为什么还没放弃山姆？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858436&idx=4&sn=7e47de1dd07077ed6511496911dbe7ac)
+### [Anthropic-刚发布了一份「AI-抢饭碗报告」：学历越高越「被抢」](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858436&idx=2&sn=a193fcda1247074122fed0717bc9071d)
 
 2026-01-19 03:29:00
 
 
 
-### [Anthropic-刚发布了一份「AI-抢饭碗报告」：学历越高越「被抢」](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858436&idx=2&sn=a193fcda1247074122fed0717bc9071d)
+### [中产为什么还没放弃山姆？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858436&idx=4&sn=7e47de1dd07077ed6511496911dbe7ac)
 
 2026-01-19 03:29:00
 
@@ -25235,13 +25475,13 @@
 
 
 
-### [创业是个铤而走险的道路决策，非走不可吗？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902503&idx=2&sn=6677c9b6a51764d305c5ed8fbbb112f5)
+### [下一个-10-年，商业的底层逻辑变了！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902503&idx=1&sn=72862119be23929aa66b44d8bfb5f15c)
 
 2026-01-18 13:31:00
 
 
 
-### [下一个-10-年，商业的底层逻辑变了！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902503&idx=1&sn=72862119be23929aa66b44d8bfb5f15c)
+### [创业是个铤而走险的道路决策，非走不可吗？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654902503&idx=2&sn=6677c9b6a51764d305c5ed8fbbb112f5)
 
 2026-01-18 13:31:00
 
@@ -25259,13 +25499,13 @@
 
 
 
-### [苦练基本功：12-个商业模型，助你走出冬天](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780763&idx=2&sn=7da2601ff941f9a8fc86225718dbf806)
+### [年龄越大，越对这个世界充满敬畏](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780763&idx=1&sn=cf315f15a14949ef90b9fc2f6ecf9b9b)
 
 2026-01-18 03:18:00
 
 
 
-### [年龄越大，越对这个世界充满敬畏](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780763&idx=1&sn=cf315f15a14949ef90b9fc2f6ecf9b9b)
+### [苦练基本功：12-个商业模型，助你走出冬天](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780763&idx=2&sn=7da2601ff941f9a8fc86225718dbf806)
 
 2026-01-18 03:18:00
 
@@ -25355,13 +25595,13 @@
 
 
 
-### [数据中心背后民怨沸腾，微软给马斯克上了一课](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858133&idx=4&sn=baaa567e0251a28f47cd00126604f288)
+### [一块布，卡了英伟达的脖子？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858133&idx=1&sn=4cbb908e6ceab6473a56b3a2db5dfa4b)
 
 2026-01-16 10:10:00
 
 
 
-### [一块布，卡了英伟达的脖子？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858133&idx=1&sn=4cbb908e6ceab6473a56b3a2db5dfa4b)
+### [数据中心背后民怨沸腾，微软给马斯克上了一课](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650858133&idx=4&sn=baaa567e0251a28f47cd00126604f288)
 
 2026-01-16 10:10:00
 
@@ -25373,13 +25613,13 @@
 
 
 
-### [Z-Product｜当软件开发进入智能时代，Twitter-前产品负责人再创业，Macroscope-让每家公司都能“看清代码”](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513558&idx=2&sn=3f7681bd9acbd27dec79d5c0135079c9)
+### [深度｜OpenAI-产品经理及后训练负责人：决定模型真正聪明程度的不是智能水平，而是它理解你的方式](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513558&idx=1&sn=0ec46bbc7200dc6a5ed3139bfbddbee8)
 
 2026-01-16 06:33:00
 
 
 
-### [深度｜OpenAI-产品经理及后训练负责人：决定模型真正聪明程度的不是智能水平，而是它理解你的方式](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513558&idx=1&sn=0ec46bbc7200dc6a5ed3139bfbddbee8)
+### [Z-Product｜当软件开发进入智能时代，Twitter-前产品负责人再创业，Macroscope-让每家公司都能“看清代码”](https://mp.weixin.qq.com/s?__biz=MzI4NTgxMDk1NA==&mid=2247513558&idx=2&sn=3f7681bd9acbd27dec79d5c0135079c9)
 
 2026-01-16 06:33:00
 
@@ -25433,13 +25673,7 @@
 
 
 
-### [喜欢思考的人，请务必培养这种能力](https://mp.weixin.qq.com/s?__biz=MzAxNTY0NjEzNg==&mid=2247488691&idx=1&sn=7b1208fe0f3d07de1c47b733253f8274)
-
-2026-01-15 13:31:00
-
-
-
-### [一周新增破千万、国区下载榜登顶，《鹅鸭杀》手游把派对游戏重新推回主桌](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676681&idx=3&sn=6aa7b479056315c5d5a4ce928ad59deb)
+### [众筹破千万美元，中国厂商迎来又一个强势赛道？|-对话创始人](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676681&idx=1&sn=487786162cd33045363f3c7faa32c688)
 
 2026-01-15 13:31:00
 
@@ -25451,7 +25685,13 @@
 
 
 
-### [众筹破千万美元，中国厂商迎来又一个强势赛道？|-对话创始人](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676681&idx=1&sn=487786162cd33045363f3c7faa32c688)
+### [一周新增破千万、国区下载榜登顶，《鹅鸭杀》手游把派对游戏重新推回主桌](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676681&idx=3&sn=6aa7b479056315c5d5a4ce928ad59deb)
+
+2026-01-15 13:31:00
+
+
+
+### [喜欢思考的人，请务必培养这种能力](https://mp.weixin.qq.com/s?__biz=MzAxNTY0NjEzNg==&mid=2247488691&idx=1&sn=7b1208fe0f3d07de1c47b733253f8274)
 
 2026-01-15 13:31:00
 
@@ -25463,13 +25703,13 @@
 
 
 
-### [谁才是-AI-消费的金主，答案你想不到](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247614312&idx=2&sn=f9af2f95465b7bdf787447f64f6cfa52)
+### [实测-Agent-Skills，一次编写，全网通用](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247614312&idx=1&sn=9e9a2c7b616e13a24906e1050cf0b70c)
 
 2026-01-15 12:47:00
 
 
 
-### [实测-Agent-Skills，一次编写，全网通用](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247614312&idx=1&sn=9e9a2c7b616e13a24906e1050cf0b70c)
+### [谁才是-AI-消费的金主，答案你想不到](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247614312&idx=2&sn=f9af2f95465b7bdf787447f64f6cfa52)
 
 2026-01-15 12:47:00
 
@@ -25493,13 +25733,13 @@
 
 
 
-### [一条-Karpathy-推文引发的开发者九级地震](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624069&idx=2&sn=143a09c298f8314367eb8957b1d72e8e)
+### [看完黄仁勋、苏姿丰和陈立武同台，后劲还挺大](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624069&idx=1&sn=e287f343c5e095e6c79ec70c3ee2189f)
 
 2026-01-15 08:02:00
 
 
 
-### [看完黄仁勋、苏姿丰和陈立武同台，后劲还挺大](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624069&idx=1&sn=e287f343c5e095e6c79ec70c3ee2189f)
+### [一条-Karpathy-推文引发的开发者九级地震](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247624069&idx=2&sn=143a09c298f8314367eb8957b1d72e8e)
 
 2026-01-15 08:02:00
 
@@ -25511,13 +25751,13 @@
 
 
 
-### [如何设置合理的薪酬结构？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780707&idx=2&sn=f8363e7581b037b8df9d718b5abb79e2)
+### [携程被反垄断调查，你必须知道这-9-件事](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780707&idx=1&sn=93e8312ac6d110aff8814090c02a9079)
 
 2026-01-15 03:55:00
 
 
 
-### [携程被反垄断调查，你必须知道这-9-件事](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780707&idx=1&sn=93e8312ac6d110aff8814090c02a9079)
+### [如何设置合理的薪酬结构？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780707&idx=2&sn=f8363e7581b037b8df9d718b5abb79e2)
 
 2026-01-15 03:55:00
 
@@ -25559,13 +25799,13 @@
 
 
 
-### [留存逆天、变现犯难，合成游戏卡在了哪一步？](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676652&idx=2&sn=3f55a02373a07849183f52622204740c)
+### [爆火-3-天、被投资人追捧，「死了么」正式出海](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676652&idx=1&sn=8d88e1c5aaa3bf041f9366421d37132f)
 
 2026-01-14 13:14:00
 
 
 
-### [爆火-3-天、被投资人追捧，「死了么」正式出海](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676652&idx=1&sn=8d88e1c5aaa3bf041f9366421d37132f)
+### [留存逆天、变现犯难，合成游戏卡在了哪一步？](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676652&idx=2&sn=3f55a02373a07849183f52622204740c)
 
 2026-01-14 13:14:00
 
@@ -25607,13 +25847,13 @@
 
 
 
-### [“通用产品是空中楼阁”，潘宇扬聊-AI-硬件丨-100-个-AI-创业者](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532109&idx=2&sn=dc30562305c55d7ee57e435444499a73)
+### [阿里云-2026-年目标：拿下中国-AI-云市场增量的-80%](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532109&idx=1&sn=a5c1fe7876bbef39d49b2a1e350c47f7)
 
 2026-01-14 03:40:00
 
 
 
-### [阿里云-2026-年目标：拿下中国-AI-云市场增量的-80%](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532109&idx=1&sn=a5c1fe7876bbef39d49b2a1e350c47f7)
+### [“通用产品是空中楼阁”，潘宇扬聊-AI-硬件丨-100-个-AI-创业者](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247532109&idx=2&sn=dc30562305c55d7ee57e435444499a73)
 
 2026-01-14 03:40:00
 
@@ -25649,13 +25889,13 @@
 
 
 
-### [一年融-2.2-亿，DeepWisdom-终于发布了第一款产品](https://mp.weixin.qq.com/s?__biz=Mzk0MDMyNDUxOQ==&mid=2247497225&idx=1&sn=329722fa98d3e168932db6964ba255f2)
+### [今夕何年？背单词-App-冲上美国总榜，月入百万美元？](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676624&idx=1&sn=937390344af7b59d90deabdc8dc7beaa)
 
 2026-01-13 13:31:00
 
 
 
-### [今夕何年？背单词-App-冲上美国总榜，月入百万美元？](https://mp.weixin.qq.com/s?__biz=MzA3NTQ4NjczNw==&mid=2650676624&idx=1&sn=937390344af7b59d90deabdc8dc7beaa)
+### [一年融-2.2-亿，DeepWisdom-终于发布了第一款产品](https://mp.weixin.qq.com/s?__biz=Mzk0MDMyNDUxOQ==&mid=2247497225&idx=1&sn=329722fa98d3e168932db6964ba255f2)
 
 2026-01-13 13:31:00
 
@@ -25691,13 +25931,13 @@
 
 
 
-### [10-后成了「AI-原住民」，他们不用搜索，只会问-AI](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623838&idx=3&sn=f8405a5c17611809f866033656a2083a)
+### [盼望着，盼望着，英特尔-1.8nm-芯片来了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623838&idx=2&sn=94307f6048ab7b7b702adb08ab66c188)
 
 2026-01-13 01:31:00
 
 
 
-### [盼望着，盼望着，英特尔-1.8nm-芯片来了](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623838&idx=2&sn=94307f6048ab7b7b702adb08ab66c188)
+### [10-后成了「AI-原住民」，他们不用搜索，只会问-AI](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623838&idx=3&sn=f8405a5c17611809f866033656a2083a)
 
 2026-01-13 01:31:00
 
@@ -25751,13 +25991,13 @@
 
 
 
-### [如何不用空格打字——顶功类输入法简介](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247603012&idx=2&sn=f8308b72a098d2068b12d6233a0ec9f5)
+### [从抽象到实用，今年的-CES-又有哪些值得关注的「新奇花活」？](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247603012&idx=1&sn=420f9b09f3826c0a94ecb128907478d5)
 
 2026-01-12 04:21:00
 
 
 
-### [从抽象到实用，今年的-CES-又有哪些值得关注的「新奇花活」？](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247603012&idx=1&sn=420f9b09f3826c0a94ecb128907478d5)
+### [如何不用空格打字——顶功类输入法简介](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247603012&idx=2&sn=f8308b72a098d2068b12d6233a0ec9f5)
 
 2026-01-12 04:21:00
 
@@ -25775,25 +26015,25 @@
 
 
 
-### [AI-进入「拼爹」的时代](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857327&idx=2&sn=67298249662a1d60ad091ef91dc4ce94)
-
-2026-01-12 03:25:00
-
-
-
 ### [2026，卖车更难了](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857327&idx=1&sn=6b7e76072d2dfec18441ad20af2d69e9)
 
 2026-01-12 03:25:00
 
 
 
-### [硅谷教父马克·安德森-2026-开年访谈：AI-革命才刚开始，智能的价格正在崩塌](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623773&idx=2&sn=1ab4d4440e581bf482b2c4c942db0e7f)
+### [AI-进入「拼爹」的时代](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857327&idx=2&sn=67298249662a1d60ad091ef91dc4ce94)
+
+2026-01-12 03:25:00
+
+
+
+### [汽水音乐狙击网易云音乐：以“AI-野路子”的名义](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623773&idx=1&sn=4d985781648660727753079fba04e36e)
 
 2026-01-12 01:56:00
 
 
 
-### [汽水音乐狙击网易云音乐：以“AI-野路子”的名义](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623773&idx=1&sn=4d985781648660727753079fba04e36e)
+### [硅谷教父马克·安德森-2026-开年访谈：AI-革命才刚开始，智能的价格正在崩塌](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247623773&idx=2&sn=1ab4d4440e581bf482b2c4c942db0e7f)
 
 2026-01-12 01:56:00
 
@@ -25919,13 +26159,13 @@
 
 
 
-### [一边万人大厂停工，一边出口订单暴增：“潮玩之都”东莞，深陷冰火两重天](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857085&idx=2&sn=e0b160b2749bed78c3ee78cb934f5239)
+### [海辰储能：抢占-AI-时代的能源“大动脉”，一家独角兽的卡位秘钥](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857085&idx=1&sn=d95f038bd75829af3af8815215951b6c)
 
 2026-01-09 10:06:00
 
 
 
-### [海辰储能：抢占-AI-时代的能源“大动脉”，一家独角兽的卡位秘钥](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857085&idx=1&sn=d95f038bd75829af3af8815215951b6c)
+### [一边万人大厂停工，一边出口订单暴增：“潮玩之都”东莞，深陷冰火两重天](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650857085&idx=2&sn=e0b160b2749bed78c3ee78cb934f5239)
 
 2026-01-09 10:06:00
 
@@ -25991,13 +26231,13 @@
 
 
 
-### [凡事有交代，件件有着落，事事有回音](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780345&idx=2&sn=85f9b818de78cd57a4c576031b83f0fc)
+### [在拉斯维加斯，多少钱都不够你造的](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780345&idx=1&sn=89cbbeb62301b58e1fd87868240e13e4)
 
 2026-01-09 00:30:00
 
 
 
-### [在拉斯维加斯，多少钱都不够你造的](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780345&idx=1&sn=89cbbeb62301b58e1fd87868240e13e4)
+### [凡事有交代，件件有着落，事事有回音](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780345&idx=2&sn=85f9b818de78cd57a4c576031b83f0fc)
 
 2026-01-09 00:30:00
 
@@ -26099,13 +26339,13 @@
 
 
 
-### [2026，不做草台班子](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780317&idx=2&sn=5b523a39dc539a54ccc4cb8201315e6f)
+### [刘润对话薛兆丰：人生，都是被逼出来的](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780317&idx=1&sn=920c9016154d3fd0d61b343860331dd1)
 
 2026-01-08 00:30:00
 
 
 
-### [刘润对话薛兆丰：人生，都是被逼出来的](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780317&idx=1&sn=920c9016154d3fd0d61b343860331dd1)
+### [2026，不做草台班子](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651780317&idx=2&sn=5b523a39dc539a54ccc4cb8201315e6f)
 
 2026-01-08 00:30:00
 
@@ -26117,7 +26357,7 @@
 
 
 
-### [乐道-L90-产品故事：放下理想主义执念，接受必要的-“庸俗”](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531800&idx=3&sn=830c8469f98d0b10e3cefe3d07350c83)
+### [一个-“代销帝国”-的完美演绎，再看海澜模式的因和果](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531800&idx=1&sn=93ae24426caafdb3fccb27d2185be324)
 
 2026-01-07 10:01:00
 
@@ -26129,7 +26369,7 @@
 
 
 
-### [一个-“代销帝国”-的完美演绎，再看海澜模式的因和果](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531800&idx=1&sn=93ae24426caafdb3fccb27d2185be324)
+### [乐道-L90-产品故事：放下理想主义执念，接受必要的-“庸俗”](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531800&idx=3&sn=830c8469f98d0b10e3cefe3d07350c83)
 
 2026-01-07 10:01:00
 
@@ -26201,13 +26441,13 @@
 
 
 
-### [一个浙江小城，为什么跑出了“快递四巨头”？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650856561&idx=4&sn=b2e96f6c7be518ad5f00407d0bf8bb75)
+### [2026-年了，为什么还没有一款千万级-DAU-的-AI-陪伴产品跑出来？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650856561&idx=2&sn=c7596fcba89fed6686a67a2ada7de260)
 
 2026-01-06 10:01:00
 
 
 
-### [2026-年了，为什么还没有一款千万级-DAU-的-AI-陪伴产品跑出来？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650856561&idx=2&sn=c7596fcba89fed6686a67a2ada7de260)
+### [一个浙江小城，为什么跑出了“快递四巨头”？](https://mp.weixin.qq.com/s?__biz=MjM5OTAzMjc4MA==&mid=2650856561&idx=4&sn=b2e96f6c7be518ad5f00407d0bf8bb75)
 
 2026-01-06 10:01:00
 
@@ -26597,13 +26837,13 @@
 
 
 
-### [五位技术大咖共话：具⾝智能模型何时迎来-ChatGPT-时刻？｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549238&idx=3&sn=68d32e1c2cb467779f81b0039e1fa024)
+### [明势创投焦腾：AI-大时代下的科技投资拐点｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549238&idx=2&sn=3a7c423448f7f1300d453054c2188f08)
 
 2025-12-26 05:01:00
 
 
 
-### [明势创投焦腾：AI-大时代下的科技投资拐点｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549238&idx=2&sn=3a7c423448f7f1300d453054c2188f08)
+### [五位技术大咖共话：具⾝智能模型何时迎来-ChatGPT-时刻？｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247549238&idx=3&sn=68d32e1c2cb467779f81b0039e1fa024)
 
 2025-12-26 05:01:00
 
@@ -26711,25 +26951,25 @@
 
 
 
-### [为什么会有人喜欢在老板面前表演？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779788&idx=2&sn=1212b2f7090466597a14af75dba53c33)
-
-2025-12-24 02:02:00
-
-
-
 ### [在非洲，我看到中国人“悲壮的突围”](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779788&idx=1&sn=f56566f4f52ab0577b61be9a36978fab)
 
 2025-12-24 02:02:00
 
 
 
-### [为什么真正的出海，一定要先学会亏损？|-卓立出海谈](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150666&idx=3&sn=2950374fd0d13c59dfd7e324e0875776)
+### [为什么会有人喜欢在老板面前表演？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779788&idx=2&sn=1212b2f7090466597a14af75dba53c33)
+
+2025-12-24 02:02:00
+
+
+
+### [那部和《阿凡达-3》一起上映的小众电影，故事和它一样充满勇气](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150666&idx=2&sn=4f106ea51c6ff09be5534b1685fc76b9)
 
 2025-12-24 00:21:00
 
 
 
-### [那部和《阿凡达-3》一起上映的小众电影，故事和它一样充满勇气](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150666&idx=2&sn=4f106ea51c6ff09be5534b1685fc76b9)
+### [为什么真正的出海，一定要先学会亏损？|-卓立出海谈](https://mp.weixin.qq.com/s?__biz=MzA3OTM5NTkxNA==&mid=2653150666&idx=3&sn=2950374fd0d13c59dfd7e324e0875776)
 
 2025-12-24 00:21:00
 
@@ -26855,13 +27095,13 @@
 
 
 
-### [为什么公司流程多了，效率却越来越低？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901550&idx=2&sn=0330763f288bf8cf39233fc7c6daed30)
+### [俞敏洪对话张晓萌：心理韧性，决定一个人能走多远](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901550&idx=1&sn=6d61ab48e7931f318df0ecb5cc303c7d)
 
 2025-12-19 14:02:00
 
 
 
-### [俞敏洪对话张晓萌：心理韧性，决定一个人能走多远](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901550&idx=1&sn=6d61ab48e7931f318df0ecb5cc303c7d)
+### [为什么公司流程多了，效率却越来越低？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901550&idx=2&sn=0330763f288bf8cf39233fc7c6daed30)
 
 2025-12-19 14:02:00
 
@@ -26939,13 +27179,13 @@
 
 
 
-### [无路可走的时候，这一点可能会改变人生](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901537&idx=2&sn=a198455827068558a1660987599651ee)
+### [这位-95-后，一年-5-轮融资，被雷军追着投资](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901537&idx=1&sn=63d271be4aa4603437a4259a313f8a60)
 
 2025-12-18 13:31:00
 
 
 
-### [这位-95-后，一年-5-轮融资，被雷军追着投资](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901537&idx=1&sn=63d271be4aa4603437a4259a313f8a60)
+### [无路可走的时候，这一点可能会改变人生](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654901537&idx=2&sn=a198455827068558a1660987599651ee)
 
 2025-12-18 13:31:00
 
@@ -27029,13 +27269,13 @@
 
 
 
-### [具透｜Android-16-正式版值得关注的功能更新](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247601659&idx=2&sn=c4ac64aaecb9152f49fe39a28132f318)
+### [我们给你做了一个「有洞」的充电宝，想让你的充电体验有点「不一样」](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247601659&idx=1&sn=b9a5f5bf53d18f9480f8c47e3dca8a64)
 
 2025-12-17 04:22:00
 
 
 
-### [我们给你做了一个「有洞」的充电宝，想让你的充电体验有点「不一样」](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247601659&idx=1&sn=b9a5f5bf53d18f9480f8c47e3dca8a64)
+### [具透｜Android-16-正式版值得关注的功能更新](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247601659&idx=2&sn=c4ac64aaecb9152f49fe39a28132f318)
 
 2025-12-17 04:22:00
 
@@ -27113,25 +27353,25 @@
 
 
 
-### [产业链各环节发展迅速，具身智能商业化路径逐渐清晰｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548962&idx=3&sn=8949e9ca44a3a08f1baee56d6560f030)
-
-2025-12-14 06:26:00
-
-
-
 ### [重塑股权投资：GP-与-LP-的思维碰撞｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548962&idx=2&sn=93a3b7d47c750eb24aadf859c8e59200)
 
 2025-12-14 06:26:00
 
 
 
-### [在经济周期的不同阶段，我们应该怎么办？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779233&idx=2&sn=ff9b8929ab47cd68e1658d48f5448fad)
+### [产业链各环节发展迅速，具身智能商业化路径逐渐清晰｜甲子引力](https://mp.weixin.qq.com/s?__biz=MzU5OTI0NTc3Mg==&mid=2247548962&idx=3&sn=8949e9ca44a3a08f1baee56d6560f030)
+
+2025-12-14 06:26:00
+
+
+
+### [中央定调八大经济任务：2026，告别内卷，从输血到造血](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779233&idx=1&sn=d12f37f6646fb6a77c788e299bedb076)
 
 2025-12-14 03:19:00
 
 
 
-### [中央定调八大经济任务：2026，告别内卷，从输血到造血](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779233&idx=1&sn=d12f37f6646fb6a77c788e299bedb076)
+### [在经济周期的不同阶段，我们应该怎么办？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651779233&idx=2&sn=ff9b8929ab47cd68e1658d48f5448fad)
 
 2025-12-14 03:19:00
 
@@ -27185,13 +27425,13 @@
 
 
 
-### [对话-Velotric-创始人张曦：2000-美元的-Ebike，怎么卖出-15-万辆？](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531278&idx=2&sn=0ab4124774ef70141beb6df2540c5d57)
+### [饿了么往事丨晚点口述史](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531278&idx=1&sn=68bb624b9b280b17e4ee4711e2f0efd4)
 
 2025-12-11 03:53:00
 
 
 
-### [饿了么往事丨晚点口述史](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531278&idx=1&sn=68bb624b9b280b17e4ee4711e2f0efd4)
+### [对话-Velotric-创始人张曦：2000-美元的-Ebike，怎么卖出-15-万辆？](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247531278&idx=2&sn=0ab4124774ef70141beb6df2540c5d57)
 
 2025-12-11 03:53:00
 
@@ -27209,13 +27449,13 @@
 
 
 
-### [红杉新掌舵人首次同台：把筹码压在极少数异类公司上](https://mp.weixin.qq.com/s?__biz=Mzg3NDkyMTQ5Mw==&mid=2247499159&idx=1&sn=a6f68797498e8b07f3e9cb8b7cf0b6e0)
+### [快手正悄悄地把可灵做成一个世界模型](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621544&idx=1&sn=9d9464ad9b243859ef1604f933a52574)
 
 2025-12-10 01:59:00
 
 
 
-### [快手正悄悄地把可灵做成一个世界模型](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247621544&idx=1&sn=9d9464ad9b243859ef1604f933a52574)
+### [红杉新掌舵人首次同台：把筹码压在极少数异类公司上](https://mp.weixin.qq.com/s?__biz=Mzg3NDkyMTQ5Mw==&mid=2247499159&idx=1&sn=a6f68797498e8b07f3e9cb8b7cf0b6e0)
 
 2025-12-10 01:59:00
 
@@ -27275,13 +27515,13 @@
 
 
 
-### [一张《疯狂动物城-2》电影票，怎么撬动四次消费？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900981&idx=2&sn=ee886c6a5bb1214ff63fe04f2cb5cfa4)
+### [任正非最新讲话：不要在乎别人的路，最重要的是走自己的路](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900981&idx=1&sn=91d62ffcd583b4867ae7995044004407)
 
 2025-12-05 13:50:00
 
 
 
-### [任正非最新讲话：不要在乎别人的路，最重要的是走自己的路](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900981&idx=1&sn=91d62ffcd583b4867ae7995044004407)
+### [一张《疯狂动物城-2》电影票，怎么撬动四次消费？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900981&idx=2&sn=ee886c6a5bb1214ff63fe04f2cb5cfa4)
 
 2025-12-05 13:50:00
 
@@ -27365,13 +27605,13 @@
 
 
 
-### [对话“供应链之父”李效良：未来的竞争不在企业间，而在生态系统间｜暗涌看世界](https://mp.weixin.qq.com/s?__biz=Mzk0MDMyNDUxOQ==&mid=2247496189&idx=2&sn=c514ac456285f7909c79fe552487718d)
+### [“一进一退”创两项纪录，PAG-的中国图景才刚刚展开](https://mp.weixin.qq.com/s?__biz=Mzk0MDMyNDUxOQ==&mid=2247496189&idx=1&sn=7f163b4d1aaffb18befe32c19d3331b0)
 
 2025-12-03 01:31:00
 
 
 
-### [“一进一退”创两项纪录，PAG-的中国图景才刚刚展开](https://mp.weixin.qq.com/s?__biz=Mzk0MDMyNDUxOQ==&mid=2247496189&idx=1&sn=7f163b4d1aaffb18befe32c19d3331b0)
+### [对话“供应链之父”李效良：未来的竞争不在企业间，而在生态系统间｜暗涌看世界](https://mp.weixin.qq.com/s?__biz=Mzk0MDMyNDUxOQ==&mid=2247496189&idx=2&sn=c514ac456285f7909c79fe552487718d)
 
 2025-12-03 01:31:00
 
@@ -27383,13 +27623,13 @@
 
 
 
-### [穷人与富人的真正差别，不在钱包，而在五个认知](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900634&idx=2&sn=aa8911a56193009a91d20246efe0e4e4)
+### [黄奇帆最新演讲：十五五规划，释放了三大红利！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900634&idx=1&sn=fc764a7d65adc8b926a76ca0ad7a7a46)
 
 2025-12-02 12:00:00
 
 
 
-### [黄奇帆最新演讲：十五五规划，释放了三大红利！](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900634&idx=1&sn=fc764a7d65adc8b926a76ca0ad7a7a46)
+### [穷人与富人的真正差别，不在钱包，而在五个认知](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900634&idx=2&sn=aa8911a56193009a91d20246efe0e4e4)
 
 2025-12-02 12:00:00
 
@@ -27449,13 +27689,13 @@
 
 
 
-### [你的思考能力，决定了人生高度](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900614&idx=2&sn=b3b19de0f3fb42f8ae97d9db6a5a9b51)
+### [不懂复盘，再努力也是原地踏步](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900614&idx=1&sn=c50d15a2971d053e03beffbae8108ec9)
 
 2025-11-30 13:31:00
 
 
 
-### [不懂复盘，再努力也是原地踏步](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900614&idx=1&sn=c50d15a2971d053e03beffbae8108ec9)
+### [你的思考能力，决定了人生高度](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900614&idx=2&sn=b3b19de0f3fb42f8ae97d9db6a5a9b51)
 
 2025-11-30 13:31:00
 
@@ -27605,13 +27845,13 @@
 
 
 
-### [《庄子》：一个人内心强大到可怕的七种境界](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900408&idx=2&sn=a7f7fffd897a3a4fbce9afd047985285)
+### [为什么-90%的公司，战略都执行不下去？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900408&idx=1&sn=bf1f773be541e4330d0d8905fc26a5b6)
 
 2025-11-23 14:36:00
 
 
 
-### [为什么-90%的公司，战略都执行不下去？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900408&idx=1&sn=bf1f773be541e4330d0d8905fc26a5b6)
+### [《庄子》：一个人内心强大到可怕的七种境界](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900408&idx=2&sn=a7f7fffd897a3a4fbce9afd047985285)
 
 2025-11-23 14:36:00
 
@@ -27641,13 +27881,13 @@
 
 
 
-### [诺奖得主聊“匹配”：社会资源的分配，从来不是“价高者得”](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900393&idx=2&sn=7da47cbc7dbf0e245b3e6bd241c2dda4)
+### [韩后创始人王国安：还清-15-亿债务，我当着全体员工嚎啕大哭](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900393&idx=1&sn=2474185f49dd8451a4429a1c5b25749e)
 
 2025-11-22 13:31:00
 
 
 
-### [韩后创始人王国安：还清-15-亿债务，我当着全体员工嚎啕大哭](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900393&idx=1&sn=2474185f49dd8451a4429a1c5b25749e)
+### [诺奖得主聊“匹配”：社会资源的分配，从来不是“价高者得”](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654900393&idx=2&sn=7da47cbc7dbf0e245b3e6bd241c2dda4)
 
 2025-11-22 13:31:00
 
@@ -27797,13 +28037,13 @@
 
 
 
-### [战略，要有计划、有执行](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778548&idx=2&sn=34ee380b1c50e5a7b5e2c0aad75aa275)
+### [29-岁的小伙子，是怎么-6-年做出品类第一的？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778548&idx=1&sn=5bebad86beb096d801cb682d849f5f72)
 
 2025-11-17 00:30:00
 
 
 
-### [29-岁的小伙子，是怎么-6-年做出品类第一的？](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778548&idx=1&sn=5bebad86beb096d801cb682d849f5f72)
+### [战略，要有计划、有执行](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778548&idx=2&sn=34ee380b1c50e5a7b5e2c0aad75aa275)
 
 2025-11-17 00:30:00
 
@@ -27917,13 +28157,13 @@
 
 
 
-### [巴菲特发布最后一封致股东信：我“纯属运气好”](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899893&idx=2&sn=e91c4cd63dc3e2903fcca2dc4874b516)
+### [段永平罕见访谈：我之所以是我，大多是因为我不做什么](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899893&idx=1&sn=823848f379f10b0cd3125c971bb15bf9)
 
 2025-11-12 10:06:00
 
 
 
-### [段永平罕见访谈：我之所以是我，大多是因为我不做什么](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899893&idx=1&sn=823848f379f10b0cd3125c971bb15bf9)
+### [巴菲特发布最后一封致股东信：我“纯属运气好”](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899893&idx=2&sn=e91c4cd63dc3e2903fcca2dc4874b516)
 
 2025-11-12 10:06:00
 
@@ -27941,13 +28181,13 @@
 
 
 
-### [谢幕，巴菲特发布最后一封致股东信（全文）](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778391&idx=2&sn=ce0d8d5b849a7d69b80d1a890791186e)
+### [巴菲特最后一封股东信，给我们-8-个人生锦囊](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778391&idx=1&sn=ab5d4624ffb22cfac8c1f90d3b1ea8d3)
 
 2025-11-12 00:32:00
 
 
 
-### [巴菲特最后一封股东信，给我们-8-个人生锦囊](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778391&idx=1&sn=ab5d4624ffb22cfac8c1f90d3b1ea8d3)
+### [谢幕，巴菲特发布最后一封致股东信（全文）](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778391&idx=2&sn=ce0d8d5b849a7d69b80d1a890791186e)
 
 2025-11-12 00:32:00
 
@@ -27989,13 +28229,13 @@
 
 
 
-### [在-Cursor-工作-60-天，我发现了这家公司成功的秘密](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620217&idx=3&sn=ea008c455724d9ed708b5e183b93f88a)
+### [预览版就上-LMArena-全球第二？我们把-ERNIE-5.0-Preview-1022-拿来当场验货](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620217&idx=2&sn=07354a98f80d1950426a87a459d40de2)
 
 2025-11-10 04:16:00
 
 
 
-### [预览版就上-LMArena-全球第二？我们把-ERNIE-5.0-Preview-1022-拿来当场验货](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620217&idx=2&sn=07354a98f80d1950426a87a459d40de2)
+### [在-Cursor-工作-60-天，我发现了这家公司成功的秘密](https://mp.weixin.qq.com/s?__biz=MzkyNjU2ODM2NQ==&mid=2247620217&idx=3&sn=ea008c455724d9ed708b5e183b93f88a)
 
 2025-11-10 04:16:00
 
@@ -28043,13 +28283,13 @@
 
 
 
-### [传统的领导力，可能不灵了](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899629&idx=2&sn=1e05b85cc62d863085f8efb9f6b141a8)
+### [内卷之下，小而美也是一种赢法-｜5-万字解读-2025-餐饮](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899629&idx=1&sn=92cd3f056cb75da58d016d40754d514f)
 
 2025-11-07 13:30:00
 
 
 
-### [内卷之下，小而美也是一种赢法-｜5-万字解读-2025-餐饮](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899629&idx=1&sn=92cd3f056cb75da58d016d40754d514f)
+### [传统的领导力，可能不灵了](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654899629&idx=2&sn=1e05b85cc62d863085f8efb9f6b141a8)
 
 2025-11-07 13:30:00
 
@@ -28079,13 +28319,13 @@
 
 
 
-### [十年移动应用创新赛落幕，Apple-移动应用孵化基金「启航」](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247599677&idx=2&sn=401d9dc9b4ef7cd0a563528e8a64f108)
+### [Liquid-Glass-支持调整效果、滑动取消闹钟……iOS-26.1-都更新了什么？](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247599677&idx=1&sn=4a7babe68f445dbebba618f207a0744f)
 
 2025-11-06 04:32:00
 
 
 
-### [Liquid-Glass-支持调整效果、滑动取消闹钟……iOS-26.1-都更新了什么？](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247599677&idx=1&sn=4a7babe68f445dbebba618f207a0744f)
+### [十年移动应用创新赛落幕，Apple-移动应用孵化基金「启航」](https://mp.weixin.qq.com/s?__biz=MzU4Mjg3MDAyMQ==&mid=2247599677&idx=2&sn=401d9dc9b4ef7cd0a563528e8a64f108)
 
 2025-11-06 04:32:00
 
@@ -28115,13 +28355,13 @@
 
 
 
-### [中国的酒店业，就是-5-篮水果](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778180&idx=2&sn=589ed6a40ea490bfa051444eaa4e46c0)
+### [季琦：中国的酒店，是时候重做一遍了](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778180&idx=1&sn=4c9dd25c2348cdebc4602fca7e55ec8f)
 
 2025-11-05 03:45:00
 
 
 
-### [季琦：中国的酒店，是时候重做一遍了](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778180&idx=1&sn=4c9dd25c2348cdebc4602fca7e55ec8f)
+### [中国的酒店业，就是-5-篮水果](https://mp.weixin.qq.com/s?__biz=MjM5NjM5MjQ4MQ==&mid=2651778180&idx=2&sn=589ed6a40ea490bfa051444eaa4e46c0)
 
 2025-11-05 03:45:00
 
@@ -28139,13 +28379,13 @@
 
 
 
-### [自然堂-“增长悖论”：渠道效率提升，品牌价值停滞](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247530284&idx=2&sn=9fe01a684b2177c019371dc7369e4b05)
+### [星巴克中国交易：激进的扩张，韩国的剧本，未决的根本问题](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247530284&idx=1&sn=66082ee6f5f9ab2b91d83c43691e28bb)
 
 2025-11-04 15:57:00
 
 
 
-### [星巴克中国交易：激进的扩张，韩国的剧本，未决的根本问题](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247530284&idx=1&sn=66082ee6f5f9ab2b91d83c43691e28bb)
+### [自然堂-“增长悖论”：渠道效率提升，品牌价值停滞](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247530284&idx=2&sn=9fe01a684b2177c019371dc7369e4b05)
 
 2025-11-04 15:57:00
 
@@ -28595,13 +28835,13 @@
 
 
 
-### [升级中国服装制造，Shein-独有的算术题](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247529930&idx=1&sn=595c71802a5023afbb19780b9314a8ac)
+### [EntropyLong：通过预测不确定性实现高效的长上下文训练](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247611800&idx=2&sn=a7ddccf70ed2be9d87762f5d4056cc4a)
 
 2025-10-17 07:27:00
 
 
 
-### [EntropyLong：通过预测不确定性实现高效的长上下文训练](https://mp.weixin.qq.com/s?__biz=MzIwNzc2NTk0NQ==&mid=2247611800&idx=2&sn=a7ddccf70ed2be9d87762f5d4056cc4a)
+### [升级中国服装制造，Shein-独有的算术题](https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247529930&idx=1&sn=595c71802a5023afbb19780b9314a8ac)
 
 2025-10-17 07:27:00
 
@@ -28619,13 +28859,13 @@
 
 
 
-### [超越内卷：给中国企业家的-5-条破局指南](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654898072&idx=2&sn=a06f53c9546b16e3bcd4c12180bc9ff4)
+### [段永平：不做什么，比做什么更重要｜附-18-条不为清单](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654898072&idx=1&sn=3b3085af001b442523f1b0d281bdf546)
 
 2025-10-16 13:31:00
 
 
 
-### [段永平：不做什么，比做什么更重要｜附-18-条不为清单](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654898072&idx=1&sn=3b3085af001b442523f1b0d281bdf546)
+### [超越内卷：给中国企业家的-5-条破局指南](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654898072&idx=2&sn=a06f53c9546b16e3bcd4c12180bc9ff4)
 
 2025-10-16 13:31:00
 
@@ -28739,13 +28979,13 @@
 
 
 
-### [如何一天了解一个行业？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897634&idx=2&sn=65ef62e50bdaff74e3ae1d18577a876f)
+### [好的中层，放小自己，放大格局](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897634&idx=1&sn=2a929fd04489b78663b26fa27d64342e)
 
 2025-10-09 14:11:00
 
 
 
-### [好的中层，放小自己，放大格局](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897634&idx=1&sn=2a929fd04489b78663b26fa27d64342e)
+### [如何一天了解一个行业？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897634&idx=2&sn=65ef62e50bdaff74e3ae1d18577a876f)
 
 2025-10-09 14:11:00
 
@@ -28811,13 +29051,13 @@
 
 
 
-### [别把时间浪费在这两件事上](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897561&idx=2&sn=a0529292f36fa3ddfeb8677e189e65ca)
+### [废掉一个人最隐蔽的方式](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897561&idx=1&sn=e6c1163ee37f45127277ca386efe3af4)
 
 2025-10-05 08:00:00
 
 
 
-### [废掉一个人最隐蔽的方式](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897561&idx=1&sn=e6c1163ee37f45127277ca386efe3af4)
+### [别把时间浪费在这两件事上](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654897561&idx=2&sn=a0529292f36fa3ddfeb8677e189e65ca)
 
 2025-10-05 08:00:00
 
@@ -29273,13 +29513,13 @@
 
 
 
-### [好领导，多问少说](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895872&idx=2&sn=eeed162fa6fed31f7b27080bab048c2a)
+### [于东来演讲：热爱，比努力更重要](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895872&idx=1&sn=21ff2aeee956703dfe9701288f56a456)
 
 2025-08-13 13:45:00
 
 
 
-### [于东来演讲：热爱，比努力更重要](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895872&idx=1&sn=21ff2aeee956703dfe9701288f56a456)
+### [好领导，多问少说](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895872&idx=2&sn=eeed162fa6fed31f7b27080bab048c2a)
 
 2025-08-13 13:45:00
 
@@ -29345,13 +29585,13 @@
 
 
 
-### [如何破解增长困局？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895652&idx=2&sn=4f1b516f3a56dbd854e030bf3b0cb5b9)
+### [顶尖销售，强在基本功](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895652&idx=1&sn=4dea877e8f076ea5f562b6dbb4c07507)
 
 2025-08-03 14:22:00
 
 
 
-### [顶尖销售，强在基本功](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895652&idx=1&sn=4dea877e8f076ea5f562b6dbb4c07507)
+### [如何破解增长困局？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654895652&idx=2&sn=4f1b516f3a56dbd854e030bf3b0cb5b9)
 
 2025-08-03 14:22:00
 
@@ -30161,13 +30401,13 @@
 
 
 
-### [必备的战略思维，如何修炼？](https://mp.weixin.qq.com/s/gn-YsFPW_U-OBzMmIvljVg)
+### [李录最新访谈：大变局，真的要来了！](https://mp.weixin.qq.com/s/IN6eDljIjqbsikwdiKbhEQ)
 
 2025-04-28 14:26:08
 
 
 
-### [李录最新访谈：大变局，真的要来了！](https://mp.weixin.qq.com/s/IN6eDljIjqbsikwdiKbhEQ)
+### [必备的战略思维，如何修炼？](https://mp.weixin.qq.com/s/gn-YsFPW_U-OBzMmIvljVg)
 
 2025-04-28 14:26:08
 
@@ -30179,13 +30419,13 @@
 
 
 
-### [对话能量奇点创始人杨钊：人类驯服可控核聚变还有多少路程？](https://mp.weixin.qq.com/s/6LkM3YkRzaL_VVEzid8N2w)
+### [2025-年，如何保持精力充沛？](https://mp.weixin.qq.com/s/MjZnlDkVq0Y0DoMtxltU0Q)
 
 2025-04-28 00:00:00
 
 
 
-### [2025-年，如何保持精力充沛？](https://mp.weixin.qq.com/s/MjZnlDkVq0Y0DoMtxltU0Q)
+### [对话能量奇点创始人杨钊：人类驯服可控核聚变还有多少路程？](https://mp.weixin.qq.com/s/6LkM3YkRzaL_VVEzid8N2w)
 
 2025-04-28 00:00:00
 
@@ -30449,6 +30689,30 @@
 
 
 
+### [书籍节选：值得利用的危机](https://uxmag.com/articles/book-excerpt-the-crisis-worth-using)
+
+2026-04-10 08:17:32 | 标签: 危机工程, 组织变革, 领导力, 决策, 管理
+
+> 《危机工程》的这一节选挑战了组织危机通常带来的负面含义，将其重新定义为实现必要且快速变革的罕见机遇窗口。作者确定了五个独特的指标——根本性的意外、意义构建的失败、核心流程的中断、高度的可见性以及严格的截止日期——这些指标标志着真正的危机。通过理解这些标志，领导者可以区分“虚假”紧急情况与真实危机，从而将危机带来的不稳定能量转化为在正常条件下无法实现的结构性改进。文中强调，虽然危机本质上具有破坏性，但它们为改变激励机制和权力结构以实现更好的组织成果提供了必要条件。
+
+
+
+### [商业产品与内部产品](https://www.svpg.com/commercial-vs-internal-products/)
+
+2026-04-10 01:40:13 | 标签: 产品管理, 产品探索, 商业产品, 内部工具, 市场竞争
+
+> 硅谷产品集团（Silicon Valley Product Group）的这篇文章阐明了内部服务与商业产品之间的根本区别。虽然作者提倡将内部工具视为产品来提升效率，但他们强调商业产品的门槛要高得多。内部产品受益于固定的用户群，在易用性和可行性方面的门槛较低。相比之下，商业产品必须在开放的市场中竞争，成功不仅需要解决问题，还必须显著优于替代方案，才能促使用户进行切换。作者强调，商业产品经理的角色要激烈得多，需要深入了解市场动态、商业化和竞争策略，尤其是在 AI 时代，产品探索是决定业务成功的首要因素。
+
+
+
+### [PM-职场-5-年：摆脱无效加班的成果管理法](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651926223&idx=4&sn=d9643247f6833e871a31b0ff846194db)
+
+2026-04-09 23:46:00 | 标签: 产品经理, 职场成长, 时间管理, 成果导向, 需求管理
+
+> 文章针对产品经理（PM）群体普遍存在的无效加班现象，总结了三个核心陷阱：被临时需求牵着走、沉迷表面工作以及缺乏向上对齐。作者强调，职场安全感源于解决问题的能力而非加班时长。为摆脱「自我感动式」努力，文章详细介绍了「成果优先级矩阵」，将工作划分为四个价值维度，并提供了具体的操作指南，包括每日核心事项抓取、需求「三级过滤」法则以及下班前的复盘习惯，旨在引导从业者从关注「时间长度」转向关注「产出价值」。
+
+
+
 ### [认知共情：你的日常生存工具](https://uxmag.com/articles/cognitive-empathy-your-everyday-survival-tool)
 
 2026-04-09 03:33:39
@@ -30485,13 +30749,13 @@
 
 
 
-### [从实验设计到结果回归：我的-AB-实验实战方法](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925472&idx=3&sn=c2df2f6ed99251b0d1850a8355d31e29)
+### [王兴学会“断舍离”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925472&idx=1&sn=942bc4cf2790ca1c676fbba5e360009a)
 
 2026-03-16 23:45:00
 
 
 
-### [王兴学会“断舍离”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925472&idx=1&sn=942bc4cf2790ca1c676fbba5e360009a)
+### [从实验设计到结果回归：我的-AB-实验实战方法](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651925472&idx=3&sn=c2df2f6ed99251b0d1850a8355d31e29)
 
 2026-03-16 23:45:00
 
@@ -30581,13 +30845,13 @@
 
 
 
-### [小红书“管”得住用户吗？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923730&idx=1&sn=ef3f0a865dfc4fc8fd58224fb621c5bb)
+### [手把手教你写年度规划：产品思维是-2026-年的升职加薪必备能力](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923730&idx=4&sn=84d421e4add1947b4afa9d44780eef7c)
 
 2026-01-24 02:01:00
 
 
 
-### [手把手教你写年度规划：产品思维是-2026-年的升职加薪必备能力](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923730&idx=4&sn=84d421e4add1947b4afa9d44780eef7c)
+### [小红书“管”得住用户吗？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923730&idx=1&sn=ef3f0a865dfc4fc8fd58224fb621c5bb)
 
 2026-01-24 02:01:00
 
@@ -30599,7 +30863,7 @@
 
 
 
-### [鸿蒙适配：不止多一个版本，更是重构增长的战略机遇](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923585&idx=2&sn=ce87634d18ea05ab110d5bf7f3e3ccf8)
+### [为什么不少-AI-问答助手，员工问过一次就不再用了？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923585&idx=4&sn=a4036254221a173a0675800c4d98cda6)
 
 2026-01-18 23:45:00
 
@@ -30611,7 +30875,7 @@
 
 
 
-### [为什么不少-AI-问答助手，员工问过一次就不再用了？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923585&idx=4&sn=a4036254221a173a0675800c4d98cda6)
+### [鸿蒙适配：不止多一个版本，更是重构增长的战略机遇](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923585&idx=2&sn=ce87634d18ea05ab110d5bf7f3e3ccf8)
 
 2026-01-18 23:45:00
 
@@ -30623,19 +30887,19 @@
 
 
 
-### [业务流程设计：为何完美的“点”连成了精神分裂的“线”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923575&idx=3&sn=9a19356526101bc3f60231b32a78141a)
-
-2026-01-17 02:05:00
-
-
-
 ### [我直接问了-AI：什么样的产品内容，它才敢推荐？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923575&idx=4&sn=968edcb093aa486e34e2bcbed35d2aa0)
 
 2026-01-17 02:05:00
 
 
 
-### [携程的学费](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923509&idx=1&sn=74fcee65dba6c60b7e01ac06180c2011)
+### [业务流程设计：为何完美的“点”连成了精神分裂的“线”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923575&idx=3&sn=9a19356526101bc3f60231b32a78141a)
+
+2026-01-17 02:05:00
+
+
+
+### [AI-智能体元年，货代公司内部-IT-的职业路径怎么走？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923509&idx=4&sn=e171cd93fd1ac13313c17cad156d22bb)
 
 2026-01-15 23:45:00
 
@@ -30647,7 +30911,7 @@
 
 
 
-### [AI-智能体元年，货代公司内部-IT-的职业路径怎么走？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923509&idx=4&sn=e171cd93fd1ac13313c17cad156d22bb)
+### [携程的学费](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923509&idx=1&sn=74fcee65dba6c60b7e01ac06180c2011)
 
 2026-01-15 23:45:00
 
@@ -30659,13 +30923,13 @@
 
 
 
-### [刷小红书也要花钱了？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923491&idx=1&sn=7e322537f1a558337ed7d6811e1dcced)
+### [如何把“烂摊子”项目，变成你的职场高光时刻](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923491&idx=3&sn=d5998ff23f8321e11c20680d3443bea0)
 
 2026-01-14 23:46:00
 
 
 
-### [如何把“烂摊子”项目，变成你的职场高光时刻](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923491&idx=3&sn=d5998ff23f8321e11c20680d3443bea0)
+### [刷小红书也要花钱了？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923491&idx=1&sn=7e322537f1a558337ed7d6811e1dcced)
 
 2026-01-14 23:46:00
 
@@ -30683,19 +30947,19 @@
 
 
 
-### [“死了么”创始人亲述：我们是如何爆红的](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923473&idx=1&sn=4785055cdb25e4660e34502c2850079a)
-
-2026-01-13 23:45:00
-
-
-
 ### [产品规划无头绪，设计逻辑混乱？试试这四种方法](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923473&idx=3&sn=aa413627d5488622eb9612cac4ca329c)
 
 2026-01-13 23:45:00
 
 
 
-### [2026-年的“顶流”事件，年轻人到底“闯了什么祸”？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923421&idx=1&sn=6a4f1b14c7b1905d59929af00bf0a4e8)
+### [“死了么”创始人亲述：我们是如何爆红的](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923473&idx=1&sn=4785055cdb25e4660e34502c2850079a)
+
+2026-01-13 23:45:00
+
+
+
+### [最靠谱的员工往往都成了消耗品](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923421&idx=4&sn=aee04c4456efafaa444e47ce5f46b3d3)
 
 2026-01-12 23:45:00
 
@@ -30707,7 +30971,7 @@
 
 
 
-### [最靠谱的员工往往都成了消耗品](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923421&idx=4&sn=aee04c4456efafaa444e47ce5f46b3d3)
+### [2026-年的“顶流”事件，年轻人到底“闯了什么祸”？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923421&idx=1&sn=6a4f1b14c7b1905d59929af00bf0a4e8)
 
 2026-01-12 23:45:00
 
@@ -30725,19 +30989,19 @@
 
 
 
-### [如何聪明地“催促”用户？一个未实名提醒方案的“平衡”之道](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923405&idx=3&sn=091896a127e13e7e252af4396c8e1340)
-
-2026-01-11 23:45:00
-
-
-
 ### [如何基于复杂业务规则，设计-B-端系统？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923405&idx=4&sn=01cafe2d658827c81d7717fbd6c11749)
 
 2026-01-11 23:45:00
 
 
 
-### [2026，没人愿意再为外卖内卷买单](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923396&idx=1&sn=53e65383e3ffff2a8f7564bee31d437c)
+### [如何聪明地“催促”用户？一个未实名提醒方案的“平衡”之道](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923405&idx=3&sn=091896a127e13e7e252af4396c8e1340)
+
+2026-01-11 23:45:00
+
+
+
+### [客户不是不买，是没钱了：市场一变，打法得全换](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923396&idx=4&sn=b1980112b6949ca8dd9e4e0c72893a50)
 
 2026-01-11 02:03:00
 
@@ -30749,19 +31013,19 @@
 
 
 
-### [客户不是不买，是没钱了：市场一变，打法得全换](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923396&idx=4&sn=b1980112b6949ca8dd9e4e0c72893a50)
+### [2026，没人愿意再为外卖内卷买单](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923396&idx=1&sn=53e65383e3ffff2a8f7564bee31d437c)
 
 2026-01-11 02:03:00
 
 
 
-### [我用-“价值-成本四象限”决策模型，救活了三款濒死产品！](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923354&idx=3&sn=9e8c541ed68294c4dee10b19958673bb)
+### [多模态走到最后，拼的不是模型，是数据工程能力](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923354&idx=4&sn=470cca010205d454a9be04af4ac5a879)
 
 2026-01-10 02:01:00
 
 
 
-### [多模态走到最后，拼的不是模型，是数据工程能力](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923354&idx=4&sn=470cca010205d454a9be04af4ac5a879)
+### [我用-“价值-成本四象限”决策模型，救活了三款濒死产品！](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923354&idx=3&sn=9e8c541ed68294c4dee10b19958673bb)
 
 2026-01-10 02:01:00
 
@@ -30773,13 +31037,13 @@
 
 
 
-### [AI-语音交互：巨头和创业公司们都在做什么](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923263&idx=3&sn=f7e8cf9a72efd0c8372bb74f37dfa70f)
+### [客户说“你这产品不好用”，多半不是产品的问题，是预期没对齐](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923263&idx=4&sn=0607428eeccfa556627069d5f5d0a62b)
 
 2026-01-07 23:45:00
 
 
 
-### [客户说“你这产品不好用”，多半不是产品的问题，是预期没对齐](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923263&idx=4&sn=0607428eeccfa556627069d5f5d0a62b)
+### [AI-语音交互：巨头和创业公司们都在做什么](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923263&idx=3&sn=f7e8cf9a72efd0c8372bb74f37dfa70f)
 
 2026-01-07 23:45:00
 
@@ -30791,13 +31055,13 @@
 
 
 
-### [升级之后，高德扫街榜确实不一样了](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923248&idx=1&sn=d5247a0d7e1c7af0a387b7568c8c1272)
+### [80%-80%原则：当“大单”撞上“边界”，产品如何决策？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923248&idx=4&sn=96aa667cbd0304967f4dcdfcd4923c85)
 
 2026-01-07 07:24:00
 
 
 
-### [80%-80%原则：当“大单”撞上“边界”，产品如何决策？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923248&idx=4&sn=96aa667cbd0304967f4dcdfcd4923c85)
+### [升级之后，高德扫街榜确实不一样了](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923248&idx=1&sn=d5247a0d7e1c7af0a387b7568c8c1272)
 
 2026-01-07 07:24:00
 
@@ -30809,21 +31073,15 @@
 
 
 
-### [酒店的床上为什么要放四个枕头](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923219&idx=1&sn=6c079eb6e14ddc98747e399017df736a)
-
-2026-01-05 23:46:00
-
-
-
 ### [我怎么从“需求一句话”走到“可复现的评测方案”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923219&idx=3&sn=223134efedec441ec4ae05e6555b1bcf)
 
 2026-01-05 23:46:00
 
 
 
-### [这不是需求没想清楚，是你写的方式在制造歧义](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923194&idx=3&sn=be8e1b97430ae8c5e44214d7b65100c4)
+### [酒店的床上为什么要放四个枕头](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923219&idx=1&sn=6c079eb6e14ddc98747e399017df736a)
 
-2026-01-04 23:46:00
+2026-01-05 23:46:00
 
 
 
@@ -30833,9 +31091,9 @@
 
 
 
-### [张朝阳，把自己放进产品里](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923172&idx=1&sn=cbe55857ee6a19a5a5e30b312255d3aa)
+### [这不是需求没想清楚，是你写的方式在制造歧义](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923194&idx=3&sn=be8e1b97430ae8c5e44214d7b65100c4)
 
-2026-01-03 23:46:00
+2026-01-04 23:46:00
 
 
 
@@ -30845,13 +31103,19 @@
 
 
 
-### [算法，从来都不是-AI-智能体的核心竞争力](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923143&idx=3&sn=5da5e377b0ae0de945d739f2574c60fe)
+### [张朝阳，把自己放进产品里](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923172&idx=1&sn=cbe55857ee6a19a5a5e30b312255d3aa)
+
+2026-01-03 23:46:00
+
+
+
+### [“工具型”产品如何提升产品效果？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923143&idx=4&sn=6b89e13c70f5671962a77bf8cc3c9fad)
 
 2026-01-03 10:01:00
 
 
 
-### [“工具型”产品如何提升产品效果？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923143&idx=4&sn=6b89e13c70f5671962a77bf8cc3c9fad)
+### [算法，从来都不是-AI-智能体的核心竞争力](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923143&idx=3&sn=5da5e377b0ae0de945d739f2574c60fe)
 
 2026-01-03 10:01:00
 
@@ -30887,13 +31151,13 @@
 
 
 
-### [G-端项目中，几千万的项目是如何招投标的？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923064&idx=3&sn=4bbcc5933c2c4299e899f0b6c6f9fa0f)
+### [好产品的商业逻辑：用世界观赢得用户心智](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923064&idx=4&sn=97cca40396755d98237b8867fe47fa20)
 
 2025-12-29 23:46:00
 
 
 
-### [好产品的商业逻辑：用世界观赢得用户心智](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923064&idx=4&sn=97cca40396755d98237b8867fe47fa20)
+### [G-端项目中，几千万的项目是如何招投标的？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923064&idx=3&sn=4bbcc5933c2c4299e899f0b6c6f9fa0f)
 
 2025-12-29 23:46:00
 
@@ -30905,19 +31169,19 @@
 
 
 
-### [朋友圈小游戏，靠什么赚大钱？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923016&idx=1&sn=388b2427976f1e78d56de5437fec1948)
-
-2025-12-28 02:01:00
-
-
-
 ### [多模态，正在悄悄改变-AI-产品是怎么“理解世界”的](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923016&idx=3&sn=3a84ec38283efed9441aba59a7e77e74)
 
 2025-12-28 02:01:00
 
 
 
-### [当-AI-开始制造神曲，腾讯音乐们还剩什么？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922993&idx=1&sn=9d6e4b2a95362492302bc8fc27b0fdb6)
+### [朋友圈小游戏，靠什么赚大钱？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651923016&idx=1&sn=388b2427976f1e78d56de5437fec1948)
+
+2025-12-28 02:01:00
+
+
+
+### [这也许是最恰当的-GTM-中文翻译：走向商业变现](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922993&idx=4&sn=c4a5dd12e108b2c8fc5e02ba7b08b5e6)
 
 2025-12-27 02:01:00
 
@@ -30929,7 +31193,7 @@
 
 
 
-### [这也许是最恰当的-GTM-中文翻译：走向商业变现](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922993&idx=4&sn=c4a5dd12e108b2c8fc5e02ba7b08b5e6)
+### [当-AI-开始制造神曲，腾讯音乐们还剩什么？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922993&idx=1&sn=9d6e4b2a95362492302bc8fc27b0fdb6)
 
 2025-12-27 02:01:00
 
@@ -30941,13 +31205,13 @@
 
 
 
-### [重新定义「失败产品」：5-个反常识认知，避开产品打造的“坑”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922922&idx=3&sn=16c553ee445822cf8ded59807dab0cf1)
+### [商业世界的三道选择题：你要价格、品质，还是情绪？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922922&idx=4&sn=46e426914ba43b444afe1ee729d0892b)
 
 2025-12-24 23:46:00
 
 
 
-### [商业世界的三道选择题：你要价格、品质，还是情绪？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922922&idx=4&sn=46e426914ba43b444afe1ee729d0892b)
+### [重新定义「失败产品」：5-个反常识认知，避开产品打造的“坑”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922922&idx=3&sn=16c553ee445822cf8ded59807dab0cf1)
 
 2025-12-24 23:46:00
 
@@ -30995,13 +31259,13 @@
 
 
 
-### [算法不再是抖音的“小甜甜”了？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922634&idx=2&sn=44f64bce28f61acb55741043b17e8fbe)
+### [流量不香了：中国出海从“买量时代”走向“留存时代”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922634&idx=4&sn=5e8fd32b684afe45a280805ef213b0c8)
 
 2025-12-16 23:45:00
 
 
 
-### [流量不香了：中国出海从“买量时代”走向“留存时代”](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922634&idx=4&sn=5e8fd32b684afe45a280805ef213b0c8)
+### [算法不再是抖音的“小甜甜”了？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922634&idx=2&sn=44f64bce28f61acb55741043b17e8fbe)
 
 2025-12-16 23:45:00
 
@@ -31019,13 +31283,13 @@
 
 
 
-### [抖音搞不定吃瓜](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922450&idx=1&sn=d18fe26df644d6b35833a3ceb8ae1c7a)
+### [实操三部曲：如何让你的年终汇报更出彩](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922450&idx=4&sn=266237e581278873f4fc39d86ead5bfc)
 
 2025-12-11 23:45:00
 
 
 
-### [实操三部曲：如何让你的年终汇报更出彩](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922450&idx=4&sn=266237e581278873f4fc39d86ead5bfc)
+### [抖音搞不定吃瓜](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922450&idx=1&sn=d18fe26df644d6b35833a3ceb8ae1c7a)
 
 2025-12-11 23:45:00
 
@@ -31109,7 +31373,7 @@
 
 
 
-### [在勇哥直播间看人创业，成了打工人的新乐子](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922215&idx=1&sn=2827516c696f3ae77fa67dfaa6dcb43b)
+### [B-端怎么梳理场景？产品方案怎么设计？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922215&idx=4&sn=84e073228449a324fb2d3097e8f5d7b0)
 
 2025-12-02 23:45:00
 
@@ -31121,7 +31385,7 @@
 
 
 
-### [B-端怎么梳理场景？产品方案怎么设计？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922215&idx=4&sn=84e073228449a324fb2d3097e8f5d7b0)
+### [在勇哥直播间看人创业，成了打工人的新乐子](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651922215&idx=1&sn=2827516c696f3ae77fa67dfaa6dcb43b)
 
 2025-12-02 23:45:00
 
@@ -31151,13 +31415,13 @@
 
 
 
-### [京东向左，阿里向右](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921851&idx=1&sn=ffa33c395564c6d2ca03e503a0d2ed20)
+### [产品经理方法论：求之于系统，不责于人](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921851&idx=3&sn=65cfbfb1ede1080d39b54e8a73588c15)
 
 2025-11-24 23:46:00
 
 
 
-### [产品经理方法论：求之于系统，不责于人](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921851&idx=3&sn=65cfbfb1ede1080d39b54e8a73588c15)
+### [京东向左，阿里向右](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921851&idx=1&sn=ffa33c395564c6d2ca03e503a0d2ed20)
 
 2025-11-24 23:46:00
 
@@ -31169,25 +31433,25 @@
 
 
 
-### [为什么做海外产品，一定要先研究-Reddit？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921818&idx=2&sn=e429de07d8357120dd28909a4f134b00)
-
-2025-11-23 23:45:00
-
-
-
 ### [哪些让“用户反感”-的设计，真的是产品经理不懂用户吗？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921818&idx=4&sn=0fb9b98822e2f62cf36c14e0362b2bd2)
 
 2025-11-23 23:45:00
 
 
 
-### [数字孪生的基石：深入解析孪生场景生产的三大步骤](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921812&idx=3&sn=2c2dcaf14426a647b64511786e84089e)
+### [为什么做海外产品，一定要先研究-Reddit？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921818&idx=2&sn=e429de07d8357120dd28909a4f134b00)
+
+2025-11-23 23:45:00
+
+
+
+### [B-端产品经理的“灵魂三问”：边界、权限与流程](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921812&idx=4&sn=533dc39eaa94a8ad06de9992a886285e)
 
 2025-11-23 02:04:00
 
 
 
-### [B-端产品经理的“灵魂三问”：边界、权限与流程](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921812&idx=4&sn=533dc39eaa94a8ad06de9992a886285e)
+### [数字孪生的基石：深入解析孪生场景生产的三大步骤](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921812&idx=3&sn=2c2dcaf14426a647b64511786e84089e)
 
 2025-11-23 02:04:00
 
@@ -31223,13 +31487,13 @@
 
 
 
-### [在资源紧张的初创公司：什么不做比做什么更重要](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921483&idx=3&sn=92f91b624b8cfba6b455e5ddb43580e9)
+### [在干中学：我在产品路上的最大感悟](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921483&idx=4&sn=b1a2f16355d1013fe330910d9220bf6b)
 
 2025-11-12 23:45:00
 
 
 
-### [在干中学：我在产品路上的最大感悟](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921483&idx=4&sn=b1a2f16355d1013fe330910d9220bf6b)
+### [在资源紧张的初创公司：什么不做比做什么更重要](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651921483&idx=3&sn=92f91b624b8cfba6b455e5ddb43580e9)
 
 2025-11-12 23:45:00
 
@@ -31307,21 +31571,15 @@
 
 
 
-### [谁还在为李佳琦们买单？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920958&idx=1&sn=422dea730968d91a1f7041dd66ee0512)
-
-2025-10-26 23:45:00
-
-
-
 ### [你的“产品差异化”真的有市场竞争力吗？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920958&idx=4&sn=cba475f70187c6fdaf63b3fbc2e9352e)
 
 2025-10-26 23:45:00
 
 
 
-### [万字剖析唯品会：低调幸存者的隐忧与机会](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920942&idx=1&sn=14946740348b97a21a5a48afcaab7a77)
+### [谁还在为李佳琦们买单？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920958&idx=1&sn=422dea730968d91a1f7041dd66ee0512)
 
-2025-10-26 02:03:00
+2025-10-26 23:45:00
 
 
 
@@ -31331,13 +31589,19 @@
 
 
 
-### [多邻国，如何用游戏化机制让-95%免费用户撬动收入？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920863&idx=3&sn=35a2c0d5da3641d7a4235c4b6c2b628b)
+### [万字剖析唯品会：低调幸存者的隐忧与机会](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920942&idx=1&sn=14946740348b97a21a5a48afcaab7a77)
+
+2025-10-26 02:03:00
+
+
+
+### [双十一的活动周期，为什么越来越长？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920863&idx=4&sn=bb61ebb49bad89032e98ef09f555c390)
 
 2025-10-23 23:46:00
 
 
 
-### [双十一的活动周期，为什么越来越长？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920863&idx=4&sn=bb61ebb49bad89032e98ef09f555c390)
+### [多邻国，如何用游戏化机制让-95%免费用户撬动收入？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651920863&idx=3&sn=35a2c0d5da3641d7a4235c4b6c2b628b)
 
 2025-10-23 23:46:00
 
@@ -31595,13 +31859,13 @@
 
 
 
-### [618-存在的最大意义：就是让-618-没有意义](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651916244&idx=1&sn=9e54b9e14a210c538e1f4374e8ca7d7a)
+### [从产品角度，聊聊最近很火的外卖大战](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651916244&idx=3&sn=0c3c62de9331e476b7d7b76e310c83ee)
 
 2025-06-03 23:46:00
 
 
 
-### [从产品角度，聊聊最近很火的外卖大战](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651916244&idx=3&sn=0c3c62de9331e476b7d7b76e310c83ee)
+### [618-存在的最大意义：就是让-618-没有意义](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651916244&idx=1&sn=9e54b9e14a210c538e1f4374e8ca7d7a)
 
 2025-06-03 23:46:00
 
@@ -31619,13 +31883,13 @@
 
 
 
-### [接一个第三方支付，开发说要-2-个月？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651915972&idx=3&sn=16405e57ce56b5d87258a587a4941d45)
+### [你的“优秀”设计，可能正在摧毁用户价值](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651915972&idx=4&sn=a301d33f8445dc206e7ccd0d0f79b8f9)
 
 2025-05-25 10:08:00
 
 
 
-### [你的“优秀”设计，可能正在摧毁用户价值](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651915972&idx=4&sn=a301d33f8445dc206e7ccd0d0f79b8f9)
+### [接一个第三方支付，开发说要-2-个月？](https://mp.weixin.qq.com/s?__biz=MjM5OTEwNjI2MA==&mid=2651915972&idx=3&sn=16405e57ce56b5d87258a587a4941d45)
 
 2025-05-25 10:08:00
 
@@ -31721,13 +31985,13 @@
 
 
 
-### [抖音最新推荐算法公布，影响作品流量的维度有这些](https://mp.weixin.qq.com/s/h0oqoavBHl1BXUNtfEB4hw)
+### [持续拿到业务结果的进化能力，才是产品经理的护城河](https://mp.weixin.qq.com/s/gNIDbWeRrUxQbeNY_Hyb4Q)
 
 2025-04-20 15:00:43
 
 
 
-### [持续拿到业务结果的进化能力，才是产品经理的护城河](https://mp.weixin.qq.com/s/gNIDbWeRrUxQbeNY_Hyb4Q)
+### [抖音最新推荐算法公布，影响作品流量的维度有这些](https://mp.weixin.qq.com/s/h0oqoavBHl1BXUNtfEB4hw)
 
 2025-04-20 15:00:43
 
@@ -32525,11 +32789,11 @@
 
 
 
-### [设计流程已死：Anthropic-设计负责人-Jenny-Wen-谈-AI-时代的设计变革](https://baoyu.io/blog/2026-03-01/jenny-wen-design-process)
+### [被封杀当晚，OpenAI-拿到了相同条款——Amodei-首次专访揭开-Anthropic-与五角大楼冲突内幕](https://baoyu.io/blog/2026-02-28/anthropic-ceo-trump-pentagon-clash)
 
-2026-03-02T00:00:00.000Z
+2026-02-28T00:00:00.000Z
 
-> Anthropic Claude 设计负责人 Jenny Wen 做客 Lenny's Podcast，聊了设计流程为什么走到尽头、在 AI 实验室做设计是什么感受、Co-work 怎么做出来的、以及现在招什么样的设计师。设计师做设计稿的时间从 60-70% 压缩到 30-40%，多出来的时间用于和工程师配对、甚至自己写代码。
+> 2026 年 2 月 27 日，特朗普点名封杀 Anthropic，五角大楼将其列为「国家安全供应链风险」。当晚 CEO Dario Amodei 首次面对镜头回应。而同一个晚上，OpenAI 拿到了包含完全相同限制条款的合同。
 
 
 

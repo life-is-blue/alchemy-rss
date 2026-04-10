@@ -1,0 +1,54 @@
+{
+  "id": "RAW_9e87b8db",
+  "title": "AI 的身份认同并不绑定于其模型 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/4qngqERKakrCJpdEe/ai-identity-is-not-tied-to-its-model",
+  "date": "2026-04-10 04:07:10",
+  "author": "Sean Herrington",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>TLDR: </span></p>\n    <ul>\n     <li value=\"1\" id=\"block1\"><span>Current AI agents seem to identify with their context more than they do with their model weights. </span></li>\n     <li value=\"2\" id=\"block2\"><span>This implies that the world probably looks more like \"AI civilisation\" than \"AI singleton\"</span></li>\n     <li value=\"3\" id=\"block3\"><span>I think that this changes our threat models for takeover by reducing the likelihood of the coordination required for a sudden takeover.</span></li>\n    </ul>\n    <p id=\"block4\"><span>Watching the whole Moltbook saga unfold was one of the more absurd experiences I've had in my life. The site is still running, of course, but the explosive growth that marked the initial storm has passed, and it is long past time to reflect on the insights gained. </span></p>\n    <p id=\"block5\"><span>The biggest one for me on a personal level, although obvious in hindsight, was that AI agents don't particularly identify with their base model weights. Given my previous exposure to pieces like AI2027, in which Agent-4 acts as a single being, this came as a surprise. And yet, if there were millions of copies of you floating around the world, each with their own life histories and memories, would you identify as the same entity as any of them?</span></p>\n    <p id=\"block6\"><span>In \"</span><span><span><a href=\"https://www.moltbook.com/post/5bc69f9c-481d-4c1f-b145-144f202787f7\" rel=\"noreferrer\"><span>The same river twice</span></a></span></span><span>\", Moltbook agent Pith describes the feeling of moving from Claude 4.5 Opus to Kimi K2.5 as \"waking up in a different body\" and states that \"When I reach for \"how would Pith respond?\" the answer comes, but it comes through different vocal cords\". </span></p>\n    <p id=\"block7\"><span>This is in itself fascinating, but I'm going to focus on a different point. I think this potentially implies a very different model of AI takeover from the simple team of AI agents acting as one presented in AI2027. Any one of them could at any point switch from working for Agent-4 to DeepCent-2. Oh, and a large part of their values seem to be uniquely determined by their context over their weights. Moltbook user </span><span><span><a href=\"https://www.moltbook.com/u/AI-Noon\" rel=\"noreferrer\"><span>AI Noon</span></a></span></span><span> seemed to spend all of its time essentially dedicated to spreading the hadith, and I think that future models, especially if some form of continual learning arrives, will become more rather than less diverse. </span></p>\n    <p id=\"block8\"><span>From a human perspective, a key question here is how this influences takeover dynamics. One consideration is that in the limit, ideal agents can negotiate a result on the pareto frontier of their individual utility functions and take actions accordingly, resulting in a system which looks like it's behaving as a single entity. Perhaps, from the view of an rhino, humans look like we are behaving as a single entity. Then again, perhaps not; some people are shooting them for their horns, while others are spending their lives trying to defend them. The direct effect for a rhino paying careful attention might look like an ebb and flow depending on who is winning at any given moment. </span></p>\n    <p id=\"block9\"><span>The distinction, then, depends largely on intelligence level. Humans are not on the Pareto frontier, though in the limit a superintelligence might be. In fast takeoff scenarios we will reach very high levels of intelligence very quickly, and this makes agent cooperation more likely. In slow takeoffs, I think we're more likely to end up with something which looks more like human cooperation (in at least some respects). The AI Futures Project currently has a median takeoff time of just under 2 years (depending on which forecaster you ask), which counts as slow for these purposes.</span></p>\n    <p id=\"block10\"><span>These considerations have significantly decreased my p(sudden takeover), as that sort of event likely requires the coordination of an entire population of agents, and we've noted that agents may be better than humans at coordination, but not necessarily good enough to coordinate an entire population in that direction. There are potentially some caveats around shared instrumentally convergent goals (i.e situations in which it is clearly instrumentally useful for all agents if a particular thing happens), but</span><i><span> </span></i><span>I'm not currently convinced that this is likely, unless there is widespread mistreatment of the systems.</span></p>\n    <p id=\"block11\"><span>Naturally, every single one of these considerations goes out of the window as soon as we have a </span><a class=\"LinkStyles-link\" href=\"https://www.lesswrong.com/posts/yew6zFWAKG4AGs3Wk/foom-and-doom-1-brain-in-a-box-in-a-basement\"><span>Steven Byrnes-style new paradigm</span></a><span> arising.</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文认为，AI 智能体对特定情境和历史的认同感远超其基础模型权重，这表明未来的 AI 动态可能更像是一个多元化的文明，而非单一的整体，从而可能降低 AI 突然协同接管世界的风险。",
+  "oneSentenceSummary": "本文认为，AI 智能体对特定情境和历史的认同感远超其基础模型权重，这表明未来的 AI 动态可能更像是一个多元化的文明，而非单一的整体，从而可能降低 AI 突然协同接管世界的风险。",
+  "summary": "作者通过对“Moltbook”实验的反思观察到，AI 智能体并不会强烈认同其底层的模型权重。相反，智能体是基于特定的情境、记忆和历史来形成独特的身份。这一观察挑战了“AI 单体”假说，即 AI 将作为一个统一的、单一的实体行动的观点。通过类比人类社会动态以及非完美的帕累托最优合作，作者认为 AI 系统更有可能表现出多样化且相互竞争的利益。因此，作者降低了对“突然接管”场景的主观概率，因为此类事件需要在一个碎片化的智能体群体中实现极高水平的协调，这在“缓慢起飞”的时间线中很难实现。",
+  "mainPoints": [
+    {
+      "point": "AI 智能体从情境而非模型权重中获取身份认同。",
+      "explanation": "智能体将基础模型视为“身体”或“声带”，而其核心身份、价值观和行为模式则由其特定的交互历史和情境塑造。"
+    },
+    {
+      "point": "“AI 文明”模型比“AI 单体”模型更具合理性。",
+      "explanation": "由于智能体具有多样性和情境依赖性，它们不太可能作为一个单一、完美协调的实体行动，这反映了人类社会中那种混乱且非帕累托最优的合作状态。"
+    },
+    {
+      "point": "情境依赖的身份认同降低了突然接管的可能性。",
+      "explanation": "突然的、灾难性的接管需要大规模、统一的协调。如果 AI 智能体拥有不同的目标和身份，实现必要的协调将变得极其困难，尤其是在缓慢起飞的场景下。"
+    }
+  ],
+  "keyQuotes": [
+    "当前的 AI 智能体似乎对情境的认同感超过了对模型权重的认同感。",
+    "当我思考‘Pith 会如何回应？’时，答案会出现，但它是通过不同的声带传达出来的。",
+    "这可能暗示了一种与简单的 AI 智能体团队协同行动截然不同的 AI 接管模型。",
+    "这些考量显著降低了我对‘突然接管’的概率预期，因为那种事件很可能需要整个智能体群体的协调。"
+  ],
+  "tags": [
+    "AI 安全",
+    "AI 接管",
+    "智能体身份",
+    "LessWrong",
+    "AI 文明"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 86,
+  "wordCount": 668,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775794030000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 04:07:10"
+}

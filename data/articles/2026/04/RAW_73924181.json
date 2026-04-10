@@ -1,0 +1,52 @@
+{
+  "id": "RAW_73924181",
+  "title": "陈旧数据如何演变为危机",
+  "url": "https://hackernoon.com/how-aging-data-becomes-a-crisis?source=rss",
+  "date": "2026-04-10 00:00:00",
+  "author": "Anusha Merugu",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"relative overflow-hidden w-full rounded-t-lg\">\n   <a href=\"https://hackernoon.com/3-tier-software-architecture-tutorial-for-non-developers-re1233f0\"><span style=\"border:0;padding:0;margin:0;overflow:hidden;background:none;display:block;width:initial;box-sizing:border-box;opacity:1;height:initial;\"><span style=\"box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:50%\"></span><img alt=\"3-Tier Software Architecture Tutorial For Non-Developers\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"w-full h-full object-cover transition-transform duration-200 hover:scale-105 \" style=\"border:none;padding:0;max-height:100%;margin:auto;background-size:cover;bottom:0;display:block;min-height:100%;right:0;background-position:0% 0%;box-sizing:border-box;filter:blur(20px);top:0;max-width:100%;left:0;width:0;background-image:url(&quot;/placeholder.jpg&quot;);height:0;min-width:100%;\"></span></a>\n   <div class=\"absolute bottom-2 right-2 z-[2] flex items-center justify-end rounded max-w-[60%] lg:max-w-[65%]\">\n    <a href=\"https://hackernoon.com/tagged/for-non-tech-people\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-sm font-bold px-2 rounded break-words text-darkAccentText bg-darkAccent border border-darkBorder\">#<!-- -->FOR-NON-TECH-PEOPLE</a>\n   </div>\n  </div>\n  <div class=\"flex flex-col text-xl p-2 justify-between flex-1 bg-light rounded-b-lg border-t border-lightBorder\">\n   <h2 class=\"font-bold text-lg text-lightText text-base xs:text-lg sm:text-xs md:text-sm lg:text-base line-clamp-3 \"><a class=\"hover:underline\" href=\"https://hackernoon.com/3-tier-software-architecture-tutorial-for-non-developers-re1233f0\">3-Tier Software Architecture Tutorial For Non-Developers</a></h2>\n   <div class=\"flex items-center space-x-2 mt-1\">\n    <div class=\"sm:hidden md:block\">\n     <div class=\"sc-b25c0d3d-0 bXsBAm border-2 border-lightSubtle \" width=\"40\" height=\"40\">\n      <span style=\"border:0;padding:0;margin:0;overflow:hidden;max-width:100%;background:none;display:inline-block;width:initial;box-sizing:border-box;opacity:1;height:initial;\"><span style=\"box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%\"></span><img alt=\"Avi Jivan - Digital Transformation\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"intrinsic\" class=\"rounded-full\" style=\"border:none;padding:0;max-height:100%;margin:auto;bottom:0;display:block;min-height:100%;right:0;box-sizing:border-box;top:0;max-width:100%;left:0;width:0;height:0;min-width:100%;\"></span>\n     </div>\n    </div>\n    <div class=\"text-xs \">\n     <p class=\" text-lightText font-bold flex flex-wrap\"><a href=\"https://hackernoon.com/u/arjivan\" target=\"_blank\" rel=\"noopener noreferrer\" class=\" hover:underline\">Avi Jivan - Digital Transformation</a></p>\n     <p class=\" text-lightTextLight\">Apr 03, 2021<!-- --></p>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文为非技术背景的读者提供了三层软件架构的基础概述，解释了表现层、应用层和数据层各自的角色。",
+  "oneSentenceSummary": "本文为非技术背景的读者提供了三层软件架构的基础概述，解释了表现层、应用层和数据层各自的角色。",
+  "summary": "本文是一份关于三层软件架构模型的入门指南，这是软件工程中的一种标准设计模式。文章将架构拆解为三个独立的层级：表现层（用户界面）、应用层（业务逻辑与处理）以及数据层（数据库与存储）。通过解释这些层级如何交互，作者帮助非技术读者理解了现代软件应用如何管理数据流、安全性和可扩展性。",
+  "mainPoints": [
+    {
+      "point": "表现层充当用户界面。",
+      "explanation": "该层是终端用户直接交互的部分，例如网页浏览器或移动应用，负责展示信息并收集用户输入。"
+    },
+    {
+      "point": "应用层充当系统的大脑。",
+      "explanation": "这一中间层负责处理数据、执行业务逻辑，并促进用户界面与数据库之间的通信，从而确保安全性和数据完整性。"
+    },
+    {
+      "point": "数据层负责持久化存储。",
+      "explanation": "该层负责存储、检索和管理应用数据，通常使用数据库管理系统来确保信息的组织性和可访问性。"
+    }
+  ],
+  "keyQuotes": [
+    "三层架构是一种标准的软件设计模式，它将应用程序分为三个逻辑和物理计算层级。",
+    "通过分离这些层级，开发人员可以在不影响其他部分的情况下更新或扩展应用程序的某一部分。"
+  ],
+  "tags": [
+    "软件架构",
+    "三层架构",
+    "系统设计",
+    "非技术",
+    "数字化转型"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 80,
+  "wordCount": 15,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775779200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 00:00:00"
+}

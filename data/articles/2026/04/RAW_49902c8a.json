@@ -1,0 +1,53 @@
+{
+  "id": "RAW_49902c8a",
+  "title": "商业产品与内部产品",
+  "url": "https://www.svpg.com/commercial-vs-internal-products/",
+  "date": "2026-04-10 01:40:13",
+  "author": "Marty Cagan",
+  "siteName": "Silicon Valley Product Group",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"container mt-5\">\n   <div class=\"row\">\n    <div class=\"col-md-8 offset-md-1\">\n     <p><em>Internal Products Are Hard; Commercial Products Are Harder</em></p>\n     <p>We have spent a lot of time trying to convince product people and especially product leaders of the importance of internal products.</p>\n     <p>We’re talking about services or solutions that are used by our own employees to take care of our customers (e.g. customer-enabling tools and services), or to help our employees do their jobs (e.g. productivity tools), or back-end or lower-level services that power much of the business (e.g. internal platform services).<sup data-fn=\"045eae08-b2ba-41de-9722-8314e9ea55d6\" class=\"fn\"><a href=\"#045eae08-b2ba-41de-9722-8314e9ea55d6\" id=\"045eae08-b2ba-41de-9722-8314e9ea55d6-link\">1</a></sup></p>\n     <p>While it’s true that the direct user of these types of services is not normally a paying customer, our argument has always been that these all contribute to the products and services that we offer our paying customers, and there is more to be gained by treating these as true products, than to treat them as some form of second-class efforts.</p>\n     <p>We emphasize that there are all the same risks: value, usability, feasibility and viability, but we do acknowledge that the bar is typically lower than with commercial products.</p>\n     <p>For example, value is easier as the user does not have the choice of using something from a competitor; the usability bar is lower because we can often get away with some training or documentation for our users; feasibility is typically easier because scale and performance demands are usually minor compared to external products; and viability is usually simpler because the tool or service generally operates in a narrow part of the business, largely insulated from the external world.</p>\n     <p>This is not to suggest that these tools or services are easy; it’s just to acknowledge that the bar is usually lower than a commercial product.</p>\n     <p>Most people seem to understand this.&nbsp; However, what’s far less understood is just how much more difficult it usually is to discover a winning <em>commercial product.</em></p>\n     <p>So in this article we want to call out the essential differences between commercial products and internal services, and talk about why product discovery is so critical for commercial products.</p>\n     <p>Most importantly, with an internal product, the user really can’t choose a different product.&nbsp;<sup data-fn=\"fb6b3c8a-5927-4e56-a388-00c749adabff\" class=\"fn\"><a href=\"#fb6b3c8a-5927-4e56-a388-00c749adabff\" id=\"fb6b3c8a-5927-4e56-a388-00c749adabff-link\">2</a></sup> The company is literally paying them to use these products.</p>\n     <p>Yet with a commercial product, this dynamic is reversed.&nbsp; We have to compete and win against other competitors (and with AI, these competitors are emerging faster than ever).&nbsp; The product needs to be so good that our customers will pay us for the value.&nbsp;&nbsp;</p>\n     <p>With an internal product, what matters is that your product is able to successfully solve the problem (i.e. complete the job-to-be-done).&nbsp;&nbsp;</p>\n     <p>Yet with a commercial product, it’s normally not enough to solve the problem; the product must be <em>so much better than the alternatives</em> (at least for a segment of customers), that they will be <em>willing to switch</em> from whatever solution they use today to your product.</p>\n     <p>With an internal product, the product manager does need to understand the domain and the relevant business constraints, but the idea of that person being “the ceo of the product” makes little sense to people, and just sounds tone-deaf and arrogant.&nbsp;&nbsp;</p>\n     <p>Yet with a commercial product, battling every day to win in an increasingly competitive marketplace, the product manager must be personally and deeply immersed with the marketing, sales, funding, monetization, legal, compliance and more, and the role of the product manager starts to be seen in a very different light.</p>\n     <p>While we often talk about the importance of various product discovery techniques and principles, we don’t talk enough about the nature and intensity of <em>the battle to win</em>.&nbsp;&nbsp;</p>\n     <p>So many people with the title “product manager” (and virtually everyone with the title “product owner”) have never been to battle in the open marketplace.</p>\n     <p>It is hard enough to take ownership of an outcome for an internal product where you control most of the variables.&nbsp; It is next level hard to take ownership of an outcome for a commercial product, which has to win against a rapidly growing list of competitors before it has the chance to deliver real business results.</p>\n     <p>What is increasingly clear is that for a commercial product, especially in the AI era, product discovery is usually the difference between success and failure.</p>\n     <p>Again, none of this is to say that building internal services is easy or unimportant; it’s simply to highlight that building commercial products is even more difficult, and it’s not an exaggeration to say that the success of the business depends on the success of these commercial products.</p>\n     <p>While I still believe that there is much to be gained by treating internal tools and services as products, I think we need to do a much better job of discussing the unique and substantial challenges of building commercial products that need to survive and thrive in the open marketplace.</p>\n     <p>If you are a product manager of a commercial product, it’s critical that you realize that it’s not enough to solve the problem; in order to generate the necessary outcome you’ll need to win in the marketplace.&nbsp; And to do that, you will need to use all of your product discovery skills.</p>\n     <ol class=\"wp-block-footnotes\">\n      <li id=\"045eae08-b2ba-41de-9722-8314e9ea55d6\">&nbsp;What this typically does <em>not</em> include is <a href=\"https://www.svpg.com/the-product-model-in-traditional-it/\">Traditional IT</a>. <a href=\"#045eae08-b2ba-41de-9722-8314e9ea55d6-link\" aria-label=\"Jump to footnote reference 1\">↩︎</a></li>\n      <li id=\"fb6b3c8a-5927-4e56-a388-00c749adabff\">Increasingly, internal users are free to vibe-code their own internal tools, so this is a form of competition.&nbsp; But in-house solutions “competing” against various forms of low-code or no-code solutions has been common for many years.&nbsp; Moreover, ideally this frees up more people to focus on the company’s commercial products.\n       <br>\n       <a href=\"#fb6b3c8a-5927-4e56-a388-00c749adabff-link\" aria-label=\"Jump to footnote reference 2\">↩︎</a></li>\n     </ol>\n     <p></p>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文区分了内部工具与商业产品，指出尽管两者都需要产品思维，但商业产品因面临市场竞争而面临更高的风险，因此需要更严谨的产品探索。",
+  "oneSentenceSummary": "本文区分了内部工具与商业产品，指出尽管两者都需要产品思维，但商业产品因面临市场竞争而面临更高的风险，因此需要更严谨的产品探索。",
+  "summary": "硅谷产品集团（Silicon Valley Product Group）的这篇文章阐明了内部服务与商业产品之间的根本区别。虽然作者提倡将内部工具视为产品来提升效率，但他们强调商业产品的门槛要高得多。内部产品受益于固定的用户群，在易用性和可行性方面的门槛较低。相比之下，商业产品必须在开放的市场中竞争，成功不仅需要解决问题，还必须显著优于替代方案，才能促使用户进行切换。作者强调，商业产品经理的角色要激烈得多，需要深入了解市场动态、商业化和竞争策略，尤其是在 AI 时代，产品探索是决定业务成功的首要因素。",
+  "mainPoints": [
+    {
+      "point": "内部产品与商业产品有着不同的成功门槛。",
+      "explanation": "内部产品专注于为固定用户群解决特定的任务，而商业产品必须在竞争中脱颖而出以说服客户切换，这使得后者在本质上更具挑战性。"
+    },
+    {
+      "point": "市场竞争决定了商业产品管理的强度。",
+      "explanation": "商业产品经理必须应对来自销售、融资、法律和快速竞争变化等外部压力，这要求他们具备比管理内部工具的人员更广泛的技能组合。"
+    },
+    {
+      "point": "产品探索是商业成功的关键差异化因素。",
+      "explanation": "在竞争日益激烈的环境中，特别是在 AI 领域，严谨的产品探索不仅是最佳实践，更是决定业务存亡的关键因素。"
+    }
+  ],
+  "keyQuotes": [
+    "对于一个你控制了大部分变量的内部产品，承担结果的责任已经够难了。而对于商业产品，承担结果的责任则是更高层级的挑战。",
+    "对于商业产品，仅仅解决问题通常是不够的；产品必须比替代方案好得多才行。",
+    "对于商业产品，尤其是在 AI 时代，产品探索通常是成功与失败的分水岭。"
+  ],
+  "tags": [
+    "产品管理",
+    "产品探索",
+    "商业产品",
+    "内部工具",
+    "市场竞争"
+  ],
+  "topicTag": "other",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 903,
+  "domain": "svpg.com",
+  "category": "Product_Development",
+  "aiSubCategory": "PD_PM",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_a226faf1",
+  "sourceName": "Silicon Valley Product Group",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775785213000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 01:40:13"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_ca780552",
+  "title": "DoorDash 如何利用 Elasticsearch 实现大规模商品可用性优化",
+  "url": "https://hackernoon.com/how-doordash-optimized-item-availability-at-scale-using-elasticsearch?source=rss",
+  "date": "2026-04-10 00:00:00",
+  "author": "Ujjwal Gulecha",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"relative overflow-hidden w-full rounded-t-lg\">\n   <a href=\"https://hackernoon.com/why-obvious-performance-optimizations-often-backfire-lessons-from-systems-serving-50m-requests\"><span style=\"border:0;padding:0;margin:0;overflow:hidden;background:none;display:block;width:initial;box-sizing:border-box;opacity:1;height:initial;\"><span style=\"box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:50%\"></span><img alt=\"Why “Obvious” Performance Optimizations Often Backfire: Lessons From Systems Serving 50M+ Requests\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"responsive\" class=\"w-full h-full object-cover transition-transform duration-200 hover:scale-105 \" style=\"border:none;padding:0;max-height:100%;margin:auto;background-size:cover;bottom:0;display:block;min-height:100%;right:0;background-position:0% 0%;box-sizing:border-box;filter:blur(20px);top:0;max-width:100%;left:0;width:0;background-image:url(&quot;/placeholder.jpg&quot;);height:0;min-width:100%;\"></span></a>\n   <div class=\"absolute bottom-2 right-2 z-[2] flex items-center justify-end rounded max-w-[60%] lg:max-w-[65%]\">\n    <a href=\"https://hackernoon.com/tagged/distributed-systems\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-sm font-bold px-2 rounded break-words text-darkAccentText bg-darkAccent border border-darkBorder\">#<!-- -->DISTRIBUTED-SYSTEMS</a>\n   </div>\n  </div>\n  <div class=\"flex flex-col text-xl p-2 justify-between flex-1 bg-light rounded-b-lg border-t border-lightBorder\">\n   <h2 class=\"font-bold text-lg text-lightText text-base xs:text-lg sm:text-xs md:text-sm lg:text-base line-clamp-3 \"><a class=\"hover:underline\" href=\"https://hackernoon.com/why-obvious-performance-optimizations-often-backfire-lessons-from-systems-serving-50m-requests\">Why “Obvious” Performance Optimizations Often Backfire: Lessons From Systems Serving 50M+ Requests</a></h2>\n   <div class=\"flex items-center space-x-2 mt-1\">\n    <div class=\"sm:hidden md:block\">\n     <div class=\"sc-b25c0d3d-0 bXsBAm border-2 border-lightSubtle \" width=\"40\" height=\"40\">\n      <span style=\"border:0;padding:0;margin:0;overflow:hidden;max-width:100%;background:none;display:inline-block;width:initial;box-sizing:border-box;opacity:1;height:initial;\"><span style=\"box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%\"></span><img alt=\"Ujjwal Gulecha\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" decoding=\"async\" data-nimg=\"intrinsic\" class=\"rounded-full\" style=\"border:none;padding:0;max-height:100%;margin:auto;bottom:0;display:block;min-height:100%;right:0;box-sizing:border-box;top:0;max-width:100%;left:0;width:0;height:0;min-width:100%;\"></span>\n     </div>\n    </div>\n    <div class=\"text-xs \">\n     <p class=\" text-lightText font-bold flex flex-wrap\"><a href=\"https://hackernoon.com/u/ujjwalgulecha\" target=\"_blank\" rel=\"noopener noreferrer\" class=\" hover:underline\">Ujjwal Gulecha</a></p>\n     <p class=\" text-lightTextLight\">Jan 26, 2026<!-- --></p>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文探讨了高并发分布式系统中性能优化的反直觉本质，并汲取了处理超过 5000 万次请求的经验教训。",
+  "oneSentenceSummary": "本文探讨了高并发分布式系统中性能优化的反直觉本质，并汲取了处理超过 5000 万次请求的经验教训。",
+  "summary": "作者分析了为什么在大规模分布式系统中，看似“显而易见”的性能优化往往会导致负面结果。通过分享管理处理超过 5000 万次请求系统的经验，本文强调了性能调优的复杂性、过早优化的风险，以及在实施变更前进行深度系统可观测性的重要性。对于那些在没有全面了解系统行为的情况下试图改善延迟或吞吐量的工程师来说，这是一个警示故事。",
+  "mainPoints": [
+    {
+      "point": "显而易见的优化在复杂的分布式环境中往往会适得其反。",
+      "explanation": "在孤立环境下看似明显的性能提升，一旦部署到庞大且相互关联的架构中，往往会引入隐藏的瓶颈或副作用。"
+    },
+    {
+      "point": "深度可观测性是有效优化的先决条件。",
+      "explanation": "工程师必须优先考虑全面的监控和追踪，以便在应用性能补丁之前了解系统在负载下的实际行为。"
+    },
+    {
+      "point": "避免在高并发系统中陷入过早优化的陷阱。",
+      "explanation": "如果不解决架构约束或数据流模式，仅专注于微优化往往会导致精力浪费并增加系统的脆弱性。"
+    }
+  ],
+  "keyQuotes": [
+    "在孤立环境下看似明显的性能提升，一旦部署到庞大的架构中，往往会引入隐藏的瓶颈。",
+    "工程师必须优先考虑全面的监控，以便在应用性能补丁之前了解系统在负载下的实际行为。",
+    "如果不解决架构约束，仅专注于微优化往往会导致系统脆弱性增加。"
+  ],
+  "tags": [
+    "分布式系统",
+    "性能优化",
+    "软件工程",
+    "系统设计",
+    "可扩展性"
+  ],
+  "topicTag": "other",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 18,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775779200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 00:00:00"
+}

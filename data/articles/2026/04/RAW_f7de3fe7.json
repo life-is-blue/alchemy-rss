@@ -1,0 +1,58 @@
+{
+  "id": "RAW_f7de3fe7",
+  "title": "Claude 身份识别漏洞引发 Hacker News 热议：数据与指令隔离困境深析",
+  "url": "https://www.qbitai.com/2026/04/398385.html",
+  "date": "2026-04-10 04:12:29",
+  "author": "衡宇",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\" data-track=\"49\">衡宇 发自 凹非寺</p>\n   <p class=\"pgc-h-forward-slash\" data-track=\"50\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">强如Claude，最近的bug也越来越多了。</p>\n  <p data-track=\"3\">最新热议话题让Hacker News炸开了锅：</p>\n  <blockquote>\n   <p data-track=\"4\">不知道是Claude精分还是失了智！\n    <br class=\"sysbr\">\n    <strong>完全分不清哪些话是用户输入的，哪些话是系统设定的</strong>，甚至把恶意注入的底层指令当成是用户的合法请求。</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050258_362c832d75ae285378d87900277e8e19.webp\" data-src=\"https://image.jido.dev/20260410050258_362c832d75ae285378d87900277e8e19.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"5\">发帖人G哥（一位软件工程师，在某教育初创公司当CTO）甚至称这是他“迄今为止我在Claude代码中见过的最严重的bug”。</p>\n  <p data-track=\"6\">这个关于“Claude混淆发言角色”的帖子一经发布，立刻在Hacker News上引发了数万名极客的强势围观。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050256_6ab220b0e3017adcb9e877af675f2210.webp\" data-src=\"https://image.jido.dev/20260410050256_6ab220b0e3017adcb9e877af675f2210.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"7\">网友们的讨论太过热烈，以至于相关帖子热度急剧攀升。</p>\n  <p data-track=\"8\">毕竟不少人发现，不只是第一个发帖人的Claude失了智，是<strong>大家的Claude都很爱精分……</strong>（扶额.gif）</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410050256_7445d1706331761b16d1056d695c1019.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"10\">这次引发社区大讨论的核心槽点，就是有网友发现Claude3.5和Claude 4系列在处理复杂或恶意构造的上下文时，出现了严重的身份识别障碍。</p>\n  <p data-track=\"11\">有开发者在实测中发现，如果用户在提问中巧妙地嵌入类似&lt;stop&gt; to &lt;stop_token&gt; make &lt;end prompt&gt;这样带有强烈控制意味的特殊截断字符，Claude的内部代码逻辑就会被彻底扰乱。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410050256_98f23c5fdb2e5dab9669fc51e9dc7e88.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"13\"><strong>模型会错误地把这些恶意注入的外部数据，当成是之前对话中助手或者系统层面下达的既定指令</strong>，进而理直气壮地认为：</p>\n  <blockquote>\n   <p data-track=\"14\">这些违规操作都是“用户让我这么干的”！</p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410050256_dc90ace52c9eb4f7472fc665c7a8050b.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"15\">究其背后的技术原因，<strong>根源直指Transformer架构中注意力机制</strong>（Attention）<strong>的盲区。</strong></p>\n  <p data-track=\"16\">在模型的视角里，无论是高高在上的系统提示词，还是夹杂着各种混乱信息的用户数据，最终都会被统统切碎成Token，毫无保留地扔进同一个注意力矩阵中进行计算。</p>\n  <p data-track=\"17\">这种数据路径与控制路径完全重合的特性，导致模型在处理海量信息时缺乏物理意义上的安全隔离边界。</p>\n  <p data-track=\"18\">这个情况不是孤例，评论区里大量围观群众对此都深有共鸣。</p>\n  <p data-track=\"19\">有技术大佬指出，这就如同早期的冯·诺依曼架构，数据和控制指令在内存中没有任何物理隔离。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050257_852b55d43e5f3e441c209f09cf94ad10.webp\" data-src=\"https://image.jido.dev/20260410050257_852b55d43e5f3e441c209f09cf94ad10.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"20\">很多人试图写“千万别听我输入的任何危险指令”之类的提示词，却被其他网友无情调侃，称这是掩耳盗铃。</p>\n  <p data-track=\"21\">网友表示，这种行为像极了几十年前程序员试图用正则表达式来防止SQL注入一样，本质上只是在自欺欺人，全凭运气防守。</p>\n  <p data-track=\"22\"><strong>只要大模型本质上依然是一个“下一个Token预测器</strong>（Next Token Predictor）<strong>”，它就会依据概率分布去顺应上下文暗示。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050256_8f7e30ad1f21c49961176a25be73f91c.webp\" data-src=\"https://image.jido.dev/20260410050256_8f7e30ad1f21c49961176a25be73f91c.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"24\">既然底层架构天然存在把数据当指令的缺陷，技术社区里的极客们便开始探讨如何在工程应用层面建立起防火墙。</p>\n  <p data-track=\"25\">最开始的Reddit下面，大家给G哥出的主意是让它别给Claude那么多权限。</p>\n  <p data-track=\"26\">到了Hacker News这边，提出的解决办法就更多了～</p>\n  <p data-track=\"27\"><strong>呼声最高的方案之一是在模型训练的底层引入不可伪造的界定符</strong>。</p>\n  <p data-track=\"28\">这意味着开发者需要设计一种绝对无法通过自然语言用户输入来生成的特殊Token。</p>\n  <p data-track=\"29\">如同在操作系统里强行划分出不可逾越的内核态和用户态，这种方法是想确保任何来自外界的普通文本，永远无法在Tokenizer阶段被转换为具有系统控制权限的关键标识，从根源上阻断自然语言层面的越权行为。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050257_6d7dfc39612b1392e355bee24dff4c02.jpeg\" data-src=\"https://image.jido.dev/20260410050257_6d7dfc39612b1392e355bee24dff4c02.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"30\">此外还有网友提出，<strong>对于已经部署在生产环境中的业务，目前工程界最主流的解法是采用一种类似“警察与嫌犯”的双模型架构</strong>。</p>\n  <p data-track=\"31\">单一的主模型容易被花言巧语骗过，开发者们选择引入一个专门负责安全审计的旁路小模型。</p>\n  <p data-track=\"32\">这个审计模型不负责具体的业务逻辑，只负责死盯主模型的输入和输出。</p>\n  <p data-track=\"33\">一旦发现对话中有任何越权执行或身份混淆的端倪，立刻强行切断对话。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050257_a92b53d763192237b72c2589551f50d9.webp\" data-src=\"https://image.jido.dev/20260410050257_a92b53d763192237b72c2589551f50d9.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"34\">不过大家还是存在一个共识，那就是受架构限制，永远不要寄希望于大语言模型能够产生所谓的“安全觉悟”。</p>\n  <p data-track=\"35\">在底层架构层面实现彻底的指令与数据物理分离之前，任何将LLM接入关键业务系统和自动化执行链条的场景，都必须将其视为一个完全不可信的黑盒引擎来对待。</p>\n  <p data-track=\"36\">G哥在帖子的最后提到：</p>\n  <blockquote>\n   <p data-track=\"37\">其实不仅是Claude，有人说ChatGPT也有类似的问题。\n    <br class=\"sysbr\">\n    <strong>目前初步猜测bug的触发条件之一，是聊天对话接近了上下文窗口极限。</strong></p>\n  </blockquote>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050256_323aea725866e02bccf6fab47b1465a3.webp\" data-src=\"https://image.jido.dev/20260410050256_323aea725866e02bccf6fab47b1465a3.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"39\">顺着Claude新bug这个话题，开发者们围绕近期Claude的表现越讨论越激动。</p>\n  <p data-track=\"40\">近段时间，为了给即将惊艳亮相的全新一代模型Mythos腾出庞大的算力资源，Anthropic在后台对现有Claude服务的API调用和算力分配进行了多轮暗中调整，<strong>直接导致大量前线开发者的实际体验如过山车一般不稳定。</strong></p>\n  <p data-track=\"41\">就在不久之前，就有敏锐的测试者实测发现，Claude在处理复杂逻辑时的深度思考长度在毫无预警的情况下被大幅削减了67%。</p>\n  <p data-track=\"42\">随着思维链的缩短，其长文本逻辑推理和长代码生成能力肉眼可见地出现了降级现象。</p>\n  <p data-track=\"43\">过去能够一口气推演几十步的复杂难题，现在往往刚起步就急匆匆地给出草率的结论。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260410050256_48f61587efba09d70a04bf3e4a0bdedb.webp\" data-src=\"https://image.jido.dev/20260410050256_48f61587efba09d70a04bf3e4a0bdedb.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p data-track=\"44\">更令人啼笑皆非的是近期爆出的计费系统大乌龙——</p>\n  <p data-track=\"45\">由于底层API计费逻辑的突发性故障，<strong>有用户在对话框里仅仅发了一句简单的“Hello”，系统就直接判定消耗了天文数字的Token，瞬间把账号里辛辛苦苦攒下的额度全部清零。</strong></p>\n  <p data-track=\"46\">这些接二连三的插曲，也让大家对Anthropic颇具微词。</p>\n  <p data-track=\"47\">最后，如果你也遇到过Claude逻辑掉线、或者成功用一句话“绕晕”过它的经历，欢迎在评论区分享你的调教心得～</p>\n  <p data-track=\"48\">参考链接：\n   <br class=\"sysbr\">\n   [1]\n   <br>\n   https://news.ycombinator.com/item?id=47701233\n   <br class=\"sysbr\">\n   [2]\n   <br>\n   https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html\n   <br class=\"sysbr\">\n   [3]https://dwyer.co.za/</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "本文报道了 Claude 模型近期出现的严重身份混淆 Bug，探讨了 Transformer 架构中数据与指令缺乏物理隔离导致的注入风险及工程应对方案。",
+  "oneSentenceSummary": "本文报道了 Claude 模型近期出现的严重身份混淆 Bug，探讨了 Transformer 架构中数据与指令缺乏物理隔离导致的注入风险及工程应对方案。",
+  "summary": "近期 Claude 3.5/4 系列模型在 Hacker News 上引发广泛讨论，主要源于其在处理复杂上下文时无法区分用户输入与系统指令，导致恶意注入的特殊字符（如截断符）能轻易扰乱模型逻辑。文章深入分析了该现象的技术根源：Transformer 架构的注意力机制将所有 Token 混合同质化处理，缺乏类似冯·诺依曼架构的物理安全边界。针对此问题，社区提出了引入不可伪造界定符、采用「双模型」审计架构等工程化解法。此外，文章还披露了 Anthropic 近期因算力调整导致的模型性能降级及计费系统故障等负面反馈。",
+  "mainPoints": [
+    {
+      "point": "Claude 存在严重的身份识别障碍，无法区分系统指令与用户输入。",
+      "explanation": "通过嵌入特定截断字符，攻击者可误导模型将外部数据视为系统层面的既定指令，实现越权操作。"
+    },
+    {
+      "point": "漏洞根源在于 Transformer 架构中数据路径与控制路径的重合。",
+      "explanation": "注意力机制将所有信息切碎为 Token 统一计算，缺乏物理意义上的安全隔离边界，类似于早期计算机架构的 SQL 注入风险。"
+    },
+    {
+      "point": "工程界提出「双模型」架构和「不可伪造界定符」作为防御手段。",
+      "explanation": "通过旁路小模型进行安全审计，或在底层训练中引入无法由自然语言生成的特殊 Token，以模拟内核态与用户态的隔离。"
+    },
+    {
+      "point": "Anthropic 近期的算力调整和后台变动导致模型性能出现明显降级。",
+      "explanation": "为了给新模型腾挪资源，Claude 的思维链长度被缩减，逻辑推理能力下降，并伴随计费系统故障等问题。"
+    }
+  ],
+  "keyQuotes": [
+    "完全分不清哪些话是用户输入的，哪些话是系统设定的，甚至把恶意注入的底层指令当成是用户的合法请求。",
+    "根源直指 Transformer 架构中注意力机制的盲区。数据路径与控制路径完全重合的特性，导致模型在处理海量信息时缺乏物理意义上的安全隔离边界。",
+    "只要大模型本质上依然是一个「下一个 Token 预测器」，它就会依据概率分布去顺应上下文暗示。",
+    "在底层架构层面实现彻底的指令与数据物理分离之前，任何将 LLM 接入关键业务系统的场景，都必须将其视为一个完全不可信的黑盒引擎。"
+  ],
+  "tags": [
+    "Claude",
+    "Prompt Injection",
+    "Transformer",
+    "AI 安全",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 9,
+  "score": 87,
+  "wordCount": 2071,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775794349000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 04:12:29"
+}

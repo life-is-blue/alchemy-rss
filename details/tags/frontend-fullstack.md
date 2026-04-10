@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 18:20:59 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 20:13:26 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -642,6 +642,22 @@
 
 
 
+### [Safari-增加对-scrollend-事件的支持，实现主流浏览器基准覆盖](https://www.infoq.com/news/2026/04/safari-scrollend-support/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+
+2026-04-10 09:06:00 | 标签: Safari, Web 开发, JavaScript, 浏览器兼容性, 前端工程
+
+> 随着 Safari 26.2 的发布，`scrollend` 事件已在包括 Chrome、Edge 和 Firefox 在内的所有主流浏览器中实现了基准支持。这一原生 API 消除了开发者此前为了推测滚动何时结束而使用的不精确、基于计时器的变通方案。该事件可以在用户手势、键盘导航或程序化调用后可靠地触发，并考虑了滚动捕捉（scroll snapping）和触摸释放等复杂因素。这一里程碑使得开发者能够将繁重的计算或 UI 更新推迟到滚动完成后再执行，从而实现更简洁的代码和更好的性能。
+
+
+
+### [Ubuntu-26.04-LTS-重大变更分析：打破向后兼容性的三大核心调整](https://mp.weixin.qq.com/s?__biz=MzkzMjYzNjkzNw==&mid=2247635420&idx=2&sn=d8d1ed118c0bb2ade4aa4a9825bb721b)
+
+2026-04-09 23:15:00 | 标签: Ubuntu 26.04, LTS, Linux 内核, Rust, cgroup v2
+
+> 本文深度解析了 Ubuntu 26.04 LTS (Resolute Raccoon) 即将引入的三项破坏性变更。首先，彻底移除 cgroup v1 支持，若检测到旧版配置将直接阻止系统升级，这将严重影响旧版 Docker 和 Kubernetes 集群。其次，默认 sudo 被 Rust 重写的 sudo-rs 取代，虽然保持了大部分语法兼容，但在插件支持和默认反馈行为上有所变化。第三，GNU coreutils 被 Rust 实现的 uutils 取代，尽管兼容性达 94.59%，但边缘情况下的行为差异可能导致现有脚本失效。此外，文章还提到了 apt-key 的最终移除和 GNOME 50...
+
+
+
 ### [Cloudflare-推出-EmDash：定位为-WordPress-接班人的-TypeScript-内容管理系统](https://www.infoq.com/news/2026/04/cloudflare-emdash-wordpress/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-04-09 20:39:00
@@ -852,13 +868,13 @@
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
@@ -1008,13 +1024,13 @@
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
@@ -2508,13 +2524,13 @@
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
@@ -4218,13 +4234,13 @@
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_df5ef6d6",
+  "title": "GLM-5.1 获 LMArena 代码榜开源第一、全球第三",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493706&idx=1&sn=1e3b5d0c1c250fd06590fadb1690f48f",
+  "date": "2026-04-10 09:15:00",
+  "author": "智谱",
+  "siteName": "智谱",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>智谱</span> <span>2026-04-10 17:15</span> <span style=\"display: inline-block;\">北京</span></p>\n  <p>今日，全球权威AI评测平台LMArena（百万用户参与盲测）更新Code Arena专项榜单，GLM-5.1登顶全球开源模型第一，位列全球模型第三。</p>\n  <p>GLM-5.1不仅继承了上一代模型的开源SOTA编码能力，还在长程任务（Long-Horizon Task）上取得突破，实现了：</p>\n  <p>💻 8小时从零构建Linux桌面</p>\n  <p>📊 655次迭代打破向量数据库优化瓶颈</p>\n  <p>🤖 1000轮工具调用优化真实机器学习模型负载</p>\n  <p>值得一提的是，在METR榜单的同等评估标准下，GLM-5.1是唯一达到8小时级持续工作的开源模型，也是全球范围内除Claude Opus 4.6外少数具备这一能力的模型。</p>\n  <p>欢迎接入与体验。</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=88784f4a&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FlRIrvTGkm9smHu93WyrNyfpPFTDciabhrvcQUaHxjdEASF0rPKHGlWBZPViaUsUqGqwAvP5fMjgjEWVhqOkp2HaROB3S64qw4uUmqf7YjiaicgQ%2F0%3Fwx_fmt%3Dpng\"></p>\n  <p><a href=\"https://wechat2rss.bestblogs.dev/link-proxy/?k=c61bfea1&amp;r=1&amp;u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzkyMzI3NzQ0Mg%3D%3D%26mid%3D2247493706%26idx%3D1%26sn%3D1e3b5d0c1c250fd06590fadb1690f48f\">跳转微信打开</a></p>\n </body>\n</html>",
+  "aiSummary": "智谱发布 GLM-5.1 模型，在 LMArena 代码榜单中位列开源第一、全球第三，并在长程编码任务上取得显著突破。",
+  "oneSentenceSummary": "智谱发布 GLM-5.1 模型，在 LMArena 代码榜单中位列开源第一、全球第三，并在长程编码任务上取得显著突破。",
+  "summary": "智谱官方宣布其最新模型 GLM-5.1 在全球权威 AI 评测平台 LMArena 的 Code Arena 专项榜单中表现卓越，登顶全球开源模型首位，总排名位列全球第三。该模型在长程任务（Long-Horizon Task）处理能力上实现跨越式进展，能够支持 8 小时级持续工作，并展示了从零构建 Linux 桌面、超 600 次迭代优化向量数据库等复杂工程能力，是目前极少数具备此类能力的开源模型之一。",
+  "mainPoints": [
+    {
+      "point": "GLM-5.1 在 LMArena 代码榜单中取得开源模型全球第一。",
+      "explanation": "在百万用户参与的盲测中，其编码能力位列全球总榜第三，仅次于顶级闭源模型，代表了开源界最强的 SOTA 编码水平。"
+    },
+    {
+      "point": "模型在长程任务（Long-Horizon Task）上取得核心突破。",
+      "explanation": "GLM-5.1 能够支持 8 小时级持续工作，并完成了从零构建 Linux 桌面、千轮工具调用优化等极高难度的复杂工程任务。"
+    },
+    {
+      "point": "在 METR 榜单评估标准下表现优异。",
+      "explanation": "GLM-5.1 是全球范围内极少数（除 Claude Opus 4.6 外）具备 8 小时级持续自主工作能力的模型，展现了强大的 Agent 潜质。"
+    }
+  ],
+  "keyQuotes": [
+    "GLM-5.1 登顶全球开源模型第一，位列全球模型第三。",
+    "GLM-5.1 是唯一达到 8 小时级持续工作的开源模型。",
+    "8 小时从零构建 Linux 桌面，655 次迭代打破向量数据库优化瓶颈。"
+  ],
+  "tags": [
+    "GLM-5.1",
+    "智谱 AI",
+    "LMArena",
+    "开源模型",
+    "代码大模型"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 88,
+  "wordCount": 291,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_5eaf43",
+  "sourceName": "智谱",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775812500000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 09:15:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "RAW_54d42ad7",
+  "title": "我们已经输了吗？第二部分：悲观的理由 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/hefTFru3bCw2NkpKS/have-we-already-lost-part-2-reasons-for-doom",
+  "date": "2026-04-10 06:56:34",
+  "author": "LawrenceC",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><i><span>Written very quickly for the </span></i><span><span><a href=\"https://www.inkhaven.blog/\"><i><span>Inkhaven Residency</span></i></a></span></span><i><span>.</span></i></p>\n    <p id=\"block1\"><span>As I take the time to reflect on the state of AI Safety in early 2026, one question feels unavoidable: have we, as the AI Safety community, already lost? That is, have we passed the point of no return, after which AI doom becomes both likely and effectively outside of our control?</span></p>\n    <p id=\"block2\"><span>Spoilers: as you might guess from</span><span><span><a href=\"https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines\"><span> Betteridge’s Law</span></a></span></span><span>, my answer to the headline question is no. But the salience of this question feels quite noteworthy to me nonetheless, and reflects a more negative outlook on the future.&nbsp;</span></p>\n    <p id=\"block3\"><span>Yesterday I laid out “the plan” as I understood it in 2024.&nbsp;</span></p>\n    <p id=\"block4\"><span>Today, I’ll explain the reasons I’ve become more pessimistic on the 2024 plan. (And tomorrow, I’ll talk about why I think the answer is still no.)</span></p>\n    <h2 id=\"_Unilateral__voluntary_commitments_from_companies_seem_unlikely_to_hold\"><span>(Unilateral) voluntary commitments from companies seem unlikely to hold</span></h2>\n    <p id=\"block5\"><span><span><a href=\"https://metr.org/blog/2023-09-26-rsp/\"><span>In our original RSP blog post</span></a></span></span><span>, we outlined a vision for RSPs as companies “committing to gate scaling on concrete evaluations and empirical observations”, where “we should expect to halt AI development in cases where we do see dangerous capabilities, and continue it in cases where worries about dangerous capabilities were overblown.” I think empirically, this vision of RSPs seems unlikely to work.</span></p>\n    <p id=\"block6\"><span>First, </span><span><span><a href=\"https://metr.org/fsp\"><span>many of the frontier safety policies</span></a></span></span><span> that followed Anthropics were substantially less strict or well specified. DeepMind and OpenAI’s policies were probably the next best, but they were substantially less strict than Anthropics in terms of acceptable conditions to continue deployment. (Also, the OpenAI Preparedness team seems to have suffered a fair number of the usual OpenAI Safety departures.) Many company RSPs make no reference to actually terminating deployment, and XAI’s policy has plausibly already been violated as of early 2026.&nbsp;</span></p>\n    <p id=\"block7\"><span>Even Anthropic, which pioneered RSPs in collaboration with METR back in 2024, has updated their RSP to be substantially less strict than was outlined.&nbsp;</span></p>\n    <h2 id=\"AI_progress_seems_to_be_consistent_with_faster_timelines\"><span>AI progress seems to be consistent with faster timelines</span></h2>\n    <p id=\"block8\"><span>In 2024, there was a sense that AI progress was fast, but there wasn’t a good sense of </span><i><span>exactly</span></i><span> how fast it was. I think in 2026, it seems fairly clear that AI progress is fast enough that we can’t rule out ~full coding automation by 2028, let alone 2030 or 2035.</span></p>\n    <p id=\"block9\"><span>For one thing, the METR graph, originally released in March of 2025, found a consistent exponential trend in the length of tasks that AIs could complete, which has held up (or even accelerated) in the following year:&nbsp;</span></p>\n    <img src=\"https://image.jido.dev/20260410083245_wvegodubaa0uoap44uiy.png\" alt=\"\">\n    <p id=\"block10\"><span>We’ve also just seen the massive use of AI coding assistants as well as massive scale ups in investment from leading labs, just to name two other signs of fast progress.</span></p>\n    <p id=\"block11\"><span>Insofar as our plans required more time, the faster timeline is definitely bad news.&nbsp;</span></p>\n    <h2 id=\"Ambitious_technical_research_has__largely__not_paid_out\"><span>Ambitious technical research has (largely) not paid out</span></h2>\n    <p id=\"block12\"><span>In 2024, (ambitious) mechanistic interpretability was contested but still a major area of investment. There were also a bunch of other ambitious AI safety research agendas that aimed to rigorously tackle substantial parts of the AI alignment problem, such as ARC’s ELK/Heuristic Arguments Agenda, Singular Learning Theory, or non-agentic AI scientists. While work continues to be done on each of these agendas, none of these agendas has really paid off in a massive way.&nbsp;</span></p>\n    <h2 id=\"The_community_has_largely_concentrated_its_investment_into_Anthropic_\"><span>The community has largely concentrated its investment into Anthropic&nbsp;</span></h2>\n    <p id=\"block13\"><span>In 2024, Anthropic was probably the largest consumer of skill-weighted AI Safety talent of any organization in the world. However, it was still only a plurality, and not a majority.</span></p>\n    <p id=\"block14\"><span>I think in 2026, Anthropic is clearly a majority consumer of skill-weighted AI Safety talent. This isn’t clearly a bad thing in itself: insofar as the “make Anthropic win” plan is the main way&nbsp; to have the margin to invest in less-competitive but safer approaches, this is pretty much what would have to happen. But insofar as Anthropic as an organization has problems, for example by being wrong about key questions in AI safety, or driven to motivated thinking for profit or status reasons, or not able to efficiently use marginal talent, then this is a clearly bad thing from the perspective of the community.</span></p>\n    <p id=\"block15\"><span>Regardless of whether or not it was net good, I think it’s still sad that due to Anthropic’s commercial success (and several outflows of talent from OpenAI) the AI Safety community does not really have an independent existence outside of Anthropic.&nbsp;</span></p>\n    <h2 id=\"The_current_US_administration_has_many_bad_qualities_from_an_AI_Safety_standpoint__and_explicitly_opposes__AI_Safety_\"><span>The current US administration has many bad qualities from an AI Safety standpoint, and explicitly opposes \"AI Safety\"</span></h2>\n    <p id=\"block16\"><span>On November 5th, after I saw the early results come in, I thought to myself that we were now playing on hard mode in terms of AI governance. I think my assessment has held up pretty well given what has happened since.&nbsp;</span></p>\n    <p id=\"block17\"><span>Many of the developments that I considered positive signs for domestic AI governance were explicitly opposed and or revoked by the current US Administration. The current US administration has also taken many actions that have made international cooperation on AI safety much less likely, including by antagonizing many of America’s existing allies. Also, key members of the administration have explicitly opposed AI Safety (and some have even espoused deranged conspiracy theories about how all of AI Safety is an attempt at regulatory capture by Anthropic).&nbsp;</span></p>\n    <p id=\"block18\"><span>The administration has just been exceedingly stupid, corrupt, and chaotic in general. (A recent example of this is designating Anthropic as a supply chain risk as a (failed) negotiating tactic.)</span></p>\n    <p id=\"block19\">\n     <br>\n    </p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文反思了 2026 年初 AI 安全的现状，概述了导致对 2024 年 AI 安全路线图日益悲观的五个关键原因，包括企业自愿承诺的失败以及 AI 进展的加速。",
+  "oneSentenceSummary": "本文反思了 2026 年初 AI 安全的现状，概述了导致对 2024 年 AI 安全路线图日益悲观的五个关键原因，包括企业自愿承诺的失败以及 AI 进展的加速。",
+  "summary": "作者评估了 2026 年初的 AI 安全格局，探讨了该领域是否已经过了“不归点”。尽管作者最终否定了“一切已无可挽回”的观点，但文章对之前的战略计划为何失败进行了冷静的分析。导致这种悲观情绪的关键因素包括：主要实验室对自愿性“负责任扩展政策”（RSP）的侵蚀、AI 能力（尤其是编程方面）的加速发展、雄心勃勃的技术对齐研究缺乏突破、安全人才过度集中在单一组织（Anthropic）中，以及美国敌对且混乱的政治环境，这些因素正在积极破坏国际 AI 安全合作。",
+  "mainPoints": [
+    {
+      "point": "企业自愿性的安全承诺已被证明无效。",
+      "explanation": "前沿实验室已经淡化或忽视了“负责任扩展政策”（RSP），许多政策缺乏明确的终止标准或执行机制，使其不足以作为主要的防线。"
+    },
+    {
+      "point": "AI 的进展速度超出了最初的安全时间表。",
+      "explanation": "任务完成时长等实证数据表明，到 2028 年可能实现完全的编程自动化，这大大缩短了开发稳健对齐解决方案的时间窗口。"
+    },
+    {
+      "point": "AI 安全社区变得危险地中心化了。",
+      "explanation": "顶尖安全人才在 Anthropic 的集中造成了单点故障；如果该组织的内部安全假设存在缺陷或其激励机制发生转变，整个领域将缺乏独立的替代方案。"
+    },
+    {
+      "point": "政治敌意破坏了治理工作。",
+      "explanation": "当前美国政府对 AI 安全的反对态度，加上混乱的决策过程以及对国际盟友的疏远，严重损害了实现有效全球 AI 监管的前景。"
+    }
+  ],
+  "keyQuotes": [
+    "我认为在 2026 年，显而易见的是 AI 的进展速度非常快，我们不能排除到 2028 年实现完全编程自动化的可能性。",
+    "AI 安全社区在 Anthropic 之外实际上并不具备独立的存在感。",
+    "当前美国政府还采取了许多行动，使得 AI 安全方面的国际合作变得极不可能，包括激怒了许多美国现有的盟友。"
+  ],
+  "tags": [
+    "AI 安全",
+    "AI 治理",
+    "对齐",
+    "Anthropic",
+    "AI 政策"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 86,
+  "wordCount": 897,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775804194000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 06:56:34"
+}

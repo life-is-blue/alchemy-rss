@@ -1,0 +1,53 @@
+{
+  "id": "RAW_25a7e4e8",
+  "title": "Karpathy 点透 AI 认知撕裂：顶级圈子正集体患上 AI 狂热症",
+  "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTkxMjYzOA==&mid=2247513944&idx=2&sn=c657eea9c1df91b809caf498cc26fb63",
+  "date": "2026-04-10 05:50:00",
+  "author": "AI寒武纪",
+  "siteName": "AI寒武纪",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>AI寒武纪</span> <span>2026-04-10 13:50</span> <span style=\"display: inline-block;\">江苏</span></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=308d5220&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FkJjlNiczXgKqibUlAkaXjyKefyklXtZGRbZGAwTZv2849uXpY4lHHLXuvubn7o6hLDicXiaPP5YbtJLSIZx5VQv80ticiaOiajBUwUE5tWvzxaUrib8%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <div class=\"mp_profile_iframe_wrp\" style=\"letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;\">\n   <p style=\"text-align: center;\" nodeleaf=\"\"><img class=\"rich_pages wxw-img js_insertlocalimg\" data-aistatus=\"1\" data-imgfileid=\"100030292\" data-ratio=\"0.4740740740740741\" data-s=\"300,640\" type=\"block\" data-type=\"png\" data-w=\"1080\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=7c627a8e&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FkJjlNiczXgKoKXtLHuJR5HdAB9k0MlibFz1jUqwic48KQ0T0Fur2biavict3Wumibiac6vibA0CY8ZtgDpshl1LqPGibgDb0Jf3oRnyJVCPeKY6JttDM%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n   <p class=\"mp_profile_iframe_wrp\" style=\"margin-bottom: 24px;letter-spacing: 0.578px;\"><span leaf=\"\"><mp-common-profile class=\"js_uneditable custom_select_card mp_profile_iframe\" data-pluginname=\"mpprofile\" data-nickname=\"AI寒武纪\" data-from=\"2\" data-headimg=\"http://mmbiz.qpic.cn/sz_mmbiz_png/ICgnAptln0Xg6w3lVHUFXrtY5Tia7rfUDkTmCwe5Gz5RRAtVR2CX6UgcZiaFWnxksH1fkSSmjxichSCic8CTGqcElA/0?wx_fmt=png\" data-signature=\"一起见证人工智能的寒武纪大爆发，传播一切有关AI的技术\" data-id=\"Mzg3MTkxMjYzOA==\" data-is_biz_ban=\"0\"></mp-common-profile></span></p>\n   <p style=\"letter-spacing: 0.578px;text-align: justify;margin-left: 8px;margin-right: 8px;\"><span style=\"font-size: 15px;\"><span leaf=\"\">↑阅读之前记得关注+星标⭐️，😄，每天才能第一时间接收到更新</span></span></p>\n   <div style=\"font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;font-size: 15px;line-height: 1.75;text-align: left;\">\n    <h3 data-heading=\"true\" style=\"padding-left: 8px;border-left: 3px solid #B76E79;margin: 2em 8px 0.75em 0;color: #3f3f3f;font-size: 16.5px;font-weight: bold;line-height: 1.2;margin-top: 0 !important;\"><span leaf=\"\">人们对AI能力的认知差距正在不断拉大，究竟是怎么造成的，Andrej Karpathy有话说</span></h3>\n    <p style=\"margin: 1.5em 8px;letter-spacing: 0.1em;color: #3f3f3f;\"><span leaf=\"\">第一个问题出在人们使用的模型版本和层级上。很多人对AI的印象还停留在去年免费版的ChatGPT，并在很大程度上以此来评判AI的整体水平。这部分人看到网上流传的视频，发现OpenAI的高级语音模式连到底该开车还是走路去洗车房这种简单问题都会搞砸，就会嘲笑模型的各种奇怪表现和幻觉。但问题在于，这些免费的旧模型根本无法代表今年最新一代前沿智能体模型的真实实力，特别是OpenAI Codex和Claude Code。</span></p>\n    <p style=\"margin: 1.5em 8px;letter-spacing: 0.1em;color: #3f3f3f;\"><span leaf=\"\">这就引出了第二个问题。即便人们每个月花两百美元使用最前沿的模型，很多能力突破也主要集中在高度专业化的技术领域。像日常搜索、写作、寻求建议这类常规问题，并没有出现最引人注目的跨越式进步。这背后的原因有两点。首先是强化学习的技术细节限制，它需要可验证的奖励机制。其次，科技公司在攀登技术高峰时并没有把这些日常应用场景放在首位，因为它们带来的商业价值不够高。真正的金矿在别处，研发重心自然也会随之转移。</span></p>\n    <p style=\"margin: 1.5em 8px;letter-spacing: 0.1em;color: #3f3f3f;\"><span leaf=\"\">这就来到了第二类人群。他们不仅付费使用OpenAI Codex和Claude Code等最前沿的智能体模型，还在编程、数学和科研等专业技术领域深度使用。正是这群人正经历着极其强烈的AI狂热症，因为今年这些领域的技术进步简直令人咋舌。当你把电脑终端交给这些模型，你可以亲眼看到它们轻松解决那些原本需要耗费数天甚至数周才能完成的编程难题。因此，正是这第二类人对AI的能力、发展速度以及相关的网络安全影响有着深刻得多的敬畏感。</span></p>\n    <p style=\"margin: 1.5em 8px;letter-spacing: 0.1em;color: #3f3f3f;\"><span leaf=\"\">简单来说，这两类人完全是在跨服聊天。现实情况就是如此魔幻，一方面OpenAI免费且似乎有些被边缘化的高级语音模式会在短视频里连最蠢的问题都答不上来，而与此同时，OpenAI最高阶的付费Codex模型却能自己默默运行一个小时，条理清晰地重构整个代码库，或者寻找并利用计算机系统的漏洞。</span></p>\n    <p style=\"margin: 1.5em 8px;letter-spacing: 0.1em;color: #3f3f3f;\"><span leaf=\"\">技术领域之所以能真正取得实质性进展，主要得益于两大特性。第一，这些领域能提供明确且可验证的奖励函数，比如单元测试到底有没有通过，这使得它们非常适合进行强化学习训练，而写作的好坏就很难有明确的评判标准。第二，这些技术在B2B企业级应用中价值巨大，这意味着团队中最大部分的精锐力量都在集中精力对它们进行优化。所以我们才看到了如今的局面。</span></p>\n    <p style=\"margin: 1.5em 8px;letter-spacing: 0.1em;color: #3f3f3f;\"><span leaf=\"\">OpenClaw时刻之所以引发如此巨大的轰动，原因就在于这是第一次有一大群非技术人员真正体验到了最新的智能体模型。在此之前，这群人眼里的AI仅仅等同于ChatGPT那个网页而已。</span></p>\n   </div>\n   <p style=\"text-align: center;\"><span style=\"font-size: 15px;\"><span leaf=\"\">--end--</span></span></p>\n   <p style=\"text-align: justify;margin-left: 8px;margin-right: 8px;\"><span leaf=\"\" data-pm-slice=\"1 1 [&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;class&quot;:&quot;mp_profile_iframe_wrp&quot;,&quot;style&quot;:&quot;letter-spacing: 0.578px;white-space: normal;margin-bottom: 0px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;para&quot;,{&quot;tagName&quot;:&quot;section&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;margin-left: 8px;margin-right: 8px;text-align: justify;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;},&quot;node&quot;,{&quot;tagName&quot;:&quot;span&quot;,&quot;attributes&quot;:{&quot;style&quot;:&quot;font-size: 15px;&quot;},&quot;namespaceURI&quot;:&quot;http://www.w3.org/1999/xhtml&quot;}]\"><span textstyle=\"\" style=\"font-size: 12px;color: rgb(0, 82, 255);font-weight: bold;\">最后记得⭐️我，每天都在更新：如果觉得文章还不错的话可以点赞转发推荐评论</span></span></p>\n   <p style=\"text-align: justify;margin-left: 8px;margin-right: 8px;\"><span style=\"letter-spacing: 0.578px;text-decoration: none;font-weight: bold;font-size: 12px;\"><span leaf=\"\">/...@作者：你说的完全正确（YAR师）</span></span></p>\n  </div>\n  <p style=\"display: none;\"><mp-style-type data-value=\"3\"></mp-style-type></p>\n  <p><a href=\"https://wechat2rss.bestblogs.dev/link-proxy/?k=598695bb&amp;r=1&amp;u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzg3MTkxMjYzOA%3D%3D%26mid%3D2247513944%26idx%3D2%26sn%3Dc657eea9c1df91b809caf498cc26fb63\">跳转微信打开</a></p>\n </body>\n</html>",
+  "aiSummary": "Andrej Karpathy 指出当前社会对 AI 的认知存在严重撕裂，根源在于大众使用的免费模型与开发者使用的前沿智能体在技术能力、奖励机制及应用场景上的巨大差异。",
+  "oneSentenceSummary": "Andrej Karpathy 指出当前社会对 AI 的认知存在严重撕裂，根源在于大众使用的免费模型与开发者使用的前沿智能体在技术能力、奖励机制及应用场景上的巨大差异。",
+  "summary": "文章深度解析了当前公众与技术圈对 AI 能力认知产生巨大鸿沟的原因。Karpathy 认为，大众对 AI 的印象多停留在免费版 ChatGPT 的幻觉与低级错误上，而深度参与编程、科研等领域的专业人士则通过 Codex 和 Claude Code 等前沿模型，见证了 AI 在复杂任务处理上的惊人突破。这种认知撕裂的核心在于：技术领域拥有明确的奖励函数（如单元测试）和高商业价值，促使研发资源高度集中，从而在专业领域实现了跨越式发展，而日常应用场景则相对滞后。",
+  "mainPoints": [
+    {
+      "point": "大众与专业人士对 AI 认知的严重撕裂。",
+      "explanation": "大众基于免费版 ChatGPT 的表现评判 AI，而专业人士通过前沿智能体在编程和科研中体验到了颠覆性能力，两者处于完全不同的认知维度。"
+    },
+    {
+      "point": "技术进步的差异源于奖励机制与商业价值。",
+      "explanation": "编程等领域具备明确的奖励函数（如单元测试），且 B2B 商业价值巨大，促使研发重心向这些领域倾斜，而非日常写作或搜索。"
+    },
+    {
+      "point": "智能体模型带来的技术狂热感。",
+      "explanation": "当 AI 能够自主重构代码库或利用系统漏洞时，其展现出的自主性和解决复杂问题的能力，让深度使用者产生了强烈的敬畏感与狂热。"
+    }
+  ],
+  "keyQuotes": [
+    "这两类人完全是在跨服聊天。",
+    "这些领域能提供明确且可验证的奖励函数，比如单元测试到底有没有通过，这使得它们非常适合进行强化学习训练。",
+    "正是这第二类人对 AI 的能力、发展速度以及相关的网络安全影响有着深刻得多的敬畏感。"
+  ],
+  "tags": [
+    "Andrej Karpathy",
+    "AI 认知",
+    "前沿模型",
+    "智能体",
+    "强化学习"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 88,
+  "wordCount": 1151,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_03cf5e",
+  "sourceName": "AI寒武纪",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775800200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 05:50:00"
+}

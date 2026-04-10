@@ -1,0 +1,53 @@
+{
+  "id": "RAW_d4b5e684",
+  "title": "无问芯穹发布 InfiniClaw Box：清华系团队打造的全模态端云一体隐私脱敏方案",
+  "url": "https://www.qbitai.com/2026/04/398750.html",
+  "date": "2026-04-10 07:13:37",
+  "author": "思邈",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <blockquote data-pm-slice=\"0 0 []\">\n   <p data-track=\"45\">允中 发自 凹非寺</p>\n   <p data-track=\"46\">量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p data-track=\"2\">前脚刚喂给龙虾的公司财务数据，下一秒就成了云端大模型的“共享语料”？</p>\n  <p data-track=\"3\">这绝不是危言耸听。</p>\n  <p data-track=\"4\">在OpenClaw热潮中，<strong>隐私保护的缺位</strong>正成为所有企业和开发者绕不开的一道暗礁。</p>\n  <p data-track=\"5\">大家既想要顶级模型的<strong>“最强大脑”</strong>，又想要本地私有化的<strong>“绝对安全”</strong>。</p>\n  <p data-track=\"6\">但这道题过去几乎无解：本地算力盒子“带不动”复杂任务，而传统的脱敏方案又是个“偏科生”——只管得了文本，遇到语音、视频就彻底抓瞎。</p>\n  <p data-track=\"7\">这种<strong>全模态安全能力</strong>的断档，正是OpenClaw落地最后一公里的最大“绊脚石”。</p>\n  <p data-track=\"8\">就在今天，国产大模型基础设施玩家<strong>无问芯穹</strong>正式出手，甩出了他们的破局之作：</p>\n  <p data-track=\"9\"><strong>InfiniClaw Box，一个更安全、更专业、可托付的智能伙伴。</strong></p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_dbea5b660f033af5110c62e636c4dc11.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"473\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"10\">它彻底打破了“脱敏即降智”的僵局：</p>\n  <ul>\n   <li data-track=\"11\">不仅能处理文本，更适配<strong>语音、视频</strong>等全模态信源；</li>\n   <li data-track=\"12\">通过独创的<strong>“三段式”架构</strong>，在确保数据不出域的同时，依然能用上云端最强算力。</li>\n  </ul>\n  <p data-track=\"13\">更重要的是，它背后还有<strong>企业级Token工厂</strong>的成本优化，以及内置的<strong>80+垂类场景Skills</strong>。</p>\n  <p data-track=\"14\">就是这样一支由<strong>清华电子工程系</strong>推动集结的队伍，让端侧智能真正成为了可托付的生产力工具。</p>\n  <p data-track=\"16\">InfiniClaw Box直击了本地龙虾在模型成本、性能与隐私之间难以兼顾的核心难题，独创了<strong>“本地脱敏 – 云端处理 – 本地回填”</strong>的端云一体三段式安全脱敏推理方案，实现了真正意义上的<strong>隐私数据绝不上云</strong>。</p>\n  <p data-track=\"17\"><strong>1、智能脱敏阶段</strong></p>\n  <p data-track=\"18\">用户输入的所有文本、图像、音频、视频数据，InfiniClaw Box首先会通过<strong>本地多模态大模型</strong>，对全模态数据进行语义特征的理解与提取，再结合预定义安全信息知识库与脱敏模板进行二次校验。</p>\n  <p data-track=\"19\">这样一来，它就能自动识别并替换所有敏感信息（如姓名、手机号、身份证号、公司机密、财务数据、医疗记录等），最后生成一份脱敏后的通用请求。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_e078216b758b055b446122fa644bcedf.gif\" data-ic=\"false\" data-width=\"1080\" data-height=\"614\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"20\"><strong>2、云端处理阶段</strong></p>\n  <p data-track=\"21\">这份完全脱敏的请求将无缝接入<strong>无问芯穹大模型服务平台。随后，龙虾将以</strong>低成本调用GLM-5、Kimi-K2.5、MiniMax-M2.5、Step-3.5等行业头部大模型，利用云端最强大的大模型能力完成复杂推理、知识检索、内容生成等任务。</p>\n  <p data-track=\"22\">整个过程中，云端永远无法接触到任何原始隐私数据。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_533d6d77975a605b07e9b9ad378f06b2.gif\" data-ic=\"false\" data-width=\"1080\" data-height=\"614\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"23\"><strong>3、本地回填阶段</strong></p>\n  <p data-track=\"24\">云端返回的通用结果将在InfiniClaw Box本地进入<strong>“隐私重构引擎”</strong>，在不泄露任何隐私数据的前提下，将被替换的敏感信息进行精准位置感知的自动回填。</p>\n  <p data-track=\"25\">该过程确保数据在“脱敏-推理-回填”全链路中实现隐私数据零出域、结果语义无损恢复。</p>\n  <p data-track=\"26\">最终输出结果在表达完整性、上下文一致性上与纯云端处理完全一致，技术上实现了隐私安全与大模型能力的解耦融合，并达到<strong>“数据不出盒、能力不打折”</strong>的最终效果。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_94071c2877d46bf3ab319dbf90985a22.gif\" data-ic=\"false\" data-width=\"1080\" data-height=\"614\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"27\">由此，InfiniClaw Box真正实现了<strong>“安全养虾不裸奔，云端智能本地享”</strong>，让用户在享受顶级AI生产力的同时，真正获得隐私安全的底线保障。</p>\n  <p data-track=\"29\">凭借独特的全模态脱敏能力， InfiniClaw Box突破了大多数龙虾盒子仅能读取文本知识库的局限。</p>\n  <p data-track=\"30\">它支持多种硬件设备的灵活组合，能够广泛接入并融合多元信源——</p>\n  <p data-track=\"31\">可连接<strong>家庭摄像头、智能门锁</strong>等设备实时获取视频画面，也可以通过<strong>外接麦克风</strong>精准接收语音指令。</p>\n  <p data-track=\"32\">未来，InfiniClaw Box还可无缝接入个人电脑、智能眼镜、手机、平板等移动生产力工具，实现<strong>文本、图像、语音、视频等多种模态信号</strong>的协同处理与复杂任务的跨模态执行，提供<strong>标准化开放接口</strong>，支持更多场景下的生产力安全提效与功能拓展。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_88c236db8724aaf116c43f7cf41ae7a3.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"608\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"34\">InfiniClaw Box支持多样化的终端硬件配置，能快速适配并挖掘各种常规性能算力盒子设备的计算潜能。</p>\n  <p data-track=\"35\">在主流端侧芯片上部署多模态大模型相关的算子时，InfiniClaw Box通过主控智能体主导的深度NPU、GPU算子融合、张量布局（Layout）寻优及极致的显存复用策略，让Attention和gemm等核心算子实现了<strong>10%到40%</strong>的加速。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_8dd4f25ee466c2bac0ffe53e5c188e7c.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"563\" data-ic-uri=\"\">\n  </div>\n  <p data-track=\"36\">目前，InfiniClaw Box已与<strong>爱芯元智</strong>等伙伴在端侧芯片优化与龙虾盒子适配等方面展开深度合作。</p>\n  <p data-track=\"37\">未来，无问芯穹还将进一步打通适配更多端侧芯片，持续探索本地龙虾在<strong>国产端侧芯片</strong>应用上的更多可能性。</p>\n  <p data-track=\"39\">目前，无问芯穹InfiniClaw Box已与包括<strong>爱芯元智、AMD、此芯科技、财搭子、万象智维、酷爱科技、跃向</strong>等在内的多家芯片企业、智能终端设备企业及应用企业。</p>\n  <p data-track=\"40\">他们在<strong>底层芯片适配、外接终端设备互联</strong>，以及<strong>上层应用场景</strong>探索等多个维度上建立了深度合作。</p>\n  <p data-track=\"41\">从芯片的软硬协同深度优化，到多样化外设的即插即用对接，再到行业智能体应用的前沿共创……</p>\n  <p data-track=\"42\">无问芯穹期待携手更多<strong>上下游生态伙伴</strong>，共同拓展InfiniClaw Box的应用边界，助力用户以<strong>更低成本、更高效率</strong>开启智能化终端探索。</p>\n  <p data-track=\"43\">如有合作意向并希望了解更多详情，可联系zhanghongbo@infini-ai.com进行咨询，无问芯穹将提供专业支持。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260410073255_187f53a79dc1e6fd20dc2b44a2b8b668.webp\" data-ic=\"false\" data-width=\"1080\" data-height=\"517\" data-ic-uri=\"\">\n  </div>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "无问芯穹推出 InfiniClaw Box，通过「本地脱敏-云端处理-本地回填」三段式架构，解决 AI 龙虾（Agent）在全模态数据处理中的隐私泄露与算力瓶颈难题。",
+  "oneSentenceSummary": "无问芯穹推出 InfiniClaw Box，通过「本地脱敏-云端处理-本地回填」三段式架构，解决 AI 龙虾（Agent）在全模态数据处理中的隐私泄露与算力瓶颈难题。",
+  "summary": "本文介绍了由清华电子工程系背景团队「无问芯穹」推出的硬件产品 InfiniClaw Box。该产品针对当前企业和开发者在使用大模型时面临的隐私安全与云端算力矛盾，提出了「端云一体三段式」脱敏推理方案。其核心技术在于：首先在本地利用多模态模型对文本、语音、视频进行语义识别与敏感信息替换；随后将脱敏请求发送至云端调用顶级大模型进行复杂推理；最后在本地通过隐私重构引擎进行精准位置回填。该方案实现了「数据不出盒、能力不打折」，并针对端侧芯片进行了 10%-40% 的算子加速优化，支持广泛的硬件生态接入。",
+  "mainPoints": [
+    {
+      "point": "独创「三段式」安全脱敏推理方案，实现隐私数据零出域。",
+      "explanation": "通过「本地脱敏、云端处理、本地回填」流程，将隐私敏感信息留在本地硬件，仅将脱敏后的语义请求发往云端，兼顾了顶级模型的推理能力与数据安全性。"
+    },
+    {
+      "point": "支持全模态数据处理，突破传统文本脱敏局限。",
+      "explanation": "不仅限于文本，InfiniClaw Box 能够识别并处理语音、视频等复杂信源中的敏感信息，适配摄像头、麦克风等多种硬件接入场景。"
+    },
+    {
+      "point": "针对端侧芯片进行深度软硬协同优化。",
+      "explanation": "通过 NPU/GPU 算子融合、张量布局寻优及显存复用策略，在主流端侧芯片上实现了核心算子 10% 到 40% 的性能提升。"
+    }
+  ],
+  "keyQuotes": [
+    "它彻底打破了「脱敏即降智」的僵局：不仅能处理文本，更适配语音、视频等全模态信源。",
+    "技术上实现了隐私安全与大模型能力的解耦融合，并达到「数据不出盒、能力不打折」的最终效果。",
+    "让端侧智能真正成为了可托付的生产力工具。"
+  ],
+  "tags": [
+    "无问芯穹",
+    "隐私保护",
+    "端云一体",
+    "多模态脱敏",
+    "InfiniClaw Box"
+  ],
+  "topicTag": "other",
+  "readTime": 8,
+  "score": 86,
+  "wordCount": 1911,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775805217000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 07:13:37"
+}

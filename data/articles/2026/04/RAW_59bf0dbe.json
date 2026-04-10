@@ -1,0 +1,52 @@
+{
+  "id": "RAW_59bf0dbe",
+  "title": "DeepSeek V4：千呼万唤始出来",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTY1NDg4Nw==&mid=2247525227&idx=1&sn=215095813343526311e1247af73367a6",
+  "date": "2026-04-10 09:21:00",
+  "author": "深网腾讯新闻",
+  "siteName": "深网腾讯新闻",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span>深网腾讯新闻</span> <span>2026-04-10 17:21</span> <span style=\"display: inline-block;\">北京</span></p>\n  <p>开年以来，关于DeepSeek V4的传闻已持续数月。从3月29日长达13小时的服务中断引发“灰度测试”猜想，到前两天DeepSeek网页端迎来大更新，DeepSeek V4推出的时间表渐渐明晰。</p>\n  <p>&nbsp;</p>\n  <p>据《创智记》报道称，DeepSeek创始人梁文锋近日在内部沟通中透露，DeepSeek新一代旗舰大模型DeepSeek V4将于4月下旬正式发布。</p>\n  <p>&nbsp;</p>\n  <p>两天前，在没发一条官方推文的情况下，DeepSeek网页端迎来大更新：其网页端上方的输入框上方多了“快速模式”和“专家模式”。其中，“快速模式”下，上传附件能识别图片与文件中的文字；而“专家模式”下，上传附件提示仅识别文字。</p>\n  <p>&nbsp;</p>\n  <p>据现有信息显示，DeepSeek V4或将带来万亿参数规模和百万级上下文窗口。</p>\n  <p>DeepSeek曾在《DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理》中明确表示V3.2 采用了 DSA 稀疏注意力机制，最大输出长度默认为 128K。</p>\n  <p>&nbsp;</p>\n  <p>不过DeepSeek团队于2025年12月底至2026年1月发表的多篇论文提出的mHC（保障训练稳定性）与Engram（优化长程记忆），结合已在V3.2中验证的DSA稀疏注意力机制，或构成V4实现百万上下文的理论基础。</p>\n  <p>&nbsp;</p>\n  <p>有消息称，DeepSeek V4姗姗来迟的另一个关键原因，是与国产芯片的深度适配。</p>\n  <p>&nbsp;</p>\n  <p>据公开报道，DeepSeek在发布V4之前，未向英伟达、AMD等美系芯片商提供预览，而是选择提前数周向包括华为在内的中国芯片供应商开放访问权限，以确保模型在国产算力平台上完成深度适配与优化。</p>\n  <p>&nbsp;</p>\n  <p>这条路，对任何一家国产模型厂商来说都极为艰难，但从更长远的视角看，这又是一条不得不走的路。</p>\n  <p>&nbsp;</p>\n  <p>从技术层面看，CUDA生态经过十多年积累，形成了从底层指令集到上层框架的完整闭环。切换到国产芯片，意味着算子库重构、并行策略重设计、通信开销重优化，每一个环节都可能踩坑。从时间窗口看，在模型能力竞赛白热化的阶段，分出精力做底层适配，意味着可能被竞争对手拉开节奏。</p>\n  <p>&nbsp;</p>\n  <p>上海财经大学特聘教授胡延平分析称，如果DeepSeek V4和R2被实证从训练到推理能够在国产芯片上跑出世界一流的水平，并且成本更低，就有希望大幅度摆脱对海外算力的依赖，打破黄仁勋借SemiAnalysis给自己贴的那张“Token之王”的标签。</p>\n  <p>&nbsp;</p>\n  <p>除了迭代基础模型，DeepSeek 创始人梁文锋近期开始密集布局产品的落地与商业化。据《晚点》报道称，梁文锋开始更多提及产品化和商业化，组建产品团队，招聘Agent方向产品经理，从纯模型研发向应用层延伸。</p>\n  <p>文 | 雅萱 编辑 | 叶锦言</p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=c69131c7&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FWnW3iaN9DLxzticRtia45cnkA8xgerGef6xnklIMiapLVn4lvhl8gNDZ8iazPOl6P9wbsTVyaCf2mfnpestZVdQB5kErK7yssEoWicFU5g19v1Lico%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=586ecd54&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FWnW3iaN9DLxyOvW1RgH05QtIDuOjpgwz7Df7mAWV5xCyh3Rt0uJSgdHjQiajJn9mWQnia4bPLQibiaQBaThZ789T2YMw55Y4OoicyicvD3U1T89YmE%2F0%3Fwx_fmt%3Djpeg\"></p>\n  <p><a href=\"https://wechat2rss.bestblogs.dev/link-proxy/?k=2df734d6&amp;r=1&amp;u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIwMTY1NDg4Nw%3D%3D%26mid%3D2247525227%26idx%3D1%26sn%3D215095813343526311e1247af73367a6\">跳转微信打开</a></p>\n </body>\n</html>",
+  "aiSummary": "本文报道了 DeepSeek V4 的发布预期、技术特性及对国产算力适配的战略布局，探讨了其在模型能力与商业化落地上的最新进展。",
+  "oneSentenceSummary": "本文报道了 DeepSeek V4 的发布预期、技术特性及对国产算力适配的战略布局，探讨了其在模型能力与商业化落地上的最新进展。",
+  "summary": "文章汇总了关于 DeepSeek V4 的最新行业动态与技术传闻。DeepSeek V4 预计将于 4 月下旬发布，核心亮点包括万亿参数规模、百万级上下文窗口，以及基于 mHC、Engram 和 DSA 稀疏注意力机制的底层优化。文章特别强调了 DeepSeek 在国产算力适配上的战略投入，通过与华为等国产芯片商的深度合作，试图打破对海外算力的依赖。此外，DeepSeek 创始人梁文锋正加速布局产品化与商业化，组建产品团队并向 Agent 应用层延伸，标志着公司从纯模型研发向应用落地的战略转型。",
+  "mainPoints": [
+    {
+      "point": "DeepSeek V4 预计 4 月下旬发布，主打万亿参数与百万级上下文。",
+      "explanation": "通过 mHC 训练稳定性技术、Engram 长程记忆优化及 DSA 稀疏注意力机制，V4 旨在实现超长上下文处理能力。"
+    },
+    {
+      "point": "深度适配国产算力，挑战 CUDA 生态壁垒。",
+      "explanation": "DeepSeek 优先向国产芯片商开放访问权限，在算子库重构、并行策略及通信优化上投入巨大，旨在实现模型在国产硬件上的世界一流性能。"
+    },
+    {
+      "point": "战略重心转向产品化与商业化落地。",
+      "explanation": "创始人梁文锋开始密集布局产品团队，重点发力 Agent 方向，推动从底层模型研发向应用层生态的延伸。"
+    }
+  ],
+  "keyQuotes": [
+    "如果 DeepSeek V4 和 R2 被实证从训练到推理能够在国产芯片上跑出世界一流的水平，并且成本更低，就有希望大幅度摆脱对海外算力的依赖。",
+    "切换到国产芯片，意味着算子库重构、并行策略重设计、通信开销重优化，每一个环节都可能踩坑。"
+  ],
+  "tags": [
+    "DeepSeek",
+    "大语言模型",
+    "国产算力",
+    "模型架构",
+    "商业化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 82,
+  "wordCount": 1055,
+  "domain": "mp.weixin.qq.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_bd1a99",
+  "sourceName": "深网腾讯新闻",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775812860000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 09:21:00"
+}

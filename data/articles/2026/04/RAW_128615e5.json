@@ -1,0 +1,53 @@
+{
+  "id": "RAW_128615e5",
+  "title": "我制作了一个 10 题测试。上线 1 天，1934 人参与。这是我的心得 — LessWrong",
+  "url": "https://www.lesswrong.com/posts/tNiKy2JFnoBKq4eGd/i-created-a-10-question-quiz-after-1-day-1934-people-have",
+  "date": "2026-04-10 02:49:49",
+  "author": "Convexly",
+  "siteName": "LessWrong",
+  "content": "<html>\n <head></head>\n <body>\n  <div>\n   <div>\n    <p id=\"block0\"><span>I've been working on a new platform, the basis of which is to help users learn to make better decisions. To draw some attention to it, I built a 10-question calibration quiz that I then posted to Hacker News. The quiz shows 10 questions that pull from a 200 question pool. The questions cover topics like business, markets, cognition, science, history, statistics, and geography. Each question can be answered with true, false, and uncertain with an attached confidence slider. The output is a Brier score.</span></p>\n    <p id=\"block1\"><span>I did not expect almost 2000 people to take it in about 24 hours. </span></p>\n    <p id=\"block2\"><span>The numbers:</span></p>\n    <ul>\n     <li value=\"1\" id=\"block3\"><span>Mean Brier score: 0.226</span></li>\n     <li value=\"2\" id=\"block4\"><span>44.5% were overconfident (Brier &gt; 0.25 with calibration gap &gt; 0.05)</span></li>\n     <li value=\"3\" id=\"block5\"><span>31% were reasonably calibrated (Brier 0.18-0.25)</span></li>\n     <li value=\"4\" id=\"block6\"><span>15% were well calibrated (Brier &lt; 0.18)</span></li>\n     <li value=\"5\" id=\"block7\"><span>~9% were genuinely good (Brier &lt; 0.10)</span></li>\n    </ul>\n    <p id=\"block8\"><span>The distribution roughly matches what you would expect from Tetlock's work, though I thought, given the technical nature of HN, that the scores would be more skewed. </span></p>\n    <p id=\"block9\"><span>Even more interestingly was that the questions most got wrong were common misconceptions. There is a question about die probability (the odds of rolling a 6 six times in a row) that users got wrong in both directions. Overall, the base rate questions were the ones users got wrong the most. </span></p>\n    <p id=\"block10\"><span>Another thing I noticed was that users also used the confidence slider almost the same way. Most users placed the slider between 70-80% on almost all of their answers, so pretty consistent with the narrow comfort zone pattern. Very few in the 50-60% range. Almost nobody used 95-100% correctly. </span>\n     <br>\n     <br>\n     <span>What I actually wanted to do was use the quiz as a funnel to the actual platform I'm building. I made it as a marketing tool to be honest. Of the 1934, as of writing, that took the quiz, I got 74 people to sign up, and only about 16 people created an account and are actively using the decision tracking features that are built-in to the platform. </span>\n     <br>\n     <br>\n     <span>Still trying to figure out what to do with this. The quiz clearly hit something (the title of my original post was 'I built a 2-min quiz that shows you how bad you are at estimating' so maybe it was just provocative), but the outcome was a conversion rate of 0.8%. Still mulling over how to bridge the gap between a fun 2 minute quiz to the actual product in the background. </span></p>\n    <p id=\"block11\"><span>If anyone has done something similar, ie. building a free tool that got traction but saw almost no conversion, I'd be curious to see what worked for you.</span>\n     <br>\n     <br>\n     <span>The quiz is still live at </span><span><span><a href=\"https://convexly.app/try\" rel=\"nofollow\"><span>https://convexly.app/try</span></a></span></span><span> if you want to give it a go!</span></p>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "一位开发者分享了利用病毒式传播的校准测试作为营销漏斗的案例研究，揭示了用户决策模式的洞察，以及将休闲工具用户转化为平台忠实用户的挑战。",
+  "oneSentenceSummary": "一位开发者分享了利用病毒式传播的校准测试作为营销漏斗的案例研究，揭示了用户决策模式的洞察，以及将休闲工具用户转化为平台忠实用户的挑战。",
+  "summary": "作者制作了一个 10 题校准测试，旨在为新的决策平台引流，并将其发布在 Hacker News 上。24 小时内，近 2000 人参与了测试。数据表明，44.5% 的用户存在过度自信，大多数参与者无论题目如何，都倾向于将置信度集中在 70%-80% 之间。虽然该测试成功带来了流量，但在转化漏斗方面表现不佳，活跃用户转化率仅为 0.8%。本文坦诚地分析了病毒式参与和产品市场契合度之间的鸿沟，并探讨了如何更好地弥合这一差距。",
+  "mainPoints": [
+    {
+      "point": "校准测试揭示了人类过度自信的可预测模式。",
+      "explanation": "来自近 2000 名用户的数据显示，44.5% 的人表现出过度自信，大多数用户未能充分利用置信度滑块的范围，而是倾向于 70%-80% 的狭窄“舒适区”。"
+    },
+    {
+      "point": "病毒式参与并不会自动转化为产品采用。",
+      "explanation": "尽管测试在吸引流量方面取得了成功，但向实际平台的转化率仅为 0.8%，这凸显了将“趣味”互动转化为持续产品使用习惯的难度。"
+    },
+    {
+      "point": "即便在技术受众中，忽视基础概率依然是一种显著的认知偏差。",
+      "explanation": "作者观察到，无论技术背景如何，用户在处理涉及基础概率和常见误区的题目时，始终表现出困难。"
+    }
+  ],
+  "keyQuotes": [
+    "大多数用户在几乎所有答案上都将滑块放在 70%-80% 之间，这与狭窄舒适区的模式非常一致。",
+    "这个测试显然击中了某种需求……但结果是 0.8% 的转化率。",
+    "我仍在思考如何弥合从 2 分钟趣味测试到后台实际产品之间的鸿沟。"
+  ],
+  "tags": [
+    "增长黑客",
+    "产品营销",
+    "转化率",
+    "决策",
+    "校准"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 85,
+  "wordCount": 446,
+  "domain": "lesswrong.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PD_PM",
+  "mainDomain": "Product_Development",
+  "sourceId": "SOURCE_e7173a6f",
+  "sourceName": "LessWrong",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775789389000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 02:49:49"
+}

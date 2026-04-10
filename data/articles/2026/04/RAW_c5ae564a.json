@@ -1,0 +1,52 @@
+{
+  "id": "RAW_c5ae564a",
+  "title": "Orion 氦气泄漏对 Artemis II 再入大气层无威胁，但需进行重新设计",
+  "url": "https://arstechnica.com/space/2026/04/nasa-homes-in-on-likely-redesign-to-fix-orion-spacecrafts-leaky-valves/",
+  "date": "2026-04-10 01:08:32",
+  "author": "Stephen Clark",
+  "siteName": "Ars Technica",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Apart from pesky issues with the <a href=\"https://arstechnica.com/space/2026/04/artemis-ii-is-going-so-well-that-were-left-to-talk-about-frozen-urine/\">spacecraft’s toilet and waste disposal system</a>, most of the Artemis II mission has proceeded like clockwork. NASA has made few changes to the flight plan since the launch of the lunar flyby mission April 1.</p>\n  <p>But ground controllers revamped the timeline Wednesday as the Artemis II astronauts zoomed toward Earth after a close <a href=\"https://arstechnica.com/space/2026/04/the-artemis-ii-mission-sends-back-stunning-images-of-the-far-side-of-the-moon/\">encounter with the Moon</a> earlier this week. The four astronauts were supposed to take manual control of their Orion spacecraft, named <em>Integrity,&nbsp;</em>for a piloting demonstration Wednesday night.</p>\n  <p>Instead, mission managers canceled the demo to make time for an additional test of the ship’s propulsion system. The goal was to gather data on a “small leak” of helium gas, which Orion uses to push propellant through a series of tanks and pipes to feed the spacecraft’s rocket engines, said Jeff Radigan, NASA’s lead flight director for the Artemis II mission.</p>\n  <p>The spacecraft burns hydrazine fuel mixed with an oxidizer, nitrogen tetroxide, to power its main engine and thrusters for in-space maneuvers. The leak on Artemis II is in the helium pressure supply to the oxidizer side.</p>\n  <p>“The leak is not to space. It’s internal to the system across some of our valves, and we really need to characterize that to see what, if any, modifications we might need to make in the future,” Radigan said.</p>\n  <p>The valves are inside the European-built service module, which the Orion spacecraft will jettison just before reentering the atmosphere Friday evening. The Orion crew module will guide astronauts Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen to a safe splashdown in the Pacific Ocean. The service module will burn up in the atmosphere.</p>\n  <h2>Plenty of margin</h2>\n  <p>The helium leak has not affected the propulsion system’s performance so far. “All of our burns have performed nominally,” Radigan said.</p>\n </body>\n</html>",
+  "aiSummary": "NASA 正在调查 Artemis II 任务期间 Orion 飞船服务舱推进系统中出现的轻微内部氦气泄漏，确认其不会对再入大气层造成风险，但需要进行未来的设计改进。",
+  "oneSentenceSummary": "NASA 正在调查 Artemis II 任务期间 Orion 飞船服务舱推进系统中出现的轻微内部氦气泄漏，确认其不会对再入大气层造成风险，但需要进行未来的设计改进。",
+  "summary": "Artemis II 任务虽然总体成功，但 Orion 飞船“Integrity”号的推进系统出现了一个轻微的技术问题，即氦气泄漏。该泄漏位于欧洲制造的服务舱内，涉及氧化剂侧的氦气压力供应。NASA 飞行控制人员优先收集了有关此次泄漏的数据，导致原定的一项手动驾驶演示被取消。NASA 官员强调，泄漏是系统内部的，并未向太空排放，没有影响推进性能，也不会对即将到来的大气层再入和溅落造成威胁。调查结果将为未来任务所需的阀门重新设计提供参考。",
+  "mainPoints": [
+    {
+      "point": "Orion 服务舱内发现氦气泄漏。",
+      "explanation": "泄漏发生在氧化剂氦气压力供应系统的阀门之间，而非向太空排放，目前未影响推进性能。"
+    },
+    {
+      "point": "为优先进行系统特性分析而做出的操作调整。",
+      "explanation": "任务控制中心取消了原定的手动驾驶演示，以便腾出时间收集有关推进系统行为的诊断数据。"
+    },
+    {
+      "point": "对任务安全或再入大气层无影响。",
+      "explanation": "NASA 确认泄漏完全在安全范围内，对机组人员返回没有威胁，但确实需要为后续任务重新设计阀门系统。"
+    }
+  ],
+  "keyQuotes": [
+    "泄漏并非通向太空。它是系统内部某些阀门之间的泄漏，我们确实需要对其进行特性分析，以确定未来是否需要进行任何修改。",
+    "氦气泄漏目前尚未影响推进系统的性能。"
+  ],
+  "tags": [
+    "NASA",
+    "Artemis II",
+    "Orion",
+    "太空探索",
+    "航空航天工程"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 302,
+  "domain": "arstechnica.com",
+  "category": "Business_Tech",
+  "aiSubCategory": null,
+  "mainDomain": "Business_Tech",
+  "sourceId": "SOURCE_ab0676ec",
+  "sourceName": "Ars Technica",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775783312000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 01:08:32"
+}

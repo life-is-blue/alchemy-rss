@@ -1,0 +1,54 @@
+{
+  "id": "RAW_2e3b6241",
+  "title": "当产品经理尝试 AI 编程会发生什么",
+  "url": "https://hackernoon.com/what-happens-when-a-pm-tries-ai-coding?source=rss",
+  "date": "2026-04-10 02:44:32",
+  "author": "Michal Kadák",
+  "siteName": "HackerNoon",
+  "content": "<html>\n <head></head>\n <body>\n  <p>\\ No, no, I am not. But I managed to extend an enterprise-grade product with a new functionality. Does it work? Yes. Was it painful? Also yes. Is the code any good? Ehm. Let’s dive in, shall we?</p>\n  <p>If you read my <a href=\"https://hackernoon.com/the-synthetic-web-could-break-ai-from-within\">last piece</a> on the “Synthetic Web,” you know I believe AI is a massive lever for productivity, but it requires a human to inject the variance, the taste, and the strategic direction.</p>\n  <p>Recently, I decided to skip the vibe coding phase of building something super simple from scratch. The plethora of overhyped YouTube influencers has already established that you can prompt a new app, website, or Chrome extension. Impressive, but not what I am looking for.</p>\n  <p>As a Group Product Manager overseeing content creation tools at Emplifi, I spend my days in Productboard, Jira, and strategy meetings. I speak in User Stories, Customer Feedback, Market Trends, and Workflow Optimization. I do&nbsp;<em>not</em>&nbsp;speak fluent JavaScript. I am not a developer. I was one 11 years ago, but the skill is rusty, to say it nicely, and I worked in C#.</p>\n  <p>Armed with this diminishing coding experience, I wanted to test the limits of what a PM could build using modern agentic tools. The goal? Build a custom domain URL shortener integration for the&nbsp;<strong>Emplifi Publisher</strong>.</p>\n  <h2 id=\"theusecase\">The Use Case</h2>\n  <p>When you are scheduling a massive multi-channel campaign through the Publisher, having a generic short link often breaks the brand experience. The goal was simple: allow brands to plug in their paid Bitly accounts directly into the Publisher workflow, enabling them to automatically use their custom, branded domains for shortened links.</p>\n  <p>To build this, I armed myself with Cursor and Claude. What followed was a rollercoaster of AI magic and humbling reality checks.</p>\n  <p><img src=\"https://image.jido.dev/20260410105243_1*o1lAdjv3FfZ17n6x06z_Uw.png\" alt=\"\"></p>\n  <h2 id=\"screenshotdebuggingfeelslikewizardry\">Screenshot Debugging Feels Like Wizardry</h2>\n  <p>Let’s start with the impressive part. Getting the initial skeleton of the integration up and running was incredibly fast. I described the business logic, pointed the machine in the right direction within the vast space of our enterprise suite, and Claude generated the code.</p>\n  <p>But code rarely works on the first try. When I hit errors, I discovered one of the most mind-bending capabilities of multimodal AI: visual debugging. I would literally take a screenshot of the error trace in my console, paste it into the prompt, and watch the AI instantly diagnose the issue and rewrite the function. I am aware I am using a multibillion-dollar neural network that read the whole Stack Overflow, but it still felt a tiny bit condescending when the first response was:</p>\n  <blockquote>\n   <p><em>The error is clear. Let me check where to fix it.</em></p>\n  </blockquote>\n  <p>And it did, the fragile ego of a human soul was crushed and defeated in a few seconds by a server farm. But he who laughs last, laughs longest. And it was I who laughed last, and cried because the solution stopped loading with no meaningful error to screenshot.</p>\n  <p><img src=\"https://image.jido.dev/20260410105243_1*U_MNkEBmy-uVzL8kU-RIQw.png\" alt=\"\"></p>\n  <h2 id=\"theillusionofzerofrictiondevelopment\">The Illusion of “Zero-Friction” Development</h2>\n  <p>Here is the candid truth: it was a painful process. The tech world loves to push the narrative that AI will turn anyone into a 10x developer overnight. That is a dangerous oversimplification.</p>\n  <p>Because I don’t actually understand the code being generated, I lacked the architectural foresight to see when the AI was painting us into a corner. The generated code is not perfect. It’s definitely not elegant. It’s a brute-force statistical output that happens to achieve the desired state. It would not pass the code review.</p>\n  <p>At one point, the entire solution just refused to load. The UI was dead, the console was full of useless warnings, and feeding screenshots back to Claude just resulted in the AI hallucinating fixes that broke three other things. I guess the error is no longer clear, huh? That will teach ya! But now what?</p>\n  <p>I had to go old-school, walk over to a&nbsp;<em>real</em>&nbsp;Emplifi engineer, and ask for help. It took an experienced human developer looking at the broader context of our codebase to untangle the knot that the AI and I had created. After the human touch, I was able to prompt away again.</p>\n  <p><img src=\"https://image.jido.dev/20260410105243_1*-mgoC9Qk2lAwSm08O8Xw8Q.png\" alt=\"\"></p>\n  <h2 id=\"specdrivendevelopment\">Spec-Driven Development</h2>\n  <p>The feature works. You can add a Bitly token and generate custom branded links. But building it taught me exactly where the current limits of AI-coding lie, at least for a non-technical PM.</p>\n  <p>My next step is to move toward&nbsp;<strong>Spec-Driven Development</strong>.</p>\n  <p>In the future, I won’t just ask the AI to build a new feature according to the business specification and let it rip. The prompt will be a rigorous, detailed specification that includes Emplifi’s specific development practices, our component library standards, and our architectural constraints. If we want AI-generated code to fit seamlessly into an enterprise suite without breaking the build, we have to feed it the right boundaries. We have to give it the map before asking it to drive.</p>\n  <p>AI isn’t replacing our engineering team anytime soon. We must understand the code. Otherwise, one day your AI agent breaks the massive solution without a clear clue what went wrong, and nobody would understand what is happening under the hood. If you break a simple app generated entirely by AI with no way back, you can always generate it from scratch using the spec. We can argue if it is efficient or not, but it is clear that this tactic doesn’t work for massive systems already in production.</p>\n  <h2 id=\"thehiddencostofcognitiveoverload\">The Hidden Cost of Cognitive Overload</h2>\n  <p>There is also a hidden, much more dangerous cost to this accessible “magic”: cognitive overload. When AI makes generating a functional component seem as easy as writing a user story, the temptation is to just do it yourself. Suddenly, you aren’t just managing the roadmap and thinking about ROI, GTM, and market. You’re also trying to navigate and maybe even debug JavaScript logic.</p>\n  <p>As Aruna Ranganathan from UC Berkeley’s Haas School of Business recently pointed out (with findings published in the&nbsp;<em>Harvard Business Review</em>&nbsp;and discussed in the&nbsp;<em>Wall Street Journal</em>), AI often leads people to take on&nbsp;<em>more</em>&nbsp;work, not less. Because AI makes these new, complex tasks feel deceptively simple and accessible, it creates a false sense of infinite capacity. We get a short-term productivity high, but Ranganathan warns that this exact dynamic eventually leads to cognitive overload, burnout, worse decision-making, and a declining quality of work. The industry push to ship faster is very real, but just because a PM&nbsp;<em>can</em>&nbsp;brute-force a custom Bitly integration with Cursor doesn’t mean we should absorb the cognitive weight of an entirely new engineering discipline.</p>\n  <p>\\</p>\n </body>\n</html>",
+  "aiSummary": "一位产品经理分享了使用 AI 编程工具构建企业级功能的真实实验，揭示了“感觉编程”的局限性以及规范驱动开发的重要性。",
+  "oneSentenceSummary": "一位产品经理分享了使用 AI 编程工具构建企业级功能的真实实验，揭示了“感觉编程”的局限性以及规范驱动开发的重要性。",
+  "summary": "作者作为 Emplifi 的产品经理，记录了他们尝试使用 Cursor 和 Claude 等 AI 工具为企业级产品构建自定义 Bitly 集成的过程。虽然 AI 实现了快速原型设计和可视化调试，但实验也暴露了重大缺陷：生成的代码缺乏架构前瞻性，难以维护，最终需要人工工程师介入才能解决复杂问题。文章反驳了“零摩擦”的叙事，强调了在将 AI 生成的代码集成到生产系统时，认知过载的隐性风险以及严谨的规范驱动开发的重要性。",
+  "mainPoints": [
+    {
+      "point": "AI 辅助编程无法替代架构理解。",
+      "explanation": "虽然 AI 可以生成功能性代码片段，但它缺乏企业级代码库的更广泛背景，往往会导致无法达到专业标准的“暴力”解决方案。"
+    },
+    {
+      "point": "从“感觉编程”转向“规范驱动开发”。",
+      "explanation": "为了成功将 AI 生成的代码集成到复杂系统中，开发者必须提供严谨的规范，包括架构约束和库标准，而不是依赖模糊的提示词。"
+    },
+    {
+      "point": "非技术岗位面临的认知过载隐患。",
+      "explanation": "AI 让复杂任务看起来简单得令人产生错觉，诱使产品经理承担工程任务，从而导致倦怠并削弱对核心战略职责的关注。"
+    }
+  ],
+  "keyQuotes": [
+    "科技界热衷于推崇 AI 能让任何人一夜之间成为 10 倍速开发者的叙事。这是一种危险的过度简化。",
+    "因为我并不真正理解生成的代码，所以我缺乏架构上的前瞻性，无法预见 AI 何时会将我们引入死胡同。",
+    "在让它开车之前，我们必须先给它地图。",
+    "AI 往往导致人们承担更多的工作，而不是更少。"
+  ],
+  "tags": [
+    "AI 编程",
+    "产品管理",
+    "Cursor",
+    "Claude",
+    "软件工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1090,
+  "domain": "hackernoon.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_e75fe46b",
+  "sourceName": "HackerNoon",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775789072000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 02:44:32"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_5b0ba578",
+  "title": "Google Cloud 强调其在 PostgreSQL 核心能力方面的持续投入",
+  "url": "https://www.infoq.com/news/2026/04/google-cloud-postgresql/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-10 09:30:00",
+  "author": "Robert Krzaczyński",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Cloud has <a href=\"https://opensource.googleblog.com/2026/03/google-cloud-investing-in-the-future-of-postgresql.html\">outlined</a> its recent technical contributions to PostgreSQL, emphasizing improvements in logical replication, upgrade processes, and overall system stability. The update reflects ongoing collaboration with the upstream community and focuses on enhancements to the core engine aimed at addressing scalability, replication, and operational challenges.</p>\n   <p>The update summarizes engineering work carried out between July and December 2025, with a strong focus on advancing logical replication toward active-active configurations. One of the key developments is the introduction of automatic conflict detection, which allows the database to identify row-level conflicts during replication without manual intervention. This addresses a long-standing challenge in multi-node write setups, where conflicting updates could previously stall replication.</p>\n   <p>The direction toward active-active replication has also sparked discussion in the community about trade-offs in consistency models. Commenting on this, Franck Pachot <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7446825277252575232?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7446825277252575232%2C7446860386299039744%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287446860386299039744%2Curn%3Ali%3Aactivity%3A7446825277252575232%29\">noted</a>:</p>\n   <blockquote>\n    <p>Comparing 2-way logical replication with conflict resolution and Oracle RAC or Distributed SQL like CockroachDB or YugabyteDB is a misunderstanding of database consistency. One is last write wins, the other is ACID</p>\n   </blockquote>\n   <p>At the same time, others see the progress as a broader signal of PostgreSQL’s evolution in enterprise environments. Janardhan Korapala <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7446825277252575232?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7446825277252575232%2C7447481648566300673%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287447481648566300673%2Curn%3Ali%3Aactivity%3A7446825277252575232%29\">wrote</a>:</p>\n   <blockquote>\n    <p>Massive milestone. When hyperscalers upstream enterprise-grade features like active-active replication, it signals that Postgres is now the undisputed enterprise default.</p>\n   </blockquote>\n   <p>Additional improvements extend logical replication beyond table data to include sequences, reducing the need for manual synchronization during migrations or version upgrades. The team also contributed fixes to issues such as self-deadlocks in subscription management, which could occur when replication commands attempted to access locked resources on the same server.</p>\n   <p>A notable part of the work focuses on improving upgrade reliability and performance. Enhancements to pg_upgrade improve the management of large objects, reducing upgrade times for large-scale deployments. Additional updates increase resilience by retaining necessary WAL data during upgrades and ensuring that schema constraints are preserved correctly.</p>\n   <p>Beyond replication and upgrades, Google Cloud engineers contributed several bug fixes to improve robustness. These include handling invalid index pages in diagnostic tools, resolving issues with loading extensions from nested paths, and strengthening WAL flush logic to ensure durability in edge cases.</p>\n   <p>The company also highlighted ongoing work on future features, including a structured conflict log for replication, improvements to parallel data export in pg_dump, and enhancements to large-scale data handling.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google Cloud Highlights Ongoing Work on PostgreSQL Core Capabilities\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Robert Krzaczyński\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/google-cloud-postgresql/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775813400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Google Cloud 详细介绍了其近期对 PostgreSQL 核心代码的贡献，重点在于推动逻辑复制向双活配置迈进、提高升级可靠性以及增强系统稳定性。",
+  "oneSentenceSummary": "Google Cloud 详细介绍了其近期对 PostgreSQL 核心代码的贡献，重点在于推动逻辑复制向双活配置迈进、提高升级可靠性以及增强系统稳定性。",
+  "summary": "本文报道了 Google Cloud 在 2025 年 7 月至 12 月期间对 PostgreSQL 上游社区的技术贡献。重点工作集中在逻辑复制领域，特别是引入了自动冲突检测功能，以促进双活配置的实现。其他重要改进包括序列复制、针对大对象的 pg_upgrade 性能优化，以及旨在提升系统稳健性和 WAL 持久性的多项 Bug 修复。尽管社区内部对于逻辑复制与分布式 SQL 在一致性权衡方面仍存在持续争论，但这些进展标志着 PostgreSQL 作为企业级数据库标准的地位正在进一步巩固。",
+  "mainPoints": [
+    {
+      "point": "推动逻辑复制向双活配置迈进。",
+      "explanation": "Google 引入了行级自动冲突检测，解决了多节点写入设置中的一个主要瓶颈，此前这些场景通常需要人工干预来解决复制停滞问题。"
+    },
+    {
+      "point": "增强大规模部署下的升级可靠性与性能。",
+      "explanation": "针对 pg_upgrade 的改进专门优化了大对象管理和 WAL 数据保留，显著减少了版本迁移过程中的停机时间并提高了弹性。"
+    },
+    {
+      "point": "关于复制一致性模型的社区讨论。",
+      "explanation": "尽管双活复制是一个里程碑，但专家强调了逻辑复制中的“最后写入胜出”冲突解决机制与分布式 SQL 数据库中完全 ACID 合规性之间的区别。"
+    }
+  ],
+  "keyQuotes": [
+    "关键进展之一是引入了自动冲突检测，这使得数据库能够在复制过程中识别行级冲突，而无需人工干预。",
+    "将带有冲突解决机制的双向逻辑复制与 Oracle RAC 或 CockroachDB、YugabyteDB 等分布式 SQL 进行比较是一种对数据库一致性的误解。前者是最后写入胜出，后者则是 ACID。",
+    "当超大规模云厂商将双活复制等企业级功能贡献到上游时，这标志着 Postgres 现在已成为无可争议的企业级首选。"
+  ],
+  "tags": [
+    "PostgreSQL",
+    "Google Cloud",
+    "逻辑复制",
+    "数据库升级",
+    "双活复制"
+  ],
+  "topicTag": "devops",
+  "readTime": 2,
+  "score": 87,
+  "wordCount": 374,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775813400000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 09:30:00"
+}

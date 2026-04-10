@@ -1,0 +1,54 @@
+{
+  "id": "RAW_ed04c2ee",
+  "title": "Safari 增加对 scrollend 事件的支持，实现主流浏览器基准覆盖",
+  "url": "https://www.infoq.com/news/2026/04/safari-scrollend-support/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-10 09:06:00",
+  "author": "Daniel Curtis",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Safari <a href=\"https://developer.apple.com/documentation/safari-release-notes/safari-26_2-release-notes\">released version 26.2</a> in December, adding support for the <code>scrollend</code> event and marking a significant milestone for the web platform. The release means the event now has baseline browser support across all major browsers, joining Chrome 114, Edge 114, and Firefox 109. The addition closes a longstanding gap in the platform's scroll event model and eliminates the need for developers to rely on brittle workarounds when detecting that scrolling has finished.</p>\n   <p>The <code>scrollend</code> event fires once when scrolling definitively completes, whether triggered by user gestures, keyboard navigation, smooth scrolling, or programmatic JavaScript calls like <code>scrollTo()</code>. <a href=\"https://webkit.org/blog/17640/webkit-features-for-safari-26-2/\">According to WebKit's announcement</a>, the event provides \"a reliable signal that scrolling has finished\" and addresses a problem that has plagued web developers for years. Previously, there was no native way to know when a scroll had truly ended. Developers were forced to guess using timer-based debouncing, typically with a <code>setTimeout()</code> delay of 100 milliseconds or more. This approach was imprecise, unreliable, and led to bugs where events would fire too late or while a user's finger was still down on the screen.</p>\n   <p>Before <code>scrollend</code>, detecting scroll completion required code like this:</p>\n   <pre>\r\n<code class=\"language-jsx language-javascript\">document.onscroll = event =&gt; {\r\n clearTimeout(window.scrollEndTimer)\r\n window.scrollEndTimer = setTimeout(callback, 100)\r\n}\r\n</code></pre>\n   <p>Now, with native browser support, the same result is achieved cleanly:</p>\n   <pre>\r\n<code class=\"language-jsx language-javascript\">document.onscrollend = event =&gt; {\r\n // scrolling has definitively ended\r\n}\r\n</code></pre>\n   <p>The browser handles all the complex evaluation internally, accounting for touch release, pointer release, keypress completion, scroll snap events, and visual viewport scrolling. The event does not fire if the scroll position did not actually change, avoiding spurious triggers.</p>\n   <p>Developer reaction to Safari's implementation has been positive. A <a href=\"https://x.com/birch_js/status/2025077819873919477?s=46\">post on X</a> highlighting the feature noted that it has been a long-awaited addition, outlining the benefits to their app:</p>\n   <blockquote>\n    <p>I’ll now be able to properly save reading progress when the user stops scrolling, rather than having to use flaky poll-based logic...</p>\n   </blockquote>\n   <p>A <a href=\"https://stackoverflow.com/questions/77365907/how-to-know-whether-we-are-scrolling-the-page-or-not\">Stack Overflow discussion</a> from before Safari's support noted that developers needing cross-browser compatibility would require a polyfill, with packages like <code>@af-utils/scrollend-polyfill</code> filling the gap.</p>\n   <p>The practical applications for <code>scrollend</code> are broad. <a href=\"https://developer.chrome.com/blog/scrollend-a-new-javascript-event\">Chrome's developer blog</a> outlined common use cases including syncing carousel scroll positions with dot indicators, lazy-loading content after the user stops scrolling, updating UI based on final scroll position, fetching data after a user scrolls to a new tab, and logging analytics events. The event is particularly valuable for performance-sensitive operations. Running computationally heavy work during an active scroll can degrade the scrolling experience, but <code>scrollend</code> provides the perfect hook to defer that work until scrolling is no longer happening.</p>\n   <p>For teams still supporting older Safari versions, progressive enhancement is straightforward. Developers can detect support with <code>'onscrollend'</code> and fall back to the timer-based approach when the event is unavailable. Polyfills offer another path, automatically using the native event when present and falling back to pointer and scroll event monitoring otherwise. The <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event\">MDN documentation</a> provides comprehensive examples and compatibility tables, noting that the feature is now baseline across all modern browsers.</p>\n   <p>The <code>scrollend</code> event is a reliable, cross-platform API for detecting when scrolling has completed. It fires when the browser finishes animating scroll, when user touch or pointer gestures are released, when keyboard navigation ends, and when programmatic scrolling via APIs like <code>scrollTo()</code> completes. It works on both document-level scrolling and individual scrollable elements, and correctly handles visual viewport interactions like pinch-zoom. For web developers who have spent years working around its absence, Safari 26.2's implementation represents the final piece of a multi-year standards effort that began with Chrome 114 in 2023.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Safari Adds scrollend Event Support, Completing Baseline Browser Coverage\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Daniel Curtis\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/safari-scrollend-support/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775811960000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2748\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Safari 26.2 增加了对 `scrollend` 事件的支持，实现了主流浏览器的基准覆盖，为检测滚动结束提供了一种原生且可靠的方法。",
+  "oneSentenceSummary": "Safari 26.2 增加了对 `scrollend` 事件的支持，实现了主流浏览器的基准覆盖，为检测滚动结束提供了一种原生且可靠的方法。",
+  "summary": "随着 Safari 26.2 的发布，`scrollend` 事件已在包括 Chrome、Edge 和 Firefox 在内的所有主流浏览器中实现了基准支持。这一原生 API 消除了开发者此前为了推测滚动何时结束而使用的不精确、基于计时器的变通方案。该事件可以在用户手势、键盘导航或程序化调用后可靠地触发，并考虑了滚动捕捉（scroll snapping）和触摸释放等复杂因素。这一里程碑使得开发者能够将繁重的计算或 UI 更新推迟到滚动完成后再执行，从而实现更简洁的代码和更好的性能。",
+  "mainPoints": [
+    {
+      "point": "`scrollend` 事件实现了浏览器基准支持。",
+      "explanation": "Safari 26.2 的实现补齐了跨浏览器覆盖（Chrome 114+，Firefox 109+），使其成为现代 Web 开发中安全、标准的 API。"
+    },
+    {
+      "point": "原生实现取代了脆弱的基于计时器的变通方案。",
+      "explanation": "开发者不再需要依赖 `setTimeout` 防抖来猜测滚动是否完成，这种方式往往不够精确，且在主动触摸交互期间容易导致 Bug。"
+    },
+    {
+      "point": "该事件为性能优化提供了可靠的信号。",
+      "explanation": "由于该事件仅在滚动明确停止时触发，它为懒加载或分析等计算密集型任务提供了完美的钩子，且不会降低滚动体验。"
+    }
+  ],
+  "keyQuotes": [
+    "此次发布意味着该事件现在在所有主流浏览器中都拥有了基准支持，加入了 Chrome 114、Edge 114 和 Firefox 109 的行列。",
+    "这一新增功能填补了平台滚动事件模型中长期存在的空白，并消除了开发者依赖脆弱变通方案的需求。",
+    "浏览器在内部处理了所有复杂的评估逻辑，包括触摸释放、指针释放、按键完成、滚动捕捉事件以及视觉视口滚动。",
+    "我现在终于可以在用户停止滚动时正确保存阅读进度，而不必再使用不可靠的轮询逻辑了……"
+  ],
+  "tags": [
+    "Safari",
+    "Web 开发",
+    "JavaScript",
+    "浏览器兼容性",
+    "前端工程"
+  ],
+  "topicTag": "frontend-fullstack",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 584,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_FRONTEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775811960000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 09:06:00"
+}

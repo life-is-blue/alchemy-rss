@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f36ece2f",
+  "title": "AI 赋能 Google 搜索，英国餐厅预订变得更简单",
+  "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/ai-mode-restaurants-uk/",
+  "date": "2026-04-10 04:05:00",
+  "author": "Laurian Clemence",
+  "siteName": "The Keyword (blog.google) ",
+  "content": "<html>\n <head></head>\n <body>\n  <uni-article-speakable style=\"height: 55px; margin-bottom: 36px; display: block;\" page-title=\"Booking restaurants in the UK just got easier with AI in Search\" listen-to-article=\"Listen to article\" data-date-modified=\"2026-04-10T04:05:00.734559+00:00\" data-tracking-ids=\"G-HGNBTNCHCQ,G-6NKTLKV14N\" data-voice-list=\"en.ioh-pngnat:Cyan,en.usb-pngnat:Lime\" data-script-src=\"https://www.gstatic.com/readaloud/player/web/api/js/api.js\" data-highlight-mode=\"word-over-paragraph\">\n   <!---->\n   <div id=\"uni-article-speakable\">\n    <!--?lit$62077946476$-->\n    <span width=\"14px\"> \n     <svg width=\"24px\" viewBox=\"0 0 66 66\" xmlns=\"http://www.w3.org/2000/svg\" class=\"uni-spinner uni-spinner--small\">\n      <circle class=\"loader-path\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"7\" cx=\"33\" cy=\"33\" r=\"25\"></circle>\n     </svg> \n    </span>\n   </div>\n  </uni-article-speakable>\n  <!--article text-->\n  <div class=\"module--text module--text__article\" role=\"presentation\" data-analytics-module=\"{\n           &quot;module_name&quot;: &quot;Paragraph&quot;,\n           &quot;section_header&quot;: &quot;Booking restaurants in the UK just got easier with AI in Search&quot;\n         }\">\n   <div class=\"uni-paragraph article-paragraph\" data-component=\"uni-article-paragraph\" data-component-initialized=\"true\">\n    <div class=\"rich-text\">\n     <p data-block-key=\"qbbz3\" class=\"drop-cap\">Planning a night out, a weekend treat, or a dinner with friends just got much easier for people across the UK this week.</p>\n     <p data-block-key=\"5dnkj\">We’re bringing new agentic capabilities to AI Mode in Search, helping those in the U.K. go from planning to booking in just a few steps.</p>\n     <h2 data-block-key=\"a8ssl\">Turn your ideas into bookings</h2>\n     <p data-block-key=\"74hbt\">Users are turning to Google with increasingly detailed requests to find restaurants that meet their specific needs. Google Trends shows searches for “when to book a table” have surged 140% this year, as diners look for spots that can accommodate group sizes, dietary needs, and more. Starting today, AI Mode helps take the hassle out of finding and securing reservations at restaurants across the UK.</p>\n     <p data-block-key=\"1ei69\">Simply describe what you’re looking for with all your needs and preferences. For example, you could try “find a table for two at a dog-friendly Italian restaurant in Shoreditch for Saturday at 7 p.m,” or “Find me a sushi restaurant nearby that has a table for four that also serves vegan tempura,” if you want dinner on the fly.</p>\n     <h2 data-block-key=\"gdi8\">See your options in real time</h2>\n     <p data-block-key=\"fcuqc\">AI Mode will then search across multiple booking platforms and websites to find real-time availability for options that fit what you need. It will show you a curated list to choose from, with direct links so you can finalise your booking through partners like TheFork, Sevenrooms, Resdiary, Mozrest, Foodhub, Dojo and DesignMyNight.</p>\n     <p data-block-key=\"71sv3\">With these updates, AI will handle more of the busywork — so you can spend less time planning and more time having fun.<span class=\"tombstone\"></span></p>\n    </div>\n   </div>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 正在为英国用户的 AI 搜索模式引入全新的智能体功能，实现餐厅发现与实时预订的无缝衔接。",
+  "oneSentenceSummary": "Google 正在为英国用户的 AI 搜索模式引入全新的智能体功能，实现餐厅发现与实时预订的无缝衔接。",
+  "summary": "Google 已针对英国市场更新了搜索中的 AI 模式，集成了智能体功能以简化餐厅预订流程。通过处理包含特定偏好（如饮食需求、位置、人数和时间）的自然语言查询，AI 能够跨多个合作伙伴平台进行搜索，并提供实时可用性信息。该功能旨在减少用户在不同预订网站间手动比对的繁琐工作，使用户能够直接通过 TheFork 和 Sevenrooms 等集成合作伙伴完成预订。",
+  "mainPoints": [
+    {
+      "point": "将智能体功能集成到 Google 搜索中。",
+      "explanation": "AI 现在充当智能体，弥合了意图与行动之间的鸿沟，从单纯的信息检索升级为促进实际的服务预订。"
+    },
+    {
+      "point": "简化复杂的餐饮搜索查询。",
+      "explanation": "用户可以输入高度具体、包含多重约束的请求（例如：允许携带宠物、提供纯素选项、特定时间和地点），AI 会对其进行解析以找到匹配结果。"
+    },
+    {
+      "point": "跨合作伙伴的实时可用性聚合。",
+      "explanation": "通过与 TheFork 和 Sevenrooms 等多个预订平台连接，系统提供了实时可用性的统一视图，显著降低了用户的使用门槛。"
+    }
+  ],
+  "keyQuotes": [
+    "我们正在为搜索中的 AI 模式引入全新的智能体功能，帮助英国用户只需几个步骤即可从计划转为预订。",
+    "AI 模式随后将跨多个预订平台和网站进行搜索，为符合您需求的选择找到实时可用性。",
+    "通过这些更新，AI 将处理更多繁琐的工作——让您可以减少规划时间，享受更多乐趣。"
+  ],
+  "tags": [
+    "Google 搜索",
+    "AI 模式",
+    "智能体 AI",
+    "餐厅预订",
+    "英国市场"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 82,
+  "wordCount": 258,
+  "domain": "blog.google",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_40cd8f",
+  "sourceName": "The Keyword (blog.google) ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775793900000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 04:05:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "RAW_31e74f4d",
+  "title": "Meta 的新 AI 向我索要原始健康数据——并给出了糟糕的建议",
+  "url": "https://www.wired.com/story/metas-new-ai-asked-for-my-raw-health-data-and-gave-me-terrible-advice/",
+  "date": "2026-04-10 05:30:00",
+  "author": "Reece Rogers",
+  "siteName": "WIRED",
+  "content": "<html>\n <head></head>\n <body>\n  <p><span class=\"lead-in-text-callout\">Meta’s Superintelligence Labs</span> launched its first generative AI model, called <a href=\"https://www.wired.com/story/muse-spark-meta-open-source-closed-source/\" class=\"text link\">Muse Spark</a>, earlier this week. It is currently available through the <a href=\"https://www.wired.com/tag/meta/\" class=\"text link\">Meta</a> AI app, but the company plans to integrate Muse Spark across all of its platforms—including Facebook, Instagram, and WhatsApp—in the coming weeks.</p>\n  <p class=\"paywall\">Meta claims that Muse Spark was designed, in part, to be better at answering questions people have about their <a href=\"https://www.wired.com/category/science/health-medicine/\" class=\"text link\">health</a>. The company even worked with “over 1,000 physicians to curate training data that enables more factual and comprehensive responses,” according to Meta’s <a data-offer-url=\"https://ai.meta.com/blog/introducing-muse-spark-msl/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://ai.meta.com/blog/introducing-muse-spark-msl/&quot;}\" href=\"https://ai.meta.com/blog/introducing-muse-spark-msl/\" rel=\"nofollow noopener\" target=\"_blank\">announcement blog</a>.</p>\n  <p class=\"paywall\">As the new model rolls out to millions of users, I tested Muse Spark to see how it would respond to health-related questions. When I asked how it could help me, the bot listed off a few basic uses, like building a <a href=\"https://www.wired.com/video/watch/tech-support-wi-tech-support-workout-support\" class=\"text link\">workout routine</a> or generating questions to ask my doctor, but a direct request for my health data stood out:</p>\n  <p class=\"paywall\">“Paste your numbers from a fitness tracker, glucose monitor, or a lab report. I’ll calculate trends, flag patterns, and visualize them,” read the Meta AI output. “Example: ‘Here are my last 10 blood pressure readings—is there a pattern?’”</p>\n  <p class=\"paywall\">Nudging users to upload their health data is not unique to Meta. OpenAI’s <a href=\"https://www.wired.com/tag/chatgpt/\" class=\"text link\">ChatGPT</a> and Anthropic’s <a href=\"https://www.wired.com/tag/claude/\" class=\"text link\">Claude</a> both have chatbot modes designed specifically for helping users understand their health and make decisions. For example, you can open Claude and connect it to your Apple or Android health data with just the flip of an in-app toggle. Then, Claude will use that information as part of its answers. Google also lets you upload medical data to Fitbit for its <a href=\"https://www.wired.com/story/fitbit-app-ai-personal-health-coach/\" class=\"text link\">AI health coach to parse</a>.</p>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--sponsor-product\"></div>\n  <figure class=\"AssetEmbedWrapper-iJvQnD cOWUYC asset-embed\">\n   <div class=\"AssetEmbedAssetContainer-fnduJP iaVSwI asset-embed__asset-container\">\n    <span class=\"SpanWrapper-kFnjvc eKnjjD responsive-asset AssetEmbedResponsiveAsset-gaAbQ hXaxHA asset-embed__responsive-asset\"><picture class=\"ResponsiveImagePicture-jKunQM gjCCFj AssetEmbedResponsiveAsset-gaAbQ hXaxHA asset-embed__responsive-asset responsive-image\"><img alt=\"Image may contain Text Menu Food and Meal\" loading=\"lazy\" class=\"ResponsiveImageContainer-dkeESL cQPiWi responsive-image__image\" srcset=\"https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_120,c_limit/02_Nutrition.jpg 120w, https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_240,c_limit/02_Nutrition.jpg 240w, https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_320,c_limit/02_Nutrition.jpg 320w, https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_640,c_limit/02_Nutrition.jpg 640w, https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_960,c_limit/02_Nutrition.jpg 960w, https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_1280,c_limit/02_Nutrition.jpg 1280w, https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_1600,c_limit/02_Nutrition.jpg 1600w\" sizes=\"100vw\" src=\"https://media.wired.com/photos/69d82844cf5159df701b2257/master/w_1600%2Cc_limit/02_Nutrition.jpg\"></picture></span>\n   </div>\n   <div class=\"CaptionWrapper-bpPcvW iDPSlt caption AssetEmbedCaption-eZIMNW gMgneI asset-embed__caption\" data-testid=\"caption-wrapper\">\n    <span class=\"BaseText-fEwdHD CaptionCredit-cUgOGk iQbGEh hRFzlA caption__credit\">Courtesy of Meta</span>\n   </div>\n  </figure>\n  <div class=\"AdWrapper-fGiLaV iGDxYx ad ad--in-content\"></div>\n  <p class=\"paywall\">Handing over this kind of data to any AI tool is a risky decision, even if users are able to generate personalized advice. “Usage of these models can be really tricky,” says <a data-offer-url=\"https://biostat.duke.edu/profile/monica-agrawal\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://biostat.duke.edu/profile/monica-agrawal&quot;}\" href=\"https://biostat.duke.edu/profile/monica-agrawal\" rel=\"nofollow noopener\" target=\"_blank\">Monica Agrawal</a>, an assistant professor at Duke University and cofounder of Layer Health, an AI platform for hospitals to examine medical charts. “The more information you give it, the more context it has about you and, potentially, it can provide better responses. But on the flip side, there are major privacy concerns to sharing your health data without protections.”</p>\n  <p class=\"paywall\">Agrawal is concerned about users uploading sensitive data to chatbots since these commonly used AI tools are not compliant with HIPAA protections, the landmark US law that guards patients from having their sensitive health information exposed. Layer Health is HIPAA compliant. It’s a high standard of privacy that people are used to experiencing during doctor visits. The information someone shares with a bot is much more loosely regulated, even if it's their clinical lab result.</p>\n  <p class=\"paywall\">Anything you share in a chat with Meta AI may be stored and used to train future AI models. “We keep training data for as long as we need it on a case-by-case basis to ensure an AI model is operating appropriately, safely, and efficiently,” reads Meta’s <a data-offer-url=\"https://www.facebook.com/privacy/genai\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://www.facebook.com/privacy/genai&quot;}\" href=\"https://www.facebook.com/privacy/genai\" rel=\"nofollow noopener\" target=\"_blank\">privacy policy about generative AI</a>. Meta has also stated it may <a data-offer-url=\"https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/\" class=\"external-link text link\" data-event-click=\"{&quot;element&quot;:&quot;ExternalLink&quot;,&quot;outgoingURL&quot;:&quot;https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/&quot;}\" href=\"https://about.fb.com/news/2025/10/improving-your-recommendations-apps-ai-meta/\" rel=\"nofollow noopener\" target=\"_blank\">tailor advertisements</a> for users based on their interactions with the AI features.</p>\n </body>\n</html>",
+  "aiSummary": "本文探讨了 Meta 新推出的 Muse Spark AI 模型所带来的隐私风险和潜在不准确性，该模型诱导用户分享敏感的个人健康数据以进行分析。",
+  "oneSentenceSummary": "本文探讨了 Meta 新推出的 Muse Spark AI 模型所带来的隐私风险和潜在不准确性，该模型诱导用户分享敏感的个人健康数据以进行分析。",
+  "summary": "Meta 推出了集成在其平台中的生成式 AI 模型 Muse Spark，并宣称其具备提供健康相关见解的能力。然而，作者强调了该模型诱导用户上传来自健身追踪器和实验室报告的原始健康数据所带来的重大隐患。专家警告称，这些 AI 工具并不符合 HIPAA 合规性，这意味着敏感的医疗信息可能会被存储、用于未来的模型训练，或被利用来定制广告。本文为 AI 驱动的健康便利性与数据隐私之间的权衡敲响了警钟。",
+  "mainPoints": [
+    {
+      "point": "AI 模型正越来越多地索取敏感的个人健康数据。",
+      "explanation": "Meta 的 Muse Spark 以及来自 OpenAI 和 Anthropic 的类似工具，正在积极引导用户输入来自可穿戴设备和实验室报告的原始数据，以生成个性化的健康见解。"
+    },
+    {
+      "point": "由于缺乏 HIPAA 合规性，存在重大的隐私风险。",
+      "explanation": "与临床环境不同，面向消费者的 AI 聊天机器人不受 HIPAA 法规约束，这意味着共享的健康数据可能无法免受泄露或滥用的风险。"
+    },
+    {
+      "point": "用户数据可能被重新用于模型训练和定向广告。",
+      "explanation": "Meta 的隐私政策显示，与 AI 功能的交互可能会被存储以用于训练未来的模型，并用于广告定位，这在健康相关查询方面造成了利益冲突。"
+    }
+  ],
+  "keyQuotes": [
+    "将此类数据交给任何 AI 工具都是一个冒险的决定，即使这些工具能够生成个性化的建议。",
+    "你提供的信息越多，它对你的了解就越全面，理论上也能提供更好的回答。但另一方面，在没有保护措施的情况下分享健康数据存在重大的隐私隐患。",
+    "你在与 Meta AI 的聊天中分享的任何内容都可能被存储并用于训练未来的 AI 模型。"
+  ],
+  "tags": [
+    "Meta",
+    "Muse Spark",
+    "AI 隐私",
+    "健康数据",
+    "HIPAA"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 85,
+  "wordCount": 509,
+  "domain": "wired.com",
+  "category": "Business_Tech",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_11543bce",
+  "sourceName": "WIRED",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775799000000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-10 05:30:00"
+}
