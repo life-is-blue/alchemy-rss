@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 08:14:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 11:01:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -278,9 +278,7 @@
 
 ### [适合小企业的-5-个-Docker-容器](https://www.kdnuggets.com/5-docker-containers-for-small-business)
 
-2026-04-09 12:00:30 | 标签: Docker, 小企业, 数据基础设施, 自托管, DevOps
-
-> 本文探讨了小企业面临的常见基础设施挑战，例如数据孤岛和高昂的 SaaS 成本。作者提出了一种基于 Docker 的容器化自托管解决方案，旨在构建稳健的企业级数据生态系统。文中推荐了五款特定工具：用于基础设施管理的 Portainer、作为可靠数据底座的 PostgreSQL、用于自动化数据集成的 Airbyte、用于便捷商业智能分析的 Metabase，以及用于工作流自动化的 n8n。通过部署这些容器，精简团队能够实现数据操作的集中化，提高效率，并在无需高昂托管服务开销的情况下扩展业务能力。
+2026-04-09 12:00:30
 
 
 
@@ -466,17 +464,13 @@
 
 ### [我是如何为退休账户构建符合-SOC-2-标准的云原生数据湖的](https://hackernoon.com/how-i-built-a-soc-2-compliant-cloud-native-data-lake-for-retirement-accounts?source=rss)
 
-2026-04-09 14:47:45 | 标签: SOC 2, 数据湖, AWS, 云架构, 合规性
-
-> 作者展示了一个稳健的云原生数据平台架构，旨在满足退休计划数据的 SOC 2 Type II 要求。通过将合规性重新定义为威胁模型——重点关注未经授权的访问、个人身份信息（PII）泄露、模式漂移和数据篡改——作者摆脱了手动文档记录，转向了自动生成证据的系统。该架构利用 AWS 服务（包括 Glue、Step Functions、Lake Formation 和 S3 Object Lock）在每一层强制执行安全性和可审计性。其结果是显著减少了审计准备时间并提高了运营效率，证明了合规性可以是工程设计中固有的功能，而非事后的负担。
+2026-04-09 14:47:45
 
 
 
 ### [直接从-Vercel-CLI-使用和管理-Vercel-Sandbox---Vercel](https://vercel.com/changelog/use-vercel-sandbox-directly-within-vercel-cli)
 
-2026-04-09 14:02:02 | 标签: Vercel, CLI, Sandbox, DevOps, 开发者体验
-
-> Vercel 宣布现在可以通过新的 `vercel sandbox` 子命令直接在 Vercel CLI 中管理 Vercel Sandbox。此更新适用于 50.42.0 及更高版本，无需再使用单独的命令行工具，减少了上下文切换，为使用沙盒环境的用户提供了更统一、更高效的开发体验。
+2026-04-09 14:02:02
 
 
 

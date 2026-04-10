@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 08:14:11 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 11:01:32 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -488,9 +488,7 @@
 
 ### [工具：GitHub-仓库大小查询](https://simonwillison.net/2026/Apr/9/github-repo-size/#atom-everything)
 
-2026-04-09 21:31:50 | 标签: GitHub, 开发者工具, API, Web 工具, 开源
-
-> Simon Willison 介绍了一款简单的实用工具，旨在解决 GitHub 的一个特定 UI 局限性：无法直接查看仓库大小。通过利用 GitHub 的公共 API（该 API 以支持 CORS 的方式提供此数据），用户只需粘贴仓库 URL，即可立即获取以 MB 为单位的仓库大小。文章以 'datasette' 仓库为例，展示了该工具的实用性。
+2026-04-09 21:31:50
 
 
 
@@ -664,17 +662,13 @@
 
 ### [Vercel-提供零配置-Django-支持](https://vercel.com/changelog/zero-configuration-django-support)
 
-2026-04-09 15:32:03 | 标签: Django, Vercel, Python, Serverless, 部署
-
-> Vercel 宣布原生支持最流行的 Python Web 框架之一：Django。此次更新带来了零配置体验，Vercel 可以自动识别 Django 项目结构。开发者无需再在 vercel.json 中配置重定向，也不必将文件移动到 /api 文件夹中。以这种方式部署的应用默认使用 Vercel 的 Fluid 计算和 Active CPU 定价，同时静态资源会自动通过 Vercel CDN 分发，以确保最佳性能。
+2026-04-09 15:32:03
 
 
 
 ### [一条私信、首个-SOTD-与-Chanh-M.-Ho-的创意开发之旅](https://tympanus.net/codrops/2026/04/09/a-single-dm-a-first-sotd-and-the-start-of-chanh-m-hos-creative-journey/)
 
-2026-04-09 12:40:30 | 标签: 创意开发, GSAP, Next.js, 网页动画, 作品集
-
-> 在本期开发者聚焦中，Chanh M. Ho 详细讲述了他进入创意开发领域三年的转型之路。从对高端、重动效网站的好奇心出发，他回顾了早期学习 GSAP 和原生 JavaScript 时遇到的挑战，并最终斩获了首个 SOTD（今日最佳网站）奖项。文章展示了四个主要项目，阐述了他从基础网页结构到构建包含复杂页面过渡和滚动动画的高性能 Next.js 应用的进阶过程。Chanh 还概述了他当前以 Next.js、GSAP 和 Headless CMS 为核心的技术栈，并探讨了未来掌握 WebGL 和 3D 技术的愿景，旨在推动越南创意开发领域的发展。
+2026-04-09 12:40:30
 
 
 
