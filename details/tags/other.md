@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-10 16:28:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 18:20:59 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -12397,17 +12397,13 @@
 
 ### [DeepMind-创始人哈萨比斯深度访谈：AGI-路径、记忆系统突破与-AI-的未来](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281304&idx=1&sn=773e8504910d737f6f7e3d4d5e08eb9d)
 
-2026-04-10 06:11:00 | 标签: DeepMind, Demis Hassabis, AGI, 持续学习, 记忆系统
-
-> 本文整理自知名播客《20VC》对谷歌 DeepMind 创始人德米斯·哈萨比斯（Demis Hassabis）的深度访谈。哈萨比斯重申了 AGI 将在未来五年内实现的预判，并将其影响力类比为十倍速、十倍规模的工业革命。他深入探讨了当前 AI 技术的局限性，指出长上下文窗口本质上是「暴力破解」，真正的突破将来自于模仿人脑睡眠巩固机制的「持续学习」和更精妙的「记忆系统」。此外，他还就开源模型趋势、AI 赋能药物研发、能源危机解决方案以及留在英国伦敦进行原创思考的结构性优势分享了见解。
+2026-04-10 06:11:00
 
 
 
 ### [针对-NVIDIA-H100-的-CUDA-编程](https://www.freecodecamp.org/news/cuda-programming-for-nvidia-h100s/)
 
-2026-04-09 22:44:17 | 标签: CUDA, NVIDIA H100, Hopper 架构, GPU 编程, 并行计算
-
-> 本文介绍了一门针对 NVIDIA H100 Hopper 架构深度优化的 CUDA 编程课程。课程涵盖了现代 GPU 计算的各个方面，从底层的 SM 子分区和内联 PTX 汇编，到张量内存加速器 (TMA) 和 Warp 组矩阵乘累加 (WGMMA) 等高级特性。课程内容还延伸至多 GPU 系统，详细讲解了 NCCL 原语、NVSwitch 拓扑以及训练万亿参数 LLM 所必需的各种并行策略（数据并行、张量并行、流水线并行）。该课程专为具备 C++ 和线性代数基础、旨在构建高性能 AI 内核的开发者设计。
+2026-04-09 22:44:17
 
 
 
@@ -32529,11 +32525,11 @@
 
 
 
-### [被封杀当晚，OpenAI-拿到了相同条款——Amodei-首次专访揭开-Anthropic-与五角大楼冲突内幕](https://baoyu.io/blog/2026-02-28/anthropic-ceo-trump-pentagon-clash)
+### [设计流程已死：Anthropic-设计负责人-Jenny-Wen-谈-AI-时代的设计变革](https://baoyu.io/blog/2026-03-01/jenny-wen-design-process)
 
-2026-02-28T00:00:00.000Z
+2026-03-02T00:00:00.000Z
 
-> 2026 年 2 月 27 日，特朗普点名封杀 Anthropic，五角大楼将其列为「国家安全供应链风险」。当晚 CEO Dario Amodei 首次面对镜头回应。而同一个晚上，OpenAI 拿到了包含完全相同限制条款的合同。
+> Anthropic Claude 设计负责人 Jenny Wen 做客 Lenny's Podcast，聊了设计流程为什么走到尽头、在 AI 实验室做设计是什么感受、Co-work 怎么做出来的、以及现在招什么样的设计师。设计师做设计稿的时间从 60-70% 压缩到 30-40%，多出来的时间用于和工程师配对、甚至自己写代码。
 
 
 
