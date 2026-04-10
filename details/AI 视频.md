@@ -1,15 +1,21 @@
-> **更新时间**: 2026-04-10 06:12:28 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-10 16:28:55 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [ChatGPT-与癌症：一位科技创始人如何重写他的治疗方案](https://www.youtube.com/watch?v=OAlHiQLsYQM)
+
+2026-04-09 22:44:27 | 标签: 个性化医疗, 癌症治疗, 基因组学, AI 智能体, 生物信息学
+
+> 本次 OpenAI 论坛的对话嘉宾包括 GitLab 联合创始人 Sid Sijbrandij 和遗传学家 Jacob Stern。在 Sid 被诊断出患有罕见且易复发的骨肉瘤并被告知预后极差后，他将“创始人思维”应用于自己的生存斗争中，绕过了传统医疗系统的局限。他们详细介绍了“极端诊断”方法：收集了 25TB 的个人基因组数据，并利用 AI 智能体来处理复杂的医学文献和生物信息学分析。这一数据驱动的策略促成了针对 Sid 独特肿瘤标志物（如 FAP 和 B7-H3）的定制化 mRNA 疫苗、TCR-T 和 CAR-T 疗法的开发。讨论强调了医生责任制与患者生存需求之间的分歧，探讨了 AI 在...
+
+
+
 ### [Hex-如何构建-AI-智能体：让智能体像人类数据分析师一样进行推理-|-Izzy-Miller，AI-工程师](https://www.youtube.com/watch?v=Xyh1EqcjGME)
 
-2026-04-09 16:00:54 | 标签: AI 智能体, 数据分析, LLM 编排, 评估系统, 语义建模
-
-> 在本期访谈中，Hex 的 AI 工程师 Izzy Miller 探讨了构建复杂数据智能体的架构与挑战。他详细介绍了 Hex 从简单的 SQL 生成到拥有 10 万 token 工具集的并行多智能体系统的发展历程。讨论强调了数据智能体与编程智能体相比所面临的独特困难，特别是在“正确性”的模糊性以及分析的迭代性方面。Miller 介绍了 Hex 的内部评估系统“Shoe box”，以及一项开创性的 90 天模拟实验，旨在测试智能体如何在长周期内积累专业直觉和知识。他强调了上下文管理、语义建模以及“人在回路”反馈系统对于保持数据准确性的重要性。
+2026-04-09 16:00:54
 
 
 
@@ -325,7 +331,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 
@@ -337,7 +343,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 

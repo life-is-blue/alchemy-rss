@@ -1,0 +1,57 @@
+{
+  "id": "RAW_764ba1a6",
+  "title": "针对 NVIDIA H100 的 CUDA 编程",
+  "url": "https://www.freecodecamp.org/news/cuda-programming-for-nvidia-h100s/",
+  "date": "2026-04-09 22:44:17",
+  "author": "Beau Carnes",
+  "siteName": "freeCodeCamp.org",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Learn CUDA programming for NVIDIA Hopper GPUs.</p>\n  <p>We just posted a course on the <a href=\"http://freeCodeCamp.org\">freeCodeCamp.org</a> YouTube channel that will teach you to build efficient WGMMA pipelines and leverage Cutlass optimizations to perform the massive matrix multiplications that power modern AI.</p>\n  <p>Beyond single-chip performance, the curriculum covers multi-GPU scaling and NCCL primitives necessary for training trillion-parameter models. To get the most out of these lessons, you should have a foundational grasp of C++ syntax and linear algebra, particularly how matrices are tiled and multiplied.</p>\n  <p>Here are all the sections in this massive course:</p>\n  <ul>\n   <li>\n    <p>Course Introduction</p>\n   </li>\n   <li>\n    <p>Table of Contents &amp; Course Overview</p>\n   </li>\n   <li>\n    <p>LESSON 1 — H100 Hopper GPU Architecture</p>\n   </li>\n   <li>\n    <p>H100 Specifications: HBM3, Bandwidth &amp; Power</p>\n   </li>\n   <li>\n    <p>Tensor Cores Overview</p>\n   </li>\n   <li>\n    <p>Tensor Memory Accelerator (TMA)</p>\n   </li>\n   <li>\n    <p>Transformer Engine</p>\n   </li>\n   <li>\n    <p>L2 Cache Architecture</p>\n   </li>\n   <li>\n    <p>GPCs, TPCs &amp; SM Layout</p>\n   </li>\n   <li>\n    <p>Thread Block Clusters</p>\n   </li>\n   <li>\n    <p>Distributed Shared Memory</p>\n   </li>\n   <li>\n    <p>SM Sub-Partitions (SMSPs)</p>\n   </li>\n   <li>\n    <p>Warp Schedulers &amp; Dispatch Units</p>\n   </li>\n   <li>\n    <p>Shared Memory &amp; Data Movement</p>\n   </li>\n   <li>\n    <p>Occupancy</p>\n   </li>\n   <li>\n    <p>LESSON 2 — Clusters, Data Types, Inline PTX &amp; Pointers</p>\n   </li>\n   <li>\n    <p>Thread Block Clusters Programming</p>\n   </li>\n   <li>\n    <p>Configuring Cluster Dimensions</p>\n   </li>\n   <li>\n    <p>Inline PTX Assembly</p>\n   </li>\n   <li>\n    <p>State Spaces</p>\n   </li>\n   <li>\n    <p>Data Types in PTX</p>\n   </li>\n   <li>\n    <p>Generic Pointers</p>\n   </li>\n   <li>\n    <p>Address Space Conversion</p>\n   </li>\n   <li>\n    <p>LESSON 3 — Asynchronicity &amp; Barriers</p>\n   </li>\n   <li>\n    <p>Introduction to Async Operations</p>\n   </li>\n   <li>\n    <p>Proxies</p>\n   </li>\n   <li>\n    <p>Fences &amp; Memory Ordering</p>\n   </li>\n   <li>\n    <p>Fence Ordering &amp; Visibility</p>\n   </li>\n   <li>\n    <p>Fence Scopes</p>\n   </li>\n   <li>\n    <p>Acquire &amp; Release Fences</p>\n   </li>\n   <li>\n    <p>Expected Count &amp; Thread Arrival</p>\n   </li>\n   <li>\n    <p>M-Barrier Arrive Operations</p>\n   </li>\n   <li>\n    <p>M-Barrier PTX Instructions</p>\n   </li>\n   <li>\n    <p>Barrier Wait Operations</p>\n   </li>\n   <li>\n    <p>Phase &amp; Parity</p>\n   </li>\n   <li>\n    <p>Commit Operations</p>\n   </li>\n   <li>\n    <p>LESSON 4 — CuTensorMap Descriptors</p>\n   </li>\n   <li>\n    <p>Tensor Shape, Stride &amp; Data Type</p>\n   </li>\n   <li>\n    <p>Element Stride &amp; Dimensions</p>\n   </li>\n   <li>\n    <p>Box Dimensions (Tile Size)</p>\n   </li>\n   <li>\n    <p>Bank Conflicts</p>\n   </li>\n   <li>\n    <p>Swizzling</p>\n   </li>\n   <li>\n    <p>Swizzle Formula Deep Dive</p>\n   </li>\n   <li>\n    <p>Interleave Layouts</p>\n   </li>\n   <li>\n    <p>Out-of-Bounds Fill (OOB)</p>\n   </li>\n   <li>\n    <p>LESSON 5 — cp.async.bulk (Async Bulk Copies via TMA)</p>\n   </li>\n   <li>\n    <p>Bulk Tensor Operations (1D–5D)</p>\n   </li>\n   <li>\n    <p>Multicast Operations</p>\n   </li>\n   <li>\n    <p>Prefetch</p>\n   </li>\n   <li>\n    <p>LESSON 6 — WGMMA Part 1 (Warp Group Matrix Multiply Accumulate)</p>\n   </li>\n   <li>\n    <p>Warp Groups &amp; Matrix Multiplication</p>\n   </li>\n   <li>\n    <p>WGMMA Descriptors</p>\n   </li>\n   <li>\n    <p>Accumulators &amp; Register Reuse</p>\n   </li>\n   <li>\n    <p>Scale Factors (Scale D, Scale A, Scale B)</p>\n   </li>\n   <li>\n    <p>Core Matrices &amp; 16×16 Tiles</p>\n   </li>\n   <li>\n    <p>LESSON 7 — WGMMA Part 2</p>\n   </li>\n   <li>\n    <p>Commit Groups &amp; Wait Groups</p>\n   </li>\n   <li>\n    <p>WGMMA with FP8 Data Types</p>\n   </li>\n   <li>\n    <p>LESSON 8 — Kernel Design</p>\n   </li>\n   <li>\n    <p>Compute-Bound vs. Memory-Bound Kernels</p>\n   </li>\n   <li>\n    <p>Warp Specialization</p>\n   </li>\n   <li>\n    <p>Cooperative vs. Ping-Pong Pipelines</p>\n   </li>\n   <li>\n    <p>Pipelining Fundamentals</p>\n   </li>\n   <li>\n    <p>Circular Buffering</p>\n   </li>\n   <li>\n    <p>Ping-Pong Pipeline Deep Dive</p>\n   </li>\n   <li>\n    <p>Epilogue Handling in Pipelines</p>\n   </li>\n   <li>\n    <p>Persistent Scheduling</p>\n   </li>\n   <li>\n    <p>Split-K &amp; Stream-K Strategies</p>\n   </li>\n   <li>\n    <p>Data-Parallel Tile Scheduling</p>\n   </li>\n   <li>\n    <p>Epilogue Fusion (Bias, Activation, Scaling)</p>\n   </li>\n   <li>\n    <p>Epilogue Operations Overview</p>\n   </li>\n   <li>\n    <p>CUTLASS SOURCE CODE WALKTHROUGH</p>\n   </li>\n   <li>\n    <p>Main Loop &amp; Scheduling Policies</p>\n   </li>\n   <li>\n    <p>Dispatch Policy</p>\n   </li>\n   <li>\n    <p>SM90 Tile Scheduler</p>\n   </li>\n   <li>\n    <p>SM90 Epilogue (TMA Warp Specialized)</p>\n   </li>\n   <li>\n    <p>SM90 Builder</p>\n   </li>\n   <li>\n    <p>Collective Builder</p>\n   </li>\n   <li>\n    <p>FAST.CU KERNEL WALKTHROUGH</p>\n   </li>\n   <li>\n    <p>Main Loop Implementation</p>\n   </li>\n   <li>\n    <p>Producer Warp Group (Dependence Wall)</p>\n   </li>\n   <li>\n    <p>Consumer Warp Group</p>\n   </li>\n   <li>\n    <p>Prologue</p>\n   </li>\n   <li>\n    <p>MULTI-GPU PROGRAMMING — Part 1</p>\n   </li>\n   <li>\n    <p>NVSwitch</p>\n   </li>\n   <li>\n    <p>Topology &amp; System Architecture</p>\n   </li>\n   <li>\n    <p>NVSwitch, BlueField DPUs &amp; Storage Fabrics</p>\n   </li>\n   <li>\n    <p>CUDA Peer-to-Peer Communication</p>\n   </li>\n   <li>\n    <p>MPI (Message Passing Interface)</p>\n   </li>\n   <li>\n    <p>P2P Limitations &amp; Trade-offs</p>\n   </li>\n   <li>\n    <p>MULTI-GPU PROGRAMMING — Part 2</p>\n   </li>\n   <li>\n    <p>SLURM Resource Allocation</p>\n   </li>\n   <li>\n    <p>PMIx Process Management</p>\n   </li>\n   <li>\n    <p>NCCL (NVIDIA Collective Communications Library)</p>\n   </li>\n   <li>\n    <p>NCCL Internals &amp; Ring Algorithm</p>\n   </li>\n   <li>\n    <p>AllReduce Operations</p>\n   </li>\n   <li>\n    <p>NCCL Collectives: Broadcast, AllGather, ReduceScatter</p>\n   </li>\n   <li>\n    <p>Parallelism Strategies: Data, Tensor, Pipeline &amp; Expert Parallelism</p>\n   </li>\n   <li>\n    <p>Course Conclusion &amp; Next Steps</p>\n   </li>\n  </ul>\n  <p>Watch the course on <a href=\"https://youtu.be/SqQUQHdYWyc\">the freeCodeCamp.org YouTube channel</a> (24-hour watch).</p>\n  <div class=\"embed-wrapper\">\n   <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SqQUQHdYWyc\" title=\"YouTube video player\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen loading=\"lazy\"></iframe>\n  </div>\n </body>\n</html>",
+  "aiSummary": "这是一门长达 24 小时的综合课程，涵盖了针对 NVIDIA Hopper GPU 的高级 CUDA 编程，重点讲解 H100 架构、WGMMA 流水线、TMA 以及多 GPU 扩展。",
+  "oneSentenceSummary": "这是一门长达 24 小时的综合课程，涵盖了针对 NVIDIA Hopper GPU 的高级 CUDA 编程，重点讲解 H100 架构、WGMMA 流水线、TMA 以及多 GPU 扩展。",
+  "summary": "本文介绍了一门针对 NVIDIA H100 Hopper 架构深度优化的 CUDA 编程课程。课程涵盖了现代 GPU 计算的各个方面，从底层的 SM 子分区和内联 PTX 汇编，到张量内存加速器 (TMA) 和 Warp 组矩阵乘累加 (WGMMA) 等高级特性。课程内容还延伸至多 GPU 系统，详细讲解了 NCCL 原语、NVSwitch 拓扑以及训练万亿参数 LLM 所必需的各种并行策略（数据并行、张量并行、流水线并行）。该课程专为具备 C++ 和线性代数基础、旨在构建高性能 AI 内核的开发者设计。",
+  "mainPoints": [
+    {
+      "point": "课程探讨了 H100 的架构变革，包括线程块集群 (Thread Block Clusters)、分布式共享内存和 Transformer 引擎，这些对于现代 AI 工作负载至关重要。",
+      "explanation": "强调使用张量内存加速器 (TMA) 和 m-barrier PTX 指令来隐藏内存延迟，并高效管理复杂的生产者-消费者流水线。"
+    },
+    {
+      "point": "掌握异步数据传输和内存屏障。",
+      "explanation": "专注于通过 Warp 组矩阵乘累加 (WGMMA) 构建计算密集型内核，并利用 CUTLASS 库进行优化的分块调度和尾声融合 (epilogue fusion)。"
+    },
+    {
+      "point": "使用 WGMMA 和 CUTLASS 进行高级内核设计。",
+      "explanation": "涵盖分布式训练所需的网络和软件栈，包括 NVLink、NVSwitch 以及 AllReduce 和 AllGather 等 NCCL 集合通信操作。"
+    },
+    {
+      "point": "扩展至多 GPU 环境以进行大规模模型训练。",
+      "explanation": "课程内容涵盖了 SM90 分块调度器、TMA Warp 专用尾声处理以及集合通信构建器。"
+    }
+  ],
+  "keyQuotes": [
+    "除了单芯片性能外，课程还涵盖了训练万亿参数模型所需的多 GPU 扩展和 NCCL 原语。",
+    "学习构建高效的 WGMMA 流水线，并利用 Cutlass 优化来执行驱动现代 AI 的大规模矩阵乘法。",
+    "课程涵盖了 SM90 分块调度器、TMA Warp 专用尾声处理以及集合通信构建器。"
+  ],
+  "tags": [
+    "CUDA",
+    "NVIDIA H100",
+    "Hopper 架构",
+    "GPU 编程",
+    "并行计算"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 483,
+  "domain": "freecodecamp.org",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_BACKEND",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_074370",
+  "sourceName": "freeCodeCamp.org",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775774657000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-09 22:44:17"
+}
