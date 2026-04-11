@@ -1,0 +1,53 @@
+{
+  "id": "RAW_b1160505",
+  "title": "阿里视频生成大模型 Wan2.7 登顶 DesignArena 榜单",
+  "url": "https://www.qbitai.com/2026/04/399370.html",
+  "date": "2026-04-10 12:07:15",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<!--摘要样式-->\n<html>\n <head></head>\n <body>\n  <p>4月10日，据DesignArena最新发布的排行榜，在Video to Video（视频编辑）功能上，阿里巴巴最新发布的大模型Wan2.7以1334Elo评分高居榜首，大幅领先第二名Grok Imagine（1266分），优势达68分。DesignArena 是全球首个众包评测 AI 生成设计的基准平台，由全球用户投票产生排行榜。</p>\n  <p><img loading=\"lazy\" decoding=\"async\" class=\"alignnone size-full wp-image-399371\" src=\"https://image.jido.dev/20260410133305_e86919240ef986cfd7c267d1115e2e2b.jpg\" alt=\"\" width=\"2141\" height=\"1280\"></p>\n  <p>一周前，Wan2.7-Video视频生成系列模型刚刚发布，涵盖文生视频、图生视频、参考生视频和视频编辑四大模型，拥有全面的创作控制力，将AI的能力从单一素材生成扩至创作全链路，从“演”迈向“导”。其中视频编辑能力尤为引人注目，一句话即可对视频进行局部或整体修改。</p>\n  <!--版权声明-->\n </body>\n</html>",
+  "aiSummary": "阿里巴巴 Wan2.7 视频生成大模型在 DesignArena 视频编辑榜单登顶，Elo 评分大幅领先竞品。",
+  "oneSentenceSummary": "阿里巴巴 Wan2.7 视频生成大模型在 DesignArena 视频编辑榜单登顶，Elo 评分大幅领先竞品。",
+  "summary": "阿里巴巴最新发布的 Wan2.7-Video 视频生成系列模型在 DesignArena 的 Video to Video（视频编辑）功能评测中，以 1334 Elo 评分位列全球第一，领先第二名 Grok Imagine 达 68 分。该系列模型涵盖文生视频、图生视频、参考生视频及视频编辑四大功能，标志着 AI 视频生成能力从单一素材生成向全链路创作控制（从「演」到「导」）的转变，用户仅需通过自然语言指令即可实现对视频的局部或整体修改。",
+  "mainPoints": [
+    {
+      "point": "Wan2.7 在 DesignArena 视频编辑榜单取得领先地位。",
+      "explanation": "在众包评测基准平台 DesignArena 中，Wan2.7 以 1334 Elo 评分登顶，显著超越 Grok Imagine 等国际主流模型。"
+    },
+    {
+      "point": "Wan2.7 实现了从素材生成到创作全链路的跨越。",
+      "explanation": "模型涵盖文生视频、图生视频、参考生视频和视频编辑四大能力，强调对视频创作的全面控制力。"
+    },
+    {
+      "point": "视频编辑能力支持高度灵活的局部或整体修改。",
+      "explanation": "通过自然语言指令即可对既有视频进行精准调整，体现了模型在语义理解与视频一致性维护上的技术突破。"
+    }
+  ],
+  "keyQuotes": [
+    "阿里巴巴最新发布的大模型 Wan2.7 以 1334Elo 评分高居榜首，大幅领先第二名 Grok Imagine（1266 分），优势达 68 分。",
+    "拥有全面的创作控制力，将 AI 的能力从单一素材生成扩至创作全链路，从「演」迈向「导」。",
+    "其中视频编辑能力尤为引人注目，一句话即可对视频进行局部或整体修改。"
+  ],
+  "tags": [
+    "Wan2.7",
+    "视频生成",
+    "阿里巴巴",
+    "DesignArena",
+    "视频编辑"
+  ],
+  "topicTag": "other",
+  "readTime": 2,
+  "score": 86,
+  "wordCount": 290,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1775822835000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-10 12:07:15"
+}

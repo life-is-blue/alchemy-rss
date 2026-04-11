@@ -1,0 +1,53 @@
+{
+  "id": "RAW_45df36a0",
+  "title": "CNCF 与 Kusari 达成合作，共同强化云原生项目的软件供应链安全",
+  "url": "https://www.infoq.com/news/2026/04/cncf-kusari-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-10 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">The <a href=\"https://www.cncf.io/\">Cloud Native Computing Foundation (CNCF)</a> and <a href=\"https://www.kusari.dev/\">Kusari</a> have <a href=\"https://www.cncf.io/blog/2026/03/23/kusari-and-cncf-advancing-software-supply-chain-security-for-cloud-native-projects/\">announced </a>a new collaboration aimed at strengthening software supply chain security across cloud-native projects, providing free access to Kusari's AI-powered security tooling for CNCF-hosted projects. The initiative is designed to help maintainers and contributors better understand, manage, and secure increasingly complex dependency ecosystems without requiring deep security expertise.</p>\n   <p dir=\"ltr\">The partnership centers on providing CNCF projects with access to Kusari Inspector, a tool that combines AI-assisted code review with dependency analysis to identify risks across both direct and transitive dependencies. As modern applications increasingly rely on hundreds or thousands of interconnected components, and as AI-generated code becomes more prevalent, visibility into the full software supply chain has become both more difficult and more critical.</p>\n   <p dir=\"ltr\">The announcement highlights a growing challenge facing the cloud-native ecosystem: software supply chains are expanding in both scale and complexity, introducing new attack surfaces and operational risks. Many dependencies are pulled in automatically through transitive relationships, making it difficult for maintainers to fully understand what is included in their software. At the same time, attackers are increasingly targeting these supply chains through techniques such as dependency confusion, malicious package injection, and exploitation of weak provenance controls.</p>\n   <p dir=\"ltr\">For open source projects, often maintained by small, resource-constrained teams, this complexity is compounded by fragmented tooling and limited visibility. Even when multiple security tools are used, teams frequently lack a unified, contextual view of risk across their supply chain, making it harder to prioritise and remediate vulnerabilities effectively.</p>\n   <p dir=\"ltr\">A key focus of the Kusari-CNCF initiative is shifting security \"left\" by embedding it directly into developer workflows. Kusari Inspector provides inline feedback during pull requests, mapping dependencies, identifying gaps in provenance and attestations, and surfacing risks early in the development lifecycle.</p>\n   <p dir=\"ltr\">This approach reflects a broader industry move away from reactive security processes toward proactive, workflow-integrated security practices. By catching issues earlier and providing context-aware insights, the platform aims to reduce the burden on maintainers, minimise manual investigation, and enable faster, more secure software delivery. It also helps bridge the gap between developers and security teams by embedding actionable intelligence directly into the development process.</p>\n   <p dir=\"ltr\">The initiative builds on existing efforts within the cloud-native and open source security ecosystem, including projects such as Supply-chain Levels for Software Artifacts (SLSA) and tools like<a href=\"https://guac.sh/\"> GUAC,</a> <a href=\"https://in-toto.io/\">in-toto</a>, and <a href=\"https://openssf.org/projects/openvex/\">OpenVEX</a>, which are already adopting Kusari Inspector. These projects focus on improving provenance, transparency, and trust across software supply chains, key pillars in modern security strategies.</p>\n   <p dir=\"ltr\">By integrating with these efforts, the collaboration aims to provide a more cohesive and accessible approach to supply chain security, enabling projects to move from fragmented tooling toward connected, ecosystem-wide visibility and governance.</p>\n   <p dir=\"ltr\">In the broader landscape, this collaboration aligns with similar efforts from other organizations focused on improving software supply chain security, though with varying approaches and levels of integration. For example, <a href=\"https://snyk.io/\">Snyk</a> and <a href=\"https://github.com/\">GitHub</a> (through <a href=\"https://github.com/security/advanced-security\">GitHub Advanced Security</a>) emphasize developer-first security tooling, embedding vulnerability scanning, dependency insights, and code analysis directly into developer workflows. These platforms are widely adopted and provide strong visibility into known vulnerabilities, but they often focus more on detection and remediation rather than the full lifecycle of provenance, attestations, and trust guarantees that initiatives like Kusari are targeting.</p>\n   <p dir=\"ltr\">At the ecosystem level, efforts such as <a href=\"https://openssf.org/\">OpenSSF</a> and the aforementioned <a href=\"https://openssf.org/projects/slsa/\">SLSA</a> take a more standards-driven approach, defining best practices for build integrity, provenance, and artifact verification. Similarly, tools like <a href=\"https://www.sigstore.dev/\">Sigstore</a> focus on cryptographic signing and verification to ensure artifact trust. Compared to these, the CNCF-Kusari initiative positions itself as a more integrated and accessible layer, combining AI-assisted insights with supply chain visibility and embedding them directly into developer workflows. This reflects an emerging trend in the industry: moving from fragmented, point-in-time security tools toward unified, continuously enforced supply chain security platforms that balance usability with strong governance and trust guarantees.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"CNCF and Kusari Partner to Strengthen Software Supply Chain Security Across Cloud-Native Projects\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/cncf-kusari-security/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1775822400000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "CNCF 与 Kusari 达成合作，旨在为云原生项目提供 AI 驱动的安全工具，重点关注复杂依赖生态系统的安全保障及供应链溯源的自动化。",
+  "oneSentenceSummary": "CNCF 与 Kusari 达成合作，旨在为云原生项目提供 AI 驱动的安全工具，重点关注复杂依赖生态系统的安全保障及供应链溯源的自动化。",
+  "summary": "云原生计算基金会（CNCF）与 Kusari 宣布建立战略合作伙伴关系，旨在提升 CNCF 托管项目的软件供应链安全。通过免费提供 Kusari Inspector，该计划旨在帮助维护者通过 AI 辅助的代码审查和依赖分析，管理复杂的直接和传递依赖关系。此次合作重点在于通过将内联反馈嵌入 Pull Request、映射溯源缺口以及集成 SLSA 和 GUAC 等行业标准，实现安全左移。此举旨在应对开源生态系统中日益增长的依赖混淆和恶意注入风险。",
+  "mainPoints": [
+    {
+      "point": "针对复杂依赖链的 AI 驱动可视化能力。",
+      "explanation": "Kusari Inspector 为 CNCF 维护者提供了识别直接和传递依赖中风险的工具，这些风险在现代云原生技术栈中往往难以察觉。"
+    },
+    {
+      "point": "通过开发者工作流集成实现安全左移。",
+      "explanation": "此次合作强调将安全反馈直接嵌入 Pull Request 中，从而在代码合并前实现对溯源缺口和漏洞的早期检测。"
+    },
+    {
+      "point": "标准化与全生态系统治理。",
+      "explanation": "该倡议与 SLSA、GUAC 和 in-toto 等现有标准保持一致并在此基础上进行构建，推动安全工具从碎片化向统一的信任与认证框架转型。"
+    }
+  ],
+  "keyQuotes": [
+    "该倡议旨在帮助维护者和贡献者更好地理解、管理和保护日益复杂的依赖生态系统，而无需具备深厚的安全专业知识。",
+    "Kusari Inspector 在 Pull Request 期间提供内联反馈，映射依赖关系，识别溯源和证明中的缺口，并在开发生命周期的早期发现风险。",
+    "这反映了行业内的一个新兴趋势：从碎片化的、即时的安全工具转向统一的、持续执行的供应链安全平台。"
+  ],
+  "tags": [
+    "CNCF",
+    "软件供应链",
+    "Kusari",
+    "开源安全",
+    "DevSecOps"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 84,
+  "wordCount": 634,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775822400000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-10 12:00:00"
+}

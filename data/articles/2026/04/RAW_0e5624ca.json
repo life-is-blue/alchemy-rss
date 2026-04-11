@@ -1,0 +1,53 @@
+{
+  "id": "RAW_0e5624ca",
+  "title": "ChatGPT 语音模式使用的是较弱的模型",
+  "url": "https://simonwillison.net/2026/Apr/10/voice-mode-is-weaker/#atom-everything",
+  "date": "2026-04-10 15:56:02",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">10th April 2026</p>\n   <div class=\"note\">\n    <p>I think it's non-obvious to many people that the OpenAI voice mode runs on a much older, much weaker model - it feels like the AI that you can talk to should be the smartest AI but it really isn't.</p>\n    <p>If you ask ChatGPT voice mode for its knowledge cutoff date it tells you April 2024 - it's a GPT-4o era model.</p>\n    <p><small>(Thought inspired by <a href=\"https://twitter.com/karpathy/status/2042334451611693415\">this Karpathy tweet</a> about the growing gap in understanding of AI capability based on the access points and domains people are using the models with.)</small></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/note/366/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 指出，OpenAI 的语音模式使用的是较旧的 GPT-4o 时代模型，其知识截止日期为 2024 年，这导致了用户预期与实际智能水平之间的差距。",
+  "oneSentenceSummary": "Simon Willison 指出，OpenAI 的语音模式使用的是较旧的 GPT-4o 时代模型，其知识截止日期为 2024 年，这导致了用户预期与实际智能水平之间的差距。",
+  "summary": "文章指出，尽管人们直觉上认为对话式语音界面应该代表 AI 智能的巅峰，但 OpenAI 的语音模式实际上运行在比其最新的文本模型更陈旧、更弱的模型上。通过询问语音模式的知识截止日期，结果显示为 2024 年 4 月，这表明它属于 GPT-4o 时代的模型。这种差异导致公众对 AI 能力的认知出现分歧，具体取决于他们所交互的界面。",
+  "mainPoints": [
+    {
+      "point": "语音模式的智能水平落后于最先进的文本模型。",
+      "explanation": "用户通常认为最自然的界面（语音）使用的是最智能的模型，但它目前运行在较旧的 GPT-4o 架构上。"
+    },
+    {
+      "point": "知识截止日期揭示了模型的版本。",
+      "explanation": "语音模式报告的知识截止日期为 2024 年 4 月，证实它尚未更新至文本模式中可用的最新前沿模型版本。"
+    },
+    {
+      "point": "界面选择会影响对 AI 能力的感知。",
+      "explanation": "正如 Andrej Karpathy 所指出的，由于用户根据不同的访问点体验到不同水平的能力，人们对 AI 能力的理解差距正在扩大。"
+    }
+  ],
+  "keyQuotes": [
+    "人们感觉能与之交谈的 AI 应该是最聪明的 AI，但事实并非如此。",
+    "如果你询问 ChatGPT 语音模式的知识截止日期，它会告诉你 2024 年 4 月——这是一个 GPT-4o 时代的模型。",
+    "基于人们使用模型时所处的访问点和领域，对 AI 能力的理解差距正在扩大。"
+  ],
+  "tags": [
+    "OpenAI",
+    "ChatGPT 语音模式",
+    "GPT-4o",
+    "模型能力",
+    "AI 界面"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 83,
+  "wordCount": 93,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1775836562000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-10 15:56:02"
+}
