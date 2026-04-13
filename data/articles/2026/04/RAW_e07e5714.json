@@ -1,0 +1,54 @@
+{
+  "id": "RAW_e07e5714",
+  "title": "MiniMax M2.7 开源，携手全球伙伴加速 AI 生态繁荣",
+  "url": "https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488323&idx=1&sn=342523271a3f3a68ac9ebad44782ddf6",
+  "date": "2026-04-12 13:30:00",
+  "author": "MiniMax 稀宇科技",
+  "siteName": "MiniMax 稀宇科技",
+  "content": "<html>\n <head></head>\n <body>\n  <p><img src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=2dc8b12d&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FUqLjwjsK1PfPCt9n1WtFJHbLQC6m6xmPK7IF1APB2c7uXXwNyPf4YFbvYjCkxWt51tSHiawPib2iafmb6DLwjvK6MRUNdAK0PHs0Fu0MfEpGa0%2F0%3Fwx_fmt%3Djpeg\" style=\"font-size: 1rem;\"></p>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">MiniMax M2.7 在今天正式开源。</span><span style=\"font-size: 15px;font-weight: bold;\">我们和华为昇腾、摩尔线程、沐曦、昆仑芯、NVIDIA，以及 Together AI、Fireworks、Ollama 等海内外芯片厂商、推理平台携手，在开源首日即完成模型接入与推理适配工作，推动全球 AI 生态繁荣发展。</span></span></p>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">三周前，MiniMax M2.7 率先上线。M2.7 开启了模型的自我进化，也是我们第一个 AI 深度参与迭代自己的模型。M2.7 能够自行构建复杂 Agent Harness，并基于 Agent Teams、复杂 Skills、Tool Search tool 等能力，完成高度复杂的生产力任务。</span></span></p>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">基于其在真实的软件工程、专业办公场景的优异表现，M2.7 已成为在 Hermes Agent、OpenClaw 等智能体工具中最受好评的模型之一。来自海内外的开发者与企业客户的接入需求持续增长，模型调用量在快速提升。</span></span></p>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><img class=\"rich_pages wxw-img\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=03c309b0&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FUqLjwjsK1PcZWXf9eb1qGSicxEKkBhHSWJnbRtMtznibeKc5LXxSPibGNiaGGC2iagAowdhElCmicZURvLL792KPNsAZcNYWc1kEwNuZPgmpWe1DQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n  <blockquote>\n   <ul style=\"margin-left: 8px;margin-right: 8px;\" class=\"list-paddingleft-1\">\n    <li>\n     <p style=\"margin-bottom: 16px;\"><span><span style=\"font-size: 15px;\">昇腾 AI 基础软硬件实现首日适配，基于 vllm-Ascend 推理引擎在 Atlas 800 A3、Atlas 800I A2 系列产品上为模型的推理部署提供全流程支持；</span></span></p>\n    </li>\n    <li>\n     <p style=\"margin-bottom: 16px;\"><span><span style=\"font-size: 15px;\">摩尔线程技术团队基于 MUSA 架构，针对 M2.7 的模型特点完成深度调优，成功在 MTT S5000 上实现模型的的高性能推理；</span></span></p>\n    </li>\n    <li>\n     <p style=\"margin-bottom: 16px;\"><span><span style=\"font-size: 15px;\">沐曦曦云 C 系列 GPU 凭借全栈自研的 MXMACA 软件栈，首日完成深度适配，实现“模型发布即算力就绪”的 Day 0 体验；</span></span></p>\n    </li>\n    <li>\n     <p style=\"margin-bottom: 16px;\"><span><span style=\"font-size: 15px;\">昆仑芯依托自研架构，通过底层算子优化与软硬件协同加速，保障 M2.7 在平台上的稳定、高效运行表现；</span></span></p>\n    </li>\n    <li>\n     <p style=\"margin-bottom: 24px;\"><span><span style=\"font-size: 15px;\">NVIDIA 推理框架 TensorRT-LLM 为 M2.7 提供了深度适配与全面优化支持，帮助开发者和企业用户高效完成模型的部署与上线。</span></span></p>\n    </li>\n   </ul>\n  </blockquote>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">除产品适配外，Together AI、Fireworks、Ollama、vLLM、SGLang 和智源众智 FlagOS、魔搭等海内外开发平台与社区已同步在首日接入 MiniMax M2.7 模型并完成适配。</span></span></p>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">未来，我们将与海内外更多生态伙伴携手，在模型架构优化、应用场景落地、行业生态建设等多维度展开协作，为客户和开发者提供模型的最佳使用体验，加速全球 AI 生态繁荣。</span></span></p>\n  <p style=\"margin-bottom: 8px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">全球开源地址：</span></span></p>\n  <div style=\"font-weight:400;font-size:16px;font-style:normal;box-sizing:border-box;text-align:justify;\">\n   <div style=\"text-align: left;font-size: 15px;box-sizing: border-box;\">\n    <p style=\"word-break: break-all;margin: 0px 8px 8px;padding: 0px;box-sizing: border-box;\"><span><span style=\"color: rgb(0, 128, 255);\">huggingface.co/MiniMaxAI/MiniMax-M2.7</span></span></p>\n    <p style=\"word-break: break-all;margin: 0px 8px;padding: 0px;box-sizing: border-box;\"><span><span style=\"color: rgb(0, 128, 255);\">github.com/MiniMax-AI/MiniMax-M2.7</span></span></p>\n   </div>\n  </div>\n  <p style=\"margin-bottom: 24px;margin-left: 8px;margin-right: 8px;\"><span><span style=\"font-size: 15px;\">Intelligence with Everyone.</span></span></p>\n  <p style=\"text-align: center;margin-left: 8px;margin-right: 8px;\"><img class=\"rich_pages wxw-img\" type=\"block\" src=\"https://wechat2rss.bestblogs.dev/img-proxy/?k=93040161&amp;u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2Fq4wL2iaHZfGmXHU4a02nELvm6q34N35cLPb4vTM6VBa1vlnlXe3cPmdAyKd5OvianerQsPib4ExFL2XUqJbHFLSzg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg\"></p>\n </body>\n</html>",
+  "aiSummary": "MiniMax 正式开源其 M2.7 模型，并宣布已与华为昇腾、摩尔线程、NVIDIA 等多家海内外芯片厂商及推理平台完成首日适配，旨在加速全球 AI 生态发展。",
+  "oneSentenceSummary": "MiniMax 正式开源其 M2.7 模型，并宣布已与华为昇腾、摩尔线程、NVIDIA 等多家海内外芯片厂商及推理平台完成首日适配，旨在加速全球 AI 生态发展。",
+  "summary": "本文是 MiniMax 官方发布的公告，宣布其 M2.7 模型正式开源。文章首先回顾了 M2.7 在三周前上线时的核心特性，即模型具备自我进化能力，能够自行构建复杂 Agent Harness，并在软件工程、专业办公等场景中表现出色。公告的核心内容是宣布与华为昇腾、摩尔线程、沐曦、昆仑芯、NVIDIA 等芯片厂商，以及 Together AI、Fireworks、Ollama 等推理平台在开源首日即完成模型接入与推理适配，提供了具体的适配细节。文章最后提供了模型在 Hugging Face 和 GitHub 的开源地址，并表达了与全球生态伙伴持续协作、繁荣 AI 生态的愿景。",
+  "mainPoints": [
+    {
+      "point": "MiniMax M2.7 模型正式开源，标志着其技术路线走向开放。",
+      "explanation": "作为国内头部 AI 公司的重要模型，M2.7 的开源为开发者和研究者提供了直接访问和利用先进模型能力的机会，有助于降低技术门槛并激发创新。"
+    },
+    {
+      "point": "开源首日即完成与主流硬件和推理平台的广泛适配，展现了强大的生态协同能力。",
+      "explanation": "文章详细列举了与华为昇腾、摩尔线程、NVIDIA 等国内外芯片厂商，以及 Together AI、Ollama 等软件平台的适配成果，表明 M2.7 已具备即开即用的部署条件，生态准备充分。"
+    },
+    {
+      "point": "M2.7 的核心技术特点是具备自我进化能力和复杂的 Agent 任务处理能力。",
+      "explanation": "模型被描述为能够自行构建复杂 Agent Harness，利用 Agent Teams 和复杂 Skills 完成高度复杂的生产力任务，这代表了其在智能体方向上的前沿探索。"
+    }
+  ],
+  "keyQuotes": [
+    "MiniMax M2.7 在今天正式开源。我们和华为昇腾、摩尔线程、沐曦、昆仑芯、NVIDIA，以及 Together AI、Fireworks、Ollama 等海内外芯片厂商、推理平台携手，在开源首日即完成模型接入与推理适配工作，推动全球 AI 生态繁荣发展。",
+    "M2.7 开启了模型的自我进化，也是我们第一个 AI 深度参与迭代自己的模型。",
+    "M2.7 能够自行构建复杂 Agent Harness，并基于 Agent Teams、复杂 Skills、Tool Search tool 等能力，完成高度复杂的生产力任务。",
+    "未来，我们将与海内外更多生态伙伴携手，在模型架构优化、应用场景落地、行业生态建设等多维度展开协作，为客户和开发者提供模型的最佳使用体验，加速全球 AI 生态繁荣。"
+  ],
+  "tags": [
+    "MiniMax",
+    "M2.7",
+    "模型开源",
+    "AI 生态",
+    "推理适配"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 92,
+  "wordCount": 664,
+  "domain": "mp.weixin.qq.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_39cbd7",
+  "sourceName": "MiniMax 稀宇科技",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1776000600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-12 13:30:00"
+}

@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-13 06:08:02 | [返回首页](/README.md)
+**更新时间**: 2026-04-13 08:16:05 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11172)
+- [AI & 大模型](#ai-llm) (11183)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (770)
-- [DevOps](#devops) (505)
+- [DevOps](#devops) (506)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5460)
+- [其他](#other) (5462)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [你的-ReAct-智能体正在浪费-90%-的重试机会——以下是解决方法](https://towardsdatascience.com/your-react-agent-is-wasting-90-of-its-retries-heres-how-to-stop-it/) - AI 精选
+- [浅谈-Agent-Memory](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491772&idx=1&sn=bbbbfbe12bff30ae169d21b8d04eef65) - AI 精选
 - [AI-正在推动职场快速变革，但收益分配并不均衡](https://www.microsoft.com/en-us/research/blog/new-future-of-work-ai-is-driving-rapid-change-uneven-benefits/) - AI 精选
 - [Deep-Agents-Deploy：Claude-Managed-Agents-的开源替代方案](https://blog.langchain.com/deep-agents-deploy-an-open-alternative-to-claude-managed-agents/) - AI 精选
 - [VimRAG：通义实验室开源全模态-RAG-框架，实现图文视频统一检索记忆](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500592&idx=1&sn=c6bf5d5999d9d1ab05f95da436ac7ec3) - AI 精选
@@ -40,10 +42,8 @@
 - [Gemma-4：同等规模下最强大的开源模型](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/) - AI 精选
 - [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 - [Qwen3.6-Plus：编码智能体能力全面跃升！](https://mp.weixin.qq.com/s?__biz=MzkxMTYyMTAzNA==&mid=2247500357&idx=1&sn=f6d41ed4be344ad97f5047d0c1f93975) - AI 精选
-- [GLM-5V-Turbo-发布：多模态-Coding-基座模型](https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg==&mid=2247493656&idx=1&sn=50d142575a83e943d71a5c6d720394b4) - AI 精选
-- [Claude-Code-源码逆向工程与系统性分析：Harness-Engineering-完全指南](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247513815&idx=1&sn=bfa7e1a0c0accdb65d1def80d6b28be7) - AI 精选
 
-- [查看全部 11172 篇...](/details/tags/ai-llm.md)
+- [查看全部 11183 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -111,6 +111,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [这大概是我读过最硬核的一次-Linux-内核重构文章了](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801153&idx=1&sn=4e89b5dd7a0f02f12a5f8b2536507b99) - 编程 精选
 - [Spotify-如何每周向-6.75-亿用户发布更新且不破坏系统](https://blog.bytebytego.com/p/how-spotify-ships-to-675-million) - 编程 精选
 - [介绍-EmDash-——-WordPress-的精神继任者，解决插件安全问题](https://blog.cloudflare.com/emdash-wordpress/) - 编程 精选
 - [如何自建邮件服务器](https://blog.miguelgrinberg.com/post/how-to-host-your-own-email-server) - 编程 精选
@@ -127,9 +128,8 @@
 - [动态计算：我们如何构建无服务器服务器---Vercel](https://vercel.com/blog/fluid-how-we-built-serverless-servers) - 编程 精选
 - [Quicksilver-v2：全球分布式键值存储的演进（第二部分）](https://blog.cloudflare.com/quicksilver-v2-evolution-of-a-globally-distributed-key-value-store-part-2-of-2/) - 编程 精选
 - [Tinder-API-网关：日处理十亿次滑动的技术解析](https://blog.bytebytego.com/p/how-tinders-api-gateway-handles-a) - 编程 精选
-- [【第-3549-期】GitHub-Actions-全面解析：工作流结构完整指南](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651276930&idx=1&sn=30b1310665cc50bd4ac0f54b9073d10d) - 编程 精选
 
-- [查看全部 505 篇...](/details/tags/devops.md)
+- [查看全部 506 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5460 篇...](/details/tags/other.md)
+- [查看全部 5462 篇...](/details/tags/other.md)
 
 
