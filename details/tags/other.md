@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-13 11:02:47 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-13 13:01:56 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 其他
 
@@ -32771,11 +32771,11 @@
 
 
 
-### [陶哲轩最新演讲：AI-不是来抢数学家蛋糕的，是来把蛋糕做大的](https://baoyu.io/blog/2026-03-04/terence-tao-mathematics-in-the-age-of-ai)
+### [Greg-Brockman（OpenAI-联合创始人）把“那场宫斗”讲完整了：董事会、请愿书、马斯克与控制权](https://baoyu.io/blog/2026-03-01/greg-brockman)
 
-2026-03-04T00:00:00.000Z
+2026-03-02T00:00:00.000Z
 
-> Fields 奖得主陶哲轩在 SAIR 基金会演讲中揭示：让 50 个人三个月解决 2200 万道数学题的秘密武器不是 AI，而是形式验证。数学这个最保守的学科，正在被新技术撬动工作方式。
+> OpenAI 联合创始人 Greg Brockman 做客 Rick Rubin 播客，三小时深度对话。从 Sam Altman 被解雇的 72 小时危机、与马斯克的控制权谈判，到 Scaling Laws 争论、Agent-first 转型，再到北达科他小镇少年如何走到 AI 最前沿——这是科技高管极少展示的一面。
 
 
 
