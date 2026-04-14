@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-14 08:20:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-14 11:02:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,17 +26,13 @@
 
 ### [动态-Workers-中的持久对象：为每个-AI-生成的应用提供专属数据库](https://blog.cloudflare.com/durable-object-facets-dynamic-workers/)
 
-2026-04-13 13:08:35 | 标签: Cloudflare Workers, 持久对象, 动态 Workers, 无服务器, 边缘计算
-
-> 本文宣布了持久对象切面功能的公开测试版发布，这是 Cloudflare 动态 Workers 平台中的一项新功能。它解决了安全运行由 AI 智能体生成的、持久且有状态应用的挑战。其核心创新在于允许一个主管持久对象动态加载 AI 编写的代码作为子“切面”。每个切面都是一个完整的持久对象类，拥有自己隔离的 SQLite 数据库，从而实现快速的本地存储访问。文章提供了一个完整、可运行的代码示例来演示该架构：平台开发者编写一个主管，负责管理代码加载、安全策略以及将请求路由到动态实例化的应用切面。这为 AI 生成的应用构建了可控、可扩展的平台，并内置了状态管理、可观测性和计费钩子。
+2026-04-13 13:08:35
 
 
 
 ### [动态、身份感知且安全的沙盒认证](https://blog.cloudflare.com/sandbox-auth/)
 
-2026-04-13 13:00:00 | 标签: Cloudflare, 沙盒, 容器, 零信任, 认证
-
-> 本文宣布了 Cloudflare 沙盒和容器平台的出站 Workers 功能正式上线。它解决了安全认证和控制隔离沙盒中运行的不可信工作负载（如 AI 智能体）这一关键挑战。其核心创新是一个可编程的出口代理，它能拦截来自沙盒的所有出站 HTTP/HTTPS 流量。这使得开发者能够安全地注入凭据（如 API 令牌）而无需将其暴露给沙盒，强制执行细粒度的访问策略，记录请求，并根据沙盒的身份或运行时状态动态修改规则。该解决方案被定位为优于静态 API 令牌或工作负载身份令牌等传统方法，通过在运行沙盒虚拟机的同一台机器上本地运行，提供了零信任、灵活性、可观测性和高性能。文章包含详细的代码示例，涵盖了凭据...
+2026-04-13 13:00:00
 
 
 
@@ -486,17 +482,13 @@
 
 ### [如何在-Google-Cloud-上使用-ARM-节点（无需-QEMU）构建和部署多架构-Docker-应用](https://www.freecodecamp.org/news/build-and-deploy-multi-architecture-docker-apps-on-google-cloud-using-arm-nodes/)
 
-2026-04-13 13:42:27 | 标签: Docker, Kubernetes, Google Cloud, ARM, 多架构
-
-> 本文解决了在基于 ARM 的开发机（如 Apple Silicon）和 x86 云服务器之间迁移时常见的容器架构不匹配问题。它提供了一个全面的实践教程，指导读者创建一个 Go 应用程序，编写一个利用交叉编译来避免缓慢的 QEMU 仿真的多阶段 Dockerfile，并使用 Docker Buildx 创建单个多架构镜像清单。该指南接着涵盖了设置 Google Cloud 项目、创建一个同时包含标准 x86 和 ARM（Tau T2A 或 Axion）节点池的 GKE 集群，以及使用 Kubernetes 节点选择器部署应用程序以专门针对 ARM 节点。教程强调了实用步骤、成本效益以及非 roo...
+2026-04-13 13:42:27
 
 
 
 ### [如何分析-Hugging-Face-的-Arm64-就绪状态](https://www.docker.com/blog/how-to-analyze-hugging-face-for-arm64-readiness/)
 
-2026-04-13 08:59:40 | 标签: Docker, MCP, Arm64, Hugging Face, 容器化
-
-> 本文提供了一份详细、实用的指南，介绍如何结合使用 Docker 的 MCP 工具包和 Arm MCP 服务器，系统性地评估和修复 Hugging Face Spaces 中的 Arm64 兼容性问题。它指出了一个常见但微妙的故障模式：问题不在于代码或 Dockerfile，而在于 requirements.txt 中硬编码的特定平台依赖项 URL。以 ACE-Step v1.5 音乐生成模型为案例研究，该指南逐步介绍了如何在 VS Code 中设置一个包含 7 个工具的 MCP 分析链。该链自动发现 Space、检查容器镜像、扫描源代码，并识别出特定的阻碍因素，例如 `flash-attn` ...
+2026-04-13 08:59:40
 
 
 

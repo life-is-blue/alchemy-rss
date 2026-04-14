@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-14 08:20:48 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-14 11:02:18 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -644,57 +644,43 @@
 
 ### [如何准备技术面试——Web-开发人员指南](https://www.freecodecamp.org/news/how-to-prep-for-technical-interviews-guide-for-web-devs/)
 
-2026-04-13 17:48:09 | 标签: 技术面试, Web 开发, 职业发展, 面试准备, 软件工程
-
-> 基于作者数十次技术面试的丰富经验，这份全面的指南为 Web 开发人员提供了面试准备的战略方法。核心见解是首先通过确定目标公司类型（例如，大型科技公司、初创公司、AI 优先公司）来缩小关注范围，因为每种类型都需要不同的技能组合。然后，指南概述了一个两步流程：在核心 Web 开发概念（HTML、CSS、JavaScript、框架、API、数据库、Git）上打下坚实基础，然后深化专业知识。它为六种常见的面试形式提供了详细的准备策略：回答技术问题、限时测验、现场功能构建、现场算法编码、带回家作业和系统设计。作者介绍了用于迭代改进的 PDCA（计划-执行-检查-行动）框架，并分享了实用技巧，例如向人力资...
+2026-04-13 17:48:09
 
 
 
 ### [面向-Svelte-开发者的数据可视化工具](https://www.freecodecamp.org/news/data-visualization-tools-for-svelte-developers/)
 
-2026-04-13 17:13:41 | 标签: Svelte, 数据可视化, 图表, 数据透视表, 前端开发
-
-> 文章首先介绍了 Svelte 的关键优势，如其编译时方法和响应式模型，然后深入探讨了数据可视化的实用指南。文章对五款特定工具进行了分类和评述：Layer Cake（开源图表框架）、FusionCharts 和 Highcharts（商业图表库）、Flexmonster（商业数据透视表组件）以及 SVAR（免费、轻量级数据网格）。对于每款工具，作者基于个人经验、Reddit 讨论以及 G2 等平台上的用户评价，提供了关键特性、集成方法、许可信息、社区支持状况和典型用例。本指南旨在帮助 Svelte 开发者为他们的项目选择合适的可视化工具。
+2026-04-13 17:13:41
 
 
 
 ### [GitHub-新手入门：GitHub-Pages-使用指南](https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-pages/)
 
-2026-04-13 15:00:00 | 标签: GitHub Pages, 静态网站托管, GitHub Actions, Web 开发, DevOps
-
-> 本文是 GitHub 官方“GitHub 新手入门”系列的一部分，重点介绍 GitHub Pages——一项免费的静态网站托管服务。它提供了一个清晰、实用的教程，指导如何部署一个 Next.js 示例项目。该指南详细介绍了两种部署方法：直接从分支部署和使用 GitHub Actions 工作流部署。它还涵盖了高级配置，例如添加自定义域名和强制使用 HTTPS。内容结构为动手实践教程，链接到示例仓库和官方文档以供进一步学习。语气充满鼓励，面向 GitHub 或 Web 部署新手开发者。
+2026-04-13 15:00:00
 
 
 
 ### [Lusion：数字工艺与雄心实验的交汇点](https://tympanus.net/codrops/2026/04/13/lusion-where-digital-craft-meets-ambitious-experimentation/)
 
-2026-04-13 13:09:28 | 标签: 数字制作, 互动设计, WebGL, 创意工作室, 实验性网页
-
-> 本文介绍了由 Edan Kwan 创立的、位于布里斯托尔的数字制作工作室 Lusion。该工作室的理念核心是为每个项目构建定制的专属系统，拒绝使用模板以保持创意完整性。他们的作品范围广泛，既包括为保时捷、可口可乐和谷歌等全球客户打造的精致、电影般的体验，也有刻意为之的、古怪的自发性实验项目。文章重点介绍了几个关键项目：为虚构 AI 产品打造的讽刺性、完全实现的营销活动 'Oryzo AI'；生成式 CG 短片 'Porsche: Dream Machine'；以及互动式 WebGL 叙事作品 'My Little Storybook'。文章强调了他们紧密协作的文化，以及通过 'Lusion L...
+2026-04-13 13:09:28
 
 
 
 ### [挤压与拉伸-•-Josh-W.-Comeau](https://www.joshwcomeau.com/animation/squash-and-stretch/)
 
-2026-04-13 12:00:00 | 标签: CSS 动画, SVG, UI/UX, 前端开发, 微交互
-
-> 文章介绍了迪士尼的‘挤压与拉伸’动画原理，并展示了其在 Web 开发中的实际应用。作者以一个可拉伸的箭头图标为主要示例，提供了实现该效果的分步指南。教程涵盖两种主要方法：一种是仅使用 CSS 的 `path()` 函数过渡方法（并指出了 Safari 的兼容性限制），另一种是使用 Motion 库的更健壮的基于 JavaScript 的解决方案。文章深入探讨了高级润色技术，例如使用弹簧物理实现更自然的运动，以及从基于状态的悬停交互过渡到基于事件的交互以获得更活泼的感觉。帖子包含多个交互式代码游乐场、关于 `prefers-reduced-motion` 的可访问性考虑，并以一个额外的弹跳球 C...
+2026-04-13 12:00:00
 
 
 
 ### [Next.js-不再受供应商锁定---Syntax-#995](https://syntax.fm/995)
 
-2026-04-13 11:00:00 | 标签: Next.js, Adapters API, TurboPack, Webpack, Vite
-
-> 在本期 Syntax 播客中，主持人 Wes Bos 和 Scott Tolinski 采访了来自 Next.js 核心团队的 Tim Neutkens 和 Jimmy Lai。对话聚焦于新推出的 Adapters API，该 API 旨在通过让 Next.js 应用能够在 Cloudflare 和 Netlify 等各种平台上运行，从而消除供应商锁定。他们深入探讨了这种方法的技术要求、缓存策略和性能影响。讨论的很大一部分内容集中在 Next.js 打包策略的演变上，解释了为何选择构建 TurboPack 而非采用 Vite，不同 JavaScript 运行时带来的挑战，以及开发增量编译系统所...
+2026-04-13 11:00:00
 
 
 
 ### [7-个值得尝试的视图过渡效果配方](https://css-tricks.com/7-view-transitions-recipes-to-try/)
 
-2026-04-13 08:14:48 | 标签: CSS, 视图过渡, 前端, 网页动画, UI/UX
-
-> 本文是一本实用的 CSS 视图过渡实现指南，视图过渡是一种用于创建平滑页面过渡的现代浏览器 API。文章首先介绍了必要的设置说明，强调需要通过 `@view-transition` 规则选择启用并尊重用户的运动偏好设置。文章的核心部分展示了七种不同的过渡效果配方：像素化溶解（模糊的交叉淡入淡出）、向上/向下/向右擦除（使用 `clip-path`）、旋转进入-退出（缩放和旋转效果）、圆形擦除（圆形揭示）、对角线推动（从角落滑入）、幕布揭示（中心分裂效果）和 3D 翻转（类似卡片的旋转）。每个配方都提供了完整的、可直接复制粘贴的 CSS 代码片段、对视觉效果的解释以及如何自定义的说明。作者鼓励读...
+2026-04-13 08:14:48
 
 
 
