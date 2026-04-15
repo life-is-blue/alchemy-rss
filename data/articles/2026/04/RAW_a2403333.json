@@ -1,0 +1,58 @@
+{
+  "id": "RAW_a2403333",
+  "title": "Zendesk 认为 AI 使代码变得充裕，瓶颈转向“吸收能力”",
+  "url": "https://www.infoq.com/news/2026/04/zendesk-absorption-capacity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-15 12:30:00",
+  "author": "Eran Stiller",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Zendesk recently argued that <a href=\"https://zendesk.engineering/what-happens-when-code-becomes-abundant-cc3239c4561b\">generative AI has changed the limiting factor in software delivery</a> from writing code to what it calls \"absorption capacity\". Absorption capacity is the organisational ability to define problems clearly, integrate changes into a broader system, verify that they behave correctly, and turn implementation into dependable value. In the company's framing, once code becomes abundant, the main challenge is no longer producing it quickly but ensuring that rapid generation does not outrun architectural coherence, review capacity, and delivery flow.</p>\n   <p>In a post on Zendesk Engineering, <a href=\"https://www.linkedin.com/in/bence-a-toth/\">Bence A. Tóth</a> builds the argument through analogies from agriculture and manufacturing. He argues that improving one part of a system does not necessarily increase total throughput if another constraint remains in place. In software, he writes, generative AI has lowered the cost of producing code enough that implementation is no longer the narrowest constraint.</p>\n   <p><img alt=\"\" style=\"width:100%;height:768px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/zendesk-absorption-capacity/en/resources/1Zendesk-Absorption-Capacity-Image-1776167541138.png\" rel=\"share\">\n    <br>\n    <small><em>Reimagining <a href=\"https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)\">Margaret Hamilton</a>’s iconic Apollo software photograph, when code production remained the primary constraint on software delivery (<a href=\"https://zendesk.engineering/what-happens-when-code-becomes-abundant-cc3239c4561b\">source</a>)</em></small></p>\n   <p>Tóth’s term \"absorption capacity\" covers the work required to convert generated code into reliable outcomes. That includes deciding what should be built, aligning implementation with the surrounding architecture, establishing confidence through verification, and determining whether the resulting change actually improves customer outcomes.</p>\n   <p>The article proposes four practical responses. First, problem framing should become a shared responsibility between product and engineering rather than a one-way handoff, because ambiguous requirements can now produce plausible but misaligned implementations at scale. Second, teams should lower the cost of confidence by strengthening verification loops, including CI signals, static analysis, security checks, observability, staged rollouts, and rapid product feedback after deployment.</p>\n   <p>Third, architecture and engineering conventions should serve as scaffolding for AI-assisted delivery, with clear boundaries, consistent naming, templates, lightweight <a href=\"https://adr.github.io/\">Architecture Decision Records</a> (ADRs), and guardrails enforced in CI. Finally, teams should measure throughput rather than output, favouring metrics such as lead time, review queue time, change failure rates, rollbacks, and incident load over lines of code, pull request volume, or token counts.</p>\n   <p>AI, he argues, will scale whatever structures already exist in the codebase and delivery workflow. In systems with clear module boundaries, documented invariants, and a small number of well-understood implementation paths, AI can accelerate work while remaining easier to direct and verify. In systems with ambiguous conventions or architectural drift, the same acceleration can amplify inconsistency, increase review burden, and weaken trust in changes that may look locally correct while degrading the system more broadly.</p>\n   <p>In a recent InfoQ news item on <a href=\"https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/\">Agoda’s view of AI coding tools</a>, Agoda similarly argued that coding was never the real bottleneck, and that specification and verification become more important as implementation accelerates. Zendesk pushes that argument further by naming the replacement constraint and framing it as an organisational design problem: how to increase a team’s ability to absorb rapid change without degrading architecture or delivery quality.</p>\n   <p>For architects and engineering leaders, the implication is that the advantage may not go to teams that generate the most code, but to those that can safely absorb more meaningful change.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Zendesk Says AI Makes Code Abundant, Shifting the Bottleneck to “Absorption Capacity”\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Eran Stiller\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/zendesk-absorption-capacity/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776256200000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Zendesk 认为，生成式 AI 已将软件交付的主要瓶颈从编写代码转向“吸收能力”——即组织定义问题、整合变更、验证正确性和交付价值的能力，这需要在问题界定、验证、架构和度量方面采用新的实践。",
+  "oneSentenceSummary": "Zendesk 认为，生成式 AI 已将软件交付的主要瓶颈从编写代码转向“吸收能力”——即组织定义问题、整合变更、验证正确性和交付价值的能力，这需要在问题界定、验证、架构和度量方面采用新的实践。",
+  "summary": "Zendesk Engineering 提出，生成式 AI 从根本上改变了软件开发的约束条件。传统的编写代码瓶颈已得到缓解，取而代之的是一个被称为“吸收能力”的新限制因素。这个概念涵盖了组织清晰定义问题、将 AI 生成的代码整合到连贯的系统架构中、通过稳健的测试和可观测性验证其正确性，并最终将实现转化为可靠的客户价值的能力。文章作者 Bence A. Tóth 使用制造业的类比来说明，在不解决其他约束的情况下加速系统的一部分（代码生成）并不会提高整体吞吐量。文章提出了四个关键应对措施：使问题界定成为产品与工程部门的共同责任；加强验证循环（CI、静态分析、分阶段发布）；将架构和约定作为 AI 的脚手架；以及度量吞吐量指标（前置时间、故障率）而非产出指标（代码行数）。核心论点是，AI 将放大现有结构——无论好坏——使得架构清晰度和组织设计成为新的竞争优势。",
+  "mainPoints": [
+    {
+      "point": "生成式 AI 将主要瓶颈从代码生产转向组织的‘吸收能力’。",
+      "explanation": "当代码变得充裕且生成成本低廉时，约束就转移到团队有效定义、整合、验证并交付该代码价值的能力上。"
+    },
+    {
+      "point": "问题界定必须成为产品与工程部门的共同责任。",
+      "explanation": "模糊的需求现在可以被 AI 转化为大量看似合理但方向错误的代码，因此需要更紧密的协作以确保解决的是正确的问题。"
+    },
+    {
+      "point": "团队必须投资于加强验证循环，并将架构用作 AI 的脚手架。",
+      "explanation": "为了在大规模下保持信心，像 CI/CD、静态分析、可观测性、清晰的架构边界和约定（ADRs）这样的实践对于指导和验证 AI 生成的变更至关重要。"
+    },
+    {
+      "point": "度量吞吐量和结果，而非代码产出。",
+      "explanation": "成功指标应从代码行数或 PR 数量转向前置时间、变更故障率、回滚和事件负载，这些指标反映了安全交付价值的真实能力。"
+    }
+  ],
+  "keyQuotes": [
+    "吸收能力是组织清晰定义问题、将变更整合到更广泛的系统中、验证其行为正确性，并将实现转化为可靠价值的能力。",
+    "一旦代码变得充裕，主要挑战就不再是快速生产代码，而是确保快速的生成不会超出架构一致性、评审能力和交付流程的承载范围。",
+    "AI 将放大代码库和交付工作流中已经存在的任何结构。",
+    "优势可能不会属于生成最多代码的团队，而是属于那些能够安全吸收更多有意义变更的团队。"
+  ],
+  "tags": [
+    "吸收能力",
+    "生成式 AI",
+    "软件交付",
+    "组织设计",
+    "AI 编码工具"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 3,
+  "score": 88,
+  "wordCount": 502,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776256200000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-15 12:30:00"
+}
