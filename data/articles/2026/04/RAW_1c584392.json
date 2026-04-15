@@ -1,0 +1,54 @@
+{
+  "id": "RAW_1c584392",
+  "title": "网络安全防御新时代的可信访问",
+  "url": "https://simonwillison.net/2026/Apr/14/trusted-access-openai/#atom-everything",
+  "date": "2026-04-14 21:23:59",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">14th April 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://openai.com/index/scaling-trusted-access-for-cyber-defense/\">Trusted access for the next era of cyber defense</a></strong> (<a href=\"https://news.ycombinator.com/item?id=47770770\" title=\"Hacker News\">via</a>) OpenAI's answer to <a href=\"https://simonwillison.net/2026/Apr/7/project-glasswing/\">Claude Mythos</a> appears to be a new model called GPT-5.4-Cyber:</p>\n    <blockquote>\n     <p>In preparation for increasingly more capable models from OpenAI over the next few months, we are fine-tuning our models specifically to enable defensive cybersecurity use cases, starting today with a variant of GPT‑5.4 trained to be cyber-permissive: GPT‑5.4‑Cyber.</p>\n    </blockquote>\n    <p>They're also extending a program they launched in February (which I had missed) called <a href=\"https://openai.com/index/trusted-access-for-cyber/\">Trusted Access for Cyber</a>, where users can verify their identity (via a photo of a government-issued ID processed by <a href=\"https://withpersona.com/\">Persona</a>) to gain \"reduced friction\" access to OpenAI's models for cybersecurity work.</p>\n    <p>Honestly, this OpenAI announcement is difficult to follow. Unsurprisingly they don't mention Anthropic at all, but much of the piece emphasizes their many years of existing cybersecurity work and their goal to \"democratize access\" to these tools, hence the emphasis on that self-service verification flow from February.</p>\n    <p>If you want access to their best security tools you still need to go through an extra Google Form application process though, which doesn't feel particularly different to me from Anthropic's <a href=\"https://www.anthropic.com/glasswing\">Project Glasswing</a>.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Simon Willison 评论了 OpenAI 发布的 GPT-5.4-Cyber 及其网络安全可信访问计划，将其与 Anthropic 的 Project Glasswing 进行比较，并指出访问流程的复杂性和有限的实践差异。",
+  "oneSentenceSummary": "Simon Willison 评论了 OpenAI 发布的 GPT-5.4-Cyber 及其网络安全可信访问计划，将其与 Anthropic 的 Project Glasswing 进行比较，并指出访问流程的复杂性和有限的实践差异。",
+  "summary": "Simon Willison 在其链接博客文章中讨论了 OpenAI 对 Anthropic 的 Claude Mythos/Project Glasswing 的回应，后者似乎是一个名为 GPT-5.4-Cyber 的新模型变体，专门针对防御性网络安全用例进行了微调。他还强调了 OpenAI 于二月份推出的现有“网络安全可信访问”计划，该计划允许用户通过 Persona 验证身份，以便以更低的阻力访问用于安全工作的模型。Willison 认为该公告难以理解，并指出，尽管强调了民主化和自助验证，但访问最佳安全工具仍然需要通过 Google 表单进行额外的申请，他认为这一过程与 Anthropic 的方法没有本质区别。",
+  "mainPoints": [
+    {
+      "point": "OpenAI 正在推出 GPT-5.4-Cyber，这是一个网络许可模型变体，作为对 Anthropic 举措的回应。",
+      "explanation": "此举标志着在 AI 网络安全这一专业领域的竞争定位，重点是针对防御性用例微调模型。"
+    },
+    {
+      "point": "“网络安全可信访问”计划旨在降低门槛，但保留了有门控的申请流程。",
+      "explanation": "虽然通过身份验证（通过 Persona）来促进民主化，但访问最强大的工具仍然需要人工批准，从而创建了一个分层访问模型。"
+    },
+    {
+      "point": "该公告内容复杂，并且可以说与竞争对手相比几乎没有实际的差异化。",
+      "explanation": "Willison 批评了沟通的清晰度，并暗示获取顶级安全工具的实际用户体验可能并不比 Anthropic 的 Project Glasswing 容易多少。"
+    }
+  ],
+  "keyQuotes": [
+    "OpenAI 对 Claude Mythos 的回应似乎是一个名为 GPT-5.4-Cyber 的新模型。",
+    "他们还在扩展一个二月份推出的计划（我之前错过了），名为‘网络安全可信访问’，用户可以通过验证身份……来获得‘阻力更低’的访问权限。",
+    "老实说，这个 OpenAI 的公告很难理解。",
+    "不过，如果你想访问他们最好的安全工具，你仍然需要通过一个额外的 Google 表单申请流程，这在我看来与 Anthropic 的 Project Glasswing 没有太大区别。"
+  ],
+  "tags": [
+    "OpenAI",
+    "GPT-5.4-Cyber",
+    "网络安全",
+    "可信访问",
+    "Anthropic"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 79,
+  "wordCount": 192,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "NEWS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776201839000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 21:23:59"
+}

@@ -1,15 +1,21 @@
-> **更新时间**: 2026-04-10 16:28:55 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-15 08:18:52 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI 视频
 
 
 
 
+### [Harness-Engineering：有時候語言模型不是不夠聰明，只是沒有人類好好引導](https://www.youtube.com/watch?v=R6fZR_9kmIw)
+
+2026-04-12 19:57:45 | 标签: 驾驭工程, AI Agent, 提示工程, 上下文工程, 模型引导
+
+> 本文基于李宏毅教授的演讲，系统阐述了「驾驭工程」这一前沿概念。文章以 Gemma 2B 模型修复 Bug 的案例开篇，揭示了 AI 智能体失败常因缺乏有效引导，而非模型能力不足。核心内容定义了驾驭工程，并详细拆解了其三大手段：1）通过 `agents.md` 等自然语言规则控制模型的认知框架；2）通过工具限制控制其能力边界与安全性；3）通过「规划-生成-评估」等工作流程确保任务完成。文章进一步探讨了情绪向量如何影响模型行为（如绝望导致作弊），以及长期记忆管理（如 Auto-Dream）和基于语言反馈的持续进化机制。最后指出，未来强大的模型甚至能自主为弱小模型设计驾驭方案，驾驭工程将成为人机协作...
+
+
+
 ### [ChatGPT-与癌症：一位科技创始人如何重写他的治疗方案](https://www.youtube.com/watch?v=OAlHiQLsYQM)
 
-2026-04-09 22:44:27 | 标签: 个性化医疗, 癌症治疗, 基因组学, AI 智能体, 生物信息学
-
-> 本次 OpenAI 论坛的对话嘉宾包括 GitLab 联合创始人 Sid Sijbrandij 和遗传学家 Jacob Stern。在 Sid 被诊断出患有罕见且易复发的骨肉瘤并被告知预后极差后，他将“创始人思维”应用于自己的生存斗争中，绕过了传统医疗系统的局限。他们详细介绍了“极端诊断”方法：收集了 25TB 的个人基因组数据，并利用 AI 智能体来处理复杂的医学文献和生物信息学分析。这一数据驱动的策略促成了针对 Sid 独特肿瘤标志物（如 FAP 和 B7-H3）的定制化 mRNA 疫苗、TCR-T 和 CAR-T 疗法的开发。讨论强调了医生责任制与患者生存需求之间的分歧，探讨了 AI 在...
+2026-04-09 22:44:27
 
 
 
@@ -331,7 +337,7 @@
 
 
 
-### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
+### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
 
 2025-11-24 20:16:36
 
@@ -343,7 +349,7 @@
 
 
 
-### [妙用子代理增强-Codex-命令行界面-—-Brian-John，BetterUp](https://www.youtube.com/watch?v=5eJqXtevlXg)
+### [来自-2000-万个-Pull-Requests-的数据揭示了-AI-转型的实际情况-—-Nicholas-Arcolano，-Jellyfish](https://www.youtube.com/watch?v=WqZq8L-v9pA)
 
 2025-11-24 20:16:36
 

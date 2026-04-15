@@ -1,0 +1,52 @@
+{
+  "id": "RAW_a22912e5",
+  "title": "网络安全如今看起来像工作量证明",
+  "url": "https://simonwillison.net/2026/Apr/14/cybersecurity-proof-of-work/#atom-everything",
+  "date": "2026-04-14 19:41:48",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">14th April 2026 - Link Blog</p>\n   <div>\n    <p><strong><a href=\"https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html\">Cybersecurity Looks Like Proof of Work Now</a></strong>. The UK's AI Safety Institute recently published <a href=\"https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities\">Our evaluation of Claude Mythos Preview’s cyber capabilities</a>, their own independent analysis of <a href=\"https://simonwillison.net/2026/Apr/7/project-glasswing/\">Claude Mythos</a> which backs up Anthropic's claims that it is exceptionally effective at identifying security vulnerabilities.</p>\n    <p>Drew Breunig notes that AISI's report shows that the more tokens (and hence money) they spent the better the result they got, which leads to a strong economic incentive to spend as much as possible on security reviews:</p>\n    <blockquote>\n     <p>If Mythos continues to find exploits so long as you keep throwing money at it, security is reduced to a brutally simple equation: <strong>to harden a system you need to spend more tokens discovering exploits than attackers will spend exploiting them</strong>.</p>\n    </blockquote>\n    <p>An interesting result of this is that open source libraries become <em>more</em> valuable, since the tokens spent securing them can be shared across all of their users. This directly counters the idea that the low cost of vibe-coding up a replacement for an open source library makes those open source projects less attractive.</p>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "文章讨论了以 Claude Mythos 为例的 AI 驱动漏洞发现，如何将网络安全转变为一种经济工作量证明模型，其中安全性取决于谁能在 AI 代币上投入更多资金。",
+  "oneSentenceSummary": "文章讨论了以 Claude Mythos 为例的 AI 驱动漏洞发现，如何将网络安全转变为一种经济工作量证明模型，其中安全性取决于谁能在 AI 代币上投入更多资金。",
+  "summary": "本文基于对 Drew Breunig 分析的链接，评论了英国 AI 安全研究所（AISI）评估 Anthropic 的 Claude Mythos 模型的报告。AISI 报告证实，Claude Mythos 在识别安全漏洞方面异常有效。一个关键见解是，模型的性能随着用于分析的代币数量（从而也是资金）的增加而线性扩展。这创造了一种范式，即网络安全变成了一场直接的经济竞争：要保护一个系统，防御者必须愿意在 AI 驱动的漏洞发现上投入比潜在攻击者为寻找漏洞所花费的更多资金。文章进一步指出了一个有趣的后果：这种模式增加了开源库的价值，因为对其的安全投资被分摊到所有用户身上，这反驳了易于 AI 生成的替代品可能使其贬值的观点。",
+  "mainPoints": [
+    {
+      "point": "AI 驱动的安全审计将网络安全转变为一种经济工作量证明模型。",
+      "explanation": "像 Claude Mythos 这样的模型在发现漏洞方面的有效性，直接与计算预算（花费的代币/资金）成比例扩展，使得安全成为防御者和攻击者之间经济资源的较量。"
+    },
+    {
+      "point": "安全现在是一个简单的经济等式：在 AI 发现上的花费要超过攻击者在利用漏洞上的花费。",
+      "explanation": "核心防御策略变成了在用于漏洞搜寻的 AI 代币消耗上超过潜在对手，从根本上改变了系统加固的成本效益分析。"
+    },
+    {
+      "point": "这种经济模型出人意料地增加了成熟开源库的价值。",
+      "explanation": "全面保护一个代码库所需的巨大代币成本，对于一个库来说是一次性投资，但惠及其所有用户，这使得经过良好审计的开源项目比易于生成但未经审查的替代品更具经济吸引力。"
+    }
+  ],
+  "keyQuotes": [
+    "如果只要持续投入资金，Mythos 就能不断发现漏洞，那么安全就被简化为一个极其简单的等式：要加固一个系统，你需要花费比攻击者利用漏洞更多的代币来发现漏洞。",
+    "一个有趣的结果是，开源库变得*更有*价值，因为用于保护它们的代币成本可以在其所有用户之间共享。"
+  ],
+  "tags": [
+    "网络安全",
+    "AI 安全",
+    "Claude Mythos",
+    "工作量证明",
+    "经济安全"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 87,
+  "wordCount": 181,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776195708000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 19:41:48"
+}

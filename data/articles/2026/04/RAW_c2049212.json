@@ -1,0 +1,57 @@
+{
+  "id": "RAW_c2049212",
+  "title": "[AINews] 2026 年 4 月顶级本地模型榜单",
+  "url": "https://www.latent.space/p/ainews-top-local-models-list-april",
+  "date": "2026-04-14 08:43:33",
+  "author": "Latent.Space",
+  "siteName": "Latent Space",
+  "content": "<html>\n <head></head>\n <body>\n  <div dir=\"auto\" class=\"body markup\">\n   <p>As you know we read through /r/localLlama, /r/localLLM, and other local model subreddits on an almost daily basis, and every now and then it is good to step back and survey what the community consensus is landing on, with a sampling of models across different sizes. We started this work to power our local Claw.</p>\n   <p>The top names you should know as a baseline, adjusted for “what people are actually recommending” rather than just benchmark supremacy:</p>\n   <ol>\n    <li>\n     <p><strong><a href=\"https://www.latent.space/p/ainews-qwen35-397b-a17b-the-smallest?utm_source=publication-search\" rel=\"\">Qwen 3.5</a></strong><span> — most broadly recommended family right now across usecases.</span></p>\n    </li>\n    <li>\n     <p><strong><a href=\"https://www.latent.space/p/ainews-gemma-4-crosses-2-million?utm_source=publication-search\" rel=\"\">Gemma 4</a></strong><span> — strong recent buzz for local usability, especially smaller and mid-sized deployments.</span></p>\n    </li>\n    <li>\n     <p><strong><a href=\"https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights?utm_source=publication-search\" rel=\"\">GLM-5 / GLM-4.7</a></strong><a href=\"https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights?utm_source=publication-search\" rel=\"\"> </a><span>— near the top of broad open-model rankings, increasingly part of the “best overall” conversation.</span></p>\n    </li>\n    <li>\n     <p><strong><a href=\"https://www.latent.space/p/ainews-minimax-27-glm-5-at-13-cost?utm_source=publication-search\" rel=\"\">MiniMax M2.5 / M2.7</a></strong><a href=\"https://www.latent.space/p/ainews-minimax-27-glm-5-at-13-cost?utm_source=publication-search\" rel=\"\"> </a><span>— repeatedly cited for agentic/tool-heavy workloads.</span></p>\n    </li>\n    <li>\n     <p><strong><a href=\"https://news.smol.ai/frozen-issues/25-12-01-deepseek-32.html\" rel=\"\">DeepSeek V3.2</a></strong><span> — still firmly in the top cluster when people talk about strongest open-weight general models.</span></p>\n    </li>\n    <li>\n     <p><strong><a href=\"https://news.smol.ai/frozen-issues/25-08-05-gpt-oss.html\" rel=\"\">GPT-oss 20B</a></strong><span> — not the mainstream “winner,” but increasingly recommended as a practical local option and for uncensored variants.</span></p>\n     <p></p>\n    </li>\n   </ol>\n   <p><span>For local coding, the overwhelming consensus is </span><strong><a href=\"https://huggingface.co/Qwen/Qwen3-Coder-Next\" rel=\"\">Qwen3-Coder-Next</a></strong><span>. So that’s easy.</span></p>\n   <p><span>Naturally the fuller list is going to have a strong lean on </span><a href=\"https://openrouter.ai/state-of-ai\" rel=\"\">roleplay/creative writing, the #2 usecase of LLMs</a><span>, and we are NSFW-friendly so here goes…</span></p>\n   <p></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文整理了社区驱动的 2026 年 4 月性能最佳的本地 LLM 榜单，重点推荐了 Qwen 3.5、Gemma 4、GLM-5、MiniMax M2.5/M2.7、DeepSeek V3.2 和 GPT-oss 20B 作为适用于各种用例的最受推荐模型。",
+  "oneSentenceSummary": "本文整理了社区驱动的 2026 年 4 月性能最佳的本地 LLM 榜单，重点推荐了 Qwen 3.5、Gemma 4、GLM-5、MiniMax M2.5/M2.7、DeepSeek V3.2 和 GPT-oss 20B 作为适用于各种用例的最受推荐模型。",
+  "summary": "基于对/r/localLlama 等社区论坛的日常监测，本文呈现了截至 2026 年 4 月最受推荐的本地大语言模型的精选快照。该榜单优先考虑实用的社区推荐，而非纯粹的基准测试分数。它将 Qwen 3.5 列为最广泛推荐的模型系列，Gemma 4 因其本地可用性而备受关注，GLM-5/4.7 在开源权重排名中名列前茅，MiniMax M2.5/M2.7 适用于智能体工作负载，DeepSeek V3.2 是顶级的通用模型，而 GPT-oss 20B 则是一个实用的本地/无审查选项。对于本地编码任务，Qwen3-Coder-Next 被指出是压倒性的共识选择。本文为开发者选择本地部署模型提供了及时、实用的指南。",
+  "mainPoints": [
+    {
+      "point": "社区共识，而不仅仅是基准测试，定义了顶级本地 LLM。",
+      "explanation": "该榜单是通过每日监测/r/localLlama 等子版块整理而成，反映了从业者在实际场景中真正推荐和使用的内容。"
+    },
+    {
+      "point": "Qwen 3.5 是目前跨用例最广泛推荐的模型系列。",
+      "explanation": "凭借其在各种本地部署场景中的多功能性和性能，它获得了社区的广泛认可。"
+    },
+    {
+      "point": "专用模型在特定领域领先，例如 Qwen3-Coder-Next 用于编码。",
+      "explanation": "对于本地编码任务，压倒性的共识指向 Qwen3-Coder-Next 作为首选，这展示了领域特定微调的重要性。"
+    },
+    {
+      "point": "像 GPT-oss 20B 这样实用且无审查的选项正日益受到关注。",
+      "explanation": "虽然并非主流赢家，但像 GPT-oss 20B 这样的模型因其在本地设置中的实用性以及无审查变体的可用性而越来越受推荐。"
+    }
+  ],
+  "keyQuotes": [
+    "作为基准你应该知道的顶级名字，根据‘人们实际推荐什么’而非仅仅是基准测试优势进行了调整。",
+    "Qwen 3.5 —— 目前跨用例最广泛推荐的模型系列。",
+    "对于本地编码，压倒性的共识是 Qwen3-Coder-Next。所以这很简单。"
+  ],
+  "tags": [
+    "本地LLM",
+    "模型推荐",
+    "开源AI",
+    "Qwen",
+    "Gemma"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 84,
+  "wordCount": 202,
+  "domain": "latent.space",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_fc479e",
+  "sourceName": "Latent Space",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776156213000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 08:43:33"
+}

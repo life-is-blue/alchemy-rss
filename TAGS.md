@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-15 06:15:35 | [返回首页](/README.md)
+**更新时间**: 2026-04-15 08:18:52 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11221)
+- [AI & 大模型](#ai-llm) (11255)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (777)
-- [DevOps](#devops) (510)
+- [前端与全栈](#frontend-fullstack) (781)
+- [DevOps](#devops) (513)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5479)
+- [其他](#other) (5488)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Gemini-Robotics-ER-1.6：增强的具身推理](https://deepmind.google/blog/gemini-robotics-er-1-6/) - AI 精选
+- [MiniMax-Agent-更新：这次我们重新设计了-Agent-操作电脑的方式](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488360&idx=1&sn=9358b0c0a0750975e8f4c001b8f1e724) - AI 精选
 - [万字综述-Harness-革命！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247721825&idx=1&sn=b3415031a3bad0026f9e09a3a2b81cb6) - AI 精选
 - [你的-ReAct-智能体正在浪费-90%-的重试机会——以下是解决方法](https://towardsdatascience.com/your-react-agent-is-wasting-90-of-its-retries-heres-how-to-stop-it/) - AI 精选
 - [浅谈-Agent-Memory](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491772&idx=1&sn=bbbbfbe12bff30ae169d21b8d04eef65) - AI 精选
@@ -40,10 +42,8 @@
 - [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) - AI 精选
 - [深度解析：Claude-Code-源码架构与-Harness-Engineering-实践](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491747&idx=1&sn=402e7be9dc30cccdcd2c2f748974726c) - AI 精选
 - [Lenny’s-Podcast-中关于智能体工程的对话精华](https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything) - AI 精选
-- [Gemma-4：同等规模下最强大的开源模型](https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/) - AI 精选
-- [开源模型已跨越临界点](https://blog.langchain.com/open-models-have-crossed-a-threshold/) - AI 精选
 
-- [查看全部 11221 篇...](/details/tags/ai-llm.md)
+- [查看全部 11255 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 777 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 781 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -111,6 +111,7 @@
 - [Amazon-Bedrock-+-Whisper：构建高效无服务器音频摘要方案-|-亚马逊云科技](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-audio-summarization-solution-with-amazon-bedrock-and-whisper/) - AI 精选
 - [Docker-万字教程：从入门到掌握](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247705250&idx=1&sn=80139792160e38252609a4a46cc8bf95&subscene=0) - AI 精选
 - [在-Hugging-Face-上部署语音转语音模型](https://mp.weixin.qq.com/s/7LjioA4FlUR3GPR-FjL0AA) - AI 精选
+- [保护非人类身份：自动化吊销、OAuth-与范围化权限](https://blog.cloudflare.com/improved-developer-security/) - 编程 精选
 - [动态-Workers-中的持久对象：为每个-AI-生成的应用提供专属数据库](https://blog.cloudflare.com/durable-object-facets-dynamic-workers/) - 编程 精选
 - [动态、身份感知且安全的沙盒认证](https://blog.cloudflare.com/sandbox-auth/) - 编程 精选
 - [这大概是我读过最硬核的一次-Linux-内核重构文章了](https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&mid=2649801153&idx=1&sn=4e89b5dd7a0f02f12a5f8b2536507b99) - 编程 精选
@@ -127,9 +128,8 @@
 - [一次缓存引发的文件系统数据不一致问题排查与深度解析](https://mp.weixin.qq.com/s?__biz=Mzg4NTczNzg2OA==&mid=2247508711&idx=1&sn=f1a6bc179ce224609af411d4443b93d7) - 编程 精选
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 - [从单体到-LLM：拆解-DevOps-进化的三大范式](https://mp.weixin.qq.com/s?__biz=MjM5MjY3OTgwMA==&mid=2652488593&idx=1&sn=0ec72ae6ede304415c64bcdc720f723e) - 编程 精选
-- [动态计算：我们如何构建无服务器服务器---Vercel](https://vercel.com/blog/fluid-how-we-built-serverless-servers) - 编程 精选
 
-- [查看全部 510 篇...](/details/tags/devops.md)
+- [查看全部 513 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5479 篇...](/details/tags/other.md)
+- [查看全部 5488 篇...](/details/tags/other.md)
 
 

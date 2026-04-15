@@ -1,0 +1,53 @@
+{
+  "id": "RAW_f76eed63",
+  "title": "AI 开始直接交付 Excel，千问用 Agent 重构做表流程",
+  "url": "https://www.qbitai.com/2026/04/401041.html",
+  "date": "2026-04-14 02:48:22",
+  "author": "量子位的朋友们",
+  "siteName": "量子位",
+  "content": "<html>\n <head></head>\n <body>\n  <p>自去年底升级文档和PPT处理能力后，千问进一步将能力延伸至结构化数据生成。</p>\n  <p>4月14日，千问上线“表格Agent”，支持在对话中直接生成、编辑Excel文件。用户可以要求千问检索信息后生成表格，也可以将多轮对话内容整理为表格，或基于图片、文件生成。系统通常可在1–2分钟内输出可下载的Excel文件，无需二次复制粘贴，并支持通过自然语言进行修改。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260414030338_9088f04194efe63fec1d96474b6c9c47.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>这是国内首个支持全场景能力的表格Agent。在现有AI助手中，表格处理仍是相对薄弱的场景。一类产品依赖用户上传模板后生成结果，另一类则仅输出文本格式，仍需用户手动整理为Excel文件，大幅降低了AI在实际场景中的易用性。</p>\n  <p>在技术实现上，千问将表格生成拆解为一条完整的Agent执行链路：从用户输入需求开始，系统会先进行任务规划，如需不需要写代码、需不需要查资料等，然后再分步精准执行复杂操作。Agent可以在独立的沙箱环境中进行coding，生成带真实公式、条件格式、复杂排版与数据逻辑的专业Excel文件。当系统判断信息不足时，会自动触发在线检索补充数据。</p>\n  <p>在实际使用中，用户无需掌握复杂操作或编写指令，只需像聊天一样用日常语言提出需求，例如“把最新的增值税优惠政策具体项目整理成一份Excel清单”或“将初中英语各句型语法结构及时态变化做成一张方便打印背诵的Excel”，千问表格Agent便能自动检索，生成可直接下载使用的标准Excel文件。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260414030338_12fddc2650fbcdb852381d936bbce8d1.png\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>千问还能深度理解多轮对话上下文，在旅行规划、项目讨论、学习复盘等场景，用户与千问反复沟通细节后，只需一句“把刚才聊的内容整理成Excel行程计划”，千问便能自动提炼关键信息，生成包含日期、地点、交通、住宿、预算、备注等完整字段的结构化表格，一键保存、随时分享。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260414030338_5ec74e3444e90e410164150527a03906.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>此外，千问表格Agent还突破了传统文本交互边界，全面支持多模态输入。用户可上传PDF、Word、PPT等不同格式文件，并要求千问将相关信息提炼成Excel。对于手绘课表、工资单、纸质报表等照片，系统也能高精度识别内容，生成结构化表格，并保留原始语义逻辑，真正实现“拍图成表”。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" class=\"syl-page-img\" src=\"https://image.jido.dev/20260414030338_97b1d460d7c3d24a85425a3080e193aa.jpeg\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>对于上传的Excel、CSV文件等，用户均可通过自然语言进行分析和编辑，如“帮我根据销售额对销售人员排名”、“根据成交单数和转化率计算接访人数”或“把第三列数据全部居中对齐”。</p>\n  <p>千问表格Agent产品负责人表示，该功能的目标是将AI从“提供答案”延伸至“直接交付可用结果”。</p>\n  <p>目前，千问表格Agent已经全面开放，所有用户均可通过千问App、网页版、PC端免费使用这一功能。</p>\n </body>\n</html>",
+  "aiSummary": "阿里云千问上线「表格 Agent」功能，通过 Agent 执行链路将自然语言需求直接转化为可下载、可编辑的专业 Excel 文件，支持多模态输入和上下文理解，旨在将 AI 从信息提供者升级为结果交付者。",
+  "oneSentenceSummary": "阿里云千问上线「表格 Agent」功能，通过 Agent 执行链路将自然语言需求直接转化为可下载、可编辑的专业 Excel 文件，支持多模态输入和上下文理解，旨在将 AI 从信息提供者升级为结果交付者。",
+  "summary": "文章报道了阿里云千问最新推出的「表格 Agent」功能。该功能将 AI 的表格处理能力从简单的文本生成升级为直接交付可用的 Excel 文件。其核心在于构建了一条完整的 Agent 执行链路：从理解用户自然语言需求开始，进行任务规划（如判断是否需要检索或编码），然后在沙箱环境中执行代码，生成包含真实公式、条件格式和复杂排版的 Excel 文件。该 Agent 支持全场景应用，包括基于对话上下文整理表格、从图片/PDF/Word 等多模态文件中提取信息生成表格，以及对现有表格进行自然语言编辑。此举旨在解决现有 AI 工具在表格场景下仍需用户手动复制粘贴或依赖模板的痛点，将 AI 的角色从「提供答案」延伸至「直接交付可用结果」。目前该功能已面向所有用户免费开放。",
+  "mainPoints": [
+    {
+      "point": "千问表格 Agent 实现了从需求到可交付 Excel 文件的端到端自动化。",
+      "explanation": "通过构建完整的 Agent 执行链路（规划-检索-编码-生成），系统能在 1-2 分钟内将自然语言指令转化为可直接下载、包含专业格式的 Excel 文件，无需用户二次处理。"
+    },
+    {
+      "point": "该功能突破了传统 AI 表格工具的交互边界，支持全场景与多模态输入。",
+      "explanation": "不仅支持基于对话生成表格，还能从图片、PDF、Word 等文件中提取信息生成结构化表格（拍图成表），并能基于多轮对话上下文自动提炼关键信息。"
+    },
+    {
+      "point": "其产品目标是推动 AI 从「信息提供者」向「结果交付者」的角色转变。",
+      "explanation": "负责人明确表示，功能设计旨在解决 AI 在实际办公场景中的易用性瓶颈，让 AI 直接产出可用的工作成果，而不仅仅是文本答案。"
+    }
+  ],
+  "keyQuotes": [
+    "这是国内首个支持全场景能力的表格 Agent。",
+    "Agent 可以在独立的沙箱环境中进行 coding，生成带真实公式、条件格式、复杂排版与数据逻辑的专业 Excel 文件。",
+    "千问表格 Agent 产品负责人表示，该功能的目标是将 AI 从「提供答案」延伸至「直接交付可用结果」。"
+  ],
+  "tags": [
+    "千问",
+    "AI Agent",
+    "表格生成",
+    "Excel",
+    "多模态 AI"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 87,
+  "wordCount": 1048,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1776134902000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 02:48:22"
+}

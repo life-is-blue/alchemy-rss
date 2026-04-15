@@ -1,0 +1,59 @@
+{
+  "id": "RAW_6339989c",
+  "title": "片段：4 月 14 日",
+  "url": "https://martinfowler.com/fragments/2026-04-14.html",
+  "date": "2026-04-14 13:16:00",
+  "author": "Martin Fowler",
+  "siteName": "Martin Fowler",
+  "content": "<html>\n <head></head>\n <body>\n  <p>I attended the first Pragmatic Summit early this year, and while there host <a href=\"https://www.youtube.com/watch?v=CZs8J1ZD0CE\">Gergely Orosz interviewed Kent Beck and myself on stage</a>. The video runs for about half-an-hour.</p>\n  <p><a href=\"https://www.youtube.com/watch?v=CZs8J1ZD0CE\"><img src=\"https://martinfowler.com/img/catalog/2026-prag-summit.png\" alt=\"A photo of Gergely, Kent, and myself on the stage. We are all bedazzled by the vibrancy of Kent's trousers\"></a></p>\n  <p>I always enjoy nattering with Kent like this, and Gergely pushed into some worthwhile topics. Given the timing, AI dominated the conversation - we compared it to earlier technology shifts, the experience of agile methods, the role of TDD, the danger of unhealthy performance metrics, and how to thrive in an AI-native industry.</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Perl is a language I used a little, but never loved. However the definitive book on it, by its designer Larry Wall, contains a wonderful gem. The three virtues of a programmer: hubris, impatience - and above all - <em>laziness</em>.</p>\n  <p>Bryan Cantrill <a href=\"https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/\">also loves this virtue</a>:</p>\n  <blockquote>\n   <p>Of these virtues, I have always found laziness to be the most profound: packed within its tongue-in-cheek self-deprecation is a commentary on not just the need for abstraction, but the aesthetics of it. Laziness drives us to make the system as simple as possible (but no simpler!) — to develop the powerful abstractions that then allow us to do much more, much more easily.</p>\n   <p>Of course, the implicit wink here is that it takes a lot of work to be lazy</p>\n  </blockquote>\n  <p>Understanding how to think about a problem domain by building abstractions (models) is my favorite part of programming. I love it because I think it’s what gives me a deeper understanding of a problem domain, and because once I find a good set of abstractions, I get a buzz from the way they make difficulties melt away, allowing me to achieve much more functionality with less lines of code.</p>\n  <p>Cantrill worries that AI is so good at writing code, we risk losing that virtue, something that’s reinforced by brogrammers bragging about how they produce thirty-seven thousand lines of code a day.</p>\n  <blockquote>\n   <p>The problem is that LLMs inherently lack the virtue of laziness. Work costs nothing to an LLM. LLMs do not feel a need to optimize for their own (or anyone’s) future time, and will happily dump more and more onto a layercake of garbage. Left unchecked, LLMs will make systems larger, not better — appealing to perverse vanity metrics, perhaps, but at the cost of everything that matters. As such, LLMs highlight how essential our human laziness is: our finite time forces us to develop crisp abstractions in part because we don’t want to waste our (human!) time on the consequences of clunky ones. The best engineering is always borne of constraints, and the constraint of our time places limits on the cognitive load of the system that we’re willing to accept. This is what drives us to make the system simpler, despite its essential complexity.</p>\n  </blockquote>\n  <p>This reflection particularly struck me this Sunday evening. I’d spent a bit of time making a modification of how my music playlist generator worked. I needed a new capability, spent some time adding it, got frustrated at how long it was taking, and wondered about maybe throwing a coding agent at it. More thought led to realizing that I was doing it in a more complicated way than it needed to be. I was including a facility that I didn’t need, and <a href=\"https://martinfowler.com/bliki/Yagni.html\">by applying yagni</a>, I could make the whole thing much easier, doing the task in just a couple of dozen lines of code.</p>\n  <p>If I had used an LLM for this, it may well have done the task much more quickly, but would it have made a similar over-complication? If so would I just shrug and say LGTM? Would that complication cause me (or the LLM) problems in the future?</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Jessica Kerr (Jessitron) has a simple example of <a href=\"https://jessitron.com/2026/04/06/adding-correctness-conditions-to-code-changes/\">applying the principle of Test-Driven Development to prompting agents</a>. She wants all updates to include updating the documentation.</p>\n  <blockquote>\n   <p>Instructions – We can change AGENTS.md to instruct our coding agent to look for documentation files and update them.</p>\n   <p>Verification – We can add a reviewer agent to check each PR for missed documentation updates.</p>\n   <p>This is two changes, so I can break this work into two parts. Which of these should we do first?</p>\n  </blockquote>\n  <p>Of course my initial comment about TDD answers that question</p>\n  <p>&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❄</p>\n  <p>Mark Little prodded an old memory of mine as he wondered about to work with AIs that are over-confident of their knowledge and thus prone to make up answers to questions, or to act when they should be more hesitant. He draws inspiration from an old, low-budget, but classic SciFi movie: <a href=\"https://en.wikipedia.org/wiki/Dark_Star_(film)\">Dark Star</a>. I saw that movie once in my 20s (ie a long time ago), but I still remember the crisis scene where a crew member has to use <a href=\"https://www.youtube.com/watch?v=S-xUjmJkO8g\">philosophical argument to prevent a sentient bomb from detonating</a>.</p>\n  <blockquote>\n   <p>Doolittle: You have no absolute proof that Sergeant Pinback ordered you to detonate.\n    <br>\n    Bomb #20: I recall distinctly the detonation order. My memory is good on matters like these.\n    <br>\n    Doolittle: Of course you remember it, but all you remember is merely a series of sensory impulses which you now realize have no real, definite connection with outside reality.\n    <br>\n    Bomb #20: True. But since this is so, I have no real proof that you’re telling me all this.\n    <br>\n    Doolittle: That’s all beside the point. I mean, the concept is valid no matter where it originates.\n    <br>\n    Bomb #20: Hmmmm….\n    <br>\n    Doolittle: So, if you detonate…\n    <br>\n    Bomb #20: In nine seconds….\n    <br>\n    Doolittle: …you could be doing so on the basis of false data.\n    <br>\n    Bomb #20: I have no proof it was false data.\n    <br>\n    Doolittle: You have no proof it was correct data!\n    <br>\n    Bomb #20: I must think on this further.\n    <br></p>\n  </blockquote>\n  <p>Doolittle has to expand the bomb’s consciousness, teaching it to doubt its sensors. <a href=\"https://markclittle.blogspot.com/2026/03/dark-star-and-ai-morality.html\">As Little puts it:</a></p>\n  <blockquote>\n   <p>That’s a useful metaphor for where we are with AI today. Most AI systems are optimised for decisiveness. Given an input, produce an output. Given ambiguity, resolve it probabilistically. Given uncertainty, infer. This works well in bounded domains, but it breaks down in open systems where the cost of a wrong decision is asymmetric or irreversible. In those cases, the correct behaviour is often deferral, or even deliberate inaction. But inaction is not a natural outcome of most AI architectures. It has to be designed in.</p>\n  </blockquote>\n  <p>In my more human interactions, I’ve always valued doubt, and distrust people who operate under undue certainty. Doubt doesn’t necessarily lead to indecisiveness, but it does suggest that we include the risk of inaccurate information or faulty reasoning into decisions with profound consequences.</p>\n  <blockquote>\n   <p>If we want AI systems that can operate safely without constant human oversight, we need to teach them not just how to decide, but when not to. In a world of increasing autonomy, restraint isn’t a limitation, it’s a capability. And in many cases, it may be the most important one we build.</p>\n  </blockquote>\n </body>\n</html>",
+  "aiSummary": "Martin Fowler 反思 AI 对软件工程的影响，警告 LLM 缺乏‘懒惰’美德可能导致系统过度复杂，并讨论了 AI 需要学会怀疑和克制的必要性。",
+  "oneSentenceSummary": "Martin Fowler 反思 AI 对软件工程的影响，警告 LLM 缺乏‘懒惰’美德可能导致系统过度复杂，并讨论了 AI 需要学会怀疑和克制的必要性。",
+  "summary": "在这篇思想集锦中，Martin Fowler 分享了他最近一次采访的见解以及个人对 AI 在软件开发中作用的思考。他探讨了编程中的‘懒惰美德’——即创造优雅抽象的动力——并表达了对 LLM 的担忧：由于缺乏这种约束，它们可能产生冗长、过度复杂的代码。Fowler 讲述了一次个人编码经历，其中退一步思考带来了更简单的解决方案，他质疑 AI 是否会做出同样的选择。他还强调了 Jessica Kerr 将 TDD 原则应用于 AI 提示工程的做法，以及 Mark Little 受科幻启发的论点：需要设计能够在不确定情况下产生怀疑并有意不作为的 AI 系统。",
+  "mainPoints": [
+    {
+      "point": "LLM 天生缺乏程序员的‘懒惰’美德，存在导致系统过度复杂的风险。",
+      "explanation": "人类程序员受有限时间的驱动去创造简洁的抽象。而 LLM 的工作没有成本，可能产生冗长、分层的代码，以满足诸如代码行数等虚荣指标，最终使系统变得更大、更糟。"
+    },
+    {
+      "point": "在 AI 辅助开发中，人类的监督和批判性思维仍然至关重要。",
+      "explanation": "Fowler 的个人轶事表明，从复杂问题中退一步思考，常常能揭示更简单的解决方案（YAGNI）。盲目接受 LLM 的输出（LGTM）而不进行这种反思过程，可能会嵌入不必要的复杂性并造成未来的技术债务。"
+    },
+    {
+      "point": "AI 系统需要被设计成具备怀疑和克制能力，而不仅仅是决断力。",
+      "explanation": "文章借鉴了一个科幻隐喻，认为为了让 AI 在开放系统中安全运行，它必须学会何时不行动或不决策——这种有意不作为的能力必须被明确设计到架构中。"
+    },
+    {
+      "point": "像 TDD 这样成熟的软件工程原则可以被调整来管理 AI 智能体。",
+      "explanation": "Jessica Kerr 的例子展示了 TDD 循环（指令、验证、迭代工作）如何为提示和审查编码智能体的工作提供了一个框架，从而确保达到期望的结果，例如更新文档。"
+    }
+  ],
+  "keyQuotes": [
+    "LLM 天生缺乏懒惰的美德。对 LLM 来说，工作没有成本。LLM 感觉不到需要为自己（或任何人）的未来时间进行优化，并且会乐于将越来越多的东西堆砌在垃圾层蛋糕上。",
+    "最好的工程总是源于约束，而我们时间的约束限制了我们愿意接受的系统认知负荷。",
+    "如果我们希望 AI 系统能够在没有持续人工监督的情况下安全运行，我们需要教给它们的不仅是如何决策，还有何时不决策。",
+    "在一个自主性日益增强的世界里，克制不是一种限制，而是一种能力。在许多情况下，它可能是我们构建的最重要的能力。",
+    "我热爱它，因为我认为它让我对问题领域有了更深的理解，并且因为一旦我找到一组好的抽象，它们让困难烟消云散的方式会让我兴奋不已。"
+  ],
+  "tags": [
+    "AI 编程",
+    "软件工程",
+    "抽象",
+    "LLM 局限性",
+    "TDD"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1143,
+  "domain": "martinfowler.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_913551",
+  "sourceName": "Martin Fowler",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776172560000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 13:16:00"
+}

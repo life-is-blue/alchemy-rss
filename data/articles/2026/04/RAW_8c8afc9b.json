@@ -1,0 +1,53 @@
+{
+  "id": "RAW_8c8afc9b",
+  "title": "Steve Yegge",
+  "url": "https://simonwillison.net/2026/Apr/14/steve-yegge/#atom-everything",
+  "date": "2026-04-14 03:58:20",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">14th April 2026</p>\n   <div class=\"note\">\n    <p><a href=\"https://twitter.com/steve_yegge/status/2043747998740689171\">Steve Yegge</a>:</p>\n    <blockquote>\n     <p>The TL;DR is that Google engineering appears to have the same AI adoption footprint as John Deere, the tractor company. Most of the industry has the same internal adoption curve: 20% agentic power users, 20% outright refusers, 60% still using Cursor or equivalent chat tool. It turns out Google has this curve too. [...]</p>\n     <p>There has been an industry-wide hiring freeze for 18+ months, during which time nobody has been moving jobs. So there are no clued-in people coming in from the outside to tell Google how far behind they are, how utterly mediocre they have become as an eng org.</p>\n    </blockquote>\n    <p><a href=\"https://twitter.com/addyosmani/status/2043812343508021460\">Addy Osmani</a>:</p>\n    <blockquote>\n     <p>On behalf of @Google, this post doesn't match the state of agentic coding at our company. Over 40K SWEs use agentic coding weekly here. Googlers have access to our own versions of @antigravity, @geminicli, custom models, skills, CLIs and MCPs for our daily work. Orchestrators, agent loops, virtual SWE teams and many other systems are actively available to folks. [...]</p>\n    </blockquote>\n   </div>\n   <p class=\"edit-page-link\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "本文呈现了一场推特辩论，Steve Yegge 批评谷歌的 AI 采用水平与非科技公司相当，引发了谷歌 Addy Osmani 的反驳，后者引用了智能体编码工具在内部的大量使用情况。",
+  "oneSentenceSummary": "本文呈现了一场推特辩论，Steve Yegge 批评谷歌的 AI 采用水平与非科技公司相当，引发了谷歌 Addy Osmani 的反驳，后者引用了智能体编码工具在内部的大量使用情况。",
+  "summary": "本文记录了关于谷歌工程组织内部 AI 采用现状的一场公开分歧。前谷歌工程师 Steve Yegge 在一条推文中断言，谷歌内部对 AI 编码工具的采用曲线与传统行业（如 John Deere）如出一辙：20% 是高级用户，20% 是拒绝使用者，60% 仍在使用 Cursor 等基础聊天工具。他进一步暗示，长期的招聘冻结使谷歌免受外界对其潜在平庸性的审视。作为回应，谷歌的 Addy Osmani 公开反驳了这一描述。他表示，每周有超过 4 万名谷歌软件工程师使用智能体编码工具，并能访问一个复杂的内部生态系统，包括定制模型、技能、CLI、MCP、编排器和虚拟 SWE 团队。文章呈现了双方的主张，未作额外评论或分析。",
+  "mainPoints": [
+    {
+      "point": "Steve Yegge 声称谷歌的 AI 采用率低得惊人，与非科技行业相当。",
+      "explanation": "他提出了一个标准的行业采用曲线（20/20/60 分布），并断言谷歌符合这一模式，暗示其工程师在 AI 工具集成方面缺乏领导力。"
+    },
+    {
+      "point": "Addy Osmani 提供了直接的反驳，称谷歌内部 AI 工具的使用既广泛又先进。",
+      "explanation": "作为谷歌代表，他引用了具体指标（每周 4 万多名用户）和一套详细的内部智能体系统，以反驳采用滞后的说法。"
+    },
+    {
+      "point": "这场交流凸显了评估内部技术采用的困难，以及外部认知与内部现实之间的差距。",
+      "explanation": "两位可信来源的相互矛盾陈述，突显了大型科技公司内部实践的不透明性，以及公共讨论在塑造认知方面的作用。"
+    }
+  ],
+  "keyQuotes": [
+    "简而言之，谷歌工程部门似乎拥有与拖拉机公司 John Deere 相同的 AI 采用足迹。",
+    "大多数行业都有相同的内部采用曲线：20% 是智能体高级用户，20% 是完全拒绝使用者，60% 仍在使用 Cursor 或等效的聊天工具。事实证明，谷歌也有这条曲线。",
+    "这里有超过 4 万名软件工程师每周使用智能体编码。谷歌员工在日常工作中可以使用我们自己的 @antigravity、@geminicli、定制模型、技能、CLI 和 MCP 版本。"
+  ],
+  "tags": [
+    "AI 采用",
+    "智能体编码",
+    "谷歌",
+    "软件工程",
+    "行业趋势"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 1,
+  "score": 82,
+  "wordCount": 168,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776139100000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 03:58:20"
+}

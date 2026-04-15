@@ -1,0 +1,53 @@
+{
+  "id": "RAW_66e9ee73",
+  "title": "你的代码暴露了多少风险？免费几分钟内即可查明",
+  "url": "https://github.blog/security/application-security/how-exposed-is-your-code-find-out-in-minutes-for-free/",
+  "date": "2026-04-14 15:00:00",
+  "author": "Dorothy Pearce",
+  "siteName": "The GitHub Blog",
+  "content": "<html>\n <head></head>\n <body>\n  <p>Most security leaders share the same suspicion: there are vulnerabilities in our codebase that we don’t know about.</p>\n  <p>The uncomfortable truth is that most code never gets a thorough security review. Vulnerabilities accumulate quietly in active repositories, across languages and teams, often undetected until something goes wrong. And if you’re relying on manual reviews or narrowly scoped tools, the gaps may be wider than you think.</p>\n  <p>Today, we’re introducing the <a href=\"https://docs.github.com/en/code-security/concepts/code-scanning/code-security-risk-assessment\">Code Security Risk Assessment</a>: a free, one-click scan that reveals vulnerabilities hiding in your organization’s code. No license required. No configuration. No commitment. Just clarity.</p>\n  <p>The Code Security Risk Assessment is available to GitHub organization admins and security managers. If that’s not you, this post is still worth reading and sharing: it explains what the assessment reveals and why it’s worth running.</p>\n  <p><a href=\"https://github.com/get_started?with=risk-assessment\"><strong>Run your free assessment &gt;</strong></a></p>\n  <h2 class=\"wp-block-heading\" id=\"h-what-you-ll-learn\">What you’ll learn</h2>\n  <p>The Code Security Risk Assessment scans up to 20 of your most active repositories using CodeQL, GitHub’s industry-leading static analysis engine, and delivers a dashboard summarizing what it finds:</p>\n  <ul class=\"wp-block-list\">\n   <li>Total vulnerabilities found across your scanned repositories, broken down by severity: critical, high, medium, and low</li>\n   <li>Vulnerabilities by language, so you can see which parts of your codebase carry the most risk</li>\n   <li>Rules detected, showing the specific classes of security issues found, how many repositories they affect, and their severity</li>\n   <li>Most vulnerable repositories, helping you identify where to focus remediation first</li>\n   <li>Copilot Autofix eligibility — how many of your vulnerabilities could be automatically fixed with Copilot Autofix, GitHub’s AI-powered remediation tool</li>\n  </ul>\n  <p>The assessment is available to organization admins and security managers on GitHub Enterprise Cloud and GitHub Team plans. It’s completely free — you won’t be charged for any licenses, and the GitHub Actions minutes used for scanning don’t count against your quota.</p>\n  <p><em>See how it works. 👇</em></p>\n  <figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\">\n   <div class=\"wp-block-embed__wrapper\">\n    <div class=\"mod-vh position-relative\" style=\"height: 0; padding-bottom: calc((9 / 16)*100%);\">\n     <iframe loading=\"lazy\" class=\"position-absolute top-0 left-0 width-full height-full\" src=\"https://www.youtube.com/embed/8IciK6zDKSs?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent\" title=\"YouTube video player\" allowfullscreen frameborder=\"0\"></iframe>\n    </div>\n   </div>\n  </figure>\n  <h2 class=\"wp-block-heading\" id=\"h-completing-the-security-picture\">Completing the security picture</h2>\n  <p>If you’ve already run a <a href=\"https://docs.github.com/code-security/concepts/secret-security/about-secret-security-with-github#secret-risk-assessment\" target=\"_blank\" rel=\"noreferrer noopener\">Secret Risk Assessment</a>, you know the value of visibility. Since launching last year, the Secret Risk Assessment has helped thousands of organizations understand their exposure to leaked credentials. In 2025 alone, customers using <a href=\"https://docs.github.com/code-security/secret-scanning/introduction/about-secret-scanning\">Secret Protection</a> scanned nearly 2 billion pushes and blocked 19 million secret exposures.</p>\n  <p>The Code Security Risk Assessment brings that same philosophy to vulnerabilities in your source code. Both assessments now run together from a single entry point, with a tabbed interface that lets you switch between your secret exposure and your code vulnerability findings. Together, they give you a unified view of your organization’s security posture—secrets and code—in minutes.</p>\n  <p>Even if you’re not responsible for running security scans yourself, the results of these assessments can help your team align on where risk exists and what to fix first.</p>\n  <p>And when you’re ready to act on what you find, each assessment has a corresponding GitHub product designed to help. <a href=\"https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning\">Secret Protection</a> stops credentials from leaking. <a href=\"https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning\">Code Security</a> finds and fixes vulnerabilities. The assessments show you why you need them.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-from-found-to-fixed\">From found to fixed</h2>\n  <p>Knowing where your vulnerabilities are is the first step. Fixing them is what actually reduces risk.</p>\n  <p>That’s where GitHub Code Security and Copilot Autofix change the equation. Across GitHub in 2025:</p>\n  <ul class=\"wp-block-list\">\n   <li><strong>460,258 security alerts</strong> were fixed using Copilot Autofix</li>\n   <li><strong>50%</strong> of vulnerability alerts were resolved directly in pull requests — where developers are already working</li>\n   <li>Mean time to remediation was <strong>nearly twice as fast</strong> with Copilot Autofix (0.66 hours) compared to manual fixes (1.29 hours)</li>\n  </ul>\n  <p>Your Code Security Risk Assessment results will show you how many of your detected vulnerabilities are eligible for Copilot Autofix — giving you a concrete picture of how quickly you could start reducing risk. When you’re ready, you can enable Code Security directly from the results page with a single click.</p>\n  <h2 class=\"wp-block-heading\" id=\"h-find-what-you-ve-been-missing\">Find what you’ve been missing</h2>\n  <p>Whether you have no security scanning in place, you’re evaluating your current tools, or you want a broader view of risk across your organization — the Code Security Risk Assessment meets you where you are.</p>\n  <p>It’s free. It takes minutes. And what you learn might change how you think about your security posture.</p>\n  <p></p>\n  <section class=\"my-6 my-md-8 mt-md-0\">\n   <hr class=\"post-tags-separator border-0 mt-0 mb-2\">\n  </section>\n  <div class=\"mt-8 mb-8 mb-md-0\"></div>\n </body>\n</html>",
+  "aiSummary": "GitHub 推出了一款免费、一键式的代码安全风险评估工具，该工具使用 CodeQL 扫描最多 20 个活跃代码库，识别漏洞，按严重性和语言分类，并突出显示哪些问题有资格通过 AI 驱动的 Copilot Autofix 进行修复。",
+  "oneSentenceSummary": "GitHub 推出了一款免费、一键式的代码安全风险评估工具，该工具使用 CodeQL 扫描最多 20 个活跃代码库，识别漏洞，按严重性和语言分类，并突出显示哪些问题有资格通过 AI 驱动的 Copilot Autofix 进行修复。",
+  "summary": "GitHub 推出了一款免费的代码安全风险评估工具，旨在帮助组织快速了解其代码库中的安全漏洞。该工具使用 GitHub 的 CodeQL 静态分析引擎扫描组织最多 20 个最活跃的代码库，生成一个仪表板，按漏洞严重性、编程语言和特定安全规则类别汇总发现结果。它还能识别最脆弱的代码库，并估算有多少已检测到的问题有资格通过 GitHub AI 驱动的 Copilot Autofix 进行自动修复。该评估无需许可证、配置或承诺，并与现有的密钥风险评估集成，提供代码和密钥安全状况的统一视图。文章强调了该工具在弥合漏洞发现与修复之间差距的作用，引用的数据显示 Copilot Autofix 可以显著缩短平均修复时间。",
+  "mainPoints": [
+    {
+      "point": "GitHub 的免费代码安全风险评估提供即时、无承诺的代码漏洞可见性。",
+      "explanation": "该工具使用 CodeQL 扫描最多 20 个活跃代码库，按严重性、语言和类型展示漏洞仪表板，无需配置或许可证。"
+    },
+    {
+      "point": "该评估整合了密钥和代码漏洞发现，提供统一的安全状况视图。",
+      "explanation": "它与现有的密钥风险评估协同工作，提供标签式界面，可从单一入口点同时查看代码漏洞和暴露的密钥。"
+    },
+    {
+      "point": "Copilot Autofix 可以极大地加速已识别漏洞的修复。",
+      "explanation": "该评估会突出显示有多少漏洞有资格通过 AI 驱动的自动修复功能处理，数据显示与手动修复相比，它几乎将平均修复时间缩短了一半。"
+    }
+  ],
+  "keyQuotes": [
+    "一个令人不安的事实是，大多数代码从未经过彻底的安全审查。漏洞在活跃的代码库中、跨语言和团队悄然累积，通常在出现问题之前都未被发现。",
+    "代码安全风险评估是一项免费的一键式扫描，可揭示隐藏在组织代码中的漏洞。无需许可证。无需配置。无需承诺。只有清晰的结果。",
+    "使用 Copilot Autofix 的平均修复时间（0.66 小时）几乎是手动修复（1.29 小时）的两倍快。"
+  ],
+  "tags": [
+    "代码安全",
+    "静态分析",
+    "漏洞扫描",
+    "GitHub",
+    "DevSecOps"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 89,
+  "wordCount": 666,
+  "domain": "github.blog",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_9315eb",
+  "sourceName": "The GitHub Blog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776178800000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 15:00:00"
+}

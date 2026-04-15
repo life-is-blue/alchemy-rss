@@ -1,0 +1,59 @@
+{
+  "id": "RAW_53f9d285",
+  "title": "针对 NVIDIA GPU 的新型 Rowhammer 攻击可实现全系统接管",
+  "url": "https://www.infoq.com/news/2026/04/rowhammer-attacks-nvidia/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-14 12:00:00",
+  "author": "Craig Risi",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p dir=\"ltr\">Security researchers have <a href=\"https://gddr.fail/files/gddr.pdf\">demonstrated</a> a new class of <a href=\"https://www.twingate.com/blog/glossary/row%20hammer\">Rowhammer attacks</a> targeting NVIDIA GPUs that can escalate from memory corruption to full system compromise, marking a significant shift in hardware-level security risks. Detailed in recent academic research and highlighted by <a href=\"https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/\">Ars Technica</a>, the attacks, known as <a href=\"https://tech.yahoo.com/cybersecurity/articles/geforge-gddrhammer-attacks-fully-infiltrate-100000958.html\">GDDRHammer and GeForce/GeForge</a>, exploit vulnerabilities in GDDR6 GPU memory to gain arbitrary read and write access, ultimately allowing attackers to take control of the host CPU and system memory.</p>\n   <p dir=\"ltr\">The findings build on earlier research into Rowhammer, a long-known hardware flaw in <a href=\"https://en.wikipedia.org/wiki/Dynamic_random-access_memory\">DRAM </a>where repeatedly accessing (\"hammering\") memory rows induces <a href=\"https://en.wikipedia.org/wiki/Bit-flipping_attack\">bit flips</a> in adjacent memory cells, bypassing traditional isolation mechanisms. While historically associated with system RAM, researchers have now shown that similar techniques can be applied to GPU memory, dramatically expanding the attack surface, particularly in environments where GPUs are shared, such as cloud infrastructure and AI training platforms.</p>\n   <p dir=\"ltr\">Unlike earlier GPU-focused attacks that primarily impacted application behavior (such as degrading AI model accuracy), these new techniques demonstrate end-to-end compromise capabilities. By carefully inducing bit flips in GPU memory, attackers can manipulate page tables and memory mappings, effectively bridging the gap between GPU and CPU memory spaces. This enables unauthorized access to system memory and, in some cases, full control over the machine.</p>\n   <p dir=\"ltr\"><a href=\"https://www.techradar.com/pro/our-work-shows-that-rowhammer-which-is-well-studied-on-cpus-is-a-serious-threat-on-gpus-as-well-high-end-nvidia-hardware-targeted-by-all-new-attacks-entering-a-new-territory\">Research</a> shows that attacks like GDDRHammer can generate large numbers of targeted bit flips, over 100 per memory bank in some cases, while bypassing existing GPU protections. More advanced variants can even redirect GPU memory access to CPU memory, allowing attackers to read or modify sensitive data beyond the GPU itself.</p>\n   <p dir=\"ltr\">The implications are particularly serious for AI and cloud computing environments, where GPUs are frequently shared across workloads and users. In these settings, an attacker may not need direct access to a victim's data, only shared access to the same GPU hardware, to interfere with workloads or escalate privileges. This makes multi-tenant GPU clusters a high-risk target for such attacks.</p>\n   <p dir=\"ltr\">The research also underscores a broader trend: as GPUs become central to modern computing, powering everything from generative AI to high-performance workloads, they are increasingly becoming part of the security threat landscape, rather than just performance accelerators.</p>\n   <p dir=\"ltr\">Mitigating Rowhammer-style attacks remains difficult due to their hardware-level nature. Potential defenses include enabling <a href=\"https://brilliant.org/wiki/error-correcting-codes/\">error-correcting code</a> (ECC) memory, increasing memory refresh rates, or restricting GPU access to system memory via technologies such as<a href=\"https://jumpcloud.com/it-index/what-is-an-iommu\"> IOMMU</a>. However, these measures often come with performance trade-offs or limited effectiveness against sophisticated attack patterns.</p>\n   <p dir=\"ltr\">Complicating matters further, <a href=\"https://arxiv.org/abs/2005.13121\">research</a> has shown that even modern mitigation techniques in DRAM are not always sufficient to fully prevent Rowhammer exploits, particularly as memory density increases and attack methods evolve.</p>\n   <p dir=\"ltr\">The emergence of GPU-based Rowhammer attacks represents a significant escalation in hardware security threats, extending a decade-old vulnerability into new domains. As attackers increasingly target shared infrastructure and lower layers of the computing stack, the research highlights the need for cross-layer security approaches that combine hardware protections, system-level isolation, and workload-aware defenses.</p>\n   <p dir=\"ltr\">For organizations relying heavily on GPUs, particularly in AI and cloud environments, the message is clear: hardware is no longer a trusted boundary. Instead, it must be actively monitored, hardened, and integrated into broader security strategies as part of an evolving threat landscape.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"New Rowhammer Attacks on NVIDIA GPUs Enable Full System Takeover\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Craig Risi\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/rowhammer-attacks-nvidia/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776168000000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "安全研究人员展示了针对 NVIDIA GPU 内存（GDDR6）的新型 Rowhammer 攻击，使攻击者能够从 GPU 内存损坏升级到全系统入侵，对共享 AI 和云计算环境构成重大威胁。",
+  "oneSentenceSummary": "安全研究人员展示了针对 NVIDIA GPU 内存（GDDR6）的新型 Rowhammer 攻击，使攻击者能够从 GPU 内存损坏升级到全系统入侵，对共享 AI 和云计算环境构成重大威胁。",
+  "summary": "最近的学术研究揭示了一类名为 GDDRHammer 和 GeForce/GeForge 的新型 Rowhammer 攻击，它们成功利用了 NVIDIA GPU GDDR6 内存中的漏洞。这标志着长期存在的 DRAM 硬件缺陷发生了关键性演变，其影响范围从传统的系统 RAM 扩展到了 GPU 内存。这些攻击通过诱导 GPU 内存中的目标比特翻转来工作，然后可以利用这些翻转来操纵页表和内存映射，从而有效桥接 GPU 和 CPU 内存空间之间的隔离。这使得攻击者能够对系统内存进行任意读写访问，并可能导致机器被完全接管。这对于像云 AI 平台这样的多租户环境来说影响严重，因为拥有共享 GPU 访问权限的攻击者可能会危害其他工作负载。文章讨论了由于该缺陷的硬件级性质以及潜在防御措施（如 ECC 内存或 IOMMU 限制）带来的性能权衡，使得缓解措施变得困难。",
+  "mainPoints": [
+    {
+      "point": "Rowhammer 攻击已成功从 CPU 系统 RAM 迁移到 NVIDIA GPU 内存。",
+      "explanation": "研究人员证明，核心的 Rowhammer 技术——通过快速访问内存行来诱导比特翻转——可以应用于 GDDR6 GPU 内存，这极大地扩展了硬件攻击面，超越了传统边界。"
+    },
+    {
+      "point": "基于 GPU 的 Rowhammer 可实现全系统入侵，而不仅仅是应用程序干扰。",
+      "explanation": "通过操纵 GPU 内存中的比特翻转来破坏页表，攻击者可以桥接 GPU-CPU 内存隔离，获得对系统内存的任意读写访问权限，并可能完全控制主机。"
+    },
+    {
+      "point": "共享的 AI 和云 GPU 基础设施构成了高风险攻击向量。",
+      "explanation": "在多租户环境中，攻击者不需要直接的数据访问权限，而只需要对 GPU 的共享硬件访问权限，就可能危害位于同一位置的工作负载，这使得云 AI 训练平台和 GPU 集群成为主要攻击目标。"
+    },
+    {
+      "point": "缓解措施具有挑战性，且涉及重大的性能权衡。",
+      "explanation": "硬件级缺陷难以修补。启用 ECC 内存、提高刷新率或使用 IOMMU 进行隔离等防御措施通常会带来性能成本，并且可能仍然不足以应对不断演变的攻击方法。"
+    }
+  ],
+  "keyQuotes": [
+    "安全研究人员展示了一类针对 NVIDIA GPU 的新型 Rowhammer 攻击，可以从内存损坏升级到全系统入侵，这标志着硬件级安全风险发生了重大转变。",
+    "与早期主要影响应用程序行为的 GPU 攻击不同，这些新技术展示了端到端的入侵能力。",
+    "这使得多租户 GPU 集群成为此类攻击的高风险目标。",
+    "该研究还强调了一个更广泛的趋势：随着 GPU 成为现代计算的核心……它们正日益成为安全威胁格局的一部分，而不仅仅是性能加速器。",
+    "对于严重依赖 GPU 的组织，尤其是在 AI 和云环境中，信息很明确：硬件不再是可信的边界。"
+  ],
+  "tags": [
+    "网络安全",
+    "硬件安全",
+    "GPU",
+    "Rowhammer",
+    "NVIDIA"
+  ],
+  "topicTag": "other",
+  "readTime": 3,
+  "score": 87,
+  "wordCount": 531,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_PRACTICE",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776168000000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 12:00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "RAW_6dfb50e3",
+  "title": "Airbnb 将高吞吐量指标管道迁移至 OpenTelemetry",
+  "url": "https://www.infoq.com/news/2026/04/airbnd-opentelemetry-vmagent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-14 08:00:00",
+  "author": "Claudio Masolo",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Airbnb's observability engineering team has <a href=\"https://medium.com/airbnb-engineering/building-a-high-volume-metrics-pipeline-with-opentelemetry-and-vmagent-c714d6910b45\">published</a> details of a large-scale migration away from <a href=\"https://www.datadoghq.com/blog/statsd/\">StatsD</a> and a proprietary Veneur-based aggregation pipeline toward a modern, open-source metrics stack built on <a href=\"https://opentelemetry.io/docs/specs/otel/protocol/\">OpenTelemetry Protocol</a> (OTLP), the OpenTelemetry Collector, and <a href=\"https://docs.victoriametrics.com/victoriametrics/vmagent/\">VictoriaMetrics' vmagent</a>. The resulting system now ingests over 100 million samples per second in production.</p>\n   <p>Rather than performing a phased feature migration, the team chose to front-load collection: get all metrics flowing into the new system first, then address dashboards, alerts, and user-facing tooling with real data already available. The primary challenge was bridging three coexisting instrumentation worlds: StatsD libraries, growing OTLP adoption, and a new Prometheus-compatible storage backend based on Grafana Mimir.</p>\n   <p>Roughly 40% of Airbnb services use a shared, platform-maintained metrics library. The observability team updated this library to dual-emit metrics: sending StatsD to the legacy pipeline while simultaneously emitting OTLP to the new OpenTelemetry Collector, enabling broad migration progress with minimal friction across the service fleet.</p>\n   <p>The move to OTLP brought measurable gains: CPU time spent on metrics processing in JVM services dropped from 10% to under 1% of total CPU samples. Beyond performance, OTLP's use of TCP eliminated packet loss risks inherent in StatsD's UDP transport, and the protocol's native support for Prometheus exponential histograms removed the need for an intermediate translation layer inside the collector. However, the highest-cardinality services, emitting upward of 10,000 samples per second per instance, experienced memory pressure and increased garbage collection after enabling OTLP. The fix was switching those specific services to delta temporality via <code>AggregationTemporalitySelector.deltaPreferred()</code>, which avoids retaining full state of all metric-label combinations between exports. The trade-off accepted was that unexpected failures would now surface as visible data gaps rather than anomalous jumps.</p>\n   <center>\n    <img alt=\"\" style=\"width:100%;height:979px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/airbnd-opentelemetry-vmagent/en/resources/11_CxmogAZasLIqGvrC4WweZg-1776092471088.jpeg\" rel=\"share\">\n   </center>\n   <p>Airbnb's previous pipeline aggregated away instance-level labels (such as pod and hostname) using an internal fork of Veneur before forwarding to its metrics vendor. The new Prometheus-based stack required a comparable aggregation step to keep storage costs manageable.</p>\n   <p>The team evaluated several alternative solutions: continuing with Veneur would have required a significant rewrite to support the Prometheus data model. Recording rules were ruled out because they require storing raw data in the TSDB before aggregation, defeating the cost-saving goal. The OpenTelemetry Collector lacked native metric aggregation support despite open proposals. Vector was eliminated due to the absence of built-in scaling and limited Rust adoption at Airbnb. m3aggregator was deemed architecturally more complex than necessary.</p>\n   <p>In the end, vmagent was selected for its built-in streaming aggregation for Prometheus metrics, horizontal sharding support, approachable documentation, and a small codebase of roughly 10,000 lines that made internal customization tractable.</p>\n   <p>The production architecture uses two layers of vmagent: stateless router pods that shard metrics by consistently hashing all labels except the ones to be aggregated away, and stateful aggregator pods that maintain running totals in memory. Routers are configured with a static list of aggregator hostnames, leveraging Kubernetes StatefulSet stable network identities to avoid additional service discovery dependencies. The production cluster scaled to hundreds of aggregators. Several generic improvements were contributed back to the VictoriaMetrics upstream project.</p>\n   <p>After completing the collection migration, the team observed that <a href=\"https://prometheus.io/docs/prometheus/latest/querying/basics/\">PromQL</a> queries over certain counters consistently underreported compared to the legacy vendor. The root cause was an edge case in how Prometheus handles counter resets at low emission rates. In StatsD, each data point represents a delta relative to the flush window. In Prometheus, data points represent cumulative counts, and the <code>rate()</code> function derives deltas — but if a counter increments once and its pod restarts before it can increment again, that increment is lost before <code>rate()</code> can compute a meaningful delta.</p>\n   <p>At Airbnb, this edge case proved more impactful than anticipated. Many counters track high-dimensional, low-frequency events, requests per currency per user per region, for example, where any given label combination may increment only a few times per day. These were frequently business-critical metrics, and their systematic undercounting stalled user migration.</p>\n   <p>The team rejected pre-initializing all counters to zero (impractical at scale with unpredictable label combinations), replacing counters with gauges (counter-conventional in Prometheus), and pushing workaround PromQL onto every dashboard and alert author. The chosen solution was a transparent \"zero injection\" technique implemented inside the vmagent aggregation tier: the first time an aggregated counter is flushed, the aggregator emits a synthetic zero rather than the actual running total. The real accumulated value is flushed on the subsequent interval. This implicitly initializes every counter to zero, matching Prometheus semantics, while the delayed first flush ensures the synthetic zero's timestamp does not collide with any prior samples. The trade-off is a single flush-interval lag on the first recorded increment.</p>\n   <p>The completed pipeline processes over 100 million samples per second in a single production cluster, with cost reduced by roughly an order of magnitude compared to the previous vendor-based architecture. The centralized aggregation tier also became a general-purpose transformation layer: operators can drop problematic metrics caused by bad instrumentation changes without touching application code, or temporarily dual-emit raw metrics for debugging purposes.</p>\n   <p>Flipkart and Shopify tackled versions of the same underlying problem from different angles. Flipkart's engineers <a href=\"https://www.infoq.com/news/2025/10/flipkart-prometheus-80million/\">faced</a> 80 million simultaneous time-series from roughly 2,000 API Gateway instances, a scale where StatsD had already collapsed under the weight of long-range queries, and solved the aggregation problem using hierarchical Prometheus federation, local servers strip high-cardinality instance labels via recording rules before exposing summarised series upward through <code>/federate</code> endpoints. Shopify's <a href=\"https://horovits.medium.com/shopifys-journey-to-planet-scale-observability-9c0b299a04dd\">motivation</a> was primarily financial: three separate vendors for metrics, logs, and traces had become ruinously expensive as the platform scaled, and the team rebuilt from scratch onto Prometheus, Loki, Tempo, and Grafana under a single in-house platform called Observe, using the same dual-write pattern Airbnb would later employ to validate parity before cutting over. Neither post goes as deep as Airbnb's on the specific mechanics of aggregation or the correctness hazards of counter semantics. Together, they confirm that the StatsD exit, the vendor cost reckoning, and the move toward a Prometheus-anchored open-source stack are not idiosyncratic choices. They are a pattern playing out across hyperscale engineering organisations wherever the legacy push-based monitoring model has hit its ceiling.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Airbnb Migrates High-Volume Metrics Pipeline to OpenTelemetry\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Claudio Masolo\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/airbnd-opentelemetry-vmagent/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776153600000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"1893\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Airbnb 的可观测性工程团队详细介绍了他们如何从基于 StatsD 和专有 Veneur 的管道迁移到使用 OpenTelemetry 协议和 VictoriaMetrics vmagent 构建的高吞吐量、开源指标技术栈，实现了每秒处理超过 1 亿个样本，并显著降低了成本、提升了性能。",
+  "oneSentenceSummary": "Airbnb 的可观测性工程团队详细介绍了他们如何从基于 StatsD 和专有 Veneur 的管道迁移到使用 OpenTelemetry 协议和 VictoriaMetrics vmagent 构建的高吞吐量、开源指标技术栈，实现了每秒处理超过 1 亿个样本，并显著降低了成本、提升了性能。",
+  "summary": "Airbnb 工程团队发布了一份案例研究，详细介绍了他们如何将庞大的指标管道从基于 StatsD/Veneur 的系统迁移到基于 OpenTelemetry 协议、OpenTelemetry Collector 和 VictoriaMetrics vmagent 构建的现代技术栈。迁移策略包括通过双发射指标（StatsD 到旧系统，OTLP 到新系统）来前置收集，该功能通过一个被 40% 服务使用的共享库实现，从而实现了平滑过渡。关键的技术挑战包括：管理高基数服务（通过切换到增量时间性解决）、选择合适的聚合器（选择 vmagent 是因为其流式聚合能力和简单性），以及解决 Prometheus 计数器语义中针对低频事件的一个微妙但影响重大的边缘情况（通过在 vmagent 中实施‘零注入’技术解决）。新系统每秒处理超过 1 亿个样本，将 JVM 服务中的 CPU 开销从 10% 降低到 1% 以下，成本降低了大约一个数量级，同时提供了一个灵活的转换层。",
+  "mainPoints": [
+    {
+      "point": "双发射策略实现了从 StatsD 到 OTLP 的低摩擦、大规模迁移。",
+      "explanation": "通过更新一个共享指标库，使其同时向旧的 StatsD 管道和新的 OpenTelemetry Collector 发送数据，Airbnb 在不要求所有服务立即更改的情况下，实现了广泛的迁移进展。"
+    },
+    {
+      "point": "OTLP 带来了显著的性能优势，但需要谨慎处理高基数服务。",
+      "explanation": "切换到 OTLP 将 JVM 服务的 CPU 开销从 10% 降低到 1% 以下，并消除了 UDP 数据包丢失。然而，对于每秒每实例发送超过 1 万个样本的服务，需要切换到增量时间性来管理内存压力。"
+    },
+    {
+      "point": "vmagent 因其流式处理能力和操作简单性而被选为核心聚合器。",
+      "explanation": "在评估了替代方案后，vmagent 因其内置的 Prometheus 指标聚合功能、水平分片支持以及小巧易懂的代码库而被选中，该代码库允许进行必要的定制，例如‘零注入’修复。"
+    },
+    {
+      "point": "针对低频事件的一个微妙的 Prometheus 计数器语义边缘情况，需要一个新颖的‘零注入’解决方案。",
+      "explanation": "由于 `rate()` 函数处理计数器重置的方式，在 PromQL 中跟踪低频事件（例如，每个用户每个区域）的计数器存在系统性少报问题。团队通过在 vmagent 中为新的计数器序列首次刷新时发送一个合成的零值来解决此问题，确保了增量计算的正确性。"
+    },
+    {
+      "point": "此次迁移带来了巨大的规模、成本降低和操作灵活性。",
+      "explanation": "新的开源管道每秒处理超过 1 亿个样本，成本降低了一个数量级，并且中央 vmagent 层现在充当了操作任务的转换层，例如丢弃不良指标或启用调试双发射。"
+    }
+  ],
+  "keyQuotes": [
+    "最终的系统在生产环境中每秒摄入超过 1 亿个样本。",
+    "JVM 服务中用于指标处理的 CPU 时间从占总 CPU 样本的 10% 下降到 1% 以下。",
+    "所接受的权衡是，意外的故障现在将表现为可见的数据缺口，而不是异常跳跃。",
+    "选择的解决方案是在 vmagent 聚合层内部实现的一种透明的‘零注入’技术。",
+    "已完成的管道在单个生产集群中每秒处理超过 1 亿个样本，与之前基于供应商的架构相比，成本降低了大约一个数量级。"
+  ],
+  "tags": [
+    "OpenTelemetry",
+    "可观测性",
+    "指标管道",
+    "VictoriaMetrics",
+    "Prometheus"
+  ],
+  "topicTag": "other",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1004,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "SE_DEVOPS",
+  "mainDomain": "Programming_Technology",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776153600000,
+  "publishDateStr": "昨天",
+  "publishDateTimeStr": "2026-04-14 08:00:00"
+}
