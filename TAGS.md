@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-15 11:00:54 | [返回首页](/README.md)
+**更新时间**: 2026-04-15 12:54:47 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11255)
+- [AI & 大模型](#ai-llm) (11261)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (781)
 - [DevOps](#devops) (513)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5488)
+- [其他](#other) (5489)
 
 
 ---
@@ -22,6 +22,7 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Notion-的-Token-Town：5-次重构，100+-工具，MCP-对比-CLI-与软件工厂的未来-——-Notion-的-Simon-Last-和-Sarah-Sachs](https://www.latent.space/p/notion) - AI 精选
 - [Gemini-Robotics-ER-1.6：增强的具身推理](https://deepmind.google/blog/gemini-robotics-er-1-6/) - AI 精选
 - [MiniMax-Agent-更新：这次我们重新设计了-Agent-操作电脑的方式](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488360&idx=1&sn=9358b0c0a0750975e8f4c001b8f1e724) - AI 精选
 - [万字综述-Harness-革命！](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247721825&idx=1&sn=b3415031a3bad0026f9e09a3a2b81cb6) - AI 精选
@@ -41,9 +42,8 @@
 - [AI-智能体的持续学习](https://blog.langchain.com/continual-learning-for-ai-agents/) - AI 精选
 - [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) - AI 精选
 - [深度解析：Claude-Code-源码架构与-Harness-Engineering-实践](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491747&idx=1&sn=402e7be9dc30cccdcd2c2f748974726c) - AI 精选
-- [Lenny’s-Podcast-中关于智能体工程的对话精华](https://simonwillison.net/2026/Apr/2/lennys-podcast/#atom-everything) - AI 精选
 
-- [查看全部 11255 篇...](/details/tags/ai-llm.md)
+- [查看全部 11261 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5488 篇...](/details/tags/other.md)
+- [查看全部 5489 篇...](/details/tags/other.md)
 
 
