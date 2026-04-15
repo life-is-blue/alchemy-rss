@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-15 08:18:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-15 11:00:54 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -644,33 +644,25 @@
 
 ### [如何构建一个帮助你整理衣橱的时尚应用](https://www.freecodecamp.org/news/how-to-build-a-fashion-app-to-organize-your-wardrobe/)
 
-2026-04-14 16:26:39 | 标签: 全栈开发, React, FastAPI, 案例研究, 推荐系统
-
-> 作者分享了一个构建个人时尚助手 Web 应用程序的全面案例研究，旨在解决衣橱整理和穿搭决策疲劳的问题。该应用允许用户上传衣物单品、接收个性化穿搭推荐、获取购物/丢弃建议，并提供反馈以改进系统。文章详细介绍了整个开发过程，包括选择 React + Vite 前端和 FastAPI 后端、为推荐系统实现确定性评分模型（权衡色彩协调、体型和肤色基调），以及使用 JWT 和令牌轮换设计安全的多用户身份验证。文章还坦诚地讨论了面临的关键挑战，例如使用后台任务（Celery + Redis）优化缓慢的图像密集型端点、确保严格的用户数据隔离，以及通过服务器端控制管理 JWT 会话。文章最后总结了经验教训和未...
+2026-04-14 16:26:39
 
 
 
 ### [如何使用-shadcn/ui-和-Base-UI-构建管理仪表板侧边栏](https://www.freecodecamp.org/news/build-an-admin-dashboard-sidebar-with-shadcn-ui-and-base-ui/)
 
-2026-04-14 16:25:08 | 标签: React, Next.js, shadcn/ui, UI 组件, 仪表板
-
-> 这篇全面的教程详细介绍了如何构建一个可用于生产环境的管理仪表板侧边栏，这是 React 开发者常用的 UI 组件。它利用了 shadcn/ui（一套可访问的 React 组件集合）和 Shadcn Space 的 `sidebar-06` 区块来加速开发。指南涵盖了使用 Next.js 和 shadcn CLI 进行初始项目设置、安装侧边栏区块、理解生成的文件夹结构，以及使用 `SidebarProvider` 构建页面布局。教程深入探讨了核心实现，详细说明了如何定义扁平化的导航数据、构建主要的 `AppSidebar` 外壳，以及创建处理分区标签、叶子项和带有子项的可折叠父菜单渲染逻辑的 `...
+2026-04-14 16:25:08
 
 
 
 ### [他们叫我朱利奥：一个电影级赛博朋克作品集的诞生](https://tympanus.net/codrops/2026/04/14/they-call-me-giulio-the-making-of-a-cinematic-cyberpunk-portfolio/)
 
-2026-04-14 13:56:42 | 标签: Three.js, WebGPU, 创意编程, 作品集设计, 3D 网页
-
-> 作者作为一名开发者，分享了他创建个人作品集第五个迭代版本的历程。他超越了传统的 UX 模式，旨在打造一个受《银翼杀手》和《黑客帝国》等赛博朋克经典启发的、深度沉浸的故事驱动体验。该网站被构建为四个不同的电影场景（关于、作品、记忆之屋、联系），每个场景都通过 3D 环境、交互式虚拟形象和氛围效果，传达了他个人和职业叙事的一部分。文章提供了全面的技术解析，涵盖了使用 Blender 进行资产创建、为了获得更大控制权而从 React Three Fiber 转向纯 Three.js、使用 WebGPU 提升性能、使用自定义的 Turborepo monorepo 进行场景管理，以及针对 3D 文本集...
+2026-04-14 13:56:42
 
 
 
 ### [Cloudflare-推出-EmDash，瞄准-WordPress-的下一个十年](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651281607&idx=4&sn=96e2d5dec87bd30137e67075030d3d83)
 
-2026-04-14 04:12:00 | 标签: Cloudflare, EmDash, WordPress, CMS, TypeScript
-
-> Cloudflare 近日推出了名为 EmDash 的开源内容管理系统预览版，定位为“WordPress 的精神继任者”。EmDash 采用 TypeScript 构建，基于 Astro 6.0 框架，并运行在边缘计算平台上。其核心设计理念是解决 WordPress 长期存在的插件安全问题，通过将插件隔离在安全的 Dynamic Workers 沙箱中运行，以应对约 96% 的安全漏洞源自第三方插件的现状。此外，EmDash 原生集成了 AI 能力，支持通过 MCP 服务器和 Agent Skills 进行编程式管理，并内置了 x402 协议支持以实现按使用量计费。文章同时引述了 WordPr...
+2026-04-14 04:12:00
 
 
 

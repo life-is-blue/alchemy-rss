@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-15 08:18:52 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-15 11:00:54 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -26,9 +26,7 @@
 
 ### [保护非人类身份：自动化吊销、OAuth-与范围化权限](https://blog.cloudflare.com/improved-developer-security/)
 
-2026-04-14 13:00:10 | 标签: Cloudflare, API 安全, OAuth, RBAC, DevSecOps
-
-> 这篇 Cloudflare 博客文章探讨了 AI 智能体和非人类身份（NHI）兴起所带来的关键安全挑战。它介绍了一套全面的更新，旨在保护整个身份生命周期。首先，新的可扫描 API 令牌格式（以 'cf' 为前缀并包含校验和）通过与 GitHub 及其他扫描工具的合作，实现了对泄露凭证的自动检测和吊销。其次，改进的 OAuth 同意和管理界面提供了对第三方应用访问的集中可见性和控制。第三，平台扩展了其细粒度、资源范围化的基于角色的访问控制（RBAC），将其应用于更多 Cloudflare One 资源，并引入了新的账户和区域级别角色。文章围绕三大支柱——主体（身份）、凭证（证明）和策略（权限）—...
+2026-04-14 13:00:10
 
 
 
@@ -490,17 +488,13 @@
 
 ### [平台工程：从-eBay-Velocity-的兴衰中汲取的教训](https://www.infoq.com/presentations/platform-engineering-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-14 11:17:00 | 标签: 平台工程, DevOps, DORA 指标, 工程生产力, eBay
-
-> eBay 前首席架构师 Randy Shoup 详细介绍了 Velocity 计划（2020-2025）的案例研究，这是一项旨在现代化 eBay 开发实践的平台工程举措。该计划由跨职能协作驱动，专注于消除瓶颈，取得了显著的技术成功：工程生产力（流动速度）翻倍，部署频率提高了 10 倍（从 10 天缩短到 1-2 天），并使所有团队在 DORA 指标上从中等表现者提升为高表现者。演讲概述了使用的具体策略，包括将资深平台工程师嵌入产品团队、自动化流水线，以及培养心理安全和共享学习的文化。然而，Shoup 坦率地探讨了为何这些技术上的胜利未能转化为业务成功，将 eBay 的增长停滞归因于根深蒂固的问...
+2026-04-14 11:17:00
 
 
 
 ### [超越一键式：为-Docker-设计企业级可观测性扩展](https://www.infoq.com/articles/enterprise-grade-observability-extension-docker/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
-2026-04-14 09:00:00 | 标签: Docker 扩展, 可观测性, OpenTelemetry, DevOps, 企业架构
-
-> 本文探讨了 Docker 扩展在本地可观测性方面的便利性与企业环境的严格要求之间的差距。虽然扩展通过提供对容器日志、指标和追踪的即时可见性来提高开发者的生产力，但它们往往无法满足企业在安全、合规、成本管理以及与 Splunk 或 Datadog 等集中式平台集成方面的需求。作者提出了一种架构转变，将扩展视为遥测桥梁，将数据馈送到 OpenTelemetry Collector。该收集器充当策略执行点，应用治理规则（如数据脱敏、采样、加密）并将数据安全地路由到企业后端。文章提供了具体的设计原则、一个 OpenTelemetry 配置示例以及用于构建连接开发和运维团队的弹性、可信赖的可观测性管道的...
+2026-04-14 09:00:00
 
 
 
