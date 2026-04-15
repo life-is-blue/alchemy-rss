@@ -1,0 +1,58 @@
+{
+  "id": "RAW_78c709c1",
+  "title": "Chrome 上线 Skills，技能一键复用帮你干活",
+  "url": "https://www.qbitai.com/2026/04/401389.html",
+  "date": "2026-04-15 05:46:10",
+  "author": "梦晨",
+  "siteName": "量子位",
+  "content": "<html>\n <head></head>\n <body>\n  <blockquote>\n   <p class=\"pgc-h-forward-slash\">梦晨 发自 凹非寺\n    <br class=\"sysbr\">\n    量子位 | 公众号 QbitAI</p>\n  </blockquote>\n  <p>你的浏览器，从今天起进化成<strong>免费智能体</strong>。</p>\n  <p>谷歌<strong>Chrome</strong>推出Gemini Skills，一键生成可复用的技能。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_7a7b6ef4850950c9dbda06c607563375.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>举个栗子：你在刷到一个食谱，想让AI分析营养价值。</p>\n  <p>以前每次都要手动复制一长串prompt，现在保存一次就行，以后在任何食谱页面上敲个斜杠键，直接跑。</p>\n  <p>免费，默认内置在Chrome里，不需要买任何订阅。</p>\n  <p>如果你没有收到更新，试试<strong>把语言改为“英语（美国）”</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_5648323ac2df4b69063dc4a84f4023e1.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>Skills，在AI时代的地位相当于手机时代的APP。</p>\n  <p>但以前要在龙虾或者Claude Code里用，还让人望而生畏。</p>\n  <p>来到浏览器里，门槛彻底为0了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_37d51bb5c94a8c226ec1de3825e934be.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>以前想让AI重复干同一件事，总结文章也好，分析产品成分也好，对比价格也好，都得重新输入或者复制粘贴一遍prompt。</p>\n  <p>提示词多了，还得找个地存着。</p>\n  <p>能忍，但很烦。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070341_739a24ce75130c944d328a9730acf4f5.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>现在的解法是把这些prompt存成Skill。</p>\n  <p>在Gemini聊天框里敲斜杠（/），或者点旁边的加号按钮，选你保存过的技能，一键就跑。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070341_70b5b6a0b7cdb5d2b0c77621925a938c.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>Google还预置了一个技能库，50多个现成的技能，涵盖食谱营养计算、护肤品成分分析、YouTube视频总结等场景。觉得不顺手可以自己改，改完存下来下次接着用。</p>\n  <p>跨设备也能同步。登录Google账号，你在公司电脑上保存的技能，回家打开Chrome一样能用。</p>\n  <p>还有一个杀手级能力：一个技能可以同时读取多个标签页。</p>\n  <p>比如你想对比两个产品的参数，打开两个标签页，跑一个技能，并排对比表就出来了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_af63746b65c3d8a7885409fc9d43f752.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p class=\"syl-line-pure-english\">But！</p>\n  <p>凡是涉及日历、邮件这类会产生实际动作的操作，Gemini会先找你确认再执行。</p>\n  <p>总的来说，这些功能并不新，在Gemini里都能使用，但是整合到浏览器里，离使用场景总归是更近了。</p>\n  <p>先是专用的AI浏览器出场。</p>\n  <p>从Perplextiy的<strong>Comet</strong>到<strong>ChatGPT Atlas</strong>。</p>\n  <p>国内<strong>美团</strong>旗下光年之外也推出了<strong>AI浏览器Tabbit</strong>。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_9fcbdf0115aa5a068be906a1250d6b09.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>现在传统浏览器也坐不住了，纷纷往Agent方向走。</p>\n  <p>核心变化就是<strong>从“帮你展示网页的工具”，变成了“替你完成任务的助手”</strong>。</p>\n  <p>老牌浏览器<strong>Opera的Neon版</strong>搞了个叫Cards的功能，跟Chrome的Skills几乎一个思路：</p>\n  <p>把prompt保存下来复用。热门场景包括任务优先级排序、规划电影之夜、找便宜机票。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_70236b9cec14dea9f27bdec5fd852e13.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>微软更是被抓包，<strong>所谓新出的Copilot App，其实就是Edge套壳</strong>，浏览器三个字都快不好意思写在脸上了。</p>\n  <div class=\"pgc-img\">\n   <img decoding=\"async\" src=\"https://image.jido.dev/20260415070340_5952ed4e46fafeb0dfe987331273181f.webp\">\n   <p></p>\n   <p class=\"pgc-img-caption\"></p>\n  </div>\n  <p>虽然现阶段AI浏览器多多少少都有些不完善，但一定是未来的大趋势没跑了。</p>\n  <p>仿佛回到了上个世纪90年代的浏览器大战。</p>\n  <p>上一次，决定了谁掌握互联网的入口。这一次，改变的是人和互联网交互的方式。</p>\n  <p>只不过问题是：谁是新的Netscape，谁是新的Firefox，Chrome还会是最后赢家吗？</p>\n  <p>参考链接：\n   <br class=\"sysbr\">\n   [1]\n   <br>\n   https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/\n   <br class=\"sysbr\">\n   [2]\n   <br>\n   https://x.com/TheBobPony/status/2041112541909205001</p>\n </body>\n</html>",
+  "aiSummary": "谷歌 Chrome 浏览器正式推出 Gemini Skills 功能，允许用户将常用 prompt 保存为可复用的技能，一键调用，标志着浏览器正从网页展示工具向 AI 任务助手转变。",
+  "oneSentenceSummary": "谷歌 Chrome 浏览器正式推出 Gemini Skills 功能，允许用户将常用 prompt 保存为可复用的技能，一键调用，标志着浏览器正从网页展示工具向 AI 任务助手转变。",
+  "summary": "文章报道了谷歌 Chrome 浏览器最新推出的 Gemini Skills 功能。该功能允许用户将针对特定场景（如分析食谱营养、总结文章、对比产品参数）的 prompt 保存为可复用的“技能”，之后在任何网页上通过斜杠键或按钮即可一键调用，无需重复输入。该功能免费内置，支持跨设备同步，并能同时读取多个标签页内容进行综合分析。文章指出，这代表了浏览器核心定位的转变——从“帮你展示网页的工具”变成了“替你完成任务的助手”。同时，文章也提及了 Opera Neon、微软 Copilot App（实为 Edge 套壳）等竞争对手的类似动向，认为 AI 浏览器是未来大趋势，并类比了上世纪 90 年代的浏览器大战。",
+  "mainPoints": [
+    {
+      "point": "Chrome Skills 将 prompt 工程产品化，极大降低了 AI 助手的使用门槛。",
+      "explanation": "通过将复杂的 prompt 封装成可一键调用的“技能”，用户无需记忆或复制粘贴，实现了 AI 能力的“开箱即用”，让 AI 助手变得更易用、更贴近日常场景。"
+    },
+    {
+      "point": "浏览器正从信息展示工具演变为 AI 驱动的任务执行平台。",
+      "explanation": "Chrome、Opera、Edge 等主流浏览器纷纷集成 AI 技能复用功能，其核心价值从呈现网页内容，转向了理解用户意图并主动完成任务，改变了人机交互范式。"
+    },
+    {
+      "point": "跨标签页信息处理是浏览器 AI 助手的独特优势与杀手级应用。",
+      "explanation": "Chrome Skills 能够同时读取多个标签页的内容（如对比两个产品），这利用了浏览器作为多页面管理中心的原生优势，是独立 AI 应用难以实现的场景。"
+    },
+    {
+      "point": "新一轮“AI 浏览器大战”已拉开序幕，将重塑互联网入口格局。",
+      "explanation": "从 Perplexity Comet、ChatGPT Atlas 等专用 AI 浏览器，到传统浏览器的 AI 化改造，竞争焦点已转向谁能更好地集成 AI 助理能力，这决定了下一代互联网的交互主导权。"
+    }
+  ],
+  "keyQuotes": [
+    "你的浏览器，从今天起进化成免费智能体。",
+    "Skills，在 AI 时代的地位相当于手机时代的 APP。",
+    "核心变化就是从‘帮你展示网页的工具’，变成了‘替你完成任务的助手’。",
+    "上一次，决定了谁掌握互联网的入口。这一次，改变的是人和互联网交互的方式。"
+  ],
+  "tags": [
+    "Chrome",
+    "Gemini",
+    "AI 浏览器",
+    "Skills",
+    "AI 助手"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 5,
+  "score": 90,
+  "wordCount": 1103,
+  "domain": "qbitai.com",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "PRODUCT",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_371003",
+  "sourceName": "量子位",
+  "resourceType": "ARTICLE",
+  "language": "zh_CN",
+  "publishTimeStamp": 1776231970000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-15 05:46:10"
+}

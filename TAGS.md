@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-16 04:16:17 | [返回首页](/README.md)
+**更新时间**: 2026-04-16 06:14:03 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11276)
+- [AI & 大模型](#ai-llm) (11295)
 - [软件架构](#architecture) (20)
-- [前端与全栈](#frontend-fullstack) (781)
-- [DevOps](#devops) (514)
+- [前端与全栈](#frontend-fullstack) (782)
+- [DevOps](#devops) (516)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5490)
+- [其他](#other) (5491)
 
 
 ---
@@ -22,6 +22,8 @@
 > 关键词: AI, GPT, LLM, Agent, RAG, Transformer, Diffusion, DeepSeek
 
 
+- [Gemini-3.1-Flash-TTS：下一代富有表现力的-AI-语音](https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/) - AI 精选
+- [Agents-SDK-的下一阶段演进](https://openai.com/index/the-next-evolution-of-the-agents-sdk) - AI 精选
 - [Notion-的-Token-Town：5-次重构，100+-工具，MCP-对比-CLI-与软件工厂的未来-——-Notion-的-Simon-Last-和-Sarah-Sachs](https://www.latent.space/p/notion) - AI 精选
 - [Gemini-Robotics-ER-1.6：增强的具身推理](https://deepmind.google/blog/gemini-robotics-er-1-6/) - AI 精选
 - [MiniMax-Agent-更新：这次我们重新设计了-Agent-操作电脑的方式](https://mp.weixin.qq.com/s?__biz=MzE5MTA3NzcxMQ==&mid=2247488360&idx=1&sn=9358b0c0a0750975e8f4c001b8f1e724) - AI 精选
@@ -40,10 +42,8 @@
 - [Deep-Agents-v0.5](https://blog.langchain.com/deep-agents-v0-5/) - AI 精选
 - [Agentic-能力从哪里来？拆解基座大模型-GLM-5-/MiniMax-M2/Kimi-K2.5-的训练过程](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514107&idx=1&sn=fb5014a9de0d35c6ba6ac2297c471af0) - AI 精选
 - [AI-智能体的持续学习](https://blog.langchain.com/continual-learning-for-ai-agents/) - AI 精选
-- [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) - AI 精选
-- [深度解析：Claude-Code-源码架构与-Harness-Engineering-实践](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491747&idx=1&sn=402e7be9dc30cccdcd2c2f748974726c) - AI 精选
 
-- [查看全部 11276 篇...](/details/tags/ai-llm.md)
+- [查看全部 11295 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -100,7 +100,7 @@
 - [React-19.2-已发布，现已上线-npm！](https://juejin.cn/post/7555779865607520282) - 编程 精选
 - [Spring-HTTP-客户端发展现状](https://spring.io/blog/2025/09/30/the-state-of-http-clients-in-spring) - 编程 精选
 
-- [查看全部 781 篇...](/details/tags/frontend-fullstack.md)
+- [查看全部 782 篇...](/details/tags/frontend-fullstack.md)
 
 
 ## <a id="devops"></a>DevOps
@@ -129,7 +129,7 @@
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 - [从单体到-LLM：拆解-DevOps-进化的三大范式](https://mp.weixin.qq.com/s?__biz=MjM5MjY3OTgwMA==&mid=2652488593&idx=1&sn=0ec72ae6ede304415c64bcdc720f723e) - 编程 精选
 
-- [查看全部 514 篇...](/details/tags/devops.md)
+- [查看全部 516 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5490 篇...](/details/tags/other.md)
+- [查看全部 5491 篇...](/details/tags/other.md)
 
 

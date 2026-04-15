@@ -1,0 +1,58 @@
+{
+  "id": "RAW_624cabef",
+  "title": "谷歌 TurboQuant 压缩技术或支持更快推理，在性能较低的硬件上保持相同精度",
+  "url": "https://www.infoq.com/news/2026/04/turboquant-compression-kv-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-15 16:53:00",
+  "author": "Bruno Couriol",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Google Research unveiled <a href=\"https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression\">TurboQuant</a>, a novel quantization algorithm that compresses large language models’ Key-Value caches by up to 6x. With 3.5-bit compression, near-zero accuracy loss, and no retraining needed, it allows developers to run massive context windows on significantly more modest hardware than previously required. Early community benchmarks confirm significant efficiency gains.</p>\n   <p>While the rationale for quantization may seem logical, the difficulty is, given a number of encoding bits, to maintain the accuracy of inference-relevant computations (e.g., inner products, cosine similarity, distances) with compressed data.</p>\n   <p>The research team claims that <a href=\"https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/?utm_source=twitter&amp;utm_medium=social&amp;utm_campaign=social_post&amp;utm_content=gr-acct\">TurboQuant</a> can compress the KV cache down to 3.5 bits per value with near-zero accuracy loss. On standard benchmarks like <a href=\"https://github.com/THUDM/LongBench\">LongBench</a> and <a href=\"https://github.com/gkamradt/LLMTest_NeedleInAHaystack\">Needle in a Haystack</a>, a 3.5-bit TurboQuant implementation matched the performance of full 16-bit precision across <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/gemma-open-models/\">Gemma</a> and <a href=\"https://mistral.ai/\">Mistral</a> models.</p>\n   <p>TurboQuant uses a two-step approach. First, data vectors are rotated (randomized <a href=\"https://en.wikipedia.org/wiki/Hadamard_transform\">Hadamard transform</a>). This keeps key Euclidean properties (e.g., distance) while spreading out the values, removing the outlier-heavy coordinate distribution that makes low-bit quantization difficult. Post-transform, the vector coordinates follow a beta distribution that is more amenable to compression with low distortion. Second, a <a href=\"https://arxiv.org/abs/1309.1507\">decade-old technique</a>, the Quantized Johnson-Lindenstrauss (QJL) transform, is applied to remove the bias created by the first step. Post-QJL, the paper argues that inner products between quantized vectors are unbiased, computationally efficient, accurate estimators of the unquantized vectors, with the resulting effect of maintaining inference accuracy.</p>\n   <p><a href=\"https://github.com/tonbistudio/turboquant-pytorch\">Early community analysis</a> seems to confirm significant gains, albeit more modest than those reported in the paper. The <a href=\"https://www.youtube.com/watch?v=R9Z9qU1_2_I\">Two Minute Papers analysis</a> suggests more realistic, “real-world” improvements of 30-40% in memory reduction and processing speed:</p>\n   <blockquote>\n    <p>Based on the results, we cannot conclude that every AI machine suddenly needs 6 times less RAM. No. That is a bit idealistic and only true for some corner cases. You know when you see an official benchmark of a phone battery or electric car mileage with somewhat idealized conditions? It is a bit like that.\n     <br>\n     So careful with the media hype. […] We wait for more data and analyze experiments here, to get the highest quality information.\n     <br>\n     But it’s still good. Really good! It helps most people who run AI systems with very long contexts. When you chuck in a huge PDF document, or a movie, or a huge codebase for an AI to analyze. Yes, you will be able to do that cheaper, with meaningfully less memory. Often a few gigabytes less. And I think that is absolutely amazing news.</p>\n   </blockquote>\n   <p>A fundamental optimization in LLM inference is the caching of computations that are required repeatedly. This is particularly critical during autoregressive generation, where each newly generated token uses data already computed during the generation of all previous tokens. By caching these Key and Value tensors (the KV cache), the system avoids redundant, computationally expensive passes over the entire sequence history.</p>\n   <p>However, the efficiency gains offered by caching come with a significant memory cost that grows linearly with the token sequence length. For LLMs designed with long context windows, the massive VRAM footprint of the cache eventually outweighs the memory required for the model weights themselves.</p>\n   <p>For example, according to <a href=\"https://www.linkedin.com/in/darshan-fofadiya\">Darshan Fofadiya</a>, AI researcher at Amazon,<a href=\"https://darshanfofadiya.com/research-papers/turboquant/\">running a Llama 70B model with a 1M-token context window may require approximately 328GB of VRAM</a> just for the KV cache. When compared to the 140 GB required to hold the 70B model weights in <a href=\"https://en.wikipedia.org/wiki/Bfloat16_floating-point_format\">BF16</a>, the cache becomes the primary barrier to deployment, forcing engineers into costly multi-GPU configurations. Compressed down from 16 to 3.5 bits, the cache then requires 72 GB and fits on a single <a href=\"https://compute.exchange/gpus/nvidia-h100\">H100 (80 GB HBM)</a>.</p>\n   <p>During the inference decoding phase, certain input tokens in a prompt <a href=\"https://www.stat.berkeley.edu/~mmahoney/pubs/neurips-2024-kvquant.pdf\">produce KV vectors with magnitudes in the hundreds or thousands</a>, while the majority of other tokens have values close to 0-1. In LLaMA-2-7B, for instance, the top 1% of KV cache values may have magnitudes that are 10-100x larger than the median value. This massive distribution skew <a href=\"https://openreview.net/pdf?id=gIqb6zWZoO\">makes linear 4-bit quantization impossible without specialized techniques</a>, as the outliers stretch the quantization grid and crush the precision of normal tokens.</p>\n   <p>Generative inference with LLMs is, for relatively small batch sizes, memory-bound. With memory speeds growing slower than compute speeds, reducing the memory bottleneck (the so-called memory wall) is key to efficient inference. For short contexts, weight matrices are the dominant contributor to memory consumption. For long contexts, the KV cache becomes the main contributor. Quantization techniques for both model weights and the KV cache are thus instrumental in speeding up inference and constitute a major research topic.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Google’s TurboQuant Compression May Support Faster Inference, Same Accuracy on Less Capable Hardware\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Bruno Couriol\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/turboquant-compression-kv-cache/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776271980000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"4523\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "谷歌研究院的 TurboQuant 是一种新颖的量化算法，可将 LLM 的键值缓存压缩高达 6 倍至 3.5 比特，同时精度损失极小。该算法通过处理 KV 向量中异常值较多的分布，使得在更普通的硬件上也能支持大型上下文窗口。",
+  "oneSentenceSummary": "谷歌研究院的 TurboQuant 是一种新颖的量化算法，可将 LLM 的键值缓存压缩高达 6 倍至 3.5 比特，同时精度损失极小。该算法通过处理 KV 向量中异常值较多的分布，使得在更普通的硬件上也能支持大型上下文窗口。",
+  "summary": "谷歌研究院推出了 TurboQuant，这是一种旨在大幅压缩大型语言模型中键值缓存的新量化技术。该算法实现了高达 6 倍的压缩，将缓存减少到每个值 3.5 比特，在 LongBench 和 Needle in a Haystack 等基准测试中精度损失近乎为零，且无需重新训练模型。其核心创新是一个两步过程：首先，随机哈达玛变换将数值分散开，以减轻困扰标准量化的异常值影响；其次，量化 Johnson-Lindenstrauss 变换消除了偏差，确保量化向量之间的内积仍然是准确的估计量。这解决了长上下文推理中的一个关键瓶颈，即 KV 缓存的内存占用可能远超模型权重本身（例如，在 Llama 70B 上处理 100 万 token 的上下文需要约 328GB 的 VRAM）。社区分析表明，在内存和速度方面更现实的提升是 30-40%，但该技术对于在成本较低的硬件上运行处理长文档或代码库的 AI 来说，仍然是一项重大进步。",
+  "mainPoints": [
+    {
+      "point": "TurboQuant 将 LLM 的 KV 缓存压缩高达 6 倍至 3.5 比特，精度损失极小。",
+      "explanation": "这种极致的压缩使得模型能够在性能显著较低的硬件上处理海量上下文窗口，直接应对长上下文推理中的内存墙问题。"
+    },
+    {
+      "point": "该算法的两步变换解决了 KV 向量分布中异常值过多这一核心挑战。",
+      "explanation": "随机哈达玛变换分散数值以实现有效的低比特量化，随后进行 QJL 变换以确保使用压缩数据计算内积时无偏且准确。"
+    },
+    {
+      "point": "对于长上下文推理，KV 缓存的内存占用是主要瓶颈，而非模型权重。",
+      "explanation": "示例计算显示，Llama 70B 的 100 万 token 缓存可能需要约 328GB VRAM，远超其权重所需的 140GB。压缩至 3.5 比特可将其减少到约 72GB，从而可以装入单个高端 GPU。"
+    },
+    {
+      "point": "社区基准测试表明，在现实世界中效率提升显著，但更为温和。",
+      "explanation": "独立分析表明，内存减少和处理速度的实际提升约为 30-40%，这缓和了理想化的 6 倍提升的说法，但仍代表了一项重大的实际进步。"
+    }
+  ],
+  "keyQuotes": [
+    "TurboQuant 采用两步法。首先，数据向量被旋转（随机哈达玛变换）。这保持了关键的欧几里得属性（例如距离），同时分散了数值，消除了导致低比特量化困难的、异常值集中的坐标分布。",
+    "对于设计用于长上下文窗口的 LLM 来说，缓存的巨大 VRAM 占用最终会超过模型权重本身所需的内存。",
+    "这种巨大的分布偏斜使得线性 4 比特量化在没有专门技术的情况下变得不可能，因为异常值会拉伸量化网格并挤压普通 token 的精度。",
+    "根据结果，我们不能断定每台 AI 机器突然只需要原来六分之一的 RAM。不，这有点理想化，只适用于某些极端情况。"
+  ],
+  "tags": [
+    "量化",
+    "KV 缓存",
+    "LLM 推理",
+    "模型压缩",
+    "谷歌研究院"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 752,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776271980000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-15 16:53:00"
+}

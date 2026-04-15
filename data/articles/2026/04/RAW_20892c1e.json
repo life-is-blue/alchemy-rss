@@ -1,0 +1,53 @@
+{
+  "id": "RAW_20892c1e",
+  "title": "Gemini 3.1 Flash TTS",
+  "url": "https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/#atom-everything",
+  "date": "2026-04-15 17:13:14",
+  "author": "Simon Willison",
+  "siteName": "Simon Willison's Weblog",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"entry entryPage\">\n   <p class=\"mobile-date-eyebrow\">15th April 2026 - Link Blog</p>\n   <div data-permalink-context=\"/2026/Apr/15/gemini-31-flash-tts/\">\n    <p><strong><a href=\"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/\">Gemini 3.1 Flash TTS</a></strong>. Google released Gemini 3.1 Flash TTS today, a new text-to-speech model that can be directed using prompts.</p>\n    <p>It's presented via the standard Gemini API using <code>gemini-3.1-flash-tts-preview</code> as the model ID, but can only output audio files.</p>\n    <p>The <a href=\"https://ai.google.dev/gemini-api/docs/speech-generation#transcript-tags\">prompting guide</a> is surprising, to say the least. Here's their example prompt to generate just a few short sentences of audio:</p>\n    <pre><code># AUDIO PROFILE: Jaz R.\n## \"The Morning Hype\"\n\n## THE SCENE: The London Studio\nIt is 10:00 PM in a glass-walled studio overlooking the moonlit London skyline, but inside, it is blindingly bright. The red \"ON AIR\" tally light is blazing. Jaz is standing up, not sitting, bouncing on the balls of their heels to the rhythm of a thumping backing track. Their hands fly across the faders on a massive mixing desk. It is a chaotic, caffeine-fueled cockpit designed to wake up an entire nation.\n\n### DIRECTOR'S NOTES\nStyle:\n* The \"Vocal Smile\": You must hear the grin in the audio. The soft palate is always raised to keep the tone bright, sunny, and explicitly inviting.\n* Dynamics: High projection without shouting. Punchy consonants and elongated vowels on excitement words (e.g., \"Beauuutiful morning\").\n\nPace: Speaks at an energetic pace, keeping up with the fast music.  Speaks with A \"bouncing\" cadence. High-speed delivery with fluid transitions — no dead air, no gaps.\n\nAccent: Jaz is from Brixton, London\n\n### SAMPLE CONTEXT\nJaz is the industry standard for Top 40 radio, high-octane event promos, or any script that requires a charismatic Estuary accent and 11/10 infectious energy.\n\n#### TRANSCRIPT\n[excitedly] Yes, massive vibes in the studio! You are locked in and it is absolutely popping off in London right now. If you're stuck on the tube, or just sat there pretending to work... stop it. Seriously, I see you.\n[shouting] Turn this up! We've got the project roadmap landing in three, two... let's go!\n</code></pre>\n    <p>Here's what I got using that example prompt:</p>\n    <p>\n     <audio controls style=\"width: 100%\">\n      <source src=\"https://static.simonwillison.net/static/2026/gemini-flash-tts-london.wav\" type=\"audio/wav\"> Your browser does not support the audio element.\n     </audio>\n    </p>\n    <p>Then I modified it to say \"Jaz is from Newcastle\" and \"... requires a charismatic Newcastle accent\" and got this result:</p>\n    <p>\n     <audio controls style=\"width: 100%\">\n      <source src=\"https://static.simonwillison.net/static/2026/gemini-flash-tts-newcastle.wav\" type=\"audio/wav\"> Your browser does not support the audio element.\n     </audio>\n    </p>\n    <p>I <a href=\"https://gemini.google.com/share/dd0fba5a83c4\">had Gemini 3.1 Pro</a> vibe code <a href=\"https://tools.simonwillison.net/gemini-flash-tts\">this UI for trying it out</a>:</p>\n    <p><img alt=\"Screenshot of a &quot;Gemini 3.1 Flash TTS&quot; web application interface. At the top is an &quot;API Key&quot; field with a masked password. Below is a &quot;TTS Mode&quot; section with a dropdown set to &quot;Multi-Speaker (Conversation)&quot;. &quot;Speaker 1 Name&quot; is set to &quot;Joe&quot; with &quot;Speaker 1 Voice&quot; set to &quot;Puck (Upbeat)&quot;. &quot;Speaker 2 Name&quot; is set to &quot;Jane&quot; with &quot;Speaker 2 Voice&quot; set to &quot;Kore (Firm)&quot;. Under &quot;Script / Prompt&quot; is a tip reading &quot;Tip: Format your text as a script using the Exact Speaker Names defined above.&quot; The script text area contains &quot;TTS the following conversation between Joe and Jane:\\n\\nJoe: How's it going today Jane?\\nJane: [yawn] Not too bad, how about you?&quot; A blue &quot;Generate Audio&quot; button is below. At the bottom is a &quot;Success!&quot; message with an audio player showing 00:00 / 00:06 and a &quot;Download WAV&quot; link.\" src=\"https://static.simonwillison.net/static/2026/gemini-flash-tts.jpg\"></p>\n   </div>\n   <p class=\"edit-page-link\" data-admin-url=\"/admin/blog/blogmark/9415/\" style=\"display: none;\"></p>\n  </div>\n </body>\n</html>",
+  "aiSummary": "Google 发布了 Gemini 3.1 Flash TTS，这是一个可通过详细提示词控制的新型文本转语音模型，作者构建了一个 Web UI 来试验其多说话人对话功能。",
+  "oneSentenceSummary": "Google 发布了 Gemini 3.1 Flash TTS，这是一个可通过详细提示词控制的新型文本转语音模型，作者构建了一个 Web UI 来试验其多说话人对话功能。",
+  "summary": "本文讨论了 Google 发布的 Gemini 3.1 Flash TTS，这是一个可通过 Gemini API 访问的新型文本转语音模型。作者强调了该模型独特的提示系统，它允许通过结构化的脚本格式对语音特征、场景、口音和表达风格进行详细控制，这一点在 Google 提供的名为 'Jaz R.' 的伦敦电台主持人示例提示中得到了展示。作者通过将口音从伦敦口音改为纽卡斯尔口音来测试模型，并分享了生成的音频。此外，作者使用 Gemini 3.1 Pro 编写代码，创建了一个用于试验该 TTS 模型多说话人对话功能的 Web 应用程序界面，为开发者展示了一个实用工具。",
+  "mainPoints": [
+    {
+      "point": "Gemini 3.1 Flash TTS 是 Google 发布的一个由提示词引导的文本转语音模型。",
+      "explanation": "该模型通过 Gemini API 访问，允许通过描述语音配置文件、场景和表达风格的详细文本提示词对音频输出进行细粒度控制。"
+    },
+    {
+      "point": "该提示系统异常复杂且富有表现力。",
+      "explanation": "提示词可以定义完整的音频配置文件、场景上下文、关于风格和节奏的导演说明以及特定的口音，从而能够生成具有高度特征化和情境感知的语音。"
+    },
+    {
+      "point": "作者展示了模型的适应性并为其构建了一个工具。",
+      "explanation": "通过修改提示词来改变口音，作者展示了模型的灵活性。更重要的是，他们使用 Gemini 3.1 Pro 编写代码，创建了一个用于测试 TTS 模型多说话人对话模式的 Web UI。"
+    }
+  ],
+  "keyQuotes": [
+    "Google 今天发布了 Gemini 3.1 Flash TTS，这是一个可以使用提示词引导的新型文本转语音模型。",
+    "这个提示指南至少可以说是令人惊讶的。",
+    "我让 Gemini 3.1 Pro 编写了这个用于尝试它的 UI 代码。"
+  ],
+  "tags": [
+    "Gemini",
+    "文本转语音",
+    "Google AI",
+    "API",
+    "提示工程"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 90,
+  "wordCount": 380,
+  "domain": "simonwillison.net",
+  "category": "Artificial_Intelligence",
+  "aiSubCategory": "MODELS",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_7808b7",
+  "sourceName": "Simon Willison's Weblog",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776273194000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-15 17:13:14"
+}
