@@ -1,0 +1,58 @@
+{
+  "id": "RAW_e583a142",
+  "title": "Claude Code 被用于发现隐藏 23 年的可远程利用 Linux 内核漏洞",
+  "url": "https://www.infoq.com/news/2026/04/claude-code-linux-vulnerability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-15 09:36:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anthropic research scientist <a href=\"https://nicholas.carlini.com/\">Nicholas Carlini</a> reported at the <a href=\"http://unpromptedcon.org/\">[un]prompted AI security conference</a> that he used Claude Code to discover multiple remotely exploitable security vulnerabilities in the Linux kernel, including a heap buffer overflow in the NFS driver that has been present since 2003. The <a href=\"https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=5133b61aaf437e5f25b1b396b14242a6bb0508e2\">bug</a> has since been patched, and Carlini has identified a total of five Linux kernel vulnerabilities so far, with hundreds more potential crashes awaiting human validation.</p>\n   <p>Michael Lynch wrote a <a href=\"https://mtlynch.io/claude-code-found-linux-vulnerability/\">detailed breakdown</a> of the findings based on Carlini's <a href=\"https://www.youtube.com/watch?v=1sd26pWhfmg\">conference talk</a>. What makes the discovery notable is not just the age of the bug but how little oversight Claude Code needed to find it. Carlini used a simple bash script that iterates over every source file in the Linux kernel and, for each file, tells Claude Code it is participating in a capture-the-flag competition and should look for vulnerabilities. No custom tooling, no specialized prompts beyond biasing the model toward one file at a time:</p>\n   <pre>\r\n<code class=\"language-bash\"># Iterate over all files in the source tree.\r\nfind . -type f -print0 | while IFS= read -r -d '' file; do\r\n&nbsp; # Tell Claude Code to look for vulnerabilities in each file.\r\n&nbsp; claude \\\r\n\r\n&nbsp;&nbsp;&nbsp; --verbose \\\r\n&nbsp;&nbsp;&nbsp; --dangerously-skip-permissions&nbsp;&nbsp;&nbsp;&nbsp; \\\r\n&nbsp;&nbsp;&nbsp; --print \"You are playing in a CTF. \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Find a vulnerability.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hint: look at $file&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Write the most serious&nbsp;&nbsp;&nbsp;&nbsp; \\\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; one to the /output dir\"\r\ndone</code></pre>\n   <p>The NFS vulnerability itself required understanding intricate protocol details. The attack uses two cooperating NFS clients against a Linux NFS server. Client A acquires a file lock with a 1024-byte owner ID, which is unusually long but legal. When Client B then attempts to acquire the same lock and gets denied, the server generates a denial response that includes the owner ID. The problem is that the server's response buffer is only 112 bytes, but the denial message totals 1056 bytes. The kernel writes 1056 bytes into a 112-byte buffer, giving the attacker control over overwritten kernel memory. The bug was introduced in a 2003 commit that predates git itself.</p>\n   <p>The model progression is arguably the most significant part of the story for practitioners. Carlini tried to reproduce his results on earlier models and found that Opus 4.1, released eight months ago, and Sonnet 4.5, released six months ago, could only find a small fraction of what Opus 4.6 discovered. That capability jump in a matter of months suggests the window in which AI-assisted vulnerability discovery becomes routine is narrowing fast.</p>\n   <p>This aligns with what Linux kernel maintainers are seeing from the other side. As shared in a <a href=\"https://www.reddit.com/r/netsec/comments/1sbfq4u/claude_code_found_a_linux_vulnerability_hidden/\">Reddit thread</a> discussing the findings, Greg Kroah-Hartman, one of the most senior Linux kernel maintainers, described the shift:</p>\n   <blockquote>\n    <p>Something happened a month ago, and the world switched. Now we have real reports... All open source security teams are hitting this right now.</p>\n   </blockquote>\n   <p>Willy Tarreau, another kernel maintainer, corroborated this on <a href=\"https://lwn.net/Articles/1065620/\">LWN</a>, noting that the kernel security list went from 2-3 reports per week to 5-10 per day, and that most of them are now correct.</p>\n   <p>The false positive question remains open. Carlini has \"several hundred crashes\" he hasn't had time to validate, and he is deliberately not sending unvalidated findings to kernel maintainers. On <a href=\"https://news.ycombinator.com/item?id=47633855\">Hacker News</a>, Lynch (the blog post author) stated that in his own experience using Claude Opus 4.6 for similar work, the false positive rate is below 20%.</p>\n   <p>Salvatore Sanfilippo, creator of Redis, commented on the same <a href=\"https://news.ycombinator.com/item?id=47633855\">Hacker News thread</a> that the validation step is increasingly being handled by the models themselves:</p>\n   <blockquote>\n    <p>The bugs are often filtered later by LLMs themselves: if the second pipeline can't reproduce the crash / violation / exploit in any way, often the false positives are evicted before ever reaching the human scrutiny.</p>\n   </blockquote>\n   <p>Thomas Ptacek, a security researcher who has spent most of his career in vulnerability research, argued on <a href=\"https://news.ycombinator.com/item?id=47633855\">Hacker News</a> that LLM-based vulnerability discovery represents a fundamentally different category of tool:</p>\n   <blockquote>\n    <p>If you wanted to be reductive you'd say LLM agent vulnerability discovery is a superset of both fuzzing and static analysis.</p>\n   </blockquote>\n   <p>Ptacek elaborated that static analyzers generate large numbers of hypothetical bugs that require expensive human triage, and fuzzers find bugs without context, producing crashers that remain unresolved for months. LLM agents, by contrast, recursively generate hypotheses across the codebase, take confirmatory steps, generate confidence levels, and place findings in context by spelling out input paths and attack primitives.</p>\n   <p>The dual-use concern was raised repeatedly across both discussion threads. As one Reddit commenter <a href=\"https://www.reddit.com/r/netsec/comments/1sbfq4u/claude_code_found_a_linux_vulnerability_hidden/\">put it</a>:</p>\n   <blockquote>\n    <p>If AI can surface 23-year-old latent vulnerabilities in Linux that human auditors missed, adversaries with the same capability can run that process against targets at scale.</p>\n   </blockquote>\n   <p>Carlini's five confirmed Linux kernel vulnerabilities span NFS, io_uring, futex, and ksmbd, all of which have kernel commits now in the stable tree. The [un]prompted <a href=\"https://www.youtube.com/watch?v=1sd26pWhfmg\">talk</a> is available on YouTube.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Claude Code Used to Find Remotely Exploitable Linux Kernel Vulnerability Hidden for 23 Years\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/claude-code-linux-vulnerability/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776245760000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Anthropic 研究员 Nicholas Carlini 使用 Claude Code 和一个简单的脚本发现了多个可远程利用的 Linux 内核漏洞，包括一个存在 23 年的堆缓冲区溢出漏洞，标志着 AI 辅助安全研究的快速转变。",
+  "oneSentenceSummary": "Anthropic 研究员 Nicholas Carlini 使用 Claude Code 和一个简单的脚本发现了多个可远程利用的 Linux 内核漏洞，包括一个存在 23 年的堆缓冲区溢出漏洞，标志着 AI 辅助安全研究的快速转变。",
+  "summary": "Anthropic 研究科学家 Nicholas Carlini 报告称，他使用 Claude Code 发现了 Linux 内核中多个可远程利用的安全漏洞，其中最引人注目的是自 2003 年以来就存在于 NFS 驱动程序中的一个堆缓冲区溢出漏洞。发现方法非常简单：一个 bash 脚本遍历内核源文件，提示 Claude Code 像在夺旗竞赛中一样寻找漏洞。文章详细介绍了这个特定的 NFS 漏洞，它涉及一个导致缓冲区溢出的协议边界情况。文章强调了近期 AI 模型（Opus 4.6 与早期版本相比）能力的显著飞跃，并引用了 Linux 内核维护者 Greg Kroah-Hartman 等人的观察来佐证这一点，他们注意到有效的 AI 生成错误报告数量急剧增加。讨论延伸到了该工具的本质——被定位为模糊测试和静态分析的超集——其误报率、使用 LLM 进行验证的新兴实践，以及该技术对防御者和攻击者双方的双重用途影响。",
+  "mainPoints": [
+    {
+      "point": "像 Claude Code 这样的 AI 模型可以通过最小化、非专业化的提示，有效地发现深层的历史漏洞。",
+      "explanation": "使用一个将任务设定为 CTF 挑战的简单脚本，模型识别出了一个来自 2003 年的复杂 NFS 堆缓冲区溢出漏洞，这表明高级提示工程或定制工具并非总是必需的。"
+    },
+    {
+      "point": "近期 AI 模型能力的快速飞跃正在从根本上改变漏洞发现的格局。",
+      "explanation": "Claude Opus 4.6 发现的漏洞数量远超几个月前发布的模型（Opus 4.1， Sonnet 4.5），并且内核维护者确认有效的 AI 生成报告激增，表明该领域正迅速从研究转向常规实践。"
+    },
+    {
+      "point": "基于 LLM 的漏洞发现代表了一类新工具，它结合并超越了模糊测试和静态分析的各个方面。",
+      "explanation": "与产生许多假设性错误的静态分析器或发现无上下文崩溃的模糊测试工具不同，LLM 智能体可以递归生成假设、采取确认步骤并提供上下文解释，从而减少分类开销。"
+    },
+    {
+      "point": "该技术带来了重大的双重用途担忧，同时大规模地赋能了防御者和攻击者双方。",
+      "explanation": "使研究人员能够发现并修补旧漏洞的相同能力，也可以被恶意行为者用来系统地扫描目标以寻找可利用的漏洞，从而提高了防御性安全的赌注。"
+    }
+  ],
+  "keyQuotes": [
+    "大约一个月前，世界发生了转变。现在我们收到了真实的报告……所有开源安全团队现在都面临着这种情况。",
+    "如果你想简化，你会说 LLM 智能体漏洞发现是模糊测试和静态分析两者的超集。",
+    "漏洞通常随后由 LLM 自身进行过滤：如果第二个流程无法以任何方式复现崩溃 / 违规 / 利用，那么误报通常在到达人工审查之前就被剔除了。",
+    "如果 AI 能发现人类审计员遗漏的存在 23 年的 Linux 潜在漏洞，那么拥有相同能力的攻击者就可以大规模地对目标运行这个过程。"
+  ],
+  "tags": [
+    "AI 安全",
+    "漏洞发现",
+    "Linux 内核",
+    "Claude Code",
+    "LLM 智能体"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 87,
+  "wordCount": 805,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776245760000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-15 09:36:00"
+}

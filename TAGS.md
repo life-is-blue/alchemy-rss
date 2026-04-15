@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-15 18:27:03 | [返回首页](/README.md)
+**更新时间**: 2026-04-15 20:16:13 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11262)
+- [AI & 大模型](#ai-llm) (11268)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (781)
-- [DevOps](#devops) (513)
+- [DevOps](#devops) (514)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5489)
+- [其他](#other) (5490)
 
 
 ---
@@ -43,7 +43,7 @@
 - [编程智能体的组成部分](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) - AI 精选
 - [深度解析：Claude-Code-源码架构与-Harness-Engineering-实践](https://mp.weixin.qq.com/s?__biz=MzIzNjE2NTI3NQ==&mid=2247491747&idx=1&sn=402e7be9dc30cccdcd2c2f748974726c) - AI 精选
 
-- [查看全部 11262 篇...](/details/tags/ai-llm.md)
+- [查看全部 11268 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -129,7 +129,7 @@
 - [如何使用-GitHub-Actions-和-OpenAPI-Specifications-自动更新-API-文档](https://www.freecodecamp.org/news/how-to-automate-api-documentation-updates-with-github-actions-and-openapi-specifications/) - 编程 精选
 - [从单体到-LLM：拆解-DevOps-进化的三大范式](https://mp.weixin.qq.com/s?__biz=MjM5MjY3OTgwMA==&mid=2652488593&idx=1&sn=0ec72ae6ede304415c64bcdc720f723e) - 编程 精选
 
-- [查看全部 513 篇...](/details/tags/devops.md)
+- [查看全部 514 篇...](/details/tags/devops.md)
 
 
 ## <a id="product-business"></a>产品与商业
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5489 篇...](/details/tags/other.md)
+- [查看全部 5490 篇...](/details/tags/other.md)
 
 
