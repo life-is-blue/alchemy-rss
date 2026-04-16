@@ -1,17 +1,17 @@
 > 基于文章标签自动分类
 
-**更新时间**: 2026-04-16 12:58:46 | [返回首页](/README.md)
+**更新时间**: 2026-04-16 14:33:30 | [返回首页](/README.md)
 
 ---
 
 ## 分类导航
 
-- [AI & 大模型](#ai-llm) (11302)
+- [AI & 大模型](#ai-llm) (11304)
 - [软件架构](#architecture) (20)
 - [前端与全栈](#frontend-fullstack) (782)
 - [DevOps](#devops) (517)
 - [产品与商业](#product-business) (36)
-- [其他](#other) (5493)
+- [其他](#other) (5495)
 
 
 ---
@@ -43,7 +43,7 @@
 - [Agentic-能力从哪里来？拆解基座大模型-GLM-5-/MiniMax-M2/Kimi-K2.5-的训练过程](https://mp.weixin.qq.com/s?__biz=MzI1MzEwMzIwOQ==&mid=2247514107&idx=1&sn=fb5014a9de0d35c6ba6ac2297c471af0) - AI 精选
 - [AI-智能体的持续学习](https://blog.langchain.com/continual-learning-for-ai-agents/) - AI 精选
 
-- [查看全部 11302 篇...](/details/tags/ai-llm.md)
+- [查看全部 11304 篇...](/details/tags/ai-llm.md)
 
 
 ## <a id="architecture"></a>软件架构
@@ -186,6 +186,6 @@
 - [Diffusers-欢迎-FLUX-2](https://huggingface.co/blog/flux-2) - AI 精选
 - [Meta-SAM3-开源：让图像分割，听懂你的话](https://mp.weixin.qq.com/s?__biz=Mzk3NTc1NTU0Mw==&mid=2247502189&idx=1&sn=61833bdd35e15989c90d77c33ba34a8f) - AI 精选
 
-- [查看全部 5493 篇...](/details/tags/other.md)
+- [查看全部 5495 篇...](/details/tags/other.md)
 
 
