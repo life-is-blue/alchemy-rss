@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-17 02:22:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-17 04:13:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -36242,9 +36242,7 @@
 
 ### [Artifacts：支持-Git-的版本化存储系统](https://blog.cloudflare.com/artifacts-git-for-agents-beta/)
 
-2026-04-16 13:00:22 | 标签: Cloudflare, Artifacts, Git, AI 智能体, Durable Objects
-
-> Cloudflare 的 Artifacts 是一个新的分布式、版本化文件系统，主要设计用于 AI 智能体和现代计算范式（如无服务器函数）。它暴露了一个与 Git 兼容的接口，允许任何 Git 客户端与之交互，同时也提供了 REST 和 Workers API 用于程序化控制。该服务解决了传统源代码控制平台在面对智能体大规模生成代码时的可扩展性挑战。它构建在 Durable Objects、R2 和 KV 之上，并使用了一个自定义的、基于 Zig 语言编写并编译为 WebAssembly 的 Git 实现以提高效率。一个关键的创新是开源的 ArtifactFS，这是一个文件系统驱动，能够通过按...
+2026-04-16 13:00:22
 
 
 
@@ -66810,17 +66808,13 @@ http://antirez.com/news/162
 
 ### [Anthropic-发布-Claude-Opus-4.7](https://x.com/claudeai/status/2044785261393977612)
 
-2026-04-16 14:29:31 | 标签: Claude Opus 4.7, Anthropic, AI 模型发布, 大语言模型, AI 能力
-
-> 这是 Anthropic 官方 Claude 账号发布的推文，正式介绍了 Claude Opus 4.7。推文将其定位为迄今为止能力最强的 Opus 版本，并重点突出了关键改进：更严谨地处理长时任务、更精确地遵循指令，以及在反馈前自我验证输出的能力。推文强调用户现在可以更少监督地委派复杂工作，暗示了其可靠性和自主性的提升。推文包含一张宣传图片。
+2026-04-16 14:29:31
 
 
 
 ### [Qwen3.6-35B-A3B：开源稀疏-MoE-模型正式发布](https://x.com/Alibaba_Qwen/status/2044768734234243427)
 
-2026-04-16 13:23:50 | 标签: Qwen3.6, MoE, 开源, AI 模型发布, 多模态 AI
-
-> 这是阿里巴巴通义千问团队发布新开源模型 Qwen3.6-35B-A3B 的官方公告推文。该模型采用稀疏专家混合（MoE）架构，总参数量达 350 亿，但在推理时仅激活 30 亿参数，并采用 Apache 2.0 许可证。主要亮点包括：其智能体编码能力强大，可与激活参数量是其 10 倍的模型相媲美；具备稳健的多模态感知与推理能力；并支持多模态思维模式。推文提供了博客文章、Qwen Studio、Hugging Face 和 ModelScope 的直接链接，方便用户立即访问，并承诺 API 版本即将推出。
+2026-04-16 13:23:50
 
 
 

@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-17 02:22:23 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-17 04:13:50 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## DevOps
 
@@ -488,9 +488,7 @@
 
 ### [GitHub-如何利用-eBPF-提升部署安全性](https://github.blog/engineering/infrastructure/how-github-uses-ebpf-to-improve-deployment-safety/)
 
-2026-04-16 16:00:00 | 标签: eBPF, DevOps, 部署, 循环依赖, Linux 内核
-
-> 这篇来自 GitHub 工程博客的文章，阐述了一个针对关键基础设施问题的复杂解决方案：防止部署期间的循环依赖。核心问题是，在有状态主机（如 MySQL 服务器）上运行的部署脚本可能会无意中依赖于 GitHub.com 本身，从而在服务中断期间造成故障场景。该团队的创新解决方案利用了 eBPF（扩展的伯克利包过滤器）来创建一个有条件的网络防火墙。他们使用 cGroups 来隔离部署脚本进程，并附加 eBPF 程序来拦截网络出口（`BPF_PROG_TYPE_CGROUP_SKB`）和 DNS 解析（`BPF_PROG_TYPE_CGROUP_SOCK_ADDR`）。所有 DNS 查询都被路由到一...
+2026-04-16 16:00:00
 
 
 
