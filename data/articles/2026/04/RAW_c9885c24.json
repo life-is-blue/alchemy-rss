@@ -1,0 +1,58 @@
+{
+  "id": "RAW_c9885c24",
+  "title": "Cursor 3 引入智能体优先界面，超越传统 IDE 模型",
+  "url": "https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-16 09:37:00",
+  "author": "Steef-Jan Wiggers",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Anysphere recently released <a href=\"https://cursor.com/blog/cursor-3\">Cursor 3</a>, a redesigned interface for its AI coding tool that shifts the primary interaction model from file editing to managing parallel coding agents. The new interface was built from scratch rather than extending Cursor's existing VS Code fork, though users can switch back to the full IDE at any time.</p>\n   <p>The central idea behind Cursor 3 is that developers spend more time orchestrating agents than editing code directly, and the tooling should reflect this. Co-founders Michael Truell and Sualeh Asif describe it as \"<em>a unified workspace for building software with agents</em>,\" framing it as a step toward what Truell has called the <a href=\"https://cursor.com/blog/third-era\">third era of software development</a>, where fleets of agents work autonomously to ship changes. Cursor's own usage data supports the shift: as recently as March 2025, 2.5x as many users were using tab completion as agents. That ratio has now completely inverted, with twice as many users running autonomous agents. Internally, <a href=\"https://www.cnbc.com/2026/02/24/cursor-announces-major-update-as-ai-coding-agent-battle-heats-up.html\">35% of merged pull requests</a> at Cursor's own engineering team are written by autonomous cloud agents.</p>\n   <p>The interface surfaces all running agents, both local and cloud, in a single sidebar. Agents kicked off from mobile, web, desktop, Slack, GitHub, or Linear all appear in one place. Cloud agents generate demos and screenshots of their work for human review. Users can run multiple agents in parallel across different repositories, which the previous interface didn't support natively.</p>\n   <p><img alt=\"\" style=\"width: 600px; height: 335px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/cursor-3-agent-first-interface/en/resources/1Cursor-1776081275435.jpg\" rel=\"share\"></p>\n   <p><em>(Source: <a href=\"https://cursor.com/blog/cursor-3\">Cursor blog post</a>)</em></p>\n   <p>The local-to-cloud handoff is worth noting for teams evaluating these tools. An agent session running locally can be moved to the cloud to continue working while the developer is offline or is working on another task. In the other direction, a cloud session can be pulled back to local for hands-on editing and testing. Cursor says the handoff is fast, though they don't publish latency numbers. The cloud execution uses <a href=\"https://cursor.com/blog/composer-2\">Composer 2</a>, Cursor's own frontier coding model, which they say comes with higher usage limits than third-party models.</p>\n   <p>A new plugin marketplace lets teams extend agents with MCPs, skills, and subagents. Organizations can also set up private team marketplaces for internal plugins, which addresses a governance need similar to what AWS is tackling with its Agent Registry at a different layer of the stack.</p>\n   <p>Community reactions on <a href=\"https://www.reddit.com/r/cursor/comments/1jozfgz/introducing_cursor_3/\">Reddit</a> and <a href=\"https://news.ycombinator.com/item?id=47495089\">Hacker News</a> have been sharply divided, with much of the pushback centered on whether Cursor is abandoning the IDE-first identity that attracted its user base.&nbsp;</p>\n   <p>As one Reddit user put it:</p>\n   <blockquote>\n    <p>This view makes you lose any connection to your code... I specifically stay with Cursor because it's so good at being an IDE.</p>\n   </blockquote>\n   <p>While one commenter on Hacker News articulated why the agent-first model feels wrong for some workflows:</p>\n   <blockquote>\n    <p>Reviewing and testing code, constantly switching contexts, juggling model contexts, coming up with prompt incantations to coax the model into the right direction... is so mentally taxing and full of interruptions that it's practically impossible to achieve any sort of flow state. Working with LLMs is the complete opposite of this.</p>\n   </blockquote>\n   <p>Another Hacker News commenter framed the underlying product design tension:</p>\n   <blockquote>\n    <p>Agent-first needs ambient, background autonomy. Code-first needs precise, synchronous control. Trying to do both in one product means you're always making tradeoffs that frustrate one half of your users.</p>\n   </blockquote>\n   <p>In addition, users in the Reddit thread&nbsp;raised concerns about vendor lock-in. One commenter argued that \"<em>the proper agent command center I would want to use is the one that I could manage all AI agents I have, not lock into one vendor</em>.\" Lee Robinson, a Cursor moderator, responded that Cursor supports models from all vendors.</p>\n   <p>Furthermore, the cost question recurred in both threads. One Hacker News commenter who switched from Cursor to Claude Code reported spending \"<em>$2k a week with premium models</em>\" on Cursor before switching to Claude Code Max, where they described being \"<em>equally as prolific and paying 1/10th the price</em>.\" A Reddit user claimed the same model consumed dramatically different token budgets depending on the harness, estimating 12% daily usage for a workflow in Claude Code versus 80% for the same workflow in Cursor.</p>\n   <p>If these reports are representative, they suggest that how a harness constructs context and manages tool calls can have a significant impact on effective cost, a consideration that matters as much as the interface design for teams evaluating agent-first tools.</p>\n   <p>The release positions Cursor more directly against Claude Code and GitHub Copilot's agent mode, both of which have also been moving toward autonomous multi-step execution. The difference in approach is instructive: Claude Code operates as a CLI tool that developers invoke from the terminal, GitHub Copilot remains embedded in the IDE, and Cursor is now building a purpose-built surface that treats the IDE as a fallback rather than the primary interface.</p>\n   <p>Cursor 3 is available now. Users can access the new interface by upgrading Cursor and running Cmd+Shift+P -&gt; Agents Window.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cursor 3 Introduces Agent-First Interface, Moving Beyond the IDE Model\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Steef-Jan Wiggers\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776332220000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2497\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cursor 3 引入了重新设计的、以智能体优先的界面，将主要交互从文件编辑转向管理并行的编码智能体，这反映了行业向自主软件开发发展的更广泛趋势。",
+  "oneSentenceSummary": "Cursor 3 引入了重新设计的、以智能体优先的界面，将主要交互从文件编辑转向管理并行的编码智能体，这反映了行业向自主软件开发发展的更广泛趋势。",
+  "summary": "Anysphere 发布了 Cursor 3，这是其 AI 编码工具的一次重大重新设计，从根本上将用户界面从以 IDE 为中心的模型转变为以智能体优先的工作空间。新界面集中管理本地和基于云的自主编码智能体，允许开发者在不同的代码仓库中并行运行多个智能体。关键功能包括智能体会话的无缝本地到云端切换、用于通过 MCP 和技能扩展智能体的新插件市场，以及对从各种平台（Slack、GitHub、Linear 等）触发的智能体的统一可见性。此次发布被定位为迈向“软件开发第三时代”的一步，在这个时代，智能体群将自主工作。文章还详细介绍了社区对于放弃 IDE 模式的强烈反对、对供应商锁定的担忧，以及与 Claude Code 等竞争对手的成本比较。",
+  "mainPoints": [
+    {
+      "point": "Cursor 3 代表了从 IDE 优先到智能体优先交互模式的范式转变。",
+      "explanation": "界面从零开始重建，优先考虑管理并行、自主的编码智能体，而非直接的文件编辑，这反映了内部数据显示智能体使用率现已超过标签补全。"
+    },
+    {
+      "point": "新界面实现了跨平台智能体的统一管理和并行执行。",
+      "explanation": "它提供了一个单一的侧边栏来查看所有正在运行的智能体（本地/云端），支持跨仓库的并行执行，并允许从移动设备、Slack 或 GitHub 启动的智能体进行集中管理。"
+    },
+    {
+      "point": "无缝的本地-云端切换和可扩展的插件市场是关键的技术特性。",
+      "explanation": "智能体会话可以在本地和云端环境之间移动，并且一个用于 MCP/技能的市场允许团队扩展智能体能力，这解决了类似于 AWS Agent Registry 的治理需求。"
+    },
+    {
+      "point": "此次发布引发了关于工作流程中断、成本和供应商锁定的重大争论。",
+      "explanation": "社区反馈突显了对失去传统编码“心流状态”的担忧、与 Claude Code 等竞争对手相比潜在的高成本，以及被锁定在单一供应商智能体生态系统中的风险。"
+    }
+  ],
+  "keyQuotes": [
+    "联合创始人 Michael Truell 和 Sualeh Asif 将其描述为“一个使用智能体构建软件的统一工作空间”。",
+    "正如一位 Reddit 用户所言：“这种视图让你与你的代码失去任何联系……我之所以坚持使用 Cursor，正是因为它作为一个 IDE 非常出色。”",
+    "另一位 Hacker News 评论者阐述了潜在的产品设计张力：“智能体优先需要环境化的、后台的自主性。代码优先需要精确的、同步的控制。试图在一个产品中兼顾两者，意味着你总是在做出让一半用户感到沮丧的权衡。”",
+    "一位从 Cursor 转向 Claude Code 的 Hacker News 评论者报告说，在 Cursor 上使用高级模型“每周花费 2000 美元”。"
+  ],
+  "tags": [
+    "Cursor",
+    "AI 编码助手",
+    "AI 智能体",
+    "软件开发",
+    "IDE"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 4,
+  "score": 88,
+  "wordCount": 803,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "AI_CODING",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776332220000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 09:37:00"
+}

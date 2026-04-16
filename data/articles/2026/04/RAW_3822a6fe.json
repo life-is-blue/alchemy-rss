@@ -1,0 +1,59 @@
+{
+  "id": "RAW_3822a6fe",
+  "title": "Cloudflare 推出 Code Mode MCP 服务器以优化 AI 智能体的令牌使用",
+  "url": "https://www.infoq.com/news/2026/04/cloudflare-code-mode-mcp-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+  "date": "2026-04-16 14:17:00",
+  "author": "Leela Kumili",
+  "siteName": "InfoQ",
+  "content": "<html>\n <head></head>\n <body>\n  <div class=\"article__data\">\n   <p>Cloudflare has introduced a major evolution in how AI agents access complex APIs by launching <a href=\"https://blog.cloudflare.com/code-mode-mcp/\">a new Model Context Protocol (MCP) server powered by Code Mode, dramatically reducing the cost of interacting with its full API platform</a>. The new approach highlights a new way for agent‑to‑tool integrations in the MCP ecosystem.</p>\n   <p>At its core, MCP is an emerging standard that lets large language models (LLMs) interface with external tools and APIs by exposing structured tools the model can call during execution. Traditionally, each API endpoint exposed to an agent represented a separate tool definition. While straightforward, this model incurs a significant context window cost every time a tool specification consumes tokens in the model’s limited input budget, leaving less room for reasoning about the user’s task.</p>\n   <p><a href=\"https://www.linkedin.com/in/luuk-hofman-01164259/\">Luuk Hofman</a>, Solutions Engineer at Cloudflare, noted:</p>\n   <blockquote>\n    <p>So we tried: convert MCP tools into a TypeScript API and just ask the LLM to write code against it.</p>\n   </blockquote>\n   <p>Cloudflare’s <a href=\"https://blog.cloudflare.com/code-mode/\">Code Mode</a> instead exposes only two tools, <code>search()</code> and <code>execute()</code>, backed by a type‑aware SDK that allows the model to generate and execute JavaScript inside a secure V8 isolate. This compiles an agent’s plan into a small code snippet orchestrating multiple operations against the OpenAPI spec, avoiding the need to load all endpoint definitions into context.</p>\n   <p>&nbsp;</p>\n   <p id=\"gdcalert1\"><img alt=\"\" style=\"width:100%;height:1448px;\" src=\"https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/04/cloudflare-code-mode-mcp-server/en/resources/1codemode-1775438914205.jpeg\" rel=\"share\"></p>\n   <p><em>Traditional MCP vs Cloudflare Code Mode (Source: <a href=\"https://blog.cloudflare.com/code-mode-mcp/\">Cloudflare Blog Post</a>)</em></p>\n   <p>The practical impact is significant: Cloudflare reports that Code Mode reduces the token footprint of interacting with over 2,500 API endpoints from more than 1.17 million tokens to roughly 1,000 tokens, a reduction of around 99.9%. This fixed footprint holds regardless of API surface size, enabling agents to work across large, feature‑rich platforms without exhausting the model context.</p>\n   <p>Cloudflare emphasized in a Reddit <a href=\"https://www.reddit.com/r/CloudFlare/comments/1ra31my/comment/o6gs15f/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\">post</a>:</p>\n   <blockquote>\n    <p>The team utilized a specialized encoding strategy to fit expansive API schemas into minimal context windows without losing functional precision.</p>\n   </blockquote>\n   <p>Agents first use search() to query the OpenAPI spec by product area, path, or metadata; the spec itself never enters the model’s context. Then, execute() runs code handling pagination, conditional logic, and chained API calls in a single cycle, cutting round-trip overhead.</p>\n   <p>Cloudflare emphasized the security and sandboxing model during execution. The server runs user‑generated code in a Dynamic Worker isolate with no file system, no environment variables exposed, and outbound requests controlled via explicit handlers. This design mitigates risks associated with executing untrusted code while preserving agent autonomy.</p>\n   <p>This new MCP server for the entire Cloudflare API spans DNS, Zero Trust, Workers, and R2 services already and is immediately available for developers to integrate. Cloudflare also open‑sourced a Code Mode SDK within its broader Agents SDK to enable similar patterns in third‑party MCP implementations.</p>\n   <p>Analysts and practitioners see Code Mode as a key step in scaling agentic workflows beyond simple, single‑service interactions toward broad, multi‑API automation. The pattern may influence both standard MCP server designs and agent frameworks in the coming year, as industry players grapple with context costs and orchestration complexity in production‑grade AI agents.</p>\n  </div>\n  <input type=\"hidden\" name=\"\" value=\"Thank you for your review!\" id=\"cr_messages_submitSuccess\"> <input type=\"hidden\" name=\"\" value=\"Rating is required\" id=\"cr_messages_ratingRequired\"> <input type=\"hidden\" name=\"\" value=\"Cloudflare Launches Code Mode MCP Server to Optimize Token Usage for AI Agents\" id=\"cr_item_title\"> <input type=\"hidden\" name=\"\" value=\"Leela Kumili\" id=\"cr_item_author\"> <input type=\"hidden\" name=\"\" value=\"http://www.infoq.com/news/2026/04/cloudflare-code-mode-mcp-server/\" id=\"cr_item_url\"> <input type=\"hidden\" name=\"\" value=\"news\" id=\"cr_item_ctype\"> <input type=\"hidden\" name=\"\" value=\"en\" id=\"cr_item_lang\"> <input type=\"hidden\" name=\"\" value=\"1776349020000\" id=\"cr_item_published_time\"> <input type=\"hidden\" name=\"\" value=\"2498\" id=\"cr_item_primary_topic\">\n </body>\n</html>",
+  "aiSummary": "Cloudflare 推出了一个 Code Mode MCP 服务器，通过仅暴露两个由类型感知 SDK 支持的工具（`search()` 和 `execute()`），使 AI 智能体与其庞大 API 平台交互的令牌成本大幅降低，从而能够在安全沙箱中生成和执行代码。",
+  "oneSentenceSummary": "Cloudflare 推出了一个 Code Mode MCP 服务器，通过仅暴露两个由类型感知 SDK 支持的工具（`search()` 和 `execute()`），使 AI 智能体与其庞大 API 平台交互的令牌成本大幅降低，从而能够在安全沙箱中生成和执行代码。",
+  "summary": "Cloudflare 推出了由其 Code Mode 技术驱动的新型模型上下文协议服务器，从根本上改变了 AI 智能体访问复杂 API 的方式。传统的 MCP 方法将每个 API 端点都暴露为一个独立的工具，这会消耗大量的上下文令牌。Cloudflare 的解决方案仅暴露两个核心工具：用于查询 OpenAPI 规范的 `search()`，以及在安全的 V8 隔离环境中运行生成的 JavaScript 代码的 `execute()`。这使得智能体能够将多步骤计划编译成简洁的代码片段，将与超过 2500 个 API 端点交互的令牌占用从超过 117 万个令牌减少到大约 1000 个令牌，降幅达 99.9%。该设计通过沙箱执行强调安全性，旨在实现跨 Cloudflare 整个服务组合的可扩展、经济高效的智能体工作流。底层的 SDK 已开源，以鼓励采用这种模式。",
+  "mainPoints": [
+    {
+      "point": "Code Mode MCP 服务器将 API 交互的令牌成本降低了 99.9%。",
+      "explanation": "通过仅暴露两个工具而非数千个端点定义，它将令牌占用从超过 117 万个压缩到大约 1000 个，使得大规模 API 平台在有限的上下文窗口内对 AI 智能体变得可行。"
+    },
+    {
+      "point": "它将集成范式从工具调用转变为代码生成与执行。",
+      "explanation": "智能体使用 `search()` 查找相关的 API 规范，并使用 `execute()` 运行生成的 JavaScript 代码，该代码编排多个 API 调用，在单个模型交互周期内处理诸如分页之类的逻辑。"
+    },
+    {
+      "point": "该架构通过隔离的沙箱执行优先考虑安全性。",
+      "explanation": "用户生成的代码在无文件系统访问权限、受控出站请求且不暴露环境变量的 Dynamic Worker 隔离环境中运行，在保持智能体自主性的同时降低了风险。"
+    },
+    {
+      "point": "这种模式是迈向可扩展、生产级 AI 智能体工作流的重要一步。",
+      "explanation": "它解决了核心瓶颈——上下文成本和编排复杂性——使智能体能够在像 Cloudflare 整个服务套件这样功能丰富的平台上运行，并影响未来的 MCP 和智能体框架设计。"
+    }
+  ],
+  "keyQuotes": [
+    "Cloudflare 通过推出由 Code Mode 驱动的新型模型上下文协议服务器，在 AI 智能体访问复杂 API 的方式上引入了重大演进，显著降低了与其完整 API 平台交互的成本。",
+    "于是我们尝试：将 MCP 工具转换为 TypeScript API，然后直接让 LLM 基于它编写代码。",
+    "Cloudflare 报告称，Code Mode 将与超过 2500 个 API 端点交互的令牌占用从超过 117 万个令牌减少到大约 1000 个令牌，降幅约为 99.9%。",
+    "该团队利用了一种专门的编码策略，将庞大的 API 模式适配到最小的上下文窗口中，同时不损失功能精度。",
+    "这种设计在保持智能体自主性的同时，减轻了执行不受信任代码相关的风险。"
+  ],
+  "tags": [
+    "MCP",
+    "AI 智能体",
+    "Cloudflare",
+    "API 集成",
+    "令牌优化"
+  ],
+  "topicTag": "ai-llm",
+  "readTime": 2,
+  "score": 89,
+  "wordCount": 490,
+  "domain": "infoq.com",
+  "category": "Programming_Technology",
+  "aiSubCategory": "DEV",
+  "mainDomain": "Artificial_Intelligence",
+  "sourceId": "SOURCE_f152e8",
+  "sourceName": "InfoQ",
+  "resourceType": "ARTICLE",
+  "language": "en_US",
+  "publishTimeStamp": 1776349020000,
+  "publishDateStr": "今天",
+  "publishDateTimeStr": "2026-04-16 14:17:00"
+}
