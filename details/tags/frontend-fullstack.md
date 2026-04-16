@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-16 06:14:03 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-16 08:18:44 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## 前端与全栈
 
@@ -488,9 +488,7 @@
 
 ### [李飞飞世界模型开源渲染神器-Spark-2.0，将亿级-3D-世界搬进浏览器](https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651027815&idx=2&sn=deedfb56322150d7db37f6f1ca1851f5)
 
-2026-04-15 04:21:00 | 标签: 3D 高斯泼溅, Web 渲染, World Labs, 开源工具, 空间智能
-
-> 文章报道了李飞飞创立的 World Labs 公司发布并开源了 Spark 2.0，一个面向 Web 的动态 3D 高斯泼溅渲染器。该工具与 Three.js 集成，基于 WebGL2，可在桌面、移动及 VR 设备的浏览器中运行。Spark 2.0 的核心突破在于解决了超大规模 3DGS 场景在 Web 端的渲染难题，通过三项关键技术：细节层级系统、渐进式流加载和 GPU 虚拟内存管理，实现了对 1 亿+ splat 数据的流式加载与高效渲染。这标志着高保真 3D 内容可跨设备便捷访问，为构建和体验沉浸式 3D 世界提供了强大的开源基础设施。
+2026-04-15 04:21:00
 
 
 
@@ -938,13 +936,13 @@
 
 
 
-### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
+### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
 
 2026-03-18 20:00:00
 
 
 
-### [Next.js-16.2](https://nextjs.org/blog/next-16-2)
+### [Turbopack：Next.js-16.2-有哪些新功能](https://nextjs.org/blog/next-16-2-turbopack)
 
 2026-03-18 20:00:00
 
@@ -1094,13 +1092,13 @@
 
 
 
-### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
+### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2026-01-28 09:00:00
 
 
 
-### [统一缓存之道：利用-Durable-Objects-处理响应与进行中的请求](https://www.infoq.com/articles/durable-objects-handle-inflight-requests/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [从像素到字符：GitHub-Copilot-CLI-动画-ASCII-横幅背后的工程设计](https://github.blog/engineering/from-pixels-to-characters-the-engineering-behind-github-copilot-clis-animated-ascii-banner/)
 
 2026-01-28 09:00:00
 
@@ -2594,13 +2592,13 @@
 
 
 
-### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
+### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
 
 2025-10-28 13:00:00
 
 
 
-### [保障互联网：Cloudflare-的-Merkle-树证书创新方案](https://blog.cloudflare.com/bootstrap-mtc/)
+### [Vercel-函数上的-Bun-运行时---Vercel](https://vercel.com/blog/bun-runtime-on-vercel-functions)
 
 2025-10-28 13:00:00
 
@@ -4304,13 +4302,13 @@
 
 
 
-### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
 
 
-### [Htmx-的未来：稳定与兼容](https://www.infoq.com/news/2025/03/htmx-future-stability-compat/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
+### [Google-发布-Gemma-3-1B，用于移动和-Web-应用](https://www.infoq.com/news/2025/03/google-gemma-3-1b/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global)
 
 2025-03-17 00:00:00
 
