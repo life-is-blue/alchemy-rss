@@ -1,4 +1,4 @@
-> **更新时间**: 2026-04-16 16:31:07 | [首页](/README.md) | [分类](/TAGS.md)
+> **更新时间**: 2026-04-16 18:26:48 | [首页](/README.md) | [分类](/TAGS.md)
 
 ## AI & 大模型
 
@@ -11780,17 +11780,13 @@
 
 ### [小红书全模态新作开源！最高提速-76%](https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652800969&idx=2&sn=d4c4b8a44e7fc7ef4d7c549a7fe5f448)
 
-2026-04-15 10:57:00 | 标签: 强化学习, RL 训练引擎, 全模态, Agentic AI, 小红书
-
-> 文章报道了小红书 AI 平台团队开源的新型强化学习训练引擎 Relax。该引擎旨在解决全模态与 Agentic 场景下 RL 训练面临的三大核心挑战：数据异构与 token 爆炸、服务容错与弹性伸缩、以及训练与推理任务间的资源竞争瓶颈。Relax 基于 Megatron-LM 和 SGLang 打造，采用协同设计思路，将 RL 各角色（Actor、Critic、Rollout）封装为独立的 Ray Serve 服务，实现了故障隔离、独立伸缩和生命周期管理。其全异步训练模式通过流式微批调度和 Actor Train 资源分离，相比传统的 Colocate 方案端到端提速最高达 76%。实验表明，...
+2026-04-15 10:57:00
 
 
 
 ### [3.9-元不限量？讯飞的-Coding-Plan-解决了我的-Token-焦虑](https://mp.weixin.qq.com/s?__biz=MzU2Njg0OTEyNQ==&mid=2247492914&idx=1&sn=6bdaa3e208d5e07e63796f50e34887ff)
 
-2026-04-15 10:06:00 | 标签: AI 编程, 讯飞星辰, Coding Plan, Token 计费, GLM-5.1
-
-> 文章基于作者的实际体验，详细介绍了讯飞星辰 MaaS 平台 Coding Plan 的全面升级。核心亮点在于其颠覆性的计费模式：从传统的按 Token 计费转变为按请求次数计费，其中 3.9 元的“无忧版”套餐提供不限量请求，极大缓解了开发者的“Token 焦虑”和心理负担。其次，该方案支持多模型自由调度，用户可在 GLM-5.1、Qwen3-Coder-Next 等高性能国产模型间快速切换，无需重复配置。此外，文章还介绍了平台集成的 OCR、音频转写等 Skills 能力，以及如何轻松配置到 OpenClaw、Cursor 等主流 AI 编程工具中。作者认为，在 AI 编程工具竞争激烈的当下...
+2026-04-15 10:06:00
 
 
 
@@ -51320,9 +51316,7 @@ http://antirez.com/news/162
 
 ### [2026-04-16-Hacker-News-Top-Stories](https://supertechfans.com/cn/post/2026-04-16-HackerNews/)
 
-2026-04-16 07:40:43 | 标签: Hacker News, 技术热点, 隐私安全, AI 监控, 开源软件
-
-> 文章精选了 Hacker News 当日热度最高的十个话题，并附带了每个话题的简要介绍和社区讨论要点。内容高度多元化，反映了技术社区的广泛兴趣。核心议题包括：Flock Safety 的 AI 车辆监控系统引发的隐私与法律风险；个人依据 CCPA 要求删除数据被拒的案例；关于如何高效学习编写编译器的实践建议；VF Corporation 通过收购并降低背包质量的商业模式分析；Strix 项目针对 Cal.com 闭源决定，提出以 AI 对抗 AI 的开源安全新思路；谷歌 Gemma 4 模型在 iPhone 上离线运行的进展与局限；OpenSSL 4.0.0 的重要安全更新；关于睡眠科学的深度...
+2026-04-16 07:40:43
 
 
 
